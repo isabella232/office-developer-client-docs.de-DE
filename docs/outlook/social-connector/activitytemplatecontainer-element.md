@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 74662f25-5e18-4d0b-999c-a144427ad9e3
 description: Ein activityTemplateContainer-Element ist eine Vorlage, mit der Sie Ihre Aktivitätsfeed-Elemente formatieren und XML wieder verwenden können, das ein Layout angibt.
 ms.openlocfilehash: c2540b1d871e440e8f8f343a1788194c32d7dcc2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32281120"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33413717"
 ---
 # <a name="activitytemplatecontainer-element"></a>activityTemplateContainer-Element
 
@@ -33,7 +33,7 @@ In der folgenden Tabelle werden die untergeordneten Elemente von **activityTempl
 |:-----|:-----|
 |**icon** <br/> |Ein Link-Token, das die URL für das Symbol für dieses Feed-Element referenziert.  <br/> |
 |**title** <br/> |Die erforderlichen Informationen für das Feedelement.  <br/> |
-|**type** <br/> |Der Aktivitätstyp, beispielsweise eine Aktualisierung des Status, des Fotos oder Dokuments.  <br/> |
+|**Typ** <br/> |Der Aktivitätstyp, beispielsweise eine Aktualisierung des Status, des Fotos oder Dokuments.  <br/> |
 |**data** <br/> |Alle zusätzlichen Informationen für das Feed-Element, wie Bilder, Text oder Links.  <br/> |
    
 Ein Beispiel für Aktivitäts-Feed-XML finden Sie unter [Aktivitätsfeed-XML-Beispiel](activity-feed-xml-example.md)

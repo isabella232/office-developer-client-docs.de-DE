@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: b09b48d0-9008-4e43-9506-93a830ad9452
 description: Bestimmt die Höhe der oberen Abschrägung eines Shapes in Punkt.
 ms.openlocfilehash: 4da2fd1d61b530450f9020b12d5016015fd59dba
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315736"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33421865"
 ---
 # <a name="beveltopheight-cell-bevel-properties-section"></a>Zelle "BevelTopHeight" (Abschnitt "Fase Properties")
 

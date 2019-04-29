@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 7fd11650-fffa-1316-d302-3122ac5feb14
 description: Enthält einen beschreibenden Text, der als QuickInfo angezeigt wird, wenn ein Benutzer den Mauszeiger über dem Steuerpunkt eines Shapes platziert. Die Anwendung schließt diese Beschreibung in der Zelle automatisch in Anführungszeichen ein, doch diese Anführungszeichen werden in der QuickInfo nicht angezeigt.
 ms.openlocfilehash: b9b0c19aff5e3ab8a4c1e29d319eb42f7ee4a271
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307721"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33424861"
 ---
 # <a name="tip-cell-controls-section"></a>Zelle "Tip" (Abschnitt "Controls")
 

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 70b3788d-d8cf-79bb-d929-86aceba49345
 description: Gibt den hyperbolischen Kosinus eines Winkels zurück.
 ms.openlocfilehash: 49582ba4b441b3eea1f860c3109b8d8d632e07b7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282936"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33421907"
 ---
 # <a name="cosh-function"></a>COSHYP-Funktion
 
@@ -28,7 +28,7 @@ COSH ( *Angle*)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Winkel_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Der Winkel, dessen hyperbolischer Kosinus abgerufen werden soll.  <br/> |
+| _Winkel_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Winkel, dessen hyperbolischer Kosinus abgerufen werden soll.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 

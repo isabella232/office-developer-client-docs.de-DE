@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: d94c740f-29e1-1e7f-39f6-8aa215f3111d
 description: Wenn Sie eine Zahl als Währung formatieren möchten, können Sie die CY-Funktion verwenden und eine optionale Konstante angeben, um anzugeben, welche Landes-/Regions Währung verwendet werden soll. Die Währungskonstanten können als ID-Nummer angegeben werden, die einem Land/einer Region entspricht, oder als Zeichenfolge (in Anführungszeichen eingeschlossen), die einer ISO 4217 3-Zeichen Abkürzung entspricht.
 ms.openlocfilehash: 4492f4901779d94a32b881c973eab9e32a9c0514
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344586"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33421795"
 ---
 # <a name="about-currency-constants"></a>Informationen zu Währungskonstanten
 
@@ -29,13 +29,13 @@ Wenn Sie Währungssymbole für nicht lokale Währungen anzeigen und das System d
 | 0  <br/> | SYS  <br/> | Verwendet Systemeinstellungen  <br/> |
 | 1  <br/> | XXX  <br/> | Formate als Zahl  <br/> |
 | 2-9  <br/> | Reserved  <br/> |
-| 10  <br/> | EUR  <br/> | Euro  <br/> |
-| 11  <br/> | USD  <br/> | US-Dollar  <br/> |
+| 10   <br/> | EUR  <br/> | Euro  <br/> |
+| 11   <br/> | USD  <br/> | US-Dollar  <br/> |
 | 12  <br/> | ATS  <br/> | Österreichische Schilling  <br/> |
-| 13  <br/> | Wert AUD  <br/> | Australischer Dollar  <br/> |
-| 14  <br/> | BEF  <br/> | Belgischer Franken  <br/> |
-| 15  <br/> | CAD  <br/> | Kanadischer Dollar  <br/> |
-| 16  <br/> | CHF  <br/> | Schweizer Franken  <br/> |
+| 13   <br/> | Wert AUD  <br/> | Australischer Dollar  <br/> |
+| 14   <br/> | BEF  <br/> | Belgischer Franken  <br/> |
+| 15   <br/> | CAD  <br/> | Kanadischer Dollar  <br/> |
+| 16   <br/> | CHF  <br/> | Schweizer Franken  <br/> |
 | 17  <br/> | CNY  <br/> | Renminbi (Yuan)  <br/> |
 | 18  <br/> | DEM  <br/> | Deutsches Zeichen  <br/> |
 | 19  <br/> | DKK  <br/> | Dänische Kronen  <br/> |

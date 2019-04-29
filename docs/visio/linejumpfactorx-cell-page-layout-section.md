@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 0649672f-f496-ce80-6dc3-3affc9b6f913
 description: Bestimmt die Größe von Liniensprüngen auf horizontalen dynamischen Verbindern auf dem Zeichenblatt, und zwar relativ zum Wert der Zelle LineToLineX. Der Wert dieser Zelle kann im Bereich zwischen 0 und 10 liegen, jedoch sind Bruchwerte zwischen 0 und 1 empfehlenswert.
 ms.openlocfilehash: 8698d99021ca64415417de8e946cbd80b586e759
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316464"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33424994"
 ---
 # <a name="linejumpfactorx-cell-page-layout-section"></a>Zelle "LineJumpFactorX" (Abschnitt "Page Layout")
 
