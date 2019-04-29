@@ -10,22 +10,22 @@ localization_priority: Normal
 ms.assetid: b574a99d-08f4-29e4-c40a-eb0770580ed5
 description: Öffnet das ShapeSheet-Fenster in einem neuen Fenster.
 ms.openlocfilehash: c68ab1e0c9d52514dff16b7b1b4adbd8789d3e85
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32340131"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409888"
 ---
-# <a name="opensheetwin-function"></a><span data-ttu-id="3650b-103">OPENSHEETWIN Function</span><span class="sxs-lookup"><span data-stu-id="3650b-103">OPENSHEETWIN Function</span></span>
+# <a name="opensheetwin-function"></a><span data-ttu-id="bb062-103">OPENSHEETWIN Function</span><span class="sxs-lookup"><span data-stu-id="bb062-103">OPENSHEETWIN Function</span></span>
 
-<span data-ttu-id="3650b-104">Öffnet das ShapeSheet-Fenster in einem neuen Fenster.</span><span class="sxs-lookup"><span data-stu-id="3650b-104">Opens the ShapeSheet window in a new window.</span></span>
+<span data-ttu-id="bb062-104">Öffnet das ShapeSheet-Fenster in einem neuen Fenster.</span><span class="sxs-lookup"><span data-stu-id="bb062-104">Opens the ShapeSheet window in a new window.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="3650b-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="3650b-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="bb062-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="bb062-105">Syntax</span></span>
 
-<span data-ttu-id="3650b-106">OPENSHEETWIN( )</span><span class="sxs-lookup"><span data-stu-id="3650b-106">OPENSHEETWIN( )</span></span>
+<span data-ttu-id="bb062-106">OPENSHEETWIN( )</span><span class="sxs-lookup"><span data-stu-id="bb062-106">OPENSHEETWIN( )</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="3650b-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="3650b-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="bb062-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="bb062-107">Remarks</span></span>
 
-<span data-ttu-id="3650b-p101">In früheren Versionen von Visio wird diese Funktion in der Form _OPENSHEETWIN geschrieben. In den Visio-Versionen 4.0 und höher werden beide Schreibweisen akzeptiert.</span><span class="sxs-lookup"><span data-stu-id="3650b-p101">In earlier versions of Visio, this function appears as _OPENSHEETWIN. Visio versions 4.0 and later accept either style.</span></span> 
+<span data-ttu-id="bb062-p101">In früheren Versionen von Visio wird diese Funktion in der Form _OPENSHEETWIN geschrieben. In den Visio-Versionen 4.0 und höher werden beide Schreibweisen akzeptiert.</span><span class="sxs-lookup"><span data-stu-id="bb062-p101">In earlier versions of Visio, this function appears as _OPENSHEETWIN. Visio versions 4.0 and later accept either style.</span></span> 
   
 
