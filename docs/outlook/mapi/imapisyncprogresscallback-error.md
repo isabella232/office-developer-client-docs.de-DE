@@ -13,19 +13,19 @@ api_type:
 ms.assetid: 4860992d-65d7-4cb0-a874-ceccb153dbac
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 80010ca19999ba519f051e914f02f240abb524e2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341335"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33424931"
 ---
-# <a name="imapisyncprogresscallbackerror"></a><span data-ttu-id="ea209-103">IMAPISyncProgressCallback::Error</span><span class="sxs-lookup"><span data-stu-id="ea209-103">IMAPISyncProgressCallback::Error</span></span>
+# <a name="imapisyncprogresscallbackerror"></a><span data-ttu-id="5647b-103">IMAPISyncProgressCallback::Error</span><span class="sxs-lookup"><span data-stu-id="5647b-103">IMAPISyncProgressCallback::Error</span></span>
 
   
   
-<span data-ttu-id="ea209-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="ea209-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="5647b-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="5647b-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="ea209-105">Stellt Details bereit, die im Dialogfeld senden/empfangen angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="ea209-105">Provides details that are displayed in the Send/Receive dialog.</span></span> <span data-ttu-id="ea209-106">Wenn während der Synchronisierung Fehler auftreten, ruft der Informationsspeicher Anbieter diese Funktion auf.</span><span class="sxs-lookup"><span data-stu-id="ea209-106">If errors are encountered during synchronization, the store provider calls this function.</span></span>
+<span data-ttu-id="5647b-105">Stellt Details bereit, die im Dialogfeld senden/empfangen angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="5647b-105">Provides details that are displayed in the Send/Receive dialog.</span></span> <span data-ttu-id="5647b-106">Wenn während der Synchronisierung Fehler auftreten, ruft der Informationsspeicher Anbieter diese Funktion auf.</span><span class="sxs-lookup"><span data-stu-id="5647b-106">If errors are encountered during synchronization, the store provider calls this function.</span></span>
   
 ```cpp
 HRESULT Error(
@@ -34,25 +34,25 @@ HRESULT Error(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="ea209-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="ea209-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="5647b-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="5647b-107">Parameters</span></span>
 
- <span data-ttu-id="ea209-108">**hResult**</span><span class="sxs-lookup"><span data-stu-id="ea209-108">**hResult**</span></span>
+ <span data-ttu-id="5647b-108">**hResult**</span><span class="sxs-lookup"><span data-stu-id="5647b-108">**hResult**</span></span>
   
-> <span data-ttu-id="ea209-109">Das HRESULT des Fehlers oder der Warnung.</span><span class="sxs-lookup"><span data-stu-id="ea209-109">The HRESULT of the error or warning.</span></span>
+> <span data-ttu-id="5647b-109">Das HRESULT des Fehlers oder der Warnung.</span><span class="sxs-lookup"><span data-stu-id="5647b-109">The HRESULT of the error or warning.</span></span>
     
- <span data-ttu-id="ea209-110">**pwcszErrorStr**</span><span class="sxs-lookup"><span data-stu-id="ea209-110">**pwcszErrorStr**</span></span>
+ <span data-ttu-id="5647b-110">**pwcszErrorStr**</span><span class="sxs-lookup"><span data-stu-id="5647b-110">**pwcszErrorStr**</span></span>
   
-> <span data-ttu-id="ea209-111">Ein Zeiger auf die Zeichenfolge, die mit dem Fehler verknüpft ist, der angezeigt werden soll.</span><span class="sxs-lookup"><span data-stu-id="ea209-111">A pointer to the string associated with the error to be displayed.</span></span>
+> <span data-ttu-id="5647b-111">Ein Zeiger auf die Zeichenfolge, die mit dem Fehler verknüpft ist, der angezeigt werden soll.</span><span class="sxs-lookup"><span data-stu-id="5647b-111">A pointer to the string associated with the error to be displayed.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="ea209-112">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="ea209-112">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="5647b-112">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="5647b-112">Return value</span></span>
 
-<span data-ttu-id="ea209-113">S_OK</span><span class="sxs-lookup"><span data-stu-id="ea209-113">S_OK</span></span> 
+<span data-ttu-id="5647b-113">S_OK</span><span class="sxs-lookup"><span data-stu-id="5647b-113">S_OK</span></span> 
   
-> <span data-ttu-id="ea209-114">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="ea209-114">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="5647b-114">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="5647b-114">The call succeeded and has returned the expected value or values.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="ea209-115">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="ea209-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5647b-115">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="5647b-115">See also</span></span>
 
 
 
-[<span data-ttu-id="ea209-116">IMAPISyncProgressCallback : IUnknown</span><span class="sxs-lookup"><span data-stu-id="ea209-116">IMAPISyncProgressCallback : IUnknown</span></span>](imapisyncprogresscallbackiunknown.md)
+[<span data-ttu-id="5647b-116">IMAPISyncProgressCallback : IUnknown</span><span class="sxs-lookup"><span data-stu-id="5647b-116">IMAPISyncProgressCallback : IUnknown</span></span>](imapisyncprogresscallbackiunknown.md)
 
