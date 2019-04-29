@@ -13,11 +13,11 @@ api_type:
 ms.assetid: 9c34538e-5ba4-47c8-8002-85afa9d6c067
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 39d8786bf558ade4599d69e0a764f87fe60d99f3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341769"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33408768"
 ---
 # <a name="imapisupportstatusrecips"></a>IMAPISupport::StatusRecips
 

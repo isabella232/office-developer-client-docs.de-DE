@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 53579e0e-fcec-e745-0207-3861b5efa333
 description: Gibt basierend auf den Regions-und Spracheinstellungen des Systems den Zeitwert zurück, der durch DateTime oder Expression dargestellt wird.
 ms.openlocfilehash: 61eeafac64ce199eba0f9032c42474d2b44febce
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32361110"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33432324"
 ---
 # <a name="timevalue-function-visioshapesheet"></a>TIMEVALUE-Funktion (VisioShapeSheet)
 

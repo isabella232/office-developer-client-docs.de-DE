@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: f864c759-ed94-8ab7-d664-cc04b3ed743e
 description: Gibt den rechten Rand der gedruckten Seite an.
 ms.openlocfilehash: d30669626fe07379521d61554010ae1bd7b0e83a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339494"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33440010"
 ---
 # <a name="pagerightmargin-cell-print-properties-section"></a>Zelle "PageRightMargin" (Abschnitt "Print Properties")
 

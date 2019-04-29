@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: c67b46bb-0eb2-f094-2870-c320bd488705
 description: Fügt zwei Farben in den durch den Parameter float angegebenen Anteil ein.
 ms.openlocfilehash: 0a231954370416be201183026424c79942204e12
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303297"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33432786"
 ---
 # <a name="blend-function"></a>BLEND Function
 
@@ -26,8 +26,8 @@ BLEND (* * *color1* * *, * * *color2* * *, * * *float [0, 1]* * *)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _color1_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Der Farbindex von Visio oder der RGB-Wert der ersten Farbe.  <br/> |
-| _color2_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Der Farbindex von Visio oder der RGB-Wert der zweiten Farbe.  <br/> |
+| _color1_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Farbindex von Visio oder der RGB-Wert der ersten Farbe.  <br/> |
+| _color2_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Farbindex von Visio oder der RGB-Wert der zweiten Farbe.  <br/> |
 | _float [0, 1]_ <br/> |Erforderlich  <br/> |**Float** <br/> |Der Anteil, in dem _color2_ und _color1_. Eine reelle Zahl zwischen 0 und 1.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert

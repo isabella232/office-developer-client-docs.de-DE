@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: e9bfced5-af29-f86c-8604-44ec9a573229
 description: Sperrt das Seitenverhältnis des Shapes, sodass die Größe des Shapes nur proportional geändert werden kann. Die Größe kann nicht in einer einzelnen Dimension geändert werden.
 ms.openlocfilehash: 83ce1aaf555cfaaa0109423e74ae930450b4c1e2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359640"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33411582"
 ---
 # <a name="lockaspect-cell-protection-section"></a>Zelle "LockAspect" (Abschnitt "Protection")
 

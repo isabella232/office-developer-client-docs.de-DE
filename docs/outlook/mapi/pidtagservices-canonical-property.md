@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: a067455f-c67e-4434-83bf-5acc320865d0
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 0c998d2c48ba1a17a08b591854896023373b6e83
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359465"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409398"
 ---
 # <a name="pidtagservices-canonical-property"></a>Kanonische Pidtagservices (-Eigenschaft
 
@@ -38,7 +38,7 @@ Enthält eine Liste der Bezeichner von Nachrichtendiensten im aktuellen Profil.
 
 Verwenden Sie diese Eigenschaft nicht. Sie ist für die Verwendung durch MAPI reserviert.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

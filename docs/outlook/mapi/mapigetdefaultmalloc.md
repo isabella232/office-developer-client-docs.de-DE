@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 148695dd-d886-4a06-9cfe-749059ae91ed
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 635f22c97ed27889245becbebb990ab3995b70b0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345776"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438204"
 ---
 # <a name="mapigetdefaultmalloc"></a>MAPIGetDefaultMalloc
 
@@ -39,7 +39,7 @@ LPMALLOC MAPIGetDefaultMalloc( );
 
 ## <a name="parameters"></a>Parameter
 
-None. 
+Keine. 
   
 ## <a name="return-value"></a>Return value
 

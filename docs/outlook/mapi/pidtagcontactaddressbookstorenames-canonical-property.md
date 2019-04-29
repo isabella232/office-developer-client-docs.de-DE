@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: d1c3b6d9-75aa-4bc2-9a10-4b9664a8d42e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 7818a638654c2d4a821ad25d71991d4468172a35
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32332823"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439884"
 ---
 # <a name="pidtagcontactaddressbookstorenames-canonical-property"></a>Kanonische Pidtagcontactaddressbookstorenames (-Eigenschaft
 
@@ -38,7 +38,7 @@ Enthält die Anzeigenamen der Speicher, die dem Adressbuch zugeordnet sind.
 
 Diese Eigenschaften befinden sich im Abschnitt Kontakt Adressbuch-Profil.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

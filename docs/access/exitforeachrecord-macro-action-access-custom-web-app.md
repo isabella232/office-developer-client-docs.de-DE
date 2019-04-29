@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: ee0aec9b-cdb0-4204-8a15-7542d943f096
 description: Mit der BeendenFürJedenDatensatz -Aktion beenden Sie einen FürJedenDatensatz -Datenblock sofort.
 ms.openlocfilehash: f4f2a5cd280b26471aa9cc1596b4d6269d059f94
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32302478"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438044"
 ---
 # <a name="exitforeachrecord-macro-action-access-custom-web-app"></a>Beendenfürjedendatensatz-Makroaktion (benutzerdefinierte Access-Web-App)
 

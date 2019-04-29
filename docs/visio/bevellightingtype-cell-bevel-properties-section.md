@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 7fbb4b16-fe54-42d6-803a-c9980897166d
 description: Bestimmt den Beleuchtungstyp, der vom Abschrägung-Effekt verwendet wird.
 ms.openlocfilehash: 6d92c56b01d192c1df04eecdaca4eb915baebcae
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315771"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33433962"
 ---
 # <a name="bevellightingtype-cell-bevel-properties-section"></a>Zelle "BevelLightingType" (Abschnitt "Fase Properties")
 
@@ -30,12 +30,12 @@ Bestimmt den Beleuchtungstyp, der vom Abschrägung-Effekt verwendet wird.
 |7  <br/> |Morgen  <br/> |
 |8  <br/> |Sonnenaufgang  <br/> |
 |9  <br/> |Sonnenuntergang  <br/> |
-|10  <br/> |Kühl  <br/> |
-|11  <br/> |Reagiert  <br/> |
+|10   <br/> |Kühl  <br/> |
+|11   <br/> |Reagiert  <br/> |
 |12  <br/> |Flach  <br/> |
-|13  <br/> |Zwei Punkt  <br/> |
-|14  <br/> |Leuchteffekt  <br/> |
-|15  <br/> |Heller Raum  <br/> |
+|13   <br/> |Zwei Punkt  <br/> |
+|14   <br/> |Leuchteffekt  <br/> |
+|15   <br/> |Heller Raum  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 

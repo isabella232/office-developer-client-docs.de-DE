@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: acc4a555-a3bf-4a79-86dc-aba6477733b8
 description: Dieses Thema enthält ein Beispielszenario, in dem die von einem OSC-Anbieter implementierten APIs für die Erweiterbarkeits-Erweiterbarkeit (Social Connector) und OSC zum Abrufen von Aktivitätsinformationen angezeigt werden. Informationen werden in XML-Zeichenfolgen ausgedrückt, die dem OSC-Anbieter-XML-Schema entsprechen.
 ms.openlocfilehash: a4f1c6ce1f33b59811f6a6fecb737cd1f737946b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329120"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409629"
 ---
 # <a name="xml-for-activities"></a>XML für „activities“
 

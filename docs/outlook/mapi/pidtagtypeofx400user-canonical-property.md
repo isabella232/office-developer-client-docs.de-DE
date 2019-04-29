@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1351ec3c-984d-4b3e-8009-7c39f18d71a5
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 5732cd5c2b0b8dc26d699c3567f7cd9be3495184
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32320419"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33410861"
 ---
 # <a name="pidtagtypeofx400user-canonical-property"></a>Kanonische Pidtagtypeofx400user (-Eigenschaft
 
@@ -34,7 +34,7 @@ Diese Eigenschaft enthält den Typ eines Nachrichtenempfängers für die Verwend
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 754db64b-179f-4385-8dd9-c20c9407b186
 description: Sie können Code schreiben, um auf unterschiedliche Ereignisse zu reagieren, die auftreten können, wenn ein Benutzer ein Formular ausfüllt. Zum Arbeiten mit Ereignissen in InfoPath fügen Sie Ereignishandler hinzu, während Sie mit einer Formularvorlage im Entwurfsmodus arbeiten.
 ms.openlocfilehash: 0db3209dfe005f2a87ad65f3fc89b1714ec7d95c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300105"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33407683"
 ---
 # <a name="respond-to-form-events"></a>Reagieren auf Formularereignisse
 
@@ -27,7 +27,7 @@ Weitere Informationen zum Erstellen der InfoPath-Ereignishandler finden Sie unte
 
 Das vom [Microsoft. Office. InfoPath-](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.aspx) Namespace bereitgestellte InfoPath-Modell implementiert drei Klassen, die die 12 Ereignisse implementieren, die von der Formularvorlagen-Geschäftslogik ausgelöst und verarbeitet werden können. In der folgenden Tabelle sind alle InfoPath-Ereignisobjekte, die Ereignisse, denen sie zugeordnet sind, sowie eine Beschreibung der durch sie bereitgestellten Funktionalität aufgeführt. 
   
-|**Name**|**Ereignisse**|**Beschreibung**|
+|**Name**|**Events**|**Beschreibung**|
 |:-----|:-----|:-----|
 |[Button Event](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ButtonEvent.aspx) <br/> |[Geklickt](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ButtonEvent.Clicked.aspx) <br/> |Die **ButtonEvent**-Klasse implementiert das **Clicked**-Ereignis, das ausgelöst wird, wenn Sie in einem Formular auf ein Steuerelement vom Typ **Schaltfläche** klicken.  <br/> |
 |[FormEvents](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.aspx) <br/> |[ContextChanged](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.ContextChanged.aspx) <br/> [Laden](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Loading.aspx) <br/> [Merge](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Merge.aspx) <br/> [Save](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Save.aspx) <br/> [Sign](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Sign.aspx) <br/> [Senden](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Submit.aspx) <br/> [VersionUpgrade](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.VersionUpgrade.aspx) <br/> [ViewSwitched](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.ViewSwitched.aspx) <br/> |Die **FormEvents**-Klasse implementiert die Ereignisse, die für die InfoPath-Formularvorlage selbst spezifisch sind:  <br/> **ContextChanged** <br/> Tritt nach der Änderung des Kontextknotens ein.  <br/> **Laden** <br/> Tritt ein, nachdem die Formularvorlage geladen, jedoch bevor eine Ansicht initialisiert wurde.  <br/> **Merge** <br/> Tritt auf, wenn der Befehl **Formulare zusammenführen** von der Benutzeroberfläche aus aufgerufen wird, oder InfoPath `/aggregate` wird mit der Befehlszeilenoption gestartet.  <br/> **Save** <br/> Tritt auf, wenn die Befehle **Speichern** oder **Speichern** unter auf der Benutzeroberfläche verwendet werden oder wenn die Methoden [Save](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.Save.aspx) und [SaveAs](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.SaveAs.aspx) der [XmlForm](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.aspx) -Klasse verwendet werden.  <br/> **Sign** <br/> Tritt ein, nachdem eine Gruppe signierter Daten im Dialogfeld **Digitale Signaturen** zum Signieren ausgewählt wurde.  <br/> **Senden** <br/> Tritt auf, wenn der **Submit** -Befehl von der Benutzeroberfläche verwendet wird oder die [Submit](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.Submit.aspx) -Methode der **XmlForm** -Klasse verwendet wird.  <br/> **VersionUpgrade** <br/> Tritt ein, wenn die Versionsnummer des Formulars, das geöffnet wird, älter ist als die Versionsnummer der Formularvorlage, auf der das Formular basiert.  <br/> **ViewSwitched** <br/> Tritt ein, nachdem eine Ansicht eines Formulars erfolgreich gewechselt wurde.  <br/> |

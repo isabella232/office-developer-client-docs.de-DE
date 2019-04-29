@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 9ae292b0-fde0-4c2b-ba23-23e90365597d
 description: Mit der FestlegenFeld -Aktion können Sie einem Feld einen Wert zuweisen.
 ms.openlocfilehash: c67c66c238b68512aec90cf6d82d7d497e16ecf1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307896"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33432926"
 ---
 # <a name="setfield-macro-action-access-custom-web-app"></a>SetField-Makroaktion (benutzerdefinierte Access-Web-App)
 
@@ -24,7 +24,7 @@ Mit der **FestlegenFeld** -Aktion können Sie einem Feld einen Wert zuweisen.
 > [!NOTE]
 > Die **FestlegenFeld**-Aktion ist nur in Datenmakros verfügbar. 
   
-## <a name="setting"></a>Einstellung
+## <a name="setting"></a>Setting
 
 Die **FestlegenFeld**-Aktion kann mit den in der folgenden Tabelle aufgeführten Argumenten verwendet werden. 
   

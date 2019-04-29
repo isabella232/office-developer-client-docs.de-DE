@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: e6a9aceb-90d7-fb53-eaf4-416a1ae2a98b
 description: Sie können gegenseitige Abhängigkeiten zwischen Formeln mithilfe von ShapeSheet-Zellbezügen erstellen. Zellbezüge ermöglichen es Ihnen, einen Wert für eine Zelle zu berechnen, der auf dem Wert einer anderen Zelle basiert. Die Zelle Width eines Shapes kann beispielsweise eine Formel enthalten, die die Breite des Shapes berechnet, indem sie auf den Wert seiner Zelle Height verweist, sodass die Breite des Shapes proportional unverändert bleibt, wenn ein Benutzer die vertikale Größe des Shapes ändert.
 ms.openlocfilehash: a92bcc560c535dc012ec5cb79db72250e78364c7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32332620"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409804"
 ---
 # <a name="about-cell-references"></a>Informationen zu Zellbezügen
 

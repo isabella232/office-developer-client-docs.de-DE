@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: b2c9616f-a144-eb99-54b6-b53745c7b4d6
 description: Gibt den Papiertyp für den Druck der Seite an.
 ms.openlocfilehash: 694aa1fb8b52f5ae323c47e9aab8715b4a48dfb0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327062"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33408446"
 ---
 # <a name="paperkind-cell-print-properties-section"></a>Zelle "PaperKind" (Abschnitt "Print Properties")
 

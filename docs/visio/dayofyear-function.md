@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 154d76a2-81f5-d8b1-b665-26dbae5da615
 description: Gibt eine ganze Zahl von 1 bis 366 zurück, die den sequenziellen Tag des Jahres in DateTime oder Expression darstellt. Die DAYOFYEAR-Funktion verwendet den gregorianischen Kalender.
 ms.openlocfilehash: 30c0331a57282baee97e81689b6a8f362581b8f1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360292"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439451"
 ---
 # <a name="dayofyear-function"></a>TAGDESJAHRES-Funktion
 
