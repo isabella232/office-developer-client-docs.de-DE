@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: a6082162-2a74-4850-a0df-4bdbc67b41d8
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: e15c259003ed2cb425eb181f4383f3054967b993
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339319"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33437938"
 ---
 # <a name="pidtagstoreunicodemask-canonical-property"></a>Kanonische Pidtagstoreunicodemask (-Eigenschaft
 
@@ -130,7 +130,7 @@ STORE_UNICODE_OK
     
 Eine RTF-Version einer Nachricht kann immer gespeichert werden, auch wenn der Nachrichtenspeicher nicht im RTF-Format unterstützt wird. Wenn das STORE_RTF_OK-Bit für einen bestimmten Speicher nicht festgelegt ist, muss ein Client, der RTF-Versionen verwaltet, selbst die [RTFSync](rtfsync.md) -Funktion aufrufen, um die **PR_BODY** -und **PR_RTF_COMPRESSED** -Versionen für Textinhalte zu synchronisieren. RTF wird immer in **PR_RTF_COMPRESSED**gespeichert, unabhängig davon, ob es tatsächlich komprimiert ist oder nicht. 
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

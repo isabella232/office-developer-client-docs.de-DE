@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 49d649e8-1603-192b-2984-e5d0b713da89
 description: Legt den vertikalen Abstand zwischen sämtlichen Verbindern und Shapes auf dem Zeichenblatt fest.
 ms.openlocfilehash: 2a5e4469fae2fb3142db2745f26c2009d42c0d2f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359185"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33432331"
 ---
 # <a name="linetonodey-cell-page-layout-section"></a>Zelle "LineToNodeY" (Abschnitt "Page Layout")
 

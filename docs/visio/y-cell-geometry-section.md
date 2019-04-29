@@ -10,17 +10,17 @@ localization_priority: Normal
 ms.assetid: a53b5787-f419-7a36-3c04-c63b3c173ac7
 description: Stellt eine y-Koordinate für ein Shape in lokalen Koordinaten dar. Diese Tabelle beschreibt die Zelle Y anhand der Zeile, in der sie sich befindet.
 ms.openlocfilehash: 9e823b8d21682b419a70ce498016abf575f36f6b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32342812"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33420941"
 ---
 # <a name="y-cell-geometry-section"></a>Zelle "Y" (Abschnitt "Geometrie")
 
 Stellt eine *y* -Koordinate für ein Shape in lokalen Koordinaten dar. Diese Tabelle beschreibt die Zelle Y anhand der Zeile, in der sie sich befindet. 
   
-|**Zeile**|**Beschreibung**|
+|**Row**|**Beschreibung**|
 |:-----|:-----|
 |[NURBSTo](nurbsto-row-geometry-section.md) <br/> | Wenn die MoveTo-Zeile die erste Zeile im Abschnitt ist, stellt die Zelle Y die *y* -Koordinate des ersten Scheitelpunkts eines Pfads dar. Wenn die MoveTo-Zeile zwischen zwei Zeilen angezeigt wird, stellt die Zelle Y die *y* -Koordinate des ersten Scheitelpunkts nach der Unterbrechung im Pfad dar.  <br/> |
 |[LineTo](lineto-row-geometry-section.md) <br/> | Die *y* -Koordinate des Endpunkts eines geraden Linienabschnitts.  <br/> |

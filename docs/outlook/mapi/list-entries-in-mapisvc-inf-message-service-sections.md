@@ -9,11 +9,11 @@ api_type:
 ms.assetid: f4f052d6-ef63-421a-9d8c-4f3c6df83863
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: b6b641a288cea8bac5a1990e85520f3583c02f22
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307833"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33435929"
 ---
 # <a name="list-entries-in-mapisvcinf-message-service-sections"></a>Listeneinträge in den Nachrichtendienst Abschnitten von MapiSvc. inf
 

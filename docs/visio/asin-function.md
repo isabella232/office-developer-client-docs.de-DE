@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 7d917be4-65b1-002f-48cc-6d81916a1157
 description: Gibt den arcsine einer Zahl zurück, beispielsweise den Winkel, dessen Sinus Nummer ist.
 ms.openlocfilehash: a7585dc07053466203f11cc04ce249ceb62fbda0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341524"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33432821"
 ---
 # <a name="asin-function"></a>ASIN Function
 
@@ -28,7 +28,7 @@ Arcs (* * *Number* * *)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Anzahl_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Der Sinus des Winkels.  <br/> |
+| _Anzahl_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Sinus des Winkels.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 

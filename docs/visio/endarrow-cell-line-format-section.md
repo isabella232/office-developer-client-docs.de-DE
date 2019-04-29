@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 2f9c11ba-a316-bc34-60d4-0a41b2af486f
 description: Zeigt an, ob eine Linie eine Pfeilspitze oder eine andere Linienendformatierung an ihrem letzten Scheitelpunkt hat.
 ms.openlocfilehash: 54ef11125a8774914a60897850fb75cd4ab949a5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328903"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33434683"
 ---
 # <a name="endarrow-cell-line-format-section"></a>Zelle "EndArrow" (Abschnitt "Line Format")
 

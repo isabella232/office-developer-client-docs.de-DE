@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: e3b58a19-9f1a-4f2b-9fe2-45cbb7ec6898
 description: Bestimmt, ob die Formeln und Werte der Text-, Linien-und Füllfarbe (oder einer Kombination dieser Eigenschaften) mithilfe von Farben außer Kraft gesetzt werden, die mit dem Diagrammhintergrund in Kontrast stehen. Der Wert ist ein bitweises OR von 0, 1, 2, 4 und 8.
 ms.openlocfilehash: 736e2287c00c24774ef8b677613235d642697f4b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360014"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33433794"
 ---
 # <a name="quickstylevariation-cell-quick-style-section"></a>QuickStyleVariation Cell (Quick Style section)
 

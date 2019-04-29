@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 355cef8b-9213-479a-af95-b591f4bc51ad
 description: Definiert die Textzuweisung für eine Gruppe.
 ms.openlocfilehash: 78a70dc0398745765bca12a1e768390b35fce8ce
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314917"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33432646"
 ---
 # <a name="istextedittarget-cell-group-properties-section"></a>Zelle "IsTextEditTarget" (Abschnitt "Group Properties")
 

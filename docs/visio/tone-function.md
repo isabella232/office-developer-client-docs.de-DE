@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: c2d6a7dd-9f15-27bd-9623-2a047683ff98
 description: Ändert die Farbe, indem die Sättigung um den im Parameter int angegebenen Wert verringert wird.
 ms.openlocfilehash: c3352d4c15671244d0fc4701f2c26b4e0c2ea54d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32335686"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33434375"
 ---
 # <a name="tone-function"></a>TONE Function
 
@@ -26,7 +26,7 @@ TONE (* * *Color* * *, * * *int* * *)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _color_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Der Farbindex von Microsoft Visio oder der RGB-Wert der Farbe.  <br/> |
+| _color_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Farbindex von Microsoft Visio oder der RGB-Wert der Farbe.  <br/> |
 | _int_ <br/> |Erforderlich  <br/> |**Integer** <br/> |Der Wert, um den die Farbsättigung verringert werden soll. Kann positiv oder negativ sein.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert

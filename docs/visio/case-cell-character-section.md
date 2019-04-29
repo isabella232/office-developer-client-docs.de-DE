@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: cf063c05-5789-e037-700b-1e70df00e254
 description: Bestimmt die Groß- und Kleinschreibung für den Text des Shapes. Die Optionen Nur Großbuchstaben (1) und Große Anfangsbuchstaben (2) ändern die Darstellung eines komplett in Großbuchstaben eingegebenen Texts nicht. Der Text muss in Kleinbuchstaben eingegeben werden, damit diese Optionen eine Wirkung zeigen.
 ms.openlocfilehash: 50ceaa1188caded40d36b8837c346fbbba2e14d2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32337233"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33434347"
 ---
 # <a name="case-cell-character-section"></a>Zelle "Case" (Abschnitt "Character")
 

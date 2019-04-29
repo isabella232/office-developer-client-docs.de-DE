@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 89349d1e-365a-442e-9ba3-2df601d9323c
 description: 'Der Outlook Connector für soziale Netzwerke (OSC) Ruft die ISocialProvider:: getCapabilities-Methode auf, um die Funktionen des OSC-Anbieters für ein soziales Netzwerk zu bestimmen.'
 ms.openlocfilehash: 7f716df3ef2e82712374ce3d775cdf66eb07e8b3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32281220"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439926"
 ---
 # <a name="basic-authentication"></a>Standardauthentifizierung
 

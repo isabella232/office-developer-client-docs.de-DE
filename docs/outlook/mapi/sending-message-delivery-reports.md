@@ -9,11 +9,11 @@ api_type:
 ms.assetid: abb12ec5-f0b7-488a-a75d-446f4be53e96
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 2a31e7d088d5c1f94b272cb4d307f3aff99f32ee
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32332837"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33433080"
 ---
 # <a name="sending-message-delivery-reports"></a>Senden von nachrichtenÜbermittlungsBerichten
 

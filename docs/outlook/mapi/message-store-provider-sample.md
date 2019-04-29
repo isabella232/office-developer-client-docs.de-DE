@@ -7,13 +7,13 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: f1e4077b-7a95-440d-a326-a8dc9cdab4fe
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: eb51881aac6e1953a21686857944ba2a15d0dca2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32356938"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33436867"
 ---
 # <a name="message-store-provider-sample"></a>Beispiel für Nachrichtenspeicher Anbieter
 

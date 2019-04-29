@@ -9,11 +9,11 @@ api_type:
 ms.assetid: d68892e3-7c87-4b3a-a691-bff92f83ed00
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 4c3d30c7111e7b26886cbfb069ec2822d2ee0234
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32335112"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33434508"
 ---
 # <a name="configuring-a-message-service"></a>Konfigurieren eines Nachrichtendiensts
 

@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 7dcd5a35-bd3d-447f-e4aa-986091d129de
 description: Gibt an, wie Shapes auf dem Zeichenblatt platziert werden, wenn sie im Dialogfeld Layout konfigurieren (klicken Sie auf der Registerkarte Entwurf in der Gruppe Layout auf Seite neu anordnen, und klicken Sie anschließend auf Weitere Layoutoptionen) angeordnet werden.
 ms.openlocfilehash: b3159b765922d6656d12dd42a377322e4a91fc04
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346865"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33420801"
 ---
 # <a name="placestyle-cell-page-layout-section"></a>Zelle "PlaceStyle" (Abschnitt "Page Layout")
 

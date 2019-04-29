@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: c12b4409-da6f-480b-87af-1e5baea2e8bd
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: a2a6d273495df52adb83393dc5549b0872c8f6f3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341741"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439359"
 ---
 # <a name="srestriction"></a>SRestriction
 
@@ -53,7 +53,7 @@ typedef struct _SRestriction
 
 ```
 
-## <a name="members"></a>Elemente
+## <a name="members"></a>Members
 
  **RT**
   

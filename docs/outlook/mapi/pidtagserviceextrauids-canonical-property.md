@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4838a9af-7818-49aa-ace8-cb94dda8471f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 0fb688e2a845186224c1802f9df2ac537d5bb4d9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328728"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33422306"
 ---
 # <a name="pidtagserviceextrauids-canonical-property"></a>Kanonische Pidtagserviceextrauids (-Eigenschaft
 
@@ -38,7 +38,7 @@ Enthält eine Liste von [MAPIUID](mapiuid.md) -Strukturen, die zusätzliche Prof
 
 Für jeden Nachrichtenfilter können neue Profilabschnitte erstellt werden. Wenn die Informationen zum Nachrichtendienst in ein anderes Profil kopiert werden sollen, ist es wichtig, auch die zusätzlichen Profilabschnitte für die Filter zu kopieren. Ein Dienstanbieter, der zusätzliche Profilabschnitte verwendet, kann die **MAPIUID** -Strukturen dieser Profilabschnitte in **PR_SERVICE_EXTRA_UIDS**speichern, sodass MAPI die zusätzlichen Informationen zum Nachrichtendienst kopiert.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

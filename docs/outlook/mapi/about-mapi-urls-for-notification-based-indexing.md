@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 9cb35f0a-267e-2d85-1701-02d52578a0b8
 description: 'Zuletzt geändert: 20 November, 2011'
 ms.openlocfilehash: 5a3e45809f36b71968560a4b239e268addf00474
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32322232"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33422481"
 ---
 # <a name="about-mapi-urls-for-notification-based-indexing"></a>Informationen zu MAPI-URLs für die Benachrichtigungs basierte Indizierung
 
@@ -82,7 +82,7 @@ Der Informationsspeicher Anbieter muss diese Werte in der angegebenen Reihenfolg
 |Teil | Beschreibung|
 |:----|:-----------|  
 |*dwVersion* |Dies ist die Version der Daten, die gesendet werden. Derzeit ist dieser Wert 1.|
-|*dwFlags* |Für zukünftige Verwendung reserviert. Derzeit sollte dieser Wert 0 sein.|
+|*dwFlags* |Reserviert für zukünftige Verwendung. Derzeit sollte dieser Wert 0 sein.|
 |*cbProfileName* |Die Größe des Profilnamens in Byte. Diese Informationen sind nützlich, wenn der MAPI-Protokoll Handler wissen soll, welches Profil beim Indizieren des Elements verwendet werden soll.|
 |*wszProfileName* |Mit NULL endende Unicode-Zeichenfolge, die den Profilnamen enthält.|
 |*cbProviderItemID* |Die Größe der Anbieter Element-ID in Byte. Der Informationsspeicher Anbieter sollte nur die Anbieter Element-ID für Ordner senden, um zu verhindern, dass zusätzliche Ordner geöffnet werden, um diese Informationen abzurufen.|

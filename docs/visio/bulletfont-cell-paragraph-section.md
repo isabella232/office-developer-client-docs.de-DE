@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: a75ff1f3-2f4d-89e3-108b-e16a34f5184f
 description: Stellt die Nummer der Schriftart dar, die zum Formatieren von Text verwendet wird, wenn eine benutzerdefinierte Aufzählungszeichen-Zeichenfolge angegeben ist und der Wert in der Zelle Bullet ungleich Null ist.
 ms.openlocfilehash: 1cf04917bb7dfa68ee9395abb66ffe9e150f0273
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32337555"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438463"
 ---
 # <a name="bulletfont-cell-paragraph-section"></a>Zelle "BulletFont" (Abschnitt "Paragraph")
 

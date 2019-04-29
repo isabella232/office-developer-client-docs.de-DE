@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3cab23b6-f0e3-4703-a83b-12a617537651
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: a8f88e4b41ab455c55bfd1cb36b73ce7ef0383b3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348993"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438967"
 ---
 # <a name="pidlidfshouldtnef-canonical-property"></a>Kanonische Pidlidfshouldtnef (-Eigenschaft
 
@@ -39,7 +39,7 @@ Gibt an, ob ein Element mit TNEF (Transport Neutral Encapsulation Format) codier
 
 Diese Eigenschaft wird festgelegt, wenn Microsoft Word als e-Mail-Editor festgelegt ist, und es wird ein OLE-Objekt gesendet, das in einen RTF-Stream (Rich Text Format) eingebettet ist.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 

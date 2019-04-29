@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: f9624af2-c087-3dde-9140-339c438b3652
 description: Legt fest, ob eine Linie um die Grenze des Pfads gezogen wird.
 ms.openlocfilehash: ad3744ae8deb4ffb4dd2282e50590439c4b218a4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357281"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33433752"
 ---
 # <a name="noline-cell-geometry-section"></a>Zelle "NoLine" (Abschnitt "Geometry")
 

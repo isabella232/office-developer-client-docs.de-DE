@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 18d28dc1-c41f-47c6-b5c7-258d5f877d01
-description: Mit dem If -Makroblock können Sie eine Gruppe von Aktionen je nach Wert eines als Bedingung verwendeten Ausdrucks ausführen.
+description: Mit dem If-Makroblock können Sie eine Gruppe von Aktionen je nach Wert eines als Bedingung verwendeten Ausdrucks ausführen.
 ms.openlocfilehash: 6fe82e2c42f8e5d93cdc26798e7572e32d6cdc7e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32304263"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33434494"
 ---
 # <a name="ifthenelse-macro-block-access-custom-web-app"></a>If... Dann... Else-Makro Block (Access Custom Web App)
 
-Mit dem **If** -Makroblock können Sie eine Gruppe von Aktionen je nach Wert eines als Bedingung verwendeten Ausdrucks ausführen. 
+Mit dem **If**-Makroblock können Sie eine Gruppe von Aktionen je nach Wert eines als Bedingung verwendeten Ausdrucks ausführen. 
   
 > [!IMPORTANT]
 > Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
@@ -33,21 +33,21 @@ Else
 End If
 ```
 
-## <a name="setting"></a>Einstellung
+## <a name="setting"></a>Setting
 
 For both **If** and ** Else If **, the following arguments are required. 
   
 |**Aktionsargument**|**Beschreibung**|
 |:-----|:-----|
-|**Ausdruck** <br/> |Die Bedingung, auf die Sie testen möchten. Es muss sich um einen Ausdruck handeln, der mit True oder False ausgewertet wird.  <br/> |
+|**Ausdruck** <br/> |Die Bedingung, die Sie testen möchten. Dies muss ein Ausdruck sein, der als "Wahr" oder "Falsch" ausgewertet wird.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
-When you select the **If** macro block, a textbox appears so that you can enter an expression that represents the condition you wish to test. In addition, a combo box appears where you can insert a macro action, below which the text "End If" automatically displays. The If and the End If bracket an area in which you can enter a group, or block, of actions. The block executes only if the expression that you enter is True. 
+Wenn Sie den **If**-Makroblock auswählen, wird ein Textfeld eingeblendet, damit Sie einen Ausdruck zur Darstellung der Bedingung eingeben können, die Sie testen möchten. Darüber hinaus wird ein Kombinationsfeld angezeigt. Sie können darin eine Makroaktion einfügen, unter der der Text "End If" automatisch angezeigt wird. Das "If" und das "End If" klammern einen Bereich ein, in dem Sie eine Gruppe (Block) von Aktionen eingeben können. Der Block wird nur ausgeführt, wenn der eingegebene Ausdruck "Wahr" ist. 
   
 To evaluate a different expression when the first expression is false, you can click **Add Else If** to insert an optional **Else If** block. You must enter an expression that evaluates to True or False. In this case, the block executes only if the expression is True and the first expression is False. 
   
-You can add as many **Else If** blocks as you like to an If block. 
+Sie können einem "If"-Block beliebig viele **Else If**-Blöcke hinzufügen. 
   
 Sie können auf **Add Else** klicken, um einen optionalen **Else** -Block hinzuzufügen. In diesem Fall bilden die unter **Else** eingegebenen Aktionen den **Else** -Block, der nur ausgeführt wird, wenn die darüber angegebenen Aktionen nicht ausgeführt werden. Einem **If** -Block können Sie nur einen **Else** -Block hinzufügen. 
   

@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: a4ffbd02-eed7-43ed-9da2-f0d1ff5d8014
 description: Sie können die Variable-Aktion verwenden, um eine temporäre Variable zu erstellen und diese auf einen bestimmten Wert festzulegen. Die Variable kann dann als Bedingung oder Argument in nachfolgenden Aktionen verwendet werden, oder Sie können die Variable in einem anderen Benutzeroberflächen Makro verwenden.
 ms.openlocfilehash: 54c23868a5bfb66a2fb08465361583c6e9b5ed49
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307928"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33433920"
 ---
 # <a name="setvariable-macro-action-access-custom-web-app"></a>SetVariable-Makroaktion (benutzerdefinierte Access-Web-App)
 

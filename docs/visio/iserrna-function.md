@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 6ee7dc3d-efe9-c862-f71d-034b3d9c3ec6
 description: 'Gibt TRUE zurück, wenn der Wert von cellreference den Fehlertyp #N/A! (nicht verfügbar); Andernfalls wird FALSE zurückgegeben. Die ISERRNA-Funktion wird in Formeln verwendet, die auf eine andere Zelle verweisen.'
 ms.openlocfilehash: 8a398eca6da659a6b8f29e4ef8e31b18abf56fde
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357260"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33432114"
 ---
 # <a name="iserrna-function"></a>ISERRNA-Funktion
 

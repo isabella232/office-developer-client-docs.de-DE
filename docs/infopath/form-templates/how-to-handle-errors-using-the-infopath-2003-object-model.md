@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: eeb05205-d6f4-4931-b9a9-55a663bb1a25
 description: Beim Erstellen von benutzerdefinierten Anwendungen müssen Entwickler häufig Fehler behandeln, wobei auch Programmiercode geschrieben werden muss, um nach Fehlern zu suchen, die von der Anwendung ausgelöst wurden, oder um benutzerdefinierte Fehler zu erstellen und auszulösen. Das InfoPath 2003-kompatible Objektmodell unterstützt die Fehlerbehandlung durch die Verwendung des ErrorObject-Objekts in Verbindung mit der ErrorsCollection-Auflistung.
 ms.openlocfilehash: 93991e33d8867f89454bec08b41ba83e98ab0a17
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300126"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439478"
 ---
 # <a name="handle-errors-using-the-infopath-2003-object-model"></a>Behandeln von Fehlern mithilfe des InfoPath-2003-Objektmodells
 

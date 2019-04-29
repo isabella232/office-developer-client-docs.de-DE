@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: d1c23f1d-485d-a897-594d-15d6e8d0fb3c
 description: Bestimmt, ob der Benutzer im Dialogfeld Shape-Daten definieren oder im Kontextmenü für das Fenster Shape-Daten Shape-Daten auf der Benutzeroberfläche hinzufügen, löschen oder ändern darf.
 ms.openlocfilehash: 001123f3bd08d35f6f8e4874e20f2ee073835494
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359606"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33422523"
 ---
 # <a name="lockcustprop-cell-protection-section"></a>Zelle "LockCustProp" (Abschnitt "Protection")
 

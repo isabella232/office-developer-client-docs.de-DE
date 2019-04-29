@@ -7,13 +7,13 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 9b824e70-ed9a-490c-b777-8902a793fece
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: b9a31fec93ec7fafc4d1565d63e4bc427ba4050e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32347831"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439107"
 ---
 # <a name="hrgetgalfromemsmdbuid"></a>HrGetGALFromEmsmdbUID
 

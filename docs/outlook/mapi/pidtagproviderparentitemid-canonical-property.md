@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6adb8e85-ae56-4542-8b19-ed3cfe7fe522
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 0f99cf38e65c75ce1ba74bf72d88e19f4fbfa03a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32286446"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33433416"
 ---
 # <a name="pidtagproviderparentitemid-canonical-property"></a>Kanonische Pidtagproviderparentitemid (-Eigenschaft
 
@@ -38,7 +38,7 @@ Gibt einen Bezeichner für das übergeordnete Element eines Ordners oder eines E
 
 Speicheranbieter können einen Wert für diese Eigenschaft für ein übergeordnetes Element eines Ordners oder eines Elements angeben, aber den Wert zwischen den Sitzungen beibehalten. Speicheranbieter verwenden Sie diese Eigenschaft, um Suchergebnisse zu identifizieren, die von einer Suchmaschine zurückgegeben werden.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

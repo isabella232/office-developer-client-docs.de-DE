@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: e3f501a4-a8ee-43d7-bd83-c94e7980c398
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 28880b818bc80e31cae0c695d4aac92eb9555cac
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314840"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33433584"
 ---
 # <a name="imapipropgetidsfromnames"></a>IMAPIProp::GetIDsFromNames
 

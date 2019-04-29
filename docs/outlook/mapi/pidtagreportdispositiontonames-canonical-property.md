@@ -9,13 +9,13 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 322b915f-d5b8-40cb-b41a-62d08f3d08f9
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: b9ae59d99a683754ba00ed7363a948f9310adbf6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346368"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33432968"
 ---
 # <a name="pidtagreportdispositiontonames-canonical-property"></a>Kanonische Pidtagreportdispositiontonames (-Eigenschaft
 
@@ -32,7 +32,7 @@ Gibt die Namen der Berichtsempfänger für Nachrichten an, die Empfangsbestätig
 |Datentyp:  <br/> |PT_MV_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 

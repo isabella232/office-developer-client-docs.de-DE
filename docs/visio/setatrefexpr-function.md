@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: c1bd7819-b53b-bff1-69c1-6d78e8fb278b
 description: Speichert einen Wert, der durch eine Aktion in der Benutzeroberfläche (UI) oder der Automatisierung festgelegt wird.
 ms.openlocfilehash: 5ca7b59d0ced9c3da346c416826ac89e6b4001da
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326005"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439051"
 ---
 # <a name="setatrefexpr-function"></a>SETATREFEXPR Function
 

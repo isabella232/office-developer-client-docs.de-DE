@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4ec3100f-7cf1-4702-b326-e6da586a7bb2
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 33a7545f9b2719615617d46e2d5ed1f6952b5522
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32335427"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33422313"
 ---
 # <a name="pidtagreportname-canonical-property"></a>Kanonische Pidtagreportname (-Eigenschaft
 
@@ -40,7 +40,7 @@ Diese Eigenschaften sind Beispiele für die Adresseigenschaften des Empfängers,
   
 Eine Clientanwendung, die Berichte an einen anderen Benutzer weiterleiten muss, sollte diese Eigenschaften bei der Nachrichten Übermittlungszeit festlegen. Wenn Sie nicht festgelegt sind, werden die Berichte an den Absender der Nachricht gesendet.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

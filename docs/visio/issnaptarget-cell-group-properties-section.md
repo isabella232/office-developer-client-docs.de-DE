@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: b58131f6-a566-d9ca-bad4-4f4b66e03aaf
 description: Legt fest, ob der Einrastvorgang an einer Gruppe oder an einzelnen Shapes in dieser Gruppe erfolgt.
 ms.openlocfilehash: cae3eab64be3a91c48ae9f7fb49aa2a321087f43
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317899"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33421445"
 ---
 # <a name="issnaptarget-cell-group-properties-section"></a>Zelle "IsSnapTarget" (Abschnitt "Group Properties")
 

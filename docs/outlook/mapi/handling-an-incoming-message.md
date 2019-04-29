@@ -9,11 +9,11 @@ api_type:
 ms.assetid: d45d5ed9-41cd-4aaf-91d2-1e4a27bb16d4
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: f3fbe34793e3520b26b984f4bd6b14fbcab7a951
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32299405"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438981"
 ---
 # <a name="handling-an-incoming-message"></a>Behandeln von eingehenden Nachrichten
 

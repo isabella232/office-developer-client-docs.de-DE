@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 218b957e-5af6-e53b-1453-a84164ae456e
 description: Sperrt die Höhe des Shapes, sodass sich diese nicht ändert, wenn die Größe des Shapes geändert wird.
 ms.openlocfilehash: 099f6597656d4389476818253f34e741ddd404de
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341776"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33432086"
 ---
 # <a name="lockheight-cell-protection-section"></a>Zelle "LockHeight" (Abschnitt "Protection")
 

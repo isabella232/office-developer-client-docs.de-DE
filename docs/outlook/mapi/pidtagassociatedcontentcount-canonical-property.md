@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 79bbdd84-a3a7-4472-9447-8b0ddbf163ef
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: f301bb50cc0d28126040a80cccb5d4e5566aebac
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339921"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33421319"
 ---
 # <a name="pidtagassociatedcontentcount-canonical-property"></a>Kanonische Pidtagassociatedcontentcount (-Eigenschaft
 
@@ -38,7 +38,7 @@ Enthält die Anzahl der Elemente in der zugeordneten Inhaltstabelle des Ordners.
 
 Diese Eigenschaft enthält die Anzahl der Einträge in der Inhaltstabelle des Ordners. 
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

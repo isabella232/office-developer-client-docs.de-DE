@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: b2405457-843c-0d46-5f4f-9c413826c3f1
 description: Bestimmt, ob die Zeile ein untergeordnetes Erweiterungsmenü der letzten Zeile oberhalb befindlichen Zeile ist, bei der es sich nicht um eine untergeordnete Erweiterung handelt.
 ms.openlocfilehash: 85524ea33258449f5c9ee0991ac9a64f8f0eebae
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346151"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33420864"
 ---
 # <a name="flyoutchild-cell-actions-section"></a>Zelle "FlyoutChild" (Abschnitt "Aktionen")
 

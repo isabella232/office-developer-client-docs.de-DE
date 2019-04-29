@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 6c2154fa-4190-0699-61f7-f2bdf87173ec
 description: Gibt TRUE (1) zurück, wenn einer der logischen Ausdrücke, die als Parameter übergeben werden, TRUE ist.
 ms.openlocfilehash: 175a1c72f5109caca786b823966f07836f4737f0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32337212"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33433507"
 ---
 # <a name="or-function"></a>OR Function
 

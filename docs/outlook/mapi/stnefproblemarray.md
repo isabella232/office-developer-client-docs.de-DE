@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 115d845b-4168-4d49-b880-219ee28baa9a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 721b14f101e87299f654507f94d4a957f905cac1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32336498"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33434263"
 ---
 # <a name="stnefproblemarray"></a>STnefProblemArray
 
@@ -40,7 +40,7 @@ typedef struct _STnefProblemArray
 
 ```
 
-## <a name="members"></a>Elemente
+## <a name="members"></a>Members
 
  **cProblem**
   

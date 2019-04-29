@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: d8b83072-15b9-4b26-875d-147cb6535b2c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 80f15e86d8655e7eae37002f5e322e45944234c4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346326"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33439891"
 ---
 # <a name="pidtagreportingdistributionlistname-canonical-property"></a>Kanonische Pidtagreportingdistributionlistname (-Eigenschaft
 
@@ -34,7 +34,7 @@ Enthält den Anzeigenamen einer Verteilerliste, in der das Messagingsystem einen
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Nachricht  <br/> |
    
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

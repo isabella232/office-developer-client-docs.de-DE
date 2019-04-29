@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9a63d647-7504-42fc-b317-6b02b89070eb
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: e5659113b1c6579913042ae0c8dfcd03e9802621
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359479"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438960"
 ---
 # <a name="pidtagservicename-canonical-property"></a>Kanonische Pidtagservicename (-Eigenschaft
 
@@ -40,7 +40,7 @@ Der Name, der in diesen Eigenschaften enthalten ist, ist für den Nachrichtendie
   
 Diese Eigenschaften werden als Spalte in der Nachrichtendienst Tabelle angezeigt und können zum Filtern von Diensten verwendet werden. Da Sie zum Identifizieren und Filtern von Diensten verwendet wird, sollte der Wert nicht lokalisiert werden.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 
