@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 734d4415-05dd-4c4d-763e-e035fa56dcec
 description: Gibt an, ob Shapes beim Kopieren zwischen Dokumenten lokalisiert werden.
 ms.openlocfilehash: ddd6041ec6531652deb38a0c16be2c741bac91a6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344576"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33405674"
 ---
 # <a name="localizemerge-cell-miscellaneous-section"></a>Zelle "LocalizeMerge" (Abschnitt "Miscellaneous")
 

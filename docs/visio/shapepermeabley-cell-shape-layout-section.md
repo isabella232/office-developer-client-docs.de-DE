@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 90701ecf-3d34-2eac-9ee9-7965e16c0f7c
 description: Legt fest, ob ein Verbinder vertikal durch ein Shape geleitet werden kann.
 ms.openlocfilehash: 62f8bfa0fdfb5c483836f344e8b784dc9092fded
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326516"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33417518"
 ---
 # <a name="shapepermeabley-cell-shape-layout-section"></a>Zelle "ShapePermeableY" (Abschnitt "Shape Layout")
 

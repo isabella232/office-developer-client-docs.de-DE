@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 992ae9d8-ea15-0f5c-ccd6-e4c536099692
 description: 'Enthält die Breite des ausgewählten Shapes in Zeichnungseinheiten. Die Standardformel zur Bestimmung der Breite eines 1D-Shapes lautet:'
 ms.openlocfilehash: c99f4669f3b27390a5b8e9062d6085a5a9db54e1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32351219"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415194"
 ---
 # <a name="width-cell-shape-transform-section"></a>Zelle "Width" (Abschnitt "Shape Transform")
 

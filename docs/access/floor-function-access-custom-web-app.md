@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 12f9be33-25c2-4912-ab44-15d8c582f655
 description: Gibt die größte Ganzzahl zurück, die kleiner oder gleich dem angegebenen numerischen Ausdruck ist.
 ms.openlocfilehash: 9902bbb3e273cff1b793d3e26e8c55738ef8beac
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308190"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33404813"
 ---
 # <a name="floor-function-access-custom-web-app"></a>Floor-Funktion (Access Custom Web App)
 

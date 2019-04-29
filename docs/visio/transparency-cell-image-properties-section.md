@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 5b265356-1602-4241-fbe1-4d5a55392a52
 description: Legt die Transparenzstufe für eine Layerfarbe fest.
 ms.openlocfilehash: defe5307e57c433fcf85a4132939d08cb1ddec77
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280976"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33405835"
 ---
 # <a name="transparency-cell-image-properties-section"></a>Zelle "Transparency" (Abschnitt "Image Properties")
 

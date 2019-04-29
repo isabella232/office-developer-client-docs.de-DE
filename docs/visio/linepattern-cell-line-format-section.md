@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: a416762b-7294-c99f-d9f1-332c3ed35dff
 description: Definiert das Linienmuster eines Shapes. Der in die Zelle LinePattern eingegebene Wert ist eine Zahl, die einen Index für eine Linienmustersammlung darstellt.
 ms.openlocfilehash: eec5bed18777f7822f9544d59dce7722f2f732bb
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316443"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416755"
 ---
 # <a name="linepattern-cell-line-format-section"></a>Zelle "LinePattern" (Abschnitt "Line Format")
 

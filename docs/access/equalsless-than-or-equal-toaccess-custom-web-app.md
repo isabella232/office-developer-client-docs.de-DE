@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: dc0dc67a-aadf-4a5c-9264-e8df1dcd183f
 description: Vergleicht zwei Ausdrücke. Wenn Sie Ausdrücke mit nicht-NULL vergleichen, ist das Ergebnis TRUE, wenn der linke Operand einen Wert hat, der kleiner oder gleich dem rechten Operanden ist; Andernfalls ist das Ergebnis FALSE.
 ms.openlocfilehash: 4a43c83024a7f5318faef25b4505c10246a5eabf
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308218"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33405653"
 ---
 # <a name="less-than-or-equal-to-access-custom-web-app"></a>Kleiner als oder gleich (Access Custom Web App)
 

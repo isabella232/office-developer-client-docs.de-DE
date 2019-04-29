@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: e0731014-f454-4417-9f90-19f3387f5776
 description: Wenn Sie die Funktionalität eines InfoPath-Formulars erweitern möchten, ist es häufig notwendig, programmgesteuert auf Informationen zu dem dem Formular zugrunde liegenden XML-Dokument zuzugreifen, auf die Daten zuzugreifen, die das XML-Dokument enthält, oder Aktionen im XML-Dokument auszuführen. Das InfoPath-Objektmodell unterstützt den Zugriff auf und das Bearbeiten des einem Formular zugrunde liegenden XML-Dokuments durch die Verwendung der XDocument-Schnittstelle in Verbindung mit der XDocumentsCollection-Schnittstelle.
 ms.openlocfilehash: 803122c6c377686a85f11cf48b76876c056f2ec1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303675"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416475"
 ---
 # <a name="access-form-data-using-the-infopath-2003-object-model"></a>Zugreifen auf Formulardaten mithilfe des InfoPath-Objektmodells 2003
 

@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: d082f3a3-387a-4db1-bbad-495c326b8ee3
 description: Das vom Microsoft. Office. Interop. InfoPath. SemiTrust-Namespace bereitgestellte Objektmodell enthält Objekte und Elemente, die neue Funktionalität bereitstellen, die Office InfoPath 2007 und InfoPath hinzugefügt wurde.
 ms.openlocfilehash: 45f7607aec8ccfd653780a550df0823730835a86
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300084"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415341"
 ---
 # <a name="use-microsoftofficeinteropinfopathsemitrust-members-not-compatible-with-infopath"></a>Verwenden von Microsoft. Office. Interop. InfoPath. SemiTrust-Membern, die nicht mit InfoPath kompatibel sind
 

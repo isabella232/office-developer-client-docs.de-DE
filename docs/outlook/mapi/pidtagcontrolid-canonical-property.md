@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 281bc3e0-7c69-461b-bf09-4281abbb5e1b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: b27f59e0bfdcac8eca1751af2f07139f12e2b3a7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32334741"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416020"
 ---
 # <a name="pidtagcontrolid-canonical-property"></a>Kanonische Pidtagcontrolid (-Eigenschaft
 
@@ -40,7 +40,7 @@ Diese Eigenschaft enthält einen eindeutigen Bezeichner für das Steuerelement. 
   
 Diese Eigenschaft wird in Benachrichtigungen verwendet. Benachrichtigungen, die in der Anzeigetabelle gesendet werden, müssen beispielsweise diese Eigenschaft festlegen, um das zu aktualisierende Steuerelement eindeutig zu identifizieren. 
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

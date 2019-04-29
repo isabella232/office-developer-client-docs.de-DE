@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 44017319-7146-3431-e476-fbb1a40341ca
 description: Ändert die Art des visuellen Feedbacks, das Benutzern angezeigt wird, wenn sie einen Verbinder mit der Maus verschieben. Wenn die Maustaste losgelassen wird, ist das daraus resultierende Verbinder-Shape von dieser Einstellung nicht betroffen. Diese Einstellung gilt nicht für umleitbare Verbinder.
 ms.openlocfilehash: 823b8db4dc6afe94a5fdac1f62aaa48d7e1b0d80
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315743"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33404799"
 ---
 # <a name="dynfeedback-cell-miscellaneous-section"></a>Zelle "DynFeedback" (Abschnitt "Miscellaneous")
 

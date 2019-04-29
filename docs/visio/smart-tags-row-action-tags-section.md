@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 065c6977-c737-a4f4-effa-0fd2c98e8bbf
 description: Enthält die Informationen zu einem einzelnen Aktionstag, das einem Shape zugeordnet ist. Ein Shape oder Zeichenblatt enthält pro Aktionstag eine Aktionstag-Zeile.
 ms.openlocfilehash: 1c1591fd2d2cacfbfb350a542e6601cb2f6fbfd6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339830"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33404708"
 ---
 # <a name="smart-tags-row-action-tags-section"></a>Zeile "Smart Tags" (Abschnitt "Action Tags")
 

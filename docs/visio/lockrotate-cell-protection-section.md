@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 2d97b31d-9008-307d-273a-1726007eeb34
 description: Sperrt 2D-Shapes, damit sie nicht mit dem Drehpunkt oder den Befehlen Linksdrehung 90 Grad und Rechtsdrehung 90 Grad gedreht werden können.
 ms.openlocfilehash: 36da1868e4f974bd19d00e86e31bea96eb8ad5bf
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348272"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33404673"
 ---
 # <a name="lockrotate-cell-protection-section"></a>Zelle "LockRotate" (Abschnitt "Protection")
 

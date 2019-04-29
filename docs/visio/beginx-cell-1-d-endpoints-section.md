@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 59d92820-3ff6-a73d-ffb7-d33096e904f7
 description: Stellt die x-Koordinate des Anfangspunkts des 1D-Shapes im Verhältnis zum Ursprung des übergeordneten Objekts dar.
 ms.openlocfilehash: 34c1ef1b2500c78791fb4822851eb6d485d77f81
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360389"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33407599"
 ---
 # <a name="beginx-cell-1-d-endpoints-section"></a>Zelle "BeginX" (Abschnitt "1-D Endpoints")
 

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 9caf424d-cb70-8f1a-b984-64cf776bdfb4
 description: Gibt die x-y-Koordinaten eines Punkts im Koordinatensystem des übergeordneten Elements der Form zurück.
 ms.openlocfilehash: 4e7517c4210db31f1c3f5dc8bf98185b6f4104aa
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32269944"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33414508"
 ---
 # <a name="par-function"></a>PAR Function
 

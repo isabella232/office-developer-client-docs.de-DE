@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 6f8f6af2-c7fa-4135-9532-7af5fc643b0d
 description: Instanzen von Vorlagenvariablen (dargestellt durch ein templateVariable-Element) geben die Daten eines Aktivitätsfeed-Elements in einer Aktivitätsvorlage an.
 ms.openlocfilehash: 9b37665488f0f1e2bd205fb7d4a5d2201697d7c8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329176"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33404372"
 ---
 # <a name="template-variables"></a>Vorlagenvariablen
 
@@ -56,8 +56,8 @@ In diesem Abschnitt werden die erforderlichen und optionalen Elemente erläutert
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|**Name** <br/> |Der Name der Variablen. Erforderlich.   <br/> |
-|**id** <br/> |Die eindeutige ID des Benutzers. Erforderlich.   <br/> |
+|**Name** <br/> |Der Name der Variablen. Erforderlich.  <br/> |
+|**id** <br/> |Die eindeutige ID des Benutzers. Erforderlich.  <br/> |
 |**nameHint** <br/> |Der Name, der im Feedelement angezeigt werden soll. Optional.  <br/> |
 |**profileUrl** <br/> |Die URL des Profils der Person, die als Hyperlink für den Namen der Person im Feedelement verwendet wird, wenn der Name der Person vorhanden ist. Optional.  <br/> |
 |**emailAddress** <br/> |Die e-Mail-Adresse, die zum Aktualisieren der Kontaktinformationen dieser Person in Outlook verwendet wird. Optional.  <br/> |
@@ -66,23 +66,23 @@ In diesem Abschnitt werden die erforderlichen und optionalen Elemente erläutert
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|**Name** <br/> |Der Name der Variablen. Erforderlich.   <br/> |
-|**value** <br/> |Die URL für diesen Link. Erforderlich.   <br/> |
+|**Name** <br/> |Der Name der Variablen. Erforderlich.  <br/> |
+|**value** <br/> |Die URL für diesen Link. Erforderlich.  <br/> |
 |**text** <br/> |Der Linktext, der anstelle der URL selbst angezeigt werden soll. Optional.  <br/> |
    
 ### <a name="listvariable"></a>listVariable
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|**Name** <br/> |Der Name der Variablen. Erforderlich.   <br/> |
-|**listItems** <br/> |Ein Container für Elemente in der Liste. Erforderlich.   <br/> |
+|**Name** <br/> |Der Name der Variablen. Erforderlich.  <br/> |
+|**listItems** <br/> |Ein Container für Elemente in der Liste. Erforderlich.  <br/> |
    
 ### <a name="picturevariable"></a>pictureVariable
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|**Name** <br/> |Der Name der Variablen. Erforderlich.   <br/> |
-|**value** <br/> |Die URL für das Bild. Erforderlich.   <br/> |
+|**Name** <br/> |Der Name der Variablen. Erforderlich.  <br/> |
+|**value** <br/> |Die URL für das Bild. Erforderlich.  <br/> |
 |**altText** <br/> |Der Alternative Text, der für die Eingabehilfen angezeigt werden soll, und beim Bewegen des Mauszeigers über das Bild. Optional.  <br/> |
 |**href** <br/> |Der Hyperlink, der verwendet werden soll, wenn der Benutzer auf das Bild klickt, wenn das gewünschte Ziel nicht die vom **value** -Element angegebene Bild-URL ist. Optional.  <br/> |
    
@@ -90,8 +90,8 @@ In diesem Abschnitt werden die erforderlichen und optionalen Elemente erläutert
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|**Name** <br/> |Der Name der Variablen. Erforderlich.   <br/> |
-|**id** <br/> |Die eindeutige ID des Benutzers. Erforderlich.   <br/> |
+|**Name** <br/> |Der Name der Variablen. Erforderlich.  <br/> |
+|**id** <br/> |Die eindeutige ID des Benutzers. Erforderlich.  <br/> |
 |**nameHint** <br/> |Der Name, der im Feedelement angezeigt werden soll. Optional.  <br/> |
 |**profileUrl** <br/> |Die URL des Profils der Person, die als Hyperlink für den Namen der Person im Feedelement verwendet wird, wenn der Name der Person vorhanden ist. Optional.  <br/> |
 |**emailAddress** <br/> |Die e-Mail-Adresse, die zum Aktualisieren der Kontaktinformationen dieser Person in Outlook verwendet wird. Optional.  <br/> |
@@ -100,7 +100,7 @@ In diesem Abschnitt werden die erforderlichen und optionalen Elemente erläutert
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|**Name** <br/> |Der Name der Variablen. Erforderlich.   <br/> |
+|**Name** <br/> |Der Name der Variablen. Erforderlich.  <br/> |
 |**value** <br/> |Der anzuzeigende Text. Optional.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 1e24a906-83ce-32d2-5d7b-ba6dd6eea2d3
 description: Gibt einen Datentyp für den Shape-Datenwert an.
 ms.openlocfilehash: c2d38b521a8597a4582a4145ad808b0c0e26ff0a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32350897"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33406248"
 ---
 # <a name="type-cell-shape-data-section"></a>Zelle "Type" (Abschnitt "Shape Data")
 

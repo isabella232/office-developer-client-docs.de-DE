@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 3b2991aa-4722-fe3b-39c5-02d38c4c7efc
 description: Bestimmt den Abstand, den das Objekt vertikal vom Ursprung des Rahmens des Objekts entfernt ist. Der Standardwert ist 0. Durch Bearbeitung des Objekts mit dem Zuschneidetool wird dieser Wert geändert.
 ms.openlocfilehash: 908972216a24370bc48990ddc99a36da9274d648
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344737"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33406738"
 ---
 # <a name="imgoffsety-cell-foreign-image-info-section"></a>Zelle "ImgOffsetY" (Abschnitt "Foreign Image Info")
 

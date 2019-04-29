@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 7658705f-c062-49a1-bea6-837737df2425
 description: Dieses Thema bietet eine exemplarische Vorgehensweise zum Erstellen einer einfachen InfoPath-Formularvorlage mit verwaltetem Code, die mit dem InfoPath 2003-kompatiblen Objektmodell verwendet wird, das vom Microsoft. Office. Interop. InfoPath. SemiTrust-Namespace bereitgestellt wird.
 ms.openlocfilehash: c559aedad5c62134c796196c63c1a84f70c4dc3e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303199"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33414340"
 ---
 # <a name="walkthrough-create-and-debug-a-basic-form-template-using-the-infopath-object-model"></a>Exemplarische vorGehensWeise: Erstellen und Debuggen einer einfachen Formularvorlage mit dem InfoPath-Objektmodell
 

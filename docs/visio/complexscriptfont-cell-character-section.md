@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: e1cf9e97-101b-384f-65fe-0169c89dfccc
 description: Enthält die Nummer der Schriftart, die zum Formatieren von Text mit komplexen Schriftzeichen verwendet wird. Nummern von Schriftarten variieren entsprechend den im System installierten Schriftarten.
 ms.openlocfilehash: 5ec8deb59b875a01592b6d7b652204089ecf11e0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359381"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33404834"
 ---
 # <a name="complexscriptfont-cell-character-section"></a>Zelle "ComplexScriptFont" (Abschnitt "Character")
 

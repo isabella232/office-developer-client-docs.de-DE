@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 2e662230-0760-5f43-52dc-927f499715f6
 description: Gibt die von Stunde, Minute und Sekunde dargestellte Zeit zurück.
 ms.openlocfilehash: f5be55d7e63a70d15da49c68b924cc5b03c5ca88
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280997"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33414473"
 ---
 # <a name="time-function-visioshapesheet"></a>TIME-Funktion (VisioShapeSheet)
 
@@ -28,13 +28,13 @@ Uhrzeit (* * *Stunde* * *, * * *Minute* * *, * * *Sekunde* * *)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _hour_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Die Stundenkomponente.  <br/> |
-| _minute_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Die Minutenkomponente.  <br/> |
-| _second_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Die Sekundenkomponente.  <br/> |
+| _hour_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die Stundenkomponente.  <br/> |
+| _minute_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die Minutenkomponente.  <br/> |
+| _second_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die Sekundenkomponente.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
-Numerisch
+Numeric
   
 ## <a name="example-1"></a>Beispiel 1
 

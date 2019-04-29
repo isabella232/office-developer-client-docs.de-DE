@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 4168cd98-9674-1233-254f-0afe81b7245b
 description: Speichert die Beziehungen zwischen Containern, Listen, Beschriftungen und Shapes.
 ms.openlocfilehash: b270366fe1045aea3d628150c82e7fd798fa21df
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359969"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33406409"
 ---
 # <a name="relationships-cell-shape-layout-section"></a>Zelle "Relationships" (Abschnitt "Shape Layout")
 
@@ -35,8 +35,8 @@ Speichert die Beziehungen zwischen Containern, Listen, Beschriftungen und Shapes
 |7  <br/> |Container an der linken Begrenzungskante, an der sich dieses Shape befindet  <br/> |
 |8  <br/> |Container an der rechten Begrenzungskante, an der sich dieses Shape befindet  <br/> |
 |9  <br/> |Container an der oberen Begrenzungskante, an der sich dieses Shape befindet  <br/> |
-|10  <br/> |Container an der unteren Begrenzungskante, an der sich dieses Shape befindet  <br/> |
-|11  <br/> |Liste, die von dieser Liste überlappt wird  <br/> |
+|10   <br/> |Container an der unteren Begrenzungskante, an der sich dieses Shape befindet  <br/> |
+|11   <br/> |Liste, die von dieser Liste überlappt wird  <br/> |
    
 Wenn Sie einen Verweis auf die Zelle Beziehungen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   

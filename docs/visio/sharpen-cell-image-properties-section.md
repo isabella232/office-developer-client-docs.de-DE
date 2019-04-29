@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: aa2bebfc-a6bb-a6b3-3ae9-8553f96b5738
 description: Schärft eine Bitmapgrafik. Der Standardwert ist 0 %. Beim Scharfzeichnen einer Grafik wird diese durch Erhöhen des Kontrasts angrenzender Pixel fokussiert.
 ms.openlocfilehash: e519cf6e5a168b64b4bc8aa083843163a47525ba
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349091"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415922"
 ---
 # <a name="sharpen-cell-image-properties-section"></a>Zelle "Sharpen" (Abschnitt "Image Properties")
 

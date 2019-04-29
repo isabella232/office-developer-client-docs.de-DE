@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: f3a83496-fccc-9d6a-02b9-60ebaf4911ea
 description: Enthält die Informationen für ein einzelnes Shape-Datenelement, das einem Shape zugeordnet ist. Ein Shape enthält eine Shape-Datenzeile für jedes Shape-Datenelement. Shape-Datenzeilen heißen Prop.name und enthalten die folgenden Zellen. Weitere Informationen finden Sie in den Themen zu bestimmten Zellen.
 ms.openlocfilehash: 058f8f180a2eca4736d06dfcc533d81f45150c86
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326215"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415397"
 ---
 # <a name="shape-data-row-shape-data-section"></a>Zeile "Shape Data" (Abschnitt "Shape Data")
 
@@ -31,7 +31,7 @@ Enthält die Informationen für ein einzelnes Shape-Datenelement, das einem Shap
 |[Unsichtbar](invisible-cell-shape-data-section.md) <br/> |Gibt an, ob das Shape-Datenelement im Dialogfeld oder Fenster **Shape-Daten** angezeigt wird. TRUE = nicht sichtbar; FALSE = sichtbar.  <br/> |
 |[Bitten](ask-cell-shape-data-section.md) <br/> |Bestimmt, ob der Benutzer beim Erstellen einer Instanz oder beim Duplizieren oder Kopieren eines Shapes aufgefordert wird, Informationen zu Shape-Daten einzugeben.  <br/> |
 |[LangID](langid-cell-shape-data-section.md) <br/> |Gibt die Sprache an, in der der Wert des Shape-Datenelements angezeigt wird.  <br/> |
-|[Calendar](calendar-cell-miscellaneous-section.md) <br/> |Gibt den Typ des Kalenders an, der verwendet wird, wenn ein Shape-Datenelement vom Typ Datum ist.  <br/> |
+|[Kalender](calendar-cell-miscellaneous-section.md) <br/> |Gibt den Typ des Kalenders an, der verwendet wird, wenn ein Shape-Datenelement vom Typ Datum ist.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 

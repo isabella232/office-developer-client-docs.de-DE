@@ -8,11 +8,11 @@ ms.assetid: 11daa75b-87fc-4e63-8e02-09ab9307c8f8
 ms.date: 01/28/2016
 description: Verwenden Sie das Sway-URI-Schema, um die Sway-Anwendung zu öffnen und eine Sway anzuzeigen oder zu bearbeiten.
 ms.openlocfilehash: 04848ef1de2777d916d8dd8dd381e6d5f66310d6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346249"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415313"
 ---
 # <a name="sway-uri-scheme"></a>Sway-URI-Schema
 
@@ -33,11 +33,11 @@ Mehrere Befehlsargumente können als Teil des Sway-URL-Schemas eingeschlossen we
 
 |Name des Befehlsarguments|Beschreibung|Typ|Mögliche Werte|Pflichtfeld?|
 |:-----|:-----|:-----|:-----|:-----|
-|**id**|Der eindeutige Bezeichner eines Sway. Wird verwendet, um die zu öffnende Sway anzugeben.|Zeichenfolge|Ein gültiger eindeutiger Bezeichner für eine Sway. Die ID ist immer Teil der URL zu einem Sway.<br/><br/>Beispielsweise ist `dBheQgVZ1RQBfiQU`die ID für die `https://sway.com/dBheQgVZ1RQBfiQU`folgende Sway.<br/><br/>Wenn das mit der Sway-Anwendung verknüpfte Benutzerkonto über Bearbeitungsberechtigungen verfügt, öffnet die Anwendung die Sway im Bearbeitungsmodus. Andernfalls öffnet die Anwendung die Sway im Ansichtsmodus.|Nein|
-|**mode**|Der Modus, in dem eine bestimmte Sway geöffnet werden soll, sei es zur Bearbeitung oder zur Anzeige.|Zeichenfolge|Bearbeiten<br/>Ansicht<br/><br/>**Hinweis**: Wenn keine **ID** angegeben wird, wird dieses Befehlsargument ignoriert.|Nein|
-|**auth_upn**|Das Konto, das beim Öffnen von Sway verwendet werden soll.|Zeichenfolge|Eine gültige e-Mail-Adresse.<br/><br/>Wenn die angegebene e-Mail-Adresse keinem Sway-Konto zugeordnet ist, fordert Sway den Benutzer auf, sich als der angegebene Benutzer anzumelden.<br/><br/>Wenn der Sway-Anwendung mehr als ein Konto zugeordnet ist und die angegebene e-Mail-Adresse vorhanden ist, wechselt die Sway-Anwendung zur Verwendung dieses Kontos, wenn Sie aufgerufen wird.|Nein|
-|**auth\_PVR**|Der Kontotyp, der zum Öffnen der Sway&mdash;verwendet werden soll, entweder ein Microsoft-Konto oder ein Azure Active Directory-Konto (Azure AD).|Zeichenfolge|WindowsLiveId – gibt an, dass das **auth\_-UPN** -Konto ein Microsoft-Konto ist.<br/><br/>OrgId – gibt an, dass das **auth\_-UPN** -Konto ein Azure AD-Konto ist.<br/><br/>Wenn kein **auth\_-UPN** angegeben wird, wird dieses Befehlsargument ignoriert.|Nein|
-|**Aufrufen\_der APP**|Der Name der Windows-Anwendung, die zum Aufrufen von Sway verwendet wurde.|Zeichenfolge|Der Anzeigename der Windows-Anwendung, die verwendet wird, um Sway über das Sway-URL-Schema aufzurufen.<br/><br/>Der Zweck dieses Befehlsarguments ist die Telemetrie und Nachverfolgung.|Nein|
+|**id**|Der eindeutige Bezeichner eines Sway. Wird verwendet, um die zu öffnende Sway anzugeben.|String|Ein gültiger eindeutiger Bezeichner für eine Sway. Die ID ist immer Teil der URL zu einem Sway.<br/><br/>Beispielsweise ist `dBheQgVZ1RQBfiQU`die ID für die `https://sway.com/dBheQgVZ1RQBfiQU`folgende Sway.<br/><br/>Wenn das mit der Sway-Anwendung verknüpfte Benutzerkonto über Bearbeitungsberechtigungen verfügt, öffnet die Anwendung die Sway im Bearbeitungsmodus. Andernfalls öffnet die Anwendung die Sway im Ansichtsmodus.|Nein|
+|**mode**|Der Modus, in dem eine bestimmte Sway geöffnet werden soll, sei es zur Bearbeitung oder zur Anzeige.|String|Bearbeiten<br/>Ansicht<br/><br/>**Hinweis**: Wenn keine **ID** angegeben wird, wird dieses Befehlsargument ignoriert.|Nein|
+|**auth_upn**|Das Konto, das beim Öffnen von Sway verwendet werden soll.|String|Eine gültige e-Mail-Adresse.<br/><br/>Wenn die angegebene e-Mail-Adresse keinem Sway-Konto zugeordnet ist, fordert Sway den Benutzer auf, sich als der angegebene Benutzer anzumelden.<br/><br/>Wenn der Sway-Anwendung mehr als ein Konto zugeordnet ist und die angegebene e-Mail-Adresse vorhanden ist, wechselt die Sway-Anwendung zur Verwendung dieses Kontos, wenn Sie aufgerufen wird.|Nein|
+|**auth\_PVR**|Der Kontotyp, der zum Öffnen der Sway&mdash;verwendet werden soll, entweder ein Microsoft-Konto oder ein Azure Active Directory-Konto (Azure AD).|String|WindowsLiveId – gibt an, dass das **auth\_-UPN** -Konto ein Microsoft-Konto ist.<br/><br/>OrgId – gibt an, dass das **auth\_-UPN** -Konto ein Azure AD-Konto ist.<br/><br/>Wenn kein **auth\_-UPN** angegeben wird, wird dieses Befehlsargument ignoriert.|Nein|
+|**Aufrufen\_der APP**|Der Name der Windows-Anwendung, die zum Aufrufen von Sway verwendet wurde.|String|Der Anzeigename der Windows-Anwendung, die verwendet wird, um Sway über das Sway-URL-Schema aufzurufen.<br/><br/>Der Zweck dieses Befehlsarguments ist die Telemetrie und Nachverfolgung.|Nein|
 
 ## <a name="uri-scheme-semantics"></a>URI-Schema Semantik
 

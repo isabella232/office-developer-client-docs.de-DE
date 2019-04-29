@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 12cfe096-6882-c0be-b248-87567cb71e83
 description: Stellt Transporteinstellungen dar, die Outlook zum Ermitteln der erforderlichen Synchronisierungsaufgaben verwendet, und zum Deaktivieren der Benutzeroberflächenelemente, die das Konto nicht unterstützt.
 ms.openlocfilehash: 707306c3bfbeebdd18f82bacfc121274be08aa50
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326481"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33404526"
 ---
 # <a name="propmapitransportflags"></a>PROP_MAPI_TRANSPORT_FLAGS
 

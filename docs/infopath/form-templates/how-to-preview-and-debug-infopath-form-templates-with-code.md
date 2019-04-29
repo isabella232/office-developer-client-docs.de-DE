@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: c8387f1c-b34c-490e-8bf9-d824bf98d826
 description: Microsoft InfoPath mit Visual Studio 2012 ermöglicht das Debuggen, indem der Formularcode im Vorschaumodus ausgeführt wird. Wenn Sie mit dem Debuggen von Formularcode beginnen, wird das Projekt kompiliert, und das Formular wird von InfoPath im InfoPath-Vorschaufenster angezeigt. Wenn eine Codezeile ermittelt wird, für die ein Haltepunkt festgelegt wurde, wird der Fokus auf den Code-Editor verschoben. Wenn Sie den Vorgang nach einem Haltepunkt fortsetzen, wird der Fokus wieder zum Vorschaufenster verschoben. Das Debuggen wird beendet, wenn Sie das Vorschaufenster schließen.
 ms.openlocfilehash: 8f9ff97fdd5b4b016d96129304fa6f994d7b4561
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300434"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33405240"
 ---
 # <a name="preview-and-debug-infopath-form-templates-with-code"></a>Vorschau und Debuggen von InfoPath-Formularvorlagen mit Code
 

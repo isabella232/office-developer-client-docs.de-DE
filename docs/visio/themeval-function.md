@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 9eac3b8c-532c-4312-935d-fe8b63bcaf75
 description: Ruft Werte aus dem aktiven Design ab.
 ms.openlocfilehash: ba95b8a920174ee44c0349d7227258d3ee8a843c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326684"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415754"
 ---
 # <a name="themeval-function"></a>THEMEVAL-Funktion
 

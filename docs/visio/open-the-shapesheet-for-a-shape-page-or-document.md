@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 9b456a87-d990-7ab2-d8a1-e91dca78650f
 description: Das ShapeSheet-Fenster ist in Microsoft Visio standardmäßig ausgeblendet. Um auf das ShapeSheet zuzugreifen, müssen Sie Visio im Entwicklermodus ausführen (Registerkarte "Entwickler" anzeigen).
 ms.openlocfilehash: b18bca69f7acea29d3c43ff57b22b132baa9c6fe
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360949"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33419422"
 ---
 # <a name="open-the-shapesheet-for-a-shape-page-or-document"></a>Öffnen des ShapeSheet für ein Shape, eine Seite oder ein Dokument
 

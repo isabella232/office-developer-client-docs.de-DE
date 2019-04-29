@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: decdd8fc-2184-4d97-b918-3ef6ab1ab40b
 description: Bestimmt, ob eine bestimmte Zeichenfolge mit einem angegebenen Muster übereinstimmt. Ein Muster kann reguläre Zeichen und Platzhalterzeichen enthalten. Während des Mustervergleichs müssen reguläre Zeichen genau mit den in der Zeichenfolge angegebenen Zeichen übereinstimmen. Platzhalterzeichen können jedoch mit beliebigen Fragmenten der Zeichenfolge abgeglichen werden. Durch die Verwendung von Platzhalterzeichen wird der LIKE-Operator flexibler als die Verwendung der Zeichenfolgenvergleichs Operatoren = und!.
 ms.openlocfilehash: 02d1e4f8fc61335e828a1f77579c14b1c7577485
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32311081"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33406115"
 ---
 # <a name="like-access-custom-web-app"></a>LIKE (Access Custom Web App)
 

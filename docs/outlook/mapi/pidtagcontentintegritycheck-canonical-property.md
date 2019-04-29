@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: c7f10b8a-6b20-44cf-bde6-8d2b711c1c14
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 30ed8053c9c3d77f4831da37ddd2456ad0564a5a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32331892"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415726"
 ---
 # <a name="pidtagcontentintegritycheck-canonical-property"></a>Kanonische Pidtagcontentintegritycheck (-Eigenschaft
 
@@ -38,7 +38,7 @@ Enthält den Wert "ASN. 1 Content Integrity Check", der es einem Nachrichtenabse
 
 Diese Eigenschaft ermöglicht die nicht Ablehnung des Nachrichteninhalts. In Verbindung mit **PR_MESSAGE_TOKEN** ([pidtagmessagetoken (](pidtagmessagetoken-canonical-property.md)) wird sichergestellt, dass der Inhalt einer Nachricht unverändert an seinem Ziel eintrifft.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

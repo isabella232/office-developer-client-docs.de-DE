@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 9ff2893c-afe5-505e-0b55-48ec1de08a5f
 description: Bestimmt den vertikalen Abstand zwischen den Shapes auf dem Zeichenblatt, wenn Sie Shapes mithilfe des Dialogfelds Layout konfigurieren (Klicken Sie auf der Registerkarte Entwurf in der Gruppe Layout auf Seite neu Layout und dann auf Weitere Layoutoptionen).
 ms.openlocfilehash: 283de8925e34c470fd1f9e78b8ae58882be8b7fc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32338423"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33420206"
 ---
 # <a name="avenuesizey-cell-page-layout-section"></a>Zelle "AvenueSizeY" (Abschnitt "Page Layout")
 

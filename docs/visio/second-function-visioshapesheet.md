@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 22005976-37c0-d2be-8e34-8aee8458e4be
 description: Gibt eine ganze Zahl von 0 bis 59 zurück, die die Sekundenkomponente von DateTime oder Expression darstellt.
 ms.openlocfilehash: c23bbded12a3886fe3bd4dd2a3c3ba1bd6d11619
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32332788"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33404876"
 ---
 # <a name="second-function-visioshapesheet"></a>SECOND-Funktion (VisioShapeSheet)
 
@@ -30,7 +30,7 @@ Sekunde ("* * *DateTime* * *" | * * *Expression* * * [, * * *LCID* * *])
 |:-----|:-----|:-----|:-----|
 | _DateTime_ <br/> |Erforderlich  <br/> |**String** <br/> |Beliebige Zeichenfolge, die allgemein als Datums- und Zeitangabe erkannt wird, oder ein Bezug auf eine Zelle mit einer Datums- und Zeitangabe.  <br/> |
 | _expression_ <br/> |Erforderlich  <br/> |**String** <br/> | Beliebiger Ausdruck, der eine Datums- und Zeitangabe liefert.  <br/> |
-| _lcid_ <br/> |Optional  <br/> |**Numerisch** <br/> |Der Gebietsschemabezeichner, der beim Auswerten einer nicht lokalen _DateTime_verwendet werden soll. Der lokale Bezeichner ist eine Zahl, die in den Systemkopfdateien beschrieben wird.  <br/> |
+| _lcid_ <br/> |Optional  <br/> |**Numeric** <br/> |Der Gebietsschemabezeichner, der beim Auswerten einer nicht lokalen _DateTime_verwendet werden soll. Der lokale Bezeichner ist eine Zahl, die in den Systemkopfdateien beschrieben wird.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 

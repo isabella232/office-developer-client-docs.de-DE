@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: f0e4c644-c646-9649-c697-82feb02f5e29
 description: Stellt den Kontrast einer Bitmapgrafik ein. Verringern Sie den Kontrast einer Grafik durch Eingabe eines Werts zwischen 0 % und 49 %, oder steigern Sie den Kontrast durch Eingabe eines Werts zwischen 51 % und 100 %. Der Standardwert lautet 50 %.
 ms.openlocfilehash: f0a27090ea1ec96bf11726ae641ff918dd581e2f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32319019"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33404925"
 ---
 # <a name="contrast-cell-image-properties-section"></a>Zelle "Contrast" (Abschnitt "Image Properties")
 

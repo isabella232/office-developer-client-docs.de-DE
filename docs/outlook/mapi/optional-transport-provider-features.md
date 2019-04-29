@@ -9,11 +9,11 @@ api_type:
 ms.assetid: 0bec2c17-b41c-4e46-8961-a55bde1f7326
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: df38350b049264e7e20ac0bb821c71d93b992d2a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348517"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33404302"
 ---
 # <a name="optional-transport-provider-features"></a>Optionale Transport Anbieter Features
 

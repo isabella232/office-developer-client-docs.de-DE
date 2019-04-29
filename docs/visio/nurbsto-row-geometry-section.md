@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 7e47acfe-5ec0-3689-eb89-0168f596a739
 description: Enthält die x-und y-Koordinaten, die Position des zweiten bis letzten Knotens, die Position der letzten Gewichtung, die Position des ersten Knotens, die Position der ersten Gewichtung und die Formel für einen nicht einheitlichen rationalen B-Spline (NURBS).
 ms.openlocfilehash: a5fc83f9581277580d076c2a850bfe937602aef0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32361019"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33404715"
 ---
 # <a name="nurbsto-row-geometry-section"></a>Zeile "NURBSTo" (Abschnitt "Geometry")
 

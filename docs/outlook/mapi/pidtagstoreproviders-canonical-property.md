@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: a2c4a933-b371-43ec-af0f-6140d8b5c7ea
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 45d19b35f05b3347e78973bb72e526a2198d9bad
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278701"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33415838"
 ---
 # <a name="pidtagstoreproviders-canonical-property"></a>Kanonische Pidtagstoreproviders (-Eigenschaft
 
@@ -38,7 +38,7 @@ Enthält eine Liste der Bezeichner von Nachrichtenspeicher Anbietern im aktuelle
 
 Verwenden Sie diese Eigenschaft nicht. Sie ist für die Verwendung durch MAPI reserviert.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 43128ea2-c0d9-c45f-31e6-768a80ae59b2
 description: Sie können Operatoren in Formeln verwenden, um arithmetische Operationen (Addition, Subtraktion, Multiplikation usw.) oder logische Vergleiche (größer als, kleiner als, gleich usw.) auszuführen. Sie können darüber hinaus die Reihenfolge der Berechnungsschritte in einer Formel bestimmen, indem Sie Ausdrücke in Klammern einschließen. Verwenden Sie den &-Operator, um Zeichenfolgen zu kombinieren bzw. miteinander zu verketten.
 ms.openlocfilehash: 4f095df73f9bd1d6a876d975d262c9217c696fb9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345283"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33406129"
 ---
 # <a name="about-operators"></a>Informationen zu Operatoren
 
@@ -27,7 +27,7 @@ Die folgende Tabelle enthält Beispiele für Ausdrücke und deren Ergebnisse.
 |**Ausdruck**|**Ergebnis**|**Beschreibung**|
 |:-----|:-----|:-----|
 | 2 \* 5 &amp; "Cent"  <br/> | "10 Cent"  <br/> | Der &amp; Operator (String Verkettung) erfordert Zeichenfolgenargumente, daher wird das numerische Ergebnis 2 \* 5 automatisch in die Zeichenfolge "10" konvertiert.  <br/> |
-| 5 \* "2"  <br/> | 10  <br/> | Der \* Operator (Multiplikation) erfordert numerische Argumente, daher wird die Zeichenfolge "2" automatisch in die entsprechende Zahl 2 konvertiert.  <br/> |
+| 5 \* "2"  <br/> | 10   <br/> | Der \* Operator (Multiplikation) erfordert numerische Argumente, daher wird die Zeichenfolge "2" automatisch in die entsprechende Zahl 2 konvertiert.  <br/> |
 | 5 \* "Schafe"  <br/> | 0  <br/> | Der \* Operator (Multiplikation) erfordert numerische Argumente, da die Zeichenfolge "Sheep" nicht in eine Zahl konvertiert werden kann, wird NULL als numerische Entsprechung verwendet.  <br/> |
    
 ## <a name="arithmetic-operators"></a>Arithmetische Operatoren
@@ -40,7 +40,7 @@ Arithmetische Operatoren führen Vorgänge mit Zahlen aus. Der +-Operator (Plus)
 | -  <br/> | Unärer Minus-Operator  <br/> | -37  <br/> | -37  <br/> |
 | %  <br/> | Einstelliger Prozentsatz  <br/> | 37%  <br/> | .37  <br/> |
 | ^  <br/> | Potenzierung  <br/> | 5 ^ 2  <br/> | 25  <br/> |
-| \*  <br/> | Multiplikation  <br/> | 5 \* 2  <br/> | 10  <br/> |
+| \*  <br/> | Multiplikation  <br/> | 5 \* 2  <br/> | 10   <br/> |
 | /  <br/> | Division  <br/> | 5/2  <br/> | 2,5  <br/> |
 | +  <br/> | Ergänzungen  <br/> | 5 +2  <br/> | 7  <br/> |
 | -  <br/> | Subtraktion  <br/> | 5 -2  <br/> | 3  <br/> |

@@ -6,13 +6,13 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: a166f39c-f10b-4e56-8b5d-e6a54ee08c8f
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: fd4b4ad5bf52f29384ef7e0ba738c350189f471e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32310052"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33405282"
 ---
 # <a name="xlgetinstptr"></a>xlGetInstPtr
 
@@ -72,5 +72,5 @@ short WINAPI xlGetInstPtrExample(void)
 
 - [xlGetHwnd](xlgethwnd.md)
 - [xlGetInst](xlgetinst.md)
-- [C C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden k�nnen](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
+- [C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden können](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
 

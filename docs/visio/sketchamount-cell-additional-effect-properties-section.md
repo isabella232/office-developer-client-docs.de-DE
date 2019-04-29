@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 7c7353b7-f28e-4004-bf13-6e9714fbed37
 description: Bestimmt die Verzerrung für einen skizzeneffekt als ganze Zahl zwischen 0 und 25.
 ms.openlocfilehash: fd9ee3390d05f24d81d9c6677160155b0f0f0d35
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314770"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33404421"
 ---
 # <a name="sketchamount-cell-additional-effect-properties-section"></a>SketchAmount Cell (Additional Effect Properties section)
 

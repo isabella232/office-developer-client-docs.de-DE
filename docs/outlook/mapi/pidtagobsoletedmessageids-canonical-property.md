@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: bc979398-f1ad-4496-b982-428b95719369
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 1f00a57798b03edb368fb0dc59fead7a2e9f5c8f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329246"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416111"
 ---
 # <a name="pidtagobsoletedmessageids-canonical-property"></a>Kanonische Pidtagobsoletedmessageids (-Eigenschaft
 
@@ -38,7 +38,7 @@ Enthält die Bezeichner von Nachrichten, die von dieser Nachricht abgelöst werd
 
 Die in dieser Eigenschaft enthaltenen Bezeichner sind Standardsuch Schlüssel, die das Format der **PR_SEARCH_KEY** ([pidtagsearchkey (](pidtagsearchkey-canonical-property.md))-Eigenschaft verwenden.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

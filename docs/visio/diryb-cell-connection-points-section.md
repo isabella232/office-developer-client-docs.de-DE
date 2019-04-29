@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: d951c57d-2c22-0289-35af-44e3c2877b2c
 description: Bestimmt die y-Komponente für den erforderlichen Ausrichtungsvektor eines übereinstimmenden Verbindungspunkts. Sie wird auch zur Ausrichtung des angefügten Abschnitts eines dynamischen Verbinders verwendet. Diese Zelle akzeptiert einen Fließkommawert.
 ms.openlocfilehash: b0dc3c9f7e1a9e87b2ecdace21c8fa1658b1388d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32332585"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33417091"
 ---
 # <a name="diry--b-cell-connection-points-section"></a>Zelle "DirY / B" (Abschnitt "Connection Points")
 

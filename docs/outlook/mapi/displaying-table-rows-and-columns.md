@@ -7,13 +7,13 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 49567a8d-b58d-4636-bead-a1f84b4f111d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: f9f1cc0bebf3c90a5c12f2714e8ab7eea59104da
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32337023"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33407116"
 ---
 # <a name="displaying-table-rows-and-columns"></a>Anzeigen von Tabellenzeilen und-Spalten
 
@@ -27,11 +27,11 @@ Die entsprechende Anzeigetabelle enthält vier Zeilen, eine für jedes Steuerele
   
 |**Control**|**XPOS**|**YPOS**|**DELTAX**|**DELTAy**|
 |:-----|:-----|:-----|:-----|:-----|
-|Bezeichnung für Anzeigename  <br/> |14  <br/> |18  <br/> |49  <br/> |8  <br/> |
-|Anzeigename-Bearbeitungsfeld  <br/> |76  <br/> |16  <br/> |89  <br/> |12  <br/> |
-|E-Mail-Adress Bezeichnung  <br/> |14  <br/> |42  <br/> |50  <br/> |8  <br/> |
+|Bezeichnung für Anzeigename  <br/> |14   <br/> |18  <br/> |49  <br/> |8  <br/> |
+|Anzeigename-Bearbeitungsfeld  <br/> |76  <br/> |16   <br/> |89  <br/> |12  <br/> |
+|E-Mail-Adress Bezeichnung  <br/> |14   <br/> |42  <br/> |50  <br/> |8  <br/> |
 |E-Mail-Adresse-Bearbeitungsfeld  <br/> |76  <br/> |40  <br/> |89  <br/> |12  <br/> |
-|Kontrollkästchen  <br/> |14  <br/> |64  <br/> |90  <br/> |12  <br/> |
+|Kontrollkästchen  <br/> |14   <br/> |64  <br/> |90  <br/> |12  <br/> |
    
 In der folgenden Tabelle werden die entsprechenden Werte für den Typ des Steuerelements, dessen **PR_CONTROL_TYPE** ([pidtagcontroltype (](pidtagcontroltype-canonical-property.md)) und die Bitmaske der Flags, dessen **PR_CONTROL_FLAGS** ([pidtagcontrolflags (](pidtagcontrolflags-canonical-property.md))-Eigenschaft vorgeschlagen.
   

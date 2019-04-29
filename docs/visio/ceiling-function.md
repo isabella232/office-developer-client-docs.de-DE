@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 1a8d6d48-7ae3-5483-28d2-5b1706088a53
 description: Rundet eine Zahl von 0 (null) zur nächsten Instanz von Multiple ab. Wenn mehrere nicht angegeben ist, wird die Zahl von 0 auf die nächste ganze Zahl gerundet.
 ms.openlocfilehash: 449f17d1b68c116cccb2635723a3f6277d0ac2a9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32337226"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33404127"
 ---
 # <a name="ceiling-function"></a>CEILING Function
 
