@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: c827ecd4-5593-6d4f-2746-d13b02b098fe
 description: Sucht eine Textzeichenfolge, die in einer anderen Textzeichenfolge enthalten ist, und gibt die Anfangsposition der Textzeichenfolge zurück, die Sie relativ zu ihrer Position in der Textzeichenfolge, die Sie enthält, suchen.
 ms.openlocfilehash: 40d65af25d89774c1bdf7b235cf653dbb61dd1c7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32322498"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33426576"
 ---
 # <a name="find-function"></a>FIND Function
 
@@ -31,7 +31,7 @@ Find (* * *Suchtext* * *, * * *within_text* * *, [* * *start_num* * *], [* * *ig
 | _Suchtext_ <br/> |Erforderlich  <br/> |**String** <br/> |Die gesuchte Zeichenfolge.  <br/> |
 | _format_ <br/> |Erforderlich  <br/> |**String** <br/> |Die Zeichenfolge, die den gesuchten Text enthält.  <br/> |
 | _start_num_ <br/> |Optional  <br/> |**Number** <br/> |Das Zeichen, bei dem die Suche beginnen soll. Das erste Zeichen in _within_text_ ist 1. Wenn _start_num_ fehlt, wird davon ausgegangen, dass es 1 ist.  <br/> |
-| _ignore_case_ <br/> |Optional  <br/> |**Boolean** <br/> |In der Standardeinstellung ist bei der FIND-Funktion Groß- und Kleinschreibung zu beachten. Wenn die Groß- und Kleinschreibung ignoriert werden soll, legen Sie für dieses Argument den Wert TRUE fest.  <br/> |
+| _ignore_case_ <br/> |Optional  <br/> |**Boolescher Wert** <br/> |In der Standardeinstellung ist bei der FIND-Funktion Groß- und Kleinschreibung zu beachten. Wenn die Groß- und Kleinschreibung ignoriert werden soll, legen Sie für dieses Argument den Wert TRUE fest.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 

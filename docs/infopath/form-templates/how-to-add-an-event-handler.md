@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: d69393fb-fb5a-4edb-abc0-38f5d7e80bcc
 description: In diesem Thema werden die Verfahren zum Hinzufügen von Ereignishandlern zu einer Microsoft InfoPath-Formularvorlage mit verwaltetem Code mithilfe von Visual Studio 2012 beschrieben. Wenn Sie einer Formularvorlage einen Ereignishandler hinzufügen möchten, beginnen Sie mit der im InfoPath-Designer geöffneten Formularvorlage, und wählen Sie dann den entsprechenden Benutzeroberflächenbefehl für das Ereignis aus, für das Sie Code schreiben möchten. Nachdem Sie den Befehl für ein Ereignis im InfoPath-Designer ausgewählt haben, wechselt der Fokus automatisch zum Skelett-Ereignishandler für dieses Ereignis im Code-Editor von Visual Studio 2012.
 ms.openlocfilehash: c6406ec1604355c59f4ee4818fdaea5d70f696bb
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300119"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427185"
 ---
 # <a name="add-an-event-handler"></a>Hinzufügen eines Ereignishandlers
 

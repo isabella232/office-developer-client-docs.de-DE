@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9d99a3b6-d0b4-4e8a-8f08-f46fdeb6b3e7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: d5c6e1dc30c3ee7862341bce204b4a78bd6d379b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359444"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33426527"
 ---
 # <a name="pidtagserviceuid-canonical-property"></a>Kanonische Pidtagserviceuid (-Eigenschaft
 
@@ -38,7 +38,7 @@ Enthält die [MAPIUID](mapiuid.md) -Struktur für einen Nachrichtendienst.
 
 Diese Eigenschaft wird von MAPI für Profile Section-Objekte berechnet. MAPI verwendet es, um alle Anbieter zu gruppieren, die zum gleichen Nachrichtendienst gehören. Diese Eigenschaft wird als Parameter für die meisten [IMsgServiceAdmin](imsgserviceadminiunknown.md) -Methoden bereitgestellt. Sie darf nicht in MAPISVC. inf angezeigt werden. 
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

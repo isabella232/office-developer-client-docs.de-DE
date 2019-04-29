@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: d83e39f0-b259-4c33-8f3e-e03e94c2403d
 description: In diesem Thema werden die Schnittstellen, die Sie zum programmgesteuerten Anpassung des Dialogfelds Quick Ablegen in OneNote 2013 verwenden können.
 ms.openlocfilehash: dd6b28ae6cb2acb007bae26ea661facaf1f8d4be
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317098"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425337"
 ---
 # <a name="quick-filing-dialog-box-interfaces-onenote"></a>Für schnelle Ablage Dialogfeld Feld Schnittstellen (OneNote 2013)
 

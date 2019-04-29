@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: b647cbb5-2769-068d-bbda-2dc983c47ac9
 description: Legt fest, ob platzierbare Shapes über einem Shape platziert werden können, wenn Shapes unter Verwendung des Dialogfelds Layout konfigurieren (klicken Sie auf der Registerkarte Entwurf in der Gruppe Layout auf Seite neu anordnen, und klicken Sie anschließend auf Weitere Layoutoptionen) ausgerichtet werden.
 ms.openlocfilehash: ceecfa25c66c3ba261865d0131a3f55ef444d5e8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357057"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427220"
 ---
 # <a name="shapepermeableplace-cell-shape-layout-section"></a>Zelle "ShapePermeablePlace" (Abschnitt "Shape Layout")
 

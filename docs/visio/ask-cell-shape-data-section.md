@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: b499a5eb-db8f-ebd0-d505-c9a002205e7d
 description: Bestimmt, ob der Benutzer beim Erstellen einer Instanz oder beim Duplizieren oder Kopieren eines Shapes aufgefordert wird, Shape-Daten einzugeben.
 ms.openlocfilehash: 0aa270ff918866d8f683a6408ccd71b6a22d555d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341440"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33426864"
 ---
 # <a name="ask-cell-shape-data-section"></a>Zelle "Ask" (Abschnitt "Shape Data")
 
