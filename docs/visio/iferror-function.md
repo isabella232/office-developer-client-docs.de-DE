@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 232fa528-2375-90be-8e18-7a064ce1345e
 description: Gibt das ausgewertete Ergebnis eines primären Ausdrucks zurück, wenn es nicht zu einem Fehler ausgewertet wird. Andernfalls wird das ausgewertete Ergebnis eines alternativen Ausdrucks zurückgegeben.
 ms.openlocfilehash: 7b9b42b5c7e7053bae862ddadf17e65015d8ecc3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344814"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33431176"
 ---
 # <a name="iferror-function"></a>IFERROR Function
 

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: ec0de3e1-21dc-c5d6-2c2a-d5fef80d89bd
 description: Der Schlüssel zum Steuern von Shape-Aktionen ist das Erstellen von Formeln, die das von Ihnen gewünschte Verhalten definieren. Sie können die Formel einer Zelle umschreiben, um den Zellenwert und somit das Verhalten eines bestimmten Shapes zu ändern. Die Zelle Hight im Abschnitt Shape Transform enthält beispielsweise eine Formel, die Sie bearbeiten können, um die Höhe des Shapes zu ändern.
 ms.openlocfilehash: e8e1a2b77cc355e930af6f31f0b375dfba321e74
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344457"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33426261"
 ---
 # <a name="about-formulas"></a>Informationen zu Formeln
 

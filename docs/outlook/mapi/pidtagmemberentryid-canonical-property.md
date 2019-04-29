@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: b1e166fd-7e15-4371-8510-63001317fb90
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 83a645b49e5bb48051bbaedb26058d2da053348b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32342497"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33433038"
 ---
 # <a name="pidtagmemberentryid-canonical-property"></a>Kanonische Pidtagmemberentryid (-Eigenschaft
 
@@ -38,7 +38,7 @@ Enthält den Eintragsbezeichner des Verzeichnisobjekts für ein SACL-Tabellenele
 
 Diese Eigenschaft wird von der [IExchangeModifyTable](iexchangemodifytableiunknown.md) -Schnittstelle verwendet, um eine Person oder Rolle, für die die SACL gilt, eindeutig zu identifizieren. Nachdem ein Element in der SACL-Tabelle erstellt wurde, **** kann es nicht mehr geändert werden. Um Sie zu ändern, müssen Sie das Table-Element löschen und es mit einer anderen **Eintrags**-Nr. neu erstellen.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 1c4c4ae2-b3fa-ed45-c6e5-22bedb2523db
 description: Legt fest, ob ein Steuerpunkt an andere Shapes geklebt werden kann.
 ms.openlocfilehash: 2f5e65ab72c584f88b56e273b0d73abf969a6588
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32337254"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33423293"
 ---
 # <a name="can-glue-cell-controls-section"></a>Zelle "Can Glue" (Abschnitt "Controls")
 

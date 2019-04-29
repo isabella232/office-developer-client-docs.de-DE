@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7c5c749e-5463-4935-85b5-32219d06f782
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: c659b77767fddc4c783732082c2eb65c68af8dbf
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32356714"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33431666"
 ---
 # <a name="pidtagrecipientcertificate-canonical-property"></a>Kanonische Pidtagrecipientcertificate (-Eigenschaft
 
@@ -38,7 +38,7 @@ Enthält das ASN. 1-Zertifikat eines Nachrichtenempfängers für die Verwendung 
 
 Diese Eigenschaft ist eine Kopie der **PR_USER_CERTIFICATE** ([pidtagusercertificate (](pidtagusercertificate-canonical-property.md))-Eigenschaft des Empfängers für die Verwendung in einem Bericht. Es kann verwendet werden, um dem Absender zu beweisen, dass der Empfänger die Nachricht tatsächlich erhalten hat, die ein zugestellter Bericht nicht unbedingt anzeigt.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

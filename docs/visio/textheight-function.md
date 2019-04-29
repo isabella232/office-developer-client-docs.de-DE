@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 5a10892f-c8fa-c127-2f5a-564009ce5411
 description: Gibt die Höhe des zusammengesetzten Texts in einer Form zurück, in der keine Textzeile MaximumWidth überschreitet.
 ms.openlocfilehash: 7455f58f14f9a4a0ae1fcd5375dba5d5860d3852
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32332353"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427409"
 ---
 # <a name="textheight-function"></a>TEXTHÖHE-Funktion
 
@@ -29,7 +29,7 @@ TextHEIGHT (* * *Shapename! DerText* * * * * *[, MaximumWidth]* * *)
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _Shapename! DerText_ <br/> |Erforderlich  <br/> |**String** <br/> |Ein Verweis auf die Zelle mit dem Namen DerText im Ziel-Shape.  _Shapename!_ ist der Name der Form, aus der Sie den Text abrufen möchten.  <br/> |
-| _MaximumWidth_ <br/> |Optional  <br/> |**Numerisch** <br/> |Die maximale Breite eines Textblocks.  <br/> |
+| _MaximumWidth_ <br/> |Optional  <br/> |**Numeric** <br/> |Die maximale Breite eines Textblocks.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 

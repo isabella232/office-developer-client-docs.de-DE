@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 92f59a0d-3834-424d-ad81-167fdeba9bd0
 description: In diesem Thema werden die wichtigsten Änderungen in Outlook Social Connector 2013 (OSC) aufgeführt. Es stellt einen Vergleich der Features bereit, die zwischen Outlook Social Connector 2013 und Outlook Social Connector 1,1 zur Verfügung stehen.
 ms.openlocfilehash: 6b735555d312c149d7dc8b827990b96bfc229678
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329113"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33435453"
 ---
 # <a name="whats-new-for-providers"></a>Neues für Anbieter
 
@@ -31,7 +31,7 @@ Einige wichtige Änderungen in Outlook Social Connector 2013 sind:
     
 In der folgenden Tabelle sind die Verfügbarkeit von verschiedenen Features in Outlook Social Connector 2013 im Vergleich zu Outlook Social Connector 1,1.
   
-|**Feature**|**Outlook Connector für soziale Netzwerke 2013**|**Outlook Connector für soziale Netzwerke 1,1**|
+|**Funktion**|**Outlook Connector für soziale Netzwerke 2013**|**Outlook Connector für soziale Netzwerke 1,1**|
 |:-----|:-----|:-----|
 |Endbenutzeroberfläche  <br/> |SharePoint Server, SharePoint Workspace, lync-Client, VisitenKarte in allen Office-Clientanwendungen und Personen Bereich in Outlook  <br/> |Personen Bereich in Outlook  <br/> |
 |Standardauthentifizierung  <br/> |Ja  <br/> |Ja  <br/> |

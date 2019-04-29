@@ -7,13 +7,13 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: a1fc4f20-511f-4721-8f09-ec2a5fd0ccb0
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 732b3d724c855d978250afff3d05c7f19909a5b2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32356574"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33426464"
 ---
 # <a name="types-of-tables"></a>Tabellentypen
 
@@ -33,7 +33,7 @@ Die MAPI-Tabellen und ihre Implementierer und Benutzer sind:
   
 |**Table**|**Implementierer**|
 |:-----|:-----|
-|Anlage  <br/> |Von Nachrichtenspeicher Anbietern implementiert. Wird von Clients und Transportanbietern verwendet.  <br/> |
+|Attachment  <br/> |Von Nachrichtenspeicher Anbietern implementiert. Wird von Clients und Transportanbietern verwendet.  <br/> |
 |Inhalt  <br/> |Von Nachrichtenspeicher-und Adressbuch Anbietern implementiert. Von Clients verwendet.  <br/> |
 |Anzeige  <br/> |Von MAPI und Dienstanbietern implementiert. Wird von MAPI-und Dienstanbietern verwendet.  <br/> |
 |Hierarchie  <br/> |Von Nachrichtenspeicher-und Adressbuch Anbietern implementiert. Von Clients verwendet.  <br/> |

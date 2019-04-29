@@ -10,13 +10,13 @@ keywords:
 - xlGetHwnd-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: be33b097-812b-4f5c-81be-4d9673e95b0b
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: ab4ac1bc040ef2ea9bca182624111e03722c5200
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32310066"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425456"
 ---
 # <a name="xlgethwnd"></a>xlGetHwnd
 
@@ -50,5 +50,5 @@ Weitere Informationen finden Sie im Code für die `SAMPLES\GENERIC\GENERIC.C`fSh
 ## <a name="see-also"></a>Siehe auch
 
 - [xlGetInst](xlgetinst.md)
-- [C C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden k�nnen](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
+- [C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden können](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
 

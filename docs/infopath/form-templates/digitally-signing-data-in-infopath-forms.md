@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 7b396d9f-9a47-3170-367f-5d1f0144f927
 description: Bei einer digitalen Signatur handelt es sich um einen elektronischen, verschlüsselungsbasierten, sicheren Echtheitsstempel in einem Makro oder Dokument. Eine gültige digitale Signatur bestätigt, dass die Daten vom Signierer stammen und seit dem Signieren nicht geändert wurden. Wenn Dokumente oder bestimmte Daten in den Dokumenten signiert werden, wird die Signatur berechnet und dem Dokument hinzugefügt. Auf diese Weise werden die Signaturen immer zusammen mit den signierten Daten übertragen.
 ms.openlocfilehash: 6c1f5a1c14c15bc88839dc44d9a5a595d8b52893
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300245"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425099"
 ---
 # <a name="digitally-signing-data-in-infopath-forms"></a>Digitales Signieren von Daten in InfoPath-Formularen
 

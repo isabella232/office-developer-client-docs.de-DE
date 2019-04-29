@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 96b8c503-67b3-8623-d99b-0dad7b15c224
 description: Gibt an, ob dieses Shape andere Shapes teilen kann, sofern diese teilbar sind.
 ms.openlocfilehash: 46b42e9be070b54095d3e9a5c247d63be6348f77
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349119"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33423559"
 ---
 # <a name="shapesplit-cell-shape-layout-section"></a>Zelle "ShapeSplit" (Abschnitt "Shape Layout")
 

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: c6fd0aba-7c33-b77f-207b-ba704b3e0756
 description: Legt die übergeordneten Shapes bei Verwendung von Shapes mit Steuerpunkten fest. Mithilfe dieser Zelle wird das Verhalten aller Shapes auf dem Zeichenblatt festgelegt.
 ms.openlocfilehash: a530c48156043bec0cd58d79aead1a403c17ddce
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282908"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33422621"
 ---
 # <a name="ctrlasinput-cell-page-layout-section"></a>Zelle "CtrlAsInput" (Abschnitt "Page Layout")
 

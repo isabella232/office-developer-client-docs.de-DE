@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 3fec776a-e9a7-6774-d824-e905d427b8b4
 description: Zeigt die aktuellen Sperreinstellungen an, die mit dem Befehl Schutz (Registerkarte Entwickler) festgelegt wurden, sowie einige zusätzliche Sperren, die nur in einem ShapeSheet-Fenster festgelegt werden können.
 ms.openlocfilehash: f922ba1f356a97275714eb8323b793e91f469b1f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314812"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33429397"
 ---
 # <a name="protection-section"></a>Abschnitt "Protection"
 

@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: c20e4ff2-ef55-4455-86ab-3bd47ddfefb2
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 64f389bc45f88b1fd0e516c92c8eec1e0998a298
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32279622"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33422719"
 ---
 # <a name="pidtagphysicaldeliverybureaufaxdelivery-canonical-property"></a>Kanonische Pidtagphysicaldeliverybureaufaxdelivery (-Eigenschaft
 
@@ -34,7 +34,7 @@ Enthält TRUE, wenn das Messagingsystem für die physische Übermittlung dieser 
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

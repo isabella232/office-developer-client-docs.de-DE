@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 596c62b7-8d42-1854-d709-592db09a6a84
 description: Sperrt das Shape, damit es nicht gelöscht werden kann.
 ms.openlocfilehash: 0819969c9ba17a52de19341b359b33ceae5b44d8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359619"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33423139"
 ---
 # <a name="lockdelete-cell-protection-section"></a>Zelle "LockDelete" (Abschnitt "Protection")
 

@@ -7,13 +7,13 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: e2ccddd7-65e8-41f6-8e21-a4ae98190a96
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 56ca15440c8d323dbab1b6a92a01941106b86934
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328693"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33421396"
 ---
 # <a name="required-features-for-address-book-providers"></a>Erforderliche Funktionen für Adressbuchanbieter
 
@@ -25,7 +25,7 @@ Adressbuchanbieter können mit vorübergehenden oder permanenten, lokalen oder r
   
 In der folgenden Tabelle werden die Features beschrieben, die von allen Adressbuch Anbietern benötigt werden, sowie die Schritte, die Sie ausführen müssen, um Sie zu implementieren.
   
-|**Feature**|**VorGehensWeise**|
+|**Funktion**|**VorGehensWeise**|
 |:-----|:-----|
 |Sitzungs Anmeldung  <br/> | Implementieren Sie eine Einstiegspunktfunktion. Weitere Informationen finden Sie unter [Implementieren einer Adressbuchanbieter-Einstiegspunktfunktion](implementing-an-address-book-provider-entry-point-function.md).  <br/>  Implementieren Sie die [IABProvider:: Login](iabprovider-logon.md) -Methode. Weitere Informationen finden Sie unter [Implementieren des Adressbuch Anbieters bei der Anmeldung und Abmeldung](implementing-address-book-provider-logon-and-logoff.md).  <br/> |
 |Sitzungsabmeldung  <br/> |Implementieren Sie die [IABProvider:: Shutdown](iabprovider-shutdown.md) -Methode. Weitere Informationen finden Sie unter [Implementieren des Adressbuch Anbieters bei der Anmeldung und Abmeldung](implementing-address-book-provider-logon-and-logoff.md).  <br/> |

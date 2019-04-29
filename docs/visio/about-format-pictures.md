@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: df4c1c70-8b41-c046-7415-643188af0e06
 description: Eine Formatierungsangabe ist ein Formatcode, der bestimmt, wie ein Wert angezeigt wird. Sie können beispielsweise die Anzahl von Stellen bestimmen, die rechts oder links von einem Dezimaltrennzeichen angezeigt werden, oder Sie legen fest, ob eine Zeichenfolge in Klein- oder Großschreibung angezeigt wird.
 ms.openlocfilehash: 7043c9819f41ec2c08345c84010328be75677918
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344555"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33436818"
 ---
 # <a name="about-format-pictures"></a>Informationen zu Formatierungsangaben
 

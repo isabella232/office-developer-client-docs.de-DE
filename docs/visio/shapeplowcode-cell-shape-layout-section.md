@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: acf07fd7-6aa6-1a92-9b7a-bd6fea8a7cb2
 description: Legt fest, ob dieses platzierbare Shape verschoben wird, wenn Sie ein anderes platzierbares Shape in der Nähe dieses Shapes auf dem Zeichenblatt ablegen.
 ms.openlocfilehash: 6e155103f7bfc70a78826297f441fc9ce78942ad
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32325606"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33423895"
 ---
 # <a name="shapeplowcode-cell-shape-layout-section"></a>Zelle "ShapePlowCode" (Abschnitt "Shape Layout")
 

@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2d5b7302-cad2-4522-beb1-7c6c711f42e6
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 12fefbe15491837878608540006e5dd7dc3033ea
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32351058"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33438288"
 ---
 # <a name="sbinaryarray"></a>SBinaryArray
 
@@ -40,7 +40,7 @@ typedef struct _SBinaryArray
 
 ```
 
-## <a name="members"></a>Elemente
+## <a name="members"></a>Members
 
  **cValues**
   

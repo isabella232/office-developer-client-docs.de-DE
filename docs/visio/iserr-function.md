@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 87508007-8ad2-3bcf-55dc-f0207c7c6fe3
 description: 'Gibt TRUE zurück, wenn der Wert von cellreference ein beliebiger Fehlertyp ist, außer #N/A; Andernfalls wird FALSE zurückgegeben. Die ISERR-Funktion wird in Formeln verwendet, die auf eine andere Zelle verweisen.'
 ms.openlocfilehash: e2117c38d3cad2408295ed6894aefc78e107596e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32297249"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33432107"
 ---
 # <a name="iserr-function"></a>ISERR Function
 

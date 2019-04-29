@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: e316a424-d789-4ce5-bcc6-263049f3659e
 description: Gibt den Typ der verschlüsselten Verbindung an, die für ein SMTP-Konto verwendet werden soll.
 ms.openlocfilehash: 67eae5c9c5ca1b7f664ceaac0463ef3f3c9a291a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328329"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33421284"
 ---
 # <a name="propsmtpsecureconnection"></a>PROP_SMTP_SECURE_CONNECTION
 
@@ -31,7 +31,7 @@ Gibt den Typ der verschlüsselten Verbindung an, die für ein SMTP-Konto verwend
 
 Der Wert kann eine der folgenden Konstanten sein: Ihre Werte finden Sie unter [Constants (Account Management API)](constants-account-management-api.md) . 
   
-|**Konstanten**|**Beschreibung**|
+|**Constants**|**Beschreibung**|
 |:-----|:-----|
 |**ENCRYPT_CONN_NO_SECURITY** <br/> |Verwenden Sie keine Verschlüsselung.  <br/> |
 |**ENCRYPT_CONN_SSL** <br/> |Verwenden Sie SSL-Verschlüsselung (Secure Socket Layer).  <br/> |

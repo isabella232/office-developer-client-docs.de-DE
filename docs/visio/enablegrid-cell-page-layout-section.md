@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: bfea4ef4-1b30-eb22-215d-3b9b73098da9
 description: Bestimmt, ob die Anwendung Shapes an einem internen unsichtbaren Zeichenblattgitter ausrichtet, wenn Sie das Layout im Dialogfeld Layout konfigurieren festlegen. (Klicken Sie auf der Registerkarte Entwurf in der Gruppe Layout auf Seite neu anordnen, und klicken Sie dann auf Weitere Layoutoptionen.)
 ms.openlocfilehash: 11299ca7c9b0ea050542baf97e2cab3a27fa52ba
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345556"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33424441"
 ---
 # <a name="enablegrid-cell-page-layout-section"></a>Zelle "EnableGrid" (Abschnitt "Page Layout")
 

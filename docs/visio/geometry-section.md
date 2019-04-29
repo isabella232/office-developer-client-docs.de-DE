@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 75601a1e-6b1a-27ee-a2bd-69e569315982
 description: Enthält Zeilen, die die Koordinaten der Scheitelpunkte für die Linien und Bögen auflisten, aus denen das Shape besteht.
 ms.openlocfilehash: 32a815015c7d1764399215767b674668b7235832
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345115"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33423909"
 ---
 # <a name="geometry-section"></a>Abschnitt "Geometrie"
 
@@ -26,7 +26,7 @@ Die Geometrie einer Form kann in mehreren **Geometrie** Abschnitten ausgedrückt
 
 Der Abschnitt **Geometry** enthält die folgenden Zeilentypen. Weitere Details finden Sie unter den Zellenthemen. 
   
-|**Zeile**|**Beschreibung**|
+|**Row**|**Beschreibung**|
 |:-----|:-----|
 |[MoveTo](moveto-row-geometry-section.md) <br/> |Verschieben zu einer Koordinate.  <br/> |
 |[LineTo](lineto-row-geometry-section.md) <br/> |Eine Linie bis zu einer Koordinate zeichnen.  <br/> |

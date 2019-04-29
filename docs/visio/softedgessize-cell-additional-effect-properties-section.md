@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: a5cde2ca-f343-4a6e-b5d9-a1b78b3cd240
 description: Bestimmt die Größe eines weichen Kanten Effekts in Punkt von 0,00 bis 100,00. Wenn die Zelle SoftEdgesSize den Wert 0 hat, weist die Form keine weichen Ränder auf.
 ms.openlocfilehash: e749fefde8e0358cbf4ab8388a61ad703c7d52ff
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32334538"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33435915"
 ---
 # <a name="softedgessize-cell-additional-effect-properties-section"></a>SoftEdgesSize Cell (Additional Effect Properties section)
 

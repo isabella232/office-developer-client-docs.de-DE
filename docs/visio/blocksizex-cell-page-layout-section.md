@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 253aac17-077e-48e0-39a8-a3abd5d4a257
 description: Bestimmt die horizontale Blockgröße, den Bereich, in dem jede Ihrer Shapes auf das Zeichenblatt passen muss, wenn Sie Shapes mithilfe des Dialogfelds Layout konfigurieren (Klicken Sie auf der Registerkarte Entwurf in der Gruppe Layout auf Seite neu Layout, und klicken Sie dann auf Weitere Layoutoptionen).
 ms.openlocfilehash: 8e4cee4b2059d9b8f2fe77c2d4902e67246eac2f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309478"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33424189"
 ---
 # <a name="blocksizex-cell-page-layout-section"></a>Zelle "BlockSizeX" (Abschnitt "Page Layout")
 

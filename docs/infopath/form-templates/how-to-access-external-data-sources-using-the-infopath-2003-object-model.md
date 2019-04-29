@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 9fd9ca47-abf1-48dd-8668-dfee27161793
 description: Beim Arbeiten mit einer InfoPath-Formularvorlage, die das InfoPath 2003-kompatible Objektmodell verwendet, können Sie Code schreiben, um auf die sekundären Datenquellen des Formulars zuzugreifen und die darin enthaltenen Daten zu bearbeiten.
 ms.openlocfilehash: 569f029b412328f4d49e3079eaf207dc1556fc4b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303696"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33431680"
 ---
 # <a name="access-external-data-sources-using-the-infopath-2003-object-model"></a>Zugreifen auf externe Datenquellen mit dem InfoPath-Objektmodell 2003
 

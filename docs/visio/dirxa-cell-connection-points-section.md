@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 00d87b92-0da7-37d6-e7b5-23f350db0a9b
 description: Bestimmt die x-Komponente für den erforderlichen Ausrichtungsvektor eines übereinstimmenden Verbindungspunkts. Die Zelle DirX/A wird auch verwendet, um den angefügten Teil eines dynamischen Konnektors auszurichten. Diese Zelle akzeptiert einen Fließkommawert.
 ms.openlocfilehash: cb86ef1064537911ffd00a66f5c0b7942459f85e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32332593"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33422397"
 ---
 # <a name="dirx--a-cell-connection-points-section"></a>Zelle "DirX / A" (Abschnitt "Connection Points")
 

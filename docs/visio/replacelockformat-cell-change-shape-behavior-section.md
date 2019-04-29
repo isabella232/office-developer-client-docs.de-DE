@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 6973e2e6-7e7f-48ba-95b3-37c959f6ffb1
 description: Gibt an, ob die Werte der angegebenen Zellen in einem Master-Shape die Werte (einschließlich lokaler Werte) einer Form überschreiben, die während einer Form Ersetzung ersetzt wird. Wenn die Zelle ReplaceLockFormat eines Master-Shapes auf TRUE (1) festgelegt ist, überschreiben die Formatierungswerte des Masters alle entsprechenden Werte eines Shapes, das vom Master ersetzt wird.
 ms.openlocfilehash: 88af22accb7a80640e7553338dae1af48934f246
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329890"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427234"
 ---
 # <a name="replacelockformat-cell-change-shape-behavior-section"></a>Zelle "ReplaceLockFormat" (Abschnitt "Shape-Verhalten ändern")
 

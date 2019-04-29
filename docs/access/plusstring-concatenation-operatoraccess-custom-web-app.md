@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 24fc83e6-5860-4890-a222-f322fc30a5f9
 description: Das Pluszeichen (+) ist der Zeichenfolgenverkettungsoperator, der die Zeichenfolgenverkettung ermöglicht. Alle anderen Zeichenfolgenmanipulationen werden mithilfe von Zeichenfolgenfunktionen wie Teilzeichenfolge behandelt.
 ms.openlocfilehash: cb684e1484136f84934feed003f205e37512ffd7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308043"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33424651"
 ---
 # <a name="-string-concatenation-operator-access-custom-web-app"></a>+ (String Verkettungs Operator) (Access Custom Web App)
 

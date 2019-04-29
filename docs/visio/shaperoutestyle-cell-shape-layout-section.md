@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: a5dcd2e0-e343-5ee2-2b63-2a1312437901
 description: Legt das Routingformat und die Richtung für einen ausgewählten Verbinder auf dem Zeichenblatt fest.
 ms.openlocfilehash: e5725d461a71dad4623161d99134a20250abe724
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326523"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425029"
 ---
 # <a name="shaperoutestyle-cell-shape-layout-section"></a>Zelle "ShapeRouteStyle" (Abschnitt "Shape Layout")
 
@@ -32,13 +32,13 @@ Legt das Routingformat und die Richtung für einen ausgewählten Verbinder auf d
 |7  <br/> |Struktur  <br/> |Von oben nach unten  <br/> |**visLORouteTreeNS** <br/> |
 |8  <br/> |Struktur  <br/> |Von links nach rechts  <br/> |**visLORouteTreeWE** <br/> |
 |9  <br/> |Netzwerk  <br/> |Keine  <br/> |**visLORouteNetwork** <br/> |
-|10  <br/> |Organigramm  <br/> |Von unten nach oben  <br/> |**visLORouteOrgChartSN** <br/> |
-|11  <br/> |Organigramm  <br/> |Von rechts nach links  <br/> |**visLORouteOrgChartEW** <br/> |
+|10   <br/> |Organigramm  <br/> |Von unten nach oben  <br/> |**visLORouteOrgChartSN** <br/> |
+|11   <br/> |Organigramm  <br/> |Von rechts nach links  <br/> |**visLORouteOrgChartEW** <br/> |
 |12  <br/> |Flussdiagramm  <br/> |Von unten nach oben  <br/> |**visLORouteFlowchartSN** <br/> |
-|13  <br/> |Flussdiagramm  <br/> |Von rechts nach links  <br/> |**visLORouteFlowchartEW** <br/> |
-|14  <br/> |Struktur  <br/> |Von unten nach oben  <br/> |**visLORouteTreeSN** <br/> |
-|15  <br/> |Struktur  <br/> |Von rechts nach links  <br/> |**visLORouteTreeEW** <br/> |
-|16  <br/> |Mitte an Mitte  <br/> |Keine  <br/> |**visLORouteCenterToCenter** <br/> |
+|13   <br/> |Flussdiagramm  <br/> |Von rechts nach links  <br/> |**visLORouteFlowchartEW** <br/> |
+|14   <br/> |Struktur  <br/> |Von unten nach oben  <br/> |**visLORouteTreeSN** <br/> |
+|15   <br/> |Struktur  <br/> |Von rechts nach links  <br/> |**visLORouteTreeEW** <br/> |
+|16   <br/> |Mitte an Mitte  <br/> |Keine  <br/> |**visLORouteCenterToCenter** <br/> |
 |17  <br/> |Simple  <br/> |Von oben nach unten  <br/> |**visLORouteSimpleNS** <br/> |
 |18  <br/> |Simple  <br/> |Von links nach rechts  <br/> |**visLORouteSimpleWE** <br/> |
 |19  <br/> |Simple  <br/> |Von unten nach oben  <br/> |**visLORouteSimpleSN** <br/> |

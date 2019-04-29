@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 5bb1cc81-f3fd-a835-1449-233dbd1a62b6
 description: Passt die Helligkeit einer Bitmapgrafik an. Verringern Sie die Helligkeit einer Grafik durch Eingabe eines Werts zwischen 0 % und 49 %, oder steigern Sie die Helligkeit durch Eingabe eines Werts zwischen 51 % und 100 %. Der Standardwert lautet 50 %.
 ms.openlocfilehash: ae1390d2db3adad86a8afcbeaff88172a841d030
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32338024"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33424791"
 ---
 # <a name="brightness-cell-image-properties-section"></a>Zelle "Brightness" (Abschnitt "Image Properties")
 

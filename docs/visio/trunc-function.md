@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 62f074ef-5bf8-df1e-d826-fc1027a36501
 description: Gibt eine Zahl zurück, die auf die angegebene Anzahl von Ziffern abgeschnitten wurde.
 ms.openlocfilehash: 5b2138ff3091f70313344d5b38d8225d572d8e70
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32335175"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33426499"
 ---
 # <a name="trunc-function"></a>TRUNC Function
 
@@ -28,8 +28,8 @@ KÜRZEN (* * *Number* * *, * * *Wert von AnzahlVonStellen* * *)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Anzahl_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Die zu kürzende Zahl.  <br/> |
-| _Wert von AnzahlVonStellen_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Die Anzahl der Ziffern, auf die die _Zahl_gekürzt werden soll.  <br/> |
+| _Anzahl_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die zu kürzende Zahl.  <br/> |
+| _Wert von AnzahlVonStellen_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die Anzahl der Ziffern, auf die die _Zahl_gekürzt werden soll.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 

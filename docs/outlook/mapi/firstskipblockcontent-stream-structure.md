@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 89814eec-67c1-40b6-91d9-a58c3da0f15e
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 4804f2c6633095ea9eb38bec990cb1554240f6e6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32337065"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33433927"
 ---
 # <a name="firstskipblockcontent-stream-structure"></a>Firstskipblockcontent streamstruktur-Datenstrom Struktur
 

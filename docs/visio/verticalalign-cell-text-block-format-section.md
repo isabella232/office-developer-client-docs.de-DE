@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: ff34a23b-2881-864f-42e4-871c4fde0992
 description: Definiert die vertikale Ausrichtung von Text in einem Textblock.
 ms.openlocfilehash: 954a0cf0b80d6b675dcc016997f1923041069eac
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32356141"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425792"
 ---
 # <a name="verticalalign-cell-text-block-format-section"></a>Zelle "VerticalAlign" (Abschnitt "Text Block Format")
 

@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2c1c25c6-1aec-4d9e-a2a3-bf1b4a2908b8
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 3d9c1e88b12baf50593212a3ae3c02907ce6617b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280178"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425659"
 ---
 # <a name="imapifoldercopyfolder"></a>IMAPIFolder::CopyFolder
 
@@ -134,7 +134,7 @@ Versuchen Sie, alle Nachrichteneingabe-IDs in den kopierten Nachrichten beizubeh
 
 Erwarten Sie diese Rückgabewerte unter den folgenden Bedingungen.
   
-|**Bedingung**|**Rückgabewert**|
+|**Bedingung**|**R�ckgabewert**|
 |:-----|:-----|
 |**CopyFolder** hat alle Nachrichten und Unterordner erfolgreich kopiert oder verschoben.  <br/> |S_OK  <br/> |
 |**CopyFolder** konnte alle Nachrichten und Unterordner nicht erfolgreich kopieren oder verschieben.  <br/> |MAPI_W_PARTIAL_COMPLETION oder MAPI_E_NOT_FOUND  <br/> |

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: ebf66729-d794-a398-268a-84d761bf06b6
 description: Gibt an, ob ein Element in einem Kontext- oder Aktionstagmenü deaktiviert ist.
 ms.openlocfilehash: ddf55f40056d7df7a2403e500bb4bae335930433
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32332578"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33431351"
 ---
 # <a name="disabled-cell-actions-section"></a>Zelle "Disabled" (Abschnitt "Actions")
 

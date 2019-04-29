@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: c2345092-ba5f-4030-9070-391233e70f92
 description: Gibt die Summe aller Werte im Ausdruck zurück.
 ms.openlocfilehash: b0fed86469b32ddcc7f60a388f5d42c7bbd48b6c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32304235"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427101"
 ---
 # <a name="sum-function-access-custom-web-app"></a>Sum-Funktion (Access Custom Web App)
 

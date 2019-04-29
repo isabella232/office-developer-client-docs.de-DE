@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: ac7b39d4-3942-4b23-b188-2c3f69e54929
 description: Gibt den unteren Abschrägung-Typ der Abschrägung eines Shapes an.
 ms.openlocfilehash: 0cd360f633145c7dea95438ffe2bc746e519ce13
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32330079"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33431750"
 ---
 # <a name="bevelbottomtype-cell-bevel-properties-section"></a>Zelle "BevelBottomType" (Abschnitt "Fase Properties")
 
@@ -30,8 +30,8 @@ Gibt den unteren Abschrägung-Typ der Abschrägung eines Shapes an.
 |7  <br/> |Konvexe Abschrägung  <br/> |
 |8  <br/> |Neigungs Abschrägung  <br/> |
 |9  <br/> |Divot-Abschrägung  <br/> |
-|10  <br/> |Abrundung-Abschrägung  <br/> |
-|11  <br/> |Kanten Abschrägung  <br/> |
+|10   <br/> |Abrundung-Abschrägung  <br/> |
+|11   <br/> |Kanten Abschrägung  <br/> |
 |12  <br/> |Art-Deco-Fase  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen

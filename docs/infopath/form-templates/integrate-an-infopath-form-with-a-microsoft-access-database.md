@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: 5ec9a9c0-b348-4a31-b377-e95db2f92455
 description: Microsoft InfoPath unterstützt die Verwendung einer Microsoft Access 2010-Datenbank als primäre Datenquelle für ein Formular oder als sekundäre Datenquelle für ein Formular oder Steuerelement. In diesem Artikel wird erläutert, wie Sie eine Access 2010-Datenbank als Datenquelle verwenden.
 ms.openlocfilehash: dbc39e0d0908214904d77b8955f3d231f0bfb20b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303514"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33423111"
 ---
 # <a name="integrate-an-infopath-form-with-a-microsoft-access-database"></a>Integrieren eines InfoPath-Formulars in eine Microsoft Access-Datenbank
 

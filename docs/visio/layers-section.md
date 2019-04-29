@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 89bcde81-4530-bd00-6e2e-fab7deec175b
 description: Zeigt alle Layer, die für das Zeichenblatt definiert sind, sowie die eingerichteten Eigenschaften für die einzelnen Layer an.
 ms.openlocfilehash: 058c8cbe2ee38a0ebc52935f7108d51ec4f2aef5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309471"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33424203"
 ---
 # <a name="layers-section"></a>Abschnitt "Layers"
 

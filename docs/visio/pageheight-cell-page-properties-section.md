@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 0184814c-2d67-6ad4-e336-5694612e518d
 description: Enthält die Höhe der gedruckten Seite in Zeichnungseinheiten.
 ms.openlocfilehash: ac24bee517f29da333a445f276447c1aa682f01c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32334349"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33427080"
 ---
 # <a name="pageheight-cell-page-properties-section"></a>Zelle "PageHeight" (Abschnitt "Page Properties")
 

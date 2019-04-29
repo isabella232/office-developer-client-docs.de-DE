@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 513302d3-3be8-882f-5258-95529098f95d
 description: Gibt die Quadratwurzel einer Zahl zurück.
 ms.openlocfilehash: f9f31b9360248f002cac74dfb87ac3b292d34620
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349357"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425022"
 ---
 # <a name="sqrt-function"></a>WURZEL-Funktion
 
@@ -28,11 +28,11 @@ SQRT (* * *Number* * *)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Anzahl_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Die Zahl, deren Quadratwurzel ermittelt werden soll.  <br/> |
+| _Anzahl_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die Zahl, deren Quadratwurzel ermittelt werden soll.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
-Numerisch
+Numeric
   
 ## <a name="remarks"></a>Bemerkungen
 

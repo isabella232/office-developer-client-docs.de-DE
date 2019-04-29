@@ -7,11 +7,11 @@ localization_priority: Normal
 ms.assetid: ae24b317-f486-763a-7009-e32c5cb85b59
 description: Die Microsoft InfoPath-Formularbearbeitungsumgebung kann in einer benutzerdefinierten Windows-Anwendung gehostet werden, die es Entwicklern ermöglicht, die InfoPath-Formularbearbeitungsumgebung in Branchenanwendungen zu integrieren.
 ms.openlocfilehash: b85e47d506b17982bb883c9d56ea13131807d1cf
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303689"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33422579"
 ---
 # <a name="hosting-infopath-as-an-xml-editor-in-another-application"></a>Hosten von InfoPath als XML-Editor in einer anderen Anwendung
 

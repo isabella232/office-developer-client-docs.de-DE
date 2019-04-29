@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 668f993c-b4d1-4762-9801-c578b17fdafd
 description: Bestimmt, ob die Rechtschreibung automatisch korrigiert wird und ob Rechtschreibfehler für das ausgewählte Shape angezeigt werden. Akzeptiert einen booleschen Wert.
 ms.openlocfilehash: 8d7eebcc349c54db3cd48d6c5fa3c8fa6f4f760e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357225"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33431253"
 ---
 # <a name="noproofing-cell-miscellaneous-section"></a>Zelle "noProofing" (Abschnitt "Miscellaneous")
 

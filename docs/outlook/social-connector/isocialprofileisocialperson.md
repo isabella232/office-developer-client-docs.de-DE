@@ -9,17 +9,17 @@ localization_priority: Normal
 ms.assetid: 4dbfdb6c-a930-4efb-85c3-dc2757ddcf83
 description: Stellt den angemeldeten Benutzer dar.
 ms.openlocfilehash: 8fccb87ebc2745a12545d0c88127be0651ab8620
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285863"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425043"
 ---
 # <a name="isocialprofile--isocialperson"></a>ISocialProfile : ISocialPerson
 
 Stellt den angemeldeten Benutzer dar. 
   
-## <a name="members"></a>Elemente
+## <a name="members"></a>Members
 
 In der folgenden Tabelle sind die Member aufgeführt, die auf der **ISocialProfile** -Schnittstelle verfügbar sind. 
   

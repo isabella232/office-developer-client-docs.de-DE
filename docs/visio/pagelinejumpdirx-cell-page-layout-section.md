@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 77892ec7-4c6a-78a5-5af4-5b6be7709e77
 description: Bestimmt die Richtung von Liniensprüngen auf horizontalen dynamischen Verbindern auf dem Zeichenblatt, für die Sie keine lokale Liniensprungrichtung festgelegt haben.
 ms.openlocfilehash: 4e1213990877e1260cc8cecd5a55beda4592a844
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283737"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33431008"
 ---
 # <a name="pagelinejumpdirx-cell-page-layout-section"></a>Zelle "PageLineJumpDirX" (Abschnitt "Page Layout")
 

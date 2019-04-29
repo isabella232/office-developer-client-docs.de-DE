@@ -9,17 +9,17 @@ localization_priority: Normal
 ms.assetid: 0799243e-ba92-44c4-b687-182e50b57cb7
 description: Anbieter sollten Fehler an den Aufrufer zurückgeben, indem Sie einen der in der folgenden Tabelle aufgeführten Fehlercodes verwenden.
 ms.openlocfilehash: 22a6e8d4ebf87157eaee630cc47f9f363150e839
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359857"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33425351"
 ---
 # <a name="outlook-social-connector-provider-error-codes"></a>Fehlercodes für den Outlook Connector für soziale Netzwerke
 
 Anbieter sollten Fehler an den Aufrufer zurückgeben, indem Sie einen der in der folgenden Tabelle aufgeführten Fehlercodes verwenden. 
   
-|**Error**|**Fehlercode (hexadezimal)**|**Beschreibung**|
+|**Fehler**|**Fehlercode (hexadezimal)**|**Beschreibung**|
 |:-----|:-----|:-----|
 |OSC_E_AUTH_ERROR  <br/> |0x80041404  <br/> |Fehler bei der Authentifizierung im Netzwerk des sozialen Netzwerkstandorts.  <br/> |
 |OSC_E_COULDNOTCONNECT  <br/> |0x80041402  <br/> |Es ist keine Verbindung mit dem sozialen Netzwerkstandort verfügbar.  <br/> |
