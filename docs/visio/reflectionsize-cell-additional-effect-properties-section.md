@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 7dfeb78e-a0fa-4492-b35f-70b1e2975d38
 description: Bestimmt die Größe der Reflektion relativ zum Shape, als Prozentsatz von 0,0 bis 100,0%. Ein Shape mit dem Wert 0% in der Zelle reFlexe hat keine Reflexion; ein Wert von 100% zeigt ein vollständiges Spiegelbild der Form an.
 ms.openlocfilehash: 60fcb315ec1b6187082bdcdbbdcfaa4b80bbcfb3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348356"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409076"
 ---
 # <a name="reflectionsize-cell-additional-effect-properties-section"></a>Reflexions Zelle (Abschnitt "Additional Effect Properties")
 

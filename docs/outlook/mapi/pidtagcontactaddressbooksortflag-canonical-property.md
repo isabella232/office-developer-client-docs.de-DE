@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: dcbd12b4-4b50-4be6-a201-45e5d4611ce0
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: bfdb98d5a5b768fad162d60a79cb1f541dc32866
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32334370"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33437231"
 ---
 # <a name="pidtagcontactaddressbooksortflag-canonical-property"></a>Kanonische Pidtagcontactaddressbooksortflag (-Eigenschaft
 
@@ -38,7 +38,7 @@ Enthält ein Flag, das TRUE ist, wenn Kontakte nach Datei unter und FALSE sortie
 
 Dies ist eine Eigenschaft in einem Profil Abschnitt des Kontakt Adressbuchs.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

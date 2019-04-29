@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9ec80a93-9e8f-46be-a1d4-7648aae47fec
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: da01385f83d9af9ad02eeb2fed08e3bc22d4df84
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32336400"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33436825"
 ---
 # <a name="pidtagservicedeletefiles-canonical-property"></a>Kanonische Pidtagservicedeletefiles (-Eigenschaft
 
@@ -40,7 +40,7 @@ Die Dateinamen in der Liste, die in diesen Eigenschaften enthalten sind, werden 
   
 MAPI kann nur mit Dateinamen und anderen Zeichenfolgen im ANSI-Zeichensatz verwendet werden. Anwendungen, die Dateinamen in einem OEM-Zeichensatz verwenden, müssen Sie vor dem Aufrufen von MAPI in ANSI konvertieren.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: c437de23-d2e0-469d-62e6-8eb8b8cfea5c
 description: Gibt eine 16-Bit-Binärzahl zurück, in der jedes Bit nur dann auf 1 festgelegt ist, wenn das entsprechende Bit in binarynumber1 und binarynumber2 1 ist. Andernfalls ist das Bit auf 0 festgelegt.
 ms.openlocfilehash: 495ad645a422c0333d02a22c3c600dd1e0d567bd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32284469"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33409727"
 ---
 # <a name="bitand-function"></a>BITAND Function
 
@@ -28,8 +28,8 @@ BITUND (* * *binarynumber1* * *, * * *binarynumber2* * *)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _binäre number1_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Die erste 16-Bit-Binärzahl.  <br/> |
-| _binäre number2_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Die zweite 16-Bit-Binärzahl.  <br/> |
+| _binäre number1_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die erste 16-Bit-Binärzahl.  <br/> |
+| _binäre number2_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die zweite 16-Bit-Binärzahl.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 

@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: cf9af5a5-e042-4d56-a29f-341d97cdb97b
 description: Bestimmt den Winkel des Füll Verlaufs für Farbverläufe mit einer linearen Richtung in Grad.
 ms.openlocfilehash: 16277d76b3bc61be335e010c07b2eb4a43973b4f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32322442"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33434886"
 ---
 # <a name="fillgradientangle-cell-gradient-properties-section"></a>Zelle "FillGradientAngle" (Abschnitt "Gradient Properties")
 

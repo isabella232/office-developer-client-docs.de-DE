@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: cb6ec664-6062-75d0-1514-8058b98c2c36
 description: Gibt einen nullbasierten Index zurück, der die Position des Schlüssels der Teilzeichenfolge in einer Liste angibt, oder gibt-1 zurück, wenn die Zielzeichenfolge das Trennzeichen enthält.
 ms.openlocfilehash: 10fc32e6e979ab819246161dedfb1183c2683a99
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32358030"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33410329"
 ---
 # <a name="lookup-function"></a>LOOKUP Function
 
@@ -34,7 +34,7 @@ Lookup ("* * *Key* * *", "* * *Liste* * *" [, "* * *Trennzeichen* * *"])
    
 ### <a name="return-value"></a>Rückgabewert
 
-Numerisch
+Numeric
   
 ## <a name="remarks"></a>Bemerkungen
 

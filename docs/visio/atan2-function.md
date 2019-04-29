@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 524278fb-196e-9cf9-e27b-d03642beeee4
 description: Gibt den Winkel zwischen dem durch x, y und der Richtung der x-Achse dargestellten Vektor zurück. Das Resultat ist eine Zahl in der aktuellen Maßeinheit für Winkel.
 ms.openlocfilehash: 906c024f2a78d6e11c1bbf770c14d04299cadca8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341482"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33436482"
 ---
 # <a name="atan2-function"></a>ATAN2 Function
 
@@ -28,8 +28,8 @@ ATAN2 (* * *y* * *, * * *x* * *)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _y_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Der _y_-Wert des Punkts.  <br/> |
-| _x_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Der _x_-Wert des Punkts.  <br/> |
+| _y_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der _y_-Wert des Punkts.  <br/> |
+| _x_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der _x_-Wert des Punkts.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 

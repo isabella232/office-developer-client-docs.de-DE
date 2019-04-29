@@ -11,13 +11,13 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 18324a5d-aedc-4456-b2f0-6bc42b6ab882
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 9a9a3d30b064bd739a2d12a165f2789d6874f866
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32331983"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33436447"
 ---
 # <a name="pidtagcontentconfidentialityalgorithmid-canonical-property"></a>Kanonische Pidtagcontentconfidentialityalgorithmid (-Eigenschaft
 
@@ -34,7 +34,7 @@ Enthält einen Bezeichner für den Algorithmus, der zum Bestätigen der Vertraul
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Exchange  <br/> |
    
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="header-files"></a>Header Dateien
 

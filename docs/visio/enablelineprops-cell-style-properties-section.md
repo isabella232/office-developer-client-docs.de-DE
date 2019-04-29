@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 9f619416-36ff-1479-6232-225c11827e01
 description: Bestimmt, ob eine Formatvorlage Linieneigenschaften enthält.
 ms.openlocfilehash: 38964194626be052b2a168fa929b69ebe4b28e01
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329106"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33410000"
 ---
 # <a name="enablelineprops-cell-style-properties-section"></a>Zelle "EnableLineProps" (Abschnitt "Style Properties")
 

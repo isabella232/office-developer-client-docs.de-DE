@@ -8,11 +8,11 @@ localization_priority: Normal
 ms.assetid: 369cf384-94b6-4d41-8938-afdcbd13f132
 description: In diesem Abschnitt wird die Account Management-API beschrieben, die Zugriff auf Kontoinformationen bietet und Konto Änderungsbenachrichtigungen unterstützt. Sie enthält auch Informationen zum Schutz von Konten vor Spam und zum Verwalten von Nachrichten Downloads für POP3-Konten.
 ms.openlocfilehash: 425739639562a91586d23b41de119916886e2c4a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32322113"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33437847"
 ---
 # <a name="outlook-account-management"></a>Outlook-Kontoverwaltung
 

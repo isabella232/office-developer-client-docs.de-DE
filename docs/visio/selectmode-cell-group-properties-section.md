@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 5ba68e05-f394-d7b7-390d-f0a9fdad011e
 description: Bestimmt, wie Sie ein Gruppen-Shape und dessen Mitglieder auswählen.
 ms.openlocfilehash: 82f9e2806d1131a0acfd064f585c681fef0f209f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326012"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33435362"
 ---
 # <a name="selectmode-cell-group-properties-section"></a>Zelle "SelectMode" (Abschnitt "Group Properties")
 

@@ -9,17 +9,17 @@ localization_priority: Normal
 ms.assetid: 0fe423d7-b044-479b-89ad-c39620eedd65
 description: Stellt eine Verbindung zu einem sozialen Netzwerkstandort dar.
 ms.openlocfilehash: c60fab1c27d2f761db28ed06bb45080857630e8d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357365"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33437826"
 ---
 # <a name="isocialsession--iunknown"></a>ISocialSession : IUnknown
 
 Stellt eine Verbindung zu einem sozialen Netzwerkstandort dar.
   
-## <a name="members"></a>Elemente
+## <a name="members"></a>Members
 
 In der folgenden Tabelle sind die Member aufgeführt, die auf der **ISocialSession** -Schnittstelle verfügbar sind. 
   

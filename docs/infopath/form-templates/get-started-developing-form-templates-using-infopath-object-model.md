@@ -9,11 +9,11 @@ localization_priority: Normal
 ms.assetid: 45867711-3231-43ce-bae9-caf588120550
 description: Dieser Abschnitt enthält Informationen zu den ersten Schritten beim Erstellen von Formularvorlagen mit verwaltetem Code, die mit dem InfoPath 2003-kompatiblen Objektmodell arbeiten, das von Mitgliedern des Namespaces Microsoft. Office. Interop. InfoPath. SemiTrust bereitgestellt wird.
 ms.openlocfilehash: 54d60e6d73ee224845c87c08f4de1e554e6182da
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300399"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33408054"
 ---
 # <a name="get-started-developing-form-templates-using-the-infopath-object-model"></a>Erste Schritte beim Entwickeln von Formularvorlagen mithilfe des InfoPath-Objektmodells
 
