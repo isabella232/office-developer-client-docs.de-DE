@@ -10,22 +10,22 @@ localization_priority: Normal
 ms.assetid: a157c27e-afae-7c67-e96d-4ace7b7a82be
 description: Gibt den Text aus dem Feld Schlüsselwörter der Eigenschaften eines Dokuments zurück.
 ms.openlocfilehash: d5a5aa00248a016d209c17016e248a2fe93bccde
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360459"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33416048"
 ---
-# <a name="keywords-function"></a><span data-ttu-id="cef95-103">KEYWORDS Function</span><span class="sxs-lookup"><span data-stu-id="cef95-103">KEYWORDS Function</span></span>
+# <a name="keywords-function"></a><span data-ttu-id="b8af5-103">KEYWORDS Function</span><span class="sxs-lookup"><span data-stu-id="b8af5-103">KEYWORDS Function</span></span>
 
-<span data-ttu-id="cef95-104">Gibt den Text aus dem Feld **Schlüsselwörter** der Eigenschaften eines Dokuments zurück.</span><span class="sxs-lookup"><span data-stu-id="cef95-104">Returns the text from the **Keywords** field of a document's properties.</span></span> 
+<span data-ttu-id="b8af5-104">Gibt den Text aus dem Feld **Schlüsselwörter** der Eigenschaften eines Dokuments zurück.</span><span class="sxs-lookup"><span data-stu-id="b8af5-104">Returns the text from the **Keywords** field of a document's properties.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="cef95-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="cef95-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="b8af5-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="b8af5-105">Syntax</span></span>
 
-<span data-ttu-id="cef95-106">Schlüsselwörter ()</span><span class="sxs-lookup"><span data-stu-id="cef95-106">KEYWORDS ()</span></span>
+<span data-ttu-id="b8af5-106">Schlüsselwörter ()</span><span class="sxs-lookup"><span data-stu-id="b8af5-106">KEYWORDS ()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="cef95-107">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="cef95-107">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b8af5-107">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="b8af5-107">Return value</span></span>
 
-<span data-ttu-id="cef95-108">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="cef95-108">String</span></span>
+<span data-ttu-id="b8af5-108">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="b8af5-108">String</span></span>
   
 
