@@ -1,17 +1,17 @@
 ---
 title: Entwickeln von Lösungen und Anpassen von Excel
-ms.date: 10/03/2018
+ms.date: 05/17/2019
 ms.audience: Developer
 ms.topic: overview
 ms.assetid: 597f7b81-3baf-4bf2-9ef0-f7fedad8c36e
 description: Hier finden Sie Vorgehensweisen, Beispielcode, SDK- und API-Dokumentationen, VBA-Referenzen, Schulungen und technische Artikel zum Entwickeln von Lösungen und zum Anpassen von Excel.
 localization_priority: Priority
-ms.openlocfilehash: 8e83acd1420a36dbcbc1fdf2c730b3b6b3022f67
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: af840c94620f445689a5b7dcdd20341485a4a6d7
+ms.sourcegitcommit: e2cff03cb13d6c500942897b234db00476a72f18
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32304130"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34100872"
 ---
 # <a name="develop-solutions-and-customize-excel"></a>Entwickeln von Lösungen und Anpassen von Excel
 
@@ -31,6 +31,8 @@ Hier finden Sie Vorgehensweisen, Beispielcode, SDK- und API-Dokumentationen, VBA
 - [Erste Schritte mit Excel-Add-Ins](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-get-started-overview)
   
 - [Plattformübersicht](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)
+
+- [Benutzerdefinierte JavaScript-Funktionen](https://docs.microsoft.com/office/dev/add-ins/excel/custom-functions-overview)
   
 ### <a name="code-samples"></a>Codebeispiele
   
