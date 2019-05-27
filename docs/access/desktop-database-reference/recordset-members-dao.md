@@ -58,7 +58,7 @@ Ein Recordset-Objekt stellt die Datensätze in einer Basistabelle oder die Daten
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset-copyquerydef-method-dao.md">CopyQueryDef</a></strong></p></td>
-<td><p>Gibt ein <strong><a href="querydef-object-dao.md">QueryDef</a></strong>-Objekt zurück, das eine Kopie des <strong>QueryDef</strong>-Objekts darstellt, welches zum Erstellen des <strong><a href="recordset-object-dao.md">Recordset</a></strong>-Objekts verwendet wurde, das durch den recordset-Platzhalter dargestellt wird (gilt nur für Microsoft Access-Arbeitsbereiche). .</p></td>
+<td><p>Gibt ein <strong><a href="querydef-object-dao.md">QueryDef</a></strong>-Objekt zurück, das eine Kopie des <strong>QueryDef</strong>-Objekts ist, welches zum Erstellen des <strong><a href="recordset-object-dao.md">Recordset</a></strong>-Objekts verwendet wurde, das durch den recordset-Platzhalter dargestellt wird (gilt nur für Microsoft Access-Arbeitsbereiche). .</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset-delete-method-dao.md">Delete</a></strong></p></td>
@@ -177,7 +177,7 @@ Ein Recordset-Objekt stellt die Datensätze in einer Basistabelle oder die Daten
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset-bookmark-property-dao.md">Bookmark</a></strong></p></td>
-<td><p>Legt eine Textmarke fest oder gibt sie zurück. Sie identifiziert den aktuellen Datensatz eindeutig in einem <strong><a href="recordset-object-dao.md">Recordset</a></strong>-Objekt.</p></td>
+<td><p>Legt eine Textmarke fest oder gibt sie zurück. Sie gibt den aktuellen Datensatz in einem <strong><a href="recordset-object-dao.md">Recordset</a></strong>-Objekt eindeutig an.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset-bookmarkable-property-dao.md">Bookmarkable</a></strong></p></td>
@@ -217,7 +217,7 @@ Ein Recordset-Objekt stellt die Datensätze in einer Basistabelle oder die Daten
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset-index-property-dao.md">Index</a></strong></p></td>
-<td><p>Legt einen Wert fest, der den Namen des aktuellen <strong><a href="index-object-dao.md">Index</a></strong>-Objekts in einem <strong><a href="recordset-object-dao.md">Recordset</a></strong>-Objekt vom Typ "Tabelle" angibt, oder gibt einen solchen Wert zurück (nur Microsoft Access-Arbeitsbereiche).</p></td>
+<td><p>Legt einen Wert fest, der den Namen des aktuellen <strong><a href="index-object-dao.md">Index</a></strong>-Objekts in einem <strong><a href="recordset-object-dao.md">Recordset</a></strong>-Objekt vom Typ Tabelle angibt, oder gibt einen solchen Wert zurück (nur Microsoft Access-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset-lastmodified-property-dao.md">LastModified</a></strong></p></td>

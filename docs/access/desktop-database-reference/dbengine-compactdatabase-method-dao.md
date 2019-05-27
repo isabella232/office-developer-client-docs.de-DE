@@ -31,7 +31,7 @@ Kopiert und komprimiert eine geschlossene Datenbank und bietet die Möglichkeit,
 
 *expression* .CompactDatabase(***SrcName***, ***DstName***, ***DstLocale***, ***Options***, ***password***)
 
-*Ausdruck* Ein Ausdruck, der ein **DBEngine**-Objekt zurückgibt.
+*expression* Ein Ausdruck, der ein **DBEngine**-Objekt zurückgibt.
 
 ## <a name="parameters"></a>Parameter
 
@@ -55,7 +55,7 @@ Kopiert und komprimiert eine geschlossene Datenbank und bietet die Möglichkeit,
 <td><p><em>SrcName</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>String</strong></p></td>
-<td><p>Gibt eine vorhandene geschlossene Datenbank an. Dies kann ein vollständiger Pfad- und Dateiname sein, wie z. B. &quot;C:\db1.mdb&quot;. Wenn der Dateiname eine Erweiterung aufweist, müssen Sie diese angeben. Wenn Ihr Netzwerk dies unterstützt, können Sie auch einen Netzwerkpfad wie z. B. &quot;\\server1\share1\dir1\db1.mdb&quot; angeben.</p></td>
+<td><p>Gibt eine vorhandene geschlossene Datenbank an. Dies kann ein vollständiger Pfad- und Dateiname sein, z. B. &quot;C:\db1.mdb&quot;. Wenn der Dateiname eine Erweiterung aufweist, müssen Sie diese angeben. Wenn Ihr Netzwerk dies unterstützt, können Sie auch einen Netzwerkpfad wie &quot;\\server1\share1\dir1\db1.mdb&quot; angeben.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>DstName</em></p></td>
@@ -199,7 +199,7 @@ Sie können eine der folgenden Konstanten für das DstLocale-Argument verwenden,
 Sie können eine der folgenden Konstanten im options-Argument verwenden, um anzugeben, ob die Datenbank während der Komprimierung verschlüsselt werden soll.
 
 > [!NOTE]
-> Die Konstanten „dbEncrypt“ und „dbDecrypt“ sind veraltet und werden im ACCDB-Dateiformat nicht unterstützt.
+> Die Konstanten dbEncrypt und dbDecrypt sind veraltet und werden im ACCDB-Dateiformat nicht unterstützt.
 
 <table>
 <colgroup>
