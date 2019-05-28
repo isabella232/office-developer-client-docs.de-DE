@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 70739711-ff43-407d-bc8b-6baf7a476fef
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: de31fe7d472b143ed8f3c108dca84a019b5ce103
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -19,17 +19,17 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32357295"
 ---
-# <a name="mapiinit0"></a><span data-ttu-id="b185d-103">MAPIINIT_0</span><span class="sxs-lookup"><span data-stu-id="b185d-103">MAPIINIT_0</span></span>
+# <a name="mapiinit0"></a><span data-ttu-id="eefbd-103">MAPIINIT_0</span><span class="sxs-lookup"><span data-stu-id="eefbd-103">MAPIINIT_0</span></span>
 
   
   
-<span data-ttu-id="b185d-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="b185d-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="eefbd-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="eefbd-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="b185d-105">Übermittelt Optionen zur [MAPIInitialize](mapiinitialize.md) -Funktion.</span><span class="sxs-lookup"><span data-stu-id="b185d-105">Conveys options to the [MAPIInitialize](mapiinitialize.md) function.</span></span> 
+<span data-ttu-id="eefbd-105">Vermittelt Optionen an die [MAPIInitialize](mapiinitialize.md) -Funktion.</span><span class="sxs-lookup"><span data-stu-id="eefbd-105">Conveys options to the [MAPIInitialize](mapiinitialize.md) function.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="b185d-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="b185d-106">Header file:</span></span>  <br/> |<span data-ttu-id="b185d-107">MAPIX. H</span><span class="sxs-lookup"><span data-stu-id="b185d-107">MAPIX.H</span></span>  <br/> |
+|<span data-ttu-id="eefbd-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="eefbd-106">Header file:</span></span>  <br/> |<span data-ttu-id="eefbd-107">MAPIX. H</span><span class="sxs-lookup"><span data-stu-id="eefbd-107">MAPIX.H</span></span>  <br/> |
    
 ```cpp
 typedef struct
@@ -40,40 +40,40 @@ typedef struct
 
 ```
 
-## <a name="members"></a><span data-ttu-id="b185d-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="b185d-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="eefbd-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="eefbd-108">Members</span></span>
 
- <span data-ttu-id="b185d-109">**ulVersion**</span><span class="sxs-lookup"><span data-stu-id="b185d-109">**ulVersion**</span></span>
+ <span data-ttu-id="eefbd-109">**ulVersion**</span><span class="sxs-lookup"><span data-stu-id="eefbd-109">**ulVersion**</span></span>
   
-> <span data-ttu-id="b185d-110">Ein ganzzahliger Wert, der die Versionsnummer der **MAPIINIT_0** -Struktur darstellt.</span><span class="sxs-lookup"><span data-stu-id="b185d-110">An integer value that represents the version number of the **MAPIINIT_0** structure.</span></span> <span data-ttu-id="b185d-111">Das **ulVersion** -Element ist für die zukünftige Erweiterung und stellt nicht die Version der MAPI-Schnittstelle dar.</span><span class="sxs-lookup"><span data-stu-id="b185d-111">The **ulVersion** member is for future expansion and does not represent the version of the MAPI interface.</span></span> <span data-ttu-id="b185d-112">Derzeit muss **ulVersion** auf MAPI_INIT_VERSION festgelegt sein.</span><span class="sxs-lookup"><span data-stu-id="b185d-112">Currently, **ulVersion** must be set to MAPI_INIT_VERSION.</span></span> 
+> <span data-ttu-id="eefbd-110">Ein ganzzahliger Wert, der die Versionsnummer der **MAPIINIT_0** -Struktur darstellt.</span><span class="sxs-lookup"><span data-stu-id="eefbd-110">An integer value that represents the version number of the **MAPIINIT_0** structure.</span></span> <span data-ttu-id="eefbd-111">Das **ulVersion** -Element ist für die zukünftige Erweiterung und stellt nicht die Version der MAPI-Schnittstelle dar.</span><span class="sxs-lookup"><span data-stu-id="eefbd-111">The **ulVersion** member is for future expansion and does not represent the version of the MAPI interface.</span></span> <span data-ttu-id="eefbd-112">Derzeit muss **ulVersion** auf MAPI_INIT_VERSION festgelegt werden.</span><span class="sxs-lookup"><span data-stu-id="eefbd-112">Currently, **ulVersion** must be set to MAPI_INIT_VERSION.</span></span> 
     
- <span data-ttu-id="b185d-113">**ulFlags**</span><span class="sxs-lookup"><span data-stu-id="b185d-113">**ulFlags**</span></span>
+ <span data-ttu-id="eefbd-113">**ulFlags**</span><span class="sxs-lookup"><span data-stu-id="eefbd-113">**ulFlags**</span></span>
   
-> <span data-ttu-id="b185d-114">Die Bitmaske der Flags, die zum Steuern der Initialisierung der MAPI-Sitzung verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="b185d-114">The bitmask of flags used to control the initialization of the MAPI session.</span></span> <span data-ttu-id="b185d-115">Die folgenden Flags können festgelegt werden:</span><span class="sxs-lookup"><span data-stu-id="b185d-115">The following flags can be set:</span></span>
+> <span data-ttu-id="eefbd-114">Die Bitmaske der Flags, die zum Steuern der Initialisierung der MAPI-Sitzung verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="eefbd-114">The bitmask of flags used to control the initialization of the MAPI session.</span></span> <span data-ttu-id="eefbd-115">Die folgenden Flags können festgelegt werden:</span><span class="sxs-lookup"><span data-stu-id="eefbd-115">The following flags can be set:</span></span>
     
-<span data-ttu-id="b185d-116">MAPI_MULTITHREAD_NOTIFICATIONS</span><span class="sxs-lookup"><span data-stu-id="b185d-116">MAPI_MULTITHREAD_NOTIFICATIONS</span></span> 
+<span data-ttu-id="eefbd-116">MAPI_MULTITHREAD_NOTIFICATIONS</span><span class="sxs-lookup"><span data-stu-id="eefbd-116">MAPI_MULTITHREAD_NOTIFICATIONS</span></span> 
   
-> <span data-ttu-id="b185d-117">MAPI sollte Benachrichtigungen mithilfe eines Threads generieren, der für die Benachrichtigungs Verarbeitung reserviert ist, anstelle des ersten Threads, der zum Aufrufen von **MAPIInitialize**verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="b185d-117">MAPI should generate notifications using a thread dedicated to notification handling instead of the first thread used to call **MAPIInitialize**.</span></span>
+> <span data-ttu-id="eefbd-117">MAPI sollte Benachrichtigungen mithilfe eines Threads generieren, der für die Benachrichtigungs Behandlung verwendet wird, statt für den ersten Thread, der zum Aufrufen von **MAPIInitialize**verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="eefbd-117">MAPI should generate notifications using a thread dedicated to notification handling instead of the first thread used to call **MAPIInitialize**.</span></span>
     
-<span data-ttu-id="b185d-118">MAPI_NT_SERVICE</span><span class="sxs-lookup"><span data-stu-id="b185d-118">MAPI_NT_SERVICE</span></span> 
+<span data-ttu-id="eefbd-118">MAPI_NT_SERVICE</span><span class="sxs-lookup"><span data-stu-id="eefbd-118">MAPI_NT_SERVICE</span></span> 
   
-> <span data-ttu-id="b185d-119">Der Anrufer wird als Windows-Dienst gestartet.</span><span class="sxs-lookup"><span data-stu-id="b185d-119">The caller is running as a Windows service.</span></span> <span data-ttu-id="b185d-120">Anrufer, die nicht als Windows-Dienst gestartet werden, sollten dieses Flag nicht festlegen; Aufrufer, die als Dienst gestartet werden, müssen dieses Flag festlegen.</span><span class="sxs-lookup"><span data-stu-id="b185d-120">Callers that are not running as a Windows service should not set this flag; callers that are running as a service must set this flag.</span></span>
+> <span data-ttu-id="eefbd-119">Der Anrufer wird als Windows-Dienst betrieben.</span><span class="sxs-lookup"><span data-stu-id="eefbd-119">The caller is running as a Windows service.</span></span> <span data-ttu-id="eefbd-120">Anrufer, die nicht als Windows-Dienst gestartet werden, sollten dieses Flag nicht festlegen; Anrufer, die als Dienst gestartet werden, müssen dieses Flag festlegen.</span><span class="sxs-lookup"><span data-stu-id="eefbd-120">Callers that are not running as a Windows service should not set this flag; callers that are running as a service must set this flag.</span></span>
     
-<span data-ttu-id="b185d-121">MAPI_NO_COINIT</span><span class="sxs-lookup"><span data-stu-id="b185d-121">MAPI_NO_COINIT</span></span>
+<span data-ttu-id="eefbd-121">MAPI_NO_COINIT</span><span class="sxs-lookup"><span data-stu-id="eefbd-121">MAPI_NO_COINIT</span></span>
   
-> <span data-ttu-id="b185d-122">Legen Sie das MAPI_NO_COINT-Flag fest, sodass **MAPIInitialize** nicht versucht, com mit einem Aufruf [](https://msdn.microsoft.com/library/0f171cf4-87b9-43a6-97f2-80ed344fe376%28Office.15%29.aspx)von "Initialize" zu initialisieren.</span><span class="sxs-lookup"><span data-stu-id="b185d-122">Set the MAPI_NO_COINT flag so that **MAPIInitialize** does not try to initialize COM with a call to [CoInitialize](https://msdn.microsoft.com/library/0f171cf4-87b9-43a6-97f2-80ed344fe376%28Office.15%29.aspx).</span></span> <span data-ttu-id="b185d-123">Wenn eine **MAPIINIT_0** -Struktur an **MAPIInitialize** übergeben wird, wobei _ulFlags_ auf MAPI_NO_COINIT festgelegt ist, wird von MAPI davon ausgegangen, dass com bereits INITIALISIERT wurde und den Aufruf von "diinitialize" umgehen wird. \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="b185d-123">If a **MAPIINIT_0** structure is passed into **MAPIInitialize** with  _ulFlags_ set to MAPI_NO_COINIT, MAPI will assume that COM has already been initialized and will bypass the call to **CoInitialize**.</span></span>
+> <span data-ttu-id="eefbd-122">Legen Sie das MAPI_NO_COINT-Flag so fest, dass **MAPIInitialize** nicht versucht, com mit einem [](https://msdn.microsoft.com/library/0f171cf4-87b9-43a6-97f2-80ed344fe376%28Office.15%29.aspx)Aufruf von "Initialize" zu initialisieren.</span><span class="sxs-lookup"><span data-stu-id="eefbd-122">Set the MAPI_NO_COINT flag so that **MAPIInitialize** does not try to initialize COM with a call to [CoInitialize](https://msdn.microsoft.com/library/0f171cf4-87b9-43a6-97f2-80ed344fe376%28Office.15%29.aspx).</span></span> <span data-ttu-id="eefbd-123">Wenn eine **MAPIINIT_0** -Struktur an **MAPIInitialize** übergeben wird, wobei _ulFlags_ auf MAPI_NO_COINIT festgelegt ist, wird von MAPI angenommen, dass com bereits initialisiert wurde, und der Aufruf von **Initialize**wird umgangen.</span><span class="sxs-lookup"><span data-stu-id="eefbd-123">If a **MAPIINIT_0** structure is passed into **MAPIInitialize** with  _ulFlags_ set to MAPI_NO_COINIT, MAPI will assume that COM has already been initialized and will bypass the call to **CoInitialize**.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="b185d-124">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="b185d-124">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="eefbd-124">Hinweise</span><span class="sxs-lookup"><span data-stu-id="eefbd-124">Remarks</span></span>
 
-<span data-ttu-id="b185d-125">Multithread-Clients sollten das MAPI_MULTITHREAD_NOTIFICATIONS-Flag festlegen.</span><span class="sxs-lookup"><span data-stu-id="b185d-125">Multithreaded clients should set the MAPI_MULTITHREAD_NOTIFICATIONS flag.</span></span> <span data-ttu-id="b185d-126">Wenn das Flag nicht festgelegt ist, werden Benachrichtigungen für den Thread generiert, der zum ersten Aufruf von **MAPIInitialize**verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="b185d-126">If the flag is not set, notifications are generated on the thread used to make the first call to **MAPIInitialize**.</span></span> 
+<span data-ttu-id="eefbd-125">Multithread-Clients sollten das MAPI_MULTITHREAD_NOTIFICATIONS-Flag festlegen.</span><span class="sxs-lookup"><span data-stu-id="eefbd-125">Multithreaded clients should set the MAPI_MULTITHREAD_NOTIFICATIONS flag.</span></span> <span data-ttu-id="eefbd-126">Wenn das Flag nicht festgelegt ist, werden Benachrichtigungen für den Thread generiert, der für den ersten Aufruf von **MAPIInitialize**verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="eefbd-126">If the flag is not set, notifications are generated on the thread used to make the first call to **MAPIInitialize**.</span></span> 
   
-<span data-ttu-id="b185d-127">Weitere Informationen zum Festlegen dieses Flags und zum Implementieren der Threadsicherheit in einem Client finden Sie unter Threading [in MAPI](threading-in-mapi.md).</span><span class="sxs-lookup"><span data-stu-id="b185d-127">For more information about when to set this flag and how to implement thread safety in a client, see [Threading in MAPI](threading-in-mapi.md).</span></span> 
+<span data-ttu-id="eefbd-127">Weitere Informationen zum Zeitpunkt der Festlegung dieses Flags und zur Implementierung der Threadsicherheit in einem Client finden Sie unter [Threading in MAPI](threading-in-mapi.md).</span><span class="sxs-lookup"><span data-stu-id="eefbd-127">For more information about when to set this flag and how to implement thread safety in a client, see [Threading in MAPI](threading-in-mapi.md).</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="b185d-128">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="b185d-128">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="eefbd-128">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="eefbd-128">See also</span></span>
 
 
 
-[<span data-ttu-id="b185d-129">MAPIInitialize</span><span class="sxs-lookup"><span data-stu-id="b185d-129">MAPIInitialize</span></span>](mapiinitialize.md)
+[<span data-ttu-id="eefbd-129">MAPIInitialize</span><span class="sxs-lookup"><span data-stu-id="eefbd-129">MAPIInitialize</span></span>](mapiinitialize.md)
 
 
-[<span data-ttu-id="b185d-130">MAPI-Strukturen</span><span class="sxs-lookup"><span data-stu-id="b185d-130">MAPI Structures</span></span>](mapi-structures.md)
+[<span data-ttu-id="eefbd-130">MAPI-Strukturen</span><span class="sxs-lookup"><span data-stu-id="eefbd-130">MAPI Structures</span></span>](mapi-structures.md)
 

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: ee190ba7-9e71-97e4-7bf1-7b97adc73eed
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 356f4470be26ae3803a53af1cec34b3ac6eb0cc9
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -19,13 +19,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32326929"
 ---
-# <a name="iconvertersessionmimetomapi"></a><span data-ttu-id="f864f-103">IConverterSession::MIMEToMAPI</span><span class="sxs-lookup"><span data-stu-id="f864f-103">IConverterSession::MIMEToMAPI</span></span>
+# <a name="iconvertersessionmimetomapi"></a><span data-ttu-id="f233f-103">IConverterSession::MIMEToMAPI</span><span class="sxs-lookup"><span data-stu-id="f233f-103">IConverterSession::MIMEToMAPI</span></span>
 
   
   
-<span data-ttu-id="f864f-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="f864f-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="f233f-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="f233f-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="f864f-105">Konvertiert einen MIME-Stream in eine MAPI-Nachricht.</span><span class="sxs-lookup"><span data-stu-id="f864f-105">Converts a MIME stream to a MAPI message.</span></span>
+<span data-ttu-id="f233f-105">Konvertiert einen MIME-Stream in eine MAPI-Nachricht.</span><span class="sxs-lookup"><span data-stu-id="f233f-105">Converts a MIME stream to a MAPI message.</span></span>
   
 ```cpp
 HRESULT IConverterSession:: MIMEToMAPI ( 
@@ -36,80 +36,80 @@ HRESULT IConverterSession:: MIMEToMAPI (
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="f864f-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="f864f-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="f233f-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="f233f-106">Parameters</span></span>
 
- <span data-ttu-id="f864f-107">_pstm_</span><span class="sxs-lookup"><span data-stu-id="f864f-107">_pstm_</span></span>
+ <span data-ttu-id="f233f-107">_pstm_</span><span class="sxs-lookup"><span data-stu-id="f233f-107">_pstm_</span></span>
   
-> <span data-ttu-id="f864f-108">in [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) -Schnittstelle zu einem MIME-Stream.</span><span class="sxs-lookup"><span data-stu-id="f864f-108">[in] [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) interface to a MIME stream.</span></span> 
+> <span data-ttu-id="f233f-108">in [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) -Schnittstelle zu einem MIME-Stream.</span><span class="sxs-lookup"><span data-stu-id="f233f-108">[in] [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) interface to a MIME stream.</span></span> 
     
- <span data-ttu-id="f864f-109">_pmsg_</span><span class="sxs-lookup"><span data-stu-id="f864f-109">_pmsg_</span></span>
+ <span data-ttu-id="f233f-109">_pmsg_</span><span class="sxs-lookup"><span data-stu-id="f233f-109">_pmsg_</span></span>
   
-> <span data-ttu-id="f864f-110">Out Zeiger auf die zu ladende Nachricht.</span><span class="sxs-lookup"><span data-stu-id="f864f-110">[out] Pointer to the message to load.</span></span> <span data-ttu-id="f864f-111">Weitere Informationen finden Sie unter mapidefs. h für die Typdefinition von **LPMESSAGE**.</span><span class="sxs-lookup"><span data-stu-id="f864f-111">See mapidefs.h for the type definition of **LPMESSAGE**.</span></span>
+> <span data-ttu-id="f233f-110">Timeout Zeiger auf die zu ladende Nachricht.</span><span class="sxs-lookup"><span data-stu-id="f233f-110">[out] Pointer to the message to load.</span></span> <span data-ttu-id="f233f-111">Weitere Informationen finden Sie unter mapidefs. h für die Typdefinition von **LPMESSAGE**.</span><span class="sxs-lookup"><span data-stu-id="f233f-111">See mapidefs.h for the type definition of **LPMESSAGE**.</span></span>
     
- <span data-ttu-id="f864f-112">_pszSrcSrv_</span><span class="sxs-lookup"><span data-stu-id="f864f-112">_pszSrcSrv_</span></span>
+ <span data-ttu-id="f233f-112">_pszSrcSrv_</span><span class="sxs-lookup"><span data-stu-id="f233f-112">_pszSrcSrv_</span></span>
   
-> <span data-ttu-id="f864f-113">in Dieser Wert muss **null**sein.</span><span class="sxs-lookup"><span data-stu-id="f864f-113">[in] This value must be **null**.</span></span>
+> <span data-ttu-id="f233f-113">in Dieser Wert muss **null**sein.</span><span class="sxs-lookup"><span data-stu-id="f233f-113">[in] This value must be **null**.</span></span>
     
- <span data-ttu-id="f864f-114">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="f864f-114">_ulFlags_</span></span>
+ <span data-ttu-id="f233f-114">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="f233f-114">_ulFlags_</span></span>
   
-> <span data-ttu-id="f864f-115">in Dieser Parameter identifiziert eine besondere Aktion, die während der Konvertierung durchgeführt werden soll.</span><span class="sxs-lookup"><span data-stu-id="f864f-115">[in] This parameter identifies any special action to be taken during the conversion.</span></span> <span data-ttu-id="f864f-116">Es muss NULL (0) sein, wenn keine bestimmte Aktion ausgeführt werden soll, oder eine Kombination der folgenden Werte:</span><span class="sxs-lookup"><span data-stu-id="f864f-116">It must be zero (0) if no specific action is to be taken, or a combination of the following values:</span></span>
+> <span data-ttu-id="f233f-115">in Dieser Parameter gibt alle speziellen Aktionen an, die während der Konvertierung durchgeführt werden sollen.</span><span class="sxs-lookup"><span data-stu-id="f233f-115">[in] This parameter identifies any special action to be taken during the conversion.</span></span> <span data-ttu-id="f233f-116">Es muss NULL (0) sein, wenn keine bestimmte Aktion ausgeführt werden soll, oder eine Kombination der folgenden Werte:</span><span class="sxs-lookup"><span data-stu-id="f233f-116">It must be zero (0) if no specific action is to be taken, or a combination of the following values:</span></span>
     
-<span data-ttu-id="f864f-117">CCSF_EMBEDDED_MESSAGE</span><span class="sxs-lookup"><span data-stu-id="f864f-117">CCSF_EMBEDDED_MESSAGE</span></span>
+<span data-ttu-id="f233f-117">CCSF_EMBEDDED_MESSAGE</span><span class="sxs-lookup"><span data-stu-id="f233f-117">CCSF_EMBEDDED_MESSAGE</span></span>
   
-> <span data-ttu-id="f864f-118">Gesendete/nicht gesendete Informationen werden in X-unsent gespeichert.</span><span class="sxs-lookup"><span data-stu-id="f864f-118">Sent/unsent information is persisted in X-Unsent.</span></span>
+> <span data-ttu-id="f233f-118">Gesendete/nicht gesendete Informationen werden in X-unsent gespeichert.</span><span class="sxs-lookup"><span data-stu-id="f233f-118">Sent/unsent information is persisted in X-Unsent.</span></span>
     
-<span data-ttu-id="f864f-119">CCSF_SMTP</span><span class="sxs-lookup"><span data-stu-id="f864f-119">CCSF_SMTP</span></span>
+<span data-ttu-id="f233f-119">CCSF_SMTP</span><span class="sxs-lookup"><span data-stu-id="f233f-119">CCSF_SMTP</span></span>
   
-> <span data-ttu-id="f864f-120">Der MIME-Stream ist für eine SMTP-Nachricht (Simple MAPI Transfer Protocol).</span><span class="sxs-lookup"><span data-stu-id="f864f-120">The MIME stream is for a Simple MAPI Transfer Protocol (SMTP) message.</span></span>
+> <span data-ttu-id="f233f-120">Der MIME-Datenstrom ist für eine SMTP-Nachricht (Simple MAPI Transfer Protocol).</span><span class="sxs-lookup"><span data-stu-id="f233f-120">The MIME stream is for a Simple MAPI Transfer Protocol (SMTP) message.</span></span>
     
-<span data-ttu-id="f864f-121">CCSF_INCLUDE_BCC</span><span class="sxs-lookup"><span data-stu-id="f864f-121">CCSF_INCLUDE_BCC</span></span>
+<span data-ttu-id="f233f-121">CCSF_INCLUDE_BCC</span><span class="sxs-lookup"><span data-stu-id="f233f-121">CCSF_INCLUDE_BCC</span></span>
   
-> <span data-ttu-id="f864f-122">BCC-Empfänger des MIME-Streams sollten in der MAPI-Nachricht enthalten sein.</span><span class="sxs-lookup"><span data-stu-id="f864f-122">BCC recipients of the MIME stream should be included in the MAPI message.</span></span>
+> <span data-ttu-id="f233f-122">BCC-Empfänger des MIME-Streams sollten in die MAPI-Nachricht aufgenommen werden.</span><span class="sxs-lookup"><span data-stu-id="f233f-122">BCC recipients of the MIME stream should be included in the MAPI message.</span></span>
     
-<span data-ttu-id="f864f-123">CCSF_USE_RTF</span><span class="sxs-lookup"><span data-stu-id="f864f-123">CCSF_USE_RTF</span></span>
+<span data-ttu-id="f233f-123">CCSF_USE_RTF</span><span class="sxs-lookup"><span data-stu-id="f233f-123">CCSF_USE_RTF</span></span>
   
-> <span data-ttu-id="f864f-124">Der HTML-Textkörper des MIME-Streams sollte in Rich-Text-Format (RTF) in der MAPI-Nachricht konvertiert werden.</span><span class="sxs-lookup"><span data-stu-id="f864f-124">The HTML body of the MIME stream should be converted to Rich Text Format (RTF) in the MAPI message.</span></span>
+> <span data-ttu-id="f233f-124">Der HTML-Text des MIME-Streams sollte in die MAPI-Nachricht in Rich-Text-Format (RTF) konvertiert werden.</span><span class="sxs-lookup"><span data-stu-id="f233f-124">The HTML body of the MIME stream should be converted to Rich Text Format (RTF) in the MAPI message.</span></span>
 
-<span data-ttu-id="f864f-125">CCSF_GLOBAL_MESSAGE</span><span class="sxs-lookup"><span data-stu-id="f864f-125">CCSF_GLOBAL_MESSAGE</span></span>
-> <span data-ttu-id="f864f-126">Der Konverter sollte den MIME-Stream als internationale Nachricht behandeln (EAI/RFC6530).</span><span class="sxs-lookup"><span data-stu-id="f864f-126">The converter should handle the MIME stream as an international message (EAI/RFC6530).</span></span> <span data-ttu-id="f864f-127">In Outlook 2013 nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="f864f-127">Not supported on Outlook 2013.</span></span>
+<span data-ttu-id="f233f-125">CCSF_GLOBAL_MESSAGE</span><span class="sxs-lookup"><span data-stu-id="f233f-125">CCSF_GLOBAL_MESSAGE</span></span>
+> <span data-ttu-id="f233f-126">Der Konverter sollte den MIME-Datenstrom als internationale Nachricht behandeln (EAI/RFC6530).</span><span class="sxs-lookup"><span data-stu-id="f233f-126">The converter should handle the MIME stream as an international message (EAI/RFC6530).</span></span> <span data-ttu-id="f233f-127">Für Outlook 2013 nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="f233f-127">Not supported on Outlook 2013.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="f864f-128">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="f864f-128">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="f233f-128">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="f233f-128">Return value</span></span>
 
-<span data-ttu-id="f864f-129">E_INVALIDARG</span><span class="sxs-lookup"><span data-stu-id="f864f-129">E_INVALIDARG</span></span>
+<span data-ttu-id="f233f-129">E_INVALIDARG</span><span class="sxs-lookup"><span data-stu-id="f233f-129">E_INVALIDARG</span></span>
   
-> <span data-ttu-id="f864f-130">Gibt an, dass _pstm_ den Wert **null**hat, _Pmsg_ ist **null**, oder _ulFlags_ ist ungültig.</span><span class="sxs-lookup"><span data-stu-id="f864f-130">Indicates that  _pstm_ is **null**,  _pmsg_ is **null**, or  _ulFlags_ is invalid.</span></span> 
+> <span data-ttu-id="f233f-130">Gibt an, dass _pstm_ **null**ist, _pmsg_ ist **null**, oder _ulFlags_ ist ungültig.</span><span class="sxs-lookup"><span data-stu-id="f233f-130">Indicates that  _pstm_ is **null**,  _pmsg_ is **null**, or  _ulFlags_ is invalid.</span></span> 
     
-## <a name="remarks"></a><span data-ttu-id="f864f-131">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="f864f-131">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f233f-131">Hinweise</span><span class="sxs-lookup"><span data-stu-id="f233f-131">Remarks</span></span>
 
-<span data-ttu-id="f864f-132">Wenn Sie **CCSF_USE_RTF** als Teil von _ulFlags_ angegeben haben und der Ziel Nachrichtenspeicher sowohl HTML als auch RTF unterstützt, wird die MAPI-Nachricht in HTML oder RTF konvertiert.</span><span class="sxs-lookup"><span data-stu-id="f864f-132">If you have specified **CCSF_USE_RTF** as part of  _ulFlags_ and the destination message store supports both HTML and RTF, the MAPI message will be converted to either HTML or RTF.</span></span> <span data-ttu-id="f864f-133">Wenn die Nachricht in RTF konvertiert wird, wird das konvertierte Format RTF komprimiert, jeder HTML-Code wird in die komprimierte RTF-Zeichenfolge eingebettet, und die Zeichenfolge wird in der [kanonischEn Eigenschaft PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)enthalten sein.</span><span class="sxs-lookup"><span data-stu-id="f864f-133">If the message is converted to RTF, the converted format will be compressed RTF, any HTML will be embedded in the compressed RTF string, and the string will be contained in the [PidTagRtfCompressed Canonical Property](pidtagrtfcompressed-canonical-property.md).</span></span>
+<span data-ttu-id="f233f-132">Wenn Sie **CCSF_USE_RTF** als Teil von _ulFlags_ angegeben haben und der Ziel Nachrichtenspeicher sowohl HTML als auch RTF unterstützt, wird die MAPI-Nachricht entweder in HTML oder in RTF konvertiert.</span><span class="sxs-lookup"><span data-stu-id="f233f-132">If you have specified **CCSF_USE_RTF** as part of  _ulFlags_ and the destination message store supports both HTML and RTF, the MAPI message will be converted to either HTML or RTF.</span></span> <span data-ttu-id="f233f-133">Wenn die Nachricht in RTF konvertiert wird, wird das konvertierte Format in RTF komprimiert, alle HTML-Elemente werden in die komprimierte RTF-Zeichenfolge eingebettet, und die Zeichenfolge wird in der [kanonischen PidTagRtfCompressed-Eigenschaft](pidtagrtfcompressed-canonical-property.md)enthalten sein.</span><span class="sxs-lookup"><span data-stu-id="f233f-133">If the message is converted to RTF, the converted format will be compressed RTF, any HTML will be embedded in the compressed RTF string, and the string will be contained in the [PidTagRtfCompressed Canonical Property](pidtagrtfcompressed-canonical-property.md).</span></span>
   
-## <a name="mfcmapi-reference"></a><span data-ttu-id="f864f-134">MFCMAPI-Referenz</span><span class="sxs-lookup"><span data-stu-id="f864f-134">MFCMAPI reference</span></span>
+## <a name="mfcmapi-reference"></a><span data-ttu-id="f233f-134">MFCMAPI-Referenz</span><span class="sxs-lookup"><span data-stu-id="f233f-134">MFCMAPI reference</span></span>
 
-<span data-ttu-id="f864f-135">Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.</span><span class="sxs-lookup"><span data-stu-id="f864f-135">For MFCMAPI sample code, see the following table.</span></span>
+<span data-ttu-id="f233f-135">Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.</span><span class="sxs-lookup"><span data-stu-id="f233f-135">For MFCMAPI sample code, see the following table.</span></span>
   
-|<span data-ttu-id="f864f-136">**Datei**</span><span class="sxs-lookup"><span data-stu-id="f864f-136">**File**</span></span>|<span data-ttu-id="f864f-137">**Funktion**</span><span class="sxs-lookup"><span data-stu-id="f864f-137">**Function**</span></span>|<span data-ttu-id="f864f-138">**Comment**</span><span class="sxs-lookup"><span data-stu-id="f864f-138">**Comment**</span></span>|
+|<span data-ttu-id="f233f-136">**Datei**</span><span class="sxs-lookup"><span data-stu-id="f233f-136">**File**</span></span>|<span data-ttu-id="f233f-137">**Funktion**</span><span class="sxs-lookup"><span data-stu-id="f233f-137">**Function**</span></span>|<span data-ttu-id="f233f-138">**Comment**</span><span class="sxs-lookup"><span data-stu-id="f233f-138">**Comment**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="f864f-139">MapiMime. cpp</span><span class="sxs-lookup"><span data-stu-id="f864f-139">MapiMime.cpp</span></span>  <br/> |<span data-ttu-id="f864f-140">ImportEMLToIMessage</span><span class="sxs-lookup"><span data-stu-id="f864f-140">ImportEMLToIMessage</span></span>  <br/> |<span data-ttu-id="f864f-141">MFCMAPI verwendet MimeToMAPI, um eine EML-Datei in eine MAPI-Nachricht umzuwandeln.</span><span class="sxs-lookup"><span data-stu-id="f864f-141">MFCMAPI uses MimeToMAPI to convert an EML file to a MAPI message.</span></span>  <br/> |
-|<span data-ttu-id="f864f-142">MapiMime. cpp</span><span class="sxs-lookup"><span data-stu-id="f864f-142">MapiMime.cpp</span></span>  <br/> |<span data-ttu-id="f864f-143">ExportIMessageToEML</span><span class="sxs-lookup"><span data-stu-id="f864f-143">ExportIMessageToEML</span></span>  <br/> |<span data-ttu-id="f864f-144">MFCMAPI verwendet MAPIToMIMEStm, um eine MAPI-Nachricht in eine EML-Datei umzuwandeln.</span><span class="sxs-lookup"><span data-stu-id="f864f-144">MFCMAPI uses MAPIToMIMEStm to convert a MAPI message to an EML file.</span></span>  <br/> |
+|<span data-ttu-id="f233f-139">MapiMime. cpp</span><span class="sxs-lookup"><span data-stu-id="f233f-139">MapiMime.cpp</span></span>  <br/> |<span data-ttu-id="f233f-140">ImportEMLToIMessage</span><span class="sxs-lookup"><span data-stu-id="f233f-140">ImportEMLToIMessage</span></span>  <br/> |<span data-ttu-id="f233f-141">MfcMapi verwendet MimeToMAPI, um eine EML-Datei in eine MAPI-Nachricht zu konvertieren.</span><span class="sxs-lookup"><span data-stu-id="f233f-141">MFCMAPI uses MimeToMAPI to convert an EML file to a MAPI message.</span></span>  <br/> |
+|<span data-ttu-id="f233f-142">MapiMime. cpp</span><span class="sxs-lookup"><span data-stu-id="f233f-142">MapiMime.cpp</span></span>  <br/> |<span data-ttu-id="f233f-143">ExportIMessageToEML</span><span class="sxs-lookup"><span data-stu-id="f233f-143">ExportIMessageToEML</span></span>  <br/> |<span data-ttu-id="f233f-144">MfcMapi verwendet MAPIToMIMEStm, um eine MAPI-Nachricht in eine EML-Datei zu konvertieren.</span><span class="sxs-lookup"><span data-stu-id="f233f-144">MFCMAPI uses MAPIToMIMEStm to convert a MAPI message to an EML file.</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="f864f-145">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="f864f-145">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f233f-145">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="f233f-145">See also</span></span>
 
 
 
-[<span data-ttu-id="f864f-146">IConverterSession : IUnknown</span><span class="sxs-lookup"><span data-stu-id="f864f-146">IConverterSession : IUnknown</span></span>](iconvertersessioniunknown.md)
+[<span data-ttu-id="f233f-146">IConverterSession : IUnknown</span><span class="sxs-lookup"><span data-stu-id="f233f-146">IConverterSession : IUnknown</span></span>](iconvertersessioniunknown.md)
   
-[<span data-ttu-id="f864f-147">IConverterSession::MAPIToMIMEStm</span><span class="sxs-lookup"><span data-stu-id="f864f-147">IConverterSession::MAPIToMIMEStm</span></span>](iconvertersession-mapitomimestm.md)
+[<span data-ttu-id="f233f-147">IConverterSession::MAPIToMIMEStm</span><span class="sxs-lookup"><span data-stu-id="f233f-147">IConverterSession::MAPIToMIMEStm</span></span>](iconvertersession-mapitomimestm.md)
   
-[<span data-ttu-id="f864f-148">IConverterSession::SetAdrBook</span><span class="sxs-lookup"><span data-stu-id="f864f-148">IConverterSession::SetAdrBook</span></span>](iconvertersession-setadrbook.md)
+[<span data-ttu-id="f233f-148">IConverterSession::SetAdrBook</span><span class="sxs-lookup"><span data-stu-id="f233f-148">IConverterSession::SetAdrBook</span></span>](iconvertersession-setadrbook.md)
   
-[<span data-ttu-id="f864f-149">IConverterSession::SetCharSet</span><span class="sxs-lookup"><span data-stu-id="f864f-149">IConverterSession::SetCharSet</span></span>](iconvertersession-setcharset.md)
+[<span data-ttu-id="f233f-149">IConverterSession::SetCharSet</span><span class="sxs-lookup"><span data-stu-id="f233f-149">IConverterSession::SetCharSet</span></span>](iconvertersession-setcharset.md)
   
-[<span data-ttu-id="f864f-150">IConverterSession::SetEncoding</span><span class="sxs-lookup"><span data-stu-id="f864f-150">IConverterSession::SetEncoding</span></span>](iconvertersession-setencoding.md)
+[<span data-ttu-id="f233f-150">IConverterSession::SetEncoding</span><span class="sxs-lookup"><span data-stu-id="f233f-150">IConverterSession::SetEncoding</span></span>](iconvertersession-setencoding.md)
   
-[<span data-ttu-id="f864f-151">IConverterSession::SetSaveFormat</span><span class="sxs-lookup"><span data-stu-id="f864f-151">IConverterSession::SetSaveFormat</span></span>](iconvertersession-setsaveformat.md)
+[<span data-ttu-id="f233f-151">IConverterSession::SetSaveFormat</span><span class="sxs-lookup"><span data-stu-id="f233f-151">IConverterSession::SetSaveFormat</span></span>](iconvertersession-setsaveformat.md)
   
-[<span data-ttu-id="f864f-152">IConverterSession::SetTextWrapping</span><span class="sxs-lookup"><span data-stu-id="f864f-152">IConverterSession::SetTextWrapping</span></span>](iconvertersession-settextwrapping.md)
+[<span data-ttu-id="f233f-152">IConverterSession::SetTextWrapping</span><span class="sxs-lookup"><span data-stu-id="f233f-152">IConverterSession::SetTextWrapping</span></span>](iconvertersession-settextwrapping.md)
 
 
-[<span data-ttu-id="f864f-153">MAPI-Konstanten</span><span class="sxs-lookup"><span data-stu-id="f864f-153">MAPI Constants</span></span>](mapi-constants.md)
+[<span data-ttu-id="f233f-153">MAPI-Konstanten</span><span class="sxs-lookup"><span data-stu-id="f233f-153">MAPI Constants</span></span>](mapi-constants.md)
 
