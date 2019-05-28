@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: a7b10007-42d8-4755-8362-f8ad9a8dad68
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 81d99b2bbe6ef7914a4b7d253a3472026872260d
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -45,7 +45,7 @@ S_OK
   
 > Der Ansichtskontext wurde erfolgreich festgelegt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Formular Betrachter rufen die **IMAPIForm::** setviewcontext-Methode auf, um einen bestimmten Formular Ansichtskontext als Current einzurichten. Ein Formular kann jeweils nur einen Ansichtskontext aufweisen. 
   
@@ -53,17 +53,17 @@ Formular Betrachter rufen die **IMAPIForm::** setviewcontext-Methode auf, um ein
 
 Die meisten Formularserver **** implementieren setviewcontext mithilfe des folgenden Algorithmus: 
   
-- Wenn bereits ein Ansichtskontext für das Formular vorhanden ist, brechen Sie die Registrierung des Formulars ab, indem Sie die [IMAPIViewContext:: SetAdviseSink](imapiviewcontext-setadvisesink.md) -Methode mit **null** im _pmnvs_ -Parameter aufrufen und dann die [IUnknown:: Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) des View-Kontexts aufrufen. Methode zum Verringern der Verweisanzahl. 
+- Wenn bereits ein Ansichtskontext für das Formular vorhanden ist, brechen Sie die Registrierung des Formulars ab, indem Sie die [IMAPIViewContext:: SetAdviseSink](imapiviewcontext-setadvisesink.md) -Methode mit **null** im _pmnvs_ -Parameter aufrufen und dann die [IUnknown:: Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) des View-Kontexts aufrufen. -Methode, um den Verweiszähler zu dekrementieren. 
     
-- Wenn der neue Ansichtskontext nicht **null**ist, rufen Sie **IMAPIViewContext:: SetAdviseSink** mithilfe des _pViewContext_ -Parameters zum Einrichten einer neuen Ansicht Advise-Senke. 
+- Wenn der neue Ansichtskontext nicht **null**ist, rufen Sie **IMAPIViewContext:: SetAdviseSink** mit dem _pViewContext_ -Parameter auf, um eine neue Ansicht Advise-Senke einzurichten. 
     
-- Wenn der neue Ansichtskontext nicht **null**ist, rufen Sie die [IMAPIViewContext:: GetViewStatus](imapiviewcontext-getviewstatus.md) -Methode auf, um zu bestimmen, welche Statuskennzeichen festgelegt wurden. 
+- Wenn der neue Ansichtskontext nicht **null**ist, rufen Sie die [IMAPIViewContext:: GetViewStatus](imapiviewcontext-getviewstatus.md) -Methode auf, um zu bestimmen, welche Status-Flags festgelegt wurden. 
     
 - Wenn der neue Ansichtskontext nicht **null**ist, speichern Sie ihn, und rufen Sie seine [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28VS.85%29.aspx) -Methode auf, um den Verweiszähler zu erhöhen. 
     
-- Aktualisieren Sie alle Benutzeroberflächenelemente, die vom Ansichtskontext abhängig sind. 
+- Aktualisieren Sie alle Benutzeroberflächenelemente, die vom Ansichtskontext abhängen. 
     
-Abhängig von den Statuskennzeichen, die von **IMAPIViewContext:: GetViewStatus**zurück **** gegeben werden, kann setviewcontext auch andere Aktionen ausführen. Wenn beispielsweise die VCSTATUS_NEXT-und VCSTATUS_PREV-Flags zurückgegeben **** werden, kann setviewcontext die Schaltflächen **Next** und **Previous** für den neuen Ansichtskontext aktivieren. 
+Abhängig von den Status-Flags, die von **IMAPIViewContext:: GetViewStatus**zurückgegeben werden, kann setviewcontext auch andere Aktionen ausführen. **** Wenn beispielsweise die VCSTATUS_NEXT-und VCSTATUS_PREV-Flags zurückgegeben **** werden, kann setviewcontext die Schaltflächen **weiter** und **zurück** für den neuen Ansichtskontext aktivieren. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -71,7 +71,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIFormFunctions. cpp  <br/> |CreateAndDisplayNewMailInFolder  <br/> |MFCMAPI verwendet die **IMAPIForm::** setviewcontext-Methode, um den Ansichtskontext von MfcMapi auf dem Formular festzulegen, bevor das Formular angezeigt wird.  <br/> |
+|MAPIFormFunctions. cpp  <br/> |CreateAndDisplayNewMailInFolder  <br/> |MfcMapi verwendet die **IMAPIForm::** setviewcontext-Methode, um den Ansichtskontext von MfcMapi auf dem Formular festzulegen, bevor das Formular angezeigt wird.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidlidcommonend (-Eigenschaft
+title: Kanonische pidlidcommonend (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: c89f388a-1585-4bed-91b4-1b0c268292f3
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 97d6ef6343cedb6fbed93cccda9f65476bb73f4f
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -19,39 +19,39 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32345500"
 ---
-# <a name="pidlidcommonend-canonical-property"></a>Kanonische Pidlidcommonend (-Eigenschaft
+# <a name="pidlidcommonend-canonical-property"></a>Kanonische pidlidcommonend (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Stellt das Enddatum und die Uhrzeit einer Nachricht dar.
+Stellt das Enddatum und die Endzeit einer Nachricht dar.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidCommonEnd  <br/> |
-|Eigenschaftensatz:  <br/> |PSETID_Common  <br/> |
-|Long-ID (Deckel):  <br/> |0x00008517  <br/> |
+|Eigenschaftengruppe:  <br/> |PSETID_Common  <br/> |
+|Lange ID (LID):  <br/> |0x00008517  <br/> |
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
-|Bereich:  <br/> |Allgemeine Nachrichtenübermittlung  <br/> |
+|Bereich:  <br/> |Allgemeines Messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Diese Eigenschaft gibt die Endzeit für ein Element an. Sie muss größer oder gleich dem Wert der **dispidCommonStart** ([pidlidcommonstart (](pidlidcommonstart-canonical-property.md))-Eigenschaft sein.
+Diese Eigenschaft gibt die Endzeit für ein Element an. Sie muss größer als oder gleich dem Wert der **dispidCommonStart** ([pidlidcommonstart (](pidlidcommonstart-canonical-property.md))-Eigenschaft sein.
   
 Dieser Wert muss die UTC-Entsprechung (Coordinated Universal Time) der **dispidTaskDueDate** ([pidlidtaskduedate (](pidlidtaskduedate-canonical-property.md))-Eigenschaft sein.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Stellt Eigenschaftensatz Definitionen und Verweise auf zugehörige Exchange Server-Protokollspezifikationen bereit.
+> Stellt Eigenschaftenmengen Definitionen und Verweise auf zugehörige Exchange Server Protokollspezifikationen bereit.
     
 [[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
-> Verarbeitet Nachrichten-und Anlagenobjekte.
+> Verarbeitet Nachrichten-und Attachment-Objekte.
     
 [[MS-OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
   
@@ -61,7 +61,7 @@ Dieser Wert muss die UTC-Entsprechung (Coordinated Universal Time) der **dispidT
 
 Mapidefs. h
   
-> Stellt Datentypdefinitionen bereit.
+> Stellt Definitionen von Datentypen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 

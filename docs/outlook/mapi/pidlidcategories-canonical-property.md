@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidlidcategories (-Eigenschaft
+title: Kanonische pidlidcategories (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6ad2aedc-405b-475e-ac76-7ecbbef28f73
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: b2047f04f3f4a8d2b3e58e07a71e7e2463eff9cf
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32344975"
 ---
-# <a name="pidlidcategories-canonical-property"></a>Kanonische Pidlidcategories (-Eigenschaft
+# <a name="pidlidcategories-canonical-property"></a>Kanonische pidlidcategories (-Eigenschaft
 
   
   
@@ -30,34 +30,34 @@ Gibt eine Liste der Kategorien für ein Element an.
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidCategories  <br/> |
-|Eigenschaftensatz:  <br/> |PS_PUBLIC_STRINGS  <br/> |
-|Long-ID (Deckel):  <br/> |0x00002328  <br/> |
+|Eigenschaftengruppe:  <br/> |PS_PUBLIC_STRINGS  <br/> |
+|Lange ID (LID):  <br/> |0x00002328  <br/> |
 |Datentyp:  <br/> |PT_MV_UNICODE  <br/> |
 |Bereich:  <br/> |Standard  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Um ein Schlüsselwort-Kopfzeilenfeld zu generieren, müssen Clients den Wert dieser Eigenschaft auf die gewünschten Werte festlegen. Diese Eigenschaft hat mehrere Zeichenfolgen; jede Kategorie sollte einem einzelnen Schlüsselwort zugeordnet werden.
   
-MIME-Writer (Multipurpose Internet Mail Extensions) sollte jeden unter Wert dieser Eigenschaft in ein separates Schlüsselwort im Kopfzeilenfeld Schlüsselwörter kopieren, wobei jedes Schlüsselwort durch ein Komma (U + 002C) und Leerzeichen (U + 0020) getrennt wird. MIME-Writer können diese Eigenschaft ablegen, anstatt Sie in das Schlüsselwort-Kopfzeilenfeld zu kopieren, um Konflikte zwischen verschiedenen Gruppen von Kategorien in unterschiedlichen Organisationen zu vermeiden.
+MIME-Writer (Multipurpose Internet Mail Extensions) sollten jeden unter Wert dieser Eigenschaft in ein separates Schlüsselwort im Schlüsselwort-Headerfeld kopieren, wobei ein Komma (u + 002C) und ein Leerzeichen (u + 0020) die einzelnen Schlüsselwörter voneinander trennen. MIME-Writer können diese Eigenschaft löschen, anstatt Sie in das Kopfzeilenfeld Schlüsselwörter zu kopieren, um Konflikte zwischen unterschiedlichen Gruppen von Kategorien in unterschiedlichen Organisationen zu vermeiden.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Stellt die Eigenschaftensatz Definition und Verweise auf zugehörige Exchange Server-Protokollspezifikationen bereit.
+> Stellt eine Eigenschaftssatzes-Definition und Verweise auf zugehörige Exchange Server Protokollspezifikationen bereit.
     
 [[MS-OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
-> Konvertiert von Internet Standard-e-Mail-Konventionen in Nachrichtenobjekte.
+> Konvertiert aus Internet Standard-e-Mail-Konventionen in Nachrichtenobjekte.
     
 ### <a name="header-files"></a>Header Dateien
 
 Mapidefs. h
   
-> Stellt Datentypdefinitionen bereit.
+> Stellt Definitionen von Datentypen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 

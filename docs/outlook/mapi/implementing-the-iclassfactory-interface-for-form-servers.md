@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 22402261-c0fc-49bd-a222-e31989d6ff30
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 12d854b72632653d9e1081c9e726c0fe7087bc27
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -21,14 +21,14 @@ ms.locfileid: "32310031"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-[IClassFactory](https://msdn.microsoft.com/library/ms694364%28VS.85%29.aspx) ist die OLE-Schnittstelle, die von Clientanwendungen verwendet wird, um neue Formularobjekte der Nachrichtenklasse Ihres Formular Servers zu erstellen. In der folgenden Tabelle sind die erforderlichen **IClassFactory** -Methoden aufgeführt. 
+[IClassFactory](https://msdn.microsoft.com/library/ms694364%28VS.85%29.aspx) ist die OLE-Schnittstelle, mit der Clientanwendungen neue Formularobjekte der Nachrichtenklasse Ihres Formular Servers erstellen. In der folgenden Tabelle sind die **IClassFactory** -Methoden aufgeführt, die erforderlich sind. 
   
 |**Methode**|**Beschreibung**|
 |:-----|:-----|
 |[CreateInstance](https://msdn.microsoft.com/library/ms682215%28v=VS.85%29.aspx) <br/> |Erstellt ein neues Form-Objekt.  <br/> |
-|[LockServer](https://msdn.microsoft.com/library/ms682332%28v=VS.85%29.aspx) <br/> |Sperrt den Formularserver im Arbeitsspeicher, sodass beim Erstellen mehrerer Formularobjekte der Start Aufwand vermieden werden kann.  <br/> |
+|[LockServer](https://msdn.microsoft.com/library/ms682332%28v=VS.85%29.aspx) <br/> |Sperrt den Formularserver im Arbeitsspeicher, sodass der Start Aufwand vermieden werden kann, wenn mehrere Form-Objekte erstellt werden.  <br/> |
    
-Alle für die Implementierung dieser Methoden erforderlichen Informationen finden Sie im Abschnitt COM-und ActiveX-Objektdienste im Windows SDK.
+Alle Informationen, die für die Implementierung dieser Methoden erforderlich sind, finden Sie im Abschnitt com-und ActiveX-Objektdienste im Windows SDK.
   
 ## <a name="see-also"></a>Siehe auch
 

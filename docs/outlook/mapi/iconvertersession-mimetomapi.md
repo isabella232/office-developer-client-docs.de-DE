@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: ee190ba7-9e71-97e4-7bf1-7b97adc73eed
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 356f4470be26ae3803a53af1cec34b3ac6eb0cc9
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -44,7 +44,7 @@ HRESULT IConverterSession:: MIMEToMAPI (
     
  _pmsg_
   
-> Out Zeiger auf die zu ladende Nachricht. Weitere Informationen finden Sie unter mapidefs. h für die Typdefinition von **LPMESSAGE**.
+> Timeout Zeiger auf die zu ladende Nachricht. Weitere Informationen finden Sie unter mapidefs. h für die Typdefinition von **LPMESSAGE**.
     
  _pszSrcSrv_
   
@@ -52,7 +52,7 @@ HRESULT IConverterSession:: MIMEToMAPI (
     
  _ulFlags_
   
-> in Dieser Parameter identifiziert eine besondere Aktion, die während der Konvertierung durchgeführt werden soll. Es muss NULL (0) sein, wenn keine bestimmte Aktion ausgeführt werden soll, oder eine Kombination der folgenden Werte:
+> in Dieser Parameter gibt alle speziellen Aktionen an, die während der Konvertierung durchgeführt werden sollen. Es muss NULL (0) sein, wenn keine bestimmte Aktion ausgeführt werden soll, oder eine Kombination der folgenden Werte:
     
 CCSF_EMBEDDED_MESSAGE
   
@@ -60,28 +60,28 @@ CCSF_EMBEDDED_MESSAGE
     
 CCSF_SMTP
   
-> Der MIME-Stream ist für eine SMTP-Nachricht (Simple MAPI Transfer Protocol).
+> Der MIME-Datenstrom ist für eine SMTP-Nachricht (Simple MAPI Transfer Protocol).
     
 CCSF_INCLUDE_BCC
   
-> BCC-Empfänger des MIME-Streams sollten in der MAPI-Nachricht enthalten sein.
+> BCC-Empfänger des MIME-Streams sollten in die MAPI-Nachricht aufgenommen werden.
     
 CCSF_USE_RTF
   
-> Der HTML-Textkörper des MIME-Streams sollte in Rich-Text-Format (RTF) in der MAPI-Nachricht konvertiert werden.
+> Der HTML-Text des MIME-Streams sollte in die MAPI-Nachricht in Rich-Text-Format (RTF) konvertiert werden.
 
 CCSF_GLOBAL_MESSAGE
-> Der Konverter sollte den MIME-Stream als internationale Nachricht behandeln (EAI/RFC6530). In Outlook 2013 nicht unterstützt.
+> Der Konverter sollte den MIME-Datenstrom als internationale Nachricht behandeln (EAI/RFC6530). Für Outlook 2013 nicht unterstützt.
     
 ## <a name="return-value"></a>Rückgabewert
 
 E_INVALIDARG
   
-> Gibt an, dass _pstm_ den Wert **null**hat, _Pmsg_ ist **null**, oder _ulFlags_ ist ungültig. 
+> Gibt an, dass _pstm_ **null**ist, _pmsg_ ist **null**, oder _ulFlags_ ist ungültig. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie **CCSF_USE_RTF** als Teil von _ulFlags_ angegeben haben und der Ziel Nachrichtenspeicher sowohl HTML als auch RTF unterstützt, wird die MAPI-Nachricht in HTML oder RTF konvertiert. Wenn die Nachricht in RTF konvertiert wird, wird das konvertierte Format RTF komprimiert, jeder HTML-Code wird in die komprimierte RTF-Zeichenfolge eingebettet, und die Zeichenfolge wird in der [kanonischEn Eigenschaft PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)enthalten sein.
+Wenn Sie **CCSF_USE_RTF** als Teil von _ulFlags_ angegeben haben und der Ziel Nachrichtenspeicher sowohl HTML als auch RTF unterstützt, wird die MAPI-Nachricht entweder in HTML oder in RTF konvertiert. Wenn die Nachricht in RTF konvertiert wird, wird das konvertierte Format in RTF komprimiert, alle HTML-Elemente werden in die komprimierte RTF-Zeichenfolge eingebettet, und die Zeichenfolge wird in der [kanonischen PidTagRtfCompressed-Eigenschaft](pidtagrtfcompressed-canonical-property.md)enthalten sein.
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -89,8 +89,8 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MapiMime. cpp  <br/> |ImportEMLToIMessage  <br/> |MFCMAPI verwendet MimeToMAPI, um eine EML-Datei in eine MAPI-Nachricht umzuwandeln.  <br/> |
-|MapiMime. cpp  <br/> |ExportIMessageToEML  <br/> |MFCMAPI verwendet MAPIToMIMEStm, um eine MAPI-Nachricht in eine EML-Datei umzuwandeln.  <br/> |
+|MapiMime. cpp  <br/> |ImportEMLToIMessage  <br/> |MfcMapi verwendet MimeToMAPI, um eine EML-Datei in eine MAPI-Nachricht zu konvertieren.  <br/> |
+|MapiMime. cpp  <br/> |ExportIMessageToEML  <br/> |MfcMapi verwendet MAPIToMIMEStm, um eine MAPI-Nachricht in eine EML-Datei zu konvertieren.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

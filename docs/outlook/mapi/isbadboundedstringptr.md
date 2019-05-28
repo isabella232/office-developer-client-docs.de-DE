@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 888c60e3-7376-4d66-8ee2-ce81abafb185
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 9d5ebb0e16138c3cc65ff6fd7c635e5498c9c1ba
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "32278834"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Überprüft, ob der aufrufende Prozess über Lesezugriff auf den angegebenen Arbeitsspeicher verfügt.
+Überprüft, ob der aufrufende Prozess über Lesezugriff auf den angegebenen Speicherbereich verfügt.
   
 |||
 |:-----|:-----|
@@ -40,19 +40,19 @@ BOOL IsBadBoundedStringPtr(
 
  _lpsz_
   
-> in Zeiger auf eine mit NULL endende ASCII-Zeichenfolge.
+> in Zeiger auf eine NULL-terminierte ASCII-Zeichenfolge.
     
  _cchMax_
   
-> in Die maximale Größe der Zeichenfolge in CHARs. Die Funktion überprüft den Lesezugriff in allen Zeichen bis zum abschließenden NULL-Zeichen der Zeichenfolge oder bis zu der durch diesen Parameter angegebenen Anzahl von Zeichen, je nachdem, welcher Wert kleiner ist. Wenn dieser Parameter 0 (null) ist, ist der Rückgabewert NULL.
+> in Die maximale Größe der Zeichenfolge in chars. Die Funktion überprüft den Lesezugriff in allen Zeichen bis zum abschließenden NULL-Zeichen der Zeichenfolge oder bis zur Anzahl der Zeichen, die durch diesen Parameter angegeben werden, je nachdem, welcher Wert kleiner ist. Wenn dieser Parameter gleich NULL ist, ist der Rückgabewert NULL.
     
 ## <a name="return-value"></a>Rückgabewert
 
-Der Rückgabewert ist 0 (null), wenn der aufrufende Prozess Lesezugriff auf alle Zeichen bis zum beendenden NULL-Zeichen der Zeichenfolge hat, oder Lesezugriff bis zur Anzahl von Zeichen, die von _cchMax_angegeben werden.
+Der Rückgabewert ist 0 (null), wenn der aufrufende Prozess Lesezugriff auf alle Zeichen bis zum beendenden Nullzeichen der Zeichenfolge hat, oder Lesezugriff bis zur Anzahl von Zeichen, die durch _cchMax_angegeben werden.
   
-Der Rückgabewert ist ungleich NULL, wenn der aufrufende Prozess nicht über Lesezugriff auf alle Zeichen bis zum abschließenden NULL-Zeichen der Zeichenfolge verfügt, oder Lesezugriff bis zur Anzahl von Zeichen, die von _cchMax_angegeben werden.
+Der Rückgabewert ist ungleich 0 (null), wenn der aufrufende Prozess keinen Lesezugriff auf alle Zeichen bis zum beendenden Nullzeichen der Zeichenfolge hat, oder Lesezugriff bis zur Anzahl von Zeichen, die durch _cchMax_angegeben werden.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Die **IsBadBoundedStringPtr** -Funktion entspricht der Verwendung von **IsBadStringPtr**.
   

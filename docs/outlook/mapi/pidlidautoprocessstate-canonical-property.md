@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidlidautoprocessstate (-Eigenschaft
+title: Kanonische pidlidautoprocessstate (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9e724af6-5b56-4eb3-a94c-1015ebce197c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 0918c15d87219c1ee20b177ae21e718e0289cf04
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32342063"
 ---
-# <a name="pidlidautoprocessstate-canonical-property"></a>Kanonische Pidlidautoprocessstate (-Eigenschaft
+# <a name="pidlidautoprocessstate-canonical-property"></a>Kanonische pidlidautoprocessstate (-Eigenschaft
 
   
   
@@ -30,28 +30,28 @@ Gibt die Optionen an, die bei der automatischen Verarbeitung von e-Mail-Nachrich
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidSniffState  <br/> |
-|Eigenschaftensatz:  <br/> |PSETID_Common  <br/> |
-|Long-ID (Deckel):  <br/> |0x0000851A  <br/> |
+|Eigenschaftengruppe:  <br/> |PSETID_Common  <br/> |
+|Lange ID (LID):  <br/> |0x0000851A  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |Allgemeine Nachrichtenübermittlung  <br/> |
+|Bereich:  <br/> |Allgemeines Messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die-Eigenschaft ist möglicherweise abwesend, in diesem Fall wird der Standardwert "0x00000000" verwendet. Wenn diese Eigenschaft festgelegt ist, muss Sie auf einen der Werte in der folgenden Tabelle festgelegt werden.
+Die Eigenschaft ist möglicherweise nicht vorhanden, in diesem Fall wird der Standardwert "0x00000000" verwendet. Wenn dieser Wert festgelegt ist, muss diese Eigenschaft auf einen der Werte in der folgenden Tabelle festgelegt werden.
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
 |0x00000000  <br/> |Die Nachricht wird nicht automatisch verarbeitet.  <br/> |
-|0x00000001  <br/> |Die Nachricht wird automatisch oder beim Öffnen der Nachricht verarbeitet.  <br/> |
+|0x00000001  <br/> |Verarbeitet die Nachricht automatisch oder wenn die Nachricht geöffnet wird.  <br/> |
 |0x00000002  <br/> |Verarbeiten Sie die Nachricht nur, wenn die Nachricht geöffnet wird.  <br/> |
    
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Stellt Eigenschaftensatz Definitionen und Verweise auf zugehörige Exchange Server-Protokollspezifikationen bereit.
+> Stellt Eigenschaftenmengen Definitionen und Verweise auf zugehörige Exchange Server Protokollspezifikationen bereit.
     
 [[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
@@ -61,7 +61,7 @@ Die-Eigenschaft ist möglicherweise abwesend, in diesem Fall wird der Standardwe
 
 Mapidefs. h
   
-> Stellt Datentypdefinitionen bereit.
+> Stellt Definitionen von Datentypen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 

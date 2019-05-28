@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidlidcontactitemdata (-Eigenschaft
+title: Kanonische pidlidcontactitemdata (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 411e8f81-c2b9-440a-9e9a-d6add5e4be63
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 031e5483539ce17c8b9b994690985c2349573e27
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32319510"
 ---
-# <a name="pidlidcontactitemdata-canonical-property"></a>Kanonische Pidlidcontactitemdata (-Eigenschaft
+# <a name="pidlidcontactitemdata-canonical-property"></a>Kanonische pidlidcontactitemdata (-Eigenschaft
 
   
   
@@ -30,14 +30,14 @@ Wird verwendet, um die Kontaktinformationen anzuzeigen.
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidContactItemData  <br/> |
-|Eigenschaftensatz:  <br/> |PSETID_Address  <br/> |
-|Long-ID (Deckel):  <br/> |0x00008007  <br/> |
+|Eigenschaftengruppe:  <br/> |PSETID_Address  <br/> |
+|Lange ID (LID):  <br/> |0x00008007  <br/> |
 |Datentyp:  <br/> |PT_MV_LONG  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Sofern vorhanden, muss die Eigenschaft sechs Einträge aufweisen, die jeweils einem sichtbaren Feld auf der Benutzeroberfläche der Anwendung entsprechen.
+Wenn vorhanden, muss die Eigenschaft sechs Einträge aufweisen, die jeweils einem sichtbaren Feld auf der Benutzeroberfläche der Anwendung entsprechen.
   
 |**1-basierter Index in der mehrwertigen Eigenschaft**|**Der Wert muss einer der folgenden Werte sein:**|**Beschreibung**|
 |:-----|:-----|:-----|
@@ -47,15 +47,15 @@ Sofern vorhanden, muss die Eigenschaft sechs Einträge aufweisen, die jeweils ei
 |2  <br/> |0x00008080  <br/> |Die Anwendung sollte mail1 anzeigen.  <br/> |
 |2  <br/> |0x00008090  <br/> |Die Anwendung sollte mail2 anzeigen.  <br/> |
 |2  <br/> |0x000080A0  <br/> |Die Anwendung sollte Email3 anzeigen.  <br/> |
-|3, 4, 5, 6  <br/> |Die Eigenschafts-IDs der Telefoneigenschaften oder der Faxnummern, die in [[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)angegeben sind.  <br/> |Die Anwendung sollte die entsprechende Eigenschaft anzeigen.  <br/> |
+|3, 4, 5, 6  <br/> |Eigenschafts-IDs einer beliebigen Telefoneigenschaft oder einer der in [[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)angegebenen Faxnummern.  <br/> |Die Anwendung sollte die entsprechende Eigenschaft anzeigen.  <br/> |
    
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Stellt Eigenschaftensatz Definitionen und Verweise auf zugehörige Exchange Server-Protokollspezifikationen bereit.
+> Stellt Eigenschaftenmengen Definitionen und Verweise auf zugehörige Exchange Server Protokollspezifikationen bereit.
     
 [[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
@@ -65,7 +65,7 @@ Sofern vorhanden, muss die Eigenschaft sechs Einträge aufweisen, die jeweils ei
 
 Mapidefs. h
   
-> Stellt Datentypdefinitionen bereit.
+> Stellt Definitionen von Datentypen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 

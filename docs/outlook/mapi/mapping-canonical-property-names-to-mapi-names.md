@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 43c7225b-8f9f-47a2-aadf-36a249b2d78e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 36d75c0a3a5f4767bfb0eeb0f9ae3d0c249b084b
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -21,9 +21,9 @@ ms.locfileid: "32316548"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-In diesem Thema wird jeder kanonische Eigenschaften Name der MAPI-Eigenschaft oder den Eigenschaften zugeordnet, die er darstellt. Das Thema enthält drei Tabellen: eine Tabelle für benannte Eigenschaften mit numerischen Bezeichnern, eine zweite Tabelle für benannte Eigenschaften mit Zeichenfolgenbezeichnern und eine dritte Tabelle für gekennzeichnete Eigenschaften.
+In diesem Thema wird jeder kanonische Eigenschaften Name der MAPI-Eigenschaft oder den Eigenschaften zugeordnet, die er darstellt. Das Thema enthält drei Tabellen: eine Tabelle für benannte Eigenschaften mit numerischen Bezeichnern, eine zweite Tabelle für benannte Eigenschaften mit Zeichenfolgenbezeichnern und eine dritte Tabelle für die markierten Eigenschaften.
   
-Weitere Informationen dazu, wie kanonische Eigenschaften mit MAPI-Eigenschaften in Beziehung stehen, finden Sie unter [kanonische MAPI-Eigenschaften](mapi-canonical-properties.md).
+Weitere Informationen darüber, wie sich kanonische Eigenschaften auf MAPI-Eigenschaften beziehen, finden Sie unter [MAPI Canonical Properties](mapi-canonical-properties.md).
   
 ## <a name="named-properties-with-numerical-identifiers"></a>Benannte Eigenschaften mit numerischen Bezeichnern
 
@@ -94,7 +94,7 @@ Weitere Informationen dazu, wie kanonische Eigenschaften mit MAPI-Eigenschaften 
 |[Pidlidcontactuserfield3 (](pidlidcontactuserfield3-canonical-property.md) <br/> |dispidContactUserField3  <br/> |
 |[Pidlidcontactuserfield4 (](pidlidcontactuserfield4-canonical-property.md) <br/> |dispidContactUserField4  <br/> |
 |[Pidlidcurrentversion (](pidlidcurrentversion-canonical-property.md) <br/> |dispidCurrentVersion  <br/> |
-|[Pidlidcurrentversionname (](pidlidcurrentversionname-canonical-property.md) <br/> |dispidCurrentVersionName  <br/> |
+|[PidLidCurrentVersionName](pidlidcurrentversionname-canonical-property.md) <br/> |dispidCurrentVersionName  <br/> |
 |[Pidlidcustomflag (](pidlidcustomflag-canonical-property.md) <br/> |dispidCustomFlag  <br/> |
 |[Pidliddistributionlistchecksum (](pidliddistributionlistchecksum-canonical-property.md) <br/> |dispidDLChecksum  <br/> |
 |[Pidliddistributionlistmembers (](pidliddistributionlistmembers-canonical-property.md) <br/> |dispidDLMembers  <br/> |
@@ -251,7 +251,7 @@ Weitere Informationen dazu, wie kanonische Eigenschaften mit MAPI-Eigenschaften 
 |[Pidlidtaskacceptancestate (](pidlidtaskacceptancestate-canonical-property.md) <br/> |dispidTaskDelegValue  <br/> |
 |[Pidlidtaskaccepted (](pidlidtaskaccepted-canonical-property.md) <br/> |dispidTaskAccepted  <br/> |
 |[Pidlidtaskactualeffort (](pidlidtaskactualeffort-canonical-property.md) <br/> |dispidTaskActualEffort  <br/> |
-|[Pidlidtaskassigner (](pidlidtaskassigner-canonical-property.md) <br/> |dispidTaskDelegator  <br/> |
+|[PidLidTaskAssigner](pidlidtaskassigner-canonical-property.md) <br/> |dispidTaskDelegator  <br/> |
 |[Pidlidtaskassigners (](pidlidtaskassigners-canonical-property.md) <br/> |dispidTaskMyDelegators  <br/> |
 |[Pidlidtaskcomplete (](pidlidtaskcomplete-canonical-property.md) <br/> |dispidTaskComplete  <br/> |
 |[Pidlidtaskdatecompleted (](pidlidtaskdatecompleted-canonical-property.md) <br/> |dispidTaskDateCompleted  <br/> |
@@ -317,10 +317,10 @@ Weitere Informationen dazu, wie kanonische Eigenschaften mit MAPI-Eigenschaften 
 |[Pidnamebytecount (](pidnamebytecount-canonical-property.md) <br/> |ByteCount  <br/> |
 |[Pidnamecategory (](pidnamecategory-canonical-property.md) <br/> |Kategorie  <br/> |
 |[Pidnamecharactercount (](pidnamecharactercount-canonical-property.md) <br/> |CharCount  <br/> |
-|[Pidnamecomments (](pidnamecomments-canonical-property.md) <br/> |Comments  <br/> |
-|[Pidnamecompany (](pidnamecompany-canonical-property.md) <br/> |Unternehmen  <br/> |
-|[Pidnamecontentbase (](pidnamecontentbase-canonical-property.md) <br/> |Inhalts Basis  <br/> |
-|[Pidnamecontentclass (](pidnamecontentclass-canonical-property.md) <br/> |Inhaltsklasse  <br/> |
+|[Pidnamecomments (](pidnamecomments-canonical-property.md) <br/> |Kommentare  <br/> |
+|[Pidnamecompany (](pidnamecompany-canonical-property.md) <br/> |Company  <br/> |
+|[Pidnamecontentbase (](pidnamecontentbase-canonical-property.md) <br/> |Content-Base  <br/> |
+|[Pidnamecontentclass (](pidnamecontentclass-canonical-property.md) <br/> |Content-Klasse  <br/> |
 |[Pidnamecontenttransferencoding (](pidnamecontenttransferencoding-canonical-property.md) <br/> |Content-Transfer-Encoding  <br/> |
 |[Pidnamecontenttype (](pidnamecontenttype-canonical-property.md) <br/> |Content-Type  <br/> |
 |[Pidnamecreatedatetimereadonly (](pidnamecreatedatetimereadonly-canonical-property.md) <br/> |CreateDtmRo  <br/> |
@@ -330,7 +330,7 @@ Weitere Informationen dazu, wie kanonische Eigenschaften mit MAPI-Eigenschaften 
 |[Pidnamehiddencount (](pidnamehiddencount-canonical-property.md) <br/> |HiddenCount  <br/> |
 |[Pidnamekeywords (](pidnamekeywords-canonical-property.md) <br/> |Schlüsselwörter  <br/> |
 |[Pidnamelastauthor (](pidnamelastauthor-canonical-property.md) <br/> |LastAuthor  <br/> |
-|[Pidnamelastprinted (](pidnamelastprinted-canonical-property.md) <br/> |LastPrinted  <br/> |
+|[PidNameLastPrinted](pidnamelastprinted-canonical-property.md) <br/> |LastPrinted  <br/> |
 |[Pidnamelastsavedatetime (](pidnamelastsavedatetime-canonical-property.md) <br/> |LastSaveDtm  <br/> |
 |[Pidnamelinecount (](pidnamelinecount-canonical-property.md) <br/> |LineCount  <br/> |
 |[Pidnamemanager (](pidnamemanager-canonical-property.md) <br/> |Manager  <br/> |
@@ -345,8 +345,8 @@ Weitere Informationen dazu, wie kanonische Eigenschaften mit MAPI-Eigenschaften 
 |[Pidnamesecurity (](pidnamesecurity-canonical-property.md) <br/> |Sicherheit  <br/> |
 |[Pidnameslidecount (](pidnameslidecount-canonical-property.md) <br/> |SlideCount  <br/> |
 |[Pidnamesubject (](pidnamesubject-canonical-property.md) <br/> |Betreff  <br/> |
-|[PidNameTemplate](pidnametemplate-canonical-property.md) <br/> |Vorlage  <br/> |
-|[Pidnametitle (](pidnametitle-canonical-property.md) <br/> |Position  <br/> |
+|[Pidnametemplate (](pidnametemplate-canonical-property.md) <br/> |Vorlage  <br/> |
+|[Pidnametitle (](pidnametitle-canonical-property.md) <br/> |Titel  <br/> |
 |[Pidnamewordcount (](pidnamewordcount-canonical-property.md) <br/> |WordCount  <br/> |
 |[Pidnamexsharingcapabilities (](pidnamexsharingcapabilities-canonical-property.md) <br/> |X-Sharing-Funktionen  <br/> |
 |[Pidnamexsharingconfigurl (](pidnamexsharingconfigurl-canonical-property.md) <br/> |X-Sharing-config-URL  <br/> |
@@ -362,7 +362,7 @@ Weitere Informationen dazu, wie kanonische Eigenschaften mit MAPI-Eigenschaften 
    
 ## <a name="tagged-properties"></a>Getaggte Eigenschaften
 
-|**Name der kanonischen Eigenschaft**|**Aktuelle getaggte Eigenschaften**|
+|**Name der kanonischen Eigenschaft**|**Tatsächlich gekennzeichnete Eigenschaften**|
 |:-----|:-----|
 |[Pidtag7bitdisplayname (](pidtag7bitdisplayname-canonical-property.md) <br/> |PR_7BIT_DISPLAY_NAME, PR_7BIT_DISPLAY_NAME_A, PR_7BIT_DISPLAY_NAME_W  <br/> |
 |[Pidtagabdefaultdir (](pidtagabdefaultdir-canonical-property.md) <br/> |PR_AB_DEFAULT_DIR  <br/> |
@@ -490,7 +490,7 @@ Weitere Informationen dazu, wie kanonische Eigenschaften mit MAPI-Eigenschaften 
 |[Pidtagdefaultstore (](pidtagdefaultstore-canonical-property.md) <br/> |PR_DEFAULT_STORE  <br/> |
 |[Pidtagdefaultviewentryid (](pidtagdefaultviewentryid-canonical-property.md) <br/> |PR_DEFAULT_VIEW_ENTRYID  <br/> |
 |[Pidtagdefcreatedl (](pidtagdefcreatedl-canonical-property.md) <br/> |PR_DEF_CREATE_DL  <br/> |
-|[Pidtagdefcreatemailuser (](pidtagdefcreatemailuser-canonical-property.md) <br/> |PR_DEF_CREATE_MAILUSER  <br/> |
+|[PidTagDefCreateMailuser](pidtagdefcreatemailuser-canonical-property.md) <br/> |PR_DEF_CREATE_MAILUSER  <br/> |
 |[PidTagDeferredDeliveryTime](pidtagdeferreddeliverytime-canonical-property.md) <br/> |PR_DEFERRED_DELIVERY_TIME  <br/> |
 |[Pidtagdeferredsendnumber (](pidtagdeferredsendnumber-canonical-property.md) <br/> |PR_DEFERRED_SEND_NUMBER  <br/> |
 |[Pidtagdeferredsendtime (](pidtagdeferredsendtime-canonical-property.md) <br/> |PR_DEFERRED_SEND_TIME  <br/> |
@@ -533,7 +533,7 @@ Weitere Informationen dazu, wie kanonische Eigenschaften mit MAPI-Eigenschaften 
 |[Pidtagextendedrulemessagecondition (](pidtagextendedrulemessagecondition-canonical-property.md) <br/> |PR_EXTENDED_RULE_MSG_CONDITION  <br/> |
 |[Pidtagextendedrulesizelimit (](pidtagextendedrulesizelimit-canonical-property.md) <br/> |PR_EXTENDED_RULE_SIZE_LIMIT  <br/> |
 |[Pidtagfinderentryid (](pidtagfinderentryid-canonical-property.md) <br/> |PR_FINDER_ENTRYID  <br/> |
-|[PidTagFlagCompleteTime](pidtagflagcompletetime-canonical-property.md) <br/> |PR_FLAG_COMPLETE_TIME  <br/> |
+|[Pidtagflagcompletetime (](pidtagflagcompletetime-canonical-property.md) <br/> |PR_FLAG_COMPLETE_TIME  <br/> |
 |[Pidtagflagstatus (](pidtagflagstatus-canonical-property.md) <br/> |PR_FLAG_STATUS  <br/> |
 |[Pidtagfolderassociatedcontents (](pidtagfolderassociatedcontents-canonical-property.md) <br/> |PR_FOLDER_ASSOCIATED_CONTENTS  <br/> |
 |[Pidtagfoldertype (](pidtagfoldertype-canonical-property.md) <br/> |PR_FOLDER_TYPE  <br/> |
@@ -629,7 +629,7 @@ Weitere Informationen dazu, wie kanonische Eigenschaften mit MAPI-Eigenschaften 
 |[Pidtaglistsubscribe (](pidtaglistsubscribe-canonical-property.md) <br/> |PR_LIST_SUBSCRIBE, PR_LIST_SUBSCRIBE_A, PR_LIST_SUBSCRIBE_W  <br/> |
 |[Pidtaglistunsubscribe (](pidtaglistunsubscribe-canonical-property.md) <br/> |PR_LIST_UNSUBSCRIBE, PR_LIST_UNSUBSCRIBE_A, PR_LIST_UNSUBSCRIBE_W  <br/> |
 |[Pidtaglocaleid (](pidtaglocaleid-canonical-property.md) <br/> |PR_LOCALE_ID  <br/> |
-|[Pidtaglocality (](pidtaglocality-canonical-property.md) <br/> |PR_LOCALITY, PR_LOCALITY_A, PR_LOCALITY_W, PR_BUSINESS_ADDRESS_LOCALITY, PR_BUSINESS_ADDRESS_LOCALITY_A, PR_BUSINESS_ADDRESS_LOCALITY_W  <br/> |
+|[PidTagLocality](pidtaglocality-canonical-property.md) <br/> |PR_LOCALITY, PR_LOCALITY_A, PR_LOCALITY_W, PR_BUSINESS_ADDRESS_LOCALITY, PR_BUSINESS_ADDRESS_LOCALITY_A, PR_BUSINESS_ADDRESS_LOCALITY_W  <br/> |
 |[Pidtaglocation (](pidtaglocation-canonical-property.md) <br/> |PR_LOCATION, PR_LOCATION_A, PR_LOCATION_W  <br/> |
 |[Pidtagmailpermission (](pidtagmailpermission-canonical-property.md) <br/> |PR_MAIL_PERMISSION  <br/> |
 |[Pidtagmanagername (](pidtagmanagername-canonical-property.md) <br/> |PR_MANAGER_NAME, PR_MANAGER_NAME_A, PR_MANAGER_NAME_W  <br/> |
@@ -639,7 +639,7 @@ Weitere Informationen dazu, wie kanonische Eigenschaften mit MAPI-Eigenschaften 
 |[Pidtagmembername (](pidtagmembername-canonical-property.md) <br/> |PR_MEMBER_NAME  <br/> |
 |[Pidtagmemberrights (](pidtagmemberrights-canonical-property.md) <br/> |PR_MEMBER_RIGHTS  <br/> |
 |[Pidtagmessageattachments (](pidtagmessageattachments-canonical-property.md) <br/> |PR_MESSAGE_ATTACHMENTS  <br/> |
-|[PidTagMessageCcMe](pidtagmessageccme-canonical-property.md) <br/> |PR_MESSAGE_CC_ME  <br/> |
+|[Pidtagmessageccme (](pidtagmessageccme-canonical-property.md) <br/> |PR_MESSAGE_CC_ME  <br/> |
 |[PidTagMessageClass](pidtagmessageclass-canonical-property.md) <br/> |PR_MESSAGE_CLASS, PR_MESSAGE_CLASS_A, PR_MESSAGE_CLASS_W  <br/> |
 |[Pidtagmessagecodepage (](pidtagmessagecodepage-canonical-property.md) <br/> |PR_MESSAGE_CODEPAGE  <br/> |
 |[Pidtagmessagedeliveryid (](pidtagmessagedeliveryid-canonical-property.md) <br/> |PR_MESSAGE_DELIVERY_ID  <br/> |
@@ -731,7 +731,7 @@ Weitere Informationen dazu, wie kanonische Eigenschaften mit MAPI-Eigenschaften 
 |[Pidtagpersonalhomepage (](pidtagpersonalhomepage-canonical-property.md) <br/> |PR_PERSONAL_HOME_PAGE, PR_PERSONAL_HOME_PAGE_A, PR_PERSONAL_HOME_PAGE_W  <br/> |
 |[Pidtagphysicaldeliverybureaufaxdelivery (](pidtagphysicaldeliverybureaufaxdelivery-canonical-property.md) <br/> |PR_PHYSICAL_DELIVERY_BUREAU_FAX_DELIVERY  <br/> |
 |[Pidtagphysicaldeliverymode (](pidtagphysicaldeliverymode-canonical-property.md) <br/> |PR_PHYSICAL_DELIVERY_MODE  <br/> |
-|[Pidtagphysicaldeliveryreportrequest (](pidtagphysicaldeliveryreportrequest-canonical-property.md) <br/> |PR_PHYSICAL_DELIVERY_REPORT_REQUEST  <br/> |
+|[PidTagPhysicalDeliveryReportRequest](pidtagphysicaldeliveryreportrequest-canonical-property.md) <br/> |PR_PHYSICAL_DELIVERY_REPORT_REQUEST  <br/> |
 |[Pidtagphysicalforwardingaddress (](pidtagphysicalforwardingaddress-canonical-property.md) <br/> |PR_PHYSICAL_FORWARDING_ADDRESS  <br/> |
 |[Pidtagphysicalforwardingaddressrequested (](pidtagphysicalforwardingaddressrequested-canonical-property.md) <br/> |PR_PHYSICAL_FORWARDING_ADDRESS_REQUESTED  <br/> |
 |[Pidtagphysicalforwardingprohibited (](pidtagphysicalforwardingprohibited-canonical-property.md) <br/> |PR_PHYSICAL_FORWARDING_PROHIBITED  <br/> |
@@ -826,7 +826,7 @@ Weitere Informationen dazu, wie kanonische Eigenschaften mit MAPI-Eigenschaften 
 |[Pidtagreportentryid (](pidtagreportentryid-canonical-property.md) <br/> |PR_REPORT_ENTRYID  <br/> |
 |[Pidtagreportingdistributionlistname (](pidtagreportingdistributionlistname-canonical-property.md) <br/> |PR_REPORTING_DL_NAME  <br/> |
 |[Pidtagreportingmessagetransferagentcertificate (](pidtagreportingmessagetransferagentcertificate-canonical-property.md) <br/> |PR_REPORTING_MTA_CERTIFICATE  <br/> |
-|[Pidtagreportname (](pidtagreportname-canonical-property.md) <br/> |PR_REPORT_NAME, PR_REPORT_NAME_A, PR_REPORT_NAME_W  <br/> |
+|[PidTagReportName](pidtagreportname-canonical-property.md) <br/> |PR_REPORT_NAME, PR_REPORT_NAME_A, PR_REPORT_NAME_W  <br/> |
 |[Pidtagreportsearchkey (](pidtagreportsearchkey-canonical-property.md) <br/> |PR_REPORT_SEARCH_KEY  <br/> |
 |[Pidtagreporttag (](pidtagreporttag-canonical-property.md) <br/> |PR_REPORT_TAG  <br/> |
 |[Pidtagreporttext (](pidtagreporttext-canonical-property.md) <br/> |PR_REPORT_TEXT, PR_REPORT_TEXT_A, PR_REPORT_TEXT_W  <br/> |
@@ -850,7 +850,7 @@ Weitere Informationen dazu, wie kanonische Eigenschaften mit MAPI-Eigenschaften 
 |[Pidtagrpcoverhttpflags (](pidtagrpcoverhttpflags-canonical-property.md) <br/> |PR_ROH_FLAGS  <br/> |
 |[Pidtagrpcoverhttpproxyauthscheme (](pidtagrpcoverhttpproxyauthscheme-canonical-property.md) <br/> |PR_ROH_PROXY_AUTH_SCHEME  <br/> |
 |[Pidtagrpcoverhttpproxyprincipalname (](pidtagrpcoverhttpproxyprincipalname-canonical-property.md) <br/> |PR_ROH_PROXY_PRINCIPAL_NAME  <br/> |
-|[PidTagRpcOverHttpProxyServer](pidtagrpcoverhttpproxyserver-canonical-property.md) <br/> |PR_ROH_PROXY_SERVER  <br/> |
+|[Pidtagrpcoverhttpproxyserver (](pidtagrpcoverhttpproxyserver-canonical-property.md) <br/> |PR_ROH_PROXY_SERVER  <br/> |
 |[PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md) <br/> |PR_RTF_COMPRESSED  <br/> |
 |[Pidtagrtfinsync (](pidtagrtfinsync-canonical-property.md) <br/> |PR_RTF_IN_SYNC  <br/> |
 |[Pidtagrtfsyncbodycount (](pidtagrtfsyncbodycount-canonical-property.md) <br/> |PR_RTF_SYNC_BODY_COUNT  <br/> |
@@ -858,7 +858,7 @@ Weitere Informationen dazu, wie kanonische Eigenschaften mit MAPI-Eigenschaften 
 |[Pidtagrtfsyncbodytag (](pidtagrtfsyncbodytag-canonical-property.md) <br/> |PR_RTF_SYNC_BODY_TAG, PR_RTF_SYNC_BODY_TAG_A, PR_RTF_SYNC_BODY_TAG_W  <br/> |
 |[Pidtagrtfsyncprefixcount (](pidtagrtfsyncprefixcount-canonical-property.md) <br/> |PR_RTF_SYNC_PREFIX_COUNT  <br/> |
 |[Pidtagrtfsynctrailingcount (](pidtagrtfsynctrailingcount-canonical-property.md) <br/> |PR_RTF_SYNC_TRAILING_COUNT  <br/> |
-|[PidTagRuleActions](pidtagruleactions-canonical-property.md) <br/> |PR_RULE_ACTIONS  <br/> |
+|[Pidtagruleactions (](pidtagruleactions-canonical-property.md) <br/> |PR_RULE_ACTIONS  <br/> |
 |[Pidtagrulecondition (](pidtagrulecondition-canonical-property.md) <br/> |PR_RULE_CONDITION  <br/> |
 |[Pidtagruleid (](pidtagruleid-canonical-property.md) <br/> |PR_RULE_ID  <br/> |
 |[Pidtagrulelevel (](pidtagrulelevel-canonical-property.md) <br/> |PR_RULE_LEVEL  <br/> |
@@ -939,7 +939,7 @@ Weitere Informationen dazu, wie kanonische Eigenschaften mit MAPI-Eigenschaften 
 |[Pidtagstatuscode (](pidtagstatuscode-canonical-property.md) <br/> |PR_STATUS_CODE  <br/> |
 |[Pidtagstatusstring (](pidtagstatusstring-canonical-property.md) <br/> |PR_STATUS_STRING, PR_STATUS_STRING_A, PR_STATUS_STRING_W  <br/> |
 |[Pidtagstoreentryid (](pidtagstoreentryid-canonical-property.md) <br/> |PR_STORE_ENTRYID  <br/> |
-|[Kanonische Pidtagstoreentryidemsmdbv1 (-Eigenschaft](pidtagstoreentryidemsmdbv1-canonical-property.md) <br/> |PR_STORE_ENTRYID_EMSMDB_V1  <br/> |
+|[Kanonische PidTagStoreEntryIdEmsmdbV1-Eigenschaft](pidtagstoreentryidemsmdbv1-canonical-property.md) <br/> |PR_STORE_ENTRYID_EMSMDB_V1  <br/> |
 |[Pidtagstoreprovider (](pidtagstoreprovider-canonical-property.md) <br/> |PR_MDB_PROVIDER  <br/> |
 |[Pidtagstoreproviders (](pidtagstoreproviders-canonical-property.md) <br/> |PR_STORE_PROVIDERS  <br/> |
 |[Pidtagstorerecordkey (](pidtagstorerecordkey-canonical-property.md) <br/> |PR_STORE_RECORD_KEY  <br/> |

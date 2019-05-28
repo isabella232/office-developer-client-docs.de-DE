@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 25af3683-3a65-2d39-6f6e-76c8d36f866d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 14b2904e57852c564395f4b27c9d5270afd1454a
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,7 +25,7 @@ ms.locfileid: "32336659"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt einen optionalen Zeichensatz an, den der MAPI-in-MIME-Konverter beim Konvertieren einer MAPI-Nachricht in einen MIME-Stream verwendet.
+Gibt einen optionalen Zeichensatz an, der vom MAPI-zu-MIME-Konverter beim Konvertieren einer MAPI-Nachricht in einen MIME-Stream verwendet wird.
   
 ```cpp
 HRESULT SetCharset( 
@@ -38,15 +38,15 @@ HRESULT SetCharset(
 
  _fApply_
   
-> in Gibt an, ob ein bestimmter Zeichensatz für die Konvertierung verwendet werden soll. Legen Sie diesen Parameter auf **true** fest, um den Zeichensatz in nachfolgenden Konvertierungen anzuwenden. Legen Sie diesen Parameter auf **false** fest, wenn Sie keinen bestimmten Zeichensatz mehr anwenden und zu den Standardwerten für nachfolgende Nachrichten zurückkehren möchten. 
+> in Gibt an, ob ein bestimmter Zeichensatz für die Konvertierung verwendet werden soll. Legen Sie diesen Parameter auf **true** fest, um den Zeichensatz in nachfolgenden Konvertierungen anzuwenden. Legen Sie diesen Parameter auf **false** fest, wenn Sie keinen bestimmten Zeichensatz mehr anwenden und zu den Standardeinstellungen für nachfolgende Nachrichten zurückkehren möchten. 
     
  _hcharset_
   
-> in Ein Handle für einen Zeichensatz gemäß der Definition in MimeOLE. h von Windows Mail. Geben Sie **null** an, um anzugeben, dass Sie keinen bestimmten Zeichensatz anwenden möchten. Verwenden Sie für nicht- **null** -Werte eine Funktion wie [MimeOleGetCodePageCharset](https://msdn.microsoft.com/library/ms714746%28VS.85%29.aspx) , um ein Handle für den Zeichensatz abzurufen. 
+> in Ein Handle für einen Zeichensatz gemäß der Definition in MimeOLE. h von Windows Mail. Geben Sie **null** an, um anzugeben, dass kein bestimmter Zeichensatz angewendet werden soll. Verwenden Sie für Werte ungleich **null** eine Funktion wie [MimeOleGetCodePageCharset](https://msdn.microsoft.com/library/ms714746%28VS.85%29.aspx) , um ein Handle für den Zeichensatz zu erhalten. 
     
  _csetapplytype_
   
-> in Gibt an, wie ein Zeichensatz zum Konvertieren einer Nachricht angewendet wird, wie in MimeOLE. h von Windows Mail definiert.
+> in Gibt an, wie ein Zeichensatz zum Konvertieren einer Nachricht gemäß der Definition in MimeOLE. h von Windows Mail angewendet wird.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -60,8 +60,8 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MapiMime. cpp  <br/> |ImportEMLToIMessage  <br/> |MFCMAPI verwendet MimeToMAPI, um eine EML-Datei in eine MAPI-Nachricht umzuwandeln.  <br/> |
-|MapiMime. cpp  <br/> |ExportIMessageToEML  <br/> |MFCMAPI verwendet MAPIToMIMEStm, um eine MAPI-Nachricht in eine EML-Datei umzuwandeln.  <br/> |
+|MapiMime. cpp  <br/> |ImportEMLToIMessage  <br/> |MfcMapi verwendet MimeToMAPI, um eine EML-Datei in eine MAPI-Nachricht zu konvertieren.  <br/> |
+|MapiMime. cpp  <br/> |ExportIMessageToEML  <br/> |MfcMapi verwendet MAPIToMIMEStm, um eine MAPI-Nachricht in eine EML-Datei zu konvertieren.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
