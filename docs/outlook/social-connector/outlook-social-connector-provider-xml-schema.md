@@ -1,5 +1,5 @@
 ---
-title: XML-Schema des Anbieters für soziale Netzwerke in Outlook
+title: Connector für soziale Netzwerke Anbieter-XML-Schema
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,17 +7,17 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5a88adf0-9265-4d49-976d-de0d93269aa9
-description: Der gesamte XML-Code, der von OSC-Anbietern in OSC-Anbieter Erweiterungsmethoden zurückgegeben wird, muss dem folgenden OSC-Anbieter-XML-Schema entsprechen. Das OSC-Schema wird hier vollständig reproduziert.
-ms.openlocfilehash: 578f0ea0c8df4f81c51ce71b50aa2768fe930d5c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: Alle XML-Code, der von OSC-Anbietern in osc-Anbieter Erweiterungsmethoden zurückgegeben wird, müssen mit dem folgenden osc-Anbieter-XML-Schema übereinstimmen. Das osc-Schema wird hier in seiner Gesamtheit reproduziert.
+ms.openlocfilehash: ad9b2833991997556f50a927d4552b68d2bfdb50
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329194"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34541344"
 ---
-# <a name="outlook-social-connector-provider-xml-schema"></a>XML-Schema des Anbieters für soziale Netzwerke in Outlook
+# <a name="outlook-social-connector-provider-xml-schema"></a>Connector für soziale Netzwerke Anbieter-XML-Schema
 
-Der gesamte XML-Code, der von OSC-Anbietern in OSC-Anbieter Erweiterungsmethoden zurückgegeben wird, muss dem folgenden OSC-Anbieter-XML-Schema entsprechen. Das OSC-Schema wird hier vollständig reproduziert. Die aktuelle Schemadefinitionsdatei OutlookSocialProvider1_1. xsd wird auch im Download für die Anbietervorlagen bereitgestellt, die diesen Artikel begleiten. Weitere Informationen finden Sie unter [Outlook Social Connector 2013: Provider Templates](https://code.msdn.microsoft.com/Outlook-Social-Connector-73fd8d2c). 
+Alle XML-Code, der von OSC-Anbietern in osc-Anbieter Erweiterungsmethoden zurückgegeben wird, müssen mit dem folgenden osc-Anbieter-XML-Schema übereinstimmen. Das osc-Schema wird hier in seiner Gesamtheit reproduziert. Die aktuelle Schemadefinitionsdatei OutlookSocialProvider1_1. xsd wird auch im Download für die Anbietervorlagen bereitgestellt, die diesen Artikel begleiten. Weitere Informationen finden Sie unter [Outlook Connector für soziale Netzwerke 2013: Anbietervorlagen](https://code.msdn.microsoft.com/Outlook-Social-Connector-73fd8d2c). 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -28,8 +28,8 @@ Der gesamte XML-Code, der von OSC-Anbietern in OSC-Anbieter Erweiterungsmethoden
 -->
 <xs:schema
     xmlns:xs="https://www.w3.org/2001/XMLSchema"
-    targetNamespace="https://schemas.microsoft.com/office/outlook/2010/06/socialprovider.xsd"
-    xmlns="https://schemas.microsoft.com/office/outlook/2010/06/socialprovider.xsd"
+    targetNamespace="http://schemas.microsoft.com/office/outlook/2010/06/socialprovider.xsd"
+    xmlns="http://schemas.microsoft.com/office/outlook/2010/06/socialprovider.xsd"
     elementFormDefault="qualified">
   <!-- Root element for the activity feed -->
   <xs:element name="activityFeed" type="activityFeedType" />
@@ -466,5 +466,5 @@ Der gesamte XML-Code, der von OSC-Anbietern in OSC-Anbieter Erweiterungsmethoden
 - [XML für Funktionen](xml-for-capabilities.md)  
 - [XML für Freunde](xml-for-friends.md)  
 - [XML für Aktivitäten](xml-for-activities.md)  
-- [Outlook Social Connector-Anbieterschnittstellen](outlook-social-connector-provider-interfaces.md)
+- [Connector für soziale Netzwerke Anbieterschnittstellen](outlook-social-connector-provider-interfaces.md)
 

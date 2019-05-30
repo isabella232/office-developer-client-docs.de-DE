@@ -1,5 +1,5 @@
 ---
-title: PageSheet-Element (Master_Type complexType) (' Visio XML ')
+title: PageSheet-Element (Master_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 824fbeb0-1a2f-35a0-50e3-c57143dc21ab
 description: Gibt die Eigenschaften des Zeichenblatts an, das dem Master zugeordnet ist.
-ms.openlocfilehash: 579b2b4f02c79a38842a150b8757329e19e7bb3a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 94fde64b130c2a05c4bd70c97552fe4218171ce7
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32361124"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34540616"
 ---
-# <a name="pagesheet-element-mastertype-complextype-visio-xml"></a>PageSheet-Element (Master_Type complexType) (' Visio XML ')
+# <a name="pagesheet-element-mastertype-complextype-visio-xml"></a>PageSheet-Element (Master_Type complexType) (Visio XML)
 
 Gibt die Eigenschaften des Zeichenblatts an, das dem Master zugeordnet ist.
   
@@ -23,7 +23,7 @@ Gibt die Eigenschaften des Zeichenblatts an, das dem Master zugeordnet ist.
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[PageSheet_Type](pagesheet_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
 |**Dokumentteile** <br/> |Masters. XML  <br/> |
    
@@ -52,9 +52,9 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|FillStyle  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> |Gibt die ID des Stylesheets an, von dem die Füllformatierung geerbt werden soll. Es muss der Wert des **ID-** Attributs sein, das einem **StyleSheet_Type** in der Zeichnung zugeordnet ist.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
-|LineStyle  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> |Gibt die ID des Stylesheets an, von dem die Linienformatierung geerbt werden soll. Es muss der Wert des **ID-** Attributs sein, das einem **StyleSheet_Type** in der Zeichnung zugeordnet ist.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
-|TextStyle  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> |Gibt die ID des Stylesheets an, von dem die Textformatierung geerbt werden soll. Es muss der Wert des **ID-** Attributs sein, das einem **StyleSheet_Type** in der Zeichnung zugeordnet ist.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
-|UniqueID  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Die eindeutige ID des Elements innerhalb des übergeordneten Elements.  <br/> |Werte des XSD: String-Typs.  <br/> |
+|FillStyle  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> |Gibt die ID des Stylesheets an, von dem die Füllungsformatierung geerbt werden soll. Dabei muss es sich um den Wert des **ID-** Attributs handeln, das einem **StyleSheet_Type** in der Zeichnung zugeordnet ist.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
+|LineStyle  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> |Gibt die ID des Stylesheets an, aus dem die Linienformatierung geerbt werden soll. Dabei muss es sich um den Wert des **ID-** Attributs handeln, das einem **StyleSheet_Type** in der Zeichnung zugeordnet ist.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
+|TextStyle  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> |Gibt die ID des Stylesheets an, aus dem die Textformatierung geerbt werden soll. Dabei muss es sich um den Wert des **ID-** Attributs handeln, das einem **StyleSheet_Type** in der Zeichnung zugeordnet ist.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
+|UniqueID  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Die eindeutige ID des Elements innerhalb des übergeordneten Elements.  <br/> |Werte des Typs XSD: String.  <br/> |
    
 

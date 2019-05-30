@@ -1,29 +1,29 @@
 ---
-title: Protectbkgnd-Element (DocumentSettings_Type complexType) (' Visio XML ')
+title: Protectbkgnd-Element (DocumentSettings_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 99b7d89e-b482-ef19-1683-667095f8114a
-description: Gibt an, ob der Benutzer das Löschen oder Bearbeiten von Hintergrundseiten verhindert wird.
-ms.openlocfilehash: 0a6dae9e84b717146c28bd3466169092254d3341
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: Gibt an, ob verhindert werden soll, dass der Benutzer Hintergrundseiten löscht oder bearbeitet.
+ms.openlocfilehash: b053eca7b669b60bedd34bc4a6798f9b9182b529
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315176"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34540749"
 ---
-# <a name="protectbkgnds-element-documentsettingstype-complextype-visio-xml"></a>Protectbkgnd-Element (DocumentSettings_Type complexType) (' Visio XML ')
+# <a name="protectbkgnds-element-documentsettingstype-complextype-visio-xml"></a>Protectbkgnd-Element (DocumentSettings_Type complexType) (Visio XML)
 
-Gibt an, ob der Benutzer das Löschen oder Bearbeiten von Hintergrundseiten verhindert wird.
+Gibt an, ob verhindert werden soll, dass der Benutzer Hintergrundseiten löscht oder bearbeitet.
   
 ## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[ProtectBkgnds_Type](protectbkgnds_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
 |**Dokumentteile** <br/> |Document. XML  <br/> |
    

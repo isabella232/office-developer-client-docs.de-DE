@@ -1,29 +1,29 @@
 ---
-title: RuleSetFlags-Element (RuleSet_Type complexType) (' Visio XML ')
+title: RuleSetFlags-Element (RuleSet_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: c18d3a84-2088-13f7-7b14-1f4c129537b4
-description: Gibt Regel Satz Eigenschaften an.
-ms.openlocfilehash: 4a8ba44e2c77281f3d68fb3f5a7a2c58884ce66b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: Gibt Regel festgelegte Eigenschaften an.
+ms.openlocfilehash: 03b94abb2d9bbe1f611671a4ac37053747a486fb
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32319915"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34541596"
 ---
-# <a name="rulesetflags-element-rulesettype-complextype-visio-xml"></a>RuleSetFlags-Element (RuleSet_Type complexType) (' Visio XML ')
+# <a name="rulesetflags-element-rulesettype-complextype-visio-xml"></a>RuleSetFlags-Element (RuleSet_Type complexType) (Visio XML)
 
-Gibt Regel Satz Eigenschaften an.
+Gibt Regel festgelegte Eigenschaften an.
   
 ## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[RuleSetFlags_Type](rulesetflags_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
 |**Dokumentteile** <br/> |Validation. XML  <br/> |
    
@@ -52,6 +52,6 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|Ausgeblendet  <br/> |XSD: Boolean  <br/> |Optional  <br/> |Gibt an, ob der Regelsatz in der Liste zu überprüfende Regeln angezeigt wird.  <br/> |Werte des XSD: Boolean-Typs.  <br/> |
+|Hidden  <br/> |XSD: Boolean  <br/> |Optional  <br/> |Gibt an, ob der Regelsatz in der Liste zu überprüfende Regeln angezeigt wird.  <br/> |Werte des XSD: Boolean-Typs.  <br/> |
    
 

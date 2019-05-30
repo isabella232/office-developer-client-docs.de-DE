@@ -1,25 +1,25 @@
 ---
-title: HeaderFooterFont_Type complexType (' Visio XML ')
+title: HeaderFooterFont_Type complexType (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 1e4134be-fb18-768e-b477-f9f40f72548d
-ms.openlocfilehash: cc51924aa68e3248583be5f717b5813d4a32af2b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: dd99d87e0d80aad3bcde31e4834337ee59088da2
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32335623"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34541071"
 ---
-# <a name="headerfooterfonttype-complextype-visio-xml"></a>HeaderFooterFont_Type complexType (' Visio XML ')
+# <a name="headerfooterfonttype-complextype-visio-xml"></a>HeaderFooterFont_Type complexType (Visio XML)
 
 ## <a name="type-information"></a>Informationen zum Typ
 
 |||
 |:-----|:-----|
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
 |**Schemadatei** <br/> |VisioSchema15-2012-06 -05. xsd  <br/> |
 |**Erweiterungsbasis** <br/> |Keine  <br/> |
    
@@ -87,17 +87,17 @@ Keine.
 |:-----|:-----|:-----|:-----|:-----|
 |CharSet  <br/> |XSD: unsignedByte  <br/> |Optional  <br/> ||Werte des XSD: unsignedByte-Typs.  <br/> |
 |ClipPrecision  <br/> |XSD: unsignedByte  <br/> |Optional  <br/> ||Werte des XSD: unsignedByte-Typs.  <br/> |
-|Hemmung  <br/> |XSD: int  <br/> |Optional  <br/> ||Werte des XSD: int-Typs.  <br/> |
-|FaceName  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> ||Werte des XSD: String-Typs.  <br/> |
-|Height  <br/> |XSD: int  <br/> |Optional  <br/> ||Werte des XSD: int-Typs.  <br/> |
+|Hemmung  <br/> |XSD: int  <br/> |Optional  <br/> ||Werte des Typs XSD: int.  <br/> |
+|FaceName  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> ||Werte des Typs XSD: String.  <br/> |
+|Height  <br/> |XSD: int  <br/> |Optional  <br/> ||Werte des Typs XSD: int.  <br/> |
 |Kursiv  <br/> |XSD: unsignedByte  <br/> |Optional  <br/> ||Werte des XSD: unsignedByte-Typs.  <br/> |
-|Orientierung  <br/> |XSD: int  <br/> |Optional  <br/> ||Werte des XSD: int-Typs.  <br/> |
+|Orientierung  <br/> |XSD: int  <br/> |Optional  <br/> ||Werte des Typs XSD: int.  <br/> |
 |OutPrecision  <br/> |XSD: unsignedByte  <br/> |Optional  <br/> ||Werte des XSD: unsignedByte-Typs.  <br/> |
 |PitchAndFamily  <br/> |XSD: unsignedByte  <br/> |Optional  <br/> ||Werte des XSD: unsignedByte-Typs.  <br/> |
 |Quality  <br/> |XSD: unsignedByte  <br/> |Optional  <br/> ||Werte des XSD: unsignedByte-Typs.  <br/> |
 |Durchgestrichen  <br/> |XSD: unsignedByte  <br/> |Optional  <br/> ||Werte des XSD: unsignedByte-Typs.  <br/> |
 |Unterstrichen  <br/> |XSD: unsignedByte  <br/> |Optional  <br/> ||Werte des XSD: unsignedByte-Typs.  <br/> |
-|Schriftbreite  <br/> |XSD: int  <br/> |Optional  <br/> ||Werte des XSD: int-Typs.  <br/> |
-|Width  <br/> |XSD: int  <br/> |Optional  <br/> ||Werte des XSD: int-Typs.  <br/> |
+|Schriftbreite  <br/> |XSD: int  <br/> |Optional  <br/> ||Werte des Typs XSD: int.  <br/> |
+|Width  <br/> |XSD: int  <br/> |Optional  <br/> ||Werte des Typs XSD: int.  <br/> |
    
 

@@ -1,29 +1,29 @@
 ---
-title: GlueSettings-Element (Window_Type complexType) (' Visio XML ')
+title: GlueSettings-Element (Window_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: b5292f82-f299-ea96-6101-ebb799bbec9a
-description: Gibt die Objekte an, bei denen der Klebstoff im Dokument aktiviert ist.
-ms.openlocfilehash: 46d1ec09729cd26cfa3fc2f78a39edb6e7b7b02f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: Gibt die Objekte an, an die die Shapes kleben, wenn der Klebstoff im Dokument aktiviert ist.
+ms.openlocfilehash: c2966cfb8805120aca164fc2f6f28b0210923f6f
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32351212"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34542205"
 ---
-# <a name="gluesettings-element-windowtype-complextype-visio-xml"></a>GlueSettings-Element (Window_Type complexType) (' Visio XML ')
+# <a name="gluesettings-element-windowtype-complextype-visio-xml"></a>GlueSettings-Element (Window_Type complexType) (Visio XML)
 
-Gibt die Objekte an, bei denen der Klebstoff im Dokument aktiviert ist.
+Gibt die Objekte an, an die die Shapes kleben, wenn der Klebstoff im Dokument aktiviert ist.
   
 ## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[GlueSettings_Type](gluesettings_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
 |**Dokumentteile** <br/> |Windows. XML, Document. XML  <br/> |
    

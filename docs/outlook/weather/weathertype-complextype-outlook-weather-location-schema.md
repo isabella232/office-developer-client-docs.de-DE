@@ -1,5 +1,5 @@
 ---
-title: weathertype complexType (Outlook Weather Location-Schema)
+title: weathertype complexType (Outlook-Wetter Standort Schema)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -8,14 +8,14 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f8054fd9-85ba-fcf6-c96d-a54095d5238c
 description: Definiert die Parameter für die Wetterbedingungen eines Standorts.
-ms.openlocfilehash: c3d640789cb68891878c3dca5210ab9dea280180
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: f7d33cb018daf4ece2ba468b9ebe92b0fc7b1545
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355181"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34542919"
 ---
-# <a name="weathertype-complextype-outlook-weather-location-schema"></a>weathertype complexType (Outlook Weather Location-Schema)
+# <a name="weathertype-complextype-outlook-weather-location-schema"></a>weathertype complexType (Outlook-Wetter Standort Schema)
 
 Definiert die Parameter für die Wetterbedingungen eines Standorts.
   
@@ -23,7 +23,7 @@ Definiert die Parameter für die Wetterbedingungen eines Standorts.
 
 |||
 |:-----|:-----|
-|**Namespace** <br/> |https://schemas.microsoft.com/office/outlook/15/getweatherlocation.xsd  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/outlook/15/getweatherlocation.xsd  <br/> |
 |**Schemadatei** <br/> |getweatherlocation. xsd  <br/> |
 |**Erweiterungsbasis** <br/> |Keine  <br/> |
    
@@ -49,7 +49,7 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|weatherlocationcode  <br/> |xs: Zeichenfolge  <br/> |erforderlich  <br/> |Gibt einen Code an, der dem Speicherort zugeordnet ist, um mehrere Speicherorte mit demselben Namen zu unterscheiden.  <br/> |Ein Wert vom Typ xs: String  <br/> |
+|weatherlocationcode  <br/> |xs: Zeichenfolge  <br/> |erforderlich  <br/> |Gibt einen Code an, der dem Speicherort zugeordnet ist, um mehrere Standorte mit dem gleichen Namen zu unterscheiden.  <br/> |Ein Wert vom Typ xs: String  <br/> |
 |weatherlocationname  <br/> |xs: Zeichenfolge  <br/> |erforderlich  <br/> |Gibt den Namen des Speicherorts an.  <br/> |Ein Wert vom Typ xs: String  <br/> |
    
 

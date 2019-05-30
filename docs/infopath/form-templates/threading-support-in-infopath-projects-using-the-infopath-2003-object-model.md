@@ -4,20 +4,20 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
-- Multithreading [InfoPath 2007], InfoPath 2003-kompatible Formularvorlagen, Threading [InfoPath 2007], Unterstützung für Projekte mit InfoPath 2003-Objektmodell, InfoPath 2003-kompatible Formularvorlagen, Threading-Unterstützung
+- Multithreading [InfoPath 2007], InfoPath 2003-kompatible Formularvorlagen, Threading [InfoPath 2007], Unterstützung von Projekten mit InfoPath 2003 Objektmodell, InfoPath 2003 kompatiblen Formularvorlagen, Threadunterstützung
 localization_priority: Normal
 ms.assetid: f269d64d-4102-426d-be8e-d2742a993524
-description: Die COM-Objekte, auf die über die Microsoft. Office. Interop. InfoPath. dll, Microsoft. Office. Interop. InfoPath. SemiTrust. dll und Microsoft. Office. Interop. InfoPath. Xml. dll-Interop-Assemblys zugegriffen wird, die von Microsoft InfoPath installiert werden, unterstützen keine Anrufe wird für mehrere Threads ausgeführt. Hierzu gehören die Schnittstellen für Microsoft XML Core Services (MSXML)-Objekte, die vom Microsoft. Office. Interop. InfoPath. SemiTrust-Namespace umschlossen werden (die meisten haben Namen, die mit IXMLDOM vorangestellt werden) und alle Schnittstellen, die von der Microsoft. Office. Interop. InfoPath. XML-Namespace, von denen keiner threadsicher ist.
-ms.openlocfilehash: 1be2bd0181c47097440af54f1aa804a4f17b30bf
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: Die COM-Objekte, auf die über die Microsoft. Office. Interop. InfoPath. dll-, Microsoft. Office. Interop. InfoPath. SemiTrust. dll-und Microsoft. Office. Interop. InfoPath. Xml. dll-Interop-Assemblys zugegriffen wird, die von Microsoft InfoPath installiert werden, unterstützen keine Anrufe für mehrere Threads erstellt. Dies umfasst die Schnittstellen für Microsoft XML Core Services (MSXML)-Objekte, die vom Microsoft. Office. Interop. InfoPath. SemiTrust-Namespace umschlossen werden (von denen die meisten Namen mit Präfix IXMLDOM) und alle Schnittstellen, die von der Microsoft. Office. Interop. InfoPath. XML-Namespace, von denen keine threadsicher sind.
+ms.openlocfilehash: ca00593eebe17586c4f77b4b91adc158c4f649fd
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32299839"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34537843"
 ---
 # <a name="threading-support-in-infopath-projects-using-the-infopath-2003-object-model"></a>Threadunterstützung in InfoPath-Projekten mit dem InfoPath 2003-Objektmodell
 
-Die COM-Objekte, auf die über die Microsoft. Office. Interop. InfoPath. dll, Microsoft. Office. Interop. InfoPath. SemiTrust. dll und Microsoft. Office. Interop. InfoPath. Xml. dll-Interop-Assemblys zugegriffen wird, die von Microsoft InfoPath installiert werden, unterstützen keine Anrufe wird für mehrere Threads ausgeführt. Hierzu gehören die Schnittstellen für Microsoft XML Core Services (MSXML)-Objekte, die vom **Microsoft. Office. Interop. InfoPath. SemiTrust** -Namespace umschlossen werden (die meisten haben Namen, die mit IXMLDOM vorangestellt werden) und alle Schnittstellen, die von der [Microsoft. Office. Interop. InfoPath. XML](https://msdn.microsoft.com/library/microsoft.office.interop.infopath.xml) -Namespace, von denen keiner threadsicher ist. 
+Die COM-Objekte, auf die über die Microsoft. Office. Interop. InfoPath. dll-, Microsoft. Office. Interop. InfoPath. SemiTrust. dll-und Microsoft. Office. Interop. InfoPath. Xml. dll-Interop-Assemblys zugegriffen wird, die von Microsoft InfoPath installiert werden, unterstützen keine Anrufe für mehrere Threads erstellt. Dies umfasst die Schnittstellen für Microsoft XML Core Services (MSXML)-Objekte, die vom **Microsoft. Office. Interop. InfoPath. SemiTrust** -Namespace umschlossen werden (von denen die meisten Namen mit Präfix IXMLDOM) und alle Schnittstellen, die von der [Microsoft. Office. Interop. InfoPath. XML](https://msdn.microsoft.com/library/microsoft.office.interop.infopath.xml) -Namespace, von denen keine threadsicher sind. 
   
 Alle Aufrufe dieser COM-Objekte müssen auf einem einzigen Thread ausgegeben werden. Mit verwaltetem Code in einem InfoPath-Projekt können weitere Threads für die Ausführung von Hintergrundarbeiten erstellt werden. Code, der auf anderen Threads als dem Hauptthread ausgeführt wird, kann jedoch keine InfoPath-Objektmodelle aufrufen.
   
@@ -27,7 +27,7 @@ Wenn das InfoPath-Projekt mit verwaltetem Code mehrere Threads verwendet, müsse
 
 In Situationen, in denen ein Prozess, wie z. B. ein auf einem separaten Thread ausgeführter Zeitgeber, aufgerufen werden muss, lässt sich die Tatsache umgehen, dass das InfoPath-Objektmodell keine derartigen Aufrufe unterstützt.  
   
-Im folgenden Beispiel wird in der _Startup-Methode des Formulars eine **System. Timers. Timer** -Instanz erstellt und ein asynchroner Rückruf an den Zeitgeber angeschlossen. Darüber hinaus wird eine unsichtbare Instanz des Fenster Formulars (**System. Windows. Forms. Form**) erstellt. Wenn die Rückruffunktion Timed verstrichen einmal pro Sekunde ausgeführt wird, wird die **** Win32-postmessagefunktion aufgerufen, um eine Nachricht im unsichtbaren Fenster zu veröffentlichen. Das unsichtbare Fenster verfügt über eine **WndProc** -Funktion, die die von der Timer-Rückruffunktion empfangene Nachricht verarbeitet und das XML-DOM (Document Object Model) des Formulars aktualisiert. Dieses Formular muss als voll vertrauenswürdiges Formular zum Ausführen installiert werden. Informationen zum Debuggen einer voll vertrauenswürdigen Formularvorlage finden Sie unter [Vorschau und Debuggen von Formularvorlagen, die volle VertrauenswürdigKeit erfordern](how-to-preview-and-debug-form-templates-that-require-full-trust.md). Informationen zum Bereitstelleneiner voll vertrauenswürdigen Formularvorlage finden Sie unter [Bereitstellen von InfoPath-Formularvorlagen mit Code](how-to-deploy-infopath-form-templates-with-code.md).
+Im folgenden Beispiel wird eine **System. Timers. Timer** -Instanz in der _Startup-Methode des Formulars erstellt und ein asynchroner Rückruf mit dem Timer verknüpft. Darüber hinaus wird eine unsichtbare Instanz des Fenster Formulars (**System. Windows. Forms. Form**) erstellt. Wenn die verstrichene Callback-Funktion des Zeitgebers einmal pro Sekunde ausgeführt wird **** , wird die Win32-PostMessage-Funktion aufgerufen, um eine Nachricht im unsichtbaren Fenster zu veröffentlichen. Das unsichtbare Fenster verfügt über eine **WndProc** -Funktion, die die Nachricht verarbeitet, die Sie von der Timer-Rückruffunktion empfängt, und das XML-DOM (Document Object Model) des Formulars aktualisiert. Dieses Formular muss als voll vertrauenswürdiges Formular installiert werden, das ausgeführt werden soll. Informationen zum Debuggen einer voll vertrauenswürdigen Formularvorlage finden Sie unter [Vorschau und Debuggen von Formularvorlagen, die volle Vertrauenswürdigkeit erfordern](how-to-preview-and-debug-form-templates-that-require-full-trust.md). Informationen zum Bereitstelleneiner voll vertrauenswürdigen Formularvorlage finden Sie unter [Bereitstellen von InfoPath-Formularvorlagen mit Code](how-to-deploy-infopath-form-templates-with-code.md).
   
 ```cs
 using System;
@@ -82,7 +82,7 @@ namespace AsyncUpdate
     }
     // The namespace prefixes defined in this attribute must remain 
     // synchronized with those in the form definition file (.xsf).
-    [InfoPathNamespace("xmlns:my='https://schemas.microsoft.com/office/infopath/2003/myXSD/2004-02-11T23-29-59'")]
+    [InfoPathNamespace("xmlns:my='http://schemas.microsoft.com/office/infopath/2003/myXSD/2004-02-11T23-29-59'")]
     public class AsyncUpdate
     {
         private XDocument thisXDocument;

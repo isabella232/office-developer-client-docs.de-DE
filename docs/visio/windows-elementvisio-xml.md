@@ -1,29 +1,29 @@
 ---
-title: Windows-Element (' Visio XML ')
+title: Windows-Element (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 1880734a-f086-ce6c-5a93-47851bcdd99d
-description: Enthält die Window-Elemente für ein Dokument.
-ms.openlocfilehash: df4d4bc48db157bd05fd39177975c9dbeaa5de52
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: Enthält die Fensterelemente für ein Dokument.
+ms.openlocfilehash: fcffcd5257b14c0ae0203a41f369536e583c1798
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339823"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34538445"
 ---
-# <a name="windows-element-visio-xml"></a>Windows-Element (' Visio XML ')
+# <a name="windows-element-visio-xml"></a>Windows-Element (Visio XML)
 
-Enthält die **Window** -Elemente für ein Dokument. 
+Enthält die **Fenster** Elemente für ein Dokument. 
   
 ## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[Windows_Type](windows_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
 |**Dokumentteile** <br/> |Windows. XML  <br/> |
    
@@ -52,7 +52,7 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|ClientHeight  <br/> |XSD: unsignedShort abgeleitet  <br/> |Optional  <br/> |Stellt die Höhen Bemaßung eines Anzeigebereichs dar.  <br/> |Werte des XSD: unsignedShort abgeleitet-Typs.  <br/> |
-|ClientWidth  <br/> |XSD: unsignedShort abgeleitet  <br/> |Optional  <br/> |Stellt die Breite des Anzeigebereichs dar.  <br/> |Werte des XSD: unsignedShort abgeleitet-Typs.  <br/> |
+|ClientHeight  <br/> |XSD: unsignedShort abgeleitet  <br/> |Optional  <br/> |Stellt die Höhendimension eines Anzeigebereichs dar.  <br/> |Werte des XSD: unsignedShort abgeleitet-Typs.  <br/> |
+|ClientWidth  <br/> |XSD: unsignedShort abgeleitet  <br/> |Optional  <br/> |Stellt die Breite-Dimension eines Anzeigebereichs dar.  <br/> |Werte des XSD: unsignedShort abgeleitet-Typs.  <br/> |
    
 

@@ -1,5 +1,5 @@
 ---
-title: StyleSheet-Element (StyleSheets_Type complexType) (' Visio XML ')
+title: Stylesheet-Element (StyleSheets_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 323e1ccd-8ddd-46d3-1032-5d68d01cf4bd
 description: Repräsentiert eine in einem Dokument definierte Formatvorlage.
-ms.openlocfilehash: af1f8270be28e7edabf22d93471517531f5cc226
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 939180d24972ae68d01b2a707e7806380b706d14
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329799"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34541939"
 ---
-# <a name="stylesheet-element-stylesheetstype-complextype-visio-xml"></a>StyleSheet-Element (StyleSheets_Type complexType) (' Visio XML ')
+# <a name="stylesheet-element-stylesheetstype-complextype-visio-xml"></a>Stylesheet-Element (StyleSheets_Type complexType) (Visio XML)
 
 Repräsentiert eine in einem Dokument definierte Formatvorlage.
   
@@ -23,7 +23,7 @@ Repräsentiert eine in einem Dokument definierte Formatvorlage.
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[StyleSheet_Type](stylesheet_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
 |**Dokumentteile** <br/> |Document. XML  <br/> |
    
@@ -54,13 +54,13 @@ Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOc
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|FillStyle  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> |Die ID des StyleSheet-Elements, von dem diese Formatvorlage die Füllformatierung erbt.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
+|FillStyle  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> |Die ID des Stylesheet-Elements, von dem diese Formatvorlage die Füllungsformatierung erbt.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
 |ID  <br/> |XSD: unsignedInt  <br/> |erforderlich  <br/> |Die eindeutige ID des Elements innerhalb des übergeordneten Elements.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
-|IsCustomname  <br/> |XSD: Boolean  <br/> |Optional  <br/> |Gibt an, ob der Name vom Benutzer angepasst wurde.  <br/> |Werte des XSD: Boolean-Typs.  <br/> |
+|Iscustomname  <br/> |XSD: Boolean  <br/> |Optional  <br/> |Gibt an, ob der Name vom Benutzer angepasst wurde.  <br/> |Werte des XSD: Boolean-Typs.  <br/> |
 |IsCustomNameU  <br/> |XSD: Boolean  <br/> |Optional  <br/> |Gibt an, ob der universelle Name vom Benutzer angepasst wurde.  <br/> |Werte des XSD: Boolean-Typs.  <br/> |
-|LineStyle  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> |Die ID des StyleSheet-Elements, von dem diese Formatvorlage die Linienformatierung erbt.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
-|Name  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Der Name des Elements.  <br/> |Werte des XSD: String-Typs.  <br/> |
-|NameU  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Der universelle Name des Elements.  <br/> |Werte des XSD: String-Typs.  <br/> |
-|TextStyle  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> |Die ID des StyleSheet-Elements, von dem diese Formatvorlage die Textformatierung erbt.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
+|LineStyle  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> |Die ID des Stylesheet-Elements, von dem diese Format Linienformatierung erbt.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
+|Name  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Der Name des Elements.  <br/> |Werte des Typs XSD: String.  <br/> |
+|NameU  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Der universelle Name des-Elements.  <br/> |Werte des Typs XSD: String.  <br/> |
+|TextStyle  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> |Die ID des Stylesheet-Elements, von dem diese Formatvorlage die Textformatierung erbt.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
    
 

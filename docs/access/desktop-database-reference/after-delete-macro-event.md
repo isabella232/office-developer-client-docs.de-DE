@@ -11,12 +11,12 @@ f1_keywords:
 f1_categories:
 - Office.Version=v15
 localization_priority: Normal
-ms.openlocfilehash: f524a544736f68bcfa6bd15e3bcc720ffa2bc4d6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 5b3b2da44d817885eb6190a8cbbfc73bf99e9e0a
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32297214"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34538235"
 ---
 # <a name="after-delete-macro-event"></a>Makroereignis "Nach Löschvorgang"
 
@@ -27,13 +27,13 @@ Das Ereignis **Nach Löschvorgang** tritt auf, nachdem ein Datensatz gelöscht w
 > [!NOTE]
 > Das Ereignis **Nach Löschvorgang** ist nur in Datenmakros verfügbar.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Mit dem Ereignis **Nach Löschvorgang** führen Sie sämtliche Aktionen nach dem Löschen eines Datensatzes aus. Häufig wird **Nach Löschvorgang** verwendet, um Geschäftsregeln und Workflows zu erzwingen, einen Aggregatgesamtwert zu aktualisieren oder Benachrichtigungen zu senden.
 
-Wenn das Ereignis **Nach Löschvorgang** aufgetreten ist, bleiben die im gelöschten Datensatz enthaltenen Werte verfügbar. Möglicherweise möchten Sie einen gelöschten Wert verwenden, um eine Summe zu erhöhen oder zu dekrementieren, einen Überwachungspfad zu erstellen oder mit einem vorhandenen Wert in einem *Bedingung* -Argument zu vergleichen.
+Wenn das Ereignis **Nach Löschvorgang** aufgetreten ist, bleiben die im gelöschten Datensatz enthaltenen Werte verfügbar. Möglicherweise möchten Sie einen gelöschten Wert verwenden, um eine Summe zu erhöhen oder zu verringern, einen Überwachungspfad zu erstellen oder mit einem vorhandenen Wert in einem *WhereCondition* -Argument zu vergleichen.
 
-Sie können die **aktualisierte ("*Feldname*")-** Funktion verwenden, um zu bestimmen, ob ein Feld geändert wurde. The following code example shows how to use an If staement to determine determine whether the PaidInFull field has been changed.
+Mithilfe der Funktion **Aktualisiert(„*Feldname*“) ** können Sie feststellen, ob sich ein Feld verändert hat. The following code example shows how to use an If staement to determine determine whether the PaidInFull field has been changed.
 
 ```vb 
  
@@ -55,7 +55,7 @@ For example, to access the value of the QuantityInStock field in the deleted rec
 
 Am Ende des Ereignisses **Nach Löschvorgang** werden die Werte im gelöschten Datensatz dauerhaft gelöscht.
 
-Die folgenden Makrobefehle können im Ereignis **nach Lösch** Vorgang verwendet werden.
+Die folgenden Makrobefehle können im **after DELETE** -Ereignis verwendet werden.
 
 <table>
 <colgroup>
@@ -83,19 +83,19 @@ Die folgenden Makrobefehle können im Ereignis **nach Lösch** Vorgang verwendet
 </tr>
 <tr class="even">
 <td><p>Datenblock</p></td>
-<td><p><a href="createrecord-data-block.md">CreateRecord-Makroaktion</a></p></td>
+<td><p><a href="createrecord-data-block.md">DatensatzErstellen-Makroaktion</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Datenblock</p></td>
-<td><p><a href="editrecord-data-block.md">Bearbeitendatensatz-Makroaktion</a></p></td>
+<td><p><a href="editrecord-data-block.md">DatensatzBearbeiten-Makroaktion</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Datenblock</p></td>
-<td><p><a href="foreachrecord-data-block.md">Fürjedendatensatz-Makroaktion</a></p></td>
+<td><p><a href="foreachrecord-data-block.md">FürJedenDatensatz-Makroaktion</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Datenblock</p></td>
-<td><p><a href="lookuprecord-data-block.md">LookupRecord-Datenblock</a></p></td>
+<td><p><a href="lookuprecord-data-block.md">LookupRecord-Makroaktion</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Datenaktion</p></td>
@@ -165,7 +165,7 @@ Im Makro-Designer wird ein leeres Datenmakro angezeigt.
 
 The following code example uses the **After Delete** event to perform some processing when a record is deleted from the Donations table. When a record is deleted, the amount of the donation is subracted form the DonationsReceived field in the DonationsReceived table and the TotalDonatedField in the Donors table.
 
-**Klicken Sie hier, um eine Kopie des Makros anzuzeigen, die Sie im Makro-Designer einfügen können.**
+**Klicken Sie hier, um eine Kopie des Makros anzuzeigen, das Sie in Makro-Designer einfügen können.**
 
 Zum Anzeigen dieses Beispiels im Makro-Designer gehen Sie folgendermaßen vor:
 
@@ -181,7 +181,7 @@ Zum Anzeigen dieses Beispiels im Makro-Designer gehen Sie folgendermaßen vor:
 
 ```xml
     <?xml version="1.0" encoding="UTF-16" standalone="no"?> 
-    <DataMacros xmlns="https://schemas.microsoft.com/office/accessservices/2009/04/application"> 
+    <DataMacros xmlns="http://schemas.microsoft.com/office/accessservices/2009/04/application"> 
       <DataMacro Event="AfterDelete"> 
         <Statements> 
           <Comment>Initialize a variable and assign the old</Comment> 

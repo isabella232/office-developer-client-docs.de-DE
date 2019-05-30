@@ -1,5 +1,5 @@
 ---
-title: PageSheet-Element (Page_Type complexType) (' Visio XML ')
+title: PageSheet-Element (Page_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 99a6549b-099b-1546-cc30-db0010fe3ce1
 description: Gibt die Eigenschaften des Zeichenblatts an, das dem Zeichenblatt zugeordnet ist.
-ms.openlocfilehash: 8b60795c02717e4b752c09af19fa932f87924d1f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 2f49d152a0fcb30e3f5aea98cdc251d3b65b8f69
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326117"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34540623"
 ---
-# <a name="pagesheet-element-pagetype-complextype-visio-xml"></a>PageSheet-Element (Page_Type complexType) (' Visio XML ')
+# <a name="pagesheet-element-pagetype-complextype-visio-xml"></a>PageSheet-Element (Page_Type complexType) (Visio XML)
 
 Gibt die Eigenschaften des Zeichenblatts an, das dem Zeichenblatt zugeordnet ist.
   
@@ -23,7 +23,7 @@ Gibt die Eigenschaften des Zeichenblatts an, das dem Zeichenblatt zugeordnet ist
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[PageSheet_Type](pagesheet_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
 |**Dokumentteile** <br/> |Pages. XML  <br/> |
    
@@ -42,7 +42,7 @@ Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOc
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Page](page-element-pages_type-complextypevisio-xml.md) <br/> |[Page_Type](page_type-complextypevisio-xml.md) <br/> |Enthält Elemente, die eine Seite im Dokument definieren.  <br/> |
+|[Page](page-element-pages_type-complextypevisio-xml.md) <br/> |[Page_Type](page_type-complextypevisio-xml.md) <br/> |Enthält Elemente, mit denen eine Seite im Dokument definiert wird.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -52,9 +52,9 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|FillStyle  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> |Gibt die ID des Stylesheets an, von dem die Füllformatierung geerbt werden soll. Es muss der Wert des **ID-** Attributs sein, das einem **StyleSheet_Type** in der Zeichnung zugeordnet ist.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
-|LineStyle  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> |Gibt die ID des Stylesheets an, von dem die Linienformatierung geerbt werden soll. Es muss der Wert des **ID-** Attributs sein, das einem **StyleSheet_Type** in der Zeichnung zugeordnet ist.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
-|TextStyle  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> |Gibt die ID des Stylesheets an, von dem die Textformatierung geerbt werden soll. Es muss der Wert des **ID-** Attributs sein, das einem **StyleSheet_Type** in der Zeichnung zugeordnet ist.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
-|UniqueID  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Die eindeutige ID des Elements innerhalb des übergeordneten Elements.  <br/> |Werte des XSD: String-Typs.  <br/> |
+|FillStyle  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> |Gibt die ID des Stylesheets an, von dem die Füllungsformatierung geerbt werden soll. Dabei muss es sich um den Wert des **ID-** Attributs handeln, das einem **StyleSheet_Type** in der Zeichnung zugeordnet ist.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
+|LineStyle  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> |Gibt die ID des Stylesheets an, aus dem die Linienformatierung geerbt werden soll. Dabei muss es sich um den Wert des **ID-** Attributs handeln, das einem **StyleSheet_Type** in der Zeichnung zugeordnet ist.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
+|TextStyle  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> |Gibt die ID des Stylesheets an, aus dem die Textformatierung geerbt werden soll. Dabei muss es sich um den Wert des **ID-** Attributs handeln, das einem **StyleSheet_Type** in der Zeichnung zugeordnet ist.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
+|UniqueID  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Die eindeutige ID des Elements innerhalb des übergeordneten Elements.  <br/> |Werte des Typs XSD: String.  <br/> |
    
 

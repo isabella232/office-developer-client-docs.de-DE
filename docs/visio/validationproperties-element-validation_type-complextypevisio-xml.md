@@ -1,29 +1,29 @@
 ---
-title: ValidationProperties-Element (Validation_Type complexType) (' Visio XML ')
+title: ValidationProperties-Element (Validation_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: a51a60c9-479b-7d7b-860f-bb46fc8b4d63
-description: Kapselt die Eigenschaften, die im Zusammenhang mit der Validierung des Dokuments stehen.
-ms.openlocfilehash: 9eccb85bd7463411d81c867eda3216d6c9a207f2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: Kapselt die Eigenschaften, die im Zusammenhang mit der Überprüfung des Dokuments stehen.
+ms.openlocfilehash: 35e6f3f13eecef826fdef0d664bba35fceb0e069
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355958"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34538522"
 ---
-# <a name="validationproperties-element-validationtype-complextype-visio-xml"></a>ValidationProperties-Element (Validation_Type complexType) (' Visio XML ')
+# <a name="validationproperties-element-validationtype-complextype-visio-xml"></a>ValidationProperties-Element (Validation_Type complexType) (Visio XML)
 
-Kapselt die Eigenschaften, die im Zusammenhang mit der Validierung des Dokuments stehen.
+Kapselt die Eigenschaften, die im Zusammenhang mit der Überprüfung des Dokuments stehen.
   
 ## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[ValidationProperties_Type](validationproperties_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
 |**Dokumentteile** <br/> |Validation. XML  <br/> |
    
@@ -52,7 +52,7 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|LastValidated  <br/> |XSD: dateTime  <br/> |erforderlich  <br/> |Datum und Uhrzeit der letzten Validierung des Dokuments.  <br/> |Werte des XSD: dateTime-Typs.  <br/> |
-|ShowIgnored  <br/> |XSD: Boolean  <br/> |erforderlich  <br/> |Gibt an, ob ignorierte Validierungsprobleme im Fenster Probleme angezeigt werden sollen.  <br/> |Werte des XSD: Boolean-Typs.  <br/> |
+|LastValidated  <br/> |XSD: DateTime  <br/> |erforderlich  <br/> |Das Datum und die Uhrzeit, zu der das Dokument zuletzt überprüft wurde.  <br/> |Werte des Typs XSD: DateTime.  <br/> |
+|ShowIgnored  <br/> |XSD: Boolean  <br/> |erforderlich  <br/> |Gibt an, ob ignorierte Überprüfungsprobleme im Fenster Probleme angezeigt werden sollen.  <br/> |Werte des XSD: Boolean-Typs.  <br/> |
    
 

@@ -1,5 +1,5 @@
 ---
-title: CurrentType complexType (Outlook Wetter Information-Schema)
+title: CurrentType complexType (Outlook-Wetter Informations Schema)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 9f4663ac-13d3-6c46-f839-ba6bca4047a3
-description: Definiert die Parameter zu den aktuellen Wetterbedingungen eines Standorts.
-ms.openlocfilehash: 16d3e23375f68315c9b9f3a7e914d93f4fec9d0a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: Definiert die Parameter für die aktuellen Wetterbedingungen eines Standorts.
+ms.openlocfilehash: 6dec923ce45ddc6470d80e1c973528246e01672f
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32338451"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34540987"
 ---
-# <a name="currenttype-complextype-outlook-weather-information-schema"></a>CurrentType complexType (Outlook Wetter Information-Schema)
+# <a name="currenttype-complextype-outlook-weather-information-schema"></a>CurrentType complexType (Outlook-Wetter Informations Schema)
 
-Definiert die Parameter zu den aktuellen Wetterbedingungen eines Standorts.
+Definiert die Parameter für die aktuellen Wetterbedingungen eines Standorts.
   
 ## <a name="type-information"></a>Informationen zum Typ
 
 |||
 |:-----|:-----|
-|**Namespace** <br/> |https://schemas.microsoft.com/office/outlook/15/getweatherinfo.xsd  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/outlook/15/getweatherinfo.xsd  <br/> |
 |**Schemadatei** <br/> |GetWeatherInfo. xsd  <br/> |
 |**Erweiterungsbasis** <br/> |Keine  <br/> |
    
@@ -59,15 +59,15 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|Datum  <br/> |xs: Datum  <br/> |erforderlich  <br/> |Gibt das heutige Datum an.  <br/> |Ein Wert vom Typ xs: Date  <br/> |
+|date  <br/> |xs: Datum  <br/> |erforderlich  <br/> |Gibt das heutige Datum an.  <br/> |Ein Wert vom Typ xs: Date  <br/> |
 |Tag  <br/> |xs: Zeichenfolge  <br/> |Optional  <br/> |Gibt einen Tag für die Prognose an.  <br/> |Ein Wert vom Typ xs: String  <br/> |
-|feelslike  <br/> |xs: Integer  <br/> |erforderlich  <br/> |Gibt die Temperatur des aktuellen Wetters an.  <br/> |Ein Wert vom Typ xs: Integer  <br/> |
-|Feuchtigkeit  <br/> |xs: Integer  <br/> |erforderlich  <br/> |Gibt den aktuellen numerischen Feuchtewert an.  <br/> |Ein Wert vom Typ xs: Integer  <br/> |
+|feelslike  <br/> |xs: Integer  <br/> |erforderlich  <br/> |Gibt die Temperatur an, wie sich das aktuelle Wetter anfühlt.  <br/> |Ein Wert vom Typ xs: Integer  <br/> |
+|Luftfeuchtigkeits  <br/> |xs: Integer  <br/> |erforderlich  <br/> |Gibt den aktuellen numerischen Feuchtewert an.  <br/> |Ein Wert vom Typ xs: Integer  <br/> |
 |observationpoint  <br/> |xs: Zeichenfolge  <br/> |erforderlich  <br/> |Gibt an, von wo die aktuellen Wetterinformationen beobachtet werden.  <br/> |Ein Wert vom Typ xs: String  <br/> |
-|Beobachtungszeit  <br/> |xs: Zeit  <br/> |erforderlich  <br/> |Gibt an, wann die aktuellen Wetterinformationen unter beobachtet werden.  <br/> |Ein Wert vom Typ xs: Time  <br/> |
+|Beobachtungszeit  <br/> |xs: Zeit  <br/> |erforderlich  <br/> |Gibt an, wann die aktuellen Wetterinformationen bei beobachtet werden.  <br/> |Ein Wert vom Typ xs: Time  <br/> |
 |shortday  <br/> |xs: Zeichenfolge  <br/> |Optional  <br/> |Gibt einen Tag in abgekürzter Form an.  <br/> |Ein Wert vom Typ xs: String  <br/> |
 |skycode  <br/> |xs: Integer  <br/> |erforderlich  <br/> |Gibt einen ganzzahligen Code für die aktuellen Wetterbedingungen an.  <br/> |Ein Wert vom Typ xs: Integer  <br/> |
-|skytext  <br/> |xs: Zeichenfolge  <br/> |erforderlich  <br/> |Gibt ein bis zwei Wörter an, in denen die aktuellen Wetterbedingungen beschrieben werden.  <br/> |Ein Wert vom Typ xs: String  <br/> |
+|skytext  <br/> |xs: Zeichenfolge  <br/> |erforderlich  <br/> |Gibt ein bis zwei Wörter an, die die aktuellen Wetterbedingungen beschreiben.  <br/> |Ein Wert vom Typ xs: String  <br/> |
 |Temperatur  <br/> |xs: Integer  <br/> |erforderlich  <br/> |Gibt die aktuelle Temperatur des Standorts an.  <br/> |Ein Wert vom Typ xs: Integer  <br/> |
 |winddisplay  <br/> |xs: Zeichenfolge  <br/> |erforderlich  <br/> |Eine Zeichenfolge, die die aktuellen Windbedingungen beschreibt.  <br/> |Ein Wert vom Typ xs: String  <br/> |
 |WindSpeed  <br/> |xs: Integer  <br/> |erforderlich  <br/> |Gibt den aktuellen numerischen Wind Geschwindigkeitswert an.  <br/> |Ein Wert vom Typ xs: Integer  <br/> |

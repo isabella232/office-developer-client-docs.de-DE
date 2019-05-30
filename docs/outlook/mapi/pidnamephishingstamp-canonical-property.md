@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidnamephishingstamp (-Eigenschaft
+title: Kanonische pidnamephishingstamp (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,47 +11,47 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6cc0357e-f1d5-4387-b30f-432ba7ee42b4
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 73089431569cce3480967b05910df0b7bcf187eb
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 8dbede5391f6913c7869b5f93e6744e10c8081b3
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355783"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34540903"
 ---
-# <a name="pidnamephishingstamp-canonical-property"></a>Kanonische Pidnamephishingstamp (-Eigenschaft
+# <a name="pidnamephishingstamp-canonical-property"></a>Kanonische pidnamephishingstamp (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält den Nachrichtenwert, mit dem Nachrichten identifiziert und gekennzeichnet werden, die wahrscheinlich Phishing sind.
+Enthält den Nachrichtenwert, mit dem Nachrichten identifiziert und markiert werden, bei denen es sich wahrscheinlich um Phishing handelt.
   
 |||
 |:-----|:-----|
-|Angezeigte Namen:  <br/> |Keine  <br/> |
-|Eigenschaftensatz:  <br/> |PS_PUBLIC_STRINGS  <br/> |
-|Eigenschaftsname:  <br/> |https://schemas.microsoft.com/outlook/phishingstamp  <br/> |
+|Anzeigename:  <br/> |Keine  <br/> |
+|Eigenschaftengruppe:  <br/> |PS_PUBLIC_STRINGS  <br/> |
+|Eigenschaften Name:  <br/> |http://schemas.microsoft.com/outlook/phishingstamp  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Sicheres Messaging  <br/> |
    
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Stellt Eigenschaftensatz Definitionen und Verweise auf zugehörige Exchange Server-Protokollspezifikationen bereit.
+> Stellt Eigenschaftenmengen Definitionen und Verweise auf zugehörige Exchange Server Protokollspezifikationen bereit.
     
 [[MS-OXPHISH]](https://msdn.microsoft.com/library/ed49ab26-ba13-4d4c-8a94-98d4ceecd4b7%28Office.15%29.aspx)
   
-> Identifiziert und markiert e-Mail-Nachrichten, die dazu dienen, Empfänger dazu zu verleiten, vertrauliche Informationen (wie Kennwörter und andere persönliche Informationen) an eine nicht vertrauenswürdige Quelle weiterzugeben.
+> Identifiziert und kennzeichnet e-Mail-Nachrichten, die dazu dienen, Empfänger zu verbieten, vertrauliche Informationen (beispielsweise Kennwörter und andere persönliche Informationen) an eine nicht vertrauenswürdige Quelle weiterzugeben.
     
 ### <a name="header-files"></a>Header Dateien
 
 Mapidefs. h
   
-> Stellt Datentypdefinitionen bereit.
+> Stellt Definitionen von Datentypen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 

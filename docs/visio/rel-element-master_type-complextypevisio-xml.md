@@ -1,29 +1,29 @@
 ---
-title: Rel-Element (Master_Type complexType) (' Visio XML ')
+title: Rel-Element (Master_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 151cdd13-d00b-249c-7ebd-1ae9c4042b03
-description: Gibt eine Beziehung zu einem Webpart mit der entsprechenden Master-XML-Datei an.
-ms.openlocfilehash: 82552eeab746d9675f6175b62c34cef4a9c3c418
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: Gibt eine Beziehung zu einem Webpart mit dem entsprechenden Master-XML-Code an.
+ms.openlocfilehash: 032c1ef4a94bb6acf18587a1257fe82285124e87
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32320006"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34542800"
 ---
-# <a name="rel-element-mastertype-complextype-visio-xml"></a>Rel-Element (Master_Type complexType) (' Visio XML ')
+# <a name="rel-element-mastertype-complextype-visio-xml"></a>Rel-Element (Master_Type complexType) (Visio XML)
 
-Gibt eine Beziehung zu einem Webpart mit der entsprechenden Master-XML-Datei an.
+Gibt eine Beziehung zu einem Webpart mit dem entsprechenden Master-XML-Code an.
   
 ## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[Rel_Type](rel_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
 |**Dokumentteile** <br/> |Pages. XML, Masters. XML, Recordsets. XML, Page #. XML, Master #. XML  <br/> |
    
@@ -42,7 +42,7 @@ Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOc
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Master](master-element-masters_type-complextypevisio-xml.md) <br/> |[Master_Type](master_type-complextypevisio-xml.md) <br/> |Gibt eine Instanz von Master-XML an, die in der Zeichnung gespeichert ist.  <br/> |
+|[Master](master-element-masters_type-complextypevisio-xml.md) <br/> |[Master_Type](master_type-complextypevisio-xml.md) <br/> |Gibt eine Instanz des in der Zeichnung gespeicherten Master-XML-Code an.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -54,10 +54,10 @@ Keine.
 |:-----|:-----|:-----|:-----|:-----|
 |r:ID  <br/> |XSD: Zeichenfolge  <br/> Weitere Informationen finden Sie in der "Anmerkungen".  <br/> |erforderlich  <br/> |Gibt eine Beziehung zu einem Webpart an.  <br/> |"rId #"  <br/> Weitere Informationen finden Sie in der "Anmerkungen".  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Der Wert des **r:ID** -Attributs muss ein **ST_RelationshipID** -Typ sein. Der **ST_RelationshipID** -Typ ist eine Zeichenfolge, die das Format "rId #" aufweisen muss, wobei das letzte Zeichen eine Zahl sein muss. Die Zahl muss unter allen nebengeordneten Elementen des **rel** -Elements eindeutig sein. 
+Der Wert des **r:ID** -Attributs muss ein **ST_RelationshipID** -Typ sein. Der **ST_RelationshipID** -Typ ist eine Zeichenfolge, die im Format "rId #" sein muss, wobei das letzte Zeichen eine Zahl sein muss. Die Zahl muss unter allen gleichgeordneten Elementen des **rel** -Elements eindeutig sein. 
   
-Weitere Informationen zum ST_RelationshipID-Typ finden Sie in der [Spezifikation ISO/IEC 29500, Abschnitt 1](https://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.md?csnumber=61750).
+Weitere Informationen zum ST_RelationshipID-Typ finden Sie in der [Spezifikation ISO/IEC 29500 Part 1](https://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.md?csnumber=61750).
   
 

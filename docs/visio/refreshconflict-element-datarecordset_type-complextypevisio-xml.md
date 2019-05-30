@@ -1,29 +1,29 @@
 ---
-title: RefreshConflict-Element (DataRecordSet_Type complexType) (' Visio XML ')
+title: RefreshConflict-Element (DataRecordSet_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 373983f7-fc0c-95f6-7665-7ed47de82e5e
-description: Gibt eine Zeile im Datenrecordset an, die mit einem Shape verknüpft ist, das nach der Aktualisierung des Datenrecordsets in Konflikt steht.
-ms.openlocfilehash: 2da6f98cf7b047564331aaf5a4167e392927a155
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: Gibt eine Zeile im Datenrecordset an, die mit einem Shape verknüpft ist, das nach dem Aktualisieren des Daten-Recordsets in Konflikt steht.
+ms.openlocfilehash: f966ca4a9f23de7a96273615b2404041d1045652
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360137"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34542835"
 ---
-# <a name="refreshconflict-element-datarecordsettype-complextype-visio-xml"></a>RefreshConflict-Element (DataRecordSet_Type complexType) (' Visio XML ')
+# <a name="refreshconflict-element-datarecordsettype-complextype-visio-xml"></a>RefreshConflict-Element (DataRecordSet_Type complexType) (Visio XML)
 
-Gibt eine Zeile im Datenrecordset an, die mit einem Shape verknüpft ist, das nach der Aktualisierung des Datenrecordsets in Konflikt steht.
+Gibt eine Zeile im Datenrecordset an, die mit einem Shape verknüpft ist, das nach dem Aktualisieren des Daten-Recordsets in Konflikt steht.
   
 ## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[RefreshConflict_Type](refreshconflict_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
 |**Dokumentteile** <br/> |Recordsets. XML  <br/> |
    
@@ -52,8 +52,8 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|PageID  <br/> |XSD: unsignedInt  <br/> |erforderlich  <br/> |Die Seiten-ID der am Konflikt beteiligten Form.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
-|RowID  <br/> |XSD: unsignedInt  <br/> |erforderlich  <br/> |Die ursprüngliche Zeilen-ID der Zeile, die jetzt in Konflikt steht, nachdem die Daten aktualisiert wurden.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
-|ShapeID  <br/> |XSD: unsignedInt  <br/> |erforderlich  <br/> |Shape-ID der Form, die am Konflikt beteiligt ist.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
+|PageID  <br/> |XSD: unsignedInt  <br/> |erforderlich  <br/> |Seiten-ID der Form, die an dem Konflikt beteiligt ist.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
+|ROWID  <br/> |XSD: unsignedInt  <br/> |erforderlich  <br/> |Die ursprüngliche Zeilen-ID der Zeile, die nach dem Aktualisieren der Daten jetzt in Konflikt steht.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
+|ShapeID  <br/> |XSD: unsignedInt  <br/> |erforderlich  <br/> |Shape-ID der Form, die an dem Konflikt beteiligt ist.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
    
 

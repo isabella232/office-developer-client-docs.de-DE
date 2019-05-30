@@ -8,12 +8,12 @@ api_type:
 - COM
 ms.assetid: 38376abb-60de-40f1-9bc9-d8c4f9e3368b
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 693ea848d6870c443ad69fbb795f7520ecb5ee24
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: ddc753891ad9ee0fa60c9ac4d3b2014eea4a0301
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357666"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34542702"
 ---
 # <a name="mapping-mapi-names-to-canonical-property-names"></a>Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen
 
@@ -326,8 +326,8 @@ Weitere Informationen darüber, wie sich kanonische Eigenschaften auf MAPI-Eigen
 |DRMLicense  <br/> |[Pidnamerightsmanagementlicense (](pidnamerightsmanagementlicense-canonical-property.md) <br/> |
 |EditTime  <br/> |[Pidnameedittime (](pidnameedittime-canonical-property.md) <br/> |
 |HiddenCount  <br/> |[Pidnamehiddencount (](pidnamehiddencount-canonical-property.md) <br/> |
-|https://schemas.microsoft.com/exchange/junkemailmovestamp  <br/> |[Pidnameexchangejunkemailmovestamp (](pidnameexchangejunkemailmovestamp-canonical-property.md) <br/> |
-|https://schemas.microsoft.com/outlook/phishingstamp  <br/> |[PidNameOutlookPhishingstamp](pidnamephishingstamp-canonical-property.md) <br/> |
+|http://schemas.microsoft.com/exchange/junkemailmovestamp  <br/> |[Pidnameexchangejunkemailmovestamp (](pidnameexchangejunkemailmovestamp-canonical-property.md) <br/> |
+|http://schemas.microsoft.com/outlook/phishingstamp  <br/> |[PidNameOutlookPhishingstamp](pidnamephishingstamp-canonical-property.md) <br/> |
 |Schlüsselwörter  <br/> |[Pidnamekeywords (](pidnamekeywords-canonical-property.md) <br/> |
 |LastAuthor  <br/> |[Pidnamelastauthor (](pidnamelastauthor-canonical-property.md) <br/> |
 |LastPrinted  <br/> |[PidNameLastPrinted](pidnamelastprinted-canonical-property.md) <br/> |

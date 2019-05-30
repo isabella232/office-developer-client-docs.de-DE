@@ -1,31 +1,31 @@
 ---
-title: Data1-Element (ShapeSheet_Type complexType) (' Visio XML ')
+title: Data1-Element (ShapeSheet_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: d72dc0e4-4e0f-dd3f-a51a-8486f9ec548e
-description: Enthält einen beliebigen String-Wert, der verwendet wird, um zusätzliche Informationen zu einer Form anzugeben.
-ms.openlocfilehash: a203f915e9a5ff86e7cf75d96639157f76d3c151
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: Enthält einen beliebigen Zeichenfolgenwert, der verwendet wird, um zusätzliche Informationen zu einer Form bereitzustellen.
+ms.openlocfilehash: e4ff724eee51e3a7efe8bc4f270568da066901a5
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345005"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34542485"
 ---
-# <a name="data1-element-shapesheettype-complextype-visio-xml"></a>Data1-Element (ShapeSheet_Type complexType) (' Visio XML ')
+# <a name="data1-element-shapesheettype-complextype-visio-xml"></a>Data1-Element (ShapeSheet_Type complexType) (Visio XML)
 
-Enthält einen beliebigen String-Wert, der verwendet wird, um zusätzliche Informationen zu einer Form anzugeben.
+Enthält einen beliebigen Zeichenfolgenwert, der verwendet wird, um zusätzliche Informationen zu einer Form bereitzustellen.
   
 ## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
-|**Elementtyp** <br/> |[Data_Type](data_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Elementtyp** <br/> |[Data_type](data_type-complextypevisio-xml.md) <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
-|**Dokumentteile** <br/> |Page #. XML, Master #. XML  <br/> |
+|**Dokumentteile** <br/> |Seite #. XML, Master #. XML  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -42,7 +42,7 @@ Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOc
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Shape](shape-element-shapes_type-complextypevisio-xml.md) <br/> |[ShapeSheet_Type](shapesheet_type-complextypevisio-xml.md) <br/> |Enthält Elemente, die eine Form in einem **Master**-, **Page**-oder Group Shape-Element definieren.  <br/> |
+|[Shape](shape-element-shapes_type-complextypevisio-xml.md) <br/> |[ShapeSheet_Type](shapesheet_type-complextypevisio-xml.md) <br/> |Enthält Elemente, die eine Form in einem **Master**-Shape, einem **Seiten**-oder Gruppen-Shape-Element definieren.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 

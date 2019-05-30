@@ -1,25 +1,25 @@
 ---
-title: Section_Type complexType (' Visio XML ')
+title: Section_Type complexType (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 2f8e855f-064c-d286-560f-9f89e7fce7b7
-ms.openlocfilehash: 35cd638d36f4ddd1d90e0c312e65626f7d8b0bff
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 48dd7a0ffc487b4a7a4200505f08d0aca42fd3c6
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326096"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34542128"
 ---
-# <a name="sectiontype-complextype-visio-xml"></a>Section_Type complexType (' Visio XML ')
+# <a name="sectiontype-complextype-visio-xml"></a>Section_Type complexType (Visio XML)
 
 ## <a name="type-information"></a>Informationen zum Typ
 
 |||
 |:-----|:-----|
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
 |**Schemadatei** <br/> |VisioSchema15-2012-06 -05. xsd  <br/> |
 |**Erweiterungsbasis** <br/> |Keine  <br/> |
    
@@ -78,8 +78,8 @@ Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOc
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|ENTF  <br/> |XSD: Boolean  <br/> |Optional  <br/> ||Werte des XSD: Boolean-Typs.  <br/> |
+|Del  <br/> |XSD: Boolean  <br/> |Optional  <br/> ||Werte des XSD: Boolean-Typs.  <br/> |
 |IX  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> ||Werte des XSD: unsignedInt-Typs.  <br/> |
-|N  <br/> |XSD: Zeichenfolge  <br/> |erforderlich  <br/> ||Werte des XSD: String-Typs.  <br/> |
+|N  <br/> |XSD: Zeichenfolge  <br/> |erforderlich  <br/> ||Werte des Typs XSD: String.  <br/> |
    
 

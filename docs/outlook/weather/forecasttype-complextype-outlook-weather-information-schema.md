@@ -1,5 +1,5 @@
 ---
-title: forecasttype complexType (Outlook Wetter Information-Schema)
+title: forecasttype complexType (Outlook-Wetter Informations Schema)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 6301d6b6-34fa-af8d-e682-605d35cfdf47
-description: Definiert die Parameter für die Wettervorhersage für einen Standort.
-ms.openlocfilehash: 75f20d7857fac85e1e95d23cf5ac826336648132
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: Definiert die Parameter zu den Wetterbedingungen eines Standorts.
+ms.openlocfilehash: e799ebbea72daa1788aedbdcadbc523b5e4dff0d
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32361145"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34540952"
 ---
-# <a name="forecasttype-complextype-outlook-weather-information-schema"></a>forecasttype complexType (Outlook Wetter Information-Schema)
+# <a name="forecasttype-complextype-outlook-weather-information-schema"></a>forecasttype complexType (Outlook-Wetter Informations Schema)
 
-Definiert die Parameter für die Wettervorhersage für einen Standort.
+Definiert die Parameter zu den Wetterbedingungen eines Standorts.
   
 ## <a name="type-information"></a>Informationen zum Typ
 
 |||
 |:-----|:-----|
-|**Namespace** <br/> |https://schemas.microsoft.com/office/outlook/15/getweatherinfo.xsd  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/outlook/15/getweatherinfo.xsd  <br/> |
 |**Schemadatei** <br/> |GetWeatherInfo. xsd  <br/> |
 |**Erweiterungsbasis** <br/> |Keine  <br/> |
    
@@ -55,13 +55,13 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|Datum  <br/> |xs: Datum  <br/> |erforderlich  <br/> |Gibt das Datum für die Prognose an.  <br/> |Ein Wert vom Typ xs: Date  <br/> |
+|date  <br/> |xs: Datum  <br/> |erforderlich  <br/> |Gibt das Datum für die Prognose an.  <br/> |Ein Wert vom Typ xs: Date  <br/> |
 |Tag  <br/> |xs: Zeichenfolge  <br/> |erforderlich  <br/> |Gibt einen Tag für die Prognose an.  <br/> |Ein Wert vom Typ xs: String  <br/> |
 |hohe  <br/> |xs: Integer  <br/> |erforderlich  <br/> |Gibt die prognostizierte höchste Temperatur an.  <br/> |Ein Wert vom Typ xs: Integer  <br/> |
-|mit niedriger  <br/> |xs: Integer  <br/> |erforderlich  <br/> |Gibt die prognostizierte niedrigste Temperatur an.  <br/> |Ein Wert vom Typ xs: Integer  <br/> |
-|Precip  <br/> |xs: Integer  <br/> |erforderlich  <br/> |Gibt die prozentuale Niederschlagswahrscheinlichkeit an.  <br/> |Ein Wert vom Typ xs: Integer  <br/> |
+|niedrigen  <br/> |xs: Integer  <br/> |erforderlich  <br/> |Gibt die prognostizierte niedrigste Temperatur an.  <br/> |Ein Wert vom Typ xs: Integer  <br/> |
+|Precip  <br/> |xs: Integer  <br/> |erforderlich  <br/> |Gibt den Prozentsatz der Niederschlagswahrscheinlichkeit an.  <br/> |Ein Wert vom Typ xs: Integer  <br/> |
 |shortday  <br/> |xs: Zeichenfolge  <br/> |erforderlich  <br/> |Gibt einen Tag in abgekürzter Form an.  <br/> |Ein Wert vom Typ xs: String  <br/> |
 |skycodeday  <br/> |xs: Integer  <br/> |erforderlich  <br/> |Gibt einen Code für die prognostizierten Bedingungen an.  <br/> |Ein Wert vom Typ xs: Integer  <br/> |
-|skytextday  <br/> |xs: Zeichenfolge  <br/> |erforderlich  <br/> |Gibt ein bis zwei Wörter an, in denen die prognostizierten Bedingungen beschrieben werden.  <br/> |Ein Wert vom Typ xs: String  <br/> |
+|skytextday  <br/> |xs: Zeichenfolge  <br/> |erforderlich  <br/> |Gibt ein bis zwei Wörter an, die die prognostizierten Bedingungen beschreiben.  <br/> |Ein Wert vom Typ xs: String  <br/> |
    
 

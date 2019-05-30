@@ -1,25 +1,25 @@
 ---
-title: Trigger_Type complexType (' Visio XML ')
+title: Trigger_Type complexType (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 50de80d5-c846-1bdc-55e0-c688fe3d364c
-ms.openlocfilehash: e34ef122a6f0a08168f838fdaeb130d68349ecb8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 53a9efabe698e6b9c98c0471b97551c8ea2406da
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280857"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34541897"
 ---
-# <a name="triggertype-complextype-visio-xml"></a>Trigger_Type complexType (' Visio XML ')
+# <a name="triggertype-complextype-visio-xml"></a>Trigger_Type complexType (Visio XML)
 
 ## <a name="type-information"></a>Informationen zum Typ
 
 |||
 |:-----|:-----|
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
 |**Schemadatei** <br/> |VisioSchema15-2012-06 -05. xsd  <br/> |
 |**Erweiterungsbasis** <br/> |Keine  <br/> |
    
@@ -58,6 +58,6 @@ Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOc
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|N  <br/> |XSD: Zeichenfolge  <br/> |erforderlich  <br/> ||Werte des XSD: String-Typs.  <br/> |
+|N  <br/> |XSD: Zeichenfolge  <br/> |erforderlich  <br/> ||Werte des Typs XSD: String.  <br/> |
    
 

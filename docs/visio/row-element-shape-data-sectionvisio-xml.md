@@ -1,5 +1,5 @@
 ---
-title: Row-Element (Shape Data Section) (' Visio XML ')
+title: Row-Element (Shape Data Section) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 9eb74ae8-ff42-6e34-30e2-2080bf8b5754
 description: Gibt eine Shape-Dateneingabe für das Zuordnen von Daten zu einer Form an.
-ms.openlocfilehash: 7857ad8a28e11d6ed3ba34145ffc0606f306120f
-ms.sourcegitcommit: 9716521f7bcd531f93be9855ae7835be20cdd0e2
+ms.openlocfilehash: 4c5644aa2088dcaf3be81ea9aeaa549c911a31f6
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "32283486"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34538270"
 ---
-# <a name="row-element-shape-data-section-visio-xml"></a>Row-Element (Shape Data Section) (' Visio XML ')
+# <a name="row-element-shape-data-section-visio-xml"></a>Row-Element (Shape Data Section) (Visio XML)
 
 Gibt eine Shape-Dateneingabe für das Zuordnen von Daten zu einer Form an.
   
@@ -23,7 +23,7 @@ Gibt eine Shape-Dateneingabe für das Zuordnen von Daten zu einer Form an.
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[Shape-daten_type](propertyrow_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
 |**Dokumentteile** <br/> |Master #. XML, Seite #. XML  <br/> |
    

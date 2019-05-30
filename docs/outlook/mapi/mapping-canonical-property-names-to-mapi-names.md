@@ -8,12 +8,12 @@ api_type:
 - COM
 ms.assetid: 43c7225b-8f9f-47a2-aadf-36a249b2d78e
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 36d75c0a3a5f4767bfb0eeb0f9ae3d0c249b084b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: ed73c0947e51150dd15617a95a99cd709101eb9e
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316548"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34541918"
 ---
 # <a name="mapping-canonical-property-names-to-mapi-names"></a>Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen
 
@@ -326,7 +326,7 @@ Weitere Informationen darüber, wie sich kanonische Eigenschaften auf MAPI-Eigen
 |[Pidnamecreatedatetimereadonly (](pidnamecreatedatetimereadonly-canonical-property.md) <br/> |CreateDtmRo  <br/> |
 |[Pidnamecrossreference (](pidnamecrossreference-canonical-property.md) <br/> |XREF  <br/> |
 |[Pidnameedittime (](pidnameedittime-canonical-property.md) <br/> |EditTime  <br/> |
-|[Pidnameexchangejunkemailmovestamp (](pidnameexchangejunkemailmovestamp-canonical-property.md) <br/> |https://schemas.microsoft.com/exchange/junkemailmovestamp  <br/> |
+|[Pidnameexchangejunkemailmovestamp (](pidnameexchangejunkemailmovestamp-canonical-property.md) <br/> |http://schemas.microsoft.com/exchange/junkemailmovestamp  <br/> |
 |[Pidnamehiddencount (](pidnamehiddencount-canonical-property.md) <br/> |HiddenCount  <br/> |
 |[Pidnamekeywords (](pidnamekeywords-canonical-property.md) <br/> |Schlüsselwörter  <br/> |
 |[Pidnamelastauthor (](pidnamelastauthor-canonical-property.md) <br/> |LastAuthor  <br/> |
@@ -336,7 +336,7 @@ Weitere Informationen darüber, wie sich kanonische Eigenschaften auf MAPI-Eigen
 |[Pidnamemanager (](pidnamemanager-canonical-property.md) <br/> |Manager  <br/> |
 |[Pidnamemultimediaclipcount (](pidnamemultimediaclipcount-canonical-property.md) <br/> |MMClipCount  <br/> |
 |[Pidnamenotecount (](pidnamenotecount-canonical-property.md) <br/> |NoteCount  <br/> |
-|[PidNameOutlookPhishingstamp](pidnamephishingstamp-canonical-property.md) <br/> |https://schemas.microsoft.com/outlook/phishingstamp  <br/> |
+|[PidNameOutlookPhishingstamp](pidnamephishingstamp-canonical-property.md) <br/> |http://schemas.microsoft.com/outlook/phishingstamp  <br/> |
 |[Pidnamepagecount (](pidnamepagecount-canonical-property.md) <br/> |PageCount  <br/> |
 |[Pidnameparagraphcount (](pidnameparagraphcount-canonical-property.md) <br/> |ParCount  <br/> |
 |[Pidnamepresentationformat (](pidnamepresentationformat-canonical-property.md) <br/> |PresFormat  <br/> |

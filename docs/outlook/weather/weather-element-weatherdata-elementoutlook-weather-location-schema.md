@@ -1,5 +1,5 @@
 ---
-title: Weather-Element (WeatherData-Element) (Outlook Weather Location Schema)
+title: Weather-Element (WeatherData-Element) (Outlook-Wetter Standort Schema)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1127956a-37aa-c39e-60b4-343dcc4ead82
-description: Gibt den Speicherort an, an dem Wetterbedingungen gemeldet werden sollen.
-ms.openlocfilehash: f6642b3f477b9fe45ed0e6a43efcd40e21559b7e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: Gibt den Ort an, an dem das Wetter gemeldet werden soll.
+ms.openlocfilehash: a907fb9df02d88d317a73e409ea8738273eb2cb1
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355209"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34539012"
 ---
-# <a name="weather-element-weatherdata-element-outlook-weather-location-schema"></a>Weather-Element (WeatherData-Element) (Outlook Weather Location Schema)
+# <a name="weather-element-weatherdata-element-outlook-weather-location-schema"></a>Weather-Element (WeatherData-Element) (Outlook-Wetter Standort Schema)
 
-Gibt den Speicherort an, an dem Wetterbedingungen gemeldet werden sollen.
+Gibt den Ort an, an dem das Wetter gemeldet werden soll.
   
 ## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[weathertype](weathertype-complextype-outlook-weather-location-schema.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/outlook/15/getweatherlocation.xsd  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/outlook/15/getweatherlocation.xsd  <br/> |
 |**Schemadatei** <br/> |getweatherlocation. xsd  <br/> |
    
 ## <a name="definition"></a>Definition
@@ -43,7 +43,7 @@ Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOc
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[WeatherData](weatherdata-element-outlook-weather-location-schema.md) <br/> ||Definiert das wetterelement.  <br/> |
+|[WeatherData](weatherdata-element-outlook-weather-location-schema.md) <br/> ||Definiert das Weather-Element.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -53,7 +53,7 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|weatherlocationcode  <br/> |xs: Zeichenfolge  <br/> |erforderlich  <br/> |Gibt einen Code an, der dem Speicherort zugeordnet ist, um mehrere Speicherorte mit demselben Namen zu unterscheiden.  <br/> |Ein Wert vom Typ xs: String  <br/> |
+|weatherlocationcode  <br/> |xs: Zeichenfolge  <br/> |erforderlich  <br/> |Gibt einen Code an, der dem Speicherort zugeordnet ist, um mehrere Standorte mit dem gleichen Namen zu unterscheiden.  <br/> |Ein Wert vom Typ xs: String  <br/> |
 |weatherlocationname  <br/> |xs: Zeichenfolge  <br/> |erforderlich  <br/> |Gibt den Namen des Speicherorts an.  <br/> |Ein Wert vom Typ xs: String  <br/> |
    
 

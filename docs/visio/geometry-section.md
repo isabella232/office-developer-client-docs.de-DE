@@ -9,40 +9,40 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 75601a1e-6b1a-27ee-a2bd-69e569315982
 description: Enthält Zeilen, die die Koordinaten der Scheitelpunkte für die Linien und Bögen auflisten, aus denen das Shape besteht.
-ms.openlocfilehash: 32a815015c7d1764399215767b674668b7235832
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: d45f960ecc697dc6f0f5a0efa18e6cbbc6e4fff0
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423909"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34542282"
 ---
 # <a name="geometry-section"></a>Abschnitt "Geometrie"
 
 Enthält Zeilen, die die Koordinaten der Scheitelpunkte für die Linien und Bögen auflisten, aus denen das Shape besteht. 
   
-Die Geometrie einer Form kann in mehreren **Geometrie** Abschnitten ausgedrückt werden. Mehrere Pfade können nützlich sein, wenn mehrere Pfade unterschiedliche Eigenschaften aufweisen (z. b. [Bild](clippingpath-cell-foreign-image-info-section.md) Beschneidungspfade). 
+Die Geometrie eines Shapes kann in mehreren **Geometrie** Abschnitten ausgedrückt werden. Mehrere Pfade können nützlich sein, wenn mehrere Pfade unterschiedliche Eigenschaften haben (beispielsweise [Bild](clippingpath-cell-foreign-image-info-section.md) Beschneidungspfade). 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Der Abschnitt **Geometry** enthält die folgenden Zeilentypen. Weitere Details finden Sie unter den Zellenthemen. 
   
-|**Row**|**Beschreibung**|
+|Row|Beschreibung|
 |:-----|:-----|
 |[MoveTo](moveto-row-geometry-section.md) <br/> |Verschieben zu einer Koordinate.  <br/> |
 |[LineTo](lineto-row-geometry-section.md) <br/> |Eine Linie bis zu einer Koordinate zeichnen.  <br/> |
 |[ArcTo](arcto-row-geometry-section.md) <br/> |Einen kreisförmigen Bogen bis zu einer Koordinate zeichnen.  <br/> |
 |[EllipticalArcTo](ellipticalarcto-row-geometry-section.md) <br/> |Einen elliptischen Bogen bis zu einer Koordinate zeichnen.  <br/> |
-|[PolylineTo](polylineto-row-geometry-section.md) <br/> |Eine Polylinie oder aufeinander folgende Linien bis zu einer Koordinate zeichnen.  <br/> |
-|[NURBSTo](nurbsto-row-geometry-section.md) <br/> |Zeichnen Sie einen nicht einheitlichen rationalen B-Spline (NURBS) zu einer Koordinate.  <br/> |
+|[PolyLineTo](polylineto-row-geometry-section.md) <br/> |Eine Polylinie oder aufeinander folgende Linien bis zu einer Koordinate zeichnen.  <br/> |
+|[NURBSTo](nurbsto-row-geometry-section.md) <br/> |Zeichnen Sie einen nicht einheitlichen rationalen B-Spline (NURBS) in eine Koordinate.  <br/> |
 |[Zeile SplineStart](splinestart-row-geometry-section.md) <br/> |Ein Spline beginnen.  <br/> |
 |[SplineKnot](splineknot-row-geometry-section.md) <br/> |Ein Splinesegment bis zu einer Knotenkoordinate zeichnen.  <br/> |
-|[InfiniteLine](infiniteline-row-geometry-section.md) <br/> |Eine unendliche Linie von einer Koordinate zu einer anderen zeichnen.  <br/> |
+|[Zeile InfiniteLine](infiniteline-row-geometry-section.md) <br/> |Eine unendliche Linie von einer Koordinate zu einer anderen zeichnen.  <br/> |
 |[Ellipse](ellipse-row-geometry-section.md) <br/> |Eine Ellipse von einer Mittelkoordinate und einer großen/kleinen Achse zeichnen.  <br/> |
-|[RelCubBezTo](relcubbezto-row-geometry-section.md) <br/> |Zeichnen Sie eine kubische Bézierkurve relativ zur Breite und Höhe der Form.  <br/> |
+|[RelCubBezTo](relcubbezto-row-geometry-section.md) <br/> |Zeichnen Sie eine kubische Bézier-Kurve relativ zur Breite und Höhe der Form.  <br/> |
 |[RelEllipticalArcTo](relellipticalarcto-row-geometry-section.md) <br/> |Zeichnen Sie einen elliptischen Bogen zu einer Koordinate relativ zur Höhe und Breite der Form.  <br/> |
-|[RelLineTo](rellineto-row-geometry-section.md) <br/> |Ziehen Sie eine Koordinate zu einem Koordinaten relativ zur Höhe und Breite einer Form.  <br/> |
-|[RelMoveTo](relmoveto-row-geometry-section.md) <br/> |Wechseln Sie zu einer Koordinate relativ zur Breite und Höhe der Form.  <br/> |
-|[RelQuadBezTo](relquadbezto-row-geometry-section.md) <br/> |Zeichnet eine quadratische Bézierkurve relativ zur Breite und Höhe der Form.  <br/> |
+|[RelLineTo](rellineto-row-geometry-section.md) <br/> |Zeichnen Sie eine Hilfslinie auf eine Koordinate relativ zur Höhe und Breite eines Shapes.  <br/> |
+|[RelMoveTo](relmoveto-row-geometry-section.md) <br/> |Wechselt zu einer Koordinate relativ zur Breite und Höhe der Form.  <br/> |
+|[RelQuadBezTo](relquadbezto-row-geometry-section.md) <br/> |Zeichnet eine quadratische Bézier-Kurve relativ zur Breite und Höhe der Form.  <br/> |
    
 Wenn Sie einen Zeilentyp in diesem Abschnitt ändern möchten, klicken Sie mit der rechten Maustaste auf die Zeile, und klicken Sie dann im Kontextmenü auf **Zeilentyp ändern**. 
   

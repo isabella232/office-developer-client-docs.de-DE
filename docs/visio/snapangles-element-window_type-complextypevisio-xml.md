@@ -1,5 +1,5 @@
 ---
-title: SnapAngles-Element (Window_Type complexType) (' Visio XML ')
+title: SnapAngles-Element (Window_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,14 +7,14 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 5997f374-303a-92b6-6dd3-87ef81104af4
 description: Enthält eine Auflistung von SnapAngle-Elementen.
-ms.openlocfilehash: 09a975b280a99fdc2535503b587efdd2143cf18b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 4dff3d2fa42183c11d2a0ad78e4b4b36a3ce55e2
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32334636"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34540364"
 ---
-# <a name="snapangles-element-windowtype-complextype-visio-xml"></a>SnapAngles-Element (Window_Type complexType) (' Visio XML ')
+# <a name="snapangles-element-windowtype-complextype-visio-xml"></a>SnapAngles-Element (Window_Type complexType) (Visio XML)
 
 Enthält eine Auflistung von **SnapAngle** -Elementen. 
   
@@ -23,7 +23,7 @@ Enthält eine Auflistung von **SnapAngle** -Elementen.
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[SnapAngles_Type](snapangles_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
 |**Dokumentteile** <br/> |Windows. XML  <br/> |
    
@@ -48,7 +48,7 @@ Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOc
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[SnapAngle](snapangle-element-snapangles_type-complextypevisio-xml.md) <br/> |[SnapAngle_Type](snapangle_type-complextypevisio-xml.md) <br/> |Enthält eine Gleitkommazahl, die einen Einrastwinkel in Grad angibt.  <br/> |
+|[SnapAngle](snapangle-element-snapangles_type-complextypevisio-xml.md) <br/> |[SnapAngle_Type](snapangle_type-complextypevisio-xml.md) <br/> |Enthält eine Gleitkommazahl, die einen fangwinkel in Grad angibt.  <br/> |
    
 ### <a name="attributes"></a>Attribute
 

@@ -1,29 +1,29 @@
 ---
-title: Primary-Element (DataRecordSet_Type complexType) (' Visio XML ')
+title: Primary-Element (DataRecordSet_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 47533e6e-0a48-af61-a0c2-b2cec140ae4b
-description: Identifiziert eine oder mehrere Primärschlüsselspalten im Datenrecordset.
-ms.openlocfilehash: c001c343c33e65c3990744b885f1c345575b1ab3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: Gibt eine oder mehrere Primärschlüsselspalten im Datenrecordset an.
+ms.openlocfilehash: bd77b1d18490695dc2b0cb43520f42bb845e91ab
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355996"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34537710"
 ---
-# <a name="primarykey-element-datarecordsettype-complextype-visio-xml"></a>Primary-Element (DataRecordSet_Type complexType) (' Visio XML ')
+# <a name="primarykey-element-datarecordsettype-complextype-visio-xml"></a>Primary-Element (DataRecordSet_Type complexType) (Visio XML)
 
-Identifiziert eine oder mehrere Primärschlüsselspalten im Datenrecordset.
+Gibt eine oder mehrere Primärschlüsselspalten im Datenrecordset an.
   
 ## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[PrimaryKey_Type](primarykey_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
 |**Dokumentteile** <br/> |Recordsets. XML  <br/> |
    
@@ -48,12 +48,12 @@ Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOc
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[RowKeyValue](rowkeyvalue-element-primarykey_type-complextypevisio-xml.md) <br/> |[RowKeyValue_Type](rowkeyvalue_type-complextypevisio-xml.md) <br/> |Gibt den Wert dieser Komponente des Primärschlüssels für eine einzelne Zeile eines Recordset-Objekts an. Dieses untergeordnete Element muss mindestens ein Vorkommen aufweisen.  <br/> |
+|[RowKeyValue](rowkeyvalue-element-primarykey_type-complextypevisio-xml.md) <br/> |[RowKeyValue_Type](rowkeyvalue_type-complextypevisio-xml.md) <br/> |Gibt den Wert dieser Komponente des Primärschlüssels für eine einzelne Zeile eines Recordset-Objekts an. Es muss mindestens ein Vorkommen dieses untergeordneten Elements vorhanden sein.  <br/> |
    
 ### <a name="attributes"></a>Attribute
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|ColumnName-Nr.  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Gibt den Namen eines Felds an, das eine Komponente des Primärschlüssels darstellt. Es muss der Wert des **ColumnName** -Attributs eines DataColumn_Type-Nachfolger Elements des DataRecordSet_Type sein, dessen Primärschlüssel angegeben wird.  <br/> |Werte des XSD: String-Typs.  <br/> |
+|Spaltenname  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Gibt den Namen eines Felds an, das eine Komponente des Primärschlüssels ist. Es muss sich um den Wert des Attributs " **ColumnName** " eines DataColumn_Type-Nachfolger Elements des DataRecordSet_Type handeln, dessen Primärschlüssel angegeben wird.  <br/> |Werte des Typs XSD: String.  <br/> |
    
 

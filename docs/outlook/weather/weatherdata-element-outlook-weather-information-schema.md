@@ -1,5 +1,5 @@
 ---
-title: WeatherData-Element (Outlook Weather Information-Schema)
+title: WeatherData-Element (Outlook-Wetter Informations Schema)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,24 +7,24 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 84b16927-964e-24be-feaa-e0c11cf062f3
-description: Definiert das wetterelement.
-ms.openlocfilehash: 2273f7ce6c6a04464ea3da430661c3d6f410cc9f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: Definiert das Weather-Element.
+ms.openlocfilehash: bb8c76efd03661083a15aa315cf42c3a6c088b6f
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355076"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34538984"
 ---
-# <a name="weatherdata-element-outlook-weather-information-schema"></a>WeatherData-Element (Outlook Weather Information-Schema)
+# <a name="weatherdata-element-outlook-weather-information-schema"></a>WeatherData-Element (Outlook-Wetter Informations Schema)
 
-Definiert das wetterelement.
+Definiert das Weather-Element.
   
 ## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> ||
-|**Namespace** <br/> |https://schemas.microsoft.com/office/outlook/15/getweatherinfo.xsd  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/outlook/15/getweatherinfo.xsd  <br/> |
 |**Schemadatei** <br/> |GetWeatherInfo. xsd  <br/> |
    
 ## <a name="definition"></a>Definition
@@ -56,7 +56,7 @@ Keine.
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Wetter](weather-element-weatherdata-elementoutlook-weather-information-schema.md) <br/> |[weathertype](weathertype-complextype-outlook-weather-information-schema.md) <br/> |Gibt die Wetterbedingungen für einen Standort an.  <br/> |
+|[Wetter](weather-element-weatherdata-elementoutlook-weather-information-schema.md) <br/> |[weathertype](weathertype-complextype-outlook-weather-information-schema.md) <br/> |Gibt die Wetterbedingungen eines Standorts an.  <br/> |
    
 ### <a name="attributes"></a>Attribute
 

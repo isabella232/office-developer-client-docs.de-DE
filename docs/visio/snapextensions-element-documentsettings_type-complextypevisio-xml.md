@@ -1,29 +1,29 @@
 ---
-title: SnapExtensions-Element (DocumentSettings_Type complexType) (' Visio XML ')
+title: SnapExtensions-Element (DocumentSettings_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: d55b6676-125f-7cf1-509d-21dee548f5a1
-description: Gibt an, ob eine bestimmte Ausrichtungs Erweiterungseinstellung für das aktive Fenster aktiviert oder deaktiviert ist.
-ms.openlocfilehash: 9f21653fca7f1f5fa7be7449f1e588cf5ef67263
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: Gibt an, ob eine bestimmte Einstellung für die Ausrichtungs Erweiterung für das aktive Fenster aktiviert oder deaktiviert ist.
+ms.openlocfilehash: 86ff7f32d6e12b2f0d7a8387d8e5b7ae9870b5fa
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32334531"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34540378"
 ---
-# <a name="snapextensions-element-documentsettingstype-complextype-visio-xml"></a>SnapExtensions-Element (DocumentSettings_Type complexType) (' Visio XML ')
+# <a name="snapextensions-element-documentsettingstype-complextype-visio-xml"></a>SnapExtensions-Element (DocumentSettings_Type complexType) (Visio XML)
 
-Gibt an, ob eine bestimmte Ausrichtungs Erweiterungseinstellung für das aktive Fenster aktiviert oder deaktiviert ist. 
+Gibt an, ob eine bestimmte Einstellung für die Ausrichtungs Erweiterung für das aktive Fenster aktiviert oder deaktiviert ist. 
   
 ## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[SnapExtensions_Type](snapextensions_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
 |**Dokumentteile** <br/> |Document. XML  <br/> |
    
@@ -52,25 +52,25 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Der Wert des **SnapExtensions** -Elements kann eine Summe der Werte in der folgenden Tabelle sein. 
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
 |0  <br/> |Nicht ausrichten.  <br/> |
-|1  <br/> |Ausrichtungsfeld Erweiterung.  <br/> |
-|2  <br/> |An der Mittelachse anDocken.  <br/> |
-|4  <br/> |An Kurventangenten Erweiterung ausrichten.  <br/> |
+|1  <br/> |Erweiterung für Ausrichtungsfeld ausrichten.  <br/> |
+|2  <br/> |Ausrichten an der Mittelachse-Erweiterung.  <br/> |
+|4  <br/> |An Kurve tangentiale Erweiterung ausrichten.  <br/> |
 |8  <br/> |An Endpunkt Erweiterung ausrichten.  <br/> |
-|16  <br/> |AnDocken an Mittelpunkt.  <br/> |
+|16  <br/> |An Mittelpunkt Erweiterung ausrichten.  <br/> |
 |32  <br/> |An lineare Erweiterung ausrichten.  <br/> |
 |64  <br/> |An Kurven Erweiterung ausrichten.  <br/> |
-|128  <br/> |An Endpunkt senkrecht anDocken.  <br/> |
-|256  <br/> |An Mittelpunkt senkrecht anDocken.  <br/> |
-|512  <br/> |An Endpunkt horizontaler Durchwahl ausrichten.  <br/> |
-|1024  <br/> |Ausrichtung an Endpunkt vertikaler Durchwahl.  <br/> |
+|128  <br/> |Lotrechte Erweiterung an Endpunkt ausrichten.  <br/> |
+|256  <br/> |Senkrecht zur Mitte ausrichten.  <br/> |
+|512  <br/> |Horizontale Erweiterung an Endpunkt ausrichten.  <br/> |
+|1024  <br/> |Vertikale Erweiterung an Endpunkt ausrichten.  <br/> |
 |2048  <br/> |An Ellipse Center-Erweiterung ausrichten.  <br/> |
-|4096  <br/> |An isometrische Winkel Erweiterung ausrichten.  <br/> |
+|4096  <br/> |Andocken an isometrischer Winkel Erweiterung.  <br/> |
    
 

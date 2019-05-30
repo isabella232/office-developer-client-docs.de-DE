@@ -13,12 +13,12 @@ dev_langs:
 f1_categories:
 - Office.Version=v15
 localization_priority: Normal
-ms.openlocfilehash: b37fb96ddfeaabc97c6f445f8951876e8026fbfe
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: a180068e805ae11883822ebf26f924e10d34bac5
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296857"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34538116"
 ---
 # <a name="before-change-macro-event"></a>Makroereignis "Vor Änderung"
 
@@ -29,11 +29,11 @@ Das Ereignis **Vor Änderung** tritt ein, wenn ein Datensatz geändert wird, jed
 > [!NOTE]
 > Das Ereignis **Vor Änderung** ist nur in Datenmakros verfügbar.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Mit dem Ereignis **Vor Änderung** führen Sie sämtliche Aktionen vor dem Ändern eines Datensatzes aus. Das Ereignis **Vor Änderung** wird häufig verwendet, um Überprüfungen auszuführen und benutzerdefinierte Fehlermeldungen auszugeben.
 
-Sie können die **aktualisierte ("*Feldname*")-** Funktion verwenden, um zu bestimmen, ob ein Feld geändert wurde. Im folgenden Codebeispiel wird gezeigt, wie mit einer **if** -Anweisung bestimmt wird, ob das PaidInFull-Feld geändert wurde.
+Mithilfe der Funktion **Aktualisiert(„*Feldname*“) ** können Sie feststellen, ob sich ein Feld verändert hat. Im folgenden Codebeispiel wird die Verwendung einer **if** -Anweisung gezeigt, um zu bestimmen, ob das PaidInFull-Feld geändert wurde.
 
 ```vb
     If  Updated("PaidInFull")   Then 
@@ -103,7 +103,7 @@ In der folgenden Tabelle sind Makros ausgeführt, die im Ereignis **Vor Änderun
 </tr>
 <tr class="even">
 <td><p>Datenblock</p></td>
-<td><p><a href="lookuprecord-data-block.md">LookupRecord-Makroaktion</a></p></td>
+<td><p><a href="lookuprecord-data-block.md">Nachschlagendatensatz-Makroaktion</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Datenaktion</p></td>
@@ -180,12 +180,12 @@ Zum Anzeigen dieses Beispiels im Makro-Designer gehen Sie folgendermaßen vor:
 
 3.  Wählen Sie den Code im folgenden Codebeispiel aus, und drücken Sie dann **STRG + C** , um ihn in die Zwischenablage zu kopieren.
 
-4.  Aktivieren Sie das Makro-Designer-Fenster, und drücken Sie dann **STRG + V**.
+4.  Aktivieren Sie das Fenster Makro-Designer, und drücken Sie dann **STRG + V**.
 
 
 
 ```xml
-<DataMacros xmlns="https://schemas.microsoft.com/office/accessservices/2009/04/application"> 
+<DataMacros xmlns="http://schemas.microsoft.com/office/accessservices/2009/04/application"> 
   <DataMacro Event="BeforeChange"> 
     <Statements> 
       <Comment>Check to ensure that if the bug is resloved that the user has selected a resolution </Comment> 
@@ -228,7 +228,7 @@ Zum Anzeigen dieses Beispiels im Makro-Designer gehen Sie folgendermaßen vor:
 </DataMacros>
 ```
 
-Das folgende Beispiel zeigt, wie Sie die Auslösenfehler-Aktion verwenden, um das makroereignis Before Change Data abzubrechen. Wenn das Feld ZugewiesenAn aktualisiert wird, wird ein LookupRecord-Datenblock verwendet, um zu bestimmen, ob der zugewiesene Techniker derzeit einer offenen Serviceanforderung zugeordnet ist. Wenn dies auf true festgelegt ist, wird das Before Change-Ereignis abgebrochen, und der Datensatz wird nicht aktualisiert.
+Im folgenden Beispiel wird gezeigt, wie Sie mit der auslösenfehler-Aktion das makroereignis vor Änderungsdaten abbrechen. Wenn das Feld AssignedTo aktualisiert wird, wird ein nachschlagendatensatz-Datenblock verwendet, um zu bestimmen, ob der zugewiesene Techniker derzeit einer offenen Dienstanforderung zugewiesen ist. Wenn dies der Fall ist, wird das Before Change-Ereignis abgebrochen, und der Datensatz wird nicht aktualisiert.
 
 **Der Beispielcode stammt von:**[Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
 
