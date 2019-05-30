@@ -7,27 +7,27 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 83afbdef-4f12-4673-a0c1-bbf86274558f
-description: 'Das XML-Beispiel in diesem Thema ist eine Friend-XML-Zeichenfolge, die an den Outlook Connector für soziale Netzwerke (OSC) zurückgegeben wird, nachdem Sie die ISocialPerson:: GetFriendsAndColleagues-Methode aufgerufen hat. Im Beispiel wird der Freundes-XML für zwei Freunde angezeigt, die jeweils durch das Person-Element getrennt sind. Jeder Freund gibt einen eindeutigen Wert für das userID-Element im sozialen Netzwerk an.'
-ms.openlocfilehash: 5dbda1e4439f807ccc6e7abddd0ef654ae801fe0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: 'Das XML-Beispiel in diesem Thema ist eine Friend-XML-Zeichenfolge, die an die Connector für soziale Netzwerke (OSC) zurückgegeben wird, nachdem Sie die ISocialPerson:: GetFriendsAndColleagues-Methode aufgerufen hat. Das Beispiel zeigt die Friends-XML für zwei Freunde, die jeweils durch das Person-Element getrennt werden. Jeder Friend gibt einen eindeutigen Wert für das UserID-Element im sozialen Netzwerk an.'
+ms.openlocfilehash: 593019ec4dcd1b9b578bfe275fb8e6664bbd11a9
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280959"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34542226"
 ---
-# <a name="friends-xml-example"></a><span data-ttu-id="8dd8e-105">XML-Beispiel für „friends“</span><span class="sxs-lookup"><span data-stu-id="8dd8e-105">Friends XML example</span></span>
+# <a name="friends-xml-example"></a><span data-ttu-id="2276a-105">XML-Beispiel für „friends“</span><span class="sxs-lookup"><span data-stu-id="2276a-105">Friends XML example</span></span>
 
-<span data-ttu-id="8dd8e-106">Das XML-Beispiel in diesem Thema ist eine Friend-XML-Zeichenfolge, die an den Outlook Connector für soziale Netzwerke (OSC) zurückgegeben wird, nachdem Sie die [ISocialPerson:: GetFriendsAndColleagues](isocialperson-getfriendsandcolleagues.md) -Methode aufgerufen hat.</span><span class="sxs-lookup"><span data-stu-id="8dd8e-106">The XML example in this topic is a friend XML string returned to the Outlook Social Connector (OSC) after it calls the [ISocialPerson::GetFriendsAndColleagues](isocialperson-getfriendsandcolleagues.md) method.</span></span> <span data-ttu-id="8dd8e-107">Im Beispiel wird der **Freundes** -XML für zwei Freunde angezeigt, die jeweils durch das **Person** -Element getrennt sind.</span><span class="sxs-lookup"><span data-stu-id="8dd8e-107">The example shows the **friends** XML for two friends, each delimited by the **person** element.</span></span> <span data-ttu-id="8dd8e-108">Jeder Freund gibt einen eindeutigen Wert für das **UserID** -Element im sozialen Netzwerk an.</span><span class="sxs-lookup"><span data-stu-id="8dd8e-108">Each friend specifies a unique value for the **userID** element on the social network.</span></span> 
+<span data-ttu-id="2276a-106">Das XML-Beispiel in diesem Thema ist eine Friend-XML-Zeichenfolge, die an die Connector für soziale Netzwerke (OSC) zurückgegeben wird, nachdem Sie die [ISocialPerson:: GetFriendsAndColleagues](isocialperson-getfriendsandcolleagues.md) -Methode aufgerufen hat.</span><span class="sxs-lookup"><span data-stu-id="2276a-106">The XML example in this topic is a friend XML string returned to the Outlook Social Connector (OSC) after it calls the [ISocialPerson::GetFriendsAndColleagues](isocialperson-getfriendsandcolleagues.md) method.</span></span> <span data-ttu-id="2276a-107">Das Beispiel zeigt die **friends** -XML für zwei Freunde, die jeweils durch das **Person** -Element getrennt werden.</span><span class="sxs-lookup"><span data-stu-id="2276a-107">The example shows the **friends** XML for two friends, each delimited by the **person** element.</span></span> <span data-ttu-id="2276a-108">Jeder Friend gibt einen eindeutigen Wert für das **UserID** -Element im sozialen Netzwerk an.</span><span class="sxs-lookup"><span data-stu-id="2276a-108">Each friend specifies a unique value for the **userID** element on the social network.</span></span> 
   
-<span data-ttu-id="8dd8e-109">Die verbleibenden Elemente des **friends** -XML haben selbsterklärende Namen.</span><span class="sxs-lookup"><span data-stu-id="8dd8e-109">The remaining elements of the **friends** XML have self-explanatory names.</span></span> <span data-ttu-id="8dd8e-110">Eine ausführliche Beschreibung dieser Elemente finden Sie unter [XML for friends](xml-for-friends.md).</span><span class="sxs-lookup"><span data-stu-id="8dd8e-110">For detailed description of these elements, see [XML for Friends](xml-for-friends.md).</span></span> 
+<span data-ttu-id="2276a-109">Die restlichen Elemente des **friends** -XML weisen selbsterklärende Namen auf.</span><span class="sxs-lookup"><span data-stu-id="2276a-109">The remaining elements of the **friends** XML have self-explanatory names.</span></span> <span data-ttu-id="2276a-110">Eine ausführliche Beschreibung dieser Elemente finden Sie unter [XML for friends](xml-for-friends.md).</span><span class="sxs-lookup"><span data-stu-id="2276a-110">For detailed description of these elements, see [XML for Friends](xml-for-friends.md).</span></span> 
   
-## <a name="xml-example"></a><span data-ttu-id="8dd8e-111">XML-Beispiel</span><span class="sxs-lookup"><span data-stu-id="8dd8e-111">XML example</span></span>
+## <a name="xml-example"></a><span data-ttu-id="2276a-111">XML-Beispiel</span><span class="sxs-lookup"><span data-stu-id="2276a-111">XML example</span></span>
 
-<span data-ttu-id="8dd8e-112">Das folgende Beispiel zeigt die **Freunde** -XML für zwei Personen im sozialen Netzwerk.</span><span class="sxs-lookup"><span data-stu-id="8dd8e-112">The following example shows the **friends** XML for two persons on the social network.</span></span> 
+<span data-ttu-id="2276a-112">Das folgende Beispiel zeigt die XML- **Freunde** für zwei Personen im sozialen Netzwerk.</span><span class="sxs-lookup"><span data-stu-id="2276a-112">The following example shows the **friends** XML for two persons on the social network.</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<friends xmlns="https://schemas.microsoft.com/office/outlook/2010/06/socialprovider.xsd">
+<friends xmlns="http://schemas.microsoft.com/office/outlook/2010/06/socialprovider.xsd">
   <person>
     <userID>4667647</userID>
     <firstName>Melissa</firstName>
@@ -78,10 +78,10 @@ ms.locfileid: "32280959"
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="8dd8e-113">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="8dd8e-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2276a-113">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="2276a-113">See also</span></span>
 
-- [<span data-ttu-id="8dd8e-114">OSC-Anbieter-XML-Beispiele</span><span class="sxs-lookup"><span data-stu-id="8dd8e-114">OSC Provider XML Examples</span></span>](osc-provider-xml-examples.md)  
-- [<span data-ttu-id="8dd8e-115">XML-Beispiel für Funktionen</span><span class="sxs-lookup"><span data-stu-id="8dd8e-115">Capabilities XML Example</span></span>](capabilities-xml-example.md) 
-- [<span data-ttu-id="8dd8e-116">XML-Beispiel für Aktivitätsfeeds</span><span class="sxs-lookup"><span data-stu-id="8dd8e-116">Activity Feed XML Example</span></span>](activity-feed-xml-example.md) 
-- [<span data-ttu-id="8dd8e-117">XML-Schema des Anbieters für soziale Netzwerke in Outlook</span><span class="sxs-lookup"><span data-stu-id="8dd8e-117">Outlook Social Connector Provider XML Schema</span></span>](outlook-social-connector-provider-xml-schema.md)
+- [<span data-ttu-id="2276a-114">XML-Beispiele für osc-Anbieter</span><span class="sxs-lookup"><span data-stu-id="2276a-114">OSC Provider XML Examples</span></span>](osc-provider-xml-examples.md)  
+- [<span data-ttu-id="2276a-115">XML-Beispiel für Funktionen</span><span class="sxs-lookup"><span data-stu-id="2276a-115">Capabilities XML Example</span></span>](capabilities-xml-example.md) 
+- [<span data-ttu-id="2276a-116">XML-Beispiel für Aktivitätsfeeds</span><span class="sxs-lookup"><span data-stu-id="2276a-116">Activity Feed XML Example</span></span>](activity-feed-xml-example.md) 
+- [<span data-ttu-id="2276a-117">Connector für soziale Netzwerke Anbieter-XML-Schema</span><span class="sxs-lookup"><span data-stu-id="2276a-117">Outlook Social Connector Provider XML Schema</span></span>](outlook-social-connector-provider-xml-schema.md)
 

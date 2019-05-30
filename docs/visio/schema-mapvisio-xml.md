@@ -1,22 +1,22 @@
 ---
-title: Schema Zuordnung (' Visio XML ')
+title: Schema Zuordnung (Visio XML)
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 3ff1f2e1-bdfe-2766-3c0f-0f299cc256e9
-description: In diesem Thema wird die XML-Schema Definition für das Visio 2013-Dateiformat dargestellt.
-ms.openlocfilehash: 5332659d4365fe609d4eb8af5c1a87b108b1baee
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: In diesem Thema wird die XML-Schema Definition für das Visio 2013 Dateiformat veranschaulicht.
+ms.openlocfilehash: 1822134546b730ceecb2f30183b4a8c325f37906
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326544"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34539082"
 ---
-# <a name="schema-map-visio-xml"></a><span data-ttu-id="031d7-103">Schema Zuordnung (' Visio XML ')</span><span class="sxs-lookup"><span data-stu-id="031d7-103">Schema map ('Visio XML')</span></span>
+# <a name="schema-map-visio-xml"></a><span data-ttu-id="57628-103">Schema Zuordnung (Visio XML)</span><span class="sxs-lookup"><span data-stu-id="57628-103">Schema map (Visio XML)</span></span>
 
-<span data-ttu-id="031d7-104">In diesem Thema wird die XML-Schema Definition für das Visio 2013-Dateiformat dargestellt.</span><span class="sxs-lookup"><span data-stu-id="031d7-104">This topic shows the XML schema definition for the Visio 2013 file format.</span></span>
+<span data-ttu-id="57628-104">In diesem Thema wird die XML-Schema Definition für das Visio 2013 Dateiformat veranschaulicht.</span><span class="sxs-lookup"><span data-stu-id="57628-104">This topic shows the XML schema definition for the Visio 2013 file format.</span></span>
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -24,7 +24,7 @@ ms.locfileid: "32326544"
     Visio VSDX Schema
     Copyright (C) 2013 Microsoft Corporation. All rights reserved.
 -->
-<xsd:schema xmlns:xsd="https://www.w3.org/2001/XMLSchema" targetNamespace="https://schemas.microsoft.com/office/visio/2011/1/core" xmlns="https://schemas.microsoft.com/office/visio/2011/1/core" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xsd:schema xmlns:xsd="https://www.w3.org/2001/XMLSchema" targetNamespace="http://schemas.microsoft.com/office/visio/2011/1/core" xmlns="http://schemas.microsoft.com/office/visio/2011/1/core" elementFormDefault="qualified" attributeFormDefault="unqualified">
     <xsd:annotation>
         <xsd:documentation>
             Permission to copy, display and distribute the contents of this document (the "Specification"), in any medium for any purpose without fee or royalty is hereby granted, provided that you include the following notice on ALL copies of the Specification, or portions thereof, that you make:
