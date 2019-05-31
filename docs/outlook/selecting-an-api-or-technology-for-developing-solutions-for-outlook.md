@@ -6,12 +6,12 @@ ms.audience: Developer
 ms.assetid: 01a46083-03d0-4333-920c-01a9f17f68cb
 description: In diesem Artikel werden die APIs und Technologien beschrieben, mit denen Sie Outlook 2013 und Outlook 2016 erweitern können, und Sie erhalten Entscheidungshilfen bei der Auswahl der geeigneten API oder Technologie für Ihr Szenario.
 localization_priority: Priority
-ms.openlocfilehash: 54931ea9235e549a8fb4338c425123b99c2b11e4
-ms.sourcegitcommit: 9716521f7bcd531f93be9855ae7835be20cdd0e2
+ms.openlocfilehash: ac7ad2f183ed71ae893745429c6d27793a983be3
+ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34250426"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34538396"
 ---
 # <a name="selecting-an-api-or-technology-for-developing-solutions-for-outlook"></a>Auswählen einer API oder Technologie für die Entwicklung von Lösungen für Outlook
 
@@ -293,7 +293,7 @@ Verwenden Sie im Allgemeinen das Objektmodell oder die PIA, wenn Ihre Lösung di
 ![Process Outlook events](media/odc_ol15_ta_SelectingTech_Fig2-4.gif)
 ![Automate Outlook](media/odc_ol15_ta_SelectingTech_Fig2-5.gif)-->
 
-### <a name="additional-scenarios-supported-by-the-object-model-or-pia-since-outlook-2007"></a>Zusätzliche Szenarien werden vom Outlook-Objektmodell oder PIA seit Outlook 2007 unterstützt.
+### <a name="scenarios-supported-by-the-object-model-or-pia-since-outlook-2007"></a>Szenarien, die vom Outlook-Objektmodell oder PIA seit Outlook 2007 unterstützt werden
 
 Wenn Ihre Outlook-Lösung neben den Grundszenarien eines der in der folgenden Liste gezeigten Szenarien unterstützt und mit Outlook 2007 oder einer späteren Version ausgeführt werden soll, nicht jedoch mit einer früheren Version, können Sie auch das Objektmodell oder die PIA verwenden. In diesem Abschnitt werden die Hauptobjekte oder -mitglieder gezeigt, mit denen Sie im Outlook-Objektmodell die einzelnen Szenarien erweitern können (ausgenommen die [IDTExtensibility2](https://docs.microsoft.com/dotnet/api/extensibility.idtextensibility2?view=visualstudiosdk-2017) -Schnittstelle im Visual Studio-Automatisierungsobjektmodell und die [IRibbonExtensibility](https://docs.microsoft.com/office/vba/api/Office.IRibbonExtensibility)-Schnittstelle im Office-Objektmodell, die Sie in das Outlook-Objektmodell integrieren können). 
 
@@ -325,7 +325,7 @@ Wenn Ihre Outlook-Lösung neben den Grundszenarien eines der in der folgenden Li
 ![Store private data for solutions](media/odc_ol15_ta_SelectingAPI_Fig3-12.gif)
 -->
 
-### <a name="more-scenarios-supported-by-the-object-model-or-pia-since-outlook-2010"></a>Weitere Szenarien werden vom Outlook-Objektmodell oder PIA seit Outlook 2010 unterstützt
+### <a name="scenarios-supported-by-the-object-model-or-pia-since-outlook-2010"></a>Szenarien, die vom Outlook-Objektmodell oder PIA seit Outlook 2010 unterstützt werden
 
 Wenn Ihre Outlook-Lösung mit Outlook 2010 und nicht mit früheren Versionen ausgeführt werden soll, können Sie das Objektmodell oder die PIA verwenden, um die im nächsten Abschnitt gezeigten Szenarien zu unterstützen. Dieser Abschnitt gibt die Hauptobjekte oder -mitglieder an, mit denen Sie im Outlook-Objektmodell die einzelnen Szenarien erweitern können (ausgenommen die Schnittstellen [IRibbonControl](https://docs.microsoft.com/office/vba/api/Office.IRibbonControl), [IRibbonExtensibility](https://docs.microsoft.com/office/vba/api/Office.IRibbonExtensibility) und [IRibbonUI](https://docs.microsoft.com/office/vba/api/Office.IRibbonUI) im Office-Objektmodell, die Sie in das Outlook-Objektmodell integrieren können). 
    
@@ -347,7 +347,7 @@ Wenn Ihre Outlook-Lösung mit Outlook 2010 und nicht mit früheren Versionen aus
 ![Organize solution-specific folders](media/odc_ol15_ta_SelectingAPI_Fig4-7.gif)
 -->
 
-### <a name="additional-scenarios-supported-by-the-object-model-or-pia-since-outlook-2013"></a>Zusätzliche Szenarien werden vom Outlook-Objektmodell oder PIA seit Outlook 2013 unterstützt.
+### <a name="scenarios-supported-by-the-object-model-or-pia-since-outlook-2013"></a>Szenarien, die vom Outlook-Objektmodell oder PIA seit Outlook 2013 unterstützt werden
 
 Wenn Ihre Outlook-Lösung mit Outlook 2013 und nicht mit früheren Versionen ausgeführt werden soll, können Sie das Objektmodell oder die PIA verwenden, um die im Folgenden gezeigten Szenarien zu unterstützen.
 
