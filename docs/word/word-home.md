@@ -34,8 +34,7 @@ Hier finden Sie Vorgehensweisen, Beispielcode, SDK- und API-Dokumentationen, VBA
   
 ### <a name="code-samples"></a>Codebeispiele
   
-- 
-  [Word-Codebeispiele im Office Dev Center](https://developer.microsoft.com/word/gallery/?filterBy=Word,Samples)
+- [Word-Codebeispiele im Office Dev Center](https://developer.microsoft.com/word/gallery/?filterBy=Word,Samples)
   
 ### <a name="other-resources"></a>Sonstige Ressourcen
   
