@@ -4,29 +4,29 @@ TOCTitle: Comparison of Microsoft Access SQL and ANSI SQL
 ms:assetid: 0686f98f-10fe-0e02-e9d1-84ff3e755b57
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff844937(v=office.15)
 ms:contentKeyID: 48543052
-ms.date: 09/18/2015
+ms.date: 06/13/2019
 mtps_version: v=office.15
 localization_priority: Normal
-ms.openlocfilehash: 195d9f5d882fd252b1b10e937fe851c4830c52d3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 4e9f30401891452970fdbe80123fc373e26f26c6
+ms.sourcegitcommit: d0e1ce095a478d90411abb8c147eb9efe19ffa5f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296052"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "34870857"
 ---
 # <a name="comparison-of-microsoft-access-sql-and-ansi-sql"></a>Microsoft Access SQL und ANSI SQL im Vergleich
 
 **Gilt für**: Access 2013, Office 2013
 
-Das Microsoft Access-Datenbankmodul SQL ist im Allgemeinen mit ANSI-89 Level 1 kompatibel. Bestimmte ANSI SQL-Features sind jedoch nicht in Microsoft Access SQL implementiert. Umgekehrt umfasst Microsoft Access SQL reservierte Wörter und Features, die nicht in ANSI SQL unterstützt werden.
+Das Microsoft Access-Datenbankmodul SQL ist im Allgemeinen mit ANSI-89 Level 1 kompatibel. Bestimmte ANSI SQL-Features werden jedoch nicht in Microsoft Access SQL implementiert. Umgekehrt umfasst Microsoft Access SQL reservierte Wörter und Features, die nicht in ANSI SQL unterstützt werden.
 
 ## <a name="major-differences"></a>Wesentliche Unterschiede
 
 - Microsoft Access SQL und ANSI SQL verfügen über unterschiedliche reservierte Wörter und Datentypen. Weitere Informationen finden Sie unter [Reservierte Wörter für das Microsoft Access-Datenbankmodul SQL](sql-reserved-words.md) und [Gleichwertige ANSI SQL-Datentypen](equivalent-ansi-sql-data-types.md). Bei der Verwendung des OLE DB-Anbieters für das Microsoft Office 12.0 Access-Datenbankmodul sind zusätzliche reservierte Wörter vorhanden.
 
-- **[Between…And](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/and-operator)**
+- **[Between…And](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/between-and-operator)**
     
-  *expr1* \[Nicht\] **zwischen** *Wert1* **und** *value2*
+  *expr1* \[Nicht\] **zwischen** *value1* **und** *value2*
     
   In Microsoft Access SQL kann *Wert1* größer sein als *Wert2*. In ANSI SQL dagegen muss *Wert1* kleiner oder gleich *Wert2* sein.
 
