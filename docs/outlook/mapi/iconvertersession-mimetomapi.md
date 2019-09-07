@@ -1,7 +1,7 @@
 ---
 title: IConverterSessionMIMEToMAPI
 manager: soliver
-ms.date: 03/09/2015
+ms.date: 09/06/2019
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
@@ -11,13 +11,13 @@ api_name:
 api_type:
 - COM
 ms.assetid: ee190ba7-9e71-97e4-7bf1-7b97adc73eed
-description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 356f4470be26ae3803a53af1cec34b3ac6eb0cc9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: 'Letzte Änderung: September 06, 2019'
+ms.openlocfilehash: f6f671cbfd5e14d602aaa31d31e54e859f068593
+ms.sourcegitcommit: 27a9f3568318470e7ee09ad93a90c3f80d3ef0cd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326929"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36790771"
 ---
 # <a name="iconvertersessionmimetomapi"></a>IConverterSession::MIMEToMAPI
 
@@ -44,7 +44,7 @@ HRESULT IConverterSession:: MIMEToMAPI (
     
  _pmsg_
   
-> Timeout Zeiger auf die zu ladende Nachricht. Weitere Informationen finden Sie unter mapidefs. h für die Typdefinition von **LPMESSAGE**.
+> in Zeiger auf die zu ladende Nachricht. Der Aufrufer muss eine Nachricht angeben, damit die API ausgefüllt wird, damit das Objekt [in] gehen muss. Weitere Informationen finden Sie unter mapidefs. h für die Typdefinition von **LPMESSAGE**.
     
  _pszSrcSrv_
   
@@ -79,7 +79,7 @@ E_INVALIDARG
   
 > Gibt an, dass _pstm_ **null**ist, _pmsg_ ist **null**, oder _ulFlags_ ist ungültig. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie **CCSF_USE_RTF** als Teil von _ulFlags_ angegeben haben und der Ziel Nachrichtenspeicher sowohl HTML als auch RTF unterstützt, wird die MAPI-Nachricht entweder in HTML oder in RTF konvertiert. Wenn die Nachricht in RTF konvertiert wird, wird das konvertierte Format in RTF komprimiert, alle HTML-Elemente werden in die komprimierte RTF-Zeichenfolge eingebettet, und die Zeichenfolge wird in der [kanonischen PidTagRtfCompressed-Eigenschaft](pidtagrtfcompressed-canonical-property.md)enthalten sein.
   
