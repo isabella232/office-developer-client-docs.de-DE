@@ -552,8 +552,7 @@ In den folgenden Ressourcen finden Sie weitere Informationen zur Verwendung des 
 
 - [Anhängen einer Datei an eine E-Mail-Nachricht](https://msdn.microsoft.com/library/1d94629b-e713-92cb-32de-c8910612e861%28Office.15%29.aspx)
     
-- 
-  [Anlagendateitypen eingeschränkt von Outlook 2010](https://technet.microsoft.com/de-DE/library/cc179163.aspx)
+- [Anlagendateitypen eingeschränkt von Outlook 2010](https://technet.microsoft.com/de-DE/library/cc179163.aspx)
     
 - [Attachment](https://msdn.microsoft.com/library/3e11582b-ac90-0948-bc37-506570bb287b%28Office.15%29.aspx)-Objekt 
     
@@ -753,8 +752,7 @@ Siehe hierzu die folgenden aufgabenbezogenen Eigenschaften in einigen Elementobj
     
 - [Änderungen beim Herunterfahren für Outlook 2010](https://msdn.microsoft.com/library/1b154d46-8d13-4c65-91e3-180b22603d03%28Office.15%29.aspx)
     
-- 
-  [Durch Outlook 2010 eingeschränkte Anlagendateitypen](https://technet.microsoft.com/de-DE/library/cc179163.aspx)
+- [Durch Outlook 2010 eingeschränkte Anlagendateitypen](https://technet.microsoft.com/de-DE/library/cc179163.aspx)
     
 - [Application Shutdown Changes in Outlook 2007 SP2](https://msdn.microsoft.com/library/795a8237-7804-4da4-9d04-2bb663d300d9%28Office.15%29.aspx)
     

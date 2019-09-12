@@ -206,8 +206,7 @@ Die Methode überprüft nicht, ob für ein Projekt ein bestimmtes ECF verwendet 
 ## <a name="see-also"></a>Siehe auch
 
 - [Project-Entwicklungsportal](https://developer.microsoft.com/de-DE/project)
-- 
-  [Übersicht: Benutzerdefinierte Enterprise-Felder und Nachschlagetabellen](https://support.office.com/en-us/article/overview-enterprise-custom-fields-and-lookup-tables-f99db553-0b33-4648-93c0-f6a74637d790?ui=en-us&rs=en-us&ad=us)
+- [Übersicht: Benutzerdefinierte Enterprise-Felder und Nachschlagetabellen](https://support.office.com/en-us/article/overview-enterprise-custom-fields-and-lookup-tables-f99db553-0b33-4648-93c0-f6a74637d790?ui=en-us&rs=en-us&ad=us)
 - [Local and Enterprise Custom Fields](https://msdn.microsoft.com/library/office/ms447495(v=office.14).aspx)
 - [Hinzufügen oder Bearbeiten benutzerdefinierter Enterprise-Felder in Project Server 2013](https://docs.microsoft.com/project/add-or-edit-enterprise-custom-fields-in-project-server)
     
