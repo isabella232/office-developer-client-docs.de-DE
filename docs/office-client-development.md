@@ -5,19 +5,19 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 74a80e0a-fe60-4356-b238-13de4c2822d9
 description: Hier finden Sie Vorgehensweisen, Beispielcode, SDK- und API-Dokumentationen, VBA-Referenzen, Schulungen und technische Artikel zum Entwickeln von Lösungen und Anpassen von Office.
-ms.openlocfilehash: 92e4da3d6e04082ea3bceb901989ddf134b54c07
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 4ecf232e0381fec9acc55582db6c7aaacedde891
+ms.sourcegitcommit: 63e14e1e6124222a0a347aa1ad02ce1bd7e94949
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303122"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36849862"
 ---
 # <a name="office-client-development"></a>Office-Cliententwicklung
 
 Hier finden Sie Vorgehensweisen, Beispielcode, SDK- und API-Dokumentationen, VBA-Referenzen, Schulungen und technische Artikel zum Entwickeln von Lösungen und Anpassen von Office.
   
 > [!NOTE]
-> Haben Sie Interesse an der Entwicklung von Lösungen, mit denen die Funktionen von Office über [mehrere Plattformen](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-in-availability) erweitert werden können? Schauen Sie sich das neue [Office-Add-Ins-Modell](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins) an. 
+> Haben Sie Interesse an der Entwicklung von Lösungen, mit denen die Funktionen von Office über [mehrere Plattformen](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-in-availability) erweitert werden können? Schauen Sie sich das neue [Office-Add-Ins-Modell](https://docs.microsoft.com/office/dev/add-ins/) an. 
 
   
 ### <a name="office-add-ins"></a>Office-Add-Ins
