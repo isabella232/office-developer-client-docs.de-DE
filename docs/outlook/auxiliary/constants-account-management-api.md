@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 2a15e5df-b8e3-9c37-b1ee-2881d010e30b
-description: Dieses Thema enthält Konstante Definitionen, Klassenbezeichner und Schnittstellenbezeichner für die Account Management-API.
-ms.openlocfilehash: 52d6e1801ac35621179aa0cac8acc2893aeb06b3
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Dieses Thema enthält Konstante Definitionen, Klassenbezeichner und Schnittstellenbezeichner für die Konten Verwaltungs-API.
+ms.openlocfilehash: d36116e30eb7879dcd0db0523be8f28bb8fe82a7
+ms.sourcegitcommit: adcf409d56b6cb25be6117f09794defa41ad6c0f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429075"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "37495313"
 ---
 # <a name="constants-account-management-api"></a>Konstanten (Account Management API)
 
-Dieses Thema enthält Konstante Definitionen, Klassenbezeichner und Schnittstellenbezeichner für die Account Management-API.
+Dieses Thema enthält Konstante Definitionen, Klassenbezeichner und Schnittstellenbezeichner für die Konten Verwaltungs-API.
   
 ## <a name="constants"></a>Konstanten
 
@@ -24,20 +24,21 @@ Dieses Thema enthält Konstante Definitionen, Klassenbezeichner und Schnittstell
 |:-----|:-----|
 |ACCT_INIT_NOSYNCH_MAPI_ACCTS  <br/> |0x00000001  <br/> |
 |ACCT_INIT_NO_STORES_CHECK  <br/> |0x00000002  <br/> |
+|ACCT_INIT_NO_NOTIFICATIONS <br/> |0x00000004 <br/> |
 |ACCTUI_NO_WARNING  <br/> |0x0100  <br/> |
 |ACCTUI_SHOW_ACCTWIZARD  <br/> |0x0400  <br/> |
 |ACCTUI_SHOW_DATA_TAB  <br/> |0x0200  <br/> |
 |E_ACCT_NOT_FOUND  <br/> |0x800C8101  <br/> |
 |E_ACCT_UI_BUSY  <br/> |0x800C8102  <br/> |
 |E_ACCT_WRONG_SORT_ORDER  <br/> |0x800C8105  <br/> |
-|E_INVALIDARG  <br/> | *Gemäß der Definition in der Windows Software Development Kit (SDK)-Headerdatei Winerror. h.*  <br/> |
-|E_NOTIMPL  <br/> | *Gemäß der Definition in der Windows SDK-Headerdatei Winerror. h.*  <br/> |
+|E_INVALIDARG  <br/> | *Wie in der Windows Software Development Kit (SDK)-Headerdatei Winerror. h definiert.*  <br/> |
+|E_NOTIMPL  <br/> | *Wie in der Windows SDK-Headerdatei Winerror. h definiert.*  <br/> |
 |E_OLK_ALREADY_INITIALIZED  <br/> |0x800C8002  <br/> |
 |E_OLK_NOT_INITIALIZED  <br/> |0x800C8005  <br/> |
 |E_OLK_PARAM_NOT_SUPPORTED  <br/> |0x800C8003  <br/> |
 |E_OLK_PROP_READ_ONLY  <br/> |0x800C800D  <br/> |
 |E_OLK_REGISTRY  <br/> |0x800C8001  <br/> |
-|Die folgenden Konstanten beginnend mit ENCRYPT_ werden von der [PROP_SMTP_SECURE_CONNECTION](prop_smtp_secure_connection.md) -Eigenschaft verwendet, um den Typ der verschlüsselten Verbindung anzugeben.  <br/> ||
+|Die folgenden Konstanten, die mit ENCRYPT_ beginnen, werden von der [PROP_SMTP_SECURE_CONNECTION](prop_smtp_secure_connection.md) -Eigenschaft verwendet, um den Typ der verschlüsselten Verbindung anzugeben.  <br/> ||
 |ENCRYPT_CONN_AUTO  <br/> |3  <br/> |
 |ENCRYPT_CONN_NO_SECURITY  <br/> |0  <br/> |
 |ENCRYPT_CONN_SSL  <br/> |1  <br/> |
@@ -46,13 +47,13 @@ Dieses Thema enthält Konstante Definitionen, Klassenbezeichner und Schnittstell
 |NOTIFY_ACCT_CHANGED  <br/> |1  <br/> |
 |NOTIFY_ACCT_CREATED  <br/> |2  <br/> |
 |NOTIFY_ACCT_DELETED  <br/> |3  <br/> |
-|NOTIFY_ACCT_ORDER_CHANGED  <br/> |4  <br/> |
-|NOTIFY_ACCT_PREDELETED  <br/> |5  <br/> |
+|NOTIFY_ACCT_ORDER_CHANGED  <br/> |4   <br/> |
+|NOTIFY_ACCT_PREDELETED  <br/> |5   <br/> |
 |OLK_ACCOUNT_NO_FLAGS  <br/> |0  <br/> |
-|S_OK  <br/> | *Gemäß der Definition in der Windows SDK-Headerdatei Winerror. h.*  <br/> |
-|S_FALSE  <br/> | *Gemäß der Definition in der Windows SDK-Headerdatei Winerror. h.*  <br/> |
+|S_OK  <br/> | *Wie in der Windows SDK-Headerdatei Winerror. h definiert.*  <br/> |
+|S_FALSE  <br/> | *Wie in der Windows SDK-Headerdatei Winerror. h definiert.*  <br/> |
 |SECURE_FLAG  <br/> |0X8000  <br/> |
-|Die folgenden Konstanten beginnend mit SMTP_ werden von der [PROP_SMTP_AUTH_METHOD](prop_smtp_auth_method.md) -Eigenschaft verwendet und geben die Authentifizierungsmethode an.  <br/> ||
+|Die folgenden Konstanten, die mit SMTP_ beginnen, werden von der [PROP_SMTP_AUTH_METHOD](prop_smtp_auth_method.md) -Eigenschaft verwendet und geben die Authentifizierungsmethode an.  <br/> ||
 |SMTP_AUTH_SAME_AS_POP  <br/> |0  <br/> |
 |SMTP_AUTH_RECEIVE_BEFORE_SEND  <br/> |2  <br/> |
 |SMTP_AUTH_USER_PASS  <br/> |1  <br/> |
@@ -65,7 +66,7 @@ Dieses Thema enthält Konstante Definitionen, Klassenbezeichner und Schnittstell
    
 ## <a name="class-identifiers"></a>Klassenbezeichner
 
-Verwenden Sie das DEFINE_GUID-Makro, das in der Windows SDK-Headerdatei guiddef. h definiert ist, um den symbolischen GUID-Namen mit seinem Wert zu verknüpfen.
+Verwenden Sie das DEFINE_GUID-Makro, das in der Windows SDK-Headerdatei guiddef. h definiert ist, um den symbolischen GUID-Namen seinem Wert zuzuordnen.
   
 {ed475410-b0d6-11d2-8c3b-00104b2a6676}
   
@@ -105,7 +106,7 @@ DEFINE_GUID (CLSID_OlkLDAPAccount, 0x4db5cbf2, 0x3b77, 0x4852, 0xBC, 0x8e, 0xBB,
   
 ## <a name="interface-identifiers"></a>Schnittstellenbezeichner
 
-Verwenden Sie das DEFINE_GUID-Makro, das in der Windows SDK-Headerdatei guiddef. h definiert ist, um den symbolischen GUID-Namen mit seinem Wert zu verknüpfen.
+Verwenden Sie das DEFINE_GUID-Makro, das in der Windows SDK-Headerdatei guiddef. h definiert ist, um den symbolischen GUID-Namen seinem Wert zuzuordnen.
   
 {9240A6C0-AF41-11d2-8C3B-00104B2A6676}
   
