@@ -1,31 +1,29 @@
 ---
 title: Integrieren von Chatanwendungen in Office
-manager: soliver
-ms.date: 07/25/2016
+manager: lindalu
+ms.date: 12/03/2019
 ms.audience: Developer
 ms.assetid: beba316b-1dfe-4e1b-adae-42418906c177
-description: In diesem Artikel wird beschrieben, wie Sie eine Clientanwendung für Sofortnachrichten konfigurieren, sodass Features für soziale Netzwerke in Office 2013 integriert sind,u. a. Anzeigen von Anwesenheitsinformationen und Senden von Sofortnachrichten von der Visitenkarte aus.
+description: In diesem Artikel wird beschrieben, wie Sie eine Clientanwendung für Sofortnachrichten konfigurieren, sodass Features für soziale Netzwerke in Office 2013 und höher integriert sind, beispielsweise Anzeigen von Anwesenheitsinformationen und Senden von Sofortnachrichten von der Visitenkarte aus.
 localization_priority: Priority
-ms.openlocfilehash: b3add86f011e016b1b6ea1a74f425f3f1deab002
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: c0094b880bae5cac2cef4236d3ff3edcefd21678
+ms.sourcegitcommit: 37080eb0087261320e24e6f067e5f434a812b2d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32270116"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39819294"
 ---
 # <a name="integrating-im-applications-with-office"></a>Integrieren von Chatanwendungen in Office
 
-In diesem Artikel wird beschrieben, wie Sie eine Clientanwendung für Sofortnachrichten konfigurieren, sodass Features für soziale Netzwerke in Office 2013 integriert sind,u. a. Anzeigen von Anwesenheitsinformationen und Senden von Sofortnachrichten von der Visitenkarte aus.
-  
-Wenn Sie Fragen oder Anmerkungen zu diesem technischen Artikel oder zu Prozessen haben, die hier beschrieben werden, können Sie sich direkt per E-Mail unter [docthis@microsoft.com](mailto:docthis@microsoft.com) an Microsoft wenden.
+In diesem Artikel wird beschrieben, wie Sie eine Clientanwendung für Sofortnachrichten konfigurieren, sodass Features für soziale Netzwerke in Office 2013, Office 2016, Office 2019 und Office 365 integriert sind, beispielsweise Anzeigen von Anwesenheitsinformationen und Senden von Sofortnachrichten von der Visitenkarte aus.
   
 ## <a name="introduction"></a>Einführung
 <a name="off15_IMIntegration_Intro"> </a>
 
-Office 2013 ermöglicht die umfassende Integration mit Clientanwendungen für Chatnachrichten, einschließlich Lync 2013. Diese Integration bietet Benutzern Chat-Funktionen innerhalb von Word 2013, Excel 2013, PowerPoint 2013, Outlook 2013, Visio 2013, Project 2013 und OneNote 2013 sowie ermöglicht die Anwesenheitsintegration auf SharePoint 2013-Seiten. Benutzer können Foto, Name, Anwesenheitsstatus und Kontaktdaten für Personen in ihrer Kontaktliste sehen. Sie können Chats, Videoanrufe oder Anrufe direkt von der Visitenkarte (das Benutzeroberflächen-Element inOffice 2013 mit Kontaktinformationen und Kommunikationsoptionen) aus durchführen. Office 2013 erleichtert es, mit Kontakten direkt innerhalb von E-Mails oder Dokumenten in Verbindung zu bleiben. 
+Office 2013 (und höher) ermöglicht die umfassende Integration mit Clientanwendungen für Chatnachrichten, einschließlich Lync 2013 und Teams. Diese Integration bietet Benutzern Chatfunktionen aus Word, Excel, PowerPoint, Outlook, Visio, Project und OneNote sowie die Integration von Anwesenheitsinformationen auf SharePoint-Seiten. Benutzer können Foto, Name, Anwesenheitsstatus und Kontaktdaten für Personen in ihrer Kontaktliste sehen. Sie können eine Chatsitzung, einen Videoanruf oder einen Telefonanruf direkt aus der Visitenkarte heraus starten (das Benutzeroberflächenelement in Office, auf dem Kontaktinformationen und Kommunikationsoptionen angezeigt werden). Mit Office können Sie auf einfache Weise mit Ihren Kontakten in Verbindung bleiben, ohne Ihre E-Mails oder Dokumente zu verlassen. 
   
 > [!NOTE]
-> In diesem Artikel wird der Begriff Clientanwendung für Chatnachrichten verwendet, mit dem speziell die auf dem Benutzercomputer installierte Anwendung gemeint ist, die mit dem Chatdienst kommuniziert. Lync 2013gilt z. B. als eine Clientanwendung für Chatnachrichten. Dieser Artikel enthält keine detaillierten Informationen zur Kommunikation der Clientanwendung für Chatnachrichten mit dem Chatdienst und dem Chatdienst an sich. 
+> In diesem Artikel wird der Begriff Clientanwendung für Chatnachrichten verwendet, mit dem speziell die auf dem Benutzercomputer installierte Anwendung gemeint ist, die mit dem Chatdienst kommuniziert. Lync 2013 und Teams gelten z. B. als Clientanwendungen für Chatnachrichten. Dieser Artikel enthält keine detaillierten Informationen zur Kommunikation der Clientanwendung für Chatnachrichten mit dem Chatdienst und dem Chatdienst an sich. 
   
 Sie können eine Clientanwendung für Chatnachrichten so anpassen, dass diese mit Office kommuniziert. Sie können insbesondere Ihre Chatanwendung zum Anzeigen der folgenden Informationen innerhalb der Office-Benutzeroberfläche anpassen:
   
@@ -55,12 +53,12 @@ Sie können eine Clientanwendung für Chatnachrichten so anpassen, dass diese mi
     
 **Abbildung 1. Visitenkarte in Office 2013**
 
-![Personen-Karte in Office 2013](media/ocom15_peoplecard.png "Personen-Karte in Office 2013")
+![Die Karte "Personen" in Office 2013](media/ocom15_peoplecard.png "Die Karte "Personen" in Office 2013")
   
-Um diese Integration in Office zu ermöglichen, müssen in einer Clientanwendung für Chatnachrichten Schnittstellen implementiert werden, mit denen Office eine Verbindung mit dieser herstellen kann. Die APIs für diese Integration sind im [UCCollborationLib](https://msdn.microsoft.com/en-au/library/uccollaborationlib.aspx)-Namespace in der Datei „Microsoft.Office.UC.dll" enthalten, die mit Versionen von Office 2013 installiert wird, die Lync/Skype for Business umfassen. Der **UCCollaborationLib**-Namespace enthält die Schnittstellen, die Sie für die Integration in Office implementieren müssen. 
+Um diese Integration in Office zu ermöglichen, müssen in einer Clientanwendung für Chatnachrichten Schnittstellen implementiert werden, mit denen Office eine Verbindung mit dieser herstellen kann. Die APIs für diese Integration sind im [UCCollborationLib](https://docs.microsoft.com/previous-versions/office/communications/ff398475(v=ocs.14))-Namespace in der Datei „Microsoft.Office.UC.dll" enthalten, die mit Versionen von Office 2013 installiert wird, die Lync/Skype for Business umfassen. Der **UCCollaborationLib**-Namespace enthält die Schnittstellen, die Sie für die Integration in Office implementieren müssen. 
   
 > [!IMPORTANT] 
-> Die Typbibliothek für die erforderlichen Schnittstellen ist in Lync 2013/Skype for Business eingebettet. Für Drittanbieter-Systemintegratoren funktioniert dies nur, wenn sowohl Lync 2013 als auch Skype for Business auf dem Zielcomputer installiert sind. Wenn Sie die Integration mit Office Standard ausführen, müssen Sie die Typbibliothek extrahieren und auf dem Zielcomputer installieren. Das [Lync 2013 SDK](https://www.microsoft.com/en-us/download/details.aspx?id=36824) enthält die Datei Microsoft.Office.UC.dll. 
+> Die Typbibliothek für die erforderlichen Schnittstellen ist in Lync 2013/Skype for Business eingebettet. Für Drittanbieter-Systemintegratoren funktioniert dies nur, wenn sowohl Lync 2013 als auch Skype for Business auf dem Zielcomputer installiert sind. Wenn Sie die Integration mit Office Standard ausführen, müssen Sie die Typbibliothek extrahieren und auf dem Zielcomputer installieren. Das [Lync 2013 SDK](https://www.microsoft.com/download/details.aspx?id=36824) enthält die Datei Microsoft.Office.UC.dll. 
   
 > [!NOTE]
 >  Eine Handvoll von Office 2010-Anwendungen können auf ähnliche Weise in einer Drittanbieter-Chatanwendung integriert werden: Outlook 2010, Word 2010, Excel 2010, PowerPoint 2010 und SharePoint Server 2010 (unter Verwendung eines ActiveX-Steuerelements). Viele der für die Integration in Office 2013 erforderlichen Schritte gelten auch für Office 2010. Es gibt einige wichtige Unterschiede bei der Integration von Office 2010 in einer Chatanbieteranwendung: 
@@ -72,7 +70,7 @@ Um diese Integration in Office zu ermöglichen, müssen in einer Clientanwendung
 ## <a name="how-office-integrates-with-an-im-client-application"></a>Integration von Office in einer Clientanwendung für Chatnachrichten
 <a name="off15_IMIntegration_How"> </a>
 
-Wenn ein Office 2013-Anwendung gestartet wird, durchläuft sie den folgenden Prozess bei der Integration in einer standardmäßigen Clientanwendung für Chatnachrichten:
+Wenn ein Office 2013-Anwendung (oder höher) gestartet wird, durchläuft sie den folgenden Prozess bei der Integration in einer standardmäßigen Clientanwendung für Chatnachrichten:
   
 1. Sie prüft die Registrierung, um die standardmäßige Clientanwendung für Chatnachrichten zu ermitteln, und stellt dann eine Verbindung mit dieser her.
     
@@ -84,7 +82,7 @@ Wenn ein Office 2013-Anwendung gestartet wird, durchläuft sie den folgenden Pro
     
 5. Sie ruft Anwesenheitsinformationen für die Kontakte des lokalen Benutzers ab.
     
-6. Wenn die Clientanwendung für Chatnachrichten beendet wird, wird die Verbindung mit der Office 2013-Anwendung im Hintergrund getrennt.
+6. Wenn die Clientanwendung für Chatnachrichten beendet wird, wird die Verbindung mit der Office-Anwendung im Hintergrund getrennt.
     
 ### <a name="discovering-the-im-application"></a>Ermitteln der Chatanwendung
 
@@ -175,12 +173,12 @@ Die Office-Anwendung ruft mithilfe der folgenden Schritte die Anwesenheitsinform
 ### <a name="disconnecting-from-the-im-application"></a>Trennen der Verbindung mit einer Chatanwendung
 <a name="off15_IMIntegration_HowConnect"> </a>
 
-Wenn die Office 2013-Anwendung das **OnShuttingDown**-Ereignis in der Chatanwendung feststellt, wird die Verbindung im Hintergrund getrennt. Wenn die Office-Anwendung vor der Chatanwendung beendet wird, kann die Office-Anwendung jedoch nicht gewährleisten, dass die Verbindung bereinigt wird. Die Chatanwendung muss Verluste der Clientverbindung verarbeiten. 
+Wenn die Office-Anwendung das **OnShuttingDown**-Ereignis in der Chatanwendung feststellt, wird die Verbindung im Hintergrund getrennt. Wenn die Office-Anwendung vor der Chatanwendung beendet wird, kann die Office-Anwendung jedoch nicht gewährleisten, dass die Verbindung bereinigt wird. Die Chatanwendung muss Verluste der Clientverbindung verarbeiten. 
   
 ## <a name="setting-registry-keys-and-entries"></a>Festlegen der Registrierungsschlüssel und-Einträge
 <a name="off15_IMIntegration_SetRegistry"> </a>
 
-Wie bereits erwähnt, suchen Chat-fähige Office 2013-Anwendungen nach bestimmten Schlüsseln, Einträgen und Werten in der Registrierung, um die Clientanwendung für Chatnachrichten zu ermitteln, mit der eine Verbindung hergestellt werden soll. Diese Registrierungswerte stellen der Office-Anwendung den Prozessnamen und die CLSID der Klasse bereit, die als Einstiegspunkt des Objektmodells der Clientanwendung für Chatnachrichten dient (d. h. die Klasse, die die **IUCOfficeIntegration**-Schnittstelle implementiert). Die Office-Anwendung ist an der Erstellung dieser Klasse beteiligt und stellt als Client eine Verbindung mit dem COM-Server ohne Prozesse in der Clientanwendung für Chatnachrichten her. 
+Wie zuvor erwähnt, suchen die chatfähigen Office-Anwendungen nach bestimmten Schlüsseln, Einträgen und Werten in der Registrierung, um die Clientanwendung für Chatnachrichten zu ermitteln, mit der sie sich verbinden sollen. Diese Registrierungswerte stellen der Office-Anwendung den Prozessnamen und die CLSID der Klasse bereit, die als Einstiegspunkt des Objektmodells der Clientanwendung für Chatnachrichten dient (d. h. die Klasse, die die **IUCOfficeIntegration**-Schnittstelle implementiert). Die Office-Anwendung ist an der Erstellung dieser Klasse beteiligt und stellt als Client eine Verbindung mit dem COM-Server ohne Prozesse in der Clientanwendung für Chatnachrichten her. 
   
 Anhand der Tabelle 1 können Sie Schlüssel, Einträge und Werte identifizieren, die in der Registrierung geschrieben werden müssen, um eine Clientanwendung für Chatnachrichten in Office zu integrieren.
   
@@ -304,10 +302,10 @@ public object GetInterface(string _version, OIInterface _interface)
 
 ```
 
-Die **GetSupportedFeatures**-Methode gibt Informationen zu den Chatfunktionen zurück, die von der Clientanwendung für Chatnachrichten unterstützt werden. Sie verwendet eine Zeichenfolge als einzigen Parameter,  _version_. Wenn die Office-Anwendung die **GetSupportFeatures**-Methode aufruft, gibt die Methode einen Wert aus der [UCCollaborationLib.OIFeature](https://msdn.microsoft.com/library/UCCollaborationLib.OIFeature)-Enumeration zurück. Der zurückgegebene Wert gibt die Funktionen des Chatclients an, wobei jede Funktion der Clientanwendung für Chatnachrichten mit einer Kennzeichnung des Werts für die Office-Anwendung versehen ist. 
+Die **GetSupportedFeatures**-Methode gibt Informationen zu den Chatfunktionen zurück, die von der Clientanwendung für Chatnachrichten unterstützt werden. Sie verwendet eine Zeichenfolge als einzigen Parameter,  _version_. Wenn die Office-Anwendung die **GetSupportedFeatures**-Methode aufruft, gibt die Methode einen Wert aus der [UCCollaborationLib.OIFeature](https://msdn.microsoft.com/library/UCCollaborationLib.OIFeature)-Enumeration zurück. Der zurückgegebene Wert gibt die Funktionen des Chatclients an, wobei jede Funktion der Clientanwendung für Chatnachrichten mit einer Kennzeichnung des Werts für die Office-Anwendung versehen ist. 
   
 > [!NOTE]
->  Office 2013-Anwendungen ignorieren die folgenden Konstanten in der **OIFeature**-Enumeration: 
+>  Office 2013-Anwendungen (und höher) ignorieren die folgenden Konstanten in der **OIFeature**-Enumeration: 
 > - **oiFeaturePictures** (2) 
 > - **oiFeatureFreeBusyIntegration**
 > - **oiFeaturePhoneNormalization**
@@ -862,7 +860,7 @@ public class IMClientSelf : ISelf
 }
 ```
 
-### <a name="icontactmanager-and-icontactmanagerevents-interfaces"></a>IContactManager- und _IContactManagerEvents-Schnittstellen
+### <a name="icontactmanager-and-_icontactmanagerevents-interfaces"></a>IContactManager- und _IContactManagerEvents-Schnittstellen
 <a name="off15_IMIntegration_ImplementRequired_IContactManager"> </a>
 
 Das **IContactManager**-Objekt verwaltet die Kontakte für den lokalen Benutzer, einschließlich der Kontaktinformationen des lokalen Benutzers. Die Office-Anwendung verwendet ein **IContactManager**-Objekt für den Zugriff auf **IContact**-Objekte, die den Kontakten des lokalen Benutzers entsprechen. 
