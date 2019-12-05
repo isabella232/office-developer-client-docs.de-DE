@@ -1,39 +1,39 @@
 ---
-title: Integrieren von verwaltbaren Anwendungen in Office 365 Klick-und-Los-Installer
-manager: kelbow
-ms.date: 10/22/2017
+title: Integrieren von Verwaltbarkeit-Anwendungen mit Office 365 Klick-und-Los-Installationsprogramm
+manager: lindalu
+ms.date: 12/03/2019
 ms.audience: ITPro
 localization_priority: Normal
 ms.assetid: c0fa8fed-1585-4566-a9be-ef6d6d1b4ce8
-description: Erfahren Sie, wie Sie das Office 365-Klick-und-Los-Installationsprogramm mit einer Software Verwaltungslösung integrieren.
-ms.openlocfilehash: cdcdde0618e2b96ce997ba5e263f75d85c21fd11
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: Hier erfahren Sie, wie Sie das Office 365 Klick-und-Los-Installationsprogramm mit einer Software Verwaltungslösung integrieren.
+ms.openlocfilehash: 62bfef0063c414fcecd0948e49dfa098b5c82bbb
+ms.sourcegitcommit: 37080eb0087261320e24e6f067e5f434a812b2d2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32318345"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39819273"
 ---
-# <a name="integrating-manageability-applications-with-office-365-click-to-run-installer"></a>Integrieren von verwaltbaren Anwendungen in Office 365 Klick-und-Los-Installer
+# <a name="integrating-manageability-applications-with-office-365-click-to-run-installer"></a>Integrieren von Verwaltbarkeit-Anwendungen mit Office 365 Klick-und-Los-Installationsprogramm
 
-Erfahren Sie, wie Sie das Office 365-Klick-und-Los-Installationsprogramm mit einer Software Verwaltungslösung integrieren.
+Hier erfahren Sie, wie Sie das Office 365 Klick-und-Los-Installationsprogramm mit einer Software Verwaltungslösung integrieren.
   
-Das Office 365-Klick-und-Los-Installationsprogramm bietet eine COM-Schnittstelle, die IT-Experten und Software Verwaltungslösungen die programmgesteuerte Steuerung der Updateverwaltung ermöglicht. Diese Schnittstelle bietet zusätzliche Verwaltungsfunktionen, die über das Office-Bereitstellungs Tool hinausgehen.
+Das Office 365 Klick-und-Los-Installationsprogramm stellt eine COM-Schnittstelle bereit, die IT-Spezialisten und Software Verwaltungslösungen die programmgesteuerte Steuerung der Updateverwaltung ermöglicht. Diese Schnittstelle stellt zusätzliche Verwaltungsfunktionen bereit, die über das Office-Bereitstellungs Tool hinausgehen.
   
 > [!NOTE]
 > Dieser Artikel bezieht sich auf Office 2016 und höher, Office 365. 
   
-## <a name="integrating-with-the-click-to-run"></a>Integrieren in die Klick-und-Los-Installation
+## <a name="integrating-with-the-click-to-run"></a>Integrieren in das Klick-und-Los
 
-Zur Verwendung dieser Schnittstelle ruft eine verwaltbare Anwendung die COM-Schnittstelle auf und ruft verfügbar gemachte APIs auf, die direkt mit dem Klick-und-Los-Installationsdienst kommunizieren. 
+Um diese Schnittstelle zu verwenden, ruft eine verwaltbare Anwendung die COM-Schnittstelle auf und ruft freigegebene APIs auf, die direkt mit dem Klick-und-Los-Installationsdienst kommunizieren. 
   
 > [!NOTE]
-> Das Office-Klick-und-Los-Installationsprogramm kann über die Befehlszeile mit Parametern ausgeführt werden, die das Verhalten steuern können, wie im [Office-Bereitstellungs Tool für Klick-und-Los](https://www.microsoft.com/en-us/download/details.aspx?id=49117)dokumentiert. 
+> Das Office-Klick-und-Los-Installationsprogramm kann über die Befehlszeile mit Parametern ausgeführt werden, die das Verhalten steuern können, wie im [Office-Bereitstellungs Tool für Klick-und-Los](https://www.microsoft.com/download/details.aspx?id=49117)dokumentiert. 
   
 **Es folgt ein konzeptionelles Diagramm der COM-Schnittstelle.**
 
-![Ein Diagramm zur Verwendung der COM-Schnittstelle für das Office-Klick-und-Los-Installationsprogramm.] (media/e7ac2523-e67b-4a44-ae67-c048709f872a.png "Ein Diagramm zur Verwendung der COM-Schnittstelle im Office-Klick-und-Los-Installationsprogramm")
+![A diagram of using the COM interface on  the Office Click-To-Run installer.](media/e7ac2523-e67b-4a44-ae67-c048709f872a.png "Ein Diagramm zur Verwendung der COM-Schnittstelle im Office-Klick-und-Los-Installationsprogramm")
   
-Das Office 365-Klick-und-Los-Installationsprogramm implementiert eine COM-basierte Schnittstelle, **IUpdateNotify** registriert für CLSID **CLSID_UpdateNotifyObject**.
+Das Office 365 Klick-und-Los-Installationsprogramm implementiert eine COM-basierte Schnittstelle, die für CLSID- **CLSID_UpdateNotifyObject**registriert **IUpdateNotify** .
   
 Diese Schnittstelle kann wie folgt aufgerufen werden:
   
@@ -43,9 +43,9 @@ hr = CoCreateInstance(CLSID_UpdateNotifyObject, NULL, CLSCTX_ALL,
       (void **)&p); 
 ```
 
-Der Aufruf ist nur erfolgreich, wenn der Anrufer unter erhöhten Rechten ausgeführt wird, da das Klick-und-Los-Installationsprogramm mit erhöhten Rechten ausgeführt werden muss.
+Der Anruf ist nur erfolgreich, wenn der Anrufer unter erhöhten Rechten ausgeführt wird, da das Installationsprogramm für die Klick-und-Los-Installation mit erhöhten Rechten ausgeführt werden muss.
   
-Die **IUpdateNotify** -com-Schnittstelle macht drei asynchrone Funktionen verfügbar, die für die Überprüfung der Befehle und Parameter sowie für die Terminplanung mit dem Klick-und-Los-Installationsdienst zuständig sind. 
+Die **IUpdateNotify** -com-Schnittstelle stellt drei asynchrone Funktionen zur Verfügung, die für die Überprüfung der Befehle und Parameter und die Planung der Ausführung mit dem Klick-und-Los-Installationsdienst verantwortlich sind. 
   
 ```cpp
 HRESULT Download([in] LPWSTR pcwszParameters) // Download update content.
@@ -54,7 +54,7 @@ HRESULT Cancel() // Cancel the download action.
 
 ```
 
-Eine Forth-Methode, **Status**, kann verwendet werden, um Informationen über den Status des zuletzt ausgeführten Befehls oder den Status des aktuell ausgeführten Befehls (d. h. Erfolg, Fehler, detaillierte Fehlercodes) abzurufen.
+Eine Forth-Methode, **Status**, kann verwendet werden, um Informationen über den Status des zuletzt ausgeführten Befehls oder den Status des derzeit ausgeführten Befehls abzurufen (also Erfolg, Fehler, detaillierte Fehlercodes).
   
 ```cpp
 HRESULT status([out] _UPDATE_STATUS_REPORT* pUpdateStatusReport) // Get status of current action. 
@@ -67,57 +67,57 @@ BSTR contentid;
 
 ```
 
-Es gibt vier Zustände, die der Klick-und-Los-Installationsdienst während des Lebenszyklus sein kann, während der **IUpdateNotify** -Methoden aufgerufen werden können; Neustart, Leerlauf, herunterladen und anwenden. 
+Es gibt vier Zustände, in denen der Klick-und-Los-Installationsdienst während seines Lebenszyklus möglicherweise vorliegt, während dessen **IUpdateNotify** -Methoden aufgerufen werden können. Neustarten, Leerlauf, herunterladen und anwenden. 
   
-**Es folgt das Diagramm der COM-Schnittstellestatus Computer**
+**Im folgenden finden Sie das Diagramm "Statuscomputer" der COM-Schnittstelle**
 
-![Ein Zustandsdiagramm für die COM-Schnittstelle.] (media/a409003e-6876-4ab3-bb4c-cd0c0fed5cbb.png "Ein Statusdiagramm für die COM-Schnittstelle")
+![A state diagram for the COM interface.](media/a409003e-6876-4ab3-bb4c-cd0c0fed5cbb.png "Ein Statusdiagramm für die COM-Schnittstelle")
   
 > [!NOTE]
-> **** Neustart: Wenn der Computer bootet, gibt es einen Zeitraum, in dem der Klick-und-Los-Installer-Dienst nicht verfügbar ist. Ein erfolgreicher Aufruf der Status-Methode nach einem Neustart gibt eUPDATE_UNKNOWN zurück. 
+> **Neustart: beim**Booten des Computers gibt es einen Zeitraum, in dem der Klick-und-Los-Installationsdienst nicht verfügbar ist. Ein erfolgreicher Aufruf der Status-Methode nach einem Neustart wird eUPDATE_UNKNOWN zurückgegeben. 
   
 **Leerlauf:** Wenn sich das Klick-und-Los-Installationsprogramm im Leerlauf befindet, können Sie Folgendes aufrufen: 
   
-- **Anwenden**: Installieren Sie zuvor heruntergeladenen Inhalt.
+- **Apply**: Installieren Sie zuvor heruntergeladenen Inhalt.
     
 - **Cancel**: gibt `0x800000e`zurück, "eine Methode wurde zu einem unerwarteten Zeitpunkt aufgerufen."
     
 - **Download**: lädt neue Inhalte zur späteren Installation auf den Client herunter.
     
-- **Status**: gibt das Ergebnis der letzten abgeschlossenen Aktion oder eine Fehlermeldung zurück, wenn die Aktion fehlgeschlagen ist. Wenn keine vorherige Aktion vorliegt, **** wird der `eUPDATE_UNKNOWN`Status zurückgegeben.
+- **Status**: gibt das Ergebnis der letzten abgeschlossenen Aktion oder eine Fehlermeldung zurück, wenn die Aktion mit einem Fehler beendet wurde. Wenn keine vorherige Aktion vorliegt, **** wird der `eUPDATE_UNKNOWN`Status zurückgegeben.
     
-**Herunterladen:** Wenn sich das Klick-und-Los-Installationsprogramm im Downloadstatus befindet, können Sie Folgendes aufrufen: 
+**Herunterladen:** Wenn sich das Klick-und-Los-Installationsprogramm im Download Zustand befindet, können Sie Folgendes aufrufen: 
   
-- **Apply**: gibt ein **HRESULT** mit dem Wert `0x800000e`"eine Methode wurde zu einem unerwarteten Zeitpunkt aufgerufen" zurück.
+- **Apply**: gibt ein **HRESULT** mit dem Wert `0x800000e`"eine Methode wurde zu einem unerwarteten Zeitpunkt aufgerufen." zurück.
     
 - **Abbrechen**: beendet den Download und entfernt die teilweise heruntergeladenen Inhalte.
     
-- **Download**: gibt ein **HRESULT** mit dem Wert `0x800000e`"eine Methode wurde zu einem unerwarteten Zeitpunkt aufgerufen" zurück. 
+- **Download**: gibt ein **HRESULT** mit dem Wert `0x800000e`"eine Methode wurde zu einem unerwarteten Zeitpunkt aufgerufen." zurück. 
     
-- **Status**: gibt **DOWNLOAD_WIP** zurück, um anzuzeigen, dass die Download Arbeit ausgeführt wird. 
+- **Status**: gibt **DOWNLOAD_WIP** zurück, um anzugeben, dass die Download Arbeit ausgeführt wird. 
     
-**Anwenden:** Wenn das Klick-und-Los-Installationsprogramm bereits zuvor heruntergeladenen Inhalt installiert hat: 
+**Anwendung:** Wenn das Klick-und-Los-Installationsprogramm den Download Inhalt bereits installiert hat: 
   
-- **Apply**: gibt ein **HRESULT** mit dem Wert `0x800000e`"eine Methode wurde zu einem unerwarteten Zeitpunkt aufgerufen" zurück.
+- **Apply**: gibt ein **HRESULT** mit dem Wert `0x800000e`"eine Methode wurde zu einem unerwarteten Zeitpunkt aufgerufen." zurück.
     
-- **Cancel**: gibt `0x800000e`an, dass die Apply-Aktion nicht abgebrochen werden kann.
+- **Cancel**: gibt `0x800000e`zurück, die Apply-Aktion kann nicht abgebrochen werden.
     
-- **Download**: gibt ein **HRESULT** mit dem Wert `0x800000e`"eine Methode wurde zu einem unerwarteten Zeitpunkt aufgerufen" zurück. 
+- **Download**: gibt ein **HRESULT** mit dem Wert `0x800000e`"eine Methode wurde zu einem unerwarteten Zeitpunkt aufgerufen." zurück. 
     
-- **Status**: gibt **APPLY_WIP** zurück, um anzugeben, dass die Funktion Arbeit wird ausgeführt wird. 
+- **Status**: gibt **APPLY_WIP** zurück, um anzugeben, dass die Anwendung "Arbeit" ausgeführt wird. 
     
 > [!NOTE]
-> Da OfficeC2RCOM ein COM+-Dienst ist und dynamisch geladen wird, müssen Sie **CoCreateInstance** jedes Mal aufrufen, wenn Sie eine Methode für diese Klasse aufrufen, um sicherzustellen, dass Sie das erwartete Ergebnis erhalten. Der COM+-Dienst behandelt das Erstellen einer neuen Instanz, falls erforderlich. Wenn eine der Methoden zum ersten Mal aufgerufen wird, wird das **IUpdateNotify** -Objekt von com+ geladen und in einer der dllhost. exe-Instanzen ausgeführt. Das neue Objekt bleibt für ca. 3 Minuten im Leerlauf aktiv. Wenn ein nach folgender Aufruf innerhalb von drei Minuten nach dem letzten Aufruf erfolgt, bleibt das **IUpdateNotify** -Objekt geladen, und es wird keine neue Instanz erstellt. Wenn innerhalb von drei Minuten kein Aufruf erfolgt, wird das IUpdateNotify-Objekt entladen, und beim nächsten Aufruf wird ein neues **IUpdateNotify** -Objekt erstellt. 
+> Da OfficeC2RCOM ein com+-Dienst ist und dynamisch geladen wird, müssen Sie **CoCreateInstance** jedes Mal aufrufen, wenn Sie eine Methode für diese Klasse aufrufen, um sicherzustellen, dass Sie das erwartete Ergebnis erhalten. Der com+-Dienst behandelt das Erstellen einer neuen Instanz, wenn dies erforderlich ist. Wenn eine der Methoden zum ersten Mal aufgerufen wird, lädt com+ das **IUpdateNotify** -Objekt und führt es in einer der dllhost. exe-Instanzen aus. Das neue Objekt bleibt im Leerlauf etwa 3 Minuten aktiv. Wenn ein anschließender Aufruf innerhalb von drei Minuten nach dem letzten Aufruf erfolgt, bleibt das **IUpdateNotify** -Objekt geladen, und es wird keine neue Instanz erstellt. Wenn innerhalb von drei Minuten kein Aufruf erfolgt, wird das IUpdateNotify-Objekt entladen, und ein neues **IUpdateNotify** -Objekt wird erstellt, wenn der nächste Aufruf erfolgt. 
   
-## <a name="click-to-run-installer-com-api-reference-guide"></a>Klick-und-Los-Installer-COM-API – Referenzhandbuch
+## <a name="click-to-run-installer-com-api-reference-guide"></a>Leitfaden zur com-API-Referenz für Klick-und-Los-Installer
 
 In der folgenden API-Referenzdokumentation:
   
-- Die Parameter sind in einem Schlüssel-Wert-Paar-Format durch ein Leerzeichengetrennt.
+- Parameter befinden sich in einem Schlüssel-Wert-Paar Format, das durch ein Leerzeichengetrennt ist.
     
 - Bei den Parametern wird die Groß-/Kleinschreibung nicht beachtet.
     
-- Es gibt eine [Liste von Parametern](https://blogs.technet.microsoft.com/odsupport/2014/03/03/the-new-update-now-feature-for-office-2013-click-to-run-for-office365-and-its-associated-command-line-and-switches/) mit Dokumentation. 
+- Es gibt eine [Liste von Parametern](https://blogs.technet.microsoft.com/odsupport/2014/03/03/the-new-update-now-feature-for-office-2013-click-to-run-for-office365-and-its-associated-command-line-and-switches/) mit verfügbarer Dokumentation. 
     
 - Zusammenfassung der IUpdateNotify2-Schnittstelle ist jetzt enthalten.
     
@@ -129,18 +129,18 @@ HRESULT Apply([in] LPWSTR pcwszParameters) // Apply update content.
 
 #### <a name="parameters"></a>Parameter
 
--  _Display Level_: **true** , um den Installationsstatus, einschließlich Fehler, während des Aktualisierungsvorgangs anzuzeigen; **false** , wenn der Installationsstatus, einschließlich Fehler, während des Aktualisierungsvorgangs ausgeblendet werden soll. Der Standardwert ist **false**.
+-  _Display Level_: **true** , um den Installationsstatus, einschließlich Fehlern, während des Updateprozesses anzuzeigen; **false** , um den Installationsstatus, einschließlich Fehlern, während des Aktualisierungsvorgangs auszublenden. Der Standardwert ist **false**.
     
 -  _forceappshutdown_: **true** , um zu erzwingen, dass Office-Anwendungen sofort heruntergefahren werden, wenn die **Apply** -Aktion ausgelöst wird; **false** , wenn ein Fehler auftritt, wenn Office-Anwendungen ausgeführt werden. Der Standardwert ist **false**. Weitere Informationen finden Sie unter [Hinweise](#bk_ApplyRemark) . 
     
-  Wenn eine Office-Anwendung ausgeführt wird, wenn die **Apply** -Aktion ausgelöst wird, schlägt die **Apply** -Aktion in der Regel fehl. Die `forceappshutdown=true` Übergabe an die **Apply** -Methode bewirkt, dass der **OfficeClickToRun** -Dienst die Anwendungen sofort herunterfahren und das Update anwenden kann. Der Benutzer kann in diesem Fall Datenverlust erfahren. 
+  Wenn eine Office-Anwendung ausgeführt wird, wenn die **Apply** -Aktion ausgelöst wird, tritt in der Regel die **Apply** -Aktion nicht mehr auf. Die `forceappshutdown=true` Übergabe an die **Apply** -Methode führt dazu, dass der **OfficeClickToRun** -Dienst die Anwendungen sofort herunterfährt und das Update anwendet. Der Benutzer kann in diesem Fall Datenverlust auftreten. 
     
 #### <a name="return-results"></a>Ergebnisse zurückgeben
 
 |||
 |:-----|:-----|
 |**S_OK** <br/> |Aktion wurde erfolgreich an den Klick-und-Los-Dienst zur Ausführung übermittelt.  <br/> |
-|**E_ACCESSDENIED** <br/> |Der Anrufer wird nicht mit erhöhten Rechten ausgeführt.  <br/> |
+|**E_ACCESSDENIED** <br/> |Der Aufrufer wird nicht mit erhöhten Rechten ausgeführt.  <br/> |
 |**E_INVALIDARG** <br/> |Ungültige Parameter wurden übergeben.  <br/> |
 |**E_ILLEGAL_METHOD_CALL** <br/> |Die Aktion ist zu diesem Zeitpunkt nicht zulässig. Weitere Informationen finden Sie unter [Hinweise](#bk_ApplyRemark) .  <br/> |
 
@@ -148,9 +148,9 @@ HRESULT Apply([in] LPWSTR pcwszParameters) // Apply update content.
 
 #### <a name="remarks"></a>Bemerkungen
 
-- Wenn eine Office-Anwendung ausgeführt wird, wenn die **Apply** -Aktion ausgelöst wird, schlägt die **Apply** -Aktion fehl. Die `forceappshutdown=true` Übergabe an die **Apply** -Methode bewirkt, dass der **OfficeClickToRun** -Dienst alle Office-Anwendungen, die ausgeführt werden, sofort herunterfahren und das Update anwenden kann. Der Benutzer kann Daten erfahren, da Sie nicht aufgefordert werden, Änderungen an geöffneten Dokumenten zu speichern. 
+- Wenn eine Office-Anwendung ausgeführt wird, wenn die **Apply** -Aktion ausgelöst wird, tritt bei der **Apply** -Aktion ein Fehler auf. Die `forceappshutdown=true` Übergabe an die **Apply** -Methode führt dazu, dass der **OfficeClickToRun** -Dienst sofort alle Office-Anwendungen herunterfährt, die ausgeführt werden und das Update anwenden. Dem Benutzer treten möglicherweise Daten auf, da Sie nicht zum Speichern von Änderungen an geöffneten Dokumenten aufgefordert werden.. 
     
-- Diese Aktion kann nur ausgelöst werden, wenn der COM-Status einer der folgenden ist: 
+- Diese Aktion kann nur ausgelöst werden, wenn der com-Status einer der folgenden ist: 
     
   - **eUPDATE_UNKNOWN**
     
@@ -164,7 +164,7 @@ HRESULT Apply([in] LPWSTR pcwszParameters) // Apply update content.
     
   - **eAPPLY_FAILED**
     
-- Wenn Sie die **Apply** -Methode ohne vorheriges Herunterladen des Inhalts aufrufen, wird die **Apply** -Methode erfolgreich **ausgeführt** , da Sie nichts zum anwenden und Abschließen des **Apply** -Vorgangs erfolgreich erkannt hat. 
+- Wenn Sie die **Apply** -Methode aufrufen, ohne Inhalt zuvor herunterzuladen, wird die **Apply** -Methode den Bericht **erfolgreich ausgeführt** , da Sie festgestellt hat, dass nichts angewendet und der **Apply** -Prozess erfolgreich abgeschlossen wurde. 
     
 ### <a name="cancel"></a>Abbrechen
 
@@ -183,9 +183,9 @@ HRESULT Cancel() // Cancel the download action.
 
 #### <a name="remarks"></a>Bemerkungen
 
-- Diese Methode kann nur ausgelöst werden, wenn die COM-Status-ID **eDOWNLOAD_WIP**. Es wird versucht, die aktuelle Download Aktion abzubrechen. Der COM-Status ändert sich in **eDOWNLOAD_CANCELLING** und ändert sich schließlich zu **eDOWNLOAD_CANCELED**. Der COM-Status gibt **E_ILLEGAL_METHOD_CALL** zurück, wenn Sie zu einem anderen Zeitpunkt ausgelöst werden. 
+- Diese Methode kann nur ausgelöst werden, wenn die com-Status-ID **eDOWNLOAD_WIP**. Es wird versucht, die aktuelle Download Aktion abzubrechen. Der com-Status wechselt in **eDOWNLOAD_CANCELLING** und ändert sich schließlich in **eDOWNLOAD_CANCELED**. Der com-Status gibt **E_ILLEGAL_METHOD_CALL** zurück, wenn Sie zu einem anderen Zeitpunkt ausgelöst wird. 
     
-### <a name="download"></a>Download
+### <a name="download"></a>Herunterladen
 
 ```cpp
 HRESULT Download([in] LPWSTR pcwszParameters) // Download update content.
@@ -193,22 +193,22 @@ HRESULT Download([in] LPWSTR pcwszParameters) // Download update content.
 
 #### <a name="parameters"></a>Parameter
 
--  _Display Level_: **true** , um den Installationsstatus, einschließlich Fehler, während des Aktualisierungsvorgangs anzuzeigen; **false** , wenn der Installationsstatus, einschließlich Fehler, während des Aktualisierungsvorgangs ausgeblendet werden soll. Der Standardwert ist **false**.
+-  _Display Level_: **true** , um den Installationsstatus, einschließlich Fehlern, während des Updateprozesses anzuzeigen; **false** , um den Installationsstatus, einschließlich Fehlern, während des Aktualisierungsvorgangs auszublenden. Der Standardwert ist **false**.
     
 -  _updatebaseurl_: URL zur alternativen Download Quelle.
     
--  _updatetoversion_: die Version, in der Office aktualisiert werden soll. Definieren Sie diesen Parameter, wenn Sie eine ältere Version als die derzeit installierte Version aktualisieren möchten.
+-  _updatetoversion_: die Version, auf der Office aktualisiert werden soll. Definieren Sie diesen Parameter, wenn Sie eine ältere Version als die aktuell installierte Version aktualisieren möchten.
     
 -  _downloadsource_: CLSID der angepassten **IBackgroundCopyManager** -Implementierung (Bits-Manager). 
     
--  _Inhalts_-Kennung: identifiziert den Inhalt, der vom Inhaltsserver heruntergeladen werden soll, über den angepassten Bits-Manager. Dieser Wert wird über die BITS-Schnittstelle zur Interpretation übergeben.
+-  _Content_-Kennung: gibt den Inhalt an, der vom Inhaltsserver über den angepassten Bits-Manager heruntergeladen werden soll. Dieser Wert wird über die Bits-Schnittstelle zur Interpretation übergeben.
     
 #### <a name="return-results"></a>Ergebnisse zurückgeben
 
 |||
 |:-----|:-----|
 |**S_OK** <br/> |Aktion wurde erfolgreich an den Klick-und-Los-Dienst zur Ausführung übermittelt.  <br/> |
-|**E_ACCESSDENIED** <br/> |Der Anrufer wird nicht mit erhöhten Rechten ausgeführt.  <br/> |
+|**E_ACCESSDENIED** <br/> |Der Aufrufer wird nicht mit erhöhten Rechten ausgeführt.  <br/> |
 |**E_INVALIDARG** <br/> |Ungültige Parameter wurden übergeben.  <br/> |
 |**E_ILLEGAL_METHOD_CALL** <br/> |Die Aktion ist zu diesem Zeitpunkt nicht zulässig. Weitere Informationen finden Sie unter [Hinweise](#bk_DownloadRemark) .  <br/> |
 
@@ -216,11 +216,11 @@ HRESULT Download([in] LPWSTR pcwszParameters) // Download update content.
 
 #### <a name="remarks"></a>Bemerkungen
 
-- Sie müssen _downloadsource_ und _contentcode_ als Paar angeben. Ist dies nicht der Fall, gibt die **Download** -Methode einen **E_INVALIDARG** -Fehler zurück. 
+- Sie müssen _downloadsource_ und _Content_ -Nr als Paar angeben. Wenn dies nicht der Fall ist, gibt die **Download** -Methode einen **E_INVALIDARG** Fehler zurück. 
     
-- Wenn _downloadsource_, _Inhalts_-und _updatebaseurl_ bereitgestellt werden, werden _updatebaseurl_ ignoriert. 
+- Wenn _downloadsource_, _Content_-und _updatebaseurl_ bereitgestellt werden, wird _updatebaseurl_ ignoriert. 
     
-- Diese Aktion kann nur ausgelöst werden, wenn der COM-Status einer der folgenden ist: 
+- Diese Aktion kann nur ausgelöst werden, wenn der com-Status einer der folgenden ist: 
     
   - **eUPDATE_UNKNOWN**
     
@@ -234,19 +234,19 @@ HRESULT Download([in] LPWSTR pcwszParameters) // Download update content.
     
   - **eAPPLY_FAILED**
     
-- Wenn Sie die **Apply** -Methode ohne zuvor heruntergeladenen Inhalt aufrufen, wird die **Apply** -Methode erfolgreich **ausgeführt** , da Sie keine Anwendung und keinen erfolgreichen Abschluss des **Apply** -Prozesses erkannt hat. 
+- Wenn Sie die **Apply** -Methode ohne zuvor heruntergeladenen Inhalt aufrufen, wird die **Apply** -Methode den Bericht **erfolgreich ausgeführt** , da Sie festgestellt hat, dass nichts angewendet und der **Apply** -Prozess erfolgreich abgeschlossen wurde. 
     
 #### <a name="examples"></a>Beispiele
 
-- So laden Sie die Inhalte aus dem angepassten BITS-Manager herunter: Rufen Sie die Funktion **Download ()** auf, indem Sie die folgenden Parameter übergeben: 
+- So laden Sie den Inhalt aus dem angepassten Bits-Manager herunter: Rufen Sie die **Download ()** -Funktion auf, indem Sie die folgenden Parameter übergeben: 
     
   ```cpp
   "downloadsource=CLSIDofBITSInterface contentid=BITSServerContentIdentifier"
   ```
 
-- So laden Sie die Inhalte aus dem Microsoft CDN herunter: Rufen Sie die **Download ()** -Funktion auf, ohne die Parameter _downloadsource_, _contentcode_oder _updatebaseurl_ anzugeben. 
+- Zum Herunterladen des Inhalts aus dem Microsoft CDN: Rufen Sie die **Download ()** -Funktion ohne Angabe der Parameter _downloadsource_, _contentbar_oder _updatebaseurl_ . 
     
-- So laden Sie die Inhalte von einem angepassten Speicherort herunter: Rufen Sie die Funktion **Download ()** auf, indem Sie den folgenden Parameter übergeben: 
+- So laden Sie die Inhalte von einem benutzerdefinierten Speicherort herunter: Rufen Sie die **Download ()-** Funktion auf, indem Sie den folgenden Parameter übergeben: 
     
   ```cpp
   "updatebaseurl=yourcontentserverurl"
@@ -268,7 +268,7 @@ HRESULT status([out] _UPDATE_STATUS_REPORT& pUpdateStatusReport) // Get status o
 
 |||
 |:-----|:-----|
-| _pUpdateStatusReport_ <br/> |Zeiger auf eine UPDATE_STATUS_REPORT-Struktur.  <br/> |
+| _pUpdateStatusReport_ <br/> |Zeiger auf eine UPDATE_STATUS_REPORT Struktur.  <br/> |
    
 #### <a name="return-results"></a>Ergebnisse zurückgeben
 
@@ -278,7 +278,7 @@ HRESULT status([out] _UPDATE_STATUS_REPORT& pUpdateStatusReport) // Get status o
    
 #### <a name="remarks"></a>Bemerkungen
 
-- Das Status-Feld des `UPDATE_STATUS_REPORT` enthält den Status der aktuellen Aktion. Einer der folgenden Statuswerte wird zurückgegeben: 
+- Das Feld Status des `UPDATE_STATUS_REPORT` enthält den Status der aktuellen Aktion. Einer der folgenden Statuswerte wird zurückgegeben: 
     
   ```cpp
   typedef enum _UPDATE_STATUS
@@ -298,9 +298,9 @@ HRESULT status([out] _UPDATE_STATUS_REPORT& pUpdateStatusReport) // Get status o
   
   ```
 
-- Wenn der letzte Befehl zu einem Fehler geführt hat, `UPDATE_STATUS_REPORT` enthält das Error-Feld des-Felds detaillierte Informationen zu dem Fehler. Von der **Status** -Methode werden zwei Arten von Fehlercodes zurückgegeben. 
+- Wenn der letzte Befehl zu einem Fehler geführt hat, `UPDATE_STATUS_REPORT` enthält das Feld Error des-Fehlers detaillierte Informationen zu dem Fehler. Zwei Arten von Fehlercodes werden von der **Status** -Methode zurückgegeben. 
     
-- Wenn der Fehler kleiner als `UPDATE_ERROR_CODE::eUNKNOWN`ist, handelt es sich um einen der folgenden vordefinierten Fehlercodes:
+- Wenn der Fehler kleiner als `UPDATE_ERROR_CODE::eUNKNOWN`ist, ist der Fehler einer der folgenden vordefinierten Fehlercodes:
     
   ```cpp
   typedef enum _UPDATE_ERROR_CODE
@@ -324,11 +324,11 @@ HRESULT status([out] _UPDATE_STATUS_REPORT& pUpdateStatusReport) // Get status o
   
   ```
 
-  Wenn der Rückgabefehlercode größer ist als `UPDATE_ERROR_CODE::eUNKNOWN` der **HRESULT** -Wert eines fehlgeschlagenen Funktionsaufrufs. So extrahieren Sie die HRESULT `UPDATE_ERROR_CODE::eUNKNOWN` -Subtraktion von dem Wert, der im error- `UPDATE_STATUS_REPORT`Feld von zurückgegeben wird.
+  Wenn der Rückgabefehlercode größer als `UPDATE_ERROR_CODE::eUNKNOWN` der **HRESULT** -Wert eines fehlgeschlagenen Funktionsaufrufs ist. So extrahieren Sie das HRESULT `UPDATE_ERROR_CODE::eUNKNOWN` subtrahieren aus dem Wert, der im Feld Error `UPDATE_STATUS_REPORT`von zurückgegeben wird.
     
-  Die vollständige Liste der Status-und Fehlerwerte können Sie anzeigen, indem Sie die in OfficeC2RCom. dll eingebettete **IUpdateNotify** -Typbibliothek überprüfen. 
+  Die vollständige Liste der Status-und Fehlerwerte kann angezeigt werden, indem die in OfficeC2RCom. dll eingebettete **IUpdateNotify** -Typbibliothek überprüft wird. 
     
-- Das Feld "Inhaltstyp" wird für Aufrufe an **Status** nach dem **herunterladen** verwendet und gibt die an den **Download** Aufruf übergebene Inhalts-Nr zurück. Es empfiehlt sich, dieses Feld mit **null** zu initialisieren, bevor Sie die **Status** -Methode aufrufen und dann den Wert überprüfen, nachdem **Status** zurückgegeben wurde. Wenn der Wert immer noch **null**ist, bedeutet dies, dass keine Inhalts-zu zurückgeben. Wenn der Wert nicht **null**ist, müssen Sie ihn mit einem Aufruf von sysfree String **()** freigeben. Im folgenden finden Sie einen Codeausschnitt zum Aufrufen von **Status** nach dem **Download**.
+- Das Feld "Content-Nr" wird für Aufrufe von **Status** verwendet, nachdem der **Download** initiiert wurde, und gibt die Inhalts-Nr zurück, die an den **Download** Aufruf übergeben wurde. Es wird empfohlen, dieses Feld vor dem Aufrufen der **Status** -Methode auf **null** zu initialisieren und anschließend den Wert nach dem Zurückgeben des **Status** zu überprüfen. Wenn der Wert immer noch **null**ist, bedeutet dies, dass keine Inhalts-Nr vorhanden ist, die zurückgegeben werden soll. Wenn der Wert nicht **null**ist, müssen Sie ihn mit einem Aufruf von **sysfree String ()** freigeben. Im folgenden finden Sie einen Codeausschnitt zum Aufrufen des **Status** nach dem **Download**.
     
   ```cpp
   std::wstring contentID;
@@ -349,35 +349,35 @@ HRESULT status([out] _UPDATE_STATUS_REPORT& pUpdateStatusReport) // Get status o
 ### <a name="summary-of-iupdatenotify2-interface"></a>Zusammenfassung der IUpdateNotify2-Schnittstelle
 
 > [!NOTE]
-> Diese Zusammenfassung wird als Kompliment zur Integration von [Verwaltbarkeit-Anwendungen mit dem Office 365-Klick-und-Los-Installer](https://msdn.microsoft.com/EN-US/library/office/mt608768.aspx)bereitgestellt. Nachdem das öffentliche Dokument aktualisiert wurde, kann dieses Dokument als veraltet betrachtet werden. 
+> Diese Zusammenfassung wird als Kompliment zur [Integration von Verwaltbarkeit-Anwendungen mit dem Office 365 Klick-und-Los-Installationsprogramm](https://docs.microsoft.com/office/client-developer/shared/manageability-applications-with-the-office-365-click-to-run-installer)bereitgestellt. Sobald das öffentliche Dokument aktualisiert wurde, kann dieses Dokument als veraltet betrachtet werden. 
   
-Von C2RTenant [16.0.8208.6352](https://oloop/BuildGroup/Details/tenantc2rclient#3519/1255278) (erster öffentlich verfügbarer Build sollte June Fork Build--8326. *) haben wir eine neue **IUpdateNotify2** -Schnittstelle hinzugefügt. Hier finden Sie einige grundlegende Informationen zu dieser Schnittstelle: 
+Von C2RTenant [16.0.8208.6352](https://oloop/BuildGroup/Details/tenantc2rclient#3519/1255278) (erstes öffentlich verfügbares Build sollte June Fork Build--8326. *) Wir haben eine neue **IUpdateNotify2** -Schnittstelle hinzugefügt. Hier finden Sie einige grundlegende Informationen zu dieser Schnittstelle: 
   
 - CLSID_UpdateNotifyObject2, {52C2F9C2-F1AC-4021-BF50-756A5FA8DDFE}
     
-- Diese Schnittstelle hat auch die ursprüngliche IUpdateNotify-Schnittstelle gehostet, um Abwärtskompatibilität bereitzustellen. Wenn Sie diese Schnittstelle verwenden, haben Sie Zugriff auf alle Methoden, die in der **UpdateNotifyObject** -Schnittstelle bereitgestellt werden. 
+- Diese Schnittstelle hat auch die ursprüngliche IUpdateNotify-Schnittstelle gehostet, um Abwärtskompatibilität zu gewährleisten. Das heißt, wenn Sie diese Schnittstelle verwenden, haben Sie Zugriff auf alle Methoden, die in der **UpdateNotifyObject** -Schnittstelle bereitgestellt werden. 
     
 - Neue Methoden zu IUpdateNotify2 hinzugefügt:
     
-  - **HRESULT** GetBlockingApps ([out] BSTR \* appslist). Update-Blockierungs-apps-Liste abrufen. Dieser Aufruf gibt ausgeführte Office-apps zurück, wodurch der Aktualisierungsvorgang nicht fortgesetzt wird. 
+  - **HRESULT** GetBlockingApps (BSTR \* -appsliste). Updates blockieren apps-Liste abrufen. Bei diesem Aufruf werden ausgeführte Office-Apps zurückgegeben, wodurch der Aktualisierungsprozess blockiert wird. 
     
-  - **HRESULT** GetOfficeDeploymentData ([in] int dataType, [in] **ein LPCWSTR** pcwszName, [out] BSTR * OfficeData). Abrufen von Office-bereitstellungsDaten. 
+  - **HRESULT** GetOfficeDeploymentData ([in] int DataType, [in] **ein LPCWSTR** pcwszName, [out] BSTR * OfficeData). Abrufen von Office-Bereitstellungsdaten 
     
 - Wenn Sie die neuen Methoden verwenden möchten, müssen Sie Folgendes sicherstellen:
     
-  - Ihre C2R-Version ist neuer als die oben genannte\>Build (= Juni Fork Build).
+  - Ihre C2R-Version ist neuer als der obige Build\>(= June Fork Build).
     
   - Verwenden Sie UpdateNotifyObject2 anstelle von **UpdateNotifyObject** , um **CoCreateInstance**aufzurufen.
     
-Wenn Sie keine der neuen Methoden verwenden, müssen Sie nichts ändern. Alle vorhandenen Methoden funktionieren genau wie zuvor.
+Wenn Sie keine der neuen Methoden verwenden, müssen Sie nichts ändern. Alle vorhandenen Methoden funktionieren genauso genau wie zuvor.
   
-## <a name="implementing-the-bits-interface"></a>Implementieren der BITS-Schnittstelle
+## <a name="implementing-the-bits-interface"></a>Implementieren der Bits-Schnittstelle
 
-Der [intelligente Hintergrundübertragungsdienst (Background Intelligent Transfer Service](https://msdn.microsoft.com/library/bb968799(v=vs.85).aspx) , Bits) ist ein Dienst, der von Microsoft zur Übertragung von Dateien zwischen einem Client und einem Server bereitgestellt wird. BITS ist einer der Kanäle, die von Office-Klick-und-Los-Installer zum Herunterladen von Inhalten verwendet werden können. Standardmäßig verwendet das Office-Klick-und-Los-Installationsprogramm die Windows-Implementierung von BITS, um die Inhalte aus dem CDN herunterzuladen. 
+Der [intelligente Hintergrundübertragungsdienst (Background Intelligent Transfer Service](https://docs.microsoft.com/windows/win32/bits/background-intelligent-transfer-service-portal) , Bits) ist ein von Microsoft bereitgestellter Dienst zum Übertragen von Dateien zwischen einem Client und einem Server. Bits ist einer der Kanäle, die von einem Office-Klick-und-Los-Installationsprogramm zum Herunterladen von Inhalten verwendet werden können. Standardmäßig verwendet das Office-Klick-und-Los-Installationsprogramm die in der Implementierung von Bits integrierte Windows-Datei, um den Inhalt aus dem CDN herunterzuladen. 
   
-Durch die Bereitstellung einer angepassten BITS-Implementierung zur **Download ()** -Methode der **IUpdateNotify** -Schnittstelle kann Ihre Verwaltbarkeit steuern, wo und wie der Client den Inhalt herunterlädt. Eine angepasste BITS-Schnittstelle ist nützlich, wenn Sie einen benutzerdefinierten Inhalts Verteilungskanal bereitstellen, der nicht über die integrierten Klick-und-Los-Kanäle verfügt, wie etwa das Office CDN, IIS-Server oder Dateifreigaben. 
+Durch die Bereitstellung einer angepassten Bits-Implementierung für die **Download ()** -Methode der **IUpdateNotify** -Schnittstelle kann Ihre Verwaltbarkeit-Software steuern, wo und wie der Client den Inhalt herunterlädt. Eine angepasste Bits-Schnittstelle ist nützlich, wenn ein benutzerdefinierter Inhalts Verteilungskanal als die integrierten Klick-und-Los-Kanäle bereitgestellt wird, beispielsweise die Office CDN-, IIS-Server oder Dateifreigaben. 
   
-Die Mindestanforderung für eine angepasste BITS-Schnittstelle für den Office C2R-Dienst ist:
+Die Mindestanforderung für eine angepasste Bits-Schnittstelle für die Verwendung des Office C2R-Diensts lautet:
   
 - Für **IBackgroundCopyManager**:
     
@@ -421,19 +421,19 @@ Die Mindestanforderung für eine angepasste BITS-Schnittstelle für den Office C
   
   ```
 
-- Für die `Addfile` und `AddFileWithRanges` -Funktionen hat die Remote-URL das folgende Format: 
+- Für die `Addfile` - `AddFileWithRanges` und-Funktionen hat die Remote-URL folgendes Format: 
     
   ```cpp
   cmbits://<contentid>/<relative path to target file>
   ```
 
-  - cmbits ist hart codiert und steht für angepasste BITS.
+  - cmbits ist hart codiert und steht für angepasste Bits.
     
-  -  Content-Nr. __ ist der Parameter contentcode für die **Download ()** -Methode. _ \<\> _ 
+  -  Content-Wert ist der _Content_ -Parameter für die **Download ()** -Methode. _ \<\> _ 
     
-  -  _der relative Pfad zur\> Zieldatei enthält den Speicherort und den Dateinamen der herunterzuladenden Datei. \<_ 
+  -  _Relative Path to target file\> enthält den Speicherort und den Dateinamen der Datei, die heruntergeladen werden soll. \<_ 
     
-    Wenn Sie beispielsweise eine _Inhalts_ - `f732af58-5d86-4299-abe9-7595c35136ef` zu- **Download ()** -Methode bereitgestellt haben und Office C2R die Version CAB-Datei herunterladen möchte (beispielsWeise `v32.cab` Datei), wird AddFile **()** mit folgenden `RemoteUrl`aufrufen:
+    Wenn Sie beispielsweise eine _Inhalts_ `f732af58-5d86-4299-abe9-7595c35136ef` -Nr für die **Download ()** -Methode bereitgestellt haben und Office C2R die Version der CAB-Datei (beispielsweise `v32.cab` Datei) herunterladen möchte, wird **AddFile ()** mit folgendem `RemoteUrl`Aufruf aufgerufen:
     
   ```cpp
   cmbits://f732af58-5d86-4299-abe9-7595c35136ef/Office/Data/V32.cab
@@ -458,7 +458,7 @@ Die Mindestanforderung für eine angepasste BITS-Schnittstelle für den Office C
 
 <!--## Automating content staging
 
-IT administrators can choose to have desktop clients enabled to automatically receive updates when they are available directly from the Microsoft Content Delivery Network (CDN) or they can choose to control the deployment of updates available from the [update channels](https://support.office.com/en-us/article/Overview-of-update-channels-for-Office-365-ProPlus-9ccf0f13-28ff-4975-9bd2-7e4ea2fefef4?ui=en-US&rs=en-US&ad=US) using the [Office 2016 Deployment Tool](https://www.microsoft.com/en-us/download/details.aspx?id=49117) or [System Center Configuration Manager](https://support.office.com/en-us/article/Manage-updates-to-Office-365-ProPlus-with-System-Center-Configuration-Manager-b4a17328-fcfe-40bf-9202-58d7cbf1cede).
+IT administrators can choose to have desktop clients enabled to automatically receive updates when they are available directly from the Microsoft Content Delivery Network (CDN) or they can choose to control the deployment of updates available from the [update channels](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus) using the [Office 2016 Deployment Tool](https://www.microsoft.com/download/details.aspx?id=49117) or [System Center Configuration Manager](https://docs.microsoft.com/deployoffice/manage-office-365-proplus-updates-with-configuration-manager).
   
 The service supports the ability for management tools to recognize and automate the download of the content when updates are made available.
   
@@ -582,71 +582,71 @@ THE ABOVE SECTION APPEARS TO BE A DUPLICATE OF THE FOLLOWING SECTION; TEMPORARIL
 
 ## <a name="automating-content-staging"></a>Automatisieren der Inhaltsbereitstellung
 
-IT-Administratoren können festlegen, dass Desktop Clients aktiviert werden, um automatisch Updates zu erhalten, wenn Sie direkt über das Microsoft Content Delivery Network (CDN) verfügbar sind, oder Sie können die Bereitstellung von Updates steuern, die über das Update verfügbar sind. Kanäle, die das Office-Bereitstellungs Tool oder System Center Configuration Manager verwenden.
+IT-Administratoren können festlegen, dass Desktop Clients automatisch Updates erhalten, wenn Sie direkt im Microsoft Content Delivery Network (CDN) zur Verfügung stehen, oder Sie können auswählen, ob die Bereitstellung von Updates gesteuert werden soll, die im Update verfügbar sind. Kanäle mit dem Office-Bereitstellungs Tool oder System Center Configuration Manager.
   
-Der Dienst unterstützt die Möglichkeit, dass Verwaltungstools den Download der Inhalte erkennen und automatisieren können, wenn Updates zur Verfügung gestellt werden.
+Der Dienst unterstützt die Möglichkeit für Verwaltungstools, den Download der Inhalte zu erkennen und zu automatisieren, wenn Updates zur Verfügung gestellt werden.
   
-**Die folgende Abbildung bietet eine Übersicht über das Herunterladen eines benutzerdefinierten Bilds.**
+**Die folgende Abbildung ist eine Übersicht über das Herunterladen eines benutzerdefinierten Bilds.**
 
-![Ein Diagramm zur Verwendung der COM-Schnittstelle für das Office-Klick-und-Los-Installationsprogramm.] (media/e7ac2523-e67b-4a44-ae67-c048709f872a.png "Ein Diagramm zur Verwendung der COM-Schnittstelle im Office-Klick-und-Los-Installationsprogramm")
+![A diagram of using the COM interface on  the Office Click-To-Run installer.](media/e7ac2523-e67b-4a44-ae67-c048709f872a.png "Ein Diagramm zur Verwendung der COM-Schnittstelle im Office-Klick-und-Los-Installationsprogramm")
   
 ### <a name="overview-of-downloading-a-custom-image"></a>Übersicht über das Herunterladen eines benutzerdefinierten Bilds
   
-Im vorherigen Diagramm sehen Sie, dass ein neues Office 365 proPlus-Image im Office Content Distribution Network (CDN) verfügbar ist. Neben dem Office 365 proPlus-Bild ist auch eine Dateiliste mit XML-Formatierung verfügbar, die die erforderlichen Informationen zum Aktivieren der Software zum direkten erstellen angepasster Bilder enthält, die die Notwendigkeit der Verwendung des Office-BereitstellungsTools ersetzen.
+Im vorherigen Diagramm sehen Sie, dass ein neues Office 365 ProPlus-Bild im Office-Inhalts Verteilungsnetzwerk (CDN) zur Verfügung steht. Zusammen mit dem Office 365 ProPlus-Bild ist auch eine XML-formatierte Dateiliste verfügbar, die über die erforderlichen Informationen verfügt, um die Verwaltbarkeit von Software zu ermöglichen, um direkt angepasste Bilder zu erstellen, die die Verwendung des Office-Bereitstellungstools ersetzen.
   
-Ein Unternehmen konfiguriert Ihre WSUS so, dass die Office 365-Client Updates synchronisiert werden. Diese Updates enthalten nicht die tatsächliche Bild Nutzlast, aber die Verwaltbarkeit kann erkennen, wenn neuer Inhalt verfügbar ist. Die Software zur Verwaltbarkeit kann dann die Client Update-Metadaten lesen, um zu verstehen, für welche Version von Office das Update gilt.
+Ein Unternehmen konfiguriert seine WSUS so, dass die Office 365 Client Updates synchronisiert werden. Diese Updates enthalten nicht die tatsächliche Bild Nutzlast, aber die Verwaltungssoftware kann erkennen, wenn neue Inhalte verfügbar sind. Die Verwaltungssoftware kann dann die Client Update Metadaten lesen, um zu verstehen, für welche Version von Office das Update gilt.
   
-Wenn das Update anwendbar ist, kann die Verwaltungssoftware den CDN-Inhalt und die Dateiliste verwenden, um das benutzerdefinierte Bild zu erstellen und an dem Speicherort für die Dateifreigabe zu speichern, für dessen Verwendung es konfiguriert ist.
+Wenn das Update anwendbar ist, kann die Verwaltbarkeit-Software den CDN-Inhalt und die Dateiliste verwenden, um das benutzerdefinierte Abbild zu erstellen und es auf dem Dateifreigabespeicherort zu speichern, der für die Verwendung konfiguriert ist.
   
 ### <a name="format-of-the-xml-file-list"></a>Format der XML-Dateiliste
 
-Es stehen zwei Dateilisten in einer CAB-Datei im CDN zur Verfügung. Eine Liste der Dateien für die 32-Bit-Version von Office und eine für die 64-Bit-Version von Office. Die URL des Speicherorts der Office-Dateiliste (OFL. CAB) ist [https://officecdn.microsoft.com/pr/wsus/ofl.cab](https://officecdn.microsoft.com/pr/wsus/ofl.cab). Die beiden Dateilisten werden aufgerufen:
+In einer CAB-Datei auf dem CDN stehen zwei Dateilisten zur Verfügung. Eine Liste enthält die Dateien für die 32-Bit-Version von Office und eine für die 64-Bit-Version von Office. Die URL des Speicherorts der Office-Dateiliste (ofl. CAB)-Datei [https://officecdn.microsoft.com/pr/wsus/ofl.cab](https://officecdn.microsoft.com/pr/wsus/ofl.cab)ist. Die beiden Dateilisten werden aufgerufen:
   
 - O365Client_32bit. XML
     
 - O365Client_64bit. XML
     
-Innerhalb der XML für jede Dateiliste ist ein <UpdateFiles> Knoten, der ein Version-Attribut enthält.  `<UpdateFiles version="1.4">`. Diese Version wird inkrementiert, wenn Änderungen an den Dateilisten vorgenommen werden.
+Innerhalb des XML-Code für jede der Dateilisten ist <UpdateFiles> ein Knoten, der ein Version-Attribut enthält.  `<UpdateFiles version="1.4">`. Diese Version wird inkrementiert, wenn Änderungen an den Dateilisten vorgenommen werden.
   
 Es gibt zwei Parameter, die mit dem XML-Code kombiniert werden müssen, um ein benutzerdefiniertes Bild zu erstellen: 
   
-- Ersetzen Sie *% Version%* durch die Buildversion von Office. Dies kann von den Client Update Metadaten abgeleitet werden (im nächsten Abschnitt erläutert). 
+- Ersetzen Sie *% Version%* durch die Buildversion von Office. Dies kann von den Client Update-Metadaten abgeleitet werden (siehe nächster Abschnitt). 
     
-- Definieren Sie *baseURL* mithilfe des URL-Werts, der der Verzweigung zugeordnet ist, für die das Bild erstellt wird. Dies wird aus den Client Update Metadaten abgeleitet, die im folgenden Abschnitt erläutert werden. 
+- Definieren Sie *baseURL* mit dem URL-Wert, der der Verzweigung zugeordnet ist, für die das Bild erstellt wird. Dies wird von den Client Update-Metadaten abgeleitet, die im folgenden Abschnitt erläutert werden. 
     
-Die Schritte zum Erstellen eines Bilds sind:
+Die Schritte zum Erstellen eines Bilds lauten wie folgt:
   
-1. Öffnen Sie die XML-Dateiliste.
+1. Öffnen Sie die Liste XML-Datei.
     
-2. Ersetzen Sie Vorkommen von *% Version%* durch die entsprechende Office-Buildversion. Die Buildversion kann aus releasehistory. XML abgerufen werden, wie weiter unten in diesem Artikel beschrieben. 
+2. Ersetzen Sie Vorkommen von *% Version%* durch die entsprechende Office Build-Version. Die Buildversion kann aus releasehistory. XML abgerufen werden, wie weiter unten in diesem Artikel beschrieben. 
     
 3. Lesen Sie das URL-Attribut für die Zielverzweigung.
     
 4. Entfernen Sie Sprachknoten für alle Sprachen, die im benutzerdefinierten Bild nicht erforderlich sind.
     
    > [!NOTE]
-   > Knoten mit der Sprache = ' 0 ' sind sprachneutral und müssen im Bild enthalten sein. 
+   > Knoten mit Sprache = ' 0 ' sind sprachneutral und müssen in das Bild aufgenommen werden. 
   
-5. Erstellen Sie ein lokales Abbild des CDN, indem Sie die XML-Dateiliste durchlaufen und die CDN-Dateien kopieren, während Sie die Ordnerstruktur nach Bedarf erstellen. 
+5. Erstellen Sie ein lokales Image des CDN, indem Sie die XML-Dateiliste durchlaufen und die CDN-Dateien kopieren, während Sie die Ordnerstruktur nach Bedarf erstellen. 
     
-   - Wenn das *Rename* -Attribut bereitgestellt wird, *benennen* Sie die kopierte Datei in den im Rename-Attribut angegebenen Wert um. Diese wird verwendet, um die Standarddateien V64. cab und V32. cab der obersten Ebene zu erstellen. Hierbei handelt es sich um die umbenannten Versionen der CAB-Datei der obersten Ebene, die als Standard Installationsversion verwendet werden, wenn die Version nicht angegeben wird. 
+   - Wenn das Attribut *Rename* angegeben wird, *benennen* Sie die kopierte Datei in den im Attribut Rename angegebenen Wert um. Dies wird verwendet, um die standardmäßigen V64. cab-und V32. CAB-Dateien auf oberster Ebene zu erstellen. Hierbei handelt es sich um die umbenannten Versionen der Build-CAB-Datei auf oberster Ebene, die als Standard Installationsversion verwendet werden, wenn die Version nicht angegeben ist. 
     
    - Verwenden Sie URL + relativePath + filename, um den CDN-Speicherort zu erstellen.
     
-Im folgenden finden Sie Beispiele, die den monatlichen Kanal (gemäß der Definition `<baseURL>` des Knotens) und die Buildversion 16.0.4229.1004 aus releasehistory. XML verwenden. 
+Im folgenden sind Beispiele aufgeführt, die den monatlichen Kanal (wie vom `<baseURL>` Knoten definiert) und die Buildversion 16.0.4229.1004 aus releasehistory. XML verwenden. 
   
 ```xml
 <baseURL branch="Monthly" URL="https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60" />
 ```
 
-- Es folgt eine sprachneutrale Datei, die für alle Sprachen benötigt wird. Der Name der Datei ist v64_ 16.0.4229.1004. cab und sollte aus `https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/office/data/v64_16.0.4229.1004.cab` kopiert und in `…/office/data/v64.cab`umbenannt werden. 
+- Im folgenden finden Sie eine sprachneutrale Datei, die für alle Sprachen erforderlich ist. Der Name der Datei lautet v64_16.0.4229.1004. cab und sollte aus `https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/office/data/v64_16.0.4229.1004.cab` kopiert und in `…/office/data/v64.cab`umbenannt werden. 
     
   ```xml
   <File name="v64_%version%.cab" rename="v64.cab" relativePath="/office/data/" language="0"/>
   
   ```
 
-- Es folgt eine Datei, die in das Bild en-US aufgenommen wird, wie von der LCID = 1033-Sprache angegeben. Der Name der Datei ist s641033. cab und sollte aus `https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/office/data/16.0.4229.1004/s641033.cab` kopiert und nicht umbenannt werden.
+- Im folgenden finden Sie eine Datei, die in das en-US-Bild aufgenommen werden soll, wie von der Sprache LCID = 1033 angegeben. Der Name der Datei lautet s641033. cab und sollte aus `https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/office/data/16.0.4229.1004/s641033.cab` kopiert und nicht umbenannt werden.
     
   ```xml
   <File name="s641033.cab" relativePath="/office/data/%version%/" language="1033" />
@@ -654,13 +654,13 @@ Im folgenden finden Sie Beispiele, die den monatlichen Kanal (gemäß der Defini
 
 ### <a name="hash-verification-of-dat-files"></a>Hash Überprüfung von DAT-Dateien
 
-Bild Erstellungstools können die Integrität der heruntergeladenen DAT-Dateien überprüfen, indem Sie einen berechneten HASHWERT mit dem angegebenen HASHWERT vergleichen, der jeder DAT-Datei zugeordnet ist. Es folgt ein Beispiel für eine DAT-Datei aus dem monatlichen Kanal mit Buildversion 16.0.4229.1004 und Language Set to Bulgarian:
+Bilder Erstellungstools können die Integrität der heruntergeladenen DAT-Dateien überprüfen, indem Sie einen berechneten Hashwert mit dem bereitgestellten Hashwert vergleichen, der den einzelnen DAT-Dateien zugeordnet ist. Im folgenden finden Sie ein Beispiel für eine DAT-Datei aus dem monatlichen Kanal mit 16.0.4229.1004 der Buildversion und der auf Bulgarisch festgelegten Sprache:
   
 ```xml
 <File name="stream.x64.bg-bg.dat" hashLocation="s641026.cab/stream.x64.bg-bg.hash" hashAlgo="Sha256" relativePath="/office/data/%version%/" language="1026"/>
 ```
 
-- Das **hashLocation** -Attribut gibt den relativen pfad des Stream.x64.bg-bg. Hash für die Datei Stream.x64.bg-bg. dat an. Erstellen Sie den Speicherort der Hash Datei durch Verketten von URL + relativePath + hashLocation. Im folgenden Beispiel wäre der Speicherort für stream.x64.bg-bg. Hash wie folgt lauten: 
+- Das **hashLocation** -Attribut gibt den relativen Pfadspeicherort des Stream.x64.bg-bg. Hash für die Datei Stream.x64.bg-bg. dat an. Erstellen Sie den Speicherort der Hash Datei, indem Sie URL + relativePath + hashLocation verketten. Im folgenden Beispiel wäre der Speicherort Stream.x64.bg-bg. Hash wie folgt: 
     
   ```http
   https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/office/data/16.0.4229.1004/s641026.cab/stream.x64.bg-bg.hash 
@@ -668,54 +668,54 @@ Bild Erstellungstools können die Integrität der heruntergeladenen DAT-Dateien 
 
 - Das **hashAlgo** -Attribut gibt an, welcher Hashalgorithmus verwendet wurde. In diesem Fall wurde SHA256 verwendet. 
     
-  Um die Integrität der Datei stream.x64.bg-bg. dat zu überprüfen, öffnen Sie den stream.x64.bg-bg. Hash, und lesen Sie den HASHWERT, der die erste Textzeile in der Hashdatei ist. Vergleichen Sie diese mit dem berechneten Hashwert (mithilfe des angegebenen Hashalgorithmus), um die Integrität der heruntergeladenen DAT-Datei zu überprüfen.
+  Um die Integrität der Datei Stream.x64.bg-bg. dat zu überprüfen, öffnen Sie den Stream.x64.bg-bg. Hash und lesen Sie den Hashwert, der die erste Textzeile in der Hash Datei ist. Vergleichen Sie diesen Wert mit dem berechneten Hashwert (mithilfe des angegebenen Hashalgorithmus), um die Integrität der heruntergeladenen DAT-Datei zu überprüfen.
     
-  Das folgende Beispiel zeigt den C#-Code zum Lesen des Hashs.
+  Im folgenden Beispiel wird der C#-Code zum Lesen des Hashs gezeigt.
     
   ```cs
     string[] readHashes = System.IO.File.ReadAllLines(tmpFile, Encoding.Unicode);
     string readHash = readHashes.First();
   ```
 
-### <a name="office-365-client-updates"></a>Office 365-Client Updates
+### <a name="office-365-client-updates"></a>Office 365 von Client Updates
 
-Alle Office 365-Client Updates werden im [Microsoft Update-Katalog](https://www.catalog.update.microsoft.com/Search.aspx?q=office+365+client)veröffentlicht.
+Alle Office 365 Client Updates werden im [Microsoft Update-Katalog](https://www.catalog.update.microsoft.com/Search.aspx?q=office+365+client)veröffentlicht.
   
-Office 365-Clientupdates ermöglichen es der Verwaltungssoftware, die Office 365-Clientupdates in einer Art und Weise zu behandeln, die allen anderen WU-Updates mit einer Ausnahme sehr ähnlich ist. die Clientupdates enthalten keine tatsächliche Nutzlast. Die Office 365-Client Updates sollten nicht auf Clients installiert werden, sondern werden verwendet, um die Workflows mit der Verwaltungssoftware auszulösen, die den Installationsbefehl durch den oben gezeigten COM-basierten Installationsmechanismus ersetzt. 
+Mit Office 365 Clientupdates kann die Verwaltbarkeit von Software für die Office 365-Clientupdates auf eine Art und Weise behandelt werden, die mit einer Ausnahme ähnlich wie bei anderen Wu-Updates aussieht. die Clientupdates enthalten keine tatsächliche Nutzlast. Die Office 365 Client Updates sollten nicht auf allen Clients installiert werden, sondern verwendet werden, um die Workflows mit der Verwaltungssoftware auszulösen, die den Installationsbefehl durch den oben gezeigten com-basierten Installationsmechanismus ersetzt. 
   
-**Die folgende Abbildung zeigt ein Diagramm des Office 365-Client Update Workflows.**
+**In der folgenden Abbildung ist ein Diagramm des Office 365-Client Update Workflows dargestellt.**
 
-![Workflow Diagramm für O365PP-Clientupdates.] (media/bc8092b0-62b8-402c-a5c0-04d55cca01d4.png "Workflow Diagramm für O365PP-Clientupdates")
+![Workflow diagram for O365PP client updates.](media/bc8092b0-62b8-402c-a5c0-04d55cca01d4.png "Workflow Diagramm für O365PP-Clientupdates")
   
-Jedes Office 365-Client Update, das veröffentlicht wird, enthält Metadaten zum Update. Diese Metadaten enthalten einen Parameter namens *MoreInfoUrl* , mit dem die folgenden Informationen abgeleitet werden können: 
+Jedes Office 365-Client Update, das veröffentlicht wird, enthält Metadaten zum Update. Diese Metadaten enthalten einen Parameter namens *MoreInfoUrl* , der verwendet werden kann, um die folgenden Informationen abzuleiten: 
   
 -  *Ver*: gibt die Office-Version an, die diesem Update zugeordnet ist. 
     
--  *Branch*: gibt den Update Kanal für dieses Update an. Zu den Werten gehört InsiderFast, Insiders, Monthly, Targeted, Broad. In Zukunft können zusätzliche Werte hinzugefügt werden. 
+-  *Branch*: identifiziert den Update Kanal für dieses Update. Zu den Werten zählen InsiderFast, Insider, Monthly, Targeted, Broad. Weitere Werte können in der Zukunft hinzugefügt werden. 
     
--  *Arch*: gibt die Prozessorarchitektur an, die diesem Update zugeordnet ist. 
+-  *Arch*: identifiziert die Prozessorarchitektur, die diesem Update zugeordnet ist. 
     
--  *xmlVer*: die Version der XML-Dateilisten, die zum Erstellen des Basis Bilds für dieses Update verwendet werden sollen. 
+-  *xmlVer*: die Version der XML-Dateilisten, die zum Erstellen des Basis Bilds für dieses Update verwendet werden sollte. 
     
--  *xmlpath*: Pfad zur ofl. CAB-Datei, die die XML-Dateilisten enthält. 
+-  *xmlpath*: Pfad zum ofl. CAB-Datei, die die XML-Dateilisten enthält. 
     
--  *mlFile*: der Name der Dateiliste, die für dieses Update verwendet werden soll. Der Wert ist O365Client_32bit oder O365Client_64bit und entspricht dem Bogen. 
+-  *mlFile*: der Name der Dateiliste, die für dieses Update verwendet werden soll. Der Wert ist O365Client_32bit oder O365Client_64bit und wird mit dem Bogen übereinstimmen. 
     
-Die folgende URL ist ein Beispiel für den *MoreInfoUrl* -Parameter, der sich auf die Office 365-Client Updateversionen für die 32-Bit-Version von Office mit der Buildversion von 16.0.2342.2343 auf dem aktuellen Kanal bezieht. 
+Die folgende URL ist ein Beispiel für den *MoreInfoUrl* -Parameter, der auf die Office 365 Client Updateversionen für die 32-Bit-Version von Office mit der Buildversion von 16.0.2342.2343 im aktuellen Kanal verweist. 
   
-https://officecdn.microsoft.com/pr/wsus/ofl.cabist der Speicherort der XML-Dateilisten für dieses Update, insbesondere die O365Client_32bit. XML aus dem OFL. CAB.
+https://officecdn.microsoft.com/pr/wsus/ofl.cabist der Speicherort der XML-Dateilisten für dieses Update, insbesondere die O365Client_32bit. XML in der ofl. CAB.
   
 [Office 365-Clientupdate-Kanalversionen](https://go.microsoft.com/fwlink/?LinkId=626090&Ver=16.0.8326.2096&Branch=Current&Arch=64&XMLVer=1.4&xmlPath=https://officecdn.microsoft.com/pr/wsus/ofl.cab&xmlFile=O365Client_64bit.xml)
   
-### <a name="additional-metadata-for-automating-content-staging"></a>Zusätzliche Metadaten für die Automatisierung der Inhaltsbereitstellung
+### <a name="additional-metadata-for-automating-content-staging"></a>Zusätzliche Metadaten zum Automatisieren der Inhaltsbereitstellung
 
-Zusätzlich zu den veröffentlichten Metadaten, die definieren, gibt es auch zusätzliche XML-Dateien, die im CDN veröffentlicht werden, um zusätzliche Informationen zu den Office 365-Clients bereitzustellen, die im Office CDN zur Verfügung stehen.
+Zusätzlich zu den veröffentlichten Metadaten, die definieren, gibt es auch zusätzliche XML-Dateien, die im CDN veröffentlicht werden und zusätzliche Informationen zu den Office 365 Clients bereitstellen können, die im Office CDN zur Verfügung stehen.
   
 **SKUs. XML**
   
-Diese XML-Datei ist in einem signierten CAB enthalten und wird im Office CDN unter der folgenden URL [https://officecdn.microsoft.com/pr/wsus/skus.cab](https://officecdn.microsoft.com/pr/wsus/skus.cab)veröffentlicht:.
+Diese XML-Datei ist in einem signierten CAB-Code enthalten und wird im Office CDN unter der [https://officecdn.microsoft.com/pr/wsus/skus.cab](https://officecdn.microsoft.com/pr/wsus/skus.cab)folgenden URL veröffentlicht:.
   
-Die in dieser XML-Datei veröffentlichten Metadaten sind hilfreich, um festzustellen, welche Produkte für die Bereitstellung und Wartung aus dem Office CDN sowie verschiedene Optionen für jeden zur Verfügung stehen. 
+Die in dieser XML-Datei veröffentlichten Metadaten sind nützlich, um zu ermitteln, welche Produkte für die Bereitstellung und Wartung aus dem Office CDN zur Verfügung stehen, zusammen mit verschiedenen Optionen. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -744,25 +744,25 @@ Die in dieser XML-Datei veröffentlichten Metadaten sind hilfreich, um festzuste
     </SKU>
 ```
 
-ReleaseInfo-Stammknoten enthält das PublishedDate-Attribut, das das Datum identifiziert, an dem diese Datei veröffentlicht wurde. ** \<\> ** 
+ReleaseInfo-Stammknoten enthält das PublishedDate-Attribut, das das Datum angibt, an dem diese Datei veröffentlicht wurde. ** \<\> ** 
   
 SKU-Knoten identifiziert eine einzelne SKU. ** \<\> ** 
   
-- Das *ProductID* -Attribut identifiziert die ID, die als ID-Attribut in der Configuration. XML-Datei übergeben wird, wenn das ODT verwendet wird. Beispiel: `<Product ID="O365ProPlusRetail">`. 
+- Das *ProductID* -Attribut identifiziert die ID, die als ID-Attribut in der Datei Configuration. XML übergeben wird, wenn das ODT verwendet wird. Beispiel: `<Product ID="O365ProPlusRetail">`. 
     
-- Das *default* -Attribut, wenn auf true festgelegt, identifiziert die empfohlene SKU. 
+- Das *Standard* Attribut, bei Festlegung auf "true", gibt die empfohlene SKU an. 
     
 App-Knoten werden verwendet, um die einzelnen Office-Apps zu definieren, die jede SKU unterstützt. ** \<\> ** 
   
 - Das *Name* -Attribut ist der angezeigte Anwendungsname. 
     
-- Das ** Attribut " ** \<ExcludeApp\> ** " ist das ID-Attribut, das bei Verwendung des ODT-Knotens in der Konfigurations-XML-Datei übergeben wird. Beispiel: `<ExcludeApp ID="Publisher" />`. 
+- Bei Verwendung des ODT-Attributs handelt es sich um das ID *-Attribut,* das in der Datei Configuration. XML für den ** \<ExcludeApp\> ** -Knoten übergeben wird. Beispiel: `<ExcludeApp ID="Publisher" />`. 
     
 **RELEASEHISTORY. XML**
   
-Diese XML-Datei ist in einem signierten CAB enthalten und wird im Office CDN an folgendem Speicherort [https://officecdn.microsoft.com/pr/wsus/releasehistory.cab](https://officecdn.microsoft.com/pr/wsus/releasehistory.cab)veröffentlicht:. 
+Diese XML-Datei ist in einem signierten CAB-Code enthalten und wird im Office CDN an folgendem Speicherort veröffentlicht: [https://officecdn.microsoft.com/pr/wsus/releasehistory.cab](https://officecdn.microsoft.com/pr/wsus/releasehistory.cab). 
   
-Die in dieser XML-Datei veröffentlichten Metadaten sind hilfreich, um zu bestimmen, welche Kanäle für die Wartung von Updates aus dem Office CDN unterstützt werden, sowie Informationen zum erstellungsverlauf für jeden der unterstützten Kanäle.
+Die in dieser XML-Datei veröffentlichten Metadaten sind nützlich, um zu ermitteln, welche Kanäle für die Wartung von Updates aus dem Office CDN unterstützt werden, zusammen mit Informationen zum Build-Verlauf für jeden der unterstützten Kanäle.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -778,32 +778,32 @@ Die in dieser XML-Datei veröffentlichten Metadaten sind hilfreich, um zu bestim
   </UpdateChannel>
 ```
 
-Der ** \<ReleaseHistory\> ** -Stammknoten enthält das PublishedDate-Attribut, das das Datum identifiziert, an dem diese Datei veröffentlicht wurde. 
+Der ** \<ReleaseHistory\> ** -Stammknoten enthält das PublishedDate-Attribut, das das Datum angibt, an dem diese Datei veröffentlicht wurde. 
   
 Der ** \<UpdateChannel\> ** -Knoten definiert einen unterstützten Kanal. 
   
-- Das *Name* -Attribut definiert die Kanal-ID, die verwendet wird, um in der Configuration. XML-Datei als Kanal Attribut an das ODT zu übertragen. 
+- Das *Name* -Attribut definiert die Kanal-ID, die verwendet wird, um in der Datei Configuration. XML als Kanal Attribut an das ODT zu übergeben. 
     
   Beispiel: `<Add SourcePath="\\Server\Share" OfficeClientEdition="32" Channel="Current">` 
     
   > [!NOTE] 
   > Dieses Attribut ist veraltet und wird nur aus Gründen der Abwärtskompatibilität verwendet. Verwenden Sie das ID-Attribut anstelle des Name-Attributs. 
     
-- Das *ID-* Attribut definiert die Kanal-ID, die zum Weiterleiten an das ODT in der Datei Configuration. XML als Kanal Attribut verwendet wird. 
+- Das *ID-* Attribut definiert die Kanal-ID, die verwendet wird, um in der Datei Configuration. XML als Kanal Attribut an das ODT zu übergeben. 
     
   Beispiel: `<Add SourcePath="\\Server\Share" OfficeClientEdition="32" Channel="Deferred">` 
     
-- Das **** DisplayName-Attribut wird als Anzeigenamen verwendet. 
+- Das **Display** Name-Attribut wird als Anzeigename verwendet. 
     
 Der ** \<Knoten\> Update** wird verwendet, um jedes Update zu definieren, das für diesen bestimmten Kanal veröffentlicht wurde. 
   
-- Wenn **** das Attribut auf true festgelegt ist, wird das neueste Release für diesen Kanal definiert. 
+- Bei Festlegung auf "true" definiert das **neueste** Attribut die Version, die die neueste Version dieses Kanals ist. 
     
-- Das **Version** -Attribut definiert die Versionsnummer für dieses bestimmte Update. 
+- Das **Version** -Attribut definiert die Versionsnummer für diese bestimmte Aktualisierung. 
     
-- Das **LegacyVersion** -Attribut definiert die vollständige Versionsnummer für dieses bestimmte Update. 
+- Das **LegacyVersion** -Attribut definiert die vollständige Versionsnummer für diese bestimmte Aktualisierung. 
     
-- Das Attribut **Build** definiert die Buildnummer für dieses bestimmte Update. 
+- Das **Build** -Attribut definiert die Buildnummer für dieses bestimmte Update. 
     
 - Das **PubTime** -Attribut definiert das Datum und die Uhrzeit, zu der dieses Update im Office CDN veröffentlicht wurde. 
     

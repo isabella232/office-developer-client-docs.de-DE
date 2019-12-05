@@ -2,17 +2,17 @@
 title: Durchsuchen der Anlagen von Elementen in einem Ordner nach einem exakten Ausdruck
 TOCTitle: Search attachments of items in a folder for an exact phrase
 ms:assetid: 3202c0c7-ee3d-4396-b3a9-d24990b44829
-ms:mtpsurl: https://msdn.microsoft.com/library/Bb609825(v=office.15)
+ms:mtpsurl: https://docs.microsoft.com/office/client-developer/outlook/pia/how-to-search-attachments-of-items-in-a-folder-for-an-exact-phrase?redirectedfrom=MSDN
 ms:contentKeyID: 55119889
 ms.date: 07/24/2014
 mtps_version: v=office.15
 localization_priority: Normal
-ms.openlocfilehash: 615b90a8423493a9e202e51993eea1c8127a9939
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: a937a273e0735b2d14369ae8cb8127e827501160
+ms.sourcegitcommit: 37080eb0087261320e24e6f067e5f434a812b2d2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34540896"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39819287"
 ---
 # <a name="search-attachments-of-items-in-a-folder-for-an-exact-phrase"></a>Durchsuchen der Anlagen von Elementen in einem Ordner nach einem exakten Ausdruck
 
@@ -20,7 +20,7 @@ In diesem Beispiel wird nach dem genauen Suchbegriff „office“ in Anlagen von
 
 ## <a name="example"></a>Beispiel
 
-In diesem Codebeispiel wird eine DASL-Syntax (DAV Searching and Locating) zum Angeben einer Abfrage verwendet. Um den Filter zu erstellen, überprüft das Codebeispiel zunächst, ob die Sofortsuche im Standardspeicher aktiviert ist, um festzustellen, ob das **ci\_phrasematch**-Schlüsselwort für eine genaue Übereinstimmung mit „office“ in einer Anlage verwendet werden soll. In dem Beispiel wird der Filter dann auf die [GetTable](https://msdn.microsoft.com/library/bb612592\(v=office.15\))-Methode im Posteingang angewendet, und die Ergebnisse werden in einem [Table](https://msdn.microsoft.com/library/bb652856\(v=office.15\))-Objekt abgerufen. Dann wird der Betreff der zurückgegebenen Elemente in der **Tabelle** angezeigt.
+In diesem Codebeispiel wird eine DASL-Syntax (DAV Searching and Locating) zum Angeben einer Abfrage verwendet. Um den Filter zu erstellen, überprüft das Codebeispiel zunächst, ob die Sofortsuche im Standardspeicher aktiviert ist, um festzustellen, ob das **ci\_phrasematch**-Schlüsselwort für eine genaue Übereinstimmung mit „office“ in einer Anlage verwendet werden soll. In dem Beispiel wird der Filter dann auf die [GetTable](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook.mapifolder.gettable?redirectedfrom=MSDN&view=outlook-pia#Microsoft_Office_Interop_Outlook_MAPIFolder_GetTable_System_Object_System_Object_)-Methode im Posteingang angewendet, und die Ergebnisse werden in einem [Table](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook.table?redirectedfrom=MSDN&view=outlook-pia)-Objekt abgerufen. Dann wird der Betreff der zurückgegebenen Elemente in der **Tabelle** angezeigt.
 
 Das Codebeispiel gibt die **Attachments**-Eigenschaft mithilfe der Namespace-Darstellung http://schemas.microsoft.com/mapi/proptag/0x0EA5001E an. Die Syntax für die Verwendung des **ci\_phrasematch**-Schlüsselwortes lautet:
 
