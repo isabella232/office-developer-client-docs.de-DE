@@ -1,17 +1,17 @@
 ---
 title: Auswählen einer API oder Technologie für die Entwicklung von Lösungen für Outlook
-manager: soliver
-ms.date: 05/21/2019
+manager: lindalu
+ms.date: 12/03/2019
 ms.audience: Developer
 ms.assetid: 01a46083-03d0-4333-920c-01a9f17f68cb
 description: In diesem Artikel werden die APIs und Technologien beschrieben, mit denen Sie Outlook 2013 und Outlook 2016 erweitern können, und Sie erhalten Entscheidungshilfen bei der Auswahl der geeigneten API oder Technologie für Ihr Szenario.
 localization_priority: Priority
-ms.openlocfilehash: ac7ad2f183ed71ae893745429c6d27793a983be3
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 60e02d25b53e494f2552622321a3f68921e84000
+ms.sourcegitcommit: 37080eb0087261320e24e6f067e5f434a812b2d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538396"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "39819315"
 ---
 # <a name="selecting-an-api-or-technology-for-developing-solutions-for-outlook"></a>Auswählen einer API oder Technologie für die Entwicklung von Lösungen für Outlook
 
@@ -67,7 +67,7 @@ In den Tabellen in diesem Abschnitt werden Bewertungskriterien beschrieben, die 
 
 Ab Office 2013 können Entwickler die Office-Add-Ins-Plattform verwenden, um Webdienste und Inhalte in den Kontext von Rich-Office- und Webclients zu erweitern. Eine Office-Add-In ist eine Webseite, die mit gängigen Webtechnologien entwickelt wurde, in einer Office-Clientanwendung (wie Outlook) gehostet wird und lokal oder in der Cloud ausgeführt werden kann. Von den wenigen Typen von Office-Add-Ins wird der Typ, der Outlook unterstützt, als Mail-App bezeichnet. Das Objektmodell, die PIA und die MAPI werden zwar häufig zur Automatisierung von Outlook auf Anwendungsebene verwendet, doch Sie können die JavaScript-API für Office verwenden, um mit den Inhalten und Eigenschaften einer E-Mail-Nachricht, einer Besprechungsanfrage oder eines Termins auf Elementebene zu interagieren. Sie können Mail-Apps im Office Store oder einem internen Exchange-Katalog veröffentlichen. 
   
-Endbenutzer und Administratoren können Mail-Apps in einem Exchange-Postfach installieren und im Rich-Outlook-Client sowie in Outlook Web App verwenden. Als Entwickler haben Sie die Wahl, Ihre Mail-App nur auf dem Desktop oder auch auf dem Tablet-PC oder dem Smartphone verfügbar zu machen. In Abbildung 1 ist ein Beispiel für eine YouTube-Mail-App dargestellt, die in [Beispiel: Erstellen einer Mail-App in Outlook zum Wiedergeben von YouTube-Videos](https://code.msdn.microsoft.com/office/Mail-apps-for-Outlook-01c9248f) ausführlich beschrieben wird. Mithilfe der YouTube-Mail-App können Endbenutzer eine URL für ein YouTube-Video auswählen und das Video in Outlook oder Outlook Web App, auf dem Desktop oder auf dem Tablet-PC anzeigen.
+Endbenutzer und Administratoren können Mail-Apps in einem Exchange-Postfach installieren und im Rich-Outlook-Client sowie in Outlook Web App verwenden. Als Entwickler haben Sie die Wahl, Ihre Mail-App nur auf dem Desktop oder auch auf dem Tablet-PC oder dem Smartphone verfügbar zu machen. In Abbildung 1 ist ein Beispiel für eine YouTube-Mail-App dargestellt, die in [Beispiel: Erstellen einer Mail-App in Outlook zum Wiedergeben von YouTube-Videos](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) ausführlich beschrieben wird. Mithilfe der YouTube-Mail-App können Endbenutzer eine URL für ein YouTube-Video auswählen und das Video in Outlook oder Outlook Web App, auf dem Desktop oder auf dem Tablet-PC anzeigen.
   
 **Abbildung 1: YouTube-Mail-App ist für die ausgewählte Nachricht aktiv, die eine URL zu einem Video auf YouTube.com enthält**
 
@@ -435,8 +435,10 @@ Add-Ins sind die bevorzugte Lösung zum Automatisieren von Outlook, da Outlook n
 Outlook unterstützt die Automatisierung durch Add-Ins und eigenständige Anwendungen, die in verwalteten oder nicht verwalteten Sprachen programmiert wurden. Die gängigeren verwalteten Sprachen sind C# und Visual Basic. C++- und Delphi-Tools werden bei der nicht verwalteten Entwicklung häufiger eingesetzt. Welches Fachwissen verfügbar ist, ist eine der Überlegungen, die bei der Wahl zwischen verwalteter und nicht verwalteter Entwicklung den Ausschlag geben. 
   
 Wenn in Ihrer Lösung nur das Objektmodell verwendet wird, können Sie eine verwaltete Lösung mithilfe der PIA oder der Office-Entwicklungstools in Visual Studio entwickeln. Die Office-Entwicklungstools in Visual Studio bieten Projektvorlagen und visuelle Designer, die das Erstellen von benutzerdefinierten Schnittstellen und das Entwickeln von Office-Lösungen vereinfachen.
+
+Andererseits unterstützt Microsoft die Verwendung der MAPI in verwaltetem Code nicht, da die MAPI Jahre vor Microsoft .NET Framework entwickelt wurde und Microsoft keine verwalteten Wrapper für die MAPI bereitstellt. Wenn Sie die MAPI verwenden, müssen Sie eine nicht verwaltete Lösung entwickeln. Weitere Informationen finden Sie unter [Supportrichtlinien für die Entwicklung von clientseitigen Messaginglösungen](https://support.office.com/article/Best-practices-for-Outlook-f90e5f69-8832-4d89-95b3-bfdf76c82ef8).
   
-Andererseits unterstützt Microsoft die Verwendung der MAPI in verwaltetem Code nicht, da die MAPI Jahre vor Microsoft .NET Framework entwickelt wurde und Microsoft keine verwalteten Wrapper für die MAPI bereitstellt. Wenn Sie die MAPI verwenden, müssen Sie eine nicht verwaltete Lösung entwickeln. Weitere Informationen finden Sie unter [Supportrichtlinien für die Entwicklung von clientseitigen Messaginglösungen](https://support.microsoft.com/kb/266353/en-us).
+## <a name="niche-apis-and-technologies"></a>Nischen-APIs und -Technologien
 
 <a name="OLSelectAPI_NicheAPI"> </a>
 
@@ -492,11 +494,11 @@ Nachdem Sie die für Ihre Lösung zu verwendenden APIs oder Technologien ausgew�
 
 <a name="OLSelectAPI_AdditionalResourcesApps"> </a>
 
-## <a name="see-also-office-add-ins"></a>Siehe auch: Office Add-ins
-
-[Office-Add-Ins-Plattformübersicht](https://msdn.microsoft.com/library/e64de870-ce22-4331-92e7-76d35279bf91%28Office.15%29.aspx) bietet eine gute Einführung in Office-Add-Ins, einschließlich der Architektur und des Entwicklungslebenszyklus. 
+[Office-Add-Ins-Plattformübersicht](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins?redirectedfrom=MSDN) bietet eine gute Einführung in Office-Add-Ins, einschließlich der Architektur und des Entwicklungslebenszyklus. 
   
-Schauen Sie unter [Outlook-add-ins](https://msdn.microsoft.com/library/71e64bc9-e347-4f5d-8948-0a47b5dd93e6%28Office.15%29.aspx), um eine detaillierte Übersicht über die Ressourcen zur Entwicklung von e-Mail-apps zu erhalten. 
+Schauen Sie unter [Outlook-add-ins](https://docs.microsoft.com/outlook/add-ins/?redirectedfrom=MSDN), um eine detaillierte Übersicht über die Ressourcen zur Entwicklung von e-Mail-apps zu erhalten. 
+  
+## <a name="see-also-object-model-and-pia"></a>Siehe auch: Objektmodell und PIA
 
 <a name="OLSelectAPI_AdditionalResourcesObjModelPIA"> </a>
 
@@ -506,9 +508,8 @@ In den folgenden Ressourcen finden Sie weitere Informationen zur Verwendung des 
 
 <a name="OLSelectAPI_PrimaryAccount"> </a>
 
-### <a name="accountsprimary-exchange-account-in-profile"></a>Konten: primäres Exchange-Konto im Profil
+- [Account](https://docs.microsoft.com/office/vba/api/Outlook.Account)-Objekt 
 
-- [Account](https://msdn.microsoft.com/library/f624438c-4e45-2822-18b6-bfe8074a33c0%28Office.15%29.aspx)-Objekt 
     
 - [NameSpace.Accounts](https://msdn.microsoft.com/library/80e969ea-d2cc-966d-5fe4-68d59951b5c9%28Office.15%29.aspx)-Eigenschaft 
 
@@ -917,24 +918,24 @@ In den folgenden Ressourcen finden Sie weitere Informationen zu den wichtigsten 
 ### <a name="major-references-and-resources"></a>Wichtige Referenzen und Ressourcen
 
 - [Office-Add-Ins](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)   
-- [Outlook 2013-Entwicklerreferenz](https://msdn.microsoft.com/library/75e4ad96-62a2-49d2-bc51-48ceab50634c%28Office.15%29.aspx)   
-- [Referenz zur primären Interopassembly von Outlook 2010](https://msdn.microsoft.com/library/54bdde85-8dc9-4498-a1ac-f72eaf8f0cd3%28Office.15%29.aspx)   
-- [MAPI-Referenz für Outlook](https://msdn.microsoft.com/library/3d980b86-7001-4869-9780-121c6bfc7275%28Office.15%29.aspx)   
+- [Outlook 2013-Entwicklerreferenz](https://docs.microsoft.com/office/vba/api/overview/outlook)   
+- [Referenz zur primären Interopassembly von Outlook 2010](https://docs.microsoft.com/office/client-developer/outlook/pia/welcome-to-the-outlook-primary-interop-assembly-reference)   
+- [MAPI-Referenz für Outlook](https://docs.microsoft.com/office/client-developer/outlook/mapi/outlook-mapi-reference)   
 - [Zusätzliche Referenz für Outlook 2013](auxiliary/welcome-to-the-outlook-auxiliary-reference.md)   
 - [Outlook Connector für soziale Netzwerke – Anbieterverweis](social-connector/outlook-social-connector-provider-reference.md)   
 - [Erweiterung der Wetterleiste in Outlook](weather/extending-the-weather-bar-in-outlook.md)   
 - [Outlook Weather Information XML Schema](weather/outlook-weather-information-xml-schema.md)   
 - [Outlook Weather Location XML Schema](weather/outlook-weather-location-xml-schema.md)   
-- [Neuerungen bei XML-Schemas für Outlook 2010](https://msdn.microsoft.com/library/52f91e6f-a774-488c-8e55-111ae8f68f8a%28Office.15%29.aspx)   
-- [Outlook 2010: XML-Schemareferenz](https://www.microsoft.com/downloads/en/details.aspx?FamilyID=10ca414a-6cff-46a1-a521-e42c25f079d3&amp;displaylang=en)   
-- [Entwickeln von Outlook 2010-Lösungen für 32-Bit- und 64-Bit-Systeme](https://msdn.microsoft.com/library/076753e1-6252-4189-843c-7b1be1967176%28Office.15%29.aspx)
+- [Neuerungen bei XML-Schemas für Outlook 2010](https://docs.microsoft.com/previous-versions/office/developer/office-2010/ff697175(v=office.14))   
+- [Outlook 2010: XML-Schemareferenz](https://www.microsoft.com/download/details.aspx?id=22609)   
+- [Entwickeln von Outlook 2010-Lösungen für 32-Bit- und 64-Bit-Systeme](https://docs.microsoft.com/previous-versions/office/developer/office-2010/gg549122(v=office.14))
     
 ### <a name="code-samples"></a>Codebeispiele
 
-- [Beispiele für Mail-Apps](https://code.msdn.microsoft.com/officeapps/site/search?f%5B0%5D.Type=Technology&amp;f%5B0%5D.Value=Outlook%202013)   
-- Codebeispiele für das Objektmodell: [Gewusst wie... (Outlook 2013-Entwicklerreferenz)](https://msdn.microsoft.com/library/3c33646d-e5c2-3103-b219-487ffe23357f%28Office.15%29.aspx)  
-- Codebeispiele für die PIA: [Gewusst wie... (Outlook 2013 PIA-Referenz)](https://msdn.microsoft.com/library/ff647d52-bd32-4945-afa4-5b97d9a0d7dd%28Office.15%29.aspx)  
-- [MAPI-Beispiele](https://msdn.microsoft.com/library/641659f2-3c0a-43af-96f1-2521b4b06680%28Office.15%29.aspx)
+- [Beispiele für Mail-Apps](https://developer.microsoft.com/outlook/gallery/?filterBy=Outlook,Samples)   
+- Codebeispiele für das Objektmodell: [Gewusst wie... (Outlook 2013-Entwicklerreferenz)](https://docs.microsoft.com/office/vba/outlook/concepts/miscellaneous/how-do-i-outlook-vba-reference)  
+- Codebeispiele für die PIA: [Gewusst wie... (Outlook 2013 PIA-Referenz)](https://docs.microsoft.com/office/client-developer/outlook/pia/how-do-i-outlook-2013-pia-reference?redirectedfrom=MSDN)  
+- [MAPI-Beispiele](https://docs.microsoft.com/office/client-developer/outlook/mapi/mapi-samples)
 - Codebeispiele für Hilfs-APIs: [Beispielaufgaben (engl.)](auxiliary/sample-tasks.md)
     
 
