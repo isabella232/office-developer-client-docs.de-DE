@@ -1,21 +1,22 @@
 ---
 title: Entwickeln einer Project Online-Anwendung mit dem clientseitigen Objektmodell
-manager: soliver
-ms.date: 11/08/2016
+manager: lindalu
+ms.date: 12/18/2019
 ms.audience: Developer
 ms.assetid: 5740d0b2-5d36-40e4-9e83-577cb186359f
-description: Dieser Artikel beschreibt die Entwicklung von Microsoft Project Online-Anwendungen für Desktopanwendungen mit dem .NET Framework 4.0. Die in diesem Artikel beschriebene Anwendung ruft Informationen vom hostenden Server ab.
+description: 'Dieser Artikel beschreibt die Entwicklung von Microsoft Project Online-Anwendungen mit dem .NET Framework 4.0 und CSOM. '
 localization_priority: Priority
-ms.openlocfilehash: 3d3c2dd5b896c10dab9a0494288f38610cbc99e1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 33ddafe2e3a75039bf55381524accf1a25692885
+ms.sourcegitcommit: 55205b4ec1376713d31e75d195e031798fb2c6ad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32322621"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40825772"
 ---
-# <a name="developing-a-project-online-application-using-the-client-side-object-model"></a>Entwickeln einer Project Online-Anwendung mit dem clientseitigen Objektmodell
+# <a name="developing-a-project-online-application-using-the-client-side-object-model-csom"></a>Entwickeln einer Project Online-Anwendung mit dem clientseitigen Objektmodell (CSOM)
 
-Dieser Artikel beschreibt die Entwicklung von Microsoft Project Online-Anwendungen für Desktopanwendungen mit dem .NET Framework 4.0. Die in diesem Artikel beschriebene Anwendung ruft Informationen vom hostenden Server ab. 
+>[!NOTE] 
+>Dieser Artikel beschreibt die Entwicklung von Microsoft Project Online-Anwendungen zur Verwendung von CSOM. Wir empfehlen Ihnen, die Entwicklung von Anwendungen mit dem [neuen Project für das Web](https://developer.microsoft.com/de-DE/office/blogs/developing-applications-and-reports-using-the-new-project/) zu erforschen.
   
 ## <a name="background"></a>Hintergrund
 
@@ -60,7 +61,7 @@ Beginnen Sie mit einem Basissystem unter Windows 10, und fügen Sie die folgende
 
 Beim Entwickeln einer Desktopanwendung für SharePoint ist das clientseitige Objektmodell (CSOM) für Project die bevorzugte Schnittstelle. 
   
-Sie können das vollständige Beispiel aus https://github.com/OfficeDev/Project-CSOM-List-Projects-Tasks herunterladen.
+Sie können die [CSOM-Beispiele für Project](https://developer.microsoft.com/project/gallery/?filterBy=Samples,Project) aus dem Project Developer-Ressourcenkatalog im Office Dev Center herunterladen.
   
 Die ersten beiden Themen behandeln grundlegende Aspekte: Erstellen eines Visual Studio-Projekts mit geeigneten Namespaces und Assemblys und Zugreifen auf den hostenden Server. Die übrigen Themen befassen sich mit dem Abrufen von Informationen über das CSOM aus einem und aus vielen Objekten. 
   
@@ -194,7 +195,7 @@ Die Vorbereitungen für das Zugreifen auf die gehostete Umgebung umfassen die fo
 
    Wenn der Projektkontext instanziiert wird, muss die Anwendung den Stamm der Websitesammlung für Projekte bereitstellen. Die Anwendung verwendet eine Teilzeichenfolge der URL des Stamms der Projekte. Ein Momentaufnahme dieser Position ist in der folgenden Abbildung mit einem roten Rechteck hervorgehoben. Für die Authentifizierung wird die Zeichenfolge ab deren Anfang bis einschließlich der Teilzeichenfolge "pwa" benötigt. Im Codeeintrag wird für die Anwendung die Zeichenfolge "https://XXXXXXXX.sharepoint.com/sites/pwa" verwendet.
         
-   ![Momentaufnahme der URL der Websitesammlung für Projekte in einem roten Rahmen ](media/d48c4894-5dba-46b6-886a-3c59bfb83c4d.png "Momentaufnahme der URL der Websitesammlung für Projekte in einem roten Rahmen")
+   ![Screenshot der URL für die Projekte-Websitesammlung in einem roten Rahmen.](media/d48c4894-5dba-46b6-886a-3c59bfb83c4d.png "Screenshot der URL für die Projekte-Websitesammlung in einem roten Rahmen")
   
 3. Geben Sie das Kennwort in einer sicheren Zeichenfolge an. Dies erfolgt im folgenden Code aus dem vorherigen Codefragment.
     
@@ -637,8 +638,8 @@ Value: Red
 
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
-Dokumentation und Beispiele zu Project Online und Anwendungsentwicklung mit CSOM finden Sie im [Project-Entwicklungsportal](https://developer.microsoft.com/de-DE/project).
+Dokumentation und Beispiele zu Project Online und zur Anwendungsentwicklung mit CSOM finden Sie im [Project-Entwicklungsportal](https://developer.microsoft.com/project) im Office Dev Center.
     
 

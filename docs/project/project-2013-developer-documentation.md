@@ -1,7 +1,7 @@
 ---
 title: Project 2013-Entwicklerdokumentation
-manager: soliver
-ms.date: 04/04/2016
+manager: lindalu
+ms.date: 12/19/2019
 ms.audience: Developer
 f1_keywords:
 - Project
@@ -14,28 +14,26 @@ f1_keywords:
 keywords:
 - sdk, project 2013,Project 2013, SDK-Übersicht
 ms.assetid: f66adbf1-5cb5-4dd0-be08-45e1c88c010c
-description: Hier finden Sie Dokumentationen, Codebeispiele, Anleitungen und Programmierungsreferenzen, die beim Erstellen von Apps für den Office Store oder beim Erstellen eines privaten App-Katalogs behilflich sind. Sie helfen zudem beim Anpassen und Integrieren von Project Server und der Project-Clients mit einer großen Vielfalt an anderen Desktop- und Geschäftsanwendungen für das Enterprise-Projektmanagement.
+description: Hier finden Sie Dokumentationen, Codebeispiele, Anleitungen und Programmierreferenzen, die beim Erstellen von Apps für Office oder beim Erstellen eines privaten App-Katalogs behilflich sind. Sie helfen zudem beim Anpassen und Integrieren von Project Server und der Project-Clients mit einer großen Vielfalt an anderen Desktop- und Geschäftsanwendungen für das Enterprise-Projektmanagement.
 localization_priority: Priority
-ms.openlocfilehash: cb4dd31a76b897bb5dba39e6b20d0a238bd95293
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 1b6227bb25810be04bc87abb418f9966b593bf1c
+ms.sourcegitcommit: 55205b4ec1376713d31e75d195e031798fb2c6ad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357043"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "40825758"
 ---
 # <a name="project-2013-developer-documentation"></a>Project 2013-Entwicklerdokumentation
 
-Hier finden Sie Dokumentationen, Codebeispiele, Anleitungen und Programmierungsreferenzen, die beim Erstellen von Apps für den Office Store oder beim Erstellen eines privaten App-Katalogs behilflich sind. Sie helfen zudem beim Anpassen und Integrieren von Project Server und der Project-Clients mit einer großen Vielfalt an anderen Desktop- und Geschäftsanwendungen für das Enterprise-Projektmanagement.
-  
-Willkommen beim Microsoft Project 2013 Software Development Kit (SDK). Das SDK enthält Dokumentationen, Codebeispiele, Anleitungen und Programmierungsreferenzen, die beim Erstellen von Apps für einen öffentlichen Store oder beim Erstellen eines privaten App-Katalogs behilflich sind. Sie helfen zudem beim Anpassen und Integrieren von Project Server und der Project-Clients mit einer großen Vielfalt an anderen Desktop- und Geschäftsanwendungen für das Enterprise-Projektmanagement.
-  
+Hier finden Sie Dokumentationen, Codebeispiele, Anleitungen und Programmierreferenzen zur Entwicklung von Apps für AppSource. Erfahren Sie, wie Sie Project Server und die Project-Clients mit einer Vielzahl anderer Desktop- und Unternehmensanwendungen für die Projektverwaltung in Unternehmen (Enterprise Project Management, EPM) anpassen und integrieren.
+   
 > [!NOTE]
 > Project Server 2013 basiert auf der SharePoint Server 2013- Plattform; Project 2013 weist größtenteils dieselbe Infrastruktur wie die anderen Office 2013-Anwendungen auf. Dokumentation zum Modell für SharePoint-Add-Ins, zu SharePoint-basierten Workflows, zu Webparts, zur Entwicklung mit anderen SharePoint-Features und Dokumentation von Office-Add-Ins finden Sie unter [SharePoint Add-Ins](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/sharepoint-add-ins) und [Office Add-Ins](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins). 
   
-## <a name="introduction-to-the-project-sdk"></a>Einführung in das Project-SDK
+## <a name="introduction-to-the-project-software-development-kit-sdk"></a>Einführung in das Project Software Development Kit (SDK)
 <a name="pj15_Welcome_IntroToSDK"> </a>
 
-Project Server 2013 ist eine Plattform zum Erstellen lokaler oder cloudbasierter Projektmanagementlösungen für Unternehmen und zum Erstellen von Apps, die Endbenutzer über einen öffentlichen Store oder einen privaten App-Katalog erkunden und erwerben können. Die Project Server 2013-Architektur basiert auf der Plattform, die in Microsoft Office Project Server 2007 eingeführt wurde, und umfasst viele Ergänzungen und Verbesserungen. Zu den neuen Features gehört ein clientseitiges Objektmodell (CSOM), um Zugriff auf Project Online, einen OData-Dienst für Onlinezugriff auf Project Server-Berichtsdaten, Remoteereignisempfänger, Workflowarchitektur, die auf Version 4 von Windows Workflow Foundation (WF4) basiert, und Office-Add-Ins zu ermöglichen, eine gängige Architektur für Aufgabenbereichserweiterungen in Microsoft Office 2013-Clientanwendungen.
+Project Server 2013 ist eine Plattform zum Erstellen lokaler oder cloudbasierter Projektmanagementlösungen für Unternehmen und zum Erstellen von Apps, die Endbenutzer über AppSource (früher Office Store) erkunden und erwerben können. Die Project Server 2013-Architektur basiert auf der Plattform, die in Microsoft Office Project Server 2007 eingeführt wurde, und umfasst viele Ergänzungen und Verbesserungen. Zu den neuen Features gehört ein clientseitiges Objektmodell (CSOM), um Zugriff auf Project Online, einen OData-Dienst für Onlinezugriff auf Project Server-Berichtsdaten, Remoteereignisempfänger, Workflowarchitektur, die auf Version 4 von Windows Workflow Foundation (WF4) basiert, und Office-Add-Ins zu ermöglichen, eine gängige Architektur für Aufgabenbereichserweiterungen in Microsoft Office 2013-Clientanwendungen.
   
 Eine wesentliche Änderung in Project Server 2013 ist die Verwendung einer einzigen Datenbank anstelle der Entwurfs-, Veröffentlichungs-, Archiv- und Berichtsdatenbanken in Project Server 2010. Weitere Informationen zu neuen Features und veralteten Features finden Sie unter [Updates für Entwickler in Project 2013](updates-for-developers-in-project-2013.md). Informationen zu Änderungen in der Project Server-Plattform finden Sie unter [Project Server 2013-Architektur](project-server-2013-architecture.md). Eine Übersicht über die Entwicklungsplattform, die in Project Server 2010 vorhanden ist und auf der Project Server 2013 basiert, finden Sie unter [Erste Schritte mit der Entwicklung für Project 2010](https://msdn.microsoft.com/library/gg607685.aspx) auf MSDN. 
   
@@ -114,7 +112,7 @@ Der Abschnitt **Konzept und Anleitungen** enthält Folgendes:
 - [Project 2013-Programmierreferenzen](project-2013-programming-references.md) enthält eine Einführung in die PSI-Referenz für Project Server 2013, Informationen über Project Server-Fehlercodes und die OData-Schemareferenz für den **ProjectData**-Dienst. 
     
 > [!NOTE]
->  Nachfolgend finden Sie die Anforderungen zum Entwickeln und Bereitstellen von EPM-Lösungen und -Apps aus dem öffentlichen Office Store, die in Project Server 2013 integriert werden können: > Sie müssen das .NET Framework 4 oder das .NET Framework 4.5 auf dem Entwicklungscomputer und auf den Bereitstellungscomputern installieren. Um zu ermitteln, ob die korrekte Version installiert ist, öffnen Sie in der Windows-Systemsteuerung **Programme und Funktionen**. >  Visual Studio 2012 installiert und verwendet das .NET Framework 4.5. Wenn Sie ein Visual Studio-Projekt erstellen, können Sie entweder **.NET Framework 4.0** oder **.NET Framework 4.5** in der Dropdownliste des Dialogfelds **Neues Projekt** auswählen. Sie können auch das **Zielframework** auf der Registerkarte **Anwendung** des Project-Fensters **Eigenschaften** auswählen. >  Sie können Visual Studio 2010 für Anwendungen verwenden, die das CSOM oder die PSI verwenden, und für Project Aufgabenbereich-Apps. Visual Studio 2010 enthält jedoch keine Office-Add-Ins-Vorlagen, Office-Entwicklungstools oder SharePoint-Entwicklungstools für Office 2013. Informationen zum Herunterladen von Visual Studio 2012 und Web Platform Installer (WebPI), der die Office- und SharePoint-Entwicklungstools umfasst, finden Sie unter [Downloads für Apps für Office und SharePoint](https://msdn.microsoft.com/office/apps/fp123627). > Es wird empfohlen, dass Sie benutzerdefinierte Lösungen in einer Testumgebung entwickeln. Wenn Sie Lösungen für die aktuellen Builds von Project Server 2013 und Project 2013 entwickeln, sollten diese mit aktualisierten Verweisen neu kompiliert werden; möglicherweise sind weitere Änderungen erforderlich, damit diese mit höheren Versionen funktionieren. Lösungen, die für eine Vorabversion entwickelt wurden, funktionieren möglicherweise nicht mit der veröffentlichten Version. 
+>  Nachfolgend finden Sie die Anforderungen zum Entwickeln und Bereitstellen von EPM-Lösungen und -Apps aus AppSource, die in Project Server 2013 integriert werden können: > Sie müssen das .NET Framework 4 oder das .NET Framework 4.5 auf dem Entwicklungscomputer und auf den Bereitstellungscomputern installieren. Um zu ermitteln, ob die korrekte Version installiert ist, öffnen Sie in der Windows-Systemsteuerung **Programme und Funktionen**. >  Visual Studio 2012 installiert und verwendet das .NET Framework 4.5. Wenn Sie ein Visual Studio-Projekt erstellen, können Sie entweder **.NET Framework 4.0** oder **.NET Framework 4.5** in der Dropdownliste des Dialogfelds **Neues Projekt** auswählen. Sie können auch das **Zielframework** auf der Registerkarte **Anwendung** des Project-Fensters **Eigenschaften** auswählen. >  Sie können Visual Studio 2010 für Anwendungen verwenden, die das CSOM oder die PSI verwenden, und für Project Aufgabenbereich-Apps. Visual Studio 2010 enthält jedoch keine Office-Add-Ins-Vorlagen, Office-Entwicklungstools oder SharePoint-Entwicklungstools für Office 2013. Informationen zum Herunterladen von Visual Studio 2012 und Web Platform Installer (WebPI), der die Office- und SharePoint-Entwicklungstools umfasst, finden Sie unter [Downloads für Apps für Office und SharePoint](https://msdn.microsoft.com/office/apps/fp123627). > Es wird empfohlen, dass Sie benutzerdefinierte Lösungen in einer Testumgebung entwickeln. Wenn Sie Lösungen für die aktuellen Builds von Project Server 2013 und Project 2013 entwickeln, sollten diese mit aktualisierten Verweisen neu kompiliert werden; möglicherweise sind weitere Änderungen erforderlich, damit diese mit höheren Versionen funktionieren. Lösungen, die für eine Vorabversion entwickelt wurden, funktionieren möglicherweise nicht mit der veröffentlichten Version. 
   
 ## <a name="see-also"></a>Siehe auch
 <a name="pj15_Welcome_AR"> </a>
