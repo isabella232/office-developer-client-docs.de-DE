@@ -7,16 +7,16 @@ ms:contentKeyID: 55119926
 ms.date: 12/03/2019
 mtps_version: v=office.15
 localization_priority: Priority
-ms.openlocfilehash: edcf2053a2f678b2280e1735ee728196cc431d31
-ms.sourcegitcommit: 37080eb0087261320e24e6f067e5f434a812b2d2
+ms.openlocfilehash: 5bae79531e7d2be39610194e0b59477fcee28c15
+ms.sourcegitcommit: 31b0a7373ff74fe1d6383c30bc67d7675b73d283
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39819343"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41773701"
 ---
 # <a name="get-and-sign-in-to-an-instance-of-outlook"></a>Abrufen einer Instanz von Outlook und Anmelden bei dieser
 
-In diesem Thema wird gezeigt, wie ein [Application](https://docs.microsoft.com/en-us/dotnet/api/microsoft.office.interop.outlook.application?redirectedfrom=MSDN&view=outlook-pia)-Objekt abgerufen wird, das eine aktive Instanz von Microsoft Outlook darstellt, falls eine Instanz auf dem lokalen Computer ausgeführt wird, oder wie eine neue Instanz von Outlook erstellt, die Anmeldung am Standardprofil durchgeführt und diese Instanz von Outlook zurückgegeben wird.
+In diesem Thema wird gezeigt, wie ein [Application](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook.application?redirectedfrom=MSDN&view=outlook-pia)-Objekt abgerufen wird, das eine aktive Instanz von Microsoft Outlook darstellt, falls eine Instanz auf dem lokalen Computer ausgeführt wird, oder wie eine neue Instanz von Outlook erstellt, die Anmeldung am Standardprofil durchgeführt und diese Instanz von Outlook zurückgegeben wird.
 
 ## <a name="example"></a>Beispiel
 

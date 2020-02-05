@@ -25,12 +25,12 @@ keywords:
 ms.assetid: a93d2153-5132-4289-af51-69350471e248
 description: Informationen zu den wichtigsten Features zur Programmierbarkeit in Project Server 2013. Dieser Artikel enthält Informationen zum Portieren von Anwendungen, die für frühere Versionen von Project Server erstellt wurden.
 localization_priority: Priority
-ms.openlocfilehash: db5e09ebe7a820255ba3d61c719b838289005e12
-ms.sourcegitcommit: 37080eb0087261320e24e6f067e5f434a812b2d2
+ms.openlocfilehash: e6991712b87291e90c6b4f277db84686aab384e7
+ms.sourcegitcommit: 31b0a7373ff74fe1d6383c30bc67d7675b73d283
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39819308"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41773729"
 ---
 # <a name="project-server-programmability"></a>Project Server-Programmierbarkeit
 
@@ -104,7 +104,7 @@ Wenn Sie ein Upgrade für eine Anwendung ausführen, die für eine frühere Proj
 > [!NOTE]
 > Wenn das CSOM die Funktionalität enthält, die Sie benötigen, empfehlen wir ein Upgrade von Anwendungen für die Verwendung des CSOMs. Mithilfe des CSOMs können Anwendungen sowohl für lokale als auch für Onlineinstallation en von Project Server 2013 verwendet werden. 
   
-Wenn Ihre Anwendung in erster Linie Daten aus Project Server liest, können Sie die Berichtstabellen und Ansichten in der Project Server-Datenbank für ein lokales Szenario nutzen. Wenn Sie die Anwendung mit Project Online verwenden möchten, können Sie das OData-Protokoll für den **ProjectData**-Dienst verwenden, das sowohl lokalen als auch Onlinezugriff auf die Berichtsdaten bereitstellt. Weitere Informationen finden Sie in der [ProjectData – Project OData-Dienstreferenz](https://docs.microsoft.com/en-us/previous-versions/office/project-odata/jj163015(v=office.15))
+Wenn Ihre Anwendung in erster Linie Daten aus Project Server liest, können Sie die Berichtstabellen und Ansichten in der Project Server-Datenbank für ein lokales Szenario nutzen. Wenn Sie die Anwendung mit Project Online verwenden möchten, können Sie das OData-Protokoll für den **ProjectData**-Dienst verwenden, das sowohl lokalen als auch Onlinezugriff auf die Berichtsdaten bereitstellt. Weitere Informationen finden Sie in der [ProjectData – Project OData-Dienstreferenz](https://docs.microsoft.com/previous-versions/office/project-odata/jj163015(v=office.15))
   
 ### <a name="using-the-psi"></a>Verwenden der PSI
 <a name="pj15_Programmability_PSI"> </a>
@@ -233,7 +233,7 @@ Sowohl für das ältere als auch für das neuere Planungsmodul gelten die folgen
   
 Diese Probleme und Beschränkungen der PSI-Programmierung bestehen in Verbindung mit dem älteren Project Server-Planungsmodul:
   
-- **Ändern des aktiven Status eines Vorgangs** Das ältere Project Server-Planungsmodul kann inkonsistente Anfangs- und Endzeiten anzeigen, wenn Sie die [QueueUpdateProject](https://docs.microsoft.com/en-us/previous-versions/office/ms471014(v=office.14))-Methode verwenden, um den aktiven Status eines Vorgangs zu ändern und mehrere Änderungen am **ProjectDataSet**-Objekt für den _dataset_-Parameter vorliegen. Wenn die **TASK_IS_ACTIVE**-Eigenschaft die einzige Änderung im _dataset_-Parameter von **QueueUpdateProject** darstellt, können Sie das Projekt aktualisieren.
+- **Ändern des aktiven Status eines Vorgangs** Das ältere Project Server-Planungsmodul kann inkonsistente Anfangs- und Endzeiten anzeigen, wenn Sie die [QueueUpdateProject](https://docs.microsoft.com/previous-versions/office/ms471014(v=office.14))-Methode verwenden, um den aktiven Status eines Vorgangs zu ändern und mehrere Änderungen am **ProjectDataSet**-Objekt für den _dataset_-Parameter vorliegen. Wenn die **TASK_IS_ACTIVE**-Eigenschaft die einzige Änderung im _dataset_-Parameter von **QueueUpdateProject** darstellt, können Sie das Projekt aktualisieren.
     
     Weitere Informationen zu inaktiven Vorgängen und dem älteren Planungsmodul finden Sie in den Blogbeiträgen [Introducing inactive tasks in Project 2010](https://blogs.msdn.com/b/project/archive/2010/06/10/introducing-inactive-tasks-in-project-2010.aspx) (Einführung inaktiver Vorgänge in Project 2010) und [Project Server 2010: Scheduling on the web, the PSI and Project Professional](https://blogs.msdn.com/b/brismith/archive/2010/09/10/project-server-2010-scheduling-on-the-web-the-psi-and-project-professional.aspx?wa=wsignin1.0) (Project Server 2010: Planen im Web, in der PSI und in Project Professional). Einen Vergleich der Planung in Project Professional 2010 und Project Web App in Project Server 2010 finden Sie unter [Vergleich der webbasierten Zeitplanverwaltung](https://blogs.msdn.microsoft.com/brismith/2010/09/10/project-server-2010-scheduling-on-the-web-the-psi-and-project-professional/).
     

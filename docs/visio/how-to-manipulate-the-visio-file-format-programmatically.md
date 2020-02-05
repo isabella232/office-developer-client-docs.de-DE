@@ -1,18 +1,18 @@
 ---
 title: Programmgesteuertes Bearbeiten des Visio-Dateiformats
 manager: lindalu
-ms.date: 12/03/2019
+ms.date: 04/17/2019
 ms.audience: Developer
 ms.topic: overview
 ms.assetid: 5f5e2288-7539-41b8-916d-410be028ed9b
 description: Erstellen Sie eine Lösung in Visual Studio 2012 zum Lesen des neuen Dateiformatpakets in Visio 2013, zum Auswählen von Paketteilen, Ändern von Daten in Paketteilen und Hinzufügen von Paketteilen.
 localization_priority: Priority
-ms.openlocfilehash: f54a0afec4bc45d322e3a18194eafc3bd768e0d0
-ms.sourcegitcommit: 37080eb0087261320e24e6f067e5f434a812b2d2
+ms.openlocfilehash: 36a621856e5d53e7b3355a39edd7b7a03636b15d
+ms.sourcegitcommit: 31b0a7373ff74fe1d6383c30bc67d7675b73d283
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39819301"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41773743"
 ---
 # <a name="manipulate-the-visio-file-format-programmatically"></a>Programmgesteuertes Bearbeiten des Visio-Dateiformats
 
@@ -302,8 +302,8 @@ Die Konsolenanwendung erstellt eine Ausgabe, die der folgenden ähnlich ist (ein
  `Press any key to continue …`
   
 In den meisten Fällen müssen Sie einen **PackagePart** auswählen, ohne alle anderen zu durchlaufen. Sie erhalten ein **PackagePart**-Objekt aus einem **Package**, indem Sie seine Beziehung zum **Package** oder einem anderen **PackagePart** verwenden. Eine Beziehung im Visio 2013-Dateiformat ist eine diskrete Einheit, die beschreibt, wie ein Dokumentteil mit dem Dateipaket verknüpft ist oder wie die beiden Dokumentteile miteinander verknüpft sind. Das Visio 2013-Dateipaket selbst hat beispielsweise eine Beziehung zu seinem Visio-Dokumentteil, und das Visio-Dokumentteil hat eine Beziehung zu dem Windows-Teil. Diese Beziehungen werden als Instanzen der [PackageRelationship](https://docs.microsoft.com/dotnet/api/system.io.packaging.packagerelationship?view=netframework-4.8)- oder [PackageRelationshipCollection](https://docs.microsoft.com/dotnet/api/system.io.packaging.packagerelationshipcollection?view=netframework-4.8)-Klasse dargestellt. 
-  
-Die **Package**-Klasse macht mehrere Methoden zum Abrufen der in ihr enthaltenen **PackageRelationship**- oder **PackageRelationshipCollection**-Objekte verfügbar. Sie können die [GetRelationshipsByType(String)](https://docs.microsoft.com/dotnet/api/system.io.packaging.package.getrelationshipsbytype?redirectedfrom=MSDN&view=netframework-4.8#System_IO_Packaging_Package_GetRelationshipsByType_System_String_)-Methode verwenden, um ein **PackageRelationshipCollection**-Objekt zu instanziieren, das **PackageRelationship**-Objekte eines einzigen bestimmten Typs enthält. Natürlich ist es für die Verwendung der **Package.GetRelationshipsByType**-Methode erforderlich, dass Sie den benötigten Beziehungstyp kennen. Beziehungstypen sind Zeichenfolgen im XML-Namespaceformat. Beispielsweise ist der Beziehungstyp des Visio-Dokumentteils https://schemas.microsoft.com/visio/2010/relationships/document. 
+
+Die **Package**-Klasse macht mehrere Methoden zum Abrufen der in ihr enthaltenen **PackageRelationship**- oder **PackageRelationshipCollection**-Objekte verfügbar. Sie können die [GetRelationshipsByType(String)](https://msdn.microsoft.com/library/System.IO.Packaging.Package.GetRelationshipsByType.aspx)-Methode verwenden, um ein **PackageRelationshipCollection**-Objekt zu instanziieren, das **PackageRelationship**-Objekte eines einzigen bestimmten Typs enthält. Natürlich ist es für die Verwendung der **Package.GetRelationshipsByType**-Methode erforderlich, dass Sie den benötigten Beziehungstyp kennen. Beziehungstypen sind Zeichenfolgen im XML-Namespaceformat. Beispielsweise ist der Beziehungstyp des Visio-Dokumentteils https://schemas.microsoft.com/visio/2010/relationships/document. 
   
 Sobald Sie die Beziehung eines **PackagePart** zum **Package** oder zu einem anderen **PackagePart** kennen (d. h., Sie haben ein **PackageRelationship**-Objekt, das auf den gewünschten **PackagePart** verweist), können Sie diese Beziehung verwenden, um den URI dieses **PackagePart** abzurufen. Sie übergeben dann den URI an die **Package.GetPart**-Methode, um den **PackagePart** zurückzugeben.
   
