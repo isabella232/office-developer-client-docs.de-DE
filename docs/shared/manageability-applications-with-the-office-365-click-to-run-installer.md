@@ -1,17 +1,17 @@
 ---
 title: Integrieren von Verwaltbarkeit-Anwendungen mit Office 365 Klick-und-Los-Installationsprogramm
 manager: lindalu
-ms.date: 12/03/2019
+ms.date: 10/22/2017
 ms.audience: ITPro
 localization_priority: Normal
 ms.assetid: c0fa8fed-1585-4566-a9be-ef6d6d1b4ce8
 description: Hier erfahren Sie, wie Sie das Office 365 Klick-und-Los-Installationsprogramm mit einer Software Verwaltungslösung integrieren.
-ms.openlocfilehash: 62bfef0063c414fcecd0948e49dfa098b5c82bbb
-ms.sourcegitcommit: 37080eb0087261320e24e6f067e5f434a812b2d2
+ms.openlocfilehash: 0c695d538a0a906bce19719c2735cb39740ff6a2
+ms.sourcegitcommit: 31b0a7373ff74fe1d6383c30bc67d7675b73d283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39819273"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41773736"
 ---
 # <a name="integrating-manageability-applications-with-office-365-click-to-run-installer"></a>Integrieren von Verwaltbarkeit-Anwendungen mit Office 365 Klick-und-Los-Installationsprogramm
 
@@ -185,7 +185,7 @@ HRESULT Cancel() // Cancel the download action.
 
 - Diese Methode kann nur ausgelöst werden, wenn die com-Status-ID **eDOWNLOAD_WIP**. Es wird versucht, die aktuelle Download Aktion abzubrechen. Der com-Status wechselt in **eDOWNLOAD_CANCELLING** und ändert sich schließlich in **eDOWNLOAD_CANCELED**. Der com-Status gibt **E_ILLEGAL_METHOD_CALL** zurück, wenn Sie zu einem anderen Zeitpunkt ausgelöst wird. 
     
-### <a name="download"></a>Herunterladen
+### <a name="download"></a>Download
 
 ```cpp
 HRESULT Download([in] LPWSTR pcwszParameters) // Download update content.

@@ -6,12 +6,12 @@ ms.audience: ITPro
 localization_priority: Normal
 ms.assetid: 3e0ca274-e9cd-48a1-8cfc-9d5053738972
 description: Verwenden Sie benutzerdefinierte Funktionen (User-Defined Functions, UDFs) in Excel online auf Office Online-Server, um benutzerdefinierte Funktionen aufzurufen.
-ms.openlocfilehash: c9ace9a678a57a0d97e2fee65ee62bf9497f4451
-ms.sourcegitcommit: 55205b4ec1376713d31e75d195e031798fb2c6ad
+ms.openlocfilehash: f916e56f7f79bfac1494b980a5591e4c531efea9
+ms.sourcegitcommit: 31b0a7373ff74fe1d6383c30bc67d7675b73d283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "40825765"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41773708"
 ---
 # <a name="configure-udfs-in-excel-online-in-office-online-server"></a>Konfigurieren von UDFs in Excel online auf Office Online Server
 
@@ -42,7 +42,7 @@ Verweisen Sie beim Erstellen einer **New-OfficeWebAppsExcelUserDefinedFunction-*
   
 ## <a name="enable-udfs-on-office-online-server"></a>Aktivieren von UDFs auf Office Online Server 
 
-Wenn ein Administrator mithilfe des Cmdlets [New-OfficeWebAppsFarm](https://technet.microsoft.com/en-us/library/jj219436.aspx) Windows PowerShell eine neue Office-webapps-Server Farm erstellt, sind UDF-Assemblys standardmäßig deaktiviert. Der Standardwert des **ExcelUdfsAllowed**-Flags lautet "False". 
+Wenn ein Administrator mithilfe des Cmdlets [New-OfficeWebAppsFarm](https://docs.microsoft.com/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) Windows PowerShell eine neue Office-webapps-Server Farm erstellt, sind UDF-Assemblys standardmäßig deaktiviert. Der Standardwert des **ExcelUdfsAllowed**-Flags lautet "False". 
   
 Um UDFs zu aktivieren, führen Sie den folgenden Befehl Windows PowerShell auf dem Office Online Server aus, nachdem die Office-webapps-Serverfarm erstellt wurde.
   

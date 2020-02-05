@@ -1,17 +1,17 @@
 ---
 title: Erstellen eines auf SharePoint gehosteten Project Server-Add-Ins
-manager: soliver
+manager: lindalu
 ms.date: 08/10/2016
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: bb9c3c00-7121-41e1-9db3-75550d040ba8
 description: Von den drei Arten von apps, die Sie für Project online erstellen können (automatisch gehostete, vom Anbieter gehostete und in SharePoint gehostete), ist die in SharePoint gehostete App am einfachsten zu erstellen und bereitzustellen.
-ms.openlocfilehash: 0af2ab51266a01f682cd16382f2cd0fdfde3a416
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 9b3b41eda40a8419ad72f11bb474acf7acaf81e9
+ms.sourcegitcommit: 31b0a7373ff74fe1d6383c30bc67d7675b73d283
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34540840"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41773757"
 ---
 # <a name="create-a-sharepoint-hosted-project-server-add-in"></a>Erstellen eines auf SharePoint gehosteten Project Server-Add-Ins
 
@@ -74,7 +74,7 @@ Zum Ändern des Project Web App Menübands können Sie eine benutzerdefinierte m
     
    **Abbildung 1. Erstellen einer Project Server-app in Visual Studio**
 
-   ![Erstellen einer Project Server-app in Visual Studio] (media/pj15_CreateStatusingApp_NewProject.gif "Erstellen einer Project Server-app in Visual Studio")
+   ![Erstellen einer Project Server-App in Visual Studio](media/pj15_CreateStatusingApp_NewProject.gif "Erstellen einer Project Server-App in Visual Studio")
   
 4. Geben Sie im Dialogfeld **neue APP für SharePoint** die folgenden drei Felder ein: 
     
@@ -97,7 +97,7 @@ Zum Ändern des Project Web App Menübands können Sie eine benutzerdefinierte m
     
    **Abbildung 2. Festlegen des Berechtigungs Bereichs für eine Statusing-App**
 
-   ![Festlegen des Berechtigungs Bereichs für eine Statusing-App] (media/pj15_CreateStatusingApp_PermissionScope.gif "Festlegen des Berechtigungs Bereichs für eine Statusing-App")
+   ![Festlegen des Berechtigungsumfangs für eine Statuserfassungs-App](media/pj15_CreateStatusingApp_PermissionScope.gif "Festlegen des Berechtigungsumfangs für eine Statuserfassungs-App")
   
 Mit der **Quick Status** -App kann ein Project Web App-Benutzerzuweisungen für diesen Benutzer aus mehreren Projekten lesen, die Zuweisung "Prozent abgeschlossen" ändern und das Update übermitteln. Die anderen Berechtigungs Anforderungsbereiche, die in der Dropdownliste in Abbildung 2 angezeigt werden, sind für diese APP nicht erforderlich. Die Berechtigungs Anforderungsbereiche sind die Berechtigungen, die die APP im Namen des Benutzers anfordert. Wenn der Benutzer nicht über diese Berechtigungen in Project Web App verfügt, wird die APP nicht ausgeführt. Eine APP kann mehrere Berechtigungs Anforderungsbereiche haben, einschließlich derer für andere SharePoint-Berechtigungen, aber nur die für die APP-Funktionalität erforderlichen Mindestanforderungen haben. Im folgenden sind die Berechtigungs Anforderungsbereiche im Zusammenhang mit Project Server aufgeführt: 
 
@@ -126,7 +126,7 @@ Bevor Sie mit dem Codieren des HTML-Inhalts beginnen, entwerfen Sie die Benutzer
   
 **Abbildung 3. Entwurf der Quick Status-App-Seite**
 
-![Entwurf der Quick Status-App-Seite] (media/pj15_CreateStatusingApp_AfterRefresh.gif "Entwurf der Quick Status-App-Seite")
+![Design der QuickStatus-App-Seite](media/pj15_CreateStatusingApp_AfterRefresh.gif "Design der QuickStatus-App-Seite")
   
 Die APP zeigt den Anzeigenamen oben an, bei dem es sich um den Wert des **Title** -Elements in AppManifest. XML handelt. 
   
@@ -222,15 +222,15 @@ JavaScript-Funktionen in der **Quick Status** -APP umfassen Folgendes:
   
 - Der Dokument **fertige** Ereignishandler wird ausgeführt, wenn das Dokumentobjektmodell (DOM) instanziiert wird. Der **fertige** Ereignishandler führt die folgenden vier Schritte aus: 
     
-    1. Initialisiert die **** globale Variable projcontext mit dem Clientkontext für die Project Server-JSOM und die globale **pwaWeb** -Variable. 
+    1. Initialisiert die globale Variable **projcontext** mit dem Clientkontext für die Project Server-JSOM und die globale **pwaWeb** -Variable. 
         
     2. Ruft die **getUserInfo** -Funktion auf, um die globale **projUser** -Variable zu initialisieren. 
         
-    3. Ruft die **** getassignings-Funktion auf, die angegebene Zuordnungsdaten für den Benutzer abruft. 
+    3. Ruft die **getassignings** -Funktion auf, die angegebene Zuordnungsdaten für den Benutzer abruft. 
         
     4. Bindet Klickereignishandler an das Tabellenkopf Kontrollkästchen und die Kontrollkästchen in jeder Zeile der Tabelle. Die Click-Ereignishandler verwalten das **checked** -Attribut der Kontrollkästchen, wenn der Benutzer ein Kontrollkästchen in der Tabelle aktiviert oder deaktiviert. 
     
-- Wenn die **** getassignings-Funktion erfolgreich ist, wird die **onGetAssignmentsSuccess** -Funktion aufgerufen. Diese Funktion fügt für jede Zuweisung eine Zeile in die Tabelle ein, initialisiert die HTML-Steuerelemente in jeder Zeile und initialisiert dann die unteren Schaltflächeneigenschaften. 
+- Wenn die **getassignings** -Funktion erfolgreich ist, wird die **onGetAssignmentsSuccess** -Funktion aufgerufen. Diese Funktion fügt für jede Zuweisung eine Zeile in die Tabelle ein, initialisiert die HTML-Steuerelemente in jeder Zeile und initialisiert dann die unteren Schaltflächeneigenschaften. 
     
 - Der **OnClick** -Ereignishandler für die Schaltfläche **Aktualisieren** Ruft die **updateAssignments** -Funktion auf. Diese Funktion Ruft den vollständigen Prozentwert ab, der auf die einzelnen ausgewählten Zuordnungen angewendet wird. oder wenn das Textfeld Prozent abgeschlossen leer ist, ruft die Funktion den abgeschlossenen Prozentsatz jeder ausgewählten Zuordnung in der Tabelle ab. Die **updateAssignments** -Funktion speichert und übermittelt die Statusaktualisierungen und schreibt eine Meldung zu den Ergebnissen an den unteren Rand der Seite. 
     
@@ -292,7 +292,7 @@ JavaScript-Funktionen in der **Quick Status** -APP umfassen Folgendes:
         }
    ```
 
-4. Fügen Sie **** die getassignings-Funktion hinzu, die **onGetAssignmentsSuccess** (siehe Schritt 5) aufruft, wenn die Zuordnungs Abfrage erfolgreich ist. Die **** Option Include schränkt die Abfrage so ein, dass nur die angegebenen Felder zurückgegeben werden. 
+4. Fügen Sie die **getassignings** -Funktion hinzu, die **onGetAssignmentsSuccess** (siehe Schritt 5) aufruft, wenn die Zuordnungs Abfrage erfolgreich ist. Die Option **include** schränkt die Abfrage so ein, dass nur die angegebenen Felder zurückgegeben werden. 
     
    ```js
     // Get the collection of assignments for the current user.
@@ -314,7 +314,7 @@ JavaScript-Funktionen in der **Quick Status** -APP umfassen Folgendes:
 5. Fügen Sie die **onGetAssignmentsSuccess** -Funktion hinzu, wodurch der Tabelle eine Zeile für jede Zuordnung hinzugefügt wird. Die **prevProjName** -Variable wird verwendet, um zu bestimmen, ob eine Zeile für ein anderes Projekt ist. Wenn dies der Fall ist, wird der Projektname in einer fett formatierten Schriftart angezeigt. Wenn dies nicht der Fall ist, wird der Projektname auf eine leere Zeichenfolge festgelegt. 
     
    > [!NOTE]
-   > Das JSOM enthält keine **TimeSpan** -Eigenschaften, die die CSOM umfasst, beispielsweise **ActualWorkTimeSpan**. Stattdessen verwendet der JSOM-Eigenschaft für die Anzahl der Millisekunden, wie die [PS. StatusAssignment. actualWorkMilliseconds](https://msdn.microsoft.com/library/736bce1e-f734-0efe-6c5f-e0e891ab00ef%28Office.15%29.aspx) -Eigenschaft. Die Methode zum Abrufen dieser Eigenschaft ist **get\_actualWorkMilliseconds**, die einen ganzzahligen Wert zurückgibt. > die **get_actualWork** -Methode gibt eine Zeichenfolge wie "3H" zurück. Sie können entweder den Wert in der **Quick Status** -App verwenden, ihn jedoch anders anzeigen. Die Zuweisungs Abfrage enthält beide Eigenschaften, sodass Sie den Wert während des Debuggings testen können. Wenn Sie die **aktuelle** Arbeits Variable entfernen, können Sie die Eigenschaft " **actualy** " auch in der Zuordnungs Abfrage entfernen. 
+   > Das JSOM enthält keine **TimeSpan** -Eigenschaften, die die CSOM umfasst, beispielsweise **ActualWorkTimeSpan**. Stattdessen verwendet der JSOM-Eigenschaft für die Anzahl der Millisekunden, wie die [PS. StatusAssignment. actualWorkMilliseconds](https://msdn.microsoft.com/library/736bce1e-f734-0efe-6c5f-e0e891ab00ef%28Office.15%29.aspx) -Eigenschaft. Die Methode zum Abrufen dieser Eigenschaft ist **get\_actualWorkMilliseconds**, die einen ganzzahligen Wert zurückgibt. > die **get_actualWork** -Methode eine Zeichenfolge wie "3H" zurückgibt. Sie können entweder den Wert in der **Quick Status** -App verwenden, ihn jedoch anders anzeigen. Die Zuweisungs Abfrage enthält beide Eigenschaften, sodass Sie den Wert während des Debuggings testen können. Wenn Sie die **aktuelle** Arbeits Variable entfernen, können Sie die Eigenschaft " **actualy** " auch in der Zuordnungs Abfrage entfernen. 
   
    Schließlich initialisiert die **onGetAssignmentsSuccess** -Funktion die Schaltfläche **Aktualisieren** und die Schaltfläche **Aktualisieren** mit Klick-Ereignishandlern. Der Textwert der Schaltfläche **Aktualisieren** kann auch im HTML-Code festgelegt werden. 
     
@@ -375,12 +375,12 @@ JavaScript-Funktionen in der **Quick Status** -APP umfassen Folgendes:
         }
    ```
 
-6. Fügen Sie den **updateAssignments** -Click-Ereignishandler für die Schaltfläche **Aktualisieren** hinzu. Wenn der Benutzer einen Wert für den abgeschlossenen Prozentsatz einer Aufgabe ändert oder einen Wert in das Textfeld **PercentComplete** hinzufügt, kann der Wert in verschiedenen Formaten wie "60", "60%" oder "60%" eingegeben werden. Die **** GetNumericValue-Methode gibt den numerischen Wert des Eingabe Texts zurück. 
+6. Fügen Sie den **updateAssignments** -Click-Ereignishandler für die Schaltfläche **Aktualisieren** hinzu. Wenn der Benutzer einen Wert für den abgeschlossenen Prozentsatz einer Aufgabe ändert oder einen Wert in das Textfeld **PercentComplete** hinzufügt, kann der Wert in verschiedenen Formaten wie "60", "60%" oder "60%" eingegeben werden. Die **GetNumericValue** -Methode gibt den numerischen Wert des Eingabe Texts zurück. 
     
    > [!NOTE]
    > In einer APP, die für die Verwendung in der Produktion entwickelt wurde, sollten Eingabewerte für numerische Informationen die Feldüberprüfung und zusätzliche Fehlerüberprüfung umfassen. 
   
-   Das **updateAssignments** -Beispiel enthält einige grundlegende Fehlerüberprüfung und zeigt Informationen im **Nachrichten** Absatz am unteren Rand der Seite an: grün, wenn die Aktualisierungsabfrage erfolgreich ist, und rot, wenn ein Eingabefehler vorliegt oder die Aktualisierungsabfrage erfolglos. 
+   Das **updateAssignments** -Beispiel enthält einige grundlegende Fehlerüberprüfung und zeigt Informationen im **Nachrichten** Absatz am unteren Rand der Seite an: grün, wenn die Aktualisierungsabfrage erfolgreich ist, und rot, wenn ein Eingabefehler vorliegt oder die Aktualisierungsabfrage nicht erfolgreich ausgeführt wird. 
     
    Bevor Sie die **submitAllStatusUpdates** -Methode verwenden, muss die APP die Updates auf dem Server mithilfe der **PS speichern. StatusAssignmentCollection. Update** -Methode. 
     
@@ -446,7 +446,7 @@ JavaScript-Funktionen in der **Quick Status** -APP umfassen Folgendes:
 
 7. Fügen Sie die **exitToPwa** -Funktion hinzu, die den **SPHostUrl** -Abfragezeichenfolgenparameter für die URL der Host Project Web App-Website verwendet. Um zur Seite Aufgaben zurückzukehren, `"/Tasks.aspx"` fügen Sie die URL an. Beispielsweise wäre die **spHostUrl** -Variable auf `https://ServerName/ProjectServerName/Tasks.aspx`festgelegt.
     
-   Die **** getquerystringparameter-Funktion teilt die URL der **Quick Status** -Seite, um den angegebenen Parameter in den URL-Optionen zu extrahieren und zurückzugeben. Im folgenden finden Sie ein Beispiel für das **Dokument. URL** -Wert für das **Quick Status** -Dokument (alle in einer Reihe): 
+   Die **getquerystringparameter** -Funktion teilt die URL der **Quick Status** -Seite, um den angegebenen Parameter in den URL-Optionen zu extrahieren und zurückzugeben. Im folgenden finden Sie ein Beispiel für das **Dokument. URL** -Wert für das **Quick Status** -Dokument (alle in einer Reihe): 
     
    ```HTML
     https://app-ef98082fa37e3c.servername.officeapps.selfhost.corp.microsoft.com/pwa/
@@ -459,7 +459,7 @@ JavaScript-Funktionen in der **Quick Status** -APP umfassen Folgendes:
             %2Eofficeapps%2Eselfhost%2Ecorp%2Emicrosoft%2Ecom%2Fpwa%2FQuickStatus
    ```
 
-   Für die vorherige URL gibt die **** getquerystringparameter-Funktion den **SPHostUrl** - `https://ServerName/pwa`Abfragezeichenfolgenwert zurück. 
+   Für die vorherige URL gibt die **getquerystringparameter** -Funktion den **SPHostUrl** - `https://ServerName/pwa`Abfragezeichenfolgenwert zurück. 
     
    ```js
         // Exit the QuickStatus page and go back to the Tasks page in Project Web App.
@@ -523,19 +523,19 @@ Obwohl die Gruppen und Steuerelemente in jeder Region ähnlich aussehen, kann ei
     
    **Abbildung 4. Hinzufügen einer benutzerdefinierten menübandaktion**
 
-   ![Hinzufügen einer benutzerdefinierten menübandaktion] (media/pj15_CreateStatusingApp_AddRibbonCustomAction.gif "Hinzufügen einer benutzerdefinierten menübandaktion")
+   ![Hinzufügen einer benutzerdefinierten Menübandaktion](media/pj15_CreateStatusingApp_AddRibbonCustomAction.gif "Hinzufügen einer benutzerdefinierten Menübandaktion")
   
-3. Lassen Sie auf der ersten Seite des Assistenten zum **Erstellen einer benutzerdefinierten Aktion für Menüband** die Option **Host-** Webdienste ausgewählt, wählen Sie in der Dropdownliste für den Bereich benutzerdefinierter Aktionen die Option **keine** aus, und klicken Sie dann auf **weiter** (siehe Abbildung 5). Die Elemente in den Dropdownlisten sind für SharePoint relevant, nicht für Project Server. Wir ersetzen den Großteil des generierten XML-Code für die benutzerdefinierte Aktion so, dass Sie auf Project Server angewendet wird. 
+3. Lassen Sie auf der ersten Seite des Assistenten zum **Erstellen einer benutzerdefinierten Aktion für Menüband** die Option **Host-Webdienste** ausgewählt, wählen Sie in der Dropdownliste für den Bereich benutzerdefinierter Aktionen die Option **keine** aus, und klicken Sie dann auf **weiter** (siehe Abbildung 5). Die Elemente in den Dropdownlisten sind für SharePoint relevant, nicht für Project Server. Wir ersetzen den Großteil des generierten XML-Code für die benutzerdefinierte Aktion so, dass Sie auf Project Server angewendet wird. 
     
    **Abbildung 5. Angeben von Eigenschaften für die benutzerdefinierte menübandaktion**
 
-   ![Angeben von Eigenschaften für die benutzerdefinierte menübandaktion] (media/pj15_CreateStatusingApp_RibbonCustomAction2.gif "Angeben von Eigenschaften für die benutzerdefinierte menübandaktion")
+   ![Festlegen von Eigenschaften für die benutzerdefinierte Menübandaktion](media/pj15_CreateStatusingApp_RibbonCustomAction2.gif "Festlegen von Eigenschaften für die benutzerdefinierte Menübandaktion")
   
 4. Belassen Sie auf der nächsten Seite des Assistenten zum **Erstellen einer benutzerdefinierten Aktion für Menüband** alle Standardwerte für die Einstellungen, und wählen Sie dann **Fertig stellen** aus (siehe Abbildung 6). Visual Studio erstellt den **RibbonQuickStatusAction** -Ordner, der eine Datei "Elements. xml" enthält. 
     
    **Abbildung 6. Angeben der Einstellungen für ein Schaltflächen-Steuerelement**
 
-   ![Angeben der Einstellungen für ein Schaltflächen-Steuerelement] (media/pj15_CreateStatusingApp_RibbonCustomAction3.gif "Angeben der Einstellungen für ein Schaltflächen-Steuerelement")
+   ![Festlegen der Einstellungen für ein Schaltflächensteuerelement](media/pj15_CreateStatusingApp_RibbonCustomAction3.gif "Festlegen der Einstellungen für ein Schaltflächensteuerelement")
   
 5. Ändern Sie den standardmäßig generierten Code in der Datei "Elements. xml" für die benutzerdefinierte menübandaktion. Im folgenden finden Sie den standardmäßigen XML-Code:
     
@@ -611,7 +611,7 @@ Obwohl die Gruppen und Steuerelemente in jeder Region ähnlich aussehen, kann ei
     
        - Zum Anzeigen einer QuickInfo für das Schaltflächen-Steuerelement fügen Sie das **ToolTipTitle** -Attribut und das **ToolTipDescription** -Attribut hinzu. 
     
-    4. Ändern Sie die Attribute des **commanduihandler-** -Elements. Stellen Sie beispielsweise sicher, dass das **Command** -Attribut mit dem Wert des **Command** -Attributs für das **Button** -Element übereinstimmt. Für das **Command** - `~appWebUrl` Attribut ist ein Platzhalter für die URL der **Quick Status** -Webseite. Wenn die **Quick Status** -App auf der menübandschaltfläche aufgerufen wird, wird das Token **{Standard Tokens}** durch URL-Optionen ersetzt, die **SPHostUrl**, die **Sprache**, **SPClientTag**, **SPProductNumber**und SPAppWebUrl enthalten. ** **.
+    4. Ändern Sie die Attribute des **commanduihandler-** -Elements. Stellen Sie beispielsweise sicher, dass das **Command** -Attribut mit dem Wert des **Command** -Attributs für das **Button** -Element übereinstimmt. Für das **Command** - `~appWebUrl` Attribut ist ein Platzhalter für die URL der **Quick Status** -Webseite. Wenn die **Quick Status** -App auf der menübandschaltfläche aufgerufen wird, wird das Token **{Standard Tokens}** durch URL-Optionen ersetzt, die **SPHostUrl**, die **Sprache**, **SPClientTag**, **SPProductNumber**und **SPAppWebUrl**einschließen.
     
         ```XML
             <CommandUIHandlers>
@@ -629,7 +629,7 @@ Wenn Sie die APP entwickeln und eine menübandschaltfläche hinzufügen, testen 
   
 **Abbildung 7. Anzeigen der QuickInfo der deaktivierten Schaltfläche "schnell Status"**
 
-![Anzeigen der QuickInfo der Schaltfläche "deaktiviert"] (media/pj15_CreateStatusingApp_ButtonToolTipDisabled.gif "Anzeigen der QuickInfo der Schaltfläche \"deaktiviert\"")
+![Anzeigen der QuickInfo der deaktivierten Schaltfläche](media/pj15_CreateStatusingApp_ButtonToolTipDisabled.gif "Anzeigen der QuickInfo der deaktivierten Schaltfläche")
   
 In Verfahren 5 wird gezeigt, wie Sie die **Quick Status** -App bereitstellen und installieren. In Prozedur 6 werden einige zusätzliche Schritte zum Testen der APP gezeigt, nachdem Sie Sie installiert haben. 
 
@@ -650,7 +650,7 @@ Es gibt verschiedene Möglichkeiten, eine app in einer SharePoint-Webanwendung w
     
    **Abbildung 8. Veröffentlichen der Quick Status-App**
 
-   ![Verwenden des Webpublishing-Assistenten] (media/pj15_CreateStatusingApp_PublishWizard.gif "Verwenden des Webpublishing-Assistenten")
+   ![Verwenden des Assistenten zum Veröffentlichen](media/pj15_CreateStatusingApp_PublishWizard.gif "Verwenden des Assistenten zum Veröffentlichen")
   
 3. Kopieren Sie die Datei Quick Status. app aus `~\QuickStatus\bin\Debug\app.publish\1.0.0.0` dem Verzeichnis in ein bequemes Verzeichnis auf dem lokalen Computer (oder auf den SharePoint-Computer für eine lokale Installation). 
     
@@ -674,12 +674,12 @@ Es gibt verschiedene Möglichkeiten, eine app in einer SharePoint-Webanwendung w
     
       **Abbildung 9. Hinzufügen einer Symbol-URL für die Quick Status-App**
 
-      ![Festlegen von Eigenschaften in SharePoint für die APP] (media/pj15_CreateStatusingApp_AddAppToSharePointSettings.gif "Festlegen von Eigenschaften in SharePoint für die APP")
+      ![Festlegen von Eigenschaften für die App in SharePoint](media/pj15_CreateStatusingApp_AddAppToSharePointSettings.gif "Festlegen von Eigenschaften für die App in SharePoint")
   
    4. **Category** -Feld: Wählen Sie eine vorhandene Kategorie aus, oder geben Sie einen eigenen Wert an. Geben Sie beispielsweise Statusing ein.
     
       > [!NOTE]
-      > Eine Kategorie mit **** dem Namen Statusing dient nur zu Testzwecken. Eine typische Kategorie für Project Server-Apps ist **Projekt Management**. 
+      > Eine Kategorie mit dem Namen **Statusing** dient nur zu Testzwecken. Eine typische Kategorie für Project Server-Apps ist **Projekt Management**. 
   
    5. Feld **Herausgebername** : Geben Sie den Namen des Herausgebers ein. Geben Sie in diesem Beispiel Project SDK ein.
     
@@ -687,29 +687,29 @@ Es gibt verschiedene Möglichkeiten, eine app in einer SharePoint-Webanwendung w
     
    7. Zusätzliche Felder sind optional. Sie können beispielsweise eine Support-URL und mehrere Hilfe Bilder für die Seite mit den App-Details hinzufügen. In Abbildung 9 enthalten die Felder **Bild-URL 1** die URL für einen Screenshot der APP und eine Beschreibung des Screenshot. 
     
-   8. Wählen Sie im Dialogfeld **Apps für SharePoint-Quick Status. app** die Option **Speichern**aus. In Abbildung 9 ist das Element **Quick Status Update** in der Bibliothek Apps für SharePoint zur Bearbeitung ausgecheckt, daher würden Sie auf der Registerkarte **Bearbeiten** des Dialogfeld-Menübands Einchecken auswählen, um den Vorgang abzuschließen (siehe Abbildung 10). **** 
+   8. Wählen Sie im Dialogfeld **Apps für SharePoint-Quick Status. app** die Option **Speichern**aus. In Abbildung 9 ist das Element **Quick Status Update** in der Bibliothek Apps für SharePoint zur Bearbeitung ausgecheckt, daher würden Sie auf der Registerkarte **Bearbeiten** des Dialogfeld-Menübands **Einchecken** auswählen, um den Vorgang abzuschließen (siehe Abbildung 10). 
     
       **Abbildung 10. Die Quick Status-APP wird der Apps für SharePoint-Bibliothek hinzugefügt.**
 
-      ![Die Quick Status-APP wird SharePoint hinzugefügt] (media/pj15_CreateStatusingApp_AddAppToSharePoint.gif "Die Quick Status-APP wird SharePoint hinzugefügt")
+      ![Die QuickStatus-App wird SharePoint hinzugefügt](media/pj15_CreateStatusingApp_AddAppToSharePoint.gif "Die QuickStatus-App wird SharePoint hinzugefügt")
   
 9. Wählen Sie in Project Web App im Dropdownmenü **Einstellungen** die Option **app hinzufügen**aus. Wählen Sie auf der Seite Ihre apps auf der Schnellstartleiste in **Ihrer Organisation aus**, und wählen Sie dann **App-Details** für die **schnell Status Update** -App aus. Abbildung 11 zeigt die Detailseite mit dem App-Symbol, Screenshot und anderen Informationen, die Sie im vorherigen Schritt hinzugefügt haben. 
     
    **Abbildung 11. Verwenden der Seite Details zum schnell Status Update in Project Web App**
 
-   ![Hinzufügen der Quick Status-APP zu Project Web App] (media/pj15_CreateStatusingApp_AddAppToPWA.gif "Hinzufügen der Quick Status-APP zu Project Web App")
+   ![Hinzufügen der QuickStatus-App zu Project Web App](media/pj15_CreateStatusingApp_AddAppToPWA.gif "Hinzufügen der QuickStatus-App zu Project Web App")
   
 10. Wählen Sie auf der Seite Quick Status Update Details die Option **Hinzufügen**aus. Project Web App zeigt ein Dialogfeld an, in dem die Vorgänge aufgelistet sind, die die Quick Status-app ausführen kann (siehe Abbildung 12). Die Liste der Vorgänge wird von den **AppPermissionRequest** -Elementen in der Datei AppManifest. XML abgeleitet. 
     
     **Abbildung 12. Überprüfen, ob Sie der schnell Status-App Vertrauen**
 
-    ![Überprüfen der Vertrauensstellung für die Quick Status-App] (media/pj15_CreateStatusingApp_AddAppToPWA2Trust.gif "Überprüfen der Vertrauensstellung für die Quick Status-App")
+    ![Überprüfen des Vertrauens gegenüber der QuickStatus-App](media/pj15_CreateStatusingApp_AddAppToPWA2Trust.gif "Überprüfen des Vertrauens gegenüber der QuickStatus-App")
   
-11. Wählen Sie im Dialogfeld **schnell Status Aktualisierung ausführen** vertrauenswürdig aus ****. Die APP wird der Seite Project Web App Websiteinhalt hinzugefügt (siehe Abbildung 13).
+11. Wählen Sie im Dialogfeld **schnell Status Aktualisierung ausführen** **vertrauenswürdig aus**. Die APP wird der Seite Project Web App Websiteinhalt hinzugefügt (siehe Abbildung 13).
     
     **Abbildung 13. Anzeigen der schnell Status-App auf der Seite "Websiteinhalte"**
 
-    ![Anzeigen der Quick Status-app in Websiteinhalten] (media/pj15_CreateStatusingApp_AddAppToPWA3.gif "Anzeigen der Quick Status-app in Websiteinhalten")
+    ![Anzeigen der QuickStatus-App in den Websiteinhalten](media/pj15_CreateStatusingApp_AddAppToPWA3.gif "Anzeigen der QuickStatus-App in den Websiteinhalten")
   
 Auf der Seite Websiteinhalte können Sie das Symbol **Quick Status Update** auswählen, um die APP auszuführen.
 
@@ -720,7 +720,7 @@ Auf der Seite Aufgaben in Project Web App (siehe Abbildung 14) sollte die Schalt
 
 **Abbildung 14. Starten der Quick Status-App auf der Registerkarte "Aufgaben"**
 
-![Starten der Quick Status-App auf der Registerkarte "Aufgaben"] (media/pj15_CreateStatusingApp_TasksRibbon.gif "Starten der Quick Status-App auf der Registerkarte \"Aufgaben\"")
+![Starten der QuickStatus-App von der Registerkarte "TASKS"](media/pj15_CreateStatusingApp_TasksRibbon.gif "Starten der QuickStatus-App von der Registerkarte "TASKS"")
   
 In Prozedur 6 sind einige Tests aufgeführt, die mit der Quick Status-App vorgenommen werden müssen.
 
@@ -753,25 +753,25 @@ Jeder Vorgang, den ein Benutzer in der **Quick Status** -App möglicherweise aus
     
       **Abbildung 15. Aktualisieren einer Zuordnung in der Quick Status-App**
 
-      ![Aktualisieren einer Zuordnung in der Quick Status-App] (media/pj15_CreateStatusingApp_Testing1Update.gif "Aktualisieren einer Zuordnung in der Quick Status-App")
+      ![Aktualisieren einer Zuweisung in der QuickStatus-App](media/pj15_CreateStatusingApp_Testing1Update.gif "Aktualisieren einer Zuweisung in der QuickStatus-App")
   
 3. Wählen Sie **Aktualisieren** (siehe Abbildung 16). Alle Aufgaben werden erneut ausgewählt, und die oberste Aufgabe zeigt 80% abgeschlossen. 
     
       **Abbildung 16. Aktualisieren der Seite "schnell Status Aktualisierung"**
 
-      ![Aktualisieren der Quick Status-Seite] (media/pj15_CreateStatusingApp_Testing2Refresh.gif "Aktualisieren der Quick Status-Seite")
+      ![Aktualisieren der QuickStatus-Seite](media/pj15_CreateStatusingApp_Testing2Refresh.gif "Aktualisieren der QuickStatus-Seite")
   
 4. Deaktivieren Sie alle Kontrollkästchen, und wählen Sie dann eine andere Aufgabe aus. Wählen Sie beispielsweise **neuer Vorgang aus PWA aus**. Lassen Sie das Textfeld **Prozentsatz abgeschlossen** leer, löschen Sie den gesamten Text in der Spalte **% abgeschlossen** für den ausgewählten Vorgang, und wählen Sie dann **Aktualisieren**aus. Da beide Textfelder leer sind, wird in der App eine rote Fehlermeldung angezeigt (siehe Abbildung 17).
     
       **Abbildung 17. Testen der Fehlermeldung**
 
-      ![Testen der Fehlermeldung] (media/pj15_CreateStatusingApp_Testing3Error.gif "Testen der Fehlermeldung")
+      ![Testen der Fehlermeldung](media/pj15_CreateStatusingApp_Testing3Error.gif "Testen der Fehlermeldung")
   
 5. Aktualisieren Sie die vorherige Aufgabe auf 80% abgeschlossen, und wählen Sie dann **Beenden**aus. Die **exitToPwa** -Funktion ändert den Speicherort des Browserfensters auf die Seite Aufgaben in der SharePoint-Hostanwendung (die URL ändert https://ServerName/pwa/Tasks.aspx)sich in. Abbildung 18 zeigt, dass die **T1** -Aufgabe und die **neue Aufgabe aus PWA** -Aufgabe jeweils 80% abgeschlossen anzeigen. 
     
       **Abbildung 18. Überprüfen, ob die Vorgänge in Project Web App aktualisiert wurden**
 
-      ![Überprüfen der aktualisierten Aufgaben in Project Web App] (media/pj15_CreateStatusingApp_TasksUpdatedInPWA.gif "Überprüfen der aktualisierten Aufgaben in Project Web App")
+      ![Überprüfen der aktualisierten Aufgaben in Project Web App](media/pj15_CreateStatusingApp_TasksUpdatedInPWA.gif "Überprüfen der aktualisierten Aufgaben in Project Web App")
   
 6. Bevor der aktualisierte Status in Project Professional 2013 angezeigt wird, müssen die Änderungen zur Genehmigung übermittelt und dann vom Projektmanager genehmigt werden.
     
@@ -787,7 +787,7 @@ Das Testen zeigt mehrere andere Änderungen, die in der **Quick Status** -App f�
     
 - Da die **Quick Status** -App den Status nicht übermittelt, wäre das Symbol " **schnell Status** " auf der Registerkarte " **Aufgaben** " des Menübands mehr logisch das erste Symbol in der Gruppe " **Aufgaben** " und nicht das letzte Symbol in der **Submit** -Gruppe. 
     
-- Da die **onGetAssignmentsSuccess** -Funktion den **btnSubmitUpdate** -Schaltflächentext initialisiert, aber die anderen Schaltflächen Textwerte in HTML initialisiert werden, wird die Seite in einem teilweise **** initialisierten Zustand gelassen, während die getassignings die Funktion wird ausgeführt. Schaltflächen auf der Seite werden konsistenter angezeigt, wenn die Textwerte alle in HTML initialisiert wurden. 
+- Da die **onGetAssignmentsSuccess** -Funktion den **btnSubmitUpdate** -Schaltflächentext initialisiert, aber die anderen Schaltflächen Textwerte in HTML initialisiert werden, bleibt die Seite in einem teilweise initialisierten Zustand, während die **getassigns** -Funktion ausgeführt wird. Schaltflächen auf der Seite werden konsistenter angezeigt, wenn die Textwerte alle in HTML initialisiert wurden. 
     
 Am wichtigsten ist, dass der von der **Quick Status** -App verwendete Ansatz, bei dem er für Zuordnungen den abgeschlossenen Prozentsatz ändert, in einer Produktions-App überarbeitet werden sollte. Weitere Informationen finden Sie im Abschnitt " [Nächste Schritte](#pj15_StatusingApp_NextSteps) ". 
 
@@ -1223,7 +1223,7 @@ Die **Quick Status** -APP ist ein relativ einfaches Beispiel für das Schreiben 
 
 - [Project Server-Programmieraufgaben](project-programming-tasks.md)
 - [SharePoint-Add-Ins](https://msdn.microsoft.com/library/jj163230.aspx)
-- [Verwalten von Vorgangsaktualisierungen in Project Web App](https://technet.microsoft.com/en-us/library/hh767481%28v=office.14%29.aspx)
-- [Gewusst wie: Erstellen benutzerdefinierter Aktionen zur Bereitstellung mit Add-Ins für SharePoint](https://msdn.microsoft.com/library/jj163954.aspx)
+- [Verwalten von Vorgangsaktualisierungen in Project Web App](https://technet.microsoft.com/library/hh767481%28v=office.14%29.aspx)
+- [Erstellen benutzerdefinierter Aktionen zur Bereitstellung mit SharePoint-Add-Ins](https://msdn.microsoft.com/library/jj163954.aspx)
     
 
