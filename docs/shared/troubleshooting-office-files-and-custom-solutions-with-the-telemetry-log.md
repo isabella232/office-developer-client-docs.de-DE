@@ -6,12 +6,12 @@ ms.audience: Developer
 ms.assetid: ef88e30e-7537-488e-bc72-8da29810f7aa
 description: Verwenden Sie das Telemetrieprotokoll für Office 2013, um Kompatibilitätsprobleme zwischen Office 2013 und Lösungen zu ermitteln, die für vorherige Versionen von Office entwickelt wurden.
 localization_priority: Priority
-ms.openlocfilehash: 3954662a9476dca0cbb9bf4b8197979783b7e11e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 0ace7a39c62194816662e49580cf6868edcae295
+ms.sourcegitcommit: 31b0a7373ff74fe1d6383c30bc67d7675b73d283
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346288"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41773722"
 ---
 # <a name="troubleshooting-office-files-and-custom-solutions-with-the-telemetry-log"></a>Problembehandlung bei Office-Dateien und benutzerdefinierte Lösungen mit dem Telemetrieprotokoll
 
@@ -33,7 +33,7 @@ Weitere Informationen finden Sie im Artikel [Bereitstellen des Office-Telemetrie
 Wenn eine Office-Datei oder -Lösung geladen, verwendet oder geschlossen wird oder einen Fehler in einer der ausgewählten Office 2013-Anwendungen auslöst, fügt die Anwendung einen Datensatz in einem lokalen Datenspeicher (einer Datenbank auf demselben Computer) hinzu, der Informationen über das Ereignis enthält. Der Datensatz umfasst einen Titel für das Ereignis, den Namen der Anwendung, die das Ereignis protokolliert hat, die Uhrzeit, den Namen der Datei oder Lösung, den Schweregrad und eine kurze Beschreibung eventueller Fehler, die aufgetreten sind. Nach einer Aktualisierung zeigt die Telemetrieprotokoll-Arbeitsmappe eine Liste der im lokalen Datenspeicher enthaltenen Datensätze an.
   
 > [!NOTE]
-> The default location for the local data store is %Users%\[Current user]\AppData\Local\Microsoft\Office\15.0\Telemetry. The default maximum size for the data store is 5 MB (5,120 KB). 
+> Der Standardspeicherort für den lokalen Datenspeicher ist %Users%\[[Aktueller Benutzer]\AppData\Local\Microsoft\Office\15.0\Telemetry. Standardmäßig beträgt die maximale Größe des Datenspeichers 5 MB (5.120 KB). 
   
 Ausgewählte Office 2013-Anwendungen verfügen über eine Laufzeitprotokollierungs-API, die einen Datensatz im lokalen Datenspeicher erstellt, wann immer eine Datei oder eine Lösung eines der folgenden Ereignisse auslöst:
   
@@ -73,7 +73,7 @@ Gehen Sie folgendermaßen vor, um die erfassten Office-Probleme in Telemetriepro
 
 1. Gehen Sie folgendermaßen vor, um Telemetrieprotokoll zu öffnen:
     
-   - **On Windows 7:** On the **Start** menu, choose **All Programs**. Then, in the list of programs, expand **Microsoft Office 2013**, expand **Office 2013 Tools**, and then click **Office 2013 Telemetry Log**.
+   - **Für Windows7:** Klicken Sie im **Startmenü** auf **Alle Programme**. Erweitern Sie dann in der Liste der Programme **Microsoft Office 2013**, erweitern Sie **Office 2013 Tools**, und klicken Sie auf **Office 2013 Telemetry Log**.
     
      In Excel 2013 wird eine neue Arbeitsmappe geöffnet. Die neue Arbeitsmappe enthält drei Arbeitsblätter: **Ereignisse**, **Systeminfo** und **Anleitung**.
     
@@ -96,7 +96,7 @@ Beispielsweise wird das Problem mit dem Titel "OM ausgeblendet: Comment.Initial-
   
 **Abbildung 1. Office-Telemetrieprotokoll**
   
-![Die Office-Ereignisanzeige zeigt Datensätze an.](media/off15_OfficeEventViewer_SD.png "Die Office-Ereignisanzeige zeigt Datensätze an")
+![Die Office-Ereignisanzeige mit Anzeige von Datensätzen.](media/off15_OfficeEventViewer_SD.png "Die Office-Ereignisanzeige mit Anzeige von Datensätzen.")
   
 > [!NOTE]
 >  Das Arbeitsblatt **Systeminfo** im Telemetrieprotokoll enthält Informationen über den Computer, auf dem Office 2013 installiert ist. Dieses Arbeitsblatt enthält die folgenden Informationen: 
@@ -145,6 +145,8 @@ Interpretieren Sie die in Telemetrieprotokoll angezeigten Datensätze anhand der
 |18  <br/> |Die App wurde erfolgreich geschlossen.  <br/> ||Die Hostanwendung konnte die Office-Add-In erfolgreich schließen.  <br/> |
 |19  <br/> |Für das Add-In ist ein Laufzeitfehler aufgetreten, der lokal protokolliert wurde.  <br/> |Kritisch  <br/> |Bei der Office-Add-In ist ein Problem aufgetreten, das zu einem Fehler geführt hat. Weitere Einzelheiten können Sie dem Protokoll der Microsoft Office-Benachrichtigungen entnehmen. Zeigen Sie das Protokoll mit der Windows-Ereignisanzeige auf dem Computer an, auf dem der Fehler aufgetreten ist.  <br/> |
 |20  <br/> |Das Add-In konnte die Lizenzierung nicht überprüfen.  <br/> |Kritisch  <br/> |Die Lizenzinformationen für die Office-Add-In konnten nicht überprüft werden. Möglicherweise ist die Lizenz abgelaufen. Weitere Einzelheiten können Sie dem Protokoll der Microsoft Office-Benachrichtigungen entnehmen. Zeigen Sie das Protokoll mit der Windows-Ereignisanzeige auf dem Computer an, auf dem der Fehler aufgetreten ist.  <br/> |
+|21 <br/>|Bei einem Makro ist ein Kompilierungsfehler aufgetreten <br/>|Warnung <br/>| Die Datei enthält ein Makro, das nicht kompiliert und nicht ausgeführt werden konnte. Weitere Details finden Sie in der Fehlermeldung, die beim Versuch der Kompilierung des Makros im Makro-Editor angezeigt wird.<br/>| 
+|22 <br/>|Bei einem Makro ist ein Laufzeitfehler aufgetreten<br/>| Warnung <br/>| Die Datei enthält ein Makro, bei dem ein Laufzeitfehler aufgetreten ist. Weitere Details finden Sie in der Fehlermeldung, die beim Versuch der Ausführung des Makros im Makro-Editor angezeigt wird. Zudem winden Sie in der [Visual Basic for Applications-Referenz](https://docs.microsoft.com/previous-versions/visualstudio/visual-basic-6/aa264975%28v=vs.60%29) weitere Informationen.<br/>|
 |Verschiedene  <br/> |"OM Behavior Change: ..."  <br/> |Informativ  <br/> |Der von einem Add-In oder Makro aktivierte Dokumentcode verwendet ein Objekt, ein Element, eine Auflistung, eine Aufzählung oder eine Konstante, das bzw. die sich anders verhält als in früheren Versionen von Office.<br/><br/> Weitere Informationen hierzu finden Sie unter [Kompatibilitätsprobleme in Office](compatibility-issues-in-office.md).  <br/> |
 |Verschiedene  <br/> |"OM Removed: …"  <br/> |Kritisch  <br/> |Der von einem Add-In oder Makro aktivierte Dokumentcode verwendet ein Objekt, ein Element, eine Auflistung, eine Aufzählung oder eine Konstante, das bzw. die aus dem Objektmodell entfernt wurde.<br/><br/>Weitere Informationen hierzu finden Sie unter [Kompatibilitätsprobleme in Office](compatibility-issues-in-office.md).  <br/> |
 |Verschiedene  <br/> |"OM Hidden: …"  <br/> |Informativ  <br/> |Der von einem Add-In oder Makro aktivierte Dokumentcode verwendet ein Objekt, ein Element, eine Auflistung, eine Aufzählung oder eine Konstante, das bzw. die aus dem Objektmodell ausgeblendet wurde.<br/><br/>Weitere Informationen hierzu finden Sie unter [Kompatibilitätsprobleme in Office](compatibility-issues-in-office.md).  <br/> |
