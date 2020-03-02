@@ -7,7 +7,7 @@ ms.assetid: 74a80e0a-fe60-4356-b238-13de4c2822d9
 description: Hier finden Sie Vorgehensweisen, Beispielcode, SDK- und API-Dokumentationen, VBA-Referenzen, Schulungen und technische Artikel zum Entwickeln von Lösungen und Anpassen von Office.
 ms.openlocfilehash: 4ecf232e0381fec9acc55582db6c7aaacedde891
 ms.sourcegitcommit: 63e14e1e6124222a0a347aa1ad02ce1bd7e94949
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 09/11/2019
 ms.locfileid: "36849862"
@@ -42,9 +42,9 @@ Hier finden Sie Vorgehensweisen, Beispielcode, SDK- und API-Dokumentationen, VBA
   
 - [InfoPath](infopath/infopath-home.md)
   
-- [Office VBA-Objektbibliothekreferenz](https://docs.microsoft.com/office/vba/api/overview/library-reference)
+- [Office VBA-Objektbibliotheksreferenz](https://docs.microsoft.com/office/vba/api/overview/library-reference)
   
-- [VBA-Sprachreferenz für Office](https://docs.microsoft.com/office/vba/api/overview/language-reference)
+- [Office VBA-Sprachreferenz](https://docs.microsoft.com/office/vba/api/overview/language-reference)
   
 - [Freigegebenes Office](shared/office-shared.md)
   
