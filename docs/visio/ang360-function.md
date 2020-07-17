@@ -8,21 +8,21 @@ f1_keywords:
 - Vis_DSS.chm82251392
 localization_priority: Normal
 ms.assetid: 23e6899d-0a94-a7d8-8de2-091e0531f163
-description: Normalisiert den Range eines Winkels.
-ms.openlocfilehash: 017dd89bd3b814c10422cd32eea1ee7e343eaf50
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Normalisiert den Bereich eines Winkels.
+ms.openlocfilehash: 6916e50daad735843bf0a2a6361fb5b1b833e2ce
+ms.sourcegitcommit: 41f2ee16badd6009bab642d68a61eaaccb91c3ec
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33417196"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45160300"
 ---
 # <a name="ang360-function"></a>ANG360 Function
 
-Normalisiert den \<Range eines Winkels auf 0 = Ergebnis \< 2pi Bogenmaß (0 \<= Ergebnis \< 360 Grad).
+Normalisiert den Bereich eines Winkels auf 0 \< = Result \< 2pi Radiant (0 \< = Result \< 360 Degrees).
   
 ## <a name="syntax"></a>Syntax
 
-ANG360 (* * *Winkel* * *) 
+ANG360 (***Angle*** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -32,7 +32,7 @@ ANG360 (* * *Winkel* * *)
    
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn *Angle* nicht mithilfe von Winkeleinheiten angegeben wird, wird er als Bogenmaß interpretiert. Wenn *Angle* nicht in einen Wert konvertiert werden kann, wird ein #VALUE! zurückgegeben. 
+Wenn *Angle* nicht mit Winkeleinheiten angegeben wird, wird er als Bogenmaß interpretiert. Wenn *Angle* nicht in einen Wert konvertiert werden kann, wird ein #Value! zurückgegeben. 
   
 ## <a name="example-1"></a>Beispiel 1
 

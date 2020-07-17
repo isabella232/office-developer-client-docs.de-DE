@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 4d87313a-c09a-582c-04f4-d95800e3e9f2
 description: Gibt einen transformierten Winkel im übergeordneten Koordinatensystem des Ziel-Shapes zurück. Konvertiert einen Winkel aus lokalen Koordinaten in einem Quell-Shape in die übergeordneten Koordinaten eines Ziel-Shapes.
-ms.openlocfilehash: e411cbae21d832039e2fbda93393a8fe0bd1f9f8
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 0fed51e264bfb21da25d4e91f20f4bc0803e46e8
+ms.sourcegitcommit: 41f2ee16badd6009bab642d68a61eaaccb91c3ec
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404323"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45160258"
 ---
 # <a name="angletopar-function"></a>ANGLETOPAR Function
 
@@ -22,7 +22,7 @@ Gibt einen transformierten Winkel im übergeordneten Koordinatensystem des Ziel-
   
 ## <a name="syntax"></a>Syntax
 
-ANGLETOPAR (* * *srcAngle* * *, * * *srcRef* * *, * * *Zielbezug* * *) 
+ANGLETOPAR (***srcAngle***, ***srcRef***, ***Zielbezug*** ) 
   
 ### <a name="parameters"></a>Parameter
 

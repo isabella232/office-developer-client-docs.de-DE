@@ -8,21 +8,21 @@ f1_keywords:
 - Vis_DSS.chm82251486
 localization_priority: Normal
 ms.assetid: e83343c5-df5f-bf74-f854-6380176693a2
-description: Berechnet den Bereich eines Rechtecks, das mit x und y verknüpft ist, und gibt eine ganze Zahl zwischen 0 und 4 zurück, die den Sektor angibt.
-ms.openlocfilehash: fb7ed37ac498765e21c62d7180413cdbcb932502
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: Berechnet den Bereich eines mit x und y verknüpften Rechtecks und gibt eine ganze Zahl von 0 bis 4 zurück, die den Sektor angibt.
+ms.openlocfilehash: 442ec0d614589c709a097ba314abad044d470df6
+ms.sourcegitcommit: 41f2ee16badd6009bab642d68a61eaaccb91c3ec
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360030"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45160272"
 ---
 # <a name="rectsect-function"></a>RECTSECT Function
 
-Berechnet den Bereich eines Rechtecks, das mit *x* und *y* verknüpft ist, und gibt eine ganze Zahl zwischen 0 und 4 zurück, die den Sektor angibt. 
+Berechnet den Bereich eines mit *x* und *y* verknüpften Rechtecks und gibt eine ganze Zahl von 0 bis 4 zurück, die den Sektor angibt. 
   
 ## <a name="syntax"></a>Syntax
 
-RECTSECT (* * *Breite* * *, * * *Höhe* * *, * * *x* * *, * * *y* * *, * * *Option* * *) 
+RECTSECT (***Breite***, ***Höhe***, ***x***, ***y***, ***Option*** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -36,9 +36,9 @@ RECTSECT (* * *Breite* * *, * * *Höhe* * *, * * *x* * *, * * *y* * *, * * *Opti
    
 ## <a name="remarks"></a>Bemerkungen
 
-Betrachten Sie ein Rechteck mit einer *Breite* und einer *Höhe* und einen Punkt (*x, y*) vom Mittelpunkt des Rechtecks. Zeichnen Sie diagonale Linien durch die Ecken des Rechtecks, um Sie in vier Sektoren und einen Mittelpunkt zu teilen. Die Sektoren 0 bis 4 stellen den Mittelpunkt, rechts, oben, Links und unten dar. 
+Stellen Sie sich ein Rechteck mit einer *Breite* und einer *Höhe* sowie einen Punkt (*x, y*) vom Mittelpunkt des Rechtecks vor. Zeichnen Sie diagonale Linien durch die Ecken des Rechtecks, um Sie in vier Sektoren und einen Mittelpunkt zu unterteilen. Die Sektoren 0 bis 4 stellen den Mittelpunkt, den rechten, oberen, linken und unteren Teil dar. 
   
-![Sektoren 0 bis 4 stellen den Mittelpunkt, rechts, oben, Links und unten dar.](media/ShpSheetRef_CA_03_ZA07645862.gif)
+![Die Sektoren 0 bis 4 stellen den Mittelpunkt, den rechten, oberen, linken und unteren Bereich dar.](media/ShpSheetRef_CA_03_ZA07645862.gif)
   
 ## <a name="example"></a>Beispiel
 
