@@ -8,21 +8,21 @@ f1_keywords:
 - Vis_DSS.chm82251395
 localization_priority: Normal
 ms.assetid: 7d917be4-65b1-002f-48cc-6d81916a1157
-description: Gibt den arcsine einer Zahl zurück, beispielsweise den Winkel, dessen Sinus Nummer ist.
-ms.openlocfilehash: a7585dc07053466203f11cc04ce249ceb62fbda0
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Gibt den Arkussinus einer Zahl zurück, beispielsweise den Winkel, dessen Sinus Zahl ist.
+ms.openlocfilehash: e66ed9ab3d01ac79bceb18f5c793afc928e5e4b4
+ms.sourcegitcommit: 939bd9686ba41a8f94b82e004ed84b9054d9c7cf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33432821"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48293506"
 ---
 # <a name="asin-function"></a>ASIN Function
 
-Gibt den arcsine einer Zahl zurück, beispielsweise den Winkel, dessen Sinus *Nummer* ist. 
+Gibt den Arkussinus einer Zahl zurück, beispielsweise den Winkel, dessen Sinus  *Zahl*  ist. 
   
 ## <a name="syntax"></a>Syntax
 
-Arcs (* * *Number* * *) 
+Arcs (***Zahl*** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -32,11 +32,11 @@ Arcs (* * *Number* * *)
    
 ## <a name="remarks"></a>Bemerkungen
 
-Der Eingabewert muss im Range-1 < = *Number* < = 1 oder ein #NUM! zurückgegeben. Der resultierende Winkel befindet sich im Range-PI/2 < ** = Angle _LT_ = Pi/2 Radiant (-90 < = *winkel* < = 90 Grad). 
+Der Eingabewert muss im Bereich von-1 <=  *Number*  <= 1 oder #num! zurückgegeben. Der resultierende Winkel liegt im Bereich-Pi/2 <=  *Winkel*  <= Pi/2 Bogenmaß (-90 <=  *Winkel*  <= 90 Grad). 
   
 ## <a name="example"></a>Beispiel
 
-ARCS (1)
+Arcs (1)
   
 Gibt 90 deg zurück.
   
