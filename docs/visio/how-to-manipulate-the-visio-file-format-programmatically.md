@@ -7,12 +7,12 @@ ms.topic: overview
 ms.assetid: 5f5e2288-7539-41b8-916d-410be028ed9b
 description: Erstellen Sie eine Lösung in Visual Studio 2012 zum Lesen des neuen Dateiformatpakets in Visio 2013, zum Auswählen von Paketteilen, Ändern von Daten in Paketteilen und Hinzufügen von Paketteilen.
 localization_priority: Priority
-ms.openlocfilehash: 3998c0d4b97439571bd93293f5f49659580f09de
-ms.sourcegitcommit: 007aa2ceb4f569201c3f4372de5c83b6c61f8875
+ms.openlocfilehash: 7103e094f58ee26ea2335d6cccd822dced1e1375
+ms.sourcegitcommit: 939bd9686ba41a8f94b82e004ed84b9054d9c7cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43102905"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48293513"
 ---
 # <a name="manipulate-the-visio-file-format-programmatically"></a>Programmgesteuertes Bearbeiten des Visio-Dateiformats
 
@@ -303,7 +303,7 @@ Die Konsolenanwendung erstellt eine Ausgabe, die der folgenden ähnlich ist (ein
   
 In den meisten Fällen müssen Sie einen **PackagePart** auswählen, ohne alle anderen zu durchlaufen. Sie erhalten ein **PackagePart**-Objekt aus einem **Package**, indem Sie seine Beziehung zum **Package** oder einem anderen **PackagePart** verwenden. Eine Beziehung im Visio 2013-Dateiformat ist eine diskrete Einheit, die beschreibt, wie ein Dokumentteil mit dem Dateipaket verknüpft ist oder wie die beiden Dokumentteile miteinander verknüpft sind. Das Visio 2013-Dateipaket selbst hat beispielsweise eine Beziehung zu seinem Visio-Dokumentteil, und das Visio-Dokumentteil hat eine Beziehung zu dem Windows-Teil. Diese Beziehungen werden als Instanzen der [PackageRelationship](https://docs.microsoft.com/dotnet/api/system.io.packaging.packagerelationship?view=netframework-4.8)- oder [PackageRelationshipCollection](https://docs.microsoft.com/dotnet/api/system.io.packaging.packagerelationshipcollection?view=netframework-4.8)-Klasse dargestellt. 
 
-Die **Package**-Klasse macht mehrere Methoden zum Abrufen der in ihr enthaltenen **PackageRelationship**- oder **PackageRelationshipCollection**-Objekte verfügbar. Sie können die [GetRelationshipsByType(String)](https://msdn.microsoft.com/library/System.IO.Packaging.Package.GetRelationshipsByType.aspx)-Methode verwenden, um ein **PackageRelationshipCollection**-Objekt zu instanziieren, das **PackageRelationship**-Objekte eines einzigen bestimmten Typs enthält. Natürlich ist es für die Verwendung der **Package.GetRelationshipsByType**-Methode erforderlich, dass Sie den benötigten Beziehungstyp kennen. Beziehungstypen sind Zeichenfolgen im XML-Namespaceformat. Beispielsweise ist der Beziehungstyp des Visio-Dokumentteils https://schemas.microsoft.com/visio/2010/relationships/document. 
+Die **Package**-Klasse macht mehrere Methoden zum Abrufen der in ihr enthaltenen **PackageRelationship**- oder **PackageRelationshipCollection**-Objekte verfügbar. Sie können die [GetRelationshipsByType(String)](https://msdn.microsoft.com/library/System.IO.Packaging.Package.GetRelationshipsByType.aspx)-Methode verwenden, um ein **PackageRelationshipCollection**-Objekt zu instanziieren, das **PackageRelationship**-Objekte eines einzigen bestimmten Typs enthält. Natürlich ist es für die Verwendung der **Package.GetRelationshipsByType**-Methode erforderlich, dass Sie den benötigten Beziehungstyp kennen. Beziehungstypen sind Zeichenfolgen im XML-Namespaceformat. Beispielsweise ist der Beziehungstyp des Visio-Dokumentteils http://schemas.microsoft.com/visio/2010/relationships/document. 
   
 Sobald Sie die Beziehung eines **PackagePart** zum **Package** oder zu einem anderen **PackagePart** kennen (d. h., Sie haben ein **PackageRelationship**-Objekt, das auf den gewünschten **PackagePart** verweist), können Sie diese Beziehung verwenden, um den URI dieses **PackagePart** abzurufen. Sie übergeben dann den URI an die **Package.GetPart**-Methode, um den **PackagePart** zurückzugeben.
   
@@ -366,14 +366,14 @@ Gehen Sie folgendermaßen vor, um einen **PackagePart** (das Visio-Dokumentteil)
     ```cs
     // Get a reference to the Visio Document part contained in the file package.
     PackagePart documentPart = GetPackagePart(visioPackage, 
-        "https://schemas.microsoft.com/visio/2010/relationships/document");
+        "http://schemas.microsoft.com/visio/2010/relationships/document");
     
     ```
 
     ```vb
     ' Get a reference to the Visio Document part contained in the file package.
     Dim documentPart As PackagePart = GetPackagePart(visioPackage, _
-        "https://schemas.microsoft.com/visio/2010/relationships/document")
+        "http://schemas.microsoft.com/visio/2010/relationships/document")
     
     ```
 
@@ -438,9 +438,9 @@ Verwenden Sie den folgenden Code, um ein **PackagePart** aus dem **Package** mit
     // Get a reference to the collection of pages in the document, 
     // and then to the first page in the document.
     PackagePart pagesPart = GetPackagePart(visioPackage, documentPart, 
-        "https://schemas.microsoft.com/visio/2010/relationships/pages");
+        "http://schemas.microsoft.com/visio/2010/relationships/pages");
     PackagePart pagePart = GetPackagePart(visioPackage, pagesPart, 
-        "https://schemas.microsoft.com/visio/2010/relationships/page");
+        "http://schemas.microsoft.com/visio/2010/relationships/page");
     
     ```
 
@@ -448,9 +448,9 @@ Verwenden Sie den folgenden Code, um ein **PackagePart** aus dem **Package** mit
     ' Get a reference to the collection of pages in the document,
     ' and then to the first page in the document.
     Dim pagesPart As PackagePart = GetPackagePart(visioPackage, documentPart, _
-        "https://schemas.microsoft.com/visio/2010/relationships/pages") 
+        "http://schemas.microsoft.com/visio/2010/relationships/pages") 
     Dim pagePart As PackagePart = GetPackagePart(visioPackage, pagesPart, _
-        "https://schemas.microsoft.com/visio/2010/relationships/page") 
+        "http://schemas.microsoft.com/visio/2010/relationships/page") 
     ```
 
 Bevor Sie Änderungen an dem XML-Code vornehmen können, der in einem Dokumentteil enthalten ist, müssen Sie zuerst das XML-Dokument in ein Objekt laden, mit dem Sie mithilfe der [XDocument](https://msdn.microsoft.com/library/System.Xml.Linq.XDocument.aspx)-Klasse oder der [XmlDocument](https://msdn.microsoft.com/library/System.Xml.XmlDocument.aspx)-Klasse den XML-Code lesen können. Beide Klassen machen Methoden für Aufgaben verfügbar, z. B. das Auswählen von XML-Elementen, die in XML-Dokumenten enthalten sind, das Erstellen, Lesen und Schreiben von Attributen sowie das Einfügen neuer XML-Elemente in ein Dokument. 
@@ -771,7 +771,7 @@ Verwenden Sie den folgenden Code, um den Wert der **PinY**-Zelle des Anfangs-/En
         // Get the Custom File Properties part from the package and
         // and then extract the XML from it.
         PackagePart customPart = GetPackagePart(filePackage, 
-            "https://schemas.openxmlformats.org/officeDocument/2006/relationships/" + 
+            "http://schemas.openxmlformats.org/officeDocument/2006/relationships/" + 
             "custom-properties");
         XDocument customPartXML = GetXMLFromPart(customPart);
         // Check to see whether document recalculation has already been 
@@ -810,7 +810,7 @@ Verwenden Sie den folgenden Code, um den Wert der **PinY**-Zelle des Anfangs-/En
             ' Get the Custom File Properties part from the package and
             ' then extract the XML from it.
             Dim customPart As PackagePart = GetPackagePart(filePackage, _
-                "https://schemas.openxmlformats.org/officeDocument/2006/" + _
+                "http://schemas.openxmlformats.org/officeDocument/2006/" + _
                 "relationships/custom-properties")
             Dim customPartXML As XDocument = GetXMLFromPart(customPart)
             ' Check to see whether document recalculation has already been
@@ -1006,7 +1006,7 @@ Gehen Sie folgendermaßen vor, um ein neues Menübanderweiterungsteil in der Vis
         // This code adds a new CUSTOM tab to the ribbon for this
         // document. The tab has one group that contains one button.
         XNamespace customUINS = 
-            "https://schemas.microsoft.com/office/2006/01/customui";
+            "http://schemas.microsoft.com/office/2006/01/customui";
         XDocument customUIXDoc = new XDocument(
             new XDeclaration("1.0", "utf-8", "true"),
             new XElement(customUINS + "customUI",
@@ -1040,7 +1040,7 @@ Gehen Sie folgendermaßen vor, um ein neues Menübanderweiterungsteil in der Vis
         ' This code adds a new CUSTOM tab to the ribbon for this
         ' document. The tab has one group that contains one button.
         Dim customUINS As XNamespace = _
-            "https://schemas.microsoft.com/office/2006/01/customui"
+            "http://schemas.microsoft.com/office/2006/01/customui"
         Dim customUIXML = New XDocument( _
             New XDeclaration("1.0", "utf-8", "true"), _
             New XElement(customUINS + "customUI", _
@@ -1132,7 +1132,7 @@ Gehen Sie folgendermaßen vor, um ein neues Menübanderweiterungsteil in der Vis
     CreateNewPackagePart(visioPackage, customUIXML, 
         new Uri("/customUI/customUI1.xml", UriKind.Relative),
         "application/xml",
-        "https://schemas.microsoft.com/office/2006/relationships/ui/extensibility");
+        "http://schemas.microsoft.com/office/2006/relationships/ui/extensibility");
     ```
 
     ```vb
@@ -1141,7 +1141,7 @@ Gehen Sie folgendermaßen vor, um ein neues Menübanderweiterungsteil in der Vis
     CreateNewPackagePart(visioPackage, customUIXML, _
         New Uri("/customUI/customUI1.xml", UriKind.Relative), _
         "application/xml", _
-        "https://schemas.microsoft.com/office/2006/relationships/ui/extensibility")
+        "http://schemas.microsoft.com/office/2006/relationships/ui/extensibility")
     ```
 
 4. Drücken Sie F5 zum Debuggen der Lösung. Wenn das Programm die Ausführung abgeschlossen hat, drücken Sie eine beliebige Taste, um es zu verlassen.
@@ -1158,7 +1158,7 @@ Der von der `CreateCustomUI`-Methode erstellte XML-Code sieht wie folgt aus.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<customUI xmlns="https://schemas.microsoft.com/office/2006/01/customui">
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui">
   <ribbon>
     <tabs>
       <tab id="customTab" label="CUSTOM">
