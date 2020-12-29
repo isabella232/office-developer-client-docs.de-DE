@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: d4f380fa-2ed9-4c7c-9ef3-b32f8409f657
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 8b5c5fee71db0fc7bdd6e01c58e9c9a9c3d9fa22
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: aadfba3e2674c35019a2e5f3eb374fbed1ad2a75
+ms.sourcegitcommit: 0419850d5c1b3439d9da59070201fb4952ca5d07
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32318081"
+ms.lasthandoff: 12/28/2020
+ms.locfileid: "49734224"
 ---
 # <a name="autocomplete-stream"></a>Stream für automatisches Vervollständigen
 
@@ -79,13 +79,13 @@ Das allgemeine Layout des Streams für automatisches Vervollständigen lautet wi
   
 |**Wertdaten**|**Anzahl der Bytes**|
 |:-----|:-----|
-|Metadata  <br/> |4  <br/> |
-|Nummer der Hauptversion  <br/> |4  <br/> |
-|Nummer der Nebenversion  <br/> |4  <br/> |
+|Metadaten  <br/> |4   <br/> |
+|Nummer der Hauptversion  <br/> |4   <br/> |
+|Nummer der Nebenversion  <br/> |4   <br/> |
 |Zeilensatz  <br/> |Variable  <br/> |
-|Zusätzliche Informationen Byteanzahl EI  <br/> |4  <br/> |
+|Zusätzliche Informationen Byteanzahl EI  <br/> |4   <br/> |
 |Weitere Informationen  <br/> |EI  <br/> |
-|Metadaten  <br/> |8  <br/> |
+|Metadaten  <br/> |8   <br/> |
    
 Wenn die Hauptversion nicht 12, sollte dieser Datenstrom nicht gelesen oder geschrieben werden. Die aktuelle Nebenversion des Streams für automatisches Vervollständigen ist 0, d. h. die Bytes für die zusätzlichen Informationen sind auf "0" festgelegt. Wenn die Nebenversion nicht 0 ist, befinden sich Informationen in den zusätzlichen Informationen, die beim Lesen des Streams gelesen und beim Schreiben des Streams beibehalten werden müssen. Die Nebenversion muss auch beim Schreiben des Streams beibehalten werden. Wenn beide nicht beibehalten werden, verlieren Instanzen von Outlook, die die zusätzlichen Informationen schreiben, Daten. 
   
@@ -98,7 +98,7 @@ Das Zeilensatz-Layout lautet wie folgt:
   
 |**Wertdaten**|**Anzahl der Bytes**|
 |:-----|:-----|
-|Anzahl der Zeilen  <br/> |4  <br/> |
+|Anzahl der Zeilen  <br/> |4   <br/> |
 |Zeilen  <br/> |Variable  <br/> |
    
 Die Anzahl der Zeilen gibt an, wie viele Zeilen im nächsten Teil der binären Datenstromsequenz enthalten sind.
@@ -109,7 +109,7 @@ Jede Zeile besitzt das folgende Format:
   
 |**Wertdaten**|**Anzahl der Bytes**|
 |:-----|:-----|
-|Anzahl der Eigenschaften  <br/> |4  <br/> |
+|Anzahl der Eigenschaften  <br/> |4   <br/> |
 |Eigenschaften  <br/> |Variable  <br/> |
    
 Die Anzahl der Eigenschaften gibt an, wie viele Eigenschaften im nächsten Teil der binären Datenstromsequenz enthalten sind.
@@ -120,8 +120,8 @@ Jede Eigenschaft besitzt das folgende Format:
   
 |**Wertdaten**|**Anzahl der Bytes**|
 |:-----|:-----|
-|Tag der Eigenschaft  <br/> |4  <br/> |
-|Reservierte Daten  <br/> |4  <br/> |
+|Tag der Eigenschaft  <br/> |4   <br/> |
+|Reservierte Daten  <br/> |4   <br/> |
 |Eigenschaftswertvereinigung  <br/> ||
 |Wertdaten  <br/> |0 oder Variable (abhängig vom Tag der Eigenschaft)  <br/> |
    
@@ -137,6 +137,7 @@ Einige Eigenschaften besitzen keine Wertdaten und verfügen nur in der Vereinigu
 |:-----|:-----|
 |PT_I2  <br/> |short int  <br/> |
 |PT_LONG  <br/> |long  <br/> |
+|PT_ERROR  <br/> |long  <br/> |
 |PT_R4  <br/> |float  <br/> |
 |PT_DOUBLE  <br/> |double  <br/> |
 |PT_BOOLEAN  <br/> |short int  <br/> |
@@ -151,49 +152,42 @@ PT_STRING8
   
 |**Wertdaten**|**Anzahl der Bytes**|
 |:-----|:-----|
-|Anzahl der Bytes n  <br/> |4  <br/> |
+|Anzahl der Bytes n  <br/> |4   <br/> |
 |Bytes werden als ANSI-Zeichenfolge interpretiert (beinhaltet NULL-Abschlusszeichen)  <br/> |n  <br/> |
    
 PT_CLSID
   
 |**Wertdaten**|**Anzahl der Bytes**|
 |:-----|:-----|
-|Bytes, die als GUID interpretiert werden  <br/> |16  <br/> |
+|Bytes, die als GUID interpretiert werden  <br/> |16   <br/> |
 |||
    
 PT_BINARY 
   
 |**Wertdaten**|**Anzahl der Bytes**|
 |:-----|:-----|
-|Anzahl der Bytes n  <br/> |4  <br/> |
-|Bytes, die als Byte-Array interpretiert werden  <br/> |n  <br/> |
-   
-PT_ERROR
-  
-|**Wertdaten**|**Anzahl der Bytes**|
-|:-----|:-----|
-|Anzahl der Bytes n  <br/> |4  <br/> |
+|Anzahl der Bytes n  <br/> |4   <br/> |
 |Bytes, die als Byte-Array interpretiert werden  <br/> |n  <br/> |
    
 PT_MV_BINARY
   
 |**Wertdaten**|**Anzahl der Bytes**|
 |:-----|:-----|
-|Anzahl der binären Arrays X  <br/> |4  <br/> |
+|Anzahl der binären Arrays X  <br/> |4   <br/> |
 |Eine Ausführung von Bytes, die X binäre Arrays enthält. Jedes Array sollten exakt wie die PT_BINARY-Byte-Ausführung interpretiert werden.  <br/> |Variable  <br/> |
    
 PT_MV_STRING8 (Outlook 2007, Outlook 2010, and Outlook 2013)
   
 |**Wertdaten**|**Anzahl der Bytes**|
 |:-----|:-----|
-|Anzahl der ANSI-Zeichenfolgen X  <br/> |4  <br/> |
+|Anzahl der ANSI-Zeichenfolgen X  <br/> |4   <br/> |
 |Eine Ausführung von Bytes, die X ANSI-Zeichenfolgen enthält. Jede Zeichenfolge sollte exakt wie die PT_STRING8-Byte-Ausführung interpretiert werden.  <br/> |Variable  <br/> |
    
 PT_MV_UNICODE (Outlook 2007, Outlook 2010, Outlook 2013)
   
 |**Wertdaten**|**Anzahl der Bytes**|
 |:-----|:-----|
-|Anzahl der Unicode-Zeichenfolgen X  <br/> |4  <br/> |
+|Anzahl der Unicode-Zeichenfolgen X  <br/> |4   <br/> |
 |Eine Ausführung von Bytes, die X UNICODE-Zeichenfolgen enthält. Jede Zeichenfolge sollte exakt wie die PT_UNICODE-Byte-Ausführung interpretiert werden.  <br/> |Variable  <br/> |
    
 ## <a name="significant-properties"></a>Wesentliche Eigenschaften

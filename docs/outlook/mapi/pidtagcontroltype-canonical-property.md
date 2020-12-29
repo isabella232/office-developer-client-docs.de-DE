@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagcontroltype (-Eigenschaft
+title: Kanonische pidtagcontroltype (-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -12,20 +12,20 @@ api_type:
 - HeaderDef
 ms.assetid: 7728fa2f-4a59-4e86-90f1-4384824598aa
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 8614441ffa60181366c860b66ef4618ce32106be
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 7bdb02f72ba14a36c8a4c218cd5f0631e7145e6a
+ms.sourcegitcommit: 0419850d5c1b3439d9da59070201fb4952ca5d07
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33413479"
+ms.lasthandoff: 12/28/2020
+ms.locfileid: "49734203"
 ---
-# <a name="pidtagcontroltype-canonical-property"></a>Kanonische Pidtagcontroltype (-Eigenschaft
+# <a name="pidtagcontroltype-canonical-property"></a>Kanonische pidtagcontroltype (-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält einen Wert, der einen Steuerelementtyp für ein Steuerelement angibt, das in einem Dialogfeldverwendet wird. 
+Enthält einen Wert, der einen Steuerelementtyp für ein in einem Dialogfeld verwendetes Steuerelement angibt. 
   
 |||
 |:-----|:-----|
@@ -36,55 +36,55 @@ Enthält einen Wert, der einen Steuerelementtyp für ein Steuerelement angibt, d
    
 ## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft kann genau einen der folgenden Werte haben:
+Diese Eigenschaft kann genau einen der folgenden Werte aufweisen:
+    
+DTCT_LABEL (0x00000000)
   
-DTCT_BUTTON 
+> Eine Dialogfeld Bezeichnung.
+   
+DTCT_EDIT (0x00000001)
+  
+> Ein Dialogfeld Bearbeitungstextfeld.
+
+DTCT_LBX (0x00000002)
+  
+> Dialog-Listenfeld.
+    
+DTCT_COMBOBOX (0x00000003)
+  
+> Ein Dialogfeld-Kombinationsfeld.
+
+DTCT_DDLBX (0x00000004)
+  
+> Ein Dropdown-Listenfeld für Dialogfelder.
+
+DTCT_CHECKBOX (0x00000005)
+  
+> Ein Kontrollkästchen für ein Dialogfeld.
+
+DTCT_GROUPBOX (0x00000006)
+  
+> Dialoggruppen Feld.
+  
+DTCT_BUTTON (0x00000007)
   
 > Ein Dialogfeld-Steuerelement.
     
-DTCT_CHECKBOX 
+DTCT_PAGE (0x00000008)
   
-> Ein Dialogfeld.
+> Seite mit Registerkarten im Dialogfeld.
     
-DTCT_COMBOBOX 
+DTCT_RADIOBUTTON (0x00000009)
   
-> Dialogfeld.
+> Optionsfeld "Dialog".
     
-DTCT_DDLBX 
-  
-> Ein Dropdown-Listenfeld für Dialogfelder.
-    
-DTCT_EDIT 
-  
-> Ein Textfeld zum Bearbeiten von Dialogfeldern.
-    
-DTCT_GROUPBOX 
-  
-> Dialogfeld.
-    
-DTCT_LABEL 
-  
-> Eine Dialogfeld Bezeichnung.
-    
-DTCT_LBX 
-  
-> Dialog Listenfeld.
-    
-DTCT_LISTBOX 
-  
-> Dialog Listenfeld.
-    
-DTCT_MVDDLBX 
+DTCT_MVLISTBOX (0x0000000B)
   
 > Ein mehrwertiges Listenfeld, das von einer mehrwertigen Eigenschaft vom Typ String aufgefüllt wird.
     
-DTCT_PAGE 
+DTCT_MVDDLBX (0x0000000C)
   
-> Ein Dialogfeld mit Registerkarten.
-    
-DTCT_RADIOBUTTON 
-  
-> Ein Dialogfeld.
+> Ein mehrwertiges Dropdown-Listenfeld, das von einer mehrwertigen Eigenschaft vom Typ String aufgefüllt wird.
     
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -92,11 +92,11 @@ DTCT_RADIOBUTTON
 
 Mapidefs. h
   
-> Stellt Datentypdefinitionen bereit.
+> Stellt Definitionen von Datentypen bereit.
     
 mapitags. h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet werden.
     
 ## <a name="see-also"></a>Siehe auch
 
