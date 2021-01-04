@@ -6,12 +6,12 @@ ms.audience: Developer
 ms.assetid: beba316b-1dfe-4e1b-adae-42418906c177
 description: In diesem Artikel wird beschrieben, wie Sie eine Clientanwendung für Sofortnachrichten konfigurieren, sodass Features für soziale Netzwerke in Office 2013 und höher integriert sind, beispielsweise Anzeigen von Anwesenheitsinformationen und Senden von Sofortnachrichten von der Visitenkarte aus.
 localization_priority: Priority
-ms.openlocfilehash: c0094b880bae5cac2cef4236d3ff3edcefd21678
-ms.sourcegitcommit: 37080eb0087261320e24e6f067e5f434a812b2d2
+ms.openlocfilehash: 3494d42af82c174469272928286c3fc5f847eebc
+ms.sourcegitcommit: 0419850d5c1b3439d9da59070201fb4952ca5d07
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39819294"
+ms.lasthandoff: 12/28/2020
+ms.locfileid: "49734231"
 ---
 # <a name="integrating-im-applications-with-office"></a>Integrieren von Chatanwendungen in Office
 
@@ -164,7 +164,7 @@ Die Office-Anwendung ruft mithilfe der folgenden Schritte die Anwesenheitsinform
     
 2. Anschließend abonniert die Office-Anwendung Änderungen des Anwesenheitsstatus des Kontakts. Sie ruft **IContactManager.CreateSubscription** auf, um ein [IContactSubscription](integrating-im-applications-with-office.md#off15_IMIntegration_ImplementRequired_IContactSubscription)-Objekt abzurufen. Als nächstes ruft sie **IContactSubscription.AddContact** zum Hinzufügen des Kontakts zum Abonnement auf und ruft dann **IContactSubscription.Subscribe** auf, um Statusänderungen des Kontakts abzurufen. 
     
-3. Wenn die Chatanwendung **IContact2** unterstützt, versucht Office Anwesenheitsinformationen durch Aufrufen von **IContact2.BatchGetContactInformation2**abzurufen.
+3. Wenn die Chatanwendung **IContact2** unterstützt, versucht Office Anwesenheitsinformationen durch Aufrufen von **IContact2.BatchGetContactInformation2** abzurufen.
     
 4. Anschließend ruft die Office-Anwendung die Anwesenheitseigenschaften des Kontakts durch Aufrufen von **IContact.BatchGetContactInformation** ab. Die Office-Anwendung kann einen zweiten Satz Anwesenheitseigenschaften durch Zugriff auf die **IContact.Settings**-Eigenschaft abrufen. 
     
@@ -309,6 +309,10 @@ Die **GetSupportedFeatures**-Methode gibt Informationen zu den Chatfunktionen zu
 > - **oiFeaturePictures** (2) 
 > - **oiFeatureFreeBusyIntegration**
 > - **oiFeaturePhoneNormalization**
+>
+>  Office 365-Anwendungen (Version 2011 und höher) ignorieren die folgenden Konstanten in der **OIFeature**-Enumeration: 
+> - **oiFeaturePictures** (2) 
+> - **oiFeaturePhoneNormalization**
   
 Verwenden Sie das folgende Codebeispiel zum Implementieren der **GetSupportFeatures**-Methode innerhalb des Codes der Clientanwendung für Chatnachrichten. 
   
@@ -336,7 +340,7 @@ In Tabelle 3 werden die Elemente aufgeführt, die in der Klasse implementiert w
 > 
 > Weitere Informationen zu den **ILyncClient**- und **_ILyncClientEvents**-Schnittstellen und den dazugehörigen Elementen finden Sie unter [UCCollaborationLib.ILyncClient](https://msdn.microsoft.com/library/UCCollaborationLib.ILyncClient) und [UCCollaborationLib._ILyncClientEvents](https://msdn.microsoft.com/library/UCCollaborationLib._ILyncClientEvents). 
   
-**Tabelle 3. Implementierung von ILyncClient- und ILyncClientEvents-Schnittstellen **
+**Tabelle 3. Implementierung von ILyncClient- und ILyncClientEvents-Schnittstellen**
 
 |**Schnittstelle**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
@@ -710,7 +714,7 @@ In Tabelle 5 werden die Elemente aufgeführt, die in der Klasse implementiert we
 |**Settings**-Eigenschaft  <br/> |Ruft eine Sammlung von Kontakteigenschaften ab.  <br/> |
 |**CustomGroups**-Eigenschaft  <br/> |Ruft eine Sammlung von Gruppen auf, bei denen der Kontakt Mitglied ist.  <br/> |
    
-Während des Initialisierungsprozesses ruft die Office-Anwendung die **IContact.CanStart**-Methode auf, um die Chatfunktionen für den lokalen Benutzer zu ermitteln. Die **CanStart**-Methode verwendet eine Kennzeichnung aus der[UCCollaborationLib.ModalityTypes](https://msdn.microsoft.com/library/UCCollaborationLib.ModalityTypes)-Enumeration als Argument für den  __modalityTypes_-Parameter. Wenn der aktuelle Benutzer in der angeforderten Modalität einbezogen werden kann (d. h. der Benutzer verfügt über Chatfunktionen, Funktionen für Audio- und Videoanrufe oder Anwendungsfreigebe), gibt die **CanStart**-Methode **true** zurück.
+Während des Initialisierungsprozesses ruft die Office-Anwendung die **IContact.CanStart**-Methode auf, um die Chatfunktionen für den lokalen Benutzer zu ermitteln. Die **CanStart**-Methode verwendet eine Kennzeichnung aus der [UCCollaborationLib.ModalityTypes](https://msdn.microsoft.com/library/UCCollaborationLib.ModalityTypes)-Enumeration als Argument für den  _ _modalityTypes_-Parameter. Wenn der aktuelle Benutzer in der angeforderten Modalität einbezogen werden kann (d. h. der Benutzer verfügt über Chatfunktionen, Funktionen für Audio- und Videoanrufe oder Anwendungsfreigebe), gibt die **CanStart**-Methode **true** zurück.
   
 ```cs
 public bool CanStart(ModalityTypes _modalityTypes)
@@ -734,7 +738,7 @@ public bool CanStart(ModalityTypes _modalityTypes)
 
 ```
 
-Die **GetContactInformation**-Methode ruft Informationen über den Kontakt aus dem **IContact**-Objekt ab. Der aufgerufene Code muss einen Wert aus der [UCCollaborationLib.ContactInformationType](https://msdn.microsoft.com/library/UCCollaborationLib.ContactInformationType)-Enumeration für den  __contactInformationType_-Parameter übergeben, der die abzurufenden Daten angibt. 
+Die **GetContactInformation**-Methode ruft Informationen über den Kontakt aus dem **IContact**-Objekt ab. Der aufgerufene Code muss einen Wert aus der [UCCollaborationLib.ContactInformationType](https://msdn.microsoft.com/library/UCCollaborationLib.ContactInformationType)-Enumeration für den  _ _contactInformationType_-Parameter übergeben, der die abzurufenden Daten angibt. 
   
 ```cs
 public object GetContactInformation(
@@ -765,7 +769,7 @@ public object GetContactInformation(
 }
 ```
 
-Ähnlich wie **GetContactInformation**ruft die **BatchGetContactInformation**-Methode mehrere Anwesenheitselemente des Kontakts aus dem **IContact**-Objekt ab. Der aufgerufene Code muss ein Array von Werten aus der **ContactInformationType**-Enumeration für den  __contactInformationTypes_-Parameter übergeben. Die Methode gibt ein [UCCollaborationLib.IContactInformationDictionary](https://msdn.microsoft.com/library/UCCollaborationLib.IContactInformationDictionary)-Objekt mit den angeforderten Daten zurück. 
+Ähnlich wie **GetContactInformation** ruft die **BatchGetContactInformation**-Methode mehrere Anwesenheitselemente des Kontakts aus dem **IContact**-Objekt ab. Der aufgerufene Code muss ein Array von Werten aus der **ContactInformationType**-Enumeration für den  _ _contactInformationTypes_-Parameter übergeben. Die Methode gibt ein [UCCollaborationLib.IContactInformationDictionary](https://msdn.microsoft.com/library/UCCollaborationLib.IContactInformationDictionary)-Objekt mit den angeforderten Daten zurück. 
   
 ```cs
 public IMClientContactInformationDictionary BatchGetContactInformation(
@@ -883,7 +887,7 @@ In Tabelle 7 werden die Elemente aufgeführt, die in der Klasse implementiert we
 ||**OnGroupRemoved**-Ereignis  <br/> |Wird ausgelöst, wenn eine Gruppe aus einer Gruppensammlung entfernt wird. Die aktualisierte Gruppensammlung kann aus der **IContactManager.Groups**-Eigenschaft abgerufen werden.  <br/> |
 ||**OnSearchProviderStateChanged**-Ereignis  <br/> |Wird bei Statusänderung des Suchanbieters ausgelöst.  <br/> |
    
-Office ruft **IContactManager.GetContactByUri** zum Abrufen von Anwesenheitsinformationen eines Kontakts unter Verwendung der SIP-Adresse des Kontakts auf. Wenn ein Kontakt für eine SIP-Adresse in Active Directory konfiguriert ist, bestimmt Office diese Adresse für einen Kontakt und ruft **GetContactByUri** auf und übergibt die SIP-Adresse des Kontakts für den  __contactUri_-Parameter. 
+Office ruft **IContactManager.GetContactByUri** zum Abrufen von Anwesenheitsinformationen eines Kontakts unter Verwendung der SIP-Adresse des Kontakts auf. Wenn ein Kontakt für eine SIP-Adresse in Active Directory konfiguriert ist, bestimmt Office diese Adresse für einen Kontakt und ruft **GetContactByUri** auf und übergibt die SIP-Adresse des Kontakts für den  _ _contactUri_-Parameter. 
   
 Wenn Office die SIP-Adresse des Kontakts nicht bestimmen kann, ruft es die **IContactManager.Lookup**-Methode auf, um die SIP über den Chatdienst zu finden. In diesem Fall übergibt Office die besten verfügbaren Daten für den Kontakt (z. B. nur die E-Mail-Adresse für den Kontakt). Die **Lookup**-Methode gibt asynchron ein **AsynchronousOperation**-Objekt zurück. Beim Aufrufen des Rückrufs sollte die **Lookup**-Methode neben dem zurückgegebenen URI des Kontakts angeben, ob der Vorgang erfolgreich war oder dabei ein Fehler aufgetreten ist. 
   
@@ -958,7 +962,7 @@ In Tabelle 10 werden die Elemente aufgeführt, die in den Klassen implementiert 
 > [!NOTE]
 > Elemente der **IContactSubscription**-Schnittstelle, die nicht in der Tabelle aufgeführt sind, müssen zwar vorhanden sein, jedoch nicht implementiert werden. Members, die vorhanden sind, jedoch nicht implementiert werden, können einen **NotImplementedException** oder **E_NOTIMPL**-Fehler zurückgeben.
 >
-> Weitere Informationen zu der **IContactSubscription**Schnittstelle und den dazugehörigen Elementen finden Sie unter [UCCollaborationLib.IContactSubscription](https://msdn.microsoft.com/library/UCCollaborationLib.IContactSubscription). 
+> Weitere Informationen zu der **IContactSubscription** Schnittstelle und den dazugehörigen Elementen finden Sie unter [UCCollaborationLib.IContactSubscription](https://msdn.microsoft.com/library/UCCollaborationLib.IContactSubscription). 
   
 **Tabelle 10. Implementierung der IContactSubscription-Schnittstelle**
 
@@ -991,7 +995,7 @@ In Tabelle 11 werden die Elemente aufgeführt, die in den Klassen implementiert 
 > [!NOTE]
 > Elemente der **IContactEndPoint**-Schnittstelle, die nicht in der Tabelle aufgeführt sind, müssen zwar vorhanden sein, jedoch nicht implementiert werden. Members, die vorhanden sind, jedoch nicht implementiert werden, können einen **NotImplementedException** oder **E_NOTIMPL**-Fehler zurückgeben.
 >
-> Weitere Informationen zu der **IContactEndPoint**Schnittstelle und den dazugehörigen Elementen finden Sie unter [UCCollaborationLib.IContactEndpoint](https://msdn.microsoft.com/library/UCCollaborationLib.IContactEndpoint). 
+> Weitere Informationen zu der **IContactEndPoint** Schnittstelle und den dazugehörigen Elementen finden Sie unter [UCCollaborationLib.IContactEndpoint](https://msdn.microsoft.com/library/UCCollaborationLib.IContactEndpoint). 
   
 **Tabelle 11. Implementierung der IContactEndPoint-Schnittstelle**
 
