@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 8d2276ac-f9fa-946c-aabf-45a5c6f8e1d0
 description: Gibt die Anzahl der Member-Shapes im Listencontainer-Shape zurück.
-ms.openlocfilehash: ce1f7ab87abab6de9f5c88c05575a14ae93c45e7
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 21357b2e1bd960c0b30cb73b7c2c5f5323cb172e
+ms.sourcegitcommit: 66e74e39f44dca8c41f97f05528b8f9eb1aaed87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33414291"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52061258"
 ---
 # <a name="listmembercount-function"></a>LISTMEMBERCOUNT Function
 
@@ -25,7 +25,7 @@ Hinzugefügte Version: Visio 2010
   
 ## <a name="syntax"></a>Syntax
 
-LISTMEMBERCOUNT ()
+LISTMEMBERCOUNT()
   
 ### <a name="return-value"></a>Rückgabewert
 
@@ -33,6 +33,6 @@ Ganze Zahl
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn es sich bei dem Shape nicht um einen Listencontainer handelt, gibt die LISTMEMBERCOUNT-Funktion -1 zurück.
+Wenn es sich bei dem Shape nicht um einen Listencontainer handelt, gibt die LISTMEMBERCOUNT-Funktion 0 zurück.
   
 

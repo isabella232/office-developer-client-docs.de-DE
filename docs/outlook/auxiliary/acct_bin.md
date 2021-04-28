@@ -6,23 +6,23 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 5b57296c-61d7-e517-7ab7-44a9cc1f7ffc
-description: Eine Variable dieses Datentyps enthält einen Binärwert.
-ms.openlocfilehash: 3dcaaf73a04ddc608e68ca7bd1f801d0a5d99bb6
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Eine Variable dieses Datentyps enthält einen binären Wert.
+ms.openlocfilehash: 8299230a30b65ef8fb7856dc74618dd15ae218ac
+ms.sourcegitcommit: 66e74e39f44dca8c41f97f05528b8f9eb1aaed87
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33408124"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52061335"
 ---
-# <a name="acctbin"></a>ACCT_BIN
+# <a name="acct_bin"></a>ACCT_BIN
 
-Eine Variable dieses Datentyps enthält einen Binärwert.
+Eine Variable dieses Datentyps enthält einen binären Wert.
   
 ## <a name="quick-info"></a>QuickInfo
 
 ```cpp
 typedef struct { 
-    DWORDcb; 
+    DWORD cb; 
     BYTE * pb; 
 } ACCT_BIN; 
 
@@ -32,10 +32,10 @@ typedef struct {
 
 _cb_
   
-> Die Anzahl der Bytes, auf die _PB_ verweist. 
+> Die Anzahl der Bytes,  _auf die pb_ zeigt. 
     
 _pb_
   
-> Zeiger auf Binärinformationen.
+> Zeiger auf binäre Informationen.
     
 
