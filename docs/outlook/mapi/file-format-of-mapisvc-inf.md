@@ -8,12 +8,12 @@ api_type:
 ms.assetid: b48eda17-83a8-4dc4-85c8-4ca827d13d25
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 localization_priority: Priority
-ms.openlocfilehash: 934bb491c0521b1d76d5400aac4728fbd34ba625
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 8b7c02f2ac39875021cd183bbb1657514912fe8d
+ms.sourcegitcommit: 66e74e39f44dca8c41f97f05528b8f9eb1aaed87
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32334871"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52061342"
 ---
 # <a name="file-format-of-mapisvcinf"></a>Dateiformat von MapiSvc.inf
 
@@ -39,7 +39,7 @@ Die folgende Abbildung zeigt den Aufbau einer typischen MapiSvc.inf-Datei. Es gi
   
 **Organisation der Datei "MapiSvc.inf"**
   
-![Organisation der Datei "MapiSvc.inf"](media/amapi_30.gif "Organisation der Datei \"MapiSvc.inf\"")
+![Organisation der Datei "MapiSvc.inf"](media/amapi_30.gif "Organisation der Datei &quot;MapiSvc.inf&quot;")
   
 MAPI bietet eine strukturierte Version der MapiSvc.inf-Datei, die die Einträge für das MAPI-Teilsystem enthält. Jeder Nachrichtendienstimplementierer fügt Einträge hinzu, die sowohl für den Dienst als auch die Dienstanbieter, die dem Dienst angehören, maßgeblich sind. Einige Einträge sind erforderlich, während andere optional sind. MAPI erfordert z. B., dass Sie den Namen und Pfad jedes Dienstanbieters in Ihrem Nachrichtendienst angeben. Ohne diese Informationen können sie nicht geladen werden.
   
@@ -49,4 +49,7 @@ Wenn Ihr Nachrichtendienst ein Einzelanbieterdienst ist, speichern Sie alle Info
   
 Speichern Sie nur öffentliche Konfigurationsdaten in der MapiSvc.inf-Datei. Informationen, die privat sind oder zusätzlichen Schutz erfordern, wie z. B. Kennwörter oder andere Anmeldeinformationen, sollten in dieser Datei nicht enthalten sein. Speichern Sie entweder gar keine Informationen dieser Art oder bewahren Sie sie im Profil als sichere Eigenschaften auf. Sichere Eigenschaften verfügen über integrierte Schutzfunktionen wie Verschlüsselung.
   
+## <a name="reference"></a>Referenz
+
+Weitere Informationen zum Beheben von Fehlern, wenn MAPI eine Anbieter-DLL blockiert, finden Sie unter [So erlauben Sie MAPI, nicht registrierte Anbieter-DLLs zu laden](https://support.microsoft.com/topic/how-to-allow-mapi-to-load-unregistered-provider-dlls-18d9a1cd-d3d7-fa10-473e-5dfd62d38b0d).
 
