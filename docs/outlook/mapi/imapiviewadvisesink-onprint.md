@@ -19,13 +19,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33406171"
 ---
-# <a name="imapiviewadvisesinkonprint"></a><span data-ttu-id="da81a-103">IMAPIViewAdviseSink::OnPrint</span><span class="sxs-lookup"><span data-stu-id="da81a-103">IMAPIViewAdviseSink::OnPrint</span></span>
+# <a name="imapiviewadvisesinkonprint"></a><span data-ttu-id="349f0-103">IMAPIViewAdviseSink::OnPrint</span><span class="sxs-lookup"><span data-stu-id="349f0-103">IMAPIViewAdviseSink::OnPrint</span></span>
 
   
   
-<span data-ttu-id="da81a-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="da81a-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="349f0-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="349f0-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="da81a-105">Benachrichtigt den Formular Betrachter über den Druckstatus eines Formulars.</span><span class="sxs-lookup"><span data-stu-id="da81a-105">Notifies the form viewer of the printing status of a form.</span></span>
+<span data-ttu-id="349f0-105">Benachrichtigt die Formularanzeige über den Druckstatus eines Formulars.</span><span class="sxs-lookup"><span data-stu-id="349f0-105">Notifies the form viewer of the printing status of a form.</span></span>
   
 ```cpp
 HRESULT OnPrint(
@@ -34,51 +34,51 @@ HRESULT hrStatus
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="da81a-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="da81a-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="349f0-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="349f0-106">Parameters</span></span>
 
- <span data-ttu-id="da81a-107">_dwPageNumber_</span><span class="sxs-lookup"><span data-stu-id="da81a-107">_dwPageNumber_</span></span>
+ <span data-ttu-id="349f0-107">_dwPageNumber_</span><span class="sxs-lookup"><span data-stu-id="349f0-107">_dwPageNumber_</span></span>
   
-> <span data-ttu-id="da81a-108">in Die Nummer der letzten Seite, die gedruckt wurde.</span><span class="sxs-lookup"><span data-stu-id="da81a-108">[in] Number of the last page printed.</span></span>
+> <span data-ttu-id="349f0-108">[in] Die Nummer der letzten gedruckten Seite.</span><span class="sxs-lookup"><span data-stu-id="349f0-108">[in] Number of the last page printed.</span></span>
     
- <span data-ttu-id="da81a-109">_hrStatus_</span><span class="sxs-lookup"><span data-stu-id="da81a-109">_hrStatus_</span></span>
+ <span data-ttu-id="349f0-109">_hrStatus_</span><span class="sxs-lookup"><span data-stu-id="349f0-109">_hrStatus_</span></span>
   
-> <span data-ttu-id="da81a-110">in Ein HRESULT-Wert, der den Status des Druckauftrags angibt.</span><span class="sxs-lookup"><span data-stu-id="da81a-110">[in] An HRESULT value indicating the status of the print job.</span></span> <span data-ttu-id="da81a-111">Die folgenden Werte sind möglich:</span><span class="sxs-lookup"><span data-stu-id="da81a-111">Possible values are:</span></span>
+> <span data-ttu-id="349f0-110">[in] Ein HRESULT-Wert, der den Status des Druckauftrags angibt.</span><span class="sxs-lookup"><span data-stu-id="349f0-110">[in] An HRESULT value indicating the status of the print job.</span></span> <span data-ttu-id="349f0-111">Die folgenden Werte sind möglich:</span><span class="sxs-lookup"><span data-stu-id="349f0-111">Possible values are:</span></span>
     
-<span data-ttu-id="da81a-112">S_FALSE</span><span class="sxs-lookup"><span data-stu-id="da81a-112">S_FALSE</span></span> 
+<span data-ttu-id="349f0-112">S_FALSE</span><span class="sxs-lookup"><span data-stu-id="349f0-112">S_FALSE</span></span> 
   
-> <span data-ttu-id="da81a-113">Der Druckauftrag wurde erfolgreich abgeschlossen.</span><span class="sxs-lookup"><span data-stu-id="da81a-113">The printing job has finished successfully.</span></span>
+> <span data-ttu-id="349f0-113">Der Druckauftrag wurde erfolgreich abgeschlossen.</span><span class="sxs-lookup"><span data-stu-id="349f0-113">The printing job has finished successfully.</span></span>
     
-<span data-ttu-id="da81a-114">S_OK</span><span class="sxs-lookup"><span data-stu-id="da81a-114">S_OK</span></span> 
+<span data-ttu-id="349f0-114">S_OK</span><span class="sxs-lookup"><span data-stu-id="349f0-114">S_OK</span></span> 
   
-> <span data-ttu-id="da81a-115">Der Druckauftrag wird ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="da81a-115">The printing job is in progress.</span></span>
+> <span data-ttu-id="349f0-115">Der Druckauftrag wird ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="349f0-115">The printing job is in progress.</span></span>
     
-<span data-ttu-id="da81a-116">NICHT</span><span class="sxs-lookup"><span data-stu-id="da81a-116">FAILED</span></span> 
+<span data-ttu-id="349f0-116">FAILED</span><span class="sxs-lookup"><span data-stu-id="349f0-116">FAILED</span></span> 
   
-> <span data-ttu-id="da81a-117">Der Druckauftrag wurde aufgrund eines Fehlers abgebrochen.</span><span class="sxs-lookup"><span data-stu-id="da81a-117">The printing job was terminated due to a failure.</span></span>
+> <span data-ttu-id="349f0-117">Der Druckauftrag wurde aufgrund eines Fehlers beendet.</span><span class="sxs-lookup"><span data-stu-id="349f0-117">The printing job was terminated due to a failure.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="da81a-118">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="da81a-118">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="349f0-118">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="349f0-118">Return value</span></span>
 
-<span data-ttu-id="da81a-119">S_OK</span><span class="sxs-lookup"><span data-stu-id="da81a-119">S_OK</span></span> 
+<span data-ttu-id="349f0-119">S_OK</span><span class="sxs-lookup"><span data-stu-id="349f0-119">S_OK</span></span> 
   
-> <span data-ttu-id="da81a-120">Die Benachrichtigung wurde erfolgreich ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="da81a-120">The notification succeeded.</span></span>
+> <span data-ttu-id="349f0-120">Die Benachrichtigung ist erfolgreich.</span><span class="sxs-lookup"><span data-stu-id="349f0-120">The notification succeeded.</span></span>
     
-<span data-ttu-id="da81a-121">MAPI_E_USER_CANCEL</span><span class="sxs-lookup"><span data-stu-id="da81a-121">MAPI_E_USER_CANCEL</span></span> 
+<span data-ttu-id="349f0-121">MAPI_E_USER_CANCEL</span><span class="sxs-lookup"><span data-stu-id="349f0-121">MAPI_E_USER_CANCEL</span></span> 
   
-> <span data-ttu-id="da81a-122">Der Benutzer hat den Vorgang abgebrochen, indem er in einem Dialogfeld auf die Schaltfläche Abbrechen geklickt hat.</span><span class="sxs-lookup"><span data-stu-id="da81a-122">The user canceled the operation, typically by clicking the Cancel button in a dialog box.</span></span> 
+> <span data-ttu-id="349f0-122">Der Benutzer hat den Vorgang abgebrochen, in der Regel durch Klicken auf die Schaltfläche Abbrechen in einem Dialogfeld.</span><span class="sxs-lookup"><span data-stu-id="349f0-122">The user canceled the operation, typically by clicking the Cancel button in a dialog box.</span></span> 
     
-## <a name="remarks"></a><span data-ttu-id="da81a-123">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="da81a-123">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="349f0-123">Hinweise</span><span class="sxs-lookup"><span data-stu-id="349f0-123">Remarks</span></span>
 
-<span data-ttu-id="da81a-124">Formularobjekte rufen beim Drucken die **IMAPIViewAdviseSink:: OnPrint** -Methode auf, um den Betrachter über den Druckfortschritt zu informieren.</span><span class="sxs-lookup"><span data-stu-id="da81a-124">Form objects call the **IMAPIViewAdviseSink::OnPrint** method while printing to inform the viewer of printing progress.</span></span> 
+<span data-ttu-id="349f0-124">Formularobjekte rufen die **IMAPIViewAdviseSink::OnPrint-Methode** beim Drucken auf, um den Betrachter über den Druckfortschritt zu informieren.</span><span class="sxs-lookup"><span data-stu-id="349f0-124">Form objects call the **IMAPIViewAdviseSink::OnPrint** method while printing to inform the viewer of printing progress.</span></span> 
   
-## <a name="notes-to-callers"></a><span data-ttu-id="da81a-125">Hinweise für Aufrufer</span><span class="sxs-lookup"><span data-stu-id="da81a-125">Notes to callers</span></span>
+## <a name="notes-to-callers"></a><span data-ttu-id="349f0-125">Hinweise für Aufrufer</span><span class="sxs-lookup"><span data-stu-id="349f0-125">Notes to callers</span></span>
 
-<span data-ttu-id="da81a-126">Wenn der Druckauftrag mehrere Seiten umfasst, können Sie **OnPrint** aufrufen, nachdem jede Seite gedruckt wurde.</span><span class="sxs-lookup"><span data-stu-id="da81a-126">If the printing job involves multiple pages, you can call **OnPrint** after each page is printed.</span></span> <span data-ttu-id="da81a-127">Legen Sie _dwPageNumber_ auf die Seite fest, die derzeit gedruckt wird, und _hrStatus_ auf S_OK.</span><span class="sxs-lookup"><span data-stu-id="da81a-127">Set  _dwPageNumber_ to the page currently being printed and  _hrStatus_ to S_OK.</span></span> <span data-ttu-id="da81a-128">Wenn der Druckauftrag abgeschlossen ist, rufen \*\*\*\* Sie OnPrint mit _dwPageNumber_ auf die letzte Seite gedruckt festgelegt und _hrStatus_ auf S_FALSE festgelegt.</span><span class="sxs-lookup"><span data-stu-id="da81a-128">When the printing job is complete, call **OnPrint** with  _dwPageNumber_ set to the last page printed and  _hrStatus_ set to S_FALSE.</span></span> 
+<span data-ttu-id="349f0-126">Wenn der Druckauftrag mehrere Seiten umfasst, können Sie **OnPrint** aufrufen, nachdem jede Seite gedruckt wurde.</span><span class="sxs-lookup"><span data-stu-id="349f0-126">If the printing job involves multiple pages, you can call **OnPrint** after each page is printed.</span></span> <span data-ttu-id="349f0-127">Legen  _Sie dwPageNumber_ auf die Seite, die gerade gedruckt wird, und  _hrStatus_ auf S_OK.</span><span class="sxs-lookup"><span data-stu-id="349f0-127">Set  _dwPageNumber_ to the page currently being printed and  _hrStatus_ to S_OK.</span></span> <span data-ttu-id="349f0-128">Wenn der Druckauftrag abgeschlossen ist, rufen Sie **OnPrint** auf,  _während dwPageNumber_ auf die letzte gedruckte Seite festgelegt ist, und  _hrStatus_ auf S_FALSE.</span><span class="sxs-lookup"><span data-stu-id="349f0-128">When the printing job is complete, call **OnPrint** with  _dwPageNumber_ set to the last page printed and  _hrStatus_ set to S_FALSE.</span></span> 
   
-<span data-ttu-id="da81a-129">Weitere Informationen zu Formular Benachrichtigungen finden Sie unter [senden und empfangen von Formular Benachrichtigungen](sending-and-receiving-form-notifications.md).</span><span class="sxs-lookup"><span data-stu-id="da81a-129">For more information about form notifications, see [Sending and Receiving Form Notifications](sending-and-receiving-form-notifications.md).</span></span>
+<span data-ttu-id="349f0-129">Weitere Informationen zu Formularbenachrichtigungen finden Sie unter Senden und Empfangen [von Formularbenachrichtigungen](sending-and-receiving-form-notifications.md).</span><span class="sxs-lookup"><span data-stu-id="349f0-129">For more information about form notifications, see [Sending and Receiving Form Notifications](sending-and-receiving-form-notifications.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="da81a-130">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="da81a-130">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="349f0-130">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="349f0-130">See also</span></span>
 
 
 
-[<span data-ttu-id="da81a-131">IMAPIViewAdviseSink : IUnknown</span><span class="sxs-lookup"><span data-stu-id="da81a-131">IMAPIViewAdviseSink : IUnknown</span></span>](imapiviewadvisesinkiunknown.md)
+[<span data-ttu-id="349f0-131">IMAPIViewAdviseSink : IUnknown</span><span class="sxs-lookup"><span data-stu-id="349f0-131">IMAPIViewAdviseSink : IUnknown</span></span>](imapiviewadvisesinkiunknown.md)
 

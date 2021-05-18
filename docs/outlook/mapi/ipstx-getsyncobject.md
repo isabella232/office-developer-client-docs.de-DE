@@ -19,13 +19,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33407109"
 ---
-# <a name="ipstxgetsyncobject"></a><span data-ttu-id="a8ba0-103">IPSTX::GetSyncObject</span><span class="sxs-lookup"><span data-stu-id="a8ba0-103">IPSTX::GetSyncObject</span></span>
+# <a name="ipstxgetsyncobject"></a><span data-ttu-id="2a553-103">IPSTX::GetSyncObject</span><span class="sxs-lookup"><span data-stu-id="2a553-103">IPSTX::GetSyncObject</span></span>
 
   
   
-<span data-ttu-id="a8ba0-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="a8ba0-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="2a553-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="2a553-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="a8ba0-105">Startet eine Synchronisierungssitzung und ruft die zugehörige **[IOSTX](iostxiunknown.md)** -Schnittstelle ab.</span><span class="sxs-lookup"><span data-stu-id="a8ba0-105">Starts a synchronization session and gets the associated **[IOSTX](iostxiunknown.md)** interface.</span></span> 
+<span data-ttu-id="2a553-105">Startet eine Synchronisierungssitzung und ruft die zugeordnete **[IOSTX-Schnittstelle](iostxiunknown.md)** ab.</span><span class="sxs-lookup"><span data-stu-id="2a553-105">Starts a synchronization session and gets the associated **[IOSTX](iostxiunknown.md)** interface.</span></span> 
   
 ```cpp
 HRESULT GetSyncObject( 
@@ -33,21 +33,21 @@ HRESULT GetSyncObject(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="a8ba0-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="a8ba0-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="2a553-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="2a553-106">Parameters</span></span>
 
- <span data-ttu-id="a8ba0-107">_ppostx_</span><span class="sxs-lookup"><span data-stu-id="a8ba0-107">_ppostx_</span></span>
+ <span data-ttu-id="2a553-107">_ppostx_</span><span class="sxs-lookup"><span data-stu-id="2a553-107">_ppostx_</span></span>
   
->  <span data-ttu-id="a8ba0-108">Out Zeiger auf die **IOSTX** -Schnittstelle abrufen.</span><span class="sxs-lookup"><span data-stu-id="a8ba0-108">[out] Pointer to the **IOSTX** interface to get.</span></span> 
+>  <span data-ttu-id="2a553-108">[out] Zeiger auf die zu erhaltende **IOSTX-Schnittstelle.**</span><span class="sxs-lookup"><span data-stu-id="2a553-108">[out] Pointer to the **IOSTX** interface to get.</span></span> 
     
-## <a name="remarks"></a><span data-ttu-id="a8ba0-109">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="a8ba0-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="2a553-109">Hinweise</span><span class="sxs-lookup"><span data-stu-id="2a553-109">Remarks</span></span>
 
-<span data-ttu-id="a8ba0-110">Der Aufrufer muss sicherstellen, dass derselbe Ordner nicht gleichzeitig für mehrere Threads synchronisiert ist.</span><span class="sxs-lookup"><span data-stu-id="a8ba0-110">The caller must ensure that the same folder is not synchronized at the same time on more than one thread.</span></span>
+<span data-ttu-id="2a553-110">Der Aufrufer muss sicherstellen, dass derselbe Ordner nicht gleichzeitig in mehreren Threads synchronisiert wird.</span><span class="sxs-lookup"><span data-stu-id="2a553-110">The caller must ensure that the same folder is not synchronized at the same time on more than one thread.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="a8ba0-111">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="a8ba0-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2a553-111">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="2a553-111">See also</span></span>
 
 
 
-[<span data-ttu-id="a8ba0-112">IPSTX::EmulateSpooler</span><span class="sxs-lookup"><span data-stu-id="a8ba0-112">IPSTX::EmulateSpooler</span></span>](ipstx-emulatespooler.md)
+[<span data-ttu-id="2a553-112">IPSTX::EmulateSpooler</span><span class="sxs-lookup"><span data-stu-id="2a553-112">IPSTX::EmulateSpooler</span></span>](ipstx-emulatespooler.md)
   
-[<span data-ttu-id="a8ba0-113">IPSTX::GetLastError</span><span class="sxs-lookup"><span data-stu-id="a8ba0-113">IPSTX::GetLastError</span></span>](ipstx-getlasterror.md)
+[<span data-ttu-id="2a553-113">IPSTX::GetLastError</span><span class="sxs-lookup"><span data-stu-id="2a553-113">IPSTX::GetLastError</span></span>](ipstx-getlasterror.md)
 

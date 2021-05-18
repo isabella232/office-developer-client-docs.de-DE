@@ -15,10 +15,10 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33405961"
 ---
-# <a name="improving-client-performance"></a><span data-ttu-id="9d447-103">Verbessern der Clientleistung</span><span class="sxs-lookup"><span data-stu-id="9d447-103">Improving client performance</span></span>
+# <a name="improving-client-performance"></a><span data-ttu-id="37770-103">Verbessern der Clientleistung</span><span class="sxs-lookup"><span data-stu-id="37770-103">Improving client performance</span></span>
  
-<span data-ttu-id="9d447-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="9d447-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="37770-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="37770-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="9d447-105">Die Themen in diesem Abschnitt enthalten Tipps, die Ihnen beim Erstellen einer Clientanwendung mit der bestmöglichen Leistung helfen.</span><span class="sxs-lookup"><span data-stu-id="9d447-105">The topics in this section contain tips that help you create a client application with the best possible performance.</span></span>
+<span data-ttu-id="37770-105">Die Themen in diesem Abschnitt enthalten Tipps, mit denen Sie eine Clientanwendung mit bestmöglicher Leistung erstellen können.</span><span class="sxs-lookup"><span data-stu-id="37770-105">The topics in this section contain tips that help you create a client application with the best possible performance.</span></span>
   
 

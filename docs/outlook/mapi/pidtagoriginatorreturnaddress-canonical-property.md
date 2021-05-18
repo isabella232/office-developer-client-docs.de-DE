@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagoriginatorreturnaddress (-Eigenschaft
+title: PidTagOriginatorReturnAddress (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,42 +19,42 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33406829"
 ---
-# <a name="pidtagoriginatorreturnaddress-canonical-property"></a><span data-ttu-id="fe96b-103">Kanonische Pidtagoriginatorreturnaddress (-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="fe96b-103">PidTagOriginatorReturnAddress Canonical Property</span></span>
+# <a name="pidtagoriginatorreturnaddress-canonical-property"></a><span data-ttu-id="ede40-103">PidTagOriginatorReturnAddress (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="ede40-103">PidTagOriginatorReturnAddress Canonical Property</span></span>
 
   
   
-<span data-ttu-id="fe96b-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="fe96b-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="ede40-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="ede40-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="fe96b-105">Enthält die binär codierte Absenderadresse des Nachrichten Erstellers.</span><span class="sxs-lookup"><span data-stu-id="fe96b-105">Contains the binary-encoded return address of the message originator.</span></span>
+<span data-ttu-id="ede40-105">Enthält die binär codierte Rückgabeadresse des Nachrichtenherkunftsgebers.</span><span class="sxs-lookup"><span data-stu-id="ede40-105">Contains the binary-encoded return address of the message originator.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="fe96b-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="fe96b-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="fe96b-107">PR_ORIGINATOR_RETURN_ADDRESS</span><span class="sxs-lookup"><span data-stu-id="fe96b-107">PR_ORIGINATOR_RETURN_ADDRESS</span></span>  <br/> |
-|<span data-ttu-id="fe96b-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="fe96b-108">Identifier:</span></span>  <br/> |<span data-ttu-id="fe96b-109">0x0024</span><span class="sxs-lookup"><span data-stu-id="fe96b-109">0x0024</span></span>  <br/> |
-|<span data-ttu-id="fe96b-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="fe96b-110">Data type:</span></span>  <br/> |<span data-ttu-id="fe96b-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="fe96b-111">PT_BINARY</span></span>  <br/> |
-|<span data-ttu-id="fe96b-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="fe96b-112">Area:</span></span>  <br/> |<span data-ttu-id="fe96b-113">MIME</span><span class="sxs-lookup"><span data-stu-id="fe96b-113">MIME</span></span>  <br/> |
+|<span data-ttu-id="ede40-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="ede40-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="ede40-107">PR_ORIGINATOR_RETURN_ADDRESS</span><span class="sxs-lookup"><span data-stu-id="ede40-107">PR_ORIGINATOR_RETURN_ADDRESS</span></span>  <br/> |
+|<span data-ttu-id="ede40-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="ede40-108">Identifier:</span></span>  <br/> |<span data-ttu-id="ede40-109">0x0024</span><span class="sxs-lookup"><span data-stu-id="ede40-109">0x0024</span></span>  <br/> |
+|<span data-ttu-id="ede40-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="ede40-110">Data type:</span></span>  <br/> |<span data-ttu-id="ede40-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="ede40-111">PT_BINARY</span></span>  <br/> |
+|<span data-ttu-id="ede40-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="ede40-112">Area:</span></span>  <br/> |<span data-ttu-id="ede40-113">MIME</span><span class="sxs-lookup"><span data-stu-id="ede40-113">MIME</span></span>  <br/> |
    
-## <a name="related-resources"></a><span data-ttu-id="fe96b-114">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="fe96b-114">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="ede40-114">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="ede40-114">Related resources</span></span>
 
-### <a name="header-files"></a><span data-ttu-id="fe96b-115">Header Dateien</span><span class="sxs-lookup"><span data-stu-id="fe96b-115">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="ede40-115">Headerdateien</span><span class="sxs-lookup"><span data-stu-id="ede40-115">Header files</span></span>
 
-<span data-ttu-id="fe96b-116">Mapidefs. h</span><span class="sxs-lookup"><span data-stu-id="fe96b-116">Mapidefs.h</span></span>
+<span data-ttu-id="ede40-116">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="ede40-116">Mapidefs.h</span></span>
   
-> <span data-ttu-id="fe96b-117">Stellt Datentypdefinitionen bereit.</span><span class="sxs-lookup"><span data-stu-id="fe96b-117">Provides data type definitions.</span></span>
+> <span data-ttu-id="ede40-117">Bietet Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="ede40-117">Provides data type definitions.</span></span>
     
-<span data-ttu-id="fe96b-118">Mapitags. h</span><span class="sxs-lookup"><span data-stu-id="fe96b-118">Mapitags.h</span></span>
+<span data-ttu-id="ede40-118">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="ede40-118">Mapitags.h</span></span>
   
-> <span data-ttu-id="fe96b-119">Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.</span><span class="sxs-lookup"><span data-stu-id="fe96b-119">Contains definitions of properties listed as alternate names.</span></span>
+> <span data-ttu-id="ede40-119">Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.</span><span class="sxs-lookup"><span data-stu-id="ede40-119">Contains definitions of properties listed as alternate names.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="fe96b-120">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="fe96b-120">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ede40-120">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="ede40-120">See also</span></span>
 
 
 
-[<span data-ttu-id="fe96b-121">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="fe96b-121">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="ede40-121">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="ede40-121">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="fe96b-122">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="fe96b-122">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="ede40-122">KANONISCHE EIGENSCHAFTEN VON MAPI</span><span class="sxs-lookup"><span data-stu-id="ede40-122">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="fe96b-123">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="fe96b-123">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="ede40-123">Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="ede40-123">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="fe96b-124">Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="fe96b-124">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="ede40-124">Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="ede40-124">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

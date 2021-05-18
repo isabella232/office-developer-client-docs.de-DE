@@ -16,13 +16,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33405681"
 ---
-# <a name="enter-an-empty-formula"></a><span data-ttu-id="8b5dc-102">Eingeben einer leeren Formel</span><span class="sxs-lookup"><span data-stu-id="8b5dc-102">Enter an Empty Formula</span></span>
+# <a name="enter-an-empty-formula"></a><span data-ttu-id="b671e-102">Eingeben einer leeren Formel</span><span class="sxs-lookup"><span data-stu-id="b671e-102">Enter an Empty Formula</span></span>
 
-1. <span data-ttu-id="8b5dc-103">Wählen Sie die Zelle aus, die die Formel enthalten soll.</span><span class="sxs-lookup"><span data-stu-id="8b5dc-103">Select the cell that will contain the formula.</span></span>
+1. <span data-ttu-id="b671e-103">Wählen Sie die Zelle aus, die die Formel enthalten soll.</span><span class="sxs-lookup"><span data-stu-id="b671e-103">Select the cell that will contain the formula.</span></span>
     
-2. <span data-ttu-id="8b5dc-104">Drücken Sie auf ENTF und anschließend die EINGABETASTE.</span><span class="sxs-lookup"><span data-stu-id="8b5dc-104">Press DELETE, and then press ENTER.</span></span>
+2. <span data-ttu-id="b671e-104">Drücken Sie auf ENTF und anschließend die EINGABETASTE.</span><span class="sxs-lookup"><span data-stu-id="b671e-104">Press DELETE, and then press ENTER.</span></span>
     
 > [!NOTE]
-> <span data-ttu-id="8b5dc-105">Probieren Sie dies in \*\*\*\* einer Arbeitszelle aus, nachdem Sie eine lokale Formel eingefügt haben.</span><span class="sxs-lookup"><span data-stu-id="8b5dc-105">Try this in a **Scratch** cell after inserting a local formula.</span></span> <span data-ttu-id="8b5dc-106">Die Zelle wird auf "keine Formel" zurückgesetzt, da es keine Formel gibt, die vom Master geerbt werden soll.</span><span class="sxs-lookup"><span data-stu-id="8b5dc-106">The cell reverts to 'No Formula', because there is no formula to inherit from the master.</span></span> 
+> <span data-ttu-id="b671e-105">Versuchen Sie  dies in einer Scratch-Zelle, nachdem Sie eine lokale Formel eingefügt haben.</span><span class="sxs-lookup"><span data-stu-id="b671e-105">Try this in a **Scratch** cell after inserting a local formula.</span></span> <span data-ttu-id="b671e-106">Die Zelle wird zu "Keine Formel" zurückgesetzt, da es keine Formel gibt, die vom Master erben soll.</span><span class="sxs-lookup"><span data-stu-id="b671e-106">The cell reverts to 'No Formula', because there is no formula to inherit from the master.</span></span> 
   
 

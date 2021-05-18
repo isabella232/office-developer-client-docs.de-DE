@@ -19,52 +19,52 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32309716"
 ---
-# <a name="ipersistmessagehandsoffmessage"></a><span data-ttu-id="4d35f-103">IPersistMessage::HandsOffMessage</span><span class="sxs-lookup"><span data-stu-id="4d35f-103">IPersistMessage::HandsOffMessage</span></span>
+# <a name="ipersistmessagehandsoffmessage"></a><span data-ttu-id="83fcc-103">IPersistMessage::HandsOffMessage</span><span class="sxs-lookup"><span data-stu-id="83fcc-103">IPersistMessage::HandsOffMessage</span></span>
 
   
   
-<span data-ttu-id="4d35f-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="4d35f-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="83fcc-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="83fcc-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="4d35f-105">Bewirkt, dass das Formular die aktuelle Nachricht freigibt.</span><span class="sxs-lookup"><span data-stu-id="4d35f-105">Causes the form to release its current message.</span></span>
+<span data-ttu-id="83fcc-105">Bewirkt, dass das Formular seine aktuelle Nachricht veröffentlicht.</span><span class="sxs-lookup"><span data-stu-id="83fcc-105">Causes the form to release its current message.</span></span>
   
 ```cpp
 HRESULT HandsOffMessage( void );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="4d35f-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="4d35f-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="83fcc-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="83fcc-106">Parameters</span></span>
 
-<span data-ttu-id="4d35f-107">Keine</span><span class="sxs-lookup"><span data-stu-id="4d35f-107">None</span></span>
+<span data-ttu-id="83fcc-107">Keine</span><span class="sxs-lookup"><span data-stu-id="83fcc-107">None</span></span>
   
-## <a name="return-value"></a><span data-ttu-id="4d35f-108">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="4d35f-108">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="83fcc-108">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="83fcc-108">Return value</span></span>
 
-<span data-ttu-id="4d35f-109">S_OK</span><span class="sxs-lookup"><span data-stu-id="4d35f-109">S_OK</span></span> 
+<span data-ttu-id="83fcc-109">S_OK</span><span class="sxs-lookup"><span data-stu-id="83fcc-109">S_OK</span></span> 
   
-> <span data-ttu-id="4d35f-110">Die Nachricht wurde erfolgreich veröffentlicht.</span><span class="sxs-lookup"><span data-stu-id="4d35f-110">The message was successfully released.</span></span>
+> <span data-ttu-id="83fcc-110">Die Nachricht wurde erfolgreich freigegeben.</span><span class="sxs-lookup"><span data-stu-id="83fcc-110">The message was successfully released.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="4d35f-111">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="4d35f-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="83fcc-111">Hinweise</span><span class="sxs-lookup"><span data-stu-id="83fcc-111">Remarks</span></span>
 
-<span data-ttu-id="4d35f-112">Formular Übergang in zwei HandsOff-Zustände:</span><span class="sxs-lookup"><span data-stu-id="4d35f-112">Forms transition into two HandsOff states:</span></span>
+<span data-ttu-id="83fcc-112">Formulare werden in zwei HandsOff-Zustände übergewechselt:</span><span class="sxs-lookup"><span data-stu-id="83fcc-112">Forms transition into two HandsOff states:</span></span>
   
-- [<span data-ttu-id="4d35f-113">HandsOffAfterSave</span><span class="sxs-lookup"><span data-stu-id="4d35f-113">HandsOffAfterSave</span></span>](handsoffaftersave-state.md)
+- [<span data-ttu-id="83fcc-113">HandsOffAfterSave</span><span class="sxs-lookup"><span data-stu-id="83fcc-113">HandsOffAfterSave</span></span>](handsoffaftersave-state.md)
     
-- [<span data-ttu-id="4d35f-114">Status "handsofffromnormal</span><span class="sxs-lookup"><span data-stu-id="4d35f-114">HandsOffFromNormal</span></span>](handsofffromnormal-state.md)
+- [<span data-ttu-id="83fcc-114">HandsOffFromNormal</span><span class="sxs-lookup"><span data-stu-id="83fcc-114">HandsOffFromNormal</span></span>](handsofffromnormal-state.md)
     
-<span data-ttu-id="4d35f-115">Wenn sich ein Formular in einem dieser Zustände befindet, wird es permanent gespeichert.</span><span class="sxs-lookup"><span data-stu-id="4d35f-115">When a form is in either of these states, it is in the process of being stored permanently.</span></span> 
+<span data-ttu-id="83fcc-115">Wenn sich ein Formular in einem dieser Zustände befindet, wird es dauerhaft gespeichert.</span><span class="sxs-lookup"><span data-stu-id="83fcc-115">When a form is in either of these states, it is in the process of being stored permanently.</span></span> 
   
-## <a name="notes-to-implementers"></a><span data-ttu-id="4d35f-116">Hinweise für Implementierer</span><span class="sxs-lookup"><span data-stu-id="4d35f-116">Notes to implementers</span></span>
+## <a name="notes-to-implementers"></a><span data-ttu-id="83fcc-116">Hinweise für Implementierer</span><span class="sxs-lookup"><span data-stu-id="83fcc-116">Notes to implementers</span></span>
 
-<span data-ttu-id="4d35f-117">Wenn ein Formular Betrachter die **IPersistMessage:: HandsOffMessage** -Methode aufruft, während sich das Formular im Status " [Normal](normal-state.md) " oder "noscribble" befindet, rufen Sie **HandsOffMessage** für jede in der aktuellen Nachricht eingebettete Nachricht rekursiv auf und [](noscribble-state.md) [ IPersistStorage:: HandsOffStorage](https://msdn.microsoft.com/library/1e5ef26f-d8e7-4fa6-bfc4-19dace35314d.aspx) -Methode für jedes OLE-Objekt, das in die aktuelle Nachricht eingebettet ist.</span><span class="sxs-lookup"><span data-stu-id="4d35f-117">When a form viewer calls the **IPersistMessage::HandsOffMessage** method while your form is in the [Normal](normal-state.md) or [NoScribble](noscribble-state.md) state, recursively call **HandsOffMessage** on each message embedded in the current message and the [IPersistStorage::HandsOffStorage](https://msdn.microsoft.com/library/1e5ef26f-d8e7-4fa6-bfc4-19dace35314d.aspx) method on each OLE object embedded in the current message.</span></span> <span data-ttu-id="4d35f-118">Geben Sie dann die aktuelle Nachricht und alle eingebetteten Nachrichten und OLE-Objekte frei.</span><span class="sxs-lookup"><span data-stu-id="4d35f-118">Then release the current message and all embedded messages and OLE objects.</span></span> <span data-ttu-id="4d35f-119">Wenn sich das Formular im Normal Zustand befand, wechseln Sie zum Status "handsofffromnormal-Zustand.</span><span class="sxs-lookup"><span data-stu-id="4d35f-119">If your form was in the Normal state, transition to the HandsOffFromNormal state.</span></span> <span data-ttu-id="4d35f-120">Wenn sich das Formular im noScribble-Zustand befand, wechseln Sie zum HandsOffAfterSave-Zustand.</span><span class="sxs-lookup"><span data-stu-id="4d35f-120">If your form was in the NoScribble state, transition to the HandsOffAfterSave state.</span></span> <span data-ttu-id="4d35f-121">Rufen Sie nach erfolgreichem Übergang die [IUnknown:: Release](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx) -Methode der Nachricht auf, und geben Sie S_OK zurück.</span><span class="sxs-lookup"><span data-stu-id="4d35f-121">After a successful transition, call the message's [IUnknown::Release](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx) method and return S_OK.</span></span> 
+<span data-ttu-id="83fcc-117">Wenn ein Formularbetrachter die **IPersistMessage::HandsOffMessage-Methode** aufruft, während sich Ihr Formular im Normal- oder [NoScribble-Zustand](noscribble-state.md) befindet, rufen Sie für jede in die aktuelle Nachricht eingebettete Nachricht und die [IPersistStorage::HandsOffStorage-Methode](https://msdn.microsoft.com/library/1e5ef26f-d8e7-4fa6-bfc4-19dace35314d.aspx) für jedes in die aktuelle Nachricht eingebettete OLE-Objekt rekursiv **HandsOffMessage** auf. [](normal-state.md)</span><span class="sxs-lookup"><span data-stu-id="83fcc-117">When a form viewer calls the **IPersistMessage::HandsOffMessage** method while your form is in the [Normal](normal-state.md) or [NoScribble](noscribble-state.md) state, recursively call **HandsOffMessage** on each message embedded in the current message and the [IPersistStorage::HandsOffStorage](https://msdn.microsoft.com/library/1e5ef26f-d8e7-4fa6-bfc4-19dace35314d.aspx) method on each OLE object embedded in the current message.</span></span> <span data-ttu-id="83fcc-118">Geben Sie dann die aktuelle Nachricht und alle eingebetteten Nachrichten und OLE-Objekte frei.</span><span class="sxs-lookup"><span data-stu-id="83fcc-118">Then release the current message and all embedded messages and OLE objects.</span></span> <span data-ttu-id="83fcc-119">Wenn ihr Formular den Status Normal hatte, müssen Sie zum Status HandsOffFromNormal überwechseln.</span><span class="sxs-lookup"><span data-stu-id="83fcc-119">If your form was in the Normal state, transition to the HandsOffFromNormal state.</span></span> <span data-ttu-id="83fcc-120">Wenn ihr Formular den Status "NoScribble" hatte, gehen Sie in den Status HandsOffAfterSave.</span><span class="sxs-lookup"><span data-stu-id="83fcc-120">If your form was in the NoScribble state, transition to the HandsOffAfterSave state.</span></span> <span data-ttu-id="83fcc-121">Rufen Sie nach einem erfolgreichen Übergang die [IUnknown::Release-Methode](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx) der Nachricht auf, und geben Sie S_OK.</span><span class="sxs-lookup"><span data-stu-id="83fcc-121">After a successful transition, call the message's [IUnknown::Release](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx) method and return S_OK.</span></span> 
   
-<span data-ttu-id="4d35f-122">Wenn ein Formular-Viewer **HandsOffMessage** aufruft, während sich Ihr Formular in einem der HandsOff-Zustände befindet, geben Sie E_UNEXPECTED zurück.</span><span class="sxs-lookup"><span data-stu-id="4d35f-122">When a form viewer calls **HandsOffMessage** while your form is in either of the HandsOff states, return E_UNEXPECTED.</span></span> 
+<span data-ttu-id="83fcc-122">Wenn ein Formularbetrachter **HandsOffMessage aufruft,** während sich Ihr Formular in einem der HandsOff-Zustände befindet, geben Sie E_UNEXPECTED.</span><span class="sxs-lookup"><span data-stu-id="83fcc-122">When a form viewer calls **HandsOffMessage** while your form is in either of the HandsOff states, return E_UNEXPECTED.</span></span> 
   
-<span data-ttu-id="4d35f-123">Weitere Informationen zu den verschiedenen Status eines Formulars finden Sie unter [Formular Status](form-states.md).</span><span class="sxs-lookup"><span data-stu-id="4d35f-123">For more information about the different states of a form, see [Form States](form-states.md).</span></span> <span data-ttu-id="4d35f-124">Weitere Informationen zum Arbeiten mit dem HandsOff-Status von Speicherobjekten finden Sie unter der [IPersistStorage:: HandsOffStorage](https://msdn.microsoft.com/library/1e5ef26f-d8e7-4fa6-bfc4-19dace35314d.aspx) -Methode.</span><span class="sxs-lookup"><span data-stu-id="4d35f-124">For more information about how to work with the HandsOff state of storage objects, see the [IPersistStorage::HandsOffStorage](https://msdn.microsoft.com/library/1e5ef26f-d8e7-4fa6-bfc4-19dace35314d.aspx) method.</span></span> 
+<span data-ttu-id="83fcc-123">Weitere Informationen zu den verschiedenen Zuständen eines Formulars finden Sie unter [Formularzustände](form-states.md).</span><span class="sxs-lookup"><span data-stu-id="83fcc-123">For more information about the different states of a form, see [Form States](form-states.md).</span></span> <span data-ttu-id="83fcc-124">Weitere Informationen zum Arbeiten mit dem HandsOff-Status von Speicherobjekten finden Sie unter [der IPersistStorage::HandsOffStorage-Methode.](https://msdn.microsoft.com/library/1e5ef26f-d8e7-4fa6-bfc4-19dace35314d.aspx)</span><span class="sxs-lookup"><span data-stu-id="83fcc-124">For more information about how to work with the HandsOff state of storage objects, see the [IPersistStorage::HandsOffStorage](https://msdn.microsoft.com/library/1e5ef26f-d8e7-4fa6-bfc4-19dace35314d.aspx) method.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="4d35f-125">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="4d35f-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="83fcc-125">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="83fcc-125">See also</span></span>
 
 
 
-[<span data-ttu-id="4d35f-126">IPersistMessage : IUnknown</span><span class="sxs-lookup"><span data-stu-id="4d35f-126">IPersistMessage : IUnknown</span></span>](ipersistmessageiunknown.md)
+[<span data-ttu-id="83fcc-126">IPersistMessage : IUnknown</span><span class="sxs-lookup"><span data-stu-id="83fcc-126">IPersistMessage : IUnknown</span></span>](ipersistmessageiunknown.md)
 
 
-[<span data-ttu-id="4d35f-127">Formular Status</span><span class="sxs-lookup"><span data-stu-id="4d35f-127">Form States</span></span>](form-states.md)
+[<span data-ttu-id="83fcc-127">Formularzustände</span><span class="sxs-lookup"><span data-stu-id="83fcc-127">Form States</span></span>](form-states.md)
 

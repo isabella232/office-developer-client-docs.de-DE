@@ -19,37 +19,37 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33407123"
 ---
-# <a name="cbnewflatentrylist"></a><span data-ttu-id="9b018-103">CbNewFLATENTRYLIST</span><span class="sxs-lookup"><span data-stu-id="9b018-103">CbNewFLATENTRYLIST</span></span>
+# <a name="cbnewflatentrylist"></a><span data-ttu-id="f0e16-103">CbNewFLATENTRYLIST</span><span class="sxs-lookup"><span data-stu-id="f0e16-103">CbNewFLATENTRYLIST</span></span>
 
   
   
-<span data-ttu-id="9b018-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="9b018-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="f0e16-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="f0e16-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="9b018-105">Berechnet die Anzahl der Bytes, die für eine neue [FLATENTRYLIST](flatentrylist.md) -Struktur reserviert werden sollen, die mehrere [FLATENTRY](flatentry.md) -Strukturen einer angegebenen Größe enthält.</span><span class="sxs-lookup"><span data-stu-id="9b018-105">Computes the number of bytes that should be allocated for a new [FLATENTRYLIST](flatentrylist.md) structure that contains several [FLATENTRY](flatentry.md) structures of a specified size.</span></span> 
+<span data-ttu-id="f0e16-105">Berechnet die Anzahl der Bytes, die einer neuen [FLATENTRYLIST-Struktur](flatentrylist.md) zugeordnet werden sollen, die mehrere [FLATENTRY-Strukturen](flatentry.md) einer angegebenen Größe enthält.</span><span class="sxs-lookup"><span data-stu-id="f0e16-105">Computes the number of bytes that should be allocated for a new [FLATENTRYLIST](flatentrylist.md) structure that contains several [FLATENTRY](flatentry.md) structures of a specified size.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="9b018-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="9b018-106">Header file:</span></span>  <br/> |<span data-ttu-id="9b018-107">Mapidefs. h</span><span class="sxs-lookup"><span data-stu-id="9b018-107">Mapidefs.h</span></span>  <br/> |
-|<span data-ttu-id="9b018-108">Zugehörige Struktur:</span><span class="sxs-lookup"><span data-stu-id="9b018-108">Related structure:</span></span>  <br/> |<span data-ttu-id="9b018-109">**FLATENTRYLIST**</span><span class="sxs-lookup"><span data-stu-id="9b018-109">**FLATENTRYLIST**</span></span> <br/> |
+|<span data-ttu-id="f0e16-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="f0e16-106">Header file:</span></span>  <br/> |<span data-ttu-id="f0e16-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="f0e16-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="f0e16-108">Verwandte Struktur:</span><span class="sxs-lookup"><span data-stu-id="f0e16-108">Related structure:</span></span>  <br/> |<span data-ttu-id="f0e16-109">**FLATENTRYLIST**</span><span class="sxs-lookup"><span data-stu-id="f0e16-109">**FLATENTRYLIST**</span></span> <br/> |
    
 ```cpp
 CbNewFLATENTRY (_cb)
 ```
 
-## <a name="parameters"></a><span data-ttu-id="9b018-110">Parameter</span><span class="sxs-lookup"><span data-stu-id="9b018-110">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="f0e16-110">Parameter</span><span class="sxs-lookup"><span data-stu-id="f0e16-110">Parameters</span></span>
 
- <span data-ttu-id="9b018-111">__CB_</span><span class="sxs-lookup"><span data-stu-id="9b018-111">__cb_</span></span>
+ <span data-ttu-id="f0e16-111">_ _cb_</span><span class="sxs-lookup"><span data-stu-id="f0e16-111">_ _cb_</span></span>
   
-> <span data-ttu-id="9b018-112">Die Anzahl der Bytes in den **FLATENTRY** -Strukturen, die in die neue **FLATENTRYLIST** -Struktur eingeschlossen werden sollen.</span><span class="sxs-lookup"><span data-stu-id="9b018-112">Count of bytes in the **FLATENTRY** structures to be included in the new **FLATENTRYLIST** structure.</span></span> 
+> <span data-ttu-id="f0e16-112">Anzahl der Bytes in den **FLATENTRY-Strukturen,** die in die neue **FLATENTRYLIST-Struktur eingeschlossen werden** sollen.</span><span class="sxs-lookup"><span data-stu-id="f0e16-112">Count of bytes in the **FLATENTRY** structures to be included in the new **FLATENTRYLIST** structure.</span></span> 
     
-## <a name="see-also"></a><span data-ttu-id="9b018-113">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="9b018-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f0e16-113">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="f0e16-113">See also</span></span>
 
 
 
-[<span data-ttu-id="9b018-114">FLATENTRYLIST</span><span class="sxs-lookup"><span data-stu-id="9b018-114">FLATENTRYLIST</span></span>](flatentrylist.md)
+[<span data-ttu-id="f0e16-114">FLATENTRYLIST</span><span class="sxs-lookup"><span data-stu-id="f0e16-114">FLATENTRYLIST</span></span>](flatentrylist.md)
   
-[<span data-ttu-id="9b018-115">FLATENTRY</span><span class="sxs-lookup"><span data-stu-id="9b018-115">FLATENTRY</span></span>](flatentry.md)
+[<span data-ttu-id="f0e16-115">FLATENTRY</span><span class="sxs-lookup"><span data-stu-id="f0e16-115">FLATENTRY</span></span>](flatentry.md)
 
 
-[<span data-ttu-id="9b018-116">Makros im Zusammenhang mit Strukturen</span><span class="sxs-lookup"><span data-stu-id="9b018-116">Macros Related to Structures</span></span>](macros-related-to-structures.md)
+[<span data-ttu-id="f0e16-116">Makros im Zusammenhang mit Strukturen</span><span class="sxs-lookup"><span data-stu-id="f0e16-116">Macros Related to Structures</span></span>](macros-related-to-structures.md)
 

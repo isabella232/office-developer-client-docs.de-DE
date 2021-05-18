@@ -18,27 +18,27 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33408572"
 ---
-# <a name="quitframework"></a><span data-ttu-id="b93f8-104">QuitFramework</span><span class="sxs-lookup"><span data-stu-id="b93f8-104">QuitFramework</span></span>
+# <a name="quitframework"></a><span data-ttu-id="ed790-104">QuitFramework</span><span class="sxs-lookup"><span data-stu-id="ed790-104">QuitFramework</span></span>
 
- <span data-ttu-id="b93f8-105">**Gilt für**: Excel 2013 | Office 2013 | Visual Studio</span><span class="sxs-lookup"><span data-stu-id="b93f8-105">**Applies to**: Excel 2013 | Office 2013 | Visual Studio</span></span> 
+ <span data-ttu-id="ed790-105">**Gilt für**: Excel 2013 | Office 2013 | Visual Studio</span><span class="sxs-lookup"><span data-stu-id="ed790-105">**Applies to**: Excel 2013 | Office 2013 | Visual Studio</span></span> 
   
-<span data-ttu-id="b93f8-106">Framework-Bibliotheksfunktion, mit der das Initialisieren der Framework-Bibliothek aufgehoben wird, die die temporären **XLOPER**/ -**XLOPER12** -Speicherdaten Strukturen einfach neu initialisiert, die bereits zugewiesene Speicher freigeben.</span><span class="sxs-lookup"><span data-stu-id="b93f8-106">Framework library function that uninitializes the Framework library, which simply re-initializes the temporary **XLOPER**/ **XLOPER12** memory data structures, freeing any memory that has already been allocated.</span></span> 
+<span data-ttu-id="ed790-106">Framework library function that uninitializes the Framework library, which simply re-initializes the temporary **XLOPER** /  **XLOPER12** memory data structures, freeing any memory that has already been allocated.</span><span class="sxs-lookup"><span data-stu-id="ed790-106">Framework library function that uninitializes the Framework library, which simply re-initializes the temporary **XLOPER**/ **XLOPER12** memory data structures, freeing any memory that has already been allocated.</span></span> 
   
 ```cs
 short WINAPI QuitFramework(void);
 ```
 
-## <a name="parameters"></a><span data-ttu-id="b93f8-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="b93f8-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="ed790-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="ed790-107">Parameters</span></span>
 
-<span data-ttu-id="b93f8-108">Diese Funktion verwendet keine Parameter.</span><span class="sxs-lookup"><span data-stu-id="b93f8-108">This function takes no arguments.</span></span>
+<span data-ttu-id="ed790-108">Diese Funktion verwendet keine Parameter.</span><span class="sxs-lookup"><span data-stu-id="ed790-108">This function takes no arguments.</span></span>
   
-## <a name="property-valuereturn-value"></a><span data-ttu-id="b93f8-109">Eigenschaftswert/Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="b93f8-109">Property value/Return value</span></span>
+## <a name="property-valuereturn-value"></a><span data-ttu-id="ed790-109">Eigenschaftswert/Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="ed790-109">Property value/Return value</span></span>
 
-<span data-ttu-id="b93f8-110">Diese Funktion gibt keinen Wert zurück.</span><span class="sxs-lookup"><span data-stu-id="b93f8-110">This function does not return a value.</span></span>
+<span data-ttu-id="ed790-110">Diese Funktion gibt keinen Wert zurück.</span><span class="sxs-lookup"><span data-stu-id="ed790-110">This function does not return a value.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="b93f8-111">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="b93f8-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ed790-111">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="ed790-111">See also</span></span>
 
 
 
-[<span data-ttu-id="b93f8-112">Funktionen in der Framework-Klassenbibliothek</span><span class="sxs-lookup"><span data-stu-id="b93f8-112">Functions in the Framework Library</span></span>](functions-in-the-framework-library.md)
+[<span data-ttu-id="ed790-112">Funktionen in der Framework-Klassenbibliothek</span><span class="sxs-lookup"><span data-stu-id="ed790-112">Functions in the Framework Library</span></span>](functions-in-the-framework-library.md)
 

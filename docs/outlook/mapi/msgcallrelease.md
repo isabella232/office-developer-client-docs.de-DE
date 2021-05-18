@@ -19,19 +19,19 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33405912"
 ---
-# <a name="msgcallrelease"></a><span data-ttu-id="fc249-103">MSGCALLRELEASE</span><span class="sxs-lookup"><span data-stu-id="fc249-103">MSGCALLRELEASE</span></span>
+# <a name="msgcallrelease"></a><span data-ttu-id="3a82c-103">MSGCALLRELEASE</span><span class="sxs-lookup"><span data-stu-id="3a82c-103">MSGCALLRELEASE</span></span>
 
   
   
-<span data-ttu-id="fc249-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="fc249-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="3a82c-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="3a82c-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="fc249-105">Definiert eine Rückruffunktion, die eine **IStorage** -Schnittstellenach der endgültigen Version eines auf Ihr basierenden **IMessage** -Objekts mit der [OpenIMsgOnIStg](openimsgonistg.md) -Funktion freigeben kann.</span><span class="sxs-lookup"><span data-stu-id="fc249-105">Defines a callback function that can free an **IStorage** interface after the final release of an **IMessage** object built on top of it with the [OpenIMsgOnIStg](openimsgonistg.md) function.</span></span> 
+<span data-ttu-id="3a82c-105">Definiert eine Rückruffunktion, mit der eine **IStorage-Schnittstelle** nach der endgültigen Version eines darauf aufgebauten **IMessage-Objekts** mit der [OpenIMsgOnIStg-Funktion freigegeben](openimsgonistg.md) werden kann.</span><span class="sxs-lookup"><span data-stu-id="3a82c-105">Defines a callback function that can free an **IStorage** interface after the final release of an **IMessage** object built on top of it with the [OpenIMsgOnIStg](openimsgonistg.md) function.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="fc249-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="fc249-106">Header file:</span></span>  <br/> |<span data-ttu-id="fc249-107">IMessage. h</span><span class="sxs-lookup"><span data-stu-id="fc249-107">Imessage.h</span></span>  <br/> |
-|<span data-ttu-id="fc249-108">Definierte Funktion, implementiert von:</span><span class="sxs-lookup"><span data-stu-id="fc249-108">Defined function implemented by:</span></span>  <br/> |<span data-ttu-id="fc249-109">Client Anwendungen und Dienstanbieter</span><span class="sxs-lookup"><span data-stu-id="fc249-109">Client applications and service providers</span></span>  <br/> |
-|<span data-ttu-id="fc249-110">Definierte Funktion, aufgerufen von:</span><span class="sxs-lookup"><span data-stu-id="fc249-110">Defined function called by:</span></span>  <br/> |<span data-ttu-id="fc249-111">MAPI</span><span class="sxs-lookup"><span data-stu-id="fc249-111">MAPI</span></span>  <br/> |
+|<span data-ttu-id="3a82c-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="3a82c-106">Header file:</span></span>  <br/> |<span data-ttu-id="3a82c-107">Imessage.h</span><span class="sxs-lookup"><span data-stu-id="3a82c-107">Imessage.h</span></span>  <br/> |
+|<span data-ttu-id="3a82c-108">Definierte Funktion implementiert von:</span><span class="sxs-lookup"><span data-stu-id="3a82c-108">Defined function implemented by:</span></span>  <br/> |<span data-ttu-id="3a82c-109">Clientanwendungen und Dienstanbieter</span><span class="sxs-lookup"><span data-stu-id="3a82c-109">Client applications and service providers</span></span>  <br/> |
+|<span data-ttu-id="3a82c-110">Definierte Funktion, die von:</span><span class="sxs-lookup"><span data-stu-id="3a82c-110">Defined function called by:</span></span>  <br/> |<span data-ttu-id="3a82c-111">MAPI</span><span class="sxs-lookup"><span data-stu-id="3a82c-111">MAPI</span></span>  <br/> |
    
 ```cpp
 typedef void (STDAPICALLTYPE MSGCALLRELEASE)(
@@ -39,18 +39,18 @@ typedef void (STDAPICALLTYPE MSGCALLRELEASE)(
   LPMESSAGE  lpMessage );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="fc249-112">Parameter</span><span class="sxs-lookup"><span data-stu-id="fc249-112">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="3a82c-112">Parameter</span><span class="sxs-lookup"><span data-stu-id="3a82c-112">Parameters</span></span>
 
- <span data-ttu-id="fc249-113">_ulCallerData_</span><span class="sxs-lookup"><span data-stu-id="fc249-113">_ulCallerData_</span></span>
+ <span data-ttu-id="3a82c-113">_ulCallerData_</span><span class="sxs-lookup"><span data-stu-id="3a82c-113">_ulCallerData_</span></span>
   
-> <span data-ttu-id="fc249-114">in Enthält Anruf Anwendungsinformationen zur **IMessage** -Schnittstelle.</span><span class="sxs-lookup"><span data-stu-id="fc249-114">[in] Contains calling application information about the **IMessage** interface.</span></span> 
+> <span data-ttu-id="3a82c-114">[in] Enthält aufrufende Anwendungsinformationen zur **IMessage-Schnittstelle.**</span><span class="sxs-lookup"><span data-stu-id="3a82c-114">[in] Contains calling application information about the **IMessage** interface.</span></span> 
     
- <span data-ttu-id="fc249-115">_lpMessage_</span><span class="sxs-lookup"><span data-stu-id="fc249-115">_lpMessage_</span></span>
+ <span data-ttu-id="3a82c-115">_lpMessage_</span><span class="sxs-lookup"><span data-stu-id="3a82c-115">_lpMessage_</span></span>
   
-> <span data-ttu-id="fc249-116">in Zeiger auf die Nachricht und die Anlagen auf oberster Ebene, die freigegeben wurden.</span><span class="sxs-lookup"><span data-stu-id="fc249-116">[in] Pointer to the top-level message and attachments that have been released.</span></span>
+> <span data-ttu-id="3a82c-116">[in] Zeiger auf die Nachricht und Anlagen auf oberster Ebene, die freigegeben wurden.</span><span class="sxs-lookup"><span data-stu-id="3a82c-116">[in] Pointer to the top-level message and attachments that have been released.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="fc249-117">Return value</span><span class="sxs-lookup"><span data-stu-id="fc249-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="3a82c-117">Return value</span><span class="sxs-lookup"><span data-stu-id="3a82c-117">Return value</span></span>
 
-<span data-ttu-id="fc249-118">None.</span><span class="sxs-lookup"><span data-stu-id="fc249-118">None.</span></span>
+<span data-ttu-id="3a82c-118">None.</span><span class="sxs-lookup"><span data-stu-id="3a82c-118">None.</span></span>
   
 

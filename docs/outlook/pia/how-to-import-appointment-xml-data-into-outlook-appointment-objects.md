@@ -14,23 +14,23 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32320062"
 ---
-# <a name="import-appointment-xml-data-into-outlook-appointment-objects"></a><span data-ttu-id="d7dbc-102">Importieren von Termin-XML-Daten in Outlook-Terminobjekte</span><span class="sxs-lookup"><span data-stu-id="d7dbc-102">Import appointment XML data into Outlook appointment objects</span></span>
+# <a name="import-appointment-xml-data-into-outlook-appointment-objects"></a><span data-ttu-id="ab16b-102">Importieren von Termin-XML-Daten in Outlook-Terminobjekte</span><span class="sxs-lookup"><span data-stu-id="ab16b-102">Import appointment XML data into Outlook appointment objects</span></span>
 
-<span data-ttu-id="d7dbc-103">In diesem Thema wird gezeigt, wie Termindaten im XML-Format gelesen, die Daten in Outlook [AppointmentItem](https://msdn.microsoft.com/library/bb645611\(v=office.15\)) -Objekten im Standardkalender gespeichert und die Terminobjekte in einem Array zurückgegeben werden.</span><span class="sxs-lookup"><span data-stu-id="d7dbc-103">This topic shows how to read appointment data formatted in XML, save the data to Outlook [AppointmentItem](https://msdn.microsoft.com/library/bb645611\(v=office.15\)) objects in the default calendar, and return the appointment objects in an array.</span></span>
+<span data-ttu-id="ab16b-103">In diesem Thema wird gezeigt, wie Termindaten im XML-Format gelesen, die Daten in Outlook [AppointmentItem](https://msdn.microsoft.com/library/bb645611\(v=office.15\)) -Objekten im Standardkalender gespeichert und die Terminobjekte in einem Array zurückgegeben werden.</span><span class="sxs-lookup"><span data-stu-id="ab16b-103">This topic shows how to read appointment data formatted in XML, save the data to Outlook [AppointmentItem](https://msdn.microsoft.com/library/bb645611\(v=office.15\)) objects in the default calendar, and return the appointment objects in an array.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d7dbc-104">Beispiel</span><span class="sxs-lookup"><span data-stu-id="d7dbc-104">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ab16b-104">Beispiel</span><span class="sxs-lookup"><span data-stu-id="ab16b-104">Example</span></span>
 
 > [!NOTE] 
-> <span data-ttu-id="d7dbc-105">Helmut Obertanner hat das folgende Codebeispiel bereitgestellt.</span><span class="sxs-lookup"><span data-stu-id="d7dbc-105">Helmut Obertanner provided the following code examples.</span></span> <span data-ttu-id="d7dbc-106">Helmut verfügt über Fachwissen zu Office Developer Tools für Visual Studio und Outlook.</span><span class="sxs-lookup"><span data-stu-id="d7dbc-106">Helmut's expertise is in Office Developer Tools for Visual Studio and Outlook.</span></span> 
+> <span data-ttu-id="ab16b-105">Helmut Obertanner hat das folgende Codebeispiel bereitgestellt.</span><span class="sxs-lookup"><span data-stu-id="ab16b-105">Helmut Obertanner provided the following code examples.</span></span> <span data-ttu-id="ab16b-106">Helmut verfügt über Fachwissen zu Office Developer Tools für Visual Studio und Outlook.</span><span class="sxs-lookup"><span data-stu-id="ab16b-106">Helmut's expertise is in Office Developer Tools for Visual Studio and Outlook.</span></span> 
 
 
-<span data-ttu-id="d7dbc-107">Die folgenden Codebeispiele enthalten die CreateAppointmentsFromXml-Methode der Sample-Klasse, die als Teil eines Outlook-Add-In-Projekts implementiert wird.</span><span class="sxs-lookup"><span data-stu-id="d7dbc-107">The following code examples contain the CreateAppointmentsFromXml method of the Sample class, implemented as part of an Outlook add-in project.</span></span> <span data-ttu-id="d7dbc-108">Jedes Projekt fügt einen Verweis auf die primäre Interopassembly für Outlook hinzu, der auf dem [Microsoft.Office.Interop.Outlook](https://msdn.microsoft.com/library/bb610835\(v=office.15\))-Namespace basiert.</span><span class="sxs-lookup"><span data-stu-id="d7dbc-108">Each project adds a reference to the Outlook Primary Interop Assembly, which is based on the [Microsoft.Office.Interop.Outlook](https://msdn.microsoft.com/library/bb610835\(v=office.15\)) namespace.</span></span>
+<span data-ttu-id="ab16b-107">Die folgenden Codebeispiele enthalten die CreateAppointmentsFromXml-Methode der Sample-Klasse, die als Teil eines Outlook-Add-In-Projekts implementiert wird.</span><span class="sxs-lookup"><span data-stu-id="ab16b-107">The following code examples contain the CreateAppointmentsFromXml method of the Sample class, implemented as part of an Outlook add-in project.</span></span> <span data-ttu-id="ab16b-108">Jedes Projekt fügt einen Verweis auf die primäre Interopassembly für Outlook hinzu, der auf dem [Microsoft.Office.Interop.Outlook](https://msdn.microsoft.com/library/bb610835\(v=office.15\))-Namespace basiert.</span><span class="sxs-lookup"><span data-stu-id="ab16b-108">Each project adds a reference to the Outlook Primary Interop Assembly, which is based on the [Microsoft.Office.Interop.Outlook](https://msdn.microsoft.com/library/bb610835\(v=office.15\)) namespace.</span></span>
 
-<span data-ttu-id="d7dbc-109">Die CreateAppointmentsFromXml-Methode akzeptiert zwei Eingabeparameter:</span><span class="sxs-lookup"><span data-stu-id="d7dbc-109">The CreateAppointmentsFromXml method accepts two input parameters:</span></span>
+<span data-ttu-id="ab16b-109">Die CreateAppointmentsFromXml-Methode akzeptiert zwei Eingabeparameter:</span><span class="sxs-lookup"><span data-stu-id="ab16b-109">The CreateAppointmentsFromXml method accepts two input parameters:</span></span>
 
-  - <span data-ttu-id="d7dbc-110">application ist ein vertrauenswürdiges [Application](https://msdn.microsoft.com/library/bb646615\(v=office.15\))-Objekt von Outlook.</span><span class="sxs-lookup"><span data-stu-id="d7dbc-110">application is a trusted Outlook [Application](https://msdn.microsoft.com/library/bb646615\(v=office.15\)) object.</span></span>
+  - <span data-ttu-id="ab16b-110">application ist ein vertrauenswürdiges [Application](https://msdn.microsoft.com/library/bb646615\(v=office.15\))-Objekt von Outlook.</span><span class="sxs-lookup"><span data-stu-id="ab16b-110">application is a trusted Outlook [Application](https://msdn.microsoft.com/library/bb646615\(v=office.15\)) object.</span></span>
 
-  - <span data-ttu-id="d7dbc-p103">xml ist entweder eine XML-Zeichenfolge oder eine Zeichenfolge, die einen Pfad zu einer gültigen XML-Datei darstellt. In den folgenden Codebeispielen begrenzt der XML-Code Termindaten mithilfe der folgenden XML-Tags:</span><span class="sxs-lookup"><span data-stu-id="d7dbc-p103">xml is either an XML string, or a string that represents a path to a valid XML file. For the purpose of the following code examples, the XML delimits appointment data by using the following XML tags:</span></span>
+  - <span data-ttu-id="ab16b-p103">xml ist entweder eine XML-Zeichenfolge oder eine Zeichenfolge, die einen Pfad zu einer gültigen XML-Datei darstellt. In den folgenden Codebeispielen begrenzt der XML-Code Termindaten mithilfe der folgenden XML-Tags:</span><span class="sxs-lookup"><span data-stu-id="ab16b-p103">xml is either an XML string, or a string that represents a path to a valid XML file. For the purpose of the following code examples, the XML delimits appointment data by using the following XML tags:</span></span>
     
     <table>
     <colgroup>
@@ -39,44 +39,44 @@ ms.locfileid: "32320062"
     </colgroup>
     <thead>
     <tr class="header">
-    <th><p><span data-ttu-id="d7dbc-113">Termindaten</span><span class="sxs-lookup"><span data-stu-id="d7dbc-113">Appointment data</span></span></p></th>
-    <th><p><span data-ttu-id="d7dbc-114">Trennendes XML-Tag</span><span class="sxs-lookup"><span data-stu-id="d7dbc-114">Delimiting XML tag</span></span></p></th>
+    <th><p><span data-ttu-id="ab16b-113">Termindaten</span><span class="sxs-lookup"><span data-stu-id="ab16b-113">Appointment data</span></span></p></th>
+    <th><p><span data-ttu-id="ab16b-114">Trennendes XML-Tag</span><span class="sxs-lookup"><span data-stu-id="ab16b-114">Delimiting XML tag</span></span></p></th>
     </tr>
     </thead>
     <tbody>
     <tr class="odd">
-    <td><p><span data-ttu-id="d7dbc-115">Gesamter Satz an Termindaten</span><span class="sxs-lookup"><span data-stu-id="d7dbc-115">Entire set of appointment data</span></span></p></td>
-    <td><p><span data-ttu-id="d7dbc-116">Termine</span><span class="sxs-lookup"><span data-stu-id="d7dbc-116">appointments</span></span></p></td>
+    <td><p><span data-ttu-id="ab16b-115">Gesamter Satz an Termindaten</span><span class="sxs-lookup"><span data-stu-id="ab16b-115">Entire set of appointment data</span></span></p></td>
+    <td><p><span data-ttu-id="ab16b-116">Termine</span><span class="sxs-lookup"><span data-stu-id="ab16b-116">appointments</span></span></p></td>
     </tr>
     <tr class="even">
-    <td><p><span data-ttu-id="d7dbc-117">Jeder Termine in der Gruppe</span><span class="sxs-lookup"><span data-stu-id="d7dbc-117">Each appointment in the set</span></span></p></td>
-    <td><p><span data-ttu-id="d7dbc-118">Termin</span><span class="sxs-lookup"><span data-stu-id="d7dbc-118">appointment</span></span></p></td>
+    <td><p><span data-ttu-id="ab16b-117">Jeder Termine in der Gruppe</span><span class="sxs-lookup"><span data-stu-id="ab16b-117">Each appointment in the set</span></span></p></td>
+    <td><p><span data-ttu-id="ab16b-118">Termin</span><span class="sxs-lookup"><span data-stu-id="ab16b-118">appointment</span></span></p></td>
     </tr>
     <tr class="odd">
-    <td><p><span data-ttu-id="d7dbc-119">Startzeit eines Termins</span><span class="sxs-lookup"><span data-stu-id="d7dbc-119">Start time of an appointment</span></span></p></td>
-    <td><p><span data-ttu-id="d7dbc-120">starttime</span><span class="sxs-lookup"><span data-stu-id="d7dbc-120">starttime</span></span></p></td>
+    <td><p><span data-ttu-id="ab16b-119">Startzeit eines Termins</span><span class="sxs-lookup"><span data-stu-id="ab16b-119">Start time of an appointment</span></span></p></td>
+    <td><p><span data-ttu-id="ab16b-120">starttime</span><span class="sxs-lookup"><span data-stu-id="ab16b-120">starttime</span></span></p></td>
     </tr>
     <tr class="even">
-    <td><p><span data-ttu-id="d7dbc-121">Endzeit eines Termins</span><span class="sxs-lookup"><span data-stu-id="d7dbc-121">End time of an appointment</span></span></p></td>
-    <td><p><span data-ttu-id="d7dbc-122">endtime</span><span class="sxs-lookup"><span data-stu-id="d7dbc-122">endtime</span></span></p></td>
+    <td><p><span data-ttu-id="ab16b-121">Endzeit eines Termins</span><span class="sxs-lookup"><span data-stu-id="ab16b-121">End time of an appointment</span></span></p></td>
+    <td><p><span data-ttu-id="ab16b-122">endtime</span><span class="sxs-lookup"><span data-stu-id="ab16b-122">endtime</span></span></p></td>
     </tr>
     <tr class="odd">
-    <td><p><span data-ttu-id="d7dbc-123">Titel eines Termins</span><span class="sxs-lookup"><span data-stu-id="d7dbc-123">Title of an appointment</span></span></p></td>
-    <td><p><span data-ttu-id="d7dbc-124">Betreff</span><span class="sxs-lookup"><span data-stu-id="d7dbc-124">subject</span></span></p></td>
+    <td><p><span data-ttu-id="ab16b-123">Titel eines Termins</span><span class="sxs-lookup"><span data-stu-id="ab16b-123">Title of an appointment</span></span></p></td>
+    <td><p><span data-ttu-id="ab16b-124">Betreff</span><span class="sxs-lookup"><span data-stu-id="ab16b-124">subject</span></span></p></td>
     </tr>
     <tr class="even">
-    <td><p><span data-ttu-id="d7dbc-125">Ort eines Termins</span><span class="sxs-lookup"><span data-stu-id="d7dbc-125">Location of an appointment</span></span></p></td>
-    <td><p><span data-ttu-id="d7dbc-126">location</span><span class="sxs-lookup"><span data-stu-id="d7dbc-126">location</span></span></p></td>
+    <td><p><span data-ttu-id="ab16b-125">Ort eines Termins</span><span class="sxs-lookup"><span data-stu-id="ab16b-125">Location of an appointment</span></span></p></td>
+    <td><p><span data-ttu-id="ab16b-126">location</span><span class="sxs-lookup"><span data-stu-id="ab16b-126">location</span></span></p></td>
     </tr>
     <tr class="odd">
-    <td><p><span data-ttu-id="d7dbc-127">Details eines Termins</span><span class="sxs-lookup"><span data-stu-id="d7dbc-127">Details of an appointment</span></span></p></td>
-    <td><p><span data-ttu-id="d7dbc-128">body</span><span class="sxs-lookup"><span data-stu-id="d7dbc-128">body</span></span></p></td>
+    <td><p><span data-ttu-id="ab16b-127">Details eines Termins</span><span class="sxs-lookup"><span data-stu-id="ab16b-127">Details of an appointment</span></span></p></td>
+    <td><p><span data-ttu-id="ab16b-128">body</span><span class="sxs-lookup"><span data-stu-id="ab16b-128">body</span></span></p></td>
     </tr>
     </tbody>
     </table>
 
 
-<span data-ttu-id="d7dbc-129">Das folgende Beispiel zeigt Eingabedaten für den *xml*-Parameter.</span><span class="sxs-lookup"><span data-stu-id="d7dbc-129">The following example shows input data for the *xml* parameter.</span></span>
+<span data-ttu-id="ab16b-129">Das folgende Beispiel zeigt Eingabedaten für den *xml*-Parameter.</span><span class="sxs-lookup"><span data-stu-id="ab16b-129">The following example shows input data for the *xml* parameter.</span></span>
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?> 
@@ -105,13 +105,13 @@ ms.locfileid: "32320062"
 </appointments>
 ```
 
-<span data-ttu-id="d7dbc-p104">Die CreateAppointmentsFromXml-Methode arbeitet mit der Microsoft COM-Implementierung des XML-Dokumentobjektmodells (DOM) zum Laden und Verarbeiten der XML-Daten, die xml bereitstellt. CreateAppointmentsFromXml überprüft zuerst, ob xml eine gültige XML-Datenquelle angibt. Falls ja, werden die Daten in ein XML-Dokument ([DOMDocument](https://msdn.microsoft.com/library/ms756987\(v=office.15\))) geladen. Andernfalls löst CreateAppointmentsFromXml eine Ausnahme aus. Weitere Informationen zum XML-DOM finden Sie unter [DOM](https://msdn.microsoft.com/library/ms766487\(v=office.15\)).</span><span class="sxs-lookup"><span data-stu-id="d7dbc-p104">The CreateAppointmentsFromXml method uses the Microsoft COM implementation of the XML Document Object Model (DOM) to load and process the XML data that xml provides. CreateAppointmentsFromXml first checks whether xml specifies a valid source of XML data. If so, it loads the data into an XML document, [DOMDocument](https://msdn.microsoft.com/library/ms756987\(v=office.15\)). Otherwise, CreateAppointmentsFromXml throws an exception. For more information about the XML DOM, see [DOM](https://msdn.microsoft.com/library/ms766487\(v=office.15\)).</span></span>
+<span data-ttu-id="ab16b-p104">Die CreateAppointmentsFromXml-Methode arbeitet mit der Microsoft COM-Implementierung des XML-Dokumentobjektmodells (DOM) zum Laden und Verarbeiten der XML-Daten, die xml bereitstellt. CreateAppointmentsFromXml überprüft zuerst, ob xml eine gültige XML-Datenquelle angibt. Falls ja, werden die Daten in ein XML-Dokument ([DOMDocument](https://msdn.microsoft.com/library/ms756987\(v=office.15\))) geladen. Andernfalls löst CreateAppointmentsFromXml eine Ausnahme aus. Weitere Informationen zum XML-DOM finden Sie unter [DOM](https://msdn.microsoft.com/library/ms766487\(v=office.15\)).</span><span class="sxs-lookup"><span data-stu-id="ab16b-p104">The CreateAppointmentsFromXml method uses the Microsoft COM implementation of the XML Document Object Model (DOM) to load and process the XML data that xml provides. CreateAppointmentsFromXml first checks whether xml specifies a valid source of XML data. If so, it loads the data into an XML document, [DOMDocument](https://msdn.microsoft.com/library/ms756987\(v=office.15\)). Otherwise, CreateAppointmentsFromXml throws an exception. For more information about the XML DOM, see [DOM](https://msdn.microsoft.com/library/ms766487\(v=office.15\)).</span></span>
 
-<span data-ttu-id="d7dbc-135">Für jeden untergeordneten Terminknoten, der vom appointment-Tag in den XML-Daten begrenzt wird, sucht CreateAppointmentsFromXml nach spezifischen Tags, verwendet das DOM zum Extrahieren der Daten und weist die Daten den entsprechenden Eigenschaften eines **AppointmentItem**-Objekts zu: [Start](https://msdn.microsoft.com/library/bb647263\(v=office.15\)), [End](https://msdn.microsoft.com/library/bb623715\(v=office.15\)), [Subject](https://msdn.microsoft.com/library/bb611653\(v=office.15\)), [Location](https://msdn.microsoft.com/library/bb608946\(v=office.15\)) und [Body](https://msdn.microsoft.com/library/bb644880\(v=office.15\)).</span><span class="sxs-lookup"><span data-stu-id="d7dbc-135">For each appointment child node delimited by the appointment tag in the XML data, CreateAppointmentsFromXml looks for specific tags, uses the DOM to extract the data, and assigns the data to corresponding properties of an **AppointmentItem** object: [Start](https://msdn.microsoft.com/library/bb647263\(v=office.15\)), [End](https://msdn.microsoft.com/library/bb623715\(v=office.15\)), [Subject](https://msdn.microsoft.com/library/bb611653\(v=office.15\)), [Location](https://msdn.microsoft.com/library/bb608946\(v=office.15\)), and [Body](https://msdn.microsoft.com/library/bb644880\(v=office.15\)).</span></span> <span data-ttu-id="d7dbc-136">CreateAppointmentsFromXml speichert anschließend den Termin im Standardkalender.</span><span class="sxs-lookup"><span data-stu-id="d7dbc-136">CreateAppointmentsFromXml then saves the appointment to the default calendar.</span></span>
+<span data-ttu-id="ab16b-135">Für jeden untergeordneten Terminknoten, der vom appointment-Tag in den XML-Daten begrenzt wird, sucht CreateAppointmentsFromXml nach spezifischen Tags, verwendet das DOM zum Extrahieren der Daten und weist die Daten den entsprechenden Eigenschaften eines **AppointmentItem**-Objekts zu: [Start](https://msdn.microsoft.com/library/bb647263\(v=office.15\)), [End](https://msdn.microsoft.com/library/bb623715\(v=office.15\)), [Subject](https://msdn.microsoft.com/library/bb611653\(v=office.15\)), [Location](https://msdn.microsoft.com/library/bb608946\(v=office.15\)) und [Body](https://msdn.microsoft.com/library/bb644880\(v=office.15\)).</span><span class="sxs-lookup"><span data-stu-id="ab16b-135">For each appointment child node delimited by the appointment tag in the XML data, CreateAppointmentsFromXml looks for specific tags, uses the DOM to extract the data, and assigns the data to corresponding properties of an **AppointmentItem** object: [Start](https://msdn.microsoft.com/library/bb647263\(v=office.15\)), [End](https://msdn.microsoft.com/library/bb623715\(v=office.15\)), [Subject](https://msdn.microsoft.com/library/bb611653\(v=office.15\)), [Location](https://msdn.microsoft.com/library/bb608946\(v=office.15\)), and [Body](https://msdn.microsoft.com/library/bb644880\(v=office.15\)).</span></span> <span data-ttu-id="ab16b-136">CreateAppointmentsFromXml speichert anschließend den Termin im Standardkalender.</span><span class="sxs-lookup"><span data-stu-id="ab16b-136">CreateAppointmentsFromXml then saves the appointment to the default calendar.</span></span>
 
-<span data-ttu-id="d7dbc-137">CreateAppointmentsFromXml verwendet die [Add](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.add?view=netframework-4.7.2)-Methode der [List\<T\>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1?view=netframework-4.7.2)-Klasse im [System.Collections.Generic](https://docs.microsoft.com/dotnet/api/system.collections.generic?view=netframework-4.7.2)-Namespace zum Aggregieren dieser AppointmentItem-Objekte.</span><span class="sxs-lookup"><span data-stu-id="d7dbc-137">CreateAppointmentsFromXml uses the [Add](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.add?view=netframework-4.7.2) method of the [List\<T\>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1?view=netframework-4.7.2) class in the [System.Collections.Generic](https://docs.microsoft.com/dotnet/api/system.collections.generic?view=netframework-4.7.2) namespace to aggregate these AppointmentItem objects.</span></span> <span data-ttu-id="d7dbc-138">Wenn die Methode alle Termine in den XML-Daten verarbeitet hat, gibt sie die AppointmentItem-Objekte in einem Array zurück.</span><span class="sxs-lookup"><span data-stu-id="d7dbc-138">When the method has processed all the appointments in the XML data, it returns the AppointmentItem objects in an array.</span></span>
+<span data-ttu-id="ab16b-137">CreateAppointmentsFromXml verwendet die [Add](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.add?view=netframework-4.7.2)-Methode der [List\<T\>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1?view=netframework-4.7.2)-Klasse im [System.Collections.Generic](https://docs.microsoft.com/dotnet/api/system.collections.generic?view=netframework-4.7.2)-Namespace zum Aggregieren dieser AppointmentItem-Objekte.</span><span class="sxs-lookup"><span data-stu-id="ab16b-137">CreateAppointmentsFromXml uses the [Add](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.add?view=netframework-4.7.2) method of the [List\<T\>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1?view=netframework-4.7.2) class in the [System.Collections.Generic](https://docs.microsoft.com/dotnet/api/system.collections.generic?view=netframework-4.7.2) namespace to aggregate these AppointmentItem objects.</span></span> <span data-ttu-id="ab16b-138">Wenn die Methode alle Termine in den XML-Daten verarbeitet hat, gibt sie die AppointmentItem-Objekte in einem Array zurück.</span><span class="sxs-lookup"><span data-stu-id="ab16b-138">When the method has processed all the appointments in the XML data, it returns the AppointmentItem objects in an array.</span></span>
 
-<span data-ttu-id="d7dbc-139">Wenn Sie Visual Studio verwenden, um dieses Codebeispiel zu testen, müssen Sie der Microsoft Outlook 15.0-Objektbibliothekkomponente zuerst einen Verweis hinzufügen und die Outlook-Variable angeben, wenn Sie den **Microsoft.Office.Interop.Outlook**-Namespace importieren.</span><span class="sxs-lookup"><span data-stu-id="d7dbc-139">If you use Visual Studio to test this code example, you must first add a reference to the Microsoft Outlook 15.0 Object Library component and specify the Outlook variable when you import the **Microsoft.Office.Interop.Outlook** namespace.</span></span> <span data-ttu-id="d7dbc-140">Die Anweisung **Imports** oder **using** darf im Codebeispiel nicht direkt vor den Funktionen stehen, sondern muss vor der öffentlichen Class-Deklaration hinzugefügt werden.</span><span class="sxs-lookup"><span data-stu-id="d7dbc-140">The **Imports** or **using** statement must not occur directly before the functions in the code example but must be added before the public Class declaration.</span></span> <span data-ttu-id="d7dbc-141">Die folgenden Codezeilen zeigen, wie Sie den Import und die Zuweisung in Visual Basic und C\# vornehmen.</span><span class="sxs-lookup"><span data-stu-id="d7dbc-141">The following lines of code show how to do the import and assignment in Visual Basic and C\#.</span></span>
+<span data-ttu-id="ab16b-139">Wenn Sie Visual Studio verwenden, um dieses Codebeispiel zu testen, müssen Sie der Microsoft Outlook 15.0-Objektbibliothekkomponente zuerst einen Verweis hinzufügen und die Outlook-Variable angeben, wenn Sie den **Microsoft.Office.Interop.Outlook**-Namespace importieren.</span><span class="sxs-lookup"><span data-stu-id="ab16b-139">If you use Visual Studio to test this code example, you must first add a reference to the Microsoft Outlook 15.0 Object Library component and specify the Outlook variable when you import the **Microsoft.Office.Interop.Outlook** namespace.</span></span> <span data-ttu-id="ab16b-140">Die Anweisung **Imports** oder **using** darf im Codebeispiel nicht direkt vor den Funktionen stehen, sondern muss vor der öffentlichen Class-Deklaration hinzugefügt werden.</span><span class="sxs-lookup"><span data-stu-id="ab16b-140">The **Imports** or **using** statement must not occur directly before the functions in the code example but must be added before the public Class declaration.</span></span> <span data-ttu-id="ab16b-141">Die folgenden Codezeilen zeigen, wie Sie den Import und die Zuweisung in Visual Basic und C\# vornehmen.</span><span class="sxs-lookup"><span data-stu-id="ab16b-141">The following lines of code show how to do the import and assignment in Visual Basic and C\#.</span></span>
 
 
 ```vb
@@ -124,7 +124,7 @@ Imports Outlook = Microsoft.Office.Interop.Outlook
 using Outlook = Microsoft.Office.Interop.Outlook;
 ```
 
-<span data-ttu-id="d7dbc-142">Es folgen das Visual Basic-Codebeispiel und anschließend das C\#-Codebeispiel.</span><span class="sxs-lookup"><span data-stu-id="d7dbc-142">The following is the Visual Basic code example, followed by the C\# code example.</span></span>
+<span data-ttu-id="ab16b-142">Es folgen das Visual Basic-Codebeispiel und anschließend das C\#-Codebeispiel.</span><span class="sxs-lookup"><span data-stu-id="ab16b-142">The following is the Visual Basic code example, followed by the C\# code example.</span></span>
 
 
 
@@ -292,7 +292,7 @@ namespace OutlookAddIn1
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="d7dbc-143">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="d7dbc-143">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ab16b-143">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="ab16b-143">See also</span></span>
 
-- [<span data-ttu-id="d7dbc-144">Termine</span><span class="sxs-lookup"><span data-stu-id="d7dbc-144">Appointments</span></span>](appointments.md)
+- [<span data-ttu-id="ab16b-144">Termine</span><span class="sxs-lookup"><span data-stu-id="ab16b-144">Appointments</span></span>](appointments.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagdefcreatemailuser (-Eigenschaft
+title: PidTagDefCreateMailuser (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,48 +19,48 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33407480"
 ---
-# <a name="pidtagdefcreatemailuser-canonical-property"></a><span data-ttu-id="150df-103">Kanonische Pidtagdefcreatemailuser (-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="150df-103">PidTagDefCreateMailuser Canonical Property</span></span>
+# <a name="pidtagdefcreatemailuser-canonical-property"></a><span data-ttu-id="1b8d0-103">PidTagDefCreateMailuser (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="1b8d0-103">PidTagDefCreateMailuser Canonical Property</span></span>
 
   
   
-<span data-ttu-id="150df-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="150df-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="1b8d0-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="1b8d0-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="150df-105">Enthält den Vorlagen Eintragsbezeichner für ein Standardmäßiges Messaging-Benutzerobjekt.</span><span class="sxs-lookup"><span data-stu-id="150df-105">Contains the template entry identifier for a default messaging user object.</span></span> 
+<span data-ttu-id="1b8d0-105">Enthält die Vorlageneintrags-ID für ein Standardmäßiges Messagingbenutzerobjekt.</span><span class="sxs-lookup"><span data-stu-id="1b8d0-105">Contains the template entry identifier for a default messaging user object.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="150df-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="150df-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="150df-107">PR_DEF_CREATE_MAILUSER</span><span class="sxs-lookup"><span data-stu-id="150df-107">PR_DEF_CREATE_MAILUSER</span></span>  <br/> |
-|<span data-ttu-id="150df-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="150df-108">Identifier:</span></span>  <br/> |<span data-ttu-id="150df-109">0x3612</span><span class="sxs-lookup"><span data-stu-id="150df-109">0x3612</span></span>  <br/> |
-|<span data-ttu-id="150df-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="150df-110">Data type:</span></span>  <br/> |<span data-ttu-id="150df-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="150df-111">PT_BINARY</span></span>  <br/> |
-|<span data-ttu-id="150df-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="150df-112">Area:</span></span>  <br/> |<span data-ttu-id="150df-113">Adressbuch</span><span class="sxs-lookup"><span data-stu-id="150df-113">Address book</span></span>  <br/> |
+|<span data-ttu-id="1b8d0-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="1b8d0-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="1b8d0-107">PR_DEF_CREATE_MAILUSER</span><span class="sxs-lookup"><span data-stu-id="1b8d0-107">PR_DEF_CREATE_MAILUSER</span></span>  <br/> |
+|<span data-ttu-id="1b8d0-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="1b8d0-108">Identifier:</span></span>  <br/> |<span data-ttu-id="1b8d0-109">0x3612</span><span class="sxs-lookup"><span data-stu-id="1b8d0-109">0x3612</span></span>  <br/> |
+|<span data-ttu-id="1b8d0-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="1b8d0-110">Data type:</span></span>  <br/> |<span data-ttu-id="1b8d0-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="1b8d0-111">PT_BINARY</span></span>  <br/> |
+|<span data-ttu-id="1b8d0-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="1b8d0-112">Area:</span></span>  <br/> |<span data-ttu-id="1b8d0-113">Adressbuch</span><span class="sxs-lookup"><span data-stu-id="1b8d0-113">Address book</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="150df-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="150df-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="1b8d0-114">Hinweise</span><span class="sxs-lookup"><span data-stu-id="1b8d0-114">Remarks</span></span>
 
-<span data-ttu-id="150df-115">Client Anwendungen verwenden diese Eigenschaft, um ein Messaging-Benutzerobjekt in einem Container zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="150df-115">Client applications use this property to create a messaging user object within a container.</span></span> <span data-ttu-id="150df-116">Die Unterstützung der Eintragserstellung ist für Adressbuchcontainer optional. diejenigen, die es nicht unterstützen, müssen diese Eigenschaft nicht offen legen.</span><span class="sxs-lookup"><span data-stu-id="150df-116">Support of entry creation is optional for address book containers; those that do not support it are not required to expose this property.</span></span> 
+<span data-ttu-id="1b8d0-115">Clientanwendungen verwenden diese Eigenschaft, um ein Messagingbenutzerobjekt in einem Container zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="1b8d0-115">Client applications use this property to create a messaging user object within a container.</span></span> <span data-ttu-id="1b8d0-116">Die Unterstützung der Eintragserstellung ist für Adressbuchcontainer optional. Diejenigen, die sie nicht unterstützen, müssen diese Eigenschaft nicht verfügbar machen.</span><span class="sxs-lookup"><span data-stu-id="1b8d0-116">Support of entry creation is optional for address book containers; those that do not support it are not required to expose this property.</span></span> 
   
-<span data-ttu-id="150df-117">Diese Eigenschaft gibt einen Eintrag an, der in der **PR_CREATE_TEMPLATES** ([pidtagcreatetemplates (](pidtagcreatetemplates-canonical-property.md))-Eigenschaft für Messagingbenutzer angezeigt werden kann.</span><span class="sxs-lookup"><span data-stu-id="150df-117">This property specifies an entry that can appear in the **PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) property for messaging users.</span></span> <span data-ttu-id="150df-118">Nach dem Abrufen des Bezeichners verwendet der Client diesen bei einem Aufruf der [IABContainer:: CreateEntry](iabcontainer-createentry.md) -Methode.</span><span class="sxs-lookup"><span data-stu-id="150df-118">After obtaining the identifier, the client uses it in a call to the [IABContainer::CreateEntry](iabcontainer-createentry.md) method.</span></span> <span data-ttu-id="150df-119">Der Eintrag stellt die Vorlage für den standardmäßigen Messagingbenutzer dar.</span><span class="sxs-lookup"><span data-stu-id="150df-119">The entry represents the template for the default messaging user.</span></span> 
+<span data-ttu-id="1b8d0-117">Diese Eigenschaft gibt einen Eintrag an, der in der **PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) -Eigenschaft für Messagingbenutzer angezeigt werden kann.</span><span class="sxs-lookup"><span data-stu-id="1b8d0-117">This property specifies an entry that can appear in the **PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) property for messaging users.</span></span> <span data-ttu-id="1b8d0-118">Nach dem Abrufen des Bezeichners verwendet der Client ihn in einem Aufruf der [IABContainer::CreateEntry-Methode.](iabcontainer-createentry.md)</span><span class="sxs-lookup"><span data-stu-id="1b8d0-118">After obtaining the identifier, the client uses it in a call to the [IABContainer::CreateEntry](iabcontainer-createentry.md) method.</span></span> <span data-ttu-id="1b8d0-119">Der Eintrag stellt die Vorlage für den Standardnachrichtenbenutzer dar.</span><span class="sxs-lookup"><span data-stu-id="1b8d0-119">The entry represents the template for the default messaging user.</span></span> 
   
-## <a name="related-resources"></a><span data-ttu-id="150df-120">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="150df-120">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="1b8d0-120">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="1b8d0-120">Related resources</span></span>
 
-### <a name="header-files"></a><span data-ttu-id="150df-121">Header Dateien</span><span class="sxs-lookup"><span data-stu-id="150df-121">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="1b8d0-121">Headerdateien</span><span class="sxs-lookup"><span data-stu-id="1b8d0-121">Header files</span></span>
 
-<span data-ttu-id="150df-122">Mapidefs. h</span><span class="sxs-lookup"><span data-stu-id="150df-122">Mapidefs.h</span></span>
+<span data-ttu-id="1b8d0-122">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="1b8d0-122">Mapidefs.h</span></span>
   
-> <span data-ttu-id="150df-123">Stellt Datentypdefinitionen bereit.</span><span class="sxs-lookup"><span data-stu-id="150df-123">Provides data type definitions.</span></span>
+> <span data-ttu-id="1b8d0-123">Bietet Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="1b8d0-123">Provides data type definitions.</span></span>
     
-<span data-ttu-id="150df-124">Mapitags. h</span><span class="sxs-lookup"><span data-stu-id="150df-124">Mapitags.h</span></span>
+<span data-ttu-id="1b8d0-124">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="1b8d0-124">Mapitags.h</span></span>
   
-> <span data-ttu-id="150df-125">Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.</span><span class="sxs-lookup"><span data-stu-id="150df-125">Contains definitions of properties listed as associated properties.</span></span>
+> <span data-ttu-id="1b8d0-125">Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.</span><span class="sxs-lookup"><span data-stu-id="1b8d0-125">Contains definitions of properties listed as associated properties.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="150df-126">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="150df-126">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1b8d0-126">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="1b8d0-126">See also</span></span>
 
 
 
-[<span data-ttu-id="150df-127">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="150df-127">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="1b8d0-127">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="1b8d0-127">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="150df-128">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="150df-128">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="1b8d0-128">KANONISCHE EIGENSCHAFTEN VON MAPI</span><span class="sxs-lookup"><span data-stu-id="1b8d0-128">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="150df-129">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="150df-129">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="1b8d0-129">Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="1b8d0-129">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="150df-130">Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="150df-130">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="1b8d0-130">Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="1b8d0-130">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

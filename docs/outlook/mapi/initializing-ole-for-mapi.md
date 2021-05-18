@@ -15,12 +15,12 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32317227"
 ---
-# <a name="initializing-ole-for-mapi"></a><span data-ttu-id="c1d43-103">Initialisieren von OLE für MAPI</span><span class="sxs-lookup"><span data-stu-id="c1d43-103">Initializing OLE for MAPI</span></span>
+# <a name="initializing-ole-for-mapi"></a><span data-ttu-id="db65d-103">Initialisieren von OLE für MAPI</span><span class="sxs-lookup"><span data-stu-id="db65d-103">Initializing OLE for MAPI</span></span>
 
   
   
-<span data-ttu-id="c1d43-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="c1d43-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="db65d-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="db65d-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="c1d43-105">Wenn Sie auch OLE verwenden, rufen Sie die OLE-Funktion [OleInitialize](https://msdn.microsoft.com/library/ms690134%28v=VS.85%29.aspx) auf, um die OLE-Bibliotheken zu initialisieren.</span><span class="sxs-lookup"><span data-stu-id="c1d43-105">If you also use OLE, call the OLE function [OleInitialize](https://msdn.microsoft.com/library/ms690134%28v=VS.85%29.aspx) to initialize the OLE libraries.</span></span> <span data-ttu-id="c1d43-106">**OleInitialize** initialisiert globale Daten für die Sitzung und bereitet die OLE-Bibliotheken so vor, dass Sie Anrufe annehmen.</span><span class="sxs-lookup"><span data-stu-id="c1d43-106">**OleInitialize** initializes global data for the session and prepares the OLE libraries to accept calls.</span></span> <span data-ttu-id="c1d43-107">Informationen zum Aufrufen von **OleInitialize**finden Sie im Windows SDK.</span><span class="sxs-lookup"><span data-stu-id="c1d43-107">For information about calling **OleInitialize**, see the Windows SDK.</span></span>
+<span data-ttu-id="db65d-105">Wenn Sie auch OLE verwenden, rufen Sie die OLE-Funktion [OleInitialize](https://msdn.microsoft.com/library/ms690134%28v=VS.85%29.aspx) auf, um die OLE-Bibliotheken zu initialisieren.</span><span class="sxs-lookup"><span data-stu-id="db65d-105">If you also use OLE, call the OLE function [OleInitialize](https://msdn.microsoft.com/library/ms690134%28v=VS.85%29.aspx) to initialize the OLE libraries.</span></span> <span data-ttu-id="db65d-106">**OleInitialize** initialisiert globale Daten für die Sitzung und bereitet die OLE-Bibliotheken auf die Annahme von Anrufen vor.</span><span class="sxs-lookup"><span data-stu-id="db65d-106">**OleInitialize** initializes global data for the session and prepares the OLE libraries to accept calls.</span></span> <span data-ttu-id="db65d-107">Informationen zum Aufrufen von **OleInitialize** finden Sie im Windows SDK.</span><span class="sxs-lookup"><span data-stu-id="db65d-107">For information about calling **OleInitialize**, see the Windows SDK.</span></span>
   
 
