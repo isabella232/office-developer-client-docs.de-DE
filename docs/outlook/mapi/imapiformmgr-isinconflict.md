@@ -25,7 +25,7 @@ ms.locfileid: "33412884"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bestimmt, ob ein Formular eigene Nachrichten Konflikte verarbeiten kann. Eine Nachricht ist in Konflikt, wenn Sie von mehreren Benutzern gleichzeitig bearbeitet wurde. Dies kann mit Nachrichten in öffentlichen Ordnern geschehen.
+Bestimmt, ob ein Formular eigene Nachrichtenkonflikte verarbeiten kann. Eine Nachricht ist in Konflikt, wenn sie von mehreren Benutzern gleichzeitig bearbeitet wurde. Dies kann bei Nachrichten in öffentlichen Ordnern passieren.
   
 ```cpp
 HRESULT IsInConflict(
@@ -39,39 +39,39 @@ HRESULT IsInConflict(
 
  _ulMessageFlags_
   
-> in Ein Zeiger auf eine Bitmaske von Flags, die aus der **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))-Eigenschaft einer Nachricht kopiert werden, die den aktuellen Status der Nachricht angibt.
+> [in] Ein Zeiger auf eine Bitmaske von **Flags,** die aus der PR_MESSAGE_FLAGS ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))-Eigenschaft einer Nachricht kopiert wurden, die den aktuellen Status der Nachricht angibt.
     
  _ulMessageStatus_
   
-> in Eine Bitmaske von Client definierten oder Anbieter definierten Flags, die aus der **PR_MSG_STATUS** ([pidtagmessagestatus (](pidtagmessagestatus-canonical-property.md))-Eigenschaft einer Nachricht kopiert werden, die zusätzliche Informationen zum Status der Nachricht bereitstellt.
+> [in] Eine Bitmaske mit client- oder anbieterdefinierten **Flags,** die aus der PR_MSG_STATUS ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md))-Eigenschaft einer Nachricht kopiert wurden, die zusätzliche Informationen zum Status der Nachricht enthält.
     
  _szMessageClass_
   
-> in Eine Zeichenfolge, die die Nachrichtenklasse der Nachricht benennt.
+> [in] Eine Zeichenfolge, die die Nachrichtenklasse der Nachricht benennt.
     
  _pFolderFocus_
   
-> in Ein Zeiger auf den Ordner, der die Nachricht enthält. Der _pFolderFocus_ -Parameter kann NULL sein, wenn ein solcher Ordner nicht vorhanden ist (beispielsweise, wenn die Nachricht in eine andere Nachricht eingebettet ist). 
+> [in] Ein Zeiger auf den Ordner, der die Nachricht enthält. Der  _pFolderFocus-Parameter_ kann NULL sein, wenn ein solcher Ordner nicht vorhanden ist (z. B. wenn die Nachricht in eine andere Nachricht eingebettet ist). 
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Das Formular verarbeitet keine eigenen Nachrichten Konflikte.
+> Das Formular kann keine eigenen Nachrichtenkonflikte verarbeiten.
     
 S_FALSE 
   
-> Das Formular verarbeitet eigene Nachrichten Konflikte, oder die Nachricht, für die Informationen übergeben wurden, ist nicht in Konflikt.
+> Das Formular verarbeitet eigene Nachrichtenkonflikte, oder die Nachricht, für die Informationen übergeben wurden, ist nicht in Konflikt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Formular Betrachter rufen die **IMAPIFormMgr:: IsInConflict** -Methode auf, um zu ermitteln, ob ein bestimmtes Formular eigene Nachrichten Konflikte nicht verarbeitet. **IsInConflict** überprüft die Bitmasken in den Parametern _ulMessageFlags_ und _ulMessageStatus_ auf das vorhanden sein eines Konflikt Kennzeichens. Wenn ein Konflikt-Flag festgelegt ist, löst **IsInConflict** die Nachrichtenklasse, die im Parameter _szMessageClass_ übergeben wird, und gibt S_OK zurück, wenn das Formular Ihre eigenen Konflikte nicht behandelt. **IsInConflict** gibt S_FALSE zurück, wenn das Formular eigene Konflikte behandelt. 
+Formularbetrachter rufen die **IMAPIFormMgr::IsInConflict-Methode** auf, um zu ermitteln, ob ein bestimmtes Formular keine eigenen Nachrichtenkonflikte verarbeiten kann. **IsInConflict** überprüft die Bitmasken in den  _Parametern ulMessageFlags_ und  _ulMessageStatus_ auf das Vorhandensein eines Konfliktflags. Wenn ein Konfliktflag festgelegt ist, löst **IsInConflict** die im  _szMessageClass-Parameter_ übergebene Nachrichtenklasse auf und gibt S_OK zurück, wenn das Formular keine eigenen Konflikte verarbeiten kann. **IsInConflict** gibt S_FALSE zurück, wenn das Formular eigene Konflikte verarbeitet. 
   
-Ein Formular, das seine eigenen Konflikte nicht behandelt, muss mithilfe der [IMAPIFormMgr:: LoadForm](imapiformmgr-loadform.md) -Methode geöffnet werden und kann kein vorhandenes Form-Objekt wieder verwenden. 
+Ein Formular, das keine eigenen Konflikte verarbeiten kann, muss mithilfe der [IMAPIFormMgr::LoadForm-Methode](imapiformmgr-loadform.md) geöffnet werden und kann kein vorhandenes Formularobjekt wiederverwenden. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Client Anwendungen müssen in der Regelkonflikte bewältigen, wenn die Anwendungen von einer Nachricht zur nächsten oder zur vorherigen Nachricht in einem Ordner wechseln. Wenn eine Nachricht in Konflikt steht, aber der Formularserver für diese Nachricht Konflikte verarbeiten kann, sollte die Clientanwendung den üblichen Code zum Anzeigen der nächsten oder vorherigen Nachricht ausführen. Wenn der Formularserver Konflikte nicht verarbeiten kann, sollte die Clientanwendung fortgesetzt werden, als ob Sie die Nachrichtenklasse der nächsten oder vorherigen Nachricht nicht kennen würde. 
+Clientanwendungen müssen in der Regel mit Konflikten umgehen, wenn die Anwendungen von einer Nachricht zur nächsten oder vorherigen Nachricht in einem Ordner wechseln. Wenn eine Nachricht in Konflikt steht, aber der Formularserver für diese Nachricht Konflikte verarbeiten kann, sollte die Clientanwendung ihren üblichen Code zum Anzeigen der nächsten oder vorherigen Nachricht ausführen. Wenn der Formularserver Konflikte nicht verarbeiten kann, sollte die Clientanwendung so fortfahren, als wäre ihr die Nachrichtenklasse der nächsten oder vorherigen Nachricht nicht bekannt. 
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -79,9 +79,9 @@ Client Anwendungen müssen in der Regelkonflikte bewältigen, wenn die Anwendung
 
 [IMAPIFormAdviseSink::OnActivateNext](imapiformadvisesink-onactivatenext.md)
   
-[Kanonische PidTagMessageFlags-Eigenschaft](pidtagmessageflags-canonical-property.md)
+[PidTagMessageFlags (kanonische Eigenschaft)](pidtagmessageflags-canonical-property.md)
   
-[Kanonische Pidtagmessagestatus (-Eigenschaft](pidtagmessagestatus-canonical-property.md)
+[PidTagMessageStatus (kanonische Eigenschaft)](pidtagmessagestatus-canonical-property.md)
   
 [IMAPIFormMgr : IUnknown](imapiformmgriunknown.md)
 

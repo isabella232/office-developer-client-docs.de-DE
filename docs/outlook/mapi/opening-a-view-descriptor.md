@@ -19,18 +19,18 @@ ms.locfileid: "33413038"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Viele Ordner können mit einer Normalansicht, einer Standardansicht oder einer beliebigen Anzahl von personalisierten Ansichten geöffnet werden. In einer Ansicht wird beschrieben, wie der Inhalt eines Ordners angezeigt wird. Die Normalansicht wird verwendet, wenn keine Alternative Ansicht vorhanden ist und Sie den Ordner zum ersten Mal öffnen. Wenn eine Alternative Ansicht vorhanden ist, müssen Sie Sie verwenden, um den Ordner zu öffnen.
+Viele Ordner können mit einer normalen Ansicht, einer Standardansicht oder einer beliebigen Anzahl personalisierter Ansichten geöffnet werden. In einer Ansicht wird beschrieben, wie der Inhalt eines Ordners angezeigt wird. Die Normalansicht wird verwendet, wenn es keine alternative Ansicht gibt und Sie den Ordner zum ersten Mal öffnen. Wenn eine alternative Ansicht vorhanden ist, müssen Sie sie zum Öffnen des Ordners verwenden.
   
-Eine Ansicht wird in einer Nachricht beschrieben, die als Ansichts Deskriptor bezeichnet wird. Ansichts Deskriptoren werden in der Regel als zugeordnete Nachrichten erstellt und können in den Ordnern allgemeine oder persönliche Ansicht oder in einem beliebigen IPM-Ordner angezeigt werden.
+Eine Ansicht wird in einer Meldung beschrieben, die als Ansichtsdeskriptor bezeichnet wird. Ansichtsdeskriptoren werden in der Regel als zugeordnete Nachrichten erstellt und können entweder in den allgemeinen oder persönlichen Ansichtsordnern oder in einem beliebigen IPM-Ordner angezeigt werden.
   
-### <a name="to-open-a-view-descriptor"></a>So öffnen Sie einen Ansichts Deskriptor
+### <a name="to-open-a-view-descriptor"></a>So öffnen Sie einen Ansichtsdeskriptor
   
-1. Rufen Sie [IMAPIContainer::](imapicontainer-getcontentstable.md) getcontentable auf, um die zugeordnete Inhaltstabelle für den Ordner abzurufen. 
+1. Rufen [Sie IMAPIContainer::GetContentsTable auf,](imapicontainer-getcontentstable.md) um die zugeordnete Inhaltstabelle für den Ordner abzurufen. 
     
-2. Erstellen Sie eine Einschränkung, die nur Nachrichten sucht, deren Nachrichtenklasse für Ansichts Deskriptoren reserviert ist, und rufen Sie [IMAPITable:: Restrict](imapitable-restrict.md) auf, um die Tabelle zu begrenzen, und [IMAPITable:: QueryRows](imapitable-queryrows.md) , um die entsprechenden Zeilen abzurufen, oder...
+2. Erstellen Sie eine Einschränkung, die nur Nachrichten mit der Nachrichtenklasse sucht, die für Ansichtsdeskriptoren reserviert ist, und rufen Sie [IMAPITable::Restrict](imapitable-restrict.md) auf, um die Tabelle und [IMAPITable::QueryRows](imapitable-queryrows.md) einzuschränken, um die entsprechenden Zeilen abzurufen, oder...
     
-   Rufen Sie die [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode des Ordners auf, um die zugehörige **PR_DEFAULT_VIEW_ENTRYID** ([pidtagdefaultviewentryid (](pidtagdefaultviewentryid-canonical-property.md))-Eigenschaft abzurufen. **PR_DEFAULT_VIEW_ENTRYID** enthält die Eintrags-ID für die Nachricht, die den Standard Ansichts Deskriptor für einen Ordner enthält. Dieser Aufruf kann erfolgreich ausgeführt werden, wenn der Ordner die Verwendung des MAPI_ASSOCIATED-Flags für Aufrufe von [IMAPIFolder:: CreateMessage](imapifolder-createmessage.md) und [IMAPIContainer::](imapicontainer-getcontentstable.md)getcontentable unterstützt.
+   Rufen Sie die [IMAPIProp::GetProps-Methode](imapiprop-getprops.md) des Ordners auf, um die **PR_DEFAULT_VIEW_ENTRYID** ([PidTagDefaultViewEntryId](pidtagdefaultviewentryid-canonical-property.md)) abzurufen. **PR_DEFAULT_VIEW_ENTRYID** enthält die Eintrags-ID für die Nachricht, die den Standardansichtsdeskriptor für einen Ordner enthält. Dieser Aufruf ist erfolgreich, wenn der Ordner die Verwendung des MAPI_ASSOCIATED für Aufrufe von [IMAPIFolder::CreateMessage](imapifolder-createmessage.md) und [IMAPIContainer::GetContentsTable unterstützt.](imapicontainer-getcontentstable.md)
     
-3. Rufen Sie [IMsgStore:: OpenEntry](imsgstore-openentry.md) mit der Eintrags-ID des Ansichts Deskriptors auf, um Sie zu öffnen. 
+3. Rufen [Sie IMsgStore::OpenEntry](imsgstore-openentry.md) mit dem Eintragsbezeichner des Ansichtsdeskriptors auf, um ihn zu öffnen. 
     
 

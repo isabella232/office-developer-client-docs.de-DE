@@ -25,14 +25,14 @@ ms.locfileid: "33413059"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ermöglicht es den Formular Viewern, Informationen über Formularserver zu erhalten und zu aktivieren. 
+Ermöglicht Formularanzeigen, Informationen zu Formularservern zu erhalten und zu aktivieren. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiform. h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Formular-Manager-Objekte  <br/> |
-|Implementiert von:  <br/> |Formular Bibliotheks Anbieter  <br/> |
-|Aufgerufen von:  <br/> |Formular Betrachter  <br/> |
+|Headerdatei  <br/> |Mapiform.h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Form-Manager-Objekte  <br/> |
+|Implementiert von:  <br/> |Anbieter von Formularbibliotheken  <br/> |
+|Aufgerufen von:  <br/> |Formularanzeigen  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPIFormMgr  <br/> |
 |Zeigertyp:  <br/> |LPMAPIFORMMGR  <br/> |
    
@@ -41,17 +41,17 @@ Ermöglicht es den Formular Viewern, Informationen über Formularserver zu erhal
 |||
 |:-----|:-----|
 |[LoadForm](imapiformmgr-loadform.md) <br/> |Startet ein Formular zum Öffnen einer vorhandenen Nachricht.  <br/> |
-|[ResolveMessageClass](imapiformmgr-resolvemessageclass.md) <br/> |Löst eine Nachrichtenklasse in Ihrem Formular innerhalb eines Formular Containers auf und gibt ein Formular Informationsobjekt für dieses Formular zurück.  <br/> |
-|[ResolveMultipleMessageClasses](imapiformmgr-resolvemultiplemessageclasses.md) <br/> |Löst eine Gruppe von Nachrichtenklassen in Ihre Formulare innerhalb eines Formular Containers auf und gibt ein Array von Formular Informationsobjekten für diese Formulare zurück.  <br/> |
-|[CalcFormPropSet](imapiformmgr-calcformpropset.md) <br/> |Gibt ein Array der Eigenschaften zurück, die eine Gruppe von Formularen verwendet.  <br/> |
-|[CreateForm](imapiformmgr-createform.md) <br/> |Startet ein Formular zum Erstellen einer neuen Nachricht auf der Grundlage der Nachrichtenklasse des Formulars.  <br/> |
-|[SelectForm](imapiformmgr-selectform.md) <br/> |Zeigt ein Dialogfeld an, in dem der Benutzer ein Formular auswählen und ein Formular Informationsobjekt zurückgibt, das dieses Formular beschreibt.  <br/> |
-|[SelectMultipleForms](imapiformmgr-selectmultipleforms.md) <br/> |Zeigt ein Dialogfeld an, in dem der Benutzer mehrere Formulare auswählen kann, und es wird ein Array von Formular Informationsobjekten zurückgegeben, die diese Formulare beschreiben.  <br/> |
-|[SelectFormContainer](imapiformmgr-selectformcontainer.md) <br/> |Zeigt ein Dialogfeld an, in dem der Benutzer einen Formular Container auswählen und eine Schnittstelle für das Containerobjekt zurückgibt, das der Benutzer ausgewählt hat.  <br/> |
-|[OpenFormContainer](imapiformmgr-openformcontainer.md) <br/> |Öffnet eine [IMAPIFormContainer](imapiformcontaineriunknown.md) -Schnittstelle für einen bestimmten Formular Container.  <br/> |
+|[ResolveMessageClass](imapiformmgr-resolvemessageclass.md) <br/> |Löst eine Nachrichtenklasse in ihr Formular in einem Formularcontainer auf und gibt ein Formularinformationsobjekt für dieses Formular zurück.  <br/> |
+|[ResolveMultipleMessageClasses](imapiformmgr-resolvemultiplemessageclasses.md) <br/> |Löst eine Gruppe von Nachrichtenklassen in ihre Formulare in einem Formularcontainer auf und gibt ein Array von Formularinformationsobjekten für diese Formulare zurück.  <br/> |
+|[CalcFormPropSet](imapiformmgr-calcformpropset.md) <br/> |Gibt ein Array der Eigenschaften zurück, die von einer Gruppe von Formularen verwendet werden.  <br/> |
+|[CreateForm](imapiformmgr-createform.md) <br/> |Startet ein Formular, um eine neue Nachricht basierend auf der Nachrichtenklasse des Formulars zu erstellen.  <br/> |
+|[SelectForm](imapiformmgr-selectform.md) <br/> |Zeigt ein Dialogfeld an, in dem der Benutzer ein Formular auswählen kann, und gibt ein Formularinformationsobjekt zurück, das dieses Formular beschreibt.  <br/> |
+|[SelectMultipleForms](imapiformmgr-selectmultipleforms.md) <br/> |Stellt ein Dialogfeld vor, in dem der Benutzer mehrere Formulare auswählen kann, und gibt ein Array von Formularinformationsobjekten zurück, die diese Formulare beschreiben.  <br/> |
+|[SelectFormContainer](imapiformmgr-selectformcontainer.md) <br/> |Zeigt ein Dialogfeld an, in dem der Benutzer einen Formularcontainer auswählen kann, und gibt eine Schnittstelle für das vom Benutzer ausgewählte Containerobjekt zurück.  <br/> |
+|[OpenFormContainer](imapiformmgr-openformcontainer.md) <br/> |Öffnet eine [IMAPIFormContainer-Schnittstelle](imapiformcontaineriunknown.md) für einen bestimmten Formularcontainer.  <br/> |
 |[PrepareForm](imapiformmgr-prepareform.md) <br/> |Lädt ein Formular zum Öffnen herunter.  <br/> |
-|[IsInConflict](imapiformmgr-isinconflict.md) <br/> |Bestimmt, ob ein Formular eigene Nachrichten Konflikte verarbeiten kann.  <br/> |
-|[Getlasterroraufzurufen](imapiformmgr-getlasterror.md) <br/> |Gibt eine [MAPIERROR](mapierror.md) -Struktur zurück, die Informationen zum vorherigen Fehler enthält, der für das Formular-Manager-Objekt auftritt.  <br/> |
+|[IsInConflict](imapiformmgr-isinconflict.md) <br/> |Bestimmt, ob ein Formular eigene Nachrichtenkonflikte verarbeiten kann.  <br/> |
+|[GetLastError](imapiformmgr-getlasterror.md) <br/> |Gibt eine [MAPIERROR-Struktur](mapierror.md) zurück, die Informationen zum vorherigen Fehler enthält, der für das Formular-Manager-Objekt aufgetreten ist.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

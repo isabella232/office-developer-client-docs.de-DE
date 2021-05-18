@@ -25,7 +25,7 @@ ms.locfileid: "33411246"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Vervollständigt die Empfängerliste einer Nachricht und erweitert bestimmte Verteilerlisten.
+Schließt die Empfängerliste einer Nachricht ab und erweitert bestimmte Verteilerlisten.
   
 ```cpp
 HRESULT ExpandRecips(
@@ -38,19 +38,19 @@ HRESULT ExpandRecips(
 
  _lpMessage_
   
-> in Ein Zeiger auf die Nachricht, die die Empfängerliste hat, die verarbeitet werden soll.
+> [in] Ein Zeiger auf die Nachricht, deren Empfängerliste verarbeitet werden soll.
     
  _lpulFlags_
   
-> Out Ein Zeiger auf eine Bitmaske von Flags, die die Art der Verarbeitung steuert. Die folgenden Flags können festgelegt werden:
+> [out] Ein Zeiger auf eine Bitmaske von Flags, die den Typ der Verarbeitung steuert, die auftritt. Die folgenden Kennzeichen können festgelegt werden:
     
 NEEDS_PREPROCESSING 
   
-> Die Nachricht muss vorverarbeitet werden, bevor Sie gesendet wird.
+> Die Nachricht muss vor dem Senden vorverarbeitet werden.
     
 NEEDS_SPOOLER 
   
-> Die MAPI-Warteschlange (anstelle des Transportanbieters, an den der Aufrufer eng gekoppelt ist) muss die Nachricht senden.
+> Der MAPI-Spooler (und nicht der Transportanbieter, an den der Anrufer eng gekoppelt ist) muss die Nachricht senden.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -58,25 +58,25 @@ S_OK
   
 > Die Empfängerliste der Nachricht wurde erfolgreich verarbeitet.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPISupport:: ExpandRecips** -Methode wird für Support Objekte des Nachrichtenspeicher Anbieters implementiert. Nachrichtenspeicher Anbieter rufen **ExpandRecips** auf, um MAPI aufzufordern, die folgenden Aufgaben auszuführen: 
+Die **IMAPISupport::ExpandRecips-Methode** wird für Unterstützungsobjekte des Nachrichtenspeicheranbieters implementiert. Nachrichtenspeicheranbieter rufen **ExpandRecips auf,** um MAPI zum Ausführen der folgenden Aufgaben auffordern: 
   
-- Erweitern Sie bestimmte persönliche Verteilerlisten zu ihren Komponenten Empfängern.
+- Erweitern Sie bestimmte persönliche Verteilerlisten auf ihre Komponentenempfänger.
     
-- Ersetzen Sie alle Anzeigenamen, die mit den ursprünglichen Namen geändert wurden.
+- Ersetzen Sie alle Anzeigenamen, die geändert wurden, durch die ursprünglichen Namen.
     
 - Markieren Sie alle doppelten Einträge.
     
-- Lösen Sie alle einmaligen Adressen. 
+- Lösen Sie alle einmal verwendeten Adressen auf. 
     
-- Überprüfen Sie, ob die Nachricht eine Vorverarbeitung erfordert, und legen Sie, falls dies der Fall ist, die Kennzeichnung fest, auf die durch _lpulFlags_ auf NEEDS_PREPROCESSING verwiesen wird. 
+- Überprüfen Sie, ob die Nachricht vorverarbeitet werden muss, und legen Sie gegebenenfalls das Flag fest, auf das  _lpulFlags_ verweist, auf NEEDS_PREPROCESSING. 
     
- **ExpandRecips** erweitert alle Verteilerlisten mit dem Nachrichten Adresstyp MAPIPDL. 
+ **ExpandRecips** erweitert alle Verteilerlisten mit dem Messagingadressentyp MAPIPDL. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Rufen Sie **ExpandRecips** immer als Teil der Nachrichtenverarbeitung auf. Rufen Sie einen der ersten Aufrufe in der **ExpandRecips** -Implementierung der [IMessage:: SubmitMessage](imessage-submitmessage.md) -Methode auf. 
+Rufen Sie **ExpandRecips immer** als Teil der Nachrichtenverarbeitung auf. Rufen Sie **ExpandRecips** einen der ersten Aufrufe in Ihrer [IMessage::SubmitMessage-Methodenimplementierung](imessage-submitmessage.md) auf. 
   
 ## <a name="see-also"></a>Siehe auch
 

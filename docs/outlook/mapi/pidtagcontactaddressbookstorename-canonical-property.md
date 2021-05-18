@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagcontactaddressbookstorename (-Eigenschaft
+title: PidTagContactAddressBookStoreName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33414011"
 ---
-# <a name="pidtagcontactaddressbookstorename-canonical-property"></a>Kanonische Pidtagcontactaddressbookstorename (-Eigenschaft
+# <a name="pidtagcontactaddressbookstorename-canonical-property"></a>PidTagContactAddressBookStoreName (kanonische Eigenschaft)
 
   
   
@@ -32,23 +32,23 @@ Enthält den Anzeigenamen des Speichers, der dem Adressbuchanbieter zugeordnet i
 |Zugeordnete Eigenschaften:  <br/> |PR_CONTAB_STORE_NAME, PR_CONTAB_STORE_NAME_A, PR_CONTAB_STORE_NAME_W  <br/> |
 |Kennung:  <br/> |0x6612  <br/> |
 |Datentyp:  <br/> |PT_UNICODE, PT_STRING8  <br/> |
-|Bereich:  <br/> |Kontakt Adressbuch  <br/> |
+|Bereich:  <br/> |Kontaktadressenbuch  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Diese Eigenschaften befinden sich in einem Adressbuchcontainer des Kontakts und eine Spalte in der Tabelle mit den Adressbuch Containern des Kontakts.
+Diese Eigenschaften befinden sich in einem Kontaktadressenbuchcontainer und einer Spalte in der Tabelle der Kontaktadressenbuchcontainer.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
-### <a name="header-files"></a>Header Dateien
+### <a name="header-files"></a>Headerdateien
 
-Mapidefs. h
+Mapidefs.h
   
-> Stellt Datentypdefinitionen bereit.
+> Bietet Datentypdefinitionen.
     
-Mapitags. h
+Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapitags. h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

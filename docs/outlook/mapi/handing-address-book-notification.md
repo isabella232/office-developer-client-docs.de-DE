@@ -19,22 +19,22 @@ ms.locfileid: "33413535"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Adressbuch Benachrichtigungen ermöglichen einem Client das Erlernen von Ereignissen, die für einen Adressbucheintrag oder einen bestimmten Eintrag auftreten. Sie können sich für diese Benachrichtigungen entweder über das MAPI-Adressbuch registrieren, indem Sie [IAddrBook:: Advise](iaddrbook-advise.md) oder die Hierarchie-oder Inhaltstabelle eines Adressbuch Containers aufrufen, indem Sie [IMAPITable:: Advise](imapitable-advise.md)aufrufen. 
+Adressbuchbenachrichtigungen ermöglichen es einem Client, von Ereignissen zu erfahren, die für jeden Adressbucheintrag oder für einen bestimmten Eintrag auftreten. Sie können sich für diese Benachrichtigungen entweder über das MAPI-Adressbuch registrieren, indem Sie [IAddrBook::Advise](iaddrbook-advise.md) aufrufen oder die Hierarchie- oder Inhaltstabelle eines Adressbuchcontainers über [IMAPITable::Advise aufrufen.](imapitable-advise.md) 
   
-Geben Sie die Eintrags-ID eines Adressbuch Containers, einer Verteilerliste oder eines Messaging Benutzers an, wenn Sie sich für Benachrichtigungen zu einem bestimmten Eintrag registrieren, und NULL, wenn Sie sich für Benachrichtigungen im gesamten Adressbuch registrieren. Die Eintrags-ID muss einen Messagingbenutzer oder eine Verteilerliste in einem Adressbuchcontainer darstellen. **IAddrBook:: Advise** überprüft diese Eintrags-ID, um zu bestimmen, welcher Adressbuchanbieter für das entsprechende Objekt verantwortlich ist, und leitet den Anruf an die [IABLogon:: Advise](iablogon-advise.md) -Methode des entsprechenden Adressbuch Anbieters weiter. 
+Geben Sie die Eintrags-ID eines Adressbuchcontainers, einer Verteilerliste oder eines Messagingbenutzers an, wenn Sie sich für Benachrichtigungen für einen bestimmten Eintrag registrieren, und NULL, wenn Sie sich für Benachrichtigungen im gesamten Adressbuch registrieren. Der Eintragsbezeichner muss einen Messagingbenutzer oder eine Verteilerliste in einem Adressbuchcontainer darstellen. **IAddrBook::Advise** untersucht diesen Eintragsbezeichner, um zu bestimmen, welcher Adressbuchanbieter für das entsprechende Objekt verantwortlich ist, und gibt den Aufruf an die [IABLogon::Advise-Methode](iablogon-advise.md) des entsprechenden Adressbuchanbieters weiter. 
   
-Clients können sich für die folgenden Ereignistypen bei Adressbucheinträgen registrieren:
+Clients können sich für die folgenden Ereignistypen für Adressbucheinträge registrieren:
   
 - Kritischer Fehler
     
-- Beliebige Objekt Ereignisse (erstellt, geändert, gelöscht, verschoben oder kopiert)
+- Alle Objektereignisse (erstellt, geändert, gelöscht, verschoben oder kopiert)
     
 - Tabelle geändert
     
-In der Regel erfolgt die Registrierung nur in Adressbuchcontainer-Inhalts-und Hierarchietabellen. Es ist selten, dass Clients sich bei den untergeordneten Messaging-Benutzer-und Verteilerlisten Objekten registrieren. Dies liegt daran, dass:
+In der Regel erfolgt die Registrierung nur für Adressbuchcontainerinhalte und Hierarchietabellen. Es ist selten, dass Clients sich bei den Messagingbenutzer- und Verteilerlistenobjekten der unteren Ebene registrieren. Dies liegt daran, dass:
   
-- Viele Adressbuchanbieter unterstützen keine Benachrichtigungen zu ihren Messaging Benutzern und Verteilerlisten.
+- Viele Adressbuchanbieter unterstützen keine Benachrichtigungen für ihre Messagingbenutzer und Verteilerlisten.
     
-- Tabellen Benachrichtigungen sind ausreichend, um Änderungen nachzuverfolgen und Benutzern zu melden.
+- Tabellenbenachrichtigungen sind ausreichend, um Änderungen zu verfolgen und sie benutzern zu melden.
     
 

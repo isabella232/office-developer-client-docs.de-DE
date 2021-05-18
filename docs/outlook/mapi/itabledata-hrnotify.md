@@ -43,11 +43,11 @@ HRESULT HrNotify(
     
  _cValues_
   
-> in Die Anzahl der Eigenschaftswerte in der [SPropValue](spropvalue.md) -Struktur, auf die durch den _lpSPropValue_ -Parameter verwiesen wird. 
+> [in] Die Anzahl der Eigenschaftswerte in der [SPropValue-Struktur,](spropvalue.md) auf die der  _lpSPropValue-Parameter_ verweist. 
     
  _lpSPropValue_
   
-> in Ein Zeiger auf eine **SPropValue** -Struktur, die die Werte der Spalten in der Zielzeile beschreibt. 
+> [in] Ein Zeiger auf eine **SPropValue-Struktur,** die die Werte der Spalten in der Zielzeile beschreibt. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -55,9 +55,9 @@ S_OK
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **ITableData:: HrNotify** -Methode sendet eine TABLE_ROW_MODIFIED-Benachrichtigung für die Zeile, die mit der Zeile übereinstimmt, die durch die Eigenschaften dargestellt wird, auf die durch den _lpSPropValue_ -Parameter verwiesen wird. **HrNotify** sendet die Benachrichtigung, unabhängig davon, ob die Zeile geändert wurde. Alle Clients und Dienstanbieter mit Ansichten der Tabelle, die [IMAPITable:: Advise](imapitable-advise.md) für die Registrierung für Benachrichtigungen in ihren Ansichten haben, erhalten diese Benachrichtigung. 
+Die **ITableData::HrNotify-Methode** sendet eine TABLE_ROW_MODIFIED-Benachrichtigung für die Zeile, die der Zeile entspricht, die durch die Eigenschaften beschrieben wird, auf die der  _lpSPropValue-Parameter_ verweist. **HrNotify** sendet die Benachrichtigung, unabhängig davon, ob Änderungen an der Zeile vorgenommen wurden. Alle Clients und Dienstanbieter, die über Ansichten der Tabelle verfügen und [IMAPITable::Advise](imapitable-advise.md) aufgerufen haben, sich für Benachrichtigungen in ihren Ansichten zu registrieren, erhalten diese Benachrichtigung. 
   
 ## <a name="see-also"></a>Siehe auch
 

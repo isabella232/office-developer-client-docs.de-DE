@@ -23,8 +23,8 @@ Wenn eine Empfängertabelle codiert wird, wird jeder Empfänger als Zeile mit MA
   
 _Row_Seq:_
   
->  _Zeilenanzahl_ _Property_Sequence,_... 
+>  _Zeilenanzahl Property_Sequence,_ ... 
     
-Das Format von _Property_Seq_ ist identisch mit dem des [attMAPIProps](attmapiprops.md) -Attributs. 
+Das Format der _Property_Seq_ ist identisch mit dem [attMAPIProps-Attribut.](attmapiprops.md) 
     
 

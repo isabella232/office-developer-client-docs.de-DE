@@ -23,16 +23,16 @@ ms.locfileid: "33411148"
   
 Da es sich bei der Ereignisbenachrichtigung um einen asynchronen Prozess handelt, können Sie jederzeit benachrichtigt werden, nicht unbedingt unmittelbar nach dem Ereignis.
   
- Der Zeitpunkt der Aufrufe Ihrer [IMAPIAdviseSink:: OnNotify](imapiadvisesink-onnotify.md) -Methode variiert je nach dem Dienstanbieter, der die Advise-Quelle implementiert. Dienstanbieter können Ihren Client entweder Benachrichtigen: 
+ Der Zeitpunkt der Anrufe an Ihre [IMAPIAdviseSink::OnNotify-Methode](imapiadvisesink-onnotify.md) variiert je nach Dienstanbieter, der die Ratgeberquelle implementieren. Dienstanbieter können Ihren Client entweder benachrichtigen: 
   
 - Gleichzeitig mit dem Ereignis.
     
 - Direkt nach dem Ereignis.
     
-- Zu einem späteren Zeitpunkt nach dem Ereignis, möglicherweise **** nach einem Unadvise-Aufruf. 
+- Zu einem späteren Zeitpunkt nach dem Ereignis, möglicherweise nach einem **Unadvise-Aufruf.** 
     
-Die meisten Dienstanbieter **** rufen OnNotify auf, nachdem die für das Ereignis zuständige MAPI-Methode an den Aufrufer zurückgegeben wurde. Benachrichtigungen an Nachrichten werden beispielsweise gesendet, wenn Änderungen an der Nachricht gespeichert werden, nach dem Aufruf von [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) oder nach der Veröffentlichung der Nachricht nach dem Aufruf von **IUnknown:: Release** . Bis zum Senden der Benachrichtigung sind keine Änderungen im Nachrichtenspeicher sichtbar. 
+Die meisten Dienstanbieter rufen **OnNotify** auf, nachdem die für das Ereignis zuständige MAPI-Methode an den Aufrufer zurückgegeben wurde. Beispielsweise werden Benachrichtigungen zu Nachrichten gesendet, wenn Änderungen an der Nachricht gespeichert werden, nach dem [IMAPIProp::SaveChanges-Aufruf](imapiprop-savechanges.md) oder wenn die Nachricht nach dem **IUnknown::Release-Aufruf** freigegeben wird. Bis zum Senden der Benachrichtigung werden keine Änderungen im Nachrichtenspeicher angezeigt. 
   
-Sie können Benachrichtigungen von einer Advise-Quelle erhalten, nachdem Sie **Unadvise** aufgerufen haben, um eine Registrierung abzubrechen. Stellen Sie sicher, dass Sie Ihre Advise-Senke erst freigeben, nachdem der Verweiszähler auf Null gesunken ist **** , nicht nach einem erfolgreichen Unadvise-Aufruf. Gehen Sie nicht davon aus, dass die **** Advise-Senke nicht mehr erforderlich ist, weil Sie Unadvise aufgerufen haben. 
+Sie können Benachrichtigungen von einer Informationsquelle erhalten, nachdem Sie **Unadvise** zum Abbrechen einer Registrierung aufgerufen haben. Stellen Sie sicher, dass Sie ihre Ratensenke erst los lassen, nachdem die Referenzanzahl auf Null gefallen ist, und nicht nach einem erfolgreichen **Unadvise-Aufruf.** Gehen Sie nicht davon aus, dass die Ratensenke nicht mehr erforderlich ist, da Sie **Unadvise** aufgerufen haben. 
   
 

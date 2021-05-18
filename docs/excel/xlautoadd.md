@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - xlAutoAdd
 keywords:
-- xlAutoAdd-Funktion [Excel 2007]
+- xlautoadd-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: c69299af-a28a-44d9-be10-9c9fb92e21f2
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -22,11 +22,11 @@ ms.locfileid: "33413759"
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Von Microsoft Excel HinzugeFügt, wenn der Benutzer die XLL während einer Excel-Sitzung mithilfe des Add-in-Managers aktiviert. Diese Funktion wird nicht aufgerufen, wenn Excel gestartet wird und ein vorinstalliertes Add-in lädt.
+Hinzugefügt von Microsoft Excel, wenn der Benutzer die XLL während einer Excel mit dem Add-In aktiviert. Diese Funktion wird nicht aufgerufen, Excel gestartet und ein vorinstalliertes Add-In geladen wird.
   
-Diese Funktion kann verwendet werden, um ein benutzerdefiniertes Dialogfeld anzuzeigen, das dem Benutzer mitteilt, dass das Add-in aktiviert wurde, oder um aus der Registrierung zu lesen oder zu schreiben, oder beispielsweise Lizenzierungsinformationen zu überprüfen.
+Diese Funktion kann verwendet werden, um ein benutzerdefiniertes Dialogfeld anzuzeigen, in dem der Benutzer informiert wird, dass das Add-In aktiviert wurde, oder um aus der Registrierung zu lesen oder in die Registrierung zu schreiben oder z. B. Lizenzierungsinformationen zu überprüfen.
   
-Excel benötigt keine XLL, um diese Funktion zu implementieren und zu exportieren.
+Excel erfordert keine XLL, um diese Funktion zu implementieren und zu exportieren.
   
 ```cs
 int WINAPI xlAutoAdd(void);
@@ -40,13 +40,13 @@ Diese Funktion verwendet keine Parameter.
 
 Ihre Implementierung dieser Funktion sollte 1 zurückgeben. (**int**).
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Verwenden Sie diese Funktion, wenn Ihre XLL etwas tun muss, wenn Sie vom Add-in-Manager hinzugefügt wird.
+Verwenden Sie diese Funktion, wenn Ihre XLL etwas tun muss, wenn sie vom Add-In hinzugefügt wird.
   
 ## <a name="example"></a>Beispiel
 
-Siehe `\SAMPLES\EXAMPLE\EXAMPLE.C` auch `\SAMPLES\GENERIC\GENERIC.C` Implementierungen dieser Funktion. Der folgende Code stammt aus `\SAMPLES\EXAMPLE\EXAMPLE.C`.
+Sehen  `\SAMPLES\EXAMPLE\EXAMPLE.C` Sie sich beispielsweise  `\SAMPLES\GENERIC\GENERIC.C` Implementierungen dieser Funktion an. Der folgende Code stammt aus `\SAMPLES\EXAMPLE\EXAMPLE.C`.
   
 ```cs
 int WINAPI xlAutoAdd(void)

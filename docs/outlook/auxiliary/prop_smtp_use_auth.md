@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33413094"
 ---
-# <a name="propsmtpuseauth"></a>PROP_SMTP_USE_AUTH
+# <a name="prop_smtp_use_auth"></a>PROP_SMTP_USE_AUTH
 
 Gibt an, ob die Authentifizierung für das SMTP-Konto verwendet werden soll.
   
@@ -23,13 +23,13 @@ Gibt an, ob die Authentifizierung für das SMTP-Konto verwendet werden soll.
 |||
 |:-----|:-----|
 |Kennung:  <br/> |0x0203  <br/> |
-|Eigenschafts:  <br/> |PT_DWORD  <br/> |
-|Property-Tag:  <br/> |0x02030003  <br/> |
-|Access  <br/> |Schreibgeschützt  <br/> |
+|Eigenschaftstyp:  <br/> |PT_DWORD  <br/> |
+|Eigenschaftstag:  <br/> |0x02030003  <br/> |
+|Zugriff:  <br/> |Schreibgeschützt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Ein Nullwert besagt, dass die Authentifizierung nicht verwendet wird, andernfalls wird die Authentifizierung verwendet.
+Ein Nullwert bedeutet, dass die Authentifizierung nicht verwendet wird, andernfalls die Authentifizierung.
   
 ## <a name="see-also"></a>Siehe auch
 

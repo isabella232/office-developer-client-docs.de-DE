@@ -29,10 +29,10 @@ Verwaltet Objekte, die einer MAPI-Anmeldesitzung zugeordnet sind.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapix. h  <br/> |
+|Headerdatei  <br/> |Mapix.h  <br/> |
 |Verf�gbar gemacht von:  <br/> |Sitzungsobjekte  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und MAPI  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und MAPI  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPISession  <br/> |
 |Zeigertyp:  <br/> |LPMAPISESSION  <br/> |
    
@@ -40,25 +40,25 @@ Verwaltet Objekte, die einer MAPI-Anmeldesitzung zugeordnet sind.
 
 |||
 |:-----|:-----|
-|[Getlasterroraufzurufen](imapisession-getlasterror.md) <br/> |Gibt eine [MAPIERROR](mapierror.md) -Struktur zurück, die Informationen zum vorherigen Sitzungsfehler enthält.  <br/> |
-|[GetMsgStoresTable](imapisession-getmsgstorestable.md) <br/> |Ermöglicht den Zugriff auf die Nachrichtenspeichertabelle, die Informationen zu allen Nachrichten speichern im Sitzungsprofil enthält.  <br/> |
-|[OpenMsgStore](imapisession-openmsgstore.md) <br/> |Öffnet einen Nachrichtenspeicher und gibt einen [IMsgStore](imsgstoreimapiprop.md) -Zeiger für den weiteren Zugriff zurück.  <br/> |
-|[OpenAddressBook](imapisession-openaddressbook.md) <br/> |Öffnet das integrierte MAPI-Adressbuch und gibt einen [IAddrBook](iaddrbookimapiprop.md) -Zeiger für den weiteren Zugriff zurück.  <br/> |
-|[OpenProfileSection](imapisession-openprofilesection.md) <br/> |Öffnet einen Abschnitt des aktuellen Profils und gibt einen [IProfSect](iprofsectimapiprop.md) -Zeiger für den weiteren Zugriff zurück.  <br/> |
-|[GetStatus-Eigenschaft](imapisession-getstatustable.md) <br/> |Ermöglicht den Zugriff auf die Statustabelle, eine Tabelle, die Informationen zu allen MAPI-Ressourcen in der Sitzung enthält.  <br/> |
-|[OpenEntry](imapisession-openentry.md) <br/> |Öffnet ein Objekt und gibt einen Schnittstellenzeiger für den weiteren Zugriff zurück.  <br/> |
-|[CompareEntryIDs](imapisession-compareentryids.md) <br/> |Vergleicht zwei Eintragsbezeichner, um zu bestimmen, ob Sie auf dasselbe Objekt verweisen.  <br/> |
-|[Beraten](imapisession-advise.md) <br/> |Registriert die Benachrichtigung über die angegebenen Ereignisse, die sich auf die Sitzung auswirken.  <br/> |
-|[Unadvise](imapisession-unadvise.md) <br/> |Bricht das Senden von Benachrichtigungen ab, die zuvor mit einem Aufruf der **Advise** -Methode eingerichtet wurden.  <br/> |
-|**Messageoptions** <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+|[GetLastError](imapisession-getlasterror.md) <br/> |Gibt eine [MAPIERROR-Struktur](mapierror.md) zurück, die Informationen zum vorherigen Sitzungsfehler enthält.  <br/> |
+|[GetMsgStoresTable](imapisession-getmsgstorestable.md) <br/> |Bietet Zugriff auf die Nachrichtenspeichertabelle, die Informationen zu allen Nachrichtenspeichern im Sitzungsprofil enthält.  <br/> |
+|[OpenMsgStore](imapisession-openmsgstore.md) <br/> |Öffnet einen Nachrichtenspeicher und gibt einen [IMsgStore-Zeiger](imsgstoreimapiprop.md) für weiteren Zugriff zurück.  <br/> |
+|[OpenAddressBook](imapisession-openaddressbook.md) <br/> |Öffnet das integrierte MAPI-Adressbuch und gibt einen [IAddrBook-Zeiger für](iaddrbookimapiprop.md) weiteren Zugriff zurück.  <br/> |
+|[OpenProfileSection](imapisession-openprofilesection.md) <br/> |Öffnet einen Abschnitt des aktuellen Profils und gibt einen [IProfSect-Zeiger](iprofsectimapiprop.md) für weiteren Zugriff zurück.  <br/> |
+|[GetStatusTable](imapisession-getstatustable.md) <br/> |Bietet Zugriff auf die Statustabelle, eine Tabelle, die Informationen zu allen MAPI-Ressourcen in der Sitzung enthält.  <br/> |
+|[OpenEntry](imapisession-openentry.md) <br/> |Öffnet ein Objekt und gibt einen Schnittstellenzeiger für weiteren Zugriff zurück.  <br/> |
+|[CompareEntryIDs](imapisession-compareentryids.md) <br/> |Vergleicht zwei Eintragsbezeichner, um zu bestimmen, ob sie auf dasselbe Objekt verweisen.  <br/> |
+|[Raten](imapisession-advise.md) <br/> |Registriert, um Benachrichtigungen über angegebene Ereignisse zu erhalten, die sich auf die Sitzung auswirken.  <br/> |
+|[Unadvise](imapisession-unadvise.md) <br/> |Bricht das Senden von Benachrichtigungen ab, die zuvor mit einem Aufruf der **Advise-Methode eingerichtet** wurden.  <br/> |
+|**MessageOptions** <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
 |**QueryDefaultMessageOpt** <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
 |[EnumAdrTypes](imapisession-enumadrtypes.md) <br/> |Veraltet. Gibt die Adresstypen zurück, die von allen Transportanbietern in der Sitzung verarbeitet werden können.  <br/> |
-|[QueryIdentity](imapisession-queryidentity.md) <br/> |Gibt den Eintragsbezeichner des Objekts zurück, das die primäre Identität für die Sitzung bereitstellt.  <br/> |
+|[QueryIdentity](imapisession-queryidentity.md) <br/> |Gibt den Eintragsbezeichner des Objekts zurück, das die primäre Identität für die Sitzung enthält.  <br/> |
 |[Logoff](imapisession-logoff.md) <br/> |Beendet eine MAPI-Sitzung.  <br/> |
 |[SetDefaultStore](imapisession-setdefaultstore.md) <br/> |Richtet einen Nachrichtenspeicher als Standardnachrichtenspeicher für die Sitzung ein.  <br/> |
-|[AdminServices](imapisession-adminservices.md) <br/> |Gibt einen [IMsgServiceAdmin](imsgserviceadminiunknown.md) -Zeiger zurück, um Änderungen an den Nachrichtendiensten vorzunehmen.  <br/> |
+|[AdminServices](imapisession-adminservices.md) <br/> |Gibt einen [IMsgServiceAdmin-Zeiger zum](imsgserviceadminiunknown.md) Vornehmen von Änderungen an Nachrichtendiensten zurück.  <br/> |
 |[ShowForm](imapisession-showform.md) <br/> |Zeigt ein Formular an.  <br/> |
-|[PrepareForm](imapisession-prepareform.md) <br/> |Erstellt ein numerisches Token, das von der **ShowForm** -Methode für den Zugriff auf eine Nachricht verwendet wird.  <br/> |
+|[PrepareForm](imapisession-prepareform.md) <br/> |Erstellt ein numerisches Token, das von der **ShowForm-Methode** für den Zugriff auf eine Nachricht verwendet wird.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

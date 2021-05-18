@@ -29,7 +29,7 @@ Beschreibt eine benannte Eigenschaft.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _MAPINAMEID
@@ -45,11 +45,11 @@ typedef struct _MAPINAMEID
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **lpguid**
   
-> Zeiger auf eine [GUID](guid.md) -Struktur, die einen bestimmten Eigenschaftensatz definiert; Dieser Member darf nicht NULL sein. Folgende Werte sind gültig: 
+> Zeiger auf eine [GUID-Struktur,](guid.md) die einen bestimmten Eigenschaftensatz definiert; Dieses Element darf nicht NULL sein. Folgende Werte sind gültig: 
     
 PS_PUBLIC_STRINGS
   
@@ -59,33 +59,33 @@ PS_MAPI
   
 > 
     
-Ein Client definierter Wert
+Ein clientdefinierter Wert
   
 > 
     
  **ulKind**
   
-> Wert, der den Typ des Werts im **Kind** -Element beschreibt. Folgende Werte sind gültig: 
+> Wert, der den Typ des Werts im **Element Kind** beschreibt. Folgende Werte sind gültig: 
     
 MNID_ID 
   
-> Der Member **Kind** enthält einen ganzzahligen Wert, der den Namen der Eigenschaft darstellt. 
+> Das **Element Kind** enthält einen ganzzahligen Wert, der den Eigenschaftennamen darstellt. 
     
 MNID_STRING 
   
-> Der Member **Kind** enthält eine Unicode-Zeichenfolge, die den Namen der Eigenschaft darstellt. 
+> Das **Kind-Element** enthält eine Unicode-Zeichenzeichenfolge, die den Eigenschaftennamen darstellt. 
     
  **Kind**
   
-> Union, die den Namen der benannten Eigenschaft beschreibt. Der Name kann ein ganzzahliger Wert sein, der im **Deckel**gespeichert ist, oder eine Unicode-Zeichenfolge, die in **lpwstrName**gespeichert ist.
+> Union, die den Namen der benannten Eigenschaft beschreibt. Der Name kann entweder ein ganzzahliger Wert sein, der in **lID** gespeichert ist, oder eine Unicode-Zeichenzeichenfolge, die in **lpwstrName gespeichert ist.**
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **MAPINAMEID** -Struktur wird verwendet, um benannte Eigenschaften Eigenschaften mit Bezeichnern über 0X8000 zu beschreiben. Ein Eigenschaftensatz ist ein wichtiger Abschnitt einer benannten Eigenschaft. Beispielsweise sind PS_PUBLIC_STRINGS oder PS_ROUTING_ADDRTYPE Eigenschaftensätze, die von MAPI definiert werden. 
+Die **MAPINAMEID-Struktur** wird verwendet, um benannte Eigenschaften zu beschreiben, die bezeichner über 0x8000. Ein Eigenschaftensatz ist ein wichtiger Teil einer benannten Eigenschaft. Beispielsweise sind PS_PUBLIC_STRINGS oder PS_ROUTING_ADDRTYPE von MAPI definierte Eigenschaftssätze. 
   
-Mit benannten Eigenschaften können Clients benutzerdefinierte Eigenschaften in einem größeren Namespace definieren, als im MAPI-definierten Eigenschafts bezeichnerbereich verfügbar ist. Eigenschaftennamen können nicht verwendet werden, um Eigenschaftswerte direkt abzurufen; Sie müssen zunächst Eigenschaftenbezeichnern über die [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) -Methode zugeordnet werden. Für bestimmte Objekte wie Nachrichten reserviert MAPI eine Reihe von Eigenschaftenbezeichnern für benutzerdefinierte Eigenschaften. Daher müssen Clients für diese Objekte keine benannten Eigenschaften verwenden und den zugehörigen Overhead speichern. 
+Mit benannten Eigenschaften können Clients benutzerdefinierte Eigenschaften in einem größeren Namespace definieren, als im MAPI-definierten Eigenschaftenbezeichnerbereich verfügbar ist. Eigenschaftsnamen können nicht direkt zum Abrufen von Eigenschaftswerten verwendet werden. Sie müssen zunächst eigenschaftenbezeichnern über die [IMAPIProp::GetIDsFromNames-Methode zugeordnet](imapiprop-getidsfromnames.md) werden. Für bestimmte Objekte wie Nachrichten reserviert MAPI einen Bereich von Eigenschaftenbezeichnern für benutzerdefinierte Eigenschaften. Daher müssen Clients für diese Objekte keine benannten Eigenschaften verwenden und können den damit verbundenen Aufwand sparen. 
   
-Weitere Informationen zu benannten Eigenschaften finden Sie unter [benannte Eigenschaften](mapi-named-properties.md).
+Weitere Informationen zu benannten Eigenschaften finden Sie unter [Named Properties](mapi-named-properties.md).
   
 ## <a name="see-also"></a>Siehe auch
 

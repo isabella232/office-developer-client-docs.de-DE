@@ -37,23 +37,23 @@ HRESULT IConverterSession::MAPIToMIMEStm(
 
  _pmsg_
   
-> in Zeiger auf die zu konvertierende Nachricht. Weitere Informationen finden Sie unter mapidefs. h für die Typdefinition von **LPMESSAGE**.
+> [in] Zeiger auf die zu konvertierende Nachricht. Die Typdefinition von **LPMESSAGE** finden Sie unter mapidefs.h.
     
  _pstm_
   
-> Out [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) -Schnittstelle zum Ausgeben des Streams. 
+> [out] [IStream-Schnittstelle](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) zum Ausgabe des Datenstroms. 
     
  _ulFlags_
   
->  in Flags, die bestimmte Aktionen für den Konverter kennzeichnen: 
+>  [in] Flags, die bestimmte Aktionen für den Konverter angeben: 
     
 CCSF_8BITHEADERS
   
-> Der Konverter sollte 8-Bit-Kopfzeilen zulassen.
+> Der Konverter sollte 8-Bit-Header zulassen.
     
 CCSF_EMBEDDED_MESSAGE
   
-> Gesendete/nicht gesendete Informationen werden in X-unsent gespeichert.
+> Gesendete/nicht gesendete Informationen werden in X-Unsent beibehalten.
     
 CCSF_GLOBAL_MESSAGE
   
@@ -61,27 +61,27 @@ CCSF_GLOBAL_MESSAGE
     
 CCSF_INCLUDE_BCC
   
-> BCC-Empfänger der MAPI-Nachricht sollten im MIME-Stream enthalten sein.
+> BCC-Empfänger der MAPI-Nachricht sollten in den MIME-Stream eingeschlossen werden.
     
 CCSF_NO_MSGID
   
-> In ausgehenden Nachrichten keine Nachricht-ID-Felder einbeziehen.
+> Schließen Sie kein Message-Id in ausgehende Nachrichten ein.
     
 CCSF_NOHEADERS
   
-> Der Konverter sollte die Kopfzeilen der externen Nachricht ignorieren.
+> Der Konverter sollte die Kopfzeilen der äußeren Nachricht ignorieren.
     
 CCSF_PLAIN_TEXT_ONLY
   
-> Der Konverter sollte nur nur-Text senden.
+> Der Konverter sollte nur Nur-Text senden.
     
 CCSF_SMTP
   
-> Der Konverter wird an eine SMTP-Nachricht übergeben. Dieses Flag muss immer festgelegt werden.
+> Dem Konverter wird eine SMTP-Nachricht übergeben. Dieses Flag muss immer festgelegt werden.
     
 CCSF_USE_RTF
   
-> Der Konverter sollte in der MIME-Nachricht vom HTML-in das RTF-Format konvertieren.
+> Der Konverter sollte in der MIME-Nachricht vom HTML-Format in das RTF-Format konvertieren.
     
 CCSF_USE_TNEF
   
@@ -91,9 +91,9 @@ CCSF_USE_TNEF
 
 E_INVALIDARG
   
-> Ungültige Flags wurden übergeben, oder *pmsg* oder *pstm* ist NULL. 
+> Ungültige Flags wurden übergeben,  *oder pmsg*  oder  *pstm*  ist NULL. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Wird nur für standardmäßige Outlook-Nachrichtentypen unterstützt.
   
@@ -103,8 +103,8 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MapiMime. cpp  <br/> |ImportEMLToIMessage  <br/> |MFCMAPI verwendet MimeToMAPI, um eine EML-Datei in eine MAPI-Nachricht umzuwandeln.  <br/> |
-|MapiMime. cpp  <br/> |ExportIMessageToEML  <br/> |MFCMAPI verwendet MAPIToMIMEStm, um eine MAPI-Nachricht in eine EML-Datei umzuwandeln.  <br/> |
+|MapiMime.cpp  <br/> |ImportEMLToIMessage  <br/> |MFCMAPI verwendet MimeToMAPI, um eine EML-Datei in eine MAPI-Nachricht zu konvertieren.  <br/> |
+|MapiMime.cpp  <br/> |ExportIMessageToEML  <br/> |MFCMAPI verwendet MAPIToMIMEStm, um eine MAPI-Nachricht in eine EML-Datei zu konvertieren.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -126,7 +126,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 [IConverterSession::SetTextWrapping](iconvertersession-settextwrapping.md)
   
-[Kanonische Pidtagmessageeditorformat (-Eigenschaft](pidtagmessageeditorformat-canonical-property.md)
+[PidTagMessageEditorFormat (kanonische Eigenschaft)](pidtagmessageeditorformat-canonical-property.md)
   
 [Kanonische PidLidUseTnef-Eigenschaft](pidlidusetnef-canonical-property.md)
 

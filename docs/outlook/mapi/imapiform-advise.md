@@ -25,7 +25,7 @@ ms.locfileid: "32329484"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Registriert einen Formular-Viewer für Benachrichtigungen zu Ereignissen, die das Formular betreffen.
+Registriert eine Formularanzeige für Benachrichtigungen über Ereignisse, die sich auf das Formular auswirken.
   
 ```cpp
 HRESULT Advise(
@@ -38,11 +38,11 @@ HRESULT Advise(
 
  _pAdvise_
   
-> in Ein Zeiger auf eine Ansicht Advise Sink-Objekt, das die nachfolgenden Benachrichtigungen empfangen. 
+> [in] Ein Zeiger auf ein Ansichtssenkenobjekt rät zum Empfangen der nachfolgenden Benachrichtigungen. 
     
  _pulConnection_
   
-> Out Ein Zeiger auf einen Wert ungleich NULL, der eine erfolgreiche Benachrichtigungs Registrierung darstellt.
+> [out] Ein Zeiger auf einen Wert ungleich Null, der eine erfolgreiche Benachrichtigungsregistrierung darstellt.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -54,19 +54,19 @@ E_OUTOFMEMORY
   
 > Die Registrierung war aufgrund unzureichenden Arbeitsspeichers nicht erfolgreich.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Formular Betrachter rufen die **IMAPIForm:: Advise** -Methode eines Formulars auf, um bei Änderungen am Formular eine Benachrichtigung zu registrieren. 
+Formularbetrachter rufen die **IMAPIForm::Advise-Methode** eines Formulars auf, um sich für Benachrichtigungen zu registrieren, wenn Änderungen am Formular vorgenommen werden. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Halten Sie eine Kopie des Ansichts-Advise-Senke-Zeigers im _pAdvise_ -Parameter übergeben, damit Sie Sie verwenden können, um die entsprechende [IMAPIViewAdviseSink](imapiviewadvisesinkiunknown.md) -Methode aufzurufen, wenn ein Ereignis eintritt. Rufen Sie die [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28VS.85%29.aspx) -Methode der View-Advise-Senke auf, um den Zeiger beizubehalten, bis die Benachrichtigungs Registrierung abgebrochen wird. Legen Sie den Inhalt des _pulConnection_ -Parameters auf eine Zahl ungleich NULL fest. 
+Bewahren Sie eine Kopie des im  _pAdvise-Parameter_ übergebenen Ansichtssenkenzeigers auf, damit Sie die entsprechende [IMAPIViewAdviseSink-Methode](imapiviewadvisesinkiunknown.md) aufrufen können, wenn ein Ereignis auftritt. Rufen Sie die [IUnknown::AddRef-Methode](https://msdn.microsoft.com/library/ms691379%28VS.85%29.aspx) der Ansichtssenke auf, um den Zeiger zu behalten, bis die Benachrichtigungsregistrierung abgebrochen wird. Legen Sie den Inhalt des  _Parameters pulConnection_ auf eine Zahl ungleich Null fest. 
   
-Viele Formulare implementieren ein Hilfsobjekt zur Behandlung der Registrierung und der nachfolgenden Benachrichtigung über Ereignisse. 
+Viele Formulare implementieren ein Hilfsobjekt, um die Registrierung und nachfolgende Benachrichtigung von Ereignissen zu verarbeiten. 
   
 Weitere Informationen zum Benachrichtigungsprozess im Allgemeinen finden Sie unter [Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md). 
   
-Weitere Informationen zu Benachrichtigungen und Formularen finden Sie unter [senden und empfangen von Formular Benachrichtigungen](sending-and-receiving-form-notifications.md).
+Weitere Informationen zu Benachrichtigungen und Formularen finden Sie unter Senden und Empfangen [von Formularbenachrichtigungen](sending-and-receiving-form-notifications.md).
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -81,5 +81,5 @@ Weitere Informationen zu Benachrichtigungen und Formularen finden Sie unter [sen
 
 [Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md)
   
-[Senden und empfangen von Formular Benachrichtigungen](sending-and-receiving-form-notifications.md)
+[Senden und Empfangen von Formularbenachrichtigungen](sending-and-receiving-form-notifications.md)
 

@@ -20,23 +20,23 @@ ms.locfileid: "33412247"
 
 Legt die Linienbreite eines Shapes fest. Definieren Sie die Linienbreite, indem Sie eine Zahl mit einer gültigen Maßeinheit eingeben.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Sie können den Wert von LineWeight auch im Dialogfeld **Linie** festlegen (Klicken Sie dazu auf der Registerkarte **Start** in der Gruppe **Shape** auf **Linie**, zeigen Sie auf **Gewicht**, und klicken Sie dann auf **Weitere Linien**).
+Sie können den Wert von LineWeight auch im  Dialogfeld Linie festlegen (klicken Sie auf der Registerkarte Start in der **Gruppe Shape** auf **Linie,** zeigen Sie auf **Gewichtung,** und klicken Sie dann auf **Weitere Linien**). 
   
-Wenn die Maßeinheit nicht eingegeben wird, wird die im Dialogfeld **Visio-Optionen** angegebene Maßeinheit für Text verwendet (Klicken Sie auf die Registerkarte **Datei** , und klicken Sie dann auf **Optionen**). Die Linienbreite ist unabhängig vom Zeichnungsmaßstab. Wenn die Zeichnung maßstäblich ist, bleibt die Linienbreite unverändert. 
+Wenn die Maßeinheit nicht eingegeben wird, wird die Maßeinheit für text verwendet, die  im Dialogfeld **Visio Optionen** angegeben ist (klicken Sie auf die Registerkarte Datei, und klicken Sie dann auf **Optionen**). Die Linienbreite ist unabhängig vom Zeichnungsmaßstab. Wenn die Zeichnung maßstäblich ist, bleibt die Linienbreite unverändert. 
   
-Wenn Sie einen Verweis auf die Zelle LineWeight aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle LineWeight anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | LineWeight  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LineWeight aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die LineWeight-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowLine** <br/> |
 | Zellenindex:  <br/> |**visLineWeight** <br/> |
    

@@ -1,5 +1,5 @@
 ---
-title: DatePart-Funktion (Access Custom Web App)
+title: DatePart-Funktion (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33411435"
 ---
-# <a name="datepart-function-access-custom-web-app"></a>DatePart-Funktion (Access Custom Web App)
+# <a name="datepart-function-access-custom-web-app"></a>DatePart-Funktion (benutzerdefinierte Access-Web-App)
 
 Gibt einen numerischen Wert zurück, der den angegebenen Datumsteil des angegebenen Datums darstellt.
   
@@ -22,13 +22,13 @@ Gibt einen numerischen Wert zurück, der den angegebenen Datumsteil des angegebe
   
 ## <a name="syntax"></a>Syntax
 
-**Datepart** (*Datepart*, *Datum*) 
+**DatePart** (*DatePart*, *Date*) 
   
-Die **datepart** -Funktion enthält die folgenden Argumente. 
+Die **DatePart-Funktion** enthält die folgenden Argumente. 
   
 |**Argumentname**|**Beschreibung**|
 |:-----|:-----|
-| *DatePart*  <br/> |Der Teil des *Datums* (Datums-oder Uhrzeitwert), für den eine ganze Zahl zurückgegeben wird. Die Liste der gültigen Abkürzungen finden Sie im Abschnitt "Hinweise".  <br/> |
+| *DatePart*  <br/> |Der Teil von  *Date*  (ein Datums- oder Uhrzeitwert), für den eine ganze Zahl zurückgegeben wird. Die Liste der gültigen Abkürzungen finden Sie im Abschnitt Hinweise.  <br/> |
 | *Date*  <br/> |Ein Ausdruck, der in einen Datums-/Uhrzeitwert aufgelöst werden kann. Der  *Date*  -Argumentausdruck, Spaltenausdruck, benutzerdefinierte Variable oder Zeichenfolgenliteral.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
@@ -43,7 +43,7 @@ In der folgenden Tabelle werden alle zulässigen  *DatePart*  -Argumente aufgef�
 |**dayofyear** <br/> |
 |**day** <br/> |
 |**week** <br/> |
-|**Wochentag** <br/> |
+|**Weekday** <br/> |
 |**hour** <br/> |
 |**minute** <br/> |
 |**second** <br/> |

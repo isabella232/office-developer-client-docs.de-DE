@@ -1,5 +1,5 @@
 ---
-title: Choose-Funktion (Access Custom Web App)
+title: Choose-Funktion (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33414116"
 ---
-# <a name="choose-function-access-custom-web-app"></a>Choose-Funktion (Access Custom Web App)
+# <a name="choose-function-access-custom-web-app"></a>Choose-Funktion (benutzerdefinierte Access-Web-App)
 
 Gibt das Element am angegebenen Index aus einer Liste von Werten zurück.
   
@@ -22,19 +22,19 @@ Gibt das Element am angegebenen Index aus einer Liste von Werten zurück.
   
 ## <a name="syntax"></a>Syntax
 
-**Wählen Sie** (*Index aktueller*, *Wert*, [*Value_n*]) 
+**Choose** (*IndexNumber*, *Value*, [*Value_n*]) 
   
-Die **Choose** -Funktion enthält die folgenden Argumente. 
+Die **Choose-Funktion** enthält die folgenden Argumente. 
   
 |**Argumentname**|**Beschreibung**|
 |:-----|:-----|
-| *Index aktueller*  <br/> |Ein ganzzahliger Ausdruck, der einen 1-basierten Index in der Liste der nachfolgend aufgeführten Elemente darstellt.  <br/> |
+| *IndexNumber*  <br/> |Ein ganzzahliger Ausdruck, der einen 1-basierten Index in der Liste der folgenden Elemente darstellt.  <br/> |
 | *Wert*  <br/> |Liste der Werte eines beliebigen Datentyps.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn das angegebene *Index aktueller* keine ganze Zahl ist, wird der Wert implizit in eine ganze Zahl konvertiert. 
+Wenn die  *bereitgestellte IndexNumber*  keine ganze Zahl ist, wird der Wert implizit in eine ganze Zahl konvertiert. 
   
-Wenn der Indexwert die Grenzen des Array von Werten überschreitet, gibt **Choose** NULL zurück. 
+Wenn der Indexwert die Grenzen des Wertearrays überschreitet, gibt **Choose NULL** zurück. 
   
 

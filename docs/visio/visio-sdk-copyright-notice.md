@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: fb478151-4afc-9a06-42a2-1defa54a3c4a
-description: Dieses Dokument wird in der vorliegenden Version zur Verfügung gestellt. Die in diesem Dokument enthaltenen Informationen und Ansichten, einschließlich URLs und anderer Verweise auf Internet Websites, können ohne vorherige Ankündigung geändert werden. Sie tragen das volle Risiko der Verwendung.
+description: Dieses Dokument wird in der vorliegenden Version zur Verfügung gestellt. Informationen und Ansichten in diesem Dokument, einschließlich URL und andere Internetwebsiteverweise, können sich ohne vorherige Ankündigung ändern. Das Risiko der Produktnutzung liegt allein beim Nutzer.
 ms.openlocfilehash: 2faffee253779cbc2c6fde0716db1ff46b1583bc
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT

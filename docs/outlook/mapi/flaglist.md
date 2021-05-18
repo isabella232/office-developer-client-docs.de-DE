@@ -25,11 +25,11 @@ ms.locfileid: "33412975"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine Liste der Flags, die zum Anzeigen des Status von Adresseinträgen während des Namensauflösungsvorgangs verwendet werden.
+Enthält eine Liste der Flags, die verwendet werden, um den Status von Adresseinträgen während des Namensauflösungsprozesses anzugeben.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct
@@ -40,31 +40,31 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cFlags**
   
-> Die Anzahl der MAPI-definierten Flags in der Liste.
+> Anzahl der MAPI-definierten Flags in der Liste.
     
  **ulFlags**
   
-> Ein Array von Flags, das den Status des Vorgangs zur Namensauflösung für einen Empfänger bereitstellt. Die folgenden Flags können festgelegt werden:
+> Ein Array von Kennzeichen, das den Status des Namensauflösungsvorgangs für einen Empfänger enthält. Die folgenden Kennzeichen können festgelegt werden:
     
 MAPI_AMBIGUOUS 
   
-> Der Empfänger wurde aufgelöst, jedoch nicht zu einer eindeutigen Eintrags-ID. Andere Adressbuchcontainer sollten nicht versuchen, diesen Empfänger aufzulösen. 
+> Der Empfänger wurde aufgelöst, jedoch nicht in einen eindeutigen Eintragsbezeichner. Andere Adressbuchcontainer sollten nicht versuchen, diesen Empfänger zu beheben. 
     
 MAPI_RESOLVED 
   
-> Der Empfänger wurde in eine eindeutige Eintrags-ID aufgelöst. Andere Adressbuchcontainer sollten nicht versuchen, diesen Empfänger aufzulösen. 
+> Der Empfänger wurde in einen eindeutigen Eintragsbezeichner aufgelöst. Andere Adressbuchcontainer sollten nicht versuchen, diesen Empfänger zu beheben. 
     
 MAPI_UNRESOLVED 
   
-> Der Eintrag wurde nicht aufgelöst. Andere Adressbuchcontainer sollten versuchen, diesen Empfänger aufzulösen.
+> Der Eintrag wurde nicht aufgelöst. Andere Adressbuchcontainer sollten versuchen, diesen Empfänger zu beheben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **flaglist** -Struktur wird als Parameter für [IABContainer:: ResolveNames](iabcontainer-resolvenames.md)verwendet. Jeder der zu lösenden Empfänger ist in einer [ADRLIST](adrlist.md) -Struktur enthalten. Während der Adressbuchcontainer versucht, jeden Empfänger aufzulösen, wird das entsprechende Flag im entsprechenden Eintrag in der **flaglist** -Struktur festgelegt. Alle Einträge in der Flaglist **** -Struktur haben dieselbe Reihenfolge wie die Einträge in der **ADRLIST** -Struktur. Dies erleichtert das Zuordnen einer Flag-Einstellung zu einem Empfänger. 
+Die **FLAGLIST-Struktur** wird als Parameter für [IABContainer::ResolveNames verwendet.](iabcontainer-resolvenames.md) Jeder der zu auflösende Empfänger ist in einer [ADRLIST-Struktur](adrlist.md) enthalten. Wenn der Adressbuchcontainer versucht, jeden Empfänger zu beheben, legt er das entsprechende Flag im entsprechenden Eintrag in der **FLAGLIST-Struktur** fest. Alle Einträge in der **FLAGLIST-Struktur** befinden sich in der gleichen Reihenfolge wie die Einträge in der **ADRLIST-Struktur.** Dies erleichtert das Zuordnen einer Kennzeichnungseinstellung zu einem Empfänger. 
   
 ## <a name="see-also"></a>Siehe auch
 

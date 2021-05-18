@@ -25,7 +25,7 @@ ms.locfileid: "33411309"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt ein Support Objekt für den Nachrichtendienst.
+Erstellt ein Unterstützungsobjekt für den Nachrichtendienst.
   
 ```cpp
 HRESULT GetSvcConfigSupportObj(
@@ -42,19 +42,19 @@ HRESULT GetSvcConfigSupportObj(
     
  _lppSvcSupport_
   
-> Out Ein Zeiger auf einen Zeiger auf das Support Objekt des neuen Nachrichtendiensts.
+> [out] Ein Zeiger auf einen Zeiger auf das neue Unterstützungsobjekt des Nachrichtendiensts.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Das Konfigurations Unterstützungsobjekt wurde erfolgreich erstellt.
+> Das Konfigurationsunterstützungsobjekt wurde erfolgreich erstellt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPISupport:: GetSvcConfigSupportObj** -Methode wird für alle Support-Objekte implementiert. Dienstanbieter rufen **GetSvcConfigSupportObj** auf, um ein Konfigurations Unterstützungsobjekt zu erstellen, das an eine Nachrichtendienst-Einstiegspunktfunktion weitergegeben wird. 
+Die **IMAPISupport::GetSvcConfigSupportObj-Methode** wird für alle Supportobjekte implementiert. Dienstanbieter rufen **GetSvcConfigSupportObj** auf, um ein Konfigurationsunterstützungsobjekt zu erstellen, das an eine Nachrichtendienst-Einstiegspunktfunktion übergeben wird. 
   
-Eine Nachrichtendienst-Einstiegspunktfunktion basiert auf dem [MSGSERVICEENTRY](msgserviceentry.md) -Prototyp und wird von Methoden der [IMsgServiceAdmin](imsgserviceadminiunknown.md) -Schnittstelle aufgerufen. Eine Nachrichtendienst-Einstiegspunktfunktion ermöglicht es Nachrichtendiensten, sich selbst zu konfigurieren oder andere Aktionen auszuführen, wenn das Profil geändert wird. Einstiegspunktfunktionen für den Nachrichtendienst können Konfigurationsänderungen unterstützen, indem ein Eigenschaftenblatt oder ein Eigenschafts Wertarray angezeigt wird, das an die [IMsgServiceAdmin:: ConfigureMsgService](imsgserviceadmin-configuremsgservice.md) -Methode übergeben wird. 
+Eine Nachrichtendienst-Einstiegspunktfunktion basiert auf dem [MSGSERVICEENTRY-Prototyp](msgserviceentry.md) und wird von Methoden der [IMsgServiceAdmin-Schnittstelle](imsgserviceadminiunknown.md) aufgerufen. Mit einer Nachrichtendienst-Einstiegspunktfunktion können Nachrichtendienste sich selbst konfigurieren oder andere Aktionen ausführen, wenn das Profil geändert wird. Nachrichtendienst-Einstiegspunktfunktionen können Konfigurationsänderungen unterstützen, indem ein Eigenschaftenblatt oder ein Eigenschaftswertarray angezeigt wird, das an die [IMsgServiceAdmin::ConfigureMsgService-Methode übergeben](imsgserviceadmin-configuremsgservice.md) wird. 
   
 ## <a name="see-also"></a>Siehe auch
 

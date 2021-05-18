@@ -8,7 +8,7 @@ f1_keywords:
 - TempActiveRow
 - TempActiveRow12
 keywords:
-- tempactiverow-Funktion [Excel 2007], TempActiveRow12-Funktion [Excel 2007]
+- tempactiverow-Funktion [excel 2007],TempActiveRow12-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: cbb9181c-59b0-4133-a085-94a94ac3f229
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -23,7 +23,7 @@ ms.locfileid: "33413108"
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Framework-Bibliotheksfunktionen, mit denen ein temporäres **XLOPER**/ -**XLOPER12** erstellt wird, das einen externen Verweis auf eine ganze Zeile im aktiven Blatt enthält. 
+Frameworkbibliotheksfunktionen, die eine temporäre **XLOPER** /  **XLOPER12** erstellen, die einen externen Verweis auf eine gesamte Zeile im aktiven Blatt enthält. 
   
 ```cs
 LPXLOPER TempActiveRow(WORD row);
@@ -32,17 +32,17 @@ LPXLOPER12 TempActiveRow12(ROW row);
 
 ## <a name="parameters"></a>Parameter
 
- _Zeile_
+ _row_
   
-Die Zeile, auf die verwiesen werden soll. Zeilenargumente sind nullbasiert, sodass Zeile 1 als 0 übergeben wird. In Microsoft Office Excel 2003 und früheren Versionen und beginnend mit Excel 2007, die eine Arbeitsmappe im Kompatibilitätsmodus ausführt, ist der Höchstwert 65.535 = 2 ^ 16-1 und ist der Höchstwert, der von einem Wort Integer verwendet werden kann. Ab Excel 2007 mit einer Arbeitsmappe ist der Höchstwert 1.048.575 = 2 ^ 20-1. RW ist als eine 32-Bit-Ganzzahl mit Vorzeichen in XLCALL definiert. H.
+Die Zeile, auf die verwiesen werden soll. Zeilenargumente sind nullbasierte, sodass Zeile 1 als 0 übergeben wird. In Microsoft Office Excel 2003 und früheren Versionen und ab Excel 2007, in dem eine Arbeitsmappe im Kompatibilitätsmodus ausgeführt wird, ist der höchstwert 65.535 = 2^16 - 1 und der Höchstwert, der von einer ganzzahligen WORD-Zahl verwendet werden kann. Ab Excel 2007, in dem eine Arbeitsmappe ausgeführt wird, ist der maximale Wert 1.048.575 = 2^20 - 1. RW ist in XLCALL.H als 32-Bit-ganze Zahl mit Vorzeichen definiert.
   
 ## <a name="return-value"></a>Rückgabewert
 
-Gibt einen externen **externen xltypeRef** -Verweis auf Zeilen Zellen zurück, die übergeben werden. 
+Gibt einen **externen xltypeRef-Verweis** auf die übergebenen Zeilenzellen zurück. 
   
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird die **TempActiveRow12** -Funktion verwendet, um Zeile 113 zu markieren. 
+In diesem Beispiel wird die **TempActiveRow12-Funktion** verwendet, um Zeile 113 auszuwählen. 
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   

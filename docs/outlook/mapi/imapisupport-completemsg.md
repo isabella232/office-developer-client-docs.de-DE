@@ -25,7 +25,7 @@ ms.locfileid: "33411190"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Führt die Nachbearbeitung für eine Nachricht aus. 
+Führt die Nachverarbeitung für eine Nachricht durch. 
   
 ```cpp
 HRESULT CompleteMsg(
@@ -43,29 +43,29 @@ HRESULT CompleteMsg(
     
  _cbEntryID_
   
-> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID_ -Parameter verwiesen wird. 
+> [in] Die Byteanzahl im Eintragsbezeichner, auf den der  _lpEntryID-Parameter_ verweist. 
     
  _lpEntryID_
   
-> in Ein Zeiger auf die Eintrags-ID der zu verarbeitenden Nachricht.
+> [in] Ein Zeiger auf die Eintrags-ID der zu verarbeitende Nachricht.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Nachbearbeitung war erfolgreich.
+> Die Nachverarbeitung war erfolgreich.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPISupport:: CompleteMsg** -Methode wird für Nachrichtenspeicher Anbieter-Support Objekte implementiert und nur von Nachrichtenspeicher Anbietern aufgerufen, die eng mit Transportanbietern verbunden sind. Eng gekoppelte Speicheranbieter rufen **IMAPISupport:: CompleteMsg** auf, um den MAPI-Spooler anzuweisen, eine Nachricht zu senden. 
+Die **IMAPISupport::CompleteMsg-Methode** wird für Unterstützungsobjekte des Nachrichtenspeicheranbieters implementiert und nur von Nachrichtenspeicheranbietern aufgerufen, die eng mit Transportanbietern gekoppelt sind. Eng gekoppelte Speicheranbieter rufen **IMAPISupport::CompleteMsg** auf, um den MAPI-Spooler anweisen, eine Nachricht nachverarbeitet zu haben. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-**CompleteMsg** nur aufrufen, wenn Sie eng mit einem Transportanbieter verbunden sind, können Sie alle Empfänger der Nachricht verarbeiten, und eine der folgenden Bedingungen ist vorhanden: 
+Rufen **Sie CompleteMsg** nur auf, wenn Sie eng mit einem Transportanbieter gekoppelt sind, Sie alle Empfänger der Nachricht behandeln können, und eine der folgenden Bedingungen ist vorhanden: 
   
 - Die Nachricht wurde vorverarbeitet.
     
-- Die Nachricht erfordert die Nachbearbeitung durch den MAPI-Spooler.
+- Die Nachricht erfordert die Nachverarbeitung durch den MAPI-Spooler.
     
 ## <a name="see-also"></a>Siehe auch
 

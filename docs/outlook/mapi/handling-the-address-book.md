@@ -21,34 +21,34 @@ ms.locfileid: "33413920"
   
 Behandeln von MAPI-Adressbuch z�hlen Extrahieren von Eintr�gen f�r die Verwendung als Empf�nger der Nachricht, �ndern-Empf�ngereigenschaften, Hinzuf�gen von messaging-Benutzer oder Verteilerlisten, One erstellen und Anzeigen von mindestens eines der Standarddialogfelder Adresse, damit Benutzer Adressinformationen zu durchsuchen und �nderungen vorzunehmen.
 
-- [Öffnen des Adressbuchs](opening-the-address-book.md): Beschreibt, wie MAPI zum Öffnen eines Adressbuchs verwendet wird.
+- [Öffnen des Adressbuchs](opening-the-address-book.md): Beschreibt die Verwendung von MAPI zum Öffnen eines Adressbuchs.
     
-- [Anzeigen des Dialog Felds "allgemeine Adresse](displaying-the-common-address-dialog-box.md)": Beschreibt, wie unterschiedliche Adressbuchcontainer angezeigt werden.
+- [Anzeigen des Dialogfelds Allgemeine Adresse:](displaying-the-common-address-dialog-box.md)Beschreibt, wie unterschiedliche Adressbuchcontainer angezeigt werden.
     
-- [Öffnen eines Adressbuch Containers](opening-an-address-book-container.md): Beschreibt, wie Sie verschiedene Adressbuchcontainer öffnen.
+- [Öffnen eines Adressbuchcontainers:](opening-an-address-book-container.md)Beschreibt das Öffnen verschiedener Adressbuchcontainer.
     
-- [Festlegen von Adressbuchoptionen](setting-address-book-options.md): Beschreibt, wie die Eigenschaften festgelegt werden, die Optionen für die Verwendung des Adressbuchs beschreiben.
+- [Festlegen von Adressbuchoptionen:](setting-address-book-options.md)Beschreibt, wie Sie die Eigenschaften festlegen, die Optionen für die Verwendung des Adressbuchs beschreiben.
     
-- [Erstellen eines Empfängers](creating-a-recipient.md): Beschreibt, wie Empfänger beim Adressieren von Nachrichten und Hinzufügen von Einträgen zu änderbaren Adressbuch Containern erstellt werden.
+- [Erstellen eines Empfängers](creating-a-recipient.md): Beschreibt, wie Empfänger beim Adressieren von Nachrichten und Hinzufügen von Einträgen zu veränderbaren Adressbuchcontainern erstellt werden.
     
-- [Erstellen einer Verteilerliste](creating-a-distribution-list.md): Beschreibt das Erstellen einer Verteilerliste in einem änderbaren Container.
+- [Erstellen einer Verteilerliste](creating-a-distribution-list.md): Beschreibt das Erstellen einer Verteilerliste in einen veränderbaren Container.
     
 - [Kopieren eines Empfängers](copying-a-recipient.md): Beschreibt, wie Empfänger aus einem Container in einen anderen oder denselben Container kopiert werden.
     
-- [Löschen eines Empfängers](deleting-a-recipient.md): Beschreibt das Entfernen eines oder mehrerer Adressbucheinträge aus einem änderbaren Container.
+- [Löschen eines Empfängers](deleting-a-recipient.md): Beschreibt, wie Sie einen oder mehrere Adressbucheinträge aus einem veränderbaren Container entfernen.
     
-- [Vorbereiten eines Empfängers](preparing-a-recipient.md): Beschreibt, wie Sie Empfänger vorbereiten, indem Sie deren kurzfristige Eintragsbezeichner in langfristige Eintragsbezeichner konvertieren und möglicherweise Eigenschaften hinzufügen, ändern oder neu anordnen.
+- [Vorbereiten eines Empfängers](preparing-a-recipient.md): Beschreibt, wie Empfänger vorbereitet werden, indem sie ihre kurzzeitschriftlich verwendeten Eintragsbezeichner in langfristige Eintragsbezeichner konvertieren und möglicherweise Eigenschaften hinzufügen, ändern oder neu anordnen.
     
-- [Zugreifen auf die Mitglieder einer Verteilerliste](accessing-the-members-of-a-distribution-list.md): Beschreibt den Zugriff auf die Mitglieder einer Verteilerliste.
+- [Zugriff auf die Mitglieder einer Verteilerliste](accessing-the-members-of-a-distribution-list.md): Beschreibt den Zugriff auf die Mitglieder einer Verteilerliste.
     
-- [Abrufen von Empfänger Eigenschaften](retrieving-recipient-properties.md): Beschreibt den Zugriff auf eine oder mehrere Eigenschaften eines Empfänger Adressbuch-Eintrags.
+- [Abrufen von Empfängereigenschaften:](retrieving-recipient-properties.md)Beschreibt den Zugriff auf eine oder mehrere Eigenschaften eines Empfänger-Adressbucheintrags.
     
-- Durch [Suchen des Adressbuchs](searching-the-address-book.md): Beschreibung der beiden Ebenen der MAPI-Suchfunktionalität. 
+- [Durchsuchen des Adressbuchs:](searching-the-address-book.md)Beschreibt die beiden Ebenen der MAPI-Suchfunktionalität. 
     
-- [Verwenden eines Dialog Felds für die erweiterte Suche](using-an-advanced-search-dialog-box.md): Beschreibt, wie Sie eine erweiterte Suchfunktionalität in einem Adressbuchcontainer ausführen.
+- [Verwenden eines Dialogfelds für die](using-an-advanced-search-dialog-box.md)erweiterte Suche: Beschreibt, wie eine erweiterte Suchfunktion in einem Adressbuchcontainer ausgeführt wird.
     
-- [Auflösen eines Empfängernamens](resolving-a-recipient-name.md): Beschreibt, wie ein Name in einem Adressbuch aufgelöst wird.
+- [Auflösen eines Empfängernamens:](resolving-a-recipient-name.md)Beschreibt, wie ein Name in einem Adressbuch aufgelöst wird.
     
-- [Erweitern von Verteilerlisten](expanding-distribution-lists.md): Beschreibt, wie MAPI zum Erweitern einer Verteilerliste aufgefordert wird.
+- [Erweitern von Verteilerlisten](expanding-distribution-lists.md): Beschreibt, wie Mapi aufgefordert wird, eine Verteilerliste zu erweitern.
     
 

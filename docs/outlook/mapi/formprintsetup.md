@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6e82fe94-47bd-4a25-b25b-0ab6fe2db274
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: c2b9176e21341ef28e6f0bc007757b097a05daee
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,11 +25,11 @@ ms.locfileid: "32327286"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt die Druck Setupinformationen für das Form-Objekt. 
+Beschreibt die Druckeinrichtungsinformationen für das Formularobjekt. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiform. h  <br/> |
+|Headerdatei  <br/> |Mapiform.h  <br/> |
    
 ```cpp
 typedef struct
@@ -51,31 +51,31 @@ typedef struct
     
 MAPI_UNICODE 
   
-> Die Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format.
+> Die Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Zeichenfolgen im ANSI-Format.
     
  **hDevmode**
   
-> Behandeln Sie den Modus des Druckers.
+> Wechseln Sie zum Modus des Druckers.
     
  **hDevnames**
   
-> Handle für den Pfad des Druckers.
+> Handle zum Pfad des Druckers.
     
  **ulFirstPageNumber**
   
-> Seitenzahl der ersten zu druckenden Seite.
+> Seitennummer der ersten Zu druckten Seite.
     
  **ulFPrintAttachments**
   
-> Flag, das angibt, ob Anlagen gedruckt werden sollen. Wenn Anlagen zum Drucken vorhanden sind, wird das **ulFPrintAttachments** -Element auf 1 festgelegt. Wenn keine Anlagen zum Drucken vorhanden sind, wird dieser Wert auf 0 festgelegt. 
+> Flag, das angibt, ob Anlagen gedruckt werden sollen. Wenn Anlagen gedruckt werden sollen, wird das **ulFPrintAttachments-Element** auf 1 festgelegt. Wenn keine Anlagen gedruckt werden sollen, wird sie auf 0 festgelegt. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **FORMPRINTSETUP** -Struktur wird verwendet, um die Druck Setupinformationen für ein Form-Objekt zu beschreiben. Implementierungen von [IMAPIViewContext:: GetPrintSetup](imapiviewcontext-getprintsetup.md) füllen die **FORMPRINTSETUP** -Struktur aus und geben Sie in den Inhalt des _LppFormPrintSetup_ -Ausgabeparameters von **GetPrintSetup**zurück.
+Die **FORMPRINTSETUP-Struktur** wird verwendet, um die Druckeinrichtungsinformationen für ein Formularobjekt zu beschreiben. Implementierungen von [IMAPIViewContext::GetPrintSetup](imapiviewcontext-getprintsetup.md) füllen die **FORMPRINTSETUP-Struktur** aus und geben sie im Inhalt des _lppFormPrintSetup-Ausgabeparameters_ von **GetPrintSetup zurück.**
   
-Wenn das MAPI_UNICODE-Flag im _ulFlags_ -Parameter von **GetPrintSetup**übergeben wird, sollten die Zeichenfolgen, auf die von den **hDevmode** -und **HDevnames** -Elementen verwiesen wird, im Unicode-Format vorliegen. Andernfalls sollten die Zeichenfolgen im ANSI-Format vorliegen. 
+Wenn das MAPI_UNICODE im  _ulFlags-Parameter_ von **GetPrintSetup** übergeben wird, sollten die Zeichenfolgen, auf die von den **Mitgliedern hDevmode** und **hDevnames** verwiesen wird, im Unicode-Format vorliegen. Andernfalls sollten die Zeichenfolgen im ANSI-Format vorliegen. 
   
-Formular Betrachter, die **IMAPIViewContext** implementieren, müssen die **FORMPRINTSETUP** -Struktur mithilfe der MAPI-Zuweisungsfunktion [MAPIAllocateBuffer](mapiallocatebuffer.md)zuweisen, aber die einzelnen Member, **hDevMode** und **hDevNames**, zuweisen. mit der Windows-Funktion [GlobalAlloc](https://go.microsoft.com/fwlink/?LinkId=132110). Die Freigabe des Arbeitsspeichers wird entsprechend behandelt. Die **hDevMode** -und **hDevNames** -Member müssen mithilfe der Windows-Funktion [GlobalFree](https://go.microsoft.com/fwlink/?LinkId=132108) freigegeben werden, während die **FORMPRINTSETUP** -Struktur mit der [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion freigegeben werden muss. 
+Formularbetrachter, die **IMAPIViewContext** implementieren, müssen die **FORMPRINTSETUP-Struktur** mithilfe der MAPI-Zuweisungsfunktion [MAPIAllocateBuffer](mapiallocatebuffer.md)zuordnen, weisen jedoch die einzelnen Member **hDevMode** und **hDevNames** mit der Windows-Funktion [GlobalAlloc zu.](https://go.microsoft.com/fwlink/?LinkId=132110) Die Freigabe des Arbeitsspeichers wird ähnlich behandelt. Die **Elemente hDevMode** und **hDevNames** müssen mithilfe der Windows-Funktion [GlobalFree](https://go.microsoft.com/fwlink/?LinkId=132108) frei, während die **FORMPRINTSETUP-Struktur** mit der [MAPIFreeBuffer-Funktion](mapifreebuffer.md) freigeräumt werden muss. 
   
 ## <a name="see-also"></a>Siehe auch
 

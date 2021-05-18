@@ -1,5 +1,5 @@
 ---
-title: Copyright-Hinweis zu Outlook-Hilfsreferenz
+title: Outlook-Hilfsreferenz zum Urheberrechtsvermerk
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,7 +7,7 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 94e13811-04ec-e381-99ff-cb8f42d4bf1e
-description: Dieses Dokument wird in der vorliegenden Version zur Verfügung gestellt. Die in diesem Dokument enthaltenen Informationen und Ansichten, einschließlich URLs und anderer Verweise auf Internet Websites, können ohne vorherige Ankündigung geändert werden. Sie tragen das volle Risiko der Verwendung.
+description: Dieses Dokument wird in der vorliegenden Version zur Verfügung gestellt. Informationen und Ansichten in diesem Dokument, einschließlich URL und andere Internetwebsiteverweise, können sich ohne vorherige Ankündigung ändern. Das Risiko der Produktnutzung liegt allein beim Nutzer.
 ms.openlocfilehash: 7f72ed0fc580fa62baaeb88d4366c68a3b7ac279
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32327790"
 ---
-# <a name="outlook-auxiliary-reference-copyright-notice"></a>Copyright-Hinweis zu Outlook-Hilfsreferenz
+# <a name="outlook-auxiliary-reference-copyright-notice"></a>Outlook-Hilfsreferenz zum Urheberrechtsvermerk
 
 Dieses Dokument wird in der vorliegenden Version zur Verfügung gestellt. Die Informationen und Ansichten in diesem Dokument, einschließlich URLs und anderer Verweise auf Internet-Websites, können sich ohne Ankündigung ändern. Die Verwendung erfolgt auf eigenes Risiko.
   

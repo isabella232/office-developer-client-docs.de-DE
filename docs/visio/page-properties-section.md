@@ -20,8 +20,8 @@ ms.locfileid: "33411652"
 
 Enthält Zellen zum Steuern von Zeichenblattattributen, z. B. Zeichenblattbreite, -höhe und -maßstab.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Sie können die Werte der Seiteneigenschaften festlegen, indem Sie einen Eintrag in der Zelle mit den **Seiteneigenschaften** oder im Dialogfeld **Seite einrichten** (Klicken Sie dazu auf der Registerkarte **Entwurf** auf das Dialogfeldstartprogramm in der Gruppe **Seite einrichten** ). 
+Sie können die Werte der Seiteneigenschaften festlegen, indem Sie einen Eintrag  in der Abschnittszelle Seiteneigenschaften erstellen oder das  Dialogfeld Seiteneinrichtung verwenden (klicken Sie auf der Registerkarte Entwurf auf das Startfeld des Dialogfelds in der Gruppe Seiteneinrichtung).   
   
 

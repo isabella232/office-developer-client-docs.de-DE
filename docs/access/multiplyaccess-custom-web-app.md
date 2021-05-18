@@ -1,5 +1,5 @@
 ---
-title: Multiply (Zugriff auf benutzerdefinierte Web-App)
+title: Multiplizieren (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33412163"
 ---
-# <a name="multiply-access-custom-web-app"></a>Multiply (Zugriff auf benutzerdefinierte Web-App)
+# <a name="multiply-access-custom-web-app"></a>Multiplizieren (benutzerdefinierte Access-Web-App)
 
 Multipliziert zwei Ausdrücke.
   
@@ -27,7 +27,7 @@ Multipliziert zwei Ausdrücke.
 
 *expression*  \*  *expression* 
   
-*Ausdruck*  Ein beliebiger gültiger Ausdruck eines beliebigen Datentypen in der numerischen Kategorie. 
+*Ausdruck*  Jeder gültige Ausdruck eines der Datentypen in der numerischen Kategorie. 
   
 ## <a name="return-value"></a>Rückgabewert
 

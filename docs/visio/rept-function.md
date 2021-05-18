@@ -22,18 +22,18 @@ Wiederholt Text so oft wie angegeben.
   
 ## <a name="syntax"></a>Syntax
 
-REPT (* * *Text* * *, * * *Multiplikator* * *) 
+REPT (** *text* **, ** *number_times* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _text_ <br/> |Erforderlich  <br/> |**String** <br/> | Der Text, der wiederholt werden soll.  <br/> |
-| _Multiplikator_ <br/> |Erforderlich  <br/> |**Number** <br/> |Eine positive Zahl, die angibt, wie oft der Text wiederholt werden soll.  <br/> |
+| _number_times_ <br/> |Erforderlich  <br/> |**Number** <br/> |Eine positive Zahl, die angibt, wie oft der Text wiederholt werden soll.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn *Multiplikator* ist: 
+Wenn  *number_times*  ist: 
   
 - Null (0) ist, gibt REPT "" (leeren Text) zurück.
     
@@ -41,8 +41,8 @@ Wenn *Multiplikator* ist:
     
 ## <a name="example"></a>Beispiel
 
-REPT ("\*", 5) 
+REPT (" \* ", 5) 
   
-Gibt \* \* \*zurück \*. \* 
+Gibt \* \* \* \* \* zurück. 
   
 

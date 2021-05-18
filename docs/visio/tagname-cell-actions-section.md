@@ -23,30 +23,30 @@ Enthält den Namen des Aktionstags, mit dem diese Aktion verknüpft ist.
 > [!NOTE]
 > In früheren Versionen von Microsoft Visio werden Aktionstags als Smarttags bezeichnet. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Über die Zellen TagName im Abschnitt Actions und im Abschnitt Action Tags erfolgt das Zuordnen eines Aktionstags zu den damit verknüpften Aktionen. 
   
-- Wenn die Zelle TagName in einer Zeile Aktionen leer ist, wird die Aktion in einem Kontextmenü und nicht in einem aktionstagmenü angezeigt.
+- Wenn die Zelle TagName in einer Actions-Zeile leer ist, wird die Aktion in einem Kontextmenü und nicht in einem Aktionstagmenü angezeigt.
     
-- Wenn der Zellenwert TagName in der Zeile Actions mit dem Zellenwert TagName in einer Smarttag-Zeile übereinstimmt, wird die Aktion im Menü Aktionstag angezeigt.
+- Wenn ein TagName-Zellwert in der Zeile Aktionen mit dem TagName-Zellwert in einer SmartTags-Zeile entspricht, wird die Aktion im Menü Aktionstag angezeigt.
     
-- Wenn die Zelle TagName einer Aktion einen Wert aufweist, aber nicht mit dem Wert TagName in einer beliebigen Shape-Tag-Zeile übereinstimmt, wird diese Aktion nicht in einem Aktionstag-oder Kontextmenü angezeigt.
+- Wenn die TagName-Zelle einer Aktion über einen Wert verfügt, sie jedoch nicht mit dem TagName-Wert in einer Shape-Tag-Zeile übereinstimmen, wird diese Aktion nicht in Aktionstagmenüs oder Kontextmenüs angezeigt.
     
 - Wenn mehrere Smarttag-Zeilen den gleichen Wert in der Zelle TagName aufweisen, wird überall die gleiche Aktion angezeigt.
     
-Wenn Sie einen Verweis auf die Zelle TagName aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die TagName-Zelle anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Aktionen. *Name* . Tagnamewobei-Aktionen.  *Name* ist der Name der Zeile Actions.  <br/> |
+|Zellenname:  <br/> |Aktionen. *Name*  . TagNamewhere-Aktionen.  *Name*  ist der Name der Zeile Aktionen  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle TagName aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die TagName-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
 |Abschnittsindex:  <br/> |**visSectionAction** <br/> |
-|Zeilenindex:  <br/> |**visRowAction** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+|Zeilenindex:  <br/> |**visRowAction**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
 |Zellenindex:  <br/> |**visActionTagName** <br/> |
    
 

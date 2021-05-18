@@ -27,15 +27,15 @@ HRESULT _stdcall AreFriendsOrColleagues(SAFEARRAY(BSTR) userIds, [out, retval] S
 
 _UserIds_
   
-> in Eine Struktur, die ein Array von Benutzer-ID-Werten angibt, die einer Gruppe von Personen im sozialen Netzwerk entsprechen.
+> [in] Eine Struktur, die ein Array von Benutzer-ID-Werten angibt, die einer Gruppe von Personen im sozialen Netzwerk entsprechen.
     
-_Ergebnisse_
+_ergebnisse_
   
-> Out Ein Zeiger auf Structure, der ein Array von booleschen Werten angibt, das angibt, ob die entsprechende __ Person im userids-Array ein Freund ist. 
+> [out] Ein Zeiger auf die Struktur, der ein Array von booleschen Werten angibt, der angibt, ob die entsprechende Person im  _userIds-Array_ ein Freund ist. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Für jede im Eingabearray des userids-para __ meters dargestellte Person legt diese Methode das entsprechende Element im Ausgabearray des Parameters _results_ fest. **true** gibt an, dass die Person ein Freund ist, und **false** gibt an, dass die Person kein Freund ist. 
+Für jede Person, die im Eingabearray des  _parameters userIds_ dargestellt wird, legt diese Methode das entsprechende Element im Ausgabearray des  _Results-Parameters_ fest. **true** gibt an, dass es sich bei der Person um einen Freund handelt, und **false** gibt an, dass es sich bei der Person nicht um einen Freund handelt. 
   
 ## <a name="see-also"></a>Siehe auch
 

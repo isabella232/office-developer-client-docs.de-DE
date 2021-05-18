@@ -1,5 +1,5 @@
 ---
-title: Freigeben des Transport Anbieters
+title: Freigeben des Transportanbieters
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -15,26 +15,26 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32328385"
 ---
-# <a name="releasing-the-transport-provider"></a>Freigeben des Transport Anbieters
+# <a name="releasing-the-transport-provider"></a>Freigeben des Transportanbieters
 
  
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Wenn MAPI oder der MAPI-Spooler mit einem Transport Logon-Objekt abgeschlossen ist:
+Wenn MAPI oder der MAPI-Spooler mit einem Transportanmeldeobjekt abgeschlossen wird:
   
-1. MAPI oder der MAPI-Spooler Ruft die [IXPLogon:: TransportLogoff](ixplogon-transportlogoff.md) -Methode des Transportanbieters auf. 
+1. MAPI oder der MAPI-Spooler ruft die [IXPLogon::TransportLogoff-Methode des Transportanbieters](ixplogon-transportlogoff.md) auf. 
     
-2. Der Transportanbieter validiert das Status-Objekt durch Aufrufen der [IMAPISupport:: MakeInvalid](imapisupport-makeinvalid.md) -Methode. Ob der Transportanbieter Nachrichtenobjekte, die gesendet oder empfangen werden, zum Zeitpunkt des **TransportLogoff** -Aufrufs ungültig macht, hängt von den Flags ab, die an **TransportLogoff**übergeben wurden.
+2. Der Transportanbieter macht das status-Objekt ungültig, indem die [IMAPISupport::MakeInvalid-Methode](imapisupport-makeinvalid.md) aufruft. Ob der Transportanbieter Nachrichtenobjekte ungültig macht, die zum Zeitpunkt des **TransportLogoff-Aufrufs** gesendet oder empfangen werden, hängt von den Flags ab, die an **TransportLogoff übergeben wurden.**
     
-3. Der Transportanbieter Ruft die [IUnknown:: Release](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx) -Methode des Support Objekts auf, um die Zeile des Transportanbieters aus der Statustabelle zu entfernen und aus internen Tabellen alle eindeutigen Bezeichner (IDs) zu entfernen, die mit der IMAPISupport festgelegt wurden [: SetProviderUID](imapisupport-setprovideruid.md) -Methode. Die Anzahl bekannter Anmeldeobjekte, die für dieses Anbieterobjekt aktiv sind, wird verringert. Wenn die Anzahl 0 (null) erreicht, ruft MAPI die [IXPProvider:: Shutdown](ixpprovider-shutdown.md) -Methode und die **Freigabe** für das Provider-Objekt auf. Wenn dies das letzte bekannte Anbieterobjekt ist, das diese DLL verwendet, ruft MAPI zu einem späteren Zeitpunkt die **FreeLibrary** -Funktion für die dll auf. Der Speicher für das MAPI-Unterstützungsobjekt wird freigegeben, und die **Release** -Methode des Support-Objekts gibt zurück. 
+3. Der Transportanbieter ruft die [IUnknown::Release-Methode](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx) des Supportobjekts auf, um die Zeile des Transportanbieters aus der Statustabelle zu entfernen und alle eindeutigen Bezeichner (UIDs), die mit der [IMAPISupport::SetProviderUID-Methode](imapisupport-setprovideruid.md) festgelegt wurden, aus internen Tabellen zu entfernen. Dadurch wird die Anzahl der bekannten Anmeldeobjekte, die für dieses Anbieterobjekt aktiv sind, dekrementiert. Wenn die Anzahl null erreicht, ruft MAPI die [IXPProvider::Shutdown-Methode](ixpprovider-shutdown.md) und **Release für** das Anbieterobjekt auf. Wenn dies das letzte bekannte Anbieterobjekt war, das diese DLL für diesen Prozess verwendet, ruft MAPI die **FreeLibrary-Funktion** zu einem späteren Zeitpunkt in der DLL auf. Der Arbeitsspeicher für das MAPI-Unterstützungsobjekt wird freigegeben, und die **Release-Methode des Supportobjekts gibt** zurück. 
     
-4. Die **TransportLogoff** -Methode gibt S_OK zurück. 
+4. Die **TransportLogoff-Methode** gibt S_OK. 
     
-5. MAPI oder der MAPI-Spooler Ruft die **Freigabe** für das Anmeldeobjekt des Transportanbieters auf. Der Arbeitsspeicher für das Objekt wird freigegeben. 
+5. MAPI oder der MAPI-Spooler ruft **Release für** das Anmeldeobjekt des Transportanbieters auf. Der Arbeitsspeicher für das Objekt wird freigegeben. 
     
 6. MAPI oder der MAPI-Spooler ruft **FreeLibrary** für die Anbieter-DLL auf. 
     
-Aus Stabilitäts-, Anmelde-und Anbieter Objekten sollte in der Lage sein, abschließende **Freigabe** Aufrufe für sich selbst zu behandeln, ohne zuvor Ihre **TransportLogoff** -oder **Shutdown** -Methoden aufgerufen zu haben. Wenn **Release** in solchen Fällen aufgerufen wird, sollten Transportanbieter die Aufrufe so behandeln, als ob **TransportLogoff** oder **Shutdown** mit einem NULL-Argument, gefolgt von **Release**, aufgerufen wurde.
+Zur Robustheit sollten die Anmelde- und Anbieterobjekte  in der Lage sein, endgültige Releaseaufrufe für sich selbst zu verarbeiten, ohne zuerst ihre **TransportLogoff-** oder **Shutdown-Methoden** aufrufen zu müssen. Wenn **Release** in solchen Fällen aufgerufen wird, sollten Transportanbieter die Anrufe so behandeln, als ob **TransportLogoff** oder **Shutdown** mit einem Nullargument gefolgt von Release aufgerufen **worden wären.**
   
 

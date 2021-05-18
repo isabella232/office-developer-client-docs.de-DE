@@ -25,13 +25,13 @@ ms.locfileid: "33411554"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Codiert eine Eintrags-ID in eine ASCII-Zeichenfolge. 
+Codiert einen Eintragsbezeichner in eine ASCII-Zeichenfolge. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
    
 ```cpp
 HrSzFromEntryID(
@@ -45,26 +45,26 @@ HrSzFromEntryID(
 
  _cb_
   
-> in Größe (in Bytes) der Eintrags-ID, auf die durch __ den Penty-Parameter verwiesen wird. 
+> [in] Größe des Eintragsbezeichners in Bytes, auf den der  _Pentry-Parameter_ verweist. 
     
- _Pentry_
+ _pentry_
   
-> in Zeiger auf eine [Eintrags](entryid.md) -ID-Struktur, die den zu codierenden Eintragsbezeichner enthält. 
+> [in] Zeiger auf eine [ENTRYID-Struktur,](entryid.md) die die zu codierte Eintrags-ID enthält. 
     
- _PSZ_
+ _psz_
   
-> Out Zeiger auf die zurückgegebene ASCII-Zeichenfolge.
+> [out] Zeiger auf die zurückgegebene ASCII-Zeichenfolge.
     
 ## <a name="return-value"></a>Return value
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die [HrEntryIDFromSz](hrentryidfromsz.md) -und **HrSzFromEntryID** -Funktionen ermöglichen die Konvertierung zwischen den Zeichenfolgen-und Binärformaten der Eintrags-IDs. Mit MAPI sollten Sie Strukturen mit Binärdaten verwenden. 
+Die [Funktionen HrEntryIDFromSz](hrentryidfromsz.md) und **HrSzFromEntryID** stellen eine Konvertierung zwischen den Zeichenfolgen- und Binärformaten von Eintragsbezeichnern zur Verfügung. Bei MAPI sollten Sie Strukturen mit Binärdaten verwenden. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Die **HrSzFromEntryID** -Funktion reserviert Speicher für die ASCII-Zeichenfolge mithilfe der [MAPIAllocateBuffer](mapiallocatebuffer.md) -Funktion. 
+Die **HrSzFromEntryID-Funktion** weist der ASCII-Zeichenfolge mithilfe der [MAPIAllocateBuffer-Funktion Arbeitsspeicher](mapiallocatebuffer.md) zu. 
   
 

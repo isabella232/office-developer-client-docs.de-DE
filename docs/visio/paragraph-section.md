@@ -20,10 +20,10 @@ ms.locfileid: "33414312"
 
 Zeigt die Absatzformatierungsattribute für den Text des Shapes an, z. B. Einzüge, Zeilenabstände, Aufzählungszeichen und die horizontale Ausrichtung von Absätzen.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Absatzformate können festgelegt werden, indem Sie einen Eintrag in einer Zelle des **Absatz** Abschnitts durch einen Textformatvorlage oder durch Eingeben von Werten in das Dialogfeld **Text** festlegen (Klicken Sie auf der Registerkarte **Start** auf das Dialogfeldstartprogramm in der Gruppe **Schriftart** ). 
+Absatzformate können festgelegt werden, indem  Sie einen Eintrag in einer Abschnittszelle Absatz erstellen, indem  Sie eine Textformatvorlage anwenden oder Werte im Dialogfeld **Text** eingeben (klicken Sie auf der Registerkarte Start auf das Startfeld des Dialogfelds in der Gruppe **Schriftart).** 
   
-Der **Absatz** Abschnitt enthält keine Zellen für Registerkarteneinstellungen. Wenn Sie Registerkarten für den Text einer Form festlegen möchten, verwenden Sie das Dialogfeld **Text** . 
+Der **Abschnitt Absatz** enthält keine Zellen für Registerkarteneinstellungen. Verwenden Sie zum Festlegen von Registerkarten für den Text eines Shapes das Dialogfeld **Text.** 
   
 

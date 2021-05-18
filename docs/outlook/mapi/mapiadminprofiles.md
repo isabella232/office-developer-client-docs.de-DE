@@ -29,9 +29,9 @@ Erstellt ein Profilverwaltungsobjekt.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapix. h  <br/> |
+|Headerdatei  <br/> |Mapix.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
    
 ```cpp
 HRESULT MAPIAdminProfiles(
@@ -44,11 +44,11 @@ HRESULT MAPIAdminProfiles(
 
  _ulFlags_
   
-> in Bitmaske von Flags, die Optionen für die Dienst Eingabefunktion angeben. 
+> [in] Bitmaske mit Flags, die Optionen für die Diensteingabefunktion angibt. 
     
  _lppProfAdmin_
   
-> Out Zeiger auf einen Zeiger auf das neue Profilverwaltungsobjekt.
+> [out] Zeiger auf einen Zeiger auf das neue Profilverwaltungsobjekt.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -62,7 +62,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIObjects. cpp  <br/> |CMapiObjects:: GetProfAdmin  <br/> |MFCMAPI verwendet die **MAPIAdminProfiles** -Methode, um das Profilverwaltungsobjekt abzurufen.  <br/> |
+|MAPIObjects.cpp  <br/> |CMapiObjects::GetProfAdmin  <br/> |MFCMAPI verwendet die **MAPIAdminProfiles-Methode,** um das Profilverwaltungsobjekt zu erhalten.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

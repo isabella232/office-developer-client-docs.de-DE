@@ -25,12 +25,12 @@ ms.locfileid: "33413976"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl der Bytes in einer vorhandenen [FLATENTRY](flatentry.md) -Struktur. 
+Berechnet die Anzahl der Bytes in einer [vorhandenen FLATENTRY-Struktur.](flatentry.md) 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |**FLATENTRY** <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |**FLATENTRY** <br/> |
    
 ```cpp
 CbFLATENTRY (_lpentry)
@@ -38,9 +38,9 @@ CbFLATENTRY (_lpentry)
 
 ## <a name="parameters"></a>Parameter
 
- __lpentry_
+ _ _lpentry_
   
-> Zeiger auf die vorhandene **FLATENTRY** -Struktur. 
+> Zeiger auf die vorhandene **FLATENTRY-Struktur.** 
     
 ## <a name="see-also"></a>Siehe auch
 

@@ -20,7 +20,7 @@ ms.locfileid: "33413465"
 
 Ab Visio 2002 wird diese Zelle nicht mehr verwendet.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 In früheren Versionen von Visio wurde in diese Zelle eine Beschreibung eingegeben, die in der Statusleiste angezeigt wurde, wenn auf den entsprechenden Befehl im Kontextmenü geklickt wurde.
   

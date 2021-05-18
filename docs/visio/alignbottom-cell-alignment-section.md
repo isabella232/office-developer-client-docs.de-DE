@@ -20,19 +20,19 @@ ms.locfileid: "33411799"
 
 Legt die vertikale Position einer horizontalen Führung (oder eines Führungspunkts) relativ zum Ursprung des übergeordneten Objekts fest, an der (bzw. dem) der untere Rand des Shapes ausgerichtet ist.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle Zelle AlignBottom aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle AlignBottom anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Zelle AlignBottom  <br/> |
+| Zellenname:  <br/> | AlignBottom  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle AlignBottom aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Um einen Verweis auf die Zelle AlignBottom nach Index aus einem Programm zu erhalten, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowAlign** <br/> |
 | Zellenindex:  <br/> |**visAlignBottom** <br/> |
    

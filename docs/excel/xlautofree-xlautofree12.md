@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - xlAutoFree
 keywords:
-- xlAutoFree-Funktion [Excel 2007]
+- xlautofree-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: f73d292c-d6d8-4be5-89c0-bef15db236d6
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -22,13 +22,13 @@ ms.locfileid: "33413290"
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Aufgerufen von Microsoft Excel direkt nach einer XLL-Arbeitsblattfunktion gibt ein **XLOPER**/ -**XLOPER12** mit einem Flagsatz zurück, der angibt, dass Speicherplatz vorhanden ist, den die XLL noch freigeben muss. Dadurch kann die XLL dynamisch zugewiesene Arrays, Zeichenfolgen und externe Verweise auf das Arbeitsblatt ohne Speicherverluste zurückgeben. Weitere Informationen finden Sie unter [Speicherverwaltung in Excel](memory-management-in-excel.md).
+Wird von Microsoft Excel direkt nach einer XLL-Arbeitsblattfunktion aufgerufen, wird ein **XLOPER** /  **XLOPER12-Wert** mit einem Flagsatz zurückgegeben, der angibt, dass der Speicher vorhanden ist, den die XLL noch losgibt. Dadurch kann die XLL dynamisch zugewiesene Arrays, Zeichenfolgen und externe Verweise auf das Arbeitsblatt ohne Speicherverluste zurückgeben. Weitere Informationen finden Sie unter [Speicherverwaltung in Excel](memory-management-in-excel.md).
   
-Ab Excel 2007 werden die **xlAutoFree12** -Funktion und der **XLOPER12** -Datentyp unterstützt. 
+Ab Excel 2007 werden die **xlAutoFree12-Funktion** und der **XLOPER12-Datentyp** unterstützt. 
   
-Excel erfordert keine XLL zum Implementieren und Exportieren einer dieser Funktionen. Sie müssen dies tun, wenn Ihre XLL-Funktionen eine XLOPER oder XLOPER12 zurückgeben, die dynamisch zugewiesen wurde oder Zeiger auf dynamisch zugewiesenen Arbeitsspeicher enthält. Stellen Sie sicher, dass Ihre Auswahl für die Verwaltung des Arbeitsspeichers für diese Typen in ihrer XLL konsistent ist und wie Sie **xlAutoFree** und **xlAutoFree12**implementiert haben.
+Excel erfordert keine XLL zum Implementieren und Exportieren einer dieser Funktionen. Sie müssen dies jedoch tun, wenn Ihre XLL-Funktionen einen XLOPER- oder XLOPER12-Wert zurückgeben, der dynamisch zugewiesen wurde oder Zeiger auf dynamisch zugewiesenen Arbeitsspeicher enthält. Stellen Sie sicher, dass Die Wahl der Verwaltung des Arbeitsspeichers für diese Typen in Ihrer gesamten XLL und mit der Implementierung von **xlAutoFree** und **xlAutoFree12 konsistent ist.**
   
-Innerhalb der **xlAutoFree**/ -**xlAutoFree12** -Funktion sind Rückrufe in Excel deaktiviert, mit einer Ausnahme: **xlFree** kann aufgerufen werden, um in Excel zugewiesene Arbeitsspeicher freizugeben. 
+Innerhalb der **xlAutoFree** /  **xlAutoFree12-Funktion** sind Rückrufe in Excel deaktiviert, mit einer Ausnahme: **xlFree** kann aufgerufen werden, um Excel zugewiesenen Arbeitsspeicher frei zu geben. 
   
 ```cs
 void WINAPI xlAutoFree(LPXLOPER pxFree);
@@ -41,31 +41,31 @@ void WINAPI xlAutoFree12(LPXLOPER12 pxFree);
   
  _pxFree_ (**LPXLOPER12 im Fall von xlAutoFree12**)
   
-Ein Zeiger auf das **XLOPER** -oder **XLOPER12** -Arbeitsspeicher, der freigegeben werden muss. 
+Ein Zeiger auf **xlOPER** oder **XLOPER12,** der über Arbeitsspeicher verfügt, der frei werden muss. 
   
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-Diese Funktion gibt keinen Wert zurück und sollte als zurückgegeben void deklariert werden.
+Diese Funktion gibt keinen Wert zurück und sollte als void deklariert werden.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Excel für die Neuberechnung der Multithread-Arbeitsmappe konfiguriert ist, wird **xlAutoFree**/ **xlAutoFree12** für den gleichen Thread aufgerufen, der zum Aufrufen der Funktion verwendet wird, die ihn zurückgegeben hat. Der Aufruf von **xlAutoFree**/ **xlAutoFree12** erfolgt immer vor der Auswertung aller nachfolgenden Arbeitsblattzellen in diesem Thread. Dies vereinfacht das threadsichere Design in Ihrer XLL. 
+Wenn Excel für die Verwendung der Neuberechnung von Arbeitsmappen mit mehrerenReads konfiguriert ist, wird **xlAutoFree** /  **xlAutoFree12** für denselben Thread aufgerufen, der zum Aufrufen der Zurückgegebenen Funktion verwendet wird. Der Aufruf von **xlAutoFree**/ **xlAutoFree12** erfolgt immer vor der Auswertung aller nachfolgenden Arbeitsblattzellen in diesem Thread. Dies vereinfacht das threadsichere Design in Ihrer XLL. 
   
-Wenn die **xlAutoFree**/ -**xlAutoFree12** -Funktion, die Sie bereitstellen, das **xltype** -Feld von _pxFree_, denken Sie daran, dass das **xlbitDLLFree** -Bit weiterhin festgelegt wird. 
+Wenn die **xlAutoFree** /  **xlAutoFree12-Funktion,** die Sie bereitstellen, das **xltype-Feld** _von pxFree_ betrachtet, denken Sie daran, dass das **xlbitDLLFree-Bit** weiterhin festgelegt ist. 
   
 ## <a name="example"></a>Beispiel
 
  **Beispielimplementierung 1**
   
-Der erste Code aus `\SAMPLES\EXAMPLE\EXAMPLE.C` demonstriert eine sehr spezifische Implementierung von **xlAutoFree**, die nur mit einer einzigen Funktion, **fArray**, ausgeführt werden kann. Im Allgemeinen hat ihre XLL mehr als eine Funktion, die Speicher zurückgibt, die freigegeben werden muss, in diesem Fall ist eine weniger eingeschränkte Implementierung erforderlich. 
+Der erste Code aus veranschaulicht eine sehr spezifische Implementierung von xlAutoFree , die mit nur einer `\SAMPLES\EXAMPLE\EXAMPLE.C` Funktion, **fArray**, funktioniert.  Im Allgemeinen hat Ihre XLL mehr als nur eine Funktion, die Arbeitsspeicher zurück gibt, der frei werden muss, in diesem Fall ist eine weniger eingeschränkte Implementierung erforderlich. 
   
  **Beispielimplementierung 2**
   
-Die zweite Beispielimplementierung entspricht den Annahmen, die in den **XLOPER12** -Erstellungs Beispielen in Abschnitt 1.6.3, Xl12_Str_example, Xl12_Ref_example und xl12_Multi_example verwendet werden. Die Annahmen sind, dass, wenn das **xlbitDLLFree** -Bit festgelegt wurde, alle Zeichenfolge, Array und externe Referenzspeicher dynamisch mit **malloc**zugewiesen wurde, und daher muss in einem Aufruf von Free freigegeben werden.
+Die zweite Beispielimplementierung entspricht den Annahmen in den **XLOPER12-Erstellungsbeispielen** in Abschnitt 1.6.3, xl12_Str_example, xl12_Ref_example und xl12_Multi_example. Es wird davon ausgegangen, dass, wenn das **xlbitDLLFree-Bit** festgelegt wurde, der ganze Zeichenfolgen-, Array- und externer Referenzspeicher mithilfe von **malloc** dynamisch zugewiesen wurde und daher in einem Aufruf zur Kostenlosen Verwendung frei werden muss.
   
  **Beispielimplementierung 3**
   
-Die dritte Beispielimplementierung ist mit einer XLL konsistent, bei der exportierte Funktionen, die **XLOPER12**s-Zeichenfolgen, externe Verweise und Arrays mit **malloc**zurückgeben und die **XLOPER12** selbst dynamisch zugeordnet ist. Das Zurückgeben eines Zeigers auf eine dynamisch zugewiesene **XLOPER12** ist eine Möglichkeit, um sicherzustellen, dass die Funktion threadsicher ist. 
+Die dritte Beispielimplementierung ist mit einer XLL konsistent, bei der exportierte Funktionen, die **XLOPER12** s zurückgeben, Zeichenfolgen, externe Verweise und Arrays mithilfe von **malloc** zuordnen und wobei **xlOPER12** selbst ebenfalls dynamisch zugeordnet wird. Das Zurückgeben eines Zeigers auf eine dynamisch zugewiesene **XLOPER12** ist eine Möglichkeit, um sicherzustellen, dass die Funktion threadsicher ist. 
   
 ```cs
 //////////////////////////////////////////

@@ -20,38 +20,38 @@ ms.locfileid: "33411428"
 
 Zeigt die Zeichenformatierung für einen Textbereich im Textblock des Shapes an.
   
-|**Style**|**Wert**|**Automatisierungskonstante**|
+|**Format**|**Wert**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
 | Fett  <br/> | &amp;H1  <br/> |**visBold** <br/> |
 | Kursiv  <br/> | &amp;H2  <br/> |**visItalic** <br/> |
 | Unterstrichen  <br/> | &amp;H4  <br/> |**visUnderLine** <br/> |
 | Kapitälchen  <br/> | &amp;H8  <br/> |**visSmallCaps** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Die Zelle Style enthält Formatierungsinformationen für einen Unterbereich des Texts eines Shapes, wenn der Abschnitt Character mehrere Zeilen enthält. Andernfalls enthält diese Zelle Formatierungsinformationen für den gesamten Text des Shapes.
   
-Der Wert stellt eine Binärzahl dar, in der jedes einzelne Bit eine Zeichenformatvorlage ist. Der Wert 3 stellt beispielsweise fett und kursiv formatierten Text dar. Wenn der Wert von Style 0 ist, ist der Text überhaupt nicht formatiert. Sie können ein bestimmtes Format mit booleschen BIT\* -Funktionen testen. Ausführliche Informationen zu diesen Funktionen finden Sie in Ihrer Programmierungsdokumentation.
+Der Wert stellt eine Binärzahl dar, in der jedes einzelne Bit eine Zeichenformatvorlage ist. Der Wert 3 stellt beispielsweise fett und kursiv formatierten Text dar. Wenn der Wert von Style 0 ist, ist der Text überhaupt nicht formatiert. Sie können mit booleschen BIT-Funktionen auf ein bestimmtes Format \* testen. Ausführliche Informationen zu diesen Funktionen finden Sie in Ihrer Programmierungsdokumentation.
   
-Wenn Sie einen Verweis auf die Zelle Style aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle Style anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Char. Style [ *i* ] wobei *i* = <1>, 2, 3...  <br/> |
+| Zellenname:  <br/> | Char.Style[  *i*  ] wobei  *i*  = <1>, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Style aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle Style nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionCharacter** <br/> |
-| Zeilenindex:  <br/> |**visRowCharacter** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowCharacter**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
 | Zellenindex:  <br/> |**visCharacterStyle** <br/> |
    
  *Beispiel* 
   
 Die Zelle Farbe in der ersten Zeile des Abschnitts Character eines Shapes enthält die folgende Formel:
   
-= IF (BITUND (Char. Style, 1) = 1, 4, 3)
+= IF(BITAND(Char.Style,1)=1,4,3)
   
 Wenn das erste Zeichen des Shape-Texts fett formatiert ist, ist der von der ersten Zeile mit Zeicheneigenschaften formatierte Text blau (4). Andernfalls ist er grün (3). Dieses Beispiel setzt voraus, dass die Standardfarben verwendet werden.
   

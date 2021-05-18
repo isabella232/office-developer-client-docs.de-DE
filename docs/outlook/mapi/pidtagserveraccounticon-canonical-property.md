@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagserveraccounticon (-Eigenschaft
+title: PidTagServerAccountIcon (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,13 +15,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33412849"
 ---
-# <a name="pidtagserveraccounticon-canonical-property"></a>Kanonische Pidtagserveraccounticon (-Eigenschaft
+# <a name="pidtagserveraccounticon-canonical-property"></a>PidTagServerAccountIcon (kanonische Eigenschaft)
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt das in der **Kontoauswahl**angezeigte Symbol an.
+Gibt das Symbol an, das in der **Kontoauswahl angezeigt wird.**
   
 |||
 |:-----|:-----|
@@ -36,9 +36,9 @@ Gibt das in der **Kontoauswahl**angezeigte Symbol an.
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

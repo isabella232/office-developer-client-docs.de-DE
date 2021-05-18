@@ -25,13 +25,13 @@ ms.locfileid: "33412912"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Multipliziert eine unsignierte 32-Bit-Ganzzahl mit einer anderen.
+Multipliziert eine nicht signierte 32-Bit-Ganzzahl mit einer anderen.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 FILETIME FtMulDwDw(
@@ -42,16 +42,16 @@ FILETIME FtMulDwDw(
 
 ## <a name="parameters"></a>Parameter
 
- _Multiplikand_
+ _Multiplikation_
   
-> in Ein Doppelwort, das die nicht signierte 32-Bit-Ganzzahl enthält, die mit dem Wert im _Multiplikatorparameter_ multipliziert werden soll. 
+> [in] Ein Doppeltes Wort, das die nicht signierte ganzzahlige 32-Bit-Zahl enthält, die mit dem Wert im  _Multiplikatorparameter multipliziert werden_ soll. 
     
  _Multiplikator_
   
-> in Ein Doppelwort, das den unsignierten ganzzahligen Multiplikations Wert 32-Bit enthält.
+> [in] Ein Doppelwort, das den nicht signierten 32-Bit-Ganzzahlmultiplikator enthält.
     
 ## <a name="return-value"></a>Rückgabewert
 
-Die **FtMulDwDw** -Funktion gibt [](filetime.md) eine FILETIME-Struktur zurück, die das Produkt der beiden ganzen Zahlen enthält. Die beiden Eingabeparameter bleiben unverändert. 
+Die **FtMulDwDw-Funktion** gibt eine [FILETIME-Struktur](filetime.md) zurück, die das Produkt der beiden ganzzahligen Zahlen enthält. Die beiden Eingabeparameter bleiben unverändert. 
   
 

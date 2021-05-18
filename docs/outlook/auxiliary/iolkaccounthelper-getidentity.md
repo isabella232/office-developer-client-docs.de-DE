@@ -33,23 +33,23 @@ HRESULT IOlkAccountHelper::GetIdentity (
 
 _pwszIdentity_
   
-> in Out Der Profilname.
+> [in] [out] Der Profilname.
     
 _pcch_
   
-> in Out Beim Aufrufen dieser Methode enthält die Größe (in Zeichen) von _pwszIdentity_ , die zugeordnet wurde. Bei Rückgabe enthält die tatsächliche Länge des zurückgegebenen Profilnamens, einschließlich des 0-Abschlusszeichens. 
+> [in] [out] Beim Aufrufen dieser Methode enthält die Größe (in Der Anzahl der Zeichen)  _von pwszIdentity,_ die zugewiesen wurde. Enthält bei der Rückgabe die tatsächliche Länge des zurückgegebenen Profilnamens, einschließlich des 0-Endzeichens. 
     
 ## <a name="return-values"></a>Rückgabewerte
 
 |**[HRESULT]**|**Description**|
 |:-----|:-----|
 |S_OK  <br/> |Der Aufruf war erfolgreich.  <br/> |
-|E_OUTOFMEMORY  <br/> |Der zurückgegebene Profilname ist länger als die Größe von _pwszIdentity_.  <br/> |
+|E_OUTOFMEMORY  <br/> |Der zurückgegebene Profilname ist länger als die Größe von  _pwszIdentity_.  <br/> |
 |E_INVALIDARG  <br/> | _pcch_ ist NULL.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn _pwszIdentity_ zu klein für den Profilnamen ist, wird er bei der Rückgabe nicht festgelegt, und _pcch_ zeigt auf die für _pwszIdentity_erforderliche Größe.
+Wenn  _pwszIdentity_ zu klein ist, um den Profilnamen zu speichern, wird er bei rückgabe nicht festgelegt, und  _pcch_ wird auf die für  _pwszIdentity_ erforderliche Größe verweisen.
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -25,13 +25,13 @@ ms.locfileid: "33412863"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ermöglicht den Zugriff auf einen Nachrichtenspeicher Anbieter über ein Objekt des Nachrichtenspeicher Anbieters. Dieses Objekt des Nachrichtenspeicher Anbieters wird bei der Anbieter Anmeldung von der [MSProviderInit](msproviderinit.md) -Einstiegspunktfunktion des Nachrichtenspeicher Anbieters zurückgegeben. Das Nachrichtenspeicher-Anbieterobjekt wird hauptsächlich von Clientanwendungen und dem MAPI-Spooler zum Öffnen von Nachrichten speichern verwendet. 
+Ermöglicht den Zugriff auf einen Nachrichtenspeicheranbieter über ein Objekt des Nachrichtenspeicheranbieters. Dieses Objekt des Nachrichtenspeicheranbieters wird bei der Anbieteranmeldung von der [MSProviderInit-Einstiegspunktfunktion](msproviderinit.md) des Nachrichtenspeicheranbieters zurückgegeben. Das Objekt des Nachrichtenspeicheranbieters wird hauptsächlich von Clientanwendungen und dem MAPI-Spooler zum Öffnen von Nachrichtenspeichern verwendet. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapispi. h  <br/> |
+|Headerdatei  <br/> |Mapispi.h  <br/> |
 |Verf�gbar gemacht von:  <br/> |Nachrichtenspeicheranbieter-Objekte  <br/> |
-|Implementiert von:  <br/> |Nachrichtenspeicher Anbieter  <br/> |
+|Implementiert von:  <br/> |Anbieter von Nachrichtenspeichern  <br/> |
 |Aufgerufen von:  <br/> |MAPI und der MAPI-Spooler  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMSProvider  <br/> |
 |Zeigertyp:  <br/> |LPMSPROVIDER  <br/> |
@@ -40,22 +40,22 @@ Ermöglicht den Zugriff auf einen Nachrichtenspeicher Anbieter über ein Objekt 
 
 |||
 |:-----|:-----|
-|[Herunterfahren](imsprovider-shutdown.md) <br/> |Schließt einen Nachrichtenspeicher Anbieter ordnungsgemäß.  <br/> |
-|[Logon](imsprovider-logon.md) <br/> |Protokolliert MAPI für eine Instanz eines Nachrichtenspeicher Anbieters.  <br/> |
-|[SpoolerLogon](imsprovider-spoolerlogon.md) <br/> |Protokolliert den MAPI-Spooler in einem Nachrichtenspeicher.  <br/> |
-|[CompareStoreIDs](imsprovider-comparestoreids.md) <br/> |Vergleicht zwei Nachrichtenspeicher Eintrags-IDs, um zu bestimmen, ob Sie auf dasselbe Store-Objekt verweisen.  <br/> |
+|[Shutdown](imsprovider-shutdown.md) <br/> |Schließt einen Nachrichtenspeicheranbieter in geordneter Weise.  <br/> |
+|[Logon](imsprovider-logon.md) <br/> |Protokolliert MAPI an einer Instanz eines Nachrichtenspeicheranbieters.  <br/> |
+|[SpoolerLogon](imsprovider-spoolerlogon.md) <br/> |Protokolliert den MAPI-Spooler bei einem Nachrichtenspeicher.  <br/> |
+|[CompareStoreIDs](imsprovider-comparestoreids.md) <br/> |Vergleicht zwei Nachrichtenspeichereintragsbezeichner, um zu bestimmen, ob sie auf dasselbe Speicherobjekt verweisen.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-MAPI verwendet ein Nachrichtenspeicher-Anbieterobjekt pro Sitzung, unabhängig davon, wie viele Nachrichtenspeicher vom Informationsspeicher Anbieter geöffnet werden. Wenn sich eine zweite MAPI-Sitzung bei einem geöffneten Speicher anmeldet, ruft MAPI **MSProviderInit** ein zweites Mal auf, um ein neues Nachrichtenspeicher-Anbieterobjekt für die zu verwendende Sitzung zu erstellen. 
+MAPI verwendet ein Nachrichtenspeicheranbieterobjekt pro Sitzung, unabhängig davon, wie viele Nachrichtenspeicher vom Speicheranbieter geöffnet werden. Wenn sich eine zweite MAPI-Sitzung bei geöffneten Speichern anmeldet, ruft MAPI **MSProviderInit** ein zweites Mal auf, um ein neues Objekt des Nachrichtenspeicheranbieters zu erstellen, das für diese Sitzung verwendet werden soll. 
   
-Ein Nachrichtenspeicher-Anbieterobjekt muss Folgendes enthalten, damit es ordnungsgemäß funktioniert:
+Ein Objekt des Nachrichtenspeicheranbieters muss Folgendes enthalten, damit es ordnungsgemäß funktioniert:
   
-- Ein _lpMalloc_ -Routine Zeiger zur Speicherzuweisung für die Verwendung durch alle Speicher, die mithilfe dieses Anbieterobjekts geöffnet werden. 
+- Ein  lpMalloc-Speicherzuweisungsroutinenzeiger zur Verwendung durch alle Speicher, die mithilfe dieses Anbieterobjekts geöffnet werden. 
     
-- Die _lpfAllocateBuffer_-, _ lpfAllocateMore _-und _lpfFreeBuffer_ -Routine Zeiger auf die [MAPIAllocateBuffer](mapiallocatebuffer.md)-, [MAPIAllocateMore](mapiallocatemore.md)-und [mapifreebufferfreigegeben](mapifreebuffer.md) -Speicher Zuordnungsfunktionen. 
+- Die _Routinezeiger lpfAllocateBuffer_, _ lpfAllocateMore _, und _lpfFreeBuffer_ zeigen auf die [Speicherzuweisungsfunktionen MAPIAllocateBuffer,](mapiallocatebuffer.md) [MAPIAllocateMore](mapiallocatemore.md)und [MAPIFreeBuffer.](mapifreebuffer.md) 
     
-- Eine verknüpfte Liste aller Speicher, die mithilfe dieses Anbieterobjekts geöffnet und noch nicht geschlossen wurden.
+- Eine verknüpfte Liste aller Mit diesem Anbieterobjekt geöffneten und noch nicht geschlossenen Speicher.
     
 ## <a name="see-also"></a>Siehe auch
 

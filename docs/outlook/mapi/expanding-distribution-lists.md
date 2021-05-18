@@ -21,10 +21,10 @@ ms.locfileid: "33414137"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
- **So fordern Sie MAPI zum Erweitern einer Verteilerliste an**
+ **So fordert Sie MAPI auf, eine Verteilerliste zu erweitern**
   
-- Legen Sie die **PR_ADDRTYPE** ([pidtagaddresstype (](pidtagaddresstype-canonical-property.md))-Eigenschaft auf MAPIPDL.
+- Legen Sie **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) -Eigenschaft auf MAPIPDL.
     
-    MAPI erweitert die Adressen mit diesem Typ vor dem Senden der Nachricht an den Transportanbieter.
+    MAPI erweitert Adressen mit diesem Typ, bevor die Nachricht an den Transportanbieter gesendet wird.
     
 

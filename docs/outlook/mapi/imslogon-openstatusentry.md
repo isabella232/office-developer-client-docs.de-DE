@@ -25,7 +25,7 @@ ms.locfileid: "33413178"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Öffnet ein Status-Objekt.
+Öffnet ein Statusobjekt.
   
 ```cpp
 HRESULT OpenStatusEntry(
@@ -40,23 +40,23 @@ HRESULT OpenStatusEntry(
 
  _lpInterface_
   
-> in Ein Zeiger auf den Schnittstellenbezeichner (IID) für das zu öffnende Status-Objekt. Übergeben von NULL gibt an, dass die Standardschnittstelle für das Objekt zurückgegeben wird (in diesem Fall die [IMAPIStatus](imapistatusimapiprop.md) -Schnittstelle). Der _lpInterface_ -Parameter kann auch auf einen Bezeichner für eine entsprechende Schnittstelle für das Objekt festgelegt werden. 
+> [in] Ein Zeiger auf die Schnittstellen-ID (Interface Identifier, IID), damit das Statusobjekt geöffnet werden kann. Das Übergeben von NULL gibt an, dass die Standardschnittstelle für das Objekt zurückgegeben wird (in diesem Fall die [IMAPIStatus-Schnittstelle).](imapistatusimapiprop.md) Der  _lpInterface-Parameter_ kann auch auf einen Bezeichner für eine geeignete Schnittstelle für das Objekt festgelegt werden. 
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die steuert, wie das Statusobjekt geöffnet wird. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie das Statusobjekt geöffnet wird. Das folgende Flag kann festgelegt werden:
     
 MAPI_MODIFY 
   
-> Fordert Lese-/Schreibzugriff-Berechtigung an. Standardmäßig werden Objekte mit Schreibschutz Berechtigung erstellt, und Clientanwendungen sollten nicht unter der Annahme arbeiten, dass die Berechtigung "Lese-/Schreibzugriff" erteilt wurde. 
+> Fordert Lese-/Schreibberechtigungen an. Standardmäßig werden Objekte mit schreibgeschützter Berechtigung erstellt, und Clientanwendungen sollten nicht unter der Annahme funktionieren, dass Lese-/Schreibberechtigungen erteilt wurden. 
     
  _lpulObjType_
   
-> Out Ein Zeiger auf den Typ des geöffneten Objekts.
+> [out] Ein Zeiger auf den Typ des geöffneten Objekts.
     
  _lppEntry_
   
-> Out Ein Zeiger auf den Zeiger auf das geöffnete Objekt.
+> [out] Ein Zeiger auf den Zeiger auf das geöffnete Objekt.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -64,9 +64,9 @@ S_OK
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Nachrichtenspeicher Anbieter implementieren die **IMSLogon:: OpenStatusEntry** -Methode, um ein Status-Objekt zu öffnen. Dieses Status-Objekt wird dann verwendet, um Clients das Aufrufen von [IMAPIStatus](imapistatusimapiprop.md) -Methoden zu ermöglichen. Clients können beispielsweise die [IMAPIStatus:: Settingsdialog](imapistatus-settingsdialog.md) -Methode verwenden, um die Anmeldesitzung des Nachrichtenspeichers oder die [IMAPIStatus:: ValidateState](imapistatus-validatestate.md) -Methode neu zu konfigurieren, um den Status der Nachrichtenspeicher-Anmeldesitzung zu überprüfen. 
+Nachrichtenspeicheranbieter implementieren die **IMSLogon::OpenStatusEntry-Methode,** um ein Statusobjekt zu öffnen. Dieses Statusobjekt wird dann verwendet, um Clients das Aufrufen von [IMAPIStatus-Methoden zu](imapistatusimapiprop.md) ermöglichen. Clients können beispielsweise die [IMAPIStatus::SettingsDialog-Methode](imapistatus-settingsdialog.md) verwenden, um die Anmeldesitzung des Nachrichtenspeichers oder die [IMAPIStatus::ValidateState-Methode](imapistatus-validatestate.md) neu zu konfigurieren, um den Status der Anmeldesitzung des Nachrichtenspeichers zu überprüfen. 
   
 ## <a name="see-also"></a>Siehe auch
 

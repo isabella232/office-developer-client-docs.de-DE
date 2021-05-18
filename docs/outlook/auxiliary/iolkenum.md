@@ -15,7 +15,7 @@ ms.locfileid: "32322099"
 ---
 # <a name="iolkenum"></a>IOlkEnum
 
-Unterstützt das Aufzählen von Konten als [IUnknown](https://docs.microsoft.com/windows/desktop/api/unknwn/nn-unknwn-iunknown) -Objekte. 
+Unterstützt das Aufzählen von Konten als [IUnknown-Objekte.](https://docs.microsoft.com/windows/desktop/api/unknwn/nn-unknwn-iunknown) 
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -36,9 +36,9 @@ Unterstützt das Aufzählen von Konten als [IUnknown](https://docs.microsoft.com
 |[GetNext](iolkenum-getnext.md) <br/> |Ruft das nächste Konto im Enumerator ab.  <br/> |
 |[Skip](iolkenum-skip.md) <br/> |Überspringt eine angegebene Anzahl von Konten im Enumerator.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Diese Schnittstelle wird von **IOlkAccountManager:: EnumerateAccounts** zurückgegeben, wenn ein Enumerator von Konten abgerufen wird. 
+Diese Schnittstelle wird von **IOlkAccountManager::EnumerateAccounts** beim Abrufen eines Enumerators von Konten zurückgegeben. 
   
 ## <a name="see-also"></a>Siehe auch
 

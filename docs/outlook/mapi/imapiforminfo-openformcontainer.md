@@ -25,7 +25,7 @@ ms.locfileid: "33414004"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt einen Zeiger auf den Formular Container zurück, in dem ein bestimmtes Formular installiert ist.
+Gibt einen Zeiger auf den Formularcontainer zurück, in dem ein bestimmtes Formular installiert ist.
   
 ```cpp
 HRESULT OpenFormContainer(
@@ -37,7 +37,7 @@ HRESULT OpenFormContainer(
 
  _ppformcontainer_
   
-> Out Ein Zeiger auf einen Zeiger auf das zurückgegebene Formular Container-Objekt.
+> [out] Ein Zeiger auf einen Zeiger auf das zurückgegebene Formularcontainerobjekt.
     
 ## <a name="return-value"></a>Rückgabewert
 

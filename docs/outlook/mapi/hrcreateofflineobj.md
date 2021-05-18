@@ -19,11 +19,11 @@ ms.locfileid: "33414389"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
- Erstellt ein MAPI-Offlineobjekt, das vom Anbieter und Speicher verwendet wird, um MAPI zu benachrichtigen, wenn das Objekt Online und offline geschaltet wird. 
+ Erstellt ein MAPI-Offlineobjekt, das vom Anbieter und Speicher verwendet wird, um MAPI zu benachrichtigen, wenn das Objekt online und offline geht. 
   
 |||
 |:-----|:-----|
-|Exportiert von:  <br/> |Msmapi32. dll  <br/> |
+|Exportiert von:  <br/> |Msmapi32.dll  <br/> |
 |Implementiert von:  <br/> |Outlook  <br/> |
 |Aufgerufen von:  <br/> |Client  <br/> |
    
@@ -39,15 +39,15 @@ IMAPIOfflineMgr** ppOffline
 
 _ulFlags_
   
-> in Es muss 0 sein.
+> [in] Es muss 0 sein.
     
 _pCreateInfo_
   
-> in Ein Zeiger auf eine **MAPIOFFLINE_CREATEINFO** -Struktur, die die zum Erstellen des Offline Objekts erforderlichen Informationen enthält. 
+> [in] Ein Zeiger auf eine **MAPIOFFLINE_CREATEINFO,** die die informationen enthält, die zum Erstellen des Offlineobjekts erforderlich sind. 
     
 _ppOffline_
   
-> Out Ein Zeiger auf die **IMAPIOfflineMgr** -Schnittstelle. 
+> [out] Ein Zeiger auf die **IMAPIOfflineMgr-Schnittstelle.** 
     
 ## <a name="return-value"></a>Return value
 

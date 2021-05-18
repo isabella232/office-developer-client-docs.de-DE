@@ -37,7 +37,7 @@ HRESULT GetSession(
 
  _ppSession_
   
-> Out Ein Zeiger auf einen Zeiger auf das zurückgegebene Session-Objekt.
+> [out] Ein Zeiger auf einen Zeiger auf das zurückgegebene Sitzungsobjekt.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -49,9 +49,9 @@ S_FALSE
   
 > Für die aktuelle Nachricht ist keine Sitzung vorhanden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Eine Liste der Schnittstellen im Zusammenhang mit Formular Servern finden Sie unter [MAPI-Formular Schnittstellen](mapi-form-interfaces.md).
+Eine Liste der Schnittstellen im Zusammenhang mit Formularservern finden Sie unter [MAPI Form Interfaces](mapi-form-interfaces.md).
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -59,7 +59,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer. cpp  <br/> |CMyMAPIFormViewer:: getSession  <br/> |MFCMAPI verwendet die **IMAPIMessageSite:: getSession** -Methode, um den derzeit zwischengespeicherten Sitzungs Zeiger zurückzugeben, sofern dieser verfügbar ist.  <br/> |
+|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::GetSession  <br/> |MFCMAPI verwendet die **IMAPIMessageSite::GetSession-Methode,** um den aktuell zwischengespeicherten Sitzungszeiger zurückzukehren, sofern er verfügbar ist.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

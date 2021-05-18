@@ -25,7 +25,7 @@ ms.locfileid: "33412758"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt einen Zeiger auf die MAPI-einmalige Tabelle zurück (eine Liste von Vorlagen, die von allen Adressbuch Anbietern für das Erstellen neuer Empfänger unterstützt werden).
+Gibt einen Zeiger auf die einmal aufgeführte MAPI-Tabelle zurück (eine Liste der Vorlagen, die von allen Adressbuchanbietern zum Erstellen neuer Empfänger unterstützt werden).
   
 ```cpp
 HRESULT GetOneOffTable(
@@ -38,35 +38,35 @@ HRESULT GetOneOffTable(
 
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die den Typ der Zeichenfolgenspalten steuert. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die den Typ der Zeichenfolgenspalten steuert. Das folgende Flag kann festgelegt werden:
     
 MAPI_UNICODE 
   
-> Die Zeichenfolgenspalten sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, sind die Zeichenfolgenspalten im ANSI-Format.
+> Die Zeichenfolgenspalten sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Zeichenfolgenspalten im ANSI-Format.
     
  _lppTable_
   
-> Out Ein Zeiger auf einen Zeiger auf die einmalige Tabelle.
+> [out] Ein Zeiger auf einen Zeiger auf die einmal aufgeführte Tabelle.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die einmalige Tabelle wurde erfolgreich abgerufen.
+> Die einmal aufgeführte Tabelle wurde erfolgreich abgerufen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPISupport:: GetOneOffTable** -Methode wird für Support Objekte des Adressbuch Anbieters implementiert. Adressbuchanbieter rufen **GetOneOffTable** auf, um die vollständige Liste der Vorlagen zum Erstellen neuer Empfänger abzurufen. Diese Tabelle enthält Vorlagen für Adressbuchanbieter, die in der Sitzungsunterstützung aktiv sind, sowie Vorlagen, die von MAPI unterstützt werden. 
+Die **IMAPISupport::GetOneOffTable-Methode** wird für Unterstützungsobjekte des Adressbuchanbieters implementiert. Adressbuchanbieter rufen **GetOneOffTable auf,** um die vollständige Liste der Vorlagen zum Erstellen neuer Empfänger abzurufen. Diese Tabelle enthält Vorlagen für Adressbuchanbieter, die in der Sitzungsunterstützung aktiv sind, sowie Vorlagen, die MAPI unterstützt. 
   
-Die neu erstellten Empfänger können verwendet werden, um eine Nachricht zu adressieren oder einem Adressbuchcontainer hinzugefügt werden.
+Die neu erstellten Empfänger können verwendet werden, um eine Nachricht zu adressiert oder einem Adressbuchcontainer hinzugefügt werden.
   
-Eine Liste der Eigenschaften, die den erforderlichen Spaltensatz in einmaligen Tabellen bilden, finden Sie unter [einmalige Tabellen](one-off-tables.md).
+Eine Liste der Eigenschaften, aus der die erforderliche Spaltensatz in einmal festgelegten Tabellen ist, finden Sie unter [One-Off Tables](one-off-tables.md).
   
-Das Festlegen des MAPI_UNICODE-Flags im _ulFlags_ -Parameter wirkt sich auf das Format der Spalten aus, die von den Methoden [IMAPITable:: QueryColumns](imapitable-querycolumns.md) und [IMAPITable:: QueryRows](imapitable-queryrows.md) zurückgegeben werden. Dieses Flag steuert auch die Eigenschaftentypen in der von der [IMAPITable:: QuerySortOrder](imapitable-querysortorder.md) -Methode zurückgegebenen Sortierreihenfolge. 
+Das Festlegen MAPI_UNICODE im  _ulFlags-Parameter_ wirkt sich auf das Format der Spalten aus, die von den [Methoden IMAPITable::QueryColumns](imapitable-querycolumns.md) und [IMAPITable::QueryRows](imapitable-queryrows.md) zurückgegeben werden. Dieses Flag steuert auch die Eigenschaftstypen in der Sortierreihenfolge, die von der [IMAPITable::QuerySortOrder-Methode zurückgegeben](imapitable-querysortorder.md) wird. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Wenn Sie für den Erhalt von Benachrichtigungen über Änderungen an dieser einmaligen Tabelle registriert sind, erhalten Sie auch Benachrichtigungen über Änderungen an den einmaligen Tabellen anderer Anbieter. Basierend auf diesen Benachrichtigungen können Sie neue Adresstypen unterstützen, die während der aktuellen Sitzung hinzugefügt werden.
+Wenn Sie registriert sind, um Benachrichtigungen über Änderungen an dieser einmal erstellten Tabelle zu erhalten, erhalten Sie auch Benachrichtigungen über Änderungen an den einmal aufgeführten Tabellen anderer Anbieter. Basierend auf diesen Benachrichtigungen können Sie neue Adresstypen unterstützen, die während der aktuellen Sitzung hinzugefügt werden.
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -84,10 +84,10 @@ Wenn Sie für den Erhalt von Benachrichtigungen über Änderungen an dieser einm
   
 [IMAPITable::QuerySortOrder](imapitable-querysortorder.md)
   
-[Kanonische Pidtagcreatetemplates (-Eigenschaft](pidtagcreatetemplates-canonical-property.md)
+[PidTagCreateTemplates (kanonische Eigenschaft)](pidtagcreatetemplates-canonical-property.md)
   
 [IMAPISupport: IUnknown](imapisupportiunknown.md)
 
 
-[Einmalige Tabellen](one-off-tables.md)
+[Einmaltabellen](one-off-tables.md)
 

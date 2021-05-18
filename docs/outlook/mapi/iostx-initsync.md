@@ -25,7 +25,7 @@ ms.locfileid: "33413353"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Informiert den lokalen Nachrichtenspeicher über die Synchronisierung, die gestartet werden soll.
+Informiert den lokalen Nachrichtenspeicher darüber, dass die Synchronisierung gestartet wird.
   
 ```cpp
 HRESULT InitSync( 
@@ -37,7 +37,7 @@ HRESULT InitSync(
 
  _ulFlags_
   
-> in Flags zum Bestimmen des geeigneten Verhaltens während der Synchronisierung. Outlook verwendet diese Flags in jedem Status des Replikationsstatus Computers, um die Informationen zu ermitteln, die für den Client bereitgestellt werden sollen. Wenn der Client beispielsweise **SYNC_ONLY_ASSOCIATED**übergibt, gibt Outlook nur Informationen zurück, die sich auf zugeordnete (oder ausgeblendete) Elemente beziehen. 
+> [in] Flags, um das entsprechende Verhalten während der Synchronisierung zu bestimmen. Outlook verwendet diese Flags in jedem Zustand des Replikationsstatuscomputers, um die Informationen zu bestimmen, die für den Client zur Verfügung stellen sollen. Wenn der Client z. B. **SYNC_ONLY_ASSOCIATED,** gibt Outlook nur Informationen zu zugeordneten (oder ausgeblendeten) Elementen zurück. 
     
 ## <a name="see-also"></a>Siehe auch
 

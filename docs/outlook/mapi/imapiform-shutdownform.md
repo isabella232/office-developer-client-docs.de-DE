@@ -37,7 +37,7 @@ HRESULT ShutdownForm(
 
  _ulSaveOptions_
   
-> in Ein Wert, der steuert, ob Daten im Formular gespeichert werden, bevor das Formular geschlossen wird. Eine der folgenden Werte kann festgelegt werden:
+> [in] Ein Wert, der steuert, wie oder ob Daten im Formular gespeichert werden, bevor das Formular geschlossen wird. Eine der folgenden Werte kann festgelegt werden:
     
 SAVEOPTS_NOSAVE 
   
@@ -45,11 +45,11 @@ SAVEOPTS_NOSAVE
     
 SAVEOPTS_PROMPTSAVE 
   
-> Der Benutzer sollte aufgefordert werden, geänderte Daten im Formular zu speichern.
+> Der Benutzer sollte aufgefordert werden, alle geänderten Daten im Formular zu speichern.
     
 SAVEOPTS_SAVEIFDIRTY 
   
-> Formulardaten sollten gespeichert werden, wenn Sie seit dem letzten Speichern geändert wurden. Wenn keine Benutzeroberfläche angezeigt wird, kann das Formular optional zur Verwendung der Funktionen für die SAVEOPTS_NOSAVE-Option wechseln.
+> Formulardaten sollten gespeichert werden, wenn sie seit dem letzten Speichern geändert wurden. Wenn keine Benutzeroberfläche angezeigt wird, kann das Formular optional zur Verwendung der Funktionalität für die option SAVEOPTS_NOSAVE wechseln.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -59,42 +59,42 @@ S_OK
     
 E_UNEXPECTED 
   
-> Das Formular wurde bereits durch einen vorherigen Aufruf von **ShutdownForm**geschlossen.
+> Das Formular wurde bereits durch einen vorherigen Aufruf von **ShutdownForm geschlossen.**
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Formular Betrachter rufen die **IMAPIForm:: ShutdownForm** -Methode auf, um ein Formular zu beenden. 
+Formularbetrachter rufen die **IMAPIForm::ShutdownForm-Methode** auf, um ein Formular zu schließen. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Führen Sie die folgenden Aufgaben in der Implementierung von **ShutdownForm**aus:
+Führen Sie die folgenden Aufgaben in Ihrer Implementierung von **ShutdownForm aus:**
   
-1. Überprüfen Sie, ob ein Viewer **ShutdownForm**nicht bereits aufgerufen hat, und geben Sie E_UNEXPECTED zurück. Obwohl dies unwahrscheinlich ist, sollten Sie überprüfen.
+1. Überprüfen Sie, ob ein Viewer **shutdownForm** noch nicht aufgerufen hat, und geben E_UNEXPECTED zurück. Obwohl dies unwahrscheinlich ist, sollten Sie dies überprüfen.
     
-2. Rufen Sie die [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28VS.85%29.aspx) -Methode des Formulars auf, sodass der Speicher für das Formular und alle internen Datenstrukturen verfügbar bleiben, bis die Verarbeitung abgeschlossen ist. 
+2. Rufen Sie die [IUnknown::AddRef-Methode](https://msdn.microsoft.com/library/ms691379%28VS.85%29.aspx) Ihres Formulars auf, damit der Speicher für das Formular und alle internen Datenstrukturen verfügbar bleiben, bis die Verarbeitung abgeschlossen ist. 
     
-3. Bestimmen Sie, ob ungespeicherte Änderungen an den Formulardaten vorhanden sind. Speichern Sie nicht gespeicherte Daten gemäß der Festlegung des _ulSaveOptions_ -Parameters, indem Sie die [IMAPIMessageSite:: SaveMessage](imapimessagesite-savemessage.md) -Methode des Viewers aufrufen. 
+3. Bestimmen Sie, ob nicht gespeicherte Änderungen an den Daten des Formulars vorgenommen werden. Speichern Sie nicht gespeicherte Daten entsprechend der Einstellung des  _ulSaveOptions-Parameters,_ indem Sie die [IMAPIMessageSite::SaveMessage-Methode](imapimessagesite-savemessage.md) ihres Viewers aufrufen. 
     
-4. Zerstören Sie das Benutzeroberflächenfenster des Formulars.
+4. Zerstören Sie das Benutzeroberflächenfenster Ihres Formulars.
     
-5. Geben Sie die Nachrichten-und Nachrichtenwebsite Objekte Ihres Formulars durch Aufrufen der [IUnknown:: Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) -Methoden frei. 
+5. Geben Sie die Nachrichten- und Nachrichtenwebsiteobjekte Ihres Formulars frei, indem Sie ihre [IUnknown::Release-Methoden](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) aufrufen. 
     
-6. Informieren Sie alle registrierten Betrachter des ausstehenden Herunterfahren durch Aufrufen der [IMAPIViewAdviseSink:: OnShutdown](imapiviewadvisesink-onshutdown.md) -Methoden. 
+6. Benachrichtigen Sie alle registrierten Viewer über das ausstehende Herunterfahren, indem Sie ihre [IMAPIViewAdviseSink::OnShutdown-Methoden](imapiviewadvisesink-onshutdown.md) aufrufen. 
     
-7. Rufen Sie die [IMAPIViewContext:: SetAdviseSink](imapiviewcontext-setadvisesink.md) -Methode auf, um die Registrierung Ihres Formulars für die Benachrichtigung abzubrechen, indem Sie den Advise-Senke-Zeiger auf **null**festlegen.
+7. Rufen Sie [die IMAPIViewContext::SetAdviseSink-Methode](imapiviewcontext-setadvisesink.md) auf, um die Registrierung Ihres Formulars zur Benachrichtigung **abbricht,** indem Sie den Hinweissenkenzeiger auf NULL festlegen.
     
-8. Rufen Sie die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion auf, um den Arbeitsspeicher für die Eigenschaften Ihres Formulars freizugeben. 
+8. Rufen Sie die [MAPIFreeBuffer-Funktion](mapifreebuffer.md) auf, um den Arbeitsspeicher für die Eigenschaften Ihres Formulars frei zu machen. 
     
-9. Rufen Sie die **IUnknown:: Release** -Methode des Formulars auf, die dem in Schritt 2 **AddRef** -Aufruf entspricht. 
+9. Rufen Sie die **IUnknown::Release-Methode** Ihres Formulars auf, die mit dem **AddRef-Aufruf** in Schritt 2 übereinstimmen. 
     
 10. Geben Sie S_OK zur�ck.
     
 > [!NOTE]
-> Nachdem diese Aktionen abgeschlossen wurden, sind die einzigen gültigen Methoden für das Form-Objekt, die aufgerufen werden können, die von der [IUnknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx) -Schnittstelle. 
+> Nachdem diese Aktionen abgeschlossen wurden, sind die einzigen gültigen Methoden für das Formularobjekt, die aufgerufen werden können, die methoden von der [IUnknown-Schnittstelle.](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx) 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Wenn **ShutdownForm** zurückgegeben wird, unabhängig davon, ob ein Fehler zurückgegeben wird, lassen Sie das Formular durch Aufrufen seiner **IUnknown:: Release** -Methode los. Fehler, die von **ShutdownForm**zurückgegeben werden, können ignoriert werden.
+Wenn **ShutdownForm** zurückgibt, unabhängig davon, ob ein Fehler zurückgegeben wird, geben Sie das Formular frei, indem Sie die **IUnknown::Release-Methode** aufrufen. Sie können alle von ShutdownForm zurückgegebenen Fehler **ignorieren.**
   
 ## <a name="see-also"></a>Siehe auch
 

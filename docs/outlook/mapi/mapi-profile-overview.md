@@ -1,5 +1,5 @@
 ---
-title: Übersicht über MAPI-Profile
+title: Übersicht über das MAPI-Profil
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,31 +15,31 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32328164"
 ---
-# <a name="mapi-profile-overview"></a>Übersicht über MAPI-Profile
+# <a name="mapi-profile-overview"></a>Übersicht über das MAPI-Profil
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bei einem Profil handelt es sich um eine Sammlung von Informationen zu den Nachrichtendiensten und Dienstanbietern, die ein Benutzer einer Clientanwendung während einer bestimmten MAPI-Sitzung verfügbar sein möchte. Jeder Benutzer verfügt über mindestens ein Profil; viele Benutzer halten mehrere. Ein Benutzer kann beispielsweise über ein Profil mit einem Server basierten Nachrichtenspeicher Dienst und einem anderen Profil verfügen, um mit einem Nachrichtenspeicher Dienst auf dem lokalen Computer zu arbeiten. Ein Benutzer möchte möglicherweise auf einen Satz von Messagingsystemen zugreifen, indem er die entsprechenden Transportdienste für einen Teil des Tages und einen anderen Satz für den Rest des Tages verwendet. Profile bieten eine flexible Möglichkeit, Kombinationen von Messagingsystem Diensten auszuwählen. 
+Ein Profil ist eine Sammlung von Informationen zu den Nachrichtendiensten und Dienstanbietern, die ein Benutzer einer Clientanwendung während einer bestimmten MAPI-Sitzung verfügbar sein möchte. Jeder Benutzer verfügt über mindestens ein Profil. Viele Benutzer behalten mehrere. Ein Benutzer kann beispielsweise ein Profil für die Arbeit mit einem serverbasierten Nachrichtenspeicherdienst und ein anderes Profil für die Arbeit mit einem Nachrichtenspeicherdienst auf dem lokalen Computer haben. Ein Benutzer möchte möglicherweise auf eine Gruppe von Messagingsystemen zugreifen, indem er die entsprechenden Transportdienste für einen Teil des Tages und einen anderen Satz für den Rest des Tages verwendet. Profile bieten eine flexible Möglichkeit, Kombinationen von Messagingsystemdiensten auszuwählen. 
   
-Profile können bis zu 64 alphanumerische Zeichen enthalten. Die Namen können Akzentzeichen, den Unterstrich und eingebettete Leerzeichen enthalten und dürfen keine führenden oder nachstehenden Leerzeichen enthalten. 
+Profile können Namen von bis zu 64 alphanumerischen Zeichen haben. Die Namen können Akzentzeichen, den Unterstrich und eingebettete Leerzeichen enthalten und dürfen keine vor- oder nachgestellten Leerzeichen enthalten. 
   
-Profile werden hierarchisch strukturiert und in Abschnitte unterteilt, mit einem Abschnitt für jeden Nachrichtendienst und einem Abschnitt für jeden Dienstanbieter in einem Dienst. Die zugehörigen Abschnitte sind verknüpft, sodass die Navigation durch die Informationen vereinfacht wird. Jeder Abschnitt enthält eine Reihe von Einträgen, die von MAPI oder einer Clientanwendung zur Konfiguration verwendet werden.
+Profile sind hierarchisch organisiert und in Abschnitte unterteilt, mit einem Abschnitt für jeden Nachrichtendienst und einem Abschnitt für jeden Dienstanbieter in einem Dienst. Die zugehörigen Abschnitte sind verknüpft, wodurch die Navigation durch die Informationen erleichtert wird. Jeder Abschnitt enthält eine Reihe von Einträgen, die MAPI oder eine Clientanwendung für die Konfiguration verwendet.
   
-Die Einträge in einem Profil variieren vom Nachrichtendienst zum Nachrichtendienst. Zu den häufig verwendeten Einträgen gehört Folgendes:
+Die Einträge in einem Profil variieren vom Nachrichtendienst zum Nachrichtendienst. Zu den gängigen Einträgen gehören die folgenden:
   
 - Der Name der einzelnen Nachrichtendienste oder Dienstanbieter.
     
 - Der Name der DLLs, die Dienstanbieter und Nachrichtendienste enthalten.
     
-- Der Name der Einstiegspunktfunktion der einzelnen Nachrichtendienste.
+- Der Name der Einstiegspunktfunktion jedes Nachrichtendiensts.
     
-- Eine Liste der Dienstanbieter, aus denen sich die einzelnen Nachrichtendienste zusammensetzen.
+- Eine Liste der Dienstanbieter, aus den einzelnen Nachrichtendiensten.
     
-Profile können zur Installationszeit erstellt werden, wenn MAPI oder ein Nachrichtendienst auf einen Computer oder zu einem späteren Zeitpunkt geladen wird. MAPI stellt den Profil-Assistenten für die Profilverwaltung bereit. 
+Profile können bei der Installation, beim Laden von MAPI oder einem Nachrichtendienst auf einen Computer oder zu einem späteren Zeitpunkt erstellt werden. MAPI bietet den Profil-Assistenten für die Profilverwaltung. 
   
-Der Profil-Assistent ist eine Anwendung, die neue Profile mit einem minimalen Arbeitsaufwand erstellt. Der Assistent verwendet Standardwerte für Einstellungen, wo immer möglich, und spart Benutzern Zeit und Aufwand. Benutzer geben Werte nur bei Bedarf ein. Weitere Informationen finden Sie unter [Erstellen eines Profils mithilfe des Profil-Assistenten](creating-a-profile-by-using-the-profile-wizard.md). Sie können auch das Office-Anpassungs Tool verwenden, um ein neues Profil zu erstellen. Weitere Informationen finden Sie unter [Office-Anpassungstool](https://go.microsoft.com/fwlink/?LinkId=123000).
+Der Profil-Assistent ist eine Anwendung, die neue Profile mit minimalem Arbeitsvolumen erstellt. Der Assistent verwendet Standardwerte für Einstellungen, wo immer möglich, was benutzern Zeit und Aufwand spart. Benutzer geben Werte nur ein, wenn dies unbedingt erforderlich ist. Weitere Informationen finden Sie unter [Erstellen eines Profils mithilfe des Profil-Assistenten](creating-a-profile-by-using-the-profile-wizard.md). Sie können auch das Office-Anpassungstool verwenden, um ein neues Profil zu erstellen. Weitere Informationen finden Sie unter [Office-Anpassungstool](https://go.microsoft.com/fwlink/?LinkId=123000).
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -52,7 +52,7 @@ _ppContext_
 
 S_OK zurück, wenn der Aufruf erfolgreich war; andernfalls einen Fehlercode.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Diese Aufgabe wird in einem neuen Thread ausgeführt.
   

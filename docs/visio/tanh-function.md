@@ -22,25 +22,25 @@ Gibt den hyperbolischen Tangens eines Winkels zurück.
   
 ## <a name="syntax"></a>Syntax
 
-TANH (* * *Winkel* * *) 
+TANH(** *angle* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Winkel_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Winkel, dessen hypbolic-Tangente abgerufen werden soll.  <br/> |
+| _angle_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Winkel, an dem die hypbolische Tangente erhalten werden soll.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
 Numeric
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die TANH-Funktion verwendet Radiant, es sei denn, Sie geben eine andere Maßeinheit im *Winkel* an. 
+Die TANH-Funktion verwendet Bogenmaß, es sei denn, Sie geben eine andere Maßeinheit im Winkel *an.* 
   
 ## <a name="example"></a>Beispiel
 
-TANH (-45) 
+TANH(-45) 
   
 Gibt -0,6558 zurück. 
   

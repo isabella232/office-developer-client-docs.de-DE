@@ -1,5 +1,5 @@
 ---
-title: Implementieren von Thread sicheren Objekten
+title: Implementieren Thread-Safe Objekten
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,22 +15,22 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33413528"
 ---
-# <a name="implementing-thread-safe-objects"></a>Implementieren von Thread sicheren Objekten
+# <a name="implementing-thread-safe-objects"></a>Implementieren Thread-Safe Objekten
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bei Objekten, die von Schnittstellenmethoden aufrufen direkt zurückgegeben werden, obliegt es dem Anbieter, die Threadsicherheit sicherzustellen. Bei Rückrufobjekten ist es die Aufgabe der Clientanwendung.
+Bei Objekten, die von Schnittstellenmethodesaufrufen direkt zurückgegeben werden, liegt es in der Verantwortung des Anbieters, die Threadsicherheit sicherzustellen. Bei Rückrufobjekten liegt es in der Verantwortung der Clientanwendung.
   
-Ein Client kann einen threadsicheren Benachrichtigungsrückruf implementieren, indem er das MAPI-Dienstprogramm [HrThisThreadAdviseSink](hrthisthreadadvisesink.md). **HrThisThreadAdviseSink** transformiert eine nicht threadsichere Advise-Senke in ein threadsicheres. Für Status Rückrufe gibt es kein solches Hilfsprogramm. Ein Client kann das MAPI-threadsichere Progress-Objekt verwenden oder manuell erstellen. 
+Ein Client kann einen threadsicheren Benachrichtigungsrückruf implementieren, indem er das MAPI-Hilfsprogramm [HrThisThreadAdviseSink aufruft.](hrthisthreadadvisesink.md) **HrThisThreadAdviseSink** wandelt eine nicht threadsichere Ratensenke in eine threadsichere Absenke um. Für Statusrückrufe gibt es kein solches Hilfsprogramm. Ein Client kann das MAPI-threadsichere Progress-Objekt verwenden oder manuell erstellen. 
   
-Ein threadsicheres Objekt ist möglicherweise auch nicht Thread fähig. Ein Thread fähiges Objekt verwaltet einen separaten Kontext für jeden Thread, der es verwendet. Dienstanbieter müssen die Thread Erkennung in ihren threadsicheren Objekten nicht unterstützen, obwohl die Unterstützung der Thread Erkennung in einigen Situationen nützlich sein kann. Zwei MAPI-Tabellen stellen immer ihren eigenen Kontext per Definition bereit. Eine Tabelle, die in verschiedenen Threads verwendet wird, bietet keinen eindeutigen Kontext.
+Ein threadsicheres Objekt ist möglicherweise auch threadsicher. Ein Thread-orientiertes Objekt behält einen separaten Kontext für jeden Thread bei, der es verwendet. Dienstanbieter müssen die Threadsensibilisierung in ihren threadsicheren Objekten nicht unterstützen, auch wenn die Unterstützung der Threadsensibilisierung in einigen Situationen hilfreich sein kann. Zwei MAPI-Tabellen bieten immer einen eigenen Kontext per Definition. Eine Tabelle, die für verschiedene Threads verwendet wird, bietet keinen eindeutigen Kontext.
   
-Ein Client kann zwischen dem Empfang von Benachrichtigungen für den gleichen Thread, der für den **MAPIInitialize** -Aufruf verwendet wurde, im gleichen Thread, der für den **Advise** -Aufruf verwendet wurde, oder in einem separaten Thread, der im Besitz von MAPI ist, wählen. Um sicherzustellen, dass Benachrichtigungen für den gleichen Thread eingehen, der zum Aufrufen von **MAPIInitialize**verwendet wurde, Ruft ein Client [MAPIInitialize](mapiinitialize.md) auf und übergibt 0 (null) im **ulFlags** -Element der [MAPIINIT_0](mapiinit_0.md) -Struktur. Benachrichtigungen werden dann während der Hauptmeldungsschleife übermittelt. 
+Ein Client kann zwischen dem Empfangen von Benachrichtigungen für denselben Thread, der für den **MAPIInitialize-Aufruf** verwendet wurde, für denselben Thread, der für den **Aufruf "Advise"** verwendet wurde, oder für einen separaten Thread im Besitz von MAPI auswählen. Um sicherzustellen, dass Benachrichtigungen im selben Thread eintreffen, der zum Aufrufen von **MAPIInitialize** verwendet wurde, ruft ein Client [MAPIInitialize](mapiinitialize.md) auf und übergibt null im **ulFlags-Element** der MAPIINIT_0 [Struktur.](mapiinit_0.md) Benachrichtigungen werden dann während der Hauptnachrichtenschleife zugestellt. 
   
-Um Benachrichtigungen über den MAPI-besessenen Thread zu erhalten, Ruft ein Client **MAPIInitialize** mit dem **ulFlags** -Element der **MAPIINIT_0** -Struktur auf MAPI_MULTITHREAD_NOTIFICATIONS festgelegt. Der **Advise** -Aufruf erfolgt mit dem Advise-Objekt des Clients und nicht mit einer umbrochenen Version. 
+Zum Empfangen von Benachrichtigungen im MAPI-eigenen Thread ruft ein Client **MAPIInitialize** mit dem **ulFlags-Mitglied** der **MAPIINIT_0-Struktur** auf MAPI_MULTITHREAD_NOTIFICATIONS. Der **Advise-Aufruf** erfolgt mit dem Ratensenkenobjekt des Clients und nicht mit einer umschlossenen Version. 
   
-Um sicherzustellen, dass Benachrichtigungen für den gleichen Thread eingehen, der zum Aufrufen von **Advise**verwendet wurde, Ruft ein Client [HrThisThreadAdviseSink](hrthisthreadadvisesink.md) auf und übergibt die **** neu erstellte umschlossene Advise-Senke anstatt der ursprünglichen Advise-Senke. **MAPIInitialize** kann mit einem der beiden Flags-Werte aufgerufen werden. 
+Um sicherzustellen, dass Benachrichtigungen im selben Thread eintreffen, der zum Aufrufen von **Advise** verwendet wurde, ruft ein Client [HrThisThreadAdviseSink](hrthisthreadadvisesink.md) auf und übergibt die neu erstellte umschlossene Ratensenke an **Advise** und nicht an die ursprüngliche Ratensenke. **MAPIInitialize** kann mit einem der beiden Flagwerte aufgerufen werden. 
   
 

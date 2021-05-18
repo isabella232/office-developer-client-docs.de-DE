@@ -38,7 +38,7 @@ HRESULT SyncBeg(
 
  _uiSync_
   
->  in Der Zustand, der vom lokalen Speicher eingegeben wird. Es folgt eine Liste der Status Identifier: 
+>  [in] Der Zustand, in den der lokale Speicher einwahlt. Nachfolgend finden Sie eine Liste der Zustandsidentiferen: 
     
 LR_SYNC_IDLE
   
@@ -84,9 +84,9 @@ LR_SYNC_DOWNLOAD_TABLE
   
 > 
     
- _PPV_
+ _ppv_
   
->  [in]/[out] Zeiger auf die Datenstruktur, die dem zu gebenden Zustand entspricht. 
+>  [in]/[out] Zeiger auf die Datenstruktur, die dem zu gebende Zustand entspricht. 
     
 [DNHIER](dnhier.md)
   
@@ -100,7 +100,7 @@ LR_SYNC_DOWNLOAD_TABLE
   
 > 
     
-[SYNCHRONISIERUNGS](sync.md)
+[SYNC](sync.md)
   
 > 
     
@@ -148,11 +148,11 @@ LR_SYNC_DOWNLOAD_TABLE
   
 > 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Der Client ruft **[IOSTX:: SetSyncResult](iostx-setsyncresult.md)** auf, um das Ergebnis der Synchronisierung festzulegen, und ruft dann **[IOSTX:: SyncEnd](iostx-syncend.md)** auf, um diesen Status zu beenden. Der Client muss **[IOSTX:: SyncEnd](iostx-syncend.md)** für jeden Aufruf von **IOSTX:: SyncBeg** aufrufen, um zu bestimmen, ob der Status erfolgreich repliziert wurde. Nachdem dies bestimmt wurde, kann Outlook beginnen, den internen Status zu bereinigen. 
+Der Client ruft **[IOSTX::SetSyncResult](iostx-setsyncresult.md)** auf, um das Ergebnis der Synchronisierung zu festlegen, und ruft **[dann IOSTX::SyncEnd](iostx-syncend.md)** auf, um den Status zu beenden. Der Client muss **[IOSTX::SyncEnd](iostx-syncend.md)** für jeden Aufruf von **IOSTX::SyncBeg** aufrufen, um zu ermitteln, ob der Status erfolgreich repliziert wurde. Nachdem dies ermittelt wurde, kann Outlook damit beginnen, den internen Zustand zu bereinigen. 
   
-Die meisten dieser Strukturen enthalten [out]/[in]-Informationen, sodass Outlook Informationen an den Client und den Client weitergeleitet werden kann, um Informationen an Outlook zu übermitteln. Wenn der Client **IOSTX:: SyncBeg**aufruft, weist Outlook die Datenstruktur für einen bestimmten Zustand zu und initialisiert sie mit Informationen für diesen Status. Dies sind die [out]-Informationen. In einem Zustand aktualisiert der Client die entsprechende Datenstruktur für diesen Status. Dies sind die [in]-Informationen. 
+Die meisten dieser Strukturen enthalten [out]/[in]-Informationen, sodass Outlook Informationen an den Client und den Client an Outlook übergeben kann. Wenn der Client **IOSTX::SyncBeg** aufruft, ordnet Outlook die Datenstruktur für einen bestimmten Zustand zu und initialisiert sie mit Informationen für diesen Zustand. Dies sind die [out]-Informationen. In einem Zustand aktualisiert der Client die entsprechende Datenstruktur für den betreffenden Zustand. Dies sind die [in]-Informationen. 
   
 ## <a name="see-also"></a>Siehe auch
 

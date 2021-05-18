@@ -25,7 +25,7 @@ ms.locfileid: "33414158"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Informiert den Transportanbieter darüber, dass der MAPI-Spooler seine Verarbeitung für eine ausgehende Nachricht abgeschlossen hat.
+Informiert den Transportanbieter, dass der MAPI-Spooler seine Verarbeitung für eine ausgehende Nachricht abgeschlossen hat.
   
 ```cpp
 HRESULT EndMessage(
@@ -38,37 +38,37 @@ HRESULT EndMessage(
 
  _ulMsgRef_
   
-> in Ein Nachrichten spezifischer Verweiswert, der in einem früheren Aufruf der [IXPLogon:: SubmitMessage](ixplogon-submitmessage.md) -Methode abgerufen wurde. 
+> [in] Ein nachrichtenspezifischer Referenzwert, der bei einem früheren Aufruf der [IXPLogon::SubmitMessage-Methode erhalten](ixplogon-submitmessage.md) wurde. 
     
  _lpulFlags_
   
-> Out Eine Bitmaske von Flags, die dem MAPI-Spooler mitteilen, was er mit der Nachricht tun soll. Wenn keine Flags festgelegt sind, wurde die Nachricht gesendet. Die folgenden Flags können festgelegt werden:
+> [out] Eine Bitmaske mit Flags, die dem MAPI-Spooler angibt, was mit der Nachricht zu tun ist. Wenn keine Kennzeichen festgelegt sind, wurde die Nachricht gesendet. Die folgenden Kennzeichen können festgelegt werden:
     
 END_DONT_RESEND 
   
-> Der Transportanbieter verfügt jetzt über alle erforderlichen Informationen zu dieser Nachricht. Wenn der Transportanbieter Weitere Informationen benötigt oder wenn er die Nachricht gesendet hat, benachrichtigt er den MAPI-Spooler durch Aufrufen der [IMAPISupport:: SpoolerNotify](imapisupport-spoolernotify.md) -Methode mit dem NOTIFY_SENTDEFERRED-Flag und durch übergeben der Eintrags-ID der Nachricht. 
+> Der Transportanbieter verfügt derzeit über alle Informationen, die er zu dieser Nachricht benötigt. Wenn der Transportanbieter weitere Informationen benötigt oder die Nachricht gesendet hat, benachrichtigt er den MAPI-Spooler, indem er die [IMAPISupport::SpoolerNotify-Methode](imapisupport-spoolernotify.md) mit dem flag NOTIFY_SENTDEFERRED aufruft und den Eintragsbezeichner der Nachricht übergeben. 
     
 END_RESEND_LATER 
   
-> Der Transportanbieter sendet die Nachricht nicht zum aktuellen Zeitpunkt aus Gründen, die keine Fehlerbedingungen sind. Der Transportanbieter sollte später erneut aufgerufen werden, um die Nachricht zu senden.
+> Der Transportanbieter sendet die Nachricht zum aktuellen Zeitpunkt nicht aus Gründen, die keine Fehlerbedingungen sind. Der Transportanbieter sollte später erneut aufgerufen werden, um die Nachricht zu senden.
     
 END_RESEND_NOW 
   
-> Der Transportanbieter muss die an ihn übergebene Nachricht in einem [IMessage:: SubmitMessage](imessage-submitmessage.md) -Methodenaufruf neu starten. 
+> Der Transportanbieter muss die An ihn übergebene Nachricht in einem [IMessage::SubmitMessage-Methodenaufruf](imessage-submitmessage.md) neu starten. 
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Aufruf war erfolgreich, und der erwartete Wert oder die Werte wurden zurückgegeben.
+> Der Aufruf war erfolgreich und hat den erwarteten Wert oder die erwarteten Werte zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die MAPI-Warteschlange ruft die **IXPLogon:: EndMessage** -Methode auf, nachdem Sie die Verarbeitung abgeschlossen hat, die für die Bereitstellung erweiterter Zustellungs-oder Unzustellbarkeits Informationen erforderlich ist. 
+Der MAPI-Spooler ruft die **IXPLogon::EndMessage-Methode** auf, nachdem er die Verarbeitung abgeschlossen hat, die an der Bereitstellung von erweiterten Übermittlungs- oder nicht-unausgeblichen Informationen beteiligt ist. 
   
-Sobald dieser Aufruf zurückgegeben wird, ist der Wert im _ulMsgRef_ -Parameter für diese Nachricht nicht mehr gültig. Der Transportanbieter kann denselben Wert für eine zukünftige Nachricht wieder verwenden. 
+Sobald dieser Aufruf zurückgegeben wird, ist der Wert im  _ulMsgRef-Parameter_ für diese Nachricht nicht mehr gültig. Der Transportanbieter kann denselben Wert für eine zukünftige Nachricht wiederverwenden. 
   
-Alle Objekte, die der Transportanbieter während der Übertragung einer Nachricht öffnet, sollten freigegeben werden, bevor der **EndMessage** -Aufruf zurückgegeben wird, mit Ausnahme des Message-Objekts, das vom MAPI-Spooler an den Transportanbieter übergeben wird. Das vom MAPI-Spooler übergebene Nachrichtenobjekt ist nach dem **EndMessage** -Aufruf ungültig. 
+Alle Objekte, die der Transportanbieter während der Übertragung einer Nachricht öffnet, sollten vor der Rückgabe des **EndMessage-Aufrufs** freigegeben werden, mit Ausnahme des Nachrichtenobjekts, das der MAPI-Spooler an den Transportanbieter übergibt. Das vom MAPI-Spooler übergebene Message-Objekt ist nach dem **EndMessage-Aufruf** ungültig. 
   
 ## <a name="see-also"></a>Siehe auch
 

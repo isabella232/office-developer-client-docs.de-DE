@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 8b8368d2-b04b-42a5-fdc3-955fc873c2f5
-description: Meldet den Fortschritt für die Aufzählung und die Begründung von Terminen.
+description: Meldet den Fortschritt für die Aufzählung und Neubasierung von Terminen.
 ms.openlocfilehash: e5df0cd6df10ab86b1a125b9807637438976726f
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -16,16 +16,16 @@ ms.locfileid: "32326453"
 ---
 # <a name="rebasetaskprogress"></a>RebaseTaskProgress
 
-Meldet den Fortschritt für die Aufzählung und die Begründung von Terminen.
+Meldet den Fortschritt für die Aufzählung und Neubasierung von Terminen.
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |tzmovelib. h  <br/> |
+|Headerdatei  <br/> |tzmovelib.h  <br/> |
 |Implementiert von:  <br/> |MAPI-Clientanwendungen  <br/> |
-|Aufgerufen von:  <br/> |Outlook-Objekt wird erneut basiert  <br/> |
-|Zeigertyp:  <br/> |**PFNREBASETASKPROGRESS** wie in tzmovelib. h definiert  <br/> |
+|Aufgerufen von:  <br/> |Outlook-Neubasierungsobjekt  <br/> |
+|Zeigertyp:  <br/> |**PFNREBASETASKPROGRESS** gemäß definition in tzmovelib.h  <br/> |
    
 ```cpp
 void STDAPICALLTYPE RebaseTaskProgress(  
@@ -41,43 +41,43 @@ void STDAPICALLTYPE RebaseTaskProgress(
 
 _ulMin_
   
-> in Das untere Ende des Bereiches der zu verarbeitenden Termine. Es ist normalerweise Null.
+> [in] Das niedrige Ende des zu verarbeitenden Terminbereichs. In der Regel ist es null.
     
 _ulMax_
   
-> in Das obere Ende des Bereiches der zu verarbeitenden Termine. In der Regel wird die Anzahl der Elemente im Kalenderordner verarbeitet.
+> [in] Das hohe Ende des zu verarbeitenden Terminbereichs. Dies ist in der Regel die Anzahl der Elemente im zu verarbeitende Kalenderordner.
     
 _ulCur_
   
-> in Das aktuelle Element, das verarbeitet wird.
+> [in] Das aktuelle Element, das verarbeitet wird.
     
 _State_
   
-> in Ein Wert, der den Status des zu verarbeitenden Elements angibt. Die Aufzählung **REBASE_APPT_STATE** ist in tzmovelib. h definiert.  _State_ hat einen der folgenden Werte: 
+> [in] Ein Wert, der den Status des verarbeiteten Elements angibt. Die Enumeration **REBASE_APPT_STATE** in tzmovelib.h definiert.  _State_ hat einen der folgenden Werte: 
     
-   - **REBASE_APPT_STATE_SCANNING_EXAMINING** – überprüfen und untersuchen eines Elements. 
+   - **REBASE_APPT_STATE_SCANNING_EXAMINING** – Scannen und Untersuchen eines Elements. 
     
-   - **REBASE_APPT_STATE_SCANNING_FOUND** – ein Element wird gescannt und gefunden. 
+   - **REBASE_APPT_STATE_SCANNING_FOUND** – Ein Element wurde gescannt und gefunden. 
     
-   - **REBASE_APPT_STATE_BEGIN** – fixieren und Starten eines Elements. 
+   - **REBASE_APPT_STATE_BEGIN** – Fixieren und Starten eines Elements. 
     
-   - **REBASE_APPT_STATE_REBASING** – Behebung und Anpassung eines Elements. 
+   - **REBASE_APPT_STATE_REBASING** – Fixieren und Anpassen eines Elements. 
     
-   - **REBASE_APPT_STATE_SENDING** – Behebung und Senden eines Besprechungs Updates. 
+   - **REBASE_APPT_STATE_SENDING** – Beheben und Senden eines Besprechungsupdates. 
     
-   - **REBASE_APPT_STATE_DONE** – Behebung und fertig mit einem Element. 
+   - **REBASE_APPT_STATE_DONE** – Fixieren und Fertig mit einem Element. 
     
 _pRowCur_
   
-> in Ein Zeiger auf eine **[SRow](https://msdn.microsoft.com/library/369c2d5c-8c2b-4314-9cb2-aaa89580aa2b%28Office.15%29.aspx)** -Struktur, die das Element beschreibt, das überprüft oder korrigiert wird. 
+> [in] Ein Zeiger auf eine **[SRow-Struktur,](https://msdn.microsoft.com/library/369c2d5c-8c2b-4314-9cb2-aaa89580aa2b%28Office.15%29.aspx)** die das gescannte oder feste Element beschreibt. 
     
 ## <a name="return-values"></a>Rückgabewerte
 
 S_OK zurück, wenn der Aufruf erfolgreich war; andernfalls einen Fehlercode.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-MAPI-Clientanwendungen, die die [IOlkApptRebaser](iolkapptrebaser.md) -Schnittstelle verwenden, implementieren diese Funktion, um die Elementverarbeitung nachzuverfolgen. 
+MAPI-Clientanwendungen, die die [IOlkApptRebaser-Schnittstelle](iolkapptrebaser.md) verwenden, implementieren diese Funktion, um die Elementverarbeitung nachzuverfolgen. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -25,7 +25,7 @@ ms.locfileid: "33411876"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt eine Tabelle mit einmaligen Vorlagen zum Erstellen von Empfängern zurück, die der Empfängerliste einer ausgehenden Nachricht hinzugefügt werden sollen.
+Gibt eine Tabelle mit einmal erstellten Vorlagen zum Erstellen von Empfängern zurück, die der Empfängerliste einer ausgehenden Nachricht hinzugefügt werden sollen.
   
 ```cpp
 HRESULT GetOneOffTable(
@@ -38,37 +38,37 @@ HRESULT GetOneOffTable(
 
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die den Typ der Zeichenfolgenspalten in der Tabelle steuert. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die den Typ von Zeichenfolgenspalten steuert, die in der Tabelle enthalten sind. Das folgende Flag kann festgelegt werden:
     
 MAPI_UNICODE 
   
-> Die Zeichenfolgenspalten sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, sind die Zeichenfolgenspalten im ANSI-Format.
+> Die Zeichenfolgenspalten sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Zeichenfolgenspalten im ANSI-Format.
     
  _lppTable_
   
-> Out Ein Zeiger auf einen Zeiger auf die einmalige Tabelle.
+> [out] Ein Zeiger auf einen Zeiger auf die einmal aufgeführte Tabelle.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die einmalige Tabelle wurde erfolgreich abgerufen.
+> Die einmal aufgeführte Tabelle wurde erfolgreich abgerufen.
     
 MAPI_E_BAD_CHARWIDTH 
   
-> Entweder wurde das MAPI_UNICODE-Flag festgelegt, und der Adressbuchanbieter unterstützt Unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und der Adressbuchanbieter unterstützt nur Unicode.
+> Entweder wurde MAPI_UNICODE-Flag festgelegt, und der Adressbuchanbieter unterstützt Unicode nicht, oder MAPI_UNICODE nicht festgelegt, und der Adressbuchanbieter unterstützt nur Unicode.
     
 MAPI_E_NO_SUPPORT 
   
-> Der Adressbuchanbieter liefert keine einmaligen Vorlagen.
+> Der Adressbuchanbieter stellt keine einmal verwendeten Vorlagen bereit.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-MAPI Ruft die **GetOneOffTable** -Methode auf, um für die Erstellung von Empfängern einmalige Vorlagen zur Verfügung zu stellen. Die neuen Empfänger werden der Empfängerliste einer ausgehenden Nachricht hinzugefügt. Adressbuchanbieter sollten die Benachrichtigung über ihre einmalige Tabelle unterstützen, um MAPI über Vorlagenänderungen zu informieren. MAPI hält die einmalige Tabelle geöffnet, um dynamische Updates zu aktivieren. 
+MAPI ruft die **GetOneOffTable-Methode** auf, um einmal verfügbare Vorlagen zum Erstellen von Empfängern zur Verfügung zu stellen. Die neuen Empfänger werden der Empfängerliste einer ausgehenden Nachricht hinzugefügt. Adressbuchanbieter sollten Benachrichtigungen in ihrer einmal erstellten Tabelle unterstützen, um MAPI über Vorlagenänderungen zu informieren. MAPI hält die einmal aufgeführte Tabelle offen, um dynamische Aktualisierungen zu ermöglichen. 
   
-Adressbuchanbieter können auch eine einmalige Tabelle für jeden ihrer Container unterstützen. Aufrufer rufen diese einmalige Tabelle ab, indem Sie die [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode des Containers aufrufen und die **PR_CREATE_TEMPLATES** ([pidtagcreatetemplates (](pidtagcreatetemplates-canonical-property.md))-Eigenschaft anfordern. Die über diese Tabelle verfügbaren Vorlagen werden zum Hinzufügen von Empfängern zum Container verwendet. Eine Erläuterung der Unterschiede zwischen den beiden Arten von einmaligen Tabellen finden Sie unter [Implementieren von einmal Tabellen](implementing-one-off-tables.md).
+Adressbuchanbieter können auch eine einzelne Tabelle für jeden container unterstützen. Aufrufer rufen diese einmaltabelle ab, indem sie die [IMAPIProp::OpenProperty-Methode](imapiprop-openproperty.md) des Containers aufrufen und die **PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) -Eigenschaft anfordern. Die in dieser Tabelle verfügbaren Vorlagen werden zum Hinzufügen von Empfängern zum Container verwendet. Eine Diskussion über die Unterschiede zwischen den beiden Arten von einmal erstellten Tabellen finden Sie unter [Implementing One-Off Tables](implementing-one-off-tables.md).
   
-Eine Liste der erforderlichen Spalten in der einmaligen Tabelle eines Adressbuch Anbieters finden Sie unter [einmalige Tabellen](one-off-tables.md).
+Eine Liste der erforderlichen Spalten in der Einmaltabelle eines Adressbuchanbieters finden Sie unter [One-Off Tables](one-off-tables.md).
   
 ## <a name="see-also"></a>Siehe auch
 

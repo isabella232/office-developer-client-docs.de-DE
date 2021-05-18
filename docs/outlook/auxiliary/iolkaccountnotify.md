@@ -15,7 +15,7 @@ ms.locfileid: "33412499"
 ---
 # <a name="iolkaccountnotify"></a>IOlkAccountNotify
 
-Stellt dem Client einen Rückruf für Änderungen an einem Konto bereit.
+Stellt einen Rückruf an den Client für Änderungen an einem Konto.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -29,11 +29,11 @@ Stellt dem Client einen Rückruf für Änderungen an einem Konto bereit.
 
 |||
 |:-----|:-----|
-|[Benachrichtigen](iolkaccountnotify-notify.md) <br/> |Benachrichtigt den Client über Änderungen am angegebenen Konto.  <br/> |
+|[Notify](iolkaccountnotify-notify.md) <br/> |Benachrichtigt den Client über Änderungen am angegebenen Konto.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Diese Schnittstelle wird an [IOlkAccountManager:: Advise](iolkaccountmanager-advise.md) beim Einrichten von Benachrichtigungen übergeben. 
+Diese Schnittstelle wird beim Einrichten von Benachrichtigungen an [IOlkAccountManager::Advise](iolkaccountmanager-advise.md) übergeben. 
   
 ## <a name="see-also"></a>Siehe auch
 

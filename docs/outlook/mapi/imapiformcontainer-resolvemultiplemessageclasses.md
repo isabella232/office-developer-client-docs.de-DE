@@ -25,7 +25,7 @@ ms.locfileid: "33412541"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Löst eine Gruppe von Nachrichtenklassen in Ihre Formulare in einem Formular Container auf und gibt ein Array von Formular Informationsobjekten für diese Formulare zurück.
+Löst eine Gruppe von Nachrichtenklassen in ihre Formulare in einem Formularcontainer auf und gibt ein Array von Formularinformationsobjekten für diese Formulare zurück.
   
 ```cpp
 HRESULT ResolveMultipleMessageClasses(
@@ -39,19 +39,19 @@ HRESULT ResolveMultipleMessageClasses(
 
  _pMsgClassArray_
   
-> in Ein Zeiger auf ein Array, das die Namen der aufzulösenden Nachrichtenklassen enthält. Nachrichtenklassennamen sind immer ANSI-Zeichenfolgen, nie Unicode.
+> [in] Ein Zeiger auf ein Array, das die Namen der zu auflösende Nachrichtenklassen enthält. Nachrichtenklassennamen sind immer ANSI-Zeichenfolgen, nie Unicode.
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die die Auflösung der Nachrichtenklassen steuert. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie die Nachrichtenklassen aufgelöst werden. Das folgende Flag kann festgelegt werden:
     
 MAPIFORM_EXACTMATCH 
   
-> Nur Nachrichtenklassen Zeichenfolgen, die exakt übereinstimmen, sollten aufgelöst werden.
+> Es sollten nur Nachrichtenklassenzeichenfolgen aufgelöst werden, die eine genaue Übereinstimmung sind.
     
  _ppfrminfoarray_
   
-> Out Ein Zeiger auf einen Zeiger auf ein Array von Formular Informationsobjekten. Wenn eine Clientanwendung im _pMsgClassArray_ -Parameter den Wert NULL übergibt, enthält der _ppfrminfoarray_ -parameterformular Informationsobjekte für alle Formulare im Container. 
+> [out] Ein Zeiger auf einen Zeiger auf ein Array von Formularinformationsobjekten. Wenn eine Clientanwendung NULL im  _pMsgClassArray-Parameter_ übergibt, enthält der  _ppfrminfoarray-Parameter_ Formularinformationsobjekte für alle Formulare im Container. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -59,15 +59,15 @@ S_OK
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Client Anwendungen rufen die **IMAPIFormContainer:: ResolveMultipleMessageClasses** -Methode auf, um eine Gruppe von Nachrichtenklassen in Formulare in einem Formular Container aufzulösen. Das im _ppfrminfoarray_ -Parameter zurückgegebene Array von Formular Informationsobjekten bietet weiteren Zugriff auf die einzelnen Eigenschaften der Formulare. 
+Clientanwendungen rufen die **IMAPIFormContainer::ResolveMultipleMessageClasses-Methode** auf, um eine Gruppe von Nachrichtenklassen in Formulare innerhalb eines Formularcontainers zu auflösen. Das Array von Formularinformationsobjekten, die im  _ppfrminfoarray-Parameter_ zurückgegeben werden, bietet weiteren Zugriff auf die Eigenschaften der einzelnen Formulare. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Um eine Gruppe von Nachrichtenklassen in Formulare aufzulösen, führen Sie ein Array von Nachrichtenklassennamen aus, die aufgelöst werden sollen. Um die Genauigkeit der Auflösung zu erzwingen (das heißt, um eine Lösung für eine Basisklasse der Nachrichtenklasse zu verhindern), kann das MAPIFORM_EXACTMATCH-Flag im _ulFlags_ -Parameter übergeben werden. 
+Um eine Gruppe von Nachrichtenklassen in Formulare zu auflösen, übergeben Sie ein Array von Nachrichtenklassennamen, die aufgelöst werden sollen. Um zu erzwingen, dass die Auflösung exakt ist (d. h. um die Auflösung einer Basisklasse der Nachrichtenklasse zu verhindern), kann das MAPIFORM_EXACTMATCH im  _ulFlags-Parameter übergeben_ werden. 
   
-Wenn eine Nachrichtenklasse nicht in ein Formular aufgelöst werden kann, wird für diese Nachrichtenklasse im Formular Informations Array NULL zurückgegeben. Daher sollten Sie nicht davon ausgehen, dass alle Nachrichtenklassen erfolgreich aufgelöst wurden, selbst wenn die Methode S_OK zurückgibt. Überprüfen Sie stattdessen die Werte im zurückgegebenen Array.
+Wenn eine Nachrichtenklasse nicht in ein Formular aufgelöst werden kann, wird NULL für diese Nachrichtenklasse im Formularinformationsarray zurückgegeben. Gehen Sie daher nicht davon aus, dass alle Nachrichtenklassen erfolgreich aufgelöst wurden, auch wenn die Methode S_OK zurückgibt. Überprüfen Sie stattdessen die Werte im zurückgegebenen Array.
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -75,7 +75,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|FormContainerDlg. cpp  <br/> |CFormContainerDlg:: OnResolveMultipleMessageClasses  <br/> |MFCMAPI verwendet die **IMAPIFormContainer:: ResolveMultipleMessageClasses** -Methode, um ein Formular zu suchen, das einer Gruppe von Nachrichtenklassen zugeordnet ist.  <br/> |
+|FormContainerDlg.cpp  <br/> |CFormContainerDlg::OnResolveMultipleMessageClasses  <br/> |MFCMAPI verwendet die **IMAPIFormContainer::ResolveMultipleMessageClasses-Methode,** um ein Formular zu finden, das einem Satz von Nachrichtenklassen zugeordnet ist.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

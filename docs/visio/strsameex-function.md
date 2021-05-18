@@ -22,7 +22,7 @@ Bestimmt, ob zwei Zeichenfolgen identisch sind.
   
 ## <a name="syntax"></a>Syntax
 
-STRSAMEEX ("* * *string1* * *", "* * *string2* * *", * * *Gebietsschema* -Nr. * *, * * *Flag* * *) 
+STRSAMEEX (" ** *string1* ** ", " ** *string2* ** ", ** *localeID* **, ** *flag* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -39,7 +39,9 @@ Boolesch
   
 ## <a name="remarks"></a>Bemerkungen
 
-STRSAMEEX gibt TRUE zurück, wenn beide Eingabezeichenfolgen identisch sind, und FALSE, wenn dies nicht der Fall ist. Mit dieser Funktion können Sie Multi-Byte-Zeichenfolgenvergleichen oder Vergleiche ausführen, die Fall Regeln für ein bestimmtes Gebietsschema verwenden.
+STRSAMEEX gibt TRUE zurück, wenn beide Eingabezeichenfolgen identisch sind. Ist dies nicht der Fall, wird FALSE zurückgegeben. Verwenden Sie diese Funktion, wenn Sie Multibyte-Zeichenfolgen vergleichen oder Vergleiche mit Groß- und Kleinschreibregeln für ein bestimmtes Gebietsschema durchführen möchten.
+			
+
   
 Sie können eine beliebige Kombination folgender Flags mit der STRGLEICHEX-Funktion verwenden.
   
@@ -47,7 +49,7 @@ Sie können eine beliebige Kombination folgender Flags mit der STRGLEICHEX-Funkt
 |:-----|:-----|
 |1  <br/> |Groß- und Kleinschreibung ignorieren.  <br/> |
 |2  <br/> |Nicht-gesperrte Zeichen ignorieren.  <br/> |
-|4  <br/> |Symbole ignorieren.  <br/> |
+|4   <br/> |Symbole ignorieren.  <br/> |
 |4096  <br/> |Interpunktionszeichen wie Symbole behandeln.  <br/> |
 |65536  <br/> |Nicht zwischen Hiragana- und Katakana-Zeichen unterscheiden.  <br/> |
 |131072  <br/> |Nicht zwischen Einzel-Byte-Zeichen und dem gleichen Zeichen als Doppel-Byte-Zeichen unterscheiden.  <br/> |

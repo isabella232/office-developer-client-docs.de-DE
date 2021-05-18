@@ -1,5 +1,5 @@
 ---
-title: MAPI-Eigenschaftstags
+title: TAGS der MAPI-Eigenschaft
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,21 +15,21 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32328235"
 ---
-# <a name="mapi-property-tags"></a>MAPI-Eigenschaftstags
+# <a name="mapi-property-tags"></a>TAGS der MAPI-Eigenschaft
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ein Property-Tag ist eine 32-Bit-Zahl, die einen eindeutigen Eigenschaftenbezeichner in Bits 16 bis 31 und einen Eigenschaftentyp in Bits 0 bis 15 enthält, wie in der folgenden Abbildung dargestellt. 
+Ein Eigenschaftstag ist eine 32-Bit-Zahl, die einen eindeutigen Eigenschaftenbezeichner in den Bits 16 bis 31 und einen Eigenschaftstyp in bits 0 bis 15 enthält, wie in der folgenden Abbildung dargestellt. 
   
 **Eigenschafts-Tag-Elemente**
   
-![Eigenschaftentag Elemente] (media/amapi_10.gif "Eigenschaftentag Elemente")
+![Eigenschaftstagelemente](media/amapi_10.gif "Eigenschaftentagelemente")
   
-Eigenschaftstags werden verwendet, um MAPI-Eigenschaften zu identifizieren, und jede Eigenschaft muss einen haben, unabhängig davon, ob die Eigenschaft von MAPI, einem Client oder einem Dienstanbieter definiert wird. MAPI definiert eine Reihe von Eigenschaftentag Konstanten für die Eigenschaften in der Headerdatei Mapitags. h; Diese Eigenschaften werden als "MAPI-definierte Eigenschaften" bezeichnet. 
+Eigenschaftstags werden verwendet, um MAPI-Eigenschaften zu identifizieren, und jede Eigenschaft muss über eine verfügen, unabhängig davon, ob die Eigenschaft von MAPI, einem Client oder einem Dienstanbieter definiert wird. MAPI definiert eine Reihe von Eigenschaftentagkonstante für seine Eigenschaften in der Mapitags.h-Headerdatei. diese Eigenschaften werden als "MAPI-definierte Eigenschaften" bezeichnet. 
   
-Die Eigenschaftentag Konstanten Folgen einer Benennungskonvention für Konsistenz und Benutzerfreundlichkeit. Es gibt zwei Teile des Namens jedes Property-Tags: ein PR_-Präfix und eine oder mehrere Zeichenfolgen, die den Inhalt der Eigenschaft beschreiben. Mehrere Zeichenfolgen werden durch Unterstriche getrennt. Beispielsweise ist das Property-Tag für den Adresstyp eines Nachrichtenempfängers **PR\_addrType** ([PidTagOrgAddrtype](https://msdn.microsoft.com/library/d40b5707-e4d5-4746-88d4-8616a3789789%28Office.15%29.aspx)), und die Eintrags-ID für den Ordner, der für das Empfangen einer Kopie jeder ausgehenden Nachricht bestimmt ist **PR_IPM_SENTMAIL_ EINTRAGs** -Nr. ([pidtagipmsentmailentryid (](pidtagipmsentmailentryid-canonical-property.md)).
+Die Eigenschaftentagkonstante folgen einer Benennungskonvention für Konsistenz und Benutzerfreundlichkeit. Der Name jedes Eigenschaftstags enthält zwei Teile: ein PR_-Präfix und eine oder mehrere Zeichenzeichenfolgen, die den Inhalt der Eigenschaft beschreiben. Zeichenfolgen mit mehreren Zeichen werden durch Unterstriche getrennt. Das Eigenschaftstag für den Adresstyp eines Nachrichtenempfängers ist z. B. **PR \_ ADDRTYPE** ([PidTagOrgAddrtype](https://msdn.microsoft.com/library/d40b5707-e4d5-4746-88d4-8616a3789789%28Office.15%29.aspx)) und der Eintragsbezeichner für den Ordner, der für den Empfang einer Kopie jeder ausgehenden Nachricht bestimmt **ist, lautet PR_IPM_SENTMAIL_ENTRYID** ([PidTagIpmSentMailEntryId](pidtagipmsentmailentryid-canonical-property.md)).
   
-Es stehen einige Makros zur Verfügung, um mit Eigenschaftstags zu arbeiten, darunter [PROP_TYPE](prop_type.md), [PROP_ID](prop_id.md)und [PROP_TAG](prop_tag.md). **PROP\_-Typ** extrahiert den Eigenschaftentyp aus dem Property-Tag; **Prop\_ID** extrahiert den Bezeichner. **PROP_TAG** erstellt ein Property-Tag aus einem Eigenschaftentyp und einem Bezeichner. 
+Einige Makros stehen zur Verfügung, um die Arbeit mit Eigenschaftstags zu unterstützen, darunter [PROP_TYPE](prop_type.md), [PROP_ID](prop_id.md)und [PROP_TAG](prop_tag.md). **PROP \_ TYPE** extrahiert den Eigenschaftentyp aus dem Eigenschaftstag. **PROP \_ ID** extrahiert den Bezeichner. **PROP_TAG** erstellt ein Eigenschaftentag aus einem Eigenschaftentyp und einem Bezeichner. 
   
 ## <a name="see-also"></a>Siehe auch
 

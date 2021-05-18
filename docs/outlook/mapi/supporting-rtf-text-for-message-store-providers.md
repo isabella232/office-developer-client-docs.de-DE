@@ -1,5 +1,5 @@
 ---
-title: Unterstützen von RTF-Text für Nachrichtenspeicher Anbieter
+title: Unterstützung von RTF-Text für Store-Anbieter
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,17 +15,17 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33414214"
 ---
-# <a name="supporting-rtf-text-for-message-store-providers"></a>Unterstützen von RTF-Text für Nachrichtenspeicher Anbieter
+# <a name="supporting-rtf-text-for-message-store-providers"></a>Unterstützung von RTF-Text für Store-Anbieter
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Einige Clientanwendungen ermöglichen es Benutzern, RTF-Text (Rich Text Format) in ihren Nachrichten zu verwenden. Wenn der Nachrichtenspeicher Anbieter RTF-Text in Nachrichten unterstützen muss, muss er zusätzlich zur **PR_BODY** ([pidtagbody (](pidtagbody-canonical-property.md))-Eigenschaft die **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md))-Eigenschaft behandeln. Dies ist in erster Linie das Speichern beider Eigenschaften und das sicherstellen, dass **PR_BODY** eine nur-Text-Version des Texts in **PR_RTF_COMPRESSED**enthält. Die [RTFSync](rtfsync.md) -Funktion ist für diesen Zweck nützlich. 
+Einige Clientanwendungen ermöglichen Benutzern die Verwendung von Rich Text Format (RTF)-Text in ihren Nachrichten. Wenn Ihr Nachrichtenspeicheranbieter #A0 in Nachrichten unterstützen muss, muss er die **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) -Eigenschaft zusätzlich zur **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) -Eigenschaft behandeln. Dies bedeutet in erster Linie, beide Eigenschaften zu speichern und sicherzustellen, dass **PR_BODY** eine Nur-Text-Version des Texts **in** PR_RTF_COMPRESSED. Die [RTFSync-Funktion](rtfsync.md) ist zu diesem Zweck nützlich. 
   
-Es gibt zwei Flags, die in der **PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md))-Eigenschaft des Nachrichtenspeicher Objekts festgelegt werden können, die den Clients mitteilen, was Sie vom Nachrichtenspeicher Anbieter im Hinblick auf **PR_BODY** und PR_ erwarten können. ** RTF_COMPRESSED** -Eigenschaften für Nachrichten im Nachrichtenspeicher. Das STORE_RTF_OK-Flag gibt an, dass der Speicher den Wert der **PR_BODY** -Eigenschaft aus der **PR_RTF_COMPRESSED** -Eigenschaft dynamisch generieren kann, wodurch Clients von der Last der expliziten Synchronisierung entlastet werden. Das STORE_UNCOMPRESSED_RTF-Flag gibt an, dass der Nachrichtenspeicher Anbieter nicht komprimierte Daten in **PR_RTF_COMPRESSED**unterstützenkann.
+Es gibt zwei Kennzeichen, die in der **PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md))-Eigenschaft des Nachrichtenspeicherobjekts festgelegt werden können, die Clients mitteilen, was sie vom Nachrichtenspeicheranbieter im Hinblick auf die **Eigenschaften PR_BODY** und **PR_RTF_COMPRESSED** für Nachrichten im Nachrichtenspeicher erwarten können. Das STORE_RTF_OK gibt an, dass der Speicher den Wert der **PR_BODY-Eigenschaft** aus der **PR_RTF_COMPRESSED-Eigenschaft** dynamisch generieren kann, wodurch Clients nicht explizit synchronisiert werden müssen. Das STORE_UNCOMPRESSED_RTF gibt an, dass der Nachrichtenspeicheranbieter nicht komprimierte Daten **in** PR_RTF_COMPRESSED.
   
-Nachrichtenspeicher Anbieter, die keinen RTF-Text unterstützen, müssen die **PR_RTF_IN_SYNC** ([pidtagrtfinsync (](pidtagrtfinsync-canonical-property.md))-Eigenschaft löschen, wenn sich die **PR_BODY** -Eigenschaft ändert, um ordnungsgemäß mit CLIENTanwendungen zu interagieren, die RTF-Text unterstützen. . 
+Nachrichtenspeicheranbieter, die #A0 nicht unterstützen, müssen die **PR_RTF_IN_SYNC** ([PidTagRtfInSync](pidtagrtfinsync-canonical-property.md))-Eigenschaft löschen, wenn sich die **PR_BODY-Eigenschaft** ändert, um ordnungsgemäß mit Clientanwendungen zu arbeiten, die #A1 unterstützen. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -25,12 +25,12 @@ ms.locfileid: "33412786"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält Informationen zu einem Schaltflächen-Steuerelement für ein Dialogfeld, das aus einer Anzeigetabelle erstellt wurde.
+Enthält Informationen zu einem Schaltflächensteuerelement für ein Dialogfeld, das aus einer Anzeigetabelle erstellt wurde.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehöriges Makro:  <br/> |[SizedDtblButton](sizeddtblbutton.md) <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandtes Makro:  <br/> |[SizedDtblButton](sizeddtblbutton.md) <br/> |
    
 ```cpp
 typedef struct _DTBLBUTTON
@@ -42,33 +42,33 @@ typedef struct _DTBLBUTTON
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **ulbLpszLabel**
   
-> Position im Speicher der Zeichenfolge, die auf der Schaltfläche angezeigt wird.
+> Position im Arbeitsspeicher der Zeichenzeichenfolge, die auf der Schaltfläche angezeigt wird.
     
  **ulFlags**
   
-> Bitmaske der Flags, mit denen das Format der Bezeichnung festgelegt wird, auf die durch das **ulbLpszLabel** -Element verwiesen wird. Das folgende Flag kann festgelegt werden: 
+> Bitmaske von Flags, die verwendet werden, um das Format der Bezeichnung zu bestimmen, auf das das **ulbLpszLabel-Element** verweist. Das folgende Flag kann festgelegt werden: 
     
 MAPI_UNICODE 
   
-> Die Bezeichnung ist im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, ist die Bezeichnung im ANSI-Format.
+> Die Bezeichnung ist im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befindet sich die Bezeichnung im ANSI-Format.
     
  **ulPRControl**
   
-> Property-Tag für eine Eigenschaft vom Typ PT_OBJECT, die die [IMAPIControl](imapicontroliunknown.md) -Schnittstelle implementiert. Wenn auf die Schaltfläche geklickt wird, ruft MAPI die [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode für die [IMAPIProp](imapipropiunknown.md) -Implementierung der Display-Tabelle auf, um diese Eigenschaft abzurufen. 
+> Eigenschaftstag für eine Eigenschaft vom Typ PT_OBJECT, die die [IMAPIControl-Schnittstelle](imapicontroliunknown.md) implementiert. Wenn auf die Schaltfläche geklickt wird, ruft MAPI die [IMAPIProp::OpenProperty-Methode](imapiprop-openproperty.md) auf, damit die [IMAPIProp-Implementierung](imapipropiunknown.md) der Anzeigetabelle diese Eigenschaft abruft. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Eine **DTBLBUTTON** -Struktur beschreibt ein Schaltflächen-Steuerelement, mit dem ein Benutzer beim Klicken einen Vorgang beginnen kann. Wenn Sie auf eine Schaltfläche klicken, wird in der Regel ein modales Dialogfeld angezeigt oder eine programmgesteuerte Aufgabe aufgerufen. Dienstanbieter können beliebige Elemente über ein Schaltflächen-Steuerelement implementieren. Wenn die Schaltfläche eine Aufgabe basierend auf den Werten anderer Steuerelemente ausführen soll, müssen diese Steuerelemente das DT_SET_IMMEDIATE-Flag festgelegt haben. 
+Eine **DTBLBUTTON-Struktur** beschreibt eine Schaltfläche, die einem Benutzer beim Klicken auf ein Steuerelement das Starten eines Vorgangs ermöglicht. In der Regel wird durch Klicken auf eine Schaltfläche ein modales Dialogfeld angezeigt oder eine programmgesteuerte Aufgabe aufgerufen. Dienstanbieter können alles über ein Schaltflächensteuerelement implementieren. Wenn die Schaltfläche eine Aufgabe basierend auf den Werten anderer Steuerelemente ausführen soll, müssen diese Steuerelemente das Flag DT_SET_IMMEDIATE haben. 
   
-Das **ulbLpszLabel** -Element ist die Position im Arbeitsspeicher der Zeichenfolge, die auf der Schaltfläche angezeigt wird. Dienstanbieter können ein kaufmännisches und-&amp;Zeichen () hinzufügen, um einen Windows-Beschleuniger in der Schaltflächenbeschriftung anzugeben. Das Drücken einer Tastenkombination hat dieselbe Wirkung wie das Klicken auf die Schaltfläche. 
+Das **ulbLpszLabel-Element** ist die Position im Speicher der Zeichenzeichenfolge, die auf der Schaltfläche angezeigt wird. Dienstanbieter können ein kaufmännisches Und -Zeichen ( ) hinzufügen, um eine Windows &amp; in der Schaltflächenbeschriftung anzugeben. Das Drücken einer Zugriffstaste hat dieselbe Auswirkung wie das Klicken auf die Schaltfläche. 
   
-Das **ulPRControl** -Element beschreibt eine Objekteigenschaft, die beim Öffnen mit der **IMAPIProp:: OpenProperty** -Methode einen Zeiger auf ein Control-Objekt zurückgibt. Das Implementieren eines Control-Objekts, das die **IMAPIControl** -Schnittstelle unterstützt, stellt eine Möglichkeit dar, die MAPI-Featuregruppe zu erweitern und die Operation oder Aufgabe zu definieren, die beim Klicken auf die Schaltfläche auftritt. **IMAPIControl** stellt zwei Methoden zum Bearbeiten von Schaltflächen [](imapicontrol-getstate.md) bereit: GetState zum Deaktivieren oder Aktivieren von Schaltflächen und [aktivieren](imapicontrol-activate.md) zum Behandeln von Tastenklicks. 
+Das **ulPRControl-Element** beschreibt eine Objekteigenschaft, die beim Öffnen mit der **IMAPIProp::OpenProperty-Methode** einen Zeiger auf ein Steuerelementobjekt zurückgibt. Die Implementierung eines Steuerelementobjekts, das die **IMAPIControl-Schnittstelle** unterstützt, ist eine Möglichkeit, den MAPI-Featuresatz zu erweitern und den Vorgang oder die Aufgabe zu definieren, die beim Klicken auf die Schaltfläche ausgeführt wird. **IMAPIControl bietet** zwei Methoden zum Bearbeiten von Schaltflächen: [GetState](imapicontrol-getstate.md) zum Deaktivieren oder Aktivieren von Schaltflächen und [Aktivieren,](imapicontrol-activate.md) um Schaltflächenklicks zu verarbeiten. 
   
-Eine Übersicht über Anzeige Tabellen finden Sie unter [Display Tables](display-tables.md). Weitere Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
+Eine Übersicht über Anzeigetabellen finden Sie unter [Display Tables](display-tables.md). Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
   
 ## <a name="see-also"></a>Siehe auch
 

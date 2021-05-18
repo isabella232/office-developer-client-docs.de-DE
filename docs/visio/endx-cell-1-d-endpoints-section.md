@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm335
 localization_priority: Normal
 ms.assetid: 24261b77-e3e8-7434-a503-9f23798bdab1
-description: Stellt die x-Koordinate des Endpunkts des 1D-Shapes im Verhältnis zum Ursprung des übergeordneten Objekts dar.
+description: Stellt die x-Koordinate des Endpunkts der 1D-Form im Verhältnis zum Ursprung des übergeordneten Shapes dar.
 ms.openlocfilehash: 4bd3099b2c13572023b0b813b1cc69a7b211546b
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,21 +18,21 @@ ms.locfileid: "33411568"
 ---
 # <a name="endx-cell-1-d-endpoints-section"></a>Zelle "EndX" (Abschnitt "1-D Endpoints")
 
-Stellt die *x* -Koordinate des Endpunkts des 1D-Shapes im Verhältnis zum Ursprung des übergeordneten Objekts dar. 
+Stellt  die x-Koordinate des Endpunkts der 1D-Form im Verhältnis zum Ursprung des übergeordneten Shapes dar. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle EndX aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die EndX-Zelle anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | EndX  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle EndX aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die EndX-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowXForm1D** <br/> |
 | Zeilenindex:  <br/> |**vis1DEndX** <br/> |
    

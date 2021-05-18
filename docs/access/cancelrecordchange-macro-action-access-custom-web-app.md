@@ -1,5 +1,5 @@
 ---
-title: Abbrechendatensatzänderung-Makroaktion (benutzerdefinierte Access-Web-App)
+title: CancelRecordChange-Makroaktion (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33411827"
 ---
-# <a name="cancelrecordchange-macro-action-access-custom-web-app"></a>Abbrechendatensatzänderung-Makroaktion (benutzerdefinierte Access-Web-App)
+# <a name="cancelrecordchange-macro-action-access-custom-web-app"></a>CancelRecordChange-Makroaktion (benutzerdefinierte Access-Web-App)
 
 Mit der **CancelRecordChange** -Aktion können Sie die Änderungen an einem Datensatz in einem **[DatensatzErstellen](createrecord-data-block-access-custom-web-app.md)** - oder **[BearbeitenDatensatz](editrecord-data-block-access-custom-web-app.md)** -Datenblock abbrechen, bevor für diese ein Commit erfolgt ist. 
   
@@ -23,7 +23,7 @@ Mit der **CancelRecordChange** -Aktion können Sie die Änderungen an einem Date
 > [!NOTE]
 > Die **AbbrechenDatensatzänderung**-Aktion ist nur in Datenmakros verfügbar. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Wenn Sie die **AbbrechenDatensatzänderung** -Aktion aufrufen, wird der **DatensatzErstellen** - oder **DatensatzBearbeiten** -Datenblock sofort beendet. 
   

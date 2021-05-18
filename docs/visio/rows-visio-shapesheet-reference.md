@@ -1,5 +1,5 @@
 ---
-title: Zeilen (Visio-ShapeSheet-Referenz)
+title: Rows (Visio ShapeSheet Reference)
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33413017"
 ---
-# <a name="rows-visio-shapesheet-reference"></a>Zeilen (Visio-ShapeSheet-Referenz)
+# <a name="rows-visio-shapesheet-reference"></a>Rows (Visio ShapeSheet Reference)
 
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
@@ -29,9 +29,9 @@ ms.locfileid: "33413017"
     
 - [Zeile "EllipticalArcTo" (Abschnitt "Geometry")](ellipticalarcto-row-geometry-section.md)
     
-- [Verlaufs Unterbrechungs Zeile (Abschnitt "Füll Verlauf")](gradient-stop-row-fill-gradient-section.md)
+- [Gradient Stop Row (Fill Gradient Section)](gradient-stop-row-fill-gradient-section.md)
     
-- [Verlaufs Unterbrechungs Zeile (Abschnitt "Linienverlauf")](gradient-stop-row-line-gradient-section.md)
+- [Gradient Stop Row (Line Gradient Section)](gradient-stop-row-line-gradient-section.md)
     
 - [Zeile "Hyperlink" (Abschnitt "Hyperlinks")](hyperlink-row-hyperlinks-section.md)
     
@@ -45,15 +45,15 @@ ms.locfileid: "33413017"
     
 - [Zeile "PolylineTo" (Abschnitt "Geometry")](polylineto-row-geometry-section.md)
     
-- [Zeile "RelCubBezTo" (Abschnitt "Geometry")](relcubbezto-row-geometry-section.md)
+- [RelCubBezTo Row (Geometry Section)](relcubbezto-row-geometry-section.md)
     
-- [Zeile "RelEllipticalArcTo" (Abschnitt "Geometry")](relellipticalarcto-row-geometry-section.md)
+- [RelEllipticalArcTo Row (Geometry Section)](relellipticalarcto-row-geometry-section.md)
     
-- [Zeile "RelLineTo" (Abschnitt "Geometry")](rellineto-row-geometry-section.md)
+- [RelLineTo Row (Geometry Section)](rellineto-row-geometry-section.md)
     
-- [Zeile "RelMoveTo" (Abschnitt "Geometry")](relmoveto-row-geometry-section.md)
+- [RelMoveTo Row (Geometry Section)](relmoveto-row-geometry-section.md)
     
-- [Zeile "RelQuadBezTo" (Abschnitt "Geometry")](relquadbezto-row-geometry-section.md)
+- [RelQuadBezTo Row (Geometry Section)](relquadbezto-row-geometry-section.md)
     
 - [Zeile "Shape Data" (Abschnitt "Shape Data")](shape-data-row-shape-data-section.md)
     

@@ -25,7 +25,7 @@ ms.locfileid: "33411274"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt einen neuen Eintrag, bei dem es sich um einen Messagingbenutzer, eine Verteilerliste oder einen anderen Container handeln kann.
+Erstellt einen neuen Eintrag, der ein Messagingbenutzer, eine Verteilerliste oder ein anderer Container sein kann.
   
 ```cpp
 HRESULT CreateEntry(
@@ -40,31 +40,31 @@ HRESULT CreateEntry(
 
  _cbEntryID_
   
-> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID_ -Parameter verwiesen wird. 
+> [in] Die Anzahl der Bytes in der Eintrags-ID, auf die der  _lpEntryID-Parameter_ verweist. 
     
  _lpEntryID_
   
-> in Ein Zeiger auf den Eintragsbezeichner einer Vorlage zum Erstellen neuer Einträge eines bestimmten Typs. 
+> [in] Ein Zeiger auf die Eintrags-ID einer Vorlage zum Erstellen neuer Einträge eines bestimmten Typs. 
     
  _ulCreateFlags_
   
-> in Eine Bitmaske von Flags, die die Ausführung der Eintragserstellung steuert. Die folgenden Flags können festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie die Erstellung von Eingaben ausgeführt wird. Die folgenden Kennzeichen können festgelegt werden:
     
 CREATE_CHECK_DUP_LOOSE 
   
-> Es sollte eine Ebene doppelter Eintrags Überprüfung durchgeführt werden. Die Implementierung von Loose Duplicate entry checking ist Anbieter spezifisch. Ein Anbieter kann beispielsweise eine lockere Übereinstimmung als zwei Einträge definieren, die den gleichen Anzeigenamen aufweisen.
+> Es sollte eine lose Ebene doppelter Eingabeprüfungen durchgeführt werden. Die Implementierung der Überprüfung von losen doppelten Einträgen ist anbieterspezifisch. Beispielsweise kann ein Anbieter eine lose Übereinstimmung als zwei beliebige Einträge definieren, die denselben Anzeigenamen haben.
     
 CREATE_CHECK_DUP_STRICT 
   
-> Es sollte eine strenge doppelte Eintrags Überprüfung durchgeführt werden. Die Implementierung einer strengen doppelten Eintrags Überprüfung ist Anbieter spezifisch. Ein Anbieter kann beispielsweise eine strikte Übereinstimmung als zwei Einträge definieren, die den gleichen Anzeigenamen und die gleiche Messaging Adresse aufweisen.
+> Es sollte eine strenge Stufe doppelter Eingabeprüfungen durchgeführt werden. Die Implementierung einer strengen Doppelten Eintragsprüfung ist anbieterspezifisch. Ein Anbieter kann z. B. eine strikte Übereinstimmung als zwei Einträge definieren, die denselben Anzeigenamen und dieselbe Messagingadresse haben.
     
 CREATE_REPLACE 
   
-> Ein neuer Eintrag sollte ein vorhandenes ersetzen, wenn festgestellt wird, dass die beiden Duplikate sind.
+> Ein neuer Eintrag sollte einen vorhandenen Eintrag ersetzen, wenn festgestellt wird, dass es sich bei den beiden um Duplikate handelt.
     
  _lppMAPIPropEntry_
   
-> Out Ein Zeiger auf einen Zeiger auf den neu erstellten Eintrag.
+> [out] Ein Zeiger auf einen Zeiger auf den neu erstellten Eintrag.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -72,37 +72,37 @@ S_OK
   
 > Der neue Eintrag wurde erfolgreich erstellt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IABContainer:: CreateEntry** -Methode erstellt einen neuen Eintrag eines bestimmten Typs im angegebenen Container und gibt einen Zeiger auf eine Schnittstellenimplementierung zurück, um weiteren Zugriff auf den Eintrag zu erhalten. Der neue Eintrag wird mithilfe einer Vorlage erstellt, die aus der Liste der verfügbaren Vorlagen des Containers ausgewählt wurde, die in der einmaligen Tabelle veröffentlicht wurden. Aufrufer greifen auf die einmalige Tabelle eines Containers zu, indem Sie die [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode aufrufen und die **PR_CREATE_TEMPLATES** ([pidtagcreatetemplates (](pidtagcreatetemplates-canonical-property.md))-Eigenschaft anfordern. 
+Die **IABContainer::CreateEntry-Methode** erstellt einen neuen Eintrag eines bestimmten Typs im angegebenen Container und gibt einen Zeiger auf eine Schnittstellenimplementierung zurück, um weiteren Zugriff auf den Eintrag zu erhalten. Der neue Eintrag wird mithilfe einer Vorlage erstellt, die aus der Liste der verfügbaren Vorlagen ausgewählt wurde, die in der einzigen Tabelle veröffentlicht wurden. Aufrufer greifen auf die #A0 eines Containers zu, indem sie die [IMAPIProp::OpenProperty-Methode](imapiprop-openproperty.md) aufrufen und die **PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) -Eigenschaft anfordern. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Alle Container, die die **IABContainer:: CreateEntry** -Methode unterstützen, müssen geändert werden können. Legen Sie das AB_MODIFIABLE-Flag ihres Containers in seiner **PR_CONTAINER_FLAGS** ([pidtagcontainerflags (](pidtagcontainerflags-canonical-property.md))-Eigenschaft fest, um anzugeben, dass es veränderbar ist. 
+Alle Container, die die **IABContainer::CreateEntry-Methode** unterstützen, müssen veränderbar sein. Legen Sie das AB_MODIFIABLE des Containers in der **PR_CONTAINER_FLAGS** ([PidTagContainerFlags](pidtagcontainerflags-canonical-property.md)) -Eigenschaft fest, um anzugeben, dass es veränderbar ist. 
   
-Sie sollten alle _ulCreateFlags_ -Flags unterstützen. Die Interpretation und Verwendung dieser Flags ist jedoch implementierungsspezifisch, d. h., Sie können bestimmen, welche Semantik von CREATE_CHECK_DUP_LOOSE und CREATE_CHECK_DUP_STRICT im Kontext ihrer Implementierung bedeuten. Wenn Sie nicht oder nicht feststellen können, ob ein Eintrag ein Duplikat ist, dürfen Sie immer den Eintrag erstellen. 
+Sie sollten alle  _ulCreateFlags-Flags_ unterstützen. Die Interpretation und Verwendung dieser Flags ist jedoch implementierungsspezifisch, d. h. Sie können bestimmen, was die Semantik von CREATE_CHECK_DUP_LOOSE und CREATE_CHECK_DUP_STRICT im Kontext Ihrer Implementierung bedeutet. Wenn Sie nicht ermitteln können oder nicht, ob es sich bei einem Eintrag um ein Duplikat handelt, lassen Sie immer zu, dass der Eintrag erstellt wird. 
   
-Einige Anbieter implementieren strenge Eingabeprüfungen, indem Sie den Anzeigenamen, die Messaging Adresse und den Suchschlüssel in einem Eintrag vergleichen. andere Anbieter begrenzen die Übereinstimmung auf Anzeigename und-Adresse. Die Überprüfung des losen Eintrags wird häufig durch Überprüfen des Anzeigenamens implementiert. 
+Einige Anbieter implementieren eine strenge Eintragsprüfung, indem sie den Anzeigenamen, die Messagingadresse und den Suchschlüssel in einem Eintrag abgleichen. Andere Anbieter beschränken die Übereinstimmung auf den Anzeigenamen und die Adresse. Die Überprüfung der losen Eingabe wird häufig implementiert, indem nur der Anzeigename überprüft wird. 
   
-## <a name="notes-to-host-address-book-provider-implementers"></a>Hinweise für Host-Adressbuchanbieter-Implementierer
+## <a name="notes-to-host-address-book-provider-implementers"></a>Hinweise zum Hosten von Adressbuchanbieter-Implementierern
 
-Wenn Ihr Container Einträge aus den Vorlagen anderer Anbieter erstellen kann, sollte Ihre Implementierung von **CreateEntry** Speicher für einige oder alle Eigenschaften bereitstellen, die den erstellten Einträgen zugeordnet sind. Wenn Sie beispielsweise Speicher für die **PR_DETAILS_TABLE** ([pidtagdetailstable (](pidtagdetailstable-canonical-property.md))-Eigenschaft eines Eintrags bereitstellen, können Sie das Dialogfeld Details generieren, ohne vom fremden Anbieter abhängig zu sein. 
+Wenn Ihr Container Einträge aus den Vorlagen anderer Anbieter erstellen kann, sollte Ihre Implementierung von **CreateEntry** Speicher für einige oder alle Eigenschaften bereitstellen, die den erstellten Einträgen zugeordnet sind. Wenn Sie beispielsweise Speicher für die **PR_DETAILS_TABLE** ([PidTagDetailsTable](pidtagdetailstable-canonical-property.md))-Eigenschaft eines Eintrags bereitstellen, können Sie das Dialogfeld Details generieren, ohne vom fremden Anbieter abhängig zu sein. 
   
-Wenn der Container Einträge erstellen kann, die die **PR_TEMPLATEID** ([pidtagtemplateid (](pidtagtemplateid-canonical-property.md))-Eigenschaft unterstützen, **** muss die Implementierung von CreateEntry wie folgt vorgehen: 
+Wenn Ihr Container Einträge erstellen **kann,** die die PR_TEMPLATEID ([PidTagTemplateid](pidtagtemplateid-canonical-property.md)) -Eigenschaft unterstützen, muss Ihre Implementierung von **CreateEntry** die folgenden Schritte tun: 
   
-1. Rufen Sie die [IMAPISupport::](imapisupport-opentemplateid.md) opentemplatecode-Methode auf. **** Opentemplateable aktiviert den Code des fremden Anbieters für den Eintrag, um eine Bindung an den neuen Eintrag zu erstellen, der erstellt wird. Ausländische Anbieter unterstützen diesen Bindungsprozess, um die Kontrolle über Einträge, die aus ihren Vorlagen erstellt wurden, in die Container von Host Adressbuch Anbietern zu erhalten. 
+1. Rufen Sie [die IMAPISupport::OpenTemplateID-Methode](imapisupport-opentemplateid.md) auf. **Mit OpenTemplateID** kann der Code des fremden Anbieters für den Eintrag an den zu erstellenden neuen Eintrag gebunden werden. Fremde Anbieter unterstützen diesen Bindungsprozess, um die Kontrolle über Einträge zu behalten, die aus ihren Vorlagen in den Containern von Host-Adressbuchanbietern erstellt wurden. 
     
-2. Führen Sie alle erforderlichen Initialisierungen aus, und füllen Sie das neue Objekt mit allen Eigenschaften aus dem Eintrag im fremden Anbieter, den das Objekt im _lppMAPIPropNew_ -Parameter **** von opentemplatecollection zurückgibt.
+2. Führen Sie alle erforderlichen Initialisierungen durch, und füllen Sie das neue Objekt mit allen Eigenschaften aus dem Eintrag im fremden Anbieter auf, den das Objekt im  _lppMAPIPropNew-Parameter_ von **OpenTemplateID** zurückgegeben hat.
     
-Wenn **** opentemplatename erfolgreich ist, kopieren Sie die Eigenschaften in die Implementierung, auf die durch den _lppMAPIPropNew_ -Parameter verwiesen wird, statt direkt auf die Implementierung, auf die durch den _lpMAPIPropData_ -Parameter verwiesen wird. Initialisieren Sie den neuen Eintrag für die Offlineverwendung wie jeder andere Eintrag eines fremden Anbieters. 
+Wenn **OpenTemplateID** erfolgreich ist, kopieren Sie die Eigenschaften in die Implementierung, auf die der  _lppMAPIPropNew-Parameter_ verweist, anstatt direkt auf die Implementierung zu verweist, auf die der  _lpMAPIPropData-Parameter_ verweist. Initialisieren Sie den neuen Eintrag für die Offlineverwendung, wie bei jedem anderen Eintrag von einem fremden Anbieter. 
   
-Wenn **** opentemplatecollection einen Fehler zurückgibt, sollte CreateEntry fehlschlagen. **** Lassen Sie den Eintrag nicht erstellen. Da der fremde Anbieter Annahmen über die Daten in Ihrem Anbieter treffen kann, erstellen Sie keinen Eintrag mit einem Vorlagenbezeichner, der nicht erfolgreich an den fremden Anbieter gebunden wurde. 
+Wenn **OpenTemplateID** einen Fehler zurückgibt, **sollte CreateEntry** fehlschlagen. Lassen Sie das Erstellen des Eintrags nicht zu. Da der fremde Anbieter Annahmen zu den Daten in Ihrem Anbieter treffen kann, erstellen Sie keinen Eintrag mit einem Vorlagenbezeichner, der nicht erfolgreich an den fremden Anbieter gebunden wurde. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Wenn **CreateEntry** zurückgegeben wird, können Sie möglicherweise nicht sofort auf die Eintrags-ID für den neuen Eintrag zugreifen. Einige Adressbuchanbieter stellen Sie erst dann zur Verfügung, wenn Sie die [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) -Methode des neuen Eintrags aufgerufen haben. 
+Wenn **CreateEntry zurückgegeben** wird, können Sie möglicherweise nicht sofort auf die Eintrags-ID für den neuen Eintrag zugreifen. Einige Adressbuchanbieter stellen sie erst zur Verfügung, nachdem Sie die [IMAPIProp::SaveChanges-Methode des](imapiprop-savechanges.md) neuen Eintrags aufgerufen haben. 
   
-Obwohl doppelt überprüfende Kennzeichnungen als Parameter **** an CreateEntry übergeben werden, tritt der Vorgang der doppelten Überprüfung erst auf, wenn **SaveChanges** aufgerufen wird. Daher werden verwandte Fehler wie MAPI_E_COLLISION, die darauf hindeuten, dass ein Versuch unternommen wurde, einen bereits vorhandenen Eintrag zu erstellen, **** von SaveChanges anstelle von CreateEntry zurückgegeben. ****
+Obwohl doppelte Überprüfungskennzeichen als Parameter an **CreateEntry** übergeben werden, tritt der Doppelte Überprüfungsvorgang erst auf, wenn **SaveChanges** aufgerufen wird. Daher werden verwandte Fehler wie MAPI_E_COLLISION, die angeben, dass versucht wurde, einen bereits vorhandenen Eintrag zu erstellen, von **SaveChanges** anstelle von **CreateEntry zurückgegeben.**
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -114,7 +114,7 @@ Obwohl doppelt überprüfende Kennzeichnungen als Parameter **** an CreateEntry 
   
 [IMAPIProp::SaveChanges](imapiprop-savechanges.md)
   
-[Kanonische Pidtagcreatetemplates (-Eigenschaft](pidtagcreatetemplates-canonical-property.md)
+[PidTagCreateTemplates (kanonische Eigenschaft)](pidtagcreatetemplates-canonical-property.md)
   
 [IABContainer : IMAPIContainer](iabcontainerimapicontainer.md)
 

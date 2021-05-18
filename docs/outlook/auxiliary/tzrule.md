@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 75ed353c-7d3e-e148-4057-715e82a0f32c
-description: Gibt Informationen zu einer Zeitzone an, in der die Sommerzeit beginnt, und das Jahr, in dem diese zeitzonenregel erstmals wirksam wird.
+description: Gibt Informationen für eine Zeitzonenregel zum Start der Sommerzeit und zum Jahr an, in dem diese Zeitzonenregel erstmals wirksam wird.
 ms.openlocfilehash: 71ede7c0061a058c2dd85c7b9b36c42583a6bb84
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.locfileid: "32328616"
 ---
 # <a name="tzrule"></a>TZRULE
 
-Gibt Informationen zu einer Zeitzone an, in der die Sommerzeit beginnt, und das Jahr, in dem diese zeitzonenregel erstmals wirksam wird. 
+Gibt Informationen für eine Zeitzonenregel zum Start der Sommerzeit und zum Jahr an, in dem diese Zeitzonenregel erstmals wirksam wird. 
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -32,23 +32,23 @@ typedef struct {
 
 _wFlags_
   
-> Die für dieses Element festgelegten Flags identifizieren bestimmte Details für diese zeitzonenregel. Folgende Flags sind möglich:
+> Die für dieses Mitglied festgelegten Kennzeichen identifizieren bestimmte Details für diese Zeitzonenregel. Die folgenden Flags sind möglich:
     
-   - **TZRULE_FLAG_EFFECTIVE_TZREG** – gibt die Regel als diejenige an, die derzeit verwendet werden soll. Es kann nur eine Regel als effektive Regel gekennzeichnet werden. Alle anderen Regeln dienen nur zu Vergleichszwecken. 
+   - **TZRULE_FLAG_EFFECTIVE_TZREG** – Identifiziert die Regel als die Regel, die derzeit verwendet werden soll. Es kann nur eine Regel als effektive Regel markiert werden. Alle anderen Regeln dienen nur zu Vergleichszwecken. 
     
-   - **TZRULE_FLAG_RECUR_CURRENT_TZREG** – identifiziert die Regel in Besprechungsserien als Übereinstimmung mit der Regel in [pidlidtimezonestruct (](https://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx). Dies kann verwendet werden, um zu erkennen, ob **pidlidtimezonestruct (** von einem Legacyclient erheblich geändert wurde, was sonst die neue, vollständigere Eigenschaft nicht bemerkt. 
+   - **TZRULE_FLAG_RECUR_CURRENT_TZREG** – Identifiziert bei besprechungsserien die Regel als übereinstimmung mit der Regel in [PidLidTimeZoneStruct](https://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx). Dies kann verwendet werden, um zu ermitteln, ob **PidLidTimeZoneStruct** von einem Legacyclient erheblich geändert wurde, der andernfalls die neue, vollständigere Eigenschaft nicht kennen würde. 
     
 _stStart_
   
-> Die Uhrzeit in koordinierter weltZeit (UTC), zu der die zeitzonenregel gestartet wurde.
+> Die Uhrzeit in koordinierter Weltzeit (Coordinated Universal Time, UTC), zu der die Zeitzonenregel gestartet wurde.
     
 _TZReg_
   
-> Die Zeitzoneninformationen für die zeitzonenregel.
+> Die Zeitzoneninformationen für die Zeitzonenregel.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Diese Struktur erweitert [TZREG](tzreg.md) , indem zusätzliche Informationen bereitgestellt werden, die angeben, wann Zeitzonenregeln wirksam werden. 
+Diese Struktur erweitert [TZREG](tzreg.md) durch zusätzliche Informationen, die angeben, wann Zeitzonenregeln wirksam werden. 
   
 ## <a name="see-also"></a>Siehe auch
 

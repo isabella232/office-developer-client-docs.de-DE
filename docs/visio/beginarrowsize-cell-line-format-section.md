@@ -20,31 +20,31 @@ ms.locfileid: "33412282"
 
 Bestimmt die Pfeilspitzengröße am Linienanfang.
   
-|**Wert**|**Size**|**Automatisierungskonstante**|
+|**Wert**|**Größe**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
 | 0  <br/> | Sehr klein  <br/> |**visArrowSizeVerySmall** <br/> |
 | 1  <br/> | Small  <br/> |**visArrowSizeSmall** <br/> |
 | 2  <br/> | Mittel  <br/> |**visArrowSizeMedium** <br/> |
 | 3  <br/> | Large  <br/> |**visArrowSizeLarge** <br/> |
-| 4  <br/> | Sehr groß  <br/> |**visArrowSizeVeryLarge** <br/> |
-| 5  <br/> | Jumbo  <br/> |**visArrowSizeJumbo** <br/> |
-| 6  <br/> | Kolossalen  <br/> |**visArrowSizeColossal** <br/> |
+| 4   <br/> | Sehr groß  <br/> |**visArrowSizeVeryLarge** <br/> |
+| 5   <br/> | Jumbo  <br/> |**visArrowSizeJumbo** <br/> |
+| 6   <br/> | Colossal  <br/> |**visArrowSizeColossal** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Sie können die Pfeilspitzengröße auch im Dialogfeld **Linie** festlegen. 
   
-Wenn Sie einen Verweis auf die Zelle "beginArrowSe" aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle BeginArrowSize anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Zelle BeginArrowSize  <br/> |
+| Zellenname:  <br/> | BeginArrowSize  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle beginArrowS nach Index aus einem Programm abrufen möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die BeginArrowSize-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowLine** <br/> |
 | Zellenindex:  <br/> |**visLineBeginArrowSize** <br/> |
    

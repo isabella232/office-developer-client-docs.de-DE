@@ -20,7 +20,7 @@ ms.locfileid: "33413318"
 
 Stellt den Wert der Zeichnungseinheit im aktuellen Zeichnungsmaßstab dar. Der Zeichnungsmaßstab für die Seite ist das Verhältnis der in der Zelle PageScale angezeigten Seiteneinheit zur in der Zelle DrawingScale angezeigten Zeichnungseinheit.
   
-Sie können die Zelle DrawingScale festlegen, um die Einheiten der Lineale einer Seite aus einem Programm zu ändern. Hier ist ein Beispiel für das Ändern der Maßeinheiten von Zoll in Zentimeter aus einem Programm. In diesem Fall wird die **ConvertResult** -Methode verwendet, um den Abstand gleich zu halten, aber in verschiedenen Einheiten auszudrücken. 
+Sie können die Zelle DrawingScale so festlegen, dass die Einheiten der Lineale einer Seite aus einem Programm geändert werden. Hier ist ein Beispiel für das Ändern der Maßeinheiten von Zoll in Zentimeter aus einem Programm. In diesem Fall verwenden wir die **ConvertResult-Methode,** um den Abstand gleich zu halten, aber in verschiedenen Einheiten ausdrücken. 
   
 ```vb
 Public Sub SetActivePageMeasurementToCM() 
@@ -32,14 +32,14 @@ Set dsCell = ActivePage.PageSheet.Cells("DrawingScale")
 End Sub 
 ```
 
-Sie können das Messsystem in einer Zeichnung bestimmen, indem Sie die **Units** -Eigenschaft der DrawingScale-Zelle untersuchen. Nach dem Ausführen des obigen Makros gibt die folgende Anweisung, die im Direktfenster des Visual Basic-Editors ausgeführt wird, *true* zurück. 
+Sie können das Maßsystem in einer Zeichnung bestimmen, indem Sie die **Units-Eigenschaft** der DrawingScale-Zelle untersuchen. Nach dem Ausführen des obigen Makros gibt die folgende Anweisung, die im Fenster Visual Basic Editor Direkt ausgeführt wird, *True zurück.* 
   
 ```vb
 debug.print ActivePage.PageSheet.Cells("DrawingScale").Units = _ 
  visCentimeters 
 ```
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Diese Zelle entspricht den Einstellungen im Dialogfeld **Seite einrichten** (klicken Sie auf der Registerkarte **Start** auf den Pfeil neben **Seite einrichten**). 
   
@@ -49,17 +49,17 @@ Die Einheiten der Formel in der Zelle DrawingScale bestimmen die Maßeinheiten f
     
 - Ändern Sie den in der Zelle PageScale aufgeführten Abstand um denselben Faktor, den Sie zum Ändern von DrawingScale verwenden.
     
-Wenn Sie einen Verweis auf die Zelle DrawingScale aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die DrawingScale-Zelle anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |DrawingScale  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle DrawingScale aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die DrawingScale-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowPage** <br/> |
 |Zellenindex:  <br/> |**visPageDrawingScale** <br/> |
    

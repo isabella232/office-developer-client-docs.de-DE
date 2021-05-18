@@ -25,12 +25,12 @@ ms.locfileid: "33413339"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl der Bytes, die für eine neue [SPropProblemArray](spropproblemarray.md) -Struktur reserviert werden sollen, die eine bestimmte Anzahl von [SPropProblem](spropproblem.md) -Strukturen enthält. 
+Berechnet die Anzahl der Bytes, die einer neuen [SPropProblemArray-Struktur](spropproblemarray.md) zugeordnet werden sollen, die eine angegebene Anzahl von [SPropProblem-Strukturen](spropproblem.md) enthält. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |**SPropProblemArray** <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |**SPropProblemArray** <br/> |
    
 ```cpp
 CbNewSPropProblemArray (_cprob)
@@ -38,9 +38,9 @@ CbNewSPropProblemArray (_cprob)
 
 ## <a name="parameters"></a>Parameter
 
- __cprob_
+ _ _cprob_
   
-> Die Anzahl der **SPropProblem** -Strukturen, die in die neue **SPropProblemArray** -Struktur eingeschlossen werden sollen. 
+> Anzahl der **SPropProblem-Strukturen,** die in die neue **SPropProblemArray-Struktur eingeschlossen werden** sollen. 
     
 ## <a name="see-also"></a>Siehe auch
 

@@ -20,8 +20,8 @@ ms.locfileid: "33411715"
 
 Enthält die Breite und Höhe eines Objekts aus einem anderen Programm, das in einer Microsoft Visio-Zeichnung verwendet wird. Dieser Abschnitt wird nur im ShapeSheet-Fenster für solche Objekte angezeigt. Hier ist auch der Abstand zwischen den Rahmen des Objekts und dem eigentlichen Bild angegeben.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-In früheren Versionen von Visio-Produkten als Version 2000 wurde dieser Abschnitt als **Image Info**bezeichnet.
+In Versionen von Visio vor Version 2000 hieß dieser Abschnitt **Image Info**.
   
 

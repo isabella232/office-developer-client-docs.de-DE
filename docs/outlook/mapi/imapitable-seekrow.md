@@ -39,69 +39,69 @@ LONG FAR * lplRowsSought
 
  _bkOrigin_
   
-> in Die Textmarke, die die Anfangsposition für den Seek-Vorgang identifiziert. Eine Textmarke kann mit der [IMAPITable:: CreateBookMark](imapitable-createbookmark.md) -Methode oder einem der folgenden vordefinierten Werte erstellt werden. 
+> [in] Die Textmarke, die die Startposition für den Suchvorgang identifiziert. Eine Textmarke kann mit der [IMAPITable::CreateBookmark-Methode](imapitable-createbookmark.md) erstellt werden, oder einer der folgenden vordefinierten Werte kann übergeben werden. 
     
 BOOKMARK_BEGINNING 
   
-> Startet den Seek-Vorgang vom Anfang der Tabelle aus. 
+> Startet den Suchvorgang am Anfang der Tabelle. 
     
 BOOKMARK_CURRENT 
   
-> Startet den Seek-Vorgang von der Zeile in der Tabelle, in der sich der Cursor befindet. 
+> Startet den Suchvorgang aus der Zeile in der Tabelle, in der sich der Cursor befindet. 
     
 BOOKMARK_END 
   
-> Startet den Seek-Vorgang am Ende der Tabelle. 
+> Startet den Suchvorgang am Ende der Tabelle. 
     
  _lRowCount_
   
-> in Die signierte Anzahl der zu verschiebende Zeilen, beginnend mit der durch den _bkOrigin_ -Parameter angegebenen Textmarke. 
+> [in] Die signierte Anzahl der zu verschiebende Zeilen, beginnend mit der textmarke, die durch den  _bkOrigin-Parameter identifiziert_ wird. 
     
  _lplRowsSought_
   
-> Out Wenn _lRowCount_ ein gültiger Zeiger auf der Eingabe ist, zeigt _lplRowsSought_ auf die Anzahl der Zeilen, die in der Seek-Operation verarbeitet wurden, deren Vorzeichen die Richtung der Suche angibt, vorwärts oder rückwärts. Wenn _lRowCount_ negativ ist, ist _lplRowsSought_ negativ. 
+> [out] Wenn  _lRowCount_ ein gültiger Zeiger für die Eingabe ist, zeigt  _lplRowsSought_ auf die Anzahl der Zeilen, die im Suchvorgang verarbeitet wurden, deren Vorzeichen die Richtung der Suche angibt, vorwärts oder rückwärts. Wenn  _lRowCount_ negativ ist, ist  _lplRowsSought_ negativ. 
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Seek-Vorgang war erfolgreich.
+> Der Suchvorgang war erfolgreich.
     
 MAPI_E_BUSY 
   
-> Ein weiterer Vorgang wird ausgeführt, der verhindert, dass der Zeilen Suchvorgang gestartet wird. Entweder sollte der ausgeführte Vorgang abgeschlossen oder beendet werden.
+> Ein weiterer Vorgang wird ausgeführt, der verhindert, dass der Zeilensuchenvorgang gestartet wird. Der ausgeführte Vorgang sollte entweder abgeschlossen oder beendet werden.
     
 MAPI_E_INVALID_BOOKMARK 
   
-> Die im _bkOrigin_ -Parameter angegebene Textmarke ist ungültig, da Sie entfernt wurde oder über die letzte angeforderte Zeile hinausgeht. 
+> Die im  _bkOrigin-Parameter_ angegebene Textmarke ist ungültig, weil sie entfernt wurde oder weil sie über die letzte angeforderte Zeile hinaus liegt. 
     
 MAPI_W_POSITION_CHANGED 
   
-> Der Aufruf wurde erfolgreich ausgeführt, aber die im _bkOrigin_ -Parameter angegebene Textmarke wird nicht mehr in derselben Zeile festgelegt wie bei der letzten Verwendung. Wenn die Textmarke nicht verwendet wurde, befindet Sie sich nicht mehr in der gleichen Position wie bei ihrer Erstellung. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich behandelt werden. Verwenden Sie zum Testen dieser Warnung das **HR_FAILED** -Makro. Weitere Informationen finden Sie unter [Verwenden von Makros zur Fehlerbehandlung](using-macros-for-error-handling.md).
+> Der Aufruf ist erfolgreich, aber die im  _bkOrigin-Parameter_ angegebene Textmarke wird nicht mehr in derselben Zeile wie bei der letzten Verwendung festgelegt. Wenn die Textmarke nicht verwendet wurde, befindet sie sich nicht mehr an derselben Position wie beim Erstellen. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich behandelt werden. Verwenden Sie zum Testen dieser Warnung das **HR_FAILED** Makro. Weitere Informationen finden Sie unter [Using Macros for Error Handling](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPITable:: SeekRow** -Methode richtet eine neue BOOKMARK_CURRENT-Position für den Cursor ein. Der Parameter _lRowCount_ gibt die Anzahl der Zeilen an, die der Cursor verschiebt, und die Bewegungsrichtung. 
+Die **IMAPITable::SeekRow-Methode** richtet eine neue BOOKMARK_CURRENT position für den Cursor ein. Der  _lRowCount-Parameter_ gibt die Anzahl der Zeilen an, die der Cursor bewegt, und die Bewegungsrichtung. 
   
-Wenn sich die resultierende Position jenseits der letzten Zeile der Tabelle befindet, wird der Cursor nach der letzten Zeile positioniert. Wenn sich die resultierende Position vor der ersten Zeile der Tabelle befindet, wird der Cursor am Anfang der ersten Zeile positioniert. 
+Wenn die resultierende Position über der letzten Zeile der Tabelle liegt, wird der Cursor hinter der letzten Zeile positioniert. Wenn sich die resultierende Position vor der ersten Zeile der Tabelle befindet, wird der Cursor am Anfang der ersten Zeile positioniert. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Wenn die Zeile, auf die durch _bkOrigin_ verwiesen wird, in der Tabelle nicht mehr vorhanden ist und Sie keine neue Position für die Textmarke festlegen können, geben Sie MAPI_E_INVALID_BOOKMARK zurück. Wenn die Zeile, auf die durch _bkOrigin_ verwiesen wird, nicht mehr vorhanden ist und Sie eine neue Position für die Textmarke festlegen können, geben Sie MAPI_W_POSITION_CHANGED zurück. 
+Wenn die zeile, auf die  _von bkOrigin_ verwiesen wird, nicht mehr in der Tabelle vorhanden ist und Sie keine neue Position für die Textmarke einrichten können, geben Sie MAPI_E_INVALID_BOOKMARK. Wenn die Zeile, auf die  _von bkOrigin_ verwiesen wird, nicht mehr vorhanden ist und Sie eine neue Position für die Textmarke einrichten können, geben Sie MAPI_W_POSITION_CHANGED. 
   
-Eine Textmarke, die auf eine Zeile zeigt, die aus der Tabellenansicht ausgeblendet ist, kann weiterhin verwendet werden. Wenn der Aufrufer versucht, den Cursor auf eine solche Textmarke zu verschieben, bewegen Sie den Cursor zur nächsten sichtbaren Zeile, und geben Sie MAPI_W_POSITION_CHANGED. 
+Eine Textmarke, die auf eine Zeile zeigt, die aus der Tabellenansicht reduziert ist, kann weiterhin verwendet werden. Wenn der Aufrufer versucht, den Cursor zu einer solchen Textmarke zu verschieben, verschieben Sie den Cursor zur nächsten sichtbaren Zeile, und geben Sie MAPI_W_POSITION_CHANGED. 
   
-Sie können Lesezeichen für Positionen verschieben, die aus der Ansicht ausgeblendet wurden, entweder zum Zeitpunkt der Verwendung oder zum Zeitpunkt, zu dem die Zeile reduziert wird. Wenn eine Textmarke zu dem Zeitpunkt verschoben wird, zu dem die Zeile reduziert wird, behalten Sie ein Bit in der Textmarke, die angibt, ob die Textmarke seit der letzten Verwendung verschoben wurde, oder, falls Sie noch nie verwendet wurde, seit ihrer Erstellung.
+Sie können Lesezeichen für Positionen verschieben, die zum Zeitpunkt der Verwendung oder zum Zeitpunkt des Reduzierens der Zeile aus der Ansicht reduziert wurden. Wenn eine Textmarke zu dem Zeitpunkt verschoben wird, zu dem die Zeile reduziert wird, behalten Sie ein Bit in der Textmarke bei, das angibt, ob die Textmarke seit der letzten Verwendung verschoben wurde oder, falls sie nie verwendet wurde, seit ihrer Erstellung.
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Um eine Rückwärtsbewegung für **SeekRow**anzugeben, geben Sie einen negativen Wert in _lRowCount_an. Um am Anfang der Tabelle zu suchen, überschreiten Sie NULL in _lRowCount_ und den Wert BOOKMARK_BEGINNING in _bkOrigin_. 
+Um eine Rückwärtsbewegung für **SeekRow** anzugeben, übergeben Sie einen negativen Wert in  _lRowCount_. Um an den Anfang der Tabelle zu suchen, übergeben Sie null in  _lRowCount_ und den Wert BOOKMARK_BEGINNING in  _bkOrigin_. 
   
-Wenn in der Tabelle viele Zeilen vorhanden sind, kann der **SeekRow** -Vorgang langsam sein. Die Leistung kann auch beeinträchtigt werden, wenn eine Zeilenanzahl im Inhalt des _lplRowsSought_ -Parameters zurückgegeben werden muss. 
+Wenn die Tabelle viele Zeilen enthält, kann **der SeekRow-Vorgang** langsam sein. Die Leistung kann auch beeinträchtigt werden, wenn eine Zeilenanzahl im Inhalt des  _lplRowsSought-Parameters zurückgegeben werden_ muss. 
   
- **SeekRow** gibt die Anzahl der Zeilen zurück, die tatsächlich durchsucht wurden, positiv oder negativ in der Variablen, auf die durch _lRowCount_verwiesen wird. Im gewöhnlichen Vorgang sollte es den gleichen Wert für _lplRowsSought_ zurückgeben, wie er für _lRowCount_übergeben wird, es sei denn, die Suche hat den Anfang oder das Ende der Tabelle erreicht. 
+ **SeekRow** gibt die Anzahl der Zeilen zurück, die tatsächlich in der variablen, auf die von  _lRowCount_ verwiesen wird, positiv oder negativ durchsucht wurden. Im normalen Vorgang sollte derselbe Wert für  _lplRowsSought_ wie für  _lRowCount_ übergeben werden, es sei denn, die Suche hat den Anfang oder das Ende der Tabelle erreicht. 
   
-Legen Sie _lRowCount_ nicht auf eine Zahl größer als 50. Verwenden Sie die [IMAPITable:: SeekRowApprox](imapitable-seekrowapprox.md) -Methode, um eine größere Anzahl von Zeilen zu suchen. 
+Legen Sie  _lRowCount nicht_ auf eine Zahl größer als 50. Verwenden Sie zum Durchsuchen einer größeren Anzahl von Zeilen die [IMAPITable::SeekRowApprox-Methode.](imapitable-seekrowapprox.md) 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -109,7 +109,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIProcessor. cpp  <br/> |CMAPIProcessor::P rocessMailboxTable  <br/> |MFCMAPI verwendet die **IMAPITable:: SeekRow** -Methode, um den Anfang der Tabelle vor der Verarbeitung zu suchen.  <br/> |
+|MAPIProcessor.cpp  <br/> |CMAPIProcessor::P rocessMailboxTable  <br/> |MFCMAPI verwendet die **IMAPITable::SeekRow-Methode,** um den Anfang der Tabelle vor der Verarbeitung zu finden.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

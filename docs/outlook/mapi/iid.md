@@ -25,7 +25,7 @@ ms.locfileid: "33411596"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt eine [GUID](guid.md) -Struktur, die zur Beschreibung eines Bezeichners für eine MAPI-Schnittstelle verwendet wird. 
+Beschreibt eine [GUID-Struktur,](guid.md) die zum Beschreiben eines Bezeichners für eine MAPI-Schnittstelle verwendet wird. 
   
 ```cpp
 typedef struct _GUID
@@ -38,15 +38,15 @@ typedef struct _GUID
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
-Siehe die **GUID** -Struktur. 
+Weitere Informationen finden Sie **in der GUID-Struktur.** 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Eine **IID** -Struktur wird verwendet, um eine MAPI-Schnittstelle eindeutig zu identifizieren und eine bestimmte Schnittstelle einem Objekt zuzuordnen. Wenn ein Client beispielsweise [IMAPISession:: OpenEntry](imapisession-openentry.md) zum Öffnen eines Ordners aufruft, wird der _lpInterface_ -Parameter so festgelegt, dass er auf eine **IID** zeigt, die die [IMAPIFolder](imapifolderimapicontainer.md) -Schnittstelle darstellt. MAPI definiert die **IMAPIFolderIID** als IID_IMAPIFolder. **IID** -Strukturen werden auch verwendet, um OLE-Schnittstellen eindeutig zu identifizieren. 
+Eine **IID-Struktur** wird verwendet, um eine MAPI-Schnittstelle eindeutig zu identifizieren und eine bestimmte Schnittstelle einem Objekt zuzuordnen. Wenn ein Client beispielsweise [IMAPISession::OpenEntry](imapisession-openentry.md) aufruft, um einen Ordner zu öffnen, legt der Client den  _lpInterface-Parameter_ so fest, dass er auf eine **IID** zeigt, die die [IMAPIFolder-Schnittstelle](imapifolderimapicontainer.md) darstellt. MAPI definiert die **IMAPIFolderIID,** die IID_IMAPIFolder. **IID-Strukturen** werden auch verwendet, um OLE-Schnittstellen eindeutig zu identifizieren. 
   
-Alle spezifischen **IID** -Strukturen für die MAPI-Schnittstellen sind in der Headerdatei Mapiguid. h definiert. 
+Alle spezifischen **IID-Strukturen** für die MAPI-Schnittstellen sind in der Mapiguid.h-Headerdatei definiert. 
   
 ## <a name="see-also"></a>Siehe auch
 

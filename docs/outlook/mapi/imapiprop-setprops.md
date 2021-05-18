@@ -39,15 +39,15 @@ HRESULT SetProps(
 
  _cValues_
   
-> in Die Anzahl der Eigenschaftswerte, auf die durch den _lpPropArray_ -Parameter verwiesen wird. Der _cValues_ -Parameter darf nicht 0 sein. 
+> [in] Die Anzahl der Eigenschaftswerte, auf die der  _lpPropArray-Parameter_ verweist. Der  _cValues-Parameter_ darf nicht 0 sein. 
     
  _lpPropArray_
   
-> in Ein Zeiger auf ein Array von [SPropValue](spropvalue.md) -Strukturen, die Eigenschaftswerte enthalten, die aktualisiert werden sollen. 
+> [in] Ein Zeiger auf ein Array von [SPropValue-Strukturen,](spropvalue.md) die Eigenschaftswerte enthalten, die aktualisiert werden sollen. 
     
  _lppProblems_
   
-> [in, out] Bei der Eingabe ein Zeiger auf einen Zeiger auf eine [SPropProblemArray](spropproblemarray.md) -Struktur; andernfalls NULL, was bedeutet, dass keine Fehlerinformationen erforderlich sind. Wenn _lppProblems_ ein gültiger Zeiger auf der Eingabe ist **** , gibt SetProps detaillierte Informationen zu Fehlern beim Aktualisieren einer oder mehrerer Eigenschaften zurück. 
+> [in, out] Bei der Eingabe ein Zeiger auf einen Zeiger auf eine [SPropProblemArray-Struktur;](spropproblemarray.md) andernfalls NULL, was angibt, dass keine Fehlerinformationen benötigt werden. Wenn  _lppProblems ein_ gültiger Zeiger auf Eingaben ist, gibt **SetProps** detaillierte Informationen zu Fehlern beim Aktualisieren einer oder mehreren Eigenschaften zurück. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -55,15 +55,15 @@ S_OK
   
 > Die Eigenschaften wurden erfolgreich aktualisiert.
     
-Die folgenden Werte können in der **SPropProblemArray** -Struktur zurückgegeben werden, jedoch nicht als Rückgabewerte für SetProps: ****
+Die folgenden Werte können in der **SPropProblemArray-Struktur** zurückgegeben werden, jedoch nicht als Rückgabewerte für **SetProps:**
   
 MAPI_E_BAD_CHARWIDTH 
   
-> Entweder wurde das MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt Unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
+> Entweder wurde MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
     
 MAPI_E_COMPUTED 
   
-> Die Eigenschaft kann nicht aktualisiert werden, da sie schreibgeschützt ist und vom Dienstanbieter berechnet wird, der für das Objekt verantwortlich ist.
+> Die Eigenschaft kann nicht aktualisiert werden, da sie schreibgeschützt ist und vom Dienstanbieter berechnet wird, der für das Objekt zuständig ist.
     
 MAPI_E_INVALID_TYPE 
   
@@ -71,37 +71,37 @@ MAPI_E_INVALID_TYPE
     
 MAPI_E_NO_ACCESS 
   
-> Es wurde versucht, ein schreibgeschütztes Objekt zu ändern oder auf ein Objekt zuzugreifen, für das der Benutzer nicht über ausreichende Berechtigungen verfügt.
+> Es wurde versucht, ein schreibgeschütztes Objekt zu ändern oder auf ein Objekt zu zugreifen, für das der Benutzer nicht über ausreichende Berechtigungen verfügt.
     
 MAPI_E_NOT_ENOUGH_MEMORY 
   
-> Die Eigenschaft kann nicht aktualisiert werden, da Sie größer als die RPC-Puffergröße (Remote Procedure Call) ist.
+> Die Eigenschaft kann nicht aktualisiert werden, da sie größer als die Größe des RPC-Puffers (Remote Procedure Call) ist.
     
 MAPI_E_UNEXPECTED_TYPE 
   
-> Der Eigenschaftentyp ist nicht der Typ, der von der aufrufenden Implementierung erwartet wird.
+> Der Eigenschaftstyp ist nicht der Typ, der von der aufrufenden Implementierung erwartet wird.
     
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Ignorieren Sie das **PR_NULL** ([pidtagnull (](pidtagnull-canonical-property.md))-Eigenschaftentag und alle Eigenschaften mit einem Typ von **PT_ERROR**. Nehmen Sie keine Änderungen vor, oder melden Sie Probleme in der **SPropProblemArray** -Struktur. 
+Ignorieren Sie **PR_NULL** ([PidTagNull](pidtagnull-canonical-property.md))-Eigenschaftstag und alle Eigenschaften mit dem Typ **PT_ERROR**. Nehmen Sie keine Änderungen vor oder melden Sie keine Probleme in der **SPropProblemArray-Struktur.** 
   
-Geben Sie MAPI_E_INVALID_PARAMETER zurück, wenn eine Eigenschaft vom Typ **PT_OBJECT** im Eigenschaftswert Array enthalten ist. Geben Sie auch diesen Fehler zurück, wenn eine mehrwertige Eigenschaft im Array enthalten ist und dessen **cValues** -Element auf 0 festgelegt ist. 
+Gibt MAPI_E_INVALID_PARAMETER zurück, wenn eine Eigenschaft vom Typ **PT_OBJECT** im Eigenschaftenwertarray enthalten ist. Geben Sie diesen Fehler auch zurück, wenn eine Eigenschaft mit mehreren Wert im Array enthalten ist und der **cValues-Member** auf 0 festgelegt ist. 
   
-Wenn der Aufruf insgesamt erfolgreich ist, aber Probleme beim Festlegen einiger Eigenschaften auftreten, geben Sie S_OK zurück, und setzen Sie Informationen zu den Problemen in den entsprechenden Eintrag der **SPropProblemArray** -Struktur, auf die der _lppProblems_ -Parameter zeigt. 
+Wenn der Aufruf insgesamt erfolgreich ist, es jedoch Probleme beim Festlegen einiger Eigenschaften gibt, geben Sie S_OK zurück, und geben Sie Informationen zu den Problemen in den entsprechenden Eintrag der **SPropProblemArray-Struktur** ein, auf die der  _lppProblems-Parameter_ verweist. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Je nach Dienstanbieter können Sie möglicherweise auch den Eigenschaftentyp ändern, indem Sie ein Property-Tag übergeben, das einen anderen Typ als der zuvor mit einem angegebenen Eigenschaftenbezeichner verwendete ist.
+Je nach Dienstanbieter können Sie den Eigenschaftentyp auch ändern, indem Sie ein Eigenschaftentag übergeben, das einen anderen Typ enthält als zuvor mit einer bestimmten Eigenschafts-ID verwendet wurde.
   
-Wenn Sie ein Property-Tag für eine Eigenschaft einfügen, die vom Objekt nicht unterstützt wird und die Implementierung **** von SetProps die Erstellung neuer Eigenschaften zulässt, wird die Eigenschaft dem Objekt hinzugefügt. Jeder vorherige Wert, der mit dem Eigenschaftenbezeichner gespeichert wurde, der für die neue Eigenschaft verwendet wurde, wird verworfen. 
+Wenn Sie ein Eigenschaftstag für eine Eigenschaft hinzufügen, die vom Objekt nicht unterstützt wird und die Implementierung von **SetProps** die Erstellung neuer Eigenschaften ermöglicht, wird die Eigenschaft dem Objekt hinzugefügt. Alle vorherigen Werte, die mit dem Eigenschaftenbezeichner gespeichert wurden, der für die neue Eigenschaft verwendet wurde, werden verworfen. 
   
-Beachten Sie, dass der S_OK-Rückgabewert nicht garantiert, dass alle Eigenschaften erfolgreich aktualisiert wurden. Einige Anbieter speichern **** SetProps-Aufrufe, bis Sie einen Aufruf erhalten, der eine Anbieter Intervention erfordert, wie [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) oder [IMAPIProp::](imapiprop-getprops.md)GetProps. Daher ist es möglich, Fehlerwerte zu erhalten, die sich auf **** den SetProps-Aufruf mit den späteren Aufrufen beziehen. 
+Beachten Sie, dass S_OK Rückgabewert nicht garantiert, dass alle Eigenschaften erfolgreich aktualisiert wurden. Einige Anbieter **zwischenspeichern SetProps-Anrufe,** bis sie einen Anruf erhalten, für den ein Anbietereingriff erforderlich ist, z. B. [IMAPIProp::SaveChanges](imapiprop-savechanges.md) oder [IMAPIProp::GetProps](imapiprop-getprops.md). Daher können Fehlerwerte empfangen werden, die sich auf den **SetProps-Aufruf** mit den späteren Aufrufen beziehen. 
   
-Wenn **** SetProps S_OK zurückgibt, überprüfen Sie die **SPropProblemArray** -Struktur, auf die durch _lppProblems_ für Probleme beim Aktualisieren einzelner Eigenschaften verwiesen wird. Wenn **** SetProps einen Fehler zurückgibt, überprüfen Sie nicht das Problem Array der Eigenschaft. Rufen Sie stattdessen die [IMAPIProp:: getlasterroraufzurufen](imapiprop-getlasterror.md) -Methode des Objekts auf. 
+Wenn **SetProps** S_OK, überprüfen Sie die **SPropProblemArray-Struktur,** auf die von  _lppProblems_ verwiesen wird, auf Probleme beim Aktualisieren einzelner Eigenschaften. Wenn **SetProps** einen Fehler zurückgibt, überprüfen Sie das Eigenschaftenproblemarray nicht. Rufen Sie stattdessen die [IMAPIProp::GetLastError-Methode des Objekts](imapiprop-getlasterror.md) auf. 
   
-Beim Aktualisieren von umfangreichen **** Eigenschaften können SetProps fehlschlagen und MAPI_E_NOT_ENOUGH_MEMORY zurückgeben. Es gibt keine maximale Größe für Eigenschaften, und verschiedene Objekte können unterschiedliche Begrenzungen aufweisen. Wenn Sie potenziell große Eigenschaften behandeln, müssen Sie die [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode mit IID_IStream als Schnittstellenbezeichner aufrufen, wenn SetProps diesen Fehlerwert zurückgibt. **** 
+Beim Aktualisieren großer Eigenschaften **kann SetProps** fehler- und MAPI_E_NOT_ENOUGH_MEMORY. Es gibt keine maximale Größe für Eigenschaften, und unterschiedliche Objekte können unterschiedliche Grenzwerte haben. Wenn Sie mit potenziell großen Eigenschaften zu tun haben, können Sie die [IMAPIProp::OpenProperty-Methode](imapiprop-openproperty.md) mit IID_IStream als Schnittstellenbezeichner aufrufen, wenn **SetProps** diesen Fehlerwert zurückgibt. 
   
-Rufen Sie die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion auf, um die **SPropProblemArray** -Struktur freizugeben. 
+Rufen Sie die [MAPIFreeBuffer-Funktion](mapifreebuffer.md) auf, um die **SPropProblemArray-Struktur frei** zu geben. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -109,7 +109,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|Eingeschaften. cpp  <br/> |CPropertyEditor:: WriteSPropValueToObject  <br/> |MFCMAPI verwendet die **IMAPIProp::** SetProps-Methode, um eine Eigenschaft zurück in ein Objekt zu schreiben, nachdem die Eigenschaft bearbeitet wurde.  <br/> |
+|PropertyEditor.cpp  <br/> |CPropertyEditor::WriteSPropValueToObject  <br/> |MFCMAPI verwendet die **IMAPIProp::SetProps-Methode,** um eine Eigenschaft zurück in ein Objekt zu schreiben, nachdem die Eigenschaft bearbeitet wurde.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

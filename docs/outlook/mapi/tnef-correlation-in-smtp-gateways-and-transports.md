@@ -1,5 +1,5 @@
 ---
-title: TNEF-Korrelation in SMTP-Gateways und-Übertragungen
+title: TNEF-Korrelation in SMTP-Gateways und -Transporten
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,16 +15,16 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33413668"
 ---
-# <a name="tnef-correlation-in-smtp-gateways-and-transports"></a>TNEF-Korrelation in SMTP-Gateways und-Übertragungen
+# <a name="tnef-correlation-in-smtp-gateways-and-transports"></a>TNEF-Korrelation in SMTP-Gateways und -Transporten
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gateways und Übertragungen, die eine Verbindung mit internetbasierten Systemen herstellen, die SMTP verwenden, verwenden Sie den Wert des SMTP-Headers MessageID und die **PR_TNEF_CORRELATION_KEY** -Eigenschaft, um die TNEF-Korrelation zu implementieren. 
+Gateways und Transporte, die eine Verbindung mit internetbasierten Systemen herstellen, die SMTP verwenden, verwenden den Wert des MessageID-SMTP-Headers und der PR_TNEF_CORRELATION_KEY-Eigenschaft, um die **TNEF-Korrelation** zu implementieren. 
   
-Der Wert der MessageID-Kopfzeile der ausgehenden Nachricht sollte in die **PR_TNEF_CORRELATION_KEY** ([pidtagtnefcorrelationkey (](pidtagtnefcorrelationkey-canonical-property.md))-Eigenschaft kopiert und im [attMAPIProps](attmapiprops.md) -Attribut des TNEF-Streams codiert werden. Beachten Sie, dass **PR_TNEF_CORRELATION_KEY** eine binäre Eigenschaft ist, während die MessageId eine Zeichenfolge ist; das NULL-Terminator sollte in der Kopie und im Vergleich enthalten sein. 
+Der Wert der MessageID-Kopfzeile der ausgehenden Nachricht sollte in die **eigenschaft PR_TNEF_CORRELATION_KEY** ([PidTagTnefCorrelationKey](pidtagtnefcorrelationkey-canonical-property.md)) kopiert und im [attMAPIProps-Attribut](attmapiprops.md) des TNEF-Datenstroms codiert werden. Beachten **Sie, PR_TNEF_CORRELATION_KEY** eine binäre Eigenschaft ist, während die MessageID eine Zeichenfolge ist. Der Null-Terminator sollte in der Kopie und im Vergleich enthalten sein. 
   
-Diese Technik wird von allen Microsoft-Software verwendet, die MAPI-basierte Messagingsysteme mit dem Internet verbindet, wie beispielsweise Microsoft Exchange Server. Diese Technik sollte von allen SMTP-Gateways und-Übertragungen verwendet werden, die eine Verbindung zu Systemen herstellen, die MAPI-Clients unterstützen, um die Interoperabilität zu maximieren.
+Diese Technik wird von allen Microsoft-Software verwendet, die MAPI-basierte Messagingsysteme mit dem Internet verbindet, z. B. Microsoft Exchange Server. Diese Technik sollte von allen SMTP-Gateways und -Transporten verwendet werden, die verbindungen zu Systemen herstellen, die MAPI-Clients unterstützen, um die Interoperabilität zu maximieren.
   
 

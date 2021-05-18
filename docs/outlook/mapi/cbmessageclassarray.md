@@ -25,12 +25,12 @@ ms.locfileid: "33413122"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl der Bytes in einer vorhandenen [SMessageClassArray](smessageclassarray.md) -Struktur, die eine angegebene Anzahl von Zeichenfolgen Zeigern für Nachrichtenklassen enthält. 
+Berechnet die Anzahl der Bytes in einer vorhandenen [SMessageClassArray-Struktur,](smessageclassarray.md) die eine angegebene Anzahl von Zeichenfolgenzeigern auf Nachrichtenklassen enthält. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |**SMessageClassArray** <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |**SMessageClassArray** <br/> |
    
 ```cpp
 CbMessageClassArray (_c)
@@ -38,9 +38,9 @@ CbMessageClassArray (_c)
 
 ## <a name="parameters"></a>Parameter
 
- __c_
+ _ _c_
   
-> Die Anzahl der Zeiger auf Nachrichtenklassen, die in der vorhandenen **SMessageClassArray**enthalten sind.
+> Anzahl der Zeiger auf Nachrichtenklassen, die in der vorhandenen **SMessageClassArray enthalten sind.**
     
 ## <a name="see-also"></a>Siehe auch
 

@@ -22,22 +22,22 @@ Ersetzt auf der Grundlage der angegebenen Anzahl von Zeichen einen Teil einer Ze
   
 ## <a name="syntax"></a>Syntax
 
-REPLACE (* * *old_text* * *, * * *start_num* * *, * * *num_chars* * *, * * *new_text* * *) 
+REPLACE (** *old_text* **, ** *start_num* **, ** *num_chars* **, ** *new_text* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _old_text_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Text, in dem einige Zeichen ersetzt werden sollen.  <br/> |
-| _start_num_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die Position des Zeichens in _old_text_ , das Sie durch _new_text_ersetzen möchten. Das erste Zeichen in der Zeichenfolge ist Position 1.  <br/> |
-| _num_chars_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die Anzahl der Zeichen in _old_text_ , die Sie ersetzen möchten.  <br/> |
-| _new_text_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Text, der Zeichen in _old_text_ersetzen wird.  <br/> |
+| _start_num_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die Position des Zeichens in _old_text,_ die Sie durch _new_text._ Das erste Zeichen in der Zeichenfolge ist Position 1.  <br/> |
+| _num_chars_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die Anzahl der Zeichen in  _old_text,_ die Sie ersetzen möchten  <br/> |
+| _new_text_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Text, der Zeichen  _in_ old_text.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
 Zeichenfolge
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Verwenden Sie die Funktion REPLACE, wenn Sie Text ersetzen möchten, der an einer bestimmten Stelle in der Zeichenfolge auftritt. Wenn Sie bestimmten Text in einer Zeichenkette ersetzen möchten, verwenden Sie die Funktion SUBSTITUTE.
   

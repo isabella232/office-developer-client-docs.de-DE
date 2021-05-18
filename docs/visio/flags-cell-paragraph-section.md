@@ -25,22 +25,22 @@ Gibt an, ob die Textrichtung von links nach rechts oder von rechts nach links ve
 |0  <br/> |Die Textrichtung verläuft von links nach rechts (Standardwert).  <br/> |
 |1  <br/> |Die Textrichtung verläuft von rechts nach links.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Der Wert in dieser Zelle entspricht der Einstellung **Richtung** auf der Registerkarte **Absatz** im Dialogfeld **Text** (Klicken Sie auf der Registerkarte **Start** auf den Pfeil für die **Schriftart** ), der nur angezeigt wird, wenn eine Sprache, die den Text komplexer Skripts verwendet, im Dialogfeld **Microsoft Office-Spracheinstellungen** hinzugefügt. (Klicken Sie auf **Start**, **Alle Programme**, **Microsoft Office**, Microsoft Office- **Tools**und dann auf **Microsoft Office-Spracheinstellungen**.) 
+Der Wert in dieser  Zelle entspricht  der Einstellung Richtung auf der  Registerkarte Absatz im  Dialogfeld **Text** (klicken Sie auf der Registerkarte Start auf den Pfeil Schriftart), die nur angezeigt wird, wenn eine Sprache, die komplexen Skripts Text verwendet, im Dialogfeld **Microsoft Office Spracheinstellungen** hinzugefügt wurde. (Klicken **Sie auf Start,** **klicken** Sie auf Alle Programme, **Microsoft Office**, klicken Sie **Microsoft Office Tools** und dann auf **Microsoft Office Spracheinstellungen**.) 
   
-Wenn Sie einen Verweis auf die Zelle Flags aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle Flags anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Para. Flags [ *i* ] wobei *i* = <1>, 2, 3...  <br/> |
+|Zellenname:  <br/> |Para.Flags[ *i*  ] where  *i*  = <1>, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Flags aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Flags-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
 |Abschnittsindex:  <br/> |**visSectionParagraph** <br/> |
-|Zeilenindex:  <br/> |**visRowParagraph** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+|Zeilenindex:  <br/> |**visRowParagraph**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
 |Zellenindex:  <br/> |**visFlags** <br/> |
    
 

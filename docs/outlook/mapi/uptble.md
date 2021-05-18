@@ -19,7 +19,7 @@ ms.locfileid: "33413840"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erweiterte Informationen zum Hochladen der Inhalte eines Ordners während des [Upload-Tabellenstatus](upload-table-state.md).
+Erweiterte Informationen zum Hochladen des Inhalts eines Ordners während des [Status der Uploadtabelle](upload-table-state.md).
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -39,27 +39,27 @@ struct UPTBLE
 
  _iEntMod_
   
->  Out Index zum Nachverfolgen des Hochladens der _cEntMod_ Anzahl neuer oder geänderter Elemente. 
+>  [out] Index, um das Hochladen der  _cEntMod-Anzahl neuer_ oder geänderter Elemente nachzuverfolgen. 
     
  _cEntMod_
   
->  Out Anzahl der neuen oder geänderten Elemente im Ordner. 
+>  [out] Anzahl der neuen oder geänderten Elemente im Ordner. 
     
  _iEntRead_
   
->  Out Index zum Nachverfolgen des Hochladens der Anzahl von _cEntRead_ -Lese Elementen. 
+>  [out] Index zum Nachverfolgen des Hochladens der Anzahl _der cEntRead-Leseelemente._ 
     
  _cEntRead_
   
->  Out Die Anzahl der gelesenen Elemente im Ordner. 
+>  [out] Anzahl der Leseelemente im Ordner. 
     
  _iEntDel_
   
->  Out Index zum Nachverfolgen des Uploads der Anzahl von _cEntDel_ gelöschten Elementen. 
+>  [out] Index zum Nachverfolgen des Hochladens der Anzahl _gelöschter cEntDel-Elemente._ 
     
  _cEntDel_
   
->  Out Die Anzahl der gelöschten Elemente im Ordner. 
+>  [out] Die Anzahl der gelöschten Elemente im Ordner. 
     
 ## <a name="see-also"></a>Siehe auch
 

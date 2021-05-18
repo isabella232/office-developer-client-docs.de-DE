@@ -25,13 +25,13 @@ ms.locfileid: "33412037"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Schließt eine nachrichtensitzung und alle innerhalb dieser Sitzung erstellten Nachrichten. 
+Schließt eine Nachrichtensitzung und alle in dieser Sitzung erstellten Nachrichten. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |IMessage. h  <br/> |
+|Headerdatei  <br/> |Imessage.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 VOID CloseIMsgSession(
@@ -43,16 +43,16 @@ VOID CloseIMsgSession(
 
  _lpMsgSess_
   
-> in Zeiger auf das Nachrichten Sitzungsobjekt, das mit der [OpenIMsgSession](openimsgsession.md) -Funktion zu Beginn der nachrichtensitzung abgerufen wurde. 
+> [in] Zeiger auf das Nachrichtensitzungsobjekt, das mit der [OpenIMsgSession-Funktion](openimsgsession.md) zu Beginn der Nachrichtensitzung erhalten wurde. 
     
 ## <a name="return-value"></a>Return value
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Eine nachrichtensitzung wird von Clientanwendungen und Dienstanbietern verwendet, die mit mehreren verwandten MAPI- **IMessage** -Objekten umgehen möchten, die auf zugrunde liegenden OLE- **IStorage** -Objekten basieren. Der Client oder Anbieter verwendet die [OpenIMsgSession](openimsgsession.md) -und **CloseIMsgSession** -Funktionen, um die Erstellung solcher Nachrichten innerhalb einer nachrichtensitzung umzubrechen. Nach dem Öffnen der nachrichtensitzung übergibt der Client oder Anbieter einen Zeiger an diesen in einem Aufruf an [OpenIMsgOnIStg](openimsgonistg.md) , um ein neues **IMessage**-on- **IStorage** -Objekt zu erstellen. 
+Eine Nachrichtensitzung wird von Clientanwendungen und Dienstanbietern verwendet, die sich mit mehreren verwandten **MAPI-IMessage-Objekten** befassen möchten, die auf zugrunde liegenden OLE **IStorage-Objekten** aufgebaut sind. Der Client oder Anbieter verwendet die [Funktionen OpenIMsgSession](openimsgsession.md) und **CloseIMsgSession,** um die Erstellung solcher Nachrichten in einer Nachrichtensitzung zu umschließen. Nachdem die Nachrichtensitzung geöffnet wurde, übergibt der Client oder Anbieter einen Zeiger an [openIMsgOnIStg,](openimsgonistg.md) um ein neues **IMessage**-on-IStorage-Objekt zu erstellen.  
   
-Eine nachrichtensitzung verfolgt alle **IMessage**-on- **IStorage** -Objekte, die während der Dauer der Sitzung geöffnet werden, zusätzlich zu allen Anlagen und anderen Eigenschaften der Nachrichten. Wenn ein Client oder Anbieter **CloseIMsgSession**aufruft, werden alle diese Objekte geschlossen. Das Aufrufen von **CloseIMsgSession** ist die einzige Möglichkeit zum Beenden von **IMessage**-on- **IStorage** -Objekten. 
+Eine Nachrichtensitzung verfolgt alle **IMessage** **-on-IStorage-Objekte,** die während der Sitzung geöffnet wurden, zusätzlich zu allen Anlagen und anderen Eigenschaften der Nachrichten. Wenn ein Client oder Anbieter **CloseIMsgSession aufruft,** werden alle diese Objekte geschlossen. Das **Aufrufen von CloseIMsgSession** ist die einzige Möglichkeit, **IMessage**-on-IStorage-Objekte **zu** schließen. 
   
 

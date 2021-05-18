@@ -21,14 +21,14 @@ ms.locfileid: "33412387"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
- **So rufen Sie die Mitglieder einer Verteilerliste ab**
+ **So erhalten Sie die Mitglieder einer Verteilerliste**
   
-1. Erstellen Sie ein Array mit den Eigenschaften der Elemente, die Sie abrufen möchten, wie **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)), **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) und **PR_DISPLAY_TYPE** ([ PidTagDisplayType](pidtagdisplaytype-canonical-property.md)).
+1. Erstellen Sie ein #A0 der Größe mit den Eigenschaften der Elemente, die Sie abrufen möchten, z. B. **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)), **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) und **PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md)).
     
-2. Rufen Sie [IAddrBook:: OpenEntry](iaddrbook-openentry.md) auf, um die Verteilerliste zu öffnen. 
+2. Rufen [Sie IAddrBook::OpenEntry auf,](iaddrbook-openentry.md) um die Verteilerliste zu öffnen. 
     
-3. Rufen Sie die **IABContainer::** getcontentable-Methode der Verteilerliste auf, um auf Ihre Inhaltstabelle zuzugreifen. 
+3. Rufen Sie die **IABContainer::GetContentsTable-Methode** der Verteilerliste auf, um auf die Inhaltstabelle zu zugreifen. 
     
-4. Rufen Sie [HrQueryAllRows](hrqueryallrows.md) auf, um alle Tabellenzeilen abzurufen, die die Mitglieder der Verteilerliste darstellen. 
+4. Rufen [Sie HrQueryAllRows auf,](hrqueryallrows.md) um alle Zeilen der Tabelle abzurufen, die die Mitglieder der Verteilerliste darstellen. 
     
 

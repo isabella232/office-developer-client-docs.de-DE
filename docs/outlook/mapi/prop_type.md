@@ -19,18 +19,18 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33412835"
 ---
-# <a name="proptype"></a>PROP_TYPE
+# <a name="prop_type"></a>PROP_TYPE
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt den Eigenschaftentyp eines angegebenen Property-Tags zurück.
+Gibt den Eigenschaftentyp eines angegebenen Eigenschaftstags zurück.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |[SPropValue](spropvalue.md) <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |[SPropValue](spropvalue.md) <br/> |
    
 ```cpp
 PROP_TYPE (ulPropTag)
@@ -40,13 +40,13 @@ PROP_TYPE (ulPropTag)
 
  _ulPropTag_
   
-> Property-Tag, das den zurückzugebenden Eigenschaftentyp enthält.
+> Eigenschaftstag, das den zurückgegebenen Eigenschaftentyp enthält.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Das **PROP_TYPE** -Makro kann verwendet werden, um den Typ einer Eigenschaft zu bestimmen. Beispielsweise führt das Aufrufen von PROP_TYPE (**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))) dazu, dass der Wert PT_BINARY zurückgegeben wird.
+Das **PROP_TYPE** kann verwendet werden, um den Typ einer Eigenschaft zu bestimmen. Wenn Sie z. B. PROP_TYPE (**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))) aufrufen, wird der Wert PT_BINARY zurückgegeben.
   
-Jedes Property-Tag enthält den Eigenschaftentyp im niedrigwertigen Wort (Bits 0 bis 15) und den Eigenschaftenbezeichner im hochwertigen Wort (Bits 16 bis 31). Das **PROP_TYPE** -Makro extrahiert den Eigenschaftentyp und fügt ihn in die Bits 0 bis 15 der zurückzugebenden Ganzzahl ein. Die restlichen Bits des Rückgabewerts werden auf Nullen festgelegt. 
+Jedes Eigenschaftstag enthält den Eigenschaftentyp im Wort mit niedriger Reihenfolge (Bits 0 bis 15) und den Eigenschaftenbezeichner im Wort mit hoher Ordnung (Bits 16 bis 31). Das **PROP_TYPE** extrahiert den Eigenschaftentyp und legt ihn in bits 0 bis 15 der ganzen Zahl, die zurückgegeben werden soll. Die verbleibenden Bits des Rückgabewerts werden auf Nullen festgelegt. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,5 @@
 ---
-title: Ordner Formularbibliotheken
+title: Ordnerformularbibliotheken
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,15 +15,15 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33414284"
 ---
-# <a name="folder-form-libraries"></a>Ordner Formularbibliotheken
+# <a name="folder-form-libraries"></a>Ordnerformularbibliotheken
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-In einigen Fällen möchten Sie möglicherweise ein oder mehrere Formulare einem bestimmten Ordner zuordnen. Mitarbeiter in Ihrer Organisation können beispielsweise über einen Statusberichts Ordner in Ihrem persönlichen Nachrichtenspeicher verfügen, um Fortschrittsberichte zu erstellen und zu speichern. Da der Fortschrittsbericht spezifisch für den fortSchrittsBericht Ordner der einzelnen Benutzer ist, ist es möglicherweise nicht angemessen, das Fortschrittsbericht-Formular in der systemweiten Formularbibliothek zu speichern. Es kann jedoch eine Kopie des Statusberichts Formulars in der Tabelle mit den zugehörigen Inhalten des Statusberichts Ordners der einzelnen Benutzer aufbewahrt werden. Dadurch wird der Benutzer auf die Verwendung von Fortschrittsberichts Formularen außerhalb des festgelegten Ordners beschränkt.
+In einigen Fällen können Sie einem bestimmten Ordner ein oder mehrere Formulare zuordnen. Beispielsweise könnten Mitarbeiter in Ihrer Organisation alle einen Statusberichtsordner in ihrem persönlichen Nachrichtenspeicher zum Erstellen und Speichern von Fortschrittsberichten haben. Da der Fortschrittsbericht für den Statusberichtsordner der einzelnen Benutzer spezifisch ist, ist es möglicherweise nicht sinnvoll, das Statusberichtsformular in der systemweiten Formularbibliothek zu speichern. Eine Kopie des Statusberichtsformulars kann jedoch im Inhaltsverzeichnis des Statusberichtsordners der einzelnen Benutzer aufbewahrt werden. Dadurch wird der Benutzer an der Verwendung von Fortschrittsberichtsformularen außerhalb des angegebenen Ordners eingeschränkt.
   
-Konzeptionell gibt es eine Ordner Formularbibliothek für jeden Ordner in einem Nachrichtenspeicher, auch wenn keine Formularserver installiert sind. Ordner Formularbibliotheken werden wie andere Formularbibliotheken implementiert – Sie werden als verknüpfte Inhaltstabellen im alternativen Teil des Ordners gespeichert. Da Ordner Formularbibliotheken im Ordner enthalten sind, werden Sie zusammen mit dem übergeordneten Ordner in Kopiervorgängen kopiert.
+Konzeptionell gibt es eine Ordnerformularbibliothek für jeden Ordner in einem Nachrichtenspeicher, auch wenn keine Formularserver installiert sind. Ordnerformularbibliotheken werden wie andere Formularbibliotheken implementiert– sie werden als Tabellen mit zugeordneten Inhalten im alternativen Teil des Ordners gespeichert. Da Ordnerformularbibliotheken im Ordner enthalten sind, werden sie zusammen mit ihrem übergeordneten Ordner in Kopiervorgänge kopiert.
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 322ea2e9-d6c9-48f9-a927-7162346d16a4
-description: Gibt ein Array von Zeichenfolgen zurück, die Website-URLs für den Outlook Social Connector (OSC)-Anbieter angeben.
+description: Gibt ein Array von Zeichenfolgen zurück, die Website-URLs für den anbieter Outlook Social Connector (OSC) angeben.
 ms.openlocfilehash: 34d779d5eb42b81a14c5236685104e9ef4fe36f2
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -17,7 +17,7 @@ ms.locfileid: "33413773"
 ---
 # <a name="isocialproviderdefaultsiteurls"></a>ISocialProvider::DefaultSiteUrls
 
-Gibt ein Array von Zeichenfolgen zurück, die Website-URLs für den Outlook Social Connector (OSC)-Anbieter angeben.
+Gibt ein Array von Zeichenfolgen zurück, die Website-URLs für den anbieter Outlook Social Connector (OSC) angeben.
   
 ```cpp
 [propget] HRESULT _stdcall DefaultSiteUrls([out, retval] SAFEARRAY(BSTR)* siteUrls);
@@ -27,11 +27,11 @@ Gibt ein Array von Zeichenfolgen zurück, die Website-URLs für den Outlook Soci
 
 Ein Zeiger auf eine Struktur, die ein Array von Zeichenfolgen angibt, die Website-URLs für den OSC-Anbieter darstellen.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Ein Anbieter kann mehrere Website-URLs unterstützen. OSC legt die [ISocialSession:: siteurl](isocialsession-siteurl.md) -Eigenschaft fest, um den Anbieter über die ausgewählte Website-URL zu informieren. 
+Ein Anbieter kann mehrere Website-URLs unterstützen. Das OSC legt die [ISocialSession::SiteUrl-Eigenschaft](isocialsession-siteurl.md) fest, um den Anbieter über die ausgewählte Website-URL zu informieren. 
   
-OSC verwendet das erste Element des Arrays als Standardwebsite-URL. Ein Anbieter kann zusätzliche Elemente im URL-Array der Website zurückgeben, aber der OSC verwendet Sie nicht. 
+Das OSC verwendet das erste Element des Arrays als Standardwebsite-URL. Ein Anbieter kann zusätzliche Elemente im Website-URL-Array zurückgeben, die vom OSC jedoch nicht verwendet werden. 
   
 ## <a name="see-also"></a>Siehe auch
 

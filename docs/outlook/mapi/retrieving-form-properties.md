@@ -21,7 +21,7 @@ ms.locfileid: "33412919"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Zum Ausgeben einer Abfrage, die für einen benutzerdefinierten Nachrichtentyp sinnvoll ist, muss eine Anwendung die Eigenschaften kennen, die in dieser Nachricht erwartet werden. Eine Clientanwendung fragt den MAPI-Formular-Manager ab, um eine Liste der Eigenschaften abzurufen, die von einer benutzerdefinierten Nachrichtenklasse verwendet werden. Der Formular-Manager ruft diese Informationen aus der entsprechenden Formular Konfigurationsdatei ab, sodass Clientanwendungen diese Informationen ohne den Aufwand der Aktivierung des Formular Servers selbst verwenden können. Zu diesem Zweck Ruft die Clientanwendung die [IMAPIFormMgr:: ResolveMessageClass](imapiformmgr-resolvemessageclass.md) -Methode wie folgt auf: 
+Zum Ausführen einer Abfrage, die für einen benutzerdefinierten Nachrichtentyp von Bedeutung ist, muss eine Anwendung die Eigenschaften kennen, die für diese Nachricht erwartet werden. Um eine Liste der Eigenschaften zu erhalten, die von einer benutzerdefinierten Nachrichtenklasse verwendet werden, fragt eine Clientanwendung den MAPI-Formular-Manager ab. Der Formular-Manager ruft diese Informationen aus der entsprechenden Formularkonfigurationsdatei ab, damit Clientanwendungen diese Informationen verwenden können, ohne den Formularserver selbst zu aktivieren. Dazu ruft die Clientanwendung die [IMAPIFormMgr::ResolveMessageClass-Methode](imapiformmgr-resolvemessageclass.md) wie folgt auf: 
   
 ```cpp
 IMAPIFormInfo *pfrminf = NULL;
@@ -29,11 +29,11 @@ hr = pfrmmgr->ResolveMessageClass("IPM.Demo", 0L, NULL, &amp;pfrminf);
 
 ```
 
-Beachten Sie, dass das dritte Argument für **ResolveMessageClass** der Ordner ist, in dem die Tabelle mit den zugeordneten Inhalten enthalten ist, die von der Abfrage nach Formular Servern durchsucht wird. NULL gibt an, dass der Formular-Manager alle verfügbaren Formular Container durchsuchen soll. Wenn die Abfrage für einen bestimmten Ordner ausgeführt werden soll, empfiehlt es sich, stattdessen den entsprechenden [IMAPIFolder](imapifolderimapicontainer.md) -Zeiger einzufügen. 
+Beachten Sie, dass das dritte Argument für **ResolveMessageClass** der Ordner ist, der die zugeordnete Inhaltstabelle enthält, nach der die Abfrage nach Formularservern sucht. NULL gibt an, dass der Formular-Manager alle verfügbaren Formularcontainer durchsuchen soll. Wenn die Abfrage für einen bestimmten Ordner ausgeführt werden soll, ist es besser, stattdessen den entsprechenden [IMAPIFolder-Zeiger](imapifolderimapicontainer.md) zu verwenden. 
   
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Formular Server interAktionen](form-server-interactions.md)
+[Formularserverinteraktionen](form-server-interactions.md)
 

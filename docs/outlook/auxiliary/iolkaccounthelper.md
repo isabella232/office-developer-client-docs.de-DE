@@ -29,14 +29,14 @@ Stellt Hilfsfunktionen in der aktuellen MAPI-Sitzung zum Verwalten von Konten be
 
 |||
 |:-----|:-----|
-|[Placeholder1](iolkaccounthelper-placeholder1.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[Platzhalter1](iolkaccounthelper-placeholder1.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
 |[GetIdentity](iolkaccounthelper-getidentity.md) <br/> |Ruft den Profilnamen eines Kontos ab.  <br/> |
-|[GetMapiSession](iolkaccounthelper-getmapisession.md) <br/> |Öffnet eine MAPI-Sitzung und verwaltet einen Verweis auf die Sitzung für den Kontomanager.  <br/> |
-|[HandsOffSession](iolkaccounthelper-handsoffsession.md) <br/> |Gibt das MAPI-Sitzungsobjekt frei, das von [IOlkAccountHelper:: GetMapiSession](iolkaccounthelper-getmapisession.md)zurückgegeben wurde.  <br/> |
+|[GetMapiSession](iolkaccounthelper-getmapisession.md) <br/> |Öffnet eine MAPI-Sitzung und verwaltet einen Verweis auf die Sitzung für den Konto-Manager.  <br/> |
+|[HandsOffSession](iolkaccounthelper-handsoffsession.md) <br/> |Gibt das MAPI-Sitzungsobjekt frei, das von [IOlkAccountHelper zurückgegeben wurde::GetMapiSession](iolkaccounthelper-getmapisession.md).  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Diese Schnittstelle wird an [IOlkAccountManager:: init](iolkaccountmanager-init.md) übergeben, wenn der Konto-Manager initialisiert wird. 
+Diese Schnittstelle wird beim Initialisieren des Konto-Managers an [IOlkAccountManager::Init](iolkaccountmanager-init.md) übergeben. 
   
 ## <a name="see-also"></a>Siehe auch
 

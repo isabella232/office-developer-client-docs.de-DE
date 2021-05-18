@@ -39,11 +39,11 @@ AbortSubmit(
 
  _cbEntryID_
   
-> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID_ -Parameter verwiesen wird. 
+> [in] Die Byteanzahl im Eintragsbezeichner, auf den der  _lpEntryID-Parameter_ verweist. 
     
  _lpEntryID_
   
-> in Ein Zeiger auf die Eintrags-ID der Nachricht, die aus der ausgehenden Warteschlange entfernt werden soll. 
+> [in] Ein Zeiger auf die Eintrags-ID der Nachricht, die aus der ausgehenden Warteschlange entfernt werden soll. 
     
  _ulFlags_
   
@@ -57,19 +57,19 @@ S_OK
     
 MAPI_E_NOT_IN_QUEUE 
   
-> Die von _lpEntryID_ angegebene Nachricht befindet sich nicht mehr in der ausgehenden Warteschlange des Nachrichtenspeichers, in der Regel, weil Sie bereits gesendet wurde. 
+> Die durch  _lpEntryID_ identifizierte Nachricht befindet sich nicht mehr in der ausgehenden Warteschlange des Nachrichtenspeichers, da sie bereits gesendet wurde. 
     
 MAPI_E_UNABLE_TO_ABORT 
   
-> Die von _lpEntryID_ angegebene Nachricht wird vom MAPI-Spooler gesperrt, und der Vorgang kann nicht abgebrochen werden. 
+> Die durch  _lpEntryID_ identifizierte Nachricht wird vom MAPI-Spooler gesperrt, und der Vorgang kann nicht abgebrochen werden. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMsgStore:: AbortSubmit** -Methode versucht, eine übermittelte Nachricht aus der ausgehenden Warteschlange des Nachrichtenspeichers zu entfernen. 
+Die **IMsgStore::AbortSubmit-Methode** versucht, eine übermittelte Nachricht aus der ausgehenden Warteschlange des Nachrichtenspeichers zu entfernen. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Nachdem eine Nachricht übermittelt wurde, wird die Übermittlung durch Aufrufen von **AbortSubmit** abgebrochen und ist die einzige Aktion, die für die Nachricht ausgeführt werden kann. Erwarten Sie nicht, dass **AbortSubmit** immer erfolgreich ist. Je nachdem, wie das zugrunde liegende Messagingsystem implementiert wird, kann das Senden der Nachricht möglicherweise nicht abgebrochen werden. 
+Nachdem eine Nachricht übermittelt wurde, ist das Abbrechen der Übermittlung durch Aufrufen von **AbortSubmit** die einzige Aktion, die für die Nachricht ausgeführt werden kann. Erwarten Sie nicht, **dass AbortSubmit** immer erfolgreich ist. Je nachdem, wie das zugrunde liegende Messagingsystem implementiert wird, kann das Senden der Nachricht möglicherweise nicht abgebrochen werden. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -77,7 +77,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|FolderDlg. cpp  <br/> |CFolderDlg:: OnAbortSubmit  <br/> |MFCMAPI verwendet die **IMsgStore:: AbortSubmit** -Methode, um die Übermittlung der ausgewählten Nachricht abzubrechen.  <br/> |
+|FolderDlg.cpp  <br/> |CFolderDlg::OnAbortSubmit  <br/> |MFCMAPI verwendet die **IMsgStore::AbortSubmit-Methode,** um die Übermittlung der ausgewählten Nachricht abbricht.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

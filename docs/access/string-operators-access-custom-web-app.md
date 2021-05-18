@@ -1,5 +1,5 @@
 ---
-title: Zeichenfolgenoperatoren (Access Custom Web App)
+title: Zeichenfolgenoperatoren (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,13 +14,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33411610"
 ---
-# <a name="string-operators-access-custom-web-app"></a>Zeichenfolgenoperatoren (Access Custom Web App)
+# <a name="string-operators-access-custom-web-app"></a>Zeichenfolgenoperatoren (benutzerdefinierte Access-Web-App)
 
 > [!IMPORTANT]
 > Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
-- [+ (String Verkettungs Operator) (Access Custom Web App)](plusstring-concatenation-operatoraccess-custom-web-app.md)
+- [+ (Zeichenfolgenverkettungsoperator) (benutzerdefinierte Access-Web-App)](plusstring-concatenation-operatoraccess-custom-web-app.md)
     
 

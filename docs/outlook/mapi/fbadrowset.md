@@ -25,7 +25,7 @@ ms.locfileid: "33411792"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Überprüft alle Tabellenzeilen, die in einem Satz von Tabellenzeilen enthalten sind.
+Überprüft alle Tabellenzeilen, die in einer Reihe von Tabellenzeilen enthalten sind.
   
 |||
 |:-----|:-----|
@@ -43,17 +43,17 @@ BOOL FBadRowSet(
 
  _lpRowSet_
   
-> in Zeiger auf eine [SRowSet](srowset.md) -Struktur, die den zu überprüfenden Zeilensatz identifiziert. Wenn der Zeiger NULL ist, ist die Struktur ungültig. 
+> [in] Zeiger auf eine [SRowSet-Struktur,](srowset.md) die den zu überprüfenden Zeilensatz identifiziert. Wenn der Zeiger NULL ist, ist die Struktur ungültig. 
     
 ## <a name="return-value"></a>Rückgabewert
 
 TRUE 
   
-> Eine Zeile des angegebenen Zeilen Satzes ist ungültig, oder der Zeilensatz selbst ist ungültig. 
+> Eine Zeile des angegebenen Zeilensatzs ist ungültig, oder der Zeilensatz selbst ist ungültig. 
     
 FALSE 
   
-> Die Zeilen des angegebenen Zeilen Satzes und des Zeilen Satzes selbst sind gültig.
+> Die Zeilen des angegebenen Zeilensatzs und der Zeilensatz selbst sind alle gültig.
     
 ## <a name="see-also"></a>Siehe auch
 

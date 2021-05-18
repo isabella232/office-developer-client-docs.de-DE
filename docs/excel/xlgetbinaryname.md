@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - xlGetBinaryName
 keywords:
-- xlgetbinaryname-Funktion [Excel 2007]
+- xlgetbinaryname-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: 66af3f78-65b5-42e0-82f9-ffd639d41751
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -22,7 +22,7 @@ ms.locfileid: "33412464"
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Wird verwendet, um ein Handle für von der [xlDefineBinaryName-Funktion](xldefinebinaryname.md)gespeicherte Daten zurückzugeben. Daten mit einem definierten binären Namen werden mit der Arbeitsmappe gespeichert und können jederzeit über den Namen aufgerufen werden. Weitere Informationen finden Sie unter "Beschränkung des binären Namensbereichs" in [bekannte Probleme in Excel XLL Development](known-issues-in-excel-xll-development.md).
+Wird verwendet, um ein Handle für Daten zurück, die von der [xlDefineBinaryName-Funktion gespeichert wurden.](xldefinebinaryname.md) Daten mit einem definierten binären Namen werden mit der Arbeitsmappe gespeichert und können jederzeit über den Namen zugegriffen werden. Weitere Informationen finden Sie unter "Binary name Scope Limitation" in [Known Issues in Excel XLL Development](known-issues-in-excel-xll-development.md).
   
 ```cs
 Excel12(xlGetBinaryName, LPXLOPER12 pxRes, 1, LPXLOPER12 pxName);
@@ -32,15 +32,15 @@ Excel12(xlGetBinaryName, LPXLOPER12 pxRes, 1, LPXLOPER12 pxName);
 
 _pxRes_ (**xltypeBigData** oder **xltypeErr**)
   
-Eine Struktur, die die abgerufenen Daten angibt, oder ein Fehler ist, dass die Daten nicht abgerufen oder der Name nicht definiert ist. Wenn die Funktion zurückgibt, enthält das **hdata** -Element des **XLOPER**/ -**XLOPER12** ein Handle für die benannten Daten.  _pxRes_ sollte bei einem Aufruf von **xlFree** freigegeben werden, wenn Sie nicht mehr benötigt werden. 
+Die Bigdata-Struktur, die die abgerufenen Daten anfordert, oder ein Fehler ist, dass die Daten nicht abgerufen werden konnten oder der Name nicht definiert ist. Wenn die Funktion zurückgegeben wird, enthält **das hdata-Element** der **XLOPER** /  **XLOPER12** ein Handle für die benannten Daten.  _pxRes_ sollte in einem Aufruf von xlFree frei **werden,** wenn dies nicht mehr erforderlich ist. 
   
 _pxName_ (**xltypeStr**)
   
-Eine Zeichenfolge, die den Namen der Daten angibt.
+Eine Zeichenfolge, die den Namen der Daten an gibt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Microsoft Excel besitzt das in **hdata**zurückgegebene Speicherhandle. In Windows ist das Handle ein globaler Speicherhandle (der von der **GlobalAlloc** -Funktion zugeordnet wird). 
+Microsoft Excel besitzt das in hdata zurückgegebene **Speicherhandle.** In Windows handle es sich um ein globales Speicherhandle (zugewiesen durch die **GlobalAlloc-Funktion).** 
   
 ## <a name="see-also"></a>Siehe auch
 

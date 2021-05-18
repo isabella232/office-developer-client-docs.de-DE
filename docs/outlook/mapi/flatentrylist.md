@@ -23,11 +23,11 @@ ms.locfileid: "33413857"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von [FLATENTRY](flatentry.md) -Strukturen. 
+Enthält ein Array von [FLATENTRY-Strukturen.](flatentry.md) 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
 |Verwandte Makros:  <br/> |[CbFLATENTRYLIST](cbflatentrylist.md), [CbNewFLATENTRYLIST](cbnewflatentrylist.md) <br/> |
    
 ```cpp
@@ -40,27 +40,27 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
-**Zentriert**
+**cEntries**
   
-> Die Anzahl der **FLATENTRY** -Strukturen in dem vom **abEntries** -Element beschriebenen Array. 
+> Anzahl der **FLATENTRY-Strukturen** im Array, das vom **abEntries-Element beschrieben** wird. 
     
 **cbEntries**
   
-> Die Anzahl der Bytes im von **abEntries**beschriebenen Array. 
+> Anzahl der Byte im array, das von **abEntries beschrieben wird.** 
     
 **abEntries**
   
-> Bytearray, das eine oder mehrere **FLATENTRY** -Strukturen enthält, die bis zum Ende angeordnet sind. 
+> Bytearray, das eine oder mehrere **FLATENTRY-Strukturen** enthält, zwischen Ende und Ende angeordnet. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Im **abEntries** -Array wird jede **FLATENTRY** -Struktur an einer natürlich ausgerichteten Grenze ausgerichtet. Zusätzliche Bytes sind als Padding enthalten, um eine natürliche Ausrichtung zwischen zwei **FLATENTRY** -Strukturen sicherzustellen. Die erste **FLATENTRY** -Struktur im Array wird immer korrekt ausgerichtet, da der Offset des **abEntries** -Elements 8 ist. Um den Offset der nächsten Struktur zu berechnen, verwenden Sie die Größe des ersten Eintrags, aufgerundet auf das nächste Vielfache von 4. Verwenden Sie das [CbFLATENTRY](cbflatentry.md) -Makro, um die Größe einer **FLATENTRY** -Struktur zu berechnen. 
+Im **abEntries-Array** wird jede **FLATENTRY-Struktur** an einer natürlich ausgerichteten Grenze ausgerichtet. Zusätzliche Bytes sind als Abstand enthalten, um die natürliche Ausrichtung zwischen zwei **FLATENTRY-Strukturen sicherzustellen.** Die erste **FLATENTRY-Struktur** im Array wird immer richtig ausgerichtet, da der Offset des **abEntries-Mitglieds** 8 ist. Verwenden Sie zum Berechnen des Offsets der nächsten Struktur die Größe des ersten Eintrags, der auf das nächste Vielfache von 4 aufgerundet wurde. Verwenden Sie das [CbFLATENTRY-Makro,](cbflatentry.md) um die Größe einer **FLATENTRY-Struktur zu** berechnen. 
   
-Beispielsweise beginnt die zweite **FLATENTRY** -Struktur mit einem Offset, der aus dem Offset des ersten Eintrags und der Länge des ersten Eintrags besteht, gerundet auf die nächsten vier Bytes. Die Länge des ersten Eintrags entspricht der Länge des **CB** -Elements sowie der Länge des **abEntry** -Elements. 
+Die zweite **FLATENTRY-Struktur** beginnt beispielsweise bei einem Offset, der aus dem Offset des ersten Eintrags plus der Länge des ersten Eintrags besteht, der auf die nächsten vier Bytes gerundet wird. Die Länge des ersten Eintrags ist die Länge des **cb-Mitglieds** plus die Länge des **abEntry-Mitglieds.** 
   
-Das folgende Codebeispiel gibt an, wie Offsets in einer **FLATENTRYLIST** -Struktur berechnet werden. Gehen Sie davon aus, dass _lpFlatEntry_ ein Zeiger auf die erste Struktur in der Liste ist. 
+Das folgende Codebeispiel zeigt, wie Offsets in einer **FLATENTRYLIST-Struktur berechnet** werden. Angenommen,  _lpFlatEntry_ ist ein Zeiger auf die erste Struktur in der Liste. 
   
 ```cpp
 (offsetof(lpFlatEntry->ab) // for example, 4
@@ -71,6 +71,6 @@ Das folgende Codebeispiel gibt an, wie Offsets in einer **FLATENTRYLIST** -Struk
 ## <a name="see-also"></a>Siehe auch
 
 - [FLATENTRY](flatentry.md)
-- [Kanonische Pidtagreplyrecipiententries (-Eigenschaft](pidtagreplyrecipiententries-canonical-property.md)
+- [PidTagReplyRecipientEntries (kanonische Eigenschaft)](pidtagreplyrecipiententries-canonical-property.md)
 - [MAPI-Strukturen](mapi-structures.md)
 

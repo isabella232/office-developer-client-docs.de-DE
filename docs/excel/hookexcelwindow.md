@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - HookExcelWindow
 keywords:
-- hookexcelwindow-Funktion [Excel 2007]
+- hookexcelwindow-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: 13f0ae5e-9951-4e89-a245-7cf68c6f6724
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -22,7 +22,7 @@ ms.locfileid: "33413507"
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Installiert **ExcelCursorProc** , sodass es vor dem Haupt- **WndProc**von Microsoft Excel aufgerufen wird.
+Installiert **ExcelCursorProc** so, dass es vor dem Microsoft Excel **WndProc aufgerufen wird.**
   
 ```cs
 extern void FAR PASCAL HookExcelWindow(HANDLE hWndExcel);
@@ -30,21 +30,21 @@ extern void FAR PASCAL HookExcelWindow(HANDLE hWndExcel);
 
 ## <a name="parameters"></a>Parameter
 
- _hWndExcel_ (**Handle**)
+ _hWndExcel_ (**HANDLE**)
   
-Der Excel-Hauptfenster-handle.
+Das Excel-Windows-Handle.
   
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
 Die Funktion gibt keinen Wert zurück.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die-Funktion Ruft die Adresse des Excel- **WndProc** durch die Verwendung von **GetWindowLong ()**. Dieser Wert wird in einem globalen Speicher gespeichert, der zum Aufrufen der standardmäßigen **WndProc** -Funktion und auch zur Wiederherstellung verwendet werden kann. Schließlich wird diese Adresse durch die Adresse von **ExcelCursorProc** mit **SetWindowLong ()** ersetzt.
+Die Funktion ruft die Adresse des Excel **WndProc** über die Verwendung von **GetWindowLong() ab.** Er speichert diesen Wert in einer globalen Datei, die zum Aufrufen des **Standard-WndProc** und zum Wiederherstellen verwendet werden kann. Schließlich wird diese Adresse durch die Adresse von **ExcelCursorProc** mithilfe von **SetWindowLong() ersetzt.**
   
 ### <a name="example"></a>Beispiel
 
-Den `\SAMPLES\GENERIC\GENERIC.C` Quellcode für diese Funktion finden Sie unter. 
+Den  `\SAMPLES\GENERIC\GENERIC.C` Quellcode für diese Funktion finden Sie unter. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,5 @@
 ---
-title: Eigenschaftennamen und Eigenschaftensätze
+title: Eigenschaftsnamen und Eigenschaftensätze
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,21 +15,21 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32328546"
 ---
-# <a name="property-names-and-property-sets"></a>Eigenschaftennamen und Eigenschaftensätze
+# <a name="property-names-and-property-sets"></a>Eigenschaftsnamen und Eigenschaftensätze
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Der Name jeder benannten Eigenschaft besteht aus zwei Teilen:
+Der Name jeder benannten Eigenschaft hat zwei Teile:
   
-- Ein global eindeutiger Bezeichner oder eine GUID, die einen Eigenschaftensatz angibt.
+- Eine global eindeutige ID oder GUID, die einen Eigenschaftensatz angibt.
     
-- Eine Unicode-Zeichenfolge oder ein 32-Bit-numerischer Wert. 
+- Eine Unicode-Zeichenzeichenfolge oder ein numerischer 32-Bit-Wert. 
     
-Namen benannter Eigenschaften werden mit einer [MAPINAMEID](mapinameid.md) -Struktur beschrieben. Diese Struktur enthält einen Eigenschaftssatz Member, einen Member zum Angeben des Namens im numerischen oder im Zeichenfolgenformat und ein Element zur Identifizierung des verwendeten Formats. Da der Eigenschaftensatz Teil des Eigenschaftennamens ist, ist er nicht optional. MAPI hat mehrere Eigenschaftssätze für die Verwendung durch Clients und Dienstanbieter definiert, aber wenn ein vorhandener Eigenschaftensatz unangemessen ist, kann ein neuer Eigenschaftssatz definiert werden. Clients und Dienstanbieter können eigene Eigenschaftensätze definieren, indem Sie die [CoCreateGUID](https://msdn.microsoft.com/library/ms688568.aspx) -Funktion aufrufen. In der Regel werden diese Eigenschaftensätze für benutzerdefinierte Clientanwendungen erstellt. 
+Namen benannter Eigenschaften werden mithilfe einer [MAPINAMEID-Struktur](mapinameid.md) beschrieben. Diese Struktur enthält ein Element des Eigenschaftensatzs, ein Element zum Angeben des Namens im Numerischen oder Zeichenfolgenformat und ein Element zum Identifizieren des verwendeten Formats. Da der Eigenschaftensatz Teil des Namens der Eigenschaft ist, ist er nicht optional. MAPI hat mehrere Eigenschaftssätze für die Verwendung durch Clients und Dienstanbieter definiert, aber wenn ein vorhandener Eigenschaftensatz nicht geeignet ist, kann ein neuer Eigenschaftensatz definiert werden. Clients und Dienstanbieter können ihre eigenen Eigenschaftensätze definieren, indem sie [die CoCreateGUID-Funktion](https://msdn.microsoft.com/library/ms688568.aspx) aufrufen. In der Regel werden diese Eigenschaftssätze für benutzerdefinierte Clientanwendungen erstellt. 
   
-MAPI-Eigenschaftensätze werden durch die folgenden Konstanten dargestellt:
+Die Eigenschaftssätze von MAPI werden durch die folgenden Konstanten dargestellt:
   
 PS_MAPI
   
@@ -45,9 +45,9 @@ PS_ROUTING_DISPLAY_NAME
   
 PS_ROUTING_ENTRYID
   
-Der PS_MAPI-Eigenschaftensatz ist reserviert; Sie wird von Dienstanbietern verwendet, um Namen für Eigenschaften mit Bezeichnern unterhalb des benannten Eigenschaftenbereichs zu generieren. Der PS_PUBLIC_STRINGS-Eigenschaftensatz wird von Clients für benannte Eigenschaften von IPM-Nachrichten verwendet. Da benannte Eigenschaften im PS_PUBLIC_STRINGS-Eigenschaftensatz auf der Benutzeroberfläche eines Clients angezeigt werden, sollten nicht sichtbare Nachrichten wie die, die zur IPC-Nachrichtenklasse gehören, die Erstellung benannter Eigenschaften mit dieser Eigenschaftsgruppe vermeiden. Stattdessen sollten Sie Eigenschaften im Nachrichtenklassen spezifischen Range-0x6800 bis 0x7FFF erstellen.
+Der PS_MAPI-Eigenschaftssatz ist reserviert. Es wird von Dienstanbietern verwendet, um Namen für Eigenschaften mit Bezeichnern unterhalb des benannten Eigenschaftenbereichs zu generieren. Der PS_PUBLIC_STRINGS wird von Clients für benannte Eigenschaften von IPM-Nachrichten verwendet. Da benannte Eigenschaften im PS_PUBLIC_STRINGS-Eigenschaftssatz auf der Benutzeroberfläche eines Clients angezeigt werden, sollten nicht lesbare Nachrichten, z. B. solche, die zur IPC-Nachrichtenklasse gehören, vermeiden, benannte Eigenschaften mit diesem Eigenschaftensatz zu erstellen. Stattdessen sollten sie Eigenschaften im nachrichtenklassenspezifischen Bereich erstellen, 0x6800 bis 0x7FFF.
   
-In der anderen Eigenschaft werden benannte Eigenschaften festgehalten, die Empfänger beschreiben, die normalerweise Mitglieder einer Routingliste sind. Mit demselben Informationstyp wie die Eigenschaften, die den Eigenschaften der Empfängerliste zugeordnet sind, werden die Eigenschaften in diesen Eigenschaftensätzen von Gateways verstanden, um eine Zuordnung für ein Ziel Messagingsystem zu erfordern. Da es fünf Arten von Informationen zur Beschreibung von Eigenschaften gibt, hat MAPI fünf verschiedene Eigenschaftssätze definiert. Ein Client, der eine Nachricht sendet, die einen Adress-und Adresstyp für seine Routing Listenmitglieder enthält, weist für jedes Element in den PS_ROUTING_EMAIL_ADDRESSES-und PS_ROUTING_ADDRTYPE-Eigenschaftssätzen eine benannte Eigenschaft zu. Dadurch wird sichergestellt, dass der Adress-und Adresstyp beim Senden an ein fremdes Messagingsystem weiterhin tragfähig ist.
+Die anderen Eigenschaftensätze enthalten benannte Eigenschaften, die Empfänger beschreiben, die in der Regel Mitglieder einer Routingliste sind. Mit demselben Informationstyp wie die Eigenschaften, die Empfängerlisteneigenschaften zugeordnet sind, werden Eigenschaften in diesen Eigenschaftensätzen von Gateways verstanden, um eine Zuordnung für ein Zielnachrichtensystem zu erfordern. Da es fünf Arten von Informationen zum Beschreiben von Eigenschaften gibt, hat MAPI fünf verschiedene Eigenschaftensätze definiert. Ein Client, der eine Nachricht sendet, die eine Adresse und einen Adresstyp für seine Routinglistenmitglieder enthalten muss, weist jedem Element in den Eigenschaftensätzen PS_ROUTING_EMAIL_ADDRESSES und PS_ROUTING_ADDRTYPE eine benannte Eigenschaft zu. Dadurch wird sichergestellt, dass die Adresse und der Adresstyp beim Senden an ein fremdes Messagingsystem weiterhin praktikabel sind.
   
 ## <a name="see-also"></a>Siehe auch
 

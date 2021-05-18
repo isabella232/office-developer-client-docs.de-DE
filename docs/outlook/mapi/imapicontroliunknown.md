@@ -25,14 +25,14 @@ ms.locfileid: "33414039"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Aktiviert und deaktiviert ein Schaltflächen-Steuerelement und führt Aufgaben aus, wenn ein Benutzer einer Clientanwendung auf das aktivierte Steuerelement klickt. Dienstanbieter implementieren Steuerelemente zum Erstellen benutzerdefinierter Schaltflächen in Dialogfeldern, wie beispielsweise Konfigurationseigenschaften Blätter, die mithilfe von Anzeige Tabellen definiert werden. 
+Aktiviert und deaktiviert ein Schaltflächensteuerelement und führt Aufgaben aus, wenn ein Benutzer einer Clientanwendung auf das aktivierte Steuerelement klickt. Dienstanbieter implementieren Steuerelementobjekte, um benutzerdefinierte Schaltflächen in Dialogfelder zu erstellen, z. B. Konfigurationseigenschaftsblätter, die mithilfe von Anzeigetabellen definiert werden. 
   
-Weitere Informationen zum Arbeiten mit Anzeige Tabellen und Steuerelementobjekten finden Sie unter [Display Tables](display-tables.md).
+Weitere Informationen zum Arbeiten mit Anzeigetabellen und Steuerelementobjekten finden Sie unter [Display Tables](display-tables.md).
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Steuerelemente  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Steuerelementobjekte  <br/> |
 |Implementiert von:  <br/> |Dienstanbieter  <br/> |
 |Aufgerufen von:  <br/> |MAPI  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPIControl  <br/> |
@@ -42,9 +42,9 @@ Weitere Informationen zum Arbeiten mit Anzeige Tabellen und Steuerelementobjekte
 
 |||
 |:-----|:-----|
-|[Getlasterroraufzurufen](imapicontrol-getlasterror.md) <br/> |Gibt eine [MAPIERROR](mapierror.md) -Struktur zurück, die Informationen zum vorherigen Fehler der Schaltflächensteuerung enthält.  <br/> |
-|[Activate](imapicontrol-activate.md) <br/> |Führt eine Aufgabe wie das Anzeigen eines Dialogfelds oder das Starten eines programmgesteuerten Vorgangs aus, wenn ein Benutzer der Clientanwendung auf das Schaltflächen-Steuerelement klickt.  <br/> |
-|[GetState](imapicontrol-getstate.md) <br/> |Ruft einen Wert ab, der angibt, ob das Schaltflächen-Steuerelement aktiviert oder deaktiviert ist.  <br/> |
+|[GetLastError](imapicontrol-getlasterror.md) <br/> |Gibt eine [MAPIERROR-Struktur](mapierror.md) zurück, die Informationen zum vorherigen Steuerelementfehler der Schaltfläche enthält.  <br/> |
+|[Activate](imapicontrol-activate.md) <br/> |Führt eine Aufgabe aus, z. B. das Anzeigen eines Dialogfelds oder das Starten eines programmgesteuerten Vorgangs, wenn ein Clientanwendungsbenutzer auf das Schaltflächensteuerelement klickt.  <br/> |
+|[GetState](imapicontrol-getstate.md) <br/> |Ruft einen Wert ab, der angibt, ob das Schaltflächensteuerelement aktiviert oder deaktiviert ist.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

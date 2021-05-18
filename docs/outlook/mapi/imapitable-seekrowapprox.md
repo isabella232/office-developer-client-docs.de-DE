@@ -38,31 +38,31 @@ ULONG ulDenominator
 
  _ulNumerator_
   
-> in Zeiger auf den Zähler des Bruchs, der die Tabellenposition darstellt. Wenn der _ulNumerator_ -Parameter 0 (null) ist, wird der Cursor unabhängig vom Wert des Nenners am Anfang der Tabelle positioniert. Wenn _ulNumerator_ dem Parameter _ulDenominator_ entspricht, wird der Cursor hinter der letzten Tabellenzeile positioniert. 
+> [in] Zeiger auf den Zähler der Bruchzahl, die die Tabellenposition darstellt. Wenn der  _ulNumerator-Parameter_ null ist, wird der Cursor unabhängig vom Nennwert am Anfang der Tabelle positioniert. Wenn  _ulNumerator_ gleich dem  _ulDenominator-Parameter_ ist, wird der Cursor hinter der letzten Tabellenzeile positioniert. 
     
  _ulDenominator_
   
-> in Zeiger auf den Nenner des Bruchs, der die Tabellenposition darstellt. Der Parameter _ulDenominator_ darf nicht NULL sein. 
+> [in] Zeiger auf den Nenner der Bruchzahl, die die Tabellenposition darstellt. Der  _ulDenominator-Parameter_ darf nicht null sein. 
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Seek-Vorgang war erfolgreich.
+> Der Suchvorgang war erfolgreich.
     
 MAPI_E_BUSY 
   
-> Es wird ein weiterer Vorgang ausgeführt, der verhindert, dass der Suchvorgang gestartet wird. Entweder sollte der ausgeführte Vorgang abgeschlossen oder beendet werden.
+> Ein weiterer Vorgang wird ausgeführt, der verhindert, dass der Zeilensuchenvorgang gestartet wird. Der ausgeführte Vorgang sollte entweder abgeschlossen oder beendet werden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die Cursorposition in einer Tabelle nach einem Aufruf der **IMAPITable:: SeekRowApprox** -Methode ist heuristisch der Bruchteil und ist möglicherweise nicht genau. Beispielsweise können bestimmte Anbieter eine Tabelle über eine binäre Struktur implementieren, um aus Leistungsgründen die halbe Stelle der Tabelle als oberste der Struktur zu behandeln. Wenn die Struktur nicht ausgeglichen ist, ist die verwendete Hälfte möglicherweise nicht genau in der Mitte der Tabelle. 
+Die Cursorposition in einer Tabelle nach einem Aufruf der **IMAPITable::SeekRowApprox-Methode** ist heuristisch der Bruch und möglicherweise nicht exakt. Beispielsweise können bestimmte Anbieter eine Tabelle über einer binären Struktur implementieren und den Tabellenhalbpunkt aus Leistungsgründen als oberster Punkt der Struktur behandeln. Wenn die Struktur nicht ausgeglichen ist, ist der verwendete Halbzeitpunkt möglicherweise nicht genau in der Mitte der Tabelle. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Aufrufen von **SeekRowApprox** , um die Daten für eine Bildlaufleisten Implementierung bereitzustellen. Wenn der Benutzer beispielsweise das Bildlauffeld 2/3 auf der Bildlaufleiste positioniert, können Sie diese Aktion modellieren, indem Sie **SeekRowApprox** aufrufen und einen äquivalenten Dezimalwert mit _ulNumerator_ und _ulDenominator_übergeben. Die **SeekRowApprox** -Suche ist immer vom Anfang der Tabelle aus absolut. Um zum Ende der Tabelle zu wechseln, müssen die Werte in _ulNumerator_ und _ulDenominator_ identisch sein. 
+Rufen **Sie SeekRowApprox** auf, um die Daten für eine Bildlaufleistenimplementierung zur Verfügung zu stellen. Wenn der Benutzer beispielsweise das Bildlauffeld 2/3 unten auf der Bildlaufleiste positioniert, können Sie diese Aktion modellieren, indem Sie **SeekRowApprox** aufrufen und einen entsprechenden Bruchwert mithilfe von _ulNumerator_ und _ulDenominator übergeben._ Die **SeekRowApprox-Suche** ist immer vom Anfang der Tabelle aus absolut. Um an das Ende der Tabelle zu wechseln, müssen die Werte in  _ulNumerator_ und  _ulDenominator_ identisch sein. 
   
-Verwenden Sie ein beliebiges Zahlen Schema. Das heißt, um nach einer Position in der Mitte der Tabelle zu suchen, können Sie 1/2, 10/20 oder 50/100 angeben. 
+Verwenden Sie das entsprechende Nummernschema. Das heißt, sie können 1/2, 10/20 oder 50/100 angeben, um eine Position in der Mitte der Tabelle zu finden. 
   
 ## <a name="see-also"></a>Siehe auch
 

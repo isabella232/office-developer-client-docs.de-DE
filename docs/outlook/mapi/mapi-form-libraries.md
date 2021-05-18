@@ -21,12 +21,12 @@ ms.locfileid: "33411113"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Zur Unterstützung der Organisation von Formular Servern und zur einfachen Verfügbarkeit für Clientanwendungen umfasst die MAPI-Formulararchitektur Formularbibliotheken, die die Installation, Verwaltung, Replikation und Verwendung von Formular Servern ermöglichen.
+Um Formularserver zu organisieren und sie für Clientanwendungen einfach verfügbar zu machen, umfasst die MAPI-Formulararchitektur Formularbibliotheken, die die Installation, Verwaltung, Replikation und Verwendung von Formularservern unterstützen.
   
-Formularbibliotheken sind Repositorys von Formular Servern und Konfigurationsinformationen, die vom Formular-Manager beim Laden von Formular Servern verwendet werden. 
+Formularbibliotheken sind Repositorys von Formularservern und Konfigurationsinformationen darüber, die der Formular-Manager beim Laden von Formularservern verwendet. 
   
 > [!NOTE]
-> Die Formularbibliotheken wurden früh im MAPI-Verlauf als "Registrierungen" bezeichnet. Aus diesem Grund wurde der Begriff "Registrierung" in einigen formularbezogenen MAPI-Schnittstellen, Eigenschaften, Konfigurationsdateieinträgen und so weiter gespeichert. Wenn die Benutzeroberfläche Ihrer Anwendung eine der folgenden Bedingungen erfordert, sollten Sie den Begriff "Library" exklusiv verwenden. 
+> Zu Beginn der MapI-Geschichte wurden Formularbibliotheken als "Registrierungen" bezeichnet. Aus diesem Grund wurde der Begriff "Registrierung" in einigen formularbezogenen MAPI-Schnittstellen, Eigenschaften, Konfigurationsdateieinträgen usw. beibehalten. Wenn die Benutzeroberfläche Ihrer Anwendung die Verwendung eines dieser Begriffe erfordert, sollten Sie ausschließlich den Begriff "Bibliothek" verwenden. 
   
 ## <a name="see-also"></a>Siehe auch
 

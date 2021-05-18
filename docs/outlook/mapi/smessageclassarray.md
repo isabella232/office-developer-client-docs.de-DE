@@ -25,12 +25,12 @@ ms.locfileid: "33412695"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von Zeigern für Nachrichtenklassen Zeichenfolgen.
+Enthält ein Array von Zeigern auf Nachrichtenklassenzeichenfolgen.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiform. h  <br/> |
-|Zugehöriges Makro:  <br/> |[CbMessageClassArray](cbmessageclassarray.md) <br/> |
+|Headerdatei  <br/> |Mapiform.h  <br/> |
+|Verwandtes Makro:  <br/> |[CbMessageClassArray](cbmessageclassarray.md) <br/> |
    
 ```cpp
 typedef struct 
@@ -41,19 +41,19 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cValues**
   
-> Anzahl der Nachrichtenklassen-Zeichenfolgenzeiger im Array.
+> Anzahl der Zeichenfolgenzeiger der Nachrichtenklasse im Array.
     
  **aMessageClass**
   
-> Array von Zeigern auf Nachrichtenklassen Zeichenfolgen.
+> Array von Zeigern auf Nachrichtenklassenzeichenfolgen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **SMessageClassArray** -Struktur wird als Parameter in den folgenden Methoden übergeben: 
+Die **SMessageClassArray-Struktur** wird in den folgenden Methoden als Parameter übergeben: 
   
 - [IMAPIFormContainer::ResolveMultipleMessageClasses](imapiformcontainer-resolvemultiplemessageclasses.md)
     

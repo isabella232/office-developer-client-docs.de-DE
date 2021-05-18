@@ -21,8 +21,8 @@ ms.locfileid: "33411736"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Der Profil-Assistent ist ein MAPI-Feature, mit dem ein Benutzer ein Profil auf die einfachste Weise erstellen kann. Der Profil-Assistent zeigt eine Reihe von Dialogfeldern an, mit denen der Benutzer Nachrichtendienste auswählen und Werte für einige der wichtigsten Konfigurationseigenschaften eingeben muss. Für die meisten anderen erforderlichen Eigenschaften verwendet der Profil-Assistent die Standardwerte. Rufen Sie zum Aufrufen des Profil-Assistenten **LaunchWizard**auf, eine auf dem [LAUNCHWIZARDENTRY](launchwizardentry.md) -Prototyp basierende Funktion. 
+Der Profil-Assistent ist ein MAPI-Feature, mit dem ein Benutzer ein Profil auf einfachste Weise erstellen kann. Der Profil-Assistent zeigt eine Reihe von Dialogfelder an, in denen der Benutzer aufgefordert wird, Nachrichtendienste auszuwählen und Werte für einige der wichtigsten Konfigurationseigenschaften ein eingeben. Für die meisten anderen erforderlichen Eigenschaften verwendet der Profil-Assistent die bereitgestellten Standardwerte. Rufen Sie zum Aufrufen des Profil-Assistenten **LaunchWizard** auf, eine Funktion, die auf dem [LAUNCHWIZARDENTRY-Prototyp](launchwizardentry.md) basiert. 
   
-Der Benutzer kann nur die Nachrichtendienste und Dienstanbieter zu dem neuen Profil hinzufügen, das den Profil-Assistenten unterstützt. Da für jeden Nachrichtendienst möglicherweise weitere Eigenschaften festgelegt werden müssen, als der Profil-Assistent verarbeiten kann, sollten Sie beachten, dass bei Verwendung dieses Ansatzes ein oder mehrere der ausgewählten Dienste oder Anbieter unvollständig konfiguriert werden können.
+Der Benutzer kann dem neuen Profil, das den Profil-Assistenten unterstützt, nur diese Nachrichtendienste und Dienstanbieter hinzufügen. Da für jeden Nachrichtendienst möglicherweise mehr Eigenschaften festgelegt werden müssen, als der Profil-Assistent verarbeiten kann, sollten Sie beachten, dass bei verwendung dieses Ansatzes eine oder mehrere der ausgewählten Dienste oder Anbieter unvollständig konfiguriert werden können.
   
 

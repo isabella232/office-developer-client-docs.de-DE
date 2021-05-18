@@ -35,6 +35,6 @@ This section provides sample tasks that involve folders. [Folder](https://msdn.m
 
 - [Calendar](calendar.md)
 - [Kontakte](contacts.md)
-- [Mail](mail.md)
+- [E-Mail](mail.md)
 - [Gewusst wie... (Outlook 2013 PIA-Referenz)](how-do-i-outlook-2013-pia-reference.md)
 

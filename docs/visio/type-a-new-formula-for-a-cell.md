@@ -20,16 +20,16 @@ ms.locfileid: "33413451"
 
 1. Wählen Sie die Zelle aus.
     
-    Die Formel der Zelle wird in der Zelle und in der Bearbeitungsleiste angezeigt.
+    Die Formel der Zelle wird in der Zelle und in der Formelleiste angezeigt.
     
 2. Geben Sie die neue Formel ein.
     
-    Die von Ihnen eingegebene Formel ersetzt die vorherige Formel der Zelle.
+    Die von Ihnen eingebende Formel ersetzt die vorherige Formel der Zelle.
     
-    Wenn Sie eine Zahl eingeben, aber keine Maßeinheiten angeben, verwendet Microsoft Visio die Einheiten aus dem vorherigen Wert der Zelle, sofern vorhanden. Ist das nicht der Fall und die Zelle erfordert Maßeinheiten, verwendet Visio die Standardeinheiten für die Zelle.
+    Wenn Sie eine Zahl eingeben, aber keine Maßeinheiten eingeben, verwendet Microsoft Visio die Einheiten aus dem vorherigen Wert der Zelle, wenn eine solche war. Ist das nicht der Fall und die Zelle erfordert Maßeinheiten, verwendet Visio die Standardeinheiten für die Zelle.
     
-3. Drücken Sie die EINGABEtaste, um die Formel zu übernehmen.
+3. Drücken Sie die EINGABETASTE, um die Formel zu akzeptieren.
     
-    Wenn die Nummer oder Formel einen Fehler enthält, zeigt Visio eine Meldung an und hebt dann den Fehler in der Bearbeitungsleiste oder-Zelle hervor. Korrigieren Sie den Fehler, und drücken Sie die EINGABETASTE, um die Korrektur anzunehmen.
+    Wenn die Zahl oder Formel einen Fehler enthält, Visio eine Meldung angezeigt und dann der Fehler in der Formelleiste oder -zelle hervorgehoben. Korrigieren Sie den Fehler, und drücken Sie die EINGABETASTE, um die Korrektur anzunehmen.
     
 

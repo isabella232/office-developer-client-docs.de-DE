@@ -1,5 +1,5 @@
 ---
-title: Option-Eigenschaft für Besprechungs Update ausblenden
+title: Option "Besprechungsupdate ausblenden"
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,38 +19,38 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33412100"
 ---
-# <a name="hide-meeting-update-option-property"></a>Option-Eigenschaft für Besprechungs Update ausblenden
+# <a name="hide-meeting-update-option-property"></a>Option "Besprechungsupdate ausblenden"
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Blendet die Option zum Senden von Besprechungs Updates an nur hinzugefügte oder gelöschte Teilnehmer aus.
+Blendet die Option zum Senden von Besprechungsupdates nur an hinzugefügte oder gelöschte Teilnehmer aus.
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
-|Verfügbar unter:  <br/> |[IMsgStore: IMAPIProp](imsgstoreimapiprop.md) -Objekt  <br/> |
-|Erstellt von:  <br/> |Speicheranbieter  <br/> |
+|Verfügbar gemacht für:  <br/> |[IMsgStore : IMAPIProp-Objekt](imsgstoreimapiprop.md)  <br/> |
+|Erstellt von:  <br/> |Store Anbieter  <br/> |
 |Zugriff durch:  <br/> |Outlook und andere Clients  <br/> |
-|Eigenschafts:  <br/> |PT_BOOLEAN  <br/> |
+|Eigenschaftstyp:  <br/> |PT_BOOLEAN  <br/> |
 |Zugriffstyp:  <br/> |Lesen/Schreiben  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Um eine der Store-Funktionen bereitzustellen, muss der Informationsspeicher Anbieter [IMAPIProp: IUnknown](imapipropiunknown.md) implementieren und ein gültiges Property-Tag für eine dieser Eigenschaften zurückgeben, die an einen [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) -Aufruf übergeben werden. Wenn das Property-Tag für eine dieser Eigenschaften an [IMAPIProp::](imapiprop-getprops.md)GetProps übergeben wird, muss der Informationsspeicher Anbieter auch den richtigen Eigenschaftswert zurückgeben. Speicheranbieter können [HrGetOneProp](hrgetoneprop.md) und [HrSetOneProp](hrsetoneprop.md) aufrufen, um diese Eigenschaften abzurufen oder festzulegen. 
+Um eine der Speicherfunktionen bereitzustellen, muss der Speicheranbieter [IMAPIProp : IUnknown](imapipropiunknown.md) implementieren und ein gültiges Eigenschaftstag für eine dieser Eigenschaften zurückgeben, die an einen [IMAPIProp::GetIDsFromNames-Aufruf](imapiprop-getidsfromnames.md) übergeben werden. Wenn das Eigenschaftstag für eine dieser Eigenschaften an [IMAPIProp::GetProps](imapiprop-getprops.md)übergeben wird, muss der Speicheranbieter auch den richtigen Eigenschaftswert zurückgeben. Store können [HrGetOneProp](hrgetoneprop.md) und [HrSetOneProp](hrsetoneprop.md) aufrufen, um diese Eigenschaften zu erhalten oder zu festlegen. 
   
-Um den Wert dieser Eigenschaft abzurufen, sollte der Client zuerst [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) verwenden, um das Property-Tag abzurufen, und dann dieses Property-Tag in [IMAPIProp::](imapiprop-getprops.md) GetProps angeben, um den Wert abzurufen. Geben Sie beim Aufrufen von [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md)die folgenden Werte für die [MAPINAMEID](mapinameid.md) -Struktur an, auf die durch den Eingabeparameter _lppPropNames_verwiesen wird:
+Zum Abrufen des Werts dieser Eigenschaft sollte der Client zunächst [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) verwenden, um das Eigenschaftstag abzurufen, und dann dieses Eigenschaftstag in [IMAPIProp::GetProps](imapiprop-getprops.md) angeben, um den Wert abzurufen. Geben Sie beim Aufrufen von [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)die folgenden Werte für die [MAPINAMEID-Struktur](mapinameid.md) an, auf die der Eingabeparameter _lppPropNames verweist:_
   
 |||
 |:-----|:-----|
 |lpGuid:  <br/> |PS_PUBLIC_STRINGS  <br/> |
 |ulKind:  <br/> |MNID_STRING  <br/> |
-|Art. lpwstrName:  <br/> |L "urn: Schemas-Microsoft-com: Office: Outlook # allornonemtgupdatedlg"  <br/> |
+|Kind.lpwstrName:  <br/> |L"urn:schemas-microsoft-com:office:outlook#allornonemtgupdatedlg"  <br/> |
    
-Ein Informationsspeicher Anbieter, der einen Server zum Senden von Besprechungs Updates verwendet, kann das Dialogfeld **Update an Teilnehmer senden** ändern. Diese Funktion ist nützlich, da der Server nicht weiß, welche Teilnehmer seit der anfänglichen Besprechungsanfrage vom Benutzer hinzugefügt oder gelöscht wurden. Wenn diese Eigenschaft auf **true**festgelegt ist, wird die Option **nur Update an hinzugefügte oder gelöschte Teilnehmer senden** nicht im Dialogfeld an **Teilnehmer senden** angezeigt. 
+Ein Speicheranbieter, der einen Server zum Senden von Besprechungsupdates verwendet, kann das Dialogfeld **Update an Teilnehmer** senden ändern. Diese Funktionalität ist nützlich, da der Server beim Senden eines Besprechungsupdates nicht weiß, welche Teilnehmer seit der ersten Besprechungsanfrage vom Benutzer hinzugefügt oder gelöscht wurden. Wenn diese Eigenschaft **true** ist, wird die Option Update nur für hinzugefügte oder gelöschte Teilnehmer senden nicht im Dialogfeld Update an **Teilnehmer** senden angezeigt.  
   
-Diese Eigenschaft wird ignoriert, wenn die Version von Outlook älter als Microsoft Office Outlook 2003 Service Pack 1 ist, oder wenn der Wert **false**ist.
+Diese Eigenschaft wird ignoriert, wenn die Version von Outlook vor Microsoft Office Outlook 2003 Service Pack 1 liegt oder wenn ihr Wert **false ist.**
   
 

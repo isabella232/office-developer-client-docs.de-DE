@@ -25,7 +25,7 @@ ms.locfileid: "33411995"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt eine Eintrags-ID für eine einmalige Adresse.
+Erstellt einen Eintragsbezeichner für eine eindeutige Adresse.
   
 ```cpp
 HRESULT CreateOneOff(
@@ -42,53 +42,53 @@ HRESULT CreateOneOff(
 
  _lpszName_
   
-> in Ein Zeiger auf den Anzeigenamen des Empfängers die **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))-Eigenschaft. Der _lpszName_ -Parameter kann NULL sein. 
+> [in] Ein Zeiger auf den Anzeigenamen des Empfängers, **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) -Eigenschaft. Der  _lpszName-Parameter_ kann NULL sein. 
     
  _lpszAdrType_
   
-> in Ein Zeiger auf den Adresstyp (wie FAX, SMTP oder x500) des Empfängers. Der _lpszAdrType_ -Parameter darf nicht NULL sein. 
+> [in] Ein Zeiger auf den Adresstyp (z. B. FAX, SMTP oder X500) des Empfängers. Der  _lpszAdrType-Parameter_ darf nicht NULL sein. 
     
  _lpszAddress_
   
-> in Ein Zeiger auf die Messaging Adresse des Empfängers. Der _lpszAddress_ -Parameter darf nicht NULL sein. 
+> [in] Ein Zeiger auf die Messagingadresse des Empfängers. Der  _lpszAddress-Parameter_ darf nicht NULL sein. 
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die sich auf den einmaligen Empfänger auswirkt. Die folgenden Flags können festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die sich auf den einmalen Empfänger auswirkt. Die folgenden Kennzeichen können festgelegt werden:
     
 MAPI_SEND_NO_RICH_INFO 
   
-> Der Empfänger kann formatierten Nachrichteninhalt nicht verarbeiten. Wenn MAPI_SEND_NO_RICH_INFO festgelegt ist, legt MAPI die **PR_SEND_RICH_INFO** ([pidtagsendrichinfo (](pidtagsendrichinfo-canonical-property.md))-Eigenschaft des Empfängers auf false fest. Wenn MAPI_SEND_NO_RICH_INFO nicht festgelegt ist, legt MAPI diese Eigenschaft auf TRUE fest, es sei denn, die Messaging Adresse des Empfängers, auf die durch _lpszAddress_ verwiesen wird, wird als Internet Adresse interpretiert. In diesem Fall wird **PR_SEND_RICH_INFO** auf false festgelegt. 
+> Der Empfänger kann formatierte Nachrichteninhalte nicht verarbeiten. Wenn MAPI_SEND_NO_RICH_INFO festgelegt ist, legt MAPI die **Eigenschaft PR_SEND_RICH_INFO** ([PidTagSendRichInfo](pidtagsendrichinfo-canonical-property.md)) des Empfängers auf FALSE fest. Wenn MAPI_SEND_NO_RICH_INFO nicht festgelegt ist, legt MAPI diese Eigenschaft auf TRUE fest, es sei denn, die von  _lpszAddress_ angezeigte Messagingadresse des Empfängers wird als Internetadresse interpretiert. In diesem Fall legt MAPI **PR_SEND_RICH_INFO** FALSE fest. 
     
 MAPI_UNICODE 
   
-> Der Anzeigename, der Adresstyp und die Adresse sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, sind diese Zeichenfolgen im ANSI-Format.
+> Anzeigename, Adresstyp und Adresse befinden sich im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, sind diese Zeichenfolgen im ANSI-Format.
     
  _lpcbEntryID_
   
-> Out Ein Zeiger auf die Anzahl von Bytes in der Eintrags-ID, auf die durch den _lppEntryID_ -Parameter verwiesen wird. 
+> [out] Ein Zeiger auf die Anzahl der Bytes in der Eintrags-ID, auf die der  _lppEntryID-Parameter_ verweist. 
     
  _lppEntryID_
   
-> Out Ein Zeiger auf einen Zeiger auf die Eintrags-ID für den einmaligen Empfänger.
+> [out] Ein Zeiger auf einen Zeiger auf die Eintrags-ID für den einmal verwendeten Empfänger.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der einmalige Eintragsbezeichner wurde erfolgreich erstellt.
+> Der eindeutige Eintragsbezeichner wurde erfolgreich erstellt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPISupport:: CreateOneOff** -Methode wird für alle Support Objekte des Dienstanbieters implementiert. Dienstanbieter rufen **CreateOneOff** auf, um eine Eintrags-ID für einen einmaligen Empfänger (einen Empfänger, der keinem der Container von einem der derzeit geladenen Adressbuchanbieter gehört) zu erstellen. 
+Die **IMAPISupport::CreateOneOff-Methode** wird für alle Dienstanbieterunterstützungsobjekte implementiert. Dienstanbieter rufen **CreateOneOff auf,** um eine Eintrags-ID für einen einzigen Empfänger (einen Empfänger, der keinem der Container von einem der derzeit geladenen Adressbuchanbieter angehört) zu erstellen. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Wenn Sie die von **CreateOneOff**zurückgegebene Eintrags-ID nicht mehr verwenden möchten, müssen Sie den für die Eintrags-ID reservierten Arbeitsspeicher mithilfe der [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion freigeben. 
+Wenn Sie mit der von **CreateOneOff** zurückgegebenen Eintrags-ID fertig sind, wird der für die Eintrags-ID zugewiesene Arbeitsspeicher mithilfe der [MAPIFreeBuffer-Funktion](mapifreebuffer.md) frei. 
   
-## <a name="notes-to-transport-providers"></a>Hinweise für Transport Anbieter
+## <a name="notes-to-transport-providers"></a>Hinweise zu Transportanbietern
 
-Unterstützen Sie das Transport Neutral Encapsulation Format (TNEF), und verwenden Sie den Wert der **PR_SEND_RICH_INFO** -Eigenschaft, um zu bestimmen, ob TNEF beim Transport einer Nachricht verwendet werden soll. Wenn Sie TNEF nicht unterstützen oder keine Nachricht in diesem Format senden, wenn Sie angefordert wird, kann dies ein Problem für formularbasierte Clients oder Clients sein, die benutzerdefinierte MAPI-Eigenschaften erfordern. Der Grund ist, dass TNEF in der Regel zum Senden benutzerdefinierter Eigenschaften für benutzerdefinierte Nachrichtenklassen verwendet wird. 
+Unterstützen Sie das Transport Neutral Encapsulation Format (TNEF) und verwenden Sie den Wert der **PR_SEND_RICH_INFO-Eigenschaft,** um zu bestimmen, ob TNEF beim Transport einer Nachricht verwendet werden soll. Die Nicht-Unterstützung von TNEF oder das Senden einer Nachricht in diesem Format, wenn sie angefordert wird, kann ein Problem für formularbasierte Clients oder Clients sein, die benutzerdefinierte MAPI-Eigenschaften benötigen. Dies liegt daran, dass TNEF in der Regel zum Senden benutzerdefinierter Eigenschaften für benutzerdefinierte Nachrichtenklassen verwendet wird. 
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -96,9 +96,9 @@ Unterstützen Sie das Transport Neutral Encapsulation Format (TNEF), und verwend
 
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[Kanonische PidTagDisplayName-Eigenschaft](pidtagdisplayname-canonical-property.md)
+[PidTagDisplayName (kanonische Eigenschaft)](pidtagdisplayname-canonical-property.md)
   
-[Kanonische Pidtagsendrichinfo (-Eigenschaft](pidtagsendrichinfo-canonical-property.md)
+[PidTagSendRichInfo (kanonische Eigenschaft)](pidtagsendrichinfo-canonical-property.md)
   
 [IMAPISupport: IUnknown](imapisupportiunknown.md)
 

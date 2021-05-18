@@ -25,7 +25,7 @@ ms.locfileid: "32329470"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bricht eine Registrierung für Benachrichtigungen mit einem Formular Betrachter ab, der zuvor durch Aufrufen von [IMAPIForm:: Advise](imapiform-advise.md)eingerichtet wurde.
+Bricht eine Registrierung für Benachrichtigungen bei einer zuvor durch Aufrufen von [IMAPIForm::Advise](imapiform-advise.md)eingerichteten Formularanzeige ab.
   
 ```cpp
 HRESULT Unadvise(
@@ -37,7 +37,7 @@ HRESULT Unadvise(
 
  _ulConnection_
   
-> in Eine Verbindungsnummer, die die zu abgebrochene Benachrichtigungs Registrierung identifiziert.
+> [in] Eine Verbindungsnummer, die die Benachrichtigungsregistrierung identifiziert, die abgebrochen werden soll.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -47,15 +47,15 @@ S_OK
     
 E_INVALIDARG 
   
-> Die im _ulConnection_ -Parameter übergebene Verbindungsnummer stellt keine gültige Registrierung dar. 
+> Die im  _ulConnection-Parameter übergebene_ Verbindungsnummer stellt keine gültige Registrierung dar. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Formular Betrachter rufen die **IMAPIForm:: Unadvise** -Methode auf, um eine Registrierung für eine Benachrichtigung abzubrechen, die Sie zuerst durch Aufrufen der **IMAPIForm:: Advise** -Methode festgelegt haben. 
+Formularbetrachter rufen die **IMAPIForm::Unadvise-Methode** auf, um eine Registrierung für Benachrichtigungen abbricht, die sie zuerst durch Aufrufen der **IMAPIForm::Advise-Methode eingerichtet** haben. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-VerWerfen Sie den Zeiger, den Sie in der View Advise-Senke des Formular Viewers halten, durch Aufrufen der [IUnknown:: Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) -Methode. Im Allgemeinen wird die **Freigabe** während des **Unadvise** -Aufrufs aufgerufen. Wenn jedoch ein anderer Thread gerade eine der [IMAPIViewAdviseSink](imapiviewadvisesinkiunknown.md) -Methoden für die View Advise-Senke aufruft, verzögern Sie den **Release** -Aufruf, bis die **IMAPIViewAdviseSink** -Methode zurückgegeben wird. 
+Verwerfen Sie den Zeiger, den Sie an der Ansichtsanzeige der Formularanzeige halten, indem Sie die [IUnknown::Release-Methode](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) aufrufen. Im Allgemeinen **wird Release** während des **Unadvise-Aufrufs** aufgerufen. Wenn jedoch ein anderer Thread eine der [IMAPIViewAdviseSink-Methoden](imapiviewadvisesinkiunknown.md) für die Ansichtssenke aufruft, verzögern Sie den **Release-Aufruf,** bis die **IMAPIViewAdviseSink-Methode** zurückgegeben wird. 
   
 ## <a name="see-also"></a>Siehe auch
 

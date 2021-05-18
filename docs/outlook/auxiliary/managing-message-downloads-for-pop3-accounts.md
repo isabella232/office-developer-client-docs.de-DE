@@ -24,9 +24,9 @@ Das Post Office Protocol (POP) gibt ein Protokoll auf Anwendungsebene für ein e
   
 Nachrichten für ein POP-Konto werden durch eindeutige Bezeichner (UIDs) identifiziert. Ein e-Mail-Client, der e-Mail-Nachrichten auf dem Server lässt verwendet den UIDL-Befehl UIDL-Karte abrufen, die jede Nachricht zuordnet, die auf das Postfach, um die UID geliefert wurde. Der Client erhält den UIDL-Verlauf auch für Nachrichten, die gedownloadet oder für den Posteingang auf dem Client gelöscht wurden. Basierend auf den UIDL-Verlauf, kann der Client bestimmen, welche Nachrichten sind neu und heruntergeladen werden sollen.
 
-- [Suchen des Nachrichten downloadverlaufs für ein POP3-Konto](locating-the-message-download-history-for-a-pop3-account.md): in diesem Thema wird beschrieben, wie ein e-Mail-Client auf die [pidtagattachdatabinary (](https://msdn.microsoft.com/library/3b0a8b28-863e-4b96-a4c0-fdb8f40555b9%28Office.15%29.aspx) -Eigenschaft zugreift, um den UIDL-Verlauf für Nachrichten im Client-Posteingang eines POP3-Kontos abzurufen. 
+- Suchen des Nachrichtendownloadverlaufs für ein [POP3-Konto:](locating-the-message-download-history-for-a-pop3-account.md)In diesem Thema wird beschrieben, wie ein E-Mail-Client auf die [PidTagAttachDataBinary-Eigenschaft](https://msdn.microsoft.com/library/3b0a8b28-863e-4b96-a4c0-fdb8f40555b9%28Office.15%29.aspx) zusteuert, um den #A0 für Nachrichten im Client posteingang eines POP3-Kontos zu erhalten. 
     
-- [Analysieren des Nachrichten downloadverlaufs für ein POP3-Konto](parsing-the-message-download-history-for-a-pop3-account.md): in diesem Thema wird beschrieben, wie Sie das POP3-BLOB analysieren, das den UIDL-Verlauf für Nachrichten im Client-postEINGANG eines POP3-Kontos darstellt, um die Nachrichten zu identifizieren, die heruntergeladen oder gelöscht wurden. Konto.
+- [Analysieren](parsing-the-message-download-history-for-a-pop3-account.md)des Nachrichtendownloadverlaufs für ein POP3-Konto: In diesem Thema wird beschrieben, wie sie den POP3-BLOB analysieren, der den UIDL-Verlauf für Nachrichten im Client posteingang eines POP3-Kontos darstellt, um die Nachrichten zu identifizieren, die für dieses Konto heruntergeladen oder gelöscht wurden.
     
 ## <a name="see-also"></a>Siehe auch
 

@@ -25,12 +25,12 @@ ms.locfileid: "33411890"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl der Bytes, die für eine neue [SRowSet](srowset.md) -Struktur reserviert werden sollen, die eine angegebene Anzahl von Zeilen enthält, die durch [SRow](srow.md) -Strukturen dargestellt werden. 
+Berechnet die Anzahl der Bytes, die für eine neue [SRowSet-Struktur](srowset.md) zugewiesen werden sollen, die eine angegebene Anzahl von Zeilen enthält, die durch [SRow-Strukturen dargestellt](srow.md) werden. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |**SRowSet** <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |**SRowSet** <br/> |
    
 ```cpp
 CbNewSRowSet (_crow)
@@ -38,9 +38,9 @@ CbNewSRowSet (_crow)
 
 ## <a name="parameters"></a>Parameter
 
- __Crow_
+ _ _krähe_
   
-> Anzahl der **SRow** -Strukturen, die die Anzahl der Zeilen angeben, die in die neue **SRowSet** -Struktur eingeschlossen werden sollen. 
+> Anzahl der **SRow-Strukturen,** die die Anzahl der Zeilen angeben, die in die neue **SRowSet-Struktur eingeschlossen werden** sollen. 
     
 ## <a name="see-also"></a>Siehe auch
 

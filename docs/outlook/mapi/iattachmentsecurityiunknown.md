@@ -25,7 +25,7 @@ ms.locfileid: "33411414"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ermöglicht Microsoft Outlook 2010-und Microsoft Outlook 2013-Lösungen herauszufinden, ob eine Anlage als unsicher und zum Anzeigen und indizieren gesperrt ist.
+Ermöglicht Microsoft Outlook 2010 und Microsoft Outlook 2013-Lösungen herauszufinden, ob eine Anlage als unsicher gilt und zum Anzeigen und Indizierung gesperrt ist.
   
 |||
 |:-----|:-----|
@@ -35,11 +35,11 @@ Ermöglicht Microsoft Outlook 2010-und Microsoft Outlook 2013-Lösungen herauszu
 
 |||
 |:-----|:-----|
-|[IAttachmentSecurity::IsAttachmentBlocked](iattachmentsecurity-isattachmentblocked.md) <br/> |Überprüft, ob eine angegebene Anlage für das Anzeigen und Indizieren von Outlook 2010 oder Outlook 2013 blockiert wird.  <br/> |
+|[IAttachmentSecurity::IsAttachmentBlocked](iattachmentsecurity-isattachmentblocked.md) <br/> |Überprüft, ob eine angegebene Anlage von Outlook 2010 oder Outlook 2013 zur Anzeige und Indizierung blockiert wird.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Outlook 2010-und Outlook 2013-Lösungen können diese Schnittstelle Abfragen, um festzustellen, ob eine Anlage blockiert ist. Die Anlagen, die von Outlook 2010 oder Outlook 2013 blockiert werden, unterscheiden sich je nach Konfiguration von Outlook 2010 oder Outlook 2013 und den Richtlinien, die ein Administrator angewendet hat.
+Outlook 2010- und Outlook 2013-Lösungen können diese Schnittstelle abfragen, um zu sehen, ob eine Anlage blockiert ist. Die von Outlook 2010 oder Outlook 2013 blockierten Anlagen hängen davon ab, wie Outlook 2010 oder Outlook 2013 konfiguriert wurde und welche Richtlinien ein Administrator angewendet hat.
   
 ## <a name="see-also"></a>Siehe auch
 

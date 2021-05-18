@@ -1,5 +1,5 @@
 ---
-title: Datenblöcke (Access Custom Web App)
+title: Datenblöcke (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,19 +13,19 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33411330"
 ---
-# <a name="data-blocks-access-custom-web-app"></a>Datenblöcke (Access Custom Web App)
+# <a name="data-blocks-access-custom-web-app"></a>Datenblöcke (benutzerdefinierte Access-Web-App)
 
 > [!IMPORTANT]
 > Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
-- [CreateRecord-Daten Block (Access Custom Web App)](createrecord-data-block-access-custom-web-app.md)
+- [CreateRecord Data Block (benutzerdefinierte Access-Web-App)](createrecord-data-block-access-custom-web-app.md)
     
-- [Bearbeitendatensatz-Daten Block (Access Custom Web App)](editrecord-data-block-access-custom-web-app.md)
+- [EditRecord Data Block (benutzerdefinierte Access-Web-App)](editrecord-data-block-access-custom-web-app.md)
     
-- [Fürjedendatensatz-Daten Block (Access Custom Web App)](foreachrecord-data-block-access-custom-web-app.md)
+- [ForEachRecord Data Block (benutzerdefinierte Access-Web-App)](foreachrecord-data-block-access-custom-web-app.md)
     
-- [LookupRecord-Daten Block (Access Custom Web App)](lookuprecord-data-block-access-custom-web-app.md)
+- [LookupRecord Data Block (benutzerdefinierte Access-Web-App)](lookuprecord-data-block-access-custom-web-app.md)
     
 

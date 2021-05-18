@@ -22,7 +22,7 @@ Führt den identifizierten Befehl aus.
   
 ## <a name="syntax"></a>Syntax
 
- **DoCmd** ( _CommandID_)
+ **DOCMD**( _commandID_)
   
 ### <a name="parameters"></a>Parameter
 
@@ -30,9 +30,9 @@ Führt den identifizierten Befehl aus.
 |:-----|:-----|:-----|:-----|
 | _commandID_ <br/> |Erforderlich  <br/> |**Number** <br/> | Der auszuführende Befehl.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Eine Liste der Befehle, die mit der DOCMD-Funktion unterstützt werden, finden Sie im Thema "DoCmd/DOCMD-Befehle" in der Microsoft Visio 2013-AutomatisierungsReferenz. 
+Eine Liste der Befehle, die mit der DOCMD-Funktion unterstützt werden, finden Sie im Thema "DoCmd/DOCMD-Befehle" in der Microsoft Visio 2013 Automation Reference. 
   
 ## <a name="example"></a>Beispiel
 

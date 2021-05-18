@@ -24,33 +24,33 @@ Gibt den Anzeigenamen des Kontos zurück, das die Nachricht übermittelt hat.
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidInetAcctName  <br/> |
 |Eigenschaftensatz:  <br/> |PSETID_Common  <br/> |
-|Long-ID (Deckel):  <br/> |0x00008580  <br/> |
+|Lange ID (LID):  <br/> |0x00008580  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
-|Bereich:  <br/> |Allgemeine Nachrichtenübermittlung  <br/> |
+|Bereich:  <br/> |Allgemeines Messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Diese Eigenschaft sollte den gleichen Wert enthalten, der von der Account Management API-Eigenschaft [PROP_ACCT_NAME](prop_acct_name.md) für das Konto zurückgegeben wird, das die Nachricht übermittelt hat. 
+Diese Eigenschaft sollte denselben Wert enthalten, der von der Account Management-API-Eigenschaft [PROP_ACCT_NAME](prop_acct_name.md) für das Konto zurückgegeben wird, das die Nachricht übermittelt hat. 
   
-Nachrichtenspeicher Anbieter setzen diese benannte Eigenschaft und [pidlidinternetaccountstamp (](pidlidinternetaccountstamp.md) so fest, dass die folgenden Aktionen ausgeführt werden: 
+Nachrichtenspeicheranbieter machen diese benannte Eigenschaft und [PidLidInternetAccountStamp](pidlidinternetaccountstamp.md) verfügbar, sodass die folgenden Aktionen auftreten: 
   
-- Wenn ein Benutzer auf **alle Antworten** in einer e-Mail-Nachricht klickt, entfernt Outlook die e-Mail-Adresse, die dem Konto zugeordnet ist, und wird auf die Nachricht aus der Empfängerliste der Antwort gestempelt. Dieses Verhalten tritt auf, es sei denn, diese e-Mail-Adresse ist der Absender der ursprünglichen Nachricht. 
+- Wenn ein Benutzer **in** einer E-Mail auf Alle antworten klickt, entfernt Outlook die E-Mail-Adresse, die dem Konto zugeordnet ist, und wird in der Nachricht aus der Empfängerliste der Antwort gestempelt. Dieses Verhalten tritt auf, es sei denn, diese E-Mail-Adresse ist der Absender der ursprünglichen Nachricht. 
     
-- Standardmäßig sendet Outlook Antworten und weitergeleitete Nachrichten über das Konto, das auf die ursprüngliche Nachricht gestempelt ist.
+- Standardmäßig sendet Outlook Antworten und weitergeleitete Nachrichten über das Konto, das in der ursprünglichen Nachricht gestempelt ist.
     
-In der Regel übermittelt der Outlook-Protokoll-Manager Nachrichten, und Outlook legt die Eigenschaften **pidlidinternetaccountname (** und **pidlidinternetaccountstamp (** fest, um das Konto anzugeben, das die Nachricht zugestellt hat. Wenn jedoch ein Nachrichtenspeicher eng mit einem Transport verbunden ist, stellt der Outlook-Protokoll-Manager keine Nachrichten bereit, und Outlook kann diese Eigenschaften nicht festlegen. In diesem Szenario ruft Outlook die [IMAPIProp:: GetIDsFromNames](https://msdn.microsoft.com/library/e3f501a4-a8ee-43d7-bd83-c94e7980c398%28Office.15%29.aspx) -Funktion auf. Wenn der Nachrichtenspeicher Anbieter diese benannten Eigenschaften verfügbar machen möchte, sollte er **IMAPIProp:: GetIDsFromNames** implementieren und Eigenschaftstags über den Ausgabeparameter *lppPropTags* zurückgeben. Outlook kann dann die [IMAPIProp::](https://msdn.microsoft.com/library/1c7a9cd2-d765-4218-9aee-52df1a2aae6c%28Office.15%29.aspx) GetProps-Methode mithilfe dieser Eigenschaftstags aufrufen, und der Nachrichtenspeicher Anbieter kann den Kontonamen und den Stempel des gewünschten Kontos zurückgeben. 
+In der Regel übermittelt der Outlook-Protokoll-Manager Nachrichten, und Outlook legt die **Eigenschaften PidLidInternetAccountName** und **PidLidInternetAccountStamp** fest, um das Konto anzugeben, das die Nachricht übermittelt hat. Wenn ein Nachrichtenspeicher jedoch eng mit einem Transport gekoppelt ist, liefert der Outlook-Protokoll-Manager keine Nachrichten, und Outlook kann diese Eigenschaften nicht festlegen. In diesem Szenario ruft Outlook die [IMAPIProp::GetIDsFromNames-Funktion](https://msdn.microsoft.com/library/e3f501a4-a8ee-43d7-bd83-c94e7980c398%28Office.15%29.aspx) auf. Wenn der Nachrichtenspeicheranbieter diese benannten Eigenschaften verfügbar machen möchte, sollte er **IMAPIProp::GetIDsFromNames** implementieren und Eigenschaftstags über den Ausgabeparameter *lppPropTags zurückgeben.* Outlook kann dann die [IMAPIProp::GetProps-Methode](https://msdn.microsoft.com/library/1c7a9cd2-d765-4218-9aee-52df1a2aae6c%28Office.15%29.aspx) mithilfe dieser Eigenschaftstags aufrufen, und der Nachrichtenspeicheranbieter kann den Kontonamen und den Stempel des gewünschten Kontos zurückgeben. 
   
-Zur Unterstützung dieser benannten Eigenschaften sollten Speicheranbieter davon ausgehen, dass Outlook **IMAPIProp:: GetIDsFromNames** zum Abrufen des Eigenschaftentags für diese Eigenschaft verwendet. Outlook gibt die folgenden Werte für die [MAPINAMEID](https://msdn.microsoft.com/library/9a92e9cd-8282-4cf0-93af-4089b3763594%28Office.15%29.aspx) -Struktur an, die dieser benannten Eigenschaft entspricht, die als Teil des Arrays übergeben wird, auf das durch den Eingabeparameter *lppPropNames* von **IMAPIProp:: GetIDsFromNames**verwiesen wird. 
+Zur Unterstützung dieser benannten Eigenschaften sollten Speicheranbieter erwarten, dass Outlook **IMAPIProp::GetIDsFromNames** verwendet, um das Eigenschaftstag für diese Eigenschaft zu erhalten. Outlook gibt die folgenden Werte für die [MAPINAMEID-Struktur](https://msdn.microsoft.com/library/9a92e9cd-8282-4cf0-93af-4089b3763594%28Office.15%29.aspx) an, die dieser benannten Eigenschaft entspricht, die als Teil des Arrays übergeben wird, auf das der Eingabeparameter  *lppPropNames*  von **IMAPIProp::GetIDsFromNames** verweist. 
   
 |||
 |:-----|:-----|
 |lpGuid:  <br/> |PSETID_Common  <br/> |
 |ulKind:  <br/> |MNID_ID  <br/> |
-|Art. lID:  <br/> |dispidInetAcctName  <br/> |
+|Kind.lID:  <br/> |dispidInetAcctName  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 - [Über die Konto-API](about-the-account-management-api.md)
 - [Konstanten (Account Management API)](constants-account-management-api.md)
-- [Kanonische Pidlidinternetaccountname (-Eigenschaft](https://msdn.microsoft.com/library/29bedadf-903d-419d-804d-dc8bd92b745d%28Office.15%29.aspx)
+- [PidLidInternetAccountName (kanonische Eigenschaft)](https://msdn.microsoft.com/library/29bedadf-903d-419d-804d-dc8bd92b745d%28Office.15%29.aspx)
 

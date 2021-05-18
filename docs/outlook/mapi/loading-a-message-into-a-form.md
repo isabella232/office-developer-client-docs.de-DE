@@ -21,18 +21,18 @@ ms.locfileid: "33412415"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Wenn Sie eine vorhandene Nachricht mithilfe eines Formular Servers in ein Formular laden möchten, verwenden Sie eine der folgenden Strategien.
+Verwenden Sie eine der folgenden Strategien, um eine vorhandene Nachricht mithilfe eines Formularservers in ein Formular zu laden.
   
-- Rufen Sie [IMAPISession::P repareform](imapisession-prepareform.md) , um ein Token zu erstellen, und klicken Sie dann auf [IMAPISession:: ShowForm](imapisession-showform.md) , um das Formular anzuzeigen. 
+- Rufen [Sie IMAPISession::P repareForm](imapisession-prepareform.md) auf, um ein Token zu erstellen, und dann [IMAPISession::ShowForm](imapisession-showform.md) zum Anzeigen des Formulars. 
     
-- Rufen Sie [IMAPIFormMgr:: LoadForm](imapiformmgr-loadform.md)auf. 
+- Rufen [Sie IMAPIFormMgr::LoadForm auf.](imapiformmgr-loadform.md) 
     
-Die Verwendung der **PrepareForm** -und **ShowForm** -Strategie ist vergleichsweise einfach, führt jedoch zu Formularen, die in Bezug auf Ihren Client Modal sind. Der Grund ist, dass der Aufruf von **ShowForm** erst zurückgegeben wird, wenn das Formular beendet wurde. Wenn Sie Formulare asynchron behandeln müssen, verwenden Sie diese Strategie nicht. 
+Die **Verwendung der PrepareForm-** und **ShowForm-Strategie** ist vergleichsweise einfach, führt jedoch zu modalen Formularen im Hinblick auf Ihren Client. Der Grund dafür ist, dass der Aufruf von **ShowForm** erst zurückt, wenn das Formular beendet wurde. Wenn Sie Formulare asynchron behandeln müssen, verwenden Sie diese Strategie nicht. 
   
-Die Verwendung der **LoadForm** -Strategie ist schwieriger, da die Methode mehrere Parameter erfordert. Diese Parameter weisen den Formular-Manager an, den richtigen Formularserver im richtigen Kontext zu starten und die entsprechende Meldung anzuzeigen. Wenn der Formularserver bereits aktiv ist, wird die Nachricht vom Formular-Manager in den Formularserver geladen, ohne eine neue Instanz des Formular Servers zu starten. 
+Die **Verwendung der LoadForm-Strategie** ist schwieriger, da die Methode mehrere Parameter erfordert. Mit diesen Parametern wird der Formular-Manager angewiesen, den richtigen Formularserver im richtigen Kontext zu starten und die richtige Nachricht anzeigen zu können. Wenn der Formularserver bereits ausgeführt wird, lädt der Formular-Manager die Nachricht auf den Formularserver, ohne eine neue Instanz des Formularservers zu starten. 
   
-Um anzugeben, welcher Formularserver gestartet werden soll, übergeben Sie die vom Zielserver verarbeitete Nachrichtenklasse im Inhalt des _lpszMessageClass_ -Parameters. Die entsprechende Nachrichtenklasse kann ermittelt werden, indem die **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md))-Eigenschaft der zu ladenden Nachricht abgerufen wird. Manchmal gibt es keinen Formularserver für die angegebene Nachrichtenklasse, sondern nur einen Formularserver, der Nachrichten verarbeitet, die zur Oberklasse der Nachricht gehören. Wenn Sie es vorziehen, die Nachricht nur von einem Formularserver zu laden, der speziell für die Verarbeitung von Nachrichten dieser Klasse vorgesehen ist, legen Sie das MAPIFORM_EXACTMATCH-Flag im **LoadForm** -Aufruf fest. Weitere Informationen finden Sie unter [MAPI Message Classes](mapi-message-classes.md).
+Um anzugeben, welcher Formularserver gestartet werden soll, übergeben Sie die nachrichtenklasse, die vom Zielserver verarbeitet wird, im Inhalt des _lpszMessageClass-Parameters._ Die entsprechende Nachrichtenklasse kann durch Abrufen der **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) -Eigenschaft der zu ladenden Nachricht bestimmt werden. Manchmal gibt es keinen Formularserver für die angegebene Nachrichtenklasse, sondern nur einen Formularserver, der Nachrichten verarbeitet, die zur Überklasse der Nachricht gehören. Wenn Sie es vorziehen, dass die Nachricht nur von einem Formularserver geladen wird, der speziell für die Verarbeitung von Nachrichten dieser Klasse gedacht ist, legen Sie das MAPIFORM_EXACTMATCH im **LoadForm-Aufruf** fest. Weitere Informationen finden Sie unter [MAPI Message Classes](mapi-message-classes.md).
   
- **LoadForm** erfordert auch einen Zeiger auf die Nachrichtenwebsite und den Ansichtskontext des Viewers und den Wert für die **PR_MSG_STATUS** ([pidtagmessagestatus (](pidtagmessagestatus-canonical-property.md)) und **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) der Zielnachricht. Eigenschaften.
+ **LoadForm** erfordert außerdem einen Zeiger auf die Nachrichtenwebsite und den Ansichtskontext des Betrachters sowie den Wert für die **Eigenschaften PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md)) und **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) der Zielnachricht.
   
 

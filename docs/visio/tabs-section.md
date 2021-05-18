@@ -20,9 +20,9 @@ ms.locfileid: "33414368"
 
 Enthält Zellen für Shapes oder Formatvorlagen, die die Tabstoppposition und -ausrichtung steuern.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Sie können diese Werte auch festlegen, indem Sie die Registerkarte Register **Karten** im Dialogfeld **Text** verwenden (Klicken Sie auf der Registerkarte **Start** in der Gruppe **Schriftart** auf Dialogfeldstartprogramm), oder verwenden Sie das **Textlineal**. Um das **Textlineal**anzuzeigen, klicken Sie mit der rechten Maustaste im Text Bearbeitungsmodus auf den Text, und klicken Sie dann im kontextMenü auf **Textlineal** . 
+Sie können diese Werte auch festlegen, indem Sie die Registerkarte **Registerkarten** im Dialogfeld **Text** verwenden (klicken Sie in der Gruppe **Schriftart** auf der Registerkarte **Start** auf dialogfeldstartfeld) oder mithilfe des **Textlineals .** Um das **Textlineal anzuzeigen,** klicken Sie im Textbearbeitungsmodus mit der rechten Maustaste auf den Text, und klicken Sie dann im Kontextmenü auf **Textlineal.** 
   
 Sie können Tabstopps für bestimmte Zeichen setzen, indem Sie den Text markieren und dann den Tabstopp einrichten. Wenn Sie Tabstopps für bestimmte Zeichen einrichten, wird eine neue Zeile in das ShapeSheet-Fenster eingefügt. Im Namen der Zeile lässt sich die Anzahl von Zeichen ablesen, die der Tabstopp enthält.
   

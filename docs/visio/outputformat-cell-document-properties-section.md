@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251617
 localization_priority: Normal
 ms.assetid: 17238019-c800-5d3a-32f6-fb0008d4e25f
-description: Bestimmt das Ausgabeformat für eine Zeichnung. Zeichnungs Seiten sind normalerweise zum Drucken formatiert (Standard); Sie können jedoch auch andere Ausgabeformate auswählen.
+description: Legt das Ausgabeformat für eine Zeichnung fest. Zeichenblätter werden normalerweise für den Ausdruck formatiert (Standardeinstellung). Sie können jedoch auch andere Ausgabeformate auswählen.
 ms.openlocfilehash: 09fa34095772936ab1c6a3025ed1884a533f55e1
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,7 +18,7 @@ ms.locfileid: "33413885"
 ---
 # <a name="outputformat-cell-document-properties-section"></a>Zelle "OutputFormat" (Abschnitt "Document Properties")
 
-Bestimmt das Ausgabeformat für eine Zeichnung. Zeichnungs Seiten sind normalerweise zum Drucken formatiert (Standard); Sie können jedoch auch andere Ausgabeformate auswählen.
+Legt das Ausgabeformat für eine Zeichnung fest. Zeichenblätter werden normalerweise für den Ausdruck formatiert (Standardeinstellung). Sie können jedoch auch andere Ausgabeformate auswählen.
   
 |**Wert**|**Ausgabeformat**|
 |:-----|:-----|
@@ -26,19 +26,19 @@ Bestimmt das Ausgabeformat für eine Zeichnung. Zeichnungs Seiten sind normalerw
 | 1  <br/> | PowerPoint-Präsentation  <br/> |
 | 2  <br/> | HTML- oder GIF-Ausgabe  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle OutputFormat aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die OutputFormat-Zelle anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | OutputFormat  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle OutputFormat aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die OutputFormat-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowDoc** <br/> |
 | Zellenindex:  <br/> |**visDocOutputFormat** <br/> |
    

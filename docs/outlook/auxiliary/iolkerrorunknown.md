@@ -15,7 +15,7 @@ ms.locfileid: "32321854"
 ---
 # <a name="iolkerrorunknown"></a>IOlkErrorUnknown
 
-Enthält zusätzliche Informationen zum letzten Fehler.
+Stellt zusätzliche Informationen zum letzten Fehler zur Verfügung.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -29,11 +29,11 @@ Enthält zusätzliche Informationen zum letzten Fehler.
 
 |||
 |:-----|:-----|
-|[Getlasterroraufzurufen](iolkerrorunknown-getlasterror.md) <br/> |Ruft eine Meldungszeichenfolge für den angegebenen Fehler ab.  <br/> |
+|[GetLastError](iolkerrorunknown-getlasterror.md) <br/> |Ruft eine Nachrichtenzeichenfolge für den angegebenen Fehler ab.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Diese Schnittstelle bietet zusätzliche Informationen zu einem Fehler in [IOlkAccountManager](iolkaccountmanager.md), [IOlkAccountNotify](iolkaccountnotify.md)und [IOlkAccount](iolkaccount.md). Es ist auch die Basisschnittstelle für **IOlkAccountManager**, **IOlkAccountNotify**und **IOlkAccount**. 
+Diese Schnittstelle enthält zusätzliche Informationen zu einem Fehler in [IOlkAccountManager](iolkaccountmanager.md), [IOlkAccountNotify](iolkaccountnotify.md)und [IOlkAccount](iolkaccount.md). Es ist auch die Basisschnittstelle für **IOlkAccountManager**, **IOlkAccountNotify** und **IOlkAccount**. 
   
 ## <a name="see-also"></a>Siehe auch
 

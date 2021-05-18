@@ -25,7 +25,7 @@ ms.locfileid: "33412457"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft den Eigenschaftswert einer oder mehrerer Eigenschaften eines Objekts ab.
+Ruft den Eigenschaftswert einer oder mehrere Eigenschaften eines Objekts ab.
   
 ```cpp
 HRESULT GetProps(
@@ -40,23 +40,23 @@ HRESULT GetProps(
 
  _lpPropTagArray_
   
-> in Ein Zeiger auf ein Array von Property-Tags, die die Eigenschaften identifizieren, deren Werte abgerufen werden sollen. Der _lpPropTagArray_ -Parameter muss entweder NULL sein, wodurch angegeben wird, dass Werte für alle Eigenschaften des Objekts zurückgegeben werden sollen, oder auf eine [SPropTagArray](sproptagarray.md) -Struktur verweisen, die mindestens ein Property-Tag enthält. 
+> [in] Ein Zeiger auf ein Array von Eigenschaftstags, die die Eigenschaften identifizieren, deren Werte abgerufen werden sollen. Der  _lpPropTagArray-Parameter_ muss entweder NULL sein, der angibt, dass Werte für alle Eigenschaften des Objekts zurückgegeben werden sollen, oder auf eine [SPropTagArray-Struktur](sproptagarray.md) verweisen, die ein oder mehrere Eigenschaftstags enthält. 
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die das Format für Eigenschaften mit dem Typ PT_UNSPECIFIED angibt. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die das Format für Eigenschaften angibt, deren Typ PT_UNSPECIFIED. Das folgende Flag kann festgelegt werden:
     
 MAPI_UNICODE 
   
-> Die Zeichenfolgenwerte für diese Eigenschaften sollten im Unicode-Format zurückgegeben werden. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, sollten die Zeichenfolgenwerte im ANSI-Format zurückgegeben werden.
+> Die Zeichenfolgenwerte für diese Eigenschaften sollten im Unicode-Format zurückgegeben werden. Wenn das MAPI_UNICODE nicht festgelegt ist, sollten die Zeichenfolgenwerte im ANSI-Format zurückgegeben werden.
     
  _lpcValues_
   
-> Out Ein Zeiger auf die Anzahl von Eigenschaftswerten, auf die durch den _lppPropArray_ -Parameter verwiesen wird. Wenn _lppPropArray_ ist, ist der Inhalt des _lpcValues_ -Parameters 0 (null). 
+> [out] Ein Zeiger auf eine Anzahl von Eigenschaftswerten, auf die der  _lppPropArray-Parameter_ verweist. Wenn  _lppPropArray_ NULL ist, ist der Inhalt des  _lpcValues-Parameters_ null. 
     
  _lppPropArray_
   
-> Out Ein Zeiger auf einen Zeiger auf die abgerufenen Eigenschaftswerte.
+> [out] Ein Zeiger auf einen Zeiger auf die abgerufenen Eigenschaftswerte.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -66,69 +66,69 @@ S_OK
     
 MAPI_W_ERRORS_RETURNED 
   
-> Der Aufruf war insgesamt erfolgreich, aber auf eine oder mehrere Eigenschaften konnte nicht zugegriffen werden. Der **aulPropTag** -Member des Eigenschaftswerts für jede nicht verfügbare Eigenschaft hat den Eigenschaftentyp PT_ERROR und den Bezeichner 0 (null). Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich behandelt werden. Verwenden Sie zum Testen dieser Warnung das **HR_FAILED** -Makro. Weitere Informationen finden Sie unter [Verwenden von Makros zur Fehlerbehandlung](using-macros-for-error-handling.md).
+> Der Aufruf war insgesamt erfolgreich, aber auf eine oder mehrere Eigenschaften konnte nicht zugegriffen werden. Das **aulPropTag-Element** des Eigenschaftswerts für jede nicht verfügbare Eigenschaft hat den Eigenschaftstyp PT_ERROR und den Bezeichner Null. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich behandelt werden. Verwenden Sie zum Testen dieser Warnung das **HR_FAILED** Makro. Weitere Informationen finden Sie unter [Using Macros for Error Handling](using-macros-for-error-handling.md).
     
 MAPI_E_INVALID_PARAMETER 
   
-> 0 (null) wurde im **cValues** -Element der **SPropTagArray** -Struktur übergeben, auf die durch _lpPropTagArray_verwiesen wurde.
+> Null wurde im **cValues-Element** der **SPropTagArray-Struktur** übergeben, auf das _lpPropTagArray verweist._
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPIProp::** GetProps-Methode ruft die Eigenschaftswerte einer oder mehrerer Eigenschaften eines Objekts ab. 
+Die **IMAPIProp::GetProps-Methode** ruft die Eigenschaftswerte einer oder mehreren Eigenschaften eines Objekts ab. 
   
-Die Eigenschaftswerte werden in der Reihenfolge zurückgegeben, in der Sie angefordert wurden (die Reihenfolge der Eigenschaften im Eigenschaftentag-Array, auf die durch _lpPropTagArray_ verwiesen wird, entspricht der Reihenfolge im Array von Eigenschaftswert Strukturen, auf die durch _lppPropArray _). 
+Die Eigenschaftswerte werden in der reihenfolge zurückgegeben, in der sie angefordert wurden (d. h. die Reihenfolge der Eigenschaften im Eigenschaftentagarray, auf die  _von lpPropTagArray_ verwiesen wird, entspricht der Reihenfolge im Array der Eigenschaftenwertstrukturen, auf die von  _lppPropArray_ verwiesen wird). 
   
-Die in den **aulPropTag** -Elementen des Property-Tag-Arrays angegebenen Eigenschaftentypen geben den Typ des Werts an, der im **value** -Element jeder Eigenschaftswert Struktur zurückgegeben werden soll. Wenn der Aufrufer den Typ einer Eigenschaft jedoch nicht kennt, kann der Typ im **aulPropTag** -Element stattdessen auf PT_UNSPECIFIED festgelegt werden. Beim Abrufen des Werts legt getProps den richtigen Typ im **aulPropTag** -Element der Eigenschaftswert Struktur für die Eigenschaft fest. **** 
+Die in den **aulPropTag-Membern** des Eigenschaftstagarrays angegebenen Eigenschaftstypen geben den Werttyp an, der im **Value-Element** jeder Eigenschaftswertstruktur zurückgegeben werden soll. Wenn der Aufrufer jedoch den Typ einer Eigenschaft nicht kennt, kann der Typ im **aulPropTag-Element** stattdessen auf PT_UNSPECIFIED. Beim Abrufen des **Werts legt GetProps** den richtigen Typ im **aulPropTag-Element** der Eigenschaftswertstruktur für die Eigenschaft fest. 
   
-Wenn Eigenschaftstypen in der **SPropTagArray** in _lpPropTagArray_angegeben werden, haben die Eigenschaftswerte in der **SPropValue** , die in _lppPropArray_ zurückgegeben werden, Typen, die genau mit den angeforderten Typen übereinstimmen, es sei denn, ein Fehlerwert wird zurückgegeben statt. 
+Wenn Eigenschaftstypen im **SPropTagArray** in _lpPropTagArray_ angegeben werden, verfügen die Eigenschaftswerte in der in _lppPropArray_ zurückgegebenen **SPropValue-Eigenschaft** über Typen, die exakt mit den angeforderten Typen übereinstimmen, es sei denn, stattdessen wird ein Fehlerwert zurückgegeben. 
   
-Zeichenfolgeneigenschaften können einen von zwei Eigenschaftentypen aufweisen: PT_UNICODE zur Darstellung des Unicode-Formats und PT_STRING8 zur Darstellung des ANSI-Formats. Wenn das MAPI_UNICODE-Flag im _ulFlags_ -Parameter festgelegt ist, wird der Wert im Unicode-Format zurückgegeben, wenn GetProps das entsprechende Format für eine String-Eigenschaft nicht ermitteln kann. **** **** GetProps kann in den folgenden Situationen keinen genauen String-Eigenschaftentyp bestimmen: 
+Zeichenfolgeneigenschaften können einen von zwei Eigenschaftstypen aufweisen: PT_UNICODE, um das Unicode-Format und PT_STRING8 an das ANSI-Format zu stellen. Wenn das MAPI_UNICODE im  _ulFlags-Parameter_ festgelegt ist, gibt GetProps immer dann seinen Wert im Unicode-Format zurück, wenn **GetProps** das entsprechende Format für eine Zeichenfolgeneigenschaft nicht bestimmen kann. **GetProps kann** in den folgenden Situationen keinen genauen Zeichenfolgeneigenschaftentyp bestimmen: 
   
-- Der Parameter _lpPropTagArray_ wird auf NULL festgelegt, um alle Eigenschaften anzufordern. 
+- Der  _lpPropTagArray-Parameter_ ist auf NULL festgelegt, um alle Eigenschaften an fordern. 
     
-- Das **aulPropTag** -Element enthält den Wert PT_UNSPECIFIED als Eigenschafts im Property-Tag-Array. 
+- Das **Element aulPropTag** enthält den Wert PT_UNSPECIFIED eigenschaftstyp im Eigenschaftentagarray. 
     
-Wenn der Parameter _lpPropTagArray_ auf NULL festgelegt ist, um alle Eigenschaften des Objekts abzurufen, und keine Eigenschaften vorhanden sind, führt GetProps folgende Aktionen aus: **** 
+Wenn der  _lpPropTagArray-Parameter_ auf NULL festgelegt ist, um alle Eigenschaften des Objekts abzurufen und keine Eigenschaften vorhanden sind, führt **GetProps** die folgenden Schritte aus: 
   
-- Gibt S_OK zurück.
+- Gibt S_OK.
     
-- Legt den count-Wert im **cValues** -Element der Eigenschaftswert Struktur auf 0 fest. 
+- Legt den Count-Wert im **cValues-Element** der Eigenschaftswertstruktur auf 0 fest. 
     
-- Legt den Inhalt von _lpcValues_ auf 0 fest. 
+- Legt den Inhalt von  _lpcValues auf_ 0 fest. 
     
-- Legt _lppPropArray_ auf NULL fest. 
+- Legt  _lppPropArray auf_ NULL fest. 
     
- **** GetProps darf keine Eigenschaften mit mehreren Werten zurückgeben, wenn **cValues** auf 0 festgelegt ist. 
+ **GetProps** darf keine Mehrwerteigenschaften zurückgeben, **wenn cValues** auf 0 festgelegt ist. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Rufen Sie die [MAPIAllocateBuffer](mapiallocatebuffer.md) -Funktion auf, um zunächst Speicher für die [SPropValue](spropvalue.md) -Struktur zu reservieren, auf die von _lpPropTagArray_verwiesen wird; Rufen Sie [MAPIAllocateMore](mapiallocatemore.md) auf, um zusätzlichen Arbeitsspeicher für die Mitglieder der Struktur zu reservieren. 
+Rufen Sie die [MAPIAllocateBuffer-Funktion](mapiallocatebuffer.md) auf, um zunächst Arbeitsspeicher für die [SPropValue-Struktur](spropvalue.md) zu reservieren, auf die  _von lpPropTagArray verwiesen wird._ rufen [Sie MAPIAllocateMore auf,](mapiallocatemore.md) um zusätzlichen Arbeitsspeicher zuzuordnen, der für die Mitglieder der Struktur erforderlich ist. 
   
-Geben Sie MAPI_W_ERRORS_RETURNED zurück, wenn der Wert für eine oder mehrere der angeforderten Eigenschaften nicht abgerufen werden kann. Legen Sie in der Eigenschaftswert Struktur den Typ im **aulPropTag** -Element auf PT_ERROR und den **Wert** Member auf einen Statuscode fest, der den Fehler beschreibt. Wenn Sie beispielsweise eine Zeichenfolge in Unicode konvertieren und Unicode nicht unterstützen, legen Sie den **Wert** Mitglied auf MAPI_E_BAD_CHARWIDTH. Wenn die Eigenschaft zu hoch ist, legen Sie Sie auf MAPI_E_NOT_ENOUGH_MEMORY. Wenn das Objekt die Eigenschaft nicht unterstützt, legen Sie es auf MAPI_E_NOT_FOUND. 
+Geben MAPI_W_ERRORS_RETURNED zurück, wenn Sie den Wert für eine oder mehrere der angeforderten Eigenschaften nicht abrufen können. Legen Sie in der Eigenschaftswertstruktur den Typ im **Element aulPropTag** auf PT_ERROR und value auf einen Statuscode fest, der den Fehler beschreibt.  Wenn Sie beispielsweise eine Zeichenfolge in Unicode konvertieren müssen und Unicode nicht unterstützen, legen Sie das **Value-Element** auf MAPI_E_BAD_CHARWIDTH. Wenn die Eigenschaft zu groß ist, legen Sie sie auf MAPI_E_NOT_ENOUGH_MEMORY. Wenn das Objekt die Eigenschaft nicht unterstützt, legen Sie sie auf MAPI_E_NOT_FOUND. 
   
-Die Implementierung der getProps-Methode **** eines Remote Transportanbieters muss die Eigenschaftswerte des Ordners für vom Aufrufer angeforderte Eigenschaften zurückgeben. Die Implementierung muss folgende Schritte ausführen: 
+Die Implementierung der **GetProps-Methode** durch einen Remotetransportanbieter muss die Eigenschaftswerte des Ordners für vom Aufrufer angeforderte Eigenschaften zurückgeben. Ihre Implementierung muss die folgenden Schritte unternehmen: 
   
-- Weisen Sie ein Eigenschaftswert Array zu, um zum Aufrufer zurückzukehren, und speichern Sie dessen Adresse im für diesen Zweck übergebenen Parameter value Pointer.
+- Weisen Sie ein Eigenschaftenwertarray zu, um an den Aufrufer zurückzukehren und dessen Adresse im Eigenschaftswertzeigerparameter zu speichern, der zu diesem Zweck übergeben wurde.
     
-- Kopieren Sie die Eigenschaftstags aus den Eigenschaften des Ordners in die Eigenschaftstags im Eigenschafts Wertarray entsprechend dem Array von Property- **** Tags, die an GetProps übergeben werden.
+- Kopieren Sie die Eigenschaftstags aus den Eigenschaften des Ordners in die Eigenschaftstags im Eigenschaftswertarray entsprechend dem Array der Eigenschaftstags, die an **GetProps übergeben werden.**
     
-- Stellen Sie sicher, dass der Eigenschaftentyp für alle an getProps übergebenen Eigenschaftstags festgelegt ist. **** Der Aufrufer kann einen Eigenschaftentyp von PT_UNSPECIFIED übergeben, in dem Fall, **** dass GetProps den richtigen Eigenschaftentyp für das Eigenschaftentag festlegen muss. 
+- Stellen Sie sicher, dass der Eigenschaftentyp für alle Eigenschaftstags festgelegt ist, die an **GetProps übergeben werden.** Der Aufrufer kann einen Eigenschaftentyp von PT_UNSPECIFIED übergeben, in diesem Fall **muss GetProps** den richtigen Eigenschaftentyp für dieses Eigenschaftstag festlegen. 
     
-- Legen Sie den Wert jeder Eigenschaft im Eigenschaftswert Array entsprechend dem-Tag fest. Wenn beispielsweise das vom Aufrufer angeforderte Property-Tag **PR_OBJECT_TYPE** ([pidtagobjecttype (](pidtagobjecttype-canonical-property.md)) ist, kann **** GetProps den Wert auf MAPI_FOLDER festlegen. 
+- Legen Sie den Wert der einzelnen Eigenschaften im Eigenschaftswertarray entsprechend ihrem Tag. Wenn das vom Aufrufer angeforderte Eigenschaftstag beispielsweise PR_OBJECT_TYPE **(** [PidTagObjectType](pidtagobjecttype-canonical-property.md)) ist, kann **GetProps** den Wert auf MAPI_FOLDER. 
     
-- Wenn der Aufrufer alle Eigenschaftentags übergibt, die von der Implementierung nicht behandelt werden, können Sie das Property-Tag für diese Eigenschaften auf PT_ERROR festlegen und den Eigenschaftswert auf MAPI_E_NOT_FOUND festlegen.
+- Wenn der Aufrufer eigenschaftstags übergibt, die ihre Implementierung nicht verarbeiten kann, können Sie das Eigenschaftstag auf PT_ERROR für diese Eigenschaften festlegen und den Eigenschaftswert auf MAPI_E_NOT_FOUND.
     
-- Gibt S_OK zurück, wenn keine Fehler aufgetreten sind, oder MAPI_W_ERRORS_RETURNED, wenn Fehler auftraten.
+- Geben S_OK zurück, wenn keine Fehler aufgetreten sind, oder MAPI_W_ERRORS_RETURNED, wenn Fehler aufgetreten sind.
     
-Die Implementierung der getProps-Methode **** eines Remote Transportanbieters muss mindestens die folgenden Eigenschaften unterstützen: 
+Die Implementierung der **GetProps-Methode** eines Remotetransportanbieters muss mindestens die folgenden Eigenschaften unterstützen: 
   
-- **PR_ACCESS** ([Pidtagaccess (](pidtagaccess-canonical-property.md))
+- **PR_ACCESS** ([PidTagAccess](pidtagaccess-canonical-property.md))
     
-- **PR_ACCESS_LEVEL** ([Pidtagaccesslevel (](pidtagaccesslevel-canonical-property.md))
+- **PR_ACCESS_LEVEL** ([PidTagAccessLevel](pidtagaccesslevel-canonical-property.md))
     
-- **PR_ASSOC_CONTENT_COUNT** ([Pidtagassociatedcontentcount (](pidtagassociatedcontentcount-canonical-property.md))
+- **PR_ASSOC_CONTENT_COUNT** ([PidTagAssociatedContentCount](pidtagassociatedcontentcount-canonical-property.md))
     
-- **PR_CONTENT_COUNT** ([Pidtagcontentcount (](pidtagcontentcount-canonical-property.md))
+- **PR_CONTENT_COUNT** ([PidTagContentCount](pidtagcontentcount-canonical-property.md))
     
 - **PR_CREATION_TIME** ([PidTagCreationTime](pidtagcreationtime-canonical-property.md))
     
@@ -136,33 +136,33 @@ Die Implementierung der getProps-Methode **** eines Remote Transportanbieters mu
     
 - **PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))
     
-- **PR_FOLDER_TYPE** ([Pidtagfoldertype (](pidtagfoldertype-canonical-property.md))
+- **PR_FOLDER_TYPE** ([PidTagFolderType](pidtagfoldertype-canonical-property.md))
     
 - **PR_OBJECT_TYPE**
     
-- **PR_SUBFOLDERS** ([Pidtagsubfolders (](pidtagsubfolders-canonical-property.md))
+- **PR_SUBFOLDERS** ([PidTagSubfolders](pidtagsubfolders-canonical-property.md))
     
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Rufen Sie bei Eigenschaften vom Typ PT_OBJECT die [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode anstelle **** von GetProps auf. 
+Rufen Sie für Eigenschaften vom Typ PT_OBJECT [die IMAPIProp::OpenProperty-Methode](imapiprop-openproperty.md) anstelle von **GetProps auf.** 
   
-Für sichere Eigenschaften erwarten Sie Sie nicht, indem Sie getProps mit dem _lppPropTagArray_ -Parameter aufrufen, der auf NULL festgelegt ist. **** Sie müssen den Bezeichner einer sicheren Eigenschaft im **aulPropTag** -Element des Property-Tag-Arrays explizit festlegen, wenn **** Sie GetProps aufrufen. Wann und wie eine sichere Eigenschaft verfügbar ist, liegt beim Dienstanbieter. 
+Für sichere Eigenschaften sollten Sie sie nicht abrufen, indem Sie **GetProps** aufrufen, wenn der  _lppPropTagArray-Parameter_ auf NULL festgelegt ist. Sie müssen den Bezeichner einer sicheren Eigenschaft explizit im **aulPropTag-Element** des Eigenschaftentagarrays festlegen, wenn Sie **GetProps aufrufen.** Wann und wie eine sichere Eigenschaft verfügbar ist, liegt beim Dienstanbieter. 
   
-Freigeben der zurückgegebenen **SPropValue** -Struktur durch Aufrufen der [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion nur, wenn GetProps S_OK oder MAPI_W_ERRORS_RETURNED zurückgibt. **** 
+Geben Sie die **zurückgegebene SPropValue-Struktur** frei, indem Sie die [MAPIFreeBuffer-Funktion](mapifreebuffer.md) nur aufrufen, wenn **GetProps** S_OK oder MAPI_W_ERRORS_RETURNED. 
   
-Wenn **** GetProps MAPI_W_ERRORS_RETURNED zurückgibt, da der Zugriff auf eine oder mehrere Eigenschaften nicht möglich ist, überprüfen Sie die Eigenschaftentags der zurückgegebenen Eigenschaften. Für die Eigenschaften des Fehlers werden die folgenden Werte in der Eigenschaftswert Struktur festgelegt: 
+Wenn **GetProps** MAPI_W_ERRORS_RETURNED, da er nicht auf eine oder mehrere Eigenschaften zugreifen konnte, überprüfen Sie die Eigenschaftstags der zurückgegebenen Eigenschaften. Für die fehlgeschlagenen Eigenschaften werden die folgenden Werte in ihrer Eigenschaftswertstruktur festgelegt: 
   
-- Der Eigenschaftentyp im **aulPropTag** -Element, der auf PT_ERROR festgelegt ist. 
+- Der Eigenschaftstyp im **Element aulPropTag,** das auf PT_ERROR. 
     
-- Der Eigenschaftswert im **Wert** Element, der auf einen Statuscode für den Fehler festgelegt ist, beispielsweise MAPI_E_NOT_FOUND. 
+- Der Eigenschaftswert im **Value-Element** wird auf einen Statuscode für den Fehler festgelegt, z. B. MAPI_E_NOT_FOUND. 
     
-Eigenschaften, die fehlschlagen, da Sie zu umfangreich sind, um in der Eigenschaftswert **** Struktur bequem zurückgegeben werden zu können, sind auf MAPI_E_NOT_ENOUGH_MEMORY festgelegt. Dies geschieht NormalerWeise mit String-oder Binary-Eigenschaften vom Typ PT_STRING8, PT_UNICODE oder PT_BINARY, wenn der Wert der Eigenschaft 4 KB oder größer ist. Rufen Sie **IMAPIProp:: OpenProperty** auf, um umfangreiche Eigenschaften abzurufen. 
+Eigenschaften, die fehlschlagen, weil sie zu groß sind, um bequem in der Eigenschaftswertstruktur zurückgegeben zu werden, haben ihren **Value-Member** auf MAPI_E_NOT_ENOUGH_MEMORY. In der Regel tritt dies bei Zeichenfolgen- oder binären Eigenschaften des Typs PT_STRING8, PT_UNICODE oder PT_BINARY auf, wenn der Wert der Eigenschaft 4 KB oder größer ist. Rufen **Sie IMAPIProp::OpenProperty auf,** um große Eigenschaften abzurufen. 
   
-Nicht alle Implementierungen **** von GetProps unterstützen sowohl die Unicode-als auch die ANSI-Formate für Zeichenfolgen. Wenn eine bestimmte Eigenschaft Zeichenfolgenformat Konvertierung erfordert **** und von GetProps nicht unterstützt werden kann, wird der **Wert** für die Eigenschaft auf MAPI_E_BAD_CHARWIDTH festgelegt. 
+Nicht alle Implementierungen von **GetProps** unterstützen sowohl die Unicode- als auch die ANSI-Formate für Zeichenzeichenfolgen. Wenn eine bestimmte Eigenschaft eine Zeichenfolgenformatkonvertierung erfordert und **GetProps** sie nicht unterstützt, wird das **Value-Element** für die Eigenschaft auf MAPI_E_BAD_CHARWIDTH. 
   
-Um zu überprüfen, ob eine PST-Datei eine SharePoint-PST ist, montieren Sie die PST **** -Datei mithilfe von [IMAPISession:: OpenMsgStore](imapisession-openmsgstore.md), und rufen Sie dann GetProps für das Nachrichtenspeicherobjekt auf, das diese Eigenschaft Wenn dies der Fall ist, können Sie davon ausgehen, dass die PST-Datei für SharePoint konfiguriert wurde. Wenn dies nicht der Fall ist, wurde die PST-Datei nicht als SharePoint-PST-Datei konfiguriert. 
+Um zu überprüfen, ob es sich bei einer PST SharePoint pst handelt, stellen Sie die PST mithilfe von [IMAPISession::OpenMsgStore](imapisession-openmsgstore.md)ein, und rufen Sie **dann GetProps** für das Nachrichtenspeicherobjekt auf, das diese Eigenschaft anfordert. Wenn sie vorhanden ist, können Sie davon ausgehen, dass die #A0 für die SharePoint. Andern falls nicht, wurde das PST nicht als SharePoint konfiguriert. 
   
-Weitere Informationen zur Verwendung von getProps für den Zugriff auf Eigenschaften finden Sie unter [Abrufen von MAPI-Eigenschaften](retrieving-mapi-properties.md). ****
+Weitere Informationen zur Verwendung von **GetProps** für den Zugriff auf Eigenschaften finden Sie unter [Abrufen von MAPI-Eigenschaften](retrieving-mapi-properties.md).
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -170,7 +170,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIFunctions. cpp  <br/> |GetPropsNULL  <br/> |MFCMAPI verwendet die **IMAPIProp::** GetProps-Methode, um alle Eigenschaften eines Objekts abzurufen, indem entweder NULL oder das von der [IMAPIProp::](imapiprop-getproplist.md) getproplist-Methode zurückgegebene Array im _lpPropTagArray_ -Parameter übergeben wird.  <br/> |
+|MAPIFunctions.cpp  <br/> |GetPropsNULL  <br/> |MFCMAPI verwendet die **IMAPIProp::GetProps-Methode,** um alle Eigenschaften für ein Objekt zu erhalten, indem null oder das array übergeben wird, das von der [IMAPIProp::GetPropList-Methode](imapiprop-getproplist.md) im  _lpPropTagArray-Parameter_ zurückgegeben wird.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -197,5 +197,5 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 [Abrufen von MAPI-Eigenschaften](retrieving-mapi-properties.md)
   
-[Verwenden von Makros zur Fehlerbehandlung](using-macros-for-error-handling.md)
+[Verwenden von Makros für die Fehlerbehandlung](using-macros-for-error-handling.md)
 

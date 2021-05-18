@@ -25,11 +25,11 @@ ms.locfileid: "33413605"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von Zeichenfolgen, die zum Beschreiben einer Eigenschaft vom Typ PT_MV_UNICODE verwendet werden. 
+Enthält ein Array von Zeichenzeichenfolgen, die zum Beschreiben einer Eigenschaft vom Typ PT_MV_UNICODE. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SWStringArray
@@ -40,17 +40,17 @@ typedef struct _SWStringArray
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cValues**
   
-> Anzahl der Zeichenfolgen im Array, auf die durch das **lppszW** -Element verwiesen wird. 
+> Anzahl der Zeichenfolgen im Array, auf die das **lppszW-Element** verweist. 
     
  **lppszW**
   
-> Zeiger auf ein Array von Zeichenfolgen mit NULL-Zeichenfolge.
+> Zeiger auf ein Array mit Nullend-Unicode-Zeichenzeichenfolgen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Weitere Informationen zu PT_MV_UNICODE finden Sie unter [Property Types](property-types.md).
   

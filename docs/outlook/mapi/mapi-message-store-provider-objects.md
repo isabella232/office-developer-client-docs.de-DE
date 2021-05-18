@@ -1,5 +1,5 @@
 ---
-title: MAPI-Nachrichtenspeicher-Anbieterobjekte
+title: MAPI-Nachrichtenspeicheranbieterobjekte
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,17 +15,17 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33413297"
 ---
-# <a name="mapi-message-store-provider-objects"></a>MAPI-Nachrichtenspeicher-Anbieterobjekte
+# <a name="mapi-message-store-provider-objects"></a>MAPI-Nachrichtenspeicheranbieterobjekte
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Nachrichtenspeicher Anbieter implementieren Anbieter-und Anmeldeobjekte, ebenso wie alle Dienstanbieter. Außerdem implementieren Sie ein Nachrichtenspeicherobjekt, Ordner, Nachrichten, Anlagen und Tabellen. Als Option implementieren einige Nachrichtenspeicher Anbieterstatus Objekte.
+Nachrichtenspeicheranbieter implementieren Anbieter- und Anmeldeobjekte wie alle Dienstanbieter. Außerdem implementieren sie ein Nachrichtenspeicherobjekt, Ordner, Nachrichten, Anlagen und Tabellen. Als Option implementieren einige Nachrichtenspeicheranbieter Statusobjekte.
   
-Die folgende Abbildung zeigt die einzelnen Nachrichtenspeicher Objekte mit der entsprechenden Schnittstelle und der MAPI-Komponente, die Sie verwendet.
+Die folgende Abbildung zeigt jedes Nachrichtenspeicherobjekt mit der entsprechenden Schnittstelle und der MAPI-Komponente, die es verwendet.
   
-Von ![Nachrichtenspeicher Anbietern implementierte Objekte] Von (media/amapi_63.gif "Nachrichtenspeicher Anbietern implementierte Objekte")
+![Objekte, die Nachrichtenspeicheranbieter implementieren Objekte,](media/amapi_63.gif "die von Nachrichtenspeicheranbietern implementiert werden")
   
 ## <a name="see-also"></a>Siehe auch
 
-- [MAPI-Dienstanbieter Objekte](mapi-service-provider-objects.md)
+- [OBJEKTE des MAPI-Dienstanbieters](mapi-service-provider-objects.md)
 

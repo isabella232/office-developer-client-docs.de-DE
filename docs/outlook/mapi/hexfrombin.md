@@ -25,13 +25,13 @@ ms.locfileid: "33412576"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Konvertiert eine binäre Zahl in eine Zeichenfolgendarstellung einer Hexadezimalzahl. 
+Wandelt eine binäre Zahl in eine Zeichenfolgendarstellung einer hexadezimalen Zahl um. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 void HexFromBin(
@@ -45,22 +45,22 @@ void HexFromBin(
 
  _pb_
   
-> in Zeiger auf die zu konvertierenden Binärdaten. 
+> [in] Zeiger auf die zu konvertierten Binärdaten. 
     
  _cb_
   
-> in Die Größe der Binärdaten, auf die durch den _PB_ -Parameter verwiesen wird, in Byte. 
+> [in] Größe der binären Daten, auf die  der pb-Parameter verweist, in Bytes. 
     
- _SZ_
+ _sz_
   
-> Out Zeiger auf eine mit NULL endende ASCII-Zeichenfolge, die die Binärdaten in Hexadezimalziffern darstellt.
+> [out] Zeiger auf eine mit Null beendete ASCII-Zeichenfolge, die die Binärdaten in hexadezimalen Ziffern darstellt.
     
 ## <a name="return-value"></a>Return value
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **HexFromBin** -Funktion verwendet einen Zeiger auf eine Einheit von Binärdaten, deren Größe durch den _CB_ -Parameter angegeben wird. In der _SZ_ -Zeichenfolge wird innerhalb von (2 * _CB_) + 1 Byte des Arbeitsspeichers eine Darstellung dieser Binärinformationen in Hexadezimalzahlen zurückgegeben. Wenn der Byte-Wert dezimal 10 ist, wird beispielsweise die hexadezimale Zeichenfolge 0A, sodass ein Byte in zwei Bytes in der Zeichenfolge konvertiert. 
+Die **HexFromBin-Funktion** verwendet einen Zeiger auf eine Binärdateneinheit, deren Größe durch den  _cb-Parameter angegeben_ wird. Es gibt in der  _sz-Zeichenfolge_ innerhalb (2*  _cb_)+1 Byte Arbeitsspeicher eine Darstellung dieser binären Informationen in hexadezimalen Zahlen zurück. Wenn der Bytewert z. B. dezimal 10 ist, ist die hexadezimale Zeichenfolge 0A, sodass ein Byte in zwei Bytes in der Zeichenfolge konvertiert wird. 
   
 
