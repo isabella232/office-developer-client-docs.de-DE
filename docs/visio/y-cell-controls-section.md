@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251282
 localization_priority: Normal
 ms.assetid: dd7ea5fa-1d34-44e8-5a29-69ca542aecba
-description: Stellt die y-Koordinate dar, die die Position des Steuerpunkts eines Shapes in lokalen Koordinaten angibt.
+description: Represents the y -coordinate that indicates the location of a shape's control handle in local coordinates.
 ms.openlocfilehash: 14aaa7aef7e7250baeb8ffb863244ece26a201e7
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,22 +18,22 @@ ms.locfileid: "33407949"
 ---
 # <a name="y-cell-controls-section"></a>Zelle "Y" (Abschnitt "Controls")
 
-Stellt die *y* -Koordinate dar, die die Position des Steuerpunkts eines Shapes in lokalen Koordinaten angibt. 
+Represents the  *y*  -coordinate that indicates the location of a shape's control handle in local coordinates. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle Y aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle Y anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Steuerelemente.  *Name* . Ywobei-Steuerelemente.  *Name* ist der Name der Zeile Controls.  <br/> |
+| Zellenname:  <br/> | Steuerelemente.  *Name*  . Ywhere-Steuerelemente.  *name*  ist der Name der Steuerelementzeile.  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Y nach Index aus einem Programm erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle Y nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionControls** <br/> |
-| Zeilenindex:  <br/> |**visRowControl** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+| Abschnittsindex:  <br/> |**visSectionControls** <br/> |
+| Zeilenindex:  <br/> |**visRowControl**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
 | Zellenindex:  <br/> |**visCtlY** <br/> |
    
 

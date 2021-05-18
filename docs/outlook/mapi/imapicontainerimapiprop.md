@@ -25,14 +25,14 @@ ms.locfileid: "33406122"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Verwaltet Vorgänge auf hoher Ebene für Containerobjekte wie Adressbücher, Verteilerlisten und Ordner. Die [IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md), [IABContainer: IMAPIContainer](iabcontainerimapicontainer.md)und [IDistList: IMAPIContainer](idistlistimapicontainer.md) -Schnittstellen werden von **IMAPIContainer**abgeleitet.
+Verwaltet vorgänge auf hoher Ebene für Containerobjekte wie Adressbücher, Verteilerlisten und Ordner. The [IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md), [IABContainer : IMAPIContainer](iabcontainerimapicontainer.md), and [IDistList : IMAPIContainer](idistlistimapicontainer.md) interfaces are derived from **IMAPIContainer**.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Ordner-, Adressbuchcontainer-und Verteilerlistenobjekte  <br/> |
-|Implementiert von:  <br/> |Nachrichtenspeicher, Adressbuch und Remote Transportanbieter  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Ordner-, Adressbuchcontainer- und Verteilerlistenobjekte  <br/> |
+|Implementiert von:  <br/> |Nachrichtenspeicher, Adressbuch und Remotetransportanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPIContainer  <br/> |
 |Zeigertyp:  <br/> |LPMAPICONTAINER  <br/> |
 |Transaktionsmodell:  <br/> |Abstrakte Klasse, nie implementiert  <br/> |
@@ -41,17 +41,17 @@ Verwaltet Vorgänge auf hoher Ebene für Containerobjekte wie Adressbücher, Ver
 
 |||
 |:-----|:-----|
-|[GetContentable](imapicontainer-getcontentstable.md) <br/> |Gibt einen Zeiger auf die Inhaltstabelle des Containers zurück.  <br/> |
-|[GetHierarchy-Struktur](imapicontainer-gethierarchytable.md) <br/> |Gibt einen Zeiger auf die Hierarchietabelle des Containers zurück.  <br/> |
-|[OpenEntry](imapicontainer-openentry.md) <br/> |Öffnet ein Objekt im Container und gibt einen Schnittstellenzeiger für den weiteren Zugriff zurück.  <br/> |
+|[GetContentsTable](imapicontainer-getcontentstable.md) <br/> |Gibt einen Zeiger auf die Inhaltstabelle des Containers zurück.  <br/> |
+|[GetHierarchyTable](imapicontainer-gethierarchytable.md) <br/> |Gibt einen Zeiger auf die Hierarchietabelle des Containers zurück.  <br/> |
+|[OpenEntry](imapicontainer-openentry.md) <br/> |Öffnet ein Objekt im Container und gibt einen Schnittstellenzeiger für weiteren Zugriff zurück.  <br/> |
 |[SetSearchCriteria](imapicontainer-setsearchcriteria.md) <br/> |Legt Suchkriterien für den Container fest.  <br/> |
 |[GetSearchCriteria](imapicontainer-getsearchcriteria.md) <br/> |Ruft die Suchkriterien für den Container ab.  <br/> |
    
 |**Erforderliche Eigenschaften**|**Access**|
 |:-----|:-----|
-|**PR_CONTAINER_HIERARCHY** ([Pidtagcontainerhierarchy (](pidtagcontainerhierarchy-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
-|**PR_CONTAINER_CONTENTS** ([Pidtagcontainercontents (](pidtagcontainercontents-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
-|**PR_CONTAINER_FLAGS** ([Pidtagcontainerflags (](pidtagcontainerflags-canonical-property.md))  <br/> |Lesen/Schreiben  <br/> |
+|**PR_CONTAINER_HIERARCHY** ([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
+|**PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
+|**PR_CONTAINER_FLAGS** ([PidTagContainerFlags](pidtagcontainerflags-canonical-property.md))  <br/> |Lesen/Schreiben  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

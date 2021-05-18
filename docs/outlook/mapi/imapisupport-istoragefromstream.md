@@ -25,7 +25,7 @@ ms.locfileid: "32316587"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Implementiert ein Storage-Objekt, um auf einen Stream zuzugreifen.
+Implementiert ein Speicherobjekt für den Zugriff auf einen Datenstrom.
   
 ```cpp
 HRESULT IStorageFromStream(
@@ -40,35 +40,35 @@ HRESULT IStorageFromStream(
 
  _lpUnkIn_
   
-> in Ein Zeiger auf ein Stream-Objekt.
+> [in] Ein Zeiger auf ein Streamobjekt.
     
  _lpInterface_
   
-> in Ein Zeiger auf den Schnittstellenbezeichner (Interface Identifier, IID), der die Schnittstelle darstellt, die für den Zugriff auf den Stream verwendet werden soll, auf den durch _lpUnkIn_verwiesen wird. Jeder der folgenden Werte ist gültig: IID_IStream, IID_ILockBytes oder **null**, der angibt, dass die [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) -Schnittstelle für den Zugriff auf den Stream verwendet werden soll. 
+> [in] Ein Zeiger auf die Schnittstellen-ID (Interface Identifier, IID), die die Schnittstelle darstellt, die für den Zugriff auf den Datenstrom verwendet werden soll, auf den _lpUnkIn verweist._ Jeder der folgenden Werte ist gültig: IID_IStream, IID_ILockBytes oder **Null**, was angibt, dass die [IStream-Schnittstelle](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) für den Zugriff auf den Datenstrom verwendet werden soll. 
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die steuert, wie das Speicherobjekt relativ zum Stream-Objekt erstellt werden soll. Standardmäßig wird der Speicher mit schreibgeschütztem Zugriff erstellt, und der Datenstrom beginnt bei Position NULL im Speicher. Die folgenden Flags können festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie das Speicherobjekt relativ zum Streamobjekt erstellt werden soll. Standardmäßig wird der Speicher mit schreibgeschützten Zugriff erstellt, und der Datenstrom beginnt an Position 0 im Speicher. Die folgenden Kennzeichen können festgelegt werden:
     
 STGSTRM_CREATE 
   
-> Für das Stream-Objekt sollte ein neues Storage-Objekt erstellt werden.
+> Ein neues Speicherobjekt sollte für das Streamobjekt erstellt werden.
     
 STGSTRM_CURRENT 
   
-> Das Speicherobjekt sollte an der aktuellen Position des Streams beginnen.
+> Das Speicherobjekt sollte an der aktuellen Position des Datenstroms beginnen.
     
 STGSTRM_MODIFY 
   
-> Der Aufrufer sollte über Lese-/Schreibzugriff für das zurückgegebene Speicherobjekt verfügen.
+> Der Aufrufer sollte über Lese-/Schreibberechtigungen für das zurückgegebene Speicherobjekt verfügen.
     
 STGSTRM_RESET 
   
-> Das Speicherobjekt sollte an Position Null beginnen.
+> Das Speicherobjekt sollte an Position 0 beginnen.
     
  _lppStorageOut_
   
-> Out Ein Zeiger auf einen Zeiger auf das Speicherobjekt.
+> [out] Ein Zeiger auf einen Zeiger auf das Speicherobjekt.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -76,29 +76,29 @@ S_OK
   
 > Das Speicherobjekt wurde erfolgreich erstellt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPISupport:: IStorageFromStream** -Methode wird für alle Support Objekte des Dienstanbieters implementiert. Dienstanbieter rufen **IStorageFromStream** auf, um ein Speicherobjekt zu erstellen, das zum Öffnen bestimmter Eigenschaften verwendet werden soll. Dienstanbieter, die über eine eigene Implementierung der [IStorage](https://msdn.microsoft.com/library/aa380015%28VS.85%29.aspx) -Schnittstelle verfügen, müssen **IStorageFromStream**nicht aufrufen. 
+Die **IMAPISupport::IStorageFromStream-Methode** wird für alle Dienstanbieterunterstützungsobjekte implementiert. Dienstanbieter rufen **IStorageFromStream auf,** um ein Speicherobjekt zum Öffnen bestimmter Eigenschaften zu erstellen. Dienstanbieter, die über eine eigene Implementierung der [IStorage-Schnittstelle](https://msdn.microsoft.com/library/aa380015%28VS.85%29.aspx) verfügen, müssen **IStorageFromStream nicht aufrufen.** 
   
-Das von **IStorageFromStream** erstellte Speicherobjekt Ruft die [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) -Methode des Streams auf, um den Verweiszähler zu erhöhen und dann die Anzahl zu verringern, wenn der Speicher freigegeben wird. 
+Das von **IStorageFromStream** erstellte Speicherobjekt ruft die [IUnknown::AddRef-Methode](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) des Datenstroms auf, um die Referenzanzahl zu erhöhen und die Anzahl dann zu dekrementieren, wenn der Speicher freigegeben wird. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Wenn die [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode eines ihrer Objekte aufgerufen wird, um eine Eigenschaft mit der **IStorage** -Schnittstelle zu öffnen, führen Sie die folgenden Aufgaben aus: 
+Wenn die [IMAPIProp::OpenProperty-Methode](imapiprop-openproperty.md) eines Ihrer Objekte aufgerufen wird, um eine Eigenschaft mit der **IStorage-Schnittstelle** zu öffnen, führen Sie die folgenden Aufgaben aus: 
   
-1. Öffnen Sie ein Stream-Objekt mit Lese-/Schreibzugriff für die Eigenschaft.
+1. Öffnen Sie ein Stream-Objekt mit Lese-/Schreibberechtigung für die Eigenschaft.
     
-2. Kennzeichnen Sie den Stream der Eigenschaft intern als Speicherobjekt.
+2. Markieren Sie den Eigenschaftendatenstrom intern als Speicherobjekt.
     
-3. Rufen Sie **IStorageFromStream** auf, um ein Speicherobjekt zu generieren. 
+3. Rufen **Sie IStorageFromStream auf,** um ein Speicherobjekt zu generieren. 
     
 4. Gibt einen Zeiger auf dieses Speicherobjekt zurück.
     
-Wenn Sie zusätzliche Schnittstellen implementieren, die das Storage-Objekt verwenden, erstellen Sie ein Objekt, das das Speicherobjekt umschließt und eine höhere [IUnknown:: QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx) -Methode implementiert. 
+Wenn Sie zusätzliche Schnittstellen implementieren, die das Speicherobjekt verwenden, erstellen Sie ein Objekt, das das Speicherobjekt umschließt, und implementieren Sie eine [höhere IUnknown::QueryInterface-Methode.](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx) 
   
-Lassen Sie eine Eigenschaft nicht mit der **IStream** -Schnittstelle geöffnet werden, wenn Sie mit **IStorage**erstellt wurde. Umgekehrt können Sie eine Eigenschaft nicht mit der **IStorage** -Schnittstelle öffnen, wenn Sie mit **IStream**erstellt wurde. 
+Lassen Sie nicht zu, dass eine Eigenschaft mit der **IStream-Schnittstelle** geöffnet wird, wenn sie mit **IStorage erstellt wurde.** Lassen Sie dagegen nicht zu, dass eine Eigenschaft mit der **IStorage-Schnittstelle** geöffnet wird, wenn sie mit **IStream erstellt wurde.** 
   
-Mit einer Ausnahme ist es akzeptabel, die **IStreamDocfile** -Schnittstelle zum Streamen eines Speicherobjekts aus einem Container in einen anderen zu verwenden, aber der IID_IStreamDocfile-Schnittstellenbezeichner muss in der LpInterface der **OpenProperty** -Methode übergeben werden. _ _-Parameter. 
+Mit einer Ausnahme ist es akzeptabel, die **IStreamDocfile-Schnittstelle** zum Streamen eines Speicherobjekts von einem Container in einen anderen zu verwenden, aber der IID_IStreamDocfile-Schnittstellenbezeichner muss im _lpInterface-Parameter_ der **OpenProperty-Methode** übergeben werden. 
   
 ## <a name="see-also"></a>Siehe auch
 

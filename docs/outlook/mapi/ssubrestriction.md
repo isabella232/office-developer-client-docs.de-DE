@@ -25,11 +25,11 @@ ms.locfileid: "33406325"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt eine Unterobjekt Einschränkung, die zum Filtern der Zeilen der Anlage-oder Empfängertabelle einer Nachricht verwendet wird.
+Beschreibt eine Unterobjekteinschränkung, die zum Filtern der Zeilen der Anlage oder Empfängertabelle einer Nachricht verwendet wird.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SSubRestriction
@@ -40,31 +40,31 @@ typedef struct _SSubRestriction
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **ulSubObject**
   
-> Der Typ des untergeordneten Objekts, das als Ziel für die Einschränkung dienen soll. Folgende Werte sind möglich: 
+> Typ des Unterobjekts, das als Ziel für die Einschränkung dienen soll. Mögliche Werte sind: 
     
 PR_MESSAGE_RECIPIENTS 
   
-> Wendet die Einschränkung auf die Empfängertabelle einer Nachricht an. 
+> Wenden Sie die Einschränkung auf die Empfängertabelle einer Nachricht an. 
     
 PR_MESSAGE_ATTACHMENTS 
   
->  Wendet die Einschränkung auf die Anlagentabelle einer Nachricht an. 
+>  Wenden Sie die Einschränkung auf die Anlagentabelle einer Nachricht an. 
     
  **lpRes**
   
-> Zeiger auf eine [SRestriction](srestriction.md) -Struktur. 
+> Zeiger auf eine [SRestriction-Struktur.](srestriction.md) 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Unterobjekt Einschränkungen werden von allen Tabellen nicht unterstützt. In der Regel werden nur Ordnerinhaltstabellen und Suchergebnisordner unterstützt. Unterobjekt Einschränkungen werden beispielsweise verwendet, um Nachrichten zu suchen, die einen bestimmten Anlagen-oder Empfängertyp aufweisen. 
+Unterobjekteinschränkungen werden nicht von allen Tabellen unterstützt. In der Regel werden sie nur von Ordnerinhaltstabellen und Suchergebnissen unterstützt. Beispielsweise werden Unterobjekteinschränkungen verwendet, um eine Nachricht mit einem bestimmten Anlagen- oder Empfängertyp zu finden. 
   
-Wenn eine Implementierung Unterobjekt Einschränkungen nicht unterstützt, wird MAPI_E_TOO_COMPLEX von den [IMAPITable:: Restrict](imapitable-restrict.md) -oder [IMAPITable:: FindRow](imapitable-findrow.md) -Methoden zurückgegeben. 
+Wenn eine Implementierung keine Unterobjekteinschränkungen unterstützt, gibt sie MAPI_E_TOO_COMPLEX [der imAPITable::Restrict-](imapitable-restrict.md) oder [IMAPITable::FindRow-Methoden](imapitable-findrow.md) zurück. 
   
-Eine allgemeine Erläuterung der Funktionsweise von Einschränkungen finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md). 
+Eine allgemeine Diskussion über die Funktionsweise von Einschränkungen finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md). 
   
 ## <a name="see-also"></a>Siehe auch
 

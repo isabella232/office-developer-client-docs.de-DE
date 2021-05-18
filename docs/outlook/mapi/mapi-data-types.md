@@ -23,11 +23,11 @@ ms.locfileid: "33408796"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die folgenden alphabetischen Einträge enthalten Dokumentation für die Datentypen, die in MAPI-Methoden,-Funktionen und-Strukturen verwendet werden. 
+Die folgenden alphabetischen Einträge enthalten Dokumentation zu den Datentypen, die in MAPI-Methoden, -Funktionen und -Strukturen verwendet werden. 
   
 ||
 |:-----|
-|[Lesezeichen](bookmark.md) <br/> |
+|[BOOKMARK](bookmark.md) <br/> |
 |[DNHIER](dnhier.md) <br/> |
 |[DNTBL](dntbl.md) <br/> |
 |[DNTBLE](dntble.md) <br/> |
@@ -48,7 +48,7 @@ Die folgenden alphabetischen Einträge enthalten Dokumentation für die Datentyp
 |[OlFlagIcon](olflagicon.md) <br/> |
 |[SCODE](scode.md) <br/> |
 |[SKEY](skey.md) <br/> |
-|[SYNCHRONISIERUNGS](sync.md) <br/> |
+|[SYNC](sync.md) <br/> |
 |[SYNCCONT](synccont.md) <br/> |
 |[SYNCSTATE](syncstate.md) <br/> |
 |[TCHAR](tchar.md) <br/> |

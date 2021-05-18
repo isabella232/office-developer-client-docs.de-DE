@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251400
 localization_priority: Normal
 ms.assetid: 1d0954c5-b2cb-6c5d-62b3-a68011cf0c85
-description: Gibt eine 16-Bit-Binärzahl zurück, in der jedes Bit auf 1 festgelegt ist, wenn das entsprechende Bit in binary number1 oder Binary number2 1 ist. Das Bit wird nur dann auf 0 festgelegt, wenn das entsprechende Bit sowohl in binären number1 als auch in binären number2 0 ist.
+description: Gibt eine 16-Bit-Binärzahl zurück, in der jedes Bit auf 1 festgelegt ist, wenn das entsprechende Bit in binärer Zahl1 oder binärer Zahl2 1 ist. Das Bit wird nur dann auf 0 festgelegt, wenn das entsprechende Bit sowohl in binärer Zahl1 als auch in binärer Zahl2 0 ist.
 ms.openlocfilehash: 13bda2c6c65557b1f8372432cf919b2aaf2d75de
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,18 +18,18 @@ ms.locfileid: "33408082"
 ---
 # <a name="bitor-function"></a>BITOR Function
 
-Gibt eine 16-Bit-Binärzahl zurück, in der jedes Bit auf 1 festgelegt ist, wenn das entsprechende Bit in *Binary number1* oder *Binary number2* 1 ist. Das Bit wird nur dann auf 0 festgelegt, wenn das entsprechende Bit sowohl in *binären number1* als auch in *binären number2* 0 ist. 
+Gibt eine 16-Bit-Binärzahl zurück, in der jedes Bit auf 1 festgelegt ist, wenn das entsprechende Bit in binärer  *Zahl1*  oder  *binärer Zahl2*  1 ist. Das Bit wird nur dann auf 0 festgelegt, wenn das entsprechende Bit sowohl in binärer *Zahl1* als auch in *binärer Zahl2 0 ist.* 
   
 ## <a name="syntax"></a>Syntax
 
-BITOR (* * *Binary number1* * *, * * *Binary number2* * *) 
+BITOR(** *binary number1* **, ** *binary number2* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _binäre number1_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die erste 16-Bit-Binärzahl.  <br/> |
-| _binäre number2_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die zweite 16-Bit-Binärzahl.  <br/> |
+| _binäre Zahl1_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die erste 16-Bit-Binärzahl.  <br/> |
+| _binäre Zahl2_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die zweite 16-Bit-Binärzahl.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
@@ -37,7 +37,7 @@ BITOR (* * *Binary number1* * *, * * *Binary number2* * *)
   
 ## <a name="example"></a>Beispiel
 
-BITOR (12, 6)
+BITOR(12,6)
   
 Gibt 14 zurück. Die Zahl 12 entspricht 0...01100. Die Zahl 6 entspricht 0...00110. Daher ergibt BITOR(12,6) den Wert 0...01110.
   

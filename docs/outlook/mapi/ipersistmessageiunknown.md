@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 40ec6dd4-2206-4e59-aafe-53aaf693f973
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 7eb65bbae2fca6648c3a701dfa5c83c5bf297ec5
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,14 +25,14 @@ ms.locfileid: "32309604"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ermöglicht es den Formular Viewern, die Speicherung eines Formulars und den Übergang zwischen den verschiedenen Status zu verarbeiten.
+Ermöglicht Formularanzeigen die Verarbeitung des Speichers eines Formulars und den Übergang zwischen den verschiedenen Zuständen.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiform. h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Nachrichtenobjekte beibehalten  <br/> |
+|Headerdatei  <br/> |Mapiform.h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Beibehalten von Nachrichtenobjekten  <br/> |
 |Implementiert von:  <br/> |Formularobjekte  <br/> |
-|Aufgerufen von:  <br/> |Formular Betrachter  <br/> |
+|Aufgerufen von:  <br/> |Formularanzeigen  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IPersistMessage  <br/> |
 |Zeigertyp:  <br/> |LPPERSISTMESSAGE  <br/> |
    
@@ -40,20 +40,20 @@ Ermöglicht es den Formular Viewern, die Speicherung eines Formulars und den Üb
 
 |||
 |:-----|:-----|
-|[Getlasterroraufzurufen](ipersistmessage-getlasterror.md) <br/> |Gibt eine [MAPIERROR](mapierror.md) -Struktur zurück, die Informationen zum vorherigen Fehler im Form-Objekt enthält.  <br/> |
+|[GetLastError](ipersistmessage-getlasterror.md) <br/> |Gibt eine [MAPIERROR-Struktur](mapierror.md) zurück, die Informationen zum vorherigen Fehler im Formularobjekt enthält.  <br/> |
 |[GetClassID](ipersistmessage-getclassid.md) <br/> |Gibt einen Bezeichner zurück, der den Formularserver darstellt, der das Formular verwalten kann.  <br/> |
 |[IsDirty](ipersistmessage-isdirty.md) <br/> |Überprüft das Formular auf Änderungen, die seit dem letzten Speichern vorgenommen wurden.  <br/> |
 |[InitNew](ipersistmessage-initnew.md) <br/> |Initialisiert eine neue Nachricht.  <br/> |
 |[Load](ipersistmessage-load.md) <br/> |Lädt das Formular für eine angegebene Nachricht.  <br/> |
-|[Save](ipersistmessage-save.md) <br/> |Speichert ein überarbeitete Formular zurück in der Nachricht, von der es geladen oder erstellt wurde.  <br/> |
+|[Save](ipersistmessage-save.md) <br/> |Speichert ein überarbeitetes Formular in der Nachricht zurück, aus der es geladen oder erstellt wurde.  <br/> |
 |[SaveCompleted](ipersistmessage-savecompleted.md) <br/> |Benachrichtigt das Formular, dass ein Speichervorgang abgeschlossen wurde.  <br/> |
-|[HandsOffMessage](ipersistmessage-handsoffmessage.md) <br/> |Bewirkt, dass das Formular die aktuelle Nachricht freigibt.  <br/> |
+|[HandsOffMessage](ipersistmessage-handsoffmessage.md) <br/> |Bewirkt, dass das Formular seine aktuelle Nachricht veröffentlicht.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Alle Formulare sind erforderlich, um die **IPersistMessage** -Schnittstelle zu implementieren. 
+Alle Formulare sind erforderlich, um die **IPersistMessage-Schnittstelle zu** implementieren. 
   
- **IPersistMessage** funktioniert ähnlich wie die OLE [IPersistStorage](https://msdn.microsoft.com/library/1c1a20fc-c101-4cbc-a7a6-30613aa387d7%28Office.15%29.aspx) -Schnittstelle. Weitere Informationen finden Sie unter den **IPersistStorage** -Methoden. 
+ **IPersistMessage** funktioniert ähnlich wie die OLE [IPersistStorage-Schnittstelle.](https://msdn.microsoft.com/library/1c1a20fc-c101-4cbc-a7a6-30613aa387d7%28Office.15%29.aspx) Weitere Informationen finden Sie unter **IPersistStorage-Methoden.** 
   
 ## <a name="see-also"></a>Siehe auch
 

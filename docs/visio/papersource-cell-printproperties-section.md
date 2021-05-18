@@ -20,23 +20,23 @@ ms.locfileid: "33406759"
 
 Bestimmt die Papierzufuhr für die Seite. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Diese Einstellung entspricht der Einstellung **Papierzufuhr** im Dialogfeld **Druckeinrichtung** (klicken Sie auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten** und anschließend auf der Registerkarte **Druckeinrichtung** auf **Einrichten**).
   
-Die numerischen Werte in dieser Zelle werden Konstanten (vorangestellt mit DMBIN) zugeordnet, die für die bin-Auswahl in der Datei Microsoft Windows WinGDI. h definiert sind. der Wert 7 stellt beispielsweise DMBIN_AUTO dar. 
+Die numerischen Werte in dieser Zelle ordnen Konstanten (mit DMBIN vorangestellt) zu, die für die Binauswahl in der Datei "Microsoft Windows wingdi.h" definiert sind. Beispielsweise steht der Wert 7 für DMBIN_AUTO. 
   
-Wenn Sie einen Verweis auf die Zelle PaperSource aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle PaperSource anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |PaperSource  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle PaperSource aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle PaperSource nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowPrintProperties** <br/> |
 |Zellenindex:  <br/> |**visPrintPropertiesPaperSource** <br/> |
    

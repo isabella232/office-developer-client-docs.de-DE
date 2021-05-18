@@ -25,7 +25,7 @@ ms.locfileid: "33407515"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Legt den angehalten-Status für den Spooler fest.
+Legt den angehaltenen Status für den Spooler fest.
   
 ```cpp
 void SetSpoolSuspendState( 
@@ -37,7 +37,7 @@ void SetSpoolSuspendState(
 
  _ulState_
   
-> in Der Zustand, auf den der Spooler festgelegt werden soll. Dabei muss es sich um einen der folgenden Werte handeln:
+> [in] Der Zustand, auf den der Spooler festgelegt werden soll. Dies muss einer der folgenden Werte sein:
     
  **SS_ACTIVE**
   

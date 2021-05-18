@@ -25,27 +25,27 @@ ms.locfileid: "33409090"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Verwaltet und ermöglicht den Zugriff auf die Eigenschaften von Anlagen in Nachrichten. Die **IAttach** -Schnittstelle verfügt über keine eigenen eindeutigen Methoden. Weitere Informationen zur Verwendung von Anlagen finden Sie unter [MAPI Attachments](mapi-attachments.md) and [Attachment Tables](attachment-tables.md). 
+Verwaltet und bietet Zugriff auf die Eigenschaften von Anlagen in Nachrichten. Die **IAttach-Schnittstelle** verfügt über keine eigenen eindeutigen Methoden. Weitere Informationen zur Verwendung von Anlagen finden Sie unter [MAPI Attachments](mapi-attachments.md) and [Attachment Tables](attachment-tables.md). 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
 |Verf�gbar gemacht von:  <br/> |Attachment-Objekte  <br/> |
-|Implementiert von:  <br/> |Nachrichtenspeicher Anbieter  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
+|Implementiert von:  <br/> |Anbieter von Nachrichtenspeichern  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IAttachment  <br/> |
 |Zeigertyp:  <br/> |LPATTACH  <br/> |
-|Transaktionsmodell:  <br/> |Durchgeführt  <br/> |
+|Transaktionsmodell:  <br/> |Transacted  <br/> |
    
 ## <a name="vtable-order"></a>Vtable-Reihenfolge
 
-Diese Schnittstelle hat keine eindeutigen Methoden.
+Diese Schnittstelle verfügt nicht über eindeutige Methoden.
   
 |**Erforderliche Eigenschaften**|**Access**|
 |:-----|:-----|
-|**PR_OBJECT_TYPE** ([Pidtagobjecttype (](pidtagobjecttype-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
-|**PR_ATTACH_METHOD** ([Pidtagattachmethod (](pidtagattachmethod-canonical-property.md))  <br/> |Lesen/Schreiben  <br/> |
-|**PR_RENDERING_POSITION** ([Pidtagrenderingposition (](pidtagrenderingposition-canonical-property.md))  <br/> |Lesen/Schreiben  <br/> |
+|**PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
+|**PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md))  <br/> |Lesen/Schreiben  <br/> |
+|**PR_RENDERING_POSITION** ([PidTagRenderingPosition](pidtagrenderingposition-canonical-property.md))  <br/> |Lesen/Schreiben  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

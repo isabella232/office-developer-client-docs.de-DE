@@ -18,7 +18,7 @@ ms.locfileid: "33408362"
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Überprüft, ob eine Sitzung gültig ist. Diese Funktion wird in der Regel aufgerufen, wenn Excel ermitteln muss, ob eine zuvor zurückgegebene Sitzungs-ID noch aktiv ist und verwendet werden kann.
+Überprüft, ob eine Sitzung gültig ist. Diese Funktion wird normalerweise aufgerufen, wenn Excel ermitteln muss, ob eine zuvor zurückgegebene Sitzungs-ID noch aktiv ist und verwendet werden kann.
   
 ```cpp
 int PingSession(int SessionId)
@@ -28,11 +28,11 @@ int PingSession(int SessionId)
 
 _SessionID_
   
-> Die ID der zu pingenden Sitzung. Dieser Wert muss mit einer ID übereinstimmen, die von einem [](opensession.md)vorherigen Aufruf von OpenSession zurückgegeben wurde.
+> Die ID der zu ping-Sitzung. Dieser Wert muss mit einer ID übereinstimmen, die von einem vorherigen Aufruf von [OpenSession zurückgegeben wurde.](opensession.md)
     
 ## <a name="return-value"></a>Rückgabewert
 
-**xlHpcRetSuccess** , wenn das _SessionID_ -Argument gültig ist; andernfalls **xlHpcRetInvalidSessionId**.
+**xlHpcRetSuccess,** wenn  _das Argument SessionId_ gültig ist; andernfalls **xlHpcRetInvalidSessionId**.
   
 ## <a name="see-also"></a>Siehe auch
 

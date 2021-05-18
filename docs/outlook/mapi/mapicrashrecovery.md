@@ -23,13 +23,13 @@ ms.locfileid: "33407214"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die **MAPICrashRecovery** -Funktion überprüft den Status des freigegebenen Speichers (PST) oder der Offline Ordner Datei (Ost). Wenn sich der Speicher in einem konsistenten Zustand befindet, verschiebt die **MAPICrashRecovery** -Funktion die Daten auf den Datenträger und verhindert den weiteren Lese-oder Schreibzugriff, bis der Prozess beendet wird. 
+Die **MAPICrashRecovery-Funktion** überprüft den Status des freigegebenen Speichers für persönliche Ordner (PST) oder Offlineordnerdatei (OST). Wenn sich der Arbeitsspeicher in einem konsistenten Zustand befindet, verschiebt die **MAPICrashRecovery-Funktion** die Daten auf den Datenträger und verhindert weiteren Lese- oder Schreibzugriff, bis der Prozess beendet wird. 
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
-|Exportiert von:  <br/> |olmapi32. dll  <br/> |
+|Exportiert von:  <br/> |olmapi32.dll  <br/> |
 |Aufgerufen von:  <br/> |Client  <br/> |
 |Implementiert von:  <br/> |Outlook  <br/> |
    
@@ -41,19 +41,19 @@ void MAPICrashRecovery(ULONG ulFlags);
 
 _ulFlags_
   
-> in Flags, die verwendet werden, um zu steuern, wie die MAPI-Crash Wiederherstellung ausgeführt wird. Die folgenden Flags können festgelegt werden:
+> [in] Kennzeichen, die zum Steuern der Wiederherstellung der MAPI-Absturzwiederherstellung verwendet werden. Die folgenden Kennzeichen können festgelegt werden:
     
-   - **MAPICRASH\_Recover**: Wenn sich die PST oder Kosten in einem konsistenten Zustand befinden, verschieben Sie die Daten auf den Datenträger, und Sperren Sie die PST oder Kosten, um Lese-oder Schreibzugriff zu verhindern.
+   - **MAPICRASH \_ RECOVER**: Wenn sich die PSTs oder OSTs in einem konsistenten Zustand befinden, verschieben Sie die Daten auf den Datenträger, und sperren Sie die PSTs oder OSTs, um den Lese- oder Schreibzugriff zu verhindern.
     
-   - **MAPICRASH\_Continue**: entsperren Sie die PST-oder Kosten für das Debugging. Rufen Sie nach einem erfolgreichen Aufruf von **MAPICrashRecovery** mit dem **MAPICRASH_RECOVER** -Flag **MAPICrashRecovery** mit dem Flag **MAPICRASH\_Continue** auf, um das Debuggen zu ermöglichen. 
+   - **MAPICRASH \_ CONTINUE**: Entsperren der PSTs oder OSTs zum Debuggen. Rufen Sie nach einem erfolgreichen Aufruf von **MAPICrashRecovery** mit dem **flag MAPICRASH_RECOVER** **MAPICrashRecovery** mit dem **MAPICRASH \_ CONTINUE-Flag** auf, um das Debuggen weiter zu ermöglichen. 
     
-   - **MAPICRASH\_SYSTEM_SHUTDOWN**: Wenn die PST oder Kosten sich in einem konsistenten Zustand befinden, verschieben Sie die Daten auf den Datenträger, und Sperren Sie die PST oder Kosten, um Lese-oder Schreibzugriff zu verhindern. Die PST oder Kosten kann nicht mit **MAPICRASH\_Continue**entsperrt werden. Muss in Kombination mit **MAPICRASH\_Recover**verwendet werden. 
+   - **MAPICRASH \_ SYSTEM_SHUTDOWN**: Wenn sich psTs oder OSTs in einem konsistenten Zustand befinden, verschieben Sie die Daten auf den Datenträger, und sperren Sie die PSTs oder OSTs, um den Lese- oder Schreibzugriff zu verhindern. Die PSTs oder OSTs können nicht mit **MAPICRASH CONTINUE entsperrt \_ werden.** Muss in Kombination mit **MAPICRASH \_ RECOVER verwendet werden.** 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Das obere Byte (0xFF000000) ist für anbieterspezifische Absturz Wiederherstellungs Kennzeichen reserviert.
+Das obere Byte (0xFF000000) ist für anbieterspezifische Absturzwiederherstellungsflags reserviert.
   
-Aufrufen von **MAPICrashRecovery** mit **den\_MAPICRASH Recover** -und **MAPICRASH_SYSTEM_SHUTDOWN** -Flags als Reaktion auf die **WM_ENDSESSION** -Nachricht. 
+Rufen **Sie MAPICrashRecovery** mit der **MAPICRASH \_ RECOVER** auf, **und MAPICRASH_SYSTEM_SHUTDOWN** als Antwort auf die WM_ENDSESSION werden.  
   
 ## <a name="see-also"></a>Siehe auch
 

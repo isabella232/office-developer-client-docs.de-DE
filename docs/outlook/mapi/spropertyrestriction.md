@@ -23,11 +23,11 @@ ms.locfileid: "33406087"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt eine Eigenschaftseinschränkung, die verwendet wird, um eine Konstante mit dem Wert einer Eigenschaft zu vergleichen.
+Beschreibt eine Eigenschaftseinschränkung, die verwendet wird, um eine Konstante mit dem Wert einer Eigenschaft zu übereinstimmen.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SPropertyRestriction
@@ -39,43 +39,43 @@ typedef struct _SPropertyRestriction
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
-**RelOp**
+**relop**
   
-> Relationaler Operator, der bei der Suche verwendet wird. Folgende Werte sind möglich:
+> Relationaler Operator, der in der Suche verwendet wird. Mögliche Werte sind:
     
-  - RELOP_GE: der Vergleich erfolgt basierend auf einem größer oder gleich dem ersten Wert.
+  - RELOP_GE: Der Vergleich basiert auf einem höheren oder gleichen ersten Wert.
         
-  - RELOP_GT: der Vergleich erfolgt basierend auf einem höheren ersten Wert.
+  - RELOP_GT: Der Vergleich basiert auf einem größeren ersten Wert.
         
-  - RELOP_LE: der Vergleich erfolgt basierend auf einem niedrigeren oder gleichen ersten Wert.
+  - RELOP_LE: Der Vergleich basiert auf einem kleineren oder gleichen ersten Wert.
         
-  - RELOP_LT: der Vergleich erfolgt basierend auf einem niedrigeren ersten Wert.
+  - RELOP_LT: Der Vergleich basiert auf einem niedrigeren ersten Wert.
         
-  - RELOP_NE: der Vergleich erfolgt basierend auf ungleich Werten.
+  - RELOP_NE: Der Vergleich basiert auf ungleichen Werten.
         
-  - RELOP_RE: der Vergleich basiert auf LIKE (Regular Expression)-Werten.
+  - RELOP_RE: Der Vergleich wird basierend auf LIKE -Werten (regulärer Ausdruck) vorgenommen.
         
-  - RELOP_EQ: der Vergleich erfolgt basierend auf gleichen Werten.
+  - RELOP_EQ: Der Vergleich basiert auf gleichen Werten.
     
 **ulPropTag**
   
-> Property-Tag, das die zu vergleichende Eigenschaft identifiziert. 
+> Eigenschaftstag, das die zu vergleichende Eigenschaft identifiziert. 
     
 **lpProp**
   
-> Zeiger auf eine [SPropValue](spropvalue.md) -Struktur, die den konstanten Wert enthält, der im Vergleich verwendet wird. 
+> Zeiger auf eine [SPropValue-Struktur,](spropvalue.md) die den konstanten Wert enthält, der im Vergleich verwendet wird. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Es gibt zwei Property-Tags in einer **SPropertyRestriction** -Struktur. Eine befindet sich im **ulPropTag** -Element und die andere befindet sich im **ulPropTag** -Element der **SPropValue** -Struktur, auf die durch **lpProp**verwiesen wird. MAPI erfordert sowohl das Feld Eigenschafts-ID als auch das Feld Eigenschafts. Die **ulPropTag** in **SPropertyRestriction** ist die Eigenschaft, die verglichen werden soll, und der **lpProp** -Zeiger des **SPropertyRestriction** auf den **ulPropTag**-Typ des **SPropValue** gibt an, wie der Members-Wert des **lpProp** Union werden interpretiert. Die beiden Eigenschaftentypen müssen übereinstimmen, andernfalls wird der Fehlerwert MAPI_E_TOO_COMPLEX zurückgegeben, wenn die Einschränkung in einem Aufruf von [IMAPITable:: Restrict](imapitable-restrict.md) oder [IMAPITable:: FindRow](imapitable-findrow.md)verwendet wird. 
+Es gibt zwei Eigenschaftstags in einer **SPropertyRestriction-Struktur.** Einer befindet sich im **ulPropTag-Element** und das andere im **ulPropTag-Element** der **SPropValue-Struktur,** auf die **von lpProp verwiesen wird.** MAPI erfordert sowohl das Eigenschaftenbezeichnerfeld als auch das Eigenschaftentypfeld. Der **ulPropTag** in **SPropertyRestriction** ist die zu erfüllende Eigenschaft, und der **lpProp-Zeiger** der **SPropertyRestriction** auf den **UlPropTag-Typ** **des SPropValue** gibt an, wie der Memberwert der **lpProp-Union** interpretiert wird. Die beiden Eigenschaftstypen müssen übereinstimmen, sonst wird der Fehlerwert MAPI_E_TOO_COMPLEX zurückgegeben, wenn die Einschränkung in einem Aufruf von [IMAPITable::Restrict](imapitable-restrict.md) oder [IMAPITable::FindRow](imapitable-findrow.md)verwendet wird. 
   
-Die Vergleichsreihenfolge ist _(Eigenschaftswert) (relationaler Operator) (konstanter Wert)_.
+Die Vergleichsreihenfolge  _ist (Eigenschaftswert) (relationaler Operator) (Konstantenwert)_.
   
-Wenn eine Eigenschaftseinschränkung an **IMAPITable:: Restrict** oder **IMAPITable:: FindRow** übergeben wird und die Target-Eigenschaft nicht vorhanden ist, sind die Ergebnisse der Einschränkung nicht definiert. Durch das Erstellen einer **and** -Einschränkung, die die Eigenschaftseinschränkung mit einer **exist** -Einschränkung verknüpft, kann ein Aufrufer exakte Ergebnisse garantieren. Verwenden Sie eine [SExistRestriction](sexistrestriction.md) -Struktur, um die **exist** -Einschränkung und eine [SAndRestriction](sandrestriction.md) -Struktur zum Definieren der **und-** Einschränkung zu definieren. 
+Wenn eine Eigenschaftseinschränkung an **IMAPITable::Restrict** oder **IMAPITable::FindRow** übergeben wird und die Zieleigenschaft nicht vorhanden ist, sind die Ergebnisse der Einschränkung nicht definiert. Durch Das Erstellen einer **AND-Einschränkung,** die die Eigenschaftseinschränkung mit einer **EXIST-Einschränkung** beitritt, kann ein Anrufer genaue Ergebnisse garantiert werden. Verwenden Sie eine [SExistRestriction-Struktur,](sexistrestriction.md) um die **EXIST-Einschränkung** und eine [SAndRestriction-Struktur](sandrestriction.md) zu definieren, um die **AND-Einschränkung zu** definieren. 
   
-Mehrwertige Eigenschaftstags können in Eigenschaftseinschränkungen verwendet werden, wenn der Dienstanbieter, der die Tabelle implementiert, diese unterstützt. Wenn unterstützt, mehrwertige Eigenschaftstags können verwendet werden, wo einwertige Eigenschaftstags verwendet werden können. 
+Mehrwertige Eigenschaftstags können in Eigenschaftseinschränkungen verwendet werden, wenn der Dienstanbieter, der die Tabelle implementieren, diese unterstützt. Wenn unterstützt, können mehrwertige Eigenschaftstags überall verwendet werden, an der einwertige Eigenschaftstags verwendet werden können. 
   
 Mehrwertige Eigenschaftstags können in den folgenden Methoden verwendet werden:
   
@@ -90,9 +90,9 @@ Mehrwertige Eigenschaftstags können in den folgenden Methoden verwendet werden:
 - [IMAPITable::Restrict](imapitable-restrict.md)
     
 > [!IMPORTANT]
-> Ein bemerkenswerter Fall, wenn die beiden Eigenschaftstags nicht übereinstimmen, ist die Beschränkung auf eine mehrwertige Eigenschaft. In diesem Fall muss Folgendes zutreffen. > wenn der Eigenschaftentyp des **ulPropTag** von **SPropertyRestriction** den mehrwertigen Eigenschaftentyp Bit Flag MV_FLAG (0x1000) enthält, muss der Eigenschaftentyp des **ulPropTag** von **SPropValue** mit dem vorherigen minus der MV_ übereinstimmen. FLAG-Bitflags, das heißt, seine Umkehrfunktion. > Wenn Sie beispielsweise eine benutzerdefinierte Zeichenfolgeneigenschaft mit mehreren Werten wie eine Kategorie mit einem Property-Tag für die Eigenschaft 0x8012101f, also PROP_TAG (MV_FLAG | PT_UNICODE, 0x8012)) einschränken möchten, wird die entsprechende **SPropertyRestriction** als folgt. >  `SPropertyRestriction.ulPropTag = 0x8012101f; // attempt to restrict a MultiValue property`>  `SPropertyRestriction.lpProp->ulPropTag = 0x8012001f; // the lpszW member of the Value property is valid`>  `SPropertyRestriction.lpProp.Value->lpszW = L"My Category";`> beachten Sie, dass, wenn der Eigenschaftentyp des **ulPropTag** von **SPropValue** das MV_FLAG-Bitflags enthält, die Wahrscheinlichkeit MAPI_E_TOO_COMPLEX zurückgegeben wird. 
+> Ein beachtenswerter Fall, wenn die beiden Eigenschaftstags nicht übereinstimmen, ist das Einschränken auf eine mehrwertige Eigenschaft. In diesem Fall muss Folgendes zutreffen. > Wenn der Eigenschaftentyp des **ulPropTag** von **SPropertyRestriction** das > MV_FLAG (0x1000) enthält, sollte der Eigenschaftstyp des **ulPropTag** von **SPropValue** dem ersten minus dem MV_FLAG-Bit-Flag entsprechen, d. h. dem umgekehrten. > Um beispielsweise die Verwendung einer benutzerdefinierten Zeichenfolgeneigenschaft mit mehreren Wert einzuschränken, z. B. eine Kategorie mit einem Eigenschaftstag für die Eigenschaft 0x8012101f, d. h. PROP_TAG(MV_FLAG|PT_UNICODE, 0x8012)), würde die entsprechende **SPropertyRestriction** wie folgt angezeigt. >  `SPropertyRestriction.ulPropTag = 0x8012101f; // attempt to restrict a MultiValue property`>  `SPropertyRestriction.lpProp->ulPropTag = 0x8012001f; // the lpszW member of the Value property is valid`>  `SPropertyRestriction.lpProp.Value->lpszW = L"My Category";`> Beachten Sie, dass, wenn der Eigenschaftentyp des **ulPropTag** von **SPropValue** das MV_FLAG-Bit-Flag enthält, die wahrscheinliche Rückgabe MAPI_E_TOO_COMPLEX. 
   
-Weitere Informationen zur **SPropertyRestriction** -Struktur finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md). 
+Weitere Informationen zur **SPropertyRestriction-Struktur** finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md). 
   
 ## <a name="see-also"></a>Siehe auch
 

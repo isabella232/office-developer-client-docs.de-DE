@@ -31,9 +31,9 @@ HRESULT IOlkEnum:: GetNext(
 
 ## <a name="parameters"></a>Parameter
 
-_ppUnk_
+_ppunk_
   
-> in Ein Zeiger auf eine **IUnknown** -Schnittstelle, die der Client Abfragen kann, um eine [IOlkAccount](iolkaccount.md) -Schnittstelle abzurufen. 
+> [in] Ein Zeiger auf eine **IUnknown-Schnittstelle,** die der Client abfragen kann, um eine [IOlkAccount-Schnittstelle zu](iolkaccount.md) erhalten. 
     
 ## <a name="return-values"></a>Rückgabewerte
 
@@ -42,9 +42,9 @@ _ppUnk_
 |S_OK  <br/> |Der Aufruf war erfolgreich.  <br/> |
 |S_FALSE  <br/> |Der Enumerator hat das Ende erreicht.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die von *ppUnk* angegebene Schnittstelle erbt von **IUnknown**. Der Client kann diese Schnittstelle Abfragen (mithilfe von **IUnknown:: QueryInterface**), um einen Zeiger auf eine **IOlkAccount** -Schnittstelle abzurufen und Informationen für dieses Konto abzurufen oder festzulegen. 
+Die von  *ppunk angegebene Schnittstelle*  erbt von **IUnknown**. Der Client kann diese Schnittstelle abfragen (mithilfe von **IUnknown::QueryInterface**), um einen Zeiger auf eine **IOlkAccount-Schnittstelle** zu erhalten und Informationen für dieses Konto zu erhalten oder festlegen. 
   
 ## <a name="see-also"></a>Siehe auch
 

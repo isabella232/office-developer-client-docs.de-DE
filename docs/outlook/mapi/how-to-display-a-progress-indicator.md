@@ -19,73 +19,73 @@ ms.locfileid: "33408026"
  
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Um eine Statusanzeige anzuzeigen, rufen Sie [IMAPIProgress::](imapiprogress-getflags.md) GetFlags auf, um die aktuelle Flags-Einstellung abzurufen. 
+Rufen Sie zum Anzeigen eines Statusindikators [IMAPIProgress::GetFlags](imapiprogress-getflags.md) auf, um die aktuelle Flagseinstellung abzurufen. 
   
-Wenn das MAPI_TOP_LEVEL-Flag festgelegt ist, führen Sie die folgenden Schritte aus:
+Wenn das MAPI_TOP_LEVEL festgelegt ist, führen Sie die folgenden Schritte aus:
   
-1. Legen Sie eine Variable auf die Gesamtanzahl der Elemente fest, die im Vorgang verarbeitet werden sollen. Wenn Sie beispielsweise den Inhalt eines Ordners kopieren, entspricht dieser Wert der Anzahl der Unterordner im Ordner und der Anzahl der Nachrichten. 
+1. Legen Sie eine Variable fest, die der Gesamtanzahl von Elementen entspricht, die im Vorgang zu verarbeiten sind. Wenn Sie z. B. den Inhalt eines Ordners kopieren, entspricht dieser Wert der Anzahl der Unterordner im Ordner plus der Anzahl der Nachrichten. 
     
-2. Legen Sie eine Variable auf 1000 geteilt durch die Anzahl der Elemente fest. 
+2. Legen Sie eine Variable auf 1000 dividiert durch die Anzahl der Elemente fest. 
     
-3. Wenn Sie den Fortschritt für unter Objekte anzeigen möchten, rufen Sie die [IMAPIProgress::](imapiprogress-setlimits.md) setlimits-Methode des Progress-Objekts auf, und übergeben Sie die folgenden Werte für die drei Parameter: 
+3. Wenn Sie den Fortschritt für Unterobjekte anzeigen, rufen Sie die [IMAPIProgress::SetLimits-Methode](imapiprogress-setlimits.md) des Progress-Objekts auf, und übergeben Sie die folgenden Werte für die drei Parameter: 
     
-   - Legen Sie den Parameter _lpulMin_ auf 0 fest. 
+   - Legen Sie  _den lpulMin-Parameter_ auf 0. 
     
-   - Legen Sie den _lpulMax_ -parameter auf 1000. 
+   - Legen Sie  _den lpulMax-Parameter_ auf 1000. 
     
-   - Legen Sie den Parameter _lpulFlags_ auf MAPI_TOP_LEVEL. 
+   - Legen Sie  _den Parameter lpulFlags_ auf MAPI_TOP_LEVEL. 
     
 4. Führen Sie für jedes zu verarbeitende Objekt die folgenden Schritte aus:
     
-   1. Rufen Sie **IMAPIProgress::** setlimits auf, und übergeben Sie die folgenden Werte für die drei Parameter: 
+   1. Rufen **Sie IMAPIProgress::SetLimits auf,** und übergeben Sie die folgenden Werte für die drei Parameter: 
       
-     - Legen Sie den Parameter _lpulMin_ auf die Variable fest, die in Schritt 2 mit dem aktuellen Element minus 1 multipliziert wird. 
+     - Legen Sie  _den lpulMin-Parameter_ auf die Variable fest, die in Schritt 2 multipliziert mit dem aktuellen Element minus 1 festgelegt ist. 
       
-     - Legen Sie den _lpulMax_ -Parameter auf die Variable fest, die in Schritt 2 mit dem aktuellen Objekt multipliziert wird. 
+     - Legen Sie  _den lpulMax-Parameter_ auf die Variable fest, die in Schritt 2 multipliziert mit dem aktuellen Objekt festgelegt ist. 
       
-     - Legen Sie den Parameter _lpulFlags_ auf 0 fest. 
+     - Legen Sie  _den Parameter lpulFlags_ auf 0. 
       
-   2. Führen Sie die Verarbeitung aus, die für dieses Objekt ausgeführt werden soll. Wenn es sich um ein Unterobjekt handelt und Sie den Fortschritt für unter Objekte anzeigen möchten, übergeben Sie einen Zeiger auf das Progress-Objekt im _lpProgress_ -Parameter an die Methode. 
+   2. Führen Sie alle Verarbeitungsschritte aus, die für dieses Objekt durchgeführt werden sollen. Wenn es sich um ein Unterobjekt handelt und Sie den Fortschritt für Unterobjekte anzeigen möchten, übergeben Sie einen Zeiger an das Progress-Objekt im  _lpProgress-Parameter_ an die -Methode. 
       
-   3. Rufen Sie [IMAPIProgress::P rogress](imapiprogress-progress.md) auf, und übergeben Sie die folgenden Werte für die drei Parameter: 
+   3. Rufen [Sie IMAPIProgress::P rogress](imapiprogress-progress.md) auf, und übergeben Sie die folgenden Werte für die drei Parameter: 
       
-     - Legen Sie den _ulValue_ -Parameter auf die Variable fest, die in Schritt 2 mit dem aktuellen Objekt multipliziert wird. 
+     - Legen Sie  _den ulValue-Parameter_ auf die Variable fest, die in Schritt 2 multipliziert mit dem aktuellen Objekt festgelegt ist. 
       
-     - Legen Sie den Parameter _ulCount_ auf das aktuelle Objekt fest. 
+     - Legen Sie  _den ulCount-Parameter_ auf das aktuelle Objekt. 
       
-     - Legen Sie den Parameter _ulTotal_ auf die in Schritt 1 festgelegte Variable fest, die Gesamtanzahl der Objekte. 
+     - Legen Sie  _den ulTotal-Parameter_ auf die Variable fest, die in Schritt 1 festgelegt ist, die Gesamtanzahl der Objekte. 
     
-Wenn das MAPI_TOP_LEVEL-Flag nicht festgelegt ist, führen Sie die folgenden Schritte aus:
+Wenn das MAPI_TOP_LEVEL nicht festgelegt ist, führen Sie die folgenden Schritte aus:
   
-1. Rufen Sie die [IMAPIProgress:: GetMin](imapiprogress-getmin.md) -Methode des Progress-Objekts auf, um den kleinsten Wert für die Anzeige abzurufen. 
+1. Rufen Sie die [IMAPIProgress::GetMin-Methode](imapiprogress-getmin.md) des Progress-Objekts auf, um den Minimalwert für die Anzeige abzurufen. 
     
-2. Rufen Sie [IMAPIProgress:: GetMax](imapiprogress-getmax.md) auf, um den Maximalwert für die Anzeige abzurufen. 
+2. Rufen [Sie IMAPIProgress::GetMax auf,](imapiprogress-getmax.md) um den maximalen Wert für die Anzeige abzurufen. 
     
-3. Legen Sie eine Variable fest, die der Gesamtanzahl der zu verarbeitenden Objekte entspricht. 
+3. Legen Sie eine Variable fest, die der Gesamtanzahl der zu verarbeitende Objekte entspricht. 
     
-4. Legen Sie eine Variable fest, die dem Ergebnis entspricht, dass der Minimalwert vom Maximalwert subtrahiert und dann durch die Gesamtanzahl der Objekte geteilt wird.
+4. Legen Sie eine Variable fest, die dem Ergebnis entspricht, indem Sie den Minimalwert vom Maximalwert subtrahieren und dann durch die Gesamtanzahl der Objekte dividieren.
     
 5. Führen Sie für jedes zu verarbeitende Objekt die folgenden Schritte aus:
     
-   1. Wenn Ihr Anbieter den Fortschritt für unter Objekte anzeigt, rufen Sie **IMAPIProgress::** setlimits auf, und übergeben Sie die folgenden Werte für die drei Parameter: 
+   1. Wenn Ihr Anbieter den Fortschritt für Unterobjekte zeigt, rufen Sie **IMAPIProgress::SetLimits** auf, und übergeben Sie die folgenden Werte für die drei Parameter: 
       
-     - Legen Sie den Parameter _lpulMin_ auf den Minimalwert plus dem aktuellen Element minus 1 multipliziert mit der in Schritt 4 festgelegten Variable fest. 
+     - Legen Sie  _den lpulMin-Parameter_ auf den Minimalwert plus das aktuelle Element minus 1 multipliziert mit der variablen Einstellung in Schritt 4 fest. 
       
-     - Legen Sie den Parameter _lpulMax_ auf den Minimalwert plus der aktuellen Einheit fest, multipliziert mit der in Schritt 4 festgelegten Variable. 
+     - Legen Sie  _den lpulMax-Parameter_ auf den Minimalwert plus die aktuelle Einheit fest, multipliziert mit der Variablen in Schritt 4. 
       
-     - Legen Sie den Parameter _lpulFlags_ auf 0 fest. 
+     - Legen Sie  _den Parameter lpulFlags_ auf 0. 
       
-   2. Führen Sie die Verarbeitung aus, die für dieses Objekt ausgeführt werden soll. Wenn das Objekt ein Unterobjekt ist und Ihr Anbieter den Fortschritt für unter Objekte anzeigt, übergeben Sie einen Zeiger auf das Progress-Objekt im _lpProgress_ -Parameter an die Methode. 
+   2. Führen Sie alle Verarbeitungsschritte aus, die für dieses Objekt durchgeführt werden sollen. Wenn es sich bei dem Objekt um ein Unterobjekt handelt und ihr Anbieter den Fortschritt für Unterobjekte anzeigt, übergeben Sie einen Zeiger an das Progress-Objekt im  _lpProgress-Parameter_ an die -Methode. 
       
-   3. Rufen Sie [IMAPIProgress::P rogress](imapiprogress-progress.md) auf, und übergeben Sie die folgenden Werte für die drei Parameter: 
+   3. Rufen [Sie IMAPIProgress::P rogress](imapiprogress-progress.md) auf, und übergeben Sie die folgenden Werte für die drei Parameter: 
       
-     - Legen Sie den Parameter _ulValue_ auf Variable festgelegt, die in Schritt 2 mit dem aktuellen Objekt multipliziert wird. 
+     - Legen Sie  _den ulValue-Parameter_ auf eine Variable fest, die in Schritt 2 multipliziert mit dem aktuellen Objekt festgelegt ist. 
       
-     - Legen Sie den Parameter _ulCount_ auf 0 fest. 
+     - Legen Sie  _den ulCount-Parameter_ auf 0. 
       
-     - Legen Sie den Parameter _ulTotal_ auf 0 fest. 
+     - Legen Sie  _den ulTotal-Parameter_ auf 0. 
     
-Das folgende Codebeispiel veranschaulicht die Logik, die erforderlich ist, um den Fortschritt auf allen Ebenen eines Vorgangs anzuzeigen, die den Inhalt eines Ordners mit fünf Unterordnern kopiert. 
+Im folgenden Codebeispiel wird die Logik veranschaulicht, die erforderlich ist, um den Fortschritt auf allen Ebenen eines Vorgangs anzuzeigen, der den Inhalt eines Ordners kopiert, der fünf Unterordner enthält. 
   
 ```cpp
 lpProgress->GetFlags (lpulFlags);
@@ -125,5 +125,5 @@ else
 
 ## <a name="see-also"></a>Siehe auch
 
-- [MAPI-fortSchrittsIndikatoren](mapi-progress-indicators.md)
+- [MAPI-Fortschrittsindikatoren](mapi-progress-indicators.md)
 

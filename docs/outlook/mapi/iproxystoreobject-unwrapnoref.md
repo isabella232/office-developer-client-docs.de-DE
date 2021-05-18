@@ -25,7 +25,7 @@ ms.locfileid: "32320153"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft einen Zeiger auf ein nicht umbrochenes IMAP-Speicherobjekt (Internet Message Access Protocol) ab, das den Zugriff auf die zugrunde liegende persönliche Ordner-Datei (PST) ermöglicht, ohne die Synchronisierung zu aufrufen und die Elemente herunterzuladen.
+Ruft einen Zeiger auf ein imAP (Unwraped Internet Message Access Protocol) gespeichertes Objekt ab, das Zugriff auf die zugrunde liegende Pst (Personal Folders File) ermöglicht, ohne die Synchronisierung aufrufen und die Elemente herunterladen zu müssen.
   
 ```cpp
 HRESULT IProxyStoreObject::UnwrapNoRef (     LPVOID *ppvObject ); 
@@ -35,19 +35,19 @@ HRESULT IProxyStoreObject::UnwrapNoRef (     LPVOID *ppvObject );
 
  _ppvObject_
   
-> Out Zeiger auf ein [IMsgStore: IMAPIProp](imsgstoreimapiprop.md) Store-Objekt, das nicht umbrochen wird. 
+> [out] Zeiger auf ein [IMsgStore : IMAPIProp](imsgstoreimapiprop.md) Store-Objekt, das entpackt ist. 
     
 ## <a name="return-values"></a>Rückgabewerte
 
 S_OK
   
-- Der Aufruf wurde erfolgreich ausgeführt, und ein Zeiger auf eine nicht umbrochene Schnittstelle wurde in _ppvObject_zurückgegeben.
+- Der Aufruf war erfolgreich, und ein Zeiger auf eine entpackte Schnittstelle wurde in _ppvObject zurückgegeben._
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Ohne das erste Auspacken eines IMAP-Speichers kann der Zugriff auf eine Nachricht im Speicher eine Synchronisierung erzwingen, die versucht, die gesamte Nachricht herunterzuladen. Die Verwendung des unwrapped-Speichers ermöglicht den Zugriff auf die Nachricht im aktuellen Zustand, ohne einen Download auszulösen.
+Ohne zunächst ein ImAP-Speicher zu entwrapping, kann der Zugriff auf eine Nachricht im Store eine Synchronisierung erzwingen, die versucht, die gesamte Nachricht herunterzuladen. Die Verwendung des entpackten Speichers ermöglicht den Zugriff auf die Nachricht im aktuellen Status, ohne einen Download auszulösen.
   
-Da **UnwrapNoRef** den Verweiszähler für diesen neuen Zeiger nicht auf das unwrapped Store-Objekt erhöht, sollten Sie nach dem erfolgreichen Aufruf von **UnwrapNoRef**die [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) aufrufen, um den Verweiszähler zu verwalten. 
+Da **UnwrapNoRef** die Referenzanzahl für diesen neuen Zeiger nicht auf das nicht mehr ausgepackte Speicherobjekt erhöht, sollten Sie nach dem erfolgreichen Aufruf von **UnwrapNoRef** [IUnknown::AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) aufrufen, um die Referenzanzahl zu verwalten. 
   
 ## <a name="see-also"></a>Siehe auch
 

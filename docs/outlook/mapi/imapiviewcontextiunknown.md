@@ -25,13 +25,13 @@ ms.locfileid: "33406031"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Verwaltet ein Formular im Formular-Viewer einer Clientanwendung. 
+Verwaltet ein Formular in der Formularanzeige einer Clientanwendung. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiform. h  <br/> |
+|Headerdatei  <br/> |Mapiform.h  <br/> |
 |Verf�gbar gemacht von:  <br/> |Anzeigen von Kontextobjekten  <br/> |
-|Implementiert von:  <br/> |Formular Betrachter  <br/> |
+|Implementiert von:  <br/> |Formularanzeigen  <br/> |
 |Aufgerufen von:  <br/> |Formularobjekte  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPIViewContext  <br/> |
 |Zeigertyp:  <br/> |LPMAPIVIEWCONTEXT  <br/> |
@@ -40,12 +40,12 @@ Verwaltet ein Formular im Formular-Viewer einer Clientanwendung.
 
 |||
 |:-----|:-----|
-|[SetAdviseSink](imapiviewcontext-setadvisesink.md) <br/> |Verwaltet die Registrierung eines Formulars, um Benachrichtigungen zu Änderungen im Viewer zu erhalten.  <br/> |
-|[ActivateNext](imapiviewcontext-activatenext.md) <br/> |Aktiviert die nächste oder vorherige Nachricht im Formular-Viewer.  <br/> |
+|[SetAdviseSink](imapiviewcontext-setadvisesink.md) <br/> |Verwaltet die Registrierung eines Formulars, um Benachrichtigungen über Änderungen im Viewer zu erhalten.  <br/> |
+|[ActivateNext](imapiviewcontext-activatenext.md) <br/> |Aktiviert die nächste oder vorherige Nachricht in der Formularanzeige.  <br/> |
 |[GetPrintSetup](imapiviewcontext-getprintsetup.md) <br/> |Ruft aktuelle Druckinformationen ab.  <br/> |
-|[GetSaveStream](imapiviewcontext-getsavestream.md) <br/> |Ruft einen Stream ab, der zum Speichern der aktuellen Nachricht verwendet werden soll.  <br/> |
-|[GetViewStatus](imapiviewcontext-getviewstatus.md) <br/> |Ruft den aktuellen viewerstatus ab.  <br/> |
-|[Getlasterroraufzurufen](imapiviewcontext-getlasterror.md) <br/> |Gibt eine [MAPIERROR](mapierror.md) -Struktur zurück, die Informationen über den vorherigen Fehler enthält, der im View-Kontextobjekt auftritt.  <br/> |
+|[GetSaveStream](imapiviewcontext-getsavestream.md) <br/> |Ruft einen Datenstrom ab, der zum Speichern der aktuellen Nachricht verwendet werden soll.  <br/> |
+|[GetViewStatus](imapiviewcontext-getviewstatus.md) <br/> |Ruft den aktuellen Viewerstatus ab.  <br/> |
+|[GetLastError](imapiviewcontext-getlasterror.md) <br/> |Gibt eine [MAPIERROR-Struktur](mapierror.md) zurück, die Informationen zum vorherigen Fehler enthält, der im Ansichtskontextobjekt aufgetreten ist.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

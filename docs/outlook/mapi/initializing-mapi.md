@@ -21,43 +21,43 @@ ms.locfileid: "32309730"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Alle Clientanwendungen, die die MAPI-Bibliotheken verwenden, müssen die **MAPIInitialize** -Funktion aufrufen. Weitere Informationen finden Sie unter [MAPIInitialize](mapiinitialize.md). **MAPIInitialize** initialisiert globale Daten für die Sitzung und bereitet die MAPI-Bibliotheken so vor, dass Sie Anrufe annehmen. Es gibt einige Flags, die in einigen Situationen festgelegt werden müssen: 
+Alle Clientanwendungen, die die MAPI-Bibliotheken verwenden, müssen die **MAPIInitialize-Funktion** aufrufen. Weitere Informationen finden Sie unter [MAPIInitialize](mapiinitialize.md). **MAPIInitialize** initialisiert globale Daten für die Sitzung und bereitet die MAPI-Bibliotheken auf die Annahme von Anrufen vor. Es gibt einige Kennzeichen, die in einigen Situationen festgelegt werden müssen: 
   
 - MAPI_NT_SERVICE
     
-    Legen Sie das MAPI_NT_SERVICE-Flag fest, wenn Ihr Client als Windows-Dienst implementiert ist. Wenn Ihr Client ein Windows-Dienst ist und Sie dieses Flag nicht festlegen, wird es von MAPI nicht als Dienst erkannt. 
+    Legen Sie das MAPI_NT_SERVICE, wenn Ihr Client als Dienst implementiert Windows ist. Wenn Ihr Client ein Windows ist und Sie dieses Flag nicht festlegen, erkennt MAPI ihn nicht als Dienst. 
     
 - MAPI_MULTITHREAD_NOTIFICATIONS
     
-    Das MAPI_MULTITHREAD_NOTIFICATIONS-Flag bezieht sich darauf, wie MAPI-Benachrichtigungen verwaltet werden. MAPI erstellt ein ausgeblendetes Fenster, das Fenster Meldungen empfängt, wenn Änderungen an Objekten erfolgen, die Benachrichtigungen generieren. Die Fenster Meldungen werden zu einem bestimmten Zeitpunkt verarbeitet, sodass die Benachrichtigungen gesendet werden und die entsprechenden [IMAPIAdviseSink:: OnNotify](imapiadvisesink-onnotify.md) -Methoden aufgerufen werden. 
+    Das MAPI_MULTITHREAD_NOTIFICATIONS bezieht sich auf die Verwaltung von Benachrichtigungen durch MAPI. MAPI erstellt ein ausgeblendetes Fenster, das Fensternachrichten empfängt, wenn Änderungen an einem Objekt auftreten, das Benachrichtigungen generiert. Die Fensternachrichten werden zu einem bestimmten Zeitpunkt verarbeitet, sodass die Benachrichtigungen gesendet werden und die entsprechenden [IMAPIAdviseSink::OnNotify-Methoden](imapiadvisesink-onnotify.md) aufgerufen werden. 
     
 - MAPI_NO_COINIT
     
-    Legen Sie das MAPI_NO_COINT-Flag fest, sodass **MAPIInitialize** nicht versucht, com mit einem Aufruf [](https://msdn.microsoft.com/library/ms886303.aspx)von "Initialize" zu initialisieren. Wenn eine **MAPIINIT_0** -Struktur an **MAPIInitialize** übergeben wird, wobei _ulFlags_ auf MAPI_NO_COINIT festgelegt ist, wird von MAPI davon ausgegangen, dass com bereits INITIALISIERT wurde und den Aufruf von "diinitialize" umgehen. ****
+    Legen Sie MAPI_NO_COINT-Flag fest, damit **MAPIInitialize** nicht versucht, COM mit einem Aufruf von [CoInitialize zu initialisieren.](https://msdn.microsoft.com/library/ms886303.aspx) Wenn eine **MAPIINIT_0** an **MAPIInitialize** übergeben wird und  _ulFlags_ auf MAPI_NO_COINIT festgelegt ist, geht MAPI davon aus, dass COM bereits initialisiert wurde und den Aufruf von **CoInitialize** umgehen.
     
-Wenn das MAPI_MULTITHREAD_NOTIFICATIONS-Flag nicht übergeben wird, erstellt MAPI das Benachrichtigungsfenster für den Thread, der für Ihren ersten **MAPIInitialize** -Aufruf verwendet wurde. MAPI erstellt das Benachrichtigungsfenster in einem separaten Thread, wenn MAPI_MULTITHREAD_NOTIFICATIONS übergeben wird – ein Thread, der für die Behandlung von Benachrichtigungen reserviert ist. MAPI erwartet den Thread, der zum Erstellen des ausgeblendeten Benachrichtigungsfensters verwendet wird, für Folgendes: 
+Wenn MAPI_MULTITHREAD_NOTIFICATIONS nicht übergeben wird, erstellt MAPI das Benachrichtigungsfenster im Thread, der für den ersten **MAPIInitialize-Aufruf verwendet** wurde. MAPI erstellt das Benachrichtigungsfenster in einem separaten Thread, MAPI_MULTITHREAD_NOTIFICATIONS übergeben wird – ein Thread, der für die Verarbeitung von Benachrichtigungen verwendet wird. MAPI erwartet den Thread, der zum Erstellen des ausgeblendeten Benachrichtigungsfensters verwendet wird, für: 
   
-- Haben Sie eine Meldungsschleife.
+- Verfügen Sie über eine Nachrichtenschleife.
     
-- Während der gesamten Lebensdauer der Sitzung nicht blockiert.
+- Bleiben Sie während der gesamten Lebensdauer der Sitzung unblocked.
     
-- Sie haben eine längere Lebensdauer als alle anderen von Ihrem Client erstellten Threads. 
+- Sie haben eine längere Lebensdauer als jeder andere thread, der von Ihrem Client erstellt wurde. 
     
-Sie können auswählen, welcher Thread verwendet wird, indem Sie im ersten **MAPIInitialize** -Aufruf eine Kennzeichnung festlegen. Die Gefahr, dass eines ihrer Threads die Benachrichtigungen verarbeitet, besteht darin, dass das Benachrichtigungsfenster zerstört wird und Benachrichtigungen nicht mehr an andere Threads gesendet werden können, wenn der Thread ausgeblendet wird. Außerdem kann eine spezielle Verarbeitung erforderlich sein, um die Versendung der Benachrichtigungen zu steuern, die an die Nachrichtenwarteschlange des ausgeblendeten Fensters gesendet werden. 
+Sie können auswählen, welcher Thread verwendet wird, indem Sie im ersten **MAPIInitialize-Aufruf** ein Flag festlegen. Die Gefahr, dass einer Ihrer Threads die Benachrichtigungen verarbeiten kann, besteht in der Gefahr, dass das Benachrichtigungsfenster zerstört wird, wenn der Thread nicht mehr angezeigt wird und Benachrichtigungen nicht mehr an ihre anderen Threads gesendet werden können. Außerdem ist möglicherweise eine spezielle Verarbeitung erforderlich, um die Versendung der Benachrichtigungen zu steuern, die in der Nachrichtenwarteschlange des ausgeblendeten Fensters gepostet werden. 
   
-Wenn Sie ein separates Fenster zum Behandeln von Benachrichtigungen verwenden, müssen Sie sicherstellen, dass Benachrichtigungen zu einem geeigneten Zeitpunkt zu einem geeigneten Thread angezeigt werden. Sie benötigen keinen speziellen Code, um die im Benachrichtigungsfenster bereitgestellten Windows-Nachrichten zu überprüfen und zu verarbeiten. 
+Wenn Sie ein separates Fenster zum Behandeln von Benachrichtigungen verwenden, müssen Sie sicher sein, dass Benachrichtigungen zum richtigen Zeitpunkt in einem geeigneten Thread angezeigt werden. Sie benötigen keinen speziellen Code zum Überprüfen und Verarbeiten der Windows nachrichten, die im Benachrichtigungsfenster bereitgestellt werden. 
   
 MAPI empfiehlt, dass die folgenden Typen von Clientanwendungen einen separaten Thread verwenden, um das ausgeblendete Fenster für die Benachrichtigungsunterstützung zu erstellen:
   
-- Alle Multithread-Clients.
+- Alle Multithreadclients.
     
-- Single threaded-Windows-Dienste und Win32-Konsolenanwendungen.
+- Single-Thread-Windows-Dienste und Win32-Konsolenanwendungen.
     
-- Single Thread-Clients, die ihren Hauptthread für die Benachrichtigung nicht verwenden müssen.
+- Clients mit einem Thread, die ihren Hauptthread nicht für die Benachrichtigung verwenden müssen.
     
-Wenn Sie den separaten Thread Ansatz verwenden möchten, rufen Sie **MAPIInitialize** für jeden Thread auf, und legen Sie das MAPI_MULTITHREAD_NOTIFICATIONS-Flag fest. 
+Um den separaten Threadansatz zu verwenden, rufen Sie **MAPIInitialize** für jeden Thread auf, und setzen Sie MAPI_MULTITHREAD_NOTIFICATIONS Flag. 
   
 > [!NOTE]
-> Nur der erste Aufruf des Clients an **MAPIInitialize** bewirkt, dass ein ausgeblendetes Fenster zur Unterstützung von Benachrichtigungen erstellt wird. Nachfolgende Aufrufe führen nur zu einer Erhöhung der Verweisanzahl. 
+> Nur der erste Aufruf eines Clients bei **MAPIInitialize** bewirkt, dass ein ausgeblendetes Fenster erstellt wird, um Benachrichtigungen zu unterstützen. Nachfolgende Aufrufe führen nur dazu, dass eine Verweisanzahl erhöht wird. 
   
 

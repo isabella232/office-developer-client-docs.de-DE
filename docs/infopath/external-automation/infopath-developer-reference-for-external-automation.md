@@ -19,7 +19,7 @@ ms.locfileid: "32310143"
 
 Willkommen bei der InfoPath 2013-Entwicklerreferenz für die externe Automatisierung. Diese Dokumentation hilft Ihnen mit Übersichten, Programmierungsaufgaben und Referenzinformationen zur Klassenbibliothek bei der Entwicklung von Lösungen mit verwaltetem Code, die InfoPath von externen Anwendungen oder Add-Ins aus automatisieren.
   
-Weitere Informationen zum Arbeiten mit InfoPath-Formularvorlagen, die Geschäftslogik enthalten, die in verwaltetem Code geschrieben wurde, finden Sie in der [infopath 2013-Entwicklerreferenz für Formularvorlagen](https://go.microsoft.com/fwlink/?LinkId=159764).
+Weitere Informationen zum Arbeiten mit InfoPath-Formularvorlagen, die Geschäftslogik enthalten, die in verwalteten Code geschrieben wurde, finden Sie in der [InfoPath 2013-Entwicklerreferenz für Formularvorlagen](https://go.microsoft.com/fwlink/?LinkId=159764).
   
 Datum der Veröffentlichung dieser Referenz: Oktober 2012
   
@@ -28,7 +28,7 @@ Datum der Veröffentlichung dieser Referenz: Oktober 2012
 - [InfoPath Developer Center](https://msdn.microsoft.com/office/aa905434.aspx)  
 - [Office Developer Center](https://msdn.microsoft.com/office/default.aspx)
 - [Dokumentkonventionen in der Office-Entwicklerdokumentation](https://msdn.microsoft.com/office/aa905365.aspx)
-- [Microsoft-Eingabehilfen](https://www.microsoft.com/ENABLE/)
+- [Microsoft-Bedienungshilfen](https://www.microsoft.com/ENABLE/)
 
   
 

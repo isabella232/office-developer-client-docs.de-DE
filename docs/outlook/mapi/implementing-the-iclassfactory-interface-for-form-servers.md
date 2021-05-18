@@ -21,18 +21,18 @@ ms.locfileid: "32310031"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-[IClassFactory](https://msdn.microsoft.com/library/ms694364%28VS.85%29.aspx) ist die OLE-Schnittstelle, mit der Clientanwendungen neue Formularobjekte der Nachrichtenklasse Ihres Formular Servers erstellen. In der folgenden Tabelle sind die **IClassFactory** -Methoden aufgeführt, die erforderlich sind. 
+[IClassFactory](https://msdn.microsoft.com/library/ms694364%28VS.85%29.aspx) ist die OLE-Schnittstelle, die Clientanwendungen zum Erstellen neuer Formularobjekte der Nachrichtenklasse Des Formularservers verwenden. In der folgenden Tabelle sind die **erforderlichen IClassFactory-Methoden** aufgeführt. 
   
 |**Methode**|**Beschreibung**|
 |:-----|:-----|
-|[CreateInstance](https://msdn.microsoft.com/library/ms682215%28v=VS.85%29.aspx) <br/> |Erstellt ein neues Form-Objekt.  <br/> |
-|[LockServer](https://msdn.microsoft.com/library/ms682332%28v=VS.85%29.aspx) <br/> |Sperrt den Formularserver im Arbeitsspeicher, sodass der Start Aufwand vermieden werden kann, wenn mehrere Form-Objekte erstellt werden.  <br/> |
+|[CreateInstance](https://msdn.microsoft.com/library/ms682215%28v=VS.85%29.aspx) <br/> |Erstellt ein neues Formularobjekt.  <br/> |
+|[LockServer](https://msdn.microsoft.com/library/ms682332%28v=VS.85%29.aspx) <br/> |Sperrt den Formularserver im Arbeitsspeicher, sodass beim Erstellen mehrerer Formularobjekte ein Startaufwand vermieden werden kann.  <br/> |
    
-Alle Informationen, die für die Implementierung dieser Methoden erforderlich sind, finden Sie im Abschnitt com-und ActiveX-Objektdienste im Windows SDK.
+Alle erforderlichen Informationen zum Implementieren dieser Methoden finden Sie im Abschnitt COM und ActiveX Object Services im Windows SDK.
   
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Schreiben von Formular Server Code](writing-form-server-code.md)
+[Schreiben von Formularservercode](writing-form-server-code.md)
 

@@ -25,12 +25,12 @@ ms.locfileid: "33407123"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl der Bytes, die für eine neue [FLATENTRYLIST](flatentrylist.md) -Struktur reserviert werden sollen, die mehrere [FLATENTRY](flatentry.md) -Strukturen einer angegebenen Größe enthält. 
+Berechnet die Anzahl der Bytes, die einer neuen [FLATENTRYLIST-Struktur](flatentrylist.md) zugeordnet werden sollen, die mehrere [FLATENTRY-Strukturen](flatentry.md) einer angegebenen Größe enthält. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |**FLATENTRYLIST** <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |**FLATENTRYLIST** <br/> |
    
 ```cpp
 CbNewFLATENTRY (_cb)
@@ -38,9 +38,9 @@ CbNewFLATENTRY (_cb)
 
 ## <a name="parameters"></a>Parameter
 
- __CB_
+ _ _cb_
   
-> Die Anzahl der Bytes in den **FLATENTRY** -Strukturen, die in die neue **FLATENTRYLIST** -Struktur eingeschlossen werden sollen. 
+> Anzahl der Bytes in den **FLATENTRY-Strukturen,** die in die neue **FLATENTRYLIST-Struktur eingeschlossen werden** sollen. 
     
 ## <a name="see-also"></a>Siehe auch
 

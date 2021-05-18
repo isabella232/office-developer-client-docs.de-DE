@@ -1,5 +1,5 @@
 ---
-title: '[VBA-Referenz für Access]'
+title: '[Access-VBA-Referenz]'
 ms.date: 01/01/1900
 ms.audience: Developer
 localization_priority: Normal
@@ -12,7 +12,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33406353"
 ---
-# <a name="access-vba-reference"></a>[VBA-Referenz für Access]
+# <a name="access-vba-reference"></a>[Access-VBA-Referenz]
 
 {Zusammenfassung einfügen}
   

@@ -38,11 +38,11 @@ HRESULT DeleteProps(
 
  _lpPropTagArray_
   
-> in Ein Zeiger auf ein Array von Property-Tags, die die zu löschenden Eigenschaften anzeigen. Das **cValues** -Element der [SPropTagArray](sproptagarray.md) -Struktur, auf die durch _lpPropTagArray_ verwiesen wird, darf nicht NULL sein, und der _lpPropTagArray_ -Parameter selbst darf nicht NULL sein. 
+> [in] Ein Zeiger auf ein Array von Eigenschaftstags, die die zu löschenden Eigenschaften angeben. Das **cValues-Element** der [SPropTagArray-Struktur,](sproptagarray.md) auf die  _von lpPropTagArray_ verwiesen wird, darf nicht Null sein, und der  _lpPropTagArray-Parameter_ selbst darf nicht NULL sein. 
     
  _lppProblems_
   
-> [in, out] Bei der Eingabe ein Zeiger auf einen Zeiger auf eine [SPropProblemArray](spropproblemarray.md) -Struktur; andernfalls NULL, was bedeutet, dass keine Fehlerinformationen erforderlich sind. Wenn _lppProblems_ ein gültiger Zeiger auf der Eingabe ist, gibt **DeleteProps** detaillierte Informationen zu Fehlern beim Löschen einer oder mehrerer Eigenschaften zurück. 
+> [in, out] Bei der Eingabe ein Zeiger auf einen Zeiger auf eine [SPropProblemArray-Struktur;](spropproblemarray.md) Andernfalls NULL, was angibt, dass keine Fehlerinformationen benötigt werden. Wenn  _lppProblems ein_ gültiger Zeiger auf Eingaben ist, gibt **DeleteProps** detaillierte Informationen zu Fehlern beim Löschen einer oder mehreren Eigenschaften zurück. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -52,25 +52,25 @@ S_OK
     
 MAPI_E_NO_ACCESS 
   
-> Der Aufrufer verfügt nicht über ausreichende Berechtigungen zum Löschen von Eigenschaften.
+> Der Aufrufer verfügt über unzureichende Berechtigungen zum Löschen von Eigenschaften.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPIProp::D eleteprops** -Methode entfernt eine oder mehrere Eigenschaften aus dem aktuellen Objekt. 
+Die **IMAPIProp::D eleteProps-Methode** entfernt eine oder mehrere Eigenschaften aus dem aktuellen Objekt. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Sie müssen nicht zulassen, dass Eigenschaften aus allen Objekten gelöscht werden. Wenn das Objekt nicht geändert werden kann, geben Sie MAPI_E_NO_ACCESS von der **DeleteProps** -Methode zurück. 
+Sie müssen nicht zulassen, dass Eigenschaften aus allen Objekten gelöscht werden. Wenn das Objekt nicht veränderbar ist, geben Sie MAPI_E_NO_ACCESS **deleteProps-Methode** zurück. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Sie müssen den Eigenschaftentyp für jedes Property-Tag im Property Tag-Array, auf das durch den _lpPropTagArray_ -Parameter verwiesen wird, nicht festlegen. Eigenschaftstypen werden ignoriert; nur die Eigenschaftenbezeichner werden verwendet. 
+Sie müssen nicht den Eigenschaftentyp für jedes Eigenschaftstag im Eigenschaftentagarray festlegen, auf das der  _lpPropTagArray-Parameter_ verweist. Eigenschaftstypen werden ignoriert. nur die Eigenschaftsbezeichner werden verwendet. 
   
-Beachten Sie, dass einige Objekte keine Änderung zulassen und diese Objekte MAPI_E_NO_ACCESS von der **DeleteProps** -Methode zurückgeben. Andere Objekte erlauben, dass einige Eigenschaften gelöscht werden, nicht aber andere. Wenn beim Löschen von nur einigen Eigenschaften ein Problem auftritt, gibt **DELETEPROPS** S_OK zurück. Wenn Sie einen gültigen Zeiger im _lppProblems_ -Parameter übergeben haben, legt **DeleteProps** den Zeiger auf eine **SPropProblemArray** -Struktur fest, die detaillierte Informationen zu den Problemen mit den einzelnen Eigenschaften enthält. Wenn Sie beispielsweise alle Eigenschaften einer Nachricht löschen und ein Problem mit einer oder mehreren ihrer Anlagen vorliegt, enthält die **SPropProblemArray** -Struktur einen Eintrag für die **PR_MESSAGE_ATTACHMENTS** ([pidtagmessageattachments ( ](pidtagmessageattachments-canonical-property.md))-Eigenschaft. 
+Beachten Sie, dass einige Objekte keine Änderung zulassen und dass diese Objekte MAPI_E_NO_ACCESS **deleteProps-Methode** zurückgeben. Bei anderen Objekten können einige Eigenschaften gelöscht werden, andere jedoch nicht. Wenn ein Problem beim Löschen nur einiger Eigenschaften besteht, gibt **DeleteProps** S_OK. Wenn Sie einen gültigen Zeiger im  _lppProblems-Parameter_ übergeben haben, legt **DeleteProps** den Zeiger auf eine **SPropProblemArray-Struktur** fest, die detaillierte Informationen zu den Problemen mit jeder Eigenschaft enthält. Wenn Sie beispielsweise alle Eigenschaften einer Nachricht löschen und ein Problem mit einer oder mehreren Anlagen besteht, enthält die **SPropProblemArray-Struktur** einen Eintrag für die **PR_MESSAGE_ATTACHMENTS** ([PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md))-Eigenschaft. 
   
-Die Struktur, auf die durch _lppProblems_ verwiesen wird, ist nur gültig, wenn **DeleteProps** S_OK zurückgibt. Wenn **DeleteProps** einen Fehler zurückgibt, versuchen Sie nicht, die **SPropProblemArray** -Struktur zu verwenden. Rufen Sie stattdessen die [IMAPIProp:: getlasterroraufzurufen](imapiprop-getlasterror.md) -Methode des Objekts auf, um weitere Informationen zum Fehler abzurufen. 
+Die Struktur, auf die  _lppProblems_ verweist, ist nur gültig, wenn **DeleteProps** S_OK. Wenn **DeleteProps** einen Fehler zurückgibt, versuchen Sie nicht, die **SPropProblemArray-Struktur zu** verwenden. Rufen Sie stattdessen die [IMAPIProp::GetLastError-Methode](imapiprop-getlasterror.md) des Objekts auf, um weitere Informationen zum Fehler zu erhalten. 
   
-Freigeben Sie die zurückgegebene **SPropProblemArray** -Struktur durch Aufrufen der [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion. 
+Geben Sie die zurückgegebene **SPropProblemArray-Struktur** frei, indem Sie die [MAPIFreeBuffer-Funktion](mapifreebuffer.md) aufrufen. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -78,7 +78,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIFunctions. cpp  <br/> |DeleteProperty  <br/> |MFCMAPI verwendet die **IMAPIProp::D eleteprops** -Methode, um eine Eigenschaft aus einem Objekt zu löschen.  <br/> |
+|MAPIFunctions.cpp  <br/> |DeleteProperty  <br/> |MFCMAPI verwendet die **IMAPIProp::D eleteProps-Methode,** um eine Eigenschaft aus einem Objekt zu löschen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

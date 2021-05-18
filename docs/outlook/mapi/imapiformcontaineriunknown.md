@@ -25,14 +25,14 @@ ms.locfileid: "33407529"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Verwaltet Formulare in Formularbibliotheken. Diese Schnittstelle wird verwendet, um anwendungsspezifische Formularbibliotheken zu erstellen. 
+Verwaltet Formulare in Formularbibliotheken. Diese Schnittstelle wird zum Erstellen anwendungsspezifischer Formularbibliotheken verwendet. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiform. h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Formular Containerobjekte  <br/> |
-|Implementiert von:  <br/> |Formular Bibliotheks Anbieter  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
+|Headerdatei  <br/> |Mapiform.h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Formularcontainerobjekte  <br/> |
+|Implementiert von:  <br/> |Anbieter von Formularbibliotheken  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPIFormContainer  <br/> |
 |Zeigertyp:  <br/> |LPMAPIFORMCONTAINER  <br/> |
    
@@ -40,13 +40,13 @@ Verwaltet Formulare in Formularbibliotheken. Diese Schnittstelle wird verwendet,
 
 |||
 |:-----|:-----|
-|[InstallForm](imapiformcontainer-installform.md) <br/> |Installiert ein Formular in einem Formular Container.  <br/> |
-|[RemoveForm](imapiformcontainer-removeform.md) <br/> |Entfernt ein bestimmtes Formular aus einem Formular Container.  <br/> |
-|[ResolveMessageClass](imapiformcontainer-resolvemessageclass.md) <br/> |Löst eine Nachrichtenklasse in Ihrem Formular in einem Formular Container auf und gibt ein Formular Informationsobjekt für dieses Formular zurück.  <br/> |
-|[ResolveMultipleMessageClasses](imapiformcontainer-resolvemultiplemessageclasses.md) <br/> |Löst eine Gruppe von Nachrichtenklassen in Ihre Formulare in einem Formular Container auf und gibt ein Array von Formular Informationsobjekten für diese Formulare zurück.  <br/> |
-|[CalcFormPropSet](imapiformcontainer-calcformpropset.md) <br/> |Gibt ein Array der Eigenschaften zurück, die von allen in einem Formular Container installierten Formularen verwendet werden.  <br/> |
-|[GetDisplay](imapiformcontainer-getdisplay.md) <br/> |Gibt den Anzeigenamen eines Formular Containers zurück.  <br/> |
-|[Getlasterroraufzurufen](imapiformcontainer-getlasterror.md) <br/> |Gibt eine [MAPIERROR](mapierror.md) -Struktur zurück, die Informationen über den vorherigen Fehler im Formular Containerobjekt enthält.  <br/> |
+|[InstallForm](imapiformcontainer-installform.md) <br/> |Installiert ein Formular in einem Formularcontainer.  <br/> |
+|[RemoveForm](imapiformcontainer-removeform.md) <br/> |Entfernt ein bestimmtes Formular aus einem Formularcontainer.  <br/> |
+|[ResolveMessageClass](imapiformcontainer-resolvemessageclass.md) <br/> |Löst eine Nachrichtenklasse in ihr Formular in einem Formularcontainer auf und gibt ein Formularinformationsobjekt für dieses Formular zurück.  <br/> |
+|[ResolveMultipleMessageClasses](imapiformcontainer-resolvemultiplemessageclasses.md) <br/> |Löst eine Gruppe von Nachrichtenklassen in ihre Formulare in einem Formularcontainer auf und gibt ein Array von Formularinformationsobjekten für diese Formulare zurück.  <br/> |
+|[CalcFormPropSet](imapiformcontainer-calcformpropset.md) <br/> |Gibt ein Array der Eigenschaften zurück, die von allen in einem Formularcontainer installierten Formularen verwendet werden.  <br/> |
+|[GetDisplay](imapiformcontainer-getdisplay.md) <br/> |Gibt den Anzeigenamen eines Formularcontainers zurück.  <br/> |
+|[GetLastError](imapiformcontainer-getlasterror.md) <br/> |Gibt eine [MAPIERROR-Struktur](mapierror.md) zurück, die Informationen zum vorherigen Fehler enthält, der für das Formularcontainerobjekt aufgetreten ist.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

@@ -21,9 +21,9 @@ ms.locfileid: "32316484"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Teststrategien sind unterschiedlich, je nachdem, ob Sie einen Client oder einen Dienstanbieter entwickeln. Da für eine Clientanwendung mindestens ein Dienstanbieter erforderlich ist, sollten Clients in einer Umgebung mit verschiedenen Dienstanbieter Gruppen getestet werden.
+Die Teststrategien unterscheiden sich je nachdem, ob Sie einen Client oder Dienstanbieter entwickeln. Da für eine Clientanwendung mindestens ein Dienstanbieter ausgeführt werden muss, sollten Clients in einer Umgebung mit unterschiedlichen Sätzen von Dienstanbietern getestet werden.
   
-Dienstanbieter sollten jedoch isoliert getestet werden, bevor Sie mit anderen Anbietern integriert werden. MAPI stellt Tools bereit, mit denen die Funktionen eines Dienstanbieters eines bestimmten Typs getestet werden können. Die [MfcMapi](https://go.microsoft.com/fwlink/?LinkId=124154) -Beispielanwendung zeigt, wie Sie die Features eines Adressbuch Anbieters testen und mit einem Nachrichtenspeicher Anbieter zusammenarbeiten. 
+Dienstanbieter sollten jedoch isoliert getestet werden, bevor sie in andere Anbieter integriert werden. MAPI stellt Tools bereit, die die Features eines Dienstanbieters eines bestimmten Typs testen sollen. Die [MFCMAPI-Beispielanwendung](https://go.microsoft.com/fwlink/?LinkId=124154) zeigt, wie Sie die Features eines Adressbuchanbieters testen und mit einem Nachrichtenspeicheranbieter zusammenarbeiten. 
   
 ## <a name="see-also"></a>Siehe auch
 

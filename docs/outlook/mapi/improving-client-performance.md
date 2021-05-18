@@ -19,6 +19,6 @@ ms.locfileid: "33405961"
  
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die Themen in diesem Abschnitt enthalten Tipps, die Ihnen beim Erstellen einer Clientanwendung mit der bestmöglichen Leistung helfen.
+Die Themen in diesem Abschnitt enthalten Tipps, mit denen Sie eine Clientanwendung mit bestmöglicher Leistung erstellen können.
   
 

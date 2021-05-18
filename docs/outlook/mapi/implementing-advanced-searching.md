@@ -21,22 +21,22 @@ ms.locfileid: "33407389"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Einige Adressbuchcontainer unterstützen eine erweiterte Suchfunktion, die es Clients ermöglicht, andere Eigenschaften als **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) zu suchen. Zur Unterstützung erweiterter Suchvorgänge muss der Anbieter einen speziellen Container implementieren, auf den über die **PR_SEARCH** ([pidtagsearch (](pidtagsearch-canonical-property.md))-Eigenschaft der anderen Container zugegriffen werden kann. **PR_SEARCH** enthält ein Container-Objekt, das Zugriff auf eine Anzeigetabelle bietet, in der das Dialogfeld beschrieben wird, das zum eingeben und Bearbeiten der erweiterten Suchkriterien verwendet wird. 
+Einige Adressbuchcontainer unterstützen eine erweiterte Suchfunktion, mit der Clients nach anderen Eigenschaften als PR_DISPLAY_NAME **(** [PidTagDisplayName](pidtagdisplayname-canonical-property.md)) suchen können. Um erweiterte Suchen zu unterstützen, muss Ihr Anbieter einen speziellen Container implementieren, auf den über die **PR_SEARCH** ([PidTagSearch](pidtagsearch-canonical-property.md))-Eigenschaft Ihrer anderen Container zugegriffen werden kann. **PR_SEARCH** enthält ein Containerobjekt, das Zugriff auf eine Anzeigetabelle bietet, in der das Dialogfeld zum Eingeben und Bearbeiten der erweiterten Suchkriterien beschrieben wird. 
   
  **So unterstützen Sie die erweiterte Suche**
   
 1. Definieren Sie eine Eigenschaft für jedes Suchkriterium.
     
-2. Im Codeabschnitt in der [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode ihres Containers, die die **PR_SEARCH** -Eigenschaft behandelt: 
+2. Im Codeabschnitt in der [IMAPIProp::OpenProperty-Methode](imapiprop-openproperty.md) Ihres Containers, die die PR_SEARCH **behandelt:** 
     
-1. Überprüfen Sie, ob der Client die **IMAPIContainer** -Schnittstelle anfordert. Wenn eine ungeeignete Schnittstelle angefordert wird, schlagen Sie fehl und geben MAPI_E_INTERFACE_NOT_SUPPORTED zurück. 
+1. Überprüfen Sie, ob der Client die **IMAPIContainer-Schnittstelle** anfordert. Wenn eine unangemessene Schnittstelle angefordert wird, führen Sie einen Fehler aus, und geben Sie MAPI_E_INTERFACE_NOT_SUPPORTED. 
     
-2. Erstellen Sie ein neues Search-Objekt, das die **IMAPIContainer** -Schnittstelle unterstützt. 
+2. Erstellen Sie ein neues Suchobjekt, das die **IMAPIContainer-Schnittstelle** unterstützt. 
     
-3. An dieser Stelle wird ein Aufruf an die **IMAPIProp:: OpenProperty** -Methode des Such Containers durchgeführt, um die **PR_DETAILS_TABLE** ([pidtagdetailstable (](pidtagdetailstable-canonical-property.md))-Eigenschaft abzurufen. Der Anbieter muss eine Anzeigetabelle angeben, normalerweise durch einen Aufruf von [BuildDisplayTable](builddisplaytable.md), der das Dialogfeld Erweiterte Suche des Containers beschreibt.
+3. An diesem Punkt wird die **IMAPIProp::OpenProperty-Methode** des Suchcontainers aufgerufen, um die **PR_DETAILS_TABLE** ([PidTagDetailsTable](pidtagdetailstable-canonical-property.md)) -Eigenschaft abzurufen. Ihr Anbieter muss eine Anzeigetabelle liefern, in der Regel über einen Aufruf von [BuildDisplayTable,](builddisplaytable.md)in der das dialogfeld erweiterte Suche des Containers beschrieben wird.
     
-4. MAPI zeigt das Dialogfeld Suchen an, in dem der Benutzer die entsprechenden Kriterien eingeben kann. Wenn der Benutzer fertig ist, ruft MAPI die [IMAPIProp::](imapiprop-setprops.md) SetProps-Methode des Containers auf, um die Suchkriterien zu speichern. 
+4. MAPI zeigt das Suchdialogfeld an, sodass der Benutzer die entsprechenden Kriterien eingeben kann. Wenn der Benutzer fertig ist, ruft MAPI die [IMAPIProp::SetProps-Methode](imapiprop-setprops.md) des Containers auf, um die Suchkriterien zu speichern. 
     
-5. Es wird ein Anruf getätigt, um die Inhaltstabelle Ihres Such Containers anzufordern. Füllen Sie die Tabelle Contents mit allen Einträgen im Container, die den Kriterien entsprechen.
+5. Es wird ein Aufruf zum Anfordern des Inhaltsverzeichnisses des Suchcontainers vorgenommen. Füllen Sie die Inhaltstabelle mit allen Einträgen im Container auf, die den Kriterien entsprechen.
     
 

@@ -37,7 +37,7 @@ HRESULT GetMessage(
 
  _ppmsg_
   
-> Out Ein Zeiger auf einen Zeiger auf die zurückgegebene Schnittstelle für die Nachricht.
+> [out] Ein Zeiger auf einen Zeiger auf die zurückgegebene Schnittstelle für die Nachricht.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -47,15 +47,15 @@ S_OK
     
 S_FALSE 
   
-> Für das Anruf Formular ist derzeit keine Nachricht vorhanden.
+> Für das aufrufende Formular ist derzeit keine Nachricht vorhanden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Formulare rufen die **IMAPIMessageSite:: getMessage** -Methode auf, um eine Nachrichten Schnittstelle für die aktuelle Nachricht abzurufen. Die aktuelle Nachricht ist dieselbe Nachricht, die zuvor in der [IPersistMessage:: InitNew](ipersistmessage-initnew.md), [IPersistMessage:: Laden](ipersistmessage-load.md)oder [IPersistMessage: SaveCompleted](ipersistmessage-savecompleted.md) -Methode übergeben wurde. 
+Formulare rufen die **IMAPIMessageSite::GetMessage-Methode** auf, um eine Nachrichtenschnittstelle für die aktuelle Nachricht zu erhalten. Die aktuelle Nachricht ist die gleiche Nachricht wie zuvor in der [IPersistMessage::InitNew](ipersistmessage-initnew.md)-, [IPersistMessage::Load](ipersistmessage-load.md)- oder [IPersistMessage::SaveCompleted-Methode.](ipersistmessage-savecompleted.md) 
   
- **GetMessage** gibt S_FALSE zurück, wenn keine Nachricht vorhanden ist. Dieser Zustand kann nach Aufrufen der [IPersistMessage:: HandsOffMessage](ipersistmessage-handsoffmessage.md) -Methode oder vor dem nächsten Aufruf von **IPersistMessage:: Laden** oder **IPersistMessage:: SaveCompleted** erfolgen. 
+ **GetMessage** gibt S_FALSE zurück, wenn derzeit keine Nachricht vorhanden ist. Dieser Zustand kann nach Aufrufen der [IPersistMessage::HandsOffMessage-Methode](ipersistmessage-handsoffmessage.md) oder vor dem nächsten Aufruf von **IPersistMessage::Load** oder **IPersistMessage::SaveCompleted** auftreten. 
   
-Eine Liste der Schnittstellen im Zusammenhang mit Formular Servern finden Sie unter [MAPI-Formular Schnittstellen](mapi-form-interfaces.md).
+Eine Liste der Schnittstellen im Zusammenhang mit Formularservern finden Sie unter [MAPI Form Interfaces](mapi-form-interfaces.md).
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -63,7 +63,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer. cpp  <br/> |CMyMAPIFormViewer:: getSession  <br/> |MFCMAPI verwendet die **IMAPIMessageSite:: getMessage** -Methode, um den aktuell zwischengespeicherten Nachrichten Zeiger zurückzugeben, sofern dieser verfügbar ist.  <br/> |
+|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::GetSession  <br/> |MFCMAPI verwendet die **IMAPIMessageSite::GetMessage-Methode,** um den aktuell zwischengespeicherten Nachrichtenzeiger zurückzukehren, sofern er verfügbar ist.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -84,5 +84,5 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
-[MAPI-Formular Schnittstellen](mapi-form-interfaces.md)
+[MAPI-Formularschnittstellen](mapi-form-interfaces.md)
 

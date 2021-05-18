@@ -5,7 +5,7 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 keywords:
-- Ausdrucksauswertung [Excel 2007], Arbeitsblätter [Excel 2007], Namensauswertung, Auswerten von Ausdrücken [Excel 2007], Auswerten von Arbeitsblattnamen [Excel 2007], Ausdrücke [Excel 2007], auswerten, Namen [Excel 2007], auswerten, Namensauswertung [Excel 2007] , Zeichenfolgen [Excel 2007], konvertieren in Werte, xlfEvaluate-Funktion [Excel 2007], Arbeitsblätter [Excel 2007], Ausdrucksauswertung
+- Ausdrucksauswertung [excel 2007],Arbeitsblätter [Excel 2007], Name evaluation,evaluating expressions [Excel 2007],evaluating worksheet names [Excel 2007],expressions [Excel 2007], evaluating,names [Excel 2007], evaluating,name evaluation [Excel 2007],strings [Excel 2007], converting to values,xlfEvaluate function [Excel 2007],worksheets [Excel 2007], expression evaluation], expression evaluation
 localization_priority: Normal
 ms.assetid: 2b23c75e-2a95-4f26-8714-2a73f5e326a7
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -20,7 +20,7 @@ ms.locfileid: "33406864"
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Eine der wichtigsten Features, die Excel über die C-API verfügbar macht, ist die Möglichkeit, beliebige Zeichenfolgen Formeln, die rechtlich in ein Arbeitsblatt eingegeben werden können, in einen Wert oder ein Array von Werten umzuwandeln. Dies ist für XLL-Funktionen und Befehle unerlässlich, die beispielsweise den Inhalt definierter Namen lesen müssen. Diese Fähigkeit wird über die [xlfEvaluate-Funktion](xlfevaluate.md)offen gelegt, wie in diesem Beispiel gezeigt.
+Eines der wichtigsten Features, die Excel über die C-API verfügbar macht, ist die Möglichkeit, alle Zeichenfolgenformeln zu konvertieren, die legal in ein Arbeitsblatt in einen Wert oder ein Array von Werten eingegeben werden können. Dies ist wichtig für XLL-Funktionen und -Befehle, die z. B. den Inhalt definierter Namen lesen müssen. Diese Funktion wird über die [xlfEvaluate-Funktion](xlfevaluate.md)verfügbar gemacht, wie in diesem Beispiel gezeigt.
   
 ```C
 int WINAPI evaluate_name_example(void)
@@ -41,25 +41,25 @@ int WINAPI evaluate_name_example(void)
 }
 ```
 
-Beachten Sie Folgendes: Wenn Sie einen Arbeitsblattnamen auswerten, entweder eigenständig oder in einer Formel, müssen Sie den Namen mindestens mit "!" voranstellen. Andernfalls versucht Excel, den Namen in einem ausgeblendeten Namespace zu finden, der für DLLs reserviert ist. Sie können mit der [xlfSetName-Funktion](xlfsetname.md)versteckte DLL-Namen erstellen und löschen. Sie können die Definition eines definierten Namens abrufen, unabhängig davon, ob es sich um einen versteckten DLL-Namen oder einen Arbeitsblattnamen handelt, indem Sie die **xlfGetDef** -Funktion verwenden. 
+Beachten Sie, dass Sie beim Auswerten eines Arbeitsblattnamens, entweder allein oder in einer Formel, dem Namen mindestens "!" vorangestellt werden müssen. Andernfalls versucht Excel, den Namen in einem ausgeblendeten Namespace zu finden, der für DLLs reserviert ist. Sie können ausgeblendete DLL-Namen mit der [xlfSetName-Funktion erstellen und löschen.](xlfsetname.md) Mithilfe der **xlfGetDef-Funktion** können Sie die Definition eines beliebigen definierten Namens erhalten, unabhängig davon, ob es sich um einen ausgeblendeten DLL-Namen oder einen Arbeitsblattnamen handelt. 
   
 Die vollständige Spezifikation für einen Arbeitsblattnamen hat das folgende Format:
   
 `='C:\example folder\[Book1.xls]Sheet1'!Name`
   
-Beachten Sie, dass Excel 2007 eine Reihe neuer Dateierweiterungen eingeführt hat. Sie können den Pfad, den Namen der Arbeitsmappe und den Namen des Blatts weglassen, wobei die geöffneten Arbeitsmappen in dieser Excel-Sitzung nicht eindeutig sind. 
+Beachten Sie, dass excel 2007 eine Reihe neuer Dateierweiterungen eingeführt hat. Sie können den Pfad, den Arbeitsmappennamen und den Blattnamen weglassen, bei denen keine Zweideutigkeit zwischen den geöffneten Arbeitsmappen in dieser Excel-Sitzung besteht. 
   
-Im nächsten Beispiel wird die Formel `COUNT(A1:IV65536)` für das aktive Arbeitsblatt ausgewertet und das Ergebnis angezeigt. Beachten Sie, dass die Range-Adresse mit "!" vorangestellt werden muss, was mit der Range Reference Convention in XML-Makro Blättern konsistent ist. Die C-API XML folgt diesem Übereinkommen: 
+Im nächsten Beispiel wird die Formel für das aktive Arbeitsblatt ausgewertet  `COUNT(A1:IV65536)` und das Ergebnis angezeigt. Beachten Sie, dass der Bereichsadresse "!" vorangestellt werden muss, was mit der Bereichsreferenzkonvention für XLM-Makroblätter konsistent ist. Die C-API XLM folgt dieser Konvention: 
   
-- `=A1`Ein Verweis auf die Zelle a1 in der aktuellen Makrovorlage. (Nicht für XLLs definiert). 
+- `=A1` Ein Verweis auf Zelle A1 im aktuellen Makroblatt. (Nicht für XLLs definiert). 
   
-- `=!A1`Ein Verweis auf die Zelle a1 auf dem aktiven Blatt (Dies kann ein Arbeitsblatt oder ein Makroblatt sein) 
+- `=!A1` Ein Verweis auf Zelle A1 im aktiven Blatt (die ein Arbeitsblatt oder Makroblatt sein kann) 
   
-- `=Sheet1!A1`Ein Verweis auf die Zelle a1 auf dem angegebenen Blatt, Sheet1 in diesem Fall. 
+- `=Sheet1!A1` Ein Verweis auf Zelle A1 im angegebenen Blatt, Sheet1 in diesem Fall. 
   
-- `=[Book1.xls]Sheet1!A1`Ein Verweis auf die Zelle a1 auf dem angegebenen Blatt in der angegebenen Arbeitsmappe. 
+- `=[Book1.xls]Sheet1!A1` Ein Verweis auf Zelle A1 auf dem angegebenen Blatt in der angegebenen Arbeitsmappe. 
   
-In einer XLL kann ein Verweis ohne ein führendes Ausrufezeichen (**!**) nicht in einen Wert konvertiert werden. Es hat keine Bedeutung, da es keine aktuelle Makrovorlage gibt. Beachten Sie, dass ein führendes**=** Gleichheitszeichen () optional ist und im nächsten Beispiel ausgelassen wird.
+In einer XLL kann ein Verweis ohne ein führendes Ausrufezeichen (**!**) nicht in einen Wert konvertiert werden. Es hat keine Bedeutung, da kein aktuelles Makroblatt vor ist. Beachten Sie, dass ein führendes Gleichheitszeichen ( **=** ) optional ist und im nächsten Beispiel nicht angegeben wird.
   
 ```C
 int WINAPI evaluate_expression_example(void)
@@ -80,10 +80,10 @@ int WINAPI evaluate_expression_example(void)
 }
 ```
 
-Sie können auch die **XLFEVALUATE** -Funktion verwenden, um die Registrierungs-ID einer XLL-Funktion aus dem registrierten Namen abzurufen, die dann zum Aufrufen dieser Funktion mithilfe der [xlUDF-Funktion](xludf.md)verwendet werden kann.
+Sie können auch die **xlfEvaluate-Funktion** verwenden, um die Registrierungs-ID einer XLL-Funktion aus ihrem registrierten Namen abzurufen, die dann zum Aufrufen dieser Funktion mithilfe der [xlUDF-Funktion](xludf.md)verwendet werden kann.
   
 > [!NOTE]
-> Der registrierte Name kann direkt an die **xlUDF** -Funktion übergeben werden. Das heißt, Sie können verhindern, dass Sie den Namen auswerten, um die ID zu erhalten, bevor Sie **xlUDF**aufrufen. Wenn die Funktion jedoch mehrmals aufgerufen werden soll, wird Sie mit der Registrierungs-ID schneller ausgeführt. 
+> Der registrierte Name kann direkt an die **xlUDF-Funktion übergeben** werden. Dies bedeutet, dass Sie vermeiden können, den Namen auszuwerten, um die ID zu erhalten, bevor Sie **xlUDF aufrufen.** Wenn die Funktion jedoch mehrmals aufgerufen werden soll, ist das Aufrufen mithilfe der Registrierungs-ID schneller. 
   
 ## <a name="see-also"></a>Siehe auch
 

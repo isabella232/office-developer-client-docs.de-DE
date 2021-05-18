@@ -45,11 +45,11 @@ S_OK
   
 > Der Klassenbezeichner wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Mit der **IPersistMessge:: GetClassID** -Methode werden die Inhalte des _lpClassID_ -Parameters auf den Klassenbezeichner des Formular Servers festgelegt und S_OK zurückgegeben. Wenn ein Formular Betrachter **GetClassID** aufruft und erfolgreich zurückgegeben wird, wird das Formular in den Zustand "nicht [Initialisiert](uninitialized-state.md) " versetzt. 
+Die **IPersistMessge::GetClassID-Methode** legt den Inhalt des  _lpClassID-Parameters_ auf den Klassenbezeichner des Formularservers fest und gibt S_OK. Wenn ein Formularbetrachter **GetClassID aufruft** und erfolgreich zurückgibt, wird das Formular in den [Status Nicht initialisiert](uninitialized-state.md) platziert. 
   
-Weitere Informationen dazu, wie Klassenbezeichner mit strukturierten Speicherobjekten verwendet werden, finden Sie in der Dokumentation zur [IPersist:: GetClassID](https://msdn.microsoft.com/library/921a3b86-a240-454e-9411-8d653e02b90e.aspx) -Methode. 
+Weitere Informationen zur Verwendung von Klassenbezeichnern mit strukturierten Speicherobjekten finden Sie in der Dokumentation zur [IPersist::GetClassID-Methode.](https://msdn.microsoft.com/library/921a3b86-a240-454e-9411-8d653e02b90e.aspx) 
   
 ## <a name="see-also"></a>Siehe auch
 

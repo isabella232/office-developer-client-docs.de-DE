@@ -1,5 +1,5 @@
 ---
-title: Informationen zu Benachrichtigungs basierter Speicher Indizierung
+title: Informationen Notification-Based Store-Indizierung
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,19 +13,19 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33409174"
 ---
-# <a name="about-notification-based-store-indexing"></a>Informationen zu Benachrichtigungs basierter Speicher Indizierung
+# <a name="about-notification-based-store-indexing"></a>Informationen Notification-Based Store-Indizierung
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ein MAPI-Speicheranbieter kann angeben, ob der MAPI-Protokoll Handler Nachrichten im Speicher durchforstet und indiziert, oder ob der Informationsspeicher Benachrichtigungen an den Indexer sendet, wenn Nachrichten indiziert werden sollen. Letztere wird als Benachrichtigungs basierte Indizierung bezeichnet, und ein Speicher, der die Benachrichtigungs basierte Indizierung unterstützt, wird als Pusher-Speicher bezeichnet.
+Ein MAPI-Speicheranbieter kann angeben, ob der MAPI-Protokollhandler Nachrichten im Speicher durchforstet und indiziert oder ob der Speicher Benachrichtigungen an den Indexer sendet, wenn Nachrichten indiziert werden sollen. Letzteres wird als benachrichtigungsbasierte Indizierung bezeichnet, und ein Speicher, der die benachrichtigungsbasierte Indizierung unterstützt, wird als Pushspeicher bezeichnet.
   
-Ein Informationsspeicher Anbieter, der die Benachrichtigungs basierte Indizierung unterstützt, legt das **STORE_PUSHER_OK** -Flag in der **[PR_STORE_SUPPORT_MASK](pidtagstoresupportmask-canonical-property.md)** -Eigenschaft fest. Der MAPI-Protokoll Handler oder ein Client kann die **PR_STORE_SUPPORT_MASK** -Eigenschaft abrufen, um die Eigenschaften des Speichers zu bestimmen. 
+Ein Speicheranbieter, der die benachrichtigungsbasierte Indizierung unterstützt, legt **das** STORE_PUSHER_OK in **[der](pidtagstoresupportmask-canonical-property.md)** PR_STORE_SUPPORT_MASK fest. Der MAPI-Protokollhandler oder ein Client kann die **PR_STORE_SUPPORT_MASK,um** die Merkmale des Speichers zu bestimmen. 
   
-Wenn eine Anlage, ein Ordner oder eine Nachricht indiziert werden soll, generiert der Speicheranbieter einen MAPI-URL (Uniform Resource Locator), der das zu indizierende Objekt identifiziert und es an den Indexer sendet. Diese MAPI-URL ist in Unicode codiert und muss das Objekt eindeutig dem MAPI-Protokoll Handler zuordnen. Weitere Informationen zu MAPI-URLs finden Sie unter [Informationen zu MAPI-URLs für die Benachrichtigungs basierte Indizierung](about-mapi-urls-for-notification-based-indexing.md).
+Wenn eine Anlage, ein Ordner oder eine Nachricht indiziert werden soll, generiert der Speicheranbieter einen MAPI Uniform Resource Locator (URL), der das zu indizierte Objekt identifiziert und an den Indexer sendet. Diese MAPI-URL ist in Unicode codiert und muss das Objekt für den MAPI-Protokollhandler eindeutig identifizieren. Weitere Informationen zu MAPI-URLs finden Sie unter [About MAPI URLs for Notification-Based Indexing](about-mapi-urls-for-notification-based-indexing.md).
   
-Da ein Indexer nicht immer alles indizieren kann, bevor ein Herunterfahren in einem Pusher-Speicher erfolgt, muss der Pusher-Speicher beibehalten, was verschoben werden muss. Wenn ein Informationsspeicher Anbieter eine Benachrichtigung über ein Objekt sendet, das indiziert werden muss, gibt es den Benachrichtigungstyp **fnevIndexing** im **ulEventType** -Element der **[Benachrichtigungs](notification.md)** Struktur an. Das **info**-Mitglied der **NOTIFICATION**-Struktur enthält eine **[EXTENDED_NOTIFICATION](extended_notification.md)**-Struktur. Der Informationsspeicher Anbieter identifiziert den Prozess in der **[PR_SEARCH_OWNER_ID](pidtagsearchownerid-canonical-property.md)** -Eigenschaft. Außerdem wird der Prozess in der [INDEX_SEARCH_PUSHER_PROCESS](index_search_pusher_process.md) -Struktur identifiziert, und diese Informationen werden als Teil des **pbEventParameters** -Elements der **EXTENDED_NOTIFICATION** -Struktur übergeben. Wenn der Prozess heruntergefahren oder abstürzt, kann der MAPI-Protokoll Handler sofort feststellen, dass die Indizierung des Pusher-Speichers beendet wird. 
+Da ein Indexer nicht immer alles indizieren kann, bevor ein Herunterfahren in einem Pushspeicher stattfindet, muss der Pushspeicher beibehalten, was pusht werden muss. Wenn ein Speicheranbieter eine Benachrichtigung über ein Objekt sendet, das indiziert werden muss, gibt er den Benachrichtigungstyp **fnevIndexing** im **ulEventType-Element** der **[NOTIFICATION-Struktur](notification.md)** an. Das **info**-Mitglied der **NOTIFICATION**-Struktur enthält eine **[EXTENDED_NOTIFICATION](extended_notification.md)**-Struktur. Der Speicheranbieter identifiziert den **[](pidtagsearchownerid-canonical-property.md)** Prozess in der PR_SEARCH_OWNER_ID-Eigenschaft. Außerdem wird der Prozess in der INDEX_SEARCH_PUSHER_PROCESS [identifiziert](index_search_pusher_process.md) und diese Informationen als Teil des **pbEventParameters-Mitglieds** der EXTENDED_NOTIFICATION **werden.** Wenn der Prozess heruntergefahren oder abstürzt, kann der MAPI-Protokollhandler dies sofort erkennen und die Indizierung des Pushspeichers beenden. 
   
 ## <a name="see-also"></a>Siehe auch
 

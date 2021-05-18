@@ -1,5 +1,5 @@
 ---
-title: Benutzerdefinierte MAPI-Formularobjekte
+title: BEnutzerdefinierte MAPI-Formularobjekte
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,45 +15,45 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32318246"
 ---
-# <a name="mapi-custom-form-objects"></a>Benutzerdefinierte MAPI-Formularobjekte
+# <a name="mapi-custom-form-objects"></a>BEnutzerdefinierte MAPI-Formularobjekte
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
 Objekte für benutzerdefinierte Formulare werden von drei verschiedenen Komponenten implementiert:
   
-- Einen Formularserver.
+- Ein Formularserver.
     
-- Ein Formular Bibliotheks Anbieter.
+- Ein Formularbibliotheksanbieter.
     
-- Ein Formular-Viewer.
+- Ein Formularanzeiger.
     
-Ein Formularserver ähnelt der Funktionalität einer OLE-Verbunddokument Objektanwendung. Es handelt sich um eine ausführbare Komponente, die das Formular implementiert. Er steuert die Anzeige und die Vorgänge, die ein Benutzer ausführen kann. MAPI startet einen Formularserver auf Anforderung, wenn ein Benutzer eine Nachricht zusammen mit einer Nachrichtenklasse anzeigen möchte, die mithilfe eines vom Formularserver unterstützten Formulars angezeigt wird. Formularserver implementieren drei Objekte: ein Form Factory-Objekt, das der standardmäßigen OLE-Klassen Factory ähnelt, eine Form Advise-Senke zur Behandlung von formularspezifischen Ereignissen und das Formular selbst. 
+Ein Formularserver ähnelt in der Funktionalität einer OLE-Zusammengesetztdokumentobjektanwendung. Es handelt sich um eine ausführbare Komponente, die das Formular implementiert. Sie steuert die Anzeige und die Vorgänge, die ein Benutzer ausführen kann. MAPI startet einen Formularserver auf Anforderung, wenn ein Benutzer eine Nachricht zusammen mit einer Nachrichtenklasse anzeigen möchte, die mithilfe eines vom Formularserver unterstützten Formulars angezeigt wird. Formularserver implementieren drei Objekte: ein Formular factory-Objekt, das der standardmäßigen OLE-Klassen factory ähnelt, eine Formularsenke zur Behandlung formularspezifischer Ereignisse und das Formular selbst. 
   
-Ein Formular Bibliotheks Anbieter stellt Clients Zugriff auf die Eigenschaftengruppe eines Formulars, den Container und das Objekt bereit, das Nachrichten einer bestimmten Klasse mit dem Server verknüpft, der das Formular für diese Klasse öffnen kann. Anbieter von Formularbibliotheken implementieren drei Objekte: ein Formular Informationsobjekt, einen Formular Container und einen Formular-Manager zum Binden einer Nachricht an den entsprechenden Formularserver basierend auf der Nachrichtenklasse.
+Ein Formularbibliotheksanbieter bietet Clients Zugriff auf den Eigenschaftensatz eines Formulars, den Container und das Objekt, das Nachrichten einer bestimmten Klasse mit dem Server verbindet, der das Formular für diese Klasse öffnen kann. Formularbibliotheksanbieter implementieren drei Objekte: ein Formularinformationsobjekt, einen Formularcontainer und einen Formular-Manager zum Binden einer Nachricht an den entsprechenden Formularserver basierend auf der Klasse der Nachricht.
   
-Ein Formular Anzeiger ist eine Komponente, die in Clients enthalten ist, die die Anzeige von benutzerdefinierten Formularen in Ihren Ordner Viewern unterstützen. Formular Betrachter sind keine unabhängigen MAPI-Komponenten, ebenso wie Formular Bibliotheks Anbieter und Formularserver. Formular Betrachter starten Formularserver und stellen Kontext bereit. Formular Betrachter implementieren drei Objekte: eine Nachrichtenwebsite, einen Ansichtskontext und eine Advise-Senke für die Verarbeitung von ansichtsspezifischen Ereignissen.
+Eine Formularanzeige ist eine Komponente, die in Clients enthalten ist, die die Anzeige benutzerdefinierter Formulare in ihren Ordneranzeigen unterstützen. Formularanzeigen sind keine unabhängigen MAPI-Komponenten, ebenso wie Formularbibliotheksanbieter und Formularserver. Formularbetrachter starten Formularserver und stellen kontextbezogene Informationen zur Verfügung. Formularbetrachter implementieren drei Objekte: eine Nachrichtenwebsite, einen Ansichtskontext und eine Ratensenke für die Behandlung von ansichtsspezifischen Ereignissen.
   
 In der folgenden Tabelle werden alle benutzerdefinierten Formularobjekte beschrieben. 
   
 |**Form-Objekt**|**Beschreibung**|
 |:-----|:-----|
 |Formular  <br/> |Steuert die Anzeige und den Betrieb eines benutzerdefinierten Formulars zum Anzeigen von Nachrichten einer bestimmten Klasse.  <br/> |
-|Formular-Advise-Senke  <br/> |Verarbeitet Benachrichtigungen aus dem Formular-Viewer.  <br/> |
-|Formular Factory  <br/> |Erstellt eine Instanz eines Formulars und lässt den Server im Arbeitsspeicher verbleiben.  <br/> |
-|Formular Container  <br/> |Enthält Formular Informationen.  <br/> |
-|Formular Informationen  <br/> |Enthält Nachrichten und andere Nachrichtencontainer.  <br/> |
-|Formularmanager  <br/> |Ermöglicht den Zugriff auf eine integrierte Ansicht von benutzerdefinierten Formular Informationen, die sich auf alle installierten Formulare beziehen. Entspricht auch Nachrichtenklassen mit entsprechenden Formularklassen Bezeichnern.  <br/> |
-|Nachrichtenwebsite  <br/> |Behandelt die Manipulation von Form-Objekten innerhalb des Clients und ermöglicht den Zugriff auf ein Formular-Manager-Objekt.  <br/> |
-|Kontext anzeigen  <br/> |Unterstützt Formularbefehle zum Aktivieren von nächsten und vorherigen Nachrichten sowie zum Speichern oder drucken.  <br/> |
-|Advise-Senke anzeigen  <br/> |Verarbeitet Benachrichtigungen vom Formularserver.  <br/> |
+|Formular-Rat-Senke  <br/> |Verarbeitet Benachrichtigungen aus der Formularanzeige.  <br/> |
+|Formular factory  <br/> |Erstellt eine Instanz eines Formulars und lässt den Server im Arbeitsspeicher verbleiben.  <br/> |
+|Formularcontainer  <br/> |Enthält Formularinformationen.  <br/> |
+|Formularinformationen  <br/> |Enthält Nachrichten und andere Nachrichtencontainer.  <br/> |
+|Formularmanager  <br/> |Bietet Zugriff auf eine integrierte Ansicht von benutzerdefinierten Formularinformationen, die sich auf alle installierten Formulare bezogen. Entspricht auch Nachrichtenklassen mit entsprechenden Formularklassenbezeichnern.  <br/> |
+|Nachrichtenwebsite  <br/> |Behandelt die Bearbeitung von Formularobjekten innerhalb des Clients und bietet Zugriff auf ein Formular-Manager-Objekt.  <br/> |
+|Kontext anzeigen  <br/> |Unterstützt Formularbefehle zum Aktivieren nächster und vorheriger Nachrichten sowie zum Speichern oder Drucken.  <br/> |
+|Anzeigen der Ratensenke  <br/> |Verarbeitet Benachrichtigungen vom Formularserver.  <br/> |
    
-Die folgende Abbildung zeigt die Beziehung zwischen benutzerdefinierten Formularkomponenten, den Objekten und Schnittstellen, die Sie implementieren, und den Komponenten, die Benutzer der Objekte sind. Beachten Sie, dass das Form-Objekt im Gegensatz zu den meisten anderen MAPI-Objekten zwei Schnittstellen implementiert, die nicht durch direkte Vererbung verbunden sind. Wenn ein Objekt mehrere unabhängige Schnittstellen verfügbar macht, kann ein Benutzer des Objekts, das über einen Zeiger auf eine der Schnittstellen verfügt, einen Zeiger auf eine beliebige andere Schnittstelle abrufen. Diese Fähigkeit, zwischen den Schnittstellenimplementierungen eines Objekts zu navigieren, ist ein Feature der [IUnknown:: QueryInterface](https://msdn.microsoft.com/library/54d5ff80-18db-43f2-b636-f93ac053146d%28Office.15%29.aspx) -Methode. 
+Die folgende Abbildung zeigt die Beziehung zwischen benutzerdefinierten Formularkomponenten, den implementierten Objekten und Schnittstellen und den Komponenten, die Benutzer der Objekte sind. Beachten Sie, dass das Formularobjekt im Gegensatz zu den meisten anderen MAPI-Objekten zwei Schnittstellen implementiert, die nicht durch direkte Vererbung verbunden sind. Wenn ein Objekt mehrere unabhängige Schnittstellen verfügbar macht, kann ein Benutzer des Objekts mit einem Zeiger auf eine der Schnittstellen einen Zeiger auf eine der anderen Schnittstellen abrufen. Diese Möglichkeit, zwischen den Schnittstellenimplementierung eines Objekts zu navigieren, ist ein Feature der [IUnknown::QueryInterface-Methode.](https://msdn.microsoft.com/library/54d5ff80-18db-43f2-b636-f93ac053146d%28Office.15%29.aspx) 
   
 **Benutzerdefinierte Formularkomponenten**
   
-![Benutzerdefinierte Formularkomponenten] (media/amapi_67.gif "Benutzerdefinierte Formularkomponenten")
+![Benutzerdefinierte Formularkomponenten](media/amapi_67.gif "Benutzerdefinierte Formularkomponenten")
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Übersicht über MAPI-Objekte und-Schnittstellen](mapi-object-and-interface-overview.md)
+- [Übersicht über das MAPI-Objekt und die Schnittstelle](mapi-object-and-interface-overview.md)
 

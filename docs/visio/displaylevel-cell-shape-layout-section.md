@@ -20,7 +20,7 @@ ms.locfileid: "33408145"
 
 Bestimmt den Anzeigeebenenbereich (den relativen Bereich der Gruppierung in Z-Reihenfolge) für das Shape.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Die Z-Reihenfolge ist die Anzeigereihenfolge für Shapes auf dem Zeichenblatt. Ein Shape, das sich in der Z-Reihenfolge weiter oben befindet, wird vor einem Shape anzeigt, das sich in der Z-Reihenfolge weiter unten befindet, wenn eines der Shapes das andere überlagert. 
   
@@ -28,19 +28,19 @@ Mit der Anzeigeebene werden Shapes in Gruppierungen oder Bereiche aufgeteilt. Al
   
 Der Bereich der Anzeigeebenen rangiert von -32.767 bis +32.767. Shapes mit der gleichen Anzeigeebene werden zu einem einzigen Bereich zusammengefasst, in dem sie ebenfalls gemäß der Z-Reihenfolge relativ zueinander in eine Rangfolge gesetzt werden.
   
-Sie können die Z-Reihenfolge von Formen innerhalb eines Bands ändern, indem Sie die Befehle nach **vorn**, nach **hinten**, **nach vorn**und nach **hinten**senden verwenden. Wird ein Shape mit diesen Befehlen aus dem angestammten Bereich verschoben, zeigt Microsoft Visio den reservierten Wert -32768 in der Zelle "DisplayLevel" des Shapes an, sofern die Zelle nicht geschützt ist. In dem Fall kann das Shape nicht in einen anderen Bereich verschoben werden, und Visio gibt die Warnung "Aktiver Shape-Schutz oder Container- und/oder Layereigenschaften verhindern die vollständige Ausführung dieses Befehls" aus. 
+Sie können die Z-Reihenfolge von Formen innerhalb eines Bandes ändern, indem Sie die Befehle **Bring Forward,** **Send Backward,** **Bring to Front** und Send to **Back verwenden.** Wird ein Shape mit diesen Befehlen aus dem angestammten Bereich verschoben, zeigt Microsoft Visio den reservierten Wert -32768 in der Zelle "DisplayLevel" des Shapes an, sofern die Zelle nicht geschützt ist. In dem Fall kann das Shape nicht in einen anderen Bereich verschoben werden, und Visio gibt die Warnung "Aktiver Shape-Schutz oder Container- und/oder Layereigenschaften verhindern die vollständige Ausführung dieses Befehls" aus. 
   
-Wenn Sie einen Verweis auf die Zelle Display Level aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes. 
+Verwenden Sie folgendes, um einen Verweis auf die Zelle DisplayLevel anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** zu erhalten. 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Display Level  <br/> |
+|Zellenname:  <br/> |DisplayLevel  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Display Level aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die DisplayLevel-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowShapeLayout** <br/> |
 |Zellenindex:  <br/> |**visSLODisplayLevel** <br/> |
    

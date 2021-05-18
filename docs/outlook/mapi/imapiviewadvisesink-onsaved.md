@@ -25,7 +25,7 @@ ms.locfileid: "33407606"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Benachrichtigt den Formular Betrachter darüber, dass die aktuelle Nachricht in einem Formular gespeichert wurde.
+Benachrichtigt die Formularanzeige, dass die aktuelle Nachricht in einem Formular gespeichert wurde.
   
 ```cpp
 HRESULT OnSaved( void );
@@ -41,11 +41,11 @@ S_OK
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Ein Form-Objekt ruft die **IMAPIViewAdviseSink::** onsaved-Methode auf, nachdem die aktuelle Nachricht in einem Formular erfolgreich gespeichert wurde. Auf diese Weise können die Betrachter Ihre Fenster aktualisieren, um Änderungen an der Nachricht widerzuspiegeln. 
+Ein Formularobjekt ruft die **IMAPIViewAdviseSink::OnSaved-Methode** auf, nachdem die aktuelle Nachricht in einem Formular erfolgreich gespeichert wurde. Dadurch können Benutzer ihre Fenster aktualisieren, um Änderungen an der Nachricht widerzuspiegeln. 
   
-Weitere Informationen zu Formular Benachrichtigungen finden Sie unter [senden und empfangen von Formular Benachrichtigungen](sending-and-receiving-form-notifications.md).
+Weitere Informationen zu Formularbenachrichtigungen finden Sie unter Senden und Empfangen [von Formularbenachrichtigungen](sending-and-receiving-form-notifications.md).
   
 ## <a name="see-also"></a>Siehe auch
 

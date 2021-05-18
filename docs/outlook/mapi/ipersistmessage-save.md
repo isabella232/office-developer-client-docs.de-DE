@@ -25,7 +25,7 @@ ms.locfileid: "32309618"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Speichert ein überarbeitete Formular zurück in der Nachricht, von der es geladen oder erstellt wurde.
+Speichert ein überarbeitetes Formular in der Nachricht zurück, aus der es geladen oder erstellt wurde.
   
 ```cpp
 HRESULT Save(
@@ -38,11 +38,11 @@ HRESULT Save(
 
  _pMessage_
   
-> in Ein Zeiger auf die Nachricht.
+> [in] Ein Zeiger auf die Nachricht.
     
  _fSameAsLoad_
   
-> in TRUE, um anzugeben, dass die Nachricht, auf die von _pMessage_ verwiesen wird, die Nachricht ist, von der das Formular geladen oder erstellt wurde; andernfalls FALSE. 
+> [in] TRUE, um anzugeben, dass die Nachricht, auf die  _pMessage_ verweist, die Nachricht ist, aus der das Formular geladen oder erstellt wurde. Andernfalls FALSE. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -50,23 +50,23 @@ S_OK
   
 > Das Formular wurde erfolgreich gespeichert.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Formular Betrachter rufen die **IPersistMessage:: Save** -Methode auf, um ein überarbeitete Formular zurück in die Nachricht zu speichern, aus der es geladen oder erstellt wurde. 
+Formularbetrachter rufen die **IPersistMessage::Save-Methode** auf, um ein überarbeitetes Formular wieder in der Nachricht zu speichern, aus der es geladen oder erstellt wurde. 
   
- **Save** sollte nur aufgerufen werden, wenn sich das Formular im [Normal](normal-state.md) Zustand befindet. 
+ **Speichern** sollte nur aufgerufen werden, wenn sich das Formular im [Normalzustand](normal-state.md) befindet. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Speichern Sie die gespeicherten Änderungen nicht. der Aufrufer muss die Änderungen übernehmen. Nehmen Sie keine Änderungen an den Eigenschaften vor, die zur Nachricht des Formulars gehören, außer während des **Save** -Aufrufs. 
+Nehmen Sie keinen Commit für die gespeicherten Änderungen vor. Es liegt am Aufrufer, die Änderungen zu commiten. Nehmen Sie nie Änderungen an den Eigenschaften vor, die zur Nachricht des Formulars gehören, außer während des **Save-Aufrufs.** 
   
-Wenn _fSameAsLoad_ auf true festgelegt ist, können Sie die Änderungen an der vorhandenen Nachricht des Formulars speichern. Wenn _fSameAsLoad_ auf false festgelegt ist, müssen Sie alle Eigenschaften aus der ursprünglichen Nachricht in die Nachricht kopieren, die von _pMessage_ vor dem Speichern ausgeführt wird. Verwenden Sie die [IMAPIProp:: CopyTo](imapiprop-copyto.md) -Methode der ursprünglichen Nachricht, um die Eigenschaften zu kopieren. 
+Wenn  _fSameAsLoad_ auf TRUE festgelegt ist, können Sie die Änderungen an der vorhandenen Nachricht des Formulars speichern. Wenn  _fSameAsLoad_ auf FALSE festgelegt ist, müssen Sie alle Eigenschaften aus der ursprünglichen Nachricht in die Nachricht kopieren, auf die  _pMessage_ verweist, bevor Sie das Speichern ausführen. Verwenden Sie die [IMAPIProp::CopyTo-Methode](imapiprop-copyto.md) der ursprünglichen Nachricht, um die Eigenschaften zu kopieren. 
   
-Wenn alle Eigenschaften kopiert wurden, geben Sie den Status [noscribble](noscribble-state.md) ein. Wenn keine Fehler auftreten, geben Sie S_OK zurück. Geben Sie andernfalls den Fehler aus der fehlgeschlagenen Aktion zurück. 
+Wenn alle Eigenschaften kopiert wurden, geben Sie den [Status NoScribble](noscribble-state.md) ein. Wenn keine Fehler auftreten, geben Sie S_OK. Andernfalls geben Sie den Fehler aus der fehlgeschlagenen Aktion zurück. 
   
-Wenn **Save** aufgerufen wird, wenn sich das Formular in einem anderen Status als normal befindet, geben Sie E_UNEXPECTED zurück. 
+Wenn **Save** aufgerufen wird, wenn sich das Formular in einem anderen Zustand als Normal befindet, geben Sie E_UNEXPECTED. 
   
-Weitere Informationen zum Speichern von Speicherobjekten finden Sie in der Dokumentation zu den [IPersistStorage](https://msdn.microsoft.com/library/1c1a20fc-c101-4cbc-a7a6-30613aa387d7%28Office.15%29.aspx) -Methoden. 
+Weitere Informationen zum Speichern von Speicherobjekten finden Sie in der Dokumentation zu den [IPersistStorage-Methoden.](https://msdn.microsoft.com/library/1c1a20fc-c101-4cbc-a7a6-30613aa387d7%28Office.15%29.aspx) 
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -75,5 +75,5 @@ Weitere Informationen zum Speichern von Speicherobjekten finden Sie in der Dokum
 [IPersistMessage : IUnknown](ipersistmessageiunknown.md)
 
 
-[Formular Status](form-states.md)
+[Formularzustände](form-states.md)
 

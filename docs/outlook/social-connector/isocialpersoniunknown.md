@@ -19,24 +19,24 @@ ms.locfileid: "33407011"
 
 Stellt eine Person im sozialen Netzwerk dar.
   
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
-In der folgenden Tabelle sind die Member aufgeführt, die auf der **ISocialPerson** -Schnittstelle verfügbar sind. 
+In der folgenden Tabelle sind die Elemente aufgeführt, die auf der **ISocialPerson-Schnittstelle verfügbar** sind. 
   
-|**Name**|**Mitgliedstyp**|**Beschreibung**|
+|**Name**|**Membertyp**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[GetActivities](isocialperson-getactivities.md) <br/> |Methode  <br/> |Diese Methode ist seit Outlook Social Connector 2013 veraltet.  <br/> |
-|[GetDetails](isocialperson-getdetails.md) <br/> |Methode  <br/> |Ruft eine Zeichenfolge ab, die Details für die Person darstellt, wie den Vornamen, den Nachnamen und eine URL zu einem Profilbild.  <br/> |
+|[GetActivities](isocialperson-getactivities.md) <br/> |Methode  <br/> |Diese Methode ist seit dem Social Connector 2013 Outlook veraltet.  <br/> |
+|[GetDetails](isocialperson-getdetails.md) <br/> |Methode  <br/> |Ruft eine Zeichenfolge ab, die Details für die Person darstellt, z. B. den Vornamen, den Nachnamen und eine URL zu einem Profilbild.  <br/> |
 |[GetFriendsAndColleagues](isocialperson-getfriendsandcolleagues.md) <br/> |Methode  <br/> |Ruft eine Zeichenfolge ab, die eine Auflistung von Personen darstellt.  <br/> |
 |[GetFriendsAndColleaguesIDs](isocialperson-getfriendsandcolleaguesids.md) <br/> |Methode  <br/> |Diese Methode wird derzeit nicht unterstützt.  <br/> |
-|[GetPicture](isocialperson-getpicture.md) <br/> |Methode  <br/> |Ruft ein Bytearray ab, das die Bildressource für die Person enthält.  <br/> |
+|[GetPicture](isocialperson-getpicture.md) <br/> |Methode  <br/> |Ruft ein Array von Bytes ab, das die Bildressource für die Person enthält.  <br/> |
 |[GetStatus](isocialperson-getstatus.md) <br/> |Methode  <br/> |Diese Methode wird derzeit nicht unterstützt.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Ein Outlook Social Connector-Anbieter (OSC) muss diese Schnittstelle für die Kommunikation mit dem OSC implementieren.
+Ein Outlook (Social Connector, OSC) muss diese Schnittstelle implementieren, um mit dem OSC zu kommunizieren.
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Outlook Social Connector-Anbieterschnittstellen](outlook-social-connector-provider-interfaces.md)
+- [Outlook Schnittstellen für Anbieter für soziale Verbindungen](outlook-social-connector-provider-interfaces.md)
 

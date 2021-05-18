@@ -16,14 +16,14 @@ ms.locfileid: "32318977"
 ---
 # <a name="calendar"></a>Kalender
 
-Dieser Abschnitt enthält Beispiel Aufgaben im Zusammenhang mit dem Outlook-Kalenderordner.
+Dieser Abschnitt enthält Beispielaufgaben, die den Outlook-Kalender betreffen.
 
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
 |Thema|Beschreibung|
 |:----|:----------|
-|[Freigeben eines Frei-/Gebucht-Zeitplans innerhalb eines bestimmten Zeitraums in einem Kalender](how-to-share-free-busy-schedule-within-a-specified-period-in-a-calendar.md)  |Ruft den frei/gebucht-Zeitplan innerhalb einer bestimmten Woche aus einem Kalender ab und zeigt die frei-, gebucht-und Subject-Details für den Benutzer an.|
-|[Freigeben von Kalenderinformationen per E-Mail](how-to-share-calendar-information-through-e-mail.md)  |Teilt Informationen aus einem Kalender per e-Mail im iCalendar-Format zu.|
+|[Freigeben eines Frei-/Gebucht-Zeitplans innerhalb eines bestimmten Zeitraums in einem Kalender](how-to-share-free-busy-schedule-within-a-specified-period-in-a-calendar.md)  |Ruft den Frei/Gebucht-Zeitplan innerhalb einer angegebenen Woche aus einem Kalender ab und zeigt dem Benutzer die Frei-, Gebucht- und Betreffdetails an.|
+|[Freigeben von Kalenderinformationen per E-Mail](how-to-share-calendar-information-through-e-mail.md)  |Gibt Informationen aus einem Kalender per E-Mail im iCalendar-Format zurück.|
 |[Anzeigen eines freigegebenen Kalenders eines Empfängers](how-to-display-a-shared-calendar-of-a-recipient.md)  |Mithilfe der [CreateRecipient(String)](https://msdn.microsoft.com/library/bb609962\(v=office.15\)) - und der [GetSharedDefaultFolder(Recipient, OlDefaultFolders)](https://msdn.microsoft.com/library/bb644850\(v=office.15\)) -Methode wird der freigegebene Kalender eines Empfängers angezeigt.|
 |[Speichern eines Kalenders auf einem Datenträger](how-to-save-a-calendar-to-disk.md)  |Ein ganzer Kalender wird im iCalendar-Dateiformat (ICS) auf Datenträger gespeichert.|
 |[Öffnen und Anzeigen des Inhalts einer iCalendar-Datei](how-to-open-and-display-the-contents-of-an-icalendar-file.md)  |Die Inhalte einer iCalendar-Datei werden geöffnet und abhängig davon angezeigt, ob die Datei einen einzelnen Termin, eine Terminserie oder eine Gruppe von Terminen enthält.|

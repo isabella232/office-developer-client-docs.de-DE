@@ -20,26 +20,26 @@ ms.locfileid: "33406227"
 
 Bestimmt die Richtung der Zeichen in einem Textblock.
   
-|**Wert**|**Direction**|**Automatisierungskonstante**|
+|**Wert**|**Richtung**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
 | 0  <br/> | Horizontal  <br/> |**visTxtBlkLeftToRight** <br/> |
 | 1  <br/> | Vertikal  <br/> |**visTxtBlkTopToBottom** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 In der japanischen Ausgabe von Visio Version  5.0 wurde der Wert dieser Zelle in der Zelle VerticalText im Abschnitt Miscellaneous gespeichert.
   
-Wenn Sie einen Verweis auf die Zelle textDirection aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die TextDirection-Zelle anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | TextDirection  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle textDirection aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die TextDirection-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowText** <br/> |
 | Zellenindex:  <br/> |**visTxtBlkDirection** <br/> |
    

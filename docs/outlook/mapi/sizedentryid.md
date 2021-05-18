@@ -23,12 +23,12 @@ ms.locfileid: "33405709"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt eine benannte [Eintrags](entryid.md) -Struktur, die ein **ab** -Element einer angegebenen Größe enthält. 
+Erstellt eine benannte [ENTRYID-Struktur,](entryid.md) die ein **ab-Element** einer angegebenen Größe enthält. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |**ENTRYID** <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |**ENTRYID** <br/> |
    
 ```cpp
 SizedENTRYID (_cb, _name)
@@ -36,19 +36,19 @@ SizedENTRYID (_cb, _name)
 
 ## <a name="parameters"></a>Parameter
 
-__CB_
+_ _cb_
   
-> Die Anzahl der Bytes im **ab** -Element der neuen Struktur. 
+> Anzahl der Bytes im **ab-Element** der neuen Struktur. 
     
-__Name_
+_ _name_
   
 > Name für die neue Struktur.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Mit dem **SizedENTRYID** -Makro können Sie eine Eintrags-ID definieren, nachdem die Anforderungen an die Arraylänge bekannt sind. Verwenden Sie dieses Makro, um eine Eintrags-ID mit expliziten Begrenzungen zu erstellen. 
+Mit **dem Makro SizedENTRYID** können Sie einen Eintragsbezeichner definieren, nachdem die Anforderungen an die Arraylänge bekannt sind. Verwenden Sie dieses Makro, um einen Eintragsbezeichner mit expliziten Grenzen zu erstellen. 
   
-Um die neue Struktur zu verwenden, die aus dem **SizedENTRYID** -Makro als Zeiger auf eine **Eintrags** -Struktur resultiert, führen Sie die folgenden Schritte aus: 
+Führen Sie die folgende Gliederung aus, um die neue Struktur zu verwenden, die aus dem **Makro SizedENTRYID** als Zeiger auf eine **ENTRYID-Struktur** resultiert: 
   
 ```cpp
 lpENTRYID = (LPENTRYID) &SizedENTRYID;

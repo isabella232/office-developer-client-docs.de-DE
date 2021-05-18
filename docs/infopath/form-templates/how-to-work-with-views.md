@@ -4,10 +4,10 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
-- View-Klasse [InfoPath 2007], InfoPath 2007, arbeiten mit Ansichten, Ansichten [InfoPath 2007]
+- view class [infopath 2007],InfoPath 2007, working with views,views [InfoPath 2007]
 localization_priority: Normal
 ms.assetid: 947b33c3-2acc-45d2-a89d-a712b6bc53df
-description: Bei der Arbeit mit einer InfoPath-Formularvorlage können Sie Code schreiben, um auf die Ansichten des Formulars zuzugreifen, und dann eine Vielzahl von Aktionen für die in den Ansichten enthaltenen Daten ausführen. Das vom Microsoft. Office. InfoPath-Namespace bereitgestellte InfoPath-Objektmodell unterstützt den Zugriff auf die Ansichten eines Formulars durch die Verwendung der Member der View-Klasse.
+description: Bei der Arbeit mit einer InfoPath-Formularvorlage können Sie Code schreiben, um auf die Ansichten des Formulars zuzugreifen, und dann eine Vielzahl von Aktionen für die in den Ansichten enthaltenen Daten ausführen. Das vom Microsoft.Office.InfoPath-Namespace bereitgestellte InfoPath-Objektmodell unterstützt den Zugriff auf die Ansichten eines Formulars mithilfe der Elemente der View-Klasse.
 ms.openlocfilehash: 829375a87513634ef0b38b6d92de9f33a605e89f
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -17,41 +17,41 @@ ms.locfileid: "33406297"
 ---
 # <a name="work-with-views"></a>Arbeiten mit Ansichten
 
-Bei der Arbeit mit einer InfoPath-Formularvorlage können Sie Code schreiben, um auf die Ansichten des Formulars zuzugreifen, und dann eine Vielzahl von Aktionen für die in den Ansichten enthaltenen Daten ausführen. Das vom [Microsoft. Office. InfoPath](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.aspx) -Namespace bereitgestellte InfoPath-Objektmodell unterstützt den Zugriff auf die Ansichten eines Formulars durch die Verwendung der Member der [View](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.aspx) -Klasse. 
+Bei der Arbeit mit einer InfoPath-Formularvorlage können Sie Code schreiben, um auf die Ansichten des Formulars zuzugreifen, und dann eine Vielzahl von Aktionen für die in den Ansichten enthaltenen Daten ausführen. Das vom [Microsoft.Office.InfoPath-Namespace](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.aspx) bereitgestellte InfoPath-Objektmodell unterstützt den Zugriff auf die Ansichten eines Formulars mithilfe der Elemente der [View-Klasse.](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.aspx) 
   
 ## <a name="overview-of-the-view-class"></a>Übersicht über die View-Klasse
 
-Die [View](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.aspx) -Klasse stellt die folgenden Methoden und Eigenschaften bereit, die Formularentwickler für die Interaktion mit einer InfoPath-Ansicht verwenden können. 
+Die [View-Klasse](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.aspx) stellt die folgenden Methoden und Eigenschaften zur Verfügung, mit denen Formularentwickler mit einer InfoPath-Ansicht interagieren können. 
   
 > [!NOTE]
-> Die Methoden und Eigenschaften der [View](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.aspx) -Klasse stehen während des [Loading](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Loading.aspx) -Ereignisses nicht zur Verfügung. 
+> Die Methoden und Eigenschaften der [View-Klasse](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.aspx) sind während des Loading-Ereignisses [nicht](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Loading.aspx) verfügbar. 
   
 |**Name**|**Beschreibung**|
 |:-----|:-----|
-|[DisableAutoUpdate](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.DisableAutoUpdate.aspx) -Methode  <br/> |Deaktiviert die automatische Synchronisierung zwischen dem einem Formular zugrunde liegenden XML-Dokument und der zugeordneten Ansicht.  <br/> |
-|[EnableAutoUpdate](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.EnableAutoUpdate.aspx) -Methode  <br/> |Aktiviert die automatische Synchronisierung zwischen dem einem Formular zugrunde liegenden XML-Dokument und der zugeordneten Ansicht.  <br/> |
-|[Execute-Methode (Action Type)](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.ExecuteAction.aspx)  <br/> |Führt basierend auf den Daten, die zurzeit in der Ansicht ausgewählt sind, einen Bearbeitungsbefehl für das einem Formular zugrunde liegende XML-Dokument aus.  <br/> |
-|[Execute-Methode (Action Type, String)](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.ExecuteAction.aspx)  <br/> |Führt basierend auf dem angegebenen Feld oder der angegebenen Gruppe einen Bearbeitungsbefehl für das einem Formular zugrunde liegende XML-Dokument aus.  <br/> |
-|[Export](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.Export.aspx) -Methode  <br/> |Exportiert die Ansicht in eine Datei des angegebenen Formats.  <br/> |
-|[ForceUpdate](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.ForceUpdate.aspx) -Methode  <br/> |Erzwingt die Synchronisierung zwischen dem einem Formular zugrunde liegenden XML-Dokument und der zugeordneten Ansicht.  <br/> |
-|[GetContextNodes (XPathNavigator)](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.GetContextNodes.aspx) -Methode  <br/> |Ruft einen Verweis auf ein **XPathNodeIterator**-Objekt zum Durchlaufen der zurückgegebenen XML-Knoten beginnend beim angegebenen Knoten ab.  <br/> |
-|[GetContextNodes (XPathNavigator, String)](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.GetContextNodes.aspx) -Methode  <br/> |Ruft einen Verweis auf ein **XPathNodeIterator**-Objekt zum Durchlaufen der zurückgegebenen XML-Knoten in der aktuellen Auswahl innerhalb des an das angegebene Feld oder an die angegebene Gruppe gebundenen Steuerelements ab.  <br/> |
-|[GetSelectedNodes](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.GetSelectedNodes.aspx) -Methode  <br/> |Ruft einen Verweis auf ein **XPathNodeIterator**-Objekt zum Durchlaufen aller XML-Knoten in der aktuellen Auswahl von Elementen in einer Ansicht ab.  <br/> |
-|[SelectNodes (XPathNavigator)](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectNodes.aspx) -Methode  <br/> |Wählt basierend auf dem angegebenen XML-Startknoten einen Bereich von Knoten in einer Ansicht aus.  <br/> |
-|[SelectNodes (XPathNavigator, XPathNavigator)](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectNodes.aspx) -Methode  <br/> |Wählt basierend auf dem angegebenen XML-Startknoten und XML-Endknoten einen Bereich von Knoten in einer Ansicht aus.  <br/> |
-|[SelectNodes (XPathNavigator, XPathNavigator, String)](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectNodes.aspx) -Methode  <br/> |Wählt basierend auf dem angegebenen XML-Startknoten, dem XML-Endknoten und dem angegebenen Steuerelement einen Bereich von Knoten in der Ansicht aus.  <br/> |
-|[SelectText (XPathNavigator)](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectText.aspx) -Methode  <br/> |Wählt den Text in einem bearbeitbaren Steuerelement aus, das an den Knoten gebunden ist, der durch das an diese Methode übergebene **XPathNavigator**-Objekt angegeben wird.  <br/> |
-|[SelectText (XPathNavigator, String)](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectText.aspx) -Methode  <br/> |Wählt den Text in einem bearbeitbaren Steuerelement aus, das an den Knoten gebunden ist, der durch das an diese Methode übergebene **XPathNavigator**-Objekt angegeben wird, und das angegebene Steuerelement.  <br/> |
-|[ShowMailItem](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.ShowMailItem.aspx) -Methode  <br/> |Erstellt eine e-Mail-Nachricht mit der aktuellen Ansicht.  <br/> |
-|[ViewInfo](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.ViewInfo.aspx) -Eigenschaft  <br/> |Ruft einen Verweis auf ein [ViewInfo](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ViewInfo.aspx) -Objekt ab, das der Ansicht zugeordnet ist.  <br/> |
-|[Window](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.Window.aspx) -Eigenschaft  <br/> |Ruft einen Verweis auf ein [Window](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Window.aspx) -Objekt ab, das der Ansicht zugeordnet ist.  <br/> |
+|[DisableAutoUpdate-Methode](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.DisableAutoUpdate.aspx)  <br/> |Deaktiviert die automatische Synchronisierung zwischen dem einem Formular zugrunde liegenden XML-Dokument und der zugeordneten Ansicht.  <br/> |
+|[EnableAutoUpdate-Methode](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.EnableAutoUpdate.aspx)  <br/> |Aktiviert die automatische Synchronisierung zwischen dem einem Formular zugrunde liegenden XML-Dokument und der zugeordneten Ansicht.  <br/> |
+|[ExecuteAction(ActionType)-Methode](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.ExecuteAction.aspx)  <br/> |Führt basierend auf den Daten, die zurzeit in der Ansicht ausgewählt sind, einen Bearbeitungsbefehl für das einem Formular zugrunde liegende XML-Dokument aus.  <br/> |
+|[ExecuteAction(ActionType, String)-Methode](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.ExecuteAction.aspx)  <br/> |Führt basierend auf dem angegebenen Feld oder der angegebenen Gruppe einen Bearbeitungsbefehl für das einem Formular zugrunde liegende XML-Dokument aus.  <br/> |
+|[Exportmethode](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.Export.aspx)  <br/> |Exportiert die Ansicht in eine Datei des angegebenen Formats.  <br/> |
+|[ForceUpdate-Methode](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.ForceUpdate.aspx)  <br/> |Erzwingt die Synchronisierung zwischen dem einem Formular zugrunde liegenden XML-Dokument und der zugeordneten Ansicht.  <br/> |
+|[GetContextNodes(XPathNavigator)-Methode](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.GetContextNodes.aspx)  <br/> |Ruft einen Verweis auf ein **XPathNodeIterator**-Objekt zum Durchlaufen der zurückgegebenen XML-Knoten beginnend beim angegebenen Knoten ab.  <br/> |
+|[GetContextNodes(XPathNavigator, String)-Methode](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.GetContextNodes.aspx)  <br/> |Ruft einen Verweis auf ein **XPathNodeIterator**-Objekt zum Durchlaufen der zurückgegebenen XML-Knoten in der aktuellen Auswahl innerhalb des an das angegebene Feld oder an die angegebene Gruppe gebundenen Steuerelements ab.  <br/> |
+|[GetSelectedNodes-Methode](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.GetSelectedNodes.aspx)  <br/> |Ruft einen Verweis auf ein **XPathNodeIterator**-Objekt zum Durchlaufen aller XML-Knoten in der aktuellen Auswahl von Elementen in einer Ansicht ab.  <br/> |
+|[SelectNodes(XPathNavigator)-Methode](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectNodes.aspx)  <br/> |Wählt basierend auf dem angegebenen XML-Startknoten einen Bereich von Knoten in einer Ansicht aus.  <br/> |
+|[SelectNodes(XPathNavigator, XPathNavigator)-Methode](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectNodes.aspx)  <br/> |Wählt basierend auf dem angegebenen XML-Startknoten und XML-Endknoten einen Bereich von Knoten in einer Ansicht aus.  <br/> |
+|[SelectNodes(XPathNavigator, XPathNavigator, String)-Methode](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectNodes.aspx)  <br/> |Wählt basierend auf dem angegebenen XML-Startknoten, dem XML-Endknoten und dem angegebenen Steuerelement einen Bereich von Knoten in der Ansicht aus.  <br/> |
+|[SelectText(XPathNavigator)-Methode](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectText.aspx)  <br/> |Wählt den Text in einem bearbeitbaren Steuerelement aus, das an den Knoten gebunden ist, der durch das an diese Methode übergebene **XPathNavigator**-Objekt angegeben wird.  <br/> |
+|[SelectText(XPathNavigator, String)-Methode](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectText.aspx)  <br/> |Wählt den Text in einem bearbeitbaren Steuerelement aus, das an den Knoten gebunden ist, der durch das an diese Methode übergebene **XPathNavigator**-Objekt angegeben wird, und das angegebene Steuerelement.  <br/> |
+|[ShowMailItem-Methode](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.ShowMailItem.aspx)  <br/> |Erstellt eine E-Mail-Nachricht, die die aktuelle Ansicht enthält.  <br/> |
+|[ViewInfo-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.ViewInfo.aspx)  <br/> |Ruft einen Verweis auf ein [ViewInfo-Objekt](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ViewInfo.aspx) ab, das der Ansicht zugeordnet ist.  <br/> |
+|[Window-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.Window.aspx)  <br/> |Ruft einen Verweis auf ein [Window-Objekt](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Window.aspx) ab, das der Ansicht zugeordnet ist.  <br/> |
    
 > [!NOTE]
-> Das InfoPath-Objektmodell stellt auch [](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ViewInfoCollection.aspx) die ViewInfoCollection-und [ViewInfo](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ViewInfo.aspx) -Klassen bereit, die zum Abrufen von Informationen zu allen in einem Formular implementierten Ansichten verwendet werden können. 
+> Das InfoPath-Objektmodell stellt auch die [ViewInfoCollection-](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ViewInfoCollection.aspx) und [ViewInfo-Klassen](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ViewInfo.aspx) zur Verfügung, die zum Abrufen von Informationen zu allen in einem Formular implementierten Ansichten verwendet werden können. 
   
 ## <a name="using-the-view-class"></a>Verwenden der View-Klasse
 
-Der Zugriff auf die [View](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.aspx) -Klasse erfolgt über die [CurrentView](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.CurrentView.aspx) -Eigenschaft der [XmlForm](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.aspx) -Klasse, auf die mithilfe des Schlüsselwortes **this** (C#) oder **Me** (Visual Basic) zugegriffen wird. Um auf den Namen der Ansicht zuzugreifen, müssen Sie auf das [ViewInfo](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ViewInfo.aspx) -Objekt zugreifen, das der Ansicht zugeordnet ist. Das folgende Beispiel zeigt, wie ein Meldungsfeld mit dem Namen der momentan aktiven Ansicht angezeigt werden kann. 
+Auf [die View-Klasse](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.aspx) wird über die [CurrentView-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.CurrentView.aspx) der [XmlForm-Klasse](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.aspx) zugegriffen, auf die mithilfe des Schlüsselworts this **(C#)** oder **Me** (Visual Basic) zugegriffen wird. Um auf den Namen der Ansicht zu zugreifen, müssen Sie auf das [ViewInfo-Objekt](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ViewInfo.aspx) zugreifen, das der Ansicht zugeordnet ist. Das folgende Beispiel zeigt, wie ein Meldungsfeld mit dem Namen der momentan aktiven Ansicht angezeigt werden kann. 
   
 ```cs
 MessageBox.Show("Current view name: " + 
@@ -63,7 +63,7 @@ MessageBox.Show("Current view name: " &amp; _
    Me.CurrentView.ViewInfo.Name)
 ```
 
-Alle InfoPath-Formularvorlagen enthalten mindestens eine Standardansicht. InfoPath unterstützt jedoch auch das Erstellen mehrerer Ansichten des einem Formular zugrunde liegenden XML-Dokuments. Wenn Sie über mehrere Ansichten verfügen, [](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ViewInfoCollection.aspx) kann die ViewInfoCollection verwendet werden, um mit allen in der Formularvorlage implementierten Ansichten zu arbeiten. Um auf die [ViewInfoCollection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ViewInfoCollection.aspx) einer Formularvorlage zuzugreifen, verwenden Sie die [ViewInfos](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.ViewInfos.aspx) - [](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.aspx) Eigenschaft der XmlForm-Klasse. Sie können die derzeit aktive Ansicht programmgesteuert ändern, indem Sie die [SwitchView](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ViewInfoCollection.SwitchView.aspx) -Methode der [ViewInfoCollection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ViewInfoCollection.aspx) verwenden, wie im folgenden Codebeispiel veranschaulicht. 
+Alle #A0 enthalten mindestens eine Standardansicht. InfoPath unterstützt jedoch auch das Erstellen mehrerer Ansichten des einem Formular zugrunde liegenden XML-Dokuments. Wenn Sie über mehrere Ansichten verfügen, kann [die ViewInfoCollection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ViewInfoCollection.aspx) verwendet werden, um mit allen in der Formularvorlage implementierten Ansichten zu arbeiten. Um auf [die ViewInfoCollection einer](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ViewInfoCollection.aspx) Formularvorlage zu zugreifen, verwenden Sie die [ViewInfos-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.ViewInfos.aspx) der [XmlForm-Klasse.](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.aspx) Sie können die derzeit aktive Ansicht programmgesteuert ändern, indem Sie die [SwitchView-Methode](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ViewInfoCollection.SwitchView.aspx) der [ViewInfoCollection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ViewInfoCollection.aspx) verwenden, wie im folgenden Codebeispiel veranschaulicht wird. 
   
 ```cs
 this.ViewInfos.SwitchView("MySecondView");
@@ -73,7 +73,7 @@ this.ViewInfos.SwitchView("MySecondView");
 Me.ViewInfos.SwitchView("MySecondView")
 ```
 
-Das obige Beispiel für das Wechseln einer Ansicht funktioniert nur nach dem Öffnen des Formulars. Verwenden Sie zum Festlegen einer Standardansicht während des [Loading](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Loading.aspx) -Ereignisses die [Initial](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ViewInfoCollection.Initial.aspx) -Eigenschaft der [ViewInfoCollection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ViewInfoCollection.aspx) -Klasse, wie im folgenden Beispiel gezeigt. Beachten Sie jedoch, dass dieser Wert erst wirksam wird, nachdem das Formular gespeichert und erneut geöffnet wurde. 
+Das obige Beispiel für das Wechseln einer Ansicht funktioniert nur nach dem Öffnen des Formulars. Verwenden Sie zum Festlegen [](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Loading.aspx) einer Standardansicht während des Loading-Ereignisses die [Initial-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ViewInfoCollection.Initial.aspx) der [ViewInfoCollection-Klasse,](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.ViewInfoCollection.aspx) wie im folgenden Beispiel gezeigt. Beachten Sie jedoch, dass dieser Wert erst wirksam wird, nachdem das Formular gespeichert und erneut geöffnet wurde. 
   
 ```cs
 this.ViewInfos.Initial = this.ViewInfos["MyInitialView"];
@@ -85,13 +85,13 @@ Me.ViewInfos.Initial = Me.ViewInfos["MyInitialView"];
 
 ## <a name="selecting-controls-in-a-view"></a>Auswählen von Steuerelementen in einer Ansicht
 
-InfoPath stellt zwei Methoden der [View](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.aspx) -Klasse bereit, die beide überlastet sind, um ein Steuerelement in der aktuellen Ansicht programmgesteuert auszuwählen: die Methoden [SelectText ()](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectText.aspx) und [SelectNodes ()](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectNodes.aspx) . Die [SelectText (XPathNavigator)](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectText.aspx) -Methode wird für Dateneingabe Steuerelemente wie ein **Textfeld**verwendet, während die **SelectNodes** -Methode für strukturelle Steuerelemente wie einen **optionalen Abschnitt**verwendet wird. Zum Auswählen eines bestimmten Steuerelements in der Ansicht müssen Sie den Knoten und optional den ViewContext-Bezeichner des Steuerelements bereitstellen. Den ViewContext-Bezeichner benötigen Sie, wenn Sie mehrere Steuerelemente haben, die an den gleichen Knoten in der Datenquelle gebunden sind. InfoPath stellt die Informationen für den ViewContext-Bezeichner bereit, wenn Sie das Formular entwerfen.
+InfoPath bietet zwei [](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.aspx) Methoden der View-Klasse, die beide überladen sind, um programmgesteuert ein Steuerelement in der aktuellen Ansicht auszuwählen: die [Methoden SelectText()](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectText.aspx) und [SelectNodes().](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectNodes.aspx) Die [SelectText(XPathNavigator)-Methode](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectText.aspx) wird für Dateneingabesteuerelemente wie ein **Textfeld** verwendet, während die **SelectNodes-Methode** für Struktursteuerelemente verwendet wird, z. B. einen **optionalen Abschnitt**. Zum Auswählen eines bestimmten Steuerelements in der Ansicht müssen Sie den Knoten und optional den ViewContext-Bezeichner des Steuerelements bereitstellen. Den ViewContext-Bezeichner benötigen Sie, wenn Sie mehrere Steuerelemente haben, die an den gleichen Knoten in der Datenquelle gebunden sind. InfoPath stellt die Informationen für den ViewContext-Bezeichner bereit, wenn Sie das Formular entwerfen.
   
-Die ViewContext-ID eines Steuerelements wird auf der Registerkarte **erweitert** des Dialogfelds Eigenschaften des Steuerelements angezeigt, auf das durch Klicken mit der rechten Maustaste auf das Steuerelement, klicken auf _Steuerelement_ **Eigenschaften**und klicken auf die Registerkarte **erweitert** zugegriffen wird. Die ViewContext-ID des Steuerelements wird im Abschnitt **Code** der Registerkarte **erweitert** aufgeführt. 
+Die ViewContext-ID eines Steuerelements  wird auf der Registerkarte Erweitert des Eigenschaftendialogfelds des Steuerelements angezeigt, auf das zugegriffen wird, indem mit der rechten Maustaste auf das Steuerelement geklickt wird, auf _ControlName-Eigenschaften_ und dann auf die Registerkarte **Erweitert.** Die ViewContext-ID des Steuerelements wird im Abschnitt **Code** auf der Registerkarte **Erweitert** aufgeführt. 
   
 ## <a name="when-to-use-selecttext-and-selectnodes"></a>Verwendungszweck von "SelectText" und "SelectNodes"
 
-Mithilfe der [SelectText (XPathNavigator)](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectText.aspx) -Methode können Sie die folgenden Dateneingabe-Steuerelemente programmgesteuert auswählen: 
+Mit der [SelectText(XPathNavigator)-Methode](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectText.aspx) können Sie programmgesteuert die folgenden Dateneingabesteuerelemente auswählen: 
   
 - Textfeld
     
@@ -99,7 +99,7 @@ Mithilfe der [SelectText (XPathNavigator)](https://msdn.microsoft.com/library/Mi
     
 - Datumsauswahl
     
-Mithilfe der [SelectNodes (XPathNavigator)](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectNodes.aspx) -Methode können Sie die folgenden strukturellen Steuerelemente programmgesteuert auswählen: 
+Mithilfe der [SelectNodes(XPathNavigator)-Methode](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectNodes.aspx) können Sie die folgenden Struktursteuerelemente programmgesteuert auswählen: 
   
 - Optionaler Abschnitt
     
@@ -143,7 +143,7 @@ Die folgenden Steuerelemente können nicht programmgesteuert ausgewählt werden,
     
 ## <a name="using-the-selecttext-and-selectnodes-methods"></a>Verwenden der "SelectText"- und der "SelectNodes"-Methode
 
-Im folgenden Beispiel wird die [SelectText (XPathNavigator)](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectText.aspx) -überLadung der **SelectText** -Methode, die einen _XmlNode_ -Parameter bereitStellt, zum Auswählen eines Textfelds verwendet, das an "My: Feld1" gebunden ist. **** 
+Im folgenden Beispiel wird die [SelectText(XPathNavigator)-Überladung](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectText.aspx) der **SelectText-Methode,** die einen  _xmlNode-Parameter_ enthält, verwendet, um ein Textfeld auszuwählen, das an "my:field1" gebunden ist. 
   
 ```cs
 // Create XPathNavigator and select field.
@@ -154,7 +154,7 @@ XPathNavigator textNode =
 CurrentView.SelectText(textNode);
 ```
 
-Wenn Sie mehrere Steuerelemente an "My: Feld1" gebunden haben, müssen Sie die [SelectText (XPathNavigator, String)](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectText.aspx) -überLadung der **SelectText** -Methode verwenden, die einen zusätzlichen _ViewContext_ -Parameter zum Auswählen eines bestimmten Steuerelements bereitstellt. Im folgenden Beispiel wird davon ausgegangen, dass zwei **Textfeld** -Steuerelemente an "My: Feld1" gebunden sind, wobei das erste Steuerelement eine VIEWCONTEXT-ID von "CTRL1" und das zweite Steuerelement eine VIEWCONTEXT-ID von "CTRL8" hat. Das zweite Steuerelement ist ausgewählt. 
+Wenn mehrere Steuerelemente an "my:field1" gebunden sind, müssen Sie die [SelectText(XPathNavigator, String)-Überladung](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectText.aspx) der **SelectText-Methode** verwenden, die einen zusätzlichen  _viewContext-Parameter_ zur Auswahl eines bestimmten Steuerelements bietet. Im folgenden Beispiel wird davon  ausgegangen, dass zwei Textfeldsteuerelemente an "my:field1" gebunden sind, mit dem ersten Steuerelement mit der ViewContext-ID "STRG1" und dem zweiten Steuerelement mit der ViewContext-ID "STRG8". Das zweite Steuerelement ist ausgewählt. 
   
 ```cs
 // Create XPathNavigator and select field.
@@ -165,7 +165,7 @@ XPathNavigator textNode =
 CurrentView.SelectText(textNode, "CTRL8");
 ```
 
-Im folgenden Beispiel wird die [SelectNodes (XPathNavigator)](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectNodes.aspx) -überLadung der **SelectNodes** -Methode, die nur einen _startNode_ -Parameter bereitstellt, zum Auswählen der ersten Zeile in einer wiederholten Tabelle verwendet, die an die wiederholte Gruppe "My: Employee ". 
+Im folgenden Beispiel wird die [SelectNodes(XPathNavigator)-Überladung](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectNodes.aspx) der **SelectNodes-Methode,** die nur einen  _startNode-Parameter_ enthält, verwendet, um die erste Zeile in einer wiederholten Tabelle auszuwählen, die an die wiederholte Gruppe "my:employee" gebunden ist. 
   
 ```cs
 // Create XPathNavigator and specify XPath for nodes.
@@ -176,7 +176,7 @@ XPathNavigator repeatingTableRow1 =
 CurrentView.SelectNodes(repeatingTableRow1);
 ```
 
-Sie können auch mehrere Zeilen in einer wiederholten Tabelle auswählen. Im folgenden Beispiel werden die ersten drei Zeilen einer wiederholten Tabelle, die an die wiederholte Gruppe "My: Employee" gebunden sind, mit der SelectNodes-Überladung [(XPathNavigator, XPathNavigator, String)](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectNodes.aspx) der **SelectNodes** -Methode ausgewählt, die  Parameter _startNode_ und _Endnode_ : 
+Sie können auch mehrere Zeilen in einer wiederholten Tabelle auswählen. Im folgenden Beispiel werden die ersten drei Zeilen einer wiederholten Tabelle, die an die wiederholte Gruppe "my:employee" gebunden ist, mithilfe der [SelectNodes(XPathNavigator, XPathNavigator, String)-Überladung](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectNodes.aspx) der **SelectNodes-Methode** ausgewählt, die  _die Parameter startNode_ und  _endNode_ enthält: 
   
 ```cs
 // Create XPathNavigators to specify range of nodes.

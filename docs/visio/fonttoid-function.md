@@ -19,11 +19,11 @@ ms.locfileid: "33406843"
 Gibt die Kennung (ID) der angegebenen Schriftart zurück.
   
 > [!NOTE]
-> Es wird empfohlen, die [Font](font-function.md) -Funktion zu verwenden, die der **FONTTOID** -Funktion ähnelt. In Microsoft Visio 2013 wurde die **Font** -Funktion eingeführt, um **FONTTOID**zu ersetzen. 
+> Es wird empfohlen, die [FONT-Funktion](font-function.md) zu verwenden, die der **FONTTOID-Funktion** ähnelt. In Microsoft Visio 2013 wurde die **FONT-Funktion** eingeführt, um **FONTTOID zu ersetzen.** 
   
 ## <a name="syntax"></a>Syntax
 
-FONTTOID (* * *font_name* * *) 
+FONTTOID(** *font_name* ** ) 
   
 ### <a name="parameters"></a>Parameter
 

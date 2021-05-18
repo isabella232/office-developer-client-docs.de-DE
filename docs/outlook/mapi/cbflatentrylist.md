@@ -25,12 +25,12 @@ ms.locfileid: "33408439"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl der Bytes in einer vorhandenen [FLATENTRYLIST](flatentrylist.md) -Struktur. 
+Berechnet die Anzahl der Bytes in einer [vorhandenen FLATENTRYLIST-Struktur.](flatentrylist.md) 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |**FLATENTRYLIST** <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |**FLATENTRYLIST** <br/> |
    
 ```cpp
 CbFLATENTRYLIST(_lplist)
@@ -38,9 +38,9 @@ CbFLATENTRYLIST(_lplist)
 
 ## <a name="parameters"></a>Parameter
 
- __lplist_
+ _ _lplist_
   
-> Zeiger auf die fragliche **FLATENTRYLIST** -Struktur. 
+> Zeiger auf die in Frage **gestellte FLATENTRYLIST-Struktur.** 
     
 ## <a name="see-also"></a>Siehe auch
 

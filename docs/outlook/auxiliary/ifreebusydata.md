@@ -15,7 +15,7 @@ ms.locfileid: "32317499"
 ---
 # <a name="ifreebusydata"></a>IFreeBusyData
 
-Für einen bestimmten Benutzer ruft einen Zeitbereich ab und legt ihn fest und gibt eine Schnittstelle zum Auflisten von Frei/Gebucht-Datenblöcken innerhalb dieses Zeitintervalls zurück.
+Ruft für einen bestimmten Benutzer einen Zeitraum ab und legt diesen fest und gibt eine Schnittstelle zum Aufzählen von Frei/Gebucht-Datenblöcken innerhalb dieses Zeitbereichs zurück.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -29,22 +29,22 @@ Für einen bestimmten Benutzer ruft einen Zeitbereich ab und legt ihn fest und g
 
 |||
 |:-----|:-----|
-|[Placeholder1](ifreebusydata-placeholder1.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-|[EnumBlocks](ifreebusydata-enumblocks.md) <br/> |Ruft eine Schnittstelle ab, die Frei/Gebucht-Datenblöcke für einen Benutzer innerhalb eines angegebenen Zeitintervalls auflistet.  <br/> |
-|["Platzhalter2](ifreebusydata-placeholder2.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-|[Placeholder3](ifreebusydata-placeholder3.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-|[Placeholder4](ifreebusydata-placeholder4.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-|[Placeholder5](ifreebusydata-placeholder5.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-|[SetFBRange](ifreebusydata-setfbrange.md) <br/> |Legt den Zeitraum für eine Enumeration von Frei/Gebucht-Datenblöcken für einen Benutzer fest.  <br/> |
-|[Placeholder6](ifreebusydata-placeholder6.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-|[GetFBPublishRange](ifreebusydata-getfbpublishrange.md) <br/> |Ruft einen vordefinierten Zeitraum für eine Enumeration von Frei/Gebucht-Datenblöcken für einen Benutzer ab.  <br/> |
+|[Platzhalter1](ifreebusydata-placeholder1.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[EnumBlocks](ifreebusydata-enumblocks.md) <br/> |Ruft eine Schnittstelle ab, die Frei/Gebucht-Datenblöcke für einen Benutzer innerhalb eines angegebenen Zeitbereichs aufzählt.  <br/> |
+|[Platzhalter2](ifreebusydata-placeholder2.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[Platzhalter3](ifreebusydata-placeholder3.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[Platzhalter4](ifreebusydata-placeholder4.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[Platzhalter5](ifreebusydata-placeholder5.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[SetFBRange](ifreebusydata-setfbrange.md) <br/> |Legt den Zeitraum für eine Aufzählung von Frei/Gebucht-Datenblöcken für einen Benutzer fest.  <br/> |
+|[Platzhalter6](ifreebusydata-placeholder6.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[GetFBPublishRange](ifreebusydata-getfbpublishrange.md) <br/> |Ruft einen vordefinierten Zeitbereich für eine Aufzählung von Frei/Gebucht-Datenblöcken für einen Benutzer ab.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Bei den meisten Mitgliedern dieser Schnittstelle handelt es sich um Platzhalter, die für die interne Verwendung von Outlook reserviert sind und Änderungen unterliegen. Frei/Gebucht-Anbieter müssen Sie nur wie angegeben implementieren, wobei nur die angegebenen Rückgabewerte zurückgegeben werden.
+Die meisten Mitglieder in dieser Schnittstelle sind Platzhalter, die für die interne Verwendung von Outlook reserviert sind und änderungen unterliegen. Frei/Gebucht-Anbieter dürfen sie nur wie angegeben implementieren und geben nur die angegebenen Rückgabewerte zurück.
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Über die Frei/Gebucht-API](about-the-free-busy-api.md)
-- [Konstanten (frei/gebucht-API)](constants-free-busy-api.md)
+- [Informationen zur Frei/Gebucht-API](about-the-free-busy-api.md)
+- [Konstanten (Frei/Gebucht-API)](constants-free-busy-api.md)
 

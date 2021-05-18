@@ -25,11 +25,11 @@ ms.locfileid: "33406857"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array aus einer oder mehreren [SPropProblem](spropproblem.md) -Strukturen. 
+Enthält ein Array aus einer oder mehreren [SPropProblem-Strukturen.](spropproblem.md) 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
 |Verwandte Makros:  <br/> |[CbNewSPropProblemArray](cbnewspropproblemarray.md) <br/> [CbSPropProblemArray](cbspropproblemarray.md) <br/> [SizedSPropProblemArray](sizedspropproblemarray.md) <br/> |
    
 ```cpp
@@ -41,19 +41,19 @@ typedef struct _SPropProblemArray
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cProblem**
   
-> Die Anzahl der [SPropProblem](spropproblem.md) -Strukturen in dem vom **aProblem** -Element angegebenen Array. 
+> Anzahl der [SPropProblem-Strukturen](spropproblem.md) im Vom **aProblem-Element** angegebenen Array. 
     
  **aProblem**
   
-> Array von **SPropProblem** -Strukturen, die jeweils einen Eigenschafts Fehler beschreiben. 
+> Array von **SPropProblem-Strukturen,** die jeweils einen Eigenschaftsfehler beschreiben. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Weitere Informationen zur Funktionsweise der **SPropProblem** -und **SPropProblemArray** -Strukturen mit Fehlern im Zusammenhang mit Eigenschaften finden Sie unter [MAPI Named Properties](mapi-named-properties.md). 
+Weitere Informationen zur Funktionsweise der **Strukturen SPropProblem** und **SPropProblemArray** mit Eigenschaftenfehlern finden Sie unter [MAPI Named Properties](mapi-named-properties.md). 
   
 ## <a name="see-also"></a>Siehe auch
 

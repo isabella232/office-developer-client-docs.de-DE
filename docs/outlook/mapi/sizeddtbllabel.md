@@ -23,12 +23,12 @@ ms.locfileid: "33408614"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt eine benannte Struktur, die eine [DTBLLABEL](dtbllabel.md) -Struktur zur Beschreibung eines Label-Steuerelements und der zugeordneten Beschriftung einer angegebenen Länge enthält. 
+Erstellt eine benannte Struktur, die eine [DTBLLABEL-Struktur](dtbllabel.md) zum Beschreiben eines Bezeichnungssteuerelements und der zugeordneten Bezeichnung einer angegebenen Länge enthält. 
   
 |||
 |:-----|:-----|
-|Angegeben in der Headerdatei:  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur  <br/> |**DTBLLABEL** <br/> |
+|In der Headerdatei angegeben:  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur  <br/> |**DTBLLABEL** <br/> |
    
 ```cpp
 SizedDtblLabel (n, u)
@@ -38,22 +38,22 @@ SizedDtblLabel (n, u)
 
 _n_
   
-> Länge der Bezeichnung. Dazu gehört das endGÜLTIGes NULL-Zeichen. 
+> Länge der Bezeichnung. Dies schließt das endende NULL-Zeichen ein. 
     
 _u_
   
 > Name für die neue Struktur.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Mit dem **SizedDtblLabel** -Makro können Sie eine Anzeige Tabellenbeschriftung definieren, wenn die Anzahl der Zeichen in der Bezeichnung bekannt ist. Die neue Struktur wird mit den folgenden Elementen erstellt: 
+Mit **dem Makro SizedDtblLabel** können Sie eine Anzeigetabelle definieren, wenn die Anzahl der Zeichen in der Bezeichnung bekannt ist. Die neue Struktur wird mit den folgenden Mitgliedern erstellt: 
   
 ```cpp
 DTBLLABEL dtbllabel;
 TCHAR lpszLabelName[n];
 ```
 
-Wenn Sie einen Zeiger auf die resultierende Struktur aus dem **SizedDtblLabel** -Makro als **DTBLLABEL** -Struktur Zeiger verwenden möchten, führen Sie die folgenden Schritte aus: 
+Führen Sie die folgende Gliederung aus, um einen Zeiger auf die resultierende Struktur des **SizedDtblLabel-Makros** als **DTBLLABEL-Strukturzeiger** zu verwenden: 
   
 ```cpp
 lpDtblLabel = (LPDTBLLABEL) &SizedDtblLabel;

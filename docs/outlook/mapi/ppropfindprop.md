@@ -29,9 +29,9 @@ Sucht nach einer angegebenen Eigenschaft in einem Eigenschaftensatz.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 LPSPropValue PpropFindProp(
@@ -45,23 +45,23 @@ LPSPropValue PpropFindProp(
 
  _rgprop_
   
-> in Array von [SPropValue](spropvalue.md) -Strukturen, die die zu durchsuchenden Eigenschaften definieren. 
+> [in] Array von [SPropValue-Strukturen,](spropvalue.md) die die zu durchsuchenden Eigenschaften definieren. 
     
  _cprop_
   
-> in Die Anzahl der Eigenschaften in dem vom _rgprop_ -Parameter angegebenen Eigenschaftssatz. 
+> [in] Anzahl der Eigenschaften im Eigenschaftensatz, der durch den  _rgprop-Parameter angegeben_ wird. 
     
  _ulPropTag_
   
-> in Property-Tag für die Eigenschaft, nach der im durch den _rgprop_ -Parameter angegebenen Eigenschaftensatz gesucht werden soll. 
+> [in] Eigenschaftstag für die Eigenschaft, nach der im Eigenschaftensatz gesucht werden soll, der durch den  _rgprop-Parameter angegeben_ wird. 
     
 ## <a name="return-value"></a>Rückgabewert
 
- **PpropFindProp** gibt eine [SPropValue](spropvalue.md) -Struktur zurück, die die Eigenschaft definiert, die mit dem Eingabe Eigenschafts übereinstimmt, oder NULL, wenn keine Übereinstimmung vorliegt. 
+ **PpropFindProp gibt** eine [SPropValue-Struktur](spropvalue.md) zurück, die die Eigenschaft definiert, die dem Eingabeeigenschaftstag entspricht, oder NULL, wenn keine Übereinstimmung vorkommt. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn das angegebene Property-Tag eine Eigenschaft vom Typ PT_UNSPECIFIED angibt, findet die **PpropFindProp** -Funktion nur eine Übereinstimmung für den Eigenschaftenbezeichner im-Tag. Andernfalls findet es eine Übereinstimmung für das gesamte Property-Tag, einschließlich des Eigenschaftentyps, und gibt die identifizierte Eigenschaft zurück. 
+Wenn das angegebene Eigenschaftstag eine Eigenschaft vom Typ PT_UNSPECIFIED, findet die **PpropFindProp-Funktion** eine Übereinstimmung nur für den Eigenschaftenbezeichner im Tag. Andernfalls findet sie eine Übereinstimmung für das gesamte Eigenschaftstag, einschließlich des Eigenschaftentyps, und gibt die identifizierte Eigenschaft zurück. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -69,7 +69,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|ContentsTableListCtrl. cpp  <br/> |CContentsTableListCtrl:: BuildDataItem  <br/> |MFCMAPI verwendet die **PpropFindProp** -Methode, um Eigenschaften in einem Eigenschaftensatz zu suchen, der der Liste hinzugefügt wird.  <br/> |
+|ContentsTableListCtrl.cpp  <br/> |CContentsTableListCtrl::BuildDataItem  <br/> |MFCMAPI verwendet die **PpropFindProp-Methode,** um Eigenschaften in einem Eigenschaftensatz zu finden, der der Liste hinzugefügt wird.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

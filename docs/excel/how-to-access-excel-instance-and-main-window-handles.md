@@ -1,14 +1,14 @@
 ---
-title: Zugreifen auf Excel-Instanz-und Hauptfenster-Handles
+title: Zugriff Excel Instanz- und Hauptfensterhandles
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 keywords:
-- Zugreifen auf Excel-Handles, Handles [Excel 2007], zugreifen auf, Excel-Instanzen, Zugriff, Fensterhandles [Excel 2007], zugreifen auf
+- Zugreifen auf Excel-Handles,Handles [Excel 2007], Zugreifen auf,Excel-Instanzen, Zugriff,Fensterhandles [Excel 2007], Zugriff auf
 localization_priority: Normal
 ms.assetid: 21e1dbdc-06fa-4514-9437-c4cffc3b4621
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 4b71ccd428e60c9ba2e59fea0e56eb2fc61390db
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -16,21 +16,21 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32310759"
 ---
-# <a name="access-excel-instance-and-main-window-handles"></a>Zugreifen auf Excel-Instanz-und Hauptfenster-Handles
+# <a name="access-excel-instance-and-main-window-handles"></a>Zugriff Excel Instanz- und Hauptfensterhandles
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Zum Programmieren in der Windows-Umgebung müssen Sie manchmal den Microsoft Excel-Instanz-handle oder den Hauptfenster-handle kennen. Beispielsweise sind diese Handles nützlich, wenn Sie benutzerdefinierte Windows-Dialogfelder erstellen und anzeigen.
+Um in der Windows programmieren zu können, müssen Sie manchmal die Microsoft Excel-Instanzhandle oder das Hauptfensterhandle kennen. Diese Handles sind z. B. hilfreich, wenn Sie benutzerdefinierte Windows erstellen und anzeigen.
   
-Es gibt zwei XLL-only C-API-Funktionen, die den Zugriff auf diese Handles ermöglichen: die [xlGetInst](xlgetinst.md) -Funktion und die [xlGetHwnd](xlgethwnd.md) -Funktion. In Win32 sind alle Handles 32-Bit-Ganzzahlen. Wenn das **XLOPER** -Design jedoch entworfen wurde, war Windows ein 16-Bit-System. Daher ist die Struktur nur für 16-Bit-Handles zulässig. Wenn die **xlGetInst** -Funktion und die **XlGetHwnd** -Funktion in Win32 mit **Excel4** oder **Excel4v**aufgerufen werden, wird nur der niedrige Teil des vollständigen 32-Bit-Handles zurückgegeben. 
+Es gibt zwei nur XLL-C-API-Funktionen, die Zugriff auf diese Handles bieten: die [xlGetInst-Funktion](xlgetinst.md) bzw. [die xlGetHwnd-Funktion.](xlgethwnd.md) In Win32 sind alle Ziehpunkte 32-Bit-Ganzzahlen. Beim Entwerfen der **XLOPER** war Windows jedoch ein 16-Bit-System. Daher ist die Struktur nur für 16-Bit-Handles zulässig. Wenn sie in Win32 mit **Excel4** oder **Excel4v** aufgerufen werden, geben die **xlGetInst-Funktion** und die **xlGetHwnd-Funktion** nur den niedrigen Teil des vollständigen 32-Bit-Handles zurück. 
   
-Wenn diese Funktionen in Excel 2007 und höheren Versionen mit [Excel12](excel4-excel12.md) oder [Excel12v](excel4v-excel12v.md)aufgerufen werden, enthält die zurückgegebene **XLOPER12** den vollständigen 32-Bit-handle. 
+Wenn Excel 2007 und höher mit [Excel12](excel4-excel12.md) oder [Excel12v](excel4v-excel12v.md)aufgerufen werden, enthält die zurückgegebene **XLOPER12** den vollständigen 32-Bit-Handle. 
   
-Das Abrufen des vollständigen Instanzen Handles ist in jeder Excel-Version einfach, da Sie an die Windows Callback- **DllMain**übergeben wird, die beim Laden der dll aufgerufen wird. Wenn Sie diesen Instanz-Handle in einer globalen Variablen aufzeichnen, müssen Sie die **xlGetInst** -Funktion nie aufrufen. 
+Das Abrufen des vollständigen Instanzhandls ist in jeder Version von Excel einfach, da es an den Windows-Rückruf **DllMain** übergeben wird, der beim Laden der DLL aufgerufen wird. Wenn Sie dieses Instanzhandle in einer globalen Variablen aufzeichnen, müssen Sie niemals die **xlGetInst-Funktion** aufrufen. 
   
-## <a name="obtaining-the-main-excel-handle-in-excel-2003-and-earlier"></a>Abrufen des Haupt-Excel-Handles in Excel 2003 und früher
+## <a name="obtaining-the-main-excel-handle-in-excel-2003-and-earlier"></a>Abrufen des Haupt-Excel in Excel 2003 und früher
 
-Zum Abrufen des Haupt-Excel-Handles in Excel 2003 und früheren 32-Bit-Versionen müssen Sie zuerst die **xlGetHwnd** -Funktion aufrufen, um das niedrige Wort des tatsächlichen Handles abzurufen. Anschließend müssen Sie die Liste der Fenster auf oberster Ebene durchlaufen, um nach einer Übereinstimmung mit dem zurückgegebenen niedrigen Wort zu suchen. Der folgende Code veranschaulicht die Technik. 
+Um das Haupthandle Excel in Excel 2003 und früheren 32-Bit-Versionen zu erhalten, müssen Sie zuerst die **xlGetHwnd-Funktion** aufrufen, um das Wort "Low" des tatsächlichen Handles zu erhalten. Anschließend müssen Sie die Liste der Fenster auf oberster Ebene durch iterieren, um nach einer Übereinstimmung mit dem zurückgegebenen niedrigen Wort zu suchen. Der folgende Code veranschaulicht die Technik. 
   
 ```cs
 typedef struct _EnumStruct
@@ -85,9 +85,9 @@ BOOL GetHwnd(HWND * pHwnd)
 
 
 
-[Anzeigen von Dialogfeldern aus innerhalb einer DLL oder XLL](displaying-dialog-boxes-from-within-a-dll-or-xll.md)
+[Anzeigen von Dialogfeldern aus einer DLL oder XLL](displaying-dialog-boxes-from-within-a-dll-or-xll.md)
   
-[C C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden k�nnen](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
+[C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden können](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
   
 [Entwickeln von XLLs für Excel](developing-excel-xlls.md)
 

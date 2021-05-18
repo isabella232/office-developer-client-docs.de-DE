@@ -1,5 +1,5 @@
 ---
-title: Cluster sichere Funktionen
+title: Clustersichere Funktionen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -14,37 +14,37 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33409300"
 ---
-# <a name="cluster-safe-functions"></a>Cluster sichere Funktionen
+# <a name="cluster-safe-functions"></a>Clustersichere Funktionen
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-In Excel 2013 kann Excel benutzerdefinierte Funktionen (User-Defined Function, UDF)-Aufrufe an einen Hochleistungs-Computing-Cluster über eine dedizierte Cluster-Connector-Schnittstelle Abladen. Compute Cluster vendors stellen Cluster-Konnektoren bereit. UDF-Autoren können Ihre UDFs als Cluster sicher deklarieren, und wenn ein Cluster-Konnektor vorhanden ist, sendet Excel Aufrufe an diese UDFs an den Cluster-Konnektor zur Entlastung.
+In Excel 2013 können Excel aufrufe von User-Defined (UDF) über eine dedizierte Clusterconnectorschnittstelle an einen Hochleistungscomputercluster ausladen. Computeclusteranbieter stellen Clusterconnectors zur Verfügung. UDF-Autoren können ihre UDFs als clustersicher deklarieren und dann, wenn ein Clusterconnector vorhanden ist, Excel Aufrufe an diese UDFs zum Offloading an den Clusterconnector senden.
   
-Wenn Excel eine Cluster sichere UDF während der Neuberechnung erkennt, übergibt Sie den Namen der XLL, die derzeit läuft, den Namen des Cluster sicheren UDF und alle Parameter an den Cluster-Konnektor. Der Connector führt den UDF-Aufruf Remote aus und gibt die Ergebnisse an Excel zurück. Die nicht abhängige Berechnung wird fortgesetzt, und wenn der Cluster-Konnektor die UDF-Funktion abgeschlossen hat, werden die Ergebnisse an Excel übergeben, und die abhängigen Berechnungen werden fortgesetzt. Der Mechanismus für dieses asynchrone Verhalten imitiert den Mechanismus, der von asynchronen UDFs verwendet wird, mit der Ausnahme, dass der Cluster-Konnektor die asynchronen Aspekte anstelle des UDF-Autors verwaltet. In der Regel implementiert ein Cluster-Connector einen XLL-Shim zum Laden von XLLs und zum Ausführen von UDFs auf Compute-Clusterknoten.
+Wenn Excel bei der Neuberechnung eine clustersichere UDF ermittelt, übergibt sie den Namen der aktuell ausgeführten XLL, den Namen der clustersicheren UDF und alle Parameter an den Clusterconnector. Der Connector führt den UDF-Aufruf remote aus und gibt die Ergebnisse an Excel. Die nicht abhängige Berechnung wird fortgesetzt, und wenn der Clusterconnector die Ausführung der UDF beendet hat, werden die Ergebnisse an Excel und abhängige Berechnungen fortgesetzt. Der Mechanismus für dieses asynchrone Verhalten imitiert den mechanismus, der von asynchronen UDFs verwendet wird, mit der Ausnahme, dass der Clusterconnector die asynchronen Aspekte anstelle des UDF-Autors verwaltet. In der Regel implementiert ein Clusterconnector einen XLL-Shim zum Laden von XLLs und Ausführen von UDFs auf Computeclusterknoten.
   
-Die Mechanik der Deklaration von UDFs als Cluster sicher ähnelt denen der Deklaration von UDFs als sicher für die Neuberechnung mit mehreren Threads. Da die UDF jedoch nicht unbedingt auf demselben Computer wie andere UDFs aus derselben Excel-Sitzung läuft, gibt es unterschiedliche Aspekte beim Schreiben von Cluster sicheren UDFs.
+Die Mechanik der Deklarierung von UDFs als clustersicher ähnelt denen der Deklarierung von UDFs als sicher für die Neuberechnung mit mehreren Threads. Da die UDF jedoch nicht unbedingt auf demselben Computer wie andere UDFs aus derselben Excel-Sitzung ausgeführt wird, gibt es beim Schreiben clustersicherer UDFs unterschiedliche Überlegungen.
   
-Um eine UDF als Cluster sicher zu registrieren, müssen Sie die [xlfRegister (Form 1)](xlfregister-form-1.md) -Rückruffunktion über die **Excel12** -oder **Excel12v** -Schnittstelle aufrufen. Weitere Informationen zu diesen Schnittstellen finden Sie unter [Excel4/Excel12](excel4-excel12.md) und [Excel4v/Excel12v](excel4v-excel12v.md). Das Registrieren einer UDF als Cluster-Safe über die **Excel4** -oder **Excel4v** -Schnittstelle wird nicht unterstützt. 
+Um eine UDF als clustersicher zu registrieren, müssen Sie die [xlfRegister (Form 1)-Rückruffunktion](xlfregister-form-1.md) über die **Excel12-** oder **Excel12v-Schnittstelle** aufrufen. Weitere Informationen zu diesen Schnittstellen finden Sie unter [Excel4/Excel12](excel4-excel12.md) und [Excel4v/Excel12v](excel4v-excel12v.md). Die Registrierung einer UDF als clustersicher über die **Excel4-** oder **Excel4v-Schnittstelle** wird nicht unterstützt. 
   
-Wenn Sie eine Funktion als Cluster sicher registrieren, müssen Sie sicherstellen, dass sich die Funktion Cluster sicher verhält. Obwohl das genaue Verhalten des Cluster-Konnektors implementierungsspezifisch ist, sollten Sie die UDF so entwerfen, dass Sie auf einem verteilten Computersystem ausgeführt wird und über die folgenden Merkmale verfügt:
+Wenn Sie eine Funktion als clustersicher registrieren, müssen Sie sicherstellen, dass sich die Funktion clustersicher verhält. Obwohl das genaue Verhalten des Clusterconnector implementierungsspezifisch ist, sollten Sie Ihre UDF so entwerfen, dass sie auf einem verteilten Computersystem ausgeführt wird und die folgenden Merkmale aufweist:
   
-- Eine UDF sollte nicht auf einen Speicherstatus angewiesen sein. Eine UDF sollte sich beispielsweise nicht auf einen vorhandenen Cache im Arbeitsspeicher verlassen.
+- Ein UDF sollte sich nicht auf einen Speicherstatus verlassen. Beispielsweise sollte sich ein UDF nicht auf einen vorhandenen Speichercache verlassen.
     
-- Eine UDF sollte keine Excel-Rückrufe ausführen, die der Cluster-Connector-Anbieter nicht unterstützt.
+- Ein UDF sollte keine Excel ausführen, die vom Clusterconnectoranbieter nicht unterstützt werden.
     
-Neben dem Cluster sicheren Verhalten gelten für Cluster sichere UDFs die folgenden technischen Einschränkungen:
+Neben dem clustersicheren Verhalten gibt es die folgenden technischen Einschränkungen für clustersichere UDFs:
   
-1. Keine XLOPER-Argumente (Typen ' P ', ' R ').
+1. Keine XLOPER-Argumente (Typen 'P', 'R').
     
-2. Keine XLOPER12-Argumente, die Range-Verweise unterstützen (Typ "U").
+2. Keine XLOPER12-Argumente, die Bereichsverweise unterstützen (Typ 'U').
     
-3. Es kann sich nicht um eine entsprechende Makroblatt Funktion handeln ('&amp;# ' und ' ' kann nicht kombiniert werden).
+3. Es kann sich nicht um eine makroblattäquivalente Funktion ('#' und &amp; ' ' kann nicht kombiniert werden).
     
-Für UDFs mit kürzeren Ausführungszeiten kann der Aufwand für die Verschiebung größer sein als die Zeit, die die UDF-Ausführung benötigt wird, was viele der Vorteile der Verwendung dieser Infrastruktur negiert.
+Bei UDFs mit kürzeren Ausführungszeiten kann der Aufwand für das Offloading größer sein als die Ausführungszeit der UDF, was viele vorteile der Verwendung dieser Infrastruktur negiert.
   
 > [!NOTE]
-> Sie können keine Cluster sichere UDF als asynchrone UDF deklarieren. 
+> Sie können eine clustersichere UDF nicht als asynchrones UDF deklarieren. 
   
-Eine UDF kann bestimmen, ob Sie mit einem Cluster-Konnektor ausgeführt wird, indem Sie die [xlRunningOnCluster](xlrunningoncluster.md) -Rückruffunktion aufrufen. 
+Eine UDF kann ermitteln, ob sie mit einem Clusterconnector ausgeführt wird, indem sie die [xlRunningOnCluster-Rückruffunktion](xlrunningoncluster.md) aufruft. 
   
 

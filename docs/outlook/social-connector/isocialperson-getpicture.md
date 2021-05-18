@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 02fcaf25-42b5-4584-95c6-d44a3d035128
-description: Ruft ein Bytearray ab, das die Bildressource für die Person enthält.
+description: Ruft ein Array von Bytes ab, das die Bildressource für die Person enthält.
 ms.openlocfilehash: 755e2138378136a3c1d810a1957923f4e8db721d
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -17,7 +17,7 @@ ms.locfileid: "33406710"
 ---
 # <a name="isocialpersongetpicture"></a>ISocialPerson::GetPicture
 
-Ruft ein Bytearray ab, das die Bildressource für die Person enthält. 
+Ruft ein Array von Bytes ab, das die Bildressource für die Person enthält. 
   
 ```cpp
 HRESULT _stdcall GetPicture([out, retval] SAFEARRAY(unsigned char)* picture);
@@ -25,13 +25,13 @@ HRESULT _stdcall GetPicture([out, retval] SAFEARRAY(unsigned char)* picture);
 
 ## <a name="parameters"></a>Parameter
 
-_Bild_
+_picture_
   
-> Out Ein Zeiger auf eine Struktur, die ein Bytearray angibt, das die Bildressource für eine Person darstellt.
+> [out] Ein Zeiger auf eine Struktur, die ein Bytearray angibt, das die Bildressource für eine Person repräsentiert.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Unterstützte Bildressourcen befinden sich im BMP-, JPEG-oder PNG-Format.
+Unterstützte Bildressourcen befinden sich im .bmp, JPEG oder .png Format.
   
 ## <a name="see-also"></a>Siehe auch
 

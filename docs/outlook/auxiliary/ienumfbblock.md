@@ -15,7 +15,7 @@ ms.locfileid: "32317626"
 ---
 # <a name="ienumfbblock"></a>IEnumFBBlock
 
-Unterstützt den Zugriff auf und das Aufzählen von Frei/Gebucht-Datenblöcken für einen Benutzer innerhalb eines Zeitintervalls.
+Unterstützt den Zugriff auf und das Aufzählen von Frei/Gebucht-Datenblöcken für einen Benutzer innerhalb eines Zeitbereichs.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -29,21 +29,21 @@ Unterstützt den Zugriff auf und das Aufzählen von Frei/Gebucht-Datenblöcken f
 
 |||
 |:-----|:-----|
-|[Next](ienumfbblock-next.md) <br/> |Ruft die nächste angegebene Anzahl von Frei/Gebucht-Datenblöcken in einer Enumeration ab.  <br/> |
-|[Skip](ienumfbblock-skip.md) <br/> |Überspringt eine angegebene Anzahl von Frei/Gebucht-Datenblöcken.  <br/> |
-|[Reset](ienumfbblock-reset.md) <br/> |Setzt den Enumerator zurück, indem der Cursor auf den Anfang gesetzt wird.  <br/> |
-|[Clone](ienumfbblock-clone.md) <br/> |Erstellt eine Kopie des Enumerators, wobei dieselbe Zeiteinschränkung verwendet wird, der Cursor jedoch auf den Anfang des Enumerators festgelegt wird.  <br/> |
-|[Restrict](ienumfbblock-restrict.md) <br/> |Schränkt die Enumeration auf einen bestimmten Zeitraum ein.  <br/> |
+|[Next](ienumfbblock-next.md) <br/> |Ruft die nächste angegebene Anzahl von Blöcken von Frei/Gebucht-Daten in einer Enumeration ab.  <br/> |
+|[Skip](ienumfbblock-skip.md) <br/> |Überspringt eine angegebene Anzahl von Blöcken von Frei/Gebucht-Daten.  <br/> |
+|[Reset](ienumfbblock-reset.md) <br/> |Setzt den Enumerationszähler zurück, indem der Cursor auf den Anfang gesetzt wird.  <br/> |
+|[Clone](ienumfbblock-clone.md) <br/> |Erstellt eine Kopie des Enumerators mit der gleichen Zeiteinschränkung, legt den Cursor jedoch auf den Anfang des Enumerationsgeräts.  <br/> |
+|[Restrict](ienumfbblock-restrict.md) <br/> |Schränkt die Enumeration auf einen angegebenen Zeitraum ein.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Eine Aufzählung enthält frei/gebucht-Datenblöcke, die sich nicht rechtzeitig überlappen. Wenn sich überlappende Elemente in einem Kalender befinden, werden diese Elemente von Outlook zusammengeführt, um sich nicht überschneidende frei/gebucht-Blöcke in der Enumeration zu bilden, die auf dieser Rangfolge basieren: Abwesenheit, gebucht, mit Vorbehalt.
+Eine Enumeration enthält Frei/Gebucht-Blöcke von Daten, die nicht zeitlich überlappen. Wenn in einem Kalender überlappende Elemente enthalten sind, führt Outlook diese Elemente zu nicht überlappenden Frei/Gebucht-Blöcken in der Enumeration basierend auf dieser Rangfolge zusammen: out-of-office, busy, tentative.
   
-Ein frei/gebucht-Anbieter ruft diese Schnittstelle und die Enumeration für einen Zeitraum für einen Benutzer über [IFreeBusyData](ifreebusydata.md)ab.
+Ein Frei/Gebucht-Anbieter ruft diese Schnittstelle und die Enumeration für einen Zeitraum für einen Benutzer über [IFreeBusyData ab.](ifreebusydata.md)
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Über die Frei/Gebucht-API](about-the-free-busy-api.md)  
-- [Konstanten (frei/gebucht-API)](constants-free-busy-api.md)  
+- [Informationen zur Frei/Gebucht-API](about-the-free-busy-api.md)  
+- [Konstanten (Frei/Gebucht-API)](constants-free-busy-api.md)  
 - [IFreeBusyData](ifreebusydata.md)
 

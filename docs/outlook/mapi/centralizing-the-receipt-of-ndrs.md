@@ -19,14 +19,14 @@ ms.locfileid: "33405856"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-**Wenn mehrere Instanzen des Clients gleichzeitig ausgeführt werden, werden Unzustellbarkeitsberichte an einem zentralen Ort eingetroffen.**
+**So müssen Nicht-Löschberichte (Nondelivery Reports, NDRs) an einem zentralen Ort eintreffen, wenn mehrere Instanzen Ihres Clients gleichzeitig ausgeführt werden**
   
-1. Legen Sie **PR_REPORT_ENTRYID** ([Pidtagreportentryid (](pidtagreportentryid-canonical-property.md)) **, PR_REPORT_NAME** ([pidtagreportname (](pidtagreportname-canonical-property.md)) und **PR_REPORT_SEARCH_KEY** ([pidtagreportsearchkey (](pidtagreportsearchkey-canonical-property.md)) auf die entsprechenden Werte für das zu empfangende Konto fest. die Berichte. Erstellen Sie die Eintrags-ID, indem Sie [IAddrBook:: CreateOneOff](iaddrbook-createoneoff.md) aufrufen, falls erforderlich. 
+1. Legen **PR_REPORT_ENTRYID** ([PidTagReportEntryId](pidtagreportentryid-canonical-property.md)), **PR_REPORT_NAME** ([PidTagReportName](pidtagreportname-canonical-property.md)) und **PR_REPORT_SEARCH_KEY** ([PidTagReportSearchKey](pidtagreportsearchkey-canonical-property.md)) auf die entsprechenden Werte für das Konto fest, das die Berichte empfangen soll. Erstellen Sie die Eintrags-ID, indem Sie bei Bedarf [IAddrBook::CreateOneOff](iaddrbook-createoneoff.md) aufrufen. 
     
-2. Beachten Sie, dass es Messagingsysteme gibt, die das Konto, das Sie für Berichte angefordert haben, ignorieren und an den Absender senden. Reduzieren Sie die Auswirkungen auf Administratoren, die Berichte verschieben müssen:
+2. Verstehen Sie, dass es Messagingsysteme gibt, die das konto ignorieren, das Sie für Berichte angefordert haben, und diese an den Ermittler senden. Verringern Sie die Auswirkungen, die dies auf Administratoren hat, die Berichte verschieben müssen, indem Sie:
     
-- Geben Sie Ihrer ursprünglichen Nachricht eine unterschiedliche Nachrichtenklasse wie IPM. Hinweis. MSNNews. Suchen Sie nach eingehenden Nachrichten mit der Klasse Report. IPM. Note. MSNNews. NDR, und leiten Sie Sie an das Konto weiter, zu dem Sie Berichte erstellen möchten. Senden Sie gleichzeitig eine e-Mail an das Messagingsystem, das Ihr Unzustellbarkeitsbericht Konto ignoriert hat, um zu kommunizieren, dass die **PR_REPORT_ENTRYID** -Eigenschaft berücksichtigt werden sollte. 
+- Geben Sie Ihrer ursprünglichen Nachricht eine unterschiedliche Nachrichtenklasse, z. B. IPM. Note.MSNNews. Suchen Sie nach eingehenden Nachrichten mit der Klasse Report.IPM.Note.MSNNews.NDR, und weiterleiten Sie sie an das Konto, zu dem Berichte kommen sollen. Senden Sie gleichzeitig E-Mails an das Messagingsystem, das Ihr Nicht-Löschbericht-Konto **ignoriert** hat, um zu kommunizieren, dass es die eigenschaft PR_REPORT_ENTRYID sollte. 
     
-- Die meisten Messagingsysteme, die **PR_REPORT_ENTRYID** nicht honorieren, werden die MAPI-Nachrichtenklassen Konventionen nicht berücksichtigen. Daher erhalten Sie etwas, das wie eine Notiz aussieht. Dies ist ein wenig schwieriger zu bewältigen, da die Eingabe so variabel ist. Sehen Sie sich das Thema an, und leiten Sie es weiter, wenn Sie entweder etwas aus einer Liste von Wörtern finden, die "unzustellbar" oder etwas aus Ihrem ursprünglichen Betreff bedeuten. Sie sollten diese Listen im Laufe der Zeit optimieren. 
+- Die meisten Messagingsysteme, die keine **PR_REPORT_ENTRYID,** werden auch die Konventionen der MAPI-Nachrichtenklasse nicht einhalten. Daher erhalten Sie etwas, das wie eine Notiz aussieht. Dies ist etwas schwieriger zu umgehen, da die Eingabe so variabel ist. Sehen Sie sich den Betreff an, und geben Sie ihn weiter, wenn Sie entweder etwas aus einer Liste von Wörtern finden, die "nicht zustellbar" oder etwas von Ihrem ursprünglichen Betreff bedeuten. Bereiten Sie sich darauf vor, diese Listen im Laufe der Zeit zu optimieren. 
     
 

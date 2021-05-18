@@ -25,7 +25,7 @@ ms.locfileid: "33406171"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Benachrichtigt den Formular Betrachter über den Druckstatus eines Formulars.
+Benachrichtigt die Formularanzeige über den Druckstatus eines Formulars.
   
 ```cpp
 HRESULT OnPrint(
@@ -38,11 +38,11 @@ HRESULT hrStatus
 
  _dwPageNumber_
   
-> in Die Nummer der letzten Seite, die gedruckt wurde.
+> [in] Die Nummer der letzten gedruckten Seite.
     
  _hrStatus_
   
-> in Ein HRESULT-Wert, der den Status des Druckauftrags angibt. Die folgenden Werte sind möglich:
+> [in] Ein HRESULT-Wert, der den Status des Druckauftrags angibt. Die folgenden Werte sind möglich:
     
 S_FALSE 
   
@@ -52,29 +52,29 @@ S_OK
   
 > Der Druckauftrag wird ausgeführt.
     
-NICHT 
+FAILED 
   
-> Der Druckauftrag wurde aufgrund eines Fehlers abgebrochen.
+> Der Druckauftrag wurde aufgrund eines Fehlers beendet.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Benachrichtigung wurde erfolgreich ausgeführt.
+> Die Benachrichtigung ist erfolgreich.
     
 MAPI_E_USER_CANCEL 
   
-> Der Benutzer hat den Vorgang abgebrochen, indem er in einem Dialogfeld auf die Schaltfläche Abbrechen geklickt hat. 
+> Der Benutzer hat den Vorgang abgebrochen, in der Regel durch Klicken auf die Schaltfläche Abbrechen in einem Dialogfeld. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Formularobjekte rufen beim Drucken die **IMAPIViewAdviseSink:: OnPrint** -Methode auf, um den Betrachter über den Druckfortschritt zu informieren. 
+Formularobjekte rufen die **IMAPIViewAdviseSink::OnPrint-Methode** beim Drucken auf, um den Betrachter über den Druckfortschritt zu informieren. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Wenn der Druckauftrag mehrere Seiten umfasst, können Sie **OnPrint** aufrufen, nachdem jede Seite gedruckt wurde. Legen Sie _dwPageNumber_ auf die Seite fest, die derzeit gedruckt wird, und _hrStatus_ auf S_OK. Wenn der Druckauftrag abgeschlossen ist, rufen **** Sie OnPrint mit _dwPageNumber_ auf die letzte Seite gedruckt festgelegt und _hrStatus_ auf S_FALSE festgelegt. 
+Wenn der Druckauftrag mehrere Seiten umfasst, können Sie **OnPrint** aufrufen, nachdem jede Seite gedruckt wurde. Legen  _Sie dwPageNumber_ auf die Seite, die gerade gedruckt wird, und  _hrStatus_ auf S_OK. Wenn der Druckauftrag abgeschlossen ist, rufen Sie **OnPrint** auf,  _während dwPageNumber_ auf die letzte gedruckte Seite festgelegt ist, und  _hrStatus_ auf S_FALSE. 
   
-Weitere Informationen zu Formular Benachrichtigungen finden Sie unter [senden und empfangen von Formular Benachrichtigungen](sending-and-receiving-form-notifications.md).
+Weitere Informationen zu Formularbenachrichtigungen finden Sie unter Senden und Empfangen [von Formularbenachrichtigungen](sending-and-receiving-form-notifications.md).
   
 ## <a name="see-also"></a>Siehe auch
 

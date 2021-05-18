@@ -1,5 +1,5 @@
 ---
-title: DurchLaufen des postEingangsOrdners
+title: Durchlaufen des Posteingangsordners
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,36 +15,36 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33406556"
 ---
-# <a name="traversing-the-inbox-folder"></a>DurchLaufen des postEingangsOrdners
+# <a name="traversing-the-inbox-folder"></a>Durchlaufen des Posteingangsordners
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
- **So wechseln Sie alle Nachrichten im Posteingang**
+ **So durchzyklen Sie alle Nachrichten im Posteingang**
   
-1. Rufen Sie [IMsgStore:: GetReceiveFolder](imsgstore-getreceivefolder.md) auf, um den Eintragsbezeichner des Posteingangs abzurufen. 
+1. Rufen [Sie IMsgStore::GetReceiveFolder auf,](imsgstore-getreceivefolder.md) um die Eintrags-ID des Posteingangs abzurufen. 
     
-2. Rufen Sie **IMAPIFolder:: OpenEntry** auf, um den Posteingang zu öffnen. 
+2. Rufen **Sie IMAPIFolder::OpenEntry auf,** um den Posteingang zu öffnen. 
     
-3. Rufen Sie die [IMAPIContainer::](imapicontainer-getcontentstable.md) getcontentable-Methode des Posteingangs auf, um die Tabelle Inhalt abzurufen. 
+3. Rufen Sie die [IMAPIContainer::GetContentsTable-Methode](imapicontainer-getcontentstable.md) des Posteingangs auf, um die Inhaltstabelle abzurufen. 
     
-4. Rufen Sie die [IMAPITable::](imapitable-setcolumns.md) SetColumns-Methode der Inhaltstabelle auf, um den Spaltensatz auf **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) und alle anderen Spalten einzuschränken, die Sie benötigen. 
+4. Rufen Sie die [IMAPITable::SetColumns-Methode](imapitable-setcolumns.md) der Inhaltstabelle auf, um den Spaltensatz auf **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) und alle anderen benötigten Spalten zu beschränken. 
     
-5. Rufen Sie [IMAPITable:: QueryRows](imapitable-queryrows.md) auf, um eine Gruppe von Zeilen abzurufen. 
+5. Rufen [Sie IMAPITable::QueryRows auf,](imapitable-queryrows.md) um eine Gruppe von Zeilen abzurufen. 
     
-6. Bis keine Zeilen mehr in der Tabelle Contents vorhanden sind:
+6. Bis in der Inhaltstabelle keine Zeilen mehr vorhanden sind:
     
-1. Rufen Sie [IMsgStore:: OpenEntry](imsgstore-openentry.md) auf, um die durch den Eintragsbezeichner dargestellte Nachricht aus jeder Zeile zu öffnen. 
+1. Rufen [Sie IMsgStore::OpenEntry auf,](imsgstore-openentry.md) um die Durch den Eintragsbezeichner dargestellte Nachricht aus jeder Zeile zu öffnen. 
     
-2. Weisen Sie den Parameter _lppUnk_ einem lokalen **IMessage** -Schnittstellenzeiger zu. 
+2. Weisen Sie  _den lppUnk-Parameter_ einem lokalen **IMessage-Schnittstellenzeiger** zu. 
     
-3. Arbeiten mit den Eigenschaften der Nachricht.
+3. Arbeiten Sie mit den Eigenschaften der Nachricht.
     
-4. Lassen Sie den Zeiger, auf den durch den _lppUnk_ -Parameter zeigt. 
+4. Lassen Sie den Zeiger los, auf den der  _lppUnk-Parameter_ verweist. 
     
-5. Rufen Sie [IMAPITable:: QueryRows](imapitable-queryrows.md) auf, um die nächste Gruppe von Zeilen abzurufen. 
+5. Rufen [Sie IMAPITable::QueryRows auf,](imapitable-queryrows.md) um die nächste Gruppe von Zeilen abzurufen. 
     
-7. Geben Sie die Tabelle Contents frei.
+7. Geben Sie die Inhaltstabelle frei.
     
 

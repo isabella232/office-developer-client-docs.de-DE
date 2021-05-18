@@ -25,7 +25,7 @@ ms.locfileid: "33407319"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Zeigt das Dialogfeld Allgemeine Adresse an. 
+Zeigt das Dialogfeld allgemeine Adresse an. 
   
 ```cpp
 HRESULT Address(
@@ -39,15 +39,15 @@ HRESULT Address(
 
  _lpulUIParam_
   
-> [in, out] Ein Zeiger auf das Handle des übergeordneten Fensters des Dialogfelds. Bei der Eingabe muss ein Fensterhandle immer übergeben werden. Wenn das DIALOG_SDI-Flag in der [ADRPARM](adrparm.md) -Struktur festgelegt ist, auf die durch den _lpAdrParms_ -Parameter verwiesen wird, wird das Fensterhandle des Dialog Felds ohne Modus zurückgegeben. 
+> [in, out] Ein Zeiger auf das Handle des übergeordneten Fensters des Dialogfelds. Bei der Eingabe muss immer ein Fensterhandle übergeben werden. Wenn bei der Ausgabe das DIALOG_SDI in der [ADRPARM-Struktur](adrparm.md) festgelegt ist, auf die der  _lpAdrParms-Parameter_ verweist, wird das Fensterhandle des Dialogfelds ohne Modus zurückgegeben. 
     
  _lpAdrParms_
   
-> [in, out] Ein Zeiger auf eine **ADRPARM** -Struktur, die die Darstellung und das Verhalten des Dialogfelds Adresse steuert. 
+> [in, out] Ein Zeiger auf eine **ADRPARM-Struktur,** die die Präsentation und das Verhalten des Adressdialogfelds steuert. 
     
  _lppAdrList_
   
-> [in, out] Ein Zeiger auf einen Zeiger auf eine Adressliste. Bei der Eingabe ist diese Liste entweder die aktuelle Liste der Empfänger in einer Nachricht oder NULL, wenn keine solche Liste vorhanden ist. Bei der Ausgabe zeigt _lppAdrList_ auf eine aktualisierte Liste der Nachrichtenempfänger. 
+> [in, out] Ein Zeiger auf einen Zeiger auf eine Adressliste. Bei der Eingabe ist diese Liste entweder die aktuelle Liste der Empfänger in einer Nachricht oder NULL, wenn keine solche Liste vorhanden ist. Bei der Ausgabe  _zeigt lppAdrList_ auf eine aktualisierte Liste von Nachrichtenempfängern. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -55,35 +55,35 @@ S_OK
   
 > Das Dialogfeld Adresse wurde erfolgreich angezeigt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPISupport:: Address** -Methode wird für Support Objekte des Adressbuch Anbieters implementiert. Adressbuchanbieter rufen die **Adresse** auf, um eine Liste der Nachrichtenempfänger zu erstellen oder zu aktualisieren. 
+Die **IMAPISupport::Address-Methode** wird für Unterstützungsobjekte des Adressbuchanbieters implementiert. Adressbuchanbieter rufen **Address auf,** um eine Liste von Nachrichtenempfängern zu erstellen oder zu aktualisieren. 
   
-Jeder Empfänger wird in einer [Miet](adrentry.md) Struktur beschrieben, die in der [ADRLIST](adrlist.md) -Struktur enthalten ist, auf die durch den _lppAdrList_ -Parameter verwiesen wird. Die **Miet** Struktur enthält ein Array von Empfänger Eigenschaftswerten, von denen einer der Empfängertyp oder die **PR_RECIPIENT_TYPE** ([pidtagrecipienttype (](pidtagrecipienttype-canonical-property.md))-Eigenschaft ist. Diese **ADRLIST** -Struktur kann an einen Client übergeben werden, der als _lpMods_ -Parameter in einem Aufruf von [IMessage:: ModifyRecipients](imessage-modifyrecipients.md)verwendet wird.
+Jeder Empfänger wird in einer [ADRENTRY-Struktur](adrentry.md) beschrieben, die in der [ADRLIST-Struktur](adrlist.md) enthalten ist, auf die der  _lppAdrList-Parameter_ verweist. Die **ADRENTRY-Struktur** enthält ein Array von Empfängereigenschaftswerten, von denen einer der Typ des Empfängers oder PR_RECIPIENT_TYPE **(** [PidTagRecipientType](pidtagrecipienttype-canonical-property.md)) -Eigenschaft ist. Diese **ADRLIST-Struktur** kann an einen Client übergeben werden, der als _lpMods-Parameter_ in einem Aufruf von [IMessage::ModifyRecipients verwendet wird.](imessage-modifyrecipients.md)
   
-Jeder Empfänger in der **ADRLIST** -Struktur kann aufgelöst werden, was darauf hinweist, dass einer seiner Eigenschaftswerte die **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))-Eigenschaft oder nicht aufgelöst ist, was darauf hinweist, dass die **PR_ENTRYID** -Eigenschaft fehlt. 
+Jeder Empfänger in der **ADRLIST-Struktur** kann entweder aufgelöst werden, was angibt, dass einer der Eigenschaftswerte seine **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) -Eigenschaft ist, oder nicht aufgelöst, was angibt, dass die **PR_ENTRYID-Eigenschaft** fehlt. 
   
-Zusätzlich zu **PR_ENTRYID**sind aufgelöste Empfänger die folgenden Eigenschaften:
+Zusätzlich zu **PR_ENTRYID** enthalten aufgelöste Empfänger die folgenden Eigenschaften:
   
 - **PR_RECIPIENT_TYPE**
     
 - **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
     
-- **PR_ADDRTYPE** ([Pidtagaddresstype (](pidtagaddresstype-canonical-property.md))
+- **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))
     
 - **PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))
     
-Nicht aufgelöste Empfänger schließen in der Regel nur **PR_DISPLAY_NAME** und **PR_RECIPIENT_TYPE**ein. 
+Nicht aufgelöste Empfänger enthalten in der Regel **nur PR_DISPLAY_NAME** und **PR_RECIPIENT_TYPE**. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Die **ADRLIST** -Struktur, die der Aufrufer übergibt, kann eine andere Größe als die von MAPI zurückgegebene Struktur aufweisen. Wenn Sie Speicher für die **ADRLIST** -Struktur reservieren, ordnen Sie den Speicher für jede [SPropValue](spropvalue.md) -Struktur separat zu. 
+Die **ADRLIST-Struktur,** die der Aufrufer übergibt, kann eine andere Größe als die von MAPI zurückgegebene Struktur aufweisen. Wenn Sie speicher für die **ADRLIST-Struktur zuweisen,** weisen Sie den Arbeitsspeicher für jede [SPropValue-Struktur](spropvalue.md) separat zu. 
   
-Verwenden Sie die Zeiger auf die MAPI-Speicher Zuweisungsfunktionen, die an Ihre [ABProviderInit](abproviderinit.md) -Funktion übergeben werden, um Arbeitsspeicher zuzuweisen. Reservieren Sie Arbeitsspeicher mit der [MAPIAllocateBuffer](mapiallocatebuffer.md) -Funktion für **ADRLIST** und jeder Eigenschaftswert Struktur in den **Miet** Strukturen in **ADRLIST**. 
+Verwenden Sie die Zeiger auf die AN IHRE [ABProviderInit-Funktion übergebenen](abproviderinit.md) MAPI-Speicherzuweisungsfunktionen, um Arbeitsspeicher zuzuordnen. Zuordnen von Arbeitsspeicher mit der [MAPIAllocateBuffer-Funktion](mapiallocatebuffer.md) für **ADRLIST** und jeder Eigenschaftswertstruktur in den **ADRENTRY-Strukturen** in **ADRLIST**. 
   
-Wenn **Address** eine größere **ADRLIST** -Struktur zurückgeben muss oder wenn Sie NULL für _lppAdrList_übergeben haben, gibt **Address** die ursprüngliche Struktur frei und ordnet eine neue an. **Address** ordnet auch zusätzliche Eigenschaftswert Strukturen in der **ADRLIST** -Struktur zu und gibt alte nach Bedarf frei. Weitere Informationen zur Verwaltung von Arbeitsspeicher für **ADRLIST** -Strukturen finden Sie unter [Managing Memory for ADRLIST and SRowSet Structures](managing-memory-for-adrlist-and-srowset-structures.md).
+Wenn **Address** eine größere **ADRLIST-Struktur** zurückgeben muss oder Wenn Sie NULL für  _lppAdrList_ übergeben haben, gibt **Address** die ursprüngliche Struktur frei und weist eine neue zu. **Address** weist außerdem zusätzliche Eigenschaftenwertstrukturen in der **ADRLIST-Struktur** zu und gibt alte Werte frei. Weitere Informationen zur Verwaltung des Arbeitsspeichers für **ADRLIST-Strukturen** finden Sie unter [Managing Memory for ADRLIST and SRowSet Structures](managing-memory-for-adrlist-and-srowset-structures.md).
   
- **Address** gibt sofort zurück, wenn das DIALOG_SDI-Flag in der **ADRPARM** -Struktur im _lpAdrParms_ -Parameter festgelegt wurde. 
+ **Address** gibt sofort zurück, wenn DIALOG_SDI in der **ADRPARM-Struktur** im  _lpAdrParms-Parameter festgelegt_ wurde. 
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -113,15 +113,15 @@ Wenn **Address** eine größere **ADRLIST** -Struktur zurückgeben muss oder wen
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[Kanonische Pidtagaddresstype (-Eigenschaft](pidtagaddresstype-canonical-property.md)
+[PidTagAddressType (kanonische Eigenschaft)](pidtagaddresstype-canonical-property.md)
   
-[Kanonische PidTagDisplayName-Eigenschaft](pidtagdisplayname-canonical-property.md)
+[PidTagDisplayName (kanonische Eigenschaft)](pidtagdisplayname-canonical-property.md)
   
-[Kanonische PidTagDisplayType-Eigenschaft](pidtagdisplaytype-canonical-property.md)
+[PidTagDisplayType (kanonische Eigenschaft)](pidtagdisplaytype-canonical-property.md)
   
-[Kanonische PidTagEntryId-Eigenschaft](pidtagentryid-canonical-property.md)
+[PidTagEntryId (kanonische Eigenschaft)](pidtagentryid-canonical-property.md)
   
-[Kanonische Pidtagrecipienttype (-Eigenschaft](pidtagrecipienttype-canonical-property.md)
+[PidTagRecipientType (kanonische Eigenschaft)](pidtagrecipienttype-canonical-property.md)
   
 [SPropValue](spropvalue.md)
   
@@ -130,5 +130,5 @@ Wenn **Address** eine größere **ADRLIST** -Struktur zurückgeben muss oder wen
 [IMAPISupport: IUnknown](imapisupportiunknown.md)
 
 
-[Verwalten von Speicher für ADRLIST-und SRowSet-Strukturen](managing-memory-for-adrlist-and-srowset-structures.md)
+[Verwalten des Arbeitsspeichers für ADRLIST- und SRowSet-Strukturen](managing-memory-for-adrlist-and-srowset-structures.md)
 

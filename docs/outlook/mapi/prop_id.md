@@ -19,18 +19,18 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33409132"
 ---
-# <a name="propid"></a>PROP_ID
+# <a name="prop_id"></a>PROP_ID
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt den Eigenschaftenbezeichner eines angegebenen Property-Tags zurück.
+Gibt den Eigenschaftenbezeichner eines angegebenen Eigenschaftstags zurück.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |[SPropValue](spropvalue.md) <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |[SPropValue](spropvalue.md) <br/> |
    
 ```cpp
 PROP_ID (ulPropTag)
@@ -40,13 +40,13 @@ PROP_ID (ulPropTag)
 
  _ulPropTag_
   
-> Property-Tag, das den zurückzugebenden Bezeichner enthält.
+> Eigenschaftstag, das den zurück zu verwendende Bezeichner enthält.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Jedes Property-Tag enthält den Eigenschaftentyp im niedrigwertigen Wort (Bits 0 bis 15) und den Eigenschaftenbezeichner im hochwertigen Wort (Bits 16 bis 31). Das **PROP_ID** -Makro extrahiert den Eigenschaftenbezeichner und fügt ihn in Bits 0 bis 15 der zurückzugebenden Ganzzahl ein. Die restlichen Bits des Rückgabewerts werden auf Nullen festgelegt. 
+Jedes Eigenschaftstag enthält den Eigenschaftentyp im Wort mit niedriger Reihenfolge (Bits 0 bis 15) und den Eigenschaftenbezeichner im Wort mit hoher Ordnung (Bits 16 bis 31). Das **PROP_ID** extrahiert den Eigenschaftsbezeichner und legt ihn in die Bits 0 bis 15 der zurück zu verwendenden ganzen Zahl. Die verbleibenden Bits des Rückgabewerts werden auf Nullen festgelegt. 
   
-Das **PROP_ID** -Makro kann verwendet werden, um beispielsweise einen Bezeichner abzurufen, der an [IMAPIProp:: GetNamesFromIDs](imapiprop-getnamesfromids.md). **GetNamesFromIDs** Ruft den Eigenschaftennamen ab, der einem Bezeichner für eine benannte Eigenschaft zugeordnet ist. 
+Das **PROP_ID** kann z. B. verwendet werden, um einen Bezeichner abzurufen, der [an IMAPIProp::GetNamesFromIDs übergeben werden soll.](imapiprop-getnamesfromids.md) **GetNamesFromIDs** ruft den Eigenschaftennamen ab, der einem Bezeichner für eine benannte Eigenschaft zugeordnet ist. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagassociatedsharingprovider (-Eigenschaft
+title: PidTagAssociatedSharingProvider (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,24 +15,24 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33408922"
 ---
-# <a name="pidtagassociatedsharingprovider-canonical-property"></a>Kanonische Pidtagassociatedsharingprovider (-Eigenschaft
+# <a name="pidtagassociatedsharingprovider-canonical-property"></a>PidTagAssociatedSharingProvider (kanonische Eigenschaft)
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bestimmt, ob ein PST-Informationsspeicher Anbieter als Microsoft SharePoint 2010 PST konfiguriert ist.
+Bestimmt, ob ein Anbieter für persönliche Ordnerdatei (PST) als Microsoft SharePoint 2010 PST konfiguriert ist.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_ASSOCIATED_SHARING_PROVIDER  <br/> |
 |Kennung:  <br/> |0x0EA00048  <br/> |
 |Datentyp:  <br/> |PT_CLSID  <br/> |
-|Bereich:  <br/> |Persönliche Speichertabelle (PST) intern  <br/> |
+|Bereich:  <br/> |Interne Persönliche Speichertabelle (PST)  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Diese Eigenschaft gibt an, ob eine PST-Datei für Microsoft SharePoint 2010 konfiguriert ist. Wenn die Eigenschaft nicht vorhanden ist, wurde die PST-Datei nicht als Microsoft SharePoint 2010 PST-Datei konfiguriert.
+Diese Eigenschaft gibt an, ob ein PST für Microsoft SharePoint 2010 konfiguriert ist. Wenn die Eigenschaft nicht vorhanden ist, wurde das PST nicht als Microsoft SharePoint 2010 PST konfiguriert.
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -40,9 +40,9 @@ Diese Eigenschaft gibt an, ob eine PST-Datei für Microsoft SharePoint 2010 konf
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -20,35 +20,35 @@ ms.locfileid: "33406409"
 
 Speichert die Beziehungen zwischen Containern, Listen, Beschriftungen und Shapes. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
- Microsoft Visio verwendet die Zelle "Beziehungen" zum Speichern der Beziehungen, die dieses Shape betreffen. Zum Darstellen der Beziehungen zu diesem Shape wird eine Reihe von DEPENDSON-Funktionen mit den angegebenen Parametern verwendet, wie in der nachstehenden Tabelle dargestellt. 
+ Microsoft Visio verwendet die Zelle Beziehungen, um die Beziehungen zu speichern, die dieses Shape betreffen. Zum Darstellen der Beziehungen zu diesem Shape wird eine Reihe von DEPENDSON-Funktionen mit den angegebenen Parametern verwendet, wie in der nachstehenden Tabelle dargestellt. 
   
 |**Erster Parameter**|**Zusätzliche Parameter**|
 |:-----|:-----|
 |1  <br/> |Shapes, die Elemente dieses Containers sind  <br/> |
 |2  <br/> |Shapes, die Elemente dieser Liste sind  <br/> |
 |3  <br/> |Beschriftungen, die mit diesem Shape verknüpft sind  <br/> |
-|4  <br/> |Container, zu deren Elementen dieses Shape gehört  <br/> |
-|5  <br/> |Listen, zu denen dieses Listenelement gehört  <br/> |
-|6  <br/> |Shape, das mit dieser Beschriftung verknüpft ist  <br/> |
-|7  <br/> |Container an der linken Begrenzungskante, an der sich dieses Shape befindet  <br/> |
-|8  <br/> |Container an der rechten Begrenzungskante, an der sich dieses Shape befindet  <br/> |
-|9  <br/> |Container an der oberen Begrenzungskante, an der sich dieses Shape befindet  <br/> |
-|10   <br/> |Container an der unteren Begrenzungskante, an der sich dieses Shape befindet  <br/> |
-|11   <br/> |Liste, die von dieser Liste überlappt wird  <br/> |
+|4   <br/> |Container, zu deren Elementen dieses Shape gehört  <br/> |
+|5   <br/> |Listen, zu denen dieses Listenelement gehört  <br/> |
+|6   <br/> |Shape, das mit dieser Beschriftung verknüpft ist  <br/> |
+|7   <br/> |Container an der linken Begrenzungskante, an der sich dieses Shape befindet  <br/> |
+|8   <br/> |Container an der rechten Begrenzungskante, an der sich dieses Shape befindet  <br/> |
+|9   <br/> |Container an der oberen Begrenzungskante, an der sich dieses Shape befindet  <br/> |
+|10  <br/> |Container an der unteren Begrenzungskante, an der sich dieses Shape befindet  <br/> |
+|11  <br/> |Liste, die von dieser Liste überlappt wird  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Beziehungen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle Beziehungen anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |Beziehungen  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Beziehungen nach Index aus einem Programm erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle Beziehungen nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowShapeLayout** <br/> |
 |Zellenindex:  <br/> |**visSLORelationships** <br/> |
    

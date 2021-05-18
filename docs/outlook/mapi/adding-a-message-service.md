@@ -23,20 +23,20 @@ ms.locfileid: "33407235"
   
  **So fügen Sie einem Profil einen neuen Nachrichtendienst hinzu und greifen auf den neuen Nachrichtendienst zu**
   
-Rufen Sie [IMsgServiceAdmin2:: CreateMsgServiceEx](imsgserviceadmin2-createmsgserviceex.md)auf. **CreateMsgServiceEx** führt die folgenden Aufgaben aus: 
+Rufen [Sie IMsgServiceAdmin2::CreateMsgServiceEx auf.](imsgserviceadmin2-createmsgserviceex.md) **CreateMsgServiceEx** führt die folgenden Aufgaben aus: 
   
-1. Kopiert alle relevanten Informationen für den Nachrichtendienst, der sich in der MAPISVC befindet. INF-Datei, Erstellen eines Profil Abschnitts für jeden Anbieterabschnitt.
+1. Kopiert alle relevanten Informationen für den Nachrichtendienst, der sich im MAPISVC befindet. INF-Datei, erstellen Sie einen Profilabschnitt für jeden Anbieterabschnitt.
     
-2. Ruft die Einstiegspunktfunktion des Nachrichtendiensts **MSGSERVICEENTRY**auf, wobei der Parameter _ulContext_ auf MSG_SERVICE_CREATE festgelegt ist. 
+2. Ruft die Einstiegspunktfunktion des Nachrichtendiensts **MSGSERVICEENTRY** auf, und der  _ulContext-Parameter_ ist auf MSG_SERVICE_CREATE. 
     
-3. Legt die **PR_SERVICE_UID** ([pidtagserviceuid (](pidtagserviceuid-canonical-property.md))-Eigenschaft des Nachrichtendiensts fest und ruft Sie ab.
+3. Legt die #A0 des Nachrichtendiensts **PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md)) fest und ruft sie ab.
     
  **So greifen Sie auf einen neu hinzugefügten Nachrichtendienst zu**
   
-1. Rufen Sie [IMsgServiceAdmin:: GetMsgServiceTable](imsgserviceadmin-getmsgservicetable.md) auf, um die Nachrichtendienst Tabelle abzurufen. 
+1. Rufen [Sie IMsgServiceAdmin::GetMsgServiceTable auf,](imsgserviceadmin-getmsgservicetable.md) um die Nachrichtendiensttabelle abzurufen. 
     
-2. Rufen Sie die [IMAPITable:: Advise](imapitable-advise.md) -Methode der Nachrichtendienst Tabelle auf, um Tabellen Benachrichtigungen zu registrieren. 
+2. Rufen Sie die [IMAPITable::Advise-Methode](imapitable-advise.md) der Nachrichtendiensttabelle auf, um sich für Tabellenbenachrichtigungen zu registrieren. 
     
-3. Wenn MAPI eine TABLE_ROW_ADDED-Benachrichtigung sendet, suchen Sie den Eintragsbezeichner des neu hinzugefügten Nachrichtendiensts in der [SRow](srow.md) -Struktur, die in der [TABLE_NOTIFICATION](table_notification.md) -Struktur enthalten ist. 
+3. Wenn MAPI eine TABLE_ROW_ADDED sendet, suchen Sie den Eintragsbezeichner des neu hinzugefügten Nachrichtendiensts in der [SRow-Struktur,](srow.md) die in der TABLE_NOTIFICATION [ist.](table_notification.md) 
     
 

@@ -25,7 +25,7 @@ ms.locfileid: "33405660"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Öffnet einen Profil Abschnitt aus dem aktuellen Profil und gibt einen [IProfSect](iprofsectimapiprop.md) -Zeiger für weiteren Zugriff zurück. 
+Öffnet einen Profilabschnitt aus dem aktuellen Profil und gibt einen [IProfSect-Zeiger](iprofsectimapiprop.md) für weiteren Zugriff zurück. 
   
 ```cpp
 HRESULT OpenProfileSection(
@@ -40,59 +40,59 @@ HRESULT OpenProfileSection(
 
  _lpUID_
   
-> in Ein Zeiger auf die [MAPIUID](mapiuid.md) -Struktur, die den eindeutigen Bezeichner für den zu öffnenden Profil Abschnitt enthält. Clients dürfen keinen NULL-Wert für den _lpUID_ -Parameter übergeben. Dienstanbieter können NULL zum Abrufen der **MAPIUID** -Funktion, wenn Sie über Ihre Message-Dienst-Einstiegspunkt-Funktionen aufrufen. 
+> [in] Ein Zeiger auf die [MAPIUID-Struktur,](mapiuid.md) die den eindeutigen Bezeichner für den zu öffnenden Profilabschnitt enthält. Clients dürfen null nicht für den  _lpUID-Parameter_ übergeben. Dienstanbieter können NULL übergeben, um **die MAPIUID abzurufen,** wenn sie von ihren Nachrichtendienst-Einstiegspunktfunktionen aufrufen. 
     
  _lpInterface_
   
-> in Ein Zeiger auf die Schnittstellen-ID (IID), die die Schnittstelle darstellt, die für den Zugriff auf den profile-Abschnitt verwendet werden soll. Übergeben von NULL Ergebnisse in der Profil Abschnitt Standardschnittstelle (**IProfSect**) wird zurückgegeben. 
+> [in] Ein Zeiger auf die Schnittstellen-ID (Interface Identifier, IID), die die Schnittstelle darstellt, die für den Zugriff auf den Profilabschnitt verwendet werden soll. Das Übergeben von NULL führt dazu, dass die Standardschnittstelle (**IProfSect**) des Profilabschnitts zurückgegeben wird. 
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die die Art des Öffnens des Profil Abschnitts steuert. Die folgenden Flags können festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie der Profilabschnitt geöffnet wird. Die folgenden Kennzeichen können festgelegt werden:
     
 MAPI_DEFERRED_ERRORS 
   
-> Ermöglicht es **OpenProfileSection** , erfolgreich zurückzugeben, möglicherweise, bevor der Profil Abschnitt vollständig für den Aufrufer verfügbar ist. Wenn der profile-Abschnitt nicht verfügbar ist, kann durch einen nachfolgenden Aufruf ein Fehler ausgelöst werden. 
+> Ermöglicht **OpenProfileSection,** erfolgreich zurückzukehren, möglicherweise bevor der Profilabschnitt vollständig für den Aufrufer verfügbar ist. Wenn der Profilabschnitt nicht verfügbar ist, kann ein nachfolgender Aufruf einen Fehler zur Folge haben. 
     
 MAPI_MODIFY 
   
-> Fordert Lese-/Schreibzugriff-Berechtigung an. Standardmäßig werden Objekte mit Schreibschutz Berechtigung geöffnet, und Anrufer sollten nicht unter der Annahme arbeiten, dass die Berechtigung "Lese-/Schreibzugriff" erteilt wurde. Clients dürfen keine Lese-/Schreibzugriff auf Anbieter Abschnitte des Profils haben.
+> Fordert Lese-/Schreibberechtigungen an. Standardmäßig werden Objekte mit schreibgeschützter Berechtigung geöffnet, und Anrufer sollten nicht unter der Annahme arbeiten, dass Lese-/Schreibberechtigungen erteilt wurden. Clients sind für Anbieterabschnitte des Profils keine Lese-/Schreibberechtigungen zulässig.
     
 MAPI_FORCE_ACCESS
   
-> Ermöglicht den Zugriff auf alle Profilabschnitte, auch im Besitz einzelner Dienstanbieter.
+> Ermöglicht den Zugriff auf alle Profilabschnitte, auch die, die im Besitz einzelner Dienstanbieter sind.
     
  _lppProfSect_
   
-> Out Ein Zeiger auf einen Zeiger auf den Profil Abschnitt.
+> [out] Ein Zeiger auf einen Zeiger auf den Profilabschnitt.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Profil Abschnitt wurde erfolgreich geöffnet.
+> Der Profilabschnitt wurde erfolgreich geöffnet.
     
 MAPI_E_NO_ACCESS 
   
-> Es wurde versucht, einen schreibgeschützten Profil Abschnitt zu ändern oder auf ein Objekt zuzugreifen, für das der Benutzer nicht über ausreichende Berechtigungen verfügt.
+> Es wurde versucht, einen schreibgeschützten Profilabschnitt zu ändern oder auf ein Objekt zu zugreifen, für das der Benutzer nicht über ausreichende Berechtigungen verfügt.
     
 MAPI_E_NOT_FOUND 
   
-> Der angeforderte Profil Abschnitt ist nicht vorhanden.
+> Der angeforderte Profilabschnitt ist nicht vorhanden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Mit der **IProviderAdmin:: OpenProfileSection** -Methode wird ein Profil Abschnitt geöffnet, in dem der Aufrufer Informationen lesen und möglicherweise Informationen in das aktive Profil schreiben kann. 
+Die **IProviderAdmin::OpenProfileSection-Methode** öffnet einen Profilabschnitt, mit dem der Aufrufer Informationen aus dem aktiven Profil lesen und möglicherweise in das aktive Profil schreiben kann. 
   
-Clients können Profilabschnitte, die zu Anbietern gehören, nicht mithilfe der **OpenProfileSection** -Methode öffnen. 
+Clients können keine Profilabschnitte öffnen, die zu Anbietern gehören, indem sie die **OpenProfileSection-Methode** verwenden. 
   
-Mehrere Clients oder Dienstanbieter können gleichzeitig einen Profil Abschnitt mit Leseberechtigung öffnen. Wenn jedoch ein Profil Abschnitt mit Lese-/Schreibzugriff geöffnet ist, können keine weiteren Aufrufe zum Öffnen des Abschnitts ausgeführt werden, unabhängig von der Art des Zugriffs. Wenn ein Profil Abschnitt mit schreibgeschützter Berechtigung geöffnet ist, schlägt ein nachfolgendes Aufrufen der Berechtigung Lese-/Schreibzugriff mit MAPI_E_NO_ACCESS fehl. Wenn ein Abschnitt mit Lese-/Schreibzugriff-Berechtigung geöffnet ist, tritt ebenfalls ein Fehler bei einem nachfolgenden Aufruf der Berechtigung Read-Only auf. 
+Mehrere Clients oder Dienstanbieter können gleichzeitig einen Profilabschnitt mit schreibgeschützter Berechtigung öffnen. Wenn ein Profilabschnitt jedoch mit Lese-/Schreibberechtigung geöffnet ist, können keine weiteren Aufrufe zum Öffnen des Abschnitts vorgenommen werden, unabhängig von der Art des Zugriffs. Wenn ein Profilabschnitt mit schreibgeschützter Berechtigung geöffnet ist, wird bei einem nachfolgenden Aufruf der Lese-/Schreibberechtigung ein Fehler MAPI_E_NO_ACCESS. Wenn ein Abschnitt mit Lese-/Schreibberechtigung geöffnet ist, kann auch ein nachfolgender Aufruf zum Anfordern von schreibgeschützter Berechtigung fehlschlagen. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Wenn Sie anfordern, dass **OpenProfileSection** einen nicht vorhandenen Profil Abschnitt öffnet, indem Sie MAPI_MODIFY in _ulFlags_ und eine unbekannte **MAPIUID** in _lpUID_übergeben, wird der profile-Abschnitt erstellt. 
+Wenn Sie anfordern, dass **OpenProfileSection** einen nicht vorhandenen Profilabschnitt öffnet, indem MAPI_MODIFY in  _ulFlags_ und eine unbekannte **MAPIUID** in  _lpUID_ übergeben wird, wird der Profilabschnitt erstellt. 
   
-Wenn Sie **OpenProfileSection** einen nicht vorhandenen Abschnitt mit Schreibschutz Berechtigung öffnen möchten, wird MAPI_E_NOT_FOUND zurückgegeben. 
+Wenn Sie anfordern, **dass OpenProfileSection** einen nicht vorhandenen Abschnitt mit schreibgeschützter Berechtigung öffnet, wird MAPI_E_NOT_FOUND. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -100,7 +100,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIProfileFunctions. cpp  <br/> |OpenProfileSection  <br/> |MFCMAPI verwendet die **IProviderAdmin:: OpenProfileSection** -Methode, um einen Profil Abschnitt aus dem aktuellen Profil zu öffnen.  <br/> |
+|MAPIProfileFunctions.cpp  <br/> |OpenProfileSection  <br/> |MFCMAPI verwendet die **IProviderAdmin::OpenProfileSection-Methode,** um einen Profilabschnitt aus dem aktuellen Profil zu öffnen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

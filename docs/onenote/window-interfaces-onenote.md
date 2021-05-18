@@ -30,19 +30,19 @@ Die folgende Liste enthält die vier Ansichtsmodi, die Sie für OneNote-Fenster 
     
 - Andocken auf Desktop - ein OneNote-Fenster, das Sie andocken können auf jeder Seite des Desktops (vergleichbar mit der Taskleiste) angezeigt. Diese Ansicht reduziert die Größe des Desktops, um das Fenster passt. Sie können nur ein Fenster andocken, können Sie jederzeit und das Fenster ist immer sichtbar, ohne den Desktop blockieren. 
     
-Die folgende Abbildung zeigt, wie die vollständige Seitenansicht, die anDocken an die Desktop Ansicht und schnell Notizen auf Ihrem Desktop aussehen.
+Die folgende Abbildung zeigt, wie die Vollseitenansicht, die Dock-to-Desktop-Ansicht und schnelle Notizen auf Ihrem Desktop aussehen.
   
 **OneNote-Ansichten**
 
-![OneNote-Fenster Ansichten] (media/ON15Con_views.jpg "OneNote-Fenster Ansichten")
+![OneNote Fensteransichten OneNote](media/ON15Con_views.jpg "Fensteransichten")
   
 ## <a name="interfaces"></a>Schnittstellen
 
 In diesem Abschnitt werden die Schnittstellen und Member, die Sie zum programmgesteuerten Ändern der OneNote-Fenster verwenden können.
   
-### <a name="windows-interface"></a>Windows-Oberfläche
+### <a name="windows-interface"></a>Windows-Schnittstelle
 
-Die **Windows** -Schnittstelle ermöglicht es dem Benutzer, die den Satz von geöffnete OneNote-Fenster zuzugreifen. Es ist eine Eigenschaft der OneNote- **Application** -Klasse über **Application.Windows**zugegriffen. Dies gibt den aufgelisteten Satz von OneNote-Fenster zurück. 
+Die **Windows** -Schnittstelle ermöglicht es dem Benutzer, die den Satz von geöffnete OneNote-Fenster zuzugreifen. Es ist eine Eigenschaft der OneNote- **Application** -Klasse über **Application.Windows** zugegriffen. Dies gibt den aufgelisteten Satz von OneNote-Fenster zurück. 
   
 **Eigenschaften**
 
@@ -52,7 +52,7 @@ Die **Windows** -Schnittstelle ermöglicht es dem Benutzer, die den Satz von ge�
 |**CurrentWindow** <br/> |**Window** <br/> |Ruft das **Window** -Objekt des aktiven Fensters OneNote.  <br/> |
 |**Items** <br/> |**Window** <br/> |Gibt das Objekt **Window**, das entspricht dem Index-Wert übergeben. Diese Eigenschaft kann nicht direkt zugegriffen werden. Verwenden Sie **Windows [(uint) index]**, um ein **Window** -Objekt zurückzugeben.  <br/> |
    
-### <a name="window-interface"></a>Fenster Schnittstelle
+### <a name="window-interface"></a>Fensterschnittstelle
 
 Die **Window** -Schnittstelle ermöglicht es dem Benutzer Zugriff auf bestimmte Eigenschaften der einzelnen Fenster. Jedes Fenster OneNote kann durch Auflisten der **Windows** -Eigenschaft der **Application** -Klasse zugegriffen werden. 
   
@@ -87,7 +87,7 @@ Die folgenden Methoden der **Window** -Schnittstelle können Sie angegebenen Obj
 
 |||
 |:-----|:-----|
-|**Beschreibung** <br/> |Wenn einen Link OneNote übergeben (Onenote: / /), wird das OneNote-Fenster auf den entsprechenden Speicherort in OneNote geöffnet. Wenn es sich bei dem Link jedoch um einen externen Link handelt, beispielsweise https://oder file://, wird ein Sicherheitsdialogfeld angezeigt. Bei Kündigung OneNote versucht, um den Link zu öffnen, und ein HResult.hrObjectDoesNotExist-Fehler zurückgegeben.  <br/> |
+|**Beschreibung** <br/> |Wenn einen Link OneNote übergeben (Onenote: / /), wird das OneNote-Fenster auf den entsprechenden Speicherort in OneNote geöffnet. Wenn es sich bei dem Link jedoch um einen externen Link handelt, z. B. https:// oder file://, wird ein Sicherheitsdialogfeld angezeigt. Bei Kündigung OneNote versucht, um den Link zu öffnen, und ein HResult.hrObjectDoesNotExist-Fehler zurückgegeben.  <br/> |
 |**Syntax** <br/> | `HRESULT NavigateToUrl (`           ` [in]BSTR bstrUrl); ` <br/> |
 |**Parameter** <br/> | _bstrUrl_- die URL zu navigieren.  <br/> |
    
@@ -95,7 +95,7 @@ Die folgenden Methoden der **Window** -Schnittstelle können Sie angegebenen Obj
 
 |||
 |:-----|:-----|
-|**Beschreibung** <br/> |Das Fenster von **dockLocation** und den Monitor am **ptMonitor**angegebene Position angedockt.  <br/> |
+|**Beschreibung** <br/> |Das Fenster von **dockLocation** und den Monitor am **ptMonitor** angegebene Position angedockt.  <br/> |
 |**Syntax** <br/> | `HRESULT SetDockedLocation`(           `[in] DockLocation dockLocation,`           `[in] POINT ptMonitor);` <br/> |
 |**Parameter** <br/> | _dockLocation_ - gibt die angedockte Position eines Fensters OneNote 2013.  <br/>  _ptMonitor_ - (Optional) gibt an, dass in x-und y-Koordinaten, die das Fenster Überwachen verankert werden sollte.  <br/> |
    

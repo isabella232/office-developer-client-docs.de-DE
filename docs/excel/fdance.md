@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - fDance
 keywords:
-- fdance-Funktion [Excel 2007]
+- fdance-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: 8c2f2d83-b7aa-456e-b473-a54897bc35ae
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -22,7 +22,7 @@ ms.locfileid: "33409048"
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Beispiel für einen benutzerdefinierten Befehl, mit dem die markierten Zellen des aktiven Arbeitsblatts geändert werden, bis der Benutzer **ESC**drückt. Wenn GENERIC. XLL geladen wird, wird ein benutzerdefiniertes Menü generisch erstellt, über das auf diesen Befehl zugegriffen wird.
+Beispiel für benutzerdefinierten Befehl, der die ausgewählten Zellen im aktiven Arbeitsblatt ändert, bis der Benutzer **ESC drückt.** Wenn GENERIC.xll geladen wird, wird ein benutzerdefiniertes Menü, Generic, erstellt, über das auf diesen Befehl zugegriffen wird.
   
 ```cs
 int WINAPI fDance(void);
@@ -30,19 +30,19 @@ int WINAPI fDance(void);
 
 ## <a name="parameters"></a>Parameter
 
-Die Funktion verwendet keine Parameter.
+Die Funktion nimmt keine Parameter an.
   
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
 Die Funktion gibt immer 1 zurück.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Dies ist ein Beispiel für einen langwierigen Vorgang. Die Funktion [XlAbort](xlabort.md) wird gelegentlich aufgerufen. Dadurch wird der Prozessor (bei kooperativem Multitasking) und überprüft, ob der Benutzer **ESC** gedrückt hat, um den Vorgang abzubrechen. Wenn dies der Fall ist, bietet er dem Benutzer die Möglichkeit, den Abbruch abzubrechen. 
+Dies ist ein Beispiel für einen langwierigen Vorgang. Die Funktion [xlAbort](xlabort.md) wird gelegentlich aufruft. Dies ergibt den Prozessor (hilft beim kooperativen Multitasking) und überprüft, ob der Benutzer **esC** gedrückt hat, um den Vorgang abgesagt zu haben. Wenn ja, bietet es dem Benutzer die Möglichkeit, den Abbruch abbricht. 
   
 ### <a name="example"></a>Beispiel
 
-Den `\SAMPLES\GENERIC\GENERIC.C` Quellcode für diese Funktion finden Sie unter. 
+Den  `\SAMPLES\GENERIC\GENERIC.C` Quellcode für diese Funktion finden Sie unter. 
   
 ## <a name="see-also"></a>Siehe auch
 

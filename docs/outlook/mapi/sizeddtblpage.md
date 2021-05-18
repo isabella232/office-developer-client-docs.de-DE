@@ -23,12 +23,12 @@ ms.locfileid: "33407445"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt eine benannte Struktur, die eine [DTBLPAGE](dtblpage.md) -Struktur zur Beschreibung eines Steuerelements mit Registerkarten, eine Beschriftung einer angegebenen Länge und einen Hilfedatei Eintrag mit einer angegebenen Länge enthält. 
+Erstellt eine benannte Struktur, die eine [DTBLPAGE-Struktur](dtblpage.md) zum Beschreiben eines Seitensteuerelements mit Registerkarten, eine Bezeichnung einer angegebenen Länge und einen Hilfedateieintrag mit einer angegebenen Länge enthält. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |**DTBLPAGE** <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |**DTBLPAGE** <br/> |
    
 ```cpp
 SizedDtblPage (n, n1, u)
@@ -38,19 +38,19 @@ SizedDtblPage (n, n1, u)
 
 _n_
   
-> Länge der Bezeichnung für die Registerkarte Seite.
+> Länge der Beschriftung für die Seitenregisterkarte.
     
-_N1_
+_n1_
   
-> Die Länge des Eintrags, der in der Datei MAPISVC. inf angezeigt wird und die die Hilfedatei identifiziert, die mit dem Steuerelement für die Registerkartenseite verwendet wird.
+> Länge des Eintrags, der in der Datei Mapisvc.inf angezeigt wird und die Hilfedatei identifiziert, die mit dem Seitensteuerelement mit Registerkarten verwendet wird.
     
 _u_
   
 > Name für die neue Struktur.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Mit dem **SizedDtblPage** -Makro können Sie ein Seitensteuerelement mit RegisterkartenDefinieren, wenn die Anzahl der Zeichen in der zugeordneten Bezeichnung und dem Hilfedatei Eintrag bekannt ist. Die neue Struktur wird mit den folgenden Elementen erstellt: 
+Mit **dem Makro SizedDtblPage** können Sie ein Seitensteuerelement mit Registerkarten definieren, wenn die Anzahl der Zeichen in der zugeordneten Bezeichnung und dem Hilfedateieintrag bekannt ist. Die neue Struktur wird mit den folgenden Mitgliedern erstellt: 
   
 ```cpp
 DTBLPAGE dtblpage;
@@ -58,7 +58,7 @@ TCHAR lpszLabel[n];
 TCHAR lpszComponent[n1];
 ```
 
-Wenn Sie einen Zeiger auf die resultierende Struktur aus dem **SizedDtblPage** -Makro als **DTBLPAGE** -Struktur Zeiger verwenden möchten, führen Sie die folgenden Schritte aus: 
+Führen Sie die folgende Gliederung aus, um einen Zeiger auf die resultierende Struktur des **SizedDtblPage-Makros** als **DTBLPAGE-Strukturzeiger** zu verwenden: 
   
 ```cpp
 lpDtblPage = (LPDTBLPAGE) &SizedDtblPage;

@@ -19,74 +19,74 @@ ms.locfileid: "33405996"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bei einer Nachrichtenanlage handelt es sich um zusätzliche Daten wie eine Datei, eine andere Nachricht oder ein OLE-Objekt, die Sie zusammen mit einer Nachricht senden oder speichern können. Jede Anlage verfügt über eine Auflistung von Eigenschaften, die Sie identifiziert und ihren Typ und ihre Darstellung beschreibt. Wie Empfänger kann nur auf Nachrichtenanlagen über die Nachricht zugegriffen werden, zu der Sie gehören. Damit eine Anlage verwendet werden kann, muss daher Ihre Nachricht geöffnet sein.
+Bei einer Nachrichtenanlage handelt es sich um einige zusätzliche Daten, z. B. eine Datei, eine andere Nachricht oder ein OLE-Objekt, die Sie zusammen mit einer Nachricht senden oder speichern können. Jede Anlage verfügt über eine Auflistung von Eigenschaften, die sie identifiziert und den Typ und die Art des Renderns beschreibt. Wie Empfänger können Nachrichtenanlagen nur über die Nachricht zugegriffen werden, zu der sie gehören. Damit eine Anlage verwendet werden kann, muss ihre Nachricht daher geöffnet sein.
   
 ## <a name="create-a-message-attachment"></a>Erstellen einer Nachrichtenanlage
   
-1. Rufen Sie die [IMessage:: createattach](imessage-createattach.md) -Methode der Nachricht auf, und führen Sie NULL als Schnittstellenbezeichner aus. **Createattach** gibt eine Zahl zurück, die die neue Anlage in der Nachricht eindeutig identifiziert. Die Anlagennummer wird in der **PR_ATTACH_NUM** ([pidtagattachnumber (](pidtagattachnumber-canonical-property.md))-Eigenschaft gespeichert und ist nur gültig, solange die Nachricht, die die Anlage enthält, geöffnet ist.
+1. Rufen Sie die [IMessage::CreateAttach-Methode](imessage-createattach.md) der Nachricht auf, und übergeben Sie NULL als Schnittstellenbezeichner. **CreateAttach** gibt eine Zahl zurück, die die neue Anlage innerhalb der Nachricht eindeutig identifiziert. Die Anlagennummer wird in der **PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) -Eigenschaft gespeichert und ist nur gültig, solange die Nachricht mit der Anlage geöffnet ist.
     
-2. Rufen Sie [IMAPIProp::](imapiprop-setprops.md) SetProps auf, um **PR_ATTACH_METHOD** ([pidtagattachmethod (](pidtagattachmethod-canonical-property.md)) festzulegen, um anzugeben, wie auf die Anlage zugegriffen wird. **PR_ATTACH_METHOD** ist erforderlich. Legen Sie den folgenden Wert fest: 
+2. Rufen [Sie IMAPIProp::SetProps](imapiprop-setprops.md) auf, um **PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md)) zu legen, um anzugeben, wie auf die Anlage zugegriffen werden soll. **PR_ATTACH_METHOD** erforderlich. Legen Sie es auf: 
     
-   - ATTACH_BY_VALUE, wenn die Anlage Binärdaten ist.
+   - ATTACH_BY_VALUE, wenn es sich bei der Anlage um Binärdaten handelt.
     
    - ATTACH_BY_REFERENCE, ATTACH_BY_REF_RESOLVE oder ATTACH_BY_REF_ONLY, wenn es sich bei der Anlage um eine Datei handelt.
     
-   - ATTACH_EMBEDDED_MSG, wenn die Anlage eine Nachricht ist.
+   - ATTACH_EMBEDDED_MSG, wenn es sich bei der Anlage um eine Nachricht handelt.
     
-   - ATTACH_OLE, wenn die Anlage ein OLE-Objekt ist.
+   - ATTACH_OLE, wenn es sich bei der Anlage um ein OLE-Objekt handelt.
     
-3. Legen Sie die entsprechende Eigenschaft für Anlagendaten fest:
+3. Legen Sie die entsprechende Anlagedateneigenschaft auf:
     
-   - **PR_ATTACH_DATA_BIN** ([Pidtagattachdatabinary (](pidtagattachdatabinary-canonical-property.md)) für binäre Daten und OLE 1-Objekte.
+   - **PR_ATTACH_DATA_BIN** ([PidTagAttachDataBinary](pidtagattachdatabinary-canonical-property.md)) für Binärdaten und OLE 1-Objekte.
     
-   - **PR_ATTACH_PATHNAME** ([Pidtagattachpathname (](pidtagattachpathname-canonical-property.md)) für Dateien.
+   - **PR_ATTACH_PATHNAME** ([PidTagAttachPathname](pidtagattachpathname-canonical-property.md)) für Dateien.
     
-   - **PR_ATTACH_DATA_OBJ** ([Pidtagattachdataobject (](pidtagattachdataobject-canonical-property.md)) für Nachrichten und OLE 2-Objekte.
+   - **PR_ATTACH_DATA_OBJ** ([PidTagAttachDataObject](pidtagattachdataobject-canonical-property.md)) für Nachrichten und OLE 2-Objekte.
     
-4. Legen Sie **PR_ATTACH_RENDERING** ([pidtagattachrendering (](pidtagattachrendering-canonical-property.md)) fest, um die grafische Darstellung der Anlage für Datei-oder Binäranlagen beizubehalten. Legen Sie Sie nicht für OLE-Objekte fest, die die Renderinginformationen intern oder für angefügte Nachrichten speichern. 
+4. Legen **PR_ATTACH_RENDERING** ([PidTagAttachRendering](pidtagattachrendering-canonical-property.md)) fest, um die grafische Darstellung der Anlage für Datei- oder binäre Anlagen zu speichern. Legen Sie sie nicht für OLE-Objekte fest, die die Renderinginformationen intern speichern, oder für angefügte Nachrichten. 
     
-5. Legen Sie **PR_RENDERING_POSITION** ([pidtagrenderingposition (](pidtagrenderingposition-canonical-property.md)) fest, um anzugeben, wo die Anlage angezeigt werden soll. **PR_RENDERING_POSITION** gilt nur für Clients, die die **PR_BODY** -Eigenschaft festlegen. Wenn Sie **PR_RTF_COMPRESSED**nur unterstützen, fügen Sie die folgenden Platzhalterinformationen in den komprimierten Stream ein:
+5. Legen **PR_RENDERING_POSITION** ([PidTagRenderingPosition](pidtagrenderingposition-canonical-property.md)) fest, um anzugeben, wo die Anlage angezeigt werden soll. **PR_RENDERING_POSITION** gilt nur für Clients, die die PR_BODY **festlegen.** Wenn Sie nur **PR_RTF_COMPRESSED** unterstützen, platzieren Sie die folgenden Platzhalterinformationen im komprimierten Datenstrom:
     
    `\objattph`
 
-   Um **PR_RENDERING_POSITION**festzulegen, weisen Sie eine Zahl, die einen ordinalen Offset in Zeichen darstellt, wobei das erste Zeichen von **PR_BODY** 0 ist, wenn Sie wissen möchten, wo in der Nachricht die Anlage gerendert wird, oder 0xFFFFFFFF, wenn Sie nicht Render Attachments in **PR_BODY**.
+   Weisen Sie zum Festlegen von **PR_RENDERING_POSITION** entweder eine Zahl zu, die einen Ordnungsversatz in Zeichen darstellt, wobei das erste Zeichen von **PR_BODY** 0 ist, wenn Sie wissen müssen, wo in der Nachricht die Anlage gerendert wird, oder 0xFFFFFFFF, wenn Sie Anlagen nicht innerhalb von **PR_BODY rendern.**
     
-6. Legen Sie **PR_ATTACH_FILENAME** ([pidtagattachfilename (](pidtagattachfilename-canonical-property.md)) fest, um den Kurznamen der Datei für eine Dateianlage und eine **PR\_-ATTACH_LONG_FILENAME** ([pidtagattachlongfilename (](pidtagattachlongfilename-canonical-property.md)) anzugeben, um den Namen der unterstützten Datei anzugeben. auf einer Plattform, die das Format für lange Dateinamen verarbeitet. Beide Eigenschaften sind optional. Wenn Sie jedoch **PR_ATTACH_LONG_FILENAME**festlegen, legen Sie auch **PR_ATTACH_FILENAME**fest. 
+6. Legen Sie **PR_ATTACH_FILENAME** ([PidTagAttachFilename](pidtagattachfilename-canonical-property.md)) fest, um den kurzen Namen der Datei für eine Dateianlage und **PR \_ ATTACH_LONG_FILENAME** ([PidTagAttachLongFilename](pidtagattachlongfilename-canonical-property.md)) anzugeben, um den Namen der Datei anzugeben, der auf einer Plattform unterstützt wird, die das lange Dateinamenformat verarbeitet. Beide Eigenschaften sind optional. Wenn Sie jedoch **PR_ATTACH_LONG_FILENAME** festlegen, legen Sie auch **PR_ATTACH_FILENAME.** 
     
-7. Legen Sie **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) fest, um den Namen für die Anlage anzugeben, die in einem Dialogfeld angezeigt werden kann. PR_DISPLAY_NAME ist optional. 
+7. Legen **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) fest, um den Namen der Anlage anzugeben, die in einem Dialogfeld angezeigt werden kann. PR_DISPLAY_NAME ist optional. 
     
-## <a name="set-prattachdatabin"></a>PR_ATTACH_DATA_BIN festlegen
+## <a name="set-pr_attach_data_bin"></a>Festlegen PR_ATTACH_DATA_BIN
   
-1. Rufen Sie [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) auf, um die Eigenschaft mit der **IStream** -Schnittstelle zu öffnen. 
+1. Rufen [Sie IMAPIProp::OpenProperty auf,](imapiprop-openproperty.md) um die Eigenschaft mit der **IStream-Schnittstelle zu** öffnen. 
     
-2. Wenn eine Datei die Daten enthält und Sie geöffnet ist oder wenn Sie eine explizite Kontrolle über die Puffergröße benötigen, rufen Sie **IStream:: Write** in einer Schleife auf, um die Daten im Stream zu platzieren. 
+2. Wenn eine Datei die Daten enthält und geöffnet ist oder Wenn Sie explizite Kontrolle über die Puffergröße benötigen, rufen Sie **IStream::Write** in einer Schleife auf, um die Daten in den Datenstrom zu platzieren. 
     
-3. Eine weitere Möglichkeit besteht darin, **OpenStreamOnFile** aufzurufen, um einen Stream für den Zugriff auf die Datendatei zu erstellen und dann die **IStream:: CopyTo** -Methode dieses Streams aufzurufen, um die Daten in den von **OpenProperty**zurückgegebenen Stream zu kopieren.
+3. Eine weitere Option ist das Aufrufen von **OpenStreamOnFile** zum Erstellen eines Datenstroms für den Zugriff auf die Datendatei und anschließendes Aufrufen der **IStream::CopyTo-Methode** dieses Datenstroms, um die Daten in den von **OpenProperty** zurückgegebenen Datenstrom zu kopieren.
     
-4. Rufen Sie die **IStream:: Commit** -Methode des neuen Streams auf. 
+4. Rufen Sie die **IStream::Commit-Methode des neuen Datenstroms** auf. 
     
-## <a name="set-prattachdataobj"></a>PR_ATTACH_DATA_OBJ festlegen
+## <a name="set-pr_attach_data_obj"></a>Festlegen PR_ATTACH_DATA_OBJ
   
-1. Rufen Sie **IMAPIProp:: OpenProperty** auf, um die Eigenschaft mit der **IStreamDocfile** -Schnittstelle zu öffnen, um einen Datenstrom zu erstellen, der mit strukturiertem Speicher funktioniert. **IStreamDocfile** wird von Nachrichtenspeicher Anbietern implementiert, um Clients eine leistungsstärkere Methode zum Speichern und Abrufen strukturierter Speicher bereitzustellen. Die **IStreamDocfile** -Schnittstelle ist mit **IStream**identisch, aber der Inhalt des Streams wird garantiert als strukturierter Speicher formatiert. Wenn dieser Aufruf erfolgreich ist, erstellen Sie den Stream mit den gleichen Schritten zum Festlegen von **PR_ATTACH_DATA_BIN**.
+1. Rufen **Sie IMAPIProp::OpenProperty auf,** um die Eigenschaft mit der **IStreamDocfile-Schnittstelle** zu öffnen, um einen Datenstrom zu erstellen, der mit strukturiertem Speicher funktioniert. **IStreamDocfile** wird von Nachrichtenspeicheranbietern implementiert, um Clients eine bessere Leistung zum Speichern und Abrufen von strukturiertem Speicher zu bieten. Die **IStreamDocfile-Schnittstelle** ist mit **IStream** identisch, aber der Inhalt des Datenstroms wird garantiert als strukturierter Speicher formatiert. Wenn dieser Aufruf erfolgreich ist, erstellen Sie den Datenstrom mit den gleichen Schritten, die für das Festlegen von **PR_ATTACH_DATA_BIN.**
     
-2. Wenn **OpenProperty** fehlschlägt: 
+2. Wenn **OpenProperty fehlschlägt:** 
     
-   1. Rufen **** Sie OpenProperty erneut an, um **IStorage**zu Fragen. 
+   1. Rufen **Sie OpenProperty** erneut auf, und fordern **Sie IStorage an.** 
       
-   2. Rufen Sie **StgOpenStorage** auf, um das OLE-Objekt zu öffnen und ein Storage-Objekt zurückzugeben. 
+   2. Rufen **Sie StgOpenStorage auf,** um das OLE-Objekt zu öffnen und ein Speicherobjekt zurückzukehren. 
       
-   3. Rufen Sie die **IStorage:: CopyTo** -Methode des zurückgegebenen Speicherobjekts auf, um das von **OpenProperty**zurückgegebene Speicherobjekt zu kopieren.
+   3. Rufen Sie die **IStorage::CopyTo-Methode** des zurückgegebenen Speicherobjekts auf, um in das von OpenProperty zurückgegebene **Speicherobjekt zu kopieren.**
       
-   4. Rufen Sie die **IStorage:: Commit** -Methode des neuen Speicherobjekts auf. 
+   4. Rufen Sie die **IStorage::Commit-Methode** des neuen Speicherobjekts auf. 
     
-## <a name="set-prattachpathname"></a>PR_ATTACH_PATHNAME festlegen
+## <a name="set-pr_attach_pathname"></a>Festlegen PR_ATTACH_PATHNAME
   
-1. Reservieren Sie eine [SPropValue](spropvalue.md) -Struktur, indem Sie das **ulPropTag** -Element auf **PR_ATTACH_PATHNAME** und den **Wert. LPSZ** -Member auf die Zeichenfolge festlegen, die den Dateinamen darstellt. 
+1. Weisen Sie [eine SPropValue-Struktur](spropvalue.md) zu, und setzen Sie das **element ulPropTag** auf **PR_ATTACH_PATHNAME** und das **Value.LPSZ-Element** auf die Zeichenzeichenfolge, die den Dateinamen darstellt. 
     
-2. Rufen Sie die [IMAPIProp::](imapiprop-setprops.md) SetProps-Methode der Anlage auf. 
+2. Rufen Sie die [IMAPIProp::SetProps-Methode der Anlage](imapiprop-setprops.md) auf. 
     
 > [!NOTE]
-> Wenn Ihre Plattform lange Dateinamen unterstützt, legen Sie sowohl **PR_ATTACH_PATHNAME** als auch **PR_ATTACH_LONG_PATHNAME**fest. Möglicherweise müssen Sie einen Betriebssystemaufruf ausführen, um den kurzen Dateinamen abzurufen. 
+> Wenn Ihre Plattform lange Dateinamen unterstützt, legen Sie sowohl PR_ATTACH_PATHNAME **als** auch **PR_ATTACH_LONG_PATHNAME.** Möglicherweise muss ein Betriebssystemaufruf ausgeführt werden, um den kurzen Dateinamen abzurufen. 
   
 ## <a name="see-also"></a>Siehe auch
 

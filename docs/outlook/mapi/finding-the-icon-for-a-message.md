@@ -21,14 +21,14 @@ ms.locfileid: "33409153"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
- **So suchen Sie nach dem Symbol für eine Nachricht**
+ **So suchen Sie das Symbol, das einer Nachricht zugeordnet ist**
   
-1. Rufen Sie die [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode der Nachricht auf, um Ihre **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md))-Eigenschaft abzurufen.
+1. Rufen Sie die [IMAPIProp::GetProps-Methode](imapiprop-getprops.md) der Nachricht auf, um die **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) abzurufen.
     
-2. Rufen Sie [MAPIOpenFormMgr](mapiopenformmgr.md) auf, um einen **IMAPIFormMgr** -Schnittstellenzeiger abzurufen. Übergeben Sie den **IMAPISession** -Zeiger im _pSession_ -Parameter. 
+2. Rufen [Sie MAPIOpenFormMgr auf,](mapiopenformmgr.md) um einen **IMAPIFormMgr-Schnittstellenzeiger** abzurufen. Übergeben Sie den **IMAPISession-Zeiger** im _pSession-Parameter._ 
     
-3. Rufen Sie [IMAPIFormMgr:: ResolveMessageClass](imapiformmgr-resolvemessageclass.md) auf, um einen **IMAPIFormInfo** -Schnittstellenzeiger abzurufen. 
+3. Rufen [Sie IMAPIFormMgr::ResolveMessageClass auf,](imapiformmgr-resolvemessageclass.md) um einen **IMAPIFormInfo-Schnittstellenzeiger** abzurufen. 
     
-4. Verwenden Sie den **IMAPIFormInfo** -Zeiger, um [IMAPIProp::](imapiprop-getprops.md) GetProps aufzurufen und die Eigenschaften **PR_ICON** ([pidtagicon (](pidtagicon-canonical-property.md)) und/oder **PR_MINI_ICON** ([pidtagminiicon (](pidtagminiicon-canonical-property.md)) abzurufen. 
+4. Verwenden Sie den **IMAPIFormInfo-Zeiger,** um [IMAPIProp::GetProps](imapiprop-getprops.md) aufrufen und die **Eigenschaften PR_ICON** ([PidTagIcon](pidtagicon-canonical-property.md)) und/oder **PR_MINI_ICON** ([PidTagMiniIcon](pidtagminiicon-canonical-property.md)) abzurufen. 
     
 

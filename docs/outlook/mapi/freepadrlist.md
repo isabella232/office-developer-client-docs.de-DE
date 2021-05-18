@@ -25,13 +25,13 @@ ms.locfileid: "33408642"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Zerstört eine [ADRLIST](adrlist.md) -Struktur und gibt zugeordneten Arbeitsspeicher frei, einschließlich des Arbeitsspeichers, der für alle Elementarrays und-Strukturen reserviert ist. 
+Zerstört eine [ADRLIST-Struktur](adrlist.md) und gibt den zugeordneten Arbeitsspeicher frei, einschließlich des für alle Memberarrays und -strukturen zugewiesenen Arbeitsspeichers. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 void FreePadrlist(
@@ -43,7 +43,7 @@ void FreePadrlist(
 
  _padrlist_
   
-> in Zeiger auf die **ADRLIST** -Struktur, die zerstört werden soll. 
+> [in] Zeiger auf die zu zerstörende **ADRLIST-Struktur.** 
     
 ## <a name="return-value"></a>Return value
 
@@ -51,9 +51,9 @@ None.
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Im Rahmen der Implementierung von **FreePadrlist**ruft MAPI die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion auf, um jeden Eintrag in der **ADRLIST** -Struktur freizugeben, bevor die gesamte Struktur freigegeben wird. Daher müssen alle diese Einträge den Zuordnungsregeln für die [ADRLIST](adrlist.md) -Struktur unter Verwendung eines einzelnen [MAPIAllocateBuffer](mapiallocatebuffer.md) -Aufrufs für die einzelnen Elementarrays und-Strukturen gefolgt sein. 
+Im Rahmen der Implementierung von **FreePadrlist** ruft MAPI die [MAPIFreeBuffer-Funktion](mapifreebuffer.md) auf, um jeden Eintrag in der **ADRLIST-Struktur** frei zu geben, bevor die vollständige Struktur frei wird. Daher müssen alle diese Einträge die Zuweisungsregeln für die [ADRLIST-Struktur](adrlist.md) befolgt haben, indem sie einen individuellen [MAPIAllocateBuffer-Aufruf](mapiallocatebuffer.md) für jedes Elementarray und jede Elementstruktur verwenden. 
   
-Weitere Informationen zum Zuweisen von Arbeitsspeicher für **ADRLIST** -und **SRowSet** -Strukturen finden Sie unter [Managing Memory for ADRLIST and SRowSet Structures](managing-memory-for-adrlist-and-srowset-structures.md). 
+Weitere Informationen zum Zuordnen von Arbeitsspeicher für **ADRLIST-** und **SRowSet-Strukturen** finden Sie unter [Managing Memory for ADRLIST and SRowSet Structures](managing-memory-for-adrlist-and-srowset-structures.md). 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -61,7 +61,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIABFunctions. cpp  <br/> |AddOneOffAddress  <br/> |MFCMAPI verwendet die **FreePadrlist** -Methode, um eine ADRLIST-Struktur freizugeben, die zum Hinzufügen einer einmaligen Adresse zu einer Nachricht erstellt wurde.  <br/> |
+|MAPIABFunctions.cpp  <br/> |AddOneOffAddress  <br/> |MFCMAPI verwendet die **FreePadrlist-Methode,** um eine ADRLIST-Struktur frei zu geben, die zum Hinzufügen einer einmal verwendeten Adresse zu einer Nachricht erstellt wurde.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

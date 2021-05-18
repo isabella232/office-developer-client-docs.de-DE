@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - Func1
 keywords:
-- func1-Funktion [Excel 2007]
+- func1-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: 801b14ef-0be8-4b97-919d-a9d413705d1c
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -22,7 +22,7 @@ ms.locfileid: "33408915"
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Beispiel für eine benutzerdefinierte Arbeitsblattfunktion zeigt die Rückgabe eines statischen String-Werts. Wenn generische. XLL geladen wird, wird diese Funktion registriert, sodass Sie vom Arbeitsblatt aufgerufen werden kann.
+Beispiel für eine benutzerdefinierte Arbeitsblattfunktion veranschaulicht die Rückgabe eines statischen Zeichenfolgenwerts. Wenn GENERIC.xll geladen wird, registriert es diese Funktion, sodass sie aus dem Arbeitsblatt aufgerufen werden kann.
   
 ```cs
 LPXLOPER12 WINAPI Func1(LPXLOPER12 px);
@@ -32,15 +32,15 @@ LPXLOPER12 WINAPI Func1(LPXLOPER12 px);
 
  _px_ (**LPXLOPER**)
   
-Dieses Argument wird ignoriert und dient nur dazu, Microsoft Excel auszulösen, um die Funktion aufzurufen.
+Dieses Argument wird ignoriert und dient nur zum Auslösen von Microsoft Excel zum Aufrufen der Funktion.
   
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
- **LPXLOPER12**: immer die Zeichenfolge "func1"
+ **LPXLOPER12**: Immer die Zeichenfolge "Func1"
   
 ### <a name="example"></a>Beispiel
 
-Den `\SAMPLES\GENERIC\GENERIC.C` Quellcode für diese Funktion finden Sie unter. 
+Den  `\SAMPLES\GENERIC\GENERIC.C` Quellcode für diese Funktion finden Sie unter. 
   
 ## <a name="see-also"></a>Siehe auch
 

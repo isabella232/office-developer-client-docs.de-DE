@@ -25,17 +25,17 @@ Hinzugefügte Version: Visio 2010
   
 ## <a name="syntax"></a>Syntax
 
-MSOTINT (* * *Color* * *, * * *deltaLum* * *) 
+MSOTINT(** *color* **, ** *deltaLum* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _color_ <br/> |Erforderlich  <br/> |**RGB** <br/> |Der standardmäßige RGB-Farbwert (Rot, Grün, Blau) oder eine Referenz auf eine Farbe.  <br/> |
-| _deltaLum_ <br/> |Erforderlich  <br/> |**Integer** <br/> |Die prozentuale Änderung in Richtung weiß (-100%) oder schwarz (100%) aus dem _Farbwert_ .  <br/> |
+| _deltaLum_ <br/> |Erforderlich  <br/> |**Integer** <br/> |Die prozentuale Änderung in Richtung Weiß (-100 %) oder schwarz (100 %) aus dem _Farbwert._  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Je näher der _Farbwert_ zu weiß oder schwarz ist, desto kleiner ist die Änderung des Farbtons, der von einem bestimmten _deltaLum_ -Wert erzeugt wird. 
+Je näher der  _Farbwert_ weiß oder schwarz ist, desto kleiner ist die Änderung des Farbtons, der durch einen bestimmten  _deltaLum-Wert erzeugt_ wird. 
   
 

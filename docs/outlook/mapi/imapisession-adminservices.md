@@ -25,7 +25,7 @@ ms.locfileid: "33405905"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt einen [IMsgServiceAdmin](imsgserviceadminiunknown.md) -Zeiger zurück, um Änderungen an den Nachrichtendiensten vorzunehmen. 
+Gibt einen [IMsgServiceAdmin-Zeiger zum](imsgserviceadminiunknown.md) Vornehmen von Änderungen an Nachrichtendiensten zurück. 
   
 ```cpp
 HRESULT AdminServices(
@@ -42,17 +42,17 @@ HRESULT AdminServices(
     
  _lppServiceAdmin_
   
-> Out Ein Zeiger auf einen Zeiger auf ein Nachrichtendienst-Verwaltungsobjekt.
+> [out] Ein Zeiger auf einen Zeiger auf ein Nachrichtendienstverwaltungsobjekt.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Ein Zeiger auf ein Nachrichtendienst-Verwaltungsobjekt wurde erfolgreich zurückgegeben.
+> Ein Zeiger auf ein Nachrichtendienstverwaltungsobjekt wurde erfolgreich zurückgegeben.
     
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Die **IMAPISession:: AdminServices** -Methode erstellt ein Nachrichtendienst-Verwaltungsobjekt, ein Objekt, das die **IMsgServiceAdmin** -Schnittstelle unterstützt und einen Zeiger zurückgibt. Mithilfe dieses Zeigers können Sie **IMsgServiceAdmin** -Methoden aufrufen, um einen beliebigen Nachrichtendienst im Sitzungsprofil zu ändern. Beachten Sie, dass diese Änderungen erst in der nächsten Sitzung wirksam werden. die aktuelle Sitzung ist nicht betroffen. 
+Die **IMAPISession::AdminServices-Methode** erstellt ein Nachrichtendienstverwaltungsobjekt, ein Objekt, das die **IMsgServiceAdmin-Schnittstelle** unterstützt und einen Zeiger zurückgibt. Mit diesem Zeiger können Sie **IMsgServiceAdmin-Methoden** aufrufen, um einen beliebigen Nachrichtendienst im Sitzungsprofil zu ändern. Beachten Sie, dass diese Änderungen erst in der nächsten Sitzung wirksam werden. die aktuelle Sitzung ist davon nicht betroffen. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -60,7 +60,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIStoreFunctions. cpp  <br/> |GetServerName  <br/> |MFCMAPI verwendet die **IMAPISession:: AdminServices** -Methode, um auf das Profil zuzugreifen, um den Servernamen zu lesen.  <br/> |
+|MAPIStoreFunctions.cpp  <br/> |GetServerName  <br/> |MFCMAPI verwendet die **IMAPISession::AdminServices-Methode,** um auf das Profil zu zugreifen, um den Servernamen zu lesen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

@@ -21,15 +21,15 @@ ms.locfileid: "32310171"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPI-Objekte können mithilfe von C++-Klassen oder C-Datenstrukturen implementiert werden, je nach Sprache und API-Satz, den ein Client oder Dienstanbieter verwendet. Dienstanbieter können in C oder C++ mit der MAPI-Dienstanbieter-Schnittstelle geschrieben werden. Clientanwendungen können auch C oder C++ verwenden. Wenn möglich, sollten Clients und Dienstanbieter, die die objektorientierte Programmierschnittstelle verwenden, C++ verwenden. 
+#A0 können mithilfe von C++-Klassen oder C-Datenstrukturen implementiert werden, abhängig von der Sprache und dem API-Satz, den ein Client oder Dienstanbieter verwendet. Dienstanbieter können in C oder C++ mit der #A0 geschrieben werden. Clientanwendungen können auch C oder C++ verwenden. Wenn möglich, sollten Clients und Dienstanbieter, die die objektorientierte Programmierschnittstelle verwenden, C++ verwenden. 
   
-C++ ist die bevorzugte Wahl, da MAPI eine objektorientierte Technologie ist und sich C++ leichter zur objektorientierten Entwicklung eignet. Der resultierende Code ist einfacher und einfacher zu verwalten. Die MAPI-Dokumentation wurde in erster Linie für C++-Entwickler geschrieben; Alle Syntaxbeschreibungen für die MAPI-Schnittstellenmethoden in diesem Verweis befinden sich in C++.
+C++ ist die bevorzugte Wahl, da MAPI eine objektorientierte Technologie ist und C++ sich leichter für objektorientierte Entwicklung eignet. Der resultierende Code ist einfacher und einfacher, was die Wartung vereinfacht. Die #A0 ist in erster Linie für C++-Entwickler geschrieben. Alle Syntaxbeschreibungen für die #A0 in dieser Referenz befinden sich in C++.
   
-Entwickler können Microsoft Visual Studio und Drittanbieter-Entwicklungstools verwenden, um Lösungen zu entwickeln, die MAPI aufrufen. Beachten Sie, dass Entwickler C oder nicht verwaltete C++, aber nicht verwalteten C++ verwenden sollten, um MAPI-Lösungen zu schreiben.
+Entwickler können Microsoft Visual Studio Und Drittanbieter-Entwicklungstools verwenden, um Lösungen zu entwickeln, die MAPI aufrufen. Beachten Sie, dass Entwickler C oder nicht verwaltetes C++ verwenden sollten, aber nicht verwaltetes C++ zum Schreiben von #A0 verwenden sollten.
   
-Wenn ein MAPI-Objekt implementiert wird, erstellt ein Client oder Dienstanbieter Code für alle Schnittstellenmethoden, Code für alle privaten Methoden, die für die Implementierung spezifisch sind, und Code zur Unterstützung privater Datenmember für die Verwaltung von Statusinformationen. Der Code für die Schnittstellenmethoden muss den von MAPI veröffentlichten Spezifikationen entsprechen, die das erwartete Verhalten dokumentieren. 
+Wenn ein MAPI-Objekt implementiert wird, erstellt ein Client oder Dienstanbieter Code für alle Schnittstellenmethoden, Code für alle privaten Methoden, die für die Implementierung spezifisch sind, und Code zur Unterstützung privater Datenm member für die Verwaltung von Statusinformationen. Der Code für die Schnittstellenmethoden muss den von MAPI veröffentlichten Spezifikationen entsprechen, die das erwartete Verhalten dokumentieren. 
   
-Es gibt viele Makros in der Headerdatei Mapidefs. h und OLE-Headerdateien, die von Clients und Dienstanbietern in beiden Sprachen verwendet werden können, um Sie bei der Definition von MAPI-Objekten zu unterstützen. Beispielsweise gibt es ein Makro, um die Methoden der einzelnen MAPI-Schnittstellen zu definieren. Das Makro zum Definieren der Methoden der [IUnknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx) -Schnittstelle wird in Mapidefs. h wie folgt angezeigt: 
+Die Headerdatei Mapidefs.h und die OLE-Headerdateien enthalten viele Makros, die Clients und Dienstanbieter in beiden Sprachen verwenden können, um sie bei ihren Definitionen von MAPI-Objekten zu unterstützen. Beispielsweise gibt es ein Makro, um die Methoden der einzelnen MAPI-Schnittstellen zu definieren. Das Makro zum Definieren der Methoden der [IUnknown-Schnittstelle](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx) wird in Mapidefs.h wie folgt angezeigt: 
   
 ```cpp
 #define MAPI_IUNKNOWN_METHODS(IPURE)          \
@@ -44,5 +44,5 @@ Es gibt viele Makros in der Headerdatei Mapidefs. h und OLE-Headerdateien, die v
 
 
 
-[Übersicht über MAPI-Objekte und-Schnittstellen](mapi-object-and-interface-overview.md)
+[Übersicht über das MAPI-Objekt und die Schnittstelle](mapi-object-and-interface-overview.md)
 

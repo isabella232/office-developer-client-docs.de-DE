@@ -25,13 +25,13 @@ ms.locfileid: "33406808"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt ein Property-Datenobjekt, also ein [IPropData](ipropdataimapiprop.md) -Objekt. 
+Erstellt ein Eigenschaftsdatenobjekt, d. h. ein [IPropData-Objekt.](ipropdataimapiprop.md) 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 SCODE CreateIProp(
@@ -48,19 +48,19 @@ SCODE CreateIProp(
 
  _lpInterface_
   
-> in Zeiger auf einen Schnittstellenbezeichner (IID) für das Eigenschaftendaten Objekt. Der gültige Schnittstellenbezeichner ist IID_IMAPIPropData. Das übergeben von NULL im _lpInterface_ -Parameter bewirkt außerdem, dass das im _lppPropData_ -Parameter zurückgegebene Property-Datenobjekt in die Standardschnittstelle für ein Datenobjekt der Eigenschaft umgewandelt wird. 
+> [in] Zeiger auf einen Schnittstellenbezeichner (Interface Identifier, IID) für das Eigenschaftsdatenobjekt. Der gültige Schnittstellenbezeichner wird IID_IMAPIPropData. Das Übergeben von NULL im  _lpInterface-Parameter_ bewirkt auch, dass das im  _lppPropData-Parameter_ zurückgegebene Eigenschaftsdatenobjekt in die Standardschnittstelle für ein Eigenschaftsdatenobjekt übertragen wird. 
     
  _lpAllocateBuffer_
   
-> in Zeiger auf die [MAPIAllocateBuffer](mapiallocatebuffer.md) -Funktion, die zum Reservieren von Arbeitsspeicher verwendet werden soll. 
+> [in] Zeiger auf die [MAPIAllocateBuffer-Funktion,](mapiallocatebuffer.md) die zum Zuordnen von Arbeitsspeicher verwendet werden soll. 
     
  _lpAllocateMore_
   
-> in Zeiger auf die [MAPIAllocateMore](mapiallocatemore.md) -Funktion, die zum Zuweisen von zusätzlichem Arbeitsspeicher verwendet werden soll. 
+> [in] Zeiger auf die [MAPIAllocateMore-Funktion,](mapiallocatemore.md) die zum Zuordnen von zusätzlichem Arbeitsspeicher verwendet werden soll. 
     
  _lpFreeBuffer_
   
-> in Zeiger auf die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion, die verwendet werden, um Arbeitsspeicher freizugeben. 
+> [in] Zeiger auf die [MAPIFreeBuffer-Funktion,](mapifreebuffer.md) die zum Freispeichern verwendet werden soll. 
     
  _lpvReserved_
   
@@ -68,7 +68,7 @@ SCODE CreateIProp(
     
  _lppPropData_
   
-> Out Zeiger auf einen Zeiger auf das zurückgegebene Eigenschaftendaten Objekt.
+> [out] Zeiger auf einen Zeiger auf das zurückgegebene Eigenschaftsdatenobjekt.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -80,8 +80,8 @@ MAPI_E_INTERFACE_NOT_SUPPORTED
   
 > Die angeforderte Schnittstelle wird für dieses Objekt nicht unterstützt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die _lpAllocateBuffer_-, _LpAllocateMore_-und _lpFreeBuffer_ -Eingabeparameter zeigen auf die [MAPIAllocateBuffer](mapiallocatebuffer.md)-, [MAPIAllocateMore](mapiallocatemore.md)-und [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktionen. Eine Clientanwendung, die **CreateIProp** aufruft, übergibt Zeiger auf die soeben benannten MAPI-Funktionen. ein Dienstanbieter übergibt die Zeiger an diese Funktionen, die er bei seinem Initialisierungsaufruf erhalten hat, oder wird mit einem Aufruf der [IMAPISupport:: GetMemAllocRoutines](imapisupport-getmemallocroutines.md) -Methode abgerufen. 
+Die _Eingabeparameter lpAllocateBuffer,_ _lpAllocateMore_ und _lpFreeBuffer_ verweisen auf die [Funktionen MAPIAllocateBuffer,](mapiallocatebuffer.md) [MAPIAllocateMore](mapiallocatemore.md)und [MAPIFreeBuffer.](mapifreebuffer.md) Eine Clientanwendung, die **CreateIProp** aufruft, übergibt Zeiger an die einfach benannten #A0 . Ein Dienstanbieter übergibt die Zeiger an diese Funktionen, die er in seinem Initialisierungsaufruf empfangen oder mit einem Aufruf der [IMAPISupport::GetMemAllocRoutines-Methode](imapisupport-getmemallocroutines.md) abgerufen hat. 
   
 

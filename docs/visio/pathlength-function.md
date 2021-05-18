@@ -25,23 +25,23 @@ Hinzugefügte Version: Visio 2010
   
 ## <a name="syntax"></a>Syntax
 
-PATHLENGTH (* * *section* * * * * *[, Segment]* * *) 
+PATHLENGTH(** *section* ** ** *[,segment]* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _section_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Abschnitt "Geometrie", der den Pfad darstellt, angegeben mit einer Referenz auf dessen Zelle "Path" (z. B. Geometrie1.Path).  <br/> |
-| _Segment_ <br/> |Optional  <br/> |**Integer** <br/> |Das auf 1 basierende Segment des zu messenden Pfads.  <br/> |
+| _segment_ <br/> |Optional  <br/> |**Integer** <br/> |Das auf 1 basierende Segment des zu messenden Pfads.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
  **Double**
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn _section_ oder _Segment_ nicht vorhanden ist, gibt Microsoft Visio #REF! zurück. 
+Wenn  _kein Abschnitt_ oder  _Segment_ vorhanden ist, gibt Microsoft Visio #REF! zurück. 
   
-Wenn Sie einen _Segment_ Wert angeben, gibt PATHLENGTH nur die Länge dieses Segments zurück. 
+Wenn Sie einen  _Segmentwert_ enthalten, gibt PATHLENGTH nur die Länge dieses Abschnitts zurück. 
   
 

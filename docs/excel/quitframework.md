@@ -22,7 +22,7 @@ ms.locfileid: "33408572"
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Framework-Bibliotheksfunktion, mit der das Initialisieren der Framework-Bibliothek aufgehoben wird, die die temporären **XLOPER**/ -**XLOPER12** -Speicherdaten Strukturen einfach neu initialisiert, die bereits zugewiesene Speicher freigeben. 
+Framework library function that uninitializes the Framework library, which simply re-initializes the temporary **XLOPER** /  **XLOPER12** memory data structures, freeing any memory that has already been allocated. 
   
 ```cs
 short WINAPI QuitFramework(void);

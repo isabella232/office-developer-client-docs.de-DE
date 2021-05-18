@@ -37,7 +37,7 @@ BOOKMARK FAR * lpbkPosition
 
  _lpbkPosition_
   
-> Out Zeiger auf den zurückgegebenen 32-Bit-Lesezeichenwert. Diese Textmarke kann später in einem Aufruf an die [IMAPITable:: SeekRow](imapitable-seekrow.md) -Methode übergeben werden. 
+> [out] Zeiger auf den zurückgegebenen 32-Bit-Lesezeichenwert. Diese Textmarke kann später in einem Aufruf der [IMAPITable::SeekRow-Methode übergeben](imapitable-seekrow.md) werden. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -49,23 +49,23 @@ MAPI_E_UNABLE_TO_COMPLETE
   
 > Der angeforderte Vorgang konnte nicht abgeschlossen werden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPITable:: CreateBookMark** -Methode kennzeichnet eine Tabellenposition durch Erstellen eines Werts, der als Textmarke bezeichnet wird. Eine Textmarke kann verwendet werden, um zu der durch die Textmarke identifizierten Position zurückzukehren. Die Lesezeichenposition ist dem Objekt in dieser Zeile in der Tabelle zugeordnet. 
+Die **IMAPITable::CreateBookmark-Methode** markiert eine Tabellenposition, indem ein Wert erstellt wird, der als Lesezeichen bezeichnet wird. Eine Textmarke kann verwendet werden, um an die position zurückzukehren, die durch die Textmarke identifiziert wird. Die Position mit Textmarken ist dem Objekt in dieser Zeile in der Tabelle zugeordnet. 
   
-Lesezeichen werden für Anlagen Tabellen und für Anlagen Tabellen Implementierungen von **CreateBookMark** Return MAPI_E_NO_SUPPORT nicht unterstützt. 
+Lesezeichen werden in Anlagentabellen nicht unterstützt, und Anlagentabellenimplementierungen von **CreateBookmark** geben MAPI_E_NO_SUPPORT. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Aufgrund der Arbeitsspeicherkosten für die Verwaltung von Cursorpositionen mit Lesezeichen können Sie die Anzahl der zu erstellende Textmarken begrenzen. Wenn Sie diese Nummer erreicht haben, geben Sie MAPI_E_UNABLE_TO_COMPLETE von allen nachfolg **** enden Aufrufen von CreateBookMark zurück.
+Beschränken Sie aufgrund der Speicherkosten für die Verwaltung von Cursorpositionen mit Textmarken die Anzahl der Lesezeichen, die Sie erstellen können. Wenn Sie diese Nummer erreichen, geben MAPI_E_UNABLE_TO_COMPLETE von allen nachfolgenden Aufrufen an **CreateBookmark zurück.**
   
-Manchmal verweist eine Textmarke auf eine Zeile, die sich nicht mehr in der Tabellenansicht befindet. Wenn ein Anrufer ein solches Lesezeichen verwendet, bewegen Sie den Cursor zur nächsten sichtbaren Zeile, und halten Sie dort an. 
+Manchmal verweist eine Textmarke auf eine Zeile, die sich nicht mehr in der Tabellenansicht befindet. Wenn ein Aufrufer ein solches Lesezeichen verwendet, verschieben Sie den Cursor zur nächsten sichtbaren Zeile, und halten Sie dort an. 
   
-Wenn der Aufrufer versucht, ein Lesezeichen zu verwenden, das auf eine nicht sichtbare Zeile zeigt, da es reduziert wurde, geben Sie MAPI_W_POSITION_CHANGED nach dem Bewegen der Textmarke zurück. Sie können die Textmarke entweder zu diesem Zeitpunkt oder in der **SetCollapseState** -Methode in die nächste sichtbare Zeile verschieben. Wenn Sie die Textmarke zu dem Zeitpunkt verschieben, zu dem die Zeile reduziert wird, müssen Sie ein Bit in der Textmarke aufbewahren, die genau angibt, wann das Lesezeichen verschoben wurde: seit der letzten Verwendung oder wenn es nie seit seiner Erstellung verwendet wurde. 
+Wenn der Aufrufer versucht, eine Textmarke zu verwenden, die auf eine nicht lesbare Zeile verweisen soll, da sie reduziert wurde, geben Sie MAPI_W_POSITION_CHANGED nach dem Verschieben der Textmarke zurück. Sie können die Textmarke entweder zu diesem Zeitpunkt oder bei einem Kollaps in der **SetCollapseState-Methode** in der nächsten sichtbaren Zeile neu positionieren. Wenn Sie die Textmarke zu dem Zeitpunkt verschieben, zu dem die Zeile reduziert wird, müssen Sie ein Bit in der Textmarke beibehalten, das genau angibt, wann die Textmarke verschoben wurde: seit der letzten Verwendung oder wenn sie seit der Erstellung nie verwendet wurde. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
- **CreateBookMark** reserviert Speicher für die erstellte Textmarke. Geben Sie die Ressourcen für das Lesezeichen frei, indem Sie die [IMAPITable:: FreeBookmark](imapitable-freebookmark.md) -Methode aufrufen. 
+ **CreateBookmark weist** dem erstellten Lesezeichen Arbeitsspeicher zu. Geben Sie die Ressourcen für die Textmarke frei, indem Sie die [IMAPITable::FreeBookmark-Methode](imapitable-freebookmark.md) aufrufen. 
   
 ## <a name="see-also"></a>Siehe auch
 

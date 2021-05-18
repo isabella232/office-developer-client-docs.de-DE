@@ -19,24 +19,24 @@ ms.locfileid: "33407193"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Wenn Sie Ihren Formularserver implementieren, benötigen Sie eine Eigenschaft für jede Information, die die Nachrichtenklasse benötigt. Diese Eigenschaften können vordefinierte MAPI-Eigenschaften oder benutzerdefinierte Eigenschaften sein, die Sie definieren. Weitere Informationen zum Arbeiten mit Eigenschaften finden Sie unter [Übersicht über die MAPI-Eigenschaft](mapi-property-overview.md).
+Wenn Sie den Formularserver implementieren, benötigen Sie eine Eigenschaft für alle Informationen, die Ihre Nachrichtenklasse benötigt. Diese Eigenschaften können vordefinierte MAPI-Eigenschaften oder benutzerdefinierte Eigenschaften sein, die Sie definieren. Weitere Informationen zum Arbeiten mit Eigenschaften finden Sie unter [MAPI Property Overview](mapi-property-overview.md).
   
-Die Formular Konfigurationsdatei enthält eine Liste der Eigenschaften, die der Formularserver für die Verwendung durch Clientanwendungen verfügbar macht, aber dies muss nicht die gesamte Liste von Eigenschaften sein, die von Ihrem Formularserver verwendet werden. Client Anwendungen verwenden in der Regel die verfügbar gemachten Eigenschaften, um Benutzern das Sortieren von Nachrichten in einem Ordner oder das Anpassen ihrer Schnittstellen zu ermöglichen.
+Die Formularkonfigurationsdatei enthält eine Liste der Eigenschaften, die ihr Formularserver für die Verwendung von Clientanwendungen verfügbar macht. Dies muss jedoch nicht die gesamte Liste der vom Formularserver verwendeten Eigenschaften sein. Clientanwendungen verwenden in der Regel die verfügbar gemachten Eigenschaften, damit Benutzer Nachrichten in einem Ordner sortieren oder ihre Schnittstellen auf irgendeine Weise anpassen können.
   
-MAPI verfügt über eine Reihe vordefinierter Eigenschaften, die für die meisten Anwendungen ausreichen. Es kann jedoch vorkommen, dass eine benutzerdefinierte Nachrichtenklasse eine Eigenschaft benötigt, die von MAPI nicht definiert wird. Sie können benutzerdefinierte Eigenschaften verwenden, um den MAPI-vordefinierten Satz von Eigenschaften für alle speziellen Informationen zu erweitern, die der Formularserver unterstützen muss.
+MAPI verfügt über einen großen Satz vordefinierter Eigenschaften, die für die meisten Anwendungen ausreichen. Es kommt jedoch vor, dass eine benutzerdefinierte Nachrichtenklasse eine Eigenschaft benötigt, die MAPI nicht definiert. Sie können benutzerdefinierte Eigenschaften verwenden, um den vordefinierten MapI-Eigenschaftensatz für alle speziellen Informationen zu erweitern, die ihr Formularserver unterstützen muss.
   
 Sie können eine der folgenden Methoden verwenden, um benutzerdefinierte Eigenschaften zu definieren:
   
-- Wählen Sie einen Namen für die Eigenschaft aus, und verwenden Sie die [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) -Methode, um ein Property-Tag dafür abzurufen. Die [IMAPIProp](imapipropiunknown.md) -Schnittstelle, über die Sie diese Methode aufrufen, stammt aus dem [IMessage](imessageimapiprop.md) -Zeiger, der beim Erstellen der Nachricht an den Formularserver übergeben wird. Beachten Sie, dass es sich bei dem Eigenschaftsnamen um eine Breitzeichen-Zeichenfolge handeln muss. 
+- Wählen Sie einen Namen für die Eigenschaft aus, und verwenden Sie die [IMAPIProp::GetIDsFromNames-Methode,](imapiprop-getidsfromnames.md) um ein Eigenschaftstag dafür zu erhalten. Die [IMAPIProp-Schnittstelle,](imapipropiunknown.md) über die Sie diese Methode aufrufen, stammt vom [IMessage-Zeiger,](imessageimapiprop.md) der beim Erstellen der Nachricht an den Formularserver übergeben wird. Beachten Sie, dass der Eigenschaftenname eine Zeichenfolge mit breitem Zeichen sein muss. 
     
-- Definieren Sie selbst ein benutzerdefiniertes Property-Tag. Benutzerdefinierte Eigenschaftstags müssen sich im Range 0x6800 bis 0x7BFF befinden. Eigenschaften in diesem Bereichen sind Nachrichtenklassen spezifisch.
+- Definieren Sie selbst ein benutzerdefiniertes Eigenschaftentag. Benutzerdefinierte Eigenschaftstags müssen sich im Bereich von 0x6800 bis 0x7BFF. Eigenschaften in diesem Bereich sind nachrichtenklassenspezifisch.
     
-Weitere Informationen zum Definieren von benutzerdefinierten Eigenschaften finden Sie unter [Definieren neuer MAPI-Eigenschaften](defining-new-mapi-properties.md).
+Weitere Informationen zum Definieren benutzerdefinierter Eigenschaften finden Sie unter [Defining New MAPI Properties](defining-new-mapi-properties.md).
   
 > [!NOTE]
-> Formularserver mit einem Nachrichtentext verwenden häufig die **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md))-Eigenschaft, um Sie zu speichern. Wenn in Ihrem Formularserver **PR_RTF_COMPRESSED**verwendet wird, sollte außerdem sichergestellt werden, dass die **PR_BODY** ([pidtagbody (](pidtagbody-canonical-property.md))-Eigenschaft eine nur-Text-Version des Nachrichtentexts enthält, falls die resultierende Nachricht von einem Client gelesen wird, der Rich-Text nicht unterstützt. Format (RTF)-Nachrichtentext. 
+> Formularserver mit einem Nachrichtentext verwenden häufig die **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) -Eigenschaft, um sie zu speichern. Wenn ihr Formularserver **PR_RTF_COMPRESSED** verwendet, sollte er auch sicherstellen, dass die **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md))-Eigenschaft eine text only-Version des Nachrichtentexts enthält, falls die resultierende Nachricht von einem Client gelesen wird, der #A0 (Rich Text Format) nicht unterstützt. 
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Entwickeln von MAPI-Formular Servern](developing-mapi-form-servers.md)
+- [Entwickeln von MAPI-Formularservern](developing-mapi-form-servers.md)
 

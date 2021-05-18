@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 9e36e0d9-a28b-5978-0e23-f76e1bf506b5
-description: In diesem Thema wird gezeigt, wie die TZREG-Struktur aus dem beibehaltenen Format gelesen wird, das in der binären Eigenschaft Pidlidtimezonestruct (gespeichert ist.
+description: In diesem Thema wird gezeigt, wie Sie die TZREG-Struktur aus dem in der binären Eigenschaft PidLidTimeZoneStruct gespeicherten dauerhaften Format lesen.
 ms.openlocfilehash: f59251ebc980ca10f4ddce76b34e700bc430540a
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.locfileid: "32317654"
 ---
 # <a name="parse-a-stream-from-a-binary-property-to-read-the-tzreg-structure"></a>Analysieren eines Streams aus einer binären Eigenschaft zum Lesen der TZREG-Struktur
 
-In diesem Thema wird gezeigt, wie die [TZREG](tzreg.md) -Struktur aus dem beibehaltenen Format gelesen wird, das in der binären Eigenschaft [pidlidtimezonestruct (](https://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx)gespeichert ist.
+In diesem Thema wird gezeigt, wie Sie die [TZREG-Struktur](tzreg.md) aus dem in der binären Eigenschaft [PidLidTimeZoneStruct](https://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx)gespeicherten dauerhaften Format lesen.
   
 ```cpp
 TZREG* BinToTZREG(ULONG cbReg, LPBYTE lpbReg)  

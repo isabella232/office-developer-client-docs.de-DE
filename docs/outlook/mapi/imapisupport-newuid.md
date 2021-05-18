@@ -25,7 +25,7 @@ ms.locfileid: "33406997"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt eine neue [MAPIUID](mapiuid.md) -Struktur, die als eindeutiger Bezeichner verwendet werden soll. 
+Erstellt eine neue [MAPIUID-Struktur,](mapiuid.md) die als eindeutiger Bezeichner verwendet werden soll. 
   
 ```cpp
 HRESULT NewUID(
@@ -37,21 +37,21 @@ LPMAPIUID lpMuid
 
  _lpMuid_
   
-> Ein Zeiger auf die neue **MAPIUID** -Struktur. 
+> Ein Zeiger auf die neue **MAPIUID-Struktur.** 
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die neue **MAPIUID** -Struktur wurde erstellt. 
+> Die neue **MAPIUID-Struktur** wurde erstellt. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPISupport:: NewUID** -Methode wird für alle Support-Objekte implementiert. Dienstanbieter und Nachrichtendienste rufen **NewUID** auf, wenn Sie einen langfristigen eindeutigen Bezeichner generieren müssen. Ein Nachrichtenspeicher Anbieter kann beispielsweise **NewUID** aufrufen, um eine **MAPIUID** abzurufen, die in die **PR_SEARCH_KEY** ([pidtagsearchkey (](pidtagsearchkey-canonical-property.md))-Eigenschaft einer neu erstellten Nachricht eingefügt werden soll.
+Die **IMAPISupport::NewUID-Methode** wird für alle Supportobjekte implementiert. Dienstanbieter und Nachrichtendienste rufen **NewUID** auf, wenn sie einen langfristigen eindeutigen Bezeichner generieren müssen. Ein Nachrichtenspeicheranbieter kann beispielsweise **NewUID** aufrufen, um eine **MAPIUID** zu erhalten, die in der **PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md))-Eigenschaft einer neu erstellten Nachricht gespeichert werden soll.
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Verwechseln Sie die **MAPIUID** -Struktur nicht, die Sie bei der Anmeldung mit den **MAPIUID** -Strukturen registrieren, die von der **NewUID** -Methode erstellt werden. Die **MAPIUID** -Struktur, die Sie beim Aufrufen der [IMAPISupport:: SetProviderUID](imapisupport-setprovideruid.md) -Methode registrieren, stellt das Adressbuch oder der Nachrichtenspeicher Anbieter in MAPI dar und dient zur Unterscheidung von Eintrags Bezeichnern, die von verschiedenen Anbietern erstellt werden. Diese **MAPIUID** -Struktur sollte hart codiert und nicht über einen Aufruf von **NewUID**abgerufen werden.
+Verwechseln Sie nicht die **MAPIUID-Struktur,** die Sie bei der Anmeldung registrieren, mit den **MAPIUID-Strukturen,** die die **NewUID-Methode** erstellt. Die **MAPIUID-Struktur,** die Sie beim Aufrufen der [IMAPISupport::SetProviderUID-Methode](imapisupport-setprovideruid.md) registrieren, stellt Ihren Adressbuch- oder Nachrichtenspeicheranbieter für MAPI dar und wird verwendet, um Eintragsbezeichner zu unterscheiden, die von verschiedenen Anbietern erstellt werden. Diese **MAPIUID-Struktur** sollte hart codiert sein und nicht über einen Aufruf von **NewUID erhalten werden.**
   
 ## <a name="see-also"></a>Siehe auch
 

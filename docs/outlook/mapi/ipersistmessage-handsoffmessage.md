@@ -25,7 +25,7 @@ ms.locfileid: "32309716"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bewirkt, dass das Formular die aktuelle Nachricht freigibt.
+Bewirkt, dass das Formular seine aktuelle Nachricht veröffentlicht.
   
 ```cpp
 HRESULT HandsOffMessage( void );
@@ -39,25 +39,25 @@ Keine
 
 S_OK 
   
-> Die Nachricht wurde erfolgreich veröffentlicht.
+> Die Nachricht wurde erfolgreich freigegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Formular Übergang in zwei HandsOff-Zustände:
+Formulare werden in zwei HandsOff-Zustände übergewechselt:
   
 - [HandsOffAfterSave](handsoffaftersave-state.md)
     
-- [Status "handsofffromnormal](handsofffromnormal-state.md)
+- [HandsOffFromNormal](handsofffromnormal-state.md)
     
-Wenn sich ein Formular in einem dieser Zustände befindet, wird es permanent gespeichert. 
+Wenn sich ein Formular in einem dieser Zustände befindet, wird es dauerhaft gespeichert. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Wenn ein Formular Betrachter die **IPersistMessage:: HandsOffMessage** -Methode aufruft, während sich das Formular im Status " [Normal](normal-state.md) " oder "noscribble" befindet, rufen Sie **HandsOffMessage** für jede in der aktuellen Nachricht eingebettete Nachricht rekursiv auf und [](noscribble-state.md) [ IPersistStorage:: HandsOffStorage](https://msdn.microsoft.com/library/1e5ef26f-d8e7-4fa6-bfc4-19dace35314d.aspx) -Methode für jedes OLE-Objekt, das in die aktuelle Nachricht eingebettet ist. Geben Sie dann die aktuelle Nachricht und alle eingebetteten Nachrichten und OLE-Objekte frei. Wenn sich das Formular im Normal Zustand befand, wechseln Sie zum Status "handsofffromnormal-Zustand. Wenn sich das Formular im noScribble-Zustand befand, wechseln Sie zum HandsOffAfterSave-Zustand. Rufen Sie nach erfolgreichem Übergang die [IUnknown:: Release](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx) -Methode der Nachricht auf, und geben Sie S_OK zurück. 
+Wenn ein Formularbetrachter die **IPersistMessage::HandsOffMessage-Methode** aufruft, während sich Ihr Formular im Normal- oder [NoScribble-Zustand](noscribble-state.md) befindet, rufen Sie für jede in die aktuelle Nachricht eingebettete Nachricht und die [IPersistStorage::HandsOffStorage-Methode](https://msdn.microsoft.com/library/1e5ef26f-d8e7-4fa6-bfc4-19dace35314d.aspx) für jedes in die aktuelle Nachricht eingebettete OLE-Objekt rekursiv **HandsOffMessage** auf. [](normal-state.md) Geben Sie dann die aktuelle Nachricht und alle eingebetteten Nachrichten und OLE-Objekte frei. Wenn ihr Formular den Status Normal hatte, müssen Sie zum Status HandsOffFromNormal überwechseln. Wenn ihr Formular den Status "NoScribble" hatte, gehen Sie in den Status HandsOffAfterSave. Rufen Sie nach einem erfolgreichen Übergang die [IUnknown::Release-Methode](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx) der Nachricht auf, und geben Sie S_OK. 
   
-Wenn ein Formular-Viewer **HandsOffMessage** aufruft, während sich Ihr Formular in einem der HandsOff-Zustände befindet, geben Sie E_UNEXPECTED zurück. 
+Wenn ein Formularbetrachter **HandsOffMessage aufruft,** während sich Ihr Formular in einem der HandsOff-Zustände befindet, geben Sie E_UNEXPECTED. 
   
-Weitere Informationen zu den verschiedenen Status eines Formulars finden Sie unter [Formular Status](form-states.md). Weitere Informationen zum Arbeiten mit dem HandsOff-Status von Speicherobjekten finden Sie unter der [IPersistStorage:: HandsOffStorage](https://msdn.microsoft.com/library/1e5ef26f-d8e7-4fa6-bfc4-19dace35314d.aspx) -Methode. 
+Weitere Informationen zu den verschiedenen Zuständen eines Formulars finden Sie unter [Formularzustände](form-states.md). Weitere Informationen zum Arbeiten mit dem HandsOff-Status von Speicherobjekten finden Sie unter [der IPersistStorage::HandsOffStorage-Methode.](https://msdn.microsoft.com/library/1e5ef26f-d8e7-4fa6-bfc4-19dace35314d.aspx) 
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -66,5 +66,5 @@ Weitere Informationen zu den verschiedenen Status eines Formulars finden Sie unt
 [IPersistMessage : IUnknown](ipersistmessageiunknown.md)
 
 
-[Formular Status](form-states.md)
+[Formularzustände](form-states.md)
 

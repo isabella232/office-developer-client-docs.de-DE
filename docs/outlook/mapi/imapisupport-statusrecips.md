@@ -25,7 +25,7 @@ ms.locfileid: "33408768"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Generiert Unzustellbarkeitsberichte.
+Generiert Übermittlungs- und Nicht-Lieferberichte.
   
 ```cpp
 HRESULT StatusRecips(
@@ -38,11 +38,11 @@ LPADRLIST lpRecipList
 
  _lpMessage_
   
-> in Ein Zeiger auf die Nachricht, für die der Bericht generiert werden soll.
+> [in] Ein Zeiger auf die Nachricht, für die der Bericht generiert werden soll.
     
  _lpRecipList_
   
-> in Ein Zeiger auf eine [ADRLIST](adrlist.md) -Struktur, die die Empfänger der Nachricht beschreibt, auf die von _lpMessage_verwiesen wird.
+> [in] Ein Zeiger auf eine [ADRLIST-Struktur,](adrlist.md) die die Empfänger der Nachricht beschreibt, auf die von _lpMessage verwiesen wird._
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -52,21 +52,21 @@ S_OK
     
 MAPI_W_ERRORS_RETURNED 
   
-> Der Anruf war insgesamt erfolgreich, aber es gibt keine Empfängeroptionen für diesen Empfängertyp. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich behandelt werden. Verwenden Sie zum Testen dieser Warnung das **HR_FAILED** -Makro. Weitere Informationen finden Sie unter [Verwenden von Makros zur Fehlerbehandlung](using-macros-for-error-handling.md).
+> Der Anruf war insgesamt erfolgreich, es gibt jedoch keine Empfängeroptionen für diesen Empfängertyp. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich behandelt werden. Verwenden Sie zum Testen dieser Warnung das **HR_FAILED** Makro. Weitere Informationen finden Sie unter [Using Macros for Error Handling](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPISupport:: StatusRecips** -Methode wird für Support Objekte des Transportanbieters implementiert. Transport Anbieter rufen **StatusRecips** auf, um anzufordern, dass MAPI einen Zustellungs-oder Unzustellbarkeitsbericht an eine Gruppe von einem oder mehreren Empfängern einer Nachricht sendet. 
+Die **IMAPISupport::StatusRecips-Methode** wird für Unterstützungsobjekte des Transportanbieters implementiert. Transportanbieter rufen **StatusRecips auf,** um zu fordern, dass MAPI einen Zustellungs- oder Unzustelldienstbericht an einen oder mehrere Empfänger einer Nachricht sendet. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Sie können **StatusRecips** während der Verarbeitung einer Nachricht mehrmals aufrufen. Wenn Sie jedoch **StatusRecips** für eine offene Nachricht aufrufen, sollten Sie alle zugestellten und nicht zugestellten Informationen für die Nachrichtenempfänger erfassen und **StatusRecips** für diese Empfängerliste aufrufen. Ein einzelner Sammlungspunkt ist wichtig, da mehrere **StatusRecips** -Aufrufe für einen Empfänger dazu führen können, dass mehrere identische Berichte gesendet werden. 
+Sie können **StatusRecips während** der Verarbeitung einer Nachricht mehrmals aufrufen. Wenn Sie **statusRecips** jedoch für eine geöffnete Nachricht aufrufen, tun Sie ihr Bestes, um alle Übermittlungs- und Nichtzustellinformationen für die Nachrichtenempfänger zu sammeln und **StatusRecips** für diese Empfängerliste anzurufen. Ein einzelner Sammlungspunkt ist wichtig, da mehrere **StatusRecips-Aufrufe** für einen Empfänger dazu führen können, dass mehrere identische Berichte gesendet werden. 
   
-Speichern von Eigenschaften, die sich auf die Nachrichtenübermittlung oder Nichtübermittlung beziehen, in der **ADRLIST** -Struktur, die durch den _lpRecipList_ -Parameter angegeben wird. Eine vollständige Liste der erforderlichen und optionalen Eigenschaften für Zustellungsberichte und Unzustellbarkeitsberichte finden Sie unter erforderliche Eigenschaften für [Berichtsnachrichten](required-report-message-properties.md) und [optionale Berichtnachrichten Eigenschaften](optional-report-message-properties.md). 
+Store eigenschaften, die sich auf die Nachrichtenzustellung oder Nichtzustellung in der **adrlist-Struktur** beziehen, die durch den _lpRecipList-Parameter angegeben_ wird. Eine vollständige Liste der erforderlichen und optionalen Eigenschaften für Übermittlungsberichte und Nicht-Lieferberichte finden Sie unter [Required Report Message Properties](required-report-message-properties.md) und Optional Report Message [Properties](optional-report-message-properties.md). 
   
-Zuweisen von Arbeitsspeicher für die **ADRLIST** -Struktur in _LpRecipList_ mithilfe der [MAPIAllocateBuffer](mapiallocatebuffer.md) -und [MAPIAllocateMore](mapiallocatemore.md) -Funktionen. MAPI gibt den Arbeitsspeicher frei, indem die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion nur aufgerufen wird, wenn **StatusRecips** erfolgreich ausgeführt wird. 
+Zuordnen von Arbeitsspeicher für die **ADRLIST-Struktur** in _lpRecipList_ mithilfe der [Funktionen MAPIAllocateBuffer](mapiallocatebuffer.md) und [MAPIAllocateMore.](mapiallocatemore.md) MAPI gibt den Speicher frei, indem die [MAPIFreeBuffer-Funktion](mapifreebuffer.md) nur dann aufruft, wenn **StatusRecips erfolgreich** ist. 
   
-Eine Übersicht über Zusteller-und Unzustellbarkeitsberichte finden Sie unter [MAPI Report Messages](mapi-report-messages.md).
+Eine Übersicht über Zustellungs- und Nicht-Lieferberichte finden Sie unter [MAPI Report Messages](mapi-report-messages.md).
   
 ## <a name="see-also"></a>Siehe auch
 

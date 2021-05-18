@@ -39,15 +39,15 @@ Keine
 
 S_OK 
   
-> Das Formular enthält Änderungen, die seit dem letzten Speichern vorgenommen wurden.
+> Das Formular hat Änderungen, die seit dem letzten Speichern vorgenommen wurden.
     
 S_FALSE 
   
-> Das Formular verfügt nicht über Änderungen, die seit dem letzten Speichern vorgenommen wurden.
+> Das Formular enthält keine Änderungen, die seit dem letzten Speichern vorgenommen wurden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Formular Betrachter rufen die **IPersistMessage:: IsDirty** -Methode auf, um zu bestimmen, ob die Nachricht nicht gespeicherte Daten enthält. 
+Formularbetrachter rufen die **IPersistMessage::IsDirty-Methode** auf, um zu bestimmen, ob die Nachricht nicht gespeicherte Daten enthält. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,5 @@
 ---
-title: Abschnitt "MapiSvc. inf [Hilfedatei Zuordnungen]"
+title: MapiSvc.inf [Help File Mappings] Section
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,17 +15,17 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33407557"
 ---
-# <a name="mapisvcinf-help-file-mappings-section"></a>Abschnitt "MapiSvc. inf [Hilfedatei Zuordnungen]"
+# <a name="mapisvcinf-help-file-mappings-section"></a>MapiSvc.inf [Help File Mappings] Section
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Der Abschnitt **[Help File Mappings]** enthält Einträge, die jeweils einen Nachrichtendienst der Datei zuordnen, die Hilfe für vom Dienst generierte Fehler bereitstellt. Die Einträge in diesem Abschnitt verwenden das folgende Format: 
+Der **Abschnitt [Hilfedateizuordnungen]** enthält Einträge, die jeweils einen Nachrichtendienst der Datei zuordnen, die Hilfe für vom Dienst generierte Fehler bietet. Einträge in diesem Abschnitt verwenden das folgende Format: 
   
- **[Hilfedatei Zuordnungen]** _Name des Nachrichtendiensts_  =   _Name der Hilfedatei_
+ **[Hilfedateizuordnungen]** _Name der Hilfedatei_ des  =   _Nachrichtendiensts_
   
-Der Name des Nachrichtendiensts ist der Name des installierten Nachrichtendiensts. der Name der Hilfedatei ist der Name der Datei, in der sich die Fehlerinformationen befinden. Das folgende Beispiel zeigt einen typischen Abschnitt **[Help File Mappings]** , der Einträge für drei Dienste enthält: MAPI, den MsgService-Dienst und den MS-Dienst. 
+Der Name des Nachrichtendiensts ist der Name des installierten Nachrichtendiensts. Der Name der Hilfedatei ist der Name der Datei, in der sich die Fehlerinformationen befinden. Das folgende Beispiel zeigt einen typischen **Abschnitt [Hilfedateizuordnungen],** der Einträge für drei Dienste enthält: MAPI, der MsgService-Dienst und der MS-Dienst. 
   
 ```cpp
 [Help File Mappings]

@@ -25,11 +25,11 @@ ms.locfileid: "33406780"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von Zeitwerten, die zum Beschreiben einer Eigenschaft vom Typ PT_MV_SYSTIME verwendet werden.
+Enthält ein Array von Zeitwerten, die zum Beschreiben einer Eigenschaft vom Typ PT_MV_SYSTIME.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SDateTimeArray
@@ -40,19 +40,19 @@ typedef struct _SDateTimeArray
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cValues**
   
-> Die Anzahl der Werte im Array, auf die durch das **lpft** -Element verwiesen wird. 
+> Anzahl der Werte im Array, auf die das **lpft-Element verweist.** 
     
  **lpft**
   
-> Zeiger auf ein Array von [FILETIME](filetime.md) -Strukturen, die die Zeitwerte enthalten. 
+> Zeiger auf ein Array von [FILETIME-Strukturen,](filetime.md) die die Zeitwerte enthalten. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Weitere Informationen zu PT_MV_SYSTIME finden Sie unter [Liste der Eigenschaftstypen](property-types.md).
+Weitere Informationen zu PT_MV_SYSTIME finden Sie unter [List of Property Types](property-types.md).
   
 ## <a name="see-also"></a>Siehe auch
 

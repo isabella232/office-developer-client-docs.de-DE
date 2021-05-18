@@ -25,13 +25,13 @@ ms.locfileid: "33406017"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Dupliziert ein Eigenschafts Wertarray in einem einzelnen MAPI-Blockspeicher, der die Vorgänge der [ScCopyProps](sccopyprops.md) -und [ScCountProps](sccountprops.md) -Funktionen kombiniert. 
+Dupliziert ein Eigenschaftswertarray in einem einzelnen Block MAPI-Speicher, der die Vorgänge der [Funktionen ScCopyProps](sccopyprops.md) und [ScCountProps](sccountprops.md) kombiniert. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 SCODE ScDupPropset(
@@ -46,19 +46,19 @@ SCODE ScDupPropset(
 
  _cprop_
   
-> in Die Anzahl der Eigenschaftswerte im durch den _rgprop_ -Parameter angegebenen Array. 
+> [in] Anzahl der Eigenschaftswerte im Array, das durch den  _rgprop-Parameter angegeben_ wird. 
     
  _rgprop_
   
-> in Zeiger auf ein Array von [SPropValue](spropvalue.md) -Strukturen, die die Eigenschaftswerte definieren, die dupliziert werden sollen. 
+> [in] Zeiger auf ein Array von [SPropValue-Strukturen,](spropvalue.md) die die eigenschaftswerte definieren, die dupliziert werden sollen. 
     
  _lpAllocateBuffer_
   
-> in Zeiger auf die [MAPIAllocateBuffer](mapiallocatebuffer.md) -Funktion, die zum Zuweisen von Arbeitsspeicher für das duplizierte Array verwendet werden soll. 
+> [in] Zeiger auf die [MAPIAllocateBuffer-Funktion,](mapiallocatebuffer.md) die zum Zuordnen von Arbeitsspeicher für das duplizierte Array verwendet werden soll. 
     
  _prgprop_
   
-> Out Zeiger auf die Anfangsposition im Arbeitsspeicher, in der das zurückgegebene duplizierte Array von **SPropValue** -Strukturen gespeichert wird. 
+> [out] Zeiger auf die Ausgangsposition im Arbeitsspeicher, an der das zurückgegebene duplizierte Array von **SPropValue-Strukturen** gespeichert ist. 
     
 ## <a name="return-value"></a>Rückgabewert
 

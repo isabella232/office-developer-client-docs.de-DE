@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33407074"
 ---
-# <a name="propsmtpssl"></a>PROP_SMTP_SSL
+# <a name="prop_smtp_ssl"></a>PROP_SMTP_SSL
 
 Gibt an, ob das SSL-Protokoll (Secure Socket Layer) für das SMTP-Konto verwendet werden soll.
   
@@ -23,13 +23,13 @@ Gibt an, ob das SSL-Protokoll (Secure Socket Layer) für das SMTP-Konto verwende
 |||
 |:-----|:-----|
 |Kennung:  <br/> |0x0202  <br/> |
-|Eigenschafts:  <br/> |PT_DWORD  <br/> |
-|Property-Tag:  <br/> |0x02020003  <br/> |
-|Access  <br/> |Schreibgeschützt  <br/> |
+|Eigenschaftstyp:  <br/> |PT_DWORD  <br/> |
+|Eigenschaftstag:  <br/> |0x02020003  <br/> |
+|Zugriff:  <br/> |Schreibgeschützt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Ein Nullwert besagt, dass die SSL-Verschlüsselung nicht verwendet wird, andernfalls wird SSL-Verschlüsselung verwendet.
+Ein Nullwert bedeutet, dass keine SSL-Verschlüsselung verwendet wird, andernfalls die SSL-Verschlüsselung.
   
 ## <a name="see-also"></a>Siehe auch
 

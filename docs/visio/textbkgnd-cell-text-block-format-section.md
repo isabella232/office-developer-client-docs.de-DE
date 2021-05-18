@@ -20,25 +20,25 @@ ms.locfileid: "33406542"
 
 Legt die Farbe des Texthintergrunds für ein Shape fest.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die Zelle TextBkgnd-Zelle kann einen beliebigen Wert von 0 bis 24 oder 255 haben. Die Werte 0 und 255 ( *visTxtBlklOpaque*) deuten auf einen transparenten Texthintergrund hin. 
+Die Zelle TextBkgnd kann einen beliebigen Wert zwischen 0 und 24 oder 255 haben. Die Werte 0 und 255 ( *visTxtBlklOpaque*) weisen beide auf einen transparenten Texthintergrund hin. 
   
-Wenn Sie eine benutzerdefinierte Farbe eingeben möchten, verwenden Sie die RGB-oder die GSL-Funktion plus eine, beispielsweise RGB (255127255) + 1. Der Wert einer benutzerdefinierten Farbe ist die RGB-Farbe, und RGB ( *r, g, b*) + 1 anstelle einer Zahl wird im ShapeSheet-Fenster angezeigt. Bei numerischen Vorgängen haben benutzerdefinierte Farben Werte von 25 und höher. 
+Verwenden Sie zum Eingeben einer benutzerdefinierten Farbe die RGB- oder HSL-Funktion plus eine , z. B. RGB(255.127.255)+1. Der Wert einer benutzerdefinierten Farbe ist die RGB-Farbe, und RGB( *r, g, b*)+1 anstelle einer Zahl wird im ShapeSheet-Fenster angezeigt. Bei Verwendung in numerischen Vorgängen haben benutzerdefinierte Farben Werte von 25 und höher. 
   
 Die Transparenz der Texthintergrundfarbe können Sie in der Zelle TextBkgnd Trans festlegen.
   
-Wenn Sie einen Verweis auf die Zelle Zelle TextBkgnd aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle TextBkgnd anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Zelle TextBkgnd  <br/> |
+|Zellenname:  <br/> |TextBkgnd  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle TextBkgnd aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die TextBkgnd-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowText** <br/> |
 |Zellenindex:  <br/> |**visTxtBlkBkgnd** <br/> |
    

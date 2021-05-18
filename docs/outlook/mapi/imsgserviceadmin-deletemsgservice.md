@@ -37,7 +37,7 @@ HRESULT DeleteMsgService(
 
  _lpuid_
   
-> in Ein Zeiger auf die [MAPIUID](mapiuid.md) -Struktur, die den eindeutigen Bezeichner für den zu löschenden Nachrichtendienst enthält. 
+> [in] Ein Zeiger auf die [MAPIUID-Struktur,](mapiuid.md) die den eindeutigen Bezeichner für den zu löschenden Nachrichtendienst enthält. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -47,25 +47,25 @@ S_OK
     
 MAPI_E_NOT_FOUND 
   
-> Die **MAPIUID** , auf die durch _lpuid_ verwiesen wird, stimmt nicht mit einem vorhandenen Nachrichtendienst überein. 
+> Die **mapIUID,** auf die  _von lpuid verwiesen wird,_ ist nicht mit einem vorhandenen Nachrichtendienst übereinstimmend. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMsgServiceAdmin::D eletemsgservice** -Methode löscht einen Nachrichtendienst aus einem Profil. **DeleteMsgService** entfernt alle Profilabschnitte im Zusammenhang mit dem Nachrichtendienst. 
+Die **IMsgServiceAdmin::D eleteMsgService-Methode** löscht einen Nachrichtendienst aus einem Profil. **DeleteMsgService** entfernt alle Profilabschnitte im Zusammenhang mit dem Nachrichtendienst. 
   
  **DeleteMsgService** führt die folgenden Schritte aus, um den Nachrichtendienst zu löschen: 
   
-1. Ruft die Einstiegspunktfunktion des Nachrichtendiensts auf, wobei der Parameter _ulContext_ auf MSG_SERVICE_DELETE festgelegt ist, bevor die Profilabschnitte entfernt werden. Dadurch kann der Dienst dienstspezifische Aufgaben ausführen. 
+1. Ruft die Einstiegspunktfunktion des Nachrichtendiensts auf, und der  _ulContext-Parameter_ ist auf MSG_SERVICE_DELETE, bevor die Profilabschnitte entfernt werden. Dadurch kann der Dienst dienstspezifische Aufgaben ausführen. 
     
 2. Löscht den Nachrichtendienst.
     
-3. Löscht den Profil Abschnitt des Nachrichtendiensts.
+3. Löscht den Profilabschnitt des Nachrichtendiensts.
     
 Die Einstiegspunktfunktion des Nachrichtendiensts wird nicht erneut aufgerufen, nachdem der Dienst gelöscht wurde.
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Um die **MAPIUID** -Struktur für den zu löschenden Nachrichtendienst abzurufen, rufen Sie die **PR_SERVICE_UID** ([pidtagserviceuid (](pidtagserviceuid-canonical-property.md))-Eigenschaftsspalte aus der Zeile des Nachrichtendiensts in der Nachrichtendienst Tabelle ab. Weitere Informationen finden Sie in der in der [IMsgServiceAdmin:: CreateMsgService](imsgserviceadmin-createmsgservice.md) -Methode beschriebenen Prozedur. 
+Um die **MAPIUID-Struktur** für den zu löschenden Nachrichtendienst abzurufen, rufen Sie die **PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md))-Eigenschaftsspalte aus der Zeile des Nachrichtendiensts in der Nachrichtendiensttabelle ab. Weitere Informationen finden Sie in der in der [IMsgServiceAdmin::CreateMsgService-Methode beschriebenen](imsgserviceadmin-createmsgservice.md) Prozedur. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -73,7 +73,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MsgServiceTableDlg. cpp  <br/> |CMsgServiceTableDlg:: OnDeleteSelectedItem  <br/> |MFCMAPI verwendet die **IMsgServiceAdmin::D-eletemsgservice** -Methode, um den ausgewählten Dienst zu löschen.  <br/> |
+|MsgServiceTableDlg.cpp  <br/> |CMsgServiceTableDlg::OnDeleteSelectedItem  <br/> |MFCMAPI verwendet die **IMsgServiceAdmin::D eleteMsgService-Methode,** um den ausgewählten Dienst zu löschen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

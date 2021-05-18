@@ -15,7 +15,7 @@ ms.locfileid: "32319327"
 ---
 # <a name="ifreebusysupport"></a>IFreeBusySupport
 
-Unterstützt die Spezifikation von Schnittstellen, die auf Frei/Gebucht-Daten für bestimmte Benutzer zugreifen. 
+Unterstützt die Spezifikation von Schnittstellen, die auf Frei/Gebucht-Daten für angegebene Benutzer zugreifen. 
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -29,37 +29,37 @@ Unterstützt die Spezifikation von Schnittstellen, die auf Frei/Gebucht-Daten f�
 
 |||
 |:-----|:-----|
-|[Placeholder1](ifreebusysupport-placeholder1.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-|["Platzhalter2](ifreebusysupport-placeholder2.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-|[LoadFreeBusyData](ifreebusysupport-loadfreebusydata.md) <br/> |Gibt für jeden angegebenen Benutzer eine Schnittstelle zum Auflisten von Frei/Gebucht-Datenblöcken innerhalb eines Zeitintervalls zurück.  <br/> |
-|[Placeholder23](ifreebusysupport-placeholder23.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-|[Placeholder3](ifreebusysupport-placeholder3.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-|[Placeholder4](ifreebusysupport-placeholder4.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-|[Placeholder5](ifreebusysupport-placeholder5.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-|[Placeholder6](ifreebusysupport-placeholder6.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-|[Placeholder7](ifreebusysupport-placeholder7.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-|[Placeholder8](ifreebusysupport-placeholder8.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-|[Placeholder9](ifreebusysupport-placeholder9.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-|[Placeholder10](ifreebusysupport-placeholder10.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-|[Placeholder11](ifreebusysupport-placeholder11.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-|[Placeholder12](ifreebusysupport-placeholder12.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-|[Placeholder13](ifreebusysupport-placeholder13.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-|[Placeholder14](ifreebusysupport-placeholder14.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-|[Placeholder15](ifreebusysupport-placeholder15.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-|[Placeholder16](ifreebusysupport-placeholder16.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-|[Placeholder17](ifreebusysupport-placeholder17.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-|[Placeholder18](ifreebusysupport-placeholder18.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-|[Placeholder19](ifreebusysupport-placeholder19.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-|[Placeholder20](ifreebusysupport-placeholder20.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-|[Placeholder21](ifreebusysupport-placeholder21.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-|[Placeholder22](ifreebusysupport-placeholder22.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[Platzhalter1](ifreebusysupport-placeholder1.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[Platzhalter2](ifreebusysupport-placeholder2.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[LoadFreeBusyData](ifreebusysupport-loadfreebusydata.md) <br/> |Gibt für jeden angegebenen Benutzer eine Schnittstelle zum Aufzählen von Frei/Gebucht-Datenblöcken innerhalb eines Zeitbereichs zurück.  <br/> |
+|[Platzhalter23](ifreebusysupport-placeholder23.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[Platzhalter3](ifreebusysupport-placeholder3.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[Platzhalter4](ifreebusysupport-placeholder4.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[Platzhalter5](ifreebusysupport-placeholder5.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[Platzhalter6](ifreebusysupport-placeholder6.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[Platzhalter7](ifreebusysupport-placeholder7.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[Platzhalter8](ifreebusysupport-placeholder8.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[Platzhalter9](ifreebusysupport-placeholder9.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[Platzhalter10](ifreebusysupport-placeholder10.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[Platzhalter111](ifreebusysupport-placeholder11.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[Platzhalter12](ifreebusysupport-placeholder12.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[Platzhalter13](ifreebusysupport-placeholder13.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[Platzhalter14](ifreebusysupport-placeholder14.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[Platzhalter15](ifreebusysupport-placeholder15.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[Platzhalter16](ifreebusysupport-placeholder16.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[Platzhalter17](ifreebusysupport-placeholder17.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[Placeholder18](ifreebusysupport-placeholder18.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[Platzhalter19](ifreebusysupport-placeholder19.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[Platzhalter20](ifreebusysupport-placeholder20.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[Platzhalter21](ifreebusysupport-placeholder21.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[Platzhalter222](ifreebusysupport-placeholder22.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Bei den meisten Mitgliedern dieser Schnittstelle handelt es sich um Platzhalter, die für die interne Verwendung von Outlook reserviert sind und Änderungen unterliegen. Frei/Gebucht-Anbieter müssen Sie nur wie angegeben implementieren, wobei nur die angegebenen Rückgabewerte zurückgegeben werden.
+Die meisten Mitglieder in dieser Schnittstelle sind Platzhalter, die für die interne Verwendung von Outlook reserviert sind und änderungen unterliegen. Frei/Gebucht-Anbieter dürfen sie nur wie angegeben implementieren und geben nur die angegebenen Rückgabewerte zurück.
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Über die Frei/Gebucht-API](about-the-free-busy-api.md)
+- [Informationen zur Frei/Gebucht-API](about-the-free-busy-api.md)
 - [FBUser](fbuser.md)
 

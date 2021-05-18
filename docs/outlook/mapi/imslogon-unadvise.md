@@ -25,7 +25,7 @@ ms.locfileid: "32317276"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Entfernt die Registrierung eines Objekts für die Benachrichtigung über Änderungen am Nachrichtenspeicher, die zuvor mithilfe eines Aufrufs der [IMSLogon:: Advise](imslogon-advise.md) -Methode festgelegt wurden. 
+Entfernt die Registrierung eines Objekts zur Benachrichtigung über Nachrichtenspeicheränderungen, die zuvor mithilfe eines Aufrufs der [IMSLogon::Advise-Methode erstellt](imslogon-advise.md) wurden. 
   
 ```cpp
 HRESULT Unadvise(
@@ -37,7 +37,7 @@ HRESULT Unadvise(
 
  _ulConnection_
   
-> in Die Nummer der Registrierungs Verbindung, die von einem Aufruf von **IMSLogon:: Advise**zurückgegeben wird.
+> [in] Die Nummer der Registrierungsverbindung, die von einem Aufruf von **IMSLogon::Advise zurückgegeben wird.**
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -45,9 +45,9 @@ S_OK
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Nachrichtenspeicher Anbieter implementieren die **IMSLogon:: Unadvise** -Methode zum Freigeben des Zeigers auf das Advise-Objekt, das im _lpAdviseSink_ -Parameter im vorherigen Aufruf von **IMSLogon:: Advise**übergeben wurde, wodurch eine Benachrichtigung abgebrochen wird. Registrierung. Als Teil des Verwerfens des Zeigers auf das Advise-Senke-Objekt wird die [IUnknown:: Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) -Methode des Objekts aufgerufen. Im Allgemeinen wird die **Freigabe** während des **Unadvise** -Aufrufs aufgerufen. Wenn jedoch ein anderer Thread die [IMAPIAdviseSink:: OnNotify](imapiadvisesink-onnotify.md) -Methode für das Advise-Senke-Objekt aufruft, wird der **Freigabe** Aufruf verzögert, bis **** die OnNotify-Methode zurückgegeben wird. 
+Nachrichtenspeicheranbieter implementieren die **IMSLogon::Unadvise-Methode,** um den Zeiger auf das im  _lpAdviseSink-Parameter_ im vorherigen Aufruf von **IMSLogon::Advise** übergebene Advise-Sink-Objekt frei zu geben, wodurch eine Benachrichtigungsregistrierung abgebrochen wird. Im Rahmen des Verwerfens des Zeigers auf das advise-Sink-Objekt wird die [IUnknown::Release-Methode des](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) Objekts aufgerufen. Im Allgemeinen **wird Release** während des **Unadvise-Aufrufs** aufgerufen. Wenn jedoch ein anderer Thread die [IMAPIAdviseSink::OnNotify-Methode](imapiadvisesink-onnotify.md) für das Advise Sink-Objekt aufruft, wird der **Release-Aufruf** verzögert, bis die **OnNotify-Methode** zurückgegeben wird. 
   
 ## <a name="see-also"></a>Siehe auch
 

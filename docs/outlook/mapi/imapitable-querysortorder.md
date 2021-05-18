@@ -37,7 +37,7 @@ LPSSortOrderSet FAR * lppSortCriteria
 
  _lppSortCriteria_
   
-> Out Zeiger auf einen Zeiger auf die [SSortOrderSet](ssortorderset.md) -Struktur, die die aktuelle Sortierreihenfolge aufweist. 
+> [out] Zeiger auf einen Zeiger auf die [SSortOrderSet-Struktur](ssortorderset.md) mit der aktuellen Sortierreihenfolge. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -47,25 +47,25 @@ S_OK
     
 MAPI_E_BUSY 
   
-> Ein weiterer Vorgang wird ausgeführt, der verhindert, dass der Abrufvorgang für die Sortierreihenfolge gestartet wird. Entweder sollte der ausgeführte Vorgang abgeschlossen oder beendet werden.
+> Ein weiterer Vorgang wird ausgeführt, der verhindert, dass der Sortierreihenfolgenabrufvorgang gestartet wird. Der ausgeführte Vorgang sollte entweder abgeschlossen oder beendet werden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPITable:: QuerySortOrder** -Methode ruft die aktuelle Sortierreihenfolge für eine Tabelle ab. Sortierreihenfolgen werden mit einer [SSortOrderSet](ssortorderset.md) -Struktur beschrieben. 
+Die **IMAPITable::QuerySortOrder-Methode** ruft die aktuelle Sortierreihenfolge für eine Tabelle ab. Sortierreihenfolgen werden mit einer [SSortOrderSet-Struktur](ssortorderset.md) beschrieben. 
   
-- Das **cSorts** -Element der **SSortOrderSet** -Struktur kann auf 0 (null) festgelegt werden, wenn: 
+- Das **cSorts-Element** der **SSortOrderSet-Struktur** kann auf Null festgelegt werden, wenn: 
     
 - Die Tabelle ist unsortiert.
     
-- Es gibt keine Informationen dazu, wie die Tabelle sortiert wird.
+- Es gibt keine Informationen zur Sortierung der Tabelle.
     
-- Die **SSortOrderSet** -Struktur ist nicht geeignet, um die Sortierreihenfolge zu beschreiben. 
+- Die **SSortOrderSet-Struktur** ist nicht geeignet, um die Sortierreihenfolge zu beschreiben. 
     
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Wenn ein Aufruf an Ihre [IMAPITable:: sortable](imapitable-sorttable.md) -Methode mit einer **SSortOrderSet** -Struktur mit NULL-Spalten im Sortierschlüssel erfolgt, entfernen Sie die aktuelle Sortierreihenfolge, und übernehmen Sie die Standardreihenfolge, sofern vorhanden. In nachfolgenden Aufrufen von **QuerySortOrder**können Sie auswählen, ob NULL oder mehr Spalten für den Sortierschlüssel zurückgegeben werden sollen. Sie können mehr Spalten als in der aktuellen Ansicht zurückgeben.
+Wenn sie ihre [IMAPITable::SortTable-Methode](imapitable-sorttable.md) mit einer **SSortOrderSet-Struktur** aufruft, die keine Spalten im Sortierschlüssel enthält, entfernen Sie die aktuelle Sortierreihenfolge, und wenden Sie die Standardreihenfolge an, falls eine solche besteht. Bei nachfolgenden Aufrufen von **QuerySortOrder** können Sie auswählen, ob null oder mehr Spalten für den Sortierschlüssel zurückgegeben werden sollen. Sie können mehr Spalten als in der aktuellen Ansicht zurückgeben.
   
-Weitere Informationen zum Sortieren finden Sie unter [Sortieren und kategorisieren](sorting-and-categorization.md).
+Weitere Informationen zum Sortieren finden Sie unter [Sorting and Categorization](sorting-and-categorization.md).
   
 ## <a name="see-also"></a>Siehe auch
 

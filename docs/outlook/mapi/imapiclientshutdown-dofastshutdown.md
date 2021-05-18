@@ -25,7 +25,7 @@ ms.locfileid: "33408684"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt an, dass der MAPI-Client sofort den Clientprozess beenden soll.
+Gibt die Absicht des MAPI-Clients an, den Clientprozess sofort zu beenden.
   
 ```cpp
 HRESULT DoFastShutdown ();
@@ -35,15 +35,15 @@ HRESULT DoFastShutdown ();
 
 S_OK
   
-> Das MAPI-Subsystem hat den geladenen MAPI-Anbietern angezeigt, dass der MAPI-Client sofort beendet wird, und die MAPI-Anbieter sind bereit für den Client-Exit.
+> Das MAPI-Subsystem hat für geladene MAPI-Anbieter angegeben, dass der MAPI-Client sofort beendet wird, und die MAPI-Anbieter sind für den Clientabgang bereit.
     
 MAPI_E_NO_SUPPORT
   
-> Das MAPI-Subsystem unterstützt das schnelle Herunterfahren des Clients nicht.
+> Das MAPI-Subsystem unterstützt kein schnelles Herunterfahren des Clients.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Um Datenverluste beim schnellen Herunterfahren eines MAPI-Clients zu vermeiden, sollten MAPI-Clients die [IMAPIClientShutdown:: NotifyProcessShutdown](imapiclientshutdown-notifyprocessshutdown.md) und **IMAPIClientShutdown::D ofastshutdown** -Methoden basierend auf dem vom MAPI-Subsystem zurückgegebenen Ergebnis S_OK in die [IMAPIClientShutdown:: QueryFastShutdown](imapiclientshutdown-queryfastshutdown.md) -Methode. Weitere Informationen finden Sie unter [bewährte Methoden für das schnelle Herunterfahren](best-practices-for-fast-shutdown.md).
+Um Datenverluste durch das schnelle Herunterfahren eines MAPI-Clients zu vermeiden, sollten MAPI-Clients die [Methoden IMAPIClientShutdown::NotifyProcessShutdown](imapiclientshutdown-notifyprocessshutdown.md) und **IMAPIClientShutdown::D oFastShutdown** basierend auf dem S_OK-Ergebnis aufrufen, das vom MAPI-Subsystem in der [IMAPIClientShutdown::QueryFastShutdown-Methode](imapiclientshutdown-queryfastshutdown.md) zurückgegeben wird. Weitere Informationen finden Sie unter [Best Practices for Fast Shutdown](best-practices-for-fast-shutdown.md).
   
 ## <a name="see-also"></a>Siehe auch
 

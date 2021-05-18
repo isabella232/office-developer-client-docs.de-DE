@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - xlEnableXLMsgs
 keywords:
-- xlenablexlmsgs-Funktion [Excel 2007]
+- xlenablexlmsgs-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: 1a7eeaf9-8603-446e-9393-5560e88b3a32
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'

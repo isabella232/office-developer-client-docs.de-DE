@@ -25,11 +25,11 @@ ms.locfileid: "33408222"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt das Dialogfeld, das von der [BuildDisplayTable](builddisplaytable.md) -Funktion aus einer Anzeigetabelle erstellt wird. 
+Beschreibt das Dialogfeld, das von der [BuildDisplayTable-Funktion](builddisplaytable.md) aus einer Anzeigetabelle erstellt wird. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct DTPAGE
@@ -46,37 +46,37 @@ typedef struct DTPAGE
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cctl**
   
-> Die Anzahl der Steuerelemente, auf die durch das **lpctl** -Element verwiesen wird. 
+> Anzahl der Steuerelemente, auf die das **lpctl-Element verweist.** 
     
  **lpszResourceName**
   
-> Zeiger auf den Namen oder ganzzahligen Bezeichner für die Dialogfeldressource. 
+> Zeiger auf den Namen oder die ganzzahlige ID für die Dialogfeldressource. 
     
  **lpszComponent**
   
-> Zeiger auf die Zeichenfolge, die im Abschnitt **[Hilfedatei Zuordnungen]** in MAPISVC. inf angezeigt wird. Da sich **lpszComponent** in einer Union mit dem **ulItemID** -Element befindet, verfügt nur einer dieser Member über gültige Daten. 
+> Zeiger auf die Zeichenfolge, die im **Abschnitt [Hilfedateizuordnungen]** in MAPISVC.INF angezeigt wird. Da **sich lpszComponent** in einer Union mit dem **ulItemID-Mitglied** befindet, verfügt nur eines dieser Mitglieder über gültige Daten. 
     
  **ulItemID**
   
-> Integer-Ressourcenbezeichner mit einem Wert kleiner oder gleich 65535, aus dem der Name der Hilfedatei gelesen werden kann. Da sich **ulItemID** in einer Union mit dem **lpszComponent** -Element befindet, verfügt nur einer dieser Member über gültige Daten. 
+> Integer-Ressourcen-ID mit einem Wert kleiner oder gleich 65535, aus dem der Name der Hilfedatei gelesen werden kann. Da **ulItemID** sich in einer Union mit dem **lpszComponent-Mitglied** befindet, verfügt nur eines dieser Mitglieder über gültige Daten. 
     
  **lpctl**
   
-> Zeiger auf ein Array von [DTCTL](dtctl.md) -Strukturen, eines für jedes Steuerelement auf der Seite. 
+> Zeiger auf ein Array von [DTCTL-Strukturen,](dtctl.md) eines für jedes Steuerelement auf der Seite. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Um die Hilfedatei für die Registerkartenseite zu identifizieren, legen Sie entweder das **lpszComponent** -Element auf eine hart codierte Zeichenfolge oder das **ulItemID** -Element auf einen ganzzahligen Ressourcenbezeichner fest. 
+Um die Hilfedatei für die Registerkartenseite zu identifizieren, legen Sie entweder das **lpszComponent-Element** auf eine hart codierte Zeichenfolge oder das **Element ulItemID** auf einen ganzzahligen Ressourcenbezeichner fest. 
   
-Jeder Eintrag im Abschnitt **[Hilfedatei Zuordnungen]** in MAPISVC. INF besteht aus einer Komponenten Zeichenfolge, die nicht länger als 30 Zeichen ist, auf der linken Seite und einem Pfad rechts für die Hilfedatei. Sowohl **ulItemID** als auch **lpszResourceName** befinden sich im _HINSTANCE_ -Parameter von **BuildDisplayTable**. Weitere Informationen finden Sie unter [MAPISVC. Abschnitt "INF [Hilfedatei Zuordnungen]"](mapisvc-inf-help-file-mappings-section.md).
+Jeder Eintrag im **Abschnitt [Hilfedateizuordnungen]** in MAPISVC. INF besteht aus einer Komponentenzeichenfolge( nicht mehr als 30 Zeichen) auf der linken Seite und einem Hilfedateipfad auf der rechten Seite. **UlItemID** und **lpszResourceName** finden Sie im _hInstance-Parameter_ von **BuildDisplayTable**. Weitere Informationen finden Sie unter [MAPISVC. ABSCHNITT [Hilfedateizuordnungen]](mapisvc-inf-help-file-mappings-section.md).
   
-Obwohl **BuildDisplayTable** diese Struktur verwendet, um die Anzeigetabelle aus den Steuerelementressourcen zu erstellen, wird die **DTPAGE** -Struktur nie in der Anzeigetabelle selbst angezeigt. 
+Obwohl **BuildDisplayTable** diese Struktur verwendet, um die Anzeigetabelle aus Steuerelementressourcen zu erstellen, wird die **DTPAGE-Struktur** niemals in der Anzeigetabelle selbst angezeigt. 
   
-Eine Übersicht über Anzeige Tabellen finden Sie unter [Display Tables](display-tables.md). Weitere Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
+Eine Übersicht über Anzeigetabellen finden Sie unter [Display Tables](display-tables.md). Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
   
 ## <a name="see-also"></a>Siehe auch
 

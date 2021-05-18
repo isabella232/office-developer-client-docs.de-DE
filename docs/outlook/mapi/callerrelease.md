@@ -25,13 +25,13 @@ ms.locfileid: "33408726"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Definiert eine Rückruffunktion, die ein Tabellendaten Objekt freigeben kann, wenn eine Tabellenansicht veröffentlicht wird. 
+Definiert eine Rückruffunktion, mit der ein Tabellendatenobjekt freigegeben werden kann, wenn eine Tabellenansicht freigegeben wird. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
-|Definierte Funktion, implementiert von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
-|Definierte Funktion, aufgerufen von:  <br/> |MAPI  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Definierte Funktion implementiert von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
+|Definierte Funktion, die von:  <br/> |MAPI  <br/> |
    
 ```cpp
 void CALLERRELEASE(
@@ -45,24 +45,24 @@ void CALLERRELEASE(
 
  _ulCallerData_
   
-> in Von MAPI gespeicherte Anrufer-Daten in der Tabellenansicht und an die **CALLERRELEASE** -basierte Rückruffunktion übergeben. Die Daten liefern Kontext über die Tabellenansicht, die freigegeben wird. 
+> [in] Anruferdaten, die von MAPI mit der Tabellenansicht gespeichert und an die **CALLERRELEASE-basierte** Rückruffunktion übergeben werden. Die Daten bieten Kontext zur freigegebenen Tabellenansicht. 
     
  _lpTblData_
   
-> in Zeiger auf die [ITableData: IUnknown](itabledataiunknown.md) -Schnittstelle für das Tabellendaten Objekt, das der Tabellenansicht zugrunde liegt, die freigegeben wird. 
+> [in] Zeiger auf die [ITableData : IUnknown-Schnittstelle](itabledataiunknown.md) für das Tabellendatenobjekt, das der freigegebenen Tabellenansicht zugrunde liegt. 
     
  _lpVue_
   
-> in Zeiger auf die [IMAPITable: IUnknown](imapitableiunknown.md) -Schnittstelle für die Tabellenansicht, die freigegeben wird. Hierbei handelt es sich um eine Schnittstelle für das Table-Objekt, das im _lppMAPITable_ -Parameter der [ITableData:: HrGetView](itabledata-hrgetview.md) -Methode zurückgegeben wird, die das Release-Objekt erstellt hat. 
+> [in] Zeiger auf die [IMAPITable : IUnknown-Schnittstelle](imapitableiunknown.md) für die tabellenansicht, die freigegeben wird. Dies ist eine Schnittstelle für das Tabellenobjekt, das im  _lppMAPITable-Parameter_ der [ITableData::HrGetView-Methode](itabledata-hrgetview.md) zurückgegeben wird, die das zu veröffentlichende Objekt erstellt hat. 
     
 ## <a name="return-value"></a>Rückgabewert
 
 Keine 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Eine Clientanwendung oder ein Dienstanbieter, der ein Tabellendaten Objekt aufgefüllt hat, kann [ITableData:: HrGetView](itabledata-hrgetview.md) aufrufen, um eine schreibgeschützte, sortierte Ansicht der Tabelle zu erstellen. Der Aufruf von **HrGetView** übergibt einen Zeiger auf eine **CALLERRELEASE** -basierte Rückruffunktion und auch einen Kontext, der mit der Tabellenansicht gespeichert werden soll. Wenn der Verweiszähler der Tabellenansicht auf Null zurückgesetzt wird und die Ansicht veröffentlicht wird, ruft die **IMAPITable** -Implementierung die Rückruffunktion auf und übergibt den Kontext im _ulCallerData_ -Parameter. 
+Eine Clientanwendung oder ein Dienstanbieter, der ein Tabellendatenobjekt aufgefüllt hat, kann [ITableData::HrGetView](itabledata-hrgetview.md) aufrufen, um eine schreibgeschützte, sortierte Ansicht der Tabelle zu erstellen. Der Aufruf von **HrGetView** übergibt einen Zeiger an eine **CALLERRELEASE-basierte** Rückruffunktion und auch einen Kontext, der mit der Tabellenansicht gespeichert werden soll. Wenn die Referenzanzahl der Tabellenansicht auf Null zurückkehrt und die Ansicht freigegeben wird, ruft die **IMAPITable-Implementierung** die Rückruffunktion auf und übergibt den Kontext im _ulCallerData-Parameter._ 
   
-Eine häufige Verwendung einer **CALLERRELEASE** -basierten Rückruffunktion besteht darin, das zugrunde liegende Tabellendaten Objekt freizusetzen und es während der nachfolgenden Verarbeitung nicht nachzuverfolgen. 
+Eine häufige Verwendung einer **CALLERRELEASE-basierten** Rückruffunktion besteht in der Freigabe des zugrunde liegenden Tabellendatenobjekts und muss während der nachfolgenden Verarbeitung nicht nachverfolgt werden. 
   
 

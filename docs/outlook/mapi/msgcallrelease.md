@@ -25,13 +25,13 @@ ms.locfileid: "33405912"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Definiert eine Rückruffunktion, die eine **IStorage** -Schnittstellenach der endgültigen Version eines auf Ihr basierenden **IMessage** -Objekts mit der [OpenIMsgOnIStg](openimsgonistg.md) -Funktion freigeben kann. 
+Definiert eine Rückruffunktion, mit der eine **IStorage-Schnittstelle** nach der endgültigen Version eines darauf aufgebauten **IMessage-Objekts** mit der [OpenIMsgOnIStg-Funktion freigegeben](openimsgonistg.md) werden kann. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |IMessage. h  <br/> |
-|Definierte Funktion, implementiert von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
-|Definierte Funktion, aufgerufen von:  <br/> |MAPI  <br/> |
+|Headerdatei  <br/> |Imessage.h  <br/> |
+|Definierte Funktion implementiert von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
+|Definierte Funktion, die von:  <br/> |MAPI  <br/> |
    
 ```cpp
 typedef void (STDAPICALLTYPE MSGCALLRELEASE)(
@@ -43,11 +43,11 @@ typedef void (STDAPICALLTYPE MSGCALLRELEASE)(
 
  _ulCallerData_
   
-> in Enthält Anruf Anwendungsinformationen zur **IMessage** -Schnittstelle. 
+> [in] Enthält aufrufende Anwendungsinformationen zur **IMessage-Schnittstelle.** 
     
  _lpMessage_
   
-> in Zeiger auf die Nachricht und die Anlagen auf oberster Ebene, die freigegeben wurden.
+> [in] Zeiger auf die Nachricht und Anlagen auf oberster Ebene, die freigegeben wurden.
     
 ## <a name="return-value"></a>Return value
 

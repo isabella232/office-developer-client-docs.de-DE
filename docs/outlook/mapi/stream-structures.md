@@ -1,5 +1,5 @@
 ---
-title: Stream-Strukturen
+title: Streamstrukturen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,36 +13,36 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33407823"
 ---
-# <a name="stream-structures"></a>Stream-Strukturen
+# <a name="stream-structures"></a>Streamstrukturen
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Definitionen von benutzerdefinierten Feldern eines Microsoft Outlook-Elements werden in der [pidlidpropertydefinitionstream (](pidlidpropertydefinitionstream-canonical-property.md) -Eigenschaft gespeichert. Der Wert dieser Eigenschaft ist ein binärer Datenstrom, der Definitionen von benutzerdefinierten Feldern und Datenbindungseinstellungen für integrierte Felder für das Outlook-Element enthält. Dieser Abschnitt enthält Informationen zur Struktur des binären Streams, aufgeschlüsselt in den folgenden Stream-Strukturen. 
+Definitionen von benutzerdefinierten Feldern eines Microsoft Outlook werden in der [PidLidPropertyDefinitionStream-Eigenschaft](pidlidpropertydefinitionstream-canonical-property.md) gespeichert. Der Wert dieser Eigenschaft ist ein binärer Datenstrom, der Definitionen von benutzerdefinierten Feldern und Datenbindungseinstellungen für integrierte Felder für das Outlook enthält. Dieser Abschnitt enthält Informationen zur Struktur des binären Datenstroms, die in den folgenden Datenstromstrukturen aufgeschlüsselt sind. 
   
 > [!NOTE]
-> Die Namen dieser Stream-Strukturen (beispielsweise PropertyDefinition, FieldDefinition streamstruktur und SkipBlock streamstruktur) und ihre Datenelemente sind technisch nicht Teil der Programmierschnittstelle der Messaging-API (MAPI) und werden hier nur für die Dokumentation bereitgestellt. Zwecke der tatsächlichen Stream-Strukturen. Entwickler können diese Stream-Strukturen und Datenelemente in Ihren Anwendungen bei Ihrer Auswahl beschriften. 
+> Die Namen dieser Streamstrukturen (z. B. PropertyDefinition, FieldDefinition und SkipBlock) und deren Datenelemente sind technisch nicht Teil der Programmierschnittstelle der Messaging-API (MAPI) und werden hier nur zu Dokumentationszwecken der tatsächlichen Streamstrukturen bereitgestellt. Entwickler können diese Datenstromstrukturen und Datenelemente in ihren Anwendungen nach Wahl beschriften. 
   
-- [PropertyDefinition-Datenstrom Struktur](propertydefinition-stream-structure.md)
+- [PropertyDefinition Stream Structure](propertydefinition-stream-structure.md)
     
-- [FieldDefinition streamstruktur-Datenstrom Struktur](fielddefinition-stream-structure.md)
+- [FieldDefinition Stream Structure](fielddefinition-stream-structure.md)
     
-- [SkipBlock streamstruktur-Datenstrom Struktur](skipblock-stream-structure.md)
+- [SkipBlock Stream Structure](skipblock-stream-structure.md)
     
-- [Firstskipblockcontent streamstruktur-Datenstrom Struktur](firstskipblockcontent-stream-structure.md)
+- [FirstSkipBlockContent Stream Structure](firstskipblockcontent-stream-structure.md)
     
-- [Packedansistring streamstruktur-Datenstrom Struktur](packedansistring-stream-structure.md)
+- [PackedAnsiString-Streamstruktur](packedansistring-stream-structure.md)
     
-- [Packedunicodestring streamstruktur-Datenstrom Struktur](packedunicodestring-stream-structure.md)
+- [PackedUnicodeString-Datenstromstruktur](packedunicodestring-stream-structure.md)
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Outlook-Elemente und-Felder](outlook-items-and-fields.md)
+[Outlook Elemente und Felder](outlook-items-and-fields.md)
   
-[Hinzufügen einer Definition für ein neues benutzerdefiniertes Feld](how-to-add-a-definition-for-a-new-user-defined-field.md)
+[Hinzufügen einer Definition für ein new User-Defined Field](how-to-add-a-definition-for-a-new-user-defined-field.md)
   
-[PropertyDefinition-Stream-Beispiel](propertydefinition-stream-sample.md)
+[PropertyDefinition Stream Sample](propertydefinition-stream-sample.md)
 

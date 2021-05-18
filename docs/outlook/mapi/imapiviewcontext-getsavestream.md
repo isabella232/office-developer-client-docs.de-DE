@@ -25,7 +25,7 @@ ms.locfileid: "33408425"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft einen Stream ab, der zum Speichern der aktuellen Nachricht verwendet werden soll.
+Ruft einen Datenstrom ab, der zum Speichern der aktuellen Nachricht verwendet werden soll.
   
 ```cpp
 HRESULT GetSaveStream(
@@ -39,27 +39,27 @@ LPSTREAM FAR * ppstm
 
  _pulFlags_
   
-> Out Zeiger auf eine Bitmaske von Flags, die steuert, wie der Nachrichtentext gespeichert werden soll. Das folgende Flag kann festgelegt werden:
+> [out] Zeiger auf eine Bitmaske mit Flags, die steuert, wie der Nachrichtentext gespeichert werden soll. Das folgende Flag kann festgelegt werden:
     
 MAPI_UNICODE 
   
-> Der Nachrichtentext wird im Unicode-Format gespeichert. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, wird der Text im ANSI-Format gespeichert.
+> Der Nachrichtentext wird im Unicode-Format gespeichert. Wenn das MAPI_UNICODE nicht festgelegt ist, wird der Text im ANSI-Format gespeichert.
     
  _pulFormat_
   
-> Out Zeiger auf eine Bitmaske von Flags, die das Format des gespeicherten Texts steuert. Die folgenden Flags können festgelegt werden:
+> [out] Zeiger auf eine Bitmaske mit Flags, die das Format des gespeicherten Texts steuert. Die folgenden Kennzeichen können festgelegt werden:
     
 SAVE_FORMAT_RICHTEXT 
   
-> Der Nachrichtentext soll als formatierter Text im Rich-Text-Format (RTF) gespeichert werden. 
+> Der Nachrichtentext soll als formatierter Text im Rich Text Format (RTF) gespeichert werden. 
     
 SAVE_FORMAT_TEXT 
   
-> Der Nachrichtentext soll als nur-Text gespeichert werden. 
+> Der Nachrichtentext soll als Nur-Text-Text gespeichert werden. 
     
  _ppstm_
   
-> Out Zeiger auf einen Zeiger auf den Stream, der die gespeicherte Nachricht enthält.
+> [out] Zeiger auf einen Zeiger auf den Datenstrom, der die gespeicherte Nachricht enthält.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -67,13 +67,13 @@ S_OK
   
 > Der Datenstrom wurde erfolgreich abgerufen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Formularobjekte rufen die **IMAPIViewContext:: GetSaveStream** -Methode auf, um ein Stream-Objekt abzurufen, das die **IStream** -Schnittstelle implementiert, um die Behandlung des Save as-Verbs im Formular-Viewer zu unterstützen. Die [IMAPIForm::D overb](imapiform-doverb.md) -Methode, die auf dem Formularserver implementiert und vom Formular Betrachter aufgerufen wird, um ein Verb aufzurufen, sollte erst zurückgegeben werden, wenn die Nachricht vollständig in das entsprechende Text Format konvertiert und in den entsprechenden Stream verschoben wurde. 
+Form-Objekte rufen die **IMAPIViewContext::GetSaveStream-Methode** auf, um ein Datenstromobjekt abzurufen, das die **IStream-Schnittstelle** implementiert, um die Behandlung des Verbs Speichern unter in der Formularanzeige zu unterstützen. Die [IMAPIForm::D oVerb-Methode,](imapiform-doverb.md) die im Formularserver implementiert und von der Formularanzeige zum Aufrufen eines Verbs aufgerufen wird, sollte erst zurückkehren, wenn die Nachricht vollständig in das entsprechende Textformat konvertiert und in den entsprechenden Datenstrom platziert wurde. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Schreiben Sie nicht in den Stream, auf den von _ppstm_ verwiesen wird, bevor Sie **GetSaveStream**aufrufen. Wenn **GetSaveStream** zurückgegeben wird, setzen Sie die Position des Seek-Zeigers nicht zurück. Dieser Zeiger muss am Ende des gespeicherten Nachrichtentexts bleiben. 
+Schreiben Sie nicht in den Datenstrom, auf den _ppstm verweist,_ bevor **Sie GetSaveStream aufrufen.** Wenn **GetSaveStream zurückgegeben** wird, setzen Sie die Position des Suchzeigers nicht zurück. Dieser Zeiger muss am Ende des gespeicherten Nachrichtentexts verbleiben. 
   
 ## <a name="see-also"></a>Siehe auch
 

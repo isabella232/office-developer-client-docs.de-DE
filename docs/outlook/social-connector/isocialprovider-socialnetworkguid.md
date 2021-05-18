@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3c07f71d-b906-4a7f-b20a-4a7f558dbf11
-description: Gibt eine GUID, die einen eindeutigen Bezeichner für das soziale Netzwerk darstellt.
+description: Gibt eine GUID zurück, die einen eindeutigen Bezeichner für das soziale Netzwerk darstellt.
 ms.openlocfilehash: fc96799ada773cc7260e156d3e2ab8423b73884b
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -17,7 +17,7 @@ ms.locfileid: "33407872"
 ---
 # <a name="isocialprovidersocialnetworkguid"></a>ISocialProvider::SocialNetworkGuid
 
-Gibt eine GUID, die einen eindeutigen Bezeichner für das soziale Netzwerk darstellt.
+Gibt eine GUID zurück, die einen eindeutigen Bezeichner für das soziale Netzwerk darstellt.
   
 ```cpp
 [propget] HRESULT _stdcall SocialNetworkGuid([out, retval] GUID* guid);
@@ -27,9 +27,9 @@ Gibt eine GUID, die einen eindeutigen Bezeichner für das soziale Netzwerk darst
 
 Ein Zeiger auf einen GUID-Wert, der einen eindeutigen Bezeichner für das soziale Netzwerk darstellt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die GUID muss unveränderlich sein und darf auch dann nicht geändert werden, wenn sich die Anbieterversion ändert.
+Die GUID muss unveränderlich sein und darf sich auch dann nicht ändern, wenn sich die Anbieterversion ändert.
   
 ## <a name="see-also"></a>Siehe auch
 

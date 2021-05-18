@@ -23,6 +23,6 @@ ms.locfileid: "33405681"
 2. Drücken Sie auf ENTF und anschließend die EINGABETASTE.
     
 > [!NOTE]
-> Probieren Sie dies in **** einer Arbeitszelle aus, nachdem Sie eine lokale Formel eingefügt haben. Die Zelle wird auf "keine Formel" zurückgesetzt, da es keine Formel gibt, die vom Master geerbt werden soll. 
+> Versuchen Sie  dies in einer Scratch-Zelle, nachdem Sie eine lokale Formel eingefügt haben. Die Zelle wird zu "Keine Formel" zurückgesetzt, da es keine Formel gibt, die vom Master erben soll. 
   
 

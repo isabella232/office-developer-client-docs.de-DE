@@ -19,38 +19,38 @@ ms.locfileid: "33407543"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die Behandlung eines Nachrichtenspeichers ist ein wichtiger Teil des Aufgaben Satzes eines beliebigen Clients. Zu diesen Aufgaben gehört das Öffnen, kopieren, bewegen, hinzufügen und Löschen von Ordnern und Nachrichten, das Anzeigen verschiedener Tabellen, das Festlegen von Eigenschaften und das Steuern von Zugriffsebenen.
+Die Verarbeitung eines Nachrichtenspeichers ist ein wichtiger Bestandteil der Aufgaben eines clients. Zu diesen Aufgaben gehören das Öffnen, Kopieren, Verschieben, Hinzufügen und Löschen von Ordnern und Nachrichten, das Anzeigen verschiedener Tabellen, das Festlegen von Eigenschaften und das Steuern von Zugriffsebenen.
 
-- [Öffnen eines Nachrichtenspeichers](opening-a-message-store.md): Beschreibt, wie ein oder mehrere Nachrichtenspeicher während einer Sitzung geöffnet werden.
+- [Öffnen eines Nachrichtenspeichers:](opening-a-message-store.md)Beschreibt, wie Sie einen oder mehrere Nachrichtenspeicher während einer Sitzung öffnen.
     
-- [Öffnen des Standardnachrichten Speichers](opening-the-default-message-store.md): Beschreibt das Öffnen des Standardnachrichten Speichers.
+- [Öffnen des Standardnachrichtenspeichers](opening-the-default-message-store.md): Beschreibt das Öffnen des Standardnachrichtenspeichers.
     
-- Über [prüfen und Initialisieren eines Nachrichtenspeichers](validating-and-initializing-a-message-store.md): Beschreibt, wie ein Nachrichtenspeicher initialisiert und überprüft wird.
+- [Überprüfen und Initialisieren eines Nachrichtenspeichers:](validating-and-initializing-a-message-store.md)Beschreibt, wie ein Nachrichtenspeicher initialisiert und überprüft wird.
     
-- Durch [Suchen eines Nachrichtenspeichers](searching-a-message-store.md): Beschreibt, wie Sie in einem oder mehreren Ordnern nach Nachrichten suchen, die den Suchkriterien entsprechen.
+- [Durchsuchen eines Nachrichtenspeichers:](searching-a-message-store.md)Beschreibt, wie Sie einen oder mehrere Ordner durchsuchen, die nach Nachrichten suchen, die den Suchkriterien entsprechen.
     
-- [Auswählen eines Empfangs Ordners](selecting-a-receive-folder.md): Beschreibt die Schritte zum Erstellen eines Empfangs Ordners.
+- [Auswählen eines Empfangsordners](selecting-a-receive-folder.md): Beschreibt die Schritte zum Erstellen eines Empfangsordners.
     
-- [Öffnen eines Nachrichtenspeicher Ordners](opening-a-message-store-folder.md): Beschreibt, wie ein Ordner geöffnet wird.
+- [Öffnen eines Nachrichtenspeicherordners:](opening-a-message-store-folder.md)Beschreibt das Öffnen eines Ordners.
     
-- [Anzeigen einer Ordnerinhaltstabelle](displaying-a-folder-contents-table.md): Beschreibt, wie die Tabelle mit den Ordnerinhalten angezeigt wird, die zusammenfassende Informationen zu allen Nachrichten enthält.
+- [Anzeigen eines Ordnerinhaltsverzeichnisses:](displaying-a-folder-contents-table.md)Beschreibt, wie die Ordnerinhaltstabelle angezeigt wird, die Zusammenfassungsinformationen zu allen nachrichten enthält.
     
-- Durch [laufen des Posteingangsordners](traversing-the-inbox-folder.md): Beschreibt, wie Sie alle Nachrichten im Posteingang durchgehen.
+- [Durchlaufen des Posteingangsordners](traversing-the-inbox-folder.md): Beschreibt, wie alle Nachrichten im Posteingang durchlaufen werden.
     
-- [Kopieren oder Verschieben einer Nachricht oder eines Ordners](copying-or-moving-a-message-or-a-folder.md): Beschreibt, wie eine oder mehrere Nachrichten kopiert oder verschoben werden.
+- [Kopieren oder Verschieben einer Nachricht oder eines Ordners](copying-or-moving-a-message-or-a-folder.md): Beschreibt, wie Sie eine oder mehrere Nachrichten kopieren oder verschieben.
     
 - [Öffnen einer Nachricht](opening-a-message.md): Beschreibt, wie eine Nachricht geöffnet wird.
     
 - [Suchen des Symbols für eine Nachricht](finding-the-icon-for-a-message.md): Beschreibt, wie Sie ein Symbol finden, das einer Nachricht zugeordnet ist.
     
-- [Öffnen eines Ansichts Deskriptors](opening-a-view-descriptor.md): Beschreibt, wie ein Ansichts Deskriptor geöffnet wird.
+- [Öffnen eines Ansichtsdeskriptors](opening-a-view-descriptor.md): Beschreibt das Öffnen eines Ansichtsdeskriptors.
     
-- [Löschen einer Nachricht](deleting-a-message.md): Beschreibt das Löschen einer Nachricht.
+- [Löschen einer Nachricht](deleting-a-message.md): Beschreibt, wie eine Nachricht gelöscht wird.
     
 - [Speichern einer Nachricht im Posteingang](saving-a-message-in-the-inbox.md): Beschreibt, wie eine Nachricht im Posteingang gespeichert wird.
     
-- [Suchen nach gesendeten oder gespeicherten Nachrichten](finding-sent-or-saved-messages.md): Beschreibt, wie alle ausgehenden Nachrichten gefunden werden, die gespeichert oder gesendet wurden.
+- [Suchen nach gesendeten oder gespeicherten Nachrichten](finding-sent-or-saved-messages.md): Beschreibt, wie Alle ausgehenden Nachrichten gefunden werden, die gespeichert oder gesendet wurden.
     
-- [Nach](tracking-conversations.md)verfolgen von Unterhaltungen: Beschreibt, wie Konversationen nachverfolgt werden.
+- [Nachverfolgen von Unterhaltungen](tracking-conversations.md): Beschreibt, wie Unterhaltungen nachverfolgt werden.
     
 

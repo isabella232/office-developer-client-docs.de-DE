@@ -25,7 +25,7 @@ ms.locfileid: "33407109"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Startet eine Synchronisierungssitzung und ruft die zugehörige **[IOSTX](iostxiunknown.md)** -Schnittstelle ab. 
+Startet eine Synchronisierungssitzung und ruft die zugeordnete **[IOSTX-Schnittstelle](iostxiunknown.md)** ab. 
   
 ```cpp
 HRESULT GetSyncObject( 
@@ -37,11 +37,11 @@ HRESULT GetSyncObject(
 
  _ppostx_
   
->  Out Zeiger auf die **IOSTX** -Schnittstelle abrufen. 
+>  [out] Zeiger auf die zu erhaltende **IOSTX-Schnittstelle.** 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Der Aufrufer muss sicherstellen, dass derselbe Ordner nicht gleichzeitig für mehrere Threads synchronisiert ist.
+Der Aufrufer muss sicherstellen, dass derselbe Ordner nicht gleichzeitig in mehreren Threads synchronisiert wird.
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -20,23 +20,23 @@ ms.locfileid: "33408446"
 
 Gibt den Papiertyp für den Druck der Seite an.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Diese Einstellung entspricht der Einstellung **Papierformat** im Dialogfeld **Druckeinrichtung** (Klicken Sie auf der Registerkarte **Entwurf** auf den Pfeil für die **Seite einrichten** , und klicken Sie dann auf der Registerkarte **Druckeinrichtung** auf die Schaltfläche **Setup** ). 
+Diese Einstellung entspricht  der Einstellung Papierformat im Dialogfeld  Druckeinrichtung (klicken  Sie auf der Registerkarte  Entwurf auf den Pfeil Seite einrichten, und klicken Sie dann auf der Registerkarte Druckeinrichtung auf die Schaltfläche **Setup).**  
   
-Die numerischen Werte in dieser Zelle werden Konstanten (mit DMPAPER) zugeordnet, die für Papierauswahl in der Datei Microsoft Windows WinGDI. h definiert sind. 
+Die numerischen Werte in dieser Zelle ordnen Konstanten (mit DMPAPER vorangestellt) zu, die für die Papierauswahl in der Datei "Microsoft Windows wingdi.h" definiert sind. 
   
-Wenn Sie einen Verweis auf die Zelle PaperKind aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle PaperKind anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |PaperKind  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle PaperKind aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle PaperKind nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowPrintProperties** <br/> |
 |Zellenindex:  <br/> |**visPrintPropertiesPaperKind** <br/> |
    

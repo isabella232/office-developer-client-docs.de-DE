@@ -45,17 +45,17 @@ MAPI_E_UNABLE_TO_ABORT
   
 > Ein asynchroner Vorgang wird ausgeführt und kann nicht beendet oder bereits abgeschlossen werden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPITable:: Abort** -Methode beendet alle asynchronen Vorgänge, die derzeit ausgeführt werden. 
+Die **IMAPITable::Abort-Methode** beendet alle asynchronen Vorgänge, die derzeit ausgeführt werden. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Wenn Sie herausfinden möchten, ob ein asynchroner Vorgang ausgeführt wird, rufen Sie die [IMAPITable:: GetStatus](imapitable-getstatus.md) -Methode auf. 
+Um herauszufinden, ob ein asynchroner Vorgang ausgeführt wird, rufen Sie die [IMAPITable::GetStatus-Methode](imapitable-getstatus.md) auf. 
   
-Wenn **Abbruch** die Verarbeitung eines Aufrufs der [IMAPITable:: Restrict](imapitable-restrict.md) -Methode angehalten wird, ist der Status der Tabelle, wie zum Zeitpunkt der **Abbruch** Aufruf verarbeitet wurde. 
+Wenn **Abort** die Verarbeitung eines Aufrufs der [IMAPITable::Restrict-Methode](imapitable-restrict.md) beendet, ist der Zustand der Tabelle so wie zum Zeitpunkt der Verarbeitung des **Abbruchaufrufs.** 
   
-Wenn **Abbruch** die Verarbeitung eines Aufrufs der [IMAPITable:: sortable](imapitable-sorttable.md) -Methode angehalten wird, ist die Sortierreihenfolge der Tabelle nicht betroffen und bleibt unverändert, wie es vor dem **sortable** -Aufruf war. 
+Wenn **Abort** die Verarbeitung eines Aufrufs der [IMAPITable::SortTable-Methode](imapitable-sorttable.md) beendet, ist die Sortierreihenfolge der Tabelle nicht betroffen und bleibt unverändert wie vor dem **SortTable-Aufruf.** 
   
 ## <a name="see-also"></a>Siehe auch
 

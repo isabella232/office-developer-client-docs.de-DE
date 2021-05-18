@@ -23,18 +23,18 @@ ms.locfileid: "33407893"
   
  **So speichern Sie eine Nachricht im Posteingang ohne Empfänger**
   
-1. Rufen Sie [IMsgStore:: GetReceiveFolder](imsgstore-getreceivefolder.md) auf, um den Eintragsbezeichner des Posteingangs abzurufen. 
+1. Rufen [Sie IMsgStore::GetReceiveFolder auf,](imsgstore-getreceivefolder.md) um die Eintrags-ID des Posteingangs abzurufen. 
     
-2. Rufen Sie [IMsgStore:: OpenEntry](imsgstore-openentry.md) auf, um den Posteingang zu öffnen und einen Zeiger darauf abzurufen. 
+2. Rufen [Sie IMsgStore::OpenEntry auf,](imsgstore-openentry.md) um den Posteingang zu öffnen und einen Zeiger auf den Posteingang abzurufen. 
     
-3. Rufen Sie die [IMAPIFolder:: CreateMessage](imapifolder-createmessage.md) -Methode des Posteingangs auf, um die Nachricht zu erstellen. 
+3. Rufen Sie die [IMAPIFolder::CreateMessage-Methode](imapifolder-createmessage.md) des Posteingangs auf, um die Nachricht zu erstellen. 
     
-4. Rufen Sie die [IMAPIProp::](imapiprop-setprops.md) SetProps-Methode der Nachricht auf, um die **PR_BODY** ([pidtagbody (](pidtagbody-canonical-property.md)), **PR_HTML** ([pidtaghtml (](pidtaghtml-canonical-property.md)) oder **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) und **PR_Subject** ([ PidTagSubject](pidtagsubject-canonical-property.md))-Eigenschaften. 
+4. Rufen Sie die [IMAPIProp::SetProps-Methode](imapiprop-setprops.md) der Nachricht auf, um die **Eigenschaften PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)), **PR_HTML** ([PidTagHtml](pidtaghtml-canonical-property.md)) oder **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) und **PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) hinzuzufügen. 
     
-5. Erstellen Sie jede Anlage, legen Sie Ihre Eigenschaften fest, und speichern Sie Sie. Ausführliche Informationen zum Hinzufügen von Anlagen zu Nachrichten finden Sie unter [Creating a Message Attachment](creating-a-message-attachment.md).
+5. Erstellen Sie jede Anlage, legen Sie ihre Eigenschaften und speichern Sie sie. Ausführliche Informationen zum Hinzufügen von Anlagen zu Nachrichten finden Sie unter [Creating a Message Attachment](creating-a-message-attachment.md).
     
-6. Rufen Sie **IMessage:: SaveChanges** auf, um die Nachricht zu speichern. An dieser Stelle wird es in der Inhaltstabelle des Posteingangs angezeigt. 
+6. Rufen **Sie IMessage::SaveChanges auf,** um die Nachricht zu speichern. An diesem Punkt wird sie im Inhaltsverzeichnis des Posteingangs angezeigt. 
     
-Wenn Sie eine Nachrichten erkennt speichern möchten, bevor Sie in der Tabelle Inhalt des Posteingangs angezeigt wird, erstellen Sie Sie stattdessen in einem ausgeblendeten Ordner wie dem Stammordner der IPM-Unterstruktur, und verschieben Sie Sie dann in den Posteingang. 
+Wenn Sie eine Nachricht intermittant speichern möchten, bevor sie im Inhaltsverzeichnis des Posteingangs angezeigt wird, erstellen Sie sie stattdessen in einem ausgeblendeten Ordner wie dem Stammordner der IPM-Unterstruktur, und verschieben Sie sie dann in den Posteingang. 
   
 

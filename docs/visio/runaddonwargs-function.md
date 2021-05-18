@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251493
 localization_priority: Normal
 ms.assetid: c154413f-c366-a66b-94e3-ed71ad23f325
-description: Führt eine Zeichenfolge aus und übergibt die Befehlszeilenargumente als Zeichenfolge an das Programm.
+description: Führt Zeichenfolge aus und übergibt die Befehlszeilenargumente als Zeichenfolge an das Programm.
 ms.openlocfilehash: bc05a4480438875c348373059f57bf04f82c9eca
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33408705"
 ---
 # <a name="runaddonwargs-function"></a>RUNADDONWARGS Function
 
-Führt eine _Zeichenfolge_ aus und übergibt die Befehlszeilen _Argumente_ als Zeichenfolge an das Programm. 
+Führt  _Zeichenfolge_ aus und übergibt die  _Befehlszeilenargumente_ als Zeichenfolge an das Programm. 
   
 ## <a name="syntax"></a>Syntax
 
-RUNADDONWARGS ("* * *String* * *", "* * *Argumente* * *") 
+RUNADDONWARGS(" ** *string* ** "," ** *arguments* ** ") 
   
 ### <a name="parameters"></a>Parameter
 
@@ -31,9 +31,9 @@ RUNADDONWARGS ("* * *String* * *", "* * *Argumente* * *")
 | _Zeichenfolge_ <br/> |Erforderlich  <br/> |**String** <br/> | Der Name eines Add-Ons.  <br/> |
 | _Argumente_ <br/> |Erforderlich  <br/> |**String** <br/> |Die an das Programm zu übergebenden Argumente.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-In der Praxis sollten _argumente_ 50 oder weniger Zeichen sein. Verwenden Sie die RUNADDONWARGS-Funktion, um ein Programm wie ein Add-on an eine Zelle zu binden, beispielsweise an eine Aktions-oder Ereignis Zelle. 
+In der Praxis  _sollten Argumente_ 50 oder weniger Zeichen umfassen. Verwenden Sie die RUNADDONWARGS-Funktion, um ein Programm, z. B. ein Add-On, an eine Zelle zu binden, z. B. an eine Action- oder Event-Zelle. 
   
 Mit der RUNADDONWARGS-Funktion können nur Add-Ons ausgeführt werden, die Elemente der **Addons**-Auflistung der Anwendung sind. Add-Ons in dieser Auflistung müssen EXE- oder VSL-Dateien sein, für die Folgendes gilt: 
   
@@ -47,7 +47,7 @@ In früheren Versionen von Visio wird diese Funktion in der Form _RUNADDONWARGS 
   
 ## <a name="example"></a>Beispiel
 
-RUNADDONWARGS ("GRAPHMKR. EXE ","/GraphMaker = Stack ") 
+RUNADDONWARGS("GRAPHMKR.EXE","/GraphMaker=Stack") 
   
 Führt das Add-On Graphmkr.exe aus und übergibt diesem das Argument /GraphMaker=Stack. 
   

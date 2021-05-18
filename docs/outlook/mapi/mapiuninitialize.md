@@ -25,13 +25,13 @@ ms.locfileid: "33408523"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Dekrementiert den Verweiszähler, bereinigt und löscht einzelne globale Daten für die MAPI-DLL. 
+Dekrementiert die Referenzanzahl, bereinigt und löscht die globalen Daten pro Instanz für die MAPI-DLL. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapix. h  <br/> |
+|Headerdatei  <br/> |Mapix.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
    
 ```cpp
 void MAPIUninitialize ( void );
@@ -45,13 +45,13 @@ Keine
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Eine Clientanwendung Ruft die **MAPIUninitialize** -Funktion auf, um die Interaktion mit MAPI zu beenden, angefangen mit einem Aufruf der [MAPIInitialize](mapiinitialize.md) -Funktion. Nachdem **MAPIUninitialize** aufgerufen wurde, können vom Client keine weiteren MAPI-Aufrufe durchgeführt werden. 
+Eine Clientanwendung ruft die **MAPIUninitialize-Funktion** auf, um die Interaktion mit MAPI zu beenden, die mit einem Aufruf der [MAPIInitialize-Funktion begonnen](mapiinitialize.md) wurde. Nach **dem Aufruf von MAPIUninitialize** können keine weiteren MAPI-Aufrufe vom Client ausgeführt werden. 
   
- **MAPIUninitialize** dekrementiert den Verweiszähler, und die entsprechende **MAPIInitialize** -Funktion inkrementiert den Verweiszähler. Daher muss die Anzahl der Aufrufe an eine Funktion der Anzahl der Aufrufe der anderen entsprechen. 
+ **MAPIUninitialize** dekrementiert die Referenzanzahl, und die entsprechende **MAPIInitialize-Funktion** erhöht die Referenzanzahl. Daher muss die Anzahl der Aufrufe einer Funktion der Anzahl der Aufrufe an die andere entspricht. 
   
 > [!NOTE]
-> Sie können **MAPIInitialize** oder **MAPIUninitialize** nicht über eine Win32- **DllMain** -Funktion oder eine andere Funktion aufrufen, die Threads erstellt oder beendet. Weitere Informationen finden Sie unter [Verwenden von Thread sicheren Objekten](using-thread-safe-objects.md). 
+> Sie können **MAPIInitialize** oder **MAPIUninitialize** nicht innerhalb einer Win32 **DllMain-Funktion** oder einer anderen Funktion aufrufen, die Threads erstellt oder beendet. Weitere Informationen finden Sie unter [Using Thread-Safe Objects](using-thread-safe-objects.md). 
   
 

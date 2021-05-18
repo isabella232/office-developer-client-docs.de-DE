@@ -25,13 +25,13 @@ ms.locfileid: "33409209"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Konvertiert die interne Eintrags-ID eines Nachrichtenspeichers in eine Eintrags-ID, die vom Messagingsystem nutzbar ist. 
+Konvertiert den internen Eintragsbezeichner eines Nachrichtenspeichers in einen Eintragsbezeichner, der vom Messagingsystem besser verwendet werden kann. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 WrapStoreEntryID(
@@ -48,42 +48,42 @@ WrapStoreEntryID(
 
  _ulFlags_
   
-> in Bitmaske von Flags. Das folgende Flag kann festgelegt werden:
+> [in] Bitmaske von Flags. Das folgende Flag kann festgelegt werden:
     
 MAPI_UNICODE 
   
-> Die Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format. 
+> Die Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Zeichenfolgen im ANSI-Format. 
     
  _szDLLName_
   
-> in Der Name der DLL des Nachrichtenspeicher Anbieters. 
+> [in] Der Name der Nachrichtenspeicheranbieter-DLL. 
     
  _cbOrigEntry_
   
-> in Größe (in Bytes) der ursprünglichen Eintrags-ID für den Nachrichtenspeicher. 
+> [in] Größe des ursprünglichen Eintragsbezeichners für den Nachrichtenspeicher in Bytes. 
     
  _lpOrigEntry_
   
-> in Zeiger auf eine [Eintrags](entryid.md) -ID-Struktur, die den ursprünglichen Eintragsbezeichner enthält. 
+> [in] Zeiger auf eine [ENTRYID-Struktur,](entryid.md) die den ursprünglichen Eintragsbezeichner enthält. 
     
  _lpcbWrappedEntry_
   
-> Out Zeiger auf die Größe des neuen Eintrags Bezeichners in Bytes. 
+> [out] Zeiger auf die Größe des neuen Eintragsbezeichners in Bytes. 
     
  _lppWrappedEntry_
   
-> Out Zeiger auf einen Zeiger auf eine **Eintrags** -ID-Struktur, die den neuen Eintragsbezeichner enthält. 
+> [out] Zeiger auf einen Zeiger auf eine **ENTRYID-Struktur,** die den neuen Eintragsbezeichner enthält. 
     
 ## <a name="return-value"></a>Return value
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Ein Nachrichtenspeicherobjekt behält eine interne Eintrags-ID bei, die nur für Dienstanbieter von Bedeutung ist, die mit diesem Nachrichtenspeicher in Kontakt stehen. Für andere Messagingkomponenten stellt MAPI eine verpackte Version des internen Eintrags Bezeichners zur Verdeutlichung bereit, die dem Nachrichtenspeicher zugeordnet ist. Der Anbieter für die Bereitstellen von Dienstanbietern sollte immer den ursprünglichen, unverpackten Nachrichtenspeicher Eintragsbezeichner erhalten. Clientanwendungen sollten immer die verpackte Version erhalten, die dann an beliebiger Stelle in der Messaging Domäne und in anderen Domänen verwendet werden kann. 
+Ein Nachrichtenspeicherobjekt behält einen internen Eintragsbezeichner bei, der nur für Dienstanbieter sinnvoll ist, die mit diesem Nachrichtenspeicher zusammenarbeiten. Für andere Messagingkomponenten stellt MAPI eine umschlossene Version des internen Eintragsbezeichners zur Verfügung, die ihn als zum Nachrichtenspeicher gehörig erkennbar macht. Coresident-Dienstanbieter sollten immer den ursprünglichen eintragsbezeichner des nachrichtenspeichers erhalten. Clientanwendungen sollten immer die umschlossene Version erhalten, die dann überall in der Messagingdomäne und in anderen Domänen verwendet werden kann. 
   
-Ein Dienstanbieter kann einen Eintragsbezeichner für den Nachrichtenspeicher mit der **WrapStoreEntryID** -Funktion oder der [IMAPISupport:: WrapStoreEntryID](imapisupport-wrapstoreentryid.md) -Methode, die die **WrapStoreEntryID** -Funktion aufruft, umschließen. Der Anbieter muss die Eintrags-ID umbrechen, wenn die **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))-Eigenschaft des Nachrichtenspeichers verfügbar gemacht oder in einen Profil Abschnitt geschrieben wird und das **PR_STORE_ENTRYID** ([pidtagstoreentryid (](pidtagstoreentryid-canonical-property.md)) Eigenschaft. MAPI umschließt eine Nachrichtenspeicher-Eintrags-ID, wenn auf einen [IMAPISession:: OpenMsgStore](imapisession-openmsgstore.md) -Aufruf reagiert wird. 
+Ein Dienstanbieter kann einen Nachrichtenspeichereintragsbezeichner mithilfe der **WrapStoreEntryID-Funktion** oder der [IMAPISupport::WrapStoreEntryID-Methode](imapisupport-wrapstoreentryid.md) umschließen, die die **WrapStoreEntryID-Funktion** aufruft. Der Anbieter muss die Eintrags-ID umschließen, wenn die **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))-Eigenschaft des Nachrichtenspeichers verfügbar ist oder in einen Profilabschnitt geschrieben wird, und wenn die **PR_STORE_ENTRYID** ([PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md)) -Eigenschaft verfügbar ist. MAPI umschließt einen Nachrichtenspeichereintragsbezeichner, wenn auf einen [IMAPISession::OpenMsgStore-Aufruf reagiert](imapisession-openmsgstore.md) wird. 
   
-Wenn eine Clientanwendung einen eingebundenen Nachrichtenspeicher-Eintragsbezeichner an MAPI übergibt, beispielsweise in einem [IMAPISession:: OpenEntry](imapisession-openentry.md) -Aufruf, wird die Eintrags-ID von MAPI vor der Verwendung zum Aufrufen einer Anbietermethode wie [IMSProvider:: LOGON](imsprovider-logon.md) oder [ IMSProvider:: CompareStoreIDs](imsprovider-comparestoreids.md). 
+Wenn eine Clientanwendung einen umschlossenen Nachrichtenspeichereintragsbezeichner an MAPI übergibt, z. B. in einem [IMAPISession::OpenEntry-Aufruf,](imapisession-openentry.md) entpackt MAPI den Eintragsbezeichner, bevor er zum Aufrufen einer Anbietermethode wie [IMSProvider::Logon](imsprovider-logon.md) oder [IMSProvider::CompareStoreIDs](imsprovider-comparestoreids.md)verwendet wird. 
   
 

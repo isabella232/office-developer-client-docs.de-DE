@@ -19,20 +19,20 @@ ms.locfileid: "33408180"
 > [!IMPORTANT]
 > Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
-- [Konvertierungsfunktionen (Access Custom Web App)](conversion-functions-access-custom-web-app.md)
+- [Konvertierungsfunktionen (benutzerdefinierte Access-Web-App)](conversion-functions-access-custom-web-app.md)
     
-- [Datenbankfunktionen (Access Custom Web App)](database-functions-access-custom-web-app.md)
+- [Datenbankfunktionen (benutzerdefinierte Access-Web-App)](database-functions-access-custom-web-app.md)
     
-- [Datum/Uhrzeit-Funktionen (Access Custom Web App)](date-time-functionsaccess-custom-web-app.md)
+- [Datums-/Uhrzeitfunktionen (benutzerdefinierte Access-Web-App)](date-time-functionsaccess-custom-web-app.md)
     
-- [Inspektionsfunktionen (Access Custom Web App)](inspection-functions-access-custom-web-app.md)
+- [Überprüfungsfunktionen (benutzerdefinierte Access-Web-App)](inspection-functions-access-custom-web-app.md)
     
-- [Mathfunktionen (Access Custom Web App)](math-functions-access-custom-web-app.md)
+- [Mathematische Funktionen (benutzerdefinierte Access-Web-App)](math-functions-access-custom-web-app.md)
     
-- [Programmflussfunktionen (Access Custom Web App)](program-flow-functions-access-custom-web-app.md)
+- [Programmflussfunktionen (benutzerdefinierte Access-Web-App)](program-flow-functions-access-custom-web-app.md)
     
-- [Text Funktionen (Access Custom Web App)](text-functions-access-custom-web-app.md)
+- [Textfunktionen (benutzerdefinierte Access-Web-App)](text-functions-access-custom-web-app.md)
     
-- [Operatoren (Access Custom Web App)](operators-access-custom-web-app.md)
+- [Operatoren (benutzerdefinierte Access-Web-App)](operators-access-custom-web-app.md)
     
 

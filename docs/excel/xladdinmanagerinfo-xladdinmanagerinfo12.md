@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - xlAddInManagerInfo
 keywords:
-- xlAddInManagerInfo-Funktion [Excel 2007]
+- xladdinmanagerinfo-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: 63a73cd2-6479-4233-ad68-93379f940717
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -22,11 +22,11 @@ ms.locfileid: "33407795"
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Wird von Microsoft Excel aufgerufen, wenn der Add-in-Manager zum ersten Mal in einer Excel-Sitzung aufgerufen wird. Diese Funktion wird verwendet, um dem Add-in-Manager Informationen zu Ihrem Add-in bereitzustellen.
+Wird von Microsoft Excel aufgerufen, wenn der Add-In-Manager zum ersten Mal in einer Excel wird. Diese Funktion wird verwendet, um dem Add-In-Manager Informationen zu Ihrem Add-In zur Verfügung zu stellen.
   
-Excel 2007 und höhere Versionen rufen **xlAddInManagerInfo12** in der Voreinstellung für **xlAddInManagerInfo** auf, wenn Sie von der XLL exportiert werden. Die **xlAddInManagerInfo12** -Funktion sollte auf die gleiche Weise funktionieren wie **xlAddInManagerInfo** , um versionsspezifische Unterschiede im Verhalten der XLL zu vermeiden. Excel erwartet, dass **xlAddInManagerInfo12** einen **XLOPER12** -Datentyp zurückgibt, wohingegen **xlAddInManagerInfo** einen **XLOPER**zurückgeben sollte.
+Excel 2007 und höher wird **xlAddInManagerInfo12** vor **xlAddInManagerInfo** angezeigt, wenn sie von der XLL exportiert werden. Die **xlAddInManagerInfo12-Funktion** sollte auf die gleiche Weise wie **xlAddInManagerInfo** funktionieren, um versionsspezifische Unterschiede im Verhalten der XLL zu vermeiden. Excel erwartet, **dass xlAddInManagerInfo12** einen **XLOPER12-Datentyp** zurück gibt, **während xlAddInManagerInfo** einen **XLOPER zurückgeben sollte.**
   
-Die **xlAddInManagerInfo12** -Funktion wird nicht von Excel-Versionen vor Excel 2007 aufgerufen, da diese die **XLOPER12**nicht unterstützen.
+Die **xlAddInManagerInfo12-Funktion** wird nicht von Versionen von Excel vor Excel 2007 aufgerufen, da diese **xlOPER12** nicht unterstützen.
   
 Excel erfordert keine XLL zum Implementieren und Exportieren einer dieser Funktionen.
   
@@ -39,17 +39,17 @@ LPXLOPER12 WINAPI xlAddInManagerInfo12(LPXLOPER12 pxAction);
 
  _pxAction:_ Ein Zeiger auf eine numerische **XLOPER/XLOPER12** (**xltypeInt** oder **xltypeNum**).
   
-Die von Excel geforderten Informationen.
+Die Von Excel verlangten Informationen.
   
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-Wenn _pxAction_ die Zahl 1 ist, oder Sie kann dazu gezwungen werden, dann sollte Ihre Implementierung dieser Funktion eine Zeichenfolge zurückgeben, die einige Informationen über das Add-in enthält, in der Regel den Namen und vielleichteine Versionsnummer. Andernfalls sollte #VALUE zurückgegeben werden. 
+Wenn  _pxAction_ die Zahl 1 ist oder zu ihr gecced werden kann, sollte Ihre Implementierung dieser Funktion eine Zeichenfolge zurückgeben, die einige Informationen zum Add-In enthält, in der Regel seinen Namen und möglicherweise eine Versionsnummer. Andernfalls sollte #VALUE!. 
   
 Wenn Sie keine Zeichenfolge zurückgeben, versucht Excel, den zurückgegebenen Wert in eine Zeichenfolge zu konvertieren.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn die zurückgegebene Zeichenfolge auf dynamisch zugewiesenen Puffer zeigt, müssen Sie sicherstellen, dass dieser Puffer schließlich freigegeben wird. Wenn die Zeichenfolge von Excel zugewiesen wurde, tun Sie dies, indem Sie **xlbitXLFree**. Wenn die Zeichenfolge von der DLL zugewiesen wurde, tun Sie dies, indem Sie **xlbitDLLFree**, und Sie müssen auch in [xlAutoFree](xlautofree-xlautofree12.md) (wenn Sie ein **XLOPER**zurückgeben) oder **xlAutoFree12** (wenn Sie eine **XLOPER12**zurückgeben).
+Wenn die zurückgegebene Zeichenfolge auf dynamisch zugewiesenen Puffer verweist, müssen Sie sicherstellen, dass dieser Puffer schließlich frei wird. Wenn die Zeichenfolge von der Excel zugewiesen wurde, verwenden Sie dazu **xlbitXLFree**. Wenn die Zeichenfolge von der DLL zugewiesen wurde, verwenden Sie dazu **xlbitDLLFree** und müssen auch in [xlAutoFree](xlautofree-xlautofree12.md) (wenn Sie einen **XLOPER** zurückgeben) oder **xlAutoFree12** implementieren (wenn Sie einen **XLOPER12** zurückgeben).
   
 ## <a name="example"></a>Beispiel
 

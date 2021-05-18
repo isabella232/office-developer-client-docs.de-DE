@@ -25,7 +25,7 @@ ms.locfileid: "33407137"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ermöglicht den Zugriff auf die Statustabelle, eine Tabelle, die Informationen zu allen MAPI-Ressourcen in der Sitzung enthält.
+Bietet Zugriff auf die Statustabelle, eine Tabelle, die Informationen zu allen MAPI-Ressourcen in der Sitzung enthält.
   
 ```cpp
 HRESULT GetStatusTable(
@@ -38,15 +38,15 @@ HRESULT GetStatusTable(
 
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die das Format für Spalten bestimmt, die Zeichen Zeichenfolgen sind. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die das Format für Spalten bestimmt, die Zeichenzeichenfolgen sind. Das folgende Flag kann festgelegt werden:
     
 MAPI_UNICODE 
   
-> Die Zeichenfolgenspalten sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, sind die Zeichenfolgenspalten im ANSI-Format.
+> Die Zeichenfolgenspalten sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Zeichenfolgenspalten im ANSI-Format.
     
  _lppTable_
   
-> Out Ein Zeiger auf einen Zeiger auf die Statustabelle.
+> [out] Ein Zeiger auf einen Zeiger auf die Statustabelle.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -54,13 +54,13 @@ S_OK
   
 > Die Tabelle wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPISession::** getstatusable-Methode ermöglicht den Zugriff auf die Statustabelle, die Informationen zu allen MAPI-Ressourcen in der Sitzung enthält. Es gibt eine Zeile in der Tabelle für Informationen zum MAPI-Subsystem, eine Zeile für den MAPI-Spooler, eine Zeile für das integrierte Adressbuch und eine Zeile für jeden Dienstanbieter im Profil. 
+Die **IMAPISession::GetStatusTable-Methode** bietet Zugriff auf die Statustabelle, die Informationen zu allen MAPI-Ressourcen in der Sitzung enthält. Die Tabelle enthält eine Zeile mit Informationen zum MAPI-Subsystem, eine Zeile für den MAPI-Spooler, eine Zeile für das integrierte Adressbuch und eine Zeile für jeden Dienstanbieter im Profil. 
   
-Eine vollständige Liste der erforderlichen und optionalen Spalten in der Statustabelle finden Sie unter [Statustabellen](status-tables.md). 
+Eine vollständige Liste der erforderlichen und optionalen Spalten in der Statustabelle finden Sie unter [Status Tables](status-tables.md). 
   
-Das Festlegen des MAPI_UNICODE-Flags im _ulFlags_ -Parameter wirkt sich auf das Format der Spalten aus, die von den Methoden [IMAPITable:: QueryColumns](imapitable-querycolumns.md) und [IMAPITable:: QueryRows](imapitable-queryrows.md) zurückgegeben werden. Dieses Flag steuert auch die Eigenschaftentypen in der von der [IMAPITable:: QuerySortOrder](imapitable-querysortorder.md) -Methode zurückgegebenen Sortierreihenfolge. 
+Das Festlegen MAPI_UNICODE im  _ulFlags-Parameter_ wirkt sich auf das Format der Spalten aus, die von den [Methoden IMAPITable::QueryColumns](imapitable-querycolumns.md) und [IMAPITable::QueryRows](imapitable-queryrows.md) zurückgegeben werden. Dieses Flag steuert auch die Eigenschaftstypen in der Sortierreihenfolge, die von der [IMAPITable::QuerySortOrder-Methode zurückgegeben](imapitable-querysortorder.md) wird. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -68,7 +68,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MainDlg. cpp  <br/> |CMainDlg:: onStatus-Eigenschaft  <br/> |MFCMAPI verwendet die **IMAPISession::** getstatusable-Methode, um die zu rendernde Statustabelle abzurufen.  <br/> |
+|MainDlg.cpp  <br/> |CMainDlg::OnStatusTable  <br/> |MFCMAPI verwendet die **IMAPISession::GetStatusTable-Methode,** um die Statustabelle zu erhalten, die gerendert werden soll.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -91,5 +91,5 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
-[Status Tabellen](status-tables.md)
+[Statustabellen](status-tables.md)
 

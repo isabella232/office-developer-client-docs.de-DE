@@ -25,7 +25,7 @@ ms.locfileid: "32309723"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bricht das Senden von Benachrichtigungen ab, die zuvor mit einem Aufruf der [IMsgStore:: Advise](imsgstore-advise.md) -Methode eingerichtet wurden. 
+Bricht das Senden von Benachrichtigungen ab, die zuvor mit einem Aufruf der [IMsgStore::Advise-Methode eingerichtet](imsgstore-advise.md) wurden. 
   
 ```cpp
 HRESULT Unadvise(
@@ -37,7 +37,7 @@ HRESULT Unadvise(
 
  _ulConnection_
   
-> in Die Verbindungsnummer, die mit einer aktiven Benachrichtigungs Registrierung verknüpft ist. Der Wert von _ulConnection_ muss von einem vorherigen Aufruf der **IMsgStore:: Advise** -Methode zurückgegeben worden sein. 
+> [in] Die Verbindungsnummer, die einer aktiven Benachrichtigungsregistrierung zugeordnet ist. Der Wert von  _ulConnection_ muss von einem vorherigen Aufruf der **IMsgStore::Advise-Methode zurückgegeben** worden sein. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -45,11 +45,11 @@ S_OK
   
 > Die Registrierung wurde erfolgreich abgebrochen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMsgStore:: Unadvise** -Methode bricht eine Registrierung für die Benachrichtigung ab. **Unadvise** gibt den Zeiger auf die Advise-Senke des Anrufers frei, die er im für die Registrierung verwendeten **Advise** -Aufruf erhalten hat. 
+Die **IMsgStore::Unadvise-Methode** bricht eine Registrierung zur Benachrichtigung ab. **Unadvise** gibt seinen Zeiger auf die Ratensenke des Anrufers frei, die er im Zur Registrierung verwendeten **Anruf "Raten"** erhalten hat. 
   
-Im allgemeinen **** ruft Unadvise während des Unadvise-Aufrufs die [IUnknown:: Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) -Methode der Advise-Senke auf. **** Wenn jedoch ein anderer Thread gerade die [IMAPIAdviseSink:: OnNotify](imapiadvisesink-onnotify.md) -Methode der Advise-Senke aufruft, wird der **Freigabe** Aufruf verzögert, bis **** die OnNotify-Methode zurückgegeben wird. 
+Im Allgemeinen **ruft Unadvise** die [IUnknown::Release-Methode](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) der Ratensenke während des **Unadvise-Aufrufs** auf. Wenn jedoch ein anderer Thread die [IMAPIAdviseSink::OnNotify-Methode](imapiadvisesink-onnotify.md) der Ratensenke aufruft, wird der **Release-Aufruf** verzögert, bis die **OnNotify-Methode** zurückgegeben wird. 
   
 ## <a name="see-also"></a>Siehe auch
 

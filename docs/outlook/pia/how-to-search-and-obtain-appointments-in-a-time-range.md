@@ -57,8 +57,8 @@ In einem beliebigen Zeitraum `startTime<=endTime` würde ein Filter mit `[Start]
 In C\# können Sie den Jet-Filter wie folgt ausdrücken.
 
 ```csharp
-string filter = "[Start] <= '"
-    + endTime.ToString("g")
+string filter = "[Start] <= '&quot;
+    + endTime.ToString(&quot;g")
     + "' AND [End] >= '"
     + startTime.ToString("g") + "'";
 ```

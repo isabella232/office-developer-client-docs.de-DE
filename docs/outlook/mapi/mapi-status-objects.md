@@ -1,5 +1,5 @@
 ---
-title: MAPI-Status Objekte
+title: MAPI-Statusobjekte
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,19 +15,19 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33406745"
 ---
-# <a name="mapi-status-objects"></a>MAPI-Status Objekte
+# <a name="mapi-status-objects"></a>MAPI-Statusobjekte
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Status Objekte melden Informationen zu MAPI-Ressourcen. Beispielsweise ein Dienstanbieter, der MAPI-Übermittlungsprozess oder das Adressbuch.
+Statusobjekte melden Informationen zu MAPI-Ressourcen. Beispielsweise ein Dienstanbieter, der MAPI-Sende-/Empfangsvorgang oder das Adressbuch.
   
-Es gibt ein Status-Objekt, das Informationen zu jedem einzelnen Dienstanbieter im aktuellen Profil bereitstellt. MAPI ist für die Implementierung von Statusobjekten für das Subsystem, den MAPI-Sende-und Empfangsprozess und das Adressbuch verantwortlich. Das Subsystem Status-Objekt liefert globale Informationen. Das Status-Objekt für das integrierte Adressbuch liefert den Status aller Adressbuchanbieter, die derzeit in Betrieb sind.
+Es gibt ein Statusobjekt, das Informationen zu den einzelnen Dienstanbietern im aktuellen Profil enthält. MAPI ist für die Implementierung von Statusobjekten für das Subsystem, den MAPI-Sende-/Empfangsvorgang und das Adressbuch verantwortlich. Das Subsystemstatusobjekt stellt globale Informationen zur Verfügung. Das Statusobjekt für das integrierte Adressbuch gibt den Status aller derzeit verwendeten Adressbuchanbieter an.
   
-Jedes Status-Objekt ist in der Statustabelle enthalten, eine von MAPI verwaltete Tabelle, die Clients alle Statusinformationen für die Sitzung bereitstellt. Weitere Informationen finden Sie unter [Status Tabellen](status-tables.md). Clients können über die Tabelle oder, bei einem Dienstanbieter, über das Anmeldeobjekt auf ein bestimmtes Statusobjekt zugreifen. Um beispielsweise auf das Statusobjekt eines Adressbuch Anbieters zuzugreifen, kann ein Client **IABLogon:: OpenStatusEntry**aufrufen. Weitere Informationen finden Sie unter [IABLogon:: OpenStatusEntry](iablogon-openstatusentry.md).
+Jedes Statusobjekt ist in der Statustabelle enthalten, einer von MAPI verwalteten Tabelle, die Clients alle Statusinformationen für die Sitzung zur Verfügung stellt. Weitere Informationen finden Sie unter [Status Tables](status-tables.md). Clients können über die Tabelle oder für einen Dienstanbieter über das Anmeldeobjekt auf ein bestimmtes Statusobjekt zugreifen. Um beispielsweise auf das Statusobjekt eines Adressbuchanbieters zu zugreifen, kann ein Client **IABLogon::OpenStatusEntry aufrufen.** Weitere Informationen finden Sie unter [IABLogon::OpenStatusEntry](iablogon-openstatusentry.md).
   
-Clients können Status-Objekte für folgende Zwecke verwenden:
+Clients können Statusobjekte verwenden, um:
   
 - Erfahren Sie mehr über den Status einer Sitzung.
     
@@ -37,14 +37,14 @@ Clients können Status-Objekte für folgende Zwecke verwenden:
     
 - Anzeigen oder Ändern der Konfiguration und des Status einer Ressource.
     
-Jedes Status-Objekt implementiert die **IMAPIStatus** -Schnittstelle. Weitere Informationen finden Sie unter [IMAPIStatus: IMAPIProp](imapistatusimapiprop.md). Allerdings unterstützt nicht jedes Status-Objekt vollständig jede **IMAPIStatus** -Methode. Da es in den von einem Status-Objekt unterstützten Methoden Variationen gibt, müssen sich die Clients über ein bestimmtes Statusobjekt informieren, bevor es verwendet werden kann. Status Objekte sind erforderlich, um Informationen zu Ihren Features in den folgenden drei Eigenschaften zu veröffentlichen: 
+Jedes Statusobjekt implementiert die **IMAPIStatus-Schnittstelle.** Weitere Informationen finden Sie unter [IMAPIStatus : IMAPIProp](imapistatusimapiprop.md). Nicht jedes Statusobjekt unterstützt jedoch jede **IMAPIStatus-Methode** vollständig. Da es Variationen in den Methoden gibt, die von einem Statusobjekt unterstützt werden, müssen Clients mehr über ein bestimmtes Statusobjekt erfahren, bevor sie es verwenden können. Statusobjekte müssen Informationen zu ihren Features in den folgenden drei Eigenschaften veröffentlichen: 
   
- **PR_RESOURCE_METHODS** ([Pidtagresourcemethods (](pidtagresourcemethods-canonical-property.md)) 
+ **PR_RESOURCE_METHODS** ([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md)) 
   
- **PR_RESOURCE_TYPE** ([Pidtagresourcetype (](pidtagresourcetype-canonical-property.md)) 
+ **PR_RESOURCE_TYPE** ([PidTagResourceType](pidtagresourcetype-canonical-property.md)) 
   
- **PR_RESOURCE_FLAGS** ([Pidtagresourceflags (](pidtagresourceflags-canonical-property.md)) 
+ **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) 
   
-Weitere Informationen zum Implementieren eines Status-Objekts finden Sie unter [Status Object Implementation](status-object-implementation.md). Weitere Informationen zur Verwendung eines Status-Objekts finden Sie unter [Status Table-und Status-Objekte](status-table-and-status-objects.md).
+Weitere Informationen zum Implementieren eines Statusobjekts finden Sie unter [Status Object Implementation](status-object-implementation.md). Weitere Informationen zur Verwendung eines Statusobjekts finden Sie unter [Status Table und Status Objects](status-table-and-status-objects.md).
   
 

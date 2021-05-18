@@ -15,25 +15,25 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33407865"
 ---
-# <a name="managing-memory-for-adrlist-and-srowset-structures"></a>Verwalten von Speicher für ADRLIST-und SRowSet-Strukturen "
+# <a name="managing-memory-for-adrlist-and-srowset-structures"></a>Verwalten des Arbeitsspeichers für ADRLIST- und SRowSet-Strukturen"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die Anforderung zum Zuweisen des gesamten Speichers für einen Puffer, wann immer möglich mit einem einzelnen **MAPIAllocateBuffer** -Aufruf gilt nicht bei der Verwendung der Adressliste oder **ADRLIST**-und Zeilensatz-oder **SRowSet**-Strukturen. 
+Die Anforderung, bei einem einzelnen **MAPIAllocateBuffer-Aufruf** nach Möglichkeit allen Arbeitsspeicher für einen Puffer zuzuordnen, gilt nicht, wenn die Adressliste oder **ADRLIST** und zeilensatz- oder **SRowSet**-Strukturen verwendet werden. 
   
-Diese beiden Strukturen sind Ausnahmen für die Standardregeln für das zuordnen und Freigeben von Arbeitsspeicher. Sie enthalten mehrere Ebenen von Strukturen und sollen das Hinzufügen oder Entfernen einzelner Elemente ermöglichen. Daher muss jede Eigenschaft eine separate Zuordnung sein. 
+Diese beiden Strukturen sind Ausnahmen von den Standardregeln für die Zuweisung und Freigabe von Arbeitsspeicher. Sie enthalten mehrere Ebenen von Strukturen und sollen das Hinzufügen oder Entfernen einzelner Elemente ermöglichen. Daher muss jede Eigenschaft eine separate Zuordnung sein. 
 
-Wo die meisten Strukturen mit einem Aufruf von **mapifreebufferfreigegeben**freigegeben werden, muss jeder einzelne Eintrag in einer **ADRLIST** -oder **SRowSet** -Struktur mit einem eigenen Aufruf von **mapifreebufferfreigegeben** oder einem einzelnen Aufruf von **FreeProws** oder ** FreePadrlist**. Weitere Informationen finden Sie unter [mapifreebufferfreigegeben](mapifreebuffer.md), [ADRLIST](adrlist.md)und [SRowSet](srowset.md). 
+Wenn die meisten Strukturen mit einem Aufruf von **MAPIFreeBuffer** frei werden, muss jeder einzelne Eintrag in einer **ADRLIST-** oder **SRowSet-Struktur** mit einem eigenen Aufruf von **MAPIFreeBuffer** oder einem einzelnen Aufruf von **FreeProws** oder **FreePadrlist** frei werden. Weitere Informationen finden Sie unter [MAPIFreeBuffer](mapifreebuffer.md), [ADRLIST](adrlist.md)und [SRowSet](srowset.md). 
 
-**FreeProws** und **FREEPADRLIST** sind von MAPI bereitgestellte Funktionen zur Vereinfachung der Freigabe dieser Datenstrukturen. Weitere Informationen finden Sie unter [FreeProws](freeprows.md) und [FreePadrlist](freepadrlist.md). **FreePadrlist** gibt den Arbeitsspeicher für die **ADRLIST** -Struktur und den gesamten zugeordneten Arbeitsspeicher für die Strukturmember frei. **FreeProws** führt dasselbe für die **SRowSet** -Struktur aus. 
+**FreeProws** und **FreePadrlist** sind Funktionen, die von MAPI bereitgestellt werden, um das Freispeichern dieser Datenstrukturen zu vereinfachen. Weitere Informationen finden Sie unter [FreeProws](freeprows.md) und [FreePadrlist](freepadrlist.md). **FreePadrlist** gibt den Arbeitsspeicher für die **ADRLIST-Struktur** sowie den zugeordneten Arbeitsspeicher für die Strukturmitglieder frei. **FreeProws** führt dasselbe für die **SRowSet-Struktur** aus. 
   
-Das folgende Diagramm zeigt das Layout einer **ADRLIST** -Datenstruktur, die die getrennten Speicherzuordnungen angibt, die erforderlich sind. Die grauen Felder zeigen Arbeitsspeicher, der mit einem Anruf reserviert und freigegeben werden kann. 
+Das folgende Diagramm zeigt das Layout einer **ADRLIST-Datenstruktur,** die die erforderlichen separaten Speicherzuweisungen angibt. In den grauen Feldern wird der Speicher angezeigt, der mit einem Aufruf zugewiesen und freigegeben werden kann. 
   
 **ADRLIST-Speicherzuweisung**
   
-![ADRLIST-Speicherbelegung] (media/amapi_52.gif "ADRLIST-Speicherbelegung")
+![ADRLIST-Speicherzuweisung](media/amapi_52.gif "ADRLIST-Speicherzuweisung")
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Verwalten von Speicher in MAPI](managing-memory-in-mapi.md)
+- [Verwalten von Arbeitsspeicher in MAPI](managing-memory-in-mapi.md)
 

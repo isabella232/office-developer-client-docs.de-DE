@@ -25,7 +25,7 @@ ms.locfileid: "33408131"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Führt eine Namensauflösung durch und weist Empfängern in einer Empfängerliste Eintragsbezeichner zu.
+Führt die Namensauflösung durch und weist Empfängern in einer Empfängerliste Eintragsbezeichner zu.
   
 ```cpp
 HRESULT ResolveName(
@@ -40,81 +40,81 @@ HRESULT ResolveName(
 
  _ulUIParam_
   
-> in Ein Handle für das übergeordnete Fenster eines Dialogfelds, das angezeigt wird, falls angegeben, um den Benutzer aufzufordern, Mehrdeutigkeiten aufzulösen.
+> [in] Ein Handle zum übergeordneten Fenster eines Dialogfelds, das angezeigt wird, falls angegeben, um den Benutzer zur Lösung von Mehrdeutigkeiten aufforderen.
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die verschiedene Aspekte des Lösungsprozesses steuern. Die folgenden Flags können festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die verschiedene Aspekte des Auflösungsprozesses steuern. Die folgenden Kennzeichen können festgelegt werden:
     
 AB_UNICODEUI
   
-> Gibt an, dass _lpszNewEntryTitle_ eine Unicode-Zeichenfolge ist. 
+> Gibt an,  _dass lpszNewEntryTitle eine_ UNICODE-Zeichenfolge ist. 
     
 MAPI_CACHE_ONLY
   
-> Verwenden Sie nur das Offlineadressbuch, um die Namensauflösung durchzuführen. Sie können dieses Flag beispielsweise verwenden, um einer Clientanwendung die globale Adressliste (GAL) im Exchange-Cache-Modus zu öffnen und auf einen Eintrag in diesem Adressbuch aus dem Cache zuzugreifen, ohne Datenverkehr zwischen dem Client und dem Server zu erstellen. Dieses Flag wird nur vom Exchange-Adressbuchanbieter unterstützt.
+> Verwenden Sie nur das Offlineadressbuch, um die Namensauflösung durchzuführen. Sie können dieses Flag beispielsweise verwenden, um einer Clientanwendung zu ermöglichen, die globale Adressliste (GAL) im Exchange-Cache-Modus zu öffnen und aus dem Cache auf einen Eintrag in diesem Adressbuch zu zugreifen, ohne Datenverkehr zwischen dem Client und dem Server zu erstellen. Dieses Flag wird nur vom adressbuchanbieter Exchange unterstützt.
     
 MAPI_DIALOG 
   
-> Zeigt ein Dialogfeld an, in dem der Benutzer zusätzliche Informationen zur Namensauflösung anfordern können. Wenn dieses Flag nicht festgelegt ist, wird kein Dialogfeld angezeigt. 
+> Zeigt ein Dialogfeld an, in dem der Benutzer weitere Informationen zur Namensauflösung einfordert. Wenn dieses Kennzeichen nicht festgelegt ist, wird kein Dialogfeld angezeigt. 
     
 MAPI_UNICODE 
   
-> Gibt an, dass die in der Adressliste zurückgegebenen Eigenschaften vom Typ PT_UNICODE anstelle von PT_STRING8 sein sollen. 
+> Gibt an, dass die in der Adressliste zurückgegebenen Eigenschaften vom Typ PT_UNICODE anstatt PT_STRING8. 
     
  _lpszNewEntryTitle_
   
-> in Ein Zeiger auf Text für den Titel des Steuerelements im Dialogfeld, in dem der Benutzer zur Eingabe eines Empfängers aufgefordert wird. Der Titel variiert je nach Empfängertyp. Der _lpszNewEntryTitle_ -Parameter kann NULL sein. 
+> [in] Ein Zeiger auf Text für den Titel des Steuerelements im Dialogfeld, mit dem der Benutzer zur Eingabe eines Empfängers aufgefordert wird. Der Titel variiert je nach Empfängertyp. Der  _lpszNewEntryTitle-Parameter_ kann NULL sein. 
     
  _lpAdrList_
   
-> [in-out] Ein Zeiger auf eine [ADRLIST](adrlist.md) -Struktur, die die Liste der zu lösenden Empfängernamen enthält. Diese **ADRLIST** -Struktur kann von der [IAddrBook:: Address](iaddrbook-address.md) -Methode erstellt werden. 
+> [in-out] Ein Zeiger auf eine [ADRLIST-Struktur,](adrlist.md) die die Liste der empfängernamen enthält, die aufgelöst werden sollen. Diese **ADRLIST-Struktur** kann mit der [IAddrBook::Address-Methode erstellt](iaddrbook-address.md) werden. 
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Prozess der Namensauflösung war erfolgreich.
+> Der Namensauflösungsprozess ist erfolgreich.
     
 MAPI_E_AMBIGUOUS_RECIP 
   
-> Mindestens ein Empfänger im _lpAdrList_ -Parameter entsprach mehr als einem Eintrag im Adressbuch. In der Regel wird dieser Wert zurückgegeben, wenn das MAPI_DIALOG-Flag festgelegt ist, um die Anzeige eines Dialog Felds zu verbieten. 
+> Mindestens ein Empfänger im  _lpAdrList-Parameter_ hat mehreren Eintrag im Adressbuch entsprechen. In der Regel wird dieser Wert zurückgegeben, wenn MAPI_DIALOG festgelegt ist, was die Anzeige eines Dialogfelds verhindert. 
     
 MAPI_E_NOT_FOUND 
   
-> Mindestens ein Empfänger im _lpAdrList_ -Parameter kann nicht aufgelöst werden. In der Regel wird dieser Wert zurückgegeben, wenn das MAPI_DIALOG-Flag festgelegt ist, um die Anzeige eines Dialog Felds zu verbieten. 
+> Mindestens ein Empfänger im  _lpAdrList-Parameter_ kann nicht aufgelöst werden. In der Regel wird dieser Wert zurückgegeben, wenn MAPI_DIALOG festgelegt ist, was die Anzeige eines Dialogfelds verhindert. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Clients und Dienstanbieter rufen die **** ResolveName-Methode auf, um den Prozess der Namensauflösung zu initiieren. Ein nicht aufgelöster Eintrag ist ein Eintrag, der noch nicht über eine Eintrags-ID oder **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))-Eigenschaft verfügt.
+Clients und Dienstanbieter rufen die **ResolveName-Methode** auf, um den Namensauflösungsprozess zu initiieren. Ein nicht aufgelöster Eintrag ist ein Eintrag, der noch keinen Eintragsbezeichner oder keine **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) -Eigenschaft hat.
   
- **** ResolveName durchläuft den folgenden Prozess für jeden nicht aufgelösten Eintrag in der Adressliste, die im _lpAdrList_ -Parameter übergeben wird. 
+ **ResolveName** durchgeht den folgenden Prozess für jeden nicht aufgelösten Eintrag in der Adressliste, der im  _lpAdrList-Parameter übergeben_ wird. 
   
-1. Wenn der Adresstyp des Empfängers dem Format einer SMTP-Adresse ( _DisplayName_@ _Domain. Top-Level-Domain_) entspricht, weist ResolveName eine einmalige Eintrags-ID zu. **** 
+1. Wenn der Adresstyp des Empfängers dem Format einer SMTP-Adresse ( _Anzeigename_ @  _domain.top-level-domain)_ zuzuordnen ist, weist **ResolveName** ihm eine eindeutige Eintrags-ID zu. 
     
-2. Für jeden Container in der **PR_AB_SEARCH_PATH** ([pidtagabsearchpath (](pidtagabsearchpath-canonical-property.md))-Eigenschaft **** ruft ResolveName die [IABContainer:: ResolveNames](iabcontainer-resolvenames.md) -Methode auf. **ResolveNames** versucht, den Anzeigenamen aller nicht aufgelösten Empfänger mit einem Anzeigenamen zu vergleichen, der zu einem der Einträge gehört. 
+2. Für jeden Container in der **PR_AB_SEARCH_PATH** ([PidTagAbSearchPath](pidtagabsearchpath-canonical-property.md)) -Eigenschaft ruft **ResolveName** die [IABContainer::ResolveNames-Methode](iabcontainer-resolvenames.md) auf. **ResolveNames** versucht, dem Anzeigenamen jedes nicht aufgelösten Empfängers einen Anzeigenamen zu geben, der zu einem seiner Einträge gehört. 
     
-3. Wenn ein Container **ResolveNames**nicht unterstützt, **** schränkt ResolveName die Inhaltstabelle des Containers mithilfe einer **PR_ANR** ([pidtaganr (](pidtaganr-canonical-property.md))-Eigenschaftseinschränkung ein. Diese Einschränkung bewirkt, dass der Container einen "Best Guess"-Typ der Suche ausführt, um einen übereinstimmenden Empfänger zu finden. Alle Container müssen die **PR_ANR** -Eigenschaftseinschränkung unterstützen. 
+3. Wenn ein Container **ResolveNames** nicht unterstützt, **schränkt ResolveName** die Inhaltstabelle des Containers mithilfe einer **PR_ANR** ([PidTagAnr](pidtaganr-canonical-property.md)) -Eigenschaftseinschränkung ein. Diese Einschränkung bewirkt, dass der Container eine "best guess"-Suchart zum Suchen eines übereinstimmenden Empfängers durch führt. Alle Container müssen die Einschränkung der **PR_ANR** unterstützen. 
     
-4. Wenn ein Container einen Empfänger zurückgibt, der mehreren Namen **** entspricht, zeigt ResolveName ein Dialogfeld an, wenn das MAPI_DIALOG-Flag festgelegt ist, mit dem der Benutzer den richtigen Namen auswählen kann. 
+4. Wenn ein Container einen Empfänger zurückgibt, der mehreren Namen entspricht, zeigt **ResolveName** ein Dialogfeld an, wenn das flag MAPI_DIALOG festgelegt ist, wodurch der Benutzer den richtigen Namen auswählen kann. 
     
-5. Wenn alle Container in der **PR_AB_SEARCH_PATH** -Eigenschaft aufgerufen wurden und keine Übereinstimmung gefunden wurde, bleibt der Empfänger nicht aufgelöst. 
+5. Wenn alle Container in der PR_AB_SEARCH_PATH **aufgerufen** wurden und keine Übereinstimmung gefunden wurde, bleibt der Empfänger ungelöst. 
     
-Wenn ein oder mehrere Empfänger nicht aufgelöst werden, gibt **** ResolveName MAPI_E_NOT_FOUND zurück. Wenn ein oder mehrere Empfänger eine mehrdeutige Auflösung hatten, die nicht mit einem Dialogfeld aufgelöst werden konnte, oder weil das MAPI_DIALOG-Flag **** nicht festgelegt wurde, gibt ResolveName MAPI_E_AMBIGUOUS_RECIP zurück. Wenn einige der Empfänger mehrdeutig sind und einige nicht aufgelöst werden können, **** kann ResolveName einen der beiden Fehlerwerte zurückgeben. 
+Wenn ein oder mehrere Empfänger nicht aufgelöst werden, gibt **ResolveName** MAPI_E_NOT_FOUND. Wenn ein oder mehrere Empfänger eine mehrdeutige Auflösung hatten, die nicht mit einem Dialogfeld aufgelöst werden konnte, oder weil das MAPI_DIALOG-Flag nicht festgelegt wurde, gibt **ResolveName** MAPI_E_AMBIGUOUS_RECIP. Wenn einige der Empfänger mehrdeutig sind und einige nicht aufgelöst werden können, kann **ResolveName** einen der Fehlerwerte zurückgeben. 
   
-Wenn ein Name nicht aufgelöst werden kann, kann der Client eine einmalige Adresse erstellen, die eine speziell formatierte Adress-und Eintrags-ID aufweist. Weitere Informationen zum Format von einmaligen Eintrags Bezeichnern finden Sie unter [einmalige Eintrags-IDs](one-off-entry-identifiers.md). Weitere Informationen zum Format von einmaligen Adressen finden Sie unter [einmalige Adressen](one-off-addresses.md).
+Wenn ein Name nicht aufgelöst werden kann, kann der Client eine eindeutige Adresse mit einer speziell formatierten Adresse und einem Eintragsbezeichner erstellen. Weitere Informationen zum Format von one-off-Eintragsbezeichnern finden Sie unter [One-Off Entry Identifiers](one-off-entry-identifiers.md). Weitere Informationen zum Format von einmal verwendeten Adressen finden Sie unter [One-Off Addresses](one-off-addresses.md).
   
-MAPI unterstützt Unicode-Zeichenfolgen für die **ADRLIST** und die neuen Parameter für den Eintragstitel, um den Namen aufzulösen. **** Wenn Sie das MAPI_UNICODE-Flag festlegen, werden die folgenden Eigenschaften in den PT_UNICODE-Strukturen [](adrentry.md) als Typ zurückgegeben: 
+MAPI unterstützt Unicode-Zeichenzeichenfolgen für **die ADRLIST** und die neuen Eintragstitelparameter zu **ResolveName**; Wenn Sie das MAPI_UNICODE festlegen, werden die folgenden Eigenschaften als Typ zurückgegeben, PT_UNICODE in den [ADRENTRY-Strukturen](adrentry.md) verwendet werden: 
   
-- **PR_ADDRTYPE** ([Pidtagaddresstype (](pidtagaddresstype-canonical-property.md))
+- **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))
     
 - **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
     
 - **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))
     
-- **PR_TRANSMITABLE_DISPLAY_NAME** ([Pidtagtransmittabledisplayname (](pidtagtransmittabledisplayname-canonical-property.md))
+- **PR_TRANSMITABLE_DISPLAY_NAME** ([PidTagTransmittableDisplayName](pidtagtransmittabledisplayname-canonical-property.md))
     
-Die **PR_7BIT_DISPLAY_NAME** ([pidtag7bitdisplayname (](pidtag7bitdisplayname-canonical-property.md))-Eigenschaft wird jedoch immer als Typ PT_String8 zurückgegeben.
+Die eigenschaft **PR_7BIT_DISPLAY_NAME** ([PidTag7BitDisplayName](pidtag7bitdisplayname-canonical-property.md)) wird jedoch immer als Typ PT_STRING8.
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -122,8 +122,8 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIABFunctions. cpp  <br/> |AddOneOffAddress  <br/> |MFCMAPI verwendet die **** ResolveName-Methode, um eine einmalige Adresse aufzulösen, bevor Sie einer Nachricht hinzugefügt wird.  <br/> |
-|MAPIABFunctions. cpp  <br/> |AddRecipient  <br/> |MFCMAPI verwendet die **** ResolveName-Methode, um einen Adressbucheintrag anhand des Anzeigenamens zu suchen.  <br/> |
+|MAPIABFunctions.cpp  <br/> |AddOneOffAddress  <br/> |MFCMAPI verwendet die **ResolveName-Methode,** um eine einmal festgelegte Adresse zu lösen, bevor sie einer Nachricht hinzugefügt wird.  <br/> |
+|MAPIABFunctions.cpp  <br/> |AddRecipient  <br/> |MFCMAPI verwendet die **ResolveName-Methode,** um einen Adressbucheintrag nach Anzeigenamen zu suchen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

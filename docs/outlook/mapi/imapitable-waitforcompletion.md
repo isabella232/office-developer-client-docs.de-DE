@@ -25,7 +25,7 @@ ms.locfileid: "33407060"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Hält die Verarbeitung an, bis mindestens ein asynchroner Vorgang abgeschlossen ist, der in der Tabelle ausgeführt wurde.
+Die Verarbeitung wird angehalten, bis ein oder mehrere asynchrone Vorgänge in der Tabelle abgeschlossen sind.
   
 ```cpp
 HRESULT WaitForCompletion(
@@ -39,15 +39,15 @@ ULONG FAR * lpulTableStatus
 
  _ulFlags_
   
-> Reserviert muss NULL sein.
+> Reserviert; muss null sein.
     
  _ulTimeout_
   
-> in Maximale Anzahl von Millisekunden, die gewartet werden soll, bis der asynchrone Vorgang abgeschlossen ist. Wenn auf unbestimmte Zeit gewartet werden soll, bis der Abschluss auftritt, legen Sie _ulTimeout_ auf 0xFFFFFFFF. 
+> [in] Maximale Anzahl von Millisekunden, bis der asynchrone Vorgang abgeschlossen ist. Legen Sie  _ulTimeout_ auf 0xFFFFFFFF. 
     
  _lpulTableStatus_
   
-> [in, out] Bei der Eingabe ein gültiger Zeiger oder NULL. Wenn _lpulTableStatus_ ein gültiger Zeiger ist, zeigt er auf den letzten Status der Tabelle. Wenn _lpulTableStatus_ ist, werden keine Statusinformationen zurückgegeben. Wenn **WaitForCompletion** einen nicht erfolgreichen HRESULT-Wert zurückgibt, sind die Inhalte von _lpulTableStatus_ nicht definiert. 
+> [in, out] Bei der Eingabe entweder ein gültiger Zeiger oder NULL. Wenn  _lpulTableStatus_ bei der Ausgabe ein gültiger Zeiger ist, zeigt er auf den neuesten Status der Tabelle. Wenn  _lpulTableStatus_ NULL ist, werden keine Statusinformationen zurückgegeben. Wenn **WaitForCompletion** einen nicht erfolgreichen HRESULT-Wert zurückgibt, ist der Inhalt von  _lpulTableStatus_ nicht definiert. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -57,15 +57,15 @@ S_OK
     
 MAPI_E_NO_SUPPORT 
   
-> Die Tabelle unterstützt nicht das warten auf den Abschluss von asynchronen Vorgängen.
+> Die Tabelle unterstützt nicht das Warten auf den Abschluss asynchroner Vorgänge.
     
 MAPI_E_TIMEOUT 
   
-> Der asynchrone Vorgang oder die Vorgänge wurden nicht in der angegebenen Zeit abgeschlossen.
+> Der asynchrone Vorgang oder die asynchronen Vorgänge wurden zum angegebenen Zeitpunkt nicht abgeschlossen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Mit der **IMAPITable:: WaitForCompletion** -Methode wird die Verarbeitung angehalten, bis alle asynchronen Vorgänge, die für die Tabelle ausgeführt werden, abgeschlossen sind. **WaitForCompletion** kann die asynchrone Vorgänge vollständig abgeschlossen oder für eine bestimmte Anzahl von Millisekunden ausgeführt, wie durch _ulTimeout_, bevor Sie unterbrochen wird. Um asynchrone Vorgänge zu finden, die ausgeführt werden, rufen Sie die [IMAPITable:: GetStatus](imapitable-getstatus.md) -Methode auf. 
+Die **IMAPITable::WaitForCompletion-Methode** setzt die Verarbeitung aus, bis alle derzeit für die Tabelle ausgeführten asynchronen Vorgänge abgeschlossen sind. **WaitForCompletion** kann zulassen, dass die asynchronen Vorgänge entweder vollständig abgeschlossen oder für eine bestimmte Anzahl von Millisekunden ausgeführt werden, wie von  _ulTimeout_ angegeben, bevor sie unterbrochen werden. Rufen Sie die [IMAPITable::GetStatus-Methode](imapitable-getstatus.md) auf, um asynchrone Vorgänge zu erkennen, die ausgeführt werden. 
   
 ## <a name="see-also"></a>Siehe auch
 

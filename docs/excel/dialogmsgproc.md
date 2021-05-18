@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - DIALOGMsgProc
 keywords:
-- dialogmsgproc-Funktion [Excel 2007]
+- dialogmsgproc-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: 9a538e83-ba34-4806-bb8c-7cda3beb6b66
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -22,7 +22,7 @@ ms.locfileid: "33406514"
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Dieses Verfahren ist dem systemeigenen Windows-Dialogfeld zugeordnet, das von [fShowDialog](fshowdialog.md) angezeigt wird. Es stellt die von Windows aufgerufenen Dienstroutinen für die Ereignisse (Nachrichten) bereit, die auftreten, wenn der Benutzer eines der Schaltflächen, Eingabefelder oder Steuerelemente des Dialogfelds betreibt. 
+Dieses Verfahren ist dem systemeigenen Windows, das [von fShowDialog angezeigt wird,](fshowdialog.md) zugeordnet. Es stellt die von Windows aufgerufenen Dienstroutinen für die Ereignisse (Nachrichten) zur Verfügung, die auftreten, wenn der Benutzer eine der Schaltflächen, Eingabefelder oder Steuerelemente des Dialogfelds betreibt. 
   
 ```cs
 BOOL CALLBACK DIALOGMsgProc(HWND hWndDlg, UINT message, WPARAM wParam, LPARAM lParam);
@@ -34,23 +34,23 @@ BOOL CALLBACK DIALOGMsgProc(HWND hWndDlg, UINT message, WPARAM wParam, LPARAM lP
   
 Enthält das HWND-Windows-Handle des Dialogfelds.
   
- _Nachricht_ (**Uint**)
+ _message_ (**UINT**)
   
-Die Nachricht, auf die geantwortet werden soll.
+Die Nachricht, auf die reagiert werden soll.
   
- _wParam_ (**WParam**)
+ _wParam_ (**WPARAM**)
   
- _LPARAM_ (**LPARAM**)
+ _lParam_ (**LPARAM**)
   
-Von Windows übergebene Argumente.
+Argumente, die von Windows.
   
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
- **True** , wenn die Nachricht verarbeitet, **false** , wenn nicht. 
+ **TRUE,** wenn die Nachricht verarbeitet wird, **FALSE,** wenn nicht. 
   
 ### <a name="example"></a>Beispiel
 
-Den `\SAMPLES\GENERIC\GENERIC.C` Quellcode für diese Funktion finden Sie unter. 
+Den  `\SAMPLES\GENERIC\GENERIC.C` Quellcode für diese Funktion finden Sie unter. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: ba1b9425-6c16-cab2-da0a-a21734118098
-description: Dieses Thema zeigt eine Funktion, ReadTimeZones, die die beiden Funktionen BinToTZDEFINITION und BinToTZREG, um die Zeitzoneneigenschaften Pidlidappointmenttimezonedefinitionstartdisplay (und Pidlidtimezonestruct (aus einem Termin zu lesen.
+description: In diesem Thema wird die Funktion ReadTimeZones gezeigt, die die beiden Funktionen BinToTZDEFINITION und BinToTZREG aufruft, um die Zeitzoneneigenschaften PidLidAppointmentTimeZoneDefinitionStartDisplay und PidLidTimeZoneStruct aus einem Termin zu lesen.
 ms.openlocfilehash: 67755ba49c5572005c6138e34329491148a199a1
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -16,9 +16,9 @@ ms.locfileid: "32317619"
 ---
 # <a name="read-time-zone-properties-from-an-appointment"></a>Lesen von Zeitzoneneigenschaften aus einem Termin
 
-In diesem Thema wird eine Funktion `ReadTimeZones`angezeigt, die die beiden Funktionen `BinToTZDEFINITION` aufruft `BinToTZREG`und die Zeitzoneneigenschaften [pidlidappointmenttimezonedefinitionstartdisplay (](https://msdn.microsoft.com/library/08239670-3211-420c-99d7-0056ed967cb8%28Office.15%29.aspx) und [pidlidtimezonestruct (](https://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx)aus einem Termin liest.
+In diesem Thema wird eine Funktion gezeigt, die die beiden Funktionen aufruft, und , um die Zeitzoneneigenschaften  `ReadTimeZones`  `BinToTZDEFINITION`  `BinToTZREG` [PidLidAppointmentTimeZoneDefinitionStartDisplay](https://msdn.microsoft.com/library/08239670-3211-420c-99d7-0056ed967cb8%28Office.15%29.aspx) und [PidLidTimeZoneStruct](https://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx)aus einem Termin zu lesen.
   
-**Pidlidappointmenttimezonedefinitionstartdisplay (** enthält einen Stream, der dem beibehaltenen Format einer [TZDEFINITION](tzdefinition.md) -Struktur zugeordnet ist, und **pidlidtimezonestruct (** enthält einen Stream, der dem beibehaltenen Format eines [TZREG](tzreg.md) zugeordnet ist. Struktur. So erhalten Sie die genauen **TZDEFINITION** -und **TZREG** -Strukturen `BinToTZDEFINITION` und `BinToTZREG` werden verwendet, um die streamwerte dieser Eigenschaften entsprechend zu analysieren. Diese beiden Funktionen sind in [Analysieren eines Streams aus einer binären Eigenschaft definiert, um die TZDEFINITION-Struktur zu lesen](how-to-parse-stream-from-binary-property-to-read-tzdefinition-structure.md) und [einen Stream aus einer binären Eigenschaft zu analysieren, um die TZREG-Struktur zu lesen](how-to-parse-a-stream-from-a-binary-property-to-read-the-tzreg-structure.md). 
+**PidLidAppointmentTimeZoneDefinitionStartDisplay** enthält einen Datenstrom, der dem dauerhaften Format einer [TZDEFINITION-Struktur](tzdefinition.md) zu ordnet, und **PidLidTimeZoneStruct** enthält einen Datenstrom, der dem dauerhaften Format einer [TZREG-Struktur](tzreg.md) zu ordnet. Um die genauen **TZDEFINITION-** und **TZREG-Strukturen** zu erhalten und werden verwendet, um die Datenstromwerte dieser  `BinToTZDEFINITION` Eigenschaften entsprechend zu  `BinToTZREG` analysieren. Diese beiden Funktionen sind in Parse a stream from a binary property definiert, um die [TZDEFINITION-Struktur](how-to-parse-stream-from-binary-property-to-read-tzdefinition-structure.md) zu lesen und einen Datenstrom aus einer binären Eigenschaft zu analysieren, um die [TZREG-Struktur](how-to-parse-a-stream-from-a-binary-property-to-read-the-tzreg-structure.md)zu lesen. 
   
 ```cpp
 void ReadTimeZones(LPMAPIPROP lpAppointment) 

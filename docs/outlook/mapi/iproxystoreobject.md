@@ -25,28 +25,28 @@ ms.locfileid: "32315519"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Stellt ein IMAP-Speicherobjekt (Internet Message Access Protocol) bereit, das nicht umbrochen wurde und das den Zugriff auf Elemente in der PST-Datei (Personal Folders) ermöglicht, ohne die Synchronisierung aufzurufen und die Elemente herunterzuladen.
+Stellt ein ImAP-Speicherobjekt (Internet Message Access Protocol) bereit, das entpackt wurde und den Zugriff auf Elemente in der Pst -Datei (Personal Folders) ermöglicht, ohne die Synchronisierung aufrufen und die Elemente herunterladen zu müssen.
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
 |Geerbt von:  <br/> |[IUnknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx) <br/> |
-|Bereitgestellt von:  <br/> |Nachrichtenspeicher Anbieter  <br/> |
+|Bereitgestellt von:  <br/> |Anbieter des Nachrichtenspeichers  <br/> |
 |Schnittstellenbezeichner:  <br/> |**IID_IProxyStoreObject** <br/> |
    
 ## <a name="vtable-order"></a>Vtable-Reihenfolge
 
 |||
 |:-----|:-----|
-| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
-|[IProxyStoreObject::UnwrapNoRef](iproxystoreobject-unwrapnoref.md) <br/> |Ruft einen Zeiger auf einen unverpackten IMAP-Speicher ab.  <br/> |
-| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+|[IProxyStoreObject::UnwrapNoRef](iproxystoreobject-unwrapnoref.md) <br/> |Ruft einen Zeiger auf einen nicht ausgepackten IMAP-Speicher ab.  <br/> |
+| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
    
 ## <a name="remarks"></a>Hinweise
 
-Rufen Sie [IUnknown:: QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx) im Quell Nachrichtenspeicher auf, um die **IProxyStoreObject** -Schnittstelle zu erhalten. Rufen Sie dann **IProxyStoreObject:: UnwrapNoRef** auf, um das nicht verpackte Store-Objekt zu erhalten. Wenn **QueryInterface** den Fehler **MAPI_E_INTERFACE_NOT_SUPPORTED**zurückgibt, wurde der Speicher nicht umbrochen. 
+Rufen [Sie IUnknown::QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx) im Quellnachrichtenspeicher auf, um die **IProxyStoreObject-Schnittstelle abzurufen.** Rufen Sie **dann IProxyStoreObject::UnwrapNoRef auf,** um das entpackte Speicherobjekt abzurufen. Wenn **QueryInterface** den Fehler **MAPI_E_INTERFACE_NOT_SUPPORTED** zurückgibt, wurde der Speicher nicht umschlossen. 
   
-Da **UnwrapNoRef** den Verweiszähler für diesen neuen Zeiger nicht auf das Objekt des aufgepackten Speichers erhöht, sollten Sie nach dem erfolgreichen Aufruf von **UnwrapNoRef** [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) aufrufen, um den Verweiszähler beizubehalten. 
+Da **UnwrapNoRef** die Referenzanzahl für diesen neuen Zeiger nicht auf das nicht mehr ausgepackte Speicherobjekt erhöht, sollten Sie nach dem erfolgreichen Aufruf von **UnwrapNoRef** [IUnknown::AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) aufrufen, um die Referenzanzahl zu verwalten. 
   
 

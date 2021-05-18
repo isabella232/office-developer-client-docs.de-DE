@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 96ea23df-aa4f-4b3e-9663-e7db39f668c1
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 70932e703511235e9f5e32efd95b18d1b66494e2
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -25,7 +25,7 @@ ms.locfileid: "32316310"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält die URL für die Startseite eines Ordners in Microsoft Outlook. Diese Eigenschaft enthält einen binären Datenstromnamens **WebViewPersistenceObject**.
+Enthält die URL für die Homepage eines Ordners in Microsoft Outlook. Diese Eigenschaft enthält einen binären Datenstrom namens **WebViewPersistenceObject**.
   
 |||
 |:-----|:-----|
@@ -34,28 +34,28 @@ Enthält die URL für die Startseite eines Ordners in Microsoft Outlook. Diese E
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Ordner  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Für einen beliebigen Outlook-Ordner kann eine Homepage-URL angegeben werden. Auf diese Informationen kann in Outlook über die Registerkarte **Startseite** des Dialogfelds Eigenschaften für einen Ordner zugegriffen werden. 
+Eine Homepage-URL kann für jeden beliebigen Ordner Outlook werden. Auf diese Informationen kann in Outlook  der Registerkarte Startseite des Dialogfelds Eigenschaften für einen Ordner zugegriffen werden. 
   
-Abhängig von bestimmten Richtlinieneinstellungen wird die Homepage möglicherweise von Outlook ignoriert, wenn der MAPI-Speicher, der diesen Ordner enthält, MSCAP_SECURE_FOLDER_HOMEPAGES nicht in seiner [IMSCapabilities:: getCapabilities](pidtagfolderwebviewinfo-cannonical-property.md) -Implementierung meldet. 
+Abhängig von bestimmten Richtlinieneinstellungen wird die Startseite möglicherweise von Outlook ignoriert, wenn der MAPI-Speicher, der diesen Ordner enthält, MSCAP_SECURE_FOLDER_HOMEPAGES in seiner [IMSCapabilities::GetCapabilities-Implementierung](pidtagfolderwebviewinfo-cannonical-property.md) nicht MSCAP_SECURE_FOLDER_HOMEPAGES berichtet. 
   
-Sowohl der **Outlook Heute** -Ordner als auch ein öffentlicher Ordner können URLs der Homepage enthalten. Der **Outlook Heute** -Ordner verwendet jedoch einen anderen Mechanismus, um die URL der Startseite zu verwalten. Dieser Mechanismus wird in diesem Thema nicht behandelt. Ein öffentlicher Ordner kann auch eine für einen benutzerspezifische Homepage-URL enthalten. Diese Funktion wird jedoch in diesem Thema nicht beschrieben. 
+Sowohl der **Outlook als** auch ein öffentlicher Ordner können URLs für die Startseite enthalten. Der Ordner **Outlook Heute** verwendet jedoch einen anderen Mechanismus zum Verwalten der Startseiten-URL. dieser Mechanismus wird in diesem Thema nicht behandelt. In einem öffentlichen Ordner ist möglicherweise auch eine Homepage-URL definiert, die für einen Benutzer spezifisch ist. Diese Funktion wird in diesem Thema jedoch nicht beschrieben. 
   
-Der Wert dieser Eigenschaft ist ein binärer Datenstromnamens **WebViewPersistenceObject**.
+Der Wert dieser Eigenschaft ist ein binärer Datenstrom namens **WebViewPersistenceObject**.
   
-### <a name="webviewpersistenceobject-stream-structure"></a>WebViewPersistenceObject-Datenstrom Struktur
+### <a name="webviewpersistenceobject-stream-structure"></a>WebViewPersistenceObject Stream Structure
 
-Die **WebViewPersistenceObject** -Datenstrom Struktur enthält Informationen zu einer Homepage-URL für einen Ordner. 
+Die **WebViewPersistenceObject-Streamstruktur** enthält Informationen zu einer Homepage-URL für einen Ordner. 
   
-Datenelemente in dieser Struktur werden in der Little-Endian-Bytereihenfolge gespeichert, unmittelbar nach einander in der folgenden angegebenen Reihenfolge. 
+Datenelemente in dieser Struktur werden in der Bytereihenfolge little-endian gespeichert und folgen in der folgenden angegebenen Reihenfolge. 
   
 > [!NOTE]
-> In der folgenden Beschreibung werden möglicherweise nicht alle von Outlook unterstützten Feldwerte aufgeführt; Wenn Ihr Code also einen vorhandenen Stream liest, werden möglicherweise auch einige Flags gefunden, die hier nicht aufgeführt sind. Sie können diese Beschreibung jedoch zum programmgesteuerten Erstellen von Werten für die **PidTagFolderWebViewInfo** -Eigenschaft verwenden, die Outlook verstehen wird. 
+> In der folgenden Beschreibung werden möglicherweise nicht alle von der Datei unterstützten Feldwerte Outlook. Wenn Ihr Code daher einen vorhandenen Datenstrom liest, werden möglicherweise auch einige Flags gefunden, die hier nicht aufgeführt sind. Sie können diese Beschreibung jedoch verwenden, um programmgesteuert Werte für die **PidTagFolderWebViewInfo-Eigenschaft** zu erstellen, die Outlook versteht. 
   
  _dwVersion_
   
-> DWORD (4 Bytes). Die Version des Formats der Struktur. Ab Microsoft Office Outlook 2007 ist der einzige unterstützte Wert für dieses Feld wie folgt.
+> DWORD (4 Byte). Die Version des Strukturformats. Ab Microsoft Office Outlook 2007 ist der einzige unterstützte Wert für dieses Feld wie folgt.
     
 |**Wertname**|**Wert**|
 |:-----|:-----|
@@ -63,7 +63,7 @@ Datenelemente in dieser Struktur werden in der Little-Endian-Bytereihenfolge ges
    
  _dwType_
   
-> DWORD (4 Bytes). Der Typ der Homepage Informationen. Ab Microsoft Office Outlook 2007 ist der einzige unterstützte Wert für dieses Feld wie folgt.
+> DWORD (4 Byte). Der Typ der Startseiteninformationen. Ab Microsoft Office Outlook 2007 ist der einzige unterstützte Wert für dieses Feld wie folgt.
     
 |**Wertname**|**Wert**|
 |:-----|:-----|
@@ -71,33 +71,33 @@ Datenelemente in dieser Struktur werden in der Little-Endian-Bytereihenfolge ges
    
  _dwFlags_
   
-> DWORD (4 Bytes). Eine Kombination aus null oder mehr Flags, deren Werte und Bedeutungen in der folgenden Tabelle aufgeführt sind.
+> DWORD (4 Byte). Eine Kombination aus Null oder mehr Flags, deren Werte und Bedeutungen in der folgenden Tabelle aufgeführt sind.
     
-|Kennzeichenname * * * *|****Value****|****Beschreibung****|
+|Kennzeichenname****|****Value****|****Beschreibung****|
 |:-----|:-----|:-----|
-|WEBVIEW_FLAGS_SHOWBYDEFAULT  <br/> |0x00000001  <br/> |Das Kontrollkästchen **Homepage standardmäßig für diesen Ordner anzeigen** wurde auf der Registerkarte **Startseite** des Dialogfelds Eigenschaften für einen Ordner aktiviert.  <br/> |
+|WEBVIEW_FLAGS_SHOWBYDEFAULT  <br/> |0x00000001  <br/> |Das **Kontrollkästchen Homepage für** diesen Ordner standardmäßig  anzeigen wurde auf der Registerkarte Startseite des Dialogfelds Eigenschaften für einen Ordner aktiviert.  <br/> |
    
- _dwUnused [7]_
+ _dwUnused[7]_
   
-> Ein Array von 7 DWORD-Elementen (insgesamt 28 Byte). Nicht verwendete.
+> Ein Array von 7 DWORD-Elementen (insgesamt 28 Byte). Nicht verwendet.
     
 cbData
   
-> Ein ULONG (4 Bytes). Die Größe des _wzURL_ -Datenelements in Bytes. 
+> Ein ULONG (4 Byte). Die Größe des  _wzURL-Datenelements_ in Bytes. 
     
  _wzURL_
   
-> Ein Array von Typ WCHAR-Elementen. Die UTF-16-Darstellung der nullterminierten URL-Zeichenfolge der Startseite.
+> Ein Array von WCHAR-Elementen. Die UTF-16-Darstellung der URL-Zeichenfolge mit 0-gekündigter Startseite.
     
-### <a name="webviewpersistenceobject-stream-sample"></a>WebViewPersistenceObject-Stream-Beispiel
+### <a name="webviewpersistenceobject-stream-sample"></a>WebViewPersistenceObject-Streambeispiel
 
-In diesem Abschnitt wird ein Beispiel für einen **WebViewPersistenceObject** -Stream beschrieben. Der Stream gibt die URLhttps://www.microsoft.comder Startseite an. 
+In diesem Abschnitt wird ein Beispiel für einen **WebViewPersistenceObject-Stream** beschrieben. Der Datenstrom gibt die Homepage-URL " " https://www.microsoft.com an. 
   
- **Daten Dump**
+ **Datenabbild**
   
-Es folgt ein Daten Dump des Streams, wie er in einem binären Editor angezeigt würde.
+Es folgt ein Datenabbild des Datenstroms, wie er in einem binären Editor angezeigt würde.
   
-|**Datenstrom Offset**|**Datenbytes**|**ASCII-Daten**|
+|**Stream offset**|**Datenbytes**|**ASCII-Daten**|
 |:-----|:-----|:-----|
 |0000000000  <br/> | `02 00 00 00 01 00 00 00 01 00 00 00 00 00 00 00` <br/> | `?...?...?.......` <br/> |
 |0000000010  <br/> | `00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00` <br/> | `................` <br/> |
@@ -106,30 +106,30 @@ Es folgt ein Daten Dump des Streams, wie er in einem binären Editor angezeigt w
 |0000000040  <br/> | `2E 00 6D 00 69 00 63 00 72 00 6F 00 73 00 6F 00` <br/> | `..m.i.c.r.o.s.o.` <br/> |
 |0000000050  <br/> | `66 00 74 00 2E 00 63 00 6F 00 6D 00 00 00` <br/> | `f.t...c.o.m...` <br/> |
    
-Es folgt eine Analyse der Beispieldaten für den **WebViewPersistenceObject** -Stream. 
+Im Folgenden finden Sie eine Analyse der Beispieldaten für den **WebViewPersistenceObject-Stream.** 
   
  _dwVersion_
   
-> Offset 0x0 festlegen bytes: 0x00000002 (WEBVIEW_PERSISTENCE_VERSION).
+> Offset 0x0, 4 Byte: 0x00000002 (WEBVIEW_PERSISTENCE_VERSION).
     
  _dwType_
   
-> Offset 0x4 bytes: 0x00000001 (WEBVIEWURL).
+> Offset 0x4, 4 Bytes: 0x00000001 (WEBVIEWURL).
     
  _dwFlags_
   
-> Offset 0x8 bytes: 0x00000001 (WEBVIEW_FLAGS_SHOWBYDEFAULT).
+> Offset 0x8, 4 Byte: 0x00000001 (WEBVIEW_FLAGS_SHOWBYDEFAULT).
     
- _dwUnused [7]_
+ _dwUnused[7]_
   
 > Offset 0xC, 28 Byte: alle Nullen.
     
  _cbData_
   
-> Offset 0x28 bytes: 0x00000032.
+> Offset 0x28, 4 Byte: 0x00000032.
     
  _wzURL_
   
-> Offset 0X2c beansprucht, 0x32 bytes: Array von 25 WCHARs. Ein Unicode-Wert mit der Zeichenfolge 0https://www.microsoft.com(null): "".
+> Offset 0x2C, 0x32 Bytes: Array von 25 WCHARs. Ein Unicode-Wert mit Nullendzeichenfolge: " https://www.microsoft.com ".
     
 

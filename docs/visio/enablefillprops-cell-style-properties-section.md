@@ -25,19 +25,19 @@ Bestimmt, ob eine Formatvorlage Füllbereichseigenschaften enthält.
 |TRUE  <br/> |Füllbereichseigenschaften einschließen.  <br/> |
 |FALSE  <br/> |Füllbereichseigenschaften ausschließen.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle "EnableFillProps aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle EnableFillProps anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |"EnableFillProps  <br/> |
+|Zellenname:  <br/> |EnableFillProps  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle "EnableFillProps aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die EnableFillProps-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowStyle** <br/> |
 |Zellenindex:  <br/> |**visStyleIncludesFill** <br/> |
    

@@ -25,7 +25,7 @@ ms.locfileid: "33409258"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft Informationen darüber ab, was ein Informationsspeicher basierend auf der angegebenen Auswahl unterstützenkann.
+Ruft Informationen dazu ab, was ein Speicher basierend auf dem angegebenen Selektor unterstützen kann.
   
 ```cpp
 ULONG GetCapabilities( 
@@ -37,20 +37,20 @@ MSCAP_SELECTOR mscapSelector
 
  *mscapSelector* 
   
-> in Selector, der angibt, welche Funktionen zurückgegeben werden sollen.
+> [in] Auswahl, die angibt, welche Funktionen zurückzukehren sind.
     
 ## <a name="return-value"></a>Rückgabewert
 
 MSCAP_SECURE_FOLDER_HOMEPAGES
   
-> Unterstützung für Ordner-Homepages in einem nicht standardmäßigen Speicher. Dies kann zurückgegeben werden, wenn **MSCAP_SEL_FOLDER** in *mscapSelector* angegeben ist. 
+> Unterstützung für Ordnerhomepages in einem nicht standardmäßigen Speicher. Dies kann zurückgegeben werden, **wenn MSCAP_SEL_FOLDER** in *mscapSelector angegeben ist.* 
     
 MSCAP_RES_ANNOTATION
   
-> Wenn eine Einschränkung ungültige Argumente wie ungültige Eigenschaften enthält, ignoriert der Speicher die ungültigen Argumente und verarbeitet nur die gültigen Argumente. Dies kann zurückgegeben werden, wenn **MSCAP_SEL_RESTRICTION** in *mscapSelector* angegeben ist. 
+> Wenn eine Einschränkung ungültige Argumente wie ungültige Eigenschaften enthält, ignoriert der Speicher die ungültigen Argumente und verarbeitet nur die gültigen Argumente. Dies kann zurückgegeben werden, **MSCAP_SEL_RESTRICTION** in *mscapSelector angegeben ist.* 
     
 NULL
   
-> Der Informationsspeicher unterstützt keine Funktionen basierend auf der angegebenen Auswahl.
+> Der Speicher unterstützt keine Funktionen basierend auf dem angegebenen Selektor.
     
 

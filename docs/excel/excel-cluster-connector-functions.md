@@ -1,5 +1,5 @@
 ---
-title: Excel-Cluster-Konnektorfunktionen
+title: Excel Clusterconnectorfunktionen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -14,17 +14,17 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33408586"
 ---
-# <a name="excel-cluster-connector-functions"></a>Excel-Cluster-Konnektorfunktionen
+# <a name="excel-cluster-connector-functions"></a>Excel Clusterconnectorfunktionen
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Microsoft Excel 2013-Cluster-Connector-DLLs müssen die in diesem Abschnitt beschriebenen Funktionen implementieren.
+Microsoft Excel 2013 Clusterconnector-DLLs müssen die in diesem Abschnitt beschriebenen Funktionen implementieren.
   
-Die in den Referenzthemen in diesem Abschnitt genannten Rückgabewerte sind in der SDK-Include-Datei xlcall. h definiert.
+Die in den Referenzthemen in diesem Abschnitt erwähnten Rückgabewerte sind in der SDK-Includedatei xlcall.h definiert.
   
-## <a name="cluster-connector-architecture"></a>Cluster-Connector-Architektur
+## <a name="cluster-connector-architecture"></a>Clusterconnectorarchitektur
 
-Excel ruft Einstiegspunkte in einem Cluster-Konnektor auf, um benutzerdefinierte Funktionsaufrufe an einen Hochleistungs-Compute-Cluster und für die Cluster Sitzungsverwaltung zu übertragen.
+Excel aufruft Einstiegspunkte in einem Clusterconnector, um benutzerdefinierte Funktionsaufrufe an einen Hochleistungs-Computecluster und für die Clustersitzungsverwaltung zu übertragen.
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 

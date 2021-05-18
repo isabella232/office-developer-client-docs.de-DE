@@ -39,52 +39,52 @@ HRESULT ExtractProps(
 
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die Steuern, wie Eigenschaften decodiert werden. Die folgenden Flags können festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie Eigenschaften decodiert werden. Die folgenden Kennzeichen können festgelegt werden:
     
 TNEF_PROP_EXCLUDE 
   
-> Decodiert alle Eigenschaften, die nicht im _lpPropList_ -Parameter angegeben sind. 
+> Decodiert alle Eigenschaften, die nicht im  _lpPropList-Parameter angegeben_ sind. 
     
 TNEF_PROP_INCLUDE 
   
-> Decodiert alle in _lpPropList_angegebenen Eigenschaften.
+> Decodiert alle in _lpPropList angegebenen Eigenschaften._
     
  _lpPropList_
   
-> in Ein Zeiger auf die Liste der Eigenschaften, die in den Decodierungsvorgang eingeschlossen oder daraus ausgeschlossen werden sollen.
+> [in] Ein Zeiger auf die Liste der Eigenschaften, die in den Decodierungsvorgang aufgenommen oder aus dem Decodierungsvorgang ausgeschlossen werden.
     
  _lpProblems_
   
-> Out Ein Zeiger auf einen Zeiger auf eine zurückgegebene [STnefProblemArray](stnefproblemarray.md) -Struktur. Die **STnefProblemArray** -Struktur gibt an, welche Eigenschaften, falls vorhanden, nicht ordnungsgemäß codiert wurden. Wenn NULL im _lpProblems_ -Parameter übergeben wird, wird kein Property-Problem-Array zurückgegeben. 
+> [out] Ein Zeiger auf einen Zeiger auf eine zurückgegebene [STnefProblemArray-Struktur.](stnefproblemarray.md) Die **STnefProblemArray-Struktur** gibt an, welche Eigenschaften, falls welche, nicht ordnungsgemäß codiert wurden. Wenn NULL im  _lpProblems-Parameter_ übergeben wird, wird kein Eigenschaftsproblemarray zurückgegeben. 
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Aufruf war erfolgreich, und der erwartete Wert oder die Werte wurden zurückgegeben.
+> Der Aufruf war erfolgreich und hat den erwarteten Wert oder die erwarteten Werte zurückgegeben.
     
 MAPI_E_CORRUPT_DATA 
   
-> Daten, die in einem Stream decodiert werden, sind beschädigt.
+> Daten, die in einen Datenstrom decodiert werden, sind beschädigt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Transport Anbieter, Nachrichtenspeicher Anbieter und Gateways rufen die **ITnef:: ExtractProps** -Methode auf, um Eigenschaften aus der Kapselung einer Nachricht oder einer Anlage, die an die [OpenTnefStream](opentnefstream.md) -Funktion übergeben wurde, zu extrahieren. Der aufrufende Anbieter oder das Gateway kann eine Liste der zu decodierenden Eigenschaften angeben. Anbieter und Gateways können auch **ExtractProps** verwenden, um Informationen zur Sonderbehandlung für Anlagen bereitzustellen. 
+Transportanbieter, Nachrichtenspeicheranbieter und Gateways rufen die **ITnef::ExtractProps-Methode** auf, um Eigenschaften aus der Kapselung einer Nachricht oder einer Anlage zu extrahieren (d. h. zu decodieren), die an die [OpenTnefStream-Funktion](opentnefstream.md) übergeben wurde. Der aufrufende Anbieter oder das Gateway kann eine Liste der zu decodierenden Eigenschaften angeben. Anbieter und Gateways können **extractProps** auch verwenden, um Informationen zu einer speziellen Behandlung von Anlagen zur Verfügung zu stellen. 
   
- **ExtractProps** füllt die ursprüngliche Nachricht, die an **OpenTnefStream** übergeben wurde, mit den decodierten Eigenschaften. Nachfolgende **ExtractProps** -Aufrufe gehen zurück auf die Nachricht und extrahieren die neue Liste mit Eigenschaften. 
+ **ExtractProps** füllt die ursprüngliche Nachricht, die an **OpenTnefStream** übergeben wurde, mit den decodierten Eigenschaften auf. Nachfolgende **ExtractProps-Aufrufe** gehen zurück zur Nachricht, und extrahieren Sie die neue Liste der Eigenschaften. 
   
-Im Gegensatz zur [ITnef::](itnef-addprops.md) AddProps-Methode, die die angeforderten Aktionen in die Warteschlange stellt, bis die **ITnef:: Finish** -Methode aufgerufen wird, dekodiert die **ExtractProps** -Methode die gekapselt Eigenschaften sofort, wenn Sie aufgerufen wird. Aus diesem Grund sollte die Zielnachricht für die Kapselungs Decodierung relativ leer sein. Vorhandene Eigenschaften in der Zielnachricht werden durch gekapselte Eigenschaften überschrieben. 
+Im Gegensatz zur [ITnef::AddProps-Methode,](itnef-addprops.md) die angeforderte Aktionen in die Warteschlange einreiht, bis die **ITnef::Finish-Methode** aufgerufen wird, decodiert die **ExtractProps-Methode** die gekapselten Eigenschaften sofort, wenn sie aufgerufen wird. Aus diesem Grund sollte die Zielnachricht für die Kapselungsdecodierung relativ leer sein. Vorhandene Eigenschaften in der Zielnachricht werden durch gekapselte Eigenschaften überschrieben. 
   
- **ExtractProps** wird nur für Objekte unterstützt, die mit dem TNEF_DECODE-Flag für die **OpenTnefStream** -oder [OpenTnefStreamEx](opentnefstreamex.md) -Funktion geöffnet werden. 
+ **ExtractProps wird** nur für Objekte unterstützt, die mit dem TNEF_DECODE für die **OpenTnefStream-** oder [OpenTnefStreamEx-Funktion geöffnet](opentnefstreamex.md) werden. 
   
-Die TNEF-Implementierung meldet TNEF-Datenstrom Codierungsprobleme, ohne den **ExtractProps** -Prozess zu beenden. Die in _lpProblems_ zurückgeGebene [STnefProblemArray](stnefproblemarray.md) -Struktur gibt an, welche TNEF-Attribute oder MAPI-Eigenschaften, falls vorhanden, nicht verarbeitet werden konnten. Der Wert, der im **SCODE** -Element einer der in **STnefProblemArray** enthaltenen **STnefProblem** -Strukturen zurückgegeben wird, gibt das spezifische Problem an. Der Anbieter oder das Gateway kann davon ausgehen, dass alle Eigenschaften oder Attribute, für die **ExtractProps** keinen Problembericht zurückgibt, erfolgreich verarbeitet wurden. 
+Die TNEF-Implementierung meldet TNEF-Streamcodierungsprobleme, ohne den **ExtractProps-Prozess zu** beenden. Die in _lpProblems_ zurückgegebene [STnefProblemArray-Struktur](stnefproblemarray.md) gibt an, welche TNEF-Attribute oder MAPI-Eigenschaften (falls welche) nicht verarbeitet werden konnten. Der im **scode-Element** der in **STnefProblemArray enthaltene STnefProblemProblem-Struktur** zurückgegebene Wert gibt das spezifische Problem an.  Der Anbieter oder das Gateway kann davon ausgehen, dass alle Eigenschaften oder Attribute, für die **ExtractProps** keinen Problembericht zurück gibt, erfolgreich verarbeitet wurden. 
   
 > [!NOTE]
-> Wenn eine Eigenschaft im MAPI-Kapselungs Block nicht verarbeitet werden kann und der Datenstrom während der Decodierung eines TNEF-Streams unzuverlässig bleibt, wird die Decodierung des Kapselungs Blocks beendet und ein Problem gemeldet. Das Problem Array für diesen Problemtyp enthält 0L für das **ulPropTag** `attMAPIProps` -Element `attAttachment` oder für das **ulAttribute** -Element und MAPI_E_UNABLE_TO_COMPLETE für das **SCODE** -Element. Beachten Sie, dass die Decodierung des Streams nicht angehalten wird, sondern nur die Decodierung des MAPI-Kapselungs Blocks. Die Datenstrom Decodierung wird mit dem nächsten Attributblock fortgesetzt. 
+> Wenn eine Eigenschaft im MAPI-Kapselungsblock nicht verarbeitet werden kann und der Datenstrom während der Decodierung eines TNEF-Datenstroms unzuverlässig bleibt, wird die Decodierung des Kapselungsblocks beendet, und es wird ein Problem gemeldet. Das Problemarray für diese Art von Problem enthält 0L für das **ulPropTag-Element** oder für das `attMAPIProps` `attAttachment` **ulAttribute-Element** und MAPI_E_UNABLE_TO_COMPLETE für das **scode-Element.** Beachten Sie, dass die Decodierung des Datenstroms nicht angehalten wird, sondern nur die Decodierung des MAPI-Kapselungsblocks. Die Datenstromdecodierung wird mit dem nächsten Attributblock fortgesetzt. 
   
-Wenn ein Anbieter oder Gateway nicht mit Problem Arrays funktioniert, kann er in _lppProblems_den Wert NULL überschreiten; in diesem Fall wird kein Problem Array zurückgegeben. 
+Wenn ein Anbieter oder Gateway nicht mit Problemarrays funktioniert, kann er NULL in  _lppProblems übergeben._ In diesem Fall wird kein Problemarray zurückgegeben. 
   
-Der in _lpProblems_ zurückgegebene Wert ist nur gültig, wenn der Aufruf S_OK zurückgibt. Wenn S_OK zurückgegeben wird, sollte der Anbieter oder das Gateway die in der **STnefProblemArray** -Struktur zurückgegebenen Werte überprüfen. Wenn für den Anruf ein Fehler auftritt, wird die **STnefProblemArray** -Struktur nicht ausgefüllt, und der aufrufende Anbieter oder das Gateway sollte die Struktur nicht verwenden oder freigeben. Wenn beim Aufruf kein Fehler auftritt, muss der aufrufende Anbieter oder das Gateway den Speicher für die **STnefProblemArray** -Struktur freigeben, indem er die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion aufruft. 
+Der in  _lpProblems_ zurückgegebene Wert ist nur gültig, wenn der Aufruf eine S_OK. Wenn S_OK zurückgegeben wird, sollte der Anbieter oder das Gateway die in der **STnefProblemArray-Struktur** zurückgegebenen Werte überprüfen. Wenn beim Anruf ein Fehler auftritt, wird die **STnefProblemArray-Struktur** nicht ausgefüllt, und der aufrufende Anbieter oder das Gateway sollte die Struktur nicht verwenden oder frei geben. Wenn beim Aufruf kein Fehler auftritt, muss der aufrufende Anbieter oder das Gateway den Arbeitsspeicher für die **STnefProblemArray-Struktur** durch Aufrufen der [MAPIFreeBuffer-Funktion](mapifreebuffer.md) los. 
   
 ## <a name="see-also"></a>Siehe auch
 

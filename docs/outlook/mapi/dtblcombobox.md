@@ -25,12 +25,12 @@ ms.locfileid: "33406976"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt ein Kombinationsfeld-Steuerelement, das in einem von einer Anzeigetabelle erstellten Dialogfeldverwendet wird.
+Beschreibt ein Kombinationsfeldsteuerelement, das in einem Dialogfeld verwendet wird, das aus einer Anzeigetabelle erstellt wird.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehöriges Makro:  <br/> |[SizedDtblComboBox](sizeddtblcombobox.md) <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandtes Makro:  <br/> |[SizedDtblComboBox](sizeddtblcombobox.md) <br/> |
    
 ```cpp
 typedef struct _DTBLCOMBOBOX
@@ -44,51 +44,51 @@ typedef struct _DTBLCOMBOBOX
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **ulbLpszCharsAllowed**
   
-> Ein Offset vom Anfang der **DTBLCOMBOBOX** -Struktur zu einem Zeichenfolgenfilter, der ggf. Einschränkungen für die Zeichen beschreibt, die in das Bearbeitungssteuerelement des Kombinationsfelds eingegeben werden können. Der Filter wird nicht als regulärer Ausdruck interpretiert, und auf jedes eingegebene Zeichen wird derselbe Filter angewendet. Das Format des Filters lautet wie folgt: 
+> Ein Offset vom Anfang der **DTBLCOMBOBOX-Struktur** zu einem Zeichenzeichenfolgenfilter, der einschränkungen (sofern möglich) zu den Zeichen beschreibt, die in das Bearbeitungssteuerelement des Kombinationsfelds eingegeben werden können. Der Filter wird nicht als regulärer Ausdruck interpretiert, und auf jedes eingegebene Zeichen wird derselbe Filter angewendet. Das Format des Filters lautet wie folgt: 
     
 |**Zeichen**|**Beschreibung**|
 |:-----|:-----|
-| `*` <br/> |Ein beliebiges Zeichen ist zulässig (Beispiels `"*"`Weise).  <br/> |
-| `[ ]` <br/> |Definiert eine Gruppe von Zeichen (beispielsweise `"[0123456789]"`).  <br/> |
-| `-` <br/> |Gibt einen Zeichentyp an (beispielsweise `"[a-z]"`).  <br/> |
-| `~` <br/> |Gibt an, dass diese Zeichen nicht zulässig sind. (Beispiel: `"[~0-9]"`).  <br/> |
-| `\` <br/> |Wird verwendet, um eines der vorherigen Symbole zu zitieren ( `"[\-\\\[\]]"` beispielsweise sind \, means-, [und] characters zulässig).  <br/> |
+| `*` <br/> |Jedes Zeichen ist zulässig (z. B.  `"*"` ).  <br/> |
+| `[ ]` <br/> |Definiert eine Reihe von Zeichen (z. B.  `"[0123456789]"` ).  <br/> |
+| `-` <br/> |Gibt einen Zeichenbereich an (z. B.  `"[a-z]"` ).  <br/> |
+| `~` <br/> |Gibt an, dass diese Zeichen nicht zulässig sind. (z. B.  `"[~0-9]"` ).  <br/> |
+| `\` <br/> |Wird verwendet, um eines der vorherigen Symbole anführungszeichen (z. B.  `"[\-\\\[\]]"` bedeutet -, \, [und ] Zeichen sind zulässig).  <br/> |
    
  **ulFlags**
   
-> Bitmaske von Flags, die zum Festlegen des Formats des Zeichenfolgen Filters verwendet werden. Das folgende Flag kann festgelegt werden:
+> Bitmaske von Flags, die zum Festlegen des Formats des Zeichenzeichenfolgenfilters verwendet werden. Das folgende Flag kann festgelegt werden:
     
 MAPI_UNICODE 
   
-> Der Filter ist im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, ist der Filter im ANSI-Format.
+> Der Filter hat das Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befindet sich der Filter im ANSI-Format.
     
  **ulNumCharsAllowed**
   
-> Maximale Anzahl von Zeichen, die in das Textfeld des Kombinationsfelds eingegeben werden können.
+> Maximale Anzahl von Zeichen, die im Textfeld des Kombinationsfelds eingegeben werden können.
     
  **ulPRPropertyName**
   
-> Property-Tag für eine Eigenschaft vom Typ PT_TSTRING. 
+> Eigenschaftstag für eine Eigenschaft vom Typ PT_TSTRING. 
     
  **ulPRTableName**
   
-> Property-Tag für eine Eigenschaft vom Typ PT_OBJECT, auf der eine **IMAPITable** -Schnittstelle mithilfe eines **OpenProperty** -Aufrufs geöffnet werden kann. Die Tabelle muss eine Spalte mit einer Eigenschaft aufweisen, die denselben Typ hat wie die Eigenschaft, die vom **ulPRPropertyName** -Element angegeben wird. Die Zeilen der Tabelle werden zum Auffüllen der Liste verwendet. 
+> Eigenschaftstag für eine Eigenschaft vom Typ PT_OBJECT, auf der eine **IMAPITable-Schnittstelle** mithilfe eines **OpenProperty-Aufrufs geöffnet werden** kann. Die Tabelle muss eine Spalte mit einer Eigenschaft enthalten, die denselben Typ wie die vom **ulPRPropertyName-Element identifizierte Eigenschaft** hat. Die Zeilen der Tabelle werden zum Auffüllen der Liste verwendet. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Eine **DTBLCOMBOBOX** -Struktur beschreibt ein Kombinationsfeld ein Steuerelement, das aus einer Liste und einem Auswahlfeld besteht. In der Liste werden die Informationen angezeigt, aus denen ein Benutzer auswählen kann, und das Feldauswahl zeigt die aktuelle Auswahl an. Das Auswahlfeld ist ein Bearbeitungssteuerelement, mit dem auch Text eingegeben werden kann, der noch nicht in der Liste aufgeführt ist. 
+Eine **DTBLCOMBOBOX-Struktur** beschreibt ein Kombinationsfeld ein Steuerelement, das aus einer Liste und einem Auswahlfeld besteht. In der Liste werden die Informationen angezeigt, aus denen ein Benutzer auswählen kann, und das Auswahlfeld zeigt die aktuelle Auswahl an. Das Auswahlfeld ist ein Bearbeitungssteuerelement, das auch zum Eingeben von Text verwendet werden kann, der noch nicht in der Liste enthalten ist. 
   
-Die beiden Elemente des Property-Tags arbeiten zusammen, um die Listenanzeige mit dem Bearbeitungssteuerelement zu koordinieren. Wenn MAPI das Kombinationsfeld zuerst anzeigt, wird die **OpenProperty** -Methode der **IMAPIProp** -Implementierung aufgerufen, die der Anzeigetabelle zugeordnet ist, um die vom **ulPRTableName** -Element dargestellte Tabelle abzurufen. Diese Tabelle enthält eine Spalte eine Spalte mit Werten für die vom **ulPRPropertyName** -Element dargestellte Eigenschaft. Daher muss diese Spalte denselben Typ wie die **ulPRPropertyName** -Eigenschaft aufweisen, und beide Spalten müssen Zeichenfolgen sein. 
+Die beiden Eigenschaftentagmitglieder arbeiten zusammen, um die Listenanzeige mit dem Bearbeitungssteuerelement zu koordinieren. Wenn MAPI das Kombinationsfeld zum ersten Mal anzeigt, ruft es die **OpenProperty-Methode** der **IMAPIProp-Implementierung** auf, die der Anzeigetabelle zugeordnet ist, um die Tabelle abzurufen, die durch das **ulPRTableName-Element** dargestellt wird. Diese Tabelle hat eine Spalte eine Spalte, die Werte für die Eigenschaft enthält, die durch das **ulPRPropertyName-Element dargestellt** wird. Daher muss diese Spalte denselben Typ wie die **ulPRPropertyName-Eigenschaft** haben, und beide Spalten müssen Zeichenzeichenfolgen sein. 
   
-Die Werte für die Spalte werden im Listenabschnitt des Kombinationsfelds angezeigt. Daher ist **PR_NULL** ([pidtagnull (](pidtagnull-canonical-property.md)) kein gültiges Property-Tag für **ulPRPropertyName**. Wenn ein Benutzer eine der Zeilen auswählt oder neue Daten in das Textfeld eingibt, wird die **ulPRPropertyName** -Eigenschaft auf den ausgewählten oder eingegebenen Wert festgelegt. 
+Die Werte für die Spalte werden im Listenabschnitt des Kombinationsfelds angezeigt. Daher ist **PR_NULL** ([PidTagNull](pidtagnull-canonical-property.md)) kein gültiges Eigenschaftstag für **ulPRPropertyName**. Wenn ein Benutzer eine der Zeilen auswählt oder neue Daten in das Textfeld einbetritt, wird die **ulPRPropertyName-Eigenschaft** auf den ausgewählten oder eingegebenen Wert festgelegt. 
   
-Um einen Anfangswert für das Bearbeitungssteuerelement anzuzeigen, ruft MAPI [IMAPIProp::](imapiprop-getprops.md) GetProps auf, um die Eigenschaftswerte für die Anzeigetabelle abzurufen. Wenn eine der abgerufenen Eigenschaften mit der vom **ulPRPropertyName** -Element dargestellten Eigenschaft übereinstimmt, wird deren Wert zum Anfangswert. 
+Um einen anfänglichen Wert für das Bearbeitungssteuerelement anzuzeigen, ruft MAPI [IMAPIProp::GetProps](imapiprop-getprops.md) auf, um die Eigenschaftswerte für die Anzeigetabelle abzurufen. Wenn eine der abgerufenen Eigenschaften der Eigenschaft entspricht, die durch das **element ulPRPropertyName** dargestellt wird, wird ihr Wert zum Anfangswert. 
   
-Eine Übersicht über Anzeige Tabellen finden Sie unter [Display Tables](display-tables.md). Weitere Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
+Eine Übersicht über Anzeigetabellen finden Sie unter [Display Tables](display-tables.md). Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -96,7 +96,7 @@ Eine Übersicht über Anzeige Tabellen finden Sie unter [Display Tables](display
 
 [DTCTL](dtctl.md)
   
-[Kanonische Pidtagcontroltype (-Eigenschaft](pidtagcontroltype-canonical-property.md)
+[PidTagControlType (kanonische Eigenschaft)](pidtagcontroltype-canonical-property.md)
 
 
 [MAPI-Strukturen](mapi-structures.md)

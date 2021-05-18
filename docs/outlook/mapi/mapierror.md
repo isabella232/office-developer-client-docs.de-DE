@@ -25,11 +25,11 @@ ms.locfileid: "33409146"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Stellt detaillierte Informationen zu einem Fehler bereit, der normalerweise vom Betriebssystem, MAPI oder einem Dienstanbieter generiert wird. 
+Enthält detaillierte Informationen zu einem Fehler, der normalerweise vom Betriebssystem, der MAPI oder einem Dienstanbieter generiert wird. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _MAPIERROR
@@ -43,37 +43,37 @@ typedef struct _MAPIERROR
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **ulVersion**
   
-> Versionsnummer der Struktur. Das **ulVersion** -Element wird für zukünftige Erweiterungen verwendet und sollte auf MAPI_ERROR_VERSION festgelegt werden, das derzeit als NULL definiert ist. 
+> Versionsnummer der Struktur. Das **ulVersion-Element** wird für die zukünftige Erweiterung verwendet und sollte auf MAPI_ERROR_VERSION festgelegt werden, das derzeit als Null definiert ist. 
     
  **lpszError**
   
-> Zeiger auf eine Zeichenfolge, die den Fehler beschreibt. Diese Zeichenfolge ist im Unicode-Format, wenn der _ulFlags_ -Parameter für die Methode, in der diese Struktur verwendet wird, auf MAPI_UNICODE festgelegt ist. 
+> Zeiger auf eine Zeichenfolge, die den Fehler beschreibt. Diese Zeichenfolge wird im Unicode-Format angezeigt, wenn der  _ulFlags-Parameter_ für die Methode, in der diese Struktur verwendet wird, auf MAPI_UNICODE. 
     
  **lpszComponent**
   
-> Zeiger auf eine Zeichenfolge, die die Komponente beschreibt, die den Fehler generiert hat. Diese Zeichenfolge ist im Unicode-Format, wenn der _ulFlags_ -Parameter für die Methode, in der diese Struktur verwendet wird, auf MAPI_UNICODE festgelegt ist. 
+> Zeiger auf eine Zeichenfolge, die die Komponente beschreibt, die den Fehler generiert hat. Diese Zeichenfolge wird im Unicode-Format angezeigt, wenn der  _ulFlags-Parameter_ für die Methode, in der diese Struktur verwendet wird, auf MAPI_UNICODE. 
     
  **ulLowLevelError**
   
-> Fehlerwert auf niedriger Ebene, der nur verwendet wird, wenn der zurückzugebende Fehler niedriger ist.
+> Niedriger Fehlerwert, der nur verwendet wird, wenn der zurückgegebene Fehler auf niedriger Ebene liegt.
     
  **ulContext**
   
-> Wert, der die Position in der Komponente darstellt, auf die durch das **lpszComponent** -Element verwiesen wird, das angibt, wo der Fehler aufgetreten ist. 
+> Wert, der die Position in der Komponente darstellt, auf die das **lpszComponent-Element** verweist, das den Fehler identifiziert. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **MAPIERROR** -Struktur dient zur Beschreibung von Fehlerinformationen. Clients und Dienstanbieter übergeben einen Zeiger auf eine **MAPIERROR** -Struktur im _lppMAPIError_ -Parameter der [IMAPIProp:: getlasterroraufzurufen](imapiprop-getlasterror.md) -Methode. **Getlasterroraufzurufen** gibt Informationen zum vorherigen Fehler zurück, der auf ein Objekt aufgetreten ist. Aufrufer von **getlasterroraufzurufen** geben den Arbeitsspeicher für die **MAPIERROR** -Struktur frei, indem Sie [mapifreebufferfreigegeben](mapifreebuffer.md)aufrufen.
+Die **MAPIERROR-Struktur** wird verwendet, um Fehlerinformationen zu beschreiben. Clients und Dienstanbieter übergeben einen Zeiger an eine **MAPIERROR-Struktur** im _lppMAPIError-Parameter_ der [IMAPIProp::GetLastError-Methode.](imapiprop-getlasterror.md) **GetLastError** gibt Informationen zum vorherigen Fehler zurück, der für ein Objekt aufgetreten ist. Aufrufer von **GetLastError** geben den Arbeitsspeicher für die **MAPIERROR-Struktur** frei, indem [sie MAPIFreeBuffer aufrufen.](mapifreebuffer.md)
   
-Das **lpszComponent** -Element kann verwendet werden, um die Hilfedatei der Komponente zuzuordnen, sofern vorhanden. Dienstanbieter sollten die Größe der Komponenten Zeichenfolge auf 30 Zeichen begrenzen, sodass Sie problemlos in einem Dialogfeld angezeigt werden kann. Das **ulContext** -Mitglied kann auch verwendet werden, um auf ein Onlinehilfethema für häufige Fehler zu verweisen. 
+Das **lpszComponent-Mitglied** kann verwendet werden, um die Hilfedatei der Komponente zu zuordnungen, sofern vorhanden. Dienstanbieter sollten die Größe der Komponentenzeichenfolge auf 30 Zeichen beschränken, damit sie problemlos in einem Dialogfeld angezeigt werden kann. Das **ulContext-Mitglied** kann auch verwendet werden, um auf ein Onlinehilfethema für häufige Fehler zu verweisen. 
   
-Da Dienstanbieter keine detaillierten Fehlerinformationen angeben müssen, sollten Clients nicht erwarten, dass die Mitglieder der **MAPIERROR** -Struktur, die zurückgegeben werden, gültige Daten enthalten. Bei einem Minimum von MAPI wird jedoch dringend empfohlen, dass Anbieter Informationen in den **lpszComponent** -und **ulContext** -Mitgliedern angeben. 
+Da Dienstanbieter keine detaillierten Fehlerinformationen bereitstellen müssen, sollten Clients keine Mitglieder der **MAPIERROR-Struktur** erwarten, die zurückgegeben werden, um gültige Daten zu enthalten. Mindestens jedoch empfiehlt MAPI dringend, dass Anbieter Informationen in den **lpszComponent-** und **ulContext-Mitgliedern** angeben. 
   
-Weitere Informationen zur Fehlerbehandlung in MAPI finden Sie unter [Fehlerbehandlung](error-handling-in-mapi.md).
+Weitere Informationen zur Fehlerbehandlung in MAPI finden Sie unter [Error Handling](error-handling-in-mapi.md).
   
 ## <a name="see-also"></a>Siehe auch
 

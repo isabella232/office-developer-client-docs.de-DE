@@ -25,13 +25,13 @@ ms.locfileid: "33408418"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Subtrahiert eine unsignierte 64-Bit-Ganzzahl von einem anderen. 
+Subtrahiert eine nicht signierte ganzzahlige 64-Bit-Zahl von einer anderen. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 FILETIME FtSubFt(
@@ -44,14 +44,14 @@ FILETIME FtSubFt(
 
  _Minuend_
   
-> in Eine [FILETIME](filetime.md) -Struktur, die die unsignierte 64-Bit-Ganzzahl enthält, aus der der Wert im _Subtrahend_ -Parameter subtrahiert werden soll. 
+> [in] Eine [FILETIME-Struktur,](filetime.md) die die nicht signierte ganzzahlige 64-Bit-Zahl enthält, von der der Wert im  _Subtrahend-Parameter subtrahend subtrahiert_ werden soll. 
     
  _Subtrahend_
   
-> in Eine **FILETIME** -Struktur mit der unsignierten 64-Bit-Ganzzahl, die von dem vom _Minuend_ -Parameter angegebenen Wert subtrahiert wird. 
+> [in] Eine **FILETIME-Struktur,** die die nicht signierte ganzzahlige 64-Bit-Zahl enthält, die vom durch den  _Parameter Minuend angegebenen Wert subtrahiert_ wird. 
     
 ## <a name="return-value"></a>Rückgabewert
 
-Die **FtSubFt** -Funktion gibt **** eine FILETIME-Struktur zurück, die das Ergebnis der Subtraktion enthält. Die beiden Eingabeparameter bleiben unverändert. 
+Die **FtSubFt-Funktion** gibt eine **FILETIME-Struktur** zurück, die das Ergebnis der Subtraktion enthält. Die beiden Eingabeparameter bleiben unverändert. 
   
 

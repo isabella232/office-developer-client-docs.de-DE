@@ -1,5 +1,5 @@
 ---
-title: Zelle YRulerDensity Cell (Ruler &amp; Grid section)
+title: Zelle "YRulerDensity" (Abschnitt "Ruler &amp; Grid")
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -16,32 +16,32 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33406801"
 ---
-# <a name="yrulerdensity-cell-ruler-amp-grid-section"></a>Zelle YRulerDensity Cell (Ruler &amp; Grid section)
+# <a name="yrulerdensity-cell-ruler-amp-grid-section"></a>Zelle "YRulerDensity" (Abschnitt "Ruler &amp; Grid")
 
 Legt die vertikalen Einteilungen auf dem Lineal des Zeichenblatts fest.
   
 |**Wert**|**Beschreibung**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
 |0  <br/> |Fest  <br/> |**visRulerFixed** <br/> |
-|8 (&amp;H8)  <br/> |Grob  <br/> |**visRulerCoarse** <br/> |
-|16 (&amp;H10)  <br/> |Normal (Standard)  <br/> |**visRulerNormal** <br/> |
-|32 (&amp;H20)  <br/> |Abgestimmter  <br/> |**visRulerFine** <br/> |
+|8 ( &amp; H8)  <br/> |Vorschrr  <br/> |**visRulerCoarse** <br/> |
+|16 ( &amp; H10)  <br/> |Normal (Standard)  <br/> |**visRulerNormal** <br/> |
+|32 (&amp;H20)  <br/> |Fine  <br/> |**visRulerFine** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Diese Zelle entspricht der Option vertikale unter **Einheiten** im Dialogfeld **** **Lineal &amp; -Raster** (Klicken Sie auf der Registerkarte **Ansicht** auf den Pfeil). 
+Diese Zelle entspricht der vertikalen **Unterteilungsoption** im Dialogfeld  Linealraster (klicken Sie auf der Registerkarte Ansicht auf den **Pfeil anzeigen).** **&amp;** 
   
-Wenn Sie einen Verweis auf die Zelle Zelle YRulerDensity aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle YRulerDensity anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Zelle YRulerDensity  <br/> |
+|Zellenname:  <br/> |YRulerDensity  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle YRulerDensity aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle YRulerDensity nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowRulerGrid** <br/> |
 |Zellenindex:  <br/> |**visYRulerDensity** <br/> |
    

@@ -21,16 +21,16 @@ ms.locfileid: "33408838"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Das **attSentFor** -Attribut wird als gezählte Zeichenfolge mit End-to-End-Codierung codiert. Das Format für **attSentFor** lautet wie folgt: 
+Das **attSentFor-Attribut** wird als gezählte Zeichenfolgen codiert, die ende-zu-Ende gelegt werden. Das Format für **attSentFor** lautet wie folgt: 
   
  **attSentFor**: 
   
-> Anzeigename-length-Anzeigename-Adresslänge- _e-Mail-Adresse_
+> display-name-length display-name address-length  _email-address_
     
- _e-Mail-Adresse_
+ _E-Mail-Adresse_
   
-> Typ **:** Address 
+> typ **:** address 
     
-Im Gegensatz zu anderen Längenwerten sind die Anzeigename-length und die Address-length nicht signierte lange ganze Zahlen, 16-Bit-Werte ohne Vorzeichen. Sie enthalten jedoch weiterhin NULL-Zeichen. Die Typ-und Adress Zeichenfolgen im _e-Mail-Adress_ Eintrag werden durch einen Literalwert (:) Zeichen, wie "SMTP:Joe@nowhere.com". Nur der kombinierte Typ **:** Address String is null-terminated.
+Im Gegensatz zu anderen Längenwerten sind die Anzeigenamelänge und die Adresslänge nicht signierte 16-Bit-Werte anstelle von nicht signierten langen Ganzzahlen. Sie enthalten jedoch weiterhin das Beenden von Nullzeichen. Der Typ und die Adresszeichenfolgen im  _E-Mail-Adresseintrag_ werden durch einen literalen Doppelpunkt getrennt (:) zeichen, z. B. "smtp:joe@nowhere.com". Nur der kombinierte Typ **:** adresszeichenfolge ist null-terminated.
   
 

@@ -1,5 +1,5 @@
 ---
-title: Häufig verwendete Header Dateien
+title: Häufig verwendete Headerdateien
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,35 +15,35 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33406213"
 ---
-# <a name="commonly-used-header-files"></a>Häufig verwendete Header Dateien
+# <a name="commonly-used-header-files"></a>Häufig verwendete Headerdateien
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Jedes Referenzthema enthält eine Tabelle, die die MAPI-Headerdatei benennt, in der das API-Element definiert ist. In der folgenden Tabelle werden die MAPI-Headerdateien beschrieben, die von Entwicklern häufig verwendet werden.
+Jedes Referenzthema enthält eine Tabelle mit dem Namen der MAPI-Headerdatei, in der das API-Element definiert ist. In der folgenden Tabelle werden die MAPI-Headerdateien beschrieben, die von Entwicklern häufig verwendet werden.
   
-|**Header Datei**|**Beschreibung**|
+|**Headerdatei**|**Beschreibung**|
 |:-----|:-----|
-|MAPI. h  <br/> |Definiert Strukturen und Konstanten.  <br/> |
-|Mapiaux. h  <br/> |Definiert zusätzliche Schnittstellen, Strukturen und Konstanten, die von der Programmierschnittstelle für Messaging Anwendungen verwendet werden.  <br/> |
-|Mapicode. h  <br/> |Definiert Statuscodes für Fehlerwerte.  <br/> |
-|Mapidbg. h  <br/> |Definiert Makros für das Debugging.  <br/> |
-|Mapidefs. h  <br/> |Definiert häufig verwendete Ereignistypen, Eigenschaftentypen, Flags, Strukturen und Schnittstellen.  <br/> |
-|Mapiform. h  <br/> |Definiert Formularelemente.  <br/> |
-|Mapiguid. h  <br/> |Definiert GUIDs.  <br/> |
-|Mapinis. h  <br/> |Definiert Dienstprogramme, die die Internationalisierung unterstützen.  <br/> |
-|Mapioid. h  <br/> |Definiert MAPI-Objektbezeichner.  <br/> |
-|Mapispi. h  <br/> |Definiert Kennzeichnungen und Schnittstellen, die von MAPI für Dienstanbieter und Nachrichtendienste implementiert werden.  <br/> |
-|Mapitags. h  <br/> |Definiert Property-Tags.  <br/> |
-|Mapiutil. h  <br/> |Definiert Dienstschnittstellen und-Funktionen.  <br/> |
-|Mapival.h  <br/> |Definiert Validierungs Makros.  <br/> |
-|Mapiwin. h  <br/> |Definiert Typen, Konstanten, Flags, Funktionen und Makros für die Entwicklung von Dienstanbietern mit einer Quelle.  <br/> |
-|Mapiwz. h  <br/> |Definiert Prototypen und Konstanten für den Anbieter-Assistenten.  <br/> |
-|Mapix. h  <br/> |Definiert Kennzeichnungen und Schnittstellen, die von MAPI für Clients implementiert werden.  <br/> |
-|MSPST. h  <br/> |Definiert die Eigenschaften des persönlichen Informationsspeichers (PST-Datei).  <br/> |
+|Mapi.h  <br/> |Definiert Strukturen und Konstanten.  <br/> |
+|Mapiaux.h  <br/> |Definiert zusätzliche Schnittstellen, Strukturen und Konstanten, die von der Messaging Applications Programming Interface verwendet werden.  <br/> |
+|Mapicode.h  <br/> |Definiert Statuscodes für Fehlerwerte.  <br/> |
+|Mapidbg.h  <br/> |Definiert Makros für das Debuggen.  <br/> |
+|Mapidefs.h  <br/> |Definiert häufig verwendete Ereignistypen, Eigenschaftstypen, Flags, Strukturen und Schnittstellen.  <br/> |
+|Mapiform.h  <br/> |Definiert Formularelemente.  <br/> |
+|Mapiguid.h  <br/> |Definiert GUIDs.  <br/> |
+|Mapinis.h  <br/> |Definiert Hilfsprogramme, die die Internationalisierung unterstützen.  <br/> |
+|Mapioid.h  <br/> |Definiert MAPI-Objektbezeichner.  <br/> |
+|Mapispi.h  <br/> |Definiert Kennzeichen und Schnittstellen, die MAPI für Dienstanbieter und Nachrichtendienste implementiert.  <br/> |
+|Mapitags.h  <br/> |Definiert Eigenschaftstags.  <br/> |
+|Mapiutil.h  <br/> |Definiert Hilfsprogrammschnittstellen und -funktionen.  <br/> |
+|Mapival.h  <br/> |Definiert Validierungsmakros.  <br/> |
+|Mapiwin.h  <br/> |Definiert Typen, Konstanten, Flags, Funktionen und Makros für die Entwicklung von Anbietern mit einer einzigen Quelle.  <br/> |
+|Mapiwz.h  <br/> |Definiert Prototypen und Konstanten für den Anbieter-Assistenten.  <br/> |
+|Mapix.h  <br/> |Definiert Flags und Schnittstellen, die MAPI für Clients implementiert.  <br/> |
+|Mspst.h  <br/> |Definiert die Eigenschaften des Informationsspeichers für persönliche Informationen (PST-Datei).  <br/> |
    
-Informationen zum Abrufen von MAPI-Headerdateien finden Sie unter [install MAPI Header files](how-to-install-mapi-header-files.md).
+Informationen zum Abrufen von MAPI-Headerdateien finden Sie unter [Installieren von MAPI-Headerdateien](how-to-install-mapi-header-files.md).
   
 ## <a name="see-also"></a>Siehe auch
 

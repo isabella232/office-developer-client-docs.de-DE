@@ -25,7 +25,7 @@ ms.locfileid: "33408551"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Löst eine Nachrichtenklasse in Ihrem Formular in einem Formular Container auf und gibt ein Formular Informationsobjekt für dieses Formular zurück.
+Löst eine Nachrichtenklasse in ihr Formular in einem Formularcontainer auf und gibt ein Formularinformationsobjekt für dieses Formular zurück.
   
 ```cpp
 HRESULT ResolveMessageClass(
@@ -39,19 +39,19 @@ HRESULT ResolveMessageClass(
 
  _szMessageClass_
   
-> in Eine Zeichenfolge, die die zu lösende Nachrichtenklasse benennt. Nachrichtenklassennamen sind immer ANSI-Zeichenfolgen, nie Unicode.
+> [in] Eine Zeichenfolge, die die aufgelöste Nachrichtenklasse benennt. Nachrichtenklassennamen sind immer ANSI-Zeichenfolgen, nie Unicode.
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die die Auflösung der Nachrichtenklasse steuert. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie die Nachrichtenklasse aufgelöst wird. Das folgende Flag kann festgelegt werden:
     
 MAPIFORM_EXACTMATCH 
   
-> Nur Nachrichtenklassen Zeichenfolgen, die exakt übereinstimmen, sollten aufgelöst werden.
+> Es sollten nur Nachrichtenklassenzeichenfolgen aufgelöst werden, die eine genaue Übereinstimmung sind.
     
  _ppforminfo_
   
-> Out Ein Zeiger auf einen Zeiger auf das zurückgegebene Formular Informationsobjekt.
+> [out] Ein Zeiger auf einen Zeiger auf das zurückgegebene Formularinformationsobjekt.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -61,17 +61,17 @@ S_OK
     
 MAPI_E_NOT_FOUND 
   
-> Die Nachrichtenklasse, die im _szMessageClass_ -Parameter übergeben wird, stimmt nicht mit der Nachrichtenklasse für alle Formulare im Formular Container überein. 
+> Die im  _szMessageClass-Parameter_ übergebene Nachrichtenklasse ist nicht mit der Nachrichtenklasse für ein Formular im Formularcontainer übereinstimmend. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Client Anwendungen rufen die **IMAPIFormContainer:: ResolveMessageClass** -Methode auf, um eine Nachrichtenklasse in ein Formular in einem Formular Container aufzulösen. Das im _ppforminfo_ -Parameter zurückgegebene Formular Informationsobjekt bietet weiteren Zugriff auf die Eigenschaften des Formulars mit der angegebenen Nachrichtenklasse. 
+Clientanwendungen rufen die **IMAPIFormContainer::ResolveMessageClass-Methode** auf, um eine Nachrichtenklasse in ein Formular innerhalb eines Formularcontainers zu auflösen. Das im  _ppforminfo-Parameter_ zurückgegebene Formularinformationsobjekt bietet weiteren Zugriff auf die Eigenschaften des Formulars mit der angegebenen Nachrichtenklasse. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Um eine Nachrichtenklasse in ein Formular aufzulösen, geben Sie den Namen der zu lösenden Nachrichtenklasse ein (beispielsweise `IPM.HelpDesk.Software`). Um die Genauigkeit der Auflösung zu erzwingen (das heißt, um eine Lösung für eine Basisklasse der Nachrichtenklasse zu verhindern), kann das MAPIFORM_EXACTMATCH-Flag im _ulFlags_ -Parameter übergeben werden. 
+Um eine Nachrichtenklasse in ein Formular zu auflösen, übergeben Sie den Namen der nachrichtenklasse, die aufgelöst werden soll (z. B.  `IPM.HelpDesk.Software` ). Um zu erzwingen, dass die Auflösung exakt ist (d. h. um die Auflösung einer Basisklasse der Nachrichtenklasse zu verhindern), kann das MAPIFORM_EXACTMATCH im  _ulFlags-Parameter übergeben_ werden. 
   
-Der Klassenbezeichner für die aufgelöste Nachrichtenklasse wird als Teil des Form Information-Objekts zurückgegeben. Gehen Sie nicht davon aus, dass der Klassenbezeichner in der OLE-Bibliothek vorhanden ist, bis Sie die [IMAPIFormMgr::P repareform](imapiformmgr-prepareform.md) -oder [IMAPIFormMgr:: CreateForm](imapiformmgr-createform.md) -Methode aufgerufen haben. 
+Der Klassenbezeichner für die aufgelöste Nachrichtenklasse wird als Teil des Formularinformationsobjekts zurückgegeben. Gehen Sie erst nach dem Aufruf der [IMAPIFormMgr::P repareForm-](imapiformmgr-prepareform.md) oder [IMAPIFormMgr::CreateForm-Methode](imapiformmgr-createform.md) davon aus, dass der Klassenbezeichner in der OLE-Bibliothek vorhanden ist. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -79,7 +79,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|FormContainerDlg. cpp  <br/> |CFormContainerDlg:: OnResolveMessageClass  <br/> |MFCMAPI verwendet die **IMAPIFormContainer:: ResolveMessageClass** -Methode, um ein Formular zu suchen, das einer Nachrichtenklasse zugeordnet ist.  <br/> |
+|FormContainerDlg.cpp  <br/> |CFormContainerDlg::OnResolveMessageClass  <br/> |MFCMAPI verwendet die **IMAPIFormContainer::ResolveMessageClass-Methode,** um ein Formular zu finden, das einer Nachrichtenklasse zugeordnet ist.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

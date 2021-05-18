@@ -1,5 +1,5 @@
 ---
-title: Outlook-Elemente und-Felder
+title: Outlook Elemente und Felder
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,43 +13,43 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33409118"
 ---
-# <a name="outlook-items-and-fields"></a>Outlook-Elemente und-Felder
+# <a name="outlook-items-and-fields"></a>Outlook Elemente und Felder
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Microsoft Outlook bietet Elementtypen, die sich auf ihre Funktionalität spezialisiert haben (beispielsweise e-Mail-Elemente, Termine, Kontakte, Aufgaben und Notizen). Outlook bietet Standardfelder für jeden Elementtyp, die gemeinhin als integrierte Felder bezeichnet werden. Outlook ermöglicht Benutzern auch das Erstellen benutzerdefinierter Felder, die gemeinhin als benutzerdefinierte Felder bezeichnet werden. Jedes Feld ist einem Datentyp und einem Wert zugeordnet. Beispiele für Datentypen sind **Currency**, **Date/Time**, **Duration**, **Integer**, **Schlüsselwörter**und **Text**. Benutzer können benutzerdefinierte Felder mithilfe des Formular-Designers in Outlook definieren.
+Microsoft Outlook bietet Elementtypen, die auf ihre Funktionalität spezialisiert sind (z. B. E-Mail-Elemente, Termine, Kontakte, Aufgaben und Notizen). Outlook standard fields for each type of item, allgemein als integrierte Felder bezeichnet. Outlook können Benutzer auch benutzerdefinierte Felder erstellen, die häufig als benutzerdefinierte Felder bezeichnet werden. Jedes Feld ist einem Datentyp und einem Wert zugeordnet. Beispiele für Datentypen sind Currency ,  **Date/Time**,  **Duration**, Integer , **Keywords** und **Text**. Benutzer können benutzerdefinierte Felder mithilfe des Formular-Designers in Outlook.
   
-Auf der Programmierebene wird jedes Element durch ein [IMessage](imessageimapiprop.md) -Objekt dargestellt. Jedes benutzerdefinierte Feld ist einer Felddefinition und einem Wert zugeordnet. 
+Auf der Programmierbarkeitsebene wird jedes Element durch ein [IMessage-Objekt](imessageimapiprop.md) dargestellt. Jedes benutzerdefinierte Feld ist einer Felddefinition und einem Wert zugeordnet. 
   
-### <a name="field-definition"></a>Feld Definition
+### <a name="field-definition"></a>Felddefinition
 
-Eine Felddefinition enthält den Namen, den Datentyp und weitere Informationen zum Feld. Für jedes Element speichert Outlook die Definitionen aller benutzerdefinierten Felder in der [pidlidpropertydefinitionstream (](pidlidpropertydefinitionstream-canonical-property.md) -Eigenschaft des entsprechenden **IMessage** -Objekts. Die **pidlidpropertydefinitionstream (** -Eigenschaft enthält einen binären Datenstrom, der als [PropertyDefinition](propertydefinition-stream-structure.md) bekannt ist und die Felddefinitionen enthält. Weitere Informationen zu Stream-Strukturen für Felddefinitionen finden Sie unter [Stream Structures](stream-structures.md).
+Eine Felddefinition enthält den Namen, den Datentyp und andere Informationen zu dem Feld. Für jedes Element speichert Outlook definitionen aller benutzerdefinierten Felder in der [PidLidPropertyDefinitionStream-Eigenschaft](pidlidpropertydefinitionstream-canonical-property.md) des entsprechenden **IMessage-Objekts.** Die **PidLidPropertyDefinitionStream-Eigenschaft** enthält einen binären Datenstrom, [der als PropertyDefinition](propertydefinition-stream-structure.md) bezeichnet wird und die Felddefinitionen enthält. Weitere Informationen zu Streamstrukturen für Felddefinitionen finden Sie unter [Stream Structures](stream-structures.md).
   
 ### <a name="field-value"></a>Feldwert
 
-Jedes benutzerdefinierte Feld eines Elements hat einen Wert, der in einer entsprechenden benannten Eigenschaft gespeichert ist. Diese benannte Eigenschaft befindet sich im PS_PUBLIC_STRINGS-Eigenschaftensatz und verfügt über eine Unicode-Zeichenfolge als Eigenschaftennamen. Der Datentyp der Eigenschaft entspricht dem Typ des Felds. Wenn die Eigenschaft nicht im **IMessage** -Objekt vorhanden ist, übernimmt Outlook einen angemessenen Standardwert für die Eigenschaft. Bei einem String-Typ nimmt Outlook beispielsweise eine leere Zeichenfolge an, wenn die Eigenschaft nicht vorhanden ist. 
+Jedes benutzerdefinierte Feld eines Elements hat einen Wert, der in einer entsprechenden benannten Eigenschaft gespeichert ist. Diese benannte Eigenschaft befindet sich im PS_PUBLIC_STRINGS und hat eine Unicode-Zeichenzeichenfolge als Eigenschaftsname. Der Datentyp der Eigenschaft entspricht dem Typ des Felds. Wenn die Eigenschaft nicht im **IMessage-Objekt** vorhanden ist, wird Outlook einen angemessenen Standardwert für die Eigenschaft angenommen. Beispielsweise wird für einen Zeichenfolgentyp Outlook eine leere Zeichenfolge angenommen, wenn die Eigenschaft nicht vorhanden ist. 
   
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Hinzufügen einer Definition für ein neues benutzerdefiniertes Feld](how-to-add-a-definition-for-a-new-user-defined-field.md)
+[Hinzufügen einer Definition für ein new User-Defined Field](how-to-add-a-definition-for-a-new-user-defined-field.md)
   
-[PropertyDefinition-Stream-Beispiel](propertydefinition-stream-sample.md)
+[PropertyDefinition Stream Sample](propertydefinition-stream-sample.md)
   
-[Stream-Strukturen](stream-structures.md)
+[Streamstrukturen](stream-structures.md)
   
-[PropertyDefinition-Datenstrom Struktur](propertydefinition-stream-structure.md)
+[PropertyDefinition Stream Structure](propertydefinition-stream-structure.md)
   
-[FieldDefinition streamstruktur-Datenstrom Struktur](fielddefinition-stream-structure.md)
+[FieldDefinition Stream Structure](fielddefinition-stream-structure.md)
   
-[SkipBlock streamstruktur-Datenstrom Struktur](skipblock-stream-structure.md)
+[SkipBlock Stream Structure](skipblock-stream-structure.md)
   
-[Firstskipblockcontent streamstruktur-Datenstrom Struktur](firstskipblockcontent-stream-structure.md)
+[FirstSkipBlockContent Stream Structure](firstskipblockcontent-stream-structure.md)
   
-[Packedansistring streamstruktur-Datenstrom Struktur](packedansistring-stream-structure.md)
+[PackedAnsiString-Streamstruktur](packedansistring-stream-structure.md)
   
-[Packedunicodestring streamstruktur-Datenstrom Struktur](packedunicodestring-stream-structure.md)
+[PackedUnicodeString-Datenstromstruktur](packedunicodestring-stream-structure.md)
 

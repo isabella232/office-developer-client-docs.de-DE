@@ -21,6 +21,6 @@ ms.locfileid: "32317227"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Wenn Sie auch OLE verwenden, rufen Sie die OLE-Funktion [OleInitialize](https://msdn.microsoft.com/library/ms690134%28v=VS.85%29.aspx) auf, um die OLE-Bibliotheken zu initialisieren. **OleInitialize** initialisiert globale Daten für die Sitzung und bereitet die OLE-Bibliotheken so vor, dass Sie Anrufe annehmen. Informationen zum Aufrufen von **OleInitialize**finden Sie im Windows SDK.
+Wenn Sie auch OLE verwenden, rufen Sie die OLE-Funktion [OleInitialize](https://msdn.microsoft.com/library/ms690134%28v=VS.85%29.aspx) auf, um die OLE-Bibliotheken zu initialisieren. **OleInitialize** initialisiert globale Daten für die Sitzung und bereitet die OLE-Bibliotheken auf die Annahme von Anrufen vor. Informationen zum Aufrufen von **OleInitialize** finden Sie im Windows SDK.
   
 

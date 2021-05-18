@@ -29,7 +29,7 @@ Beschreibt einen Fehler, der sich auf einen Vorgang mit einer Eigenschaft bezieh
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SPropProblem
@@ -41,23 +41,23 @@ typedef struct _SPropProblem
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **ulIndex**
   
-> Ein Index in einem Array von Property-Tags.
+> Ein Index in einem Array von Eigenschaftstags.
     
  **ulPropTag**
   
-> Property-Tag für die Eigenschaft mit dem Fehler.
+> Property-Tag für die Eigenschaft, die den Fehler hat.
     
- **SCODE**
+ **scode**
   
-> Fehlerwert, der das Problem mit der Eigenschaft beschreibt. Dieser Wert kann ein beliebiger MAPI- [SCODE](scode.md) -Wert sein. 
+> Fehlerwert, der das Problem mit der Eigenschaft beschreibt. Dieser Wert kann ein beliebiger [MAPI-SCODE-Wert](scode.md) sein. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Ein Array von **SPropProblem** -Strukturen wird von den folgenden Methoden zurückgegeben: 
+Ein Array von **SPropProblem-Strukturen** wird von den folgenden Methoden zurückgegeben: 
   
 - [IMAPISupport::DoCopyTo](imapisupport-docopyto.md)
     
@@ -73,9 +73,9 @@ Ein Array von **SPropProblem** -Strukturen wird von den folgenden Methoden zurü
     
 - [IPropData::HrAddObjProps](ipropdata-hraddobjprops.md)
     
-Eine **SPropProblem** -Struktur enthält einen **SCODE** -Fehlerwert, der aus einem Vorgang resultiert, der versucht, eine MAPI-Eigenschaft zu ändern oder zu löschen. 
+Eine **SPropProblem-Struktur** enthält einen **SCODE-Fehlerwert,** der aus einem Vorgang resultiert, der versucht, eine MAPI-Eigenschaft zu ändern oder zu löschen. 
   
-Weitere Informationen zur Funktionsweise der **SPropProblem** -Struktur mit Fehlern im Zusammenhang mit Eigenschaften finden Sie unter [MAPI Named Properties](mapi-named-properties.md). 
+Weitere Informationen zur Funktionsweise der **SPropProblem-Struktur** mit Fehlern im Zusammenhang mit Eigenschaften finden Sie unter [MAPI Named Properties](mapi-named-properties.md). 
   
 ## <a name="see-also"></a>Siehe auch
 

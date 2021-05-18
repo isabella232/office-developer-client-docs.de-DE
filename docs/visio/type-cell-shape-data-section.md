@@ -23,28 +23,28 @@ Gibt einen Datentyp für den Shape-Datenwert an.
 |**Wert**|**Beschreibung**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
 |0  <br/> |Zeichenfolge. Dies ist der Standard.  <br/> |**visPropTypeString** <br/> |
-|1  <br/> |Feste Liste. Zeigt die Listenelemente in einem Dropdown-Kombinationsfeld im Dialogfeld **Shape-Daten definieren** an. Geben Sie die Listenelemente in der Zelle Format an. Benutzer können nur ein Element aus der Liste auswählen.  <br/> |**visPropTypeListFix** <br/> |
+|1  <br/> |Feste Liste. Zeigt die Listenelemente in einem Dropdown-Kombinationsfeld im Dialogfeld **Shape-Daten** definieren an. Geben Sie die Listenelemente in der Zelle Format an. Benutzer können nur ein Element aus der Liste auswählen.  <br/> |**visPropTypeListFix** <br/> |
 |2  <br/> |Number. Enthält Datum, Uhrzeit, Zeitdauer, Währungs- und Skalarwerte sowie Maß- und Winkelangaben. Geben Sie in der Zelle Format eine Formatierungsangabe an.  <br/> |**visPropTypeNumber** <br/> |
-|3  <br/> |Boolean. Zeigt FALSE und TRUE als Elemente an, die Benutzer aus einem Dropdown-Listenfeld im Dialogfeld **Shape-Daten definieren** auswählen können.  <br/> |**visPropTypeBool** <br/> |
-|4  <br/> |Variablenliste. Zeigt die Listenelemente in einem Dropdown-Kombinationsfeld im Dialogfeld **Shape-Daten definieren** an. Geben Sie die Listenelemente in der Zelle Format an. Benutzer können ein Listenelement auswählen oder ein neues Element eingeben, das der aktuellen Liste in der Zelle Format hinzugefügt wird.  <br/> |**visPropTypeListVar** <br/> |
-|5  <br/> |Datums- oder Uhrzeitwert. Zeigt Tage, Monate und Jahre oder Sekunden, Minuten und Stunden bzw. einen gemischten Datums- und Uhrzeitwert an. Geben Sie in der Zelle Format eine Formatierungsangabe an.  <br/> |**visPropTypeDate** <br/> |
-|6  <br/> |Zeitdauerwert. Zeigt die verstrichene Zeit an. Geben Sie in der Zelle Format eine Formatierungsangabe an.  <br/> |**visPropTypeDuration** <br/> |
-|7  <br/> |Währungswert. Verwendet die aktuelle Landes-/Regionaleinstellungen des Systems. Geben Sie in der Zelle Format eine Formatierungsangabe an.  <br/> |**visPropTypeCurrency** <br/> |
+|3  <br/> |Boolean. Zeigt FALSE und TRUE an, da Elemente, die Benutzer aus einem Dropdownlistenfeld auswählen können, im **Dialogfeld Shapedaten** definieren ausgewählt werden können.  <br/> |**visPropTypeBool** <br/> |
+|4   <br/> |Variable Liste. Zeigt die Listenelemente in einem Dropdown-Kombinationsfeld im Dialogfeld **Shape-Daten** definieren an. Geben Sie die Listenelemente in der Zelle Format an. Benutzer können ein Listenelement auswählen oder ein neues Element eingeben, das der aktuellen Liste in der Zelle Format hinzugefügt wird.  <br/> |**visPropTypeListVar** <br/> |
+|5   <br/> |Datums- oder Uhrzeitwert. Zeigt Tage, Monate und Jahre oder Sekunden, Minuten und Stunden bzw. einen gemischten Datums- und Uhrzeitwert an. Geben Sie in der Zelle Format eine Formatierungsangabe an.  <br/> |**visPropTypeDate** <br/> |
+|6   <br/> |Zeitdauerwert. Zeigt die verstrichene Zeit an. Geben Sie in der Zelle Format eine Formatierungsangabe an.  <br/> |**visPropTypeDuration** <br/> |
+|7   <br/> |Währungswert. Verwendet die aktuelle Landes-/Regionaleinstellungen des Systems. Geben Sie in der Zelle Format eine Formatierungsangabe an.  <br/> |**visPropTypeCurrency** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle "Type" aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle Type anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Prop. *Name* . Geben Sie WHERE Prop ein.  *Name* ist der Name der Zeile  <br/> |
+|Zellenname:  <br/> |Prop. *Name*  . Geben Sie ein, wo Prop.  *Name*  ist der Zeilenname  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Type nach Index aus einem Programm abrufen möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle Type nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
 |Abschnittsindex:  <br/> |**visSectionProp** <br/> |
-|Zeilenindex:  <br/> |**visRowProp** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+|Zeilenindex:  <br/> |**visRowProp**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
 |Zellenindex:  <br/> |**visCustPropsType** <br/> |
    
 

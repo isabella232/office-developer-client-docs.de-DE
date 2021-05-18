@@ -39,45 +39,45 @@ HRESULT Address(
 
  _lpulUIParam_
   
-> [in, out] Ein Zeiger auf einen Ziehpunkt des übergeordneten Fensters des Dialogfelds. Bei der Eingabe muss ein Fensterhandle immer übergeben werden. Wenn für die Ausgabe der **ulFlags** -Member des _lpAdrParms_ -Parameters auf DIALOG_SDI festgelegt ist, wird das Fensterhandle des nicht modalen Dialog Felds zurückgegeben. Weitere Informationen finden Sie in der "Anmerkungen". 
+> [in, out] Ein Zeiger auf ein Handle des übergeordneten Fensters des Dialogfelds. Bei der Eingabe muss immer ein Fensterhandle übergeben werden. Wenn das **ulFlags-Element** des  _lpAdrParms-Parameters_ bei der Ausgabe auf DIALOG_SDI festgelegt ist, wird das Fensterhandle des Dialogfelds ohne Modus zurückgegeben. Weitere Informationen finden Sie in der "Anmerkungen". 
     
  _lpAdrParms_
   
-> [in, out] Ein Zeiger auf eine [ADRPARM](adrparm.md) -Struktur, die die Darstellung und das Verhalten des Dialogfelds Adresse steuert. 
+> [in, out] Ein Zeiger auf eine [ADRPARM-Struktur,](adrparm.md) die die Präsentation und das Verhalten des Adressdialogfelds steuert. 
     
  _lppAdrList_
   
-> [in, out] Ein Zeiger auf einen Zeiger auf eine [ADRLIST](adrlist.md) -Struktur, die Empfängerinformationen enthält. Bei der Eingabe kann dieser Parameter NULL sein oder auf einen gültigen Zeiger zeigen. Bei der Ausgabe zeigt dieser Parameter auf einen Zeiger auf gültige Empfängerinformationen. 
+> [in, out] Ein Zeiger auf einen Zeiger auf eine [ADRLIST-Struktur,](adrlist.md) die Empfängerinformationen enthält. Bei der Eingabe kann dieser Parameter NULL sein oder auf einen gültigen Zeiger zeigen. Bei der Ausgabe zeigt dieser Parameter auf einen Zeiger auf gültige Empfängerinformationen. 
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Das Dialogfeld Allgemeine Adresse wurde erfolgreich angezeigt.
+> Das Dialogfeld allgemeine Adresse wurde erfolgreich angezeigt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn der **ulFlags** -Member des _lpAdrParms_ -Parameters auf DIALOG_SDI ist, der die Rückgabe des Fensterhandles des nicht modalen Dialog Felds bei der Ausgabe vorwegnimmt, wird es in Outlook ignoriert. die modale Version des Dialogs wird immer in nicht-Outlook-Clients angezeigt. 
+Wenn **das ulFlags-Element** des  _lpAdrParms-Parameters_ auf DIALOG_SDI vor der Rückgabe des Fensterhandle des moduslosen Dialogfelds für die Ausgabe festgelegt ist, wird es in Outlook ignoriert. Die modale Version des Dialogfelds wird immer in Nicht-Outlook-Clients angezeigt. 
   
-Die **ADRLIST** -Struktur, die von MAPI an den Aufrufer über den Parameter _lppAdrList_ zurückgegeben wird, enthält ein Array von [Miet](adrentry.md) Strukturen, eine Struktur für jeden Empfänger. Bei Übergabe an die [IMessage:: ModifyRecipients](imessage-modifyrecipients.md) -Methode einer ausgehenden Nachricht im _lpMods_ -Parameter kann die **ADRLIST** -Struktur zum Aktualisieren der Empfängerliste verwendet werden. 
+Die von MAPI an den Aufrufer über den _lppAdrList-Parameter_ übergebene **ADRLIST-Struktur** enthält ein Array von [ADRENTRY-Strukturen,](adrentry.md) eine Struktur für jeden Empfänger. Wenn sie an die [IMessage::ModifyRecipients-Methode](imessage-modifyrecipients.md) einer ausgehenden Nachricht im  _lpMods-Parameter_ übergeben wird, kann die **ADRLIST-Struktur** verwendet werden, um die Empfängerliste zu aktualisieren. 
   
-Jede **Miet** Struktur in der **ADRLIST** -Struktur enthält NULL oder mehr [SPropValue](spropvalue.md) -Strukturen, eine Struktur für jeden Eigenschaftensatz für den Empfänger. Es kann keine **SPropValue** -Strukturen geben, wenn das von der **Address** -Methode vorgestellte Dialogfeld zum Entfernen eines Empfängers verwendet wird. Wenn es eine oder mehrere **SPropValue** -Strukturen gibt, wird die entsprechende **Miet** Struktur verwendet, um einen Empfänger hinzuzufügen oder zu aktualisieren. Der Empfänger kann aufgelöst werden, was darauf hinweist, dass eine der **SPropValue** -Strukturen die **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))-Eigenschaft des Empfängers beschreibt oder nicht aufgelöst wird, was darauf hinweist, dass die **PR_ENTRYID** -Eigenschaft fehlt. 
+Jede **ADRENTRY-Struktur** in der **ADRLIST-Struktur** enthält null oder mehr [SPropValue-Strukturen,](spropvalue.md) eine Struktur für jede Eigenschaft, die für den Empfänger festgelegt ist. **SPropValue-Strukturen** können null sein, wenn das von der **Address-Methode** angezeigte Dialogfeld zum Entfernen eines Empfängers verwendet wird. Wenn eine oder mehrere **SPropValue-Strukturen** verfügbar sind, wird die entsprechende **ADRENTRY-Struktur** zum Hinzufügen oder Aktualisieren eines Empfängers verwendet. Der Empfänger kann aufgelöst werden, was angibt, dass eine der **SPropValue-Strukturen** die **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) -Eigenschaft des Empfängers beschreibt, oder nicht aufgelöst, was angibt, dass die **PR_ENTRYID-Eigenschaft** fehlt. 
   
-Zusätzlich zu **PR_ENTRYID**sind aufgelöste Empfänger die folgenden Eigenschaften:
+Zusätzlich zu **PR_ENTRYID** enthalten aufgelöste Empfänger die folgenden Eigenschaften:
   
-- **PR_RECIPIENT_TYPE** ([Pidtagrecipienttype (](pidtagrecipienttype-canonical-property.md))
+- **PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md))
     
 - **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
     
-- **PR_ADDRTYPE** ([Pidtagaddresstype (](pidtagaddresstype-canonical-property.md))
+- **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))
     
 - **PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))
     
-Die **ADRLIST** -Struktur, die der Aufrufer übergibt, kann eine andere Größe als die von MAPI zurückgegebene Struktur aufweisen. Wenn MAPI eine größere **ADRLIST** -Struktur zurückgeben muss, gibt Sie die ursprüngliche Struktur frei und weist eine neue an. Wenn Sie Speicher für die **ADRLIST** -Struktur reservieren, ordnen Sie den Speicher für jede **SPropValue** -Struktur separat zu. Weitere Informationen zum Zuweisen und Freigeben von **ADRLIST** -Strukturen finden Sie unter [Managing Memory for ADRLIST and SRowSet Structures](managing-memory-for-adrlist-and-srowset-structures.md)
+Die **ADRLIST-Struktur,** die der Aufrufer übergibt, kann eine andere Größe als die von MAPI zurückgegebene Struktur aufweisen. Wenn MAPI eine größere **ADRLIST-Struktur** zurückgeben muss, wird die ursprüngliche Struktur frei und eine neue zugewiesen. Wenn Sie speicher für die **ADRLIST-Struktur zuweisen,** weisen Sie den Arbeitsspeicher für jede **SPropValue-Struktur** separat zu. Weitere Informationen zum Zuordnen und Freispeichern von **ADRLIST-Strukturen** finden Sie unter [Managing Memory for ADRLIST and SRowSet Structures](managing-memory-for-adrlist-and-srowset-structures.md)
   
- **Address** gibt sofort zurück, wenn das DIALOG_SDI-Flag im **ulFlags** -Element der **ADRPARM** -Struktur im _lpAdrParms_ -Parameter festgelegt ist. Das DIALOG_SDI-Flag wird für nicht-Outlook-Clients ignoriert. Wenn DIALOG_SDI ignoriert wird, wird die modale Version des Dialog Felds angezeigt, und ein Zeiger auf ein Handle sollte in _lpulUIParam_nicht erwartet werden.
+ **Address** gibt sofort zurück, wenn das DIALOG_SDI im **ulFlags-Element** der **ADRPARM-Struktur** im  _lpAdrParms-Parameter festgelegt_ ist. Das DIALOG_SDI wird für Nicht-Outlook-Clients ignoriert. Wenn DIALOG_SDI ignoriert wird, wird die modale Version des Dialogfelds angezeigt, und ein Zeiger auf ein Handle sollte in _lpulUIParam nicht erwartet werden._
   
- **Address** unterstützt Unicode-Zeichenfolgen in der **ADRPARM** -Struktur, wenn AB_UNICODEUI im **ulFlags** -Element von **ADRPARM** im _lpAdrParms_ -Parameter angegeben wurde und Unicode-Zeichenfolgen in ** ADRLIST**. Die Unicode-Zeichenfolgen werden in das Mehrbyte-Format (multibyte Character String) konvertiert, bevor Sie im Dialogfeld Outlook-Adressbuch angezeigt werden.
+ **Address** unterstützt Unicode-Zeichenzeichenfolgen in der **ADRPARM-Struktur,** wenn AB_UNICODEUI im **ulFlags-Element** von **ADRPARM** im _lpAdrParms-Parameter_ angegeben wurde, und es werden Unicode-Zeichenzeichenfolgen in **ADRLIST unterstützt.** Die Unicode-Zeichenfolgen werden in das MbCS-Format (Multibyte Character String) konvertiert, bevor sie im Dialogfeld Outlook-Adressbuch angezeigt werden.
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -85,7 +85,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIStoreFunctions. cpp  <br/> |OpenOtherUsersMailboxFromGal  <br/> |MFCMAPI verwendet die **Address** -Methode, um dem Benutzer zu ermöglichen, das zu öffnende Postfach auszuwählen.  <br/> |
+|MAPIStoreFunctions.cpp  <br/> |OpenOtherUsersMailboxFromGal  <br/> |MFCMAPI verwendet die **Address-Methode,** damit der Benutzer auswählen kann, welches Postfach geöffnet werden soll.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

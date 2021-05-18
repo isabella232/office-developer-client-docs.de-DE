@@ -21,23 +21,23 @@ ms.locfileid: "33405865"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Wenn eine Nachricht adressiert wird, wird eine Empfängerliste mit Eigenschaften für jeden Empfänger erstellt. Zu dem Zeitpunkt, zu dem die Nachricht gesendet wird, muss eine dieser Eigenschaften der langfristige Eintragsbezeichner des Empfängers sein. Um sicherzustellen, dass jeder Empfänger die **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))-Eigenschaft enthält, übergeben Sie die [ADRLIST](adrlist.md) -Struktur, die ihre Empfängerliste in den Inhalten des _lpAdrList_ -Parameters beschreibt, in einem Aufruf von [IAddrBook:: ](iaddrbook-resolvename.md)ResolveName.
+Wenn eine Nachricht adressiert wird, wird eine Empfängerliste mit Eigenschaften erstellt, die sich auf jeden Empfänger bezogen haben. Wenn die Nachricht gesendet wird, muss eine dieser Eigenschaften der langfristige Eintragsbezeichner des Empfängers sein. Um sicherzustellen, dass jeder Empfänger die **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) -Eigenschaft enthält, übergeben Sie die [ADRLIST-Struktur,](adrlist.md) die Ihre Empfängerliste beschreibt, im Inhalt des  _lpAdrList-Parameters_ in einem Aufruf von [IAddrBook::ResolveName](iaddrbook-resolvename.md).
   
- **** ResolveName beginnt mit der Verarbeitung, indem die Einträge in der **ADRLIST** -Struktur, die bereits aufgelöst wurden, ignoriert werden, wie durch das vorhanden sein eines Eintrags Bezeichners in der **SPropValue** der zugehörigen [Miet](adrentry.md) Struktur angegeben. Array. Als nächstes **** weist ResolveName zwei Typen von Empfängern automatisch einmalige Eintrags-IDs zu: 
+ **ResolveName** beginnt mit der Verarbeitung, indem die Einträge in der **ADRLIST-Struktur** ignoriert werden, die bereits aufgelöst wurden, wie durch das Vorhandensein eines Eintragsbezeichners im **SPropValue-Array** der entsprechenden [ADRENTRY-Struktur](adrentry.md) angegeben. Als Nächstes **weist ResolveName** zwei Empfängertypen automatisch einmal zugewiesene Eintragsbezeichner zu: 
   
-- Empfänger mit einer als Internet Adresse formatierten Adresse
+- Empfänger mit einer als Internetadresse formatierten Adresse
     
-- Empfänger mit einer Adresse, die wie folgt formatiert ist:
+- Empfänger mit einer wie folgt formatierten Adresse:
     
      `displayname[address type:email address]`
     
-Für alle verbleibenden **** Einträge durchsucht ResolveName das Adressbuch nach einer genauen Übereinstimmung mit dem Anzeigenamen. **** ResolveName verwendet die **PR_AB_SEARCH_PATH** ([pidtagabsearchpath (](pidtagabsearchpath-canonical-property.md))-Eigenschaft, um den zu durchsuchenden Container Satz und die Suchreihenfolge zu bestimmen. MAPI Ruft die [IABContainer:: ResolveNames](iabcontainer-resolvenames.md) -Methode jedes Containers auf, um alle Namen aufzulösen. Da einige Container **ResolveNames**nicht unterstützen, wendet MAPI eine **PR_ANR** ([pidtaganr (](pidtaganr-canonical-property.md))-Eigenschaftseinschränkung für die Inhaltstabelle an, wenn der Container MAPI_E_NO_SUPPORT zurückgibt. Alle Adressbuchcontainer sind erforderlich, um die Namensauflösung mit dieser Einschränkung zu unterstützen. Nachdem alle Namen aufgelöst wurden, werden keine weiteren Container Aufrufe durchgeführt. Wenn alle Container aufgerufen wurden, aber mehrdeutige oder nicht aufgelöste Namen bleiben, zeigt MAPI ein Dialogfeld an, wenn möglich, um den Benutzer aufzufordern, die verbleibenden Namen aufzulösen.
+Für alle verbleibenden Einträge durchsucht **ResolveName** das Adressbuch nach einer genauen Übereinstimmung mit dem Anzeigenamen. **ResolveName** verwendet die **PR_AB_SEARCH_PATH** ([PidTagAbSearchPath](pidtagabsearchpath-canonical-property.md)) -Eigenschaft, um den Satz von Zu durchsuchenden Containern und die Suchreihenfolge zu bestimmen. MAPI ruft die [IABContainer::ResolveNames-Methode](iabcontainer-resolvenames.md) jedes Containers auf, um zu versuchen, alle Namen zu auflösen. Da einige Container **ResolveNames** nicht unterstützen, wendet MAPI eine **PR_ANR** - Eigenschaftseinschränkung ([PidTagAnr](pidtaganr-canonical-property.md)) auf die Inhaltstabelle an, wenn der Container MAPI_E_NO_SUPPORT zurückgibt. Alle Adressbuchcontainer sind erforderlich, um die Namensauflösung mit dieser Einschränkung zu unterstützen. Sobald alle Namen aufgelöst wurden, werden keine weiteren Containeraufrufe mehr vorgenommen. Wenn alle Container aufgerufen wurden, aber mehrdeutige oder nicht aufgelöste Namen erhalten bleiben, zeigt MAPI nach Möglichkeit ein Dialogfeld an, in dem der Benutzer aufgefordert wird, die verbleibenden Namen zu auflösen.
   
-Die **PR_ANR** -Einschränkung entspricht dem Wert der **PR_ANR** -Eigenschaft mit dem Anzeigenamen in der **ADRLIST** -Struktur. Durch Einschränken der Ansicht der Inhaltstabelle eines Containers mit der **PR_ANR** -Eigenschaftseinschränkung führt der Adressbuchanbieter einen "bestmöglichen" Suchtyp aus, der mit der für den Anbieter sinnvollsten Eigenschaft verglichen wird. Beispielsweise kann ein Adressbuchanbieter immer die Namen in der Empfängerliste mit **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) vergleichen, während eine andere Person es einem Administrator ermöglicht, die Eigenschaft auszuwählen.
+Die **PR_ANR** entspricht dem Wert der **PR_ANR-Eigenschaft** mit dem Anzeigenamen in der **ADRLIST-Struktur.** Wenn Sie die Ansicht der Inhaltstabelle eines Containers mit der Einschränkung der **PR_ANR-Eigenschaft** einschränken, führt der Adressbuchanbieter eine Suchart "best guess" durch, die mit der für den Anbieter sinnvollen Eigenschaft abgleicht. Beispielsweise kann ein Adressbuchanbieter namen in der Empfängerliste immer mit **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) übereinstimmen, während ein anderer Administrator die Eigenschaft auswählen kann.
   
- **So legen Sie eine PR_ANR-Eigenschaftseinschränkung für die Inhaltstabelle eines Adressbuch Containers fest**
+ **So legen Sie PR_ANR eigenschafteneinschränkung für die Inhaltstabelle eines Adressbuchcontainers**
   
-1. Erstellen Sie eine [SRestriction](srestriction.md) -Struktur, wie im folgenden Code dargestellt: 
+1. Erstellen Sie [eine SRestriction-Struktur,](srestriction.md) wie im folgenden Code dargestellt: 
     
   ```cpp
   SRestriction SRestrict;
@@ -49,6 +49,6 @@ Die **PR_ANR** -Einschränkung entspricht dem Wert der **PR_ANR** -Eigenschaft m
    
   ```
 
-2. Rufen Sie die [IMAPITable:: Restrict](imapitable-restrict.md) -Methode der Inhaltstabelle auf, und übergeben Sie die **SRestriction** -Struktur als _lpRestriction_ -Parameter. 
+2. Rufen Sie die [IMAPITable::Restrict-Methode](imapitable-restrict.md) der Inhaltstabelle auf, und übergeben Sie die **SRestriction-Struktur** als _lpRestriction-Parameter._ 
     
 

@@ -19,17 +19,17 @@ ms.locfileid: "33407522"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Clients und Dienstanbieter können einen Eigenschaftswert aktualisieren, indem Sie Folgendes aufrufen:
+Clients und Dienstanbieter können einen Eigenschaftswert aktualisieren, indem sie:
   
-- Die [IMAPIProp::](imapiprop-setprops.md) SetProps-Methode eines Objekts zum Aktualisieren des Werts einer oder mehrerer Eigenschaften eines Objekts. 
+- Die [IMAPIProp::SetProps-Methode](imapiprop-setprops.md) eines Objekts, um den Wert einer oder mehreren Eigenschaften eines Objekts zu aktualisieren. 
     
-- Die [HrSetOneProp](hrsetoneprop.md) -Funktion, um nur jeweils eine Eigenschaft zu aktualisieren. Verwenden Sie **HrSetOneProp** nur, wenn das Zielobjekt lokal ist; Diese Funktion kann bei Remoteobjekten zu Leistungseinbußen führen. 
+- Die [HrSetOneProp-Funktion,](hrsetoneprop.md) um immer nur eine Eigenschaft zu aktualisieren. Verwenden **Sie HrSetOneProp nur,** wenn das Zielobjekt lokal ist. Diese Funktion kann bei Verwendung mit Remoteobjekten zu Leistungsbeeinträchtigungen führen. 
     
-Im folgenden Verfahren wird veranschaulicht, wie **** Sie mithilfe von SetProps die Nachrichtenklasse oder PR_MESSAGE_CLASS_A ([PidTagMessageClass](pidtagmessageclass-canonical-property.md))-Eigenschaft einer Nachricht aktualisieren. 
+Das folgende Verfahren veranschaulicht, wie **Sie SetProps** verwenden, um die Nachrichtenklasse oder PR_MESSAGE_CLASS_A ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) -Eigenschaft einer Nachricht zu aktualisieren. 
   
 ### <a name="to-update-the-message-class-of-a-message"></a>So aktualisieren Sie die Nachrichtenklasse einer Nachricht 
   
-1. Ordnen Sie eine [SPropValue](spropvalue.md) -Struktur für die Nachrichtenklasse zu, und legen Sie Ihre Member entsprechend fest. 
+1. Ordnen Sie [eine SPropValue-Struktur](spropvalue.md) für die Nachrichtenklasse zu, und legen Sie ihre Member entsprechend. 
     
   ```cpp
     SPropValue spvMsgClass;
@@ -38,7 +38,7 @@ Im folgenden Verfahren wird veranschaulicht, wie **** Sie mithilfe von SetProps 
     
   ```
 
-2. Rufen Sie die **IMAPIProp::** SetProps-Methode der Nachricht auf, um die neue Nachrichtenklasse festzulegen. 
+2. Rufen Sie die **IMAPIProp::SetProps-Methode** der Nachricht auf, um die neue Nachrichtenklasse zu festlegen. 
     
   ```cpp
     hRes = lpMessage->SetProps(1, (LPSPropValue) &spvMsgClass, NULL);

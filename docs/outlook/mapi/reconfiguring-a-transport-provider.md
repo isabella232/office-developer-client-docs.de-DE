@@ -1,5 +1,5 @@
 ---
-title: Neukonfigurieren eines Transport Anbieters
+title: Neukonfigurieren eines Transportanbieters
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,26 +15,26 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33408410"
 ---
-# <a name="reconfiguring-a-transport-provider"></a>Neukonfigurieren eines Transport Anbieters
+# <a name="reconfiguring-a-transport-provider"></a>Neukonfigurieren eines Transportanbieters
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Mit dem Status-Objekt eines Transportanbieters können Sie einige der Eigenschaften des Anbieters ändern. Der Eigenschaftentyp, der geändert werden kann, hängt von den Eigenschaften ab, die im Eigenschaftenfenster des Anbieters enthalten sind, und davon, wie diese Eigenschaften definiert werden. 
+Sie können das Statusobjekt eines Transportanbieters verwenden, um einige der Eigenschaften des Anbieters zu ändern. Der Bereich der Eigenschaften, die geändert werden können, hängt von den Eigenschaften ab, die im Eigenschaftenblatt des Anbieters enthalten sind und wie diese Eigenschaften definiert werden. 
   
  **So konfigurieren Sie einen aktiven Transportanbieter neu**
   
-1. Rufen Sie [IMAPISession::](imapisession-getstatustable.md) getstatusable auf, um auf die Statustabelle zuzugreifen. 
+1. Rufen [Sie IMAPISession::GetStatusTable auf,](imapisession-getstatustable.md) um auf die Statustabelle zu zugreifen. 
     
-2. Suchen Sie die Zeile für den Transportanbieter, die neu konfiguriert werden soll, indem Sie eine Eigenschaftseinschränkung erstellen, die **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) mit dem Namen des Zielanbieters entspricht. 
+2. Suchen Sie die Zeile für den Transportanbieter, der neu konfiguriert werden soll, indem Sie eine Eigenschaftseinschränkung erstellen, die **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) mit dem Namen des Zielanbieters entspricht. 
     
-3. Rufen Sie [IMAPITable:: FindRow](imapitable-findrow.md) auf, um die entsprechende Zeile abzurufen. 
+3. Rufen [Sie IMAPITable::FindRow auf,](imapitable-findrow.md) um die entsprechende Zeile abzurufen. 
     
-4. Überprüfen Sie, ob die STATUS_SETTINGS_DIALOG-und STATUS_VALIDATE_STATE-Flags in der **PR_RESOURCE_METHODS** ([pidtagresourcemethods (](pidtagresourcemethods-canonical-property.md))-Eigenschaft des Ziel Transportanbieters festgelegt sind. Wenn STATUS_SETTINGS_DIALOG nicht festgelegt ist, wird vom Transportanbieter kein Konfigurationseigenschaften Fenster angezeigt. Wenn STATUS_VALIDATE_STATE nicht festgelegt ist, können Sie die dynamische Neukonfiguration nicht ausführen.
+4. Überprüfen Sie, ob STATUS_SETTINGS_DIALOG und STATUS_VALIDATE_STATE in der eigenschaft **PR_RESOURCE_METHODS** ([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md)) des Zieltransportanbieters festgelegt sind. Wenn STATUS_SETTINGS_DIALOG nicht festgelegt ist, zeigt der Transportanbieter kein Konfigurationseigenschaftsblatt an. Wenn STATUS_VALIDATE_STATE nicht festgelegt ist, können Sie keine dynamische Neukonfiguration durchführen.
     
-5. Wenn STATUS_SETTINGS_DIALOG festgelegt ist, rufen Sie [IMAPIStatus:: Settingsdialog](imapistatus-settingsdialog.md) auf, um das Eigenschaftenfenster des Transportanbieters anzuzeigen und dem Benutzer die Möglichkeit zu geben, Änderungen vorzunehmen. 
+5. Wenn STATUS_SETTINGS_DIALOG festgelegt ist, rufen Sie [IMAPIStatus::SettingsDialog auf,](imapistatus-settingsdialog.md) um das Eigenschaftenblatt des Transportanbieters anzeigen und dem Benutzer das Vornehmen von Änderungen zu ermöglichen. 
     
-6. Nachdem der Benutzer die Neukonfiguration abgeschlossen hat, rufen Sie [IMAPIStatus:: ValidateState](imapistatus-validatestate.md) auf, wenn STATUS_VALIDATE_STATE festgelegt ist, CONFIG_CHANGED übergeben. 
+6. Nachdem der Benutzer die Neukonfiguration abgeschlossen hat, rufen Sie [IMAPIStatus::ValidateState](imapistatus-validatestate.md) auf, wenn STATUS_VALIDATE_STATE festgelegt ist, und übergeben CONFIG_CHANGED. 
     
 

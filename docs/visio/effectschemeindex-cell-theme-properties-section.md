@@ -1,12 +1,12 @@
 ---
-title: EffectSchemeIndex Cell (Theme Properties section)
+title: Zelle "EffectSchemeIndex" (Abschnitt "Theme Properties")
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 366ade40-e89f-49b6-b4be-4e4967dbacbf
-description: Bestimmt das Effektschema des Designs, das auf eine Form angewendet wird, als ganze Zahl.
+description: Bestimmt das Effektschema des Designs, das auf ein Shape angewendet wird, als ganze Zahl.
 ms.openlocfilehash: 0d8ed18ca960868b1cd27abe517bfea99e1f2318
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -14,24 +14,24 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33409272"
 ---
-# <a name="effectschemeindex-cell-theme-properties-section"></a>EffectSchemeIndex Cell (Theme Properties section)
+# <a name="effectschemeindex-cell-theme-properties-section"></a>Zelle "EffectSchemeIndex" (Abschnitt "Theme Properties")
 
-Bestimmt das Effektschema des Designs, das auf eine Form angewendet wird, als ganze Zahl.
+Bestimmt das Effektschema des Designs, das auf ein Shape angewendet wird, als ganze Zahl.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle **EffectSchemeIndex** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die **Zelle EffectSchemeIndex** anhand des Namens aus einer anderen Formel, nach dem Wert des **N-Attributs** eines **Cell-Elements** oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | EffectSchemeIndex  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle **EffectSchemeIndex** aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Um einen Verweis auf die **Zelle EffectSchemeIndex nach Index** aus einem Programm zu erhalten, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowThemeProperties** <br/> |
-| Zellenindex:  <br/> |* * visEffectSchemeIndex * * <br/> |
+| Zellenindex:  <br/> |**visEffectSchemeIndex ** <br/> |
    
 

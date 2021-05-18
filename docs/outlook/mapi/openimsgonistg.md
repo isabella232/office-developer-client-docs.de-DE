@@ -23,13 +23,13 @@ ms.locfileid: "33406521"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt ein neues [IMessage](imessageimapiprop.md) -Objekt über einem vorhandenen OLE- **IStorage** -Objekt, das in einer nachrichtensitzung verwendet werden soll. 
+Erstellt ein neues [IMessage-Objekt](imessageimapiprop.md) auf einem vorhandenen OLE **IStorage-Objekt,** das in einer Nachrichtensitzung verwendet werden soll. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |IMessage. h  <br/> |
+|Headerdatei  <br/> |Imessage.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 SCODE OpenIMsgOnIStg(
@@ -51,58 +51,58 @@ SCODE OpenIMsgOnIStg(
 
 _lpMsgSess_
   
-> in Zeiger auf ein Nachrichten Sitzungsobjekt, in dem das neue **IMessage**-on- **IStorage** -Objekt erstellt werden soll. 
+> [in] Zeiger auf ein Nachrichtensitzungsobjekt, in dem das neue IMessage-on-IStorage-Objekt erstellt werden soll.   
     
 _lpAllocateBuffer_
   
-> in Zeiger auf die [MAPIAllocateBuffer](mapiallocatebuffer.md) -Funktion, die zum Reservieren von Arbeitsspeicher verwendet werden soll. 
+> [in] Zeiger auf die [MAPIAllocateBuffer-Funktion,](mapiallocatebuffer.md) die zum Zuordnen von Arbeitsspeicher verwendet werden soll. 
     
 _lpAllocateMore_
   
-> in Zeiger auf die [MAPIAllocateMore](mapiallocatemore.md) -Funktion, die zum Zuweisen von zusätzlichem Arbeitsspeicher verwendet werden soll. 
+> [in] Zeiger auf die [MAPIAllocateMore-Funktion,](mapiallocatemore.md) die zum Zuordnen von zusätzlichem Arbeitsspeicher verwendet werden soll. 
     
 _lpFreeBuffer_
   
-> in Zeiger auf die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion, die verwendet werden, um Arbeitsspeicher freizugeben. 
+> [in] Zeiger auf die [MAPIFreeBuffer-Funktion,](mapifreebuffer.md) die zum Freispeichern verwendet werden soll. 
     
 _lpMalloc_
   
-> in Zeiger auf ein Speicher Reservierungs Objekt, das die OLE **IMalloc** -Schnittstelle verfügbar macht. Die **IMessage** -Schnittstelle muss diese Zuordnungsmethode beim Arbeiten mit Schnittstellen wie **IStorage** und **IStream**verwenden. 
+> [in] Zeiger auf ein Speicherzuweisungsobjekt, das die OLE **IMalloc-Schnittstelle verfügbar** machen soll. Die **IMessage-Schnittstelle** muss diese Zuordnungsmethode beim Arbeiten mit Schnittstellen wie **IStorage** und **IStream verwenden.** 
     
 _lpMapiSup_
   
-> in Optionaler Zeiger auf ein MAPI-Unterstützungsobjekt, mit dem ein Dienstanbieter die Methoden der [IMAPISupport: IUnknown](imapisupportiunknown.md) -Schnittstelle aufrufen kann. 
+> [in] Optionaler Zeiger auf ein MAPI-Unterstützungsobjekt, das ein Dienstanbieter zum Aufrufen der Methoden der [IMAPISupport : IUnknown-Schnittstelle verwenden](imapisupportiunknown.md) kann. 
     
 _lpStg_
   
-> [in, out] Zeiger auf ein OLE- **IStorage** -Objekt, das geöffnet ist und über Leseberechtigung oder Lese-/Schreibzugriff verfügt. Da **IMessage** keinen schreibgeschützten Zugriff unterstützt, akzeptiert **OpenIMsgOnIStg** kein im schreibgeschützten Modus geöffnetes Speicherobjekt. 
+> [in, out] Zeiger auf ein OLE **IStorage-Objekt,** das geöffnet ist und über schreibgeschützte Oder Lese-/Schreibberechtigungen verfügt. Da **IMessage** keinen Schreibzugriff unterstützt, akzeptiert **OpenIMsgOnIStg** kein Speicherobjekt, das im Schreibmodus geöffnet wird. 
     
 _lpfMsgCallRelease_
   
-> in Optionaler Zeiger auf eine Rückruffunktion basierend auf dem [MSGCALLRELEASE](msgcallrelease.md) -Prototyp, den MAPI nach der letzten Freigabe des **IMessage**-on- **IStorage** -Objekts aufrufen soll. 
+> [in] Optionaler Zeiger auf eine Rückruffunktion basierend auf dem [MSGCALLRELEASE-Prototyp,](msgcallrelease.md) den MAPI nach der letzten Version des **IMessage**-on-IStorage-Objekts **aufrufen** soll. 
     
 _ulCallerData_
   
-> in Von MAPI gespeicherte Anrufer-Daten mit dem **IMessage**-on- **IStorage** -Objekt und an die **MSGCALLRELEASE** -basierte Rückruffunktion übergeben. Die Daten bieten Kontext über das **IMessage** -Objekt, das freigegeben wird, und das **IStorage** -Objekt, auf dem es erstellt wurde. 
+> [in] Aufruferdaten, die von MAPI mit dem IMessage-on-IStorage-Objekt **gespeichert** und an die **MSGCALLRELEASE-basierte** Rückruffunktion übergeben werden.  Die Daten bieten Kontext zum **freigegebenen IMessage-Objekt** und zum **IStorage-Objekt,** auf dem es erstellt wurde. 
     
 _ulFlags_
   
-> in Bitmaske der Flags, mit denen gesteuert wird, ob die OLE **IStorage:: Commit** -Methode aufgerufen wird, wenn die Clientanwendung oder der Dienstanbieter die **IMessage:: SaveChanges** -Methode aufruft. Die folgenden Flags können festgelegt werden: 
+> [in] Bitmaske von Flags, die verwendet werden, um zu steuern, ob die OLE **IStorage::Commit-Methode** aufgerufen wird, wenn die Clientanwendung oder der Dienstanbieter die **IMessage::SaveChanges-Methode** aufruft. Die folgenden Kennzeichen können festgelegt werden: 
     
 IMSG_NO_ISTG_COMMIT 
   
-> Die OLE-Methode **IStorage:: Commit** kann nicht aufgerufen werden, wenn der Client oder Anbieter [SaveChanges](imapiprop-savechanges.md)aufruft. 
+> Die **OLE-Methode IStorage::Commit** darf nicht aufgerufen werden, wenn der Client oder Anbieter [SaveChanges aufruft.](imapiprop-savechanges.md) 
     
 MAPI_UNICODE
   
-> Ermöglicht die Erstellung von Unicode-msg-Dateien. Die resultierende [IMessage](imessageimapiprop.md) -Datei zeigt STORE_UNICODE_OK in der [PR_STORE_SUPPORT_MASK](pidtagstoresupportmask-canonical-property.md) und unterstützt Unicode-Eigenschaften. 
+> Ermöglicht das Erstellen von Unicode-MSG-Dateien. Die resultierende [IMessage-Datei](imessageimapiprop.md) STORE_UNICODE_OK in ihrer [PR_STORE_SUPPORT_MASK](pidtagstoresupportmask-canonical-property.md) und unterstützt Unicode-Eigenschaften. 
     
   > [!NOTE]
-  > Das MAPI_UNICODE-Flag wird nur in dieser Funktion in Outlook 2003 oder höher unterstützt. 
+  > Das MAPI_UNICODE wird nur in dieser Funktion unter Outlook 2003 oder höher unterstützt. 
   
 _lppMsg_
   
-> Out Zeiger auf einen Zeiger auf das geöffnete **IMessage** -Objekt. 
+> [out] Zeiger auf einen Zeiger auf das geöffnete **IMessage-Objekt.** 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -110,29 +110,29 @@ S_OK
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Auf Eigenschaftsattribute kann nur über Property-Objekte zugegriffen werden, also auf Objekte, die die [IMAPIProp: IUnknown](imapipropiunknown.md) -Schnittstelle implementieren. Um MAPI-Eigenschaften für ein OLE Structured Storage-Objekt verfügbar zu machen, erstellt **OpenIMsgOnIStg** ein [IMessage: IMAPIProp](imessageimapiprop.md) -Objekt über dem OLE- **IStorage** -Objekt. Die Eigenschaftsattribute für solche Objekte können mit [SetAttribIMsgOnIStg](setattribimsgonistg.md) festgelegt oder geändert und mit [GetAttribIMsgOnIStg](getattribimsgonistg.md)abgerufen werden. 
+Auf Eigenschaftsattribute kann nur auf Eigenschaftsobjekte zugegriffen werden, d. h. auf Objekte, die die [IMAPIProp : IUnknown-Schnittstelle](imapipropiunknown.md) implementieren. Um MAPI-Eigenschaften für ein strukturiertes OLE-Speicherobjekt verfügbar zu machen, erstellt **OpenIMsgOnIStg** ein [IMessage : IMAPIProp-Objekt](imessageimapiprop.md) über dem OLE **IStorage-Objekt.** Die Eigenschaftenattribute für solche Objekte können mit [SetAttribIMsgOnIStg](setattribimsgonistg.md) festgelegt oder geändert und mit [GetAttribIMsgOnIStg abgerufen werden.](getattribimsgonistg.md) 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Eine nachrichtensitzung sollte mit [OpenIMsgSession](openimsgsession.md) geöffnet werden, bevor **OpenIMsgOnIStg** aufgerufen wird. Durch Angeben eines gültigen _lpMsgSess_ -Parameters stellen Sie sicher, dass die neue Nachricht innerhalb einer nachrichtensitzung erstellt wird, damit Sie geschlossen wird, wenn die Sitzung geschlossen wird. Wenn _lpMsgSess_ ist, wird die Nachricht unabhängig von einer beliebigen nachrichtensitzung erstellt. Wenn die Clientanwendung oder der Dienstanbieter, der die Nachricht erstellt hat, diese nicht freigibt, sowie alle Anhänge und geöffneten Tabellen, wird der Arbeitsspeicher geleckt und kann dazu führen, dass die Anwendung beendet wird. 
+Eine Nachrichtensitzung sollte mit [OpenIMsgSession](openimsgsession.md) geöffnet werden, bevor **OpenIMsgOnIStg** aufgerufen wird. Wenn Sie einen gültigen  _lpMsgSess-Parameter_ angeben, wird sichergestellt, dass die neue Nachricht innerhalb einer Nachrichtensitzung erstellt wird, sodass sie geschlossen wird, wenn die Sitzung geschlossen wird. Wenn  _lpMsgSess_ NULL ist, wird die Nachricht unabhängig von jeder Nachrichtensitzung erstellt. Wenn die Clientanwendung oder der Dienstanbieter, von der die Nachricht erstellt wurde, sie nicht sowie alle Anlagen und geöffneten Tabellen veröffentlicht, ist Arbeitsspeicher nicht mehr verfügbar und kann dazu führen, dass die Anwendung beendet wird. 
   
-MAPI verwendet die Funktionen, auf die durch _lpAllocateBuffer_, _lpAllocateMore_und _lpFreeBuffer_ verwiesen wird, für die meisten Speicherzuweisungen und-Aufhebungen, insbesondere für die Zuweisung von Speicher für die Verwendung durch Clientanwendungen beim Aufrufen von Objektschnittstellen wie [IMAPIProp::](imapiprop-getprops.md) GetProps und [IMAPITable:: QueryRows](imapitable-queryrows.md). Die _lpAllocateBuffer_-, _LpAllocateMore_-und _lpFreeBuffer_ -Zeiger sind optional, wenn die **OpenIMsgOnIStg** -Funktion mit einem gültigen _lpMapiSup_ -Parameter aufgerufen wird. 
+MAPI verwendet die Funktionen, auf die  _von lpAllocateBuffer_,  _lpAllocateMore_ und  _lpFreeBuffer_ verwiesen wird, für die meisten Speicherzuweisungen und Deallocation, insbesondere zum Zuordnen von Arbeitsspeicher für Clientanwendungen beim Aufrufen von Objektschnittstellen wie [IMAPIProp::GetProps](imapiprop-getprops.md) und [IMAPITable::QueryRows](imapitable-queryrows.md). Die  _Zeiger lpAllocateBuffer,_  _lpAllocateMore_ und  _lpFreeBuffer_ sind optional, wenn die **OpenIMsgOnIStg-Funktion** mit einem gültigen  _lpMapiSup-Parameter_ aufgerufen wird. 
   
-Da es sich um ein zugrunde liegendes OLE-Objekt handelt, muss MAPI auch die OLE-Speicherbelegung verwenden. Weitere Informationen zu OLE-strukturierten Speicherobjekten und zur OLE-Speicherzuordnung finden Sie unter _OLE Programmer es Reference_. 
+Da es sich um ein zugrunde liegendes OLE-Objekt handelt, muss MAPI auch die OLE-Speicherzuordnung verwenden. Weitere Informationen zu strukturierten OLE-Speicherobjekten und der OLE-Speicherzuweisung finden Sie unter  _OLE Programmer's Reference_. 
   
-Wenn für _lpMapiSup_ein gültiger Wert angegeben wird, unterstützt **IMESSAGE** die Flags MAPI_DIALOG und ATTACH_DIALOG durch aufrufen der [IMAPISupport::D oprogressdialog](imapisupport-doprogressdialog.md) -Methode, um eine Fortschritts-Benutzeroberfläche für die [IMAPIProp:: CopyTo](imapiprop-copyto.md) bereitzustellen. und [IMessage::D eleteattach](imessage-deleteattach.md) -Methoden. Außerdem versucht die [IMessage:: ModifyRecipients](imessage-modifyrecipients.md) -Methode, kurzfristige Eintrags-IDs in langfristige Eintragsbezeichner zu konvertieren, indem die [IMAPISupport:: openaddressbook](imapisupport-openaddressbook.md) -Methode aufgerufen wird und Aufrufe für das resultierende Adressbuchobjekt durchführen. Wenn NULL für _lpMapiSup_übergeben wird, ignoriert **IMESSAGE** MAPI_DIALOG und ATTACH_DIALOG und speichert kurzfristige Eintragsbezeichner ohne Konvertierung. 
+Wenn ein gültiger Wert für  _lpMapiSup_ angegeben wird, unterstützt **IMessage** die MAPI_DIALOG- und ATTACH_DIALOG-Flags, indem die [IMAPISupport::D oProgressDialog-Methode](imapisupport-doprogressdialog.md) aufruft, um eine Statusbenutzeroberfläche für die [Methoden IMAPIProp::CopyTo](imapiprop-copyto.md) und [IMessage::D eleteAttach](imessage-deleteattach.md) zu liefern. Darüber hinaus versucht die [IMessage::ModifyRecipients-Methode,](imessage-modifyrecipients.md) kurzfristige Eintragsbezeichner durch Aufrufen der [IMAPISupport::OpenAddressBook-Methode](imapisupport-openaddressbook.md) und Aufrufen des resultierenden Adressbuchobjekts in langfristige Eintragsbezeichner zu konvertieren. Wenn NULL für  _lpMapiSup_ übergeben wird, ignoriert **IMessage** MAPI_DIALOG und ATTACH_DIALOG und speichert kurzfristige Eintragsbezeichner ohne Konvertierung. 
   
-Das **IStorage** -Objekt, auf das durch den _lpStg_ -Parameter verwiesen wird, muss im STGM_READ-oder STGM_READWRITE-Modus geöffnet werden. Wenn der STGM_READWRITE-Modus verwendet wird, muss auch der STGM_TRANSACTED-Modus festgelegt werden. 
+Das **IStorage-Objekt,** auf das der  _lpStg-Parameter_ verweist, muss entweder im STGM_READ- oder STGM_READWRITE geöffnet werden. Wenn der STGM_READWRITE verwendet wird, muss auch STGM_TRANSACTED festgelegt werden. 
   
-Die Rückruffunktion, auf die durch den _lpfMsgCallRelease_ -Parameter verwiesen wird, ist optional; Wenn angegeben, sollte Sie auf dem Prototyp der [MSGCALLRELEASE](msgcallrelease.md) -Funktion basieren. Die **IMessage** -Schnittstelle ruft Sie auf, wenn der Verweiszähler des **IMessage**-on- **IStorage** -Objekts durch den letzten Aufruf seiner **Release** -Methode auf NULL festgelegt ist. Die Callback-Funktion wird häufig verwendet, um die zugrunde liegende **IStorage** -Schnittstelle freizugeben. **IMessage** versucht nicht, auf das **IStorage** -Objekt zuzugreifen, auf das durch den _lpStg_ -Parameter verwiesen wird, nachdem der Rückruf vorgenommen wurde. 
+Die Rückruffunktion, auf die der  _lpfMsgCallRelease-Parameter_ verweist, ist optional. Sofern angegeben, sollte es auf dem [MSGCALLRELEASE-Funktionsprototyp](msgcallrelease.md) basieren. Die **IMessage-Schnittstelle** ruft sie auf, wenn die Referenzanzahl des IMessage-on-IStorage-Objekts durch den letzten Aufruf der **Release-Methode** auf Null festgelegt ist.   Die Rückruffunktion wird häufig verwendet, um die zugrunde liegende **IStorage-Schnittstelle frei** zu geben. **IMessage** versucht nach dem Rückruf nicht, auf das **IStorage-Objekt** zu zugreifen, auf das der  _lpStg-Parameter_ verweist. 
   
-Einige Clients oder Anbieter schreiben möglicherweise zusätzliche Daten in das **IStorage** -Objekt, über die **IMessage** selbst hinaus schreibt, wenn die [SaveChanges](imapiprop-savechanges.md) -Methode aufgerufen wird. Der Client oder Anbieter kann das IMSG_NO_ISTG_COMMIT-Flag verwenden, um zu verhindern, dass **IMessage** beim Verarbeiten eines **SaveChanges** -Aufrufs die OLE **IStorage:: Commit** -Methode aufruft. in diesem Fall muss der Client oder Anbieter selbst das **IStorage** -Objekt übertragen, wenn die zusätzlichen Daten geschrieben werden. Um dies zu unterstützen, stellt die **IMessage** -Implementierung sicher, dass alle unter Speicher, die im **IStorage** -Objekt erstellt werden, beginnend mit der Zeichenfolge "__", also mit zwei unterstrichen, benannt werden. Der Client oder Anbieter kann Namenskonflikte vermeiden, indem er seine unter Speichernamen aus diesem Namespace behält. 
+Einige Clients oder Anbieter schreiben möglicherweise zusätzliche Daten in das **IStorage-Objekt** über das hinaus, was **IMessage** selbst schreibt, wenn seine [SaveChanges-Methode](imapiprop-savechanges.md) aufgerufen wird. Der Client oder Anbieter kann das IMSG_NO_ISTG_COMMIT verwenden, um zu verhindern, dass **IMessage** die OLE **IStorage::Commit-Methode** aufruft, während er einen **SaveChanges-Aufruf** verarbeitet. In diesem Fall muss der Client oder Anbieter selbst ein Commit für das **IStorage-Objekt** erstellen, wenn die zusätzlichen Daten geschrieben werden. Um dies zu unterstützen, garantiert die **IMessage-Implementierung,** alle substorages zu benennen, die im **IStorage-Objekt** erstellt werden, beginnend mit der Zeichenfolge "__", d. h. mit zwei Unterstrichen. Der Client oder Anbieter kann Namenskollision vermeiden, indem er seine Unternamen aus diesem Namespace heraushalten. 
   
-MAPI definiert nicht das Verhalten mehrerer geöffneter Vorgänge, die für ein Unterobjekt einer Nachricht ausgeführt werden, beispielsweise eine Anlage, einen Datenstrom oder eine eingebettete Nachricht. MAPI ermöglicht derzeit, dass ein Unterobjekt, das bereits geöffnet ist, noch einmal geöffnet wird, aber MAPI führt den Öffnungsvorgang aus, indem er den Verweiszähler für das vorhandene Open-Objekt inkrementiert und an den Client oder Anbieter zurückgibt, der die IMessage:: openAttach-Funktion aufgerufen hat [. ](imessage-openattach.md)oder [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode. Dies bedeutet, dass der für den ersten geöffneten Vorgang für ein Unterobjekt angeforderte Zugriff der Zugriff für alle nachfolgenden geöffneten Vorgänge ist, unabhängig davon, welcher Zugriff von den Vorgängen angefordert wird. 
+MAPI definiert nicht das Verhalten mehrerer geöffneter Vorgänge, die für ein Unterobjekt einer Nachricht ausgeführt werden, z. B. eine Anlage, ein Datenstrom oder eine eingebettete Nachricht. MapI ermöglicht derzeit, dass ein bereits geöffnetes Unterobjekt erneut geöffnet wird, aber MAPI führt den open-Vorgang aus, indem die Referenzanzahl für das vorhandene open-Objekt erhöht und an den Client oder Anbieter zurückgezahlt wird, der die [IMessage::OpenAttach-](imessage-openattach.md) oder [IMAPIProp::OpenProperty-Methode](imapiprop-openproperty.md) aufgerufen hat. Dies bedeutet, dass der für den ersten geöffneten Vorgang für ein Unterobjekt angeforderte Zugriff der Zugriff ist, der für alle nachfolgenden geöffneten Vorgänge bereitgestellt wird, unabhängig vom von den Vorgängen angeforderten Zugriff. 
   
-Das richtige Verfahren zum Platzieren einer Nachricht in einer Anlage besteht darin, die [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode mit einem Schnittstellenbezeichner von IID_IMessage aufzurufen. **OpenProperty** unterstützt derzeit auch die Erstellung von Nachrichtenanlagen, die direkt auf der OLE- **IStorage** -Schnittstelle verfügbar sind, also mithilfe der IID_IStorage-Schnittstellenkennung. **IStorage** -Zugriff wird unterstützt, um eine einfache Möglichkeit zum Einfügen eines Microsoft Word-Dokuments in eine Anlage zu ermöglichen, ohne Sie in die oder von der OLE **IStream** -Schnittstelle zu konvertieren. **IMessage** reagiert möglicherweise nicht vorhersehbar, wenn **OpenIMsgOnIStg** einen **IStorage** -Zeiger auf die Anlagendaten übergeben wird und die Objekte dann in der falschen Reihenfolge freigegeben werden. 
+Das richtige Verfahren zum Platzieren einer Nachricht in einer Anlage ist das Aufrufen der [IMAPIProp::OpenProperty-Methode](imapiprop-openproperty.md) mit dem Schnittstellenbezeichner IID_IMessage. **OpenProperty** unterstützt derzeit auch das Erstellen von Nachrichtenanlagen, die direkt auf der OLE **IStorage-Schnittstelle** verfügbar sind, d. h. mithilfe IID_IStorage Bezeichners. **Der IStorage-Zugriff** wird unterstützt, um eine einfache Möglichkeit zu ermöglichen, ein Microsoft Word-Dokument in eine Anlage zu speichern, ohne es in die **OLE-IStream-Schnittstelle** oder von dieser zu konvertieren. **IMessage** verhält sich jedoch möglicherweise nicht vorhersagbar, wenn **OpenIMsgOnIStg** einen **IStorage-Zeiger** auf die Anlagendaten übergeben wird und die Objekte dann in der falschen Reihenfolge freigegeben werden. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -140,7 +140,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|Datei. cpp  <br/> |LoadMSGToMessage  <br/> |MFCMAPI verwendet die **OpenIMsgOnIStg** -Methode, um eine IMessage-Schnittstelle über dem zu öffnen. MSG-Datei, sodass die Datei mit MAPI manipuliert werden kann.  <br/> |
+|File.cpp  <br/> |LoadMSGToMessage  <br/> |MFCMAPI verwendet die **OpenIMsgOnIStg-Methode,** um eine IMessage-Schnittstelle über der zu öffnen. MSG-Datei, damit die Datei mit MAPI bearbeitet werden kann.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
