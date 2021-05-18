@@ -16,16 +16,16 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33404540"
 ---
-# <a name="manager-function"></a><span data-ttu-id="b9691-103">MANAGER Function</span><span class="sxs-lookup"><span data-stu-id="b9691-103">MANAGER Function</span></span>
+# <a name="manager-function"></a><span data-ttu-id="68a0f-103">MANAGER Function</span><span class="sxs-lookup"><span data-stu-id="68a0f-103">MANAGER Function</span></span>
 
-<span data-ttu-id="b9691-104">Gibt den Text aus dem Feld **Manager** der Eigenschaften eines Dokuments zurück.</span><span class="sxs-lookup"><span data-stu-id="b9691-104">Returns the text from the **Manager** field of a document's properties.</span></span> 
+<span data-ttu-id="68a0f-104">Gibt den Text aus dem **Feld Manager** der Eigenschaften eines Dokuments zurück.</span><span class="sxs-lookup"><span data-stu-id="68a0f-104">Returns the text from the **Manager** field of a document's properties.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="b9691-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="b9691-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="68a0f-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="68a0f-105">Syntax</span></span>
 
-<span data-ttu-id="b9691-106">MANAGER ()</span><span class="sxs-lookup"><span data-stu-id="b9691-106">MANAGER ()</span></span>
+<span data-ttu-id="68a0f-106">MANAGER ()</span><span class="sxs-lookup"><span data-stu-id="68a0f-106">MANAGER ()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="b9691-107">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="b9691-107">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="68a0f-107">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="68a0f-107">Return value</span></span>
 
-<span data-ttu-id="b9691-108">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="b9691-108">String</span></span>
+<span data-ttu-id="68a0f-108">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="68a0f-108">String</span></span>
   
 

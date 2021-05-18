@@ -14,27 +14,27 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33421837"
 ---
-# <a name="opensession"></a><span data-ttu-id="7edd0-103">OpenSession</span><span class="sxs-lookup"><span data-stu-id="7edd0-103">OpenSession</span></span>
+# <a name="opensession"></a><span data-ttu-id="df274-103">OpenSession</span><span class="sxs-lookup"><span data-stu-id="df274-103">OpenSession</span></span>
 
-<span data-ttu-id="7edd0-104">**Gilt für**: Excel 2013 | Office 2013 | Visual Studio</span><span class="sxs-lookup"><span data-stu-id="7edd0-104">**Applies to**: Excel 2013 | Office 2013 | Visual Studio</span></span> 
+<span data-ttu-id="df274-104">**Gilt für**: Excel 2013 | Office 2013 | Visual Studio</span><span class="sxs-lookup"><span data-stu-id="df274-104">**Applies to**: Excel 2013 | Office 2013 | Visual Studio</span></span> 
   
-<span data-ttu-id="7edd0-105">Erstellt eine Sitzung, in der benutzerdefinierte Funktionen ausgeführt werden können.</span><span class="sxs-lookup"><span data-stu-id="7edd0-105">Creates a session in which user-defined functions can be executed.</span></span>
+<span data-ttu-id="df274-105">Erstellt eine Sitzung, in der benutzerdefinierte Funktionen ausgeführt werden können.</span><span class="sxs-lookup"><span data-stu-id="df274-105">Creates a session in which user-defined functions can be executed.</span></span>
   
 ```cpp
 int OpenSession(WCHAR *Params)
 ```
 
-## <a name="parameters"></a><span data-ttu-id="7edd0-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="7edd0-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="df274-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="df274-106">Parameters</span></span>
 
-<span data-ttu-id="7edd0-107">_Parameter_</span><span class="sxs-lookup"><span data-stu-id="7edd0-107">_Params_</span></span>
+<span data-ttu-id="df274-107">_Parameter_</span><span class="sxs-lookup"><span data-stu-id="df274-107">_Params_</span></span>
   
-> <span data-ttu-id="7edd0-108">Ein Zeiger auf durch Semikolons getrennte UNICODE-Zeichenfolge von Parametern für die Sitzung.</span><span class="sxs-lookup"><span data-stu-id="7edd0-108">A pointer to semicolon-delimited UNICODE string of parameters for the session.</span></span> <span data-ttu-id="7edd0-109">Excel verwendet dieses Argument nicht.</span><span class="sxs-lookup"><span data-stu-id="7edd0-109">Excel does not use this argument.</span></span>
+> <span data-ttu-id="df274-108">Ein Zeiger auf eine durch Semikolons getrennte UNICODE-Zeichenfolge mit Parametern für die Sitzung.</span><span class="sxs-lookup"><span data-stu-id="df274-108">A pointer to semicolon-delimited UNICODE string of parameters for the session.</span></span> <span data-ttu-id="df274-109">Excel verwendet dieses Argument nicht.</span><span class="sxs-lookup"><span data-stu-id="df274-109">Excel does not use this argument.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="7edd0-110">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="7edd0-110">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="df274-110">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="df274-110">Return value</span></span>
 
-<span data-ttu-id="7edd0-111">Eine Sitzungs-ID, die in anderen Aufrufen des Cluster-Konnektors verwendet werden soll, wenn die Sitzung erfolgreich erstellt wurde; andernfalls **xlHpcRetCallFailed**.</span><span class="sxs-lookup"><span data-stu-id="7edd0-111">A session ID to use in other calls to the cluster connector, if the session was successfully created; otherwise **xlHpcRetCallFailed**.</span></span>
+<span data-ttu-id="df274-111">Eine Sitzungs-ID, die bei anderen Aufrufen an den Clusterconnector verwendet werden soll, wenn die Sitzung erfolgreich erstellt wurde. andernfalls **xlHpcRetCallFailed**.</span><span class="sxs-lookup"><span data-stu-id="df274-111">A session ID to use in other calls to the cluster connector, if the session was successfully created; otherwise **xlHpcRetCallFailed**.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="7edd0-112">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="7edd0-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="df274-112">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="df274-112">See also</span></span>
 
-- [<span data-ttu-id="7edd0-113">Excel-Clusterconnector-Funktionen</span><span class="sxs-lookup"><span data-stu-id="7edd0-113">Excel Cluster Connector Functions</span></span>](excel-cluster-connector-functions.md)
+- [<span data-ttu-id="df274-113">Excel-Clusterconnector-Funktionen</span><span class="sxs-lookup"><span data-stu-id="df274-113">Excel Cluster Connector Functions</span></span>](excel-cluster-connector-functions.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagproviderdisplay (-Eigenschaft
+title: PidTagProviderDisplay (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,46 +19,46 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33421592"
 ---
-# <a name="pidtagproviderdisplay-canonical-property"></a><span data-ttu-id="f6343-103">Kanonische Pidtagproviderdisplay (-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="f6343-103">PidTagProviderDisplay Canonical Property</span></span>
+# <a name="pidtagproviderdisplay-canonical-property"></a><span data-ttu-id="6f614-103">PidTagProviderDisplay (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="6f614-103">PidTagProviderDisplay Canonical Property</span></span>
 
   
   
-<span data-ttu-id="f6343-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="f6343-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="6f614-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="6f614-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="f6343-105">Enthält den herstellerdefinierten Anzeigenamen für einen Dienstanbieter.</span><span class="sxs-lookup"><span data-stu-id="f6343-105">Contains the vendor-defined display name for a service provider.</span></span>
+<span data-ttu-id="6f614-105">Enthält den vom Hersteller definierten Anzeigenamen für einen Dienstanbieter.</span><span class="sxs-lookup"><span data-stu-id="6f614-105">Contains the vendor-defined display name for a service provider.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="f6343-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="f6343-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="f6343-107">PR_PROVIDER_DISPLAY, PR_PROVIDER_DISPLAY_A, PR_PROVIDER_DISPLAY_W</span><span class="sxs-lookup"><span data-stu-id="f6343-107">PR_PROVIDER_DISPLAY, PR_PROVIDER_DISPLAY_A, PR_PROVIDER_DISPLAY_W</span></span>  <br/> |
-|<span data-ttu-id="f6343-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="f6343-108">Identifier:</span></span>  <br/> |<span data-ttu-id="f6343-109">0x3006</span><span class="sxs-lookup"><span data-stu-id="f6343-109">0x3006</span></span>  <br/> |
-|<span data-ttu-id="f6343-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="f6343-110">Data type:</span></span>  <br/> |<span data-ttu-id="f6343-111">PT_STRING8, PT_UNICODE</span><span class="sxs-lookup"><span data-stu-id="f6343-111">PT_STRING8, PT_UNICODE</span></span>  <br/> |
-|<span data-ttu-id="f6343-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="f6343-112">Area:</span></span>  <br/> |<span data-ttu-id="f6343-113">MAPI allgemein</span><span class="sxs-lookup"><span data-stu-id="f6343-113">MAPI common</span></span>  <br/> |
+|<span data-ttu-id="6f614-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="6f614-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="6f614-107">PR_PROVIDER_DISPLAY, PR_PROVIDER_DISPLAY_A, PR_PROVIDER_DISPLAY_W</span><span class="sxs-lookup"><span data-stu-id="6f614-107">PR_PROVIDER_DISPLAY, PR_PROVIDER_DISPLAY_A, PR_PROVIDER_DISPLAY_W</span></span>  <br/> |
+|<span data-ttu-id="6f614-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="6f614-108">Identifier:</span></span>  <br/> |<span data-ttu-id="6f614-109">0x3006</span><span class="sxs-lookup"><span data-stu-id="6f614-109">0x3006</span></span>  <br/> |
+|<span data-ttu-id="6f614-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="6f614-110">Data type:</span></span>  <br/> |<span data-ttu-id="6f614-111">PT_STRING8, PT_UNICODE</span><span class="sxs-lookup"><span data-stu-id="6f614-111">PT_STRING8, PT_UNICODE</span></span>  <br/> |
+|<span data-ttu-id="6f614-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="6f614-112">Area:</span></span>  <br/> |<span data-ttu-id="6f614-113">MAPI allgemein</span><span class="sxs-lookup"><span data-stu-id="6f614-113">MAPI common</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="f6343-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="f6343-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="6f614-114">Hinweise</span><span class="sxs-lookup"><span data-stu-id="6f614-114">Remarks</span></span>
 
-<span data-ttu-id="f6343-115">Diese Eigenschaften und **PR_PROVIDER_DLL_NAME** ([pidtagproviderdllname (](pidtagproviderdllname-canonical-property.md)) werden nur in Profil Abschnitten definiert, die Dienstanbietern gehören.</span><span class="sxs-lookup"><span data-stu-id="f6343-115">These properties and **PR_PROVIDER_DLL_NAME** ([PidTagProviderDllName](pidtagproviderdllname-canonical-property.md)) are defined only on profile sections belonging to service providers.</span></span> <span data-ttu-id="f6343-116">Sie müssen in MAPISVC. INF vorhanden sein.</span><span class="sxs-lookup"><span data-stu-id="f6343-116">They must be present in MAPISVC.INF.</span></span>
+<span data-ttu-id="6f614-115">Diese Eigenschaften und **PR_PROVIDER_DLL_NAME** ([PidTagProviderDllName](pidtagproviderdllname-canonical-property.md)) werden nur für Profilabschnitte definiert, die zu Dienstanbietern gehören.</span><span class="sxs-lookup"><span data-stu-id="6f614-115">These properties and **PR_PROVIDER_DLL_NAME** ([PidTagProviderDllName](pidtagproviderdllname-canonical-property.md)) are defined only on profile sections belonging to service providers.</span></span> <span data-ttu-id="6f614-116">Sie müssen in MAPISVC.INF vorhanden sein.</span><span class="sxs-lookup"><span data-stu-id="6f614-116">They must be present in MAPISVC.INF.</span></span>
   
-## <a name="related-resources"></a><span data-ttu-id="f6343-117">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="f6343-117">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="6f614-117">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="6f614-117">Related resources</span></span>
 
-### <a name="header-files"></a><span data-ttu-id="f6343-118">Header Dateien</span><span class="sxs-lookup"><span data-stu-id="f6343-118">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="6f614-118">Headerdateien</span><span class="sxs-lookup"><span data-stu-id="6f614-118">Header files</span></span>
 
-<span data-ttu-id="f6343-119">Mapidefs. h</span><span class="sxs-lookup"><span data-stu-id="f6343-119">Mapidefs.h</span></span>
+<span data-ttu-id="6f614-119">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="6f614-119">Mapidefs.h</span></span>
   
-> <span data-ttu-id="f6343-120">Stellt Datentypdefinitionen bereit.</span><span class="sxs-lookup"><span data-stu-id="f6343-120">Provides data type definitions.</span></span>
+> <span data-ttu-id="6f614-120">Bietet Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="6f614-120">Provides data type definitions.</span></span>
     
-<span data-ttu-id="f6343-121">Mapitags. h</span><span class="sxs-lookup"><span data-stu-id="f6343-121">Mapitags.h</span></span>
+<span data-ttu-id="6f614-121">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="6f614-121">Mapitags.h</span></span>
   
-> <span data-ttu-id="f6343-122">Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.</span><span class="sxs-lookup"><span data-stu-id="f6343-122">Contains definitions of properties listed as alternate names.</span></span>
+> <span data-ttu-id="6f614-122">Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.</span><span class="sxs-lookup"><span data-stu-id="6f614-122">Contains definitions of properties listed as alternate names.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="f6343-123">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="f6343-123">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6f614-123">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="6f614-123">See also</span></span>
 
 
 
-[<span data-ttu-id="f6343-124">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="f6343-124">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="6f614-124">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="6f614-124">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="f6343-125">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="f6343-125">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="6f614-125">KANONISCHE EIGENSCHAFTEN VON MAPI</span><span class="sxs-lookup"><span data-stu-id="6f614-125">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="f6343-126">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="f6343-126">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="6f614-126">Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="6f614-126">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="f6343-127">Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="f6343-127">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="6f614-127">Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="6f614-127">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

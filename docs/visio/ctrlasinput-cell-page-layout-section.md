@@ -16,29 +16,29 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33422621"
 ---
-# <a name="ctrlasinput-cell-page-layout-section"></a><span data-ttu-id="6b61d-104">Zelle "CtrlAsInput" (Abschnitt "Page Layout")</span><span class="sxs-lookup"><span data-stu-id="6b61d-104">CtrlAsInput Cell (Page Layout Section)</span></span>
+# <a name="ctrlasinput-cell-page-layout-section"></a><span data-ttu-id="c45ba-104">Zelle "CtrlAsInput" (Abschnitt "Page Layout")</span><span class="sxs-lookup"><span data-stu-id="c45ba-104">CtrlAsInput Cell (Page Layout Section)</span></span>
 
-<span data-ttu-id="6b61d-p102">Legt die übergeordneten Shapes bei Verwendung von Shapes mit Steuerpunkten fest. Mithilfe dieser Zelle wird das Verhalten aller Shapes auf dem Zeichenblatt festgelegt.</span><span class="sxs-lookup"><span data-stu-id="6b61d-p102">Determines which shape is the parent when using shapes with control handles. This cell sets the behavior for all the shapes on the drawing page.</span></span>
+<span data-ttu-id="c45ba-p102">Legt die übergeordneten Shapes bei Verwendung von Shapes mit Steuerpunkten fest. Mithilfe dieser Zelle wird das Verhalten aller Shapes auf dem Zeichenblatt festgelegt.</span><span class="sxs-lookup"><span data-stu-id="c45ba-p102">Determines which shape is the parent when using shapes with control handles. This cell sets the behavior for all the shapes on the drawing page.</span></span>
   
-|<span data-ttu-id="6b61d-107">**Wert**</span><span class="sxs-lookup"><span data-stu-id="6b61d-107">**Value**</span></span>|<span data-ttu-id="6b61d-108">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="6b61d-108">**Description**</span></span>|
+|<span data-ttu-id="c45ba-107">**Wert**</span><span class="sxs-lookup"><span data-stu-id="c45ba-107">**Value**</span></span>|<span data-ttu-id="c45ba-108">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="c45ba-108">**Description**</span></span>|
 |:-----|:-----|
-| <span data-ttu-id="6b61d-109">TRUE</span><span class="sxs-lookup"><span data-stu-id="6b61d-109">TRUE</span></span>  <br/> | <span data-ttu-id="6b61d-110">Legt das mit dem Steuerpunkt verbundene Shape als das übergeordnete Element fest.</span><span class="sxs-lookup"><span data-stu-id="6b61d-110">Set the shape that the control handle is connected to as the parent.</span></span>  <br/> |
-| <span data-ttu-id="6b61d-111">FALSE</span><span class="sxs-lookup"><span data-stu-id="6b61d-111">FALSE</span></span>  <br/> | <span data-ttu-id="6b61d-p103">Standard. Legt das Shape, in dem der Steuerpunkt enthalten ist, als das übergeordnete Element fest.</span><span class="sxs-lookup"><span data-stu-id="6b61d-p103">The default. Set shape that contains the control handle as the parent.</span></span>  <br/> |
+| <span data-ttu-id="c45ba-109">TRUE</span><span class="sxs-lookup"><span data-stu-id="c45ba-109">TRUE</span></span>  <br/> | <span data-ttu-id="c45ba-110">Legt das mit dem Steuerpunkt verbundene Shape als das übergeordnete Element fest.</span><span class="sxs-lookup"><span data-stu-id="c45ba-110">Set the shape that the control handle is connected to as the parent.</span></span>  <br/> |
+| <span data-ttu-id="c45ba-111">FALSE</span><span class="sxs-lookup"><span data-stu-id="c45ba-111">FALSE</span></span>  <br/> | <span data-ttu-id="c45ba-p103">Standard. Legt das Shape, in dem der Steuerpunkt enthalten ist, als das übergeordnete Element fest.</span><span class="sxs-lookup"><span data-stu-id="c45ba-p103">The default. Set shape that contains the control handle as the parent.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="6b61d-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="6b61d-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c45ba-114">Hinweise</span><span class="sxs-lookup"><span data-stu-id="c45ba-114">Remarks</span></span>
 
-<span data-ttu-id="6b61d-115">Wenn Sie einen Verweis auf die Zelle Zelle CtrlAsInput aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="6b61d-115">To get a reference to the CtrlAsInput cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="c45ba-115">Um einen Verweis auf die Zelle StrgAsInput anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie:</span><span class="sxs-lookup"><span data-stu-id="c45ba-115">To get a reference to the CtrlAsInput cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="6b61d-116">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="6b61d-116">Cell name:</span></span>  <br/> | <span data-ttu-id="6b61d-117">Zelle CtrlAsInput</span><span class="sxs-lookup"><span data-stu-id="6b61d-117">CtrlAsInput</span></span>  <br/> |
+| <span data-ttu-id="c45ba-116">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="c45ba-116">Cell name:</span></span>  <br/> | <span data-ttu-id="c45ba-117">STRGAsInput</span><span class="sxs-lookup"><span data-stu-id="c45ba-117">CtrlAsInput</span></span>  <br/> |
    
-<span data-ttu-id="6b61d-118">Wenn Sie einen Verweis auf die Zelle Zelle CtrlAsInput aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="6b61d-118">To get a reference to the CtrlAsInput cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="c45ba-118">Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die StrgAsInput-Zelle nach Index aus einem Programm zu erhalten:</span><span class="sxs-lookup"><span data-stu-id="c45ba-118">To get a reference to the CtrlAsInput cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="6b61d-119">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="6b61d-119">Section index:</span></span>  <br/> |<span data-ttu-id="6b61d-120">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="6b61d-120">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="6b61d-121">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="6b61d-121">Row index:</span></span>  <br/> |<span data-ttu-id="6b61d-122">**visRowPageLayout**</span><span class="sxs-lookup"><span data-stu-id="6b61d-122">**visRowPageLayout**</span></span> <br/> |
-| <span data-ttu-id="6b61d-123">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="6b61d-123">Cell index:</span></span>  <br/> |<span data-ttu-id="6b61d-124">**visPLOCtrlAsInput**</span><span class="sxs-lookup"><span data-stu-id="6b61d-124">**visPLOCtrlAsInput**</span></span> <br/> |
+| <span data-ttu-id="c45ba-119">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="c45ba-119">Section index:</span></span>  <br/> |<span data-ttu-id="c45ba-120">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="c45ba-120">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="c45ba-121">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="c45ba-121">Row index:</span></span>  <br/> |<span data-ttu-id="c45ba-122">**visRowPageLayout**</span><span class="sxs-lookup"><span data-stu-id="c45ba-122">**visRowPageLayout**</span></span> <br/> |
+| <span data-ttu-id="c45ba-123">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="c45ba-123">Cell index:</span></span>  <br/> |<span data-ttu-id="c45ba-124">**visPLOCtrlAsInput**</span><span class="sxs-lookup"><span data-stu-id="c45ba-124">**visPLOCtrlAsInput**</span></span> <br/> |
    
 

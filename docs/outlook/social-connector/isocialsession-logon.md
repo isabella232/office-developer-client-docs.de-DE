@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8b3c9a23-6378-4054-ad1c-193fc15c473c
-description: Meldet sich mit dem angegebenen Benutzernamen und Kennwort bei der Website für soziale Netzwerke an.
+description: Meldet sich mit dem angegebenen Benutzernamen und Kennwort am Standort des sozialen Netzwerks an.
 ms.openlocfilehash: 7915097e456d6fafa713901f8074e6531bfaa001
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -15,25 +15,25 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32361040"
 ---
-# <a name="isocialsessionlogon"></a><span data-ttu-id="86f9a-103">ISocialSession::Logon</span><span class="sxs-lookup"><span data-stu-id="86f9a-103">ISocialSession::Logon</span></span>
+# <a name="isocialsessionlogon"></a><span data-ttu-id="d19f2-103">ISocialSession::Logon</span><span class="sxs-lookup"><span data-stu-id="d19f2-103">ISocialSession::Logon</span></span>
 
-<span data-ttu-id="86f9a-104">Meldet sich mit dem angegebenen Benutzernamen und Kennwort bei der Website für soziale Netzwerke an.</span><span class="sxs-lookup"><span data-stu-id="86f9a-104">Logs on to the social network site by using the specified user name and password.</span></span>
+<span data-ttu-id="d19f2-104">Meldet sich mit dem angegebenen Benutzernamen und Kennwort am Standort des sozialen Netzwerks an.</span><span class="sxs-lookup"><span data-stu-id="d19f2-104">Logs on to the social network site by using the specified user name and password.</span></span>
   
 ```cpp
 HRESULT _stdcall Logon([in] BSTR username, [in] BSTR password);
 ```
 
-## <a name="parameters"></a><span data-ttu-id="86f9a-105">Parameter</span><span class="sxs-lookup"><span data-stu-id="86f9a-105">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="d19f2-105">Parameter</span><span class="sxs-lookup"><span data-stu-id="d19f2-105">Parameters</span></span>
 
-<span data-ttu-id="86f9a-106">_username_</span><span class="sxs-lookup"><span data-stu-id="86f9a-106">_username_</span></span>
+<span data-ttu-id="d19f2-106">_benutzername_</span><span class="sxs-lookup"><span data-stu-id="d19f2-106">_username_</span></span>
   
-> <span data-ttu-id="86f9a-107">in Eine Zeichenfolge, die den Benutzernamen enthält, um sich anzumelden.</span><span class="sxs-lookup"><span data-stu-id="86f9a-107">[in] A string that contains the user name to log on.</span></span>
+> <span data-ttu-id="d19f2-107">[in] Eine Zeichenfolge, die den benutzernamen enthält, der sich anmelden soll.</span><span class="sxs-lookup"><span data-stu-id="d19f2-107">[in] A string that contains the user name to log on.</span></span>
     
-<span data-ttu-id="86f9a-108">_password_</span><span class="sxs-lookup"><span data-stu-id="86f9a-108">_password_</span></span>
+<span data-ttu-id="d19f2-108">_password_</span><span class="sxs-lookup"><span data-stu-id="d19f2-108">_password_</span></span>
   
-> <span data-ttu-id="86f9a-109">in Eine Zeichenfolge, die das Kennwort enthält, um sich anzumelden.</span><span class="sxs-lookup"><span data-stu-id="86f9a-109">[in] A string that contains the password to log on.</span></span>
+> <span data-ttu-id="d19f2-109">[in] Eine Zeichenfolge, die das kennwort für die Anmeldung enthält.</span><span class="sxs-lookup"><span data-stu-id="d19f2-109">[in] A string that contains the password to log on.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="86f9a-110">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="86f9a-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d19f2-110">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="d19f2-110">See also</span></span>
 
-- [<span data-ttu-id="86f9a-111">ISocialSession : IUnknown</span><span class="sxs-lookup"><span data-stu-id="86f9a-111">ISocialSession : IUnknown</span></span>](isocialsessioniunknown.md)
+- [<span data-ttu-id="d19f2-111">ISocialSession : IUnknown</span><span class="sxs-lookup"><span data-stu-id="d19f2-111">ISocialSession : IUnknown</span></span>](isocialsessioniunknown.md)
 
