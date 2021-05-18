@@ -25,21 +25,21 @@ Sperrt den Text eines Shapes, damit dieser nicht bearbeitet werden kann.
 |TRUE  <br/> |Text kann nicht bearbeitet werden.  <br/> |
 | FALSE  <br/> | Text kann bearbeitet werden.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Sie können weiterhin Text formatieren, indem Sie eine Formatvorlage aus dem Dialogfeld **Text** anwenden (klicken Sie dazu auf der Registerkarte **Start** auf den Pfeil neben **Schriftart**). 
   
-Wenn Sie einen Verweis auf die Zelle Zelle LockTextEdit aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle LockTextEdit anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Zelle LockTextEdit  <br/> |
+| Zellenname:  <br/> | LockTextEdit  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle LockTextEdit aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die LockTextEdit-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowLock** <br/> |
 | Zellenindex:  <br/> |**visLockTextEdit** <br/> |
    

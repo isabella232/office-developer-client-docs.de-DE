@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251453
 localization_priority: Normal
 ms.assetid: c7feec6f-f47a-60ee-b056-7b2dc51ed9a9
-description: 'Gibt TRUE zurück, wenn der Wert von cellreference den Fehlertyp #VALUE, wobei ein Argument in der Formel den falschen Typ aufweist. Die ISERRVALUE-Funktion wird in logischen Ausdrücken verwendet, die auf eine andere Zelle verweisen.'
+description: 'Gibt TRUE zurück, wenn der Wert von cellreference fehlertyptyp #VALUE, wobei ein Argument in der Formel der falsche Typ ist. Die ISERRVALUE-Funktion wird in logischen Ausdrücken verwendet, die auf eine andere Zelle verweisen.'
 ms.openlocfilehash: 62058522dc8a2387aec9867e4892da740aba9b44
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33404428"
 ---
 # <a name="iserrvalue-function"></a>ISERRVALUE Function
 
-Gibt TRUE zurück, wenn der Wert von _cellreference_ den fehlertyp #VALUE, wobei ein Argument in der Formel den falschen Typ aufweist. Die ISERRVALUE-Funktion wird in logischen Ausdrücken verwendet, die auf eine andere Zelle verweisen. 
+Gibt TRUE zurück, wenn der Wert von  _cellreference_ fehlertyptyp #VALUE, wobei ein Argument in der Formel der falsche Typ ist. Die ISERRVALUE-Funktion wird in logischen Ausdrücken verwendet, die auf eine andere Zelle verweisen. 
   
 ## <a name="syntax"></a>Syntax
 
-ISERRVALUE (* * *cellreference* * *) 
+ISERRVALUE(** *cellreference* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -30,7 +30,7 @@ ISERRVALUE (* * *cellreference* * *)
 |:-----|:-----|:-----|:-----|
 | _cellreference_ <br/> |Erforderlich  <br/> |**String** <br/> |Bezug auf eine Zelle.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Die Entwurfzellen A bis D geben keinen Fehler vom Typ #WERT! zurück, da ihre Formeln in der gleichen Zeichenfolge Zahlen und Buchstaben enthalten können. Die Zellen X und Y dürfen nur Zahlen enthalten. 
   
@@ -38,8 +38,8 @@ Die Entwurfzellen A bis D geben keinen Fehler vom Typ #WERT! zurück, da ihre Fo
 
 |**Cell**|**Formula**|**Zurückgegebener Wert**|
 |:-----|:-----|:-----|
-|Scratch. x1  <br/> |="Haus"  <br/> |#VALUE!  <br/> |
-|Scratch. a1  <br/> |= If (ISERRVALUE(Scratch.X1),2,Scratch.X1)  <br/> |2  <br/> |
+|Scratch.X1  <br/> |="Haus"  <br/> |#VALUE!  <br/> |
+|Scratch.A1  <br/> |= If (ISERRVALUE(Scratch.X1),2,Scratch.X1)  <br/> |2  <br/> |
    
 Gibt 2 zurück, da der zurückgegebene Wert den Fehlertyp #WERT! aufweist und der Ausdruck Microsoft Visio anweist, statt des Fehlers eine 2 zurückzugeben.
   
@@ -47,8 +47,8 @@ Gibt 2 zurück, da der zurückgegebene Wert den Fehlertyp #WERT! aufweist und de
 
 |**Cell**|**Formula**|**Zurückgegebener Wert**|
 |:-----|:-----|:-----|
-|Scratch. a1  <br/> |="5 + 7"  <br/> |5 + 7  <br/> |
-|Scratch. B1  <br/> |= If (ISERRVALUE(Scratch.A1),2,Scratch.A1)  <br/> |5 + 7  <br/> |
+|Scratch.A1  <br/> |="5 + 7"  <br/> |5 + 7  <br/> |
+|Scratch.B1  <br/> |= If (ISERRVALUE(Scratch.A1),2,Scratch.A1)  <br/> |5 + 7  <br/> |
    
 Gibt 12 zurück, da der zurückgegebene Wert nicht den Fehlertyp #WERT! aufweist und der Ausdruck Visio anweist, den Wert der ursprünglichen Zelle zurückzugeben.
   

@@ -21,11 +21,11 @@ ms.locfileid: "33404785"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Formularobjekte werden von Formular Servern dynamisch erstellt, um bestimmte Nachrichten anzuzeigen und Benutzern die Interaktion mit diesen zu ermöglichen. Ein Form-Objekt ist daher eine Instanziierung der von [IMAPIForm](imapiformiunknown.md) abgeleiteten Klasse, die vom Formularserver implementiert wird. Wenn eine Clientanwendung eine Nachricht öffnet, erstellt der Formularserver für diese Nachrichtenklasse ein Form-Objekt zur Behandlung der Nachricht. Das Form-Objekt erstellt dann seine Schnittstelle und zeigt die Eigenschaften der Nachricht darin an. Das Form-Objekt und seine Schnittstelle bleiben erhalten, bis der Benutzer Sie schließt. Das Form-Objekt behandelt alle Änderungen an den Werten der Eigenschaften der Nachricht. 
+Formularobjekte werden dynamisch von Formularservern erstellt, um bestimmte Nachrichten anzeigen und Benutzern die Interaktion mit diesen zu ermöglichen. Ein Formularobjekt ist daher eine Instanziierung der von [IMAPIForm](imapiformiunknown.md) abgeleiteten Klasse, die vom Formularserver implementiert wird. Wenn eine Clientanwendung eine Nachricht öffnet, erstellt der Formularserver für diese Nachrichtenklasse ein Formularobjekt zur Verarbeitung der Nachricht. Das Formularobjekt erstellt dann seine Schnittstelle und zeigt die Eigenschaften der Nachricht an. Das Formularobjekt und seine Schnittstelle bleiben erhalten, bis der Benutzer es schließt. Das Formularobjekt behandelt alle Änderungen an den Werten der Nachrichteneigenschaften. 
   
-Darüber hinaus definieren die MAPI-Formular Schnittstellen einen Mechanismus, mit dem ein Form-Objekt geladen und eine Reihe von Nachrichten angezeigt werden kann. Hierbei handelt es sich um einen Effizienz Mechanismus, da dadurch die unnötige Zerstörung und die Erstellung von Nachrichtenobjekten und deren Schnittstellen vermieden werden. Wenn vom Messaging Client eine andere Nachricht geladen wird, sollte das Form-Objekt alle Änderungen an den Eigenschaften der aktuellen Nachricht speichern.
+Darüber hinaus definieren die MAPI-Formularschnittstellen einen Mechanismus, mit dem ein Formularobjekt eine Reihe von Nachrichten laden und anzeigen kann. Dies ist ein Effizienzmechanismus, da er unnötige Zerstörung und Erstellung von Nachrichtenobjekten und deren Schnittstellen verhindert. Wenn der Messagingclient aufgefordert wird, eine andere Nachricht zu laden, sollte das Formularobjekt alle Änderungen an den Eigenschaften der aktuellen Nachricht speichern.
   
-Informationen zur Perspektive einer Clientanwendung für Formularobjekte finden Sie unter [MAPI Custom Form Objects](mapi-custom-form-objects.md).
+Informationen zur Perspektive einer Clientanwendung auf Formularobjekte finden Sie unter [MAPI Custom Form Objects](mapi-custom-form-objects.md).
   
 ## <a name="see-also"></a>Siehe auch
 

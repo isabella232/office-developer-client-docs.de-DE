@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251510
 localization_priority: Normal
 ms.assetid: 410c4187-21f3-d959-750e-9dc6095fba9a
-description: Wendet das Linienmuster, das Füllmuster oder das Linienende namens auf die Form an, wenn es in die Zelle "LinePattern, FillPattern, beginArrow oder Zelle EndArrow gestellt wird.
+description: Wendet das Linienmuster, das Füllmuster oder das Zeilenende namens name auf die Form an, wenn sie in der Zelle LinePattern, FillPattern, BeginArrow oder EndArrow platziert wird.
 ms.openlocfilehash: ddd15c1c127fafa1a230545d544c74956f5c0262
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33422824"
 ---
 # <a name="use-function"></a>USE Function
 
-Wendet das Linienmuster, das Füllmuster oder das Linienende __ namens auf die Form an, wenn es in die Zelle "LinePattern, FillPattern, BeginArrow oder Zelle EndArrow gestellt wird. 
+Wendet das Linienmuster, das Füllmuster  oder das Zeilenende namens name auf die Form an, wenn sie in der Zelle LinePattern, FillPattern, BeginArrow oder EndArrow platziert wird. 
   
 ## <a name="syntax"></a>Syntax
 
-USE ("* * *Name* * *") 
+USE(" ** *Name* ** ") 
   
 ### <a name="parameters"></a>Parameter
 
@@ -32,11 +32,11 @@ USE ("* * *Name* * *")
    
 ### <a name="return-value"></a>Rückgabewert
 
-Zahl
+Nummer
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn ein Master- _Name_ in der Dokumentschablone des Dokuments vorhanden ist, wird das Muster als Linienmuster, Füllmuster, anfangs Pfeil oder Endpfeil angewendet. 
+Wenn in  der Dokumentschablone des Dokuments ein Mastername vorhanden ist, wird das Muster als Linienmuster, Füllmuster, Startpfeil oder Endpfeil angewendet. 
   
 Diese Funktion gibt immer 254 zurück.
   

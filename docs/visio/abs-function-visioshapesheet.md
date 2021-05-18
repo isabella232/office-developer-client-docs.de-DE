@@ -22,7 +22,7 @@ Gibt den absoluten Wert einer Zahl zurück.
   
 ## <a name="syntax"></a>Syntax
 
-ABS ( *Nummer*) 
+ABS( *number*) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -32,7 +32,7 @@ ABS ( *Nummer*)
    
 ## <a name="example"></a>Beispiel
 
-ABS (-1,24) 
+ABS(-1.24) 
   
 Liefert 1,24.
   

@@ -20,24 +20,24 @@ ms.locfileid: "32360242"
 
 Stellt eine beschreibende Textzeichenfolge für einen Hyperlink dar. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Verwenden Sie diese Zelle, um Kommentare zum Hyperlink zu speichern. Beispiel: "Link zu unserer Preis-Website".
+Verwenden Sie diese Zelle, um Kommentare zum Hyperlink zu speichern. Beispiel: "Link zu unserer Preiswebsite".
   
 Sie können den Wert dieser Zelle auch im Dialogfeld **Hyperlinks** festlegen (klicken Sie dazu auf der Registerkarte **Einfügen** auf **Hyperlink**). 
   
-Wenn Sie einen Verweis auf die Zelle Description aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle Description anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Hyperlink.  *Name* . Beschreibung des Hyperlinks.  *Name* ist der Name der Hyperlink-Zeile.  <br/> |
+| Zellenname:  <br/> | Hyperlink.  *Name*  . Beschreibung, wo Hyperlink.  *Name*  ist der Name der Hyperlinkzeile  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Description aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle Description nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionHyperlink** <br/> |
-| Zeilenindex:  <br/> |**visRow1stHyperlink** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRow1stHyperlink**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
 | Zellenindex:  <br/> |**visHLinkDescription** <br/> |
    
 

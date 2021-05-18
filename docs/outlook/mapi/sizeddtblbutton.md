@@ -25,12 +25,12 @@ ms.locfileid: "33421914"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt eine benannte Struktur, die eine [DTBLBUTTON](dtblbutton.md) -Struktur zur Beschreibung einer Schaltfläche und einer Beschriftung einer angegebenen Länge enthält. 
+Erstellt eine benannte Struktur, die eine [DTBLBUTTON-Struktur](dtblbutton.md) zum Beschreiben einer Schaltfläche und einer Bezeichnung mit einer angegebenen Länge enthält. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |**DTBLBUTTON** <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |**DTBLBUTTON** <br/> |
    
 ```cpp
 SizedDtblButton (n, u)
@@ -40,15 +40,15 @@ SizedDtblButton (n, u)
 
  _n_
   
-> Die Länge der Bezeichnung, die in die neue Struktur eingeschlossen werden soll.
+> Länge der Bezeichnung, die in die neue Struktur eingeschlossen werden soll.
     
  _u_
   
 > Name für die neue Struktur.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die neue Struktur wird mit den folgenden Elementen erstellt:
+Die neue Struktur wird mit den folgenden Mitgliedern erstellt:
   
 ```
 DTBLBUTTON dtblbutton;

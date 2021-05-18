@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251415
 localization_priority: Normal
 ms.assetid: 3b0842ae-6893-2d7b-6cb2-8905198fae30
-description: Gibt eine ganze Zahl von 1 bis 31 zurück, die den Tag in DateTime oder Expression darstellt. Die DAY-Funktion verwendet den gregorianischen Kalender.
+description: Gibt eine ganze Zahl von 1 bis 31 zurück, die den Tag in Datetime oder Ausdruck darstellt. Die DAY-Funktion verwendet den gregorianischen Kalender.
 ms.openlocfilehash: 49c29d5dc25bf11599f89a20cb2bc2367bd74187
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -18,19 +18,19 @@ ms.locfileid: "32360296"
 ---
 # <a name="day-function-visioshapesheet"></a>DAY-Funktion (VisioShapeSheet)
 
-Gibt eine ganze Zahl von 1 bis 31 zurück, die den Tag in _DateTime_ oder _Expression_darstellt. Die DAY-Funktion verwendet den gregorianischen Kalender.
+Gibt eine ganze Zahl von 1 bis 31 zurück, die den Tag in _datetime oder_ Ausdruck _darstellt._ Die DAY-Funktion verwendet den gregorianischen Kalender.
   
 ## <a name="syntax"></a>Syntax
 
-Tag ("* * *DateTime* * *" | * * *Expression* * * [, * * *LCID* * *]) 
+DAY(" ** *datetime* ** "| ** *Ausdruck* ** [, ** *lcid* ** ]) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _DateTime_ <br/> |Erforderlich  <br/> |**String** <br/> |Beliebige Zeichenfolge, die allgemein als Datums- und Zeitangabe erkannt wird, oder ein Bezug auf eine Zelle mit einer Datums- und Zeitangabe.  <br/> |
+| _datetime_ <br/> |Erforderlich  <br/> |**String** <br/> |Beliebige Zeichenfolge, die allgemein als Datums- und Zeitangabe erkannt wird, oder ein Bezug auf eine Zelle mit einer Datums- und Zeitangabe.  <br/> |
 | _expression_ <br/> |Erforderlich  <br/> |**String** <br/> |Beliebiger Ausdruck, der eine Datums- und Zeitangabe liefert.  <br/> |
-| _lcid_ <br/> |Optional  <br/> |**Number** <br/> |Gibt den lokalen Bezeichner an, der bei der Auswertung eines nicht lokalen Werts für datetime verwendet werden soll. Der lokale Bezeichner ist eine Zahl, die in den Systemkopfdateien beschrieben wird.  <br/> |
+| _lcid_ <br/> |Optional.  <br/> |**Number** <br/> |Gibt den lokalen Bezeichner an, der bei der Auswertung eines nicht lokalen Werts für datetime verwendet werden soll. Der lokale Bezeichner ist eine Zahl, die in den Systemkopfdateien beschrieben wird.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
@@ -38,11 +38,11 @@ Ganze Zahl
   
 ## <a name="remarks"></a>Bemerkungen
 
-Alle Zeitkomponenten in _DateTime_ oder _Expression_ werden verworfen. 
+Jede Zeitkomponente in  _datetime_ oder  _ausdruck_ wird verworfen. 
   
-Es findet kein Auf- oder Abrunden statt. Wenn _DateTime_ fehlt oder nicht in ein gültiges Ergebnis konvertiert werden kann, gibt die Funktion einen Fehler zurück. 
+Es findet kein Auf- oder Abrunden statt. Wenn  _datetime_ fehlt oder nicht in ein gültiges Ergebnis konvertiert werden kann, gibt die Funktion einen Fehler zurück. 
   
-Die DAY-Funktion akzeptiert auch einen einzelnen Zahlenwert für _Expression_ , wobei der ganzzahlige Teil des Ergebnisses die Anzahl von Tagen seit dem 30. Dezember 1899 darstellt. 
+Die DAY-Funktion akzeptiert auch  einen einzelnen Zahlenwert für ausdruck, wobei der ganzzahlige Teil des Ergebnisses die Anzahl der Tage seit dem 30. Dezember 1899 darstellt. 
   
 ## <a name="example-1"></a>Beispiel 1
 
@@ -58,7 +58,7 @@ Gibt 6 zurück.
   
 ## <a name="example-3"></a>Beispiel 3
 
-TAG (35580.6337)
+DAY(35580.6337)
   
 Gibt 30 zurück.
   

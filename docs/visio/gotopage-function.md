@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251432
 localization_priority: Normal
 ms.assetid: b131badf-1656-132e-0aae-eeedb917ba7a
-description: Zeigt die Seite mit dem Namen pagename im derzeit aktiven Fenster an.
+description: Zeigt die Seite mit dem Namen pagename im aktuell aktiven Fenster an.
 ms.openlocfilehash: c96585406b6104aeedbe46c35024a4f13bb0953e
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "32302968"
 ---
 # <a name="gotopage-function"></a>GOTOPAGE Function
 
-Zeigt die Seite mit dem Namen *pagename* im derzeit aktiven Fenster an. 
+Zeigt die Seite mit dem Namen  *pagename*  im aktuell aktiven Fenster an. 
   
 ## <a name="syntax"></a>Syntax
 
-GOTOPAGE ("* * *Seitenname* * *") 
+GOTOPAGE(" ** *pagename* ** ") 
   
 ### <a name="parameters"></a>Parameter
 
@@ -30,9 +30,9 @@ GOTOPAGE ("* * *Seitenname* * *")
 |:-----|:-----|:-----|:-----|
 | _pagename_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Name des Zeichenblatts, zu dem gewechselt werden soll.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn ein Fenster die Seite bereits anzeigt, wird dieses Fenster aktiv. Wenn *pagename* nicht vorhanden ist, versucht die anwendung zu https://pagename ** /zu navigieren. Wenn Visio als ein in-Place-Server fungiert, hat die GOTOPAGE-Funktion keine Auswirkung. 
+Wenn die Seite bereits in einem Fenster angezeigt wird, wird dieses Fenster aktiv. Wenn  *pagename*  nicht vorhanden ist, versucht die Anwendung, zu https://  *Pagename /zu*  navigieren. Wenn Visio als in-Place-Server agiert, hat die GOTOPAGE-Funktion keine Auswirkung. 
   
 Sie können die HYPERLINK-Funktion verwenden, um zu einem beliebigen DOS-, UNC- oder URL-Pfad zu wechseln. 
   

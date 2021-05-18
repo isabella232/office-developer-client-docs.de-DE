@@ -19,54 +19,54 @@ ms.locfileid: "33423055"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ein MAPI-Formular ist ein Viewer für eine Nachricht einer bestimmten Klasse. Clients, die es Ihren Benutzern ermöglichen, mit Nachrichten zu arbeiten, die zu einer Vielzahl von Nachrichtenklassen gehören, müssen geschrieben werden, um eine Vielzahl von MAPI-Formularen zu behandeln. Für die Verarbeitung mehrerer Formulare implementieren Clients eine Komponente, die als Formularanzeige bezeichnet wird und die folgenden drei Objekte enthält:
+Ein MAPI-Formular ist ein Viewer für eine Nachricht einer bestimmten Klasse. Clients, die benutzern die Arbeit mit Nachrichten ermöglichen, die zu einer Vielzahl von Nachrichtenklassen gehören, müssen für die Verarbeitung einer Vielzahl von MAPI-Formularen geschrieben werden. Um mehrere Formulare zu verarbeiten, implementieren Clients eine Komponente, die als Formularanzeige bekannt ist und die die folgenden drei Objekte enthält:
   
-- Ein Nachrichten Site-Objekt, das die [IMAPIMessageSite: IUnknown](imapimessagesiteiunknown.md) -Schnittstelle unterstützt. 
+- Ein Nachrichtenwebsiteobjekt, das die [IMAPIMessageSite : IUnknown-Schnittstelle](imapimessagesiteiunknown.md) unterstützt. 
     
-- Eine View Advise-Senke, die die [IMAPIViewAdviseSink: IUnknown](imapiviewadvisesinkiunknown.md) -Schnittstelle unterstützt. 
+- Eine Ansichtssenke, die die [IMAPIViewAdviseSink : IUnknown-Schnittstelle](imapiviewadvisesinkiunknown.md) unterstützt. 
     
-- Ein View-Kontextobjekt, das die [IMAPIViewContext: IUnknown](imapiviewcontextiunknown.md) -Schnittstelle unterstützt. 
+- Ein Ansichtskontextobjekt, das die [IMAPIViewContext : IUnknown-Schnittstelle](imapiviewcontextiunknown.md) unterstützt. 
     
-Jedes dieser Objekte wird von einer Komponente mit dem Namen "Form Server" verwendet, die jedes Formular implementiert, dessen Speicherung und die von Clients, die die Ansicht verarbeiten, generierten Benachrichtigungen. Eine andere Komponente, der Formularbibliothek Anbieter, implementiert einen Formular-Manager. Der Formular-Manager verwaltet die Formularbibliotheken, in denen ausführbare Formularserver Dateien gespeichert werden. Diese Verwaltung umfasst das Laden des entsprechenden Formular Servers und die Verarbeitung der anfänglichen Kommunikation zwischen dem Server und dem Client.
+Jedes dieser Objekte wird von einer Komponente namens Formularserver verwendet, die jedes Formular implementiert, dessen Speicher und die von Clients generierten Benachrichtigungen behandeln, die die Ansicht behandeln. Eine andere Komponente, der Formularbibliotheksanbieter, implementiert einen Formular-Manager. Der Formular-Manager verwaltet die Formularbibliotheken, in denen ausführbare Dateien des Formularservers gespeichert werden. Diese Verwaltung umfasst das Laden des entsprechenden Formularservers und die Verarbeitung der anfänglichen Kommunikation zwischen dem Server und dem Client.
   
 Das folgende Diagramm zeigt die Beziehung zwischen einem Client und den anderen Teilen der MAPI-Formulararchitektur.
   
 ## <a name="mapi-form-architecture"></a>Architektur des MAPI-Formulars
   
-![MAPI-Formulararchitektur] (media/forms01.gif "MAPI-Formulararchitektur")
+![MAPI-Formulararchitektur](media/forms01.gif "MAPI-Formulararchitektur")
   
-Wenn Ihr Client MAPI-Formulare verarbeiten möchte, verwenden Sie die [IMAPIFormMgr: IUnknown](imapiformmgriunknown.md) -Schnittstelle des Formular-Managers, um fünf grundlegende Aufgaben auszuführen: 
+Wenn Ihr Client die Verarbeitung von MAPI-Formularen plant, verwenden Sie die [IMAPIFormMgr : IUnknown-Schnittstelle](imapiformmgriunknown.md) des Formular-Managers, um fünf grundlegende Aufgaben auszuführen: 
   
 - Starten Sie den entsprechenden MAPI-Formularserver, wenn eine Nachricht geöffnet oder zusammengesetzt wird.
     
-- Anzeigen der Symbole von Formular Servern in den Inhaltsverzeichnis Tabellen.
+- Zeigen Sie die Symbole von Formularservern in den Inhaltsverzeichnissen von Ordnern an.
     
-- Senden und empfangen von Formular Benachrichtigungen. Weitere Informationen finden Sie unter [senden und empfangen von Formular Benachrichtigungen](sending-and-receiving-form-notifications.md).
+- Senden und Empfangen von Formularbenachrichtigungen. Weitere Informationen finden Sie unter [Senden und Empfangen von Formularbenachrichtigungen](sending-and-receiving-form-notifications.md).
     
-- Ermöglicht Benutzern das Installieren oder Entfernen von Formular Servern aus Formularbibliotheken. Weitere Informationen finden Sie unter [Verwalten einer Formularbibliothek](maintaining-a-form-library.md).
+- Zulassen, dass Benutzer Formularserver aus Formularbibliotheken installieren oder entfernen. Weitere Informationen finden Sie unter [Verwalten einer Formularbibliothek](maintaining-a-form-library.md).
     
-- Zulassen, dass Benutzerformular Server bestimmten Ordnern zuordnen.
+- Zulassen, dass Benutzer Formularserver bestimmten Ordnern zuordnen.
     
-Um auf den Formular-Manager zuzugreifen, rufen Sie die [MAPIOpenFormMgr](mapiopenformmgr.md) -Funktion einmal während der Initialisierung auf. 
+Rufen Sie die [MAPIOpenFormMgr-Funktion einmal](mapiopenformmgr.md) während der Initialisierung auf, um auf den Formular-Manager zu zugreifen. 
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
-- [Implementieren eines Formular](implementing-a-form-viewer.md)-Viewers: Beschreibt, wie ein Formular-Viewer mithilfe einer Ansicht Advise-Senke, einer Nachrichtenwebsite und eines Ansichts Kontexts implementiert wird.
+- [Implementieren einer Formularanzeige:](implementing-a-form-viewer.md)Beschreibt, wie Sie eine Formularanzeige mithilfe einer Ansichtssenke, einer Nachrichtenwebsite und einem Ansichtskontext implementieren.
     
-- [Implementieren von Standard Verben für Formulare](implementing-standard-form-verbs.md): Beschreibt, wie Sie die Verben für Benutzermenü-oder Schaltflächenklicks auf MAPI-Formulare implementieren.
+- [Implementieren von Standardformularverben:](implementing-standard-form-verbs.md)Beschreibt die Implementierung der Verben für Benutzermenü- oder Schaltflächenklicks auf MAPI-Formulare.
     
-- [Senden und empfangen von Formular Benachrichtigungen](sending-and-receiving-form-notifications.md): Beschreibt das Senden und empfangen von Formular Benachrichtigungen.
+- [Senden und Empfangen von Formularbenachrichtigungen](sending-and-receiving-form-notifications.md): Beschreibt das Senden und Empfangen von Formularbenachrichtigungen.
     
-- [Verwalten einer Formularbibliothek](maintaining-a-form-library.md): Beschreibt, wie Sie eine Bibliothek mit allen wichtigen Informationen zu einem Formular verwalten.
+- [Verwalten einer Formularbibliothek:](maintaining-a-form-library.md)Beschreibt, wie Sie eine Bibliothek verwalten, die alle wichtigen Informationen zu einem Formular enthält.
     
-- [Laden einer Nachricht in ein Formular](loading-a-message-into-a-form.md): Beschreibt, wie Sie eine Nachricht in ein Formular laden.
+- [Laden einer Nachricht in ein Formular](loading-a-message-into-a-form.md): Beschreibt, wie eine Nachricht in ein Formular geladen wird.
     
-- [Verfassen einer neuen Nachricht mithilfe eines Formulars](composing-a-new-message-by-using-a-form.md): Beschreibt, wie Sie eine Nachricht mithilfe eines Formulars verfassen.
+- [Verfassen einer neuen Nachricht mithilfe eines Formulars](composing-a-new-message-by-using-a-form.md): Beschreibt, wie eine Nachricht mithilfe eines Formulars verfasst wird.
     
-- [Anzeigen von Formular Symbolen](displaying-form-icons.md): Beschreibt die Schritte zum Anzeigen eines Symbols mit einem Formular.
+- [Anzeigen von Formularsymbolen:](displaying-form-icons.md)Beschreibt die Schritte zum Anzeigen eines Symbols mit einem Formular.
     
 ## <a name="see-also"></a>Siehe auch
 
 - [MAPI-Formulare](mapi-forms.md)
-- [Entwickeln von MAPI-Formular Servern](developing-mapi-form-servers.md)
+- [Entwickeln von MAPI-Formularservern](developing-mapi-form-servers.md)
 

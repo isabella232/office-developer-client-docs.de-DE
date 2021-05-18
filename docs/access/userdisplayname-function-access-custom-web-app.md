@@ -1,5 +1,5 @@
 ---
-title: User-Funktion (Access Custom Web App)
+title: UserDisplayName-Funktion (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33421578"
 ---
-# <a name="userdisplayname-function-access-custom-web-app"></a>User-Funktion (Access Custom Web App)
+# <a name="userdisplayname-function-access-custom-web-app"></a>UserDisplayName-Funktion (benutzerdefinierte Access-Web-App)
 
 Gibt den Anzeigenamen des aktuellen Benutzers zurück.
   
@@ -23,10 +23,10 @@ Gibt den Anzeigenamen des aktuellen Benutzers zurück.
   
 ## <a name="syntax"></a>Syntax
 
- **User** () 
+ **UserDisplayName** () 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **User** -Funktion ist nur in Benutzeroberflächen-Makros verfügbar. 
+Die **UserDisplayName-Funktion** ist nur in Benutzeroberflächenmakros verfügbar. 
   
 

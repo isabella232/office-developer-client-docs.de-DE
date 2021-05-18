@@ -1,5 +1,5 @@
 ---
-title: Erforderliche Funktionen für Transport Anbieter
+title: Erforderliche Funktionalität für Transportanbieter
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33404442"
 ---
-# <a name="required-functionality-for-transport-providers"></a>Erforderliche Funktionen für Transport Anbieter
+# <a name="required-functionality-for-transport-providers"></a>Erforderliche Funktionalität für Transportanbieter
 
   
   
@@ -23,14 +23,14 @@ ms.locfileid: "33404442"
   
 Jeder MAPI-Transportanbieter muss:
   
-- BeFolgen Sie die allgemeinen Richtlinien für das Arbeiten mit MAPI und anderen Dienstanbietern. Weitere Informationen finden Sie unter [MAPI-Anwendungsentwicklung](mapi-application-development.md) und [MAPI-Dienstanbieter](mapi-service-providers.md).
+- Befolgen Sie die allgemeinen Richtlinien für die Arbeit mit MAPI und anderen Dienstanbietern. Weitere Informationen finden Sie unter [MAPI Application Development](mapi-application-development.md) und [MAPI Service Providers](mapi-service-providers.md).
     
-- Lassen Sie die [XPProviderInit](xpproviderinit.md) -Initialisierungsfunktion ihrer Transportanbieter-dll für MAPI verfügbar. 
+- Die INITIALISIERUNGsfunktion des Transportanbieters DLL für MAPI verfügbar zu machen. [](xpproviderinit.md) 
     
-- Machen Sie für MAPI die Implementierung der [IXPProvider: IUnknown](ixpprovideriunknown.md) -und [IXPLogon: IUnknown](ixplogoniunknown.md) -Schnittstellen verfügbar. 
+- Expose to MAPI its implementation of the [IXPProvider : IUnknown](ixpprovideriunknown.md) and [IXPLogon : IUnknown](ixplogoniunknown.md) interfaces. 
     
-- Verfügbar machen für MAPI-und Clientanwendungen die Implementierung der [IMAPIStatus: IMAPIProp](imapistatusimapiprop.md) -Schnittstelle. Weitere Informationen zum Implementieren von **IMAPIStatus**finden Sie unter [Status Object Implementation](status-object-implementation.md). 
+- Machen Sie MAPI und Clientanwendungen die Implementierung der [IMAPIStatus : IMAPIProp-Schnittstelle](imapistatusimapiprop.md) verfügbar. Weitere Informationen zum Implementieren von **IMAPIStatus** finden Sie unter [Status Object Implementation](status-object-implementation.md). 
     
-- Implementieren Sie ein Eigenschaftenblatt-Dialogfeld für die Konfiguration. Weitere Informationen zum Implementieren von Eigenschaftenblättern finden Sie unter [Eigenschaftenblatt Implementierung](property-sheet-implementation.md).
+- Implementieren Sie ein Eigenschaftenblattdialogfeld für die Konfiguration. Weitere Informationen zum Implementieren von Eigenschaftenblättern finden Sie unter [Property Sheet Implementation](property-sheet-implementation.md).
     
 

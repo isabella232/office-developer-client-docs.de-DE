@@ -23,25 +23,25 @@ Enthält die Informationen zu einem einzelnen Aktionstag, das einem Shape zugeor
 > [!NOTE]
 > In früheren Versionen von Microsoft Visio werden Aktionstags als Smarttags bezeichnet. 
   
-Smarttags-Zeilen heißen SmartTags. *Name* und enthalten die folgenden Zellen. Weitere Informationen finden Sie in den Themen zu bestimmten Zellen. 
+#A0 heißen SmartTags. *namen*  und die folgenden Zellen enthalten. Weitere Informationen finden Sie in den spezifischen Zellthemen. 
   
 |**Cell**|**Beschreibung**|
 |:-----|:-----|
-|[X](x-cell-action-tags-section.md) <br/> |Die *x* -Koordinate der Position eines Punkts in den lokalen Koordinaten des Shapes, um die sich die Schaltfläche Aktionstag befindet.  <br/> |
-|[Y](y-cell-action-tags-section.md) <br/> |Die *y* -Koordinatenposition eines Punkts in den lokalen Koordinaten des Shapes, um den die Schaltfläche Aktionstag gesetzt wird.  <br/> |
+|[X](x-cell-action-tags-section.md) <br/> |Die  x-Koordinatenposition eines Punkts in den lokalen Koordinaten des Shapes, um den die Aktionstagschaltfläche platziert wird.  <br/> |
+|[Y](y-cell-action-tags-section.md) <br/> |Die  *y-Koordinatenposition*  eines Punkts in den lokalen Koordinaten des Shapes, um den die Aktionstagschaltfläche platziert wird.  <br/> |
 |[TagName](tagname-cell-action-tags-section.md) <br/> |Der logische Name des Aktionstags.  <br/> |
-|[X-Ausrichtung](x-justify-cell-action-tags-section.md) <br/> |Der *x* -Offset der Schaltfläche Aktionstag in Bezug auf den Punkt, der durch die Zellen X und Y definiert ist.  <br/> |
-|[Y-Ausrichtung](y-justify-cell-action-tags-section.md) <br/> |Der *y* -Offset der Schaltfläche Aktionstag in Bezug auf den Punkt, der durch die Zellen X und y definiert ist.  <br/> |
+|[X-Ausrichtung](x-justify-cell-action-tags-section.md) <br/> |Der  *x-Offset*  der Aktionstagschaltfläche relativ zum durch die X- und Y-Zellen definierten Punkt.  <br/> |
+|[Y-Ausrichtung](y-justify-cell-action-tags-section.md) <br/> |Der  *y-Offset*  der Aktionstagschaltfläche relativ zum durch die X- und Y-Zellen definierten Punkt.  <br/> |
 |[DisplayMode](displaymode-cell-action-tags-section.md) <br/> |Bestimmt, wann das Aktionstag angezeigt wird.  <br/> |
-|["ButtonFace](buttonface-cell-action-tags-section.md) <br/> |Die ID der Abbildung, die auf der Oberfläche der Schaltfläche Aktionstag angezeigt wird.  <br/> |
+|[ButtonFace](buttonface-cell-action-tags-section.md) <br/> |Die ID der Abbildung, die auf der Oberfläche der Schaltfläche Aktionstag angezeigt wird.  <br/> |
 |[Beschreibung](description-cell-action-tags-section.md) <br/> |Beschreibende Zeichenfolge für das Aktionstag.  <br/> |
 |[Disabled](disabled-cell-action-tags-section.md) <br/> |Gibt an, ob das Aktionstag deaktiviert ist.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
- Sie können so viele SmartTags hinzufügen.  *benennen* Sie Zeilen, die Sie benötigen, und weisen Sie den Zeilen aussagekräftige Namen zu. Klicken Sie zum Hinzufügen eines Aktionstags zu einem vorhandenen Smarttagbereich mit der rechten Maustaste auf eine Zeile, und klicken Sie dann im Kontextmenü auf **Zeile einfügen** . 
+ Sie können so viele SmartTags hinzufügen.  *name*  rows as you need, assign meaningful names to the rows, and set cell values. Klicken Sie zum Hinzufügen eines Aktionstags zu einem vorhandenen SmartTags-Abschnitt mit der rechten Maustaste auf eine Zeile, und klicken Sie im Kontextmenü **auf** Zeile einfügen. 
   
-Sie können auf diese Zellen anhand ihres Zeilennamens verweisen, der in einem ShapeSheet-Fenster in rotem Text angezeigt wird. Zuweisen von aussagekräftigen Namen zu Smarttags. *Name* rows, klicken Sie auf die Zeile, und geben Sie dann einen Namen wie die *Größe* ein, um beispielsweise den Zeilennamen Smarttags. Size zu erstellen. Sie können dann mithilfe von Smarttags. Size. Description auf die Zelle Description verweisen. 
+Sie können auf diese Zellen durch ihren Zeilennamen verweisen, der in einem ShapeSheet-Fenster in rotem Text angezeigt wird. So weisen Sie SmartTags aussagekräftige Namen zu. *Zeilen*  benennen, klicken Sie auf die Zeile, und geben Sie dann einen Namen wie  *z.*  B. Size ein, um den Zeilennamen Smart Tags.Size zu erstellen. Anschließend können Sie mithilfe von Smart Tags.Size.Description auf die Zelle Description verweisen. 
   
 Der eingegebene Zeilenname muss innerhalb des Abschnitts eindeutig sein.
   

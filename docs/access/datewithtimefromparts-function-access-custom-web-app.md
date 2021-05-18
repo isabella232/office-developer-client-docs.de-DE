@@ -1,5 +1,5 @@
 ---
-title: DateWithTimeFromParts-Funktion (Access Custom Web App)
+title: DateWithTimeFromParts-Funktion (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33422089"
 ---
-# <a name="datewithtimefromparts-function-access-custom-web-app"></a>DateWithTimeFromParts-Funktion (Access Custom Web App)
+# <a name="datewithtimefromparts-function-access-custom-web-app"></a>DateWithTimeFromParts-Funktion (benutzerdefinierte Access-Web-App)
 
 Gibt ein Datum und eine Uhrzeit basierend auf einem angegebenen Jahr, Monat, Tag und Uhrzeit zurück.
   
@@ -22,21 +22,21 @@ Gibt ein Datum und eine Uhrzeit basierend auf einem angegebenen Jahr, Monat, Tag
   
 ## <a name="syntax"></a>Syntax
 
-**DateWithTimeFromParts** (*Jahr*, *Monat*, *Tag*, *Stunde*, *Minute*, *Sekunde*) 
+**DateWithTimeFromParts** (*Year*, *Month*, *Day*, *Hour*, *Minute*, *Second*) 
   
-Die **DateWithTimeFromParts** -Funktion enthält die folgenden Argumente. 
+Die **DateWithTimeFromParts-Funktion** enthält die folgenden Argumente. 
   
 |**Argumentname**|**Beschreibung**|
 |:-----|:-----|
-| *Jahr*  <br/> |Integer-Ausdruck, der ein Jahr angibt.  <br/> |
-| *Month*  <br/> |Integer-Ausdruck, der einen Monat angibt.  <br/> |
-| *Day*  <br/> |Integer-Ausdruck, der einen Tag angibt.  <br/> |
-| *Hour*  <br/> |Integer-Ausdruck, der Stunden angibt.  <br/> |
-| *Minute*  <br/> |Ganzzahliger Ausdruck, der Minuten angibt.  <br/> |
-| *Zweiter*  <br/> |Integer-Ausdruck, der Sekunden angibt.  <br/> |
+| *Jahr*  <br/> |Ganzzahliger Ausdruck, der ein Jahr an gibt.  <br/> |
+| *Month*  <br/> |Ganzzahliger Ausdruck, der einen Monat an gibt.  <br/> |
+| *Day*  <br/> |Ganzzahliger Ausdruck, der einen Tag an gibt.  <br/> |
+| *Hour*  <br/> |Ganzzahliger Ausdruck, der Stunden an gibt.  <br/> |
+| *Minute*  <br/> |Ganzzahliger Ausdruck, der Minuten an gibt.  <br/> |
+| *Zweiter*  <br/> |Ganzzahliger Ausdruck, der Sekunden an gibt.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-**DateWithTimeFromParts** gibt einen vollständig initialisierten Datum/Uhrzeit-Wert zurück. Wenn die Argumente ungültig sind, wird ein Fehler ausgelöst. Wenn die erforderlichen Argumente NULL sind, wird NULL zurückgegeben. 
+**DateWithTimeFromParts gibt** einen vollständig initialisierten Date/Time-Wert zurück. Wenn die Argumente ungültig sind, wird ein Fehler ausgelöst. Wenn erforderliche Argumente Null sind, wird Null zurückgegeben. 
   
 

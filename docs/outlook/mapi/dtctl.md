@@ -23,11 +23,11 @@ ms.locfileid: "33421501"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt ein Steuerelement, das in einem von einer Anzeigetabelle erstellten Dialogfeldverwendet wird. 
+Beschreibt ein Steuerelement, das in einem Dialogfeld verwendet wird, das aus einer Anzeigetabelle erstellt wird. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct
@@ -58,11 +58,11 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
 **ulCtlType**
   
-> Der Typ des Steuerelements, das im **CTL** -Element enthalten ist und der **PR_CONTROL_TYPE** ([pidtagcontroltype (](pidtagcontroltype-canonical-property.md))-Eigenschaft des Steuerelements entspricht. Folgende Werte sind möglich:
+> Typ des Steuerelements, das im **#A0** enthalten ist und der PR_CONTROL_TYPE **(** [PidTagControlType](pidtagcontroltype-canonical-property.md)) des Steuerelements entspricht. Mögliche Werte sind:
     
 DTCT_LABEL 
   
@@ -70,19 +70,19 @@ DTCT_LABEL
     
 DTCT_EDIT 
   
-> Bearbeitungssteuerelement.
+> Steuerelement bearbeiten.
     
 DTCT_LBX 
   
-> Listenfeld-Steuerelement.
+> Listenfeldsteuerelement.
     
 DTCT_COMBOBOX 
   
-> Kombinationsfeld-Steuerelement.
+> Kombinationsfeldsteuerelement.
     
 DTCT_DDLBX 
   
-> Dropdownlisten-Steuerelement.
+> Dropdownlistensteuerelement.
     
 DTCT_CHECKBOX 
   
@@ -90,11 +90,11 @@ DTCT_CHECKBOX
     
 DTCT_GROUPBOX 
   
-> Gruppenfeld-Steuerelement.
+> Gruppenfeldsteuerelement.
     
 DTCT_BUTTON 
   
-> Schaltflächen-Steuerelement.
+> Schaltflächensteuerelement.
     
 DTCT_PAGE 
   
@@ -102,7 +102,7 @@ DTCT_PAGE
     
 DTCT_RADIOBUTTON 
   
-> Optionsfeld-Steuerelement.
+> Optionsfeldsteuerelement.
     
 DTCT_MVLISTBOX 
   
@@ -110,15 +110,15 @@ DTCT_MVLISTBOX
     
 DTCT_MVDDLBX 
   
-> Dropdownlisten-Steuerelement mit mehreren Werten.
+> Mehrwertige Dropdownlistensteuerung.
     
 **ulCtlFlags**
   
-> Bitmaske von Flags, die die Features des Steuerelements beschreibt und der **PR_CONTROL_FLAGS** ([pidtagcontrolflags (](pidtagcontrolflags-canonical-property.md))-Eigenschaft des Steuerelements entspricht. Diese Flags können nur für Kontrollkästchen, Kombinationsfelder, Listenfelder und Bearbeitungssteuerelemente festgelegt werden. Folgende Werte sind möglich:
+> Bitmaske von Flags, die die Features des Steuerelements beschreibt und der **PR_CONTROL_FLAGS** ([PidTagControlFlags](pidtagcontrolflags-canonical-property.md)) -Eigenschaft des Steuerelements entspricht. Diese Kennzeichen können nur für Kontrollkästchen, Kombinationsfelder, Listenfelder und Bearbeitungssteuerelemente festgelegt werden. Mögliche Werte sind:
     
 DT_ACCEPT_DBCS 
   
-> Das ANSI-oder das DBCS-Format wird akzeptiert. Dieses Flag ist nur für Bearbeitungssteuerelemente gültig.
+> Entweder das ANSI- oder das DBCS-Format wird akzeptiert. Dieses Flag ist nur für Bearbeitungssteuerelemente gültig.
     
 DT_EDITABLE 
   
@@ -130,11 +130,11 @@ DT_MULTILINE
     
 DT_PASSWORD_EDIT 
   
-> Das Steuerelement enthält ein Kennwort; Daher sollte dem Benutzer der Inhalt des Steuerelements nicht angezeigt werden. Dieses Flag ist nur für Bearbeitungssteuerelemente gültig.
+> Das Steuerelement enthält ein Kennwort. Daher sollte der Inhalt des Steuerelements dem Benutzer nicht angezeigt werden. Dieses Flag ist nur für Bearbeitungssteuerelemente gültig.
     
 DT_REQUIRED 
   
-> Das Dialogfeld-Steuerelement ist erforderlich. Dieses Flag ist nur für Bearbeitungs-und Kombinationsfeld-Steuerelemente gültig.
+> Das Dialogfeldsteuerelement ist erforderlich. Dieses Flag ist nur für Bearbeitungs- und Kombinationsfeldsteuerelemente gültig.
     
 DT_SET_IMMEDIATE 
   
@@ -142,45 +142,45 @@ DT_SET_IMMEDIATE
     
 **lpbNotif**
   
-> Zeiger auf eine Struktur, die aus einer [GUID](guid.md) -Struktur besteht, die den Dienstanbieter und einen Bezeichner für das Steuerelement darstellt. Die **lpbNotif** -und **cbNotif** -Member entsprechen der **PR_CONTROL_ID** ([pidtagcontrolid (](pidtagcontrolid-canonical-property.md))-Eigenschaft des Steuerelements und werden verwendet, um die Benutzeroberfläche zu benachrichtigen, wenn das Steuerelement aktualisiert werden muss.
+> Zeiger auf eine Struktur, die aus einer [GUID-Struktur](guid.md) besteht, um den Dienstanbieter und einen Bezeichner für das Steuerelement zu repräsentieren. Die **Elemente lpbNotif** und **cbNotif** entsprechen der **PR_CONTROL_ID** ([PidTagControlId](pidtagcontrolid-canonical-property.md))-Eigenschaft des Steuerelements und werden verwendet, um die Benutzeroberfläche zu benachrichtigen, wenn das Steuerelement aktualisiert werden muss.
     
 **cbNotif**
   
-> Die Anzahl der Bytes in der Struktur, auf die durch das **lpbNotif** -Element verwiesen wird. 
+> Anzahl der Bytes in der Struktur, auf die das **lpbNotif-Element** verweist. 
     
 **lpszFilter**
   
-> Zeiger auf eine Zeichenfolge, die beschreibt, welche Zeichen in ein Bearbeitungs-oder Kombinationsfeld-Steuerelement eingegeben werden können. Bei anderen Steuerelementtypen kann das **lpszFilter** -Element NULL sein. Bei Bearbeitungs-und Kombinationsfeld-Steuerelementen sollte es sich um einen regulären Ausdruck handeln, der jeweils auf ein einzelnes Zeichen angewendet wird. Derselbe Filter wird auf alle Zeichen im Steuerelement angewendet. Das Format der Filterzeichenfolge lautet wie folgt: 
+> Zeiger auf eine Zeichenzeichenfolge, die beschreibt, welche Zeichen in ein Bearbeitungs- oder Kombinationsfeldsteuerelement eingegeben werden können. Bei anderen Steuerelementtypen kann **das lpszFilter-Element** NULL sein. Für Bearbeitungs- und Kombinationsfeldsteuerelemente sollte es sich um einen regulären Ausdruck, der für ein einzelnes Zeichen gleichzeitig gilt, sein. Der gleiche Filter wird auf alle Zeichen im Steuerelement angewendet. Das Format der Filterzeichenfolge lautet wie folgt: 
     
 |**Zeichen**|**Beschreibung**|
 |:-----|:-----|
-| `*` <br/> | Ein beliebiges Zeichen ist zulässig (Beispiels `"*"`Weise).  <br/> |
-| `[ ]` <br/> |Definiert eine Gruppe von Zeichen (beispielsweise `"[0123456789]"`.)  <br/> |
-| `-` <br/> |Gibt einen Zeichentyp an (beispielsweise `"[a-z]"`).  <br/> |
-| `~` <br/> |Gibt an, dass diese Zeichen nicht zulässig sind (zum `"[~0-9]")`Beispiel. <br/>|   
-| `\` <br/> |Wird verwendet, um eines der vorherigen Symbole zu zitieren ( `"[\-\\\[\]]"` beispielsweise sind \, means-, [und] characters zulässig).  <br/> |
+| `*` <br/> | Jedes Zeichen ist zulässig (z. B. `"*"` ).  <br/> |
+| `[ ]` <br/> |Definiert eine Reihe von Zeichen (z. B. `"[0123456789]"` .)  <br/> |
+| `-` <br/> |Gibt einen Zeichenbereich an (z. B. `"[a-z]"` ).  <br/> |
+| `~` <br/> |Gibt an, dass diese Zeichen nicht zulässig sind (z. B. `"[~0-9]")` . <br/>|   
+| `\` <br/> |Wird verwendet, um eines der vorherigen Symbole anführungszeichen (z. B. `"[\-\\\[\]]"` bedeutet -, \, [und ] Zeichen sind zulässig).  <br/> |
    
 **ulItemID**
   
-> Wert, der das Steuerelement in der Dialogfeldressource identifiziert. Bei Registerkarten-Steuerelementen vom Typ DTCT_PAGE wird optional das **ulItemID** -Element verwendet, um den Komponentennamen für die Seite aus einer String-Ressource zu laden. Positions-und Beschriftungsinformationen werden aus der Dialogfeldressource gelesen. 
+> Wert, der das Steuerelement in der Dialogfeldressource identifiziert. Bei Registerkartenseitensteuerelementen vom Typ DTCT_PAGE wird das **ulItemID-Element** optional zum Laden des Komponentennamens für die Seite aus einer Zeichenfolgenressource verwendet. Positions- und Bezeichnungsinformationen werden aus der Dialogfeldressource gelesen. 
     
-**veraltete**
+**ctl**
   
-> Eine Struktur, die die Daten für das Steuerelement enthält und der **PR_CONTROL_STRUCTURE** ([pidtagcontrolstructure (](pidtagcontrolstructure-canonical-property.md))-Eigenschaft des Steuerelements entspricht. Jeder Steuerelementtyp hat eine andere Struktur.
+> Eine Struktur, die die Daten für das Steuerelement enthält und der PR_CONTROL_STRUCTURE **(** [PidTagControlStructure](pidtagcontrolstructure-canonical-property.md)) des Steuerelements entspricht. Jeder Steuerelementtyp hat eine andere Struktur.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **DTCTL** -Struktur beschreibt ein Steuerelement eines beliebigen Typs. Die meisten seiner Member werden verwendet, um Eigenschaften für das Steuerelement festzulegen. 
+Die **DTCTL-Struktur** beschreibt ein Steuerelement eines beliebigen Typs. Die meisten Elemente werden zum Festlegen von Eigenschaften für das Steuerelement verwendet. 
   
-Der **CTL** -Member ist eine Vereinigung von Strukturen, die sich auf einen bestimmten Steuerelementtyp beziehen. Wenn die **DTCTL** -Struktur ein Edit-Steuerelement beschreibt, zeigt der **CTL** -Member beispielsweise auf eine [DTBLEDIT](dtbledit.md) -Struktur. Diese Struktur entspricht der **PR_CONTROL_STRUCTURE** -Eigenschaft des Steuerelements. Die Union hat als erster Member eine Variable vom Typ LPVOID, um die Kompilierungszeit Initialisierung der **DTCTL** -Struktur zu ermöglichen. 
+Das **#A0** ist eine Vereinigung von Strukturen, die sich auf einen bestimmten Steuerelementtyp beziehen. Wenn die **DTCTL-Struktur** beispielsweise ein Bearbeitungssteuerelement beschreibt, zeigt das **#A0** auf eine [DTBLEDIT-Struktur.](dtbledit.md) Diese Struktur entspricht der  PR_CONTROL_STRUCTURE Steuerelements. Die Union verfügt als erstes Mitglied über eine Variable vom Typ LPVOID, um die Initialisierung der Kompilierungszeit der **DTCTL-Struktur zu** ermöglichen. 
   
-Obwohl die [BuildDisplayTable](builddisplaytable.md) -Funktion die **DTCTL** -Struktur zum Erstellen der Anzeigetabelle aus den Steuerelementressourcen verwendet, wird die **DTCTL** -Struktur nie in der Anzeigetabelle selbst angezeigt. Diese Struktur liefert nur Informationen an **BuildDisplayTable**.
+Obwohl die [BuildDisplayTable-Funktion](builddisplaytable.md) die **DTCTL-Struktur** zum Erstellen der Anzeigetabelle aus Steuerelementressourcen verwendet, wird die **DTCTL-Struktur** niemals in der Anzeigetabelle selbst angezeigt. Diese Struktur stellt nur Informationen für **BuildDisplayTable zur Verfügung.**
   
-Im **ulCtlFlags** -Element betreffen vier Flags DT_ACCEPT_DBCS, DT_EDITABLE, DT_MULTILINE_and DT_PASSWORD_EDIT nur Bearbeitungssteuerelemente. Zwei weitere DT_REQUIRED und DT_SET_IMMEDIATE wirken sich auf ein bearbeitbares Steuerelement aus. 
+Im **ulCtlFlags-Element** werden vier Flags DT_ACCEPT_DBCS, DT_EDITABLE, DT_MULTILINE_and DT_PASSWORD_EDIT nur Bearbeitungssteuerelemente betreffen. Zwei weitere DT_REQUIRED und DT_SET_IMMEDIATE sich auf ein bearbeitbares Steuerelement. 
   
-Zu den verfügbaren Steuerelementen für ein Dialogfeld gehören die Bezeichnungen, das Textfeld, das Textfeld, die Liste, die Dropdownliste, das Kombinationsfeld, das Kontrollkästchen, das Gruppenfeld, die Schaltfläche, die Optionsschaltfläche und die Registerkartenseite.
+Die für ein Dialogfeld verfügbaren Steuerelemente sind Bezeichnung, Textfeld, Freihandtextfeld, Liste, Dropdownliste, Kombinationsfeld, Kontrollkästchen, Gruppenfeld, Schaltfläche, Optionsfeld und Registerkartenseite.
   
-Eine Übersicht über Anzeige Tabellen finden Sie unter [Display Tables](display-tables.md). Weitere Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
+Eine Übersicht über Anzeigetabellen finden Sie unter [Display Tables](display-tables.md). Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
   
 ## <a name="see-also"></a>Siehe auch
 

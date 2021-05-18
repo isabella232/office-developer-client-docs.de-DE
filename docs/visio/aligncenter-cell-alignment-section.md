@@ -20,19 +20,19 @@ ms.locfileid: "33421459"
 
 Legt die horizontale Position einer vertikalen Führung (oder eines Führungspunkts) relativ zum Ursprung des übergeordneten Objekts fest, an der (bzw. dem) die horizontale Mitte des Shapes ausgerichtet ist.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle Zelle AlignCenter aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle AlignCenter anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Zelle AlignCenter  <br/> |
+| Zellenname:  <br/> | AlignCenter  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle AlignCenter aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle AlignCenter nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowAlign** <br/> |
 | Zellenindex:  <br/> |**visAlignCenter** <br/> |
    

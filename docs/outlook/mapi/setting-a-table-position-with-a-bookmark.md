@@ -1,5 +1,5 @@
 ---
-title: Festlegen einer Tabellen Position mit einer textMarke
+title: Festlegen einer Tabellenposition mit einem Lesezeichen
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,13 +15,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33422460"
 ---
-# <a name="setting-a-table-position-with-a-bookmark"></a>Festlegen einer Tabellen Position mit einer textMarke
+# <a name="setting-a-table-position-with-a-bookmark"></a>Festlegen einer Tabellenposition mit einem Lesezeichen
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine Textmarke ist eine Ressource, die eine bestimmte Position in einer Tabelle angibt. Durch das Festlegen einer Textmarke wird es möglich, zu einem späteren Zeitpunkt zu einer Position zurückzukehren, eine Funktion, die die Leistung von Tabellenoperationen erheblich verbessern kann. MAPI definiert drei Standard Lesezeichen: 
+Eine Textmarke ist eine Ressource, die einen bestimmten Speicherort in einer Tabelle angibt. Das Festlegen einer Textmarke ermöglicht es, zu einem späteren Zeitpunkt an eine Position zurückzukehren, ein Feature, das die Leistung von Tabellenvorgängen erheblich verbessern kann. MAPI definiert drei Standardmarken: 
   
 |||
 |:-----|:-----|
@@ -29,19 +29,19 @@ Eine Textmarke ist eine Ressource, die eine bestimmte Position in einer Tabelle 
 |BOOKMARK_BEGINNING  <br/> |Zeigt auf die erste Zeile in einer Tabelle.  <br/> |
 |BOOKMARK_END  <br/> |Zeigt auf die letzte Zeile in einer Tabelle.  <br/> |
    
-Tabellen Implementierer sind erforderlich, um diese Standard Lesezeichen zu unterstützen und andere zu unterstützen. Da Lesezeichen jedoch Ressourcen sind und Ressourcen begrenzt sind, sollten Bookmark-Benutzer Sie so bald wie möglich freigeben. 
+Tabellen implementierer sind erforderlich, um diese Standardmarken zu unterstützen und können auch andere unterstützen. Da Lesezeichen jedoch Ressourcen sind und Ressourcen begrenzt sind, sollten Lesezeichenbenutzer sie so bald wie möglich frei geben. 
   
- **So legen Sie ein Lesezeichen an der aktuellen Tabellenposition fest**
+ **So legen Sie eine Textmarke an der aktuellen Tabellenposition**
   
-- Rufen Sie [IMAPITable:: CreateBookMark](imapitable-createbookmark.md)auf. Gelegentlich ist nicht genügend Arbeitsspeicher verfügbar, um die neue Textmarke zu **** reservieren, wodurch CreateBookMark den MAPI_E_UNABLE_TO_COMPLETE-Fehlerwert zurückgibt. 
+- Rufen [Sie IMAPITable::CreateBookmark auf.](imapitable-createbookmark.md) Gelegentlich ist nicht genügend Arbeitsspeicher verfügbar, um die neue Textmarke zuzuordnen, wodurch **CreateBookmark** den Fehlerwert MAPI_E_UNABLE_TO_COMPLETE zurück. 
     
- **So geben Sie ein Lesezeichen frei**
+ **So können Sie ein Lesezeichen frei**
   
-- Rufen Sie [IMAPITable:: FreeBookmark](imapitable-freebookmark.md)auf.
+- Rufen [Sie IMAPITable::FreeBookmark auf.](imapitable-freebookmark.md)
     
- **So bewegen Sie den Cursor an eine Textmarke**
+ **So verschieben Sie den Cursor an eine Position mit Textmarken**
   
-- Rufen Sie [IMAPITable:: SeekRow](imapitable-seekrow.md)auf. **SeekRow** legt einen neuen Wert für die BOOKMARK_CURRENT-Position fest. **SeekRow** kann verwendet werden, um beispielsweise eine Tabelle mit zehn Zeilen von der aktuellen Position aus zu positionieren oder am Anfang zu beginnen. Clients oder Dienstanbieter können nach dem aktuellen, Anfang oder Ende einer Tabelle oder einer anderen Position suchen, die mit einer vordefinierten Textmarke verknüpft ist. Sie können entweder vorwärts oder rückwärts navigieren und den Vorgang auf eine bestimmte Anzahl von Zeilen begrenzen. In der Regel sollten Anrufer nicht mehr als 50 Zeilen mit **SeekRow**suchen; [IMAPITable:: SeekRowApprox](imapitable-seekrowapprox.md) sollte mit einer größeren Anzahl von Zeilen verwendet werden. 
+- Rufen [Sie IMAPITable::SeekRow auf.](imapitable-seekrow.md) **SeekRow** richtet einen neuen Wert für die BOOKMARK_CURRENT ein. **SeekRow** kann z. B. verwendet werden, um eine Tabelle zehn Zeilen von der aktuellen Position zu positionieren oder um am Anfang zu beginnen. Clients oder Dienstanbieter können zum aktuellen, Beginnenden oder Ende einer Tabelle oder zu einer beliebigen anderen Position suchen, die einem vordefinierten Lesezeichen zugeordnet ist. Sie können sich vorwärts oder rückwärts bewegen und den Vorgang auf eine angegebene Anzahl von Zeilen beschränken. In der Regel sollten Anrufer mit SeekRow nicht mehr als 50 **Zeilen durchsuchen.** [IMAPITable::SeekRowApprox](imapitable-seekrowapprox.md) sollte mit einer größeren Anzahl von Zeilen verwendet werden. 
     
 ## <a name="see-also"></a>Siehe auch
 

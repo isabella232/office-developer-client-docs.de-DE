@@ -1,5 +1,5 @@
 ---
-title: Abschnitte des MapiSvc. inf-Dienstanbieters
+title: Abschnitte des MapiSvc.inf-Dienstanbieters
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,37 +15,37 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33405562"
 ---
-# <a name="mapisvcinf-service-provider-sections"></a>Abschnitte des MapiSvc. inf-Dienstanbieters
+# <a name="mapisvcinf-service-provider-sections"></a>Abschnitte des MapiSvc.inf-Dienstanbieters
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPISVC. inf enthält einen Abschnitt des Dienstanbieters für jeden Eintrag, der im Abschnitt **Anbieter** im vorherigen Nachrichtendienst aufgeführt ist. **Dienst** Anbieter Abschnitte ähneln den Nachrichtendienst Abschnitten darin, dass beide Typen von Abschnitten Einträge in diesem Format enthalten: 
+Mapisvc.inf enthält einen Dienstanbieterabschnitt für jeden der Einträge, die im Eintrag **Anbieter** im vorherigen Abschnitt "Nachrichtendienste" aufgeführt sind. **Dienstanbieterabschnitte** ähneln Nachrichtendienstabschnitten, da beide Arten von Abschnitten Einträge in diesem Format enthalten: 
   
-**Property Tag** = Eigenschaftswert 
+**property-Tag** = Eigenschaftswert 
   
-Dienstanbieter Abschnitte und Nachrichtendienst Abschnitte unterscheiden sich jedoch darin, dass es sich bei diesen Eigenschaften Einträgen um den einzigen Eintrags handelt, der in Dienstanbieter Abschnitten enthalten ist. Es kann keine zusätzlichen oder verknüpften Abschnitte für Dienstanbieter geben; Alle Dienstanbieterinformationen müssen im ersten Abschnitt enthalten sein. 
+Dienstanbieterabschnitte und Nachrichtendienstabschnitte unterscheiden sich jedoch darin, dass solche Eigenschaftseinträge der einzige Eintragstyp sind, der in Dienstanbieterabschnitten enthalten ist. Es kann keine zusätzlichen oder verknüpften Abschnitte für Dienstanbieter sein. Alle Dienstanbieterinformationen müssen in dem einen Abschnitt enthalten sein. 
   
-Einige der Eigenschaften, die in Nachrichtendienst Abschnitten festgelegt sind, werden auch in Dienstanbieter Abschnitten festgelegt, da diese Eigenschaften für beides sinnvoll sind. Die **PR_DISPLAY_NAME** -Eigenschaft ist ein Beispiel. Sowohl Dienstanbieter als auch Nachrichtendienste haben einen Namen, der für die Anzeige in der Konfigurations-Benutzeroberfläche verwendet wird. Je nach Dienstanbieter kann dieser Name nicht identisch sein. Andere Eigenschaften sind für Dienstanbieter spezifisch. 
+Einige der in Nachrichtendienstabschnitten festgelegten Eigenschaften werden auch in Abschnitten des Dienstanbieters festgelegt, da diese Eigenschaften für beides sinnvoll sind. Die **PR_DISPLAY_NAME-Eigenschaft** ist ein Beispiel. Sowohl Dienstanbieter als auch Nachrichtendienste haben einen Namen, der für die Anzeige auf der Benutzeroberfläche der Konfiguration verwendet wird. Je nach Dienstanbieter ist dieser Name möglicherweise identisch. Andere Eigenschaften sind spezifisch für Dienstanbieter. 
   
-Typische Dienstanbieter Abschnitte enthalten die folgenden Einträge, die alle erforderlich sind:
+Typische Dienstanbieterabschnitte umfassen die folgenden Einträge, die alle erforderlich sind:
   
-**PR_DISPLAY_NAME** =  -_Zeichenfolge_
+**PR_DISPLAY_NAME**  =   _string_
   
-**PR_PROVIDER_DISPLAY** =  -_Zeichenfolge_
+**PR_PROVIDER_DISPLAY**  =   _string_
   
-**PR_PROVIDER_DLL_NAME** =  _Name der DLL-Datei_
+**PR_PROVIDER_DLL_NAME**  =   _Name der DLL-Datei_
   
-**PR_RESOURCE_TYPE** =  _lang_
+**PR_RESOURCE_TYPE**  =   _long_
   
-**PR_RESOURCE_FLAGS** =  __ -Bitmaske
+**PR_RESOURCE_FLAGS**  =   _bitmask_
   
-Der **PR_PROVIDER_DLL_NAME** -Eintrag ([Pidtagproviderdllname (](pidtagproviderdllname-canonical-property.md)) ähnelt **PR_SERVICE_DLL_NAME**; Es gibt den Dateinamen für die DLL an, die den Dienstanbieter enthält. Der Nachrichtendienst Code kann mit einem seiner Dienstanbieter in derselben DLL-Datei gespeichert werden oder als separate DLL vorhanden sein. Beachten Sie, dass in dem Eintrag kein Suffix enthalten ist, unabhängig von der Zielplattform; MAPI sorgt dafür, dass bei Bedarf ein Suffix hinzugefügt wird. 
+Der **PR_PROVIDER_DLL_NAME** ([PidTagProviderDllName](pidtagproviderdllname-canonical-property.md)) ist ähnlich wie **PR_SERVICE_DLL_NAME**; Es gibt den Dateinamen für die DLL an, die den Dienstanbieter enthält. Nachrichtendienstcode kann bei einem seiner Dienstanbieter in derselben DLL-Datei gespeichert werden oder als separate DLL vorhanden sein. Beachten Sie, dass unabhängig von der Zielplattform kein Suffix im Eintrag enthalten ist. MAPI übernimmt bei Bedarf das Hinzufügen eines Suffixes. 
   
-**PR_RESOURCE_TYPE** ([Pidtagresourcetype (](pidtagresourcetype-canonical-property.md))-Eintrag stellt den Typ des Dienstanbieters dar. Dienstanbieter legen Sie die entsprechende vordefinierte Konstante fest. Gültige Werte sind MAPI_STORE_PROVIDER, MAPI_TRANSPORT_PROVIDER und MAPI_AB_PROVIDER.
+**PR_RESOURCE_TYPE** ([PidTagResourceType](pidtagresourcetype-canonical-property.md)) -Eintrag stellt den Typ des Dienstanbieters dar; Dienstanbieter legen sie auf die entsprechende vordefinierte Konstante fest. Gültige Werte sind MAPI_STORE_PROVIDER, MAPI_TRANSPORT_PROVIDER und MAPI_AB_PROVIDER.
   
-Ein anderer Eigenschafteneintrag, der sowohl für Nachrichtendienste als auch für Dienstanbieter gilt, gibt der **PR_RESOURCE_FLAGS** ([pidtagresourceflags (](pidtagresourceflags-canonical-property.md))-Eintrag Optionen an. Die Einstellungen für diesen Eigenschafteneintrag können je nach Dienstanbieter unterschiedlich sein. Einige Nachrichtenspeicher Anbieter können **PR_RESOURCE_FLAGS** beispielsweise auf STATUS_NO_DEFAULT_STORE festlegen, wenn Sie niemals als Standardnachrichtenspeicher fungieren dürfen. 
+Ein weiterer Eigenschaftseintrag, der sowohl für Nachrichtendienste als auch für Dienstanbieter gilt, **gibt PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) -Eintrag Optionen an. Die Einstellungen für diesen Eigenschaftseintrag können je nach Dienstanbieter variieren. Einige Nachrichtenspeicheranbieter können z. B. PR_RESOURCE_FLAGS auf STATUS_NO_DEFAULT_STORE festlegen, wenn sie niemals als Standardnachrichtenspeicher verwendet werden können.  
   
-Es folgen drei Beispiele für Dienstanbieter Abschnitte. Der Abschnitt **[ab Provider]** ist der Abschnitt Dienstanbieter für den standardMäßigen Adressbuchdienst. Die Abschnitte **[MsgService Prov1]** und **[MsgService Prov2]** gehören zu meinem eigenen Dienst; bei dem ersten handelt es sich um einen Adressbuchanbieter-Abschnitt, und der zweite ist ein Abschnitt für Nachrichtenspeicher Anbieter. 
+Es folgen drei Beispiele für Dienstanbieterabschnitte. Der **Abschnitt [Ab-Anbieter]** ist der Abschnitt Dienstanbieter für den Standard-Adressbuchdienst. Die **Abschnitte [MsgService Prov1]** und **[MsgService Prov2]** gehören zu My Own Service; Der erste Abschnitt ist ein Adressbuchanbieter, der zweite ein Abschnitt nachrichtenspeicheranbieter. 
   
 ```cpp
 [AB Provider]

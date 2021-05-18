@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagDisplayTypeEx-Eigenschaft
+title: PidTagDisplayTypeEx (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 23074402-6ac1-47f1-8a49-b8909f98a26e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 6eea30188543cb06545a9efad705f5593d4227a7
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -19,13 +19,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32360774"
 ---
-# <a name="pidtagdisplaytypeex-canonical-property"></a>Kanonische PidTagDisplayTypeEx-Eigenschaft
+# <a name="pidtagdisplaytypeex-canonical-property"></a>PidTagDisplayTypeEx (kanonische Eigenschaft)
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält den Typ eines Eintrags im Hinblick darauf, wie der Eintrag in einer Zeile in einer Tabelle für die globale Adressliste angezeigt werden soll. 
+Enthält den Typ eines Eintrags in Bezug darauf, wie der Eintrag in einer Zeile in einer Tabelle für die globale Adressliste angezeigt werden soll. 
   
 |||
 |:-----|:-----|
@@ -34,79 +34,79 @@ Enthält den Typ eines Eintrags im Hinblick darauf, wie der Eintrag in einer Zei
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Adressbuch  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Diese Eigenschaft gibt den Typ eines Eintrags an, der angibt, wie er in der globalen Adressliste angezeigt werden soll. Sie bietet zusätzliche Informationen, die in **PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md)) nicht dargestellt werden können.
+Diese Eigenschaft gibt den Typ eines Eintrags im Hinblick darauf an, wie er in der globalen Adressliste angezeigt werden soll. Es enthält zusätzliche Informationen, die nicht **in** PR_DISPLAY_TYPE ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md)) dargestellt werden können.
   
 > [!NOTE]
-> Die Werte von **PR_DISPLAY_TYPE** und dieser Eigenschaft beginnen mit "dt_" und sind in Mapitags. h definiert. Alle nicht dokumentierten Werte sind für MAPI reserviert. Client Anwendungen dürfen keine neuen Werte definieren und müssen auf den Umgang mit einem nicht dokumentierten Wert vorbereitet sein. 
+> Die Werte von **PR_DISPLAY_TYPE** und dieser Eigenschaft beginnen mit "DT_" und werden in Mapitags.h definiert. Alle nicht dokumentierten Werte sind für MAPI reserviert. Clientanwendungen dürfen keine neuen Werte definieren und müssen für den Umgang mit einem nicht dokumentierten Wert vorbereitet sein. 
   
-Es gibt einige Makros, die dazu beitragen können, die Attribute eines Objekts zu ermitteln, beispielsweise ob es lokal, Remote oder Sicherheits gesteuert ist. Zu diesen Makros gehört Folgendes: 
+Es gibt einige Makros, mit deren Hilfe Attribute eines Objekts bestimmt werden können, z. B. ob es lokal, remote oder sicherheitsgesteuert ist. Zu diesen Makros gehören: 
   
 |**Makro**|**Wert**|
 |:-----|:-----|
-|DTE_FLAG_REMOTE_VALID  <br/> |0x80000000  <br/> |
+|DTE_FLAG_REMOTE_VALID  <br/> |0x80000000)  <br/> |
 |DTE_FLAG_ACL_CAPABLE  <br/> |0x40000000  <br/> |
 |DTE_MASK_REMOTE  <br/> |0x0000ff00  <br/> |
 |DTE_MASK_LOCAL  <br/> |0x000000ff  <br/> |
-|DTE_IS_REMOTE_VALID (v)  <br/> |(!! ((v) &amp; DTE_FLAG_REMOTE_VALID)  <br/> |
-|DTE_IS_ACL_CAPABLE (v)  <br/> |(!! ((v) &amp; DTE_FLAG_ACL_CAPABLE))  <br/> |
-|DTE_REMOTE (v)  <br/> |(((v) &amp; DTE_MASK_REMOTE \> \> ) 8)  <br/> |
-|DTE_LOCAL (v)  <br/> |((v) &amp; DTE_MASK_LOCAL)  <br/> |
+|DTE_IS_REMOTE_VALID(v)  <br/> |(!! ((v) &amp; DTE_FLAG_REMOTE_VALID)  <br/> |
+|DTE_IS_ACL_CAPABLE(v)  <br/> |(!! ((v) &amp; DTE_FLAG_ACL_CAPABLE))  <br/> |
+|DTE_REMOTE(v)  <br/> |(((v) &amp; DTE_MASK_REMOTE) \> \> 8)  <br/> |
+|DTE_LOCAL(v)  <br/> |((v) &amp; DTE_MASK_LOCAL)  <br/> |
 |DT_ROOM  <br/> |((ULONG) 0x00000007)  <br/> |
 |DT_EQUIPMENT  <br/> |((ULONG) 0x00000008)  <br/> |
 |DT_SEC_DISTLIST  <br/> |((ULONG) 0x00000009)  <br/> |
    
-Im folgenden finden Sie einige Hinweise zur Verwendung dieser Makros. 
+Im Folgenden finden Sie einige Hinweise zur Verwendung dieser Makros. 
   
-- Um zu überprüfen, ob ein Eintrag ein Remote Eintrag in einer anderen Gesamtstruktur ist, wenden Sie das DTE_IS_REMOTE_VALID-Makro auf den Wert dieser Eigenschaft an, um zu überprüfen, ob das DTE_FLAG_REMOTE_VALID-Flag im Eintrag festgelegt ist. Wenn es sich um einen Remote Eintrag handelt, können Sie den Typ des Remote Eintrags mithilfe des DTE_REMOTE-Makros herausfinden. 
+- Um zu überprüfen, ob es sich bei einem Eintrag um einen Remoteeintrag in einer anderen Gesamtstruktur handelt, wenden Sie das DTE_IS_REMOTE_VALID-Makro auf den Wert dieser Eigenschaft an, um zu überprüfen, ob das DTE_FLAG_REMOTE_VALID-Flag im Eintrag festgelegt ist. Wenn es sich um einen Remoteeintrag handelt, können Sie den Typ des Remoteeintrags mithilfe des Makros DTE_REMOTE finden. 
     
-- Wenn **PR_DISPLAY_TYPE** den Wert DT_DISTLIST und DTE_IS_REMOTE_VALID auf false festgelegt ist, kann das Makro DTE_LOCAL auf den Wert dieser Eigenschaft angewendet werden, um den Typ des Objekts weiter zu identifizieren, wenn entweder DT_DISTLIST (eine Verteilerliste) oder DT_SEC_DISTLIST (eine Sicherheits Verteilerliste). 
+- Wenn PR_DISPLAY_TYPE den Wert DT_DISTLIST hat und **DTE_IS_REMOTE_VALID** den Wert false hat, können Sie durch anwenden des Makros DTE_LOCAL auf den Wert dieser Eigenschaft den Typ des Objekts als DT_DISTLIST (verteilerliste) oder DT_SEC_DISTLIST (eine Sicherheitsverteilungsliste) weiter identifizieren. 
     
-- Wenn Sie das Makro DTE_LOCAL auf den Wert von **PR_DISPLAY_TYPE_EX** anwenden und den Typ DT_REMOTE_MAILUSER zurückgibt, handelt es sich bei dem Eintrag um einen Remote Eintrag. 
+- Wenn Sie die Makro-DTE_LOCAL auf den Wert von **PR_DISPLAY_TYPE_EX** anwenden und den Typ DT_REMOTE_MAILUSER zurückgibt, ist der Eintrag ein Remoteeintrag. 
     
-- In einer einzelnen Gesamtstruktur oder in einer gesamtstrukturübergreifenden Konfiguration, bei der die Replikation durch eine Zugriffssteuerungsliste (Access Control List, ACL) gesteuert wird, können Sie mithilfe des DTE_IS_ACL_CAPABLE-Makros ermitteln, ob ein Eintrag ein Sicherheitsprinzipal ist.
+- In einer einzelnen Gesamtstruktur oder in einer gesamtstrukturübergreifenden Konfiguration, in der die Replikation durch eine Zugriffssteuerungsliste (Access Control List, ACL) gesteuert wird, können Sie mithilfe des DTE_IS_ACL_CAPABLE-Makros bestimmen, ob es sich bei einem Eintrag um einen Sicherheitsprinzipal handelt.
     
-Bei einer gesamtstrukturübergreifenden Konfiguration besitzt **PR_DISPLAY_TYPE** den Wert von DT_REMOTE_MAILUSER. Wenn Sie das Makro DTE_REMOTE auf den Wert dieser Eigenschaft anwenden, können Sie den Typ des Remote Eintrags abrufen. Folgende Arten von Remote Einträgen sind möglich: 
+In einer gesamtstrukturübergreifenden Konfiguration **hat PR_DISPLAY_TYPE** den Wert DT_REMOTE_MAILUSER. Wenn Sie das Makro DTE_REMOTE auf den Wert dieser Eigenschaft anwenden, können Sie den Typ des Remoteeintrags abrufen. Die folgenden Arten von Remoteeingaben sind möglich: 
   
-|**Typ des Remote Eintrags**|**Wert**|**Beschreibung**|
+|**Typ des Remoteeintrags**|**Wert**|**Beschreibung**|
 |:-----|:-----|:-----|
 |DT_AGENT  <br/> |((ULONG) 0x00000003)  <br/> |Dynamische Verteilerliste.  <br/> |
 |DT_DISTLIST  <br/> |((ULONG) 0x00000001)  <br/> |Verteilerliste.  <br/> |
-|DT_EQUIPMENT  <br/> |((ULONG) 0x00000008)  <br/> |Geräte, beispielsweise einen Drucker oder einen Projektor.  <br/> |
+|DT_EQUIPMENT  <br/> |((ULONG) 0x00000008)  <br/> |Geräte, z. B. ein Drucker oder ein Projektor.  <br/> |
 |DT_MAILUSER  <br/> |((ULONG) 0x00000000)  <br/> |Benutzer mit einem Postfach.  <br/> |
-|DT_REMOTE_MAILUSER  <br/> |((ULONG) 0x00000000)  <br/> |Ein Adresslisten Eintrag in der globalen Adressliste.  <br/> |
+|DT_REMOTE_MAILUSER  <br/> |((ULONG) 0x00000000)  <br/> |Ein Adresslisteneintrag in der globalen Adressliste.  <br/> |
 |DT_ROOM  <br/> |((ULONG) 0x00000007)  <br/> |Konferenzraum.  <br/> |
-|DT_SEC_DISTLIST  <br/> |((ULONG) 0x00000009)  <br/> |Sicherheits Verteilerliste.  <br/> |
+|DT_SEC_DISTLIST  <br/> |((ULONG) 0x00000009)  <br/> |Sicherheitsverteilungsliste.  <br/> |
    
-In einer einzelnen Gesamtstruktur und in einer gesamtstrukturübergreifenden Konfiguration, wenn **PR_DISPLAY_TYPE** den Wert DT_DISTLIST und DTE_IS_REMOTE_VALID ist false ist, kann Anwenden des DTE_LOCAL-Makros auf den Wert dieser Eigenschaft können Sie den Typ der Verteilerliste abrufen . Folgende Arten von Verteilerlisten sind möglich: 
+Wenn **PR_DISPLAY_TYPE** sowohl in einer einzelnen Gesamtstruktur als auch in einer gesamtstrukturübergreifenden Konfiguration den Wert DT_DISTLIST und DTE_IS_REMOTE_VALID false hat, können Sie mit dem makro DTE_LOCAL auf den Wert dieser Eigenschaft den Typ der Verteilerliste abrufen. Die möglichen Arten von Verteilerlisten sind die folgenden: 
   
 |**Typ der Verteilerliste**|**Wert**|**Beschreibung**|
 |:-----|:-----|:-----|
 |DT_DISTLIST  <br/> |((ULONG) 0x00000001)  <br/> |Verteilerliste.  <br/> |
-|DT_SEC_DISTLIST  <br/> |((ULONG) 0x00000009)  <br/> |Sicherheits Verteilerliste.  <br/> |
+|DT_SEC_DISTLIST  <br/> |((ULONG) 0x00000009)  <br/> |Sicherheitsverteilungsliste.  <br/> |
    
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf zugehörige Exchange Server-Protokollspezifikationen.
+> Enthält Verweise auf Exchange Server Protokollspezifikationen.
     
 [[MS-OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge für Listen von Benutzern, Kontakten, Gruppen und Ressourcen an.
     
-### <a name="header-files"></a>Header Dateien
+### <a name="header-files"></a>Headerdateien
 
-Mapidefs. h
+Mapidefs.h
   
-> Stellt Datentypdefinitionen bereit.
+> Bietet Datentypdefinitionen.
     
-Mapitags. h
+Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -114,9 +114,9 @@ Mapitags. h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

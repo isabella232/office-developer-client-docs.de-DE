@@ -25,7 +25,7 @@ ms.locfileid: "33405247"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt dem MAPI-Anbieter an, dass ein MAPI-Client ein schnelles Herunterfahren durchführen soll, damit der Anbieter Maßnahmen ergreifen kann, um Datenverluste zu verhindern.
+Gibt dem MAPI-Anbieter an, dass ein MAPI-Client ein schnelles Herunterfahren durchführen wird, damit der Anbieter Maßnahmen ergreifen kann, um Datenverluste zu verhindern.
   
 ```cpp
 HRESULT NotifyProcessShutdown ();
@@ -35,7 +35,7 @@ HRESULT NotifyProcessShutdown ();
 
 S_OK
   
-> Der MAPI-Anbieter führt Aktionen aus, um Datenverluste beim Herunterfahren des MAPI-Clients zu verhindern.
+> Der MAPI-Anbieter unternimmt Maßnahmen, um Datenverluste zu verhindern, wenn der MAPI-Client heruntergefahren wird.
     
 ## <a name="see-also"></a>Siehe auch
 

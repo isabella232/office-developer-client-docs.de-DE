@@ -25,7 +25,7 @@ ms.locfileid: "33405114"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt ein Symbol aus einer der Symbol Eigenschaften eines Formulars.
+Erstellt ein Symbol aus einer der Symboleigenschaften eines Formulars.
   
 ```cpp
 HRESULT MakeIconFromBinary(
@@ -38,11 +38,11 @@ HRESULT MakeIconFromBinary(
 
  _nPropID_
   
-> in Ein Eigenschaftenbezeichner für eine Icon-Eigenschaft.
+> [in] Eine Eigenschafts-ID für eine Icon-Eigenschaft.
     
  _phicon_
   
-> Out Ein Zeiger auf das zurückgegebene Symbol.
+> [out] Ein Zeiger auf das zurückgegebene Symbol.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -50,9 +50,9 @@ S_OK
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Client Anwendungen rufen die **IMAPIFormInfo:: MakeIconFromBinary** -Methode auf, um ein Symbol aus einer der Symbol Eigenschaften eines Formulars zu erstellen. Im _nPropID_ -Parameter übernimmt **MakeIconFromBinary** den Eigenschaftenbezeichner einer der Symbol Eigenschaften eines Formulars. Mit dieser Eigenschaftskennung wird ein Symbol erstellt, das in Tabellen Ansichten angezeigt werden kann, die Eigenschaftsspalten für Symbole enthalten. 
+Clientanwendungen rufen die **IMAPIFormInfo::MakeIconFromBinary-Methode** auf, um ein Symbol aus einer der Symboleigenschaften eines Formulars zu erstellen. Im  _Parameter nPropID_ übernimmt **MakeIconFromBinary** die Eigenschafts-ID einer der Symboleigenschaften eines Formulars. Mithilfe dieser Eigenschafts-ID wird ein Symbol erstellt, das in Tabellenansichten angezeigt werden kann, die Eigenschaftenspalten für Symbole enthalten. 
   
 ## <a name="see-also"></a>Siehe auch
 

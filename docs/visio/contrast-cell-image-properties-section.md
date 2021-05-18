@@ -20,19 +20,19 @@ ms.locfileid: "33404925"
 
 Stellt den Kontrast einer Bitmapgrafik ein. Verringern Sie den Kontrast einer Grafik durch Eingabe eines Werts zwischen 0 % und 49 %, oder steigern Sie den Kontrast durch Eingabe eines Werts zwischen 51 % und 100 %. Der Standardwert lautet 50 %.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle Contrast aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle Contrast anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | Contrast  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Kontrast aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle Contrast nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowImage** <br/> |
 | Zellenindex:  <br/> |**visImageContrast** <br/> |
    

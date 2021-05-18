@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtaguserfields (-Eigenschaft
+title: PidTagUserFields (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: db3a6947-f640-43e8-a2df-71e96560fd81
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 680c9dd9db2743c031de7cda4673d7044ec533e8
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32360739"
 ---
-# <a name="pidtaguserfields-canonical-property"></a>Kanonische Pidtaguserfields (-Eigenschaft
+# <a name="pidtaguserfields-canonical-property"></a>PidTagUserFields (kanonische Eigenschaft)
 
   
   
@@ -30,16 +30,16 @@ Enthält den Namen, den Datentyp und andere Informationen zu einem benutzerdefin
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Ordner  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Für jedes Element speichert Outlook die Definitionen aller benutzerdefinierten Felder in der [pidlidpropertydefinitionstream (](pidlidpropertydefinitionstream-canonical-property.md) -Eigenschaft des entsprechenden **IMessage** -Objekts. Die **pidlidpropertydefinitionstream (** -Eigenschaft enthält einen binären Datenstrom, der als [PropertyDefinition](propertydefinition-stream-structure.md)bekannt ist und die Felddefinitionen enthält. Weitere Informationen zu Stream-Strukturen für Felddefinitionen finden Sie unter [Stream Structures](stream-structures.md).
+Für jedes Element speichert Outlook definitionen aller benutzerdefinierten Felder in der [PidLidPropertyDefinitionStream-Eigenschaft](pidlidpropertydefinitionstream-canonical-property.md) des entsprechenden **IMessage-Objekts.** Die **PidLidPropertyDefinitionStream-Eigenschaft** enthält einen binären Datenstrom mit dem Namen [PropertyDefinition](propertydefinition-stream-structure.md), der die Felddefinitionen enthält. Weitere Informationen zu Streamstrukturen für Felddefinitionen finden Sie unter [Stream Structures](stream-structures.md).
   
-Für jeden Ordner speichert Outlook die Definitionen aller benutzerdefinierten Felder in diesem Ordner in der **pidtaguserfields (** -Eigenschaft einer zugeordneten Nachricht der nachrichtenklasse IPC.ms. REN. USERFIELDS-jeder Ordner, der davon ausgeht, dass er in der Tabelle mit den zugeordneten Inhalten nicht mehr als eine Nachricht dieser Klasse enthält. 
+Für jeden Ordner speichert Outlook die Definitionen aller benutzerdefinierten Felder in diesem Ordner in der **PidTagUserFields-Eigenschaft** einer zugeordneten Nachricht der Nachrichtenklasse IPC.MS. REN. USERFIELDS – Jeder Ordner, der davon ausgegangen wird, dass er nur eine Nachricht dieser Klasse in der zugehörigen Inhaltstabelle enthält. 
   
 > [!NOTE]
-> Die Gruppe von benutzerdefinierten Feldern in einem Ordner stimmt möglicherweise nicht unbedingt mit den Sätzen von benutzerdefinierten Feldern in den einzelnen Elementen überein. 
+> Der Satz von benutzerdefinierten Feldern in einem Ordner ist möglicherweise nicht unbedingt mit den Benutzerdefinierten Feldern in den einzelnen Elementen übereinstimmen. 
   
-Die Gruppe von benutzerdefinierten Feldern in einem Ordner wird an verschiedenen Stellen in der Outlook-Benutzeroberfläche angezeigt, beispielsweise in der Feldauswahl des Ordners. Die **pidtaguserfields (** -Eigenschaft der Nachricht enthält einen binären Stream **Beispiel für folderuserfields**, der die Ordner Felddefinitionen enthält. Weitere Informationen zu Stream-Strukturen für Ordner Felddefinitionen finden Sie unter [Folder Fields Stream Structures](folder-fields-stream-structures.md) und The [Beispiel für folderuserfields Stream Sample](folderuserfields-stream-sample.md).
+Der Satz von benutzerdefinierten Feldern in einem Ordner wird an verschiedenen Stellen in der benutzerdefinierten Outlook angezeigt, z. B. an der Feld-Auswahl des Ordners. Die **PidTagUserFields-Eigenschaft** der Nachricht enthält einen binären **Datenstrom, FolderUserFields**, der die Ordnerfelddefinitionen enthält. Weitere Informationen zu Streamstrukturen für Ordnerfelddefinitionen finden Sie unter [Folder Fields Stream Structures](folder-fields-stream-structures.md) und [folderUserFields Stream Sample](folderuserfields-stream-sample.md).
   
 ## <a name="section-heading"></a>Abschnittsüberschrift
 
@@ -47,29 +47,29 @@ Die Gruppe von benutzerdefinierten Feldern in einem Ordner wird an verschiedenen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Stellt Eigenschaftensatz Definitionen und Verweise auf zugehörige Exchange Server-Protokollspezifikationen bereit.
+> Stellt Eigenschaftensatzdefinitionen und Verweise auf verwandte Exchange Server zur Verfügung.
     
-### <a name="header-files"></a>Header Dateien
+### <a name="header-files"></a>Headerdateien
 
-Mapidefs. h
+Mapidefs.h
   
-> Stellt Datentypdefinitionen bereit.
+> Bietet Datentypdefinitionen.
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Outlook-Elemente und-Felder](outlook-items-and-fields.md)
+[Outlook Elemente und Felder](outlook-items-and-fields.md)
   
-[Hinzufügen einer Definition für ein neues benutzerdefiniertes Feld](how-to-add-a-definition-for-a-new-user-defined-field.md)
+[Hinzufügen einer Definition für ein new User-Defined Field](how-to-add-a-definition-for-a-new-user-defined-field.md)
   
-[PropertyDefinition-Stream-Beispiel](propertydefinition-stream-sample.md)
+[PropertyDefinition Stream Sample](propertydefinition-stream-sample.md)
   
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -16,7 +16,7 @@ ms.locfileid: "33405184"
 ---
 # <a name="sheetref-function"></a>SHEETREF Function
 
-Gibt einen Verweis auf das Blatt (Shape) zurück, das in _sheetref_angegeben ist, oder, wenn kein _sheetref_ -Qualifizierer vorhanden ist, zum aktuellen Blatt. 
+Gibt einen Verweis auf das Blatt (Shape) zurück, das in _sheetref_ angegeben ist, oder, wenn kein sheetref-Qualifizierer vorkommt, auf das aktuelle Blatt.  
   
 ## <a name="version-information"></a>Informationen zur Version
 
@@ -25,13 +25,13 @@ Hinzugefügte Version: Visio 2010
   
 ## <a name="syntax"></a>Syntax
 
- *\<sheetref\>!*  SHEETREF () 
+ *\<sheetref \> !*  SHEETREF() 
   
 ### <a name="return-value"></a>Rückgabewert
 
 ShapeSheet-Referenz
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Sie können diese Funktion in anderen Funktionen verwenden, die ein Blattreferenztoken erwarten.
   

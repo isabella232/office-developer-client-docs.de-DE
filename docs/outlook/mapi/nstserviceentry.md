@@ -21,7 +21,7 @@ ms.locfileid: "32280054"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Message Service Entry Points-Funktion für einen MAPI-Speicheranbieter, um einen PST-basierten lokalen Speicher als NST-Speicher einzubinden. 
+Message service entry point function for a MAPI store provider to wrap a PST-based local store as an NST store. 
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -47,7 +47,7 @@ HRESULT NSTServiceEntry(
 
 ## <a name="parameters"></a>Parameter
 
- **NSTServiceEntry** verwendet den Prototyp der **[MSGSERVICEENTRY](msgserviceentry.md)** -Funktion. Informationen zu den Parametern finden Sie unter **[MSGSERVICEENTRY](msgserviceentry.md)**. 
+ **NSTServiceEntry verwendet** den **[MSGSERVICEENTRY-Funktionsprototyp.](msgserviceentry.md)** Informationen zu den Parametern finden Sie unter **[MSGSERVICEENTRY](msgserviceentry.md)**. 
   
 ## <a name="return-values"></a>Rückgabewerte
 
@@ -55,29 +55,29 @@ Informationen zu Rückgabewerten finden Sie unter **[MSGSERVICEENTRY](msgservice
   
 ## <a name="remarks"></a>Hinweise
 
-Wenn Sie **[GetProcAddress](https://msdn.microsoft.com/library/ms683212.aspx)** verwenden, um nach der Adresse dieser Funktion in msmapi32. dll zu suchen, geben Sie "NSTServiceEntry" als Prozedurnamen an. 
+Wenn Sie **[GetProcAddress](https://msdn.microsoft.com/library/ms683212.aspx)** verwenden, um in msmapi32.dll nach der Adresse dieser Funktion zu suchen, geben Sie "NSTServiceEntry" als Prozedurnamen an. 
   
-Um die Replikations-API verwenden zu können, muss ein MAPI-Speicheranbieter zuerst einen PST-basierten lokalen Speicher öffnen und umbrechen, indem er **[NSTServiceEntry](nstserviceentry.md)** aufruft. Der Anbieter kann dann die Hauptschnittstellen der API, **[IOSTX](iostxiunknown.md)** und **[IPSTX](ipstxiunknown.md)** verwenden, um die Replikation auszuführen. 
+Um die Replikations-API zu verwenden, muss ein MAPI-Speicheranbieter zunächst einen lokalen PST-basierten Speicher öffnen und umschließen, indem **[er NSTServiceEntry aufruft.](nstserviceentry.md)** Der Anbieter kann dann die Hauptschnittstellen der API, **[IOSTX](iostxiunknown.md)** und **[IPSTX](ipstxiunknown.md)** verwenden, um die Replikation zu durchführen. 
   
 Die folgenden Hinweise gelten für einen NST-Speicher:
   
-- Speichern Sie beim Implementieren eines MAPI-Anbieters, der **NSTServiceEntry**verwendet, keine Informationen im Abschnitt globales Profil. Der Abschnitt "globaler Profil" wird von vielen Anbietern freigegeben, und die in diesem Profil gespeicherten Daten können überschrieben werden. 
+- Speichern Sie beim Implementieren eines MAPI-Anbieters, der **NSTServiceEntry** verwendet, keine Informationen im Abschnitt globales Profil. Der Abschnitt "Globales Profil" wird von vielen Anbietern freigegeben, und in diesem Profil gespeicherte Daten können überschrieben werden. 
     
-- Nur Elemente mit vorhandenen Änderungszeit Stempeln erhalten ihre Stempel aktualisiert, wenn Sie gespeichert werden. 
+- Nur Elemente mit vorhandenen Änderungszeitstempeln erhalten ihre Stempel aktualisiert, wenn sie gespeichert werden. 
     
-- Die Konfliktprüfung tritt nicht automatisch ein, wenn Elemente gespeichert werden.
+- Die Konfliktüberprüfung erfolgt nicht automatisch, wenn Elemente gespeichert werden.
     
--  Die doppelte Erkennung tritt nicht auf, wenn Elemente gespeichert werden. 
+-  Die Duplikaterkennung erfolgt nicht, wenn Elemente gespeichert werden. 
     
--  Die Datei, die die zwischengespeicherte Version des Servers darstellt, wird angehängt. NST. 
+-  Die Datei, die die zwischengespeicherte Version des Servers darstellt, wird mit angefügt. NST. 
     
-- Um einen Zeiger auf den Abschnitt "Global profile" zu erhalten, Ruft ein Nachrichtendienst **[IMAPISupport:: OpenProfileSection](imapisupport-openprofilesection.md)** im Unterstützungsobjekt mit **pbNSTGlobalProfileSectionGuid** wie unten definiert auf: 
+- Um einen Zeiger auf den globalen Profilabschnitt zu erhalten, ruft ein Nachrichtendienst **[IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md)** im Supportobjekt mithilfe von **pbNSTGlobalProfileSectionGuid** auf, wie unten definiert: 
     
   ```
   #define  pbNSTGlobalProfileSectionGuid "\x85\xED\x14\x23\x9D\xF7\x42\x66\x8B\xF2\xFB\xD4\xA5\x21\x29\x41"
   ```
 
-- In diesem Fall sollte das Unterstützungsobjekt des Nachrichtendiensts sicherstellen, dass **IMAPISupport:: OpenProfileSection** den Profil Abschnitt zurückgibt, der von der **[PR_SERVICE_UID](pidtagserviceuid-canonical-property.md)** -Eigenschaft im Standardprofil Abschnitt identifiziert wird. Zum Abrufen dieses Profil Abschnitts kann das Support Objekt den Standardprofil Abschnitt öffnen, **PR_SERVICE_UID**abrufen und das Ergebnis an **IMAPISupport:: OpenProfileSection** übergeben, um den richtigen globalen Profil Abschnitt abzurufen. Das Unterstützungsobjekt wiederum gibt einen Zeiger auf diesen globalen Profil Abschnitt zum Nachrichtendienst zurück. 
+- In diesem Fall sollte das Supportobjekt des Nachrichtendiensts sicherstellen, dass **IMAPISupport::OpenProfileSection** den Profilabschnitt zurückgibt, der durch die **[PR_SERVICE_UID-Eigenschaft](pidtagserviceuid-canonical-property.md)** im Standardprofilabschnitt identifiziert wird. Zum Abrufen dieses Profilabschnitts kann das Supportobjekt den Standardprofilabschnitt öffnen, **PR_SERVICE_UID** abrufen und das Ergebnis an **IMAPISupport::OpenProfileSection** übergeben, um den richtigen globalen Profilabschnitt abzurufen. Das Supportobjekt gibt wiederum einen Zeiger auf diesen globalen Profilabschnitt auf den Nachrichtendienst zurück. 
     
 ## <a name="see-also"></a>Siehe auch
 

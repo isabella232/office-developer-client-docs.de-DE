@@ -1,5 +1,5 @@
 ---
-title: Nachrichtenspeichertabellen
+title: Nachrichten Store Tabellen
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,27 +15,27 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33405352"
 ---
-# <a name="message-store-tables"></a>Nachrichtenspeichertabellen
+# <a name="message-store-tables"></a>Nachrichten Store Tabellen
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die Nachrichtenspeichertabelle enthält Informationen zu Nachrichtenspeicher Anbietern im aktuellen Profil. Es gibt eine Nachrichtenspeichertabelle für jede MAPI-Sitzung, die von MAPI implementiert und von Clients verwendet wird. Clients können diese Tabelle verwenden, um beispielsweise alle Instanzen eines bestimmten Anbieters zu finden oder einen bestimmten Nachrichtenspeicher zu finden. 
+Die Tabelle für den Nachrichtenspeicher enthält Informationen zu Nachrichtenspeicheranbietern im aktuellen Profil. Es gibt eine Nachrichtenspeichertabelle für jede MAPI-Sitzung, die von MAPI implementiert und von Clients verwendet wird. Clients können diese Tabelle z. B. verwenden, um alle Instanzen eines bestimmten Anbieters zu finden oder um einen bestimmten Nachrichtenspeicher zu finden. 
   
-Die Nachrichtenspeichertabelle ist dynamisch. Wenn der Benutzer einer Clientanwendung das Profil bearbeitet und den Standardnachrichtenspeicher ändert, werden beispielsweise die Werte der **PR_DEFAULT_STORE** -Eigenschaften für die betroffenen Nachrichtenspeicher sofort aktualisiert. 
+Die Tabelle für den Nachrichtenspeicher ist dynamisch. Wenn der Benutzer einer Clientanwendung das Profil bearbeitet, werden beispielsweise die Werte der **PR_DEFAULT_STORE-Eigenschaften** für die betroffenen Nachrichtenspeicher sofort aktualisiert. 
   
-Clients greifen auf die Nachrichtenspeichertabelle zu, indem Sie die [IMAPISession:: GetMsgStoresTable](imapisession-getmsgstorestable.md) -Methode aufrufen. 
+Clients greifen auf die Nachrichtenspeichertabelle zu, indem sie die [IMAPISession::GetMsgStoresTable-Methode](imapisession-getmsgstorestable.md) aufrufen. 
   
-Die folgenden Eigenschaften stellen den erforderlichen Spaltensatz in der Nachrichtenspeichertabelle dar:
+Die folgenden Eigenschaften stellen den erforderlichen Spaltensatz in der Nachrichtenspeichertabelle zusammen:
   
 |||
 |:-----|:-----|
-|**PR_DEFAULT_STORE** ([Pidtagdefaultstore (](pidtagdefaultstore-canonical-property.md))  <br/> |**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |
-|**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |**PR_INSTANCE_KEY** ([Pidtaginstancekey (](pidtaginstancekey-canonical-property.md))  <br/> |
-|**PR_MDB_PROVIDER** ([Pidtagstoreprovider (](pidtagstoreprovider-canonical-property.md))  <br/> |**PR_OBJECT_TYPE** ([Pidtagobjecttype (](pidtagobjecttype-canonical-property.md))  <br/> |
-|**PR_PROVIDER_DISPLAY** ([Pidtagproviderdisplay (](pidtagproviderdisplay-canonical-property.md))  <br/> |**PR_RECORD_KEY** ([Pidtagrecordkey (](pidtagrecordkey-canonical-property.md))  <br/> |
-|**PR_RESOURCE_FLAGS** ([Pidtagresourceflags (](pidtagresourceflags-canonical-property.md))  <br/> |**PR_RESOURCE_TYPE** ([Pidtagresourcetype (](pidtagresourcetype-canonical-property.md))  <br/> |
+|**PR_DEFAULT_STORE** ([PidTagDefaultStore](pidtagdefaultstore-canonical-property.md))  <br/> |**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |
+|**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |**PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md))  <br/> |
+|**PR_MDB_PROVIDER** ([PidTagStoreProvider](pidtagstoreprovider-canonical-property.md))  <br/> |**PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |
+|**PR_PROVIDER_DISPLAY** ([PidTagProviderDisplay](pidtagproviderdisplay-canonical-property.md))  <br/> |**PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md))  <br/> |
+|**PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md))  <br/> |**PR_RESOURCE_TYPE** ([PidTagResourceType](pidtagresourcetype-canonical-property.md))  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

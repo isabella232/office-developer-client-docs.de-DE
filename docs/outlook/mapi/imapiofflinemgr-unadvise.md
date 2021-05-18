@@ -38,21 +38,21 @@ HRESULT COfflineObj::Unadvise(
 
  _ulFlags_
   
-> in Flags zum Abbrechen des Rückrufs. Nur der Wert MAPIOFFLINE_UNADVISE_DEFAULT wird unterstützt.
+> [in] Flags zum Abbrechen des Rückrufs. Nur der Wert MAPIOFFLINE_UNADVISE_DEFAULT wird unterstützt.
     
  _ulAdviseToken_
   
-> in Ein Advise-Token, das die Rückruf Registrierung identifiziert, die abgebrochen werden soll. 
+> [in] Ein Ratentoken, das die Rückrufregistrierung identifiziert, die abgebrochen werden soll. 
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK
   
-> Der Anruf wurde erfolgreich ausgeführt. Dieser Aufruf muss S_OK zurückgeben.
+> Der Aufruf war erfolgreich. Dieser Aufruf muss eine S_OK.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Entfernt die Registrierung für den Rückruf, der *ulAdviseToken* zugeordnet wurde, die von einem vorherigen Aufruf von **[IMAPIOfflineMgr:: Advise](imapiofflinemgr-advise.md)** zurückgegeben wurden. Bewirkt, dass das **IMAPIOfflineMgr** -Objekt seinen Verweis auf das **[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)** -Objekt freigibt, das *ulAdviseToken* zugeordnet ist. 
+Entfernt die Registrierung für den Rückruf, der *ulAdviseToken* zugeordnet war, die aus einem vorherigen Aufruf von **[IMAPIOfflineMgr::Advise zurückgegeben wurde.](imapiofflinemgr-advise.md)** Bewirkt, **dass das IMAPIOfflineMgr-Objekt** seinen Verweis auf das **[IMAPIOfflineNotify-Objekt](imapiofflinenotifyiunknown.md)** frei gibt, das *ulAdviseToken zugeordnet ist.* 
   
 ## <a name="see-also"></a>Siehe auch
 

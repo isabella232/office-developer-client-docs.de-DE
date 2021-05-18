@@ -19,22 +19,22 @@ ms.locfileid: "32281004"
 
 In diesem Thema wird beschrieben, wie Sie die Codebeispiele herunterladen, die diese Dokumentation begleiten.
   
-### <a name="to-download-the-sample-code-installation-package"></a>So laden Sie das Beispielcode-Installationspaket herunter
+### <a name="to-download-the-sample-code-installation-package"></a>So laden Sie das Beispielcodeinstallationspaket herunter
 
-1. Laden Sie die Datei OSCProviderSamples. zip von [Outlook Social Connector 2013: Anbietervorlagen](https://code.msdn.microsoft.com/Outlook-Social-Connector-73fd8d2c)herunter.
+1. Laden Sie die OSCProviderSamples.zip aus [Outlook Social Connector 2013: Anbietervorlagen herunter.](https://code.msdn.microsoft.com/Outlook-Social-Connector-73fd8d2c)
     
-2. Extrahieren Sie die ZIP-Datei in den Ordner Ihrer Wahl. In Windows 7 lautet der Standardpfad für Visual Studio 2010 C:\Users\- _Benutzer_\Documents\Visual Studio 2010 \ projects.
+2. Extrahieren Sie .zip datei in den Ordner Ihrer Wahl. In Windows 7 ist der Standardpfad für Visual Studio 2010 C:\Users\ _user_\Documents\Visual Studio 2010\Projects.
     
-3. Nachdem Sie die ZIP-Datei extrahiert haben, finden Sie die folgenden Projekte im Ordner Projekte:
+3. Nachdem Sie die .zip extrahiert haben, finden Sie die folgenden Projekte in Ihrem Projektordner:
     
-   - OSCProvider_CPP – enthält die C++-Anbietervorlage.
+   - OSCProvider_CPP– Enthält die C++-Anbietervorlage.
     
-   - OSCProvider_CS – enthält die C#-Anbietervorlage.
+   - OSCProvider_CS– Enthält die C# Anbietervorlage.
     
-   - OSCProvider_VB – enthält die Visual Basic-Anbietervorlage.
+   - OSCProvider_VB– Enthält die Visual Basic Anbietervorlage.
     
 ## <a name="see-also"></a>Siehe auch
 
-- [Anwenden einer Beispielanbieter Vorlage](applying-a-sample-provider-template.md)
+- [Anwenden einer Beispielanbietervorlage](applying-a-sample-provider-template.md)
 - [Über den OSC-Beispielvorlagen](osc-sample-templates.md)
 

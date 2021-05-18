@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm790
 localization_priority: Normal
 ms.assetid: dd88fb8d-3ec3-476a-870d-6642b191496f
-description: Stellt die x-Koordinate der PIN des Shapes (Drehmittelpunkt) im Verhältnis zum Ursprung des übergeordneten Elements dar.
+description: Stellt die x-Koordinate des Stifts der Form (Drehungsmitte) im Verhältnis zum Ursprung des übergeordneten Shapes dar.
 ms.openlocfilehash: de12b379d5f345209a468298174634ff4f9cd639
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,21 +18,21 @@ ms.locfileid: "33404820"
 ---
 # <a name="pinx-cell-shape-transform-section"></a>Zelle "PinX" (Abschnitt "Shape Transform")
 
-Stellt die *x* -Koordinate der PIN des Shapes (Drehmittelpunkt) im Verhältnis zum Ursprung des übergeordneten Elements dar. 
+Stellt  die x-Koordinate des Stifts der Form (Drehungsmitte) im Verhältnis zum Ursprung des übergeordneten Shapes dar. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle PinX aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die PinX-Zelle anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | PinX  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle PinX aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die PinX-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowXFormOut** <br/> |
 | Zellenindex:  <br/> |**visXFormPinX** <br/> |
    

@@ -28,7 +28,7 @@ In diesem Abschnitt werden Beispielaufgaben bereitgestellt, die sich auf elektro
 ## <a name="see-also"></a>Siehe auch
 
 - [Kontakte](contacts.md)
-- [Mail](mail.md)
+- [E-Mail](mail.md)
 - [Exchange-Benutzer](exchange-users.md)
 - [Gewusst wie... (Outlook 2013 PIA-Referenz)](how-do-i-outlook-2013-pia-reference.md)
 

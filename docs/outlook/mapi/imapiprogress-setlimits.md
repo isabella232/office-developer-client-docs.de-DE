@@ -25,7 +25,7 @@ ms.locfileid: "33421466"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Legt die unteren und oberen Grenzwerte für die Anzahl der Elemente in dem Vorgang sowie die Flags fest, die Steuern, wie Fortschrittsinformationen für den Vorgang berechnet werden.
+Legt die unteren und oberen Grenzwerte für die Anzahl der Elemente im Vorgang und die Flags fest, die steuern, wie Fortschrittsinformationen für den Vorgang berechnet werden.
   
 ```cpp
 HRESULT SetLimits(
@@ -39,19 +39,19 @@ HRESULT SetLimits(
 
  _lpulMin_
   
-> in Ein Zeiger auf eine Variable, die den unteren Grenzwert von Elementen in dem Vorgang enthält.
+> [in] Ein Zeiger auf eine Variable, die die untere Grenze der Elemente im Vorgang enthält.
     
  _lpulMax_
   
-> in Ein Zeiger auf eine Variable, die die obere Grenze der Elemente in dem Vorgang enthält.
+> [in] Ein Zeiger auf eine Variable, die die obere Grenze der Elemente im Vorgang enthält.
     
  _lpulFlags_
   
-> in Eine Bitmaske von Flags, die die Vorgangsebene steuert, auf der die Statusinformationen berechnet werden. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die die Vorgangsebene steuert, auf der Fortschrittsinformationen berechnet werden. Das folgende Flag kann festgelegt werden:
     
 MAPI_TOP_LEVEL 
   
-> Verwendet die Werte in den Parametern _ulCount_ und _ulTotal_ der [IMAPIProgress::P rogress](imapiprogress-progress.md) -Methode, die das aktuell verarbeitete Element und die gesamten Elemente angeben, um den Fortschritt des Vorgangs zu erhöhen. Wenn dieses Flag festgelegt ist, müssen die Werte der globalen unteren und oberen Grenzen festgelegt werden. 
+> Verwendet die Werte in den _UlCount-_ und _ulTotal-Parametern_ der [IMAPIProgress::P rogress-Methode,](imapiprogress-progress.md) die das aktuell verarbeitete Element bzw. die Gesamtelemente angeben, um den Fortschritt des Vorgangs zu erhöhen. Wenn dieses Flag festgelegt ist, müssen die Werte der globalen unteren und oberen Grenzwerte festgelegt werden. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -59,13 +59,13 @@ S_OK
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Dienstanbieter rufen die **IMAPIProgress::** setlimits-Methode auf, um das MAPI_TOP_LEVEL-Flag festzulegen oder zu löschen und lokale und globale Mindest-und Maximalwerte festzulegen. Der Wert der Flag-Einstellung wirkt sich darauf aus, ob das Progress-Objekt den minimal-und Maximalwert für "lokal" oder "Global" versteht. Wenn das MAPI_TOP_LEVEL-Flag festgelegt ist, werden diese Werte als Global betrachtet und zum Berechnen des Fortschritts für den gesamten Vorgang verwendet. Progress-Objekte initialisieren den globalen Minimalwert auf 1 und den globalen Maximalwert auf 1000. 
+Dienstanbieter rufen die **IMAPIProgress::SetLimits-Methode** auf, um das flag MAPI_TOP_LEVEL und lokale und globale Mindest- und Höchstwerte zu setzen oder zu löschen. Der Wert der Flageinstellung wirkt sich darauf aus, ob das progress-Objekt die minimalen und maximalen Werte als lokal oder global versteht. Wenn das MAPI_TOP_LEVEL festgelegt ist, werden diese Werte als global betrachtet und zur Berechnung des Fortschritts für den gesamten Vorgang verwendet. Progress-Objekte initialisieren den globalen Minimalwert auf 1 und den globalen Maximalwert auf 1000. 
   
-Wenn MAPI_TOP_LEVEL nicht festgelegt ist, werden die minimal-und Maximalwerte als lokal betrachtet, und Anbieter verwenden Sie intern, um den Fortschritt für unter Objekte auf niedrigerer Ebene anzuzeigen. Progress-Objekte speichern die lokalen Mindest-und Maximalwerte nur, damit Sie an Anbieter zurückgegeben werden können, wenn die [IMAPIProgress:: GetMin](imapiprogress-getmin.md) und [IMAPIProgress:: GetMax](imapiprogress-getmax.md) -Methoden aufgerufen werden. 
+Wenn MAPI_TOP_LEVEL festgelegt ist, werden die Mindest- und Höchstwerte als lokal betrachtet, und Anbieter verwenden sie intern, um den Fortschritt für Unterobjekte auf niedrigerer Ebene zu anzeigen. Progress-Objekte speichern nur die lokalen Minimal- und Maximalwerte, sodass sie an Anbieter zurückgegeben werden können, wenn die [Methoden IMAPIProgress::GetMin](imapiprogress-getmin.md) und [IMAPIProgress::GetMax](imapiprogress-getmax.md) aufgerufen werden. 
   
-Weitere Informationen zum Implementieren von setLimits und den anderen [IMAPIProgress](imapiprogressiunknown.md) -Methoden finden Sie unter [Implementieren einer Statusanzeige](implementing-a-progress-indicator.md). ****
+Weitere Informationen zum Implementieren von **SetLimits** und den anderen [IMAPIProgress-Methoden](imapiprogressiunknown.md) finden Sie unter [Implementing a Progress Indicator](implementing-a-progress-indicator.md).
   
 Weitere Informationen dazu, wie und wann Statusobjekte aufgerufen werden, finden Sie unter [Anzeigen einer Statusanzeige](how-to-display-a-progress-indicator.md).
   
@@ -75,7 +75,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Kommentar**|
 |:-----|:-----|:-----|
-|MAPIProgress.cpp  <br/> |CMAPIProgress:: setLimits  <br/> |MFCMAPI verwendet die **IMAPIProgress::** setlimits-Methode, um die maximal-und minimal Grenzwerte und-Flags für das Progress-Objekt festzulegen.  <br/> |
+|MAPIProgress.cpp  <br/> |CMAPIProgress::SetLimits  <br/> |MFCMAPI verwendet die **IMAPIProgress::SetLimits-Methode,** um die maximalen und minimalen Grenzwerte und Flags für das Progress-Objekt zu festlegen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

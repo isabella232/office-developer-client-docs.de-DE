@@ -33,7 +33,7 @@ HRESULT IOlkEnum::GetCount (
 
 _pulCount_
   
-> Out Ein Zeiger auf die Anzahl der Objekte, die aufgezählt werden.
+> [out] Ein Zeiger auf die Anzahl der objekte, die aufgezählt werden.
     
 ## <a name="return-values"></a>Rückgabewerte
 

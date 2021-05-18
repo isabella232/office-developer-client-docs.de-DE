@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAccount-Eigenschaft
+title: PidTagAccount (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: bec199b5-abfd-4686-ad59-21092212e1a5
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 2962f973aa87b88f237ded69573df9ef312a7bc5
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32359780"
 ---
-# <a name="pidtagaccount-canonical-property"></a>Kanonische PidTagAccount-Eigenschaft
+# <a name="pidtagaccount-canonical-property"></a>PidTagAccount (kanonische Eigenschaft)
 
   
   
@@ -34,19 +34,19 @@ Enthält den Kontonamen des Empfängers.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Adressbuch  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Diese Eigenschaften bieten Identifizierungs-und Zugriffsinformationen für einen Empfänger. Sie werden vom Empfänger und dessen Organisation definiert.
+Diese Eigenschaften stellen Identifikations- und Zugriffsinformationen für einen Empfänger zur Verfügung. Sie werden vom Empfänger und seiner Organisation definiert.
   
-Diese Eigenschaften enthalten in der Regel den e-Mail-Namen des Empfängers, also die letzte Komponente der e-Mail-Adresse, die den Empfänger in der lokalen Organisation eindeutig identifiziert. Der Name der e-Mail-Adresse entspricht dem Distinguished Name X. 400, der ein kurzer Name sein soll, der in einer bestimmten Messaging Domäne garantiert eindeutig ist.
+Diese Eigenschaften enthalten häufig den E-Mail-Namen des Empfängers, d. h. die letzte Komponente der E-Mail-Adresse, die den Empfänger in der lokalen Organisation eindeutig identifiziert. Der E-Mail-Name entspricht dem X.400-Distinguished-Namen, bei dem es sich um einen kurzen Namen handelt, der innerhalb einer bestimmten Messagingdomäne garantiert eindeutig ist.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf zugehörige Exchange Server-Protokollspezifikationen.
+> Enthält Verweise auf Exchange Server Protokollspezifikationen.
     
 [[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
@@ -56,15 +56,15 @@ Diese Eigenschaften enthalten in der Regel den e-Mail-Namen des Empfängers, als
   
 > Gibt die Eigenschaften und Vorgänge für Listen von Benutzern, Kontakten, Gruppen und Ressourcen an.
     
-### <a name="header-files"></a>Header Dateien
+### <a name="header-files"></a>Headerdateien
 
-mapitags. h
+mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
     
-mapidefs. h
+mapidefs.h
   
-> Stellt Datentypdefinitionen bereit.
+> Bietet Datentypdefinitionen.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -73,9 +73,9 @@ mapidefs. h
 [IMailUser : IMAPIProp](imailuserimapiprop.md)
 
 
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

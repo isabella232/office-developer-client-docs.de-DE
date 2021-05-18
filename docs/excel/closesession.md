@@ -28,11 +28,11 @@ int CloseSession(int SessionId)
 
 _SessionId_
   
-> Die ID der zu schließende Sitzung. Dieser Wert muss mit dem von OpenSession [](opensession.md)zurückgegebenen Wert übereinstimmen.
+> Die ID der zu schließende Sitzung. Dieser Wert muss mit dem von OpenSession zurückgegebenen [Wert übereinstimmen.](opensession.md)
     
 ## <a name="return-value"></a>Rückgabewert
 
-**xlHpcRetSuccess** , wenn die Sitzung geschlossen wurde; **xlHpcRetInvalidSessionId** , wenn das _SessionID_ -Argument ungültig ist; **xlHpcRetCallFailed** bei anderen Fehlern. 
+**xlHpcRetSuccess,** wenn die Sitzung geschlossen wurde; **xlHpcRetInvalidSessionId,** wenn  _das Argument SessionId_ ungültig ist; **xlHpcRetCallFailed** bei anderen Fehlern. 
   
 ## <a name="see-also"></a>Siehe auch
 

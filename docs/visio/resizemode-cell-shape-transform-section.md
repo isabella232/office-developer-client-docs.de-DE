@@ -26,19 +26,19 @@ Zeigt die aktuelle Einstellung für das Größenänderungsverhalten in Bezug auf
 |1  <br/> |Nur neu positionieren.  <br/> |**visXFormResizeSpread** <br/> |
 |2  <br/> |Mit Gruppe skalieren.  <br/> |**visXFormResizeScale** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Sie können diesen Wert auch im Dialogfeld **Verhalten** auf der Registerkarte **Verhalten** festlegen (Klicken Sie auf der Registerkarte [Entwicklertools](run-in-developer-mode-display-the-developer-tab.md)in der Gruppe **Shape-Design** auf **Verhalten**). Wenn Sie einen Verweis auf die Zelle Zelle ResizeMode aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Sie können diesen Wert  auch auf der Registerkarte Verhalten [](run-in-developer-mode-display-the-developer-tab.md)im Dialogfeld Verhalten festlegen (klicken Sie auf der Registerkarte Entwickler in der **Gruppe Shape-Entwurf** auf  **Verhalten**). Um einen Verweis auf die Zelle ResizeMode anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Zelle ResizeMode  <br/> |
+|Zellenname:  <br/> |ResizeMode  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle ResizeMode aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle ResizeMode nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowXFormOut** <br/> |
 |Zellenindex:  <br/> |**visXFormResizeMode** <br/> |
    

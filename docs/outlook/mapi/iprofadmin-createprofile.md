@@ -40,27 +40,27 @@ HRESULT CreateProfile(
 
  _lpszProfileName_
   
-> in Ein Zeiger auf den Namen des neuen Profils.
+> [in] Ein Zeiger auf den Namen des neuen Profils.
     
  _lpszPassword_
   
-> in Ein Zeiger auf das Kennwort des neuen Profils. 
+> [in] Ein Zeiger auf das Kennwort des neuen Profils. 
     
  _ulUIParam_
   
-> in Ein Handle für das übergeordnete Fenster aller von dieser Methode angezeigten Dialogfelder oder Fenster.
+> [in] Ein Handle zum übergeordneten Fenster aller Dialogfelder oder Fenster, die von dieser Methode angezeigt werden.
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die die Erstellung des Profils steuert. Die folgenden Flags können festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie das Profil erstellt wird. Die folgenden Kennzeichen können festgelegt werden:
     
 MAPI_DEFAULT_SERVICES 
   
-> MAPI sollte das neue Profil mit den Nachrichtendiensten auffüllen, die im Abschnitt [Default Services] der Datei MAPISVC. inf enthalten sind.
+> MAPI sollte das neue Profil mit den Nachrichtendiensten auffüllen, die im Abschnitt [Standarddienste] der Datei Mapisvc.inf enthalten sind.
     
 MAPI_DIALOG 
   
-> Die Konfigurationseigenschaften Blätter der einzelnen Anbieter in den Nachrichtendiensten, die hinzugefügt werden sollen, können angezeigt werden. 
+> Die Konfigurationseigenschaftsblätter der einzelnen Anbieter in den zu hinzufügende Nachrichtendiensten können angezeigt werden. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -72,25 +72,25 @@ MAPI_E_NO_ACCESS
   
 > Das angegebene neue Profil ist bereits vorhanden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IProfAdmin::** CreateProfile-Methode erstellt ein neues Profil. 
+Die **IProfAdmin::CreateProfile-Methode** erstellt ein neues Profil. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Sie können **CreateProfile** während der Anwendungsinstallation oder zu einem beliebigen Zeitpunkt während einer Sitzung aufrufen. Wenn diese Methode zur Installation aufgerufen wird, stammen viele Konfigurationseinstellungen aus der Konfigurationsdatei MAPISVC. inf. Wenn diese Methode während einer aktiven Sitzung aufgerufen wird, stammen die Einstellungen vom Benutzer, der durch eine Reihe von Eigenschaftenblättern dazu aufgefordert wird. 
+Sie können **CreateProfile zur** Installationszeit der Anwendung oder jederzeit während einer Sitzung aufrufen. Wenn diese Methode bei der Installation aufgerufen wird, stammen viele der Konfigurationseinstellungen aus der Konfigurationsdatei Mapisvc.inf. Wenn diese Methode während einer aktiven Sitzung aufgerufen wird, stammen die Einstellungen vom Benutzer, der über eine Reihe von Eigenschaftenblättern aufgefordert wird. 
   
-Wenn das MAPI_DEFAULT_SERVICES-Flag im Parameter _ulFlags_ festgelegt ist, ruft CreateProfile die Entry Point-Funktion des Nachrichtendiensts für jeden Nachrichtendienst im Abschnitt [Default Services] in der Datei MAPISVC. inf auf. **** Jede Nachrichtendienst-Einstiegspunktfunktion wird aufgerufen, wobei der _ulContext_ -Parameter auf MSG_SERVICE_CREATE festgelegt ist. 
+Wenn das MAPI_DEFAULT_SERVICES im  _ulFlags-Parameter_ festgelegt ist, ruft **CreateProfile** die Nachrichtendienst-Einstiegspunktfunktion für jeden Nachrichtendienst im Abschnitt [Standarddienste] in der Datei Mapisvc.inf auf. Jede Nachrichtendienst-Einstiegspunktfunktion wird aufgerufen, wenn der  _ulContext-Parameter_ auf MSG_SERVICE_CREATE. 
   
-Wenn sowohl die MAPI_DIALOG-als auch die MAPI_DEFAULT_SERVICES-Flags festgelegt werden, werden die Werte in den Parametern _ulUIParam_ und _ulFlags_ ebenfalls an die Einstiegspunktfunktion des Nachrichtendiensts übergeben. Die Nachrichtendienst-Einstiegspunktfunktionen werden nur aufgerufen, nachdem dem Profil alle verfügbaren Informationen aus der Datei MAPISVC. inf hinzugefügt wurden. 
+Wenn sowohl die MAPI_DIALOG als auch MAPI_DEFAULT_SERVICES festgelegt sind, werden die Werte in den  _Parametern ulUIParam_ und  _ulFlags_ ebenfalls an die Einstiegspunktfunktion des Nachrichtendiensts übergeben. Die Nachrichtendienst-Einstiegspunktfunktionen werden nur aufgerufen, nachdem dem Profil alle verfügbaren Informationen aus der Datei Mapisvc.inf hinzugefügt wurden. 
   
 Der Name des neuen Profils und sein Kennwort können bis zu 64 Zeichen lang sein und die folgenden Zeichen enthalten:
   
-- Alle alphanumerischen Zeichen, einschließlich Akzentzeichen und der Unterstrich.
+- Alle alphanumerischen Zeichen, einschließlich Akzentzeichen und Unterstrichzeichen.
     
-- Eingebettete Leerzeichen, aber keine führenden oder nachstehenden Leerzeichen.
+- Eingebettete Leerzeichen, jedoch keine führenden oder nachgestellten Leerzeichen.
     
-Der _lpszPassword_ -Parameter muss NULL oder ein Zeiger auf eine leere Zeichenfolge sein. 
+Der  _lpszPassword-Parameter_ muss NULL oder ein Zeiger auf eine Zeichenfolge mit null Länge sein. 
   
 ## <a name="see-also"></a>Siehe auch
 

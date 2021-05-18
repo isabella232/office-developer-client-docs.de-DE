@@ -25,13 +25,13 @@ ms.locfileid: "33404764"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Fügt eine unsignierte 64-Bit-Ganzzahl zu einem anderen hinzu.
+Fügt einer anderen eine nicht signierte ganzzahlige 64-Bit-Zahl hinzu.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 FILETIME FtAddFt(
@@ -44,14 +44,14 @@ FILETIME FtAddFt(
 
  _Addend1_
   
-> in Eine [FILETIME](filetime.md) -Struktur, die die erste nicht signierte 64-Bit-Ganzzahl enthält, die hinzugefügt werden soll. 
+> [in] Eine [FILETIME-Struktur,](filetime.md) die die erste nicht signierte 64-Bit-Ganzzahl enthält, die hinzugefügt werden soll. 
     
  _Addend2_
   
-> in Eine **FILETIME** -Struktur, die die zweite nicht signierte 64-Bit-Ganzzahl enthält, die hinzugefügt werden soll. 
+> [in] Eine **FILETIME-Struktur,** die die zweite nicht signierte 64-Bit-Ganzzahl enthält, die hinzugefügt werden soll. 
     
 ## <a name="return-value"></a>Rückgabewert
 
-Die **FtAddFt** -Funktion gibt **** eine FILETIME-Struktur zurück, die die Summe der beiden ganzen Zahlen enthält. Die beiden Eingabeparameter bleiben unverändert. 
+Die **FtAddFt-Funktion** gibt eine **FILETIME-Struktur** zurück, die die Summe der beiden ganzen Zahlen enthält. Die beiden Eingabeparameter bleiben unverändert. 
   
 

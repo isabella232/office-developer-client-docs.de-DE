@@ -25,21 +25,21 @@ Legt fest, ob der Einrastvorgang an einer Gruppe oder an einzelnen Shapes in die
 |TRUE  <br/> |Einrasten an Shapes in einer Gruppe aktivieren.  <br/> |
 |FALSE  <br/> |Nur an der Gruppe einrasten.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Sie können diesen Wert auch festlegen, indem Sie die Gruppe auswählen, auf der Registerkarte [Entwickler](run-in-developer-mode-display-the-developer-tab.md) auf **Verhalten** klicken und anschließend das Kontrollkästchen **An Mitglieds-Shapes einrasten** aktivieren. 
   
-Wenn Sie einen Verweis auf die Zelle Zelle IsSnapTarget aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie folgendes, um einen Verweis auf die Zelle IsSnapTarget anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Zelle IsSnapTarget  <br/> |
+|Zellenname:  <br/> |IsSnapTarget  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle IsSnapTarget aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die IsSnapTarget-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowGroup** <br/> |
 |Zellenindex:  <br/> |**visGroupIsSnapTarget** <br/> |
    

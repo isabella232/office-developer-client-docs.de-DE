@@ -21,7 +21,7 @@ ms.locfileid: "32298096"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Es ist ein wichtiger Teil der Programmierung mit MAPI zu wissen, wie und wann der Speicher reserviert und freigegeben werden muss. MAPI stellt sowohl Funktionen als auch Makros bereit, die der Client oder Dienstanbieter zur konsistenten Verwaltung des Arbeitsspeichers verwenden kann. Die drei Funktionen lauten wie folgt:
+Das Wissen, wie und wann Arbeitsspeicher zugewiesen und frei werden soll, ist ein wichtiger Bestandteil der Programmierung mit MAPI. MAPI stellt Funktionen und Makros zur Verfügung, die Ihr Client oder Dienstanbieter verwenden kann, um den Arbeitsspeicher konsistent zu verwalten. Die drei Funktionen sind wie folgt:
   
 [MAPIAllocateBuffer](mapiallocatebuffer.md)
   
@@ -29,9 +29,9 @@ Es ist ein wichtiger Teil der Programmierung mit MAPI zu wissen, wie und wann de
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-Wenn Clients und Dienstanbieter diese Funktionen verwenden, ist das Problem des "Besitzers", d. h., dass die Veröffentlichung eines bestimmten Speicherblocks verhindert wird. Ein Client, der eine Dienstanbieter Methode aufruft, muss keinen Puffer übergeben, der groß genug ist, um einen Rückgabewert beliebiger Größe zu speichern. Der Dienstanbieter kann einfach die entsprechende Menge an Arbeitsspeicher mithilfe von **MAPIAllocateBuffer** und, falls erforderlich, **MAPIAllocateMore**, und der Client kann ihn später unter Verwendung von **mapifreebufferfreigegeben**, unabhängig vom Dienst, frei geben. Anbieter. 
+Wenn Clients und Dienstanbieter diese Funktionen verwenden, wird das Problem, wer "besitzt", d. h. weiß, wie sie freigegeben werden, beseitigt. Ein Client, der eine Dienstanbietermethode aufruft, muss keinen Puffer übergeben, der groß genug ist, um einen Rückgabewert beliebiger Größe zu halten. Der Dienstanbieter kann einfach mithilfe von **MAPIAllocateBuffer** und, falls erforderlich, **MAPIAllocateMore**, die entsprechende Menge an Arbeitsspeicher zuordnen, und der Client kann ihn später mithilfe von **MAPIFreeBuffer**, unabhängig vom Dienstanbieter, nach Besorgung veröffentlichen. 
   
-Die Speicher Makros werden verwendet, um Strukturen oder Arrays von Strukturen mit einer bestimmten Größe zuzuweisen. Clients und Dienstanbieter sollten diese Makros verwenden, anstatt den Arbeitsspeicher manuell zuzuweisen. Wenn ein Client beispielsweise die Verarbeitung von Namensauflösung für eine Empfängerliste mit drei Einträgen durchführen muss, kann das **SizedADRLIST** -Makro verwendet werden, um eine **ADRLIST** -Struktur zu erstellen, die an **IAddrBook::** ResolveName mit der richtigen Anzahl von **** Mitglieder der Anmietung. Alle Speicher Makros sind im MAPIDEFS definiert. H-Headerdatei. Diese Makros lauten wie folgt: 
+Die Speichermakros werden verwendet, um Strukturen oder Arrays von Strukturen einer bestimmten Größe zuzuordnen. Clients und Dienstanbieter sollten diese Makros verwenden, anstatt den Arbeitsspeicher manuell zuzuordnen. Wenn ein Client beispielsweise eine Namensauflösungsverarbeitung für eine Empfängerliste mit drei Einträgen durchführen muss, kann das **Makro SizedADRLIST** verwendet werden, um eine **ADRLIST-Struktur** zu erstellen, die an **IAddrBook::ResolveName** mit der richtigen Anzahl von **ADRENTRY-Mitgliedern** übergeben wird. Alle Speichermakros sind in MAPIDEFS definiert. H-Headerdatei. Diese Makros sind: 
   
 |||
 |:-----|:-----|
@@ -43,6 +43,6 @@ Die Speicher Makros werden verwendet, um Strukturen oder Arrays von Strukturen m
 |[SizedDtblGroupBox](sizeddtblgroupbox.md) <br/> |[SizedSSortOrderSet](sizedssortorderset.md) <br/> |
 |[SizedDtblLabel](sizeddtbllabel.md) <br/> | <br/> |
    
-MAPI unterstützt auch die Verwendung der com- [](https://msdn.microsoft.com/library/ms678425%28VS.85%29.aspx) Schnittstelle IMalloc für die Speicherverwaltung. Dienstanbieter erhalten einen **IMalloc** -Schnittstellenzeiger von MAPI zur Initialisierungszeit und können auch einen über die [MAPIGetDefaultMalloc](mapigetdefaultmalloc.md) -Funktion abrufen. Der Hauptvorteil bei der Verwendung **** der IMalloc-Methoden für die Verwaltung von Arbeitsspeicher über die MAPI-Funktionen besteht darin, dass mit den com-Methoden ein vorhandener Puffer neu reserviert werden kann. Die MAPI-Speicherfunktionen unterstützen keine Neuzuordnung. 
+MAPI unterstützt auch die Verwendung der COM-Schnittstelle [IMalloc für die](https://msdn.microsoft.com/library/ms678425%28VS.85%29.aspx) Speicherverwaltung. Dienstanbieter erhalten zum Zeitpunkt der Initialisierung einen **IMalloc-Schnittstellenzeiger** von MAPI und können auch einen über die [MAPIGetDefaultMalloc-Funktion](mapigetdefaultmalloc.md) abrufen. Der Hauptvorteil bei der Verwendung der **IMalloc-Methoden** zum Verwalten von Arbeitsspeicher über die MAPI-Funktionen besteht in der Möglichkeit, mit den COM-Methoden einen vorhandenen Puffer neu zu ordnen. Die MAPI-Speicherfunktionen unterstützen keine Neuzuordnung. 
   
 

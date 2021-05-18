@@ -23,13 +23,13 @@ ms.locfileid: "33421942"
  
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Sucht nach dem ersten Vorkommen eines Zeichens in einer null-terminierten Zeichenfolge. 
+Sucht nach dem ersten Vorkommen eines Zeichens in einer mit Null beendeten Zeichenfolge. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 LPSTR SzFindCh(
@@ -42,18 +42,18 @@ LPSTR SzFindCh(
 
 _lpsz_
   
-> in Zeiger auf die zu durchsuchende NULL-terminierte Zeichenfolge. 
+> [in] Zeiger auf die zu durchsuchende Zeichenfolge, die mit Nullen beendet werden soll. 
     
 _ch_
   
-> in Das Zeichen, nach dem gesucht werden soll.
+> [in] Das zu durchsuchende Zeichen.
     
 ## <a name="return-value"></a>Rückgabewert
 
-**SzFindCh** gibt einen Zeiger auf das erste Vorkommen des Zeichens in der Zeichenfolge zurück. Wenn das Zeichen nicht an einer beliebigen Stelle in der Zeichenfolge auftritt oder wenn der _lpsz_ -Parameter NULL ist, wird der Wert NULL zurückgegeben. 
+**SzFindCh** gibt einen Zeiger auf das erste Vorkommen des Zeichens in der Zeichenfolge zurück. Wenn das Zeichen nicht an einer beliebigen Stelle in der Zeichenfolge auftritt, oder wenn der  _lpsz-Parameter_ NULL ist, wird der Wert NULL zurückgegeben. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **SzFindCh** -Funktion sucht nur nach einer genauen Übereinstimmung. Sie ist anfällig für Groß-/Kleinschreibung und diakritische Unterschiede. Die Suche im Unicode-und im DBCS-Format wird unterstützt. 
+Die **SzFindCh-Funktion** sucht nur nach einer genauen Übereinstimmung. es ist sensibel auf Fall- und diakritische Unterschiede. Suchen im Unicode- und DBCS-Format werden unterstützt. 
   
 

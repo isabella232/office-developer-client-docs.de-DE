@@ -8,7 +8,7 @@ f1_keywords:
 - FreeXLOper12T
 - FreeXLOperT
 keywords:
-- freexlopert-Funktion [Excel 2007], FreeXLOper12T-Funktion [Excel 2007]
+- freexlopert-Funktion [excel 2007],FreeXLOper12T-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: 8fb3fdfd-8a43-4c50-82ff-e701fed3d83f
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -23,7 +23,7 @@ ms.locfileid: "33421522"
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Framework-Funktion, die Arbeitsspeicher frei gibt, der einem **XLOPER**/ **XLOPER12**zugeordnet ist. Die Funktion geht davon aus, dass der Arbeitsspeicher mit Aufrufen von malloc innerhalb der DLL reserviert wurde. Wenn der Arbeitsspeicher von Microsoft Excel oder auf andere Weise oder durch einen anderen Prozess zugewiesen wurde, sollte diese Funktion nicht zum Freigeben des Speichers verwendet werden. Verwenden Sie [xlFree](xlfree.md) , um von Excel für **XLOPER**/ **XLOPER12**s zugewiesene Arbeitsspeicher freizugeben. 
+Framework-Funktion, die arbeitsspeicherfrei wird, der einem **XLOPER** /  **XLOPER12 zugeordnet ist.** Die Funktion geht davon aus, dass der Arbeitsspeicher mit Aufrufen von malloc innerhalb der DLL zugewiesen wurde. Wenn der Arbeitsspeicher von Microsoft Excel oder auf andere Weise oder durch einen anderen Prozess zugewiesen wurde, sollte diese Funktion nicht zum Freispeichern des Arbeitsspeichers verwendet werden. Verwenden [Sie xlFree,](xlfree.md) um den von der Excel **xlOPER** /  **XLOPER12** s zugewiesenen Arbeitsspeicher frei zu machen. 
   
 ```cs
 void FreeXLOperT(LPXLOPER pxloper);
@@ -36,7 +36,7 @@ void FreeXLOper12T(LPXLOPER12 pxloper12);
   
  _pxloper12_ (**LPXLOPER12**)
   
-Zeiger auf die **XLOPER**/ -**XLOPER12** , die freigegeben werden soll. 
+Zeiger auf **die XLOPER** /  **XLOPER12,** die frei gemacht werden soll. 
   
 ## <a name="example"></a>Beispiel
 

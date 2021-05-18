@@ -20,22 +20,22 @@ ms.locfileid: "33422152"
 
 Stellt den Abstand zwischen der ersten Zeile des Absatzes und dem Aufzählungszeichen dar. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Dieser Abstand wird zum Abstand in der Zelle IndFirst addiert, der den Standardeinzug links darstellt. Dieser Wert ist unabhängig vom Zeichnungsmaßstab. 
   
-Wenn Sie einen Verweis auf die Zelle TextPosAfterBullet aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie folgendes, um einen Verweis auf die Zelle TextPosAfterBullet anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Abs. TextPosAfterBullet [ *i* ] wobei *i* = <1>, 2, 3...  <br/> |
+| Zellenname:  <br/> | Para.TextPosAfterBullet[  *i*  ] where  *i*  = <1>, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle TextPosAfterBullet aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die TextPosAfterBullet-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionParagraph** <br/> |
-| Zeilenindex:  <br/> |**visRowParagraph** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowParagraph**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
 | Zeilenindex:  <br/> |**visTextPosAfterBullet** <br/> |
    
 

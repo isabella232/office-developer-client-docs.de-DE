@@ -19,16 +19,16 @@ ms.locfileid: "32279788"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Alle Objekte, die MAPI definiert, fallen in eine oder mehrere Ebenen in der MAPI-Architektur. Die Ebene der Clientschnittstelle enthält alle Objekte, die von einer Clientanwendung, einem Formular Betrachter oder einem Formularserver implementiert werden können. Die Ebene der Dienstanbieter Oberfläche enthält die Objekte, die ein Dienstanbieter eines beliebigen Typs implementieren kann. Dieser Layer umfasst Objekte, die durch Adressbücher, Nachrichtenspeicher, Transportanbieter und Formularbibliotheken implementiert werden. Die Ebene, die das MAPI-Subsystem darstellt, wird zwischen den Layern der Client-und der Dienstanbieter Oberfläche positioniert. Die MAPI-Schicht enthält alle Objekte, die MAPI für die zu verwendenden Clients oder Dienstanbieter implementiert. 
+Alle objekte, die MAPI definiert, fallen in eine oder mehrere Ebenen der MAPI-Architektur. Die Clientschnittstellenebene enthält alle Objekte, die eine Clientanwendung, eine Formularanzeige oder ein Formularserver implementieren kann. Die Schnittstellesebene des Dienstanbieters enthält die Objekte, die ein Dienstanbieter eines beliebigen Typs implementieren kann. Diese Ebene umfasst Objekte, die von Adressbüchern, Nachrichtenspeichern, Transportanbietern und Formularbibliotheken implementiert werden. Die Ebene, die das MAPI-Subsystem darstellt, wird zwischen den Client- und Dienstanbieterschnittstellenebenen positioniert. Die MAPI-Ebene enthält alle Objekte, die MAPI für Clients oder Dienstanbieter implementiert. 
   
-Die folgende Abbildung zeigt, wo jedes MAPI-Objekt in die MAPI-Architektur passt. Die Objekte werden mit den Namen ihrer abgeleiteten Schnittstellen dargestellt. Ein Advise-Senke-Objekt wird beispielsweise als [IMAPIAdviseSink: IUnknown](imapiadvisesinkiunknown.md), die Schnittstelle angezeigt, die von [IUnknown](https://msdn.microsoft.com/library/33f1d79a-33fc-4ce5-a372-e08bda378332%28Office.15%29.aspx) abgeleitet ist und die jedes Advise-Senke-Objekt implementiert. Die Schnittstellen, die Layer überbrücken, werden entweder von mehreren Komponenten verwendet oder implementiert. Obwohl die MAPI-Schicht angezeigt wird, um die Client-und Anbieter Ebenen zu trennen, was bedeutet, dass die gesamte Kommunikation über MAPI fließen muss, ist dies nicht der Fall. Clients können und tun direkt an Dienstanbieter Objekte kommunizieren. 
+Die folgende Abbildung zeigt, wo die einzelnen MAPI-Objekte in die MAPI-Architektur passen. Die Objekte werden mit den Namen ihrer abgeleiteten Schnittstellen dargestellt. Beispielsweise wird ein Advise Sink -Objekt als [IMAPIAdviseSink angezeigt: IUnknown](imapiadvisesinkiunknown.md), die Schnittstelle, die von [IUnknown](https://msdn.microsoft.com/library/33f1d79a-33fc-4ce5-a372-e08bda378332%28Office.15%29.aspx) ab leitet und die jedes advise sink -Objekt implementiert. Die Schnittstellen, die Layer überbrücken, werden von mehreren Komponenten verwendet oder implementiert. Obwohl die MAPI-Ebene die Client- und Anbieterebenen zu trennen scheint, bedeutet dies, dass die kommunikation über MAPI fließen muss, dies ist jedoch nicht der Fall. Clients können und können direkt mit Dienstanbieterobjekten kommunizieren. 
   
 **Objektschichten in MAPI**
   
-![Objektebenen in MAPI] (media/amapi_38.gif "Objektebenen in MAPI")
+![Objektebenen in MAPI-Objektebenen](media/amapi_38.gif "in MAPI")
   
 ## <a name="see-also"></a>Siehe auch
 
 - [IMAPIAdviseSink : IUnknown](imapiadvisesinkiunknown.md)
-- [Übersicht über MAPI-Objekte und-Schnittstellen](mapi-object-and-interface-overview.md)
+- [Übersicht über das MAPI-Objekt und die Schnittstelle](mapi-object-and-interface-overview.md)
 

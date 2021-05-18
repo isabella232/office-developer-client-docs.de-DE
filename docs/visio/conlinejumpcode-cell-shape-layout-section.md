@@ -23,26 +23,26 @@ Bestimmt die Bedingungen für einen Verbindersprung.
 |**Wert**|**Beschreibung**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
 |0  <br/> |Klicken Sie gemäß den Angaben auf dem Zeichenblatt auf der Registerkarte **Entwurf** in der Gruppe **Seite einrichten** auf den Pfeil, und klicken Sie anschließend auf die Registerkarte **Layout und Routing**, um die Zeichenblattspezifikationen anzuzeigen.  <br/> |**visSLOJumpDefault** <br/> |
-|1  <br/> |Never  <br/> |**visSLOJumpNever** <br/> |
+|1  <br/> |Nie  <br/> |**visSLOJumpNever** <br/> |
 |2  <br/> |Always  <br/> |**visSLOJumpAlways** <br/> |
 |3  <br/> |Andere Verbindersprünge  <br/> |**visSLOJumpOther** <br/> |
-|4  <br/> |Keine Verbindersprünge  <br/> |**visSLOJumpNeither** <br/> |
+|4   <br/> |Keine Verbindersprünge  <br/> |**visSLOJumpNeither** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Sie können den Wert dieser Zelle auch festlegen, indem Sie einen dynamischen Verbinder auswählen, auf der Registerkarte [Entwickler](run-in-developer-mode-display-the-developer-tab.md) in der Gruppe **Shape-Design** auf **Verhalten** klicken und dann auf die Registerkarte **Verbinder** klicken. 
+Sie können den Wert dieser Zelle auch festlegen, indem Sie einen dynamischen [](run-in-developer-mode-display-the-developer-tab.md) Connector auswählen, **auf** der Registerkarte Entwickler in der Gruppe **Shape-Entwurf** auf Verhalten klicken und dann auf die Registerkarte **Connector** klicken. 
   
-Wenn Sie einen Verweis auf die Zelle Zelle ConLineJumpCode aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle ConLineJumpCode anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Zelle ConLineJumpCode  <br/> |
+|Zellenname:  <br/> |ConLineJumpCode  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle ConLineJumpCode aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die ConLineJumpCode-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowShapeLayout** <br/> |
 |Zellenindex:  <br/> |**visSLOJumpCode** <br/> |
    

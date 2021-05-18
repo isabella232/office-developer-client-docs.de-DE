@@ -25,7 +25,7 @@ ms.locfileid: "33422278"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft eine interne Funktion auf, um debuggingparameter für Dienstanbieter Methoden zu überprüfen, die von MAPI aufgerufen werden. 
+Ruft eine interne Funktion auf, um Debugparameter für von MAPI aufgerufene Dienstanbietermethoden zu überprüfen. 
   
 |||
 |:-----|:-----|
@@ -44,11 +44,11 @@ HRESULT CheckParms(
 
  _eMethod_
   
-> in Gibt die zu überprüfende Methode an. 
+> [in] Gibt die zu überprüfende Methode per Enumeration an. 
     
  _First_
   
-> in Zeiger auf das erste Argument im Stapel.
+> [in] Zeiger auf das erste Argument auf dem Stapel.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -56,8 +56,8 @@ S_OK
   
 > Der Aufruf war erfolgreich.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Im Gegensatz zu den Makros [ValidateParms](validateparms.md) und [UlValidateParms](ulvalidateparms.md) führt das **CheckParms** -Makro keine vollständige Parameterüberprüfung aus. Parameter, die zwischen MAPI-und Dienstanbietern übergeben werden, werden als richtig angenommen, daher führt **CheckParms** nur eine Debug-Validierung aus. 
+Im Gegensatz zu den [Makros ValidateParms](validateparms.md) und [UlValidateParms](ulvalidateparms.md) führt das **Makro CheckParms** keine vollständige Parameterüberprüfung durch. Parameter, die zwischen MAPI und Dienstanbietern übergeben werden, werden als richtig angenommen, daher führt **CheckParms** nur eine Debugüberprüfung durch. 
   
 

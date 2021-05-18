@@ -18,7 +18,7 @@ ms.locfileid: "33405282"
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Gibt den Instanz-Handle der Instanz von Microsoft Excel zurück, die derzeit eine DLL aufruft.
+Gibt das Instanzhandle der Instanz des Microsoft Excel, die derzeit eine DLL aufruft.
   
 ```cs
 Excel4(xlGetInstPtr, LPXLOPER pxRes, 0);Excel12(xlGetInstPtr, LPXLOPER12 pxRes, 0);
@@ -30,19 +30,19 @@ Diese Funktion hat keine Argumente.
   
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-Der Instanzen Handler (**xltypeBigData**) befindet sich im Feld **Val. hdata. h.** . 
+Das Instanzhandle (**xltypeBigData**) wird im **Feld val.bigdata.h.hdata** angezeigt. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Diese Funktion kann verwendet werden, um zwischen mehreren laufenden Instanzen von Excel zu unterscheiden, die die DLL aufrufen.
+Diese Funktion kann verwendet werden, um zwischen mehreren ausgeführten Instanzen von Excel, die die DLL aufrufen, zu unterscheiden.
   
-Diese Funktion gibt einen korrekten Wert mit sowohl 32-Bit-als auch 64-Bit-Versionen von Excel zurück. Es wurde in Excel 2010 als Erweiterung der [xlGetInst](xlgetinst.md) -Funktion eingeführt, die nur mit 32-Bit-Versionen von Excel ordnungsgemäß funktioniert. 
+Diese Funktion gibt einen korrekten Wert mit 32-Bit- und 64-Bit-Versionen von Excel. Sie wurde in Excel 2010 als Erweiterung der [xlGetInst-Funktion](xlgetinst.md) eingeführt, die nur mit 32-Bit-Versionen von Excel. 
   
-Diese Funktion funktioniert ordnungsgemäß, wenn Sie aufgerufen wird, indem sowohl die [Excel4-als auch die Excel12](excel4-excel12.md) -Vielzahl der API-Rückruffunktionen verwendet wird, da sowohl **XLOPER** als auch **XLOPER12** die gleiche Struktur aufweisen, die den **xltypeBigData** -Wert unterstützt. Typ. 
+Diese Funktion funktioniert ordnungsgemäß, wenn sie mit den [Excel4- und Excel12-Varianten](excel4-excel12.md) der API-Rückruffunktionen aufgerufen wird, da **sowohl XLOPER** als auch **XLOPER12** dieselbe Struktur haben, die den **xltypeBigData-Werttyp** unterstützt. 
   
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel wird die Instanz der letzten Excel-Kopie, die Sie aufgerufen hat, mit der aktuellen Excel-Kopie verglichen, die Sie aufgerufen hat. Wenn Sie identisch sind, wird 1 zurückgegeben; Wenn dies nicht der Fall ist, wird 0 zurückgegeben; Wenn die Funktion fehlschlägt, gibt Sie-1 zurück. Dieses Beispiel funktioniert sowohl mit 32-als auch 64-Bit-Versionen von Excel.
+Im folgenden Beispiel wird die Instanz der letzten Kopie von Excel, die sie aufgerufen hat, mit der aktuellen Kopie von Excel, die sie aufgerufen hat, verglichen. Wenn sie identisch sind, wird 1 zurückgegeben. Andern falls nicht, wird 0 zurückgegeben. Wenn die Funktion fehlschlägt, gibt sie -1 zurück. Dieses Beispiel funktioniert sowohl mit 32-Bit- als auch mit 64-Bit-Excel.
   
 `\SAMPLES\EXAMPLE\EXAMPLE.C`
   

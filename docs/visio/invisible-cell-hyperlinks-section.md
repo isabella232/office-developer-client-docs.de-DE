@@ -25,20 +25,20 @@ Gibt an, ob im Kontextmenü eines Shapes oder einer Seite ein Hyperlink angezeig
 |TRUE  <br/> |Im Kontextmenü wird kein Hyperlink als Menüelement angezeigt.  <br/> |
 |FALSE  <br/> |Im Kontextmenü wird ein Hyperlink als Menüelement angezeigt (Standardwert).  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle inVisible aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle Invisible anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Hyperlink. *Name* . Unsichtbar, wobei Hyperlink *. Name* der Zeilenname ist  <br/> |
+|Zellenname:  <br/> |Hyperlink. *Name*  . Unsichtbar, wobei Hyperlink  *.name*  der Zeilenname ist  <br/> |
    
-Wenn Sie einen Verweis auf die unsichtbare Zelle aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle Invisible nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
 |Abschnittsindex:  <br/> |**visSectionHyperlink** <br/> |
-|Zeilenindex:  <br/> |**visRow1stHyperlink** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+|Zeilenindex:  <br/> |**visRow1stHyperlink**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
 |Zellenindex:  <br/> |**visHLinkInvisible** <br/> |
    
 

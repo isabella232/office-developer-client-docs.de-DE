@@ -39,7 +39,7 @@ HRESULT RenameMsgService(
 
  _lpUID_
   
-> in Ein Zeiger auf die [MAPIUID](mapiuid.md) -Struktur, die den eindeutigen Bezeichner für den umzubenennenden Nachrichtendienst enthält. 
+> [in] Ein Zeiger auf die [MAPIUID-Struktur,](mapiuid.md) die den eindeutigen Bezeichner für den umzubenennenden Nachrichtendienst enthält. 
     
  _ulFlags_
   
@@ -47,17 +47,17 @@ HRESULT RenameMsgService(
     
  _lpszDisplayName_
   
-> in Ein Zeiger auf den neuen Namen für den Nachrichtendienst.
+> [in] Ein Zeiger auf den neuen Namen für den Nachrichtendienst.
     
 ## <a name="return-value"></a>Rückgabewert
 
 MAPI_E_NO_SUPPORT 
   
-> MAPI unterstützt das Umbenennen dieses Nachrichtendiensts nicht. **RenameMsgService** gibt immer diesen Wert zurück. 
+> MapI unterstützt die Umbenennung dieses Nachrichtendiensts nicht. **RenameMsgService** gibt diesen Wert immer zurück. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Um einem Nachrichtendienst einen neuen Namen zuzuweisen, sollten Clients die **PR_SERVICE_NAME** ([pidtagservicename (](pidtagservicename-canonical-property.md))-Eigenschaft des Nachrichtendiensts verwenden. Die Namen von Dienstanbietern in einem Nachrichtendienst werden in Ihren **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))-Eigenschaften gespeichert. 
+Um einem Nachrichtendienst einen neuen Namen zuzuordnen, sollten Clients die **PR_SERVICE_NAME** ([PidTagServiceName](pidtagservicename-canonical-property.md)) -Eigenschaft des Nachrichtendiensts verwenden. Die Namen von Dienstanbietern in einem Nachrichtendienst werden in ihren eigenschaften **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) gespeichert. 
   
 ## <a name="see-also"></a>Siehe auch
 

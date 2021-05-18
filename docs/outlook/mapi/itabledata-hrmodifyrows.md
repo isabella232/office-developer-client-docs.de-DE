@@ -25,7 +25,7 @@ ms.locfileid: "33405359"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Fügt mehrere Tabellenzeilen ein, die möglicherweise vorhandene Zeilen ersetzen.
+Fügt mehrere Tabellenzeilen ein und ersetzt möglicherweise vorhandene Zeilen.
   
 ```cpp
 HRESULT HrModifyRows(
@@ -42,7 +42,7 @@ HRESULT HrModifyRows(
     
  _lpSRowSet_
   
-> in Ein Zeiger auf eine [SRowSet](srowset.md) -Struktur, die den Satz von Zeilen enthält, der hinzugefügt werden soll, und ggf. vorhandene Zeilen ersetzen. Eine der Eigenschaftswert Strukturen, auf die durch das **lpProps** -Element jeder [SRow](srow.md) -Struktur im Zeilensatz verwiesen wird, sollte die Indexspalte enthalten, den gleichen Wert, der im _ulPropTagIndexColumn_ -Parameter im Aufruf der [ Createable](createtable.md) -Funktion. 
+> [in] Ein Zeiger auf eine [SRowSet-Struktur,](srowset.md) die die zu hinzufügende Gruppe von Zeilen enthält und bei Bedarf vorhandene Zeilen ersetzt. Eine der Eigenschaftenwertstrukturen, auf die das **lpProps-Element** jeder [SRow-Struktur](srow.md) im Zeilensatz verweist, sollte die Indexspalte enthalten, denselben Wert, der im  _ulPropTagIndexColumn-Parameter_ im Aufruf der [CreateTable-Funktion](createtable.md) angegeben wurde. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -52,17 +52,17 @@ S_OK
     
 MAPI_E_INVALID_PARAMETER 
   
-> Mindestens eine der übergebenen Zeilen verfügt über keine Indexspalte. Wenn dieser Fehler zurückgegeben wird, werden keine Zeilen geändert.
+> Mindestens eine der übergebenen Zeilen verfügt nicht über eine Indexspalte. Wenn dieser Fehler zurückgegeben wird, werden keine Zeilen geändert.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **ITableData:: HrModifyRows** -Methode fügt die von der [SRowSet](srowset.md) -Struktur beschriebenen Zeilen ein, auf die durch den _lpSRowSet_ -Parameter verwiesen wird. Wenn der Index Spaltenwert einer Zeile im Zeilensatz mit dem Wert einer vorhandenen Zeile in der Tabelle übereinstimmt, wird die vorhandene Zeile ersetzt. Wenn keine Zeile vorhanden ist, die mit der in der **SRowSet** -Struktur übereinstimmt, fügt **HrModifyRows** die Zeile am Ende der Tabelle hinzu. 
+Die **ITableData::HrModifyRows-Methode** fügt die Zeilen ein, die von der [SRowSet-Struktur](srowset.md) beschrieben werden, auf die der  _lpSRowSet-Parameter_ verweist. Wenn der Indexspaltenwert einer Zeile im Zeilensatz dem Wert für eine vorhandene Zeile in der Tabelle entspricht, wird die vorhandene Zeile ersetzt. Wenn keine Zeile vorhanden ist, die der in der **SRowSet-Struktur** enthaltenen Zeile entspricht, fügt **HrModifyRows** die Zeile am Ende der Tabelle hinzu. 
   
-Alle Ansichten der Tabelle werden so geändert, dass Sie die Zeilen einbeziehen, auf die von _lpSRowSet_verwiesen wird. Wenn in einer Ansicht jedoch eine Einschränkung vorhanden ist, die eine Zeile ausschließt, ist Sie möglicherweise für den Benutzer nicht sichtbar. 
+Alle Ansichten der Tabelle werden so geändert, dass sie die Zeilen enthalten, auf die _von lpSRowSet verwiesen wird._ Wenn eine Ansicht jedoch eine Einschränkung hat, die eine Zeile ausschließt, ist sie möglicherweise nicht für den Benutzer sichtbar. 
   
-Die Spalten in den Zeilen, auf die von _lpSRowSet_ verwiesen wird, müssen sich nicht in derselben Reihenfolge wie die Spalten in der Tabelle befinden. Der Aufrufer kann auch als Spalteneigenschaften enthalten, die sich derzeit nicht in der Tabelle befinden. Bei vorhandenen Ansichten stellt **HrModifyRows** diese neuen Spalten zur Verfügung, diese werden jedoch nicht in den aktuellen Spaltensatz aufgenommen. Für zukünftige Ansichten enthält **HrModifyRows** die neuen Spalten in den Spaltensatz. 
+Die Spalten in den Zeilen, auf die  _von lpSRowSet_ verwiesen wird, müssen nicht in derselben Reihenfolge wie die Spalten in der Tabelle sein. Der Aufrufer kann auch Spalteneigenschaften enthalten, die derzeit nicht in der Tabelle enthalten sind. Für vorhandene Ansichten **stellt HrModifyRows** diese neuen Spalten zur Verfügung, schließt sie jedoch nicht in den aktuellen Spaltensatz ein. Für zukünftige Ansichten **enthält HrModifyRows** die neuen Spalten im Spaltensatz. 
   
-Nachdem **HrModifyRows** die Zeilen hinzugefügt hat, werden Benachrichtigungen an alle Clients oder Dienstanbieter gesendet, die über eine Tabellenansicht verfügen und die [IMAPITable:: Advise](imapitable-advise.md) -Methode der Tabelle aufgerufen haben, um sich für Benachrichtigungen zu registrieren. MAPI sendet TABLE_ROW_ADDED-oder TABLE_ROW_MODIFIED-Benachrichtigungen für jede Zeile, bis zu acht Zeilen. Wenn der **HrModifyRows** -Aufruf mehr als acht Zeilen betrifft, sendet MAPI stattdessen eine einzelne TABLE_CHANGED-Benachrichtigung. 
+Nachdem **HrModifyRows** die Zeilen hinzugefügt hat, werden Benachrichtigungen an alle Clients oder Dienstanbieter gesendet, die über eine Ansicht der Tabelle verfügen und die die [IMAPITable::Advise-Methode](imapitable-advise.md) der Tabelle aufgerufen haben, um sich für Benachrichtigungen zu registrieren. MAPI sendet TABLE_ROW_ADDED oder TABLE_ROW_MODIFIED Benachrichtigungen für jede Zeile, bis zu acht Zeilen. Wenn mehr als acht Zeilen vom **HrModifyRows-Aufruf** betroffen sind, sendet MAPI stattdessen eine TABLE_CHANGED Benachrichtigung. 
   
 ## <a name="see-also"></a>Siehe auch
 

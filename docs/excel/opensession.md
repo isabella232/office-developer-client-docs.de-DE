@@ -28,11 +28,11 @@ int OpenSession(WCHAR *Params)
 
 _Parameter_
   
-> Ein Zeiger auf durch Semikolons getrennte UNICODE-Zeichenfolge von Parametern für die Sitzung. Excel verwendet dieses Argument nicht.
+> Ein Zeiger auf eine durch Semikolons getrennte UNICODE-Zeichenfolge mit Parametern für die Sitzung. Excel verwendet dieses Argument nicht.
     
 ## <a name="return-value"></a>Rückgabewert
 
-Eine Sitzungs-ID, die in anderen Aufrufen des Cluster-Konnektors verwendet werden soll, wenn die Sitzung erfolgreich erstellt wurde; andernfalls **xlHpcRetCallFailed**.
+Eine Sitzungs-ID, die bei anderen Aufrufen an den Clusterconnector verwendet werden soll, wenn die Sitzung erfolgreich erstellt wurde. andernfalls **xlHpcRetCallFailed**.
   
 ## <a name="see-also"></a>Siehe auch
 

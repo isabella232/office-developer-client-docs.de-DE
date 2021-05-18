@@ -25,12 +25,12 @@ ms.locfileid: "33404680"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt ein Bearbeitungssteuerelement, das in einem von einer Anzeigetabelle erstellten Dialogfeldverwendet wird.
+Beschreibt ein Bearbeitungssteuerelement, das in einem Dialogfeld verwendet wird, das aus einer Anzeigetabelle erstellt wird.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehöriges Makro:  <br/> |[SizedDtblEdit](sizeddtbledit.md) <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandtes Makro:  <br/> |[SizedDtblEdit](sizeddtbledit.md) <br/> |
    
 ```cpp
 typedef struct _DTBLEDIT
@@ -43,27 +43,27 @@ typedef struct _DTBLEDIT
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **ulbLpszCharsAllowed**
   
-> Ein Offset vom Anfang der **DTBLEDIT** -Struktur zu einem Zeichenfolgenfilter, der ggf. Einschränkungen für die Zeichen beschreibt, die in das Bearbeitungssteuerelement eingegeben werden können. Der Filter wird nicht als regulärer Ausdruck interpretiert, und auf jedes eingegebene Zeichen wird derselbe Filter angewendet. Das Format des Filters lautet wie folgt: 
+> Ein Offset vom Anfang der **DTBLEDIT-Struktur** zu einem Zeichenzeichenfolgenfilter, der einschränkungen (sofern möglich) zu den Zeichen beschreibt, die in das Bearbeitungssteuerelement eingegeben werden können. Der Filter wird nicht als regulärer Ausdruck interpretiert, und auf jedes eingegebene Zeichen wird derselbe Filter angewendet. Das Format des Filters lautet wie folgt: 
     
 |**Zeichen**|**Beschreibung**|
 |:-----|:-----|
-| `*` <br/> |Ein beliebiges Zeichen ist zulässig (Beispiels `"*"`Weise).  <br/> |
-| `[ ]` <br/> |Definiert eine Gruppe von Zeichen (beispielsweise `"[0123456789]".`).  <br/> |
-| `-` <br/> |Gibt einen Zeichentyp an (beispielsweise `"[a-z]"`).  <br/> |
-| `~` <br/> |Gibt an, dass diese Zeichen nicht zulässig sind (Beispiels `"[~0-9]"`Weise).  <br/> |
-| `\` <br/> |Wird verwendet, um eines der vorherigen Symbole zu zitieren ( `"[\-\\\[\]]"` beispielsweise sind \, means-, [und] characters zulässig).  <br/> |
+| `*` <br/> |Jedes Zeichen ist zulässig (z. B.  `"*"` ).  <br/> |
+| `[ ]` <br/> |Definiert eine Reihe von Zeichen (z. B.  `"[0123456789]".` )  <br/> |
+| `-` <br/> |Gibt einen Zeichenbereich an (z. B.  `"[a-z]"` ).  <br/> |
+| `~` <br/> |Gibt an, dass diese Zeichen nicht zulässig sind (z. B.  `"[~0-9]"` ).  <br/> |
+| `\` <br/> |Wird verwendet, um eines der vorherigen Symbole anführungszeichen (z. B.  `"[\-\\\[\]]"` bedeutet -, \, [und ] Zeichen sind zulässig).  <br/> |
    
  **ulFlags**
   
-> Bitmaske von Flags, die zum Festlegen des Formats des Zeichen Filters verwendet werden. Das folgende Flag kann festgelegt werden:
+> Bitmaske von Flags, die zum Festlegen des Formats des Zeichenfilters verwendet werden. Das folgende Flag kann festgelegt werden:
     
 MAPI_UNICODE
   
-> Der Filter ist im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, ist der Filter im ANSI-Format.
+> Der Filter hat das Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befindet sich der Filter im ANSI-Format.
     
  **ulNumCharsAllowed**
   
@@ -71,15 +71,15 @@ MAPI_UNICODE
     
  **ulPropTag**
   
-> Property-Tag für eine Eigenschaft vom Typ PT_TSTRING. Das **ulPropTag** -Element identifiziert die String-Eigenschaft, deren Daten im Bearbeitungssteuerelement angezeigt und bearbeitet werden. 
+> Eigenschaftstag für eine Eigenschaft vom Typ PT_TSTRING. Das **ulPropTag-Element** identifiziert die string-Eigenschaft, deren Daten im Bearbeitungssteuerelement angezeigt und bearbeitet werden. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Eine **DTBLEDIT** -Struktur beschreibt ein Bearbeitungssteuerelement einen Bereich in einem Dialogfeld, das alphanumerische Informationen enthält. Fast alle Dialogfelder verfügen über mindestens ein Bearbeitungssteuerelement. Bearbeitungssteuerelemente können von einem Benutzer oder schreibgeschützt geändert werden. 
+Eine **DTBLEDIT-Struktur** beschreibt ein Bearbeitungssteuerelement einen Bereich in einem Dialogfeld, das alphanumerische Informationen enthält. Fast alle Dialogfelder verfügen über mindestens ein Bearbeitungssteuerelement. Bearbeitungssteuerelemente können von einem Benutzer oder schreibgeschützt geändert werden. 
   
-Bearbeitungssteuerelemente können auch einzeilige oder Multiline sein. Multiline-Bearbeitungssteuerelemente haben normalerweise eine Bildlaufleiste zugeordnet. 
+Bearbeitungssteuerelemente können auch ein- oder mehrlinienig sein. Steuerelementen für mehrstufige Bearbeitungen ist in der Regel eine Bildlaufleiste zugeordnet. 
   
-Eine Übersicht über Anzeige Tabellen finden Sie unter [Display Tables](display-tables.md). Weitere Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
+Eine Übersicht über Anzeigetabellen finden Sie unter [Display Tables](display-tables.md). Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -89,7 +89,7 @@ Eine Übersicht über Anzeige Tabellen finden Sie unter [Display Tables](display
   
 [IMAPIProp::GetProps](imapiprop-getprops.md)
   
-[Kanonische Pidtagcontroltype (-Eigenschaft](pidtagcontroltype-canonical-property.md)
+[PidTagControlType (kanonische Eigenschaft)](pidtagcontroltype-canonical-property.md)
 
 
 [MAPI-Strukturen](mapi-structures.md)

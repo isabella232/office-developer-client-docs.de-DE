@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - xlSet
 keywords:
-- xlSet-Funktion [Excel 2007]
+- xlset-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: 121e6212-0692-4430-97be-4792b53719bf
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -22,7 +22,7 @@ ms.locfileid: "33404603"
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Fügt Konstante Werte sehr schnell in Zellen oder Bereiche ein. Weitere Informationen finden Sie unter "xlSet und Arbeitsmappen mit Array Formeln" in [bekannte Probleme in Excel XLL Development](known-issues-in-excel-xll-development.md).
+Legt konstante Werte sehr schnell in Zellen oder Bereiche. Weitere Informationen finden Sie unter "xlSet and Workbooks with Array Formulas" [unter Known Issues in Excel XLL Development](known-issues-in-excel-xll-development.md).
   
 ```cs
 Excel12(xlSet, LPXLOPER12 pxRes, 2, LPXLOPER12 pxReference, LPXLOPER pxValue);
@@ -30,37 +30,37 @@ Excel12(xlSet, LPXLOPER12 pxRes, 2, LPXLOPER12 pxReference, LPXLOPER pxValue);
 
 ## <a name="parameters"></a>Parameter
 
-_pxReference_ (**externen xltypeRef** oder **xltypeSRef**)
+_pxReference_ (**xltypeRef** oder **xltypeSRef**)
   
-Ein rechteckiger Verweis, der die Ziel Zelle oder Zellen beschreibt. Der Verweis muss angrenzende Zellen beschreiben, sodass in einem **externen xltypeRef** `val.mref.lpmref->count` auf 1 festgelegt werden muss. 
+Ein rechteckiger Verweis, der die Zielzelle oder -zellen beschreibt. Der Verweis muss benachbarte Zellen beschreiben, sodass in **einem xltypeRef** `val.mref.lpmref->count` auf 1 festgelegt werden muss. 
   
 _pxValue_
   
-Der Wert oder die Werte, die in die Zelle oder die Zellen eingefügt werden sollen. Weitere Informationen finden Sie im Abschnitt "Hinweise".
+Der Wert oder die Werte, die in die Zelle oder Zellen platziert werden sollen. Weitere Informationen finden Sie im Abschnitt "Hinweise".
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 ### <a name="pxvalue-argument"></a>pxValue-Argument
 
-_pxValue_ kann entweder ein Wert oder ein Array sein. Wenn es sich um einen Wert handelt, wird der gesamte Ziel Umfang mit diesem Wert gefüllt. Wenn es sich um ein Array (**xltypeMulti**) handelt, werden die Elemente des Arrays an den entsprechenden Stellen im Rechteck platziert.
+_pxValue_ kann entweder ein Wert oder ein Array sein. Wenn es sich um einen Wert handelt, wird der gesamte Zielbereich mit diesem Wert gefüllt. Wenn es sich um ein Array (**xltypeMulti)** handelt, werden die Elemente des Arrays an die entsprechenden Speicherorte im Rechteck eingesenert.
   
-Wenn Sie ein horizontales Array für das zweite Argument verwenden, wird es dupliziert, um das gesamte Rechteck auszufüllen. Wenn Sie ein vertikales Array verwenden, wird es nach rechts dupliziert, um das gesamte Rechteck auszufüllen. Wenn Sie ein rechteckiges Array verwenden und es für den rechteckigen Bereich zu klein ist, in dem Sie es platzieren möchten, wird dieser Bereich mit **#N/a**s gepolstert.
+Wenn Sie ein horizontales Array für das zweite Argument verwenden, wird es nach unten dupliziert, um das gesamte Rechteck zu füllen. Wenn Sie ein vertikales Array verwenden, wird es nach rechts dupliziert, um das gesamte Rechteck zu füllen. Wenn Sie ein rechteckiges Array verwenden und es zu klein für den rechteckigen Bereich ist, in den Sie es setzen möchten, wird dieser Bereich mit **#N/A-s gepolstert.**
   
-Wenn der Zielbereich kleiner als das Quell-Array ist, werden die Werte bis zu den Grenzen des Zielbereichs kopiert, und die zusätzlichen Daten werden ignoriert.
+Wenn der Zielbereich kleiner als das Quellarray ist, werden die Werte bis zu den Grenzen des Zielbereichs kopiert, und die zusätzlichen Daten werden ignoriert.
   
-Wenn Sie ein Element des Zielrechtecks löschen möchten, verwenden Sie ein **xltypeNil** -Arrayelement im Quellarray. Um das gesamte Zielrechteck zu löschen, lassen Sie das zweite Argument aus. 
+Verwenden Sie ein **xltypeNil-Arrayelement** im Quellarray, um ein Element des Zielrechtecks zu löschen. Um das gesamte Zielrechteck zu löschen, lassen Sie das zweite Argument aus. 
   
 ### <a name="restrictions"></a>Einschränkungen
 
-**xlSet** kann nicht rückgängig gemacht werden. Darüber hinaus werden alle Rückgängig-Informationen zerstört, die möglicherweise zuvor verfügbar waren. 
+**xlSet** kann nicht rückgängig gemacht werden. Darüber hinaus werden alle Zuvor verfügbaren Rückgängig-Informationen vernichtet. 
   
-**xlSet** kann nur Konstanten, keine Formeln, in Zellen einfügen. 
+**xlSet** kann nur Konstanten, nicht Formeln, in Zellen setzen. 
   
-**xlSet** verhält sich wie eine Befehlsäquivalente Funktion der Klasse 3; Das heißt, es ist nur innerhalb einer DLL verfügbar, wenn die DLL von einem Objekt, einem Makro, einem Menü, einer Symbolleiste, einer Tastenkombination oder der Schaltfläche **Ausführen** im Dialogfeld **Makro** aufgerufen wird (auf das Sie über die Registerkarte **Ansicht** auf dem Menüband ab Excel 2007 zugreifen, und die **Tools **Menü in früheren Versionen). 
+**xlSet** verhält sich wie eine Befehlsentsprechungsfunktion der Klasse 3. Das heißt, sie ist nur innerhalb einer DLL verfügbar, wenn die DLL über ein  Objekt, ein Makro, ein Menü, eine Symbolleiste, eine Tastenkombination oder die Schaltfläche Ausführen im Dialogfeld **Makro** aufgerufen wird (zugriff auf die Registerkarte Ansicht auf dem Menüband ab Excel 2007 und das Menü **Extras** in früheren Versionen).  
   
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel füllt Computer B205: B206 mit dem Wert, der von einem Makro übergeben wurde. Dieses Beispiel für die Command-Funktion erfordert ein Argument und funktioniert daher nur, wenn es von einem XML-Makroblatt oder aus einem VBA-Modul mithilfe der **Application. Run** -Methode aufgerufen wird. 
+Das folgende Beispiel füllt B205:B206 mit dem Wert aus, der von einem Makro übergeben wurde. Dieses Befehlsfunktionsbeispiel erfordert ein Argument und funktioniert nur, wenn es von einem XLM-Makroblatt oder von einem VBA-Modul mit der **Application.Run-Methode aufgerufen** wird. 
   
 `\SAMPLES\EXAMPLE\EXAMPLE.C`
   

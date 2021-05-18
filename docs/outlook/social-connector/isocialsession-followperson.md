@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: de7f56e2-c131-4955-b945-0a72043e0f5a
-description: Fügt die Person, die vom Parameter "Email" als Freund für den angemeldeten Benutzer im sozialen Netzwerk identifiziert wird, hinzu.
+description: Fügt die person hinzu, die durch den parameter emailAddress als Freund für den angemeldeten Benutzer im sozialen Netzwerk identifiziert wird.
 ms.openlocfilehash: 849085bd40788039a96ac159fd76a5e252395916
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -17,7 +17,7 @@ ms.locfileid: "33423258"
 ---
 # <a name="isocialsessionfollowperson"></a>ISocialSession::FollowPerson
 
-Fügt die Person, die vom Parameter " _Email_ " als Freund für den angemeldeten Benutzer im sozialen Netzwerk identifiziert wird, hinzu. 
+Fügt die person hinzu, die durch den  _parameter emailAddress_ als Freund für den angemeldeten Benutzer im sozialen Netzwerk identifiziert wird. 
   
 ```cpp
 HRESULT _stdcall FollowPerson([in] BSTR emailAddress);
@@ -27,15 +27,15 @@ HRESULT _stdcall FollowPerson([in] BSTR emailAddress);
 
 _emailAddress_
   
-> in Eine Zeichenfolge, die eine e-Mail-Adresse einer Person enthält.
+> [in] Eine Zeichenfolge, die eine E-Mail-Adresse einer Person enthält.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Der Parameter " _Email_ Address" muss eine gültige SMTP-Adresse sein. Wenn der Outlook-Anbieter für soziale Netzwerke (OSC) die **followPerson** -Methode in den **Funktionen**als **true** festgelegt hat und das Argument für die e-mailemail nicht mit einem Benutzer im Netzwerk übereinstimmt, muss der Anbieter die OSC_E_NOT_FOUND zurückgeben. __ Fehler. Wenn der Anbieter **followPerson** als **false** in- **Funktionen**festgelegt hat, sollte der Anbieter den OSC_E_FAIL-Fehler zurückgeben.
+Der  _parameter emailAddress_ muss eine gültige SMTP-Adresse sein. Wenn der Outlook Social Connector (OSC)-Anbieter die **followPerson-Methode** **in** funktionen als **true** festgelegt hat und das Argument _für emailAddress_ keinem Benutzer im Netzwerk zutrifft, muss der Anbieter den Fehler OSC_E_NOT_FOUND zurückgeben. Wenn der Anbieter **followPerson** in den Funktionen als **false** festgelegt **hat,** sollte der OSC_E_FAIL zurückgeben.
   
-Wenn der Anbieter die [ISocialSession2](isocialsession2iunknown.md) -Schnittstelle implementiert und **followPerson** als **true** in- **Funktionen**festgelegt hat, ruft der osc [ISocialSession2:: FollowPersonEx](isocialsession2-followpersonex.md) anstelle von **ISocialSession:: followPerson **. Wenn der Anbieter die **ISocialSession2** -Schnittstelle nicht implementiert oder **ISocialSession2:: FollowPersonEx** den OSC_E_NOTIMPL-Fehler zurückgibt, ruft osc **ISocialSession:: FollowPerson** auf, solange der Anbieter festgelegt **hat followPerson** als **true** in- **Funktionen**. Informationen zu Fehlercodes finden Sie unter [Outlook Social Connector-Anbieter – Fehlercodes](outlook-social-connector-provider-error-codes.md).
+Wenn der Anbieter die [ISocialSession2-Schnittstelle](isocialsession2iunknown.md) implementiert und **followPerson** **in** funktionen als **true** festgelegt hat, wird [ISocialSession2::FollowPersonEx](isocialsession2-followpersonex.md) von der OSC anstelle von **ISocialSession::FollowPerson aufruft.** Wenn der Anbieter die **ISocialSession2-Schnittstelle** nicht implementiert oder **ISocialSession2::FollowPersonEx** den OSC_E_NOTIMPL-Fehler zurückgibt, wird **ISocialSession::FollowPerson** vom OSC aufruft, solange der Anbieter **followPerson** in funktionen als **true** festgelegt **hat.** Informationen zu Fehlercodes finden Sie unter [Outlook Social Connector-Anbieter – Fehlercodes](outlook-social-connector-provider-error-codes.md).
   
-Bei der Entscheidung, ob **ISocalSession:: FollowPerson** oder **ISocialSession2:: FollowPersonEx**implementiert werden soll, sollten Sie berücksichtigen, ob der Anbieter die anderen Methoden in **ISocialSession2**benötigt und ob Sie die _ djsplayName_ -Parameter in **FollowPersonEx**.
+Bei der Entscheidung, ob **ISocalSession::FollowPerson** oder **ISocialSession2::FollowPersonEx** implementiert werden soll, sollten Sie überlegen, ob Ihr Anbieter die anderen Methoden in **ISocialSession2** benötigt und ob Sie den  _parameter djsplayName_ in **FollowPersonEx** verwenden können.
   
 ## <a name="see-also"></a>Siehe auch
 

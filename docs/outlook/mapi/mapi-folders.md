@@ -23,7 +23,7 @@ ms.locfileid: "33421844"
   
 Ordner sind MAPI-Objekten, die als Basiseinheit Organisation f�r Nachrichten zu bedienen. Hierarchisch angeordnet sind, k�nnen Ordner Nachrichten und andere Ordner enthalten. Ordner erleichtern das Suchen von und Arbeiten mit Nachrichten.
   
-Ordner implementieren Sie die [IMAPIFolder](imapifolderimapicontainer.md) -Schnittstelle, die indirekt von der **IUnknown** -Schnittstelle, durch die [IMAPIContainer](imapicontainerimapiprop.md) und [IMAPIProp](imapipropiunknown.md) Schnittstellen erbt. Clients verwenden **IMAPIFolder** erstellen, kopieren und L�schen von Nachrichten und Ordnern, abrufen und Festlegen des Nachrichtenstatus, und so festlegen oder Aufheben der Kennzeichnung Lesen einer Nachricht. Obwohl Nachricht-Anbieter zur Unterst�tzung aller Methoden in **IMAPIFolder**erforderlich sind, stellen Sie einige Methoden Ma� an Komplexit�t, die Nachricht Anbieter vermeiden m�chten m�glicherweise vor. MAPI sparen-Anbieter Nachricht einige Arbeit einige komplexere Ordner Funktionen in der [IMAPISupport](imapisupportiunknown.md) -Schnittstelle implementieren. Anstatt einen eigenen Kopie-Methoden implementieren, beispielsweise k�nnen Nachricht Anbieter rufen die Methoden Kopie im Support-Objekt und die gleichen Ergebnisse erhalten m�chten. 
+Ordner implementieren Sie die [IMAPIFolder](imapifolderimapicontainer.md) -Schnittstelle, die indirekt von der **IUnknown** -Schnittstelle, durch die [IMAPIContainer](imapicontainerimapiprop.md) und [IMAPIProp](imapipropiunknown.md) Schnittstellen erbt. Clients verwenden **IMAPIFolder** erstellen, kopieren und L�schen von Nachrichten und Ordnern, abrufen und Festlegen des Nachrichtenstatus, und so festlegen oder Aufheben der Kennzeichnung Lesen einer Nachricht. Obwohl Nachricht-Anbieter zur Unterst�tzung aller Methoden in **IMAPIFolder** erforderlich sind, stellen Sie einige Methoden Ma� an Komplexit�t, die Nachricht Anbieter vermeiden m�chten m�glicherweise vor. MAPI sparen-Anbieter Nachricht einige Arbeit einige komplexere Ordner Funktionen in der [IMAPISupport](imapisupportiunknown.md) -Schnittstelle implementieren. Anstatt einen eigenen Kopie-Methoden implementieren, beispielsweise k�nnen Nachricht Anbieter rufen die Methoden Kopie im Support-Objekt und die gleichen Ergebnisse erhalten m�chten. 
   
 Es gibt drei Arten von Ordnern:
   
@@ -39,19 +39,19 @@ Die meisten anderen Ordner sind generische Ordner. Generische Ordner enthalten w
   
 Ein Suchordner enth�lt Links zu Nachrichten, die eine Reihe von vordefinierten Kriterien entsprechen. Da Suchordner Links anstelle von tats�chlichen Nachrichten enthalten, werden sie in Kraft schreibgesch�tzt. Nicht enthalten andere Ordner oder Nachrichten oder Ordner verschoben oder in diese kopiert. Sie d�rfen keine neue Nachrichten erstellt, in denen besitzen. und sie selbst verschoben, kopiert oder umbenannt werden nicht m�glich. Wenn eine Nachricht aus einem Suchordner gel�scht wird, wird sie tats�chlich aus dem Ordner gel�scht, die die Nachricht enth�lt.
   
-Der Ordnertyp wird in der **PR_FOLDER_TYPE** ([pidtagfoldertype (](pidtagfoldertype-canonical-property.md))-Eigenschaft gespeichert. Jeder Ordner hat diese Eigenschaft auf FOLDER_GENERIC, FOLDER_ROOT oder FOLDER_SEARCH, je nachdem dieses Typs festgelegt.
+Der Ordnertyp wird in der **PR_FOLDER_TYPE** ([PidTagFolderType](pidtagfoldertype-canonical-property.md)) -Eigenschaft gespeichert. Jeder Ordner hat diese Eigenschaft auf FOLDER_GENERIC, FOLDER_ROOT oder FOLDER_SEARCH, je nachdem dieses Typs festgelegt.
   
-Jeder Ordner verf�gt �ber eine Eintrags-ID und einen Datensatzschl�ssel. Die Eintrags-ID **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) wird von Clients und Dienstanbietern zum Öffnen des Ordners verwendet. Der Eintragsschlüssel **PR_RECORD_KEY** ([pidtagrecordkey (](pidtagrecordkey-canonical-property.md)) ist ein binärer Wert, der zum Vergleichen des Ordners mit anderen Ordnern verwendet wird. 
+Jeder Ordner verf�gt �ber eine Eintrags-ID und einen Datensatzschl�ssel. Der **Eintragsbezeichner** PR_ENTRYID ([PidTagEntryId](pidtagentryid-canonical-property.md)) wird von Clients und Dienstanbietern zum Öffnen des Ordners verwendet. Der Datensatzschlüssel, **PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md)), ist ein binärer Wert, der zum Vergleichen des Ordners mit anderen Ordnern verwendet wird. 
   
 Ein Ordner hat andere Eigenschaften zugeh�rigen Ordner und den Nachrichtenspeicher zu identifizieren. Die folgenden Eigenschaften sind erforderlich:
   
-- **PR_PARENT_ENTRYID** ([Pidtagparententryid (](pidtagparententryid-canonical-property.md))
+- **PR_PARENT_ENTRYID** ([PidTagParentEntryId](pidtagparententryid-canonical-property.md))
     
-- **PR_STORE_ENTRYID** ([Pidtagstoreentryid (](pidtagstoreentryid-canonical-property.md))
+- **PR_STORE_ENTRYID** ([PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md))
     
-- **PR_STORE_RECORD_KEY** ([Pidtagstorerecordkey (](pidtagstorerecordkey-canonical-property.md))
+- **PR_STORE_RECORD_KEY** ([PidTagStoreRecordKey](pidtagstorerecordkey-canonical-property.md))
     
-Einige Ordner unterstützen die **PR_ACCESS** ([pidtagaccess (](pidtagaccess-canonical-property.md))-Eigenschaft, die die Art der Vorgänge beschreibt, die ein Benutzer ausführen kann. Beispielsweise ist eine der g�ltigen Einstellungen f�r **PR_ACCESS** MAPI_ACCESS_DELETE, die angibt, dass der Ordner entfernt werden kann. Eine weitere Einstellung, MAPI_ACCESS_MODIFY, gibt an, dass der Ordner ge�ndert werden. 
+Einige Ordner unterstützen die **PR_ACCESS** ([PidTagAccess](pidtagaccess-canonical-property.md)) -Eigenschaft, die den Typ der Vorgänge beschreibt, die ein Benutzer ausführen kann. Beispielsweise ist eine der g�ltigen Einstellungen f�r **PR_ACCESS** MAPI_ACCESS_DELETE, die angibt, dass der Ordner entfernt werden kann. Eine weitere Einstellung, MAPI_ACCESS_MODIFY, gibt an, dass der Ordner ge�ndert werden. 
   
 Eine vollst�ndige Liste der erforderlichen Ordnereigenschaften finden Sie unter der [IMAPIFolder](imapifolderimapicontainer.md) -Schnittstelle. 
   

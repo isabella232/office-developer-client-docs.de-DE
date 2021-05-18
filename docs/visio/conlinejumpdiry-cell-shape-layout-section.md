@@ -26,21 +26,21 @@ Bestimmt die Liniensprungrichtung für Liniensprünge, die bei einem vertikalen 
 | 1  <br/> | Nach links  <br/> |**visLOJumpDirYLeft** <br/> |
 | 2  <br/> | Nach rechts  <br/> |**visLOJumpDirYRight** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie die standardmäßige vertikale Richtung für *alle* Verbinder-Sprünge auf einer Seite festlegen möchten, verwenden Sie die Zelle Zelle PageLineJumpDirY im Abschnitt Seiten Layout. 
+Verwenden Sie die Zelle  PageLineJumpDirY im Abschnitt Seitenlayout, um die standardmäßige vertikale Richtung für alle Verbindersprünge auf einer Seite zu festlegen. 
   
-Wenn Sie einen Verweis auf die Zelle Zelle ConLineJumpDirY aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle ConLineJumpDirY anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Zelle ConLineJumpDirY  <br/> |
+| Zellenname:  <br/> | ConLineJumpDirY  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle ConLineJumpDirY aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die ConLineJumpDirY-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowShapeLayout** <br/> |
 | Zellenindex:  <br/> |**visSLOJumpDirY** <br/> |
    

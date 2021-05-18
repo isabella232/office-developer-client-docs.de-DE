@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagdiscretevalues (-Eigenschaft
+title: PidTagDiscreteValues (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,40 +19,40 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33404841"
 ---
-# <a name="pidtagdiscretevalues-canonical-property"></a>Kanonische Pidtagdiscretevalues (-Eigenschaft
+# <a name="pidtagdiscretevalues-canonical-property"></a>PidTagDiscreteValues (kanonische Eigenschaft)
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält TRUE, wenn ein Unzustellbarkeitsbericht nur auf diskrete Mitglieder einer Verteilerliste anstatt auf die gesamte Liste angewendet wird. 
+Enthält TRUE, wenn ein Nicht-Verteilerbericht nur für einzelne Mitglieder einer Verteilerliste und nicht für die gesamte Liste gilt. 
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_DISCRETE_VALUES  <br/> |
 |Kennung:  <br/> |0x0E0E  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
-|Bereich:  <br/> |Nicht transmitable MAPI  <br/> |
+|Bereich:  <br/> |MAPI nicht durchlässig  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Diese Eigenschaft wird in einem Unzustellbarkeitsbericht verwendet, wenn die Nachricht nicht an ein oder mehrere Mitglieder einer Verteilerliste zugestellt werden konnte. Der Zweck besteht darin, die Wiederholungsversuche auf die einzelnen Mitglieder und nicht auf die Verteilerliste als Ganzes zu begrenzen. 
+Diese Eigenschaft wird innerhalb eines Nicht-Verteilerberichts verwendet, wenn die Nachricht nicht an ein oder mehrere Mitglieder einer Verteilerliste zugestellt werden konnte. Ihr Zweck besteht in der Beschränkung der Erneutübertragungsversuche auf die einzelnen Mitglieder und nicht auf die Verteilerliste als Ganzes. 
   
-Die Empfängertabelle eines Unzustellbarkeitsberichts enthält Einträge für alle Empfänger, an die die Nachricht nicht übermittelt werden konnte, sowie an die Verteilerlisten, falls vorhanden, zu denen Sie gehören. Der Transportanbieter sollte diese Eigenschaft für jeden Verteilerlisteneintrag auf TRUE festlegen und die **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)), **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) und **PR_SEARCH_KEY** ([ Pidtagsearchkey (](pidtagsearchkey-canonical-property.md)) aus der Verteilerliste nach **PR_ORIGINAL_DISPLAY_NAME** ([pidtagoriginaldisplayname (](pidtagoriginaldisplayname-canonical-property.md)), **PR_ORIGINAL_ENTRYID** ([pidtagoriginalentryid (](pidtagoriginalentryid-canonical-property.md)) und **PR_ORIGINAL_SEARCH_KEY** ([ Pidtagoriginalsearchkey (](pidtagoriginalsearchkey-canonical-property.md))-Eigenschaften für jedes Mitglied dieser Verteilerliste. 
+Die Empfängertabelle eines Unzustellbarberichts enthält Einträge für alle Empfänger, denen die Nachricht nicht zugestellt werden konnte, sowie für die Verteilerlisten, zu denen sie gehören. Der Transportanbieter sollte diese Eigenschaft für jeden Verteilerlisteneintrag auf TRUE festlegen und die **Eigenschaften PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)), **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) und **PR_SEARCH_KEY** ( PidTagSearchKey ) aus der Verteilerliste in **PR_ORIGINAL_DISPLAY_NAME** ([PidTagOriginalDisplayName](pidtagoriginaldisplayname-canonical-property.md)), **PR_ORIGINAL_ENTRYID** ([PidTagOriginalEntryId](pidtagoriginalentryid-canonical-property.md)) und **PR_ORIGINAL_SEARCH_KEY** ([PidTagOriginalSearchKey](pidtagoriginalsearchkey-canonical-property.md)) für jedes Mitglied dieser Verteilerliste kopieren.[](pidtagsearchkey-canonical-property.md) 
   
- **PR_DISCRETE_VALUES** sollte nicht für einen nicht Zustellungs Berichts-Empfängereintrag außer einer Verteilerliste festgelegt werden. 
+ **PR_DISCRETE_VALUES** sollte nicht für einen anderen Empfängereintrag als eine Verteilerliste festgelegt werden. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
-### <a name="header-files"></a>Header Dateien
+### <a name="header-files"></a>Headerdateien
 
-Mapidefs. h
+Mapidefs.h
   
-> Stellt Datentypdefinitionen bereit.
+> Bietet Datentypdefinitionen.
     
-Mapitags. h
+Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,9 +60,9 @@ Mapitags. h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251452
 localization_priority: Normal
 ms.assetid: 4864ebc2-fee6-2415-7c59-e0af8611f8d6
-description: Gibt TRUE zurück, wenn der Wert von cellreference ein beliebiger Fehlertyp ist; Andernfalls wird FALSE zurückgegeben. Die isERROR-Funktion wird in Formeln verwendet, die auf eine andere Zelle verweisen.
+description: Gibt TRUE zurück, wenn der Wert von cellreference ein Beliebiger Fehlertyp ist. Andernfalls wird FALSE zurückgegeben. Die ISERROR-Funktion wird in Formeln verwendet, die auf eine andere Zelle verweisen.
 ms.openlocfilehash: a07b2345858e36dc2e4514d7e4f0f0d653491b50
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33421543"
 ---
 # <a name="iserror-function-visioshapesheet"></a>ISERROR-Funktion (VisioShapeSheet)
 
-Gibt TRUE zurück, wenn der Wert von _cellreference_ ein beliebiger Fehlertyp ist; Andernfalls wird FALSE zurückgegeben. Die isERROR-Funktion wird in Formeln verwendet, die auf eine andere Zelle verweisen. 
+Gibt TRUE zurück, wenn der Wert von  _cellreference_ ein Beliebiger Fehlertyp ist. Andernfalls wird FALSE zurückgegeben. Die ISERROR-Funktion wird in Formeln verwendet, die auf eine andere Zelle verweisen. 
   
 ## <a name="syntax"></a>Syntax
 
-IsERROR (* * *cellreference* * *) 
+ISERROR(** *cellreference* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -34,8 +34,8 @@ IsERROR (* * *cellreference* * *)
 
 |**Cell**|**Formula**|**Zurückgegebener Wert**|
 |:-----|:-----|:-----|
-|Scratch. a1  <br/> |=NV( )  <br/> |#N/A!  <br/> |
-|Scratch. B1  <br/> |= IsERROR (Scratch. a1)  <br/> |TRUE  <br/> |
+|Scratch.A1  <br/> |=NV( )  <br/> |#N/A!  <br/> |
+|Scratch.B1  <br/> |=ISERROR(Scratch.A1)  <br/> |TRUE  <br/> |
    
 Gibt TRUE zurück, da die ISERROR-Funktion den Fehler #N/V! erkennt. Mit der ISERROR-Funktion können Sie alle Fehlertypen außer dem Fehlertyp #N/V! verwenden.
   
@@ -43,8 +43,8 @@ Gibt TRUE zurück, da die ISERROR-Funktion den Fehler #N/V! erkennt. Mit der ISE
 
 |**Cell**|**Formula**|**Zurückgegebener Wert**|
 |:-----|:-----|:-----|
-|Scratch. x1  <br/> |= "Haus"  <br/> |#VALUE!  <br/> |
-|Scratch. B1  <br/> |= IsERROR (Scratch. x1)  <br/> |TRUE  <br/> |
+|Scratch.X1  <br/> |="House"  <br/> |#VALUE!  <br/> |
+|Scratch.B1  <br/> |=ISERROR(Scratch.X1)  <br/> |TRUE  <br/> |
    
 Gibt TRUE zurück, da die ISERROR-Funktion den Fehler #WERT! erkennt. Wenn Sie einen Ausdruck auf Basis des Fehlertyps #WERT! aufbauen möchten, verwenden Sie die Funktion ISERRVALUE.
   

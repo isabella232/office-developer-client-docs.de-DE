@@ -20,11 +20,11 @@ ms.locfileid: "33422817"
 
 Enthält eine Zeile und Zellen für jeden für das Shape definierten Verbindungspunkt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Sie können Verbindungspunkte im Abschnitt **Verbindungspunkte** im ShapeSheet-Fenster oder durch Klicken auf das **Verbindungspunkt** Tool auf der Registerkarte **Start** definieren. 
+Sie können Verbindungspunkte im Abschnitt **Verbindungspunkte** im ShapeSheet-Fenster  definieren oder auf der Registerkarte Start auf das **Verbindungspunkttool** klicken. 
   
-Wenn Ihre Form keinen Abschnitt **Connection Points** hat, können Sie einen Abschnitt **Connection Points** in das ShapeSheet-Fenster einfügen. Klicken Sie mit der rechten Maustaste in das ShapeSheet-Fenster, klicken Sie auf **Abschnitt einfügen**, und klicken Sie dann auf **Verbindungspunkte**. Um Verbindungspunkte zu einem vorhandenen **Connection Points** -Abschnitt hinzuzufügen, klicken Sie mit der rechten Maustaste auf eine Zeile, und klicken Sie im kontextMenü auf **Zeile einfügen** . 
+Wenn Ihr Shape keinen **Abschnitt "Verbindungspunkte"** enthält, können Sie einen Abschnitt **"Verbindungspunkte"** in das ShapeSheet-Fenster einfügen. Klicken Sie mit der rechten Maustaste im ShapeSheet-Fenster auf Abschnitt **einfügen,** und klicken Sie dann auf **Verbindungspunkte**. Klicken Sie mit der  rechten Maustaste auf eine Zeile,  und klicken Sie im Kontextmenü auf Zeile einfügen, um einem vorhandenen Abschnitt Verbindungspunkte hinzuzufügen. 
   
 Sie können den Zeilentyp eines Verbindungspunkts in diesem Abschnitt ändern, um zusätzliche Zellen anzuzeigen, die Sie für Berechnungsentwürfe verwenden können. Klicken Sie dazu mit der rechten Maustaste auf die Zeile, und klicken Sie dann im Kontextmenü auf **Zeilentyp ändern**. 
   

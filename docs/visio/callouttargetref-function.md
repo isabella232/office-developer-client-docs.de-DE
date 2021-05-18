@@ -25,19 +25,19 @@ Hinzugefügte Version: Visio 2010
   
 ## <a name="syntax"></a>Syntax
 
-CALLOUTTARGETREF ()!
+CALLOUTTARGETREF()!
   
 ### <a name="return-value"></a>Rückgabewert
 
 ShapeSheet-Referenz
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn es sich bei dem Shape nicht um ein Beschriftungs-Shape handelt oder wenn es nicht mit einem Ziel-Shape verknüpft ist, gibt CALLOUTTARGETREF #REF zurück.
+Wenn es sich bei dem Shape nicht um ein Callout-Shape handelt oder wenn es keinem Ziel-Shape zugeordnet ist, gibt CALLOUTTARGETREF #REF.
   
 ## <a name="example"></a>Beispiel
 
-CALLOUTTARGETREF ()! Höhe 
+CALLOUTTARGETREF()! Height 
   
 Gibt den Wert in der Zelle Height des Shapes zurück, das mit der Beschriftung verknüpft ist. 
   

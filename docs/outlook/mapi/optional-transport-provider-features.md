@@ -1,5 +1,5 @@
 ---
-title: Optionale Transport Anbieter Features
+title: Optionale Features des Transportanbieters
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33404302"
 ---
-# <a name="optional-transport-provider-features"></a>Optionale Transport Anbieter Features
+# <a name="optional-transport-provider-features"></a>Optionale Features des Transportanbieters
 
   
   
@@ -23,16 +23,16 @@ ms.locfileid: "33404302"
   
 Zu den optionalen Features, die Transportanbieter implementieren können, gehören:
   
-- Registrieren von Nachrichten-und Empfängeroptionen für den Transportanbieter.
+- Registrieren von Nachrichten- und Empfängeroptionen, die für den Transportanbieter spezifisch sind.
     
 - Verwalten eines Profils, falls erforderlich, zum Speichern von Konfigurationsinformationen und Anmeldeinformationen für das Messagingsystem.
     
-- DurchFühren einer Überprüfung der vom Messagingsystem erforderlichen Anmeldeinformationen.
+- Durchführen einer Überprüfung der anmeldeinformationen, die vom Messagingsystem erforderlich sind.
     
-- Unterstützende Ereignisbenachrichtigung für interessierte Clientanwendungen mit der [IMAPISupport:: notify](imapisupport-notify.md) -Methode. 
+- Unterstützen von Ereignisbenachrichtigungen für interessierte Clientanwendungen mit der [IMAPISupport::Notify-Methode.](imapisupport-notify.md) 
     
-- Anzeigen von Konfigurationseigenschaften Blättern und Assistenten Dialogfeldern, um Benutzern das Konfigurieren der Einstellungen des Transportanbieters zu ermöglichen.
+- Anzeigen von Konfigurationseigenschaftsblättern und Assistentendialogfeldern, damit Benutzer die Einstellungen des Transportanbieters konfigurieren können.
     
-- Bereitstellen von Nachrichtenübermittlungsberichten für Clientanwendungen.
+- Bereitstellen von Nachrichtenzustellungsberichten an Clientanwendungen.
     
 

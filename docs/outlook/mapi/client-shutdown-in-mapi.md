@@ -19,20 +19,20 @@ ms.locfileid: "33405135"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beginnend in Microsoft Outlook 2010 und jetzt einschließlich Microsoft Outlook 2013, können MAPI-Clients wie zuvor heruntergefahren werden, oder Sie können das schnelle Herunterfahren verwenden. Damit das schnelle Herunterfahren erfolgreich ausgeführt werden kann, müssen der MAPI-Client, der MAPI-Anbieter und der Administrator des Clientcomputers das schnelle Herunterfahren unterstützen. 
+Ab Microsoft Outlook 2010 und jetzt einschließlich Microsoft Outlook 2013 können MAPI-Clients auf die gleiche Weise wie zuvor heruntergefahren werden, oder sie können das schnelle Herunterfahren verwenden. Damit das schnelle Herunterfahren erfolgreich ausgeführt werden kann, müssen der MAPI-Client, der MAPI-Anbieter und der Administrator des Clientcomputers das schnelle Herunterfahren unterstützen. 
   
-In den Themen in diesem Abschnitt wird die MAPI-Unterstützung für einen Client für das schnelle Herunterfahren beschrieben.
+In den Themen in diesem Abschnitt wird die MAPI-Unterstützung für einen Client zum schnellen Herunterfahren beschrieben.
   
 [Übersicht über das schnelle Herunterfahren](fast-shutdown-overview.md)
   
-> In diesem Thema wird der grundlegende Mechanismus für schnelles Herunterfahren erläutert.
+> In diesem Thema wird der grundlegende Mechanismus des schnellen Herunterfahrens beschrieben.
     
-[Benutzeroptionen für das schnelle Herunterfahren](fast-shutdown-user-options.md)
+[Benutzeroptionen für schnelles Herunterfahren](fast-shutdown-user-options.md)
   
-> In diesem Thema werden die verfügbaren Optionen für Administratoren zum schnellen Herunterfahren auf Benutzerebene für die MAPI-Clients des Benutzers beschrieben.
+> In diesem Thema werden die Verfügbaren Optionen für Administratoren zum schnellen Herunterfahren auf Benutzerebene für die MAPI-Clients des Benutzers beschrieben.
     
 [Bewährte Methoden für das schnelle Herunterfahren](best-practices-for-fast-shutdown.md)
   
-> In diesem Thema werden bewährte Methoden für die Verwendung der Schnittstellen für schnelles Herunterfahren empfohlen, um Datenverluste beim Herunterfahren von MAPI-Clients zu verhindern.
+> In diesem Thema werden bewährte Methoden für die Verwendung der Schnittstellen zum schnellen Herunterfahren empfohlen, um Datenverluste während des Herunterfahrens eines MAPI-Clients zu verhindern.
     
 

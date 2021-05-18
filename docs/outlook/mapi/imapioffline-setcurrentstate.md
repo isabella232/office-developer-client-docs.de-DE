@@ -25,7 +25,7 @@ ms.locfileid: "33421739"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Legt den aktuellen Status eines Offline Objekts auf Online oder offline fest.
+Legt den aktuellen Status eines Offlineobjekts auf Online oder Offline fest.
   
 ```cpp
 HRESULT SetCurrentState( 
@@ -40,23 +40,23 @@ HRESULT SetCurrentState(
 
  _ulFlags_
   
-> in Ändert das Verhalten dieses Aufrufs. Die folgenden Werte werden unterstützt:
+> [in] Ändert das Verhalten dieses Aufrufs. Die folgenden Werte werden unterstützt:
     
 MAPIOFFLINE_FLAG_BLOCK
   
-> Wenn Sie _ulFlags_ auf diesen Wert festlegen, wird der **SetCurrentState** -Aufruf blockiert, bis die Statusänderung abgeschlossen ist. Standardmäßig erfolgt der Übergang asynchron. Wenn der Übergang asynchron erfolgt, werden alle **SetCurrentState** -Aufrufe **E_PENDING** zurückgegeben, bis die Änderung abgeschlossen ist. 
+> Durch  _Festlegen von ulFlags_ auf diesen Wert wird der **SetCurrentState-Aufruf** blockiert, bis die Statusänderung abgeschlossen ist. Standardmäßig erfolgt der Übergang asynchron. Wenn der Übergang asynchron erfolgt, werden alle **SetCurrentState-Aufrufe** **E_PENDING,** bis die Änderung abgeschlossen ist. 
     
 MAPIOFFLINE_FLAG_DEFAULT
   
-> Legt den aktuellen Status ohne Blockierung fest.
+> Legt den aktuellen Status fest, ohne zu blockieren.
     
  _ulMask_
   
-> in Der Teil des zu ändernden Status. Der einzige unterstützte Wert ist MAPIOFFLINE_STATE_OFFLINE_MASK.
+> [in] Der Teil des zu ändernde Zustands. Der einzige unterstützte Wert ist MAPIOFFLINE_STATE_OFFLINE_MASK.
     
  _ulState_
   
-> in Der Zustand, in den gewechselt werden soll. Es muss einer der folgenden Werte sein:
+> [in] Der Zustand, in den geändert werden soll. Dabei muss es sich um einen der beiden folgenden Werte handelt:
     
 MAPIOFFLINE_STATE_ONLINE
   
@@ -66,19 +66,19 @@ MAPIOFFLINE_STATE_OFFLINE
   
 > 
     
- _Beibehalten_
+ _pReserved_
   
-> Dieser Parameter ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
+> Dieser Parameter ist für die Outlook reserviert und wird nicht unterstützt. 
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK
   
-> Der Status des Offline Objekts wurde erfolgreich geändert.
+> Der Status des Offlineobjekts wurde erfolgreich geändert.
     
 E_PENDING
   
-> Dies gibt an, dass der Status des Offline Objekts asynchron geändert wird. Dies tritt auf, wenn _ulFlags_ in einem früheren **SetCurrentState** -Aufruf auf MAPIOFFLINE_FLAG_BLOCK festgelegt ist und jeder nachfolgende **SetCurrentState** -Aufruf diesen Wert zurückgibt, bis die asynchrone Statusänderung abgeschlossen ist. 
+> Dies bedeutet, dass sich der Status des Offlineobjekts asynchron ändert. Dies tritt auf, wenn  _ulFlags_ in einem früheren **SetCurrentState-Aufruf** auf MAPIOFFLINE_FLAG_BLOCK festgelegt ist und jeder nachfolgende **SetCurrentState-Aufruf** diesen Wert zurück gibt, bis die asynchrone Zustandsänderung abgeschlossen ist. 
     
 ## <a name="see-also"></a>Siehe auch
 

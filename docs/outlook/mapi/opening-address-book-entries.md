@@ -19,33 +19,33 @@ ms.locfileid: "33422159"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Wenn ein Client oder Anbieter angefordert hat, dass eines ihrer Objekte geöffnet werden soll, ruft MAPI die [IABLogon:: OpenEntry](iablogon-openentry.md) -Methode Ihres Anbieters auf. MAPI bestimmt, dass die Eintrags-ID, die das Zielobjekt darstellt, zu Ihrem Anbieter gehört, indem Sie den [MAPIUID](mapiuid.md) -Teil der Eintrags-ID untersuchen und mit dem **MAPIUID** vergleichen, den Ihr Anbieter im Aufruf **von IMAPISupport:: SetProviderUID**. Dann ruft MAPI Ihre **OpenEntry** -Methode auf. Der Anbieter muss Antworten, indem er das entsprechende Objekt (einen Container, eine Verteilerliste oder einen Messagingbenutzer) abruft. 
+Wenn ein Client oder Anbieter das Öffnen eines Ihrer Objekte angefordert hat, ruft MAPI die [IABLogon::OpenEntry-Methode](iablogon-openentry.md) Ihres Anbieters auf. MAPI bestimmt, dass der Eintragsbezeichner, der das Zielobjekt darstellt, zu Ihrem Anbieter gehört, indem sie den [MAPIUID-Teil](mapiuid.md) der Eintrags-ID untersucht und mit der **MAPIUID** abgleicht, die Ihr Anbieter im Aufruf von **IMAPISupport::SetProviderUID** registriert hat. MAPI ruft dann Ihre **OpenEntry-Methode** auf. Ihr Anbieter muss antworten, indem er das entsprechende Objekt abruft – einen Container, eine Verteilerliste oder einen Messagingbenutzer. 
   
-Eine NULL-Eintrags-ID gibt eine Anforderung zum Öffnen des Stammcontainers des Adressbuch Anbieters an. Clients öffnen den Stammcontainer für den Zugriff auf die Hierarchietabelle und die zugehörigen Empfänger. Adressbuchanbieter, die nur Vorlagen zum Erstellen von einmaligen Empfängern bereitstellen, **** unterstützen den OpenEntry-Aufruf für den Stammcontainer nicht. 
+Ein NULL-Eintragsbezeichner gibt eine Anforderung zum Öffnen des Stammcontainers des Adressbuchanbieters an. Clients öffnen den Stammcontainer, um auf seine Hierarchietabelle und ihre Empfänger zu zugreifen. Adressbuchanbieter, die nur Vorlagen zum Erstellen von Einmalempfängern angeben, unterstützen den **OpenEntry-Aufruf** für den Stammcontainer nicht. 
   
-### <a name="to-implement-iablogonopenentry"></a>So implementieren Sie IABLogon:: openEntry
+### <a name="to-implement-iablogonopenentry"></a>So implementieren Sie IABLogon::OpenEntry
   
-1. Stellen Sie sicher, dass die Eintrags-ID ein gültiger Bezeichner ist, den Ihr Anbieter unterstützt. Wenn es sich nicht um eine gültige Eintrags-ID handelt, geben Sie MAPI_E_INVALID_ENTRYID. 
+1. Überprüfen Sie, ob es sich bei der Eintrags-ID um einen gültigen Bezeichner handelt, den Ihr Anbieter unterstützt. Wenn es sich nicht um einen gültigen Eintragsbezeichner handelt, geben Sie MAPI_E_INVALID_ENTRYID. 
     
-2. Überprüfen Sie das Kennzeichen, das mit dem _ulFlags_ -Parameter übergeben wird. Wenn MAPI in MAPI_MODIFY übergeben hat und Ihr Anbieter nicht zulässt, dass seine Objekte geändert werden können, schlagen Sie fehl, und geben Sie den MAPI_E_ACCESS_DENIED-Fehlerwert zurück. 
+2. Überprüfen Sie das Flag, das mit dem  _ulFlags-Parameter übergeben_ wird. Wenn MAPI die MAPI_MODIFY übergeben hat und Ihr Anbieter die Änderung der Objekte nicht zusent lässt, führen Sie einen Fehler aus, und geben Sie den MAPI_E_ACCESS_DENIED zurück. 
     
-3. Überprüfen Sie, ob die im _lpInterface_ -Parameter angeforderte Schnittstelle für den Objekttyp gültig ist, den Ihr Anbieter öffnen muss. Wenn ein ungültiger Parameter übergeben wurde, schlagen Sie fehl, und geben Sie den MAPI_E_INTERFACE_NOT_SUPPORTED-Fehlerwert zurück. 
+3. Überprüfen Sie, ob die im  _lpInterface-Parameter_ angeforderte Schnittstelle für den Objekttyp gültig ist, den Ihr Anbieter öffnen soll. Wenn ein ungültiger Parameter übergeben wurde, führen Sie einen Fehler aus, und geben Sie den MAPI_E_INTERFACE_NOT_SUPPORTED zurück. 
     
-4. Wenn der _cbEntryID_ -Parameter NULL ist, ist dies eine Anforderung zum Öffnen des Stammcontainers Ihres Anbieters. Erstellen Sie den Stammcontainer, und geben Sie einen Zeiger auf die Implementierung der **IABContainer** -Schnittstelle zurück. 
+4. Wenn der  _cbEntryID-Parameter_ null ist, ist dies eine Anforderung zum Öffnen des Stammcontainers Ihres Anbieters. Erstellen Sie den Stammcontainer, und geben Sie einen Zeiger auf die **IABContainer-Schnittstellenimplementierung** zurück. 
     
-5. Wenn Ihr Anbieter mehrere Anmeldeobjekte implementiert, die jeweils über eine eigene registrierte **MAPIUID**verfügen, ordnen Sie die in der Eintrags-ID enthaltenen **MAPIUID** mit dem entsprechenden Logon-Objekt zu. 
+5. Wenn Ihr Anbieter mehrere Anmeldeobjekte implementiert, die jeweils über eine eigene registrierte **MAPIUID** verfügen, ordnen Sie die im Eintragsbezeichner enthaltene **MAPIUID** dem entsprechenden Anmeldeobjekt zu. 
     
-6. Bestimmen Sie, welcher Objekttyp der Eintragsbezeichner darstellt: ein Messagingbenutzer, eine Verteilerliste oder ein Container, die zu Ihrem Anbieter oder einem einmaligen Messagingbenutzer oder einer Verteilerliste gehören, damit der entsprechende Wert für die _lpulObjectType_ festgelegt werden kann. Parameter. 
+6. Bestimmen Sie, welcher Objekttyp der Eintragsbezeichner darstellt: ein Messagingbenutzer, eine Verteilerliste oder ein Container, der zu Ihrem Anbieter gehört, oder einen one-off-Messagingbenutzer oder eine Verteilerliste, damit der entsprechende Wert für den  _lpulObjectType-Parameter_ festgelegt werden kann. 
     
-7. Erstellen Sie das Objekt des entsprechenden Typs, und legen Sie die folgenden grundlegenden Eigenschaften fest:
+7. Erstellen Sie das Objekt des entsprechenden Typs, und legen Sie die folgenden grundlegenden Eigenschaften ein:
     
     - **PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))
     - **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))
-    - **PR_OBJECT_TYPE** ([Pidtagobjecttype (](pidtagobjecttype-canonical-property.md))
-    - **PR_ADDRTYPE** ([Pidtagaddresstype (](pidtagaddresstype-canonical-property.md))
+    - **PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md))
+    - **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))
     
-8. Berechnen Sie **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md)) und **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) aus Informationen in der Eintrags-ID.
+8. Berechnen **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md)) und **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) aus Informationen in der Eintrags-ID.
     
-9. Zurückgeben eines Zeigers auf die Schnittstellenimplementierung für das Objekt. 
+9. Gibt einen Zeiger auf die Schnittstellenimplementierung für das Objekt zurück. 
     
 

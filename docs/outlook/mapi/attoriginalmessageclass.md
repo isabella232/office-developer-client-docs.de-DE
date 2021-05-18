@@ -19,6 +19,6 @@ ms.locfileid: "33404232"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine Nachrichtenklasse wird als Zeichenfolge gespeichert. Die codierte Zeichenfolge enthält in der Regel den MAPI-angegebenen Namen der Nachrichtenklasse.
+Eine Nachrichtenklasse wird als Zeichenfolge gespeichert. Die codierte Zeichenfolge enthält in der Regel den durch MAPI angegebenen Namen der Nachrichtenklasse.
   
 

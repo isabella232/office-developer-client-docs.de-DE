@@ -1,5 +1,5 @@
 ---
-title: Urheberrechtshinweis zur Outlook-Entwicklerreferenz
+title: Outlook entwicklerreferenz copyright notice
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3d692894-a0c1-b9dc-1196-07ecaa72afee
-description: Dieses Dokument wird in der vorliegenden Version zur Verfügung gestellt. Die in diesem Dokument enthaltenen Informationen und Ansichten, einschließlich URLs und anderer Verweise auf Internet Websites, können ohne vorherige Ankündigung geändert werden. Sie tragen das volle Risiko der Verwendung.
+description: Dieses Dokument wird in der vorliegenden Version zur Verfügung gestellt. Informationen und Ansichten in diesem Dokument, einschließlich URL und andere Internetwebsiteverweise, können sich ohne vorherige Ankündigung ändern. Das Risiko der Produktnutzung liegt allein beim Nutzer.
 ms.openlocfilehash: e9b6b00609d4a3dda2a389957614ac93f9f7bacd
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32359864"
 ---
-# <a name="outlook-developer-reference-copyright-notice"></a>Urheberrechtshinweis zur Outlook-Entwicklerreferenz
+# <a name="outlook-developer-reference-copyright-notice"></a>Outlook entwicklerreferenz copyright notice
 
 Dieses Dokument wird in der vorliegenden Version zur Verfügung gestellt. Die Informationen und Ansichten in diesem Dokument, einschließlich URLs und anderer Verweise auf Internet-Websites, können sich ohne Ankündigung ändern. Die Verwendung erfolgt auf eigenes Risiko. 
   

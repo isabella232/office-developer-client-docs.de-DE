@@ -20,8 +20,8 @@ ms.locfileid: "33404162"
 
 Enthält Positionsdaten für den Textblock eines Shapes.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie diesen Abschnitt hinzufügen möchten, verwenden Sie das Dialogfeld **Abschnitt einfügen** (klicken Sie dazu mit der rechten Maustaste in das ShapeSheet-Fenster, und klicken Sie auf **Abschnitt einfügen**). Das Festlegen von Werten im **Text Transform** -Abschnitt ist vergleichbar mit dem Arbeiten mit dem TextBlock **** mithilfe des TextBlock-Tools (die Gruppe **Tools** auf der Registerkarte **Startseite** ). 
+Wenn Sie diesen Abschnitt hinzufügen möchten, verwenden Sie das Dialogfeld **Abschnitt einfügen** (klicken Sie dazu mit der rechten Maustaste in das ShapeSheet-Fenster, und klicken Sie auf **Abschnitt einfügen**). Das Festlegen von Werten im Abschnitt **Texttransformation** ist vergleichbar mit dem  Arbeiten mit dem Textblock mithilfe des **Textblock-Tools** (der Gruppe Extras auf der Registerkarte **Start).** 
   
 

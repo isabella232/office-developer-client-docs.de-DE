@@ -23,7 +23,7 @@ ms.locfileid: "33421648"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die folgenden alphabetischen Einträge beschreiben MAPI-Strukturen. Ausführlichere Informationen finden Sie auch unter Querverweise zu anderen Publikationen oder zu anderen Themen in dieser Dokumentation.
+Die folgenden alphabetischen Einträge beschreiben MAPI-Strukturen. Ausführlichere Informationen finden Sie auch bei Querverweisen auf andere Veröffentlichungen oder andere Themen in dieser Dokumentation.
   
 |||
 |:-----|:-----|

@@ -32,7 +32,7 @@ HRESULT IOlkEnum::Skip(
 
 _cSkip_
   
-> in Die Anzahl der zu überspringenden Konten.
+> [in] Die Anzahl der konten, die übersprungen werden sollen.
     
 ## <a name="return-values"></a>Rückgabewerte
 

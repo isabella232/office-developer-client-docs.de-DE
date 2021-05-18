@@ -29,9 +29,9 @@ Ruft alle Zeilen einer Tabelle ab.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 HRESULT HrQueryAllRows(
@@ -48,27 +48,27 @@ HRESULT HrQueryAllRows(
 
  _ptable_
   
-> in Zeiger auf die MAPI-Tabelle, aus der die Zeilen abgerufen werden. 
+> [in] Zeiger auf die MAPI-Tabelle, aus der Zeilen abgerufen werden. 
     
  _ptaga_
   
-> in Zeiger auf eine [SPropTagArray](sproptagarray.md) -Struktur, die ein Array von Property-Tags enthält, die Tabellenspalten anzeigen. Diese Tags werden verwendet, um die einzelnen Spalten auszuwählen, die abgerufen werden sollen. Wenn der _ptaga_ -Parameter NULL ist, ruft **HrQueryAllRows** den gesamten Spaltensatz der aktuellen Tabellenansicht ab, die im _ptable_ -Parameter übergeben wird. 
+> [in] Zeiger auf eine [SPropTagArray-Struktur,](sproptagarray.md) die ein Array von Eigenschaftstags enthält, die Tabellenspalten angeben. Diese Tags werden verwendet, um die spezifischen Spalten auszuwählen, die abgerufen werden sollen. Wenn der  _ptaga-Parameter_ NULL ist, **ruft HrQueryAllRows** den gesamten Spaltensatz der aktuellen Tabellenansicht ab, die im  _ptable-Parameter übergeben_ wird. 
     
- _Pres_
+ _pres_
   
-> in Zeiger auf eine [SRestriction](srestriction.md) -Struktur, die Abruf Einschränkungen enthält. Wenn der _Pres_ -Parameter NULL ist, macht **HrQueryAllRows** keine Einschränkungen. 
+> [in] Zeiger auf eine [SRestriction-Struktur,](srestriction.md) die Abrufeinschränkungen enthält. Wenn der  _parameter pres_ NULL ist, **macht HrQueryAllRows** keine Einschränkungen. 
     
- _PSOs_
+ _psos_
   
-> in Zeiger auf eine [SSortOrderSet](ssortorderset.md) -Struktur, die die Sortierreihenfolge der Spalten angibt, die abgerufen werden sollen. Wenn der __ Parameter "Parameters" den Wert NULL hat, wird die Standardsortierreihenfolge für die Tabelle verwendet. 
+> [in] Zeiger auf eine [SSortOrderSet-Struktur,](ssortorderset.md) die die Sortierreihenfolge der abzurufenden Spalten identifiziert. Wenn der  _psos-Parameter_ NULL ist, wird die Standardsortierungsreihenfolge für die Tabelle verwendet. 
     
- _crowsMax_
+ _krähenMax_
   
-> in Maximale Anzahl von Zeilen, die abgerufen werden sollen. Wenn der Wert des _crowsMax_ -Parameters 0 (null) ist, wird kein Grenzwert für die Anzahl der abgerufenen Zeilen festgelegt. 
+> [in] Maximale Anzahl der abzurufende Zeilen. Wenn der Wert des  _Parameters "krähenMax"_ null ist, wird kein Grenzwert für die Anzahl der abgerufenen Zeilen festgelegt. 
     
  _pprows_
   
-> Out Zeiger auf einen Zeiger auf die zurückgegebene [SRowSet](srowset.md) -Struktur, die ein Array von Zeigern auf die abgerufenen Tabellenzeilen enthält. 
+> [out] Zeiger auf einen Zeiger auf die zurückgegebene [SRowSet-Struktur,](srowset.md) die ein Array von Zeigern auf die abgerufenen Tabellenzeilen enthält. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -78,14 +78,14 @@ S_OK
     
 MAPI_E_TABLE_TOO_BIG 
   
-> Die Anzahl der Zeilen in der Tabelle ist größer als die Anzahl, die für den _crowsMax_ -Parameter übergeben wurde. 
+> Die Anzahl der Zeilen in der Tabelle ist größer als die für den  _Parameter "krähenMax" übergebene_ Anzahl. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Eine Clientanwendung oder ein Dienstanbieter hat keine Kontrolle über die Anzahl der Zeilen, die **HrQueryAllRows** abruft, außer durch eine Einschränkung, auf die durch den _Pres_ -Parameter verwiesen wird. Der Parameter _crowsMax_ schränkt den Abruf nicht auf eine bestimmte Anzahl von Tabellenzeilen ein, sondern definiert eine maximale Menge an Arbeitsspeicher, die für alle abgerufenen Zeilen verfügbar ist. Der einzige Schutz vor massivem Speicherüberlauf ist das durch Festlegen von _crowsMax_bereitgestellte Notlösung-Feature. Der Fehler Return MAPI_E_TABLE_TOO_BIG gibt an, dass die Tabelle zu viele Zeilen enthält, die alle gleichzeitig im Arbeitsspeicher aufbewahrt werden sollen. 
+Eine Clientanwendung oder ein Dienstanbieter hat keine Kontrolle über die Anzahl der Zeilen, die **HrQueryAllRows** abzurufen versucht, es sei denn, es wird eine Einschränkung festgelegt, auf die der  _parameter pres_ verweist. Der  _parameter "krähesMax"_ begrenzt den Abruf nicht auf eine bestimmte Anzahl von Tabellenzeilen, sondern definiert eine maximale Menge an Arbeitsspeicher, die für alle abgerufenen Zeilen verfügbar ist. Der einzige Schutz vor massivem Speicherüberlauf ist das Stopgap-Feature, das durch Festlegen von _"krähenMax" bereitgestellt wird._ Der Fehlerrücklauf MAPI_E_TABLE_TOO_BIG bedeutet, dass die Tabelle zu viele Zeilen enthält, um alle gleichzeitig im Arbeitsspeicher gespeichert zu werden. 
   
-Tabellen, die normalerweise klein sind, wie beispielsweise eine Nachrichtenspeichertabelle oder eine Anbieter Tabelle, können mit **HrQueryAllRows**in der Regel sicher abgerufen werden. Tabellen, die sehr umfangreich sind, wie beispielsweise eine Inhaltstabelle oder sogar eine Empfängertabelle, sollten mithilfe der [IMAPITable:: QueryRows](imapitable-queryrows.md) -Methode in Unterabschnitten durchlaufen werden. 
+Tabellen, die in der Regel klein sind, z. B. eine Nachrichtenspeichertabelle oder eine Anbietertabelle, können in der Regel mit **HrQueryAllRows** sicher abgerufen werden. Tabellen, bei der das Risiko besteht, dass sie sehr groß sind, z. B. eine Inhaltstabelle oder sogar eine Empfängertabelle, sollten mithilfe der [IMAPITable::QueryRows-Methode](imapitable-queryrows.md) in Unterabschnitten durchlaufen werden. 
   
-Wenn Tabelleneigenschaften nicht definiert sind, wenn **HrQueryAllRows** aufgerufen wird, werden Sie mit dem Eigenschaftentyp PT_NULL und dem EIGENSCHAFTENbezeichner PROP_ID_NULL 
+Wenn Tabelleneigenschaften nicht definiert sind, wenn **HrQueryAllRows** aufgerufen wird, werden sie mit dem Eigenschaftentyp PT_NULL und eigenschaftsbezeichner PROP_ID_NULL 
   
 

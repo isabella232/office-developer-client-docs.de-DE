@@ -37,7 +37,7 @@ HRESULT DeleteProvider(
 
  _lpUID_
   
-> [in, out] Ein Zeiger auf die [MAPIUID](mapiuid.md) -Struktur, die den eindeutigen Bezeichner enthält, der den zu löschenden Anbieter darstellt. 
+> [in, out] Ein Zeiger auf die [MAPIUID-Struktur,](mapiuid.md) die den eindeutigen Bezeichner enthält, der den zu löschenden Anbieter darstellt. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -47,21 +47,21 @@ S_OK
     
 MAPI_E_NOT_FOUND 
   
-> Die **MAPIUID** , auf die durch den _lpUID_ -Parameter verwiesen wurde, wurde nicht erkannt. 
+> Die **MAPIUID,** auf die der  _lpUID-Parameter_ verweist, wurde nicht erkannt. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Mit der **IProviderAdmin::D eleteprovider** -Methode wird ein Dienstanbieter aus dem Nachrichtendienst gelöscht. **DeleteProvider** bestimmt den zu löschenden Dienstanbieter, indem er der **MAPIUID** -Struktur entspricht, auf die durch _lpUID_ mit den von den aktiven Dienstanbietern registrierten Bezeichnern verwiesen wird. 
+Die **IProviderAdmin::D eleteProvider-Methode** löscht einen Dienstanbieter aus dem Nachrichtendienst. **DeleteProvider** bestimmt den zu löschenden Dienstanbieter, indem die **MAPIUID-Struktur,** auf die  _von lpUID_ verwiesen wird, mit dem Satz von Bezeichnern, die von den aktiven Dienstanbietern registriert wurden, übereinstimmen. 
   
-Bei den meisten Nachrichtendiensten können Anbieter nicht gelöscht werden, während das Profil verwendet wird. Wenn der zu löschende Anbieter verwendet wird, markiert **DeleteProvider** ihn zum Löschen, statt ihn sofort zu entfernen und S_OK zurückgeben. Wenn der Anbieter nicht mehr verwendet wird, wird er gelöscht. 
+Die meisten Nachrichtendienste lassen das Löschen von Anbietern während der Verwendung des Profils nicht zu. Wenn der zu löschende Anbieter verwendet wird, markiert **DeleteProvider** ihn zum Löschen, anstatt ihn sofort zu entfernen, und gibt S_OK. Wenn der Anbieter nicht mehr verwendet wird, wird er gelöscht. 
   
- **DeleteProvider** Ruft die Einstiegspunktfunktion des Nachrichtendiensts auf, bevor der Anbieter aus dem Dienst entfernt wird. Der Parameter _ulContext_ ist auf MSG_SERVICE_PROVIDER_DELETE festgelegt. Die Nachrichtendienst-Einstiegspunktfunktion führt die folgenden Aufgaben aus: 
+ **DeleteProvider** ruft die Einstiegspunktfunktion des Nachrichtendiensts auf, bevor der Anbieter aus dem Dienst entfernt wird. Der  _ulContext-Parameter_ ist auf MSG_SERVICE_PROVIDER_DELETE. Die Einstiegspunktfunktion des Nachrichtendiensts führt die folgenden Aufgaben aus: 
   
 - Löscht den Dienstanbieter.
     
-- Löscht den Profil Abschnitt des Dienstanbieters.
+- Löscht den Profilabschnitt des Dienstanbieters.
     
-Die Nachrichtendienst-Einstiegspunktfunktion wird nicht erneut aufgerufen, nachdem der Anbieter gelöscht wurde.
+Die Einstiegspunktfunktion des Nachrichtendiensts wird nicht erneut aufgerufen, nachdem der Anbieter gelöscht wurde.
   
 ## <a name="see-also"></a>Siehe auch
 

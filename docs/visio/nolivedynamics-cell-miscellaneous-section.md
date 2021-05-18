@@ -25,21 +25,21 @@ Bestimmt, ob ein Shape auf dynamische Art und Weise größenmäßig angepasst od
 | TRUE  <br/> | Shape beim Bearbeiten nicht dynamisch aktualisieren.  <br/> |
 | FALSE  <br/> | Shape beim Bearbeiten dynamisch aktualisieren.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Während Sie ein zweidimensionales Shape (2D-Shape) bei deaktivierter Dynamik größenmäßig ändern oder drehen, wird ein Auswahlfeld angezeigt. Wenn das Shape eindimensional (1D-Shape) ist, hängt das visuelle Feedback vom Wert in der Zelle DynFeedback ab.
   
-Wenn Sie einen Verweis auf die Zelle Zelle NoLiveDynamics aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle NoLiveDynamics anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Zelle NoLiveDynamics  <br/> |
+| Zellenname:  <br/> | NoLiveDynamics  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle NoLiveDynamics aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Um einen Verweis auf die Zelle NoLiveDynamics nach Index aus einem Programm zu erhalten, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowMisc** <br/> |
 | Zeilenindex:  <br/> |**visNoLiveDynamics** <br/> |
    

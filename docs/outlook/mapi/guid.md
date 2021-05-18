@@ -29,7 +29,7 @@ Beschreibt eine GUID (Globally Unique Identifier).
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiguid. h  <br/> |
+|Headerdatei  <br/> |Mapiguid.h  <br/> |
    
 ```cpp
 typedef struct _GUID
@@ -42,39 +42,39 @@ typedef struct _GUID
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **Data1**
   
-> Ein Datenwert mit langer Ganzzahl ohne Vorzeichen.
+> Ein nicht signierter ganzzahliger Datenwert für lange Zahlen.
     
  **Data2**
   
-> Ein unsigned Short Integer-Datenwert.
+> Ein nicht signierter ganzzahliger Datenwert ohne Vorzeichen.
     
  **Data3**
   
-> Ein unsigned Short Integer-Datenwert.
+> Ein nicht signierter ganzzahliger Datenwert ohne Vorzeichen.
     
  **Data4**
   
-> Ein Array mit nicht signierten Zeichen.
+> Ein Array von nicht signierten Zeichen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
- **GUID** -Strukturen werden in MAPI wie folgt verwendet: 
+ **GUID-Strukturen** werden in MAPI wie folgt verwendet: 
   
-- In den [MAPIUID](mapiuid.md) -Strukturen, die Dienstanbieter eindeutig identifizieren. 
+- In den [MAPIUID-Strukturen,](mapiuid.md) die Dienstanbieter eindeutig identifizieren. 
     
 - Für Schnittstellenbezeichner.
     
-- In den Eigenschaftensatz Namen benannter Eigenschaften. 
+- In der Eigenschaftensatznamen benannter Eigenschaften. 
     
-Nachrichtenspeicher-und Adressbuchanbieter generieren eine **GUID** -Struktur, die in Ihrer **MAPIUID** -Struktur verwendet werden soll. Durch das Übergeben des resultierenden **MAPIUID** an [IMAPISupport:: SetProviderUID](imapisupport-setprovideruid.md)informieren diese Dienstanbieter MAPI über Ihren eindeutigen Bezeichner.
+Nachrichtenspeicher- und Adressbuchanbieter generieren eine **GUID-Struktur,** die in ihrer **MAPIUID-Struktur verwendet werden** soll. Durch Übergeben der resultierenden **MAPIUID** an [IMAPISupport::SetProviderUID](imapisupport-setprovideruid.md)informieren diese Dienstanbieter MAPI über ihren eindeutigen Bezeichner.
   
-Außerdem werden Sie bei der Implementierung von Microsoft Remote Procedure Call (RPC) und der Object Description Language (ODL) verwendet. Weitere Informationen zu diesen Zwecken finden Sie im *Microsoft RPC Programmer es Guide and Reference*, *OLE Programmer es Reference* und *Inside OLE*, *Second Edition* . 
+Außerdem werden sie in der Implementierung von Microsoft Remote Procedure Call (RPC) und der Object Description Language (ODL) verwendet. Weitere Informationen zu diesen Verwendungen finden Sie im  *Microsoft RPC Programmer's Guide and Reference*, OLE *Programmer's Reference*  und Inside  *OLE*, *Second Edition*  . 
   
-Die **GUID** -Struktur ist in der *Win32-Programmierreferenz* definiert. Bestimmte Werte für **GUID** -Strukturen, die in MAPI verwendet werden, sind in der MAPI-Headerdatei Mapiguid. h definiert. 
+Die **GUID-Struktur** ist in der *Win32-Programmierreferenz definiert.* Spezifische Werte für **GUID-Strukturen,** die in MAPI verwendet werden, werden in der MAPI-Headerdatei Mapiguid.h definiert. 
   
 ## <a name="see-also"></a>Siehe auch
 

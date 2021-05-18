@@ -21,18 +21,18 @@ ms.locfileid: "33405436"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Jeder Messagingbenutzer ist einem Adresstyp zugeordnet, einer Zeichenfolge, die das Format der Adresse des Benutzers beschreibt, die in der **PR_ADDRTYPE** ([pidtagaddresstype (](pidtagaddresstype-canonical-property.md))-Eigenschaft gespeichert ist. Adresstypen werden Adressformaten zugeordnet. Das heißt, wenn Sie sich den Adresstyp eines Empfängers ansehen, können Clientanwendungen festlegen, wie eine für den Empfänger geeignete Adresse formatiert werden soll. 
+Jedem Messagingbenutzer ist ein Adresstyp zugeordnet, eine Zeichenzeichenfolge, die das Format der Adresse des Benutzers beschreibt, das in der **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))-Eigenschaft gespeichert ist. Adresstypen werden Adressformaten zuordnung. Das heißt, durch Einen Blick auf den Adresstyp eines Empfängers können Clientanwendungen bestimmen, wie eine Adresse formatiert wird, die für den Empfänger geeignet ist. 
   
-Der `SMTP` Adresstyp gibt beispielsweise die standardmäßige Internet Adresse an: 
+Der Adresstyp gibt  `SMTP` z. B. die Standard-Internetadresse an: 
   
  `username@companyname.com.`
   
-Und der `EX` Adresstyp gibt eine Exchange-Server Adresse an. 
+Und der `EX` Adresstyp gibt eine adresse Exchange Server an. 
   
-Alle Adressbucheinträge müssen einen gültigen Adresstyp aufweisen. Die Benutzer müssen beim Erstellen eines benutzerdefinierten Empfängertyps, der vom Adressbuchanbieter nicht unterstützt wird, einen Adresstyp angeben. Für die unterstützten Einträge müssen Adressbuchanbieter gültige Adresstypen angeben. 
+Alle Adressbucheinträge müssen einen gültigen Adresstyp haben. Clients müssen von ihren Benutzern einen Adresstyp angeben, wenn sie einen benutzerdefinierten Empfängertyp erstellen, der vom Adressbuchanbieter nicht unterstützt wird. Für die von ihnen unterstützten Einträge müssen Adressbuchanbieter gültige Adresstypen angeben. 
   
-MAPI definiert nur einen Adresstyp: MAPIPDL, die für die persönliche Verteilerliste steht.
+MAPI definiert nur einen Adresstyp: MAPIPDL, der für persönliche Verteilerliste steht.
   
-Um eine Liste der Adresstypen abzurufen, die von allen Transportanbietern in der Sitzung unterstützt werden, rufen Clientanwendungen die **IMAPISession:: EnumAdrTypes** -Methode auf. Weitere Informationen finden Sie unter [IMAPISession:: EnumAdrTypes](imapisession-enumadrtypes.md).
+Um eine Liste der Adresstypen zu erhalten, die von allen Transportanbietern in der Sitzung unterstützt werden, rufen Clientanwendungen die **IMAPISession::EnumAdrTypes-Methode** auf. Weitere Informationen finden Sie unter [IMAPISession::EnumAdrTypes](imapisession-enumadrtypes.md).
   
 

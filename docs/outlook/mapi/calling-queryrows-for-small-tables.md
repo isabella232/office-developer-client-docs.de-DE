@@ -21,8 +21,8 @@ ms.locfileid: "33404176"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beim Abrufen von Zeilen aus einer kleinen Tabelle rufen Sie [IMAPITable:: QueryRows](imapitable-queryrows.md) , anstatt zunächst eine Einschränkung zu erstellen. Das Erstellen einer Einschränkung hat Auswirkungen auf die Leistung, da der Anbieter zunächst eine Tabelle erstellen, die entsprechenden Zeilen in der ursprünglichen Tabelle suchen und dann die Zeilen in die neue Tabelle kopieren muss. Wenn die Gesamtanzahl der Zeilen in der Tabelle kleiner als 100 ist, ist es wahrscheinlich effektiver, alle Zeilen zu lesen und dann [IMAPITable:: FindRow](imapitable-findrow.md) aufzurufen, um die entsprechende Zeile zu finden. Dies ist eine besonders gute Strategie, wenn diese Informationen nur gelegentlich benötigt werden. 
+Rufen Sie beim Abrufen von Zeilen aus einer kleinen Tabelle [IMAPITable::QueryRows](imapitable-queryrows.md) auf, anstatt zuerst eine Einschränkung zu erstellen. Das Erstellen einer Einschränkung wirkt sich auf die Leistung aus, da der Anbieter zunächst eine Tabelle erstellen, die übereinstimmenden Zeilen in der ursprünglichen Tabelle suchen und dann die Zeilen in die neue Tabelle kopieren muss. Wenn die Gesamtzahl der Zeilen in der Tabelle kleiner als 100 ist, ist es wahrscheinlich effektiver, alle Zeilen zu lesen und [dann IMAPITable::FindRow](imapitable-findrow.md) auf, um die entsprechende Zeile zu finden. Dies ist eine besonders gute Strategie, wenn diese Informationen nur gelegentlich benötigt werden. 
   
-Die richtige Zeit für die Verwendung einer Einschränkung ist, wenn die eingeschränkten oder gefilterten Informationen über einen längeren Zeitraum verwendet oder häufig verwendet werden. Wenn Sie beispielsweise immer eine Ansicht mit ungelesenen Nachrichten benötigen, ist eine Einschränkung der richtige Aufruf.
+Der richtige Zeitpunkt für die Verwendung einer Einschränkung ist, wenn die eingeschränkten oder gefilterten Informationen über einen längeren Zeitraum oder häufig verwendet werden. Wenn Sie beispielsweise immer eine Ansicht mit ungelesenen Nachrichten benötigen, ist eine Einschränkung der richtige Aufruf.
   
 

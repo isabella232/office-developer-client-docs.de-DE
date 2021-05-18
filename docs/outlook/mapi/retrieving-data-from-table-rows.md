@@ -21,23 +21,23 @@ ms.locfileid: "33405254"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Das Abrufen von Zeilen aus einer Tabelle umfasst Folgendes:
+Das Abrufen von Zeilen aus einer Tabelle umfasst:
   
 - Abrufen der Eigenschaftswerte für alle Spalten.
     
 - Ändern der aktuellen Position.
     
-Eine der erforderlichen Spalten in den meisten Tabellen ist eine Eintrags-ID, die **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))-Eigenschaft, die verwendet werden kann, um das Objekt zu öffnen, das die Zeile darstellt. Diese Eintrags-ID ist in der Regel eine kurzfristige Eintrags-ID, die nicht über die Lebensdauer der Tabelle beibehalten wird. Es kann sich jedoch um einen langfristigen Bezeichner handeln, wenn der Dienstanbieter, der die Tabelle implementiert, nur einen Typ von Eintrags Bezeichnern unterstützt.
+Eine der erforderlichen Spalten in den meisten Tabellen ist eine Eintrags-ID , die **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) -Eigenschaft, die zum Öffnen des Objekts verwendet werden kann, das die Zeile darstellt. Dieser Eintragsbezeichner ist in der Regel eine kurzfristige Eintrags-ID, die nicht über die Lebensdauer der Tabelle hinaus beibehalten wird. Es kann jedoch eine langfristige ID sein, wenn der Dienstanbieter, der die Tabelle implementieren, nur einen Typ von Eintrags-ID unterstützt.
   
-Clients und Dienstanbieter können einen der folgenden Aufrufe zum Abrufen von Zeilen ausführen:
+Clients und Dienstanbieter können einen der folgenden Aufrufe zum Abrufen von Zeilen erstellen:
   
 |||
 |:-----|:-----|
-|[IMAPITable::QueryRows](imapitable-queryrows.md) <br/> |Ruft eine angegebene Anzahl von Zeilen ab der aktuellen Zeile in eine vorwärts-oder Rückwärtsrichtung ab.  <br/> |
+|[IMAPITable::QueryRows](imapitable-queryrows.md) <br/> |Ruft eine angegebene Anzahl von Zeilen ab, die mit der aktuellen Zeile in Vorwärts- oder Rückwärtsrichtung beginnen.  <br/> |
 |[HrQueryAllRows](hrqueryallrows.md) <br/> |Ruft alle Zeilen in einer Tabelle ab.  <br/> |
-|[ITableData::HrQueryRow](itabledata-hrqueryrow.md) <br/> |Ruft eine Zeile in einer Tabelle entsprechend dem Wert der Indexspalte ab. **PR_INSTANCE_KEY** ([Pidtaginstancekey (](pidtaginstancekey-canonical-property.md)) ist in der Regel die Indexspalte für eine Tabelle.  <br/> |
+|[ITableData::HrQueryRow](itabledata-hrqueryrow.md) <br/> |Ruft eine Zeile in einer Tabelle entsprechend dem Wert der Indexspalte ab. **PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md)) ist in der Regel die Indexspalte für eine Tabelle.  <br/> |
    
-Wenn eine optionale Eigenschaft als eine der Spalten in einer Tabelle enthalten ist, verfügen einige Zeilen möglicherweise über gültige Werte für die Spalte, andere nicht. Ob ein gültiger Wert für eine Spalte vorhanden ist, hängt davon ab, ob das Objekt, das die Informationen für die Zeile bereitstellt, die Eigenschaft festlegt. Abhängig von der Implementierung des Objekts kann eine nicht vorhandene Eigenschaft in der Tabelle als **PR_NULL** ([pidtagnull (](pidtagnull-canonical-property.md)) oder ein beliebiger Wert dargestellt werden. Benutzer von Tabellen müssen darauf achten, zwischen Eigenschaften zu unterscheiden, die nicht vorhanden sind und sinnlose Werte und Eigenschaften aufweisen, die vorhanden sind und gültige Werte haben. 
+Wenn eine optionale Eigenschaft als eine der Spalten in einer Tabelle enthalten ist, verfügen einige der Zeilen möglicherweise über gültige Werte für die Spalte, andere nicht. Ob ein gültiger Wert für eine Spalte vorhanden ist, hängt davon ab, ob das Objekt, das die Informationen für die Zeile liefert, die Eigenschaft legt. Je nach Implementierung des Objekts kann eine nicht vorhandene Eigenschaft in der Tabelle als PR_NULL **(** [PidTagNull](pidtagnull-canonical-property.md)) oder als beliebiger Wert dargestellt werden. Benutzer von Tabellen müssen darauf achten, zwischen Eigenschaften zu unterscheiden, die nicht vorhanden sind und bedeutungslose Werte und Eigenschaften aufweisen, die vorhanden sind und gültige Werte aufweisen. 
   
 ## <a name="see-also"></a>Siehe auch
 

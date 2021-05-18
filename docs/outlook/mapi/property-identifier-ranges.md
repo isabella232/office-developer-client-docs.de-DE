@@ -1,5 +1,5 @@
 ---
-title: Eigenschaftenbezeichner Bereiche
+title: Eigenschaftenbezeichnerbereiche
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,43 +15,43 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33422705"
 ---
-# <a name="property-identifier-ranges"></a>Eigenschaftenbezeichner Bereiche
+# <a name="property-identifier-ranges"></a>Eigenschaftenbezeichnerbereiche
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-In der folgenden Tabelle sind die verschiedenen Bereiche für Eigenschaftsbezeichner zusammengefasst, die den Besitzer für die Eigenschaften in den einzelnen Bereichen beschreiben.
+In der folgenden Tabelle sind die verschiedenen Bereiche für Eigenschaftenbezeichner zusammengefasst, in denen der Besitzer für die Eigenschaften in den einzelnen Bereichen beschrieben wird.
   
 |**Bezeichnerbereich**|**Beschreibung**|
 |:-----|:-----|
-|0000  <br/> |Von MAPI für den speziellen Wert **PR_NULL**reserviert.  <br/> |
-|0001-0BFF  <br/> |Von MAPI definierte Nachrichtenumschlag Eigenschaften.  <br/> |
-|0C00-0DFF  <br/> |Von MAPI definierte Empfänger Eigenschaften.  <br/> |
-|0E00-0FFF  <br/> |Nicht übertragbare Nachrichteneigenschaften, die von MAPI definiert werden.  <br/> |
-|1000-2FFF  <br/> |Von MAPI definierte Nachrichteninhalts Eigenschaften.  <br/> |
-|3000-3FFF  <br/> |Eigenschaften für andere Objekte als Nachrichten und Empfänger, die von MAPI definiert wurden.  <br/> |
-|4000-57FF  <br/> |Nachrichtenumschlag Eigenschaften, die von Transportanbietern definiert werden.  <br/> |
-|5800-5FFF  <br/> |Empfänger Eigenschaften, die von Transport-und Adressbuch Anbietern definiert werden.  <br/> |
-|6000-65FF  <br/> |Nicht übertragbare Nachrichteneigenschaften, die von Clients definiert werden.  <br/> |
-|6600-67FF  <br/> |Nicht übertragbare Eigenschaften, die von einem Dienstanbieter definiert werden. Diese Eigenschaften können für Benutzer sichtbar oder unsichtbar sein.  <br/> |
-|6800-7BFF  <br/> |Nachrichteninhalts Eigenschaften für benutzerdefinierte Nachrichtenklassen, die von Erstellern dieser Klassen definiert werden.  <br/> |
-|7C00-7FFF  <br/> |Nicht übertragbare Eigenschaften für benutzerdefinierte Nachrichtenklassen, die von Erstellern dieser Klassen definiert werden.  <br/> |
-|8000-FFFE  <br/> |Von Clients und gelegentlichen Dienstanbietern definierte Eigenschaften, die über die [IMAPIProp:: GetNamesFromIDs](imapiprop-getnamesfromids.md) -und [IMAPIProp: GetIDsFromNames](imapiprop-getidsfromnames.md) -Methoden anhand des Namens identifiziert werden.  <br/> |
-|FFFF  <br/> |Von MAPI für den speziellen Fehlerwert PROP_ID_INVALID reserviert.  <br/> |
+|0000  <br/> |Reserviert von MAPI für den Sonderwert **PR_NULL**.  <br/> |
+|0001 - 0BFF  <br/> |Von MAPI definierte Nachrichtenumschlageigenschaften.  <br/> |
+|0C00 – 0DFF  <br/> |Von MAPI definierte Empfängereigenschaften.  <br/> |
+|0E00 - 0FFF  <br/> |Nicht durchlässige Nachrichteneigenschaften, die von MAPI definiert werden.  <br/> |
+|1000 – 2FFF  <br/> |Von MAPI definierte Nachrichteninhaltseigenschaften.  <br/> |
+|3000 – 3FFF  <br/> |Eigenschaften für andere Objekte als Nachrichten und Empfänger, die von MAPI definiert sind.  <br/> |
+|4000 – 57FF  <br/> |Nachrichtenumschlageigenschaften, die von Transportanbietern definiert werden.  <br/> |
+|5800 – 5FFF  <br/> |Von Transport- und Adressbuchanbietern definierte Empfängereigenschaften.  <br/> |
+|6000 – 65FF  <br/> |Nicht durchsetzbare Nachrichteneigenschaften, die von Clients definiert werden.  <br/> |
+|6600 - 67FF  <br/> |Nicht durchlässige Eigenschaften, die von einem Dienstanbieter definiert werden. Diese Eigenschaften können für Benutzer sichtbar oder unsichtbar sein.  <br/> |
+|6800 – 7BFF  <br/> |Nachrichteninhaltseigenschaften für benutzerdefinierte Nachrichtenklassen, die von erstellern dieser Klassen definiert werden.  <br/> |
+|7C00 - 7FFF  <br/> |Nicht durchlässige Eigenschaften für benutzerdefinierte Nachrichtenklassen, die von erstellern dieser Klassen definiert werden.  <br/> |
+|8000 – FFFE  <br/> |Von Clients und gelegentlich Dienstanbietern definierte Eigenschaften, die über die [Methoden IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md) und [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) anhand des Namens identifiziert werden.  <br/> |
+|FFFF  <br/> |Reserviert von MAPI für den speziellen Fehlerwert PROP_ID_INVALID.  <br/> |
    
-Der Bereich zwischen 3000 und 3FFF ist für Eigenschaften reserviert, die sich nicht auf Nachrichten oder Empfänger beziehen. MAPI teilt diesen Bereich nach Objekttypen in Unterbereiche auf. die folgende Tabelle zeigt diese weitere Aufteilung. 
+Der Bereich zwischen 3000 und 3FFF ist für Eigenschaften reserviert, die nicht mit Nachrichten oder Empfängern in Zusammenhang stehen. MAPI teilt diesen Bereich nach Objekttypen in Unterbereiche auf. Die folgende Tabelle zeigt diese weitere Aufschlüsselung. 
   
 |**Bezeichnerbereich**|**Typ der Eigenschaft**|
 |:-----|:-----|
-|3000-33FF  <br/> |Allgemeine Eigenschaften, die für mehrere Objekte wie **PR_DISPLAY_NAME** und **PR_ENTRYID**angezeigt werden.  <br/> |
-|3400-35FF  <br/> |Nachrichtenspeichereigenschaften  <br/> |
-|3600-36FF  <br/> |Container Eigenschaften für Ordner und Adressbuch  <br/> |
-|3700-38FF  <br/> |Attachment-Eigenschaften  <br/> |
-|3900-39FF  <br/> |Adressbucheigenschaften  <br/> |
-|3A00-3BFF  <br/> |Eigenschaften für Messaging-Benutzer  <br/> |
-|3C00-3CFF  <br/> |Eigenschaften der Verteilerliste  <br/> |
-|3D00-3DFF  <br/> |Profileigenschaften  <br/> |
-|3E00-3FFF  <br/> |Eigenschaften des Status Objekts  <br/> |
+|3000 – 33FF  <br/> |Allgemeine Eigenschaften, die für mehrere Objekte angezeigt werden, z. **B. PR_DISPLAY_NAME** und **PR_ENTRYID**.  <br/> |
+|3400 – 35FF  <br/> |Eigenschaften des Nachrichtenspeichers  <br/> |
+|3600 – 36FF  <br/> |Eigenschaften von Ordner- und Adressbuchcontainern  <br/> |
+|3700 - 38FF  <br/> |Anlageneigenschaften  <br/> |
+|3900 - 39FF  <br/> |Adressbucheigenschaften  <br/> |
+|3A00 - 3BFF  <br/> |Eigenschaften von Messagingbenutzern  <br/> |
+|3C00 – 3CFF  <br/> |Eigenschaften der Verteilerliste  <br/> |
+|3D00 – 3DFF  <br/> |Profileigenschaften  <br/> |
+|3E00 - 3FFF  <br/> |Eigenschaften des Statusobjekts  <br/> |
    
 

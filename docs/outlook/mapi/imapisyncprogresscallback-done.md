@@ -38,7 +38,7 @@ HRESULT Done(
 
  **hThreadDoneEvent**
   
-> Ein Ereignis, das zurückgegeben wird, um Microsoft Outlook das Beenden des Handles zu ermöglichen. Es kann NULL sein.
+> Ein Ereignis, das übergeben wird, damit Microsoft Outlook handle schließen kann. Er kann NULL sein.
     
  **hResult**
   

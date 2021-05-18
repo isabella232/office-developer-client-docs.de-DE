@@ -25,12 +25,12 @@ ms.locfileid: "33404316"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl der Bytes, die für eine neue [ADRLIST](adrlist.md) -Struktur reserviert werden sollen, die eine angegebene Anzahl von Empfängern enthält, die durch die [Miet](adrentry.md) Strukturen repräsentiert werden. 
+Berechnet die Anzahl der Bytes, die einer neuen [ADRLIST-Struktur](adrlist.md) zugeordnet werden sollen, die eine angegebene Anzahl von Empfängern enthält, die durch [ADRENTRY-Strukturen dargestellt](adrentry.md) werden. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |**ADRLIST** <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |**ADRLIST** <br/> |
    
 ```cpp
 CbNewADRLIST (_centries)
@@ -38,9 +38,9 @@ CbNewADRLIST (_centries)
 
 ## <a name="parameters"></a>Parameter
 
- __Zentrierungen_
+ _ _Centries_
   
-> Die Anzahl der **Miet** Strukturen, die in die neue **ADRLIST** -Struktur eingeschlossen werden sollen. 
+> Anzahl der **ADRENTRY-Strukturen,** die in die neue **ADRLIST-Struktur einbezogen werden** sollen. 
     
 ## <a name="see-also"></a>Siehe auch
 

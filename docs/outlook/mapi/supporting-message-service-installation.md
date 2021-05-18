@@ -1,5 +1,5 @@
 ---
-title: Unterstützen der Nachrichtendienst Installation
+title: Unterstützen der Installation des Nachrichtendiensts
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,34 +15,34 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33404701"
 ---
-# <a name="supporting-message-service-installation"></a>Unterstützen der Nachrichtendienst Installation
+# <a name="supporting-message-service-installation"></a>Unterstützen der Installation des Nachrichtendiensts
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Das Setupprogramm für die Installation des Nachrichtendiensts sollte folgendermaßen vorgehen:
+Das Setupprogramm für die Installation des Nachrichtendiensts sollte die folgenden Schritte ausführen:
   
-1. Kopieren Sie Nachrichtendienst Dateien wie den Nachrichtendienst und die Dienstanbieter-DLLs von einer CD oder einem Datenträger auf ein lokales Laufwerk auf der Arbeitsstation. Die zu kopierenden Dateien hängen vom Nachrichtendienst ab. In der Regel kopieren Sie mindestens eine DLL.
+1. Kopieren Sie Nachrichtendienstdateien, z. B. den Nachrichtendienst und die Dienstanbieter-DLLs, von einer CD oder einem Datenträger auf ein lokales Laufwerk auf der Arbeitsstation. Die Dateien, die kopiert werden müssen, hängen vom Nachrichtendienst ab. In der Regel kopieren Sie mindestens eine DLL.
     
-2. Fügen Sie der Konfigurationsdatei MAPISVC. inf Einträge hinzu. Weitere Informationen zum Ändern dieser Datei zur Unterstützung der Dienstanbieter im Nachrichtendienst finden Sie unter [Datei Format von MapiSvc. inf](file-format-of-mapisvc-inf.md).
+2. Fügen Sie der Konfigurationsdatei Mapisvc.inf Einträge hinzu. Weitere Informationen zum Ändern dieser Datei zur Unterstützung der Dienstanbieter in Ihrem Nachrichtendienst finden Sie unter [File Format of MapiSvc.inf](file-format-of-mapisvc-inf.md).
     
-3. Fügen Sie der Systemregistrierung für Nachrichtendienste entsprechende Einträge hinzu. Weitere Informationen dazu, wie die Einträge in der Systemregistrierung angezeigt werden sollen, finden Sie unter [Installieren des MAPI-Subsystems](installing-the-mapi-subsystem.md).
+3. Fügen Sie der Systemregistrierung für Nachrichtendienste gegebenenfalls Einträge hinzu. Weitere Informationen dazu, wie die Einträge in der Systemregistrierung angezeigt werden sollen, finden Sie unter [Installing the MAPI Subsystem](installing-the-mapi-subsystem.md).
     
-4. Erstellen Sie ein Standardprofil, wenn es noch nicht vorhanden ist, indem Sie eines der folgenden Elemente verwenden:
+4. Erstellen Sie ein Standardprofil, wenn eines noch nicht vorhanden ist, indem Sie eines der folgenden Elemente verwenden:
     
-  - Der Profil-Assistent zum Erstellen eines Profils mithilfe von Benutzerinteraktionen über eine Reihe von Dialogfeldern. Weitere Informationen zur Verwendung des Profil-Assistenten finden Sie unter [Erstellen eines Profils mithilfe des Profil-Assistenten](creating-a-profile-by-using-the-profile-wizard.md).
+  - Der Profil-Assistent zum Erstellen eines Profils mithilfe der Benutzerinteraktion über eine Reihe von Dialogfelder. Weitere Informationen zur Verwendung des Profil-Assistenten finden Sie unter [Creating a Profile by Using the Profile Wizard](creating-a-profile-by-using-the-profile-wizard.md).
     
-  - Die Systemsteuerung zum Erstellen eines Profils mithilfe der Benutzerinteraktion. Die Systemsteuerung bietet dem Benutzer mehr Flexibilität als der Profil-Assistent zum Konfigurieren der Nachrichtendienste und zum Festlegen von Profileigenschaften. 
+  - Die Systemsteuerung zum Erstellen eines Profils mithilfe der Benutzerinteraktion. Die Systemsteuerung bietet dem Benutzer mehr Flexibilität als der Profil-Assistent zum Konfigurieren der Nachrichtendienste und Festlegen von Profileigenschaften. 
     
-Platzieren Sie das Setupprogramm in einem bestimmten öffentlichen Verzeichnis. Dies ist wichtig, da bei den meisten Konfigurations Clients wie der Systemsteuerung Benutzer den Namen des Verzeichnisses eingeben müssen. Die Systemsteuerung Ruft ein Setupprogramm auf, wenn ein Benutzer auf die Schaltfläche **Hinzufügen** klickt, das Dialogfeld **Datenträger** aufruft und den Pfad zum Programm angibt. Die Systemsteuerung führt das Programm aus und ruft die Einstiegspunktfunktion des Nachrichtendiensts auf, wobei der Parameter _ulContext_ auf MSG_SERVICE_INSTALL festgelegt ist. 
+Platzieren Sie das Setupprogramm in einem festgelegten öffentlichen Verzeichnis. Dies ist wichtig, da die meisten Konfigurationsclients, z. B. die Systemsteuerung, den Namen des Verzeichnisses eingeben müssen. Die Systemsteuerung ruft ein Setupprogramm auf,  wenn ein Benutzer  auf die Schaltfläche Hinzufügen klickt, das Dialogfeld Datenträger haben aufruft und den Pfad zum Programm angibt. Die Systemsteuerung führt das Programm aus und ruft die Einstiegspunktfunktion Ihres Nachrichtendiensts auf, der  _ulContext-Parameter_ ist auf MSG_SERVICE_INSTALL. 
   
 > [!CAUTION]
-> Da Profile ein entbehrlicher Teil der MAPI-Architektur sind, müssen Sie sicherstellen, dass das Installationsprogramm nichts im Standardprofil speichert, das nur schwer neu erstellt werden kann. Es gibt keine Dienstprogramme für die Profil Wiederherstellung, um Profile von einem Computer auf einen anderen zu übertragen, für die Offlinesicherung oder für die individuelle oder globale Wiederherstellung von Sicherungskopien. 
+> Da Profile ein ernennbarer Bestandteil der MAPI-Architektur sind, müssen Sie sicherstellen, dass in Ihrem Installationsprogramm nichts im Standardprofil gespeichert wird, das nur schwer neu erstellt werden kann. Es gibt keine Dienstprogramme für die Profilwiederherstellung, für das Verschieben von Profilen von einem Computer auf einen anderen, für die off-line-Sicherung oder für die individuelle oder globale Wiederherstellung von Sicherungskopien. 
   
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Nachrichtendienst Implementierung](message-service-implementation.md)
+[Implementierung des Nachrichtendiensts](message-service-implementation.md)
 

@@ -19,11 +19,11 @@ ms.locfileid: "33405555"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die Informationsspeicher-API bietet Speicheranbietern verschiedene Speicherfunktionen. Es bietet die folgenden Definitionen, Datentypen, Eigenschaften und Schnittstellen.
+Die Store-API stellt verschiedene Speicherfunktionen für Speicheranbieter bereit. Es enthält die folgenden Defintions, Datentypen, Eigenschaften und Schnittstellen.
   
 Definitionen:
   
-- [Konstanten für die Speicher-API](mapi-constants.md)
+- [Konstanten für die Store-API](mapi-constants.md)
     
 Datentypen:
   
@@ -37,16 +37,16 @@ Benannte Eigenschaften:
     
 - **[CrawlSourceSupportMask](crawlsourcesupportmask.md)**
     
-- **[Größe des Anzeige Server Ordners](display-server-folder-sizes-property.md)**
+- **[Größe des Anzeigeserverordners](display-server-folder-sizes-property.md)**
     
-- **[Option "Besprechungs Update ausblenden"](hide-meeting-update-option-property.md)**
+- **[Option zum Ausblenden von Besprechungsupdates](hide-meeting-update-option-property.md)**
     
-- **[Speichertyp als privat festlegen](make-store-type-private-property.md)**
+- **[Make Store Type Private](make-store-type-private-property.md)**
     
 - **[NoFolderScan](nofolderscan.md)**
     
 > [!NOTE]
-> Speicheranbieter, die keine der von diesen benannten Eigenschaften angebotenen Funktionen erfordern, können diese einfach ignorieren und keine Unterstützung in der **IMAPIProp** -Schnittstelle implementieren. Da diese Eigenschaften ab Microsoft Outlook 2003 Service Pack 1 bereitgestellt werden, hat das Hinzufügen zu einem Speicher in einer früheren Version von Microsoft Outlook keine Auswirkungen. Sie werden ignoriert, wenn Sie nicht vorhanden sind oder ihr Wert **false**ist. 
+> Store, die keine der Funktionen dieser benannten Eigenschaften benötigen, können sie einfach ignorieren und keine Unterstützung in der **IMAPIProp-Schnittstelle** implementieren. Da diese Eigenschaften ab Microsoft Outlook 2003 Service Pack 1 bereitgestellt werden, hat das Hinzufügen zu einem Store in einer früheren Version von Microsoft Outlook keine Auswirkung. Sie werden ignoriert, wenn sie nicht vorhanden sind oder ihr Wert false **ist.** 
   
 Eigenschaften:
   
@@ -66,12 +66,12 @@ Schnittstellen:
     
 - **[IProxyStoreObject](iproxystoreobject.md)**
     
-## <a name="registering-stores-for-indexing"></a>Registrieren von Speichern für die Indizierung
+## <a name="registering-stores-for-indexing"></a>Registrieren von Informationsspeichern für die Indizierung
 
-Der MAPI-Protokoll Handler überprüft die Windows-Registrierung auf Speicher, die für Suchzwecke indiziert werden sollen. Speicheranbieter, die indiziert werden sollen, müssen in der Windows-Registrierung registriert werden. Weitere Informationen zum Registrieren von Speicheranbietern für die Indizierung in Outlook 2013 oder Outlook 2010 finden Sie unter Informationen [zum Registrieren](about-registering-stores-for-indexing.md)von Speicher für die Indizierung.
+Der MAPI-Protokollhandler überprüft die Windows für Speicher, die zu Suchzwecken indiziert werden sollen. Store, die indiziert werden möchten, müssen in der Registrierung Windows werden. Weitere Informationen zum Registrieren von Speicheranbietern für die Indizierung in Outlook 2013 oder Outlook 2010 finden Sie unter [About Registering Stores for Indexing](about-registering-stores-for-indexing.md).
   
-## <a name="indexing-stores"></a>Indexspeicher
+## <a name="indexing-stores"></a>Indizierungsspeicher
 
-MAPI-Speicheranbieter können festlegen, dass der MAPI-Protokoll Handler Nachrichten im Speicher Crawlen und indizieren soll, oder Benachrichtigungen an den Indexer senden, wenn Nachrichten indiziert werden sollen. Weitere Informationen zur Benachrichtigungen-basierten Indizierung finden Sie unter [Informationen zu Benachrichtigungs basiertEr Speicher Indizierung](about-notification-based-store-indexing.md).
+MAPI-Speicheranbieter können festlegen, dass der MAPI-Protokollhandler Nachrichten im Speicher durchforstet und indiziert oder Benachrichtigungen nur dann an den Indexer sendet, wenn Nachrichten indiziert werden sollen. Weitere Informationen zur Benachrichtigungsbasierten Indizierung finden Sie unter [Informationen Notification-Based Store Indizierung](about-notification-based-store-indexing.md).
   
 

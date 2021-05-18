@@ -18,7 +18,7 @@ ms.locfileid: "33404540"
 ---
 # <a name="manager-function"></a>MANAGER Function
 
-Gibt den Text aus dem Feld **Manager** der Eigenschaften eines Dokuments zurück. 
+Gibt den Text aus dem **Feld Manager** der Eigenschaften eines Dokuments zurück. 
   
 ## <a name="syntax"></a>Syntax
 

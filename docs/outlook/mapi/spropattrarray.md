@@ -25,11 +25,11 @@ ms.locfileid: "33405513"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine Liste der Attribute für die Eigenschaften eines Objekts. 
+Enthält eine Liste von Attributen für Eigenschaften eines Objekts. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |IMessage. h  <br/> |
+|Headerdatei  <br/> |Imessage.h  <br/> |
 |Verwandte Makros:  <br/> |[CbNewSPropAttrArray](cbnewspropattrarray.md), [CbSPropAttrArray](cbspropattrarray.md) <br/> |
    
 ```cpp
@@ -41,15 +41,15 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cValues**
   
-> Die Anzahl der Eigenschaftsattribute im **aPropAttr** -Element. 
+> Anzahl der Eigenschaftenattribute im **aPropAttr-Element.** 
     
  **aPropAttr**
   
-> Ein Array von Eigenschaftsattributen. Gültige Werte für Attribute lauten wie folgt:
+> Ein Array von Eigenschaftenattributen. Gültige Werte für Attribute sind wie folgt:
     
     - PROPATTR_MANDATORY
     
@@ -59,9 +59,9 @@ typedef struct
     
     - PROPATTR_NOT_PRESENT
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **SPropAttrArray** -Struktur wird von Eigenschaftendaten Objekten verwendet, die die [IPropData: IMAPIProp](ipropdataimapiprop.md) -Schnittstelle implementieren. Sie wird auch von der MAPI-Implementierung von [IMAPIMessageSite verwendet: IUnknown](imapimessagesiteiunknown.md) , die auf strukturiertem Speicher basiert. 
+Die **SPropAttrArray-Struktur** wird von Eigenschaftsdatenobjekten verwendet, die die [IPropData : IMAPIProp-Schnittstelle](ipropdataimapiprop.md) implementieren. Sie wird auch von der MAPI-Implementierung von [IMAPIMessageSite : IUnknown](imapimessagesiteiunknown.md) verwendet, die auf strukturiertem Speicher basiert. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,5 @@
 ---
-title: DateFromParts-Funktion (Access Custom Web App)
+title: DateFromParts-Funktion (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33423223"
 ---
-# <a name="datefromparts-function-access-custom-web-app"></a>DateFromParts-Funktion (Access Custom Web App)
+# <a name="datefromparts-function-access-custom-web-app"></a>DateFromParts-Funktion (benutzerdefinierte Access-Web-App)
 
 Gibt einen Datumswert für das angegebene Jahr, den Monat und den Tag zurück.
   
@@ -22,23 +22,23 @@ Gibt einen Datumswert für das angegebene Jahr, den Monat und den Tag zurück.
   
 ## <a name="syntax"></a>Syntax
 
-**DateFromParts** (*Jahr*, *Monat*, *Tag*) 
+**DateFromParts** (*Year*, *Month*, *Day*) 
   
-Die **DateFromParts** -Funktion enthält die folgenden Argumente. 
+Die **DateFromParts-Funktion** enthält die folgenden Argumente. 
   
 |**Argumentname**|**Beschreibung**|
 |:-----|:-----|
-| *Jahr*  <br/> |Integer-Ausdruck, der ein Jahr angibt.  <br/> |
-| *Month*  <br/> |Integer-Ausdruck, der einen Monat zwischen 1 und 12 angibt.  <br/> |
-| *Day*  <br/> |Integer-Ausdruck, der einen Tag angibt.  <br/> |
+| *Jahr*  <br/> |Ganzzahliger Ausdruck, der ein Jahr an gibt.  <br/> |
+| *Month*  <br/> |Ganzzahliger Ausdruck, der einen Monat von 1 bis 12 an gibt.  <br/> |
+| *Day*  <br/> |Ganzzahliger Ausdruck, der einen Tag an gibt.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-**DateFromParts** gibt einen Date-Wert zurück, wobei der Datumsteil auf das angegebene Jahr, den Monat und den angegebenen Tag sowie auf den standardmäßigen Zeitabschnitt festgelegt ist. Wenn die Argumente ungültig sind, wird ein Fehler ausgelöst. Wenn die erforderlichen Argumente NULL sind, wird NULL zurückgegeben. 
+**DateFromParts** gibt einen Datumswert zurück, bei dem der Datumsteil auf das angegebene Jahr, den Monat und den Tag und den Zeitteil auf den Standardwert festgelegt ist. Wenn die Argumente ungültig sind, wird ein Fehler ausgelöst. Wenn erforderliche Argumente null sind, wird NULL zurückgegeben. 
   
 ## <a name="example"></a>Beispiel
 
-Der folgende Ausdruck verwendet die **DateFromParts** -Funktion, um den ersten Tag des aktuellen Monats zu berechnen. 
+Der folgende Ausdruck verwendet die **DateFromParts-Funktion,** um den ersten Tag des aktuellen Monats zu berechnen. 
   
 `DateFromParts(Year(Today()),Month(Today()),1)`
 

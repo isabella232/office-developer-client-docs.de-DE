@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251391
 localization_priority: Normal
 ms.assetid: 434d7ceb-1050-c667-fb3d-b6634440c18e
-description: Gibt TRUE (1) zurück, wenn alle angegebenen logischen Ausdrücke TRUE sind. Wenn einer der logischen Ausdrücke FALSE oder 0 ist, gibt die-und-Funktion FALSE (0) zurück.
+description: Gibt TRUE (1) zurück, wenn alle angegebenen logischen Ausdrücke TRUE sind. Wenn einer der logischen Ausdrücke FALSE oder 0 ist, gibt die AND-Funktion FALSE (0) zurück.
 ms.openlocfilehash: 74e8301718e69a2ab61f6bf9992d0d6855bbc6f1
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33422012"
 ---
 # <a name="and-function"></a>AND Function
 
-Gibt TRUE (1) zurück, wenn alle angegebenen logischen Ausdrücke TRUE sind. Wenn einer der logischen Ausdrücke FALSE oder 0 ist, gibt die-und-Funktion FALSE (0) zurück.
+Gibt TRUE (1) zurück, wenn alle angegebenen logischen Ausdrücke TRUE sind. Wenn einer der logischen Ausdrücke FALSE oder 0 ist, gibt die AND-Funktion FALSE (0) zurück.
   
 ## <a name="syntax"></a>Syntax
 
-und (* * *logisches expression1* * *, * * logisches *expression2* * *,..., * * *logische ausdrücke* * *) 
+AND(** *logischer Ausdruck1* **, ** *logischer Ausdruck2* **,..., ** *logischer AusdruckN* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -32,7 +32,7 @@ und (* * *logisches expression1* * *, * * logisches *expression2* * *,..., * * *
    
 ## <a name="example"></a>Beispiel
 
-UND (Höhe \> 1, PinX \> 1)
+AND(Height \> 1, PinX \> 1)
   
 Liefert TRUE, wenn beide Ausdrücke TRUE sind. Liefert FALSE, wenn einer der beiden Ausdrücke FALSE ist.
   

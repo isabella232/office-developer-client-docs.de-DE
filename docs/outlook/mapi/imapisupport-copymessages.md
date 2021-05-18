@@ -44,39 +44,39 @@ HRESULT CopyMessages(
 
  _lpSrcInterface_
   
-> in Ein Zeiger auf die Schnittstellen-ID (IID), die die Schnittstelle darstellt, die für den Zugriff auf den Ordner verwendet werden soll, der die Nachrichten enthält, die kopiert oder verschoben werden sollen.
+> [in] Ein Zeiger auf die Schnittstellen-ID (Interface Identifier, IID), die die Schnittstelle darstellt, die für den Zugriff auf den Ordner verwendet werden soll, der die zu kopierende oder zu verschiebende Nachricht enthält.
     
  _lpSrcFolder_
   
-> in Ein Zeiger auf den Ordner, der die Nachrichten enthält, die kopiert oder verschoben werden sollen.
+> [in] Ein Zeiger auf den Ordner, der die zu kopierende oder zu verschiebende Nachricht enthält.
     
  _lpMsgList_
   
-> in Ein Zeiger auf ein Array von Eintrags Bezeichnern, die die Nachrichten identifizieren, die kopiert oder verschoben werden sollen. 
+> [in] Ein Zeiger auf ein Array von Eintragsbezeichnern, die die zu kopierenden oder verschobenen Nachrichten identifizieren. 
     
  _lpDestInterface_
   
-> in Ein Zeiger auf die Schnittstellen-ID (IID), die die Schnittstelle darstellt, die für den Zugriff auf den Zielordner für die kopierten oder verschobenen Nachrichten verwendet werden soll.
+> [in] Ein Zeiger auf die Schnittstellen-ID (Interface Identifier, IID), die die Schnittstelle darstellt, die für den Zugriff auf den Zielordner für die kopierten oder verschobenen Nachrichten verwendet werden soll.
     
  _lpDestFolder_
   
-> in Ein Zeiger auf den Zielordner für die kopierten oder verschobenen Nachrichten. Dieser Ordner muss geöffnet sein.
+> [in] Ein Zeiger auf den Zielordner für die kopierten oder verschobenen Nachrichten. Dieser Ordner muss geöffnet sein.
     
  _ulUIParam_
   
-> in Ein Zeiger auf ein Progress-Objekt, das eine Statusanzeige anzeigt. Wenn NULL in _lpProgress_übergeben wird, zeigt der Nachrichtenspeicher Anbieter mithilfe der MAPI-Progress-Objekt Implementierung eine Statusanzeige an. Der _lpProgress_ -Parameter wird ignoriert, es sei denn, das MESSAGE_DIALOG-Flag wird in _ulFlags_festgelegt.
+> [in] Ein Zeiger auf ein Statusobjekt, das eine Statusanzeige anzeigt. Wenn NULL in  _lpProgress übergeben_ wird, zeigt der Nachrichtenspeicheranbieter mithilfe der MAPI-Fortschrittsobjektimplementierung eine Statusanzeige an. Der _lpProgress-Parameter_ wird ignoriert, es sei denn, MESSAGE_DIALOG in _ulFlags festgelegt ist._
     
  _lpProgress_
   
-> in Ein Zeiger auf ein Progress-Objekt, das eine Statusanzeige anzeigt. Wenn NULL in _lpProgress_übergeben wird, zeigt der Nachrichtenspeicher Anbieter mithilfe der MAPI-Progress-Objekt Implementierung eine Statusanzeige an. Der _lpProgress_ -Parameter wird ignoriert, es sei denn, das MESSAGE_DIALOG-Flag wird in _ulFlags_festgelegt.
+> [in] Ein Zeiger auf ein Statusobjekt, das eine Statusanzeige anzeigt. Wenn NULL in  _lpProgress übergeben_ wird, zeigt der Nachrichtenspeicheranbieter mithilfe der MAPI-Fortschrittsobjektimplementierung eine Statusanzeige an. Der _lpProgress-Parameter_ wird ignoriert, es sei denn, MESSAGE_DIALOG in _ulFlags festgelegt ist._
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die steuert, wie der Kopier-oder Verschiebungsvorgang ausgeführt wird. Die folgenden Flags können festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie der Kopier- oder Verschiebevorgang durchgeführt wird. Die folgenden Kennzeichen können festgelegt werden:
     
 MESSAGE_DIALOG 
   
-> Fordert die Anzeige einer Statusanzeige an.
+> Fordert die Anzeige eines Statusindikators an.
     
 MESSAGE_MOVE 
   
@@ -86,15 +86,15 @@ MESSAGE_MOVE
 
 S_OK 
   
-> Der Kopier-oder Verschiebungsvorgang war erfolgreich.
+> Der Kopier- oder Verschiebevorgang war erfolgreich.
     
 MAPI_E_USER_CANCEL 
   
-> Der Benutzer hat den Vorgang abgebrochen, indem er in einem Dialogfeld auf die Schaltfläche **Abbrechen** geklickt hat. 
+> Der Benutzer hat den Vorgang abgebrochen, in der Regel durch Klicken auf die **Schaltfläche** Abbrechen in einem Dialogfeld. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPISupport:: CopyMessages** -Methode wird für Support Objekte des Nachrichtenspeicher Anbieters implementiert. Nachrichtenspeicher Anbieter können **IMAPISupport:: CopyMessages** in ihrer Implementierung von [IMAPIFolder:: CopyMessages](imapifolder-copymessages.md) aufrufen, um eine oder mehrere Nachrichten von einem Ordner in einen anderen zu kopieren oder zu verschieben. Als Teil des **IMAPISupport:: CopyMessages** -Aufrufs kann der Nachrichtenspeicher Anbieter angeben, dass MAPI eine Statusanzeige anzeigen soll. 
+Die **IMAPISupport::CopyMessages-Methode** wird für Unterstützungsobjekte des Nachrichtenspeicheranbieters implementiert. Nachrichtenspeicheranbieter können **IMAPISupport::CopyMessages** in ihrer Implementierung von [IMAPIFolder::CopyMessages](imapifolder-copymessages.md) aufrufen, um eine oder mehrere Nachrichten aus einem Ordner in einen anderen zu kopieren oder zu verschieben. Im Rahmen des **IMAPISupport::CopyMessages-Aufrufs** kann der Nachrichtenspeicheranbieter angeben, dass MAPI einen Statusindikator anzeigen soll. 
   
 ## <a name="see-also"></a>Siehe auch
 

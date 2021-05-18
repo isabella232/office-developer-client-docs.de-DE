@@ -25,7 +25,7 @@ ms.locfileid: "33422761"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt einen Zeiger zurück, der Zugriff auf ein Anbieter Verwaltungsobjekt bereitstellt.
+Gibt einen Zeiger zurück, der Zugriff auf ein Anbieterverwaltungsobjekt bietet.
   
 ```cpp
 HRESULT AdminProviders(
@@ -39,43 +39,43 @@ HRESULT AdminProviders(
 
  _lpUID_
   
-> in Ein Zeiger auf die [MAPIUID](mapiuid.md) -Struktur, die den eindeutigen Bezeichner für den zu verwaltenden Nachrichtendienst enthält. 
+> [in] Ein Zeiger auf die [MAPIUID-Struktur,](mapiuid.md) die den eindeutigen Bezeichner für den zu verwaltenden Nachrichtendienst enthält. 
     
  _ulFlags_
   
-> in Immer NULL. 
+> [in] Immer NULL. 
     
  _lppProviderAdmin_
   
-> Out Ein Zeiger auf einen Zeiger auf ein Anbieter Verwaltungsobjekt.
+> [out] Ein Zeiger auf einen Zeiger auf ein Anbieterverwaltungsobjekt.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Das Anbieter Verwaltungsobjekt wurde erfolgreich zurückgegeben.
+> Das Objekt für die Anbieterverwaltung wurde erfolgreich zurückgegeben.
     
 MAPI_E_NOT_FOUND 
   
-> Die **MAPIUID** , auf die durch _lpUID_ verwiesen wird, ist nicht vorhanden. 
+> Die **MAPIUID,** auf die  _von lpUID_ verwiesen wird, ist nicht vorhanden. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMsgServiceAdmin:: AdminProviders** -Methode ermöglicht den Zugriff auf ein Anbieter Verwaltungsobjekt. Eine Anbieterverwaltung ist ein Objekt, das die [IProviderAdmin](iprovideradminiunknown.md) -Schnittstelle unterstützt und Clients folgende Aktionen ermöglicht: 
+Die **IMsgServiceAdmin::AdminProviders-Methode** bietet Zugriff auf ein Anbieterverwaltungsobjekt. Eine Anbieterverwaltung ist ein Objekt, das die [IProviderAdmin-Schnittstelle](iprovideradminiunknown.md) unterstützt und Clients folgendes ermöglicht: 
   
-- Hinzufügen von Dienstanbietern zu einem Nachrichtendienst
+- Hinzufügen von Dienstanbietern zu einem Nachrichtendienst.
     
 - Löschen von Dienstanbietern aus einem Nachrichtendienst.
     
 - Öffnen Sie Profilabschnitte.
     
-- Zugreifen auf die Tabelle des Nachrichtendienst Anbieters.
+- Greifen Sie auf die Tabelle des Nachrichtendienstanbieters zu.
     
-Die Typen von Änderungen, die an einem Nachrichtendienst vorgenommen werden können, während das Profil verwendet wird, hängen vom Nachrichtendienst ab. Die meisten Nachrichtendienste unterstützen jedoch keine Änderungen wie das Hinzufügen und Löschen von Anbietern, während das Profil verwendet wird.
+Die Arten von Änderungen, die tatsächlich an einem Nachrichtendienst vorgenommen werden können, während das Profil verwendet wird, hängen vom Nachrichtendienst ab. Die meisten Nachrichtendienste unterstützen jedoch keine Änderungen, z. B. das Hinzufügen und Löschen von Anbietern, während das Profil verwendet wird.
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Um die **MAPIUID** -Struktur für den zu verwaltenden Nachrichtendienst abzurufen, rufen Sie die **PR_SERVICE_UID** ([pidtagserviceuid (](pidtagserviceuid-canonical-property.md))-Eigenschaftsspalte aus der Zeile des Nachrichtendiensts in der Nachrichtendienst Tabelle ab. Weitere Informationen finden Sie in der in der [IMsgServiceAdmin:: CreateMsgService](imsgserviceadmin-createmsgservice.md) -Methode beschriebenen Prozedur. 
+Um die **MAPIUID-Struktur** für den zu verwaltenden Nachrichtendienst abzurufen, rufen Sie die **PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md))-Eigenschaftsspalte aus der Zeile des Nachrichtendiensts in der Nachrichtendiensttabelle ab. Weitere Informationen finden Sie in der in der [IMsgServiceAdmin::CreateMsgService-Methode beschriebenen](imsgserviceadmin-createmsgservice.md) Prozedur. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -83,7 +83,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MsgServiceTableDlg. cpp  <br/> |CMsgServiceTableDlg:: OnDisplayItem  <br/> |MFCMAPI verwendet die **IMsgServiceAdmin:: AdminProviders** -Methode, um ein Anbieter Verwaltungsobjekt für einen Dienst zu öffnen.  <br/> |
+|MsgServiceTableDlg.cpp  <br/> |CMsgServiceTableDlg::OnDisplayItem  <br/> |MFCMAPI verwendet die **IMsgServiceAdmin::AdminProviders-Methode,** um ein Anbieterverwaltungsobjekt für einen Dienst zu öffnen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

@@ -39,19 +39,19 @@ HRESULT SyncHdrBeg(
 
  _cbeid_
   
-> in Die Anzahl der Bytes in der Eintrags-ID für die Nachricht.
+> [in] Die Anzahl der Bytes in der Eintrags-ID für die Nachricht.
     
  _lpeid_
   
-> in Die Eintrags-ID für die Nachricht.
+> [in] Die Eintrags-ID für die Nachricht.
     
- _PPV_
+ _ppv_
   
->  [in]/[out] Zeiger auf die **[HDRSYNC](hdrsync.md)** -Struktur für den Nachrichtenkopf. 
+>  [in]/[out] Zeiger auf die **[HDRSYNC-Struktur](hdrsync.md)** für den Nachrichtenkopf. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Bei **IOSTX:: SyncHdrBeg**wechselt der lokale Speicher in den [Status des Download Nachrichtenkopfs](download-message-header-state.md). Outlook initialisiert für den Client die **HDRSYNC** -Struktur mit der aktuellen Darstellung des Nachrichtenkopfs im Store und dem übergeordneten Ordner. Der Client muss dann ein vollständiges Nachrichtenelement (als *pmsgFull* in **HDRSYNC** ) herunterladen. Wenn dies erfolgreich war, legt der Client auch *ulFlags* in **HDRSYNC** als **HSF_OK**fest. Bei **[IOSTX:: SyncHdrEnd](iostx-synchdrend.md)** überprüft Outlook das Ergebnis in **HDRSYNC** und verwendet die Informationen in **HDRSYNC** zum Aktualisieren des lokalen Nachrichtenkopfs. 
+Bei **IOSTX::SyncHdrBeg** überwechselt der lokale Speicher den Status ["Nachrichtenkopf herunterladen".](download-message-header-state.md) Outlook für den Client die **HDRSYNC-Struktur** mit der aktuellen Darstellung des Nachrichtenkopfs im Speicher und im übergeordneten Ordner initialisiert. Der Client muss dann ein vollständiges Nachrichtenelement herunterladen (als  *pmsgFull*  in **HDRSYNC** ). Wenn dies erfolgreich war, legt der Client *auch ulFlags* in **HDRSYNC als** **HSF_OK.** Bei **[IOSTX::SyncHdrEnd](iostx-synchdrend.md)** überprüft Outlook das Ergebnis in **HDRSYNC** und verwendet die Informationen in **HDRSYNC,** um den lokalen Nachrichtenkopf zu aktualisieren. 
   
 ## <a name="see-also"></a>Siehe auch
 

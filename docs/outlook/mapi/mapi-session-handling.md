@@ -1,5 +1,5 @@
 ---
-title: MAPI-Sitzungs Verarbeitung
+title: MAPI-Sitzungsbehandlung
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,19 +15,19 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33422061"
 ---
-# <a name="mapi-session-handling"></a>MAPI-Sitzungs Verarbeitung
+# <a name="mapi-session-handling"></a>MAPI-Sitzungsbehandlung
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bevor Sie mit Dienstanbietern und einem zugrunde liegenden Messagingsystem kommunizieren können, müssen Sie eine Sitzung erstellen. Eine MAPI-Sitzung ist ein Link von einem Client zu anderen MAPI-Komponenten. Als Ergebnis des erfolgreichen Startens einer Sitzung gibt MAPI an Clients einen Zeiger auf ein Session-Objekt zurück, ein Objekt, das die **IMAPISession** -Schnittstelle implementiert. Weitere Informationen finden Sie unter [IMAPISession: IUnknown](imapisessioniunknown.md). Sie können die Methoden der **IMAPISession** -Schnittstelle verwenden, um auf die Objekte von Adressbuch-und Nachrichtenspeicher Anbietern zuzugreifen, auf mehrere Tabellen zuzugreifen, Formulare anzuzeigen, Transportanbieter Eigenschaften festzulegen und die Verwaltung von Profil-und Nachrichtendiensten durchzuführen. 
+Bevor Sie mit Dienstanbietern und einem zugrunde liegenden Messagingsystem kommunizieren können, müssen Sie eine Sitzung einrichten. Eine MAPI-Sitzung ist ein Link von einem Client zu anderen MAPI-Komponenten. Als Ergebnis des erfolgreichen Startens einer Sitzung gibt MAPI an Clients einen Zeiger auf ein Sitzungsobjekt zurück – ein Objekt, das die **IMAPISession-Schnittstelle** implementiert. Weitere Informationen finden Sie unter [IMAPISession : IUnknown](imapisessioniunknown.md). Mit den Methoden der **IMAPISession-Schnittstelle** können Sie auf die Objekte von Adressbuch- und Nachrichtenspeicheranbietern zugreifen, auf mehrere Tabellen zugreifen, Formulare anzeigen, Eigenschaften des Transportanbieters festlegen und die Profil- und Nachrichtendienstverwaltung durchführen. 
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
 [Starten einer MAPI-Sitzung](starting-a-mapi-session.md)
   
-> Beschreibt das Starten einer MAPI-Sitzung und enthält Links zu Themen mit detaillierteren Informationen.
+> Beschreibt das Starten einer MAPI-Sitzung und enthält Links zu Themen mit ausführlicheren Informationen.
     
 [Beenden einer MAPI-Sitzung](ending-a-mapi-session.md)
   
@@ -35,14 +35,14 @@ Bevor Sie mit Dienstanbietern und einem zugrunde liegenden Messagingsystem kommu
     
 [Zugreifen auf Objekte mithilfe der Sitzung](accessing-objects-by-using-the-session.md)
   
-> Beschreibt die Verwendung eines Sitzungs Zeigers für den Zugriff auf Sitzungsobjekte.
+> Beschreibt die Verwendung eines Sitzungszeigers für den Zugriff auf Sitzungsobjekte.
     
-[Abrufen der primären und Anbieter Identität](retrieving-primary-and-provider-identity.md)
+[Abrufen der primären und Anbieteridentität](retrieving-primary-and-provider-identity.md)
   
-> Beschreibt die Eigenschaften, die zum Abrufen der primären und Anbieter Identität verwendet werden.
+> Beschreibt die Eigenschaften, die zum Abrufen der primären identität und der Anbieteridentität verwendet werden.
     
 [Statustabelle und Statusobjekte](status-table-and-status-objects.md)
   
-> Beschreibt, wie auf Informationen aus der Statustabelle zugegriffen wird.
+> Beschreibt den Zugriff auf Informationen aus der Statustabelle.
     
 

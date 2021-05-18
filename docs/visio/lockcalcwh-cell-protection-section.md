@@ -25,19 +25,19 @@ Sperrt das Auswahlrechteck eines Shapes, damit dieses nicht neu berechnet wird, 
 | TRUE  <br/> | Breite und Höhe können nicht neu berechnet werden.  <br/> |
 | FALSE  <br/> | Breite und Höhe können neu berechnet werden.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle Zelle LockCalcWH aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle LockCalcWH anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Zelle LockCalcWH  <br/> |
+| Zellenname:  <br/> | LockCalcWH  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle LockCalcWH aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die LockCalcWH-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowLock** <br/> |
 | Zellenindex:  <br/> |**visLockCalcWH** <br/> |
    

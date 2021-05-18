@@ -25,13 +25,13 @@ ms.locfileid: "33404435"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Trennt die ASCII-Darstellung des verknüpften Eintrags Bezeichners eines Objekts, in der Regel eine Nachricht in einem Nachrichtenspeicher, in der Eintrags-ID des Objekts im Speicher und der Eintrags-ID des Speichers. 
+Trennt die ASCII-Darstellung des zusammengesetzten Eintragsbezeichners eines Objekts , in der Regel eine Nachricht in einem Nachrichtenspeicher, in den Eintragsbezeichner dieses Objekts im Speicher und den Eintragsbezeichner des Speichers. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
    
 ```cpp
 HrDecomposeMsgID(
@@ -48,36 +48,36 @@ HrDecomposeMsgID(
 
  _psession_
   
-> in Zeiger auf die Sitzung, die von der Clientanwendung verwendet wird. 
+> [in] Zeiger auf die Sitzung, die von der Clientanwendung verwendet wird. 
     
  _szMsgID_
   
-> in Die Zeichenfolge, die die Eintrags-ID des Objekts darstellt. 
+> [in] Die Zeichenfolge, die den Eintragsbezeichner des Objekts darstellt. 
     
  _pcbStoreEID_
   
-> Out Zeiger auf die zurückgegebene Größe in Bytes des Eintrags Bezeichners des Nachrichtenspeichers, der das Objekt enthält. Wenn der _szMsgID_ -Parameter auf eine nicht zusammengesetzte Eintrags-ID-Zeichenfolge verweist, zeigt der Parameter _pcbStoreEID_ auf NULL. 
+> [out] Zeiger auf die zurückgegebene Größe des Eintragsbezeichners des Nachrichtenspeichers, der das Objekt enthält, in Bytes. Wenn der  _szMsgID-Parameter_ auf eine Nichtkompound-Eintrags-ID-Zeichenfolge zeigt, zeigt der  _Parameter "pcbStoreEID"_ auf Null. 
     
  _ppStoreEID_
   
-> Out Zeiger auf einen Zeiger auf den zurückgegebenen Eintragsbezeichner des Nachrichtenspeichers, der das Objekt enthält. Wenn der _szMsgID_ -Parameter auf eine nicht zusammengesetzte Eintrags-ID verweist, wird NULL im _ppStoreEID_ -Parameter zurückgegeben. 
+> [out] Zeiger auf einen Zeiger auf die zurückgegebene Eintrags-ID des Nachrichtenspeichers, der das Objekt enthält. Wenn der  _parameter szMsgID_ auf einen Nichtcompound-Eintragsbezeichner verweist, wird NULL im  _ppStoreEID-Parameter_ zurückgegeben. 
     
  _pcbMsgEID_
   
-> Out Zeiger auf die zurückgegebene Größe in Bytes des Eintrags Bezeichners des Objekts innerhalb des Speichers. Wenn der _szMsgID_ -Parameter auf eine nicht zusammengesetzte Eintrags-ID-Zeichenfolge verweist, ist der _pcbMsgEID_ -Parameter gleich dem Wert des _cbEID_ -Parameters. 
+> [out] Zeiger auf die zurückgegebene Größe des Eintragsbezeichners des Objekts im Speicher in Bytes. Wenn der _parameter szMsgID_ auf eine Nichtkompound-Eintrags-ID-Zeichenfolge verweist, entspricht der _parameter "pcbMsgEID"_ dem Wert des _cbEID-Parameters._ 
     
  _ppMsgEID_
   
-> Out Zeiger auf einen Zeiger auf die zurückgegebene Eintrags-ID-Zeichenfolge des Objekts innerhalb des Speichers. Wenn der _szMsgID_ -Parameter auf eine nicht zusammengesetzte Eintrags-ID zeigt, verweist _ppMsgEID_ auf einen Zeiger auf eine konvertierte Kopie des nicht verknüpften Eintrags Bezeichners. 
+> [out] Zeiger auf einen Zeiger auf die zurückgegebene Eintragsbezeichnerzeichenfolge des Objekts in seinem Speicher. Wenn der  _szMsgID-Parameter_ auf einen Nichtcompound-Eintragsbezeichner verweist, zeigt  _ppMsgEID_ auf einen Zeiger auf eine konvertierte Kopie der Nichtcompound-Eintrags-ID. 
     
 ## <a name="return-value"></a>Return value
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn der durch den _szMsgID_ -Parameter angegebene Bezeichner verknüpft ist, wird er aus ASCII konvertiert und in den Eintragsbezeichner des Objekts innerhalb des Nachrichtenspeichers und des Eintrags Bezeichners des Speichers aufgeteilt. Nicht zusammengesetzte Eintrags-ID-Zeichenfolgen werden einfach konvertiert und kopiert. Die zu Trenn Ende Verbund Bezeichner-Zeichenfolge wird in der Regel durch die [HrComposeMsgID](hrcomposemsgid.md) -Funktion erstellt. 
+Wenn der durch den  _szMsgID-Parameter_ angegebene Bezeichner zusammengesetzt ist, wird er aus ASCII konvertiert und in den Eintragsbezeichner des Objekts innerhalb des Nachrichtenspeichers und den Eintragsbezeichner des Speichers aufgeteilt. Nichtkompounde Eingabebezeichnerzeichenfolgen werden einfach konvertiert und kopiert. Die zu trennende Zeichenfolge für zusammengesetzte Bezeichner ist in der Regel eine, die von der [HrComposeMsgID-Funktion erstellt](hrcomposemsgid.md) wird. 
   
-Das Aufrufen der **HrDecomposeMsgID** -Funktion entspricht dem Aufrufen der [HrEntryIDFromSz](hrentryidfromsz.md) -Funktion und dann der [HrDecomposeEID](hrdecomposeeid.md) -Funktion. 
+Das Aufrufen **der HrDecomposeMsgID-Funktion** entspricht dem Aufrufen der [HrEntryIDFromSz-Funktion](hrentryidfromsz.md) und dann der [HrDecomposeEID-Funktion.](hrdecomposeeid.md) 
   
 

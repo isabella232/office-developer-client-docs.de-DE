@@ -1,5 +1,5 @@
 ---
-title: Starten eines neuen Formulars zum verFassen
+title: Starten eines neuen Verfassenformulars
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,29 +15,29 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32270056"
 ---
-# <a name="launching-a-new-compose-form"></a>Starten eines neuen Formulars zum verFassen
+# <a name="launching-a-new-compose-form"></a>Starten eines neuen Verfassenformulars
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Formularserver Implementierer sollten die folgende Abfolge von Methoden aufrufen zu ihren Formularserver-und Form-Objekten erwarten, wenn eine Clientanwendung eine neue Nachricht zum Verfassen öffnet:
+Die Implementierung von Formularservern sollte die folgende Abfolge von Methodenaufrufen an ihre Formularserver und Formularobjekte erwarten, wenn eine Clientanwendung eine neue Nachricht zum Verfassen öffnet:
   
-1. Die Clientanwendung Ruft die [IMAPIFormMgr:: ResolveMessageClass](imapiformmgr-resolvemessageclass.md) -Methode auf, um Klasseninformationen zur Nachrichtenklasse des Formular Servers abzurufen. 
+1. Die Clientanwendung ruft die [IMAPIFormMgr::ResolveMessageClass-Methode](imapiformmgr-resolvemessageclass.md) auf, um Klasseninformationen zur Nachrichtenklasse des Formularservers zu erhalten. 
     
-2. Die Clientanwendung Ruft [IMAPIFormMgr:: CreateForm](imapiformmgr-createform.md) auf, um ein neues Form-Objekt abzurufen. 
+2. Die Clientanwendung ruft [IMAPIFormMgr::CreateForm auf,](imapiformmgr-createform.md) um ein neues Formularobjekt zu erhalten. 
     
-3. Der MAPI-Formular-Manager lädt den Formularserver, falls er sich nicht bereits im Arbeitsspeicher befindet, und ruft eine [IMAPIForm](imapiformiunknown.md) -Schnittstelle vom Formularserver ab. 
+3. Der MAPI-Formular-Manager lädt den Formularserver, sofern er sich nicht bereits im Arbeitsspeicher befindet, und ruft eine [IMAPIForm-Schnittstelle](imapiformiunknown.md) vom Formularserver ab. 
     
-4. Die Clientanwendung verwendet die resultierende **IMAPIForm** -Schnittstelle und ruft die [IUnknown:: QueryInterface](https://msdn.microsoft.com/library/54d5ff80-18db-43f2-b636-f93ac053146d%28Office.15%29.aspx) -Methode auf, um die [IPersistMessage](ipersistmessageiunknown.md) -Schnittstelle des Objekts abzurufen. 
+4. Die Clientanwendung verwendet die resultierende **IMAPIForm-Schnittstelle** und ruft die [IUnknown::QueryInterface-Methode](https://msdn.microsoft.com/library/54d5ff80-18db-43f2-b636-f93ac053146d%28Office.15%29.aspx) auf, um die [IPersistMessage-Schnittstelle](ipersistmessageiunknown.md) des Objekts zu erhalten. 
     
-5. Die Clientanwendung Ruft die [IPersistMessage:: InitNew](ipersistmessage-initnew.md) -Methode auf, um das Form-Objekt mit [IMessage](imessageimapiprop.md)-, View Context-und Advise-Objekten zu verbinden.
+5. Die Clientanwendung ruft die [IPersistMessage::InitNew-Methode](ipersistmessage-initnew.md) auf, um das Formularobjekt [IMessage-](imessageimapiprop.md), Ansichtskontext- und Ratensenkenobjekten zuzuordnen.
     
-6. Die Clientanwendung Ruft die [IMAPIForm::D overb](imapiform-doverb.md) -Methode auf, um das geöffnete Verb aufzurufen. 
+6. Die Clientanwendung ruft die [IMAPIForm::D oVerb-Methode](imapiform-doverb.md) auf, um das offene Verb auf aufruft. 
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Formular Server interAktionen](form-server-interactions.md)
+[Formularserverinteraktionen](form-server-interactions.md)
 

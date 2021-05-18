@@ -25,23 +25,23 @@ Legt fest, ob das Shape durch Ablegen auf einer Gruppe dieser Gruppe hinzugefüg
 |TRUE  <br/> |Das Shape kann durch Ablegen auf einer Gruppe dieser Gruppe hinzugefügt werden.  <br/> |
 |FALSE  <br/> |Das Shape kann einer Gruppe nicht hinzugefügt werden.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Sie können diesen Wert auch festlegen, indem Sie das Shape auswählen, auf der Registerkarte [Entwickler](run-in-developer-mode-display-the-developer-tab.md) auf **Verhalten** klicken und anschließend das Kontrollkästchen **Shape beim Ablegen der Gruppe hinzufügen** aktivieren. 
   
-Sie müssen nicht nur dieses Verhalten für ein Shape aktivieren, sondern auch, dass eine Gruppe Shapes akzeptiert, die hineingezogen werden. Wählen Sie dazu die Gruppe aus, klicken Sie auf der Registerkarte [Entwickler](run-in-developer-mode-display-the-developer-tab.md) auf **Verhalten** , und aktivieren Sie dann das Kontrollkästchen **verworfene Shapes akzeptieren** . Dieser Wert wird in der Zelle "IsDropTarget im Abschnitt Group Properties gespeichert. 
+Zusätzlich zum Aktivieren dieses Verhaltens für ein Shape müssen Sie eine Gruppe auch zum Akzeptieren von Shapes aktivieren, die in dieses Shape gezogen werden. Wählen Sie dazu die Gruppe aus, [](run-in-developer-mode-display-the-developer-tab.md) **klicken** Sie auf der Registerkarte Entwickler auf Verhalten, und aktivieren Sie dann das Kontrollkästchen **Verworfene Shapes** akzeptieren. Dieser Wert wird in der Zelle IsDropTarget im Abschnitt Gruppeneigenschaften gespeichert. 
   
-Wenn Sie einen Verweis auf die Zelle Zelle IsDropSource aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle IsDropSource anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Zelle IsDropSource  <br/> |
+|Zellenname:  <br/> |IsDropSource  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle IsDropSource aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die IsDropSource-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowMisc** <br/> |
 |Zellenindex:  <br/> |**visDropSource** <br/> |
    

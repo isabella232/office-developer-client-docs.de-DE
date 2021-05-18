@@ -20,7 +20,7 @@ Speichert den lokalen Formatierungswert eines Shapes, wenn Sie ein Design anwend
   
 ## <a name="syntax"></a>Syntax
 
-THEMERESTORE ()
+THEMERESTORE()
   
 ## <a name="example"></a>Beispiel
 

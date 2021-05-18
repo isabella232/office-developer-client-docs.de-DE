@@ -1,5 +1,5 @@
 ---
-title: Übersicht über den MAPI-Transport Anbieter
+title: Übersicht über den MAPI-Transportanbieter
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,18 +15,18 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33404575"
 ---
-# <a name="mapi-transport-provider-overview"></a>Übersicht über den MAPI-Transport Anbieter
+# <a name="mapi-transport-provider-overview"></a>Übersicht über den MAPI-Transportanbieter
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Transport Anbieter verarbeiten Nachrichtenübertragung und-Empfang und implementieren ggf. Sicherheit. Sie kümmern sich auch um alle erforderlichen Vorverarbeitungs-und Nachbearbeitungsaufgaben. Es gibt in der Regel einen Transportanbieter für jedes aktive Messagingsystem.
+Transportanbieter verarbeiten nachrichtenübermittlung und -empfang und implementieren bei Bedarf Sicherheit. Außerdem übernehmen sie alle erforderlichen Vor- und Nachverarbeitungsaufgaben. Es gibt in der Regel einen Transportanbieter für jedes aktive Messagingsystem.
   
-Client Anwendungen kommunizieren mit dem Transportanbieter über einen Nachrichtenspeicher Anbieter. 
+Clientanwendungen kommunizieren mit dem Transportanbieter über einen Nachrichtenspeicheranbieter. 
   
-Transport Anbieter registrieren sich bei MAPI, um einen oder mehrere bestimmte Typen von Empfänger Einträgen zu behandeln. Wenn eine Nachricht gesendet werden kann, muss MAPI bestimmen, welcher Transportanbieter die Übertragung verarbeiten soll. Je nach Empfängertyp kann MAPI sogar mehrere Transportanbieter aufrufen. Wenn ein nicht verfügbarer Transportanbieter der einzige ist, der den Empfänger verarbeiten kann, wird die Nachrichtenübertragung verschoben, bis eine Verbindung mit diesem Anbieter hergestellt werden kann.
+Transportanbieter registrieren sich bei MAPI, um einen oder mehrere bestimmte Typen von Empfängereinträgen zu verarbeiten. Wenn eine Nachricht gesendet werden kann, muss MAPI bestimmen, welcher Transportanbieter die Übertragung verarbeiten soll. Je nach Empfängertyp kann MAPI sogar mehrere Transportanbieter aufrufen. Wenn ein nicht verfügbarer Transportanbieter der einzige ist, der den Empfänger verarbeiten kann, wird die Nachrichtenübertragung verschoben, bis eine Verbindung mit diesem Anbieter wiederhergestellt werden kann.
   
-Einige Messagingsysteme sind sichere Systeme; alle potenziellen Benutzer müssen eine Reihe gültiger Anmeldeinformationen eingeben, bevor der Zugriff zulässig ist. MAPI verhindert den unbefugten Zugriff auf solche Secure Messaging-Systeme, indem der Transportanbieter Anmeldeinformationen zur Anmeldezeit überprüfen kann. 
+Einige Messagingsysteme sind sichere Systeme. Alle potenziellen Benutzer müssen einen Satz gültiger Anmeldeinformationen eingeben, bevor der Zugriff zulässig ist. MAPI verhindert nicht autorisierten Zugriff auf solche sicheren Messagingsysteme, indem der Transportanbieter anmeldeinformationen zum Zeitpunkt der Anmeldung überprüft. 
   
 

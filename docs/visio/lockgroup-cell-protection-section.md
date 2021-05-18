@@ -25,21 +25,21 @@ Sperrt eine Gruppe, damit die Gruppierung nicht aufgehoben werden kann.
 |TRUE  <br/> |Gruppierung der Gruppe kann nicht aufgehoben werden.  <br/> |
 |FALSE  <br/> |Gruppierung der Gruppe kann aufgehoben werden.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Wenn Sie den Wert für LockGroupCell auf TRUE festlegen, wird auch das Löschen von Shapes verhindert, die Mitglieder der Gruppe sind.
   
-Wenn Sie einen Verweis auf die Zelle LockGroup aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle LockGroup anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Zelle LockGroup  <br/> |
+|Zellenname:  <br/> |LockGroup  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LockGroup nach Index aus einem Programm abrufen möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle LockGroup nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowLock** <br/> |
 |Zellenindex:  <br/> |**visLockGroup** <br/> |
    

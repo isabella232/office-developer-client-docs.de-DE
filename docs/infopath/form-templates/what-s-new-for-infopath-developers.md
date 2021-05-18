@@ -1,5 +1,5 @@
 ---
-title: Neuigkeiten für InfoPath-Entwickler
+title: Neuerungen für InfoPath-Entwickler
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -25,17 +25,17 @@ Mit InfoPath 2013 erstellte Formularvorlagen unterstützen weiterhin für die Kl
 
 In den folgenden Abschnitten werden diese Features und Verbesserungen, die für InfoPath-Entwickler interessant sind, kurz beschrieben:
   
-- Neue Möglichkeiten beim Schreiben und Bearbeiten von Code
+- Neue Möglichkeit zum Schreiben und Bearbeiten von Code
     
 - SharePoint-Sandkastenlösungen
     
 - Veröffentlichen von Formularen mit einem Klick
     
-- Optimieren von SharePoint-Listenformularen
+- Verbessern von SharePoint-Listenformularen
     
 - Hosten von Formularen auf Portalseiten mithilfe des InfoPath-Webparts
     
-- Webformulare mit umfangreicher Funktionalität
+- Funktionsreichere Webformulare
     
 - Standardkonforme Browserformulare
     

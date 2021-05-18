@@ -1,5 +1,5 @@
 ---
-title: Benutzeroberflächenbefehle (Access Custom Web App)
+title: Benutzeroberflächenbefehle (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33421690"
 ---
-# <a name="user-interface-commands-access-custom-web-app"></a>Benutzeroberflächenbefehle (Access Custom Web App)
+# <a name="user-interface-commands-access-custom-web-app"></a>Benutzeroberflächenbefehle (benutzerdefinierte Access-Web-App)
 
 > [!IMPORTANT]
 > Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
@@ -27,6 +27,6 @@ ms.locfileid: "33421690"
     
 - [MessageBox-Makroaktion (benutzerdefinierte Access-Web-App)](messagebox-macro-action-access-custom-web-app.md)
     
-- [OpenPopup-Makroaktion (Access Custom Web App)](openpopup-macro-action-access-custom-web-app.md)
+- [OpenPopup-Makroaktion (benutzerdefinierte Access-Web-App)](openpopup-macro-action-access-custom-web-app.md)
     
 

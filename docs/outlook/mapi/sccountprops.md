@@ -25,13 +25,13 @@ ms.locfileid: "33404974"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bestimmt die Größe eines Eigenschafts Wertarrays in Byte und überprüft den dem Array zugeordneten Arbeitsspeicher. 
+Bestimmt die Größe eines Eigenschaftswertarrays in Bytes und überprüft den dem Array zugeordneten Arbeitsspeicher. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 SCODE ScCountProps(
@@ -45,15 +45,15 @@ SCODE ScCountProps(
 
  _cprop_
   
-> in Die Anzahl der Eigenschaften im durch den _rgprop_ -Parameter angegebenen Array. 
+> [in] Anzahl der Eigenschaften im Array, das durch den  _rgprop-Parameter angegeben_ wird. 
     
  _rgprop_
   
-> in Zeiger auf einen Bereich in einem Array von [SPropValue](spropvalue.md) -Strukturen, der die Eigenschaften definiert, deren Größe bestimmt werden soll. Dieser Bereich beginnt nicht unbedingt am Anfang des Arrays. 
+> [in] Zeiger auf einen Bereich in einem Array von [SPropValue-Strukturen,](spropvalue.md) der die Eigenschaften definiert, deren Größe bestimmt werden soll. Dieser Bereich beginnt nicht unbedingt am Anfang des Arrays. 
     
- _PCB_
+ _leiterplatte_
   
-> Out Optionaler Zeiger auf die Größe des Eigenschaften Arrays in Byte.
+> [out] Optionaler Zeiger auf die Größe des Eigenschaftenarrays in Bytes.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -63,13 +63,13 @@ S_OK
     
 MAPI_E_INVALID_PARAMETER 
   
-> Mindestens eine Eigenschaft im Eigenschafts Wertarray hat einen Bezeichner von PROP_ID_NULL oder PROP_ID_INVALID, oder das Eigenschaftenarray enthält eine mehrwertige Eigenschaft ohne Eigenschaftswerte.
+> Mindestens eine Eigenschaft im Eigenschaftswertarray hat den Bezeichner PROP_ID_NULL oder PROP_ID_INVALID, oder das Eigenschaftenarray enthält eine mehrwertige Eigenschaft ohne Eigenschaftswerte.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn NULL im _PCB_ -Parameter übergeben wird, überprüft die **ScCountProps** -Funktion das Array der Benachrichtigungen, aber es erfolgt keine Zählung. Wenn ein Wert ungleich NULL in _PCB_übergeben wird, bestimmt die **ScCountNotifications** -Funktion die Größe des Arrays und speichert die Ursache _PCB_. Der _PCB_ -Parameter muss so hoch sein, dass er das gesamte Array enthält. 
+Wenn NULL im  _Parameter "pcb"_ übergeben wird, überprüft die **ScCountProps-Funktion** das Array der Benachrichtigungen, es wird jedoch keine Zählung durchgeführt. Wenn ein Nicht-Null-Wert _in_ einer Leiterplatte übergeben wird, bestimmt die **ScCountNotifications-Funktion** die Größe des Arrays und speichert die Ursache _der Leiterplatte._ Der  _Parameter "pcb"_ muss groß genug sein, um das gesamte Array enthalten zu können. 
   
-Wie gezählt, überprüft **ScCountProps** den dem Array zugeordneten Arbeitsspeicher. **ScCountProps** funktioniert nur mit Eigenschaften, deren MAPI-Informationen enthält. 
+Während der Zählung **überprüft ScCountProps** den dem Array zugeordneten Arbeitsspeicher. **ScCountProps funktioniert** nur mit Eigenschaften, über die MAPI Über Informationen verfügt. 
   
 ## <a name="see-also"></a>Siehe auch
 

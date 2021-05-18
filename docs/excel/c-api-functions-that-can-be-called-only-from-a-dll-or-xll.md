@@ -1,11 +1,11 @@
 ---
-title: C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden können
+title: C-API-Funktionen, die nur von einer DLL oder XLL aufgerufen werden können
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 keywords:
-- Funktionen [Excel 2007], c-API, die von dll oder XLL aufgerufen wird
+- funktionen [excel 2007], c api called from dll or xll
 localization_priority: Normal
 ms.assetid: 87c9e75b-c364-4428-a169-010886313b85
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -16,11 +16,11 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33423118"
 ---
-# <a name="c-api-functions-that-can-be-called-only-from-a-dll-or-xll"></a>C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden können
+# <a name="c-api-functions-that-can-be-called-only-from-a-dll-or-xll"></a>C-API-Funktionen, die nur von einer DLL oder XLL aufgerufen werden können
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Die C-API bietet 15 Microsoft Excel-Rückruffunktionen, die nur mithilfe der **Excel4**-, **Excel4v**-, **Excel12**-oder **Excel12v** -Funktionen (oder durch eine dieser Funktionen indirekt mithilfe der Frameworkfunktionen Excel) aufgerufen werden können. ** **oder **Excel12f**). Das heißt, Sie können nur aus einer DLL oder XLL aufgerufen werden.
+Die C-API bietet 15 Microsoft Excel-Rückruffunktionen, die nur mithilfe der **Funktionen Excel4,** **Excel4v,** **Excel12** oder **Excel12v** aufgerufen werden können (oder von einer dieser Funktionen indirekt mithilfe der Frameworkfunktionen **Excel** oder **Excel12f**). Dies bedeutet, dass sie nur von einer DLL oder XLL aufgerufen werden können.
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 

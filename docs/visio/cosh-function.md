@@ -22,17 +22,17 @@ Gibt den hyperbolischen Kosinus eines Winkels zurück.
   
 ## <a name="syntax"></a>Syntax
 
-COSH ( *Angle*) 
+COSH( *angle*) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Winkel_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Winkel, dessen hyperbolischer Kosinus abgerufen werden soll.  <br/> |
+| _angle_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Winkel, dessen hyperbolischer Kosinus abgerufen werden soll.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die COSH-Funktion verwendet Radiant, es sei denn, Sie geben eine andere Maßeinheit im *Winkel* an. 
+Die COSH-Funktion verwendet Bogenmaße, es sei denn, Sie geben eine andere Maßeinheit im Winkel *an.* 
   
 ## <a name="example"></a>Beispiel
 

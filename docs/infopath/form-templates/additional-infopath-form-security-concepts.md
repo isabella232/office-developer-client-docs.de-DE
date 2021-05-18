@@ -1,11 +1,11 @@
 ---
-title: Zusätzliche Sicherheitskonzepte für InfoPath-Formulare
+title: Weitere Konzepte zur InfoPath-Formularsicherheit
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 77425a61-bf33-b3d8-442a-caee48e54a48
-description: Das Sicherheitsmodell von Microsoft InfoPath basiert auf dem von Internet Explorer implementierten Sicherheitsmodell. Das Sicherheitsmodell von Internet Explorer schützt Ihren Computer mithilfe von Sicherheitszonen und -stufen vor unsicheren Vorgängen. Zusammen mit dem Sicherheitsmodell von Internet Explorer bietet InfoPath zwei Formularbereitstellungsmethoden, die die Funktionsweise eines InfoPath-Formulars innerhalb dieses Sicherheitsmodells bestimmen.
+description: Das Sicherheitsmodell von Microsoft InfoPath basiert auf dem von Internet Explorer implementierten Sicherheitsmodell. Das Sicherheitsmodell von Internet Explorer schützt Ihren Computer mithilfe von Sicherheitszonen und -stufen vor unsicheren Vorgängen. Zusammen mit dem Sicherheitsmodell von Internet Explorer bietet InfoPath zwei Formularbereitstellungsarten, die die Funktionsweise eines InfoPath-Formulars innerhalb dieses Sicherheitsmodells beeinflussen.
 ms.openlocfilehash: 00b0e306507db19f55059fba91277af1ad1714b9
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -179,6 +179,6 @@ Sie aktivieren oder deaktivieren das Zusammenführen von Formularen mithilfe des
 
 Sie können das Feature zum Senden von Formularen deaktivieren, um Benutzer am Senden von Formularen zu hindern.
   
-Das Senden von Formularen können Sie im Dialogfeld **Absendeoptionen ** aktivieren bzw. deaktivieren. Dieses Dialogfeld wird angezeigt, wenn Sie im Entwurfsmodus auf der Registerkarte **Daten** auf **Absendeoptionen** klicken. Wenn das Senden von Formularen deaktiviert ist, können Benutzer beim Ausfüllen eines Formulars nicht auf der Registerkarte **Start** auf **Absenden** klicken. 
+Das Senden von Formularen können Sie im Dialogfeld **Absendeoptionen** aktivieren bzw. deaktivieren. Dieses Dialogfeld wird angezeigt, wenn Sie im Entwurfsmodus auf der Registerkarte **Daten** auf **Absendeoptionen** klicken. Wenn das Senden von Formularen deaktiviert ist, können Benutzer beim Ausfüllen eines Formulars nicht auf der Registerkarte **Start** auf **Absenden** klicken. 
   
 

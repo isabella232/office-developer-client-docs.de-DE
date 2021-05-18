@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - XLOper12ToXLOper
 keywords:
-- xloper12toxloper-Funktion [Excel 2007]
+- xloper12toxloper-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: b46f87c4-778b-4502-be57-c3725f73a644
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -22,7 +22,7 @@ ms.locfileid: "33422908"
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Konvertierungsroutine, die zum Konvertieren vom neuen **XLOPER12** in den alten **XLOPER**verwendet wird.
+Konvertierungsroutine, die zum Konvertieren von der neuen **XLOPER12 in** die alte **XLOPER verwendet wird.**
   
 ```cs
 BOOL XLOper12ToXLOper(LPXLOPER12 pxloper12, LPXLOPER pxloper);
@@ -32,31 +32,31 @@ BOOL XLOper12ToXLOper(LPXLOPER12 pxloper12, LPXLOPER pxloper);
 
 _pxloper12_ (**LPXLOPER12**)
   
-Zeiger auf den zu konvertierenden Quell- **XLOPER12** . 
+Zeiger auf die zu **konvertierte XlOPER12-Quelle.** 
   
 _pxloper_ (**LPXLOPER**)
   
-Zeiger auf die Ziel- **XLOPER** , die den konvertierten Wert enthalten soll. 
+Zeiger auf das **XlOPER-Ziel,** das den konvertierten Wert enthalten soll. 
   
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-**True** , wenn die Konvertierung erfolgreich war, andernfalls **false** . 
+**TRUE,** wenn die Konvertierung erfolgreich war, **andernfalls FALSE.** 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Je nach Typ des **XLOPER12**weist diese Funktion einen neuen Speicherpuffer für die konvertierten Werte zu, auf die im Ziel **XLOPER**verwiesen wird. Der Aufrufer ist für das Freigeben von Speicher für die Kopie verantwortlich, wenn die Konvertierung erfolgreich ist; **FreeXLOperT** kann verwendet werden, oder es kann direkt mit **Free**durchgeführt werden.
+Je nach Typ der **XLOPER12** weist diese Funktion einen neuen Speicherpuffer für die konvertierten Werte zu, auf die im **XlOPER-Zielobjekt verwiesen wird.** Der Aufrufer ist dafür verantwortlich, alle der Kopie zugeordneten Arbeitsspeicher frei zu machen, wenn die Konvertierung erfolgreich war. **FreeXLOperT** kann verwendet werden, oder es kann direkt mithilfe von kostenlos **durchgeführt werden.**
   
-Wenn die Konvertierung fehlschlägt, muss der Aufrufer keinen Arbeitsspeicher freigeben.
+Wenn die Konvertierung fehlschlägt, muss der Aufrufer keinen Arbeitsspeicher freispeichern.
   
-Die Konvertierung von einer **XLOPER12** in eine **XLOPER** kann fehlschlagen, wenn die **XLOPER12** ein Array oder einen Verweis enthält, das zu lang ist, oder eine Zeichenfolge, die für die **XLOPER** zu lange enthalten ist. 
+Die Konvertierung von **einem XLOPER12** in einen **XLOPER** kann fehlschlagen, wenn **xlOPER12** ein Array oder einen Verweis enthält, das zu groß oder eine Zeichenfolge ist, die zu lang ist, damit **xlOPER** enthalten kann. 
   
-**XLOPER12** Zeichenfolgen mit Unicode-Zeichenfolge werden in **XLOPER** ASCII-Byte Zeichenfolgen in einer gebietsschemaabhängigen Form konvertiert. 
+**XLOPER12** Unicode-Zeichenfolgen mit breiten  Zeichen werden auf eine vom Locale abhängige Weise in XLOPER-ASCII-Bytezeichenfolgen konvertiert. 
   
-**XLOPER12** **xltypeInt** ist eine 32-Bit-Ganzzahl mit Vorzeichen, wohingegen die **XLOPER** - **xltypeInt** eine 16-Bit-Ganzzahl mit Vorzeichen ist. Wenn eine angegebene **XLOPER12** -Ganzzahl den Grenzwert einer **XLOPER** -Ganzzahl überschreitet, wird die ganze Zahl in ein 8-Byte-Double konvertiert und in einer **XLOPER** vom Typ **xltypeNum**zurückgegeben. Dies ist der einzige Fall, in dem diese Funktion den Typ des konvertierten **XLOPER**ändert.
+**XlOPER12** **xltypeInt** ist eine ganzzahlige 32-Bit-Signierte, während **xlOPER** **xltypeInt** eine 16-Bit-ganze Zahl ist. Wenn eine angegebene **XLOPER12-Ganzzahl** den Grenzwert einer **XLOPER-Ganzzahl** überschreitet, wird die ganze Zahl in ein 8-Byte-Double konvertiert und in einem **XLOPER** vom Typ **xltypeNum** zurückgegeben. Dies ist der einzige Fall, in dem diese Funktion den Typ des konvertierten **XLOPER ändert.**
   
 ### <a name="example"></a>Beispiel
 
-Sehen Sie sich `\SAMPLES\FRAMEWRK\FRAMEWRK.C` die Datei für den Code für diese Funktion an. 
+In der Datei  `\SAMPLES\FRAMEWRK\FRAMEWRK.C` finden Sie den Code für diese Funktion. 
   
 ## <a name="see-also"></a>Siehe auch
 

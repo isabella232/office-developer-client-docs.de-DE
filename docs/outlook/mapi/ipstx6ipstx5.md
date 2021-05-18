@@ -29,18 +29,18 @@ Diese Schnittstelle bietet Hilfsfunktionen bei der Replikation über die IOSTX-S
   
 |||
 |:-----|:-----|
-|Bereitgestellt von  <br/> |Abfrage auf [IMsgStore](imsgstoreimapiprop.md) <br/> |
+|Bereitgestellt von  <br/> |Abfrage in [IMsgStore](imsgstoreimapiprop.md) <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IPSTX6  <br/> |
    
 ## <a name="vtable-order"></a>Vtable-Reihenfolge
 
 |||
 |:-----|:-----|
-| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
-| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
 |**[DisconnectStore](ipstx6-disconnectstore.md)** <br/> |Trennt den lokalen Speicher.  <br/> |
-| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
-| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

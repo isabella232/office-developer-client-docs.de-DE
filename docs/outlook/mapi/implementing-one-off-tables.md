@@ -1,5 +1,5 @@
 ---
-title: Implementieren von einmaligen Tabellen
+title: Implementieren One-Off Tabellen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,26 +15,26 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33421641"
 ---
-# <a name="implementing-one-off-tables"></a>Implementieren von einmaligen Tabellen
+# <a name="implementing-one-off-tables"></a>Implementieren One-Off Tabellen
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ihr Anbieter kann eine oder mehrere einmalige Tabellen implementieren. Eine einmalige Tabelle ist eine Zusammenfassungsliste mit einmaligen Vorlagen, die zum Erstellen von Empfängern verwendet werden, entweder direkt in einem Container oder in der Empfängerliste einer ausgehenden Nachricht. Eine einmalige Vorlage ist ein Formular, mit dem Benutzerdaten eingeben können, die für einen bestimmten Adresstyp relevant sind. Wenn der Benutzer die Arbeit mit der Vorlage abgeschlossen hat, erstellt der Anbieter den neuen Empfänger und fügt ihn der Nachricht hinzu. In der Regel verarbeitet jede Vorlage einen einzelnen Adresstyp. Es ist jedoch möglich, dass eine Vorlage mehrere Typen oder mehrere Vorlagen für den gleichen Typ verarbeitet. 
+Ihr Anbieter kann eine oder mehrere einmal enthaltene Tabellen implementieren. Eine einmal aufgeführte Tabelle ist eine Zusammenfassungsliste von einmal erstellten Vorlagen, die zum Erstellen von Empfängern verwendet werden, entweder direkt in einem Container oder in der Empfängerliste einer ausgehenden Nachricht. Eine einmalvorlage ist ein Formular, das Benutzer für die Eingabe von Daten verwenden, die für einen bestimmten Adresstyp relevant sind. Wenn der Benutzer mit der Vorlage fertig ist, erstellt ihr Anbieter den neuen Empfänger und fügt ihn der Nachricht hinzu. In der Regel verarbeitet jede Vorlage einen einzelnen Adresstyp. Es ist jedoch möglich, dass eine Vorlage mehrere Typen oder mehrere Vorlagen mit demselben Typ verarbeiten kann. 
   
-Ihr Anbieter muss die **OpenEntry** -Methode für jede Vorlage unterstützen, die in der einmaligen Tabelle enthalten ist. Die Implementierung von **OpenEntry** sollte eine Anzeigetabelle für die Vorlage abrufen. MAPI verwendet die Anzeigetabelle, um die Vorlage für den Benutzer sichtbar zu machen. 
+Ihr Anbieter muss die **OpenEntry-Methode** für jede Vorlage unterstützen, die er in der einmal aufgeführten Tabelle enthält. Die Implementierung von **OpenEntry** sollte eine Anzeigetabelle für die Vorlage abrufen. MAPI verwendet die Anzeigetabelle, um die Vorlage für den Benutzer sichtbar zu machen. 
   
-Obwohl die meisten Zeilen in einmaligen Tabellenvorlagen darstellen, können einige der Zeilen zum Kategorisieren oder Gruppieren von Vorlagen verwendet werden. Ob eine Zeile in einer einmaligen Tabelle eine Vorlage darstellt, wird durch den Wert der **PR_SELECTABLE** ([pidtagselectable (](pidtagselectable-canonical-property.md))-Spalte angezeigt. Zeilen, die Vorlagen darstellen, haben die PR_SELECTABLE-Spalte auf TRUE festgelegt; Zeilen, die keine Vorlagen darstellen, sind auf FALSE festgelegt.
+Obwohl die meisten Zeilen in einmal erstellten Tabellen Vorlagen darstellen, können einige der Zeilen zum Kategorisieren oder Gruppieren von Vorlagen verwendet werden. Ob eine Zeile in einer #A0 eine Vorlage darstellt, wird durch den Wert der Spalte **PR_SELECTABLE** ([PidTagSelectable](pidtagselectable-canonical-property.md)) angegeben. Zeilen, die Vorlagen darstellen, PR_SELECTABLE auf TRUE festgelegt; Zeilen, die keine Vorlagen darstellen, haben sie auf FALSE festgelegt.
   
-MAPI definiert drei Arten von einmaligen Tabellen:
+MAPI definiert drei Arten von einmal erstellten Tabellen:
   
-- Eine einmalige Tabelle, die die von einem einzelnen Container unterstützten Vorlagen widerspiegelt
+- Eine einzelne Tabelle, die die Vorlagen widerspiegelt, die von einem einzelnen Container unterstützt werden
     
-- Eine einmalige Tabelle, die alle vom Anbieter unterstützten Vorlagen widerspiegelt 
+- Eine Einmaltabelle, die alle von Ihrem Anbieter unterstützten Vorlagen widerspiegelt 
     
-- Eine einmalige Tabelle, die alle Vorlagen widerspiegelt, die alle Anbieter im Profil unterstützen, sowie einige, die von MAPI unterstützt werden
+- Eine einmalige Tabelle, die alle Vorlagen widerspiegelt, die alle Anbieter im Profil unterstützen, sowie einige, die VON MAPI unterstützt werden
     
-Die ersten beiden Typen werden von Anbietern implementiert, die die Erstellungs Empfänger unterstützen, entweder in einer Nachricht oder in einem Container. Ihr Anbieter kann den gleichen Satz oder einen anderen Satz von Vorlagen in seine einmaligen Tabellen aufnehmen. Der Hauptunterschied zwischen den beiden Typen besteht darin, dass die Anbieter Tabelle Vorlagen zum Erstellen von Empfängern enthält, die für ausgehende Nachrichten verwendet werden können, und Ihre Container Tabelle sollte Vorlagen zum Erstellen von Empfängern sein, die Ihrem Container hinzugefügt werden sollen. Ein Container kann nur eine eingeschränkte Gruppe von Vorlagen unterstützen, aber die einmalige Tabelle des Anbieters sollte alle vom Anbieter unterstützten Vorlagen aufweisen.
+Die ersten beiden Typen werden von Anbietern implementiert, die die Erstellungsempfänger unterstützen, entweder in einer Nachricht oder in einem Container. Ihr Anbieter kann denselben Satz oder einen anderen Satz von Vorlagen in seine einmal festgelegten Tabellen enthalten. Der Hauptunterschied zwischen den beiden Typen ist, dass Ihre Anbietertabelle Vorlagen zum Erstellen von Empfängern enthalten soll, die für ausgehende Nachrichten verwendet werden können, und ihre Containertabelle muss Vorlagen zum Erstellen von Empfängern enthalten, die Ihrem Container hinzugefügt werden sollen. Ein Container unterstützt möglicherweise nur einen eingeschränkten Satz von Vorlagen, aber die einzelne Tabelle des Anbieters sollte alle vom Anbieter unterstützten Vorlagen enthalten.
   
-Der dritte Typ der einmaligen Tabelle wird von MAPI implementiert; Anbieter erhalten Zugriff darauf durch Aufrufen von [IMAPISupport:: GetOneOffTable](imapisupport-getoneofftable.md). Die MAPI-einmalige Tabelle ist die Vereinigung aller Anbieter Tabellen; Sie enthält jede Vorlage, die von jedem Anbieter im Profil unterstützt wird. Sie enthält auch Vorlagen, die von MAPI unterstützt werden. Ihr Anbieter kann diese Tabelle anstelle der für einen Container angeforderten Tabelle verwenden. Die Vorlagen in dieser Tabelle können jedoch auch zum Erstellen von Empfängern für ausgehende Nachrichten verwendet werden.
+Der dritte Typ der einmal aufgeführten Tabelle wird von MAPI implementiert. Anbieter erhalten Zugriff darauf, indem [sie IMAPISupport::GetOneOffTable aufrufen.](imapisupport-getoneofftable.md) Die #A0 ist die Vereinigung aller Anbietertabellen. Sie enthält jede Vorlage, die von jedem Anbieter im Profil unterstützt wird. Es enthält auch Vorlagen, die von MAPI unterstützt werden. Ihr Anbieter kann diese Tabelle an stelle der für einen Container angeforderten Tabelle verwenden. Die Vorlagen in dieser Tabelle können jedoch auch zum Erstellen von Empfängern für ausgehende Nachrichten verwendet werden.
   
 

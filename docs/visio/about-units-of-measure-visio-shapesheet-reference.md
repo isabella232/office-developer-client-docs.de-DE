@@ -1,5 +1,5 @@
 ---
-title: Informationen zu Maßeinheiten (Visio-ShapeSheet-Referenz)
+title: Informationen zu Maßeinheiten (Visio ShapeSheet Reference)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -16,11 +16,11 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32360452"
 ---
-# <a name="about-units-of-measure-visio-shapesheet-reference"></a>Informationen zu Maßeinheiten (Visio-ShapeSheet-Referenz)
+# <a name="about-units-of-measure-visio-shapesheet-reference"></a>Informationen zu Maßeinheiten (Visio ShapeSheet Reference)
 
 Wenn Sie Felder in Text einfügen oder Formeln erstellen, geben Sie häufig Maßeinheiten für die eingegebenen Werte an.
   
-Microsoft Visio wertet das Ergebnis einer Formel je nach der Zelle, in der Sie die Formel eingeben, unterschiedlich aus. In general, cells that represent shape position, a dimension, or an angle require a number-unit pair that consists of a number and the qualifying units needed to interpret the number. Many other cells don't require units and evaluate to a string, to TRUE or FALSE, or to an index. Beispiel: die gleiche Formel, die in der **Zelle FillForegnd** -Zelle die Farbe 5 aus der Farbpalette der Zeichnung angibt, ist true (und sperrt die Breite der Form) in der Zelle LockWidth-Zelle. 
+Microsoft Visio wertet das Ergebnis einer Formel abhängig von der Zelle, in der Sie die Formel eingeben, unterschiedlich aus. In general, cells that represent shape position, a dimension, or an angle require a number-unit pair that consists of a number and the qualifying units needed to interpret the number. Many other cells don't require units and evaluate to a string, to TRUE or FALSE, or to an index. Die gleiche Formel, die in der **Zelle FillForegnd** beispielsweise Farbe 5 aus der Farbpalette der Zeichnung bedeutet, bedeutet TRUE (und sperrt die Breite des Shapes) in der Zelle LockWidth. 
   
 Geben Sie immer eine Maßeinheit an, wenn Sie eine Formel in eine Zelle eingeben, für die ein Bemaßungswert erforderlich ist. Wenn Sie keine Maßeinheit angeben, verwendet Visio die Standardeinheit für diese Zelle. Hierbei kann es sich um Seiteneinheiten, Zeichnungseinheiten, Einheitenoptionen, Einheiten für die Dauer und Winkeleinheiten handeln.
   
@@ -70,9 +70,9 @@ Wenn Sie beispielsweise 45,635° eingeben, zeigt Visio den äquivalenten Wert al
    
 ## <a name="fractional-units-of-measure"></a>Maßeinheiten für Bruchzahlen
 
-Sie können Bruch Maßeinheiten in der Zelle **DrawingScale** angeben, um die Anzahl der Lineal-Unterabteilungen zu beeinflussen, die Visio im Zeichnungsfenster anzeigt. By default, Visio divides distances into tenths when drawing its rulers. Wenn Sie Fractional Maßeinheiten in der Zelle **DrawingScale** verwenden, teilt Visio den Abstand in Folgendes ein: 
+Sie können in der Zelle **DrawingScale** Bruchmaßeinheiten angeben, um die Anzahl der Linealunterteilungen zu beeinflussen, die Visio im Zeichnungsfenster anzeigt. By default, Visio divides distances into tenths when drawing its rulers. Wenn Sie Bruchmaßeinheiten in der **Zelle DrawingScale** verwenden, teilt Visio den Abstand in Folgendes auf: 
   
-- Achtel für *visInchFrac* und *visMileFrac* 
+- Achtel für  *visInchFrac*  und  *visMileFrac* 
     
 - Zwölftel für  *visFeetAndInches* 
     
@@ -90,7 +90,7 @@ In Formeln können Sie Maßeinheiten für mehrdimensionale Zahlen mit den Abkür
   
 |**So geben Sie mehrdimensionale Einheiten an**|**Verwenden Sie diese Abkürzung**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
-| Acre  <br/> | Hektar  <br/> |**visAcre (36)** <br/> |
+| Acre  <br/> | ACRES  <br/> |**visAcre (36)** <br/> |
 | Zentimeter  <br/> | SQ. CM., SQ CM, CM.^2, CM^2  <br/> |**visCentimeters (69)** <br/> |
 | Fuß  <br/> | SQ. FT., SQ FT, FT.^2, FT^2  <br/> |**visFeet (66)** <br/> |
 | Hektar  <br/> | HECTARES, HECTARE, HA., HA  <br/> |**visHectare (37)** <br/> |
@@ -153,12 +153,12 @@ number  [unit , flag ]
 |||
 |:-----|:-----|
 | _Zahl_ <br/> |Der ursprüngliche Wert, z. B. 3,7, 1,7E-4 oder 5 1/2.  <br/> |
-| _Einheit_ <br/> |Die Einheiten, in denen die _Zahl_ ursprünglich ausgedrückt wird.  <br/> |
+| _Einheit_ <br/> |Die Einheiten, in  _denen die Zahl_ ursprünglich ausgedrückt wird.  <br/> |
 | _Flag_ <br/> |Das Maßsystem, das verwendet werden soll, wenn die Einheit für den impliziten Wert angezeigt wird. Entsprechende Werte finden Sie unten.  <br/> |
    
-Das Parameter- _Flag_ ist eines der folgenden Buchstaben (groß-oder Kleinbuchstaben), das das Messsystem angibt, das verwendet werden soll, wenn die implizite Wert Einheit angezeigt wird. 
+Das  _Parameterflag_ ist eines der folgenden Buchstaben (groß- oder kleinbuchstaben), das das Maßsystem angibt, das verwendet werden soll, wenn die implizite Werteinheit angezeigt wird. 
   
-|**_Flagge_**|**Bemaßungssystem**|**Beispiel**|
+|**_Flag_**|**Bemaßungssystem**|**Beispiel**|
 |:-----|:-----|:-----|
 | a, A  <br/> | Winkel  <br/> | =5[deg,A]  <br/> |
 | d, D  <br/> | Zeichnung  <br/> | =5[in,D]  <br/> |
@@ -178,7 +178,7 @@ Im Folgenden werden die Standardmaßeinheiten zusammen mit den entsprechenden Ei
 |:-----|:-----|
 |**visDrawingUnits** <br/> |The units in the DrawingScale cell of the page or master containing the cell.  <br/> |
 |**visPageUnits** <br/> |Die im Feld **Maßeinheiten** auf der Registerkarte **Zeichenblatteigenschaft** des Dialogfelds **Seite einrichten** ausgewählten Einheiten (klicken Sie auf der Registerkarte **Entwurf** auf den Pfeil für **Seite einrichten**).  <br/> |
-|**visTypeUnits** <br/> |Die Einheiten, die im Dialogfeld **Visio-Optionen** auf der Registerkarte **erweitert** in das **Textfeld** **angezeigt** werden (Klicken Sie auf die Registerkarte **Datei** und dann auf **Optionen**).  <br/> |
+|**visTypeUnits** <br/> |Die im Feld  **Text**  unter Anzeigen  auf der Registerkarte Erweitert im Dialogfeld **Visio-Optionen** ausgewählten Einheiten (klicken Sie auf die Registerkarte Datei, und klicken Sie dann auf **Optionen**).  <br/> |
 |**visAngleUnits** <br/> |Die Einheiten, die im Dialogfeld  **Visio-Optionen** auf der Registerkarte **Weitere Optionen** unter **Anzeige** im Feld **Winkel** ausgewählt sind.  <br/> |
 |**visDurationUnits** <br/> |Die Einheiten, die im Dialogfeld  **Visio-Optionen** auf der Registerkarte **Weitere Optionen** unter **Anzeige** im Feld **Dauer** ausgewählt sind.  <br/> |
    

@@ -1,5 +1,5 @@
 ---
-title: DeleteRecord Data-Makroaktion (benutzerdefinierte Access-Web-App)
+title: DeleteRecord Data Macro-Aktion (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33423153"
 ---
-# <a name="deleterecord-data-macro-action-access-custom-web-app"></a>DeleteRecord Data-Makroaktion (benutzerdefinierte Access-Web-App)
+# <a name="deleterecord-data-macro-action-access-custom-web-app"></a>DeleteRecord Data Macro-Aktion (benutzerdefinierte Access-Web-App)
 
 Mit der **DatensatzLöschen** -Aktion können Sie einen Datensatz löschen. 
   
@@ -22,13 +22,13 @@ Mit der **DatensatzLöschen** -Aktion können Sie einen Datensatz löschen.
   
 ## <a name="setting"></a>Einstellung
 
-Die **DeleteRecord** -Aktion hat die folgenden Argumente. 
+Die **DeleteRecord-Aktion** hat die folgenden Argumente. 
   
 |**Argument**|**Beschreibung**|
 |:-----|:-----|
-|**Datensatzalias** <br/> |Eine Zeichenfolge, mit der der zu löschende Datensatz gekennzeichnet wird. Wenn das Argument *Alias* nicht angegeben wird, wird der aktuelle Datensatz gelöscht.  <br/> |
+|**Datensatzalias** <br/> |Eine Zeichenfolge, mit der der zu löschende Datensatz gekennzeichnet wird. Wenn das  *Alias-Argument*  nicht angegeben ist, wird der aktuelle Datensatz gelöscht.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Über die lokale Variable **LetztesErstellenDatensatzID** in einem **DatensatzErstellen** -Datenblock können Sie mit dem zuletzt erstellten Datensatz arbeiten. Verwenden Sie beispielsweise die folgende Syntax, um auf den zuletzt erstellten Datensatz zu verweisen: 
   

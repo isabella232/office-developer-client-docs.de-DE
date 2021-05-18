@@ -1,5 +1,5 @@
 ---
-title: Packedansistring streamstruktur-Datenstrom Struktur
+title: PackedAnsiString-Streamstruktur
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,35 +13,35 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33404505"
 ---
-# <a name="packedansistring-stream-structure"></a>Packedansistring streamstruktur-Datenstrom Struktur
+# <a name="packedansistring-stream-structure"></a>PackedAnsiString-Streamstruktur
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die Packedansistring streamstruktur-Datenstrom Struktur enthält eine ANSI-Darstellung einer Zeichenfolge, die auf der ANSI-Codeseite des Computers basiert, auf dem Microsoft Outlook läuft. Diese Zeichenfolge wird nicht durch ein NULL-Zeichen beendet. Datenelemente in diesem Stream werden in der Little-Endian-Bytereihenfolge gespeichert, unmittelbar nach einander in der unten aufgeführten Reihenfolge. Die tatsächlichen Datenelemente, die vorhanden sind, hängen von der Länge der Zeichenfolge in der ANSI-Darstellung ab.
+Die Datenstromstruktur PackedAnsiString enthält eine ANSI-Darstellung einer Zeichenfolge basierend auf der ANSI-Codeseite des Computers, auf dem Microsoft Outlook ausgeführt wird. Diese Zeichenfolge wird nicht durch ein Nullzeichen beendet. Datenelemente in diesem Datenstrom werden in der Reihenfolge des Little-Endian-Bytes gespeichert und folgen in der unten aufgeführten Reihenfolge unmittelbar aufeinander. Die tatsächlich vorhandenen Datenelemente hängen von der Länge der Zeichenfolge in der ANSI-Darstellung ab.
   
-- Bei einer Zeichenfolge, deren ANSI-Darstellung kleiner als 255 Byte ist, sind die folgenden Datenelemente enthalten:
+- Für eine Zeichenfolge, deren ANSI-Darstellung weniger als 255 Byte enthält, sind die Datenelemente wie folgt:
     
-  - Length: BYTE (1 Byte), die Länge der ANSI-Darstellung der Zeichenfolge in Byte.
+  - Length: BYTE (1 Byte), die Länge der ANSI-Darstellung der Zeichenfolge in Bytes.
     
-  - Characters: ein Array von CHAR. Die Anzahl dieses Arrays ist gleich dem length-Datenelement. Die Daten im Array sind die ANSI-Darstellung der Zeichenfolge.
+  - Characters: Ein Array von CHAR. Die Anzahl dieses Arrays entspricht dem Length-Datenelement. Die Daten im Array sind die ANSI-Darstellung der Zeichenfolge.
     
-- Für eine Zeichenfolge, deren ANSI-Darstellung 255 bis 65535 Byte enthält, lauten die folgenden Datenelemente:
+- Für eine Zeichenfolge, deren ANSI-Darstellung 255 bis 65535 Byte enthält, sind die Datenelemente wie folgt:
     
-  - Prefix: BYTE (1 Byte), der Wert von 255 (0xFF).
+  - Präfix: BYTE (1 Byte), wert 255 (0xff).
     
-  - Length: WORD (2 Bytes), die Länge der ANSI-Darstellung der Zeichenfolge in Byte.
+  - Länge: WORD (2 Byte), die Länge der ANSI-Darstellung der Zeichenfolge in Bytes.
     
-  - Characters: ein Array von CHAR. Die Anzahl dieses Arrays ist gleich dem length-Datenelement. Die Daten im Array sind die ANSI-Darstellung der Zeichenfolge.
+  - Characters: Ein Array von CHAR. Die Anzahl dieses Arrays entspricht dem Length-Datenelement. Die Daten im Array sind die ANSI-Darstellung der Zeichenfolge.
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Outlook-Elemente und-Felder](outlook-items-and-fields.md)
+[Outlook Elemente und Felder](outlook-items-and-fields.md)
   
-[Stream-Strukturen](stream-structures.md)
+[Streamstrukturen](stream-structures.md)
   
-[FieldDefinition streamstruktur-Datenstrom Struktur](fielddefinition-stream-structure.md)
+[FieldDefinition Stream Structure](fielddefinition-stream-structure.md)
 

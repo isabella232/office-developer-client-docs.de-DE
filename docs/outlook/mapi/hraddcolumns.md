@@ -21,13 +21,13 @@ ms.locfileid: "33422474"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Fügt oder verschiebt Spalten an den Anfang einer vorhandenen Tabelle.
+Fügt Spalten am Anfang einer vorhandenen Tabelle hinzu oder verschiebt sie.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |mapiutil. h  <br/> |
+|Headerdatei  <br/> |mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter.  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter.  <br/> |
    
 ```cpp
 HRESULT HrAddColumns(
@@ -42,19 +42,19 @@ HRESULT HrAddColumns(
 
  _lptbl_
   
-> in Zeiger auf die betroffene MAPI-Tabelle.
+> [in] Zeiger auf die betroffene MAPI-Tabelle.
     
- _lpproptagColumnsNew_
+ _lpproptagColumnsNeu_
   
-> in Zeiger auf eine **SPropTagArray** -Struktur, die ein Array von Property-Tags für die Eigenschaften enthält, die hinzugefügt oder an den Anfang der Tabelle verschoben werden sollen. 
+> [in] Zeiger auf eine **SPropTagArray-Struktur,** die ein Array von Eigenschaftstags für die Eigenschaften enthält, die hinzugefügt oder an den Anfang der Tabelle verschoben werden sollen. 
     
  _lpAllocateBuffer_
   
-> in Zeiger auf die **MAPIAllocateBuffer** -Funktion. Wird zum Reservieren von Arbeitsspeicher verwendet. 
+> [in] Zeiger auf die **MAPIAllocateBuffer-Funktion.** Wird zum Zuordnen von Arbeitsspeicher verwendet. 
     
  _lpFreeBuffer_
   
-> in Zeiger auf die **mapifreebufferfreigegeben** -Funktion. Wird verwendet, um Arbeitsspeicher freizugeben. 
+> [in] Zeiger auf die **MAPIFreeBuffer-Funktion.** Wird zum Freispeichern verwendet. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -62,9 +62,9 @@ HRESULT HrAddColumns(
   
 > Der Aufruf war erfolgreich, und die angegebenen Spalten wurden verschoben oder hinzugefügt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **HrAddColumns** -Funktion entspricht der Verwendung von **HrAddColumnsEx** mit _lpfnFilterColumns_ auf NULL festgelegt. 
+Die **HrAddColumns-Funktion** entspricht der Verwendung von **HrAddColumnsEx** mit  _lpfnFilterColumns,_ die auf NULL festgelegt sind. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -19,27 +19,27 @@ ms.locfileid: "33404295"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bevor Sie mit dem Schreiben von Code beginnen, um den Nachrichtendienst zu unterstützen, ist es wichtig, einen Entwurf zu erstellen. Beheben Sie die folgenden Probleme in Ihrem Entwurfsprozess:
+Bevor Sie mit dem Schreiben von Code zur Unterstützung Ihres Nachrichtendiensts beginnen, ist es wichtig, einen Entwurf zu erstellen. Beheben Sie die folgenden Probleme in Ihrem Entwurfsprozess:
   
-1. Legen Sie fest, wie viele Dienstanbieter in den Nachrichtendienst aufgenommen werden sollen. Schließen Sie nur Verwandte Dienstanbieter (also Anbieter, die mit demselben Messagingsystem arbeiten) in ihren Dienst ein. Nicht verwandte Dienstanbieter gehören nicht in den gleichen Nachrichtendienst. Verwenden Sie das Profil für die Integration nicht zusammenhängender Dienstanbieter und Nachrichtendienste.
+1. Bestimmen Sie, wie viele Dienstanbieter in den Nachrichtendienst einbezogen werden sollen. Schließen Sie nur verwandte Dienstanbieter (d. h. Anbieter, die mit demselben Messagingsystem arbeiten) in Ihren Dienst ein. Nicht verwandte Dienstanbieter gehören nicht zum gleichen Nachrichtendienst. Verwenden Sie das Profil zum Integrieren nicht verwandter Dienstanbieter und Nachrichtendienste.
     
-2. Legen Sie fest, welche Art von Dienstanbietern in den Nachrichtendienst aufgenommen werden soll. Die meisten Messge-Dienste verfügen über einen Anbieter der einzelnen allgemeinen Typen. Das heißt, der typische Nachrichtendienst verfügt über einen Adressbuchanbieter, einen Nachrichtenspeicher Anbieter und einen Transportanbieter.
+2. Bestimmen Sie, welcher Typ von Dienstanbietern in den Nachrichtendienst einbezogen werden soll. Die meisten Messgedienste enthalten einen Anbieter für jeden der gängigen Typen. Das heißt, der typische Nachrichtendienst verfügt über einen Adressbuchanbieter, einen Nachrichtenspeicheranbieter und einen Transportanbieter.
     
-3. Bestimmen Sie, wie viele DLLs den Nachrichtendienst enthalten sollen. Die Anzahl der DLLs, die ein Nachrichtendienst verwendet, hängt von den folgenden:
+3. Bestimmen Sie, wie viele DLLs den Nachrichtendienst enthalten sollen. Die Anzahl der dlLs, die ein Nachrichtendienst verwendet, hängt von folgenden Kriterien ab:
     
-   - Der Grad an Komplexität, den Sie als Verfasser des Nachrichtendiensts bereit sind.
+   - Der Komplexitätsgrad, den Sie als Verfasser des Nachrichtendiensts verarbeiten möchten.
     
    - Der Typ der Dienstanbieter im Nachrichtendienst.
     
    - Die Beziehung, die der Nachrichtendienst möglicherweise mit einem anderen Nachrichtendienst hat.
     
-   Da MAPI nur einen Einstiegspunkt für jeden Anbietertyp speichert, dürfen Sie nicht mehrere Anbieter desselben Typs in eine einzelne DLL einbeziehen. Wenn es sinnvoll ist, mehrere Anbieter eines Typs einzuschließen, implementieren Sie Sie entweder in separaten DLLs, oder lassen Sie Sie eine Einstiegspunktfunktion freigeben. Eine weitere Option ist die Implementierung zugehöriger Nachrichtendienste oder Nachrichtendienste, die in der Lage sind, denselben Installations-und Konfigurationscode und dieselbe DLL-Einstiegspunktfunktion in einer DLL zu verwenden.
+   Da MAPI nur einen Einstiegspunkt für jeden Anbietertyp speichert, schließen Sie nicht mehrere Anbieter desselben Typs in eine einzelne DLL ein. Wenn es sinnvoll ist, mehrere Anbieter eines Typs zu verwenden, implementieren Sie sie entweder in separaten DLLs, oder lassen Sie sie eine Einstiegspunktfunktion gemeinsam nutzen. Eine weitere Option besteht in der Implementierung verwandter Nachrichtendienste oder Nachrichtendienste, die denselben Installations- und Konfigurationscode und dieselbe DLL-Einstiegspunktfunktion in einer DLL verwenden können.
     
-   Wenn möglich, halten Sie es einfach, und verwenden Sie eine DLL, die die Implementierung aller Dienstanbieter im Nachrichtendienst und den gesamten Code zum Installieren und Konfigurieren des Nachrichtendiensts enthält. Wenn dies nicht möglich ist, können Sie eine DLL für den Installations-und Konfigurationscode und entweder eine einzelne DLL für alle Dienstanbieter oder eine DLL für jeden Anbieter implementieren.
+   Halten Sie es möglichst einfach, und verwenden Sie eine DLL, die die Implementierung aller Dienstanbieter im Nachrichtendienst und den ganzen Code zum Installieren und Konfigurieren des Nachrichtendiensts enthält. Wenn dies nicht möglich ist, können Sie eine DLL für den Installations- und Konfigurationscode und entweder eine einzelne DLL für alle Dienstanbieter oder eine DLL für jeden Anbieter implementieren.
     
 4. Bestimmen Sie einen Namen für die Nachrichtendienst-DLL oder DLLs. 
     
 ## <a name="see-also"></a>Siehe auch
 
-- [Nachrichtendienst Implementierung](message-service-implementation.md)
+- [Implementierung des Nachrichtendiensts](message-service-implementation.md)
 

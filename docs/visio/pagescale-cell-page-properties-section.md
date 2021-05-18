@@ -20,21 +20,21 @@ ms.locfileid: "33405534"
 
 Bestimmt den Wert der Seiteneinheit im aktuellen Zeichnungsmaßstab. Der Zeichnungsmaßstab für die Seite ist das Verhältnis der in der Zelle PageScale angezeigten Seiteneinheit zur in der Zelle DrawingScale angezeigten Zeichnungseinheit.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Sie können den Wert der Zelle PageScale auch auf der Registerkarte **Zeichnungs Skala** im Dialogfeld **Seite** einrichten festlegen (Klicken Sie auf der Registerkarte **Entwurf** auf den Pfeil für die **Seite einrichten** ). Der Wert der Zelle ist die erste der beiden Zahlen im vordefinierten **** Feld Skalieren oder **Benutzerdefiniert** , je nachdem, welche Zeichnungs Skalierungseinstellung unter **Zeichnungsmaßstab**ausgewählt ist. Wenn Sie beispielsweise einen architektonischen Maßstab für Ihre Zeichnung auswählen, lautet der Zeichnungsmaßstab für die Seite 3/32 "= 1 ' 0". Der Wert in der Zelle PageScale ist 0,0938. (oder 3/32 ") und der Wert in der Zelle DrawingScale ist 1 ft.
+Sie können den Wert der Zelle PageScale auch auf  der Registerkarte Zeichnungsskala im Dialogfeld Seiteneinrichtung festlegen (klicken Sie auf der Registerkarte Entwurf auf den **Pfeil Seite einrichten).**   Der Wert der Zelle ist die erste  der beiden Zahlen  im Feld Vordefinierte Skalierung oder benutzerdefinierte Skalierung, abhängig von der Zeichnungsskaleneinstellung, die unter **Zeichnungsskala ausgewählt ist.** Wenn Sie beispielsweise eine Architekturskala für Ihre Zeichnung auswählen, ist die Zeichnungsskala für die Seite 3/32" = 1'0". Der Wert in der Zelle PageScale ist 0,0938 in. (oder 3/32") und der Wert in der Zelle DrawingScale beträgt 1 ft.
   
-Wenn Sie einen Verweis auf die Zelle PageScale aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle PageScale anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |PageScale  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle PageScale aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle PageScale nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowPage** <br/> |
 |Zellenindex:  <br/> |**visPageScale** <br/> |
    

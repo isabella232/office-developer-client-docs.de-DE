@@ -17,9 +17,9 @@ ms.locfileid: "32299076"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-In diesem Thema wird ein Codebeispiel in C++ gezeigt, das einen Nachrichtenspeicher für die **[IProxyStoreObject](iproxystoreobject.md)** -Schnittstelle abfragt und den zurückgegebenen Zeiger und die **[IProxyStoreObject:: UnwrapNoRef](iproxystoreobject-unwrapnoref.md)** -Funktion verwendet, um einen Zeiger auf ein IMAP-Speicherobjekt abzurufen, das ausgepackt. Die Verwendung dieses unwrapped-Speichers ermöglicht den Zugriff auf eine Nachricht im aktuellen Zustand, ohne einen Download der gesamten Nachricht aufzurufen. 
+In diesem Thema wird ein Codebeispiel in C++ gezeigt, das einen Nachrichtenspeicher für die **[IProxyStoreObject-Schnittstelle](iproxystoreobject.md)** abfragt und den zurückgegebenen Zeiger und die **[IProxyStoreObject::UnwrapNoRef-Funktion](iproxystoreobject-unwrapnoref.md)** verwendet, um einen Zeiger auf ein imAP-Speicherobjekt abzurufen, das entpackt wurde. Die Verwendung dieses nicht ausgepackten Speichers ermöglicht den Zugriff auf eine Nachricht im aktuellen Status, ohne einen Download der gesamten Nachricht aufrufen zu müssen. 
   
-Da **UnwrapNoRef** den Verweiszähler für diesen neuen Zeiger nicht auf das unwrapped Store-Objekt erhöht, müssen Sie nach dem erfolgreichen Aufruf von **UnwrapNoRef**die [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28VS.85%29.aspx) aufrufen, um den Verweiszähler zu verwalten. 
+Da **UnwrapNoRef** die Referenzanzahl für diesen neuen Zeiger nicht auf das nicht mehr ausgepackte Speicherobjekt erhöht, müssen Sie nach dem erfolgreichen Aufruf von **UnwrapNoRef** [IUnknown::AddRef](https://msdn.microsoft.com/library/ms691379%28VS.85%29.aspx) aufrufen, um die Referenzanzahl zu verwalten. 
   
 ```cpp
 HRESULT HrUnWrapMDB(LPMDB lpMDBIn, LPMDB* lppMDBOut) 

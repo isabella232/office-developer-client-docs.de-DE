@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251412
 localization_priority: Normal
 ms.assetid: 2b6c5375-c543-ff2f-f20a-6d92fd65717a
-description: Gibt das durch Jahr, Monat und Tag dargestellte Datum zurück, das gemäß der Formatvorlage für kurzes Datum in den regionalen Einstellungen des Systems formatiert ist. Die Werte für Jahr, Monat und Tag entsprechen dem gregorianischen Kalender.
+description: Gibt das Durch Jahr, Monat und Tag dargestellte Datum zurück, das gemäß der kurzen Datumsart im regionalen Format des Systems Einstellungen. Die Werte für Jahr, Monat und Tag spiegeln den gregorianischen Kalender wider.
 ms.openlocfilehash: 0175c1f06ec3dbdf89774759546c65994d38105e
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "32360333"
 ---
 # <a name="date-function-visioshapesheet"></a>DATE-Funktion (VisioShapeSheet)
 
-Gibt das durch *Jahr, Monat* und *Tag* dargestellte Datum zurück, das gemäß der Formatvorlage für kurzes Datum in den regionalen Einstellungen des Systems formatiert ist. Die Werte für *Jahr*, *Monat* und *Tag* entsprechen dem gregorianischen Kalender. 
+Gibt das Durch Jahr, Monat  und Tag dargestellte Datum *zurück,* das gemäß der kurzen Datumsart im regionalen Format des Systems Einstellungen. Die Werte für  *Jahr,* *Monat*  und  *Tag spiegeln*  den gregorianischen Kalender wider. 
   
 ## <a name="syntax"></a>Syntax
 
-Datum (* * *Jahr* * *, * * *Monat* * *, * * *Tag* * *) 
+DATE(** *Jahr* **, ** *Monat* **, ** *Tag* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -34,7 +34,7 @@ Datum (* * *Jahr* * *, * * *Monat* * *, * * *Tag* * *)
    
 ## <a name="example-1"></a>Beispiel 1
 
-DATUM (1999, 6, 7)
+DATE(1999,6,7)
   
 Gibt den Wert zurück, der 07.06.99 darstellt.
   
@@ -46,7 +46,7 @@ Gibt den Wert zurück, der 11.06.99 darstellt.
   
 ## <a name="example-3"></a>Beispiel 3
 
-FORMAT (DATUM (1999, 10, 14), "C")
+FORMAT(DATE(1999,10,14),"C")
   
 Gibt den Wert zurück, der Dienstag, 14. Oktober 1999 darstellt.
   

@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: a556eadc-9ee6-7a29-ca05-6250b612790c
-description: Schützt die Formatierungszellen eines Shapes, um sicherzustellen, dass Sie die entsprechenden Aspekte des aktuellen Designs verwenden.
+description: Wacht die Formatierungszellen eines Shapes, um sicherzustellen, dass sie geeignete Aspekte des aktuellen Designs verwenden.
 ms.openlocfilehash: c20d43f9d03296a3c529a6c8f59cf27489dcdc51
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,15 +16,15 @@ ms.locfileid: "33404946"
 ---
 # <a name="themeguard-function"></a>THEMEGUARD Function
 
-Schützt die Formatierungszellen eines Shapes, um sicherzustellen, dass Sie die entsprechenden Aspekte des aktuellen Designs verwenden.
+Wacht die Formatierungszellen eines Shapes, um sicherzustellen, dass sie geeignete Aspekte des aktuellen Designs verwenden.
   
 ## <a name="syntax"></a>Syntax
 
-THEMEGUARD ()
+THEMEGUARD()
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie die THEMEGUARD-Funktion auf eine Zelle anwenden, wird die manuelle Formatierung nicht auf die gleiche Weise geschützt wie bei der Anwendung der GUARD-Funktion. Wenn Sie die Form auf der Benutzeroberfläche oder programmgesteuert mithilfe der Automatisierung formatieren, wird die THEMEGUARD-Formel außer Kraft gesetzt, es sei denn, Sie schließen die SETATREFEXPR-Funktion in die Formel ein, um den manuellen Formatierungswert zu speichern. 
+Das Anwenden der THEMEGUARD-Funktion auf eine Zelle wehrt sich nicht auf die gleiche Weise vor manueller Formatierung wie die Anwendung der GUARD-Funktion. Wenn Sie die Formatierung auf das Shape auf der Benutzeroberfläche oder programmgesteuert über Automatisierung anwenden, wird die THEMEGUARD-Formel außer Kraft gesetzt, es sei denn, Sie fügen die SETATREFEXPR-Funktion in die Formel ein, um den manuellen Formatierungswert zu speichern. 
   
 ## <a name="example"></a>Beispiel
 

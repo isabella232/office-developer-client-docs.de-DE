@@ -1,5 +1,5 @@
 ---
-title: Zelle "BevelTopHeight" (Abschnitt "Fase Properties")
+title: Zelle "BevelTopHeight" (Abschnitt "Bevel Properties")
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -14,23 +14,23 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33421865"
 ---
-# <a name="beveltopheight-cell-bevel-properties-section"></a>Zelle "BevelTopHeight" (Abschnitt "Fase Properties")
+# <a name="beveltopheight-cell-bevel-properties-section"></a>Zelle "BevelTopHeight" (Abschnitt "Bevel Properties")
 
 Bestimmt die Höhe der oberen Abschrägung eines Shapes in Punkt. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle **BevelTopHeight** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die **Zelle BevelTopHeight** anhand des Namens aus einer anderen Formel, nach dem Wert des **N-Attributs** eines **Cell-Elements** oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | BevelTopHeight  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle **BevelTopHeight** aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die **Zelle "BevelTopHeight"** nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowBevelProperties** <br/> |
 | Zellenindex:  <br/> |**visBevelTopHeight** <br/> |
    

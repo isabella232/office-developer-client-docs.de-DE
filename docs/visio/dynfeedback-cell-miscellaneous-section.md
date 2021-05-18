@@ -26,19 +26,19 @@ ms.locfileid: "33404799"
 | 1  <br/> | Zeigt beim Ziehen drei Abschnitte an.  <br/> |**visDynFBUCon3Leg** <br/> |
 | 2  <br/> | Zeigt beim Ziehen fünf Abschnitte an.  <br/> |**visDynFBUCon5Leg** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle Zelle DynFeedback aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die DynFeedback-Zelle anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Zelle DynFeedback  <br/> |
+| Zellenname:  <br/> | DynFeedback  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle DynFeedback aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die DynFeedback-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowMisc** <br/> |
 | Zellenindex:  <br/> |**visDynFeedback** <br/> |
    

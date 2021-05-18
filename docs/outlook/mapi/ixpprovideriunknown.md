@@ -25,13 +25,13 @@ ms.locfileid: "33404694"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Initialisiert ein Transportanbieter Objekt und beendet das Objekt, wenn es nicht mehr benötigt wird.
+Initialisiert ein Transportanbieterobjekt und beendet das Objekt, wenn es nicht mehr benötigt wird.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapispi. h  <br/> |
+|Headerdatei  <br/> |Mapispi.h  <br/> |
 |Verf�gbar gemacht von:  <br/> |Transportanbieterobjekte  <br/> |
-|Implementiert von:  <br/> |Transport Anbieter  <br/> |
+|Implementiert von:  <br/> |Transportanbieter  <br/> |
 |Aufgerufen von:  <br/> |Der MAPI-Spooler  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IXPProvider  <br/> |
 |Zeigertyp:  <br/> |LPXPROVIDER  <br/> |
@@ -40,7 +40,7 @@ Initialisiert ein Transportanbieter Objekt und beendet das Objekt, wenn es nicht
 
 |||
 |:-----|:-----|
-|[Herunterfahren](ixpprovider-shutdown.md) <br/> |Schließt einen Transportanbieter ordnungsgemäß ab.  <br/> |
+|[Shutdown](ixpprovider-shutdown.md) <br/> |Schließt einen Transportanbieter in geordneter Weise.  <br/> |
 |[TransportLogon](ixpprovider-transportlogon.md) <br/> |Richtet eine Sitzung ein, in der sich eine Clientanwendung bei einem Transportanbieter anmeldet.  <br/> |
    
 

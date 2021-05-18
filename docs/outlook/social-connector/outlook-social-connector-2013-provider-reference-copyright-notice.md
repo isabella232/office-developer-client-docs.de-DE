@@ -7,7 +7,7 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1425b9f2-606a-4522-b97c-0875d45eb175
-description: Dieses Dokument wird in der vorliegenden Version zur Verfügung gestellt. Die in diesem Dokument enthaltenen Informationen und Ansichten, einschließlich URLs und anderer Verweise auf Internet Websites, können ohne vorherige Ankündigung geändert werden. Sie tragen das volle Risiko der Verwendung.
+description: Dieses Dokument wird in der vorliegenden Version zur Verfügung gestellt. Informationen und Ansichten in diesem Dokument, einschließlich URL und andere Internetwebsiteverweise, können sich ohne vorherige Ankündigung ändern. Das Risiko der Produktnutzung liegt allein beim Nutzer.
 ms.openlocfilehash: 6d01020fc4d4081e5f55de5f64f361ac3ae8a0b0
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT

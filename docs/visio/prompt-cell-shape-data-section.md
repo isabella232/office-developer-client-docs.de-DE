@@ -20,20 +20,20 @@ ms.locfileid: "33405485"
 
 Spezifiziert den Text der Beschreibung oder Anweisung, der als Tipp angezeigt wird, wenn der Mauszeiger über einem Wert im Fenster **Shape-Daten** platziert wird. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle "Ansage" aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle Eingabeaufforderung anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Prop.  *Name* . AufFordern, wobei *Name* der Zeilenname ist  <br/> |
+| Zellenname:  <br/> | Prop.  *Name*  . Eingabeaufforderung, bei der  *Name*  der Zeilenname ist  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle "anSagen" aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle Prompt nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionProp** <br/> |
-| Zeilenindex:  <br/> |**visRowProp +** *i* wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowProp +** *i*  where  *i*  = 0, 1, 2...  <br/> |
 | Zellenindex:  <br/> |**visCustPropsPrompt** <br/> |
    
 

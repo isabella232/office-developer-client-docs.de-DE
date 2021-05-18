@@ -25,11 +25,11 @@ ms.locfileid: "32270091"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Unterstützt die Registrierung für Benachrichtigungsrückrufe zu Verbindungsstatusänderungen eines Benutzerkontos.
+Unterstützt die Registrierung für Benachrichtigungsrückrufe über Verbindungsstatusänderungen eines Benutzerkontos.
   
 |||
 |:-----|:-----|
-|Exportiert von:  <br/> |msmapi32. dll  <br/> |
+|Exportiert von:  <br/> |msmapi32.dll  <br/> |
 |Implementiert von:  <br/> |Outlook  <br/> |
 |Aufgerufen von:  <br/> |Client  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPIOfflineMgr  <br/> |
@@ -38,23 +38,23 @@ Unterstützt die Registrierung für Benachrichtigungsrückrufe zu Verbindungssta
 
 |||
 |:-----|:-----|
-|[Advise](imapiofflinemgr-advise.md) <br/> |Register für Benachrichtigungsrückrufe zu Verbindungsänderungen.  <br/> |
+|[Raten](imapiofflinemgr-advise.md) <br/> |Registriert für Benachrichtigungsrückrufe zu Verbindungsänderungen.  <br/> |
 |[Unadvise](imapiofflinemgr-unadvise.md) <br/> |Entfernt eine bestimmte Registrierung für Benachrichtigungsrückrufe.  <br/> |
-| *Platzhalterelement*  <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-| *Platzhalterelement*  <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-| *Platzhalterelement*  <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-| *Platzhalterelement*  <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-| *Platzhalterelement*  <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-| *Platzhalterelement*  <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-| *Platzhalterelement*  <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+| *Platzhaltermitglied*  <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+| *Platzhaltermitglied*  <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+| *Platzhaltermitglied*  <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+| *Platzhaltermitglied*  <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+| *Platzhaltermitglied*  <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+| *Platzhaltermitglied*  <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+| *Platzhaltermitglied*  <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
    
 ## <a name="remarks"></a>Hinweise
 
-Beim Öffnen eines Offline Objekts für ein Benutzerkontoprofil mit **[HrOpenOfflineObj](hropenofflineobj.md)** Ruft ein Client ein Offlineobjekt ab, das **IMAPIOfflineMgr**unterstützt. 
+Beim Öffnen eines Offlineobjekts für ein Benutzerkontoprofil mit **[HrOpenOfflineObj](hropenofflineobj.md)** ruft ein Client ein Offlineobjekt ab, das **IMAPIOfflineMgr unterstützt.** 
   
-Da diese Schnittstelle von **[IUnknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx)** erbt, kann der Client diese Schnittstelle Abfragen (mithilfe von **[IUnknown:: QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx)** ), um ein Objekt zu erhalten, das **[IMAPIOffline](imapiofflineiunknown.md)** unterstützt. Der Client kann sich dann über die Rückruffunktionen des Offline Objekts informieren (durch Aufrufen von **[IMAPIOffline:: getCapabilities](imapioffline-getcapabilities.md)** ) und die Option zum Einrichten von Rückrufen (mithilfe von **IMAPIOfflineMgr:: Advise** ). 
+Da diese Schnittstelle von **[IUnknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx)** erbt, kann der Client diese Schnittstelle abfragen (mithilfe von **[IUnknown::QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx)** ), um ein Objekt zu erhalten, das **[IMAPIOffline unterstützt.](imapiofflineiunknown.md)** Der Client kann sich dann über die Rückruffunktionen des Offlineobjekts informieren (durch Aufrufen von **[IMAPIOffline::GetCapabilities](imapioffline-getcapabilities.md)** ) und Rückrufe einrichten (mithilfe von **IMAPIOfflineMgr::Advise** ). 
   
-Die meisten Mitglieder in dieser Schnittstelle sind Platzhalter, die für die interne Verwendung von Outlook reserviert sind und Änderungen unterliegen. Anrufer dieser Schnittstelle müssen nicht-Platzhalterelemente nur wie dokumentiert verwenden.
+Die meisten Mitglieder in dieser Schnittstelle sind Platzhalter, die für die interne Verwendung von Outlook reserviert sind und änderungen unterliegen. Aufrufer dieser Schnittstelle dürfen nicht platzhalterfreie Elemente nur so verwenden, wie dokumentiert.
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -73,11 +73,11 @@ _ppEnum_
 |S_OK  <br/> |Der Aufruf war erfolgreich.  <br/> |
 |E_OLK_NOT_INITIALIZED  <br/> |Konto-Manager wurde nicht für die Verwendung initialisiert.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Angeben von NULL für die Kategorie gibt einen Enumerator aller Konten des angegebenen Typs zurück. Entsprechend gibt die Angabe von NULL für Typ einen Enumerator aller Konten der angegebenen Kategorie.
   
- **IOlkAccountManager::EnumerateAccounts** unterstützt nicht die Address Book Kategorie für ein Exchange-Konto. Wenn es sich bei dem Konto um ein Exchange-Konto handelt (*pclsidType* ist **CLSID_OlkMAPIAccount** ), und Sie versuchen, Konten aufzuzählen, die das Adressbuch implementieren (*prgclsidCategory* ist **CLSID_OlkAddressBook** ), rufen **Sie IOlkAccountManager:: EnumerateAccounts** gibt das Exchange-Konto nicht im Enumerator *ppEnum* für Konten zurück. 
+ **IOlkAccountManager::EnumerateAccounts** unterstützt nicht die Address Book Kategorie für ein Exchange-Konto. Wenn es sich bei dem Konto um ein Exchange-Konto handelt (*pclsidType* ist **CLSID_OlkMAPIAccount** ), und Sie versuchen, Konten aufzählen, die das Adressbuch implementieren (*prgclsidCategory* ist **CLSID_OlkAddressBook** ), gibt der Aufruf von **IOlkAccountManager::EnumerateAccounts** das Exchange-Konto nicht im Kontenenumerator *ppEnum* zurück. 
   
 ## <a name="see-also"></a>Siehe auch
 

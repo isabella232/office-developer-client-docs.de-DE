@@ -50,6 +50,6 @@ Wenn Sie gerade erst mit dem Entwickeln von Lösungen für Outlook begonnen habe
 - [Urheberrechtshinweis für Outlook Connector für soziale Netzwerke 2013 – Anbieterverweis](outlook-social-connector-2013-provider-reference-copyright-notice.md) 
 - [Konventionen für Office Developer-Dokumente](https://msdn.microsoft.com/office/aa905365.aspx)   
 - [Barrierefreiheit in Microsoft-Produkten](https://www.microsoft.com/enable/products/default.aspx)  
-- [Auszüge aus den Onlinedatenschutzbestimmungen von Microsoft](https://privacy.microsoft.com/en-us/privacystatement)
+- [Auszüge aus den Onlinedatenschutzbestimmungen von Microsoft](https://privacy.microsoft.com/de-DE/privacystatement)
     
 
