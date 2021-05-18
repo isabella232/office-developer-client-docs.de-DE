@@ -15,16 +15,16 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33414137"
 ---
-# <a name="expanding-distribution-lists"></a><span data-ttu-id="b8604-103">Erweitern von Verteilerlisten</span><span class="sxs-lookup"><span data-stu-id="b8604-103">Expanding Distribution Lists</span></span>
+# <a name="expanding-distribution-lists"></a><span data-ttu-id="7fb1d-103">Erweitern von Verteilerlisten</span><span class="sxs-lookup"><span data-stu-id="7fb1d-103">Expanding Distribution Lists</span></span>
 
   
   
-<span data-ttu-id="b8604-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="b8604-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="7fb1d-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="7fb1d-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
- <span data-ttu-id="b8604-105">**So fordern Sie MAPI zum Erweitern einer Verteilerliste an**</span><span class="sxs-lookup"><span data-stu-id="b8604-105">**To prompt MAPI to expand a distribution list**</span></span>
+ <span data-ttu-id="7fb1d-105">**So fordert Sie MAPI auf, eine Verteilerliste zu erweitern**</span><span class="sxs-lookup"><span data-stu-id="7fb1d-105">**To prompt MAPI to expand a distribution list**</span></span>
   
-- <span data-ttu-id="b8604-106">Legen Sie die **PR_ADDRTYPE** ([pidtagaddresstype (](pidtagaddresstype-canonical-property.md))-Eigenschaft auf MAPIPDL.</span><span class="sxs-lookup"><span data-stu-id="b8604-106">Set its **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) property to MAPIPDL.</span></span>
+- <span data-ttu-id="7fb1d-106">Legen Sie **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) -Eigenschaft auf MAPIPDL.</span><span class="sxs-lookup"><span data-stu-id="7fb1d-106">Set its **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) property to MAPIPDL.</span></span>
     
-    <span data-ttu-id="b8604-107">MAPI erweitert die Adressen mit diesem Typ vor dem Senden der Nachricht an den Transportanbieter.</span><span class="sxs-lookup"><span data-stu-id="b8604-107">MAPI expands addresses with this type before sending the message to the transport provider.</span></span>
+    <span data-ttu-id="7fb1d-107">MAPI erweitert Adressen mit diesem Typ, bevor die Nachricht an den Transportanbieter gesendet wird.</span><span class="sxs-lookup"><span data-stu-id="7fb1d-107">MAPI expands addresses with this type before sending the message to the transport provider.</span></span>
     
 

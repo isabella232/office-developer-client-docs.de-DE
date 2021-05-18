@@ -16,12 +16,12 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33411652"
 ---
-# <a name="page-properties-section"></a><span data-ttu-id="0eeae-103">Abschnitt "Page Properties"</span><span class="sxs-lookup"><span data-stu-id="0eeae-103">Page Properties Section</span></span>
+# <a name="page-properties-section"></a><span data-ttu-id="58852-103">Abschnitt "Page Properties"</span><span class="sxs-lookup"><span data-stu-id="58852-103">Page Properties Section</span></span>
 
-<span data-ttu-id="0eeae-104">Enthält Zellen zum Steuern von Zeichenblattattributen, z. B. Zeichenblattbreite, -höhe und -maßstab.</span><span class="sxs-lookup"><span data-stu-id="0eeae-104">Contains cells that control page attributes, such as the page width, height, and scale.</span></span>
+<span data-ttu-id="58852-104">Enthält Zellen zum Steuern von Zeichenblattattributen, z. B. Zeichenblattbreite, -höhe und -maßstab.</span><span class="sxs-lookup"><span data-stu-id="58852-104">Contains cells that control page attributes, such as the page width, height, and scale.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="0eeae-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="0eeae-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="58852-105">Hinweise</span><span class="sxs-lookup"><span data-stu-id="58852-105">Remarks</span></span>
 
-<span data-ttu-id="0eeae-106">Sie können die Werte der Seiteneigenschaften festlegen, indem Sie einen Eintrag in der Zelle mit den **Seiteneigenschaften** oder im Dialogfeld **Seite einrichten** (Klicken Sie dazu auf der Registerkarte **Entwurf** auf das Dialogfeldstartprogramm in der Gruppe **Seite einrichten** ).</span><span class="sxs-lookup"><span data-stu-id="0eeae-106">You can set the values of page properties by making an entry in the **Page Properties** section cell, or by using the **Page Setup** dialog box (on the **Design** tab, click the dialog box launcher in the **Page Setup** group).</span></span> 
+<span data-ttu-id="58852-106">Sie können die Werte der Seiteneigenschaften festlegen, indem Sie einen Eintrag  in der Abschnittszelle Seiteneigenschaften erstellen oder das  Dialogfeld Seiteneinrichtung verwenden (klicken Sie auf der Registerkarte Entwurf auf das Startfeld des Dialogfelds in der Gruppe Seiteneinrichtung).  </span><span class="sxs-lookup"><span data-stu-id="58852-106">You can set the values of page properties by making an entry in the **Page Properties** section cell, or by using the **Page Setup** dialog box (on the **Design** tab, click the dialog box launcher in the **Page Setup** group).</span></span> 
   
 

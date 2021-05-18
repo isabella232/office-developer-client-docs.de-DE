@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidlidimageattachmentscompressionlevel (-Eigenschaft
+title: PidLidImageAttachmentsCompressionLevel (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,25 +19,25 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33413829"
 ---
-# <a name="pidlidimageattachmentscompressionlevel-canonical-property"></a><span data-ttu-id="4aadf-103">Kanonische Pidlidimageattachmentscompressionlevel (-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="4aadf-103">PidLidImageAttachmentsCompressionLevel Canonical Property</span></span>
+# <a name="pidlidimageattachmentscompressionlevel-canonical-property"></a><span data-ttu-id="aaf4f-103">PidLidImageAttachmentsCompressionLevel (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="aaf4f-103">PidLidImageAttachmentsCompressionLevel Canonical Property</span></span>
 
   
   
-<span data-ttu-id="4aadf-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="4aadf-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="aaf4f-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="aaf4f-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="4aadf-105">Definiert eine Komprimierungsstufe für Bildanlagen.</span><span class="sxs-lookup"><span data-stu-id="4aadf-105">Defines a compression level to apply on image attachments.</span></span>
+<span data-ttu-id="aaf4f-105">Definiert eine Komprimierungsstufe, die auf Bildanlagen angewendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="aaf4f-105">Defines a compression level to apply on image attachments.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="4aadf-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="4aadf-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="4aadf-107">dispidImgAttchmtsCompressLevel</span><span class="sxs-lookup"><span data-stu-id="4aadf-107">dispidImgAttchmtsCompressLevel</span></span>  <br/> |
-|<span data-ttu-id="4aadf-108">Eigenschaftensatz:</span><span class="sxs-lookup"><span data-stu-id="4aadf-108">Property set:</span></span>  <br/> |<span data-ttu-id="4aadf-109">PSETID_Common</span><span class="sxs-lookup"><span data-stu-id="4aadf-109">PSETID_Common</span></span>  <br/> |
-|<span data-ttu-id="4aadf-110">Long-ID (Deckel):</span><span class="sxs-lookup"><span data-stu-id="4aadf-110">Long ID (LID):</span></span>  <br/> |<span data-ttu-id="4aadf-111">0x00008593</span><span class="sxs-lookup"><span data-stu-id="4aadf-111">0x00008593</span></span>  <br/> |
-|<span data-ttu-id="4aadf-112">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="4aadf-112">Data type:</span></span>  <br/> |<span data-ttu-id="4aadf-113">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="4aadf-113">PT_LONG</span></span>  <br/> |
-|<span data-ttu-id="4aadf-114">Bereich:</span><span class="sxs-lookup"><span data-stu-id="4aadf-114">Area:</span></span>  <br/> |<span data-ttu-id="4aadf-115">Laufzeitkonfiguration</span><span class="sxs-lookup"><span data-stu-id="4aadf-115">Run-time configuration</span></span>  <br/> |
+|<span data-ttu-id="aaf4f-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="aaf4f-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="aaf4f-107">dispidImgAttchmtsCompressLevel</span><span class="sxs-lookup"><span data-stu-id="aaf4f-107">dispidImgAttchmtsCompressLevel</span></span>  <br/> |
+|<span data-ttu-id="aaf4f-108">Eigenschaftensatz:</span><span class="sxs-lookup"><span data-stu-id="aaf4f-108">Property set:</span></span>  <br/> |<span data-ttu-id="aaf4f-109">PSETID_Common</span><span class="sxs-lookup"><span data-stu-id="aaf4f-109">PSETID_Common</span></span>  <br/> |
+|<span data-ttu-id="aaf4f-110">Lange ID (LID):</span><span class="sxs-lookup"><span data-stu-id="aaf4f-110">Long ID (LID):</span></span>  <br/> |<span data-ttu-id="aaf4f-111">0x00008593</span><span class="sxs-lookup"><span data-stu-id="aaf4f-111">0x00008593</span></span>  <br/> |
+|<span data-ttu-id="aaf4f-112">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="aaf4f-112">Data type:</span></span>  <br/> |<span data-ttu-id="aaf4f-113">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="aaf4f-113">PT_LONG</span></span>  <br/> |
+|<span data-ttu-id="aaf4f-114">Bereich:</span><span class="sxs-lookup"><span data-stu-id="aaf4f-114">Area:</span></span>  <br/> |<span data-ttu-id="aaf4f-115">Laufzeitkonfiguration</span><span class="sxs-lookup"><span data-stu-id="aaf4f-115">Run-time configuration</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="4aadf-116">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="4aadf-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="aaf4f-116">Hinweise</span><span class="sxs-lookup"><span data-stu-id="aaf4f-116">Remarks</span></span>
 
-<span data-ttu-id="4aadf-117">Es folgen die folgenden gültigen Komprimierungsstufen:</span><span class="sxs-lookup"><span data-stu-id="4aadf-117">The following are valid compression levels:</span></span>
+<span data-ttu-id="aaf4f-117">Es folgen gültige Komprimierungsstufen:</span><span class="sxs-lookup"><span data-stu-id="aaf4f-117">The following are valid compression levels:</span></span>
   
 ```cpp
 enum PictureCompressLevel
@@ -49,29 +49,29 @@ enum PictureCompressLevel
 };
 ```
 
-## <a name="related-resources"></a><span data-ttu-id="4aadf-118">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="4aadf-118">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="aaf4f-118">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="aaf4f-118">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="4aadf-119">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="4aadf-119">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="aaf4f-119">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="aaf4f-119">Protocol specifications</span></span>
 
-<span data-ttu-id="4aadf-120">[[MS-OXPROPS]]</span><span class="sxs-lookup"><span data-stu-id="4aadf-120">[[MS-OXPROPS]]</span></span> 
+<span data-ttu-id="aaf4f-120">[[MS-OXPROPS]]</span><span class="sxs-lookup"><span data-stu-id="aaf4f-120">[[MS-OXPROPS]]</span></span> 
   
-> <span data-ttu-id="4aadf-121">Stellt Eigenschaftensatz Definitionen und Verweise auf zugehörige Exchange Server-Protokollspezifikationen bereit.</span><span class="sxs-lookup"><span data-stu-id="4aadf-121">Provides property set definitions and references to related Exchange Server protocol specifications.</span></span>
+> <span data-ttu-id="aaf4f-121">Stellt Eigenschaftensatzdefinitionen und Verweise auf verwandte Exchange Server zur Verfügung.</span><span class="sxs-lookup"><span data-stu-id="aaf4f-121">Provides property set definitions and references to related Exchange Server protocol specifications.</span></span>
     
-### <a name="header-files"></a><span data-ttu-id="4aadf-122">Header Dateien</span><span class="sxs-lookup"><span data-stu-id="4aadf-122">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="aaf4f-122">Headerdateien</span><span class="sxs-lookup"><span data-stu-id="aaf4f-122">Header files</span></span>
 
-<span data-ttu-id="4aadf-123">Mapidefs. h</span><span class="sxs-lookup"><span data-stu-id="4aadf-123">Mapidefs.h</span></span>
+<span data-ttu-id="aaf4f-123">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="aaf4f-123">Mapidefs.h</span></span>
   
-> <span data-ttu-id="4aadf-124">Stellt Datentypdefinitionen bereit.</span><span class="sxs-lookup"><span data-stu-id="4aadf-124">Provides data type definitions.</span></span>
+> <span data-ttu-id="aaf4f-124">Bietet Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="aaf4f-124">Provides data type definitions.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="4aadf-125">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="4aadf-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="aaf4f-125">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="aaf4f-125">See also</span></span>
 
 
 
-[<span data-ttu-id="4aadf-126">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="4aadf-126">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="aaf4f-126">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="aaf4f-126">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="4aadf-127">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="4aadf-127">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="aaf4f-127">KANONISCHE EIGENSCHAFTEN VON MAPI</span><span class="sxs-lookup"><span data-stu-id="aaf4f-127">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="4aadf-128">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="4aadf-128">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="aaf4f-128">Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="aaf4f-128">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="4aadf-129">Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="4aadf-129">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="aaf4f-129">Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="aaf4f-129">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

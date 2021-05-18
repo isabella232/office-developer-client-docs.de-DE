@@ -1,5 +1,5 @@
 ---
-title: Makrobefehle (Access Custom Web App)
+title: Makrobefehle (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,17 +14,17 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33411687"
 ---
-# <a name="macro-commands-access-custom-web-app"></a><span data-ttu-id="9df67-102">Makrobefehle (Access Custom Web App)</span><span class="sxs-lookup"><span data-stu-id="9df67-102">Macro commands (Access custom web app)</span></span>
+# <a name="macro-commands-access-custom-web-app"></a><span data-ttu-id="b8cd8-102">Makrobefehle (benutzerdefinierte Access-Web-App)</span><span class="sxs-lookup"><span data-stu-id="b8cd8-102">Macro commands (Access custom web app)</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="9df67-p101">Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen.</span><span class="sxs-lookup"><span data-stu-id="9df67-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="b8cd8-p101">Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen.</span><span class="sxs-lookup"><span data-stu-id="b8cd8-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
-## <a name="in-this-section"></a><span data-ttu-id="9df67-105">Inhalt dieses Abschnitts</span><span class="sxs-lookup"><span data-stu-id="9df67-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="b8cd8-105">Inhalt dieses Abschnitts</span><span class="sxs-lookup"><span data-stu-id="b8cd8-105">In this section</span></span>
 
-- [<span data-ttu-id="9df67-106">Ausführendatenmakro-Makroaktion (benutzerdefinierte Access-Web-App)</span><span class="sxs-lookup"><span data-stu-id="9df67-106">RunDataMacro Macro Action (Access custom web app)</span></span>](rundatamacro-macro-action-access-custom-web-app.md)
+- [<span data-ttu-id="b8cd8-106">RunDataMacro-Makroaktion (benutzerdefinierte Access-Web-App)</span><span class="sxs-lookup"><span data-stu-id="b8cd8-106">RunDataMacro Macro Action (Access custom web app)</span></span>](rundatamacro-macro-action-access-custom-web-app.md)
     
-- [<span data-ttu-id="9df67-107">RunMacro-Makroaktion (benutzerdefinierte Access-Web-App)</span><span class="sxs-lookup"><span data-stu-id="9df67-107">RunMacro Macro Action (Access custom web app)</span></span>](runmacro-macro-action-access-custom-web-app.md)
+- [<span data-ttu-id="b8cd8-107">RunMacro-Makroaktion (benutzerdefinierte Access-Web-App)</span><span class="sxs-lookup"><span data-stu-id="b8cd8-107">RunMacro Macro Action (Access custom web app)</span></span>](runmacro-macro-action-access-custom-web-app.md)
     
-- [<span data-ttu-id="9df67-108">SetVariable-Makroaktion (benutzerdefinierte Access-Web-App)</span><span class="sxs-lookup"><span data-stu-id="9df67-108">SetVariable Macro Action (Access custom web app)</span></span>](setvariable-macro-action-access-custom-web-app.md)
+- [<span data-ttu-id="b8cd8-108">SetVariable Macro Action (benutzerdefinierte Access-Web-App)</span><span class="sxs-lookup"><span data-stu-id="b8cd8-108">SetVariable Macro Action (Access custom web app)</span></span>](setvariable-macro-action-access-custom-web-app.md)
     
 

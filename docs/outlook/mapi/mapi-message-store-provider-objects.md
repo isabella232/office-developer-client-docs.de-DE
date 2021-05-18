@@ -1,5 +1,5 @@
 ---
-title: MAPI-Nachrichtenspeicher-Anbieterobjekte
+title: MAPI-Nachrichtenspeicheranbieterobjekte
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,17 +15,17 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33413297"
 ---
-# <a name="mapi-message-store-provider-objects"></a><span data-ttu-id="70f28-103">MAPI-Nachrichtenspeicher-Anbieterobjekte</span><span class="sxs-lookup"><span data-stu-id="70f28-103">MAPI message store provider objects</span></span>
+# <a name="mapi-message-store-provider-objects"></a><span data-ttu-id="645b3-103">MAPI-Nachrichtenspeicheranbieterobjekte</span><span class="sxs-lookup"><span data-stu-id="645b3-103">MAPI message store provider objects</span></span>
   
-<span data-ttu-id="70f28-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="70f28-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="645b3-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="645b3-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="70f28-105">Nachrichtenspeicher Anbieter implementieren Anbieter-und Anmeldeobjekte, ebenso wie alle Dienstanbieter.</span><span class="sxs-lookup"><span data-stu-id="70f28-105">Message store providers implement provider and logon objects, as do all service providers.</span></span> <span data-ttu-id="70f28-106">Außerdem implementieren Sie ein Nachrichtenspeicherobjekt, Ordner, Nachrichten, Anlagen und Tabellen.</span><span class="sxs-lookup"><span data-stu-id="70f28-106">They also implement a message store object, folders, messages, attachments, and tables.</span></span> <span data-ttu-id="70f28-107">Als Option implementieren einige Nachrichtenspeicher Anbieterstatus Objekte.</span><span class="sxs-lookup"><span data-stu-id="70f28-107">As an option, some message store providers implement status objects.</span></span>
+<span data-ttu-id="645b3-105">Nachrichtenspeicheranbieter implementieren Anbieter- und Anmeldeobjekte wie alle Dienstanbieter.</span><span class="sxs-lookup"><span data-stu-id="645b3-105">Message store providers implement provider and logon objects, as do all service providers.</span></span> <span data-ttu-id="645b3-106">Außerdem implementieren sie ein Nachrichtenspeicherobjekt, Ordner, Nachrichten, Anlagen und Tabellen.</span><span class="sxs-lookup"><span data-stu-id="645b3-106">They also implement a message store object, folders, messages, attachments, and tables.</span></span> <span data-ttu-id="645b3-107">Als Option implementieren einige Nachrichtenspeicheranbieter Statusobjekte.</span><span class="sxs-lookup"><span data-stu-id="645b3-107">As an option, some message store providers implement status objects.</span></span>
   
-<span data-ttu-id="70f28-108">Die folgende Abbildung zeigt die einzelnen Nachrichtenspeicher Objekte mit der entsprechenden Schnittstelle und der MAPI-Komponente, die Sie verwendet.</span><span class="sxs-lookup"><span data-stu-id="70f28-108">The following illustration shows each message store object with its corresponding interface and the MAPI component that uses it.</span></span>
+<span data-ttu-id="645b3-108">Die folgende Abbildung zeigt jedes Nachrichtenspeicherobjekt mit der entsprechenden Schnittstelle und der MAPI-Komponente, die es verwendet.</span><span class="sxs-lookup"><span data-stu-id="645b3-108">The following illustration shows each message store object with its corresponding interface and the MAPI component that uses it.</span></span>
   
-<span data-ttu-id="70f28-109">Von ![Nachrichtenspeicher Anbietern implementierte Objekte] Von (media/amapi_63.gif "Nachrichtenspeicher Anbietern implementierte Objekte")</span><span class="sxs-lookup"><span data-stu-id="70f28-109">![Objects that message store providers implement](media/amapi_63.gif "Objects that message store providers implement")</span></span>
+<span data-ttu-id="645b3-109">![Objekte, die Nachrichtenspeicheranbieter implementieren Objekte,](media/amapi_63.gif "die von Nachrichtenspeicheranbietern implementiert werden")</span><span class="sxs-lookup"><span data-stu-id="645b3-109">![Objects that message store providers implement](media/amapi_63.gif "Objects that message store providers implement")</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="70f28-110">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="70f28-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="645b3-110">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="645b3-110">See also</span></span>
 
-- [<span data-ttu-id="70f28-111">MAPI-Dienstanbieter Objekte</span><span class="sxs-lookup"><span data-stu-id="70f28-111">MAPI Service Provider Objects</span></span>](mapi-service-provider-objects.md)
+- [<span data-ttu-id="645b3-111">OBJEKTE des MAPI-Dienstanbieters</span><span class="sxs-lookup"><span data-stu-id="645b3-111">MAPI Service Provider Objects</span></span>](mapi-service-provider-objects.md)
 

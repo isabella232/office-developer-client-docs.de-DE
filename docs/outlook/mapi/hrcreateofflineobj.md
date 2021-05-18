@@ -15,17 +15,17 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33414389"
 ---
-# <a name="hrcreateofflineobj"></a><span data-ttu-id="7de57-103">HrCreateOfflineObj</span><span class="sxs-lookup"><span data-stu-id="7de57-103">HrCreateOfflineObj</span></span>
+# <a name="hrcreateofflineobj"></a><span data-ttu-id="a0120-103">HrCreateOfflineObj</span><span class="sxs-lookup"><span data-stu-id="a0120-103">HrCreateOfflineObj</span></span>
 
-<span data-ttu-id="7de57-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="7de57-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="a0120-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="a0120-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
- <span data-ttu-id="7de57-105">Erstellt ein MAPI-Offlineobjekt, das vom Anbieter und Speicher verwendet wird, um MAPI zu benachrichtigen, wenn das Objekt Online und offline geschaltet wird.</span><span class="sxs-lookup"><span data-stu-id="7de57-105">Creates a MAPI offline object that is used by the provider and store in order to notify MAPI when the object goes online and offline,</span></span> 
+ <span data-ttu-id="a0120-105">Erstellt ein MAPI-Offlineobjekt, das vom Anbieter und Speicher verwendet wird, um MAPI zu benachrichtigen, wenn das Objekt online und offline geht.</span><span class="sxs-lookup"><span data-stu-id="a0120-105">Creates a MAPI offline object that is used by the provider and store in order to notify MAPI when the object goes online and offline,</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="7de57-106">Exportiert von:</span><span class="sxs-lookup"><span data-stu-id="7de57-106">Exported by:</span></span>  <br/> |<span data-ttu-id="7de57-107">Msmapi32. dll</span><span class="sxs-lookup"><span data-stu-id="7de57-107">Msmapi32.dll</span></span>  <br/> |
-|<span data-ttu-id="7de57-108">Implementiert von:</span><span class="sxs-lookup"><span data-stu-id="7de57-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="7de57-109">Outlook</span><span class="sxs-lookup"><span data-stu-id="7de57-109">Outlook</span></span>  <br/> |
-|<span data-ttu-id="7de57-110">Aufgerufen von:</span><span class="sxs-lookup"><span data-stu-id="7de57-110">Called by:</span></span>  <br/> |<span data-ttu-id="7de57-111">Client</span><span class="sxs-lookup"><span data-stu-id="7de57-111">Client</span></span>  <br/> |
+|<span data-ttu-id="a0120-106">Exportiert von:</span><span class="sxs-lookup"><span data-stu-id="a0120-106">Exported by:</span></span>  <br/> |<span data-ttu-id="a0120-107">Msmapi32.dll</span><span class="sxs-lookup"><span data-stu-id="a0120-107">Msmapi32.dll</span></span>  <br/> |
+|<span data-ttu-id="a0120-108">Implementiert von:</span><span class="sxs-lookup"><span data-stu-id="a0120-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="a0120-109">Outlook</span><span class="sxs-lookup"><span data-stu-id="a0120-109">Outlook</span></span>  <br/> |
+|<span data-ttu-id="a0120-110">Aufgerufen von:</span><span class="sxs-lookup"><span data-stu-id="a0120-110">Called by:</span></span>  <br/> |<span data-ttu-id="a0120-111">Client</span><span class="sxs-lookup"><span data-stu-id="a0120-111">Client</span></span>  <br/> |
    
 ```cpp
 STDAPI HrCreateOfflineObj(
@@ -35,27 +35,27 @@ IMAPIOfflineMgr** ppOffline
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="7de57-112">Parameter</span><span class="sxs-lookup"><span data-stu-id="7de57-112">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="a0120-112">Parameter</span><span class="sxs-lookup"><span data-stu-id="a0120-112">Parameters</span></span>
 
-<span data-ttu-id="7de57-113">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="7de57-113">_ulFlags_</span></span>
+<span data-ttu-id="a0120-113">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="a0120-113">_ulFlags_</span></span>
   
-> <span data-ttu-id="7de57-114">in Es muss 0 sein.</span><span class="sxs-lookup"><span data-stu-id="7de57-114">[in] It must be 0.</span></span>
+> <span data-ttu-id="a0120-114">[in] Es muss 0 sein.</span><span class="sxs-lookup"><span data-stu-id="a0120-114">[in] It must be 0.</span></span>
     
-<span data-ttu-id="7de57-115">_pCreateInfo_</span><span class="sxs-lookup"><span data-stu-id="7de57-115">_pCreateInfo_</span></span>
+<span data-ttu-id="a0120-115">_pCreateInfo_</span><span class="sxs-lookup"><span data-stu-id="a0120-115">_pCreateInfo_</span></span>
   
-> <span data-ttu-id="7de57-116">in Ein Zeiger auf eine **MAPIOFFLINE_CREATEINFO** -Struktur, die die zum Erstellen des Offline Objekts erforderlichen Informationen enthält.</span><span class="sxs-lookup"><span data-stu-id="7de57-116">[in] A pointer to a **MAPIOFFLINE_CREATEINFO** structure that contains the information needed to create the offline object.</span></span> 
+> <span data-ttu-id="a0120-116">[in] Ein Zeiger auf eine **MAPIOFFLINE_CREATEINFO,** die die informationen enthält, die zum Erstellen des Offlineobjekts erforderlich sind.</span><span class="sxs-lookup"><span data-stu-id="a0120-116">[in] A pointer to a **MAPIOFFLINE_CREATEINFO** structure that contains the information needed to create the offline object.</span></span> 
     
-<span data-ttu-id="7de57-117">_ppOffline_</span><span class="sxs-lookup"><span data-stu-id="7de57-117">_ppOffline_</span></span>
+<span data-ttu-id="a0120-117">_ppOffline_</span><span class="sxs-lookup"><span data-stu-id="a0120-117">_ppOffline_</span></span>
   
-> <span data-ttu-id="7de57-118">Out Ein Zeiger auf die **IMAPIOfflineMgr** -Schnittstelle.</span><span class="sxs-lookup"><span data-stu-id="7de57-118">[out] A pointer to the **IMAPIOfflineMgr** interface.</span></span> 
+> <span data-ttu-id="a0120-118">[out] Ein Zeiger auf die **IMAPIOfflineMgr-Schnittstelle.**</span><span class="sxs-lookup"><span data-stu-id="a0120-118">[out] A pointer to the **IMAPIOfflineMgr** interface.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="7de57-119">Return value</span><span class="sxs-lookup"><span data-stu-id="7de57-119">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="a0120-119">Return value</span><span class="sxs-lookup"><span data-stu-id="a0120-119">Return value</span></span>
 
-<span data-ttu-id="7de57-120">None.</span><span class="sxs-lookup"><span data-stu-id="7de57-120">None.</span></span>
+<span data-ttu-id="a0120-120">None.</span><span class="sxs-lookup"><span data-stu-id="a0120-120">None.</span></span>
   
-<span data-ttu-id="7de57-121">HrOpenOfflineObj</span><span class="sxs-lookup"><span data-stu-id="7de57-121">HrOpenOfflineObj</span></span>
+<span data-ttu-id="a0120-121">HrOpenOfflineObj</span><span class="sxs-lookup"><span data-stu-id="a0120-121">HrOpenOfflineObj</span></span>
   
-## <a name="example"></a><span data-ttu-id="7de57-122">Beispiel</span><span class="sxs-lookup"><span data-stu-id="7de57-122">Example</span></span>
+## <a name="example"></a><span data-ttu-id="a0120-122">Beispiel</span><span class="sxs-lookup"><span data-stu-id="a0120-122">Example</span></span>
 
 ```cpp
 // create/get global offline object to use as parent.
@@ -101,8 +101,8 @@ IMAPIOfflineMgr** ppOffline
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="7de57-123">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="7de57-123">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a0120-123">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="a0120-123">See also</span></span>
 
-- [<span data-ttu-id="7de57-124">MAPIOFFLINE_AGGREGATEINFO</span><span class="sxs-lookup"><span data-stu-id="7de57-124">MAPIOFFLINE_AGGREGATEINFO</span></span>](mapioffline_aggregateinfo.md)
-- [<span data-ttu-id="7de57-125">MAPIOFFLINE_CREATEINFO</span><span class="sxs-lookup"><span data-stu-id="7de57-125">MAPIOFFLINE_CREATEINFO</span></span>](mapioffline_createinfo.md)
+- [<span data-ttu-id="a0120-124">MAPIOFFLINE_AGGREGATEINFO</span><span class="sxs-lookup"><span data-stu-id="a0120-124">MAPIOFFLINE_AGGREGATEINFO</span></span>](mapioffline_aggregateinfo.md)
+- [<span data-ttu-id="a0120-125">MAPIOFFLINE_CREATEINFO</span><span class="sxs-lookup"><span data-stu-id="a0120-125">MAPIOFFLINE_CREATEINFO</span></span>](mapioffline_createinfo.md)
 

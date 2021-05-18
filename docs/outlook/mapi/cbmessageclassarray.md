@@ -19,35 +19,35 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33413122"
 ---
-# <a name="cbmessageclassarray"></a><span data-ttu-id="017bc-103">CbMessageClassArray</span><span class="sxs-lookup"><span data-stu-id="017bc-103">CbMessageClassArray</span></span>
+# <a name="cbmessageclassarray"></a><span data-ttu-id="ef5b9-103">CbMessageClassArray</span><span class="sxs-lookup"><span data-stu-id="ef5b9-103">CbMessageClassArray</span></span>
 
   
   
-<span data-ttu-id="017bc-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="017bc-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="ef5b9-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="ef5b9-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="017bc-105">Berechnet die Anzahl der Bytes in einer vorhandenen [SMessageClassArray](smessageclassarray.md) -Struktur, die eine angegebene Anzahl von Zeichenfolgen Zeigern für Nachrichtenklassen enthält.</span><span class="sxs-lookup"><span data-stu-id="017bc-105">Computes the number of bytes in an existing [SMessageClassArray](smessageclassarray.md) structure that contains a specified number of string pointers to message classes.</span></span> 
+<span data-ttu-id="ef5b9-105">Berechnet die Anzahl der Bytes in einer vorhandenen [SMessageClassArray-Struktur,](smessageclassarray.md) die eine angegebene Anzahl von Zeichenfolgenzeigern auf Nachrichtenklassen enthält.</span><span class="sxs-lookup"><span data-stu-id="ef5b9-105">Computes the number of bytes in an existing [SMessageClassArray](smessageclassarray.md) structure that contains a specified number of string pointers to message classes.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="017bc-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="017bc-106">Header file:</span></span>  <br/> |<span data-ttu-id="017bc-107">Mapidefs. h</span><span class="sxs-lookup"><span data-stu-id="017bc-107">Mapidefs.h</span></span>  <br/> |
-|<span data-ttu-id="017bc-108">Zugehörige Struktur:</span><span class="sxs-lookup"><span data-stu-id="017bc-108">Related structure:</span></span>  <br/> |<span data-ttu-id="017bc-109">**SMessageClassArray**</span><span class="sxs-lookup"><span data-stu-id="017bc-109">**SMessageClassArray**</span></span> <br/> |
+|<span data-ttu-id="ef5b9-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="ef5b9-106">Header file:</span></span>  <br/> |<span data-ttu-id="ef5b9-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="ef5b9-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="ef5b9-108">Verwandte Struktur:</span><span class="sxs-lookup"><span data-stu-id="ef5b9-108">Related structure:</span></span>  <br/> |<span data-ttu-id="ef5b9-109">**SMessageClassArray**</span><span class="sxs-lookup"><span data-stu-id="ef5b9-109">**SMessageClassArray**</span></span> <br/> |
    
 ```cpp
 CbMessageClassArray (_c)
 ```
 
-## <a name="parameters"></a><span data-ttu-id="017bc-110">Parameter</span><span class="sxs-lookup"><span data-stu-id="017bc-110">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="ef5b9-110">Parameter</span><span class="sxs-lookup"><span data-stu-id="ef5b9-110">Parameters</span></span>
 
- <span data-ttu-id="017bc-111">__c_</span><span class="sxs-lookup"><span data-stu-id="017bc-111">__c_</span></span>
+ <span data-ttu-id="ef5b9-111">_ _c_</span><span class="sxs-lookup"><span data-stu-id="ef5b9-111">_ _c_</span></span>
   
-> <span data-ttu-id="017bc-112">Die Anzahl der Zeiger auf Nachrichtenklassen, die in der vorhandenen **SMessageClassArray**enthalten sind.</span><span class="sxs-lookup"><span data-stu-id="017bc-112">Count of the pointers to message classes that are included in the existing **SMessageClassArray**.</span></span>
+> <span data-ttu-id="ef5b9-112">Anzahl der Zeiger auf Nachrichtenklassen, die in der vorhandenen **SMessageClassArray enthalten sind.**</span><span class="sxs-lookup"><span data-stu-id="ef5b9-112">Count of the pointers to message classes that are included in the existing **SMessageClassArray**.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="017bc-113">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="017bc-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ef5b9-113">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="ef5b9-113">See also</span></span>
 
 
 
-[<span data-ttu-id="017bc-114">SMessageClassArray</span><span class="sxs-lookup"><span data-stu-id="017bc-114">SMessageClassArray</span></span>](smessageclassarray.md)
+[<span data-ttu-id="ef5b9-114">SMessageClassArray</span><span class="sxs-lookup"><span data-stu-id="ef5b9-114">SMessageClassArray</span></span>](smessageclassarray.md)
 
 
-[<span data-ttu-id="017bc-115">Makros im Zusammenhang mit Strukturen</span><span class="sxs-lookup"><span data-stu-id="017bc-115">Macros Related to Structures</span></span>](macros-related-to-structures.md)
+[<span data-ttu-id="ef5b9-115">Makros im Zusammenhang mit Strukturen</span><span class="sxs-lookup"><span data-stu-id="ef5b9-115">Macros Related to Structures</span></span>](macros-related-to-structures.md)
 

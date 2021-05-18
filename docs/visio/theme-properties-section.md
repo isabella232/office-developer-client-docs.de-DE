@@ -1,12 +1,12 @@
 ---
-title: Abschnitt "Design Properties"
+title: Abschnitt "Designeigenschaften"
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 135c4a12-8ee0-4b70-bb58-572a064ecee4
-description: Zeigt die Indexwerte des Designs an, das aktuell auf das Dokument angewendet wird, einschließlich Farbe, Schriftart, Verbinder und Effekt Werten.
+description: Zeigt die Indexwerte des Designs an, das derzeit auf das Dokument angewendet wird, einschließlich Farb-, Schriftart-, Connector- und Effektwerten.
 ms.openlocfilehash: 4ee074e11cea0787ccbe616e97a279ee5e8e20dd
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -14,12 +14,12 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33413962"
 ---
-# <a name="theme-properties-section"></a><span data-ttu-id="49678-103">Abschnitt "Design Properties"</span><span class="sxs-lookup"><span data-stu-id="49678-103">Theme Properties Section</span></span>
+# <a name="theme-properties-section"></a><span data-ttu-id="17d89-103">Abschnitt "Designeigenschaften"</span><span class="sxs-lookup"><span data-stu-id="17d89-103">Theme Properties Section</span></span>
 
-<span data-ttu-id="49678-104">Zeigt die Indexwerte des Designs an, das aktuell auf das Dokument angewendet wird, einschließlich Farbe, Schriftart, Verbinder und Effekt Werten.</span><span class="sxs-lookup"><span data-stu-id="49678-104">Shows the index values of the theme currently applied to the document, including color, font, connector, and effects values.</span></span> 
+<span data-ttu-id="17d89-104">Zeigt die Indexwerte des Designs an, das derzeit auf das Dokument angewendet wird, einschließlich Farb-, Schriftart-, Connector- und Effektwerten.</span><span class="sxs-lookup"><span data-stu-id="17d89-104">Shows the index values of the theme currently applied to the document, including color, font, connector, and effects values.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="49678-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="49678-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="17d89-105">Hinweise</span><span class="sxs-lookup"><span data-stu-id="17d89-105">Remarks</span></span>
 
-<span data-ttu-id="49678-106">Sie können Design Werte auf der Registerkarte **Entwurf** festlegen oder Änderungen an den Zellen im Abschnitt **Designeigenschaften** des ShapeSheets vornehmen.</span><span class="sxs-lookup"><span data-stu-id="49678-106">You can set theme values on the **Design** tab or by making changes in the cells in the **Theme Properties** section of the ShapeSheet.</span></span> 
+<span data-ttu-id="17d89-106">Sie können Designwerte auf der Registerkarte **Entwurf** festlegen oder Änderungen an den Zellen im **Abschnitt Designeigenschaften** des ShapeSheet vornehmen.</span><span class="sxs-lookup"><span data-stu-id="17d89-106">You can set theme values on the **Design** tab or by making changes in the cells in the **Theme Properties** section of the ShapeSheet.</span></span> 
   
 

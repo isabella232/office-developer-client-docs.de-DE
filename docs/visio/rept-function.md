@@ -16,33 +16,33 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33412079"
 ---
-# <a name="rept-function"></a><span data-ttu-id="9d127-103">REPT Function</span><span class="sxs-lookup"><span data-stu-id="9d127-103">REPT Function</span></span>
+# <a name="rept-function"></a><span data-ttu-id="eef07-103">REPT Function</span><span class="sxs-lookup"><span data-stu-id="eef07-103">REPT Function</span></span>
 
-<span data-ttu-id="9d127-104">Wiederholt Text so oft wie angegeben.</span><span class="sxs-lookup"><span data-stu-id="9d127-104">Repeats text a given number of times.</span></span> 
+<span data-ttu-id="eef07-104">Wiederholt Text so oft wie angegeben.</span><span class="sxs-lookup"><span data-stu-id="eef07-104">Repeats text a given number of times.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="9d127-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="9d127-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="eef07-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="eef07-105">Syntax</span></span>
 
-<span data-ttu-id="9d127-106">REPT (\* \* *Text* \* \*, \* \* *Multiplikator* \* \*)</span><span class="sxs-lookup"><span data-stu-id="9d127-106">REPT (\*\* *text* \*\*, \*\* *number_times* \*\* )</span></span> 
+<span data-ttu-id="eef07-106">REPT (\*\* *text* \*\*, \*\* *number_times* \*\* )</span><span class="sxs-lookup"><span data-stu-id="eef07-106">REPT (\*\* *text* \*\*, \*\* *number_times* \*\* )</span></span> 
   
-### <a name="parameters"></a><span data-ttu-id="9d127-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="9d127-107">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="eef07-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="eef07-107">Parameters</span></span>
 
-|<span data-ttu-id="9d127-108">**Name**</span><span class="sxs-lookup"><span data-stu-id="9d127-108">**Name**</span></span>|<span data-ttu-id="9d127-109">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="9d127-109">**Required/Optional**</span></span>|<span data-ttu-id="9d127-110">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="9d127-110">**Data Type**</span></span>|<span data-ttu-id="9d127-111">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="9d127-111">**Description**</span></span>|
+|<span data-ttu-id="eef07-108">**Name**</span><span class="sxs-lookup"><span data-stu-id="eef07-108">**Name**</span></span>|<span data-ttu-id="eef07-109">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="eef07-109">**Required/Optional**</span></span>|<span data-ttu-id="eef07-110">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="eef07-110">**Data Type**</span></span>|<span data-ttu-id="eef07-111">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="eef07-111">**Description**</span></span>|
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="9d127-112">_text_</span><span class="sxs-lookup"><span data-stu-id="9d127-112">_text_</span></span> <br/> |<span data-ttu-id="9d127-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="9d127-113">Required</span></span>  <br/> |<span data-ttu-id="9d127-114">**String**</span><span class="sxs-lookup"><span data-stu-id="9d127-114">**String**</span></span> <br/> | <span data-ttu-id="9d127-115">Der Text, der wiederholt werden soll.</span><span class="sxs-lookup"><span data-stu-id="9d127-115">The text you want to repeat.</span></span>  <br/> |
-| <span data-ttu-id="9d127-116">_Multiplikator_</span><span class="sxs-lookup"><span data-stu-id="9d127-116">_number_times_</span></span> <br/> |<span data-ttu-id="9d127-117">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="9d127-117">Required</span></span>  <br/> |<span data-ttu-id="9d127-118">**Number**</span><span class="sxs-lookup"><span data-stu-id="9d127-118">**Number**</span></span> <br/> |<span data-ttu-id="9d127-119">Eine positive Zahl, die angibt, wie oft der Text wiederholt werden soll.</span><span class="sxs-lookup"><span data-stu-id="9d127-119">A positive number specifying the number of times to repeat text.</span></span>  <br/> |
+| <span data-ttu-id="eef07-112">_text_</span><span class="sxs-lookup"><span data-stu-id="eef07-112">_text_</span></span> <br/> |<span data-ttu-id="eef07-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="eef07-113">Required</span></span>  <br/> |<span data-ttu-id="eef07-114">**String**</span><span class="sxs-lookup"><span data-stu-id="eef07-114">**String**</span></span> <br/> | <span data-ttu-id="eef07-115">Der Text, der wiederholt werden soll.</span><span class="sxs-lookup"><span data-stu-id="eef07-115">The text you want to repeat.</span></span>  <br/> |
+| <span data-ttu-id="eef07-116">_number_times_</span><span class="sxs-lookup"><span data-stu-id="eef07-116">_number_times_</span></span> <br/> |<span data-ttu-id="eef07-117">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="eef07-117">Required</span></span>  <br/> |<span data-ttu-id="eef07-118">**Number**</span><span class="sxs-lookup"><span data-stu-id="eef07-118">**Number**</span></span> <br/> |<span data-ttu-id="eef07-119">Eine positive Zahl, die angibt, wie oft der Text wiederholt werden soll.</span><span class="sxs-lookup"><span data-stu-id="eef07-119">A positive number specifying the number of times to repeat text.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="9d127-120">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="9d127-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="eef07-120">Hinweise</span><span class="sxs-lookup"><span data-stu-id="eef07-120">Remarks</span></span>
 
-<span data-ttu-id="9d127-121">Wenn *Multiplikator* ist:</span><span class="sxs-lookup"><span data-stu-id="9d127-121">If  *number_times*  is:</span></span> 
+<span data-ttu-id="eef07-121">Wenn  *number_times*  ist:</span><span class="sxs-lookup"><span data-stu-id="eef07-121">If  *number_times*  is:</span></span> 
   
-- <span data-ttu-id="9d127-122">Null (0) ist, gibt REPT "" (leeren Text) zurück.</span><span class="sxs-lookup"><span data-stu-id="9d127-122">Zero (0), REPT returns "" (empty text).</span></span>
+- <span data-ttu-id="eef07-122">Null (0) ist, gibt REPT "" (leeren Text) zurück.</span><span class="sxs-lookup"><span data-stu-id="eef07-122">Zero (0), REPT returns "" (empty text).</span></span>
     
-- <span data-ttu-id="9d127-123">keine Ganzzahl ist, wird es abgeschnitten.</span><span class="sxs-lookup"><span data-stu-id="9d127-123">Not an interger, it is truncated.</span></span>
+- <span data-ttu-id="eef07-123">keine Ganzzahl ist, wird es abgeschnitten.</span><span class="sxs-lookup"><span data-stu-id="eef07-123">Not an interger, it is truncated.</span></span>
     
-## <a name="example"></a><span data-ttu-id="9d127-124">Beispiel</span><span class="sxs-lookup"><span data-stu-id="9d127-124">Example</span></span>
+## <a name="example"></a><span data-ttu-id="eef07-124">Beispiel</span><span class="sxs-lookup"><span data-stu-id="eef07-124">Example</span></span>
 
-<span data-ttu-id="9d127-125">REPT ("\*", 5)</span><span class="sxs-lookup"><span data-stu-id="9d127-125">REPT ("\*", 5)</span></span> 
+<span data-ttu-id="eef07-125">REPT (" \* ", 5)</span><span class="sxs-lookup"><span data-stu-id="eef07-125">REPT ("\*", 5)</span></span> 
   
-<span data-ttu-id="9d127-126">Gibt \* \* \*zurück \*. \*</span><span class="sxs-lookup"><span data-stu-id="9d127-126">Returns \*\*\*\*\*.</span></span> 
+<span data-ttu-id="eef07-126">Gibt \* \* \* \* \* zurück.</span><span class="sxs-lookup"><span data-stu-id="eef07-126">Returns \*\*\*\*\*.</span></span> 
   
 
