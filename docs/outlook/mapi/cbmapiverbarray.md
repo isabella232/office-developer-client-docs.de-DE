@@ -25,12 +25,12 @@ ms.locfileid: "33418694"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl der Bytes in einer vorhandenen [SMAPIVerbArray](smapiverbarray.md) -Struktur, die eine angegebene Anzahl von [SMAPIVerb](smapiverb.md) -Strukturen enthält. 
+Berechnet die Anzahl der Bytes in einer vorhandenen [SMAPIVerbArray-Struktur,](smapiverbarray.md) die eine angegebene Anzahl von [SMAPIVerb-Strukturen](smapiverb.md) enthält. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiform. h  <br/> |
-|Zugehörige Struktur:  <br/> |**SMAPIVerbArray** <br/> |
+|Headerdatei  <br/> |Mapiform.h  <br/> |
+|Verwandte Struktur:  <br/> |**SMAPIVerbArray** <br/> |
    
 ```cpp
 int CbMAPIVerbArray (_c)
@@ -38,9 +38,9 @@ int CbMAPIVerbArray (_c)
 
 ## <a name="parameters"></a>Parameter
 
- __c_
+ _ _c_
   
-> Anzahl der **SMAPIVerb** -Strukturen in der vorhandenen **SMAPIVerbArray** -Struktur. 
+> Anzahl der **SMAPIVerb-Strukturen** in der vorhandenen **SMAPIVerbArray-Struktur.** 
     
 ## <a name="see-also"></a>Siehe auch
 

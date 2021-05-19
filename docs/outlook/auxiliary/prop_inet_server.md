@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: cd1bf05a-30df-436f-856b-d5280c20b694
-description: Stellt den Servernamen eines allgemeinen Internet Postfachs dar.
+description: Stellt den Servernamen eines allgemeinen Internetpostfachs dar.
 ms.openlocfilehash: fa0ac96249b600b4e42f85a205870a15bd0f700c
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -14,18 +14,18 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33417602"
 ---
-# <a name="propinetserver"></a>PROP_INET_SERVER
+# <a name="prop_inet_server"></a>PROP_INET_SERVER
 
-Stellt den Servernamen eines allgemeinen Internet Postfachs dar.
+Stellt den Servernamen eines allgemeinen Internetpostfachs dar.
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
 |Kennung:  <br/> |0x0100  <br/> |
-|Eigenschafts:  <br/> |PT_UNICODE  <br/> |
-|Property-Tag:  <br/> |0x0100001F  <br/> |
-|Access  <br/> |Schreibgeschützt  <br/> |
+|Eigenschaftstyp:  <br/> |PT_UNICODE  <br/> |
+|Eigenschaftstag:  <br/> |0x0100001F  <br/> |
+|Zugriff:  <br/> |Schreibgeschützt  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

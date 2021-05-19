@@ -25,48 +25,48 @@ ms.locfileid: "33418106"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Unterstützt den Zugriff auf Microsoft Exchange Server-Tabellenobjekte, insbesondere auf SACL-Tabellenobjekte und Regel Tabellenobjekte in Microsoft Exchange Server-Ordnern. Diese Schnittstelle ähnelt der [IMAPITable: IUnknown](imapitableiunknown.md) -Schnittstelle, fügt jedoch Unterstützung für Microsoft Exchange Server-spezifische Strukturen hinzu, die zum Steuern von SACLs und Regeln verwendet werden. 
+Unterstützt den Zugriff auf Microsoft Exchange Server Tabellenobjekte, insbesondere SACL-Tabellenobjekte (System Access Control List) und Regeltabelle-Objekte in Microsoft Exchange Server Ordnern. Diese Schnittstelle ähnelt der [IMAPITable : IUnknown-Schnittstelle,](imapitableiunknown.md) bietet jedoch Unterstützung für Microsoft Exchange Server-spezifische Strukturen, die zum Steuern von SACLs und Regeln verwendet werden. 
   
 |||
 |:-----|:-----|
 |Verf�gbar gemacht von:  <br/> |Keine  <br/> |
-|Implementiert von:  <br/> |Server Tabellenobjekte  <br/> |
-|Aufgerufen von:  <br/> |MAPI-und Clientanwendungen  <br/> |
+|Implementiert von:  <br/> |Server-Tabellenobjekte  <br/> |
+|Aufgerufen von:  <br/> |MAPI- und Clientanwendungen  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IExchangeModifyTable  <br/> |
 |Zeigertyp:  <br/> |LPEXCHANGEMODIFYTABLE  <br/> |
-|Transaktionsmodell:  <br/> |Durchgeführt  <br/> |
+|Transaktionsmodell:  <br/> |Transacted  <br/> |
    
 ## <a name="vtable-order"></a>Vtable-Reihenfolge
 
 |||
 |:-----|:-----|
-|[Getlasterroraufzurufen](iexchangemodifytable-getlasterror.md) <br/> |Gibt Informationen zum letzten Fehler zurück, der in einem Table-Objekt aufgetreten ist.  <br/> |
+|[GetLastError](iexchangemodifytable-getlasterror.md) <br/> |Gibt Informationen zum letzten Fehler zurück, der in einem Tabellenobjekt aufgetreten ist.  <br/> |
 |[GetTable](iexchangemodifytable-gettable.md) <br/> |Gibt einen Zeiger auf eine Schnittstelle für ein MAPI-Tabellenobjekt zurück.  <br/> |
-|[Modifyable](iexchangemodifytable-modifytable.md) <br/> |Aktualisiert ein MAPI-Tabellenobjekt.  <br/> |
+|[ModifyTable](iexchangemodifytable-modifytable.md) <br/> |Aktualisiert ein MAPI-Tabellenobjekt.  <br/> |
    
-|**Zum Ändern einer Regeltabelle verwendete Eigenschaften**|**Access**|
+|**Eigenschaften zum Ändern einer Regeltabelle**|**Access**|
 |:-----|:-----|
 |**PR_RULE_ACTIONS** ([PidTagRuleActions](pidtagruleactions-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
-|**PR_RULE_CONDITION** ([Pidtagrulecondition (](pidtagrulecondition-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
-|**PR_RULE_ID** ([Pidtagruleid (](pidtagruleid-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
-|**PR_RULE_LEVEL** ([Pidtagrulelevel (](pidtagrulelevel-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
-|**PR_RULE_NAME** ([Pidtagrulename (](pidtagrulename-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
-|**PR_RULE_PROVIDER** ([Pidtagruleprovider (](pidtagruleprovider-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
-|**PR_RULE_PROVIDER_DATA** ([Pidtagruleproviderdata (](pidtagruleproviderdata-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
-|**PR_RULE_SEQUENCE** ([Pidtagrulesequence (](pidtagrulesequence-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
-|**PR_RULE_STATE** ([Pidtagrulestate (](pidtagrulestate-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
-|**PR_RULE_USER_FLAGS** ([Pidtagruleuserflags (](pidtagruleuserflags-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
+|**PR_RULE_CONDITION** ([PidTagRuleCondition](pidtagrulecondition-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
+|**PR_RULE_ID** ([PidTagRuleId](pidtagruleid-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
+|**PR_RULE_LEVEL** ([PidTagRuleLevel](pidtagrulelevel-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
+|**PR_RULE_NAME** ([PidTagRuleName](pidtagrulename-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
+|**PR_RULE_PROVIDER** ([PidTagRuleProvider](pidtagruleprovider-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
+|**PR_RULE_PROVIDER_DATA** ([PidTagRuleProviderData](pidtagruleproviderdata-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
+|**PR_RULE_SEQUENCE** ([PidTagRuleSequence](pidtagrulesequence-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
+|**PR_RULE_STATE** ([PidTagRuleState](pidtagrulestate-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
+|**PR_RULE_USER_FLAGS** ([PidTagRuleUserFlags](pidtagruleuserflags-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
    
-|**Zum Ändern einer SACL-Tabelle verwendete Eigenschaften**|**Access**|
+|**Eigenschaften zum Ändern einer SACL-Tabelle**|**Access**|
 |:-----|:-----|
-|**PR_MEMBER_ENTRYID** ([Pidtagmemberentryid (](pidtagmemberentryid-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
-|**PR_MEMBER_ID** ([Pidtagmemberid (](pidtagmemberid-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
-|**PR_MEMBER_NAME** ([Pidtagmembername (](pidtagmembername-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
-|**PR_MEMBER_RIGHTS** ([Pidtagmemberrights (](pidtagmemberrights-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
+|**PR_MEMBER_ENTRYID** ([PidTagMemberEntryId](pidtagmemberentryid-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
+|**PR_MEMBER_ID** ([PidTagMemberId](pidtagmemberid-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
+|**PR_MEMBER_NAME** ([PidTagMemberName](pidtagmembername-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
+|**PR_MEMBER_RIGHTS** ([PidTagMemberRights](pidtagmemberrights-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Rufen Sie zum Abrufen der **IExchangeModifyTable** -Schnittstelle die MAPI- [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode für eine Eigenschaft vom Typ PT_OBJECT für ein Folder-Objekt auf. Wenn Sie die **OpenProperty** -Methode aufrufen, übergeben Sie den Wert **IID_IExchangeModifyTable** im _lpIID_ -Parameter. 
+Rufen Sie zum Abrufen der **IExchangeModifyTable-Schnittstelle** die MAPI-IMAPIProp::OpenProperty-Methode für eine Eigenschaft vom Typ PT_OBJECT ordnerobjekt auf. [](imapiprop-openproperty.md) Wenn Sie die **OpenProperty-Methode** aufrufen, übergeben Sie den Wert **IID_IExchangeModifyTable** im _lpiid-Parameter._ 
   
 ## <a name="see-also"></a>Siehe auch
 

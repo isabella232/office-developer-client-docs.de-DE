@@ -19,7 +19,7 @@ ms.locfileid: "32339186"
  
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Informationen zum Hochladen von Elementen, die verschoben wurden. Diese Informationen werden während des Status [](upload-delete-status-state.md) Status des Uploads und zum [Hochladen von Tabellen](upload-table-state.md)verwendet.
+Informationen zum Hochladen von verschobenen Elementen. Diese Informationen werden während des Statusstatus ["Upload delete" und](upload-delete-status-state.md) ["upload table" verwendet.](upload-table-state.md)
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -43,21 +43,21 @@ struct UPMOV
 
 _ulFlags_
   
-> in Flags zum Bestimmen des geeigneten Verhaltens während des Uploads.
+> [in] Flags, um das entsprechende Verhalten während des Uploads zu bestimmen.
     
   - UPV_ERROR
     
-    - in Problem beim Öffnen des Serverordners.
+    - [in] Problem beim Öffnen des Serverordners.
     
   - UPV_DIRTY
     
-    - in Der Uploadstatus wurde geändert. Dies wird vom Client verwendet, um die Zustandsänderung für den lokalen Speicher nachzuverfolgen.
+    - [in] Der Uploadstatus hat sich geändert. Dies wird vom Client verwendet, um die Statusänderung für den lokalen Speicher nachverfolgt zu werden.
     
   - UPV_COMMIT
     
-    - in Commit-Uploadstatus.
+    - [in] Commituploadstatus.
     
-_Beibehalten_
+_pReserved_
   
 >  [out] Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
     
@@ -67,22 +67,22 @@ _pstmReserved_
     
 _pszName_
   
->  Out Name des Zielordners. 
+>  [out] Name des Zielordners. 
     
   > [!NOTE]
-  > Dieser Member unterstützt UNICODE nicht. 
+  > Dieses Mitglied unterstützt UNICODE nicht. 
   
 _feid_
   
->  Out Eintrags-ID des Zielordners. 
+>  [out] Eintrags-ID des Zielordners. 
     
 _pfld_
   
->  in Zeiger auf Serverordner. 
+>  [in] Zeiger auf Serverordner. 
     
 _pxicc_
   
->  in Zeiger auf die **IExchangeImportContentsChanges** -Inhalts Oberfläche, die das Hochladen von Inhaltsänderungen unterstützt, wenn die inkrementelle Änderungs Synchronisierung verwendet wird. Weitere Informationen zu **IExchangeImportContentsChanges** und ICS finden Sie unter [ICS Evaluation Criteria](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx).
+>  [in] Zeiger auf die **IExchangeImportContentsChanges-Inhaltsschnittstelle,** die das Hochladen von Inhaltsänderungen bei Verwendung der inkrementellen Änderungssynchronisierung (Incremental Change Synchronization, ICS) unterstützt. Weitere Informationen zu **IExchangeImportContentsChanges** und ICS finden Sie unter [ICS Evaluation Criteria](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx).
     
 _dwReserved_
   
@@ -90,11 +90,11 @@ _dwReserved_
     
 _pupmovNext_
   
->  Out Nächster Verschiebungs Kontext. 
+>  [out] Nächster Verschiebekontext. 
     
 _cEntMov_
   
->  in Die Anzahl der Elemente, die hierhin verschoben wurden. 
+>  [in] Die Anzahl der hier verschobenen Elemente. 
     
 ## <a name="see-also"></a>Siehe auch
 

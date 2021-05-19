@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251446
 localization_priority: Normal
 ms.assetid: ce193ce1-c7fd-6609-ad37-a3a28b30a1bd
-description: Rundet eine Zahl auf die nächste Ganzzahl ab.
+description: Rundet eine Zahl bis zur nächsten ganzzahligen Zahl.
 ms.openlocfilehash: 405345ae1d22d599df85e2a640445c8c681ec2f6
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33416139"
 ---
 # <a name="intup-function"></a>INTUP Function
 
-Rundet eine Zahl auf die nächste Ganzzahl ab.
+Rundet eine Zahl bis zur nächsten ganzzahligen Zahl.
   
 ## <a name="syntax"></a>Syntax
 
-INTUP (* * *Number* * *) 
+INTUP(** *number* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -32,19 +32,19 @@ INTUP (* * *Number* * *)
    
 ## <a name="example-1"></a>Beispiel 1
 
-INTUP (3.2)
+INTUP(3.2)
   
 Gibt 4 zurück.
   
 ## <a name="example-2"></a>Beispiel 2
 
-INTUP (-3,2)
+INTUP(-3.2)
   
 Gibt -3 zurück.
   
 ## <a name="example-3"></a>Beispiel 3
 
-INTUP (3)
+INTUP(3)
   
 Gibt 3 zurück.
   

@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251481
 localization_priority: Normal
 ms.assetid: b64abbd7-38df-9756-23c6-4457be987464
-description: Gibt die x-Koordinate eines Punkts zurück.
+description: Gibt die X-Koordinate eines Punkts zurück.
 ms.openlocfilehash: 3a751fc440457fe11c829319d4b56e64dd9683ce
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,25 +18,25 @@ ms.locfileid: "33417035"
 ---
 # <a name="pntx-function"></a>PNTX Function
 
-Gibt die _x_-Koordinate eines Punkts zurück.
+Gibt die x-Koordinate eines Punkts zurück.
   
 ## <a name="syntax"></a>Syntax
 
-PNTX (* * *Point* * *) 
+PNTX(** *point* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Punkt_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die _x_-Koordinate des Punkts.  <br/> |
+| _point_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die x-Koordinate des Punkts.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
-Zahl
+Nummer
   
 ## <a name="example"></a>Beispiel
 
-PNTX (PNT (7, 12)) 
+PNTX(PNT(7,12)) 
   
 Gibt 7 zurück. 
   

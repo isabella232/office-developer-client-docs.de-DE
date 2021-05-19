@@ -25,7 +25,7 @@ ms.locfileid: "33416398"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Initiiert den ABMELDEPROZESS.
+Initiiert den Abmeldevorgang.
   
 ```cpp
 HRESULT Logoff(
@@ -43,19 +43,19 @@ HRESULT Logoff(
 
 S_OK 
   
-> Der ABMELDEPROZESS wurde erfolgreich initiiert.
+> Der Abmeldevorgang wurde erfolgreich initiiert.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Der ABMELDEPROZESS wird in der Regel gestartet, wenn ein Client die [IMAPISession:: Abmelde](imapisession-logoff.md) Methode aufruft, um eine Sitzung zu beenden. MAPI ruft dann die **IABLogon:: Abmelde** Methode jedes Adressbuch Anbieters auf, um den ABMELDEPROZESS zu starten. 
+Der Abmeldevorgang wird in der Regel gestartet, wenn ein Client die [IMAPISession::Logoff-Methode](imapisession-logoff.md) aufruft, um eine Sitzung zu beenden. MAPI ruft dann die **IABLogon::Logoff-Methode** jedes Adressbuchanbieters auf, um den Abmeldevorgang zu starten. 
   
-Die **IABLogon:: Logout** -Methode führt die folgenden Aktionen aus: 
+Die **IABLogon::Logoff-Methode** führt die folgenden Schritte aus: 
   
-- Gibt alle geöffneten Objekte wie alle unter Objekte oder das Status-Objekt frei.
+- Gibt alle geöffneten Objekte frei, z. B. alle Unterobjekte oder das Statusobjekt.
     
-- Gibt das Support Objekt des Anbieters frei.
+- Gibt das Supportobjekt des Anbieters frei.
     
-Weitere Informationen zum ABMELDEPROZESS von Adressbuch Anbietern finden Sie unter [Herunterfahren eines Dienstanbieters](shutting-down-a-service-provider.md).
+Weitere Informationen zum Abmeldevorgang von Adressbuchanbietern finden Sie unter [Shutting Down a Service Provider](shutting-down-a-service-provider.md).
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -25,34 +25,34 @@ ms.locfileid: "33418134"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Definiert Lesezeichen Daten für die Erinnerung an eine Position in einer Tabelle. 
+Definiert Lesezeichendaten zum Speichern einer Position in einer Tabelle. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Verwandte Methoden:  <br/> |[IMAPITable:: CreateBookMark](imapitable-createbookmark.md) [IMAPITable:: FreeBookmark](imapitable-freebookmark.md) <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Methoden:  <br/> |[IMAPITable::CreateBookmark](imapitable-createbookmark.md)[IMAPITable::FreeBookmark](imapitable-freebookmark.md) <br/> |
    
 ```cpp
 typedef ULONG_PTR BOOKMARK;
 ```
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-MAPI definiert drei Lesezeichen, die wie folgt aufgelistet sind:
+MAPI definiert drei Lesezeichen, die wie folgt aufgeführt sind:
   
 BOOKMARK_BEGINNING 
   
-> Merkt sich die Anfangsposition der Tabelle. 
+> Erinnert sich an die Anfangsposition der Tabelle. 
     
 BOOKMARK_CURRENT 
   
-> Merkt sich die aktuelle Position der Tabelle.
+> Erinnert sich an die aktuelle Position der Tabelle.
     
 BOOKMARK_END 
   
-> Merkt sich die Endposition der Tabelle.
+> Erinnert sich an die Endposition der Tabelle.
     
-Clients können andere Lesezeichen zum erinnern anderer Tabellenpositionen erstellen. Textmarken sind nur gültig, wenn die Tabelle geöffnet ist. Clients müssen alle Lesezeichen freigeben, die Sie erstellt haben, bevor Sie die zugeordnete Tabelle schließen. 
+Clients können andere Lesezeichen zum Merken anderer Tabellenpositionen erstellen. Lesezeichen sind nur gültig, wenn die Tabelle geöffnet ist. Clients müssen alle Lesezeichen frei, die sie erstellt haben, bevor sie die zugeordnete Tabelle schließen. 
   
 ## <a name="see-also"></a>Siehe auch
 

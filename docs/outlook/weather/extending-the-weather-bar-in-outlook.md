@@ -80,7 +80,7 @@ In der folgenden Tabelle wird der **WeatherServiceUrl**-Schlüssel beschrieben.
   
 |||
 |:-----|:-----|
-|**Key** <br/> |HKCU\Software\Microsoft\Office\15.0\Outlook\Options\Calendar  <br/> |
+|**Schlüssel** <br/> |HKCU\Software\Microsoft\Office\15.0\Outlook\Options\Calendar  <br/> |
 |**Wertname** <br/> |**WeatherServiceUrl** <br/> |
 |**Werttyp** <br/> |REG_SZ  <br/> |
 |**Standardwert** <br/> |EMPTY_STRING  <br/> |
@@ -99,7 +99,7 @@ Beachten Sie, dass ein Administrator mithilfe der Gruppenrichtlinie die Wetterle
   
 |||
 |:-----|:-----|
-|**Key** <br/> |HKCU\Software\Microsoft\Office\15.0\Outlook\Options\Calendar  <br/> |
+|**Schlüssel** <br/> |HKCU\Software\Microsoft\Office\15.0\Outlook\Options\Calendar  <br/> |
 |**Wertname** <br/> |**DisableWeather** <br/> |
 |**Werttyp** <br/> |REG_DWORD  <br/> |
 |**Standardwert** <br/> |0  <br/> |

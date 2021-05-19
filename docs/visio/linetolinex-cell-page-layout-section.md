@@ -20,21 +20,21 @@ ms.locfileid: "33416328"
 
 Legt den horizontalen Abstand zwischen sämtlichen Verbindern auf dem Zeichenblatt fest.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Sie können den Wert dieser Zelle auch im Dialogfeld **Abstände für Layout und Routing** festlegen. (Klicken Sie dazu auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten**, wählen Sie **Layout und Routing** aus, und klicken Sie dann auf **Abstand**.)
   
-Wenn Sie einen Verweis auf die Zelle Zelle LineToLineX aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle LineToLineX anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Zelle LineToLineX  <br/> |
+|Zellenname:  <br/> |LineToLineX  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle LineToLineX aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die LineToLineX-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowPageLayout** <br/> |
 |Zellenindex:  <br/> |**visPLOLineToLineX** <br/> |
    

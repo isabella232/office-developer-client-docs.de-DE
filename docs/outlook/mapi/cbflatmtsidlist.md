@@ -25,12 +25,12 @@ ms.locfileid: "33418393"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl der Bytes in einer vorhandenen [FLATMTSIDLIST](flatmtsidlist.md) -Struktur. 
+Berechnet die Anzahl der Bytes in einer vorhandenen [FLATMTSIDLIST-Struktur.](flatmtsidlist.md) 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |**FLATMTSIDLIST** <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |**FLATMTSIDLIST** <br/> |
    
 ```cpp
 CbFLATMTSIDLIST (_lplist)
@@ -38,9 +38,9 @@ CbFLATMTSIDLIST (_lplist)
 
 ## <a name="parameters"></a>Parameter
 
- __lplist_
+ _ _lplist_
   
-> Zeiger auf die vorhandene **FLATMTSIDLIST** -Struktur. 
+> Zeiger auf die vorhandene **FLATMTSIDLIST-Struktur.** 
     
 ## <a name="see-also"></a>Siehe auch
 

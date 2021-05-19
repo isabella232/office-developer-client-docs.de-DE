@@ -15,13 +15,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33417203"
 ---
-# <a name="mscapselector"></a>MSCAP_SELECTOR
+# <a name="mscap_selector"></a>MSCAP_SELECTOR
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt die Funktionen an, die für einen Speicher zurückgegeben werden sollen.
+Gibt die Funktionen an, die für einen Speicher zurückzukehren sind.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -40,22 +40,22 @@ typedef enum
 
  *MSCAP_SEL_RESERVED1* 
   
-> Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
+> Dieses Mitglied ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
     
  *MSCAP_SEL_RESERVED2* 
   
-> Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
+> Dieses Mitglied ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
     
  *MSCAP_SEL_FOLDER* 
   
-> Funktionen zur Unterstützung von Ordnern in einem Speicher.
+> Funktionen zum Unterstützen von Ordnern in einem Speicher.
     
  *MSCAP_SEL_RESERVED3* 
   
-> Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
+> Dieses Mitglied ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
     
  *MSCAP_SEL_RESTRICTION* 
   
-> Funktionen zur Unterstützung von Einschränkungen in einem Speicher.
+> Funktionen zur Unterstützung von Einschränkungen für einen Store.
     
 

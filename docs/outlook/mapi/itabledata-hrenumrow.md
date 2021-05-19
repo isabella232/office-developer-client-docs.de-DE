@@ -38,27 +38,27 @@ HRESULT HrEnumRow(
 
  _ulRowNumber_
   
-> in Die Nummer der Zeile, für die Eigenschaften zurückgegeben werden sollen. Der Wert im _ulRowNumber_ -Parameter kann ein beliebiger Wert von 0 sein, der die erste Zeile in der Tabelle durch n-1 angibt, die die letzte Zeile in der Tabelle angibt. 
+> [in] Die Nummer der Zeile, für die Eigenschaften zurückgeben werden. Der Wert im  _ulRowNumber-Parameter_ kann ein beliebiger Wert von 0 sein, der die erste Zeile in der Tabelle bis n - 1 angibt, was die letzte Zeile in der Tabelle angibt. 
     
  _lppSRow_
   
-> Out Ein Zeiger auf einen Zeiger auf eine [SRow](srow.md) -Struktur, die die Zielzeile beschreibt. 
+> [out] Ein Zeiger auf einen Zeiger auf eine [SRow-Struktur,](srow.md) die die Zielzeile beschreibt. 
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Zeile wurde erfolgreich abgerufen, oder eine Zeile für die vom _ulRowNumber_ -Parameter angegebene Zeilennummer ist nicht vorhanden. 
+> Die Zeile wurde erfolgreich abgerufen, oder eine Zeile für die durch den  _ulRowNumber-Parameter_ angegebene Zeilennummer ist nicht vorhanden. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **ITableData:: HrEnumRow** -Methode ruft eine Zeile basierend auf einer sequenziellen Zahl ab. Diese Zahl stellt die Reihenfolge der Einfügung dar (0 gibt die erste Zeile an, und die Anzahl der Zeilen minus 1 gibt die letzte Zeile an). MAPI behält diese chronologische Reihenfolge der Zeileneinfügung für die Lebensdauer des Tabellendaten Objekts bei. 
+Die **ITableData::HrEnumRow-Methode** ruft eine Zeile basierend auf einer sequenziellen Zahl ab. Diese Zahl stellt die Einfügereihenfolge dar (0 gibt die erste Zeile an, und die Anzahl der Zeilen minus 1 gibt die letzte Zeile an). MAPI behält diese chronologische Reihenfolge der Zeileneinfügung für die Lebensdauer des Tabellendatenobjekts bei. 
   
-Wenn die in _ulRowNumber_ angegebene Zahl nicht mit einer Zeile in der Tabelle übereinstimmt, gibt **HRENUMROW** den Wert S_OK zurück und legt den _lppSRow_ -Parameter auf NULL fest. 
+Wenn die in  _ulRowNumber_ angegebene Zahl nicht einer Zeile in der Tabelle entspricht, gibt **HrEnumRow** S_OK zurück und legt den  _lppSRow-Parameter_ auf NULL fest. 
   
-MAPI reserviert Speicher für die zurückgegebene **SRow** -Struktur mithilfe der [MAPIAllocateBuffer](mapiallocatebuffer.md) -Funktion, wenn das Tabellendaten Objekt erstellt wird. Der Aufrufer muss diesen Speicher freigeben, indem er die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion aufruft. 
+MAPI weist speicher für die zurückgegebene **SRow-Struktur** mithilfe der [MAPIAllocateBuffer-Funktion](mapiallocatebuffer.md) zu, wenn das Tabellendatenobjekt erstellt wird. Der Aufrufer muss diesen Speicher durch Aufrufen der [MAPIFreeBuffer-Funktion](mapifreebuffer.md) los. 
   
-Zum Abrufen von Zeilen aus einer Tabelle in der Reihenfolge, in der Sie eingefügt wurden, rufen Tabellendaten Objekt Benutzer die **HrEnumRow** -Methode auf. 
+Zum Abrufen von Zeilen aus einer Tabelle in der Reihenfolge, in der sie eingefügt wurden, rufen Benutzer des Tabellendatenobjekts die **HrEnumRow-Methode** auf. 
   
 ## <a name="see-also"></a>Siehe auch
 

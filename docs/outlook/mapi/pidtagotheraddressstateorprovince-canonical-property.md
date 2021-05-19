@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagotheraddressstateorprovince (-Eigenschaft
+title: PidTagOtherAddressStateOrProvince (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: b2fe06c7-44d6-4cd6-95ad-e296e40cc4b6
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 981af0128aaaa2ecc89f506003fd84d63eb3ae84
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -19,13 +19,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32335455"
 ---
-# <a name="pidtagotheraddressstateorprovince-canonical-property"></a>Kanonische Pidtagotheraddressstateorprovince (-Eigenschaft
+# <a name="pidtagotheraddressstateorprovince-canonical-property"></a>PidTagOtherAddressStateOrProvince (kanonische Eigenschaft)
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält den Namen von Bundesland oder Kanton, der in der anderen Adresse verwendet wird.
+Enthält den Namen des Bundes- oder Kantons, der in der anderen Adresse verwendet wird.
   
 |||
 |:-----|:-----|
@@ -34,17 +34,17 @@ Enthält den Namen von Bundesland oder Kanton, der in der anderen Adresse verwen
 |Datentyp:  <br/> |PT_UNICODE, PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaften werden vom Benutzer oder der Organisation des Benutzers definiert.
   
-## <a name="related-resources"></a>Zugehörige Ressourcen
+## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf zugehörige Exchange Server-Protokollspezifikationen.
+> Enthält Verweise auf Exchange Server Protokollspezifikationen.
     
 [[MS-OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
@@ -54,15 +54,15 @@ Diese Eigenschaften werden vom Benutzer oder der Organisation des Benutzers defi
   
 > Gibt die Eigenschaften und Vorgänge an, die für Kontakte und persönliche Verteilerlisten zulässig sind.
     
-### <a name="header-files"></a>Header Dateien
+### <a name="header-files"></a>Headerdateien
 
-Mapidefs. h
+Mapidefs.h
   
-> Stellt Datentypdefinitionen bereit.
+> Bietet Datentypdefinitionen.
     
-Mapitags. h
+Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -70,9 +70,9 @@ Mapitags. h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

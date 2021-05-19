@@ -21,13 +21,13 @@ ms.locfileid: "33417707"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt an, ob der Exchange-Cache-Modus für den Ordner **Favoriten für Öffentliche Ordner** aktiviert ist und ob dieser durch die Richtlinie erzwungen wird. 
+Gibt an, ob der Exchange-Cachemodus für den Ordner "Favoriten für öffentliche Ordner" aktiviert ist und ob **dies** durch die Richtlinie erzwungen wird. 
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
-|Exportiert von:  <br/> |msmapi32. dll  <br/> |
+|Exportiert von:  <br/> |msmapi32.dll  <br/> |
 |Aufgerufen von:  <br/> |Client  <br/> |
 |Implementiert von:  <br/> |Outlook  <br/> |
    
@@ -40,17 +40,17 @@ BOOL GetDefCachedModeDownloadPubFoldFavs(BOOL *pfPolicy);
 
  _pfPolicy_
   
-> Out **true** , wenn der Rückgabewert durch die Richtlinie erzwungen wird, **false** , wenn dies nicht der Fall ist. 
+> [out] **true,** wenn der Rückgabewert von der Richtlinie erzwungen wird, **false,** wenn dies nicht der Fall ist. 
     
 ## <a name="return-values"></a>Rückgabewerte
 
  **true**
   
-- Zwischenspeicherung ist aktiviert.
+- Die Zwischenspeicherung ist aktiviert.
     
  **false**
   
-- Zwischenspeicherung ist deaktiviert.
+- Die Zwischenspeicherung ist deaktiviert.
     
 ## <a name="see-also"></a>Siehe auch
 

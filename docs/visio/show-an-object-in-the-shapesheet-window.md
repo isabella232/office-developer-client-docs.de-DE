@@ -34,13 +34,13 @@ Sie können auf das ShapeSheet-Fenster zugreifen und Formeln nur für Master in 
   
 1. Klicken Sie im Fenster **Shapes** auf **Weitere Shapes**, und klicken Sie dann auf **Schablone öffnen**.
     
-2. Wählen Sie die Schablone aus, die den Master enthält, klicken Sie auf den Pfeil neben der Schaltfläche **Öffnen** , wählen Sie in der Dropdownliste eine Öffnungs Option aus, und klicken Sie dann auf **Öffnen**. 
+2. Suchen Und wählen Sie die Schablone aus, die  den Master enthält, klicken Sie auf den Pfeil neben der Schaltfläche Öffnen, wählen Sie in der Dropdownliste eine öffnende Option aus, und klicken Sie dann auf **Öffnen**. 
     
-    Wenn die Schablone bereits geöffnet ist, klicken Sie mit der rechten Maustaste auf die Titelleiste der Schablone, und klicken Sie dann im Kontextmenü auf **Schablone bearbeiten** . 
+    Wenn die Schablone bereits geöffnet ist, klicken Sie mit der rechten Maustaste auf die Schablonentitelleiste, und klicken Sie dann im Kontextmenü auf **Schablone** bearbeiten. 
     
 3. Klicken Sie mit der rechten Maustaste auf das Master-Shape auf der Schablone, klicken Sie im Kontextmenü auf **Master-Shape bearbeiten**, und klicken Sie dann auf **Master-Shape bearbeiten**.
     
-4. Klicken Sie im Master Bearbeitungsfenster mit der rechten Maustaste auf den Master, und klicken Sie dann auf **ShapeSheet anzeigen**.
+4. Klicken Sie im Masterbearbeitungsfenster mit der rechten Maustaste auf den Master, und klicken Sie dann **auf ShapeSheet anzeigen.**
     
 ## <a name="show-a-page"></a>Anzeigen einer Seite
 
@@ -50,13 +50,13 @@ Sie können auf das ShapeSheet-Fenster zugreifen und Formeln nur für Master in 
     
 ## <a name="show-a-document"></a>Anzeigen eines Dokuments
 
-1. Wählen Sie auf der Registerkarte [Entwicklertools](run-in-developer-mode-display-the-developer-tab.md) in der Gruppe Einblenden **/Ausblenden** die Option **Zeichnungs-Explorer-Fenster**aus.
+1. Wählen Sie [auf der](run-in-developer-mode-display-the-developer-tab.md) Registerkarte Entwickler in der Gruppe **Ein-/Ausblenden** die Option **Zeichnungs-Explorer-Fenster aus.**
     
-2. Klicken Sie im **Zeichnungs-Explorer**mit der rechten Maustaste auf das Dokument, und klicken Sie dann im kontextMenü auf **ShapeSheet anzeigen** . 
+2. Klicken Sie **im Zeichnungs-Explorer** mit der rechten Maustaste auf das Dokument, und klicken Sie dann im Kontextmenü auf **ShapeSheet** anzeigen. 
     
 ## <a name="show-a-style"></a>Anzeigen einer Formatvorlage
 
-1. Wählen Sie auf der Registerkarte [Entwicklertools](run-in-developer-mode-display-the-developer-tab.md) in der Gruppe Einblenden **/Ausblenden** die Option **Zeichnungs-Explorer-Fenster**aus.
+1. Wählen Sie [auf der](run-in-developer-mode-display-the-developer-tab.md) Registerkarte Entwickler in der Gruppe **Ein-/Ausblenden** die Option **Zeichnungs-Explorer-Fenster aus.**
     
 2. Erweitern Sie im **Zeichnungsexplorer** den Ordner **Formatvorlagen**. 
     

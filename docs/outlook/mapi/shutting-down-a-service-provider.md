@@ -21,51 +21,51 @@ ms.locfileid: "32339207"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Wenn ein Client die [IMAPISession:: Abmelde](imapisession-logoff.md) Methode aufruft, um die Sitzung zu beenden und alle aktiven Dienstanbieter herunterzufahren, ruft MAPI wiederum die folgenden Methoden auf: 
+Wenn ein Client die [IMAPISession::Logoff-Methode](imapisession-logoff.md) aufruft, um die Sitzung zu beenden und alle aktiven Dienstanbieter herunterfahren, ruft MAPI wiederum die folgenden Methoden auf: 
   
-- [IABLogon:: Logoff](iablogon-logoff.md) für Adressbuchanbieter. 
+- [IABLogon::Logoff](iablogon-logoff.md) für Adressbuchanbieter. 
     
-- [IMSLogon:: Logoff](imslogon-logoff.md) für Nachrichtenspeicher Anbieter. 
+- [IMSLogon::Logoff](imslogon-logoff.md) für Nachrichtenspeicheranbieter. 
     
-- [IXPLogon:: TransportLogoff](ixplogon-transportlogoff.md) für Transportanbieter. 
+- [IXPLogon::TransportLogoff](ixplogon-transportlogoff.md) für Transportanbieter. 
     
-Diese Methoden weisen ähnliche Implementierungen auf. Die wichtigsten Aufgaben, die eine Abmelde Methode ausführt, lauten wie folgt:
+Diese Methoden haben ähnliche Implementierungen. Die wichtigsten Aufgaben, die eine Abmeldemethode ausführt, sind:
   
-- Freigeben aller geöffneten Objekte, einschließlich unter Objekte und Statusobjekte.
+- Freigeben aller geöffneten Objekte, einschließlich Unterobjekten und Statusobjekten.
     
-- Aufrufen der [IUnknown:: Release](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx) -Methode des Support Objekts, um den Verweiszähler zu verringern. 
+- Aufrufen der [IUnknown::Release-Methode](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx) des Supportobjekts, um die Referenzanzahl zu dekrementieren. 
     
-- Entfernen aller registrierten [MAPIUID](mapiuid.md) -Strukturen Ihres Anbieters. 
+- Entfernen aller registrierten [MAPIUID-Strukturen](mapiuid.md) Ihres Anbieters. 
     
-- Entfernen der Zeile des Anbieters in der Statustabelle.
+- Entfernen der Zeile Ihres Anbieters in der Statustabelle.
     
-- Ausführen von Aufgaben, die sich auf das Bereinigen von Ressourcen beziehen, wie etwa die folgenden:
+- Ausführen von Aufgaben im Zusammenhang mit dem Bereinigen von Ressourcen, z. B.:
     
   - Beenden einer Verbindung mit einem Remoteserver.
     
-  - Dekrementieren der Verweisanzahl für das Logon-Objekt.
+  - Dekrementieren der Referenzanzahl für das Anmeldeobjekt.
     
-  - Entfernen des Anmelde Objekts aus der Liste der Anmeldeobjekte, die der Anbieter speichert.
+  - Entfernen des Anmeldeobjekts aus der Liste der Anmeldeobjekte, die ihr Anbieter speichert.
     
-  - Im Debugmodus werden Ablaufverfolgungen ausgegeben, um Objekte zu finden, die Speicherplatz verloren haben.
+  - Im Debugmodus werden Ablaufverfolgungen zum Auffinden von Objekten mit speicherleckiertem Speicher ausstellen.
     
-Wenn die Abmelde Methode zurückgegeben wird, ruft MAPI Folgendes auf:
+Wenn Ihre Abmeldemethode zurückgegeben wird, ruft MAPI Folgendes auf:
   
-- Die **IUnknown:: Release** -Methode des LOGON-Objekts. 
+- Die **IUnknown::Release-Methode** des Anmeldeobjekts. 
     
-- Die **Shutdown** -Methode Ihres Provider-Objekts, um abschließende Aufräum Aufgaben auszuführen. Je nach Typ des Anbieters wird eine der folgenden Methoden aufgerufen: 
+- Die Shutdown-Methode des **Anbieterobjekts,** um alle endgültigen Bereinigungsaufgaben auszuführen. Je nach Anbietertyp wird eine der folgenden Methoden aufgerufen: 
     
-  - [IABProvider:: Herunterfahren](iabprovider-shutdown.md) für Adressbuchanbieter 
+  - [IABProvider::Shutdown](iabprovider-shutdown.md) für Adressbuchanbieter 
     
-  - [IMSProvider:: Herunterfahren](imsprovider-shutdown.md) für Nachrichtenspeicher Anbieter 
+  - [IMSProvider::Shutdown](imsprovider-shutdown.md) für Nachrichtenspeicheranbieter 
     
-  - [IXPProvider:: Herunterfahren](ixpprovider-shutdown.md) für Transportanbieter 
+  - [IXPProvider::Shutdown](ixpprovider-shutdown.md) für Transportanbieter 
     
-- Die **IUnknown:: Release** -Methode des Anbieterobjekts. 
+- Die **IUnknown::Release-Methode** Ihres Anbieterobjekts. 
     
-Wenn Ihr Anbieter ein Nachrichtenspeicher ist, initiiert ein Clientaufruf von [IMsgStore:: StoreLogoff](imsgstore-storelogoff.md) auch den Shutdown-Prozess. **StoreLogoff** beendet einen bestimmten Nachrichtenspeicher Anbieter und hat keine Auswirkung auf die Sitzung. Nur ein Nachrichtenspeicher Anbieter kann mit dieser Methode heruntergefahren werden; Es gibt keine explizite Möglichkeit zum Herunterfahren eines bestimmten Adressbuchs oder Transportanbieters. Informationen zur Reaktion auf einen **StoreLogoff** -Anruf finden Sie unter [Herunterfahren eines Nachrichtenspeicher Anbieters](shutting-down-a-message-store-provider.md).
+Wenn es sich bei Ihrem Anbieter um einen Nachrichtenspeicher handelt, initiiert ein Clientaufruf an [IMsgStore::StoreLogoff](imsgstore-storelogoff.md) auch den Herunterfahrensprozess. **StoreLogoff** beendet einen bestimmten Nachrichtenspeicheranbieter und hat keine Auswirkung auf die Sitzung. Mit dieser Methode kann nur ein Nachrichtenspeicheranbieter heruntergefahren werden. Es gibt keine explizite Möglichkeit zum Herunterfahren eines bestimmten Adressbuchs oder Transportanbieters. Informationen zum Reagieren auf einen **StoreLogoff-Anruf** finden Sie unter [Shutting Down a Message Store Provider](shutting-down-a-message-store-provider.md).
   
-Die DLL Ihres Anbieters wird entladen, wenn MAPI die Win32-API-Funktion **FreeLibrary**aufruft, ein Aufruf, der nach dem letzten aktiven Client [MAPIUninitialize](mapiuninitialize.md)aufgerufen wird. Zu diesem Zeitpunkt wird der Dienstanbieter beendet. 
+Die DLL Ihres Anbieters wird entladen, wenn MAPI die Win32-API-Funktion **FreeLibrary** aufruft, ein Aufruf, der ausgeführt wird, nachdem der letzte aktive Client [MAPIUninitialize aufgerufen hat.](mapiuninitialize.md) Bis zu diesem Zeitpunkt ist das Herunterfahren des Dienstanbieters beendet. 
   
 ## <a name="see-also"></a>Siehe auch
 

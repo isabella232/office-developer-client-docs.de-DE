@@ -19,37 +19,37 @@ ms.locfileid: "33418848"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ihre Anmeldemethode ([IABProvider:: LOGON](iabprovider-logon.md), [IMSProvider:: LOGON](imsprovider-logon.md)oder [IXPProvider:: TransportLogon](ixpprovider-transportlogon.md)) muss die Konfiguration Ihres Anbieters überprüfen. Dabei wird überprüft, ob alle für den vollständigen Vorgang erforderlichen Eigenschaften richtig festgelegt sind. Jeder Anbieter benötigt eine unterschiedliche Anzahl von Eigenschaften; die Konfiguration hängt von Ihrem Anbieter und dem Grad der zulässigen Benutzerinteraktion ab. Einige Dienstanbieter behalten alle erforderlichen Eigenschaften im Profil bei. 
+Ihre Anmeldemethode ([IABProvider::Logon](iabprovider-logon.md), [IMSProvider::Logon](imsprovider-logon.md)oder [IXPProvider::TransportLogon](ixpprovider-transportlogon.md)) muss die Konfiguration Ihres Anbieters überprüfen. Dazu muss überprüft werden, ob alle eigenschaften, die für den vollständigen Betrieb erforderlich sind, ordnungsgemäß festgelegt sind. Jeder Anbieter benötigt eine andere Anzahl von Eigenschaften. die Konfiguration hängt von Ihrem Anbieter und dem Grad der Benutzerinteraktion ab, die Sie zulassen. Einige Dienstanbieter behalten alle erforderlichen Eigenschaften im Profil bei. 
 
-Andere Dienstanbieter behalten eine partielle Gruppe von Eigenschaften im Profil bei und fordern den Benutzer auf, fehlende Werte einzugeben. Dennoch werden von anderen Anbietern keine Eigenschaften im Profil gespeichert, und der Benutzer muss alle für die Konfiguration erforderlichen Informationen bereitstellen.
+Andere Dienstanbieter behalten einen Teilsatz von Eigenschaften im Profil bei und fordert den Benutzer auf, fehlende Werte zu erhalten. Andere Anbieter speichern jedoch keine Eigenschaften im Profil und verlassen sich darauf, dass der Benutzer alle für die Konfiguration erforderlichen Informationen zur Verfügung hat.
   
 ### <a name="to-retrieve-properties-stored-in-the-profile"></a>So rufen Sie im Profil gespeicherte Eigenschaften ab
   
-1. Rufen Sie [IMAPISupport:: OpenProfileSection](imapisupport-openprofilesection.md)auf, und übergeben Sie die [MAPIUID](mapiuid.md) Ihres Anbieters als Eingabeparameter. 
+1. Rufen [Sie IMAPISupport::OpenProfileSection auf,](imapisupport-openprofilesection.md)und übergeben Sie die [MAPIUID](mapiuid.md) Ihres Anbieters als Eingabeparameter. 
     
-2. Rufen Sie die Methoden [IMAPIProp::](imapiprop-getprops.md) GetProps oder [IMAPIProp::](imapiprop-getproplist.md) getproplist des profile-Abschnitts auf, um einzelne Eigenschaften oder eine Eigenschaftenliste abzurufen. 
+2. Rufen Sie die [IMAPIProp::GetProps-](imapiprop-getprops.md) oder [IMAPIProp::GetPropList-Methoden](imapiprop-getproplist.md) des Profilabschnitts auf, um einzelne Eigenschaften oder eine Eigenschaftenliste abzurufen. 
     
-### <a name="to-set-properties-from-user-information"></a>So legen Sie Eigenschaften aus Benutzerinformationen fest
+### <a name="to-set-properties-from-user-information"></a>So legen Sie Eigenschaften aus Benutzerinformationen
   
-Zeigt ein Eigenschaftenfenster an, wenn MAPI kein Flag festgelegt hat, das die Anzeige verhindert. Die folgenden Flags zeigen an, dass eine Benutzeroberfläche nicht angezeigt werden kann.
+Zeigen Sie ein Eigenschaftenblatt an, wenn MAPI kein Flag festgelegt hat, das die Anzeige verbietet. Die folgenden Flags deuten darauf hin, dass keine Benutzeroberfläche angezeigt werden kann.
   
 |**Wert**|**Dienstanbieter**|
 |:-----|:-----|
 |AB_NO_DIALOG  <br/> |Adressbuchanbieter  <br/> |
-|LOGON_NO_DIALOG  <br/> |Transport Anbieter  <br/> |
-|MDB_NO_DIALOG  <br/> |Nachrichtenspeicher Anbieter  <br/> |
+|LOGON_NO_DIALOG  <br/> |Transportanbieter  <br/> |
+|MDB_NO_DIALOG  <br/> |Anbieter des Nachrichtenspeichers  <br/> |
    
-Wenn Ihr Anbieter nicht alle Konfigurationseigenschaften im Profil speichert, eine Benutzerinteraktion erfordert und MAPI eines der Dialogfeld Unterdrückungs Kennzeichen an Ihre Anmeldemethode übergibt, geben Sie MAPI_E_UNCONFIGURED zurück. Geben Sie auch diesen Fehler zurück, wenn das Dialogfeld Unterdrückungs Kennzeichen nicht festgelegt ist, aber der Benutzer nicht alle erforderlichen Informationen bereitstellt.
+Wenn Ihr Anbieter nicht alle Konfigurationseigenschaften im Profil gespeichert hat und eine Benutzerinteraktion erforderlich ist, und MAPI eines der Dialogfeldunterdrückungsflags an Ihre Anmeldemethode übergibt, geben Sie MAPI_E_UNCONFIGURED. Geben Sie diesen Fehler auch zurück, wenn das Dialogfeldunterdrückungsflag nicht festgelegt ist, der Benutzer jedoch nicht alle erforderlichen Informationen zur Verfügung stellt.
   
-Wenn der Dienstanbieter seine Anmeldemethode mit MAPI_E_UNCONFIGURED nicht unterbricht, ruft MAPI ihre Einstiegspunktfunktion erneut auf. Wenn die Informationen beim zweiten Aufruf nicht gefunden werden können, wird die Sitzung möglicherweise beendet, je nachdem, wie wichtig der Dienstanbieter ist. 
+Wenn ihr Dienstanbieter seine Anmeldemethode mit MAPI_E_UNCONFIGURED, ruft MAPI ihre Einstiegspunktfunktion erneut auf. Wenn die Informationen beim zweiten Anruf nicht gespeichert werden können, wird die Sitzung möglicherweise beendet, je nachdem, wie wichtig Ihr Dienstanbieter ist. 
   
-Die folgende Abbildung zeigt die Logik, die für die Konfiguration in ihrer Dienstanbieter-Anmeldemethode erforderlich ist. 
+Die folgende Abbildung zeigt die logik, die für die Konfiguration in der Anmeldemethode des Dienstanbieters erforderlich ist. 
   
 **Flussdiagramm für Konfigurationsüberprüfung**
   
-![Flussdiagramm zur Konfigurationsüberprüfung] (media/amapi_62.gif "Flussdiagramm zur Konfigurationsüberprüfung")
+![Flussdiagramm zur Konfigurationsprüfung](media/amapi_62.gif "Konfigurationsüberprüfungsflussdiagramm")
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Implementieren der Dienstanbieter Anmeldung](implementing-service-provider-logon.md)
+- [Implementieren der Dienstanbieteranmeldung](implementing-service-provider-logon.md)
 

@@ -8,7 +8,7 @@ f1_keywords:
 - TempActiveColumn
 - TempActiveColumn12
 keywords:
-- tempactivecolumn12-Funktion [Excel 2007], TempActiveColumn-Funktion [Excel 2007]
+- tempactivecolumn12-Funktion [excel 2007],TempActiveColumn-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: 4b1f34c4-e7fa-4a0b-8fc5-c9d465ebb70c
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -23,7 +23,7 @@ ms.locfileid: "33417875"
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Framework-Bibliotheksfunktionen, mit denen ein temporäres **XLOPER**/ -**XLOPER12** erstellt wird, das einen externen Verweis auf eine ganze Spalte im aktiven Blatt enthält. 
+Frameworkbibliotheksfunktionen, die eine temporäre **XLOPER** /  **XLOPER12** erstellen, die einen externen Verweis auf eine gesamte Spalte im aktiven Blatt enthält. 
   
 ```cs
 LPXLOPER TempActiveColumn(BYTE col);
@@ -32,17 +32,17 @@ LPXLOPER12 TempActiveColumn12(COL col);
 
 ## <a name="parameters"></a>Parameter
 
- _Col_ (**Byte**)
+ _col_ (**BYTE**)
   
-Die Spalte, auf die verwiesen werden soll. Dies ist nullbasiert, sodass Spalte A als 0 übergeben wird. In Microsoft Office Excel 2003 und früheren Versionen und beginnend mit Excel 2007, die eine Arbeitsmappe im Kompatibilitätsmodus ausführt, ist der Höchstwert 255 = 2 ^ 8-1 und ist der Maximalwert, der von einer BYTE-Ganzzahl verwendet werden kann. Ab Excel 2007 mit einer Arbeitsmappe ist der Höchstwert 16.383 = 2 ^ 14-1. COL ist als eine 32-Bit-Ganzzahl mit Vorzeichen in XLCALL definiert. H.
+Die Spalte, auf die verwiesen werden soll. Dies ist nullbasierte, sodass Spalte A als 0 übergeben wird. In Microsoft Office Excel 2003 und früheren Versionen und ab Excel 2007, in dem eine Arbeitsmappe im Kompatibilitätsmodus ausgeführt wird, ist der Maximalwert 255 = 2^8 - 1 und der Höchstwert, der von einer GANZZAHL von BYTE verwendet werden kann. Ab Excel 2007, in dem eine Arbeitsmappe ausgeführt wird, ist der maximale Wert 16.383 = 2^14 - 1. COL ist in XLCALL.H als 32-Bit-ganzzahlige 32-Bit-Zahl definiert.
   
 ## <a name="return-value"></a>Rückgabewert
 
-Gibt einen externen **externen xltypeRef** -Verweis auf die übergebene Spalte zurück. 
+Gibt einen **externen xltypeRef-Verweis** auf die übergebene Spalte zurück. 
   
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel wird **TempActiveColumn12** verwendet, um die gesamte Spalte B auszuwählen. 
+Im folgenden Beispiel wird **TempActiveColumn12 verwendet,** um die gesamte Spalte B auszuwählen. 
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   

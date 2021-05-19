@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 9f71fdef-5df5-0892-b64c-293a2f22f5c3
-description: 'Gibt das MAPI-Sitzungsobjekt frei, das von IOlkAccountHelper:: GetMapiSession zurückgegeben wurde.'
+description: Gibt das MAPI-Sitzungsobjekt frei, das von IOlkAccountHelper::GetMapiSession zurückgegeben wurde.
 ms.openlocfilehash: c481cee1ecb8c2bd3997cdee8ae86c9c3b5a712e
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.locfileid: "33418631"
 ---
 # <a name="iolkaccounthelperhandsoffsession"></a>IOlkAccountHelper::HandsOffSession
 
-Gibt das MAPI-Sitzungsobjekt frei, das von- [IOlkAccountHelper:: GetMapiSession](iolkaccounthelper-getmapisession.md)zurückgegeben wurde.
+Gibt das MAPI-Sitzungsobjekt frei, das von - [IOlkAccountHelper::GetMapiSession zurückgegeben wurde.](iolkaccounthelper-getmapisession.md)
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -30,8 +30,8 @@ HRESULT IOlkAccountHelper::HandsOffSession( );
 
 |**[HRESULT]**|**Description**|
 |:-----|:-----|
-|S_OK  <br/> |Wenn Ihre Implementierung von **IOlkAccountHelper** eine eigene MAPI-Sitzung erstellt, die in **IOlkAccountHelper:: GetMapiSession**zurückgegeben wird, müssen Sie die Sitzung hier freigeben und S_OK zurückgeben.  <br/> |
-|E_NOTIMPL  <br/> |Wenn Ihre Implementierung von **IOlkAccountHelper** keine eigene MAPI-Sitzung erstellt hat, müssen Sie nur E_NOTIMPL zurückgeben. In diesem Fall ist dies der einzige unterstützte Rückgabewert.  <br/> |
+|S_OK  <br/> |Wenn Ihre Implementierung von **IOlkAccountHelper** eine eigene MAPI-Sitzung erstellt, die in **IOlkAccountHelper::GetMapiSession** zurückgegeben wird, müssen Sie die Sitzung hier veröffentlichen und S_OK.  <br/> |
+|E_NOTIMPL  <br/> |Wenn Ihre Implementierung von **IOlkAccountHelper** keine eigene MAPI-Sitzung erstellt hat, müssen Sie nur eine E_NOTIMPL. In diesem Fall ist dies der einzige unterstützte Rückgabewert.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

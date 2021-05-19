@@ -20,22 +20,22 @@ ms.locfileid: "33417686"
 
 Enthält den Namen des Bearbeiters eines Dokuments.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
- Dieser Wert ist standardmäßig der Name im Feld **Benutzername** auf der Registerkarte **Allgemein** des Dialogfelds **Visio-Optionen** (Klicken Sie auf die registerKarte **Datei** , klicken Sie auf **Optionen**und dann auf **Allgemein**). 
+ Dieser Wert wird standardmäßig auf  den Namen im Feld Benutzername auf der Registerkarte  **Allgemein** des Dialogfelds **Visio-Optionen** festgelegt (klicken Sie auf die Registerkarte Datei, klicken Sie auf **Optionen** und dann auf **Allgemein**). 
   
-Wenn Sie einen Verweis auf die Zelle Name aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle Name anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Reviewer.Name [ *i* ] wobei *i* = <1>, 2, 3...  <br/> |
+| Zellenname:  <br/> | Reviewer.Name [  *i*  ] wobei  *i*  = <1>, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Name aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle Name nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionReviewer** <br/> |
-| Zeilenindex:  <br/> |**visRowReviewer** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowReviewer**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
 | Zellenindex:  <br/> |**visReviewerName** <br/> |
    
 

@@ -26,24 +26,24 @@ Definiert die Verbinder, denen Sie Liniensprünge hinzufügen möchten.
 |1  <br/> |Horizontale Linien  <br/> |**visPLOJumpHorizontal** <br/> |
 |2  <br/> |Vertikale Linien  <br/> |**visPLOJumpVertical** <br/> |
 |3  <br/> |Letzte umgeleitete Linie  <br/> |**visPLOJumpLastRouted** <br/> |
-|4  <br/> |Letzte angezeigte Linien (Oberes Shape in der *z* -Reihenfolge)  <br/> |**visPLOJumpDisplayOrder** <br/> |
-|5  <br/> |Erste angezeigte Leitung (Form am unteren Rand der *z* -Reihenfolge)  <br/> |**visPLOJumpReverseDisplayOrder** <br/> |
+|4   <br/> |Zuletzt angezeigte Linie (top  shape in der Z-Reihenfolge)  <br/> |**visPLOJumpDisplayOrder** <br/> |
+|5   <br/> |Erste angezeigte Linie (Form am  unteren Rand der Z-Reihenfolge)  <br/> |**visPLOJumpReverseDisplayOrder** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Sie können den Wert dieser Zelle auch im Dialogfeld **Seite einrichten** auf der Registerkarte **Layout und Routing** festlegen (klicken Sie dazu auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten**, und klicken Sie dann auf **Layout und Routing**).
   
-Wenn Sie einen Verweis auf die Zelle Zelle LineJumpCode aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle LineJumpCode anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Zelle LineJumpCode  <br/> |
+|Zellenname:  <br/> |LineJumpCode  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle LineJumpCode aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die LineJumpCode-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowPageLayout** <br/> |
 |Zellenindex:  <br/> |**visPLOJumpCode** <br/> |
    

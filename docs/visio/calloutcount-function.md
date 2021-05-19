@@ -25,7 +25,7 @@ Hinzugefügte Version: Visio 2010
   
 ## <a name="syntax"></a>Syntax
 
-CALLOUTCOUNT ()
+CALLOUTCOUNT()
   
 ### <a name="return-value"></a>Rückgabewert
 

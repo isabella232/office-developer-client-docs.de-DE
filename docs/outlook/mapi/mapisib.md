@@ -21,7 +21,7 @@ ms.locfileid: "33418708"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Diese Struktur wird mit [IMAPISync:: SynchronizeInBackground](imapisyncsynchronizeinbackground.md)verwendet.
+Diese Struktur wird mit [IMAPISync::SynchronizeInBackground verwendet.](imapisyncsynchronizeinbackground.md)
   
 ```cpp
 typedef struct _MAPISIB
@@ -34,7 +34,7 @@ HANDLE          *phSyncDoneEvent;
 } MAPISIB, *PMAPISIB
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **ulSize**
   
@@ -42,29 +42,29 @@ HANDLE          *phSyncDoneEvent;
     
  **ulFlags**
   
-> Ein Flag, das den Synchronisierungs angibt. Dabei muss es sich um einen der folgenden Werte handeln:
+> Ein Flag, das den Synchronisierungstyp angibt. Dies muss einer der folgenden Werte sein:
     
 ||||
 |:-----|:-----|:-----|
 |SYNC_OUTGOING_MAIL  <br/> |0x00000200  <br/> |Senden Sie die Nachricht an den Server (derzeit nicht verwendet).  <br/> |
-|SYNC_UPLOAD_HIERARCHY  <br/> |0x00000001  <br/> |Hierarchieänderungen auf dem Server pushen.  <br/> |
-|SYNC_DOWNLOAD_HIERARCHY  <br/> |0x00000002  <br/> |Hierarchieänderungen vom Server abrufen.  <br/> |
-|SYNC_UPLOAD_CONTENTS  <br/> |0x00000040  <br/> |Push Message Changes to Server.  <br/> |
-|SYNC_DOWNLOAD_CONTENTS  <br/> |0x00000080  <br/> |Nachrichtenänderungen vom Server abrufen.  <br/> |
+|SYNC_UPLOAD_HIERARCHY  <br/> |0x00000001  <br/> |Pushhierarchieänderungen an den Server.  <br/> |
+|SYNC_DOWNLOAD_HIERARCHY  <br/> |0x00000002  <br/> |Ziehen Sie Hierarchieänderungen vom Server ab.  <br/> |
+|SYNC_UPLOAD_CONTENTS  <br/> |0x00000040  <br/> |Push-Nachrichtenänderungen an den Server.  <br/> |
+|SYNC_DOWNLOAD_CONTENTS  <br/> |0x00000080  <br/> |Ziehen von Nachrichtenänderungen vom Server.  <br/> |
 |SYNC_ON_DEMAND  <br/> |0x20000000  <br/> |Die Synchronisierung wurde vom Benutzer initiiert und sollte eine höhere Priorität haben.  <br/> |
-|SYNC_GLOBAL_HEADERS  <br/> |0x02000000  <br/> |Sollte nur Kopfzeilen und keine vollständigen Körper synchronisieren.  <br/> |
+|SYNC_GLOBAL_HEADERS  <br/> |0x02000000  <br/> |Sollte nur Kopfzeilen synchronisieren und keine vollständigen Textkörper.  <br/> |
    
  **psesSync**
   
-> IN Ein Zeiger auf die MAPI-Sitzung.
+> [IN] Ein Zeiger auf die MAPI-Sitzung.
     
  **punkCallBack**
   
-> IN Ein Zeiger auf die Schnittstelle, für die der Fortschritt bereitgestellt werden soll. Sie kann zum Abfragen der Schnittstelle für [IMAPISyncProgressCallback: IUnknown](imapisyncprogresscallbackiunknown.md)verwendet werden.
+> [IN] Ein Zeiger auf die Schnittstelle, auf der Fortschritt erzielt werden soll. Es kann zum Abfragen der Schnittstelle für [IMAPISyncProgressCallback : IUnknown verwendet werden.](imapisyncprogresscallbackiunknown.md)
     
  **\*phSyncDoneEvent**
   
-> Out Das Ereignis, das auftritt, wenn der soeben erstellte Thread abgeschlossen ist. Der Zeiger muss gültig sein, da er das Ereignis enthält.
+> [OUT] Das Ereignis, das auftritt, wenn der gerade erstellte Thread abgeschlossen ist. Der Zeiger muss gültig sein, da er das Ereignis enthält.
     
 ## <a name="see-also"></a>Siehe auch
 

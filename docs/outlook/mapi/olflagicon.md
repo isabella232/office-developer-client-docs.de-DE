@@ -21,7 +21,7 @@ ms.locfileid: "33416559"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt an, ob ein Element gekennzeichnet ist, und wenn es die Farbe ist, die mit dem gekennzeichneten Element verknüpft ist.
+Gibt an, ob ein Element gekennzeichnet ist, und wenn dies der Wert ist, die Farbe, die dem gekennzeichneten Element zugeordnet ist.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -46,31 +46,31 @@ enum OlFlagIcon {
     
  _olPurpleFlagIcon_
   
-> Lila wurde dem markierten Element zugeordnet.
+> Lila wurde dem gekennzeichneten Element zugeordnet.
     
  _olOrangeFlagIcon_
   
-> Orange wurde dem markierten Element zugeordnet.
+> Orange wurde dem gekennzeichneten Element zugeordnet.
     
  _olGreenFlagIcon_
   
-> Dem markierten Element wurde grün zugeordnet.
+> Grün wurde dem gekennzeichneten Element zugeordnet.
     
  _olYellowFlagIcon_
   
-> Gelb wurde dem markierten Element zugeordnet.
+> Gelb wurde dem gekennzeichneten Element zugeordnet.
     
  _olBlueFlagIcon_
   
-> Das markierte Element wurde blau zugeordnet.
+> Blau wurde dem gekennzeichneten Element zugeordnet.
     
  _olRedFlagIcon_
   
-> Das markierte Element wurde rot zugeordnet.
+> Dem gekennzeichneten Element wurde Rot zugeordnet.
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Kanonische Pidtagfollowupicon (-Eigenschaft](pidtagfollowupicon-canonical-property.md)
+[PidTagFollowupIcon (kanonische Eigenschaft)](pidtagfollowupicon-canonical-property.md)
 

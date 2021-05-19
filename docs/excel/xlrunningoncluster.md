@@ -20,7 +20,7 @@ ms.locfileid: "33418288"
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Gibt einen Wert zurück, der angibt, ob die benutzerdefinierte Funktion in einem Cluster läuft. 
+Gibt einen Wert zurück, der angibt, ob die benutzerdefinierte Funktion auf einem Cluster ausgeführt wird. 
   
 ```cpp
 Excel12(xlRunningOnCluster, LPXLOPER12 pxRes, 0);
@@ -32,11 +32,11 @@ Diese Funktion hat keine Argumente.
   
 ## <a name="return-value"></a>Rückgabewert
 
-Wenn die Funktion in einem Excel-Prozess ausgeführt wird, gibt 0 in einem **XLOPER12** vom Typ **xlTypeInt**zurück. Wenn die Funktion in einem Cluster läuft, wird der Rückgabetyp und der Wert vom Cluster-Connector-Anbieter bestimmt.
+Wenn die Funktion in einem Excel ausgeführt wird, wird 0 in einem **XLOPER12** vom Typ **xlTypeInt zurückgegeben.** Wenn die Funktion auf einem Cluster ausgeführt wird, wird der Rückgabetyp und -wert vom Clusterconnectoranbieter bestimmt.
   
 ## <a name="requirements"></a>Anforderungen
 
-Diese Funktion ist in der Headerdatei xlcall. h definiert.
+Diese Funktion wird in der Xlcall.h-Headerdatei definiert.
   
 ## <a name="see-also"></a>Siehe auch
 

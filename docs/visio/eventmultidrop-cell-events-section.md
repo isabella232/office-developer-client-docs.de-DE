@@ -15,21 +15,21 @@ ms.locfileid: "33416720"
 ---
 # <a name="eventmultidrop-cell-events-section"></a>Zelle "EventMultiDrop" (Abschnitt "Events")
 
-Eine Ereignis Zelle, die ausgewertet wird, wenn mehrere Shapes auf dem Zeichenblatt abgelegt werden, entweder als Instanzen oder beim Duplizieren oder Einfügen von Shapes.
+Eine Ereigniszelle, die ausgewertet wird, wenn mehrere Shapes auf dem Zeichenblatt abgelegt werden, entweder als Instanzen oder wenn Shapes dupliziert oder eingelassen werden.
   
 Ereigniszellen werden erst beim Eintreffen des Ereignisses ausgewertet, nicht beim Eingeben der Formel.
   
-Wenn Sie auf die Zelle EventMultiDrop aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen verweisen möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Verweisen auf die EventMultiDrop-Zelle anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |EventMultiDrop  <br/> |
    
-Wenn Sie aus einem Programm aus nach Index auf die Zelle EventMultiDrop verweisen möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um auf die EventMultiDrop-Zelle nach Index aus einem Programm zu verweisen: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowEvent** <br/> |
 |Zellenindex:  <br/> |**visEvtCellMultiDrop** <br/> |
    

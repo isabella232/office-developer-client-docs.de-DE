@@ -19,13 +19,13 @@ ms.locfileid: "33416538"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Clients kommunizieren mit Transportanbietern über Statusobjekte, die von Transportanbietern und dem MAPI-Spooler bereitgestellt werden. Clients greifen auf Statusobjekte zu, indem Sie [IMAPISession::](imapisession-getstatustable.md) getstatusable aufrufen, um die Statustabelle abzurufen. Status Objekte implementieren Sie die [IMAPIStatus: IMAPIProp](imapistatusimapiprop.md) -Schnittstelle, die über Methoden zum Konfigurieren von Anbietern, das Leeren von eingehenden und ausgehenden Nachrichtenwarteschlangen, das Festlegen von Kennwörtern und die Statusüberprüfung verfügt. Weitere Informationen zu Statusobjekten finden Sie unter [Status Table-und Status-Objekte](status-table-and-status-objects.md).
+Clients kommunizieren mit Transportanbietern über Statusobjekte, die von Transportanbietern und dem MAPI-Spooler bereitgestellt werden. Clients greifen auf Statusobjekte zu, indem [SIE IMAPISession::GetStatusTable aufrufen,](imapisession-getstatustable.md) um die Statustabelle abzurufen. Status-Objekte implementieren die [IMAPIStatus : IMAPIProp-Schnittstelle,](imapistatusimapiprop.md) die Methoden zum Konfigurieren von Anbietern, Leeren eingehender und ausgehender Nachrichtenwarteschlangen, Festlegen von Kennwörtern und Statusüberprüfung enthält. Weitere Informationen zu Statusobjekten finden Sie unter [Statustabelle und Statusobjekte](status-table-and-status-objects.md).
 
 
-- [Senden oder Empfangen einer Nachricht bei Bedarf](sending-or-receiving-a-message-on-demand.md): Beschreibt das Senden oder Empfangen einer Nachricht bei Bedarf.
+- [Senden oder Empfangen einer Nachricht bei Bedarf](sending-or-receiving-a-message-on-demand.md): Beschreibt, wie eine Nachricht bei Bedarf gesendet oder empfangen wird.
     
-- [Festlegen des Transportauftrags](setting-transport-order.md): Beschreibt das Festlegen des Transportauftrags.
+- [Festlegen der Transportreihenfolge](setting-transport-order.md): Beschreibt, wie Transportreihenfolge festgelegt wird.
     
-- [Neukonfigurieren eines Transportanbieters](reconfiguring-a-transport-provider.md): Beschreibt, wie ein Transportanbieter neu konfiguriert wird und welche Eigenschaften festgelegt werden können.
+- [Neukonfigurieren eines Transportanbieters:](reconfiguring-a-transport-provider.md)Beschreibt, wie ein Transportanbieter neu konfiguriert wird und welche Eigenschaften festgelegt werden können.
     
 

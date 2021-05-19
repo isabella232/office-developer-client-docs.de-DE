@@ -1,5 +1,5 @@
 ---
-title: Tabellen Positionierung
+title: Tabellenpositionierung
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,18 +15,18 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33418589"
 ---
-# <a name="table-positioning"></a>Tabellen Positionierung
+# <a name="table-positioning"></a>Tabellenpositionierung
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die aktuelle Position in einer Tabelle wird immer durch einen Cursor angezeigt. Für jede Ansicht einer Tabelle gibt es einen Cursor. der Wert wird vom Implementierer der Tabelle festgelegt. Wenn ein Client oder ein Dienstanbieter, der die Tabelle verwendet, einen Aufruf zum Ändern der Position der Tabelle durchführt, wird der Wert des Cursors zurückgesetzt. Die Position einer Tabelle kann mit folgenden Änderungen geändert werden:
+Die aktuelle Position in einer Tabelle wird immer durch einen Cursor angegeben. Es gibt einen Cursor für jede Ansicht einer Tabelle. Sein Wert wird vom Implementier der Tabelle festgelegt. Wenn ein Client oder Dienstanbieter, der die Tabelle verwendet, einen Aufruf zum Ändern der Position der Tabelle macht, wird der Wert des Cursors zurückgesetzt. Die Position einer Tabelle kann mit folgenden Informationen geändert werden:
   
 - Textmarke.
     
-- Ein Bruchteil.
+- Ein Bruchwert.
     
-- Ein Filter.
+- Einen Filter
     
 

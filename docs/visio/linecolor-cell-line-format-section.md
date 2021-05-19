@@ -20,25 +20,25 @@ ms.locfileid: "33416937"
 
 Definiert die Linienfarbe eines Shapes.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Um die Linienfarbe festzulegen, geben Sie eine Zahl zwischen 0 und 23 ein, bei der es sich um einen Index in einer Auflistung von Linien Farben handelt. Sie können die Linien Farbsammlung im Dialogfeld **Linie** anzeigen (Klicken Sie auf der Registerkarte **Start** in der Gruppe **Shape** auf **Linie**, zeigen Sie auf **Gewicht**, und klicken Sie dann auf **Weitere Linien**). Sie können den Wert von Zelle LineColor auch im Dialogfeld **Leitung** festlegen. 
+Geben Sie zum Festlegen der Linienfarbe eine Zahl zwischen 0 und 23 ein, bei der es sich um einen Index in einer Auflistung von Linienfarben handelt. Sie können die Linienfarbsammlung im Dialogfeld Linie anzeigen (klicken Sie auf der Registerkarte **Start** in der **Gruppe Shape** auf **Linie,** zeigen Sie auf **Gewichtung,** und klicken Sie dann auf **Weitere Linien**).  Sie können den Wert von LineColor auch im Dialogfeld **Zeile** festlegen. 
   
-Verwenden Sie die RGB-oder die GSL-Funktion, um eine benutzerdefinierte Farbe einzugeben. Der Wert einer benutzerdefinierten Farbe ist ihre RGB-Farbe, und RGB ( *r, g, b*) anstelle einer Zahl wird im ShapeSheet-Fenster angezeigt. Bei numerischen Vorgängen haben benutzerdefinierte Farben Werte von 24 und höher. 
+Verwenden Sie zum Eingeben einer benutzerdefinierten Farbe die RGB- oder HSL-Funktion. Der Wert einer benutzerdefinierten Farbe ist die RGB-Farbe, und RGB( *r, g, b*), anstatt eine Zahl, wird im ShapeSheet-Fenster angezeigt. Bei Verwendung in numerischen Vorgängen haben benutzerdefinierte Farben Werte von 24 und höher. 
   
 Die Transparenz der Linienfarbe können Sie in der Zelle LineColorTrans festlegen.
   
-Wenn Sie einen Verweis auf die Zelle Zelle LineColor aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle LineColor anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Zelle LineColor  <br/> |
+|Zellenname:  <br/> |LineColor  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle LineColor aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die LineColor-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowLine** <br/> |
 |Zellenindex:  <br/> |**visLineColor** <br/> |
    

@@ -39,27 +39,27 @@ HRESULT EmptyFolder(
 
  _ulUIParam_
   
-> in Ein Handle für das übergeordnete Fenster der Statusanzeige. Der _ulUIParam_ -Parameter wird ignoriert, es sei denn, das FOLDER_DIALOG-Flag wird im _ulFlags_ -Parameter festgelegt. 
+> [in] Ein Handle zum übergeordneten Fenster des Statusindikators. Der  _ulUIParam-Parameter_ wird ignoriert, es sei denn, das FOLDER_DIALOG wird im  _ulFlags-Parameter_ festgelegt. 
     
  _lpProgress_
   
-> in Ein Zeiger auf ein Progress-Objekt, das eine Statusanzeige anzeigt. Wenn NULL in _lpProgress_übergeben wird, zeigt der Nachrichtenspeicher Anbieter mithilfe der MAPI-Progress-Objekt Implementierung eine Statusanzeige an. Der _lpProgress_ -Parameter wird ignoriert, es sei denn, das FOLDER_DIALOG-Flag wird im _ulFlags_ -Parameter festgelegt. 
+> [in] Ein Zeiger auf ein Statusobjekt, das eine Statusanzeige anzeigt. Wenn NULL in  _lpProgress übergeben_ wird, zeigt der Nachrichtenspeicheranbieter mithilfe der MAPI-Fortschrittsobjektimplementierung eine Statusanzeige an. Der  _lpProgress-Parameter_ wird ignoriert, es sei denn, das FOLDER_DIALOG wird im  _ulFlags-Parameter_ festgelegt. 
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die steuert, wie der Ordner geleert wird. Die folgenden Flags können festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie der Ordner geleert wird. Die folgenden Kennzeichen können festgelegt werden:
     
 DEL_ASSOCIATED 
   
-> Löscht alle Unterordner, einschließlich der Unterordner, die Nachrichten mit dem dazugehörigen Inhalt enthalten. Das DEL_ASSOCIATED-Flag hat nur für den Ordner auf oberster Ebene eine Bedeutung, für den der Anruf fungiert.
+> Löscht alle Unterordner, einschließlich Unterordner, die Nachrichten mit zugeordneten Inhalten enthalten. Das DEL_ASSOCIATED hat nur eine Bedeutung für den Ordner auf oberster Ebene, auf dem der Anruf funktioniert.
     
 DELETE_HARD_DELETE
   
-> Entfernt alle Nachrichten, einschließlich der gelöschten, dauerhaft.
+> Entfernt dauerhaft alle Nachrichten, einschließlich der gelöschten Nachrichten.
     
 FOLDER_DIALOG 
   
-> Zeigt während des Vorgangs eine Statusanzeige an.
+> Zeigt eine Statusanzeige an, während der Vorgang fortgesetzt wird.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -69,19 +69,19 @@ S_OK
     
 MAPI_W_PARTIAL_COMPLETION 
   
-> Der Aufruf war erfolgreich, aber der Ordner wurde nicht vollständig geleert. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich behandelt werden. Verwenden Sie zum Testen dieser Warnung das **HR_FAILED** -Makro. Weitere Informationen finden Sie unter [Verwenden von Makros zur Fehlerbehandlung](using-macros-for-error-handling.md).
+> Der Aufruf ist erfolgreich, der Ordner wurde jedoch nicht vollständig geleert. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich behandelt werden. Verwenden Sie zum Testen dieser Warnung das **HR_FAILED** Makro. Weitere Informationen finden Sie unter [Using Macros for Error Handling](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Mit der **IMAPIFolder:: EmptyFolder** -Methode werden alle Inhalte eines Ordners gelöscht, ohne dass der Ordner selbst gelöscht wird. 
+Die **IMAPIFolder::EmptyFolder-Methode** löscht alle Inhalte eines Ordners, ohne den Ordner selbst zu löschen. 
   
-Während eines **EmptyFolder** -Aufrufs werden übermittelte Nachrichten nicht gelöscht. 
+Während eines **EmptyFolder-Anrufs** werden übermittelte Nachrichten nicht gelöscht. 
   
 Zu den zugeordneten Inhalten eines Ordners gehören Nachrichten, die zum Beschreiben von Ansichten, Regeln, benutzerdefinierten Formularen und benutzerdefiniertem Lösungsspeicher verwendet werden, und können auch Formulardefinitionen enthalten. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Rufen Sie die [IMsgStore:: AbortSubmit](imsgstore-abortsubmit.md) -Methode nicht für Nachrichten im Ordner auf, die übermittelt wurden. ÜberMittelte Nachrichten werden nicht gelöscht. 
+Rufen Sie die [IMsgStore::AbortSubmit-Methode](imsgstore-abortsubmit.md) nicht für Nachrichten im Ordner auf, die übermittelt wurden. Übermittelte Nachrichten werden nicht gelöscht. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
@@ -93,7 +93,7 @@ Erwarten Sie diese Rückgabewerte unter den folgenden Bedingungen.
 |**EmptyFolder** konnte den Ordner nicht vollständig leeren.  <br/> |MAPI_W_PARTIAL_COMPLETION  <br/> |
 |**EmptyFolder** konnte nicht abgeschlossen werden.  <br/> |Beliebiger Fehlerwert  <br/> |
    
-Wenn **EmptyFolder** nicht abgeschlossen werden kann, gehen Sie nicht davon aus, dass keine Arbeit ausgeführt wurde. **EmptyFolder** kann möglicherweise einige Inhalte des Ordners löschen, bevor der Fehler auftritt. 
+Wenn **EmptyFolder** nicht abgeschlossen werden kann, gehen Sie nicht davon aus, dass keine Arbeit durchgeführt wurde. **EmptyFolder** konnte möglicherweise einige Inhalte des Ordners löschen, bevor der Fehler aufgetreten ist. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -101,7 +101,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MsgStoreDlg. cpp  <br/> |CMsgStoreDlg:: OnEmptyFolder  <br/> |MFCMAPI verwendet die **IMAPIFolder:: EmptyFolder** -Methode, um den Inhalt des angegebenen Ordners zu löschen.  <br/> |
+|MsgStoreDlg.cpp  <br/> |CMsgStoreDlg::OnEmptyFolder  <br/> |MFCMAPI verwendet die **IMAPIFolder::EmptyFolder-Methode,** um den Inhalt des angegebenen Ordners zu löschen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -114,5 +114,5 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
-[Verwenden von Makros zur Fehlerbehandlung](using-macros-for-error-handling.md)
+[Verwenden von Makros für die Fehlerbehandlung](using-macros-for-error-handling.md)
 

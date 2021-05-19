@@ -25,23 +25,23 @@ ms.locfileid: "33418337"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Übergibt den Informationsspeicher Anbieter während eines Aufrufs an [IMAPISync: SynchronizeInBackground](imapisyncsynchronizeinbackground.md)als Feld der MAPISIB-Struktur. Der Informationsspeicher Anbieter verwendet diese Schnittstelle, um Microsoft Outlook Feedback zum Status der Synchronisierung bereitzustellen.
+Übergibt den Speicheranbieter während eines Aufrufs von [IMAPISync : SynchronizeInBackground](imapisyncsynchronizeinbackground.md)als Feld in der MAPISIB-Struktur. Der Speicheranbieter verwendet diese Schnittstelle, um Microsoft Feedback Outlook status der Synchronisierung zu geben.
   
 |||
 |:-----|:-----|
 |Headerdatei  <br/> ||
 |Verf�gbar gemacht von:  <br/> |Outlook  <br/> |
 |Implementiert von:  <br/> |Outlook  <br/> |
-|Aufgerufen von:  <br/> |Speicheranbieter  <br/> |
+|Aufgerufen von:  <br/> |Store Anbieter  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPISyncProgressCallback  <br/> |
    
 ## <a name="vtable-order"></a>Vtable-Reihenfolge
 
 |||
 |:-----|:-----|
-|[Progress](imapisyncprogresscallback-progress.md) <br/> |Der Informationsspeicher Anbieter ruft diese Funktion in regelmäßigen Abständen auf, um den Status im Dialogfeld senden/empfangen zu aktualisieren.  <br/> |
-|[Fehler](imapisyncprogresscallback-error.md) <br/> |Wenn während der Synchronisierung Fehler auftreten, ruft der Informationsspeicher Anbieter diese Funktion auf, um Details bereitzustellen, die im Dialogfeld senden/empfangen angezeigt werden.  <br/> |
-|[Done](imapisyncprogresscallback-done.md) <br/> |Der Informationsspeicher Anbieter ruft diese Funktion auf, um Outlook zu benachrichtigen, dass die Synchronisierung abgeschlossen wurde.  <br/> |
+|[Progress](imapisyncprogresscallback-progress.md) <br/> |Der Speicheranbieter ruft diese Funktion regelmäßig auf, um den Status im Dialogfeld Senden/Empfangen zu aktualisieren.  <br/> |
+|[Error](imapisyncprogresscallback-error.md) <br/> |Wenn während der Synchronisierung Fehler auftreten, ruft der Speicheranbieter diese Funktion auf, um Details zur Verfügung zu stellen, die im Dialogfeld Senden/Empfangen angezeigt werden.  <br/> |
+|[Done](imapisyncprogresscallback-done.md) <br/> |Der Speicheranbieter ruft diese Funktion auf, um Outlook Synchronisierung zu informieren.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

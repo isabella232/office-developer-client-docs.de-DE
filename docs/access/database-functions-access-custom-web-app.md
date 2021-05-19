@@ -1,5 +1,5 @@
 ---
-title: Datenbankfunktionen (Access Custom Web App)
+title: Datenbankfunktionen (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 08/18/2017
 ms.audience: Developer
@@ -13,16 +13,16 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33418911"
 ---
-# <a name="database-functions-access-custom-web-app"></a>Datenbankfunktionen (Access Custom Web App)
+# <a name="database-functions-access-custom-web-app"></a>Datenbankfunktionen (benutzerdefinierte Access-Web-App)
 
 > [!IMPORTANT]
 > Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 
-- [User-Funktion (Access Custom Web App)](userdisplayname-function-access-custom-web-app.md)
+- [UserDisplayName-Funktion (benutzerdefinierte Access-Web-App)](userdisplayname-function-access-custom-web-app.md)
     
-- [UserEmailAddress-Funktion (Access Custom Web App)](useremailaddress-function-access-custom-web-app.md)
+- [UserEmailAddress-Funktion (benutzerdefinierte Access-Web-App)](useremailaddress-function-access-custom-web-app.md)
     
-- [Update-Funktion (Access Custom Web App)](update-function-access-custom-web-app.md)
+- [Update-Funktion (benutzerdefinierte Access-Web-App)](update-function-access-custom-web-app.md)
     
 

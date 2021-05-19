@@ -25,7 +25,7 @@ ms.locfileid: "33418218"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Fragt den MAPI-Anbieter ab, um das schnelle Herunterfahren zu unterstützen. 
+Fragt den MAPI-Anbieter nach Unterstützung für schnelles Herunterfahren ab. 
   
 ```cpp
 HRESULT QueryFastShutdown ();
@@ -35,17 +35,17 @@ HRESULT QueryFastShutdown ();
 
 S_OK
   
-> Der MAPI-Anbieter unterstützt den MAPI-Client für schnelles Herunterfahren.
+> Der MAPI-Anbieter unterstützt den MAPI-Client zum schnellen Herunterfahren.
     
 MAPI_E_NO_SUPPORT
   
-> Der MAPI-Anbieter unterstützt den MAPI-Client nicht für schnelles Herunterfahren.
+> Der MAPI-Anbieter unterstützt den MAPI-Client nicht, um schnelles Herunterfahren zu tun.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-MAPI-Anbieter, die das schnelle Herunterfahren des Clients nicht unterstützen müssen, sollten weiterhin die [IMAPIProviderShutdown](imapiprovidershutdowniunknown.md) -Schnittstelle implementieren und die **IMAPIProviderShutdown:: QUERYFASTSHUTDOWN** -Methode MAPI_E_NO_SUPPORT zurückgeben. Für Outlook als MAPI-Client bewirkt dies, dass Outlook auf alle externen Verweise wartet, bevor es beendet wird. 
+MAPI-Anbieter, die das schnelle Herunterfahren des Clients nicht unterstützen müssen, sollten weiterhin die [IMAPIProviderShutdown-Schnittstelle](imapiprovidershutdowniunknown.md) implementieren und die **IMAPIProviderShutdown::QueryFastShutdown-Methode** MAPI_E_NO_SUPPORT. Für Outlook als MAPI-Client führt dies dazu, dass Outlook warten, bis alle externen Verweise freigegeben werden, bevor sie beendet werden. 
   
-Abhängig von der Windows-Registrierungseinstellung des Benutzers für das schnelle Herunterfahren verhindert die Implementierung der **IMAPIProviderShutdown** -Schnittstelle nicht unbedingt, dass ein Client schnell heruntergefahren wird. 
+Abhängig von der Registrierungseinstellung Windows Benutzer für schnelles Herunterfahren verhindert das Nicht implementieren der **IMAPIProviderShutdown-Schnittstelle** nicht unbedingt das schnelle Herunterfahren eines Clients. 
   
 ## <a name="see-also"></a>Siehe auch
 

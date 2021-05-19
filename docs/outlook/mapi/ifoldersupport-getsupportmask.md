@@ -25,7 +25,7 @@ ms.locfileid: "33417371"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft Informationen über die Unterstützung eines Ordners für die Freigabe ab.
+Ruft Informationen zur Unterstützung eines Ordners für die Freigabe ab.
   
 ```cpp
 HRESULT GetSupportMask( 
@@ -37,20 +37,20 @@ HRESULT GetSupportMask(
 
  _pdwSupportMask_
   
-> Out Eine Bitmaske, die angibt, ob der Ordnerfreigabe unterstützt.
+> [out] Eine Bitmaske, die angibt, ob der Ordner die Freigabe unterstützt.
     
  **FS_NONE**
   
-> Gibt an, dass der Ordner keine Freigabe unterstützt.
+> Gibt an, dass der Ordner die Freigabe nicht unterstützt.
     
  **FS_SUPPORTS_SHARING**
   
-> Gibt an, dass der Ordnerfreigabe unterstützt.
+> Gibt an, dass der Ordner die Freigabe unterstützt.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Anruf wurde erfolgreich ausgeführt.
+> Der Aufruf war erfolgreich.
     
 

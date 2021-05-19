@@ -1,5 +1,5 @@
 ---
-title: Informationen zu Tabellen Benachrichtigungen
+title: Informationen zu Tabellenbenachrichtigungen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,27 +15,27 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33417952"
 ---
-# <a name="about-table-notifications"></a>Informationen zu Tabellen Benachrichtigungen
+# <a name="about-table-notifications"></a>Informationen zu Tabellenbenachrichtigungen
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Clients verlassen sich häufig auf Tabellen Benachrichtigungen, um Änderungen an Objekten zu erfahren, statt sich zu registrieren, um Benachrichtigungen direkt von den Objekten zu empfangen. Zu den typischen Änderungen, die dazu führen, dass Benachrichtigungen gesendet werden, gehört das Hinzufügen, löschen oder Ändern einer Zeile und jeder kritische Fehler. Wenn Benachrichtigungen eingehen, können Clients bestimmen, ob ein weiterer Aufruf zum erneuten Laden der Tabelle durchzuführen ist. 
+Clients verlassen sich häufig auf Tabellenbenachrichtigungen, um Änderungen an Objekten zu erfahren, anstatt sich für den direkten Empfang von Benachrichtigungen von den Objekten zu registrieren. Typische Änderungen, die dazu führen, dass Benachrichtigungen gesendet werden, umfassen das Hinzu-, Löschen oder Ändern einer Zeile sowie alle kritischen Fehler. Wenn Benachrichtigungen eintreffen, können Clients bestimmen, ob sie einen weiteren Aufruf zum Erneutladen der Tabelle senden möchten. 
   
-Da Tabellen Benachrichtigungen asynchron sind, gibt es ein paar Probleme, die die Behandlung von Benachrichtigungen weniger als einfach machen können:
+Da Tabellenbenachrichtigungen asynchron sind, gibt es einige Probleme, die die Behandlung von Benachrichtigungen weniger einfach machen können:
   
-- Die in der [TABLE_NOTIFICATION](table_notification.md) -Struktur übergebenen Daten stellen möglicherweise nicht den aktuellen Status der Tabelle dar. Beispielsweise kann ein Client eine Änderung an einer Nachricht vornehmen und diese dann löschen. Der Nachrichtenspeicher Anbieter, der die Inhaltstabelle mit der Nachricht implementiert, sendet zwei Benachrichtigungen: ein TABLE_ROW_MODIFIED-Ereignis gefolgt von einem TABLE_ROW_DELETED-Ereignis. Je nach Benachrichtigung des Nachrichtenspeicher Anbieters kann der Client die TABLE_ROW_MODIFIED-Benachrichtigung nach dem Löschen der Zeile erhalten. 
+- Die in der TABLE_NOTIFICATION [übergebenen](table_notification.md) Daten stellen möglicherweise nicht den aktuellen Zustand der Tabelle dar. Ein Client kann z. B. eine Änderung an einer Nachricht vor sich nehmen und dann entscheiden, sie zu löschen. Der Nachrichtenspeicheranbieter, der die Inhaltstabelle, in der die Nachricht enthalten ist, implementieren, sendet zwei Benachrichtigungen: ein TABLE_ROW_MODIFIED-Ereignis gefolgt von einem TABLE_ROW_DELETED Ereignis. Je nachdem, wie der Nachrichtenspeicheranbieter Benachrichtigungen einbekommt, erhält der Client die TABLE_ROW_MODIFIED nach dem Löschen der Zeile. 
     
-- Der in einer Benachrichtigung enthaltene Spaltensatz kann sich vom aktuellen Spaltensatz der Tabelle unterscheiden. MAPI erfordert, dass der Benachrichtigungs Spaltensatz mit dem Spaltensatz übereinstimmt, der zum Zeitpunkt der Benachrichtigungsgenerierung wirksam war. Da ein Client [IMAPITable::](imapitable-setcolumns.md) SetColumns aufrufen kann, um den Spaltensatz jederzeit zu ändern, auch nach einer Benachrichtigung, werden die beiden Spaltensätze möglicherweise nicht synchronisiert. 
+- Der Spaltensatz, der in einer Benachrichtigung enthalten ist, kann sich vom aktuellen Spaltensatz der Tabelle unterscheiden. MAPI erfordert, dass der Benachrichtigungsspaltensatz mit dem Spaltensatz übereinstimmen, der zum Zeitpunkt der Benachrichtigung generiert wurde. Da ein Client [IMAPITable::SetColumns](imapitable-setcolumns.md) aufrufen kann, um den Spaltensatz jederzeit zu ändern , auch nach einer Benachrichtigung, werden die beiden Spaltensätze möglicherweise nicht synchronisiert. 
     
-- Tabellen Benachrichtigungen werden nur für Zeilen gesendet, die Teil der Ansicht sind. Das heißt, wenn eine Zeile aufgrund einer Einschränkung aus der Ansicht ausgeschlossen wird oder weil sich die Tabelle in einem reduzierten Zustand befindet, wird keine Benachrichtigung gesendet, wenn sich diese Zeile ändert. Darüber hinaus werden keine Benachrichtigungen gesendet, um einen Client über eine Änderung des Kategorien Status zu informieren.
+- Tabellenbenachrichtigungen werden nur für Zeilen gesendet, die Teil der Ansicht sind. Das heißt, wenn eine Zeile aufgrund einer Einschränkung aus der Ansicht ausgeschlossen wird oder sich die Tabelle in einem reduzierten Zustand befindet, wird keine Benachrichtigung gesendet, wenn diese Zeile geändert wird. Außerdem werden keine Benachrichtigungen gesendet, um einen Client über eine Änderung des Kategoriestatus zu informieren.
     
-Clients sollten beachten, dass nicht alle Tabellen die TABLE_SORT_DONE-Benachrichtigung unterstützen und bereit sind, diese Bedingung zu behandeln:
+Clients sollten beachten, dass nicht alle Tabellen die Benachrichtigung TABLE_SORT_DONE unterstützen und bereit sein sollten, diese Bedingung zu behandeln:
   
 1. Erzwingen, dass die Sortierung synchron ist.
     
-2. Erneutes Laden der Zeilen der Tabelle, wenn [IMAPITable:: sortable](imapitable-sorttable.md) zurückgegeben wird. 
+2. Erneutes Laden der Zeilen der Tabelle, wenn [IMAPITable::SortTable zurückgegeben](imapitable-sorttable.md) wird. 
     
 ## <a name="see-also"></a>Siehe auch
 

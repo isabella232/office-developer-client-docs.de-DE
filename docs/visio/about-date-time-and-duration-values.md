@@ -38,27 +38,27 @@ Um Datums- und Zeitangaben in einem Ausdruck (anstelle einer einzelnen Konstante
 
 ||||
 |:-----|:-----|:-----|
-| "3:45"  <br/> | "3:45:27"  <br/> | 7a  <br/> |
+| "3:45"  <br/> | "3:45:27"  <br/> | "7a"  <br/> |
 | "7 am"  <br/> | "7 p"  <br/> | "7:30 PM"  <br/> |
    
 ## <a name="date-and-time-functions"></a>Datums- und Uhrzeitfunktionen
 
 |**Funktion**|**Beschreibung**|
 |:-----|:-----|
-|[Datum](date-function-visioshapesheet.md) <br/> | Konvertiert Zahlen in einen Datumswert.  <br/> |
+|[DATE](date-function-visioshapesheet.md) <br/> | Konvertiert Zahlen in einen Datumswert.  <br/> |
 |[DATETIME](datetime-function.md) <br/> | Konvertiert eine Zeichenfolge in einen Datums- oder Uhrzeitwert.  <br/> |
 |[DATEVALUE](datevalue-function-visioshapesheet.md) <br/> | Konvertiert eine Zeichenfolge in einen Datumswert.  <br/> |
 |[NOW](now-function-visioshapesheet.md) <br/> | Gibt das aktuelle Systemdatum als Datums- und Uhrzeitwert zurück.  <br/> |
-|[Zeit](time-function-visioshapesheet.md) <br/> | Konvertiert Zahlen in einen Uhrzeitwert.  <br/> |
+|[TIME](time-function-visioshapesheet.md) <br/> | Konvertiert Zahlen in einen Uhrzeitwert.  <br/> |
 |[TIMEVALUE](timevalue-function-visioshapesheet.md) <br/> | Konvertiert eine Zeichenfolge in einen Uhrzeitwert.  <br/> |
-|[Tag](day-function-visioshapesheet.md) <br/> | Gibt die Tageskomponente in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
+|[DAY](day-function-visioshapesheet.md) <br/> | Gibt die Tageskomponente in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
 |[DAYOFYEAR](dayofyear-function.md) <br/> | Gibt den Tag des Jahres in sequenzieller Zählung in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
-|[Stunde](hour-function-visioshapesheet.md) <br/> | Gibt die Stundenkomponente in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
+|[HOUR](hour-function-visioshapesheet.md) <br/> | Gibt die Stundenkomponente in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
 |[MINUTE](minute-function-visioshapesheet.md) <br/> | Gibt die Minutenkomponente in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
-|[Monat](month-function-visioshapesheet.md) <br/> | Gibt die Monatskomponente in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
-|[ZWEITEN](second-function-visioshapesheet.md) <br/> | Gibt die Sekundenkomponente in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
-|[Wochentag](weekday-function-visioshapesheet.md) <br/> | Gibt die Zahl für den Wochentag in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
-|[Jahr](year-function-visioshapesheet.md) <br/> | Gibt die Jahreskomponente in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
+|[MONTH](month-function-visioshapesheet.md) <br/> | Gibt die Monatskomponente in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
+|[SECOND](second-function-visioshapesheet.md) <br/> | Gibt die Sekundenkomponente in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
+|[WEEKDAY](weekday-function-visioshapesheet.md) <br/> | Gibt die Zahl für den Wochentag in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
+|[YEAR](year-function-visioshapesheet.md) <br/> | Gibt die Jahreskomponente in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
    
 ## <a name="duration"></a>Dauer
 

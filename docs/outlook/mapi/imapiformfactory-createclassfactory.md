@@ -25,7 +25,7 @@ ms.locfileid: "33416076"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt ein klassenfactoryobjekt für das Formular zurück.
+Gibt ein Klassen factory-Objekt für das Formular zurück.
   
 ```cpp
 HRESULT CreateClassFactory(
@@ -39,7 +39,7 @@ HRESULT CreateClassFactory(
 
  _clsidForm_
   
-> in Ein Klassenbezeichner für das Formular, das von der Klassenfactory erstellt werden soll.
+> [in] Ein Klassenbezeichner für das Formular, das von der Klassen factory erstellt werden soll.
     
  _ulFlags_
   
@@ -47,25 +47,25 @@ HRESULT CreateClassFactory(
     
  _lppClassFactory_
   
-> Out Ein Zeiger auf das Klassenfactory-Objekt.
+> [out] Ein Zeiger auf das Klassen factory-Objekt.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Das Klassenfactory-Objekt wurde zurückgegeben.
+> Das Klassen factory-Objekt wurde zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Formular Betrachter rufen die **IMAPIFormFactory:: CreateClassFactory** -Methode auf, um eine Klassenfactory für ein bestimmtes Formular abzurufen. Die Class Factory wird verwendet, um Instanzen eines Formulars zu erstellen, das Nachrichten einer bestimmten Klasse verarbeitet und den Zugriff auf diese Instanzen steuert. 
+Formularbetrachter rufen die **IMAPIFormFactory::CreateClassFactory-Methode** auf, um eine Klassen factory für ein bestimmtes Formular zu erhalten. Die Klassen factory wird verwendet, um Instanzen eines Formulars zu erstellen, das Nachrichten einer bestimmten Klasse verarbeitet, und um den Zugriff auf diese Instanzen zu steuern. 
   
-Die **CreateClassFactory** -Methode wird von Formular Viewern aufgerufen, um ein klassenfactoryobjekt für Formularserver abzurufen, die mehrere Nachrichtenklassen implementieren. Diese Methode empfängt eine Klassen-ID (CLSID) als Parameter. Anhand dieses Parameters kann diese Methode die spezifische Art des zurückzugebenden Klassenfactory-Objekts bestimmen. 
+Die **CreateClassFactory-Methode** wird von Formularanzeigen aufgerufen, um ein Klassen factory-Objekt für Formularserver zu erhalten, die mehrere Nachrichtenklassen implementieren. Diese Methode empfängt eine Klassen-ID (CLSID) als Parameter. Basierend auf diesem Parameter kann diese Methode die spezifische Art des zurückgebenden Klassen factory-Objekts bestimmen. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Sie können von der **CreateClassFactory** -Implementierung das gleiche Klassenfactory-Objekt für mehrere Aufrufe für denselben Klassenbezeichner zurückgeben. Das Erstellen einer neuen Klassenfactory-Instanz ist nicht erforderlich. 
+Sie können von Ihrer **CreateClassFactory-Implementierung** dasselbe Klassen factory-Objekt bei mehreren Aufrufen für denselben Klassenbezeichner zurückgeben. Das Erstellen einer neuen Klassen factory-Instanz ist nicht erforderlich. 
   
-Sie können eine einzelne Klasse Factory-Implementierung haben, die entsprechende Klassen Factory-Instanzen bei Bedarf erstellt, oder mehrere Klassenfactory-Implementierungen, eine für jede Nachrichtenklasse.
+Sie können über eine einzelne Factoryimplementierung einer Klasse verfügen, mit der bei Bedarf geeignete Klassen factory-Instanzen oder mehrere Factoryimplementierungsklassen einer Klasse für jede Nachrichtenklasse erstellt werden.
   
 ## <a name="see-also"></a>Siehe auch
 

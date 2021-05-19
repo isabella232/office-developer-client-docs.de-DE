@@ -4,7 +4,7 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
-- Beispiele [InfoPath 2007], InfoPath 2007, Entwickleraufgaben, Entwickleraufgaben [InfoPath 2007], InfoPath 2007, Objektmodelle, Objektmodelle [InfoPath 2007]
+- Beispiele [infopath 2007],InfoPath 2007, Entwickleraufgaben,Entwickleraufgaben [InfoPath 2007],InfoPath 2007, Objektmodelle,Objektmodelle [InfoPath 2007]
 localization_priority: Normal
 ms.assetid: a2c18b72-426b-4f63-8454-187e96d26199
 description: Dieser Abschnitt enthält Informationen zu allgemeinen Entwickleraufgaben beim Entwickeln von InfoPath-Formularvorlagen mit verwaltetem Code.
@@ -29,19 +29,19 @@ Dieser Abschnitt enthält Informationen zu allgemeinen Entwickleraufgaben beim E
   
 > Erläutert das Erstellen von Ereignishandlern, die auf Ereignisse reagieren, die auftreten, wenn ein Benutzer ein Formular ausfüllt.
     
-[Access-Formulardaten](how-to-access-form-data.md)
+[Zugreifen auf Formulardaten](how-to-access-form-data.md)
   
 > Erläutert, wie auf Informationen zum dem Formular zugrunde liegenden XML-Dokument und auf die enthaltenen Daten zugegriffen wird oder Aktionen im XML-Dokument ausgeführt werden.
     
-[Zugriff auf externe Datenquellen](how-to-access-external-data-sources.md)
+[Zugreifen auf externe Datenquellen](how-to-access-external-data-sources.md)
   
 > Erläutert das Zugreifen auf Daten aus externen Datenquellen.
     
-[Schreiben von bedingter Logik zur Bestimmung der Laufzeitumgebung](how-to-write-conditional-logic-that-determines-the-run-time-environment.md)
+[Schreiben bedingter Logik, die die Laufzeitumgebung bestimmt](how-to-write-conditional-logic-that-determines-the-run-time-environment.md)
   
 > Erläutert das Scheiben von Code, der unterschiedliche Aktionen ausführt, abhängig davon, ob das Formular in InfoPath, einem Webbrowser oder einem mobilen Browser geöffnet ist.
     
-[Arbeiten mit Formularfenstern](how-to-work-with-form-windows.md)
+[Arbeiten mit formular Windows](how-to-work-with-form-windows.md)
   
 > Erläutert das Arbeiten mit Formularfenstern.
     
@@ -49,7 +49,7 @@ Dieser Abschnitt enthält Informationen zu allgemeinen Entwickleraufgaben beim E
   
 > Erläutert das Arbeiten mit Ansichten.
     
-[Arbeiten mit Offline Lösungen](how-to-work-with-offline-solutions.md)
+[Arbeiten mit Offlinelösungen](how-to-work-with-offline-solutions.md)
   
 > Erläutert das Arbeiten mit Offlinelösungen.
     
@@ -61,11 +61,11 @@ Dieser Abschnitt enthält Informationen zu allgemeinen Entwickleraufgaben beim E
   
 > Erläutert die Fehlerbehandlung in InfoPath-Projekten mit verwaltetem Code.
     
-[Arbeiten mit Einstellungen für die Verwaltung von Informationsrechten](how-to-work-with-information-rights-management-settings.md)
+[Arbeiten mit Verwaltung von Informationsrechten Einstellungen](how-to-work-with-information-rights-management-settings.md)
   
 > Erläutert das Arbeiten mit IRM-Einstellungen (Information Rights Management, Verwaltung von Informationsrechten ).
     
-[Hinzufügen und verweisen auf benutzerdefinierte Assemblys](how-to-add-and-reference-custom-assemblies.md)
+[Hinzufügen und Verweisen auf benutzerdefinierte Assemblys](how-to-add-and-reference-custom-assemblies.md)
   
 > Erläutert das Hinzufügen benutzerdefinierter Assemblys zu einem Formularvorlagenprojekt.
     

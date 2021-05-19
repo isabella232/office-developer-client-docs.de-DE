@@ -29,9 +29,9 @@ Gibt die Größe eines einzelnen Eigenschaftswerts zurück.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 ULONG UlPropSize(
@@ -43,7 +43,7 @@ ULONG UlPropSize(
 
  _lpSPropValue_
   
-> in Zeiger auf eine [SPropValue](spropvalue.md) -Struktur, die die zu messende Eigenschaft definiert. 
+> [in] Zeiger auf eine [SPropValue-Struktur,](spropvalue.md) die die zu messende Eigenschaft definiert. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -53,10 +53,10 @@ S_OK
     
 MAPI_E_CALL_FAILED 
   
-> Der Vorgang konnte nicht abgeschlossen werden.
+> Ein Fehler mit unerwartetem oder unbekanntem Ursprung verhinderte den Abschluss des Vorgangs.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **UlPropSize** -Funktion gibt die Größe des Eigenschaftswerts für die angegebene Eigenschaft in Byte zurück. Die Größe des Rests der **SPropValue** -Struktur wird ignoriert. 
+Die **UlPropSize-Funktion** gibt die Größe des Eigenschaftswerts für die angegebene Eigenschaft in Bytes zurück. Dabei wird die Größe des rests der **SPropValue-Struktur** ignoriert. 
   
 

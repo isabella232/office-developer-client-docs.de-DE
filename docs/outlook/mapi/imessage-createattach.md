@@ -40,23 +40,23 @@ LPATTACH FAR * lppAttach
 
  _lpInterface_
   
-> in Zeiger auf die Schnittstellen-ID (IID), die die Schnittstelle darstellt, die für den Zugriff auf die Nachricht verwendet werden soll. Übergeben von NULL-Ergebnissen in der Standardschnittstelle der Nachricht oder **IMessage**, wird zurückgegeben. 
+> [in] Zeiger auf die Schnittstellen-ID (Interface Identifier, IID), die die Schnittstelle darstellt, die für den Zugriff auf die Nachricht verwendet werden soll. Das Übergeben von NULL führt dazu, dass die Standardschnittstelle der Nachricht oder **IMessage** zurückgegeben wird. 
     
  _ulFlags_
   
-> in Bitmaske von Flags, die die Erstellung der Anlage steuert. Das folgende Flag kann festgelegt werden:
+> [in] Bitmaske von Flags, die steuert, wie die Anlage erstellt wird. Das folgende Flag kann festgelegt werden:
     
 MAPI_DEFERRED_ERRORS 
   
-> Ermöglicht **** , dass createattach erfolgreich zurückgegeben wird, möglicherweise, bevor der aufrufende Client vollständig auf die Anlage zugreifen kann. Wenn auf die Anlage nicht zugegriffen werden kann, führt der nachfolgende Aufruf zu einem Fehler. 
+> Ermöglicht **createAttach,** erfolgreich zurückzukehren, möglicherweise bevor der Zugriff auf die Anlage für den aufrufenden Client vollständig möglich ist. Wenn auf die Anlage nicht zugegriffen werden kann, kann ein nachfolgender Aufruf zu einem Fehler führen. 
     
  _lpulAttachmentNum_
   
-> Out Zeiger auf eine Indexnummer, die die neu erstellte Anlage identifiziert. Diese Nummer ist nur gültig, wenn die Nachricht geöffnet ist und die Grundlage für die **PR_ATTACH_NUM** ([pidtagattachnumber (](pidtagattachnumber-canonical-property.md))-Eigenschaft der Anlage ist.
+> [out] Zeiger auf eine Indexnummer, die die neu erstellte Anlage identifiziert. Diese Zahl ist nur gültig, wenn die Nachricht geöffnet ist und die Basis für die **PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) -Eigenschaft der Anlage ist.
     
  _lppAttach_
   
-> Out Zeiger auf einen Zeiger auf das offene Attachment-Objekt.
+> [out] Zeiger auf einen Zeiger auf das geöffnete Anlagenobjekt.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -64,11 +64,11 @@ S_OK
   
 > Die Anlage wurde erfolgreich erstellt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMessage:: createattach** -Methode erstellt eine neue Anlage für eine Nachricht. Die neue Anlage und alle für Sie festgelegten Eigenschaften sind erst verfügbar, wenn ein Client sowohl die [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) -Methode als auch die **IMAPIProp:: SaveChanges** -Methode der Nachricht aufgerufen hat. 
+Die **IMessage::CreateAttach-Methode** erstellt eine neue Anlage für eine Nachricht. Die neue Anlage und alle dafür festgelegten Eigenschaften sind erst verfügbar, wenn ein Client sowohl die [IMAPIProp::SaveChanges-Methode](imapiprop-savechanges.md) der Anlage als auch die **IMAPIProp::SaveChanges-Methode der** Nachricht aufgerufen hat. 
   
-Die Anlagennummer, auf die durch _lpulAttachmentNum_ verwiesen wird, ist eindeutig und gilt nur innerhalb des Kontexts der Nachricht. Das heißt, zwei Anlagen in zwei verschiedenen Nachrichten können dieselbe Anzahl haben, während zwei Anlagen in der gleichen Nachricht nicht. 
+Die anlagenummer, auf die  _von lpulAttachmentNum_ verwiesen wird, ist eindeutig und nur im Kontext der Nachricht gültig. Das heißt, zwei Anlagen in zwei verschiedenen Nachrichten können dieselbe Nummer haben, während zwei Anlagen in derselben Nachricht nicht möglich sind. 
   
 ## <a name="see-also"></a>Siehe auch
 

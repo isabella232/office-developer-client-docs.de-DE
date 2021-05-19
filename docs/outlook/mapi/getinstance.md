@@ -25,13 +25,13 @@ ms.locfileid: "33418722"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Kopiert einen Wert in einer mehrwertigen Eigenschaft in eine einwertige Eigenschaft desselben Typs. 
+Kopiert einen Wert innerhalb einer mehrwertigen Eigenschaft in eine einwertige Eigenschaft desselben Typs. 
   
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |MAPIUTIL. H  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 VOID GetInstance(
@@ -45,22 +45,22 @@ VOID GetInstance(
 
  _pvalMv_
   
-> in Zeiger auf eine [SPropValue](spropvalue.md) -Struktur, die eine mehrwertige Eigenschaft definiert. 
+> [in] Zeiger auf eine [SPropValue-Struktur,](spropvalue.md) die eine mehrwertige Eigenschaft definiert. 
     
  _pvalSv_
   
-> in Zeiger auf eine einwertige Eigenschaft zum Empfangen von Daten. 
+> [in] Zeiger auf eine einwertiger Eigenschaft zum Empfangen von Daten. 
     
  _uliInst_
   
-> in Die Instanznummer, also das Arrayelement, des Werts, der aus der vom _pvalMv_ -Parameter angegebenen Struktur kopiert wird. 
+> [in] Die Instanznummer, d. h. das Arrayelement, des Werts, der aus der durch den  _pvalMv-Parameter_ angegebenen Struktur kopiert wird. 
     
 ## <a name="return-value"></a>Return value
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn der kopierte Wert für den zugewiesenen Speicher zu umfangreich **** ist, kopiert die GetInstance-Funktion nur Zeiger, anstatt neuen Speicher zuzuweisen. 
+Wenn der kopierte Wert für den zugewiesenen Arbeitsspeicher zu groß ist, kopiert die **GetInstance-Funktion** nur Zeiger, anstatt neuen Arbeitsspeicher zuzuordnen. 
   
 

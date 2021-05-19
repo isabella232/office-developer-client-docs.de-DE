@@ -25,7 +25,7 @@ ms.locfileid: "33416881"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ermöglicht den Zugriff auf das Adressbuch.
+Bietet Zugriff auf das Adressbuch.
   
 ```cpp
 HRESULT OpenAddressBook(
@@ -39,35 +39,35 @@ LPADRBOOK FAR * lppAdrBook
 
  _lpInterface_
   
-> in Ein Zeiger auf die Schnittstellen-ID (IID), die die Schnittstelle darstellt, die für den Zugriff auf das Adressbuch verwendet werden soll. Gültige Werte sind NULL, womit die standardmäßige Adressbuch Schnittstelle [IAddrBook](iaddrbookimapiprop.md)und IID_IAddrBook angegeben wird.
+> [in] Ein Zeiger auf die Schnittstellen-ID (Interface Identifier, IID), die die Schnittstelle darstellt, die für den Zugriff auf das Adressbuch verwendet werden soll. Gültige Werte sind NULL, was die Standardmäßige Adressbuchschnittstelle [IAddrBook](iaddrbookimapiprop.md)angibt, und IID_IAddrBook.
     
  _ulFlags_
   
-> Reserviert muss NULL sein.
+> Reserviert; muss null sein.
     
  _lppAdrBook_
   
-> Out Ein Zeiger auf einen Zeiger auf das Adressbuch.
+> [out] Ein Zeiger auf einen Zeiger auf das Adressbuch.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Zugriff auf das Adressbuch wurde bereitgestellt.
+> Zugriff auf das Adressbuch wurde bereitgestellt.
     
 MAPI_W_ERRORS_RETURNED 
   
-> Der Aufruf war erfolgreich, aber mindestens ein Adressbuchanbieter konnte nicht geladen werden. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich behandelt werden. Verwenden Sie zum Testen dieser Warnung das **HR_FAILED** -Makro. Weitere Informationen finden Sie unter [Verwenden von Makros zur Fehlerbehandlung](using-macros-for-error-handling.md).
+> Der Anruf war erfolgreich, aber mindestens ein Adressbuchanbieter konnte nicht geladen werden. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich behandelt werden. Verwenden Sie zum Testen dieser Warnung das **HR_FAILED** Makro. Weitere Informationen finden Sie unter [Using Macros for Error Handling](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPISupport:: openaddressbook** -Methode wird für alle Support Objekte des Dienstanbieters implementiert. Dienstanbieter, in der Regel eng gekoppelte Nachrichtenspeicher-und Transport **** Anbieter, rufen openaddressbook auf, um Zugriff auf das Adressbuch zu erhalten. Der zurückgegebene **IAddrBook** -Zeiger kann für eine Vielzahl von Adressbuch Aufgaben verwendet werden, einschließlich Öffnen von Adressbuch Containern, suchen nach Messaging Benutzern und Anzeigen von Adress Dialogfeldern. 
+Die **IMAPISupport::OpenAddressBook-Methode** wird für alle Dienstanbieterunterstützungsobjekte implementiert. Dienstanbieter, in der Regel eng gekoppelte Nachrichtenspeicher- und Transportanbieter, rufen **OpenAddressBook** auf, um Zugriff auf das Adressbuch zu erhalten. Der zurückgegebene **IAddrBook-Zeiger** kann für eine Vielzahl von Adressbuchaufgaben verwendet werden, z. B. das Öffnen von Adressbuchcontainern, das Suchen von Messagingbenutzern und das Anzeigen von Adressdialogfeldern. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
- **Openaddressbook** kann MAPI_W_ERRORS_RETURNED zurückgeben, wenn es einen oder mehrere der Adressbuchanbieter im aktuellen Profil nicht laden kann. Dieser Wert ist eine Warnung, und Sie sollten den Anruf als erfolgreich behandeln. Auch wenn alle Adressbuchanbieter nicht geladen werden konnten, ist **openaddressbook** weiterhin erfolgreich und gibt MAPI_W_ERRORS_RETURNED und einen **IAddrBook** -Zeiger im _lppAdrBook_ -Parameter zurück. Da **openaddressbook** immer einen gültigen **IAddrBook** -Zeiger zurückgibt, müssen Sie ihn freigeben, wenn Sie ihn nicht mehr verwenden. 
+ **OpenAddressBook** kann MAPI_W_ERRORS_RETURNED zurückgeben, wenn es einen oder mehrere Adressbuchanbieter im aktuellen Profil nicht laden kann. Dieser Wert ist eine Warnung, und Sie sollten den Anruf als erfolgreich behandeln. Auch wenn alle Adressbuchanbieter nicht geladen werden konnten, ist **OpenAddressBook** weiterhin erfolgreich und gibt MAPI_W_ERRORS_RETURNED und einen **IAddrBook-Zeiger** im  _lppAdrBook-Parameter_ zurück. Da **OpenAddressBook** immer einen gültigen **IAddrBook-Zeiger** zurückgibt, müssen Sie ihn los, sobald Sie mit der Verwendung fertig sind. 
   
-Wenn ein oder mehrere Adressbuchanbieter nicht geladen werden konnten, rufen Sie [IMAPISupport:: getlasterroraufzurufen](imapisupport-getlasterror.md) auf, um eine [MAPIERROR](mapierror.md) -Struktur abzurufen, die Informationen zu den Anbietern enthält, die nicht geladen wurden. 
+Wenn ein oder mehrere Adressbuchanbieter nicht geladen werden konnten, rufen Sie [IMAPISupport::GetLastError](imapisupport-getlasterror.md) auf, um eine [MAPIERROR-Struktur](mapierror.md) zu erhalten, die Informationen zu den Anbietern enthält, die nicht geladen wurden. 
   
 ## <a name="see-also"></a>Siehe auch
 

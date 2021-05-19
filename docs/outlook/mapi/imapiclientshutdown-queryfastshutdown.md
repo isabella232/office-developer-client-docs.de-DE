@@ -25,7 +25,7 @@ ms.locfileid: "33418148"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Fragt das MAPI-Subsystem zur Unterstützung des schnellen Herunterfahrens ab, das von geladenen MAPI-Anbietern bereitgestellt wird.
+Fragt das MAPI-Subsystem nach Unterstützung für schnelles Herunterfahren ab, die von geladenen MAPI-Anbietern bereitgestellt wird.
   
 ```cpp
 HRESULT QueryFastShutdown ();
@@ -35,15 +35,15 @@ HRESULT QueryFastShutdown ();
 
 S_OK
   
-> Das MAPI-Subsystem unterstützt den MAPI-Client für schnelles Herunterfahren.
+> Das MAPI-Subsystem unterstützt den MAPI-Client zum schnellen Herunterfahren.
     
 MAPI_E_NO_SUPPORT
   
-> Der MAPI-Anbieter unterstützt den MAPI-Client nicht für schnelles Herunterfahren.
+> Der MAPI-Anbieter unterstützt den MAPI-Client nicht, um schnelles Herunterfahren zu tun.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Ob das MAPI-Subsystem den MAPI-Client für schnelles Herunterfahren unterstützt, hängt von der Windows-Registrierungseinstellung des Benutzers oder dem Standardverhalten des MAPI-Clients für schnelles Herunterfahren ab. Außerdem hängt es von der Fähigkeit der geladenen MAPI-Anbieter ab, das schnelle Herunterfahren zu unterstützen. Weitere Informationen finden Sie unter [Benutzeroptionen für das schnelle Herunterfahren](fast-shutdown-user-options.md).
+Ob das MAPI-Subsystem den MAPI-Client zum schnellen Herunterfahren unterstützt, hängt von der Windows-Registrierungseinstellung des Benutzers oder vom Standardverhalten des MAPI-Clients für schnelles Herunterfahren ab. Es hängt auch davon ab, ob die geladenen MAPI-Anbieter schnelles Herunterfahren unterstützen können. Weitere Informationen finden Sie unter [Fast Shutdown User Options](fast-shutdown-user-options.md).
   
 ## <a name="see-also"></a>Siehe auch
 

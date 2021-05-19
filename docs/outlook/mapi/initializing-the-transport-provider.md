@@ -1,5 +1,5 @@
 ---
-title: Initialisieren des Transport Anbieters
+title: Initialisieren des Transportanbieters
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,22 +15,22 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33416601"
 ---
-# <a name="initializing-the-transport-provider"></a>Initialisieren des Transport Anbieters
+# <a name="initializing-the-transport-provider"></a>Initialisieren des Transportanbieters
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die Transport-Spooler-Schnittstelle definiert Aufrufe, die der MAPI-Spooler an einen Transportanbieter stellt. Transport Anbieter implementieren diese Routinen in einer Dynamic Link Library (DLL). Der erste direkte Einstiegspunkt in die DLL, der vom MAPI-Spooler verwendet wird, muss die Initialisierungsfunktion des Transportanbieters [XPProviderInit](xpproviderinit.md)sein.
+Die Transport-Spooler-Schnittstelle definiert Aufrufe, die der MAPI-Spooler an einen Transportanbieter macht. Transportanbieter implementieren diese Routinen in einer Dynamic Link Library (DLL). Der erste direkte Einstiegspunkt in die DLL, die vom MAPI-Spooler verwendet wird, muss die Initialisierungsfunktion des Transportanbieters [XPProviderInit sein.](xpproviderinit.md)
   
-MAPI verwendet die Routine- **GetProcAddress** , um die Adresse der Initialisierungsroutine des Dienstanbieters abzurufen und diese Routine aufzurufen. Der Name der Initialisierungsroutine ist **XPProviderInit** für Transportanbieter. Es unterscheidet sich für andere Arten von MAPI-Dienstanbietern, sodass eine DLL eine beliebige Kombination von Dienstanbieter Typen enthalten kann, aber nur ein Dienstanbieter eines bestimmten Typs. Ein Dienstanbieter eines bestimmten Typs kann jedoch mehrere Dienste seines Typs implementieren. Ein Transportanbieter kann beispielsweise Nachrichtentransport Funktionen in mehrere Nachrichtendienste implementieren. 
+MAPI verwendet die Routine **GetProcAddress,** um die Adresse der Initialisierungsroutine des Dienstanbieters zu erhalten und diese Routine dann auf aufruft. Der Name der Initialisierungsroutine ist **XPProviderInit** für Transportanbieter. Bei anderen Typen von MAPI-Dienstanbietern ist dies unterschiedlich, sodass eine DLL eine beliebige Kombination von Dienstanbietertypen enthalten kann, jedoch nur einen Dienstanbieter eines bestimmten Typs. Ein Dienstanbieter eines bestimmten Typs kann jedoch mehrere Dienste seines Typs implementieren. Beispielsweise kann ein Transportanbieter die Nachrichtentransportfunktionalität in mehrere Nachrichtendienste implementieren. 
   
-Die Headerdatei mapispi. h enthält eine Typdefinition für den Funktionsprototyp der Initialisierungsfunktion des Transportanbieters und einen vordefinierten Prozedurnamen dafür. Durch Benennen der Initialisierungsroutinen in Ihren C-und C++-Dateien mit den gleichen Namen, die von **GetProcAddress** verwendet werden, und mithilfe einer einfachen Export Deklaration in der dll. DEF-Datei, erhalten Sie automatisch eine Typüberprüfung der Parameter in der Initialisierungsroutine. Beispiele finden Sie im Beispiel zum Transportanbieter-Quellcode. Weitere Informationen finden Sie unter [Transport Provider Sample](transport-provider-sample.md).
+Die mapispi.h-Headerdatei verfügt über eine Typdefinition für den Funktionsprototyp der Initialisierungsfunktion des Transportanbieters und einen vordefinierten Prozedurnamen dafür. Indem Sie die Initialisierungsroutinen in Ihren C- und C++-Dateien mit denselben Namen benennen, die von **GetProcAddress** verwendet werden, und mithilfe einer einfachen Exportdeklaration in Ihrer DLL.DEF-Datei erhalten Sie automatisch die Typüberprüfung der Parameter in Ihrer Initialisierungsroutine. Beispiele finden Sie im Quellcode des Transportanbieters. Weitere Informationen finden Sie unter [Transport Provider Sample](transport-provider-sample.md).
   
-Wenn der Initialisierungsaufruf eines Dienstanbieters erfolgreich ist, aber die Versionsnummer einer Dienstanbieter-Schnittstelle zurückgibt, die für MAPI zu klein ist, ruft MAPI sofort die **Release** -Methode des dienstanbieterobjekts auf und fährt fort, als ob der Initialisierungsaufruf fehlgeschlagen mit MAPI_E_VERSION. Auf diese Weise definieren MAPI und der Dienstanbieter gemeinsam den Umfang der Versionsnummern der Dienstanbieter-Schnittstelle, die Sie verarbeiten können, und wenn nichts übereinstimmt, schlägt der Dienstanbieter Ladevorgang mit einem MAPI_E_VERSION-Rückgabewert fehl. 
+Wenn der Initialisierungsaufruf eines Dienstanbieters erfolgreich ist, aber eine Versionsnummer der Dienstanbieterschnittstelle zurückgibt, die zu klein ist, damit MAPI verarbeiten kann, ruft MAPI sofort die **Release-Methode** des Dienstanbieterobjekts auf und geht so vor, als wäre der Initialisierungsaufruf mit MAPI_E_VERSION. Auf diese Weise definieren MAPI und der Dienstanbieter gemeinsam den Bereich der Dienstanbieterschnittstellenversionsnummern, die sie verarbeiten können, und wenn nichts mit dem Dienstanbieter zu tun hat, schlägt das Laden des Dienstanbieters mit einem MAPI_E_VERSION fehl. 
   
-Der letzte Schritt für den MAPI-Spooler beim Zugriff auf Dienstanbieter Ressourcen besteht darin, sich beim Transportanbieter anzumelden. Der MAPI-Spooler Ruft die [IXPProvider:: TransportLogon](ixpprovider-transportlogon.md) -Methode des [IXPProvider: IUnknown](ixpprovideriunknown.md) -Objekts auf, das von **XPProviderInit**zurückgegeben wird. Dies ist der Anruf, bei dem die Anmeldeinformationen, falls verwendet, aktiviert sind und Dialogfelder zugelassen werden können.
+Der letzte Schritt für den MAPI-Spooler beim Abrufen des Zugriffs auf Dienstanbieterressourcen besteht in der Anmeldung beim Transportanbieter. Der MAPI-Spooler ruft die [IXPProvider::TransportLogon-Methode](ixpprovider-transportlogon.md) des [IXPProvider : IUnknown-Objekts](ixpprovideriunknown.md) auf, das von **XPProviderInit** zurückgegeben wird. Dies ist der Aufruf, bei dem Anmeldeinformationen aktiviert werden und Dialogfelder zulässig sind.
   
-Wenn ein Prozess eine zweite Transportsitzung für denselben Transportanbieter und dieselbe MAPI-Sitzung öffnet, sollte die Transportanbieter-DLL kein zweites Anbieterobjekt erstellen. Das erste Anbieterobjekt sollte für die Anmeldung bei der zweiten Transportsitzung verwendet werden. Ein Transportanbieter sollte so programmiert werden, dass er mehrere Transportsitzungen in einem einzelnen Anbieterobjekt unterstützt. Ein zweites Provider-Objekt sollte nur erstellt werden, wenn im gleichen Prozess unterschiedliche MAPI-Sitzungen verwendet werden.
+Wenn ein Prozess eine zweite Transportsitzung für denselben Transportanbieter und die gleiche MAPI-Sitzung öffnet, sollte die Transportanbieter-DLL kein zweites Anbieterobjekt erstellen. Das erste Anbieterobjekt sollte zum Anmelden bei der zweiten Transportsitzung verwendet werden. Ein Transportanbieter sollte so programmiert werden, dass mehrere Transportsitzungen in einem einzelnen Anbieterobjekt unterstützt werden. Ein zweites Anbieterobjekt sollte nur erstellt werden, wenn unterschiedliche MAPI-Sitzungen im gleichen Prozess verwendet werden.
   
 

@@ -43,35 +43,35 @@ LPMAPIPROP lpMAPIPropSibling
 
  _cbTemplateID_
   
-> in Die Anzahl der Bytes im Vorlagenbezeichner, auf die von _lpTemplateID_verwiesen wird. 
+> [in] Die Byteanzahl in der Vorlagen-ID, auf die _von lpTemplateID verwiesen wird._ 
     
  _lpTemplateID_
   
-> in Ein Zeiger auf die **PR_TEMPLATEID** ([pidtagtemplateid (](pidtagtemplateid-canonical-property.md))-Eigenschaft der Vorlagen-ID des zu öffnenden Empfänger Eintrags.
+> [in] Ein Zeiger auf die **Vorlagen-ID PR_TEMPLATEID** ([PidTagTemplateid](pidtagtemplateid-canonical-property.md))-Eigenschaft des zu öffnenden Empfängereintrags.
     
  _ulTemplateFlags_
   
-> in Eine Bitmaske von Flags, die zum Öffnen des Eintrags verwendet wird. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, mit der das Öffnen des Eintrags beschrieben wird. Das folgende Flag kann festgelegt werden:
     
 FILL_ENTRY 
   
-> Es wird ein neuer Eintrag erstellt. Wenn der fremde Anbieter den folgenden [IABLogon::](iablogon-opentemplateid.md) opentemplater-Aufruf von MAPI erhält, kann er steuern, wie der Eintrag erstellt wird, indem Eigenschaften geändert werden, auf die durch den _lpMAPIPropData_ -Parameter verwiesen wird, oder indem eine bestimmte Schnittstelle zurückgegeben wird. Implementierung in _lppMAPIPropNew_ , um zu steuern, wie Eigenschaften für den neuen Eintrag festgelegt werden. 
+> Ein neuer Eintrag wird erstellt. Wenn der fremde Anbieter den nachfolgenden [IABLogon::OpenTemplateID-Aufruf](iablogon-opentemplateid.md) von MAPI empfängt, kann er steuern, wie der Eintrag erstellt wird, indem Eigenschaften geändert werden, auf die der  _lpMAPIPropData-Parameter_ verweist, oder indem er eine bestimmte Schnittstellenimplementierung in  _lppMAPIPropNew_ zurück gibt, um zu steuern, wie Eigenschaften für den neuen Eintrag festgelegt werden. 
     
  _lpMAPIPropData_
   
-> in Ein Zeiger auf die Schnittstellenimplementierung, die der Aufrufer für den Zugriff auf den Eintrag verwendet. Dies ist die Implementierung, die der fremde Anbieter mit seiner eigenen Implementierung umschließen und im _lppMAPIPropNew_ -Parameter zurückgeben kann. Der _lpMAPIPropData_ -Parameter muss auf eine Lese-/Schreibzugriff-Schnittstellenimplementierung verweisen, die von [IMAPIProp: IUnknown](imapipropiunknown.md) abgeleitet ist und die Schnittstelle unterstützt, die im _lpInterface_ -Parameter angefordert wird. 
+> [in] Ein Zeiger auf die Schnittstellenimplementierung, die der Aufrufer für den Zugriff auf den Eintrag verwendet. Dies ist die Implementierung, die der fremde Anbieter mit einer eigenen Implementierung umschließen und im  _lppMAPIPropNew-Parameter zurückgeben_ kann. Der  _lpMAPIPropData-Parameter_ muss auf eine Lese-/Schreibschnittstellenimplementierung verweisen, die von [IMAPIProp : IUnknown](imapipropiunknown.md) ab leitet und die Schnittstelle unterstützt, die im  _lpInterface-Parameter_ angefordert wird. 
     
  _lpInterface_
   
-> in Ein Zeiger auf die Schnittstellen-ID (IID), die die Schnittstelle darstellt, die für den Zugriff auf den Eintrag verwendet werden soll. Der _lppMAPIPropNew_ -Parameter verweist auf eine Schnittstelle des durch _lpInterface_angegebenen Typs. Beim Übergeben von NULL wird die Standardschnittstelle für einen Messagingbenutzer IID_IMailUser zurückgegeben. 
+> [in] Ein Zeiger auf den Schnittstellenbezeichner (Interface Identifier, IID), der die Schnittstelle darstellt, die für den Zugriff auf den Eintrag verwendet werden soll. Der _lppMAPIPropNew-Parameter_ verweist auf eine Schnittstelle des typs, der durch _lpInterface angegeben wird._ Durch Übergeben von NULL wird die Standardschnittstelle für einen Messagingbenutzer IID_IMailUser. 
     
  _lppMAPIPropNew_
   
-> Out Ein Zeiger auf die Schnittstellenimplementierung, die der ausländische Anbieter für den Zugriff auf den Eintrag bereitstellt.
+> [out] Ein Zeiger auf die Schnittstellenimplementierung, die der fremde Anbieter für den Zugriff auf den Eintrag zur Verfügung stellt.
     
  _lpMAPIPropSibling_
   
-> Reserviert muss NULL sein.
+> Reserviert; muss NULL sein.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -81,19 +81,19 @@ S_OK
     
 MAPI_E_UNKNOWN_ENTRYID 
   
-> Der fremden Adressbuchanbieter ist nicht vorhanden.
+> Der fremde Adressbuchanbieter ist nicht vorhanden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPISupport::** opentemplatecode-Methode wird nur für Support Objekte des Adressbuch Anbieters implementiert. **** Opentemplatecode wird nur von Adressbuch Anbietern aufgerufen, die als Hosts für Einträge fungieren, die zu anderen Adressbuch Anbietern gehören, auch als ausländische Anbieter bezeichnet. Host Anbieter rufen **** opentemplatecode auf, um einen fremden Eintrag zu öffnen, der auftritt, wenn Daten im Hostanbieter an Code im fremden Anbieter gebunden sind. 
+Die **IMAPISupport::OpenTemplateID-Methode** wird nur für Unterstützungsobjekte des Adressbuchanbieters implementiert. **OpenTemplateID** wird nur von Adressbuchanbietern aufgerufen, die als Hosts für Einträge fungieren können, die zu anderen Adressbuchanbietern gehören, auch als fremde Anbieter bezeichnet. Hostanbieter rufen **OpenTemplateID auf,** um einen fremden Eintrag zu öffnen, der auftritt, wenn Daten im Hostanbieter an Code im fremden Anbieter gebunden sind. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Rufen **** Sie opentemplatecode nur auf, wenn Sie die Speicherung von Einträgen mit Vorlagen Bezeichnern aus fremden Adressbuch Anbietern unterstützen. Durch diese Unterstützung werden zusätzliche Anforderungen an Ihre [IABContainer:: CreateEntry](iabcontainer-createentry.md) -und [IABLogon:: OpenEntry](iablogon-openentry.md) -Implementierungen gestellt. Weitere Informationen finden Sie in den Beschreibungen dieser Methoden und [fungieren als Host-Adressbuchanbieter](acting-as-a-host-address-book-provider.md).
+Rufen **Sie OpenTemplateID** nur auf, wenn Sie die Speicherung von Einträgen mit Vorlagenbezeichnern von fremden Adressbuchanbietern unterstützen. Diese Unterstützung stellt zusätzliche Anforderungen an Ihre [IABContainer::CreateEntry-](iabcontainer-createentry.md) und [IABLogon::OpenEntry-Implementierungen.](iablogon-openentry.md) Weitere Informationen finden Sie in den Beschreibungen dieser Methoden und [in Acting as a Host Address Book Provider](acting-as-a-host-address-book-provider.md).
   
-Wenn der **** opentemplatecode-Aufruf als gebundene Schnittstelle die gleiche Property-Objekt-Implementierung zurückgibt, die Sie übergeben haben, können Sie den Verweis auf das Property-Objekt freigeben. Dies liegt daran, dass der Foreign-Anbieter die **AddRef** -Methode des Objekts aufgerufen hat, um seinen eigenen Verweis beizubehalten. Wenn der fremde Anbieter keinen Verweis auf das Property-Objekt beibehalten muss, gibt openTemplatecollection das ungebundene Property-Objekt zurück. **** 
+Wenn der **OpenTemplateID-Aufruf** als gebundene Schnittstelle dieselbe Eigenschaftsobjektimplementierung zurückgibt, die Sie übergeben haben, können Sie Den Verweis auf Ihr Eigenschaftsobjekt los. Dies liegt daran, dass der fremde Anbieter die **AddRef-Methode** des Objekts aufgerufen hat, um einen eigenen Verweis zu behalten. Wenn der fremde Anbieter keinen Verweis auf das Eigenschaftsobjekt behalten muss, gibt **OpenTemplateID** das ungebundene Eigenschaftsobjekt zurück. 
   
-Wenn **** opentemplatecode mit MAPI_E_UNKNOWN_ENTRYID fehlschlägt, versuchen Sie, den Eintrag als schreibgeschützt zu verwenden. 
+Wenn **OpenTemplateID** mit MAPI_E_UNKNOWN_ENTRYID fehlert, versuchen Sie, den Eintrag als schreibgeschützt zu behandeln. 
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -103,7 +103,7 @@ Wenn **** opentemplatecode mit MAPI_E_UNKNOWN_ENTRYID fehlschlägt, versuchen Si
   
 [IPropData: IMAPIProp](ipropdataimapiprop.md)
   
-[Kanonische Pidtagtemplateid (-Eigenschaft](pidtagtemplateid-canonical-property.md)
+[PidTagTemplateid (kanonische Eigenschaft)](pidtagtemplateid-canonical-property.md)
   
 [IMAPISupport: IUnknown](imapisupportiunknown.md)
 

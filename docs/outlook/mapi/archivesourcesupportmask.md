@@ -25,33 +25,33 @@ ms.locfileid: "33418092"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt an, ob in Microsoft Office Outlook Ordner in einem Speicher gescannt und automatisch archiviert werden sollen.
+Gibt an, Microsoft Office Outlook Ordner in einem Speicher überprüfen und automatisch archivieren soll.
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
-|Verfügbar unter:  <br/> |[IMsgStore: IMAPIProp](imsgstoreimapiprop.md) -Objekt  <br/> |
-|Erstellt von:  <br/> |Speicheranbieter  <br/> |
+|Verfügbar gemacht für:  <br/> |[IMsgStore : IMAPIProp-Objekt](imsgstoreimapiprop.md)  <br/> |
+|Erstellt von:  <br/> |Store Anbieter  <br/> |
 |Zugriff durch:  <br/> |Outlook und andere Clients  <br/> |
-|Eigenschafts:  <br/> |PT_LONG  <br/> |
-|Zugriffstyp:  <br/> |Je nach Speicheranbieter schreibgeschützt oder Lese-/Schreibzugriff  <br/> |
+|Eigenschaftstyp:  <br/> |PT_LONG  <br/> |
+|Zugriffstyp:  <br/> |Schreibgeschützt oder Lese-/Schreibzugriff je nach Speicheranbieter  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Um eine der Store-Funktionen bereitzustellen, muss der Informationsspeicher Anbieter [IMAPIProp: IUnknown](imapipropiunknown.md) implementieren und ein gültiges Property-Tag für eine dieser Eigenschaften zurückgeben, die an einen [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) -Aufruf übergeben werden. Wenn das Property-Tag für eine dieser Eigenschaften an [IMAPIProp::](imapiprop-getprops.md)GetProps übergeben wird, muss der Informationsspeicher Anbieter auch den richtigen Eigenschaftswert zurückgeben. Speicheranbieter können [HrGetOneProp](hrgetoneprop.md) und [HrSetOneProp](hrsetoneprop.md) aufrufen, um diese Eigenschaften abzurufen oder festzulegen. 
+Um eine der Speicherfunktionen bereitzustellen, muss der Speicheranbieter [IMAPIProp : IUnknown](imapipropiunknown.md) implementieren und ein gültiges Eigenschaftstag für eine dieser Eigenschaften zurückgeben, die an einen [IMAPIProp::GetIDsFromNames-Aufruf](imapiprop-getidsfromnames.md) übergeben werden. Wenn das Eigenschaftstag für eine dieser Eigenschaften an [IMAPIProp::GetProps](imapiprop-getprops.md)übergeben wird, muss der Speicheranbieter auch den richtigen Eigenschaftswert zurückgeben. Store können [HrGetOneProp](hrgetoneprop.md) und [HrSetOneProp](hrsetoneprop.md) aufrufen, um diese Eigenschaften zu erhalten oder zu festlegen. 
   
-Um den Wert dieser Eigenschaft abzurufen, sollte der Client zuerst [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) verwenden, um das Property-Tag abzurufen, und dann dieses Property-Tag in [IMAPIProp::](imapiprop-getprops.md) GetProps angeben, um den Wert abzurufen. Geben Sie beim Aufrufen von [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md)die folgenden Werte für die [MAPINAMEID](mapinameid.md) -Struktur an, auf die durch den Eingabeparameter _lppPropNames_verwiesen wird:
+Zum Abrufen des Werts dieser Eigenschaft sollte der Client zunächst [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) verwenden, um das Eigenschaftstag abzurufen, und dann dieses Eigenschaftstag in [IMAPIProp::GetProps](imapiprop-getprops.md) angeben, um den Wert abzurufen. Geben Sie beim Aufrufen von [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)die folgenden Werte für die [MAPINAMEID-Struktur](mapinameid.md) an, auf die der Eingabeparameter _lppPropNames verweist:_
   
 |||
 |:-----|:-----|
 |lpGuid:  <br/> |PSETID_Common  <br/> |
 |ulKind:  <br/> |MNID_STRING  <br/> |
-|Art. lpwstrName:  <br/> |L "ArchiveSourceSupportMask"  <br/> |
+|Kind.lpwstrName:  <br/> |L"ArchiveSourceSupportMask"  <br/> |
    
-Mit dieser Eigenschaft können Speicheranbieter angeben, ob Outlook Ordner in einem Speicher überprüfen und automatisch archivieren soll.
+Mit dieser Eigenschaft können Speicheranbieter angeben, Outlook Ordner in einem Speicher überprüfen und automatisch archivieren sollen.
   
-Standardmäßig ist diese Eigenschaft nicht in einem Speicher verfügbar, was bedeutet, dass Outlook Ordner im Speicher überprüfen kann. Wenn die Eigenschaft verfügbar gemacht wird, sind die folgenden Werte möglich:
+Diese Eigenschaft wird standardmäßig nicht in einem Speicher verfügbar gemacht, was bedeutet, Outlook Ordner im Speicher überprüfen können. Wenn die Eigenschaft verfügbar gemacht wird, sind die folgenden Werte möglich:
   
 ```cpp
 enum { 
@@ -63,14 +63,14 @@ enum {
 
 ASM_DEFAULT
   
-- Outlook kann Ordner im Speicher überprüfen.
+- Outlook können Ordner im Speicher überprüfen.
     
 ASM_DO_NOT_ARCHIVE
   
-- Outlook sollte Ordner im Speicher nicht überprüfen.
+- Outlook sollten keine Ordner im Speicher überprüfen.
     
 ASM_CLIENT_DO_NOT_CHANGE
   
-- Clients dürfen diese Eigenschaft nicht im Speicher ändern. Beachten Sie, dass die Konstante **ASM_CLIENT_DO_NOT_CHANGE** als zukünftige Referenz dient und derzeit nicht implementiert ist. Im Moment kann ein Speicher verhindern, dass Clients dieses Flag ändern, indem der Wert hart codiert wird, den der Store für diese Eigenschaft zurückgibt. 
+- Lassen Sie nicht zu, dass Clients diese Eigenschaft im Store ändern. Beachten Sie, dass die **konstante ASM_CLIENT_DO_NOT_CHANGE** zur zukünftigen Referenz verwendet wird und derzeit nicht implementiert ist. Derzeit kann ein Speicher verhindern, dass Clients dieses Kennzeichen ändern, indem der Wert hartcodiert wird, den der Speicher für diese Eigenschaft zurückgibt. 
     
 

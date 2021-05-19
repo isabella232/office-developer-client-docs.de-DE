@@ -25,13 +25,13 @@ ms.locfileid: "33418050"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Öffnet eine [IMAPIFormMgr](imapiformmgriunknown.md) -Schnittstelle für ein Formularbibliothek-Anbieterobjekt im Kontext einer vorhandenen Sitzung. 
+Öffnet eine [IMAPIFormMgr-Schnittstelle](imapiformmgriunknown.md) für ein Formularbibliotheksanbieterobjekt im Kontext einer vorhandenen Sitzung. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiform. h  <br/> |
+|Headerdatei  <br/> |Mapiform.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
    
 ```cpp
 MAPIOpenFormMgr(
@@ -44,19 +44,19 @@ MAPIOpenFormMgr(
 
  _pSession_
   
-> in Zeiger auf die Sitzung, die von der Clientanwendung verwendet wird.
+> [in] Zeiger auf die Sitzung, die von der Clientanwendung verwendet wird.
     
  _ppmgr_
   
-> Out Zeiger auf die zurückgegebene **IMAPIFormMgr** -Schnittstelle. 
+> [out] Zeiger auf die zurückgegebene **IMAPIFormMgr-Schnittstelle.** 
     
 ## <a name="return-value"></a>Return value
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Nachdem eine Clientanwendung die **MAPIOpenFormMgr** -Funktion aufgerufen hat, erfolgen die meisten nachfolgenden formularbezogenen Interaktionen über den Formularbibliothek Anbieter oder eine vom Formular Bibliotheks Anbieter zurückgegebene Schnittstelle. Die **IMAPIFormMgr** -Schnittstelle ermöglicht es dem Client, mit Nachrichten Handlern zu arbeiten und Lösungen zwischen Nachrichtenklassen und Formularbibliotheken auszuführen. 
+Nachdem eine Clientanwendung einen Aufruf der **MAPIOpenFormMgr-Funktion** ausgeführt hat, finden die meisten nachfolgenden formularbezogenen Interaktionen über den Formularbibliotheksanbieter oder eine vom Formularbibliotheksanbieter zurückgegebene Schnittstelle statt. Die **IMAPIFormMgr-Schnittstelle** ermöglicht es dem Client, mit Nachrichtenhandlern zu arbeiten und Auflösungen zwischen Nachrichtenklassen und Formularbibliotheken durchzuführen. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -64,7 +64,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MainDlg. cpp öffnet den Formular-Manager, damit ein Formular ausgewählt werden kann.  <br/> |CMainDlg:: OnSelectForm  <br/> |MFCMAPI verwendet die **MAPIOpenFormMgr** -Methode, um den Formular-Manager zu öffnen, damit ein Formular ausgewählt werden kann.  <br/> |
+|MainDlg.cpp öffnet den Formular-Manager, damit ein Formular ausgewählt werden kann.  <br/> |CMainDlg::OnSelectForm  <br/> |MFCMAPI verwendet die **MAPIOpenFormMgr-Methode,** um den Formular-Manager zu öffnen, damit ein Formular ausgewählt werden kann.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

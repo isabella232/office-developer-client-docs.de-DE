@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm60117
 localization_priority: Normal
 ms.assetid: 371a475d-50f7-6b4c-4b47-581cd778dcba
-description: Gibt das Unicode-Zeichen aus einer Zahl zurück.
+description: Gibt das Unicode-Zeichen einer Zahl zurück.
 ms.openlocfilehash: 81e76b72da35f79dee9ad6afbde51bc2e228483c
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33417581"
 ---
 # <a name="unichar-function"></a>UNICHAR Function
 
-Gibt das Unicode-Zeichen aus einer Zahl zurück. 
+Gibt das Unicode-Zeichen einer Zahl zurück. 
   
 ## <a name="syntax"></a>Syntax
 
-UnCHAR (* * *Number* * *) 
+UNICHAR (** *number* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -30,14 +30,14 @@ UnCHAR (* * *Number* * *)
 |:-----|:-----|:-----|:-----|
 | _Anzahl_ <br/> |Erforderlich  <br/> |**Integer** <br/> |Eine ganze Zahl zwischen 1 und 65.535 (einschließlich); andernfalls gibt die Funktion einen Fehler zurück.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Die resultierende Zeichenfolge hat eine Länge von einem Unicode-Zeichen (zwei Zeichen). 
   
 ## <a name="example"></a>Beispiel
 
-UNCHAR (65) 
+UNICHAR(65) 
   
-Gibt einen (lateinischen Großbuchstaben A) zurück. 
+Gibt A zurück (lateinischer Großbuchstabe A) 
   
 

@@ -25,25 +25,25 @@ Bestimmt, ob im Zeichnungsfenster Markup angezeigt wird.
 |TRUE  <br/> |Markup wird in der Zeichnung angezeigt.  <br/> |
 |FALSE  <br/> |Markup wird nicht angezeigt (Standardwert).  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
- Wenn die Markupverfolgung aktiviert ist (die addMarkup-Zelle ist TRUE), wird die Zelle "ViewMarkup automatisch auf TRUE festgelegt und bleibt auch dann TRUE, wenn die Markupverfolgung deaktiviert ist (addMarkup cell is FALSE). Der Wert in der Zelle ViewMarkup wird ignoriert, wenn die Zelle AddMarkup WAHR ist. 
+ Wenn die Markupverfolgung aktiviert ist (Zelle AddMarkup ist TRUE), wird die Zelle ViewMarkup automatisch auf TRUE festgelegt und bleibt true, auch wenn die Markupverfolgung deaktiviert wurde (AddMarkup-Zelle ist FALSE). Der Wert in der Zelle ViewMarkup wird ignoriert, wenn die Zelle AddMarkup WAHR ist. 
   
 Die Zelle ViewMarkup wird ebenfalls auf WAHR festgelegt, wenn Kommentare in eine Zeichnung eingefügt werden (wobei es keine Rolle spielt, ob die Markupverfolgung aktiviert ist oder nicht) und muss auf WAHR festgelegt sein, damit die Kommentare in der Zeichnung sichtbar sind.
   
 Diese Zelle entspricht dem Befehl **Markup anzeigen** in der Gruppe **Markup** der Registerkarte **Überprüfen**. 
   
-Wenn Sie einen Verweis auf die Zelle "ViewMarkup aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle ViewMarkup anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |"ViewMarkup  <br/> |
+|Zellenname:  <br/> |ViewMarkup  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle "ViewMarkup aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Um einen Verweis auf die Zelle ViewMarkup nach Index aus einem Programm zu erhalten, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowDoc** <br/> |
 |Zellenindex:  <br/> |**visDocViewMarkup** <br/> |
    

@@ -1,5 +1,5 @@
 ---
-title: Arten von Client Anwendungen
+title: Typen von Clientanwendungen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,36 +15,36 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33417056"
 ---
-# <a name="types-of-client-applications"></a>Arten von Client Anwendungen
+# <a name="types-of-client-applications"></a>Typen von Clientanwendungen
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Es gibt in erster Linie zwei Arten von Messagingclients: solche, die zwischenmenschliche Nachrichten (IPM) und die Interprocess Communication (IPC)-Nachrichten verarbeiten. Innerhalb dieser Typen können Messaging-Clientanwendungen wie folgt kategorisiert werden:
+Es gibt in erster Linie zwei Arten von Messagingclients: diejenigen, die zwischenpersönliche Nachrichten (IPM) behandeln, und solche, die Interprocess Communication (IPC)-Nachrichten verarbeiten. Innerhalb dieser Typen können Messagingclientanwendungen wie folgt kategorisiert werden:
   
-- Person-zu-Person
+- Person-to-Person
     
-- Person-zu-Maschine
+- Person-zu-Computer
     
-- Computer-zu-Person
+- Maschine-zu-Person
     
-- Machine-to-Machine
+- Computer-zu-Maschine
     
-- Kombination aus Personen und Maschinen
+- Mischung aus Personen und Computern
     
-Bei der Person-zu-Person-Anwendung handelt es sich um eine Person, die den Austausch von Nachrichten initiiert und eine andere Person reagiert. Diese Anwendungskategorie umfasst herkömmliche e-Mail-Anwendungen sowie strukturiertere Exchange-Dokumente wie Dokumentweiterleitung oder Spesen Genehmigung.
+Bei den Persönlich-zu-Person-Anwendungen geht es um eine Person, die den Austausch von Nachrichten initiiert, und eine andere Person, die antwortet. Diese Kategorie von Anwendungen umfasst herkömmliche E-Mail-Anwendungen sowie strukturiertere Austauschprogramme wie Dokumentenrouting oder Spesengenehmigung.
   
-Bei der Person-zu-Machine-Anwendung handelt es sich um eine Person, die den Austausch von Nachrichten initiiert und eine Maschine reagiert. Diese Kategorie enthält Anwendungen, die e-Mails verwenden, um beispielsweise eine Datenbankabfrage zu übermitteln oder eine Mailingliste zu abonnieren.
+Bei den Von-Computer-Zu-Computer-Anwendungen geht es um eine Person, die den Austausch von Nachrichten initiiert, und ein Computer, der reagiert. Diese Kategorie umfasst Anwendungen, die E-Mails verwenden, um z. B. eine Datenbankabfrage zu senden oder eine Mailingliste zu abonnieren.
   
-Computer-zu-Person-Anwendungen umfassen einen Computer, der den Austausch von Nachrichten initiiert und eine Person reagiert. Diese Kategorie enthält Anwendungen, die Dokumente wie Nachrichten Feeds und Meinungsumfragen verteilen.
+Computer-zu-Person-Anwendungen umfassen einen Computer, der den Austausch von Nachrichten initiiert, und eine Person, die reagiert. Diese Kategorie umfasst Anwendungen, die Dokumente wie Newsfeeds und Meinungsumfragen verteilen.
   
-Machine-to-Machine-Anwendungen umfassen einen Computer, der den Austausch von Nachrichten initiiert, und eine Maschine reagiert. Diese Kategorie umfasst Anwendungen wie die Überwachung von Link Takten und die Verzeichnis-und Datenbankreplikation.
+Computer-zu-Computer-Anwendungen umfassen einen Computer, der den Austausch von Nachrichten initiiert, und ein Computer reagiert. Diese Kategorie umfasst Anwendungen wie die Überwachung des Takts von Links sowie die Verzeichnis- und Datenbankreplikation.
   
-Die letzte Kategorie, eine Kombination aus Personen und Maschinen, beinhaltet ein komplexeres Szenario. Diese Kategorie enthält Anwendungen, die nicht notwendigerweise Nachrichten zwischen Absendern und Empfängern übertragen. Stattdessen können Sie diese direkt in einem öffentlichen Ordner oder in einem von einem Nachrichtenspeicher unterstützten Website-Forum veröffentlichen. Die Nachrichten können dann bei Bedarf von anderen Lesern, einem Administrator oder einem Software-Agent verwendet werden.
+Die letzte Kategorie, eine Mischung aus Personen und Computern, umfasst ein komplexeres Szenario. Diese Kategorie umfasst Anwendungen, die nicht unbedingt Nachrichten zwischen Absendern und Empfängern übertragen. Stattdessen können sie sie direkt in einem öffentlichen Ordner oder in einem Websiteforum posten, das von einem Nachrichtenspeicher unterstützt wird. Die Nachrichten können dann bei Bedarf von anderen Lesern, einem Administrator oder einem Software-Agent genutzt werden.
   
-Wenn Sie eine Person-zu-Person-Anwendung, eine Computer-zu-Person-Anwendung oder eine Anwendung schreiben, die Nachrichten in öffentliche Foren übermittelt, entwerfen Sie Ihre Anwendung, um IPM-Nachrichten zu senden und zu empfangen. Wenn Sie eine Person-zu-Maschine-oder Maschine-zu-Maschine-Anwendung schreiben, kann Sie zum Senden und empfangen von IPC-Nachrichten entwickelt werden. Jede Anwendung, die die Interaktion eines menschlichen Benutzers erfordert, muss IPM-Nachrichten unterstützen. Anwendungen, die sowohl Personen als auch Computer in einer Vielzahl von Szenarien einbeziehen, müssen häufig sowohl IPM-als auch IPC-Nachrichten unterstützen. Der einzige wirkliche Unterschied zwischen den beiden Klassen besteht darin, dass IPM-Nachrichten in einem Nachrichtenspeicher für Benutzer von Messagingclients sichtbar sind, während IPC-Nachrichten für die Client Anwendungsbenutzer normalerweise nicht sichtbar sind. 
+Wenn Sie eine persönliche Anwendung, eine Computer-zu-Person-Anwendung oder eine Anwendung schreiben, die Nachrichten in öffentlichen Foren postet, entwerfen Sie Ihre Anwendung so, dass SIE IPM-Nachrichten sendet und erhält. Wenn Sie eine Von-Computer- oder Computer-zu-Maschine-Anwendung schreiben, kann sie für das Senden und Empfangen von IPC-Nachrichten konzipiert werden. Jede Anwendung, die die Interaktion eines menschlichen Benutzers erfordert, muss IPM-Nachrichten unterstützen. Anwendungen, die Sowohl Personen als auch Computer in einer Vielzahl von Szenarien betreffen, müssen häufig SOWOHL IPM- als auch IPC-Nachrichten unterstützen. Der einzige tatsächliche Unterschied zwischen den beiden Klassen besteht in der Sichtbar nung von IPM-Nachrichten in einem Nachrichtenspeicher für Benutzer von Messagingclients, während IPC-Nachrichten in der Regel für die Clientanwendungsbenutzer nicht sichtbar sind. 
   
-Anstatt Ihre Nachrichten auf die von der MAPI und IPC bereitgestellten Funktionen einzuschränken, können Sie diese Klassen anpassen und erweitern, indem Sie neue IPM-oder IPC-Unterklassen erstellen. Das Erstellen von Nachrichten Unterklassen umfasst das erfinden neuer Nachrichtenklassen, die von den SuperClasses erben. Wenn sich Ihre Person-zu-Person-Anwendung beispielsweise auf die Verwaltung von Kundenbeziehungen spezialisiert hat, können Sie die IPM-Oberklasse durch Definieren einer IPM-Klasse Unterklassen. Contact. Customer-Klasse und Erstellen von Eigenschaften, die einen Kunden beschreiben. Zusätzlich zur Unterstützung dieser benutzerdefinierten Eigenschaften kann Ihre IPM. Contact. Customer-Nachrichten erben die von allen IPM-Nachrichten unterstützten Eigenschaften.
+Anstatt Ihre Nachrichten auf die Funktionen der MAPI-Superklassen IPM und IPC zu beschränken, können Sie diese Klassen anpassen und verbessern, indem Sie neue IPM- oder IPC-Unterklassen erstellen. Das Erstellen von Nachrichtenunterklassen umfasst das Erfinden neuer Nachrichtenklassen, die von den Übergeordneten Klassen erben. Wenn sich Ihre Persönliche-zu-Person-Anwendung beispielsweise auf die Verwaltung von Kundenbeziehungen spezialisiert hat, können Sie die IPM-Superklasse unterklassen, indem Sie ein IPM definieren. Contact.Customer-Klasse, und erstellen Sie Eigenschaften, die einen Kunden beschreiben. Zusätzlich zur Unterstützung dieser benutzerdefinierten Eigenschaften unterstützt Ihr IPM. Contact.Customer-Nachrichten erben die Eigenschaften, die von allen IPM-Nachrichten unterstützt werden.
   
 

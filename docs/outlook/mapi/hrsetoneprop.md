@@ -25,13 +25,13 @@ ms.locfileid: "33417658"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Legt den Wert einer einzelnen Eigenschaft für eine Eigenschaften Schnittstelle fest oder ändert Sie, also eine von [IMAPIProp](imapipropiunknown.md)abgeleitete Schnittstelle. 
+Legt fest oder ändert den Wert einer einzelnen Eigenschaft auf einer Eigenschaftenschnittstelle, d. h. einer Schnittstelle, die von [IMAPIProp abgeleitet ist.](imapipropiunknown.md) 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 HrSetOneProp(
@@ -42,22 +42,22 @@ HrSetOneProp(
 
 ## <a name="parameters"></a>Parameter
 
- _PMP_
+ _pmp_
   
-> in Zeiger auf eine [IMAPIProp](imapipropiunknown.md) -Schnittstelle, auf der der Eigenschaftswert festgelegt oder geändert werden soll. 
+> [in] Zeiger auf eine [IMAPIProp-Schnittstelle,](imapipropiunknown.md) auf der der Eigenschaftswert festgelegt oder geändert werden soll. 
     
  _pprop_
   
-> in Zeiger auf die [SPropValue](spropvalue.md) -Struktur, die den Wert definiert, der für die _PMP_ -Eigenschaft festgelegt werden soll. 
+> [in] Zeiger auf die [SPropValue-Struktur,](spropvalue.md) die den wert definiert, der für die  _pmp-Eigenschaft festgelegt werden_ soll. 
     
 ## <a name="return-value"></a>Return value
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Im Gegensatz zur [IMAPIProp::](imapiprop-setprops.md) SetProps-Methode gibt die **HrSetOneProp** -Funktion nie Warnungen zurück. Da nur eine Eigenschaft festgelegt wird, wird Sie entweder erfolgreich ausgeführt oder schlägt fehl. Zum Festlegen oder ändern mehrerer Eigenschaften ist **** SetProps schneller. 
+Im Gegensatz zur [IMAPIProp::SetProps-Methode](imapiprop-setprops.md) gibt die **HrSetOneProp-Funktion** keine Warnungen zurück. Da nur eine Eigenschaft definiert wird, ist sie einfach erfolgreich oder schlägt fehl. Zum Festlegen oder Ändern mehrerer Eigenschaften ist **SetProps** schneller. 
   
-Sie können eine einzelne Eigenschaft mit der [HrGetOneProp](hrgetoneprop.md) -Funktion abrufen. 
+Sie können eine einzelne Eigenschaft mit der [HrGetOneProp-Funktion](hrgetoneprop.md) abrufen. 
   
 

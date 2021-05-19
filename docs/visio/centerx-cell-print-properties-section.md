@@ -25,21 +25,21 @@ Bestimmt, ob das Zeichenblatt horizontal zentriert auf der Druckseite ausgericht
 | TRUE  <br/> | Zeichenblatt wird horizontal zentriert auf der Druckseite ausgerichtet.  <br/> |
 | FALSE  <br/> | Zeichenblatt wird nicht horizontal zentriert auf der Druckseite ausgerichtet (Standardeinstellung).  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 In der Standardeinstellung werden Zeichenblätter am oberen und linken Rand der Druckseite ausgerichtet. Durch das Festlegen der Zellen CenterX und CenterY auf WAHR wird das Zeichenblatt auf der Druckseite zentriert (bzw. auf den Druckseiten, wenn eine Unterteilung erforderlich ist). 
   
-Wenn Sie einen Verweis auf die Zelle CenterX aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle CenterX anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | CenterX  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle CenterX aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die CenterX-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowPrintProperties** <br/> |
 | Zeilenindex:  <br/> |**visPrintPropertiesCenterX** <br/> |
    

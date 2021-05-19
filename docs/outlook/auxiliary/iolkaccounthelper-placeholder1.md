@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: c472ce02-4ef4-40a9-51de-12b37f092342
-description: Dieser Member ist ein Platzhalter und wird nicht unterstützt. Es muss immer E_NOTIMPL zurückgeben.
+description: Dieses Element ist ein Platzhalter und wird nicht unterstützt. Es muss immer eine E_NOTIMPL.
 ms.openlocfilehash: 0c263039ed562763cef2ab5e5e3f3a3e5ca90ab2
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.locfileid: "33418890"
 ---
 # <a name="iolkaccounthelperplaceholder1"></a>IOlkAccountHelper::Placeholder1
 
-Dieser Member ist ein Platzhalter und wird nicht unterstützt. Es muss immer E_NOTIMPL zurückgeben.
+Dieses Element ist ein Platzhalter und wird nicht unterstützt. Es muss immer eine E_NOTIMPL.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -28,11 +28,11 @@ HRESULT IOlkAccountHelper::Placeholder1 (
 
 ## <a name="return-values"></a>Rückgabewerte
 
-Immer E_NOTIMPL, da dieser Member ein Platzhalter in [IOlkAccountHelper](iolkaccounthelper.md) ist und nicht unterstützt wird. 
+Immer E_NOTIMPL, da dieses Element ein Platzhalter in [IOlkAccountHelper](iolkaccounthelper.md) ist und nicht unterstützt wird. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Dieses Element muss immer E_NOTIMPL zurückgeben.
+Dieses Mitglied muss immer E_NOTIMPL.
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -25,7 +25,7 @@ ms.locfileid: "33416300"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Öffnet ein Folder-oder Message-Objekt und gibt einen Zeiger auf das Objekt zurück, um weiteren Zugriff zu ermöglichen. 
+Öffnet einen Ordner oder ein Nachrichtenobjekt und gibt einen Zeiger auf das Objekt zurück, um weiteren Zugriff zu ermöglichen. 
   
 ```cpp
 HRESULT OpenEntry(
@@ -42,39 +42,39 @@ HRESULT OpenEntry(
 
  _cbEntryID_
   
-> in Die Größe der Eintrags-ID, auf die durch den _lpEntryID_ -Parameter verwiesen wird, in Bytes. 
+> [in] Die Größe des Eintragsbezeichners in Bytes, auf den der  _lpEntryID-Parameter_ verweist. 
     
  _lpEntryID_
   
-> in Ein Zeiger auf die Adresse der Eintrags-ID des zu öffnenden Folder-oder Message-Objekts. 
+> [in] Ein Zeiger auf die Adresse des Eintragsbezeichners des zu öffnende Ordner- oder Nachrichtenobjekts. 
     
  _lpInterface_
   
-> in Ein Zeiger auf die Schnittstellen-ID (IID) für das Objekt. Übergeben von NULL gibt an, dass das Objekt für ein solches Objekt in die Standardschnittstelle umgewandelt wird. Der _lpInterface_ -Parameter kann auch auf einen Bezeichner für eine entsprechende Schnittstelle für das Objekt festgelegt werden. 
+> [in] Ein Zeiger auf die Schnittstellen-ID (Interface Identifier, IID) für das Objekt. Das Übergeben von NULL gibt an, dass das Objekt in die Standardschnittstelle für ein solches Objekt übertragen wird. Der  _lpInterface-Parameter_ kann auch auf einen Bezeichner für eine geeignete Schnittstelle für das Objekt festgelegt werden. 
     
  _ulOpenFlags_
   
-> in Eine Bitmaske von Flags, die steuert, wie das Objekt geöffnet wird. Die folgenden Flags können festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie das Objekt geöffnet wird. Die folgenden Kennzeichen können festgelegt werden:
     
 MAPI_BEST_ACCESS 
   
-> Das Objekt sollte mit den maximal zulässigen Berechtigungen für den Benutzer und den maximalen Client Anwendungsberechtigungen geöffnet werden. Wenn der Client beispielsweise über Lese-/Schreibzugriff verfügt, wird das Objekt mit Lese-/Schreibzugriff geöffnet; Wenn der Client schreibgeschützte Berechtigung hat, wird das Objekt mit Leseberechtigung geöffnet. Der Client kann die Berechtigungsstufe abrufen, indem er die **PR_ACCESS_LEVEL** ([pidtagaccesslevel (](pidtagaccesslevel-canonical-property.md))-Eigenschaft abrufen.
+> Das Objekt sollte mit den maximal zulässigen Berechtigungen für den Benutzer und den maximalen Clientanwendungsberechtigungen geöffnet werden. Wenn der Client beispielsweise über Lese-/Schreibberechtigungen verfügt, wird das Objekt mit Lese-/Schreibberechtigung geöffnet. Wenn der Client über schreibgeschützte Berechtigungen verfügt, wird das Objekt mit schreibgeschützter Berechtigung geöffnet. Der Client kann die Berechtigungsstufe abrufen, indem er die **PR_ACCESS_LEVEL** ([PidTagAccessLevel](pidtagaccesslevel-canonical-property.md)) -Eigenschaft abruft.
     
 MAPI_DEFERRED_ERRORS 
   
-> Der Aufruf kann auch dann erfolgreich ausgeführt werden, wenn das zugrunde liegende Objekt für die aufrufende Anwendung nicht zur Verfügung steht. Wenn das Objekt nicht verfügbar ist, kann bei einem nachfolgenden Aufruf des Objekts ein Fehler zurückgegeben werden.
+> Der Aufruf kann auch dann erfolgreich sein, wenn das zugrunde liegende Objekt für die aufrufende Anwendung nicht verfügbar ist. Wenn das Objekt nicht verfügbar ist, gibt ein nachfolgender Aufruf des Objekts möglicherweise einen Fehler zurück.
     
 MAPI_MODIFY 
   
-> Fordert Lese-/Schreibzugriff-Berechtigung an. Standardmäßig werden Objekte mit Leseberechtigung erstellt, und Clients sollten nicht unter der Annahme arbeiten, dass Lese-/Schreibzugriff erteilt wurde. 
+> Fordert Lese-/Schreibberechtigungen an. Standardmäßig werden Objekte mit schreibgeschützter Berechtigung erstellt, und Clients sollten nicht unter der Annahme funktionieren, dass Lese-/Schreibberechtigungen erteilt wurden. 
     
  _lpulObjType_
   
-> Out Ein Zeiger auf den Typ des geöffneten Objekts.
+> [out] Ein Zeiger auf den Typ des geöffneten Objekts.
     
  _lppUnk_
   
-> Out Ein Zeiger auf den Zeiger auf das geöffnete Objekt.
+> [out] Ein Zeiger auf den Zeiger auf das geöffnete Objekt.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -82,13 +82,13 @@ S_OK
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-MAPI Ruft die **IMSLogon:: OpenEntry** -Methode auf, um einen Ordner oder eine Nachricht in einem Nachrichtenspeicher zu öffnen. MAPI übergibt die Eintrags-ID des zu öffnenden Objekts. Der Nachrichtenspeicher Anbieter sollte einen Zeiger zurückgeben, der einen weiteren Zugriff auf das im _lppUnk_ -Parameter angegebene Objekt ermöglicht. 
+MAPI ruft die **IMSLogon::OpenEntry-Methode** auf, um einen Ordner oder eine Nachricht in einem Nachrichtenspeicher zu öffnen. MAPI übergibt die Eintrags-ID des zu öffnende Objekts. Der Nachrichtenspeicheranbieter sollte einen Zeiger zurückgeben, der weiteren Zugriff auf das im  _lppUnk-Parameter_ angegebene Objekt ermöglicht. 
   
-Bevor MAPI **IMSLogon:: OpenEntry**aufruft, bestimmt es zunächst, ob der angegebene Nachricht-oder Ordnereintrags Bezeichner einem von diesem Nachrichtenspeicher Anbieter registrierten entspricht. Weitere Informationen dazu, wie Speicheranbieter Eintrags-IDs registrieren, finden Sie unter [IMAPISupport:: SetProviderUID](imapisupport-setprovideruid.md).
+Bevor MAPI **IMSLogon::OpenEntry** aufruft, wird zunächst ermittelt, ob der angegebene Nachrichten- oder Ordnereintragsbezeichner mit einer von diesem Nachrichtenspeicheranbieter registrierten id entspricht. Weitere Informationen zum Registrieren von Eintragsbezeichnern durch Speicheranbieter finden Sie unter [IMAPISupport::SetProviderUID](imapisupport-setprovideruid.md).
   
- **IMSLogon:: OpenEntry** ist identisch mit der [IMsgStore:: OpenEntry](imsgstore-openentry.md) -Methode des Nachrichtenspeicher Objekts, es sei denn, der Client ruft **IMSLogon:: OpenEntry**; MAPI ruft **IMSLogon:: OpenEntry** auf, wenn es eine **IMAPISession:: OpenEntry** -Methode verarbeitet. Objekte, die mit **IMSLogon:: OpenEntry** geöffnet werden, sollten genau wie Objekte behandelt werden, die mit dem Nachrichtenspeicherobjekt geöffnet wurden; insbesondere werden Objekte, die mit diesem Aufruf geöffnet werden, beim Freigeben des Nachrichtenspeicher Objekts für ungültig erklärt. 
+ **IMSLogon::OpenEntry** ist identisch mit der [IMsgStore::OpenEntry-Methode](imsgstore-openentry.md) des Nachrichtenspeicherobjekts, mit der Ausnahme, dass der Client **IMSLogon::OpenEntry nicht aufruft.** MAPI ruft **IMSLogon::OpenEntry auf,** wenn eine **IMAPISession::OpenEntry-Methode verarbeitet** wird. Objekte, die mithilfe von **IMSLogon::OpenEntry** geöffnet werden, sollten genauso behandelt werden wie Objekte, die mithilfe des Nachrichtenspeicherobjekts geöffnet werden. Insbesondere Objekte, die mit diesem Aufruf geöffnet werden, sollten ungültig sein, wenn das Message Store-Objekt freigegeben wird. 
   
 ## <a name="see-also"></a>Siehe auch
 

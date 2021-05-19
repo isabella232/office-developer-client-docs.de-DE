@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251313
 localization_priority: Normal
 ms.assetid: b88588a2-c651-7eab-9c7a-ed78f20d1ba3
-description: Eine Ereignis Zelle, die ausgewertet wird, wenn sich die Position oder Ausrichtung der Form auf der Seite wandelt (XF).
+description: Eine Ereigniszelle, die ausgewertet wird, wenn die Position oder Ausrichtung eines Shapes auf der Seite transformiert wird (XF).
 ms.openlocfilehash: c4ed4ddd9b255a9a52fc81349b514dbd25772c98
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -20,21 +20,21 @@ ms.locfileid: "33418533"
 
 Eine Ereigniszelle, die ausgewertet wird, wenn die Position oder Ausrichtung eines Shapes auf dem Blatt transformiert wird ("XF").
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Ereigniszellen werden erst beim Eintreffen des Ereignisses ausgewertet, nicht beim Eingeben der Formel.
   
-Wenn Sie einen Verweis auf die Zelle "EventXFMod aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die EventXFMod-Zelle anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | "EventXFMod  <br/> |
+| Zellenname:  <br/> | EventXFMod  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle "EventXFMod aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die EventXFMod-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowEvent** <br/> |
 | Zeilenindex:  <br/> |**visEvtCellXFMod** <br/> |
    

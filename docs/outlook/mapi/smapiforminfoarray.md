@@ -25,12 +25,12 @@ ms.locfileid: "33416972"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von Zeigern für Formular Informationsobjekte. 
+Enthält ein Array von Zeigern zu Formularinformationsobjekten. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiform. h  <br/> |
-|Zugehöriges Makro:  <br/> |[CbMAPIFormInfoArray](cbmapiforminfoarray.md) <br/> |
+|Headerdatei  <br/> |Mapiform.h  <br/> |
+|Verwandtes Makro:  <br/> |[CbMAPIFormInfoArray](cbmapiforminfoarray.md) <br/> |
    
 ```cpp
 typedef struct
@@ -41,19 +41,19 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cForms**
   
-> Die Anzahl der Zeiger im Array, auf die durch das **aFormInfo** -Element verwiesen wird. 
+> Anzahl der Zeiger im Array, auf die das **Element aFormInfo verweist.** 
     
  **aFormInfo**
   
-> Zeiger auf ein Array von Zeigern auf Formular Informationsobjekte.
+> Zeiger auf ein Array von Zeigern, um Informationsobjekte zu bilden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **SMAPIFormInfoArray** -Struktur wird als Parameter in den folgenden Methoden übergeben: 
+Die **SMAPIFormInfoArray-Struktur** wird in den folgenden Methoden als Parameter übergeben: 
   
 - [IMAPIFormMgr::ResolveMultipleMessageClasses](imapiformmgr-resolvemultiplemessageclasses.md)
     

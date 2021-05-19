@@ -21,25 +21,25 @@ ms.locfileid: "33417553"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPI-kompatible Clientanwendungen und Dienstanbieter können ANSI-Zeichen (Single Byte) oder Unicode-Zeichen (Double Byte) verwenden. OEM-Zeichensätze werden nicht unterstützt. Eine OEM-Zeichenfolge, die an eine MAPI-Methode oder-Funktion übergeben wird, führt zu einer fehlerhaften Methode oder Funktion. Client Anwendungen, die mit Dateinamen im OEM-Zeichensatz arbeiten, müssen darauf achten, Sie in ANSI zu konvertieren, bevor Sie an eine MAPI-Methode oder-Funktion übergeben werden.
+MAPI-konforme Clientanwendungen und Dienstanbieter können ANSI-Zeichen (einzelnes Byte) oder Unicode-Zeichen (Doppel-Byte) verwenden. OEM-Zeichensätze werden nicht unterstützt. Eine an eine MAPI-Methode oder -Funktion übergebene OEM-Zeichenfolge verursacht einen Fehler bei dieser Methode oder Funktion. Clientanwendungen, die mit Dateinamen im OEM-Zeichensatz arbeiten, müssen darauf achten, sie in ANSI zu konvertieren, bevor sie an eine MAPI-Methode oder -Funktion übergeben werden.
   
-Die Unterstützung des Unicode-Zeichensatzes ist optional, sowohl für Clients als auch für Dienstanbieter. Alle Dienstanbieter sollten Ihren Code schreiben, damit er kompiliert werden kann, unabhängig davon, ob er Unicode unterstützt. Clients können abhängig von der jeweiligen Supportstufe bedingt kompiliert werden, jedoch nicht von Dienstanbietern. Sie sollten nicht neu kompiliert werden, wenn sich der Zeichensatz ändert. Nichts in Dienstanbieter Code sollte abhängig sein. 
+Die Unterstützung des Unicode-Zeichensatz ist optional, sowohl für Clients als auch für Dienstanbieter. Alle Dienstanbieter sollten ihren Code schreiben, damit sie kompilieren können, unabhängig davon, ob sie Unicode unterstützen oder nicht. Clients kompilieren abhängig von ihrer Supportstufe bedingt, Dienstanbieter jedoch nicht. Sie sollten nicht neu kompiliert werden müssen, wenn sich der Zeichensatz ändert. Nichts im Dienstanbietercode sollte bedingt sein. 
   
-Wenn Clients oder Dienstanbieter, die Unicode unterstützen, einen Methodenaufruf durchführen, der Zeichenfolgen als Eingabe-oder Ausgabeparameter enthält, legen Sie das MAPI_UNICODE-Flag fest. Das Festlegen dieses Flags gibt an, dass alle eingehenden Zeichenfolgen Unicode-Zeichenfolgen sind. Bei der Ausgabe fordert das Festlegen dieses Flags, dass alle Zeichenfolgen, die von der Implementierung zurückgegeben werden, nach Möglichkeit Unicode-Zeichenfolgen sein sollten. Methoden Implementierer, die Unicode unterstützen, erfüllen die Anforderung; Methoden Implementierer, die keine Unicode-Unterstützung bereitstellen, werden nicht erfüllt. Zeichenfolgeneigenschaften, die nicht im Unicode-Format vorliegen, sind vom Typ PT_STRING8.
+Wenn Clients oder Dienstanbieter, die Unicode unterstützen, einen Methodenaufruf mit Zeichenzeichenfolgen als Eingabe- oder Ausgabeparameter erstellen, legen sie das MAPI_UNICODE fest. Wenn Sie dieses Flag festlegen, wird für die Implementierung angegeben, dass alle eingehenden Zeichenfolgen Unicode-Zeichenfolgen sind. Bei der Ausgabe fordert das Festlegen dieses Kennzeichens, dass alle von der Implementierung übergebenen Zeichenfolgen möglichst Unicode-Zeichenfolgen sein sollen. Methoden implementierer, die Unicode unterstützen, entsprechen der Anforderung. methoden implementers that do not provide Unicode support will not comply. Zeichenfolgeneigenschaften, die nicht im Unicode-Format vorliegen, sind vom Typ PT_STRING8.
   
-MAPI definiert die **fMapiUnicode** -Konstante in der Headerdatei MAPIDEFS. H zur Darstellung des Standardzeichensatz. Wenn ein Client oder Dienstanbieter Unicode unterstützt, wird **fMapiUnicode** auf MAPI_UNICODE festgelegt. Clients und Dienstanbieter, die den Unicode-Satz **fMapiUnicode** nicht unterstützen. 
+MAPI definiert die **fMapiUnicode-Konstante** in der Headerdatei MAPIDEFS. H, um den Standardzeichensatz zu repräsentieren. Wenn ein Client oder Dienstanbieter Unicode unterstützt, **wird fMapiUnicode** auf MAPI_UNICODE. Clients und Dienstanbieter, die Unicode nicht unterstützen, **legen fMapiUnicode auf** Null fest. 
   
 Dienstanbieter, die Unicode nicht unterstützen, sollten:
   
-- Weigern Sie sich, Konvertierungen zwischen Zeichensätzen auszuführen.
+- Konvertierungen zwischen Zeichensätzen verweigern.
     
-- Führen Sie das MAPI_UNICODE-Flag nie in Methoden aufrufen weiter.
+- Übergeben Sie das MAPI_UNICODE in Methodenaufrufen nie.
     
-- Gibt MAPI_E_BAD_CHARWIDTH zurück, wenn das MAPI_UNICODE-Flag übergeben wird.
+- Gibt MAPI_E_BAD_CHARWIDTH zurück, wenn das MAPI_UNICODE übergeben wird.
     
-- Deklarieren Sie die ANSI-Zeichenfolgeneigenschaften explizit. 
+- Deklarieren Sie die Eigenschaften der ANSI-Zeichenfolge explizit. 
     
-Dienstanbieter können auch MAPI_E_BAD_CHARWIDTH zurückgeben, wenn Sie nur Unicode unterstützen und Clients das MAPI_UNICODE-Flag nicht bestehen. 
+Dienstanbieter können auch MAPI_E_BAD_CHARWIDTH zurückgeben, wenn sie nur Unicode unterstützen und Clients das MAPI_UNICODE übergeben. 
   
  Die aktuelle Version von MAPI unterstützt Unicode in den folgenden Methoden: 
   
@@ -51,8 +51,8 @@ Dienstanbieter können auch MAPI_E_BAD_CHARWIDTH zurückgeben, wenn Sie nur Unic
   
 [IAddrBook::ResolveName](iaddrbook-resolvename.md)
   
-[IMAPIProp:: getlasterroraufzurufen](imapiprop-getlasterror.md) (Nur**IAddrBook** -Implementierung) 
+[IMAPIProp::GetLastError](imapiprop-getlasterror.md) (**nur IAddrBook-Implementierung)** 
   
-Für diese Methoden können Aufrufer davon ausgehen, dass zurückgegebene Zeichenfolgen Unicode-Zeichenfolgen sein. Zeichenfolgen, die von MAPI-Implementierungen anderer Methoden zurückgegeben werden, sind ANSI-Zeichenfolgen.
+Für diese Methoden können Aufrufer erwarten, dass alle zurückgegebenen Zeichenfolgen Unicode-Zeichenfolgen sind. Zeichenzeichenfolgen, die von MAPI-Implementierungen einer anderen Methode zurückgegeben werden, sind ANSI-Zeichenzeichenfolgen.
   
 

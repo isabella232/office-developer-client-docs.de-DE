@@ -20,10 +20,10 @@ ms.locfileid: "33416839"
 
 Zeigt die Formatierungsattribute für den Text des Shapes an. Dazu zählen Schriftart, Farbe, Textformat, Groß- und Kleinschreibung, die Position relativ zur Grundlinie und der Schriftgrad.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Jedes Zeichenformat in einem Shape hat eine entsprechende Zeile im Abschnitt **Character** , wie im ShapeSheet-Fenster angezeigt. Der Name der Zeile stellt die Anzahl von Zeichen dar, auf die die Zeichenformatvorlage angewendet wird. 
+Jede Zeichenart in einem Shape verfügt über eine entsprechende Zeile im **Abschnitt Character,** wie im ShapeSheet-Fenster angezeigt. Der Name der Zeile stellt die Anzahl von Zeichen dar, auf die die Zeichenformatvorlage angewendet wird. 
   
-Sie können Textformate im Dialogfeld **Text** festlegen (Klicken Sie auf der Registerkarte **Start** in der Gruppe **Schriftart** auf das Startprogramm für das Dialogfeld), indem Sie eine Formatvorlage anwenden oder einen Eintrag in einer Zelle des **Zeichen** Abschnitts vornehmen. 
+Sie können Textformate im Dialogfeld **Text** festlegen (klicken Sie auf das Startfeld des Dialogfelds in der Gruppe **Schriftart** auf der Registerkarte **Start),** indem Sie eine Textformatvorlage anwenden oder einen Eintrag in einer Zelle des Abschnitts **Character** erstellen. 
   
 

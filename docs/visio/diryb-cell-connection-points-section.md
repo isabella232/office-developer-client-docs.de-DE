@@ -18,22 +18,22 @@ ms.locfileid: "33417091"
 ---
 # <a name="diry--b-cell-connection-points-section"></a>Zelle "DirY / B" (Abschnitt "Connection Points")
 
-Bestimmt die *y* -Komponente für den erforderlichen Ausrichtungsvektor eines übereinstimmenden Verbindungspunkts. Sie wird auch zur Ausrichtung des angefügten Abschnitts eines dynamischen Verbinders verwendet. Diese Zelle benötigt einen Fließkommawert. 
+Bestimmt die  *y-Komponente*  für den erforderlichen Ausrichtungsvektor eines übereinstimmenden Verbindungspunkts. Sie wird auch zur Ausrichtung des angefügten Abschnitts eines dynamischen Verbinders verwendet. Diese Zelle benötigt einen Fließkommawert. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle DirY/B aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle DirY/B anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Connections. DirY [ *i* ] wobei *i* = <1>, 2, 3...  <br/> |
+|Zellenname:  <br/> |Connections.DirY[ *i*  ] where  *i*  = <1>, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle DirY/B aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle DirY/B nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
 |Abschnittsindex:  <br/> |**visSectionConnectionPts** <br/> |
-|Zeilenindex:  <br/> |**visRowConnectionPts** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+|Zeilenindex:  <br/> |**visRowConnectionPts**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
 |Zellenindex:  <br/> |**visCnnctDirY** (nicht erweiterte Zeilen)           **visCnnctB** (erweiterte Zeilen)  <br/> |
    
 Informationen zu erweiterten und nicht erweiterten Zeilen finden Sie in der Zeile Connections Points.

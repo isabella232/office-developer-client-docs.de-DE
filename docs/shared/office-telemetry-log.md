@@ -5,7 +5,7 @@ ms.date: 09/18/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 179ba0c4-da24-430e-a212-0af40a604198
-description: Hier finden Sie Informationen zum teleMetrie-Protokoll, das in Office 2013 enthalten ist.
+description: Hier finden Sie Informationen zum Telemetrieprotokoll, das in Office 2013 enthalten ist.
 ms.openlocfilehash: bc408d0c42369b2132906d1df43ab64772a49489
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -15,7 +15,7 @@ ms.locfileid: "33417455"
 ---
 # <a name="office-telemetry-log"></a>Office-Telemetrieprotokoll
 
-Hier finden Sie Informationen zum teleMetrie-Protokoll, das in Office 2013 enthalten ist.
+Hier finden Sie Informationen zum Telemetrieprotokoll, das in Office 2013 enthalten ist.
   
 Unter diesen Links finden Sie weitere Informationen zur Verwendung der Telemetrieprotokoll für Office 2013 und zur Interpretation der angezeigten Ergebnisse.
   

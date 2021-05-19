@@ -1,5 +1,5 @@
 ---
-title: Day-Funktion (Access Custom Web App)
+title: Day-Funktion (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33417469"
 ---
-# <a name="day-function-access-custom-web-app"></a>Day-Funktion (Access Custom Web App)
+# <a name="day-function-access-custom-web-app"></a>Day-Funktion (benutzerdefinierte Access-Web-App)
 
 Gibt eine ganze Zahl zurück, die den Tag (Tag des Monats) des angegebenen Datums im gregorianischen Kalender darstellt.
   
@@ -22,9 +22,9 @@ Gibt eine ganze Zahl zurück, die den Tag (Tag des Monats) des angegebenen Datum
   
 ## <a name="syntax"></a>Syntax
 
-**Tag** (*Datum*) 
+**Day** (*Date*) 
   
-Die **Day** -Funktion enthält das folgende Argument. 
+Die **Day-Funktion** enthält das folgende Argument. 
   
 |**Argumentname**|**Beschreibung**|
 |:-----|:-----|
@@ -32,6 +32,6 @@ Die **Day** -Funktion enthält das folgende Argument.
    
 ## <a name="remarks"></a>Bemerkungen
 
-**Tag** gibt den gleichen Wert wie **datepart** (Tag, Datum) zurück. 
+**Day** gibt denselben Wert wie **Datepart** (Tag, Datum) zurück. 
   
 

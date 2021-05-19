@@ -39,19 +39,19 @@ ULONG ulFlags
 
  _cValues_
   
-> in Die Anzahl der Eigenschaften, die in die neue oder geänderte Statustabellen Zeile eingeschlossen werden sollen. 
+> [in] Die Anzahl der Eigenschaften, die in der Zeile neue oder geänderte Statustabelle enthalten sein sollen. 
     
  _lpColumnVals_
   
-> in Ein Zeiger auf ein Array von Eigenschaftswerten, die die Eigenschaften beschreiben, die als Spalten in die neue oder geänderte Statustabellen Zeile eingeschlossen werden sollen.
+> [in] Ein Zeiger auf ein Array von Eigenschaftswerten, die die Eigenschaften beschreiben, die als Spalten in der Zeile neue oder geänderte Statustabelle enthalten sein sollen.
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die steuert, wie Informationen, die die Statustabellen Zeile definieren, verarbeitet werden. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie Informationen verarbeitet werden, die die Statustabelle definieren. Das folgende Flag kann festgelegt werden:
     
 STATUSROW_UPDATE 
   
-> Weist MAPI an, die Eigenschaften, die im Array enthalten sind, von _lpColumnVals_ mit einer vorhandenen Statustabellen Zeile anstatt in einer neuen Zeile zusammenzuführen. 
+> Weist MAPI an, die Eigenschaften im Array zusammenführen, auf die  _von lpColumnVals_ verwiesen wird, mit einer vorhandenen Statustabelleszeile, anstatt in einer neuen Zeile. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -59,17 +59,17 @@ S_OK
   
 > Die Statustabelle wurde erfolgreich aktualisiert.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPISupport:: ModifyStatusRow** -Methode wird für alle Support Objekte des Dienstanbieters implementiert. Dienstanbieter rufen **ModifyStatusRow** bei der Anmeldung auf, um der Statustabelle und zu anderen Zeiten während der Sitzung eine Zeile hinzuzufügen, um die Zeile zu aktualisieren. **ModifyStatusRow** bietet MAPI die zum Erstellen der Statustabelle erforderlichen Informationen. 
+Die **IMAPISupport::ModifyStatusRow-Methode** wird für alle Dienstanbieterunterstützungsobjekte implementiert. Dienstanbieter rufen **ModifyStatusRow** zur Anmeldezeit auf, um der Statustabelle und zu anderen Zeiten während der Sitzung eine Zeile hinzuzufügen, um die Zeile zu aktualisieren. **ModifyStatusRow** stellt MAPI die informationen zur Verfügung, die zum Erstellen der Statustabelle erforderlich sind. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Legen Sie das STATUSROW_UPDATE-Flag fest, wenn Sie **ModifyStatusRow** aufrufen, um Änderungen an den Eigenschaften in der vorhandenen Statustabellen Zeile vorzunehmen. Auf diese Weise wird MAPI darüber informiert, dass nur die geänderten Spalten an den _lpColumnVals_ -Parameter übergeben werden. 
+Legen Sie das STATUSROW_UPDATE, wenn Sie **ModifyStatusRow aufrufen,** um Änderungen an den Eigenschaften in der vorhandenen Statustabelle vorzunehmen. Dadurch wird MAPI darüber informiert, dass nur die geänderten Spalten im  _lpColumnVals-Parameter übergeben_ werden. 
   
-Clients können die Informationen in der Statustabelle verwenden, um auf Ihr Status-Objekt zuzugreifen. 
+Clients können die Informationen in der Statustabelle verwenden, um auf Ihr Statusobjekt zu zugreifen. 
   
-Eine vollständige Liste der Spalten, die Sie in die Statustabellen Zeile aufnehmen sollten, finden Sie unter [Statustabellen](status-tables.md).
+Eine vollständige Liste der Spalten, die Sie in ihre Statustabellenzeile einschließen sollten, finden Sie unter [Status Tables](status-tables.md).
   
 ## <a name="see-also"></a>Siehe auch
 

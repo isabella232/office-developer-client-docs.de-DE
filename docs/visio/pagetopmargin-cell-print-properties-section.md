@@ -20,21 +20,21 @@ ms.locfileid: "33416580"
 
 Gibt den oberen Rand der gedruckten Seite an.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Durch diesen Wert werden physische Einheiten dargestellt, und er wird weder durch Skalierung noch durch Zeichnungseinheiten beeinflusst. Wenn diese Zelle beispielsweise den Wert 0,25 cm aufweist, beträgt der Rand 0,25 Zentimeter, selbst wenn als Einheit der Seite Dezimeter angegeben werden. Wenn keine Einheiten explizit angegeben sind, ist die Standardeinstellung Seiteneinheiten. 
   
-Wenn Sie einen Verweis auf die Zelle PageTopMargin aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle PageTopMargin anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | PageTopMargin  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle PageTopMargin aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die PageTopMargin-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowPrintProperties** <br/> |
 | Zeilenindex:  <br/> |**visPrintPropertiesTopMargin** <br/> |
    

@@ -1,5 +1,5 @@
 ---
-title: Zelle YGridSpacing Cell (Ruler &amp; Grid section)
+title: Zelle "YGridSpacing" (Abschnitt "Ruler &amp; Grid")
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -16,25 +16,25 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33417462"
 ---
-# <a name="ygridspacing-cell-ruler-amp-grid-section"></a>Zelle YGridSpacing Cell (Ruler &amp; Grid section)
+# <a name="ygridspacing-cell-ruler-amp-grid-section"></a>Zelle "YGridSpacing" (Abschnitt "Ruler &amp; Grid")
 
 Gibt den Abstand zwischen den vertikalen Linien in einem festen Gitter an (YGridDensity = 0).
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Entspricht der Option **** vertikaler Mindestabstand im Lineal ** &amp; -Raster** (Dialogfeld) (Klicken Sie auf der Registerkarte **Ansicht** auf den Pfeil). **** 
+Entspricht der vertikalen **Option Minimaler Abstand** im Dialogfeld  **&amp; Linealraster** (klicken Sie auf der Registerkarte Ansicht auf den **Pfeil anzeigen).** 
   
-Wenn Sie einen Verweis auf die Zelle Zelle YGridSpacing aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle YGridSpacing anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Zelle YGridSpacing  <br/> |
+|Zellenname:  <br/> |YGridSpacing  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle YGridSpacing aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle YGridSpacing nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowRulerGrid** <br/> |
 |Zellenindex:  <br/> |**visYGridSpacing** <br/> |
    

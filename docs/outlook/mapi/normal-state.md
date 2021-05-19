@@ -1,5 +1,5 @@
 ---
-title: Normaler Zustand
+title: Normalzustand
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,26 +15,26 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32335742"
 ---
-# <a name="normal-state"></a>Normaler Zustand
+# <a name="normal-state"></a>Normalzustand
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Der normale Zustand ist der Ort, an dem das Form-Objekt die meiste Zeit verbringt und darauf wartet, dass Clientanwendungen eine Aktion wie das Speichern von Änderungen oder das Schließen des Formulars initiieren. In der folgenden Tabelle werden zulässige Übergänge aus dem normalen Zustand beschrieben.
+Im Normalzustand verbringt das Formularobjekt die meiste Zeit und wartet auf Clientanwendungen, um eine Aktion wie das Speichern von Änderungen oder schließen des Formulars zu initiieren. In der folgenden Tabelle werden zulässige Übergänge vom Normalzustand beschrieben.
   
 |**IPersistMessage-Methode**|**Action**|**Neuer Status**|
 |:-----|:-----|:-----|
-|[IPersistMessage:: Speichern](ipersistmessage-save.md) (_pMessage = =_ NULL, _fSameAsLoad = =_ true)  <br/> - oder -  <br/> **IPersistMessage:: Speichern** (_pMessage! =_ NULL, _fSameAsLoad = =_ false)  <br/> |Alle eingebetteten OLE-Objekte, die geändert wurden, werden rekursiv gespeichert. Speichern von Nachrichtendaten zurück in das Nachrichtenobjekt. Speichern Sie das _fSameAsLoad_ -Flag für die spätere Verwendung im noscribble-Zustand. [](noscribble-state.md)  <br/> |NoScribble  <br/> |
-|**IPersistMessage:: Speichern** (_pMessage! =_ NULL, _fSameAsLoad = =_ true)  <br/> |Dies ist identisch mit dem vorherigen Fall, mit dem Unterschied **** , dass dieser Speicheraufruf in Situationen mit niedrigem Arbeitsspeicher verwendet wird und nicht aus Mangel an Arbeitsspeicher fehlschlagen darf.  <br/> |NoScribble  <br/> |
-|[IPersistMessage::HandsOffMessage](ipersistmessage-handsoffmessage.md) <br/> |Rekursives Aufrufen der **HandsOffMessage** -Methode für eingebettete Nachrichten oder die OLE- [IPersistStorage:: HandsOffStorage](https://msdn.microsoft.com/library/1e5ef26f-d8e7-4fa6-bfc4-19dace35314d%28Office.15%29.aspx) -Methode für eingebettete OLE-Objekte. Geben Sie das Message-Objekt und alle eingebetteten Nachrichten oder Objekte frei.  <br/> |[Status "handsofffromnormal](handsofffromnormal-state.md) <br/> |
-|[IPersistMessage:: SaveCompleted](ipersistmessage-savecompleted.md), [IPersistMessage:: InitNew](ipersistmessage-initnew.md) oder [IPersistMessage:: Laden](ipersistmessage-load.md) <br/> |Legen Sie den letzten Fehler auf fest, und geben Sie E_UNEXPECTED zurück.  <br/> |Normal  <br/> |
-|[IPersistMessage::GetLastError](ipersistmessage-getlasterror.md) <br/> |Gibt den letzten Fehler zurück.  <br/> |Normal  <br/> |
-|Weitere [IPersistMessage: IUnknown](ipersistmessageiunknown.md) -Methoden oder-Methoden aus anderen Schnittstellen  <br/> |Implementieren Sie wie in der Dokumentation für die [IPersistMessage: IUnknown](ipersistmessageiunknown.md) -Schnittstelle beschrieben.  <br/> |Normal  <br/> |
+|[IPersistMessage::Save](ipersistmessage-save.md)(_pMessage ==_ NULL,  _fSameAsLoad ==_ TRUE)  <br/> - oder -  <br/> **IPersistMessage::Save**(_pMessage !=_ NULL,  _fSameAsLoad ==_ FALSE)  <br/> |Speichern Sie rekursiv alle eingebetteten OLE-Objekte, die geändert wurden. Speichern Sie Nachrichtendaten zurück in das Message-Objekt. Store das _fSameAsLoad-Flag_ für die spätere Verwendung im [NoScribble-Zustand.](noscribble-state.md)  <br/> |NoScribble  <br/> |
+|**IPersistMessage::Save**(_pMessage !=_ NULL,  _fSameAsLoad ==_ TRUE)  <br/> |Dies ist mit dem vorherigen Fall identisch, mit der Ausnahme, dass dieser **Save-Aufruf** in Situationen mit wenig Arbeitsspeicher verwendet wird und aus Mangel an Arbeitsspeicher nicht fehlschlagen darf.  <br/> |NoScribble  <br/> |
+|[IPersistMessage::HandsOffMessage](ipersistmessage-handsoffmessage.md) <br/> |Rufen Sie rekursiv die **HandsOffMessage-Methode** für eingebettete Nachrichten oder die OLE [IPersistStorage::HandsOffStorage-Methode](https://msdn.microsoft.com/library/1e5ef26f-d8e7-4fa6-bfc4-19dace35314d%28Office.15%29.aspx) für eingebettete OLE-Objekte auf. Geben Sie das Nachrichtenobjekt und alle eingebetteten Nachrichten oder Objekte frei.  <br/> |[HandsOffFromNormal](handsofffromnormal-state.md) <br/> |
+|[IPersistMessage::SaveCompleted](ipersistmessage-savecompleted.md), [IPersistMessage::InitNew](ipersistmessage-initnew.md) oder [IPersistMessage::Load](ipersistmessage-load.md) <br/> |Legen Sie den letzten Fehler auf und geben E_UNEXPECTED.  <br/> |Standard  <br/> |
+|[IPersistMessage::GetLastError](ipersistmessage-getlasterror.md) <br/> |Gibt den letzten Fehler zurück.  <br/> |Standard  <br/> |
+|Andere [IPersistMessage : IUnknown-Methoden](ipersistmessageiunknown.md) oder -Methoden aus anderen Schnittstellen  <br/> |Implementieren Sie wie in der Dokumentation für die [IPersistMessage : IUnknown-Schnittstelle](ipersistmessageiunknown.md) beschrieben.  <br/> |Standard  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Formular Status](form-states.md)
+[Formularzustände](form-states.md)
 

@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251599
 localization_priority: Normal
 ms.assetid: 2b09eed1-1b01-e18e-d28e-674b8fc105fd
-description: Gibt den Text aus dem Feld Daten 1 im Dialogfeld Shape Name für ein Shape zurück (Klicken Sie auf der Registerkarte Entwicklertools auf Shape Name), als Zeichenfolge.
+description: Gibt den Text aus dem Feld Daten 1 im Dialogfeld Shapename für eine Form zurück (klicken Sie auf der Registerkarte Entwickler auf Shape Name ), als Zeichenfolge.
 ms.openlocfilehash: 608a61f478e95c309051d5dc47919d6e68c7cb43
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,13 +18,13 @@ ms.locfileid: "33416272"
 ---
 # <a name="data1-function"></a>DATA1 Function
 
-Gibt den Text aus dem Feld **Daten 1** im Dialogfeld **Shape Name** für ein Shape zurück (Klicken Sie auf der registerKarte **Entwicklertools** auf **Shape Name** ), als Zeichenfolge. 
+Gibt den Text aus dem Feld **Daten 1** im Dialogfeld  **Shapename** für eine Form zurück (klicken Sie auf der Registerkarte Entwickler auf **Shape Name** ), als Zeichenfolge. 
   
 ## <a name="syntax"></a>Syntax
 
 DATA1 ()
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Bei einem leeren Feld wird eine leere Zeichenfolge zurückgegeben. 
   

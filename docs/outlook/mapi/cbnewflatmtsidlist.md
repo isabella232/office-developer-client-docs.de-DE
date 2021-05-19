@@ -25,12 +25,12 @@ ms.locfileid: "33416678"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl der Bytes, die für eine neue [FLATMTSIDLIST](flatmtsidlist.md) -Struktur reserviert werden sollen, die mehrere [MTSID](mtsid.md) -Strukturen einer angegebenen Größe enthält. 
+Berechnet die Anzahl der Bytes, die einer neuen [FLATMTSIDLIST-Struktur](flatmtsidlist.md) zugeordnet werden sollen, die mehrere [MTSID-Strukturen](mtsid.md) einer angegebenen Größe enthält. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |**FLATMTSIDLIST** <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |**FLATMTSIDLIST** <br/> |
    
 ```cpp
 CbNewFLATMTSIDIDLIST (_cb)
@@ -38,9 +38,9 @@ CbNewFLATMTSIDIDLIST (_cb)
 
 ## <a name="parameters"></a>Parameter
 
- __CB_
+ _ _cb_
   
-> Die Anzahl der Bytes in den **MTSID** -Strukturen, die in die neue **FLATMTSIDLIST** -Struktur eingeschlossen werden sollen. 
+> Anzahl der Bytes in den **MTSID-Strukturen,** die in die neue **FLATMTSIDLIST-Struktur eingeschlossen werden** sollen. 
     
 ## <a name="see-also"></a>Siehe auch
 

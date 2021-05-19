@@ -19,9 +19,9 @@ ms.locfileid: "32332830"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Advise-Empfängerobjekte – Objekte, die die [IMAPIAdviseSink: IUnknown](imapiadvisesinkiunknown.md) -Schnittstelle unterstützen, sind MAPI-Objekte, die von Clientanwendungen für Verarbeitungs Benachrichtigungen implementiert werden. **IMAPIAdviseSink** erbt direkt von [IUnknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx) und enthält nur eine Methode, OnNotify. **** Daher erstellt ein Client für die Implementierung eines Advise-Senke-Objekts Code für die drei Methoden in **IUnknown** und für OnNotify. [](imapiadvisesink-onnotify.md)
+Advise sink objects — objects that support the [IMAPIAdviseSink : IUnknown](imapiadvisesinkiunknown.md) interface – are MAPI objects that client applications implement for processing notifications. **IMAPIAdviseSink** erbt direkt von [IUnknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx) und enthält nur eine Methode, **OnNotify**. Daher erstellt ein Client code für die drei Methoden in **IUnknown** und [OnNotify,](imapiadvisesink-onnotify.md)um ein Advise Sink-Objekt zu implementieren.
   
-Die Headerdatei Mapidefs. h definiert eine **IMAPIAdviseSink** -Schnittstellenimplementierung mithilfe von **DECLARE_MAPI_INTERFACE**wie folgt:
+Die Mapidefs.h-Headerdatei definiert eine **IMAPIAdviseSink-Schnittstellenimplementierung** mithilfe von **DECLARE_MAPI_INTERFACE**, wie folgt:
   
 ```cpp
 #define      INTERFACE  IMAPIAdviseSink
@@ -34,9 +34,9 @@ DECLARE_MAPI_INTERFACE_(IMAPIAdviseSink, IUnknown)
  
 ```
 
-Clients, die Advise-Senke-Objekte implementieren, können Ihre Schnittstellen in ihren Objekten manuell oder mit den **MAPI_IUNKNOWN_METHODS** -und **MAPI_IMAPIADVISESINK_METHODS** -Makros definieren. Objekt Implementierer sollten die Schnittstellen Makros immer dann verwenden, um die Konsistenz zwischen Objekten sicherzustellen und Zeit und Aufwand zu sparen. 
+Clients, die beratende Sink-Objekte implementieren, können ihre Schnittstellen in ihren Objekten manuell oder mit den Makros MAPI_IUNKNOWN_METHODS **und** **MAPI_IMAPIADVISESINK_METHODS** definieren. Objekt implementierer sollten die Schnittstellenmakros nach Möglichkeit verwenden, um die Konsistenz zwischen Objekten sicherzustellen und Zeit und Aufwand zu sparen. 
   
-Das Implementieren der [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) -und [IUnknown:: Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) -Methoden ist relativ einfach, da in der Regel nur wenige Codezeilen benötigt werden. Daher können Clients und Dienstanbieter, die Objekte implementieren, Ihre **AddRef** -und **Release** -Implementierungen Inline machen. Mit dem folgenden Code wird gezeigt, wie ein C++ Advise-Senke-Objekt mit Inline Implementierungen von **AddRef** und **Release**definiert wird.
+Die Implementierung [der Methoden IUnknown::AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) und [IUnknown::Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) ist relativ einfach, da in der Regel nur wenige Codezeilen erforderlich sind. Daher können Clients und Dienstanbieter, die Objekte implementieren, ihre **AddRef-** und **Releaseimplementierung** inline umsetzen. Der folgende Code zeigt, wie Sie ein C++ advise sink-Objekt mit Inlineimplementierung von **AddRef** und **Release definieren.**
   
 ```cpp
 class  CMAPIAdviseSink : public IMAPIAdviseSink
@@ -75,13 +75,13 @@ private :
  
 ```
 
-In C besteht das Advise-Senke-Objekt aus den folgenden Elementen:
+In C besteht das Objekt advise sink aus den folgenden Elementen:
   
-- Ein Zeiger auf eine Vtable, die Zeiger auf Implementierungen der einzelnen Methoden in **IUnknown** und **IMAPIAdviseSink**enthält.
+- Ein Zeiger auf eine vtable, die Zeiger auf Implementierungen der einzelnen Methoden in **IUnknown** und **IMAPIAdviseSink enthält.**
     
-- Datenmember.
+- Datenm member.
     
-Im folgenden Codebeispiel wird gezeigt, wie Sie ein Advise-Senke-Objekt in C definieren und dessen Vtable erstellen. 
+Das folgende Codebeispiel zeigt, wie Sie ein #A0 in C definieren und dessen vtable erstellen. 
   
 ```cpp
 // Object definition.
@@ -103,7 +103,7 @@ static const ADVISE_Vtbl vtblADVISE =
  
 ```
 
-Nachdem Sie ein Objekt in C deklariert haben, müssen Sie es initialisieren, indem Sie den vtable-Zeiger auf die Adresse der erstellten Vtable festlegen, wie im folgenden Code dargestellt:
+Nachdem Sie ein Objekt in C deklariert haben, müssen Sie es initialisieren, indem Sie den #A0 auf die Adresse der konstruierten vtable festlegen, wie im folgenden Code gezeigt:
   
 ```cpp
 LPADVISESINK lpMyObj = NULL;

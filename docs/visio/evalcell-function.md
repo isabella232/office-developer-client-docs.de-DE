@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 4aa3a1c9-dec9-5eb0-5743-0534c0b3bb5f
-description: Ruft einen Verweis auf eine Zelle ab, die eine benutzerdefinierte Funktion enthält, sowie ein oder mehrere Name-Wert-Paare, die an die benutzerdefinierte Funktion als Argumente übergeben werden (optional). Gibt das berechnete Ergebnis der benutzerdefinierten Funktion bei den angegebenen Argumenten und Werten zurück.
+description: Verwendet einen Verweis auf eine Zelle, die eine benutzerdefinierte Funktion enthält, sowie ein oder mehrere Name-Wert-Paare, die als Argumente an die benutzerdefinierte Funktion übergeben werden (optional). Gibt das berechnete Ergebnis der benutzerdefinierten Funktion mit den angegebenen Argumenten und Werten zurück.
 ms.openlocfilehash: 4ad6645862d620a36b90e4f46d09588d7e83fcc1
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,11 +16,11 @@ ms.locfileid: "33418904"
 ---
 # <a name="evalcell-function"></a>EVALCELL Function
 
-Ruft einen Verweis auf eine Zelle ab, die eine benutzerdefinierte Funktion enthält, sowie ein oder mehrere Name-Wert-Paare, die an die benutzerdefinierte Funktion als Argumente übergeben werden (optional). Gibt das berechnete Ergebnis der benutzerdefinierten Funktion bei den angegebenen Argumenten und Werten zurück.
+Verwendet einen Verweis auf eine Zelle, die eine benutzerdefinierte Funktion enthält, sowie ein oder mehrere Name-Wert-Paare, die als Argumente an die benutzerdefinierte Funktion übergeben werden (optional). Gibt das berechnete Ergebnis der benutzerdefinierten Funktion mit den angegebenen Argumenten und Werten zurück.
   
 ## <a name="syntax"></a>Syntax
 
-EVALCELL (* * *cellRef* * *, [* * *arg1Name, arg1* * *], [* * *arg2Name, arg2* * *],...) 
+EVALCELL(** *cellRef* **,[ ** *arg1Name,arg1* ** ],[ ** *arg2Name,arg2* ** ],...) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -28,15 +28,15 @@ EVALCELL (* * *cellRef* * *, [* * *arg1Name, arg1* * *], [* * *arg2Name, arg2* *
 |:-----|:-----|:-----|:-----|
 | _cellRef_ <br/> |Erforderlich  <br/> |**String** <br/> |Ein Bezug auf die Zelle, die die benutzerdefinierte Funktion enthält. Tabellenübergreifende Bezüge sind zulässig.  <br/> |
 | _arg1Name_ <br/> |Optional  <br/> |**String** <br/> |Der Name des ersten Arguments, das an die benutzerdefinierte Funktion übergeben wird. Leerzeichen sind zulässig.  <br/> |
-| _arg1_ <br/> |Optional  <br/> |**Variiert** <br/> |Wert des _arg1_ -Parameters.  <br/> |
+| _arg1_ <br/> |Optional.  <br/> |**Variiert** <br/> |Wert des _arg1-Parameters._  <br/> |
 | _arg2Name_ <br/> |Optional  <br/> |**String** <br/> |Der Name des zweiten Arguments, das an die benutzerdefinierte Funktion übergeben werden soll. Leerzeichen sind zulässig.  <br/> |
-| _arg2_ <br/> |Optional  <br/> |**Variiert** <br/> |Wert des _arg2_ -Parameters.  <br/> |
+| _arg2_ <br/> |Optional.  <br/> |**Variiert** <br/> |Wert des _arg2-Parameters._  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
-Zahl
+Nummer
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 In der aufrufenden Zelle muss nicht jedes von der benutzerdefinierten Funktion verwendete Argument angegeben werden. 
   

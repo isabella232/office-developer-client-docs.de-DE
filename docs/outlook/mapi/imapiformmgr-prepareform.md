@@ -39,19 +39,19 @@ HRESULT PrepareForm(
 
  _ulUIParam_
   
-> in Ein Handle für das übergeordnete Fenster der Statusanzeige, das angezeigt wird, während das Formular heruntergeladen wird. Der _ulUIParam_ -Parameter wird ignoriert, es sei denn, das MAPI_DIALOG-Flag wird im _ulFlags_ -Parameter festgelegt. 
+> [in] Ein Handle zum übergeordneten Fenster der Statusanzeige, das beim Herunterladen des Formulars angezeigt wird. Der  _ulUIParam-Parameter_ wird ignoriert, es sei denn, das MAPI_DIALOG wird im  _ulFlags-Parameter_ festgelegt. 
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die das Herunterladen des Formulars steuert. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie das Formular heruntergeladen wird. Das folgende Flag kann festgelegt werden:
     
 MAPI_DIALOG 
   
-> Zeigt eine Benutzeroberfläche an, um den Status anzugeben oder den Benutzer aufzufordern, weitere Informationen zu erhalten. Wenn dieses Flag nicht festgelegt ist, wird keine Benutzeroberfläche angezeigt.
+> Zeigt eine Benutzeroberfläche an, um den Status zur Verfügung zu stellen, oder fordert den Benutzer auf, weitere Informationen zu erhalten. Wenn dieses Kennzeichen nicht festgelegt ist, wird keine Benutzeroberfläche angezeigt.
     
  _pfrmiInfo_
   
-> in Ein Zeiger auf ein Formular Informationsobjekt für das Formular heruntergeladen werden.
+> [in] Ein Zeiger auf ein Formularinformationsobjekt für das zu herunterladende Formular.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -59,11 +59,11 @@ S_OK
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Formular Betrachter rufen die **IMAPIFormMgr::P repareform** -Methode auf, um ein Formular aus einem Formular Container zum Öffnen herunterzuladen. Die meisten Formular Betrachter müssen **PrepareForm**nicht aufrufen, da die Methoden [IMAPIFormMgr:: CreateForm](imapiformmgr-createform.md) und [IMAPIFormMgr:: LoadForm](imapiformmgr-loadform.md) **PrepareForm**bei Bedarf aufrufen. 
+Formularbetrachter rufen die **IMAPIFormMgr::P repareForm-Methode** auf, um ein Formular aus einem Formularcontainer zum Öffnen herunterzuladen. Die meisten Formularbetrachter müssen **PrepareForm** nicht aufrufen, da die [Methoden IMAPIFormMgr::CreateForm](imapiformmgr-createform.md) und [IMAPIFormMgr::LoadForm](imapiformmgr-loadform.md) bei Bedarf **PrepareForm** aufrufen. 
   
-Sie können **PrepareForm** verwenden, um die DLLs (Dynamic Link Libraries) und andere Dateien abzurufen, die einem Formular zugeordnet sind, um Sie zu ändern. Wenn das geänderte Formular wieder in seinen Formular Container geladen wird, muss es erneut installiert werden. 
+Sie können **PrepareForm verwenden,** um die Dynamic Link Libraries (DLLs) und andere Dateien zu erhalten, die einem Formular zugeordnet sind, um sie zu ändern. Wenn das geänderte Formular wieder in den Formularcontainer geladen wird, muss es erneut installiert werden. 
   
 ## <a name="see-also"></a>Siehe auch
 

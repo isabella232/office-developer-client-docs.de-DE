@@ -20,19 +20,19 @@ ms.locfileid: "33417210"
 
 Bestimmt den Abstand zwischen dem unteren Rand des Textblocks und der letzten darin enthaltenen Textzeile. Standardmäßig sind 2,54 mm festgelegt. Dieser Wert ist unabhängig vom Zeichnungsmaßstab. Wenn die Größe der Zeichnung verändert wird, bleibt der untere Rand gleich.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle BottomMargin aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die BottomMargin-Zelle anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | BottomMargin  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle BottomMargin aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die BottomMargin-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowText** <br/> |
 | Zellenindex:  <br/> |**visTxtBlkBottomMargin** <br/> |
    

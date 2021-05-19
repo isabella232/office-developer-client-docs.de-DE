@@ -25,7 +25,7 @@ ms.locfileid: "33417861"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Initiiert den ABMELDEPROZESS. 
+Initiiert den Abmeldevorgang. 
   
 ```cpp
 HRESULT TransportLogoff(
@@ -43,19 +43,19 @@ HRESULT TransportLogoff(
 
 S_OK 
   
-> Der Aufruf war erfolgreich, und der erwartete Wert oder die Werte wurden zurückgegeben. Wenn etwas anderes als S_OK zurückgegeben wird, wird der Anbieter abgemeldet.
+> Der Aufruf war erfolgreich und hat den erwarteten Wert oder die erwarteten Werte zurückgegeben. Wenn etwas anderes als S_OK zurückgegeben wird, wird der Anbieter abgemeldet.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Der MAPI-Spooler Ruft die **IXPLogon:: TransportLogoff** -Methode auf, um eine Transportanbieter Sitzung für einen bestimmten Benutzer zu beenden. Vor dem Aufrufen von **TransportLogoff**verwirft der MAPI-Spooler alle Daten über unterstützte Messaging Adresstypen für diese Sitzung, die in der [IXPLogon:: AddressTypes](ixplogon-addresstypes.md) -Methode übergeben werden. 
+Der MAPI-Spooler ruft die **IXPLogon::TransportLogoff-Methode auf,** um eine Transportanbietersitzung für einen bestimmten Benutzer zu beenden. Vor dem **Aufrufen von TransportLogoff** verwirft der MAPI-Spooler alle Daten zu unterstützten Messagingadressentypen für diese Sitzung, die in der [IXPLogon::AddressTypes-Methode übergeben](ixplogon-addresstypes.md) werden. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Der Transportanbieter sollte jederzeit bereit sein, einen Anruf an **TransportLogoff** zu akzeptieren. Wenn eine Nachricht in Arbeit ist, sollte der Anbieter den sendenden Prozess beenden. 
+Der Transportanbieter sollte jederzeit bereit sein, einen Anruf bei **TransportLogoff** zu akzeptieren. Wenn eine Nachricht im Prozess ist, sollte der Anbieter den Sendevorgang beenden. 
   
-Der Transportanbieter sollte alle Ressourcen freigeben, die für seine aktuelle Sitzung reserviert sind. Wenn der Speicherplatz für diese Sitzung mit der [MAPIAllocateBuffer](mapiallocatebuffer.md) -Funktion reserviert wurde, sollte er den Arbeitsspeicher mithilfe der [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion freigeben. Jeder vom Transportanbieter zugewiesene Arbeitsspeicher, der Aufrufe der [IXPLogon:: AddressTypes](ixplogon-addresstypes.md) -Methode erfüllt, kann zu diesem Zeitpunkt sicher freigegeben werden. 
+Der Transportanbieter sollte alle ressourcen frei geben, die für die aktuelle Sitzung zugewiesen sind. Wenn der Speicher für diese Sitzung mit der [MAPIAllocateBuffer-Funktion](mapiallocatebuffer.md) zugewiesen wurde, sollte der Arbeitsspeicher mithilfe der [MAPIFreeBuffer-Funktion frei](mapifreebuffer.md) werden. Der vom Transportanbieter zur Erfüllung von Aufrufen der [IXPLogon::AddressTypes-Methode](ixplogon-addresstypes.md) zugewiesene Arbeitsspeicher kann derzeit sicher freigegeben werden. 
   
-In der Regel muss ein Anbieter beim Abschließen eines **TransportLogoff** -Aufrufs zuerst sein Logo-Objekt ungültig machen, indem er die [IMAPISupport:: MakeInvalid](imapisupport-makeinvalid.md) -Methode aufruft und dann sein Support-Objekt freigibt. Die Implementierung von **TransportLogoff** durch den Anbieter sollte das Support Objekt zuletzt freigeben, da der MAPI-Spooler, wenn das Support Objekt veröffentlicht wird, auch das Provider-Objekt selbst freigeben kann. 
+Normalerweise sollte ein Anbieter nach Abschluss eines **TransportLogoff-Aufrufs** zunächst sein Anmeldeobjekt ungültig machen, indem er die [IMAPISupport::MakeInvalid-Methode](imapisupport-makeinvalid.md) aufruft und dann sein Supportobjekt los gibt. Die Implementierung von **TransportLogoff** durch den Anbieter sollte das Supportobjekt zuletzt losgelassen werden, da der MAPI-Spooler bei der Freigabe des Supportobjekts auch das Anbieterobjekt selbst losgelassen werden kann. 
   
 ## <a name="see-also"></a>Siehe auch
 

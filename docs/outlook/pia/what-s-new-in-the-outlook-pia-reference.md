@@ -1,5 +1,5 @@
 ---
-title: Was ist neu in der Outlook-PIA-Referenz
+title: Neuerungen in der Outlook-PIA-Referenz
 TOCTitle: What's new in the Outlook PIA reference
 ms:assetid: 9863c857-2991-49af-84c7-1dd273172fe3
 ms:mtpsurl: https://msdn.microsoft.com/library/office/dn292515(v=office.15)

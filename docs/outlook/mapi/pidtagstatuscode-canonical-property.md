@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagstatuscode (-Eigenschaft
+title: PidTagStatusCode (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,13 +19,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33418514"
 ---
-# <a name="pidtagstatuscode-canonical-property"></a>Kanonische Pidtagstatuscode (-Eigenschaft
+# <a name="pidtagstatuscode-canonical-property"></a>PidTagStatusCode (kanonische Eigenschaft)
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine Bitmaske von Flags, die den aktuellen Status einer Sitzungs Ressource kennzeichnen. Alle Dienstanbieter legen Statuscodes fest, ebenso wie MAPI, um den Status des Subsystems, den MAPI-Spooler und das integrierte Adressbuch zu melden.
+Enthält eine Bitmaske mit Flags, die den aktuellen Status einer Sitzungsressource angeben. Alle Dienstanbieter legen Statuscodes wie MAPI zum Melden des Status des Subsystems, des MAPI-Spoolers und des integrierten Adressbuchs ein.
   
 |||
 |:-----|:-----|
@@ -34,11 +34,11 @@ Enthält eine Bitmaske von Flags, die den aktuellen Status einer Sitzungs Ressou
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Status  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Der Statuscode muss in der Datei MAPISVC. inf für alle Anbieter angezeigt werden. 
+Der Statuscode muss für alle Anbieter in der Datei Mapisvc.inf angezeigt werden. 
   
-Status Objekte werden von MAPI und von allen Dienstanbietern implementiert. Es gibt zwei Sätze gültiger Werte für Statuscodes, ein Satz für alle Status-Objekte und ein weiterer Satz nur für Transportanbieter. Alle Status-Objekte können diese Eigenschaft auf die folgenden Werte festlegen:
+Statusobjekte werden von MAPI und von allen Dienstanbietern implementiert. Es gibt zwei Sätze gültiger Werte für Statuscodes, eine für alle Statusobjekte und eine andere nur für Transportanbieter. Alle Statusobjekte können diese Eigenschaft auf die folgenden Werte festlegen:
   
 STATUS_AVAILABLE 
   
@@ -46,13 +46,13 @@ STATUS_AVAILABLE
     
 STATUS_FAILURE 
   
-> Gibt an, dass die Ressource ein Problem aufWeist. Für Dienstanbieter gibt STATUS_FAILURE an, dass der Anbieter in Kürze heruntergefahren werden kann, um die aktuelle Sitzung zu beenden.
+> Gibt an, dass bei der Ressource ein Problem auftritt. Bei Dienstanbietern STATUS_FAILURE, dass der Anbieter möglicherweise bald heruntergefahren wird, um die aktuelle Sitzung zu beenden.
     
 STATUS_OFFLINE 
   
 > Gibt an, dass nur lokale Daten oder Dienste verfügbar sind.
     
-Transport Anbieter können auch die **PR_STATUS_CODE** -Eigenschaften ihrer Statusobjekte auf die folgenden Werte festlegen: 
+Transportanbieter können die Eigenschaften ihrer Statusobjekte **PR_STATUS_CODE** folgenden Werten festlegen: 
   
 STATUS_INBOUND_ACTIVE 
   
@@ -64,7 +64,7 @@ STATUS_INBOUND_ENABLED
     
 STATUS_INBOUND_FLUSH 
   
-> Gibt an, dass der Transportanbieter Nachrichten aus der eingehenden Warteschlange herunterlädt.
+> Gibt an, dass der Transportanbieter Nachrichten aus der eingehenden Warteschlange herunterloaden wird.
     
 STATUS_OUTBOUND_ACTIVE 
   
@@ -76,7 +76,7 @@ STATUS_OUTBOUND_ENABLED
     
 STATUS_OUTBOUND_FLUSH 
   
-> Gibt an, dass der Transportanbieter Nachrichten aus der ausgehenden Warteschlange hoch lädt.
+> Gibt an, dass der Transportanbieter Nachrichten aus seiner ausgehenden Warteschlange hochladet.
     
 STATUS_REMOTE_ACCESS 
   
@@ -84,28 +84,28 @@ STATUS_REMOTE_ACCESS
     
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
-### <a name="header-files"></a>Header Dateien
+### <a name="header-files"></a>Headerdateien
 
-Mapidefs. h
+Mapidefs.h
   
-> Stellt Datentypdefinitionen bereit.
+> Bietet Datentypdefinitionen.
     
-Mapitags. h
+Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Kanonische Pidtagstatusstring (-Eigenschaft](pidtagstatusstring-canonical-property.md)
+[PidTagStatusString (kanonische Eigenschaft)](pidtagstatusstring-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

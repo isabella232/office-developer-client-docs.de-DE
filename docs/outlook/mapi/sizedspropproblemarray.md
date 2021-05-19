@@ -23,12 +23,12 @@ ms.locfileid: "33418113"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt eine benannte [SPropProblemArray](spropproblemarray.md) -Struktur, die eine angegebene Anzahl von [SPropProblem](spropproblem.md) -Strukturen enthält. 
+Erstellt eine benannte [SPropProblemArray-Struktur,](spropproblemarray.md) die eine angegebene Anzahl von [SPropProblem-Strukturen](spropproblem.md) enthält. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |**SPropProblemArray** <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |**SPropProblemArray** <br/> |
    
 ```cpp
 SizedSPropProblemArray(_cprob, _name)
@@ -36,17 +36,17 @@ SizedSPropProblemArray(_cprob, _name)
 
 ## <a name="parameters"></a>Parameter
 
-__cprob_
+_ _cprob_
   
-> Die Anzahl der **SPropProblem** -Strukturen, die in die neue Struktur eingeschlossen werden sollen. 
+> Anzahl der **SPropProblem-Strukturen,** die in die neue Struktur eingeschlossen werden sollen. 
     
-__Name_
+_ _name_
   
 > Name für die neue Struktur.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Verwenden Sie das **SizedSPropProblemArray** -Makro, um ein Eigenschaften Problem Array mit expliziten Begrenzungen zu erstellen. Um die neue Struktur zu verwenden, die aus dem **SizedSPropProblemArray** -Makro als Zeiger auf eine **SPropProblemArray** -Struktur resultiert, führen Sie die folgenden Schritte aus: 
+Verwenden Sie **das SizeSPropProblemArray-Makro,** um ein Eigenschaftenproblemarray mit expliziten Grenzen zu erstellen. Führen Sie die folgende Gliederung aus, um die neue Struktur zu verwenden, die aus dem **Makro SizedSPropProblemArray** als Zeiger auf eine **SPropProblemArray-Struktur** resultiert: 
   
 ```cpp
 lpPropProbArray = (LPSPropProblemArray) &SizedSPropProblemArray;

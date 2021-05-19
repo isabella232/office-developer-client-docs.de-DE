@@ -23,12 +23,12 @@ ms.locfileid: "33416265"
  
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt eine benannte Struktur, die eine [DTBLCOMBOBOX](dtblcombobox.md) -Struktur zur Beschreibung eines Kombinationsfeld-Steuerelements und die maximale Anzahl von Zeichen enthält, die im zugeordneten Bearbeitungssteuerelement eingegeben werden können. 
+Erstellt eine benannte Struktur, die eine [DTBLCOMBOBOX-Struktur](dtblcombobox.md) zum Beschreiben eines Kombinationsfeldsteuerelements und die maximale Anzahl von Zeichen enthält, die in das zugeordnete Bearbeitungssteuerelement eingegeben werden können. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |**DTBLCOMBOBOX** <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |**DTBLCOMBOBOX** <br/> |
    
 ```cpp
 SizedDtblComboBox (n, u)
@@ -44,9 +44,9 @@ _u_
   
 > Name für die neue Struktur.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Mit dem **SizedDtblComboBox** -Makro können Sie ein Kombinationsfeld definieren, wenn die Länge der aktivierten Zeichenfolge bekannt ist. Die neue Struktur wird mit den folgenden Elementen erstellt: 
+Mit **dem Makro SizedDtblComboBox** können Sie ein Kombinationsfeld definieren, wenn die Länge der aktivierten Zeichenzeichenfolge bekannt ist. Die neue Struktur wird mit den folgenden Mitgliedern erstellt: 
   
 ```cpp
 DTBLCOMBOBOX dtblcombobox;
@@ -54,7 +54,7 @@ TCHAR lpszCharsAllowed[n];
 
 ```
 
-Wenn Sie einen Zeiger auf die resultierende Struktur aus dem **SizedDtblComboBox** -Makro als **DTBLCOMBOBOX** -Struktur Zeiger verwenden möchten, führen Sie die folgenden Schritte aus: 
+Führen Sie die folgende Gliederung aus, um einen Zeiger auf die resultierende Struktur des **SizedDtblComboBox-Makros** als **DTBLCOMBOBOX-Strukturzeiger** zu verwenden: 
   
 ```cpp
 lpDtblComboBox = (LPDTBLCOMBOBOX) &SizedDtblComboBox;

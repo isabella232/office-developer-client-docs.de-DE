@@ -19,7 +19,7 @@ ms.locfileid: "33417630"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Diese Struktur definiert die Status für den Replikationsstatus Computer.
+Diese Struktur definiert die Zustände für den Replikationsstatuscomputer.
   
 ## <a name="quick-info"></a>QuickInfo
 

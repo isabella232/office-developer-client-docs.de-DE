@@ -1,5 +1,5 @@
 ---
-title: Senden von Nachrichten mit der benutzerdefinierten TNEF-Anlagenverarbeitung
+title: Senden von Nachrichten mithilfe der benutzerdefinierten TNEF-Anlagenverarbeitung
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -15,40 +15,40 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32339697"
 ---
-# <a name="sending-messages-by-using-tnef-custom-attachment-processing"></a>Senden von Nachrichten mit der benutzerdefinierten TNEF-Anlagenverarbeitung
+# <a name="sending-messages-by-using-tnef-custom-attachment-processing"></a>Senden von Nachrichten mithilfe der benutzerdefinierten TNEF-Anlagenverarbeitung
 
  
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-So passen Sie die Anlagenverarbeitung beim Senden einer Nachricht an
+So passen Sie die Anlagenverarbeitung beim Senden einer Nachricht an:
   
-1. Rufen Sie ein TNEF-Objekt ab, indem Sie eine **IStream** -Schnittstelle und eine Nachricht an die [OpenTnefStreamEx](opentnefstreamex.md) -Funktion übergeben. 
+1. Rufen Sie ein TNEF-Objekt ab, indem Sie eine **IStream-Schnittstelle** und eine Nachricht an die [OpenTnefStreamEx-Funktion](opentnefstreamex.md) übergeben. 
     
-2. Rufen Sie eine Liste aller definierten Eigenschaften für die Nachricht ab, indem Sie die [IMAPIProp::](imapiprop-getproplist.md) getproplist-Methode aufrufen. 
+2. Rufen Sie eine Liste aller definierten Eigenschaften für die Nachricht ab, indem Sie die [IMAPIProp::GetPropList-Methode](imapiprop-getproplist.md) aufrufen. 
     
-3. Verwenden Sie [IMAPIProp](imapipropiunknown.md) -Methoden, um alle vom Messagingsystem unterstützten Eigenschaften auszuschließen. Schreiben Sie diese Eigenschaften zu einem geeigneten Zeitpunkt im vom Messagingsystem erforderlichen Format in das Messagingsystem. 
+3. Verwenden [Sie IMAPIProp-Methoden,](imapipropiunknown.md) um alle vom Messagingsystem unterstützten Eigenschaften auszuschließen. Schreiben Sie diese Eigenschaften zu einem geeigneten Zeitpunkt in das Messagingsystem im vom Messagingsystem benötigten Format. 
     
-4. Rufen Sie die [ITnef::](itnef-addprops.md) AddProps-Methode auf, um nur die Eigenschaften der Nachricht hinzuzufügen, also keine der Eigenschaften in den Anlagen, indem Sie das TNEF_PROP_MESSAGE_ONLY-Flag festlegen. 
+4. Rufen Sie die [ITnef::AddProps-Methode](itnef-addprops.md) auf, um nur die Eigenschaften der Nachricht hinzuzufügen, d. h. keine der Eigenschaften für die Anlagen, indem Sie das Flag TNEF_PROP_MESSAGE_ONLY festlegen. 
     
-5. Rufen Sie [ITnef::](itnef-addprops.md) AddProps mit diesen Elementen auf: das TNEF_PROP_EXCLUDE-Flag, ein Property-Tag-Array, das die **PR_ATTACH_DATA_BIN** ([pidtagattachdatabinary (](pidtagattachdatabinary-canonical-property.md)) oder **PR_ATTACH_DATA_OBJ** ([pidtagattachdataobject (](pidtagattachdataobject-canonical-property.md)) enthält. -Eigenschaft und eine Anlagen-ID, die die zu verarbeitende Anlage angibt.
+5. Rufen Sie [ITnef::AddProps](itnef-addprops.md) mit diesen Elementen auf: das TNEF_PROP_EXCLUDE-Flag, ein Eigenschaftentagarray, das die **Eigenschaft PR_ATTACH_DATA_BIN** ([PidTagAttachDataBinary](pidtagattachdatabinary-canonical-property.md)) oder **PR_ATTACH_DATA_OBJ** ([PidTagAttachDataObject](pidtagattachdataobject-canonical-property.md)) enthält, und einen Anlagenbezeichner, der die zu verarbeitende Anlage angibt.
     
-6. Verwenden Sie die [ITnef::](itnef-setprops.md) SetProps-Methode, um das **PR_ATTACH_TRANSPORT_NAME** ([pidtagattachtransportname (](pidtagattachtransportname-canonical-property.md))-Eigenschaftentag mit einer eindeutigen Zeichenfolge hinzuzufügen, die die Anlage des Messagingsystems identifiziert, wenn die Anlage einen Dateinamen aufweist, den die Messagingsystem kann nicht unterstützt werden. Beispielsweise mehrere Anlagen mit demselben ursprünglichen Dateinamen oder ein Dateiname, der kein gültiger Dateiname für das Messagingsystem ist. Diese Zeichenfolge wird mit einer Schlüsselnummer verwendet, wenn Sie die Anlagen Tags im markierten Nachrichtentext schreiben, um eine Anlage mit Ihren Daten zu verknüpfen. Weitere Informationen finden Sie unter [TNEF-Tagged Nachrichten Text](tnef-tagged-message-text.md).
+6. Verwenden Sie die [ITnef::SetProps-Methode,](itnef-setprops.md) um das **eigenschaftstag PR_ATTACH_TRANSPORT_NAME** ([PidTagAttachTransportName](pidtagattachtransportname-canonical-property.md)) mit einer eindeutigen Zeichenfolge hinzuzufügen, die die Anlage an das Messagingsystem identifiziert, wenn die Anlage einen Dateinamen hat, den das Messagingsystem nicht unterstützen kann. Beispielsweise mehrere Anlagen mit demselben ursprünglichen Dateinamen oder ein Dateiname, der kein gültiger Dateiname für das Messagingsystem ist. Diese Zeichenfolge wird mit einer Schlüsselnummer verwendet, wenn die Anlagentags in den markierten Nachrichtentext geschrieben werden, um eine Anlage ihren Daten zuzuordnen. Weitere Informationen finden Sie unter [TNEF-Tagged Message Text](tnef-tagged-message-text.md).
     
-7. Wiederholen **** Sie die AddProps-und SetProps-Aufrufe für jede Anlage. **** 
+7. Wiederholen Sie **die AddProps-** und **SetProps-Aufrufe** für jede Anlage. 
     
-8. Rufen Sie die [ITnef:: Finish](itnef-finish.md) -Methode auf, um die Nachricht in den TNEF-Stream zu codieren, nachdem alle angeforderten Eigenschaften hinzugefügt wurden. 
+8. Rufen Sie die [ITnef::Finish-Methode](itnef-finish.md) auf, um die Nachricht in den TNEF-Stream zu codieren, nachdem alle angeforderten Eigenschaften hinzugefügt wurden. 
     
-9. Rufen Sie den markierten Nachrichtentext ab, indem Sie die [ITnef:: OpenTaggedBody](itnef-opentaggedbody.md) -Methode aufrufen. Dieser markierte Text wird mithilfe von Methoden der **IStream** -Schnittstelle gelesen, mit dem Anlagenmodell des Messagingsystems codiert und an das Messagingsystem geschrieben. 
+9. Rufen Sie den markierten Nachrichtentext ab, indem Sie die [ITnef::OpenTaggedBody-Methode](itnef-opentaggedbody.md) aufrufen. Dieser markierte Text wird mithilfe von Methoden aus der **IStream-Schnittstelle** gelesen, mithilfe des Anlagenmodells des Messagingsystems codiert und in das Messagingsystem geschrieben. 
     
-10. Rufen Sie die [IUnknown:: Release](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx) -Methode auf, um das [ITnef](itnefiunknown.md) -Objekt freigegeben. 
+10. Rufen Sie [die IUnknown::Release-Methode auf,](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx) um das [ITnef-Objekt frei](itnefiunknown.md) zu geben. 
     
-11. Schreiben Sie die verbleibenden Anlagen über das Anlagenmodell des Messagingsystems an das Messagingsystem.
+11. Schreiben Sie die verbleibenden Anlagen über das Anlagenmodell des Messagingsystems in das Messagingsystem.
     
-Der Transportanbieter sollte das zuvor beschriebene Verfahren zum Verarbeiten von Anlagen verwenden. Wenn dies nicht möglich ist, sollte der Transportanbieter die folgenden Schritte für die angepasste Anlagenverarbeitung ausführen:
+Ihr Transportanbieter sollte das zuvor beschriebene Verfahren verwenden, um Anlagen zu verarbeiten. Wenn dies nicht möglich ist, sollte der Transportanbieter die folgenden Schritte für die angepasste Anlagenverarbeitung verwenden:
   
-1. Der Transportanbieter stellt sicher, dass die **PR_ATTACH_TRANSPORT_NAME** -Eigenschaften aller Anlagen eindeutige Werte enthalten, die gültige Anlagen-IDs für das Messagingsystem sind. 
+1. Der Transportanbieter stellt sicher, **PR_ATTACH_TRANSPORT_NAME** Eigenschaften aller Anlagen eindeutige Werte enthalten, die gültige Anlagenbezeichner für das Messagingsystem sind. 
     
-2. Der Transportanbieter verwendet dann einen einzelnen Aufruf von **ITnef::** AddProps für jede Anlage, wobei das TNEF_PROP_CONTAINED-Flag übergeben wird. 
+2. Der Transportanbieter verwendet dann einen einzelnen Aufruf von **ITnef::AddProps** für jede Anlage und über TNEF_PROP_CONTAINED Flag. 
     
 

@@ -23,19 +23,19 @@ ms.locfileid: "33417343"
   
 Sie können drei Eigenschaften festlegen, die Optionen für die Verwendung des Adressbuchs beschreiben:
   
-- **PR_AB_SEARCH_PATH** ([Pidtagabsearchpath (](pidtagabsearchpath-canonical-property.md))
+- **PR_AB_SEARCH_PATH** ([PidTagAbSearchPath](pidtagabsearchpath-canonical-property.md))
     
-    Die **PR_AB_SEARCH_PATH** -Eigenschaft wird von [IAddrBook::](iaddrbook-resolvename.md) ResolveName verwendet, um die an der Namensauflösung beteiligten Container und die Reihenfolge zu bestimmen, in der Sie beteiligt werden sollen. Für jeden Container in **PR_AB_SEARCH_PATH**ruft **IAddrBook::** ResolveName die [IABContainer:: ResolveNames](iabcontainer-resolvenames.md) -Methode auf. Container am Anfang von **PR_AB_SEARCH_PATH** werden vor Containern am Ende von **PR_AB_SEARCH_PATH**durchsucht. 
+    Die **PR_AB_SEARCH_PATH-Eigenschaft** wird von [IAddrBook::ResolveName](iaddrbook-resolvename.md) verwendet, um die Container zu bestimmen, die an der Namensauflösung beteiligt sein sollen, und die Reihenfolge, in der sie beteiligt werden sollen. Für jeden Container in **PR_AB_SEARCH_PATH** **ruft IAddrBook::ResolveName** seine [IABContainer::ResolveNames-Methode](iabcontainer-resolvenames.md) auf. Container am Anfang der **PR_AB_SEARCH_PATH** werden vor Containern am Ende der **PR_AB_SEARCH_PATH.** 
     
-    Die Suchreihenfolge in **PR_AB_SEARCH_PATH** wird mithilfe einer [SRowSet](srowset.md) -Struktur angegeben, der gleichen Struktur, die zum Darstellen von Zeilen in einer Tabelle verwendet wird. Sie können den aktuellen Suchpfad anzeigen, indem Sie die [IAddrBook:: GetSearchPath](iaddrbook-getsearchpath.md) -Methode aufrufen und Sie durch Aufrufen der [IAddrBook:: SetSearchPath](iaddrbook-setsearchpath.md) -Methode ändern. 
+    Die Suchreihenfolge in **PR_AB_SEARCH_PATH** wird mithilfe einer [SRowSet-Struktur](srowset.md) angegeben, derselben Struktur, die zum Darstellen von Zeilen in einer Tabelle verwendet wird. Sie können den aktuellen Suchpfad anzeigen, indem Sie die [IAddrBook::GetSearchPath-Methode](iaddrbook-getsearchpath.md) aufrufen und ändern, indem Sie die [IAddrBook::SetSearchPath-Methode](iaddrbook-setsearchpath.md) aufrufen. 
     
-- **PR_AB_DEFAULT_DIR** ([Pidtagabdefaultdir (](pidtagabdefaultdir-canonical-property.md))
+- **PR_AB_DEFAULT_DIR** ([PidTagAbDefaultDir](pidtagabdefaultdir-canonical-property.md))
     
-    Die **PR_AB_DEFAULT_DIR** -Eigenschaft ist der Eintragsbezeichner des Adressbuch Containers, der beim Anzeigen des Adressbuchs angezeigt werden soll. Die Standardverzeichnis Einstellung bleibt wirksam, bis Sie Sie ändern, indem Sie die [IAddrBook:: SetDefaultDir](iaddrbook-setdefaultdir.md) -Methode aufrufen. Sie können das Standardverzeichnis anzeigen, indem Sie die [IAddrBook:: GetDefaultDir](iaddrbook-getdefaultdir.md) -Methode aufrufen. 
+    Die **PR_AB_DEFAULT_DIR** ist die Eintrags-ID des Adressbuchcontainers, der beim Anzeigen des Adressbuchs zunächst angezeigt werden soll. Die Standardverzeichniseinstellung bleibt in Kraft, bis Sie sie durch Aufrufen der [IAddrBook::SetDefaultDir-Methode](iaddrbook-setdefaultdir.md) ändern. Sie können das Standardverzeichnis anzeigen, indem Sie die [IAddrBook::GetDefaultDir-Methode](iaddrbook-getdefaultdir.md) aufrufen. 
     
-- **PR_AB_DEFAULT_PAB** ([Pidtagabdefaultpab (](pidtagabdefaultpab-canonical-property.md))
+- **PR_AB_DEFAULT_PAB** ([PidTagAbDefaultPab](pidtagabdefaultpab-canonical-property.md))
     
-Diese drei Eigenschaften sind etwas Besonderes, da Sie nicht mit den standardmäßigen **IMAPIProp** -Methoden arbeiten können. Stattdessen müssen Sie **IAddrBook** -Methoden verwenden. Da keine dieser Eigenschaften mit **IMAPIProp::** SetProps geändert werden kann, ist es nicht erforderlich, **IMAPIProp:: SaveChanges** aufzurufen, um Änderungen dauerhaft vorzunehmen. Änderungen, die über die **IAddrBook** -Methoden vorgenommen wurden, werden sofort wirksam. 
+Diese drei Eigenschaften sind besonders, da Sie nicht mit den standardmäßigen **IMAPIProp-Methoden arbeiten** können. Stattdessen müssen Sie **IAddrBook-Methoden** verwenden. Da keine dieser Eigenschaften mit **IMAPIProp::SetProps** geändert werden kann, müssen Sie **IMAPIProp::SaveChanges** nicht aufrufen, um Änderungen dauerhaft vorzunehmen. Änderungen, die über die **IAddrBook-Methoden** vorgenommen werden, werden sofort wirksam. 
   
 ## <a name="see-also"></a>Siehe auch
 

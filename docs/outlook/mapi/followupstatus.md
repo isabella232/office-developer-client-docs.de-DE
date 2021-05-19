@@ -21,7 +21,7 @@ ms.locfileid: "33418330"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt die verschiedenen nachverfolgungsstatus für eine Nachricht an.
+Gibt die unterschiedlichen Follow-up-Status für eine Nachricht an.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -38,7 +38,7 @@ enum FollowUpStatus {
 
  _flwupNone_
   
-> Es wurde keine Nachverfolgung angegeben.
+> Es wurde keine Nachgeh-nung angegeben.
     
  _flwupComplete_
   
@@ -46,15 +46,15 @@ enum FollowUpStatus {
     
  _flwupMarked_
   
-> Die Nachricht ist zur Nachverfolgung gekennzeichnet.
+> Die Nachricht wird für die Nach-Nach-nach-Oben-Nachricht markiert.
     
  _flwupMAX_
   
-> Die Anzahl der unterstützten Status für die Nachverfolgung.
+> Die Anzahl der verschiedenen Status, die für die Nach-nach-Oben-Schritte unterstützt werden.
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Kanonische Pidtagflagstatus (-Eigenschaft](pidtagflagstatus-canonical-property.md)
+[PidTagFlagStatus (kanonische Eigenschaft)](pidtagflagstatus-canonical-property.md)
 

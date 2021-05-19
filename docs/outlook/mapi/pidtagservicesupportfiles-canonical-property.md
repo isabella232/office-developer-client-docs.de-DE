@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagservicesupportfiles (-Eigenschaft
+title: PidTagServiceSupportFiles (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33417042"
 ---
-# <a name="pidtagservicesupportfiles-canonical-property"></a>Kanonische Pidtagservicesupportfiles (-Eigenschaft
+# <a name="pidtagservicesupportfiles-canonical-property"></a>PidTagServiceSupportFiles (kanonische Eigenschaft)
 
   
   
@@ -34,23 +34,23 @@ Enthält eine Liste der Dateien, die zum Nachrichtendienst gehören.
 |Datentyp:  <br/> |PT_MV_STRING8, PT_MV_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Profil  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Mithilfe eines Dialogfelds in der Systemsteuerung können Benutzer die Liste der Dateien abrufen, die zum Nachrichtendienst gehören. Der Benutzer kann beispielsweise die Namen aller DLLs (Dynamic Link Libraries) abrufen, die zum Dienst gehören. Der Benutzer kann dann zusätzliche Details zu den angegebenen Dateien suchen, beispielsweise die Namen und Versionsnummern aller DLLs. MAPI verwendet die folgenden Eigenschaften zum Erstellen einer Support Dateiliste in einem Dialogfeld für die Auswahl von Messaging Benutzern.
+Mithilfe eines Dialogfelds im Systemsteuerungs-Applet kann ein Benutzer die Liste der Dateien abrufen, die zum Nachrichtendienst gehören. Beispielsweise kann der Benutzer die Namen aller Dynamic Link Libraries (DLLs) abrufen, die zum Dienst gehören. Der Benutzer kann dann zusätzliche Details zu den angegebenen Dateien einsuchen, z. B. die Namen und Versionsnummern aller DLLs. MAPI verwendet diese Eigenschaften, um eine Unterstützungsdateiliste in einem Dialogfeld für die Auswahl von Messagingbenutzern zu erstellen.
   
-MAPI funktioniert nur mit Dateinamen und anderen Zeichenfolgen, die an den Zeichensatz der Active Directory-Dienstschnittstellen (ANSI) übergeben werden. Client Anwendungen, die Dateinamen in einem OEM-Zeichensatz (Original Equipment Manufacturer) verwenden, müssen Sie vor dem Aufrufen von MAPI in ANSI konvertieren.
+MAPI funktioniert nur mit Dateinamen und anderen Zeichenfolgen, die an sie übergeben werden, im Active Directory Service Interfaces (ANSI)-Zeichensatz. Clientanwendungen, die Dateinamen in einem Oem-Zeichensatz (Original Equipment Manufacturer) verwenden, müssen sie vor dem Aufrufen von MAPI in ANSI konvertieren.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
-### <a name="header-files"></a>Header Dateien
+### <a name="header-files"></a>Headerdateien
 
-Mapidefs. h
+Mapidefs.h
   
-> Stellt Datentypdefinitionen bereit.
+> Bietet Datentypdefinitionen.
     
-Mapitags. h
+Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -58,9 +58,9 @@ Mapitags. h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

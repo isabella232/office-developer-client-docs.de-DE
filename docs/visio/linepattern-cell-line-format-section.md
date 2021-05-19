@@ -26,23 +26,23 @@ Definiert das Linienmuster eines Shapes. Der in die Zelle LinePattern eingegeben
 |1  <br/> |Einfarbig  <br/> |
 |2 - 23  <br/> |Verschiedene Linienmuster  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Sie können sich die Linienmustersammlung auch im Dialogfeld **Linie** ansehen (klicken Sie dazu auf der Registerkarte **Start** in der Gruppe **Shape** auf **Linie**, zeigen Sie auf **Strichlinien**, und klicken Sie dann auf **Weitere Linien**).
   
 Um ein benutzerdefiniertes Linienmuster anzugeben, verwenden Sie die Funktion VERWENDUNG in dieser Zelle.
   
-Wenn Sie einen Verweis auf die Zelle "LinePattern aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle LinePattern anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |"LinePattern  <br/> |
+|Zellenname:  <br/> |LinePattern  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle "LinePattern aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die LinePattern-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowLine** <br/> |
 |Zellenindex:  <br/> |**visLinePattern** <br/> |
    

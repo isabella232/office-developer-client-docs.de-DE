@@ -20,32 +20,32 @@ ms.locfileid: "33417854"
 
 Enthält eine Zeichenfolge, die die Reihenfolge beeinflusst, in der Elemente im Fenster **Shape-Daten** aufgelistet werden. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die zum Vergleichen von SortKey-Werten verwendete Berechnung ist gebietsschemaspezifisch und die Groß-/Kleinschreibung wird nicht berücksichtigt. Wenn SortKey-Werte gleich sind, werden die Shape-Daten in der Zeilenreihenfolge aufgeführt. Shape-Daten ohne Sortierschlüssel werden nach Shape-Daten aufgelistet, die einen Sortierschlüssel enthalten.
+Die berechnung, die zum Vergleichen von SortKey-Werten verwendet wird, ist locale-specific und groß-/kleinschreibungsunempfindlich. Wenn SortKey-Werte gleich sind, werden die Shapedaten in der Zeilenreihenfolge aufgelistet. Shapedaten ohne Sortierschlüssel werden nach Formdaten aufgelistet, die einen Sortierschlüssel enthalten.
   
 Nachfolgend finden Sie ein Beispiel für die Verwendung von Sortierschlüsseln, um die Shape-Daten im Fenster **Shape-Daten** in der folgenden Reihenfolge anzuzeigen: Artikelnummer, Menge, Preis. 
   
- *Zeile, Beschriftung* und *SortKey* verweisen auf Zellen in der Shape-Datenzeile. In diesem Fall wurden diese Zeilen mit Shape-Daten mit einer Bezeichnung versehen. 
+ *Row, Label und*  *SortKey*  beziehen sich auf Zellen in der Shape-Datenzeile. In diesem Fall wurden diese Zeilen mit Shape-Daten mit einer Bezeichnung versehen. 
   
-|**Row**|**Label**|**SortKey**|
+|**Zeile**|**Label**|**SortKey**|
 |:-----|:-----|:-----|
-| Prop. Item  <br/> | Artikelnummer  <br/> | 1  <br/> |
-| Prop. Price  <br/> | Kurs  <br/> | 3  <br/> |
-| Prop. Quan  <br/> | Anzahl  <br/> | 2  <br/> |
+| Prop.Item  <br/> | Artikelnummer  <br/> | 1  <br/> |
+| Prop.Price  <br/> | Kurs  <br/> | 3  <br/> |
+| Prop.Quan  <br/> | Anzahl  <br/> | 2  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle SortKey aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle SortKey anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Prop.  *Name* . SortKey, wobei Prop.  *Name* ist der Name der benutzerdefinierten Eigenschaftszeile.  <br/> |
+| Zellenname:  <br/> | Prop.  *Name*  . SortKey, wobei Prop.  *Name*  ist der Name der benutzerdefinierten Eigenschaftenzeile  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle "SortKey" aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle SortKey nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionProp** <br/> |
-| Zeilenindex:  <br/> |**visRowProp** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowProp**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
 | Zellenindex:  <br/> |**visCustPropsSortKey** <br/> |
    
 

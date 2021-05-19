@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - xlfRegister
 keywords:
-- xlfRegister-Funktion [Excel 2007]
+- xlfregister-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: 3ebbd775-f3d2-4ba7-8835-a5b38ad2267a
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -22,15 +22,15 @@ ms.locfileid: "33416041"
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Kann von einem DLL-oder XLL-Befehl aufgerufen werden, der selbst von Microsoft Excel aufgerufen wurde. Dies entspricht dem Aufrufen von **Register** aus einer Excel-XML-Makrovorlage. 
+Kann über einen DLL- oder XLL-Befehl aufgerufen werden, der selbst von einem Microsoft Excel. Dies entspricht dem Aufrufen **von REGISTER** aus Excel XLM-Makroblatts. 
   
-Die **xlfRegister** -Funktion kann in zwei Formen aufgerufen werden: 
+Die **xlfRegister-Funktion** kann in zwei Formen aufgerufen werden: 
   
-- [xlfRegister (Formular 1)](xlfregister-form-1.md): registriert einen einzelnen Befehl oder eine Funktion.
+- [xlfRegister (Form 1):](xlfregister-form-1.md)Registriert einen einzelnen Befehl oder eine einzelne Funktion.
     
-- xlfRegister (Formular 2): lädt und aktiviert eine XLL.
+- xlfRegister (Form 2): Lädt und aktiviert eine XLL.
     
-Diese Funktion kann nur zum Laden und Aktivieren einer XLL mit einer [xlAutoOpen](xlautoopen.md) -Prozedur verwendet werden. 
+In Form 2 aufgerufen, kann diese Funktion nur zum Laden und Aktivieren einer XLL verwendet werden, die eine [xlAutoOpen-Prozedur](xlautoopen.md) enthält. 
   
 ```cs
 Excel12(xlfRegister, LPXLOPER12 pxRes, 1, LPXLOPER12 pxModuleText);
@@ -44,7 +44,7 @@ Der Name der DLL, die geladen und aktiviert werden soll.
   
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-Bei erfolgreicher Ausführung gibt dieser Wert den Namen der DLL (**xltypeStr**) zurück. Andernfalls wird ein #VALUE zurückgegeben. zurück.
+Wenn dies erfolgreich ist, wird der Name der DLL (**xltypeStr**) zurückgegeben. Andernfalls wird ein #VALUE! zurück.
   
 ## <a name="see-also"></a>Siehe auch
 

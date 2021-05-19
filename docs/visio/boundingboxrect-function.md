@@ -25,7 +25,7 @@ Hinzugefügte Version: Visio 2010
   
 ## <a name="syntax"></a>Syntax
 
-BOUNDINGBOXRECT (* * *Index* * *) 
+BOUNDINGBOXRECT(** *Index* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -37,17 +37,17 @@ BOUNDINGBOXRECT (* * *Index* * *)
 
  **Number**
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
- *Index* kann einer der folgenden Werte sein. 
+ *Index*  kann einer der folgenden Werte sein. 
   
-|**Item**|**Wert**|
+|**Aspekt**|**Wert**|
 |:-----|:-----|
 |Linker Rand  <br/> |0  <br/> |
 |Rechter Rand  <br/> |1  <br/> |
 |Oberer Rand  <br/> |2  <br/> |
 |Unterer Rand  <br/> |3  <br/> |
    
-Wenn die Form über ein übergeordnetes Shape verfügt, ist der Rückgabewert im Koordinatensystem des übergeordneten Elements.
+Wenn das Shape über ein übergeordnetes Shape verfügt, befindet sich der Rückgabewert im Koordinatensystem dieses übergeordneten Shapes.
   
 

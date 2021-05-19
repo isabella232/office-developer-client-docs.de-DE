@@ -25,7 +25,7 @@ ms.locfileid: "33416349"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Definiert die Eigenschaften und die Reihenfolge der Eigenschaften, die als Spalten in der Tabelle angezeigt werden sollen.
+Definiert die bestimmten Eigenschaften und die Reihenfolge der Eigenschaften, die in der Tabelle als Spalten angezeigt werden sollen.
   
 ```cpp
 HRESULT SetColumns(
@@ -38,74 +38,74 @@ ULONG ulFlags
 
  _lpPropTagArray_
   
-> in Zeiger auf ein Array von Eigenschaftstags, das Eigenschaften angibt, die als Spalten in der Tabelle eingeschlossen werden sollen. Der Eigenschaftentyp Teil jedes Tags kann auf einen gültigen Typ oder auf **PR_NULL** festgelegt werden, um Platz für nachfolgende Ergänzungen zu reservieren. Der Parameter _lpPropTagArray_ kann nicht auf NULL festgelegt werden; jede Tabelle muss mindestens eine Spalte enthalten. 
+> [in] Zeiger auf ein Array von Eigenschaftstags, die Eigenschaften identifizieren, die als Spalten in der Tabelle enthalten sein sollen. Der Eigenschaftentypteil jedes Tags kann auf einen  gültigen Typ festgelegt oder PR_NULL, um Platz für nachfolgende Ergänzungen zu reservieren. Der  _lpPropTagArray-Parameter_ kann nicht auf NULL festgelegt werden. Jede Tabelle muss mindestens eine Spalte enthalten. 
     
  _ulFlags_
   
-> in Bitmaske von Flags, die die Rückgabe eines asynchronen Aufrufs an SetColumns steuert, beispielsweise wenn SetColumns in Notification verwendet wird. **** **** Die folgenden Flags können festgelegt werden: 
+> [in] Bitmaske von Flags, die die Rückgabe eines asynchronen Aufrufs von **SetColumns** steuert, z. B. wenn **SetColumns** in der Benachrichtigung verwendet wird. Die folgenden Kennzeichen können festgelegt werden: 
     
 TBL_ASYNC 
   
-> Fordert, dass der Vorgang der Spalten Einstellung asynchron ausgeführt **** wird, sodass SetColumns potenziell zurückgegeben werden können, bevor der Vorgang vollständig abgeschlossen wurde. 
+> Fordert an, dass der Spalteneinstellungsvorgang asynchron ausgeführt wird, wodurch **SetColumns** möglicherweise zurückgesendet wird, bevor der Vorgang vollständig abgeschlossen ist. 
     
 TBL_BATCH 
   
-> Ermöglicht es der Tabelle, den Vorgang der Spalten Einstellung zu verschieben, bis die Daten tatsächlich erforderlich sind.
+> Ermöglicht der Tabelle, den Spalteneinstellungsvorgang so lange zu verschieben, bis die Daten tatsächlich erforderlich sind.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Spalten Einstellung war erfolgreich.
+> Der Spalteneinstellungsvorgang war erfolgreich.
     
 MAPI_E_BUSY 
   
-> Ein weiterer Vorgang wird ausgeführt, der verhindert, dass die Spalten Einstellung gestartet wird. Entweder sollte der ausgeführte Vorgang abgeschlossen oder beendet werden.
+> Ein weiterer Vorgang wird ausgeführt, der verhindert, dass der Spalteneinstellungsvorgang gestartet wird. Der ausgeführte Vorgang sollte entweder abgeschlossen oder beendet werden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Der Spaltensatz einer Tabelle ist die Gruppe von Eigenschaften, die die Spalten für die Zeilen in der Tabelle bilden. Für jeden Tabellentyp ist eine Standardspaltengruppe festgelegt. Der Standardspaltensatz besteht aus den Eigenschaften, die von der Tabellen Implementierung automatisch eingeschlossen werden. Tabellen Benutzer können diese Standardeinstellung ändern, indem Sie die **IMAPITable::** SetColumns-Methode aufrufen. Sie können anfordern, dass andere Spalten dem Standardsatz hinzugefügt werden, wenn die Tabellen Implementierung Sie unterstützt, dass Spalten entfernt werden, oder dass die Reihenfolge der Spalten geändert wird. **** SetColumns gibt die Spalten an, die mit jeder Zeile und der Reihenfolge dieser Spalten innerhalb der Zeile zurückgegeben werden. 
+Der Spaltensatz einer Tabelle ist die Gruppe von Eigenschaften, aus der die Spalten für die Zeilen in der Tabelle besteht. Für jeden Tabellentyp ist ein Standardspaltensatz festgelegt. Der Standardspaltensatz besteht aus den Eigenschaften, die der Tabellen implementier automatisch enthält. Tabellenbenutzer können diesen Standardsatz ändern, indem sie die **IMAPITable::SetColumns-Methode** aufrufen. Sie können anfordern, dass dem Standardsatz weitere Spalten hinzugefügt werden, wenn der Tabellen implementier sie unterstützt, dass Spalten entfernt oder die Reihenfolge der Spalten geändert wird. **SetColumns** gibt die Spalten an, die mit jeder Zeile zurückgegeben werden, und die Reihenfolge dieser Spalten innerhalb der Zeile. 
   
-Der Erfolg des SetColumns-Vorgangs ist nur offensichtlich, nachdem ein weiterer Aufruf ausgeführt wurde, um die Daten der Tabelle abzurufen. **** Es werden dann Fehler gemeldet. 
+Der Erfolg des **SetColumns-Vorgangs** wird erst sichtbar, nachdem ein nachfolgender Aufruf zum Abrufen der Daten der Tabelle erfolgt ist. Dann werden Fehler gemeldet. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Einige Anbieter lassen einen **** SetColumns-Aufruf nur Tabellenspalten zu, die Teil der verfügbaren Spalten für eine Tabellenansicht sind. Andere Anbieter ermöglichen einen **** SetColumns-Aufruf zum Sortieren aller Tabellenspalten, einschließlich der Eigenschaften, die nicht im ursprünglichen Spaltensatz enthalten sind. 
+Einige Anbieter lassen einen **SetColumns-Aufruf** zu, um nur Tabellenspalten zu bestellen, die Teil der verfügbaren Spalten für eine Tabellenansicht sind. Andere Anbieter ermöglichen einen **SetColumns-Aufruf,** um alle Tabellenspalten zu sortieren, einschließlich derjenigen, die Eigenschaften enthalten, die nicht im ursprünglichen Spaltensatz enthalten sind. 
   
-Wenn TBL_BATCH für asynchrone Vorgänge festgelegt ist, sollten Anbieter einen Eigenschaftentyp von PT_ERROR und einen Eigenschaftswert von NULL für Spalten zurückgeben, die nicht unterstützt werden.
+Wenn TBL_BATCH für asynchrone Vorgänge festgelegt ist, sollten Anbieter den Eigenschaftstyp PT_ERROR und den Eigenschaftswert NULL für Spalten zurückgeben, die nicht unterstützt werden.
   
-Sie müssen nicht auf das TBL_ASYNC-Flag Antworten, das die asynchrone Operation anfordert. Wenn Sie die asynchrone Spaltensatz Definition nicht unterstützen, führen Sie den Vorgang synchron aus. Wenn Sie das TBL_ASYNC-Flag unterstützen können und ein weiterer asynchroner Vorgang noch ausgeführt wird, geben Sie MAPI_E_BUSY zurück. Andernfalls wird S_OK zurückgegeben, unabhängig davon, ob Sie alle im Property-Tag-Array enthaltenen Eigenschaften unterstützen. Fehler, die aus nicht unterstützten Eigenschaften resultieren, sollten von **IMAPITable** -Methoden zurückgegeben werden, die Daten wie **QueryRows**abrufen. 
+Sie müssen nicht auf das TBL_ASYNC reagieren, das anfordert, dass der Vorgang asynchron ist. Wenn Sie keine asynchrone Spaltensatzdefinition unterstützen, führen Sie den Vorgang synchron aus. Wenn Sie das TBL_ASYNC unterstützen können und ein weiterer asynchroner Vorgang noch ausgeführt wird, geben Sie die MAPI_E_BUSY. Andernfalls geben Sie S_OK zurück, unabhängig davon, ob Sie alle Eigenschaften unterstützen, die im Eigenschaftentagarray enthalten sind. Fehler, die sich aus nicht unterstützten Eigenschaften ergeben, sollten von **IMAPITable-Methoden** zurückgegeben werden, die Daten abrufen, z. B. **QueryRows**. 
   
-Generieren Sie keine Benachrichtigungen für Tabellenzeilen, die durch Aufrufe von **Restrict**ausgeblendet werden. 
+Generieren Sie keine Benachrichtigungen für Tabellenzeilen, die durch Aufrufe von Restrict ausgeblendet **werden.** 
   
-Beim Senden von Tabellen Benachrichtigungen muss die Reihenfolge der Eigenschaften im **Row** -Element der [TABLE_NOTIFICATION](table_notification.md) -Struktur und der durch den letzten SetColumns-Aufruf angegebenen Reihenfolge mit dem Zeitpunkt übereinstimmen, zu dem die Benachrichtigungsanforderung **** gesendet wurde. 
+Beim Senden von Tabellenbenachrichtigungen müssen  die Reihenfolge der Eigenschaften im Zeilenm member der [TABLE_NOTIFICATION-Struktur](table_notification.md) und die durch den letzten **SetColumns-Aufruf** angegebene Reihenfolge mit dem Zeitpunkt identisch sein, zu dem die Benachrichtigungsanforderung gesendet wurde. 
   
-Ein weiteres Flag, TBL_BATCH, ermöglicht es Aufrufern, anzugeben, dass die Tabellen Implementierung die Auswertung der Ergebnisse des Vorgangs bis zu einem späteren Zeitpunkt zurückstellen kann. Wenn möglich, sollten Anrufer dieses Flag festlegen, da der Batchvorgang die Leistung verbessert.
+Ein weiteres Flag, TBL_BATCH, ermöglicht Anrufern anzugeben, dass der Tabellen implementierer die Auswertung der Ergebnisse des Vorgangs auf einen späteren Zeitpunkt zurückdingen kann. Wenn möglich, sollten Anrufer dieses Flag festlegen, da der Batchvorgang die Leistung verbessert.
   
-Es ist oft hilfreich, wenn Anrufer einige Spalten im abgerufenen Zeilensatz für Werte reservieren, die später hinzugefügt werden sollen. Anrufer tun dies, indem Sie **PR_NULL** ([pidtagnull (](pidtagnull-canonical-property.md)) an den gewünschten Positionen im Property Tag-Array an **** SetColumns übergeben; die Tabelle übergibt dann **PR_NULL** an diesen Positionen in allen Zeilen, die mit **QueryRows**abgerufen werden.
+Für Anrufer ist es häufig praktisch, einige Spalten im abgerufenen Zeilensatz für Werte zu reservieren, die später hinzugefügt werden. Aufrufer tun **dies, indem PR_NULL** ([PidTagNull](pidtagnull-canonical-property.md)) an den gewünschten Positionen im Eigenschaftstagarray platziert werden, das an **SetColumns übergeben wird;** Die Tabelle gibt dann die PR_NULL **an** diesen Positionen in allen Zeilen zurück, die mit **QueryRows abgerufen werden.**
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Beim Erstellen des Eigenschaftentag Arrays für den Parameter _lpPropTagArray_ ordnen Sie die Tags in der Reihenfolge an, in der die Spalten in der Tabellenansicht angezeigt werden sollen. 
+Beim Erstellen des Eigenschaftentagarrays für den  _lpPropTagArray-Parameter_ müssen Sie die Tags in der Reihenfolge sortieren, in der die Spalten in der Tabellenansicht angezeigt werden sollen. 
   
-Sie können mehrwertige Eigenschaften angeben, die in den Spaltensatz eingeschlossen werden sollen, indem Sie das Flag für mehrwertige Instanzen oder MVI_FLAG-Konstante auf das Property-Tag anwenden. Legen Sie dieses Flag fest, indem Sie das Property-Tag für die einwertige Version der Eigenschaft wie folgt als Parameter an das MVI_PROP-Makro übergeben:
+Sie können mehrwertige Eigenschaften angeben, die in den Spaltensatz eingeschlossen werden sollen, indem Sie das Kennzeichen der mehrwertigen Instanz oder MVI_FLAG Eigenschaftstags anwenden. Legen Sie dieses Flag durch Übergeben des Eigenschaftstags für die einwertig version der Eigenschaft als Parameter an das MVI_PROP makro wie folgt:
   
 ```
 MVI_PROP(ulPropTag)
 
 ```
 
-Das MVI_PROP-Makro legt MVI_FLAG für die Eigenschaft fest, wobei das Tag in ein mehrwertiges Tag verwandelt wird. Wenn Sie fälschlicherweise versuchen, MVI_PROP für eine einwertige Eigenschaft aufzurufen, ignoriert MAPI den Aufruf und lässt das Tag der Eigenschaft unverändert. 
+Das MVI_PROP-Makro wird MVI_FLAG eigenschaft festlegen und das Tag in ein mehrwertiges Tag umfunktioniert. Wenn Sie fälschlicherweise versuchen, MVI_PROP einer einwertigen Eigenschaft auf aufruft, ignoriert MAPI den Aufruf und belassen das Eigenschaftstag unverändert. 
   
-Sie können Eigenschaftstags, die auf **PR_NULL** festgelegt sind, im Property-Tag-Array einfügen, um Platz im Spaltensatz zu reservieren. Durch das Reservieren von Speicherplatz können Sie zu einem Spaltensatz hinzufügen, ohne ein neues Property-Tag-Array zuweisen zu müssen. 
+Sie können Eigenschaftstags, die auf PR_NULL festgelegt sind, in das Eigenschaftentagarray **hinzufügen,** um Platz im Spaltensatz zu reservieren. Wenn Sie Speicherplatz reservieren, können Sie einem Spaltensatz hinzufügen, ohne ein neues Eigenschaftentagarray zuweisen zu müssen. 
   
-Wenn der Aufruf von **** SetColumns eine Änderung an der Reihenfolge der Spalten einer Tabelle bewirkt und eine oder mehrere dieser Spalten eine mehrwertige Eigenschaft darstellen, ist es möglich, dass die Anzahl der Zeilen in der Tabelle erhöht wird. In diesem Fall werden alle Lesezeichen für die Tabelle verworfen. Weitere Informationen zur Auswirkung von mehrwertigen Spalten auf Tabellen finden Sie unter [Working with](working-with-multivalued-columns.md)mehr-Valued Columns.
+Wenn der Aufruf von **SetColumns** eine Änderung der Reihenfolge der Spalten einer Tabelle bewirkt und eine oder mehrere dieser Spalten eine mehrwertige Eigenschaft darstellen, kann die Anzahl der Zeilen in der Tabelle erhöht werden. In diesem Fall werden alle Lesezeichen für die Tabelle verworfen. Weitere Informationen dazu, wie sich mehrwertige Spalten auf Tabellen auswirken, finden Sie unter [Working with Multivalued Columns](working-with-multivalued-columns.md).
   
-Das Festlegen von Spalten ist standardmäßig ein synchroner Vorgang. Sie können jedoch zulassen, dass die Tabelle den Vorgang so lange verschiebt, bis die Daten erforderlich sind, indem Sie das TBL_BATCH-Flag festlegen. Durch Festlegen dieses Flags kann die Leistung verbessert werden. Ein weiteres Flag, TBL_ASYNC, macht den Vorgang asynchron **** , sodass SetColumns zurückgegeben werden können, bevor der Vorgang abgeschlossen ist. Um zu bestimmen, wann der Abschluss auftritt, rufen Sie [IMAPITable:: GetStatus](imapitable-getstatus.md)auf.
+Das Festlegen von Spalten ist standardmäßig ein synchroner Vorgang. Sie können jedoch zulassen, dass die Tabelle den Vorgang so lange verschiebt, bis die Daten benötigt werden, indem Sie TBL_BATCH festlegen. Das Festlegen dieses Kennzeichens kann die Leistung verbessern. Ein weiteres Flag, TBL_ASYNC, macht den Vorgang asynchron, sodass **SetColumns** zurückgeben kann, bevor der Vorgang abgeschlossen ist. Rufen Sie [IMAPITable::GetStatus](imapitable-getstatus.md)auf, um zu bestimmen, wann der Abschluss erfolgt.
   
-Wenn ein Aufruf von **** SetColumns MAPI_E_BUSY zurückgibt, was bedeutet, dass ein anderer Vorgang das Starten des Vorgangs verhindert, können Sie [IMAPITable:: Abort](imapitable-abort.md) aufrufen, um den laufenden Vorgang zu beenden. 
+Wenn ein Aufruf von **SetColumns** MAPI_E_BUSY, der angibt, dass ein anderer Vorgang das Starten des Vorgangs verhindert, können Sie [IMAPITable::Abort](imapitable-abort.md) aufrufen, um den ausgeführten Vorgang zu beenden. 
   
-Sie können auch [HrAddColumnsEx](hraddcolumnsex.md) aufrufen, um einen Spaltensatz zu ändern. Der Unterschied zwischen **HrAddColumnsEx** und **IMAPITable::** SetColumns besteht darin, dass **HrAddColumnsEx** nicht so flexibel ist; Es können nur Spalten hinzugefügt werden. Die zusätzlichen Spalten werden am Anfang des Spaltensatzes angeordnet; alle vorhandenen Spalten werden nach diesen Spalten angezeigt. 
+Sie können auch [HrAddColumnsEx aufrufen,](hraddcolumnsex.md) um einen Spaltensatz zu ändern. Der Unterschied zwischen **HrAddColumnsEx und** **IMAPITable::SetColumns** ist, dass **HrAddColumnsEx** weniger flexibel ist. Es können nur Spalten hinzugefügt werden. Die zusätzlichen Spalten werden am Anfang des Spaltensatzs platziert. alle vorhandenen Spalten werden nach diesen Spalten angezeigt. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -113,7 +113,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|ContentsTableListCtrl. cpp  <br/> |CContentsTableListCtrl::D oSetColumns  <br/> |MFCMAPI verwendet die **IMAPITable::** SetColumns-Methode, um die gewünschten Spalten für die Tabelle festzulegen.  <br/> |
+|ContentsTableListCtrl.cpp  <br/> |CContentsTableListCtrl::D oSetColumns  <br/> |MFCMAPI verwendet die **IMAPITable::SetColumns-Methode,** um die gewünschten Spalten für die Tabelle festlegen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

@@ -21,24 +21,24 @@ ms.locfileid: "33418547"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bei ausgehenden Nachrichten im MIME-Modus hängt der Inhaltstyp davon ab, ob Anlagen vorhanden sind und wie der Nachrichtentext aussieht. Wenn es Anlagen gibt, ist der Inhaltstyp multipart _/mixed;_ der Nachrichtentext und jede Anlage werden ein separater Teil des Nachrichteninhalts, jeder mit seinem eigenen Inhaltstyp. Wenn keine Anlagen vorhanden sind, ist der Inhaltstyp der Nachricht _Text/Plain_ , und es gibt nur einen Teil. 
+Für ausgehende Nachrichten im MIME-Modus hängt der Inhaltstyp davon ab, ob Anlagen enthalten sind und wie der Nachrichtentext aussieht. Wenn Anlagen enthalten sind, ist der Inhaltstyp  _mehrteilig/gemischt._ Der Nachrichtentext und jede Anlage werden zu einem separaten Teil des Nachrichteninhalts, jeweils mit einem eigenen Inhaltstyp. Wenn keine Anlagen enthalten sind, ist der Inhaltstyp der Nachricht  _text/plain,_ und es gibt nur einen Teil. 
   
-Der Nachrichtentext ist nicht mit einer Zeile umschlossen, es sei denn, eine Zeile überschreitet 140 Zeichen. Wenn dies der Fall ist, wird der gesamte Text in 76 Spalten umbrochen, und die _angegebene-druckbare_ Codierung wird verwendet, um Zeilenumbrüche beizubehalten. Der Inhaltstyp hängt wie folgt von den Zeichen im Nachrichtentext ab: 
+Der Nachrichtentext ist nur dann zeilengepackt, wenn eine Zeile mehr als 140 Zeichen lang ist. Wenn dies der Derb ist, wird der gesamte Text in 76 Spalten umbrochen, und die  _quoted-printable-Codierung_ wird verwendet, um Zeilenumbrüche zu erhalten. Der Inhaltstyp hängt davon ab, welche Zeichen im Nachrichtentext wie folgt gefunden werden: 
   
-- Wenn nur 7-Bit-Zeichen gefunden werden und keine Zeile mehr als 140 Zeichen lang ist, handelt es sich bei der Nachricht um ASCII-Text. _Inhaltstyp: text/plain; charset = US-ASCII_ (Content-Transfer-Encoding = 7bit wird angenommen.) 
+- Wenn nur 7-Bit-Zeichen gefunden werden und keine Zeile mehr als 140 Zeichen lang ist, ist die Nachricht ASCII-Text. _Inhaltstyp: text/plain; charset=us-ascii_ (Content-Transfer-Encoding=7bit wird angenommen.) 
     
-- Wenn lange Zeilen oder 8-Bit-Zeichen gefunden werden, ist die Nachricht Text, und der Zeichensatz wird vom Gebietsschema bestimmt. Sie sollte aus den vom ISO-Standard 8859 definierten Zeichensätzen ausgewählt werden. _Inhaltstyp: text/plain; charset = ISO-8859-1_ (oder ein anderer gültiger Zeichensatz) 
+- Wenn lange Zeilen oder 8-Bit-Zeichen gefunden werden, ist die Nachricht Text, und der Zeichensatz wird durch das Locale bestimmt. Sie sollte aus den Zeichensätzen ausgewählt werden, die durch den ISO-Standard 8859 definiert sind. _Inhaltstyp: text/plain; charset=iso-8859-1_ (oder ein anderer gültiger Zeichensatz) 
     
      _Content-Transfer-Encoding: quoted-printable_
     
-Bei eingehenden MIME-Nachrichten, wenn der erste Nachrichteninhalts Bereich _Content-Type:\* Text/_ (also ein beliebiger Texttyp) und dessen Zeichensatz erkannt wird, wird er **PR_BODY** ([pidtagbody (](pidtagbody-canonical-property.md)) zugeordnet. Ein erster Nachrichteninhalts Teil, der dieses Kriterium nicht erfüllt, wird zu einer Anlage. Alle nachfolgenden Teile werden auch zu Anlagen.
+Wenn der erste Nachrichteninhaltsteil für eingehende #A0 den Inhaltstyp _"Content": Text/ \*_ (d. h. einen beliebigen Texttyp) hat und dessen Zeichensatz erkannt wird, wird er **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) zugeordnet. Ein erster Nachrichteninhaltsteil, der diesem Kriterium nicht entspricht, wird zu einer Anlage. Alle nachfolgenden Teile werden auch zu Anlagen.
   
-Im UUEncode-Modus ist der Nachrichtentext in ausgehenden Nachrichten in 78 Spalten Zeilenumbruch, wie bei MS Mail 3. x. Der Inhaltstyp ist "Text/Plain". Wenn Sie die Absatzumbrüche der ursprünglichen Nachricht unter diesen Umständen beibehalten möchten, beachten Sie die folgenden Konventionen im eingebundenen Text. Es gibt drei mögliche Gründe, um eine Textzeile mit einer eigenen Zeichenfolge zu beenden:
+Im uuencode-Modus wird Nachrichtentext in ausgehenden Nachrichten wie bei MS Mail 3.x in 78 Spalten umschlossen. Der Inhaltstyp ist "text/plain". Beachten Sie die folgenden Konventionen im umschlossenen Text, um die Absatzumbrüche der ursprünglichen Nachricht unter diesen Umständen zu erhalten. Es gibt drei mögliche Gründe für das Beenden einer Textzeile mit jeweils einer eigenen Zeichensequenz:
   
-- Linien Umbruch. Der ursprüngliche Text enthielt einen vom Benutzer eingegebenen Zeilenumbruch (Absatzmarke). Im Transport wird dieser einem Zeilenumbruch ohne vorstehende Leerzeichen zugeordnet. Wenn der Benutzer eine Zeile mit Leerzeichen vorangestellt wird, sollten die Leerzeichen entfernt werden.
+- Zeilenbruch. Der ursprüngliche Text enthielt eine vom Benutzer eingegebene Newline (Absatzmarke). Im Transport wird dies einer Newline ohne vorangehende Leerstellen zuordnungen. Wenn der Benutzer eine Newline einbetritt, der Leerzeichen vorangehen, sollten die Leerstellen entfernt werden.
     
-- Linien NOBREAK. Der ursprüngliche Text enthielt ein Wort zu lang, um in eine einzelne Zeile der Nachricht einzufügen. Im Transport wird eine Zeile mit zwei Leerzeichen vorangestellt.
+- Line-nobreak. Der ursprüngliche Text enthielt ein Wort, das zu lang war, um in eine einzelne Zeile der Nachricht zu passen. Im Transport wird dies einer Newline mit zwei Leerzeichen voranstellen.
     
-- Zeilenumbruch. Der ursprüngliche Text enthielt keinen Zeilenumbruch, der Text ist zu lang für eine einzelne Zeile der Nachricht, er kann jedoch zwischen zwei Wörtern unterbrochen werden. Im Transport wird dieser einem Zeilenumbruch, der mit einem einzelnen Leerzeichen vorangestellt ist, zugeordnet.
+- Zeilenumbruch. Der ursprüngliche Text enthielt keine Newline, der Text ist zu lang, um in eine einzelne Zeile der Nachricht zu passen, er kann jedoch zwischen zwei Wörtern unterbrochen werden. Im Transport wird dies einer Newline mit einem einzigen Leeren voranstellen.
     
 

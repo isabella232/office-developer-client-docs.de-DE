@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 52f9a53c-1292-4f8a-2a76-82bca650f5ac
-description: Gibt die Unterschiede in Hue zwischen color1 und color2 zurück.
+description: Gibt den Farbtonunterschied zwischen Color1 und Color2 zurück.
 ms.openlocfilehash: b427be9f6d46f11aaa18b33dab21b10c05e9dda0
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,11 +16,11 @@ ms.locfileid: "33416664"
 ---
 # <a name="huediff-function"></a>HUEDIFF Function
 
-Gibt die Unterschiede in Hue zwischen _color1_ und _color2_zurück.
+Gibt den Farbtonunterschied zwischen _Color1_ und _Color2 zurück._
   
 ## <a name="syntax"></a>Syntax
 
-HUEDIFF (* * *color1* * *, * * *color2* * *) 
+HUEDIFF(** *color1* **, ** *color2* ** ) 
   
 ### <a name="parameters"></a>Parameter
 

@@ -25,13 +25,13 @@ ms.locfileid: "33416524"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ordnet einen SCODE-Rückgabewert aus einem OLE-Speicherobjekt einem HRESULT-Typ zu. 
+Karten einen SCODE-Rückgabewert aus einem OLE-Speicherobjekt in einen HRESULT-Typ. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |IMessage. h  <br/> |
+|Headerdatei  <br/> |Imessage.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 SCODE MapStorageSCode(
@@ -43,21 +43,21 @@ SCODE MapStorageSCode(
 
  _StgSCode_
   
-> in MAPI-SCODE-Rückgabewert aus einem OLE-Speicherobjekt, das einem HRESULT-Wert zugeordnet werden soll.
+> [in] MAPI-SCODE-Rückgabewert aus einem OLE-Speicherobjekt, das einem HRESULT-Wert zugeordnet werden soll.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Aufruf war erfolgreich und hat den erwarteten Wert zurückgegeben.
+> Der Aufruf ist erfolgreich und hat den erwarteten Wert zurückgegeben.
     
 MAPI_E_CALL_FAILED 
   
 > Die Funktion kann keinen übereinstimmenden Wert finden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-MAPI stellt die **MapStorageSCode** -Funktion für die interne Verwendung von MAPI-Komponenten bereit, die Ihre Nachrichten Implementierungen auf die Nachrichten-DLL basieren. Da diese Komponenten OLE-Speicher selbst öffnen, müssen Sie in der Lage sein, für Probleme mit OLE-Speicher zurückgegebene Fehlerwerte einem HRESULT-Wert zuzuordnen. 
+MAPI stellt die **MapStorageSCode-Funktion** für die interne Verwendung von MAPI-Komponenten zur Verfügung, die ihre Nachrichtenimplementierung auf der Nachrichten-DLL erstellen. Da diese Komponenten den OLE-Speicher selbst öffnen, müssen sie Fehlerwerte, die für Probleme mit dem OLE-Speicher zurückgegeben werden, einem HRESULT-Wert zuordnungen können. 
   
 Weitere Informationen finden Sie unter [Structured Storage](structured-storage-in-mapi.md). 
   

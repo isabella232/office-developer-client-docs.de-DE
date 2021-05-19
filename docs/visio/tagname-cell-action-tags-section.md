@@ -23,22 +23,22 @@ Der Name des Aktionstags, das als Schlüssel verwendet wird, um das Aktionstag s
 > [!NOTE]
 > In früheren Versionen von Microsoft Visio werden Aktionstags als Smarttags bezeichnet. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
- Die Zelle TagName im Abschnitt Aktions Tags arbeitet zusammen mit der Zelle TagName im Abschnitt Aktionen, um den Aktionen ein Aktionstag zuzuordnen. Zeilen im Abschnitt Actions haben auch eine Zelle TagName, und diese Zeilen mit dem gleichen TagName-Zellenwert als diese Zelle definieren Aktionen, die für dieses Aktionstag ausgeführt werden sollen. 
+ Die Zelle TagName im Abschnitt Aktionstags arbeitet mit der Zelle TagName im Abschnitt Aktionen zusammen, um den Aktionen ein Aktionstag zuzuordnen. Zeilen im Abschnitt Aktionen haben auch eine TagName-Zelle, und diese Zeilen mit demselben TagName-Zellwert wie diese Zelle definieren Aktionen, die für dieses Aktionstag zu ergreifen sind. 
   
-Wenn Sie einen Verweis auf die Zelle TagName aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die TagName-Zelle anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Smarttags.  *Name* . TagName, wobei SmartTags. *Name* ist der Name der Zeile mit dem Aktionstag.  <br/> |
+| Zellenname:  <br/> | SmartTags.  *Name*  . TagName, wobei SmartTags. *Name*  ist der Name der Aktionstagzeile  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle TagName aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die TagName-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionSmartTag** <br/> |
-| Zeilenindex:  <br/> |**visRowSmartTag** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowSmartTag**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
 | Zellenindex:  <br/> |**visSmartTagName** <br/> |
    
 

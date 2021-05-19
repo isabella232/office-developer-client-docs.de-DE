@@ -1,5 +1,5 @@
 ---
-title: Empfangsordner Tabellen
+title: Empfangen von Ordnertabellen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,21 +15,21 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33417350"
 ---
-# <a name="receive-folder-tables"></a>Empfangsordner Tabellen
+# <a name="receive-folder-tables"></a>Empfangen von Ordnertabellen
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine Receive Folder-Tabelle enthält Informationen für alle Ordner, die als Empfangsordner für einen Nachrichtenspeicher festgelegt wurden. Ein Empfangsordner ist ein Ordner, in dem eingehende Nachrichten einer bestimmten Nachrichtenklasse abgelegt werden. Nachrichtenspeicher Anbieter implementieren Empfänger Ordner Tabellen und Clientanwendungen verwenden Sie, indem Sie die [IMsgStore:: GetReceiveFolderTable](imsgstore-getreceivefoldertable.md) -Methode aufrufen. 
+Eine Tabelle mit Empfangsordnern enthält Informationen zu allen Ordnern, die als Empfangsordner für einen Nachrichtenspeicher festgelegt sind. Ein Empfangsordner ist ein Ordner, in dem eingehende Nachrichten einer bestimmten Nachrichtenklasse platziert werden. Nachrichtenspeicheranbieter implementieren Empfangsordnertabellen, und Clientanwendungen verwenden sie, indem sie die [IMsgStore::GetReceiveFolderTable-Methode](imsgstore-getreceivefoldertable.md) aufrufen. 
   
-Die folgenden Eigenschaften sind der erforderliche Spaltensatz in den Tabellen des Empfangs Ordners:
+Die folgenden Eigenschaften stellen die erforderliche Spaltenmappe in den Tabellen des Empfangsordners zusammen:
   
  **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) 
   
  **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) 
   
- **PR_RECORD_KEY** ([Pidtagrecordkey (](pidtagrecordkey-canonical-property.md)) 
+ **PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md)) 
   
 ## <a name="see-also"></a>Siehe auch
 

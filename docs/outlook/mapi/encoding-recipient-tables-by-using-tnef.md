@@ -1,5 +1,5 @@
 ---
-title: Codieren von Empfänger Tabellen mithilfe von TNEF
+title: Codieren von Empfängertabellen mithilfe von TNEF
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,14 +15,14 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33417959"
 ---
-# <a name="encoding-recipient-tables-by-using-tnef"></a>Codieren von Empfänger Tabellen mithilfe von TNEF
+# <a name="encoding-recipient-tables-by-using-tnef"></a>Codieren von Empfängertabellen mithilfe von TNEF
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die Codierung einer Empfängertabelle in den TNEF-Datenstrom ist selten erforderlich, da die meisten Messagingsysteme Empfängerlisten direkt unterstützen. Im Allgemeinen werden die Empfänger Eigenschaften im Nachrichtenkopf übertragen. Wenn die Empfängertabelle erforderlich ist, kann TNEF die Empfängertabelle als Teil ihrer üblichen Verarbeitung codieren. Dies erfolgt in der ersten Phase der TNEF-Verarbeitung. Der Transportanbieter kann die Empfängertabelle der Nachricht einschließen, indem er die [ITnef::](itnef-addprops.md) AddProps-Methode mit der in der Aufnahmeliste angegebenen **PR_MESSAGE_RECIPIENTS** ([pidtagmessagerecipients (](pidtagmessagerecipients-canonical-property.md))-Eigenschaft aufruft. TNEF Ruft die Empfängertabelle aus der Nachricht ab, fragt den Spaltensatz ab und verarbeitet jede Zeile der Tabelle im TNEF-Stream.
+Die Codierung einer Empfängertabelle in den TNEF-Stream ist selten erforderlich, da die meisten Messagingsysteme Empfängerlisten direkt unterstützen. Im Allgemeinen werden die Empfängereigenschaften im Nachrichtenkopf übertragen. Wenn die Aufnahme der Empfängertabelle erforderlich ist, kann TNEF die Empfängertabelle als Teil der üblichen Verarbeitung codieren. Dies erfolgt während der ersten Phase der TNEF-Verarbeitung. Der Transportanbieter kann die Empfängertabelle der Nachricht enthalten, indem die [ITnef::AddProps-Methode](itnef-addprops.md) mit der in der Inklusionsliste angegebenen **PR_MESSAGE_RECIPIENTS** ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) -Eigenschaft aufruft. TNEF ruft die Empfängertabelle aus der Nachricht ab, fragt den Spaltensatz ab und verarbeitet jede Zeile der Tabelle in den TNEF-Stream.
   
-Eine alternative Methode ist verfügbar, wenn der Transportanbieter die Empfängertabelle ändern muss, bevor Sie codiert wird. Der Transportanbieter kann die erforderliche Tabelle erstellen und dann die [ITnef:: EncodeRecips](itnef-encoderecips.md) -Methode aufrufen. Wenn NULL im _lpRecipTable_ -Parameter übergeben wird, wird die Empfängertabelle direkt aus der Nachricht übernommen, wie unter **ITnef::** AddProps beschrieben.
+Eine alternative Methode ist verfügbar, wenn der Transportanbieter die Empfängertabelle ändern muss, bevor sie codiert wird. Der Transportanbieter kann die erforderliche Tabelle erstellen und dann die [ITnef::EncodeRecips-Methode](itnef-encoderecips.md) aufrufen. Wenn NULL im  _lpRecipTable-Parameter_ übergeben wird, wird die Empfängertabelle wie für **ITnef::AddProps** beschrieben direkt aus der Nachricht übernommen.
   
 

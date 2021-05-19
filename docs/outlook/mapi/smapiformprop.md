@@ -29,7 +29,7 @@ Beschreibt eine benannte Eigenschaft, die mit einem Formular verwendet wird.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiform. h  <br/> |
+|Headerdatei  <br/> |Mapiform.h  <br/> |
    
 ```cpp
 typedef struct _SMAPIFormProp
@@ -56,19 +56,19 @@ typedef struct _SMAPIFormProp
 
  **ulFlags**
   
-> Flags, mit denen das Format der Zeichenfolgen in der **SMAPIFormProp** -Struktur unterschieden wird. Das folgende Flag kann festgelegt werden: 
+> Flags, die zum Unterscheiden des Formats der Zeichenfolgen in der **SMAPIFormProp-Struktur verwendet** werden. Das folgende Flag kann festgelegt werden: 
     
 MAPI_UNICODE 
   
-> Die zurückgegebenen Zeichenfolgen sind im Unicode-Format. Wenn MAPI_UNICODE nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format.
+> Die zurückgegebenen Zeichenfolgen sind im Unicode-Format. Wenn MAPI_UNICODE nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format angezeigt.
     
  **nPropType**
   
-> Typ der benannten Eigenschaft, wobei das bedeutendste Wort auf NULL festgelegt ist. 
+> Typ der benannten Eigenschaft, bei der das wichtigste Wort auf Null festgelegt ist. 
     
  **nmid**
   
-> Name für die benannte Eigenschaft, die eine **GUID** -Struktur enthält, die den Eigenschaftensatz identifiziert, und entweder einen numerischen oder einen String-Wert, der eine Schnittstellen-ID und einen Formularnamen darstellt. 
+> Name für die benannte Eigenschaft, die eine **GUID-Struktur** enthält, die den Eigenschaftensatz identifiziert, sowie einen numerischen wert oder einen Zeichenfolgenwert, der eine Schnittstellen-ID und einen Formularnamen darstellt. 
     
  **pszDisplayName**
   
@@ -76,35 +76,35 @@ MAPI_UNICODE
     
  **nSpecialType**
   
-> Wert, der den Typ der im **u** -Element enthaltenen Daten beschreibt. Folgende Werte sind möglich: 
+> Wert, der den Typ der im u-Element enthaltenen **Daten** beschreibt. Mögliche Werte sind: 
     
 FPST_VANILLA 
   
-> Der **u** -Member enthält keine Enumeration. 
+> Das **u-Element** enthält keine Enumeration. 
     
 FPST_ENUM_PROP 
   
-> Das **u** -Element enthält eine Struktur, die eine Enumeration beschreibt. 
+> Das **u-Element** enthält eine Struktur, die eine Enumeration beschreibt. 
     
  **u**
   
-> Union, die die Zuordnung zwischen dem Namen und der Nummer der benannten Eigenschaft beschreibt. Bei Verwendung einiger Eigenschaften ist das **u** -Element leer. Mit anderen Eigenschaften wird es in einer Struktur dargestellt, die aus den folgenden Elementen besteht: 
+> Union, die die Zuordnung zwischen dem Namen und der Nummer der benannten Eigenschaft beschreibt. Mithilfe einiger Eigenschaften ist das **u-Element** leer. Bei anderen Eigenschaften wird sie in einer Struktur dargestellt, die aus den folgenden Mitgliedern besteht: 
     
  **nmidIdx**
   
-> Die [MAPINAMEID](mapinameid.md) -Struktur, die den Eigenschaftensatz und Bezeichner für die benannte Eigenschaft enthält. 
+> Die [MAPINAMEID-Struktur,](mapinameid.md) die den Eigenschaftensatz und den Bezeichner für die benannte Eigenschaft enthält. 
     
  **cfpevAvailable**
   
-> Die Anzahl der [SMAPIFormPropEnumVal](smapiformpropenumval.md) -Strukturen im Array, auf die vom **pfpevAvailable** -Element verwiesen wird. 
+> Anzahl der [SMAPIFormPropEnumVal-Strukturen](smapiformpropenumval.md) im Array, auf die das **pfpevAvailable-Element verweist.** 
     
  **pfpevAvailable**
   
-> Zeiger auf ein Array von **SMAPIFormPropEnumVal** -Strukturen, die jeweils einen Wert für die benannte Eigenschaft enthält. 
+> Zeiger auf ein Array von **SMAPIFormPropEnumVal-Strukturen,** von denen jede einen Wert für die benannte Eigenschaft enthält. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **SMAPIFormProp** -Struktur enthält Informationen zu einer Formulareigenschaft, die als Teil der Definitionen der [IMAPIFormInfo](imapiforminfoimapiprop.md) -Schnittstelle verwendet wird. **nSpecialType** enthält ein Tag, das für die **u** -Union gilt, die Teil von **SMAPIFormProp**ist.
+Die **SMAPIFormProp-Struktur** enthält Informationen zu einer Formulareigenschaft, die als Teil der Definitionen der [IMAPIFormInfo-Schnittstelle verwendet](imapiforminfoimapiprop.md) wird. **nSpecialType** enthält ein Tag, das für die **u-Union** gilt, die Teil von **SMAPIFormProp ist.**
   
 ## <a name="see-also"></a>Siehe auch
 

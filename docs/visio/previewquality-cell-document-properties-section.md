@@ -23,23 +23,23 @@ Bestimmt, ob die Zeichnungsvorschau Entwurfsqualität hat oder detailgetreu sein
 |**Wert**|**PreviewQuality**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
 | 0  <br/> | Entwurf  <br/> |**visDocPreviewQualityDraft** <br/> |
-| 1  <br/> | Detaillierte  <br/> |**visDocPreviewQualityDetailed** <br/> |
+| 1  <br/> | Detailliert  <br/> |**visDocPreviewQualityDetailed** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Sie können diesen Wert auch im Dialogfeld **Eigenschaften** auf der Registerkarte **Zusammenfassung** festlegen (Klicken Sie auf die **Office** -Schaltfläche, klicken Sie auf die Registerkarte **Info** , klicken Sie auf **Dokumenteigenschaften**und dann auf **Erweiterte Eigenschaften**).
+Sie können diesen Wert  auch auf  der Registerkarte Zusammenfassung im Dialogfeld Eigenschaften festlegen (klicken Sie auf die Schaltfläche **Office,** klicken Sie auf die Registerkarte **Info,** klicken Sie auf Dokumenteigenschaften **und** dann auf **Erweiterte Eigenschaften**).
   
-Wenn Sie einen Verweis auf die Zelle "PreviewQuality aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle PreviewQuality anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | "PreviewQuality  <br/> |
+| Zellenname:  <br/> | PreviewQuality  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle "PreviewQuality aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle PreviewQuality nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowDoc** <br/> |
 | Zellenindex:  <br/> |**visDocPreviewQuality** <br/> |
    

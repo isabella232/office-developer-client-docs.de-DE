@@ -39,11 +39,11 @@ HRESULT ModifyTable(
 
  _ulFlags_
   
-> in Verwenden Sie einen der folgenden Werte: 
+> [in] Verwenden Sie einen der folgenden Werte: 
     
 0 (Null)
   
-> Verwenden Sie den Wert des **ulRowFlags** -Elements der [ROWENTRY](rowentry.md) -Struktur. 
+> Verwenden Sie den Wert des **ulRowFlags-Mitglieds** der [ROWENTRY-Struktur.](rowentry.md) 
     
 ACLTABLE_FREEBUSY
   
@@ -51,11 +51,11 @@ ACLTABLE_FREEBUSY
     
 frightsFreeBusyDetailed
   
-> Wenn ACLTABLE_FREEBUSY übergeben wird, werden neue frei/gebucht-Rechte ausführlich angezeigt.
+> Wenn ACLTABLE_FREEBUSY übergeben wird, wird eine detaillierte Anzeige der neuen Frei/Gebucht-Rechte angezeigt.
     
 frightsFreeBusySimple
   
-> Wenn ACLTABLE_FREEBUSY übergeben wird, bietet eine einfache Anzeige der neuen frei/gebucht-Rechte.
+> Wenn ACLTABLE_FREEBUSY übergeben wird, wird eine einfache Anzeige neuer Frei/Gebucht-Rechte angezeigt.
     
 ROWLIST_REPLACE
   
@@ -63,7 +63,7 @@ ROWLIST_REPLACE
     
  _lpMods_
   
-> in Verweist auf eine [ROWLIST](rowlist.md) -Struktur, die die Eigenschaften für das Table-Objekt enthält. 
+> [in] Zeigt auf eine [ROWLIST-Struktur,](rowlist.md) die die Eigenschaften für das Tabellenobjekt enthält. 
     
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -71,7 +71,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|RulesDlg. cpp  <br/> |CRulesDlg:: OnModifySelectedItem  <br/> |MFCMAPI verwendet die **IExchangeModifyTable:: Modify** Table-Methode, um eine geänderte Regel zurück in die Tabelle der Regeln zu schreiben.  <br/> |
+|RulesDlg.cpp  <br/> |CRulesDlg::OnModifySelectedItem  <br/> |MFCMAPI verwendet die **IExchangeModifyTable::ModifyTable-Methode,** um eine geänderte Regel zurück in das Regelverzeichnis zu schreiben.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

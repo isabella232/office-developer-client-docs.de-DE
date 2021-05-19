@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 32676003-ba32-886f-1185-4760cb0e30e3
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 2aeca1a65a859ac9502995a463bc4869609bcd15
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -21,13 +21,13 @@ ms.locfileid: "32334961"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt eine Sicherungskopie der aktuellen Kopie von MAPI32. dll auf dem Clientcomputer und stellt Mapi32. dll mit der MAPI-Stub-Bibliothek mapistub. dll wieder her.
+Erstellt eine Sicherungskopie der aktuellen Kopie von mapi32.dll auf dem Clientcomputer und stellt mapi32.dll mit der MAPI-Stubbibliothek mapistub.dll.
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
-|Exportiert von:  <br/> |mapistub. dll  <br/> |
+|Exportiert von:  <br/> |mapistub.dll  <br/> |
 |Aufgerufen von:  <br/> |Client  <br/> |
 |Implementiert von:  <br/> |Windows  <br/> |
    
@@ -37,23 +37,23 @@ DWORD STDAPICALLTYPE FixMAPI(void);
 
 ## <a name="return-values"></a>Rückgabewerte
 
-Wenn die Funktion erfolgreich ist, ist der Rückgabewert ein Wert ungleich NULL.
+Wenn die Funktion erfolgreich ist, ist der Rückgabewert ein Nicht-Null-Wert.
   
-Wenn die Funktion fehlschlägt, ist der Rückgabewert NULL. Um erweiterte Fehlerinformationen abzurufen, rufen Sie die Microsoft Windows Software Development Kit (SDK)-Funktion, **[getlasterroraufzurufen](https://msdn.microsoft.com/library/ms679360.aspx)**. 
+Wenn die Funktion fehlschlägt, ist der Rückgabewert null. Rufen Sie die Microsoft Windows Software Development Kit (SDK)-Funktion **[GetLastError](https://msdn.microsoft.com/library/ms679360.aspx)** auf, um erweiterte Fehlerinformationen zu erhalten. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
- **Fixmapi** ersetzt die aktuelle Mapi32. dll-Datei nicht, wenn die Datei schreibgeschützt ist. 
+ **FixMAPI** ersetzt nicht die aktuelle mapi32.dll, wenn die Datei als schreibgeschützt gekennzeichnet ist. 
   
- **Fixmapi** ersetzt nicht die aktuelle Mapi32. dll, wenn Microsoft Exchange Server auf dem Computer installiert ist. 
+ **FixMAPI** ersetzt nicht die aktuelle mapi32.dll, Microsoft Exchange Server auf dem Computer installiert ist. 
   
-Wenn **Fixmapi** eine Sicherungskopie der aktuellen Kopie von MAPI32. dll auf dem Computer erstellt, weist es der Sicherungskopie einen anderen Namen als "Mapi32. dll" zu. Anschließend werden nachfolgende Aufrufe für diese Assembly an die Sicherungskopie weitergeleitet. 
+Wenn **FixMAPI** eine Sicherungskopie der aktuellen Kopie von mapi32.dll auf dem Computer erstellt, weist sie der Sicherungskopie einen anderen Namen zu als "mapi32.dll". Anschließend werden nachfolgende Aufrufe, die für diese Assembly vorgesehen sind, an die Sicherungskopie weiter. 
   
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[KB 256946: Sie erhalten eine Programmkonflikt-Fehlermeldung beim Starten von Outlook 2000](https://support.microsoft.com/kb/256946)
+[KB 256946: Sie erhalten eine Fehlermeldung zum Programmkonflikt, wenn Sie Outlook 2000 starten](https://support.microsoft.com/kb/256946)
   
-[KB 228457: Beschreibung des in Internet Explorer 5 enthaltenen Fixmapi. exe-Tools](https://support.microsoft.com/kb/228457)
+[KB 228457: Beschreibung des Fixmapi.exe, das in Internet Explorer 5 enthalten ist](https://support.microsoft.com/kb/228457)
 

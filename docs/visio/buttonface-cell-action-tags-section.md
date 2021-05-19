@@ -23,24 +23,24 @@ Enthält die ID der Schaltflächenoberseite, die auf der Schaltfläche Aktionsta
 > [!NOTE]
 > In früheren Versionen von Microsoft Visio werden Aktionstags als Smarttags bezeichnet. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die Zeichenfolge in einer ButtonFace-Zelle stellt die ID einer Microsoft Office-Schaltflächenoberseite dar. Der Wert 0 (null) oder leer ist standardmäßig auf die Schaltfläche "i" Info. ![Standard Aktionstag "i" Info-Schaltfläche](media/InfoPS_ZA10180114.gif).
+Die Zeichenfolge in einer ButtonFace-Zelle stellt die ID einer Microsoft Office-Schaltflächenoberseite dar. Der Wert 0 (Null) oder leer ist standardmäßig auf die Standard-Aktionstag-Infoschaltfläche "i" festgelegt. ![Standardaktionstag "i"-Infoschaltfläche](media/InfoPS_ZA10180114.gif).
   
-Die IDs, die in der "ButtonFace-Zelle verwendet werden können, sind identisch mit den IDs, die mit der **Face** -ID-Eigenschaft eines **CommandBarButton** -Objekts verwendet werden. Weitere Informationen zu diesen IDs finden Sie unter "Working with Command Bar Button Images" auf MSDN. 
+Die IDs, die in der Zelle ButtonFace verwendet werden können, sind identisch mit den IDs, die mit der **FaceID-Eigenschaft** eines **CommandBarButton-Objekts verwendet** werden. Weitere Informationen zu diesen IDs finden Sie unter "Arbeiten mit Befehlsleistenschaltflächebildern" auf MSDN. 
   
-Wenn Sie einen Verweis auf die Zelle "ButtonFace aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle ButtonFace anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Smarttags.  *Name* . "ButtonFace, wobei SmartTags. *Name* ist der Name der Zeile mit dem Aktionstag.  <br/> |
+| Zellenname:  <br/> | SmartTags.  *Name*  . ButtonFace, wo SmartTags. *Name*  ist der Name der Aktionstagzeile  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle "ButtonFace aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Um einen Verweis auf die ButtonFace-Zelle nach Index aus einem Programm zu erhalten, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionSmartTag** <br/> |
-| Zeilenindex:  <br/> |**visRowSmartTag** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowSmartTag**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
 | Zellenindex:  <br/> |**visSmartTagButtonFace** <br/> |
    
 

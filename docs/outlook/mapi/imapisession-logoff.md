@@ -39,19 +39,19 @@ HRESULT Logoff(
 
  _ulUIParam_
   
-> in Ein Handle für das übergeordnete Fenster aller Dialogfelder oder Fenster, die angezeigt werden sollen. Dieser Parameter wird ignoriert, wenn das MAPI_LOGOFF_UI-Flag nicht festgelegt ist.
+> [in] Ein Handle zum übergeordneten Fenster aller anzuzeigenden Dialogfelder oder Fenster. Dieser Parameter wird ignoriert, wenn MAPI_LOGOFF_UI nicht festgelegt ist.
     
  _ulFlags_
   
-> in Eine Bitmaske mit Flags, die den Abmeldevorgang steuern. Die folgenden Flags können festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die den Abmeldevorgang steuern. Die folgenden Kennzeichen können festgelegt werden:
     
 MAPI_LOGOFF_SHARED 
   
-> Wenn diese Sitzung freigegeben ist, sollten alle Clients, die sich mit der freigegebenen Sitzung angemeldet haben, über die Abmeldung in Bearbeitung benachrichtigt werden. Die Clients sollten sich abmelden. Jeder Client, der die freigegebene Sitzung verwendet, kann dieses Flag festlegen. MAPI_LOGOFF_SHARED wird ignoriert, wenn die aktuelle Sitzung nicht freigegeben ist.
+> Wenn diese Sitzung freigegeben wird, sollten alle Clients, die sich über die freigegebene Sitzung angemeldet haben, über die derzeit ausgeführte Abmeldeung benachrichtigt werden. Die Clients sollten sich abmelden. Jeder Client, der die freigegebene Sitzung verwendet, kann dieses Flag festlegen. MAPI_LOGOFF_SHARED wird ignoriert, wenn die aktuelle Sitzung nicht freigegeben wird.
     
 MAPI_LOGOFF_UI 
   
-> **** Bei der Abmeldung kann während des Vorgangs ein Dialogfeld angezeigt werden, sodass der Benutzer möglicherweise zur Bestätigung aufgefordert wird. 
+> **Beim Abmelden** kann während des Vorgangs ein Dialogfeld angezeigt werden, in dem der Benutzer möglicherweise zur Bestätigung aufgefordert wird. 
     
  _ulReserved_
   
@@ -65,13 +65,13 @@ S_OK
     
 ## <a name="remarks"></a>Hinweise
 
-Die **IMAPISession:: Logoff** -Methode beendet eine MAPI-Sitzung. Wenn **Logoff** zurückgegeben wird, kann keine der Methoden außer [IUnknown:: Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) aufgerufen werden. 
+Die **IMAPISession::Logoff-Methode** beendet eine MAPI-Sitzung. Wenn **Logoff zurückgegeben** wird, kann keine der Methoden mit Ausnahme von [IUnknown::Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) aufgerufen werden. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Wenn **** die Abmeldung zurückgegeben wird, geben Sie das Sitzungsobjekt durch Aufrufen seiner **IUnknown:: Release** -Methode frei. 
+Wenn **Logoff zurückgegeben** wird, lassen Sie das Sitzungsobjekt los, indem Sie die **IUnknown::Release-Methode** aufrufen. 
   
-Weitere Informationen zum Beenden einer Sitzung finden Sie unter [Beenden einer MAPI-Sitzung](ending-a-mapi-session.md).
+Weitere Informationen zum Beenden einer Sitzung finden Sie unter [Ending a MAPI Session](ending-a-mapi-session.md).
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -79,10 +79,10 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIObjects. cpp  <br/> |CMapiObjects:: abmelden  <br/> |MfcMapi verwendet die **IMAPISession:: Logout** -Methode, um sich von der Sitzung abzumelden, bevor Sie Sie freigibt.  <br/> |
+|MAPIObjects.cpp  <br/> |CMapiObjects::Logoff  <br/> |MFCMAPI verwendet die **IMAPISession::Logoff-Methode,** um sich vor der Veröffentlichung von der Sitzung abmelden.  <br/> |
    
 > [!NOTE]
-> Aufgrund des fast-shutdown-Verhaltens, das in Microsoft Office Outlook 2007 Service Pack 2, Microsoft Outlook 2010 und Microsoft Outlook 2013 eingeführt wurde, sollten Clients den **MAPI_LOGOFF_SHARED** -Parameter nie an [IMAPISession:: Logoff](imapisession-logoff.md)übergeben. Durch das Übergeben von **MAPI_LOGOFF_SHARED** werden alle MAPI-Clients zum Herunterfahren gestartet, und es wird ein unerwartetes Verhalten auftreten. 
+> Aufgrund des schnellen Herunterfahrens, das in Microsoft Office Outlook 2007 Service Pack 2, Microsoft Outlook 2010 und Microsoft Outlook 2013 eingeführt wurde, sollten Clients den **parameter MAPI_LOGOFF_SHARED** niemals an [IMAPISession::Logoff](imapisession-logoff.md)übergeben. Durch **MAPI_LOGOFF_SHARED** werden alle MAPI-Clients mit dem Herunterfahren begonnen, und es tritt unerwartetes Verhalten auf. 
   
 ## <a name="see-also"></a>Siehe auch
 

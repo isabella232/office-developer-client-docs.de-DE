@@ -25,13 +25,13 @@ ms.locfileid: "33416832"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Layers eine **IStorage** -Schnittstelle auf ein **IStream** -Objekt. 
+**Überschichtt eine IStorage-Schnittstelle** auf ein **IStream-Objekt.** 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 HRESULT HrIStorageFromStream(
@@ -46,35 +46,35 @@ HRESULT HrIStorageFromStream(
 
  _lpUnkIn_
   
-> in Zeiger auf das **IUnknown** -Objekt, das **IStream**implementiert. 
+> [in] Zeiger auf das **IUnknown-Objekt,** das **IStream implementieren soll.** 
     
  _lpInterface_
   
-> in Zeiger auf die Schnittstellen-ID (IID) für das Stream-Objekt. Jeder der folgenden Werte kann im _lpInterface_ -Parameter übergeben werden: NULL, IID_IStream oder IID_ILockBytes. Das übergeben von NULL in _lpInterface_ ist identisch mit dem übergeben von IID_IStream. 
+> [in] Zeiger auf die Schnittstellen-ID (Interface Identifier, IID) für das Stream-Objekt. Jeder der folgenden Werte kann im  _lpInterface-Parameter_ übergeben werden: NULL, IID_IStream oder IID_ILockBytes. Das Übergeben von NULL in  _lpInterface_ ist identisch mit dem Übergeben IID_IStream. 
     
  _ulFlags_
   
-> in Bitmaske von Flags, die Steuern, wie das Speicherobjekt relativ zum Stream erstellt werden soll. Die Standardeinstellung ist STGSTRM_RESET, wodurch das Speicherobjekt schreibgeschützt ist und an Position NULL des Streams gestartet wird. Die folgenden Flags können in beliebiger Kombination festgelegt werden, außer wie angegeben:
+> [in] Bitmaske von Flags, die steuert, wie das Speicherobjekt relativ zum Datenstrom erstellt werden soll. Die Standardeinstellung ist STGSTRM_RESET, die dem Speicherobjekt schreibgeschützten Zugriff gewährt und an Position 0 des Datenstroms startet. Die folgenden Flags können in beliebiger Kombination festgelegt werden, außer wie erwähnt:
     
 STGSTRM_CREATE 
   
-> Erstellt ein neues Speicherobjekt für das Stream-Objekt. Dieses Flag kann nicht festgelegt werden, wenn das STGSTRM_RESET-Flag festgelegt ist. 
+> Erstellt ein neues Speicherobjekt für das Stream-Objekt. Dieses Flag kann nicht festgelegt werden, wenn STGSTRM_RESET festgelegt ist. 
     
 STGSTRM_CURRENT 
   
-> Startet den Speicher an der aktuellen Position des Streams. Dieses Flag kann nicht festgelegt werden, wenn das STGSTRM_RESET-Flag festgelegt ist. 
+> Startet den Speicher an der aktuellen Position des Datenstroms. Dieses Flag kann nicht festgelegt werden, wenn STGSTRM_RESET festgelegt ist. 
     
 STGSTRM_MODIFY 
   
-> Ermöglicht es dem aufrufenden Dienstanbieter, in den zurückgegebenen Speicher zu schreiben. Dieses Flag kann nicht festgelegt werden, wenn das STGSTRM_RESET-Flag festgelegt ist. 
+> Ermöglicht dem aufrufenden Dienstanbieter das Schreiben in den zurückgegebenen Speicher. Dieses Flag kann nicht festgelegt werden, wenn STGSTRM_RESET festgelegt ist. 
     
 STGSTRM_RESET 
   
-> Startet den Speicher an Position NULL. Dieses Flag kann nicht festgelegt werden, wenn ein anderes Flag festgelegt ist. 
+> Startet den Speicher an Position 0. Dieses Flag kann nicht festgelegt werden, wenn ein anderes Flag festgelegt ist. 
     
  _lppStorageOut_
   
-> Out Zeiger auf einen Zeiger auf das zurückgegebene **IStorage** -Objekt. 
+> [out] Zeiger auf einen Zeiger auf das zurückgegebene **IStorage-Objekt.** 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -82,8 +82,8 @@ S_OK
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Nachrichtenspeicher Anbieter unterstützen die **HrIStorageFromStream** -Funktion mithilfe der **IStorage** -Schnittstelle für Anlagen. Speicheranbieter müssen die **IStream** -Schnittstelle implementieren. **HrIStorageFromStream** stellt die **IStorage** -Schnittstelle für das **IStream** -Objekt bereit. Es ist möglich, eine **ILockBytes** oder eine **IStream** -Schnittstelle in _lpUnkIn_zu übertragen. 
+Nachrichtenspeicheranbieter unterstützen die **HrIStorageFromStream-Funktion** mithilfe der **IStorage-Schnittstelle** für Anlagen. Store müssen die **IStream-Schnittstelle** implementieren. **HrIStorageFromStream** stellt die **IStorage-Schnittstelle** für das **IStream-Objekt** bereit. Es ist möglich, entweder ein **ILockBytes** oder eine **IStream-Schnittstelle** in _lpUnkIn zu übergeben._ 
   
 

@@ -22,21 +22,21 @@ Gibt den hyperbolischen Sinus eines Winkels zurück.
   
 ## <a name="syntax"></a>Syntax
 
-SINH (* * *Winkel* * *) 
+SINH(** *angle* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Winkel_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Winkel, dessen Hyperbolischer Sinus abgerufen werden soll.  <br/> |
+| _angle_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Winkel, an dem der hyperbolische Sinus erhalten werden soll.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
-Zahl
+Nummer
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die SINH-Funktion verwendet Radiant, es sei denn, Sie geben eine andere Maßeinheit im _Winkel_an.
+Die SINH-Funktion verwendet Bogenmaße, es sei denn, Sie geben eine andere Maßeinheit im Winkel _an._
   
 ## <a name="example"></a>Beispiel
 

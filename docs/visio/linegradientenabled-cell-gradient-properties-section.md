@@ -20,22 +20,22 @@ Bestimmt, ob ein Linienverlauf für eine Linie oder einen Rahmen einer Form akti
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|TRUE  <br/> |Der Farbverlauf wird auf der Linie oder dem Rahmen eines Shapes angezeigt.  <br/> |
-|FALSE  <br/> |Farbverläufe werden nicht auf der Linie oder dem Rahmen eines Shapes angezeigt.  <br/> |
+|TRUE  <br/> |Der Farbverlauf wird auf der Linie oder dem Rahmen einer Form angezeigt.  <br/> |
+|FALSE  <br/> |Farbverläufe werden nicht auf der Linie oder dem Rahmen einer Form angezeigt.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle **LineGradientEnabled** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die **LineGradientEnabled-Zelle** anhand des Namens aus einer anderen Formel, nach dem Wert des **N-Attributs** eines **Cell-Elements** oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | LineGradientEnabled  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle **LineGradientEnabled** aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Um einen Verweis auf die **LineGradientEnabled-Zelle** nach Index aus einem Programm zu erhalten, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowGradientProperties** <br/> |
 | Zellenindex:  <br/> |**visLineGradientEnabled** <br/> |
    

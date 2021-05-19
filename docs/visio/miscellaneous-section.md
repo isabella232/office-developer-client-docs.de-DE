@@ -20,12 +20,12 @@ ms.locfileid: "33418799"
 
 Enthält verschiedene Attribute von Shapes und Gruppen, darunter Auswahlhervorhebung und Sichtbarkeit.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Sie können den Wert vieler Zellen in diesem Abschnitt im ShapeSheet-Fenster oder auf der Registerkarte **Verhalten** im Dialogfeld **Verhalten** festlegen (Klicken Sie auf der Registerkarte [Entwicklertools](run-in-developer-mode-display-the-developer-tab.md) in der Gruppe **Shape-Design** auf **Verhalten** ). im Zeichnungsfenster. Sie können andere Gruppeneigenschaften mithilfe von Zellen im Abschnitt Group Properties festlegen. 
+Sie können den Wert vieler Zellen in diesem Abschnitt im ShapeSheet-Fenster oder  auf der Registerkarte **Verhalten** im Dialogfeld [](run-in-developer-mode-display-the-developer-tab.md) Verhalten festlegen (klicken Sie **auf** der Registerkarte Entwickler in der Gruppe **Shape-Entwurf** auf Verhalten). im Zeichnungsfenster. Sie können andere Gruppeneigenschaften mithilfe von Zellen im Abschnitt Gruppeneigenschaften festlegen. 
   
-In Visio Version 5,0 Products enthalten dieser Abschnitt **ObjInterakt** -und **objverhalten** -Zellen. Das Verhalten in der Zelle **ObjInterakt** wird nun den folgenden Zellen im Abschnitt Shape Layout zugeordnet: **Zelle ShapeFixedCode**, **Zelle ShapePermeableX**, **Zelle ShapePermeableY**und **Zelle ShapePermeablePlace**. Das Verhalten in der Zelle Objverhalten wird nun den Zellen **Zelle ConFixedCode** und **Zelle ShapeRouteStyle** zugeordnet. 
+In Visio Version 5.0 umfasste dieser Abschnitt **Die Zellen ObjInteract** und **ObjBehavior.** Das Verhalten in der **Zelle ObjInteract** wird nun den folgenden Zellen im Abschnitt Shape Layout zugeordnet: **ShapeFixedCode**, **ShapePermeableX**, **ShapePermeableY** und **ShapePermeablePlace**. Das Verhalten in der Zelle ObjBehavior wird nun den **Zellen ConFixedCode** und **ShapeRouteStyle** zugeordnet. 
   
-In den japanischen Produkten der Visio-Version 5,0 war in diesem Abschnitt eine **VerticalText** -Zelle enthalten. In Visio Version 2000 Produkte und höher wird der Wert dieser Zelle in der Zelle textDirection im Abschnitt **Text Block Format** gespeichert. **** 
+In Visio Version 5.0 japanische Produkte enthielt dieser Abschnitt eine **VerticalText-Zelle.** In Visio Version 2000 und höher wird der Wert dieser Zelle in der **Zelle TextDirection** im Abschnitt **Text Block Format** gespeichert. 
   
 

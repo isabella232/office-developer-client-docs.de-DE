@@ -1,5 +1,5 @@
 ---
-title: Bearbeitendatensatz-Daten Block (Access Custom Web App)
+title: EditRecord Data Block (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33418344"
 ---
-# <a name="editrecord-data-block-access-custom-web-app"></a>Bearbeitendatensatz-Daten Block (Access Custom Web App)
+# <a name="editrecord-data-block-access-custom-web-app"></a>EditRecord Data Block (benutzerdefinierte Access-Web-App)
 
 Mit dem **BearbeitenDatensatz** -Datenblock können Sie die Werte in einem vorhandenen Datensatz ändern. 
   
@@ -29,11 +29,11 @@ Der **BearbeitenDatensatz**-Datenblock kann mit den folgenden Argumenten verwend
   
 |**Argument**|**Beschreibung**|
 |:-----|:-----|
-|**Alias** <br/> |Eine Zeichenfolge, mit der der zu bearbeitende Datensatz gekennzeichnet wird. Wenn das Argument *Alias* nicht angegeben wird, wird der aktuelle Datensatz bearbeitet.  <br/> |
+|**Alias** <br/> |Eine Zeichenfolge, mit der der zu bearbeitende Datensatz gekennzeichnet wird. Wenn das  *Argument Alias*  nicht angegeben ist, wird der aktuelle Datensatz bearbeitet.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Nach der **bearbeitendatensatz** -Anweisung können Sie einen Block von Befehlen Einfügen, die ausgeführt werden, bevor die Änderungen am Datensatz übernommen werden. Die folgenden Aktionen sind in einem **bearbeitendatensatz** -Datenblock verfügbar. 
+Nach der **EditRecord -Anweisung** können Sie einen Befehlsblock einfügen, der ausgeführt wird, bevor die Änderungen am Datensatz ausgeführt werden. Die folgenden Aktionen sind in einem **EditRecord-Datenblock** verfügbar. 
   
 ||
 |:-----|
@@ -46,11 +46,11 @@ Nach der **bearbeitendatensatz** -Anweisung können Sie einen Block von Befehlen
    
 Mit der **FestlegenFeld** -Aktion geben Sie die neuen Werte eines Felds im bearbeiteten Datensatz an. 
   
-Sie können eine if.. **. Dann... Else** -Anweisung zum Ausführen von Vorgängen basierend auf einer Bedingung. 
+Sie können eine **If... Dann... Else-Anweisung** zum Ausführen von Vorgängen basierend auf einer Bedingung. 
   
 Wenn Sie das Bearbeiten eines Datensatzes abbrechen möchten, verwenden Sie die **AbbrechenDatensatzänderung** -Aktion. Damit verhindern Sie, dass für die Änderungen ein Commit ausgeführt wird, und der **BearbeitenDatensatz** -Datenblock wird beendet. 
   
-Über die lokale Variable **LetztesErstellenDatensatzID** in einem **DatensatzErstellen** -Datenblock können Sie mit dem zuletzt erstellten Datensatz arbeiten. Verwenden Sie beispielsweise die folgende Syntax, um auf das Feld ZugewiesenAn des zuletzt erstellten Datensatzes zu verweisen: 
+Über die lokale Variable **LetztesErstellenDatensatzID** in einem **DatensatzErstellen** -Datenblock können Sie mit dem zuletzt erstellten Datensatz arbeiten. Verwenden Sie beispielsweise die folgende Syntax, um auf das AssignedTo-Feld des zuletzt erstellten Datensatzes zu verweisen: 
   
 `[LastCreateRecordIdentity].[AssignedTo]`
 

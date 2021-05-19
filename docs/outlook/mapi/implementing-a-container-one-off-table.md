@@ -1,5 +1,5 @@
 ---
-title: Implementieren einer Container-einmal Tabelle
+title: Implementieren einer One-Off-Tabelle
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,14 +15,14 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33417420"
 ---
-# <a name="implementing-a-container-one-off-table"></a>Implementieren einer Container-einmal Tabelle
+# <a name="implementing-a-container-one-off-table"></a>Implementieren einer One-Off-Tabelle
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Um auf die einmalige Tabelle zuzugreifen, die zu einem ihrer Container gehört, ruft MAPI die [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode des Containers auf, um die **PR_CREATE_TEMPLATES** ([pidtagcreatetemplates (](pidtagcreatetemplates-canonical-property.md))-Eigenschaft mit der **IMAPITable** zu öffnen. Oberfläche. Der Container wird aufgefordert, seine einmalige Tabelle zurückzugeben, wenn eine Clientanwendung versucht, dem Container einen Empfänger hinzuzufügen. Wenn der Container Empfänger zulässt, kann Ihr Anbieter entweder eine eigene Tabellen Implementierung zurückgeben oder [IMAPISupport:: GetOneOffTable](imapisupport-getoneofftable.md) aufrufen, um die MAPI-Implementierung zurückzugeben. 
+Um auf die einmal zu einem Ihrer Container gehörende Tabelle zu zugreifen, ruft MAPI die [IMAPIProp::OpenProperty-Methode](imapiprop-openproperty.md) des Containers auf, um die **PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md))-Eigenschaft mit der **IMAPITable-Schnittstelle** zu öffnen. Ihr Container wird aufgefordert, seine einmal aufgeführte Tabelle zurückzukehren, wenn eine Clientanwendung versucht, dem Container einen Empfänger hinzuzufügen. Wenn der Container Empfänger zulässt, kann Ihr Anbieter entweder eine eigene Tabellenimplementierung zurückgeben oder [IMAPISupport::GetOneOffTable](imapisupport-getoneofftable.md) aufrufen, um die MAPI-Implementierung zurückzukehren. 
   
-Der Vorlagensatz in der einmaligen Container Tabelle sollte den Typ der Empfänger widerspiegeln, die der jeweilige Container enthalten kann. Dies umfasst in der Regel eine oder zwei Vorlagen, Vorlagen zum Erstellen eines einzelnen Messaging Benutzers oder einer Verteilerliste. Die Eintragsbezeichner für diese Vorlagen werden in den Eigenschaften **PR_DEF_CREATE_MAILUSER** ([Pidtagdefcreatemailuser (](pidtagdefcreatemailuser-canonical-property.md)) und **PR_DEF_CREATE_DL** ([pidtagdefcreatedl (](pidtagdefcreatedl-canonical-property.md)) gespeichert. Container sind jedoch keineswegs auf diese Art von Einträgen beschränkt. Sie können andere Typen von Empfängern oder nicht Empfänger Einträgen wie Verzeichnissen enthalten. 
+Der Satz von Vorlagen in der Einmaltabelle des Containers sollte den Empfängertyp widerspiegeln, den der bestimmte Container enthalten kann. In der Regel umfasst dies eine oder zwei Vorlagen, Vorlagen zum Erstellen eines einzelnen Messagingbenutzers oder einer Verteilerliste. Die Eintragsbezeichner für diese Vorlagen werden in den **Eigenschaften PR_DEF_CREATE_MAILUSER** ([PidTagDefCreateMailuser](pidtagdefcreatemailuser-canonical-property.md)) und **PR_DEF_CREATE_DL** ([PidTagDefCreateDl](pidtagdefcreatedl-canonical-property.md)) enthalten. Container sind jedoch keinesfalls auf diese Arten von Einträgen beschränkt. Sie können andere Arten von Empfängern oder Nicht-Empfänger-Einträgen wie Verzeichnisse enthalten. 
   
 

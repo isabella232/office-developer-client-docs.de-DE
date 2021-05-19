@@ -1,5 +1,5 @@
 ---
-title: Entwickeln eines MAPI-Transport Anbieters
+title: Entwickeln eines MAPI-Transportanbieters
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,12 +15,12 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33416909"
 ---
-# <a name="developing-a-mapi-transport-provider"></a>Entwickeln eines MAPI-Transport Anbieters
+# <a name="developing-a-mapi-transport-provider"></a>Entwickeln eines MAPI-Transportanbieters
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Sie sollten mit der Architektur des MAPI-Subsystems, der C++-Sprache und mit dem Schreiben von DLLs (Dynamic Link Libraries) für die verschiedenen Windows-Plattformen vertraut sein, bevor Sie einen Transportanbieter entwickeln.
+Sie sollten mit der Architektur des #A0, der C++-Sprache und dem Schreiben von Dynamic Link Libraries (DLLs) für die verschiedenen Windows-Plattformen vertraut sein, bevor Sie einen Transportanbieter entwickeln.
   
 

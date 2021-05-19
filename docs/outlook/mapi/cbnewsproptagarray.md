@@ -25,12 +25,12 @@ ms.locfileid: "33417777"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl der Bytes, die für eine neue [SPropTagArray](sproptagarray.md) -Struktur reserviert werden sollen, die eine angegebene Anzahl von Property-Tags enthält. 
+Berechnet die Anzahl der Bytes, die einer neuen [SPropTagArray-Struktur](sproptagarray.md) zugeordnet werden sollen, die eine angegebene Anzahl von Eigenschaftstags enthält. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |**SPropTagArray** <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |**SPropTagArray** <br/> |
    
 ```cpp
 CbNewSPropTagArray (_ctag)
@@ -38,9 +38,9 @@ CbNewSPropTagArray (_ctag)
 
 ## <a name="parameters"></a>Parameter
 
- __CTAG_
+ _ _ctag_
   
-> Die Anzahl der Eigenschaftstags, die in die neue **SPropTagArray** -Struktur eingeschlossen werden sollen. 
+> Anzahl der Eigenschaftstags, die in die neue **SPropTagArray-Struktur eingeschlossen werden** sollen. 
     
 ## <a name="see-also"></a>Siehe auch
 

@@ -25,7 +25,7 @@ ms.locfileid: "33416132"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt den Anzeigenamen eines Formular Containers zurück.
+Gibt den Anzeigenamen eines Formularcontainers zurück.
   
 ```cpp
 HRESULT GetDisplay(
@@ -38,15 +38,15 @@ HRESULT GetDisplay(
 
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die den Typ der zurückgegebenen Zeichenfolge steuert. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die den Typ der zurückgegebenen Zeichenfolge steuert. Das folgende Flag kann festgelegt werden:
     
 MAPI_UNICODE 
   
-> Die zurückgegebene Zeichenfolge ist im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, wird die Zeichenfolge im ANSI-Format.
+> Die zurückgegebene Zeichenfolge befindet sich im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, hat die Zeichenfolge das ANSI-Format.
     
  _pszDisplayName_
   
-> Out Ein Zeiger auf eine Zeichenfolge, die den Anzeigenamen des Formular Containers enthält.
+> [out] Ein Zeiger auf eine Zeichenfolge, die den Anzeigenamen des Formularcontainers enthält.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -60,7 +60,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|FormContainerDlg. cpp  <br/> |CFormContainerDlg:: CFormContainerDlg  <br/> |MFCMAPI verwendet die **IMAPIFormContainer:: getdisplay** -Methode, um den Namen des Formular Containers abzurufen, wenn er CFormContainerDlg rendert.  <br/> |
+|FormContainerDlg.cpp  <br/> |CFormContainerDlg::CFormContainerDlg  <br/> |MFCMAPI verwendet die **IMAPIFormContainer::GetDisplay-Methode,** um den Namen des Formularcontainers zu erhalten, wenn CFormContainerDlg gerendert wird.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

@@ -18,11 +18,11 @@ ms.locfileid: "33416048"
 ---
 # <a name="keywords-function"></a>KEYWORDS Function
 
-Gibt den Text aus dem Feld **Schlüsselwörter** der Eigenschaften eines Dokuments zurück. 
+Gibt den Text aus dem **Feld Schlüsselwörter** der Eigenschaften eines Dokuments zurück. 
   
 ## <a name="syntax"></a>Syntax
 
-Schlüsselwörter ()
+SCHLÜSSELWÖRTER ()
   
 ### <a name="return-value"></a>Rückgabewert
 

@@ -22,13 +22,13 @@ Ruft den Wert einer Zelle ab und berechnet die Formel nicht neu, wenn sich der W
   
 ## <a name="syntax"></a>Syntax
 
-GETVAL (* * *cellName* * *) 
+GETVAL(** *cellname* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _cellName_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Name der Zelle, deren Wert abgerufen werden soll.  <br/> |
+| _cellname_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Name der Zelle, deren Wert abgerufen werden soll.  <br/> |
    
 ## <a name="example"></a>Beispiel
 

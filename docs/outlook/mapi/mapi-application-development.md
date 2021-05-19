@@ -21,6 +21,6 @@ ms.locfileid: "33417609"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die Themen in diesem Abschnitt gelten für Entwickler von Clientanwendungen und Dienstanbietern. Diese Themen werden nach Wichtigkeit sortiert. Das heißt, Themen, die für alle Programmierer wichtig sind, werden zuerst angezeigt, und Themen, die entweder minimal wichtig oder nicht für alle Programmierer gelten, werden zuletzt angezeigt.
+Die Themen in diesem Abschnitt gelten für Entwickler von Clientanwendungen und Dienstanbietern. Diese Themen sind in der Reihenfolge ihrer Wichtigkeit angeordnet. Das heißt, Themen, die für alle Programmierer wichtig sind, werden zuerst angezeigt, und Themen, die entweder von minimaler Bedeutung sind oder nicht für alle Programmierer gelten, werden zuletzt angezeigt.
   
 

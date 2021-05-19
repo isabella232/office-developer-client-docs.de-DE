@@ -25,13 +25,13 @@ ms.locfileid: "33416055"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft den Wert einer einzelnen Eigenschaft von einer Eigenschaften Schnittstelle ab, also einer von [IMAPIProp](imapipropiunknown.md)abgeleiteten Schnittstelle. 
+Ruft den Wert einer einzelnen Eigenschaft von einer Eigenschaftenschnittstelle ab, d. h. einer Schnittstelle, die von [IMAPIProp abgeleitet ist.](imapipropiunknown.md) 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 HrGetOneProp(
@@ -43,17 +43,17 @@ HrGetOneProp(
 
 ## <a name="parameters"></a>Parameter
 
- _PMP_
+ _pmp_
   
-> in Zeiger auf die [IMAPIProp](imapipropiunknown.md) -Schnittstelle, von der der Eigenschaftswert abgerufen werden soll. 
+> [in] Zeiger auf die [IMAPIProp-Schnittstelle,](imapipropiunknown.md) von der der Eigenschaftswert abgerufen werden soll. 
     
  _ulPropTag_
   
-> in Property-Tag der Eigenschaft, die abgerufen werden soll. 
+> [in] Eigenschaftstag der abzurufende Eigenschaft. 
     
  _ppprop_
   
-> Out Zeiger auf einen Zeiger auf die zurückgegebene [SPropValue](spropvalue.md) -Struktur, die den abgerufenen Eigenschaftswert definiert. 
+> [out] Zeiger auf einen Zeiger auf die [zurückgegebene SPropValue-Struktur,](spropvalue.md) die den abgerufenen Eigenschaftswert definiert. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -61,11 +61,11 @@ MAPI_E_NOT_FOUND
   
 > Die angeforderte Eigenschaft ist nicht über die angegebene Schnittstelle verfügbar.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Im Gegensatz zur [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode gibt die **HrGetOneProp** -Funktion nie eine Warnung zurück. Da nur eine Eigenschaft abgerufen wird, ist Sie entweder erfolgreich oder schlägt fehl. Zum Abrufen mehrerer Eigenschaften ist getProps schneller. **** 
+Im Gegensatz zur [IMAPIProp::GetProps-Methode](imapiprop-getprops.md) gibt die **HrGetOneProp-Funktion** nie eine Warnung zurück. Da nur eine Eigenschaft abgerufen wird, ist sie einfach erfolgreich oder schlägt fehl. Zum Abrufen mehrerer Eigenschaften ist **GetProps** schneller. 
   
-Sie können eine einzelne Eigenschaft mit der [HrSetOneProp](hrsetoneprop.md) -Funktion festlegen oder ändern. 
+Sie können eine einzelne Eigenschaft mit der [HrSetOneProp-Funktion](hrsetoneprop.md) festlegen oder ändern. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -73,7 +73,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIFunctions. cpp  <br/> |GetMAPIObjectType  <br/> |MFCMAPI verwendet die **HrGetOneProp** -Methode, um den Typ eines Objekts abzurufen.  <br/> |
+|MAPIFunctions.cpp  <br/> |GetMAPIObjectType  <br/> |MFCMAPI verwendet die **HrGetOneProp-Methode,** um den Typ eines Objekts abzurufen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

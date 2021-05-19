@@ -25,7 +25,7 @@ ms.locfileid: "33417273"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Legt den Status fest, der einer Nachricht zugeordnet ist (beispielsweise, ob diese Nachricht zum Löschen markiert ist).
+Legt den Status fest, der einer Nachricht zugeordnet ist (z. B. ob diese Nachricht zum Löschen markiert ist).
   
 ```cpp
 HRESULT SetMessageStatus(
@@ -41,19 +41,19 @@ HRESULT SetMessageStatus(
 
  _cbEntryID_
   
-> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID_ -Parameter verwiesen wird. 
+> [in] Die Byteanzahl im Eintragsbezeichner, auf den der  _lpEntryID-Parameter_ verweist. 
     
  _lpEntryID_
   
-> in Ein Zeiger auf die Eintrags-ID für die Nachricht, deren Status festgelegt ist.
+> [in] Ein Zeiger auf die Eintrags-ID für die Nachricht, deren Status festgelegt ist.
     
  _ulNewStatus_
   
-> in Der neue Status, der zugewiesen werden soll. 
+> [in] Der neue Status, der zugewiesen werden soll. 
     
  _ulNewStatusMask_
   
-> in Eine Bitmaske von Flags, die auf den neuen Status angewendet wird und die festzulegenden Flags angibt. Die folgenden Flags können festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die auf den neuen Status angewendet wird und die festgelegten Flags angibt. Die folgenden Kennzeichen können festgelegt werden:
     
 MSGSTATUS_DELMARKED 
   
@@ -65,11 +65,11 @@ MSGSTATUS_HIDDEN
     
 MSGSTATUS_HIGHLIGHTED 
   
-> Die Nachricht wird hervorgehoben angezeigt.
+> Die Nachricht soll hervorgehoben angezeigt werden.
     
 MSGSTATUS_REMOTE_DELETE 
   
-> Die Nachricht wurde zum Löschen im Remotenachrichtenspeicher markiert, ohne Sie auf den lokalen Client herunterzuladen.
+> Die Nachricht wurde zum Löschen im Remotenachrichtenspeicher ohne Download auf den lokalen Client markiert.
     
 MSGSTATUS_REMOTE_DOWNLOAD 
   
@@ -77,11 +77,11 @@ MSGSTATUS_REMOTE_DOWNLOAD
     
 MSGSTATUS_TAGGED 
   
-> Die Nachricht wurde für einen Client definierten Zweck markiert.
+> Die Nachricht wurde für einen clientdefinierten Zweck markiert.
     
  _lpulOldStatus_
   
-> Out Ein Zeiger auf den vorherigen Status der Nachricht.
+> [out] Ein Zeiger auf den vorherigen Status der Nachricht.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -89,19 +89,19 @@ S_OK
   
 > Der Nachrichtenstatus wurde erfolgreich festgelegt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPIFolder:: SetMessageStatus** -Methode legt den Status der Nachricht auf den Wert fest, der in seiner **PR_MSG_STATUS** ([pidtagmessagestatus (](pidtagmessagestatus-canonical-property.md))-Eigenschaft gespeichert ist. 
+Die **IMAPIFolder::SetMessageStatus-Methode** legt den Nachrichtenstatus auf den Wert fest, der in der PR_MSG_STATUS ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md)) **-Eigenschaft** gespeichert ist. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Wie die Nachrichtenstatus-Bits festgelegt, gelöscht und verwendet werden, hängt vollständig von der Implementierung ab, mit der Ausnahme, dass die Bits 0 bis 15 reserviert sind und 0 (null) sein müssen. 
+Wie die Nachrichtenstatusbits festgelegt, geräumt und verwendet werden, hängt vollständig von Ihrer Implementierung ab, mit der Ausnahme, dass bits 0 bis 15 reserviert sind und null sein müssen. 
   
-Die Implementierung dieser Methode durch einen Remote Transportanbieter muss die hier beschriebene Semantik befolgen. Besondere Überlegungen sind nicht möglich. Clients verwenden diese Methode, um die Bits MSGSTATUS_REMOTE_DOWNLOAD und MSGSTATUS_REMOTE_DELETE festzulegen, um anzugeben, dass eine bestimmte Nachricht heruntergeladen oder aus dem Remote Nachrichtenspeicher gelöscht werden soll. Ein Remote Transportanbieter muss die zugehörige [IMAPIFolder:: GetMessageStatus](imapifolder-getmessagestatus.md) -Methode nicht implementieren. Clients müssen in der Tabelle Inhalt des Ordners suchen, um den Status einer Nachricht zu bestimmen. 
+Die Implementierung dieser Methode durch einen Remotetransportanbieter muss der hier beschriebenen Semantik folgen. Es gibt keine besonderen Überlegungen. Clients verwenden diese Methode, um die bits MSGSTATUS_REMOTE_DOWNLOAD und MSGSTATUS_REMOTE_DELETE anzugeben, dass eine bestimmte Nachricht heruntergeladen oder aus dem Remotenachrichtenspeicher gelöscht werden soll. Ein Remotetransportanbieter muss die zugehörige [IMAPIFolder::GetMessageStatus-Methode](imapifolder-getmessagestatus.md) nicht implementieren. Clients müssen in der Inhaltstabelle des Ordners suchen, um den Status einer Nachricht zu bestimmen. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Sie können die **PR_MSG_STATUS** -Eigenschaft einer Nachricht verwenden, um einen Nachrichten Sperrvorgang mit anderen Clients auszuhandeln. Benennen Sie ein Bit als Lockout-Bit. Um zu bestimmen, ob das Lockout-Bit festgelegt wurde, überprüfen Sie den vorherigen Wert für Nachrichtenstatus im _lpulOldStatus_ -Parameter. Verwenden Sie die anderen Bits im _ulNewStatus_ -Parameter, um den Nachrichtenstatus nachzuverfolgen, ohne das Lockout-Bit zu stören. 
+Sie können die **PR_MSG_STATUS** einer Nachricht verwenden, um einen Nachrichtensperrungsvorgang mit anderen Clients auszuhandeln. Geben Sie ein Bit als Sperrbit an. Um zu ermitteln, ob das Sperrbit festgelegt wurde, untersuchen Sie den vorherigen Wert für den Nachrichtenstatus im _lpulOldStatus-Parameter._ Verwenden Sie die anderen Bits im  _ulNewStatus-Parameter,_ um den Nachrichtenstatus nachverfolgt zu haben, ohne das Sperrbit zu stören. 
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -109,7 +109,7 @@ Sie können die **PR_MSG_STATUS** -Eigenschaft einer Nachricht verwenden, um ein
 
 [IMAPIFolder::GetMessageStatus](imapifolder-getmessagestatus.md)
   
-[Kanonische Pidtagmessagestatus (-Eigenschaft](pidtagmessagestatus-canonical-property.md)
+[PidTagMessageStatus (kanonische Eigenschaft)](pidtagmessagestatus-canonical-property.md)
   
 [IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md)
 

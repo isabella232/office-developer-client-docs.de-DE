@@ -25,7 +25,7 @@ ms.locfileid: "33417028"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Fordert an, dass die aktuelle Nachricht für die Übermittlung in die Warteschlange gestellt wird.
+Fordert an, dass die aktuelle Nachricht zur Zustellung in die Warteschlange eingereiht wird.
   
 ```cpp
 HRESULT SubmitMessage(
@@ -37,11 +37,11 @@ HRESULT SubmitMessage(
 
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die die Übermittlung einer Nachricht steuert. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie eine Nachricht übermittelt wird. Das folgende Flag kann festgelegt werden:
     
 FORCE_SUBMIT 
   
-> MAPI sollte die Nachricht auch dann übermitteln, wenn Sie nicht sofort gesendet werden kann.
+> MAPI sollte die Nachricht übermitteln, auch wenn sie möglicherweise nicht sofort gesendet wird.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -49,11 +49,11 @@ S_OK
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Formularobjekte rufen die **IMAPIMessageSite:: SubmitMessage** -Methode auf, um anzufordern, dass eine Nachricht für die Übermittlung in die Warteschlange gestellt wird. Die Nachrichtenwebsite sollte vor dem Senden der Nachricht die [IPersistMessage:: HandsOffMessage](ipersistmessage-handsoffmessage.md) -Methode aufrufen. Die Nachricht muss nicht zuvor gespeichert worden sein, da **SubmitMessage** die Nachricht speichern sollte, wenn die Nachricht geändert wurde. Nach der Rückgabe von **SubmitMessage**muss das Formular nach einer aktuellen Nachricht suchen und sich dann selbst entlassen, wenn keine vorhanden ist. 
+Formularobjekte rufen die **IMAPIMessageSite::SubmitMessage-Methode** auf, um anzuerlangen, dass eine Nachricht zur Zustellung in die Warteschlange gestellt wird. Die Nachrichtenwebsite sollte die [IPersistMessage::HandsOffMessage-Methode](ipersistmessage-handsoffmessage.md) aufrufen, bevor die Nachricht übermittelt wird. Die Nachricht muss nicht zuvor gespeichert worden sein, da **SubmitMessage** dazu führen sollte, dass die Nachricht gespeichert wird, wenn die Nachricht geändert wurde. Nach der Rückgabe von **SubmitMessage** muss das Formular nach einer aktuellen Nachricht suchen und sich dann selbst schließen, wenn keine vorhanden ist. 
   
-Eine Liste der Schnittstellen im Zusammenhang mit Formular Servern finden Sie unter [MAPI-Formular Schnittstellen](mapi-form-interfaces.md).
+Eine Liste der Schnittstellen im Zusammenhang mit Formularservern finden Sie unter [MAPI Form Interfaces](mapi-form-interfaces.md).
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -61,7 +61,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer. cpp  <br/> |CMyMAPIFormViewer:: SubmitMessage  <br/> |MFCMAPI verwendet die **IMAPIMessageSite:: SubmitMessage** -Methode, um die Nachricht zu speichern. Zuerst wird die **IPersistMessage:: HandsOffMessage** -Methode aufgerufen, und anschließend wird **SubmitMessage**aufgerufen.  <br/> |
+|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::SubmitMessage  <br/> |MFCMAPI verwendet die **IMAPIMessageSite::SubmitMessage-Methode,** um die Nachricht zu speichern. Zunächst wird die **IPersistMessage::HandsOffMessage-Methode** und dann **SubmitMessage aufruft.**  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -74,5 +74,5 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
-[MAPI-Formular Schnittstellen](mapi-form-interfaces.md)
+[MAPI-Formularschnittstellen](mapi-form-interfaces.md)
 
