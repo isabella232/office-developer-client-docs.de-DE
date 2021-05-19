@@ -19,17 +19,17 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33424924"
 ---
-# <a name="sguidarray"></a><span data-ttu-id="cb699-103">SGuidArray</span><span class="sxs-lookup"><span data-stu-id="cb699-103">SGuidArray</span></span>
+# <a name="sguidarray"></a><span data-ttu-id="e4ad7-103">SGuidArray</span><span class="sxs-lookup"><span data-stu-id="e4ad7-103">SGuidArray</span></span>
 
   
   
-<span data-ttu-id="cb699-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="cb699-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="e4ad7-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="e4ad7-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="cb699-105">Enthält ein Array von [GUID](guid.md) -Strukturen, die zum Beschreiben einer Eigenschaft vom Typ PT_MV_CLSID verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="cb699-105">Contains an array of [GUID](guid.md) structures that are used to describe a property of type PT_MV_CLSID.</span></span> 
+<span data-ttu-id="e4ad7-105">Enthält ein Array von [GUID-Strukturen,](guid.md) die zum Beschreiben einer Eigenschaft vom Typ PT_MV_CLSID.</span><span class="sxs-lookup"><span data-stu-id="e4ad7-105">Contains an array of [GUID](guid.md) structures that are used to describe a property of type PT_MV_CLSID.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="cb699-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="cb699-106">Header file:</span></span>  <br/> |<span data-ttu-id="cb699-107">Mapidefs. h</span><span class="sxs-lookup"><span data-stu-id="cb699-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="e4ad7-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="e4ad7-106">Header file:</span></span>  <br/> |<span data-ttu-id="e4ad7-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="e4ad7-107">Mapidefs.h</span></span>  <br/> |
    
 ```cpp
 typedef struct _SGuidArray
@@ -40,28 +40,28 @@ typedef struct _SGuidArray
 
 ```
 
-## <a name="members"></a><span data-ttu-id="cb699-108">Members</span><span class="sxs-lookup"><span data-stu-id="cb699-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="e4ad7-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="e4ad7-108">Members</span></span>
 
- <span data-ttu-id="cb699-109">**cValues**</span><span class="sxs-lookup"><span data-stu-id="cb699-109">**cValues**</span></span>
+ <span data-ttu-id="e4ad7-109">**cValues**</span><span class="sxs-lookup"><span data-stu-id="e4ad7-109">**cValues**</span></span>
   
-> <span data-ttu-id="cb699-110">Die Anzahl der Werte im Array, auf die durch das **lpguid** -Element verwiesen wird.</span><span class="sxs-lookup"><span data-stu-id="cb699-110">Count of values in the array pointed to by the **lpguid** member.</span></span> 
+> <span data-ttu-id="e4ad7-110">Anzahl der Werte im Array, auf die das **lpguid-Element** verweist.</span><span class="sxs-lookup"><span data-stu-id="e4ad7-110">Count of values in the array pointed to by the **lpguid** member.</span></span> 
     
- <span data-ttu-id="cb699-111">**lpguid**</span><span class="sxs-lookup"><span data-stu-id="cb699-111">**lpguid**</span></span>
+ <span data-ttu-id="e4ad7-111">**lpguid**</span><span class="sxs-lookup"><span data-stu-id="e4ad7-111">**lpguid**</span></span>
   
-> <span data-ttu-id="cb699-112">Zeiger auf ein Array von **GUID** -Strukturen, die die Klassen-ID-Werte enthält.</span><span class="sxs-lookup"><span data-stu-id="cb699-112">Pointer to an array of **GUID** structures that contains the class identifier values.</span></span> 
+> <span data-ttu-id="e4ad7-112">Zeiger auf ein Array von **GUID-Strukturen,** das die Klassenbezeichnerwerte enthält.</span><span class="sxs-lookup"><span data-stu-id="e4ad7-112">Pointer to an array of **GUID** structures that contains the class identifier values.</span></span> 
     
-## <a name="remarks"></a><span data-ttu-id="cb699-113">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="cb699-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="e4ad7-113">Hinweise</span><span class="sxs-lookup"><span data-stu-id="e4ad7-113">Remarks</span></span>
 
-<span data-ttu-id="cb699-114">Weitere Informationen zu PT_MV_CLSID finden Sie unter [Liste der Eigenschaftstypen](property-types.md).</span><span class="sxs-lookup"><span data-stu-id="cb699-114">For more information about PT_MV_CLSID, see [List of Property Types](property-types.md).</span></span>
+<span data-ttu-id="e4ad7-114">Weitere Informationen zu PT_MV_CLSID finden Sie unter [List of Property Types](property-types.md).</span><span class="sxs-lookup"><span data-stu-id="e4ad7-114">For more information about PT_MV_CLSID, see [List of Property Types](property-types.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="cb699-115">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="cb699-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e4ad7-115">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="e4ad7-115">See also</span></span>
 
 
 
-[<span data-ttu-id="cb699-116">GUID</span><span class="sxs-lookup"><span data-stu-id="cb699-116">GUID</span></span>](guid.md)
+[<span data-ttu-id="e4ad7-116">GUID</span><span class="sxs-lookup"><span data-stu-id="e4ad7-116">GUID</span></span>](guid.md)
   
-[<span data-ttu-id="cb699-117">SPropValue</span><span class="sxs-lookup"><span data-stu-id="cb699-117">SPropValue</span></span>](spropvalue.md)
+[<span data-ttu-id="e4ad7-117">SPropValue</span><span class="sxs-lookup"><span data-stu-id="e4ad7-117">SPropValue</span></span>](spropvalue.md)
 
 
-[<span data-ttu-id="cb699-118">MAPI-Strukturen</span><span class="sxs-lookup"><span data-stu-id="cb699-118">MAPI Structures</span></span>](mapi-structures.md)
+[<span data-ttu-id="e4ad7-118">MAPI-Strukturen</span><span class="sxs-lookup"><span data-stu-id="e4ad7-118">MAPI Structures</span></span>](mapi-structures.md)
 

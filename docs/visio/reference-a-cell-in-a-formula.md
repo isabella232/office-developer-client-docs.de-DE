@@ -16,12 +16,12 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33424644"
 ---
-# <a name="reference-a-cell-in-a-formula"></a><span data-ttu-id="3a434-102">Verweisen auf eine Zelle in einer Formel</span><span class="sxs-lookup"><span data-stu-id="3a434-102">Reference a Cell in a Formula</span></span>
+# <a name="reference-a-cell-in-a-formula"></a><span data-ttu-id="06c31-102">Verweisen auf eine Zelle in einer Formel</span><span class="sxs-lookup"><span data-stu-id="06c31-102">Reference a Cell in a Formula</span></span>
 
-1. <span data-ttu-id="3a434-103">Doppelklicken Sie auf die Zelle, in die Sie den Verweis setzen möchten, und setzen Sie die Einfügemarke an die Stelle, an der die Formel eingefügt werden soll.</span><span class="sxs-lookup"><span data-stu-id="3a434-103">Double-click the cell in which you want to place the reference, and then place the insertion point at the location you want in the formula.</span></span>
+1. <span data-ttu-id="06c31-103">Doppelklicken Sie auf die Zelle, in die Sie den Verweis setzen möchten, und setzen Sie die Einfügemarke an die Stelle, an der die Formel eingefügt werden soll.</span><span class="sxs-lookup"><span data-stu-id="06c31-103">Double-click the cell in which you want to place the reference, and then place the insertion point at the location you want in the formula.</span></span>
     
-2. <span data-ttu-id="3a434-104">Klicken Sie auf die Zelle, auf die Sie verweisen möchten.</span><span class="sxs-lookup"><span data-stu-id="3a434-104">Click the cell you want to reference.</span></span>
+2. <span data-ttu-id="06c31-104">Klicken Sie auf die Zelle, auf die Sie verweisen möchten.</span><span class="sxs-lookup"><span data-stu-id="06c31-104">Click the cell you want to reference.</span></span>
     
-3. <span data-ttu-id="3a434-p101">Drücken Sie die EINGABETASTE, um die Formel zu akzeptieren. Oder drücken Sie ESC, um die Änderungen zu löschen.</span><span class="sxs-lookup"><span data-stu-id="3a434-p101">Press ENTER to accept the formula. Or press ESC to cancel the changes.</span></span>
+3. <span data-ttu-id="06c31-p101">Drücken Sie die EINGABETASTE, um die Formel zu akzeptieren. Oder drücken Sie ESC, um die Änderungen zu löschen.</span><span class="sxs-lookup"><span data-stu-id="06c31-p101">Press ENTER to accept the formula. Or press ESC to cancel the changes.</span></span>
     
 

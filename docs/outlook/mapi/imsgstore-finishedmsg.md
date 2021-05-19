@@ -19,13 +19,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33427087"
 ---
-# <a name="imsgstorefinishedmsg"></a><span data-ttu-id="f9a40-103">IMsgStore::FinishedMsg</span><span class="sxs-lookup"><span data-stu-id="f9a40-103">IMsgStore::FinishedMsg</span></span>
+# <a name="imsgstorefinishedmsg"></a><span data-ttu-id="2cdc6-103">IMsgStore::FinishedMsg</span><span class="sxs-lookup"><span data-stu-id="2cdc6-103">IMsgStore::FinishedMsg</span></span>
 
   
   
-<span data-ttu-id="f9a40-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="f9a40-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="2cdc6-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="2cdc6-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="f9a40-105">Ermöglicht dem Nachrichtenspeicher Anbieter das Ausführen der Verarbeitung für eine gesendete Nachricht.</span><span class="sxs-lookup"><span data-stu-id="f9a40-105">Enables the message store provider to perform processing on a sent message.</span></span> <span data-ttu-id="f9a40-106">Diese Methode ist nur durch die MAPI-Warteschlange aufgerufen.</span><span class="sxs-lookup"><span data-stu-id="f9a40-106">This method is called only by the MAPI spooler.</span></span>
+<span data-ttu-id="2cdc6-105">Ermöglicht dem Nachrichtenspeicheranbieter die Verarbeitung einer gesendeten Nachricht.</span><span class="sxs-lookup"><span data-stu-id="2cdc6-105">Enables the message store provider to perform processing on a sent message.</span></span> <span data-ttu-id="2cdc6-106">Diese Methode ist nur durch die MAPI-Warteschlange aufgerufen.</span><span class="sxs-lookup"><span data-stu-id="2cdc6-106">This method is called only by the MAPI spooler.</span></span>
   
 ```cpp
 HRESULT FinishedMsg(
@@ -35,54 +35,54 @@ HRESULT FinishedMsg(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="f9a40-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="f9a40-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="2cdc6-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="2cdc6-107">Parameters</span></span>
 
- <span data-ttu-id="f9a40-108">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="f9a40-108">_ulFlags_</span></span>
+ <span data-ttu-id="2cdc6-108">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="2cdc6-108">_ulFlags_</span></span>
   
-> <span data-ttu-id="f9a40-109">[in] Reserviert. NULL muss sein.</span><span class="sxs-lookup"><span data-stu-id="f9a40-109">[in] Reserved; must be zero.</span></span>
+> <span data-ttu-id="2cdc6-109">[in] Reserviert. NULL muss sein.</span><span class="sxs-lookup"><span data-stu-id="2cdc6-109">[in] Reserved; must be zero.</span></span>
     
- <span data-ttu-id="f9a40-110">_cbEntryID_</span><span class="sxs-lookup"><span data-stu-id="f9a40-110">_cbEntryID_</span></span>
+ <span data-ttu-id="2cdc6-110">_cbEntryID_</span><span class="sxs-lookup"><span data-stu-id="2cdc6-110">_cbEntryID_</span></span>
   
-> <span data-ttu-id="f9a40-111">in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID_ -Parameter verwiesen wird.</span><span class="sxs-lookup"><span data-stu-id="f9a40-111">[in] The byte count in the entry identifier pointed to by the  _lpEntryID_ parameter.</span></span> 
+> <span data-ttu-id="2cdc6-111">[in] Die Byteanzahl im Eintragsbezeichner, auf den der  _lpEntryID-Parameter_ verweist.</span><span class="sxs-lookup"><span data-stu-id="2cdc6-111">[in] The byte count in the entry identifier pointed to by the  _lpEntryID_ parameter.</span></span> 
     
- <span data-ttu-id="f9a40-112">_lpEntryID_</span><span class="sxs-lookup"><span data-stu-id="f9a40-112">_lpEntryID_</span></span>
+ <span data-ttu-id="2cdc6-112">_lpEntryID_</span><span class="sxs-lookup"><span data-stu-id="2cdc6-112">_lpEntryID_</span></span>
   
-> <span data-ttu-id="f9a40-113">in Ein Zeiger auf die Eintrags-ID der zu verarbeitenden Nachricht.</span><span class="sxs-lookup"><span data-stu-id="f9a40-113">[in] A pointer to the entry identifier of the message to be processed.</span></span>
+> <span data-ttu-id="2cdc6-113">[in] Ein Zeiger auf die Eintrags-ID der zu verarbeitende Nachricht.</span><span class="sxs-lookup"><span data-stu-id="2cdc6-113">[in] A pointer to the entry identifier of the message to be processed.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="f9a40-114">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="f9a40-114">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="2cdc6-114">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="2cdc6-114">Return value</span></span>
 
-<span data-ttu-id="f9a40-115">S_OK</span><span class="sxs-lookup"><span data-stu-id="f9a40-115">S_OK</span></span> 
+<span data-ttu-id="2cdc6-115">S_OK</span><span class="sxs-lookup"><span data-stu-id="2cdc6-115">S_OK</span></span> 
   
-> <span data-ttu-id="f9a40-116">Die Verarbeitung der gesendeten Nachricht war erfolgreich.</span><span class="sxs-lookup"><span data-stu-id="f9a40-116">Processing on the sent message was successful.</span></span>
+> <span data-ttu-id="2cdc6-116">Die Verarbeitung der gesendeten Nachricht war erfolgreich.</span><span class="sxs-lookup"><span data-stu-id="2cdc6-116">Processing on the sent message was successful.</span></span>
     
-<span data-ttu-id="f9a40-117">MAPI_E_NO_SUPPORT</span><span class="sxs-lookup"><span data-stu-id="f9a40-117">MAPI_E_NO_SUPPORT</span></span> 
+<span data-ttu-id="2cdc6-117">MAPI_E_NO_SUPPORT</span><span class="sxs-lookup"><span data-stu-id="2cdc6-117">MAPI_E_NO_SUPPORT</span></span> 
   
-> <span data-ttu-id="f9a40-118">Der Nachrichtenspeicher Anbieter unterstützt keine gesendete Nachrichtenverarbeitung.</span><span class="sxs-lookup"><span data-stu-id="f9a40-118">The message store provider does not support sent message processing.</span></span> <span data-ttu-id="f9a40-119">Dieser Fehlerwert wird zurückgegeben, wenn der Aufrufer nicht der MAPI-Spooler ist.</span><span class="sxs-lookup"><span data-stu-id="f9a40-119">This error value is returned if the caller is not the MAPI spooler.</span></span>
+> <span data-ttu-id="2cdc6-118">Der Nachrichtenspeicheranbieter unterstützt keine gesendete Nachrichtenverarbeitung.</span><span class="sxs-lookup"><span data-stu-id="2cdc6-118">The message store provider does not support sent message processing.</span></span> <span data-ttu-id="2cdc6-119">Dieser Fehlerwert wird zurückgegeben, wenn der Aufrufer nicht der MAPI-Spooler ist.</span><span class="sxs-lookup"><span data-stu-id="2cdc6-119">This error value is returned if the caller is not the MAPI spooler.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="f9a40-120">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="f9a40-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="2cdc6-120">Hinweise</span><span class="sxs-lookup"><span data-stu-id="2cdc6-120">Remarks</span></span>
 
-<span data-ttu-id="f9a40-121">Die **IMsgStore:: FinishedMsg** -Methode führt eine Verarbeitung für eine gesendete Nachricht aus.</span><span class="sxs-lookup"><span data-stu-id="f9a40-121">The **IMsgStore::FinishedMsg** method performs processing on a sent message.</span></span> <span data-ttu-id="f9a40-122">Bei dieser Verarbeitung kann es sich um das Löschen der Nachricht, die Verschiebung in einen anderen Ordner oder um beide Aktionen handeln.</span><span class="sxs-lookup"><span data-stu-id="f9a40-122">This processing can involve deleting the message, moving it to a different folder, or both actions.</span></span> <span data-ttu-id="f9a40-123">Die Art der Verarbeitung hängt davon ab, ob die Eigenschaften **PR_DELETE_AFTER_SUBMIT** ([Pidtagdeleteaftersubmit (](pidtagdeleteaftersubmit-canonical-property.md)) und **PR_SENTMAIL_ENTRYID** ([pidtagsentmailentryid (](pidtagsentmailentryid-canonical-property.md)) festgelegt sind.</span><span class="sxs-lookup"><span data-stu-id="f9a40-123">The type of processing depends on whether the **PR_DELETE_AFTER_SUBMIT** ([PidTagDeleteAfterSubmit](pidtagdeleteaftersubmit-canonical-property.md)) and **PR_SENTMAIL_ENTRYID** ([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md)) properties are set.</span></span> 
+<span data-ttu-id="2cdc6-121">Die **IMsgStore::FinishedMsg-Methode** führt die Verarbeitung einer gesendeten Nachricht durch.</span><span class="sxs-lookup"><span data-stu-id="2cdc6-121">The **IMsgStore::FinishedMsg** method performs processing on a sent message.</span></span> <span data-ttu-id="2cdc6-122">Diese Verarbeitung kann das Löschen der Nachricht, das Verschieben in einen anderen Ordner oder beide Aktionen umfassen.</span><span class="sxs-lookup"><span data-stu-id="2cdc6-122">This processing can involve deleting the message, moving it to a different folder, or both actions.</span></span> <span data-ttu-id="2cdc6-123">Der Verarbeitungstyp hängt davon ab, ob **die Eigenschaften PR_DELETE_AFTER_SUBMIT** ([PidTagDeleteAfterSubmit](pidtagdeleteaftersubmit-canonical-property.md)) und **PR_SENTMAIL_ENTRYID** ([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md)) festgelegt sind.</span><span class="sxs-lookup"><span data-stu-id="2cdc6-123">The type of processing depends on whether the **PR_DELETE_AFTER_SUBMIT** ([PidTagDeleteAfterSubmit](pidtagdeleteaftersubmit-canonical-property.md)) and **PR_SENTMAIL_ENTRYID** ([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md)) properties are set.</span></span> 
   
-## <a name="notes-to-implementers"></a><span data-ttu-id="f9a40-124">Hinweise für Implementierer</span><span class="sxs-lookup"><span data-stu-id="f9a40-124">Notes to implementers</span></span>
+## <a name="notes-to-implementers"></a><span data-ttu-id="2cdc6-124">Hinweise für Implementierer</span><span class="sxs-lookup"><span data-stu-id="2cdc6-124">Notes to implementers</span></span>
 
-<span data-ttu-id="f9a40-125">Entsperren Sie in ihrer Implementierung von **FinishedMsg**die Nachricht, die von _lpEntryID_ identifiziert wurde, und führen Sie die entsprechende Verarbeitung aus.</span><span class="sxs-lookup"><span data-stu-id="f9a40-125">In your implementation of **FinishedMsg**, unlock the message identified by  _lpEntryID_ and perform the appropriate processing.</span></span> <span data-ttu-id="f9a40-126">Die Zielnachricht ist immer gesperrt; der MAPI-Spooler übergibt nie den Eintragsbezeichner für eine nicht gesperrte Nachricht an **FinishedMsg**.</span><span class="sxs-lookup"><span data-stu-id="f9a40-126">The target message will always be locked; the MAPI spooler never passes the entry identifier for an unlocked message to **FinishedMsg**.</span></span>
+<span data-ttu-id="2cdc6-125">Entsperren Sie in Ihrer Implementierung von **FinishedMsg** die durch  _lpEntryID_ identifizierte Nachricht, und führen Sie die entsprechende Verarbeitung aus.</span><span class="sxs-lookup"><span data-stu-id="2cdc6-125">In your implementation of **FinishedMsg**, unlock the message identified by  _lpEntryID_ and perform the appropriate processing.</span></span> <span data-ttu-id="2cdc6-126">Die Zielnachricht wird immer gesperrt. Der MAPI-Spooler übergibt niemals den Eintragsbezeichner für eine entsperrte Nachricht an **FinishedMsg**.</span><span class="sxs-lookup"><span data-stu-id="2cdc6-126">The target message will always be locked; the MAPI spooler never passes the entry identifier for an unlocked message to **FinishedMsg**.</span></span>
   
-<span data-ttu-id="f9a40-127">Es ist möglich, dass weder **PR_DELETE_AFTER_SUBMIT** noch **PR_SENTMAIL_ENTRYID** festgelegt ist, beides festgelegt ist oder die andere festgelegt ist.</span><span class="sxs-lookup"><span data-stu-id="f9a40-127">It is possible that neither **PR_DELETE_AFTER_SUBMIT** or **PR_SENTMAIL_ENTRYID** is set, both are set, or one or the other is set.</span></span> <span data-ttu-id="f9a40-128">In der folgenden Tabelle wird die Aktion beschrieben, die Sie auf der Grundlage der Einstellungen ergreifen sollten:</span><span class="sxs-lookup"><span data-stu-id="f9a40-128">The following table describes the action you should take based on the settings:</span></span> 
+<span data-ttu-id="2cdc6-127">Es ist möglich, dass **PR_DELETE_AFTER_SUBMIT** oder **PR_SENTMAIL_ENTRYID** festgelegt ist, beide festgelegt oder die eine oder die andere festgelegt ist.</span><span class="sxs-lookup"><span data-stu-id="2cdc6-127">It is possible that neither **PR_DELETE_AFTER_SUBMIT** or **PR_SENTMAIL_ENTRYID** is set, both are set, or one or the other is set.</span></span> <span data-ttu-id="2cdc6-128">In der folgenden Tabelle wird die Aktion beschrieben, die Sie basierend auf den Einstellungen ergreifen sollten:</span><span class="sxs-lookup"><span data-stu-id="2cdc6-128">The following table describes the action you should take based on the settings:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="f9a40-129">Wenn keine Eigenschaft festgelegt ist:</span><span class="sxs-lookup"><span data-stu-id="f9a40-129">If neither property is set:</span></span>  <br/> |<span data-ttu-id="f9a40-130">BeLassen Sie die Nachricht in dem Ordner, von dem Sie gesendet wurde (in der Regel der Postausgang).</span><span class="sxs-lookup"><span data-stu-id="f9a40-130">Leave the message in the folder from which it was sent (typically the Outbox).</span></span>  <br/> |
-|<span data-ttu-id="f9a40-131">Wenn beide Eigenschaften festgelegt sind:</span><span class="sxs-lookup"><span data-stu-id="f9a40-131">If both properties are set:</span></span>  <br/> |<span data-ttu-id="f9a40-132">Verschieben Sie die Nachricht, falls gewünscht, in den angegebenen Ordner, und löschen Sie Sie.</span><span class="sxs-lookup"><span data-stu-id="f9a40-132">Move the message to the indicated folder, if desired, and then delete it.</span></span>  <br/> |
-|<span data-ttu-id="f9a40-133">Wenn PR_SENTMAIL_ENTRYID festgelegt ist:</span><span class="sxs-lookup"><span data-stu-id="f9a40-133">If PR_SENTMAIL_ENTRYID is set:</span></span>  <br/> |<span data-ttu-id="f9a40-134">Verschieben Sie die Nachricht in den angegebenen Ordner.</span><span class="sxs-lookup"><span data-stu-id="f9a40-134">Move the message to the indicated folder.</span></span>  <br/> |
-|<span data-ttu-id="f9a40-135">Wenn PR_DELETE_AFTER_SUBMIT festgelegt ist:</span><span class="sxs-lookup"><span data-stu-id="f9a40-135">If PR_DELETE_AFTER_SUBMIT is set:</span></span>  <br/> |<span data-ttu-id="f9a40-136">Löschen Sie die Nachricht.</span><span class="sxs-lookup"><span data-stu-id="f9a40-136">Delete the message.</span></span>  <br/> |
+|<span data-ttu-id="2cdc6-129">Wenn keine eigenschaft festgelegt ist:</span><span class="sxs-lookup"><span data-stu-id="2cdc6-129">If neither property is set:</span></span>  <br/> |<span data-ttu-id="2cdc6-130">Lassen Sie die Nachricht im Ordner, aus dem sie gesendet wurde (in der Regel der Posteingang).</span><span class="sxs-lookup"><span data-stu-id="2cdc6-130">Leave the message in the folder from which it was sent (typically the Outbox).</span></span>  <br/> |
+|<span data-ttu-id="2cdc6-131">Wenn beide Eigenschaften festgelegt sind:</span><span class="sxs-lookup"><span data-stu-id="2cdc6-131">If both properties are set:</span></span>  <br/> |<span data-ttu-id="2cdc6-132">Verschieben Sie die Nachricht bei Bedarf in den angegebenen Ordner, und löschen Sie sie dann.</span><span class="sxs-lookup"><span data-stu-id="2cdc6-132">Move the message to the indicated folder, if desired, and then delete it.</span></span>  <br/> |
+|<span data-ttu-id="2cdc6-133">Wenn PR_SENTMAIL_ENTRYID festgelegt ist:</span><span class="sxs-lookup"><span data-stu-id="2cdc6-133">If PR_SENTMAIL_ENTRYID is set:</span></span>  <br/> |<span data-ttu-id="2cdc6-134">Verschieben Sie die Nachricht in den angegebenen Ordner.</span><span class="sxs-lookup"><span data-stu-id="2cdc6-134">Move the message to the indicated folder.</span></span>  <br/> |
+|<span data-ttu-id="2cdc6-135">Wenn PR_DELETE_AFTER_SUBMIT festgelegt ist:</span><span class="sxs-lookup"><span data-stu-id="2cdc6-135">If PR_DELETE_AFTER_SUBMIT is set:</span></span>  <br/> |<span data-ttu-id="2cdc6-136">Löschen Sie die Nachricht.</span><span class="sxs-lookup"><span data-stu-id="2cdc6-136">Delete the message.</span></span>  <br/> |
    
-<span data-ttu-id="f9a40-137">Wenn Sie alle geeigneten Aktionen ausgeführt haben, rufen Sie die [IMAPISupport::D osentmail](imapisupport-dosentmail.md) -Methode auf.</span><span class="sxs-lookup"><span data-stu-id="f9a40-137">After you have taken whatever action is appropriate, call the [IMAPISupport::DoSentMail](imapisupport-dosentmail.md) method.</span></span> 
+<span data-ttu-id="2cdc6-137">Nachdem Sie die entsprechende Aktion ausgeführt haben, rufen Sie die [IMAPISupport::D oSentMail-Methode](imapisupport-dosentmail.md) auf.</span><span class="sxs-lookup"><span data-stu-id="2cdc6-137">After you have taken whatever action is appropriate, call the [IMAPISupport::DoSentMail](imapisupport-dosentmail.md) method.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="f9a40-138">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="f9a40-138">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2cdc6-138">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="2cdc6-138">See also</span></span>
 
 
 
-[<span data-ttu-id="f9a40-139">IMAPISupport::DoSentMail</span><span class="sxs-lookup"><span data-stu-id="f9a40-139">IMAPISupport::DoSentMail</span></span>](imapisupport-dosentmail.md)
+[<span data-ttu-id="2cdc6-139">IMAPISupport::DoSentMail</span><span class="sxs-lookup"><span data-stu-id="2cdc6-139">IMAPISupport::DoSentMail</span></span>](imapisupport-dosentmail.md)
   
-[<span data-ttu-id="f9a40-140">IMsgStore: IMAPIProp</span><span class="sxs-lookup"><span data-stu-id="f9a40-140">IMsgStore : IMAPIProp</span></span>](imsgstoreimapiprop.md)
+[<span data-ttu-id="2cdc6-140">IMsgStore: IMAPIProp</span><span class="sxs-lookup"><span data-stu-id="2cdc6-140">IMsgStore : IMAPIProp</span></span>](imsgstoreimapiprop.md)
 
