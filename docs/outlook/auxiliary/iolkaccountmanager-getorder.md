@@ -34,7 +34,7 @@ HRESULT IOlkAccountManager::GetOrder (
 
 _pclsidCategory_
   
-> in Die Kategorie-Klassen-ID, für die die Bestellung abgerufen werden soll. Der Wert muss eine der folgenden sein:
+> [in] Die Kategorieklassen-ID, für die die Bestellung erhalten werden soll. Der Wert muss eine der folgenden sein:
     
    - CLSID_OlkMail
     
@@ -44,23 +44,23 @@ _pclsidCategory_
     
 _pcAccts_
   
->  Out Die Anzahl der Konten. 
+>  [out] Die Anzahl der Konten. 
     
 _prgAccts_
   
-> Out Ein Zeiger auf ein Array von Konten.
+> [out] Ein Zeiger auf ein Array von Konten.
     
 ## <a name="return-values"></a>Rückgabewerte
 
 |**[HRESULT]**|**Description**|
 |:-----|:-----|
-|S_OK  <br/> |Der Aufruf war erfolgreich.  <br/> |
+|S_OK  <br/> |Der Aufruf ist erfolgreich  <br/> |
 |E_INVALIDARG  <br/> |Mindestens ein Argument ist ungültig.  <br/> |
 |E_OLK_NOT_INITIALIZED  <br/> |Konto-Manager wurde nicht für die Verwendung initialisiert.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Vor dem Aufrufen dieser Methode reserviert der Aufrufer nur einen Array Zeiger *prgAccts* , aber kein Speicher für das Array, an dem *prgAccts* Punkt. Nach der Rückgabe dieser Methode muss der Aufrufer [IOlkAccountManager:: freier Arbeitsspeicher](iolkaccountmanager-freememory.md) verwenden, um den für *prgAccts* reservierten Arbeitsspeicher freizugeben. 
+Vor dem Aufrufen dieser Methode weist der Aufrufer nur einen Arrayzeiger  *prgAccts*  zu, aber keinen Speicher für das Array, bei dem  *prgAccts-Punkte vorhanden*  sind. Nachdem diese Methode zurückgegeben wurde, muss der Aufrufer [IOlkAccountManager::FreeMemory](iolkaccountmanager-freememory.md) verwenden, um den für  *prgAccts*  zugewiesenen Arbeitsspeicher frei zu geben. 
   
 ## <a name="see-also"></a>Siehe auch
 

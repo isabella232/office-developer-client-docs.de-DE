@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 4664df83-cf81-36d4-189d-4a09be371638
-description: Eine Variable dieses Datentyps enthält den Wert einer Eigenschaft, die einen Variant-Datentyp hat.
+description: Eine Variable dieses Datentyps enthält den Wert einer Eigenschaft, die einen Variant-Datentyp besitzt.
 ms.openlocfilehash: 124cfaef40e63d60e2e9c6681884bfb57a043dde
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -14,9 +14,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33424399"
 ---
-# <a name="acctvariant"></a>ACCT_VARIANT
+# <a name="acct_variant"></a>ACCT_VARIANT
 
-Eine Variable dieses Datentyps enthält den Wert einer Eigenschaft, die einen Variant-Datentyp hat.
+Eine Variable dieses Datentyps enthält den Wert einer Eigenschaft, die einen Variant-Datentyp besitzt.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -46,16 +46,16 @@ _dwType_
     
     - PT_BINARY
     
-_DW_
+_dw_
   
-> DWORD-Wert von Variant.
+> DWORD-Wert der Variante.
     
-_Pwsz_
+_pwsz_
   
-> Zeichenfolgenwert von Variant.
+> Zeichenfolgenwert von variant.
     
 _bin_
   
-> Binärwert des Variant-Werts.
+> Binärwert der Variante.
     
 

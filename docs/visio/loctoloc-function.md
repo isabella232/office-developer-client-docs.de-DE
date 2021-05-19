@@ -22,7 +22,7 @@ Gibt einen transformierten Punkt in lokalen Koordinaten im Zielkoordinatensystem
   
 ## <a name="syntax"></a>Syntax
 
-LOCTOLOC (* * *srcPoint* * *, * * *srcRef* * *, * * *Zielbezug* * *) 
+LOCTOLOC(** *srcPoint* **, ** *srcRef* **, ** *dstRef* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -30,13 +30,13 @@ LOCTOLOC (* * *srcPoint* * *, * * *srcRef* * *, * * *Zielbezug* * *)
 |:-----|:-----|:-----|:-----|
 | _srcPoint_ <br/> |Erforderlich  <br/> |**String** <br/> | Ein Punkt in den lokalen Koordinaten des Quellkoordinatensystems.  <br/> |
 | _srcRef_ <br/> |Erforderlich  <br/> |**String** <br/> | Ein Bezug auf eine Zelle im Quellobjekt.  <br/> |
-| _Zielbezug_ <br/> |Erforderlich  <br/> |**String** <br/> | Ein Bezug auf eine Zelle im Zielobjekt.  <br/> |
+| _dstRef_ <br/> |Erforderlich  <br/> |**String** <br/> | Ein Bezug auf eine Zelle im Zielobjekt.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
 Zeichenfolge
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Die LOCTOLOC-Funktion konvertiert einen Punkt aus lokalen Koordinaten in einem Quell-Shape in die lokalen Koordinaten eines Ziel-Shapes. Sie können diese Funktion verwenden, um beispielsweise ein Shape aus einem Punkt eines anderen Koordinatensystems zu konstruieren. Außerdem können Sie diese Funktion verwenden, um einen lokalen Punkt in Zeichenblattkoordinaten zu transformieren- und umgekehrt.
   
@@ -46,7 +46,7 @@ Die Ausgangs- und Zielkoordinaten müssen auf dem gleichen Zeichenblatt liegen.
   
 ## <a name="example"></a>Beispiel
 
-Die folgende Formel konvertiert die lokale PIN der Form, die mit der Formel verknüpft ist, zu einem Punkt auf der Seite.
+Mit der folgenden Formel wird der lokale Pin der form, die der Formel zugeordnet ist, in einen Punkt auf der Seite konvertiert.
   
 ```vb
 LOCTOLOC(PNT(LocPinX, LocPinY), Width, ThePage!PageWidth)

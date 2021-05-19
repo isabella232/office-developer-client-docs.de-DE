@@ -25,12 +25,12 @@ ms.locfileid: "33423713"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl der Bytes, die für eine neue [SizedSSortOrderSet](sizedssortorderset.md) -Struktur reserviert werden sollen, die eine angegebene Anzahl von Sortierreihenfolgen enthält, die durch [SSortOrder](ssortorder.md) -Strukturen dargestellt werden. 
+Berechnet die Anzahl der Bytes, die für eine neue [SizedSSortOrderSet-Struktur](sizedssortorderset.md) zugewiesen werden sollen, die eine angegebene Anzahl von Sortierreihenfolgen enthält, die durch [SSortOrder-Strukturen dargestellt](ssortorder.md) werden. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |**SSortOrderSet** <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |**SSortOrderSet** <br/> |
    
 ```cpp
 CbNewSSortOrderSet (_csort)
@@ -38,9 +38,9 @@ CbNewSSortOrderSet (_csort)
 
 ## <a name="parameters"></a>Parameter
 
- __csort_
+ _ _csort_
   
-> Die Anzahl der **SSortOrder** -Strukturen, die in die **SSortOrderSet** -Struktur eingeschlossen werden sollen. 
+> Anzahl der **SSortOrder-Strukturen,** die in die **SSortOrderSet-Struktur eingeschlossen werden** sollen. 
     
 ## <a name="see-also"></a>Siehe auch
 

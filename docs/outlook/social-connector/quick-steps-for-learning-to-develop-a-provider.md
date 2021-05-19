@@ -7,7 +7,7 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 13c0ae8c-d268-4bf0-942d-2a6160142f5e
-description: In diesem Thema werden einige Schritte zum Entwickeln eines Outlook Social Connector (OSC)-Anbieters erläutert.
+description: In diesem Thema werden einige Schritte zum Entwickeln eines Outlook Social Connector (OSC) vorgeschlagen.
 ms.openlocfilehash: 581997ab257d59062761d97bfef49a88b90bb1e1
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -19,37 +19,37 @@ ms.locfileid: "33424217"
 
 Zum Entwickeln eines OSC-Anbieters müssen Sie die folgenden allgemeinen Schritte ausführen:
   
-- Implementieren Sie die vier obligatorischen Schnittstellen: [ISocialProvider](isocialprovideriunknown.md), [ISocialSession](isocialsessioniunknown.md), [ISocialProfile](isocialprofileisocialperson.md)und [ISocialPerson](isocialpersoniunknown.md). Abhängig von der Unterstützung ihres sozialen Netzwerks für das Zwischenspeichern von Anmeldeinformationen, nach einer Person im sozialen Netzwerk oder der dynamischen Synchronisierung von Freunden und ihren Aktivitäten, möchten Sie möglicherweise die [ISocialSession2](isocialsession2iunknown.md) -Schnittstelle implementieren. 
+- Implementieren Sie die vier obligatorischen Schnittstellen: [ISocialProvider](isocialprovideriunknown.md), [ISocialSession](isocialsessioniunknown.md), [ISocialProfile](isocialprofileisocialperson.md)und [ISocialPerson](isocialpersoniunknown.md). Abhängig von der Unterstützung Ihres sozialen Netzwerks für das Zwischenspeichern von Anmeldeinformationen, das Folgen einer Person im sozialen Netzwerk oder die dynamische Synchronisierung von Freunden und ihren Aktivitäten sollten Sie die [ISocialSession2-Schnittstelle](isocialsession2iunknown.md) implementieren. 
     
-- Testen und Debuggen Sie parallel zum Implementieren von Schnittstellen den OSC-Anbieter. 
+- Testen und debuggen Sie parallel zur Implementierung von Schnittstellen den OSC-Anbieter. 
 
-- Stellen Sie den OSC-Anbieter bereit.  
+- Bereitstellen des OSC-Anbieters.  
 
-- Führen Sie die letzten Tests vor der Version aus.
+- Durchführen der letzten Tests vor der Veröffentlichung.
     
 ## <a name="step-a-implementing-interfaces"></a>Schritt A: Implementieren von Schnittstellen
 
-Ein OSC-Anbieter implementiert Schnittstellen, sodass OSC mithilfe dieser Schnittstellen die erforderlichen Informationen über oder aus dem sozialen Netzwerk über den OSC-Anbieter abrufen kann. Diese Informationen umfassen Folgendes:
+Ein OSC-Anbieter implementiert Schnittstellen, damit das OSC diese Schnittstellen verwenden kann, um über den OSC-Anbieter erforderliche Informationen über oder aus dem sozialen Netzwerk zu erhalten. Diese Informationen umfassen Folgendes:
   
-- VorGehensWeise zum Darstellen des Konto Anmeldedialogfelds für einen Benutzer.    
-- Ob der Anbieter unterstützt, Freunde oder Aktivitäten anzuzeigen, die im sozialen Netzwerk angezeigt werden.    
-- Anzeigen von Freunden und Aktivitäten im Bereich VisitenKarte oder Outlook-Personen.     
-- Zeitpunkt, zu dem die Informationen zu Freunden oder Aktivitäten auf der VisitenKarte oder im Personen Bereich aktualisiert werden sollen.
+- So stellen Sie einem Benutzer das Anmeldedialogfeld des Kontos vor.    
+- Gibt an, ob der Anbieter die Anzeige von Freunden oder Aktivitäten unterstützt, die im sozialen Netzwerk angezeigt werden.    
+- Anzeigen von Freunden und Aktivitäten in der Visitenkarte oder Outlook Personenbereich.     
+- Informationen zum Aktualisieren von Freunden oder Aktivitäten auf der Visitenkarte oder im Personenbereich.
     
-Die Informationen werden in der Regel vom Anbieter an den OSC in Form von XML-Zeichenfolgen als Ausgabeparameter der Interface-Methoden übergeben. Sowohl der OSC als auch ein OSC-Anbieter entsprechen dem XML-Schema des OSC-Anbieters. Daher benötigen Sie im Zuge der Implementierung der Schnittstellen ein gutes Verständnis dafür, wie Sie mit dem XML-Schema die oben aufgeführten Informationen angeben können. 
+Die Informationen werden in der Regel vom Anbieter an die OSC in Form von XML-Zeichenfolgen als Ausgabeparameter von Schnittstellenmethoden übergeben. Sowohl der OSC als auch ein OSC-Anbieter entsprechen dem XML-Schema des OSC-Anbieters. Daher benötigen Sie bei der Implementierung der Schnittstellen ein gutes Verständnis dafür, wie Das XML-Schema es Ihnen ermöglicht, Informationen wie oben aufgeführt anzugeben. 
 
-In den folgenden Ressourcen wird erläutert, wie Sie XML für Anbieter Funktionen, Freunde und Aktivitäten angeben:
+In den folgenden Ressourcen wird erläutert, wie Sie XML für Anbieterfunktionen, Freunde und Aktivitäten angeben:
   
 - [OSC - Typische Aufrufsequenzen](osc-typical-calling-sequences.md)    
 - [Synchronisieren von Freunden und Aktivitäten](synchronizing-friends-and-activities.md)    
-- [XML-Beispiel für Funktionen](capabilities-xml-example.md)   
+- [Capabilities XML(Beispiel)](capabilities-xml-example.md)   
 - [XML für Funktionen](xml-for-capabilities.md)    
-- [XML-Beispiel für Freunde](friends-xml-example.md)    
+- [Friends-XML-Beispiel](friends-xml-example.md)    
 - [XML für Freunde](xml-for-friends.md)   
-- [XML-Beispiel für Aktivitätsfeeds](activity-feed-xml-example.md)   
+- [Beispiel für Aktivitätsfeed-XML](activity-feed-xml-example.md)   
 - [XML für Aktivitäten](xml-for-activities.md)
     
-Bevor Sie mit der Implementierung beginnen, sollten Sie auch die folgenden Themen konsultieren, um Zeit später beim Debugging zu sparen:
+Bevor Sie mit der Implementierung beginnen, lesen Sie auch die folgenden Themen, um Später im Debugprozess Zeit zu sparen:
   
 - [Technische Anforderungen](technical-requirements.md)    
 - [Bewährte Methoden für die Entwicklung eines Anbieters](best-practices-for-developing-a-provider.md)    
@@ -57,9 +57,9 @@ Bevor Sie mit der Implementierung beginnen, sollten Sie auch die folgenden Theme
     
 ## <a name="step-b-debugging"></a>Schritt B: Debuggen
 
-Das Thema [Debuggen eines Anbieters](debugging-a-provider.md) schlägt Debuggingverfahren vor, die Sie beim Entwickeln eines osc-Anbieters verwenden können. 
+Im Thema [Debuggen eines Anbieters](debugging-a-provider.md) werden Debugverfahren vorgeschlagen, die Sie bei der Entwicklung eines OSC-Anbieters verwenden können. 
   
-Während Sie sich entwickeln, können Sie auch auf die [Bereitstellung der Freigabe eines osc](getting-ready-to-release-an-osc-provider.md) -Anbieters verweisen, um ein besseres Verständnis des erwarteten Verhaltens in bestimmten Szenarien zu erlangen (beispielsweise grundlegende und formularbasierte Authentifizierung). 
+Während Der Entwicklung können Sie sich auch auf [Getting Ready to Release an OSC Provider](getting-ready-to-release-an-osc-provider.md) beziehen, um sich ein besseres Verständnis des erwarteten Verhaltens in bestimmten Szenarien (z. B. einfache und formularbasierte Authentifizierung) zu verschaffen. 
   
 ## <a name="step-c-deploying"></a>Schritt C: Bereitstellen
 
@@ -67,11 +67,11 @@ Weitere Informationen zu Bereitstellungsanforderungen finden Sie in den folgende
   
 - [Bereitstellen eines Providers](deploying-a-provider.md)    
 - [Registrieren eines Anbieters](registering-a-provider.md)   
-- [PrüfListe für die Installation](installation-checklist.md)
+- [Prüfliste für die Installation](installation-checklist.md)
     
-## <a name="step-d-final-testing-before-release"></a>Schritt D: abschließende Tests vor der Freigabe
+## <a name="step-d-final-testing-before-release"></a>Schritt D: Abschließende Tests vor der Veröffentlichung
 
-Je nach sozialem Netzwerk und OSC-Anbieter gibt es in der Regel anbieterspezifische Tests, die Sie ausführen müssen, bevor Sie Ihren Anbieter freigeben. Eine vorgeschlagene Liste von Tests finden Sie unter Vorbereiten der [Freigabe eines osc](getting-ready-to-release-an-osc-provider.md)-Anbieters.
+Abhängig von Ihrem sozialen Netzwerk und dem OSC-Anbieter gibt es in der Regel anbieterspezifische Tests, die Sie vor der Veröffentlichung Ihres Anbieters durchführen sollten. Eine vorgeschlagene Liste der Tests finden Sie unter [Getting Ready to Release an OSC Provider](getting-ready-to-release-an-osc-provider.md).
   
 ## <a name="see-also"></a>Siehe auch
 

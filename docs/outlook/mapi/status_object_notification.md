@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33426268"
 ---
-# <a name="statusobjectnotification"></a>STATUS_OBJECT_NOTIFICATION
+# <a name="status_object_notification"></a>STATUS_OBJECT_NOTIFICATION
 
   
   
@@ -29,7 +29,7 @@ Beschreibt ein Statusobjekt, das von einer Änderung betroffen ist.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct
@@ -42,35 +42,35 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cbEntryID**
   
-> Die Anzahl der Bytes in der Eintrags-ID, auf die durch das **lpEntryID** -Element verwiesen wird. 
+> Anzahl der Bytes in der Eintrags-ID, auf die das **lpEntryID-Element** verweist. 
     
  **lpEntryID**
   
-> Zeiger auf die Eintrags-ID des geänderten Status Objekts.
+> Zeiger auf die Eintrags-ID des geänderten Statusobjekts.
     
  **cValues**
   
-> Die Anzahl der [SPropValue](spropvalue.md) -Strukturen im Array, auf die vom **lpPropVals** -Element verwiesen wird. 
+> Anzahl der [SPropValue-Strukturen](spropvalue.md) im Array, auf das das **lpPropVals-Element verweist.** 
     
  **lpPropVals**
   
-> Zeiger auf ein Array von **SPropValue** -Strukturen, die die Eigenschaften des geänderten Status-Objekts beschreiben. 
+> Zeiger auf ein Array von **SPropValue-Strukturen,** die die Eigenschaften des geänderten Statusobjekts beschreiben. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **STATUS_OBJECT_NOTIFICATION** -Struktur ist ein Mitglied der Vereinigung von Strukturen, die im **Info** -Element der Benachrichtigungs [](notification.md) Struktur enthalten sind. Die **STATUS_OBJECT_NOTIFICATION** -Struktur ist in einer Status Objekt Benachrichtigung für ein Ereignis vom Typ _fnevStatusObjectModified_enthalten. Status Objekt Benachrichtigung ist eine interne MAPI-Benachrichtigung; Clients und Dienstanbieter können sich nicht für IT registrieren, und Dienstanbieter können Sie nicht generieren.
+Die **STATUS_OBJECT_NOTIFICATION** ist eines der Mitglieder der Strukturgewerkschaft, die im **info-Element** der [NOTIFICATION-Struktur enthalten](notification.md) ist. Die **STATUS_OBJECT_NOTIFICATION** ist in einer Statusobjektbenachrichtigung für ein Ereignis vom Typ _fnevStatusObjectModified enthalten._ Status-Objektbenachrichtigung ist eine interne #A0 Clients und Dienstanbieter können sich nicht dafür registrieren, und Dienstanbieter können sie nicht generieren.
   
-Weitere Informationen zur Benachrichtigung finden Sie in den in der folgenden Tabelle beschriebenen Themen.
+Weitere Informationen zur Benachrichtigung finden Sie in den In der folgenden Tabelle beschriebenen Themen.
   
 |**Thema**|**Beschreibung**|
 |:-----|:-----|
-|[Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md) <br/> |Allgemeine Übersicht über Benachrichtigungs-und Benachrichtigungsereignisse.  <br/> |
-|[Behandeln von Benachrichtigungen](handling-notifications.md) <br/> |Erläuterung, wie Clients Benachrichtigungen behandeln sollen.  <br/> |
-|[Unterstützende Ereignisbenachrichtigung](supporting-event-notification.md) <br/> |Erläuterung, wie Dienstanbieter die **IMAPISupport** -Methode verwenden können, um Benachrichtigungen zu generieren.  <br/> |
+|[Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md) <br/> |Allgemeine Übersicht über Benachrichtigungs- und Benachrichtigungsereignisse.  <br/> |
+|[Behandeln von Benachrichtigungen](handling-notifications.md) <br/> |Diskussion darüber, wie Clients mit Benachrichtigungen umgehen sollten.  <br/> |
+|[Unterstützende Ereignisbenachrichtigung](supporting-event-notification.md) <br/> |Hier erfahren Sie, wie Dienstanbieter die **IMAPISupport-Methode** zum Generieren von Benachrichtigungen verwenden können.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

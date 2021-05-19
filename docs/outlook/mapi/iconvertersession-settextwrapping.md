@@ -25,7 +25,7 @@ ms.locfileid: "33423587"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Legt die Breite des Textumbruchs für einen MIME-Stream fest, den der Konverter in [IConverterSession:: MAPItoMIMEStm](iconvertersession-mapitomimestm.md)zurückgibt.
+Legt die Textumbruchbreite für einen MIME-Stream fest, den der Konverter in [IConverterSession::MAPIToMIMEStm zurückgeben wird.](iconvertersession-mapitomimestm.md)
   
 ```cpp
 HRESULT IConverterSession::SetTextWrapping ( 
@@ -38,17 +38,17 @@ HRESULT IConverterSession::SetTextWrapping (
 
  *fWrapText* 
   
-> in Ob Text umbrochen werden soll oder nicht.
+> [in] Gibt an, ob Text umbrucht werden soll oder nicht.
     
  *ulWrapWidth* 
   
-> in Die zu verwendende Textumbruch Breite.
+> [in] Die zu verwendende Textumbruchbreite.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK
   
-> Der Anruf wurde erfolgreich ausgeführt.
+> Der Aufruf war erfolgreich.
     
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -56,8 +56,8 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MapiMime. cpp  <br/> |ImportEMLToIMessage  <br/> |MFCMAPI verwendet MimeToMAPI, um eine EML-Datei in eine MAPI-Nachricht umzuwandeln.  <br/> |
-|MapiMime. cpp  <br/> |ExportIMessageToEML  <br/> |MFCMAPI verwendet MAPIToMIMEStm, um eine MAPI-Nachricht in eine EML-Datei umzuwandeln.  <br/> |
+|MapiMime.cpp  <br/> |ImportEMLToIMessage  <br/> |MFCMAPI verwendet MimeToMAPI, um eine EML-Datei in eine MAPI-Nachricht zu konvertieren.  <br/> |
+|MapiMime.cpp  <br/> |ExportIMessageToEML  <br/> |MFCMAPI verwendet MAPIToMIMEStm, um eine MAPI-Nachricht in eine EML-Datei zu konvertieren.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

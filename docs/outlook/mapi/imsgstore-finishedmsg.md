@@ -25,7 +25,7 @@ ms.locfileid: "33427087"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ermöglicht dem Nachrichtenspeicher Anbieter das Ausführen der Verarbeitung für eine gesendete Nachricht. Diese Methode ist nur durch die MAPI-Warteschlange aufgerufen.
+Ermöglicht dem Nachrichtenspeicheranbieter die Verarbeitung einer gesendeten Nachricht. Diese Methode ist nur durch die MAPI-Warteschlange aufgerufen.
   
 ```cpp
 HRESULT FinishedMsg(
@@ -43,11 +43,11 @@ HRESULT FinishedMsg(
     
  _cbEntryID_
   
-> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID_ -Parameter verwiesen wird. 
+> [in] Die Byteanzahl im Eintragsbezeichner, auf den der  _lpEntryID-Parameter_ verweist. 
     
  _lpEntryID_
   
-> in Ein Zeiger auf die Eintrags-ID der zu verarbeitenden Nachricht.
+> [in] Ein Zeiger auf die Eintrags-ID der zu verarbeitende Nachricht.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -57,26 +57,26 @@ S_OK
     
 MAPI_E_NO_SUPPORT 
   
-> Der Nachrichtenspeicher Anbieter unterstützt keine gesendete Nachrichtenverarbeitung. Dieser Fehlerwert wird zurückgegeben, wenn der Aufrufer nicht der MAPI-Spooler ist.
+> Der Nachrichtenspeicheranbieter unterstützt keine gesendete Nachrichtenverarbeitung. Dieser Fehlerwert wird zurückgegeben, wenn der Aufrufer nicht der MAPI-Spooler ist.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMsgStore:: FinishedMsg** -Methode führt eine Verarbeitung für eine gesendete Nachricht aus. Bei dieser Verarbeitung kann es sich um das Löschen der Nachricht, die Verschiebung in einen anderen Ordner oder um beide Aktionen handeln. Die Art der Verarbeitung hängt davon ab, ob die Eigenschaften **PR_DELETE_AFTER_SUBMIT** ([Pidtagdeleteaftersubmit (](pidtagdeleteaftersubmit-canonical-property.md)) und **PR_SENTMAIL_ENTRYID** ([pidtagsentmailentryid (](pidtagsentmailentryid-canonical-property.md)) festgelegt sind. 
+Die **IMsgStore::FinishedMsg-Methode** führt die Verarbeitung einer gesendeten Nachricht durch. Diese Verarbeitung kann das Löschen der Nachricht, das Verschieben in einen anderen Ordner oder beide Aktionen umfassen. Der Verarbeitungstyp hängt davon ab, ob **die Eigenschaften PR_DELETE_AFTER_SUBMIT** ([PidTagDeleteAfterSubmit](pidtagdeleteaftersubmit-canonical-property.md)) und **PR_SENTMAIL_ENTRYID** ([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md)) festgelegt sind. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Entsperren Sie in ihrer Implementierung von **FinishedMsg**die Nachricht, die von _lpEntryID_ identifiziert wurde, und führen Sie die entsprechende Verarbeitung aus. Die Zielnachricht ist immer gesperrt; der MAPI-Spooler übergibt nie den Eintragsbezeichner für eine nicht gesperrte Nachricht an **FinishedMsg**.
+Entsperren Sie in Ihrer Implementierung von **FinishedMsg** die durch  _lpEntryID_ identifizierte Nachricht, und führen Sie die entsprechende Verarbeitung aus. Die Zielnachricht wird immer gesperrt. Der MAPI-Spooler übergibt niemals den Eintragsbezeichner für eine entsperrte Nachricht an **FinishedMsg**.
   
-Es ist möglich, dass weder **PR_DELETE_AFTER_SUBMIT** noch **PR_SENTMAIL_ENTRYID** festgelegt ist, beides festgelegt ist oder die andere festgelegt ist. In der folgenden Tabelle wird die Aktion beschrieben, die Sie auf der Grundlage der Einstellungen ergreifen sollten: 
+Es ist möglich, dass **PR_DELETE_AFTER_SUBMIT** oder **PR_SENTMAIL_ENTRYID** festgelegt ist, beide festgelegt oder die eine oder die andere festgelegt ist. In der folgenden Tabelle wird die Aktion beschrieben, die Sie basierend auf den Einstellungen ergreifen sollten: 
   
 |||
 |:-----|:-----|
-|Wenn keine Eigenschaft festgelegt ist:  <br/> |BeLassen Sie die Nachricht in dem Ordner, von dem Sie gesendet wurde (in der Regel der Postausgang).  <br/> |
-|Wenn beide Eigenschaften festgelegt sind:  <br/> |Verschieben Sie die Nachricht, falls gewünscht, in den angegebenen Ordner, und löschen Sie Sie.  <br/> |
+|Wenn keine eigenschaft festgelegt ist:  <br/> |Lassen Sie die Nachricht im Ordner, aus dem sie gesendet wurde (in der Regel der Posteingang).  <br/> |
+|Wenn beide Eigenschaften festgelegt sind:  <br/> |Verschieben Sie die Nachricht bei Bedarf in den angegebenen Ordner, und löschen Sie sie dann.  <br/> |
 |Wenn PR_SENTMAIL_ENTRYID festgelegt ist:  <br/> |Verschieben Sie die Nachricht in den angegebenen Ordner.  <br/> |
 |Wenn PR_DELETE_AFTER_SUBMIT festgelegt ist:  <br/> |Löschen Sie die Nachricht.  <br/> |
    
-Wenn Sie alle geeigneten Aktionen ausgeführt haben, rufen Sie die [IMAPISupport::D osentmail](imapisupport-dosentmail.md) -Methode auf. 
+Nachdem Sie die entsprechende Aktion ausgeführt haben, rufen Sie die [IMAPISupport::D oSentMail-Methode](imapisupport-dosentmail.md) auf. 
   
 ## <a name="see-also"></a>Siehe auch
 

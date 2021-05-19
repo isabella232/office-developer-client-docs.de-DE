@@ -21,19 +21,19 @@ ms.locfileid: "33424147"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Da Schnittstellenmethoden virtuell sind, ist es nicht möglich, als Anrufer den vollständigen Satz von Werten zu kennen, die von einem beliebigen Aufruf zurückgegeben werden können. Eine Implementierung einer Methode kann fünf Werte zurückgeben. eine andere kann acht zurückgeben. In den Referenz Einträgen in der MAPI-Dokumentation werden einige Werte aufgeführt, die für jede Methode zurückgegeben werden können. Dies sind die Werte, die Ihr Client oder Dienstanbieter überprüfen und behandeln kann, da diese eine besondere Bedeutung haben. Andere Werte können zurückgegeben werden, da Sie jedoch keine Bedeutung haben, ist kein spezieller Code erforderlich, um diese zu behandeln. Eine einfache Überprüfung auf Erfolg oder Misserfolg ist ausreichend.
+Da Schnittstellenmethoden virtuell sind, ist es nicht möglich, als Aufrufer den vollständigen Satz von Werten zu kennen, die von einem beliebigen Aufruf zurückgegeben werden können. Eine Implementierung einer Methode kann fünf Werte zurückgeben. Ein anderer kann acht zurückgeben. Die Referenzeinträge in der #A0 enthalten einige Werte, die für jede Methode zurückgegeben werden können. Dies sind die Werte, die Ihr Client oder Dienstanbieter überprüfen und behandeln kann, da sie besondere Bedeutungen haben. Andere Werte können zurückgegeben werden, aber da sie nicht aussagekräftig sind, ist spezieller Code zur Verarbeitung dieser Werte nicht erforderlich. Eine einfache Überprüfung auf Erfolg oder Fehler ist ausreichend.
   
-Einige der Schnittstellenmethoden geben Warnungen zurück. Wenn eine vom Client oder Dienstanbieter aufgerufene Methode eine Warnung zurückgeben kann, verwenden Sie das **HR_FAILED** -Makro, um den Rückgabewert zu testen, statt eine Überprüfung auf 0 (null) oder ungleich NULL. Warnungen, obwohl ungleich NULL, unterscheiden sich von Fehlercodes dadurch, dass Sie nicht das hohe Bit festgelegt haben. Wenn Ihr Client oder Dienstanbieter das Makro nicht verwendet, ist es wahrscheinlich, dass für einen Fehler eine Warnung verwechselt wird. 
+Einige der Schnittstellenmethoden geben Warnungen zurück. Wenn eine Methode, die Ihr Client oder Dienstanbieter  aufruft, eine Warnung zurückgeben kann, verwenden Sie das HR_FAILED-Makro, um den Rückgabewert zu testen, anstatt auf Null oder ungleich Null zu überprüfen. Warnungen unterscheiden sich, obwohl ungleich Null, von Fehlercodes, da sie nicht über den hohen Bitsatz verfügen. Wenn Ihr Client oder Dienstanbieter das Makro nicht verwendet, ist es wahrscheinlich, dass eine Warnung mit einem Fehler irrt. 
   
-Obwohl die meisten Schnittstellenmethoden und-Funktionen HRESULT-Werte zurückgeben, geben einige Funktionen unsigned long-Werte zurück. Außerdem stammen einige Methoden, die in der MAPI-Umgebung verwendet werden, aus COM und geben COM-Fehlerwerte anstelle von MAPI-Fehlerwerten zurück. Beachten Sie beim tätigen von Anrufen die folgenden Richtlinien:
+Obwohl die meisten Schnittstellenmethoden und -funktionen HRESULT-Werte zurückgeben, geben einige Funktionen nicht signierte lange Werte zurück. Außerdem stammen einige methoden, die in der MAPI-Umgebung verwendet werden, aus COM und geben COM-Fehlerwerte anstelle von MAPI-Fehlerwerten zurück. Beachten Sie beim Telefonieren die folgenden Richtlinien:
   
-- Verlassen Sie sich nie auf die Rückgabewerte von **IUnknown:: AddRef** oder **IUnknown:: Release**. Diese Rückgabewerte dienen nur zu Diagnosezwecken. 
+- Verwenden Sie niemals die Rückgabewerte von **IUnknown::AddRef** oder **IUnknown::Release.** Diese Rückgabewerte dienen nur zu Diagnosezwecken. 
     
-- **IUnknown:: QueryInterface** gibt immer generische com-Fehler zurück, bei denen die FACILITY_NULL-oder FACILITY_RPC statt MAPI-Fehler aufweist. 
+- **IUnknown::QueryInterface** gibt immer generische COM-Fehler zurück, bei denen die Einrichtung FACILITY_NULL oder FACILITY_RPC anstelle von MAPI-Fehlern ist. 
     
-- Alle anderen Schnittstellenmethoden geben MAPI-Schnittstellenfehler mit einer FACILITY_ITF-oder FACILITY_RPC-oder FACILITY_NULL-Fehlermeldung zurück.
+- Alle anderen Schnittstellenmethoden geben MAPI-Schnittstellenfehler mit einer Möglichkeit von FACILITY_ITF oder FACILITY_RPC oder FACILITY_NULL zurück.
     
-Wenn ein Aufruf an eine nicht unterstützte MAPI-Methode erfolgt, kann einer von vier möglichen Fehlern zurückgegeben werden: 
+Wenn ein Aufruf einer nicht unterstützten MAPI-Methode erfolgt, kann einer von vier möglichen Fehlern zurückgegeben werden: 
   
 MAPI_E_NO_SUPPORT
   

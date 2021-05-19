@@ -26,23 +26,23 @@ Legt fest, ob dieses platzierbare Shape verschoben wird, wenn Sie ein anderes pl
 |1  <br/> |Keine Shapes verschieben.  <br/> |**visSLOPlowNever** <br/> |
 |2  <br/> |Jedes Shape verschieben.  <br/> |**visSLOPlowAlways** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Sie können den Wert dieser Zelle für eine bestimmte Form auch im Dialogfeld **Verhalten** auf der Registerkarte **Platzierung** festlegen (bei aktiviertem Shape klicken Sie auf der Registerkarte [Entwicklertools](run-in-developer-mode-display-the-developer-tab.md) in der Gruppe **Shape-Design** auf **Verhalten**, und klicken Sie dann auf die Registerkarte **Platzierung** ). 
+Sie können den Wert dieser Zelle für eine bestimmte Form auch auf der Registerkarte Platzierung [](run-in-developer-mode-display-the-developer-tab.md) im Dialogfeld Verhalten festlegen (wenn eine Form ausgewählt  ist, klicken Sie auf der Registerkarte Entwickler in der Gruppe **Shape-Entwurf** auf  **Verhalten,** und klicken Sie dann auf die Registerkarte Platzierung).  
   
-Wenn Sie dieses Verhalten für *alle* Formen auf dem Zeichenblatt festlegen möchten, verwenden Sie die Zelle Zelle PlowCode im Abschnitt Seiten Layout. 
+Verwenden Sie zum Festlegen dieses Verhaltens für  *alle*  Formen auf dem Zeichenblatt die Zelle PlowCode im Abschnitt Seitenlayout. 
   
-Wenn Sie einen Verweis auf die Zelle Zelle ShapePlowCode aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle ShapePlowCode anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Zelle ShapePlowCode  <br/> |
+|Zellenname:  <br/> |ShapePlowCode  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle ShapePlowCode aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle ShapePlowCode nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowShapeLayout** <br/> |
 |Zellenindex:  <br/> |**visSLOPlowCode** <br/> |
    

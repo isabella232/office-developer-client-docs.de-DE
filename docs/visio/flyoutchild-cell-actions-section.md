@@ -20,20 +20,20 @@ ms.locfileid: "33420864"
 
 Bestimmt, ob die Zeile ein untergeordnetes Erweiterungsmenü der letzten Zeile oberhalb befindlichen Zeile ist, bei der es sich nicht um eine untergeordnete Erweiterung handelt. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle FlyoutChild aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes. 
+Verwenden Sie folgendes, um einen Verweis auf die FlyoutChild-Zelle anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** zu erhalten. 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Aktionen. *Name* . FlyoutChildwhere-Aktionen.  *Name* ist der Name der Zeile Actions.  <br/> |
+|Zellenname:  <br/> |Aktionen. *Name*  . FlyoutChildwhere-Aktionen.  *Name*  ist der Name der Zeile Aktionen  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle FlyoutChild aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die FlyoutChild-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
 |Abschnittsindex:  <br/> |**visSectionAction** <br/> |
-|Zeilenindex:  <br/> |**visRowAction** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+|Zeilenindex:  <br/> |**visRowAction**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
 |Zellenindex:  <br/> |**visActionFlyoutChild** <br/> |
    
 

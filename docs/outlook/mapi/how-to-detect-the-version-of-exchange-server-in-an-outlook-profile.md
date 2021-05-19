@@ -5,7 +5,7 @@ ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: e2d8d8a9-7e8f-9cf0-56a8-d8a6281ad589
-description: 'Zuletzt geändert: 03 Juli, 2012'
+description: 'Letzte Änderung: 03. Juli 2012'
 ms.openlocfilehash: c6aaac128e1a3e1a8d77d3fa8b6c50a335348b71
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -17,11 +17,11 @@ ms.locfileid: "33424448"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Dieses Thema enthält ein Codebeispiel in C++, das zeigt, wie die **[PR_PROFILE_SERVER_VERSION](pidtagprofileserverversion-canonical-property.md)** -Eigenschaft und die **[PR_PROFILE_SERVER_FULL_VERSION](pidtagprofileserverfullversion-canonical-property.md)** -Eigenschaft verwendet werden, um Versionsinformationen des Microsoft Exchange-Servers abzurufen, der das aktive Konto ist. verbunden mit. 
+Dieses Thema enthält ein Codebeispiel in C++, in dem gezeigt wird, wie Sie die **[PR_PROFILE_SERVER_VERSION-](pidtagprofileserverversion-canonical-property.md)** und **[PR_PROFILE_SERVER_FULL_VERSION-Eigenschaft](pidtagprofileserverfullversion-canonical-property.md)** verwenden, um Versionsinformationen des Microsoft Exchange Server abrufen, mit dem das aktive Konto verbunden ist. 
   
-Die `GetProfileServiceVersion` Funktion im Codebeispiel akzeptiert ein Profil als Eingabeparameter. Je nachdem, ob die **PR_PROFILE_SERVER_VERSION** -Eigenschaft und die **PR_PROFILE_SERVER_FULL_VERSION** -Eigenschaft im angegebenen Profil vorhanden sind, ruft die Funktion jede Eigenschaft ab und gibt die entsprechenden Versionsinformationen als Ausgabe zurück. Parameter. 
+Die  `GetProfileServiceVersion` Funktion im Codebeispiel akzeptiert ein Profil als Eingabeparameter. Je nachdem, ob **die PR_PROFILE_SERVER_VERSION-Eigenschaft** und die **PR_PROFILE_SERVER_FULL_VERSION-Eigenschaft** im angegebenen Profil vorhanden sind, ruft die Funktion jede Eigenschaft ab und gibt die entsprechenden Versionsinformationen als Ausgabeparameter zurück. 
   
-`GetProfileServiceVersion`Ruft zunächst die **[MAPIAdminProfiles](mapiadminprofiles.md)** -Funktion auf, um ein Profilverwaltungsobjekt zu erstellen. Anschließend wird mithilfe des Profil Verwaltungsobjekts **[IProfAdmin:: AdminServices](iprofadmin-adminservices.md)** aufgerufen, um ein Nachrichtendienst-Verwaltungsobjekt abzurufen. Mithilfe des Nachrichtendienst-Verwaltungsobjekts ruft es **[IMsgServiceAdmin:: OpenProfileSection](imsgserviceadmin-openprofilesection.md)** auf, um einen Abschnitt des aktuellen Profils abzurufen, und ruft dann **[HrGetOneProp](hrgetoneprop.md)** auf, um zu überprüfen, ob jede der beiden Eigenschaften in diesem Abschnitt des Profile, und wenn ja, werden die Versionsinformationen in den entsprechenden Ausgabeparametern festgelegt. 
+`GetProfileServiceVersion` ruft zuerst die **[MAPIAdminProfiles-Funktion](mapiadminprofiles.md)** auf, um ein Profilverwaltungsobjekt zu erstellen. Anschließend wird das Profilverwaltungsobjekt zum Aufrufen von **[IProfAdmin::AdminServices verwendet,](iprofadmin-adminservices.md)** um ein Nachrichtendienstverwaltungsobjekt zu erhalten. Mithilfe des Nachrichtendienstverwaltungsobjekts ruft es **[IMsgServiceAdmin::OpenProfileSection](imsgserviceadmin-openprofilesection.md)** auf, um einen Abschnitt des aktuellen Profils zu erhalten, und ruft **[dann HrGetOneProp](hrgetoneprop.md)** auf, um zu überprüfen, ob jede der beiden Eigenschaften in diesem Abschnitt des Profils vorhanden ist, und legt, falls ja, die Versionsinformationen in den entsprechenden Ausgabeparametern fest. 
   
 ```cpp
 TZDEFINITION* BinToTZDEFINITION(ULONG cbDef, LPBYTE lpbDef) 

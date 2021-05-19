@@ -25,13 +25,13 @@ ms.locfileid: "33421088"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Passt die Zeiger in einem [SPropValue](spropvalue.md) -Array an, nachdem das Array und seine Daten kopiert oder an einen neuen Speicherort verschoben wurden. 
+Passt die Zeiger in einem [SPropValue-Array](spropvalue.md) an, nachdem das Array und seine Daten kopiert oder an einen neuen Speicherort verschoben wurden. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 SCODE ScRelocProps(
@@ -47,23 +47,23 @@ SCODE ScRelocProps(
 
  _cprop_
   
-> in Die Anzahl der Eigenschaften im Array, auf die durch den _rgprop_ -Parameter verwiesen wird. 
+> [in] Anzahl der Eigenschaften im Array, auf die der  _rgprop-Parameter_ verweist. 
     
  _rgprop_
   
-> in Zeiger auf ein Array von [SPropValue](spropvalue.md) -Strukturen, für die Zeiger angepasst werden sollen. 
+> [in] Zeiger auf ein Array von [SPropValue-Strukturen,](spropvalue.md) für die Zeiger angepasst werden sollen. 
     
  _pvBaseOld_
   
-> in Zeiger auf die ursprüngliche Basisadresse des Arrays, auf das durch den _rgprop_ -Parameter verwiesen wird. 
+> [in] Zeiger auf die ursprüngliche Basisadresse des Arrays, auf das der  _rgprop-Parameter_ verweist. 
     
- _pvBaseNew_
+ _pvBaseNeu_
   
-> in Zeiger auf die neue Basisadresse des Arrays, auf das durch den _rgprop_ -Parameter verwiesen wird. 
+> [in] Zeiger auf die neue Basisadresse des Arrays, auf das der  _rgprop-Parameter_ verweist. 
     
- _PCB_
+ _leiterplatte_
   
-> [in, out] Optionaler Zeiger auf die Größe des vom _pvBaseNew_ -Parameter angegebenen Arrays in Byte. Wenn dies nicht der Fall ist, wird der _PCB_ -Parameter auf die im _PVD_ -Parameter gespeicherte Anzahl von Bytes festgelegt. 
+> [in, out] Optionaler Zeiger auf die Größe des durch den  _parameter pvBaseNew_ angegebenen Arrays in Bytes. Wenn nicht NULL, wird der  _Parameter "pcb"_ auf die Anzahl der Bytes festgelegt, die im  _pvD-Parameter gespeichert_ sind. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -73,19 +73,19 @@ S_OK
     
 MAPI_E_INVALID_PARAMETER
   
-> Ein oder beide Parameter waren ungültig, oder es wurde ein unbekannter Eigenschaftentyp gefunden.
+> Ein oder beide Parameter waren ungültig, oder es wurde ein unbekannter Eigenschaftstyp gefunden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **ScRelocProps** -Funktion wird davon ausgegangen, dass das Eigenschafts Wertarray, für das Zeiger angepasst wurden, ursprünglich in einem einzelnen Aufruf zugeordnet wurde, der einem Aufruf der **ScCopyProps** -Funktion ähnelt. Wenn eine Clientanwendung oder ein Dienstanbieter mit einem Eigenschaftswert arbeitet, der aus nicht zusammengestellten Speicherblöcken erstellt wurde, sollte er [ScCopyProps](sccopyprops.md) verwenden, um stattdessen Eigenschaften zu kopieren. 
+Die **ScRelocProps-Funktion** arbeitet unter der Annahme, dass das Eigenschaftswertarray, für das Zeiger angepasst werden, ursprünglich in einem einzigen Aufruf zugeordnet wurde, der einem Aufruf der **ScCopyProps-Funktion** ähnelt. Wenn eine Clientanwendung oder ein Dienstanbieter mit einem Eigenschaftswert arbeitet, der aus nicht gemeinsamen Speicherblöcken erstellt wird, sollte [scCopyProps](sccopyprops.md) zum Kopieren von Eigenschaften verwendet werden. 
   
- **ScRelocProps** wird verwendet, um die Gültigkeit von Zeigern in einem [SPropValue](spropvalue.md) -Array zu behalten. Führen Sie die folgenden Schritte aus, um die Gültigkeit von Zeiger beim Schreiben eines solchen Arrays in und von einem Datenträger zu erhalten: 
+ **ScRelocProps** wird verwendet, um die Gültigkeit von Zeigern in einem [SPropValue-Array zu](spropvalue.md) erhalten. Führen Sie die folgenden Vorgänge aus, um die Gültigkeit von Zeigern beim Schreiben eines solchen Arrays auf einen Datenträger zu erhalten und es von einem Datenträger aus zu lesen: 
   
-1. Bevor Sie das Array und die Daten auf einen Datenträger schreiben, rufen Sie **ScRelocProps** auf dem Array mit dem _pvBaseNew_ -Parameter auf, der auf einen Standardwert 0 (null) zeigt. 
+1. Rufen Sie **scRelocProps** auf dem Array auf, bevor Sie das Array und die Daten auf einen Datenträger schreiben, z. B. mit dem  _pvBaseNew-Parameter,_ der auf einen Standardwert null verweisen soll. 
     
-2. Nachdem Sie das Array und die Daten von einem Datenträger gelesen haben, rufen Sie **ScRelocProps** im Array mit dem Parameter _pvBaseOld_ auf, der dem gleichen Standardwert entspricht, der in Schritt 1 verwendet wird. Das Array und die Daten müssen in einen mit einer einzelnen Zuordnung erstellten Puffer eingelesen werden. 
+2. Nachdem Sie das Array und die Daten von einem Datenträger gelesen haben, rufen Sie **ScRelocProps** auf dem Array auf,  _deren pvBaseOld-Parameter_ dem gleichen Standardwert entspricht, der in Schritt 1 verwendet wird. Das Array und die Daten müssen in einen Puffer gelesen werden, der mit einer einzigen Zuordnung erstellt wurde. 
     
-3. Der _PCB_ -Parameter für **ScRelocProps** ist optional. 
+3. Der  _Parameter "pcb"_ für **ScRelocProps** ist optional. 
     
 ## <a name="see-also"></a>Siehe auch
 

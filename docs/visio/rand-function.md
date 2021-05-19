@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251485
 localization_priority: Normal
 ms.assetid: 482497ee-fe19-c2fa-53ce-bdb27b5d28bc
-description: Gibt eine zufällige Gleitkommazahl zwischen 0,0 und 1,0 zurück. Jedes Mal, wenn die Funktion ausgewertet wird, wird je nach der Systemuhr eine andere Zahl zurückgegeben.
+description: Gibt eine zufällige Gleitkommazahl von 0,0 bis 1,0 zurück. Es gibt jedes Mal, wenn die Funktion ausgewertet wird, eine andere Zahl zurück, die einmal pro Minute gemäß der Systemuhr liegt.
 ms.openlocfilehash: bab2fd74aff85be85f886e3ac8fe7df113664ae5
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,7 +18,7 @@ ms.locfileid: "33424525"
 ---
 # <a name="rand-function"></a>RAND Function
 
-Gibt eine zufällige Gleitkommazahl zwischen 0,0 und 1,0 zurück. Jedes Mal, wenn die Funktion ausgewertet wird, wird je nach der Systemuhr eine andere Zahl zurückgegeben. 
+Gibt eine zufällige Gleitkommazahl von 0,0 bis 1,0 zurück. Es gibt jedes Mal, wenn die Funktion ausgewertet wird, eine andere Zahl zurück, die einmal pro Minute gemäß der Systemuhr liegt. 
   
 ## <a name="syntax"></a>Syntax
 
@@ -28,7 +28,7 @@ RAND( )
 
 Gleitkommazahl
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Mithilfe dieser Funktion können Sie Animationseffekte erstellen, indem Sie bestimmten Shape-Eigenschaften Zufallswerte zuweisen.
   

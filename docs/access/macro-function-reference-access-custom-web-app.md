@@ -20,20 +20,20 @@ ms.locfileid: "33426380"
 > [!IMPORTANT]
 > Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
-- [Datenblöcke (Access Custom Web App)](data-blocksaccess-custom-web-app.md)
+- [Datenblöcke (benutzerdefinierte Access-Web-App)](data-blocksaccess-custom-web-app.md)
     
-- [Daten Aktionen (Access Custom Web App)](data-actions-access-custom-web-app.md)
+- [Datenaktionen (benutzerdefinierte Access-Web-App)](data-actions-access-custom-web-app.md)
     
-- [Dateneingabevorgänge (Access Custom Web App)](data-entry-operations-access-custom-web-app.md)
+- [Dateneingabevorgänge (benutzerdefinierte Access-Web-App)](data-entry-operations-access-custom-web-app.md)
     
-- [Datenbankobjekte (Access Custom Web App)](database-objects-access-custom-web-app.md)
+- [Datenbankobjekte (benutzerdefinierte Access-Web-App)](database-objects-access-custom-web-app.md)
     
-- [Filter/Abfrage/Suche (Access Custom Web App)](filter-query-search-access-custom-web-app.md)
+- [Filter/Abfrage/Suche (benutzerdefinierte Access-Web-App)](filter-query-search-access-custom-web-app.md)
     
-- [Makrobefehle (Access Custom Web App)](macro-commands-access-custom-web-app.md)
+- [Makrobefehle (benutzerdefinierte Access-Web-App)](macro-commands-access-custom-web-app.md)
     
-- [Programmablauf (Access Custom Web App)](program-flow-access-custom-web-app.md)
+- [Programmablauf (benutzerdefinierte Access-Web-App)](program-flow-access-custom-web-app.md)
     
-- [Benutzeroberflächenbefehle (Access Custom Web App)](user-interface-commands-access-custom-web-app.md)
+- [Benutzeroberflächenbefehle (benutzerdefinierte Access-Web-App)](user-interface-commands-access-custom-web-app.md)
     
 

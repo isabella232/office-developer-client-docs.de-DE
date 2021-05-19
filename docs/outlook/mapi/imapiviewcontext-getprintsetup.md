@@ -38,15 +38,15 @@ LPFORMPRINTSETUP FAR * lppFormPrintSetup
 
  _ulFlags_
   
-> in Bitmaske von Flags, die den Typ der zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
+> [in] Bitmaske von Flags, die den Typ der zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
     
 MAPI_UNICODE 
   
-> Die zurückgegebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format.
+> Die zurückgegebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Zeichenfolgen im ANSI-Format.
     
  _lppFormPrintSetup_
   
-> Out Zeiger auf einen Zeiger auf eine Struktur, die die Druckinformationen enthält.
+> [out] Zeiger auf einen Zeiger auf eine Struktur, die die Druckinformationen enthält.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -54,19 +54,19 @@ S_OK
   
 > Die Druckinformationen wurden erfolgreich abgerufen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Formularobjekte rufen die **IMAPIViewContext:: GetPrintSetup** -Methode auf, um Informationen über die Druckereinrichtung abzurufen, bevor Sie versuchen, die aktuelle Nachricht zu drucken. 
+Formularobjekte rufen die **IMAPIViewContext::GetPrintSetup-Methode** auf, um Informationen zum Druckersetup abzurufen, bevor versucht wird, die aktuelle Nachricht zu drucken. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Weisen Sie die **hDevMode** -und **hDevName** -Member der [FORMPRINTSETUP](formprintsetup.md) -Struktur mithilfe der Win32-Funktion **GlobalAlloc**zu.
+Weisen Sie **die Mitglieder hDevMode** und **hDevName** der [FORMPRINTSETUP-Struktur](formprintsetup.md) mithilfe der Win32-Funktion **GlobalAlloc zu.**
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Wenn Sie davon ausgehen, dass die **hDevMode** -und **hDevName** -Elemente der **FORMPRINTSETUP** -Struktur, auf die durch den _lppFormPrintSetup_ -Parameter verwiesen wird, Unicode-Zeichenfolgen sein sollen, legen Sie _ulFlags_ auf MAPI_UNICODE fest. Andernfalls gibt **GetPrintSetup** diese Zeichenfolgen im ANSI-Format zurück. 
+Wenn Sie erwarten, dass **die Elemente hDevMode** und **hDevName** der **FORMPRINTSETUP-Struktur,** auf die der  _lppFormPrintSetup-Parameter_ verweist, Unicode-Zeichenfolgen sind, legen Sie  _ulFlags_ auf MAPI_UNICODE. Andernfalls **gibt GetPrintSetup** diese Zeichenfolgen im ANSI-Format zurück. 
   
-Geben Sie die **hDevMode** -und **hDevName** -Member der **FORMPRINTSETUP** -Struktur frei, indem Sie die Win32-Funktion **GlobalFree**aufrufen. Freigeben der gesamten **FORMPRINTSETUP** -Struktur durch Aufrufen von [mapifreebufferfreigegeben](mapifreebuffer.md). 
+Geben Sie **die Mitglieder hDevMode** und **hDevName** der **FORMPRINTSETUP-Struktur** frei, indem Sie die Win32-Funktion **GlobalFree aufrufen.** Geben Sie die gesamte **FORMPRINTSETUP-Struktur** frei, indem Sie [MAPIFreeBuffer aufrufen.](mapifreebuffer.md) 
   
 ## <a name="see-also"></a>Siehe auch
 

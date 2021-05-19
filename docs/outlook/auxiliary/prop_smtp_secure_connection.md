@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33421284"
 ---
-# <a name="propsmtpsecureconnection"></a>PROP_SMTP_SECURE_CONNECTION
+# <a name="prop_smtp_secure_connection"></a>PROP_SMTP_SECURE_CONNECTION
 
 Gibt den Typ der verschlüsselten Verbindung an, die für ein SMTP-Konto verwendet werden soll.
   
@@ -23,20 +23,20 @@ Gibt den Typ der verschlüsselten Verbindung an, die für ein SMTP-Konto verwend
 |||
 |:-----|:-----|
 |Kennung:  <br/> |0x020A  <br/> |
-|Eigenschafts:  <br/> |PT_DWORD  <br/> |
-|Property-Tag:  <br/> |0x020A0003  <br/> |
-|Access  <br/> |Schreibgeschützt  <br/> |
+|Eigenschaftstyp:  <br/> |PT_DWORD  <br/> |
+|Eigenschaftstag:  <br/> |0x020A0003  <br/> |
+|Zugriff:  <br/> |Schreibgeschützt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Der Wert kann eine der folgenden Konstanten sein: Ihre Werte finden Sie unter [Constants (Account Management API)](constants-account-management-api.md) . 
+Der Wert kann eine der folgenden Konstanten sein. Ihre Werte finden Sie unter [Konstanten (Kontoverwaltungs-API).](constants-account-management-api.md) 
   
 |**Constants**|**Beschreibung**|
 |:-----|:-----|
 |**ENCRYPT_CONN_NO_SECURITY** <br/> |Verwenden Sie keine Verschlüsselung.  <br/> |
-|**ENCRYPT_CONN_SSL** <br/> |Verwenden Sie SSL-Verschlüsselung (Secure Socket Layer).  <br/> |
-|**ENCRYPT_CONN_TLS** <br/> |Verwenden Sie TLS-Verschlüsselung (Transport Layer Security) und Authentifizierungsprotokoll.  <br/> |
-|**ENCRYPT_CONN_AUTO** <br/> |Die vom e-Mail-Server unterstützte Verschlüsselungsmethode wird automatisch ermittelt und verwendet.  <br/> |
+|**ENCRYPT_CONN_SSL** <br/> |Verwenden Sie ssl-Verschlüsselung (Secure Socket Layer).  <br/> |
+|**ENCRYPT_CONN_TLS** <br/> |Verwenden Sie das TLS-Verschlüsselungs- und -Authentifizierungsprotokoll (Transport Layer Security).  <br/> |
+|**ENCRYPT_CONN_AUTO** <br/> |Automatische Erkennung und Verwendung der vom E-Mail-Server unterstützten Verschlüsselungsmethode.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

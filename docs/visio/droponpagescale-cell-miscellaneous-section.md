@@ -19,29 +19,29 @@ ms.locfileid: "33423762"
 
 Enthält den Prozentsatz, um den ein Shape beim Ablegen auf dem Zeichenblatt skaliert wird.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 In den folgenden zwei Fällen werden Shapes in Visio so skaliert, dass sie entsprechend auf dem Zeichenblatt angezeigt werden:
   
 - Beim Ablegen von Shapes ohne Bemaßung auf skalierten Zeichnungen.
     
-- Wenn gemessene Formen auf nicht skalierten Zeichnungen abgelegt werden.
+- Wenn gemessene Formen auf nicht kalibrierte Zeichnungen abgelegt werden.
     
-Der Prozentsatz in der Zelle Zelle DropOnPageScale gibt den Faktor an, mit dem Visio die Form skaliert hat (\>100) oder nach unten\<(100). Sie können diese Zahl beim Berechnen von festgelegten Werten als Faktor verwenden. 
+Der Prozentsatz in der Zelle DropOnPageScale gibt den Faktor an, um den Visio die Form skaliert hat, entweder nach oben ( \> 100) oder nach unten ( \< 100). Sie können diese Zahl beim Berechnen von festgelegten Werten als Faktor verwenden. 
   
 Dieser Wert beträgt für Shapes mit Bemaßung auf skalierten Zeichnungen und für Shapes ohne Bemaßung auf nicht skalierten Zeichnungen 100 %. 
   
-Wenn Sie einen Verweis auf die Zelle Zelle DropOnPageScale aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle DropOnPageScale anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Zelle DropOnPageScale  <br/> |
+| Zellenname:  <br/> | DropOnPageScale  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle DropOnPageScale aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die DropOnPageScale-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowMisc** <br/> |
 | Zeilenindex:  <br/> |**visObjDropOnPageScale** <br/> |
    

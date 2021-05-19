@@ -25,13 +25,13 @@ ms.locfileid: "33428830"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Legt Attribute von Eigenschaften für ein [IMessage](imessageimapiprop.md) -Objekt fest, das von der [OpenIMsgOnIStg](openimsgonistg.md) -Funktion bereitgestellt wird, oder ändert Sie. 
+Legt Attribute von Eigenschaften für ein [IMessage-Objekt](imessageimapiprop.md) fest, das von der [OpenIMsgOnIStg-Funktion bereitgestellt](openimsgonistg.md) wird, oder ändert sie. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |IMessage. h  <br/> |
+|Headerdatei  <br/> |Imessage.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Nachrichtenspeicher Anbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Nachrichtenspeicheranbieter  <br/> |
    
 ```cpp
 HRESULT SetAttribIMsgOnIStg(
@@ -46,19 +46,19 @@ HRESULT SetAttribIMsgOnIStg(
 
  _lpObject_
   
-> in Zeiger auf das Objekt, für das Eigenschaftsattribute festgelegt werden. 
+> [in] Zeiger auf das Objekt, für das Eigenschaftenattribute festgelegt werden. 
     
  _lpPropTags_
   
-> in Zeiger auf eine [SPropTagArray](sproptagarray.md) -Struktur, die ein Array von Property-Tags angibt, die die Eigenschaften angeben, für die Eigenschaftsattribute festgelegt werden. 
+> [in] Zeiger auf eine [SPropTagArray-Struktur,](sproptagarray.md) die ein Array von Eigenschaftstags enthält, die die Eigenschaften angeben, für die Eigenschaftenattribute festgelegt werden. 
     
  _lpPropAttrs_
   
-> in Zeiger auf eine [SPropAttrArray](spropattrarray.md) -Struktur, die die festzulegenden Eigenschaften Attribute auflistet. 
+> [in] Zeiger auf eine [SPropAttrArray-Struktur,](spropattrarray.md) die die festgelegten Eigenschaftenattribute auflistet. 
     
  _lppPropProblems_
   
-> Out Zeiger auf die zurückgegebene [SPropProblemArray](spropproblemarray.md) -Struktur mit einem Satz von Eigenschafts Problemen. Diese Struktur identifiziert Probleme, die auftreten, wenn **SetAttribIMsgOnIStg** einige Eigenschaften festlegen konnte, aber nicht alle. Wenn ein Zeiger auf NULL im _lppPropProblems_ -Parameter übergeben wird, wird kein Eigenschaften Problem Array zurückgegeben, auch wenn einige Eigenschaften nicht festgelegt wurden. 
+> [out] Zeiger auf die zurückgegebene [SPropProblemArray-Struktur](spropproblemarray.md) mit einer Reihe von Eigenschaftsproblemen. Diese Struktur identifiziert Probleme, die **auftreten, wenn SetAttribIMsgOnIStg** einige Eigenschaften festlegen konnte, aber nicht alle. Wenn ein Zeiger auf NULL im  _lppPropProblems-Parameter_ übergeben wird, wird kein Eigenschaftsproblemarray zurückgegeben, auch wenn einige Eigenschaften nicht festgelegt wurden. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -68,16 +68,16 @@ S_OK
     
 MAPI_W_ERRORS_RETURNED 
   
-> Der Aufruf war insgesamt erfolgreich, aber auf eine oder mehrere Eigenschaften konnte nicht zugegriffen werden, und es wurde ein Eigenschaftentyp von PT_ERROR zurückgegeben.
+> Der Aufruf war insgesamt erfolgreich, aber auf eine oder mehrere Eigenschaften konnte nicht zugegriffen werden und wurde mit dem Eigenschaftstyp PT_ERROR.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Auf Eigenschaftsattribute kann nur über Property-Objekte zugegriffen werden, also auf Objekte, die die [IMAPIProp: IUnknown](imapipropiunknown.md) -Schnittstelle implementieren. Um MAPI-Eigenschaften für ein OLE Structured Storage-Objekt verfügbar zu machen, erstellt [OpenIMsgOnIStg](openimsgonistg.md) ein [IMessage: IMAPIProp](imessageimapiprop.md) -Objekt über dem OLE- **IStorage** -Objekt. Die Eigenschaftsattribute für solche Objekte können mit **SetAttribIMsgOnIStg** festgelegt oder geändert und mit [GetAttribIMsgOnIStg](getattribimsgonistg.md)abgerufen werden. 
+Auf Eigenschaftsattribute kann nur auf Eigenschaftsobjekte zugegriffen werden, d. h. auf Objekte, die die [IMAPIProp : IUnknown-Schnittstelle](imapipropiunknown.md) implementieren. Um MAPI-Eigenschaften für ein strukturiertes OLE-Speicherobjekt verfügbar zu machen, erstellt [OpenIMsgOnIStg](openimsgonistg.md) ein [IMessage : IMAPIProp-Objekt](imessageimapiprop.md) über dem OLE **IStorage-Objekt.** Die Eigenschaftenattribute für solche Objekte können mit **SetAttribIMsgOnIStg** festgelegt oder geändert und mit [GetAttribIMsgOnIStg abgerufen werden.](getattribimsgonistg.md) 
   
- **Hinweis** **GetAttribIMsgOnIStg** und **SetAttribIMsgOnIStg** funktionieren nicht für alle **IMessage** -Objekte. Sie sind nur für **IMessage**-on- **IStorage** -Objekte gültig, die von **OpenIMsgOnIStg**zurückgegeben werden. 
+ **Hinweis** **GetAttribIMsgOnIStg** und **SetAttribIMsgOnIStg** funktionieren nicht für alle **IMessage-Objekte.** Sie sind nur gültig für **IMessage** **-on-IStorage-Objekte,** die von **OpenIMsgOnIStg zurückgegeben werden.** 
   
-Im _lpPropAttrs_ -Parameter müssen die Anzahl und die Position der Attribute mit der Anzahl und Position der im _lpPropTags_ -Parameter übergebenen Property-Tags übereinstimmen. 
+Im  _lpPropAttrs-Parameter_ müssen Anzahl und Position der Attribute mit der Anzahl und Position der Eigenschaftstags übereinstimmen, die im  _lpPropTags-Parameter übergeben_ werden. 
   
-Die **SetAttribIMsgOnIStg** -Funktion wird verwendet, um Nachrichteneigenschaften schreibgeschützt zu machen, wenn Sie vom **IMessage** -Schema benötigt werden. Der Beispiel-Nachrichtenspeicher Anbieter verwendet diesen zu diesem Zweck. Weitere Informationen finden Sie unter [Nachrichten](mapi-messages.md). 
+Die **SetAttribIMsgOnIStg-Funktion** wird verwendet, um Nachrichteneigenschaften schreibgeschützt zu machen, wenn dies im **IMessage-Schema erforderlich** ist. Der Beispielnachrichtenspeicheranbieter verwendet ihn zu diesem Zweck. Weitere Informationen finden Sie unter [Nachrichten](mapi-messages.md). 
   
 

@@ -1,5 +1,5 @@
 ---
-title: Abschnitt "Formular Konfigurationsdatei [Erweiterungen]"
+title: Abschnitt "Formularkonfigurationsdatei [ Erweiterungen]
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,31 +15,31 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33423755"
 ---
-# <a name="form-configuration-file-extensions-section"></a>Abschnitt "Formular Konfigurationsdatei [Erweiterungen]"
+# <a name="form-configuration-file-extensions-section"></a>Abschnitt "Formularkonfigurationsdatei [ Erweiterungen]
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Im Abschnitt **[Extensions]** werden die erweiterten Attribute des Formulars aufgelistet, in der Regel ein benannter Eigenschaftensatz, bei dem es sich nicht um die grundlegenden Attribute handelt, die im Abschnitt **[Beschreibung]** der Formular Konfigurationsdatei aufgeführt sind. Erweiterte Attribute sind Eigenschaften, die von Aufrufen der **** GetProps-Methode des **IMAPIFormInfo** -Objekts zurückgegeben werden, wobei das High-Bit im Property-Tag festgelegt ist. Client Anwendungen können die erweiterten Attribute eines Formulars bestimmen, sofern vorhanden, indem Sie diese Tags abrufen. Dazu rufen die Clients die [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) -Methode auf, übergeben die Namen der Eigenschaften des Formulars und rufen die [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode auf, um die Eigenschaften abzurufen. 
+Im **Abschnitt [Extensions]** werden die erweiterten Attribute des Formulars aufgelistet, in der Regel ein benannter Eigenschaftensatz, bei dem es sich um Attribute handelt, die über die grundlegenden Attribute hinausgehen, die im **Abschnitt [Beschreibung]** der Formularkonfigurationsdatei aufgeführt sind. Erweiterte Attribute sind Eigenschaften, die von Aufrufen an die **GetProps-Methode** des **IMAPIFormInfo-Objekts** zurückgegeben werden, deren High-Bit im Eigenschaftstag festgelegt ist. Clientanwendungen können die erweiterten Attribute eines Formulars bestimmen, sofern dies der Fall ist, indem diese Tags abgerufen werden. Dazu rufen Clients die [IMAPIProp::GetIDsFromNames-Methode](imapiprop-getidsfromnames.md) auf, übergeben die Namen der Eigenschaften des Formulars und rufen die [IMAPIProp::GetProps-Methode](imapiprop-getprops.md) auf, um die Eigenschaften zu erhalten. 
   
- **Erweiterungen**
+ **[Erweiterungen]**
   
- **Erweiterung.** _string1_ =  _string2_
+ **Erweiterung.** _string1_  =   _string2_
   
-Jeder Abschnitt der Extension-Eigenschaft definiert ein Erweiterungsattribut mit der Syntax der MAPI-Eigenschaft. Der Eigenschaftentyp muss entweder PT_LONG oder PT_STRING8 sein. Eigenschaftensätze mit benannten Zeichenfolgen werden nicht unterstützt. Das Format des Abschnitts **[Extension]** lautet: 
+Jeder Abschnitt der Erweiterungseigenschaft definiert ein Erweiterungsattribut mithilfe der SYNTAX der benannten MAPI-Eigenschaft. Der Eigenschaftentyp muss entweder PT_LONG oder PT_STRING8. Eigenschaftssätze, die benannte Zeichenfolgen enthalten, werden nicht unterstützt. Das Format des **Abschnitts [Extension]** ist: 
   
- **Erweiterung.** _string2_ **]**
+ **[Erweiterung.** _string2_ **]**
   
- **Typ** =  _Integer_
+ **Type**  =   _integer_
   
- **NmidPropset** =  -_GUID_
+ **NmidPropset**  =   _guid_
   
- **NmidInteger** =  -_Ganzzahl_
+ **NmidInteger**  =   _integer_
   
- **Wert** =  __ String |  _Integer_
+ **Wert**  =   _string_  |   _integer_
   
-Es folgt ein Beispiel für einen **[Extensions]** -Abschnitt und einen nachfolgenden verwandten Abschnitt. 
+Nachfolgend finden Sie ein Beispiel für einen **Abschnitt [Extensions]** und einen nachfolgenden verwandten Abschnitt. 
   
 ```
 [Extensions]

@@ -22,29 +22,29 @@ Gibt den Standardschattentyp eines Zeichenblatts an.
   
 |**Wert**|**Beschreibung**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
-| 1  <br/> | Simple  <br/> |**visFSTSimple** <br/> |
-| 2  <br/> | Oblique  <br/> |**visFSTOblique** <br/> |
-|3  <br/> |Inneren  <br/> |**visFSTInner** <br/> |
+| 1  <br/> | Einfach  <br/> |**visFSTSimple** <br/> |
+| 2  <br/> | Schräg  <br/> |**visFSTOblique** <br/> |
+|3  <br/> |Inner  <br/> |**visFSTInner** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
- Der in dieser Zelle beschriebene Schattentyp wird verwendet, wenn die Zelle-Zelle (der Schattentyp für ein einzelnes Shape auf dem Zeichenblatt) auf Seiten Standard (**visFSTPageDefault** ) festgelegt ist. 
+ Der in dieser Zelle beschriebene Schattentyp wird immer dann verwendet, wenn die Zelle ShapeShdwType (der Schattentyp für eine einzelne Form auf der Seite) auf Page Default (**visFSTPageDefault** ) festgelegt ist. 
   
-Einfache Schattentypen werden als Abstandsschatten auf der Benutzeroberfläche beschrieben. Ein einfacher Schatten gibt an, wie sich die Form auf eine parallele Ebene befindet, die sich dahinter befindet. Schräge Schatten werden als schräge Schatten auf der Benutzeroberfläche beschrieben und haben den Effekt, dass der Schatten auf einer zum Shape rechtwinkligen Ebene zu liegen scheint. 
+Einfache Schattentypen werden als Abstandsschatten auf der Benutzeroberfläche beschrieben. Ein einfacher Schatten gibt den Effekt, dass die Form auf eine parallele Ebene überschattet wird, die sich etwas hinter ihr befindet. Schräge Schatten werden als schräge Schatten auf der Benutzeroberfläche beschrieben und haben den Effekt, dass der Schatten auf einer zum Shape rechtwinkligen Ebene zu liegen scheint. 
   
 Eine Liste vordefinierter einfacher und schräger Schattentypen finden Sie im Dialogfeld **Seite einrichten** auf der Registerkarte **Schatten** in der Liste **Formatvorlage** (klicken Sie dazu auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten**). 
   
-Wenn Sie einen Verweis auf die Zelle "ShdwType aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle ShdwType anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | "ShdwType  <br/> |
+| Zellenname:  <br/> | ShdwType  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle ShapeShdwOffsetX aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Um einen Verweis auf die Zelle ShapeShdwOffsetX nach Index aus einem Programm zu erhalten, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowPage** <br/> |
 | Zellenindex:  <br/> |**visPageShdwType** <br/> |
    

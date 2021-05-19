@@ -20,7 +20,7 @@ Benachrichtigt den Client über Änderungen am angegebenen Konto.
   
 ## <a name="quick-info"></a>QuickInfo
 
-Siehe [IOlkAccountNotify](iolkaccountnotify.md).
+Weitere [Informationen finden Sie unter IOlkAccountNotify](iolkaccountnotify.md).
   
 ```cpp
 HRESULT IOlkAccount::Notify(  
@@ -35,7 +35,7 @@ HRESULT IOlkAccount::Notify(
 
 _dwNotify_
   
-> in Der Benachrichtigungstyp. Bei dem Wert muss es sich um Folgendes handeln:
+> [in] Der Typ der Benachrichtigung. Bei dem Wert muss es sich um Folgendes handeln:
     
    - NOTIFY_ACCT_CHANGED 
     
@@ -49,11 +49,11 @@ _dwNotify_
     
  _dwAcctID_
   
-> in Die Konto-ID des Kontos, das erstellt, geändert, gelöscht oder vorab gelöscht wurde.
+> [in] Die Konto-ID des Kontos, das erstellt, geändert, gelöscht oder vorab gelöscht wurde.
     
  _dwFlags_
   
->  in Nicht verwendet. OLK_ACCOUNT_NO_FLAGS ist der einzige unterstützte Wert. 
+>  [in] Nicht verwendet. OLK_ACCOUNT_NO_FLAGS ist der einzige unterstützte Wert. 
     
 ## <a name="return-values"></a>Rückgabewerte
 

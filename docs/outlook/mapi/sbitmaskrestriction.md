@@ -25,11 +25,11 @@ ms.locfileid: "33424476"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt eine Bitmasken Einschränkung, die zum Durchführen einer bitweisen **and-** Operation und zum Testen des Ergebnisses verwendet wird. 
+Beschreibt eine Bitmaskeneinschränkung, die verwendet wird, um einen bitweisen **AND-Vorgang** durchzuführen und das Ergebnis zu testen. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SBitMaskRestriction
@@ -41,33 +41,33 @@ typedef struct _SBitMaskRestriction
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **relBMR**
   
-> Relationaler Operator, der beschreibt, wie die im **ulMask** -Element angegebene Maske auf das Property-Tag angewendet werden soll. Folgende Werte sind möglich: 
+> Relationaler Operator, der beschreibt, wie die im **ulMask-Element** angegebene Maske auf das Eigenschaftstag angewendet werden soll. Mögliche Werte sind: 
     
 BMR_EQZ 
   
-> Führen Sie eine bitweise **and** -Operation der Maske im **ulMask** -Element mit der vom **ulPropTag** -Element dargestellten Eigenschaft aus, und testen Sie, dass Sie gleich NULL ist. 
+> Führen Sie einen bitweisen **AND-Vorgang** der Maske im **ulMask-Element** aus, mit der Eigenschaft, die durch das **ulPropTag-Element** dargestellt wird, und testen Sie, ob sie gleich Null ist. 
     
 BMR_NEZ 
   
-> Führen Sie eine bitweise **and** -Operation der Maske im **ulMask** -Element mit der vom **ulPropTag** -Element dargestellten Eigenschaft aus, und testen Sie, ob Sie ungleich NULL ist. 
+> Führen Sie einen bitweisen **#A0** der Maske im **ulMask-Element** aus, mit der Eigenschaft, die durch das **ulPropTag-Element** dargestellt wird, und testen Sie, ob sie nicht gleich Null ist. 
     
  **ulPropTag**
   
-> Property-Tag der Eigenschaft, auf die die Bitmaske angewendet wird.
+> Eigenschaftstag der Eigenschaft, auf die die Bitmaske angewendet wird.
     
  **ulMask**
   
-> Bitmaske, die auf die durch **ulPropTag**angegebene Eigenschaft angewendet werden soll.
+> Bitmaske, die auf die durch **ulPropTag** identifizierte Eigenschaft angewendet werden soll.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **SBitMaskRestriction** -Struktur führt eine bitweise **and** -Operation mit der im **ulMask** -Element beschriebenen Bitmaske und dem Wert der vom **ulPropTag** -Element beschriebenen Eigenschaft aus. Wenn das Ergebnis NULL ist, ist BMR_EQZ zufrieden. Wenn es ungleich NULL ist, das heißt, wenn der Eigenschaftswert mindestens eines der Bits hat, die als **ulMask**festgelegt sind, dann BMR_NEZ.
+Die **SBitMaskRestriction-Struktur** führt einen bitweisen **#A0** mithilfe der im **ulMask-Element** beschriebenen Bitmaske und des Werts der Eigenschaft durch, die vom **ulPropTag-Element beschrieben** wird. Wenn das Ergebnis null ist, BMR_EQZ erfüllt. Wenn der Wert ungleich null ist, d. h. wenn der Eigenschaftswert mindestens einen der gleichen Bits wie **ulMask** festgelegt hat, ist BMR_NEZ erfüllt.
   
-Weitere Informationen zur **SBitMaskRestriction** -Struktur und zu Einschränkungen im Allgemeinen finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md).
+Weitere Informationen zur Struktur und Einschränkungen **von SBitMaskRestriction** im Allgemeinen finden Sie unter [About Restrictions](about-restrictions.md).
   
 ## <a name="see-also"></a>Siehe auch
 

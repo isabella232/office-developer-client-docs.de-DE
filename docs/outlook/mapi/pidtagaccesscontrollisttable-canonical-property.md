@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagaccesscontrollisttable (-Eigenschaft
+title: PidTagAccessControlListTable (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,13 +19,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33424504"
 ---
-# <a name="pidtagaccesscontrollisttable-canonical-property"></a>Kanonische Pidtagaccesscontrollisttable (-Eigenschaft
+# <a name="pidtagaccesscontrollisttable-canonical-property"></a>PidTagAccessControlListTable (kanonische Eigenschaft)
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine Tabelle, die aus allen SACL-Systemen (System Access Control Lists) besteht, die auf einen Ordner angewendet werden.
+Enthält eine Tabelle, die aus allen Systemzugriffssteuerungslisten (System Access Control Lists, SACL) besteht, die auf einen Ordner angewendet wurden.
   
 |||
 |:-----|:-----|
@@ -34,21 +34,21 @@ Enthält eine Tabelle, die aus allen SACL-Systemen (System Access Control Lists)
 |Datentyp:  <br/> |PT_OBJECT  <br/> |
 |Bereich:  <br/> |Zugriffssteuerung  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Diese Eigenschaft ist für alle Folder-Objekte auf einem Exchange-Server vorhanden. In dieser Eigenschaft enthaltene Werte werden zum Lesen und Ändern von Zugriffssteuerungslisten (Access Control Lists, ACLs) für Ordner verwendet. Sie können die [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode mit dem **IID_IExchangeModifyTable** -Schnittstellenbezeichner verwenden, um eine [IExchangeModifyTable: IUnknown](iexchangemodifytableiunknown.md) -Schnittstelle für die ACL-Tabelle in einem Ordner abzurufen. Sie können diese Schnittstelle verwenden, um diese ACLs zu lesen und zu ändern. 
+Diese Eigenschaft ist für alle Ordnerobjekte auf einer Exchange Server. In dieser Eigenschaft enthaltene Werte werden zum Lesen und Ändern von Zugriffssteuerungslisten (Access Control Lists, ACLs) in Ordnern verwendet. Sie können die [IMAPIProp::OpenProperty-Methode](imapiprop-openproperty.md) mit der IID_IExchangeModifyTable-Schnittstellen-ID verwenden, um eine [IExchangeModifyTable : IUnknown-Schnittstelle](iexchangemodifytableiunknown.md) zur ACL-Tabelle in einem Ordner zu erhalten.  Sie können diese Schnittstelle verwenden, um diese ACLs zu lesen und zu ändern. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
-### <a name="header-files"></a>Header Dateien
+### <a name="header-files"></a>Headerdateien
 
-Mapidefs. h
+Mapidefs.h
   
-> Stellt Datentypdefinitionen bereit.
+> Bietet Datentypdefinitionen.
     
-Mapitags. h
+Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapitags. h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

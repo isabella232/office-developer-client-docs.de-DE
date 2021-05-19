@@ -1,5 +1,5 @@
 ---
-title: Datenbankobjekte (Access Custom Web App)
+title: Datenbankobjekte (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33421053"
 ---
-# <a name="database-objects-access-custom-web-app"></a>Datenbankobjekte (Access Custom Web App)
+# <a name="database-objects-access-custom-web-app"></a>Datenbankobjekte (benutzerdefinierte Access-Web-App)
 
 > [!IMPORTANT]
 > Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 

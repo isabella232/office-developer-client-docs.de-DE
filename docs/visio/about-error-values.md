@@ -32,6 +32,6 @@ Wenn eine Formel auf eine Zelle verweist, die einen Fehlerwert enthält, zeigt d
 | #REF!  <br/> | Ein Bezug auf eine nicht vorhandene Zelle  <br/> | Eine Zelle, die auf eine nicht mehr vorhandene Zelle verweist  <br/> |
 | #NUM!  <br/> | Eine ungültige Zahl  <br/> | Quadratwurzel einer negativen Zahl  <br/> |
 | #N/A!  <br/> | Kein verfügbarer Wert  <br/> | Funktion NA( )  <br/> |
-| #DIM!  <br/> | Ein dimensionaler Wert, der den Dimensions Umfang überschreitet (gültige Potenzen \<sind ganze \<Zahlen-128 = n = 127)  <br/> Ein Bemaßungswert, der in einer nicht zulässigen Operation verwendet wurde.  <br/> |1In ^ 100 \* 1In ^ 100 (das Ergebnis ist 1In ^ 200, das sich jenseits des Dimensions befindet)  <br/> 5,2cm^1,5 (ist keine ganzzahlige Potenz)  <br/> |
+| #DIM!  <br/> | Ein dimensionaler Wert, der den Dimensionsbereich überschreitet (gültige Kräfte sind ganze Zahlen -128 \< = n \< = 127)  <br/> Ein Bemaßungswert, der in einer nicht zulässigen Operation verwendet wurde.  <br/> |1in^100 \* 1in^100 (das Ergebnis ist 1in^200, das außerhalb des Dimensionsbereichs liegt)  <br/> 5,2cm^1,5 (ist keine ganzzahlige Potenz)  <br/> |
    
 

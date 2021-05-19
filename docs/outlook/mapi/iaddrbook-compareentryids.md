@@ -25,7 +25,7 @@ ms.locfileid: "33424259"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Vergleicht zwei Eintrags-IDs, die zu einem bestimmten Adressbuchanbieter gehören, um zu bestimmen, ob Sie auf dasselbe Adressbuchobjekt verweisen. 
+Vergleicht zwei Eintragsbezeichner, die zu einem bestimmten Adressbuchanbieter gehören, um zu bestimmen, ob sie auf dasselbe Adressbuchobjekt verweisen. 
   
 ```cpp
 HRESULT CompareEntryIDs(
@@ -42,19 +42,19 @@ HRESULT CompareEntryIDs(
 
  _cbEntryID1_
   
-> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID1_ -Parameter verwiesen wird. 
+> [in] Die Byteanzahl im Eintragsbezeichner, auf den der  _lpEntryID1-Parameter_ verweist. 
     
  _lpEntryID1_
   
-> in Ein Zeiger auf den ersten zu vergleichenden Eintragsbezeichner.
+> [in] Ein Zeiger auf die erste Zutritts-ID, die verglichen werden soll.
     
  _cbEntryID2_
   
-> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID2_ -Parameter verwiesen wird. 
+> [in] Die Byteanzahl in der Eintrags-ID, auf die der  _lpEntryID2-Parameter_ verweist. 
     
  _lpEntryID2_
   
-> in Ein Zeiger auf die zweite Eintrags-ID, die verglichen werden soll.
+> [in] Ein Zeiger auf den zweiten Eintragsbezeichner, der verglichen werden soll.
     
  _ulFlags_
   
@@ -62,7 +62,7 @@ HRESULT CompareEntryIDs(
     
  _lpulResult_
   
-> Out Ein Zeiger auf das Ergebnis des Vergleichs. Der Inhalt von _lpulResult_ ist auf true festgelegt, wenn die beiden Eintragsbezeichner auf dasselbe Objekt verweisen; Andernfalls wird der Inhalt auf FALSE festgelegt. 
+> [out] Ein Zeiger auf das Ergebnis des Vergleichs. Der Inhalt von  _lpulResult_ wird auf TRUE festgelegt, wenn sich die beiden Eintragsbezeichner auf dasselbe Objekt beziehen. Andernfalls wird der Inhalt auf FALSE festgelegt. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -72,15 +72,15 @@ S_OK
     
 MAPI_E_UNKNOWN_ENTRYID 
   
-> Eine oder beide der Eingabe Bezeichner, die mit den _lpEntryID1_ -oder _lpEntryID2_ -Parametern übergeben wurden, werden von keinem Adressbuchanbieter erkannt. 
+> Eine oder beide der mit den  _Parametern lpEntryID1_ oder  _lpEntryID2 übergebenen_ Eintragsbezeichner werden von keinem Adressbuchanbieter erkannt. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Client Anwendungen und Dienstanbieter rufen die **CompareEntryIDs** -Methode auf, um zwei Eintragsbezeichner zu vergleichen, die zu einem einzelnen Adressbuchanbieter gehören, um zu bestimmen, ob Sie auf dasselbe Objekt verweisen. **CompareEntryIDs** ist nützlich, da ein Objekt mehrere gültige Eintragsbezeichner aufweisen kann. Diese Situation kann beispielsweise auftreten, nachdem eine neue Version eines Adressbuch Anbieters installiert wurde. 
+Clientanwendungen und Dienstanbieter rufen die **CompareEntryIDs-Methode** auf, um zwei Eintragsbezeichner zu vergleichen, die zu einem einzigen Adressbuchanbieter gehören, um zu bestimmen, ob sie auf dasselbe Objekt verweisen. **CompareEntryIDs** ist nützlich, da ein Objekt mehrere gültige Eintragsbezeichner enthalten kann. Diese Situation kann z. B. auftreten, nachdem eine neue Version eines Adressbuchanbieters installiert wurde. 
   
-MAPI übergibt diesen Aufruf an den Adressbuchanbieter, der für die Eintrags-IDs zuständig ist, indem er den entsprechenden Anbieter ermittelt, indem er die [MAPIUID](mapiuid.md) -Struktur in den Eintrags Bezeichnern mit der **MAPIUID** -Struktur abstimmt, die von der Anbieter. 
+MAPI übergibt diesen Aufruf an den Adressbuchanbieter, der für die Eintragsbezeichner zuständig ist, und ermittelt den entsprechenden Anbieter, indem die [MAPIUID-Struktur](mapiuid.md) in den Eintragsbezeichnern mit der vom Anbieter registrierten **MAPIUID-Struktur** übereinstimmen. 
   
-Wenn die beiden Eintragsbezeichner auf dasselbe Objekt verweisen, legt **CompareEntryIDs** den Inhalt des _lpulResult_ -Parameters auf true fest; Wenn Sie auf verschiedene Objekte verweisen, wird der Inhalt von **CompareEntryIDs** auf false festgelegt. In beiden Fällen gibt **COMPAREENTRYIDS** S_OK zurück. Wenn **CompareEntryIDs** einen Fehler zurückgibt, der auftreten kann, wenn kein Adressbuchanbieter eine **MAPIUID** -Struktur registriert hat, die mit der in den Eintrags-IDs übereinstimmt, sollten Clients und Anbieter keine Aktion basierend auf dem Ergebnis der Vergleich. Stattdessen sollten Sie den konservativsten Ansatz für die auszuführende Aktion verwenden. 
+Wenn die beiden Eintragsbezeichner auf dasselbe Objekt verweisen, legt **CompareEntryIDs** den Inhalt des  _lpulResult-Parameters_ auf TRUE fest. Wenn sie auf verschiedene Objekte verweisen, **legt CompareEntryIDs** den Inhalt auf FALSE fest. In beiden Fällen gibt **CompareEntryIDs** S_OK. Wenn **CompareEntryIDs** einen Fehler zurückgibt, der auftreten kann, wenn kein Adressbuchanbieter eine **MAPIUID-Struktur** registriert hat, die der in den Eintragsbezeichnern entspricht, sollten Clients und Anbieter keine Aktion basierend auf dem Ergebnis des Vergleichs ergreifen. Sie sollten stattdessen den konservativsten Ansatz für die ausgeführte Aktion verwenden. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -25,13 +25,13 @@ ms.locfileid: "33424063"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt eine ASCII-Zeichenfolge, die eine verknüpfte Eintrags-ID für ein Objekt darstellt, in der Regel eine Nachricht in einem Nachrichtenspeicher. 
+Erstellt eine ASCII-Zeichenfolge, die einen zusammengesetzten Eintragsbezeichner für ein Objekt darstellt, in der Regel eine Nachricht in einem Nachrichtenspeicher. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
    
 ```cpp
 HrComposeMsgID(
@@ -48,38 +48,38 @@ HrComposeMsgID(
 
  _psession_
   
-> in Zeiger auf die Sitzung, die von der Clientanwendung verwendet wird. 
+> [in] Zeiger auf die Sitzung, die von der Clientanwendung verwendet wird. 
     
  _cbStoreRecordKey_
   
-> in Größe (in Bytes) des Daten Satz Schlüssels des Nachrichtenspeichers, der die Nachricht oder ein anderes Objekt enthält. Wenn NULL im _cbStoreRecordKey_ -Parameter übergeben wird, zeigt der _pszMsgID_ -Parameter auf eine Kopie der Eintrags-ID, die in Text konvertiert wurde. 
+> [in] Größe des Datensatzschlüssels des Nachrichtenspeichers, der die Nachricht oder ein anderes Objekt enthält, in Bytes. Wenn null im  _cbStoreRecordKey-Parameter_ übergeben wird, zeigt der  _pszMsgID-Parameter_ auf eine Kopie des in Text konvertierten Eintragsbezeichners. 
     
  _pStoreRecordKey_
   
-> in Zeiger auf den Datensatzschlüssel des Nachrichtenspeichers, der die Nachricht oder ein anderes Objekt enthält. 
+> [in] Zeiger auf den Datensatzschlüssel des Nachrichtenspeichers, der die Nachricht oder ein anderes Objekt enthält. 
     
  _cbMsgEID_
   
-> in Größe (in Bytes) der Eintrags-ID der Nachricht oder eines anderen Objekts. 
+> [in] Größe des Eintragsbezeichners der Nachricht oder eines anderen Objekts in Bytes. 
     
  _pMsgEID_
   
-> in Zeiger auf die Eintrags-ID des Objekts. 
+> [in] Zeiger auf die Eintrags-ID des Objekts. 
     
  _pszMsgID_
   
-> Out Zeiger auf die zurückgegebene ASCII-Zeichenfolge. Wenn der _cbStoreRecordKey_ -Parameter größer als NULL ist, zeigt der _pszMsgID_ -Parameter auf eine verknüpfte Eintrags-ID, die in Text konvertiert wurde. Wenn _cbStoreRecordKey_ ist, verweist _pszMsgID_ auf eine nicht zusammengesetzte Eintrags-ID, die in Text konvertiert wurde. 
+> [out] Zeiger auf die zurückgegebene ASCII-Zeichenfolge. Wenn der  _cbStoreRecordKey-Parameter_ größer als Null ist, zeigt der  _pszMsgID-Parameter_ auf einen zusammengesetzten Eintragsbezeichner, der in Text konvertiert wurde. Wenn  _cbStoreRecordKey_ null ist,  _zeigt pszMsgID_ auf einen in Text konvertierten Nichtcompound-Eintragsbezeichner. 
     
 ## <a name="return-value"></a>Return value
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn die Nachricht oder ein anderes Objekt, für das die verknüpfte Eintrags-ID erstellt wird, in einem Nachrichtenspeicher gespeichert ist, wird die ID-Zeichenfolge aus der Eintrags-ID des Objekts und dem Record-Schlüssel des Speichers erstellt. Wenn sich das Objekt nicht in einem Speicher befindet, das heißt, wenn die Bytezahl für den im _cbStoreRecordKey_ -Parameter übergebenen Speicher Eintragsschlüssel 0 (null) ist, wird die Eintrags-ID des Objekts einfach kopiert und in eine Zeichenfolge konvertiert. 
+Wenn sich die Nachricht oder ein anderes Objekt, für das der zusammengesetzte Eintragsbezeichner erstellt wird, in einem Nachrichtenspeicher befindet, wird die Bezeichnerzeichenfolge aus dem Eintragsbezeichner des Objekts und dem Datensatzschlüssel des Speichers erstellt. Wenn sich das Objekt nicht in einem Speicher befindet, d. h. wenn die Byteanzahl für den im  _cbStoreRecordKey-Parameter_ übergebenen Speicherdatensatzschlüssel null ist, wird der Eintragsbezeichner des Objekts einfach kopiert und in eine Zeichenfolge konvertiert. 
   
-Das Aufrufen der **HrComposeMsgID** -Funktion entspricht dem Aufrufen der [HrComposeEID](hrcomposeeid.md) -Funktion und dann der [HrSzFromEntryID](hrszfromentryid.md) -Funktion. 
+Das Aufrufen **der HrComposeMsgID-Funktion** entspricht dem Aufrufen der [HrComposeEID-Funktion](hrcomposeeid.md) und dann der [HrSzFromEntryID-Funktion.](hrszfromentryid.md) 
   
- Mit **HrComposeMsgID** können Clientanwendungen mit Objekten in mehreren speichern arbeiten, die mit verknüpften Eingabe Bezeichnern verwendet werden. Eine Anwendung kann die [HrDecomposeMsgID](hrdecomposemsgid.md) -Funktion aufrufen, um den verknüpften Eintragsbezeichner in seine ursprünglichen Bestandteile aufzuteilen. 
+ **HrComposeMsgID** ermöglicht Clientanwendungen das Arbeiten mit Objekten in mehreren Speichern mithilfe von zusammengesetzten Eingabebezeichnern. Eine Anwendung kann die [HrDecomposeMsgID-Funktion](hrdecomposemsgid.md) aufrufen, um die zusammengesetzte Eintrags-ID in ihre ursprünglichen Bestandteile zu teilen. 
   
 

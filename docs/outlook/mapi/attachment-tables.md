@@ -19,55 +19,55 @@ ms.locfileid: "33427443"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine Attachment-Tabelle enthält Informationen zu allen Attachment-Objekten, die einer übermittelten Nachricht oder einer Nachricht unter Composition zugeordnet sind. 
+Eine Anlagentabelle enthält Informationen zu allen Anlagenobjekten, die einer übermittelten Nachricht oder einer Nachricht in der Komposition zugeordnet sind. 
   
-Nur Anlagen, die durch einen Aufruf der [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) -Methode der Nachricht gespeichert wurden, sind in der Tabelle enthalten. Anlagen Tabellen werden von Nachrichtenspeicher Anbietern implementiert und von Clientanwendungen und Transportanbietern verwendet. 
+In der Tabelle sind nur Anlagen enthalten, die durch einen Aufruf der [IMAPIProp::SaveChanges-Methode](imapiprop-savechanges.md) der Nachricht gespeichert wurden. Anlagentabellen werden von Nachrichtenspeicheranbietern implementiert und von Clientanwendungen und Transportanbietern verwendet. 
   
-Sie können auf eine Attachment-Tabelle zugreifen, indem Sie eine der folgenden aufrufen:
+Auf eine Anlagentabelle kann zugegriffen werden, indem sie eine der folgenden Aufrufe aufruft:
   
 - [IMessage::GetAttachmentTable](imessage-getattachmenttable.md)
     
-- [IMAPIProp:: OpenProperty](imapiprop-openproperty.md), der die **PR_MESSAGE_ATTACHMENTS** ([pidtagmessageattachments (](pidtagmessageattachments-canonical-property.md))-Eigenschaft anfordert.
+- [IMAPIProp::OpenProperty](imapiprop-openproperty.md), fordert die **PR_MESSAGE_ATTACHMENTS** ([PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md)) -Eigenschaft an.
     
-Anlagen Tabellen sind dynamisch.
+Anlagentabellen sind dynamisch.
   
-Nachrichtenspeicher Anbieter müssen die Sortierung in ihren Anlagen Tabellen nicht unterstützen. Wenn die Sortierung nicht unterstützt wird, muss die Tabelle in der Reihenfolge nach der **PR_RENDERING_POSITION** ([pidtagrenderingposition (](pidtagrenderingposition-canonical-property.md))-Eigenschaft angezeigt werden.
+Nachrichtenspeicheranbieter müssen die Sortierung ihrer Anlagentabellen nicht unterstützen. Wenn die Sortierung nicht unterstützt wird, muss die Tabelle in der Reihenfolge dargestellt werden, indem die Position **gerendert** wird – die PR_RENDERING_POSITION ([PidTagRenderingPosition](pidtagrenderingposition-canonical-property.md)) -Eigenschaft.
   
-Nachrichtenspeicher Anbieter müssen auch keine Einschränkungen für Ihre Anlage Tabellen unterstützen. Anbieter, die keine Einschränkungen unterstützen, geben MAPI_E_NO_SUPPORT aus ihren Implementierungen von [IMAPITable:: Restrict](imapitable-restrict.md) und [IMAPITable:: FindRow](imapitable-findrow.md)zurück.
+Nachrichtenspeicheranbieter müssen auch keine Einschränkungen für ihre Anlagentabellen unterstützen. Anbieter, die keine Einschränkungen unterstützen, geben MAPI_E_NO_SUPPORT Implementierungen von [IMAPITable::Restrict](imapitable-restrict.md) und [IMAPITable::FindRow zurück.](imapitable-findrow.md)
   
-Anlagen Tabellen können klein sein; der erforderliche Spaltensatz enthält nur vier Spalten:
+Anlagentabellen können klein sein. Der erforderliche Spaltensatz enthält nur vier Spalten:
   
-- **PR_ATTACH_NUM** ([Pidtagattachnumber (](pidtagattachnumber-canonical-property.md)) 
+- **PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) 
     
-- **PR_INSTANCE_KEY** ([Pidtaginstancekey (](pidtaginstancekey-canonical-property.md)) 
+- **PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md)) 
     
-- **PR_RECORD_KEY** ([Pidtagrecordkey (](pidtagrecordkey-canonical-property.md)) 
+- **PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md)) 
     
 - **PR_RENDERING_POSITION**
     
- **PR_ATTACH_NUM** ist nicht übertragbar und enthält einen Wert zum eindeutigen Identifizieren einer Anlage in einer Nachricht. Diese Eigenschaft wird häufig als Index in den Zeilen der Tabelle verwendet. **PR_ATTACH_NUM** hat eine kurze Lebensdauer; Sie ist nur gültig, wenn die Nachricht, die die Anlage enthält, geöffnet ist. Der Wert der Datei wird garantiert konstant bleiben, solange die Anlage Tabelle geöffnet ist. 
+ **PR_ATTACH_NUM** ist nichttransmitierbar und enthält einen Wert zum eindeutigen Identifizieren einer Anlage innerhalb einer Nachricht. Diese Eigenschaft wird häufig als Index in den Zeilen der Tabelle verwendet. **PR_ATTACH_NUM** hat eine kurze Lebensdauer; sie ist nur gültig, wenn die Nachricht mit der Anlage geöffnet ist. Der Wert bleibt garantiert konstant, solange die Anlagentabelle geöffnet ist. 
   
- **PR_INSTANCE_KEY** ist in fast jeder Tabelle erforderlich. Es wird verwendet, um eine bestimmte Zeile eindeutig zu identifizieren. 
+ **PR_INSTANCE_KEY** in fast jeder Tabelle erforderlich. Es wird verwendet, um eine bestimmte Zeile eindeutig zu identifizieren. 
   
- **PR_RECORD_KEY** wird häufig verwendet, um ein Objekt zu Vergleichszwecken eindeutig zu identifizieren. Im Gegensatz zu **PR_ATTACH_NUM**hat **PR_RECORD_KEY** den gleichen Bereich wie eine langfristige Eintrags-ID. Sie bleibt auch nach dem Schließen und erneuten Öffnen der Nachricht verfügbar und gültig. Weitere Informationen zur Verwendung von Daten Satz Schlüsseln in MAPI finden Sie unter [MAPI Record and Search Keys](mapi-record-and-search-keys.md).
+ **PR_RECORD_KEY** wird häufig verwendet, um ein Objekt für Vergleichszwecke eindeutig zu identifizieren. Im **PR_ATTACH_NUM** hat **PR_RECORD_KEY** denselben Bereich wie eine langfristige Eintrags-ID. sie bleibt verfügbar und gültig, auch nachdem die Nachricht geschlossen und erneut geöffnet wurde. Weitere Informationen zur Verwendung von Datensatzschlüsseln in MAPI finden Sie unter [MAPI Record and Search Keys](mapi-record-and-search-keys.md).
   
- **PR_RENDERING_POSITION** gibt an, wie eine Anlage in einer Rich-Text-Nachricht angezeigt werden soll. Sie kann auf einen Offset in Zeichen festgelegt werden, wobei das erste Zeichen des Nachrichteninhalts in der **PR_BODY** ([pidtagbody (](pidtagbody-canonical-property.md))-Eigenschaft als Offset 0 oder to-1 (0xFFFFFFFF) gespeichert wird, was darauf hinweist, dass die Anlage nicht innerhalb der Nachricht gerendert werden soll. Text überhaupt. Nicht die Einstellung **PR_RENDERING_POSITION** ist auch eine Option. 
+ **PR_RENDERING_POSITION** gibt an, wie eine Anlage in einer Rich-Text-Nachricht angezeigt werden soll. Sie kann auf einen Offset in Zeichen festgelegt werden, und das erste Zeichen des Nachrichteninhalts, das in der **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md))-Eigenschaft gespeichert ist, wird auf -0 oder -1 (0xFFFFFFFF) versetzt, was angibt, dass die Anlage überhaupt nicht im Nachrichtentext gerendert werden soll. Das Festlegen **PR_RENDERING_POSITION** ist ebenfalls eine Option. 
   
-Wenn eine Anlage Tabelle nach der Position des Renders sortiert wird, behandelt der Nachrichtenspeicher Anbieter Sie als einen signierten Wert (PT_LONG). Daher werden Anlagen mit Renderingposition von-1 vor Anlagen mit Wiedergabepositionen sortiert, die gültige Offsets widerspiegeln. 
+Wenn eine Anlagentabelle nach Renderposition sortiert wird, behandelt der Nachrichtenspeicheranbieter sie als signierten Wert (PT_LONG). Aus diesem Grund werden Anlagen mit Renderingpositionen von -1 vor Anlagen mit Renderingpositionen sortiert, die gültige Offsets widerspiegeln. 
   
-Weitere Informationen zum Rendern einer Anlage in einer nur-Text-Nachricht finden Sie unter Rendering an [Attachment in Plain Text](rendering-an-attachment-in-plain-text.md). 
+Weitere Informationen zum Rendern einer Anlage in einer Nur-Text-Nachricht finden Sie unter [Rendering an Attachment in Plain Text](rendering-an-attachment-in-plain-text.md). 
   
-Informationen zum Rendern einer Anlage in formatiertem Text wie Rich-Text-Format (RTF) finden Sie unter [Rendern einer Anlage in RTF-Text](rendering-an-attachment-in-rtf-text.md).
+Informationen zum Rendern einer Anlage in formatierten Text wie Rich Text Format (RTF) finden Sie unter [Rendering an Attachment in RTF Text](rendering-an-attachment-in-rtf-text.md).
   
-Einige der Eigenschaften von Nachrichtenspeicher Anbietern sind häufig in einer Attachment-Tabelle eingeschlossen, da Sie einfach zu berechnen oder abzurufen sind:
+Einige der Eigenschaften, die Nachrichtenspeicheranbieter häufig in einer Anlagentabelle enthalten, da sie einfach zu berechnen oder abzurufen sind, sind:
   
 |||
 |:-----|:-----|
-|**PR_ATTACH_ENCODING** ([Pidtagattachencoding (](pidtagattachencoding-canonical-property.md))  <br/> |**PR_ATTACH_EXTENSION** ([Pidtagattachextension (](pidtagattachextension-canonical-property.md))  <br/> |
-|**PR_ATTACH_FILENAME** ([Pidtagattachfilename (](pidtagattachfilename-canonical-property.md))  <br/> |**PR_ATTACH_LONG_FILENAME** ([Pidtagattachlongfilename (](pidtagattachlongfilename-canonical-property.md))  <br/> |
-|**PR_ATTACH_PATHNAME** ([Pidtagattachpathname (](pidtagattachpathname-canonical-property.md))  <br/> |**PR_ATTACH_LONG_PATHNAME** ([Pidtagattachlongpathname (](pidtagattachlongpathname-canonical-property.md))  <br/> |
-|**PR_ATTACH_METHOD** ([Pidtagattachmethod (](pidtagattachmethod-canonical-property.md))  <br/> |**PR_ATTACH_TAG** ([Pidtagattachtag (](pidtagattachtag-canonical-property.md))  <br/> |
-|**PR_CREATION_TIME** ([PidTagCreationTime](pidtagcreationtime-canonical-property.md))  <br/> |**PR_ATTACH_TRANSPORT_NAME** ([Pidtagattachtransportname (](pidtagattachtransportname-canonical-property.md))  <br/> |
+|**PR_ATTACH_ENCODING** ([PidTagAttachEncoding](pidtagattachencoding-canonical-property.md))  <br/> |**PR_ATTACH_EXTENSION** ([PidTagAttachExtension](pidtagattachextension-canonical-property.md))  <br/> |
+|**PR_ATTACH_FILENAME** ([PidTagAttachFilename](pidtagattachfilename-canonical-property.md))  <br/> |**PR_ATTACH_LONG_FILENAME** ([PidTagAttachLongFilename](pidtagattachlongfilename-canonical-property.md))  <br/> |
+|**PR_ATTACH_PATHNAME** ([PidTagAttachPathname](pidtagattachpathname-canonical-property.md))  <br/> |**PR_ATTACH_LONG_PATHNAME** ([PidTagAttachLongPathname](pidtagattachlongpathname-canonical-property.md))  <br/> |
+|**PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md))  <br/> |**PR_ATTACH_TAG** ([PidTagAttachTag](pidtagattachtag-canonical-property.md))  <br/> |
+|**PR_CREATION_TIME** ([PidTagCreationTime](pidtagcreationtime-canonical-property.md))  <br/> |**PR_ATTACH_TRANSPORT_NAME** ([PidTagAttachTransportName](pidtagattachtransportname-canonical-property.md))  <br/> |
 |**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |**PR_LAST_MODIFICATION_TIME** ([PidTagLastModificationTime](pidtaglastmodificationtime-canonical-property.md))  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

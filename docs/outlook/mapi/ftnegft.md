@@ -25,13 +25,13 @@ ms.locfileid: "33423384"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die beiden Komplemente einer unsignierten 64-Bit-Ganzzahl. 
+Berechnet die beiden Komplemente einer nicht signierten 64-Bit-Ganzzahl. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 FILETIME FtNegFt(
@@ -41,12 +41,12 @@ FILETIME FtNegFt(
 
 ## <a name="parameters"></a>Parameter
 
- _FT_
+ _ft_
   
-> in Eine [FILETIME](filetime.md) -Struktur mit der unsignierten 64-Bit-Ganzzahl, für die die Komplemente der beiden berechnet werden sollen. 
+> [in] Eine [FILETIME-Struktur,](filetime.md) die die nicht signierte 64-Bit-Ganzzahl enthält, für die das Komplement der beiden berechnet werden soll. 
     
 ## <a name="return-value"></a>Rückgabewert
 
-Die **FtNegFt** -Funktion gibt **** eine FILETIME-Struktur zurück, die die Komplemente der ganzen Zahl enthält. Der Eingabeparameter bleibt unverändert. 
+Die **FtNegFt-Funktion** gibt eine **FILETIME-Struktur** zurück, die die beiden Ergänzungen der ganzen Zahl enthält. Der Eingabeparameter bleibt unverändert. 
   
 

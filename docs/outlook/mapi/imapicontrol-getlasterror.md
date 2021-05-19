@@ -25,7 +25,7 @@ ms.locfileid: "33421151"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt eine [MAPIERROR](mapierror.md) -Struktur zurück, die Informationen zum vorherigen Fehler der Schaltflächensteuerung enthält. 
+Gibt eine [MAPIERROR-Struktur](mapierror.md) zurück, die Informationen zum vorherigen Steuerelementfehler der Schaltfläche enthält. 
   
 ```cpp
 HRESULT GetLastError(
@@ -39,19 +39,19 @@ HRESULT GetLastError(
 
  _hResult_
   
-> in Ein Handle für den im vorherigen Methodenaufruf generierten Fehlerwert.
+> [in] Ein Handle zum Fehlerwert, der im vorherigen Methodenaufruf generiert wurde.
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die den Typ der zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die den Typ der zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
     
 MAPI_UNICODE 
   
-> Die Zeichenfolgen in der **MAPIERROR** -Struktur, die im _lppMAPIError_ -Parameter zurückgegeben werden, sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format. 
+> Die Zeichenfolgen in der **MAPIERROR-Struktur,** die im  _lppMAPIError-Parameter_ zurückgegeben wird, sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Zeichenfolgen im ANSI-Format. 
     
  _lppMAPIError_
   
-> Out Ein Zeiger auf einen Zeiger auf eine **MAPIERROR** -Struktur, die Versions-, Komponenten-und Kontextinformationen für den Fehler enthält. Der _lppMAPIError_ -Parameter kann auf NULL festgelegt werden, wenn der Anbieter keine **MAPIERROR** -Struktur mit den entsprechenden Informationen angeben kann. 
+> [out] Ein Zeiger auf einen Zeiger auf eine **MAPIERROR-Struktur,** die Versions-, Komponenten- und Kontextinformationen für den Fehler enthält. Der  _lppMAPIError-Parameter_ kann auf NULL festgelegt werden, wenn der Anbieter keine **MAPIERROR-Struktur** mit entsprechenden Informationen angeben kann. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -61,17 +61,17 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> Entweder wurde das MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt Unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
+> Entweder wurde MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Dienstanbieter implementieren die **IMAPIControl:: getlasterroraufzurufen** -Methode, um Informationen zu einem fehlgeschlagenen Methodenaufruf bereitzustellen. MAPI kann Benutzern detaillierte Informationen zu dem Fehler geben, indem die Daten aus der **MAPIERROR** -Struktur in einer Nachricht oder einem Dialogfeld angezeigt werden. 
+Dienstanbieter implementieren die **IMAPIControl::GetLastError-Methode,** um Informationen zu einem vorherigen Methodenaufruf zu liefern, der fehlgeschlagen ist. MAPI kann Benutzern detaillierte Informationen zu dem Fehler geben, indem die Daten aus der **MAPIERROR-Struktur** in einer Nachricht oder einem Dialogfeld angezeigt werden. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Für jeden Fehler benötigen Sie keine Informationen, die in die **MAPIERROR** -Struktur eingeschlossen werden müssen. Möglicherweise ist es nicht möglich, den vorherigen Fehler zu ermitteln. Wenn Sie Informationen haben, geben Sie S_OK und die entsprechenden Daten in der **MAPIERROR** -Struktur zurück. Wenn keine Informationen verfügbar sind, geben Sie S_OK und einen Zeiger auf NULL für den _lppMAPIError_ -Parameter zurück. 
+Sie benötigen nicht für jeden Fehler Informationen, die in die **MAPIERROR-Struktur** enthalten sein müssen. Es ist möglicherweise nicht möglich, den vorherigen Fehler zu ermitteln. Wenn Sie über Informationen verfügen, geben S_OK und die entsprechenden Daten in der **MAPIERROR-Struktur** zurück. Wenn keine Informationen verfügbar sind, geben Sie S_OK und einen Zeiger auf NULL für den  _lppMAPIError-Parameter_ zurück. 
   
-Weitere Informationen zur **getlasterroraufzurufen** -Methode finden Sie unter [MAPI Extended Errors](mapi-extended-errors.md).
+Weitere Informationen zur **GetLastError-Methode** finden Sie unter [MAPI Extended Errors](mapi-extended-errors.md).
   
 ## <a name="see-also"></a>Siehe auch
 

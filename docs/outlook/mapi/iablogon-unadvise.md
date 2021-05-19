@@ -25,7 +25,7 @@ ms.locfileid: "33424077"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bricht Benachrichtigungen ab, die zuvor mit einem Aufruf der [IABLogon:: Advise](iablogon-advise.md) -Methode eingerichtet wurden. 
+Benachrichtigungen, die zuvor mit einem Aufruf der [IABLogon::Advise-Methode eingerichtet wurden,](iablogon-advise.md) werden abgebrochen. 
   
 ```cpp
 HRESULT Unadvise(
@@ -37,23 +37,23 @@ HRESULT Unadvise(
 
  _ulConnection_
   
-> in Die Verbindungsnummer, die mit einer aktiven Benachrichtigungs Registrierung verknüpft ist. Ein vorheriger Anruf an **Advise** muss den Wert von _ulConnection_zurückgegeben haben.
+> [in] Die Verbindungsnummer, die einer aktiven Benachrichtigungsregistrierung zugeordnet ist. Ein vorheriger Aufruf von **Advise** muss den Wert von _ulConnection zurückgegeben haben._
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Benachrichtigungs Registrierung wurde erfolgreich abgebrochen.
+> Die Benachrichtigungsregistrierung wurde erfolgreich abgebrochen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-MAPI Ruft die **Unadvise** -Methode auf, um eine Benachrichtigungs Registrierung für ein Container-, Messaging-oder Verteilerlistenobjekt abzubrechen. 
+MAPI ruft die **Unadvise-Methode** auf, um eine Benachrichtigungsregistrierung für ein Container-, Messagingbenutzer- oder Verteilerlistenobjekt abbricht. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Die Implementierung von **Unadvise** hängt davon ab, ob Sie die Benachrichtigung mit der MAPI-Hilfe oder manuell unterstützen. Wenn MAPI ihre Unterstützung bereitstellt, rufen Sie die [IMAPISupport:: unsubscribe](imapisupport-unsubscribe.md) -Methode auf, um die Registrierung abzubrechen. Wenn in einem anderen Thread die [IMAPIAdviseSink:: OnNotify](imapiadvisesink-onnotify.md) -Methode der Advise-Senke aufgerufen wird, kann Sie verzögert werden **** , bis OnNotify zurückgegeben wurde. 
+Ihre Implementierung von **Unadvise** hängt davon ab, ob Sie Benachrichtigungen mithilfe von MAPI oder manuell unterstützen. Wenn MAPI Ihren Support bietet, rufen Sie die [IMAPISupport::Unsubscribe-Methode](imapisupport-unsubscribe.md) auf, um die Registrierung abbricht. Wenn ein anderer Thread die [IMAPIAdviseSink::OnNotify-Methode](imapiadvisesink-onnotify.md) der Ratensenke aufruft, kann er verzögert werden, bis **OnNotify** zurückgegeben wurde. 
   
-Weitere Informationen zum Benachrichtigungsprozess finden Sie unter [Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md). Informationen zur Verwendung der [IMAPISupport: IUnknown](imapisupportiunknown.md) -Methoden zur Unterstützung von Benachrichtigungen finden Sie unter [unterstützende Ereignisbenachrichtigung](supporting-event-notification.md).
+Weitere Informationen zum Benachrichtigungsprozess finden Sie unter [Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md). Informationen zur Verwendung der [IMAPISupport : IUnknown-Methoden](imapisupportiunknown.md) zur Unterstützung von Benachrichtigungen finden Sie unter [Supporting Event Notification](supporting-event-notification.md).
   
 ## <a name="see-also"></a>Siehe auch
 

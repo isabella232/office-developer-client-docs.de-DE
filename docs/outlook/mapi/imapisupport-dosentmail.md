@@ -50,13 +50,13 @@ S_OK
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 The **IMAPISupport::DoSentMail** method is implemented for message store provider support objects. Message store providers call **DoSentMail** from their implementation of the [IMsgStore::FinishedMsg](imsgstore-finishedmsg.md) method, which is called by the MAPI spooler when it has finished processing a message. **FinishedMsg** unlocks the message, ensures that the message's reference count is 1, and calls **DoSentMail**.
   
  **DoSentMail** f�hrt die folgenden Aufgaben: 
   
-- Überprüft die Nachricht für die **PR_DELETE_AFTER_SUBMIT** ([pidtagdeleteaftersubmit (](pidtagdeleteaftersubmit-canonical-property.md))-Eigenschaft, um zu bestimmen, ob die Nachricht nach dem Senden gelöscht werden soll.
+- Überprüft die Nachricht für **die PR_DELETE_AFTER_SUBMIT** ([PidTagDeleteAfterSubmit](pidtagdeleteaftersubmit-canonical-property.md)) -Eigenschaft, um zu bestimmen, ob die Nachricht nach dem Senden gelöscht werden soll.
     
 - Bestimmt den Speicherort des Ordners "Gesendete Elemente".
     

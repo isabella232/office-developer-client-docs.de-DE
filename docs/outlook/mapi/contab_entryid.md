@@ -15,17 +15,17 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33424084"
 ---
-# <a name="contabentryid"></a>CONTAB_ENTRYID
+# <a name="contab_entryid"></a>CONTAB_ENTRYID
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält die Eintrags-ID des Ordners Kontakte.
+Enthält die Eintrags-ID des Kontaktordners.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |msomapiutil. h  <br/> |
+|Headerdatei  <br/> |msomapiutil.h  <br/> |
    
 ```cpp
 #pragma pack(4) 
@@ -42,23 +42,23 @@ typedef struct _contab_entryid
 #pragma pack() 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **abFlags**
   
-> Eine Bitmaske von Flags, die Informationen zur Beschreibung des Objekts bereitstellt. Weitere Informationen finden Sie in der Beschreibung des **abFlags** -Felds einer [Eintrags](entryid.md) -Struktur. 
+> Eine Bitmaske mit Flags, die Informationen zur Beschreibung des Objekts enthält. Weitere Informationen finden Sie in der Beschreibung des **AbFlags-Felds** einer [ENTRYID-Struktur.](entryid.md) 
     
  **muid**
   
-> GUID, die den Informationsspeicher Anbieter identifiziert.
+> GUID, die den Speicheranbieter identifiziert.
     
  **ulVersion**
   
-> Die Versionsnummer der **CONTAB_ENTRYID** -Struktur. Muss auf CONTAB_VERSION festgelegt sein. 
+> Die Versionsnummer der **CONTAB_ENTRYID** Struktur. Muss auf CONTAB_VERSION. 
     
  **ulType**
   
-> Eine ganze Zahl, die den Typ des Kontakteintrags darstellt. Dabei muss es sich um einen der folgenden Werte handeln:
+> Eine ganze Zahl, die den Kontakteintrags-ID-Typ darstellt. Dies muss einer der folgenden Werte sein:
     
 |**Name**|**Beschreibung**|
 |:-----|:-----|
@@ -67,25 +67,25 @@ typedef struct _contab_entryid
    
  **ulIndex**
   
-> Der Index in der e-Mail-Eigenschaft-Teilmenge.
+> Der Index in die Teilmenge der E-Mail-Eigenschaft.
     
  **cbeid**
   
-> Die Größe der Eintrags-ID der Kontakt Nachricht, die diesem Eintrag im Adressbuchkontakte zugeordnet ist.
+> Die Größe der Eintrags-ID der Kontaktnachricht, die diesem Eintrag im Adressbuch kontakte zugeordnet ist.
     
- **Abeid**
+ **abeid**
   
-> Die Eintrags-ID der Kontakt Nachricht, die diesem Eintrag im Adressbuchkontakte zugeordnet ist.
+> Der Eintragsbezeichner der Kontaktnachricht, die diesem Eintrag im Adressbuch "Kontakte" zugeordnet ist.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Ein Adressbuch für Kontakte ist ein Adressbuch, das alle Kontaktelemente in einem Kontakteordner enthält, die entweder eine e-Mail-Adresse oder eine Faxnummer enthalten. Jeder Eintrag in einem Contacts-Adressbuch ist entweder einer e-Mail-Adresse oder einer Faxnummer zugeordnet. Da ein Kontaktelement bis zu drei e-Mail-Adressen und drei Faxnummern enthalten kann, kann ein Kontaktelement durch bis zu sechs Einträge im entsprechenden Adressbuch für Kontakte dargestellt werden.
+Ein Kontakt-Adressbuch ist ein Adressbuch, das alle Kontaktelemente in einem Kontaktordner enthält, die entweder eine E-Mail-Adresse oder eine Faxnummer haben. Jeder Eintrag in einem Adressbuch für Kontakte ist entweder einer E-Mail-Adresse oder einer Faxnummer zugeordnet. Da ein Kontaktelement bis zu drei E-Mail-Adressen und drei Faxnummern haben kann, kann ein Kontaktelement durch bis zu sechs Einträge im entsprechenden Kontaktadressenbuch dargestellt werden.
   
-Der Zweck eines Kontakt Adressbuchs besteht darin, Benutzer zu unterstützen, die e-Mail-Nachrichten an Kontakte in einem Kontakteordner adressieren. Der Adressbuchanbieter für Kontakte, der von Microsoft Outlook 2010 und Microsoft Outlook 2013 unterstützt wird, ist contab32. dll.
+Der Zweck eines Adressbuchs für Kontakte besteht in der Unterstützung von Benutzern, die E-Mail-Nachrichten an Kontakte in einem Kontaktordner adressieren. Der Adressbuchanbieter für Kontakte, der Microsoft Outlook 2010 und Microsoft Outlook 2013 unterstützt, wird contab32.dll.
   
-Die **CONTAB_ENTRYID** -Struktur unterstützt eine Teilmenge der Informationen, die in der zugrunde liegenden MAPI-Kontakt Nachricht enthalten sind. Sie identifiziert die Kontakt Nachricht, der ein bestimmter Adressbucheintrag für Kontakte zugeordnet ist. 
+Die **CONTAB_ENTRYID** unterstützt eine Teilmenge der Informationen, die in der zugrunde liegenden MAPI-Kontaktnachricht vorhanden sind. Es identifiziert die Kontaktnachricht, der ein bestimmter Kontakt-Adressbucheintrag zugeordnet ist. 
   
-Die Felder **cbeid** und **Abeid** sind nur gültig, wenn der **ulType** -Feldwert auf CONTAB_DISTLIST oder CONTAB_USER festgelegt ist. Wenn der **ulType** -FELDWERT auf CONTAB_ROOT, CONTAB_SUBROOT oder CONTAB_CONTAINER festgelegt ist, sollte stattdessen die [DIR_ENTRYID](dir_entryid.md) -Struktur verwendet werden. 
+Die **Felder cbeid** und **abeid** sind nur gültig, wenn der **ulType-Feldwert** auf CONTAB_DISTLIST oder CONTAB_USER. Wenn der wert des **ulType-Felds** auf CONTAB_ROOT, CONTAB_SUBROOT oder CONTAB_CONTAINER festgelegt ist, sollte stattdessen [DIR_ENTRYID](dir_entryid.md) verwendet werden. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33421235"
 ---
-# <a name="direntryid"></a>DIR_ENTRYID
+# <a name="dir_entryid"></a>DIR_ENTRYID
 
   
   
@@ -25,7 +25,7 @@ Beschreibt die Eigenschaften einer Verzeichniseintrags-ID.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Eintrags-Nr. h  <br/> |
+|Headerdatei  <br/> |entryid.h  <br/> |
    
 ```cpp
 #pragma pack(4)
@@ -40,23 +40,23 @@ typedef struct _dir_entryid
 #pragma pack()
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **abFlags**
   
-> Eine Bitmaske von Flags, die Informationen zur Beschreibung des Objekts bereitstellt. Weitere Informationen finden Sie in der Beschreibung des **abFlags** -Felds einer [Eintrags](entryid.md) -Struktur. 
+> Eine Bitmaske mit Flags, die Informationen zur Beschreibung des Objekts enthält. Weitere Informationen finden Sie in der Beschreibung des **AbFlags-Felds** einer [ENTRYID-Struktur.](entryid.md) 
     
  **muid**
   
-> GUID, die den Informationsspeicher Anbieter identifiziert.
+> GUID, die den Speicheranbieter identifiziert.
     
  **ulVersion**
   
-> Die Versionsnummer der **DIR_ENTRYID** -Struktur. Muss auf CONTAB_VERSION festgelegt sein. 
+> Die Versionsnummer der **DIR_ENTRYID** Struktur. Muss auf CONTAB_VERSION. 
     
  **ulType**
   
-> Eine ganze Zahl, die den Verzeichniseintrags-ID-Typ darstellt. Dabei muss es sich um einen der folgenden Werte handeln:
+> Eine ganze Zahl, die den Verzeichniseintrags-ID-Typ darstellt. Dies muss einer der folgenden Werte sein:
     
 |**Name**|**Beschreibung**|
 |:-----|:-----|
@@ -66,11 +66,11 @@ typedef struct _dir_entryid
    
  **muidID**
   
-> Eine GUID, die das Logon-Objekt identifiziert.
+> Eine GUID, die das Anmeldeobjekt identifiziert.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die Strukturen **DIR_ENTRYID** und [CONTAB_ENTRYID](contab_entryid.md) sind identisch, mit Ausnahme des **ulType** -Elements. Der Inhalt des **ulType** -Elements bestimmt, welche Struktur für die verbleibenden Felder geeignet ist. 
+Die Strukturen **DIR_ENTRYID** [und CONTAB_ENTRYID](contab_entryid.md) sind identisch, mit Ausnahme des **ulType-Mitglieds.** Der Inhalt des **ulType-Mitglieds** bestimmt, welche Struktur für die verbleibenden Felder geeignet ist. 
   
 ## <a name="see-also"></a>Siehe auch
 

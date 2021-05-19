@@ -20,7 +20,7 @@ Gibt die Anzahl der Liniensegmente zurück, aus denen der Pfad besteht.
   
 ## <a name="syntax"></a>Syntax
 
-Segment count (* * *pathRef* * *) 
+SEGMENTCOUNT(** *pathRef* ** ) 
   
 ### <a name="parameters"></a>Parameter
 

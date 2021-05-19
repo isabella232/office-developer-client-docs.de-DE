@@ -20,51 +20,51 @@ ms.locfileid: "33425029"
 
 Legt das Routingformat und die Richtung für einen ausgewählten Verbinder auf dem Zeichenblatt fest.
   
-|**Wert**|**Routingformat**|**Direction**|**Automatisierungskonstante**|
+|**Wert**|**Routingformat**|**Richtung**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|:-----|
 |0  <br/> |Zeichenblattstandard verwenden  <br/> |Keine  <br/> |**visLORouteDefault** <br/> |
 |1  <br/> |Rechter Winkel  <br/> |Keine  <br/> |**visLORouteRightAngle** <br/> |
-|2  <br/> |Gerade  <br/> |Keine  <br/> |**visLORouteStraight** <br/> |
+|2  <br/> |Straight  <br/> |Keine  <br/> |**visLORouteStraight** <br/> |
 |3  <br/> |Organigramm  <br/> |Von oben nach unten  <br/> |**visLORouteOrgChartNS** <br/> |
-|4  <br/> |Organigramm  <br/> |Von links nach rechts  <br/> |**visLORouteOrgChartWE** <br/> |
-|5  <br/> |Flussdiagramm  <br/> |Von oben nach unten  <br/> |**visLORouteFlowchartNS** <br/> |
-|6  <br/> |Flussdiagramm  <br/> |Von links nach rechts  <br/> |**visLORouteFlowchartWE** <br/> |
-|7  <br/> |Struktur  <br/> |Von oben nach unten  <br/> |**visLORouteTreeNS** <br/> |
-|8  <br/> |Struktur  <br/> |Von links nach rechts  <br/> |**visLORouteTreeWE** <br/> |
-|9  <br/> |Netzwerk  <br/> |Keine  <br/> |**visLORouteNetwork** <br/> |
-|10   <br/> |Organigramm  <br/> |Von unten nach oben  <br/> |**visLORouteOrgChartSN** <br/> |
-|11   <br/> |Organigramm  <br/> |Von rechts nach links  <br/> |**visLORouteOrgChartEW** <br/> |
-|12  <br/> |Flussdiagramm  <br/> |Von unten nach oben  <br/> |**visLORouteFlowchartSN** <br/> |
-|13   <br/> |Flussdiagramm  <br/> |Von rechts nach links  <br/> |**visLORouteFlowchartEW** <br/> |
+|4   <br/> |Organigramm  <br/> |Von links nach rechts  <br/> |**visLORouteOrgChartWE** <br/> |
+|5   <br/> |Flussdiagramm  <br/> |Von oben nach unten  <br/> |**visLORouteFlowchartNS** <br/> |
+|6   <br/> |Flussdiagramm  <br/> |Von links nach rechts  <br/> |**visLORouteFlowchartWE** <br/> |
+|7   <br/> |Struktur  <br/> |Von oben nach unten  <br/> |**visLORouteTreeNS** <br/> |
+|8   <br/> |Struktur  <br/> |Von links nach rechts  <br/> |**visLORouteTreeWE** <br/> |
+|9   <br/> |Netzwerk  <br/> |Keine  <br/> |**visLORouteNetwork** <br/> |
+|10  <br/> |Organigramm  <br/> |Von unten nach oben  <br/> |**visLORouteOrgChartSN** <br/> |
+|11  <br/> |Organigramm  <br/> |Von rechts nach links  <br/> |**visLORouteOrgChartEW** <br/> |
+|12   <br/> |Flussdiagramm  <br/> |Von unten nach oben  <br/> |**visLORouteFlowchartSN** <br/> |
+|13  <br/> |Flussdiagramm  <br/> |Von rechts nach links  <br/> |**visLORouteFlowchartEW** <br/> |
 |14   <br/> |Struktur  <br/> |Von unten nach oben  <br/> |**visLORouteTreeSN** <br/> |
 |15   <br/> |Struktur  <br/> |Von rechts nach links  <br/> |**visLORouteTreeEW** <br/> |
 |16   <br/> |Mitte an Mitte  <br/> |Keine  <br/> |**visLORouteCenterToCenter** <br/> |
-|17  <br/> |Simple  <br/> |Von oben nach unten  <br/> |**visLORouteSimpleNS** <br/> |
-|18  <br/> |Simple  <br/> |Von links nach rechts  <br/> |**visLORouteSimpleWE** <br/> |
-|19  <br/> |Simple  <br/> |Von unten nach oben  <br/> |**visLORouteSimpleSN** <br/> |
-|20  <br/> |Simple  <br/> |Von rechts nach links  <br/> |**visLORouteSimpleEW** <br/> |
-|21  <br/> |Einfach horizontal-vertikal  <br/> |Keine  <br/> |**visLORouteSimpleHV** <br/> |
+|17   <br/> |Einfach  <br/> |Von oben nach unten  <br/> |**visLORouteSimpleNS** <br/> |
+|18   <br/> |Einfach  <br/> |Von links nach rechts  <br/> |**visLORouteSimpleWE** <br/> |
+|19  <br/> |Einfach  <br/> |Von unten nach oben  <br/> |**visLORouteSimpleSN** <br/> |
+|20  <br/> |Einfach  <br/> |Von rechts nach links  <br/> |**visLORouteSimpleEW** <br/> |
+| 21  <br/> |Einfach horizontal-vertikal  <br/> |Keine  <br/> |**visLORouteSimpleHV** <br/> |
 |22  <br/> |Einfach vertikal-horizontal  <br/> |Keine  <br/> |**visLORouteSimpleVH** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Sie können den Wert dieser Zelle für einen bestimmten Verbinder auch im Dialogfeld **Verhalten** auf der Registerkarte **Verbinder** festlegen (Klicken Sie bei Auswahl eines Connectors auf der Registerkarte [Entwickler](run-in-developer-mode-display-the-developer-tab.md) auf **Verhalten** , und klicken Sie dann auf die Registerkarte **Verbinder** ). 
+Sie können den Wert dieser Zelle für einen bestimmten  Connector auch auf der Registerkarte  **Connector** im [](run-in-developer-mode-display-the-developer-tab.md) Dialogfeld Verhalten festlegen (wenn ein Connector ausgewählt ist, klicken Sie auf der Registerkarte Entwickler auf Verhalten, und klicken Sie dann auf die Registerkarte **Connector).** 
   
-Wenn Sie dieses Verhalten für *alle* Verbinder auf einer Seite festlegen möchten, verwenden Sie die Zelle RouteStyle im Abschnitt Seiten Layout. 
+Verwenden Sie zum Festlegen dieses Verhaltens für  *alle*  Connectors auf einer Seite die Zelle RouteStyle im Abschnitt Seitenlayout. 
   
 In Versionen vor Visio  2000 wird dieses Verhalten in der Zelle ObjVerhalten im Abschnitt Miscellaneous festgelegt.
   
-Wenn Sie einen Verweis auf die Zelle Zelle ShapeRouteStyle aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle ShapeRouteStyle anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Zelle ShapeRouteStyle  <br/> |
+|Zellenname:  <br/> |ShapeRouteStyle  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle ShapeRouteStyle aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Um einen Verweis auf die Zelle ShapeRouteStyle nach Index aus einem Programm zu erhalten, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowShapeLayout** <br/> |
 |Zellenindex:  <br/> |**visSLORouteStyle** <br/> |
    

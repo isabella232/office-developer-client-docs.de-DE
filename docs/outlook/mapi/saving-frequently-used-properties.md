@@ -21,8 +21,8 @@ ms.locfileid: "33424553"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Verbessern Sie die Leistung, indem Sie Daten speichern, die Zeit und Ressourcen zum Abrufen benötigen und häufig auf Sie zugegriffen wird. Die Verwendung von zusätzlichem Arbeitsspeicher kann manchmal eine bessere Option für wiederholte Abrufe sein. Verwenden Sie beim Erstellen eines Caches zum Speichern dieser Daten Vorsicht und Sorgfalt. Beachten Sie, dass ein schlecht entworfener Cache sich negativ auf die Leistung auswirken kann.
+Verbessern Sie die Leistung, indem Sie Daten speichern, die Zeit und Ressourcen zum Abrufen benötigten und häufig aufgerufen werden. Die Verwendung von zusätzlichem Arbeitsspeicher kann manchmal eine bessere Option sein, wenn wiederholte Abrufe verwendet werden. Verwenden Sie beim Erstellen eines Caches zum Speichern dieser Daten Vorsicht und Vorsicht. Beachten Sie, dass sich ein schlecht entworfener Cache negativ auf die Leistung auswirken kann.
   
-Beispielsweise müssen die meisten IPM-Clients (zwischen Personen) die IPM-Unterstruktur von Ordnern während einer typischen Sitzung mehrmals anzeigen und öffnen. Sie können die Leistung verbessern, indem Sie die Eintrags-IDs für jeden dieser Ordner speichern. 
+Die meisten clients interpersonal message (IPM) müssen z. B. die IPM-Unterstruktur von Ordnern während einer typischen Sitzung mehrmals anzeigen und öffnen. Sie können die Leistung verbessern, indem Sie die Eintragsbezeichner für jeden dieser Ordner speichern. 
   
 

@@ -23,12 +23,12 @@ ms.locfileid: "33423461"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Definiert eine [ADRLIST](adrlist.md) -Struktur mit dem angegebenen Namen, die eine bestimmte Anzahl von [Miet](adrentry.md) Strukturen enthält. 
+Definiert eine [ADRLIST-Struktur](adrlist.md) mit dem angegebenen Namen, der eine angegebene Anzahl von [ADRENTRY-Strukturen](adrentry.md) enthält. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |**ADRLIST** <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |**ADRLIST** <br/> |
    
 ```cpp
 SizedADRLIST (_centries,_name)
@@ -36,17 +36,17 @@ SizedADRLIST (_centries,_name)
 
 ## <a name="parameters"></a>Parameter
 
-__Zentrierungen_
+_ _Centries_
   
-> Die Anzahl der **Miet** Strukturen, die in die neue **ADRLIST** -Struktur eingeschlossen werden sollen. 
+> Anzahl der **ADRENTRY-Strukturen,** die in die neue **ADRLIST-Struktur einbezogen werden** sollen. 
     
-__Name_
+_ _name_
   
-> Name für die neue **ADRLIST** -Struktur. 
+> Name für die neue **ADRLIST-Struktur.** 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Mit dem **SizedADRLIST** -Makro können Sie eine Empfängerliste mit expliziten Grenzen definieren, wenn die Anforderungen an die Arraylänge bekannt sind. Der folgende Code zeigt, wie das Ergebnis des **SizedADRLIST** -Makros in einen **ADRLIST** -Struktur Zeiger umgewandelt wird: 
+Mit **dem Makro SizedADRLIST** können Sie eine Empfängerliste definieren, die explizite Grenzen hat, wenn Arraylängenanforderungen bekannt sind. Der folgende Code zeigt, wie das Ergebnis des **SizeADRLIST-Makros** in einen **ADRLIST-Strukturzeiger** umgleitiert wird: 
   
 ```cpp
 lpADRList = (LPADRLIST) &SizedADRList;

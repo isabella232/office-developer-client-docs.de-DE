@@ -1,5 +1,5 @@
 ---
-title: Formular Konfigurationsdatei [Properties] Abschnitt
+title: Abschnitt "Formularkonfigurationsdatei [Eigenschaften]
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,45 +15,45 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33421291"
 ---
-# <a name="form-configuration-file-properties-section"></a>Formular Konfigurationsdatei [Properties] Abschnitt
+# <a name="form-configuration-file-properties-section"></a>Abschnitt "Formularkonfigurationsdatei [Eigenschaften]
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Der Abschnitt **[Properties]** enthält den vollständigen Satz von Eigenschaften, die vom Formular verwendet und veröffentlicht werden. Das heißt, die Eigenschaften, die es in seinen benutzerdefinierten Nachrichten erstellt, die MAPI-Clientanwendungen beim Anzeigen von Spalten, Filtern von Inhaltstabellen, Einrichten von Suchergebnis Ordnern usw. verwenden können. Jeder Eintrag in dieser Eigenschaftenliste verweist auf eine nachfolgende **[Eigenschaft.** _Zeichenfolge_ **]** -Abschnitt wie folgt dargestellt. 
+Im **Abschnitt [Eigenschaften]** werden die vollständigen Eigenschaften aufgeführt, die das Formular verwendet und veröffentlicht. Das heißt, die Eigenschaften, die sie in ihren benutzerdefinierten Nachrichten erstellt, die MAPI-Clientanwendungen beim Anzeigen von Spalten, Filtern von Inhaltstabellen, Einrichten von Suchergebnissenordnern und so weiter verwenden können. Jeder Eintrag in dieser Eigenschaftenliste verweist auf eine nachfolgende **[Property.** _string_ **]** -Abschnitt wie im Folgenden gezeigt. 
   
- **Eigenschaften**
+ **[Eigenschaften]**
   
- **Eigenschaft.** _Zeichen_ =  __ Folge
+ **Eigenschaft.** _string_  =   _string_
   
-Das Format einer [ **-Eigenschaft.** _Zeichenfolge_] Section ist: 
+Das Format einer [ **-Eigenschaft.** _string_] abschnitt ist: 
   
- **Eigenschaft.** _Zeichenfolge_ **]**
+ **[Eigenschaft.** _string_ **]**
   
- **Typ** =  _Integer_
+ **Type**  =   _integer_
   
- **NmidPropset** =  -_GUID_
+ **NmidPropset**  =   _guid_
   
- **NmidString** =  -_Zeichenfolge_
+ **NmidString**  =   _string_
   
- **NmidInteger** =  -_Ganzzahl_
+ **NmidInteger**  =   _integer_
   
- **DisplayName** =  -_Zeichenfolge_
+ **DisplayName**  =   _string_
   
- **Flags** =  -_Ganzzahl_
+ **Flags**  =   _integer_
   
- **Specialtype** = 0 | 1 
+ **SpecialType** = 0|1 
   
- **Enum1** =  -_Zeichenfolge_
+ **Enum1**  =   _string_
   
-Jede **[Eigenschaft.** _Zeichenfolge_ **]** section beschreibt eine einzelne Eigenschaft. Der **Type** -Eintrag gibt den MAPI-Eigenschaftentyp (beispielsweise 3 (PT_I4)) der Eigenschaft an. Der **NmidPropset** -Eintrag ist optional; zusammen mit dem **NmidString** -Eintrag oder dem **NmidInteger** -Eintrag gibt der **NmidPropset** -Eintrag den Namen der Eigenschaft an. **NmidString** gibt den Namen der Eigenschaft an, während **NmidInteger** den Bezeichner der Eigenschaft liefert. **NmidString** und **NmidInteger** schließen sich gegenseitig aus. 
+Jede **[-Eigenschaft.** _im Abschnitt string_ **]** wird eine einzelne Eigenschaft beschrieben. Der **Type-Eintrag** gibt den MAPI-Eigenschaftstyp an, z. B. 3 (PT_I4) der Eigenschaft. Der **Eintrag NmidPropset** ist optional. Zusammen mit dem **Eintrag NmidString** oder **dem Eintrag NmidInteger** gibt der **Eintrag NmidPropset** den Namen der Eigenschaft an. **NmidString** gibt den Namen der Eigenschaft an, **während NmidInteger** den Bezeichner der Eigenschaft angibt. **NmidString** und **NmidInteger schließen** sich gegenseitig aus. 
   
-Wenn festgelegt, sollte **NmidPropset** den Namen des Eigenschaftensatzes enthalten. Wenn nicht vorhanden, wird **NmidPropset** auf einen Standardwert basierend auf der folgenden Regel festgelegt: Wenn **NmidInteger** vorhanden ist und dessen Value kleiner als 0X8000 ist, wird **NmidPropset** auf PS_MAPI festgelegt. Wenn der Wert von **NmidInteger** auf eine ganze Zahl größer als 0X8000 festgelegt ist oder abwesend ist, wird **NmidPropset** auf PS_PUBLIC_STRINGS festgelegt. 
+Wenn festgelegt, **sollte NmidPropset** den Namen des Eigenschaftensatz enthalten. Wenn **NmidPropset** nicht vorhanden ist, wird basierend auf der folgenden Regel ein Standardwert festgelegt: Wenn **NmidInteger** vorhanden ist und der Wert kleiner als 0x8000 ist, wird **NmidPropset** auf PS_MAPI. Wenn der Wert **von NmidInteger** auf eine ganze Zahl festgelegt ist, die größer als 0x8000 ist, oder wenn er nicht vorhanden ist, wird **NmidPropset** auf PS_PUBLIC_STRINGS. 
   
-Der Eintrag **DisplayName** enthält die Bezeichnung für die Eigenschaft. Der **specialtype** -Eintrag, sofern vorhanden, und ungleich NULL gibt an, dass diese Eigenschaft eine spezielle Eigenschaft ist. Derzeit ist der einzige definierte Eigenschafts specialtype **** = 1, der Aufzählungs Eigenschaften für die Zeichenfolge angibt. Wenn **specialtype** auf 1 festgelegt ist, verweist der **Enum1** -Eintrag auf den **[Enum1.** _Zeichenfolge_ **]** -Abschnitt. 
+Der **Eintrag DisplayName** enthält die Bezeichnung für die Eigenschaft. Der **Eintrag SpecialType** gibt an, dass es sich bei dieser Eigenschaft um eine spezielle Eigenschaft handelt, sofern vorhanden und ungleich Null. Derzeit ist **specialType** = 1 der einzige spezielle Eigenschaftstyp, der zeichenfolgenenumerierte Eigenschaften angibt. Wenn **SpecialType** auf 1 festgelegt ist, verweist **der Eintrag Enum1** auf **[Enum1.** _string_ **]** section. 
   
-Es folgt ein Beispiel für einen **[Properties]** -Abschnitt und eine **[Properties.** _Zeichenfolge_ **]** -Abschnitt. 
+Im Folgenden finden Sie ein Beispiel für **einen Abschnitt [Properties]** und ein **[Properties.** _string_ **]** section. 
   
 ```cpp
 [Properties]
@@ -69,23 +69,23 @@ Enum1 = HazardEnum
 
 ```
 
-Der **Enum1** -Eintrag im vorherigen Beispiel verweist auf eine nachfolgende **[Enum1.** _Zeichenfolge_ **]** -Abschnitt, der eine Enumeration eines bestimmten Typs beschreibt. Eine solche Enumeration ordnet die erste Eigenschaft in der **[-Eigenschaft.** _Zeichenfolge_ **]** Section mit einer Integer-Eigenschaft, die als Index bezeichnet wird. Eine solche Enumeration enthält auch eine Liste der möglichen Werte, die das Paar vom Anzeigeindex annehmen kann. Das Angeben eines Eigenschaftentyps für die Enumeration ist nicht erforderlich, da ein **Enum1** -Eintrag per Definition immer den PT_I4-Typ aufweist. Das Format für **[Enum1.** _Zeichenfolge_ **]** section ist: 
+Der **Eintrag Enum1** im voranstellenden Beispiel verweist auf eine **nachfolgende [Enum1.** _string_ **]** -Abschnitt, der eine Aufzählung eines bestimmten Typs beschreibt. Eine solche Enumeration verknüpft die erste Eigenschaft in **der [Property.** _string_ **]** -Abschnitt mit einer integer-Eigenschaft, die als Index bezeichnet wird. Eine solche Enumeration enthält auch eine Liste der möglichen Werte, die das Anzeigeindexpaar annehmen kann. Das Angeben eines Eigenschaftstyps für die Enumeration ist nicht erforderlich, da ein **Enum1-Eintrag** definitionsgemäß immer den PT_I4 hat. Das Format für **[Enum1.** _string_ **]** section is: 
   
- **[Enum1.** _Zeichenfolge_ **]**
+ **[Enum1.** _string_ **]**
   
- **NmidPropset** =  -_GUID_
+ **NmidPropset**  =   _guid_
   
- **NmidString** =  -_Zeichenfolge_
+ **NmidString**  =   _string_
   
- **NmidInteger** =  -_Ganzzahl_
+ **NmidInteger**  =   _integer_
   
- **EnumCount** =  -_Ganzzahl_
+ **EnumCount**  =   _integer_
   
- **Val.** _ganze Zahl_ **. ** =  _Zeichenfolge_
+ **Val.** _ganze Zahl_ **. Anzeigezeichenfolge**  =   
   
- **Val.** _ganze Zahl_ **. Index** =  _Ganzzahl_
+ **Val.** _ganze Zahl_ **. Index**  =   _ganzzahlig_
   
-Es folgt ein Beispiel für eine Eigenschaftendefinition für eine aufgezählte Eigenschaft mit dem Namen Fire Hazard mit möglichen Werten von niedrig, Mittel und hoch.
+Im Folgenden finden Sie eine Beispieleigenschaftsdefinition für eine aufgezählte Eigenschaft mit dem Namen Fire Hazard mit den möglichen Werten Low, Medium und High.
   
 ```cpp
 [Properties]
@@ -103,6 +103,6 @@ Val.3.Index = 3
 
 ```
 
- **[Enum1.** _Zeichenfolge_ **]** Abschnitte können von Anwendungen aus zwei Gründen verwendet werden: um die Filterung von Eigenschaften zu beschleunigen, indem Sie den Index anstelle der Zeichenfolge verwenden und nach einer anderen Reihenfolge als die alphanumerische Reihenfolge der Zeichenfolgenwerte sortieren. Beispielsweise kann die Sortierung basierend auf der Reihenfolge von niedrig-bis mittel-groß statt der Reihenfolge von High-Medium-Low durchgeführt werden. 
+ **[Enum1.** _string_ **]** -Abschnitte können von Anwendungen für zwei Zwecke verwendet werden: zum Beschleunigen der Filterung von Eigenschaften mithilfe des Indexes anstelle der Zeichenfolge und zum Sortieren nach einer anderen Reihenfolge als die alphanumerische Reihenfolge der Zeichenfolgenwerte. Die Sortierung kann beispielsweise auf der Basis der Reihenfolge "Low-Medium-High" statt "High-Medium-Low" durchgeführt werden. 
   
 

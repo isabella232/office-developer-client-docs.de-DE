@@ -25,26 +25,26 @@ Gibt an, ob das Dokument für ein Markup überprüft wird.
 |TRUE  <br/> |Dokument wird überprüft.  <br/> |
 |FALSE  <br/> |Dokument wird nicht überprüft (Standard).  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Wenn die Zelle AddMarkup auf WAHR festgelegt ist, fügt der Prüfer das Markup hinzu, und die Änderungen werden auf Markupüberlagerungsseiten angewendet, nicht auf die ursprünglichen Zeichenblätter. Wenn die Zelle AddMarkup auf FALSE festgelegt ist, ist die Markupverfolgung deaktiviert, und die Änderungen werden auf die ursprünglichen Zeichenblätter angewendet.
   
 > [!NOTE]
-> Sie können das Markup in Ihren Dokumenten mithilfe der GUARD-Funktion verhindern. Wenn die Zelle addMarkup die Formel = GUARD (FALSE) enthält, ist der Befehl **Markup verfolgen** deaktiviert. 
+> Sie können Markup für Ihre Dokumente mithilfe der GUARD-Funktion verhindern. Wenn die Zelle AddMarkup die Formel =GUARD(FALSE) enthält, ist der **Befehl Markup** nachverfolgen deaktiviert. 
   
 Diese Einstellung entspricht der Einstellung für den Befehl **Änderungen markieren** in der Gruppe **Markup** der Registerkarte **Überprüfen**. 
   
-Wenn Sie einen Verweis auf die Zelle addMarkup aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die AddMarkup-Zelle anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |"AddMarkup  <br/> |
+|Zellenname:  <br/> |AddMarkup  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle addMarkup aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die AddMarkup-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowDoc** <br/> |
 |Zellenindex:  <br/> |**visDocAddMarkup** <br/> |
    

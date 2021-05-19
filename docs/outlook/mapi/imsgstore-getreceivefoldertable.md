@@ -25,7 +25,7 @@ ms.locfileid: "33421354"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ermöglicht den Zugriff auf die Tabelle Receive Folder, eine Tabelle mit Informationen zu allen Empfangs Ordnern für den Nachrichtenspeicher.
+Bietet Zugriff auf die Tabelle "Empfangsordner", eine Tabelle, die Informationen zu allen Empfangsordnern für den Nachrichtenspeicher enthält.
   
 ```cpp
 HRESULT GetReceiveFolderTable(
@@ -37,39 +37,39 @@ HRESULT GetReceiveFolderTable(
 
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die den Tabellenzugriff steuert. Die folgenden Flags können festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die den Tabellenzugriff steuert. Die folgenden Kennzeichen können festgelegt werden:
     
 MAPI_DEFERRED_ERRORS 
   
-> Ermöglicht es **GetReceiveFolderTable** , erfolgreich zurückzugeben, möglicherweise bevor die Tabelle vollständig für den Aufrufer verfügbar ist. Wenn die Tabelle nicht vollständig verfügbar ist, kann durch einen nachfolgenden Tabellen Aufruf ein Fehler ausgelöst werden. 
+> Ermöglicht **getReceiveFolderTable,** erfolgreich zurückzukehren, möglicherweise bevor die Tabelle vollständig für den Aufrufer verfügbar ist. Wenn die Tabelle nicht vollständig verfügbar ist, kann ein nachfolgender Tabellenaufruf einen Fehler zur Folge haben. 
     
 MAPI_UNICODE 
   
-> Die zurückgegebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format.
+> Die zurückgegebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Zeichenfolgen im ANSI-Format.
     
  _lppTable_
   
-> Out Ein Zeiger auf einen Zeiger auf die Tabelle des Empfangs Ordners.
+> [out] Ein Zeiger auf einen Zeiger auf die Tabelle des Empfangsordners.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Tabelle des Empfangs Ordners wurde erfolgreich zurückgegeben.
+> Die Tabelle "Empfangsordner" wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMsgStore:: GetReceiveFolderTable** -Methode ermöglicht den Zugriff auf eine Tabelle, in der die Eigenschafteneinstellungen für alle Empfangsordner des Nachrichtenspeichers angezeigt werden. 
+Die **IMsgStore::GetReceiveFolderTable-Methode** bietet Zugriff auf eine Tabelle, in der die Eigenschafteneinstellungen für alle Empfangsordner des Nachrichtenspeichers angezeigt werden. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Eine Liste der erforderlichen Spalten in einer Tabelle mit einem Receive-Ordner finden Sie unter [Receive Folder Tables](receive-folder-tables.md). 
+Eine Liste der erforderlichen Spalten in einer Tabelle mit Empfangsordnern finden Sie unter [Receive Folder Tables](receive-folder-tables.md). 
   
-Implementieren Sie die Tabellen des Empfangs Ordners, um Einstellungs Einschränkungen für die **PR_RECORD_KEY** ([pidtagrecordkey (](pidtagrecordkey-canonical-property.md))-Eigenschaft zu unterstützen. Dies ermöglicht den einfachen Zugriff auf bestimmte Empfangsordner.
+Implementieren Sie Ihre Empfangsordnertabellen, um Einstellungseinschränkungen für die **Eigenschaft PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md)) zu unterstützen. Dies ermöglicht einen einfachen Zugriff auf bestimmte Empfangsordner.
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Das Festlegen des MAPI_UNICODE-Flags im _ulFlags_ -Parameter wirkt sich auf das Format der Spalten aus, die von den Methoden [IMAPITable:: QueryColumns](imapitable-querycolumns.md) und [IMAPITable:: QueryRows](imapitable-queryrows.md) zurückgegeben werden. Dieses Flag steuert auch die Eigenschaftentypen in der von der [IMAPITable:: QuerySortOrder](imapitable-querysortorder.md) -Methode zurückgegebenen Sortierreihenfolge. 
+Das Festlegen MAPI_UNICODE im  _ulFlags-Parameter_ wirkt sich auf das Format der Spalten aus, die von den [Methoden IMAPITable::QueryColumns](imapitable-querycolumns.md) und [IMAPITable::QueryRows](imapitable-queryrows.md) zurückgegeben werden. Dieses Flag steuert auch die Eigenschaftstypen in der Sortierreihenfolge, die von der [IMAPITable::QuerySortOrder-Methode zurückgegeben](imapitable-querysortorder.md) wird. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -77,7 +77,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MsgStoreDlg. cpp  <br/> |CMsgStoreDlg:: OnDisplayReceiveFolderTable  <br/> |MFCMAPI verwendet die **IMsgStore:: GetReceiveFolderTable** -Methode, um die anzuzeigende Ordnertabelle abzurufen.  <br/> |
+|MsgStoreDlg.cpp  <br/> |CMsgStoreDlg::OnDisplayReceiveFolderTable  <br/> |MFCMAPI verwendet die **IMsgStore::GetReceiveFolderTable-Methode,** um die Empfangsordnertabelle zur Anzeige zu erhalten.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

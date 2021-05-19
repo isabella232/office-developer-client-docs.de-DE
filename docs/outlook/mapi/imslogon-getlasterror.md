@@ -25,7 +25,7 @@ ms.locfileid: "33425876"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt eine [MAPIERROR](mapierror.md) -Struktur zurück, die Informationen zum letzten Fehler enthält, der für das Nachrichtenspeicherobjekt aufgetreten ist. 
+Gibt eine [MAPIERROR-Struktur](mapierror.md) zurück, die Informationen zum letzten Fehler enthält, der für das Nachrichtenspeicherobjekt aufgetreten ist. 
   
 ```cpp
 HRESULT GetLastError(
@@ -39,19 +39,19 @@ HRESULT GetLastError(
 
  _hResult_
   
-> in Ein HRESULT-Datentyp, der den im vorherigen Methodenaufruf für das Nachrichtenspeicherobjekt generierten Fehlerwert enthält.
+> [in] Ein HRESULT-Datentyp, der den Fehlerwert enthält, der im vorherigen Methodenaufruf für das Nachrichtenspeicherobjekt generiert wurde.
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die den Typ der zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die den Typ der zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
     
 MAPI_UNICODE 
   
-> Die Zeichenfolgen in der **MAPIERROR** -Struktur, die im _lppMAPIError_ -Parameter zurückgegeben werden, sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format. 
+> Die Zeichenfolgen in der **MAPIERROR-Struktur,** die im  _lppMAPIError-Parameter_ zurückgegeben wird, sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Zeichenfolgen im ANSI-Format. 
     
  _lppMAPIError_
   
-> Out Ein Zeiger auf einen Zeiger auf die zurückgegebene **MAPIERROR** -Struktur, die Versions-, Komponenten-und Kontextinformationen für den Fehler enthält. Der _lppMAPIError_ -Parameter kann auf NULL festgelegt werden, wenn keine **MAPIERROR** zurückgegeben werden soll. 
+> [out] Ein Zeiger auf einen Zeiger auf die zurückgegebene **MAPIERROR-Struktur,** die Versions-, Komponenten- und Kontextinformationen für den Fehler enthält. Der  _lppMAPIError-Parameter_ kann auf NULL festgelegt werden, wenn **kein MAPIERROR zurückgegeben** werden soll. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -61,15 +61,15 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> Entweder wurde das MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt Unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
+> Entweder wurde MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Verwenden Sie die **IMSLogon:: getlasterroraufzurufen** -Methode, um Informationen abzurufen, die dem Benutzer in einer Nachricht bezüglich des letzten von einem Methodenaufruf für das Nachrichtenspeicherobjekt zurückgegebenen Fehlers angezeigt werden sollen. 
+Verwenden Sie **die IMSLogon::GetLastError-Methode,** um Informationen abzurufen, die dem Benutzer in einer Meldung über den letzten Fehler angezeigt werden, der von einem Methodenaufruf für das Nachrichtenspeicherobjekt zurückgegeben wurde. 
   
-Um den gesamten von MAPI reservierten Arbeitsspeicher für die zurückgegebene **MAPIERROR** -Struktur freizugeben, müssen Clientanwendungen nur die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion aufrufen. 
+Um den von MAPI zugewiesenen Arbeitsspeicher für die zurückgegebene **MAPIERROR-Struktur** frei zu geben, müssen Clientanwendungen nur die [MAPIFreeBuffer-Funktion](mapifreebuffer.md) aufrufen. 
   
-Der Rückgabewert von **getlasterroraufzurufen** muss S_OK sein, damit eine Anwendung den **MAPIERROR**verwenden kann. Auch wenn der Rückgabewert S_OK ist, wird möglicherweise kein **MAPIERROR** zurückgegeben. Wenn die Implementierung nicht ermitteln kann, was der letzte Fehler war, oder wenn ein **MAPIERROR** für diesen Fehler nicht verfügbar ist, gibt **getlasterroraufzurufen** in _LPPMAPIERROR_ stattdessen einen Zeiger auf NULL zurück. 
+Der Rückgabewert von **GetLastError** muss S_OK werden, damit eine Anwendung **MAPIERROR verwenden kann.** Selbst wenn der Rückgabewert S_OK, wird möglicherweise kein **MAPIERROR** zurückgegeben. Wenn die Implementierung nicht ermitteln kann, was der letzte Fehler war, oder wenn für diesen Fehler **kein MAPIERROR** verfügbar ist, gibt **GetLastError** stattdessen einen Zeiger auf NULL in  _lppMAPIError_ zurück. 
   
 ## <a name="see-also"></a>Siehe auch
 

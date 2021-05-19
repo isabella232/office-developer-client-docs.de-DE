@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm60104
 localization_priority: Normal
 ms.assetid: e7a62a86-36bf-31d3-a33b-2444f72d60fe
-description: Gibt die Anzahl von Zeichen in einer Textzeichenfolge zurück.
+description: Gibt die Anzahl der Zeichen in einer Textzeichenfolge zurück.
 ms.openlocfilehash: 5d0dd56014e1e9965359814fa4de35efd5f385ac
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33427038"
 ---
 # <a name="len-function-visioshapesheet"></a>LEN-Funktion (VisioShapeSheet)
 
-Gibt die Anzahl von Zeichen in einer Textzeichenfolge zurück.
+Gibt die Anzahl der Zeichen in einer Textzeichenfolge zurück.
   
 ## <a name="syntax"></a>Syntax
 
-LEN (* * *Text* * *) 
+LEN (** *text* ** ) 
   
 ### <a name="parameters"></a>Parameter
 

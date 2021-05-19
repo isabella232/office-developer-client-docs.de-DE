@@ -18,28 +18,28 @@ ms.locfileid: "33426100"
 ---
 # <a name="intersecty-function"></a>INTERSECTY Function
 
-Gibt die *y* -Koordinate (im lokalen Koordinatensystem) des Punkts zurück, an dem sich zwei Linien überschneiden. 
+Gibt  die y-Koordinate (im lokalen Koordinatensystem) des Punkts zurück, an dem sich zwei Linien überschneiden. 
   
 ## <a name="syntax"></a>Syntax
 
-INTERSECTX-(* * *x1* * *, * * *Y1* * *, * * *angle1* * *, * * *x2* * *, * * *Y2* * *, * * *angle2* * *) 
+INTERSECTX(** *x1* **, ** *y1* **, ** *angle1* **, ** *x2* **, ** *y2* **, ** *angle2* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _x1_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die _x_-Koordinate eines Punkts in der ersten Leitung.  <br/> |
-| _Y1_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die _y_-Koordinate eines Punkts in der ersten Leitung.  <br/> |
+| _x1_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die x-Koordinate eines Punkts in der ersten Zeile.  <br/> |
+| _y1_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die y-Koordinate eines Punkts in der ersten Zeile.  <br/> |
 | _angle1_ <br/> |Erforderlich  <br/> |**Number** <br/> | Der Wert der Zelle Winkel für die erste Linie.  <br/> |
-| _x2_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die _x_-Koordinate eines Punkts in der zweiten Reihe.  <br/> |
-| _Y2_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die _y_-Koordinate eines Punkts in der zweiten Leitung.  <br/> |
+| _x2_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die x-Koordinate eines Punkts in der zweiten Zeile.  <br/> |
+| _y2_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die y-Koordinate eines Punkts in der zweiten Zeile.  <br/> |
 | _angle2_ <br/> |Erforderlich  <br/> |**Number** <br/> |Der Wert der Zelle Winkel für die zweite Linie.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
-Zahl
+Nummer
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Die einzelnen Linien werden als ein Punkt (*x,y*) und ein Winkel definiert. 
   
@@ -49,8 +49,8 @@ Weisen die Linien keinen Schnittpunkt auf, gibt die Funktion einen Nullteilungsf
   
 ## <a name="example"></a>Beispiel
 
-INTERSECTy (VertFL! PinX, VertFL! PinY, VertFL! Angle, Horzfl! PinX, Horzfl! PinY, Horzfl! Winkel 
+INTERSECTY(VertGuide! PinX,VertGuide! PinY,VertGuide! Angle, HorzGuide! PinX,HorzGuide! PinY,HorzGuide! Angle) 
   
-Gibt die *y* -Koordinate des Schnittpunkts von VertFL und horzfl in Seiteneinheiten zurück. 
+Gibt  die y-Koordinate des Schnittpunkts von VertGuide und HorzGuide in Seiteneinheiten zurück. 
   
 

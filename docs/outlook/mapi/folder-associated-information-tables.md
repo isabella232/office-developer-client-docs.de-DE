@@ -1,5 +1,5 @@
 ---
-title: Ordner zugeordnete Informationstabellen
+title: Folder-Associated Informationstabellen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,31 +15,31 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33426415"
 ---
-# <a name="folder-associated-information-tables"></a>Ordner zugeordnete Informationstabellen
+# <a name="folder-associated-information-tables"></a>Folder-Associated Informationstabellen
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPI definiert das MAPI_ASSOCIATED-Flag für verschiedene MAPI-Komponenten, die beim Umgang mit zugeordneten Informationstabellen verwendet werden sollen. Jeder Ordner in einem Nachrichtenspeicher sollte über eine zugehörige Inhaltstabelle sowie die Tabelle mit den Standardinhalten verfügen. Client Anwendungen speichern spezielle Nachrichten in der zugeordneten Inhaltstabelle eines Ordners, um Formulare und Ansichten aufzunehmen. Zur Unterstützung von Formularen und Ansichten muss der Nachrichtenspeicher Anbieter zugehörige Inhaltstabellen implementieren.
+MAPI definiert das MAPI_ASSOCIATED für verschiedene MAPI-Komponenten, die beim Umgang mit zugeordneten Informationstabellen verwendet werden. Jeder Ordner in einem Nachrichtenspeicher sollte eine zugeordnete Inhaltstabelle zusammen mit seiner Standardinhaltstabelle haben. Clientanwendungen speichern spezielle Nachrichten in der zugeordneten Inhaltstabelle eines Ordners, um Formulare und Ansichten zu speichern. Um Formulare und Ansichten zu unterstützen, muss ihr Nachrichtenspeicheranbieter verknüpfte Inhaltstabellen implementieren.
   
-Um zugeordnete Inhaltstabellen zu implementieren, müssen Sie Folgendes tun:
+Um zugeordnete Inhaltstabellen zu implementieren, muss Ihr Speicheranbieter die folgenden Schritte unternehmen:
   
-- Unterstützen Sie das MAPI_ASSOCIATED-Flag in der [IMAPIContainer::](imapicontainer-getcontentstable.md) getcontentable-Methode, sodass Clientanwendungen die Tabelle mit den zugeordneten Inhalten des Ordners anstelle der Standardinhalts Tabelle abrufen können. 
+- Unterstützen Sie MAPI_ASSOCIATED-Flag in der [IMAPIContainer::GetContentsTable-Methode,](imapicontainer-getcontentstable.md) damit Clientanwendungen die zugeordnete Inhaltstabelle des Ordners anstelle der Standardinhaltstabelle erhalten können. 
     
-- Unterstützen Sie das MAPI_ASSOCIATED-Flag in der [IMAPIFolder:: CreateMessage](imapifolder-createmessage.md) -Methode, sodass Clientanwendungen der Tabelle zugeordnete Inhaltsstoffe eines Ordners Nachrichten hinzufügen können. 
+- Unterstützen Sie MAPI_ASSOCIATED-Flag in der [IMAPIFolder::CreateMessage-Methode,](imapifolder-createmessage.md) damit Clientanwendungen Nachrichten zur zugeordneten Inhaltstabelle eines Ordners hinzufügen können. 
     
-- Legen Sie das MAPI_ACCESS_CREATE_ASSOCIATED-Bit in der **PR_ACCESS** ([pidtagaccess (](pidtagaccess-canonical-property.md))-Eigenschaft für Folder-Objekte fest.
+- Legen Sie MAPI_ACCESS_CREATE_ASSOCIATED -Bit in **der PR_ACCESS** ([PidTagAccess](pidtagaccess-canonical-property.md)) -Eigenschaft für Ordnerobjekte.
     
-- Unterstützen Sie das DEL_ASSOCIATED-Flag in der [IMAPIFolder:: EmptyFolder](imapifolder-emptyfolder.md) -Methode. 
+- Unterstützt das DEL_ASSOCIATED in der [IMAPIFolder::EmptyFolder-Methode.](imapifolder-emptyfolder.md) 
     
-- Legen Sie das MSGFLAG_ASSOCIATED-Bit in der **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))-Eigenschaft für Nachrichten in der Tabelle zugeordnete Inhalte fest.
+- Legen Sie MSGFLAG_ASSOCIATED bit in der **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) -Eigenschaft für Nachrichten in der zugeordneten Inhaltstabelle.
     
-- Verfügbar machen und reagieren auf die **PR_FOLDER_ASSOCIATED_CONTENTS** ([pidtagfolderassociatedcontents (](pidtagfolderassociatedcontents-canonical-property.md))-Eigenschaft in Ordnern.
+- Expose and respond to **the PR_FOLDER_ASSOCIATED_CONTENTS** ([PidTagFolderAssociatedContents](pidtagfolderassociatedcontents-canonical-property.md)) property on folders.
     
-- Verwalten der **PR_ASSOC_CONTENT_COUNT** ([pidtagassociatedcontentcount (](pidtagassociatedcontentcount-canonical-property.md))-Eigenschaft für Ordner.
+- Verwalten sie **PR_ASSOC_CONTENT_COUNT** ([PidTagAssociatedContentCount](pidtagassociatedcontentcount-canonical-property.md)) -Eigenschaft in Ordnern.
     
-Die **PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md))-Eigenschaft gibt kein Bit an, um anzugeben, ob der Nachrichtenspeicher Anbieter zugeordnete Inhaltstabellen unterstützt. Wenn Ihr Nachrichtenspeicher Anbieter diese nicht unterstützt, sollte MAPI_E_NO_SUPPORT zurückgegeben werden, wenn Clientanwendungen eine der obigen Methoden mit dem MAPI_ASSOCIATED-Flag aufrufen.
+Die Eigenschaft PR_STORE_SUPPORT_MASK **(** [PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md)) enthält kein Bit, um anzugeben, ob ihr Nachrichtenspeicheranbieter verknüpfte Inhaltstabellen unterstützt. Wenn der Nachrichtenspeicheranbieter sie nicht unterstützt, sollte MAPI_E_NO_SUPPORT, wenn Clientanwendungen eine der oben genannten Methoden mit dem MAPI_ASSOCIATED aufrufen.
   
 ## <a name="see-also"></a>Siehe auch
 

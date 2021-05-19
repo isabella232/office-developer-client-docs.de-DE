@@ -25,7 +25,7 @@ ms.locfileid: "33421214"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bricht die Zuständigkeit für das Senden von Benachrichtigungen ab, die zuvor mit einem Aufruf der [IMAPISupport:: subscribe](imapisupport-subscribe.md) -Methode eingerichtet wurden. 
+Bricht die Verantwortung für das Senden von Benachrichtigungen ab, die zuvor mit einem Aufruf der [IMAPISupport::Subscribe-Methode eingerichtet](imapisupport-subscribe.md) wurden. 
   
 ```cpp
 HRESULT Unsubscribe(
@@ -37,23 +37,23 @@ ULONG ulConnection
 
  _ulConnection_
   
-> in Die ungleich NULL-Verbindungsnummer, die die Benachrichtigungs Registrierung darstellt, die zuvor über **IMAPISupport:: subscribe**eingerichtet wurde.
+> [in] Die Verbindungsnummer ungleich Null, die die Benachrichtigungsregistrierung darstellt, die zuvor über **IMAPISupport::Subscribe eingerichtet wurde.**
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Benachrichtigungs Registrierung wurde abgebrochen.
+> Die Benachrichtigungsregistrierung wurde abgebrochen.
     
 MAPI_E_NOT_FOUND 
   
-> Die im _ulConnection_ -Parameter übergebene Verbindungsnummer ist nicht vorhanden. 
+> Die im  _ulConnection-Parameter übergebene_ Verbindungsnummer ist nicht vorhanden. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPISupport:: unsubscribe** -Methode wird für alle Support Objekte des Dienstanbieters implementiert. Dienstanbieter rufen das **Abonnement** ab, um eine zuvor von **subscribe**eingestellte Benachrichtigungs Registrierung abzubrechen. Kündigen Sie das **Abonnement** , indem Sie den Zeiger für die Advise-Senke freigeben, der im **subscribe** -Aufruf übergeben wurde. 
+Die **IMAPISupport::Unsubscribe-Methode** wird für alle Dienstanbieterunterstützungsobjekte implementiert. Dienstanbieter rufen **Unsubscribe auf,** um eine Benachrichtigungsregistrierung zu kündigen, die zuvor von **Subscribe eingerichtet wurde.** **Unsubscribe** bricht die Registrierung ab, indem der im Aufruf Abonnieren übergebene Hinweissenkenzeiger **loslassen** wird. 
   
-Im Allgemeinen wird die **IUnknown:: Release** -Methode der Advise-Senke **** während des unsubscribe-Aufrufs aufgerufen. Wenn jedoch ein anderer Thread die [IMAPIAdviseSink:: OnNotify](imapiadvisesink-onnotify.md) -Methode für das Advise-Senke-Objekt aufruft, wird der **Freigabe** Aufruf verzögert, bis **** die OnNotify-Methode zurückgegeben wird. 
+Im Allgemeinen wird die **IUnknown::Release-Methode** der Ratensenke während des **Unsubscribe-Aufrufs** aufgerufen. Wenn jedoch ein anderer Thread die [IMAPIAdviseSink::OnNotify-Methode](imapiadvisesink-onnotify.md) für das Advise Sink-Objekt aufruft, wird der **Release-Aufruf** verzögert, bis die **OnNotify-Methode** zurückgegeben wird. 
   
 ## <a name="see-also"></a>Siehe auch
 

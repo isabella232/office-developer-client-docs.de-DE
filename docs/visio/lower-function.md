@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251459
 localization_priority: Normal
 ms.assetid: 1d198ea6-49e0-e462-b2cf-b65fbb920b55
-description: Gibt eine in Kleinbuchstaben konvertierte Zeichenfolge zurück.
+description: Gibt eine Zeichenfolge zurück, die in Kleinbuchstaben konvertiert wurde.
 ms.openlocfilehash: 275e5cc40bed5c3ca7d6f40b0882f523334611c3
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33421242"
 ---
 # <a name="lower-function"></a>LOWER Function
 
-Gibt eine in Kleinbuchstaben konvertierte Zeichenfolge zurück.
+Gibt eine Zeichenfolge zurück, die in Kleinbuchstaben konvertiert wurde.
   
 ## <a name="syntax"></a>Syntax
 
-NIEDRIGER (* * *Ausdruck* * *) 
+LOWER(** *Expression* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -34,7 +34,7 @@ NIEDRIGER (* * *Ausdruck* * *)
 
 Zeichenfolge
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Die Konvertierung von Groß-/Kleinbuchstaben ist länderspezifisch und basiert auf den aktuellen Benutzereinstellungen. 
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagremotevalidateok (-Eigenschaft
+title: PidTagRemoteValidateOk (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,13 +19,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33424224"
 ---
-# <a name="pidtagremotevalidateok-canonical-property"></a>Kanonische Pidtagremotevalidateok (-Eigenschaft
+# <a name="pidtagremotevalidateok-canonical-property"></a>PidTagRemoteValidateOk (kanonische Eigenschaft)
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Diese Eigenschaft enthält TRUE, wenn die Remoteanzeige berechtigt ist, die [IMAPIStatus:: ValidateState](imapistatus-validatestate.md) -Methode aufzurufen. 
+Diese Eigenschaft enthält TRUE, wenn der Remoteanzeige die [IMAPIStatus::ValidateState-Methode aufrufen](imapistatus-validatestate.md) darf. 
   
 |||
 |:-----|:-----|
@@ -34,23 +34,23 @@ Diese Eigenschaft enthält TRUE, wenn die Remoteanzeige berechtigt ist, die [IMA
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI-Status  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Diese Eigenschaft wird in der Statustabelle angezeigt und bietet eine gewisse Kontrolle über die Transportleistung. Er kann als eine andere Möglichkeit angesehen werden, um den Remote Viewer in den Leerlauf zu lenken. Wenn Sie auf TRUE festgelegt ist, kann die Remoteanzeige **IMAPIStatus:: ValidateState** so oft wie gewünscht aufrufen. Der Wert FALSE gibt an, dass die Remoteanzeige keine weiteren Anrufe tätigen kann. 
+Diese Eigenschaft wird in der Statustabelle angezeigt und bietet eine gewisse Kontrolle über die Transportleistung. Es kann als eine weitere Möglichkeit betrachtet werden, den Remoteanzeiger in den Leerlauf zu leitet. Wenn sie auf TRUE festgelegt ist, kann die Remoteanzeige **IMAPIStatus::ValidateState** so oft wie gewünscht aufrufen. Der Wert FALSE gibt an, dass der Remoteanzeige keine weiteren Aufrufe mehr machen kann. 
   
-Der Transportanbieter legt diese Eigenschaft normalerweise dynamisch fest, indem der Wert auf FALSE festgelegt wird, um zusätzliche Aufrufe zu deaktivieren, wenn der Transportanbieter über ausreichend Verarbeitungsleistung verfügt. Wenn der Transportanbieter fertig ist, wird der Wert auf TRUE festgelegt, damit die Clientanwendung weitere **IMAPIStatus:: ValidateState** -Aufrufe durchführen kann. 
+Der Transportanbieter legt diese Eigenschaft in der Regel dynamisch fest, indem der Wert auf FALSE gesetzt wird, um zusätzliche Aufrufe zu deaktivieren, wenn der Transportanbieter über eine ausreichende Verarbeitungsmenge verfügt. Wenn der Transportanbieter fertig ist, wird der Wert auf TRUE festgelegt, damit die Clientanwendung weitere **IMAPIStatus::ValidateState-Aufrufe erstellen** kann. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
-### <a name="header-files"></a>Header Dateien
+### <a name="header-files"></a>Headerdateien
 
-Mapidefs. h
+Mapidefs.h
   
-> Stellt Datentypdefinitionen bereit.
+> Bietet Datentypdefinitionen.
     
-Mapitags. h
+Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -58,9 +58,9 @@ Mapitags. h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

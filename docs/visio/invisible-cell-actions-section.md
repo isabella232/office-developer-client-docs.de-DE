@@ -28,20 +28,20 @@ Zeigt an, ob die Aktion im Aktionstag- oder Kontextmenü sichtbar ist.
 |TRUE  <br/> |Die Aktion ist nicht im Menü sichtbar.  <br/> |
 |FALSE  <br/> |Die Aktion ist im Menü sichtbar (Standard).  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle inVisible aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle Invisible anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Aktionen. *Name* . Invisiblewobei-Aktionen.  *Name* ist der Name der Zeile Actions.  <br/> |
+|Zellenname:  <br/> |Aktionen. *Name*  . Invisiblewhere-Aktionen.  *Name*  ist der Name der Zeile Aktionen  <br/> |
    
-Wenn Sie einen Verweis auf die unsichtbare Zelle aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle Invisible nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
 |Abschnittsindex:  <br/> |**visSectionAction** <br/> |
-|Zeilenindex:  <br/> |**visRowAction** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+|Zeilenindex:  <br/> |**visRowAction**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
 |Zellenindex:  <br/> |**visActionInvisible** <br/> |
    
 

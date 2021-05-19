@@ -20,14 +20,14 @@ ms.locfileid: "33426828"
 
 Enthält eine Zeile für jedes Shape-Datenelement sowie Zellen für das Zuordnen von Daten zu Shapes.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Shape-Daten können mithilfe des Fensters **Shape-Daten** oder der Zellen im Abschnitt Shape-Daten definiert werden. 
+Shape Data kann mithilfe des Fensters **Shape Data** oder der Zellen im Abschnitt Shape Data definiert werden. 
   
 > [!NOTE]
-> In früheren Versionen von Visio wurde der Abschnitt **Shape Data** als **benutzerdefinierte Eigenschaften**bezeichnet. 
+> In früheren Versionen von Visio wurde der **Abschnitt Shape Data** als **Benutzerdefinierte Eigenschaften bezeichnet.** 
   
-- Im ShapeSheet-Fenster können Sie Shape-Daten im Abschnitt **Shape Data** definieren. Klicken Sie mit der rechten Maustaste in das ShapeSheet-Fenster, und klicken Sie auf **Abschnitt einfügen**, und aktivieren Sie dann das Kontrollkästchen **Shape-Daten** . Sie können beliebig viele Requisiten hinzufügen.  *benennen* Sie Zeilen, die Sie benötigen, und weisen Sie den Zeilen aussagekräftige Namen zu. 
+- Im ShapeSheet-Fenster können Sie Formdaten im Abschnitt **Shape-Daten** definieren. Klicken Sie mit der rechten Maustaste in das ShapeSheet-Fenster, **und** klicken Sie auf Abschnitt einfügen, und aktivieren Sie dann das Kontrollkästchen **Shape-Daten.** Sie können so viele Prop hinzufügen.  *name*  rows as you need, assign meaningful names to the rows, and set cell values. 
     
 - Im Zeichnungsfenster können Sie Shape-Daten im Fenster **Shape-Daten** definieren. Klicken Sie auf der Registerkarte **Ansicht** in der Gruppe **Einblenden/Ausblenden** auf **Aufgabenbereiche**, und klicken Sie dann auf **Shape-Daten**. Wenn Sie das Dialogfeld **Shape-Daten definieren** aufrufen möchten, klicken Sie mit der rechten Maustaste in das Fenster **Shape-Daten**, und klicken Sie dann auf **Shape-Daten definieren**.
     

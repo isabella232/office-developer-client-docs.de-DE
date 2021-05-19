@@ -37,7 +37,7 @@ HRESULT Poll(
 
  _lpulIncoming_
   
-> Out Ein Wert, der angibt, ob eingehende Nachrichten vorhanden sind. Ein Wert ungleich NULL gibt an, dass eingehende Nachrichten vorhanden sind.
+> [out] Ein Wert, der das Vorhandensein eingehender Nachrichten angibt. Ein Wert ungleich Null gibt an, dass eingehende Nachrichten vorhanden sind.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -45,9 +45,9 @@ S_OK
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Der MAPI-Spooler ruft in regelmäßigen Abständen die **IXPLogon::P oll** -Methode auf, wenn der Transportanbieter angibt, dass er für neue Nachrichten abgefragt werden muss, die der Anbieter ausführt, indem er das LOGON_SP_POLL-Flag an den Aufruf an das [IXPProvider übergibt:: TransportLogon](ixpprovider-transportlogon.md) -Methode am Anfang einer Sitzung. Wenn der Transportanbieter als Reaktion auf den **Umfrage** Aufruf angibt, dass eine oder mehrere eingehende Nachrichten zur Verarbeitung zur Verfügung stehen, ruft der MAPI-Spooler die [IXPLogon:: StartMessage](ixplogon-startmessage.md) -Methode auf, damit der Anbieter die erste eingehende Nachricht verarbeiten kann. Nachricht. Der Transportanbieter gibt eingehende Nachrichten an, indem der Wert im _lpulIncoming_ -Parameter auf einen Wert ungleich NULL festgelegt wird. 
+Der MAPI-Spooler ruft regelmäßig die **IXPLogon::P oll-Methode** auf, wenn der Transportanbieter angibt, dass er nach neuen Nachrichten abfragen muss, was der Anbieter durch Übergeben des LOGON_SP_POLL-Flags an den Aufruf der [IXPProvider::TransportLogon-Methode](ixpprovider-transportlogon.md) am Anfang einer Sitzung tut. Wenn der Transportanbieter als Antwort  auf den Abrufanruf angibt, dass eine oder mehrere eingehende Nachrichten für die Behandlung verfügbar sind, ruft der MAPI-Spooler die [IXPLogon::StartMessage-Methode](ixplogon-startmessage.md) auf, damit der Anbieter die erste eingehende Nachricht verarbeiten kann. Der Transportanbieter gibt eingehende Nachrichten an, indem der Wert im  _lpulIncoming-Parameter_ auf einen Wert ungleich Null festgelegt wird. 
   
 ## <a name="see-also"></a>Siehe auch
 

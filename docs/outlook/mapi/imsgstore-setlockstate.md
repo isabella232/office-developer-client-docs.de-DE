@@ -38,15 +38,15 @@ HRESULT SetLockState(
 
  _lpMessage_
   
-> in Ein Zeiger auf die Nachricht zum Sperren oder entsperren.
+> [in] Ein Zeiger auf die Nachricht, die gesperrt oder entsperrt werden soll.
     
  _ulLockState_
   
-> in Ein Wert, der angibt, ob die Nachricht gesperrt oder entsperrt werden soll. Einer der folgenden Werte ist gültig:
+> [in] Ein Wert, der angibt, ob die Nachricht gesperrt oder entsperrt werden soll. Einer der folgenden Werte ist gültig:
     
 MSG_LOCKED 
   
-> Die Nachricht sollte gesperrt sein. 
+> Die Nachricht sollte gesperrt werden. 
     
 MSG_UNLOCKED 
   
@@ -58,17 +58,17 @@ S_OK
   
 > Der Sperrstatus der Nachricht wurde erfolgreich festgelegt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Mit der **IMsgStore:: SetLockState** -Methode wird eine Nachricht gesperrt oder aufgehoben. **SetLockState** kann nur vom MAPI-Spooler aufgerufen werden, wenn die Nachricht gesendet wird. 
+Die **IMsgStore::SetLockState-Methode** sperrt oder sperrt eine Nachricht. **SetLockState** kann nur vom MAPI-Spooler aufgerufen werden, während die Nachricht gesendet wird. 
   
-Wenn der MAPI-Spooler **SetLockState** zum Sperren einer Nachricht aufruft, sperrt er in der Regel nur die älteste Nachricht (also die nächste Nachricht, die in der Warteschlange für den zu sendenden MAPI-Spooler steht). Wenn die älteste Nachricht in der Warteschlange auf einen vorübergehend nicht verfügbaren Transportanbieter wartet und die nächste Nachricht in der Warteschlange einen anderen Transportanbieter verwendet, kann der MAPI-Spooler mit der Verarbeitung der späteren Nachricht beginnen. Die Verarbeitung wird gestartet, indem diese Nachricht mithilfe von **SetLockState**gesperrt wird.
+Wenn der MAPI-Spooler **SetLockState** aufruft, um eine Nachricht zu sperren, sperrt er in der Regel nur die älteste Nachricht (d. h. die nächste Nachricht, die für den zu sendenden MAPI-Spooler in die Warteschlange eingereiht ist). Wenn die älteste Nachricht in der Warteschlange auf einen vorübergehend nicht verfügbaren Transportanbieter wartet und die nächste Nachricht in der Warteschlange einen anderen Transportanbieter verwendet, kann der MAPI-Spooler mit der Verarbeitung der späteren Nachricht beginnen. Die Verarbeitung beginnt, indem diese Nachricht mithilfe von **SetLockState gesperrt wird.**
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Nachdem der MAPI-Spooler **SetLockState** aufgerufen hat, wobei der Parameter _ulLockState_ auf MSG_LOCKED festgelegt ist, müssen Aufrufe an die [IMsgStore:: AbortSubmit](imsgstore-abortsubmit.md) -Methode zum Abbrechen der Nachrichtenübertragung fehlschlagen. 
+Nachdem der MAPI-Spooler **SetLockState** aufgerufen hat und der  _ulLockState-Parameter_ auf MSG_LOCKED festgelegt ist, müssen Aufrufe der [IMsgStore::AbortSubmit-Methode](imsgstore-abortsubmit.md) zum Abbrechen der Übertragung der Nachricht fehlschlagen. 
   
-Rufen Sie die [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) -Methode der Nachricht in der **SetLockState** -Implementierung auf, sodass alle Änderungen, die an der Nachricht vorgenommen wurden, bevor der **SetLockState** -Aufruf empfangen wurde, gespeichert werden. 
+Rufen Sie die [IMAPIProp::SaveChanges-Methode](imapiprop-savechanges.md) der Nachricht in Ihrer **SetLockState-Implementierung** auf, damit alle Änderungen, die an der Nachricht vorgenommen wurden, bevor der **SetLockState-Aufruf** empfangen wurde, gespeichert werden. 
   
 ## <a name="see-also"></a>Siehe auch
 

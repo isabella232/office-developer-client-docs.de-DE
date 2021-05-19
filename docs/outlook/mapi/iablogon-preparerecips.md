@@ -37,17 +37,17 @@ HRESULT PrepareRecips(
 
 _ulFlags_
   
-> in Eine Bitmaske von Flags, die den Texttyp in den zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die den Texttyp in den zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
     
-  - MAPI_CACHE_ONLY: Verwenden Sie nur das Offlineadressbuch, um die Namensauflösung durchzuführen. Sie können dieses Flag beispielsweise verwenden, um einer Clientanwendung die globale Adressliste (GAL) im Exchange-Cache-Modus zu öffnen und auf einen Eintrag in diesem Adressbuch aus dem Cache zuzugreifen, ohne Datenverkehr zwischen dem Client und dem Server zu erstellen. Dieses Flag wird nur vom Exchange-Adressbuchanbieter unterstützt.
+  - MAPI_CACHE_ONLY: Verwenden Sie nur das Offlineadressbuch, um die Namensauflösung durchzuführen. Sie können dieses Flag beispielsweise verwenden, um einer Clientanwendung zu ermöglichen, die globale Adressliste (GAL) im Exchange-Cache-Modus zu öffnen und aus dem Cache auf einen Eintrag in diesem Adressbuch zu zugreifen, ohne Datenverkehr zwischen dem Client und dem Server zu erstellen. Dieses Flag wird nur vom adressbuchanbieter Exchange unterstützt.
     
 _lpPropTagArray_
   
-> in Ein Zeiger auf eine [SPropTagArray](sproptagarray.md) -Struktur, die ein Array von Property-Tags enthält, die die Eigenschaften anzeigen, die eine Aktualisierung erfordern, sofern vorhanden. Der _lpPropTagArray_ -Parameter kann NULL sein. 
+> [in] Ein Zeiger auf eine [SPropTagArray-Struktur,](sproptagarray.md) die ein Array von Eigenschaftstags enthält, die die Eigenschaften angeben, die gegebenenfalls aktualisiert werden müssen. Der  _lpPropTagArray-Parameter_ kann NULL sein. 
     
 _lpRecipList_
   
-> in Ein Zeiger auf eine [ADRLIST](adrlist.md) -Struktur, die die Empfängerliste enthält. 
+> [in] Ein Zeiger auf eine [ADRLIST-Struktur,](adrlist.md) die die Empfängerliste enthält. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -57,56 +57,56 @@ S_OK
     
 MAPI_E_NOT_FOUND 
   
-> Mindestens einer der Empfänger im _lpRecipList_ -Parameter ist nicht vorhanden. 
+> Mindestens einer der Empfänger im  _lpRecipList-Parameter_ ist nicht vorhanden. 
     
 ## <a name="return-value"></a>Rückgabewert
 
-Ein Client ruft die MAPI- [IAddrBook::P reparerecips](iaddrbook-preparerecips.md) -Methode auf, um eine Gruppe von Eigenschaften für einen oder mehrere Empfänger zu ändern oder neu anzuordnen. Die Empfänger sind möglicherweise Teil der Empfängerliste einer ausgehenden Nachricht. MAPI übergibt diesen Aufruf an die **IABLogon::P reparerecips** -Methode eines Adressbuch Anbieters. 
+Ein Client ruft die MAPI [IAddrBook::P repareRecips-Methode](iaddrbook-preparerecips.md) auf, um einen Satz von Eigenschaften für einen oder mehrere Empfänger zu ändern oder neu anzuordnen. Die Empfänger sind möglicherweise Teil der Empfängerliste einer ausgehenden Nachricht. MAPI überträgt diesen Aufruf an die **IABLogon::P repareRecips-Methode eines Adressbuchanbieters.** 
   
-**IABLogon::P reparerecips** führt vier Hauptaufgaben aus: 
+**IABLogon::P repareRecips** führt vier Hauptaufgaben aus: 
   
-- Stellt sicher, dass alle Empfänger in der Adressliste, auf die durch den _lpRecipList_ -Parameter verwiesen wird, einen langfristigen Eintragsbezeichner aufweisen. 
+- Stellt sicher, dass alle Empfänger in der Adressliste, auf die der  _lpRecipList-Parameter_ verweist, über einen langfristigen Eintragsbezeichner verfügen. 
     
-- Stellt sicher, dass alle Empfänger über die Eigenschaften verfügen, die im Eigenschafts Wertarray angegeben sind, auf das durch den _lpPropTagArray_ -Parameter verwiesen wird. 
+- Stellt sicher, dass für alle Empfänger die Eigenschaften im Eigenschaftenwertarray angegeben sind, auf die der  _lpPropTagArray-Parameter_ verweist. 
     
-- Stellt sicher, dass die Eigenschaften aus dem Eigenschafts Wertarray vor allen anderen Eigenschaften angezeigt werden, die vor dem Aufruf vorhanden waren.
+- Stellt sicher, dass die Eigenschaften aus dem Eigenschaftswertarray vor allen anderen Eigenschaften angezeigt werden, die vor dem Aufruf vorhanden waren.
     
-- Stellt sicher, dass die Reihenfolge der Eigenschaften in der [](adrentry.md) **ADRLIST** -Struktur der einzelnen Empfänger mit dem Wert des Eigenschaftswerts übereinstimmt. 
+- Stellt sicher, dass die Reihenfolge der Eigenschaften in der [ADRENTRY-Struktur](adrentry.md) jedes Empfängers in der **ADRLIST-Struktur** mit der reihenfolge im Eigenschaftenwertarray identisch ist. 
     
-Die **** _lpRecipList_ -Parameter enthält eine **Miet** Struktur für jeden Empfänger. Jede **Miet** Struktur enthält ein Array von [SPropValue](spropvalue.md) -Strukturen, um die Eigenschaften des Empfängers zu beschreiben. Wenn **IABLogon::P reparerecips** zurückgibt, enthält das **SPropValue** -Strukturarray für jeden Empfänger die Eigenschaften aus dem _lpPropTagArray_ , gefolgt von den anderen Eigenschaften für den Empfänger. 
+Die **ADRENTRY-Struktur** im  _lpRecipList-Parameter_ enthält eine **ADRENTRY-Struktur** für jeden Empfänger. Jede **ADRENTRY-Struktur** enthält ein Array von [SPropValue-Strukturen,](spropvalue.md) um die Eigenschaften des Empfängers zu beschreiben. Wenn **IABLogon::P repareRecips** zurückgegeben wird, enthält das **Strukturarray SPropValue** für jeden Empfänger die Eigenschaften aus  _dem lpPropTagArray_ gefolgt von den anderen Eigenschaften für den Empfänger. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Die Implementierung von **IABLogon::P reparerecips** umfasst das Platzieren von Eigenschaften in einer bestimmten Reihenfolge, das Abrufen von Eigenschaftswerten und das Konvertieren von kurzfristigen Eintrags Bezeichnern in langfristige Eintragsbezeichner. Die Eigenschaften, die im _lpPropTagArray_ -Parameter angefordert werden, müssen sich am Anfang des Eigenschafts Wertarrays befinden, das der **Miet** Struktur jedes Empfängers im _lpRecipList_ -Parameter zugeordnet ist. Wenn keine Werte für diese Eigenschaften vorhanden sind, öffnen Sie den zugeordneten Messagingbenutzer oder die zugehörige Verteilerliste unter Verwendung der Eintrags-ID, und rufen Sie die fehlenden Eigenschaftswerte ab. 
+Die Implementierung von **IABLogon::P repareRecips** umfasst das Festlegen von Eigenschaften in einer bestimmten Reihenfolge, das Abrufen von Eigenschaftswerten und das Konvertieren kurzfristiger Eintragsbezeichner in langfristige Eintragsbezeichner. Die eigenschaften, die im  _lpPropTagArray-Parameter_ angefordert werden, müssen sich am Anfang des Eigenschaftenwertarrays befinden, das der **ADRENTRY-Struktur** jedes Empfängers im  _lpRecipList-Parameter_ zugeordnet ist. Wenn keine Werte für diese Eigenschaften vorhanden sind, öffnen Sie den zugeordneten Messagingbenutzer oder die zugeordnete Verteilerliste mithilfe des Eintragsbezeichners, und rufen Sie die fehlenden Eigenschaftswerte ab. 
   
-Ordnen Sie jede **SPropValue** -Struktur, die in _lpRecipList_ übergeben wird, separat zu, damit die Strukturen einzeln freigegeben werden können. Wenn Sie einen zusätzlichen Speicherplatz für eine **SPropValue** -Struktur zuweisen müssen, beispielsweise zum Speichern der Daten für eine String-Eigenschaft, verwenden Sie die [MAPIAllocateBuffer](mapiallocatebuffer.md) -Funktion, um zusätzlichen Speicherplatz für das Array der vollständigen Eigenschaftswerte zuzuweisen. Verwenden Sie die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion, um das ursprüngliche Eigenschaftswert Array freizugeben, und verwenden Sie dann die [MAPIAllocateMore](mapiallocatemore.md) -Funktion, um zusätzlichen erforderlichen Arbeitsspeicher zuzuweisen. 
+Weisen Sie jede in _lpRecipList_ **übergebene SPropValue-Struktur** separat zu, damit die Strukturen einzeln frei werden können. Wenn Sie zusätzlichen Speicherplatz für eine **SPropValue-Struktur** zuweisen müssen, z. B. zum Speichern der Daten für eine Zeichenfolgeneigenschaft, verwenden Sie die [MAPIAllocateBuffer-Funktion,](mapiallocatebuffer.md) um zusätzlichen Speicherplatz für das Array mit dem vollständigen Eigenschaftswert zuzuordnen. Verwenden Sie die [MAPIFreeBuffer-Funktion,](mapifreebuffer.md) um das ursprüngliche Eigenschaftswertarray frei zu machen, und verwenden Sie dann die [MAPIAllocateMore-Funktion,](mapiallocatemore.md) um den erforderlichen zusätzlichen Arbeitsspeicher zuzuordnen. 
   
-Gehen Sie folgendermaßen vor, um **IABLogon::P Reparerecips**zu implementieren:
+Verwenden Sie das folgende **Verfahren, um IABLogon::P repareRecips** zu implementieren:
   
-1. Suchen Sie nach Einträgen im _lpPropTagArray_ -Parameter. Wenn das Eigenschaftswert Array leer ist, gibt es keine Aufgaben. Zurückgeben eines Erfolgs Werts. 
+1. Suchen Sie nach Einträgen im _lpPropTagArray-Parameter._ Wenn das Eigenschaftswertarray leer ist, ist keine Arbeit zu tun. Gibt einen Erfolgswert zurück. 
     
-2. Verarbeiten Sie jeden Empfänger im _lpRecipList_ -Parameter. Für jeden Empfänger in der Liste gibt es ein Mitglied der **Miet** Struktur. Die folgenden Empfängertypen werden ignoriert: 
+2. Verarbeiten Sie jeden Empfänger im _lpRecipList-Parameter._ Es gibt ein **ADRENTRY-Strukturmitglied** für jeden Empfänger in der Liste. Ignorieren Sie die folgenden Empfängertypen: 
     
-   - Empfänger ohne Eintragsbezeichner im **rgPropVals** -Element ihrer **Miet** Struktur (also nicht aufgelöste Empfänger). 
+   - Empfänger ohne Eintrags-ID im **rgPropVals-Mitglied** ihrer **ADRENTRY-Struktur** (d. h. nicht aufgelöste Empfänger). 
     
-   - Empfänger mit einer Eintrags-ID, die nicht zu Ihrem Anbieter gehört. Diese Empfänger werden an einen anderen Adressbuchanbieter weitergeleitet.
+   - Empfänger mit einer Eintrags-ID, die nicht zu Ihrem Anbieter gehört. Diese Empfänger werden an einen anderen Adressbuchanbieter übergeben.
     
-3. Öffnen Sie den Empfänger, und rufen Sie die Eigenschaften ab, die bereits für den Empfänger festgelegt wurden.
+3. Öffnen Sie den Empfänger, und rufen Sie die Eigenschaften ab, die bereits für den Empfänger festgelegt sind.
     
-4. Zusammenführen des in der _lpRecipList_ angegebenen Eigenschafts Wertarrays mit dem Array von Eigenschaften, die von GetProps zurückgegeben werden. **** Wenn die gleiche Eigenschaft in beiden Eigenschaften Arrays auftritt, verwenden Sie den Wert aus _lpRecipList_.
+4. Merge the property value array specified in the  _lpRecipList_ with the array of properties returned from **GetProps**. Wenn die gleiche Eigenschaft in beiden Eigenschaftsarrays auftritt, verwenden Sie den Wert aus  _lpRecipList_.
     
-5. Wenn das _lpRecipList_ -Eigenschaftenwert Array groß genug ist, um alle erforderlichen Eigenschaften zu speichern, ersetzen Sie es durch das zusammengeführte Array. Wenn das _lpRecipList_ -Eigenschaftswert-Array nicht groß genug ist, ersetzen Sie es durch ein neu zugeordnetes Array. Stellen Sie sicher, dass das neue Array in jedem seiner **cValues** -Mitglieder über einen aktualisierten Wert verfügt. 
+5. Wenn das  _lpRecipList-Eigenschaftswertarray_ groß genug ist, um alle erforderlichen Eigenschaften zu speichern, ersetzen Sie es einfach durch das zusammengeführte Array. Wenn das  _lpRecipList-Eigenschaftswertarray_ nicht groß genug ist, ersetzen Sie es durch ein neu zugewiesenes Array. Stellen Sie sicher, dass das neue Array in jedem seiner **cValues-Elemente einen aktualisierten Wert** hat. 
     
-6. Wenn Sie eine oder mehrere der Eigenschaften im _lpPropTagArray_ -Parameter nicht erkennen, legen Sie den Eigenschaftentyp in der **Miet** Struktur des Empfängers auf PT_ERROR und den Eigenschaftswert entweder auf MAPI_E_NOT_FOUND oder auf einen anderen Wert fest, der mehr ein bestimmter Grund für die Nichtverfügbarkeit der Eigenschaft. Weitere Informationen zu PT_ERROR finden Sie unter [Property Types](property-types.md).
+6. Wenn Sie eine oder mehrere Eigenschaften im  _lpPropTagArray-Parameter_ nicht erkennen, legen Sie den Eigenschaftentyp in der **ADRENTRY-Struktur** des Empfängers auf PT_ERROR und den Eigenschaftswert entweder auf MAPI_E_NOT_FOUND oder auf einen anderen Wert fest, der einen genaueren Grund für die Nichtverfügbarkeit der Eigenschaft gibt. Weitere Informationen zu PT_ERROR finden Sie unter [Property Types](property-types.md).
     
 > [!NOTE]
-> Ordnen Sie die **ADRLIST** -Struktur, die an IABLogon übergeben wird, nie neu zu **::P reparerecips** , oder ändern Sie die Anzahl der Einträge. 
+> Ändern Sie niemals die **ADRLIST-Struktur,** die an **IABLogon::P repareRecips** übergeben wird, oder ändern Sie die Anzahl der Einträge. 
   
 ## <a name="see-also"></a>Siehe auch
 
 - [ADRLIST](adrlist.md)
 - [IMAPIProp::GetProps](imapiprop-getprops.md)
-- [Kanonische PidTagEntryId-Eigenschaft](pidtagentryid-canonical-property.md)
+- [PidTagEntryId (kanonische Eigenschaft)](pidtagentryid-canonical-property.md)
 - [SPropValue](spropvalue.md)
 - [IABLogon : IUnknown](iablogoniunknown.md)
 

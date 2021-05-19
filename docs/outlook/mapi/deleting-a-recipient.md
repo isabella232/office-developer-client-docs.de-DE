@@ -21,10 +21,10 @@ ms.locfileid: "33421046"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
- **So entfernen Sie Adressbucheinträge aus einem änderbaren Container**
+ **So entfernen Sie einen oder mehrere Adressbucheinträge aus einem veränderbaren Container**
   
-- Rufen Sie die [IABContainer::D eleteentries](iabcontainer-deleteentries.md) -Methode auf, und übergeben Sie ein Array von Eintrags Bezeichnern, die die zu löschenden Adressbucheinträge darstellen. **DeleteEntries** kann eine Warnung zurückgeben, MAPI_W_PARTIAL_COMPLETION, um anzugeben, dass ein oder mehrere Einträge nicht gelöscht werden konnten. Testen Sie diesen Rückgabewert mit dem **HR_FAILED** -Makro, und rufen Sie die [IMAPIProp:: getlasterroraufzurufen](imapiprop-getlasterror.md) -Methode des Containers auf, wenn weitere Informationen zum Problem erforderlich sind. 
+- Rufen Sie [die IABContainer::D eleteEntries-Methode](iabcontainer-deleteentries.md) auf, und übergeben Sie ein Array von Eintragsbezeichnern, die die zu löschenden Adressbucheinträge darstellen. **DeleteEntries** kann eine Warnung MAPI_W_PARTIAL_COMPLETION, die angibt, dass ein oder mehrere Einträge nicht gelöscht werden konnten. Testen Sie diesen Rückgabewert mit HR_FAILED **Makro,** und rufen Sie die [IMAPIProp::GetLastError-Methode](imapiprop-getlasterror.md) des Containers auf, wenn weitere Informationen zum Problem erforderlich sind. 
     
-Wenn Sie einen Zeiger auf die [Miet](adrentry.md) Struktur eines gelöschten Eintrags in Ihrem Cache speichern, können Sie die Eigenschaften weiterhin mithilfe des Eintrags Bezeichners abrufen. Der Grund ist, dass der Eintrag nur zum Löschen markiert ist. MAPI verwaltet eine Ebene des Zugriffs auf diese markierten Einträge nach Design. 
+Wenn Sie einen Zeiger auf die [ADRENTRY-Struktur](adrentry.md) eines gelöschten Eintrags in Ihrem Cache halten, können Sie eigenschaften weiterhin mithilfe des Eintragsbezeichners abrufen. Dies liegt daran, dass der Eintrag nur zum Löschen markiert ist. MAPI behält eine Ebene des Zugriffs auf diese markierten Einträge nach Entwurf bei. 
   
 

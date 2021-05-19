@@ -22,6 +22,6 @@ Mit der **DatensatzLöschen**-Aktion können Sie einen Datensatz löschen.
   
 ## <a name="setting"></a>Setting
 
-Die **DeleteRecord** -Aktion enthält keine Argumente, wenn Sie in einem Benutzeroberflächen-Makro verwendet wird. 
+Die **DeleteRecord-Aktion** enthält keine Argumente, wenn sie in einem Benutzeroberflächenmakro verwendet wird. 
   
 

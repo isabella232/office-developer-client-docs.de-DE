@@ -25,11 +25,11 @@ ms.locfileid: "33424924"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von [GUID](guid.md) -Strukturen, die zum Beschreiben einer Eigenschaft vom Typ PT_MV_CLSID verwendet werden. 
+Enthält ein Array von [GUID-Strukturen,](guid.md) die zum Beschreiben einer Eigenschaft vom Typ PT_MV_CLSID. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SGuidArray
@@ -40,19 +40,19 @@ typedef struct _SGuidArray
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cValues**
   
-> Die Anzahl der Werte im Array, auf die durch das **lpguid** -Element verwiesen wird. 
+> Anzahl der Werte im Array, auf die das **lpguid-Element** verweist. 
     
  **lpguid**
   
-> Zeiger auf ein Array von **GUID** -Strukturen, die die Klassen-ID-Werte enthält. 
+> Zeiger auf ein Array von **GUID-Strukturen,** das die Klassenbezeichnerwerte enthält. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Weitere Informationen zu PT_MV_CLSID finden Sie unter [Liste der Eigenschaftstypen](property-types.md).
+Weitere Informationen zu PT_MV_CLSID finden Sie unter [List of Property Types](property-types.md).
   
 ## <a name="see-also"></a>Siehe auch
 

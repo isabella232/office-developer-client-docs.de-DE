@@ -25,7 +25,7 @@ ms.locfileid: "33424616"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Legt einen bestimmten Container als persönliches Adressbuch (PAB) fest.
+Bestimmt einen bestimmten Container als persönliches Adressbuch (PAB).
   
 ```cpp
 HRESULT SetPAB(
@@ -38,11 +38,11 @@ HRESULT SetPAB(
 
  _cbEntryID_
   
-> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID_ -Parameter verwiesen wird. 
+> [in] Die Byteanzahl im Eintragsbezeichner, auf den der  _lpEntryID-Parameter_ verweist. 
     
  _lpEntryID_
   
-> in Ein Zeiger auf die Eintrags-ID des Containers, der als PAB festgelegt werden soll. Der _lpEntryID_ -Parameter darf nicht NULL sein. 
+> [in] Ein Zeiger auf die Eintrags-ID des Containers, der als PAB festgelegt werden soll. Der  _lpEntryID-Parameter_ darf nicht NULL sein. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -50,13 +50,13 @@ S_OK
   
 > Der angegebene Container wurde als PAB eingerichtet.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Clients und Dienstanbieter rufen die **SetPAB** -Methode auf, um einen bestimmten Container als PAB festzulegen. Das PAB ist ein Container, der aus Einträgen aus anderen Containern sowie neuen Einträgen besteht. 
+Clients und Dienstanbieter rufen die **SetPAB-Methode** auf, um einen bestimmten Container als PAB zu bestimmen. Das PAB ist ein Container, der aus Einträgen besteht, die aus anderen Containern kopiert wurden, sowie aus neuen Einträgen. 
   
-Ein Aufruf von **SetPAB** richtet einen Container als PAB ein, bis dieser Container nicht verfügbar gemacht wird oder ein neuer Container durch einen nachfolgenden Aufruf von **SetPAB**zum PAB wird. 
+Ein Aufruf von **SetPAB** richtet einen Container als PAB ein, bis dieser Container nicht verfügbar gemacht wird oder ein neuer Container durch einen nachfolgenden Aufruf von **SetPAB** zum PAB wird. 
   
-Clients und Anbieter müssen nicht die [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) -Methode aufrufen, um das PAB permanent zu ändern. 
+Clients und Anbieter müssen die [IMAPIProp::SaveChanges-Methode](imapiprop-savechanges.md) nicht aufrufen, um die PAB-Änderung dauerhaft zu machen. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -64,7 +64,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|AbContDlg. cpp  <br/> |CAbContDlg:: OnSetPAB  <br/> |MFCMAPI verwendet die **SetPAB** -Methode, um den angegebenen Container als PAB zu verwenden.  <br/> |
+|AbContDlg.cpp  <br/> |CAbContDlg::OnSetPAB  <br/> |MFCMAPI verwendet die **SetPAB-Methode,** um den angegebenen Container zum PAB zu machen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -74,7 +74,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 [IAddrBook::GetSearchPath](iaddrbook-getsearchpath.md)
   
-[Kanonische Pidtagcontainerflags (-Eigenschaft](pidtagcontainerflags-canonical-property.md)
+[PidTagContainerFlags (kanonische Eigenschaft)](pidtagcontainerflags-canonical-property.md)
   
 [IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 

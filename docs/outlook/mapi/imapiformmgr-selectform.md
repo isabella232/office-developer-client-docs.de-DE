@@ -25,7 +25,7 @@ ms.locfileid: "33423580"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Zeigt ein Dialogfeld an, in dem der Benutzer ein Formular auswählen und ein Formular Informationsobjekt zurückgibt, das dieses Formular beschreibt.
+Zeigt ein Dialogfeld an, in dem der Benutzer ein Formular auswählen kann, und gibt ein Formularinformationsobjekt zurück, das dieses Formular beschreibt.
   
 ```cpp
 HRESULT SelectForm(
@@ -41,27 +41,27 @@ HRESULT SelectForm(
 
  _ulUIParam_
   
-> in Ein Handle für das übergeordnete Fenster des angezeigten Dialogfelds. 
+> [in] Ein Handle zum übergeordneten Fenster des angezeigten Dialogfelds. 
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die den Typ der übergebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die den Typ der übergebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
     
 MAPI_UNICODE 
   
-> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format.
+> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Zeichenfolgen im ANSI-Format.
     
  _pszTitle_
   
-> in Ein Zeiger auf eine Zeichenfolge, die die Beschriftung des Dialogfelds enthält. Wenn der _pszTitle_ -Parameter NULL ist, stellt der Formularbibliothek Anbieter eine Standardbeschriftung bereit. 
+> [in] Ein Zeiger auf eine Zeichenfolge, die die Beschriftung des Dialogfelds enthält. Wenn der  _pszTitle-Parameter_ NULL ist, stellt der Formularbibliotheksanbieter eine Standardbeschriftung zur Verfügung. 
     
  _pfld_
   
-> in Ein Zeiger auf den Ordner, aus dem das Formular ausgewählt werden soll. Wenn der _pfld_ -Parameter NULL ist, kann das Formular aus dem Container für lokale, persönliche oder organisatorische Formulare ausgewählt werden. 
+> [in] Ein Zeiger auf den Ordner, aus dem das Formular ausgewählt werden soll. Wenn der  _pfld-Parameter_ NULL ist, kann das Formular aus dem lokalen, persönlichen oder Organisationsformularcontainer ausgewählt werden. 
     
  _ppfrminfoReturned_
   
-> Out Ein Zeiger auf einen Zeiger auf das zurückgegebene Formular Informationsobjekt.
+> [out] Ein Zeiger auf einen Zeiger auf das zurückgegebene Formularinformationsobjekt.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -71,19 +71,19 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> Entweder wurde das MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt Unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
+> Entweder wurde MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
     
 MAPI_E_USER_CANCEL 
   
-> Der Benutzer hat den Vorgang abgebrochen, indem er in der Regel auf die Schaltfläche **Abbrechen** im Dialogfeld geklickt hat. 
+> Der Benutzer hat den Vorgang abgebrochen, in der Regel durch Klicken auf die **Schaltfläche** Abbrechen im Dialogfeld. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Formular Betrachter rufen die **IMAPIFormMgr:: SelectForm** -Methode auf, um zuerst ein Dialogfeld darzustellen, das es dem Benutzer ermöglicht, ein Formular auszuwählen und dann ein Formular Informationsobjekt abzurufen, das das ausgewählte Formular beschreibt. Das Dialogfeld schränkt den Benutzer ein, um ein einzelnes Formular auszuwählen. 
+Formularbetrachter rufen die **IMAPIFormMgr::SelectForm-Methode** auf, um zunächst ein Dialogfeld anzuzeigen, in dem der Benutzer ein Formular auswählen und dann ein Formularinformationsobjekt abrufen kann, das das ausgewählte Formular beschreibt. Das Dialogfeld schränkt den Benutzer ein, ein einzelnes Formular auszuwählen. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Im Dialogfeld **SelectForm** werden nur Formulare angezeigt, die nicht ausgeblendet sind (also Formulare, deren ausgeblendete Eigenschaften deaktiviert sind). Wenn ein Formular Betrachter das MAPI_UNICODE-Flag im _ulFlags_ -Parameter übergibt, sind alle Zeichenfolgen Unicode. Formularbibliothek Anbieter, die Unicode-Zeichenfolgen nicht unterstützen, sollten MAPI_E_BAD_CHARWIDTH zurückgeben, wenn MAPI_UNICODE übergeben wird. 
+Im **Dialogfeld SelectForm** werden nur Formulare angezeigt, die nicht ausgeblendet sind (d. h. Formulare, deren ausgeblendete Eigenschaften klar sind). Wenn ein Formularanzeiger das MAPI_UNICODE im  _ulFlags-Parameter_ übergibt, sind alle Zeichenfolgen Unicode. Formularbibliotheksanbieter, die keine Unicode-Zeichenfolgen unterstützen, sollten MAPI_E_BAD_CHARWIDTH zurückgeben, MAPI_UNICODE übergeben wird. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -91,7 +91,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|FolderDlg. cpp  <br/> |CFolderDlg:: OnSelectForm  <br/> |MFCMAPI verwendet die **IMAPIFormMgr:: SelectForm** -Methode, um ein Formular auszuwählen und Informationen zum Formular an ein oder mehrere Protokolle zu senden.  <br/> |
+|FolderDlg.cpp  <br/> |CFolderDlg::OnSelectForm  <br/> |MFCMAPI verwendet die **IMAPIFormMgr::SelectForm-Methode,** um ein Formular auszuwählen und Informationen über das Formular an ein oder mehrere Protokolle zu senden.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

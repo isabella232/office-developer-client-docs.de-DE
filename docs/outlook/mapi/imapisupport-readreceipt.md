@@ -25,7 +25,7 @@ ms.locfileid: "33425323"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Generiert einen Lese-oder nicht gelesenen Bericht für eine Nachricht.
+Generiert einen lese- oder nicht gelesenen Bericht für eine Nachricht.
   
 ```cpp
 HRESULT ReadReceipt(
@@ -39,19 +39,19 @@ LPMESSAGE FAR * lppEmptyMessage
 
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die die Generierung des Lese-oder nonread-Berichts steuert. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie der Lese- oder Ungelesenbericht generiert wird. Das folgende Flag kann festgelegt werden:
     
 MAPI_NON_READ 
   
-> Ein ungelesener Bericht wird generiert. Wenn MAPI_NON_READ nicht festgelegt ist, wird ein Lesebericht generiert.
+> Ein nicht gelesener Bericht wird generiert. Wenn MAPI_NON_READ nicht festgelegt ist, wird ein Lesebericht generiert.
     
  _lpReadMessage_
   
-> in Ein Zeiger auf die Nachricht, über die der Bericht generiert werden soll.
+> [in] Ein Zeiger auf die Nachricht, über die der Bericht generiert werden soll.
     
  _lppEmptyMessage_
   
-> [in, out] Bei der Eingabe zeigt _lppEmptyMessage_ auf einen Zeiger auf eine leere Nachricht. Bei der Ausgabe zeigt _lppEmptyMessage_ auf einen Zeiger auf die Bericht Meldung. 
+> [in, out] Bei der Eingabe  _zeigt lppEmptyMessage_ auf einen Zeiger auf eine leere Nachricht. Bei der Ausgabe  _zeigt lppEmptyMessage_ auf einen Zeiger auf die Berichtsnachricht. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -59,13 +59,13 @@ S_OK
   
 > Der Bericht wurde erfolgreich generiert.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPISupport:: ReadReceipt** -Methode wird nur für Support Objekte des Nachrichtenspeicher Anbieters implementiert. Nachrichtenspeicher Anbieter rufen **ReadReceipt** auf, um MAPI anzuweisen, einen Lese-oder nicht gelesenen Bericht für die Nachricht zu generieren, auf die durch den _lpReadMessage_ -Parameter verwiesen wird. 
+Die **IMAPISupport::ReadReceipt-Methode** wird nur für Unterstützungsobjekte des Nachrichtenspeicheranbieters implementiert. Nachrichtenspeicheranbieter rufen **ReadReceipt** auf, um MAPI anweisen, einen Lese- oder Ungelesenbericht für die Nachricht zu generieren, auf die der  _lpReadMessage-Parameter_ verweist. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Rufen Sie **ReadReceipt** auf, wenn die **PR_READ_RECEIPT_REQUESTED** ([pidtagreadreceiptrequested (](pidtagreadreceiptrequested-canonical-property.md))-Eigenschaft festgelegt ist und eine der folgenden Bedingungen zutrifft:
+Rufen **Sie ReadReceipt** **auf,** wenn die PR_READ_RECEIPT_REQUESTED ([PidTagReadReceiptRequested](pidtagreadreceiptrequested-canonical-property.md)) -Eigenschaft festgelegt ist und eine der folgenden Bedingungen true ist:
   
 - Die Nachricht wurde gelesen.
     
@@ -73,17 +73,17 @@ Rufen Sie **ReadReceipt** auf, wenn die **PR_READ_RECEIPT_REQUESTED** ([pidtagre
     
 - Die Nachricht wurde kopiert.
     
-- Die [IMessage:: SetReadFlag](imessage-setreadflag.md) -Methode der Nachricht wurde aufgerufen. 
+- Die [IMessage::SetReadFlag-Methode](imessage-setreadflag.md) der Nachricht wurde aufgerufen. 
     
-Rufen Sie **ReadReceipt** nicht auf, wenn eine Nachricht gelöscht wird. 
+Rufen Sie **ReadReceipt nicht auf,** wenn eine Nachricht gelöscht wird. 
   
-Ein Lese-oder ungelesener Bericht sollte nur einmal für eine Nachricht gesendet werden. Verfolgen Sie den Lesestatus einer Nachricht, und senden Sie nicht mehrere Berichte für eine einzelne Nachricht.
+Ein gelesener oder nicht gelesener Bericht sollte nur einmal für eine Nachricht gesendet werden. Verfolgen Sie den Lesestatus einer Nachricht, und senden Sie nicht mehrere Berichte für eine einzelne Nachricht.
   
-Wenn der _lppEmptyMessage_ -Parameter auf eine gültige Bericht Meldung zeigt, wenn MAPI von **ReadReceipt**zurückgegeben wird, rufen Sie die [IMessage:: SubmitMessage](imessage-submitmessage.md) -Methode auf, um die Nachricht zu senden, und lassen Sie den Zeiger dann durch Aufrufen des **IUnknown: s: Release **-Methode. 
+Wenn der  _lppEmptyMessage-Parameter_ auf eine gültige Berichtsnachricht verweist, wenn MAPI von **ReadReceipt** zurückgibt, rufen Sie die [IMessage::SubmitMessage-Methode](imessage-submitmessage.md) auf, um die Nachricht zu senden, und geben Sie dann den Zeiger frei, indem Sie die **IUnknown:s:Release-Methode** aufrufen. 
   
-Wenn **ReadReceipt** fehlschlägt, sollte die Nachricht ohne übermittelt werden. Wenn Sie den Lesestatus der Nachricht speichern, können Sie versuchen, den Lese-oder nonread-Bericht zu einem späteren Zeitpunkt zu generieren. 
+Wenn **ReadReceipt fehlschlägt,** sollte die Nachricht ohne Übermittelte freigegeben werden. Wenn Sie den Lesestatus der Nachricht speichern, können Sie zu einem späteren Zeitpunkt versuchen, den Lese- oder Ungelesenbericht zu generieren. 
   
-Sie können Lese-und nonread-Berichte, die von Speichern in Ihren Ordnern generiert wurden, entweder ausblenden oder anzeigen. Durch das Speichern von Lese-und nonread-Berichten in ausgeblendeten Ordnern können Sie eine engere Sicherheit implementieren.
+Sie können lese- und nicht gelesene Berichte, die von Speichern in Ihren Ordnern generiert werden, ausblenden oder anzeigen. Durch das Speichern von Lese- und Ungelesenberichten in ausgeblendeten Ordnern können Sie eine strengere Sicherheit implementieren.
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -93,7 +93,7 @@ Sie können Lese-und nonread-Berichte, die von Speichern in Ihren Ordnern generi
   
 [IMessage::SubmitMessage](imessage-submitmessage.md)
   
-[Kanonische Pidtagreadreceiptrequested (-Eigenschaft](pidtagreadreceiptrequested-canonical-property.md)
+[PidTagReadReceiptRequested (kanonische Eigenschaft)](pidtagreadreceiptrequested-canonical-property.md)
   
 [IMAPISupport: IUnknown](imapisupportiunknown.md)
 

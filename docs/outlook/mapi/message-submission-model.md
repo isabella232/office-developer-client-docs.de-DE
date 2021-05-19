@@ -1,5 +1,5 @@
 ---
-title: Nachrichten Übermittlungs Modell
+title: Nachrichtenübermittlungsmodell
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,24 +15,24 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33421123"
 ---
-# <a name="message-submission-model"></a>Nachrichten Übermittlungs Modell
+# <a name="message-submission-model"></a>Nachrichtenübermittlungsmodell
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die Nachrichtenübermittlung erfolgt über eine Reihe von Anrufen vom MAPI-Spooler an den Transportanbieter. Die Anrufe werden wie folgt sequenziert:
+Die Nachrichtenübermittlung erfolgt durch eine Reihe von Anrufen vom MAPI-Spooler an den Transportanbieter. Die Aufrufe werden wie folgt sequenziert:
   
-1. Der MAPI-Spooler ruft [IXPLogon:: SubmitMessage](ixplogon-submitmessage.md)auf und übergibt eine [IMessage: IMAPIProp](imessageimapiprop.md) -Instanz, um den Prozess zu beginnen. 
+1. Der MAPI-Spooler ruft [IXPLogon::SubmitMessage](ixplogon-submitmessage.md)auf und übertrumpft eine [IMessage : IMAPIProp-Instanz,](imessageimapiprop.md) um den Prozess zu beginnen. 
     
-2. Der Transportanbieter platziert dann einen Verweiswert – einen Transport definierten Bezeichner, der in zukünftigen verweisen auf diese Nachricht verwendet wird – an dem Speicherort, auf den in **SubmitMessage**verwiesen wird.
+2. Der Transportanbieter platziert dann einen Referenzwert – einen transportdefinierten Bezeichner, der in zukünftigen Verweisen auf diese Nachricht verwendet wird – an dem Speicherort, auf den in **SubmitMessage verwiesen wird.**
     
-3. Der Transportanbieter greift mithilfe der übergebenen **IMessage** -Instanz auf die Nachrichtendaten zu. Für jeden Empfänger im übergebenen **IMessage** , für den er die Verantwortung übernimmt, legt der Transportanbieter die **PR_RESPONSIBILITY** ([pidtagresponsibility (](pidtagresponsibility-canonical-property.md))-Eigenschaft fest und gibt dann zurück.
+3. Der Transportanbieter zugrifft mithilfe der übergebenen **IMessage-Instanz** auf die Nachrichtendaten. Für jeden Empfänger in der übergebenen **IMessage,** für die er die Verantwortung übernimmt, legt der Transportanbieter die **eigenschaft PR_RESPONSIBILITY** ([PidTagResponsibility](pidtagresponsibility-canonical-property.md)) fest und gibt dann zurück.
     
-4. Der Transportanbieter kann die [IMAPISupport:: StatusRecips](imapisupport-statusrecips.md) -Methode verwenden, um anzugeben, ob Empfänger erkannt werden, an die nicht übermittelt werden kann, oder einen Standard Zustellungsbericht zu erstellen. **StatusRecips** ist eine Bequemlichkeit für Transportanbieter, die festgestellt haben, dass einige der Empfänger nicht zugestellt werden können oder die Zustellungsinformationen aus dem zugrunde liegenden Messagingsystem erhalten haben, das der Benutzer oder die Clientanwendung möglicherweise hilfreich. 
+4. Der Transportanbieter kann die [IMAPISupport::StatusRecips-Methode](imapisupport-statusrecips.md) verwenden, um anzugeben, ob Empfänger erkannt werden, die nicht zugestellt werden können, oder um einen Standardzustellungsbericht zu erstellen. **StatusRecips** ist ein Komfort für Transportanbieter, die festgestellt haben, dass einige empfänger nicht zugestellt werden können oder Übermittlungsinformationen von ihrem zugrunde liegenden Messagingsystem erhalten haben, die der Benutzer oder die Clientanwendung möglicherweise nützlich finden. 
     
-5. Der Aufruf des MAPI-Spoolers an [IXPLogon:: EndMessage](ixplogon-endmessage.md) ist die abschließende Verantwortlichkeit für die Nachricht vom MAPI-Spooler an den Transportanbieter. 
+5. Der Aufruf des MAPI-Spoolers bei [IXPLogon::EndMessage](ixplogon-endmessage.md) ist die endgültige Übergabe der Verantwortung für die Nachricht vom MAPI-Spooler an den Transportanbieter. 
     
-6. Der MAPI-Spooler kann [IXPLogon:: TransportNotify](ixplogon-transportnotify.md) verwenden, um die Nachrichtenverarbeitung während der **SubmitMessage** -oder **EndMessage** -Aufrufe abzubrechen. 
+6. Der MAPI-Spooler kann [IXPLogon::TransportNotify](ixplogon-transportnotify.md) verwenden, um die Nachrichtenverarbeitung während der **SubmitMessage-** oder **EndMessage-Aufrufe abbricht.** 
     
 

@@ -29,10 +29,10 @@ Nimmt Änderungen an einem Nachrichtendienst in einem Profil vor.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |MapiX. h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Nachrichtendienst-Verwaltungsobjekte  <br/> |
+|Headerdatei  <br/> |MapiX.h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Nachrichtendienstverwaltungsobjekte  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMsgServiceAdmin  <br/> |
 |Zeigertyp:  <br/> |LPSERVICEADMIN  <br/> |
    
@@ -40,22 +40,22 @@ Nimmt Änderungen an einem Nachrichtendienst in einem Profil vor.
 
 |||
 |:-----|:-----|
-|[Getlasterroraufzurufen](imsgserviceadmin-getlasterror.md) <br/> |Gibt eine [MAPIERROR](mapierror.md) -Struktur zurück, die Informationen zum letzten Fehler enthält, der von einem Nachrichtendienst-Verwaltungsobjekt generiert wurde.  <br/> |
-|[GetMsgServiceTable](imsgserviceadmin-getmsgservicetable.md) <br/> |Ermöglicht den Zugriff auf die Nachrichtendienst Tabelle, eine Liste der Nachrichtendienste im Profil.  <br/> |
-|[CreateMsgService](imsgserviceadmin-createmsgservice.md) <br/> |Fügt dem aktuellen Profil einen Nachrichtendienst hinzu.  <br/> <br/>**Hinweis**: Diese Methode ist veraltet. Verwenden Sie stattdessen [IMsgServiceAdmin2:: CreateMsgServiceEx](imsgserviceadmin2-createmsgserviceex.md) .           |
+|[GetLastError](imsgserviceadmin-getlasterror.md) <br/> |Gibt eine [MAPIERROR-Struktur](mapierror.md) zurück, die Informationen zum letzten Fehler enthält, der von einem Nachrichtendienstverwaltungsobjekt generiert wurde.  <br/> |
+|[GetMsgServiceTable](imsgserviceadmin-getmsgservicetable.md) <br/> |Bietet Zugriff auf die Nachrichtendiensttabelle, eine Liste der Nachrichtendienste im Profil.  <br/> |
+|[CreateMsgService](imsgserviceadmin-createmsgservice.md) <br/> |Fügt dem aktuellen Profil einen Nachrichtendienst hinzu.  <br/> <br/>**HINWEIS**: Diese Methode ist veraltet. Verwenden [Sie stattdessen IMsgServiceAdmin2::CreateMsgServiceEx.](imsgserviceadmin2-createmsgserviceex.md)           |
 |[DeleteMsgService](imsgserviceadmin-deletemsgservice.md) <br/> |Löscht einen Nachrichtendienst aus einem Profil.  <br/> |
 |[CopyMsgService](imsgserviceadmin-copymsgservice.md) <br/> |Kopiert einen Nachrichtendienst in ein Profil.  <br/> |
 |[RenameMsgService](imsgserviceadmin-renamemsgservice.md) <br/> |Veraltet. Weist einem Nachrichtendienst einen neuen Namen zu.  <br/> |
 |[ConfigureMsgService](imsgserviceadmin-configuremsgservice.md) <br/> |Konfiguriert einen Nachrichtendienst neu.  <br/> |
-|[OpenProfileSection](imsgserviceadmin-openprofilesection.md) <br/> |Öffnet einen Abschnitt des aktuellen Profils und gibt einen [IProfSect](iprofsectimapiprop.md) -Zeiger für den weiteren Zugriff zurück.  <br/> |
-|[MsgServiceTransportOrder](imsgserviceadmin-msgservicetransportorder.md) <br/> |Legt die Reihenfolge fest, in der Transportanbieter aufgerufen werden, um eine Nachricht zu übermitteln.  <br/> |
-|[AdminProviders](imsgserviceadmin-adminproviders.md) <br/> |Gibt einen Zeiger zurück, der Zugriff auf ein Anbieter Verwaltungsobjekt bereitstellt.  <br/> |
-|[SetPrimaryIdentity](imsgserviceadmin-setprimaryidentity.md) <br/> |Legt fest, dass ein Nachrichtendienst der Lieferant der primären Identität für das Profil ist.  <br/> |
-|[GetProviderable](imsgserviceadmin-getprovidertable.md) <br/> |Ermöglicht den Zugriff auf die Anbieter Tabelle, eine Liste der Dienstanbieter im Profil.  <br/> |
+|[OpenProfileSection](imsgserviceadmin-openprofilesection.md) <br/> |Öffnet einen Abschnitt des aktuellen Profils und gibt einen [IProfSect-Zeiger](iprofsectimapiprop.md) für weiteren Zugriff zurück.  <br/> |
+|[MsgServiceTransportOrder](imsgserviceadmin-msgservicetransportorder.md) <br/> |Legt die Reihenfolge fest, in der Transportanbieter aufgerufen werden, um eine Nachricht zu senden.  <br/> |
+|[AdminProviders](imsgserviceadmin-adminproviders.md) <br/> |Gibt einen Zeiger zurück, der Zugriff auf ein Anbieterverwaltungsobjekt bietet.  <br/> |
+|[SetPrimaryIdentity](imsgserviceadmin-setprimaryidentity.md) <br/> |Bestimmt einen Nachrichtendienst als Anbieter der primären Identität für das Profil.  <br/> |
+|[GetProviderTable](imsgserviceadmin-getprovidertable.md) <br/> |Bietet Zugriff auf die Anbietertabelle, eine Auflistung der Dienstanbieter im Profil.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Eine Implementierung kann einen Zeiger auf eine **IMsgServiceAdmin** -Schnittstelle auf zweierlei Weise abrufen: durch Aufrufen der [IMAPISession:: AdminServices](imapisession-adminservices.md) -Methode oder durch Aufrufen der [IProfAdmin:: AdminServices](iprofadmin-adminservices.md) -Methode. Für Clients, die sich hauptsächlich mit der Profilkonfiguration befassen, ist **IProfAdmin:: AdminServices** die bevorzugte Methode zum Abrufen der **IMsgServiceAdmin** -Schnittstelle, da Sie keine Anbieter für die MAPI-Sitzung anmeldet. Wenn ein Client die Möglichkeit zum Ändern des aktiven Profils erfordert, sollte **IMAPISession:: AdminServices** aufgerufen werden, um den **IMsgServiceAdmin** -Zeiger abzurufen. Beachten Sie, dass MAPI zwar nicht zulässt, dass ein Profil, das verwendet wird, gelöscht wird, es gibt jedoch keine Sicherheitsvorkehrungen, um zu verhindern, dass ein Client alle Nachrichtendienste im Profil entfernt. 
+Eine Implementierung kann einen Zeiger auf eine **IMsgServiceAdmin-Schnittstelle** auf zwei Arten erhalten: durch Aufrufen der [IMAPISession::AdminServices-Methode](imapisession-adminservices.md) oder durch Aufrufen der [IProfAdmin::AdminServices-Methode.](iprofadmin-adminservices.md) Für Clients, die in erster Linie mit der Profilkonfiguration betroffen sind, ist **IProfAdmin::AdminServices** die bevorzugte Methode, um die **IMsgServiceAdmin-Schnittstelle zu** erhalten, da sie sich nicht bei Anbietern bei der MAPI-Sitzung anmeldet. Wenn ein Client änderungen am aktiven Profil vornehmen muss, sollte **IMAPISession::AdminServices** aufgerufen werden, um den **IMsgServiceAdmin-Zeiger zu** erhalten. Beachten Sie, dass mapi zwar nicht zu lässt, dass ein verwendetes Profil gelöscht wird, es aber keine Garantien gibt, die verhindern, dass ein Client alle Nachrichtendienste im Profil entfernt. 
   
 ## <a name="see-also"></a>Siehe auch
 

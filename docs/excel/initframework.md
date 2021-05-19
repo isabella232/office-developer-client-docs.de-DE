@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - InitFramework
 keywords:
-- initframework-Funktion [Excel 2007]
+- initframework-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: c472a14a-92a6-46f6-924c-db8d6199d6fb
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -22,7 +22,7 @@ ms.locfileid: "33420753"
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Framework Library-Funktion, die die Framework-Bibliothek initialisiert, die lediglich die temporären **XLOPER**/ -**XLOPER12** -Speicherdaten Strukturen initialisiert, die bereits zugewiesene Speicher freigeben. 
+Framework library function that initializes the Framework library, which simply initializes the temporary **XLOPER** /  **XLOPER12** memory data structures, freeing any memory that has already been allocated. 
   
 ```cs
 short WINAPI InitFramework(void);
@@ -38,7 +38,7 @@ Diese Funktion gibt keinen Wert zurück.
   
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird die **InitFramework** -Funktion verwendet, um den gesamten temporären Arbeitsspeicher freizugeben. 
+In diesem Beispiel wird die **InitFramework-Funktion** verwendet, um den temporären Arbeitsspeicher frei zu machen. 
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   

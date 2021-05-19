@@ -25,7 +25,7 @@ ms.locfileid: "33421172"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt die Anlage Tabelle der Nachricht zurück.
+Gibt die Anlagentabelle der Nachricht zurück.
   
 ```cpp
 HRESULT GetAttachmentTable(
@@ -38,47 +38,47 @@ HRESULT GetAttachmentTable(
 
  _ulFlags_
   
-> in Bitmaske von Flags, die sich auf die Erstellung der Tabelle beziehen. Das folgende Flag kann festgelegt werden: 
+> [in] Bitmaske von Flags, die sich auf die Erstellung der Tabelle beziehen. Das folgende Flag kann festgelegt werden: 
     
 MAPI_UNICODE 
   
-> Die Zeichenfolgenspalten sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, sind die Zeichenfolgenspalten im ANSI-Format.
+> Die Zeichenfolgenspalten sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Zeichenfolgenspalten im ANSI-Format.
     
 MAPI_DEFERRED_ERRORS 
   
-> Ermöglicht **** getattachmentable, um erfolgreich zurückzugeben, möglicherweise bevor die Tabelle vollständig für den aufrufenden Client verfügbar ist. Wenn die Tabelle nicht verfügbar ist, kann der nachfolgende Aufruf einen Fehler verursachen. 
+> Ermöglicht **getAttachmentTable,** erfolgreich zurückzukehren, möglicherweise bevor die Tabelle vollständig für den aufrufenden Client verfügbar ist. Wenn die Tabelle nicht verfügbar ist, kann ein nachfolgender Aufruf der Tabelle zu einem Fehler führen. 
     
  _lppTable_
   
-> Out Zeiger auf einen Zeiger auf die Anlagentabelle.
+> [out] Zeiger auf einen Zeiger auf die Anlagentabelle.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Attachment-Tabelle wurde erfolgreich abgerufen.
+> Die Anlagentabelle wurde erfolgreich abgerufen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMessage::** getattachmentable-Methode gibt einen Zeiger auf die Attachment-Tabelle der Nachricht zurück, die Informationen zu allen Anlagen in der Nachricht enthält. Clients können Zugriff auf eine Anlage nur über die Attachment-Tabelle erhalten. Durch das Abrufen der Nummer einer Anlage die **PR_ATTACH_NUM** ([pidtagattachnumber (](pidtagattachnumber-canonical-property.md))-Eigenschaft kann ein Client mehrere der **IMessage** -Methoden verwenden, um mit der Anlage zu arbeiten. 
+Die **IMessage::GetAttachmentTable-Methode** gibt einen Zeiger auf die Anlagentabelle der Nachricht zurück, die Informationen zu allen Anlagen in der Nachricht enthält. Clients können nur über die Anlagentabelle zugriff auf eine Anlage erhalten. Durch Abrufen der Nummer einer Anlage PR_ATTACH_NUM **(** [PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) -Eigenschaft kann ein Client mehrere der **IMessage-Methoden** verwenden, um mit der Anlage zu arbeiten. 
   
-Für jede Anlage gibt es eine Zeile. Eine vollständige Liste der Spalten in einer Attachment-Tabelle finden Sie unter [Attachment Tables](attachment-tables.md).
+Es gibt eine Zeile für jede Anlage. Eine vollständige Liste der Spalten in einer Anlagentabelle finden Sie unter [Attachment Tables](attachment-tables.md).
   
-Eine Anlage wird in der Regel erst dann in der Anlage Tabelle angezeigt, wenn die Anlage und die Nachricht mit einem Aufruf von [IMAPIProp:: SaveChanges](imapiprop-savechanges.md)gespeichert wurden. Anlagen Tabellen sind dynamisch. Wenn ein Client eine neue Anlage erstellt, eine vorhandene Anlage löscht oder eine oder mehrere Eigenschaften ändert, nachdem die **SaveChanges** -Aufrufe für die Anlage in der Nachricht vorgenommen wurden, wird die Anlage Tabelle aktualisiert, um die neuen Informationen widerzuspiegeln. 
+Eine Anlage wird in der Regel erst in der Anlagentabelle angezeigt, wenn sowohl die Anlage als auch die Nachricht mit einem Aufruf von [IMAPIProp::SaveChanges gespeichert wurden.](imapiprop-savechanges.md) Anlagentabellen sind dynamisch. Wenn ein Client eine neue Anlage erstellt, eine vorhandene Anlage löscht oder eine oder mehrere Eigenschaften ändert, nachdem die **SaveChanges-Aufrufe** für die Anlage in der Nachricht ausgeführt wurden, wird die Anlagentabelle entsprechend den neuen Informationen aktualisiert. 
   
-Einige Anlagen Tabellen unterstützen eine Vielzahl von Einschränkungen; andere nicht. Die Unterstützung von Einschränkungen hängt von der Implementierung des Nachrichtenspeicher Anbieters ab. 
+Einige Anlagentabellen unterstützen eine Vielzahl von Einschränkungen. Andere tun dies nicht. Die Unterstützung für Einschränkungen hängt von der Implementierung des Nachrichtenspeicheranbieters ab. 
   
-Beim anfänglichen öffnen werden Anlagen Tabellen nicht unbedingt in einer bestimmten Reihenfolge sortiert. 
+Beim ersten Öffnen werden Anlagentabellen nicht unbedingt in einer bestimmten Reihenfolge sortiert. 
   
-Das Festlegen des MAPI_UNICODE-Flags im _ulFlags_ -Parameter wirkt sich auf die folgenden Aufrufe der Attachment-Tabelle aus: 
+Das Festlegen MAPI_UNICODE im  _ulFlags-Parameter_ wirkt sich auf die folgenden Aufrufe der Anlagentabelle aus: 
   
-- [IMAPITable:: QueryColumns](imapitable-querycolumns.md) zum Abrufen des Spaltensatzes. 
+- [IMAPITable::QueryColumns,](imapitable-querycolumns.md) um den Spaltensatz abzurufen. 
     
-- [IMAPITable:: QueryRows](imapitable-queryrows.md) zum Abrufen von Zeilen. 
+- [IMAPITable::QueryRows](imapitable-queryrows.md) zum Abrufen von Zeilen. 
     
-- [IMAPITable:: QuerySortOrder](imapitable-querysortorder.md) , um die Sortierreihenfolge abzurufen. 
+- [IMAPITable::QuerySortOrder](imapitable-querysortorder.md) zum Abrufen der Sortierreihenfolge. 
     
-Durch Festlegen des Unicode-Kennzeichens wird angefordert, dass die Informationen für Zeichenfolgenspalten, die von diesen Aufrufen zurückgegeben werden, im Unicode-Format vorliegen. Da jedoch nicht alle Nachrichtenspeicher Anbieter Unicode unterstützen, ist das Festlegen dieses Kennzeichens nur eine Anforderung.
+Das Festlegen des Unicode-Kennzeichens fordert, dass die Informationen für alle von diesen Aufrufen zurückgegebenen Zeichenfolgenspalten im Unicode-Format vorliegen. Da jedoch nicht alle Nachrichtenspeicheranbieter Unicode unterstützen, ist das Festlegen dieses Kennzeichens nur eine Anforderung.
   
 ## <a name="see-also"></a>Siehe auch
 

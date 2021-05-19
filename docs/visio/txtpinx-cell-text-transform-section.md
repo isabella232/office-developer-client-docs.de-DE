@@ -8,7 +8,7 @@ f1_keywords:
 - vis_sdr.chm1040
 localization_priority: Normal
 ms.assetid: d0c0fe52-6a9e-e40e-394e-83a851db55a4
-description: 'Bestimmt die x-Koordinate des Drehmittelpunkts des Textblocks im Verhältnis zum Ursprung der Form. Die Standardformel lautet:'
+description: 'Bestimmt die x-Koordinate der Drehmitte des Textblocks im Verhältnis zum Ursprung der Form. Die Standardformel lautet:'
 ms.openlocfilehash: 836f5c807d0c0e53efc825f62f60429274282165
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,23 +18,23 @@ ms.locfileid: "33423496"
 ---
 # <a name="txtpinx-cell-text-transform-section"></a>Zelle "TxtPinX" (Abschnitt "Text Transform")
 
-Bestimmt die *x* -Koordinate des Drehmittelpunkts des Textblocks im Verhältnis zum Ursprung der Form. Die Standardformel lautet: 
+Bestimmt  die x-Koordinate der Drehmitte des Textblocks im Verhältnis zum Ursprung der Form. Die Standardformel lautet: 
   
 = Breite \* 0,5
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle Zelle TxtPinX aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle TxtPinX anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Zelle TxtPinX  <br/> |
+| Zellenname:  <br/> | TxtPinX  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle TxtPinX aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle TxtPinX nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowTextXForm** <br/> |
 | Zellenindex:  <br/> |**visXFormPinX** <br/> |
    

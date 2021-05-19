@@ -31,9 +31,9 @@ enum
 
 ```
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Der Frei/Gebucht-Status eines Zeitblocks bestimmt, wie er in einem Kalender angezeigt wird: **frei**, **beschäftigt**, mit **Vorbehalt**oder **** Abwesenheit. 
+Der Frei/Gebucht-Status eines Zeitblocks bestimmt, wie er in einem Kalender angezeigt **wird:** **Frei,** **Gebucht,** Zagig **oder** Office . 
   
 ## <a name="see-also"></a>Siehe auch
 
