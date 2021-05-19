@@ -19,7 +19,7 @@ ms.locfileid: "33434144"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erweiterte Informationen zum Hochladen des Lesestatus eines Elements während des [Uploadstatus](upload-read-status-state.md).
+Erweiterte Informationen zum Hochladen des Lesestatus eines Elements während des [Status des Upload-Lesestatus](upload-read-status-state.md).
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -39,23 +39,23 @@ _ulFlags_
     
   - UPR_ASSOC
     
-    - Out Element ist ausgeblendet.
+    - [out] Element ist ausgeblendet.
     
   - UPR_READ
     
-    - Out Der Lesestatus des Elements wurde geändert.
+    - [out] Der Lesestatus des Elements wurde geändert.
     
   - UPR_OK
     
-    - in Der Upload war erfolgreich. Der Client legt dies nach dem Hochladen von Informationen auf den Server fest.
+    - [in] Hochladen war erfolgreich. Der Client legt dies nach dem Hochladen von Informationen auf den Server fest.
     
   - UPR_COMMIT
     
-    - in Laden Sie jetzt den Lesestatus des Elements hoch, statt auf das Ende des Upload- [Tabellenstatus](upload-table-state.md) zu warten, um mehr als ein Element zu verarbeiten. 
+    - [in] Hochladen den Lesestatus des Elements jetzt anstatt bis zum [](upload-table-state.md) Ende des Status der Uploadtabelle zu warten, um mehrere Elemente zu verarbeiten. 
     
 _skey_
   
-> Out Der Quellschlüssel des Elements.
+> [out] Quellschlüssel des Elements.
     
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,5 @@
 ---
-title: If... Dann... Else-Makro Block (Access Custom Web App)
+title: If... Dann... Else-Makroblock (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33434494"
 ---
-# <a name="ifthenelse-macro-block-access-custom-web-app"></a>If... Dann... Else-Makro Block (Access Custom Web App)
+# <a name="ifthenelse-macro-block-access-custom-web-app"></a>If... Dann... Else-Makroblock (benutzerdefinierte Access-Web-App)
 
 Mit dem **If**-Makroblock können Sie eine Gruppe von Aktionen je nach Wert eines als Bedingung verwendeten Ausdrucks ausführen. 
   

@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 54bd69c3-a9fa-d2ac-9a91-67187c92fc8a
-description: Setzt den Enumerator zurück, indem der Cursor auf den Anfang gesetzt wird.
+description: Setzt den Enumerationszähler zurück, indem der Cursor auf den Anfang gesetzt wird.
 ms.openlocfilehash: 589f8e310cc1c0053434a9ab4fb78931b339ca46
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,11 +16,11 @@ ms.locfileid: "33433633"
 ---
 # <a name="ienumfbblockreset"></a>IEnumFBBlock::Reset
 
-Setzt den Enumerator zurück, indem der Cursor auf den Anfang gesetzt wird.
+Setzt den Enumerationszähler zurück, indem der Cursor auf den Anfang gesetzt wird.
   
 ## <a name="quick-info"></a>QuickInfo
 
-Siehe [IEnumFBBlock](ienumfbblock.md).
+Weitere [Informationen finden Sie unter IEnumFBBlock](ienumfbblock.md).
   
 ```cpp
 HRESULT Reset();

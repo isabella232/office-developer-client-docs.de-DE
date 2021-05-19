@@ -4,7 +4,7 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
-- InfoPath 2007, Sicherheit, Sicherheit [InfoPath 2007], Formularvorlagen [InfoPath 2007], Sicherheit
+- infopath 2007, security,security [InfoPath 2007],form templates [InfoPath 2007], security
 localization_priority: Normal
 ms.assetid: eb96d198-0003-4a19-9441-42eaa4eba15a
 description: In diesem Abschnitt wird das Sicherheitsmodell für Microsoft InfoPath-Formularvorlagen erläutert, die verwalteten Code verwenden.
@@ -25,7 +25,7 @@ In diesem Abschnitt wird das Sicherheitsmodell für Microsoft InfoPath-Formularv
   
 > Beschreibt das Sicherheitsmodell für Formularvorlagen mit verwaltetem Code.
     
-[Konfigurieren von Sicherheitseinstellungen für Formularvorlagen mit Code](how-to-configure-security-settings-for-form-templates-with-code.md)
+[Konfigurieren von Einstellungen für Formularvorlagen mit Code](how-to-configure-security-settings-for-form-templates-with-code.md)
   
 > Beschreibt die Vorgehensweise zum Konfigurieren von .NET Framework-Sicherheitseinstellungen für Formularvorlagen mit verwaltetem Code.
     

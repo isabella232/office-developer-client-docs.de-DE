@@ -1,5 +1,5 @@
 ---
-title: Abschnitt "MapiSvc. inf [Standarddienste]"
+title: MapiSvc.inf [Default Services] Section
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,21 +15,21 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33435320"
 ---
-# <a name="mapisvcinf-default-services-section"></a>Abschnitt "MapiSvc. inf [Standarddienste]"
+# <a name="mapisvcinf-default-services-section"></a>MapiSvc.inf [Default Services] Section
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Im Abschnitt **[Default Services]** werden alle Nachrichtendienste aufgelistet, die als Standardnachrichten Dienste ausgewählt werden. Diese Standardnachrichten Dienste sind eine Teilmenge der Nachrichtendienste, die im Abschnitt **[Dienste]** aufgeführt sind. Wenn ein Profil Konfigurationsprogramm ein Standardprofil erstellt, werden die Nachrichtendienste in diesem Abschnitt automatisch eingeschlossen. 
+Im **Abschnitt [Standarddienste]** werden alle Nachrichtendienste aufgeführt, die als Standardnachrichtendienste ausgewählt sind. Diese Standardnachrichtendienste sind eine Teilmenge der Nachrichtendienste, die im **Abschnitt [Dienste] aufgeführt** sind. Wenn ein Profilkonfigurationsprogramm ein Standardprofil erstellt, werden die Nachrichtendienste in diesem Abschnitt automatisch einbezogen. 
   
-Die Einträge verwenden dasselbe Format wie Einträge im Abschnitt **[Dienste]** , wie nachfolgend gezeigt: 
+Die Einträge verwenden das gleiche Format wie Einträge im **Abschnitt [Dienste],** wie im Folgenden dargestellt: 
   
  **[Standarddienste]**
   
- _Message-Service section Name_ =  _Message Service Name_
+ _Name des Message-Service-Abschnitts_  =   _Name des Nachrichtendiensts_
   
-Die folgenden Einträge würden im Abschnitt **[Default Services]** für die in der vorherigen Abbildung gezeigte MAPISVC. inf enthalten sein: 
+Die folgenden Einträge würden im **Abschnitt [Standarddienste]** für mapisvc.inf in der früheren Abbildung enthalten sein: 
   
 ```cpp
 [Default Services]

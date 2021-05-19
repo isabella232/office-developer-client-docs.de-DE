@@ -23,13 +23,13 @@ ms.locfileid: "33432631"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Vergleicht zwei Eigenschaftswerte, in der Regel Zeichenfolgen oder binäre Arrays, um zu sehen, ob eine die andere enthält. 
+Vergleicht zwei Eigenschaftswerte, in der Regel Zeichenfolgen oder binäre Arrays, um zu sehen, ob einer den anderen enthält. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 BOOL FPropContainsProp(
@@ -43,46 +43,46 @@ BOOL FPropContainsProp(
 
 _lpSPropValueDst_
   
-> in Zeiger auf eine [SPropValue](spropvalue.md) -Struktur, die den Eigenschaftswert definiert, der die Suchzeichenfolge enthalten kann, auf die durch den _lpSPropValueSrc_ -Parameter verwiesen wird. 
+> [in] Zeiger auf eine [SPropValue-Struktur,](spropvalue.md) die den Eigenschaftswert definiert, der die Suchzeichenfolge enthalten kann, auf die der  _lpSPropValueSrc-Parameter_ verweist. 
     
 _lpSPropValueSrc_
   
-> in Zeiger auf eine **SPropValue** -Struktur, die die Suchzeichenfolge definiert, die **FPropContainsProp** im Eigenschaftswert sucht, der durch den _lpSPropValueDst_ -Parameter verweist. 
+> [in] Zeiger auf eine **SPropValue-Struktur,** die die Suchzeichenfolge definiert, die **FPropContainsProp** in dem Eigenschaftswert sucht, auf den der  _lpSPropValueDst-Parameter_ verweist. 
     
 _ulFuzzyLevel_
   
-> in Optionseinstellungen definieren die Genauigkeitsstufe für den Vergleich. 
+> [in] Optionseinstellungen, die die im Vergleich zu verwendende Präzisionsstufe definieren. 
 
-  - Die **unteren 16 Bits** gelten für die Eigenschaften vom Typ PT_BINARY und PT_String8. Sie müssen auf einen der folgenden Werte festgelegt werden:
+  - Die **unteren 16 Bit** gelten für Eigenschaften vom Typ PT_BINARY und PT_STRING8. Sie müssen auf genau einen der folgenden Werte festgelegt werden:
       
-    - FL_FULLSTRING: die _lpSPropValueSrc_ -Suchzeichenfolge muss dem durch _lpSPropValueDst_angegebenen Eigenschaftswert entsprechen.
+    - FL_FULLSTRING: Die _lpSPropValueSrc-Suchzeichenfolge_ muss gleich dem Eigenschaftswert sein, der von _lpSPropValueDst identifiziert wird._
         
-    - FL_PREFIX: die _lpSPropValueSrc_ -Suchzeichenfolge muss am Anfang des durch _lpSPropValueDst_angegebenen Eigenschaftswerts angezeigt werden. Die beiden Werte sollten nur bis zur Länge der durch _lpSPropValueSrc_angegebenen Suchzeichenfolge verglichen werden. 
+    - FL_PREFIX: Die _lpSPropValueSrc-Suchzeichenfolge_ muss am Anfang des durch _lpSPropValueDst identifizierten Eigenschaftswerts angezeigt werden._ Die beiden Werte sollten nur bis zur Länge der suchzeichenfolge verglichen werden, die von _lpSPropValueSrc angegeben wird._ 
         
-    - FL_SUBSTRING: die _lpSPropValueSrc_ -Suchzeichenfolge muss an beliebiger Stelle im von _lpSPropValueDst_angegebenen Eigenschaftswert enthalten sein. 
+    - FL_SUBSTRING: Die _lpSPropValueSrc-Suchzeichenfolge_ muss an einer beliebigen Stelle im Eigenschaftswert enthalten sein, der von _lpSPropValueDst identifiziert wird._ 
       
-  - Die **oberen 16 Bits** gelten nur für Eigenschaften vom Typ PT_String8. Sie können in einer beliebigen Kombination auf die folgenden Werte festgelegt werden:
+  - Die **oberen 16 Bit gelten** nur für Eigenschaften vom Typ PT_STRING8. Sie können in beliebiger Kombination auf die folgenden Werte festgelegt werden:
     
-    - FL_IGNORECASE: der Vergleich sollte ohne Berücksichtigung der Groß-/Kleinschreibung vorgenommen werden. 
+    - FL_IGNORECASE: Der Vergleich sollte ohne Berücksichtigung der Fallempfindlichkeit vorgenommen werden. 
         
-    - FL_IGNORENONSPACE: der Vergleich sollte Unicode-definierte Zeichen, die nicht im Abstand stehen, wie diakritische Marken, ignorieren. 
+    - FL_IGNORENONSPACE: Der Vergleich sollte Unicode-definierte Zeichen ohne Abstand ignorieren, z. B. diakritische Zeichen. 
         
-    - FL_LOOSE: der Vergleich sollte nach Möglichkeit eine Übereinstimmung aufweisen, wobei die Groß-/Kleinschreibung und die Zeichen ohne Abstand ignoriert werden.
+    - FL_LOOSE: Der Vergleich sollte nach Möglichkeit eine Übereinstimmung angeben, wobei die Zwischenfallempfindlichkeit und zeichenfreier Abstand ignoriert werden.
     
 ## <a name="return-value"></a>Rückgabewert
 
 TRUE 
   
-> Die Parameter sind alle gültig, und die _lpSPropValueSrc_ -Suchzeichenfolge ist im Wert der _lpSPropValueDst_ -Eigenschaft enthalten. 
+> Die Parameter sind alle gültig, und die  _lpSPropValueSrc-Suchzeichenfolge_ ist wie im  _lpSPropValueDst-Eigenschaftswert_ angegeben enthalten. 
     
 FALSE 
   
-> Die verglichenen Eigenschaftswerte sind nicht vom Typ PT_STRING8 oder PT_BINARY, die Eigenschaftswerte sind unterschiedlichen Typen, oder die _lpSPropValueSrc_ -Suchzeichenfolge ist nicht wie im Wert der _lpSPropValueDst_ -Eigenschaft angegeben. 
+> Die zu vergleichenden Eigenschaftswerte sind nicht vom Typ PT_STRING8 oder PT_BINARY, die Eigenschaftswerte sind unterschiedliche Typen, oder die  _lpSPropValueSrc-Suchzeichenfolge_ ist nicht wie im  _lpSPropValueDst-Eigenschaftswert_ angegeben enthalten. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die Vergleichsmethode hängt von den Eigenschaftentypen ab, die in den [SPropValue](spropvalue.md) -Eigenschaftsdefinitionen und der heuristischen Heuristik im _ulFuzzyLevel_ -Parameter angegeben sind. Die [FPropCompareProp](fpropcompareprop.md) -und **FPropContainsProp** -Funktionen können verwendet werden, um Einschränkungen für das Generieren einer Tabelle vorzubereiten. 
+Die Vergleichsmethode hängt von den in den [SPropValue-Eigenschaftsdefinitionen](spropvalue.md) angegebenen Eigenschaftstypen und der im  _ulFuzzyLevel-Parameter_ bereitgestellten Heuristik auf Fuzzyebene ab. Die [Funktionen FPropCompareProp](fpropcompareprop.md) und **FPropContainsProp** können verwendet werden, um Einschränkungen für das Generieren einer Tabelle vorzubereiten. 
   
-Die oberen 16 Bits von _ulFuzzyLevel_ werden für den Eigenschaftentyp PT_BINARY ignoriert. Wenn die Einstellungen in _ulFuzzyLevel_ fehlen oder ungültig sind, wird eine exakte Übereinstimmung mit vollständiger Zeichenfolge ausgeführt. Weitere Informationen zur Eigenschafts Kapselung finden Sie in der [SContentRestriction](scontentrestriction.md) -Struktur. 
+Die oberen 16 Bits von  _ulFuzzyLevel_ werden für Eigenschaftentyptypen PT_BINARY. Wenn die Einstellungen in  _ulFuzzyLevel_ fehlen oder ungültig sind, wird eine genaue Übereinstimmung mit der vollständigen Zeichenfolge ausgeführt. Weitere Informationen zum Eindämmung von Eigenschaften finden Sie in der [SContentRestriction-Struktur.](scontentrestriction.md) 
   
 

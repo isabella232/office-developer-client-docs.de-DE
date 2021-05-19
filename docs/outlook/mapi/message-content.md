@@ -21,24 +21,24 @@ ms.locfileid: "33435460"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Für den Nachrichteninhalt gibt es zwei mögliche Codierungen: eine mit MIME, die andere mit UUEncode. MIME ist die bevorzugte Codierung. Darüber hinaus definiert MAPI eine empfängerspezifische Eigenschaft, **PR_SEND_RICH_INFO** ([pidtagsendrichinfo (](pidtagsendrichinfo-canonical-property.md)), die bestimmt, ob TNEF-Informationen in eine ausgehende Nachricht aufgenommen werden sollen. Es gibt also insgesamt vier Möglichkeiten zum Codieren von Nachrichteninhalten:
+Es gibt zwei mögliche Codierungen für den Nachrichteninhalt: eine mit MIME, die andere mit uuencode. MIME ist die bevorzugte Codierung. Darüber hinaus definiert MAPI die Eigenschaft **PR_SEND_RICH_INFO** ([PidTagSendRichInfo](pidtagsendrichinfo-canonical-property.md)), die bestimmt, ob #A0 in eine ausgehende Nachricht eingeschlossen werden sollen. Es gibt also insgesamt vier Möglichkeiten zum Codieren von Nachrichteninhalten:
   
 - MIME mit TNEF
     
 - MIME ohne TNEF
     
-- UUEncode mit TNEF
+- uuencode mit TNEF
     
-- UUEncode ohne TNEF
+- uuencode ohne TNEF
     
-Das Auswählen von MIME oder UUENCODE für ausgehende Nachrichten wird nicht angegeben.
+Es wird nicht angegeben, wie Sie MIME oder uuencode für ausgehende Nachrichten auswählen.
   
-Die folgenden Eigenschaften sind aus TNEF ausgeschlossen: **PR_SENDER_\***, **PR_ATTACH_DATA_\***, **PR_BODY**. Alle anderen übertragenen Nachrichteneigenschaften sind im TNEF-Stream enthalten.
+Die folgenden Eigenschaften werden von TNEF **ausgeschlossen: \* PR_SENDER_**, **PR_ATTACH_DATA_ \***, **PR_BODY**. Alle anderen nachrichtendurchlässigen Eigenschaften sind im TNEF-Stream enthalten.
   
-Die folgenden Vorschläge sollen eine Liste von Parametern enthalten, die die Implementierung für die Unterstützung entscheiden kann:
+Die folgenden Vorschläge sollen eine Liste von Parametern bereitstellen, die von der Implementierung unterstützt werden können:
   
-- Ob mit MIME oder UUENCODE für ausgehende Nachrichten codiert werden soll: Boolean.
+- Gibt an, ob mit MIME oder Uuencode für ausgehende Nachrichten codiert werden soll: boolean.
     
-- Zeichensatz für ausgehende Nachrichten: Zeichenfolge (direkt in den Charset-Parameter kopiert) oder Enumeration (intern in charset-Zeichenfolge übersetzt).
+- Zeichensatz, der für ausgehende Nachrichten verwendet werden soll: Zeichenfolge (direkt in charset-Parameter kopiert) oder Enumeration (intern in Zeichensatzzeichenfolge übersetzt).
     
 

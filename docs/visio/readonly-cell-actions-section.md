@@ -28,22 +28,22 @@ Steuert, ob die Aktion in einem Aktionstag- oder Kontextmenü schreibgeschützt 
 |TRUE  <br/> |Die Aktion wird im Menü angezeigt, ist aber schreibgeschützt.  <br/> |
 |FALSE  <br/> |Die Aktion wird im Menü angezeigt und kann ausgewählt werden (Standardeinstellung).  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Wenn eine Aktion schreibgeschützt ist, wird sie im Aktionstag- oder Kontextmenü angezeigt, kann jedoch nicht ausgewählt werden. Sie ist nicht grau unterlegt, wird aber wie eine Beschriftung vor einem farbigen Hintergrund angezeigt. Wenn Sie das Menüelement grau unterlegt anzeigen lassen möchten, verwenden Sie die Zelle Disabled. 
   
-Wenn Sie einen Verweis auf die Zelle ReadOnly aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle ReadOnly anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Aktionen. *Name* . ReadOnlywobei-Aktionen.  *Name* ist der Name der Zeile Actions.  <br/> |
+|Zellenname:  <br/> |Aktionen. *Name*  . ReadOnlywhere-Aktionen.  *Name*  ist der Name der Zeile Aktionen  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ReadOnly aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle ReadOnly nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
 |Abschnittsindex:  <br/> |**visSectionAction** <br/> |
-|Zeilenindex:  <br/> |**visRowAction** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+|Zeilenindex:  <br/> |**visRowAction**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
 |Zellenindex:  <br/> |**visActionReadOnly** <br/> |
    
 

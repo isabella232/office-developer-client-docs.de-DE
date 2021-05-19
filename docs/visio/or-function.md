@@ -22,7 +22,7 @@ Gibt TRUE (1) zurück, wenn einer der logischen Ausdrücke, die als Parameter ü
   
 ## <a name="syntax"></a>Syntax
 
-oder (* * *logicalexpression1* * *, * * *logicalexpression2* * *,..., * * *logicalexpressionN* * *) 
+OR(** *logicalexpression1* **, ** *logicalexpression2* **,..., ** *logicalexpressionN* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -42,7 +42,7 @@ Ein beliebiger Ausdruck, der einen Wert ungleich Null ergibt, wird als TRUE betr
   
 ## <a name="example"></a>Beispiel
 
-OR (Höhe \> 1, PinX \> 1) 
+OR(Height \> 1,PinX \> 1) 
   
 Gibt TRUE (1) zurück, wenn mindestens einer der beiden Ausdrücke TRUE ist. Gibt FALSE (0) zurück, wenn beide Ausdrücke FALSE sind. 
   

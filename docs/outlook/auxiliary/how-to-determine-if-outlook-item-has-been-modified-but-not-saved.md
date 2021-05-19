@@ -1,5 +1,5 @@
 ---
-title: Ermitteln, ob ein Outlook-Element geändert, aber nicht gespeichert wurde (Outlook-Zusatz Referenz)
+title: Ermitteln, ob ein Outlook geändert, aber nicht gespeichert wurde (Outlook Hilfsreferenz)
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -14,11 +14,11 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/02/2020
 ms.locfileid: "43102947"
 ---
-# <a name="determine-if-an-outlook-item-has-been-modified-but-not-saved-outlook-auxiliary-reference"></a>Ermitteln, ob ein Outlook-Element geändert, aber nicht gespeichert wurde (Outlook-Zusatz Referenz)
+# <a name="determine-if-an-outlook-item-has-been-modified-but-not-saved-outlook-auxiliary-reference"></a>Ermitteln, ob ein Outlook geändert, aber nicht gespeichert wurde (Outlook Hilfsreferenz)
 
 In diesem Thema wird veranschaulicht, wie Sie die **dispidFDirty** -Dispatch-ID verwenden, rufen Sie die entsprechende Eigenschaft für ein Outlook-Element, um festzustellen, ob das Element geändert wurde und nicht gespeichert wurde noch. 
   
-Item-Objekt können Sie die [IUnknown::QueryInterface](https://docs.microsoft.com/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) -Methode verwenden, um einen [IDispatch](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) -Schnittstellenzeiger zu erhalten. Die Funktion im Thema `FIsItemDirty` akzeptiert einen **IDispatch** -Zeiger, _pDisp_, als Eingabeparameter.  `FIsItemDirty` Ruft die [IDispatch:: Invoke](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) -Methode, und geben **dispidFDirty** als Argument für den Parameter  _dispIdMember_ und die Flags  `DISPATCH_METHOD | DISPATCH_PROPERTYGET` für  _wFlags_, um zu überprüfen, ob das Element geändert wurde.  `FIsItemDirty`Gibt einen booleschen Wert zurück (**true** , um anzugeben, dass das Element nicht gespeicherte Änderungen aufweist; andernfalls **false**).
+Item-Objekt können Sie die [IUnknown::QueryInterface](https://docs.microsoft.com/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) -Methode verwenden, um einen [IDispatch](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) -Schnittstellenzeiger zu erhalten. Die Funktion im Thema `FIsItemDirty` akzeptiert den **IDispatch-Zeiger**  _pdisp_ als Eingabeparameter.  `FIsItemDirty` Ruft die [IDispatch:: Invoke](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) -Methode, und geben **dispidFDirty** als Argument für den Parameter  _dispIdMember_ und die Flags  `DISPATCH_METHOD | DISPATCH_PROPERTYGET` für  _wFlags_, um zu überprüfen, ob das Element geändert wurde.  `FIsItemDirty` gibt einen booleschen Wert zurück (**True,** um anzugeben, dass das Element nicht gespeicherte Änderungen hat; andernfalls **False**).
   
 ```cpp
 bool FIsItemDirty(IDispatch *pdisp)
@@ -44,7 +44,7 @@ bool FIsItemDirty(IDispatch *pdisp)
 
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Konstanten (Outlook exportierter APIs)](constants-outlook-exported-apis.md)
 

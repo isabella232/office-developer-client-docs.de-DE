@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagProfileName-Eigenschaft
+title: PidTagProfileName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33435649"
 ---
-# <a name="pidtagprofilename-canonical-property"></a>Kanonische PidTagProfileName-Eigenschaft
+# <a name="pidtagprofilename-canonical-property"></a>PidTagProfileName (kanonische Eigenschaft)
 
   
   
@@ -34,25 +34,25 @@ Enthält den Namen des Profils.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Profilkonfiguration  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Diese Eigenschaften werden von Dienstanbietern berechnet. Die Implementierung der **ServiceEntry** -Funktion eines Anbieters kann diese Eigenschaften verwenden, um den Profilnamen zu ermitteln. 
+Diese Eigenschaften werden von Dienstanbietern berechnet. Die Implementierung der **ServiceEntry-Funktion** eines Anbieters kann diese Eigenschaften verwenden, um den Profilnamen zu ermitteln. 
   
-Client Anwendungen können diese Eigenschaften als bequeme Alternative zum Abrufen des Profilnamens verwenden, indem Sie die **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))-Eigenschaft in der Statustabellen Zeile des MAPI-Subsystems untersuchen.
+Clientanwendungen können diese Eigenschaften als bequeme Alternative zum Abrufen des Profilnamens verwenden, indem sie die **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) -Eigenschaft in der Statustabelle des #A0 untersuchen.
   
-Diese Eigenschaften sind möglicherweise nicht über die Zeit hinweg eindeutig, beispielsweise, wenn ein Profil gelöscht und später mit demselben Namen neu erstellt wird. MAPI liefert eine vollständig eindeutige **PR_SEARCH_KEY** ([pidtagsearchkey (](pidtagsearchkey-canonical-property.md))-Eigenschaft in einem hartcodierten Profil Abschnitt namens **MUID_PROFILE_INSTANCE.**
+Diese Eigenschaften sind möglicherweise nicht zeitübergreifend eindeutig, z. B. wenn ein Profil gelöscht und später mit demselben Namen neu erstellt wird. MAPI bietet eine völlig eindeutige **PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md)) -Eigenschaft in einem hart codierten Profilabschnitt **namens MUID_PROFILE_INSTANCE.**
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
-### <a name="header-files"></a>Header Dateien
+### <a name="header-files"></a>Headerdateien
 
-Mapidefs. h
+Mapidefs.h
   
-> Stellt Datentypdefinitionen bereit.
+> Bietet Datentypdefinitionen.
     
-Mapitags. h
+Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,9 +60,9 @@ Mapitags. h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

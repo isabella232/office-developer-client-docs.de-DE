@@ -25,11 +25,11 @@ ms.locfileid: "33434599"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt ein Optionsfeld, das Teil einer Optionsfeldgruppe sein wird. Die Optionsschaltfläche-Gruppe wird in einem Dialogfeldverwendet, das aus einer Anzeigetabelle erstellt wird.
+Beschreibt ein Optionsfeld, das Teil einer Optionsfeldgruppe sein wird. Die Optionsfeldgruppe wird in einem Dialogfeld verwendet, das aus einer Anzeigetabelle erstellt wurde.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _DTBLRADIOBUTTON
@@ -43,39 +43,39 @@ typedef struct _DTBLRADIOBUTTON
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **ulbLpszLabel**
   
-> Position im Speicher der Zeichenfolgenbezeichnung für das Optionsfeld.
+> Position im Speicher der Zeichenzeichenfolgenbeschriftung für das Optionsfeld.
     
  **ulFlags**
   
-> Bitmaske der Flags, mit denen das Format der Bezeichnung festgelegt wird, auf die durch das **ulbLpszLabel** -Element verwiesen wird. Das folgende Flag kann festgelegt werden: 
+> Bitmaske von Flags, die verwendet werden, um das Format der Bezeichnung zu bestimmen, auf das das **ulbLpszLabel-Element** verweist. Das folgende Flag kann festgelegt werden: 
     
 MAPI_UNICODE 
   
-> Die Bezeichnung ist im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, ist die Bezeichnung im ANSI-Format.
+> Die Bezeichnung ist im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befindet sich die Bezeichnung im ANSI-Format.
     
  **ulcButtons**
   
-> Anzahl der Schaltflächen in der Optionsfeldgruppe. Die **DTBLRADIOBUTTON** -Strukturen für die anderen Schaltflächen in der Gruppe müssen in aufeinanderfolgenden Zeilen der Anzeigetabelle enthalten sein. Jede dieser Zeilen sollte den gleichen Wert für das **ulcButtons** -Element enthalten. 
+> Anzahl der Schaltflächen in der Optionsfeldgruppe. Die **DTBLRADIOBUTTON-Strukturen** für die anderen Schaltflächen in der Gruppe müssen in aufeinander folgenden Zeilen der Anzeigetabelle enthalten sein. Jede dieser Zeilen sollte denselben Wert für das **ulcButtons-Element** enthalten. 
     
  **ulPropTag**
   
-> Property-Tag für eine Eigenschaft vom Typ PT_LONG. Die anfängliche Auswahl in der Optionsfeldgruppe basiert auf dem Anfangswert dieser Eigenschaft. Für jede Schaltfläche in der Gruppe muss **ulPropTag** auf dieselbe Eigenschaft festgelegt sein. 
+> Eigenschaftstag für eine Eigenschaft vom Typ PT_LONG. Die anfängliche Auswahl in der Optionsfeldgruppe basiert auf dem Anfangswert dieser Eigenschaft. Für jede Schaltfläche in der Gruppe muss **ulPropTag auf** dieselbe Eigenschaft festgelegt sein. 
     
  **lReturnValue**
   
-> Eindeutige Zahl, die die ausgewählte Schaltfläche identifiziert.
+> Eindeutige Nummer, die die ausgewählte Schaltfläche identifiziert.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Eine **DTBLRADIOBUTTON** -Struktur beschreibt ein Optionsfeld-Steuerelement, das einer Gruppe von Schaltflächen zugeordnet ist. Nur eine Schaltfläche in der Gruppe kann überprüft werden; durch Festlegen einer Schaltfläche werden die anderen Schaltflächen in der Gruppe festgelegt. 
+Eine **DTBLRADIOBUTTON-Struktur** beschreibt ein Optionsfeld ein Schaltflächensteuerelement, das einer Gruppe von Schaltflächen zugeordnet ist. Es kann nur eine Schaltfläche in der Gruppe aktiviert werden. Wenn Sie eine Schaltfläche festlegen, werden die anderen Schaltflächen in der Gruppe nicht mehr verwendet. 
   
-Die Schaltflächen Anzahl ist die Anzahl der Optionsfelder in der Gruppe. Die Strukturen für die anderen Optionsfelder in der Gruppe müssen sich in nachfolgenden Zeilen in der Anzeigetabelle befinden. Jede dieser Strukturen sollte den gleichen Wert für die Schaltflächen Anzahl aufweisen.
+Die Anzahl der Schaltflächen ist die Anzahl der Optionsfelder in der Gruppe. Die Strukturen für die anderen Optionsfelder in der Gruppe müssen sich in nachfolgenden Zeilen in der Anzeigetabelle enthalten. Jede dieser Strukturen sollte denselben Wert für die Anzahl der Schaltflächen haben.
   
-Eine Übersicht über Anzeige Tabellen finden Sie unter [Display Tables](display-tables.md). Weitere Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
+Eine Übersicht über Anzeigetabellen finden Sie unter [Display Tables](display-tables.md). Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
   
 ## <a name="see-also"></a>Siehe auch
 

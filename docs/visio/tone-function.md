@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: c2d6a7dd-9f15-27bd-9623-2a047683ff98
-description: Ändert die Farbe, indem die Sättigung um den im Parameter int angegebenen Wert verringert wird.
+description: Ändert die Farbe, indem die Sättigung um den im int-Parameter angegebenen Wert verringert wird.
 ms.openlocfilehash: c3352d4c15671244d0fc4701f2c26b4e0c2ea54d
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,11 +16,11 @@ ms.locfileid: "33434375"
 ---
 # <a name="tone-function"></a>TONE Function
 
-Ändert die Farbe, indem die Sättigung um den im Parameter _int_ angegebenen Wert verringert wird. 
+Ändert die Farbe, indem die Sättigung um den im  _int-Parameter_ angegebenen Wert verringert wird. 
   
 ## <a name="syntax"></a>Syntax
 
-TONE (* * *Color* * *, * * *int* * *) 
+TONE(** *color* **, ** *int* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -33,8 +33,8 @@ TONE (* * *Color* * *, * * *int* * *)
 
  **RGB**
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die unteren und oberen Grenzwerte der Sättigung liegen jeweils bei 0 und 240. Es gibt keine Begrenzung für die Größe der Ganzzahl, die Sie für den _int_ -Parameter übergeben können, aber die Sättigung überschreitet diese Grenzwerte nie. 
+Die unteren und oberen Grenzwerte der Sättigung liegen jeweils bei 0 und 240. Es gibt keine Beschränkung für die Größe der ganzen Zahl, die Sie für den  _int-Parameter_ übergeben können, aber die Sättigung überschreitet diese Grenzwerte nie. 
   
 

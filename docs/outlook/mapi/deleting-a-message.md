@@ -21,20 +21,20 @@ ms.locfileid: "33433164"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ein Client kann eine Nachricht löschen, wenn Sie geöffnet ist und der Benutzer Sie liest, oder wenn Sie geschlossen ist und der Benutzer die Tabelle Inhalt anzeigt. Um zu verhindern, dass ein Benutzer versehentlich eine Nachricht entfernt, definiert MAPI das Löschen von Nachrichten als zweistufigen Prozess:
+Ein Client kann eine Nachricht löschen, wenn sie geöffnet ist und der Benutzer sie liest, oder wenn sie geschlossen ist und der Benutzer die Inhaltstabelle anschaut. Um einen Benutzer vor versehentlichem Entfernen einer Nachricht zu schützen, definiert MAPI das Löschen von Nachrichten als zwei Schritte:
   
-1. Markieren Sie eine Nachricht zum Löschen, indem Sie Sie in den Ordner bewegen, der als Ordner "Gelöschte Elemente" festgelegt wurde – den Ordner, dessen Eintragsbezeichner in der **PR_IPM_WASTEBASKET_ENTRYID** ([pidtagipmwastebasketentryid (](pidtagipmwastebasketentryid-canonical-property.md))-Eigenschaft gespeichert ist. 
+1. Markieren Sie eine Nachricht zum Löschen, indem Sie sie in den Ordner verschieben, der als Ordner "Gelöschte Elemente" festgelegt wurde – dem Ordner, dessen Eintrags-ID in der **eigenschaft PR_IPM_WASTEBASKET_ENTRYID** ([PidTagIpmWastebasketEntryId](pidtagipmwastebasketentryid-canonical-property.md)) gespeichert ist. 
     
-2. Entfernen Sie die Nachricht, indem Sie die [IMAPIFolder::D eletemessages](imapifolder-deletemessages.md) -Methode aufrufen. 
+2. Entfernen Sie die Nachricht, indem Sie die [IMAPIFolder::D eleteMessages-Methode](imapifolder-deletemessages.md) aufrufen. 
     
-Wenn ein Benutzer eine Nachricht in einem anderen Ordner als dem Ordner "Gelöschte Elemente" löscht, markieren Sie ihn zum Löschen. Nur, wenn ein Benutzer Nachrichten aus dem Ordner "Gelöschte Elemente" auswählt, sollten die Nachrichten physisch von der Arbeitsstation entfernt werden. Sie können den Benutzer auffordern, zu überprüfen, ob der Benutzer den Löschvorgang wirklich ausführen wollte.
+Wenn ein Benutzer eine Nachricht in einem anderen Ordner als dem Ordner "Gelöschte Elemente" löschen will, markieren Sie sie zum Löschen. Nur wenn ein Benutzer Nachrichten aus dem Ordner Gelöschte Elemente auswählt, sollten die Nachrichten physisch von der Arbeitsstation entfernt werden. Sie können den Benutzer dazu aufgefordert, zu überprüfen, ob der Benutzer wirklich beabsichtigt hat, den Löschvorgang durchzuführen.
   
  **So löschen Sie eine Nachricht**
   
-1. Bestätigen Sie mit dem Benutzer, dass die bevorstehende Löschung beabsichtigt ist.
+1. Bestätigen Sie mit dem Benutzer, dass der bevorstehende Löschvorgang beabsichtigt ist.
     
-2. Bestimmen Sie das übergeordnete Element des zu löschenden Ordners. Wenn es sich um den Ordner "Gelöschte Elemente" oder einen Unterordner im Ordner "Gelöschte Elemente" handelt, rufen Sie [IMAPIFolder::D eletemessages](imapifolder-deletemessages.md) auf, um die Nachricht zu entfernen. 
+2. Bestimmen Sie das übergeordnete Element des zu löschenden Ordners. Wenn es sich um den Ordner "Gelöschte Elemente" oder einen Unterordner im Ordner "Gelöschte Elemente" handelt, rufen Sie [IMAPIFolder::D eleteMessages](imapifolder-deletemessages.md) auf, um die Nachricht zu entfernen. 
     
-3. Wenn der Ordner nicht im Ordner "Gelöschte Elemente" enthalten ist, rufen Sie [IMAPIFolder:: CopyMessages](imapifolder-copymessages.md) , wobei das MESSAGE_MOVE-Flag festgelegt ist, um die Nachricht in den Ordner "Gelöschte Elemente" zu verschieben. 
+3. Wenn der Ordner nicht im Ordner "Gelöschte Elemente" enthalten ist, rufen Sie [IMAPIFolder::CopyMessages](imapifolder-copymessages.md) auf, deren MESSAGE_MOVE festgelegt ist, um die Nachricht in den Ordner "Gelöschte Elemente" zu verschieben. 
     
 

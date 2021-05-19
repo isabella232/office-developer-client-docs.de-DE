@@ -21,12 +21,12 @@ ms.locfileid: "33435285"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ordnet einen Arbeitsspeicherpuffer neu zu. Sie wird mit der [MAPIAllocateBuffer](mapiallocatebuffer.md) -Funktion verwendet. 
+Gibt einen Speicherpuffer neu zu. Es wird mit der [MAPIAllocateBuffer-Funktion](mapiallocatebuffer.md) verwendet. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |omapix. h  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Headerdatei  <br/> |omapix.h  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 STDMETHODIMP_(SCODE) MAPIReallocateBuffer
@@ -39,21 +39,21 @@ LPVOID * lppv
 
 ## <a name="parameters"></a>Parameter
 
- _LPV_
+ _lpv_
   
-> Ein Zeiger auf den Speicher, der neu zugeordnet werden soll.
+> Ein Zeiger auf den speicher, der neu zugewiesen werden soll.
     
  _ulSize_
   
-> Die Größe des Puffers in Byte, der reserviert werden soll.
+> Die Größe des zu zugeordneten Puffers in Bytes.
     
- _LPPV_
+ _lppv_
   
-> Ein Zeiger auf den zurückgegebenen reservierten Puffer.
+> Ein Zeiger auf den zurückgegebenen zugewiesenen Puffer.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
- **MAPIReallocateBuffer** weist einen neuen Speicherblock der angeforderten Größe zu und kopiert den Inhalt des Puffers, der an diesen neuen Speicherblock übergeben wird. Wenn der übergebene Speicherblock interne Zeiger enthält, werden die Zeiger nicht so geändert, dass Sie mit dem neuen Speicherort übereinstimmen. 
+ **MAPIReallocateBuffer** weist einen neuen Speicherblock der angeforderten Größe zu und kopiert den Inhalt des Puffers, der an diesen neuen Speicherblock übergeben wird. Wenn der übergebene Speicherblock interne Zeiger enthält, ändern sich die Zeiger nicht an den neuen Speicherort. 
   
 ## <a name="see-also"></a>Siehe auch
 

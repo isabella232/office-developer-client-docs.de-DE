@@ -25,11 +25,11 @@ ms.locfileid: "33434263"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von **STnefProblem** -Strukturen, die ein oder mehrere Verarbeitungsprobleme beschreiben, die während der Codierung oder deCodierung eines Transport Neutral Encapsulation Format (TNEF)-Streams aufgetreten sind. 
+Enthält ein Array von **STnefProblem-Strukturen,** die ein oder mehrere Verarbeitungsprobleme beschreiben, die während der Codierung oder Decodierung eines TNEF-Datenstroms (Transport Neutral Encapsulation Format) aufgetreten sind. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |TNEF. h  <br/> |
+|Headerdatei  <br/> |Tnef.h  <br/> |
    
 ```cpp
 typedef struct _STnefProblemArray
@@ -40,21 +40,21 @@ typedef struct _STnefProblemArray
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cProblem**
   
-> Die Anzahl der Elemente im Array, die im **aProblem** -Element angegeben sind. 
+> Anzahl der Elemente im Array, das im **aProblem-Element angegeben** ist. 
     
  **aProblem**
   
-> Array von [STnefProblem](stnefproblem.md) -Strukturen. Jede Struktur enthält Informationen zu einem Problem mit Eigenschaft oder Attribut Verarbeitung. 
+> Array von [STnefProblem-Strukturen.](stnefproblem.md) Jede Struktur enthält Informationen zu einem Eigenschafts- oder Attributverarbeitungsproblem. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn ein Problem während der Attribut-oder Eigenschaften Verarbeitung auftritt, erhalten ein Output-Parameter in der [ITnef:: ExtractProps](itnef-extractprops.md) -Methode und in der [ITnef:: Finish](itnef-finish.md) -Methode jeweils einen Zeiger auf eine **STnefProblemArray** -Struktur und **ExtractProps **und **Fertig stellen** Sie den Wert MAPI_W_ERRORS_RETURNED. Dieser Fehlerwert gibt an, dass während der Verarbeitung ein Problem auftrat und eine **STnefProblemArray** -Struktur generiert wurde. 
+Wenn während der Attribut- oder Eigenschaftenverarbeitung ein Problem auftritt, erhalten ein Ausgabeparameter in der [ITnef::ExtractProps-Methode](itnef-extractprops.md) und in der [ITnef::Finish-Methode](itnef-finish.md) jeweils einen Zeiger auf eine **STnefProblemArray-Struktur** und **ExtractProps** und **Finish** geben jeweils den Wert MAPI_W_ERRORS_RETURNED. Dieser Fehlerwert gibt an, dass während der Verarbeitung ein Problem aufgetreten ist und eine **STnefProblemArray-Struktur** generiert wurde. 
   
-Wenn während der Verarbeitung eines Attributs oder einer Eigenschaft keine **STnefProblem** -Struktur generiert wird, kann die Clientanwendung weiterhin davon ausgehen, dass die Verarbeitung dieses Attributs oder dieser Eigenschaft erfolgreich war. Die einzige Ausnahme tritt auf, wenn das Problem während der Decodierung eines Kapselungs Blocks auftrat. Wenn der Fehler während dieser Decodierung aufgetreten ist, kann MAPI_E_UNABLE_TO_COMPLETE als [SCODE](scode.md) in der Struktur zurückgegeben werden. In diesem Fall wird die Decodierung der Komponente, die dem Block entspricht, angehalten, und die Decodierung wird in einer anderen Komponente fortgesetzt. 
+Wenn während der Verarbeitung eines Attributs oder einer Eigenschaft keine **STnefProblem-Struktur** generiert wird, kann die Clientanwendung unter der Annahme fortfahren, dass die Verarbeitung dieses Attributs oder dieser Eigenschaft erfolgreich war. Die einzige Ausnahme tritt auf, wenn das Problem während der Decodierung eines Kapselungsblocks auftstand. Wenn der Fehler während dieser Decodierung aufgetreten ist, MAPI_E_UNABLE_TO_COMPLETE als [SCODE](scode.md) in der Struktur zurückgegeben werden. In diesem Fall wird die Decodierung der Komponente, die dem Block entspricht, beendet, und die Decodierung wird in einer anderen Komponente fortgesetzt. 
   
 ## <a name="see-also"></a>Siehe auch
 

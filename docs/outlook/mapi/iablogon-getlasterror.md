@@ -25,7 +25,7 @@ ms.locfileid: "33434249"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt eine [MAPIERROR](mapierror.md) -Struktur zurück, die Informationen zum vorherigen Fehler des Adressbuch Anbieters enthält. 
+Gibt eine [MAPIERROR-Struktur](mapierror.md) zurück, die Informationen zum vorherigen Adressbuchanbieterfehler enthält. 
   
 ```cpp
 HRESULT GetLastError(
@@ -39,19 +39,19 @@ HRESULT GetLastError(
 
  _hResult_
   
-> in Ein Handle für den im vorherigen Methodenaufruf generierten Fehlerwert.
+> [in] Ein Handle zum Fehlerwert, der im vorherigen Methodenaufruf generiert wurde.
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die den Typ der zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die den Typ der zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
     
 MAPI_UNICODE 
   
-> Die Zeichenfolgen in der **MAPIERROR** -Struktur, die im _lppMAPIError_ -Parameter zurückgegeben werden, sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format. 
+> Die Zeichenfolgen in der **MAPIERROR-Struktur,** die im  _lppMAPIError-Parameter_ zurückgegeben wird, sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Zeichenfolgen im ANSI-Format. 
     
  _lppMAPIError_
   
-> Out Ein Zeiger auf einen Zeiger auf eine **MAPIERROR** -Struktur, die Versions-, Komponenten-und Kontextinformationen für den Fehler enthält. Der _lppMAPIError_ -Parameter kann auf NULL festgelegt werden, wenn der Anbieter keine **MAPIERROR** -Struktur mit den entsprechenden Informationen angeben kann. 
+> [out] Ein Zeiger auf einen Zeiger auf eine **MAPIERROR-Struktur,** die Versions-, Komponenten- und Kontextinformationen für den Fehler enthält. Der  _lppMAPIError-Parameter_ kann auf NULL festgelegt werden, wenn der Anbieter keine **MAPIERROR-Struktur** mit entsprechenden Informationen angeben kann. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -61,17 +61,17 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> Entweder wurde das MAPI_UNICODE-Flag festgelegt, und der Adressbuchanbieter unterstützt Unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und der Adressbuchanbieter unterstützt nur Unicode.
+> Entweder wurde MAPI_UNICODE-Flag festgelegt, und der Adressbuchanbieter unterstützt Unicode nicht, oder MAPI_UNICODE nicht festgelegt, und der Adressbuchanbieter unterstützt nur Unicode.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Adressbuchanbieter implementieren die **getlasterroraufzurufen** -Methode, um Informationen zu einem zuvor fehlgeschlagenen Methodenaufruf bereitzustellen. Aufrufer können Ihren Benutzern detaillierte Informationen zum Fehler bereitstellen, indem Sie die Daten aus der **MAPIERROR** -Struktur in ein Dialogfeld einschließen. 
+Adressbuchanbieter implementieren die **GetLastError-Methode,** um Informationen zu einem vorherigen Methodenaufruf zu liefern, der fehlgeschlagen ist. Anrufer können ihren Benutzern detaillierte Informationen zu dem Fehler bereitstellen, indem sie die Daten aus der **MAPIERROR-Struktur** in ein Dialogfeld eingeben. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Sie können die **MAPIERROR** -Struktur, auf die durch den _lppMAPIError_ -Parameter verwiesen wird, verwenden, wenn der Adressbuchanbieter die Struktur bereitstellt und nur dann, wenn **getlasterroraufzurufen** S_OK zurückgibt. Manchmal kann der Adressbuchanbieter nicht ermitteln, was der letzte Fehler aufweist oder nicht mehr über den Fehler berichtet. In dieser Situation gibt der Adressbuchanbieter stattdessen einen Zeiger auf NULL in _lppMAPIError_ zurück. 
+Sie können die **MAPIERROR-Struktur verwenden,** auf die der  _lppMAPIError-Parameter_ verweist, wenn der Adressbuchanbieter die Struktur angibt und nur, wenn **GetLastError** S_OK. Manchmal kann der Adressbuchanbieter nicht ermitteln, was der letzte Fehler war oder hat nichts mehr über den Fehler zu melden. In diesem Fall gibt der Adressbuchanbieter stattdessen einen Zeiger auf NULL in  _lppMAPIError_ zurück. 
   
-Weitere Informationen zur **getlasterroraufzurufen** -Methode finden Sie unter [MAPI Extended Errors](mapi-extended-errors.md).
+Weitere Informationen zur **GetLastError-Methode** finden Sie unter [MAPI Extended Errors](mapi-extended-errors.md).
   
 ## <a name="see-also"></a>Siehe auch
 

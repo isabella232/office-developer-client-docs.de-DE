@@ -1,5 +1,5 @@
 ---
-title: ÜberPrüfen und Initialisieren eines Nachrichtenspeichers
+title: Überprüfen und Initialisieren einer Nachricht Store
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,23 +15,23 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33433689"
 ---
-# <a name="validating-and-initializing-a-message-store"></a>ÜberPrüfen und Initialisieren eines Nachrichtenspeichers
+# <a name="validating-and-initializing-a-message-store"></a>Überprüfen und Initialisieren einer Nachricht Store
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Wenn Sie einen Nachrichtenspeicher über die [IMAPISession:: OpenMsgStore](imapisession-openmsgstore.md) -Methode öffnen, ohne das MDB_NO_MAIL-Flag festzulegen, erstellt MAPI mehrere Ordner und weist Ihnen Standardnamen und Rollen zu. MAPI ist für die Erstellung dieser Ordner verantwortlich, um die Unverträglichkeiten zu vermeiden, die unvermeidlich wären, wenn entweder Clients oder Nachrichtenspeicher Anbieter für die Erstellung verantwortlich waren. 
+Wenn Sie einen Nachrichtenspeicher über die [IMAPISession::OpenMsgStore-Methode](imapisession-openmsgstore.md) öffnen, ohne das MDB_NO_MAIL-Flag zu setzen, erstellt MAPI mehrere Ordner und weist ihnen Standardnamen und Rollen zu. MAPI ist für das Erstellen dieser Ordner verantwortlich, um die Inkompatibilitäten zu vermeiden, die zwangsläufig auftreten würden, wenn entweder Clients oder Nachrichtenspeicheranbieter für die Erstellung verantwortlich wären. 
   
-Manchmal muss überprüft werden, ob die entsprechenden Ordner erstellt wurden und dass Sie gültig sind. Die [HrValidateIPMSubtree](hrvalidateipmsubtree.md) -Funktion steht zu diesem Zweck zur Verfügung. Wenn Sie den Standardnachrichtenspeicher überprüfen, führen Sie das MAPI_FULL_IPM_TREE-Flag aus. Eine umfangreichere Gruppe von Ordnern wird für den Standardnachrichtenspeicher erstellt. Wenn **HrValidateIPMSubtree** das MAPI_FULL_IPM_TREE-Flag erhält, prüft es die folgenden Ordner: 
+Manchmal muss überprüft werden, ob die entsprechenden Ordner erstellt wurden und gültig sind. Die [HrValidateIPMSubtree-Funktion](hrvalidateipmsubtree.md) ist zu diesem Zweck verfügbar. Wenn Sie den Standardnachrichtenspeicher überprüfen, übergeben Sie das MAPI_FULL_IPM_TREE. Für den Standardnachrichtenspeicher wird eine umfangreichere Gruppe von Ordnern erstellt. Wenn **HrValidateIPMSubtree** das MAPI_FULL_IPM_TREE erhält, wird nach den folgenden Ordnern überprüft: 
   
 - Stammordner für die IPM-Unterstruktur
     
 - Ordner "Gelöschte Elemente" im IPM-Stammordner
     
-- PostEingangsordner im IPM-Stammordner
+- Posteingangsordner im IPM-Stammordner
     
-- Ausgangsordner im IPM-Stammordner
+- Ordner "Outbox" im IPM-Stammordner
     
 - Ordner "Gesendete Elemente" im IPM-Stammordner
     
@@ -41,18 +41,18 @@ Manchmal muss überprüft werden, ob die entsprechenden Ordner erstellt wurden u
     
 - Suchordner im Stammordner des Nachrichtenspeichers
     
-Wenn der Nachrichtenspeicher nicht der Standardwert ist, können Sie das MAPI_FULL_IPM_TREE-Flag festlegen oder nicht festlegen. Wenn dieses Flag nicht festgelegt ist, sucht **HrValidateIPMSubtree** nur nach dem Stammordner für die Unterstruktur, dem Ordner "Gelöschte Elemente" und dem Stammordner für die Suchergebnisse des Nachrichtenspeichers. 
+Wenn der Nachrichtenspeicher nicht die Standardeinstellung ist, können Sie das MAPI_FULL_IPM_TREE festlegen. Wenn dieses Flag nicht festgelegt ist, sucht **HrValidateIPMSubtree** nur nach dem Stammordner für die Unterstruktur, den Ordner "Gelöschte Elemente" und den Stammordner für Die Suchergebnisse des Nachrichtenspeichers. 
   
-Um einen Nachrichtenspeicher zu initialisieren, speichern Sie die folgenden Eigenschaften im Arbeitsspeicher, damit Sie sofort verfügbar sind:
+Zum Initialisieren eines Nachrichtenspeichers speichern Sie die folgenden Eigenschaften im Arbeitsspeicher, sodass sie sofort verfügbar sind:
   
-- **PR_VALID_FOLDER_MASK** ([Pidtagvalidfoldermask (](pidtagvalidfoldermask-canonical-property.md))
+- **PR_VALID_FOLDER_MASK** ([PidTagValidFolderMask](pidtagvalidfoldermask-canonical-property.md))
     
 - **PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md))
     
-Diese Eigenschaften sind Bitmasken, die Features des Nachrichtenspeichers beschreiben. **PR_VALID_FOLDER_MASK** hat ein Bit für jeden speziellen Ordner festgelegt, der im Nachrichtenspeicher vorhanden ist und einen gültigen Eintragsbezeichner besitzt. Weitere Informationen zum Zugriff auf diese Ordner und ihre Eintragsbezeichner finden Sie unter [Öffnen eines Nachrichtenspeicher Ordners](opening-a-message-store-folder.md). 
+Diese Eigenschaften sind Bitmasken, die Features des Nachrichtenspeichers beschreiben. **PR_VALID_FOLDER_MASK** für jeden speziellen Ordner, der im Nachrichtenspeicher vorhanden ist, und über einen zugewiesenen Eintragsbezeichner verfügt, der gültig ist, ist ein Bit festgelegt. Weitere Informationen zum Zugriff auf diese Ordner und deren Eintragsbezeichner finden Sie unter [Opening a Message Store Folder](opening-a-message-store-folder.md). 
   
- **PR_STORE_SUPPORT_MASK** hat für jedes im Nachrichtenspeicher unterstützte Feature ein Bit festgelegt. Wenn beispielsweise ein Nachrichtenspeicher Benachrichtigungen und formatierten Text unterstützt, werden für dessen **PR_STORE_SUPPORT_MASK** die Bits STORE_NOTIFY_OK und STORE_RTF_OK festgelegt. 
+ **PR_STORE_SUPPORT_MASK** ist für jedes feature, das im Nachrichtenspeicher unterstützt wird, ein Bit festgelegt. Wenn beispielsweise ein Nachrichtenspeicher Benachrichtigungen und  formatierten Text unterstützt, PR_STORE_SUPPORT_MASK die STORE_NOTIFY_OK und STORE_RTF_OK festgelegt. 
   
-Andere Eigenschaften, die lokal gespeichert werden sollen, sind die Eintrags-IDs für die Ordner, die von der **PR_VALID_FOLDER_MASK** -Eigenschaft als gültig beschrieben werden. Jedem dieser speziellen Ordner, mit Ausnahme des Ordners "Inbox", ist eine Eintrags-ID-Eigenschaft zugeordnet. Beispielsweise ist die Eintrags-ID für den Ordner Postausgang Ihre **PR_IPM_OUTBOX_ENTRYID** ([pidtagipmoutboxentryid (](pidtagipmoutboxentryid-canonical-property.md))-Eigenschaft. Da es sich bei diesen Ordnern um die Ordner handelt, die häufig geöffnet werden, empfiehlt es sich, die Eingabe Kennungen bereitzustellen.
+Zu den anderen Eigenschaften, die lokal gespeichert werden sollen, gehören die Eintragsbezeichner für die Ordner, die von **der PR_VALID_FOLDER_MASK** als gültig beschrieben werden. Jedem dieser speziellen Ordner, mit Ausnahme des Posteingangsordners, ist eine Eintrags-ID-Eigenschaft zugeordnet. Der Eintragsbezeichner für den Ordner "Outbox" ist beispielsweise die **PR_IPM_OUTBOX_ENTRYID** ([PidTagIpmOutboxEntryId](pidtagipmoutboxentryid-canonical-property.md)) -Eigenschaft. Da es sich bei diesen Ordnern um die Ordner handelt, die häufig geöffnet werden, ist es eine gute Idee, die Eintrags-IDs sofort verfügbar zu machen.
   
 

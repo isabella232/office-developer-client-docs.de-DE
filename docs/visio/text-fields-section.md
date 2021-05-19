@@ -20,7 +20,7 @@ ms.locfileid: "33434949"
 
 Zeigt Funktionen und Formeln an, die über das Dialogfeld **Feld** in den Text des Shapes eingefügt werden. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Die einzige Möglichkeit zum Hinzufügen dieses Abschnitts ist das Einfügen eines Felds in ein Shape unter Verwendung des Dialogfelds **Feld** (Registerkarte **Einfügen**). 
   

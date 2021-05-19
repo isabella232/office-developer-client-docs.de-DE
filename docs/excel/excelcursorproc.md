@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - ExcelCursorProc
 keywords:
-- excelcursorproc-Funktion [Excel 2007]
+- excelcursorproc-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: 43759617-998d-4030-a17d-c4bbe35ffaf9
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -22,7 +22,7 @@ ms.locfileid: "33432492"
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Wenn ein modales Dialogfeld über das Microsoft Excel-Fenster angezeigt wird, ist der Cursor ein Beschäftigter Cursor über das Excel-Fenster. Dieser **WndProc** -Traps WM_SETCURSOR Windows-Meldungen und ändert den Cursor zurück zu einem normalen Pfeil. 
+Wenn ein modales Dialogfeld über dem Fenster Microsoft Excel angezeigt wird, ist der Cursor ein beschäftigter Cursor über Excel Fenster. Dieses **WndProc-Traping** WM_SETCURSOR Typ Windows Nachrichten und ändert den Cursor zurück in einen normalen Pfeil. 
   
 ```cs
 LRESULT CALLBACK ExcelCursorProc(HWND hwnd, UINT wMsg, WPARAM wParam, LPARAM lParam);
@@ -34,23 +34,23 @@ LRESULT CALLBACK ExcelCursorProc(HWND hwnd, UINT wMsg, WPARAM wParam, LPARAM lPa
   
 Enthält das HWND-Windows-Handle des Dialogfelds.
   
- _Nachricht_ (**Uint**)
+ _message_ (**UINT**)
   
-Die Nachricht, auf die geantwortet werden soll.
+Die Nachricht, auf die reagiert werden soll.
   
- _wParam_ (**WParam**)
+ _wParam_ (**WPARAM**)
   
- _LPARAM_ (**LPARAM**)
+ _lParam_ (**LPARAM**)
   
-Von Windows übergebene Argumente.
+Argumente, die von Windows.
   
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-LRESULT: 0, wenn die Nachricht behandelt wurde, andernfalls das von der Standard- **WndProc**-Objekt zurückgegebene Ergebnis.
+LRESULT: 0, wenn die Nachricht verarbeitet wurde, andernfalls das Vom **Standard-WndProc zurückgegebene Ergebnis.**
   
 ### <a name="example"></a>Beispiel
 
-Den `\SAMPLES\GENERIC\GENERIC.C` Quellcode für diese Funktion finden Sie unter. 
+Den  `\SAMPLES\GENERIC\GENERIC.C` Quellcode für diese Funktion finden Sie unter. 
   
 ## <a name="see-also"></a>Siehe auch
 

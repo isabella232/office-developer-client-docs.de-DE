@@ -25,7 +25,7 @@ ms.locfileid: "33435348"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft den Ordner ab, der als Ziel für eingehende Nachrichten einer angegebenen Nachrichtenklasse oder als standardmäßiger Empfangsordner für den Nachrichtenspeicher eingerichtet wurde.
+Ruft den Ordner ab, der als Ziel für eingehende Nachrichten einer angegebenen Nachrichtenklasse oder als Standard-Empfangsordner für den Nachrichtenspeicher eingerichtet wurde.
   
 ```cpp
 HRESULT GetReceiveFolder(
@@ -41,27 +41,27 @@ HRESULT GetReceiveFolder(
 
  _lpszMessageClass_
   
-> in Ein Zeiger auf eine Nachrichtenklasse, die einem Empfangsordner zugeordnet ist. Wenn der Parameter _lpszMessageClass_ auf NULL oder eine leere Zeichenfolge festgelegt ist, gibt **GetReceiveFolder** den standardmäßigen Empfangsordner für den Nachrichtenspeicher zurück. 
+> [in] Ein Zeiger auf eine Nachrichtenklasse, die einem Empfangsordner zugeordnet ist. Wenn der  _lpszMessageClass-Parameter_ auf NULL oder eine leere Zeichenfolge festgelegt ist, gibt **GetReceiveFolder** den Standard-Empfangsordner für den Nachrichtenspeicher zurück. 
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die den Typ der übergebenen und zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske von Flags, die den Typ der übergebenen und zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
     
 MAPI_UNICODE 
   
-> Die Zeichenfolge der Nachrichtenklasse ist im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, ist die Zeichenfolge der Nachrichtenklasse im ANSI-Format.
+> Die Zeichenfolge der Nachrichtenklasse befindet sich im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befindet sich die Zeichenfolge der Nachrichtenklasse im ANSI-Format.
     
  _lpcbEntryID_
   
-> Out Ein Zeiger auf die Bytezahl in der Eintrags-ID, auf die durch den _lppEntryID_ -Parameter verwiesen wird. 
+> [out] Ein Zeiger auf die Byteanzahl in der Eintrags-ID, auf die der  _lppEntryID-Parameter_ verweist. 
     
  _lppEntryID_
   
-> Out Ein Zeiger auf einen Zeiger auf die Eintrags-ID für den angeforderten Empfänger Ordner.
+> [out] Ein Zeiger auf einen Zeiger auf die Eintrags-ID für den angeforderten Empfangsordner.
     
  _lppszExplicitClass_
   
-> Out Ein Zeiger auf einen Zeiger auf die Nachrichtenklasse, die explizit als der Empfänger Ordner den Ordner, auf den durch _lppEntryID_festgelegt wird. Diese Nachrichtenklasse sollte entweder mit der Klasse im _lpszMessageClass_ -Parameter oder mit einer Basisklasse dieser Klasse übereinstimmen. Die Übergabe von NULL gibt an, dass der Ordner, auf den von _lppEntryID_ verwiesen wird, der standardmäßige Empfangsordner für den Nachrichtenspeicher ist. 
+> [out] Ein Zeiger auf einen Zeiger auf die Nachrichtenklasse, die explizit als Empfangsordner festgelegt wird, auf den der Ordner durch _lppEntryID verweist._ Diese Nachrichtenklasse sollte entweder mit der Klasse im  _lpszMessageClass-Parameter_ oder einer Basisklasse dieser Klasse identisch sein. Das Übergeben von NULL gibt an, dass der Ordner, auf den  _lppEntryID_ verweist, der Standard-Empfangsordner für den Nachrichtenspeicher ist. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -69,21 +69,21 @@ S_OK
   
 > Der Empfangsordner wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMsgStore:: GetReceiveFolder** -Methode ruft die Eintrags-ID eines Empfangs Ordners ab, einen Ordner, der zum Empfangen eingehender Nachrichten einer bestimmten Nachrichtenklasse bestimmt ist. Anrufer können eine Nachrichtenklasse oder einen NULL-Wert im _lpszMessageClass_ -Parameter angeben. Wenn _lpszMessageClass_ ist, gibt **GetReceiveFolder** die folgenden Werte zurück: 
+Die **IMsgStore::GetReceiveFolder-Methode** ruft die Eintrags-ID eines Empfangsordners ab, einem Ordner, der für den Empfang eingehender Nachrichten einer bestimmten Nachrichtenklasse bestimmt ist. Anrufer können eine Nachrichtenklasse oder NULL im  _lpszMessageClass-Parameter_ angeben. Wenn  _lpszMessageClass_ null ist, **gibt GetReceiveFolder** die folgenden Werte zurück: 
   
-- In _lppszExplicitClass_der Name der ersten Basisklasse der Nachrichtenklasse, auf die durch _lpszMessageClass_ verwiesen wird, der explizit einen Empfangsordner festgelegt hat. 
+- In  _lppszExplicitClass_ der Name der ersten Basisklasse der Nachrichtenklasse, auf die  _von lpszMessageClass_ verwiesen wird, die explizit einen Empfangsordner festgelegt hat. 
     
-- In _lppEntryID_wird die Eintrags-ID des Empfänger Ordners für die Basisklasse, auf die durch den _lppszExplicitClass_ -Parameter verwiesen wird. 
+- In  _lppEntryID_ der Eintragsbezeichner des Empfangsordners für die Basisklasse, auf die der  _lppszExplicitClass-Parameter_ verweist. 
     
-Angenommen, der Empfangsordner der Nachrichtenklasse **IPM. Hinweis** wurde auf die Eintrags-ID des Posteingangs festgelegt, und **GetReceiveFolder** wird aufgerufen, wenn der Inhalt von _lpszMessageClass_ auf IPM festgelegt ist **. Hinweis. Phone**. Wenn **IPM. Hinweis. das Telefon** verfügt nicht über einen expliziten Empfänger Ordner, **GetReceiveFolder** gibt den Eintragsbezeichner des Posteingangs in _lppEntryID_ und **IPM zurück. Hinweis** in _lppszExplicitClass_.
+Angenommen, der Empfangsordner der Nachrichtenklasse **IPM. Note** has been set to the entry identifier of the Inbox and **GetReceiveFolder** is called with the contents of _lpszMessageClass_ set to **IPM. Hinweis. Telefon**. Wenn **IPM. Hinweis. Telefon** hat keinen expliziten Empfangsordnersatz, **gibt GetReceiveFolder** den Eintragsbezeichner des Posteingangs in _lppEntryID_ und **IPM zurück. Hinweis** in _lppszExplicitClass_.
   
-Wenn der Client **GetReceiveFolder** für eine Nachrichtenklasse aufruft und keinen Empfangsordner für diese Nachrichtenklasse festgelegt hat, ist _lppszExplicitClass_ entweder eine leere Zeichenfolge, eine Zeichenfolge im Unicode-Format oder eine Zeichenfolge im ANSI-Format, je nachdem, ob die Client legen Sie das MAPI_UNICODE-Flag im _ulFlags_ -Parameter fest. 
+Wenn der Client **GetReceiveFolder** für eine Nachrichtenklasse aufruft und keinen Empfangsordner für diese Nachrichtenklasse festgelegt hat, ist  _lppszExplicitClass_ entweder eine Nulllängenzeichenfolge, eine Zeichenfolge im Unicode-Format oder eine Zeichenfolge im ANSI-Format, je nachdem, ob der Client das MAPI_UNICODE-Flag im  _ulFlags-Parameter_ festgelegt hat. 
   
-Ein standardmäßiger Empfangsordner, der durch Übergeben von NULL im _lpszMessageClass_ -Parameter abgerufen wird, ist immer für jeden Nachrichtenspeicher vorhanden. 
+Ein Standardmäßiger Empfangsordner, der durch Übergeben von NULL im  _lpszMessageClass-Parameter_ erhalten wird, ist immer für jeden Nachrichtenspeicher vorhanden. 
   
-Ein Client sollte die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion aufrufen, wenn er mit der in _lppEntryID_ zurückgegebenen Eintrags-ID ausgeführt wird, um den Speicher freizugeben, der diese Eintrags-ID enthält. Sie sollte auch **mapifreebufferfreigegeben** aufrufen, wenn Sie mit der in _lppszExplicitClass_ zurückgegebenen Nachrichtenklassen Zeichenfolge ausgeführt wird, um den Speicher freizugeben, der diese Zeichenfolge enthält. 
+Ein Client sollte die [MAPIFreeBuffer-Funktion](mapifreebuffer.md) aufrufen, wenn dies mit dem in  _lppEntryID zurückgegebenen_ Eintragsbezeichner erfolgt, um den Speicher frei zu machen, der diese Eintrags-ID enthält. Es sollte auch **MAPIFreeBuffer** aufrufen, wenn dies mit der in  _lppszExplicitClass_ zurückgegebenen Nachrichtenklassenzeichenfolge erfolgt, um den Speicher frei zu machen, der diese Zeichenfolge enthält. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -91,7 +91,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIFunctions. cpp  <br/> |GetInbox  <br/> |MFCMAPI verwendet die **IMsgStore:: GetReceiveFolder** -Methode, um den Ordner Posteingang zu suchen.  <br/> |
+|MAPIFunctions.cpp  <br/> |GetInbox  <br/> |MFCMAPI verwendet die **IMsgStore::GetReceiveFolder-Methode,** um den Posteingangsordner zu finden.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

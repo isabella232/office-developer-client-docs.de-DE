@@ -25,7 +25,7 @@ ms.locfileid: "33434830"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Überprüft ein Array von Strukturen, die benannte Eigenschaften beschreiben und deren Zuordnung überprüfen. 
+Überprüft ein Array von Strukturen, die benannte Eigenschaften beschreiben, und überprüft deren Zuordnung. 
   
 |||
 |:-----|:-----|
@@ -44,24 +44,24 @@ BOOL FBadRglpNameID(
 
  _lppNameId_
   
-> in Zeiger auf ein Array von [MAPINAMEID](mapinameid.md) -Strukturen, die die benannten Eigenschaften beschreiben. 
+> [in] Zeiger auf ein Array von [MAPINAMEID-Strukturen,](mapinameid.md) die die benannten Eigenschaften beschreiben. 
     
  _cNames_
   
-> in Die Anzahl der benannten Eigenschaftsstrukturen im Array, auf die durch den _lppNameId_ -Parameter verwiesen wird. 
+> [in] Anzahl der benannten Eigenschaftenstrukturen im Array, auf die der  _lppNameId-Parameter_ verweist. 
     
 ## <a name="return-value"></a>Rückgabewert
 
 TRUE 
   
-> Mindestens eine der angegebenen Strukturen für den Eigenschaftennamen ist ungültig. 
+> Mindestens eine der angegebenen Eigenschaftennamensstrukturen ist ungültig. 
     
 FALSE 
   
-> Die angegebenen Strukturen für den Eigenschaftennamen sind alle gültig.
+> Die angegebenen Eigenschaftennamensstrukturen sind alle gültig.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **FBadRglpNameID** -Funktion kann verwendet werden, wenn Sie einen Aufruf von [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) oder [IMAPIProp:: GetNamesFromIDs](imapiprop-getnamesfromids.md)einrichten. 
+Die **FBadRglpNameID-Funktion** kann beim Einrichten eines Aufrufs von [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) oder [IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md)verwendet werden. 
   
 

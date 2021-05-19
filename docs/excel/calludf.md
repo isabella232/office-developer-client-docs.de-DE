@@ -18,7 +18,7 @@ ms.locfileid: "33433011"
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Ruft eine benutzerdefinierte Funktion in einer Hochleistungs-Computing-Umgebung auf.
+Ruft eine benutzerdefinierte Funktion in einer hochleistungsorientierten Computerumgebung auf.
   
 ```cpp
 int CallUDF(int SessionId, WCHAR *XllName, WCHAR *UDFName, LPXLOPER12 pxAsyncHandle, int (*CallBackAddr)(), int ArgCount, LPXLOPER12 Parameter1, ...)
@@ -28,7 +28,7 @@ int CallUDF(int SessionId, WCHAR *XllName, WCHAR *UDFName, LPXLOPER12 pxAsyncHan
 
 _SessionId_
   
-> Die ID der Sitzung, in der der Anruf vorgenommen werden soll.
+> Die ID der Sitzung, in der der Anruf zu nehmen ist.
     
 _XLLName_
   
@@ -40,25 +40,25 @@ _UDFName_
     
 _CallBackAddr_
   
-> Die Funktion, die der Connector aufrufen sollte, wenn die benutzerdefinierte Funktion abgeschlossen ist.
+> Die Funktion, die der Connector aufrufen soll, wenn die benutzerdefinierte Funktion beendet ist.
     
 _pxAsyncHandle_
   
-> Das von Excel verwendete asynchrone Handle und der Konnektor zum Nachverfolgen des ausstehenden benutzerdefinierten Funktionsaufrufs. Der Connector verwendet ihn später, wenn der Anruf beendet wird, wenn er mit dem Funktionszeiger, der im _CallBackAddr_ -Argument übergeben wird, zurück in Excel aufruft. 
+> Das asynchrone Handle, das von Excel und dem Connector zum Nachverfolgen des ausstehenden benutzerdefinierten Funktionsaufrufs verwendet wird. Der Connector verwendet ihn später, wenn der Aufruf beendet ist, wenn er mit Excel aufruft, der im _Argument CallBackAddr übergeben_ wird. 
     
 _ArgCount_
   
-> Die Anzahl der Argumente, die an die benutzerdefinierte Funktion übergeben werden sollen. Der maximal zulässige Wert ist 255.
+> Die Anzahl der Argumente, die an die benutzerdefinierte Funktion übergeben werden. Der maximal zulässige Wert ist 255.
     
 _Parameter1_
   
-> Ein Wert, der an die benutzerdefinierte Funktion weitergegeben werden soll. Wiederholen Sie dieses Argument für jeden von _ArgCount_angegebenen Parameter.
+> Ein Wert, der an die benutzerdefinierte Funktion übergeben werden soll. Wiederholen Sie dieses Argument für jeden parameter, der durch _ArgCount angegeben wird._
     
 ## <a name="return-value"></a>Rückgabewert
 
-**xlHpcRetSuccess** , wenn der UDF-Aufruf erfolgreich initiiert wurde; **xlHpcRetInvalidSessionId** , wenn das _SessionID_ -Argument ungültig ist; **xlHpcRetCallFailed** bei anderen Fehlern, einschließlich Timeout. Wenn der Aufruf einen Fehlercode (alles außer **xlHpcRetSuccess**) zurückgibt, sieht Excel, dass der UDF-Aufruf fehlgeschlagen ist, die _pxAsyncHandle_ungültig macht und nicht erwartet, dass ein Rückruf stattfindet.
+**xlHpcRetSuccess,** wenn der #A0 erfolgreich initiiert wurde. **xlHpcRetInvalidSessionId,** wenn _das Argument SessionId_ ungültig ist; **xlHpcRetCallFailed** bei anderen Fehlern, einschließlich Eines-Zeit-Outs. Wenn der Aufruf Fehlercode zurückgibt (mit Ausnahme von **xlHpcRetSuccess),** wird von Excel der UDF-Aufruf als fehlgeschlagen betrachtet, der _pxAsyncHandle_ ungültig gemacht und kein Rückruf erwartet.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Diese Funktion wird asynchron ausgeführt.
   

@@ -21,13 +21,13 @@ ms.locfileid: "33434340"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Führt die gleiche Funktion wie [HrOpenABEntryWithExchangeContext](hropenabentrywithexchangecontext.md) aus, außer dass der Legacy- **emsmdbUID** als _pEmsmdbUID_ -Parameter verwendet wird. Verwenden Sie diese Funktion nur, wenn Sie nicht die richtige **emsmdbUID** für den Aufruf von [HrOpenABEntryWithExchangeContext](hropenabentrywithexchangecontext.md)abrufen können.
+Führt dieselbe Funktion wie [HrOpenABEntryWithExchangeContext](hropenabentrywithexchangecontext.md) aus, mit der Ausnahme, dass der ältere **emsmdbUID** als  _pEmsmdbUID-Parameter verwendet_ wird. Verwenden Sie diese Funktion nur, wenn Sie die richtige **emsmdbUID** für den Aufruf von [HrOpenABEntryWithExchangeContext nicht abrufen können.](hropenabentrywithexchangecontext.md)
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |abhelp. h  <br/> |
+|Headerdatei  <br/> |abhelp.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 HRESULT HrOpenABEntryUsingDefaultContext(
@@ -46,58 +46,58 @@ HRESULT HrOpenABEntryUsingDefaultContext(
 
  _pmsess_
   
-> in Der angemeldete **IMAPISession**. Er darf nicht NULL sein.
+> [in] Die angemeldete **IMAPISession**. Es kann nicht NULL sein.
     
  _pAddrBook_
   
-> in Das zum Öffnen des Eintrags Bezeichners verwendete Adressbuch. Er darf nicht NULL sein.
+> [in] Das Adressbuch, das zum Öffnen der Eintrags-ID verwendet wird. Es kann nicht NULL sein.
     
  _cbEntryID_
   
-> in Die Bytezahl der vom _lpEntryID_ -Parameter angegebenen Eintrags-ID. 
+> [in] Die Byteanzahl des Eintragsbezeichners, der durch den  _lpEntryID-Parameter angegeben_ wird. 
     
  _lpEntryID_
   
->  in Ein Zeiger auf die Eintrags-ID, die den zu öffnenden Adressbucheintrag darstellt. 
+>  [in] Ein Zeiger auf den Eintragsbezeichner, der den zu öffnende Adressbucheintrag darstellt. 
     
  _lpInterface_
   
-> in Ein Zeiger auf die Schnittstellen-ID (IID) der Schnittstelle, die für den Zugriff auf den geöffneten Eintrag verwendet wird. Beim Übergeben von NULL wird die Standardschnittstelle des Objekts zurückgegeben. Für Messagingbenutzer ist die Standardschnittstelle [IMailUser: IMAPIProp](imailuserimapiprop.md). Für Verteilerlisten ist es [IDistList: IMAPIContainer](idistlistimapicontainer.md), und für Container ist es [IABContainer: IMAPIContainer](iabcontainerimapicontainer.md). Anrufer können _lpInterface_ auf die entsprechende Standardschnittstelle oder eine Schnittstelle in der Vererbungshierarchie festlegen. 
+> [in] Ein Zeiger auf die Schnittstellen-ID (Interface Identifier, IID) der Schnittstelle, die für den Zugriff auf den geöffneten Eintrag verwendet wird. Durch Übergeben von NULL wird die Standardschnittstelle des Objekts zurückgegeben. Für Messagingbenutzer ist die Standardschnittstelle [IMailUser : IMAPIProp](imailuserimapiprop.md). Für Verteilerlisten ist [IDistList : IMAPIContainer](idistlistimapicontainer.md)und für Container [IABContainer : IMAPIContainer](iabcontainerimapicontainer.md). Anrufer können  _lpInterface_ auf die entsprechende Standardschnittstelle oder eine Schnittstelle in der Vererbungshierarchie festlegen. 
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die steuert, wie der Eintrag geöffnet wird. Die folgenden Flags können festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie der Eintrag geöffnet wird. Die folgenden Kennzeichen können festgelegt werden:
     
 MAPI_BEST_ACCESS
   
-> Fordert, dass der Eintrag mit den maximal zulässigen Netzwerk-und Clientberechtigungen geöffnet wird. Wenn der Client beispielsweise über Lese-und Schreibberechtigungen verfügt, versucht der Adressbuchanbieter, den Eintrag mit Lese-und Schreibberechtigung zu öffnen. Der Client kann die Zugriffsebene abrufen, die durch Aufrufen der [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode des geöffneten Eintrags und Abrufen der PR_ACCESS_LEVEL (pidtagaccesslevel ()-Eigenschaft erteilt wurde. 
+> Fordert an, dass der Eintrag mit den maximal zulässigen Netzwerk- und Clientberechtigungen geöffnet wird. Wenn der Client beispielsweise über Lese- und Schreibberechtigungen verfügt, versucht der Adressbuchanbieter, den Eintrag mit Lese- und Schreibberechtigung zu öffnen. Der Client kann die Zugriffsebene abrufen, die gewährt wurde, indem die [IMAPIProp::GetProps-Methode](imapiprop-getprops.md) des geöffneten Eintrags aufgerufen und die PR_ACCESS_LEVEL -Eigenschaft (PidTagAccessLevel) abgerufen wird. 
     
 MAPI_CACHE_ONLY
   
-> Verwendet nur das Offlineadressbuch zum Durchführen der Namensauflösung. Sie können dieses Flag beispielsweise verwenden, um einer Clientanwendung die globale Adressliste (GAL) im Exchange-Cache-Modus zu öffnen und auf einen Eintrag in diesem Adressbuch aus dem Cache zuzugreifen, ohne Datenverkehr zwischen dem Client und dem Server zu erstellen. Dieses Flag wird nur vom Exchange-Adressbuchanbieter unterstützt.
+> Verwendet nur das Offlineadressbuch, um die Namensauflösung durchzuführen. Sie können dieses Flag beispielsweise verwenden, um einer Clientanwendung zu ermöglichen, die globale Adressliste (GAL) im Exchange-Cache-Modus zu öffnen und aus dem Cache auf einen Eintrag in diesem Adressbuch zu zugreifen, ohne Datenverkehr zwischen dem Client und dem Server zu erstellen. Dieses Flag wird nur vom Adressbuchanbieter Exchange unterstützt.
     
 MAPI_DEFERRED_ERRORS
   
-> Der Aufruf kann erfolgreich ausgeführt werden, bevor der Eintrag vollständig geöffnet und verfügbar ist, was bedeutet, dass nachfolgende Aufrufe des Eintrags möglicherweise einen Fehler zurückgeben.
+> Ermöglicht den Erfolgreichen Aufruf, möglicherweise bevor der Eintrag vollständig geöffnet und verfügbar ist, was bedeutet, dass nachfolgende Aufrufe des Eintrags möglicherweise einen Fehler zurückgeben.
     
 MAPI_GAL_ONLY
   
-> Verwendet nur die GAL zur Namensauflösung. Dieses Flag wird nur vom Exchange-Adressbuchanbieter unterstützt.
+> Verwendet nur die GAL, um die Namensauflösung durchzuführen. Dieses Flag wird nur vom Adressbuchanbieter Exchange unterstützt.
     
 MAPI_MODIFY
   
-> Fordert, dass der Eintrag mit Lese-und Schreibberechtigung geöffnet wird. Da Einträge standardmäßig mit schreibgeschütztem Zugriff geöffnet werden, sollten Clients nicht davon ausgehen, dass Lese-und Schreibberechtigungen erteilt wurden, unabhängig davon, ob MAPI_MODIFY festgelegt ist.
+> Fordert an, dass der Eintrag mit Lese- und Schreibberechtigung geöffnet wird. Da Einträge standardmäßig mit schreibgeschützten Zugriffen geöffnet werden, sollten Clients nicht davon ausgehen, dass Lese- und Schreibberechtigungen gewährt wurden, unabhängig davon, ob MAPI_MODIFY festgelegt ist.
     
 MAPI_NO_CACHE
   
-> Das Offlineadressbuch wird nicht zum Durchführen der Namensauflösung verwendet. Dieses Flag wird nur vom Exchange-Adressbuchanbieter unterstützt.
+> Verwendet das Offlineadressbuch nicht zum Ausführen der Namensauflösung. Dieses Flag wird nur vom Adressbuchanbieter Exchange unterstützt.
     
  _lpulObjType_
   
-> Out Ein Zeiger auf den Typ des geöffneten Eintrags.
+> [out] Ein Zeiger auf den Typ des geöffneten Eintrags.
     
  _lppUnk_
   
-> Out Ein Zeiger auf einen Zeiger des geöffneten Eintrags.
+> [out] Ein Zeiger auf einen Zeiger des geöffneten Eintrags.
     
 

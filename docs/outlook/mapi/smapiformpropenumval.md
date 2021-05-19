@@ -25,11 +25,11 @@ ms.locfileid: "33435411"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ordnet einen aufgezählten ganzzahligen Wert einem Anzeigenamen für diesen Wert zu. 
+Karten einen aufgezählten ganzzahligen Wert in einen Anzeigenamen für den Wert. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiform. h  <br/> |
+|Headerdatei  <br/> |Mapiform.h  <br/> |
    
 ```cpp
 typedef struct _SMAPIFormPropEnumVal
@@ -40,19 +40,19 @@ typedef struct _SMAPIFormPropEnumVal
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **pszDisplayName**
   
-> Zeichenfolge, die den Anzeigenamen für den im **NVAL** -Element angegebenen Wert enthält. 
+> Zeichenfolge, die den Anzeigenamen für den im **nVal-Element angegebenen Wert** enthält. 
     
  **nVal**
   
-> Ein Enumerationswert für den Anzeigenamen, auf den vom **pszDisplayName** -Element verwiesen wird. 
+> Ein Enumerationswert für den Anzeigenamen, auf den das **pszDisplayName-Element** verweist. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn ein Benutzer einen Anzeigenamen aus einem Formular auswählt, wird der entsprechende Enumerationswert des Namens mithilfe der [IMAPIProp](imapipropiunknown.md) -Schnittstellenimplementierung gespeichert, die dem Formular zugeordnet ist. 
+Wenn ein Benutzer einen Anzeigenamen aus einem Formular auswählt, wird der entsprechende Enumerationswert des Namens mithilfe der [IMAPIProp-Schnittstellenimplementierung](imapipropiunknown.md) gespeichert, die dem Formular zugeordnet ist. 
   
 ## <a name="see-also"></a>Siehe auch
 

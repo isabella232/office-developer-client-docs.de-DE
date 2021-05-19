@@ -25,11 +25,11 @@ ms.locfileid: "33435173"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine MTS-Eintrags-ID (X. 400-Nachrichtentransportsystem). 
+Enthält eine X.400 Message Transport System (MTS)-Eintrags-ID. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
 |Verwandte Makros:  <br/> |[CbMTSID](cbmtsid.md), [CbNewMTSID](cbnewmtsid.md) <br/> |
    
 ```cpp
@@ -41,21 +41,21 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cb**
   
-> Die Anzahl der Bytes im vom **abEntry** -Element beschriebenen Array. 
+> Anzahl der Bytes im array, das vom **abEntry-Element beschrieben** wird. 
     
  **abEntry**
   
 > Bytearray, das die MTS-Eintrags-ID-Daten enthält.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **MTSID** -Struktur wird nur für X. 400-ZUORDNUNGEN von MAPI-Eintrags Bezeichnern verwendet. Es entspricht der MAPI- [FLATENTRY](flatentry.md) -Struktur. 
+Die **MTSID-Struktur** wird nur für X.400-Zuordnungen von MAPI-Eintragsbezeichnern verwendet. Sie entspricht der MAPI [FLATENTRY-Struktur.](flatentry.md) 
   
-Ein MTS-Bezeichner hat das gleiche Format wie eine MAPI-Eintrags-ID oder einen binären Eigenschaftswert. MTS-IDs können besonders nützlich sein, wenn verzögerte Nachrichten abgebrochen werden. 
+Ein MTS-Bezeichner hat das gleiche Format wie ein MAPI-Eintragsbezeichner oder ein binärer Eigenschaftswert. MTS-Bezeichner können besonders nützlich sein, um verzögerte Nachrichten abgesagt zu haben. 
   
 ## <a name="see-also"></a>Siehe auch
 

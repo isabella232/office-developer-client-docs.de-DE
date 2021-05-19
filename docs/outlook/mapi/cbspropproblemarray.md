@@ -25,12 +25,12 @@ ms.locfileid: "33434907"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl der Bytes in einer vorhandenen [SPropProblemArray](spropproblemarray.md) -Struktur. 
+Berechnet die Anzahl der Bytes in einer vorhandenen [SPropProblemArray-Struktur.](spropproblemarray.md) 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |**SPropProblemArray** <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |**SPropProblemArray** <br/> |
    
 ```cpp
 CbSPropProblemArray (_lparray)
@@ -38,9 +38,9 @@ CbSPropProblemArray (_lparray)
 
 ## <a name="parameters"></a>Parameter
 
- __LPArray_
+ _ _lparray_
   
-> Zeiger auf die vorhandene **SPropProblemArray** -Struktur. 
+> Zeiger auf die vorhandene **SPropProblemArray-Struktur.** 
     
 ## <a name="see-also"></a>Siehe auch
 

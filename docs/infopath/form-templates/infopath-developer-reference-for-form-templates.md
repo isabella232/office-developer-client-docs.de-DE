@@ -7,7 +7,7 @@ ms.date: 11/16/2019
 ms.audience: Developer
 ms.topic: overview
 keywords:
-- Formularvorlagen [InfoPath 2007], Formularvorlagen mit verwaltetem Code [InfoPath 2007], Verweis [InfoPath 2007], verwalteter Code [InfoPath 2007], InfoPath 2007, Referenz
+- Formularvorlagen [infopath 2007],Formularvorlagen für verwalteten Code [InfoPath 2007],Verweis [InfoPath 2007],verwalteter Code [InfoPath 2007],InfoPath 2007, Referenz
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 7610acc3-f705-4a38-968c-5b3a358efc90
@@ -27,10 +27,10 @@ Datum der Veröffentlichung dieser Referenz: Oktober 2012
   
 ## <a name="related-links"></a>Verwandte Links
 
-[Microsoft Office Developer Center: docs](https://developer.microsoft.com/en-us/office/docs)
+[Microsoft Office Developer Center: Dokumente](https://developer.microsoft.com/en-us/office/docs)
   
 
-[Microsoft-Eingabehilfen](https://www.microsoft.com/en-us/accessibility/)
+[Microsoft-Bedienungshilfen](https://www.microsoft.com/en-us/accessibility/)
 
   
 

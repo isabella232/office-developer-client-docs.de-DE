@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 534e404f-54c6-4d2b-a8d0-d2ee990a972f
-description: Ruft eine Zeichenfolge, die eine eindeutige soziale Netzwerk-ID für eine bestimmte soziale Netzwerkverbindung darstellt.
+description: Ruft eine Zeichenfolge ab, die eine eindeutige ID für soziale Netzwerke für eine bestimmte Verbindung mit sozialen Netzwerken darstellt.
 ms.openlocfilehash: 3051abd6dcccec878e8c53332980731772d543eb
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -17,7 +17,7 @@ ms.locfileid: "33433276"
 ---
 # <a name="isocialsessiongetnetworkidentifier"></a>ISocialSession::GetNetworkIdentifier
 
-Ruft eine Zeichenfolge, die eine eindeutige soziale Netzwerk-ID für eine bestimmte soziale Netzwerkverbindung darstellt. 
+Ruft eine Zeichenfolge ab, die eine eindeutige ID für soziale Netzwerke für eine bestimmte Verbindung mit sozialen Netzwerken darstellt. 
   
 ```cpp
 HRESULT _stdcall GetNetworkIdentifier([out, retval] BSTR* networkIdentifier);
@@ -27,11 +27,11 @@ HRESULT _stdcall GetNetworkIdentifier([out, retval] BSTR* networkIdentifier);
 
 _networkIdentifier_
   
-> Out Eine Zeichenfolge, die eine eindeutige soziale Netzwerk-ID enthält.
+> [out] Eine Zeichenfolge, die einen eindeutigen Bezeichner für soziale Netzwerke enthält.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Eine eindeutige Netzwerk-ID ist eine Zeichenfolge, die das soziale Netzwerk des Outlook Social Connector (OSC)-Anbieters identifiziert. Diese Methode kann auch E_NOTIMPL zurückgeben.
+Ein eindeutiger Netzwerkbezeichner ist eine Zeichenfolge, die das soziale Netzwerk Outlook Social Connector (OSC) identifiziert. Diese Methode kann auch E_NOTIMPL.
   
 ## <a name="see-also"></a>Siehe auch
 

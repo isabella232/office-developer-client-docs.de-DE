@@ -37,23 +37,23 @@ HRESULT GetCapabilities(
 
  _pulCapablities_
   
-> Out Eine Bitmaske der folgenden Capability Flags:
+> [out] Eine Bitmaske der folgenden Funktionskennzeichen:
     
 MAPIOFFLINE_CAPABILITY_OFFLINE
   
-> Das Offline-Objekt kann offline Benachrichtigungen bereitstellen.
+> Das Offlineobjekt kann Offlinebenachrichtigungen bereitstellen.
     
 MAPIOFFLINE_CAPABILITY_ONLINE
   
-> Das Offline-Objekt kann online Benachrichtigungen bereitstellen.
+> Das Offlineobjekt kann Onlinebenachrichtigungen bereitstellen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Beim Öffnen eines Offline Objekts mithilfe von **[HrOpenOfflineObj](hropenofflineobj.md)** kann ein Client [IMAPIOfflineMgr](imapiofflinemgrimapioffline.md) Abfragen, um einen Zeiger auf eine **IMAPIOffline** -Schnittstelle abzurufen, und **IMAPIOffline::** getcapabilitiess aufrufen, um die unterstützten Rückrufe herauszufinden. durch das Objekt. Der Client kann dann Rückrufe mithilfe von **IMAPIOfflineMgr**einrichten.
+Beim Öffnen eines Offlineobjekts mithilfe von **[HrOpenOfflineObj](hropenofflineobj.md)** kann ein Client [IMAPIOfflineMgr](imapiofflinemgrimapioffline.md) abfragen, um einen Zeiger auf eine **IMAPIOffline-Schnittstelle** zu erhalten, und **IMAPIOffline::GetCapabilities** aufrufen, um die vom Objekt unterstützten Rückrufe zu finden. Der Client kann dann mithilfe von **IMAPIOfflineMgr** Rückrufe einrichten.
   
-Beachten Sie, dass abhängig vom e-Mail-Server für ein Offlineobjekt ein Objekt, das Rückrufe für das Online schalten unterstützt, nicht notwendigerweise Rückrufe für das offline schalten unterstützen wird.
+Beachten Sie, dass ein Objekt, das Rückrufe für den Onlinebetrieb unterstützt, abhängig vom E-Mail-Server für ein Offlineobjekt nicht unbedingt Rückrufe für den Offlinebetrieb unterstützt.
   
-Beachten Sie, dass ein Offlineobjekt Rückrufe für andere Änderungen als Online/Offline möglicherweise unterstützt, die Offlinestatus-API jedoch nur Online/Offline-Änderungen und Clients nur für solche Funktionen überprüfen muss.
+Beachten Sie außerdem, dass ein Offlineobjekt zwar Rückrufe für andere Änderungen als Online/Offline unterstützt, die Offlinestatus-API jedoch nur Online-/Offlineänderungen unterstützt, und Clients müssen nur auf diese Funktionen überprüfen.
   
 ## <a name="see-also"></a>Siehe auch
 

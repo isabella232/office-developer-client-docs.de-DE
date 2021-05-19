@@ -25,7 +25,7 @@ ms.locfileid: "33434151"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ermöglicht den Zugriff auf die Tabelle für ausgehende Warteschlangen, eine Tabelle mit Informationen zu allen Nachrichten in der ausgehenden Warteschlange des Nachrichtenspeichers. Diese Methode ist nur durch die MAPI-Warteschlange aufgerufen.
+Bietet Zugriff auf die Tabelle für ausgehende Warteschlangen, eine Tabelle mit Informationen zu allen Nachrichten in der ausgehenden Warteschlange des Nachrichtenspeichers. Diese Methode ist nur durch die MAPI-Warteschlange aufgerufen.
   
 ```cpp
 HRESULT GetOutgoingQueue(
@@ -42,25 +42,25 @@ HRESULT GetOutgoingQueue(
     
  _lppTable_
   
-> Out Ein Zeiger auf einen Zeiger auf die Tabelle der ausgehenden Warteschlange.
+> [out] Ein Zeiger auf einen Zeiger auf die ausgehende Warteschlangentabelle.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Tabelle für die ausgehende Warteschlange wurde erfolgreich zurückgegeben.
+> Die Tabelle für ausgehende Warteschlangen wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMsgStore:: GetOutgoingQueue** -Methode bietet dem MAPI-Spooler Zugriff auf die Tabelle, in der die Warteschlange des Nachrichtenspeichers von ausgehenden Nachrichten angezeigt wird. In der Regel werden Nachrichten in der Tabelle für ausgehende Warteschlangen platziert, nachdem die [IMessage:: SubmitMessage](imessage-submitmessage.md) -Methode aufgerufen wird. Da sich die Reihenfolge der Übermittlung jedoch auf die Reihenfolge der Vorverarbeitung und Übermittlung an den Transportanbieter auswirkt, werden einige Nachrichten, die zum Senden markiert wurden, möglicherweise nicht sofort in der Tabelle für ausgehende Warteschlangen angezeigt. 
+Die **IMsgStore::GetOutgoingQueue-Methode** bietet dem MAPI-Spooler Zugriff auf die Tabelle, die die Warteschlange des Nachrichtenspeichers mit ausgehenden Nachrichten zeigt. In der Regel werden Nachrichten in der Ausgehenden Warteschlangentabelle platziert, nachdem ihre [IMessage::SubmitMessage-Methode](imessage-submitmessage.md) aufgerufen wurde. Da sich die Reihenfolge der Übermittlung jedoch auf die Reihenfolge der Vorverarbeitung und Übermittlung an den Transportanbieter auswirkt, werden einige Nachrichten, die für das Senden markiert wurden, möglicherweise nicht sofort in der Tabelle für ausgehende Warteschlangen angezeigt. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Eine Liste der Eigenschaften, die in der Tabelle für ausgehende Warteschlangen als Spalten enthalten sein müssen, finden Sie unter [ausgehende Warteschlangentabellen](outgoing-queue-tables.md). 
+Eine Liste der Eigenschaften, die als Spalten in der Tabelle für ausgehende Warteschlangen enthalten sein müssen, finden Sie unter [Outgoing Queue Tables](outgoing-queue-tables.md). 
   
-Da der MAPI-Spooler so konzipiert ist, dass er Nachrichten aus einem Nachrichtenspeicher in aufsteigender Reihenfolge der Übermittlungszeit akzeptiert, können die MAPI-Spooler die Tabelle für die ausgehende Warteschlange so sortieren, dass Sie dieser Reihenfolge entspricht, oder Sie als Standardsortierreihenfolge festlegen.
+Da der MAPI-Spooler so konzipiert ist, dass Nachrichten aus einem Nachrichtenspeicher in aufsteigender Reihenfolge der Übermittlungszeit akzeptiert werden, können Sie entweder zulassen, dass der MAPI-Spooler die ausgehende Warteschlangentabelle so sortiert, dass sie mit dieser Reihenfolge übereinstimmen kann, oder legen Sie sie als Standardsortierreihenfolge fest.
   
-Sie müssen Benachrichtigungen für die Warteschlangentabelle für ausgehende Nachrichten unterstützen, um sicherzustellen, dass der MAPI-Spooler benachrichtigt wird, wenn sich die Inhalte der Warteschlange ändern. 
+Sie müssen Benachrichtigungen für die Warteschlangentabelle für ausgehende Nachrichten unterstützen, um sicherzustellen, dass der MAPI-Spooler benachrichtigt wird, wenn sich der Inhalt der Warteschlange ändert. 
   
 ## <a name="see-also"></a>Siehe auch
 

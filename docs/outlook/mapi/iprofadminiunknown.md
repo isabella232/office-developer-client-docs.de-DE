@@ -29,10 +29,10 @@ Unterstützt die Verwaltung von Profilen.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapix. h  <br/> |
+|Headerdatei  <br/> |Mapix.h  <br/> |
 |Verf�gbar gemacht von:  <br/> |Profilverwaltungsobjekt  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IProfAdmin  <br/> |
 |Zeigertyp:  <br/> |LPPROFADMIN  <br/> |
    
@@ -40,15 +40,15 @@ Unterstützt die Verwaltung von Profilen.
 
 |||
 |:-----|:-----|
-|[Getlasterroraufzurufen](iprofadmin-getlasterror.md) <br/> |Gibt eine [MAPIERROR](mapierror.md) -Struktur zurück, die Informationen zum vorherigen Fehler enthält, der in einem Profilverwaltungsobjekt aufgetreten ist.  <br/> |
-|[GetProfilable](iprofadmin-getprofiletable.md) <br/> |Ermöglicht den Zugriff auf die Profiltabelle, eine Tabelle, die Informationen zu allen verfügbaren Profilen enthält.  <br/> |
+|[GetLastError](iprofadmin-getlasterror.md) <br/> |Gibt eine [MAPIERROR-Struktur](mapierror.md) zurück, die Informationen zum vorherigen Fehler enthält, der für ein Profilverwaltungsobjekt aufgetreten ist.  <br/> |
+|[GetProfileTable](iprofadmin-getprofiletable.md) <br/> |Bietet Zugriff auf die Profiltabelle, eine Tabelle, die Informationen zu allen verfügbaren Profilen enthält.  <br/> |
 |[CreateProfile](iprofadmin-createprofile.md) <br/> |Erstellt ein neues Profil.  <br/> |
 |[DeleteProfile](iprofadmin-deleteprofile.md) <br/> |Löscht ein Profil.  <br/> |
 |[ChangeProfilePassword](iprofadmin-changeprofilepassword.md) <br/> |Veraltet. Ändert das Kennwort für ein Profil.  <br/> |
 |[CopyProfile](iprofadmin-copyprofile.md) <br/> |Kopiert ein Profil.  <br/> |
 |[RenameProfile](iprofadmin-renameprofile.md) <br/> |Weist einem Profil einen neuen Namen zu.  <br/> |
-|[SetDefaultProfile](iprofadmin-setdefaultprofile.md) <br/> |Legt fest oder löscht das Standardprofil eines Clients.  <br/> |
-|[AdminServices](iprofadmin-adminservices.md) <br/> |Ermöglicht den Zugriff auf ein Nachrichtendienst-Verwaltungsobjekt zum vornehmen von Änderungen an den Nachrichtendiensten in einem Profil.  <br/> |
+|[SetDefaultProfile](iprofadmin-setdefaultprofile.md) <br/> |Legt das Standardprofil eines Clients fest oder deaktiviert es.  <br/> |
+|[AdminServices](iprofadmin-adminservices.md) <br/> |Bietet Zugriff auf ein Nachrichtendienstverwaltungsobjekt zum Vornehmen von Änderungen an den Nachrichtendiensten in einem Profil.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

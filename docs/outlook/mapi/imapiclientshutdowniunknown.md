@@ -29,8 +29,8 @@ Ermöglicht einem MAPI-Client das schnelle Herunterfahren des Clientprozesses.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Verf�gbar gemacht von:  <br/> |[IMAPISession](imapisessioniunknown.md) -Objekt  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verf�gbar gemacht von:  <br/> |[IMAPISession-Objekt](imapisessioniunknown.md)  <br/> |
 |Implementiert von:  <br/> |MAPI-Subsystem  <br/> |
 |Aufgerufen von:  <br/> |MAPI-Client  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPIClientShutdown  <br/> |
@@ -40,19 +40,19 @@ Ermöglicht einem MAPI-Client das schnelle Herunterfahren des Clientprozesses.
 
 |||
 |:-----|:-----|
-|[QueryFastShutdown](imapiclientshutdown-queryfastshutdown.md) <br/> |Fragt das MAPI-Subsystem zur Unterstützung des schnellen Herunterfahrens ab, das von geladenen MAPI-Anbietern bereitgestellt wird.  <br/> |
-|[NotifyProcessShutdown](imapiclientshutdown-notifyprocessshutdown.md) <br/> |Gibt an, dass der MAPI-Client mit dem Herunterfahren fortfahren soll.  <br/> |
-|[DoFastShutdown](imapiclientshutdown-dofastshutdown.md) <br/> |Gibt an, dass der MAPI-Client sofort den Clientprozess beenden soll.  <br/> |
+|[QueryFastShutdown](imapiclientshutdown-queryfastshutdown.md) <br/> |Fragt das MAPI-Subsystem nach Unterstützung für schnelles Herunterfahren ab, die von geladenen MAPI-Anbietern bereitgestellt wird.  <br/> |
+|[NotifyProcessShutdown](imapiclientshutdown-notifyprocessshutdown.md) <br/> |Gibt die Absicht des MAPI-Clients an, mit dem Herunterfahren fortzufahren.  <br/> |
+|[DoFastShutdown](imapiclientshutdown-dofastshutdown.md) <br/> |Gibt die Absicht des MAPI-Clients an, den Clientprozess sofort zu beenden.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Der Zweck des schnellen Herunterfahrens besteht darin, einem MAPI-Client und einem beliebigen geladenen MAPI-Anbieter, mit dem der MAPI-Client über eine aktive MAPI-Sitzung verfügt, die MAPI-Einstellungen und-Daten zu speichern. Dadurch kann der MAPI-Client alle externen Verweise trennen und beenden, ohne Datenverluste zu verursachen. Ein MAPI-Client, der Schnelles Herunterfahren durchführen muss, muss die **IMAPIClientShutdown** -Schnittstelle verwenden. Der MAPI-Client kann einen Zeiger auf diese Schnittstelle abrufen, indem er die IUnknown:: QueryInterface-Methode für ein beliebiges [IMAPISession](imapisessioniunknown.md) -Objekt aufruft. 
+Der Zweck des schnellen Herunterfahrens besteht im Zulassen eines MAPI-Clients und eines beliebigen geladenen MAPI-Anbieters, mit dem der MAPI-Client über eine aktive MAPI-Sitzung zum Speichern von MAPI-Einstellungen und -Daten verfügt. Dadurch kann der MAPI-Client alle externen Verweise trennen und beenden, ohne Datenverlust zu verursachen. Ein MAPI-Client, der schnelles Herunterfahren ausführen muss, muss die **IMAPIClientShutdown-Schnittstelle** verwenden. Der MAPI-Client kann einen Zeiger auf diese Schnittstelle abrufen, indem er die IUnknown::QueryInterface-Methode für jedes [IMAPISession-Objekt](imapisessioniunknown.md) aufruft. 
   
-Ein MAPI-Client initiiert immer ein schnelles Herunterfahren durch Aufrufen der **IMAPIClientShutdown:: QueryFastShutdown** -Methode. Das MAPI-Subsystem antwortet auf die Abfrage des MAPI-Clients, indem überprüft wird, ob geladene MAPI-Anbieter das schnelle Herunterfahren des Clients unterstützen. Der Administrator kann mithilfe der Windows-Registrierungseinstellungen die Ebene der Anbieterunterstützung ermitteln, die für MAPI-Clients erforderlich ist, um das schnelle Herunterfahren zu ermöglichen. Weitere Informationen finden Sie unter [Benutzeroptionen für das schnelle Herunterfahren](fast-shutdown-user-options.md).
+Ein MAPI-Client initiiert immer ein schnelles Herunterfahren, indem die **IMAPIClientShutdown::QueryFastShutdown-Methode aufgerufen** wird. Das MAPI-Subsystem antwortet auf die Abfrage des MAPI-Clients, indem es überprüft, ob geladene MAPI-Anbieter das schnelle Herunterfahren des Clients unterstützen. Der Administrator kann mithilfe Windows Registrierungseinstellungen bestimmen, welche Stufe der Anbieterunterstützung erforderlich ist, damit MAPI-Clients mit dem schnellen Herunterfahren fortfahren können. Weitere Informationen finden Sie unter [Fast Shutdown User Options](fast-shutdown-user-options.md).
   
-Um mit dem schnellen Herunterfahren fortzufahren, ruft der Client die **IMAPIClientShutdown:: NotifyProcessShutdown** -Methode auf, um dem MAPI-Subsystem anzuzeigen, dass das Herunterfahren beabsichtigt ist. Der Client ruft dann die **IMAPIClientShutdown::D ofastshutdown** -Methode auf, um anzugeben, dass der Clientprozess sofort beendet wird. 
+Um mit dem schnellen Herunterfahren fortzufahren, ruft der Client die **IMAPIClientShutdown::NotifyProcessShutdown-Methode** auf, um dem MAPI-Subsystem die Absicht zum Herunterfahren anzuzeigen. Der Client ruft dann die **IMAPIClientShutdown::D oFastShutdown-Methode** auf, um anzugeben, dass der Clientprozess sofort beendet wird. 
   
-Weitere Informationen zum schnellen Herunterfahren finden Sie unter [Übersicht über Schnelles Herunterfahren](fast-shutdown-overview.md). Informationen dazu, wie Sie das schnelle Herunterfahren erfolgreich durchführen können, finden Sie unter [bewährte Methoden für das schnelle Herunterfahren](best-practices-for-fast-shutdown.md).
+Weitere Informationen zum schnellen Herunterfahren finden Sie unter [Fast Shutdown Overview](fast-shutdown-overview.md). Informationen zum erfolgreichen Schnellen Herunterfahren finden Sie unter [Best Practices for Fast Shutdown](best-practices-for-fast-shutdown.md).
   
 ## <a name="see-also"></a>Siehe auch
 

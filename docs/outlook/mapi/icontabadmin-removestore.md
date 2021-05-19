@@ -25,7 +25,7 @@ ms.locfileid: "33435418"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Entfernt das von der angegebenen Eintrags-ID angegebene Kontakt Adressbuch (CAB) aus der Adressbuchhierarchie.
+Entfernt das durch die angegebene Eintrags-ID angegebene Adressbuch (Contact Address Book, CAB) aus der Adressbuchhierarchie.
   
 ```cpp
 HRESULT RemoveStore(
@@ -38,10 +38,10 @@ LPENTRYID lpEntryID
 
  _cbEntryID_
   
-> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID_ -Parameter verwiesen wird. 
+> [in] Die Byteanzahl im Eintragsbezeichner, auf den der  _lpEntryID-Parameter_ verweist. 
     
  _lpEntryID_
   
-> in Ein Zeiger auf die Eintrags-ID des zu öffnenden Objekts.
+> [in] Ein Zeiger auf den Eintragsbezeichner des zu öffnende Objekts.
     
 

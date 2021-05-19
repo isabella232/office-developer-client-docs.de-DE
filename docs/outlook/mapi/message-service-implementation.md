@@ -1,5 +1,5 @@
 ---
-title: Nachrichtendienst Implementierung
+title: Implementierung des Nachrichtendiensts
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,23 +15,23 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33434032"
 ---
-# <a name="message-service-implementation"></a>Nachrichtendienst Implementierung
+# <a name="message-service-implementation"></a>Implementierung des Nachrichtendiensts
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ein Nachrichtendienst ist ein oder mehrere verwandte Dienstanbieter, die zum Zweck der Vereinfachung der Installation und Konfiguration gruppiert sind. Alle Dienstanbieter sollten in einen Nachrichtendienst aufgenommen werden.
+Bei einem Nachrichtendienst handelt es sich um einen oder mehrere verwandte Dienstanbieter, die zum Zweck der Vereinfachung der Installation und Konfiguration zusammen gruppieren. Alle Dienstanbieter sollten in einen Nachrichtendienst einbezogen werden.
   
-Gehen Sie folgendermaßen vor, um einen Nachrichtendienst mit einem oder mehreren Anbietern zu implementieren:
+Verwenden Sie das folgende Verfahren, um einen Nachrichtendienst mit einem oder mehreren Anbietern zu implementieren:
   
-1. Entwerfen Sie den Nachrichtendienst, und bestimmen Sie die Anzahl und den Typ der einzuschließenden Dienstanbieter. Weitere Informationen zum Entwerfen eines Nachrichtendiensts finden Sie unter [Entwerfen eines Nachrichtendiensts](designing-a-message-service.md).
+1. Entwerfen Sie den Nachrichtendienst, und bestimmen Sie die Anzahl und den Typ der Dienstanbieter, die einbezogen werden sollen. Weitere Informationen zum Entwerfen eines Nachrichtendiensts finden Sie unter [Designing a Message Service](designing-a-message-service.md).
     
-2. Erstellen Sie ein Setupprogramm zum Installieren der Dienstanbieter im Nachrichtendienst. Weitere Informationen zum Schreiben eines Nachrichtendienst-Setupprogramms finden Sie unter [unterstützen der Nachrichtendienst Installation](supporting-message-service-installation.md). 
+2. Erstellen Sie ein Setupprogramm, um die Dienstanbieter im Nachrichtendienst zu installieren. Weitere Informationen zum Schreiben eines Nachrichtendienst-Setupprogramms finden Sie unter [Supporting Message Service Installation](supporting-message-service-installation.md). 
     
-3. Erstellen Sie eine Einstiegspunktfunktion, um die Konfiguration auszuführen. Weitere Informationen zum Schreiben einer Einstiegspunktfunktion für den Nachrichtendienst finden Sie unter [unterstützen von Nachrichtendienst Konfiguration](supporting-message-service-configuration.md) und [MSGSERVICEENTRY](msgserviceentry.md). 
+3. Erstellen Sie eine Einstiegspunktfunktion zum Ausführen der Konfiguration. Weitere Informationen zum Schreiben einer Nachrichtendienst-Einstiegspunktfunktion finden Sie unter [Supporting Message Service Configuration](supporting-message-service-configuration.md) und [MSGSERVICEENTRY](msgserviceentry.md). 
     
-4. Erstellen Sie eine öffentliche Headerdatei, die die Eigenschaftentags und Beschreibungen gültiger Werte für benutzerdefinierte Eigenschaften enthält, die vom Nachrichtendienst unterstützt werden. 
+4. Erstellen Sie eine öffentliche Headerdatei, die die Eigenschaftstags und Beschreibungen gültiger Werte für alle benutzerdefinierten Eigenschaften enthält, die vom Nachrichtendienst unterstützt werden. 
     
 ## <a name="see-also"></a>Siehe auch
 

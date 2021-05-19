@@ -33,8 +33,8 @@ Die **FestlegenFeld**-Aktion kann mit den in der folgenden Tabelle aufgeführten
 |**Name** <br/> |Eine Zeichenfolge, die das Feld bezeichnet.  <br/> |
 |**Wert** <br/> |Ein Ausdruck, der den Wert angibt, der dem Feld zugewiesen werden soll.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **SetField** -Aktion kann nicht außerhalb eines CreateRecord-oder **[bearbeitendatensatz](editrecord-data-block-access-custom-web-app.md)** -Datenblocks verwendet werden. **[](createrecord-data-block-access-custom-web-app.md)** 
+Die **SetField-Aktion** kann nicht außerhalb eines **[CreateRecord-](createrecord-data-block-access-custom-web-app.md)** oder **[EditRecord-Datenblocks](editrecord-data-block-access-custom-web-app.md)** verwendet werden. 
   
 

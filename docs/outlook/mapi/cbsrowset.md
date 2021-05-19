@@ -25,12 +25,12 @@ ms.locfileid: "33432891"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl der Bytes in einer vorhandenen [SRowSet](srowset.md) -Struktur. 
+Berechnet die Anzahl der Bytes in einer vorhandenen [SRowSet-Struktur.](srowset.md) 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |**SRowSet** <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |**SRowSet** <br/> |
    
 ```cpp
 CbSRowSet (_lprowset)
@@ -38,9 +38,9 @@ CbSRowSet (_lprowset)
 
 ## <a name="parameters"></a>Parameter
 
- __lprowset_
+ _ _lprowset_
   
-> Zeiger auf die vorhandene **SRowSet** -Struktur. 
+> Zeiger auf die vorhandene **SRowSet-Struktur.** 
     
 ## <a name="see-also"></a>Siehe auch
 

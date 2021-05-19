@@ -24,23 +24,23 @@ Bestimmt, ob die Seite im Hoch- oder im Querformat gedruckt wird.
 |:-----|:-----|:-----|
 | 0  <br/> | Druckereinstellungen übernehmen  <br/> |**visPPOSameAsPrinter** <br/> |
 | 1  <br/> | Portrait  <br/> |**visPPOPortrait** <br/> |
-|2  <br/> |Landschaft  <br/> |**visPPOLandscape** <br/> |
+|2  <br/> |Querformat  <br/> |**visPPOLandscape** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie neue Seiten in ein Dokument einfügen, ist diese Einstellung standardmäßig die Einstellung auf der aktiven Seite.
+Wenn Sie neue Seiten in ein Dokument einfügen, wird diese Einstellung standardmäßig auf der aktiven Seite festgelegt.
   
-Wenn Sie einen Verweis auf die Zelle PrintPageOrientation aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle PrintPageOrientation anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | PrintPageOrientation  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle PrintPageOrientation aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle PrintPageOrientation nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowPrintProperties** <br/> |
 | Zeilenindex:  <br/> |**visPrintPropertiesPageOrientation** <br/> |
    

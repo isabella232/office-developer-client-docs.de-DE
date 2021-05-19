@@ -25,13 +25,13 @@ ms.locfileid: "33432534"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt dem MAPI-Spooler Zugriff auf einen Transportanbieter. 
+Gewährt dem MAPI-Spooler Zugriff auf einen Transportanbieter. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapispi. h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Transport Anmeldeobjekte  <br/> |
-|Implementiert von:  <br/> |Transport Anbieter  <br/> |
+|Headerdatei  <br/> |Mapispi.h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Transportanmeldeobjekte  <br/> |
+|Implementiert von:  <br/> |Transportanbieter  <br/> |
 |Aufgerufen von:  <br/> |Der MAPI-Spooler  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IXPLogon  <br/> |
 |Zeigertyp:  <br/> |LXPLOGON  <br/> |
@@ -41,17 +41,17 @@ Gibt dem MAPI-Spooler Zugriff auf einen Transportanbieter.
 |||
 |:-----|:-----|
 |[AddressTypes](ixplogon-addresstypes.md) <br/> |Gibt die Empfängertypen zurück, die vom Transportanbieter verarbeitet werden.  <br/> |
-|**Registeroptions** <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
-|[TransportNotify](ixplogon-transportnotify.md) <br/> |Signalisiert das Eintreffen eines Ereignisses, über das der Transportanbieter eine Benachrichtigung angefordert hat.  <br/> |
-|[Leerlauf](ixplogon-idle.md) <br/> |Gibt an, dass das System im Leerlauf ist, sodass der Transportanbieter Vorgänge mit niedriger Priorität ausführen kann.  <br/> |
-|[TransportLogoff](ixplogon-transportlogoff.md) <br/> |Initiiert den ABMELDEPROZESS.  <br/> |
-|[SubmitMessage](ixplogon-submitmessage.md) <br/> |Gibt an, dass der MAPI-Spooler eine Nachricht für den zu übermittelnden Transportanbieter hat.  <br/> |
-|[EndMessage](ixplogon-endmessage.md) <br/> |Informiert den Transportanbieter darüber, dass der MAPI-Spooler seine Verarbeitung für eine ausgehende Nachricht abgeschlossen hat.  <br/> |
-|[Abfragen](ixplogon-poll.md) <br/> |Gibt an, ob der Transportanbieter eine oder mehrere eingehende Nachrichten empfangen hat.  <br/> |
+|**RegisterOptions** <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+|[TransportNotify](ixplogon-transportnotify.md) <br/> |Signalisiert das Auftreten eines Ereignisses, über das der Transportanbieter eine Benachrichtigung angefordert hat.  <br/> |
+|[Leerlauf](ixplogon-idle.md) <br/> |Gibt an, dass sich das System im Leerlauf befindet, sodass der Transportanbieter Vorgänge mit niedriger Priorität ausführen kann.  <br/> |
+|[TransportLogoff](ixplogon-transportlogoff.md) <br/> |Initiiert den Abmeldevorgang.  <br/> |
+|[SubmitMessage](ixplogon-submitmessage.md) <br/> |Gibt an, dass der MAPI-Spooler über eine Nachricht verfügt, die der Transportanbieter zu liefern hat.  <br/> |
+|[EndMessage](ixplogon-endmessage.md) <br/> |Informiert den Transportanbieter, dass der MAPI-Spooler seine Verarbeitung für eine ausgehende Nachricht abgeschlossen hat.  <br/> |
+|[Umfrage](ixplogon-poll.md) <br/> |Gibt an, ob der Transportanbieter eine oder mehrere eingehende Nachrichten empfangen hat.  <br/> |
 |[StartMessage](ixplogon-startmessage.md) <br/> |Initiiert die Übertragung einer eingehenden Nachricht vom Transportanbieter an den MAPI-Spooler.  <br/> |
-|[OpenStatusEntry](ixplogon-openstatusentry.md) <br/> |Öffnet das Status-Objekt des Transportanbieters.  <br/> |
+|[OpenStatusEntry](ixplogon-openstatusentry.md) <br/> |Öffnet das Statusobjekt des Transportanbieters.  <br/> |
 |[ValidateState](ixplogon-validatestate.md) <br/> |Überprüft den externen Status des Transportanbieters.  <br/> |
-|[FlushQueues](ixplogon-flushqueues.md) <br/> |Fordert, dass der Transportanbieter alle ausstehenden eingehenden oder ausgehenden Nachrichten sofort bereitstellt.  <br/> |
+|[FlushQueues](ixplogon-flushqueues.md) <br/> |Fordert an, dass der Transportanbieter sofort alle ausstehenden eingehenden oder ausgehenden Nachrichten zuliefert.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

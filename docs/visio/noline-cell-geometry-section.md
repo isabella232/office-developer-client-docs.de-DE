@@ -25,21 +25,21 @@ Legt fest, ob eine Linie um die Grenze des Pfads gezogen wird.
 | TRUE  <br/> | Es wird keine Linie um die Grenze eines Pfads gezogen, bei der es sich um die Grenze eines ausgefüllten Bereichs handelt.  <br/> |
 | FALSE  <br/> | Es wird eine Linie um die Grenze eines Pfades gezogen.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Wenn Sie die Farbe einer Linie in weiß ändern, ist diese Linie immer noch vorhanden, auch wenn sie vor einem weißen Hintergrund nicht mehr angezeigt wird. Wenn Sie in diese Zelle den Wert WAHR einsetzen, wird keine Linie gezogen.
   
-Wenn Sie einen Verweis auf die Zelle nocell aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle NoLine anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Geometrie *i* . NoPosition Where *i* = <1>, 2, 3...  <br/> |
+| Zellenname:  <br/> | Geometry  *i*  . NoLine,  *wobei i*  = <1>, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle noInline aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle NoLine nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**visSectionFirstComponent** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+| Abschnittsindex:  <br/> |**visSectionFirstComponent**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
 | Zeilenindex:  <br/> |**visRowComponent** <br/> |
 | Zellenindex:  <br/> |**visCompNoLine** <br/> |
    

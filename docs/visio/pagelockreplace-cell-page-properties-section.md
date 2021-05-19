@@ -1,5 +1,5 @@
 ---
-title: PageLockReplace Cell (Page Properties section)
+title: Zelle "PageLockReplace" (Abschnitt "Page Properties")
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -14,28 +14,28 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33433101"
 ---
-# <a name="pagelockreplace-cell-page-properties-section"></a>PageLockReplace Cell (Page Properties section)
+# <a name="pagelockreplace-cell-page-properties-section"></a>Zelle "PageLockReplace" (Abschnitt "Page Properties")
 
-Gibt an, ob die Schaltfläche **Shape ersetzen** für diese Seite deaktiviert werden soll. 
+Gibt an, **ob** die Schaltfläche Shape ersetzen für diese Seite deaktiviert werden soll. 
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|TRUE  <br/> |Die Schaltfläche **Shape ändern** ist ausgeblendet, wenn diese Seite aktiv ist.  <br/> |
-|FALSE  <br/> |Die Schaltfläche **Shape ändern** ist von dieser Seite nicht deaktiviert. Die Schaltfläche ist möglicherweise noch abgeblendet, wenn: der **DocLockReplace** auf dem **DocumentSheet** auf **true**festgelegt ist; die **LockReplace** -Zelle für die ausgewählte Form ist auf **true**festgelegt.  <br/> |
+|TRUE  <br/> |Die **Schaltfläche Shape ändern** ist ausgegraut, wenn diese Seite aktiv ist.  <br/> |
+|FALSE  <br/> |Die **Schaltfläche Shape ändern** wird von dieser Seite nicht deaktiviert. Die Schaltfläche ist möglicherweise noch abgeblendet, wenn: **DocLockReplace** im **DocumentSheet** auf **TRUE festgelegt ist;** Die **Zelle LockReplace** für die ausgewählte Form ist auf **TRUE festgelegt.**  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle **PageLockReplace** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die **Zelle PageLockReplace** anhand des Namens aus einer anderen Formel, nach dem Wert des **N-Attributs** eines **Cell-Elements** oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | PageLockReplace  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle **PageLockReplace** aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die **PageLockReplace-Zelle** nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowPage** <br/> |
 | Zellenindex:  <br/> |**visPageLockReplace** <br/> |
    

@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 039b3a45-bd57-51f5-1485-a3f6d1bde85a
-description: In diesem Thema wird gezeigt, wie die TZDEFINITION-Struktur aus dem beibehaltenen Format gelesen wird, das in einer Binary-Eigenschaft gespeichert ist.
+description: In diesem Thema wird gezeigt, wie Sie die TZDEFINITION-Struktur aus dem in einer binären Eigenschaft gespeicherten dauerhaften Format lesen.
 ms.openlocfilehash: a685fbfcf918e13aa82ac32799997bb05730184e
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.locfileid: "33434207"
 ---
 # <a name="parse-a-stream-from-a-binary-property-to-read-the-tzdefinition-structure"></a>Analysieren eines Streams aus einer binären Eigenschaft zum Lesen der TZDEFINITION-Struktur
 
-In diesem Thema wird gezeigt, wie die [TZDEFINITION](tzdefinition.md) -Struktur aus dem beibehaltenen Format gelesen wird, das in einer Binary-Eigenschaft gespeichert ist. 
+In diesem Thema wird gezeigt, wie Sie die [TZDEFINITION-Struktur](tzdefinition.md) aus dem in einer binären Eigenschaft gespeicherten dauerhaften Format lesen. 
   
 ```cpp
 TZDEFINITION* BinToTZDEFINITION(ULONG cbDef, LPBYTE lpbDef) 

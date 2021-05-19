@@ -29,14 +29,14 @@ Diese Schnittstelle bietet Hilfsfunktionen bei der Replikation über die IOSTX-S
   
 |||
 |:-----|:-----|
-|Bereitgestellt von  <br/> |Abfrage auf [IMsgStore](imsgstoreimapiprop.md) <br/> |
+|Bereitgestellt von  <br/> |Abfrage in [IMsgStore](imsgstoreimapiprop.md) <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IPSTX4  <br/> |
    
 ## <a name="vtable-order"></a>Vtable-Reihenfolge
 
 |||
 |:-----|:-----|
-| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert* .  <br/> |
+| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

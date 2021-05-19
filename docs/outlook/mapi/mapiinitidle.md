@@ -25,13 +25,13 @@ ms.locfileid: "33432443"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Initialisiert das MAPI-Leerlauf Modul für die aufrufende Anwendung. 
+Initialisiert das MAPI-Leerlaufmodul für die aufrufende Anwendung. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 LONG MAPIInitIdle(
@@ -47,25 +47,25 @@ LONG MAPIInitIdle(
     
 ## <a name="return-value"></a>Rückgabewert
 
-Die **MAPIInitIdle** -Funktion gibt NULL zurück, wenn die Initialisierung erfolgreich ist, und 1 andernfalls. Wenn **MAPIInitIdle** mehrmals aufgerufen wird, werden alle zusätzlichen Aufrufe erfolgreich ausgeführt, werden jedoch ignoriert, außer um den Verweiszähler zu erhöhen. 
+Die **MAPIInitIdle-Funktion** gibt null zurück, wenn die Initialisierung erfolgreich ist, und andernfalls 1. Wenn **MAPIInitIdle** mehrmals aufgerufen wird, sind alle zusätzlichen Aufrufe erfolgreich, werden jedoch ignoriert, außer, um die Referenzanzahl zu erhöhen. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Eine Clientanwendung oder ein Dienstanbieter muss **MAPIInitIdle** aufrufen, bevor eine andere Leerlauf Funktion des Moduls aufgerufen wird. 
+Eine Clientanwendung oder ein Dienstanbieter muss **MAPIInitIdle** aufrufen, bevor eine andere Im leerlaufmodulfunktion aufruft. 
   
-Jeder Aufruf von **MAPIInitIdle** muss durch einen nachfolgenden Aufruf von [MAPIDeInitIdle](mapideinitidle.md)oder das Leerlauf Modul für die aufrufende Anwendung ausgeführt werden. 
+Jedem Aufruf von **MAPIInitIdle** muss ein nachfolgender Aufruf von [MAPIDeInitIdle](mapideinitidle.md)entsprechen, oder das Leerlaufmodul wird für die aufrufende Anwendung noch ausgeführt. 
   
-Die folgenden Funktionen befassen sich mit dem MAPI-Leerlauf Modul und mit Leerlauf Routinen, die auf dem [FNIDLE](fnidle.md) -Funktionsprototyp basieren: 
+Die folgenden Funktionen befassen sich mit dem MAPI-Leerlaufmodul und mit Leerlaufroutinen, die auf dem Prototyp der [FNIDLE-Funktion](fnidle.md) basieren: 
   
-|**Leerlauf Routine Funktion**|**Verwendung**|
+|**Routinefunktion im Leerlauf**|**Nutzung**|
 |:-----|:-----|
-|[ChangeIdleRoutine](changeidleroutine.md) <br/> |Ändert die Eigenschaften einer registrierten Leerlauf Routine.  <br/> |
-|[DeregisterIdleRoutine](deregisteridleroutine.md) <br/> |Entfernt eine registrierte Leerlauf Routine aus dem MAPI-System.  <br/> |
-|[EnableIdleRoutine](enableidleroutine.md) <br/> |Deaktiviert oder aktiviert eine registrierte Leerlauf Routine, ohne Sie aus dem MAPI-System zu entfernen.  <br/> |
-|[FtgRegisterIdleRoutine](ftgregisteridleroutine.md) <br/> |Fügt eine Leerlauf Routine zum MAPI-System hinzu, mit oder ohne Sie zu aktivieren.  <br/> |
-|[MAPIDeInitIdle](mapideinitidle.md) <br/> |Fährt das MAPI-Leerlauf Modul für die aufrufende Anwendung herunter.  <br/> |
-|**MAPIInitIdle** <br/> |Initialisiert das MAPI-Leerlauf Modul für die aufrufende Anwendung.  <br/> |
+|[ChangeIdleRoutine](changeidleroutine.md) <br/> |Ändert die Merkmale einer registrierten Leerlaufroutine.  <br/> |
+|[DeregisterIdleRoutine](deregisteridleroutine.md) <br/> |Entfernt eine registrierte Leerlaufroutine aus dem MAPI-System.  <br/> |
+|[EnableIdleRoutine](enableidleroutine.md) <br/> |Deaktiviert oder aktiviert eine registrierte Leerlaufroutine, ohne sie aus dem MAPI-System zu entfernen.  <br/> |
+|[FtgRegisterIdleRoutine](ftgregisteridleroutine.md) <br/> |Fügt dem MAPI-System eine Leerlaufroutine mit oder ohne Aktivierung hinzu.  <br/> |
+|[MAPIDeInitIdle](mapideinitidle.md) <br/> |Beendet das MAPI-Leerlaufmodul für die aufrufende Anwendung.  <br/> |
+|**MAPIInitIdle** <br/> |Initialisiert das MAPI-Leerlaufmodul für die aufrufende Anwendung.  <br/> |
    
-Wenn alle Vordergrund Aufgaben für die Plattform inaktiv werden, ruft das MAPI-Leerlauf Modul die Leerlauf Routine mit der höchsten Priorität auf, die zur Ausführung bereit ist. Es gibt keine Garantie für die Anruf Reihenfolge unter Leerlauf Routinen mit derselben Priorität. 
+Wenn alle Vordergrundaufgaben für die Plattform inaktiv werden, ruft das MAPI-Leerlaufmodul die Leerlaufroutine mit der höchsten Priorität auf, die ausgeführt werden kann. Es gibt keine Garantie für das Aufrufen der Reihenfolge zwischen Leerlaufroutinen mit derselben Priorität. 
   
 

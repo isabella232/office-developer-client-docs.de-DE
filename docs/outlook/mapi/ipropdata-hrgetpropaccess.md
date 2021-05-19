@@ -55,7 +55,7 @@ S_OK
   
 > Die Access-Ebene und den Status Kennzeichen f�r die Eigenschaften wurden erfolgreich zur�ckgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Die **IPropData::HrGetPropAccess** -Methode ruft eine Reihe von Flags, die die Zugriffsebene und den Status f�r eine oder mehrere Eigenschaften angibt. 
   

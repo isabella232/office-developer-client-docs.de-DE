@@ -25,7 +25,7 @@ ms.locfileid: "33434473"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ermöglicht den Zugriff auf die Anbieter Tabelle des Nachrichtendiensts, eine Liste der Dienstanbieter im Nachrichtendienst.
+Bietet Zugriff auf die Anbietertabelle des Nachrichtendiensts, eine Liste der Dienstanbieter im Nachrichtendienst.
   
 ```cpp
 HRESULT GetProviderTable(
@@ -38,43 +38,43 @@ HRESULT GetProviderTable(
 
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die den Typ der in den Spalten der Anbieter Tabelle zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die den Typ der in den Spalten der Anbietertabelle zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
     
 MAPI_UNICODE 
   
-> Die Zeichenfolgenspalten sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, sind die Spalten im ANSI-Format.
+> Die Zeichenfolgenspalten sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Spalten im ANSI-Format.
     
  _lppTable_
   
-> Out Ein Zeiger auf einen Zeiger auf die Anbieter Tabelle.
+> [out] Ein Zeiger auf einen Zeiger auf die Anbietertabelle.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Anbieter Tabelle wurde erfolgreich zurückgegeben.
+> Die Anbietertabelle wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IProviderAdmin::** getproviderable-Methode ruft einen Zeiger auf die Anbieter Tabelle des Nachrichtendiensts ab, eine Tabelle, die von MAPI verwaltet wird und die Informationen zu jedem Dienstanbieter im Nachrichtendienst enthält. 
+Die **IProviderAdmin::GetProviderTable-Methode** ruft einen Zeiger auf die Anbietertabelle des Nachrichtendiensts ab, eine Tabelle, die MAPI verwaltet, die Informationen zu den einzelnen Dienstanbietern im Nachrichtendienst enthält. 
   
-Im Gegensatz zur Anbieter Tabelle, die von der [IMsgServiceAdmin:: GetProvider](imsgserviceadmin-getprovidertable.md) Table-Methode zurückgegeben wird, kann die von **IProviderAdmin::** getproviderable zurückgegebene Anbieter Tabelle zusätzliche Zeilen mit Informationen darstellen, die einer oder mehreren der die Dienstanbieter im Nachrichtendienst. Diese zusätzlichen Informationen werden dem Profil mit dem Schlüsselwort "Sections" der Datei MAPISVC. inf hinzugefügt. Wenn ein Anbieter über zusätzliche Profilabschnitte verfügt, werden die **MAPIUID** -Strukturen für diese Abschnitte in der **PR_SERVICE_EXTRA_UIDS** ([pidtagserviceextrauids (](pidtagserviceextrauids-canonical-property.md))-Eigenschaft gespeichert. **PR_SERVICE_EXTRA_UIDS** wird im Abschnitt Nachrichtendienst Profil gespeichert. 
+Im Gegensatz zur von der [IMsgServiceAdmin::GetProviderTable-Methode](imsgserviceadmin-getprovidertable.md) zurückgegebenen Anbietertabelle kann die von **IProviderAdmin::GetProviderTable** zurückgegebene Anbietertabelle zusätzliche Zeilen enthalten, die Informationen darstellen, die einem oder mehreren Dienstanbietern im Nachrichtendienst zugeordnet sind. Diese zusätzlichen Informationen werden dem Profil mit dem Schlüsselwort "Sections" der Datei Mapisvc.inf hinzugefügt. Wenn ein Anbieter über zusätzliche Profilabschnitte verfügt, speichert er die **MAPIUID-Strukturen** für diese Abschnitte in der **PR_SERVICE_EXTRA_UIDS** ([PidTagServiceExtraUids](pidtagserviceextrauids-canonical-property.md)) -Eigenschaft. **PR_SERVICE_EXTRA_UIDS** wird im Abschnitt Nachrichtendienstprofil gespeichert. 
   
-Anbieter, die gelöscht oder verwendet wurden, aber zum Löschen markiert wurden, sind nicht in der Anbieter Tabelle enthalten. Anbieter Tabellen sind statisch, was bedeutet, dass nachfolgende Ergänzungen oder Löschungen aus dem Nachrichtendienst nicht in der Tabelle wiedergegeben werden. 
+Anbieter, die gelöscht wurden oder verwendet werden, aber zum Löschen markiert wurden, sind nicht in der Anbietertabelle enthalten. Anbietertabellen sind statisch, was bedeutet, dass nachfolgende Ergänzungen oder Löschungen aus dem Nachrichtendienst nicht in der Tabelle enthalten sind. 
   
-Wenn der Nachrichtendienst keine Anbieter hat, gibt **IProviderAdmin::** getproviderable eine Tabelle mit null Zeilen und dem RÜCKGABEwert S_OK zurück. 
+Wenn der Nachrichtendienst über keine Anbieter verfügt, gibt **IProviderAdmin::GetProviderTable** eine Tabelle mit null Zeilen und dem Rückgabewert S_OK zurück. 
   
-Das Festlegen des MAPI_UNICODE-Flags im _ulFlags_ -Parameter wirkt sich auf das Format der Spalten aus, die von den Methoden [IMAPITable:: QueryColumns](imapitable-querycolumns.md) und [IMAPITable:: QueryRows](imapitable-queryrows.md) zurückgegeben werden. 
+Das Festlegen MAPI_UNICODE im  _ulFlags-Parameter_ wirkt sich auf das Format der Spalten aus, die von den [Methoden IMAPITable::QueryColumns](imapitable-querycolumns.md) und [IMAPITable::QueryRows](imapitable-queryrows.md) zurückgegeben werden. 
   
-Dieses Flag steuert auch die Eigenschaftentypen in der von der [IMAPITable:: QuerySortOrder](imapitable-querysortorder.md) -Methode zurückgegebenen Sortierreihenfolge. 
+Dieses Flag steuert auch die Eigenschaftstypen in der Sortierreihenfolge, die von der [IMAPITable::QuerySortOrder-Methode zurückgegeben](imapitable-querysortorder.md) wird. 
   
-Eine vollständige Liste der Spalten in der Anbieter Tabelle finden Sie unter [Provider Table](provider-tables.md). 
+Eine vollständige Liste der Spalten in der Anbietertabelle finden Sie unter [Provider Table](provider-tables.md). 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Um die Zeilen einer Anbieter Tabelle in der Transport Reihenfolge abzurufen, Sortieren Sie die Tabelle nach der **PR_PROVIDER_ORDINAL** ([pidtagproviderordinal (](pidtagproviderordinal-canonical-property.md))-Spalte. 
+Um die Zeilen einer Anbietertabelle in Transportreihenfolge abzurufen, sortieren Sie die Tabelle nach der spalte **PR_PROVIDER_ORDINAL** ([PidTagProviderOrdinal](pidtagproviderordinal-canonical-property.md)). 
   
-Um nur die Zeilen abzurufen, die Dienstanbieter darstellen (ohne zusätzliche Zeilen), begrenzen Sie Ihren Abruf auf die Zeilen mit dem Wert PT_ERROR in der **PR_RESOURCE_TYPE** ([pidtagresourcetype (](pidtagresourcetype-canonical-property.md))-Spalte.
+Um nur die Zeilen abzurufen, die Dienstanbieter darstellen (ohne zusätzliche Zeilen), beschränken Sie den Abruf auf die Zeilen, die den Wert PT_ERROR in der Spalte **PR_RESOURCE_TYPE** ([PidTagResourceType](pidtagresourcetype-canonical-property.md)) haben.
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -82,7 +82,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-| MsgServiceTableDlg. cpp  <br/> |CMsgServiceTableDlg:: OnDisplayItem  <br/> |MFCMAPI verwendet die **IProviderAdmin:: GetProvider** Table-Methode, um die Tabelle der Anbieter abzurufen, die in einem neuen Dialogfeld gerendert werden sollen.  <br/> |
+| MsgServiceTableDlg.cpp  <br/> |CMsgServiceTableDlg::OnDisplayItem  <br/> |MFCMAPI verwendet die **IProviderAdmin::GetProviderTable-Methode,** um die Tabelle der Anbieter zum Rendern in einem neuen Dialogfeld zu erhalten.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

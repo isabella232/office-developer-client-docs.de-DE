@@ -25,7 +25,7 @@ ms.locfileid: "33433647"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Überprüft ein angegebenes Property-Tag. 
+Überprüft ein angegebenes Eigenschaftstag. 
   
 |||
 |:-----|:-----|
@@ -43,21 +43,21 @@ ULONG FBadPropTag(
 
  _ulPropTag_
   
-> in Das zu überprüfende Property-Tag.
+> [in] Das zu überprüfende Eigenschaftstag.
     
 ## <a name="return-value"></a>Rückgabewert
 
 TRUE 
   
-> Das angegebene Property-Tag ist kein gültiges MAPI-Eigenschafts. 
+> Das angegebene Eigenschaftstag ist kein gültiges MAPI-Eigenschaftstag. 
     
 FALSE 
   
-> Das angegebene Property-Tag ist ein gültiges MAPI-Eigenschafts.
+> Das angegebene Eigenschaftstag ist ein gültiges MAPI-Eigenschaftstag.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **FBadPropTag** -Funktion überprüft das angegebene Property-Tag basierend auf MAPI-Definitionen. Sie stellen sicher, dass der Eigenschaftentyp einer der von MAPI definierten Typen ist und dass der Eigenschaftenbezeichner für diesen Typ definiert ist. 
+Die **FBadPropTag-Funktion** überprüft das angegebene Eigenschaftstag basierend auf MAPI-Definitionen. Es wird sichergestellt, dass der Eigenschaftentyp einer der von MAPI definierten Typen ist und dass der Eigenschaftenbezeichner für diesen Typ definiert ist. 
   
 ## <a name="see-also"></a>Siehe auch
 

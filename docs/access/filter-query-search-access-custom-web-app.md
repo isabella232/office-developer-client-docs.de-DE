@@ -1,5 +1,5 @@
 ---
-title: Filter/Abfrage/Suche (Access Custom Web App)
+title: Filter/Abfrage/Suche (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,13 +14,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33432933"
 ---
-# <a name="filterquerysearch-access-custom-web-app"></a>Filter/Abfrage/Suche (Access Custom Web App)
+# <a name="filterquerysearch-access-custom-web-app"></a>Filter/Abfrage/Suche (benutzerdefinierte Access-Web-App)
 
 > [!IMPORTANT]
 > Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
-- [Erneutabfragendatensätze-Makroaktion (benutzerdefinierte Access-Web-App)](requeryrecords-macro-action-access-custom-web-app.md)
+- [RequeryRecords-Makroaktion (benutzerdefinierte Access-Web-App)](requeryrecords-macro-action-access-custom-web-app.md)
     
 

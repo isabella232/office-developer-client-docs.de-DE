@@ -20,21 +20,21 @@ ms.locfileid: "33434270"
 
 Legt die Breite der gedruckten Seite in Zeichnungseinheiten fest.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Sie können die Seitenbreite auch auf der Registerkarte **Zeichenblattgröße** des Dialogfelds **Seite einrichten** festlegen (Klicken Sie auf der Registerkarte **Entwurf** auf den Pfeil für die **Seite einrichten** ) oder indem Sie die Seite manuell mit der Maus ändern. Ziehen Sie dazu bei gedrückter STRG-TASTE den Seitenrand mit der Maus. 
+Sie können die Seitenbreite  auch auf der  Registerkarte Seitengröße des Dialogfelds Seiteneinrichtung festlegen (klicken Sie auf der Registerkarte **Entwurf** auf den Pfeil Seite **einrichten)** oder indem Sie die Größe der Seite mit der Maus manuell ändern. Ziehen Sie dazu bei gedrückter STRG-TASTE den Seitenrand mit der Maus. 
   
-Wenn Sie einen Verweis auf die Zelle PageWidth aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle PageWidth anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |PageWidth  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle PageWidth aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die PageWidth-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowPage** <br/> |
 |Zellenindex:  <br/> |**visPageWidth** <br/> |
    

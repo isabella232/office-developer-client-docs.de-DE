@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Makros zur Fehlerbehandlung
+title: Verwenden von Makros für die Fehlerbehandlung
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33435565"
 ---
-# <a name="using-macros-for-error-handling"></a>Verwenden von Makros zur Fehlerbehandlung
+# <a name="using-macros-for-error-handling"></a>Verwenden von Makros für die Fehlerbehandlung
 
   
   
@@ -23,21 +23,21 @@ ms.locfileid: "33435565"
   
 Es gibt mehrere Makros, um die Arbeit mit HRESULT-Werten zu vereinfachen.
   
-Es gibt zwei Gruppen von Makros, die auf Fehler oder Erfolg testen: HR_SUCCEEDED und HR_FAILED und erfolgreich und fehlgeschlagen. SUCCEEDed ist identisch mit HR_SUCCEEDED und FAILED ist identisch mit HR_FAILED.
+Es gibt zwei Gruppen von Makros, die auf Fehler oder Erfolg testen: HR_SUCCEEDED und HR_FAILED und SUCCEEDED und FAILED. SUCCEEDED ist identisch mit HR_SUCCEEDED und FAILED ist identisch mit HR_FAILED.
   
-Verwenden Sie in diesem Fall das **ResultFromScode** -Makro, um die HRESULT-Variable auf den entsprechenden HRESULT-Wert für S_OK festzulegen. 
+Verwenden Sie in diesem Fall das **Makro ResultFromScode,** um die HRESULT-Variable auf den entsprechenden HRESULT-Wert für S_OK. 
   
 Häufig verwendete Makros werden in der folgenden Tabelle kurz beschrieben.
   
 |**Makro**|**Beschreibung**|
 |:-----|:-----|
 |**MAKE_HRESULT** <br/> |Erstellt ein HRESULT aus seinen Komponenten.  <br/> |
-|**HR_SUCCEEDED** <br/> |Testet ein HRESULT für eine Erfolgs-oder Warnungsbedingung.  <br/> |
+|**HR_SUCCEEDED** <br/> |Testet ein HRESULT auf eine Erfolgs- oder Warnungsbedingung.  <br/> |
 |**HR_FAILED** <br/> |Testet ein HRESULT auf eine Fehlerbedingung.  <br/> |
-|**HRESULT_CODE** <br/> |Extrahiert den Fehlercode Teil von HRESULT.  <br/> |
+|**HRESULT_CODE** <br/> |Extrahiert den Fehlercodeteil des HRESULT.  <br/> |
 |**HRESULT_FACILITY** <br/> |Extrahiert die Einrichtung aus dem HRESULT.  <br/> |
-|**HRESULT_SEVERITY** <br/> |Extrahiert das Schweregrad-Bit aus dem Schweregrad.  <br/> |
-|**GELUNGEN** <br/> |Testet ein HRESULT für eine Erfolgs-oder Warnungsbedingung.  <br/> |
-|**NICHT** <br/> |Testet ein HRESULT auf eine Fehlerbedingung.  <br/> |
+|**HRESULT_SEVERITY** <br/> |Extrahiert das Schweregradbit aus dem SCHWEREGRAD.  <br/> |
+|**SUCCEEDED** <br/> |Testet ein HRESULT auf eine Erfolgs- oder Warnungsbedingung.  <br/> |
+|**FAILED** <br/> |Testet ein HRESULT auf eine Fehlerbedingung.  <br/> |
    
 

@@ -25,13 +25,13 @@ ms.locfileid: "33433367"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bearbeitet Nachrichten und wird vom Formularanzeige Code (in der Regel eine Clientanwendung) implementiert, der auf eine solche Manipulation reagiert.
+Bearbeitet Nachrichten und wird durch den Formularanzeigecode (in der Regel eine Clientanwendung) implementiert, der auf eine solche Manipulation reagiert.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiform. h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Nachrichtenwebsite Objekte  <br/> |
-|Implementiert von:  <br/> |Formular Betrachter  <br/> |
+|Headerdatei  <br/> |Mapiform.h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Nachrichtenwebsiteobjekte  <br/> |
+|Implementiert von:  <br/> |Formularanzeigen  <br/> |
 |Aufgerufen von:  <br/> |Formularobjekte  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPIMessageSite  <br/> |
 |Zeigertyp:  <br/> |LPMAPIMESSAGESITE  <br/> |
@@ -40,19 +40,19 @@ Bearbeitet Nachrichten und wird vom Formularanzeige Code (in der Regel eine Clie
 
 |||
 |:-----|:-----|
-|[GetSession "](imapimessagesite-getsession.md) <br/> |Gibt die MAPI-Sitzung zurück, in der die aktuelle Nachricht erstellt oder geöffnet wurde.  <br/> |
+|[GetSession](imapimessagesite-getsession.md) <br/> |Gibt die MAPI-Sitzung zurück, in der die aktuelle Nachricht erstellt oder geöffnet wurde.  <br/> |
 |[GetStore](imapimessagesite-getstore.md) <br/> |Gibt den Nachrichtenspeicher zurück, der die aktuelle Nachricht enthält, wenn ein solcher Speicher vorhanden ist.  <br/> |
 |[GetFolder](imapimessagesite-getfolder.md) <br/> |Gibt den Ordner zurück, in dem die aktuelle Nachricht erstellt oder geöffnet wurde, wenn ein solcher Ordner vorhanden ist.  <br/> |
 |[GetMessage](imapimessagesite-getmessage.md) <br/> |Gibt die aktuelle Nachricht zurück.  <br/> |
-|[GetFormmanager](imapimessagesite-getformmanager.md) <br/> |Gibt eine Formular-Manager-Schnittstelle zurück, die ein Formularserver zum Öffnen eines anderen Formular Servers verwenden kann.  <br/> |
+|[GetFormManager](imapimessagesite-getformmanager.md) <br/> |Gibt eine Formular-Manager-Schnittstelle zurück, die ein Formularserver zum Öffnen eines anderen Formularservers verwenden kann.  <br/> |
 |[NewMessage](imapimessagesite-newmessage.md) <br/> |Erstellt eine neue Nachricht.  <br/> |
 |[CopyMessage](imapimessagesite-copymessage.md) <br/> |Kopiert die aktuelle Nachricht in einen Ordner.  <br/> |
 |[MoveMessage](imapimessagesite-movemessage.md) <br/> |Verschiebt die aktuelle Nachricht in einen Ordner.  <br/> |
 |[DeleteMessage](imapimessagesite-deletemessage.md) <br/> |Löscht die aktuelle Nachricht.  <br/> |
-|[SaveMessage](imapimessagesite-savemessage.md) <br/> |Fordert, dass die aktuelle Nachricht gespeichert wird.  <br/> |
-|[SubmitMessage](imapimessagesite-submitmessage.md) <br/> |Fordert an, dass die aktuelle Nachricht für die Übermittlung in die Warteschlange gestellt wird.  <br/> |
-|[GetSiteStatus](imapimessagesite-getsitestatus.md) <br/> |Gibt Informationen aus einem Nachrichtenwebsite Objekt über die Funktionen der Nachrichtenwebsite für die aktuelle Nachricht zurück.  <br/> |
-|[Getlasterroraufzurufen](imapimessagesite-getlasterror.md) <br/> |Gibt eine [MAPIERROR](mapierror.md) -Struktur zurück, die Informationen zum vorherigen Fehler enthält, der für das Nachrichtenwebsite Objekt auftritt.  <br/> |
+|[SaveMessage](imapimessagesite-savemessage.md) <br/> |Fordert an, dass die aktuelle Nachricht gespeichert wird.  <br/> |
+|[SubmitMessage](imapimessagesite-submitmessage.md) <br/> |Fordert an, dass die aktuelle Nachricht zur Zustellung in die Warteschlange eingereiht wird.  <br/> |
+|[GetSiteStatus](imapimessagesite-getsitestatus.md) <br/> |Gibt Informationen von einem Nachrichtenwebsiteobjekt zu den Funktionen der Nachrichtenwebsite für die aktuelle Nachricht zurück.  <br/> |
+|[GetLastError](imapimessagesite-getlasterror.md) <br/> |Gibt eine [MAPIERROR-Struktur](mapierror.md) zurück, die Informationen zum vorherigen Fehler enthält, der für das Nachrichtenwebsiteobjekt aufgetreten ist.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

@@ -23,23 +23,23 @@ Legt den Abstand zwischen einer Textzeile und der nächsten in Prozent fest. 100
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
 | \>0  <br/> | Absoluter Abstand, unabhängig vom Schriftgrad  <br/> |
-| = 0  <br/> | Fester Abstand (Abstand = 100 % des Schriftgrads)  <br/> |
+| =0  <br/> | Fester Abstand (Abstand = 100 % des Schriftgrads)  <br/> |
 | \<0  <br/> | Ein Prozentsatz des Schriftgrads (z. B. -120 % ergibt einen Abstand von 120 %)  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle SpLine aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle "SpLine" anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Para. SpLine [ *i* ] wobei *i* = <1>, 2, 3...  <br/> |
+| Zellenname:  <br/> | Para. SpLine [  *i*  ] where  *i*  = <1>, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle SpLine nach Index aus einem Programm abrufen möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle "SpLine" nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionParagraph** <br/> |
-| Zeilenindex:  <br/> |**visRowParagraph** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowParagraph**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
 | Zellenindex:  <br/> |**visSpaceLine** <br/> |
    
 

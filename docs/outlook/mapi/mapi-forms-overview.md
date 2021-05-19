@@ -19,31 +19,31 @@ ms.locfileid: "33432520"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ein MAPI-Formular ist ein Viewer für eine Nachricht. Jede Nachricht verfügt über eine Nachrichtenklasse, die das jeweilige Formular bestimmt, das als Viewer verwendet wird. MAPI definiert mehrere Nachrichtenklassen und hat die Formulare zum Anzeigen von Nachrichten dieser Klassen implementiert. Client Softwareentwickler können neue Nachrichtenklassen und benutzerdefinierte Formulare zum Anzeigen von Nachrichten erstellen, die mithilfe der neuen Klassen erstellt wurden.
+Ein MAPI-Formular ist ein Viewer für eine Nachricht. Jede Nachricht verfügt über eine Nachrichtenklasse, die das bestimmte Formular bestimmt, das als Viewer verwendet wird. MAPI definiert mehrere Nachrichtenklassen und hat die Formulare zum Anzeigen von Nachrichten dieser Klassen implementiert. Clientsoftwareentwickler können neue Nachrichtenklassen und benutzerdefinierte Formulare zum Anzeigen von Nachrichten erstellen, die mithilfe der neuen Klassen erstellt wurden.
   
-Jedes benutzerdefinierte Formular implementiert eine Reihe von Standardmenü Befehlen wie **Open**, **Create**, **Delete**und **Reply**sowie eine Reihe von Befehlen, die spezifisch für das jeweilige Formular sind. Einige der Formularbefehle sind in die Benutzeroberfläche der Clientanwendung integriert, wenn das Formular aktiv ist. andere Formularbefehle ersetzen die Clientbefehle vollständig. 
+Jedes benutzerdefinierte Formular implementiert eine Reihe von Standardmenübefehlen, z. B. **Öffnen**, **Erstellen**, **Löschen** und **Antworten**, und eine Reihe von Befehlen, die für das bestimmte Formular spezifisch sind. Einige der Formularbefehle sind in die Benutzeroberfläche der Clientanwendung integriert, wenn das Formular aktiv ist. Andere Formularbefehle ersetzen die Clientbefehle vollständig. 
   
-In der folgenden Abbildung wird die Beziehung zwischen den MAPI-Komponenten dargestellt, die mit Formularen verwendet werden. 
+Die folgende Abbildung zeigt die Beziehung zwischen den MAPI-Komponenten, die an der Verwendung von Formularen beteiligt sind. 
   
 **Architektur des MAPI-Formulars**
   
-![MAPI-Formulararchitektur] (media/forms01.gif "MAPI-Formulararchitektur")
+![MAPI-Formulararchitektur](media/forms01.gif "MAPI-Formulararchitektur")
   
-Beachten Sie im Diagramm, dass der Formular-Manager eine Rolle spielt, die anderen MAPI-Dienstanbietern ähnelt, obwohl es sich nicht um einen Dienstanbieter handelt. Der Formular-Manager ist eine austauschbare DLL, die einige der MAPI-Schnittstellen implementiert. Obwohl Entwickler ihren eigenen Formular-Manager implementieren können, verwenden die meisten Umgebungen den von Microsoft bereitgestellten Formular-Manager aufgrund der Komplexität des Formular-Managers.
+Beachten Sie im Diagramm, dass der Formular-Manager eine Rolle spielt, die anderen MAPI-Dienstanbietern ähnelt, obwohl er selbst kein Dienstanbieter ist. Der Formular-Manager ist eine austauschbare DLL, die einige der MAPI-Schnittstellen implementiert. Obwohl Entwickler einen eigenen Formular-Manager implementieren können, verwenden die meisten Umgebungen aufgrund der Komplexität des Formular-Managers den von Microsoft bereitgestellten Formular-Manager.
   
-In der folgenden Liste werden die Komponenten im Diagramm und ihre Beziehung zu anderen Komponenten beschrieben:
+In der folgenden Liste werden die Komponenten im Diagramm und deren Beziehung zu anderen Komponenten beschrieben:
   
-- Messaging Client: eine Anwendung, die Formularobjekte verwenden kann. Der Messaging Client verwendet die MAPI-Formular Schnittstellen für die Kommunikation mit dem Formular-Manager, um Nachrichten in Formularobjekte zu laden.
+- Messagingclient: Eine Anwendung, die Formularobjekte verwenden kann. Der Messagingclient verwendet die MAPI-Formularschnittstellen, um mit dem Formular-Manager zu kommunizieren, um Nachrichten in Formularobjekte zu laden.
     
-- MAPI-Formular Schnittstellen: ein definierter Standard für die Kommunikation zwischen MAPI-Komponenten, die sich auf Formulare beziehen.
+- MAPI-Formularschnittstellen: Ein definierter Standard für die Kommunikation zwischen MAPI-Komponenten, die sich auf Formulare bezogen haben.
     
-- Formular-Manager: die DLL, die Messaging-Clients verwenden, um die Installation von Formularen in Formularbibliotheken, das Laden von Formular Servern und die anfängliche Kommunikation zwischen Messagingclients und Formular Servern zu behandeln.
+- Formular-Manager: Die DLL, mit der Messagingclients die Installation von Formularen in Formularbibliotheken, das Laden von Formularservern und die anfängliche Kommunikation zwischen Messagingclients und Formularservern verarbeiten.
     
-- Formularbibliotheken: permanenter Speicher für die den Formular Servern zugeordneten ausführbaren Dateien.
+- Formularbibliotheken: Permanenter Speicher für die ausführbaren Dateien, die Formularservern zugeordnet sind.
     
-- Formularserver: ausführbare Dateien, die ein Formular implementieren. Formularserver erstellen Formularobjekte und Benutzeroberflächen für die Behandlung bestimmter Nachrichten. Diese ausführbare Datei ist auch ein OLE-Server und entspricht den üblichen OLE-Konventionen.
+- Formularserver: Ausführbare Dateien, die ein Formular implementieren. Formularserver erstellen Formularobjekte und Benutzeroberflächen für den Umgang mit bestimmten Nachrichten. Diese ausführbare Datei ist auch ein OLE-Server und hält die üblichen OLE-Konventionen ein.
     
-- Formularobjekte: von Formular Servern erstellte Laufzeitobjekte, die bestimmten Nachrichten entsprechen. Formularobjekte werden im gleichen Prozesskontext wie der Formularserver ausgeführt.
+- Form-Objekte: Laufzeitobjekte, die von Formularservern erstellt werden, die bestimmten Nachrichten entsprechen. Formularobjekte werden im gleichen Prozesskontext wie ihr Formularserver ausgeführt.
     
 Weitere Informationen zu MAPI-Formularkomponenten finden Sie unter [MAPI Forms](mapi-forms.md).
   

@@ -1,5 +1,5 @@
 ---
-title: Interaktion von MAPI-Anbietern und-Komponenten
+title: Interaktion von MAPI-Anbietern und -Komponenten
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,32 +15,32 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33434662"
 ---
-# <a name="interaction-of-mapi-providers-and-components"></a>Interaktion von MAPI-Anbietern und-Komponenten
+# <a name="interaction-of-mapi-providers-and-components"></a>Interaktion von MAPI-Anbietern und -Komponenten
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPI-Dienstanbieter jeglicher Art müssen bestimmte Richtlinien befolgen, um mit anderen MAPI-Komponenten zu arbeiten. Jeder Dienstanbieter muss:
+MAPI-Dienstanbieter jeder Art müssen bestimmte Richtlinien befolgen, um mit anderen MAPI-Komponenten zu arbeiten. Jeder Dienstanbieter muss:
   
-- Verwenden Sie die richtigen Anbieter-und Anmeldeobjekte für die Initialisierung.
+- Verwenden Sie die richtigen Anbieter- und Anmeldeobjekte für die Initialisierung.
     
-- Zurückgeben einer Dispatch-Tabelle mit Anbieter Einstiegspunkten nach der Initialisierung an das Messagingsystem.
+- Gibt bei der Initialisierung eine Verteilertabelle mit Anbietereintragspunkten an das Messagingsystem zurück.
     
-- Registrieren Sie eine MAPI-Statustabellen Zeile für jede Ressource, die im Besitz des Anbieters ist, und rufen Sie die [IMAPISupport:: ModifyStatusRow](imapisupport-modifystatusrow.md) -Methode zu geeigneten Zeiten auf. 
+- Registrieren Sie eine ZEILE der MAPI-Statustabelle für jede Ressource im Besitz des Anbieters, und rufen Sie die [IMAPISupport::ModifyStatusRow-Methode](imapisupport-modifystatusrow.md) zu entsprechenden Zeiten auf. 
     
-- Verwenden Sie die [IMAPISupport:: NewUID](imapisupport-newuid.md) -Methode, um gültige eindeutige IDs zu erhalten. 
+- Verwenden Sie [die IMAPISupport::NewUID-Methode,](imapisupport-newuid.md) um gültige eindeutige Bezeichner (UIDs) zu erhalten. 
     
-- Unterstützen der allgemeinen MAPI-Schnittstellen für Objekte, die zurückgegeben werden.
+- Unterstützt die gängigen MAPI-Schnittstellen für zurückgegebene Objekte.
     
-- Verwenden Sie die MAPI-Speicher Zuweisungsfunktionen, um an Clientanwendungen zurückgegebener Speicher zuzuweisen und den von anderen Teilen des MAPI-Subsystems reservierten Arbeitsspeicher freizugeben.
+- Verwenden Sie die MAPI-Speicherzuweisungsfunktionen, um Clientanwendungen zurückgegebenen Arbeitsspeicher zuzuordnen und von anderen Teilen des MAPI-Subsystems zugewiesenen Arbeitsspeicher frei zu geben.
     
-- Führen Sie bei Bedarf einen Profil Abschnitt aus, um die Anmeldeinformationen für das zugrunde liegende Messagingsystem zu speichern.
+- Verwalten Sie bei Bedarf einen Profilabschnitt, um Anmeldeinformationen im zugrunde liegenden Messagingsystem zu speichern.
     
-- Verwenden Sie die [IMAPISupport:: RegisterPreprocessor](imapisupport-registerpreprocessor.md) -Methode, um alle Funktionen der Nachrichten Vorverarbeitung zu registrieren. 
+- Verwenden Sie [die IMAPISupport::RegisterPreprocessor-Methode,](imapisupport-registerpreprocessor.md) um alle Nachrichtenvorverarbeitungsfunktionen zu registrieren. 
     
-- Schließen Sie die richtigen Headerdateien (einschließlich mapispi. h) ein, die allgemeine Konstanten, Strukturen, Schnittstellen und Rückgabewerte definieren.
+- Fügen Sie die richtigen Headerdateien (einschließlich mapispi.h) ein, die allgemeine Konstanten, Strukturen, Schnittstellen und Rückgabewerte definieren.
     
-- BeFolgen Sie die Adressformat Konventionen für allgemeine Adresstypen.
+- Befolgen Sie die Adressformatkonventionen für allgemeine Adresstypen.
     
 

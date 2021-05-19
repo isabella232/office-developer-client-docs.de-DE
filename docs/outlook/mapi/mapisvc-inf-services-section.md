@@ -1,5 +1,5 @@
 ---
-title: Abschnitt "MapiSvc. inf [Services]"
+title: MapiSvc.inf [Services] Section
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,19 +15,19 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33434781"
 ---
-# <a name="mapisvcinf-services-section"></a>Abschnitt "MapiSvc. inf [Services]"
+# <a name="mapisvcinf-services-section"></a>MapiSvc.inf [Services] Section
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Im Abschnitt **[Dienste]** werden die Nachrichtendienste aufgelistet, die auf einem Computer installiert sind. Die Einträge in diesem Abschnitt verwenden das folgende Format: 
+Im **Abschnitt [Dienste]** werden die Nachrichtendienste aufgeführt, die auf einem Computer installiert sind. Einträge in diesem Abschnitt verwenden das folgende Format: 
   
- **Services**
+ **[Services]**
   
- _Message-Service section Name_ =  _Message Service Name_
+ _Name des Message-Service-Abschnitts_  =   _Name des Nachrichtendiensts_
   
-Der Abschnitt Name des Message-Service-Abschnitts ist eine vom Nachrichtendienst definierte Zeichenfolge, die diesen Eintrag mit einem entsprechenden Abschnitt für den Dienst an anderer Stelle in MAPISVC. inf verknüpft. Der Name des Nachrichtendiensts ist der Name des installierten Diensts. Der folgende Abschnitt zeigt drei Nachrichtendienste: das Standardadressbuch, mein eigener Dienst und der Nachrichtenspeicher Dienst. Diese Dienste sind fiktiv, nur für Illustrationszwecke. Jeder Nachrichtendienst Implementierer würde den entsprechenden Eintrag für seinen Nachrichtendienst in diesem Abschnitt ersetzen.
+Der Name des Nachrichtendienstabschnitts ist eine vom Nachrichtendienst definierte Zeichenfolge, die diesen Eintrag mit einem entsprechenden Abschnitt für den Dienst an anderer Stelle in mapisvc.inf verknüpft. Der Name des Nachrichtendiensts ist der Name des installierten Diensts. Im folgenden Abschnitt werden drei Nachrichtendienste gezeigt: das Standard-Adressbuch, mein eigener Dienst und der Nachrichtendienst Store Dienst. Diese Dienste sind nur zur Veranschaulichung fiktional. Jeder Nachrichtendienst implementer würde den entsprechenden Eintrag für seinen Nachrichtendienst in diesem Abschnitt ersetzen.
   
 ```cpp
 [Services]
@@ -37,6 +37,6 @@ MS=Message Store Service
 
 ```
 
-Jeder Eintrag in diesem Abschnitt verfügt über einen entsprechenden Abschnitt, in dem Informationen für den Nachrichtendienst gespeichert werden. Der entsprechende Abschnitt für das Standardadressbuch heißt beispielsweise [AB].
+Jeder Eintrag in diesem Abschnitt verfügt über einen entsprechenden eigenen Abschnitt, in dem Informationen für den Nachrichtendienst gespeichert werden. Der entsprechende Abschnitt für das Standard-Adressbuch heißt beispielsweise [AB].
   
 

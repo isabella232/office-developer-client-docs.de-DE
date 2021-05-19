@@ -1,5 +1,5 @@
 ---
-title: Adressbuch Einschränkungen
+title: Adressbucheinschränkungen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33432800"
 ---
-# <a name="address-book-restrictions"></a>Adressbuch Einschränkungen
+# <a name="address-book-restrictions"></a>Adressbucheinschränkungen
 
   
   
@@ -23,17 +23,17 @@ ms.locfileid: "33432800"
   
 Adressbuchanbieter müssen drei Arten von Einschränkungen für die Inhaltstabellen ihrer Container unterstützen:
   
-- Eigenschafteneinschränkungen für mehrdeutige Namen
+- Einschränkungen für mehrdeutige Name-Eigenschaften
     
-- Eigenschafteneinschränkungen für Instanzenschlüssel
+- Eigenschafteneinschränkungen für Instanzschlüssel
     
-- Inhaltseinschränkungen für vordefinierte Anzeigename
+- Inhaltseinschränkungen für Den Anzeigenamen mit Präfix
     
-Einschränkungen bei mehrdeutigen Namen sind Eigenschaftseinschränkungen mithilfe der **PR_ANR** ([pidtaganr (](pidtaganr-canonical-property.md))-Eigenschaft, um Empfängernamen mit Einträgen in Adressbuch Containern abzugleichen. Die **PR_ANR** -Eigenschaftseinschränkung ist ein "Best Guess"-Suchtyp, bei dem Adressbuchanbieter die passende Eigenschaft auswählen können, die für ihren Container am besten geeignet ist. Beispielsweise kann ein Adressbuchanbieter die **PR_ANR** -Einschränkung implementieren, indem Empfängernamen mit der **PR_ACCOUNT** ([PidTagAccount](pidtagaccount-canonical-property.md))-Eigenschaft der einzelnen Container Einträge verglichen werden, während ein anderer Anbieter PR_DISPLAY verwenden kann. ** _NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)).
+Ambiguous name restrictions are property restrictions using the **PR_ANR** ([PidTagAnr](pidtaganr-canonical-property.md)) property to match recipient names with entries in address book containers. Die  PR_ANR-Eigenschaftseinschränkung ist eine Art der Suche, bei der Adressbuchanbieter die passende Eigenschaft auswählen können, die für ihren Container am besten funktioniert. Beispielsweise kann ein Adressbuchanbieter die **PR_ANR-Einschränkung** implementieren, indem empfängernamen mit der **PR_ACCOUNT** ([PidTagAccount](pidtagaccount-canonical-property.md))-Eigenschaft jedes Containereintrags übereinstimmen, während ein anderer Anbieter **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) verwendet.
   
-MAPI empfiehlt, dass Implementierungen der **PR_ANR** -Einschränkung eine Balance zwischen adäquater Leistung und Benutzerzufriedenheit finden. Die Benutzerzufriedenheit kann beeinträchtigt werden, wenn ein Adressbuchanbieter die Einschränkung so implementiert, dass zu wenige oder zu viele Übereinstimmungen gefunden werden. Einige Adressbuchanbieter unterstützen den Namen Distinguished oder Common, der nicht in einem Dialogfeld angezeigt werden kann, jedoch mit einer Einschränkung für mehrdeutige Namen übereinstimmt. 
+MAPI empfiehlt, dass implementierungen der **PR_ANR** ein Gleichgewicht zwischen ausreichender Leistung und Benutzerzufriedenheit finden. Die Benutzerzufriedenheit kann beeinträchtigt werden, wenn ein Adressbuchanbieter die Einschränkung so implementiert, dass zu wenige oder zu viele Übereinstimmungen gefunden werden. Einige Adressbuchanbieter unterstützen einen so bezeichneten oder allgemeinen Namen, der in einem Dialogfeld nicht angezeigt werden kann, aber einer mehrdeutigen Namenseinschränkung entsprechen kann. 
   
-Eine typische Implementierung besteht darin, den Anzeigenamen des Empfängers in Wörter zu analysieren, die mit allen Wörtern übereinstimmen. Beachten Sie Details wie die Vertraulichkeit der Wortposition, ob nicht aufeinanderfolgende Wörter übereinstimmen, und die Auswahl von Trennzeichen kann variieren. Wenn beispielsweise der zu lösende Name "Bill L" lautet, würde eine typische **PR_ANR** -Einschränkung die folgenden Einträge als Abgleich auswählen: 
+Eine typische Implementierung kann sein, den Anzeigenamen des Empfängers in Wörter zu analysieren, die mit jedem Eintrag übereinstimmen, der alle Wörter enthält. Achten Sie auf Details wie z. B. vertraulichkeit für die Wortposition, ob nicht übereinstimmende Wörter übereinstimmen und die Auswahl der Trennzeichen variieren kann. Wenn der zu auflösende Name beispielsweise "Bill L"  ist, würde eine typische PR_ANR die folgenden Einträge als übereinstimmend auswählen: 
   
 - Billy Larson
     
@@ -43,9 +43,9 @@ Eine typische Implementierung besteht darin, den Anzeigenamen des Empfängers in
     
 - Sam Bill Lee
     
-Instanzenschlüssel Einschränkungen oder **PR_INSTANCE_KEY** ([pidtaginstancekey (](pidtaginstancekey-canonical-property.md))-Eigenschaftseinschränkungen werden bei der Implementierung von Listenfeldern verwendet, die in clientANWENDUNGEN zum Anzeigen von MAPI-Tabellen verwendet werden. In einigen Listenfeld Implementierungen können Benutzer mehrere Optionen auswählen, nach oben oder unten scrollen und zum ersten ausgewählten Element zurückkehren. Um dieses Verhalten zu implementieren, rufen die Clients [IMAPITable:: FindRow](imapitable-findrow.md)auf und übergeben eine Eigenschaftseinschränkung für die **PR_INSTANCE_KEY** -Eigenschaft an die Methode. Adressbuchanbieter sind zur Unterstützung dieser Einschränkung erforderlich. 
+Instanzschlüsseleinschränkungen oder **PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md))-Eigenschaftseinschränkungen werden bei der Implementierung von Listenfeldern verwendet, die in Clientanwendungen zum Anzeigen von #A0 verwendet werden. Bei einigen Listenfeldimplementierungen können Benutzer mehrere Auswahlen treffen, einen Bildlauf nach oben oder unten durchführen und zum ersten ausgewählten Element zurückkehren. Um dieses Verhalten zu implementieren, rufen Clients [IMAPITable::FindRow auf](imapitable-findrow.md)und übergeben eine Eigenschaftseinschränkung für die **PR_INSTANCE_KEY-Eigenschaft** an die -Methode. Adressbuchanbieter müssen diese Einschränkung unterstützen. 
   
-Ein weiteres Feature von Listenfeldern, die für die Tabellenanzeige verwendet werden, ist die Möglichkeit, den Cursor auf der Grundlage einer Reihe von Präfixzeichen zu positionieren. Wenn der Benutzer mit dem Eingeben von Präfixzeichen beginnt, verschiebt der Client den Cursor auf das erste Element, das mit diesen Zeichen beginnt. Clients implementieren dieses Feature mit einer Inhaltseinschränkung, die auf der **PR_DISPLAY_NAME** -Eigenschaft und der FL_PREFIX-Fuzzy-Ebene basiert. 
+Ein weiteres Feature von Listenfeldern, die für die Tabellenanzeige verwendet werden, ist die Möglichkeit, den Cursor basierend auf einer Reihe von Präfixzeichen zu positionieren. Wenn der Benutzer mit der Eingabe von Präfixzeichen beginnt, verschiebt der Client den Cursor zum ersten Element, das mit diesen Zeichen beginnt. Clients implementieren dieses Feature mit einer Inhaltseinschränkung, die auf der **PR_DISPLAY_NAME-Eigenschaft** und der FL_PREFIX Fuzzy-Ebene basiert. 
   
 ## <a name="see-also"></a>Siehe auch
 

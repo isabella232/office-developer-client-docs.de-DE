@@ -24,23 +24,23 @@ Legt die Transparenzstufe für die Farbe fest, die für den Vordergrund (Pinsels
 |:-----|:-----|
 |0 - 100  <br/> |Stellt die Transparenz in Prozent dar. Der Standardwert ist 0% (vollständig undurchsichtig).  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Werte werden auf ein halbes Prozent gerundet. Ein Wert von 100% bezeichnet völlige Transparenz. Obwohl ein Schatten mit einer vollständig transparenten Füllung auf dem Zeichenblatt als Schatten angezeigt wird, der keine Füllung aufweist, interagiert er mit anderen Objekten auf der Seite auf die gleiche Weise wie bei der Transparenz von 0%.
+Werte werden auf ein halbes Prozent gerundet. Ein Wert von 100% bezeichnet völlige Transparenz. Ein Schatten mit einer vollständig transparenten Füllung wird zwar auf dem Zeichenblatt genauso wie ein Schatten ohne Füllung angezeigt, aber er interagiert mit anderen Objekten auf dem Zeichenblatt auf die gleiche Weise wie bei einer Transparenz von 0 %.
   
 Sie können diesen Wert auch festlegen, indem Sie den Schieberegler im Dialogfeld **Schatten** verwenden (klicken Sie auf der Registerkarte **Start** in der Gruppe **Shape** auf **Schatten**, und klicken Sie dann auf **Schattenoptionen**). Dieser Wert bestimmt den Wert der Schattentransparenz sowohl für den Hintergrund als auch für den Vordergrund. Wenn Sie diese Werte unabhängig voneinander festlegen möchten, müssen Sie sie im ShapeSheet-Fenster eingeben.
   
-Wenn Sie einen Verweis auf die Zelle Zelle ShdwForegndTrans aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Rufen eines Verweises auf die Zelle ShdwForegndTrans anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Zelle ShdwForegndTrans  <br/> |
+|Zellenname:  <br/> |ShdwForegndTrans  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle ShdwForegndTrans aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Um einen Verweis auf die ShdwForegndTrans-Zelle nach Index aus einem Programm zu erhalten, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowFill** <br/> |
 |Zellenindex:  <br/> |**visFillShdwForegndTrans** <br/> |
    

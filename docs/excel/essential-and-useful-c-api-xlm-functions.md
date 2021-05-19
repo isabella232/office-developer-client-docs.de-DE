@@ -1,11 +1,11 @@
 ---
-title: Wichtige und nützliche C-API-XML-Funktionen
+title: Wichtige und nützliche C-API-XLM-Funktionen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 keywords:
-- Funktionen [Excel 2007], c-API-XML-Code
+- funktionen [excel 2007], c api xlm
 localization_priority: Normal
 ms.assetid: dc80cb3d-0d7e-4cb9-9870-3acc84eeca82
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -16,13 +16,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33434515"
 ---
-# <a name="essential-and-useful-c-api-xlm-functions"></a>Wichtige und nützliche C-API-XML-Funktionen
+# <a name="essential-and-useful-c-api-xlm-functions"></a>Wichtige und nützliche C-API-XLM-Funktionen
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Die in diesem Abschnitt beschriebenen Funktionen sind Microsoft Excel-Rückruffunktionen, die für DLL-und XLL-Entwickler besonders nützlich sind. Von diesen ist die **xlfRegister** -Funktion für XLLs und DLLs unerlässlich, die ihre Funktionen und Befehle registrieren möchten, damit Sie direkt aus Excel aufgerufen werden können. Die Funktionen **xlfUnregister** und **xlfSetName** werden in Kombination mit dem aufHEBEN der Registrierung von dll-und XLL-Funktionen und-Befehlen verwendet. 
+Die in diesem Abschnitt beschriebenen Funktionen sind Microsoft Excel Rückruffunktionen, die für DLL- und XLL-Entwickler besonders nützlich sind. Davon ist **die xlfRegister-Funktion** für XLLs und DLLs, die ihre Funktionen und Befehle registrieren möchten, wichtig, damit sie direkt von der Excel. Die Funktionen **xlfUnregister und** **xlfSetName** werden in Kombination zum Aufheben der Registrierung von DLL- und XLL-Funktionen und -Befehlen verwendet. 
   
-Viele weitere Funktionen werden von Excel über die C-API zur Verfügung gestellt, die beim Entwickeln von XLLs nützlich sind. Sie entsprechen den Excel-Arbeitsblattfunktionen und-Funktionen und Befehlen, die in XML-Makro Blättern zur Verfügung stehen.
+Viele weitere Funktionen werden von Excel über die C-API verfügbar gemacht, die beim Entwickeln von XLLs hilfreich sind. Sie entsprechen den Excel funktionen und Befehlen des Arbeitsblatts, die in XLM-Makroblättern verfügbar sind.
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 

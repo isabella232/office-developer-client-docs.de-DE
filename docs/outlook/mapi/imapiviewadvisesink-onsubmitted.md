@@ -25,7 +25,7 @@ ms.locfileid: "33433983"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Benachrichtigt den Formular Betrachter darüber, dass die aktuelle Nachricht an den MAPI-Spooler übermittelt wurde.
+Benachrichtigt die Formularanzeige, dass die aktuelle Nachricht an den MAPI-Spooler übermittelt wurde.
   
 ```cpp
 HRESULT OnSubmitted( void );
@@ -39,17 +39,17 @@ Keine
 
 S_OK 
   
-> Die Benachrichtigung wurde erfolgreich ausgeführt.
+> Die Benachrichtigung ist erfolgreich.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Ein Form-Objekt ruft die **IMAPIViewAdviseSink:: onsubmitted** -Methode nach einem Aufruf von [IMAPIMessageSite:: SubmitMessage](imapimessagesite-submitmessage.md) wurde erfolgreich zurückgegeben. 
+Ein Formularobjekt ruft die **IMAPIViewAdviseSink::OnSubmitted-Methode** auf, nachdem ein Aufruf von [IMAPIMessageSite::SubmitMessage](imapimessagesite-submitmessage.md) erfolgreich zurückgegeben wurde. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Nachdem **onsubmitted** aufgerufen wurde, können Sie davon ausgehen, dass die Nachricht aktualisiert wurde. Aktualisieren Sie Ihre Fenster, um alle aufgetretenen Änderungen widerzuspiegeln. 
+Nachdem **OnSubmitted** aufgerufen wurde, können Sie davon ausgehen, dass die Nachricht aktualisiert wurde. Aktualisieren Sie Ihre Fenster, um alle aufgetretenen Änderungen widerspiegeln zu können. 
   
-Weitere Informationen zu Formular Benachrichtigungen finden Sie unter [senden und empfangen von Formular Benachrichtigungen](sending-and-receiving-form-notifications.md).
+Weitere Informationen zu Formularbenachrichtigungen finden Sie unter Senden und Empfangen [von Formularbenachrichtigungen](sending-and-receiving-form-notifications.md).
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -26,20 +26,20 @@ TYPE ()
   
 ### <a name="return-value"></a>Rückgabewert
 
-Zahl
+Nummer
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Die folgende Tabelle listet interne Objekttypen als Zahlen auf.
   
 |**Objekt**|**Number**|
 |:-----|:-----|
 |Seite  <br/> |70  <br/> |
-|Group  <br/> |71  <br/> |
+|Gruppe  <br/> |71  <br/> |
 |Form  <br/> |72  <br/> |
 |Format  <br/> |74  <br/> |
-|Handbuch  <br/> |77  <br/> |
-|Außen  <br/> |78  <br/> |
+|Leitfaden  <br/> |77  <br/> |
+|Fremd  <br/> |78  <br/> |
 |Dokument  <br/> |79  <br/> |
    
 

@@ -21,30 +21,30 @@ ms.locfileid: "33433143"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Der standardmäßige MAPI-Formular-Manager, der mit dem Windows SDK bereitgestellt wird, bietet keine Benutzeroberfläche für die Installation von Formularen in den verschiedenen Formularbibliotheken. Aus diesem Grund müssen Sie eine kleine Anwendung oder detaillierte Anweisungen erstellen, mit denen Benutzer das Formular installieren können.
+Der standardmäßige MAPI-Formular-Manager, der mit dem Windows SDK bereitgestellt wird, stellt keine Benutzeroberfläche zum Installieren von Formularen in den verschiedenen Formularbibliotheken bereit. Aus diesem Grund müssen Sie eine kleine Anwendung oder detaillierte Anweisungen erstellen, die Benutzer zum Installieren des Formulars verwenden können.
   
-Wenn Sie eine Installationsanwendung implementieren, müssen die folgenden Aktionen ausgeführt werden, um ein Formular in der Tabelle mit den zugeordneten Inhalten eines Ordners zu installieren:
+Wenn Sie eine Installationsanwendung implementieren, sind die folgenden Aktionen erforderlich, um ein Formular in der zugehörigen Inhaltstabelle eines Ordners zu installieren:
   
-1. Rufen Sie die [MAPIOpenFormMgr](mapiopenformmgr.md) -Funktion auf, um den Formular-Manager zu öffnen. 
+1. Rufen Sie die [MAPIOpenFormMgr-Funktion](mapiopenformmgr.md) auf, um den Formular-Manager zu öffnen. 
     
-2. Verwenden Sie [IMAPIFormMgr:: OpenFormContainer](imapiformmgr-openformcontainer.md) oder [IMAPIFormMgr:: SelectFormContainer](imapiformmgr-selectformcontainer.md) -Methode, um den Zielcontainer für das Formular auszuwählen und zu öffnen. 
+2. Verwenden [Sie die IMAPIFormMgr::OpenFormContainer-](imapiformmgr-openformcontainer.md) oder [IMAPIFormMgr::SelectFormContainer-Methode,](imapiformmgr-selectformcontainer.md) um den Zielcontainer für das Formular auszuwählen und zu öffnen. 
     
-3. Verwenden Sie die [IMAPIFormContainer:: InstallForm](imapiformcontainer-installform.md) -Funktion, um das Formular zu installieren. 
+3. Verwenden Sie die [IMAPIFormContainer::InstallForm-Funktion,](imapiformcontainer-installform.md) um das Formular zu installieren. 
     
-    Die Schritte 4 bis 6 sind für die Installation in einer lokalen Formularbibliothek erforderlich:
+    Die Schritte 4 bis 6 sind für die Installation in einer lokalen Formularbibliothek:
     
-4. Kopieren Sie alle Dateien an den entsprechenden Speicherort auf dem lokalen Datenträger, wenn die Installation in der lokalen Formularbibliothek auf der Arbeitsstation des Benutzers erfolgt. Ändern Sie bei Bedarf die Formular Konfigurationsdatei entsprechend den aktuellen Pfaden von Komponenten. Die Formular Konfigurationsdatei kann relative Pfade enthalten, in diesem Fall ist dieser Schritt möglicherweise nicht erforderlich.
+4. Kopieren Sie alle Dateien an den entsprechenden Ort auf dem lokalen Datenträger, wenn die Installation in der lokalen Formularbibliothek auf der Arbeitsstation des Benutzers erfolgt. Ändern Sie bei Bedarf die Formularkonfigurationsdatei, um die aktuellen Pfade von Komponenten widerspiegeln zu können. Die Formularkonfigurationsdatei kann relative Pfade enthalten, in diesem Fall ist dieser Schritt möglicherweise nicht erforderlich.
     
-5. Führen Sie die entsprechenden OLE-Registrierungsschritte aus, um den Nachrichtentyp dem installierten Formularserver zuzuordnen.
+5. Führen Sie die entsprechenden OLE-Registrierungsschritte aus, um den Nachrichtentyp dem zu installierende Formularserver zuzuordnen.
     
-6. Wenn das Formular in der lokalen Formularbibliothek installiert wurde, kopieren Sie das Formularsymbol (ICO) und die Konfigurationsdateien (. cfg) in das Verzeichnis%WINDOWS%\FORMS\CONFIGS, damit das Formular automatisch wiederhergestellt werden kann, falls die Formularbibliothek beschädigt oder gelöscht wird. Dieser Schritt wird empfohlen, aber nicht zwingend erforderlich.
+6. Wenn das Formular in der lokalen Formularbibliothek installiert wurde, kopieren Sie das Symbol (.ico) und die Konfigurationsdateien (CFG) des Formulars in das Verzeichnis %WINDOWS%\FORMS\CONFIGS, damit das Formular automatisch wiederhergestellt werden kann, falls die Formularbibliothek beschädigt oder gelöscht wird. Dieser Schritt wird empfohlen, ist jedoch nicht zwingend erforderlich.
     
 > [!NOTE]
-> Sie können die Installation in einer lokalen Formularbibliothek vereinfachen, indem Sie die Schritte 1 und 2 durch einen Aufruf der [MAPIOpenLocalFormContainer](mapiopenlocalformcontainer.md) -Funktion ersetzen. 
+> Sie können die Installation in einer lokalen Formularbibliothek vereinfachen, indem Sie die Schritte 1 und 2 durch einen Aufruf der [MAPIOpenLocalFormContainer-Funktion](mapiopenlocalformcontainer.md) ersetzen. 
   
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Entwickeln von MAPI-Formular Servern](developing-mapi-form-servers.md)
+[Entwickeln von MAPI-Formularservern](developing-mapi-form-servers.md)
 

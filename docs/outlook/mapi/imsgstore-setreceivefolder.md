@@ -40,23 +40,23 @@ HRESULT SetReceiveFolder(
 
  _lpszMessageClass_
   
-> in Ein Zeiger auf die Nachrichtenklasse, die dem neuen Empfänger Ordner zugeordnet werden soll. Wenn der Parameter _lpszMessageClass_ auf NULL oder eine leere Zeichenfolge festgelegt ist, legt **SetReceiveFolder** den standardmäßigen Empfangsordner für den Nachrichtenspeicher fest. 
+> [in] Ein Zeiger auf die Nachrichtenklasse, die dem neuen Empfangsordner zugeordnet werden soll. Wenn der  _lpszMessageClass-Parameter_ auf NULL oder eine leere Zeichenfolge festgelegt ist, legt **SetReceiveFolder** den Standard-Empfangsordner für den Nachrichtenspeicher fest. 
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die den Texttyp in den übergebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die den Texttyp in den übergebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
     
 MAPI_UNICODE 
   
-> Die Zeichenfolge der Nachrichtenklasse ist im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, ist die Zeichenfolge der Nachrichtenklasse im ANSI-Format.
+> Die Zeichenfolge der Nachrichtenklasse befindet sich im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befindet sich die Zeichenfolge der Nachrichtenklasse im ANSI-Format.
     
  _cbEntryID_
   
-> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID_ -Parameter verwiesen wird. 
+> [in] Die Byteanzahl im Eintragsbezeichner, auf den der  _lpEntryID-Parameter_ verweist. 
     
  _lpEntryID_
   
-> in Ein Zeiger auf die Eintrags-ID des Ordners, der als Empfänger Ordner eingerichtet werden soll. Wenn der Parameter _lpEntryID_ auf NULL festgelegt ist, ersetzt **SetReceiveFolder** den aktuellen Empfänger Ordner durch den Standardwert des Nachrichtenspeichers. 
+> [in] Ein Zeiger auf die Eintrags-ID des Ordners, der als Empfangsordner erstellt werden soll. Wenn der  _lpEntryID-Parameter_ auf NULL festgelegt ist, ersetzt **SetReceiveFolder** den aktuellen Empfangsordner durch den Standard des Nachrichtenspeichers. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -64,13 +64,13 @@ S_OK
   
 > Ein Empfangsordner wurde erfolgreich eingerichtet.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Mit der **IMsgStore:: SetReceiveFolder** -Methode wird der Empfangsordner für eine bestimmte Nachrichtenklasse festgelegt oder geändert. Mit **SetReceiveFolder**kann ein Client mithilfe aufeinanderfolgender Aufrufe einen anderen Empfangsordner für jede definierte Nachrichtenklasse angeben oder angeben, dass eingehende Nachrichten für mehrere Nachrichtenklassen in denselben Ordner gelangen. Beispielsweise kann ein Client eine eigene Klasse von Nachrichten in seinem eigenen Ordner eingehen lassen. Eine Fax-Anwendung kann einen Ordner festlegen, in dem der Informationsspeicher Anbieter eingehende Faxe eingibt, und einen anderen Ordner, in dem der Anbieter ausgehende Faxe platziert.
+Die **IMsgStore::SetReceiveFolder-Methode** legt den Empfangsordner für eine bestimmte Nachrichtenklasse fest oder ändert diesen. Mit **SetReceiveFolder** kann ein Client mithilfe aufeinander folgenden Aufrufe einen anderen Empfangsordner für jede definierte Nachrichtenklasse angeben oder angeben, dass eingehende Nachrichten für mehrere Nachrichtenklassen alle in denselben Ordner wechseln. Beispielsweise kann ein Client eine eigene Klasse von Nachrichten in einem eigenen Ordner eintreffen lassen. Eine Faxanwendung kann einen Ordner festlegen, in dem der Speicheranbieter eingehende Faxnachrichten und einen anderen Ordner, in dem der Anbieter ausgehende Faxe ablagert, ablagert.
   
-Wenn während des Anrufs an **SetReceiveFolder**ein Fehler auftritt, bleibt die Einstellung für den Empfangsordner unverändert. 
+Wenn beim Aufruf von **SetReceiveFolder** ein Fehler auftritt, bleibt die Einstellung des Empfangsordners unverändert. 
   
-Wenn **SetReceiveFolder** die Einstellung für den Empfänger Ordner mit _lpEntryID_ auf NULL festgelegt ändert, was darauf hinweist, dass der standardmäßige Empfangsordner festgelegt werden soll, gibt **SetReceiveFolder** S_OK zurück, auch wenn keine Einstellung für die angegebene Nachrichtenklasse. 
+Wenn **SetReceiveFolder** die Einstellung des Empfangsordners mit  _lpEntryID_ auf NULL ändert und angibt, dass der Standard-Empfangsordner festgelegt werden soll, gibt **SetReceiveFolder** S_OK zurück, auch wenn keine Einstellung für die angegebene Nachrichtenklasse vorhanden war. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -78,7 +78,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MsgStoreDlg. cpp  <br/> |CMsgStoreDlg:: OnSetReceiveFolder  <br/> |MFCMAPI verwendet die **IMsgStore:: SetReceiveFolder** -Methode, um einen Ordner als Empfangsordner für eine bestimmte Nachrichtenklasse festzulegen.  <br/> |
+|MsgStoreDlg.cpp  <br/> |CMsgStoreDlg::OnSetReceiveFolder  <br/> |MFCMAPI verwendet die **IMsgStore::SetReceiveFolder-Methode,** um einen Ordner als Empfangsordner für eine bestimmte Nachrichtenklasse zu festlegen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

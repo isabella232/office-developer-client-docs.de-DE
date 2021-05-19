@@ -33,23 +33,23 @@ ACCT_VARIANT *pVar
 
 _dwProp_
   
-> in Das Property-Tag der abzurufenden Account-Eigenschaft.
+> [in] Das Eigenschaftstag der zu erhaltende Account-Eigenschaft.
     
 _pVar_
   
-> Out Der Wert der angegebenen Eigenschaft.
+> [out] Der Wert der angegebenen Eigenschaft.
     
 ## <a name="return-values"></a>Rückgabewerte
 
 |**[HRESULT]**|**Description**|
 |:-----|:-----|
 |S_OK  <br/> |Der Aufruf war erfolgreich.  <br/> |
-|E_ACCT_NOT_FOUND  <br/> |Die Eigenschaft wurde für das angegebene Konto nicht gefunden.  <br/> |
-|E_INVALIDARG  <br/> |Es wurde ein ungültiges Property-Tag angegeben.  <br/> |
+|E_ACCT_NOT_FOUND  <br/> |Die Eigenschaft wird für das angegebene Konto nicht gefunden.  <br/> |
+|E_INVALIDARG  <br/> |Ein ungültiges Eigenschaftstag wurde angegeben.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Nachdem diese Methode zurückgegeben hat, müssen Sie, wenn der Wert der Account-Eigenschaft ein binary-oder String-Typ ist, *pVar* mit [IOlkAccount:: freier Arbeitsspeicher](iolkaccount-freememory.md)freigeben.
+Nachdem diese Methode zurückgegeben wurde, müssen Sie  *pVar*  mithilfe von [IOlkAccount::FreeMemory](iolkaccount-freememory.md)frei geben, wenn der Wert der Account-Eigenschaft ein Binär- oder Zeichenfolgentyp ist.
   
 ## <a name="see-also"></a>Siehe auch
 

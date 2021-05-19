@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251396
 localization_priority: Normal
 ms.assetid: 19b77fbb-32c9-4fc9-4c07-a0a713f7fdca
-description: Gibt den Arctangent einer Zahl zurück, beispielsweise den Winkel, dessen Tangente eine Zahl ist. Der resultierende Winkel befindet sich im Range-PI/2 < = Angle < = PI/2 Radiant (-90 < = Winkel < = 90 Grad).
+description: Gibt den Arctangent einer Zahl zurück, z. B. den Winkel, dessen Tangente Zahl ist. Der resultierende Winkel liegt im Bereich -PI/2 <= Winkel <= PI/2 Bogenmaß (-90 <= Winkel <= 90 Grad).
 ms.openlocfilehash: b690d1267503e704549bd74eacf06b414db98137
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33434543"
 ---
 # <a name="atan-function"></a>ATAN Function
 
-Gibt den Arctangent einer Zahl zurück, beispielsweise den Winkel, dessen Tangente eine _Zahl_ist. Der resultierende Winkel befindet sich im Range-PI/2 < = Angle < = PI/2 Radiant (-90 < = Winkel < = 90 Grad). 
+Gibt das arctangent einer Zahl zurück, z. B. den Winkel, dessen Tangente Zahl _ist._ Der resultierende Winkel liegt im Bereich -PI/2 <= Winkel <= PI/2 Bogenmaß (-90 <= Winkel <= 90 Grad). 
   
 ## <a name="syntax"></a>Syntax
 
-(* * *Number* * *) 
+ATAN(** *number* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -32,7 +32,7 @@ Gibt den Arctangent einer Zahl zurück, beispielsweise den Winkel, dessen Tangen
    
 ## <a name="example"></a>Beispiel
 
-(1) 
+ATAN(1) 
   
 Gibt 45 deg zurück. 
   

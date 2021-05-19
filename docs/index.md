@@ -11,4 +11,4 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/02/2020
 ms.locfileid: "43102926"
 ---
-# <a name="welcome-to-officedocs-dev-client-docs"></a>Willkommen bei officedocs-dev-Client-docs!
+# <a name="welcome-to-officedocs-dev-client-docs"></a>Willkommen bei officedocs-dev-client-docs!

@@ -23,14 +23,14 @@ ms.locfileid: "33434508"
   
  **So konfigurieren Sie alle Dienstanbieter in einem Nachrichtendienst**
   
-- Rufen Sie [IMsgServiceAdmin:: ConfigureMsgService](imsgserviceadmin-configuremsgservice.md)auf. Wenn alle für die Konfiguration erforderlichen Daten programmgesteuert verfügbar sind, können Sie auswählen, ob eine Benutzeroberfläche angezeigt werden soll. Wenn jedoch einige der Informationen für einen oder mehrere Anbieter nicht verfügbar sind, stellen Sie sicher, dass Sie das SERVICE_UI_ALLOWED-oder SERVICE_UI_ALWAYS-Flag festgelegt haben. Das unterdrücken einer Benutzeroberfläche, wenn erforderliche Konfigurationsdaten nicht verfügbar sind, führt zu einem nicht konfigurierten Nachrichtendienst.
+- Rufen [Sie IMsgServiceAdmin::ConfigureMsgService auf.](imsgserviceadmin-configuremsgservice.md) Wenn alle für die Konfiguration erforderlichen Daten programmgesteuert verfügbar sind, können Sie auswählen, ob eine Benutzeroberfläche angezeigt werden soll. Wenn jedoch einige Informationen für einen oder mehrere Anbieter nicht verfügbar sind, stellen Sie sicher, dass Sie die SERVICE_UI_ALLOWED oder SERVICE_UI_ALWAYS festlegen. Das Unterdrücken einer Benutzeroberfläche, wenn erforderliche Konfigurationsdaten nicht verfügbar sind, führt zu einem nicht konfigurierten Nachrichtendienst.
     
  **So konfigurieren Sie einen einzelnen Dienstanbieter in einem Nachrichtendienst**
   
-1. Rufen Sie [IMAPISession::](imapisession-getstatustable.md) getstatusable auf, um auf das Statusobjekt des Dienstanbieters zuzugreifen. 
+1. Rufen [Sie IMAPISession::GetStatusTable auf,](imapisession-getstatustable.md) um auf das Statusobjekt des Dienstanbieters zu zugreifen. 
     
-2. Rufen Sie [IMAPIStatus:: Settingsdialog](imapistatus-settingsdialog.md) auf, um das Eigenschaftenfenster des Dienstanbieters anzuzeigen. 
+2. Rufen [Sie IMAPIStatus::SettingsDialog auf,](imapistatus-settingsdialog.md) um das Eigenschaftenblatt des Dienstanbieters anzeigen. 
     
-Weitere Informationen zur Verwendung von Status-Objekten finden Sie unter [Status Table-und Status-Objekte](status-table-and-status-objects.md).
+Weitere Informationen zur Verwendung von Statusobjekten finden Sie unter [Statustabelle und Statusobjekte](status-table-and-status-objects.md).
   
 

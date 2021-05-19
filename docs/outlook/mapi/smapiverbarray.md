@@ -25,12 +25,12 @@ ms.locfileid: "33433913"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von [SMAPIVerb](smapiverb.md) -Strukturen, die MAPI-Verben beschreiben. 
+Enthält ein Array von [SMAPIVerb-Strukturen,](smapiverb.md) die MAPI-Verben beschreiben. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiform. h  <br/> |
-|Zugehöriges Makro:  <br/> |[CbMAPIVerbArray](cbmapiverbarray.md) <br/> |
+|Headerdatei  <br/> |Mapiform.h  <br/> |
+|Verwandtes Makro:  <br/> |[CbMAPIVerbArray](cbmapiverbarray.md) <br/> |
    
 ```cpp
 typedef struct
@@ -41,7 +41,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cForms**
   
@@ -51,9 +51,9 @@ typedef struct
   
 > Array von MAPI-Verben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **SMAPIVerbArray** -Struktur wird als Parameter in der [IMAPIFormInfo:: CalcVerbSet](imapiforminfo-calcverbset.md) -Methode übergeben. 
+Die **SMAPIVerbArray-Struktur** wird als Parameter in der [IMAPIFormInfo::CalcVerbSet-Methode](imapiforminfo-calcverbset.md) übergeben. 
   
 ## <a name="see-also"></a>Siehe auch
 

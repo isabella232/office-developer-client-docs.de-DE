@@ -29,13 +29,13 @@ Ermöglicht das Abrufen und Ändern des Zugriffs für die Eigenschaften eines Ob
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Eigenschaftendaten Objekt  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Eigenschaftsdatenobjekt  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
 |Aufgerufen von:  <br/> |Dienstanbieter und Clientanwendungen  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPIPropData  <br/> |
 |Zeigertyp:  <br/> |LPPROPDATA  <br/> |
-|Transaktionsmodell:  <br/> |Nicht durchgeführten  <br/> |
+|Transaktionsmodell:  <br/> |Nichttransaktioniert  <br/> |
    
 ## <a name="vtable-order"></a>Vtable-Reihenfolge
 
@@ -44,13 +44,13 @@ Ermöglicht das Abrufen und Ändern des Zugriffs für die Eigenschaften eines Ob
 |[HrSetObjAccess](ipropdata-hrsetobjaccess.md) <br/> |Legt die Zugriffsebene f�r das Objekt fest.  <br/> |
 |[HrSetPropAccess](ipropdata-hrsetpropaccess.md) <br/> |Legt die Zugriffsebene und den Status für eine oder mehrere Eigenschaften des Objekts fest.  <br/> |
 |[HrGetPropAccess](ipropdata-hrgetpropaccess.md) <br/> |Ruft die Zugriffsebene und den Status f�r eine oder mehrere der Eigenschaften des Objekts an.  <br/> |
-|[HrAddObjProps](ipropdata-hraddobjprops.md) <br/> |Fügt dem Objekt eine oder mehrere Eigenschaften vom Typ PT_OBJECT hinzu.  <br/> |
+|[HrAddObjProps](ipropdata-hraddobjprops.md) <br/> |Fügt eine oder mehrere Eigenschaften vom Typ PT_OBJECT objekt hinzu.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IPropData:: IMAPIProp** -Schnittstelle wird von MAPI implementiert und in erster Linie von Dienstanbietern verwendet, die auf diese Implementierung zugreifen, indem Sie die [CreateIProp](createiprop.md) -Funktion aufrufen. 
+Die **IPropData::IMAPIProp-Schnittstelle** wird von MAPI implementiert und hauptsächlich von Dienstanbietern verwendet, die auf diese Implementierung zugreifen, indem sie die [CreateIProp-Funktion](createiprop.md) aufrufen. 
   
-Weitere Informationen zu Zugriffsebenen für Objekte und Eigenschaften finden Sie unter [Berechtigungen für Objekte und Eigenschaften](permissions-for-mapi-objects-and-properties.md).
+Weitere Informationen zu Zugriffsebenen für Objekte und Eigenschaften finden Sie unter [Permissions for Objects and Properties](permissions-for-mapi-objects-and-properties.md).
   
 ## <a name="see-also"></a>Siehe auch
 

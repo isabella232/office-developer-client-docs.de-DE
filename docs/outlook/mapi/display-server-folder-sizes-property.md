@@ -1,5 +1,5 @@
 ---
-title: Display Server Folder sizes-Eigenschaft
+title: Display Server Folder Sizes-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,42 +19,42 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33434550"
 ---
-# <a name="display-server-folder-sizes-property"></a>Display Server Folder sizes-Eigenschaft
+# <a name="display-server-folder-sizes-property"></a>Display Server Folder Sizes-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Zeigt die Größe der angegebenen Ordner auf dem Server im Dialogfeld Outlook- **Ordnergröße** an. 
+Zeigt die Größe der angegebenen Ordner auf dem Server im Dialogfeld Outlook **Ordnergröße** an. 
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
-|Verfügbar unter:  <br/> |[IMsgStore: IMAPIProp](imsgstoreimapiprop.md) -Objekt  <br/> |
-|Erstellt von:  <br/> |Speicheranbieter  <br/> |
+|Verfügbar gemacht für:  <br/> |[IMsgStore : IMAPIProp-Objekt](imsgstoreimapiprop.md)  <br/> |
+|Erstellt von:  <br/> |Store Anbieter  <br/> |
 |Zugriff durch:  <br/> |Outlook und andere Clients  <br/> |
-|Eigenschafts:  <br/> |PT_BOOLEAN  <br/> |
+|Eigenschaftstyp:  <br/> |PT_BOOLEAN  <br/> |
 |Zugriffstyp:  <br/> |Lesen/Schreiben  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Um eine der Store-Funktionen bereitzustellen, muss der Informationsspeicher Anbieter [IMAPIProp: IUnknown](imapipropiunknown.md) implementieren und ein gültiges Property-Tag für eine dieser Eigenschaften zurückgeben, die an einen [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) -Aufruf übergeben werden. Wenn das Property-Tag für eine dieser Eigenschaften an [IMAPIProp::](imapiprop-getprops.md)GetProps übergeben wird, muss der Informationsspeicher Anbieter auch den richtigen Eigenschaftswert zurückgeben. Speicheranbieter können [HrGetOneProp](hrgetoneprop.md) und [HrSetOneProp](hrsetoneprop.md) aufrufen, um diese Eigenschaften abzurufen oder festzulegen. 
+Um eine der Speicherfunktionen bereitzustellen, muss der Speicheranbieter [IMAPIProp : IUnknown](imapipropiunknown.md) implementieren und ein gültiges Eigenschaftstag für eine dieser Eigenschaften zurückgeben, die an einen [IMAPIProp::GetIDsFromNames-Aufruf](imapiprop-getidsfromnames.md) übergeben werden. Wenn das Eigenschaftstag für eine dieser Eigenschaften an [IMAPIProp::GetProps](imapiprop-getprops.md)übergeben wird, muss der Speicheranbieter auch den richtigen Eigenschaftswert zurückgeben. Store können [HrGetOneProp](hrgetoneprop.md) und [HrSetOneProp](hrsetoneprop.md) aufrufen, um diese Eigenschaften zu erhalten oder zu festlegen. 
   
-Um den Wert dieser Eigenschaft abzurufen, sollte der Client zuerst [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) verwenden, um das Property-Tag abzurufen, und dann dieses Property-Tag in [IMAPIProp::](imapiprop-getprops.md) GetProps angeben, um den Wert abzurufen. Geben Sie beim Aufrufen von [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md)die folgenden Werte für die [MAPINAMEID](mapinameid.md) -Struktur an, auf die durch den Eingabeparameter _lppPropNames_verwiesen wird:
+Zum Abrufen des Werts dieser Eigenschaft sollte der Client zunächst [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) verwenden, um das Eigenschaftstag abzurufen, und dann dieses Eigenschaftstag in [IMAPIProp::GetProps](imapiprop-getprops.md) angeben, um den Wert abzurufen. Geben Sie beim Aufrufen von [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)die folgenden Werte für die [MAPINAMEID-Struktur](mapinameid.md) an, auf die der Eingabeparameter _lppPropNames verweist:_
   
 |||
 |:-----|:-----|
 |lpGuid:  <br/> |PS_PUBLIC_STRINGS  <br/> |
 |ulKind:  <br/> |MNID_STRING  <br/> |
-|Art. lpwstrName:  <br/> |L "urn: Schemas-Microsoft-com: Office: Outlook # serverfoldersizes"  <br/> |
+|Kind.lpwstrName:  <br/> |L"urn:schemas-microsoft-com:office:outlook#serverfoldersizes"  <br/> |
    
-Diese Eigenschaft wird in Microsoft Outlook 2003 Service Pack (SP) 1 unterstützt. Wenn die Version von Outlook älter als Outlook 2003 SP 1 ist oder wenn der Wert **false**ist, zeigt Outlook nur die Größe der Ordner im lokalen Speicher an. Wenn diese Eigenschaft in einem Speicher festgelegt ist, der Outlook 2003 SP 1 verwendet, fragt Outlook die Größe jedes angegebenen Ordners auf dem Server und dem lokalen Laufwerk ab. 
+Diese Eigenschaft wird in Microsoft Outlook 2003 Service Pack (SP) 1 unterstützt. Wenn die Version von Outlook vor Outlook 2003 SP 1 liegt oder der Wert **false** ist, zeigt Outlook nur die Größe der Ordner im lokalen Speicher an. Wenn diese Eigenschaft für einen Speicher festgelegt ist, der Outlook 2003 SP 1 verwendet, wird von Outlook die Größe der einzelnen angegebenen Ordner auf dem Server und dem lokalen Laufwerk abgefragt. 
   
-Um die Ordnergröße auf dem Server abzufragen, öffnet Outlook einen Ordner im Store mit [IMsgStore:: OpenEntry](imsgstore-openentry.md), übergibt das Flag **MAPI_NO_CACHE**und fragt dann nach **PR_MESSAGE_SIZE_EXTENDED**. Der Informationsspeicher Anbieter sollte dann die Größe des Ordners auf dem Server zurückgeben.
+Zum Abfragen der Ordnergröße auf dem Server öffnet Outlook einen Ordner im Speicher mit [IMsgStore::OpenEntry,](imsgstore-openentry.md)übergeben das Flag **MAPI_NO_CACHE**, und fragt dann nach PR_MESSAGE_SIZE_EXTENDED **.** Der Speicheranbieter sollte dann die Ordnergröße auf dem Server zurückgeben.
   
-Wenn Sie die Größe eines Ordners auf dem lokalen Laufwerk Abfragen möchten, wird der Ordner ohne das **MAPI_NO_CACHE** -Flag geöffnet. Dann fragt Sie nach **PR_MESSAGE_SIZE_EXTENDED**; der Informationsspeicher Anbieter sollte die Größe des angegebenen Ordners auf dem lokalen Laufwerk zurückgeben.
+Um die Größe eines Ordners auf dem lokalen Laufwerk zu abfragen, öffnet Outlook den Ordner ohne **MAPI_NO_CACHE** Flag. Anschließend werden Abfragen für **PR_MESSAGE_SIZE_EXTENDED**; Der Speicheranbieter sollte die Größe des angegebenen Ordners auf dem lokalen Laufwerk zurückgeben.
   
-Mit dieser Eigenschaft können Speicheranbieter, die Speicherinhalte mit einem Server synchronisieren, Daten auf dem Server im Dialogfeld Outlook- **Ordner** Größe anzeigen. Benutzer können dann Ihre aktuelle Server Speicherauslastung mit Server Kontingenten vergleichen. 
+Mit diesem Eigenschaftensatz können Anbieter, die Speicherinhalte mit einem Server synchronisieren, Im Dialogfeld Ordnergröße auf dem Server Outlook **Ordnergröße** anzeigen. Benutzer können dann ihre aktuelle Serverspeichernutzung mit Serverkontingenten vergleichen. 
   
 

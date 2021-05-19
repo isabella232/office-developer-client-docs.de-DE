@@ -25,13 +25,13 @@ ms.locfileid: "33432835"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Stellt eine alternative Möglichkeit zum Aufrufen der OLE-Methode **IUnknown:: AddRef**. 
+Bietet eine alternative Möglichkeit zum Aufrufen der OLE-Methode **IUnknown::AddRef**. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 ULONG UlAddRef(
@@ -41,9 +41,9 @@ ULONG UlAddRef(
 
 ## <a name="parameters"></a>Parameter
 
- _Punk_
+ _punk_
   
-> in Zeiger auf eine von der **IUnknown** -Schnittstelle abgeleitete Schnittstelle, also jede MAPI-Schnittstelle. 
+> [in] Zeiger auf eine Schnittstelle, die von der **IUnknown-Schnittstelle** abgeleitet ist, d. h. auf eine beliebige MAPI-Schnittstelle. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -53,12 +53,12 @@ S_OK
     
 MAPI_E_CALL_FAILED 
   
-> Der Vorgang konnte nicht abgeschlossen werden.
+> Ein Fehler mit unerwartetem oder unbekanntem Ursprung verhinderte den Abschluss des Vorgangs.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
- **UlAddRef** gibt den von der **IUnknown:: AddRef** -Methode zurückgegebenen Wert zurück, bei dem es sich um den neuen Wert des Verweiszählers für die Schnittstelle handelt. Der Wert ist ungleich NULL. 
+ **UlAddRef gibt** den von der **IUnknown::AddRef-Methode** zurückgegebenen Wert zurück, der der neue Wert der Referenzanzahl für die Schnittstelle ist. Der Wert ist ungleich Null. 
   
-Weitere Informationen zu **IUnknown:: AddRef**finden Sie unter [Implementieren der IUnknown-Schnittstelle](implementing-the-iunknown-interface.md). 
+Weitere Informationen zu **IUnknown::AddRef** finden Sie unter [Implementing the IUnknown Interface](implementing-the-iunknown-interface.md). 
   
 

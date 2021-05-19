@@ -19,39 +19,39 @@ ms.locfileid: "33432716"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPI-Spooler ist eine Funktion des Microsoft Office Outlook-Prozesses, der für das Senden von Nachrichten an und das Empfangen von e-Mails von einem Messagingsystem zuständig ist. MAPI-Spooler spielt eine wichtige Rolle bei Nachrichtenempfang und-Zustellung. Wenn ein Messagingsystem nicht verfügbar ist, werden die Nachrichten von der MAPI-Warteschlange gespeichert und zu einem späteren Zeitpunkt automatisch weitergeleitet. Diese Fähigkeit, Daten bei Bedarf beizubehalten oder zu senden, wird als "Store" und "Forward" bezeichnet, eine wichtige Funktion in Umgebungen, in denen Remoteverbindungen gängig sind und der Netzwerkdatenverkehr hoch ist. MAPI-Spooler wird als Hintergrundthread in Outlook ausgeführt.
+DER MAPI-Spooler ist eine Funktion des Microsoft Office Outlook, der für das Senden von Nachrichten an und den Empfang von Nachrichten von einem Messagingsystem zuständig ist. Der MAPI-Spooler spielt eine wichtige Rolle bei der Nachrichtenbestätigung und -zustellung. Wenn ein Messagingsystem nicht verfügbar ist, speichert der MAPI-Spooler die Nachrichten und gibt sie zu einem späteren Zeitpunkt automatisch weiter. Diese Möglichkeit, Daten bei Bedarf zu speichern oder zu senden, wird als Speicher und Weiterleitung bezeichnet. Dies ist ein entscheidendes Feature in Umgebungen, in denen Remoteverbindungen häufig verwendet werden und der Netzwerkdatenverkehr hoch ist. DER MAPI-Spooler wird als Hintergrundthread innerhalb Outlook.
   
-MAPI-Spooler hat zusätzliche Aufgaben im Zusammenhang mit der Nachrichtenverteilung. Zu diesen zusätzlichen Aufgaben gehört Folgendes:
+Der MAPI-Spooler hat zusätzliche Verantwortlichkeiten im Zusammenhang mit der Nachrichtenverteilung. Diese zusätzlichen Aufgaben umfassen Folgendes:
   
 - Nachverfolgen der Empfängertypen, die von bestimmten Transportanbietern verarbeitet werden.
     
 - Informieren einer Clientanwendung, wenn eine neue Nachricht zugestellt wurde.
     
-- Aufrufen der Nachrichten Vorverarbeitung und nach Verarbeitung.
+- Aufrufen der Nachrichtenvorverarbeitung und nach der Verarbeitung.
     
-- Generieren von Berichten, die darauf hindeuten, dass die Nachrichtenübermittlung stattgefunden hat.
+- Generieren von Berichten, die angeben, dass die Nachrichtenzustellung erfolgt ist.
     
-- Verwalten des Status von verarbeiteten Empfängern.
+- Beibehalten des Status für verarbeitete Empfänger.
     
 Die folgende Abbildung zeigt auf einer hohen Ebene, wie eine Nachricht von einem Client zum Messagingsystem fließt.
   
 **Flussdiagramm für ausgehende Nachrichten**
   
-![Ablauf der ausgehenden Nachrichten] (media/amapi_46.gif "Ablauf der ausgehenden Nachrichten")
+![Ausgehender Nachrichtenfluss](media/amapi_46.gif "Ausgehender Nachrichtenfluss")
   
-Der Benutzer einer Clientanwendung sendet eine Nachricht an einen oder mehrere Empfänger. Der Nachrichtenspeicher Anbieter initiiert den Sendevorgang und formatiert die Nachricht mit zusätzlichen Informationen, die für die Übertragung benötigt werden.
+Der Benutzer einer Clientanwendung sendet eine Nachricht an einen oder mehrere Empfänger. Der Nachrichtenspeicheranbieter initiiert den Sendevorgang und formatiert die Nachricht mit zusätzlichen Informationen, die für die Übertragung erforderlich sind.
   
-MAPI-Spooler empfängt die zu verarbeitende Nachricht, wenn eine der folgenden Bedingungen eintritt:
+Der MAPI-Spooler empfängt die Zu verarbeitende Nachricht, wenn eine der folgenden Bedingungen auftritt:
   
-- Der Nachrichtenspeicher Anbieter ist nicht eng mit einem Transportanbieter gekoppelt.
+- Der Nachrichtenspeicheranbieter ist nicht eng mit einem Transportanbieter gekoppelt.
     
-- Die Nachricht erfordert die Vorverarbeitung.
+- Die Nachricht erfordert eine Vorverarbeitung.
     
-- Der Nachrichtenspeicher und der Transportanbieter sind eng gekoppelt, können jedoch nicht alle Empfänger verarbeiten, an die die Nachricht adressiert ist.
+- Der Nachrichtenspeicher und der Transportanbieter sind eng gekoppelt, können jedoch nicht alle Empfänger behandeln, an die die Nachricht adressiert wird.
     
-Wenn die Nachricht vom MAPI-Spooler empfangen wird, wird die erforderliche Vorverarbeitung ausgeführt und die Nachricht an den entsprechenden Transportanbieter übermittelt. Der Transportanbieter übergibt die Nachricht an das Messagingsystem, das Sie an den beabsichtigten Empfänger sendet.
+Wenn der MAPI-Spooler die Nachricht empfängt, führt er alle erforderlichen Vorverarbeitungen durch und übermittelt die Nachricht an den entsprechenden Transportanbieter. Der Transportanbieter gibt die Nachricht an sein Messagingsystem weiter, das sie an den beabsichtigten Empfänger sendet.
   
-Bei eingehenden Nachrichten wird der Fluss umgekehrt. Der Transportanbieter empfängt eine Nachricht von seinem Messagingsystem und benachrichtigt MAPI-Spooler. Spooler führt alle erforderlichen Nachbearbeitung aus und informiert den Nachrichtenspeicher Anbieter darüber, dass eine neue Nachricht eingegangen ist. Diese Benachrichtigung veranlasst den Client, seine Nachrichtenanzeige zu aktualisieren, sodass der Benutzer die neue Nachricht lesen kann.
+Bei eingehenden Nachrichten wird der Fluss umgekehrt. Der Transportanbieter empfängt eine Nachricht von seinem Messagingsystem und benachrichtigt den MAPI-Spooler. Spooler führt alle erforderlichen Nachverarbeitungen durch und informiert den Nachrichtenspeicheranbieter, dass eine neue Nachricht eingetroffen ist. Diese Benachrichtigung bewirkt, dass der Client seine Nachrichtenanzeige aktualisiert, sodass der Benutzer die neue Nachricht lesen kann.
   
 ## <a name="see-also"></a>Siehe auch
 

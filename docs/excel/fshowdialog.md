@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - fShowDialog
 keywords:
-- fShowDialog-Funktion [Excel 2007]
+- fshowdialog-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: 6cc01075-7221-488e-870f-433da62930e6
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -22,7 +22,7 @@ ms.locfileid: "33433591"
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Beispiel für einen benutzerdefinierten Befehl, mit dem ein Beispiel systemeigenes Windows-Dialogfeld angezeigt wird. Wenn GENERIC. XLL geladen wird, wird ein benutzerdefiniertes Menü generisch erstellt, über das auf diesen Befehl zugegriffen wird.
+Beispiel für benutzerdefinierten Befehl, der ein Beispiel für systemeigene Windows lädt und anzeigt. Wenn GENERIC.xll geladen wird, wird ein benutzerdefiniertes Menü, Generic, erstellt, über das auf diesen Befehl zugegriffen wird.
   
 ```cs
 int WINAPI fShowDialog(void);
@@ -30,27 +30,27 @@ int WINAPI fShowDialog(void);
 
 ## <a name="parameters"></a>Parameter
 
-Die Funktion verwendet keine Parameter.
+Die Funktion nimmt keine Parameter an.
   
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-Die Funktion gibt Integer Zero zurück, um den erfolgreichen Abschluss anzuzeigen.
+Die Funktion gibt ganzzahlige Null zurück, um einen erfolgreichen Abschluss anzuzeigen.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die Schritte zum Anzeigen des systemeigenen Windows-Dialogfelds lauten wie folgt:
+Die Schritte zum Anzeigen des systemeigenen Windows sind wie folgt:
   
-1. Abrufen des Microsoft Excel-Haupt Windows- **** Handles mithilfe von GetHwnd.
+1. Rufen Sie Microsoft Excel Haupthandle Windows **GetHwnd ab.**
     
-2. Verknüpfen Sie das Excel-Hauptfenster mit **HookExcelWindow**.
+2. Hook the Excel main window using **HookExcelWindow**.
     
-3. Zeigen Sie das Dialogfeld mit der **Dialogbox**an.
+3. Anzeigen des Dialogfelds mithilfe von **DialogBox**.
     
-4. Enthaken des Excel-Hauptfensters mithilfe von **UnhookExcelWindow**.
+4. Enthook the Excel main window using **UnhookExcelWindow**.
     
 ### <a name="example"></a>Beispiel
 
-Den `\SAMPLES\GENERIC\GENERIC.C` Quellcode für diese Funktion finden Sie unter. 
+Den  `\SAMPLES\GENERIC\GENERIC.C` Quellcode für diese Funktion finden Sie unter. 
   
 ## <a name="see-also"></a>Siehe auch
 

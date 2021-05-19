@@ -25,7 +25,7 @@ ms.locfileid: "33432583"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft ein Progress-Objekt ab, das eine Statusanzeige anzeigt.
+Ruft ein Statusobjekt ab, das eine Statusanzeige anzeigt.
   
 ```cpp
 HRESULT DoProgressDialog(
@@ -39,31 +39,31 @@ HRESULT DoProgressDialog(
 
  _ulUIParam_
   
-> in Ein Handle für das übergeordnete Fenster der Statusanzeige.
+> [in] Ein Handle zum übergeordneten Fenster des Statusindikators.
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die die Berechnung des Fortschritts durch das Progress-Objekt steuert. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie das Progress-Objekt den Fortschritt berechnen soll. Das folgende Flag kann festgelegt werden:
     
 MAPI_TOP_LEVEL 
   
-> Der Fortschritt wird für ein Element auf oberster Ebene, wie beispielsweise einen übergeordneten Ordner, berechnet. Das Progress-Objekt sollte die Werte in den Parametern _ulCount_ und _ulTotal_ der [IMAPIProgress::P rogress](imapiprogress-progress.md) -Methode verwenden, die das aktuelle Element und die gesamten Elemente in der Operation angeben, um den Fortschritt zu erhöhen. Indikator für den Vorgang. 
+> Der Fortschritt wird für ein Element auf oberster Ebene berechnet, z. B. für einen übergeordneten Ordner. Das progress-Objekt sollte die Werte in den _UlCount-_ und _ulTotal-Parametern_ der [IMAPIProgress::P rogress-Methode](imapiprogress-progress.md) verwenden, die das aktuelle Element bzw. die Gesamtelemente im Vorgang angeben, um die Statusanzeige für den Vorgang zu erhöhen. 
     
  _lppProgress_
   
-> Out Ein Zeiger auf einen Zeiger auf das Progress-Objekt.
+> [out] Ein Zeiger auf einen Zeiger auf das Progress-Objekt.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Das Progress-Objekt wurde erfolgreich abgerufen.
+> Das Statusobjekt wurde erfolgreich abgerufen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPISupport::D oprogressdialog** -Methode wird für Support Objekte des Adressbuchs und des Nachrichtenspeichers implementiert. Diese Anbieter rufen **DoProgressDialog** auf, um auf die MAPI-Implementierung der [IMAPIProgress](imapiprogressiunknown.md) -Schnittstelle zuzugreifen, die die Fortschrittsinformationen berechnet und ein Standarddialogfeld anzeigt. 
+Die **IMAPISupport::D oProgressDialog-Methode** wird für Unterstützungsobjekte des Adressbuch- und Nachrichtenspeicheranbieters implementiert. Diese Anbieter rufen **DoProgressDialog auf,** um auf die MAPI-Implementierung der [IMAPIProgress-Schnittstelle](imapiprogressiunknown.md) zu zugreifen, die die Statusinformationen berechnet und ein Standarddialogfeld anzeigt. 
   
-Informationen zur Verwendung eines Progress-Objekts und der **IMAPIProgress** -Schnittstelle finden Sie unter [Anzeigen einer Statusanzeige](how-to-display-a-progress-indicator.md).
+Informationen zur Verwendung eines Statusobjekts und der **IMAPIProgress-Schnittstelle** finden Sie unter [Display a Progress Indicator](how-to-display-a-progress-indicator.md).
   
 ## <a name="see-also"></a>Siehe auch
 

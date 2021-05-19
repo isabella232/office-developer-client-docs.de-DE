@@ -21,7 +21,7 @@ ms.locfileid: "33433808"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Informationen zum Starten der Synchronisierung zwischen einem lokalen Speicher und einem Server. Diese Informationen werden während des [Synchronisierungsstatus](synchronize-state.md)verwendet.
+Informationen zum Starten der Synchronisierung zwischen einem lokalen Speicher und einem Server. Diese Informationen werden während des [Synchronisierungsstatus verwendet.](synchronize-state.md)
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -41,48 +41,48 @@ struct SYNC
 
  _ulFlags_
   
-- [out]/[in] eine Bitmaske der folgenden Flags, die das Verhalten während der Synchronisierung ändert:
+- [out]/[in] Eine Bitmaske der folgenden Flags, die das Verhalten während der Synchronisierung ändern:
     
 - UPS_UPLOAD_ONLY
     
-  - in Der Client führt nur einen Upload aus. Outlook gibt nur lokal geänderte Ordner zurück.
+  - [in] Der Client wird nur hochladen. Outlook gibt nur lokal geänderte Ordner zurück.
     
 - UPS_DNLOAD_ONLY
     
-  - in Der Client führt nur den Download aus. Outlook sollte nicht löschen Bits für Ordner hochladen.
+  - [in] Der Client wird nur herunterladen ausgeführt. Outlook sollten keine Uploadbits für Ordner löschen.
     
 - UPS_THESE_FOLDERS
     
-  - in Der Client synchronisiert eine angegebene Gruppe von Ordnern mit den bereitgestellten Eintrags-IDs. Dieses Flag kann mit dem **UPS_UPLOAD_ONLY** -oder **UPS_DNLOAD_ONLY** -Flag kombiniert werden. 
+  - [in] Der Client synchronisiert einen angegebenen Satz von Ordnern mit den bereitgestellten Eintrags-IDs. Dieses Flag kann entweder mit dem UPS_UPLOAD_ONLY **oder** **UPS_DNLOAD_ONLY** kombiniert werden. 
     
 - UPS_OK
     
-  - Out Die Synchronisierung war erfolgreich. Der Client legt dies nach dem Hochladen fest, oder eine vollständige Synchronisierung wird abgeschlossen.
+  - [out] Die Synchronisierung war erfolgreich. Der Client legt dies nach dem Hochladen fest, oder eine vollständige Synchronisierung ist abgeschlossen.
     
 - 
     
     > [!NOTE]
-    > Auch wenn der Client die Ordner und Elemente mit der Replikations-API entweder hoch-oder vollständig synchronisieren kann (Uploads dann herunterzuladen), gibt der Client *ulFlags* nur mit einer Richtung der Replikation an – entweder der **UPS_UPLOAD_ONLY** oder **UPS_DNLOAD_ONLY** -Flag. Bei einer vollständigen Synchronisierung führt der Client zunächst einen Upload mit dem **UPS_UPLOAD_ONLY** -Flag und dann einen Download mit dem **UPS_DNLOAD_ONLY** -Flag aus. 
+    > Auch wenn der Client Ordner und Elemente entweder mit der Replikations-API hochladen oder vollständig mit der Replikations-API synchronisieren (hochladen und dann herunterladen) kann, gibt der Client *ulFlags* mit nur einer Richtung der Replikation gleichzeitig an – entweder das **flag UPS_UPLOAD_ONLY** oder **UPS_DNLOAD_ONLY.** Bei einer vollständigen Synchronisierung führt der Client  zunächst einen Upload mit dem UPS_UPLOAD_ONLY und dann einen Download mit dem UPS_DNLOAD_ONLY **aus.** 
   
  _pwzPath_
   
-- Out Pfad zum lokalen Speicher.
+- [out] Pfad zum lokalen Speicher.
     
  _Reserved1_
   
-- Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.
+- Dieses Mitglied ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.
     
  _Reserved2_
   
-- Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.
+- Dieses Mitglied ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.
     
- *PEL* 
+ *pel* 
   
-- in Dies ist die Liste der Eintrags-IDs der Ordner, die synchronisiert werden sollen, wenn **UPS_THESE_FOLDERS** festgelegt wurde. Weitere Informationen finden Sie unter mapidefs. h für die Typdefinition von **LPENTRYLIST**. 
+- [in] Dies ist die Liste der Eintrags-IDs der Ordner, die synchronisiert werden sollen, **UPS_THESE_FOLDERS** festgelegt wurde. Die Typdefinition von **LPENTRYLIST** finden Sie unter mapidefs.h. 
     
  _pulFolderOptions_
   
-- in Dies ist ein Array von Ordneroptionen für entsprechende Ordner in *PEL* , wenn **UPS_THESE_FOLDERS** festgelegt wurde. Diese Ordneroptionen werden beim Hochladen aller in *PEL* aufgeführten Ordner während des [Upload-Ordner Status](upload-folder-state.md)verwendet. Weitere Informationen zu Ordneroptionen finden Sie unter **[UPFLD](upfld.md)**. 
+- [in] Dies ist ein Array von Ordneroptionen für entsprechende Ordner in  *Pel,* **wenn UPS_THESE_FOLDERS** festgelegt wurde. Diese Ordneroptionen werden beim Hochladen der einzelnen Ordner verwendet, die in *pel* während des [Status des Uploadordners aufgeführt sind.](upload-folder-state.md) Weitere Informationen zu Ordneroptionen finden Sie unter **[UPFLD](upfld.md)**. 
     
 ## <a name="see-also"></a>Siehe auch
 

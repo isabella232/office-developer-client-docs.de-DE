@@ -25,13 +25,13 @@ ms.locfileid: "33434018"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Definiert eine Rückruffunktion, die von MAPI aufgerufen wird, um eine Ereignisbenachrichtigung zu senden. Diese Rückruffunktion kann nur verwendet werden, wenn Sie in ein Advise-Senke-Objekt eingeschlossen wird, das durch Aufrufen der [HrAllocAdviseSink](hrallocadvisesink.md) -Funktion erstellt wurde. 
+Definiert eine Rückruffunktion, die MAPI aufruft, um eine Ereignisbenachrichtigung zu senden. Diese Rückruffunktion kann nur verwendet werden, wenn sie in ein Advise Sink-Objekt gepackt wird, das durch Aufrufen der [HrAllocAdviseSink-Funktion erstellt](hrallocadvisesink.md) wurde. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Definierte Funktion, implementiert von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
-|Definierte Funktion, aufgerufen von:  <br/> |MAPI  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Definierte Funktion implementiert von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
+|Definierte Funktion, die von:  <br/> |MAPI  <br/> |
    
 ```cpp
 ULONG (STDAPICALLTYPE NOTIFCALLBACK)(
@@ -45,29 +45,29 @@ ULONG (STDAPICALLTYPE NOTIFCALLBACK)(
 
  _lpvContext_
   
-> in Zeiger auf einen beliebigen Wert, der beim Aufrufen von MAPI an die Rückruffunktion übergeben wird. Dieser Wert kann eine Adresse darstellen, die für die Clientanwendung oder den Dienstanbieter von Bedeutung ist. Für C++-Code stellt der Parameter _LpvContext_ in der Regel einen Zeiger auf ein c++-Objekt dar. 
+> [in] Zeiger auf einen beliebigen Wert, der an die Rückruffunktion übergeben wird, wenn MAPI ihn aufruft. Dieser Wert kann eine Adresse darstellen, die für die Clientanwendung oder den Dienstanbieter von Bedeutung ist. Normalerweise stellt der  _lpvContext-Parameter_ für C++-Code einen Zeiger auf ein C++-Objekt dar. 
     
  _cNotification_
   
-> in Die Anzahl der Ereignisbenachrichtigungen im durch den _lpNotifications_ -Parameter angegebenen Array. 
+> [in] Anzahl der Ereignisbenachrichtigungen im Array, das durch den  _lpNotifications-Parameter angegeben_ wird. 
     
  _lpNotifications_
   
-> Out Zeiger auf den Speicherort, an dem diese Funktion ein Array [](notification.md) von Benachrichtigungs Strukturen mit den Ereignisbenachrichtigungen schreibt. 
+> [out] Zeiger auf den Speicherort, an dem diese Funktion ein Array von [NOTIFICATION-Strukturen](notification.md) schreibt, das die Ereignisbenachrichtigungen enthält. 
     
 ## <a name="return-value"></a>Rückgabewert
 
-Die Menge gültiger Rückgabewerte für den Prototyp der **NOTIFCALLBACK** -Funktion hängt davon ab, ob die Funktion von einer Clientanwendung oder einem Dienstanbieter implementiert wird. Clients sollten immer S_OK zurückgeben. Anbieter können S_OK oder CALLBACK_DISCONTINUE zurückgeben. 
+Der Satz gültiger Rückgabewerte für den PROTOTYP der **NOTIFCALLBACK-Funktion** hängt davon ab, ob die Funktion von einer Clientanwendung oder einem Dienstanbieter implementiert wird. Clients sollten immer S_OK. Anbieter können entweder S_OK oder CALLBACK_DISCONTINUE. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-CALLBACK_DISCONTINUE ist ein gültiger Rückgabewert für synchrone Rückruffunktionen; Sie fordert, dass MAPI die Verarbeitung der Rückrufe für diese Benachrichtigung sofort beendet. Wenn CALLBACK_DISCONTINUE zurückgegeben wird, wird der Parameter _lpUlFlags_ auf NOTIFY_CANCELED festgelegt, wenn er von [IMAPISupport:: notify](imapisupport-notify.md)zurückgegeben wird. 
+CALLBACK_DISCONTINUE ist ein gültiger Rückgabewert nur für synchrone Rückruffunktionen. es fordert die MAPI auf, die Verarbeitung der Rückrufe für diese Benachrichtigung sofort zu beenden. Wenn CALLBACK_DISCONTINUE zurückgegeben wird, legt MAPI den _lpUlFlags-Parameter_ auf NOTIFY_CANCELED fest, wenn er von [IMAPISupport::Notify zurückgegeben wird.](imapisupport-notify.md) 
   
-Die folgenden Einschränkungen gelten für eine synchrone Rückruffunktion:
+Es folgen Einschränkungen, was eine synchrone Rückruffunktion tun kann:
   
-- Es kann keine weitere synchrone Benachrichtigung generiert werden.
+- Es kann nicht dazu führen, dass eine weitere synchrone Benachrichtigung generiert wird.
     
-- Eine Benutzeroberfläche kann nicht angezeigt werden.
+- Es kann keine Benutzeroberfläche angezeigt werden.
     
 ## <a name="see-also"></a>Siehe auch
 

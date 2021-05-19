@@ -21,12 +21,12 @@ ms.locfileid: "33434522"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPI-Nachrichtenprioritäten werden TNEF-Werten aus Gründen der Abwärtskompatibilität wie folgt zugeordnet:
+MapI-Nachrichtenprioritäten werden aus Abwärtskompatibilität wie folgt TNEF-Werten zugeordnet:
   
 |**Priority**|**MAPI-Wert**|**TNEF-Wert**|
 |:-----|:-----|:-----|
 |normal  <br/> |-1  <br/> |3  <br/> |
-|hohe  <br/> |0  <br/> |2  <br/> |
-|mit niedriger  <br/> |1  <br/> |1  <br/> |
+|high  <br/> |0  <br/> |2  <br/> |
+|low  <br/> |1  <br/> |1  <br/> |
    
 

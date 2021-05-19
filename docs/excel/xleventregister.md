@@ -18,7 +18,7 @@ ms.locfileid: "45160279"
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Wird zum Registrieren eines Ereignishandlers verwendet. In Excel 2010 eingeführt.
+Wird zum Registrieren eines Ereignishandlers verwendet. Eingeführt in Excel 2010.
   
 ```vb
 Excel12(xlEventRegister, LPXLOPER12 pxRes, 2, LPXLOPER12 pxProcedure, LPXLOPER12 pxEvent);
@@ -28,22 +28,22 @@ Excel12(xlEventRegister, LPXLOPER12 pxRes, 2, LPXLOPER12 pxProcedure, LPXLOPER12
 
  _pxProcedure_ (**xltypeStr**)
   
-Der Name der Ereignis Handlerfunktion, wie er im DLL-Code angezeigt wird.
+Der Name des Ereignishandlers funktioniert so, wie er im DLL-Code angezeigt wird.
   
  _pxEvent_ (**xltypeInt**)
   
-Das Ereignis, das von der im _pxProcedure_ -Parameter festgelegten Funktion behandelt wird. 
+Das Ereignis, das von der im  _Parameter pxProcedure_ festgelegten Funktion verarbeitet wird. 
   
-Beginnend mit Excel 2010 unterstützt Excel die folgenden Ereignisse:
+Ab Excel 2010 unterstützt Excel die folgenden Ereignisse:
   
 |**Event**|**Beschreibung**|
 |:-----|:-----|
-|**xleventCalculationEnded** <br/> |Wird ausgelöst, wenn Excel eine Berechnung abgeschlossen hat. Sie können alle während der Berechnung zugeordneten Ressourcen nach diesem Ereignis freigeben.  <br/> |
+|**xleventCalculationEnded** <br/> |Wird ausgelöst, Excel eine Berechnung abgeschlossen ist. Sie können alle Ressourcen frei, die während der Berechnung nach diesem Ereignis zugewiesen wurden.  <br/> |
 |**xleventCalculationCanceled** <br/> |Wird ausgelöst, wenn der Benutzer die Berechnung unterbricht. Die XLL sollte alle asynchronen Aktivitäten beenden. Das CalculationEnded-Ereignis wird unmittelbar nach diesem Ereignis ausgelöst.  <br/> |
    
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-Wenn die Methode erfolgreich verläuft, hat pxRes (**xltypeInt**) einen Wert > 0. Wenn nicht erfolgreich, pxRes = = 0.
+Wenn dies erfolgreich ist, hat pxRes (**xltypeInt**) den Wert > 0. Wenn dies nicht erfolgreich ist, ist pxRes ==0.
   
 ## <a name="see-also"></a>Siehe auch
 

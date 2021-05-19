@@ -25,7 +25,7 @@ ms.locfileid: "33435579"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt eine [MAPIERROR](mapierror.md) -Struktur zurück, die Informationen zum vorherigen Sitzungsfehler enthält. 
+Gibt eine [MAPIERROR-Struktur](mapierror.md) zurück, die Informationen zum vorherigen Sitzungsfehler enthält. 
   
 ```cpp
 HRESULT GetLastError(
@@ -39,19 +39,19 @@ HRESULT GetLastError(
 
  _hResult_
   
-> in Ein Handle für den im vorherigen Methodenaufruf generierten Fehlerwert.
+> [in] Ein Handle zum Fehlerwert, der im vorherigen Methodenaufruf generiert wurde.
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die den Typ der zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die den Typ der zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
     
 MAPI_UNICODE 
   
-> Die Zeichenfolgen in der **MAPIERROR** -Struktur, die im _lppMAPIError_ -Parameter zurückgegeben werden, sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format. 
+> Die Zeichenfolgen in der **MAPIERROR-Struktur,** die im  _lppMAPIError-Parameter_ zurückgegeben wird, sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Zeichenfolgen im ANSI-Format. 
     
  _lppMAPIError_
   
-> Out Ein Zeiger auf einen Zeiger auf eine **MAPIERROR** -Struktur, die Versions-, Komponenten-und Kontextinformationen für den Fehler enthält. Der Parameter _lppMAPIError_ kann auf NULL festgelegt werden, wenn MAPI keine geeigneten Informationen für eine **MAPIERROR** -Struktur bereitstellen kann. 
+> [out] Ein Zeiger auf einen Zeiger auf eine **MAPIERROR-Struktur,** die Versions-, Komponenten- und Kontextinformationen für den Fehler enthält. Der  _lppMAPIError-Parameter_ kann auf NULL festgelegt werden, wenn MAPI keine geeigneten Informationen für eine **MAPIERROR-Struktur angeben** kann. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -61,17 +61,17 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> Das MAPI_UNICODE-Flag wurde festgelegt, und die Sitzung unterstützt Unicode nicht.
+> Das MAPI_UNICODE wurde festgelegt, und die Sitzung unterstützt Unicode nicht.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPISession:: getlasterroraufzurufen** -Methode ruft Informationen zum letzten Fehler ab, der von einem Aufruf der **IMAPISession** -Methode zurückgegeben wurde. Clients können Ihren Benutzern detaillierte Informationen zu dem Fehler bereitstellen, indem Sie diese Informationen in ein Dialogfeld einschließen. 
+Die **IMAPISession::GetLastError-Methode** ruft Informationen zum letzten Fehler ab, der von einem **IMAPISession-Methodenaufruf zurückgegeben** wurde. Clients können ihren Benutzern detaillierte Informationen zum Fehler bereitstellen, indem sie diese Informationen in ein Dialogfeld eingeben. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Sie können die **MAPIERROR** -Struktur verwenden, wenn MAPI eine bereitstellt, auf die durch den _lppMAPIError_ -Parameter verwiesen wird, nur, wenn **getlasterroraufzurufen** S_OK zurückgibt. Manchmal kann MAPI nicht ermitteln, was der letzte Fehler war, oder er hat nichts mehr über den Fehler zu berichten. In dieser Situation gibt **getlasterroraufzurufen** stattdessen einen Zeiger auf NULL in _lppMAPIError_ zurück. 
+Sie können die **MAPIERROR-Struktur** verwenden, wenn MAPI eine angibt, auf die der  _lppMAPIError-Parameter_ nur verweist, wenn **GetLastError** S_OK. Manchmal kann MAPI nicht ermitteln, was der letzte Fehler war, oder es hat nichts mehr über den Fehler zu melden. In dieser Situation gibt **GetLastError** stattdessen einen Zeiger auf NULL in  _lppMAPIError_ zurück. 
   
-Weitere Informationen zur **getlasterroraufzurufen** -Methode finden Sie unter [MAPI Extended Errors](mapi-extended-errors.md).
+Weitere Informationen zur **GetLastError-Methode** finden Sie unter [MAPI Extended Errors](mapi-extended-errors.md).
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -84,5 +84,5 @@ Weitere Informationen zur **getlasterroraufzurufen** -Methode finden Sie unter [
 [IMAPISession : IUnknown](imapisessioniunknown.md)
 
 
-[Erweiterte MAPI-Fehler](mapi-extended-errors.md)
+[ERWEITERTE MAPI-Fehler](mapi-extended-errors.md)
 

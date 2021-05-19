@@ -26,21 +26,21 @@ Bestimmt, wie Sie ein Gruppen-Shape und dessen Mitglieder auswählen.
 |1  <br/> |Das Gruppen-Shape zuerst auswählen.  <br/> |**visGrpSelModeGroup1st** <br/> |
 |2  <br/> |Mitglieder der Gruppe zuerst auswählen.  <br/> |**visGrpSelModeMembers1st** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Sie können diesen Wert auch im Dialogfeld **Verhalten** festlegen (wenn das Gruppen-Shape ausgewählt ist, klicken Sie auf der Registerkarte [Entwicklertools](run-in-developer-mode-display-the-developer-tab.md) in der Gruppe **Shape-Design** auf **Verhalten**, und klicken Sie dann in der **Auswahl** Liste Untergruppe auf einen Modus. ** Verhalten** ). 
+Sie können diesen Wert  auch im Dialogfeld Verhalten festlegen (wenn [](run-in-developer-mode-display-the-developer-tab.md) die Gruppenform ausgewählt ist, klicken Sie auf der Registerkarte  Entwickler in der **Gruppe Shape-Entwurf** auf **Verhalten,** und klicken Sie dann unter Gruppenverhalten auf einen Modus in der Liste **Auswahl).** 
   
-Wenn Sie einen Verweis auf die Zelle "SelectMode aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle SelectMode anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |"SelectMode  <br/> |
+|Zellenname:  <br/> |SelectMode  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle "SelectMode aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle SelectMode nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowGroup** <br/> |
 |Zellenindex:  <br/> |**visGroupSelectMode** <br/> |
    

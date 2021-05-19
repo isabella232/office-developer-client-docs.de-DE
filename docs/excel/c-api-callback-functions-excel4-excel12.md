@@ -5,7 +5,7 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 keywords:
-- Funktionen [Excel 2007], c-API-Rückruf
+- funktionen [excel 2007], c api callback
 localization_priority: Normal
 ms.assetid: 0f3ae86d-329a-4177-a65b-6288c248297e
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -20,13 +20,13 @@ ms.locfileid: "33434431"
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Die **Excel4** -und **Excel12** -Funktionen werden bereitgestellt, damit DLLs eine interne Microsoft Excel-Arbeitsblattfunktion, eine Makroblatt Funktion oder einen Befehl oder eine XLL-spezifische Funktion oder einen Befehl aufrufen können. Alle neueren Versionen von Excel unterstützen die **Excel4** -Funktion. Ab Excel 2007 wird die **Excel12** -Funktion unterstützt. Beide Funktionen werden in zwei Formen bereitgestellt: 
+Die **Funktionen Excel4** und **Excel12** werden bereitgestellt, um DLLs das Aufrufen einer internen Microsoft Excel-Arbeitsblattfunktion, makroblattfunktion oder -befehl oder XLL-sonderfunktion oder -befehl zu ermöglichen. Alle aktuellen Versionen von Excel unterstützen die **Excel4-Funktion.** Ab Excel 2007 wird die **Excel12-Funktion** unterstützt. Beide Funktionen werden in zwei Formen bereitgestellt: 
   
-- Argumentlisten Formular mit variabler Länge (**Excel4/Excel12**)
+- Ein Argumentlistenformular mit variabler Länge (**Excel4/Excel12**)
     
 - Ein Array-of-Arguments-Formular (**Excel4v/Excel12v**)
     
-Mit Ausnahme der Art und Weise, in der Argumente an diese Rückrufe übergeben werden, sind die beiden Formulare funktionell äquivalent. Die grundlegenden Konzepte für beide Formulare werden vollständig in [Excel4/Excel12](excel4-excel12.md)beschrieben. [Excel4v/Excel12v](excel4v-excel12v.md) behandelt andere Probleme zu diesem Formular. 
+Mit Ausnahme der Art und Weise, wie Argumente an diese Rückrufe übergeben werden, sind die beiden Formulare funktional gleichwertig. Die grundlegenden Konzepte für beide Formulare werden in [Excel4/Excel12 vollständig beschrieben.](excel4-excel12.md) [Excel4v/Excel12v](excel4v-excel12v.md) behandelt andere Probleme in diesem Formular. 
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 

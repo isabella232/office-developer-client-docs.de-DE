@@ -1,5 +1,5 @@
 ---
-title: Formular Konfigurationsdatei [Beschreibung] Abschnitt
+title: Abschnitt "Formularkonfigurationsdatei" [Beschreibung]
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,61 +15,61 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33433094"
 ---
-# <a name="form-configuration-file-description-section"></a>Formular Konfigurationsdatei [Beschreibung] Abschnitt
+# <a name="form-configuration-file-description-section"></a>Abschnitt "Formularkonfigurationsdatei" [Beschreibung]
  
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Der Abschnitt **[Description]** enthält alle Eigenschaften des Formulars, die Steuerelementen in der Benutzeroberfläche des Formulars zugeordnet sind, sowie Attribute, die beim Auffinden des Formulars verwendet werden. Die **MessageClass**-, **CLSID**-und **Display** Name-Einträge, die den Namen der Nachrichtenklasse des Formulars, dessen GUID und den Anzeigenamen der Nachrichtenklasse identifizieren, sind erforderliche Einträge, die zum Suchen des Formulars in der Formularbibliothek verwendet werden. . Die restlichen Einträge sind optional. Das Format des Abschnitts **[Description]** lautet: 
+Im **Abschnitt [Beschreibung]** werden alle Eigenschaften des Formulars aufgeführt, die Steuerelementen auf der Benutzeroberfläche des Formulars zugeordnet sind, sowie Attribute, die zum Suchen des Formulars verwendet werden. Die **Einträge MessageClass**, Clsid und **DisplayName,** die den Namen der Nachrichtenklasse des **Formulars,** die GUID und den Anzeigenamen der Nachrichtenklasse identifizieren, sind erforderliche Einträge, die zum Suchen des Formulars in der Formularbibliothek verwendet werden. Die verbleibenden Einträge sind optional. Das Format des **Abschnitts [Beschreibung]** ist: 
   
-Der Abschnitt **[Description]** enthält alle Eigenschaften des Formulars, die Steuerelementen in der Benutzeroberfläche des Formulars zugeordnet sind, sowie Attribute, die beim Auffinden des Formulars verwendet werden. Die **MessageClass**-, **CLSID**-und **Display** Name-Einträge, die den Namen der Nachrichtenklasse des Formulars, dessen GUID und den Anzeigenamen der Nachrichtenklasse identifizieren, sind erforderliche Einträge, die zum Suchen des Formulars in der Formularbibliothek verwendet werden. . Die restlichen Einträge sind optional. Das Format des Abschnitts **[Description]** lautet: 
+Im **Abschnitt [Beschreibung]** werden alle Eigenschaften des Formulars aufgeführt, die Steuerelementen auf der Benutzeroberfläche des Formulars zugeordnet sind, sowie Attribute, die zum Suchen des Formulars verwendet werden. Die **Einträge MessageClass**, Clsid und **DisplayName,** die den Namen der Nachrichtenklasse des **Formulars,** die GUID und den Anzeigenamen der Nachrichtenklasse identifizieren, sind erforderliche Einträge, die zum Suchen des Formulars in der Formularbibliothek verwendet werden. Die verbleibenden Einträge sind optional. Das Format des **Abschnitts [Beschreibung]** ist: 
   
- **Beschreibung MessageClass** =  -_Zeichenfolge_
+ **[Beschreibung] MessageClass**  =   _string_
   
- **CLSID** =  -_GUID_
+ **Clsid**  =   _guid_
   
- **** =  _Anzeige_ Name
+ **DisplayName**  =   _displayedstring_
   
- **SmallIcon** =  -_Pfad_
+ **SmallIcon**  =   _path_
   
- **LargeIcon** =  -_Pfad_
+ **LargeIcon**  =   _path_
   
 Optionale Einträge sind:
   
- **Kategorie** =  _angezeigte Zeichenfolge_
+ **Kategorie**  =   _angezeigte Zeichenfolge_
   
- **Unterkategorie** =  _angezeigte Zeichenfolge_
+ **Unterkategorie**  =   _angezeigte Zeichenfolge_
   
- **Kommentar** =  _angezeigte Zeichenfolge_
+ **Kommentar**  =   _angezeigte Zeichenfolge_
   
- **** =  _Angezeigte Zeichenfolge_ des Besitzers
+ **Besitzer**  =   _angezeigte Zeichenfolge_
   
- **** Angezeigte Zeichen_Folge_  =  
+ **Number**  =   _angezeigte Zeichenfolge_
   
- **** =  _Ganze Zahl_
+ **Version**  =   _integer_
   
- **Gebietsschema** =  -_Zeichenfolge_
+ **Locale**  =   _string_
   
- **Ausgeblendete** =  _Ganzzahl_
+ **Ausgeblendet**  =   _integer_
   
- **DesignerToolName** =  -_Zeichenfolge_
+ **DesignerToolName**  =   _string_
   
- **DesignerToolGuid** =  -_CLSID_
+ **DesignerToolGuid**  =   _clsid_
   
- **DesignerRuntimeGuid** =  -_CLSID_
+ **DesignerRuntimeGuid**  =   _clsid_
   
- **ComposeInFolder** =  _0 | 1_
+ **ComposeInFolder**  =   _0|1_
   
- **ComposeCommand** =  -_Zeichenfolge_
+ **ComposeCommand**  =   _string_
   
-Die Einträge **Category** und SubCategory werden von Formular Installationsprogrammen verwendet, um die Standard Kategorisierung von Formularen in der Benutzeroberfläche der Clientanwendung einzurichten. **** Beispielsweise könnte eine Hierarchie eingerichtet werden, in der "Help Desk" die Kategorie und "Software" und "Hardware" waren die Unterkategorien. Diese Kategorisierung kann dann von Viewer-Anwendungen verwendet werden, um Nachrichten auf eine strukturiertere Weise anzuzeigen. Die Einträge **Kommentar**, **Besitzer**und **Anzahl** sind alle Kommentarzeichenfolgen, die auf der Benutzeroberfläche der Clientanwendung angezeigt werden. Hierbei handelt es sich um formularspezifische Eigenschaften, die nach Ermessen des Formular Entwicklers verwendet werden können. Der **Kommentar** Eintrag kann beispielsweise verwendet werden, um den Zweck des Formulars anzugeben, den **Besitzer** Eintrag, der die Person oder Organisation angibt, die für die Verwaltung des Formulars zuständig ist, und die Nummer, die zum Nachverfolgen der verschiedenen Formularversionen verwendet wird. Für den **Kommentar** Eintrag können bis zu zehn Zeilen mit Kommentaren enthalten sein. Die erste Codezeile verwendet das Wort "comment" als Schlüssel, in der zweiten Kommentar Reihe wird "Comment1" als Schlüssel verwendet, und so weiter über "Comment9". 
+Die **Einträge Category** und **Unterkategorie** werden von Formularinstallationsmodulen verwendet, um die Standardkategorisierung von Formularen auf der Benutzeroberfläche der Clientanwendung zu einrichten. Beispielsweise könnte eine Hierarchie eingerichtet werden, bei der "Help Desk" die Kategorie und "Software" und "Hardware" die Unterkategorien waren. Diese Kategorisierung kann dann von Vieweranwendungen verwendet werden, um Nachrichten besser organisiert zu zeigen. Die **Einträge Comment**, **Owner** und **Number** sind alle Kommentarzeichenfolgen, die auf der Benutzeroberfläche der Clientanwendung angezeigt werden. Dies sind formularspezifische Eigenschaften, die nach Ermessen des Formularentwicklers verwendet werden können. Beispielsweise kann der **Kommentareintrag** verwendet werden, um den Zweck des Formulars anzugeben, den **Besitzereintrag,** der verwendet wird, um die Person oder Organisation anzugeben, die für die Verwaltung des Formulars verantwortlich ist, und die Nummer, die zum Nachverfolgen einer anderen Version des Formulars verwendet wird. Für den **Kommentareintrag** können bis zu zehn Kommentarzeilen eingeschlossen werden. In der ersten Kommentarzeile wird das Wort "Comment" als Schlüssel verwendet, in der zweiten Kommentarzeile wird "Comment1" als Schlüssel verwendet, und so weiter über "Comment9". 
   
-Die **LargeIcon** -und **SmallIcon** -Einträge werden verwendet, um den Pfad für die Symbolressourcen anzugeben, die zum Anzeigen der Symbole in der Benutzeroberfläche der Clientanwendung verwendet werden, in der Regel für Tabellenzeilen, die das **PR_ICON** ([pidtagicon (](pidtagicon-canonical-property.md)) oder **PR_MINI_ICON** ([pidtagminiicon (](pidtagminiicon-canonical-property.md))-Eigenschaftsspalten. Symboldateinamen können als Pfadnamen relativ zu dem Verzeichnis angegeben werden, in dem die Formular Konfigurationsdatei installiert ist. Der **Versions** Eintrag wird verwendet, um die Versionsnummer des Formulars anzugeben. **Locale** ist der Sprachenbezeichner aus drei Buchstaben der Zielformular Bibliothek. Eine Liste dieser Bezeichner finden Sie unter _Win32 Programmer es Reference_.
+Die **Einträge LargeIcon** und **SmallIcon** werden verwendet, um den Pfad für die Symbolressourcen anzugeben, die zum Anzeigen von Symbolen auf der Benutzeroberfläche der Clientanwendung verwendet werden. Dies gilt in der Regel für Tabellenzeilen, die die **Eigenschaftenspalten PR_ICON** ([PidTagIcon](pidtagicon-canonical-property.md)) oder **PR_MINI_ICON** ([PidTagMiniIcon](pidtagminiicon-canonical-property.md)) enthalten. Symboldateinamen können als Pfadnamen relativ zum Verzeichnis angegeben werden, in dem die Formularkonfigurationsdatei installiert ist. Der **Eintrag Version** wird verwendet, um die Versionsnummer des Formulars anzugeben. **Locale** ist der Drei-Buchstaben-Sprachbezeichner der Zielformularbibliothek. Eine Liste dieser Bezeichner finden Sie im  _Win32 Programmer's Reference_.
   
-Der **Ausgeblendete** Eintrag gibt an, ob das Formular in der Benutzeroberfläche eines Formularbibliothek Anbieters angezeigt werden soll: 1 gibt an, dass die Datei ausgeblendet ist, und 0 gibt an, dass das Formular sichtbar ist. Nachfolgend sehen Sie eine Beispiel-Formular Konfigurationsdatei. 
+Der **Eintrag Ausgeblendet** gibt an, ob das Formular auf der Benutzeroberfläche eines Formularbibliotheksanbieters angezeigt werden soll: 1 gibt an, dass die Datei ausgeblendet ist, und 0 gibt an, dass das Formular sichtbar ist. Im Folgenden wird eine Beispielkonfigurationsdatei gezeigt. 
   
-Der **ComposeInFolder** -Eintrag steuert, ob das Formular im aktuellen Ordner oder im Posteingang des Benutzers abgelegt werden soll, wenn der Benutzer die Nachricht beim Erstellen speichert: 1 gibt an, dass das Formular in den aktuellen Ordner verschoben werden soll, und 0 gibt an, dass es Wechseln Sie in den Posteingang. 
+Der **ComposeInFolder-Eintrag** steuert, ob das Formular im aktuellen Ordner oder im Posteingang des Benutzers platziert werden soll, wenn der Benutzer die Nachricht beim Verfassen speichert: 1 gibt an, dass das Formular in den aktuellen Ordner und 0 in den Posteingang wechseln soll. 
   
-Der **ComposeCommand** -Eintrag ist die Zeichenfolge, die im Verfassen-Menü der Clientanwendung angezeigt werden soll. Wenn dies nicht angegeben wird, wird der Eintrag **DisplayName** verwendet. 
+Der **Eintrag ComposeCommand** ist die Zeichenfolge, die im Verfassenmenü der Clientanwendung platziert werden soll. Wenn dies nicht angegeben ist, wird der **DisplayName-Eintrag** verwendet. 
   
 ```cpp
 [Description]

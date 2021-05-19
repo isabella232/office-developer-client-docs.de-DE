@@ -21,21 +21,21 @@ ms.locfileid: "33435103"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die wichtigste Herausforderung beim Senden von RTF-Nachrichten (Rich Text Format) ist, dass der Text mit der Formatierung synchronisiert bleibt. Um sicherzustellen, dass Nachrichten an Ihrem Ziel ankommen, werden Sie als ihre Absender beabsichtigt, und der Text und die Formatierung werden synchronisiert, MAPI stellt die [RTFSync](rtfsync.md) -Funktion bereit. **RTFSync** wird in der Regel von RTF-fähigen Clients aufgerufen, bevor eingehende Nachrichten und der MAPI-Spooler angezeigt werden, wenn Nachrichten an einen Transportanbieter heruntergeladen werden. Anrufer geben den Bereich möglicher Diskrepanz an, indem Sie ein oder zwei Flags an **RTFSync**übergeben:
+Die größte Herausforderung beim Senden von Rich Text Format (RTF)-Nachrichten besteht darin, den Text mit der Formatierung zu synchronisieren. Um sicherzustellen, dass Nachrichten, wenn sie am Ziel ankommen, wie ihre Ermittler vorgesehen sind und dass Text und Formatierung synchronisiert werden, stellt MAPI die [RTFSync-Funktion](rtfsync.md) zur Verwendung. **RTFSync wird** in der Regel von RTF-unterstützenden Clients aufgerufen, bevor eingehende Nachrichten angezeigt werden, und vom MAPI-Spooler, wenn Nachrichten an einen Transportanbieter heruntergeladen werden. Anrufer geben den Bereich möglicher Abweichungen an, indem sie ein oder zwei Flags an **RTFSync übergeben:**
   
-- RTF_SYNC_BODY_CHANGED, um eine Änderung im Nachrichtentext anzuzeigen.
+- RTF_SYNC_BODY_CHANGED, um eine Änderung im Nachrichtentext anzugeben.
     
-- RTF_SYNC_RTF_CHANGED, um eine Änderung der Nachrichtenformatierung anzuzeigen.
+- RTF_SYNC_RTF_CHANGED, um eine Änderung der Nachrichtenformatierung anzugeben.
     
-Beim Synchronisierungsvorgang in **RTFSync** handelt es sich um eine ausgeklügelte zyklische Redundanzprüfung des Nachrichtentexts, der einige Zeichen ignoriert und andere konvertiert. Zeichen, die von Transportanbietern höchstwahrscheinlich hinzugefügt wurden, werden ignoriert. MAPI definiert mehrere Eigenschaften für das Arbeiten mit RTF, wie in der folgenden Tabelle beschrieben. 
+Der Synchronisierungsprozess in **RTFSync** ist eine ausgefeilte zyklische Redundanzprüfung (CrC) des Nachrichtentexts, die einige Zeichen ignoriert und andere konvertiert. Zeichen, die wahrscheinlich von Transportanbietern hinzugefügt wurden, werden ignoriert. MAPI definiert verschiedene Eigenschaften für die Arbeit mit RTF, wie in der folgenden Tabelle beschrieben. 
   
 |**RTF-Eigenschaft**|**Beschreibung**|
 |:-----|:-----|
-|**PR_RTF_SYNC_BODY_TAG** ([Pidtagrtfsyncbodytag (](pidtagrtfsyncbodytag-canonical-property.md))  <br/> |Gibt den Anfang des eigentlichen Nachrichtentexts an.  <br/> |
-|**PR_RTF_SYNC_BODY_CRC** ([Pidtagrtfsyncbodycrc (](pidtagrtfsyncbodycrc-canonical-property.md))  <br/> |Enthält das Ergebnis der Überprüfung der zyklischen Redundanz des Nachrichtentexts.  <br/> |
-|**PR_RTF_SYNC_BODY_COUNT** ([Pidtagrtfsyncbodycount (](pidtagrtfsyncbodycount-canonical-property.md))  <br/> |Enthält die Anzahl der Zeichen in **PR_RTF_SYNC_BODY_CRC**.  <br/> |
-|**PR_RTF_IN_SYNC** ([Pidtagrtfinsync (](pidtagrtfinsync-canonical-property.md))  <br/> |Wird auf TRUE festgelegt, wenn der Nachrichtentext und die Formatierung synchronisiert wurden.  <br/> |
-|**PR_RTF_SYNC_PREFIX_COUNT** ([Pidtagrtfsyncprefixcount (](pidtagrtfsyncprefixcount-canonical-property.md))  <br/> |Enthält die Anzahl von Leerzeichen, die den Nachrichtentext bevorstehen.  <br/> |
-|**PR_RTF_SYNC_TRAILING_COUNT** ([Pidtagrtfsynctrailingcount (](pidtagrtfsynctrailingcount-canonical-property.md))  <br/> |Enthält die Anzahl von Leerzeichen, die den Nachrichtentext nachverfolgen.  <br/> |
+|**PR_RTF_SYNC_BODY_TAG** ([PidTagRtfSyncBodyTag](pidtagrtfsyncbodytag-canonical-property.md))  <br/> |Gibt den Anfang des tatsächlichen Nachrichtentexts an.  <br/> |
+|**PR_RTF_SYNC_BODY_CRC** ([PidTagRtfSyncBodyCrc](pidtagrtfsyncbodycrc-canonical-property.md))  <br/> |Enthält das Ergebnis der zyklischen Redundanzüberprüfung des Nachrichtentexts.  <br/> |
+|**PR_RTF_SYNC_BODY_COUNT** ([PidTagRtfSyncBodyCount](pidtagrtfsyncbodycount-canonical-property.md))  <br/> |Enthält die Anzahl der Zeichen in **PR_RTF_SYNC_BODY_CRC**.  <br/> |
+|**PR_RTF_IN_SYNC** ([PidTagRtfInSync](pidtagrtfinsync-canonical-property.md))  <br/> |Wird auf TRUE festgelegt, wenn der Nachrichtentext und die Formatierung synchronisiert wurden.  <br/> |
+|**PR_RTF_SYNC_PREFIX_COUNT** ([PidTagRtfSyncPrefixCount](pidtagrtfsyncprefixcount-canonical-property.md))  <br/> |Enthält die Anzahl der Nicht-Whitespace-Zeichen, die dem Nachrichtentext voraus waren.  <br/> |
+|**PR_RTF_SYNC_TRAILING_COUNT** ([PidTagRtfSyncTrailingCount](pidtagrtfsynctrailingcount-canonical-property.md))  <br/> |Enthält die Anzahl der Nicht-Whitespace-Zeichen, die dem Nachrichtentext nachgestellt werden.  <br/> |
    
 

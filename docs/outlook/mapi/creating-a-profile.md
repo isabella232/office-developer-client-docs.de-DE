@@ -21,16 +21,16 @@ ms.locfileid: "33432688"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ein Client kann auf zweierlei Weise ein Profil erstellen, indem er den Profil-Assistenten verwendet oder benutzerdefinierten Code schreibt.
+Ein Client kann ein Profil auf zwei Arten erstellen, indem er den Profil-Assistenten verwendet oder benutzerdefinierten Code schreibt.
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
 [Erstellen eines Profils mithilfe des Profil-Assistenten](creating-a-profile-by-using-the-profile-wizard.md)
   
-> Beschreibt, wie der Profil-Assistent aufgerufen wird, eine Anwendung, die ein Profil erstellt, indem es dem Benutzer ermöglicht, Nachrichtendienste und Dienstanbieter interaktiv auszuwählen.
+> Beschreibt das Aufrufen des Profil-Assistenten, einer Anwendung, die ein Profil erstellt, indem der Benutzer nachrichtendienste und Dienstanbieter interaktiv auswählen kann.
     
 [Erstellen eines Profils mithilfe von benutzerdefiniertem Code](creating-a-profile-by-using-custom-code.md)
   
-> Beschreibt, wie C-oder C++-Code geschrieben wird, häufig die beste Wahl für nicht interaktive Clientanwendungen, für die eine bestimmte Gruppe von Nachrichtendiensten erforderlich ist.
+> Beschreibt das Schreiben von C- oder C++-Code, häufig die beste Wahl für nichtinteraktive Clientanwendungen, für die eine bestimmte Gruppe von Nachrichtendiensten erforderlich ist.
     
 

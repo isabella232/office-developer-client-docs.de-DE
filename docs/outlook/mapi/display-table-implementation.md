@@ -1,5 +1,5 @@
 ---
-title: Anzeigen der Tabellen Implementierung
+title: Implementierung der Anzeigetabelle
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,31 +15,31 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33435264"
 ---
-# <a name="display-table-implementation"></a>Anzeigen der Tabellen Implementierung
+# <a name="display-table-implementation"></a>Implementierung der Anzeigetabelle
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine Anzeigetabelle wird verwendet, um ein Eigenschaftenfenster anzuzeigen, ein spezielles Dialogfeld, das aus einem oder mehreren Registerkarten-Eigenschaftenseiten besteht, die für das Anzeigen und möglicherweise Bearbeiten einer oder mehrerer Eigenschaften reserviert sind. Jeder Anzeigetabelle ist eine [IAttach: IMAPIProp](iattachimapiprop.md) -Schnittstellenimplementierung zugeordnet. Die [IMAPIProp](imapipropiunknown.md) -Implementierung verwaltet die Eigenschaftendaten, die im Eigenschaftenfenster angezeigt werden. 
+Eine Anzeigetabelle wird verwendet, um ein Eigenschaftenblatt anzuzeigen, ein spezielles Dialogfeld, das aus einer oder mehreren Eigenschaftenseiten mit Registerkarten besteht, die zum Anzeigen und bearbeiten einer oder mehreren Eigenschaften verwendet werden. Jeder Anzeigetabelle ist eine [IAttach : IMAPIProp-Schnittstellenimplementierung](iattachimapiprop.md) zugeordnet. Die [IMAPIProp-Implementierung](imapipropiunknown.md) verwaltet die Eigenschaftendaten, die im Eigenschaftenblatt angezeigt werden. 
   
-Die Zeilen in einer Anzeigetabelle stellen die Steuerelemente im Eigenschaftenfenster dar. Die meisten Steuerelemente können Eigenschaften zugeordnet werden, die mit der **IMAPIProp** -Implementierung verwaltet werden. Wenn ein Benutzer den Wert eines änderbaren Steuerelements ändert, wird die entsprechende Eigenschaft aktualisiert. 
+Die Zeilen in einer Anzeigetabelle stellen die Steuerelemente im Eigenschaftenblatt dar. Die meisten Steuerelemente können Eigenschaften zugeordnet werden, die mit der **IMAPIProp-Implementierung verwaltet** werden. Wenn ein Benutzer den Wert eines veränderbaren Steuerelements ändert, wird die entsprechende Eigenschaft aktualisiert. 
   
-Die Spalten in einer Anzeigetabelle stellen die Eigenschaften des Steuerelements dar, beispielsweise seine Position im Eigenschaftenfenster, dessen Typ, zugehörige Struktur und Bezeichner. Eine vollständige Liste der erforderlichen Anzeige Tabellenspalten finden Sie unter [Display Tables](display-tables.md).
+Die Spalten in einer Anzeigetabelle stellen Eigenschaften des Steuerelements dar, z. B. seine Position im Eigenschaftenblatt, den Typ, die zugeordnete Struktur und den Bezeichner. Eine vollständige Liste der erforderlichen Anzeigetabellenspalten finden Sie unter [Anzeigen von Tabellen](display-tables.md).
   
-MAPI zeigt dem Benutzer einer Clientanwendung ein Eigenschaftenblatt, indem es Eigenschaftswerte aus der **IMAPIProp** -Implementierung liest, die der Anzeigetabelle oder der Anzeigetabelle direkt zugeordnet ist. Während der Benutzer mit dem Eigenschaftenfenster arbeitet und Werte in den Steuerelementen ändert, ruft MAPI [IMAPIProp::](imapiprop-setprops.md) SetProps auf, um ein geändertes Steuerelement zu speichern, wenn das DT_SET_IMMEDIATE-Flag des Steuerelements festgelegt ist. Bei Steuerelementen ohne DT_SET_IMMEDIATE werden Änderungen an Eigenschaften gespeichert, wenn der Benutzer das Dialogfeld abschließt, indem er auf die Schaltfläche **OK** oder **jetzt anwenden** klickt. Wenn eine dieser Schaltflächen oder die Schaltfläche **Abbrechen** geklickt wird, entfernt MAPI das Eigenschaftenblatt aus der Ansicht. 
+MAPI zeigt dem Benutzer einer Clientanwendung ein Eigenschaftenblatt an, indem Eigenschaftswerte aus der der Anzeigetabelle zugeordneten **IMAPIProp-Implementierung** oder direkt aus der Anzeigetabelle gelesen werden. Während der Benutzer mit dem Eigenschaftenblatt arbeitet und Werte in den Steuerelementen ändert, ruft MAPI [IMAPIProp::SetProps](imapiprop-setprops.md) auf, um ein geändertes Steuerelement zu speichern, wenn das DT_SET_IMMEDIATE-Flag des Steuerelements festgelegt ist. Bei Steuerelementen ohne DT_SET_IMMEDIATE werden Änderungen an Eigenschaften gespeichert, wenn der Benutzer das Dialogfeld schließt, indem er auf die Schaltfläche **OK** oder **Jetzt** anwenden klickt. Wenn auf eine dieser Schaltflächen oder auf die Schaltfläche **Abbrechen** geklickt wird, entfernt MAPI das Eigenschaftenblatt aus der Ansicht. 
   
-MAPI erhält Zugriff auf Ihre Anzeigetabelle, indem Sie die [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode in der **IMAPIProp** -Implementierung aufrufen und die **PR_DETAILS_TABLE** ([pidtagdetailstable (](pidtagdetailstable-canonical-property.md))-Eigenschaft anfordert oder in einer Anruf, den Sie an MAPI vorgenommen haben, beispielsweise [IMAPISupport::D oconfigpropsheet](imapisupport-doconfigpropsheet.md).
+MAPI erhält Zugriff auf Ihre Anzeigetabelle, indem sie entweder die [IMAPIProp::OpenProperty-Methode](imapiprop-openproperty.md) in der **IMAPIProp-Implementierung** aufruft und die **PR_DETAILS_TABLE** ([PidTagDetailsTable](pidtagdetailstable-canonical-property.md))-Eigenschaft anfordert oder sie in einem Aufruf erbt, den Sie an MAPI vorgenommen haben, z. B. [IMAPISupport::D oConfigPropsheet](imapisupport-doconfigpropsheet.md).
   
-Die erste Zugriffs Technik wird verwendet, wenn Adressbuchanbieter aufgefordert werden, Details zu Messaging Benutzern oder Verteilerlisten anzuzeigen. Die folgende Verarbeitung erfolgt:
+Die erste Zugriffsmethode wird verwendet, wenn Adressbuchanbieter aufgefordert werden, Details zu Messagingbenutzern oder Verteilerlisten anzuzeigen. Die folgende Verarbeitung erfolgt:
   
-1. Ein Client ruft die [IAddrBook::D ails](iaddrbook-details.md) -Methode auf. 
+1. Ein Client ruft die [IAddrBook::D etails-Methode](iaddrbook-details.md) auf. 
     
-2. MAPI Ruft die [IABLogon:: OpenEntry](iablogon-openentry.md) -Methode des Adressbuch Anbieters auf, um auf den Messagingbenutzer zuzugreifen, der den ausgewählten Eintrag darstellt. 
+2. MAPI ruft die [IABLogon::OpenEntry-Methode](iablogon-openentry.md) des Adressbuchanbieters auf, um auf den Messagingbenutzer zu zugreifen, der den ausgewählten Eintrag darstellt. 
     
-3. MAPI Ruft die [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode des Messaging Benutzers auf, um die **PR_DETAILS_TABLE** -Eigenschaft, die Anzeigetabelle für das Dialogfeld Details, abzurufen. 
+3. MAPI ruft die [IMAPIProp::OpenProperty-Methode](imapiprop-openproperty.md) des **Messagingbenutzers** auf, um die PR_DETAILS_TABLE-Eigenschaft, die Anzeigetabelle für das Dialogfeld Details, abzurufen. 
     
-4. MAPI zeigt das Dialogfeld an, verarbeitet die Interaktion des Benutzers mit den Informationen und entfernt es, wenn der Benutzer fertig ist. 
+4. MAPI zeigt das Dialogfeld an, um die Interaktion des Benutzers mit den Informationen zu behandeln, und entfernt sie, wenn der Benutzer fertig ist. 
     
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagserviceentryname (-Eigenschaft
+title: PidTagServiceEntryName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33432471"
 ---
-# <a name="pidtagserviceentryname-canonical-property"></a>Kanonische Pidtagserviceentryname (-Eigenschaft
+# <a name="pidtagserviceentryname-canonical-property"></a>PidTagServiceEntryName (kanonische Eigenschaft)
 
   
   
@@ -34,25 +34,25 @@ Enthält den Namen der Einstiegspunktfunktion für die Konfiguration eines Nachr
 |Datentyp:  <br/> |PT_STRING8  <br/> |
 |Bereich:  <br/> |MAPI-Profil  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Es wird empfohlen, dass der Nachrichtendienst Implementierer einen Einstiegspunkt für den Nachrichtendienst bereitstellt, der Einstiegspunkt ist jedoch nicht erforderlich. Der Einstiegspunkt sollte jedoch nur angegeben werden, wenn die zugehörigen Konfigurationseigenschaften vorhanden sind. Wenn diese Eigenschaften nicht vorhanden sind, geht MAPI davon aus, dass kein Einstiegspunkt bereitgestellt wird.
+Es wird empfohlen, dass Die Implementierungen des Nachrichtendiensts einen Einstiegspunkt für den Nachrichtendienst bereitstellen, der Einstiegspunkt ist jedoch nicht erforderlich. Der Einstiegspunkt sollte jedoch nur angegeben werden, wenn die zugehörigen Konfigurationseigenschaften vorhanden sind. Wenn diese Eigenschaften nicht vorhanden sind, geht MAPI davon aus, dass kein Einstiegspunkt bereitgestellt wird.
   
-Die Dynamic Link Library (DLL), in der die Einstiegspunktfunktion angezeigt wird, wird von der **PR_SERVICE_DLL_NAME** ([pidtagservicedllname (](pidtagservicedllname-canonical-property.md))-Eigenschaft benannt.
+Die Dynamic-Link Library (DLL), in der die Einstiegspunktfunktion angezeigt wird, wird durch die **PR_SERVICE_DLL_NAME** ([PidTagServiceDllName](pidtagservicedllname-canonical-property.md)) -Eigenschaft benannt.
   
 Weitere Informationen zu Einstiegspunkten für den Nachrichtendienst finden Sie unter [Implementieren einer Dienstanbieter-Einstiegspunktfunktion](implementing-a-service-provider-entry-point-function.md).
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
-### <a name="header-files"></a>Header Dateien
+### <a name="header-files"></a>Headerdateien
 
-Mapidefs. h
+Mapidefs.h
   
-> Stellt Datentypdefinitionen bereit.
+> Bietet Datentypdefinitionen.
     
-Mapitags. h
+Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,9 +60,9 @@ Mapitags. h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

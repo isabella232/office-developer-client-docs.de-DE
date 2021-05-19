@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagmemberentryid (-Eigenschaft
+title: PidTagMemberEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,36 +19,36 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33433038"
 ---
-# <a name="pidtagmemberentryid-canonical-property"></a>Kanonische Pidtagmemberentryid (-Eigenschaft
+# <a name="pidtagmemberentryid-canonical-property"></a>PidTagMemberEntryId (kanonische Eigenschaft)
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält den Eintragsbezeichner des Verzeichnisobjekts für ein SACL-Tabellenelement (System Access Control List).
+Enthält die Verzeichnisobjekteintrags-ID eines Sacl-Tabellenmitglieds (System Access Control List).
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_MEMBER_ENTRYID  <br/> |
-|Kennung:  <br/> |0X0fff dar  <br/> |
+|Kennung:  <br/> |0x0FFF  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
-|Bereich:  <br/> |Server seitige Regeln  <br/> |
+|Bereich:  <br/> |Serverseitige Regeln  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Diese Eigenschaft wird von der [IExchangeModifyTable](iexchangemodifytableiunknown.md) -Schnittstelle verwendet, um eine Person oder Rolle, für die die SACL gilt, eindeutig zu identifizieren. Nachdem ein Element in der SACL-Tabelle erstellt wurde, **** kann es nicht mehr geändert werden. Um Sie zu ändern, müssen Sie das Table-Element löschen und es mit einer anderen **Eintrags**-Nr. neu erstellen.
+Diese Eigenschaft wird von der [IExchangeModifyTable-Schnittstelle](iexchangemodifytableiunknown.md) verwendet, um eine Person oder Rolle eindeutig zu identifizieren, auf die die SACL angewendet wird. Nachdem ein Element in der SACL-Tabelle erstellt wurde, kann **die ENTRYID** nicht geändert werden. Um es zu ändern, müssen Sie das Tabellenmitglied löschen und es mit einer anderen **ENTRYID neu erstellen.**
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
-### <a name="header-files"></a>Header Dateien
+### <a name="header-files"></a>Headerdateien
 
-Mapidefs. h
+Mapidefs.h
   
-> Stellt Datentypdefinitionen bereit.
+> Bietet Datentypdefinitionen.
     
-Mapitags. h
+Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapitags. h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

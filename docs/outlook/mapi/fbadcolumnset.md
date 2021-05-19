@@ -25,7 +25,7 @@ ms.locfileid: "33434718"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Testet die Gültigkeit eines Tabellenspalten Satzes, der von einem Dienstanbieter bei einem nachfolgenden Aufruf der [IMAPITable::](imapitable-setcolumns.md) SetColumns-Methode verwendet wird. 
+Testet die Gültigkeit einer Tabellenspalte, die von einem Dienstanbieter in einem nachfolgenden Aufruf der [IMAPITable::SetColumns-Methode verwendet](imapitable-setcolumns.md) wird. 
   
 |||
 |:-----|:-----|
@@ -43,7 +43,7 @@ ULONG FBadColumnSet(
 
  _lpptaCols_
   
-> in Zeiger auf eine [SPropTagArray](sproptagarray.md) -Struktur, die ein Array von Property-Tags enthält, die die zu überprüfenden Tabellenspalten definieren. 
+> [in] Zeiger auf eine [SPropTagArray-Struktur,](sproptagarray.md) die ein Array von Eigenschaftstags enthält, die die zu überprüfenden Tabellenspalten definieren. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -55,8 +55,8 @@ FALSE
   
 > Der angegebene Spaltensatz ist gültig.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **FBadColumnSet** -Funktion behandelt Spalten vom Typ PT_ERROR als ungültig und Spalten vom Typ PT_NULL als gültig. 
+Die **FBadColumnSet-Funktion** behandelt Spalten vom Typ PT_ERROR als ungültig und Spalten vom Typ PT_NULL als gültig. 
   
 

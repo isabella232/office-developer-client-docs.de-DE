@@ -1,5 +1,5 @@
 ---
-title: Zelle XGridSpacing Cell (Ruler &amp; Grid section)
+title: Zelle "XGridSpacing" (Abschnitt &amp; "Ruler Grid")
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -16,25 +16,25 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33435075"
 ---
-# <a name="xgridspacing-cell-ruler-amp-grid-section"></a>Zelle XGridSpacing Cell (Ruler &amp; Grid section)
+# <a name="xgridspacing-cell-ruler-amp-grid-section"></a>Zelle "XGridSpacing" (Abschnitt &amp; "Ruler Grid")
 
 Gibt den Abstand zwischen den horizontalen Linien eines festen Gitters an (XGridDensity = 0).
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Diese Zelle **** entspricht der Option horizontaler Mindestabstand im Lineal ** &amp; -Raster** (Dialogfeld) (Klicken Sie auf der Registerkarte **Ansicht** auf den Pfeil). **** 
+Diese Zelle entspricht der horizontalen Option **Minimaler Abstand** im  Dialogfeld **&amp; Linealraster** (klicken Sie auf der Registerkarte Ansicht auf den **Pfeil anzeigen).** 
   
-Wenn Sie einen Verweis auf die Zelle Zelle XGridSpacing aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle XGridSpacing anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Zelle XGridSpacing  <br/> |
+|Zellenname:  <br/> |XGridSpacing  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle XGridSpacing aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle XGridSpacing nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowRulerGrid** <br/> |
 |Zellenindex:  <br/> |**visXGridSpacing** <br/> |
    

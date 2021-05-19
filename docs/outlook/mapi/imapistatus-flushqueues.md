@@ -25,7 +25,7 @@ ms.locfileid: "33432604"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-ErZwingt, dass alle Nachrichten, die darauf warten, gesendet oder empfangen werden, sofort hochgeladen oder heruntergeladen werden. Das MAPI-Spooler-Statusobjekt und die Statusobjekte, die von Transportanbietern implementiert werden, unterstützen diese Methode.
+Erzwingt, dass alle Nachrichten, die auf das Senden oder Empfangen warten, sofort hochgeladen oder heruntergeladen werden. Das MAPI-Spoolerstatusobjekt und die Statusobjekte, die von Transportanbietern implementiert werden, unterstützen diese Methode.
   
 ```cpp
 HRESULT FlushQueues(
@@ -40,23 +40,23 @@ HRESULT FlushQueues(
 
  _ulUIParam_
   
-> in Ein Handle für das übergeordnete Fenster aller von dieser Methode angezeigten Dialogfelder oder Fenster.
+> [in] Ein Handle zum übergeordneten Fenster aller Dialogfelder oder Fenster, die von dieser Methode angezeigt werden.
     
  _cbTargetTransport_
   
-> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpTargetTransport_ -Parameter verwiesen wird. Der _cbTargetTransport_ -Parameter wird nur bei Aufrufen des Status-Objekts des MAPI-Spoolers festgelegt. Bei Aufrufen eines Transportanbieters wird der Parameter _cbTargetTransport_ auf 0 festgelegt. 
+> [in] Die Byteanzahl im Eintragsbezeichner, auf den der  _lpTargetTransport-Parameter_ verweist. Der  _cbTargetTransport-Parameter_ wird nur für Aufrufe des Statusobjekts des MAPI-Spoolers festgelegt. Für Anrufe an einen Transportanbieter ist  _der cbTargetTransport-Parameter_ auf 0 festgelegt. 
     
  _lpTargetTransport_
   
-> in Ein Zeiger auf die Eintrags-ID des Transportanbieters, der die Nachrichtenwarteschlangen leeren soll. Der _lpTargetTransport_ -Parameter wird nur bei Aufrufen des Status-Objekts des MAPI-Spoolers festgelegt. Bei Aufrufen eines Transportanbieters wird der Parameter _lpTargetTransport_ auf NULL festgelegt. 
+> [in] Ein Zeiger auf die Eintrags-ID des Transportanbieters, der seine Nachrichtenwarteschlangen leeren soll. Der  _lpTargetTransport-Parameter_ wird nur für Aufrufe des Statusobjekts des MAPI-Spoolers festgelegt. Für Anrufe an einen Transportanbieter ist  _der lpTargetTransport-Parameter_ auf NULL festgelegt. 
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die den Flush-Vorgang steuert. Die folgenden Flags können festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die den Leerungsvorgang steuert. Die folgenden Kennzeichen können festgelegt werden:
     
 FLUSH_ASYNC_OK 
   
-> Der Flush-Vorgang kann asynchron ausgeführt werden. Dieses Flag gilt nur für das Statusobjekt des MAPI-Spoolers. 
+> Der Leerungsvorgang kann asynchron erfolgen. Dieses Flag gilt nur für das Statusobjekt des MAPI-Spoolers. 
     
 FLUSH_DOWNLOAD 
   
@@ -64,11 +64,11 @@ FLUSH_DOWNLOAD
     
 FLUSH_FORCE 
   
-> Der Flush-Vorgang sollte unabhängig von der Wahrscheinlichkeit einer Leistungsminderung auftreten. Dieses Flag muss festgelegt werden, wenn ein asynchroner Transportanbieter zielgerichtet ist.
+> Der Leerungsvorgang sollte unabhängig von der Wahrscheinlichkeit eines Leistungsrückgangs erfolgen. Dieses Flag muss festgelegt werden, wenn ein asynchroner Transportanbieter als Ziel festgelegt wird.
     
 FLUSH_NO_UI 
   
-> Das Status-Objekt sollte keine Statusanzeige anzeigen.
+> Das Statusobjekt sollte keine Statusanzeige anzeigen.
     
 FLUSH_UPLOAD 
   
@@ -78,39 +78,39 @@ FLUSH_UPLOAD
 
 S_OK 
   
-> Der Flush-Vorgang war erfolgreich.
+> Der Leerungsvorgang war erfolgreich.
     
 MAPI_E_BUSY 
   
-> Ein anderer Vorgang wird ausgeführt; Es sollte zugelassen werden, oder es sollte beendet werden, bevor dieser Vorgang eingeleitet werden kann.
+> Ein weiterer Vorgang wird ausgeführt. Er sollte abgeschlossen oder beendet werden dürfen, bevor dieser Vorgang initiiert werden kann.
     
 MAPI_E_NO_SUPPORT 
   
-> Das Status-Objekt unterstützt diesen Vorgang nicht, wie durch das Fehlen des STATUS_FLUSH_QUEUES-Flags in der **PR_RESOURCE_METHODS** ([pidtagresourcemethods (](pidtagresourcemethods-canonical-property.md))-Eigenschaft des Status-Objekts angegeben.
+> Das status-Objekt unterstützt diesen Vorgang nicht, wie durch das Fehlen des STATUS_FLUSH_QUEUES-Flag in der **PR_RESOURCE_METHODS** ([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md))-Eigenschaft des Statusobjekts angegeben wird.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPIStatus:: FlushQueues** -Methode fordert, dass der MAPI-Spooler oder ein Transportanbieter sofort alle Nachrichten in der ausgehenden Warteschlange sendet oder alle Nachrichten von der eingehenden Warteschlange empfängt. **FlushQueues** wird nur vom MAPI-Spooler-Statusobjekt und von Statusobjekten implementiert, die von den Transportanbietern bereitstellen. 
+Die **IMAPIStatus::FlushQueues-Methode** fordert an, dass der MAPI-Spooler oder ein Transportanbieter sofort alle Nachrichten in der ausgehenden Warteschlange senden oder alle Nachrichten aus der eingehenden Warteschlange empfangen. **FlushQueues** wird nur vom MAPI-Spoolerstatusobjekt und von Statusobjekten implementiert, die von Transportanbietern zur Bereitstellung verwendet werden. 
   
-MAPI_E_BUSY sollte für asynchrone Anforderungen zurückgegeben werden, damit Clients weiterhin arbeiten können. 
+MAPI_E_BUSY sollte für asynchrone Anforderungen zurückgegeben werden, damit Clients ihre Arbeit fortsetzen können. 
   
-Standardmäßig ist **FlushQueues** eine synchrone Operation; die Steuerung kehrt erst dann zum Aufrufer zurück, wenn der Flush abgeschlossen wurde. Nur der Flush-Vorgang, der vom MAPI-Spooler ausgeführt wird, kann asynchron sein; Clients fordern dieses Verhalten, indem Sie das FLUSH_ASYNC_OK-Flag festlegen. 
+**FlushQueues** ist standardmäßig ein synchroner Vorgang. das Steuerelement wird erst wieder an den Anrufer zurück, wenn die Leerung abgeschlossen ist. Nur der vom #A0 ausgeführte Leervorgang kann asynchron sein. Clients fordern dieses Verhalten an, indem sie FLUSH_ASYNC_OK festlegen. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Die Implementierung eines Remote Transportanbieters von **FlushQueues** legt Bits in der **PR_STATUS_CODE** ([pidtagstatuscode (](pidtagstatuscode-canonical-property.md))-Eigenschaft in der Status Zeile des LOGON-Objekts fest, um zu steuern, wie Warteschlangen geleert werden. Wenn ein Remote Viewer das FLUSH_UPLOAD-Flag übergibt, sollte die **FlushQueues** -Methode die Bits STATUS_INBOUND_ENABLED und STATUS_INBOUND_ACTIVE festlegen. Wenn ein Remote Viewer das FLUSH_DOWNLOAD-Flag übergibt, sollte die **FlushQueues** -Methode die Bits STATUS_OUTBOUND_ENABLED und STATUS_OUTBOUND_ACTIVE festlegen. **FlushQueues** sollte dann S_OK zurückgeben. Der MAPI-Spooler startet dann die entsprechenden Aktionen, um Nachrichten hoch-und herunterzuladen. 
+Die Implementierung von **FlushQueues** durch einen Remotetransportanbieter legt Bits in der **eigenschaft PR_STATUS_CODE** ([PidTagStatusCode](pidtagstatuscode-canonical-property.md)) in der Statuszeile des Anmeldeobjekts fest, um zu steuern, wie Warteschlangen geleert werden. Wenn ein Remoteanzeiger das FLUSH_UPLOAD übergibt, sollte die **FlushQueues-Methode** die STATUS_INBOUND_ENABLED und STATUS_INBOUND_ACTIVE festlegen. Wenn ein Remoteanzeiger das FLUSH_DOWNLOAD übergibt, sollte die **FlushQueues-Methode** die STATUS_OUTBOUND_ENABLED und STATUS_OUTBOUND_ACTIVE festlegen. **FlushQueues** sollte dann eine S_OK. Der MAPI-Spooler initiiert dann die entsprechenden Aktionen zum Hochladen und Herunterladen von Nachrichten. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Ein Aufruf des MAPI-Spooler-Status Objekts ist eine Direktive, mit der alle Nachrichten an den oder vom entsprechenden Transportanbieter übertragen werden. Wenn Sie das Status-Objekt eines einzelnen Transportanbieters aufrufen, sind nur die Nachrichten für diesen Anbieter betroffen.
+Ein Aufruf des MAPI-Spoolerstatusobjekts ist eine Direktive zum Übertragen aller Nachrichten an oder vom entsprechenden Transportanbieter. Wenn Sie das Statusobjekt eines einzelnen Transportanbieters aufrufen, sind nur die Nachrichten für den jeweiligen Anbieter betroffen.
   
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Kanonische Pidtagresourcemethods (-Eigenschaft](pidtagresourcemethods-canonical-property.md)
+[PidTagResourceMethods (kanonische Eigenschaft)](pidtagresourcemethods-canonical-property.md)
   
-[Kanonische Pidtagstatuscode (-Eigenschaft](pidtagstatuscode-canonical-property.md)
+[PidTagStatusCode (kanonische Eigenschaft)](pidtagstatuscode-canonical-property.md)
   
 [IMAPIStatus : IMAPIProp](imapistatusimapiprop.md)
 

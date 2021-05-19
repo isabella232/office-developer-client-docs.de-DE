@@ -25,11 +25,11 @@ ms.locfileid: "33435180"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält Informationen zu einem Problem bei der Eigenschaft oder Attribut Verarbeitung, das bei der Codierung oder Decodierung eines Transport Neutral Encapsulation Format (TNEF)-Streams aufgetreten ist.
+Enthält Informationen zu einem Eigenschafts- oder Attributverarbeitungsproblem, das während der Codierung oder Decodierung eines Transport Neutral Encapsulation Format (TNEF)-Datenstroms aufgetreten ist.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |TNEF. h  <br/> |
+|Headerdatei  <br/> |Tnef.h  <br/> |
    
 ```cpp
 typedef struct _STnefProblem
@@ -42,15 +42,15 @@ typedef struct _STnefProblem
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **ulComponent**
   
-> Die Art der Verarbeitung, bei der das Problem aufgetreten ist. Wenn das Problem während der Nachrichtenverarbeitung aufgetreten ist, wird das **ulComponent** -Element auf NULL festgelegt. Wenn das Problem bei der Anlagenverarbeitung aufgetreten ist, wird **ulComponent** auf den Wert **PR_ATTACH_NUM** ([pidtagattachnumber (](pidtagattachnumber-canonical-property.md)) der entsprechenden Anlage festgelegt.
+> Die Art der Verarbeitung, während der das Problem aufgetreten ist. Wenn das Problem während der Nachrichtenverarbeitung aufgetreten ist, wird **das ulComponent-Element** auf Null festgelegt. Wenn das Problem während der Anlagenverarbeitung aufgetreten ist, wird **ulComponent** auf den wert **PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) der entsprechenden Anlage festgelegt.
     
  **ulAttribute**
   
-> Attribut, das der vom **ulPropTag** -Element angegebenen Eigenschaft zugeordnet ist, oder, wenn beim Decodieren eines Kapselungs Blocks das TNEF-Verarbeitungsproblem auftritt, einer der folgenden Werte: 
+> Attribut, das der eigenschaft zugeordnet ist, die durch das **ulPropTag-Element** angegeben wird, oder, wenn das TNEF-Verarbeitungsproblem beim Decodieren eines Kapselungsblocks auftritt, einen der folgenden Werte: 
     
  _attMAPIProps_
   
@@ -62,15 +62,15 @@ typedef struct _STnefProblem
     
  **ulPropTag**
   
-> Property-Tag der Eigenschaft, die das TNEF-Verarbeitungsproblem verursacht hat, außer wenn das Problem beim Decodieren eines Kapselungs Blocks auftritt, in diesem Fall **ulPropTag** auf NULL festgelegt ist. 
+> Eigenschaftstag der Eigenschaft, die das TNEF-Verarbeitungsproblem verursacht hat, außer wenn das Problem beim Decodieren eines Kapselungsblocks auftritt, in diesem Fall **ist ulPropTag** auf Null festgelegt. 
     
- **SCODE**
+ **scode**
   
-> Fehlerwert, der das während der Verarbeitung auftretende Problem angibt.
+> Fehlerwert, der das Während der Verarbeitung aufgetretene Problem angibt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn während der Verarbeitung eines Attributs oder einer Eigenschaft keine **STnefProblem** -Struktur generiert wird, kann die Anwendung weiterhin davon ausgehen, dass die Verarbeitung dieses Attributs oder dieser Eigenschaft erfolgreich war. Die einzige Ausnahme tritt auf, wenn das Problem während der Decodierung eines Kapselungs Blocks auftrat. In diesem Fall wird die Decodierung der Komponente, die dem Block entspricht, angehalten, und die Decodierung wird in einer anderen Komponente fortgesetzt. 
+Wenn während der Verarbeitung eines Attributs oder einer Eigenschaft keine **STnefProblem-Struktur** generiert wird, kann die Anwendung unter der Annahme fortfahren, dass die Verarbeitung dieses Attributs oder dieser Eigenschaft erfolgreich war. Die einzige Ausnahme tritt auf, wenn das Problem während der Decodierung eines Kapselungsblocks auftstand. In diesem Fall wird die Decodierung der Komponente, die dem Block entspricht, beendet, und die Decodierung wird in einer anderen Komponente fortgesetzt. 
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -78,7 +78,7 @@ Wenn während der Verarbeitung eines Attributs oder einer Eigenschaft keine **ST
 
 [STnefProblemArray](stnefproblemarray.md)
   
-[Kanonische Pidtagattachnumber (-Eigenschaft](pidtagattachnumber-canonical-property.md)
+[PidTagAttachNumber (kanonische Eigenschaft)](pidtagattachnumber-canonical-property.md)
 
 
 [MAPI-Strukturen](mapi-structures.md)

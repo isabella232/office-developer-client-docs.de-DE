@@ -25,13 +25,13 @@ ms.locfileid: "33435390"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Reserviert einen Arbeitsspeicherpuffer, der mit einem anderen Puffer verknüpft ist, der zuvor mit der [MAPIAllocateBuffer](mapiallocatebuffer.md) -Funktion reserviert wurde. 
+Weist einen Speicherpuffer zu, der mit einem anderen Puffer verknüpft ist, der zuvor mit der [MAPIAllocateBuffer-Funktion zugewiesen](mapiallocatebuffer.md) wurde. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapix. h  <br/> |
+|Headerdatei  <br/> |Mapix.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 SCODE MAPIAllocateMore(
@@ -45,26 +45,26 @@ SCODE MAPIAllocateMore(
 
  _cbSize_
   
-> in Die Größe des neuen Puffers in Bytes, der reserviert werden soll. 
+> [in] Größe des zu zugeordneten neuen Puffers in Bytes. 
     
  _lpObject_
   
-> in Zeiger auf einen vorhandenen MAPI-Puffer, der mit **MAPIAllocateBuffer**zugeordnet ist.
+> [in] Zeiger auf einen vorhandenen MAPI-Puffer, der mit **MAPIAllocateBuffer zugewiesen wurde.**
     
  _lppBuffer_
   
-> Out Zeiger auf den zurückgegebenen, neu zugewiesenen Puffer.
+> [out] Zeiger auf den zurückgegebenen, neu zugewiesenen Puffer.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Aufruf war erfolgreich und hat einen Zeiger auf den angeforderten Speicher zurückgegeben.
+> Der Aufruf ist erfolgreich und hat einen Zeiger auf den angeforderten Arbeitsspeicher zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Während der **MAPIAllocateMore** -Anrufverarbeitung erwirbt die aufrufende Implementierung einen Speicherblock vom Betriebssystem. Der Arbeitsspeicherpuffer wird für eine gerade nummerierte Byte-Adresse zugewiesen. Auf Plattformen, auf denen der Zugriff auf lange ganze Zahlen effizienter ist, weist das Betriebssystem den Puffer einer Adresse zu, deren Größe in Byte ein Vielfaches von vier ist. 
+Während **der MAPIAllocateMore-Anrufverarbeitung** erhält die aufrufende Implementierung einen Speicherblock vom Betriebssystem. Der Speicherpuffer wird für eine byte-Adresse mit gleichmäßiger Nummer zugewiesen. Auf Plattformen, auf denen der lange ganzzahlige Zugriff effizienter ist, ordnet das Betriebssystem den Puffer einer Adresse zu, deren Größe in Bytes ein Vielfaches von vier ist. 
   
-Die einzige Möglichkeit zum Freigeben eines mit **MAPIAllocateMore** zugeordneten Puffers besteht darin, den im _lpObject_ -Parameter angegebenen Pufferzeiger an die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion zu übergeben. Die Verknüpfung zwischen den Speicherpuffern, die mit [MAPIAllocateBuffer](mapiallocatebuffer.md) und **MAPIAllocateMore** reserviert wurden, ermöglicht **mapifreebufferfreigegeben** das Freigeben beider Puffer mit einem einzelnen Aufruf. 
+Die einzige Möglichkeit, einen mit **MAPIAllocateMore zugewiesenen** Puffer frei zu geben, ist das Übergeben des im _lpObject-Parameter_ angegebenen Pufferzeigers an die [MAPIFreeBuffer-Funktion.](mapifreebuffer.md) Die Verknüpfung zwischen den Speicherpuffern, die [mapIAllocateBuffer](mapiallocatebuffer.md) und **MAPIAllocateMore** zugeordnet sind, ermöglicht **MAPIFreeBuffer,** beide Puffer mit einem einzigen Aufruf frei zu lassen. 
   
 

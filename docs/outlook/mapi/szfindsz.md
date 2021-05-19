@@ -25,13 +25,13 @@ ms.locfileid: "33435222"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Sucht das erste Vorkommen einer null-terminierten Teilzeichenfolge in einer null-terminierten Zeichenfolge. 
+Sucht das erste Vorkommen einer mit Null beendeten Teilzeichenfolge in einer mit Null beendeten Zeichenfolge. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 LPSTR SzFindCh(
@@ -44,18 +44,18 @@ LPSTR SzFindCh(
 
  _lpsz_
   
-> in Zeiger auf die zu durchsuchende NULL-terminierte Zeichenfolge. Der _lpsz_ -parameter darf 65536 Zeichen nicht überschreiten. 
+> [in] Zeiger auf die zu durchsuchende Zeichenfolge, die mit Nullen beendet werden soll. Der  _lpsz-Parameter_ darf 65536 Zeichen nicht überschreiten. 
     
  _lpszKey_
   
-> in Zeiger auf die mit NULL endende Teilzeichenfolge, nach der gesucht werden soll. Der _lpszKey_ -parameter darf 65536 Zeichen nicht überschreiten. 
+> [in] Zeiger auf die mit Null beendete Teilzeichenfolge, nach der gesucht werden soll. Der  _lpszKey-Parameter_ darf 65536 Zeichen nicht überschreiten. 
     
 ## <a name="return-value"></a>Rückgabewert
 
- **SzFindSz** gibt einen Zeiger auf das erste Zeichen des ersten Vorkommens der Teilzeichenfolge in der Zeichenfolge zurück. Wenn die Teilzeichenfolge an keiner beliebigen Stelle in der Zeichenfolge auftritt, wenn _lpszKey_ größer als _lpsz_ist oder wenn einer der Parameter NULL ist, wird der Wert NULL zurückgegeben. 
+ **SzFindSz** gibt einen Zeiger auf das erste Zeichen des ersten Vorkommens der Teilzeichenfolge in der Zeichenfolge zurück. Wenn die Teilzeichenfolge nicht an einer beliebigen Stelle in der Zeichenfolge auftritt,  _wenn lpszKey_ größer als  _lpsz_ ist oder wenn ein Parameter NULL ist, wird der Wert NULL zurückgegeben. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **SzFindSz** -Funktion sucht nur nach einer genauen Übereinstimmung. Sie ist anfällig für Groß-/Kleinschreibung und diakritische Unterschiede. Suchvorgänge in Unicode-und DBCS-Formaten werden unterstützt. Die Längenbeschränkung für beide Parameter ist in Zeichen, nicht unbedingt in Bytes. 
+Die **SzFindSz-Funktion** sucht nur nach einer genauen Übereinstimmung. es ist sensibel auf Fall- und diakritische Unterschiede. Suchen in Unicode- und DBCS-Formaten werden unterstützt. Die Längenbeschränkung für beide Parameter beträgt Zeichen, nicht unbedingt Byte. 
   
 

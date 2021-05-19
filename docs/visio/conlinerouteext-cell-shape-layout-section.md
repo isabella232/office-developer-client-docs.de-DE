@@ -23,22 +23,22 @@ Bestimmt die Darstellung eines Verbinders.
 |**Wert**|**Beschreibung**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
 | 0  <br/> | Standard, Zeichenblatteinstellung verwenden  <br/> |**visLORouteExtDefault** <br/> |
-| 1  <br/> | Gerade  <br/> |**visLORouteExtStraight** <br/> |
-| 2  <br/> | Gebogene  <br/> |**visLORouteExtNURBS** <br/> |
+| 1  <br/> | Straight  <br/> |**visLORouteExtStraight** <br/> |
+| 2  <br/> | Gekrümmt  <br/> |**visLORouteExtNURBS** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle Zelle ConLineRouteExt aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle ConLineRouteExt anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Zelle ConLineRouteExt  <br/> |
+| Zellenname:  <br/> | ConLineRouteExt  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle ConLineRouteExt aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die ConLineRouteExt-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowShapeLayout** <br/> |
 | Zellenindex:  <br/> |**visSLOLineRouteExt** <br/> |
    

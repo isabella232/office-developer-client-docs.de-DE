@@ -25,23 +25,23 @@ Definiert die Textzuweisung für eine Gruppe.
 |TRUE  <br/> |Dem Gruppen-Shape wird Text hinzugefügt.  <br/> |
 |FALSE  <br/> |Text wird dem Shape in der obersten Gruppe des Stapels hinzugefügt.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Sie können diesen Wert auch festlegen, indem Sie die Gruppe auswählen, auf der Registerkarte [Entwickler](run-in-developer-mode-display-the-developer-tab.md) auf **Verhalten** klicken und anschließend das Kontrollkästchen **Text der Gruppe bearbeiten** aktivieren. 
   
 Bei Gruppen, die mit Versionen vor Visio 2000 erstellt wurden, ist der Standardwert FALSE vorgegeben. Ab Visio 2000-Versionen wird der Standardwert TRUE verwendet. 
   
-Wenn Sie einen Verweis auf die Zelle IsTextEditTarget aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie folgendes, um einen Verweis auf die Zelle IsTextEditTarget anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |IsTextEditTarget  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle IsTextEditTarget aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die IsTextEditTarget-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowGroup** <br/> |
 |Zellenindex:  <br/> |**visGroupIsTextEditTarget** <br/> |
    

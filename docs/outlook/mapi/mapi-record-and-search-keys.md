@@ -1,5 +1,5 @@
 ---
-title: MAPI-Eintrags-und-Suchschlüssel
+title: MAPI-Eintrags- und Suchschlüssel
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,27 +15,27 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33434564"
 ---
-# <a name="mapi-record-and-search-keys"></a>MAPI-Eintrags-und-Suchschlüssel
+# <a name="mapi-record-and-search-keys"></a>MAPI-Eintrags- und Suchschlüssel
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Datensatzschlüssel und Suchschlüssel sind binäre Bezeichner, die vielen MAPI-Objekten zugewiesen sind. Im Gegensatz zur Eintrags-ID eines Objekts ist der Record-oder der Suchschlüssel direkt vergleichbar sowie transmitable. 
+Datensatzschlüssel und Suchschlüssel sind binäre Bezeichner, die vielen MAPI-Objekten zugewiesen sind. Im Gegensatz zum Eintragsbezeichner eines Objekts ist sein Datensatz oder Suchschlüssel direkt vergleichbar und kann auch übertragen werden. 
   
 ## <a name="record-keys"></a>Datensatzschlüssel
 
-Ein Record-Schlüssel wird verwendet, um zwei Objekte zu vergleichen. Nachrichtenspeicher-und Adressbuch Objekte müssen Datensatzschlüssel enthalten, die in Ihrer **PR_RECORD_KEY** ([pidtagrecordkey (](pidtagrecordkey-canonical-property.md))-Eigenschaft gespeichert werden. Da ein Datensatzschlüssel ein Objekt und nicht dessen Daten identifiziert, verfügt jede Instanz eines Objekts über einen eindeutigen Record-Schlüssel. Der Bereich eines Daten Satz Schlüssels für Ordner und Nachrichten ist der Nachrichtenspeicher. Der Bereich für Adressbuchcontainer, Messagingbenutzer und Verteilerlisten ist die Gruppe von Containern auf oberster Ebene, die von MAPI zur Verwendung im integrierten Adressbuch bereitgestellt werden.
+Zum Vergleichen von zwei Objekten wird ein Datensatzschlüssel verwendet. Nachrichtenspeicher- und Adressbuchobjekte müssen über Datensatzschlüssel verfügen, die in ihrer **PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md)) -Eigenschaft gespeichert sind. Da ein Datensatzschlüssel ein Objekt und nicht seine Daten identifiziert, verfügt jede Instanz eines Objekts über einen eindeutigen Datensatzschlüssel. Der Bereich eines Datensatzschlüssels für Ordner und Nachrichten ist der Nachrichtenspeicher. Der Bereich für Adressbuchcontainer, Messagingbenutzer und Verteilerlisten ist der Satz von Containern auf oberster Ebene, die von MAPI zur Verwendung im integrierten Adressbuch bereitgestellt werden.
   
-Datensatzschlüssel können in einer anderen Ressource dupliziert werden. Beispielsweise können unterschiedliche Nachrichten in zwei verschiedenen Nachrichten speichern denselben Record-Schlüssel aufweisen. Dies unterscheidet sich von langfristigen Eintrags Bezeichnern; Da langfristige Eintrags-IDs einen Verweis auf den Dienstanbieter enthalten, haben Sie einen größeren Bereich. Der Datensatzschlüssel eines Nachrichtenspeichers ähnelt dem Gültigkeitsbereich einer langfristigen Eintrags-ID. Sie sollte in allen Nachrichtenspeicher Anbietern eindeutig sein. Um diese Eindeutigkeit sicherzustellen, legen Nachrichtenspeicher Anbieter ihren Record-Schlüssel in der Regel auf einen Wert fest, der die Kombination ihrer **PR_MDB_PROVIDER** ([pidtagstoreprovider (](pidtagstoreprovider-canonical-property.md))-Eigenschaft und eines Bezeichners ist, der für den Nachrichtenspeicher eindeutig ist.
+Datensatzschlüssel können in einer anderen Ressource dupliziert werden. Beispielsweise können unterschiedliche Nachrichten in zwei verschiedenen Nachrichtenspeichern denselben Datensatzschlüssel haben. Dies ist anders als bei langfristigen Eintragsbezeichnern. Da langfristige Eintragsbezeichner einen Verweis auf den Dienstanbieter enthalten, haben sie einen größeren Bereich. Der Datensatzschlüssel eines Nachrichtenspeichers ist im Bereich mit einer langfristigen Eintrags-ID vergleichbar. Sie sollte für alle Nachrichtenspeicheranbieter eindeutig sein. Um diese Eindeutigkeit sicherzustellen, legen Nachrichtenspeicheranbieter ihren Datensatzschlüssel in der Regel auf einen Wert fest, der die Kombination aus seiner **PR_MDB_PROVIDER** ([PidTagStoreProvider](pidtagstoreprovider-canonical-property.md))-Eigenschaft und einem bezeichner ist, der für den Nachrichtenspeicher eindeutig ist.
   
 ## <a name="search-keys"></a>Suchschlüssel
 
-Ein Suchschlüssel wird verwendet, um die Daten in zwei Objekten zu vergleichen. Der Suchschlüssel eines Objekts wird in seiner **PR_SEARCH_KEY** ([pidtagsearchkey (](pidtagsearchkey-canonical-property.md))-Eigenschaft gespeichert. Da ein Suchschlüssel die Daten eines Objekts und nicht das Objekt selbst darstellt, können zwei verschiedene Objekte mit denselben Daten denselben Suchschlüssel aufweisen. Wenn ein Objekt kopiert wird, haben beispielsweise sowohl das ursprüngliche Objekt als auch die Kopie dieselben Daten und denselben Suchschlüssel.
+Ein Suchschlüssel wird verwendet, um die Daten in zwei Objekten zu vergleichen. Der Suchschlüssel eines Objekts wird in seiner **PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md)) gespeichert. Da ein Suchschlüssel die Daten eines Objekts und nicht das Objekt selbst darstellt, können zwei verschiedene Objekte mit denselben Daten denselben Suchschlüssel haben. Wenn beispielsweise ein Objekt kopiert wird, verfügen sowohl das ursprüngliche Objekt als auch seine Kopie über dieselben Daten und denselben Suchschlüssel.
   
-Nachrichten und Messagingbenutzer haben Suchschlüssel. Der Suchschlüssel einer Nachricht ist ein eindeutiger Bezeichner der Daten der Nachricht. Nachrichtenspeicher Anbieter stellen die **PR_SEARCH_KEY** -Eigenschaft einer Nachricht zur Erstellungszeit der Nachricht bereit. Der Suchschlüssel eines Adressbucheintrags wird anhand des Adresstyps (**PR_ADDRTYPE** ([pidtagaddresstype (](pidtagaddresstype-canonical-property.md))) und der Adresse (**PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))) berechnet. Wenn der Adressbucheintrag beschreibbar ist, ist der Suchschlüssel möglicherweise erst verfügbar, wenn der Adresstyp und die Adresse mithilfe der [IMAPIProp::](imapiprop-setprops.md) SetProps-Methode festgelegt wurden und der Eintrag mithilfe der [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) -Methode gespeichert wurde. Wenn sich diese Adresseigenschaften ändern, ist es möglich, dass der entsprechende Suchschlüssel nicht mit den neuen Werten synchronisiert wird, bis die Änderungen mit einem **SaveChanges** -Aufruf übergeben wurden. 
+Nachrichten und Messagingbenutzer verfügen über Suchschlüssel. Der Suchschlüssel einer Nachricht ist ein eindeutiger Bezeichner der Nachrichtendaten. Nachrichtenspeicheranbieter bieten die **PR_SEARCH_KEY-Eigenschaft** einer Nachricht zum Zeitpunkt der Nachrichtenerstellung an. Der Suchschlüssel eines Adressbucheintrags wird anhand seines Adresstyps (**PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))) und der Adresse (**PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))) berechnet. Wenn der Adressbucheintrag schreibbar ist, steht der Suchschlüssel möglicherweise erst zur Verfügung, wenn der Adresstyp und die Adresse mithilfe der [IMAPIProp::SetProps-Methode](imapiprop-setprops.md) festgelegt wurden und der Eintrag mithilfe der [IMAPIProp::SaveChanges-Methode](imapiprop-savechanges.md) gespeichert wurde. Wenn sich diese Adresseigenschaften ändern, kann der entsprechende Suchschlüssel erst mit den neuen Werten synchronisiert werden, wenn die Änderungen mit einem **SaveChanges-Aufruf** vorgenommen wurden. 
   
-Der Wert des Record-Schlüssels eines Objekts kann in Abhängigkeit vom Dienstanbieter mit oder unterschiedlich sein. Einige Dienstanbieter verwenden den gleichen Wert für die Such-, Daten Satz-und Eintrags-ID eines Objekts. Andere Dienstanbieter weisen für jeden Bezeichner der Objekte eindeutige Werte zu. 
+Der Wert des Datensatzschlüssels eines Objekts kann je nach Dienstanbieter mit dem Wert des Suchschlüssels identisch oder unterschiedlich sein. Einige Dienstanbieter verwenden denselben Wert für den Suchschlüssel, den Datensatzschlüssel und die Eintrags-ID eines Objekts. Andere Dienstanbieter weisen eindeutige Werte für die Bezeichner der einzelnen Objekte zu. 
   
 ## <a name="see-also"></a>Siehe auch
 

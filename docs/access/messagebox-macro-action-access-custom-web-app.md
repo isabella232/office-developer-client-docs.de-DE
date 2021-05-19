@@ -23,10 +23,10 @@ Sie können die **MessageBox** -Aktion verwenden, um ein Nachrichtenfeld mit ein
   
 ## <a name="setting"></a>Einstellung
 
-Die **MessageBox** -Aktion hat das folgende Argument. 
+Die **MessageBox-Aktion** hat das folgende Argument. 
   
 |**Aktionsargument**|**Beschreibung**|
 |:-----|:-----|
-|Nachricht  <br/> |Der Text im Nachrichtenfeld. Sie können bis zu 255 Zeichen oder einen Ausdruck (mit einem vorangestellten Gleichheitszeichen) eingeben.  <br/> |
+|Message  <br/> |Der Text im Nachrichtenfeld. Sie können bis zu 255 Zeichen oder einen Ausdruck (mit einem vorangestellten Gleichheitszeichen) eingeben.  <br/> |
    
 

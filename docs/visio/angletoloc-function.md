@@ -19,10 +19,12 @@ ms.locfileid: "45160265"
 # <a name="angletoloc-function"></a>ANGLETOLOC Function
 
 Gibt einen transformierten Winkel im lokalen Koordinatensystem des Ziel-Shapes zurück. Konvertiert einen Winkel aus lokalen Koordinaten in einem Quell-Shape in die lokalen Koordinaten eines Ziel-Shapes. 
+    
+ 
   
 ## <a name="syntax"></a>Syntax
 
-ANGLETOLOC (***srcAngle***, ***srcRef***, ***Zielbezug*** ) 
+ANGLETOLOC(***srcAngle***, ***srcRef***, ***dstRef*** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -30,9 +32,9 @@ ANGLETOLOC (***srcAngle***, ***srcRef***, ***Zielbezug*** )
 |:-----|:-----|:-----|:-----|
 | _srcAngle_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Ein Winkel im Quellkoordinatensystem.  <br/> |
 | _srcRef_ <br/> |Erforderlich  <br/> |**String** <br/> | Ein Bezug auf eine Zelle im Quellobjekt, beispielsweise ein Shape, eine Gruppe, ein Zeichenblatt usw.  <br/> |
-| _Zielbezug_ <br/> |Erforderlich  <br/> |**String** <br/> |Ein Bezug auf eine Zelle im Zielobjekt, beispielsweise ein Shape, eine Gruppe, ein Zeichenblatt usw.  <br/> |
+| _dstRef_ <br/> |Erforderlich  <br/> |**String** <br/> |Ein Bezug auf eine Zelle im Zielobjekt, beispielsweise ein Shape, eine Gruppe, ein Zeichenblatt usw.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Mithilfe der ANGLETOLOC-Funktion können Sie lokale Winkelzellen in einem Shape in Form eines Winkels aus einer anderen Koordinatenstelle festlegen.
   

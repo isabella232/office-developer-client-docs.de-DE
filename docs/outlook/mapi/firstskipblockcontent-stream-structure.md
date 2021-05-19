@@ -1,5 +1,5 @@
 ---
-title: Firstskipblockcontent streamstruktur-Datenstrom Struktur
+title: FirstSkipBlockContent Stream Structure
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,25 +13,25 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33433927"
 ---
-# <a name="firstskipblockcontent-stream-structure"></a>Firstskipblockcontent streamstruktur-Datenstrom Struktur
+# <a name="firstskipblockcontent-stream-structure"></a>FirstSkipBlockContent Stream Structure
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die Firstskipblockcontent streamstruktur-streamstruktur ist der Inhalt der ersten [SkipBlock streamstruktur](skipblock-stream-structure.md) -Struktur im SkipBlocks-datenElement eines [FieldDefinition streamstruktur](fielddefinition-stream-structure.md) -Streams. Der Firstskipblockcontent streamstruktur-Stream ist einfach ein einzelnes Data-Element, FieldName: 
+Die FirstSkipBlockContent-Streamstruktur ist der Inhalt der ersten [SkipBlock-Struktur](skipblock-stream-structure.md) im SkipBlocks-Datenelement eines [FieldDefinition-Datenstroms.](fielddefinition-stream-structure.md) Der FirstSkipBlockContent-Stream ist einfach ein einzelnes Datenelement, FieldName: 
   
-- FieldName: [packedunicodestring streamstruktur](packedunicodestring-stream-structure.md), der Feldname.
+- FieldName: [PackedUnicodeString](packedunicodestring-stream-structure.md), der Feldname.
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Outlook-Elemente und-Felder](outlook-items-and-fields.md)
+[Outlook Elemente und Felder](outlook-items-and-fields.md)
   
-[Stream-Strukturen](stream-structures.md)
+[Streamstrukturen](stream-structures.md)
   
-[SkipBlock streamstruktur-Datenstrom Struktur](skipblock-stream-structure.md)
+[SkipBlock Stream Structure](skipblock-stream-structure.md)
   
-[Packedunicodestring streamstruktur-Datenstrom Struktur](packedunicodestring-stream-structure.md)
+[PackedUnicodeString-Datenstromstruktur](packedunicodestring-stream-structure.md)
 

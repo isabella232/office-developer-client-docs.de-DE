@@ -25,23 +25,23 @@ Gibt an, ob beim Drucken einer Dokumentseite das Gitternetz gedruckt werden soll
 |TRUE  <br/> |Beim Drucken der Seite wird das Gitternetz gedruckt.  <br/> |
 |FALSE  <br/> |Das Gitternetz wird beim Drucken der Seite nicht gedruckt (Standard).  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Dieser Wert entspricht der Einstellung für das Kontrollkästchen **Gitterlinien** auf der Registerkarte **Druckeinrichtung** im Dialogfeld **Seite einrichten** (klicken Sie auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten**). Mit Ausnahme der Farbe (die Druckversion ist grau) ist das gedruckte Gitternetz identisch mit dem im Microsoft Visio-Zeichenfenster. 
   
-Sie können für einzelne Seiten festlegen, ob das Gitternetz gedruckt werden soll. Die Art des Rasters kann auch auf Seitenbasis im Dialogfeld **** ** &amp; Lineal-Raster** definiert werden (Klicken Sie auf der Registerkarte **Ansicht** auf den Pfeil nach unten), wenn eine Seite aktiv ist. 
+Sie können für einzelne Seiten festlegen, ob das Gitternetz gedruckt werden soll. Die Rasterart kann auch seiteweise im Dialogfeld Linealraster definiert werden  (klicken Sie  auf der Registerkarte Ansicht auf den Pfeil anzeigen), wenn eine Seite aktiv ist. **&amp;** 
   
-Wenn Sie einen Verweis auf die Zelle PrintGrid aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle PrintGrid anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |PrintGrid  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle PrintGrid aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle PrintGrid nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowPrintProperties** <br/> |
 |Zellenindex:  <br/> |**visPrintPropertiesPrintGrid** <br/> |
    

@@ -22,29 +22,29 @@ Legt fest, wie platzierbare Shapes auf einem Zeichenblatt gekippt und/oder gedre
   
 |**Wert**|**Beschreibung**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
-|&amp;H0  <br/> |Standardwert. Nicht kippen.  <br/> |**visLOFlipDefault** <br/> |
+|&amp;H0  <br/> |Standard. Nicht kippen.  <br/> |**visLOFlipDefault** <br/> |
 |&amp;H1  <br/> |Horizontal kippen.  <br/> |**visLOFlipX** <br/> |
 |&amp;H2  <br/> |Vertikal kippen.  <br/> |**visLOFlipY** <br/> |
 |&amp;H4  <br/> |In 90-Grad-Schritten kippen.  <br/> |**visLOFlipRotate** <br/> |
 |&amp;H8  <br/> |Nicht kippen.  <br/> |**visLOFlipNone** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Der Wert in der Zelle PlaceFlip hilft bei der Ausrichtung eines platzierbaren Shapes in Richtung des nächsten platzierbaren Shapes, mit dem es verbunden ist. Dieser Wert wird normalerweise verwendet, wenn Sie Zeichnungen ausrichten, die statischen Kleber verwenden.
   
 Wenn Sie dieses Verhalten für ein bestimmtes Shape festlegen möchten, verwenden Sie die Zelle ShapePlaceFlip im Abschnitt Shape Layout.
   
-Wenn Sie einen Verweis auf die Zelle Zelle placeflip aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle PlaceFlip anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Zelle placeflip  <br/> |
+|Zellenname:  <br/> |PlaceFlip  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle placeflip aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Um einen Verweis auf die Zelle PlaceFlip nach Index aus einem Programm zu erhalten, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowPageLayout** <br/> |
 |Zellenindex:  <br/> |**visPLOPlaceFlip** <br/> |
    

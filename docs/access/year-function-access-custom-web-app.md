@@ -1,5 +1,5 @@
 ---
-title: Year-Funktion (Access Custom Web App)
+title: Year-Funktion (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33433122"
 ---
-# <a name="year-function-access-custom-web-app"></a>Year-Funktion (Access Custom Web App)
+# <a name="year-function-access-custom-web-app"></a>Year-Funktion (benutzerdefinierte Access-Web-App)
 
 Gibt einen numerischen Wert zurück, der das Jahr des angegebenen Datums im gregorianischen Kalender darstellt.
   
@@ -23,9 +23,9 @@ Gibt einen numerischen Wert zurück, der das Jahr des angegebenen Datums im greg
   
 ## <a name="syntax"></a>Syntax
 
- **Jahr** (*Datum*) 
+ **Year** (*Date*) 
   
-Die **year** -Funktion enthält die folgenden Argumente. 
+Die **Year-Funktion** enthält die folgenden Argumente. 
   
 |**Argumentname**|**Beschreibung**|
 |:-----|:-----|
@@ -33,6 +33,6 @@ Die **year** -Funktion enthält die folgenden Argumente.
    
 ## <a name="remarks"></a>Bemerkungen
 
-Von den Funktionen **year**, **Month**und **Day** zurückgegebene Werte sind gregorianische Werte, unabhängig vom Anzeigeformat für den angegebenen Datumswert. Wenn beispielsweise im Anzeigeformat des angegebenen Datums der Hijri-Kalender verwendet wird, sind die zurückgegebenen Werte für die Funktionen **year**, **Month**und **Day** Werte, die dem äquivalenten gregorianischen Datum zugeordnet sind. 
+Von den Funktionen **Year,** **Month** und **Day** zurückgegebene Werte sind gregorianische Werte, unabhängig vom Anzeigeformat für den angegebenen Datumswert. Wenn das Anzeigeformat des angegebenen Datums beispielsweise den Hijri-Kalender verwendet, sind  die zurückgegebenen Werte für die Funktionen **Jahr,** Monat und Tag Werte, die dem entsprechenden gregorianischen Datum zugeordnet sind.  
   
 

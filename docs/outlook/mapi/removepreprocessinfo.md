@@ -25,13 +25,13 @@ ms.locfileid: "33432947"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Entfernt vorverarbeitete Informationen, die von einer [PreprocessMessage](preprocessmessage.md) -basierten Funktion geschrieben wurden, aus einer Nachricht. 
+Entfernt vorverarbeitete Informationen, die von einer [PreprocessMessage-basierten](preprocessmessage.md) Funktion geschrieben wurden, aus einer Nachricht. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapispi. h  <br/> |
-|Definierte Funktion, implementiert von:  <br/> |Transport Anbieter  <br/> |
-|Definierte Funktion, aufgerufen von:  <br/> |MAPI-Spooler  <br/> |
+|Headerdatei  <br/> |Mapispi.h  <br/> |
+|Definierte Funktion implementiert von:  <br/> |Transportanbieter  <br/> |
+|Definierte Funktion, die von:  <br/> |MAPI-Spooler  <br/> |
    
 ```cpp
 HRESULT RemovePreprocessInfo(
@@ -43,7 +43,7 @@ HRESULT RemovePreprocessInfo(
 
  _lpMessage_
   
-> in Zeiger auf die vorverarbeitete Nachricht, von der die Informationen entfernt werden sollen.
+> [in] Zeiger auf die vorverarbeitete Nachricht, aus der Informationen entfernt werden sollen.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -51,10 +51,10 @@ S_OK
   
 > Vorverarbeitete Informationen wurden erfolgreich entfernt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Der MAPI-Spooler Ruft eine auf **RemovePreprocessInfo**basierende Funktion auf. Ein Transportanbieter registriert die **RemovePreprocessInfo** -basierte Funktion bei der Registrierung der parallelen **PreprocessMessage** -basierten Funktion bei einem Aufruf der [IMAPISupport:: RegisterPreprocessor](imapisupport-registerpreprocessor.md) -Methode. 
+Der MAPI-Spooler ruft eine Funktion basierend auf **RemovePreprocessInfo auf.** Ein Transportanbieter registriert die **RemovePreprocessInfo-basierte** Funktion gleichzeitig, wenn er die parallele **PreprocessMessage-basierte** Funktion in einem Aufruf der [IMAPISupport::RegisterPreprocessor-Methode](imapisupport-registerpreprocessor.md) registriert. 
   
-Ein für die Fax-Übertragung geeignetes Bildrendering ist ein Beispiel für vorverarbeitete Informationen, die von einer durch den [PreprocessMessage](preprocessmessage.md)-Funktionsprototyp definierten Funktion geschrieben werden. Der MAPI-Spooler ruft in der Regel eine **RemovePreprocessInfo** -Funktion nach dem Senden einer Nachricht ab, die vorverarbeitete Informationen enthält. 
+Ein Bildrendering, das für die Faxübertragung geeignet ist, ist ein Beispiel für vorverarbeitete Informationen, die von einer Funktion geschrieben wurden, die durch den Prototyp der [PreprocessMessage-Funktion](preprocessmessage.md)definiert wurde. Der MAPI-Spooler ruft in der Regel eine **RemovePreprocessInfo-Funktion** auf, nachdem eine Nachricht mit vorverarbeiteten Informationen gesendet wurde. 
   
 

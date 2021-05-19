@@ -19,9 +19,9 @@ ms.locfileid: "33432954"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-C++-Clients und-Dienstanbieter definieren MAPI-Objekte, indem Sie Klassen erstellen, die von den von Ihnen implementierten Schnittstellen erben. Jede der Interface-Methoden ist öffentlich, ebenso wie der Konstruktor und der Destruktor für die Klasse. Wenn die Klasse über zusätzliche Methoden verfügt, können Sie je nach Implementierung öffentlich oder privat sein. Alle Datenmember sind privat. 
+C++-Clients und Dienstanbieter definieren #A0 durch Erstellen von Klassen, die von den Schnittstellen erben, die sie implementieren. Jede der Schnittstellenmethoden ist öffentlich, ebenso wie der Konstruktor und der Destruktor für die Klasse. Wenn die Klasse über zusätzliche Methoden verfügt, können sie abhängig von der Implementierung öffentlich oder privat sein. Alle Datenm member sind privat. 
   
-Der folgende Beispielcode zeigt, wie Sie ein C++-Statusobjekt definieren. Die `CMyMAPIObject` Klasse erbt von der [IMAPIStatus: IMAPIProp](imapistatusimapiprop.md) -Schnittstelle. Viele der in diesem Beispiel verwendeten Makros sind in der OLE-Headerdatei COMPOBJ. h definiert. Die ersten Member der Klasse sind die Methoden der Basisschnittstelle, gefolgt von den Methoden der geerbten Schnittstellen in der Reihenfolge der Vererbung. Nach den Schnittstellendefinitionen werden zusätzliche Methoden, der Konstruktor und der Destruktor sowie die Datenmember angezeigt. 
+Der folgende Beispielcode zeigt, wie Sie ein C++-Statusobjekt definieren. Die `CMyMAPIObject` Klasse erbt von der [IMAPIStatus : IMAPIProp-Schnittstelle.](imapistatusimapiprop.md) Viele der in diesem Beispiel verwendeten Makros sind in der OLE-Headerdatei Compobj.h definiert. Die ersten Member der Klasse sind die Methoden der Basisschnittstelle, gefolgt von den Methoden der geerbten Schnittstellen in der Reihenfolge der Vererbung. Im Anschluss an die Schnittstellendefinitionen sind alle zusätzlichen Methoden, der Konstruktor und der Destruktor und die Datenm members. 
   
 ```cpp
 class  CMyMAPIObject : public IMAPIStatus
@@ -48,7 +48,7 @@ private :
  
 ```
 
-Um eine Instanz der `CMyMAPIObject` Klasse zu verwenden, führen C++-Clients oder-Dienstanbieter einen Aufruf einer der folgenden Methoden aus: 
+Um eine Instanz der Klasse zu verwenden, rufen C++-Clients oder -Dienstanbieter eine ihrer Methoden wie  `CMyMAPIObject` folgt auf: 
   
 ```cpp
 lpMyObj->ValidateState(ulUIParam, ulFlags);

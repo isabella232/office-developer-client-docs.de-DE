@@ -22,17 +22,17 @@ Gibt den Kosinus eines Winkels zurück.
   
 ## <a name="syntax"></a>Syntax
 
-COS ( *Winkel*) 
+COS( *angle*) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Winkel_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Winkel, dessen Kosinus abgerufen werden soll.  <br/> |
+| _angle_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Winkel, dessen Kosinus abgerufen werden soll.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die COS-Funktion verwendet Radiant, es sei denn, Sie geben eine andere Maßeinheit im *Winkel* an. 
+Die COS-Funktion verwendet Bogenmaße, es sei denn, Sie geben eine andere Maßeinheit im Winkel *an.* 
   
 ## <a name="example"></a>Beispiel
 

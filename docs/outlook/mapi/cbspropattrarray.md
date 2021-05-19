@@ -25,12 +25,12 @@ ms.locfileid: "33433297"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl der Bytes in einer vorhandenen [SPropAttrArray](spropattrarray.md) -Struktur. 
+Berechnet die Anzahl der Bytes in einer vorhandenen [SPropAttrArray-Struktur.](spropattrarray.md) 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |IMessage. h  <br/> |
-|Zugehörige Struktur:  <br/> |**SPropAttrArray** <br/> |
+|Headerdatei  <br/> |Imessage.h  <br/> |
+|Verwandte Struktur:  <br/> |**SPropAttrArray** <br/> |
    
 ```cpp
 CbSPropAttrArray (_lparray)
@@ -38,9 +38,9 @@ CbSPropAttrArray (_lparray)
 
 ## <a name="parameters"></a>Parameter
 
- __LPArray_
+ _ _lparray_
   
-> Zeiger auf die vorhandene **SPropAttrArray** -Struktur. 
+> Zeiger auf die vorhandene **SPropAttrArray-Struktur.** 
     
 ## <a name="see-also"></a>Siehe auch
 

@@ -25,32 +25,32 @@ ms.locfileid: "33435019"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ein 32-Bit-Wert, der verwendet wird, um einen Fehler oder eine Warnung zu beschreiben.
+Ein 32-Bit-Wert, der zum Beschreiben eines Fehlers oder einer Warnung verwendet wird.
   
 ```cpp
 typedef LONG HRESULT;
 ```
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Der **HRESULT** -Datentyp ist identisch mit dem Datentyp [SCODE](scode.md) . 
+Der **HRESULT-Datentyp** ist mit dem [SCODE-Datentyp](scode.md) identisch. 
   
-Ein **HRESULT** -Wert besteht aus den folgenden Feldern: 
+Ein **HRESULT-Wert** besteht aus den folgenden Feldern: 
   
-- Ein 1-Bit-Code, der den Schweregrad angibt, wobei NULL den Erfolg darstellt und 1 einen Fehler darstellt.
+- Ein 1-Bit-Code, der den Schweregrad angibt, wobei Null den Erfolg und 1 den Fehler darstellt.
     
 - Ein reservierter 4-Bit-Wert.
     
-- Ein 11-Bit-Code, der die Verantwortlichkeit für den Fehler oder die Warnung angibt, auch als Facility-Code bezeichnet.
+- Ein 11-Bit-Code, der die Verantwortung für den Fehler oder die Warnung angibt, auch als Einrichtungscode bezeichnet.
     
-- Ein 16-Bit-Code zur Beschreibung des Fehlers oder der Warnung.
+- Ein 16-Bit-Code, der den Fehler oder die Warnung beschreibt.
     
-Die meisten MAPI-Schnittstellenmethoden und-Funktionen geben **HRESULT** -Werte zurück, um eine detaillierte Ursachen Bildung zu ermöglichen. **HRESULT** -Werte werden auch in OLE-Schnittstellenmethoden verwendet. OLE bietet mehrere Makros für die Konvertierung zwischen **HRESULT** -Werten und **SCODE** -Werten, einen weiteren allgemeinen Datentyp für die Fehlerbehandlung. 
+Die meisten METHODEN und Funktionen der MAPI-Schnittstelle geben **HRESULT-Werte zurück,** um eine detaillierte Ursachenbildung zu ermöglichen. **HRESULT-Werte** werden auch häufig in OLE-Schnittstellenmethoden verwendet. OLE stellt mehrere Makros für die Konvertierung zwischen **HRESULT-** und **SCODE-Werten** zur Auswahl, ein weiterer gängiger Datentyp für die Fehlerbehandlung. 
   
 > [!NOTE]
-> In 64-Bit-MAPI ist **HRESULT** weiterhin ein 32-Bit-Wert. 
+> In 64-Bit-MAPI ist **HRESULT** immer noch ein 32-Bit-Wert. 
   
-Informationen zur OLE-Verwendung von **HRESULT** -Werten finden Sie unter *OLE Programmer es Reference* . Weitere Informationen zur Verwendung dieser Werte in MAPI finden Sie unter [Fehlerbehandlung](error-handling-in-mapi.md) und einer der folgenden Schnittstellenmethoden: 
+Informationen zur OLE-Verwendung von **HRESULT-Werten** finden Sie unter  *OLE Programmer's Reference*  . Weitere Informationen zur Verwendung dieser Werte in MAPI finden Sie unter [Fehlerbehandlung](error-handling-in-mapi.md) und eine der folgenden Schnittstellenmethoden: 
   
 [IABLogon::GetLastError](iablogon-getlasterror.md)
   

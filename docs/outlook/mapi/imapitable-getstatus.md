@@ -25,7 +25,7 @@ ms.locfileid: "33434333"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt den Status und den Typ der Tabelle zurück.
+Gibt den Status und Typ der Tabelle zurück.
   
 ```cpp
 HRESULT GetStatus(
@@ -38,7 +38,7 @@ ULONG FAR * lpulTableType
 
  _lpulTableStatus_
   
-> Out Zeiger auf einen Wert, der den Status der Tabelle angibt. Einer der folgenden Werte kann zurückgegeben werden:
+> [out] Zeiger auf einen Wert, der den Status der Tabelle angibt. Einer der folgenden Werte kann zurückgegeben werden:
     
 TBLSTAT_COMPLETE 
   
@@ -46,43 +46,43 @@ TBLSTAT_COMPLETE
     
 TBLSTAT_QCHANGED 
   
-> Der Inhalt der Tabelle wurde erwartungsvoll geändert. Dieser Statuswert wird nicht für Änderungen zurückgegeben, die aus Sortier-oder Einschränkungs Vorgängen resultieren.
+> Der Inhalt der Tabelle hat sich erwartungslich geändert. Dieser Statuswert wird nicht für Änderungen zurückgegeben, die aus Sortier- oder Einschränkungsvorgängen resulten.
     
 TBLSTAT_RESTRICT_ERROR 
   
-> Während eines [IMAPITable:: Restrict](imapitable-restrict.md) -Vorgangs ist ein Fehler aufgetreten. 
+> Bei einem [IMAPITable::Restrict-Vorgang](imapitable-restrict.md) ist ein Fehler aufgetreten. 
     
 TBLSTAT_RESTRICTING 
   
-> Ein **IMAPITable:: Restrict** -Vorgang wird ausgeführt. 
+> Ein **IMAPITable::Restrict-Vorgang** wird ausgeführt. 
     
 TBLSTAT_SETCOL_ERROR 
   
-> Während eines [IMAPITable::](imapitable-setcolumns.md) SetColumns-Vorgangs ist ein Fehler aufgetreten. 
+> Bei einem [IMAPITable::SetColumns-Vorgang](imapitable-setcolumns.md) ist ein Fehler aufgetreten. 
     
 TBLSTAT_SETTING_COLS 
   
-> Ein **IMAPITable::** SetColumns-Vorgang wird ausgeführt. 
+> Ein **IMAPITable::SetColumns-Vorgang** wird ausgeführt. 
     
 TBLSTAT_SORT_ERROR 
   
-> Während eines [IMAPITable:: sortable](imapitable-sorttable.md) -Vorgangs ist ein Fehler aufgetreten. 
+> Bei einem [IMAPITable::SortTable-Vorgang](imapitable-sorttable.md) ist ein Fehler aufgetreten. 
     
 TBLSTAT_SORTING 
   
-> Ein **IMAPITable:: sortable** -Vorgang wird ausgeführt. 
+> Ein **IMAPITable::SortTable-Vorgang** wird ausgeführt. 
     
  _lpulTableType_
   
-> Out Zeiger auf einen Wert, der den Typ der Tabelle angibt. Einer der folgenden drei Tabellentypen kann zurückgegeben werden:
+> [out] Zeiger auf einen Wert, der den Typ der Tabelle angibt. Einer der folgenden drei Tabellentypen kann zurückgegeben werden:
     
 TBLTYPE_DYNAMIC 
   
-> Der Inhalt der Tabelle ist dynamisch; die Zeilen-und Spaltenwerte können sich ändern, wenn die zugrunde liegenden Daten geändert werden.
+> Der Inhalt der Tabelle ist dynamisch. Die Zeilen- und Spaltenwerte können sich ändern, wenn sich die zugrunde liegenden Daten ändern.
     
 TBLTYPE_KEYSET 
   
-> Die Zeilen in der Tabelle sind festgelegt, aber die Werte der Spalten innerhalb dieser Zeilen sind dynamisch und können geändert werden, wenn die zugrunde liegenden Daten geändert werden.
+> Die Zeilen in der Tabelle sind fest, aber die Werte der Spalten in diesen Zeilen sind dynamisch und können sich ändern, wenn sich die zugrunde liegenden Daten ändern.
     
 TBLTYPE_SNAPSHOT 
   
@@ -94,19 +94,19 @@ S_OK
   
 > Der Status der Tabelle wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **imapable:: GetStatus** -Methode ruft Informationen über den Typ einer Tabelle und den aktuellen Status ab. 
+Die **IMAPTable::GetStatus-Methode** ruft Informationen zum Typ und aktuellen Status einer Tabelle ab. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Sie können **GetStatus** in Verbindung mit drei anderen **IMAPITable** -Methoden verwenden, um den Status dieser Vorgänge zu überwachen und die Auswirkungen auf die Tabelle zu bestimmen. Rufen **** Sie GetStatus auf, nachdem Sie einen der folgenden **IMAPITable** -Aufrufe durchführen: 
+Sie können **GetStatus** zusammen mit drei anderen **IMAPITable-Methoden** verwenden, um den Status dieser Vorgänge zu überwachen und die Auswirkungen auf die Tabelle zu bestimmen. Rufen **Sie GetStatus** nach einem der folgenden **IMAPITable-Aufrufe** auf: 
   
-- [IMAPITable:: einschränken](imapitable-restrict.md) , um eine Einschränkung festzulegen. 
+- [IMAPITable::Restrict,](imapitable-restrict.md) um eine Einschränkung festlegen. 
     
-- [IMAPITable:: sortable](imapitable-sorttable.md) , um eine Sortierreihenfolge einzurichten. 
+- [IMAPITable::SortTable](imapitable-sorttable.md) zum Einrichten einer Sortierreihenfolge. 
     
-- [IMAPITable::](imapitable-setcolumns.md) SetColumns zum Definieren eines Spaltensatzes. 
+- [IMAPITable::SetColumns,](imapitable-setcolumns.md) um einen Spaltensatz zu definieren. 
     
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -114,7 +114,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|ContentsTableListCtrl. cpp  <br/> |CContentsTableListCtrl:: GetStatus  <br/> |MFCMAPI verwendet die **IMAPITable:: GetStatus** -Methode, um den Status einer Tabelle zu melden.  <br/> |
+|ContentsTableListCtrl.cpp  <br/> |CContentsTableListCtrl::GetStatus  <br/> |MFCMAPI verwendet die **IMAPITable::GetStatus-Methode,** um den Status einer Tabelle zu melden.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

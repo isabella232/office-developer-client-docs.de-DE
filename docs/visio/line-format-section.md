@@ -20,8 +20,8 @@ ms.locfileid: "33433745"
 
 Enthält Zellen, die die Linienattribute für ein Shape steuern, z. B. Muster, Linienstärke und Farbe. Sie bestimmen, ob die Linienenden formatiert werden (z. B. mit einer Pfeilspitze), die Größe von Linienendformaten, den Radius des der Linie zugewiesenen Rundungskreises und das Format der Linienenden (rund oder eckig).
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Sie können Linienformate mithilfe des **Shapes formatieren** -Bereichs festlegen (Klicken Sie auf der Registerkarte **Start** in der Gruppe Shape-Format **Vorlagen** auf **Linien**, klicken Sie auf Linien **Optionen**), indem Sie eine Linienart anwenden oder eine Formel in eine Linienformatzelle eingeben.
+Sie können Linienformate mithilfe des Bereichs Form  formatieren festlegen  (klicken Sie auf der Registerkarte Start in der Gruppe Formenarten auf **Linie,** klicken **Sie** auf Linienoptionen ), indem Sie eine Linienart anwenden oder eine Formel in eine Zelle Linienformat eingeben. 
   
 
