@@ -19,13 +19,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33417371"
 ---
-# <a name="ifoldersupportgetsupportmask"></a><span data-ttu-id="52b75-103">IFolderSupport::GetSupportMask</span><span class="sxs-lookup"><span data-stu-id="52b75-103">IFolderSupport::GetSupportMask</span></span>
+# <a name="ifoldersupportgetsupportmask"></a><span data-ttu-id="117f4-103">IFolderSupport::GetSupportMask</span><span class="sxs-lookup"><span data-stu-id="117f4-103">IFolderSupport::GetSupportMask</span></span>
 
   
   
-<span data-ttu-id="52b75-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="52b75-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="117f4-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="117f4-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="52b75-105">Ruft Informationen über die Unterstützung eines Ordners für die Freigabe ab.</span><span class="sxs-lookup"><span data-stu-id="52b75-105">Gets information about a folder's support for sharing.</span></span>
+<span data-ttu-id="117f4-105">Ruft Informationen zur Unterstützung eines Ordners für die Freigabe ab.</span><span class="sxs-lookup"><span data-stu-id="117f4-105">Gets information about a folder's support for sharing.</span></span>
   
 ```cpp
 HRESULT GetSupportMask( 
@@ -33,24 +33,24 @@ HRESULT GetSupportMask(
 ); 
 ```
 
-## <a name="parameters"></a><span data-ttu-id="52b75-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="52b75-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="117f4-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="117f4-106">Parameters</span></span>
 
- <span data-ttu-id="52b75-107">_pdwSupportMask_</span><span class="sxs-lookup"><span data-stu-id="52b75-107">_pdwSupportMask_</span></span>
+ <span data-ttu-id="117f4-107">_pdwSupportMask_</span><span class="sxs-lookup"><span data-stu-id="117f4-107">_pdwSupportMask_</span></span>
   
-> <span data-ttu-id="52b75-108">Out Eine Bitmaske, die angibt, ob der Ordnerfreigabe unterstützt.</span><span class="sxs-lookup"><span data-stu-id="52b75-108">[out] A bitmask indicating if the folder supports sharing.</span></span>
+> <span data-ttu-id="117f4-108">[out] Eine Bitmaske, die angibt, ob der Ordner die Freigabe unterstützt.</span><span class="sxs-lookup"><span data-stu-id="117f4-108">[out] A bitmask indicating if the folder supports sharing.</span></span>
     
- <span data-ttu-id="52b75-109">**FS_NONE**</span><span class="sxs-lookup"><span data-stu-id="52b75-109">**FS_NONE**</span></span>
+ <span data-ttu-id="117f4-109">**FS_NONE**</span><span class="sxs-lookup"><span data-stu-id="117f4-109">**FS_NONE**</span></span>
   
-> <span data-ttu-id="52b75-110">Gibt an, dass der Ordner keine Freigabe unterstützt.</span><span class="sxs-lookup"><span data-stu-id="52b75-110">Indicates that the folder does not support sharing.</span></span>
+> <span data-ttu-id="117f4-110">Gibt an, dass der Ordner die Freigabe nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="117f4-110">Indicates that the folder does not support sharing.</span></span>
     
- <span data-ttu-id="52b75-111">**FS_SUPPORTS_SHARING**</span><span class="sxs-lookup"><span data-stu-id="52b75-111">**FS_SUPPORTS_SHARING**</span></span>
+ <span data-ttu-id="117f4-111">**FS_SUPPORTS_SHARING**</span><span class="sxs-lookup"><span data-stu-id="117f4-111">**FS_SUPPORTS_SHARING**</span></span>
   
-> <span data-ttu-id="52b75-112">Gibt an, dass der Ordnerfreigabe unterstützt.</span><span class="sxs-lookup"><span data-stu-id="52b75-112">Indicates that the folder supports sharing.</span></span>
+> <span data-ttu-id="117f4-112">Gibt an, dass der Ordner die Freigabe unterstützt.</span><span class="sxs-lookup"><span data-stu-id="117f4-112">Indicates that the folder supports sharing.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="52b75-113">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="52b75-113">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="117f4-113">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="117f4-113">Return value</span></span>
 
-<span data-ttu-id="52b75-114">S_OK</span><span class="sxs-lookup"><span data-stu-id="52b75-114">S_OK</span></span> 
+<span data-ttu-id="117f4-114">S_OK</span><span class="sxs-lookup"><span data-stu-id="117f4-114">S_OK</span></span> 
   
-> <span data-ttu-id="52b75-115">Der Anruf wurde erfolgreich ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="52b75-115">The call was successful.</span></span>
+> <span data-ttu-id="117f4-115">Der Aufruf war erfolgreich.</span><span class="sxs-lookup"><span data-stu-id="117f4-115">The call was successful.</span></span>
     
 

@@ -16,26 +16,26 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33416797"
 ---
-# <a name="name-function"></a><span data-ttu-id="8999c-103">NAME Function</span><span class="sxs-lookup"><span data-stu-id="8999c-103">NAME Function</span></span>
+# <a name="name-function"></a><span data-ttu-id="db6a5-103">NAME Function</span><span class="sxs-lookup"><span data-stu-id="db6a5-103">NAME Function</span></span>
 
-<span data-ttu-id="8999c-104">Gibt den Namen eines Blatts als Zeichenfolge zurück.</span><span class="sxs-lookup"><span data-stu-id="8999c-104">Returns a sheet's name as a string.</span></span>
+<span data-ttu-id="db6a5-104">Gibt den Namen eines Blatts als Zeichenfolge zurück.</span><span class="sxs-lookup"><span data-stu-id="db6a5-104">Returns a sheet's name as a string.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="8999c-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="8999c-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="db6a5-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="db6a5-105">Syntax</span></span>
 
-<span data-ttu-id="8999c-106">NAME (\* \* *langID_opt* \* \*)</span><span class="sxs-lookup"><span data-stu-id="8999c-106">NAME (\*\* *langID_opt* \*\* )</span></span> 
+<span data-ttu-id="db6a5-106">NAME (\*\* *langID_opt* \*\* )</span><span class="sxs-lookup"><span data-stu-id="db6a5-106">NAME (\*\* *langID_opt* \*\* )</span></span> 
   
-### <a name="parameters"></a><span data-ttu-id="8999c-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="8999c-107">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="db6a5-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="db6a5-107">Parameters</span></span>
 
-|<span data-ttu-id="8999c-108">**Name**</span><span class="sxs-lookup"><span data-stu-id="8999c-108">**Name**</span></span>|<span data-ttu-id="8999c-109">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="8999c-109">**Required/Optional**</span></span>|<span data-ttu-id="8999c-110">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="8999c-110">**Data Type**</span></span>|<span data-ttu-id="8999c-111">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="8999c-111">**Description**</span></span>|
+|<span data-ttu-id="db6a5-108">**Name**</span><span class="sxs-lookup"><span data-stu-id="db6a5-108">**Name**</span></span>|<span data-ttu-id="db6a5-109">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="db6a5-109">**Required/Optional**</span></span>|<span data-ttu-id="db6a5-110">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="db6a5-110">**Data Type**</span></span>|<span data-ttu-id="db6a5-111">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="db6a5-111">**Description**</span></span>|
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="8999c-112">_langID_opt_</span><span class="sxs-lookup"><span data-stu-id="8999c-112">_langID_opt_</span></span> <br/> |<span data-ttu-id="8999c-113">Optional</span><span class="sxs-lookup"><span data-stu-id="8999c-113">Optional</span></span>  <br/> |<span data-ttu-id="8999c-114">**Number**</span><span class="sxs-lookup"><span data-stu-id="8999c-114">**Number**</span></span> <br/> |<span data-ttu-id="8999c-p101">Optionales Argument. Wird verwendet, um eine Sprache für die von der Funktion zurückgegebene Zeichenfolge anzugeben. Verwenden Sie 0 (Standardwert), um die lokale Sprache anzugeben. Verwenden Sie 750, um die universelle Sprache anzugeben.</span><span class="sxs-lookup"><span data-stu-id="8999c-p101">Use to specify a language for the string the function returns. Use 0 (default value) to specify the local language. Use 750 to specify universal language.</span></span>  <br/> |
+| <span data-ttu-id="db6a5-112">_langID_opt_</span><span class="sxs-lookup"><span data-stu-id="db6a5-112">_langID_opt_</span></span> <br/> |<span data-ttu-id="db6a5-113">Optional.</span><span class="sxs-lookup"><span data-stu-id="db6a5-113">Optional</span></span>  <br/> |<span data-ttu-id="db6a5-114">**Number**</span><span class="sxs-lookup"><span data-stu-id="db6a5-114">**Number**</span></span> <br/> |<span data-ttu-id="db6a5-p101">Optionales Argument. Wird verwendet, um eine Sprache für die von der Funktion zurückgegebene Zeichenfolge anzugeben. Verwenden Sie 0 (Standardwert), um die lokale Sprache anzugeben. Verwenden Sie 750, um die universelle Sprache anzugeben.</span><span class="sxs-lookup"><span data-stu-id="db6a5-p101">Use to specify a language for the string the function returns. Use 0 (default value) to specify the local language. Use 750 to specify universal language.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="8999c-118">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="8999c-118">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="db6a5-118">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="db6a5-118">Return value</span></span>
 
-<span data-ttu-id="8999c-119">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="8999c-119">String</span></span>
+<span data-ttu-id="db6a5-119">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="db6a5-119">String</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="8999c-120">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="8999c-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="db6a5-120">Hinweise</span><span class="sxs-lookup"><span data-stu-id="db6a5-120">Remarks</span></span>
 
-<span data-ttu-id="8999c-121">Wenn Sie einen ungültigen Sprachencode eingeben, wird die lokale Sprache verwendet.</span><span class="sxs-lookup"><span data-stu-id="8999c-121">If you pass an illegal language code, the local language is used.</span></span> 
+<span data-ttu-id="db6a5-121">Wenn Sie einen ungültigen Sprachencode eingeben, wird die lokale Sprache verwendet.</span><span class="sxs-lookup"><span data-stu-id="db6a5-121">If you pass an illegal language code, the local language is used.</span></span> 
   
 

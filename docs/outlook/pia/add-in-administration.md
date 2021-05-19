@@ -14,17 +14,17 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32336365"
 ---
-# <a name="add-in-administration"></a><span data-ttu-id="e1e0b-102">Add-In-Verwaltung</span><span class="sxs-lookup"><span data-stu-id="e1e0b-102">Add-in administration</span></span>
+# <a name="add-in-administration"></a><span data-ttu-id="4cd3d-102">Add-In-Verwaltung</span><span class="sxs-lookup"><span data-stu-id="4cd3d-102">Add-in administration</span></span>
 
-<span data-ttu-id="e1e0b-103">Dieser Abschnitt enthält Verfahren, in denen allgemeine Verwaltungsaufgaben von Add-Ins veranschaulicht werden.</span><span class="sxs-lookup"><span data-stu-id="e1e0b-103">This section includes procedures that show common add-in administrative tasks.</span></span>
+<span data-ttu-id="4cd3d-103">Dieser Abschnitt enthält Verfahren, in denen allgemeine Verwaltungsaufgaben von Add-Ins veranschaulicht werden.</span><span class="sxs-lookup"><span data-stu-id="4cd3d-103">This section includes procedures that show common add-in administrative tasks.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="e1e0b-104">Inhalt dieses Abschnitts</span><span class="sxs-lookup"><span data-stu-id="e1e0b-104">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="4cd3d-104">Inhalt dieses Abschnitts</span><span class="sxs-lookup"><span data-stu-id="4cd3d-104">In this section</span></span>
 
-|<span data-ttu-id="e1e0b-105">Thema</span><span class="sxs-lookup"><span data-stu-id="e1e0b-105">Topic</span></span>|<span data-ttu-id="e1e0b-106">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="e1e0b-106">Description</span></span>|
+|<span data-ttu-id="4cd3d-105">Thema</span><span class="sxs-lookup"><span data-stu-id="4cd3d-105">Topic</span></span>|<span data-ttu-id="4cd3d-106">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="4cd3d-106">Description</span></span>|
 |:----|:----------|
-|[<span data-ttu-id="e1e0b-107">Bestimmen, ob Outlook eine Klick-und-Los-Anwendung auf einem Computer ist</span><span class="sxs-lookup"><span data-stu-id="e1e0b-107">Determine whether Outlook is a Click-to-Run application on a computer</span></span>](how-to-determine-whether-outlook-is-a-click-to-run-application-on-a-computer.md) |<span data-ttu-id="e1e0b-108">Zeigt, wie Sie prüfen, ob Outlook per Klick-und-Los auf dem Clientcomputer bereitgestellt wurde.</span><span class="sxs-lookup"><span data-stu-id="e1e0b-108">Shows how to determine whether Outlook was delivered by Click-to-Run on a client computer.</span></span>|
+|[<span data-ttu-id="4cd3d-107">Bestimmen, ob Outlook eine Klick-und-Los-Anwendung auf einem Computer ist</span><span class="sxs-lookup"><span data-stu-id="4cd3d-107">Determine whether Outlook is a Click-to-Run application on a computer</span></span>](how-to-determine-whether-outlook-is-a-click-to-run-application-on-a-computer.md) |<span data-ttu-id="4cd3d-108">Zeigt, wie Sie prüfen, ob Outlook per Klick-und-Los auf dem Clientcomputer bereitgestellt wurde.</span><span class="sxs-lookup"><span data-stu-id="4cd3d-108">Shows how to determine whether Outlook was delivered by Click-to-Run on a client computer.</span></span>|
 
-## <a name="see-also"></a><span data-ttu-id="e1e0b-109">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="e1e0b-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4cd3d-109">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="4cd3d-109">See also</span></span>
 
-- [<span data-ttu-id="e1e0b-110">Gewusst wie... (Outlook 2013 PIA-Referenz)</span><span class="sxs-lookup"><span data-stu-id="e1e0b-110">How do I... (Outlook 2013 PIA reference)</span></span>](how-do-i-outlook-2013-pia-reference.md)
+- [<span data-ttu-id="4cd3d-110">Gewusst wie... (Outlook 2013 PIA-Referenz)</span><span class="sxs-lookup"><span data-stu-id="4cd3d-110">How do I... (Outlook 2013 PIA reference)</span></span>](how-do-i-outlook-2013-pia-reference.md)
 

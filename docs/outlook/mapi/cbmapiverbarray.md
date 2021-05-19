@@ -19,37 +19,37 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33418694"
 ---
-# <a name="cbmapiverbarray"></a><span data-ttu-id="713fe-103">CbMAPIVerbArray</span><span class="sxs-lookup"><span data-stu-id="713fe-103">CbMAPIVerbArray</span></span>
+# <a name="cbmapiverbarray"></a><span data-ttu-id="8d80b-103">CbMAPIVerbArray</span><span class="sxs-lookup"><span data-stu-id="8d80b-103">CbMAPIVerbArray</span></span>
 
   
   
-<span data-ttu-id="713fe-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="713fe-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="8d80b-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="8d80b-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="713fe-105">Berechnet die Anzahl der Bytes in einer vorhandenen [SMAPIVerbArray](smapiverbarray.md) -Struktur, die eine angegebene Anzahl von [SMAPIVerb](smapiverb.md) -Strukturen enthält.</span><span class="sxs-lookup"><span data-stu-id="713fe-105">Computes the number of bytes in an existing [SMAPIVerbArray](smapiverbarray.md) structure that contains a specified number of [SMAPIVerb](smapiverb.md) structures.</span></span> 
+<span data-ttu-id="8d80b-105">Berechnet die Anzahl der Bytes in einer vorhandenen [SMAPIVerbArray-Struktur,](smapiverbarray.md) die eine angegebene Anzahl von [SMAPIVerb-Strukturen](smapiverb.md) enthält.</span><span class="sxs-lookup"><span data-stu-id="8d80b-105">Computes the number of bytes in an existing [SMAPIVerbArray](smapiverbarray.md) structure that contains a specified number of [SMAPIVerb](smapiverb.md) structures.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="713fe-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="713fe-106">Header file:</span></span>  <br/> |<span data-ttu-id="713fe-107">Mapiform. h</span><span class="sxs-lookup"><span data-stu-id="713fe-107">Mapiform.h</span></span>  <br/> |
-|<span data-ttu-id="713fe-108">Zugehörige Struktur:</span><span class="sxs-lookup"><span data-stu-id="713fe-108">Related structure:</span></span>  <br/> |<span data-ttu-id="713fe-109">**SMAPIVerbArray**</span><span class="sxs-lookup"><span data-stu-id="713fe-109">**SMAPIVerbArray**</span></span> <br/> |
+|<span data-ttu-id="8d80b-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="8d80b-106">Header file:</span></span>  <br/> |<span data-ttu-id="8d80b-107">Mapiform.h</span><span class="sxs-lookup"><span data-stu-id="8d80b-107">Mapiform.h</span></span>  <br/> |
+|<span data-ttu-id="8d80b-108">Verwandte Struktur:</span><span class="sxs-lookup"><span data-stu-id="8d80b-108">Related structure:</span></span>  <br/> |<span data-ttu-id="8d80b-109">**SMAPIVerbArray**</span><span class="sxs-lookup"><span data-stu-id="8d80b-109">**SMAPIVerbArray**</span></span> <br/> |
    
 ```cpp
 int CbMAPIVerbArray (_c)
 ```
 
-## <a name="parameters"></a><span data-ttu-id="713fe-110">Parameter</span><span class="sxs-lookup"><span data-stu-id="713fe-110">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="8d80b-110">Parameter</span><span class="sxs-lookup"><span data-stu-id="8d80b-110">Parameters</span></span>
 
- <span data-ttu-id="713fe-111">__c_</span><span class="sxs-lookup"><span data-stu-id="713fe-111">__c_</span></span>
+ <span data-ttu-id="8d80b-111">_ _c_</span><span class="sxs-lookup"><span data-stu-id="8d80b-111">_ _c_</span></span>
   
-> <span data-ttu-id="713fe-112">Anzahl der **SMAPIVerb** -Strukturen in der vorhandenen **SMAPIVerbArray** -Struktur.</span><span class="sxs-lookup"><span data-stu-id="713fe-112">Count of **SMAPIVerb** structures in the existing **SMAPIVerbArray** structure.</span></span> 
+> <span data-ttu-id="8d80b-112">Anzahl der **SMAPIVerb-Strukturen** in der vorhandenen **SMAPIVerbArray-Struktur.**</span><span class="sxs-lookup"><span data-stu-id="8d80b-112">Count of **SMAPIVerb** structures in the existing **SMAPIVerbArray** structure.</span></span> 
     
-## <a name="see-also"></a><span data-ttu-id="713fe-113">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="713fe-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8d80b-113">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="8d80b-113">See also</span></span>
 
 
 
-[<span data-ttu-id="713fe-114">SMAPIVerbArray</span><span class="sxs-lookup"><span data-stu-id="713fe-114">SMAPIVerbArray</span></span>](smapiverbarray.md)
+[<span data-ttu-id="8d80b-114">SMAPIVerbArray</span><span class="sxs-lookup"><span data-stu-id="8d80b-114">SMAPIVerbArray</span></span>](smapiverbarray.md)
   
-[<span data-ttu-id="713fe-115">SMAPIVerb</span><span class="sxs-lookup"><span data-stu-id="713fe-115">SMAPIVerb</span></span>](smapiverb.md)
+[<span data-ttu-id="8d80b-115">SMAPIVerb</span><span class="sxs-lookup"><span data-stu-id="8d80b-115">SMAPIVerb</span></span>](smapiverb.md)
 
 
-[<span data-ttu-id="713fe-116">Makros im Zusammenhang mit Strukturen</span><span class="sxs-lookup"><span data-stu-id="713fe-116">Macros Related to Structures</span></span>](macros-related-to-structures.md)
+[<span data-ttu-id="8d80b-116">Makros im Zusammenhang mit Strukturen</span><span class="sxs-lookup"><span data-stu-id="8d80b-116">Macros Related to Structures</span></span>](macros-related-to-structures.md)
 

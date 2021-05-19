@@ -19,50 +19,50 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33417105"
 ---
-# <a name="imapimessagesitesavemessage"></a><span data-ttu-id="397d7-103">IMAPIMessageSite::SaveMessage</span><span class="sxs-lookup"><span data-stu-id="397d7-103">IMAPIMessageSite::SaveMessage</span></span>
+# <a name="imapimessagesitesavemessage"></a><span data-ttu-id="36817-103">IMAPIMessageSite::SaveMessage</span><span class="sxs-lookup"><span data-stu-id="36817-103">IMAPIMessageSite::SaveMessage</span></span>
 
   
   
-<span data-ttu-id="397d7-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="397d7-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="36817-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="36817-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="397d7-105">Fordert, dass die aktuelle Nachricht gespeichert wird.</span><span class="sxs-lookup"><span data-stu-id="397d7-105">Requests that the current message be saved.</span></span>
+<span data-ttu-id="36817-105">Fordert an, dass die aktuelle Nachricht gespeichert wird.</span><span class="sxs-lookup"><span data-stu-id="36817-105">Requests that the current message be saved.</span></span>
   
 ```cpp
 HRESULT SaveMessage( void );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="397d7-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="397d7-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="36817-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="36817-106">Parameters</span></span>
 
-<span data-ttu-id="397d7-107">Keine.</span><span class="sxs-lookup"><span data-stu-id="397d7-107">None.</span></span>
+<span data-ttu-id="36817-107">Keine.</span><span class="sxs-lookup"><span data-stu-id="36817-107">None.</span></span>
   
-## <a name="return-value"></a><span data-ttu-id="397d7-108">Return value</span><span class="sxs-lookup"><span data-stu-id="397d7-108">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="36817-108">Return value</span><span class="sxs-lookup"><span data-stu-id="36817-108">Return value</span></span>
 
-<span data-ttu-id="397d7-109">S_OK</span><span class="sxs-lookup"><span data-stu-id="397d7-109">S_OK</span></span> 
+<span data-ttu-id="36817-109">S_OK</span><span class="sxs-lookup"><span data-stu-id="36817-109">S_OK</span></span> 
   
-> <span data-ttu-id="397d7-110">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="397d7-110">The call succeeded and has returned the expected value or values.</span></span> 
+> <span data-ttu-id="36817-110">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="36817-110">The call succeeded and has returned the expected value or values.</span></span> 
     
-## <a name="remarks"></a><span data-ttu-id="397d7-111">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="397d7-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="36817-111">Hinweise</span><span class="sxs-lookup"><span data-stu-id="36817-111">Remarks</span></span>
 
-<span data-ttu-id="397d7-112">Formulare rufen die **IMAPIMessageSite:: SaveMessage** -Methode auf, um das Speichern einer Nachricht anzufordern.</span><span class="sxs-lookup"><span data-stu-id="397d7-112">Forms call the **IMAPIMessageSite::SaveMessage** method to request that a message be saved.</span></span> 
+<span data-ttu-id="36817-112">Formulare rufen die **IMAPIMessageSite::SaveMessage-Methode** auf, um das Speichern einer Nachricht an zu fordern.</span><span class="sxs-lookup"><span data-stu-id="36817-112">Forms call the **IMAPIMessageSite::SaveMessage** method to request that a message be saved.</span></span> 
   
-<span data-ttu-id="397d7-113">Eine Liste der Schnittstellen im Zusammenhang mit Formular Servern finden Sie unter [MAPI-Formular Schnittstellen](mapi-form-interfaces.md).</span><span class="sxs-lookup"><span data-stu-id="397d7-113">For a list of interfaces related to form servers, see [MAPI Form Interfaces](mapi-form-interfaces.md).</span></span>
+<span data-ttu-id="36817-113">Eine Liste der Schnittstellen im Zusammenhang mit Formularservern finden Sie unter [MAPI Form Interfaces](mapi-form-interfaces.md).</span><span class="sxs-lookup"><span data-stu-id="36817-113">For a list of interfaces related to form servers, see [MAPI Form Interfaces](mapi-form-interfaces.md).</span></span>
   
-## <a name="mfcmapi-reference"></a><span data-ttu-id="397d7-114">MFCMAPI-Referenz</span><span class="sxs-lookup"><span data-stu-id="397d7-114">MFCMAPI reference</span></span>
+## <a name="mfcmapi-reference"></a><span data-ttu-id="36817-114">MFCMAPI-Referenz</span><span class="sxs-lookup"><span data-stu-id="36817-114">MFCMAPI reference</span></span>
 
-<span data-ttu-id="397d7-115">Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.</span><span class="sxs-lookup"><span data-stu-id="397d7-115">For MFCMAPI sample code, see the following table.</span></span>
+<span data-ttu-id="36817-115">Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.</span><span class="sxs-lookup"><span data-stu-id="36817-115">For MFCMAPI sample code, see the following table.</span></span>
   
-|<span data-ttu-id="397d7-116">**Datei**</span><span class="sxs-lookup"><span data-stu-id="397d7-116">**File**</span></span>|<span data-ttu-id="397d7-117">**Funktion**</span><span class="sxs-lookup"><span data-stu-id="397d7-117">**Function**</span></span>|<span data-ttu-id="397d7-118">**Comment**</span><span class="sxs-lookup"><span data-stu-id="397d7-118">**Comment**</span></span>|
+|<span data-ttu-id="36817-116">**Datei**</span><span class="sxs-lookup"><span data-stu-id="36817-116">**File**</span></span>|<span data-ttu-id="36817-117">**Funktion**</span><span class="sxs-lookup"><span data-stu-id="36817-117">**Function**</span></span>|<span data-ttu-id="36817-118">**Comment**</span><span class="sxs-lookup"><span data-stu-id="36817-118">**Comment**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="397d7-119">MyMAPIFormViewer. cpp</span><span class="sxs-lookup"><span data-stu-id="397d7-119">MyMAPIFormViewer.cpp</span></span>  <br/> |<span data-ttu-id="397d7-120">CMyMAPIFormViewer:: SaveMessage</span><span class="sxs-lookup"><span data-stu-id="397d7-120">CMyMAPIFormViewer::SaveMessage</span></span>  <br/> |<span data-ttu-id="397d7-121">MFCMAPI verwendet die **IMAPIMessageSite:: SaveMessage** -Methode, um die Nachricht zu speichern.</span><span class="sxs-lookup"><span data-stu-id="397d7-121">MFCMAPI uses the **IMAPIMessageSite::SaveMessage** method to save the message.</span></span>  <br/> |
+|<span data-ttu-id="36817-119">MyMAPIFormViewer.cpp</span><span class="sxs-lookup"><span data-stu-id="36817-119">MyMAPIFormViewer.cpp</span></span>  <br/> |<span data-ttu-id="36817-120">CMyMAPIFormViewer::SaveMessage</span><span class="sxs-lookup"><span data-stu-id="36817-120">CMyMAPIFormViewer::SaveMessage</span></span>  <br/> |<span data-ttu-id="36817-121">MFCMAPI verwendet die **IMAPIMessageSite::SaveMessage-Methode,** um die Nachricht zu speichern.</span><span class="sxs-lookup"><span data-stu-id="36817-121">MFCMAPI uses the **IMAPIMessageSite::SaveMessage** method to save the message.</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="397d7-122">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="397d7-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="36817-122">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="36817-122">See also</span></span>
 
 
 
-[<span data-ttu-id="397d7-123">IMAPIMessageSite : IUnknown</span><span class="sxs-lookup"><span data-stu-id="397d7-123">IMAPIMessageSite : IUnknown</span></span>](imapimessagesiteiunknown.md)
+[<span data-ttu-id="36817-123">IMAPIMessageSite : IUnknown</span><span class="sxs-lookup"><span data-stu-id="36817-123">IMAPIMessageSite : IUnknown</span></span>](imapimessagesiteiunknown.md)
 
 
-[<span data-ttu-id="397d7-124">MFCMAPI (engl.) als ein Codebeispiel</span><span class="sxs-lookup"><span data-stu-id="397d7-124">MFCMAPI as a Code Sample</span></span>](mfcmapi-as-a-code-sample.md)
+[<span data-ttu-id="36817-124">MFCMAPI (engl.) als ein Codebeispiel</span><span class="sxs-lookup"><span data-stu-id="36817-124">MFCMAPI as a Code Sample</span></span>](mfcmapi-as-a-code-sample.md)
   
-[<span data-ttu-id="397d7-125">MAPI-Formular Schnittstellen</span><span class="sxs-lookup"><span data-stu-id="397d7-125">MAPI Form Interfaces</span></span>](mapi-form-interfaces.md)
+[<span data-ttu-id="36817-125">MAPI-Formularschnittstellen</span><span class="sxs-lookup"><span data-stu-id="36817-125">MAPI Form Interfaces</span></span>](mapi-form-interfaces.md)
 
