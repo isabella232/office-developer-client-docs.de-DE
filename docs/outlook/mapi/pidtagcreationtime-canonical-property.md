@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagCreationTime-Eigenschaft
+title: PidTagCreationTime (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 13122af2-06c8-4342-983d-e38178743d8f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: de853c66f0ef4270f4c443881bfa163d4abfa3e0
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -19,56 +19,56 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32357897"
 ---
-# <a name="pidtagcreationtime-canonical-property"></a><span data-ttu-id="ca741-103">Kanonische PidTagCreationTime-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="ca741-103">PidTagCreationTime Canonical Property</span></span>
+# <a name="pidtagcreationtime-canonical-property"></a><span data-ttu-id="e8735-103">PidTagCreationTime (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="e8735-103">PidTagCreationTime Canonical Property</span></span>
 
   
   
-<span data-ttu-id="ca741-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="ca741-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="e8735-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="e8735-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="ca741-105">Enthält das Datum und die Uhrzeit der Erstellung einer Nachricht.</span><span class="sxs-lookup"><span data-stu-id="ca741-105">Contains the creation date and time of a message.</span></span> 
+<span data-ttu-id="e8735-105">Enthält das Erstellungsdatum und die Uhrzeit einer Nachricht.</span><span class="sxs-lookup"><span data-stu-id="e8735-105">Contains the creation date and time of a message.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="ca741-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="ca741-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="ca741-107">PR_CREATION_TIME</span><span class="sxs-lookup"><span data-stu-id="ca741-107">PR_CREATION_TIME</span></span>  <br/> |
-|<span data-ttu-id="ca741-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="ca741-108">Identifier:</span></span>  <br/> |<span data-ttu-id="ca741-109">0x3007</span><span class="sxs-lookup"><span data-stu-id="ca741-109">0x3007</span></span>  <br/> |
-|<span data-ttu-id="ca741-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="ca741-110">Data type:</span></span>  <br/> |<span data-ttu-id="ca741-111">PT_SYSTIME</span><span class="sxs-lookup"><span data-stu-id="ca741-111">PT_SYSTIME</span></span>  <br/> |
-|<span data-ttu-id="ca741-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="ca741-112">Area:</span></span>  <br/> |<span data-ttu-id="ca741-113">Nachrichten Zeit</span><span class="sxs-lookup"><span data-stu-id="ca741-113">Message time</span></span>  <br/> |
+|<span data-ttu-id="e8735-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="e8735-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="e8735-107">PR_CREATION_TIME</span><span class="sxs-lookup"><span data-stu-id="e8735-107">PR_CREATION_TIME</span></span>  <br/> |
+|<span data-ttu-id="e8735-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="e8735-108">Identifier:</span></span>  <br/> |<span data-ttu-id="e8735-109">0x3007</span><span class="sxs-lookup"><span data-stu-id="e8735-109">0x3007</span></span>  <br/> |
+|<span data-ttu-id="e8735-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="e8735-110">Data type:</span></span>  <br/> |<span data-ttu-id="e8735-111">PT_SYSTIME</span><span class="sxs-lookup"><span data-stu-id="e8735-111">PT_SYSTIME</span></span>  <br/> |
+|<span data-ttu-id="e8735-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="e8735-112">Area:</span></span>  <br/> |<span data-ttu-id="e8735-113">Nachrichtenzeit</span><span class="sxs-lookup"><span data-stu-id="e8735-113">Message time</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="ca741-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="ca741-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="e8735-114">Hinweise</span><span class="sxs-lookup"><span data-stu-id="e8735-114">Remarks</span></span>
 
-<span data-ttu-id="ca741-115">Ein Nachrichtenspeicher legt diese Eigenschaft für jede Nachricht fest, die Sie erstellt.</span><span class="sxs-lookup"><span data-stu-id="ca741-115">A message store sets this property for each message that it creates.</span></span>
+<span data-ttu-id="e8735-115">Ein Nachrichtenspeicher legt diese Eigenschaft für jede nachricht fest, die er erstellt.</span><span class="sxs-lookup"><span data-stu-id="e8735-115">A message store sets this property for each message that it creates.</span></span>
   
-## <a name="related-resources"></a><span data-ttu-id="ca741-116">Zugehörige Ressourcen</span><span class="sxs-lookup"><span data-stu-id="ca741-116">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="e8735-116">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="e8735-116">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="ca741-117">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="ca741-117">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="e8735-117">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="e8735-117">Protocol specifications</span></span>
 
-<span data-ttu-id="ca741-118">[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="ca741-118">[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="e8735-118">[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="e8735-118">[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="ca741-119">Verarbeitet Nachrichten-und Anlagenobjekte.</span><span class="sxs-lookup"><span data-stu-id="ca741-119">Handles message and attachment objects.</span></span>
+> <span data-ttu-id="e8735-119">Behandelt Nachrichten- und Anlagenobjekte.</span><span class="sxs-lookup"><span data-stu-id="e8735-119">Handles message and attachment objects.</span></span>
     
-<span data-ttu-id="ca741-120">[[MS-OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="ca741-120">[[MS-OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="e8735-120">[[MS-OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="e8735-120">[[MS-OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="ca741-121">Gibt die Eigenschaften und Vorgänge für Listen von Benutzern, Kontakten, Gruppen und Ressourcen an.</span><span class="sxs-lookup"><span data-stu-id="ca741-121">Specifies the properties and operations for lists of users, contacts, groups, and resources.</span></span>
+> <span data-ttu-id="e8735-121">Gibt die Eigenschaften und Vorgänge für Listen von Benutzern, Kontakten, Gruppen und Ressourcen an.</span><span class="sxs-lookup"><span data-stu-id="e8735-121">Specifies the properties and operations for lists of users, contacts, groups, and resources.</span></span>
     
-### <a name="header-files"></a><span data-ttu-id="ca741-122">Header Dateien</span><span class="sxs-lookup"><span data-stu-id="ca741-122">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="e8735-122">Headerdateien</span><span class="sxs-lookup"><span data-stu-id="e8735-122">Header files</span></span>
 
-<span data-ttu-id="ca741-123">Mapidefs. h</span><span class="sxs-lookup"><span data-stu-id="ca741-123">Mapidefs.h</span></span>
+<span data-ttu-id="e8735-123">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="e8735-123">Mapidefs.h</span></span>
   
-> <span data-ttu-id="ca741-124">Stellt Datentypdefinitionen bereit.</span><span class="sxs-lookup"><span data-stu-id="ca741-124">Provides data type definitions.</span></span>
+> <span data-ttu-id="e8735-124">Bietet Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="e8735-124">Provides data type definitions.</span></span>
     
-<span data-ttu-id="ca741-125">Mapitags. h</span><span class="sxs-lookup"><span data-stu-id="ca741-125">Mapitags.h</span></span>
+<span data-ttu-id="e8735-125">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="e8735-125">Mapitags.h</span></span>
   
-> <span data-ttu-id="ca741-126">Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.</span><span class="sxs-lookup"><span data-stu-id="ca741-126">Contains definitions of properties listed as alternate names.</span></span>
+> <span data-ttu-id="e8735-126">Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.</span><span class="sxs-lookup"><span data-stu-id="e8735-126">Contains definitions of properties listed as alternate names.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="ca741-127">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="ca741-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e8735-127">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="e8735-127">See also</span></span>
 
 
 
-[<span data-ttu-id="ca741-128">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="ca741-128">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="e8735-128">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="e8735-128">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="ca741-129">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="ca741-129">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="e8735-129">KANONISCHE EIGENSCHAFTEN VON MAPI</span><span class="sxs-lookup"><span data-stu-id="e8735-129">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="ca741-130">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="ca741-130">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="e8735-130">Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="e8735-130">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="ca741-131">Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="ca741-131">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="e8735-131">Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="e8735-131">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

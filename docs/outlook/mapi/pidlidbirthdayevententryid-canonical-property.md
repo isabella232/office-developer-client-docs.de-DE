@@ -1,5 +1,5 @@
 ---
-title: Kanonische pidlidbirthdayevententryid (-Eigenschaft
+title: PidLidBirthdayEventEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,53 +19,53 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32342021"
 ---
-# <a name="pidlidbirthdayevententryid-canonical-property"></a><span data-ttu-id="6515a-103">Kanonische pidlidbirthdayevententryid (-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="6515a-103">PidLidBirthdayEventEntryId Canonical Property</span></span>
+# <a name="pidlidbirthdayevententryid-canonical-property"></a><span data-ttu-id="e4ab4-103">PidLidBirthdayEventEntryId (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="e4ab4-103">PidLidBirthdayEventEntryId Canonical Property</span></span>
 
   
   
-<span data-ttu-id="6515a-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="6515a-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="e4ab4-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="e4ab4-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="6515a-105">Gibt die **Eintrags** -Nr eines optionalen Termins an, der den Geburtstag des Kontakts darstellt.</span><span class="sxs-lookup"><span data-stu-id="6515a-105">Specifies the **EntryId** of an optional appointment that represents the contact's birthday.</span></span> 
+<span data-ttu-id="e4ab4-105">Gibt die **EntryId eines** optionalen Termins an, der den Geburtstag des Kontakts darstellt.</span><span class="sxs-lookup"><span data-stu-id="e4ab4-105">Specifies the **EntryId** of an optional appointment that represents the contact's birthday.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="6515a-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="6515a-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="6515a-107">dispidBirthdayEventEID</span><span class="sxs-lookup"><span data-stu-id="6515a-107">dispidBirthdayEventEID</span></span>  <br/> |
-|<span data-ttu-id="6515a-108">Eigenschaftengruppe:</span><span class="sxs-lookup"><span data-stu-id="6515a-108">Property set:</span></span>  <br/> |<span data-ttu-id="6515a-109">PSETID_Address</span><span class="sxs-lookup"><span data-stu-id="6515a-109">PSETID_Address</span></span>  <br/> |
-|<span data-ttu-id="6515a-110">Lange ID (LID):</span><span class="sxs-lookup"><span data-stu-id="6515a-110">Long ID (LID):</span></span>  <br/> |<span data-ttu-id="6515a-111">0x0000804D</span><span class="sxs-lookup"><span data-stu-id="6515a-111">0x0000804D</span></span>  <br/> |
-|<span data-ttu-id="6515a-112">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="6515a-112">Data type:</span></span>  <br/> |<span data-ttu-id="6515a-113">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="6515a-113">PT_BINARY</span></span>  <br/> |
-|<span data-ttu-id="6515a-114">Bereich:</span><span class="sxs-lookup"><span data-stu-id="6515a-114">Area:</span></span>  <br/> |<span data-ttu-id="6515a-115">Kontakt</span><span class="sxs-lookup"><span data-stu-id="6515a-115">Contact</span></span>  <br/> |
+|<span data-ttu-id="e4ab4-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="e4ab4-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="e4ab4-107">dispidBirthdayEventEID</span><span class="sxs-lookup"><span data-stu-id="e4ab4-107">dispidBirthdayEventEID</span></span>  <br/> |
+|<span data-ttu-id="e4ab4-108">Eigenschaftensatz:</span><span class="sxs-lookup"><span data-stu-id="e4ab4-108">Property set:</span></span>  <br/> |<span data-ttu-id="e4ab4-109">PSETID_Address</span><span class="sxs-lookup"><span data-stu-id="e4ab4-109">PSETID_Address</span></span>  <br/> |
+|<span data-ttu-id="e4ab4-110">Lange ID (LID):</span><span class="sxs-lookup"><span data-stu-id="e4ab4-110">Long ID (LID):</span></span>  <br/> |<span data-ttu-id="e4ab4-111">0x0000804D</span><span class="sxs-lookup"><span data-stu-id="e4ab4-111">0x0000804D</span></span>  <br/> |
+|<span data-ttu-id="e4ab4-112">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="e4ab4-112">Data type:</span></span>  <br/> |<span data-ttu-id="e4ab4-113">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="e4ab4-113">PT_BINARY</span></span>  <br/> |
+|<span data-ttu-id="e4ab4-114">Bereich:</span><span class="sxs-lookup"><span data-stu-id="e4ab4-114">Area:</span></span>  <br/> |<span data-ttu-id="e4ab4-115">Kontakt</span><span class="sxs-lookup"><span data-stu-id="e4ab4-115">Contact</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="6515a-116">Hinweise</span><span class="sxs-lookup"><span data-stu-id="6515a-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="e4ab4-116">Hinweise</span><span class="sxs-lookup"><span data-stu-id="e4ab4-116">Remarks</span></span>
 
-<span data-ttu-id="6515a-117">Der von dieser Eigenschaft angegebene Termin muss mit diesem Kontakt mithilfe der **dispidApptStateFlags** ([pidlidcontactlinkentry (](pidlidcontactlinkentry-canonical-property.md)), **dispidContactLinkSearchKey** ([pidlidcontactlinksearchkey (](pidlidcontactlinksearchkey-canonical-property.md)) verknüpft werden und \*\* dispidContactLinkName\*\* ([pidlidcontactlinkname (](pidlidcontactlinkname-canonical-property.md))-Eigenschaften, wie in [[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)angegeben.</span><span class="sxs-lookup"><span data-stu-id="6515a-117">The appointment this is specified by this property must be linked to this contact by using the **dispidApptStateFlags** ([PidLidContactLinkEntry](pidlidcontactlinkentry-canonical-property.md)), **dispidContactLinkSearchKey** ([PidLidContactLinkSearchKey](pidlidcontactlinksearchkey-canonical-property.md)), and **dispidContactLinkName** ([PidLidContactLinkName](pidlidcontactlinkname-canonical-property.md)) properties, as specified in [[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx).</span></span>
+<span data-ttu-id="e4ab4-117">Der von dieser Eigenschaft angegebene Termin muss mit diesem Kontakt verknüpft werden, indem die Eigenschaften **dispidApptStateFlags** ([PidLidContactLinkEntry](pidlidcontactlinkentry-canonical-property.md)), **dispidContactLinkSearchKey** ([PidLidContactLinkSearchKey](pidlidcontactlinksearchkey-canonical-property.md)) und **dispidContactLinkName** ([PidLidContactLinkName](pidlidcontactlinkname-canonical-property.md)) verwendet werden, wie in [[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)angegeben.</span><span class="sxs-lookup"><span data-stu-id="e4ab4-117">The appointment this is specified by this property must be linked to this contact by using the **dispidApptStateFlags** ([PidLidContactLinkEntry](pidlidcontactlinkentry-canonical-property.md)), **dispidContactLinkSearchKey** ([PidLidContactLinkSearchKey](pidlidcontactlinksearchkey-canonical-property.md)), and **dispidContactLinkName** ([PidLidContactLinkName](pidlidcontactlinkname-canonical-property.md)) properties, as specified in [[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx).</span></span>
   
-## <a name="related-resources"></a><span data-ttu-id="6515a-118">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="6515a-118">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="e4ab4-118">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="e4ab4-118">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="6515a-119">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="6515a-119">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="e4ab4-119">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="e4ab4-119">Protocol specifications</span></span>
 
-<span data-ttu-id="6515a-120">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="6515a-120">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="e4ab4-120">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="e4ab4-120">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="6515a-121">Stellt Eigenschaftenmengen Definitionen und Verweise auf zugehörige Exchange Server Protokollspezifikationen bereit.</span><span class="sxs-lookup"><span data-stu-id="6515a-121">Provides property set definitions and references to related Exchange Server protocol specifications.</span></span>
+> <span data-ttu-id="e4ab4-121">Stellt Eigenschaftensatzdefinitionen und Verweise auf verwandte Exchange Server zur Verfügung.</span><span class="sxs-lookup"><span data-stu-id="e4ab4-121">Provides property set definitions and references to related Exchange Server protocol specifications.</span></span>
     
-<span data-ttu-id="6515a-122">[[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="6515a-122">[[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="e4ab4-122">[[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="e4ab4-122">[[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="6515a-123">Gibt die Eigenschaften und Vorgänge an, die für Kontakte und persönliche Verteilerlisten zulässig sind.</span><span class="sxs-lookup"><span data-stu-id="6515a-123">Specifies the properties and operations that are permissible for contacts and personal distribution lists.</span></span>
+> <span data-ttu-id="e4ab4-123">Gibt die Eigenschaften und Vorgänge an, die für Kontakte und persönliche Verteilerlisten zulässig sind.</span><span class="sxs-lookup"><span data-stu-id="e4ab4-123">Specifies the properties and operations that are permissible for contacts and personal distribution lists.</span></span>
     
-### <a name="header-files"></a><span data-ttu-id="6515a-124">Header Dateien</span><span class="sxs-lookup"><span data-stu-id="6515a-124">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="e4ab4-124">Headerdateien</span><span class="sxs-lookup"><span data-stu-id="e4ab4-124">Header files</span></span>
 
-<span data-ttu-id="6515a-125">Mapidefs. h</span><span class="sxs-lookup"><span data-stu-id="6515a-125">Mapidefs.h</span></span>
+<span data-ttu-id="e4ab4-125">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="e4ab4-125">Mapidefs.h</span></span>
   
-> <span data-ttu-id="6515a-126">Stellt Definitionen von Datentypen bereit.</span><span class="sxs-lookup"><span data-stu-id="6515a-126">Provides data type definitions.</span></span>
+> <span data-ttu-id="e4ab4-126">Bietet Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="e4ab4-126">Provides data type definitions.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="6515a-127">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="6515a-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e4ab4-127">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="e4ab4-127">See also</span></span>
 
 
 
-[<span data-ttu-id="6515a-128">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="6515a-128">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="e4ab4-128">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="e4ab4-128">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="6515a-129">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="6515a-129">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="e4ab4-129">KANONISCHE EIGENSCHAFTEN VON MAPI</span><span class="sxs-lookup"><span data-stu-id="e4ab4-129">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="6515a-130">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="6515a-130">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="e4ab4-130">Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="e4ab4-130">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="6515a-131">Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="6515a-131">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="e4ab4-131">Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="e4ab4-131">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

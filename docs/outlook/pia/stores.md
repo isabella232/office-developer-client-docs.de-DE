@@ -14,20 +14,20 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32357680"
 ---
-# <a name="stores"></a><span data-ttu-id="04f64-102">Speicher</span><span class="sxs-lookup"><span data-stu-id="04f64-102">Stores</span></span>
+# <a name="stores"></a><span data-ttu-id="1d8c0-102">Speicher</span><span class="sxs-lookup"><span data-stu-id="1d8c0-102">Stores</span></span>
 
-<span data-ttu-id="04f64-103">In diesem Abschnitt finden Sie Beispielaufgaben im Zusammenhang mit Speichern.</span><span class="sxs-lookup"><span data-stu-id="04f64-103">This section provides sample tasks that involve stores.</span></span> <span data-ttu-id="04f64-104">Ein Speicher ist eine Datei auf dem lokalen Computer oder ein Netzlaufwerk, in der bzwl. auf dem E-Mail-Nachrichten und andere Elemente gespeichert werden.</span><span class="sxs-lookup"><span data-stu-id="04f64-104">A store represents a file on the local computer or a network drive that stores email messages and other items.</span></span>
+<span data-ttu-id="1d8c0-103">In diesem Abschnitt finden Sie Beispielaufgaben im Zusammenhang mit Speichern.</span><span class="sxs-lookup"><span data-stu-id="1d8c0-103">This section provides sample tasks that involve stores.</span></span> <span data-ttu-id="1d8c0-104">Ein Speicher ist eine Datei auf dem lokalen Computer oder ein Netzlaufwerk, in der bzwl. auf dem E-Mail-Nachrichten und andere Elemente gespeichert werden.</span><span class="sxs-lookup"><span data-stu-id="1d8c0-104">A store represents a file on the local computer or a network drive that stores email messages and other items.</span></span>
 
-## <a name="in-this-section"></a><span data-ttu-id="04f64-105">Inhalt dieses Abschnitts</span><span class="sxs-lookup"><span data-stu-id="04f64-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="1d8c0-105">Inhalt dieses Abschnitts</span><span class="sxs-lookup"><span data-stu-id="1d8c0-105">In this section</span></span>
 
-|<span data-ttu-id="04f64-106">Thema</span><span class="sxs-lookup"><span data-stu-id="04f64-106">Topic</span></span>|<span data-ttu-id="04f64-107">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="04f64-107">Description</span></span>|
+|<span data-ttu-id="1d8c0-106">Thema</span><span class="sxs-lookup"><span data-stu-id="1d8c0-106">Topic</span></span>|<span data-ttu-id="1d8c0-107">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="1d8c0-107">Description</span></span>|
 |:----|:----------|
-|[<span data-ttu-id="04f64-108">Abrufen von Informationen zu Speichern in einem Profil</span><span class="sxs-lookup"><span data-stu-id="04f64-108">Get information about stores in a profile</span></span>](how-to-get-information-about-stores-in-a-profile.md)  |<span data-ttu-id="04f64-109">Ruft Speicher in einem Profil ab und zählt diese auf.</span><span class="sxs-lookup"><span data-stu-id="04f64-109">Gets and enumerates stores in a profile.</span></span>|
-|[<span data-ttu-id="04f64-110">Hinzufügen oder Entfernen eines Speichers</span><span class="sxs-lookup"><span data-stu-id="04f64-110">Add or remove a store</span></span>](how-to-add-or-remove-a-store.md)  |<span data-ttu-id="04f64-111">Zeigt, wie ein Speicher in einem Profil hinzugefügt oder entfernt wird.</span><span class="sxs-lookup"><span data-stu-id="04f64-111">Shows how to add or remove a store in a given profile.</span></span>|
+|[<span data-ttu-id="1d8c0-108">Abrufen von Informationen zu Speichern in einem Profil</span><span class="sxs-lookup"><span data-stu-id="1d8c0-108">Get information about stores in a profile</span></span>](how-to-get-information-about-stores-in-a-profile.md)  |<span data-ttu-id="1d8c0-109">Ruft Speicher in einem Profil ab und zählt diese auf.</span><span class="sxs-lookup"><span data-stu-id="1d8c0-109">Gets and enumerates stores in a profile.</span></span>|
+|[<span data-ttu-id="1d8c0-110">Hinzufügen oder Entfernen eines Speichers</span><span class="sxs-lookup"><span data-stu-id="1d8c0-110">Add or remove a store</span></span>](how-to-add-or-remove-a-store.md)  |<span data-ttu-id="1d8c0-111">Zeigt, wie ein Speicher in einem Profil hinzugefügt oder entfernt wird.</span><span class="sxs-lookup"><span data-stu-id="1d8c0-111">Shows how to add or remove a store in a given profile.</span></span>|
 
-## <a name="see-also"></a><span data-ttu-id="04f64-112">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="04f64-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1d8c0-112">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="1d8c0-112">See also</span></span>
 
-- [<span data-ttu-id="04f64-113">Konten</span><span class="sxs-lookup"><span data-stu-id="04f64-113">Accounts</span></span>](accounts.md)
-- [<span data-ttu-id="04f64-114">Ordner</span><span class="sxs-lookup"><span data-stu-id="04f64-114">Folders</span></span>](folders.md)
-- [<span data-ttu-id="04f64-115">Gewusst wie... (Outlook 2013 PIA-Referenz)</span><span class="sxs-lookup"><span data-stu-id="04f64-115">How do I... (Outlook 2013 PIA reference)</span></span>](how-do-i-outlook-2013-pia-reference.md)
+- [<span data-ttu-id="1d8c0-113">Konten</span><span class="sxs-lookup"><span data-stu-id="1d8c0-113">Accounts</span></span>](accounts.md)
+- [<span data-ttu-id="1d8c0-114">Ordner</span><span class="sxs-lookup"><span data-stu-id="1d8c0-114">Folders</span></span>](folders.md)
+- [<span data-ttu-id="1d8c0-115">Gewusst wie... (Outlook 2013 PIA-Referenz)</span><span class="sxs-lookup"><span data-stu-id="1d8c0-115">How do I... (Outlook 2013 PIA reference)</span></span>](how-do-i-outlook-2013-pia-reference.md)
 
