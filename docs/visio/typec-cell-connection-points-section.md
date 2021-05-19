@@ -22,26 +22,26 @@ Legt den Verbindungspunkttyp fest.
   
 |**Wert**|**Typ**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
-|0  <br/> |Innere  <br/> |**visCnnctTypeInward** <br/> |
+|0  <br/> |Nach innen  <br/> |**visCnnctTypeInward** <br/> |
 |1  <br/> |Nach außen  <br/> |**visCnnctTypeOutward** <br/> |
 |2  <br/> |Nach innen &amp; nach außen  <br/> |**visCnnctTypeInwardOutward** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Sie können den Verbindungspunkttyp auch festlegen, indem Sie das Tool **Automatischer Verbinder** sowie ein Shape auswählen und anschließend mit der rechten Maustaste auf einen Verbindungspunkt klicken. Dazu müssen Sie in den [Entwicklermodus](run-in-developer-mode-display-the-developer-tab.md) wechseln. 
   
-Wenn Sie einen Verweis auf die Zelle Type/C aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle Type /C anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Connections. Type [ *i* ] wobei *i* = <1>, 2, 3...  <br/> |
+|Zellenname:  <br/> |Connections.Type[  *i*  ] where  *i*  = <1>, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Type/C aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle Type /C nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
 |Abschnittsindex:  <br/> |**visSectionConnectionPts** <br/> |
-|Zeilenindex:  <br/> |**visRowConnectionPts** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+|Zeilenindex:  <br/> |**visRowConnectionPts**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
 |Zellenindex:  <br/> |**visCnnctType** (nicht erweiterte Zeilen) **visCnnctC** (erweiterte Zeilen)  <br/> |
    
 Informationen zu erweiterten und nicht erweiterten Zeilen finden Sie in der Zeile Connections Points.

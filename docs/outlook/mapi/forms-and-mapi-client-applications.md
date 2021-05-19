@@ -19,11 +19,11 @@ ms.locfileid: "33415446"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Da alle MAPI-Nachrichten Instanzen von Formularen sind, zeigen Clientanwendungen und interagieren mit Formularobjekten genau wie bei anderen Nachrichtenobjekten.
+Da alle MAPI-Nachrichten Instanzen von Formularen sind, werden von Clientanwendungen Formularobjekte genauso wie mit anderen Nachrichtenobjekten angezeigt und mit diesen interagieren.
   
-Client Anwendungen, die die MAPI-Formular Schnittstellen verwenden, können zusätzliche Interaktionen mit Formularobjekten bereitstellen. Client Anwendungen können alle von einem Formular definierten speziellen Verben verwenden, um Benutzern die gesamte Bandbreite der Interaktionen bereitzustellen, die vom Designer des Formulars bestimmt werden sollen. Clients können auch beliebige benutzerdefinierte Eigenschaften verwenden, die vom Formularserver verfügbar gemacht werden, um Benutzern zu helfen, Formulare auf der Benutzeroberfläche des Clients zu sortieren, in der Vorschau anzuzeigen oder anderweitig zu verwalten.
+Clientanwendungen, die die MAPI-Formularschnittstellen verwenden, können zusätzliche Interaktionen mit Formularobjekten ermöglichen. Clientanwendungen können alle speziellen Verben verwenden, die durch ein Formular definiert sind, um Benutzern den vollständigen Bereich von Interaktionen zu ermöglichen, die vom Designer des Formulars vorgesehen sind. Clients können auch benutzerdefinierte Eigenschaften verwenden, die vom Formularserver verfügbar gemacht werden, um Benutzern beim Sortieren, Anzeigen oder anderweitigen Verwalten von Formularen auf der Clientschnittstelle zu helfen.
   
-Weitere Informationen finden Sie unter [Behandeln von MAPI-Formularen](handling-mapi-forms.md).
+Weitere Informationen finden Sie unter [Handling MAPI Forms](handling-mapi-forms.md).
   
 ## <a name="see-also"></a>Siehe auch
 

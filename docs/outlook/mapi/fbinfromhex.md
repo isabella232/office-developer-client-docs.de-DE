@@ -25,13 +25,13 @@ ms.locfileid: "33414935"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Konvertiert eine Zeichenfolgendarstellung einer hexadezimalen Zahl in Binärdaten. 
+Konvertiert eine Zeichenfolgendarstellung einer Hexadezimalzahl in Binärdaten. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 BOOL FBinFromHex(
@@ -42,13 +42,13 @@ BOOL FBinFromHex(
 
 ## <a name="parameters"></a>Parameter
 
- _SZ_
+ _sz_
   
-> in Zeiger auf die zu konvertierende NULL-terminierte ASCII-Zeichenfolge. Es handelt sich nicht um eine Unicode-Zeichenfolge. Gültige Zeichen sind die Hexadezimalzeichen 0 bis 9 und groß-und Kleinbuchstaben A bis F.
+> [in] Zeiger auf die mit Null beendete ASCII-Zeichenfolge, die konvertiert werden soll. Es handelt sich nicht um eine Unicode-Zeichenfolge. Gültige Zeichen sind die Hexadezimalzeichen Null bis neun sowie die Groß- und Kleinbuchstaben A bis F.
     
  _pb_
   
-> Out Zeiger auf die zurückgegebene binäre Zahl.
+> [out] Zeiger auf die zurückgegebene Binärnummer.
     
 ## <a name="return-value"></a>Rückgabewert
 

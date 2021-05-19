@@ -27,21 +27,21 @@ Bestimmt, welche dynamischen Verbinder von der Anwendung getrennt werden, wenn d
 |2  <br/> |Keine Linien  <br/> |**visPLOLineAdjustFromNone** <br/> |
 |3  <br/> |Standard-Umleitungsformatvorlage  <br/> |**visPLOLineAdjustFromRoutingDefault** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Sie können den Wert dieser Zelle auch im Dialogfeld **Seite einrichten** auf der Registerkarte **Layout und Routing** festlegen (klicken Sie dazu auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten**, und klicken Sie dann auf **Layout und Routing**).
   
-Wenn Sie einen Verweis auf die Zelle Zelle LineAdjustFrom aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle LineAdjustFrom anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Zelle LineAdjustFrom  <br/> |
+|Zellenname:  <br/> |LineAdjustFrom  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle LineAdjustFrom aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Um einen Verweis auf die LineAdjustFrom-Zelle nach Index aus einem Programm zu erhalten, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowPageLayout** <br/> |
 |Zellenindex:  <br/> |**visPLOLineAdjustFrom** <br/> |
    

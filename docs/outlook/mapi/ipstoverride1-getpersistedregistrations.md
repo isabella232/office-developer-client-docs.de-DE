@@ -25,7 +25,7 @@ ms.locfileid: "33415131"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft die Liste der Registrierungen für die persönliche Ordner-Datei (PST) ab.
+Ruft die Liste der Registrierungen für die Datei Persönliche Ordner (PST) ab.
   
 ```cpp
 HRESULT GetPersistedRegistration(SPropValue **ppmval);
@@ -35,10 +35,10 @@ HRESULT GetPersistedRegistration(SPropValue **ppmval);
 
  _ppmval_
   
-> in Ein Zeiger auf einen Zeiger auf eine [SPropValue](spropvalue.md) -Struktur. Das ulPropTag-Element dieser Struktur hat den Typ PT_MV_UNICODE, und der MVszW-Wert Member ist ein Array von null-terminierten Unicode-Zeichenfolgen. Diese Zeichenfolgen sind Pfade zu DLLs, für die die Registrierung beibehalten wurde. 
+> [in] Ein Zeiger auf einen Zeiger auf eine [SPropValue-Struktur.](spropvalue.md) Das ulPropTag-Element dieser Struktur ist vom Typ PT_MV_UNICODE, und das MVszW-Wertm member ist ein Array mit #A0 mit Nullendpunkt. Diese Zeichenfolgen sind Pfade zu DLLs, für die die Registrierung beibehalten wurde. 
     
 > [!NOTE]
-> die PST-Unterstützung für ANSI ist nicht implementiert. 
+> Die PST-Unterstützung für ANSI ist nicht implementiert. 
   
 ## <a name="return-value"></a>Rückgabewert
 

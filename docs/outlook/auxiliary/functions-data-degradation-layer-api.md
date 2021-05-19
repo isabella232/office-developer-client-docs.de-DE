@@ -1,5 +1,5 @@
 ---
-title: Funktionen (Daten Degradations Schicht-API)
+title: Funktionen (Data Degradation Layer API)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33420486"
 ---
-# <a name="functions-data-degradation-layer-api"></a>Funktionen (Daten Degradations Schicht-API)
+# <a name="functions-data-degradation-layer-api"></a>Funktionen (Data Degradation Layer API)
 
 In diesem Abschnitt werden die Funktionen in der Data Degradation Layer-API beschrieben.
   

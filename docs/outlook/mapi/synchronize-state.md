@@ -1,5 +1,5 @@
 ---
-title: Status Synchronisieren
+title: Synchronisierungsstatus
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -13,33 +13,33 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33414627"
 ---
-# <a name="synchronize-state"></a>Status Synchronisieren
+# <a name="synchronize-state"></a>Synchronisierungsstatus
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
- In diesem Thema wird beschrieben, was während des Synchronisierungsstatus des Replikationsstatus Computers passiert. 
+ In diesem Thema wird beschrieben, was während des Synchronisierungsstatus des Replikationsstatuscomputers geschieht. 
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
-|Status-ID:  <br/> |**LR_SYNC** <br/> |
-|Zugehörige Datenstruktur:  <br/> |**[SYNCHRONISIERUNGS](sync.md)** <br/> |
-|Aus folgendem Zustand:  <br/> |[Zustand „Leerlauf“](idle-state.md) <br/> |
-|Zu folgendem Status:  <br/> |[Download-Hierarchie Status](download-hierarchy-state.md), [Inhaltsstatus synchronisieren](synchronize-contents-state.md), Status der [Upload-Hierarchie](upload-hierarchy-state.md)oder Leerlaufstatus  <br/> |
+|Statusbezeichner:  <br/> |**LR_SYNC** <br/> |
+|Verwandte Datenstruktur:  <br/> |**[SYNC](sync.md)** <br/> |
+|In diesem Zustand:  <br/> |[Zustand „Leerlauf“](idle-state.md) <br/> |
+|In diesem Zustand:  <br/> |[Downloadhierarchiestatus,](download-hierarchy-state.md) [Inhaltsstatus synchronisieren,](synchronize-contents-state.md) [Uploadhierarchiestatus](upload-hierarchy-state.md)oder Leerlaufzustand  <br/> |
    
 > [!NOTE]
-> Der Replikationsstatus Computer ist ein deterministischer Statuscomputer. Ein Client, der von einem Staat zu einem anderen abgeht, muss schließlich aus letzterem zurückkehren. 
+> Der Replikationsstatuscomputer ist ein deterministischer Zustandsautomat. Ein Client, der von einem Zustand in einen anderen abt, muss schließlich zu dem ersten von letzterem zurückkehren. 
   
 ## <a name="description"></a>Beschreibung
 
-Dieser Status initiiert die Synchronisierung. Ein lokaler Speicher kann von hier zu einem Upload-oder Downloadstatus wechseln. Beispielsweise kann ein lokaler Speicher zum Upload-Hierarchie Status wechseln, um eine Ordnerhierarchie auf den Server hochzuladen, oder eine vollständige Synchronisierung durchführen, indem Sie zunächst die Hierarchie hochladen und dann die Hierarchie vom Server herunterladen.
+Dieser Zustand initiiert die Synchronisierung. Ein lokaler Speicher kann von hier aus zu einem Upload- oder Downloadstatus überwechseln. Beispielsweise kann ein lokaler Speicher in den Uploadhierarchiestatus wechseln, um eine Ordnerhierarchie auf den Server hochzuladen, oder er kann eine vollständige Synchronisierung durchführen, indem er zuerst die Hierarchie hoch- und dann die Hierarchie vom Server herunterloaden.
   
-Während dieses Status initialisiert Outlook die zugehörige **Synchronisierungs** Datenstruktur mit dem Pfad zum lokalen Speicher, sodass Outlook während anderer Statusänderungen sieht. 
+Während dieses Status initialisiert Outlook die  zugeordnete SYNC-Datenstruktur mit dem Pfad zum lokalen Speicher, sodass Outlook änderungen während anderer Zustände sehen. 
   
-Der Client legt die [in]-Mitglieder der **Synchronisierung**fest, die Outlook anweist, wie andere Zustände behandelt werden. Der Client kann beispielsweise *ulFlags* auf **UPS_UPLOAD_ONLY** und **UPS_THESE_FOLDERS** und *PEL* auf eine Liste von Eintrags Bezeichnern der Ordner festlegen, um Outlook mitzuteilen, dass nur diese Ordner hochgeladen werden. Wenn dieser Status endet, wird der lokale Speicher in den Leerlauf zurückgesetzt. 
+Der Client legt die [in]-Mitglieder von **SYNC** fest, die Outlook wie andere Zustände zu behandeln sind. Beispielsweise kann der Client *ulFlags* auf **UPS_UPLOAD_ONLY** und **UPS_THESE_FOLDERS** und *pel* auf eine Liste der Eintragsbezeichner der Ordner festlegen, um Outlook zu informieren, dass nur diese Ordner hochgeladen werden. Wenn dieser Zustand endet, wird der lokale Speicher in den Leerlaufzustand zurückgesetzt. 
   
 ## <a name="see-also"></a>Siehe auch
 

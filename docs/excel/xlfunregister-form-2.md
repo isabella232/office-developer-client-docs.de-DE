@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - xlfUnregister (Form 2)
 keywords:
-- xlfunregister [Excel 2007]
+- xlfunregister [excel 2007]
 localization_priority: Normal
 ms.assetid: 39c6eba7-ba41-4e7b-9a28-2b662378ff5a
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -22,15 +22,15 @@ ms.locfileid: "33419905"
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Kann von einem DLL-oder XLL-Befehl aufgerufen werden, der selbst von Microsoft Excel aufgerufen wurde. Dies entspricht dem Aufrufen der **AUFheben der Registrierung** aus einer Excel-XML-Makrovorlage. 
+Kann über einen DLL- oder XLL-Befehl aufgerufen werden, der selbst von einem Microsoft Excel. Dies entspricht dem Aufrufen von **UNREGISTER** aus Excel XLM-Makroblatts. 
   
 **xlfUnregister** kann in zwei Formen aufgerufen werden: 
   
-- Form 1: hebt die Registrierung eines einzelnen Befehls oder einer Funktion auf.
+- Formular 1: Aufheben der Registrierung eines einzelnen Befehls oder einer Einzelnen Funktion.
     
-- Form 2: entladen und Deaktivieren einer XLL.
+- Formular 2: Entladen und Deaktivieren einer XLL.
     
-In Form 2 aufgerufen, wird durch diese Funktion erzwungen, dass eine DLL oder Coderessource vollständig entladen wird. Sie hebt die Registrierung aller Funktionen in einer DLL auf, auch wenn Sie derzeit von einem anderen Makro verwendet werden, unabhängig davon, welche Verwendungsanzahl verwendet wird. Diese Funktion ruft **xlAutoClose**auf und hebt dann alle Funktionen in der dll auf.
+In Form 2 aufgerufen, erzwingt diese Funktion, dass eine DLL- oder Coderessource vollständig entladen wird. Es wird die Registrierung aller Funktionen in einer DLL aufgehoben, auch wenn sie derzeit von einem anderen Makro verwendet werden, unabhängig von der Anzahl der Verwendungen. Diese Funktion ruft **xlAutoClose** auf und macht dann die Registrierung aller Funktionen in der DLL aufgehoben.
   
 ```cs
 Excel12(xlfUnregister, LPXLOPER12 pxRes, 1, LPXLOPER12 pxModuleText);
@@ -44,16 +44,16 @@ Der Name der DLL.
   
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-Wenn der Wert erfolgreich ist, wird **true** (**xltypeBool**) zurückgegeben. Wenn nicht erfolgreich, gibt **false**zurück.
+Wenn dies erfolgreich ist, wird **TRUE** (**xltypeBool**) zurückgegeben. Wenn der Wert nicht erfolgreich ist, wird **FALSE zurückgegeben.**
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 > [!NOTE] 
-> Rufen Sie diese Form der Funktion nicht aus der Implementierung des [xlAutoClose](xlautoclose.md) auf, um die Registrierung aller Ressourcen der DLL mit einem einfachen Funktionsaufruf aufzuheben. Dies führt zu einem rekursiven Aufruf von **xlAutoClose** und einem Stapelüberlauf. 
+> Rufen Sie diese Form der Funktion nicht aus Ihrer Implementierung von [xlAutoClose](xlautoclose.md) auf, um die Registrierung aller Ressourcen der DLL mit einem einfachen Funktionsaufruf auf zu aufheben. Dies führt zu rekursiven Aufrufen von **xlAutoClose** und einem Stapelüberlauf. 
   
-### <a name="remember-to-delete-names"></a>Namen löschen
+### <a name="remember-to-delete-names"></a>Vergessen Sie nicht, Namen zu löschen
 
-Wenn Sie das _pxFunctionText_ -Argument für **xlfRegister**angegeben haben, müssen Sie beim Registrieren der DLL-Funktionen und-Befehle die Namen explizit löschen, indem Sie **xlfSetName** für jeden einzelnen aufrufen, wobei das zweite Argument ausgelassen wird, sodass die die Funktion wird nicht mehr im Funktions-Assistenten angezeigt. Weitere Informationen finden Sie unter [Bekannte Probleme bei der Excel-XLL-Entwicklung](known-issues-in-excel-xll-development.md).
+Wenn Sie das  _Argument pxFunctionText_ für **xlfRegister** angegeben haben, müssen Sie beim Registrieren der Funktionen und Befehle der DLL die Namen explizit löschen, indem Sie **xlfSetName** für jedes Argument aufrufen und das zweite Argument auslassen, sodass die Funktion nicht mehr im Funktions-Assistenten angezeigt wird. Weitere Informationen finden Sie unter [Bekannte Probleme bei der Excel-XLL-Entwicklung](known-issues-in-excel-xll-development.md).
   
 ## <a name="see-also"></a>Siehe auch
 

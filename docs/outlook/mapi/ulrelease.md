@@ -25,13 +25,13 @@ ms.locfileid: "33415845"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bietet eine alternative Möglichkeit zum Aufrufen der OLE-Methode **IUnknown:: Release**. 
+Bietet eine alternative Möglichkeit zum Aufrufen der OLE-Methode **IUnknown::Release**. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 ULONG UlRelease(
@@ -41,9 +41,9 @@ ULONG UlRelease(
 
 ## <a name="parameters"></a>Parameter
 
- _Punk_
+ _punk_
   
-> in Zeiger auf eine von der **IUnknown** -Schnittstelle abgeleitete Schnittstelle, also jede MAPI-Schnittstelle. 
+> [in] Zeiger auf eine Schnittstelle, die von der **IUnknown-Schnittstelle** abgeleitet ist, d. h. auf eine beliebige MAPI-Schnittstelle. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -53,16 +53,16 @@ S_OK
     
 MAPI_E_CALL_FAILED 
   
-> Der Vorgang konnte nicht abgeschlossen werden.
+> Ein Fehler mit unerwartetem oder unbekanntem Ursprung verhinderte den Abschluss des Vorgangs.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Der Verweiszähler ist die Anzahl der vorhandenen Zeiger auf das Objekt, das freigegeben werden soll. 
+Die Referenzanzahl ist die Anzahl vorhandener Zeiger auf das zu freigegebene Objekt. 
   
-Wenn der _Punk_ -Parameter NULL ist, wird die Funktion sofort zurückgegeben, ohne **IUnknown:: Release** zu aufrufen.
+Wenn der  _Parameter "punk"_ NULL ist, gibt die Funktion sofort ohne Aufruf von **IUnknown::Release zurück.**
   
- **UlRelease** gibt den von der **IUnknown:: Release** -Methode zurückgegebenen Wert zurück, der mit dem Verweiszähler für das freizugebende Objekt übereinstimmen kann. 
+ **UlRelease** gibt den von der **IUnknown::Release-Methode** zurückgegebenen Wert zurück, der der Referenzanzahl für das losgelassene Objekt entspricht. 
   
-Weitere Informationen zu **IUnknown:: Release**finden Sie unter [Implementieren der IUnknown-Schnittstelle](implementing-the-iunknown-interface.md). 
+Weitere Informationen zu **IUnknown::Release finden** Sie unter [Implementing the IUnknown Interface](implementing-the-iunknown-interface.md). 
   
 

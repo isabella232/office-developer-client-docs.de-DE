@@ -21,10 +21,10 @@ ms.locfileid: "33420948"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Wenn der einzige Teil von MAPI, den Sie verwenden müssen, die Dienstprogramme ist – die Schnittstellen und Funktionen, die in MAPIs MAPIUTIL deklariert werden. H-Headerdatei wie **IPropData** und **ITableData** – Sie müssen **MAPIInitialize** nicht für die Initialisierung aufrufen. Weitere Informationen finden Sie unter [IPropData: IMAPIProp](ipropdataimapiprop.md), [ITableData: IUnknown](itabledataiunknown.md)und [MAPIInitialize](mapiinitialize.md). Rufen Sie stattdessen die **ScInitMapiUtil** -Funktion auf. Weitere Informationen finden Sie unter [ScInitMapiUtil](scinitmapiutil.md). **ScInitMapiUtil** ermöglicht Clientanwendungen das Verwenden von Hilfsfunktionen und Methoden, die MAPI-Zuweisungen erfordern, die Sie jedoch nicht explizit anfordern. 
+Wenn Der einzige Teil der MAPI, den Sie verwenden müssen, die Dienstprogramme sind – die Schnittstellen und Funktionen, die in MAPI's MAPIUTIL deklariert sind. H-Headerdatei wie **IPropData** und **ITableData** – Sie müssen **MAPIInitialize** nicht für die Initialisierung aufrufen. Weitere Informationen finden Sie unter [IPropData : IMAPIProp](ipropdataimapiprop.md), [ITableData : IUnknown](itabledataiunknown.md)und [MAPIInitialize](mapiinitialize.md). Rufen Sie stattdessen die **ScInitMapiUtil-Funktion** auf. Weitere Informationen finden Sie unter [ScInitMapiUtil](scinitmapiutil.md). **ScInitMapiUtil** ermöglicht Clientanwendungen die Verwendung von Hilfsfunktionen und Methoden, die MAPI-Zuweisungen erfordern, die jedoch nicht explizit nach ihnen gefragt werden. 
   
-Rufen Sie zum Zeitpunkt des Herunterfahrens den **DeinitMapiUtil** auf, um Ressourcen für die Dienstprogramme freizugeben. Rufen Sie **MAPIUninitialize**nicht auf. Weitere Informationen finden Sie unter [DeinitMapiUtil](deinitmapiutil.md) und [MAPIUninitialize](mapiuninitialize.md).
+Rufen Sie zum Zeitpunkt des Herunterfahrens **DeinitMapiUtil** auf, um mit den Dienstprogrammen verbundene Ressourcen frei zu geben. Rufen Sie **MAPIUninitialize nicht auf.** Weitere Informationen finden Sie unter [DeinitMapiUtil](deinitmapiutil.md) und [MAPIUninitialize](mapiuninitialize.md).
   
-Beachten Sie, dass die **ITableData** -Schnittstelle Tabellen Benachrichtigungen für Clients, die **ScInitMapiUtil** aufgerufen haben, nicht **MAPIInitialize**unterstützt. 
+Beachten Sie, dass die **ITableData-Schnittstelle** keine Tabellenbenachrichtigungen für Clients unterstützt, die **ScInitMapiUtil anstelle** von **MAPIInitialize aufgerufen haben.** 
   
 

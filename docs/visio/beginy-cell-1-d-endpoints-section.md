@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm95
 localization_priority: Normal
 ms.assetid: b2518a70-5755-a15a-a238-bac2ae64a75a
-description: Stellt die y-Koordinate des Anfangspunkts des 1D-Shapes im Verhältnis zum Ursprung des übergeordneten Objekts dar.
+description: Stellt die y-Koordinate des Anfangspunkts der 1D-Form im Verhältnis zum Ursprung des übergeordneten Shapes dar.
 ms.openlocfilehash: dbe1cca3a3b969b14b62cb613359d014c7933bd9
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,21 +18,21 @@ ms.locfileid: "33419212"
 ---
 # <a name="beginy-cell-1-d-endpoints-section"></a>Zelle "BeginY" (Abschnitt "1-D Endpoints")
 
-Stellt die *y* -Koordinate des anfangspunktS des 1D-Shapes im Verhältnis zum Ursprung des übergeordneten Objekts dar. 
+Stellt  die y-Koordinate des Anfangspunkts der 1D-Form im Verhältnis zum Ursprung des übergeordneten Shapes dar. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle BeginY aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle BeginY anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | BeginY  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle BeginY aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle BeginY nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowXForm1D** <br/> |
 | Zeilenindex:  <br/> |**vis1DBeginY** <br/> |
    

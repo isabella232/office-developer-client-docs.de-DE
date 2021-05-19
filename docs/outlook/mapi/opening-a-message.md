@@ -21,15 +21,15 @@ ms.locfileid: "33411092"
   
 ### <a name="to-open-a-message"></a>So öffnen Sie eine Nachricht
   
-1. Rufen Sie die Eintrags-ID der Nachricht aus einer der folgenden Quellen ab:
+1. Rufen Sie den Eintragsbezeichner der Nachricht aus einer der folgenden Quellen ab:
     
-   - Die Zeile, die die Nachricht in der Inhaltstabelle des übergeordneten Ordners darstellt. Weitere Informationen zum Arbeiten mit einer Ordnerinhaltstabelle finden Sie unter [Inhaltstabellen](contents-tables.md).
+   - Die Zeile, die die Nachricht im Inhaltsverzeichnis des übergeordneten Ordners darstellt. Weitere Informationen zum Arbeiten mit einer Ordnerinhaltstabelle finden Sie unter [Contents Tables](contents-tables.md).
     
-   - Das **lpEntryID** -Element der [NEWMAIL_NOTIFICATION](newmail_notification.md) -Struktur, die mit einer neuen e-Mail-Benachrichtigung gesendet wird. Weitere Informationen zum empfangen und Verarbeiten von Benachrichtigungen finden Sie unter [Handling Notifications](handling-notifications.md).
+   - Das **lpEntryID-Element** der [NEWMAIL_NOTIFICATION,](newmail_notification.md) die mit einer neuen E-Mail-Benachrichtigung gesendet wird. Weitere Informationen zum Empfangen und Behandeln von Benachrichtigungen finden Sie unter [Handling Notifications](handling-notifications.md).
     
-   - Ein Aufruf der [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode der Nachricht, die die **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))-Eigenschaft anfordert. 
+   - Ein Aufruf der [IMAPIProp::GetProps-Methode](imapiprop-getprops.md) der **Nachricht,** die die PR_ENTRYID ([PidTagEntryId](pidtagentryid-canonical-property.md)) anfordert. 
     
-2. Rufen Sie eine der folgenden **OpenEntry** -Methoden auf, um die Nachricht zu öffnen, und legen Sie _lpEntryID_ auf die Eintrags-ID der Nachricht fest: 
+2. Rufen Sie eine der folgenden **OpenEntry-Methoden** auf, um die Nachricht zu öffnen, und setzen  _Sie lpEntryID_ auf den Eintragsbezeichner der Nachricht: 
     
    - [IMAPIContainer::OpenEntry](imapicontainer-openentry.md)
     
@@ -37,14 +37,14 @@ ms.locfileid: "33411092"
     
    - [IMAPISession::OpenEntry](imapisession-openentry.md)
     
-  Die schnellste Methode ist nur für eingehende Nachrichten nutzbar und umfasst das Aufrufen der **IMAPIFolder:: OpenEntry** -Methode des Empfänger Ordners. Die nächste schnellste Methode, die **IMsgStore:: OpenEntry** -Methode des Nachrichtenspeichers aufzurufen, ist für alle Nachrichten verwendbar, ebenso wie die langsamste Methode, indem **IMAPISession:: OpenEntry**aufgerufen wird.
+  Die schnellste Methode kann nur für eingehende Nachrichten verwendet werden und umfasst das Aufrufen der **IMAPIFolder::OpenEntry-Methode des Empfangsordners.** Die nächste schnellste Methode, das Aufrufen der **IMsgStore::OpenEntry-Methode** des Nachrichtenspeichers, ist für alle Nachrichten ebenso verwendbar wie die langsamste Methode, die **IMAPISession::OpenEntry aufruft.**
     
 > [!NOTE]
-> Ordner und deren Inhaltstabellen können jederzeit geschlossen werden, ohne dass sich dies nachteilig auf die Nachrichten auswirkt, die in diesen geöffnet wurden. 
+> Ordner und deren Inhaltstabellen können jederzeit geschlossen werden, ohne dass sich dies negativ auf die Nachrichten aus ihnen aus wirkt. 
   
 ### <a name="to-open-a-message-that-has-been-saved-on-disk"></a>So öffnen Sie eine Nachricht, die auf dem Datenträger gespeichert wurde
   
-1. Rufen Sie **StgOpenStorage** auf, um einen **IStorage** -Schnittstellenzeiger abzurufen, und übergeben Sie den Namen der Nachrichtendatei für den _pwcsName_ -Parameter. 
+1. Rufen **Sie StgOpenStorage auf,** um einen **IStorage-Schnittstellenzeiger** abzurufen, und übergeben Sie den Namen der Nachrichtendatei für den _pwcsName-Parameter._ 
     
    ```cpp
     LPSTORAGE pStorage = NULL;
@@ -56,7 +56,7 @@ ms.locfileid: "33411092"
     
    ```
 
-2. Aufrufen von **OpenIMsgOnIStg** zum Abrufen eines **IMessage** -Schnittstellenzeigers für den Zugriff auf die Nachricht. 
+2. Rufen **Sie OpenIMsgOnIStg auf,** um einen **IMessage-Schnittstellenzeiger** für den Zugriff auf die Nachricht abzurufen. 
     
    ```cpp
     LPMESSAGE pMessage = NULL;

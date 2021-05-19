@@ -1,5 +1,5 @@
 ---
-title: Hierarchie Status hochladen
+title: Hochladen Hierarchiestatus
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -13,31 +13,31 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33415425"
 ---
-# <a name="upload-hierarchy-state"></a>Hierarchie Status hochladen
+# <a name="upload-hierarchy-state"></a>Hochladen Hierarchiestatus
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
- In diesem Thema wird beschrieben, was während des Upload-Hierarchie Status des Replikationsstatus Computers passiert. 
+ In diesem Thema wird beschrieben, was während des Uploadhierarchiestatus des Replikationsstatuscomputers geschieht. 
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
-|Status-ID:  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |
-|Zugehörige Datenstruktur:  <br/> |**[UPHIER](uphier.md)** <br/> |
-|Aus folgendem Zustand:  <br/> |[Zustand „Synchronisieren“](synchronize-state.md) <br/> |
-|Zu folgendem Status:  <br/> |[Ordner Status hochladen](upload-folder-state.md)oder Status Synchronisieren  <br/> |
+|Statusbezeichner:  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |
+|Verwandte Datenstruktur:  <br/> |**[UPHIER](uphier.md)** <br/> |
+|In diesem Zustand:  <br/> |[Zustand „Synchronisieren“](synchronize-state.md) <br/> |
+|In diesem Zustand:  <br/> |[Hochladen Ordnerstatus](upload-folder-state.md)oder Synchronisierungsstatus  <br/> |
    
 > [!NOTE]
-> Der Replikationsstatus Computer ist ein deterministischer Statuscomputer. Ein Client, der einen Status zu einem anderen abgibt, muss schließlich aus letzterem zurückkehren. 
+> Der Replikationsstatuscomputer ist ein deterministischer Zustandsautomat. Ein Client, der einen Zustand in einen anderen verlässt, muss schließlich zu dem ersten von letzterem zurückkehren. 
   
 ## <a name="description"></a>Beschreibung
 
-Dieser Status initiiert das Hochladen einer Ordnerstruktur Hierarchie, die in einem vorhergehenden Synchronisierungsstatus angegeben wurde. Outlook bestimmt die Anzahl der Ordner, die in dieser Hierarchie erstellt oder geändert wurden, und initialisiert *cEnt* in uphere. **** In Outlook wird auch die Anzahl der hochgeladenen Ordner mit einem anderen Mitglieds *iEnt* . Um jeden *cEnt* -Ordner hochzuladen, verschiebt der Client den lokalen Speicher in den Upload-Ordner Status und kehrt zum Upload-Hierarchie Status zurück, wenn der Ordner Upload abgeschlossen ist. 
+Dieser Zustand initiiert das Hochladen einer Ordnerstrukturhierarchie, die in einem vorherigen Synchronisierungsstatus angegeben wurde. Outlook bestimmt die Anzahl der Ordner, die in dieser Hierarchie erstellt oder geändert wurden, und initialisiert *cEnt* in **UPHIER**. Outlook behält auch die Anzahl der hochgeladenen Ordner mit einem anderen Mitglied *iEnt bei.* Um jeden der  *cEnt-Ordner*  hochzuladen, verschiebt der Client den lokalen Speicher in den Uploadordnerstatus und kehrt zum Status der Uploadhierarchie zurück, wenn der Ordnerupload abgeschlossen ist. 
   
-Wenn der Upload-Hierarchie Status endet, wird der lokale Speicher zum Synchronize-Status zurückgegeben.
+Wenn der Uploadhierarchiestatus endet, kehrt der lokale Speicher in den Synchronisierungsstatus zurück.
   
 ## <a name="see-also"></a>Siehe auch
 

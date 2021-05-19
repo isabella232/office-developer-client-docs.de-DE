@@ -25,13 +25,13 @@ ms.locfileid: "33411008"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Kopiert die durch ein Array von [SPropValue](spropvalue.md) -Strukturen definierten Eigenschaften in ein neues Ziel. 
+Kopiert die durch ein Array von [SPropValue-Strukturen definierten Eigenschaften](spropvalue.md) in ein neues Ziel. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 SCODE ScCopyProps(
@@ -46,19 +46,19 @@ SCODE ScCopyProps(
 
  _cprop_
   
-> in Die Anzahl der zu kopierenden Eigenschaften. 
+> [in] Anzahl der zu kopierenden Eigenschaften. 
     
  _rgprop_
   
-> in Zeiger auf ein Array von [SPropValue](spropvalue.md) -Strukturen, die die zu kopierenden Eigenschaften definieren. Der _rgprop_ -Parameter muss nicht auf den Anfang des Arrays zeigen, sondern auf den Anfang einer der **SPropValue** -Strukturen im Array. 
+> [in] Zeiger auf ein Array von [SPropValue-Strukturen,](spropvalue.md) die die zu kopierenden Eigenschaften definieren. Der  _rgprop-Parameter_ muss nicht auf den Anfang des Arrays verweisen, sondern auf den Anfang einer **der SPropValue-Strukturen** im Array. 
     
  _pvDst_
   
-> in Zeiger auf die Anfangsposition im Speicher, auf die diese Funktion die Eigenschaften kopiert. 
+> [in] Zeiger auf die Ausgangsposition im Arbeitsspeicher, in die diese Funktion die Eigenschaften kopiert. 
     
- _PCB_
+ _leiterplatte_
   
-> Out Optionaler Zeiger auf die Größe des Speicherblocks, auf den durch den _pvDst_ -Parameter verwiesen wird. 
+> [out] Optionaler Zeiger auf die Größe des Speicherblocks in Bytes, auf den der  _pvDst-Parameter_ verweist. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -68,15 +68,15 @@ S_OK
     
 MAPI_E_INVALID_PARAMETER
   
-> Ein unbekannter Eigenschafts wurde gefunden.
+> Es wurde ein unbekannter Eigenschaftstyp gefunden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Das neue Array und seine Daten befinden sich in einem Puffer, der mit einer einzelnen Zuordnung erstellt wurde, und die [ScRelocProps](screlocprops.md) -Funktion kann verwendet werden, um die Zeiger in den einzelnen [SPropValue](spropvalue.md) -Strukturen anzupassen. Vor dieser Einstellung sind die Zeiger gültig. 
+Das neue Array und seine Daten befinden sich in einem Puffer, der mit einer einzigen Zuordnung erstellt wurde, und die [ScRelocProps-Funktion](screlocprops.md) kann verwendet werden, um die Zeiger in den einzelnen [SPropValue-Strukturen anzupassen.](spropvalue.md) Vor dieser Anpassung sind die Zeiger gültig. 
   
- **ScCopyProps** behält die ursprüngliche Reihenfolge der Eigenschaften für das kopierte Eigenschaftenarray bei. 
+ **ScCopyProps** behält die ursprüngliche Eigenschaftsreihenfolge für das kopierte Eigenschaftenarray bei. 
   
-Der _PCB_ -Parameter ist optional; Wenn Sie nicht NULL ist, wird Sie auf die Anzahl von Bytes festgelegt, die im Parameter _pvDst_ gespeichert sind. 
+Der  _#A0_ ist optional. Wenn er nicht NULL ist, wird er auf die Anzahl der Bytes festgelegt, die im  _pvDst-Parameter gespeichert_ sind. 
   
 ## <a name="see-also"></a>Siehe auch
 

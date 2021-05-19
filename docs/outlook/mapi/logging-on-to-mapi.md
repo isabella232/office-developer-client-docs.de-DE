@@ -19,54 +19,54 @@ ms.locfileid: "33419709"
  
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Client Anwendungen melden sich beim MAPI-Subsystem an, indem Sie die **MAPILogonEx** -Funktion aufrufen. Weitere Informationen finden Sie unter [MAPILogonEx](mapilogonex.md). **MAPILogonEx** überprüft die Profilauswahl und die Konfiguration der einzelnen Dienstanbieter im Profil. Nach der Konfiguration startet MAPI die Adressbuchanbieter, bevor der Nachrichtenspeicher Anbieter gestartet wird. Transport Anbieter werden gestartet, wenn ihre Dienste zuerst erforderlich sind. 
+Clientanwendungen melden sich beim MAPI-Subsystem an, indem sie die **MAPILogonEx-Funktion** aufrufen. Weitere Informationen finden Sie unter [MAPILogonEx](mapilogonex.md). **MAPILogonEx** überprüft die Profilauswahl und die Konfiguration der einzelnen Dienstanbieter im Profil. Nach der Konfiguration startet MAPI die Adressbuchanbieter, bevor die Nachrichtenspeicheranbieter gestartet werden. Transportanbieter werden gestartet, wenn ihre Dienste zum ersten Mal benötigt werden. 
   
-## <a name="choose-a-profile"></a>Profil auswählen
+## <a name="choose-a-profile"></a>Auswählen eines Profils
   
-- Übergeben Sie eine Zeichenfolge, die den Namen des Profils im _lpszProfileName_ -Parameter darstellt **MAPILogonEx**, oder...
+- Übergeben Sie eine Zeichenzeichenfolge, die den Namen des Profils im  _lpszProfileName-Parameter_ an **MAPILogonEx** darstellt, oder...
     
-- Geben Sie dem Benutzer die Möglichkeit, das Profil anzugeben, indem Sie im _lpszProfileName_ -Parameter den Wert NULL übergeben und das MAPI_LOGON_UI-Flag festlegen. 
+- Zulassen, dass der Benutzer das Profil durch Übergeben von NULL im  _lpszProfileName-Parameter_ und Festlegen des MAPI_LOGON_UI oder... 
 
-- Wählen Sie das Standardprofil aus, indem Sie im _lpszProfileName_ -Parameter den Wert NULL übergeben und das MAPI_USE_DEFAULT-Flag festlegen. 
+- Wählen Sie das Standardprofil aus, indem Sie NULL im  _lpszProfileName-Parameter_ übergeben und MAPI_USE_DEFAULT festlegen. 
     
-Wenn Sie ein anderes Profil als das Standardprofil benötigen, müssen Sie den Namen in ihrer eigenen Konfigurationsdatenbank speichern oder eine bestimmte Benennungskonvention verwenden. MAPI stellt keine anderen Profilattribute als den Namen und das Standardkennzeichen in der Profiltabelle zur Verfügung, und das standardmäßige Profil Kennzeichen ist für den Messaging Client und die zugehörigen IPM-Anwendungen reserviert.
+Wenn Sie ein anderes profil als das Standardprofil benötigen, müssen Sie den Namen in Ihrer eigenen Konfigurationsdatenbank speichern oder eine bestimmte Benennungskonvention verwenden. MAPI macht keine anderen Profilattribute als den Namen und das Standardflag in der Profiltabelle verfügbar, und das Standardprofilflag ist für Messagingclients und verwandte IPM-Anwendungen reserviert.
   
-Clients, die Teilprofil-oder Anbieter Konfigurationsinformationen für **MAPILogonEx** bereitstellen, müssen den Benutzer für die zusätzlichen Daten auffordern, indem ein Dialogfeld angezeigt wird. Wenn Informationen fehlen und **MAPILogonEx** den Benutzer nicht zur Verfügung stellen kann, schlägt die Anmeldung fehl. Clients, die keine Benutzereingabe benötigen, können die Anzeige des Dialogfelds unterdrücken. 
+Clients, die **MAPILogonEx** Teilprofil- oder Anbieterkonfigurationsinformationen zur Verfügung stellen, müssen den Benutzer zur Eingabe zusätzlicher Daten aufgefordert, indem sie die Anzeige eines Dialogfelds zulassen. Wenn Informationen fehlen und **MAPILogonEx** den Benutzer nicht zur Eingabe anforderen kann, schlägt die Anmeldung fehl. Clients, die keine Benutzereingabe benötigen, können die Anzeige des Dialogfelds unterdrücken. 
   
-Die Flags, die **MAPILogonEx** verwendet, um eine Benutzeroberfläche zu aktivieren, schließen sich gegenseitig aus; Es kann nur eine festgelegt werden. Wenn Sie diese Flags verlassen, wird die Anzeige einer Benutzeroberfläche unterdrückt, sodass **MAPILogonEx** fehlschlägt, wenn erforderliche Informationen fehlen. Das heißt, wenn Sie die Benutzeroberfläche deaktivieren und NULL für den _lpszProfileName_ -Parameter übergeben und das MAPI_USE_DEFAULT-Flag nicht festlegen, schlägt **MAPILogonEx** fehl, da ein Profilname nicht abgerufen werden kann. 
+Die Flags, die **MAPILogonEx** zum Aktivieren einer Benutzeroberfläche verwendet, schließen sich gegenseitig aus. es kann nur eins festgelegt werden. Wenn diese Flags nicht markiert werden, wird die Anzeige einer Benutzeroberfläche unterdrückt, sodass **MAPILogonEx** fehlschlagen kann, wenn erforderliche Informationen fehlen. Wenn Sie also die Benutzeroberfläche deaktivieren und NULL für den  _lpszProfileName-Parameter_ übergeben und das MAPI_USE_DEFAULT-Flag nicht festlegen, kann **MAPILogonEx** keinen Profilnamen abrufen. 
   
-Bei der **MAPILogonEx** -Sitzung kann es sich um eine einzelne Messaging Sitzung, eine freigegebene Messaging Sitzung oder eine nonmessaging-Sitzung handeln. Einzelne Messagingsitzungen sind private Verbindungen zwischen dem Client und dem MAPI-Subsystem und können durch Festlegen des MAPI_NEW_SESSION-Kennzeichens im Aufruf an **MAPILogonEx**festgelegt werden.
+Die von **MAPILogonEx** einrichtende Sitzung kann eine einzelne Messagingsitzung, eine freigegebene Messagingsitzung oder eine Nichtmessagingsitzung sein. Einzelne Messagingsitzungen sind private Verbindungen zwischen Ihrem Client und dem MAPI-Subsystem und können durch Festlegen des MAPI_NEW_SESSION im Aufruf von **MAPILogonEx eingerichtet werden.**
   
-FreigeGebene Messagingsitzungen sind Verbindungen, die von mehreren Messagingclients verwendet werden können. FreigeGebene Sitzungen werden in der Regel für Clients eingerichtet, die das gleiche Profil verwenden. Legen Sie das MAPI_ALLOW_OTHERS-Flag fest, um eine neue Sitzung als freigegebene Sitzung einzurichten. 
+Freigegebene Messagingsitzungen sind Verbindungen, die von mehreren Messagingclients verwendet werden können. Freigegebene Sitzungen werden in der Regel für Clients eingerichtet, die dasselbe Profil verwenden. Um eine neue Sitzung als freigegebene Sitzung zu erstellen, legen Sie das MAPI_ALLOW_OTHERS fest. 
   
 ## <a name="use-an-existing-shared-session"></a>Verwenden einer vorhandenen freigegebenen Sitzung
   
-- Legen Sie das MAPI_NEW_SESSION-Flag nicht fest.
+- Legen Sie das Flag MAPI_NEW_SESSION.
     
-- Legen Sie das MAPI_ALLOW_OTHERS-Flag nicht fest.
+- Legen Sie das Flag MAPI_ALLOW_OTHERS.
     
-- Übergeben Sie NULL für den _lpszProfileName_ -Parameter. 
+- Übergeben Sie NULL für den _lpszProfileName-Parameter._ 
     
-- Übergeben Sie NULL für den _lpszPassword_ -Parameter. 
+- Übergeben Sie NULL für den _lpszPassword-Parameter._ 
     
-Nonmessaging-Sitzungen ermöglichen Clients den Zugriff auf das MAPI-Subsystem, lassen jedoch keine Nachrichten senden oder empfangen. Konfigurations-oder Verwaltungsanwendungen sind Beispiele für Clients, die möglicherweise nonmessaging-Sitzungen erstellen müssen. Legen Sie das MAPI_NO_MAIL-Flag fest, um eine nonmessaging-Sitzung anzufordern. Durch Festlegen dieses Kennzeichens wird der Client protokolliert, ohne dass der MAPI-Spooler informiert wird. Clients, die sich mit diesem Flag bei MAPI anmelden, können nicht erwarten, dass Sie jemals Lesestatus Berichte erhalten.
+Nichtmessing-Sitzungen ermöglichen Clients den Zugriff auf das MAPI-Subsystem, aber nicht das Senden oder Empfangen von Nachrichten. Konfigurations- oder Verwaltungsanwendungen sind Beispiele für Clients, die möglicherweise Nichtmessagingsitzungen einrichten müssen. Legen Sie zum Anfordern einer Nichtmessaging-Sitzung das MAPI_NO_MAIL ein. Durch Festlegen dieses Kennzeichens wird der Client protokolliert, ohne den MAPI-Spooler zu informieren. Clients, die sich bei MAPI mit diesem Flag anmelden, können nicht erwarten, dass sie jemals Lesestatusberichte erhalten.
   
-Das MAPI_NO_MAIL-Flag sollte nur festgelegt werden:
+Das MAPI_NO_MAIL flag sollte nur festgelegt werden:
   
-- Wenn Ihr Client während der Sitzung keine Nachrichten senden oder empfangen wird.
+- Wenn Ihr Client während der Sitzung keine Nachrichten sendet oder erhält.
     
-- Wenn Ihr Client die vollständige Kontrolle über die Inhalte des Profils hat und Nachrichten mit eng gekoppelten Nachrichtenspeicher-und Transportanbietern, beispielsweise den Microsoft Exchange-Anbietern, gesendet und empfangen werden.
+- Wenn Ihr Client die vollständige Kontrolle über den Inhalt des Profils hat und Nachrichten mit eng gekoppelten Nachrichtenspeicher- und Transportanbietern, wie z. B. microsoft Exchange empfangen werden.
     
-Ein Messaging Client kann eine Sitzung mit einem nicht-Messaging-Client gemeinsam nutzen. Die Merkmale eines Members einer freigegebenen Sitzung sind von den Merkmalen anderer Mitglieder nicht betroffen. Wenn Sie sich also mit der MAPI_NO_MAIL-und der MAPI_ALLOW_OTHERS-Flags-Gruppe anmelden, hat ein Messaging-Client, der sich an ihrer Sitzung anmeldet, keine Auswirkung auf den Betrieb Ihres Clients und umgekehrt. Der Messaging Client ist weiterhin in der Lage, Nachrichten zu senden und zu empfangen, und der Client nicht.
+Ein Messagingclient kann eine Sitzung für einen nichtmessing-Client freigeben. Die Merkmale eines Mitglieds einer freigegebenen Sitzung werden nicht von den Merkmalen anderer Mitglieder beeinflusst. Das heißt, wenn Sie sich mit den festgelegten MAPI_NO_MAIL- und MAPI_ALLOW_OTHERS-Flags anmelden, hat die Anmeldung eines Messagingclients bei Ihrer Sitzung keine Auswirkungen auf den Clientbetrieb und umgekehrt. Der Messagingclient kann weiterhin Nachrichten senden und empfangen, der Client nicht.
   
-**MAPILogonEx** definiert einige andere Flags, die Sie festlegen können: 
+**MAPILogonEx** definiert einige weitere Flags, die Sie festlegen können: 
   
-- MAPI_FORCE_DOWNLOAD gibt an, dass eingehende Nachrichten heruntergeladen werden sollen, bevor **MAPILogonEx** zurückgegeben wird. Wenn Sie dieses Flag nicht festlegen, werden Nachrichten zu einem späteren Zeitpunkt im Hintergrund heruntergeladen. 
+- MAPI_FORCE_DOWNLOAD gibt an, dass eingehende Nachrichten heruntergeladen werden sollen, bevor **MAPILogonEx zurückgegeben** wird. Wenn Sie dieses Kennzeichen nicht festlegen, werden Nachrichten zu einem späteren Zeitpunkt im Hintergrund heruntergeladen. 
     
-- MAPI_SERVICE_UI_ALWAYS fordert, dass jeder Nachrichtendienst im Profil ein Konfigurationsdialogfeld anzeigt.
+- MAPI_SERVICE_UI_ALWAYS, dass für jeden Nachrichtendienst im Profil ein Konfigurationsdialogfeld angezeigt wird.
     
-- MAPI_NT_SERVICE gibt an, dass Ihr Client als Windows-Dienst implementiert ist. Dieses Flag muss festgelegt werden, wenn Ihr Client ein Dienst ist.
+- MAPI_NT_SERVICE gibt an, dass Ihr Client als Dienst Windows ist. Dieses Flag muss festgelegt werden, wenn Ihr Client ein Dienst ist.
     
-Bei jeder erfolgreichen Anmeldung gibt **MAPILogonEx** einen Zeiger auf eine MAPI-Sitzung zurück. Sie können diesen Zeiger verwenden, um die Methoden der **IMAPISession** -Schnittstelle aufzurufen. Weitere Informationen finden Sie unter [IMAPISession: IUnknown](imapisessioniunknown.md). Sitzungs Zeiger, unabhängig vom Sitzungstyp, sind für die Clients eindeutig, die Sie empfangen und für alle Aufgaben nicht gültig sind.
+Bei jeder erfolgreichen Anmeldung gibt **MAPILogonEx einen** Zeiger auf eine MAPI-Sitzung zurück. Mit diesem Zeiger können Sie die Methoden der **IMAPISession-Schnittstelle** aufrufen. Weitere Informationen finden Sie unter [IMAPISession : IUnknown](imapisessioniunknown.md). Sitzungszeiger sind unabhängig vom Sitzungstyp für die Clients, die sie empfangen, eindeutig und sind aufgabenübergreifend ungültig.
   
 

@@ -23,9 +23,9 @@ ms.locfileid: "33420584"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-In den Themen in diesem Abschnitt werden die Makros beschrieben, die sich auf MAPI-Strukturen beziehen. Ausführlichere Informationen finden Sie auch unter Querverweise zu anderen Publikationen oder zu anderen Themen in dieser Dokumentation. 
+In den Themen in diesem Abschnitt werden die Makros im Zusammenhang mit MAPI-Strukturen beschrieben. Ausführlichere Informationen finden Sie auch bei Querverweisen auf andere Veröffentlichungen oder andere Themen in dieser Dokumentation. 
   
-In der folgenden Tabelle sind Makros aufgeführt, die sich auf MAPI-Strukturen beziehen:
+In der folgenden Tabelle sind Makros aufgeführt, die mit MAPI-Strukturen in Zusammenhang stehen:
   
 |||
 |:-----|:-----|

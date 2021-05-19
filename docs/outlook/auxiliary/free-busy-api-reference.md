@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 6ec65a5a-23ad-4e50-a27f-648902ebb5a0
-description: Dieser Abschnitt enthält Referenzinhalte für die Frei/Gebucht-API, die es e-Mail-Anbietern ermöglicht, frei/gebucht-Statusinformationen für bestimmte Benutzerkonten innerhalb eines angegebenen Zeitraums bereitzustellen.
+description: Dieser Abschnitt enthält Referenzinhalte für die Frei/Gebucht-API, mit der E-Mail-Anbieter Frei/Gebucht-Statusinformationen für bestimmte Benutzerkonten innerhalb eines angegebenen Zeitbereichs bereitstellen können.
 ms.openlocfilehash: e69d97fb86cffc1830ae46aa917f5a8e35cabafb
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.locfileid: "33410735"
 ---
 # <a name="freebusy-api-reference"></a>Frei/Gebucht-API-Referenz
 
-Dieser Abschnitt enthält Referenzinhalte für die Frei/Gebucht-API, die es e-Mail-Anbietern ermöglicht, frei/gebucht-Statusinformationen für bestimmte Benutzerkonten innerhalb eines angegebenen Zeitraums bereitzustellen.
+Dieser Abschnitt enthält Referenzinhalte für die Frei/Gebucht-API, mit der E-Mail-Anbieter Frei/Gebucht-Statusinformationen für bestimmte Benutzerkonten innerhalb eines angegebenen Zeitbereichs bereitstellen können.
 
 - [Constants](constants-free-busy-api.md)
     

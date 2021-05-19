@@ -24,23 +24,23 @@ Definiert die Transparenzstufe der Linienfarbe eines Shapes.
 |:-----|:-----|
 |0 - 100  <br/> |Stellt die Transparenz in Prozent dar. Der Standardwert ist 0% (vollständig undurchsichtig).  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Werte werden auf ein halbes Prozent gerundet. Ein Wert von 100% bezeichnet völlige Transparenz. Ein Shape, dem eine völlig transparente Linienfarbe zugewiesen wurde, verhält sich auf dem Zeichenblatt zwar genauso wie ein Shape ohne Linien, die Interaktion mit anderen Objekten auf dem Zeichenblatt verläuft aber genauso wie bei Festlegen der Transparenz auf 0%. 
   
 Sie können diesen Wert auch festlegen, indem Sie das Schieberegler-Steuerelement im Dialogfeld **Linie** verwenden (klicken Sie dazu auf der Registerkarte **Start** in der Gruppe **Shape** auf **Linie**, zeigen Sie auf **Linienbreite**, und klicken Sie dann auf **Weitere Linien**).
   
-Wenn Sie einen Verweis auf die Zelle Zelle linecolortrans aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle LineColorTrans anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Zelle linecolortrans  <br/> |
+|Zellenname:  <br/> |LineColorTrans  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle linecolortrans aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die LineColorTrans-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowLine** <br/> |
 |Zellenindex:  <br/> |**visLineColorTrans** <br/> |
    

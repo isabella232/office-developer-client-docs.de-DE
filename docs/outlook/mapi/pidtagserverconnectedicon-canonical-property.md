@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagserverconnectedicon (-Eigenschaft
+title: PidTagServerConnectedIcon (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33410462"
 ---
-# <a name="pidtagserverconnectedicon-canonical-property"></a>Kanonische Pidtagserverconnectedicon (-Eigenschaft
+# <a name="pidtagserverconnectedicon-canonical-property"></a>PidTagServerConnectedIcon (kanonische Eigenschaft)
 
   
   
@@ -36,9 +36,9 @@ Gibt das Symbol an, das in der Statusleiste angezeigt wird.
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

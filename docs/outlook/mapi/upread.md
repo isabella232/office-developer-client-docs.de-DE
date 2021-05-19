@@ -21,7 +21,7 @@ ms.locfileid: "33419884"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Informationen zum Hochladen des Lesestatus von Elementen während des [Uploadstatus](upload-read-status-state.md).
+Informationen zum Hochladen des Lesestatus von Elementen während des [Status des Upload-Lesestatus](upload-read-status-state.md).
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -37,11 +37,11 @@ struct UPREAD
 
  _pupre_
   
->  Out Vektor der **[](upreade.md)** upreade-Einträge. 
+>  [out] Vektor von **[UPREADE-Einträgen.](upreade.md)** 
     
- _Prozent_
+ _cEnt_
   
->  Out Anzahl der **** upreade-Einträge. 
+>  [out] Anzahl **der UPREADE-Einträge.** 
     
 ## <a name="see-also"></a>Siehe auch
 

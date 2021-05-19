@@ -38,21 +38,21 @@ HRESULT GetPAB(
 
  _lpcbEntryID_
   
-> Out Ein Zeiger auf die Bytezahl in der Eintrags-ID, auf die durch den _lppEntryID_ -Parameter verwiesen wird. 
+> [out] Ein Zeiger auf die Byteanzahl in der Eintrags-ID, auf die der  _lppEntryID-Parameter_ verweist. 
     
  _lppEntryID_
   
-> Out Ein Zeiger auf einen Zeiger auf die Eintrags-ID des PAB. Der Parameter _lppEntryID_ enthält 0 (null), wenn kein Container als PAB festgelegt wurde. 
+> [out] Ein Zeiger auf einen Zeiger auf den Eintragsbezeichner des PAB. Der  _lppEntryID-Parameter_ enthält Null, wenn kein Container als PAB festgelegt wurde. 
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Eintrags-ID des PAB wurde erfolgreich zurückgegeben.
+> Der Eintragsbezeichner des PAB wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Clients rufen die **GetPAB** -Methode auf, um den Eintragsbezeichner des Containers abzurufen, der als PAB festgelegt ist. Wenn kein PAB im Profil eingerichtet wurde, wählt MAPI als PAB den ersten Container in der Adressbuchhierarchie aus, der Änderungen ermöglicht. 
+Clients rufen die **GetPAB-Methode** auf, um die Eintrags-ID des Containers abzurufen, der als PAB festgelegt ist. Wenn kein PAB im Profil eingerichtet wurde, wählt MAPI als PAB den ersten Container in der Adressbuchhierarchie aus, der Änderungen zulässt. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -60,7 +60,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MainDlg. cpp  <br/> |CMainDlg:: OnOpenPAB  <br/> |MFCMAPI verwendet die **GetPAB** -Methode, um die ID des persönlichen Adressbuchs des Benutzers abzurufen.  <br/> |
+|MainDlg.cpp  <br/> |CMainDlg::OnOpenPAB  <br/> |MFCMAPI verwendet die **GetPAB-Methode,** um die ID für das persönliche Adressbuch des Benutzers zu erhalten.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -70,7 +70,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[Kanonische Pidtagcontainerflags (-Eigenschaft](pidtagcontainerflags-canonical-property.md)
+[PidTagContainerFlags (kanonische Eigenschaft)](pidtagcontainerflags-canonical-property.md)
   
 [IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 

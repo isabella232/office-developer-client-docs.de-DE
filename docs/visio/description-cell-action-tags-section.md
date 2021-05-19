@@ -20,20 +20,20 @@ ms.locfileid: "33415761"
 
 Enthält eine Zeichenfolge als Beschreibung des Aktionstags, die als QuickInfo angezeigt wird, wenn der Zeiger über dem Tag platziert wird.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle Description aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle Description anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Smarttags.  *Name* . Beschreibung, in der SmartTags. *Name* ist der Name der Zeile mit dem Aktionstag.  <br/> |
+| Zellenname:  <br/> | SmartTags.  *Name*  . Beschreibung, wo SmartTags. *Name*  ist der Name der Aktionstagzeile  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Description aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle Description nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionSmartTag** <br/> |
-| Zeilenindex:  <br/> |**visRowSmartTag** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowSmartTag**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
 | Zellenindex:  <br/> |**visSmartTagDescription** <br/> |
    
 

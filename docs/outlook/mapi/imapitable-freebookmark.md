@@ -25,7 +25,7 @@ ms.locfileid: "33409454"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt den mit einer Textmarke verknüpften Arbeitsspeicher frei.
+Gibt den Speicher frei, der einer Textmarke zugeordnet ist.
   
 ```cpp
 HRESULT FreeBookmark(
@@ -37,25 +37,25 @@ BOOKMARK bkPosition
 
  _bkPosition_
   
-> in Die Textmarke, die freigegeben werden soll, wird durch Aufrufen der [IMAPITable:: CreateBookMark](imapitable-createbookmark.md) -Methode erstellt. 
+> [in] Das zu entfernende Lesezeichen, das durch Aufrufen der [IMAPITable::CreateBookmark-Methode erstellt](imapitable-createbookmark.md) wird. 
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Textmarke wurde erfolgreich freigegeben.
+> Die Textmarke wurde erfolgreich frei.
     
 MAPI_E_INVALID_BOOKMARK 
   
 > Die angegebene Textmarke ist nicht vorhanden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPITable:: FreeBookmark** -Methode gibt eine nicht mehr benötigte Textmarke frei. Die Textmarke ist nach diesem Aufruf nicht mehr gültig. Wenn eine Tabelle aus dem Arbeitsspeicher veröffentlicht wird, werden auch alle zugehörigen Lesezeichen freigegeben. 
+Die **IMAPITable::FreeBookmark-Methode** gibt ein Lesezeichen frei, das nicht mehr benötigt wird. Das Lesezeichen ist nach diesem Aufruf nicht mehr gültig. Wenn eine Tabelle aus dem Arbeitsspeicher freigegeben wird, werden auch alle zugehörigen Lesezeichen freigegeben. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Wenn der Aufrufer eine der drei vordefinierten Lesezeichen im _bkPosition_ -Parameter übergibt, ignorieren Sie die Anforderung, und geben Sie S_OK zurück. 
+Wenn der Aufrufer eine der drei vordefinierten Lesezeichen im  _bkPosition-Parameter_ übergibt, ignorieren Sie die Anforderung, und geben Sie S_OK. 
   
 ## <a name="see-also"></a>Siehe auch
 

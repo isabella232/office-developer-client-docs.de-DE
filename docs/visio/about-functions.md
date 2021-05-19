@@ -20,7 +20,7 @@ ms.locfileid: "33415978"
 
 Eine Funktion führt eine einzelne wohldefinierte Aufgabe aus. Die meisten Funktionen akzeptieren eine bestimmte Anzahl von Argumenten als Eingabe. Obwohl der Typ und die Anzahl von Argumenten von der Funktion abhängen, verwenden sämtliche Funktionen dieselbe allgemeine Syntax:
   
- **Function (** _Argument1_, _Argument2_,...  _Argumenten_ [Argumenta_Argument_ **])** __ |  
+ **FUNCTION(** _argument1_,  _argument2_, ...  _argumentN_ [, _argumentA_  |   _argument_ **])**
   
 |**Syntaxelement**|**Beschreibung**|
 |:-----|:-----|
@@ -28,13 +28,13 @@ Eine Funktion führt eine einzelne wohldefinierte Aufgabe aus. Die meisten Funkt
 | ,  <br/> | Argumente werden durch ein Komma getrennt.  <br/> |
 | ...  <br/> | Wird nur zur Notation verwendet, nicht in eine Funktion einfügen.  <br/> |
 | [ ]  <br/> | Optionales Argument. Wird nur zur Notation verwendet, nicht in eine Funktion einfügen.  <br/> |
-| |  <br/> | Eine Auswahl; Sie können _Argumenta_ oder _Argument_angeben. Wird nur zur Notation verwendet, nicht in eine Funktion einfügen.  <br/> |
+| |  <br/> | Eine Auswahl; Sie können _argumentA oder_ argument _enthalten._ Wird nur zur Notation verwendet, nicht in eine Funktion einfügen.  <br/> |
    
 Viele Funktionen, die Sie in Formeln verwenden können, ähneln denen, die Sie bereits in Tabellenkalkulationsprogrammen gesehen haben: mathematische Funktionen wie SUM oder SQRT; trigonometrische Funktionen wie SIN oder COS oder logische Funktionen wie IF oder NOT. Viele andere Funktionen stehen nur in Microsoft Office Visio zur Verfügung, z. B. GUARD, GRAVITY und RUNADDON.
   
 Weitere Informationen zu bestimmten Funktionen finden Sie in dieser ShapeSheet-Referenz.
   
 > [!NOTE]
->  Bestimmte Funktionen werden in Formeln angezeigt, die von Visio generiert wurden, aber nicht im Dialogfeld **Formel bearbeiten** angezeigt oder in dieser Referenz beschrieben werden, da Sie für die interne Verwendung reserviert sind und nicht in anderen Formeln verwendet werden sollten. Dazu gehören beispielsweise die folgenden Formeln: ELLIPSE_THETA, _ELLIPSE_ECC, _UCON_C1 und _SHAPEMIN. 
+>  Bestimmte Funktionen werden in von Visio generierten Formeln angezeigt, werden jedoch nicht im Dialogfeld Formel bearbeiten angezeigt oder in diesem Verweis beschrieben, da sie für die interne Verwendung reserviert sind und nicht in anderen Formeln verwendet werden sollten.  Dazu gehören beispielsweise die folgenden Formeln: ELLIPSE_THETA, _ELLIPSE_ECC, _UCON_C1 und _SHAPEMIN. 
   
 

@@ -25,21 +25,21 @@ Gibt an, ob ein Pfad gefüllt werden kann.
 | TRUE  <br/> | Der Pfad ist nicht gefüllt, auch wenn andere Pfade im Shape gefüllt sind.  <br/> |
 | FALSE  <br/> | Die Füllung des Shapes gilt für den Pfad, auch wenn dieser nicht geschlossen ist.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Wenn Sie das Füllmuster eines Shapes auf Null (=) setzen, wird keiner der Pfade gefüllt. Diese Zelle wird verwendet, um die Füllung für einen Pfad in einem Shape bei Bedarf auszuschalten.
   
-Wenn Sie einen Verweis auf die Zelle nofill aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle NoFill anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Geometrie *i* . NoFill Where *i* = <1>, 2, 3...  <br/> |
+| Zellenname:  <br/> | Geometry  *i*  . NoFill,  *wobei i*  = <1>, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle nofill aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die NoFill-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**visSectionFirstComponent** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+| Abschnittsindex:  <br/> |**visSectionFirstComponent**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
 | Zeilenindex:  <br/> |**visRowComponent** <br/> |
 | Zellenindex:  <br/> |**visCompNoFill** <br/> |
    

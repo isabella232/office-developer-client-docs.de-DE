@@ -25,7 +25,7 @@ ms.locfileid: "33414788"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt Eigenschaftentags für alle Eigenschaften zurück. 
+Gibt Eigenschaftstags für alle Eigenschaften zurück. 
   
 ```cpp
 HRESULT GetPropList(
@@ -38,41 +38,41 @@ HRESULT GetPropList(
 
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die das Format für die Zeichenfolgen in den zurückgegebenen Property-Tags steuert. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die das Format für die Zeichenfolgen in den zurückgegebenen Eigenschaftstags steuert. Das folgende Flag kann festgelegt werden:
     
 MAPI_UNICODE 
   
-> Die zurückgegebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format.
+> Die zurückgegebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Zeichenfolgen im ANSI-Format.
     
  _lppPropTagArray_
   
-> Out Ein Zeiger auf einen Zeiger auf das Property-Tag-Array, das Tags für alle Eigenschaften des Objekts enthält.
+> [out] Ein Zeiger auf einen Zeiger auf das Eigenschaftentagarray, das Tags für alle Eigenschaften des Objekts enthält.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Alle Property-Tags wurden erfolgreich zurückgegeben.
+> Alle Eigenschaftstags wurden erfolgreich zurückgegeben.
     
 MAPI_E_BAD_CHARWIDTH 
   
-> Entweder wurde das MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt Unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
+> Entweder wurde MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPIProp::** getproplist-Methode ruft das Tag der Eigenschaft für jede Eigenschaft ab, die derzeit von einem Objekt unterstützt wird. Wenn das Objekt derzeit keine Eigenschaften unterstützt, gibt **** getproplist ein Property-Tag-Array zurück, wobei das **cValues** -Element auf 0 festgelegt ist. 
+Die **IMAPIProp::GetPropList-Methode** ruft das Eigenschaftstag für jede Eigenschaft ab, die derzeit von einem Objekt unterstützt wird. Wenn das Objekt derzeit keine Eigenschaften unterstützt, gibt **GetPropList** ein Eigenschaftstagarray zurück, bei dem **das Element cValues** auf 0 festgelegt ist. 
   
-Der von getProplist zurück **** gegebene Bereich von Eigenschaften variiert von Anbieter zu Anbieter. Einige Dienstanbieter schließen diese Eigenschaften aus, für die der Aufrufer keinen Zugriff hat. Alle Anbieter geben Eigenschaften vom Typ **PT_OBJECT**zurück.
+Der Umfang der von **GetPropList** zurückgegebenen Eigenschaften variiert von Anbieter zu Anbieter. Einige Dienstanbieter schließen die Eigenschaften aus, auf die der Anrufer keinen Zugriff hat. Alle Anbieter geben Eigenschaften vom Typ **PT_OBJECT**.
   
-Wenn das Objekt Unicode nicht unterstützt, **** gibt getproplist MAPI_E_BAD_CHARWIDTH zurück, auch wenn keine Zeichenfolgeneigenschaften für das Objekt definiert sind. 
+Wenn das Objekt Unicode nicht unterstützt, gibt **GetPropList** MAPI_E_BAD_CHARWIDTH zurück, auch wenn keine Zeichenfolgeneigenschaften für das Objekt definiert sind. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Remote Transportanbieter implementieren **** getproplist genau wie hier angegeben. Es gibt keine besonderen Bedenken. Die Implementierung sollte natürlich die gleiche Liste von Eigenschaften zurückgeben, die von der [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode unterstützt wird. 
+Remote-Transport-Anbieter implementieren **GetPropList** genau wie hier angegeben. Es gibt keine besonderen Bedenken. Ihre Implementierung sollte natürlich dieselbe Liste von Eigenschaften zurückgeben, die von der [IMAPIProp::GetProps-Methode unterstützt](imapiprop-getprops.md) wird. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Rufen Sie die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion auf, um das Eigenschaftentag-Array freizugeben, auf das durch _lppPropTagArray_verwiesen wird. 
+Rufen Sie die [MAPIFreeBuffer-Funktion](mapifreebuffer.md) auf, um das Eigenschaftentagarray frei zu machen, auf das _von lppPropTagArray verwiesen wird._ 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -80,7 +80,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIFunctions. cpp  <br/> |GetPropsNULL  <br/> |MFCMAPI verwendet die **IMAPIProp::** getproplist-Methode, um eine Eigenschaftenliste abzurufen, **** die an GetProps weitergegeben wird.  <br/> |
+|MAPIFunctions.cpp  <br/> |GetPropsNULL  <br/> |MFCMAPI verwendet die **IMAPIProp::GetPropList-Methode,** um eine Eigenschaftsliste zu erhalten, die an **GetProps übergeben werden soll.**  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

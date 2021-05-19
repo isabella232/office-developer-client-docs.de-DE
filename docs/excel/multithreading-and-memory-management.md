@@ -18,11 +18,11 @@ ms.locfileid: "33414466"
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Die OrdnungsGemäße Handhabung des Arbeitsspeichers ist unerlässlich, um zuverlässige XLL-Add-Ins für Microsoft Excel zu erstellen. Wenn Sie keine geeigneten Arbeitsspeicherpuffer zuweisen und freigeben, wenn Sie nicht mehr benötigt werden, wird die Leistung reduziert, Ressourcenkonflikte erstellt und Excel destabilisiert.
+Die ordnungsgemäße Behandlung des Arbeitsspeichers ist für die Erstellung zuverlässiger XLL-Add-Ins für die Microsoft Excel. Wenn keine geeigneten Speicherpuffer zugewiesen und frei werden, wenn sie nicht mehr benötigt werden, wird die Leistung reduziert, Ressourcenstritte erstellt und Excel.
   
-Beginnend mit Microsoft Office Excel 2007 können Sie Excel so konfigurieren, dass bis zu 1.024 gleichzeitige Threads bei der Neuberechnung verwendet werden. In einigen Fällen kann das Multithreading die Leistung verbessern, insbesondere, wenn mehrere Prozessoren verfügbar sind oder benutzerdefinierte Funktionen auf gruppierten Servern ausgeführt werden.
+Ab Microsoft Office Excel 2007 können Sie Excel so konfigurieren, dass bei der Neuberechnung bis zu 1.024 gleichzeitige Threads verwendet werden. In einigen Fällen, insbesondere wenn mehrere Prozessoren verfügbar sind oder benutzerdefinierte Funktionen auf Clusterservern ausgeführt werden, kann Multithreading die Leistung verbessern.
   
-In den folgenden Themen wird beschrieben, wie Sie Arbeitsspeicher und Threads in XLLs verwalten:
+In den folgenden Themen wird das Verwalten von Arbeitsspeicher und Threads in XLLs beschrieben:
   
 - [Speicherverwaltung in Excel](memory-management-in-excel.md)
     

@@ -20,7 +20,7 @@ Ruft die Formateinstellungen des aktuellen Designs ab.
   
 ## <a name="syntax"></a>Syntax
 
-Design ()
+THEME()
   
 ## <a name="example"></a>Beispiel
 

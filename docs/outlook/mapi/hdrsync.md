@@ -21,7 +21,7 @@ ms.locfileid: "33410252"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Informationen zum Synchronisieren eines Nachrichtenkopfs während des [Download Nachrichtenkopfs](download-message-header-state.md).
+Informationen zum Synchronisieren eines Nachrichtenkopfs während des [Status der Downloadnachrichtkopfzeile](download-message-header-state.md).
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -40,11 +40,11 @@ struct HDRSYNC
 
  _pupmsg_
   
-- Out Informationen für den aktuellen Nachrichtenkopf im lokalen Speicher.
+- [out] Informationen für den aktuellen Nachrichtenkopf im lokalen Speicher.
     
  _feidPar_
   
-- Out Eintrags-ID für den übergeordneten Ordner des Nachrichtenelements.
+- [out] Eintrags-ID für den übergeordneten Ordner des Nachrichtenelements.
     
  _pstmReserved_
   
@@ -52,23 +52,23 @@ struct HDRSYNC
     
  _ulFlags_
   
-- in Kennzeichen zum Ändern des Verhaltens:
+- [in] Flags zum Ändern des Verhaltens:
     
 - HSF_LOCAL
     
-  - in Das vollständige Element befindet sich im selben lokalen Speicher wie das Kopfzeilenelement.
+  - [in] Das vollständige Element befindet sich im gleichen lokalen Speicher wie das Kopfzeilenelement.
     
 - HSF_COPYDESTRUCTIVE
     
-  -  in Optimieren interner Kopiervorgänge. Dies kann zu Datenverlusten führen. **HSF_LOCAL** muss festgelegt werden. 
+  -  [in] Optimieren sie interne Kopiervorgänge. Dies kann zu Datenverlusten führen. **HSF_LOCAL** muss festgelegt werden. 
     
 - HSF_OK
     
-  - in Die Kopfzeilensynchronisierung war erfolgreich. Der Client legt dies nach dem Herunterladen von Informationen vom Server fest.
+  - [in] Die Kopfzeilensynchronisierung war erfolgreich. Der Client legt dies nach dem Herunterladen von Informationen vom Server fest.
     
      _pmsgFull_
     
-  - in Das vollständige Nachrichtenelement, einschließlich des vom Server heruntergeladenen Nachrichtenkopfs. Weitere Informationen finden Sie unter mapidefs. h für die Typdefinition von **LPMESSAGE**. 
+  - [in] Das vollständige Nachrichtenelement einschließlich des Nachrichtenkopfs, der vom Server heruntergeladen wurde. Die Typdefinition von **LPMESSAGE** finden Sie unter mapidefs.h. 
     
 ## <a name="see-also"></a>Siehe auch
 

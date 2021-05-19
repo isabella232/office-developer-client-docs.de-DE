@@ -21,38 +21,38 @@ ms.locfileid: "33420931"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bevor eine Nachricht gespeichert wird, rufen Clients in der Regel die [IMAPIProp::](imapiprop-setprops.md) SetProps-Methode der Nachricht auf, um zusätzlich zu den Nachrichtentext Eigenschaften, Anlageneigenschaften, **PR_Subject** ([PidTagSubject](pidtagsubject-canonical-property.md)) und Eigenschaften eine Reihe von Eigenschaften festzulegen. der Empfängerliste zugeordnet.
+Bevor eine Nachricht gespeichert wird, rufen Clients in der Regel die [IMAPIProp::SetProps-Methode](imapiprop-setprops.md) der Nachricht auf, um neben den Nachrichtentexteigenschaften, Anlageneigenschaften, **PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) und eigenschaften, die der Empfängerliste zugeordnet sind, einige Eigenschaften zu setzen.
   
-Legen Sie die **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md))-Eigenschaft auf eine Zeichenfolge wie IPM. Beachten Sie, dass die Klasse der ausgehenden Nachricht beschrieben wird. Obwohl Clients **PR_MESSAGE_CLASS** für alle ausgehenden Nachrichten festlegen sollen, wird vom Nachrichtenspeicher Anbieter ein Standardwert angegeben, wenn Sie ihn nicht festlegen. Die Standardnachrichtenklasse für ausgehende Nachrichten ist IPM. 
+Legen Sie **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) -Eigenschaft auf eine Zeichenzeichenfolge wie IPM. Beachten Sie, dass die Klasse der ausgehenden Nachricht beschrieben wird. Clients sollten zwar **PR_MESSAGE_CLASS** für alle ausgehenden Nachrichten festlegen, aber der Nachrichtenspeicheranbieter gibt einen Standardwert an, wenn Sie ihn nicht festlegen. Die Standardnachrichtenklasse für ausgehende Nachrichten ist IPM. 
   
-Legen Sie das MSGFLAG_UNSENT-Flag in der **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))-Eigenschaft fest. Legen Sie, falls gewünscht, auch die MSGFLAG_READ-und MSGFLAG_UNMODIFIED-Flags fest. Das Festlegen des MSGFLAG_UNMODIFIED ermöglicht es einer Nachricht Unterkomposition, eine zugestellte Nachricht zu simulieren. MSGFLAG_UNMODIFIED kann nur von Clients festgelegt werden, bevor eine Nachricht zum ersten Mal gespeichert wurde. 
+Legen Sie das MSGFLAG_UNSENT in der **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) -Eigenschaft. Legen Sie bei Bedarf auch die MSGFLAG_READ und MSGFLAG_UNMODIFIED ein. Durch festlegen MSGFLAG_UNMODIFIED kann eine Nachricht unter Komposition eine übermittelte Nachricht simulieren. MSGFLAG_UNMODIFIED können nur von Clients festgelegt werden, bevor eine Nachricht zum ersten Mal gespeichert wurde. 
   
-Wenn Sie bereit sind, eine dauerhafte Kopie einer nicht gesendeten Nachricht zu erstellen, rufen Sie [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) für die Nachricht und alle zugehörigen Anlagen auf. Wenn Sie die Nachricht sofort senden möchten, müssen Sie **SaveChanges**nicht aufrufen. Der Aufruf von **SubmitMessage** speichert die Nachricht intern als Teil ihrer Verarbeitung. 
+Wenn Sie bereit sind, eine dauerhafte Kopie einer nicht gesendeten Nachricht zu erstellen, rufen Sie [IMAPIProp::SaveChanges](imapiprop-savechanges.md) für die Nachricht und alle anlagen auf. Wenn Sie die Nachricht sofort senden möchten, müssen Sie **SaveChanges nicht aufrufen.** Der Aufruf von **SubmitMessage speichert** die Nachricht intern als Teil der Verarbeitung. 
   
-Beim Aufrufen **** von SaveChanges empfiehlt es sich, das KEEP_OPEN_READWRITE-Flag anzugeben, mit dem die Nachricht zu einem späteren Zeitpunkt geändert werden kann. Weitere Settable-Flags sind FORCE_SAVE, was darauf hinweist, dass die Nachricht oder Anlage nach dem Commit der Änderungen geschlossen werden soll, KEEP_OPEN_READONLY, was bedeutet, dass keine weiteren Änderungen vorgenommen werden, und die Kennzeichnung, die es dem Nachrichtenspeicher Anbieter ermöglichen soll, Batch Clientanforderungen, MAPI_DEFERRED_ERRORS.
+Beim Aufrufen **von SaveChanges** sollten Sie das Flag KEEP_OPEN_READWRITE angeben, mit dem die Nachricht zu einem späteren Zeitpunkt geändert werden kann. Andere festgelegte Flags sind FORCE_SAVE, das angibt, dass die Nachricht oder Anlage nach dem Festlegen von Änderungen geschlossen werden soll, KEEP_OPEN_READONLY, das angibt, dass keine weiteren Änderungen vorgenommen werden, und das Flag, das dem Nachrichtenspeicheranbieter das Batchen von Clientanforderungen ermöglicht, MAPI_DEFERRED_ERRORS.
   
-Es ist wichtig, dass Sie **SaveChanges** für jede Anlage in der Nachricht aufrufen, bevor **** Sie SaveChanges für die Nachricht aufrufen. Wenn Sie eine Anlage nicht speichern, wird die Anlage nicht in die Nachricht aufgenommen, wenn Sie gesendet wird, und Sie wird nicht in der Anlagentabelle der Nachricht angezeigt. Wenn Sie die Nachricht nach dem Speichern aller Anlagen nicht speichern, gehen sowohl die Nachricht als auch die Anlagen verloren. 
+Es ist wichtig, dass **Sie SaveChanges für** jede Anlage in der Nachricht aufrufen, bevor **Sie SaveChanges für** die Nachricht aufrufen. Wenn Sie eine Anlage nicht speichern, wird die Anlage nicht in die Nachricht einbezogen, wenn sie gesendet wird, und sie wird nicht in der Anlagentabelle der Nachricht angezeigt. Wenn Die Nachricht nach dem Speichern aller Anlagen nicht gespeichert werden kann, gehen sowohl die Nachricht als auch die Anlagen verloren. 
   
-Wenn **SaveChanges** aufgerufen wird, aktualisiert der Nachrichtenspeicher Anbieter die folgenden Eigenschaften: 
+Wenn **SaveChanges** aufgerufen wird, aktualisiert der Nachrichtenspeicheranbieter die folgenden Eigenschaften: 
   
-- **PR_DISPLAY_TO** ([PidTagDisplayTo](pidtagdisplayto-canonical-property.md)) Listet alle primären Empfänger auf.
+- **PR_DISPLAY_TO** ([PidTagDisplayTo](pidtagdisplayto-canonical-property.md)) listet alle primären Empfänger auf.
     
-- **PR_DISPLAY_TO** listet alle Empfänger von Kohlenstoff Kopien auf. 
+- **PR_DISPLAY_TO** listet alle Carbon copy-Empfänger auf. 
     
-- **PR_DISPLAY_BCC** ([Pidtagdisplaybcc (](pidtagdisplaybcc-canonical-property.md)) Listet alle Blind Carbon Copy-Empfänger auf.
+- **PR_DISPLAY_BCC** ([PidTagDisplayBcc](pidtagdisplaybcc-canonical-property.md)) listet alle blinden #A0 auf.
     
 - **PR_LAST_MODIFICATION_TIME** ([PidTagLastModificationTime](pidtaglastmodificationtime-canonical-property.md))
     
-- **PR_MESSAGE_FLAGS** legt MSGFLAG_HASATTACH fest, wenn eine oder mehrere Anlagen gespeichert wurden, und löscht MSGFLAG_UNMODIFIED, um anzuzeigen, dass die Nachricht geändert wurde. 
+- **PR_MESSAGE_FLAGS** legt MSGFLAG_HASATTACH fest, ob eine oder mehrere Anlagen gespeichert wurden, und MSGFLAG_UNMODIFIED, um zu zeigen, dass die Nachricht geändert wurde. 
     
-- **PR_MESSAGE_SIZE** ([Pidtagmessagesize (](pidtagmessagesize-canonical-property.md)) enthält die aktuelle Größe der Nachricht.
+- **PR_MESSAGE_SIZE** ([PidTagMessageSize](pidtagmessagesize-canonical-property.md)) enthält die aktuelle Größe der Nachricht.
     
-- **PR_MESSAGE_ATTACHMENTS** ([Pidtagmessageattachments (](pidtagmessageattachments-canonical-property.md)) ermöglicht den Zugriff auf die Attachment-Tabelle.
+- **PR_MESSAGE_ATTACHMENTS** ([PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md)) bietet Zugriff auf die Anlagentabelle.
     
-- **PR_MESSAGE_RECIPIENTS** ([Pidtagmessagerecipients (](pidtagmessagerecipients-canonical-property.md)) ermöglicht den Zugriff auf die Empfängertabelle.
+- **PR_MESSAGE_RECIPIENTS** ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) bietet Zugriff auf die Empfängertabelle.
     
-Einige Nachrichteneigenschaften werden in der Regel von Clients oder Dienstanbietern bereitgestellt, wenn eine Nachricht erstellt wird. Wenn ein Client diese Einstellung vernachlässigt, muss der Nachrichtenspeicher Anbieter Sie zu dem Zeitpunkt aktualisieren, zu dem SaveChanges aufgerufen **** wird. Wenn beispielsweise die Eigenschaften **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) und **PR_RECORD_KEY** ([pidtagrecordkey (](pidtagrecordkey-canonical-property.md)) einer Nachricht beim Erstellen der Nachricht festgelegt wurden, müssen Sie nicht zu einem bestimmten Zeitpunkt geändert werden. Nachrichtenspeicher Anbieter, die Sie bei der Nachrichtenerstellung nicht festlegen, müssen Sie jedoch beim ersten Aufruf von **SaveChanges** festlegen. 
+Einige Nachrichteneigenschaften werden in der Regel von Clients oder Dienstanbietern bereitgestellt, wenn eine Nachricht erstellt wird. Wenn ein Client sie nicht festlegen will, liegt es an dem Nachrichtenspeicheranbieter, sie zum Zeitpunkt des Aufrufs von **SaveChanges** zu aktualisieren. Wenn beispielsweise die Eigenschaften **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) und **PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md)) einer Nachricht festgelegt wurden, wenn die Nachricht erstellt wurde, müssen sie nicht zur Zeit geändert werden. Nachrichtenspeicheranbieter, die sie bei der Nachrichtenerstellung nicht festlegen, müssen sie jedoch beim ersten Aufruf von **SaveChanges** festlegen. 
   
-Wenn **SaveChanges** MAPI_E_CORRUPT_DATA zurückgibt, gehen Sie davon aus, dass die gespeicherten Daten jetzt verloren gehen. Nachrichtenspeicher Anbieter, die ein Client-Server-Modell für Ihre Implementierung verwenden, können diesen Wert zurückgeben, wenn eine Netzwerkverbindung verloren geht oder der Server nicht aktiv ist. Bevor Sie einen Fehler an den Benutzer zurückgeben, versuchen Sie, die Daten ein zweites Mal zu schreiben und zu speichern **** , indem Sie SetProps gefolgt von einem weiteren Aufruf von **SaveChanges**aufrufen. Wenn die Daten lokal zwischengespeichert werden, sollte dies kein Problem darstellen. Wenn jedoch kein lokaler Cache vorhanden ist oder wenn der zweite **SaveChanges** -Aufruf fehlschlägt, wird ein Fehler angezeigt, um den Benutzer auf das Problem hinzuweisen. 
+Wenn **SaveChanges** MAPI_E_CORRUPT_DATA zurückgibt, gehen Sie davon aus, dass die gespeicherten Daten jetzt verloren gehen. Nachrichtenspeicheranbieter, die ein Client-Server-Modell für ihre Implementierung verwenden, geben diesen Wert möglicherweise zurück, wenn eine Netzwerkverbindung verloren geht oder der Server nicht ausgeführt wird. Bevor Sie einen Fehler an den Benutzer zurückgeben, versuchen Sie, die Daten ein zweites Mal zu schreiben und zu speichern, indem Sie einen Aufruf von **SetProps** gefolgt von einem weiteren Aufruf von **SaveChanges machen.** Wenn die Daten lokal zwischengespeichert werden, sollte dies kein Problem sein. Wenn jedoch kein lokaler Cache vorhanden ist oder der zweite **SaveChanges-Aufruf** fehlschlägt, wird ein Fehler angezeigt, um den Benutzer auf das Problem zu warnen. 
   
 

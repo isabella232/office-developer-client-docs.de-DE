@@ -25,7 +25,7 @@ ms.locfileid: "33410469"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt den Nachrichtenspeicher zurück, der die aktuelle Nachricht enthält, wenn ein solcher Speicher vorhanden ist. Diese Methode gibt NULL im _ppStore_ -Parameter für eingebettete Nachrichten zurück, die in einer anderen Nachricht statt direkt in einem Nachrichtenspeicher gespeichert werden. 
+Gibt den Nachrichtenspeicher zurück, der die aktuelle Nachricht enthält, wenn ein solcher Speicher vorhanden ist. Diese Methode gibt NULL im  _ppStore-Parameter_ für eingebettete Nachrichten zurück, die in einer anderen Nachricht statt direkt in einem Nachrichtenspeicher gespeichert werden. 
   
 ```cpp
 HRESULT GetStore(
@@ -37,7 +37,7 @@ HRESULT GetStore(
 
  _ppStore_
   
-> Out Ein Zeiger auf einen Zeiger auf den Nachrichtenspeicher.
+> [out] Ein Zeiger auf einen Zeiger auf den Nachrichtenspeicher.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -47,11 +47,11 @@ S_OK
     
 S_FALSE 
   
-> Es ist kein Speicher vorhanden, der die Nachricht enthält.
+> Es gibt keinen Speicher, der die Nachricht enthält.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Eine Liste der Schnittstellen im Zusammenhang mit Formular Servern finden Sie unter [MAPI-Formular Schnittstellen](mapi-form-interfaces.md).
+Eine Liste der Schnittstellen im Zusammenhang mit Formularservern finden Sie unter [MAPI Form Interfaces](mapi-form-interfaces.md).
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -59,7 +59,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer. cpp  <br/> |CMyMAPIFormViewer:: getStore  <br/> |MFCMAPI verwendet die **IMAPIMessageSite:: GetStore** -Methode, um den aktuell zwischengespeicherten Zeiger auf den angegebenen Speicher abzurufen, sofern dieser verfügbar ist.  <br/> |
+|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::GetStore  <br/> |MFCMAPI verwendet die **IMAPIMessageSite::GetStore-Methode,** um den aktuell zwischengespeicherten Zeiger auf den angegebenen Speicher zu erhalten, sofern er verfügbar ist.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -70,5 +70,5 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
-[MAPI-Formular Schnittstellen](mapi-form-interfaces.md)
+[MAPI-Formularschnittstellen](mapi-form-interfaces.md)
 

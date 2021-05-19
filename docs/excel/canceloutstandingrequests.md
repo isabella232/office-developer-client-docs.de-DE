@@ -18,7 +18,7 @@ ms.locfileid: "33414718"
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Informiert den Cluster-Konnektor darüber, dass eine Excel-Berechnung abgebrochen wurde, und daher können alle ausstehenden Funktionsaufrufe innerhalb dieser Sitzung ebenfalls abgebrochen werden (und Excel erwarte keine Rückrufe mit ihren Ergebnissen).
+Informiert den Clusterconnector darüber, dass eine Excel-Berechnung abgebrochen wurde, und daher können auch alle ausstehenden Funktionsaufrufe innerhalb dieser Sitzung abgebrochen werden (und dass Excel keine Rückrufe mit ihren Ergebnissen erwartet).
   
 ```cpp
 int CancelOutstandingRequests(int SessionId)
@@ -28,15 +28,15 @@ int CancelOutstandingRequests(int SessionId)
 
 _SessionID_
   
-> Die ID der Sitzung, die von der abgebrochenen Berechnung verwendet wird. Dieser Wert entspricht dem von OpenSession [](opensession.md)zurückgegebenen Wert.
+> Die ID der Sitzung, die von der abgebrochenen Berechnung verwendet wird. Dieser Wert entspricht dem von [OpenSession zurückgegebenen Wert.](opensession.md)
     
 ## <a name="return-value"></a>Rückgabewert
 
-**xlHpcRetSuccess** , wenn das _SessionID_ -Argument gültig ist; **xlHpcRetInvalidSessionId** , wenn das _SessionID_ -Argument ungültig ist; **xlHpcRetCallFailed** bei anderen Fehlern. 
+**xlHpcRetSuccess,** wenn  _das Argument SessionId_ gültig ist; **xlHpcRetInvalidSessionId,** wenn  _das Argument SessionId_ ungültig ist; **xlHpcRetCallFailed** bei anderen Fehlern. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Implementierer sollten alle Prozesse für die Sitzung für eine verbesserte Leistung beenden, da alle Ergebnisse nach diesem Aufruf von Excel verworfen werden.
+Implementierer sollten alle Prozesse für die Sitzung beenden, um die Leistung zu verbessern, da alle Ergebnisse, die nach diesem Aufruf empfangen werden, von der Excel.
   
 ## <a name="see-also"></a>Siehe auch
 

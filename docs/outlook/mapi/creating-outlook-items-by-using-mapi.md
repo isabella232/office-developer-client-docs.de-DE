@@ -1,5 +1,5 @@
 ---
-title: Erstellen von Outlook-Elementen mithilfe von MAPI
+title: Erstellen Outlook Elemente mithilfe von MAPI
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,27 +15,27 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33409860"
 ---
-# <a name="creating-outlook-items-by-using-mapi"></a>Erstellen von Outlook-Elementen mithilfe von MAPI
+# <a name="creating-outlook-items-by-using-mapi"></a>Erstellen Outlook Elemente mithilfe von MAPI
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die Themen in diesem Abschnitt veranschaulichen das Erstellen von Outlook-Elementen mithilfe von MAPI.
+In den Themen in diesem Abschnitt wird gezeigt, wie Outlook mit MAPI erstellt werden.
   
 - [Installieren der in diesem Abschnitt verwendeten Beispiele](how-to-install-the-samples-used-in-this-section.md)
     
-    In diesem Thema wird gezeigt, wie Sie die in diesem Abschnitt erläuterten Beispiele installieren und anzeigen.
+    In diesem Thema wird gezeigt, wie Sie die in diesem Abschnitt behandelten Beispiele installieren und anzeigen.
     
-- [Erstellen eines einfachen e-Mail-Elements](how-to-create-a-simple-mail-item.md)
+- [Erstellen eines einfachen E-Mail-Elements](how-to-create-a-simple-mail-item.md)
     
-    In diesem Thema wird gezeigt, wie Sie ein einfaches e-Mail-Element erstellen, das eine Lesebestätigung anfordert.
+    In diesem Thema wird gezeigt, wie Sie ein einfaches E-Mail-Element erstellen, das eine Lesebestätigung anfordert.
     
-- [Erstellen eines einfachen wiederkehrenden Aufgabenelements](how-to-create-a-simple-recurrent-task-item.md)
+- [Erstellen eines einfachen Wiederkehrenden Aufgabenelements](how-to-create-a-simple-recurrent-task-item.md)
     
-    In diesem Thema wird gezeigt, wie Sie ein einfaches Aufgabenelement erstellen, das wöchentlich stattfindet.
+    In diesem Thema wird gezeigt, wie Sie ein einfaches Aufgabenelement erstellen, das jede Woche auftritt.
     
-- [Erstellen eines komplexen wiederkehrenden Terminelements](how-to-create-a-complex-recurrent-appointment-item.md)
+- [Erstellen eines komplexen Terminelements mit wiederkehrenden Terminen](how-to-create-a-complex-recurrent-appointment-item.md)
     
     In diesem Thema wird gezeigt, wie Sie ein wöchentlich wiederkehrendes Terminelement erstellen, das auch Probleme im Zusammenhang mit Zeitzonen berücksichtigt.
     

@@ -25,23 +25,23 @@ Legt fest, ob das Shape durch Ablegen auf einer Gruppe dieser Gruppe hinzugefüg
 |TRUE  <br/> |Ein Shape kann durch Ablegen auf einer Gruppe dieser Gruppe hinzugefügt werden.  <br/> |
 |FALSE  <br/> |Das Shape kann auf der Gruppe nicht abgelegt werden.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Sie können diesen Wert auch festlegen, indem Sie die Gruppe auswählen, auf der Registerkarte [Entwickler](run-in-developer-mode-display-the-developer-tab.md) auf **Verhalten** klicken und anschließend das Kontrollkästchen **Abgelegte Shapes annehmen** aktivieren. 
   
-Wenn Sie einer Gruppe ein Shape hinzufügen möchten, indem Sie es in der Gruppe ablegen, müssen Sie auch ein ähnliches Form Verhalten aktivieren. Sie müssen das Shape auswählen, auf der Registerkarte [Entwickler](run-in-developer-mode-display-the-developer-tab.md) auf **Verhalten** klicken und dann das Kontrollkästchen **Shape zu Gruppen hinzufügen** aktivieren. Dieser Wert wird in der Zelle Zelle IsDropSource im Abschnitt Miscellaneous gespeichert. 
+Um einer Gruppe ein Shape hinzuzufügen, indem Sie es in der Gruppe ablegen, müssen Sie auch ein ähnliches Formverhalten aktivieren. Sie müssen das Shape auswählen, [](run-in-developer-mode-display-the-developer-tab.md) **auf** der Registerkarte Entwickler auf Verhalten klicken und dann das Kontrollkästchen Shape zu Gruppen bei der **Dropdownliste** hinzufügen aktivieren. Dieser Wert wird in der Zelle IsDropSource im Abschnitt Verschiedene gespeichert. 
   
-Wenn Sie einen Verweis auf die Zelle "IsDropTarget aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie folgendes, um einen Verweis auf die Zelle IsDropTarget anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |"IsDropTarget  <br/> |
+|Zellenname:  <br/> |IsDropTarget  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle "IsDropTarget aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Um einen Verweis auf die IsDropTarget-Zelle nach Index aus einem Programm zu erhalten, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowGroup** <br/> |
 |Zellenindex:  <br/> |**visGroupIsDropTarget** <br/> |
    

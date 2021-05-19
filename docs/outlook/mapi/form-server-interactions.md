@@ -19,9 +19,9 @@ ms.locfileid: "33415103"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die Themen in diesem Abschnitt beschreiben Interaktionen zwischen Clientanwendungen, dem MAPI-Formular-Manager, Formular Servern und Formularobjekten für eine Vielzahl allgemeiner Aktionen wie das Öffnen einer Nachricht und das Verfassen einer neuen Nachricht.
+In den Themen in diesem Abschnitt werden Interaktionen zwischen Clientanwendungen, dem MAPI-Formular-Manager, Formularservern und Formularobjekten für eine Vielzahl gängiger Aktionen beschrieben, z. B. das Öffnen einer Nachricht und das Verfassen einer neuen Nachricht.
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Entwickeln von MAPI-Formular Servern](developing-mapi-form-servers.md)
+- [Entwickeln von MAPI-Formularservern](developing-mapi-form-servers.md)
 

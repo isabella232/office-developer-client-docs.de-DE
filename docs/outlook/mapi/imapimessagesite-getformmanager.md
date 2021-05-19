@@ -25,7 +25,7 @@ ms.locfileid: "33419457"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt eine Formular-Manager-Schnittstelle zurück, die ein Formularserver zum Öffnen eines anderen Formular Servers verwenden kann.
+Gibt eine Formular-Manager-Schnittstelle zurück, die ein Formularserver zum Öffnen eines anderen Formularservers verwenden kann.
   
 ```cpp
 HRESULT GetFormManager(
@@ -37,7 +37,7 @@ HRESULT GetFormManager(
 
  _ppFormMgr_
   
-> Out Ein Zeiger auf einen Zeiger auf die zurückgegebene Formular-Manager-Schnittstelle.
+> [out] Ein Zeiger auf einen Zeiger auf die zurückgegebene Formular-Manager-Schnittstelle.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -45,9 +45,9 @@ S_OK
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Eine Liste der Schnittstellen im Zusammenhang mit Formular Servern finden Sie unter [MAPI-Formular Schnittstellen](mapi-form-interfaces.md).
+Eine Liste der Schnittstellen im Zusammenhang mit Formularservern finden Sie unter [MAPI Form Interfaces](mapi-form-interfaces.md).
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -55,7 +55,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer. cpp  <br/> |CMyMAPIFormViewer:: getFormmanager  <br/> |MFCMAPI verwendet die **IMAPIMessageSite::** getformmanager-Methode, um [MAPIOpenFormMgr](mapiopenformmgr.md) aufzurufen und die Ergebnisse dieses Aufrufs zurückzugeben.  <br/> |
+|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::GetFormManager  <br/> |MFCMAPI verwendet die **IMAPIMessageSite::GetFormManager-Methode** zum Aufrufen von [MAPIOpenFormMgr](mapiopenformmgr.md) und zum Zurückgeben der Ergebnisse dieses Aufrufs.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -68,5 +68,5 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
-[MAPI-Formular Schnittstellen](mapi-form-interfaces.md)
+[MAPI-Formularschnittstellen](mapi-form-interfaces.md)
 

@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 2dde7eec-df3d-723c-db08-7ff0b6107a0b
-description: 'Zuletzt geändert: 02 Juli, 2012'
+description: 'Letzte Änderung: 02. Juli 2012'
 ms.openlocfilehash: 88716719857cfd623d30a3684fc997ea8019455e
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -39,15 +39,15 @@ struct FEID
 
  _abFlags_
   
-> 4-Byte-Eintrags-ID für den Ordner. Weitere Informationen zu MAPI-Eintrags Bezeichnern **[](entryid.md)** finden Sie Untereintrags-ID. 
+> 4-Byte-Eintrags-ID für den Ordner. Weitere Informationen zu MAPI-Eintragsbezeichnern finden Sie unter **[ENTRYID](entryid.md)**. 
     
  _muid_
   
-> GUID, die den Informationsspeicher Anbieter identifiziert. Weitere Informationen finden Sie unter mapidefs. h für die Typdefinition von **MAPIUID**. 
+> GUID, die den Speicheranbieter identifiziert. Die Typdefinition von **MAPIUID** finden Sie unter mapidefs.h. 
     
  _Platzhalter_
   
-> Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.
+> Dieses Mitglied ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.
     
  _ltid_
   
@@ -65,5 +65,5 @@ struct FEID
   
 [UPFLD](upfld.md)
   
-[SYNCHRONISIERUNGS](sync.md)
+[SYNC](sync.md)
 

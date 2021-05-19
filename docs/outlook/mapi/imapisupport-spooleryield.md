@@ -25,7 +25,7 @@ ms.locfileid: "33409909"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt die CPU-Steuerung für den MAPI-Spooler an, sodass Sie alle für erforderlich erachteten Aufgaben ausführen kann.
+Gibt dem MAPI-Spooler die Kontrolle über die CPU, sodass er alle für erforderlich erachteten Aufgaben ausführen kann.
   
 ```cpp
 HRESULT SpoolerYield(
@@ -37,29 +37,29 @@ ULONG ulFlags
 
  _ulFlags_
   
-> Reserviert muss NULL sein.
+> Reserviert; muss null sein.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Transportanbieter hat die CPU erfolgreich veröffentlicht.
+> Der Transportanbieter hat die CPU erfolgreich freigegeben.
     
 MAPI_W_CANCEL_MESSAGE 
   
-> Weist den Transportanbieter an, die Übermittlung der Nachricht an Empfänger zu beenden, die Sie noch nicht erhalten haben.
+> Der Transportanbieter wird angewiesen, die Zustellung der Nachricht an alle Empfänger zu beenden, die sie noch nicht empfangen haben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPISupport:: SpoolerYield** -Methode wird für Support Objekte des Transportanbieters implementiert. Transport Anbieter rufen **SpoolerYield** auf, damit der MAPI-Spooler alle erforderlichen Verarbeitungsschritte ausführen kann. 
+Die **IMAPISupport::SpoolerYield-Methode** wird für Unterstützungsobjekte des Transportanbieters implementiert. Transportanbieter rufen **SpoolerYield auf,** damit der MAPI-Spooler alle erforderlichen Verarbeitungsschritte ausführen kann. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Rufen Sie **SpoolerYield** auf, wenn Sie längere Vorgänge ausführen, die angehalten werden können. Auf diese Weise können vordergrundanwendungen während eines langen Betriebs ausgeführt werden, beispielsweise die Übertragung an eine große Empfängerliste in einem belebten Netzwerk. 
+Rufen **Sie SpoolerYield auf,** wenn Sie langwierige Vorgänge ausführen, die angehalten werden können. Dadurch können Vordergrundanwendungen während eines langen Vorgangs ausgeführt werden, z. B. die Zustellung an eine große Empfängerliste über ein ausgelastetes Netzwerk. 
   
-Wenn **SpoolerYield** mit MAPI_W_CANCEL_MESSAGE zurückgibt, hat der MAPI-Spooler festgestellt, dass die Nachricht nicht mehr gesendet werden soll. Geben Sie MAPI_E_USER_CANCEL an den Anruf Prozess zurück, und beenden Sie, wenn möglich. 
+Wenn **SpoolerYield** mit MAPI_W_CANCEL_MESSAGE zurückgibt, hat der MAPI-Spooler festgestellt, dass die Nachricht nicht mehr gesendet werden soll. Geben MAPI_E_USER_CANCEL Zurück zu Ihrem Anrufprozess zurück, und beenden Sie sie, wenn möglich. 
   
-Weitere Informationen zur Angabe des MAPI-Spoolers finden Sie unter [interagieren mit dem MAPI](interacting-with-the-mapi-spooler.md)-Spooler.
+Weitere Informationen zum Nachgeben an den MAPI-Spooler finden Sie unter [Interacting with the MAPI Spooler](interacting-with-the-mapi-spooler.md).
   
 ## <a name="see-also"></a>Siehe auch
 

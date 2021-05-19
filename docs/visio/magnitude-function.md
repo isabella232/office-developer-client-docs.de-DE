@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251461
 localization_priority: Normal
 ms.assetid: 9f443687-9861-5f51-94c4-f056805f736b
-description: Gibt die Größe des Vektors zurück, dessen Anstieg A ist und dessen Ausführung B ist, multipliziert mit den entsprechenden Konstanten constantA und Konstanteb.
+description: Gibt die Größe des Vektors zurück, dessen Anstieg A ist und dessen Ausführung B ist, multipliziert mit den jeweiligen Konstanten constantA und constantB.
 ms.openlocfilehash: 6393c7827e2553ca4948c8b9c51075ca8e4783bd
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33420458"
 ---
 # <a name="magnitude-function"></a>MAGNITUDE Function
 
-Gibt die Größe des Vektors zurück, dessen Anstieg _A_ ist und dessen Ausführung _B_ist, multipliziert mit den entsprechenden Konstanten _constantA_ und _konstanteb_. 
+Gibt die Größe des Vektors zurück, dessen Anstieg  _A_ ist und dessen Ausführung  _B_ ist, multipliziert mit den jeweiligen Konstanten  _constantA_ und  _constantB_. 
   
 ## <a name="syntax"></a>Syntax
 
-MAGNITUDE (* * *constantA* * *, * * *a* * *, * * *konstanteb* * *, * * *B* * *) 
+MAGNITUDE(** *constantA* **, ** *A* **, ** *constantB* **, ** *B* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -30,14 +30,14 @@ MAGNITUDE (* * *constantA* * *, * * *a* * *, * * *konstanteb* * *, * * *B* * *)
 |:-----|:-----|:-----|:-----|
 | _constantA_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die Konstante, mit der die Steigung multipliziert werden soll.  <br/> |
 | _A_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die Steigung.  <br/> |
-| _Konstanteb_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die Konstante, mit der die Länge multipliziert werden soll.  <br/> |
+| _constantB_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die Konstante, mit der die Länge multipliziert werden soll.  <br/> |
 | _B_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die Länge.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 MAGNITUDE wird nach folgender Formel berechnet:
   
-SQRT ((constantA \* A) ^ 2 + (konstanteb \* B) ^ 2)
+SQRT((constantA \* A)^2 + (constantB \* B)^2)
   
 ## <a name="example"></a>Beispiel
 

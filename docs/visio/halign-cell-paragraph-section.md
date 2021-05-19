@@ -26,26 +26,26 @@ Definiert die horizontale Ausrichtung des Texts im Textblock des Shapes.
 | 1  <br/> | Zentriert  <br/> |**visHorzCenter** <br/> |
 | 2  <br/> | Rechtsbündig  <br/> |**visHorzRight** <br/> |
 | 3  <br/> | Ausrichten  <br/> |**visHorzJustify** <br/> |
-| 4  <br/> | Blocksatz erzwingen  <br/> |**visHorzForce** <br/> |
+| 4   <br/> | Blocksatz erzwingen  <br/> |**visHorzForce** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Beim Blocksatz wird Platz zwischen den Wörtern in jeder Zeile (nicht in der letzten Zeile) des Absatzes geschaffen, um sowohl die rechte als auch die linke Seite von Text an den Seitenrändern auszurichten.
   
 Bei Blocksatz erzwingen wird jede Zeile im Absatz ausgerichtet, einschließlich der letzten Zeile.
   
-Wenn Sie einen Verweis auf die Zelle HAlign aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle HAlign anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Abs. HAlign [ *i* ] wobei *i* = <1>, 2, 3...  <br/> |
+| Zellenname:  <br/> | Para.HorzAlign[  *i*  ] where  *i*  = <1>, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle HAlign aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die HAlign-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionParagraph** <br/> |
-| Zeilenindex:  <br/> |**visRowParagraph** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowParagraph**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
 | Zellenindex:  <br/> |**visHorzAlign** <br/> |
    
 

@@ -41,23 +41,23 @@ HRESULT RenameProfile(
 
  _lpszOldProfileName_
   
-> in Ein Zeiger auf den aktuellen Namen des umzubenennenden Profils.
+> [in] Ein Zeiger auf den aktuellen Namen des Umbenennungsprofils.
     
  _lpszOldPassword_
   
-> in Immer NULL.
+> [in] Immer NULL.
     
  _lpszNewProfileName_
   
-> in Ein Zeiger auf den neuen Namen des umzubenennenden Profils.
+> [in] Ein Zeiger auf den neuen Namen des Umbenennungsprofils.
     
  _ulUIParam_
   
-> in Ein Handle für das übergeordnete Fenster aller von dieser Methode angezeigten Dialogfelder oder Fenster. 
+> [in] Ein Handle zum übergeordneten Fenster aller Dialogfelder oder Fenster, die von dieser Methode angezeigt werden. 
     
  _ulFlags_
   
-> in Immer NULL.
+> [in] Immer NULL.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -71,19 +71,19 @@ MAPI_E_LOGON_FAILED
     
 MAPI_E_USER_CANCEL 
   
-> Der Benutzer hat den Vorgang abgebrochen, indem er in einem Dialogfeld auf die Schaltfläche **Abbrechen** geklickt hat. 
+> Der Benutzer hat den Vorgang abgebrochen, in der Regel durch Klicken auf die **Schaltfläche** Abbrechen in einem Dialogfeld. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IProfAdmin:: RenameProfile** -Methode weist einem Profil einen neuen Namen zu, sofern vorhanden. Wenn das umzubenennende Profil von einem Client verwendet wird, wenn **RenameProfile** aufgerufen wird, kennzeichnet **RenameProfile** das Profil und gibt S_OK zurück, anstatt den Umbenennungsvorgang zu versuchen, während das Profil verwendet wird. Wenn das Profil nicht mehr verwendet wird, weist **RenameProfile** dem neuen Namen zu. 
+Die **IProfAdmin::RenameProfile-Methode** weist einem Profil einen neuen Namen zu, sofern er einen hat. Wenn das umzubenennende Profil von einem Client verwendet wird, wenn **RenameProfile** aufgerufen wird, markiert **RenameProfile** das Profil und gibt S_OK zurück, anstatt den Umbenennungsvorgang zu versuchen, während das Profil verwendet wird. Wenn das Profil nicht mehr verwendet wird, weist **RenameProfile** ihm den neuen Namen zu. 
   
 Die alten und neuen Namen des Profils können bis zu 64 Zeichen lang sein und die folgenden Zeichen enthalten:
   
-- Alle alphanumerischen Zeichen, einschließlich Akzentzeichen und der Unterstrich.
+- Alle alphanumerischen Zeichen, einschließlich Akzentzeichen und Unterstrichzeichen.
     
-- Eingebettete Leerzeichen, aber keine führenden oder nachstehenden Leerzeichen.
+- Eingebettete Leerzeichen, jedoch keine führenden oder nachgestellten Leerzeichen.
     
-Die _lpszPassword_ sollte immer NULL oder ein Zeiger auf eine leere Zeichenfolge sein. 
+Das  _lpszPassword_ sollte immer NULL oder ein Zeiger auf eine Zeichenfolge mit null Länge sein. 
   
 ## <a name="see-also"></a>Siehe auch
 

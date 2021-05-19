@@ -19,43 +19,43 @@ ms.locfileid: "33411043"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Einmalige Eintrags-IDs werden von MAPI in der **IAddrBook:: CreateOneOff** -Methode und von Komponenten erstellt, die keinen Zugriff auf das MAPI-Subsystem haben, wie beispielsweise Gateway-Komponenten. For more information, see [IAddrBook::CreateOneOff](iaddrbook-createoneoff.md). Die folgende Abbildung zeigt das Format einer einmaligen Eintrags-ID.
+One-off-Eintragsbezeichner werden von MAPI in der **IAddrBook::CreateOneOff-Methode** und von Komponenten erstellt, die keinen Zugriff auf das MAPI-Subsystem haben, z. B. Gatewaykomponenten. For more information, see [IAddrBook::CreateOneOff](iaddrbook-createoneoff.md). Die folgende Abbildung zeigt das Format einer einmal verwendeten Eintrags-ID.
   
 **Format von Eintragsbezeichner mit einmaliger Eingabe**
   
-![Einmaliges Eintrags-ID-Format] (media/amapi_69.gif "Einmaliges Eintrags-ID-Format")
+![One-off Entry Identifier Format](media/amapi_69.gif "One-off Entry Identifier Format")
   
-Das erste Feld ist eine spezielle [MAPIUID](mapiuid.md) -Struktur, die die Eintrags-ID als Darstellung eines benutzerdefinierten Empfängers identifiziert. Diese **MAPIUID** -Struktur muss auf die Konstante MAPI_ONE_OFF_UID festgelegt werden. MAPI_ONE_OFF_UID ist in der Headerdatei MAPIDEFS definiert. H. 
+Das erste Feld ist eine spezielle [MAPIUID-Struktur,](mapiuid.md) die den Eintragsbezeichner als darstellung eines benutzerdefinierten Empfängers identifiziert. Diese **MAPIUID-Struktur** muss auf die Konstante festgelegt MAPI_ONE_OFF_UID. MAPI_ONE_OFF_UID wird in der Headerdatei MAPIDEFS.H definiert. 
   
-Die Felder Version und Flags sind 16-Bit-Wörter in der Intel-Bytereihenfolge. Das Feld Version muss auf NULL festgelegt sein. Das Flags-Feld kann auf die folgenden Werte festgelegt werden:
+Die Versions- und Kennzeichenfelder sind 16-Bit-Wörter in Intel-Bytereihenfolge. Das Versionsfeld muss auf Null festgelegt sein. Das Flags-Feld kann auf die folgenden Werte festgelegt werden:
   
 MAPI_ONE_OFF_NO_RICH_INFO
   
 MAPI_ONE_OFF_UNICODE
   
-Das MAPI_ONE_OFF_NO_RICH_INFO-Flag wird festgelegt, wenn ein Empfänger keinen Nachrichteninhalt im Transport Neutral Encapsulation Format (TNEF) empfangen soll. Dieses Flag wird festgelegt, wenn MAPI_SEND_NO_RICH_INFO an [IAddrBook:: CreateOneOff](iaddrbook-createoneoff.md) -Methode übergeben wird. 
+Das MAPI_ONE_OFF_NO_RICH_INFO wird festgelegt, wenn ein Empfänger keine Nachrichteninhalte im Transport Neutral Encapsulation Format (TNEF) empfangen soll. Dieses Flag wird festgelegt, wenn MAPI_SEND_NO_RICH_INFO an [die IAddrBook::CreateOneOff-Methode übergeben](iaddrbook-createoneoff.md) wird. 
   
-Das MAPI_ONE_OFF_UNICODE-Flag wird festgelegt, wenn der Anzeigename und die e-Mail-Adresse Unicode-Zeichenfolgen sind. Dieses Flag wird festgelegt, wenn die MAPI_UNICODE an **IAddrBook:: CreateOneOff**übergeben wird. Wenn das MAPI_UNICODE-Flag nicht an **CreateOneOff**übergeben wird, wird davon ausgegangen, dass die Zeichenfolgen für den Anzeigenamen und die e-Mail-Adresse im aktuellen ANSI-Zeichensatz der Arbeitsstation liegen. ANSI-Zeichenfolgen funktionieren im Allgemeinen nicht gut in Nachrichten, die zwischen Plattformen mit unterschiedlichen Zeichensätzen gesendet werden, da die Codepage nicht in der Eintrags-ID codiert ist. Um diese potenzielle Inkompatibilität zu vermeiden, sind viele Adresstypen auf die Zeichen beschränkt, die für mehrere Zeichensätze häufig gelten. Zur Sicherstellung der Zeichensatz-und Plattformkompatibilität sollten Clients Unicode für die Zeichenfolgen in ihren Nachrichten verwenden.
+Das MAPI_ONE_OFF_UNICODE wird festgelegt, wenn der Anzeigename und die E-Mail-Adresse Unicode-Zeichenfolgen sind. Dieses Flag wird festgelegt, wenn MAPI_UNICODE an **IAddrBook::CreateOneOff übergeben wird.** Wenn das MAPI_UNICODE nicht an **CreateOneOff** übergeben wird, geht MAPI davon aus, dass sich der Anzeigename und die E-Mail-Adresszeichenfolgen im aktuellen ANSI-Zeichensatz der Arbeitsstation befinden. ANSI-Zeichenfolgen funktionieren in der Regel nicht gut in Nachrichten, die zwischen Plattformen mit unterschiedlichen Zeichensätzen gesendet werden, da die Codeseite nicht in der Eintrags-ID codiert ist. Um diese potenzielle Inkompatibilität zu schützen, sind viele Adresstypen auf die Zeichen beschränkt, die für mehrere Zeichensätze gemeinsam sind. Um jedoch die Zeichensatz- und Plattformkompatibilität sicherzustellen, sollten Clients Unicode für die Zeichenzeichenfolgen in ihren Nachrichten verwenden.
   
-Der Anzeigename ist eine mit NULL endende Zeichenfolge, die der **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))-Eigenschaft des Empfängers und dem _lpszName_ -Parameter entspricht, der an **IAddrBook:: CreateOneOff**übergeben wird. Der Zeichensatz ist Unicode, wenn das MAPI_ONE_OFF_UNICODE-Flag festgelegt ist, und ANSI, wenn es klar ist. 
+Der Anzeigename ist eine Zeichenfolge mit Nullen, die der **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))-Eigenschaft des Empfängers und dem  _lpszName-Parameter_ entspricht, der an **IAddrBook::CreateOneOff** übergeben wird. Der Zeichensatz ist Unicode, wenn das MAPI_ONE_OFF_UNICODE festgelegt ist, und ANSI, wenn es klar ist. 
   
-Der Adresstyp ist eine mit NULL endende Zeichenfolge, die der **PR_ADDRTYPE** ([pidtagaddresstype (](pidtagaddresstype-canonical-property.md))-Eigenschaft des Empfängers und dem _lpszAdrType_ -Parameter entspricht, der an **IAddrBook:: CreateOneOff**übergeben wird. 
+Bei dem Adresstyp handelt es sich um eine Zeichenfolge **mit Nullen,** die der PR_ADDRTYPE ([PidTagAddressType](pidtagaddresstype-canonical-property.md))-Eigenschaft des Empfängers und dem  _lpszAdrType-Parameter_ entspricht, der an **IAddrBook::CreateOneOff** übergeben wird. 
   
-Die e-Mail-Adresse ist eine NULL-terminierte Zeichenfolge, die der **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))-Eigenschaft des Empfängers und dem _lpszAddress_ -Parameter entspricht, der an **IAddrBook:: CreateOneOff**übergeben wird. 
+Die E-Mail-Adresse ist eine Zeichenfolge mit Nullen, die der **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))-Eigenschaft des Empfängers und dem  _lpszAddress-Parameter_ entspricht, der an **IAddrBook::CreateOneOff** übergeben wird. 
   
 > [!NOTE]
-> Es gibt keinen Abstand in einmaligen Eintrags-ID-Strukturen; die Bytes werden genau wie oben angegeben verpackt, und die Länge des Eintrags-Bezeichners sollte keine Bytes über das abschließende Null-Zeichen der e-Mail-Adresse hinaus umfassen. 
+> Es gibt keinen Abstand in einer einmal verwendeten Eintragsbezeichnerstruktur. Die Bytes werden genau wie oben angegeben verpackt, und die Länge der Eintrags-ID sollte keine Bytes enthalten, die über das endende Nullzeichen der E-Mail-Adresse hinausgehen. 
   
-Clients und Adressbuchanbieter, die einmalige Eintrags-IDs manuell erstellen, müssen möglicherweise auch Werte für die Eigenschaften **PR_RECORD_KEY** ([Pidtagrecordkey (](pidtagrecordkey-canonical-property.md)) und **PR_SEARCH_KEY** ([pidtagsearchkey (](pidtagsearchkey-canonical-property.md)) generieren. Der Record-Schlüssel ist identisch mit der Eintrags-ID. Der Suchschlüssel sollte durch Verketten der folgenden Felder in der folgenden Reihenfolge gebildet werden:
+Clients und Adressbuchanbieter, die eindeutige Eintragsbezeichner manuell erstellen, müssen möglicherweise auch Werte für die **Eigenschaften PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md)) und **PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md)) generieren. Der Datensatzschlüssel ist identisch mit dem Eintragsbezeichner. Der Suchschlüssel sollte durch Verkettung der folgenden Felder in der folgenden Reihenfolge gebildet werden:
   
-1. Der Adresstyp, konvertiert in Großbuchstaben.
+1. Der Adresstyp, der in Großbuchstaben konvertiert wird.
     
 2. Ein Doppelpunkt (:).
     
-3. Die e-Mail-Adresse, konvertiert in Großbuchstaben.
+3. Die in Großbuchstaben konvertierte E-Mail-Adresse.
     
-4. Ein abschließendes NULL-Zeichen.
+4. Ein endendes Nullzeichen.
     
-Beim Generieren des Suchschlüssels muss keine Zeichensatzkonvertierung ausgeführt werden.
+Beim Generieren des Suchschlüssels muss keine Zeichensatzkonvertierung durchgeführt werden.
   
 

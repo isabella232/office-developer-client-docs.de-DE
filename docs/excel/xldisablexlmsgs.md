@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - xlDisableXLMsgs
 keywords:
-- xldisablexlmsgs-Funktion [Excel 2007]
+- xldisablexlmsgs-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: b29d4720-7855-4252-9dbe-b4fc4eb8f995
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'

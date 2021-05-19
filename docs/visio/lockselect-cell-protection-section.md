@@ -25,21 +25,21 @@ Verhindert, dass ein Shape ausgewählt werden kann.
 | TRUE  <br/> | Shape kann nicht ausgewählt werden.  <br/> |
 | FALSE  <br/> | Shape kann ausgewählt werden.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Damit die "LockSelect wirksam wird, muss das Kontrollkästchen **Shapes** im Dialogfeld **Dokument schützen** aktiviert sein. 
+Damit LockSelect wirksam wird, muss das Kontrollkästchen **Shapes** im Dialogfeld Dokument **schützen** aktiviert sein. 
   
-Wenn Sie einen Verweis auf die Zelle "LockSelect aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle LockSelect anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | "LockSelect  <br/> |
+| Zellenname:  <br/> | LockSelect  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle "LockSelect aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle LockSelect nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowLock** <br/> |
 | Zellenindex:  <br/> |**visLockSelect** <br/> |
    

@@ -20,10 +20,10 @@ ms.locfileid: "33415383"
 
 Enthält Zellen zum Steuern der Einstellungen für die Shape-Platzierung und das Verbinderrouting.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Sie können die Werte für die Shape-spezifischen Zellen in diesem Abschnitt auch im Dialogfeld **Verhalten** auf der Registerkarte **Platzierung** festlegen (klicken Sie dazu auf der Registerkarte [Entwickler](run-in-developer-mode-display-the-developer-tab.md) in der Gruppe **Shape-Design** auf **Verhalten**). Sie können die Werte für die Verbinder-spezifischen Zellen in diesem Abschnitt auch im Dialogfeld **Verhalten** auf der Registerkarte **Verbinder** festlegen. (Sie zeigen die Registerkarte **Verbinder** an, indem Sie im Zeichnungsfenster den Verbinder markieren und anschließend das Dialogfeld **Verhalten** öffnen.) 
   
-Sie können Werte im Abschnitt **Shape Layout** verwenden, um die im Abschnitt **Seitenlayout** enthaltenen Standardwerte zu überschreiben. 
+Sie können Werte im Abschnitt **Shape Layout** verwenden, um die im Abschnitt Seitenlayout enthaltenen **Standardwerte außer Kraft zu** setzen. 
   
 

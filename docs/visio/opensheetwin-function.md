@@ -24,7 +24,7 @@ ms.locfileid: "33409888"
 
 OPENSHEETWIN( )
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 In früheren Versionen von Visio wird diese Funktion in der Form _OPENSHEETWIN geschrieben. In den Visio-Versionen 4.0 und höher werden beide Schreibweisen akzeptiert. 
   

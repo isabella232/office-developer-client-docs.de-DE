@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagreceivefoldersettings (-Eigenschaft
+title: PidTagReceiveFolderSettings (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,13 +19,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33415054"
 ---
-# <a name="pidtagreceivefoldersettings-canonical-property"></a>Kanonische Pidtagreceivefoldersettings (-Eigenschaft
+# <a name="pidtagreceivefoldersettings-canonical-property"></a>PidTagReceiveFolderSettings (kanonische Eigenschaft)
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine Tabelle der Einstellungen für den Empfangsordner eines Nachrichtenspeichers.
+Enthält eine Tabelle der Empfangsordnereinstellungen eines Nachrichtenspeichers.
   
 |||
 |:-----|:-----|
@@ -34,25 +34,25 @@ Enthält eine Tabelle der Einstellungen für den Empfangsordner eines Nachrichte
 |Datentyp:  <br/> |PT_OBJECT  <br/> |
 |Bereich:  <br/> |MAPI-Nachrichtenspeicher  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Diese Eigenschaft kann in [IMAPIProp:: CopyTo](imapiprop-copyto.md) -Vorgängen oder in [IMAPIProp:: CopyProps](imapiprop-copyprops.md) -Vorgängen ausgeschlossen werden. Als Eigenschaft vom Typ PT_OBJECT kann Sie nicht erfolgreich von der [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode abgerufen werden; auf den Inhalt sollte von der [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode zugegriffen werden, um die Schnittstelle mit dem Bezeichner IID_IMAPITable anzufordern. Dienstanbieter müssen Sie an die [IMAPIProp::](imapiprop-getproplist.md) getproplist-Methode melden, wenn Sie festgelegt ist, aber optional melden können, wenn Sie nicht festgelegt ist. 
+Diese Eigenschaft kann in [IMAPIProp::CopyTo-Vorgängen](imapiprop-copyto.md) ausgeschlossen oder in [IMAPIProp::CopyProps-Vorgängen enthalten](imapiprop-copyprops.md) sein. Als Eigenschaft vom Typ PT_OBJECT kann sie nicht erfolgreich von der [IMAPIProp::GetProps-Methode abgerufen](imapiprop-getprops.md) werden. Auf deren Inhalt sollte die [IMAPIProp::OpenProperty-Methode](imapiprop-openproperty.md) zugreifen und die Schnittstelle mit dem Bezeichner IID_IMAPITable. Dienstanbieter müssen sie der [IMAPIProp::GetPropList-Methode](imapiprop-getproplist.md) melden, wenn sie festgelegt ist, können sie jedoch optional melden oder nicht, wenn sie nicht festgelegt ist. 
   
-Zum Abrufen von Tabelleninhalten sollte eine Clientanwendung die [IMsgStore:: GetReceiveFolderTable](imsgstore-getreceivefoldertable.md) -Methode aufrufen. Weitere Informationen finden Sie unter [Receive Folder Tables](receive-folder-tables.md).
+Zum Abrufen von Tabelleninhalten sollte eine Clientanwendung die [IMsgStore::GetReceiveFolderTable-Methode](imsgstore-getreceivefoldertable.md) aufrufen. Weitere Informationen finden Sie unter [Receive Folder Tables](receive-folder-tables.md).
   
-Diese Eigenschaft enthält eine Tabelle mit Zuordnungen der Empfangsordner für den Nachrichtenspeicher. Das **** Aufrufen von OpenProperty für diese Eigenschaft entspricht dem Aufrufen von **GetReceiveFolderTable** im Nachrichtenspeicher. 
+Diese Eigenschaft enthält eine Tabelle mit Zuordnungen der Empfangsordner für den Nachrichtenspeicher. Das **Aufrufen von OpenProperty** für diese Eigenschaft entspricht dem Aufrufen **von GetReceiveFolderTable** im Nachrichtenspeicher. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
-### <a name="header-files"></a>Header Dateien
+### <a name="header-files"></a>Headerdateien
 
-Mapidefs. h
+Mapidefs.h
   
-> Stellt Datentypdefinitionen bereit.
+> Bietet Datentypdefinitionen.
     
-Mapitags. h
+Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,9 +60,9 @@ Mapitags. h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

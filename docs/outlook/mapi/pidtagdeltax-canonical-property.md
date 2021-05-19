@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagdeltax (-Eigenschaft
+title: PidTagDeltaX (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,13 +19,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33420521"
 ---
-# <a name="pidtagdeltax-canonical-property"></a>Kanonische Pidtagdeltax (-Eigenschaft
+# <a name="pidtagdeltax-canonical-property"></a>PidTagDeltaX (kanonische Eigenschaft)
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält die Breite eines Dialogfeld-Steuerelements in Windows-Standarddialog Einheiten. 
+Enthält die Breite eines Dialogfeldsteuerelements in Windows Dialogeinheiten. 
   
 |||
 |:-----|:-----|
@@ -34,21 +34,21 @@ Enthält die Breite eines Dialogfeld-Steuerelements in Windows-Standarddialog Ei
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Anzeigetabelle  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die Eigenschaften **PR_XPOS** ([Pidtagxcoordinate (](pidtagxcoordinate-canonical-property.md)) **, PR_YPOS** ([pidtagycoordinate (](pidtagycoordinate-canonical-property.md)), **PR_DELTAY** ([pidtagdeltay (](pidtagdeltay-canonical-property.md)) und diese Eigenschaft steuern die Position und Größe des Dialogfeld-Steuerelements. 
+Die **PR_XPOS** ([PidTagXCoordinate](pidtagxcoordinate-canonical-property.md)), **PR_YPOS** ([PidTagYCoordinate](pidtagycoordinate-canonical-property.md)), **PR_DELTAY** ([PidTagDeltaY](pidtagdeltay-canonical-property.md)) -Eigenschaften , und diese Eigenschaft steuern die Position und Größe des Dialogfeldsteuerelements. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
-### <a name="header-files"></a>Header Dateien
+### <a name="header-files"></a>Headerdateien
 
-Mapidefs. h
+Mapidefs.h
   
-> Stellt Datentypdefinitionen bereit.
+> Bietet Datentypdefinitionen.
     
-Mapitags. h
+Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapitags. h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

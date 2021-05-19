@@ -25,7 +25,7 @@ ms.locfileid: "33419835"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Registriert die Benachrichtigung über die angegebenen Ereignisse, die sich auf die Sitzung auswirken.
+Registriert, um Benachrichtigungen über angegebene Ereignisse zu erhalten, die sich auf die Sitzung auswirken.
   
 ```cpp
 HRESULT Advise(
@@ -41,59 +41,59 @@ HRESULT Advise(
 
  _cbEntryID_
   
-> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID_ -Parameter verwiesen wird. 
+> [in] Die Byteanzahl im Eintragsbezeichner, auf den der  _lpEntryID-Parameter_ verweist. 
     
  _lpEntryID_
   
-> in Ein Zeiger auf die Eintrags-ID des Adressbuch-oder Nachrichtenspeicher Objekts, über das Benachrichtigungen generiert werden sollen, oder NULL, was darauf hinweist, dass der Client sich für den Empfang von Benachrichtigungen über Ereignisse registriert, die sich nur auf die Sitzung auswirken. 
+> [in] Ein Zeiger auf die Eintrags-ID des Adressbuch- oder Nachrichtenspeicherobjekts, über das Benachrichtigungen generiert werden sollen, oder NULL, der angibt, dass der Client sich für den Empfang von Benachrichtigungen über Ereignisse registriert, die sich nur auf die Sitzung auswirken. 
     
  _ulEventMask_
   
-> in Eine Maske mit Werten, die die Typen von Benachrichtigungsereignissen angibt, an denen der Client interessiert ist, und die in die Registrierung aufgenommen werden sollen. Wenn _lpEntryID_ ist, registriert MAPI den Client automatisch auf kritische Fehlerereignisse, die nur die Sitzung betreffen. Wenn _lpEntryID_ auf eine Eintrags-ID zeigt, sind die folgenden Werte für den _ulEventMask_ -Parameter gültig: 
+> [in] Eine Maske mit Werten, die die Arten von Benachrichtigungsereignissen angibt, für die der Client interessiert ist und in die Registrierung einbezogen werden sollte. Wenn  _lpEntryID_ NULL ist, registriert MAPI den Client automatisch für kritische Fehlerereignisse, die sich nur auf die Sitzung auswirken. Wenn  _lpEntryID_ auf einen Eintragsbezeichner verweist, sind die folgenden Werte für den  _ulEventMask-Parameter_ gültig: 
     
 fnevCriticalError 
   
-> Registriert Benachrichtigungen zu schwerwiegenden Fehlern, beispielsweise unzureichenden Arbeitsspeicher.
+> Registriert für Benachrichtigungen über schwerwiegende Fehler, z. B. unzureichenden Arbeitsspeicher.
     
 fnevExtended 
   
-> Registriert Benachrichtigungen zu Ereignissen, die für ein bestimmtes Adressbuch oder einen bestimmten Nachrichtenspeicher Anbieter spezifisch sind, sowie für die Sitzungs Sperrung.
+> Registriert für Benachrichtigungen über Ereignisse, die für ein bestimmtes Adressbuch oder einen bestimmten Nachrichtenspeicheranbieter spezifisch sind, und für das Herunterfahren der Sitzung.
     
-Uleventmaskfnevnewmail 
+fnevNewMail 
   
-> Registriert Benachrichtigungen über das Eintreffen neuer Nachrichten. 
+> Registriert für Benachrichtigungen über das Eintreffen neuer Nachrichten. 
     
 fnevObjectCreated 
   
-> Registriert Benachrichtigungen über die Erstellung eines neuen Objekts.
+> Registriert für Benachrichtigungen über die Erstellung eines neuen Objekts.
     
 fnevObjectCopied
   
-> Registriert Benachrichtigungen zu einem kopierten Objekt.
+> Registriert für Benachrichtigungen über ein objekt, das kopiert wird.
     
 fnevObjectDeleted
   
-> Registriert Benachrichtigungen zu einem Objekt, das gelöscht wird.
+> Registriert für Benachrichtigungen über ein zu löschendes Objekt.
     
 fnevObjectModified
   
-> Registriert Benachrichtigungen zu einem Objekt, das geändert wird.
+> Registriert für Benachrichtigungen über ein zu änderndes Objekt.
     
 fnevObjectMoved
   
-> Registriert Benachrichtigungen zu einem Objekt, das verschoben wird.
+> Registriert für Benachrichtigungen über ein verschobenes Objekt.
     
 fnevSearchComplete
   
-> Registriert Benachrichtigungen über den Abschluss eines Suchvorgangs.
+> Registriert für Benachrichtigungen über den Abschluss eines Suchvorgangs.
     
  _lpAdviseSink_
   
-> in Ein Zeiger auf ein Advise-Senke-Objekt, um die nachfolgenden Benachrichtigungen zu empfangen. Dieses Advise-Senke-Objekt muss bereits zugeordnet worden sein.
+> [in] Ein Zeiger auf ein Advise Sink-Objekt, um die nachfolgenden Benachrichtigungen zu erhalten. Dieses Ratensenkenobjekt muss bereits zugewiesen worden sein.
     
  _lpulConnection_
   
-> Out Ein Zeiger auf eine Zahl ungleich NULL, die die Verbindung zwischen dem Advise-Objekt des Empfängers und der Sitzung darstellt.
+> [out] Ein Zeiger auf eine Nullnummer, die die Verbindung zwischen dem Ratensenkenobjekt des Anrufers und der Sitzung darstellt.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -103,31 +103,31 @@ S_OK
     
 MAPI_E_INVALID_ENTRYID 
   
-> Die Eintrags-ID, auf die durch _lpEntryID_ verwiesen wird, stellt keine gültige Eintrags-ID dar. 
+> Der Eintragsbezeichner, auf den  _lpEntryID verweist,_ stellt keinen gültigen Eintragsbezeichner dar. 
     
 MAPI_E_NO_SUPPORT 
   
-> Der Dienstanbieter, der für den Eintragsbezeichner verantwortlich ist, auf den von _lpEntryID_ verwiesen wird, unterstützt entweder nicht die im Parameter _ulEventMask_ angegebene Art von Ereignissen oder unterstützt die Benachrichtigung nicht. 
+> Der Dienstanbieter, der für den Eintragsbezeichner verantwortlich ist, auf den  _lpEntryID_ verweist, unterstützt entweder den im  _ulEventMask-Parameter_ angegebenen Ereignistyp nicht oder unterstützt keine Benachrichtigung. 
     
 MAPI_E_UNKNOWN_ENTRYID 
   
-> Die Eintrags-ID, auf die durch _lpEntryID_ verwiesen wird, kann von keinem der Dienstanbieter im Profil verarbeitet werden. 
+> Der Eintragsbezeichner, auf den  _lpEntryID verweist,_ kann nicht von einem der Dienstanbieter im Profil verarbeitet werden. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPISession:: Advise** -Methode stellt eine Verbindung zwischen dem Advise-Objekt des Anrufers, der Sitzung und optional einem Dienstanbieter her. Diese Verbindung wird verwendet, um Benachrichtigungen an die Advise-Senke zu senden, wenn ein oder mehrere im _ulEventMask_ -Parameter angegebene Ereignisse für das Objekt auftreten, auf das durch _lpEntryID_verwiesen wird. Wenn _lpEntryID_ ist, ist das Zielobjekt die Sitzung, und Benachrichtigungen werden nur für kritische Fehler und erweiterte Ereignisse gesendet. 
+Die **IMAPISession::Advise-Methode** stellt eine Verbindung zwischen dem Ratgebersenkenobjekt des Anrufers, der Sitzung und optional einem Dienstanbieter fest. Diese Verbindung wird verwendet, um Benachrichtigungen an die Ratensenke zu senden, wenn mindestens ein im _ulEventMask-Parameter_ angegebenes Ereignis auf das Objekt auftritt, auf das _von lpEntryID verwiesen wird._ Wenn  _lpEntryID_ NULL ist, ist das Zielobjekt die Sitzung, und Benachrichtigungen werden nur für kritische Fehler und erweiterte Ereignisse gesendet. 
   
-Wenn _lpEntryID_ auf eine gültige Eintrags-ID zeigt, ruft MAPI die **Advise** -Methode des LOGON-Objekts auf, das zum Verantwortlichen Dienstanbieter gehört. Wenn _lpEntryID_ beispielsweise auf den Eintragsbezeichner einer Verteilerliste zeigt, ruft MAPI die [IABLogon:: Advise](iablogon-advise.md) -Methode des entsprechenden Adressbuch Anbieters auf. 
+Wenn  _lpEntryID_ auf einen gültigen Eintragsbezeichner verweist, ruft MAPI die **Advise-Methode** des Anmeldeobjekts auf, das zum zuständigen Dienstanbieter gehört. Wenn beispielsweise  _lpEntryID_ auf den Eintragsbezeichner einer Verteilerliste verweist, ruft MAPI die [IABLogon::Advise-Methode](iablogon-advise.md) des entsprechenden Adressbuchanbieters auf. 
   
-Zum Senden einer Benachrichtigung ruft der Dienstanbieter oder die MAPI die [IMAPIAdviseSink:: OnNotify](imapiadvisesink-onnotify.md) -Methode der registrierten Advise-Senke auf. Einer der Parameter für **OnNotify**, eine Benachrichtigungsstruktur, enthält Informationen, die das spezifische Ereignis beschreiben.
+Zum Senden einer Benachrichtigung ruft der Dienstanbieter oder die MAPI die [IMAPIAdviseSink::OnNotify-Methode](imapiadvisesink-onnotify.md) der registrierten Hinweissenke auf. Einer der Parameter für **OnNotify**, eine Benachrichtigungsstruktur, enthält Informationen, die das spezifische Ereignis beschreiben.
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Auf Systemen, die mehrere Threads der Ausführung unterstützen, kann **** der Aufruf von OnNotify auch jederzeit in jedem Thread auftreten. Wenn Sie sicherstellen möchten, dass Benachrichtigungen nur zu einem bestimmten Zeitpunkt für einen bestimmten Thread auftreten, rufen Sie die [HrThisThreadAdviseSink](hrthisthreadadvisesink.md) -Funktion auf, um das Advise-Senke-Objekt zu generieren, das Sie an die **Advise** -Methode weitergeben. 
+Auf Systemen, die mehrere Ausführungsthreads unterstützen, kann der Aufruf von **OnNotify** jederzeit auch in jedem Thread erfolgen. Wenn Sie sicher sein müssen, dass Benachrichtigungen nur zu einem bestimmten Zeitpunkt in einem bestimmten Thread auftreten, rufen Sie die [HrThisThreadAdviseSink-Funktion](hrthisthreadadvisesink.md) auf, um das Advise Sink-Objekt zu generieren, das Sie an die **Advise-Methode** übergeben. 
   
-Um zu bestimmen, wann sich ein Client abgemeldet hat, registrieren Sie sich in Ihrem Dienstanbieter, indem Sie **Advise** aufrufen, wobei _lpEntryID_ auf NULL festgelegt und _cbEntryID_ auf 0 festgelegt ist. Wenn die Abmeldung auftritt, erhalten Sie eine fnevExtended-Benachrichtigung. 
+Um zu bestimmen, wann sich ein Client abgemeldet hat, registrieren Sie sich für Benachrichtigungen in Ihrem Dienstanbieter, indem Sie **Advise** aufrufen,  _wenn lpEntryID_ auf NULL und  _cbEntryID_ auf 0 festgelegt ist. Wenn die Abmeldung auftritt, erhalten Sie eine fnevExtended-Benachrichtigung. 
   
-Nachdem ein Anruf bei **Advise** erfolgreich abgeschlossen wurde und bevor [IMAPISession:: Unadvise](imapisession-unadvise.md) aufgerufen wurde, um die Registrierung abzubrechen, lassen Sie Ihr Advise-Senke-Objekt Los, es sei denn, Sie haben eine bestimmte langfristige Verwendung dafür. 
+Nachdem ein Aufruf von **Advise** erfolgreich war und [bevor IMAPISession::Unadvise](imapisession-unadvise.md) zum Abbrechen der Registrierung aufgerufen wurde, geben Sie Ihr Advise Sink-Objekt frei, es sei denn, Sie haben eine bestimmte langfristige Verwendung dafür. 
   
 Eine Übersicht über den Benachrichtigungsprozess finden Sie unter [Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md). 
   
@@ -139,7 +139,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|BaseDialog. cpp  <br/> |CBaseDialog:: OnNotificationsOn  <br/> |MFCMAPI verwendet die **IMAPISession:: Advise** -Methode, um Benachrichtigungen für die Sitzung zu registrieren.  <br/> |
+|BaseDialog.cpp  <br/> |CBaseDialog::OnNotificationsOn  <br/> |MFCMAPI verwendet die **IMAPISession::Advise-Methode, um** sich für Benachrichtigungen für die Sitzung zu registrieren.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

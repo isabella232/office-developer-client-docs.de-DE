@@ -20,20 +20,20 @@ ms.locfileid: "33420689"
 
 Enthält den Wert und die beschreibende Eingabeaufforderung für jede benutzerdefinierte Zelle in Ihrer Lösung. Ein Shape enthält für jedes Paar von Zellen mit Wert und Eingabeaufforderung eine User-defined Cells-Zeile.
   
-Benutzerdefinierte Zellen Zeilen werden als Benutzer bezeichnet. *Name* und enthalten die folgenden Zellen. Weitere Informationen finden Sie in den Themen zu bestimmten Zellen. 
+Benutzerdefinierte Zellenzeilen heißen User. *namen*  und die folgenden Zellen enthalten. Weitere Informationen finden Sie in den spezifischen Zellthemen. 
   
 |**Cell**|**Beschreibung**|
 |:-----|:-----|
 |[Wert](value-cell-user-defined-cells-section.md) <br/> |Gibt einen Wert für die entsprechende benutzerdefinierte Zelle an.  <br/> |
 |[Prompt](prompt-cell-user-defined-cells-section.md) <br/> |Gibt eine beschreibende Eingabeaufforderung bzw. einen Kommentar für die benutzerdefinierte Zelle an.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Benutzerdefinierte Zellen können für die Eingabe von Formeln oder Konstanten verwendet werden, auf die durch andere Zellen oder Add-Ons verwiesen wird. Werte in benutzerdefinierten Zellen sind portabel. Wenn ein Shape, das auf eine benutzerdefinierte Zelle in einem Shape verweist, in ein anderes Shape kopiert wird, das nicht dieselbe benutzerdefinierte Zelle enthält, wird die Zelle dem Shape hinzugefügt.
   
- Sie können so viele Benutzer hinzufügen.  *benennen* Sie Zeilen, die Sie benötigen, und weisen Sie den Zeilen aussagekräftige Namen zu. Um einer vorhandenen benutzerdefinierten Zelle eine Zeile hinzuzufügen, klicken Sie mit der rechten Maustaste auf eine Zeile, und klicken Sie dann im Kontextmenü auf **Zeile einfügen** . 
+ Sie können so viele Benutzer hinzufügen.  *name*  rows as you need, assign meaningful names to the rows, and set cell values. Klicken Sie zum Hinzufügen einer Zeile zu einem vorhandenen Abschnitt Benutzerdefinierte Zellen mit der rechten Maustaste auf eine Zeile, und klicken Sie im Kontextmenü **auf** Zeile einfügen. 
   
-Sie können auf diese Zellen anhand ihres Zeilennamens verweisen, der in einem ShapeSheet-Fenster in rotem Text angezeigt wird. Dem Benutzer aussagekräftige Namen zuweisen. *Name* rows, klicken Sie auf die Zeile, und geben Sie dann einen Namen wie *Offset* ein, um beispielsweise den Zeilennamen User. Offset zu erstellen. Sie können dann mithilfe von User. Offset. reansage auf die Zelle "Ansage" verweisen. 
+Sie können auf diese Zellen durch ihren Zeilennamen verweisen, der in einem ShapeSheet-Fenster in rotem Text angezeigt wird. So weisen Sie dem Benutzer aussagekräftige Namen zu. *Zeilen*  benennen, klicken Sie auf die Zeile, und geben Sie dann einen Namen wie  *Offset*  ein, z. B. zum Erstellen des Zeilennamens User.Offset. Anschließend können Sie mithilfe von User.Offset.Prompt auf die Zelle Eingabeaufforderung verweisen. 
   
 Der eingegebene Zeilenname muss innerhalb des Abschnitts eindeutig sein.
   

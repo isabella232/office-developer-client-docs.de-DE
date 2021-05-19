@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33420199"
 ---
-# <a name="sending-messages-mapi-spooler-tasks"></a>Senden von Nachrichten: MAPI-Spooler-Aufgaben
+# <a name="sending-messages-mapi-spooler-tasks"></a>Senden von Nachrichten: MAPI-Spooleraufgaben
 
   
   
@@ -27,14 +27,14 @@ Die MAPI-Warteschlange ist bei der �bertragung beteiligt, wenn der Nachrichten
   
 1. If the message is not locked, locks the message by using the [IMsgStore::SetLockState](imsgstore-setlockstate.md) method. 
     
-2. Der Transportanbieter sendet die Nachricht an alle Empfänger, deren **PR_RESPONSIBILITY** ([pidtagresponsibility (](pidtagresponsibility-canonical-property.md))-Eigenschaft auf false festgelegt ist. 
+2. Hat der Transportanbieter die Nachricht an alle Empfänger senden, für die **die Eigenschaft PR_RESPONSIBILITY** ([PidTagResponsibility](pidtagresponsibility-canonical-property.md)) auf FALSE festgelegt ist. 
     
-3. Ruft die entsprechende Funktion ([RemovePreprocessInfo](removepreprocessinfo.md)) zum Bereinigen zusätzlicher Informationen auf, die der Nachricht zur Verwendung während der Vorverarbeitung hinzugefügt wurden, wenn die **PR_PREPROCESS** ([pidtagpreprocess (](pidtagpreprocess-canonical-property.md))-Eigenschaft festgelegt wurde. This function is specified when the transport provider registers its preprocessor function. 
+3. Ruft die entsprechende Funktion ([RemovePreprocessInfo](removepreprocessinfo.md)) auf, um alle zusätzlichen Informationen zu bereinigen, die der Nachricht zur Verwendung während der Vorverarbeitung hinzugefügt wurden, wenn die **PR_PREPROCESS** ([PidTagPreprocess](pidtagpreprocess-canonical-property.md))-Eigenschaft festgelegt wurde. This function is specified when the transport provider registers its preprocessor function. 
     
 4. Calls [IMsgStore::FinishedMsg](imsgstore-finishedmsg.md) method. In **FinishedMsg**, the message store provider:
     
   - Hebt die Sperre der Nachricht.
     
-  - Calls the [IMAPISupport::DoSentMail](imapisupport-dosentmail.md) method to perform outbound hook processing if a messaging hook provider exists. Anschließend wird die Nachricht in den Ordner kopiert, der durch die Eintrags-ID in der **PR_SENTMAIL_ENTRYID** ([pidtagsentmailentryid (](pidtagsentmailentryid-canonical-property.md))-Eigenschaft identifiziert wird, wenn Sie nicht durch die Verarbeitung der gesendeten Nachrichten eines Messaging-Hooks ersetzt wird. Schließlich wird die Nachricht gelöscht, wenn die **PR_DELETE_AFTER_SUBMIT** ([pidtagdeleteaftersubmit (](pidtagdeleteaftersubmit-canonical-property.md))-Eigenschaft auf true festgelegt wurde. 
+  - Calls the [IMAPISupport::DoSentMail](imapisupport-dosentmail.md) method to perform outbound hook processing if a messaging hook provider exists. Anschließend wird die Nachricht in den Ordner kopiert, der durch den Eintragsbezeichner in der **PR_SENTMAIL_ENTRYID** ([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md))-Eigenschaft identifiziert wird, wenn dies nicht durch die gesendete Nachrichtenverarbeitung eines Messaging-Hookanbieters ersetzt wird. Schließlich wird die Nachricht gelöscht, wenn **die PR_DELETE_AFTER_SUBMIT** ([PidTagDeleteAfterSubmit](pidtagdeleteaftersubmit-canonical-property.md)) -Eigenschaft auf TRUE festgelegt wurde. 
     
 

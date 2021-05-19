@@ -1,5 +1,5 @@
 ---
-title: Rendern einer Anlage im nur-Text-Format
+title: Rendern einer Anlage in Nur-Text
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,28 +15,28 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33410875"
 ---
-# <a name="rendering-an-attachment-in-plain-text"></a>Rendern einer Anlage im nur-Text-Format
+# <a name="rendering-an-attachment-in-plain-text"></a>Rendern einer Anlage in Nur-Text
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Wenn Sie eine Anlage in einer Nachricht mit nur-Text rendern möchten, rufen Sie die **PR_RENDERING_POSITION** ([pidtagrenderingposition (](pidtagrenderingposition-canonical-property.md))-Eigenschaft der Anlage ab, und wenden Sie Sie auf die Daten im **PR_ATTACH_RENDERING** ([pidtagattachrendering (](pidtagattachrendering-canonical-property.md)) an. Eigenschaft. Es gibt zwei Möglichkeiten zum Abrufen von **PR_RENDERING_POSITION**:
+Um eine Anlage in einer Nachricht mit Nur-Text zu rendern, rufen Sie die **PR_RENDERING_POSITION** ([PidTagRenderingPosition](pidtagrenderingposition-canonical-property.md))-Eigenschaft der Anlage ab, und wenden Sie sie auf die Daten in der **PR_ATTACH_RENDERING** ([PidTagAttachRendering](pidtagattachrendering-canonical-property.md))-Eigenschaft an. Es gibt zwei Möglichkeiten zum Abrufen **PR_RENDERING_POSITION:**
   
-- Öffnen Sie die Anlage durch Aufrufen der **IMessage:: openattach** -Methode der Nachricht, und Fragen Sie dann nach der **PR_RENDERING_POSITION** -Eigenschaft, indem Sie die **IMAPIProp::** GetProps-Methode der Anlage aufrufen. Weitere Informationen finden Sie unter [IMessage:: openattach](imessage-openattach.md) und [IMAPIProp::](imapiprop-getprops.md)GetProps.
+- Öffnen Sie die Anlage, indem Sie die **IMessage::OpenAttach-Methode** der Nachricht aufrufen und dann nach der **PR_RENDERING_POSITION-Eigenschaft** fragen, indem Sie die **IMAPIProp::GetProps-Methode** der Anlage aufrufen. Weitere Informationen finden Sie unter [IMessage::OpenAttach](imessage-openattach.md) und [IMAPIProp::GetProps](imapiprop-getprops.md).
     
-- Rufen Sie die **IMessage:: GetAttachment** Table-Methode der Nachricht auf, und rufen Sie die Spalte ab, die die **PR_RENDERING_POSITION** -Eigenschaft enthält. Diese Methode ist immer vorzuziehen. For more information, see [IMessage::GetAttachmentTable](imessage-getattachmenttable.md).
+- Rufen Sie die **IMessage::GetAttachmentTable-Methode** der Nachricht auf, um auf die Anlagentabelle zu zugreifen und die Spalte abzurufen, die die PR_RENDERING_POSITION **enthält.** Diese Methode ist immer vorzuziehen. For more information, see [IMessage::GetAttachmentTable](imessage-getattachmenttable.md).
     
-Beachten Sie, dass viele RTF-fähige Nachrichtenspeicher **PR_RENDERING_POSITION** erst berechnen, wenn ein Client die **PR_BODY** ([pidtagbody (](pidtagbody-canonical-property.md))-Eigenschaft einer Nachricht anfordert. Bis zu diesem Zeitpunkt stellt **PR_RENDERING_POSITION** in der Regel einen Näherungswert dar. Nachrichtenspeicher Anbieter können Clients einen Näherungswert liefern, um die Leistung zu verbessern. 
+Beachten Sie, dass viele #A0 erst  dann PR_RENDERING_POSITION berechnet werden, wenn ein Client die **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md))-Eigenschaft einer Nachricht anfordert. Bis zu diesem Zeitpunkt **stellt PR_RENDERING_POSITION** in der Regel einen ungefähren Wert dar. Anbieter von Nachrichtenspeichern dürfen Clients einen ungefähren Wert zur Verbesserung der Leistung zur Verfügung stellen. 
   
-Das Rendering für eine Datei oder eine binäre Anlage wird in der **PR_ATTACH_RENDERING** -Eigenschaft gespeichert. Sie können **PR_ATTACH_RENDERING** auf die gleiche Weise abrufen wie **PR_RENDERING_POSITION**: direkt aus der Anlage oder aus der Attachment-Tabelle. Für **PR_ATTACH_RENDERING**ist die erste Strategie, wenngleich zeitaufwändiger, sicherer. Da einige Nachrichtenspeicher Anbieter ihre Tabellenspalten auf 255 Byte oder in einigen Fällen 510 Byte abschneiden, ist es schwierig, sicherzustellen, dass die **PR_ATTACH_RENDERING** -Spalte das vollständige RENDERING enthält. Wenn Sie die Eigenschaft direkt aus der Anlage abrufen, ist Sie immer vollständig. 
+Das Rendering für eine Datei oder binäre Anlage wird in der PR_ATTACH_RENDERING **gespeichert.** Sie haben die Wahl, PR_ATTACH_RENDERING Wie Sie PR_RENDERING_POSITION **:** direkt aus der Anlage oder aus der Anlagentabelle abgerufen haben.  Für **PR_ATTACH_RENDERING** ist die erste Strategie zwar zeitaufwändiger, aber sicherer. Da einige Nachrichtenspeicheranbieter ihre Tabellenspalten auf 255 Byte oder in einigen Fällen auf 510 Byte kürzen, ist es schwierig sicherzustellen, dass die **spalte PR_ATTACH_RENDERING** das vollständige Rendering enthält. Wenn Sie die Eigenschaft direkt aus der Anlage abrufen, ist sie immer vollständig. 
   
-Weder OLE noch Nachrichtenanlagen legen **PR_ATTACH_RENDERING**fest. Stattdessen werden Informationen zum Rendern von OLE 1-Anlagen im Nachrichtentextdaten Strom gespeichert. Bei OLE 2-Anlagen wird es in einem speziellen untergeordneten Stream des Storage-Objekts gespeichert. Renderinginformationen für Nachrichtenanlagen stehen über den Formular-Manager zur Verfügung. 
+Weder OLE noch Nachrichtenanlagen werden **PR_ATTACH_RENDERING.** Stattdessen werden Renderinginformationen für OLE 1-Anlagen im Nachrichtentextdatenstrom gespeichert. Für OLE 2-Anlagen wird sie in einem speziellen untergeordneten Datenstrom des Speicherobjekts gespeichert. Renderinginformationen für Nachrichtenanlagen sind über den Formular-Manager verfügbar. 
   
  **So rufen Sie das Rendering für eine Nachrichtenanlage ab**
   
-1. Verwenden Sie die Nachrichtenklasse der Nachricht, um auf den Formular-Manager zuzugreifen.
+1. Verwenden Sie die Nachrichtenklasse der Nachricht, um auf den Formular-Manager zu zugreifen.
     
-2. Zugreifen auf die **PR_MINI_ICON** -Eigenschaft des Formular-Managers. Weitere Informationen finden Sie unter **PR_MINI_ICON** ([pidtagminiicon (](pidtagminiicon-canonical-property.md)).
+2. Greifen Sie auf die PR_MINI_ICON des **Formular-Managers** zu. Weitere Informationen finden Sie unter **PR_MINI_ICON** ([PidTagMiniIcon](pidtagminiicon-canonical-property.md)).
     
 

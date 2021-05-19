@@ -23,10 +23,10 @@ ms.locfileid: "33410203"
   
  **So löschen Sie ein Profil**
   
-- Rufen Sie [IProfAdmin auf::D eleteprofile](iprofadmin-deleteprofile.md).
+- Rufen [Sie IProfAdmin::D eleteProfile auf.](iprofadmin-deleteprofile.md)
     
- **DeleteProfile** kennzeichnet das Profil zum Löschen, wenn es derzeit verwendet wird, und wartet, bis es nicht mehr aktiv ist, um es zu entfernen. Das Profil wird nicht tatsächlich ausgeblendet, bis jeder Client mit einer aktiven Sitzung die Verbindung getrennt hat. 
+ **DeleteProfile** markiert das Profil zum Löschen, wenn es derzeit verwendet wird, und wartet, bis es nicht mehr aktiv ist, um es zu entfernen. Das Profil wird erst ausgeblendet, wenn jeder Client mit einer aktiven Sitzung die Verbindung getrennt hat. 
   
- **DeleteProfile** Ruft die Einstiegspunktfunktion jedes Nachrichtendiensts im Profil auf, wobei der Parameter _ulContext_ auf MSG_SERVICE_DELETE festgelegt ist. Die Aufrufe der Einstiegspunktfunktionen treten auf, bevor die Dienste physisch aus dem Profil entfernt werden. 
+ **DeleteProfile** ruft die Einstiegspunktfunktion jedes Nachrichtendiensts im Profil auf, bei dem der  _ulContext-Parameter_ auf MSG_SERVICE_DELETE. Die Aufrufe der Einstiegspunktfunktionen erfolgen, bevor die Dienste physisch aus dem Profil entfernt werden. 
   
 

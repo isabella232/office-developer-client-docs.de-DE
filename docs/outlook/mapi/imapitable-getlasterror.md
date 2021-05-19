@@ -25,7 +25,7 @@ ms.locfileid: "33419002"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt eine [MAPIERROR](mapierror.md) -Struktur mit Informationen über den vorherigen Fehler in der Tabelle zurück. 
+Gibt eine [MAPIERROR-Struktur](mapierror.md) zurück, die Informationen zum vorherigen Fehler in der Tabelle enthält. 
   
 ```cpp
 HRESULT GetLastError(
@@ -39,19 +39,19 @@ LPMAPIERROR FAR * lppMAPIError
 
  _hResult_
   
-> in HRESULT mit dem im vorherigen Methodenaufruf generierten Fehler.
+> [in] HRESULT, das den fehler enthält, der im vorherigen Methodenaufruf generiert wurde.
     
  _ulFlags_
   
-> in Bitmaske von Flags, die den Typ der zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
+> [in] Bitmaske von Flags, die den Typ der zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
     
 MAPI_UNICODE 
   
-> Die Zeichenfolgen in der **MAPIERROR** -Struktur, die im _lppMAPIError_ -Parameter zurückgegeben werden, sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format. 
+> Die Zeichenfolgen in der **MAPIERROR-Struktur,** die im  _lppMAPIError-Parameter_ zurückgegeben wird, sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Zeichenfolgen im ANSI-Format. 
     
  _lppMAPIError_
   
-> Out Zeiger auf einen Zeiger auf die zurückgegebene **MAPIERROR** -Struktur, die Versions-, Komponenten-und Kontextinformationen für den Fehler enthält. Der _lppMAPIError_ -Parameter kann auf NULL festgelegt werden, wenn eine **MAPIERROR** -Struktur mit entsprechenden Informationen nicht bereitgestellt werden kann. 
+> [out] Zeiger auf einen Zeiger auf die zurückgegebene **MAPIERROR-Struktur,** die Versions-, Komponenten- und Kontextinformationen für den Fehler enthält. Der  _lppMAPIError-Parameter_ kann auf NULL festgelegt werden, wenn keine **MAPIERROR-Struktur** mit entsprechenden Informationen bereitgestellt werden kann. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -61,21 +61,21 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> Entweder wurde das MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt Unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
+> Entweder wurde MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt Unicode nicht, oder MAPI_UNICODE nicht festgelegt, und die Implementierung unterstützt nur Unicode.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPITable:: getlasterroraufzurufen** -Methode gibt detaillierte Informationen zu einem fehlgeschlagenen Methodenaufruf zurück, falls verfügbar. Diese Informationen können in einer Nachricht oder einem Dialogfeld angezeigt werden. 
+Die **IMAPITable::GetLastError-Methode** gibt detaillierte Informationen zu einem vorherigen Methodenaufruf zurück, der fehlgeschlagen ist. Diese Informationen können in einer Nachricht oder in einem Dialogfeld angezeigt werden. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Rufen Sie **getlasterroraufzurufen** auf, wenn Sie Informationen zu einem Fehler für den Benutzer anzeigen müssen. 
+Rufen **Sie GetLastError** auf, wenn Dem Benutzer Informationen zu einem Fehler anzeigen müssen. 
   
-Sie können die [MAPIERROR](mapierror.md) -Struktur verwenden, auf die durch den _lppMAPIError_ -Parameter verwiesen wird, wenn das Table-Objekt nur dann einen Wert angibt, wenn **getlasterroraufzurufen** S_OK zurückgibt. In einigen Fällen kann die Tabellen Implementierung nicht ermitteln, was der letzte Fehler war oder nicht mehr über den Fehler berichtet. In dieser Situation ist der Zeiger bei _lppMAPIError_ auf NULL festgelegt. 
+Sie können die [MAPIERROR-Struktur](mapierror.md) verwenden, auf die der  _lppMAPIError-Parameter_ verweist, wenn das Tabellenobjekt nur dann eins liefert, wenn **GetLastError** S_OK. Manchmal kann die Tabellenimplementierung nicht bestimmen, was der letzte Fehler war oder hat nichts mehr über den Fehler zu melden. In diesem Fall ist der Zeiger bei  _lppMAPIError_ auf NULL festgelegt. 
   
-Rufen Sie die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion auf, um den gesamten für die **MAPIERROR** -Struktur reservierten Arbeitsspeicher freizugeben. 
+Rufen Sie die [MAPIFreeBuffer-Funktion](mapifreebuffer.md) auf, um den für die **MAPIERROR-Struktur** zugewiesenen Arbeitsspeicher frei zu geben. 
   
-Weitere Informationen zur **getlasterroraufzurufen** -Methode finden Sie unter [MAPI Extended Errors](mapi-extended-errors.md).
+Weitere Informationen zur **GetLastError-Methode** finden Sie unter [MAPI Extended Errors](mapi-extended-errors.md).
   
 ## <a name="see-also"></a>Siehe auch
 

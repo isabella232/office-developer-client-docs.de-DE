@@ -25,12 +25,12 @@ ms.locfileid: "33415691"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl der Bytes in einer vorhandenen [SSortOrderSet](ssortorderset.md) -Struktur. 
+Berechnet die Anzahl der Bytes in einer vorhandenen [SSortOrderSet-Struktur.](ssortorderset.md) 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |**SSortOrderSet** <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |**SSortOrderSet** <br/> |
    
 ```cpp
 CbSSortOrderSet (_lpset)
@@ -38,9 +38,9 @@ CbSSortOrderSet (_lpset)
 
 ## <a name="parameters"></a>Parameter
 
- __lpset_
+ _ _lpset_
   
-> Zeiger auf die vorhandene **SSortOrderSet** -Struktur. 
+> Zeiger auf die vorhandene **SSortOrderSet-Struktur.** 
     
 ## <a name="see-also"></a>Siehe auch
 

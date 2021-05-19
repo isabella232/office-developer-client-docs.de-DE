@@ -25,19 +25,19 @@ Gibt an, ob ein Pfad auf dem Zeichenblatt angezeigt wird.
 | TRUE  <br/> | Der Strich und die Füllung des Pfads, der durch den Abschnitt dargestellt wird, sind ausgeblendet.  <br/> |
 | FALSE  <br/> | Der Strich und die Füllung des Pfades werden angezeigt.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle noShow aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle NoShow anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Geometrie *i* . NoShow Where *i* = <1>, 2, 3...  <br/> |
+| Zellenname:  <br/> | Geometry  *i*  . NoShow,  *wobei i*  = <1>, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle noShow aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle NoShow nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**visSectionFirstComponent** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+| Abschnittsindex:  <br/> |**visSectionFirstComponent**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
 | Zeilenindex:  <br/> |**visRowComponent** <br/> |
 | Zellenindex:  <br/> |**visCompNoShow** <br/> |
    

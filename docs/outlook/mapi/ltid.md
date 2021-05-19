@@ -21,7 +21,7 @@ ms.locfileid: "33419436"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Generische Langzeit-ID eines Objekts in einem Outlook-Speicher.
+Generische Long Term ID eines Objekts in einem Outlook Speichern.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -38,15 +38,15 @@ struct LTID
 
  _guid_
   
-- Out Die GUID des Servers, der das Objekt erstellt hat.
+- [out] Die GUID des Servers, der das Objekt erstellt hat.
     
- _globcnt_
+ _globecnt_
   
-- Out Eine eindeutige 6-Byte-Zahl, die das Objekt innerhalb des Outlook-Speichers identifiziert.
+- [out] Eine eindeutige 6-Byte-Zahl, die das Objekt innerhalb des Outlook identifiziert.
     
  _wLevel_
   
-- Out Die Hierarchieebene der Eintrags-ID für einen öffentlichen Exchange-Ordner.
+- [out] Die Hierarchieebene der Eintrags-ID für einen Exchange öffentlichen Favoritenordners.
     
 ## <a name="see-also"></a>Siehe auch
 

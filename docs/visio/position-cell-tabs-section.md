@@ -20,20 +20,20 @@ ms.locfileid: "33409930"
 
 Definiert die Position eines Tabstopps. Dieser Wert ist unabhängig vom Zeichnungsmaßstab. Wenn die Zeichnung maßstäblich ist, bleibt die Tabstoppposition unverändert.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle Position aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle Position anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Registerkarten.  *IJ* , wobei *i* und *j* = <1>, 2, 3...  <br/> |
+| Zellenname:  <br/> | Registerkarten.  *ij,*            *wobei i*  und  *j*  = <1>, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Position nach Index aus einem Programm erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle Position nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionTab** <br/> |
-| Zeilenindex:  <br/> |**visRowTab** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
-| Zellenindex:  <br/> | (*j* * 3) + **visTabPos** <br/> |
+| Zeilenindex:  <br/> |**visRowTab**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
+| Zellenindex:  <br/> | (*j*  *3) + **visTabPos** <br/> |
    
 

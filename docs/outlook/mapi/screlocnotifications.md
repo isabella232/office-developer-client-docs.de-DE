@@ -25,13 +25,13 @@ ms.locfileid: "33415201"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Passt einen Zeiger in einem angegebenen Ereignis Benachrichtigungs Array an. 
+Passt einen Zeiger innerhalb eines angegebenen Ereignisbenachrichtigungsarrays an. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 SCODE ScRelocNotifications(
@@ -47,23 +47,23 @@ SCODE ScRelocNotifications(
 
  _cntf_
   
-> in Die Anzahl [](notification.md) der Benachrichtigungs Strukturen im durch den _rgntf_ -Parameter angegebenen Array. 
+> [in] Anzahl der [NOTIFICATION-Strukturen](notification.md) im Array, das durch den  _rgntf-Parameter angegeben_ wird. 
     
  _rgntf_
   
-> in Zeiger auf das Array von **Benachrichtigungs** Strukturen, die Ereignisbenachrichtigungen definieren, innerhalb derer ein Zeiger angepasst werden soll. 
+> [in] Zeiger auf das Array von **NOTIFICATION-Strukturen,** in dem Ereignisbenachrichtigungen definiert werden, innerhalb derer ein Zeiger angepasst werden soll. 
     
  _pvBaseOld_
   
-> in Zeiger auf die ursprüngliche Basisadresse des vom _rgntf_ -Parameter angegebenen Arrays. 
+> [in] Zeiger auf die ursprüngliche Basisadresse des Arrays, die durch den  _rgntf-Parameter angegeben_ wird. 
     
- _pvBaseNew_
+ _pvBaseNeu_
   
-> in Der Speicherort, an den **ScRelocNotifications** die neue Basisadresse des durch den _rgntf_ -Parameter angegebenen Arrays schreibt. 
+> [in] Der Speicherort, an den **ScRelocNotifications** die neue Basisadresse des arrays schreibt, das durch den  _rgntf-Parameter angegeben_ wird. 
     
- _PCB_
+ _leiterplatte_
   
-> Out Zeiger auf die Größe des vom _pvBaseNew_ -Parameter angegebenen Arrays in Byte. 
+> [out] Zeiger auf die Größe des durch den  _parameter pvBaseNew_ angegebenen Arrays in Bytes. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -75,9 +75,9 @@ MAPI_E_INVALID_PARAMETER
   
 > Es wurde eine ungültige Benachrichtigung gefunden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Der _PCB_ -Parameter für die **ScRelocNotifications** -Funktion ist optional. 
+Der  _Parameter "pcb"_ für die **ScRelocNotifications-Funktion** ist optional. 
   
 ## <a name="see-also"></a>Siehe auch
 

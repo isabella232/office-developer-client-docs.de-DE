@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251604
 localization_priority: Normal
 ms.assetid: dcbc240a-e36d-b27f-02c3-fd1eac04114a
-description: Gibt das Datum und die Uhrzeit der Erstellung eines Dokuments als seriellen Wert zurück.
+description: Gibt das Datum und die Uhrzeit zurück, zu der ein Dokument erstellt wurde, als serieller Wert.
 ms.openlocfilehash: a1f66a8fe2561578a2b37deefcfa6556f10455a0
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,13 +18,13 @@ ms.locfileid: "33419968"
 ---
 # <a name="doccreation-function"></a>DOCCREATION Function
 
-Gibt das Datum und die Uhrzeit der Erstellung eines Dokuments als seriellen Wert zurück.
+Gibt das Datum und die Uhrzeit zurück, zu der ein Dokument erstellt wurde, als serieller Wert.
   
 ## <a name="syntax"></a>Syntax
 
 DOCCREATION ()
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Verwenden Sie die FORMAT-Funktion, um den Wert zu formatieren. 
   

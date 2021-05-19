@@ -21,28 +21,28 @@ ms.locfileid: "33419625"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Das Format der SMTP-e-Mail-Adressen ist in RFC 822 definiert. MAPI-Komponenten sollten jede Adresse behandeln, die diesem Standard entspricht. Es gibt jedoch eine bestimmte Form der RFC 822-Adresse, die die MAPI-Adressen am besten codiert:
+Das Format von SMTP-E-Mail-Adressen ist in RFC 822 definiert. MAPI-Komponenten sollten alle Adressen behandeln, die diesem Standard entsprechen. Es gibt jedoch eine bestimmte Form von RFC 822-Adresse, die MAPI-Adressen am besten codiert:
   
- _Anzeigename_ **\<** _e-Mail-Adresse_**\>**
+ _Anzeigename_ **\<** _E-Mail-Adresse_**\>**
   
-Die eckigen Klammern sind als Literale enthalten. Leerzeichen sind in Anzeige Namen gebräuchlich. Sie müssen nicht zitiert werden. Eine typische Adresse könnte wie diese aussehen, die zu einem der Mitverfasser von RFC 1521 gehört:
+Die eckigen Klammern sind als Literale enthalten. Leerstellen werden häufig in Anzeigenamen verwendet. sie müssen nicht angegeben werden. Eine typische Adresse kann wie diese aussehen, die zu einem der Mitautoren von RFC 1521 gehört:
   
-Nathaniel Borenstein \<NSB@bellcore.com\>
+Nataniel Borenstein \< nsb@bellcore.com\>
   
-Wenn der Anzeigename Zeichen enthält, die eine besondere Bedeutung in SMTP-Adressen wie \< oder @ haben, sollte der gesamte Anzeigename in doppelte Anführungszeichen eingeschlossen werden. Wenn die Gesamtlänge der e-Mail-Adresse und der Anzeigename bei ausgehenden e-Mails 255 Zeichen überschreitet, sollte der Anzeigename gelöscht werden.
+Wenn der Anzeigename Zeichen enthält, die in SMTP-Adressen eine besondere Bedeutung haben, z. B. oder @, sollte der gesamte Anzeigename in doppelte \< Anführungszeichen gesetzt werden. Wenn die Gesamtlänge der E-Mail-Adresse plus Anzeigename bei ausgehenden E-Mails 255 Zeichen überschreitet, sollte der Anzeigename gelöscht werden.
   
-Die Teile einer SMTP-Adresse werden wie folgt in MAPI-Eigenschaften zugeordnet:
+Die Teile einer SMTP-Adresszuordnung werden den MAPI-Eigenschaften wie folgt gegliedert:
   
 |**SMTP-Adresskomponente**|**MAPI-Eigenschaft**|
 |:-----|:-----|
 | _Anzeigename_ für alle Empfänger  <br/> |**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |
-| _Anzeigename_ für vom-Feld  <br/> |**PR_SENDER_NAME** ([PidTagSenderName](pidtagsendername-canonical-property.md))  <br/> |
-| _Anzeigename_ für Absenderfeld  <br/> |**PR_SENT_REPRESENTING_NAME** ([PidTagSentRepresentingName](pidtagsentrepresentingname-canonical-property.md))  <br/> |
-| _e-Mail-Adresse_ <br/> |**PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))  <br/> |
-|implizit, immer "SMTP"  <br/> |**PR_ADDRTYPE** ([Pidtagaddresstype (](pidtagaddresstype-canonical-property.md))  <br/> |
+| _Anzeigename für_ Feld "Von"  <br/> |**PR_SENDER_NAME** ([PidTagSenderName](pidtagsendername-canonical-property.md))  <br/> |
+| _Anzeigename für_ das Feld "Sender"  <br/> |**PR_SENT_REPRESENTING_NAME** ([PidTagSentRepresentingName](pidtagsentrepresentingname-canonical-property.md))  <br/> |
+| _E-Mail-Adresse_ <br/> |**PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))  <br/> |
+|implizit, immer "SMTP"  <br/> |**PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))  <br/> |
    
-Wenn kein Anzeigename für eine Adresse bei eingehenden e-Mails vorhanden ist, sollte stattdessen die gesamte e-Mail-Adresse verwendet werden. Der Adresstyp ist immer SMTP.
+Wenn für eine Adresse in eingehenden E-Mails kein Anzeigename vorhanden ist, sollte stattdessen die gesamte E-Mail-Adresse verwendet werden. Der Adresstyp ist immer SMTP.
   
-Empfänger Eigenschaften werden aus der Empfängertabelle der MAPI-Nachricht entnommen. Absender Eigenschaften werden aus der Nachricht selbst entnommen.
+Empfängereigenschaften werden aus der Empfängertabelle der #A0 übernommen. Absendereigenschaften werden aus der Nachricht selbst übernommen.
   
 

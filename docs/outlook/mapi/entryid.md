@@ -25,11 +25,11 @@ ms.locfileid: "33415271"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine Eintrags-ID für ein MAPI-Objekt. 
+Enthält einen Eintragsbezeichner für ein MAPI-Objekt. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
 |Verwandte Makros:  <br/> |[CbNewENTRYID](cbnewentryid.md), [SizedENTRYID](sizedentryid.md) <br/> |
    
 ```cpp
@@ -41,15 +41,15 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **abFlags**
   
-> Bitmaske von Flags, die Informationen zur Beschreibung des Objekts enthalten. Nur das erste Byte der Flags, **abFlags [0]**, kann vom Anbieter festgelegt werden; die anderen drei sind reserviert. Diese Flags dürfen nicht für dauerhafte Eintragsbezeichner festgelegt werden; Sie werden nur für kurzfristige Eintrags-IDs festgelegt. Für Clients ist diese Struktur schreibgeschützt. Die folgenden Flags können in **abFlags [0]** festgelegt werden:
+> Bitmaske von Flags, die Informationen bereitstellen, die das Objekt beschreiben. Nur das erste Byte der Flags, **abFlags[0]**, kann vom Anbieter festgelegt werden. die anderen drei sind reserviert. Diese Kennzeichen dürfen nicht für permanente Eintragsbezeichner festgelegt werden. sie werden nur für kurzfristige Eintragsbezeichner festgelegt. Für Clients ist diese Struktur schreibgeschützt. Die folgenden Flags können in **abFlags[0]** festgelegt werden:
     
 MAPI_NOTRECIP 
   
-> Die Eintrags-ID kann nicht als Empfänger einer Nachricht verwendet werden.
+> Der Eintragsbezeichner kann nicht als Empfänger für eine Nachricht verwendet werden.
     
 MAPI_NOTRESERVED 
   
@@ -57,23 +57,23 @@ MAPI_NOTRESERVED
     
 MAPI_NOW 
   
-> Die Eintrags-ID kann nicht zu anderen Zeiten verwendet werden.
+> Der Eintragsbezeichner kann zu anderen Zeiten nicht verwendet werden.
     
 MAPI_SHORTTERM 
   
-> Die Eintrags-ID ist kurzfristig. Alle anderen Werte in diesem Byte müssen festgelegt werden, es sei denn, andere Verwendungen der Eintrags-ID sind aktiviert.
+> Der Eintragsbezeichner ist kurzfristig. Alle anderen Werte in diesem Byte müssen festgelegt werden, es sei denn, andere Verwendungen der Eintrags-ID sind aktiviert.
     
 MAPI_THISSESSION 
   
-> Die Eintrags-ID kann nicht in anderen Sitzungen verwendet werden.
+> Der Eintragsbezeichner kann nicht für andere Sitzungen verwendet werden.
     
  **ab**
   
-> Gibt ein Array von Binärdaten an, die von Dienstanbietern verwendet werden. Die Clientanwendung kann dieses Array nicht verwenden.
+> Gibt ein Array von Binärdaten an, das von Dienstanbietern verwendet wird. Die Clientanwendung kann dieses Array nicht verwenden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **Eintrags** -ID-Struktur wird vom Nachrichtenspeicher und den Adressbuch Anbietern verwendet, um eindeutige Bezeichner für Ihre Objekte zu erstellen. Eintrags-IDs werden verwendet, um die folgenden Objekttypen zu identifizieren: 
+Die **ENTRYID-Struktur** wird von Nachrichtenspeicher- und Adressbuchanbietern verwendet, um eindeutige Bezeichner für ihre Objekte zu erstellen. Eingabebezeichner werden verwendet, um die folgenden Objekttypen zu identifizieren: 
   
 - Nachrichtenspeicher
     
@@ -85,35 +85,35 @@ Die **Eintrags** -ID-Struktur wird vom Nachrichtenspeicher und den Adressbuch An
     
 - Verteilerlisten
     
-- Messaging Benutzer
+- Messagingbenutzer
     
 - Statusobjekte
     
 - Profilabschnitte
     
-Jeder Anbieter verwendet ein Format für die **Eintrags** -Struktur, die für diesen Anbieter sinnvoll ist. 
+Jeder Anbieter verwendet ein Format für die **ENTRYID-Struktur,** das für diesen Anbieter sinnvoll ist. 
   
-Eintragsbezeichner lassen sich nicht direkt miteinander vergleichen, da ein Objekt durch zwei unterschiedliche binäre Werte dargestellt werden kann. Rufen Sie die [IMAPISession:: CompareEntryIDs](imapisession-compareentryids.md) -Methode auf, um zu bestimmen, ob zwei Eintragsbezeichner dasselbe Objekt darstellen. 
+Eintragsbezeichner lassen sich nicht direkt miteinander vergleichen, da ein Objekt durch zwei unterschiedliche binäre Werte dargestellt werden kann. Um zu bestimmen, ob zwei Eintragsbezeichner dasselbe Objekt darstellen, rufen Sie die [IMAPISession::CompareEntryIDs-Methode](imapisession-compareentryids.md) auf. 
   
-Wenn ein Client die [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode eines Objekts zum Abrufen seiner Eintrags-ID aufruft, gibt das Objekt die dauerhaftste Form der Eintrags-ID zurück. Ein Client kann überprüfen, ob eine Eintrags-ID langfristig ist, indem er überprüft, ob keines der Flags im ersten Byte des **abFlags** -Members festgelegt ist. 
+Wenn ein Client die [IMAPIProp::GetProps-Methode](imapiprop-getprops.md) eines Objekts aufruft, um den Eintragsbezeichner abzurufen, gibt das Objekt die dauerhafteste Form der Eintrags-ID zurück. Ein Client kann überprüfen, ob ein Eintragsbezeichner langfristig ist, indem er überprüft, ob keines der Kennzeichen im ersten Byte des **abFlags-Mitglieds festgelegt** ist. 
   
-Wenn ein Client über eine Spalte in einer Tabelle auf eine Eintrags-ID zugreift, ist dieser Eintragsbezeichner höchstwahrscheinlich kurzfristig und nicht langfristig. Mit kurzfristigen Eintrags-IDs können die entsprechenden Objekte nur in der aktuellen MAPI-Sitzung geöffnet werden. Ein Client kann überprüfen, ob eine Eintrags-ID kurzfristig ist, indem er überprüft, ob alle Flags im ersten Byte des **abFlags** -Members festgelegt sind. 
+Wenn ein Client über eine Spalte in einer Tabelle auf einen Eintragsbezeichner zutritt, ist dieser Eintragsbezeichner höchstwahrscheinlich kurz- statt langfristig. Kurzfristige Eintragsbezeichner können nur in der aktuellen MAPI-Sitzung verwendet werden, um die entsprechenden Objekte zu öffnen. Ein Client kann überprüfen, ob ein Eintragsbezeichner kurzfristig ist, indem er überprüft, ob alle Kennzeichen im ersten Byte des **abFlags-Mitglieds festgelegt** sind. 
   
-Einige Eintrags-IDs sind kurzfristig, haben aber langfristige Verwendung. Eine solche Eintrags-ID verfügt über eine oder mehrere der entsprechenden Flags, die im ersten Byte des **abFlags** -Elements festgelegt sind. 
+Einige Eintragsbezeichner sind kurzfristig, haben aber eine langfristige Verwendung. Für einen solchen Eintragsbezeichner wird mindestens eines der entsprechenden Flags im ersten Byte des **abFlags-Mitglieds festgelegt.** 
   
-Eine **Eintrags** -Struktur ähnelt einer [FLATENTRY](flatentry.md) -Struktur. Es gibt jedoch einige Unterschiede: 
+Eine **ENTRYID-Struktur** ähnelt einer [FLATENTRY-Struktur.](flatentry.md) Es gibt jedoch einige Unterschiede: 
   
-- Die **** Größe der Eintrags-ID wird von einer Eintragsstruktur nicht gespeichert. eine **FLATENTRY** -Struktur. 
+- In **einer ENTRYID-Struktur** wird die Größe der Eintrags-ID nicht gespeichert. eine **FLATENTRY-Struktur.** 
     
-- Eine **Eintrags** -ID speichert die kennzeichendaten und den Rest des Eintrags Bezeichners separat; eine **FLATENTRY** -Struktur speichert die kennzeichendaten mit dem Rest der Eintrags-ID. 
+- Eine **ENTRYID-Struktur** speichert die Kennzeichendaten und den Rest der Eintrags-ID separat. Eine **FLATENTRY-Struktur** speichert die Kennzeichendaten mit dem Rest der Eintrags-ID. 
     
-- Eine **Eintrags** -Struktur wird als Parameter an die Methoden der [IMAPIProp](imapipropiunknown.md) -Schnittstelle und an die folgenden **OpenEntry** -Methoden übergeben: [IABLogon:: OpenEntry](iablogon-openentry.md), [IAddrBook::](iaddrbook-openentry.md)OpenEntry, [IMAPIContainer:: OpenEntry ](imapicontainer-openentry.md), [IMAPISession::](imapisession-openentry.md)OpenEntry, [IMAPISupport::](imapisupport-openentry.md)OpenEntry, [IMsgStore::](imsgstore-openentry.md)OpenEntry, [IMSLogon::](imslogon-openentry.md) OpenEntry
+- Eine **ENTRYID-Struktur** wird als Parameter an die Methoden der [IMAPIProp-Schnittstelle](imapipropiunknown.md) und an die folgenden **OpenEntry-Methoden** übergeben: [IABLogon::OpenEntry](iablogon-openentry.md), [IAddrBook::OpenEntry](iaddrbook-openentry.md), [IMAPIContainer::OpenEntry](imapicontainer-openentry.md), [IMAPISession::OpenEntry](imapisession-openentry.md), [IMAPISupport::OpenEntry](imapisupport-openentry.md), [IMsgStore::OpenEntry](imsgstore-openentry.md), [IMSLogon::OpenEntry](imslogon-openentry.md)
     
-- Eine **Eintrags** Struktur wird verwendet, um eine Eintrags-ID auf dem Datenträger zu speichern. Eine **FLATENTRY** -Struktur wird verwendet, um eine Eintrags-ID in einer Datei zu speichern oder in einem Stream von Bytes zu übertragen. 
+- Eine **ENTRYID-Struktur** wird verwendet, um eine Eintrags-ID auf dem Datenträger zu speichern. Eine **FLATENTRY-Struktur** wird verwendet, um eine Eintrags-ID in einer Datei zu speichern oder sie in einem Bytestrom zu übergeben. 
     
-Clients sollten immer in natürlich ausgerichteten Eintrags Bezeichnern bestehen. Obwohl Anbieter willkürlich ausgerichtete Eintrags-IDs behandeln sollten, sollten Clients dieses Verhalten nicht erwarten. Fehler bei der Übergabe einer gut ausgerichteten Eintrags-ID an eine Methode können einen Ausrichtungsfehler auf RISC-Prozessoren verursachen. 
+Clients sollten immer natürlich ausgerichtete Eintragsbezeichner übergeben. Obwohl Anbieter willkürlich ausgerichtete Eintragsbezeichner behandeln sollten, sollten Clients dieses Verhalten nicht erwarten. Wenn eine gute ausgerichtete Eintrags-ID nicht an eine Methode übergeben wird, kann dies zu einem Ausrichtungsfehler bei RISC-Prozessoren führen. 
   
-Der natürliche Ausrichtungs Faktor (in der Regel 8 Byte) ist der größte von der CPU unterstützte Datentyp und in der Regel derselbe Ausrichtungs Faktor, der von der systemspeicherzuweisung verwendet wird. Eine natürlich ausgerichtete Speicheradresse ermöglicht der CPU den Zugriff auf jeden Datentyp, der an dieser Adresse unterstützt wird, ohne einen Ausrichtungsfehler zu generieren. Bei RISC-CPUs muss ein Datentyp der Größe N Byte in der Regel auf einem geraden Vielfachen von N Bytes ausgerichtet werden, wobei die Adresse ein gerades Vielfaches von N ist.
+Der natürliche Ausrichtungsfaktor (in der Regel 8 Byte) ist der größte datentyp, der von der CPU unterstützt wird, und in der Regel der gleiche Ausrichtungsfaktor, der von der Systemspeicherzuweisung verwendet wird. Eine natürlich ausgerichtete Speicheradresse ermöglicht der CPU den Zugriff auf jeden datentyp, den sie an dieser Adresse unterstützt, ohne einen Ausrichtungsfehler zu generieren. Für RISC-CPUs muss ein Datentyp der Größe N Bytes in der Regel an einem geraden Vielfachen von N Bytes ausgerichtet werden, bei der Adresse ist ein gerades Vielfaches von N.
   
 Weitere Informationen finden Sie unter [Entry Identifiers](mapi-entry-identifiers.md). 
   
@@ -125,7 +125,7 @@ Weitere Informationen finden Sie unter [Entry Identifiers](mapi-entry-identifier
   
 [IMAPISupport::CompareEntryIDs](imapisupport-compareentryids.md)
   
-[Kanonische Pidtagrecordkey (-Eigenschaft](pidtagrecordkey-canonical-property.md)
+[PidTagRecordKey (kanonische Eigenschaft)](pidtagrecordkey-canonical-property.md)
 
 
 [MAPI-Strukturen](mapi-structures.md)

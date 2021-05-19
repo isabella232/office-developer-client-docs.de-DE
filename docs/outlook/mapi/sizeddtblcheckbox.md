@@ -23,12 +23,12 @@ ms.locfileid: "33420808"
  
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt eine benannte Struktur, die eine [DTBLCHECKBOX](dtblcheckbox.md) -Struktur zur Beschreibung eines Kontrollkästchen-Steuerelements und einer Beschriftung einer angegebenen Länge enthält. 
+Erstellt eine benannte Struktur, die eine [DTBLCHECKBOX-Struktur](dtblcheckbox.md) zum Beschreiben eines Kontrollkästchensteuerelements und einer Bezeichnung mit einer angegebenen Länge enthält. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |**DTBLCHECKBOX** <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |**DTBLCHECKBOX** <br/> |
    
 ```cpp
 SizedDtblCheckBox (n, u)
@@ -38,22 +38,22 @@ SizedDtblCheckBox (n, u)
 
 _n_
   
-> Die Länge der Bezeichnung, die in die neue Struktur eingeschlossen werden soll.
+> Länge der Bezeichnung, die in die neue Struktur eingeschlossen werden soll.
     
 _u_
   
 > Name für die neue Struktur.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Mit dem **SizedDtblCheckBox** -Makro können Sie ein Kontrollkästchen definieren, wenn die Anzahl der Bezeichnungs Zeichen bekannt ist. Die neue Struktur wird mit den folgenden Elementen erstellt: 
+Mit **dem Makro SizedDtblCheckBox** können Sie ein Kontrollkästchen definieren, wenn die Anzahl der Bezeichnungszeichen bekannt ist. Die neue Struktur wird mit den folgenden Mitgliedern erstellt: 
   
 ```cpp
 DTBLCHECKBOX dtblcheckbox;
 TCHAR lpszLabel[n];
 ```
 
-Wenn Sie einen Zeiger auf die resultierende Struktur aus dem **SizedDtblCheckBox** -Makro als **DTBLCHECKBOX** -Struktur Zeiger verwenden möchten, führen Sie die folgenden Schritte aus: 
+Führen Sie die folgende Gliederung aus, um einen Zeiger auf die resultierende Struktur des **SizedDtblCheckBox-Makros** als **DTBLCHECKBOX-Strukturzeiger** zu verwenden: 
   
 ```cpp
 lpDtblCheckBox = (LPDTBLCHECKBOX) &SizedDtblCheckBox;

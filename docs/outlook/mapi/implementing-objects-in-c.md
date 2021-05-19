@@ -19,17 +19,17 @@ ms.locfileid: "33414942"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-In C geschriebene Client Anwendungen und Dienstanbieter definieren MAPI-Objekte, indem Sie eine Datenstruktur und ein Array von sortierten Funktionszeigern erstellen, die als virtuelle Funktionstabelle oder Vtable bezeichnet werden. Ein Zeiger auf die Vtable muss das erste Element der Datenstruktur sein.
+In C geschriebene Clientanwendungen und Dienstanbieter definieren #A0 durch Erstellen einer Datenstruktur und eines Arrays von geordneten Funktionszeigern, die als virtuelle Funktionstabelle oder vtable bezeichnet werden. Ein Zeiger auf die vtable muss das erste Element der Datenstruktur sein.
   
-In der vtable selbst gibt es einen Zeiger für jede Methode in jeder Schnittstelle, die vom Objekt unterstützt wird. Die Reihenfolge der Zeiger muss der Reihenfolge der Methoden in der Schnittstellenspezifikation entsprechen, die in der Headerdatei Mapidefs. h veröffentlicht ist. Jeder Funktionszeiger in der vtable wird auf die Adresse der tatsächlichen Implementierung der Methode festgelegt. In C++ richtet der Compiler automatisch die Vtable ein. In C ist dies nicht der Fall. 
+In der vtable selbst gibt es einen Zeiger für jede Methode in jeder Schnittstelle, die vom Objekt unterstützt wird. Die Reihenfolge der Zeiger muss der Reihenfolge der Methoden in der In der Mapidefs.h-Headerdatei veröffentlichten Schnittstellenspezifikation entsprechen. Jeder Funktionszeiger in der vtable wird auf die Adresse der tatsächlichen Implementierung der Methode festgelegt. In C++ richtet der Compiler die vtable automatisch ein. In C nicht. 
   
-Die folgende Abbildung zeigt, wie dies funktioniert. Das Feld ganz links steht für einen Client, der ein Dienstanbieterobjekt verwenden muss. Über die Sitzung erhält der Client einen Zeiger auf das Objekt **lpObject**. Die Vtable wird zuerst im-Objekt angezeigt, gefolgt von privaten Daten und Methoden. Der vtable-Zeiger verweist auf die tatsächliche Vtable, die Zeiger auf jede Implementierung der Methoden in der Schnittstelle enthält. 
+Die folgende Abbildung zeigt, wie dies funktioniert. Das Feld ganz links stellt einen Client dar, der ein Dienstanbieterobjekt verwenden muss. Über die Sitzung ruft der Client einen Zeiger auf das Objekt, **lpObject , ab.** Die vtable wird zuerst im Objekt angezeigt, gefolgt von privaten Daten und Methoden. Der vtable-Zeiger zeigt auf die tatsächliche vtable, die Zeiger auf jede Implementierung der Methoden in der Schnittstelle enthält. 
   
 **Objektimplementierung**
   
-![Objekt Implementierung] (media/amapi_42.gif "Objekt Implementierung")
+![Objektimplementierung](media/amapi_42.gif "Objektimplementierung")
   
-Im folgenden Codebeispiel wird veranschaulicht, wie ein C-Dienstanbieter ein einfaches Statusobjekt definieren kann. Das erste Element ist der vtable-Zeiger; der Rest des Objekts besteht aus Datenelementen. 
+Das folgende Codebeispiel zeigt, wie ein C-Dienstanbieter ein einfaches Statusobjekt definieren kann. Das erste Element ist der #A0 Der Rest des Objekts besteht aus Datenm membern. 
   
 ```C
 typedef struct _MYSTATUSOBJECT
@@ -43,7 +43,7 @@ typedef struct _MYSTATUSOBJECT
  
 ```
 
-Da dieses Objekt ein Statusobjekt ist, enthält die vtable Zeiger auf Implementierungen der einzelnen Methoden in der [IMAPIStatus: IMAPIProp](imapistatusimapiprop.md) -Schnittstelle sowie Zeiger auf Implementierungen der einzelnen Methoden in den Basisschnittstellen – **IUnknown **und **IMAPIProp**. Die Reihenfolge der Methoden in der vtable entspricht der angegebenen Reihenfolge, wie in der Headerdatei Mapidefs. h definiert.
+Da es sich bei diesem Objekt um ein Statusobjekt handelt, enthält die vtable Zeiger auf Implementierungen der einzelnen Methoden in der [IMAPIStatus : IMAPIProp-Schnittstelle](imapistatusimapiprop.md) sowie Zeiger auf Implementierungen der einzelnen Methoden in den Basisschnittstellen – **IUnknown** und **IMAPIProp**. Die Reihenfolge der Methoden in der vtable entspricht der angegebenen Reihenfolge, die in der Mapidefs.h-Headerdatei definiert ist.
   
 ```js
 static const MYOBJECT_Vtbl vtblSTATUS =
@@ -70,9 +70,9 @@ static const MYOBJECT_Vtbl vtblSTATUS =
  
 ```
 
-In C geschriebene Clients und Dienstanbieter verwenden Objekte indirekt über die Vtable und fügen in jedem Aufruf einen Objektzeiger als ersten Parameter hinzu. Jeder Aufruf einer MAPI-Schnittstellenmethode erfordert einen Zeiger auf das Objekt, das als erster Parameter aufgerufen wird. C++ definiert einen speziellen Zeiger, der als **dieser** Zeiger bezeichnet wird. Der C++-Compiler fügt implizit den **this** -Zeiger als ersten Parameter für jeden Methodenaufruf hinzu. In C gibt es keinen solchen Zeiger; Sie muss explizit hinzugefügt werden. 
+In C geschriebene Clients und Dienstanbieter verwenden Objekte indirekt über die vtable und fügen einen Objektzeiger als ersten Parameter in jedem Aufruf hinzu. Jeder Aufruf einer MAPI-Schnittstellenmethode erfordert einen Zeiger auf das Objekt, das als erster Parameter aufgerufen wird. C++ definiert einen speziellen Zeiger, der zu diesem Zweck als **dieser** Zeiger bezeichnet wird. Der C++-Compiler fügt  den Zeiger implizit als ersten Parameter zu jedem Methodenaufruf hinzu. In C gibt es keinen solchen Zeiger. sie muss explizit hinzugefügt werden. 
   
-Der folgende Code veranschaulicht, wie ein Client einen Aufruf an eine Instanz von mySTATUSobject ausführen kann:
+Der folgende Code veranschaulicht, wie ein Client eine Instanz von MYSTATUSOBJECT aufrufen kann:
   
 ```C
 lpMyObj->lpVtbl->ValidateState(lpMyObj, ulUIParam, ulFlags);

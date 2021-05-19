@@ -1,5 +1,5 @@
 ---
-title: Abschnitt "Formular Konfigurationsdatei [Plattformen]"
+title: Abschnitt "Formularkonfigurationsdatei [Plattformen]
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,19 +15,19 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33419128"
 ---
-# <a name="form-configuration-file-platforms-section"></a>Abschnitt "Formular Konfigurationsdatei [Plattformen]"
+# <a name="form-configuration-file-platforms-section"></a>Abschnitt "Formularkonfigurationsdatei [Plattformen]
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Im Abschnitt **[Plattformen]** wird der vollständige Satz von Plattformen aufgelistet, die von diesem Formular unterstützt werden. Jeder Platt Form Eintrag besteht aus der Präfix **Plattform.** _String_, wobei _String_ ein beliebiger Zeichenfolgen Code für die Plattform ist. Jede Zeichenfolge entspricht dem **CPU** -Eintrag eines einzelnen Abschnitts **[Plattformen]** . Jeder Eintrag in einem Abschnitt **[Plattformen]** definiert eine _Plattformzeichenfolge_ , die auf eine nachfolgende **[Plattform verweist.** _Plattformzeichenfolge_ **]** -Abschnitt wie hier gezeigt. 
+Im **Abschnitt [Plattformen]** wird der vollständige Satz von Plattformen aufgeführt, die von diesem Formular unterstützt werden. Jeder Plattformeintrag besteht aus dem Präfix **Plattform.** _string_, wobei  _string_ ein beliebiger Zeichenfolgencode für die Plattform ist. Jede Zeichenfolge entspricht dem **CPU-Eintrag** eines einzelnen **[Platforms]-Abschnitts.** Jeder Eintrag in einem **Abschnitt [Plattformen]** definiert eine  _Plattformzeichenfolge,_ die auf eine nachfolgende **[Plattform] verweist.** _Platform string_ **]** section, wie hier gezeigt. 
   
-Im Abschnitt **[Plattformen]** wird der vollständige Satz von Plattformen aufgelistet, die von diesem Formular unterstützt werden. Jeder Platt Form Eintrag besteht aus der Präfix **Plattform.** _String_, wobei _String_ ein beliebiger Zeichenfolgen Code für die Plattform ist. Jede Zeichenfolge entspricht dem **CPU** -Eintrag eines einzelnen Abschnitts **[Plattformen]** . Jeder Eintrag in einem Abschnitt **[Plattformen]** definiert eine _Plattformzeichenfolge_ , die auf eine nachfolgende **[Plattform verweist.** _Plattformzeichenfolge_ **]** -Abschnitt wie hier gezeigt. 
+Im **Abschnitt [Plattformen]** wird der vollständige Satz von Plattformen aufgeführt, die von diesem Formular unterstützt werden. Jeder Plattformeintrag besteht aus dem Präfix **Plattform.** _string_, wobei  _string_ ein beliebiger Zeichenfolgencode für die Plattform ist. Jede Zeichenfolge entspricht dem **CPU-Eintrag** eines einzelnen **[Platforms]-Abschnitts.** Jeder Eintrag in einem **Abschnitt [Plattformen]** definiert eine  _Plattformzeichenfolge,_ die auf eine nachfolgende **[Plattform] verweist.** _Platform string_ **]** section, wie hier gezeigt. 
   
-**Plattformen**
+**[Plattformen]**
   
-**Plattform**. _Zeichenfolgen_ =  -_Plattformzeichenfolge_
+**Plattform**. _string_  =   _Plattformzeichenfolge_
   
-Es folgt ein Beispiel für einen Abschnitt **[Plattformen]** . 
+Im Folgenden finden Sie ein Beispiel für einen **Abschnitt [Plattformen].** 
   
 ```cpp
 [Platforms]
@@ -36,43 +36,43 @@ Platform.2 = Win95
 
 ```
 
-**[Platform.** _Plattformzeichenfolge_ **]** section enthält die beiden erforderlichen Einträge, **CPU** und **OSVersion**. Der **CPU** -Eintrag gibt den Prozessor an, und der **OSVersion** -Eintrag gibt das Betriebssystem an. Gültige **CPU** -Werte werden in der folgenden Tabelle beschrieben. 
+Jede **[Plattform.** _Platform string_ **]** section contains the two required entries, **CPU** and **OSVersion**. Der **CPU-Eintrag** gibt den Prozessor an, und der **OSVersion-Eintrag** gibt das Betriebssystem an. Gültige **CPU-Werte** werden in der folgenden Tabelle beschrieben. 
   
 |**CPU-Eintrag**|**Prozessor**|
 |:-----|:-----|
-|Ix86  <br/> |Prozessoren der Intel 80x86-und Pentium-Serie sowie äquivalente Prozessoren von AMD, Cyrix, NextGen und anderen Herstellern.  <br/> |
-|MIPS  <br/> |MIPS-R4000 Series-Prozessoren.  <br/> |
-|AXP  <br/> |Alpha-AXP-Prozessor für digitale Geräte Corporation.  <br/> |
-|PPC  <br/> |Motorola Power PC Series-Prozessoren.  <br/> |
-|M68  <br/> |Prozessoren der Mororola-68x00-Serie.  <br/> |
+|Ix86  <br/> |Intel 80x86- und Pentium-Prozessoren sowie gleichwertige Prozessoren von AMD, Cyrix, NextGen und anderen Herstellern.  <br/> |
+|MIPS  <br/> |MIPS R4000-Prozessorreihe.  <br/> |
+|AXP  <br/> |Digital Equipment Corporation Alpha AXP-Prozessor.  <br/> |
+|PPC  <br/> |Prozessoren der Power -PC-Serie von Motorola.  <br/> |
+|M68  <br/> |Prozessoren der Serie "68x00" von "68x00".  <br/> |
    
-Gültige **OSVersion** -Werte werden in der folgenden Tabelle beschrieben. 
+Gültige **OSVersion-Werte** werden in der folgenden Tabelle beschrieben. 
   
 |**OSVersion-Eintrag**|**Betriebssystem**|
 |:-----|:-----|
-|Win 3.1  <br/> |Windows 3,1 und Windows für Workgroups 3,11.  <br/> |
-|WinNT 3.5  <br/> |Windows NT 3,5 oder niedriger.  <br/> |
+|Win3.1  <br/> |Windows 3.1 und Windows workgroups 3.11.  <br/> |
+|WinNT3.5  <br/> |Windows NT 3.5 oder niedriger.  <br/> |
 |Win95  <br/> |Windows 95.  <br/> |
-|WinNT 4.0  <br/> |Windows NT 4,0.  <br/> |
+|WinNT4.0  <br/> |Windows NT 4.0.  <br/> |
 |Mac7  <br/> |Macintosh System 7.  <br/> |
    
-Darüber hinaus wird die **[-Plattform.** _Plattformzeichenfolge_ **]** -Abschnitt muss entweder einen **Datei** -oder **LinkTo** -Eintrag enthalten. Der **Datei** Eintrag listet die ausführbare Datei der Formularserver Anwendung auf, die von der Formularbibliothek verwaltet und in ein neues Unterverzeichnis im Datenträgercache geladen wird, wenn das Formular gestartet wird. Wenn stattdessen ein **LinkTo** -Eintrag verwendet wird, enthält er den Namen einer anderen Plattformzeichenfolge, von der die **Datei** Informationen entnommen werden. Dies ist nützlich, wenn eine Version eines Formulars mehrere Plattformen unterstützt. 
+Darüber hinaus die **[Plattform.** _platform string_ **]** section must contain either a **File** or **LinkTo** entry. Der **Eintrag Datei** listet die ausführbare Datei der Formularserveranwendung auf, die von der Formularbibliothek verwaltet und beim Starten des Formulars in ein neues Unterverzeichnis im Datenträgercache geladen wird. Wenn stattdessen **ein LinkTo-Eintrag** verwendet wird, enthält er den Namen einer anderen Plattformzeichenfolge, aus der die **Dateiinformationen** übernommen werden. Dies ist hilfreich, wenn eine Version eines Formulars mehrere Plattformen unterstützt. 
   
-Der **Registrierungs** Eintrag wird verwendet, wenn der **Datei** Eintrag verwendet wird, er identifiziert den Registrierungsschlüssel für die Formularbibliothek, in der die ausführbare Datei für die Formularserver Anwendung gespeichert ist. Zeichenfolgen, denen ein umgekehrter Schrägstrich (\) vorangestellt wird, werden im Stammverzeichnis der Registrierung gespeichert. Zeichenfolgen, denen kein umgekehrter Schrägstrich vorangestellt wird, werden im HKEY_CLASSES_ROOT\CLSID\- _GUID_\-Registrierungsschlüssel gespeichert, wobei _GUID_ die **GUID** des Formulars ist. Die Zeichen "% d" können verwendet werden, um den Pfadnamen des Verzeichnisses anzugeben, aus dem die Formular Konfigurationsdatei gelesen wurde. Dies ist hilfreich, um andere Dateien mit Pfadnamen relativ zur Formular Konfigurationsdatei anzugeben. **Mehrere Datei** -oder **Registrierungs** Einträge können mithilfe von File oder Registry als Präfix gefolgt von einem anderen Text angegeben werden. Das Format für die **[-Plattform.** _Plattformzeichenfolge_ **]** section ist: 
+Der **Registrierungseintrag** wird immer dann verwendet, wenn der Eintrag **Datei** verwendet wird. Er identifiziert den Registrierungsschlüssel für die Formularbibliothek, in der die ausführbare Datei für die Formularserveranwendung gespeichert ist. Zeichenfolgen, denen ein umgekehrter Schrägstrich ( \ ) vorangehen, werden am Stamm der Registrierung platziert. Zeichenfolgen, denen kein umgekehrter Schrägstrich vorangegangen ist, werden im HKEY_CLASSES_ROOT\CLSID\  _GUID_\ Registrierungsschlüssel platziert, wobei  _GUID_ die **GUID** des Formulars ist. Die Zeichen "%d" können verwendet werden, um den Pfadnamen des Verzeichnisses anzugeben, aus dem die Formularkonfigurationsdatei gelesen wurde. Dies ist hilfreich, um andere Dateien mit Pfadnamen relativ zur Formularkonfigurationsdatei anzugeben. **Mehrere Datei-** **oder Registrierungseinträge** können mithilfe von Datei oder Registrierung als Präfix gefolgt von einem beliebigen anderen Text angegeben werden. Das Format für **die [Plattform.** _platform string_ **]** section is: 
   
-- **Plattform.** _Plattformzeichenfolge_ **]**
+- **[Plattform.** _Plattformzeichenfolge_ **]**
     
-- **CPU** =  -_Zeichenfolge_
+- **CPU**  =   _string_
     
-- **OSVersion** =  -_Zeichenfolge_
+- **OSVersion**  =   _string_
     
-- **** =  Dateipfad__
+- **Datei**  =   _path_
     
-- **LinkTo** =  -_Zeichenfolge_
+- **LinkTo**  =   _string_
     
-- **Registrierungs** =  _Zeichenfolge_
+- **Registrierung**  =   _string_
   
-Es folgen zwei Beispiele **[Platform.** _Plattformzeichenfolge_ **]** Abschnitte, eine mit dem **Datei** Eintrag und einen mithilfe des **LinkTo** -Eintrags. 
+Im Folgenden finden Sie zwei Beispiele **[Plattform.** _Platform string_ **]** sections, one using the **File** entry and one using the **LinkTo** entry. 
   
 ```cpp
 [Platform.NTx86]
@@ -87,6 +87,6 @@ LinkTo = NTx86
 
 ```
 
-**[Platform.** _Plattformzeichenfolge_ **]** section wird beim Hinzufügen eines Formulars zur lokalen Formularbibliothek ignoriert, wenn davon ausgegangen wird, dass das Installationsprogramm die Dateien, die den Nachrichtenklassen Handler konstituieren, in verfügbaren lokalen Speicher, wie im Handler-Abschnitt in der OLE-Registrierung benannt, gespeichert hat und die OLE-Registrierung in der Systemregistrierung. 
+Die **[Plattform.** _Der_ Abschnitt plattformzeichenfolge **]** wird beim Hinzufügen eines Formulars zur lokalen Formularbibliothek ignoriert, wenn davon ausgegangen wird, dass das Installationsprogramm die Dateien, die den Nachrichtenklassenhandler bilden, in den verfügbaren lokalen Speicher wie im Abschnitt des Handlers in der OLE-Registrierung benannt platziert hat und die OLE-Registrierung in der Registrierung des Systems durchgeführt hat. 
   
 

@@ -25,13 +25,13 @@ ms.locfileid: "33410553"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt einen Speicherpuffer frei, der mit einem Aufruf der [MAPIAllocateBuffer](mapiallocatebuffer.md) -Funktion oder der [MAPIAllocateMore](mapiallocatemore.md) -Funktion reserviert wurde. 
+Gibt einen Speicherpuffer frei, der mit einem Aufruf der [MAPIAllocateBuffer-Funktion](mapiallocatebuffer.md) oder der [MAPIAllocateMore-Funktion zugewiesen](mapiallocatemore.md) wurde. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapix. h  <br/> |
+|Headerdatei  <br/> |Mapix.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 ULONG MAPIFreeBuffer(
@@ -43,24 +43,24 @@ ULONG MAPIFreeBuffer(
 
  _lpBuffer_
   
-> in Zeiger auf einen zuvor reservierten Speicherpuffer. Wenn NULL im _lpBuffer_ -Parameter übergeben wird, bewirkt **mapifreebufferfreigegeben** nichts. 
+> [in] Zeiger auf einen zuvor zugewiesenen Speicherpuffer. Wenn NULL im  _lpBuffer-Parameter_ übergeben wird, führt **MAPIFreeBuffer** nichts aus. 
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Aufruf wurde erfolgreich durchgeführt und der angeforderte Arbeitsspeicher freigegeben. **Mapifreebufferfreigegeben** kann auch S_OK auf bereits freigegebenen Speicherorten zurückgeben oder wenn der Speicherblock nicht mit **MAPIAllocateBuffer** und **MAPIAllocateMore**zugeordnet ist.
+> Der Aufruf war erfolgreich und der angeforderte Arbeitsspeicher wurde frei. **MAPIFreeBuffer** kann auch S_OK bereits frei werdende Speicherorte zurückgeben oder wenn der Speicherblock nicht mit **MAPIAllocateBuffer** und **MAPIAllocateMore** zugewiesen ist.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn eine Clientanwendung oder ein Dienstanbieter [MAPIAllocateBuffer](mapiallocatebuffer.md) oder [MAPIAllocateMore](mapiallocatemore.md)aufruft, erstellt das Betriebssystem in der Regel eine oder mehrere komplexe Strukturen mit mehreren Zeiger Ebenen in einem zusammenhängenden Speicherpuffer. Wenn eine MAPI-Funktion oder-Methode einen Puffer mit solchen Inhalten erstellt, kann ein Client später alle im Puffer enthaltenen Strukturen freigeben, indem er an **mapifreebufferfreigegeben** den Zeiger auf den Puffer übergibt, der von der MAPI-Funktion zurückgegeben wurde, die den Puffer erstellt hat. Damit ein Dienstanbieter einen Speicherpuffer mithilfe von **mapifreebufferfreigegeben**freigeben kann, muss er den Zeiger an diesen Puffer übergeben, der mit dem Support Objekt des Anbieters zurückgegeben wird. 
+Wenn eine Clientanwendung oder ein Dienstanbieter [MAPIAllocateBuffer](mapiallocatebuffer.md) oder [MAPIAllocateMore](mapiallocatemore.md)aufruft, erstellt das Betriebssystem in einem zusammenhängenden Speicherpuffer eine oder mehrere komplexe Strukturen mit mehreren Zeigerebenen. Wenn eine MAPI-Funktion oder -Methode einen Puffer mit solchen Inhalten erstellt, kann ein Client später alle im Puffer enthaltenen Strukturen frei, indem er den Zeiger an **MAPIFreeBuffer** übergeben, der von der MAPI-Funktion zurückgegeben wird, von der der Puffer erstellt wurde. Damit ein Dienstanbieter einen Speicherpuffer mit **MAPIFreeBuffer** frei geben kann, muss er den Zeiger an diesen Puffer übergeben, der mit dem Supportobjekt des Anbieters zurückgegeben wird. 
   
-Der Aufruf an **mapifreebufferfreigegeben** , einen bestimmten Puffer freizugeben, muss vorgenommen werden, sobald ein Client oder Anbieter diesen Puffer verwendet. Beim einfachen Aufrufen der [IMAPISession:: Logout](imapisession-logoff.md) -Methode am Ende einer MAPI-Sitzung werden Speicherpuffer nicht automatisch freigegeben. 
+Der Aufruf von **MAPIFreeBuffer** zum Freispeichern eines bestimmten Puffers muss ausgeführt werden, sobald ein Client oder Anbieter diesen Puffer verwendet hat. Durch einfaches Aufrufen der [IMAPISession::Logoff-Methode](imapisession-logoff.md) am Ende einer MAPI-Sitzung werden speicherpuffer nicht automatisch freigegeben. 
   
-Ein Client oder Dienstanbieter sollte davon ausgehen, dass der in _lpBuffer_ übergebene Zeiger nach einer erfolgreichen Rückgabe von **mapifreebufferfreigegeben**ungültig ist. Wenn der Zeiger entweder einen vom Messagingsystem nicht zugewiesenen Speicherblock über **MAPIAllocateBuffer** oder **MAPIAllocateMore** oder einen freien Speicherblock angibt, ist das Verhalten von **mapifreebufferfreigegeben** nicht definiert. 
+Ein Client oder Dienstanbieter sollte davon ausgehen, dass der in _lpBuffer_ übergebene Zeiger nach einer erfolgreichen Rückgabe von **MAPIFreeBuffer ungültig ist.** Wenn der Zeiger entweder einen vom Messagingsystem nicht über **MAPIAllocateBuffer** oder **MAPIAllocateMore** zugewiesenen Speicherblock oder einen freien Speicherblock angibt, ist das Verhalten von **MAPIFreeBuffer** nicht definiert. 
   
 > [!NOTE]
-> Durch das Übergeben eines NULL-Zeigers an **mapifreebufferfreigegeben** wird der Anwendungs Bereinigungscode einfacher und kleiner, da **MAPIFREEBUFFERFREIGEGEBEN** Zeiger auf Null initialisieren und dann im Bereinigungscode freigeben kann, ohne Sie zuerst testen zu müssen. 
+> Wenn Sie einen Nullzeiger an **MAPIFreeBuffer** übergeben, wird der Anwendungsbereinigungscode einfacher und kleiner, da **MAPIFreeBuffer** Zeiger auf NULL initialisieren und dann im Bereinigungscode freiräumen kann, ohne sie zuerst testen zu müssen. 
   
 ## <a name="see-also"></a>Siehe auch
 

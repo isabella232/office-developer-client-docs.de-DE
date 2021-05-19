@@ -22,7 +22,7 @@ Gibt den Wert der Sättigungskomponente einer Farbe zurück.
   
 ## <a name="syntax"></a>Syntax
 
-SAT (* * *Expression* * *) 
+SAT(** *Expression* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -34,19 +34,19 @@ SAT (* * *Expression* * *)
 
 Numeric
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Der Rückgabewert ist eine Zahl im Bereich von 0 bis einschließlich 240. Bei einer ungültigen Eingabe wird 0 zurückgegeben.
   
 ## <a name="example-1"></a>Beispiel 1
 
-SA (Blatt. 4! Zelle FillForegnd
+SAT(Sheet.4! FillForegnd)
   
 Gibt den Wert der Sättigung der Vordergrundfüllfarbe von Sheet.4 zurück.
   
 ## <a name="example-2"></a>Beispiel 2
 
-SAT (8)
+SAT(8)
   
 Gibt 240 zurück, wenn das Dokument die Farbpalette von Visio verwendet, wobei Dunkelrot die Farbe mit Index 8 ist.
   

@@ -25,9 +25,9 @@ Sucht nach einer angegebenen Eigenschaft in einem Eigenschaftensatz.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |mapiutil. h  <br/> |
+|Headerdatei  <br/> |mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter.  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter.  <br/> |
    
 ```cpp
 LPSPropValue LpValFindProp(
@@ -41,23 +41,23 @@ LPSPropValue LpValFindProp(
 
  _ulPropTag_
   
-> in -Tag für die Eigenschaft, nach der im Eigenschaftensatz gesucht werden soll, angegeben durch den _lpPropArray_ -Parameter. 
+> [in] Tag für die Eigenschaft, nach der im Eigenschaftensatz gesucht werden soll, angegeben durch den _lpPropArray-Parameter._ 
     
  _cValues_
   
-> in Die Anzahl der Eigenschaften im Eigenschaftensatz, angegeben durch den _lpPropArray_ -Parameter. 
+> [in] Anzahl der Eigenschaften im Eigenschaftensatz, angegeben durch den _lpPropArray-Parameter._ 
     
  _lpPropArray_
   
-> in Array von **SPropValue** -Strukturen, die die zu durchsuchenden Eigenschaften definieren. 
+> [in] Array von **SPropValue-Strukturen,** die die zu durchsuchenden Eigenschaften definieren. 
     
 ## <a name="return-value"></a>Rückgabewert
 
-Die **LpValFindProp** -Funktion gibt eine **SPropValue** -Struktur zurück, die die Eigenschaft definiert, die mit dem Eingabe Eigenschafts übereinstimmt, oder NULL, wenn keine Übereinstimmung vorliegt. 
+Die **LpValFindProp-Funktion** gibt eine **SPropValue-Struktur** zurück, die die Eigenschaft definiert, die dem Eingabeeigenschaftstag entspricht, oder NULL, wenn keine Übereinstimmung vorkommt. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **LpValFindProp** -Funktion ist identisch mit **PpropFindProp**.
+Die **LpValFindProp-Funktion** ist identisch mit **PpropFindProp**.
   
 ## <a name="see-also"></a>Siehe auch
 

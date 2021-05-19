@@ -25,7 +25,7 @@ ms.locfileid: "33415537"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft die Adressen der MAPI-Speicher Zuweisungs-und-Zuordnungsfunktionen ([MAPIAllocateBuffer](mapiallocatebuffer.md), [MAPIAllocateMore](mapiallocatemore.md)und [mapifreebufferfreigegeben](mapifreebuffer.md)) ab.
+Ruft die Adressen der MapI-Speicherzuweisungs- und -deallocation-Funktionen ab ([MAPIAllocateBuffer](mapiallocatebuffer.md), [MAPIAllocateMore](mapiallocatemore.md)und [MAPIFreeBuffer](mapifreebuffer.md)).
   
 ```cpp
 HRESULT GetMemAllocRoutines(
@@ -39,25 +39,25 @@ HRESULT GetMemAllocRoutines(
 
  _lppAllocateBuffer_
   
-> Out Ein Zeiger auf einen Zeiger auf die **MAPIAllocateBuffer** -Funktion. **MAPIAllocateBuffer** weist Speicher zu. 
+> [out] Ein Zeiger auf einen Zeiger auf die **MAPIAllocateBuffer-Funktion.** **MAPIAllocateBuffer weist** Speicher zu. 
     
  _lppAllocateMore_
   
-> Out Ein Zeiger auf einen Zeiger auf die **MAPIAllocateMore** -Funktion. **MAPIAllocateMore** weist zusätzlichen Arbeitsspeicher für den Arbeitsspeicher zu, der ursprünglich mithilfe von **MAPIAllocateBuffer**zugewiesen wurde.
+> [out] Ein Zeiger auf einen Zeiger auf die **MAPIAllocateMore-Funktion.** **MAPIAllocateMore** weist zusätzlichen Arbeitsspeicher für speicher zu, der ursprünglich mithilfe von **MAPIAllocateBuffer zugewiesen wurde.**
     
  _lppFreeBuffer_
   
-> Out Ein Zeiger auf einen Zeiger auf die **mapifreebufferfreigegeben** -Funktion. **Mapifreebufferfreigegeben** gibt Arbeitsspeicher frei. 
+> [out] Ein Zeiger auf einen Zeiger auf die **MAPIFreeBuffer-Funktion.** **MAPIFreeBuffer gibt** Arbeitsspeicher frei. 
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Funktions Adressen wurden erfolgreich zurückgegeben.
+> Die Funktionsadressen wurden erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPISupport:: GetMemAllocRoutines** -Methode wird für alle Support-Objekte implementiert. Dienstanbieter rufen **GetMemAllocRoutines** auf, um die Adressen der drei Speicher Zuordnungsfunktionen abzurufen, die an Ihre Initialisierungsfunktion übergeben werden ( [ABProviderInit](abproviderinit.md), [MSProviderInit](msproviderinit.md)oder [XPProviderInit](xpproviderinit.md)). 
+Die **IMAPISupport::GetMemAllocRoutines-Methode** wird für alle Supportobjekte implementiert. Dienstanbieter rufen **GetMemAllocRoutines auf,** um die Adressen der drei Speicherzuweisungsfunktionen zu erhalten, die an ihre Initialisierungsfunktion übergeben werden ( [ABProviderInit](abproviderinit.md), [MSProviderInit](msproviderinit.md)oder [XPProviderInit](xpproviderinit.md)). 
   
 ## <a name="see-also"></a>Siehe auch
 

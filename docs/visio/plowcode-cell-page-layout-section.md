@@ -25,21 +25,21 @@ Legt fest, ob platzierbare Shapes verschoben werden, wenn Sie ein platzierbares 
 |0  <br/> |Shapes nicht verschieben  <br/> |**visPLOPlowNone** <br/> |
 |1  <br/> |Shapes verschieben  <br/> |**visPLOPlowAll** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Sie können den Wert dieser Zelle auch im Dialogfeld **Seite einrichten** auf der Registerkarte **Layout und Routing** festlegen (Klicken Sie auf der Registerkarte **Entwurf** auf den Pfeil für die **Seite einrichten** ), indem Sie das Kontrollkästchen **andere Shapes beim Ablegen verschieben** verwenden. 
+Sie können den Wert dieser Zelle auch auf der  Registerkarte **Layout** und  Routing im Dialogfeld Seiteneinrichtung festlegen (klicken Sie auf der Registerkarte Entwurf auf den Pfeil Seite **einrichten),** indem Sie das Kontrollkästchen Andere Shapes beim Ablegen weg verschieben aktivieren.  
   
-Wenn Sie einen Verweis auf die Zelle Zelle PlowCode aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die PlowCode-Zelle anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Zelle PlowCode  <br/> |
+|Zellenname:  <br/> |PlowCode  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle PlowCode aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die PlowCode-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowPageLayout** <br/> |
 |Zellenindex:  <br/> |**visPLOPlowCode** <br/> |
    

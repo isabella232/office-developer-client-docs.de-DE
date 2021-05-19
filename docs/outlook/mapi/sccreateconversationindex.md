@@ -25,13 +25,13 @@ ms.locfileid: "33415656"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt an, wo in einem Nachrichtenthread eine Nachricht gehört. 
+Gibt an, wohin in einem Nachrichtenthread eine Nachricht gehört. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 SCODE ScCreateConversationIndex(
@@ -46,19 +46,19 @@ SCODE ScCreateConversationIndex(
 
  _cbParent_
   
-> in Die Anzahl der Bytes im übergeordneten Unterhaltungsindex.
+> [in] Anzahl der Bytes im übergeordneten Unterhaltungsindex.
     
  _lpbParent_
   
-> in Zeiger auf Bytes im übergeordneten Unterhaltungsindex. Dies ist möglicherweise NULL, wenn _cbParent_ NULL ist. 
+> [in] Zeiger auf Bytes im übergeordneten Unterhaltungsindex. Dies kann NULL sein,  _wenn cbParent_ null ist. 
     
  _lpcbIndex_
   
-> Out Zeiger auf die Anzahl von Bytes im neuen unter Haltungs Index, der vom Aufruf zurückgegeben wird. 
+> [out] Zeiger auf die Anzahl der Bytes im neuen Unterhaltungsindex, der vom Aufruf zurückgegeben wird. 
     
  _lppbIndex_
   
-> Out Zeiger auf einen Zeiger auf den neuen unter Haltungs Index, der vom Aufruf zurückgegeben wird.
+> [out] Zeiger auf einen Zeiger auf den neuen Unterhaltungsindex, der vom Anruf zurückgegeben wird.
     
 ## <a name="return-value"></a>Rückgabewert
 

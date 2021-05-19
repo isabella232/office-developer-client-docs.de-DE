@@ -19,10 +19,10 @@ ms.locfileid: "33415551"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine Formular Konfigurationsdatei ist eine formatierte Datei, die von Formularentwicklern erstellt wurde, um ein Formular zu definieren.
+Eine Formularkonfigurationsdatei ist eine formatierte Datei, die von Formularentwicklern zum Definieren eines Formulars erstellt wurde.
   
-Da Formular Konfigurationsdateien von Formular Managern zum Laden von Formularen verwendet werden, muss jedes Formular mithilfe einer Formular Konfigurationsdatei definiert werden. Formular Konfigurationsdateien müssen die Dateinamenerweiterung cfg aufweisen. Die Datei folgt der allgemeinen Syntax einer Windows-Initialisierungsdatei (INI-Datei). 
+Da Formularkonfigurationsdateien von Formularmanagern zum Laden von Formularen verwendet werden, muss jedes Formular mithilfe einer Formularkonfigurationsdatei definiert werden. Formularkonfigurationsdateien müssen die Dateinamenerweiterung .cfg haben. Die Datei folgt der allgemeinen Syntax einer Windows Initialisierungsdatei (.ini Datei). 
 
-Sie ist in benannte Abschnitte unterteilt, und jeder Abschnitt enthält eine Reihe von Einträgen und Werten. Werte haben einen der folgenden Typen: Zeichenfolge, angezeigte Zeichenfolge, Plattformzeichenfolge, Pfad, ganze Zahl oder global eindeutiger Bezeichner, **GUID**. Formular Konfigurationsdateien können mit einem beliebigen Text-Editor oder einem Textverarbeitungsprogramm erstellt werden, das Textdateien speichern kann.
+Er ist in benannte Abschnitte unterteilt, und jeder Abschnitt enthält eine Reihe von Einträgen und Werten. Werte haben einen der folgenden Typen: Zeichenfolge, angezeigte Zeichenfolge, Plattformzeichenfolge, Pfad, ganzzahlige oder global eindeutige **ID, GUID**. Formularkonfigurationsdateien können mit jedem Beliebigen Texteditor oder Textprozessor erstellt werden, der Textdateien speichern kann.
   
 

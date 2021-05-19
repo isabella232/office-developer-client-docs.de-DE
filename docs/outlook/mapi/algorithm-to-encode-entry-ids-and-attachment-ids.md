@@ -1,5 +1,5 @@
 ---
-title: Algorithmus zum Codieren von Eintrags-IDs und Anlage-IDs
+title: Algorithmus zum Codieren von Eintrags-IDs und Anlagen-IDs
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,13 +13,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33420136"
 ---
-# <a name="algorithm-to-encode-entry-ids-and-attachment-ids"></a>Algorithmus zum Codieren von Eintrags-IDs und Anlage-IDs
+# <a name="algorithm-to-encode-entry-ids-and-attachment-ids"></a>Algorithmus zum Codieren von Eintrags-IDs und Anlagen-IDs
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ein Informationsspeicher Anbieter kann als Teil einer MAPI-URL (Uniform Resource Locator) eine Eintrags-ID und eine Anlagen-ID an den MAPI-Protokoll Handler senden, um ein Objekt zu identifizieren, das für die Indizierung bereit ist. Der Informationsspeicher Anbieter codiert die Eintrags-ID und die Anlagen-ID als Unicode-Zeichenfolgen. In diesem Thema wird ein Algorithmus gezeigt, der eine kompakte Darstellung der Eintrags-ID oder der Anlagen-ID generiert.
+Ein Speicheranbieter kann im Rahmen eines MAPI Uniform Resource Locator (URL) eine Eintrags-ID und eine Anlagen-ID an den MAPI-Protokollhandler senden, um ein Objekt zu identifizieren, das für die Indizierung bereit ist. Der Speicheranbieter codiert die Eintrags-ID und die Anlagen-ID als Unicode-Zeichenfolgen. In diesem Thema wird ein Algorithmus gezeigt, der eine kompakte Darstellung der Eintrags- oder Anlagen-ID generiert.
   
 ```cpp
 const WORD kwBaseOffset = 0xAC00;  // Hangul char range (AC00-D7AF) 
@@ -56,7 +56,7 @@ LPWSTR EncodeID(ULONG cbEID, LPENTRYID rgbID)
 
 
 
-[Informationen zu Benachrichtigungs basierter Speicher Indizierung](about-notification-based-store-indexing.md)
+[Informationen Notification-Based Store Indizierung](about-notification-based-store-indexing.md)
   
-[Informationen zu MAPI-URLs für die Benachrichtigungs basierte Indizierung](about-mapi-urls-for-notification-based-indexing.md)
+[Informationen zu MAPI-URLs für Notification-Based Indizierung](about-mapi-urls-for-notification-based-indexing.md)
 

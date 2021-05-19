@@ -25,13 +25,13 @@ ms.locfileid: "33420591"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ersetzt [MAPIInitialize](mapiinitialize.md) , wenn nur ausgewählte Dienstprogrammfunktionen verwendet werden. 
+Ersetzt [MAPIInitialize,](mapiinitialize.md) wenn nur ausgewählte Hilfsfunktionen verwendet werden. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
    
 ```cpp
 SCODE ScInitMapiUtil(
@@ -51,11 +51,11 @@ S_OK
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **ScInitMapiUtil** -und die [DeinitMapiUtil](deinitmapiutil.md) -Funktion kooperieren beim Aufrufen und Freigeben von SELECT Utility-Funktionen, im Gegensatz zu [MAPIInitialize](mapiinitialize.md), das sowohl Core-als auch Utility-Funktionen aufruft. Wenn **ScInitMapiUtil** Dienstfunktionen aufruft, wird auch der erforderliche Speicher initialisiert. 
+Die **Funktionen ScInitMapiUtil** und [DeinitMapiUtil](deinitmapiutil.md) arbeiten zusammen, um ausgewählte Hilfsfunktionen auf- und frei zu geben, im Gegensatz zu [MAPIInitialize](mapiinitialize.md), das Kern- und Hilfsfunktionen aufruft. Wenn **ScInitMapiUtil** Hilfsfunktionen aufruft, initialisiert es auch den erforderlichen Arbeitsspeicher. 
   
-Wenn die Verwendung der von **ScInitMapiUtil** aufgerufenen Funktionen abgeschlossen ist, muss **DeinitMapiUtil** explizit aufgerufen werden, um Sie zu veröffentlichen. **MAPIInitialize** ruft hingegen implizit **DeinitMapiUtil**auf. 
+Wenn die Verwendung der Funktionen, die **ScInitMapiUtil** aufgerufen hat, abgeschlossen ist, **muss DeinitMapiUtil** explizit aufgerufen werden, um sie frei zu geben. Im Gegensatz dazu ruft **MAPIInitialize** implizit **DeinitMapiUtil auf.** 
   
 ## <a name="see-also"></a>Siehe auch
 

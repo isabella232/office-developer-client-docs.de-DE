@@ -25,7 +25,7 @@ ms.locfileid: "33410357"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ändert das Kennwort eines Dienstanbieters, ohne eine Benutzeroberfläche anzuzeigen. Diese Methode wird optional in Status-Objekten unterstützt, die von Dienstanbietern implementiert werden.
+Ändert das Kennwort eines Dienstanbieters, ohne dass eine Benutzeroberfläche angezeigt wird. Diese Methode wird optional in Statusobjekten unterstützt, die von Dienstanbietern implementiert werden.
   
 ```cpp
 HRESULT ChangePassword(
@@ -39,19 +39,19 @@ HRESULT ChangePassword(
 
  _lpOldPass_
   
-> in Ein Zeiger auf das alte Kennwort.
+> [in] Ein Zeiger auf das alte Kennwort.
     
  _lpNewPass_
   
-> in Ein Zeiger auf das neue Kennwort.
+> [in] Ein Zeiger auf das neue Kennwort.
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die das Format der Kennwörter steuert. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die das Format der Kennwörter steuert. Das folgende Flag kann festgelegt werden:
     
 MAPI_UNICODE 
   
-> Die Kennwörter sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, sind die Kennwörter im ANSI-Format.
+> Die Kennwörter sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Kennwörter im ANSI-Format.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -61,27 +61,27 @@ S_OK
     
 MAPI_E_NO_ACCESS 
   
-> Das alte Kennwort, auf das durch _lpOldPass_ verwiesen wird, ist ungültig. 
+> Das alte Kennwort, auf das  _von lpOldPass verwiesen wird,_ ist ungültig. 
     
 MAPI_E_NO_SUPPORT 
   
-> Das Status-Objekt unterstützt diesen Vorgang nicht, wie durch das Fehlen des STATUS_CHANGE_PASSWORD-Flags in der **PR_RESOURCE_METHODS** ([pidtagresourcemethods (](pidtagresourcemethods-canonical-property.md))-Eigenschaft des Status-Objekts angegeben.
+> Das status-Objekt unterstützt diesen Vorgang nicht, wie durch das Fehlen des STATUS_CHANGE_PASSWORD-Flag in der **eigenschaft PR_RESOURCE_METHODS** ([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md)) des Statusobjekts angegeben wird.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Nicht alle Status-Objekte unterstützen die **IMAPIStatus:: ChangePassword** -Methode. Er wird nur von Dienstanbietern unterstützt, für die Clients ein Kennwort eingeben müssen. Keines der von MAPI implementierten Statusobjekte unterstützt den Vorgang der Kennwortänderung. 
+Nicht alle Statusobjekte unterstützen die **IMAPIStatus::ChangePassword-Methode.** Es wird nur von Dienstanbietern unterstützt, für die Clients ein Kennwort eingeben müssen. Keines der von MAPI implementierten Statusobjekte unterstützt den Kennwortänderungsvorgang. 
   
- **ChangePassword** ändert ein Kennwort programmgesteuert ohne Benutzereingriff. 
+ **ChangePassword** ändert ein Kennwort programmgesteuert ohne Benutzerinteraktion. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Remote Transportanbieter implementieren **ChangePassword** wie hier angegeben. Besondere Überlegungen sind nicht möglich. 
+Remote-Transport-Anbieter implementieren **ChangePassword wie** hier angegeben. Es gibt keine besonderen Überlegungen. 
   
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Kanonische Pidtagresourcemethods (-Eigenschaft](pidtagresourcemethods-canonical-property.md)
+[PidTagResourceMethods (kanonische Eigenschaft)](pidtagresourcemethods-canonical-property.md)
   
 [IMAPIStatus : IMAPIProp](imapistatusimapiprop.md)
 

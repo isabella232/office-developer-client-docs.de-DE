@@ -25,13 +25,13 @@ ms.locfileid: "33409566"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Implementiert ein Advise-Senke-Objekt zur Behandlung von Benachrichtigungen. Ein Zeiger auf ein Advise-Senke-Objekt wird in einem Aufruf an die **Advise** -Methode eines Dienstanbieters übergeben, den Mechanismus, der für die Registrierung der Benachrichtigung verwendet wird. 
+Implementiert ein Advise Sink-Objekt für die Behandlung von Benachrichtigungen. Ein Zeiger auf ein Advise Sink-Objekt wird in einem Aufruf der **Advise-Methode** eines Dienstanbieters übergeben, dem Mechanismus, der zum Registrieren für Benachrichtigungen verwendet wird. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Advise-Objekt  <br/> |
-|Implementiert von:  <br/> |Client Anwendungen und MAPI  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Beraten von Sinkobjekten  <br/> |
+|Implementiert von:  <br/> |Clientanwendungen und MAPI  <br/> |
 |Aufgerufen von:  <br/> |Dienstanbieter und MAPI  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPIAdviseSink  <br/> |
 |Zeigertyp:  <br/> |LPMAPIADVISESINK  <br/> |
@@ -40,7 +40,7 @@ Implementiert ein Advise-Senke-Objekt zur Behandlung von Benachrichtigungen. Ein
 
 |||
 |:-----|:-----|
-|[OnNotify](imapiadvisesink-onnotify.md) <br/> |Reagiert auf eine Benachrichtigung, indem eine oder mehrere Aufgaben ausgeführt werden. Die ausgeführten Aufgaben hängen vom Ereignistyp und dem Objekt ab, das die Benachrichtigung generiert.  <br/> |
+|[OnNotify](imapiadvisesink-onnotify.md) <br/> |Antwortet auf eine Benachrichtigung, indem mindestens eine Aufgabe ausgeführt wird. Die ausgeführten Aufgaben hängen vom Typ des Ereignisses und dem Objekt ab, das die Benachrichtigung generiert.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

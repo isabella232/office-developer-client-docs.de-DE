@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm1027310
 localization_priority: Normal
 ms.assetid: 5041d957-1bd9-4d76-cf43-7b4fcd1e7dec
-description: Gibt eine bestimmte Anzahl von Zeichen aus einer Textzeichenfolge zurück, beginnend bei der angegebenen Position, basierend auf der Anzahl der Zeichen, die Sie angeben.
+description: Gibt eine bestimmte Anzahl von Zeichen aus einer Textzeichenfolge basierend auf der angegebenen Anzahl von Zeichen an der angegebenen Position zurück.
 ms.openlocfilehash: 58d5e784e49c8e9fba0bf668626049298783c158
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33410266"
 ---
 # <a name="mid-function-visioshapesheet"></a>MID-Funktion (VisioShapeSheet)
 
-Gibt eine bestimmte Anzahl von Zeichen aus einer Textzeichenfolge zurück, beginnend bei der angegebenen Position, basierend auf der Anzahl der Zeichen, die Sie angeben.
+Gibt eine bestimmte Anzahl von Zeichen aus einer Textzeichenfolge basierend auf der angegebenen Anzahl von Zeichen an der angegebenen Position zurück.
   
 ## <a name="syntax"></a>Syntax
 
-MID (* * *Text* * *, * * *start_num* * *, * * *num_chars* * *) 
+MID (** *text* **, ** *start_num* **, ** *num_chars* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -36,17 +36,17 @@ MID (* * *Text* * *, * * *start_num* * *, * * *num_chars* * *)
 
 Zeichenfolge
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn *start_num* ist: 
+Wenn  *start_num*  ist: 
   
-- Größer als die Länge des *Texts* , Mid gibt "" (leeren Text) zurück. 
+- Größer als die Textlänge  *gibt*  MID "" (leerer Text) zurück. 
     
-- Kleiner als die Länge des *Texts* , aber *start_num* Plus *num_chars* überschreitet die Länge ** des Texts, Mid gibt die Zeichen bis zum Ende des *Texts* zurück. 
+- Kleiner als die Länge des *Texts,* aber start_num *plus* *num_chars* die Textlänge überschreitet,  gibt MID die Zeichen bis zum Ende des Texts *zurück.* 
     
 - kleiner als 1 ist, gibt MID den Fehlerwert #WERT! zurück. 
     
-Wenn *num_chars* negativ ist, gibt MID den #VALUE zurück. zurück. 
+Wenn  *num_chars*  negativ ist, gibt MID die #VALUE! zurück. 
   
 ## <a name="example"></a>Beispiel
 

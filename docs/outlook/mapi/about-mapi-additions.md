@@ -17,9 +17,9 @@ ms.locfileid: "33415292"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPI-Ergänzungen sind APIs, die zur MAPI (Messaging Application Programming Interface) gehören, wie Datentypen, Funktionen und Eigenschaften, die zuvor nicht verfügbar gemacht und als Teil der MAPI-Programmierreferenz dokumentiert wurden. Sie enthalten die folgenden Definitionen und Eigenschaften.
+MAPI-Ergänzungen sind APIs, die zur Messaging Application Programming Interface (MAPI) gehören, z. B. Datentypen, Funktionen und Eigenschaften, die zuvor nicht als Teil der Referenz des MAPI-Programmierers verfügbar gemacht und dokumentiert wurden. Sie enthalten die folgenden Definitionen und Eigenschaften.
   
-## <a name="constant-definitions"></a>Konstante Definitionen
+## <a name="constant-definitions"></a>Konstantendefinitionen
 
 - **[Zusätzliche MAPI-Konstanten](mapi-constants.md)**
   
@@ -39,7 +39,7 @@ MAPI-Ergänzungen sind APIs, die zur MAPI (Messaging Application Programming Int
     
 ## <a name="properties"></a>Eigenschaften
 
-Die folgenden Eigenschaften werden im Allgemeinen von Message-Objekten offen gelegt.
+Die folgenden Eigenschaften werden im Allgemeinen von Nachrichtenobjekten verfügbar gemacht.
   
 - **[PR_BODY_W](pidtagbody-canonical-property.md)**
     
@@ -79,11 +79,11 @@ Die folgenden Eigenschaften werden im Allgemeinen von Message-Objekten offen gel
     
 - **[PR_SUBJECT_W](pidtagsubject-canonical-property.md)**
     
-Die folgenden Eigenschaften werden durch die Table-Objekte des Address Book-Inhalts verfügbar gemacht.
+Die folgenden Eigenschaften werden von Adressbuchinhaltsverzeichnisobjekten verfügbar gemacht.
   
 - **[PR_DISPLAY_TYPE_EX](pidtagdisplaytypeex-canonical-property.md)**
     
-Die folgenden Eigenschaften werden durch Adressbuchcontainer-Objekte verfügbar gemacht.
+Die folgenden Eigenschaften werden von Adressbuchcontainerobjekten verfügbar gemacht.
   
 - **[PR_EMS_AB_SERVER](pidtagemsabserver-canonical-property.md)**
     
@@ -91,13 +91,13 @@ Die folgenden Eigenschaften werden durch Adressbuchcontainer-Objekte verfügbar 
     
 - **[PR_EMS_AB_SERVER_W](pidtagemsabserver-canonical-property.md)**
     
-Die folgenden Eigenschaften werden von Folder-Objekten zur Verfügung gestellt.
+Die folgenden Eigenschaften werden von Ordnerobjekten verfügbar gemacht.
   
 - **[PR_AGING_GRANULARITY](pidtagaginggranularity-canonical-property.md)**
     
 - **[PR_AGING_PERIOD](pidtagagingperiod-canonical-property.md)**
     
-Die folgenden Eigenschaften werden von Messaging-Benutzerobjekten zur Verfügung gestellt.
+Die folgenden Eigenschaften werden von Messagingbenutzerobjekten verfügbar gemacht.
   
 - **[PR_ASSISTANT_TELEPHONE_NUMBER_W](pidtagassistanttelephonenumber-canonical-property.md)**
     
@@ -189,7 +189,7 @@ Die folgenden Eigenschaften werden von Messaging-Benutzerobjekten zur Verfügung
     
 - **[PR_WEDDING_ANNIVERSARY](pidtagweddinganniversary-canonical-property.md)**
     
-Die folgenden Eigenschaften werden von Profil Abschnitts Objekten verfügbar gemacht.
+Die folgenden Eigenschaften werden von Profilabschnittsobjekten verfügbar gemacht.
   
 - **[PR_PROFILE_SERVER_FULL_VERSION](pidtagprofileserverfullversion-canonical-property.md)**
     
@@ -207,7 +207,7 @@ Die folgenden Eigenschaften werden von Profil Abschnitts Objekten verfügbar gem
     
 - **[PR_ROH_PROXY_SERVER](pidtagrpcoverhttpproxyserver-canonical-property.md)**
     
-Die folgenden Eigenschaften werden durch Store-Objekte verfügbar gemacht.
+Die folgenden Eigenschaften werden von Speicherobjekten verfügbar gemacht.
   
 - **[PR_IPM_APPOINTMENT_ENTRYID](pidtagipmappointmententryid-canonical-property.md)**
     
@@ -221,7 +221,7 @@ Die folgenden Eigenschaften werden durch Store-Objekte verfügbar gemacht.
     
 - **[PR_IPM_TASK_ENTRYID](pidtagipmtaskentryid-canonical-property.md)**
     
-Die folgenden Eigenschaften werden von Store-Objekten zur Verfügung gestellt und zum Durchsuchen bestimmter Elemente einer e-Mail im Speicher verwendet.
+Die folgenden Eigenschaften werden von Speicherobjekten verfügbar gemacht und bei der Suche nach bestimmten Elementen einer E-Mail im Store verwendet.
   
 - **[PR_SEARCH_ATTACHMENTS_W](pidtagsearchattachments-canonical-property.md)**
     
@@ -234,7 +234,7 @@ Die folgenden Eigenschaften werden von Store-Objekten zur Verfügung gestellt un
 ## <a name="see-also"></a>Siehe auch
 
 - [Zugreifen auf einen Speicher auf dem Remoteserver, wenn Outlook sich im Exchange-Cache-Modus befindet](how-to-access-store-on-remote-server-in-cached-exchange-mode.md)  
-- [Feststellen der Exchange Server-Version in einem Outlook-Profil](how-to-detect-the-version-of-exchange-server-in-an-outlook-profile.md)
+- [Erkennen der Version von Exchange Server in einem Outlook Profil](how-to-detect-the-version-of-exchange-server-in-an-outlook-profile.md)
 - [Öffnen eines Speichers auf dem Remoteserver, wenn Outlook sich im Exchange-Cache-Modus befindet](how-to-open-store-on-remote-server-in-cached-exchange-mode.md)
 - [Verwalten einer Nachricht in einem OST ohne Aufrufen einer Synchronisierung im Exchange-Cache-Modus](how-to-manage-a-message-in-an-ost-without-invoking-a-synchronization.md)
 

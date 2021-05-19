@@ -20,24 +20,24 @@ ms.locfileid: "33420178"
 
 Legt die Beschriftung fest, die Benutzern im Fenster **Shape-Daten** angezeigt wird. Eine Beschriftung besteht aus alphanumerischen Zeichen, einschließlich dem Unterstrich (_). 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Die Anwendung schließt die Beschriftungszeichenfolge in der Zelle automatisch in Anführungszeichen ein, doch diese Anführungszeichen werden im Fenster **Shape-Daten** nicht angezeigt. 
   
-Wenn kein Bezeichnungstext gefunden wird, zeigt Visio im Fenster **Shape-Daten** den Zeilennamen (Prop. Row) an. 
+Wenn kein Beschriftungstext gefunden wird, Visio der Zeilenname (Prop.Row) im **Fenster Shape Data angezeigt.** 
   
-Wenn Sie einen Verweis auf die Zelle Label aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle Label anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Prop. *Name* . Bezeichnung, wobei Prop.  *Name* ist der Name der Zeile  <br/> |
+|Zellenname:  <br/> |Prop. *Name*  . Bezeichnung, an der Prop.  *Name*  ist der Zeilenname  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Label aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle Label nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
 |Abschnittsindex:  <br/> |**visSectionProp** <br/> |
-|Zeilenindex:  <br/> |**visRowProp** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+|Zeilenindex:  <br/> |**visRowProp**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
 |Zellenindex:  <br/> |**visCustPropsLabel** <br/> |
    
 

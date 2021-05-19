@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251475
 localization_priority: Normal
 ms.assetid: 8df34463-0238-0b0d-9f99-ea912a644f56
-description: Öffnet den Text Block der Form, sodass der Text bearbeitet werden kann.
+description: Öffnet den Textblock des Shapes, damit der Text bearbeitet werden kann.
 ms.openlocfilehash: f182943b8ef01ff78c2f606cd0f925110ce83fef
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,13 +18,13 @@ ms.locfileid: "33414459"
 ---
 # <a name="opentextwin-function"></a>OPENTEXTWIN Function
 
-Öffnet den Text Block der Form, sodass der Text bearbeitet werden kann.
+Öffnet den Textblock des Shapes, damit der Text bearbeitet werden kann.
   
 ## <a name="syntax"></a>Syntax
 
 OPENTEXTWIN( )
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 In früheren Versionen von Visio wird diese Funktion in der Form _OPENTEXTWIN geschrieben. In den Visio-Versionen 4.0 und höher werden beide Schreibweisen akzeptiert. 
   

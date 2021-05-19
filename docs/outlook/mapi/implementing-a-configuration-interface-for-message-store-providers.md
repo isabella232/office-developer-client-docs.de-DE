@@ -1,5 +1,5 @@
 ---
-title: Implementieren einer Konfigurationsschnittstelle für Nachrichtenspeicher Anbieter
+title: Implementieren einer Konfigurationsschnittstelle für Store-Anbieter
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,15 +15,15 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33415887"
 ---
-# <a name="implementing-a-configuration-interface-for-message-store-providers"></a>Implementieren einer Konfigurationsschnittstelle für Nachrichtenspeicher Anbieter
+# <a name="implementing-a-configuration-interface-for-message-store-providers"></a>Implementieren einer Konfigurationsschnittstelle für Store-Anbieter
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Nachrichtenspeicher Anbieter müssen eine Schnittstelle implementieren, die es dem Benutzer ermöglicht, den Nachrichtenspeicher Anbieter so zu konfigurieren, dass er auf dem Computer des Benutzers ausgeführt wird. In der Regel wird der Nachrichtenspeicher Anbieter konfiguriert, wenn der Nachrichtenspeicher Anbieter dem Benutzerprofil hinzugefügt wird. Die Konfigurationsschnittstelle des Nachrichtenspeicher Anbieters verarbeitet in der Regelaufgaben wie das Festlegen von Benutzernamen und Kennwörtern für geschützte Nachrichtenspeicher, das Auswählen von Pfaden zu den erforderlichen Dateien und das Erstellen des zugrunde liegenden Speichermechanismus, der bei Bedarf verwendet wird.
+Nachrichtenspeicheranbieter müssen eine Schnittstelle implementieren, die es dem Benutzer ermöglicht, den Nachrichtenspeicheranbieter für die Ausführung auf dem Computer dieses Benutzers zu konfigurieren. In der Regel wird der Nachrichtenspeicheranbieter konfiguriert, wenn der Nachrichtenspeicheranbieter dem Profil eines Benutzers hinzugefügt wird. Die Konfigurationsschnittstelle des Nachrichtenspeicheranbieters übernimmt in der Regel Aufgaben wie das Festlegen von Benutzernamen und Kennwörtern für geschützte Nachrichtenspeicher, das Auswählen von Pfaden zu den erforderlichen Dateien und das Erstellen des zugrunde liegenden Speichermechanismus, den er bei Bedarf verwendet.
   
-Der Zugriff auf die Konfigurationsschnittstelle, die Sie implementieren, erfolgt über zusätzliche Einstiegspunkte in der DLL des Nachrichten Dienstanbieters. Weitere Informationen finden Sie unter [Konfigurieren eines Nachrichtendiensts](configuring-a-message-service.md). Die Konfigurationsschnittstelle des Nachrichtenspeicher Anbieters ist die einzige Benutzeroberfläche, die ein Nachrichtenspeicher Anbieter implementieren muss.
+Der Zugriff auf die von Ihnen implementierte Konfigurationsschnittstelle wird über zusätzliche Einstiegspunkte in der DLL des Nachrichtendienstanbieters ermöglicht. Weitere Informationen finden Sie unter [Configuring a Message Service](configuring-a-message-service.md). Die Konfigurationsschnittstelle des Nachrichtenspeicheranbieters ist die einzige Benutzeroberfläche, die ein Nachrichtenspeicheranbieter implementieren muss.
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -21,19 +21,19 @@ ms.locfileid: "33415047"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Clients und Dienstanbieter können eine oder mehrere Eigenschaften eines Objekts mit den folgenden **IMAPIProp** -Methoden und API-Funktionen kopieren: 
+Clients und Dienstanbieter können eine oder mehrere Eigenschaften eines Objekts mit den folgenden **IMAPIProp-Methoden** und -API-Funktionen kopieren: 
   
-- Die [IMAPIProp:: CopyTo](imapiprop-copyto.md) -Methode kopiert alle Eigenschaften eines Objekts in ein anderes Objekt, wobei optional ausgewählte Eigenschaften ausgeschlossen werden. **CopyTo** wird zum Kopieren oder bewegen eines beliebigen Objekttyps verwendet. 
+- Die [IMAPIProp::CopyTo-Methode](imapiprop-copyto.md) kopiert alle Eigenschaften eines Objekts in ein anderes Objekt, optional ohne ausgewählte Eigenschaften. **CopyTo wird** zum Kopieren oder Verschieben eines beliebigen Objekttyps verwendet. 
     
-- Die [IMAPIProp:: CopyProps](imapiprop-copyprops.md) -Methode kopiert die ausgewählten Eigenschaften eines Objekts. **CopyProps** wird hauptsächlich mit Nachrichten verwendet. Wenn ein Client eine weitergeleitete Kopie einer Nachricht oder einer Antwort erstellt, verarbeitet **CopyProps** das Kopieren der entsprechenden Eigenschaften aus der ursprünglichen Nachricht. 
+- Die [IMAPIProp::CopyProps-Methode](imapiprop-copyprops.md) kopiert ausgewählte Eigenschaften eines Objekts. **CopyProps wird** hauptsächlich für Nachrichten verwendet. Wenn ein Client eine weitergeleitete Kopie einer Nachricht oder einer Antwort erstellt, übernimmt **CopyProps** das Kopieren der entsprechenden Eigenschaften aus der ursprünglichen Nachricht. 
     
-- Die [PropCopyMore](propcopymore.md) -Funktion kopiert einen einzelnen Eigenschaftswert von einem Speicherort an einen anderen. Verwenden Sie **PropCopyMore** mit Vorsicht. Es ist möglich, wenn Sie einen Wert gleichzeitig kopieren, um viele kleine Speicherblöcke zuzuweisen und Speicher Fragmente zu verursachen. 
+- Die [PropCopyMore-Funktion](propcopymore.md) kopiert einen einzelnen Eigenschaftswert von einem Speicherort an einen anderen. Verwenden **Sie PropCopyMore** mit Vorsicht. Beim Kopieren eines Werts nach dem anderen ist es möglich, viele kleine Speicherblöcke zuzuordnen und das Fragmentieren des Arbeitsspeichers zu verursachen. 
     
-- Die [ScCopyProps](sccopyprops.md) -Funktion kopiert Eigenschaftswerte in Massen. **ScCopyProps** können Eigenschaftswerte kopieren, die aus unzusammenhängenden Speicherblöcken erstellt wurden. Es wird ein neues Eigenschaftenarray zurückgegeben. 
+- Die [ScCopyProps-Funktion](sccopyprops.md) kopiert Eigenschaftswerte in Massen. **ScCopyProps kann** Eigenschaftswerte kopieren, die aus nicht zusammensistenten Speicherblöcken erstellt wurden. Es wird ein neues Eigenschaftenarray zurückgegeben. 
     
-- Wenn das von **ScCopyProps** zurückgegebene Eigenschaftenarray auf dem Datenträger gespeichert werden soll, verwenden Sie die [ScRelocProps](screlocprops.md) -Funktion, um die Zeiger anzupassen. **ScRelocProps** sollte zweimal aufgerufen werden; einmal, um die Adressen vor dem Schreiben des Datenvorgangs und dann erneut während des Lesevorgangs anzupassen. Die **ScRelocProps** -Funktion geht davon aus, dass das Eigenschafts Wertarray ursprünglich in einer einzelnen Zuordnung zugeordnet wurde. 
+- Wenn das von **ScCopyProps** zurückgegebene Eigenschaftenarray auf dem Datenträger gespeichert werden soll, passen Sie die Zeiger mit der [ScRelocProps-Funktion](screlocprops.md) an. **ScRelocProps** sollte zweimal aufgerufen werden. einmal, um die Adressen anzupassen, bevor der Datenvorgang geschrieben wird, und dann erneut während des Lesevorgangs. Die **ScRelocProps-Funktion** geht davon aus, dass das Eigenschaftswertarray ursprünglich in einer einzigen Zuordnung zugewiesen wurde. 
     
-Die in der obigen Liste beschriebenen API-Funktionen kopieren die Eigenschaften im Arbeitsspeicher und nicht von einem Objekt zu einem anderen Objekt. Diese Funktionen werden derzeit unterstützt, werden jedoch in zukünftigen Versionen möglicherweise nicht unterstützt.
+Die in der vorherigen Liste beschriebenen API-Funktionen kopieren Eigenschaften im Arbeitsspeicher und nicht von einem Objekt in ein anderes Objekt. Diese Funktionen werden derzeit unterstützt, werden jedoch möglicherweise in einer zukünftigen Version nicht unterstützt.
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -43,7 +43,7 @@ ULONG FBadRow(
 
  _lprow_
   
-> in Zeiger auf eine [SRow](srow.md) -Struktur, die die zu überprüfende Zeile identifiziert. 
+> [in] Zeiger auf eine [SRow-Struktur,](srow.md) die die zu überprüfende Zeile identifiziert. 
     
 ## <a name="return-value"></a>Rückgabewert
 

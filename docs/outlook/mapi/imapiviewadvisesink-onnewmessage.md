@@ -25,7 +25,7 @@ ms.locfileid: "33419604"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Benachrichtigt den Formular Betrachter darüber, dass eine neue oder eine vorhandene Nachricht in ein Formular geladen wurde.
+Benachrichtigt die Formularanzeige, dass eine neue oder eine vorhandene Nachricht in einem Formular geladen wurde.
   
 ```cpp
 HRESULT OnNewMessage( void );
@@ -39,17 +39,17 @@ Keine
 
 S_OK 
   
-> Die Benachrichtigung wurde erfolgreich ausgeführt.
+> Die Benachrichtigung ist erfolgreich.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Formularobjekte rufen die **IMAPIViewAdviseSink:: OnNewMessage** -Methode immer dann auf, wenn eine Nachricht in einem Formular mit der [IPersistMessage:: InitNew](ipersistmessage-initnew.md) -oder [IPersistMessage:: Laden](ipersistmessage-load.md) -Methode geladen wird. 
+Formularobjekte rufen die **IMAPIViewAdviseSink::OnNewMessage-Methode** auf, wenn eine Nachricht in einem Formular mit der [IPersistMessage::InitNew-](ipersistmessage-initnew.md) oder [IPersistMessage::Load-Methode](ipersistmessage-load.md) geladen wird. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Geben Sie den aktiven Zeiger auf das Form-Objekt frei, da es nicht mehr auf die Nachricht zeigt, die der Viewer zuvor angezeigt hat. 
+Lassen Sie den aktiven Zeiger auf das Formularobjekt los, da er nicht mehr auf die Nachricht verweist, die der Betrachter zuvor angezeigt hat. 
   
-Weitere Informationen zu Formular Benachrichtigungen finden Sie unter [senden und empfangen von Formular Benachrichtigungen](sending-and-receiving-form-notifications.md).
+Weitere Informationen zu Formularbenachrichtigungen finden Sie unter Senden und Empfangen [von Formularbenachrichtigungen](sending-and-receiving-form-notifications.md).
   
 ## <a name="see-also"></a>Siehe auch
 

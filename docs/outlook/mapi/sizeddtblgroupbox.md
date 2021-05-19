@@ -23,12 +23,12 @@ ms.locfileid: "33419317"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt eine benannte Struktur, die eine [DTBLGROUPBOX](dtblgroupbox.md) -Struktur zur Beschreibung eines Gruppenfeld-Steuerelements und einer Beschriftung einer angegebenen Länge enthält. 
+Erstellt eine benannte Struktur, die eine [DTBLGROUPBOX-Struktur](dtblgroupbox.md) zum Beschreiben eines Gruppenfeldsteuerelements und einer Bezeichnung mit einer angegebenen Länge enthält. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |**DTBLGROUPBOX** <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |**DTBLGROUPBOX** <br/> |
    
 ```cpp
 SizedDtblGroupBox (n, u)
@@ -38,15 +38,15 @@ SizedDtblGroupBox (n, u)
 
 _n_
   
-> Länge der Beschriftung des Gruppenfelds. 
+> Länge der Bezeichnung des Gruppenfelds. 
     
 _u_
   
 > Name für die neue Struktur.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Mit dem **SizedDtblGroupBox** -Makro können Sie ein Gruppenfeld-Steuerelement definieren, wenn die Länge der Bezeichnung bekannt ist. Die neue Struktur wird mit den folgenden Elementen erstellt: 
+Mit **dem Makro SizedDtblGroupBox** können Sie ein Gruppenfeldsteuerelement definieren, wenn die Länge der Bezeichnung bekannt ist. Die neue Struktur wird mit den folgenden Mitgliedern erstellt: 
   
 ```cpp
 DTBLGROUPBOX dtblgroupbox;
@@ -54,7 +54,7 @@ TCHAR lpszLabel[n];
 
 ```
 
-Wenn Sie einen Zeiger auf die resultierende Struktur aus dem **SizedDtblGroupBox** -Makro als **DTBLGROUPBOX** -Struktur Zeiger verwenden möchten, führen Sie die folgenden Schritte aus: 
+Führen Sie die folgende Gliederung aus, um einen Zeiger auf die resultierende Struktur des **SizedDtblGroupBox-Makros** als **DTBLGROUPBOX-Strukturzeiger** zu verwenden: 
   
 ```cpp
 lpDtblGroupBox = (LPDTBLGROUPBOX) &SizedDtblGroupBox;

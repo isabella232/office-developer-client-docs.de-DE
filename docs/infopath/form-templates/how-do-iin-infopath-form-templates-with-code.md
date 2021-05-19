@@ -4,7 +4,7 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
-- InfoPath 2007, häufige Aufgaben
+- infopath 2007, allgemeine Aufgaben
 localization_priority: Normal
 ms.assetid: da678213-fae0-4854-8194-762866600100
 description: Mithilfe der Links in diesem Thema erhalten Sie schnell Antworten auf die wichtigsten Programmierfragen zur Arbeit mit InfoPath-Formularvorlagen mit verwaltetem Code.

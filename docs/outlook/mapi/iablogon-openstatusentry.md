@@ -25,7 +25,7 @@ ms.locfileid: "33410784"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Öffnet das Status-Objekt des Anbieters.
+Öffnet das Statusobjekt des Anbieters.
   
 ```cpp
 HRESULT OpenStatusEntry(
@@ -40,33 +40,33 @@ HRESULT OpenStatusEntry(
 
  _lpInterface_
   
-> in Ein Zeiger auf die Schnittstellen-ID (IID), die die Schnittstelle darstellt, die für den Zugriff auf das Status-Objekt verwendet werden muss. Durch das Übergeben von NULL wird die Standardschnittstelle des Objekts [IMAPIStatus: IMAPIProp](imapistatusimapiprop.md)zurückgegeben.
+> [in] Ein Zeiger auf die Schnittstellen-ID (Interface Identifier, IID), die die Schnittstelle darstellt, die für den Zugriff auf das Statusobjekt verwendet werden muss. Durch Übergeben von NULL wird die Standardschnittstelle des Objekts zurückgegeben, [IMAPIStatus : IMAPIProp](imapistatusimapiprop.md).
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die steuert, wie das Statusobjekt geöffnet wird. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie das Statusobjekt geöffnet wird. Das folgende Flag kann festgelegt werden:
     
 MAPI_MODIFY 
   
-> Fordert Lese-/Schreibzugriff-Berechtigung an. Standardmäßig werden Objekte mit Schreibschutz geöffnet, und Aufrufer sollten nicht davon ausgehen, dass Lese-/Schreibzugriff erteilt wurde.
+> Fordert Lese-/Schreibberechtigungen an. Standardmäßig werden Objekte mit schreibgeschützten Zugriffen geöffnet, und Anrufer sollten nicht davon ausgehen, dass Lese-/Schreibberechtigungen erteilt wurden.
     
  _lpulObjType_
   
-> Out Ein Zeiger auf den Typ des geöffneten Objekts.
+> [out] Ein Zeiger auf den Typ des geöffneten Objekts.
     
  _lppEntry_
   
-> Out Ein Zeiger auf einen Zeiger auf das geöffnete Objekt.
+> [out] Ein Zeiger auf einen Zeiger auf das geöffnete Objekt.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Aufruf war erfolgreich, und das Status-Objekt wurde geöffnet.
+> Der Aufruf ist erfolgreich, und das Statusobjekt wurde geöffnet.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Adressbuchanbieter implementieren die **OpenStatusEntry** -Methode, um Zugriff auf Ihr Status-Objekt zu gewähren. Alle Adressbuchanbieter müssen ein Status-Objekt implementieren, das mindestens die [IMAPIStatus:: ValidateState](imapistatus-validatestate.md) -Methode unterstützt. Weitere Informationen finden Sie unter [Implementierung von Status Objekten](status-object-implementation.md).
+Adressbuchanbieter implementieren die **OpenStatusEntry-Methode,** um Zugriff auf ihr Statusobjekt zu gewähren. Alle Adressbuchanbieter müssen ein Statusobjekt implementieren, das mindestens die [IMAPIStatus::ValidateState-Methode](imapistatus-validatestate.md) unterstützt. Weitere Informationen finden Sie unter [Status Object Implementation](status-object-implementation.md).
   
 ## <a name="see-also"></a>Siehe auch
 

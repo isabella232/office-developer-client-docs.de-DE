@@ -38,7 +38,7 @@ LPSPropTagArray FAR * lpPropTagArray
 
  _ulFlags_
   
-> in Bitmaske von Flags, die angibt, welche Spaltengruppe zurückgegeben werden soll. Das folgende Flag kann festgelegt werden:
+> [in] Bitmaske von Flags, die angibt, welcher Spaltensatz zurückgegeben werden soll. Das folgende Flag kann festgelegt werden:
     
 TBL_ALL_COLUMNS 
   
@@ -46,7 +46,7 @@ TBL_ALL_COLUMNS
     
  _lpPropTagArray_
   
-> Out Zeiger auf eine [SPropTagArray](sproptagarray.md) -Struktur, die die Eigenschaftentags für den Spaltensatz enthält. 
+> [out] Zeiger auf eine [SPropTagArray-Struktur,](sproptagarray.md) die die Eigenschaftstags für den Spaltensatz enthält. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -56,25 +56,25 @@ S_OK
     
 MAPI_E_BUSY 
   
-> Ein weiterer Vorgang wird ausgeführt, der verhindert, dass der Abrufvorgang für den Spaltensatz gestartet wird. Entweder sollte der ausgeführte Vorgang abgeschlossen oder beendet werden.
+> Ein weiterer Vorgang wird ausgeführt, der verhindert, dass der Spaltensatzabrufvorgang gestartet wird. Der ausgeführte Vorgang sollte entweder abgeschlossen oder beendet werden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPITable:: QueryColumns** -Methode kann aufgerufen werden, um Folgendes abzurufen: 
+Die **IMAPITable::QueryColumns-Methode** kann aufgerufen werden, um: 
   
-- Die Standardspaltengruppe für eine Tabelle.
+- Der Standardspaltensatz für eine Tabelle.
     
-- Die aktuelle Spaltengruppe für eine Tabelle, die durch einen Aufruf der [IMAPITable::](imapitable-setcolumns.md) SetColumns-Methode festgelegt wird. 
+- Die aktuelle Spalte, die für eine Tabelle festgelegt ist, wie sie durch einen Aufruf der [IMAPITable::SetColumns-Methode festgelegt](imapitable-setcolumns.md) wurde. 
     
-- Der vollständige Spaltensatz für eine Tabelle, die verfügbaren Spalten, aber nicht notwendigerweise Teil des aktuellen Satzes.
+- Der vollständige Spaltensatz für eine Tabelle, die spalten, die verfügbar sind, aber nicht unbedingt Teil der aktuellen Gruppe sind.
     
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Wenn Sie das TBL_ALL_COLUMNS-Flag nicht festlegen, gibt **IMAPITable:: QueryColumns** entweder die Standard-oder aktuelle Spaltengruppe einer Tabelle zurück, je nachdem, ob die Tabelle von einem Aufruf von **IMAPITable::** SetColumns betroffen ist. **** SetColumns ändert die Reihenfolge und Auswahl von Spalten im Spaltensatz einer Tabelle. 
+Wenn Sie das flag TBL_ALL_COLUMNS nicht festlegen, gibt **IMAPITable::QueryColumns** entweder den Standard- oder aktuellen Spaltensatz einer Tabelle zurück, je nachdem, ob die Tabelle durch einen Aufruf von **IMAPITable::SetColumns** beeinflusst wurde. **SetColumns** ändert die Reihenfolge und Auswahl von Spalten im Spaltensatz einer Tabelle. 
   
-Wenn Sie das TBL_ALL_COLUMNS-Flag festlegen, gibt **QueryColumns** alle Spalten zurück, die im Spaltensatz der Tabelle enthalten sein können. 
+Wenn Sie das TBL_ALL_COLUMNS festlegen, gibt **QueryColumns** alle Spalten zurück, die im Spaltensatz der Tabelle enthalten sein können. 
   
-Freigeben des Speichers für das Property-Tag-Array, auf das durch den _lpPropTagArray_ -Parameter verwiesen wird, durch Aufrufen der [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion. 
+Gibt den Arbeitsspeicher für das Eigenschaftentagarray frei, auf das der  _lpPropTagArray-Parameter_ verweist, indem Sie die [MAPIFreeBuffer-Funktion](mapifreebuffer.md) aufrufen. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -82,7 +82,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|ContentsTableListCtrl. cpp  <br/> |CContentsTableListCtrl::D oSetColumns  <br/> |MFCMAPI verwendet die **IMAPITable:: QueryColumns** -Methode, um die aktuelle Spaltengruppe für eine Tabelle abzurufen, sodass der Benutzer Sie bearbeiten kann.  <br/> |
+|ContentsTableListCtrl.cpp  <br/> |CContentsTableListCtrl::D oSetColumns  <br/> |MFCMAPI verwendet die **IMAPITable::QueryColumns-Methode,** um den aktuellen Spaltensatz für eine Tabelle abzurufen, damit der Benutzer ihn bearbeiten kann.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

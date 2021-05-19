@@ -1,5 +1,5 @@
 ---
-title: Behandeln von MAPI-Eigenschafts Fehlern
+title: Behandeln von MAPI-Eigenschaftsfehlern
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33419079"
 ---
-# <a name="handling-mapi-property-errors"></a>Behandeln von MAPI-Eigenschafts Fehlern
+# <a name="handling-mapi-property-errors"></a>Behandeln von MAPI-Eigenschaftsfehlern
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
@@ -35,7 +35,7 @@ Anstatt vollst�ndige Fehler oder Erfolg melden die folgenden Methoden **IMAPIP
   
 Die anderen **IMAPIProp** Methoden Berichten partiellen Erfolg unterschiedlich. Diese Methoden Bericht partiellen Erfolg von wird S_OK zur�ckgegeben, und platzieren Fehlerinformationen in eine [SPropProblemArray](spropproblemarray.md) -Struktur. Im Gegensatz zu der Arrays der Eigenschaft Wert in **GetProps**, das Daten unabh�ngig davon, ob die Methode erfolgreich war oder nicht enth�lt, ist das Array-Eigenschaft Problem in diesen Methoden nur, wenn Fehler aufgetreten sind, und nur, wenn der Aufrufer Zinsen kennenzulernen Fehler registriert hat vorhanden. Anrufer m�ssen einen g�ltiger **SPropProblemArray** Zeiger f�r Fehlerinformationen registriert angeben. 
   
-Wenn ein Fehlerwert von **SetProps**, **DeleteProps**, **CopyTo**oder **CopyProps**zur�ckgegeben wird, bedeutet dies Fehler anstelle von partiellen Erfolg. Das Array-Eigenschaft Problem ist gegebenenfalls ung�ltig. Clients sollte nicht versuchen, Zugriff auf Daten in der Struktur gehalten noch sollten sie versuchen, die Struktur selbst frei. Die entsprechende Antwort wird [IMAPIProp::GetLastError](imapiprop-getlasterror.md)aufzurufen. 
+Wenn ein Fehlerwert von **SetProps**, **DeleteProps**, **CopyTo** oder **CopyProps** zur�ckgegeben wird, bedeutet dies Fehler anstelle von partiellen Erfolg. Das Array-Eigenschaft Problem ist gegebenenfalls ung�ltig. Clients sollte nicht versuchen, Zugriff auf Daten in der Struktur gehalten noch sollten sie versuchen, die Struktur selbst frei. Die entsprechende Antwort wird [IMAPIProp::GetLastError](imapiprop-getlasterror.md)aufzurufen. 
   
 **GetLastError** ist vergleichbar mit der Funktion mit demselben Namen im Windows SDK bereitgestellt. Beide enthalten detailliertere Informationen zu einem Fehler als mit dem R�ckgabewert verf�gbar ist. Beide Zur�ckgeben von Informationen zu den vorherigen aufgetretenen Fehler. Der Unterschied besteht darin, dass die **GetLastError** Win32-Funktion einen Fehler vom aufrufenden meldet und die **IMAPIProp::GetLastError** -Methode ein Fehler generiert, die durch das aktuelle Objekt meldet. D. h., wenn ein Client **DeleteProps** f�r eine Nachricht und MAPI_E_NO_ACCESS aufruft wird um anzugeben, dass die Nachricht ist schreibgesch�tzt, **GetLastError** gibt Daten von der Nachricht zur�ckgegeben. 
   

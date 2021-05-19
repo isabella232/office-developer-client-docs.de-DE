@@ -25,7 +25,7 @@ ms.locfileid: "33414914"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt ein Array der Eigenschaften zurück, die von allen in einem Formular Container installierten Formularen verwendet werden.
+Gibt ein Array der Eigenschaften zurück, die von allen in einem Formularcontainer installierten Formularen verwendet werden.
   
 ```cpp
 HRESULT CalcFormPropSet(
@@ -38,11 +38,11 @@ HRESULT CalcFormPropSet(
 
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die steuert, wie das Eigenschaftenarray im _ppResults_ -Parameter zurückgegeben wird. Die folgenden Flags können festgelegt werden: 
+> [in] Eine Bitmaske mit Flags, die steuert, wie das Eigenschaftenarray im  _ppResults-Parameter_ zurückgegeben wird. Die folgenden Kennzeichen können festgelegt werden: 
     
 FORMPROPSET_INTERSECTION 
   
-> Das zurückgegebene Array enthält den Schnittpunkt der Eigenschaften der Formulare.
+> Das zurückgegebene Array enthält die Schnittmenge der Eigenschaften der Formulare.
     
 FORMPROPSET_UNION 
   
@@ -50,11 +50,11 @@ FORMPROPSET_UNION
     
 MAPI_UNICODE 
   
-> Die im Array zurückgegebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format.
+> Die im Array zurückgegebenen Zeichenfolgen haben das Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Zeichenfolgen im ANSI-Format.
     
  _ppResults_
   
-> Out Ein Zeiger auf einen Zeiger auf die zurückgegebene [SMAPIFormPropArray](smapiformproparray.md) -Struktur. Diese Struktur enthält alle Eigenschaften, die von den installierten Formularen verwendet werden. 
+> [out] Ein Zeiger auf einen Zeiger auf die zurückgegebene [SMAPIFormPropArray-Struktur.](smapiformproparray.md) Diese Struktur enthält alle Eigenschaften, die von den installierten Formularen verwendet werden. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -64,21 +64,21 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> Entweder wurde das MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt Unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
+> Entweder wurde MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Client Anwendungen rufen die **IMAPIFormContainer:: CalcFormPropSet** -Methode auf, um ein Array von Eigenschaften abzurufen, die von allen in einem Formular Container installierten Formularen verwendet werden. **IMAPIFormContainer:: CalcFormPropSet** funktioniert wie die [IMAPIFormMgr:: CalcFormPropSet](imapiformmgr-calcformpropset.md) -Methode, mit der Ausnahme, dass Sie auf jedem in einem bestimmten Container registrierten Formular ausgeführt wird. 
+Clientanwendungen rufen die **IMAPIFormContainer::CalcFormPropSet-Methode** auf, um ein Array von Eigenschaften zu erhalten, das von allen in einem Formularcontainer installierten Formularen verwendet wird. **IMAPIFormContainer::CalcFormPropSet** funktioniert wie die [IMAPIFormMgr::CalcFormPropSet-Methode,](imapiformmgr-calcformpropset.md) mit der Ausnahme, dass sie auf jedem Formular ausgeführt wird, das in einem bestimmten Container registriert ist. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Formularbibliothek Anbieter, die Unicode-Zeichenfolgen nicht unterstützen, sollten MAPI_E_BAD_CHARWIDTH zurückgeben, wenn MAPI_UNICODE übergeben wird.
+Formularbibliotheksanbieter, die keine Unicode-Zeichenfolgen unterstützen, sollten MAPI_E_BAD_CHARWIDTH zurückgeben, MAPI_UNICODE übergeben wird.
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
- **IMAPIFormContainer:: CalcFormPropSet** nimmt entweder eine Schnittmenge oder eine Vereinigung der Eigenschaftensätze der Formulare an, je nach dem im _ulFlags_ -Parameter festgelegten Flag und gibt eine **SMAPIFormPropArray** -Struktur zurück, die die die resultierende Gruppe von Eigenschaften. 
+ **IMAPIFormContainer::CalcFormPropSet** nimmt je nach dem im  _ulFlags-Parameter_ festgelegten Flag entweder eine Schnittmenge oder eine Vereinigung der Eigenschaftensätze der Formulare an und gibt eine **SMAPIFormPropArray-Struktur** zurück, die die resultierende Gruppe von Eigenschaften enthält. 
   
-Wenn ein Client das MAPI_UNICODE-Flag in _ulFlags_übergibt, sind alle zurückgegebenen Zeichenfolgen Unicode.
+Wenn ein Client das MAPI_UNICODE in  _ulFlags_ übergibt, sind alle zurückgegebenen Zeichenfolgen Unicode.
   
 ## <a name="see-also"></a>Siehe auch
 

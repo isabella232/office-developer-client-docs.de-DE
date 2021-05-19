@@ -27,7 +27,7 @@ Beschreibt eine Zeile aus einer Tabelle, die ausgewählte Eigenschaften für ein
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SRow
@@ -39,25 +39,25 @@ typedef struct _SRow
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
 **ulAdrEntryPad**
   
-> Padding Bytes, um die Eigenschaftswerte, auf die durch das **lpProps** -Element verwiesen wird, ordnungsgemäß auszurichten. 
+> Padding bytes to properly align the property values pointed to the **lpProps** member. 
     
 **cValues**
   
-> Die Anzahl der Eigenschaftswerte, auf die von **lpProps**verwiesen wird. 
+> Anzahl der Eigenschaftswerte, auf die **von lpProps verwiesen wird.** 
     
 **lpProps**
   
-> Zeiger auf ein Array von [SPropValue](spropvalue.md) -Strukturen, die die Eigenschaftswerte für die Spalten in der Zeile beschreiben. 
+> Zeiger auf ein Array von [SPropValue-Strukturen,](spropvalue.md) die die Eigenschaftswerte für die Spalten in der Zeile beschreiben. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Eine **SRow** -Struktur beschreibt eine Zeile in einer Tabelle. Sie ist in der [TABLE_NOTIFICATION](table_notification.md) -Struktur enthalten, die einer Tabellenbenachrichtigung beigefügt ist. 
+Eine **SRow-Struktur** beschreibt eine Zeile in einer Tabelle. Sie ist in der [TABLE_NOTIFICATION](table_notification.md) enthalten, die eine Tabellenbenachrichtigung begleitet. 
   
-**SRow** -Strukturen werden in den folgenden Methoden verwendet: 
+**SRow-Strukturen** werden in den folgenden Methoden verwendet: 
   
 - [IAddrBook::GetSearchPath](iaddrbook-getsearchpath.md)
     
@@ -67,7 +67,7 @@ Eine **SRow** -Struktur beschreibt eine Zeile in einer Tabelle. Sie ist in der [
     
 - [IMAPITable::ExpandRow](imapitable-expandrow.md)
     
-- [ITableData: IUnknown](itabledataiunknown.md) (viele Methoden) 
+- [ITableData : IUnknown](itabledataiunknown.md) (viele Methoden) 
     
 - [FBadRowSet](fbadrowset.md)
     
@@ -75,17 +75,17 @@ Eine **SRow** -Struktur beschreibt eine Zeile in einer Tabelle. Sie ist in der [
     
 - [HrQueryAllRows](hrqueryallrows.md)
     
-Wenn mehr als eine Zeile beschrieben werden muss, wird eine [SRowSet](srowset.md) -Struktur verwendet. Eine **SRowSet** -Struktur enthält ein Array von **SRow** -Strukturen und die Anzahl der Strukturen im Array. 
+Wenn mehrere Zeilen beschrieben werden müssen, wird eine [SRowSet-Struktur](srowset.md) verwendet. Eine **SRowSet-Struktur** enthält ein Array von **SRow-Strukturen** und eine Anzahl von Strukturen im Array. 
   
-Die folgende Abbildung zeigt die Beziehung zwischen einer **SRow** und einer **SRowSet** -Datenstruktur. 
+Die folgende Abbildung zeigt die Beziehung zwischen **einem SRow** und einer **SRowSet-Datenstruktur.** 
   
 **Beziehung zwischen SRow und SRowSet**
   
-![Beziehung zwischen SRow und SRowSet] (media/amapi_17.gif "Beziehung zwischen SRow und SRowSet")
+![Beziehung zwischen SRow und SRowSet Beziehung](media/amapi_17.gif "zwischen SRow und SRowSet")
   
-**SRow** -Strukturen sind identisch mit den [Miet](adrentry.md) Strukturen. Daher kann eine Zeile einer Empfängertabelle und ein Eintrag in einer Adressliste gleich behandelt werden. 
+**SRow-Strukturen** sind identisch mit [ADRENTRY-Strukturen.](adrentry.md) Daher können eine Zeile einer Empfängertabelle und ein Eintrag in einer Adressliste gleich behandelt werden. 
   
-Informationen dazu, wie der Speicher für **SRow** -Strukturen zugeordnet werden sollte, finden Sie unter [Managing Memory for ADRLIST and SRowSet Structures](managing-memory-for-adrlist-and-srowset-structures.md).
+Informationen dazu, wie der Arbeitsspeicher für **SRow-Strukturen** zugewiesen werden soll, finden Sie unter [Managing Memory for ADRLIST and SRowSet Structures](managing-memory-for-adrlist-and-srowset-structures.md).
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -94,5 +94,5 @@ Informationen dazu, wie der Speicher für **SRow** -Strukturen zugeordnet werden
 - [SRowSet](srowset.md)
 - [TABLE_NOTIFICATION](table_notification.md)
 - [MAPI-Strukturen](mapi-structures.md)
-- [Verwalten von Speicher für ADRLIST-und SRowSet-Strukturen](managing-memory-for-adrlist-and-srowset-structures.md)
+- [Verwalten des Arbeitsspeichers für ADRLIST- und SRowSet-Strukturen](managing-memory-for-adrlist-and-srowset-structures.md)
 

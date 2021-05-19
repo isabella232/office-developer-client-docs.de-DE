@@ -25,7 +25,7 @@ ms.locfileid: "33419989"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Änderungen an einem Abschnitt des Nachrichtenspeicher Profils bleiben permanent.
+Nimmt Änderungen an einem Nachrichtenspeicherprofilabschnitt dauerhaft vor.
   
 ```cpp
 HRESULT ModifyProfile(
@@ -37,25 +37,25 @@ ULONG ulFlags
 
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die den Typ des Nachrichtenspeichers angibt. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die den Typ des Nachrichtenspeichers angibt. Das folgende Flag kann festgelegt werden:
     
 MDB_TEMPORARY 
   
-> Der Nachrichtenspeicher ist temporär und sollte nicht der Nachrichtenspeichertabelle hinzugefügt werden. Wenn MDB_TEMPORARY festgelegt ist, gibt **MODIFYPROFILE** S_OK sofort zurück. 
+> Der Nachrichtenspeicher ist temporär und sollte nicht der Nachrichtenspeichertabelle hinzugefügt werden. Wenn MDB_TEMPORARY festgelegt ist, gibt **ModifyProfile** S_OK zurück. 
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Änderungen am Profil Abschnitt waren erfolgreich.
+> Die Änderungen am Profilabschnitt waren erfolgreich.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPISupport:: ModifyProfile** -Methode wird für Support Objekte des Nachrichtenspeicher Anbieters implementiert. Nachrichtenspeicher Anbieter rufen **ModifyProfile** auf, um MAPI aufzufordern, Ihre Profilinformationen zu ändern. 
+Die **IMAPISupport::ModifyProfile-Methode** wird für Unterstützungsobjekte des Nachrichtenspeicheranbieters implementiert. Nachrichtenspeicheranbieter rufen **ModifyProfile auf,** um MAPI zum Ändern ihrer Profilinformationen aufforderen. 
   
- **ModifyProfile** fügt den dem anrufenden Anbieter zugeordneten Profil Abschnitt der Liste der installierten Ressourcen des Nachrichtenspeicher Anbieters hinzu. Dies führt dazu, dass der Nachrichtenspeicher in der Nachrichtenspeichertabelle aufgeführt wird, die Clients über die [IMAPISession:: GetMsgStoresTable](imapisession-getmsgstorestable.md) -Methode zur Verfügung steht, und die geöffnet werden soll, ohne dass ein Dialogfeld angezeigt wird. 
+ **ModifyProfile** fügt den Profilabschnitt, der dem aufrufenden Anbieter zugeordnet ist, zur Liste der installierten Ressourcen des Nachrichtenspeicheranbieters hinzu. Dies bewirkt, dass der Nachrichtenspeicher in der Nachrichtenspeichertabelle aufgeführt wird, die Clients über die [IMAPISession::GetMsgStoresTable-Methode](imapisession-getmsgstorestable.md) zur Verfügung steht, und ohne die Anzeige eines Dialogfelds geöffnet wird. 
   
-Wenn das MDB_TEMPORARY-Flag festgelegt ist, bewirkt MAPI nichts, und die Methode gibt sofort mit S_OK zurück.
+Wenn das MDB_TEMPORARY festgelegt ist, führt MAPI nichts aus, und die Methode gibt sofort mit S_OK.
   
 ## <a name="see-also"></a>Siehe auch
 

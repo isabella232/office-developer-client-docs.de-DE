@@ -25,7 +25,7 @@ ms.locfileid: "33415166"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erweitert eine reduzierte Tabellen Kategorie und fügt der Tabellenansicht die Überschriftenzeilen des Blatts oder der unteren Ebene hinzu, die der Kategorie angehören.
+Erweitert eine reduzierte Tabellenkategorie und fügt der Tabellenansicht die Überschriftenzeilen auf Blatt- oder Unterebene hinzu, die der Kategorie zugeordnet sind.
   
 ```cpp
 HRESULT ExpandRow(
@@ -42,27 +42,27 @@ ULONG FAR * lpulMoreRows
 
  _cbInstanceKey_
   
-> in Die Anzahl der Bytes in der PR_INSTANCE_KEY-Eigenschaft, auf die durch den _pbInstanceKey_ -Parameter verwiesen wird. 
+> [in] Die Anzahl der Bytes in der PR_INSTANCE_KEY, auf die der  _pbInstanceKey-Parameter_ verweist. 
     
  _pbInstanceKey_
   
-> in Ein Zeiger auf die **PR_INSTANCE_KEY** ([pidtaginstancekey (](pidtaginstancekey-canonical-property.md))-Eigenschaft, die die Überschriftenzeile für die Kategorie identifiziert. 
+> [in] Ein Zeiger auf die **PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md))-Eigenschaft, die die Überschriftenzeile für die Kategorie identifiziert. 
     
  _ulRowCount_
   
-> in Die maximale Anzahl von Zeilen, die im _lppRows_ -Parameter zurückgegeben werden. 
+> [in] Die maximale Anzahl von Zeilen, die im  _lppRows-Parameter zurückgegeben werden_ sollen. 
     
  _ulFlags_
   
-> Reserviert muss NULL sein.
+> Reserviert; muss null sein.
     
  _lppRows_
   
-> Out Ein Zeiger auf eine [SRowSet](srowset.md) -Struktur, die die ersten Zeilen (bis zu _ulRowCount_) empfängt, die als Ergebnis der Erweiterung in die Tabellenansicht eingefügt wurden. Diese Zeilen werden nach der Überschriftenzeile eingefügt, die durch den _pbInstanceKey_ -Parameter identifiziert wird. Der _lppRows_ -Parameter kann NULL sein, wenn der _ulRowCount_ -Parameter NULL ist. 
+> [out] Ein Zeiger auf eine [SRowSet-Struktur,](srowset.md) die die ersten Zeilen (bis  _ulRowCount)_ empfängt, die als Ergebnis der Erweiterung in die Tabellenansicht eingefügt wurden. Diese Zeilen werden nach der überschriftenzeile eingefügt, die durch den  _pbInstanceKey-Parameter identifiziert_ wurde. Der  _lppRows-Parameter_ kann NULL sein, wenn  _der ulRowCount-Parameter_ null ist. 
     
  _lpulMoreRows_
   
-> Out Ein Zeiger auf die Gesamtanzahl der Zeilen, die der Tabellenansicht hinzugefügt wurden.
+> [out] Ein Zeiger auf die Gesamtanzahl der Zeilen, die der Tabellenansicht hinzugefügt wurden.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -72,25 +72,25 @@ S_OK
     
 MAPI_E_NOT_FOUND 
   
-> Die durch den _pbInstanceKey_ -Parameter angegebene Zeile ist nicht vorhanden. 
+> Die vom  _pbInstanceKey-Parameter_ identifizierte Zeile ist nicht vorhanden. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPITable:: ExpandRow** -Methode erweitert eine reduzierte Tabellen Kategorie, indem Sie die Überschriftenzeilen Blatt oder auf niedrigerer Ebene, die der Kategorie angehören, der Tabellenansicht hinzugefügt wird. Ein Grenzwert für die Anzahl der Zeilen, die im _lppRows_ -Parameter zurückgegeben werden können, kann im Parameter _ulRowCount_ angegeben werden. Wenn _ulRowCount_ auf einen Wert größer als 0 (null) festgelegt ist und mindestens eine Zeile in der Zeilengruppe zurückgegeben wird, auf die von _lppRows_verwiesen wird, wird die Position der Textmarke BOOKMARK_CURRENT in die Zeile verschoben, die unmittelbar auf die letzte Zeile im Zeilensatz folgt.
+Die **IMAPITable::ExpandRow-Methode** erweitert eine reduzierte Tabellenkategorie und fügt der Tabellenansicht die Überschriftenzeilen auf Blatt- oder unterer Ebene hinzu, die zur Kategorie gehören. Ein Grenzwert für die Anzahl der Zeilen, die im  _lppRows-Parameter_ zurückgegeben werden sollen, kann im  _ulRowCount-Parameter angegeben_ werden. Wenn  _ulRowCount_ auf einen Wert festgelegt ist, der größer als Null ist und eine oder mehrere Zeilen in dem Zeilensatz zurückgegeben werden, auf den  _lppRows_ verweist, wird die Position der Textmarke BOOKMARK_CURRENT in die Zeile unmittelbar nach der letzten Zeile im Zeilensatz verschoben.
   
-Wenn _ulRowCount_ auf 0 (null) festgelegt ist, die die Kategorie mit NULL-oder untergeordneten Überschriftenzeilen hinzugefügt werden, oder null Zeilen zurückgegeben werden, da keine Überschriftenzeilen Blatt oder unterer Ebene in der Kategorie vorhanden sind, wird die Position von BOOKMARK_CURRENT auf die Zeile festgelegt. nach der durch _pbInstanceKey_identifizierten Zeile. 
+Wenn  _ulRowCount_ auf Null festgelegt ist und fordert, dass der Kategorie Keine Blattzeilen oder Zeilen auf unterer Ebene hinzugefügt werden, oder null Zeilen zurückgegeben werden, da keine Zeilen auf Blatt- oder unterer Ebene in der Kategorie vorhanden sind, wird die Position von BOOKMARK_CURRENT auf die Zeile festgelegt, die der zeile folgt, die durch  _pbInstanceKey_ identifiziert wurde. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Generieren Sie keine Benachrichtigungen für Zeilen, die aufgrund der Kategorien Erweiterung zu einer Tabellenansicht hinzugefügt werden.
+Generieren Sie keine Benachrichtigungen für Zeilen, die aufgrund der Kategorieerweiterung einer Tabellenansicht hinzugefügt werden.
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Die Anzahl der Zeilen im Zeilensatz, auf die durch den _lppRows_ -Parameter verwiesen wird, entspricht möglicherweise nicht der Anzahl der Zeilen, die der Tabelle tatsächlich hinzugefügt wurden, dem gesamten Satz von Überschriftenzeilen der Blatt-oder unteren Ebene für die Kategorie. Fehler können auftreten, beispielsweise unzureichender Arbeitsspeicher, oder die Anzahl der Zeilen in der Kategorie, die die im _ulRowCount_ -Parameter angegebene Anzahl überschreitet. In beiden Fällen wird BOOKMARK_CURRENT in der letzten zurückgegebenen Zeile positioniert. Wenn Sie die restlichen Zeilen in der Kategorie sofort abrufen möchten, rufen Sie [IMAPITable:: QueryRows](imapitable-queryrows.md)auf.
+Die Anzahl der Zeilen im Zeilensatz, auf die der  _lppRows-Parameter_ verweist, entspricht möglicherweise nicht der Anzahl der Zeilen, die der Tabelle hinzugefügt wurden, dem gesamten Satz von Blatt- oder Unterzeilen für die Kategorie. Fehler können auftreten, z. B. unzureichender Arbeitsspeicher oder die Anzahl der Zeilen in der Kategorie, die die im  _ulRowCount-Parameter_ angegebene Anzahl überschreitet. In beiden Fällen wird BOOKMARK_CURRENT an der letzten zurückgegebenen Zeile positioniert. Rufen Sie [IMAPITable::QueryRows](imapitable-queryrows.md)auf, um die restlichen Zeilen in der Kategorie sofort abzurufen.
   
-Erwarten Sie nicht, eine Tabellenbenachrichtigung zu erhalten, wenn eine Kategorie ihren Status ändert. Sie können einen lokalen Cache mit Zeilen verwalten, die mit jedem **ExpandRow** -oder **CollapseRow** -Aufruf aktualisiert werden können. 
+Erwarten Sie keine Tabellenbenachrichtigung, wenn eine Kategorie ihren Status ändert. Sie können einen lokalen Cache von Zeilen verwalten, der mit jedem **ExpandRow-** oder **CollapseRow-Aufruf aktualisiert werden** kann. 
   
-Weitere Informationen zu kategorisierten Tabellen finden Sie unter [Sortieren und kategorisieren](sorting-and-categorization.md).
+Weitere Informationen zu kategorisierten Tabellen finden Sie unter [Sorting and Categorization](sorting-and-categorization.md).
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -98,7 +98,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|ContentsTableListCtrl. cpp  <br/> |CContentsTableListCtrl::D oExpandCollapse  <br/> |MFCMAPI verwendet die **IMAPITable:: ExpandRow** -Methode, um eine reduzierte Tabellen Kategorie zu erweitern.  <br/> |
+|ContentsTableListCtrl.cpp  <br/> |CContentsTableListCtrl::D oExpandCollapse  <br/> |MFCMAPI verwendet die **IMAPITable::ExpandRow-Methode,** um eine reduzierte Tabellenkategorie zu erweitern.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

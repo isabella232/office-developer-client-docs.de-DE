@@ -25,7 +25,7 @@ ms.locfileid: "33410133"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Vergleicht zwei Eintragsbezeichner, um zu bestimmen, ob Sie auf dasselbe Objekt verweisen. MAPI bezieht diesen Aufruf nur dann an einen Dienstanbieter, wenn die eindeutigen IDs (in beiden Eingabe Bezeichnern), die verglichen werden sollen, von diesem Anbieter verarbeitet werden.
+Vergleicht zwei Eintragsbezeichner, um zu bestimmen, ob sie auf dasselbe Objekt verweisen. MAPI verweist diesen Aufruf nur dann an einen Dienstanbieter, wenn die eindeutigen Bezeichner (UIDs) in beiden zu vergleichenden Eintragsbezeichnern von diesem Anbieter verarbeitet werden.
   
 ```cpp
 HRESULT CompareEntryIDs(
@@ -42,19 +42,19 @@ HRESULT CompareEntryIDs(
 
  _cbEntryID1_
   
-> in Die Größe der Eintrags-ID, auf die durch den _lpEntryID1_ -Parameter verwiesen wird, in Bytes _._
+> [in] Die Größe des Eintragsbezeichners in Bytes, auf den der  _lpEntryID1-Parameter_  _verweist._
     
  _lpEntryID1_
   
-> in Ein Zeiger auf den ersten zu vergleichenden Eintragsbezeichner.
+> [in] Ein Zeiger auf die erste Zutritts-ID, die verglichen werden soll.
     
  _cbEntryID2_
   
-> in Die Größe der Eintrags-ID, auf die durch den _lpEntryID2_ -Parameter verwiesen wird, in Bytes _._
+> [in] Die Größe des Eintragsbezeichners in Bytes, auf den der  _lpEntryID2-Parameter_  _verweist._
     
  _lpEntryID2_
   
-> in Ein Zeiger auf die zweite Eintrags-ID, die verglichen werden soll.
+> [in] Ein Zeiger auf den zweiten Eintragsbezeichner, der verglichen werden soll.
     
  _ulFlags_
   
@@ -62,7 +62,7 @@ HRESULT CompareEntryIDs(
     
  _lpulResult_
   
-> Out Ein Zeiger auf das zurückgegebene Ergebnis des Vergleichs. TRUE, wenn die beiden Eintragsbezeichner auf dasselbe Objekt verweisen, andernfalls false. andernfalls FALSE.
+> [out] Ein Zeiger auf das zurückgegebene Ergebnis des Vergleichs. TRUE, wenn die beiden Eintragsbezeichner auf dasselbe Objekt verweisen. Andernfalls FALSE.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -70,11 +70,11 @@ S_OK
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Nachrichtenspeicher Anbieter implementieren die **IMSLogon:: CompareEntryIDs** -Methode, um zwei Eintragsbezeichner für einen bestimmten Eintrag in einem Nachrichtenspeicher zu vergleichen, um zu bestimmen, ob Sie auf dasselbe Objekt verweisen. Wenn die beiden Eintragsbezeichner auf dasselbe Objekt verweisen, legt **CompareEntryIDs** den _lpulResult_ -Parameter auf true fest; Wenn Sie auf verschiedene Objekte verweisen, **CompareEntryIDs** _lpulResult_ auf false festgelegt. 
+Nachrichtenspeicheranbieter implementieren die **IMSLogon::CompareEntryIDs-Methode,** um zwei Eintragsbezeichner für einen bestimmten Eintrag in einem Nachrichtenspeicher zu vergleichen, um zu bestimmen, ob sie auf dasselbe Objekt verweisen. Wenn die beiden Eintragsbezeichner auf dasselbe Objekt verweisen, legt **CompareEntryIDs** den  _lpulResult-Parameter_ auf TRUE fest. Wenn sie auf verschiedene Objekte verweisen, **legt CompareEntryIDs**  _lpulResult auf_ FALSE fest. 
   
- **CompareEntryIDs** ist nützlich, da ein Objekt mehrere gültige Eintragsbezeichner aufweisen kann. Dies kann beispielsweise der Fall sein, nachdem eine neue Version eines Nachrichtenspeicher Anbieters installiert wurde. 
+ **CompareEntryIDs** ist nützlich, da ein Objekt mehrere gültige Eintragsbezeichner enthalten kann. Dies kann beispielsweise auftreten, nachdem eine neue Version eines Nachrichtenspeicheranbieters installiert wurde. 
   
 ## <a name="see-also"></a>Siehe auch
 

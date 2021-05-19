@@ -17,7 +17,7 @@ ms.locfileid: "33419548"
 ---
 # <a name="isocialprovidergetsession"></a>ISocialProvider::GetSession
 
-Ruft eine [ISocialSession](isocialsessioniunknown.md) -Schnittstelle ab. 
+Ruft eine [ISocialSession-Schnittstelle](isocialsessioniunknown.md) ab. 
   
 ```cpp
 HRESULT _stdcall GetSession([out, retval] ISocialSession** session);
@@ -31,7 +31,7 @@ _session_
     
 ## <a name="remarks"></a>Bemerkungen
 
-Der Outlook Connector für soziale Netzwerke (OSC) verwendet die **ISocialSession** -Schnittstelle zum Anmelden am sozialen Netzwerk. 
+Das Outlook Social Connector (OSC) verwendet die **ISocialSession-Schnittstelle,** um sich beim sozialen Netzwerk zu melden. 
   
 ## <a name="see-also"></a>Siehe auch
 

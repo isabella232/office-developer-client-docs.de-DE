@@ -25,12 +25,12 @@ ms.locfileid: "33410686"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt eine Bezeichnung, die in einem Dialogfeldverwendet wird, das aus einer Anzeigetabelle erstellt wird.
+Beschreibt eine Bezeichnung, die in einem Dialogfeld verwendet wird, das aus einer Anzeigetabelle erstellt wird.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehöriges Makro  <br/> |[SizedDtblLabel](sizeddtbllabel.md) <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandtes Makro  <br/> |[SizedDtblLabel](sizeddtbllabel.md) <br/> |
    
 ```cpp
 typedef struct _DTBLLABEL
@@ -41,31 +41,31 @@ typedef struct _DTBLLABEL
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **ulbLpszLabelName**
   
-> Position im Speicher der Zeichenfolgenbezeichnung.
+> Position im Arbeitsspeicher der Zeichenzeichenfolgenbeschriftung.
     
  **ulFlags**
   
-> Bitmaske der Flags, mit denen das Format der Bezeichnung festgelegt wird, auf die durch das **ulbLpszLabelName** -Element verwiesen wird. Das folgende Flag kann festgelegt werden: 
+> Bitmaske von Flags, die zum Festlegen des Formats der Bezeichnung verwendet werden, auf das das **ulbLpszLabelName-Element** verweist. Das folgende Flag kann festgelegt werden: 
     
 MAPI_UNICODE 
   
-> Die Bezeichnung ist im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, ist die Bezeichnung im ANSI-Format.
+> Die Bezeichnung ist im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befindet sich die Bezeichnung im ANSI-Format.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Eine **DTBLLABEL** -Struktur beschreibt einen Beschriftungssteuerelement Text, der mit einem anderen Steuerelementtyp angezeigt wird, um diesem Steuerelement eine Bedeutung hinzuzufügen. Die meisten Bearbeitungssteuerelemente werden beispielsweise neben Bezeichnungen positioniert, um den Benutzer über den Typ der einzugebenden Informationen zu informieren. Einige Steuerelemente wie Gruppen-und Optionsfelder enthalten eigene Beschriftungen. 
+Eine **DTBLLABEL-Struktur** beschreibt einen Beschriftungssteuerelementtext, der mit einem anderen Steuerelementtyp angezeigt wird, um diesem Steuerelement Bedeutung hinzuzufügen. Die meisten Bearbeitungssteuerelemente werden beispielsweise neben Beschriftungen positioniert, um den Benutzer über die Art der eingegebenen Informationen zu informieren. Einige Steuerelemente, z. B. Gruppenfelder und Optionsfelder, enthalten eigene Bezeichnungen. 
   
-Die Bezeichnung kann eine Windows-Schnellinfo aufweisen, die als Zeichen nach dem kaufmännischen und (&amp;) identifiziert wird. Durch Drücken der Tastenkombination wird der Fokus in das erste nicht-Schaltflächen-Steuerelement, das dieser Beschriftung folgt, in der Anzeigetabelle platziert.
+Die Bezeichnung kann eine Windows, die als Zeichen nach dem ampersand ( ) identifiziert &amp; wird. Durch Drücken der Zugriffstaste wird der Fokus im ersten nicht gekennzeichneten, nicht auf diese Bezeichnung folgenden Steuerelement in der Anzeigetabelle angezeigt.
   
-Mehrzeilige Beschriftungen werden nicht unterstützt. Das Anzeigen mehrerer Zeilen erfordert mehrere Bezeichnungen.
+Es gibt keine Unterstützung für mehrstufige Bezeichnungen. Das Anzeigen mehrerer Zeilen erfordert mehrere Bezeichnungen.
   
-Eine Bezeichnung kann nicht als schreibgeschütztes Bearbeitungssteuerelement verwendet werden. Der Unterschied besteht darin, dass ein Bearbeitungssteuerelement ausgewählt und kopiert werden kann, während eine Bezeichnung nicht. 
+Es ist nicht möglich, eine Bezeichnung als schreibgeschütztes Bearbeitungssteuerelement zu verwenden. Der Unterschied ist, dass ein Bearbeitungssteuerelement ausgewählt und kopiert werden kann, während eine Bezeichnung nicht möglich ist. 
   
-Eine Übersicht über Anzeige Tabellen finden Sie unter [Display Tables](display-tables.md). Weitere Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
+Eine Übersicht über Anzeigetabellen finden Sie unter [Display Tables](display-tables.md). Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
   
 ## <a name="see-also"></a>Siehe auch
 

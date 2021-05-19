@@ -21,10 +21,10 @@ ms.locfileid: "33409986"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die MAPI-Dienstprogramme bestehen aus Tabellendaten und Eigenschaftendaten Objekten sowie verschiedenen Funktionen zur Unterstützung verschiedener Features. Ein Client kann nur diese Dienstprogramme benötigen und sich nicht beim MAPI-Subsystem anmelden, um eine Verbindung mit Dienstanbietern herzustellen. Wenn Ihr Client in diese Kategorie passt, rufen Sie die API-Funktion [ScInitMapiUtil](scinitmapiutil.md) anstelle der [MAPIInitialize](mapiinitialize.md) -Funktion bei der Initialisierungszeit. 
+Die MAPI-Dienstprogramme werden aus Tabellendaten- und Eigenschaftsdatenobjekten und einer Vielzahl von Funktionen zur Unterstützung verschiedener Features erstellt. Es ist möglich, dass ein Client nur diese Hilfsprogramme benötigt und sich nicht beim MAPI-Subsystem anmeldet, um eine Verbindung mit Dienstanbietern herzustellen. Wenn Ihr Client in diese Kategorie passt, rufen Sie die API-Funktion [ScInitMapiUtil](scinitmapiutil.md) und nicht die [MAPIInitialize-Funktion](mapiinitialize.md) zur Initialisierungszeit auf. 
   
- **ScInitMapiUtil** ermöglicht Clients das Verwenden von Hilfsfunktionen, die MAPI-Zuweisungen erfordern, die jedoch nicht explizit nach den Zuordnungen Fragen. Wenn es Zeit zum Herunterfahren ist, rufen Sie [DeinitMapiUtil](deinitmapiutil.md) auf, um Ressourcen anstelle von [MAPIUninitialize](mapiuninitialize.md)zu erhalten. Clients, die **MAPIInitialize** nie aufrufen, sollten **MAPIUninitialize**aufrufen.
+ **ScInitMapiUtil** ermöglicht Clients die Verwendung von Hilfsfunktionen, die MAPI-Zuweisungen erfordern, die jedoch nicht explizit nach den Zuweisungen fragen. Wenn es zeit ist, heruntergefahren zu werden, rufen Sie [DeinitMapiUtil](deinitmapiutil.md) auf, um Ressourcen frei zu lassen, anstatt [MAPIUninitialize .](mapiuninitialize.md) Clients, die **MAPIInitialize nie aufrufen,** sollten **MAPIUninitialize nicht aufrufen.**
   
-Wenn Sie **ScInitMapiUtil** statt **MAPIInitialize** aufgerufen haben und Tabellen über die **ITableData** -Methoden statt über die **IMAPITable** -Methoden verwenden, beachten Sie, dass Tabellen Benachrichtigungen nicht funktionieren. Benachrichtigungen erfordern die Verwendung der MAPI-Bibliotheken und [IMAPITable: IUnknown](imapitableiunknown.md).
+Wenn Sie **ScInitMapiUtil** anstelle von **MAPIInitialize** aufgerufen haben und Tabellen über die **ITableData-Methoden** und nicht über die **IMAPITable-Methoden** verwenden, sollten Sie beachten, dass Tabellenbenachrichtigungen nicht funktionieren. Benachrichtigungen erfordern die Verwendung der MAPI-Bibliotheken und [IMAPITable : IUnknown](imapitableiunknown.md).
   
 

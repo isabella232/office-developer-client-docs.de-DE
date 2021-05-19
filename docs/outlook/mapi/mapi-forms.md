@@ -21,11 +21,11 @@ ms.locfileid: "33409972"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Nach der Lektüre dieser Übersicht über die MAPI-Formulararchitektur haben Sie Verständnis dafür, was MAPI-Formulare sind und wie Sie mit anderen Komponenten des MAPI-Subsystems interagieren. Dieser Abschnitt soll Ihnen die konzeptionellen Kenntnisse vermitteln, die Sie benötigen, um Ihre eigenen MAPI-Formularserver zu implementieren.
+Nachdem Sie diese Übersicht über die MAPI-Formulararchitektur gelesen haben, erfahren Sie, was MAPI-Formulare sind und wie sie mit anderen Komponenten des MAPI-Subsystems interagieren. Der Zweck dieses Abschnitts ist es, Ihnen die konzeptionellen Kenntnisse zu vermitteln, die Sie zum Implementieren Eigener MAPI-Formularserver benötigen.
   
 Bevor Sie diesen Abschnitt lesen, sollten Sie sich mit dem Material im Thema [MAPI Forms Overview](mapi-forms-overview.md) vertraut machen. 
   
 > [!NOTE]
-> Da die MAPI-Formulararchitektur auf dem Component Object Model (COM) basiert, erfordert das Entwickeln von Formularserver Anwendungen Kenntnisse der COM-Programmierung. Weitere Informationen zu COM finden Sie im Abschnitt COM-und ActiveX-Objektdienste im Windows SDK. 
+> Da die MAPI-Formulararchitektur auf dem Component Object Model (COM) basiert, erfordert die Entwicklung von Formularserveranwendungen Kenntnisse der COM-Programmierung. Weitere Informationen zu COM finden Sie im Abschnitt COM und ActiveX Object Services im Windows SDK. 
   
 

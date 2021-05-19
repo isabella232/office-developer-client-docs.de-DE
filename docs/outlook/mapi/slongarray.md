@@ -25,11 +25,11 @@ ms.locfileid: "33414529"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von LONG-Werttypen, die zum Beschreiben einer Eigenschaft vom Typ PT_MV_LONG verwendet werden. 
+Enthält ein Array von LONG-Werttypen, die zum Beschreiben einer Eigenschaft vom Typ PT_MV_LONG. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SLongArray
@@ -40,19 +40,19 @@ typedef struct _SLongArray
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cValues**
   
-> Die Anzahl der Werte im Array, auf die durch das **LPL** -Element verwiesen wird. 
+> Anzahl der Werte im Array, auf das das **lpl-Element verweist.** 
     
- **LPL**
+ **lpl**
   
 > Zeiger auf ein Array von LONG-Werten.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Weitere Informationen zu PT_MV_LONG finden Sie unter [Liste der Eigenschaftstypen](property-types.md).
+Weitere Informationen zu PT_MV_LONG finden Sie [unter List of Property Types](property-types.md).
   
 ## <a name="see-also"></a>Siehe auch
 

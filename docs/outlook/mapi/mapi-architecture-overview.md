@@ -21,17 +21,17 @@ ms.locfileid: "33410077"
   
 MAPI definiert eine modulare Architektur, wie in der folgenden Abbildung dargestellt.  
   
-![Architektur von Outlook 2010] (media/amapi_43.gif "Architektur von Outlook 2010")
+![Outlook 2010-Architektur](media/amapi_43.gif "Outlook 2010-Architektur")
   
-Die MAPI-Anwendung wird als Clientanwendung bezeichnet, da es sich um einen Client des MAPI-Subsystems handelt. Messaging-basierte Anwendungen beschäftigen Messaging als zentralen Teil ihrer Verarbeitung und bieten umfangreiche Messaging-Features wie den Austausch von Informationen verschiedener Typen in verschiedenen Formaten und die Möglichkeit, die Informationen lokal zu speichern und zu organisieren. E-Mail-, Scheduling-und Workflowanwendungen sind Beispiele für Messaging basierte Anwendungen.
+Die MAPI-Anwendung wird als Clientanwendung bezeichnet, da sie ein Client des MAPI-Subsystems ist. Messaging-basierte Anwendungen verwenden Messaging als zentralen Teil ihrer Verarbeitung und bieten umfangreiche Messagingfeatures, z. B. den Austausch von Informationen verschiedener Typen in verschiedenen Formaten und die Möglichkeit, die Informationen lokal zu speichern und zu organisieren. E-Mail-, Planungs- und Arbeitsflussanwendungen sind Beispiele für messagingbasierte Anwendungen.
   
-Das MAPI-Subsystem besteht aus einer allgemeinen Benutzeroberfläche und den Programmierschnittstellen. Bei der allgemeinen Benutzeroberfläche handelt es sich um eine Reihe von Dialogfeldern, mit denen Clientanwendungen konsistent aussehen und Benutzer eine konsistente Arbeitsweiseerhalten.
+Das MAPI-Subsystem besteht aus einer gemeinsamen Benutzeroberfläche und den Programmierschnittstellen. Bei der allgemeinen Benutzeroberfläche handelt es sich um eine Reihe von Dialogfelder, die Clientanwendungen ein einheitliches Aussehen und Benutzern eine konsistente Arbeit ermöglichen.
   
-MAPI verfügt über Programmierschnittstellen, die vom MAPI-Subsystem, von Client Softwareentwicklern und von Dienstanbieter Entwicklern verwendet werden. Die MAPI-Programmierschnittstelle ist die Hauptobjekt basierte Programmierschnittstelle. Die MAPI-Programmierschnittstelle ähnelt dem OLE-Komponentenobjektmodell und wird vom MAPI-Subsystem und Messaging-basierten Clientanwendungen verwendet, die in C oder C++ geschrieben sind. 
+MAPI verfügt über Programmierschnittstellen, die vom MAPI-Subsystem, von Clientsoftwareentwicklern und von Dienstanbieterentwicklern verwendet werden. Die MAPI-Programmierschnittstelle ist die wichtigste objektbasierte Programmierschnittstelle. Die MAPI-Programmierschnittstelle ähnelt dem OLE-Komponentenobjektmodell und wird vom #A0 und messagingbasierten Clientanwendungen verwendet, die in C oder C++ geschrieben wurden. 
   
-Als Client Softwareentwickler führen Sie MAPI-Aufrufe direkt über die MAPI-Programmierschnittstelle aus. Sie können Messaging mit einer einzelnen MAPI-Clientschnittstelle oder einer Kombination von Schnittstellen implementieren. Eine einzelne Anwendung kann Aufrufe an Methoden oder Funktionen vornehmen, die zu einer der Schnittstellen gehören.
+Als Clientsoftwareentwickler nehmen Sie MAPI-Aufrufe direkt über die MAPI-Programmierschnittstelle vor. Sie können Messaging mit einer einzelnen MAPI-Clientschnittstelle oder einer Kombination von Schnittstellen implementieren. Eine einzelne Anwendung kann Methoden oder Funktionen aufrufen, die zu einer der Schnittstellen gehören.
   
 ## <a name="see-also"></a>Siehe auch
 
--[MAPI-Features und-Architektur](mapi-features-and-architecture.md)
+-[MAPI-Features und -Architektur](mapi-features-and-architecture.md)
 

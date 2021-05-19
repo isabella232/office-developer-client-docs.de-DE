@@ -25,12 +25,12 @@ ms.locfileid: "33420255"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl der Bytes in einer vorhandenen [SMAPIFormPropArray](smapiformproparray.md) -Struktur, die eine angegebene Anzahl von [SMAPIFormProp](smapiformprop.md) -Strukturen enthält. 
+Berechnet die Anzahl der Bytes in einer vorhandenen [SMAPIFormPropArray-Struktur,](smapiformproparray.md) die eine angegebene Anzahl von [SMAPIFormProp-Strukturen](smapiformprop.md) enthält. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiform. h  <br/> |
-|Zugehörige Struktur:  <br/> |**SMAPIFormPropArray** <br/> |
+|Headerdatei  <br/> |Mapiform.h  <br/> |
+|Verwandte Struktur:  <br/> |**SMAPIFormPropArray** <br/> |
    
 ```cpp
 CbMAPIFormPropArray (_c)
@@ -38,9 +38,9 @@ CbMAPIFormPropArray (_c)
 
 ## <a name="parameters"></a>Parameter
 
- __c_
+ _ _c_
   
-> Die Anzahl der **SMAPIFormProp** -Strukturen in der fraglichen **SMAPIFormPropArray** -Struktur. 
+> Anzahl der **SMAPIFormProp-Strukturen** in der **smAPIFormPropArray-Struktur.** 
     
 ## <a name="see-also"></a>Siehe auch
 

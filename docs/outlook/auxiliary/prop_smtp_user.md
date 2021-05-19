@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33420318"
 ---
-# <a name="propsmtpuser"></a>PROP_SMTP_USER
+# <a name="prop_smtp_user"></a>PROP_SMTP_USER
 
 Stellt den Benutzernamen für das SMTP-Konto dar.
   
@@ -23,9 +23,9 @@ Stellt den Benutzernamen für das SMTP-Konto dar.
 |||
 |:-----|:-----|
 |Kennung:  <br/> |0x0204  <br/> |
-|Eigenschafts:  <br/> |PT_UNICODE  <br/> |
-|Property-Tag:  <br/> |0x0204001F  <br/> |
-|Access  <br/> |Schreibgeschützt  <br/> |
+|Eigenschaftstyp:  <br/> |PT_UNICODE  <br/> |
+|Eigenschaftstag:  <br/> |0x0204001F  <br/> |
+|Zugriff:  <br/> |Schreibgeschützt  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

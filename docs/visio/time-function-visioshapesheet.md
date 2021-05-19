@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251506
 localization_priority: Normal
 ms.assetid: 2e662230-0760-5f43-52dc-927f499715f6
-description: Gibt die von Stunde, Minute und Sekunde dargestellte Zeit zurück.
+description: Gibt die Durch Stunde, Minute und Sekunde dargestellte Zeit zurück.
 ms.openlocfilehash: f5be55d7e63a70d15da49c68b924cc5b03c5ca88
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33414473"
 ---
 # <a name="time-function-visioshapesheet"></a>TIME-Funktion (VisioShapeSheet)
 
-Gibt die von _Stunde_, _Minute_und _Sekunde_dargestellte Zeit zurück.
+Gibt die Durch _Stunde,_ Minute und Sekunde dargestellte Zeit _zurück._ 
   
 ## <a name="syntax"></a>Syntax
 
-Uhrzeit (* * *Stunde* * *, * * *Minute* * *, * * *Sekunde* * *) 
+TIME(** *hour* **, ** *minute* **, ** *second* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -38,13 +38,13 @@ Numeric
   
 ## <a name="example-1"></a>Beispiel 1
 
-ZEIT (15, 30, 30)
+TIME(15,30,30)
   
 Gibt den Wert für 15:30:30 zurück.
   
 ## <a name="example-2"></a>Beispiel 2
 
-FORMAT (Zeit (15, 30, 30), "HH: mm")
+FORMAT(TIME(15,30,30),"HH:mm")
   
 Gibt den Wert für 15:30 zurück.
   

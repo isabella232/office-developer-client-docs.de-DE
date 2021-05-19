@@ -15,15 +15,15 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33420024"
 ---
-# <a name="mapiofflineadviseinfo"></a>MAPIOFFLINE_ADVISEINFO
+# <a name="mapioffline_adviseinfo"></a>MAPIOFFLINE_ADVISEINFO
  
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält Informationen zu **[IMAPIOfflineMgr:: Advise](imapiofflinemgr-advise.md)** to Register Callback for an Offline Object. 
+Stellt Informationen für **[IMAPIOfflineMgr::Advise](imapiofflinemgr-advise.md)** zum Registrieren des Rückrufs für ein Offlineobjekt zur Verfügung. 
   
 ## <a name="quick-info"></a>QuickInfo
 
-Weitere Informationen finden Sie unter **IMAPIOfflineMgr:: Advise**. 
+Weitere Informationen finden Sie unter **IMAPIOfflineMgr::Advise**. 
   
 ```cpp
 typedef struct 
@@ -37,23 +37,23 @@ typedef struct
 } MAPIOFFLINE_ADVISEINFO;
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
-_ulSize_: die Größe von **MAPIOFFLINE_ADVISEINFO**. 
+_ulSize_: Die Größe **MAPIOFFLINE_ADVISEINFO**. 
     
-_ulClientToken_: ein vom Client definiertes Token zu einem Rückruf. Es ist das *ulClientToken* -Element der **[MAPIOFFLINE_NOTIFY](mapioffline_notify.md)** -Struktur, die an **[IMAPIOfflineNotify:: notify](imapiofflinenotify-notify.md)** übergeben wird. 
+_ulClientToken_: Ein vom Client definiertes Token über einen Rückruf. Es ist das *ulClientToken-Element* der **[MAPIOFFLINE_NOTIFY,](mapioffline_notify.md)** die **[an IMAPIOfflineNotify::Notify übergeben wird.](imapiofflinenotify-notify.md)** 
     
-_CallbackType_: Typ des anzulegenden Rückrufs.
+_CallbackType_: Typ des zu erstellende Rückrufs.
     
    -  MAPIOFFLINE_CALLBACK_TYPE_NOTIFY 
     
-   - Der Rückruftyp erfolgt per Benachrichtigung. Dies ist der einzige unterstützte Rückruftyp.  *pCallback* muss die Schnittstelle **[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)**. 
+   - Der Typ des Rückrufs ist per Benachrichtigung. Dies ist der einzige unterstützte Rückruftyp.  *pCallback* muss die Schnittstelle **[IMAPIOfflineNotify angeben.](imapiofflinenotifyiunknown.md)** 
     
-_pCallback_: Schnittstelle für Rückruf. Dies ist die Implementierung von **[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)** durch den Client. 
+_pCallback_: Schnittstelle, die für Rückrufe verwendet werden soll. Dies ist die Clientimplementierung von **[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)**. 
     
-_ulAdviseTypes_: die Art der Beratung, wie durch die Bedingung für die Beratung identifiziert. Der einzige unterstützte Typ ist MAPIOFFLINE_ADVISE_TYPE_STATECHANGE.
+_ulAdviseTypes_: Die Arten von Rat, die durch die Bedingung für die Beratung identifiziert werden. Der einzige unterstützte Typ ist MAPIOFFLINE_ADVISE_TYPE_STATECHANGE.
     
-_ulStateMask_: der einzige unterstützte Status ist MAPIOFFLINE_STATE_ALL.
+_ulStateMask_: Der einzige unterstützte Status ist MAPIOFFLINE_STATE_ALL.
     
 ## <a name="see-also"></a>Siehe auch
 

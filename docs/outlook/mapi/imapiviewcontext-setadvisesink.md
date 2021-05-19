@@ -25,7 +25,7 @@ ms.locfileid: "33419394"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Verwaltet die Registrierung eines Formulars, um Benachrichtigungen zu Änderungen im Viewer zu erhalten. 
+Verwaltet die Registrierung eines Formulars, um Benachrichtigungen über Änderungen im Viewer zu erhalten. 
   
 ```cpp
 HRESULT SetAdviseSink(
@@ -37,23 +37,23 @@ LPMAPIFORMADVISESINK pmvns
 
  _pmvns_
   
-> in Zeiger auf ein Formular Advise Sink-Objekt oder NULL.
+> [in] Zeiger auf ein Formular raten sink-Objekt oder NULL.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Registrierung oder Stornierung für die Formular Benachrichtigung war erfolgreich.
+> Die Registrierung oder Der Abbruch der Formularbenachrichtigung war erfolgreich.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Formularobjekte rufen die **IMAPIViewContext:: SetAdviseSink** -Methode auf, um sich zu registrieren, um sich über Änderungen im Formular-Viewer zu informieren oder um eine vorherige Registrierung abzubrechen. Wenn _pmvns_ auf NULL festgelegt ist, möchte das Formular eine Registrierung abbrechen. Wenn _pmvns_ auf eine gültige Form Advise-Senke zeigt, möchte das Formular für zukünftige Benachrichtigungen registrieren. 
+Form-Objekte rufen die **IMAPIViewContext::SetAdviseSink-Methode** auf, um sich entweder zu registrieren, um mehr über Änderungen in der Formularanzeige zu erfahren, oder um eine vorherige Registrierung abbricht. Wenn  _pmvns_ auf NULL festgelegt ist, möchte das Formular eine Registrierung abbrechen. Wenn  _pmvns_ auf eine gültige Formularsenke verweist, möchte das Formular für zukünftige Benachrichtigungen registriert werden. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Wenn **SetAdviseSink** einen Form Advise-Senk Zeiger enthält, behalten Sie einen Verweis darauf, bis ein weiterer **SetAdviseSink** -Aufruf zum Abbrechen der Benachrichtigung erfolgt. Senden Sie eine Benachrichtigung, wenn eine Änderung in Ihrem Viewer auftritt und wenn Sie eine neue Nachricht laden. 
+Wenn **SetAdviseSink** einen Formular-Hinweis-Senkenzeiger enthält, behalten Sie einen Verweis darauf bei, bis ein anderer **SetAdviseSink-Aufruf** zum Abbrechen der Benachrichtigung erfolgt ist. Senden Sie eine Benachrichtigung, wenn eine Änderung in Ihrem Viewer auftritt und Wenn Sie eine neue Nachricht laden. 
   
-Weitere Informationen finden Sie unter [senden und empfangen von Formular Benachrichtigungen](sending-and-receiving-form-notifications.md).
+Weitere Informationen finden Sie unter [Senden und Empfangen von Formularbenachrichtigungen](sending-and-receiving-form-notifications.md).
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -61,7 +61,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer. cpp  <br/> |CMyMAPIFormViewer:: SetAdviseSink  <br/> |MFCMAPI implementiert die **IMAPIViewContext:: SetAdviseSink** -Methode in dieser Funktion.  <br/> |
+|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::SetAdviseSink  <br/> |MFCMAPI implementiert die **IMAPIViewContext::SetAdviseSink-Methode** in dieser Funktion.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

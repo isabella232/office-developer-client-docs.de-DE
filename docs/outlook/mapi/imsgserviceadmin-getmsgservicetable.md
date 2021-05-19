@@ -25,7 +25,7 @@ ms.locfileid: "33410476"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ermöglicht den Zugriff auf die Nachrichtendienst Tabelle, eine Liste der Nachrichtendienste im Profil.
+Bietet Zugriff auf die Nachrichtendiensttabelle, eine Liste der Nachrichtendienste im Profil.
   
 ```cpp
 HRESULT GetMsgServiceTable(
@@ -38,23 +38,23 @@ HRESULT GetMsgServiceTable(
 
  _ulFlags_
   
-> in Immer NULL.
+> [in] Immer NULL.
     
  _lppTable_
   
-> Out Ein Zeiger auf einen Zeiger auf die Nachrichtendienst Tabelle.
+> [out] Ein Zeiger auf einen Zeiger auf die Nachrichtendiensttabelle.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Nachrichtendienst Tabelle wurde erfolgreich zurückgegeben.
+> Die Nachrichtendiensttabelle wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMsgServiceAdmin:: GetMsgServiceTable** -Methode ermöglicht den Zugriff auf die Nachrichtendienst Tabelle, eine Tabelle, die von MAPI verwaltet wird, die die im Sitzungsprofil installierten Nachrichtendienste auflistet. Eine vollständige Liste der Spalten in der Tabelle "Nachrichtendienst" finden Sie unter [Message Service Table](message-service-tables.md).
+Die **IMsgServiceAdmin::GetMsgServiceTable-Methode** bietet Zugriff auf die Nachrichtendiensttabelle, eine Tabelle, die MAPI verwaltet, in der die aktuell im Sitzungsprofil installierten Nachrichtendienste aufgeführt sind. Eine vollständige Liste der Spalten in der Nachrichtendiensttabelle finden Sie unter [Message Service Table](message-service-tables.md).
   
-Die Nachrichtendienst Tabelle ist statisch. Nachdem ein Clientzugriff darauf erhalten hat, hat der nachfolgende Nachrichtendienst keine Auswirkungen darauf. Wenn im aktuellen Profil keine Nachrichtendienste vorhanden sind, gibt **GetMsgServiceTable** eine Tabelle mit null Zeilen zurück. 
+Die Nachrichtendiensttabelle ist statisch. Nachdem einem Client Zugriff darauf gegeben wurde, wirken sich nachfolgende Nachrichtendienstergnungen oder -löschungen nicht auf ihn aus. Wenn im aktuellen Profil keine Nachrichtendienste vorhanden sind, gibt **GetMsgServiceTable** eine Tabelle mit null Zeilen zurück. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -62,7 +62,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MsgServiceTableDlg. cpp  <br/> |CMsgServiceTableDlg:: OnRefreshView  <br/> |MFCMAPI verwendet die **IMsgServiceAdmin:: GetMsgServiceTable** -Methode, um die Tabelle mit Diensten in einem Profil zu laden, das in der Ansicht gerendert werden soll.  <br/> |
+|MsgServiceTableDlg.cpp  <br/> |CMsgServiceTableDlg::OnRefreshView  <br/> |MFCMAPI verwendet die **IMsgServiceAdmin::GetMsgServiceTable-Methode,** um die Diensttabelle in ein Profil zu laden, das in der Ansicht gerendert werden soll.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

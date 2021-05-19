@@ -22,7 +22,7 @@ Gibt die rote Komponente einer Farbe zurück.
   
 ## <a name="syntax"></a>Syntax
 
-ROT (* * *Ausdruck* * *) 
+RED(** *Expression* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -32,21 +32,21 @@ ROT (* * *Ausdruck* * *)
    
 ### <a name="return-value"></a>Rückgabewert
 
-Zahl
+Nummer
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Der Rückgabewert ist eine Zahl im Bereich von 0 bis einschließlich 255, oder ein Zellbezug, der als Index aufgelöst wird. Wenn _Ausdruck_ ungültig ist, gibt diese Funktion 0 (schwarz) zurück. 
+Der Rückgabewert ist eine Zahl im Bereich von 0 bis einschließlich 255, oder ein Zellbezug, der als Index aufgelöst wird. Wenn  _Ausdruck_ ungültig ist, gibt diese Funktion 0 (Schwarz) zurück. 
   
 ## <a name="example-1"></a>Beispiel 1
 
-ROT (22)
+RED(22)
   
 Gibt 51 zurück, wenn das Dokument die Farbpalette von Microsoft Office Visio verwendet, wobei Dunkelgrau die Farbe mit Index 22 ist.
   
 ## <a name="example-2"></a>Beispiel 2
 
-ROT (Char. Color)
+RED(Char.Color)
   
 Gibt den Wert der Rotkomponente der Farbe der aktuellen Schriftart zurück.
   

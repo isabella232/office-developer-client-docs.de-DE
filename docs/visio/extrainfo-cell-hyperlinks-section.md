@@ -8,7 +8,7 @@ f1_keywords:
 - vis_sdr.chm360
 localization_priority: Normal
 ms.assetid: 55834445-8619-f79a-aea0-0f6a1780e016
-description: Stellt eine Zeichenfolge dar, die Informationen für die Auflösung einer URL enthält (z. B. die Koordinaten einer Imagemap). In der Zelle ExtraInfo beispielsweise gibt x = 41&amp;y = die Koordinaten einer ImageMap 7specifies.
+description: Stellt eine Zeichenfolge dar, die Informationen für die Auflösung einer URL enthält (z. B. die Koordinaten einer Imagemap). Beispielsweise werden in der Zelle ExtraInfo x=41 &amp; y=7 die Koordinaten einer Bildzuordnung angegeben.
 ms.openlocfilehash: df2886ef7911b484cc60e8a476bfa53369fbf646
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,24 +18,24 @@ ms.locfileid: "33409573"
 ---
 # <a name="extrainfo-cell-hyperlinks-section"></a>Zelle "ExtraInfo" (Abschnitt "Hyperlinks")
 
-Stellt eine Zeichenfolge dar, die Informationen für die Auflösung einer URL enthält (z. B. die Koordinaten einer Imagemap). In der Zelle ExtraInfo gibt beispielsweise "x = 41&amp;y = 7" die Koordinaten einer ImageMap an.
+Stellt eine Zeichenfolge dar, die Informationen für die Auflösung einer URL enthält (z. B. die Koordinaten einer Imagemap). Beispielsweise gibt "x=41 y=7" in der Zelle ExtraInfo die Koordinaten einer &amp; Bildzuordnung an.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Ereigniszellen werden erst beim Eintreffen des Ereignisses ausgewertet, nicht beim Eingeben der Formel.
   
-Wenn Sie einen Verweis auf die Zelle ExtraInfo aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Abrufen eines Verweises auf die Zelle ExtraInfo anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Hyperlink.  *Name* . ExtraInfo, wobei Hyperlink.  *Name* ist der Name der Zeile  <br/> |
+| Zellenname:  <br/> | Hyperlink.  *Name*  . ExtraInfo, wobei Hyperlink.  *Name*  ist der Zeilenname  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ExtraInfo aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die ExtraInfo-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionHyperlink** <br/> |
-| Zeilenindex:  <br/> |**visRow1stHyperlink** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRow1stHyperlink**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
 | Zeilenindex:  <br/> |**visHLinkExtraInfo** <br/> |
    
 

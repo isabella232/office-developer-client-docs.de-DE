@@ -38,11 +38,11 @@ HRESULT DeleteProfile(
 
  _lpszProfileName_
   
-> in Ein Zeiger auf den Namen des zu löschenden Profils.
+> [in] Ein Zeiger auf den Namen des zu löschende Profils.
     
  _ulFlags_
   
-> in Immer NULL. 
+> [in] Immer NULL. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -54,11 +54,11 @@ MAPI_E_NOT_FOUND
   
 > Das angegebene Profil ist nicht vorhanden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IProfAdmin::D eleteprofile** -Methode löscht ein Profil. Wenn das zu löschende Profil verwendet wird, wenn **DeleteProfile** aufgerufen wird, gibt **DELETEPROFILE** den Wert S_OK zurück, löscht das Profil jedoch nicht sofort. Stattdessen markiert **DeleteProfile** das Profil zum Löschen und löscht es, nachdem es nicht mehr verwendet wird, wenn alle aktiven Sitzungen beendet wurden. 
+Die **IProfAdmin::D eleteProfile-Methode** löscht ein Profil. Wenn das zu löschende Profil verwendet wird, wenn **DeleteProfile** aufgerufen wird, gibt **DeleteProfile** S_OK das Profil jedoch nicht sofort zurück. Stattdessen markiert **DeleteProfile** das Profil zum Löschen und löscht es, nachdem es nicht mehr verwendet wird, wenn alle aktiven Sitzungen beendet wurden. 
   
-Die Einstiegspunktfunktion für jeden Nachrichtendienst im Profil wird mit dem MSG_SERVICE_DELETE-Wert aufgerufen, der im Parameter _ulContext_ festgelegt ist. Zuerst wird der Dienst von der Funktion gelöscht, und anschließend wird der Profil Abschnitt des Diensts gelöscht. Die Nachrichtendienst-Einstiegspunktfunktion wird nicht erneut aufgerufen, nachdem der Dienst gelöscht wurde. 
+Die Einstiegspunktfunktion für jeden Nachrichtendienst im Profil wird mit dem MSG_SERVICE_DELETE im _ulContext-Parameter festgelegt._ Zunächst löscht die Funktion den Dienst und dann den Profilabschnitt des Diensts. Die Einstiegspunktfunktion des Nachrichtendiensts wird nicht erneut aufgerufen, nachdem der Dienst gelöscht wurde. 
   
 Zum Löschen eines Profils ist kein Kennwort erforderlich.
   
@@ -68,7 +68,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIProfileFunctions. cpp  <br/> |HrRemoveProfile  <br/> |MFCMAPI verwendet die **IProfAdmin::D-eleteprofile** -Methode, um das ausgewählte Profil zu löschen.  <br/> |
+|MAPIProfileFunctions.cpp  <br/> |HrRemoveProfile  <br/> |MFCMAPI verwendet die **IProfAdmin::D eleteProfile-Methode,** um das ausgewählte Profil zu löschen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

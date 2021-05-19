@@ -1,5 +1,5 @@
 ---
-title: Erforderliche und optionale Schnittstellen für Nachrichtenspeicher Anbieter
+title: Erforderliche und optionale Schnittstellen für Store Anbieter
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -15,29 +15,29 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33420920"
 ---
-# <a name="required-and-optional-interfaces-for-message-store-providers"></a>Erforderliche und optionale Schnittstellen für Nachrichtenspeicher Anbieter
+# <a name="required-and-optional-interfaces-for-message-store-providers"></a>Erforderliche und optionale Schnittstellen für Store Anbieter
 
  
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPI definiert eine Gruppe von Schnittstellen, die sich auf Nachrichtenspeicher Anbieter beziehen. Aufgrund der großen Palette von Features, die ein Nachrichtenspeicher für die Implementierung auswählen kann, sind einige dieser Schnittstellen erforderlich, andere nicht. In der folgenden Tabelle sind die MAPI-Schnittstellen aufgelistet, die sich auf Nachrichtenspeicher Anbieter beziehen, gibt an, ob die Schnittstellen erforderlich oder optional sind, und beschreibt deren Zweck.
+MAPI definiert eine Reihe von Schnittstellen, die sich auf Nachrichtenspeicheranbieter beziehen. Aufgrund der vielzahl von Features, die ein Nachrichtenspeicher implementieren kann, sind einige dieser Schnittstellen erforderlich, andere nicht. In der folgenden Tabelle sind die MAPI-Schnittstellen aufgeführt, die mit Nachrichtenspeicheranbietern verknüpft sind, gibt an, ob die Schnittstellen erforderlich oder optional sind, und beschreibt deren Zweck.
   
 |**Schnittstelle**|**Status**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[IMSProvider](imsprovideriunknown.md) <br/> |Erforderlich  <br/> |Meldet ein-und Ausschalten eines Nachrichtenspeichers an.  <br/> |
+|[IMSProvider](imsprovideriunknown.md) <br/> |Erforderlich  <br/> |Meldet sich an und aus eines Nachrichtenspeichers an.  <br/> |
 |[IMSLogon](imslogoniunknown.md) <br/> |Erforderlich  <br/> |Öffnet Ordner oder Nachrichten, überprüft die Identität des Nachrichtenspeichers und verarbeitet Benachrichtigungen.  <br/> |
-|[IMsgStore](imsgstoreimapiprop.md) <br/> |Erforderlich  <br/> |Öffnet Ordner oder Nachrichten, sucht nach speziellen Ordnern und verarbeitet Nachrichtenübermittlungen.  <br/> |
+|[IMsgStore](imsgstoreimapiprop.md) <br/> |Erforderlich  <br/> |Öffnet Ordner oder Nachrichten, sucht spezielle Ordner und verarbeitet Nachrichtenübermittlungen.  <br/> |
 |[IMAPIFolder](imapifolderimapicontainer.md) <br/> |Erforderlich  <br/> |Sucht und bearbeitet Nachrichten und Unterordner.  <br/> |
-|[IMessage](imessageimapiprop.md) <br/> |Erforderlich  <br/> |Bearbeitet Anlagen und legt einige der Eigenschaften einer Nachricht fest.  <br/> |
-|[IMAPITable](imapitableiunknown.md) <br/> |Erforderlich  <br/> |Ermöglicht anderen Objekten das darstellen von Datensammlungen für verschiedene MAPI-Komponenten.  <br/> |
-|[IMAPIStatus](imapistatusimapiprop.md) <br/> |Erforderlich  <br/> |Ermöglicht es Clients, den Status eines Nachrichtenspeichers zu überprüfen und einige Konfigurationsaufgaben auszuführen.  <br/> |
-|[IAttach](iattachimapiprop.md) <br/> |Optional  <br/> |Greift auf Eigenschaften der Nachrichtenanlage zu, wenn der Informationsspeicher Anbieterdatei Anlagen unterstützt.  <br/> |
-|**IStorage** <br/> |Optional  <br/> |Verwaltet strukturierte Speicherobjekte, wenn der Informationsspeicher Anbieter OLE-Objekt Anlagen unterstützt.  <br/> |
-|**IStream** <br/> |Optional  <br/> |Ermöglicht es Message-und Attachment-Objekten, Daten in Stream-Objekte zu lesen und zu schreiben.  <br/> |
-|**IStreamDocfile** <br/> |Optional  <br/> |Ermöglicht es einigen Dienstanbietern, ein Speicherobjekt zu öffnen, beispielsweise eine Verbunddatei im OLE 2,0-Dateiformat.  <br/> |
+|[IMessage](imessageimapiprop.md) <br/> |Erforderlich  <br/> |Bearbeitet Anlagen und legt einige Eigenschaften einer Nachricht fest.  <br/> |
+|[IMAPITable](imapitableiunknown.md) <br/> |Erforderlich  <br/> |Ermöglicht anderen Objekten das Präsentieren von Datensammlungen für verschiedene MAPI-Komponenten.  <br/> |
+|[IMAPIStatus](imapistatusimapiprop.md) <br/> |Erforderlich  <br/> |Ermöglicht Clients, den Status eines Nachrichtenspeichers zu überprüfen und einige Konfigurationsaufgaben auszuführen.  <br/> |
+|[IAttach](iattachimapiprop.md) <br/> |Optional.  <br/> |Zugrifft auf Nachrichtenanlageneigenschaften, wenn der Speicheranbieter Dateianlagen unterstützt.  <br/> |
+|**IStorage** <br/> |Optional.  <br/> |Verwaltet strukturierte Speicherobjekte, wenn der Speicheranbieter OLE-Objektanlagen unterstützt.  <br/> |
+|**IStream** <br/> |Optional.  <br/> |Ermöglicht Nachrichten- und Anlagenobjekten das Lesen und Schreiben von Daten in Streamobjekte.  <br/> |
+|**IStreamDocfile** <br/> |Optional.  <br/> |Ermöglicht einigen Dienstanbietern das Öffnen eines Speicherobjekts, z. B. einer Zusammengesetztdatei im OLE 2.0-Dateiformat.  <br/> |
    
-Die grundlegenden Informationen, die Sie für die Implementierung von **IMAPIFolder**, **IMessage**, **IMAPIStatus**und **IMAPITable** benötigen, sind in den Referenzthemen zu diesen Schnittstellen dokumentiert. Dieser Abschnitt enthält zusätzliche Informationen, die sich direkt auf Nachrichtenspeicher Anbieter beziehen. Die restlichen MAPI-Schnittstellen sollten gemäß den Informationen in diesem Abschnitt und in den entsprechenden Referenzthemen implementiert werden. Weitere Informationen zum Implementieren von **IStorage**, **IStream**und **ISTREAMDOCFILE**finden Sie im Abschnitt com-und ActiveX-Objektdienste im Windows SDK.
+Die grundlegenden Informationen, die Sie zum Implementieren von **IMAPIFolder,** **IMessage,** **IMAPIStatus** und **IMAPITable** benötigen, sind in den Referenzthemen für diese Schnittstellen dokumentiert. Dieser Abschnitt enthält ergänzende Informationen, die direkter mit Nachrichtenspeicheranbietern in Zusammenhang stehen. Die restlichen MAPI-Schnittstellen sollten gemäß den Informationen in diesem Abschnitt und in den entsprechenden Referenzthemen implementiert werden. Weitere Informationen zum Implementieren von **IStorage,** **IStream** und **IStreamDocFile** finden Sie im Abschnitt COM und ActiveX Object Services im Windows SDK.
   
 ## <a name="see-also"></a>Siehe auch
 

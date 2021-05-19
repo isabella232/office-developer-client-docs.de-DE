@@ -25,23 +25,23 @@ ms.locfileid: "33415775"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält Informationen zur Unterstützung eines Ordners für die Freigabe.
+Stellt Informationen zur Unterstützung eines Ordners für die Freigabe zur Verfügung.
   
 |||
 |:-----|:-----|
-|Bereitgestellt von:  <br/> |Nachrichtenspeicher Anbieter  <br/> |
+|Bereitgestellt von:  <br/> |Anbieter des Nachrichtenspeichers  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IFolderSupport  <br/> |
    
 ## <a name="vtable-order"></a>Vtable-Reihenfolge
 
 |||
 |:-----|:-----|
-|**[Getsupportmask aufrufen](ifoldersupport-getsupportmask.md)** <br/> |Ruft Informationen über die Unterstützung eines Ordners für die Freigabe ab.  <br/> |
+|**[GetSupportMask](ifoldersupport-getsupportmask.md)** <br/> |Ruft Informationen zur Unterstützung eines Ordners für die Freigabe ab.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Im Allgemeinen erfordert Microsoft Office Outlook einen MAPI-Speicheranbieter zum Implementieren dieser Schnittstelle, wenn der Anbieter einen Ordner freigeben möchte. Die Ausnahme ist der Exchange Server-Speicheranbieter, der Ordner freigeben kann, ohne diese Schnittstelle zu implementieren.
+In der Microsoft Office Outlook muss ein MAPI-Speicheranbieter diese Schnittstelle implementieren, wenn der Anbieter einen Ordner freigeben möchte. Die Ausnahme ist der Exchange Server-Speicheranbieter, der Ordner freigeben kann, ohne diese Schnittstelle zu implementieren.
   
-Ein Client kann eine **[IMAPIFolder](imapifolderimapicontainer.md)** für **IFolderSupport**Abfragen. Wenn dies erfolgreich ist, rufen Sie **IFolderSupport:: getsupportmask aufrufen** auf, und überprüfen Sie, ob das **FS_SUPPORTS_SHARING** -Bit festgelegt werden soll. 
+Ein Client kann einen **[IMAPIFolder für](imapifolderimapicontainer.md)** **IFolderSupport abfragen.** Wenn dies erfolgreich ist, rufen Sie **IFolderSupport::GetSupportMask** auf, und überprüfen **Sie, ob FS_SUPPORTS_SHARING** festgelegt werden soll. 
   
 

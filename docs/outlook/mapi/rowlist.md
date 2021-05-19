@@ -25,7 +25,7 @@ ms.locfileid: "33419184"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von [ROWENTRY](rowentry.md) -Strukturen, die Zeilen und die Vorgänge darstellen, die für diese Zeilen in einer Tabelle über die [IExchangeModifyTable](iexchangemodifytableiunknown.md) -Schnittstelle ausgeführt werden. 
+Enthält ein Array von [ROWENTRY-Strukturen,](rowentry.md) die Zeilen und die Vorgänge darstellen, die für diese Zeilen in einer Tabelle über die [IExchangeModifyTable-Schnittstelle ausgeführt](iexchangemodifytableiunknown.md) werden. 
   
 ```cpp
 typedef struct
@@ -36,15 +36,15 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
- **Zentriert**
+ **cEntries**
   
-> Die Anzahl der Einträge im vom **aEntries** -Element angegebenen Array. 
+> Anzahl der Einträge im vom **aEntries-Element angegebenen** Array. 
     
- **aEntries [MAPI_DIM]**
+ **aEntries[MAPI_DIM]**
   
-> Array von **ROWENTRY** -Strukturen, die die Zeilen und Vorgänge enthalten, die für diese Zeilen in der Tabelle ausgeführt werden. 
+> Array von **ROWENTRY-Strukturen,** die die Zeilen und Vorgänge enthält, die für diese Zeilen in der Tabelle ausgeführt werden. 
     
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -52,7 +52,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|RulesDlg. cpp  <br/> |CRulesDlg:: getSelectedItems  <br/> |Wird zum Erstellen einer Liste ausgewählter Regeln für nachfolg **** Ende modifyable-Aktionen verwendet.  <br/> |
+|RulesDlg.cpp  <br/> |CRulesDlg::GetSelectedItems  <br/> |Wird verwendet, um eine Liste ausgewählter Regeln für nachfolgende **ModifyTable-Aktionen zu** erstellen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

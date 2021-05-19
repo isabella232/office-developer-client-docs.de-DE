@@ -25,12 +25,12 @@ ms.locfileid: "33420066"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von [SMAPIFormProp](smapiformprop.md) -Strukturen. 
+Enthält ein Array von [SMAPIFormProp-Strukturen.](smapiformprop.md) 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiform. h  <br/> |
-|Zugehöriges Makro:  <br/> |[CbMAPIFormPropArray](cbmapiformproparray.md) <br/> |
+|Headerdatei  <br/> |Mapiform.h  <br/> |
+|Verwandtes Makro:  <br/> |[CbMAPIFormPropArray](cbmapiformproparray.md) <br/> |
    
 ```cpp
 typedef struct
@@ -42,23 +42,23 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cProps**
   
-> Die Anzahl benannter Eigenschaften im Array im **aFormProp** -Element. 
+> Anzahl benannter Eigenschaften im Array im **aFormProp-Element.** 
     
  **ulPad**
   
->  Acht Byte Leerraum, die verwendet werden, um eine korrekte Ausrichtung zu gewährleisten. 
+>  Acht Bytes Abstand, der verwendet wird, um die richtige Ausrichtung zu gewährleisten. 
     
  **aFormProp**
   
 > Array von Formulareigenschaften.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **SMAPIFormPropArray** -Struktur wird als Parameter an die folgenden Methoden übergeben: 
+Die **SMAPIFormPropArray-Struktur** wird als Parameter an die folgenden Methoden übergeben: 
   
 - [IMAPIFormInfo::CalcFormPropSet](imapiforminfo-calcformpropset.md)
     

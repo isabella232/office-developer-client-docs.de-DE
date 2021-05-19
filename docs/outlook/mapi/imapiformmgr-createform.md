@@ -25,7 +25,7 @@ ms.locfileid: "33419849"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Öffnet ein Formular zum Erstellen einer neuen Nachricht auf der Grundlage der Nachrichtenklasse des Formulars.
+Öffnet ein Formular, um eine neue Nachricht basierend auf der Nachrichtenklasse des Formulars zu erstellen.
   
 ```cpp
 HRESULT CreateForm(
@@ -41,27 +41,27 @@ HRESULT CreateForm(
 
  _ulUIParam_
   
-> in Ein Handle für das übergeordnete Fenster für die Statusanzeige, die angezeigt wird, während das Formular geöffnet wird. Der _ulUIParam_ -Parameter wird ignoriert, es sei denn, das MAPI_DIALOG-Flag wird im _ulFlags_ -Parameter festgelegt. 
+> [in] Ein Handle zum übergeordneten Fenster für die Statusanzeige, die beim Öffnen des Formulars angezeigt wird. Der  _ulUIParam-Parameter_ wird ignoriert, es sei denn, das MAPI_DIALOG wird im  _ulFlags-Parameter_ festgelegt. 
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die steuert, wie das Formular geöffnet wird. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie das Formular geöffnet wird. Das folgende Flag kann festgelegt werden:
     
 MAPI_DIALOG 
   
-> Zeigt eine Benutzeroberfläche an, um den Status anzugeben oder den Benutzer aufzufordern, weitere Informationen zu erhalten. Wenn dieses Flag nicht festgelegt ist, wird keine Benutzeroberfläche angezeigt.
+> Zeigt eine Benutzeroberfläche an, um den Status zur Verfügung zu stellen, oder fordert den Benutzer auf, weitere Informationen zu erhalten. Wenn dieses Kennzeichen nicht festgelegt ist, wird keine Benutzeroberfläche angezeigt.
     
  _pfrminfoToActivate_
   
-> in Ein Zeiger auf das Formular Informationsobjekt, das zum Öffnen des Formulars verwendet wird.
+> [in] Ein Zeiger auf das Formularinformationsobjekt, das zum Öffnen des Formulars verwendet wird.
     
  _refiidToAsk_
   
-> in Ein Zeiger auf die Schnittstellen-ID (IID) für die Schnittstelle für das erstellte Formularobjekt zurückgegeben werden. Der _refiidToAsk_ -Parameter darf nicht NULL sein. 
+> [in] Ein Zeiger auf die Schnittstellen-ID (Interface Identifier, IID) für die Schnittstelle, die für das erstellte Formularobjekt zurückgegeben werden soll. Der  _refiidToAsk-Parameter_ darf nicht NULL sein. 
     
  _ppvObj_
   
-> Out Ein Zeiger auf einen Zeiger auf die zurückgegebene Schnittstelle.
+> [out] Ein Zeiger auf einen Zeiger auf die zurückgegebene Schnittstelle.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -71,15 +71,15 @@ S_OK
     
 MAPI_E_NO_INTERFACE 
   
-> Die angeforderte Schnittstelle wird vom Form-Objekt nicht unterstützt.
+> Die angeforderte Schnittstelle wird vom Formularobjekt nicht unterstützt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Formular Betrachter rufen die **IMAPIFormMgr:: CreateForm** -Methode auf, um ein Formular zum Erstellen einer neuen Nachricht basierend auf der Nachrichtenklasse des Formulars zu öffnen. **CreateForm** öffnet das Formular, indem eine Instanz des Formular Servers für dieses Formular erstellt wird, wie im angegebenen Formular Informationsobjekt beschrieben. Bei Bedarf ruft **CreateForm** die [IMAPIFormMgr::P repareform](imapiformmgr-prepareform.md) -Methode auf, um den Formularserver Code auf den Datenträger des Benutzers herunterzuladen. 
+Formularbetrachter rufen die **IMAPIFormMgr::CreateForm-Methode** auf, um ein Formular zu öffnen, um eine neue Nachricht basierend auf der Nachrichtenklasse des Formulars zu erstellen. **CreateForm** öffnet das Formular, indem eine Instanz des Formularservers für dieses Formular erstellt wird, wie im angegebenen Formularinformationsobjekt beschrieben. Bei Bedarf ruft **CreateForm** die [IMAPIFormMgr::P repareForm-Methode](imapiformmgr-prepareform.md) auf, um den Formularservercode auf den Datenträger des Benutzers herunterzuladen. 
   
-Der Parameter _pfrminfoToActivate_ muss auf ein Formular Informationsobjekt zeigen, das korrekt aufgelöst wurde. 
+Der  _pfrminfoToActivate-Parameter_ muss auf ein Formularinformationsobjekt verweisen, das ordnungsgemäß aufgelöst wurde. 
   
-Nachdem das Formular geöffnet wurde, muss der aufrufende Formular Betrachter eine Nachricht mithilfe der [IPersistMessage](ipersistmessageiunknown.md) -Schnittstelle einrichten und optional einen Ansichtskontext für das Formular einrichten. Weitere Informationen finden Sie unter [Starten eines Formular Servers](launching-a-form-server.md). 
+Nachdem das Formular geöffnet wurde, muss die aufrufende Formularanzeige eine Nachricht mithilfe der [IPersistMessage-Schnittstelle](ipersistmessageiunknown.md) einrichten und kann optional einen Ansichtskontext für das Formular einrichten. Weitere Informationen finden Sie unter [Starten eines Formularservers.](launching-a-form-server.md) 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -87,7 +87,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIFormFunctions. cpp  <br/> |CreateAndDisplayNewMailInFolder  <br/> |MFCMAPI verwendet die **IMAPIFormMgr:: CreateForm** -Methode, um ein Formular zu erstellen, bevor es angezeigt wird.  <br/> |
+|MAPIFormFunctions.cpp  <br/> |CreateAndDisplayNewMailInFolder  <br/> |MFCMAPI verwendet die **IMAPIFormMgr::CreateForm-Methode,** um ein Formular zu erstellen, bevor es angezeigt wird.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -102,5 +102,5 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
-[Starten eines Formular Servers](launching-a-form-server.md)
+[Starten eines Formularservers](launching-a-form-server.md)
 

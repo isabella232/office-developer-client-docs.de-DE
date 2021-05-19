@@ -45,35 +45,35 @@ HRESULT DoCopyProps(
 
  _lpSrcInterface_
   
-> in Ein Zeiger auf den Schnittstellenbezeichner (Interface Identifier, IID), der die Schnittstelle darstellt, die für den Zugriff auf das Objekt mit den Eigenschaften verwendet werden soll, die kopiert oder verschoben werden sollen.
+> [in] Ein Zeiger auf die Schnittstellen-ID (Interface Identifier, IID), die die Schnittstelle darstellt, die für den Zugriff auf das Objekt mit den Eigenschaften verwendet werden soll, die kopiert oder verschoben werden sollen.
     
  _lpSrcObj_
   
-> in Ein Zeiger auf das Objekt, das die Eigenschaften enthält, die kopiert oder verschoben werden sollen.
+> [in] Ein Zeiger auf das Objekt, das die eigenschaften enthält, die kopiert oder verschoben werden sollen.
     
  _lpIncludeProps_
   
-> in Ein Zeiger auf eine [SPropTagArray](sproptagarray.md) -Struktur, die ein Gezähltes Array von Property-Tags enthält, die die zu kopierende oder zu verschiebende Eigenschaft kennzeichnet. Der _lpIncludeProps_ -Parameter darf nicht NULL sein. 
+> [in] Ein Zeiger auf eine [SPropTagArray-Struktur,](sproptagarray.md) die ein gezähltes Array von Eigenschaftstags enthält, die die Zu kopierenden oder verschiebenden Eigenschaften angeben. Der  _lpIncludeProps-Parameter_ darf nicht NULL sein. 
     
  _ulUIParam_
   
-> in Ein Handle für das übergeordnete Fenster der Statusanzeige.
+> [in] Ein Handle zum übergeordneten Fenster des Statusindikators.
     
  _lpProgress_
   
-> in Ein Zeiger auf eine Implementierung einer Statusanzeige. Wenn NULL im _lpProgress_ -Parameter übergeben wird, wird die Statusanzeige mithilfe der MAPI-Implementierung angezeigt. Der _lpProgress_ -Parameter wird ignoriert, es sei denn, das MAPI_DIALOG-Flag wird im _ulFlags_ -Parameter festgelegt. 
+> [in] Ein Zeiger auf eine Implementierung eines Fortschrittsindikators. Wenn NULL im  _lpProgress-Parameter_ übergeben wird, wird die Statusanzeige mithilfe der MAPI-Implementierung angezeigt. Der  _lpProgress-Parameter_ wird ignoriert, es sei denn, das MAPI_DIALOG wird im  _ulFlags-Parameter_ festgelegt. 
     
  _lpDestInterface_
   
-> in Ein Zeiger auf den Schnittstellenbezeichner, der die Schnittstelle darstellt, die für den Zugriff auf das Objekt verwendet werden soll, um die Eigenschaften zu empfangen, die kopiert oder verschoben werden.
+> [in] Ein Zeiger auf die Schnittstellen-ID, die die Schnittstelle darstellt, die für den Zugriff auf das Objekt verwendet werden soll, um die Eigenschaften zu empfangen, die kopiert oder verschoben werden.
     
  _lpDestObj_
   
-> in Ein Zeiger auf das Objekt, das die kopierten oder verschobenen Eigenschaften empfangen soll.
+> [in] Ein Zeiger auf das Objekt, um die kopierten oder verschobenen Eigenschaften zu empfangen.
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die steuert, wie der Kopier-oder Verschiebungsvorgang ausgeführt wird. Die folgenden Flags können festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie der Kopier- oder Verschiebevorgang ausgeführt wird. Die folgenden Kennzeichen können festgelegt werden:
     
 MAPI_DIALOG 
   
@@ -81,15 +81,15 @@ MAPI_DIALOG
     
 MAPI_MOVE 
   
-> **DoCopyProps** sollte anstelle eines Kopiervorgangs einen Verschiebungsvorgang ausführen. Wenn dieses Flag nicht festgelegt ist, führt **DoCopyProps** einen Kopiervorgang aus. 
+> **DoCopyProps** sollte einen Verschiebevorgang anstelle eines Kopiervorgangs ausführen. Wenn dieses Flag nicht festgelegt ist, **führt DoCopyProps** einen Kopiervorgang aus. 
     
 MAPI_NOREPLACE 
   
-> Vorhandene Eigenschaften im Zielobjekt sollten nicht überschrieben werden. Wenn dieses Flag nicht festgelegt ist, überschreibt **DoCopyProps** vorhandene Eigenschaften. 
+> Vorhandene Eigenschaften im Zielobjekt sollten nicht überschrieben werden. Wenn dieses Flag nicht festgelegt ist, **überschreibt DoCopyProps** vorhandene Eigenschaften. 
     
  _lppProblems_
   
-> [in, out] Bei der Eingabe ein Zeiger auf einen Zeiger auf eine [SPropProblemArray](spropproblemarray.md) -Struktur; andernfalls NULL, was bedeutet, dass keine Fehlerinformationen erforderlich sind. Wenn _lppProblems_ ein gültiger Zeiger auf der Eingabe ist, gibt **DoCopyProps** detaillierte Informationen zu Fehlern beim Kopieren einer oder mehrerer Eigenschaften zurück. 
+> [in, out] Bei der Eingabe ein Zeiger auf einen Zeiger auf eine [SPropProblemArray-Struktur;](spropproblemarray.md) andernfalls NULL, was angibt, dass keine Fehlerinformationen benötigt werden. Wenn  _lppProblems_ ein gültiger Zeiger für die Eingabe ist, gibt **DoCopyProps** detaillierte Informationen zu Fehlern beim Kopieren einer oder mehreren Eigenschaften zurück. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -99,29 +99,29 @@ S_OK
     
 MAPI_E_COLLISION 
   
-> Eine Eigenschaft, die kopiert oder verschoben werden soll, ist bereits im Zielobjekt vorhanden, und das MAPI_NOREPLACE-Flag wird festgelegt. 
+> Eine zu kopierende oder zu verschobene Eigenschaft ist bereits im Zielobjekt vorhanden, und das MAPI_NOREPLACE ist festgelegt. 
     
 MAPI_E_FOLDER_CYCLE 
   
-> Das Source-Objekt enthält direkt oder indirekt das Zielobjekt. Möglicherweise wurde vor dem erkennen dieser Bedingung eine beträchtliche Arbeit ausgeführt, sodass die Quell-und Zielobjekte teilweise geändert werden können. 
+> Das Quellobjekt enthält direkt oder indirekt das Zielobjekt. Bevor diese Bedingung erkannt wurde, wurden möglicherweise erhebliche Arbeiten ausgeführt, sodass die Quell- und Zielobjekte teilweise geändert werden können. 
     
 MAPI_E_INTERFACE_NOT_SUPPORTED 
   
-> Die vom _lpSrcInterface_ -Parameter angegebene Schnittstelle wird vom Source-Objekt nicht unterstützt, oder die vom _lpDestInterface_ -Parameter angegebene Schnittstelle wird vom Zielobjekt nicht unterstützt. 
+> Die durch den  _lpSrcInterface-Parameter_ identifizierte Schnittstelle wird vom Quellobjekt nicht unterstützt, oder die vom  _lpDestInterface-Parameter_ identifizierte Schnittstelle wird vom Zielobjekt nicht unterstützt. 
     
 MAPI_E_NO_ACCESS 
   
-> Es wurde versucht, auf ein Objekt zuzugreifen, für das der Aufrufer nicht über ausreichende Berechtigungen verfügt. Dieser Fehler wird zurückgegeben, wenn das Zielobjekt mit dem Quellobjekt identisch ist.
+> Es wurde versucht, auf ein Objekt zu zugreifen, für das der Aufrufer nicht über ausreichende Berechtigungen verfügt. Dieser Fehler wird zurückgegeben, wenn das Zielobjekt mit dem Quellobjekt identisch ist.
     
-Die folgenden Werte können in der **SPropProblemArray** -Struktur zurückgegeben werden, jedoch nicht als Rückgabewerte für **DoCopyProps**. Diese Fehler gelten für eine einzelne Eigenschaft.
+Die folgenden Werte können in der **SPropProblemArray-Struktur** zurückgegeben werden, jedoch nicht als Rückgabewerte für **DoCopyProps**. Diese Fehler gelten für eine einzelne Eigenschaft.
   
 MAPI_E_BAD_CHARWIDTH 
   
-> Entweder wurde das MAPI_UNICODE-Flag festgelegt, und **DoCopyProps** unterstützt Unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und **DoCopyProps** unterstützt nur Unicode. 
+> Entweder wurde MAPI_UNICODE festgelegt, und **DoCopyProps** unterstützt unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und **DoCopyProps** unterstützt nur Unicode. 
     
 MAPI_E_COMPUTED 
   
-> Die Eigenschaft kann vom Aufrufer nicht geändert werden, da es sich um eine schreibgeschützte Eigenschaft handelt, die vom Besitzer des Zielobjekts berechnet wird. Dieser Fehler ist nicht schwerwiegend; der Aufrufer sollte den Kopiervorgang fortsetzen lassen.
+> Die Eigenschaft kann vom Aufrufer nicht geändert werden, da es sich um eine schreibgeschützte Eigenschaft handelt, die vom Besitzer des Zielobjekts berechnet wird. Dieser Fehler ist nicht schwerwiegender. Der Aufrufer sollte zulassen, dass der Kopiervorgang fortgesetzt wird.
     
 MAPI_E_INVALID_TYPE 
   
@@ -129,29 +129,29 @@ MAPI_E_INVALID_TYPE
     
 MAPI_E_UNEXPECTED_TYPE 
   
-> Der Eigenschaftentyp ist nicht der vom Aufrufer erwartete Typ.
+> Der Eigenschaftstyp ist nicht der Typ, den der Aufrufer erwartet.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPISupport::D ocopyprops** -Methode wird für Support Objekte des Nachrichtenspeicher Anbieters implementiert. Nachrichtenspeicher Anbieter können **DoCopyProps** aufrufen, um die [IMAPIProp:: CopyProps](imapiprop-copyprops.md) -Methode für Ihre Ordner und Nachrichten zu implementieren. **DoCopyProps** kopiert oder verschiebt die Eigenschaften, die im Eigenschaftentag-Array identifiziert werden, auf das von _lpIncludeProps_ verwiesen wird, und die in dem Objekt vorhanden sind, auf das durch _lpSrcObj_verwiesen wird. 
+Die **IMAPISupport::D oCopyProps-Methode** wird für Unterstützungsobjekte des Nachrichtenspeicheranbieters implementiert. Nachrichtenspeicheranbieter können **DoCopyProps aufrufen,** um die [IMAPIProp::CopyProps-Methode](imapiprop-copyprops.md) für ihre Ordner und Nachrichten zu implementieren. **DoCopyProps** kopiert oder verschiebt die Eigenschaften, die im Eigenschaftentagarray identifiziert werden, auf das  _lpIncludeProps_ verweist und die im Objekt vorhanden sind, auf das  _von lpSrcObj_ verwiesen wird. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Wenn Sie Eigenschaften zwischen Objekten desselben Typs kopieren, beispielsweise zwei Nachrichten, müssen die Parameter _lpSrcInterface_ und _lpDestInterface_ den gleichen Schnittstellenbezeichner und die Parameter _lpSrcObj_ und _lpDestObj_ enthalten. muss auf Objekte desselben Typs zeigen. Wenn _lpDestInterface_ auf NULL festgelegt ist, gibt **DoCopyProps** MAPI_E_INVALID_PARAMETER zurück. Wenn Sie _lpDestInterface_ auf einen akzeptablen Schnittstellenbezeichner festlegen, aber _lpDestObj_ auf einen ungültigen Zeiger festlegen, sind die Ergebnisse unvorhersehbar. Wahrscheinlich schlägt Ihr Anbieter fehl. 
+Wenn Sie Eigenschaften zwischen Objekten desselben Typs kopieren, z. B. zwei Nachrichten, müssen die  _Parameter lpSrcInterface_ und  _lpDestInterface_ denselben Schnittstellenbezeichner enthalten, und die  _Parameter lpSrcObj_ und  _lpDestObj_ müssen auf Objekte desselben Typs verweisen. Wenn  _lpDestInterface_ auf NULL festgelegt ist, gibt **DoCopyProps** MAPI_E_INVALID_PARAMETER. Wenn Sie  _lpDestInterface_ auf einen akzeptablen Schnittstellenbezeichner festlegen,  _aber lpDestObj_ auf einen ungültigen Zeiger festlegen, sind die Ergebnisse unvorhersehbar. Höchstwahrscheinlich wird Ihr Anbieter fehlschlagen. 
   
-Legen Sie das MAPI_NOREPLACE-Flag fest, wenn keine der Eigenschaften im Zielobjekt überschrieben werden soll. Eigenschaften im Zielobjekt, die im Quellobjekt vorhanden sind und nicht überschrieben werden, werden nicht gelöscht oder geändert.
+Legen Sie MAPI_NOREPLACE, wenn keine der Eigenschaften im Zielobjekt überschrieben werden soll. Eigenschaften im Zielobjekt, die im Quellobjekt vorhanden sind und nicht überschrieben werden, werden nicht gelöscht oder geändert.
   
-Um die Empfängerliste einer Nachricht zu kopieren, fügen Sie die **PR_MESSAGE_RECIPIENTS** ([pidtagmessagerecipients (](pidtagmessagerecipients-canonical-property.md))-Eigenschaft in das Tag-Array der Eigenschaft ein, auf die durch den _lpIncludeProps_ -Parameter verwiesen wird. Schließen Sie die **PR_MESSAGE_ATTACHMENTS** ([pidtagmessageattachments (](pidtagmessageattachments-canonical-property.md))-Eigenschaft ein, um die Anlagen der Nachricht zu kopieren. 
+Um die Empfängerliste einer Nachricht **zu** kopieren, schließen Sie die PR_MESSAGE_RECIPIENTS ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) -Eigenschaft in das Eigenschaftentagarray ein, auf das der  _lpIncludeProps-Parameter_ verweist. Um die Anlagen der Nachricht zu kopieren, schließen Sie die **PR_MESSAGE_ATTACHMENTS** ([PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md)) -Eigenschaft ein. 
   
-Um eine Ordner-oder Adressbuchcontainer-Hierarchie-oder Inhaltstabelle zu kopieren, schließen Sie **PR_CONTAINER_HIERARCHY** ([Pidtagcontainerhierarchy (](pidtagcontainerhierarchy-canonical-property.md)) oder **PR_CONTAINER_CONTENTS** ([pidtagcontainercontents (](pidtagcontainercontents-canonical-property.md)) im Property-Tag-Array ein. Schließen Sie die **PR_FOLDER_ASSOCIATED_CONTENTS** ([pidtagfolderassociatedcontents (](pidtagfolderassociatedcontents-canonical-property.md))-Eigenschaft in das Array ein, um die zugeordnete Inhaltstabelle eines Ordners einzuschließen.
+Um die Hierarchie oder Inhaltstabelle eines Ordners oder Adressbuchcontainers zu kopieren, fügen Sie **PR_CONTAINER_HIERARCHY** ([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md)) oder **PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md)) in das Eigenschaftentagarray ein. Um die zugeordnete Inhaltstabelle eines Ordners zu enthalten, schließen Sie **die PR_FOLDER_ASSOCIATED_CONTENTS** ([PidTagFolderAssociatedContents](pidtagfolderassociatedcontents-canonical-property.md)) -Eigenschaft in das Array ein.
   
-Wenn Unterordner kopiert oder verschoben werden, werden Ihre Inhalte unabhängig von der Verwendung von Eigenschaften, die von der **SPropTagArray** -Struktur angegeben werden, vollständig kopiert oder verschoben. 
+Wenn Unterordner kopiert oder verschoben werden, werden deren Inhalte vollständig kopiert oder verschoben, unabhängig von der Verwendung von Eigenschaften, die von der **SPropTagArray-Struktur angegeben** werden. 
   
- **DoCopyProps** meldet globale Fehler, die mit dem Vorgang als Ganzes auftreten, sowie einzelne Fehler, die mit einer oder mehreren Eigenschaften auftreten. Diese einzelnen Fehler werden in eine **SPropProblemArray** -Struktur eingefügt. Sie können die Fehlerberichterstattung auf der Eigenschaftsebene unterdrücken, indem Sie anstelle eines gültigen Zeigers für den Array Struktur Parameter der Eigenschaft "NULL" übergeben. 
+ **DoCopyProps** meldet globale Fehler, die mit dem Gesamten des Vorgangs auftreten, und einzelne Fehler, die bei einer oder mehreren der Eigenschaften auftreten. Diese einzelnen Fehler werden in einer **SPropProblemArray-Struktur** angezeigt. Sie können die Fehlerberichterstellung auf Eigenschaftsebene unterdrücken, indem Sie NULL anstelle eines gültigen Zeigers für den Parameter für die Arraystruktur des Eigenschaftsproblems übergeben. 
   
-Wenn Sie Informationen zu Fehlern erhalten möchten, übergeben Sie einen gültigen **SPropProblemArray** -Struktur Zeiger im _lppProblems_ -Parameter. Wenn **DOCOPYPROPS** S_OK zurückgibt, überprüfen Sie auf mögliche Fehler mit einzelnen Eigenschaften in der Struktur. Wenn **DoCopyProps** einen Fehler zurückgibt, werden in der **SPropProblemArray** -Struktur keine Informationen zurückgegeben. Rufen Sie stattdessen die [IMAPISupport:: getlasterroraufzurufen](imapisupport-getlasterror.md) -Methode auf, um detaillierte Fehlerinformationen abzurufen. 
+Wenn Sie Informationen zu Fehlern erhalten möchten, übergeben Sie einen gültigen **SPropProblemArray-Strukturzeiger** im _lppProblems-Parameter._ Wenn **DoCopyProps** S_OK, überprüfen Sie nach möglichen Fehlern mit einzelnen Eigenschaften in der Struktur. Wenn **DoCopyProps** einen Fehler zurückgibt, werden keine Informationen in der **SPropProblemArray-Struktur** zurückgegeben. Rufen Sie stattdessen die [IMAPISupport::GetLastError-Methode](imapisupport-getlasterror.md) auf, um detaillierte Fehlerinformationen abzurufen. 
   
-Wenn **DOCOPYPROPS** S_OK zurückgibt, können Sie die zurückgegebene **SPropProblemArray** -Struktur freigeben, indem Sie die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion aufrufen. 
+Wenn **DoCopyProps** S_OK, geben Sie die zurückgegebene **SPropProblemArray-Struktur** frei, indem Sie die [MAPIFreeBuffer-Funktion](mapifreebuffer.md) aufrufen. 
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -165,15 +165,15 @@ Wenn **DOCOPYPROPS** S_OK zurückgibt, können Sie die zurückgegebene **SPropPr
   
 [IMAPISupport::GetLastError](imapisupport-getlasterror.md)
   
-[Kanonische Pidtagcontainercontents (-Eigenschaft](pidtagcontainercontents-canonical-property.md)
+[PidTagContainerContents (kanonische Eigenschaft)](pidtagcontainercontents-canonical-property.md)
   
-[Kanonische Pidtagcontainerhierarchy (-Eigenschaft](pidtagcontainerhierarchy-canonical-property.md)
+[PidTagContainerHierarchy (kanonische Eigenschaft)](pidtagcontainerhierarchy-canonical-property.md)
   
-[Kanonische Pidtagfolderassociatedcontents (-Eigenschaft](pidtagfolderassociatedcontents-canonical-property.md)
+[PidTagFolderAssociatedContents (kanonische Eigenschaft)](pidtagfolderassociatedcontents-canonical-property.md)
   
-[Kanonische Pidtagmessageattachments (-Eigenschaft](pidtagmessageattachments-canonical-property.md)
+[PidTagMessageAttachments (kanonische Eigenschaft)](pidtagmessageattachments-canonical-property.md)
   
-[Kanonische Pidtagmessagerecipients (-Eigenschaft](pidtagmessagerecipients-canonical-property.md)
+[PidTagMessageRecipients (kanonische Eigenschaft)](pidtagmessagerecipients-canonical-property.md)
   
 [SPropProblemArray](spropproblemarray.md)
   

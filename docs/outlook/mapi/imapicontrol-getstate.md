@@ -25,7 +25,7 @@ ms.locfileid: "33419009"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft einen Wert ab, der angibt, ob das Schaltflächen-Steuerelement aktiviert oder deaktiviert ist.
+Ruft einen Wert ab, der angibt, ob das Schaltflächensteuerelement aktiviert oder deaktiviert ist.
   
 ```cpp
 HRESULT GetState(
@@ -42,27 +42,27 @@ HRESULT GetState(
     
  _lpulState_
   
-> Out Ein Zeiger auf einen Wert, der den Zustand des Schaltflächen-Steuerelements angibt. Einer der folgenden Werte kann zurückgegeben werden:
+> [out] Ein Zeiger auf einen Wert, der den Status des Schaltflächensteuerelements angibt. Einer der folgenden Werte kann zurückgegeben werden:
     
 MAPI_DISABLED 
   
-> Das Schaltflächen-Steuerelement ist deaktiviert und kann nicht angeklickt werden. 
+> Das Schaltflächensteuerelement ist deaktiviert und kann nicht geklickt werden. 
     
 MAPI_ENABLED 
   
-> Das Schaltflächen-Steuerelement ist aktiviert und kann angeklickt werden.
+> Das Schaltflächensteuerelement ist aktiviert und kann geklickt werden.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Status des Schaltflächen-Steuerelements wurde erfolgreich abgerufen.
+> Der Status des Schaltflächensteuerelements wurde erfolgreich abgerufen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Dienstanbieter implementieren die **IMAPIControl:: GetState** -Methode, um MAPI den Status eines Schaltflächen-Steuerelements bereitzustellen. Wenn die Schaltfläche aktiviert ist, kann Sie auf einen Mausklick oder eine Tastenkombination reagieren. Wenn es deaktiviert ist, wird die Schaltfläche abgeblendet angezeigt und reagiert nicht auf einen Mausklick oder eine Tastenkombination. 
+Dienstanbieter implementieren die **IMAPIControl::GetState-Methode,** um MAPI den Status eines Schaltflächensteuerelements zur Verfügung zu stellen. Wenn die Schaltfläche aktiviert ist, kann sie auf einen Mausklick oder eine Tastendrucktaste reagieren. Wenn sie deaktiviert ist, wird die Schaltfläche abgeblendet angezeigt und reagiert nicht auf einen Mausklick oder die Tastendrucktaste. 
   
-Weitere Informationen zum Implementieren von GetState **** und den anderen [IMAPIControl: IUnknown](imapicontroliunknown.md) -Methoden finden Sie unter [Control Object Implementation](control-object-implementation.md).
+Weitere Informationen zum Implementieren von **GetState** und den anderen [IMAPIControl : IUnknown-Methoden](imapicontroliunknown.md) finden Sie unter [Control Object Implementation](control-object-implementation.md).
   
 ## <a name="see-also"></a>Siehe auch
 

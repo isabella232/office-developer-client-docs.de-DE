@@ -1,5 +1,5 @@
 ---
-title: Leerlaufstatus
+title: Leerlaufzustand
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -13,29 +13,29 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33419478"
 ---
-# <a name="idle-state"></a>Leerlaufstatus
+# <a name="idle-state"></a>Leerlaufzustand
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
- In diesem Thema wird beschrieben, was während des Leerlaufstatus des Replikationsstatus Computers passiert. 
+ In diesem Thema wird beschrieben, was während des Leerlaufzustands des Replikationsstatuscomputers geschieht. 
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
-|Status-ID:  <br/> |**LR_SYNC_IDLE** <br/> |
-|Zugehörige Datenstruktur:  <br/> | *None*  <br/> |
-|Aus folgendem Zustand:  <br/> | *Nicht anwendbar*  <br/> |
-|Zu folgendem Status:  <br/> |[Zustand „Synchronisieren“](synchronize-state.md) <br/> |
+|Statusbezeichner:  <br/> |**LR_SYNC_IDLE** <br/> |
+|Verwandte Datenstruktur:  <br/> | *Keine*  <br/> |
+|In diesem Zustand:  <br/> | *Nicht zutreffend*  <br/> |
+|In diesem Zustand:  <br/> |[Zustand „Synchronisieren“](synchronize-state.md) <br/> |
    
 > [!NOTE]
-> Der Replikationsstatus Computer ist ein deterministischer Statuscomputer. Ein Client, der von einem Staat zu einem anderen abgeht, muss schließlich aus letzterem zurückkehren. 
+> Der Replikationsstatuscomputer ist ein deterministischer Zustandsautomat. Ein Client, der von einem Zustand in einen anderen abt, muss schließlich zu dem ersten von letzterem zurückkehren. 
   
 ## <a name="description"></a>Beschreibung
 
-In diesem Zustand geschieht nichts. Ein lokaler Speicher befindet sich in diesem Zustand vor der Replikation und nach Abschluss der Replikation.
+In diesem Zustand geschieht nichts. Ein lokaler Speicher befindet sich in diesem Zustand, bevor die Replikation initiiert wird und nachdem die Replikation abgeschlossen ist.
   
 ## <a name="see-also"></a>Siehe auch
 

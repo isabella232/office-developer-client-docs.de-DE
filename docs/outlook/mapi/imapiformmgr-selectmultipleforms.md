@@ -25,7 +25,7 @@ ms.locfileid: "33420311"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Zeigt ein Dialogfeld an, in dem der Benutzer mehrere Formulare auswählen kann, und es wird ein Array von Formular Informationsobjekten zurückgegeben, die diese Formulare beschreiben.
+Stellt ein Dialogfeld vor, in dem der Benutzer mehrere Formulare auswählen kann, und gibt ein Array von Formularinformationsobjekten zurück, die diese Formulare beschreiben.
   
 ```cpp
 HRESULT SelectMultipleForms(
@@ -42,53 +42,53 @@ HRESULT SelectMultipleForms(
 
  _ulUIParam_
   
-> in Ein Handle für das übergeordnete Fenster des angezeigten Dialogfelds. 
+> [in] Ein Handle zum übergeordneten Fenster des angezeigten Dialogfelds. 
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die den Typ der übergebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die den Typ der übergebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
     
 MAPI_UNICODE 
   
-> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format.
+> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Zeichenfolgen im ANSI-Format.
     
  _pszTitle_
   
-> in Ein Zeiger auf eine Zeichenfolge, die die Beschriftung des Dialogfelds enthält. Wenn der _pszTitle_ -Parameter NULL ist, liefert der Formularbibliothek Anbieter, der die Formulare bereitstellt, eine Standardbeschriftung. 
+> [in] Ein Zeiger auf eine Zeichenfolge, die die Beschriftung des Dialogfelds enthält. Wenn der  _pszTitle-Parameter_ NULL ist, stellt der Formularbibliotheksanbieter, der die Formulare zur Verfügung stellt, eine Standardbeschriftung zur Verfügung. 
     
  _pfld_
   
-> in Ein Zeiger auf den Ordner, aus dem die Formulare ausgewählt werden sollen. Wenn der _pfld_ -Parameter NULL ist, werden die Formulare im Formular Container local, Personal oder Organization ausgewählt. 
+> [in] Ein Zeiger auf den Ordner, aus dem die Formulare ausgewählt werden. Wenn der  _pfld-Parameter_ NULL ist, werden die Formulare aus dem lokalen, persönlichen oder Organisationsformularcontainer ausgewählt. 
     
  _pfrminfoarray_
   
-> in Ein Zeiger auf ein Array von Formular Informationsobjekten, die für den Benutzer vorgewählt sind.
+> [in] Ein Zeiger auf ein Array von Formularinformationsobjekten, die für den Benutzer vorab ausgewählt sind.
     
  _ppfrminfoarray_
   
-> Out Ein Zeiger auf einen Zeiger auf das zurückgegebene Array von Formular Informationsobjekten.
+> [out] Ein Zeiger auf einen Zeiger auf das zurückgegebene Array von Formularinformationsobjekten.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Aufruf war erfolgreich, und der erwartete Wert oder die Werte wurden zurückgegeben.
+> Der Aufruf war erfolgreich und hat den erwarteten Wert oder die erwarteten Werte zurückgegeben.
     
 MAPI_E_BAD_CHARWIDTH 
   
-> Entweder wurde das MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt Unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
+> Entweder wurde MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
     
 MAPI_E_USER_CANCEL 
   
-> Der Benutzer hat den Vorgang abgebrochen, indem er in der Regel auf die Schaltfläche **Abbrechen** im Dialogfeld geklickt hat. 
+> Der Benutzer hat den Vorgang abgebrochen, in der Regel durch Klicken auf die **Schaltfläche** Abbrechen im Dialogfeld. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Formular Betrachter rufen die **IMAPIFormMgr:: SelectMultipleForms** -Methode auf, um zuerst ein Dialogfeld zu öffnen, in dem der Benutzer mehrere Formulare auswählen und dann ein Array von Formular Informationsobjekten abrufen kann, die die ausgewählten Formulare beschreiben. Im Dialogfeld **SelectMultipleForms** werden alle Formulare angezeigt, unabhängig davon, ob Sie ausgeblendet sind (d..., ob Ihre ausgeblendeten Eigenschaften deaktiviert sind). 
+Formularbetrachter rufen die **IMAPIFormMgr::SelectMultipleForms-Methode** auf, um zunächst ein Dialogfeld anzuzeigen, in dem der Benutzer mehrere Formulare auswählen und dann ein Array von Formularinformationsobjekten abrufen kann, die die ausgewählten Formulare beschreiben. Im **Dialogfeld SelectMultipleForms** werden alle Formulare angezeigt, unabhängig davon, ob sie ausgeblendet sind (d. h., ob ihre ausgeblendeten Eigenschaften klar sind oder nicht). 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Wenn ein Formular Betrachter das MAPI_UNICODE-Flag im _ulFlags_ -Parameter übergibt, sind alle Zeichenfolgen Unicode. Formularbibliothek Anbieter, die Unicode-Zeichenfolgen nicht unterstützen, sollten MAPI_E_BAD_CHARWIDTH zurückgeben, wenn MAPI_UNICODE übergeben wird. 
+Wenn ein Formularanzeiger das MAPI_UNICODE im  _ulFlags-Parameter_ übergibt, sind alle Zeichenfolgen Unicode. Formularbibliotheksanbieter, die keine Unicode-Zeichenfolgen unterstützen, sollten MAPI_E_BAD_CHARWIDTH zurückgeben, MAPI_UNICODE übergeben wird. 
   
 ## <a name="see-also"></a>Siehe auch
 

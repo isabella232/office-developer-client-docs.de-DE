@@ -1,5 +1,5 @@
 ---
-title: ODER (Access Custom Web App)
+title: OR (Benutzerdefinierte Web-App access)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33414760"
 ---
-# <a name="or-access-custom-web-app"></a>ODER (Access Custom Web App)
+# <a name="or-access-custom-web-app"></a>OR (Benutzerdefinierte Web-App access)
 
 Kombiniert zwei Bedingungen. Gibt TRUE zurück, wenn eine der beiden Bedingungen true ist.
   
@@ -23,19 +23,19 @@ Kombiniert zwei Bedingungen. Gibt TRUE zurück, wenn eine der beiden Bedingungen
   
 ## <a name="syntax"></a>Syntax
 
- *Boolean-Wert* **Oder** *Boolean-Wert* 
+ *BooleanExpression* **oder** *BooleanExpression* 
   
-Der **or** -Operator verwendet das folgende Argument. 
+Der **Operator Or** verwendet das folgende Argument. 
   
 |**Argumentname**|**Beschreibung**|
 |:-----|:-----|
-| *BoolescherAusdruck*  <br/> |Ein beliebiger gültiger Ausdruck, der TRUE oder FALSE zurückgibt.  <br/> |
+| *BooleanExpression*  <br/> |Jeder gültige Ausdruck, der TRUE oder FALSE zurückgibt.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn mehrere logische Operatoren in einer Anweisung verwendet werden, werden Operatoren **** **und** Operatoren ausgewertet. Sie können die Reihenfolge der Auswertung jedoch mithilfe von Klammern ändern. 
+Wenn mehrere logische Operatoren in einer  Anweisung verwendet werden, werden Or-Operatoren nach **And-Operatoren** ausgewertet. Sie können die Reihenfolge der Auswertung jedoch mithilfe von Klammern ändern. 
   
-Die folgende Tabelle zeigt das Ergebnis des **or** -Operators. 
+In der folgenden Tabelle ist das Ergebnis des Operators **Or** aufgeführt. 
   
 ||**TRUE**|**FALSE**|
 |:-----|:-----|:-----|

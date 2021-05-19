@@ -25,19 +25,19 @@ Sperrt die Formatierung eines Shapes, damit dieses nicht geändert werden kann.
 | TRUE  <br/> | Formatierung kann nicht geändert werden.  <br/> |
 | FALSE  <br/> | Formatierung kann geändert werden.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle "Lock Format aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle LockFormat anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | "Lock Format  <br/> |
+| Zellenname:  <br/> | LockFormat  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle "Lock Format aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle LockFormat nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowLock** <br/> |
 | Zellenindex:  <br/> |**visLockFormat** <br/> |
    

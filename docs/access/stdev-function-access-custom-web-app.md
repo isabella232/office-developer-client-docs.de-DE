@@ -1,5 +1,5 @@
 ---
-title: StDev-Funktion (Access Custom Web App)
+title: StDev-Funktion (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33410189"
 ---
-# <a name="stdev-function-access-custom-web-app"></a>StDev-Funktion (Access Custom Web App)
+# <a name="stdev-function-access-custom-web-app"></a>StDev-Funktion (benutzerdefinierte Access-Web-App)
 
 Gibt die statistische Standardabweichung aller Werte im angegebenen Ausdruck zurück.
   
@@ -23,12 +23,12 @@ Gibt die statistische Standardabweichung aller Werte im angegebenen Ausdruck zur
   
 ## <a name="syntax"></a>Syntax
 
- **StDev** (*Numerischer Ausdruck*) 
+ **StDev** (*NumericExpression*) 
   
-Die **StDev** -Funktion enthält das folgende Argument. 
+Die **StDev-Funktion** enthält das folgende Argument. 
   
 |**Argumentname**|**Beschreibung**|
 |:-----|:-----|
-| *Numerischer Ausdruck*  <br/> |Ein numerischer Ausdruck.  <br/> |
+| *NumericExpression*  <br/> |Ein numerischer Ausdruck.  <br/> |
    
 

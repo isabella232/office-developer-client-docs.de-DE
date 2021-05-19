@@ -1,5 +1,5 @@
 ---
-title: MapiSvc. inf-Nachrichtendienst Abschnitte
+title: MapiSvc.inf-Nachrichtendienstabschnitte
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,12 +15,12 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33415369"
 ---
-# <a name="mapisvcinf-message-service-sections"></a>MapiSvc. inf-Nachrichtendienst Abschnitte
+# <a name="mapisvcinf-message-service-sections"></a>MapiSvc.inf-Nachrichtendienstabschnitte
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPISVC. inf enthält einen Nachrichtendienst Abschnitt für jeden Eintrag im Abschnitt **[Dienste]** . In diesen Abschnitten gibt es zwei Arten von Einträgen: eine zum Festlegen bestimmter Eigenschaften und die andere für das Auflisten von Namen von Abschnitten im Zusammenhang mit dem konfigurierten Nachrichtendienst. 
+mapisvc.inf enthält einen Nachrichtendienstabschnitt für jeden der einträge, die im **Abschnitt [Dienste] aufgeführt** sind. In diesen Abschnitten gibt es zwei Arten von Einträgen: einen zum Festlegen bestimmter Eigenschaften und einen zum Auflisten von Namen von Abschnitten, die mit dem zu konfigurierenden Nachrichtendienst in Zusammenhang stehen. 
   
 

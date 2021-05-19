@@ -25,11 +25,11 @@ ms.locfileid: "33409503"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält einen nicht signierten 64-Bit-Wert für Datum und Uhrzeit für eine Datei. Dieser Wert stellt die Anzahl von 100-Nanosekunden-Einheiten seit Beginn des 1. Januar 1601. 
+Enthält einen nicht signierten 64-Bit-Datums- und Uhrzeitwert für eine Datei. Dieser Wert stellt die Anzahl von 100 Nanosekundeneinheiten seit Dem 1. Januar 1601 dar. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _FILETIME
@@ -40,21 +40,21 @@ typedef struct _FILETIME
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **dwLowDateTime**
   
-> Low-Order 32 Bits des dateitime-Werts. 
+> Niedrige Reihenfolge 32 Bit des Dateizeitwerts. 
     
  **dwHighDateTime**
   
-> Hochwertige 32-Bits des dateitime-Werts.
+> 32 Bit des Dateizeitwerts in hoher Reihenfolge.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Eine Eigenschaft vom Typ PT_SYSTIME hat eine **FILETIME** -Struktur für ihren Wert. Eine solche Eigenschaft verfügt über **** einen FILETIME-Datentyp für das **value** -Element in der Definition in einer [SPropValue](spropvalue.md) -Struktur. 
+Eine Eigenschaft vom Typ PT_SYSTIME hat eine **FILETIME-Struktur** für ihren Wert. Eine solche Eigenschaft verfügt über einen **FILETIME-Datentyp** für das **Value-Element** in seiner Definition in einer [SPropValue-Struktur.](spropvalue.md) 
   
-Die Definition der FILETIME-Struktur befindet sich in der _Win32-Programmierreferenz_ und in der MAPI-Headerdatei Mapidefs. h. **** MAPI definiert die strukturbedingt, um sicherzustellen, dass Sie definiert wird, wenn die Win32-Definition nicht verfügbar ist. 
+Die Definition der **FILETIME-Struktur** befindet sich in  _der Win32-Programmerreferenz_ und in der MAPI-Headerdatei Mapidefs.h. MAPI definiert die Struktur bedingt, um sicherzustellen, dass sie definiert ist, wenn die Win32-Definition nicht verfügbar ist. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -20,21 +20,21 @@ ms.locfileid: "33410210"
 
 Gibt den Prozentsatz der Vergrößerung des Zeichenblatts auf der Druckerseite an.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Dieser Wert wird nur verwendet, wenn der Wert der onPage-Zelle FALSE ist. Die Zellen ScaleX und ScaleY haben immer denselben Wert, der dem Wert entspricht, der im Dialogfeld **Seite einrichten** auf der Registerkarte **Druckeinrichtung** auf die Einstellung **Anpassen an** festgelegt ist (Klicken Sie auf der Registerkarte **Entwurf** auf den Pfeil für die **Seite einrichten** ). 
+Dieser Wert wird nur verwendet, wenn der OnPage-Zellwert FALSE ist. Die Zellen ScaleX und ScaleY haben immer denselben Wert, der dem  Wert in  der Einstellung Anpassen an  auf der Registerkarte Setup drucken im Dialogfeld Seiteneinrichtung entspricht (klicken Sie auf der Registerkarte Entwurf auf den Pfeil Seite **einrichten).**  
   
-Wenn Sie einen Verweis auf die Zelle ScaleX aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle ScaleX anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |ScaleX  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ScaleX aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die ScaleX-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowPrintProperties** <br/> |
 |Zellenindex:  <br/> |**visPrintPropertiesScaleX** <br/> |
    

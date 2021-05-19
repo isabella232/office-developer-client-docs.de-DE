@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagbodycrc (-Eigenschaft
+title: PidTagBodyCrc (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,13 +19,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33415180"
 ---
-# <a name="pidtagbodycrc-canonical-property"></a>Kanonische Pidtagbodycrc (-Eigenschaft
+# <a name="pidtagbodycrc-canonical-property"></a>PidTagBodyCrc (kanonische Eigenschaft)
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält einen CRC-Wert (zyklische Redundanzprüfung) für den Nachrichtentext.
+Enthält einen Wert für die zyklische Redundanzprüfung (CrC) für den Nachrichtentext.
   
 |||
 |:-----|:-----|
@@ -34,23 +34,23 @@ Enthält einen CRC-Wert (zyklische Redundanzprüfung) für den Nachrichtentext.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Exchange  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Der Nachrichtenspeicher kann einen beliebigen CRC-Algorithmus verwenden, der einen PT_LONG-Wert generiert. Diese Eigenschaft muss als Teil der [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) -Methode berechnet werden, wenn die **PR_BODY** ([pidtagbody (](pidtagbody-canonical-property.md))-Eigenschaft zum ersten Mal festgelegt wurde und wenn Sie anschließend geändert wurde.
+Der Nachrichtenspeicher kann einen beliebigen CRC-Algorithmus verwenden, der einen PT_LONG generiert. Sie muss diese Eigenschaft als Teil der [IMAPIProp::SaveChanges-Methode](imapiprop-savechanges.md) berechnen, wenn die **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) -Eigenschaft zum ersten Mal festgelegt wurde und wann immer sie anschließend geändert wurde.
   
-Eine Clientanwendung verwendet **PR_BODY_CRC** , um die in **PR_BODY** -Eigenschaften oder deren Varianten enthaltenen Nachrichtentext Zeichenfolgen zu vergleichen. Mit dieser Eigenschaft kann der Client schnell und einfach erkennen, wann der Nachrichtentext geändert wurde. Mithilfe von **PR_BODY_CRC** können Sie beträchtliche Leistungssteigerungen erzielen, statt **PR_BODY** aus dem Nachrichtenspeicher abzurufen und mit einer lokalen Version zu vergleichen. 
+Eine Clientanwendung verwendet **PR_BODY_CRC,** um nachrichtentextzeichenfolgen **zu** vergleichen, die in PR_BODY oder deren Varianten enthalten sind. Mit dieser Eigenschaft kann der Client schnell und einfach erkennen, wann sich der Nachrichtentext geändert hat. Es kann erhebliche Leistungsgewinne erzielen, indem  **PR_BODY_CRC** verwendet wird, anstatt PR_BODY aus dem Nachrichtenspeicher zu erhalten und mit einer lokalen Version zu vergleichen. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
-### <a name="header-files"></a>Header Dateien
+### <a name="header-files"></a>Headerdateien
 
-Mapidefs. h
+Mapidefs.h
   
-> Stellt Datentypdefinitionen bereit.
+> Bietet Datentypdefinitionen.
     
-Mapitags. h
+Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -58,9 +58,9 @@ Mapitags. h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

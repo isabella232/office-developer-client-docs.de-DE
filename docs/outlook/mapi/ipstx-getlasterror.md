@@ -39,7 +39,7 @@ HRESULT GetLastError(
 
  _hResult_
   
->  in Fehlercode. 
+>  [in] Fehlercode. 
     
  _ulFlags_
   
@@ -47,7 +47,7 @@ HRESULT GetLastError(
     
  _lppMAPIError_
   
->  Out Zeiger auf die **MAPIERROR** -Struktur, die die erweiterten Informationen für den Fehler enthält. Weitere Informationen finden Sie unter mapidefs. h für die Typdefinition von **LPMAPIERROR**. 
+>  [out] Zeiger auf die **MAPIERROR-Struktur,** die die erweiterten Informationen für den Fehler enthält. Die Typdefinition von **LPMAPIERROR** finden Sie unter mapidefs.h. 
     
 ## <a name="see-also"></a>Siehe auch
 

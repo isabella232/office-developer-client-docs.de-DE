@@ -1,10 +1,10 @@
 ---
-title: Anzeigen von Warnungen und Dialog Feldern mit dem InfoPath-Objektmodell 2003
+title: Anzeigen von Warnungen und Dialogfelder mithilfe des InfoPath 2003-Objektmodells
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
-- InfoPath 2003-kompatible Formularvorlagen, Anzeigen von Dialogfeldern, Formularvorlagen [InfoPath 2007], Anzeigen von Dialogfeldern, Warnungen, Anzeigen in InfoPath 2003-kompatiblen Formularvorlagen, Dialogfeldern, Anzeigen in InfoPath 2003-kompatible Formularvorlagen , InfoPath 2003-kompatible Formularvorlagen, Warnungen anzeigen
+- infopath 2003-kompatible Formularvorlagen, Anzeigen von Dialogfelder,Formularvorlagen [InfoPath 2007], Anzeigen von Dialogfelder,Warnungen, Anzeigen in InfoPath 2003-kompatiblen Formularvorlagen,Dialogfelder, Anzeigen in InfoPath 2003-kompatiblen Formularvorlagen,InfoPath 2003-kompatible Formularvorlagen, Anzeigen von Warnungen
 localization_priority: Normal
 ms.assetid: 721ac58e-56d9-4e3b-93f1-849e0c94d010
 description: Beim Schreiben von Code, um die Funktionalität einer Formularvorlage zu erweitern, die das InfoPath 2003-Objektmodell verwendet, empfiehlt es sich häufig, dem Benutzer Informationen in einem Dialogfeld bereitzustellen.
@@ -15,27 +15,27 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33409482"
 ---
-# <a name="display-alerts-and-dialog-boxes-using-the-infopath-2003-object-model"></a>Anzeigen von Warnungen und Dialog Feldern mit dem InfoPath-Objektmodell 2003
+# <a name="display-alerts-and-dialog-boxes-using-the-infopath-2003-object-model"></a>Anzeigen von Warnungen und Dialogfelder mithilfe des InfoPath 2003-Objektmodells
 
-Beim Schreiben von Code, um die Funktionalität einer Formularvorlage zu erweitern, die das InfoPath 2003-Objektmodell verwendet, empfiehlt es sich häufig, dem Benutzer Informationen in einem Dialogfeld bereitzustellen. Programmgesteuertes Anzeigen eines Dialogfelds und zugehöriger Benutzeroberflächenelemente wird in InfoPath mithilfe der Methoden der [UIObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UIObject.aspx) -Schnittstelle ausgeführt. 
+Beim Schreiben von Code, um die Funktionalität einer Formularvorlage zu erweitern, die das InfoPath 2003-Objektmodell verwendet, empfiehlt es sich häufig, dem Benutzer Informationen in einem Dialogfeld bereitzustellen. Die programmgesteuerte Anzeige eines Dialogfelds und zugehöriger Benutzeroberflächenelemente erfolgt in InfoPath mithilfe der Methoden der [UIObject-Schnittstelle.](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UIObject.aspx) 
   
 ## <a name="overview-of-the-uiobject-interface"></a>Übersicht über die UIObject-Schnittstelle
 
-Die [UIObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UIObject.aspx) -Schnittstelle stellt die folgenden Methoden bereit, mit denen Formularentwickler beim Ausfüllen eines Formulars unterschiedliche Arten von Dialogfeldern für InfoPath-Benutzer anzeigen können. 
+Die [UIObject-Schnittstelle](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UIObject.aspx) bietet die folgenden Methoden, mit denen Formularentwickler unterschiedliche Arten von Dialogfeldern den InfoPath-Benutzern beim Ausfüllen eines Formulars anzeigen können. 
   
 |Name|Beschreibung|
 |:-----|:-----|
 |[Warnung](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.Alert.aspx) <br/> |Zeigt ein einfaches Meldungsfeld an, das eine bestimmte Meldungszeichenfolge enthält. Diese Methode sollte dann verwendet werden, wenn keine Benutzereingaben erforderlich sind und nur eine Meldung angezeigt werden muss. Das Dialogfeld wird durch Klicken auf die Schaltfläche **OK** geschlossen.<br/> |
-|[Confirm](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.Confirm.aspx) <br/> |Zeigt ein Meldungsfeld mit Schaltflächen für Benutzereingaben an. Der zurückgegebene Wert ist eine der aufgezählten [XdConfirmChoice](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XdConfirmChoice.aspx) -Konstanten.  <br/> |
+|[Confirm](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.Confirm.aspx) <br/> |Zeigt ein Meldungsfeld mit Schaltflächen für Benutzereingaben an. Der zurückgegebene Wert ist eine der [XdConfirmChoice-Enumerationskonstante.](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XdConfirmChoice.aspx)  <br/> |
 |[SetSaveAsDialogFileName](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.SetSaveAsDialogFileName.aspx) <br/> |Legt den Standarddateinamen für ein Formular im Dialogfeld **Speichern unter** fest.  <br/> |
 |[SetSaveAsDialogLocation](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.SetSaveAsDialogLocation.aspx) <br/> |Legt den Ausgangsort fest, an dem das Dialogfeld **Speichern unter** beim Öffnen mit der Navigation beginnt.  <br/> |
-|[ShowMailItem](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.ShowMailItem.aspx) <br/> |Erstellt eine neue e-Mail-Nachricht in der Standard-e-Mail-Anwendung, wobei das derzeit geöffnete Formular an die Nachricht angefügt ist.  <br/> |
-|[ShowModalDialog](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.ShowModalDialog.aspx) <br/> |Zeigt ein modales Dialogfeld basierend auf der angegebenen HTML-Datei und positionellen Argumenten an. Diese Methode sollte verwendet werden, wenn Sie mehr als eine einfache Nachricht für den Benutzer anzeigen möchten, und Sie müssen einige Daten vom Benutzer zurück erhalten (abgesehen von der einfachen Bestätigung, die vom **Ja** | **Nein** | Von der **Confirm** -Methode angezeigte Schaltflächen **Abbrechen** ).  <br/> |
+|[ShowMailItem](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.ShowMailItem.aspx) <br/> |Erstellt eine neue E-Mail-Nachricht in der Standard-E-Mail-Anwendung mit dem derzeit geöffneten Formular, das der Nachricht angefügt ist.  <br/> |
+|[ShowModalDialog](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.ShowModalDialog.aspx) <br/> |Zeigt ein modales Dialogfeld basierend auf der angegebenen HTML-Datei und positionellen Argumenten an. Diese Methode sollte verwendet werden, wenn Sie dem Benutzer mehr als eine einfache Nachricht anzeigen möchten und einige Daten  vom Benutzer zurückerstatten müssen (über die einfache Bestätigung hinaus, die vom Ja bereitgestellt wird). | **Nein** | **Schaltflächen** abbrechen, die von der **Confirm-Methode angezeigt** werden).  <br/> |
 |[ShowSignatureDialog](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.ShowSignatureDialog.aspx) <br/> |Zeigt das integrierte Dialogfeld **Digitale Signaturen** an.  <br/> |
    
 ## <a name="using-the-uiobject-interface"></a>Verwenden der UIObject-Schnittstelle
 
-Der Zugriff auf die [UIObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UIObject.aspx) -Schnittstelle erfolgt über die [UI](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocument2.UI.aspx) -Eigenschaft der [XDocument](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XDocument.aspx) -Schnittstelle, `thisXDocument` auf die selbst über die Variable `_Startup` zugegriffen wird, die in der Methode der Formularcodeklasse initialisiert wird. Das folgende Beispiel veranschaulicht die Verwendung der [ShowMailItem](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.ShowMailItem.aspx) -und der [Alert](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.Alert.aspx) -Methode der [UIObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UIObject.aspx) -Schnittstelle. 
+Auf [die UIObject-Schnittstelle](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UIObject.aspx) wird über die [UI-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocument2.UI.aspx) der [XDocument-Schnittstelle](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XDocument.aspx) zugegriffen, auf die selbst über die Variable zugegriffen wird, die in der Methode der Formularcodeklasse initialisiert  `thisXDocument`  `_Startup` wird. Im folgenden Beispiel wird die Verwendung der [ShowMailItem-](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.ShowMailItem.aspx) und [Alert-Methoden](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.Alert.aspx) der [UIObject-Schnittstelle](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UIObject.aspx) veranschaulicht. 
   
 ```cs
 thisXDocument.UI.ShowMailItem("someone@example.com","", "", 
@@ -51,7 +51,7 @@ thisXDocument.UI.Alert("The email message has been created.")
 
 ## <a name="using-the-showmodaldialog-method"></a>Verwenden der ShowModalDialog-Methode
 
-In diesem Beispiel wird veranschaulicht, wie die [ShowModalDialog](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.ShowModalDialog.aspx) -Methode der [UIObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UIObject.aspx) -Schnittstelle verwendet wird, um ein benutzerdefiniertes Dialogfeld anzuzeigen, das in der HTML-Datei Show. HTML definiert ist. 
+In diesem Beispiel wird veranschaulicht, wie Sie die [ShowModalDialog-Methode](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.ShowModalDialog.aspx) der [UIObject-Schnittstelle](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UIObject.aspx) verwenden, um ein benutzerdefiniertes Dialogfeld anzuzeigen, das in der HTML-Datei show.html definiert ist. 
   
 ```cs
 public void CTRL1_5_OnClick(DocActionEvent e)
@@ -72,7 +72,7 @@ End Sub
 
 ```
 
-Sowohl die Visual C#-als auch die Visual Basic-Beispiele sind von einer HTML-Datei mit dem Namen "Show. html" abhängig, die das von der [ShowModalDialog](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.ShowModalDialog.aspx) -Methode aufgerufene Dialogfeld definiert. In dieser HTML-Datei werden einige Daten aus dem Formular angezeigt, und es wird ein Textfeld angezeigt, in dem der Benutzer einen Wert eingeben muss. Der Wert im TextBox-Steuerobjekt wird an das Formular zurückgegeben, wenn das Dialogfeld geschlossen wird. 
+Sowohl visual C# als auch Visual Basic sind von einer HTML-Datei namens "show.html" abhängig, die das Dialogfeld definiert, das von der [ShowModalDialog-Methode](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.ShowModalDialog.aspx) aufgerufen wird. In dieser HTML-Datei werden einige Daten aus dem Formular und ein Textfeld angezeigt, in dem der Benutzer einen Wert ausfüllen kann. Der Wert im Textfeld wird an das Formular zurückgegeben, wenn das Dialogfeld geschlossen wird. 
   
 ```html
 <HTML>
@@ -102,6 +102,6 @@ function BtnClick()
 ```
 
 > [!IMPORTANT]
-> Die [ShowModalDialog](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.ShowModalDialog.aspx) -Methode erfordert volle Vertrauenswürdigkeit zum Ausführen oder Vorschau. Weitere Informationen finden Sie unter [Vorschau und Debuggen von Formularvorlagen, die volle VertrauenswürdigKeit erfordern](how-to-preview-and-debug-form-templates-that-require-full-trust.md). 
+> Für [die ShowModalDialog-Methode](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI2.ShowModalDialog.aspx) ist die Ausführung oder Vorschau der voll vertrauenswürdigen Methode erforderlich. Weitere Informationen finden Sie unter [Vorschau und Debuggen von Formularvorlagen, die voll vertrauenswürdig sind.](how-to-preview-and-debug-form-templates-that-require-full-trust.md) 
   
 

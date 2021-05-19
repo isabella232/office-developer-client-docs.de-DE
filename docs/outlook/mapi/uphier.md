@@ -19,7 +19,7 @@ ms.locfileid: "33414921"
  
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Informationen zum Synchronisieren einer Ordnerhierarchie während des [Upload-Hierarchie Status](upload-hierarchy-state.md).
+Informationen zum Synchronisieren einer Ordnerhierarchie während des [Uploadhierarchiestatus](upload-hierarchy-state.md).
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -37,25 +37,25 @@ struct UPHIER
 
 _ulFlags_
   
-> in Kennzeichen, um das Verhalten beim Synchronisieren der Ordnerhierarchie zu ändern.
+> [in] Flags zum Ändern des Verhaltens beim Synchronisieren der Ordnerhierarchie.
     
   - UPH_OK
     
-    - in Der Upload war erfolgreich. Der Client legt dies nach dem erfolgreichen Hochladen von Informationen auf den Server fest. Wenn dieses Flag angezeigt wird, werden alle internen Buchhaltungsinformationen gelöscht, die die aktualisierte Ordnerhierarchie angegeben haben. 
+    - [in] Hochladen war erfolgreich. Der Client legt dies nach dem erfolgreichen Hochladen von Informationen auf den Server fest. Wenn dieses Flag angezeigt wird, Outlook alle internen Buchhaltungsinformationen, die angegeben haben, dass die Ordnerhierarchie aktualisiert werden muss. 
     
-    - Der Client übergibt HRESULT, wenn der Upload nicht erfolgreich war.
+    - Der Client übergibt das HRESULT, wenn der Upload nicht erfolgreich war.
     
 _pstmReserved_
   
-> Out Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.
+> [out] Dieses Mitglied ist für die Outlook reserviert und wird nicht unterstützt.
     
 _iEnt_
   
-> Out Index, um die Synchronisierung der Anzahl der durch *cEnt* angegebenen Ordner nachzuverfolgen. 
+> [out] Index zum Nachverfolgen der Synchronisierung der durch *cEnt angegebenen Ordneranzahl.* 
     
-_Prozent_
+_cEnt_
   
-> Out Die Anzahl der Ordner, die nicht synchron sind.
+> [out] Die Anzahl der Ordner, die nicht synchronisiert sind.
     
 ## <a name="see-also"></a>Siehe auch
 

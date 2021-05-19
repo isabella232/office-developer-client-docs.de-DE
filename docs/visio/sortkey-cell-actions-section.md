@@ -23,22 +23,22 @@ Eine Zahl, mit der die Reihenfolge von Aktionen bestimmt wird, die in einem Kont
 > [!NOTE]
 > In früheren Versionen von Microsoft Visio werden Aktionstags als Smarttags bezeichnet. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Die Aktionen in einem Aktionstag- oder Kontextmenü werden im Menü mit der niedrigsten Nummer ganz oben in aufsteigender Reihenfolge angezeigt. Wenn zwei Aktionszeilen den gleichen Wert in der Zelle SortKey aufweisen, wird die Reihenfolge durch die Reihenfolge der Zeilen bestimmt. Der Standardwert ist 0.
   
-Wenn Sie einen Verweis auf die Zelle SortKey aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle SortKey anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Aktionen. *Name* . SortKeywobei-Aktionen.  *Name* ist der Name der Zeile Actions.  <br/> |
+|Zellenname:  <br/> |Aktionen. *Name*  . SortKeywhere-Aktionen.  *Name*  ist der Name der Zeile Aktionen  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle "SortKey" aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle SortKey nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
 |Abschnittsindex:  <br/> |**visSectionAction** <br/> |
-|Zeilenindex:  <br/> |**visRowAction** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+|Zeilenindex:  <br/> |**visRowAction**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
 |Zellenindex:  <br/> |**visActionSortKey** <br/> |
    
 

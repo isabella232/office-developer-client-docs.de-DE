@@ -5,7 +5,7 @@ ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 98f08432-e86c-cba6-45fd-5a6c94d50aaf
-description: 'Zuletzt geändert: 03 Juli, 2012'
+description: 'Letzte Änderung: 03. Juli 2012'
 ms.openlocfilehash: b7c651044ab7f4cad7032db69e157c9a3589bde9
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -17,19 +17,19 @@ ms.locfileid: "33420822"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bevor Sie einen eingebundenen PST-Speicheranbieter verwenden können, müssen Sie den eingebundenen PST-Speicheranbieter initialisieren und konfigurieren. Nach der Konfiguration des eingebundenen PST-Speicheranbieters müssen Sie Funktionen implementieren, damit MAPI und der MAPI-Spooler sich beim Nachrichtenspeicher Anbieter anmelden können. Weitere Informationen zum Initialisieren und Anmelden bei einem eingebundenen PST-Speicheranbieter finden Sie unter [Initialisieren eines EingebundenEN PST-Speicheranbieters](initializing-a-wrapped-pst-store-provider.md) und [Anmelden bei einem](logging-on-to-a-wrapped-pst-store-provider.md)eingebundenen PST-Speicheranbieter.
+Bevor Sie einen umschlossenen Anbieter für persönliche Ordner (PST)-Speicher verwenden können, müssen Sie den umschlossenen ANBIETER für den PST-Speicher initialisieren und konfigurieren. Nachdem der umschlossene PST Store-Anbieter konfiguriert wurde, müssen Sie Funktionen implementieren, damit sich MAPI und der MAPI-Spooler beim Nachrichtenspeicheranbieter anmelden können. Weitere Informationen zum Initialisieren und Anmelden bei einem umschlossenen PST Store-Anbieter finden Sie unter [Initializing a Wrapped PST Store Provider](initializing-a-wrapped-pst-store-provider.md) und [Logging On to a Wrapped PST Store Provider](logging-on-to-a-wrapped-pst-store-provider.md).
   
-Die **[IMAPISupport:: IUnknown](imapisupportiunknown.md)** -Schnittstelle stellt Implementierungen für Aufgaben bereit, die häufig von Nachrichtenspeicher Anbietern ausgeführt werden. Diese Schnittstelle muss umbrochen werden, damit der beispielhafte PST-Speicheranbieter funktioniert. Die **[IMAPISupport:: OpenProfileSection](imapisupport-openprofilesection.md)** -Funktion erfordert eine spezielle Implementierung. Alle anderen Funktionen können Ihre Parameter an das zugrunde liegende Wrapped-Objekt übergeben. 
+Die **[IMAPISupport::IUnknown-Schnittstelle](imapisupportiunknown.md)** stellt Implementierungen für Aufgaben bereit, die häufig von Nachrichtenspeicheranbietern ausgeführt werden. Diese Schnittstelle muss umschlossen werden, damit der Beispielanbieter für umschlossenes PST Store funktioniert. Die **[IMAPISupport::OpenProfileSection-Funktion](imapisupport-openprofilesection.md)** erfordert eine spezielle Implementierung. Alle anderen Funktionen können ihre Parameter an das zugrunde liegende umschlossene Objekt übergeben. 
   
-In diesem Thema wird die **IMAPISupport:: OpenProfileSection** -Funktion anhand eines Codebeispiels aus dem eingebundenen PST-Speicheranbieter demonstriert. Im Beispiel wird ein eingebundener PST-Anbieter implementiert, der in Verbindung mit der Replikations-API verwendet werden soll. Weitere Informationen zum herunterladen und Installieren des eingeWickelten Beispiel-PST-Speicheranbieters finden Sie unter [Installing the Sample Wrapped Store Provider](installing-the-sample-wrapped-pst-store-provider.md). Weitere Informationen zur Replikations-API finden Sie unter Informationen zur [Replikations-API](about-the-replication-api.md).
+In diesem Thema wird die **IMAPISupport::OpenProfileSection-Funktion** mithilfe eines Codebeispiels aus dem Beispiel umschlossenen PST-Store demonstriert. Das Beispiel implementiert einen umschlossenen PST-Anbieter, der in Verbindung mit der Replikations-API verwendet werden soll. Weitere Informationen zum Herunterladen und Installieren des Beispielanbieters für umbrochene PST Store finden Sie unter [Installing the Sample Wrapped PST Store Provider](installing-the-sample-wrapped-pst-store-provider.md). Weitere Informationen zur Replikations-API finden Sie unter [Informationen zur Replikations-API](about-the-replication-api.md).
   
-Wenn Sie einen eingebundenen PST-Speicheranbieter abgeschlossen haben, müssen Sie den eingebundenen PST-Speicheranbieter ordnungsgemäß herunterfahren. Weitere Informationen finden Sie unter [Herunterfahren eines EingebundenEN PST-Speicheranbieters](shutting-down-a-wrapped-pst-store-provider.md).
+Wenn Sie die Verwendung eines umschlossenen PST Store-Anbieters abgeschlossen haben, müssen Sie den umschlossenen ANBIETER für den PST Store ordnungsgemäß herunterfahren. Weitere Informationen finden Sie unter [Shutting Down a Wrapped PST Store Provider](shutting-down-a-wrapped-pst-store-provider.md).
   
-## <a name="open-profile-section-routine"></a>Open profile section-Routine
+## <a name="open-profile-section-routine"></a>Open Profile Section-Routine
 
-Die **[IMAPISupport:: OpenProfileSection](imapisupport-openprofilesection.md)** -Funktion öffnet einen Abschnitt des aktuellen Profils. Die Funktion erfordert eine besondere Behandlung in der eingebundenen PST-Speicheranbieter Implementierung. Wenn der `pgNSTGlobalProfileSectionGuid` angefordert wird, gibt die Funktion den Profil Abschnitt zurück, der zwischengespeichert wird. 
+Die **[IMAPISupport::OpenProfileSection-Funktion](imapisupport-openprofilesection.md)** öffnet einen Abschnitt des aktuellen Profils. Die Funktion erfordert eine spezielle Behandlung in der Implementierung des umschlossenen PST Store-Anbieters. Wenn der  `pgNSTGlobalProfileSectionGuid` angefordert wird, gibt die Funktion den zwischengespeicherten Profilabschnitt zurück. 
   
-### <a name="csupportopenprofilesection-example"></a>CSupport:: OpenProfileSection ()-Beispiel
+### <a name="csupportopenprofilesection-example"></a>CSupport::OpenProfileSection()-Beispiel
 
 ```cpp
 STDMETHODIMP CSupport::OpenProfileSection( 
@@ -56,9 +56,9 @@ STDMETHODIMP CSupport::OpenProfileSection(
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Informationen zum einGebundenen PST-Speicheranbieter](about-the-sample-wrapped-pst-store-provider.md)
-- [Installieren des eingeWickelten Beispiel-PST-Speicheranbieters](installing-the-sample-wrapped-pst-store-provider.md)
-- [Initialisieren eines einGebundenen PST-Speicheranbieters](initializing-a-wrapped-pst-store-provider.md)
-- [Anmelden bei einem einGebundenen PST-Speicheranbieter](logging-on-to-a-wrapped-pst-store-provider.md)
-- [Herunterfahren eines einGebundenen PST-Speicheranbieters](shutting-down-a-wrapped-pst-store-provider.md)
+- [Informationen zum Beispiel umschlossenen STORE Anbieter](about-the-sample-wrapped-pst-store-provider.md)
+- [Installieren des Umschlossenen Store -Beispielanbieters](installing-the-sample-wrapped-pst-store-provider.md)
+- [Initialisieren eines umschlossenen STORE Anbieters](initializing-a-wrapped-pst-store-provider.md)
+- [Anmelden bei einem umschlossenen STORE Anbieter](logging-on-to-a-wrapped-pst-store-provider.md)
+- [Herunterfahren eines umschlossenen STORE Anbieters](shutting-down-a-wrapped-pst-store-provider.md)
 

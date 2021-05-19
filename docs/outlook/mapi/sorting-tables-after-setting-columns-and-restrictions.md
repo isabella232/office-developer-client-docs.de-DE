@@ -21,14 +21,14 @@ ms.locfileid: "33409881"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Wenn Sie die Ansicht einer sortierten Tabelle einschränken müssen, führen Sie die folgenden **IMAPITable** -Aufrufe in der folgenden Reihenfolge aus: 
+Wenn Sie die Ansicht einer sortierten Tabelle einschränken müssen, nehmen Sie immer die folgenden **IMAPITable-Aufrufe** in der folgenden Reihenfolge vor: 
   
-1. [IMAPITable::](imapitable-setcolumns.md) SetColumns zum Definieren des Spaltensatzes. 
+1. [IMAPITable::SetColumns,](imapitable-setcolumns.md) um den Spaltensatz zu definieren. 
     
-2. [IMAPITable:: einschränken](imapitable-restrict.md) , um die Einschränkung aufzuerlegen. 
+2. [IMAPITable::Restrict,](imapitable-restrict.md) um die Einschränkung zu verhängen. 
     
-3. [IMAPITable:: sortable](imapitable-sorttable.md) , um die Sortierung durchzuführen. 
+3. [IMAPITable::SortTable,](imapitable-sorttable.md) um die Sortierung durchzuführen. 
     
-Wenn die sortierte Tabelle kategorisiert wird, führen Sie einen Aufruf von [IMAPITable:: SetCollapseState](imapitable-setcollapsestate.md), falls erforderlich, nach dem **sortable** -Aufruf aus. Diese Reihenfolge von anrufen ist wichtig, da die meisten Dienstanbieter eine Tabelle als letzte Aufgabe sortieren, um eine optimale Leistung zu erzielen. Wenn beispielsweise ein Nachrichtenspeicher Anbieter eine Ordnerinhaltstabelle kategorisieren muss, bevor eine Einschränkung auferlegt werden kann, wird diese Kategorisierung während der Verarbeitung der Einschränkung entfernt. Eine zweite Kategorisierung ist erforderlich. 
+Wenn die sortierte Tabelle kategorisiert ist, rufen Sie [IMAPITable::SetCollapseState](imapitable-setcollapsestate.md)auf, falls erforderlich, nach dem **SortTable-Aufruf.** Diese Reihenfolge der Anrufe ist wichtig, da die meisten Dienstanbieter eine Tabelle als letzte Aufgabe sortieren, um die beste Leistung zu erzielen. Wenn beispielsweise ein Nachrichtenspeicheranbieter eine Ordnerinhaltstabelle kategorisieren muss, bevor eine Einschränkung auferlegt werden kann, wird diese Kategorisierung während der Verarbeitung der Einschränkung entfernt. Eine zweite Kategorisierung ist erforderlich. 
   
 

@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251460
 localization_priority: Normal
 ms.assetid: 38e6bba7-1bf2-3d31-0912-707002454f5d
-description: Gibt den Wert der Helligkeitskomponente einer Farbe zurück.
+description: Gibt den Wert der Leuchtkraftkomponente einer Farbe zurück.
 ms.openlocfilehash: 17fa43f8e2cd7422428f92724e351436233c2d62
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33419338"
 ---
 # <a name="lum-function"></a>LUM Function
 
-Gibt den Wert der Helligkeitskomponente einer Farbe zurück.
+Gibt den Wert der Leuchtkraftkomponente einer Farbe zurück.
   
 ## <a name="syntax"></a>Syntax
 
-LUM (* * *Expression* * *) 
+LUM(** *Expression* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -32,21 +32,21 @@ LUM (* * *Expression* * *)
    
 ### <a name="return-value"></a>Rückgabewert
 
-Zahl
+Nummer
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Der Rückgabewert ist eine Zahl im Bereich von 0 bis einschließlich 240. Bei einer ungültigen Eingabe wird 0 zurückgegeben. 
   
 ## <a name="example-1"></a>Beispiel 1
 
-LUM (Sheet. 4! Zelle FillForegnd
+LUM(Sheet.4! FillForegnd)
   
 Gibt die Farbkomponente Helligkeit der Vordergrundfüllfarbe von Sheet.4 zurück.
   
 ## <a name="example-2"></a>Beispiel 2
 
-LUM (6)
+LUM(6)
   
 Gibt 120 zurück, wenn das Dokument die Standardfarbpalette von Visio verwendet, wobei Magenta die Farbe mit Index 6 ist.
   

@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33410679"
 ---
-# <a name="mviprop"></a>MVI_PROP
+# <a name="mvi_prop"></a>MVI_PROP
 
   
   
@@ -29,8 +29,8 @@ Legt die MVI_FLAG für eine angegebene Eigenschaft fest.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |[SPropValue](spropvalue.md) <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |[SPropValue](spropvalue.md) <br/> |
    
 ```cpp
 MVI_PROP (tag)
@@ -38,17 +38,17 @@ MVI_PROP (tag)
 
 ## <a name="parameters"></a>Parameter
 
- _Tag_
+ _tag_
   
-> Das zu ändernde Property-Tag.
+> Das zu ändernde Eigenschaftstag.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Das MVI_FLAG kombiniert die Einstellung von MV_FLAG, identifiziert eine Eigenschaft als mehrwertige und MV_INSTANCE und fordert, dass eine mehrwertige Eigenschaft in einer Tabelle in mehreren Zeilen angezeigt wird. Der Eigenschaftentyp der betroffenen Eigenschaft wird geändert, aber der Bezeichner bleibt unverändert. 
+Das MVI_FLAG kombiniert die Einstellung von MV_FLAG, identifiziert eine Eigenschaft als mehrwertigen Wert und MV_INSTANCE und fordert an, dass eine mehrwertige Eigenschaft in einer Tabelle in mehreren Zeilen angezeigt wird. Der Eigenschaftentyp der betroffenen Eigenschaft wird geändert, der Bezeichner bleibt jedoch unverändert. 
   
-Wenn beispielsweise das MVI_PROP-Makro auf eine Eigenschaft vom Typ PT_FLOAT angewendet wird, wird der Typ in PT_MV_FLOAT geändert. Wenn Sie in einer Tabelle enthalten sind, werden mehrere Zeilen verwendet, um die Eigenschaft darzustellen, die eine Zeile für jeden Wert enthält. Die Eigenschaften für die anderen Spalten werden wiederholt. 
+Wenn das Makro MVI_PROP auf eine Eigenschaft vom Typ PT_FLOAT angewendet wird, wird der Typ in PT_MV_FLOAT. Wenn sie in einer Tabelle enthalten sind, werden mehrere Zeilen verwendet, um die Eigenschaft mit einer Zeile für jeden Wert zu repräsentieren. Die Eigenschaften für die anderen Spalten werden wiederholt. 
   
-Weitere Informationen zu diesen Flags finden Sie unter [MAPI property Type Overview](mapi-property-type-overview.md) und [Working with mehrwertig Columns](working-with-multivalued-columns.md).
+Weitere Informationen zu diesen Kennzeichen finden Sie unter [MAPI Property Type Overview](mapi-property-type-overview.md) und [Working with Multivalued Columns](working-with-multivalued-columns.md).
   
 ## <a name="see-also"></a>Siehe auch
 

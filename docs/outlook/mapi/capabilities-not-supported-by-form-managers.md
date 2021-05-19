@@ -1,5 +1,5 @@
 ---
-title: Von Formular Managern nicht unterstützte Funktionen
+title: Funktionen, die von Formularmanagern nicht unterstützt werden
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,25 +15,25 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33419380"
 ---
-# <a name="capabilities-not-supported-by-form-managers"></a>Von Formular Managern nicht unterstützte Funktionen
+# <a name="capabilities-not-supported-by-form-managers"></a>Funktionen, die von Formularmanagern nicht unterstützt werden
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die folgenden Features werden vom standardmäßigen Formular-Manager aus Leistungsgründen nicht unterstützt, können jedoch von benutzerdefinierten Formular-Managern unterstützt werden.
+Die folgenden Features werden vom Standardmäßigen Formular-Manager aus Leistungsgründen nicht unterstützt, können jedoch von benutzerdefinierten Formularmanagern unterstützt werden.
   
-- Eine Hierarchie, die das Gruppieren oder Kategorisieren von Formularen in einer Formularbibliothek ermöglicht. Eine Formularbibliothek ist eine Flatfile-Datenbank mit Formularen.
+- Eine Hierarchie, die das Gruppieren oder Kategorisieren von Formularen in einer Formularbibliothek ermöglicht. Eine Formularbibliothek ist eine Flachdateidatenbank von Formularen.
     
-- Zugriffssteuerung für Formular Kategorien, die Nachrichtenklassen oder übergeordneten Klassen entsprechen.
+- Zugriffssteuerung für Formularkategorien, die Nachrichtenklassen oder Superklassen zugeordnet sind.
     
 - Unterstützung für mehrere Sprachversionen desselben Formulars in einer einzelnen Formularbibliothek.
     
-Dies sind Implementierungsprobleme. Es gibt nichts, was verhindert, dass ein benutzerdefinierter Formular-Manager diese Features implementiert.
+Dies sind Implementierungsprobleme. Es gibt nichts, was einen benutzerdefinierten Formular-Manager daran hindern kann, diese Features zu implementieren.
   
-Die MAPI-Formulararchitektur unterstützt nicht mehrere Formular-Manager, die gleichzeitig laufen. Obwohl MAPI mehrere gleichzeitige Nachrichtenspeicher Anbieter, Transportanbieter und Adressbuchanbieter unterstützt, wird nur ein einziger Formular-Manager unterstützt.
+Die MAPI-Formulararchitektur unterstützt nicht mehrere Formularmanager, die gleichzeitig ausgeführt werden. Obwohl MAPI mehrere gleichzeitige Nachrichtenspeicheranbieter, Transportanbieter und Adressbuchanbieter unterstützt, wird nur ein einzelner Formular-Manager unterstützt.
   
-Da möglicherweise nur ein Formular-Manager gleichzeitig gestartet wird, müssen Sie, wenn Sie einen benutzerdefinierten Formular-Manager implementieren, alle Funktionen aus dem standardmäßigen Formular-Manager, den Sie benötigen, erneut implementieren. Da Ihr benutzerdefinierter Formular-Manager den standardmäßigen Formular-Manager vollständig ersetzen wird, sind die Funktionen des Standardformular-Managers nur dann verfügbar, wenn Sie in Ihrem benutzerdefinierten Formular-Manager dupliziert werden.
+Da möglicherweise nur ein Formular-Manager gleichzeitig ausgeführt wird, müssen Sie beim Implementieren eines benutzerdefinierten Formular-Managers alle benötigten Funktionen aus dem Standardformular-Manager neu implementieren. Da ihr benutzerdefinierter Formular-Manager den Standardformular-Manager vollständig ersetzt, stehen Funktionen des Standardformular-Managers nicht zur Verfügung, es sei denn, sie werden im benutzerdefinierten Formular-Manager dupliziert.
   
 ## <a name="see-also"></a>Siehe auch
 

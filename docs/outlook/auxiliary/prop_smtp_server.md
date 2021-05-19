@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33415705"
 ---
-# <a name="propsmtpserver"></a>PROP_SMTP_SERVER
+# <a name="prop_smtp_server"></a>PROP_SMTP_SERVER
 
 Stellt den Servernamen des SMTP-Kontos dar.
   
@@ -23,9 +23,9 @@ Stellt den Servernamen des SMTP-Kontos dar.
 |||
 |:-----|:-----|
 |Kennung:  <br/> |0x0200  <br/> |
-|Eigenschafts:  <br/> |PT_UNICODE  <br/> |
-|Property-Tag:  <br/> |0x0200001F  <br/> |
-|Access  <br/> |Schreibgeschützt  <br/> |
+|Eigenschaftstyp:  <br/> |PT_UNICODE  <br/> |
+|Eigenschaftstag:  <br/> |0x0200001F  <br/> |
+|Zugriff:  <br/> |Schreibgeschützt  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

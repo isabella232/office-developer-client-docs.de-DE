@@ -22,7 +22,7 @@ ms.locfileid: "33409447"
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Entfernt die **ExcelCursorProc** , die zuvor von **HookExcelWindow**installiert wurde. Dies wäre getan worden, damit **ExcelCursorProc** vor dem Haupt- **WndProc**von Microsoft Excel aufgerufen wurde.
+Entfernt **excelCursorProc,** das zuvor von **HookExcelWindow installiert wurde.** Dies wäre so erfolgt, dass **ExcelCursorProc** vor dem Microsoft Excel **WndProc aufgerufen wurde.**
   
 ```cs
 extern void FAR PASCAL UnhookExcelWindow(HANDLE hWndExcel);
@@ -30,21 +30,21 @@ extern void FAR PASCAL UnhookExcelWindow(HANDLE hWndExcel);
 
 ## <a name="parameters"></a>Parameter
 
- _hWndExcel_ (**Handle**)
+ _hWndExcel_ (**HANDLE**)
   
-Der Excel-Hauptfenster-handle.
+Das Excel-Windows-Handle.
   
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
 Die Funktion gibt keinen Wert zurück.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Diese Funktion stellt die Excel-Standard- **WndProc** mithilfe von **SetWindowLong ()** wieder her, um die von **HookExcelWindow ()** gespeicherte Adresse wiederherzustellen.
+Mit dieser Funktion wird die Excel **WndProc** mithilfe von **SetWindowLong()** wiederhergestellt, um die Adresse wiederherzustellen, die von **HookExcelWindow()** gespeichert wurde.
   
 ### <a name="example"></a>Beispiel
 
-Den `\SAMPLES\GENERIC\GENERIC.C` Quellcode für diese Funktion finden Sie unter. 
+Den  `\SAMPLES\GENERIC\GENERIC.C` Quellcode für diese Funktion finden Sie unter. 
   
 ## <a name="see-also"></a>Siehe auch
 

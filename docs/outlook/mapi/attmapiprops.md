@@ -21,40 +21,40 @@ ms.locfileid: "33410455"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Das **attMAPIProps** -Attribut ist insofern besonders, als dass es verwendet werden kann, um jede MAPI-Eigenschaft zu codieren, die kein Gegenstück zu den vorhandenen TNEF-definierten Attributen hat. Die Attributdaten sind ein gezählter Satz von MAPI-Eigenschaften, die End-to-End festgelegt wurden. Das Format dieser Codierung, das eine beliebige Gruppe von MAPI-Eigenschaften zulässt, lautet wie folgt:  
+Das **attMAPIProps-Attribut** ist besonders, da es zum Codieren einer beliebigen MAPI-Eigenschaft verwendet werden kann, die kein Gegenstück im Satz vorhandener TNEF-definierter Attribute hat. Bei den Attributdaten handelt es sich um einen gezählten Satz von MAPI-Eigenschaften, die ende-zu-Ende gelegt werden. Das Format dieser Codierung, das einen beliebigen Satz von MAPI-Eigenschaften zulässt, lautet wie folgt:  
   
  _Property_Seq:_
   
-> Eigenschaft-Count _Property_Value,..._
+> Eigenschaftsanzahl  _Property_Value,..._
     
-Es muss so viele _Property_Value_ -Elemente geben, wie der Wert der Eigenschafts Anzahl angibt. 
+Es muss so viele  _Property_Value_ wie der Eigenschaftsanzahlswert angibt. 
   
  _Property_Value:_
   
-> Property-Tag _Property_property- _Proptag_Name-Eigenschaft_
+> property-tag _Property_property-tag  _Proptag_Name Property_
     
-Das Property-Tag ist einfach der Wert, der dem Eigenschaftenbezeichner zugeordnet ist, beispielsweise 0x0037001F für **PR_Subject** ([PidTagSubject](pidtagsubject-canonical-property.md)).
+Das Property-Tag ist einfach der Wert, der dem Eigenschaftenbezeichner zugeordnet ist, z. B. 0x0037001F für **PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)).
   
- _Eigenschaft_
+ _Eigenschaft:_
   
->  __ Value-count-Wert _,..._
+>  _Value-Count_  _Value,..._
     
  _Wert:_
   
-> Wert-Data Value-size value-Data Padding Value-size value-IID Value-Data Padding
+> value-data value-size value-data padding value-size value-IID value-data padding
     
  _Proptag_Name:_
   
-> Name-GUID-Name-kindname-ID Name-GUID Name-Art Name-String-length Name-String Padding
+> name-guid name-kind name-id name-guid name-kind name-string-length name-string padding
     
-Die Kapselung der einzelnen Eigenschaften variiert basierend auf dem Eigenschaftenbezeichner und dem Eigenschaftentyp. Eigenschaftentags, Bezeichner und Typen werden in den Headerdateien Mapitags. h und Mapidefs. h definiert.
+Die Kapselung der einzelnen Eigenschaften variiert je nach Eigenschafts-ID und Eigenschaftstyp. Eigenschaftstags, Bezeichner und Typen werden in den Headerdateien Mapitags.h und Mapidefs.h definiert.
   
-Wenn es sich bei der Eigenschaft um eine benannte Eigenschaft handelt, folgt sofort der MAPI-Eigenschaften Name, bestehend aus einem global eindeutigen Bezeichner (GUID), einem Typ und einem Bezeichner oder einer Unicode-Zeichenfolge.
+Wenn es sich bei der Eigenschaft um eine benannte Eigenschaft handelt, folgt dem Eigenschaftstag sofort der Name der MAPI-Eigenschaft, der aus einer guiD (Globally Unique Identifier), einem Typ und einem Bezeichner oder einer Unicode-Zeichenfolge besteht.
   
-Mehrwertige Eigenschaften und Eigenschaften mit Variablen Längenwerten wie den PT_BINARY-, PT_STRING8-, PT_UNICODE-oder PT_OBJECT-Eigenschaftstypen werden folgendermaßen behandelt. Zuerst wird die Anzahl der Werte, die als 32-Bit unsigned long codiert wurden, im TNEF-Stream, gefolgt von den einzelnen Werten, angegeben. Die Wert Daten der einzelnen Eigenschaften werden als Größe in Bytes codiert, gefolgt von den Wert Daten selbst. Die Wertdaten werden zu einer 4-Byte-Grenze aufgefüllt, obwohl die Menge an Abstand nicht in der Wertgröße enthalten ist.
+Mehrwertige Eigenschaften und Eigenschaften mit Variablenlängenwerten, z. B. PT_BINARY-, PT_STRING8-, PT_UNICODE- oder PT_OBJECT-Eigenschaftstypen, werden wie folgt behandelt. Zunächst wird die Anzahl der Werte, die als 32-Bit-Long-Wert ohne Vorzeichen codiert sind, im TNEF-Stream platziert, gefolgt von den einzelnen Werten. Die Wertdaten jeder Eigenschaft werden als Größe in Bytes codiert, gefolgt von den Wertdaten selbst. Die Wertdaten werden auf eine 4-Byte-Grenze gepolstert, obwohl der Abstand nicht in der Größengröße enthalten ist.
   
-Wenn die Eigenschaft vom Typ PT_OBJECT ist, folgt die Wertgröße dem Schnittstellenbezeichner des Objekts. Die aktuelle Implementierung von TNEF unterstützt nur die IID_IMessage-, IID_IStorage-und IID_Istream-Schnittstellenbezeichner. Die Größe des Schnittstellen Bezeichners ist in der Wertgröße enthalten.
+Wenn die Eigenschaft vom Typ PT_OBJECT, folgt auf die Wertgröße der Schnittstellenbezeichner des Objekts. Die aktuelle Implementierung von TNEF unterstützt nur die IID_IMessage, IID_IStorage und IID_Istream Schnittstellenbezeichner. Die Größe der Schnittstellen-ID ist in der Wertgröße enthalten.
   
-Wenn es sich bei dem Objekt um eine eingebettete Nachricht handelt (also einen Eigenschaftentyp von PT_OBJECT und einen Schnittstellenbezeichner von IID_Imessage), werden die Wertdaten als eingebetteter TNEF-Stream codiert. Die tatsächliche Codierung einer eingebetteten Nachricht in der TNEF-Implementierung erfolgt durch Öffnen eines zweiten TNEF-Objekts für den ursprünglichen Stream und Inline Verarbeitung des Streams.
+Wenn es sich bei dem Objekt um eine eingebettete Nachricht handelt (d. h. es hat den Eigenschaftstyp PT_OBJECT und einen Schnittstellenbezeichner von IID_Imessage), werden die Wertdaten als eingebetteter TNEF-Stream codiert. Die tatsächliche Codierung einer eingebetteten Nachricht in der TNEF-Implementierung erfolgt durch Öffnen eines zweiten TNEF-Objekts für den ursprünglichen Datenstrom und Verarbeiten des Datenstroms inline.
   
 

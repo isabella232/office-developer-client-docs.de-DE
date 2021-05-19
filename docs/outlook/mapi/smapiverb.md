@@ -29,7 +29,7 @@ Beschreibt ein MAPI-Verb.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiform. h  <br/> |
+|Headerdatei  <br/> |Mapiform.h  <br/> |
    
 ```cpp
 typedef struct
@@ -43,19 +43,19 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **lVerb**
   
-> Code, der das Verb darstellt, das an IMAPIForm übergeben wird [::D overb](imapiform-doverb.md). Standard Verben werden in der Headerdatei Exchform. h definiert.
+> Code, der das Verb darstellt, das an [IMAPIForm::D oVerb übergeben wird.](imapiform-doverb.md) Standardverben werden in der Headerdatei Exchform.h definiert.
     
  **szVerbname**
   
-> Anzeigename des Verbs, wie er im Menü Formular angezeigt wird.
+> Anzeigename des Verbs, wie es im Formularmenü angezeigt wird.
     
  **fuFlags**
   
-> Kennzeichen für das Verb.
+> Flags für das Verb.
     
  **grfAttribs**
   
@@ -67,11 +67,11 @@ typedef struct
     
 MAPI_UNICODE 
   
-> Der Anzeigename ist im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, ist der Anzeigename im ANSI-Format.
+> Der Anzeigename ist im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befindet sich der Anzeigename im ANSI-Format.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **SMAPIVerb** -Struktur wird als Parameter in den folgenden Methoden übergeben: 
+Die **SMAPIVerb-Struktur** wird in den folgenden Methoden als Parameter übergeben: 
   
 - [IMAPIFormContainer::ResolveMultipleMessageClasses](imapiformcontainer-resolvemultiplemessageclasses.md)
     

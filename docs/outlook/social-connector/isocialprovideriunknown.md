@@ -19,28 +19,28 @@ ms.locfileid: "33409958"
 
 Stellt eine Instanz eines Outlook Social Connector (OSC)-Anbieters dar.
   
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
-In der folgenden Tabelle sind die Member aufgeführt, die auf der **ISocialProvider** -Schnittstelle verfügbar sind. 
+In der folgenden Tabelle sind die Elemente aufgeführt, die auf der **ISocialProvider-Schnittstelle verfügbar** sind. 
   
-|**Name**|**Mitgliedstyp**|**Beschreibung**|
+|**Name**|**Membertyp**|**Beschreibung**|
 |:-----|:-----|:-----|
 |[DefaultSiteUrls](isocialprovider-defaultsiteurls.md) <br/> |Eigenschaft  <br/> |Gibt ein Array von Zeichenfolgen zurück, die Website-URLs für den OSC-Anbieter angeben.  <br/> |
 |[GetAutoConfiguredSession](isocialprovider-getautoconfiguredsession.md) <br/> |Methode  <br/> |Ruft eine automatisch konfigurierte [ISocialSession](isocialsessioniunknown.md)-Schnittstelle ab.  <br/> |
-|[GetCapabilities](isocialprovider-getcapabilities.md) <br/> |Methode  <br/> |Ruft eine Zeichenfolge ab, die die Anbieter Funktionen beschreibt.  <br/> |
-|[GetSession "](isocialprovider-getsession.md) <br/> |Methode  <br/> |Ruft eine [ISocialSession](isocialsessioniunknown.md) -Schnittstelle ab.  <br/> |
+|[GetCapabilities](isocialprovider-getcapabilities.md) <br/> |Methode  <br/> |Ruft eine Zeichenfolge ab, die Anbieterfunktionen beschreibt.  <br/> |
+|[GetSession](isocialprovider-getsession.md) <br/> |Methode  <br/> |Ruft eine [ISocialSession-Schnittstelle](isocialsessioniunknown.md) ab.  <br/> |
 |[GetStatusSettings](isocialprovider-getstatussettings.md) <br/> |Methode  <br/> |Diese Methode wird derzeit nicht unterstützt.  <br/> |
 |[Load](isocialprovider-load.md) <br/> |Methode  <br/> |Initialisiert den OSC-Anbieter.  <br/> |
-|[SocialNetworkGuid](isocialprovider-socialnetworkguid.md) <br/> |Eigenschaft  <br/> |Gibt eine GUID, die einen eindeutigen Bezeichner für das soziale Netzwerk darstellt.  <br/> |
-|[SocialNetworkIcon](isocialprovider-socialnetworkicon.md) <br/> |Eigenschaft  <br/> |Gibt ein Bytearray zurück, das das Symbol für das soziale Netzwerk darstellt.  <br/> |
-|[SocialNetworkName](isocialprovider-socialnetworkname.md) <br/> |Eigenschaft  <br/> |Gibt eine Zeichenfolge, die den Namen des sozialen Netzwerks darstellt.  <br/> |
-|[Version](isocialprovider-version.md) <br/> |Eigenschaft  <br/> |Gibt eine Zeichenfolge, die die Versionsnummer des Anbieters für dieses soziale Netzwerk darstellt.  <br/> |
+|[SocialNetworkGuid](isocialprovider-socialnetworkguid.md) <br/> |Eigenschaft  <br/> |Gibt eine GUID zurück, die einen eindeutigen Bezeichner für das soziale Netzwerk darstellt.  <br/> |
+|[SocialNetworkIcon](isocialprovider-socialnetworkicon.md) <br/> |Eigenschaft  <br/> |Gibt ein Array von Bytes zurück, das das Symbol für das soziale Netzwerk darstellt.  <br/> |
+|[SocialNetworkName](isocialprovider-socialnetworkname.md) <br/> |Eigenschaft  <br/> |Gibt eine Zeichenfolge zurück, die den Namen des sozialen Netzwerks darstellt.  <br/> |
+|[Version](isocialprovider-version.md) <br/> |Eigenschaft  <br/> |Gibt eine Zeichenfolge zurück, die die Versionsnummer des Anbieters für dieses soziale Netzwerk darstellt.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Ein OSC-Anbieter muss diese Schnittstelle für die Kommunikation mit dem OSC implementieren.
+Ein OSC-Anbieter muss diese Schnittstelle implementieren, um mit dem OSC zu kommunizieren.
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Outlook Social Connector-Anbieterschnittstellen](outlook-social-connector-provider-interfaces.md)
+- [Outlook Social Connector Provider Interfaces](outlook-social-connector-provider-interfaces.md)
 

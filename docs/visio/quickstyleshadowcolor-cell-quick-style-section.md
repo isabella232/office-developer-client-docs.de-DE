@@ -1,12 +1,12 @@
 ---
-title: QuickStyleShadowColor Cell (Quick Style section)
+title: Zelle QuickStyleShadowColor (Abschnitt "Quick Style")
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 0a80959f-941f-451c-9049-dc661ff4930f
-description: Bestimmt die Design Farbe, die der Schatten eines Shapes verwendet, als ganze Zahl zwischen 0 und 7.
+description: Bestimmt, welche Designfarbe der Schatten eines Shapes als ganze Zahl von 0 bis 7 verwendet.
 ms.openlocfilehash: b623eee89d214bade2706b12fcb344eccd8814b8
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -14,35 +14,35 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33414956"
 ---
-# <a name="quickstyleshadowcolor-cell-quick-style-section"></a>QuickStyleShadowColor Cell (Quick Style section)
+# <a name="quickstyleshadowcolor-cell-quick-style-section"></a>Zelle QuickStyleShadowColor (Abschnitt "Quick Style")
 
-Bestimmt die Design Farbe, die der Schatten eines Shapes verwendet, als ganze Zahl zwischen 0 und 7.
+Bestimmt, welche Designfarbe der Schatten eines Shapes als ganze Zahl von 0 bis 7 verwendet.
   
 |||
 |:-----|:-----|
 |Wert  <br/> |Beschreibung  <br/> |
-|0  <br/> |Die Form Schattenfarbe erbt von der dunklen Design Farbe.  <br/> |
-|1  <br/> |Die Form Schattenfarbe erbt von der Farbe des hellen Designs.  <br/> |
-|2  <br/> |Die Form Schattenfarbe erbt von der Design Farbe Akzent 1.  <br/> |
-|3  <br/> |Die Schattenfarbe des Shapes erbt von der Design Farbe Akzent 2.  <br/> |
-|4  <br/> |Die Schattenfarbe des Shapes erbt von der Design Farbe Akzent 3.  <br/> |
-|5  <br/> |Die Schattenfarbe des Shapes erbt von der Design Farbe Akzent 4.  <br/> |
-|6  <br/> |Die Schattenfarbe des Shapes erbt von der Design Farbe Akzent 5.  <br/> |
-|7  <br/> |Die Schattenfarbe des Shapes erbt von der Design Farbe Akzent 6.  <br/> |
+|0  <br/> |Die Schattenfarbe der Form erbt von der Dunklen Designfarbe.  <br/> |
+|1  <br/> |Die Schattenfarbe der Form erbt von der Farbe des Light-Designs.  <br/> |
+|2  <br/> |Die Schattenfarbe der Form erbt von der Designfarbe Akzent 1.  <br/> |
+|3  <br/> |Die Schattenfarbe der Form erbt von der Akzent 2-Designfarbe.  <br/> |
+|4   <br/> |Die Schattenfarbe der Form erbt von der Akzent 3-Designfarbe.  <br/> |
+|5   <br/> |Die Schattenfarbe der Form erbt von der Akzent 4-Designfarbe.  <br/> |
+|6   <br/> |Die Schattenfarbe der Form erbt von der Akzent 5-Designfarbe.  <br/> |
+|7   <br/> |Die Schattenfarbe der Form erbt von der Akzent 6-Designfarbe.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle **QuickStyleShadowColor** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie folgendes, um einen Verweis auf die **QuickStyleShadowColor-Zelle** anhand des Namens aus einer anderen Formel, nach dem Wert des **N-Attributs** eines **Cell-Elements** oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | QuickStyleShadowColor  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle **QuickStyleShadowColor** aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die **QuickStyleShadowColor-Zelle** nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowQuickStyleProperties** <br/> |
 | Zellenindex:  <br/> |**visQuickStyleShadowColor** <br/> |
    

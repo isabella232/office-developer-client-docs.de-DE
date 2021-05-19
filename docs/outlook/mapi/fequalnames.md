@@ -25,13 +25,13 @@ ms.locfileid: "33414802"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bestimmt, ob zwei MAPI-benannte Eigenschaften identisch sind. 
+Bestimmt, ob zwei benannte MAPI-Eigenschaften identisch sind. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 BOOL FEqualNames(
@@ -44,26 +44,26 @@ BOOL FEqualNames(
 
  _lpName1_
   
-> in Zeiger auf eine [MAPINAMEID](mapinameid.md) -Struktur, die die erste benannte Eigenschaft beschreibt. 
+> [in] Zeiger auf eine [MAPINAMEID-Struktur,](mapinameid.md) die die erste benannte Eigenschaft beschreibt. 
     
  _lpName2_
   
-> in Zeiger auf eine **MAPINAMEID** -Struktur, die die zweite benannte Eigenschaft beschreibt. 
+> [in] Zeiger auf eine **MAPINAMEID-Struktur,** die die zweite benannte Eigenschaft beschreibt. 
     
 ## <a name="return-value"></a>Rückgabewert
 
 TRUE 
   
-> Die beiden Eigenschaftennamen sind gleich. 
+> Die beiden Eigenschaftsnamen sind gleich. 
     
 FALSE 
   
-> Die beiden Eigenschaftennamen sind ungleich.
+> Die beiden Eigenschaftennamen sind nicht gleich.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **FEqualNames** -Funktion ist nützlich, da die **MAPINAMEID** -Struktur eine [GUID](guid.md) enthält und den Eigenschaftennamen selbst auf mehrere Weise darstellen kann. Dies führt dazu, dass die beiden Strukturen nicht mit einfachen binären Methoden verglichen werden können. 
+Die **FEqualNames-Funktion** ist nützlich, da die **MAPINAMEID-Struktur** eine [GUID enthält](guid.md) und den Eigenschaftennamen selbst auf mehrere Weise darstellen kann. Dies bedeutet, dass die beiden Strukturen nicht mit einfachen binären Methoden verglichen werden können. 
   
-Bei dem Testvorgang wird die Groß-/Kleinschreibung für die Eigenschaftennamen Zeichenfolgen beachtet. 
+Bei den Zeichenfolgen für den Eigenschaftennamen wird bei der Testphase die Zwischenschreibung beachtet. 
   
 

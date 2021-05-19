@@ -1,5 +1,5 @@
 ---
-title: Arbeiten mit umfangreichen Spalten
+title: Arbeiten mit großen Spalten
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,17 +15,17 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33420423"
 ---
-# <a name="working-with-large-columns"></a>Arbeiten mit umfangreichen Spalten
+# <a name="working-with-large-columns"></a>Arbeiten mit großen Spalten
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Spalten mit String-oder Binary-Eigenschaftendaten können große, möglicherweise viele Tausende von Bytes lang sein. Da das Einschließen einer oder mehrerer Spalten mit Hunderten von Bytes in einer Ansicht oft nicht praktikabel ist, ermöglicht MAPI den Tabellen Implementierer das Abschneiden des Werts, meistens auf 255 Byte und weniger oft auf 510 Byte. Wenn möglich, sollten Tabellen Implementierer den vollständigen Wert einer Eigenschaft in eine Tabellenspalte aufnehmen. Die empfohlene Alternative besteht darin, nur die ersten 255 Bytes einzuschließen.
+Spalten mit Zeichenfolgen- oder binären Eigenschaftsdaten können groß sein, möglicherweise viele Tausend Byte lang. Da das Hinzufügen einer oder mehreren Spalten mit Hunderten von Bytes in einer Ansicht häufig nicht praktikabel ist, ermöglicht MAPI Tabellen implementierern, den Wert zu kürzen, meist auf 255 Byte und seltener auf 510 Byte. Nach Möglichkeit sollten Tabellen implementierer den vollständigen Wert einer Eigenschaft in einer Tabellenspalte enthalten. Die empfohlene Alternative ist, nur die ersten 255 Byte zu enthalten.
   
-Clients können nicht vorab wissen, ob eine von Ihnen verwendete Tabelle umfangreiche Spalten abschneidet. Sie sollten davon ausgehen, dass eine Spalte eine abgeschnittene Eigenschaft darstellt, wenn die Länge der Spalte 255 oder 510 Byte beträgt. Bei Bedarf können Clients den vollständigen Wert einer abgeschnittenen Spalte direkt aus dem Objekt abrufen, indem Sie die [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode des Objekts aufrufen. 
+Clients können nicht im Voraus wissen, ob eine tabelle, die sie verwenden, große Spalten abkürzt. Sie sollten davon ausgehen, dass eine Spalte eine abgeschnittene Eigenschaft darstellt, wenn die Länge der Spalte entweder 255 oder 510 Byte beträgt. Bei Bedarf können Clients den vollständigen Wert einer abgeschnittenen Spalte direkt aus dem Objekt abrufen, indem sie die [IMAPIProp::GetProps-Methode des](imapiprop-getprops.md) Objekts aufrufen. 
   
-Bei Clients, die Einschränkungen mit umfangreichen Eigenschaften erstellen, sollten Sie sich darüber im klaren sein, dass es der Tabellen Implementierung entspricht, wie diese Einschränkungen funktionieren. Einige Tabellen Implementierer lassen Einschränkungen, die mit einer abgeschnittenen Spalte erstellt werden, auf der abgeschnittenen Größe basieren, während andere Sie auf den gesamten Wert stützen. 
+Clients, die Einschränkungen mit großen Eigenschaften erstellen, sollten beachten, dass es dem Tabellen implementier ob liegt, wie diese Einschränkungen funktionieren. Einige Tabellen implementierer ermöglichen, dass Einschränkungen, die mit einer abgeschnittenen Spalte erstellt werden, auf der abgeschnittenen Größe basieren, während andere sie auf dem gesamten Wert basieren. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -21,20 +21,20 @@ ms.locfileid: "33415355"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die [IABLogon:: CompareEntryIDs](iablogon-compareentryids.md) -Implementierung des Anbieters vergleicht die Eintrags-IDs für zwei Objekte des Anbieters. MAPI ruft diese Methode auf, nachdem festgestellt wurde, dass die beiden Eintragsbezeichner die registrierte [MAPIUID](mapiuid.md)Ihres Anbieters enthalten. Daher muss Ihre **CompareEntryIDs** -Methode nicht überprüfen, ob die Eintrags-IDs, die für die Parameter _lpEntryID1_ und _lpEntryID2_ übergeben wurden, zu Ihrem Anbieter gehören. 
+Die [IABLogon::CompareEntryIDs-Implementierung](iablogon-compareentryids.md) Ihres Anbieters vergleicht die Eintragsbezeichner für zwei Objekte Ihres Anbieters. MAPI ruft diese Methode auf, nachdem sie ermittelt haben, dass die beiden Eintragsbezeichner die registrierte [MAPIUID Ihres Anbieters enthalten.](mapiuid.md) Daher muss die **CompareEntryIDs-Methode** nicht überprüfen, ob die eintragsbezeichner, die für die  _Parameter lpEntryID1_ und  _lpEntryID2_ übergeben werden, zu Ihrem Anbieter gehören. 
   
-Das Aufrufen von **IABLogon:: CompareEntryIDs** entspricht dem Abrufen der **PR_RECORD_KEY** ([pidtagrecordkey (](pidtagrecordkey-canonical-property.md))-Eigenschaft für jedes der beiden Objekte und dem direkten Vergleich.
+Das **Aufrufen von IABLogon::CompareEntryIDs** entspricht dem Abrufen der **PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md))-Eigenschaft für jedes der beiden Objekte und dem direkten Vergleich.
   
  **So implementieren Sie CompareEntryIds**
   
-1. Überprüfen Sie den Typ der Eintrags-IDs, die übergeben werden, wenn Ihr Anbieter diese Informationen speichert. Beispielsweise kann ein Eintragsbezeichner zu einem Messagingbenutzer gehören, während der andere zu einer Verteilerliste gehören kann. Wenn die Typen nicht übereinstimmen, legen Sie den Inhalt des _lpulResult_ -Parameters auf false und Return zurück. 
+1. Überprüfen Sie den Typ der übergebenen Eintragsbezeichner, wenn der Anbieter diese Informationen speichert. Beispielsweise kann eine Eintrags-ID zu einem Messagingbenutzer gehören, während der andere zu einer Verteilerliste gehört. Wenn die Typen nicht übereinstimmen, legen Sie den Inhalt des  _lpulResult-Parameters_ auf FALSE ein, und geben Sie zurück. 
     
-2. Vergleichen Sie die Größen der beiden Eintragsbezeichner. Wenn Sie nicht identisch sind, legen Sie den Inhalt des _lpulResult_ -Parameters auf false und Return zurück. 
+2. Vergleichen Sie die Größen der beiden Eintragsbezeichner. Wenn sie nicht identisch sind, legen Sie den Inhalt des  _lpulResult-Parameters_ auf FALSE ein, und geben Sie zurück. 
     
-3. Stellen Sie sicher, dass die Größe der Eintragsbezeichner die richtige Größe für Ihren Typ ist. Wenn dies nicht der Fall ist, legen Sie den Inhalt des _lpulResult_ -Parameters auf false fest, und geben Sie den Fehlerwert MAPI_E_UNKNOWN_ENTRYID. 
+3. Überprüfen Sie, ob die Größe der Eintragsbezeichner die richtige Größe für ihren Typ ist. Wenn nicht, legen Sie den Inhalt des  _lpulResult-Parameters_ auf FALSE ein, und geben Sie den Fehlerwert MAPI_E_UNKNOWN_ENTRYID. 
     
-4. Überprüfen Sie, ob die Eintragsbezeichner identisch sind. Wenn Sie gleichmäßig vergleichen, legen Sie den Inhalt des _lpulResult_ -Parameters auf true fest, und geben Sie zurück. Andernfalls legen Sie ihn auf FALSE fest, bevor Sie zurückkehren. 
+4. Überprüfen Sie, ob die Eintragsbezeichner identisch sind. Wenn sie gleich vergleichen, legen Sie den Inhalt des  _lpulResult-Parameters_ auf TRUE und zurückgeben. Legen Sie andernfalls den Wert auf FALSE, bevor Sie ihn zurückgeben. 
     
-5. Wenn Ihr Anbieter eine kurzfristige Eintrags-ID mit einem langfristigen Bezeichner vergleicht, sollten Sie gleichmäßig vergleichen.
+5. Wenn Ihr Anbieter einen kurzfristigen Eintragsbezeichner mit einem langfristigen Bezeichner vergleicht, sollte er den gleichen Vergleich haben.
     
 

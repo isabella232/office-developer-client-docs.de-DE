@@ -20,17 +20,17 @@ ms.locfileid: "33415362"
 
 Gibt die Formatierung eines Shape-Datenelements an, bei dem es sich um eine Zeichenfolge, eine feste Liste, eine Zahl, eine variable Liste, ein Datum oder eine Uhrzeit, eine Zeitdauer oder eine Währung handeln kann.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 |**Shape-Datenelementtyp**|**Wert**|**Inhalt der Zelle "Format"**|
 |:-----|:-----|:-----|
 | String  <br/> | 0  <br/> | Eine dem Datentyp entsprechende Formatierungsangabe.  <br/> |
 | Feste Liste  <br/> | 1  <br/> | Die Elemente, die durch Semikolon getrennt in der Liste angezeigt werden sollen.  <br/> |
-| Zahl  <br/> | 2  <br/> | Eine dem Datentyp entsprechende Formatierungsangabe.  <br/> |
-| Variable Liste  <br/> | 4  <br/> | Die Elemente, die durch Semikolon getrennt in der Liste angezeigt werden sollen.  <br/> |
-| Datum oder Uhrzeit  <br/> | 5  <br/> | Eine dem Datentyp entsprechende Formatierungsangabe.  <br/> |
-| Dauer  <br/> | 6  <br/> | Eine dem Datentyp entsprechende Formatierungsangabe.  <br/> |
-| Währung  <br/> | 7  <br/> | Eine dem Datentyp entsprechende Formatierungsangabe.  <br/> |
+| Nummer  <br/> | 2  <br/> | Eine dem Datentyp entsprechende Formatierungsangabe.  <br/> |
+| Variable Liste  <br/> | 4   <br/> | Die Elemente, die durch Semikolon getrennt in der Liste angezeigt werden sollen.  <br/> |
+| Datum oder Uhrzeit  <br/> | 5   <br/> | Eine dem Datentyp entsprechende Formatierungsangabe.  <br/> |
+| Dauer  <br/> | 6   <br/> | Eine dem Datentyp entsprechende Formatierungsangabe.  <br/> |
+| Währung  <br/> | 7   <br/> | Eine dem Datentyp entsprechende Formatierungsangabe.  <br/> |
    
 Als Beispiel für das Festlegen einer dem Datentyp entsprechenden Formatierungsangabe wird mit der Formatierungsangabe "# #/4 UU" die Zahl 12,43 in. als 12 2/4 ZOLL formatiert. Weitere Informationen zum Festlegen von Formatierungsangaben finden Sie unter [Informationen zu Formatierungsangaben](about-format-pictures.md).
   
@@ -40,18 +40,18 @@ Datumswerte (Typ = 5) werden im kurzen Datumsformat angezeigt. Währungswerte (T
   
 Eine Zahl (Typ = 2) kann einen Bemaßungs-, Skalar-, Winkel-, Datums-, Zeit- oder Währungswert darstellen. Wenn Sie sicherstellen möchten, dass eine eingegebene Zahl immer als Datum, Uhrzeit oder Währung ausgewertet wird, verwenden Sie anstelle einer Formatierungsangabe die Funktionen DATETIME oder CY in der Zelle Format.
   
-Wenn Sie einen Verweis auf die Zelle Format aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle Format anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Prop.  *Name* . Format, in dem Prop.  *Name* ist der Name der Zeile  <br/> |
+| Zellenname:  <br/> | Prop.  *Name*  . Formatieren, in dem Prop.  *Name*  ist der Zeilenname  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Format aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle Format nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionProp** <br/> |
-| Zeilenindex:  <br/> |**visRowProp** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowProp**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
 | Zeilenindex:  <br/> |**visCustPropsFormat** <br/> |
    
 

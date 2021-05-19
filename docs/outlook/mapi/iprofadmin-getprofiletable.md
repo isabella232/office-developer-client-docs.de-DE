@@ -25,7 +25,7 @@ ms.locfileid: "33414645"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ermöglicht den Zugriff auf die Profiltabelle, eine Tabelle, die Informationen zu allen verfügbaren Profilen enthält.
+Bietet Zugriff auf die Profiltabelle, eine Tabelle, die Informationen zu allen verfügbaren Profilen enthält.
   
 ```cpp
 HRESULT GetProfileTable(
@@ -38,11 +38,11 @@ HRESULT GetProfileTable(
 
  _ulFlags_
   
-> in Immer NULL.
+> [in] Immer NULL.
     
  _lppTable_
   
-> Out Ein Zeiger auf einen Zeiger auf die Profiltabelle.
+> [out] Ein Zeiger auf einen Zeiger auf die Profiltabelle.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -50,15 +50,15 @@ S_OK
   
 > Die Profiltabelle wurde erfolgreich abgerufen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IProfAdmin::** getprofilable-Methode ermöglicht den Zugriff auf die Profiltabelle, die eine Zeile für jedes verfügbare Profil enthält. Es gibt nur zwei Spalten in jeder Zeile: der Anzeigename des Profils und ein Flag, das angibt, ob das Profil der Standardwert ist. 
+Die **IProfAdmin::GetProfileTable-Methode** bietet Zugriff auf die Profiltabelle, die für jedes verfügbare Profil eine Zeile enthält. Jede Zeile enthält nur zwei Spalten: den Anzeigenamen des Profils und ein Flag, das angibt, ob das Profil der Standard ist. 
   
-Profile, die gelöscht wurden oder verwendet werden, aber zum Löschen markiert wurden, sind nicht in der Profiltabelle enthalten. Die Profiltabelle ist statisch; nachfolgende Ergänzungen und Löschungen von Profilen werden in der Tabelle nicht wiedergegeben. 
+Profile, die gelöscht wurden oder verwendet werden, aber zum Löschen markiert wurden, sind nicht in der Profiltabelle enthalten. Die Profiltabelle ist statisch. Nachfolgende Ergänzungen und Löschungen von Profilen werden nicht in der Tabelle widerspiegelt. 
   
-Wenn keine Profile vorhanden sind **** , gibt getprofilable eine Tabelle mit null Zeilen zurück. 
+Wenn keine Profile vorhanden sind, **gibt GetProfileTable** eine Tabelle mit null Zeilen zurück. 
   
-Weitere Informationen zur Profiltabelle finden Sie unter [profile](profile-tables.md)Tables. 
+Weitere Informationen zur Profiltabelle finden Sie unter [Profile Tables](profile-tables.md). 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -66,7 +66,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MainDlg. cpp  <br/> |CMainDlg:: OnShowProfiles  <br/> |MFCMAPI verwendet die **IProfAdmin::** getprofilable-Methode, um die Profiltabelle abzurufen, die in einem neuen Dialogfeld angezeigt werden soll.  <br/> |
+|MainDlg.cpp  <br/> |CMainDlg::OnShowProfiles  <br/> |MFCMAPI verwendet die **IProfAdmin::GetProfileTable-Methode,** um die Profiltabelle in einem neuen Dialogfeld anzuzeigen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

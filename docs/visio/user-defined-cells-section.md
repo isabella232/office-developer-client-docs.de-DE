@@ -20,11 +20,11 @@ ms.locfileid: "33405576"
 
 Eine Arbeitsumgebung für die Eingabe von Formeln in benutzerspezifische Zellen, auf die von anderen Zellen und Add-On-Tools verwiesen werden kann.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wie der Abschnitt [Scratch](scratch-section.md) kann der Abschnitt **benutzerdefinierte Zellen** von der Lösung auf viele verschiedene Arten verwendet werden. Der Vorteil des Abschnitts **benutzerdefinierte Zellen** besteht darin, dass Zellen benannt werden können; Zellen im Abschnitt **Scratch** können nicht benannt werden. 
+Wie im [Abschnitt Scratch](scratch-section.md) kann der Abschnitt **Benutzerdefinierte** Zellen von Ihrer Lösung auf unterschiedliche Weise verwendet werden. Der Vorteil des **Abschnitts Benutzerdefinierte Zellen** ist, dass Zellen benannt werden können. Zellen im **Abschnitt Scratch** können nicht benannt werden. 
   
-Wenn Ihre Lösung einen genau definierten Zweck hat, empfiehlt es sich, die Zellen im Abschnitt **benutzerdefinierte Zellen** zur Veranschaulichung zu verwenden, da Benutzer Zellen benannt werden können. Der Abschnitt **Scratch** wird in der Regel verwendet, um wiederholte komplexe Berechnungen zu isolieren. 
+Wenn Ihre Lösung einen genau definierten Zweck hat,  wird empfohlen, Zellen im Abschnitt Benutzerdefinierte Zellen zu verwenden, um Klarheit zu schaffen, da Benutzerzellen benannt werden können. Der **Abschnitt Scratch** wird in der Regel verwendet, um wiederholte komplexe Berechnungen zu isolieren. 
   
 Wenn Sie diesen Abschnitt hinzufügen möchten, verwenden Sie das Dialogfeld **Abschnitt einfügen** (klicken Sie dazu mit der rechten Maustaste in das ShapeSheet-Fenster, und klicken Sie auf **Abschnitt einfügen**).
   

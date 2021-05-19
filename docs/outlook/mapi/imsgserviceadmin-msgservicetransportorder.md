@@ -25,7 +25,7 @@ ms.locfileid: "33420094"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Legt die Reihenfolge fest, in der Transportanbieter aufgerufen werden, um eine Nachricht zu übermitteln.
+Legt die Reihenfolge fest, in der Transportanbieter aufgerufen werden, um eine Nachricht zu senden.
   
 ```cpp
 HRESULT MsgServiceTransportOrder(
@@ -39,11 +39,11 @@ HRESULT MsgServiceTransportOrder(
 
  _cUID_
   
-> in Die Anzahl der eindeutigen Bezeichner im _lpUIDList_ -Parameter. 
+> [in] Die Anzahl eindeutiger Bezeichner im _lpUIDList-Parameter._ 
     
  _lpUIDList_
   
-> in Ein Zeiger auf ein Array von eindeutigen Bezeichnern, die Transportanbieter darstellen. Das Array enthält einen Bezeichner für jeden Transportanbieter, der im aktuellen Profil konfiguriert ist.
+> [in] Ein Zeiger auf ein Array eindeutiger Bezeichner, die Transportanbieter darstellen. Das Array enthält einen Bezeichner für jeden Transportanbieter, der im aktuellen Profil konfiguriert ist.
     
  _ulFlags_
   
@@ -57,17 +57,17 @@ S_OK
     
 MAPI_E_BUSY 
   
-> Der Wert im Parameter _cUID_ unterscheidet sich von der Anzahl der Transportanbieter tatsächlich im Profil. 
+> Der Wert im  _cUID-Parameter_ unterscheidet sich von der Anzahl der Tatsächlichen Transportanbieter im Profil. 
     
 MAPI_E_NOT_FOUND 
   
-> Mindestens eine der [MAPIUID](mapiuid.md) -Strukturen, die im _lpUIDList_ -Parameter übergeben werden, beziehen sich nicht auf einen Transportanbieter, der sich derzeit im Profil befindet. 
+> Mindestens eine der im _lpUIDList-Parameter übergebenen MAPIUID-Strukturen_ bezieht sich nicht auf einen Transportanbieter, der sich derzeit im Profil befindet. [](mapiuid.md) 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMsgServiceAdmin:: MsgServiceTransportOrder** -Methode legt die Übermittlungsreihenfolge der Transportanbieter in einem Profil fest. Der _lpUIDList_ -Parameter muss eine sortierte Liste der Transportanbieter-Eintrags-IDs enthalten, die von der **PR_PROVIDER_UID** ([pidtagprovideruid (](pidtagprovideruid-canonical-property.md))-Eigenschaft der Tabelle abgerufen werden, die von der IMsgServiceAdmin zurückgegeben wird [: ](imsgserviceadmin-getprovidertable.md)Getproviderable-Methode. Eine Clientanwendung muss die vollständige Liste in _lpUIDList_.
+Die **IMsgServiceAdmin::MsgServiceTransportOrder-Methode** legt die Zustellungsreihenfolge von Transportanbietern in einem Profil fest. Der  _lpUIDList-Parameter_ muss eine sortierte Liste der Transportanbieter-Eintragsbezeichner **enthalten,** die von der PR_PROVIDER_UID ([PidTagProviderUid](pidtagprovideruid-canonical-property.md))-Eigenschaft der Von der [IMsgServiceAdmin::GetProviderTable-Methode zurückgegebenen](imsgserviceadmin-getprovidertable.md) Tabelle erhalten werden. Eine Clientanwendung muss die vollständige Liste in _lpUIDList übergeben._
   
- **SetTransportOrder** überschreibt Transportanbieter Einstellungen wie das STATUS_XP_PREFER_LAST-Flag, das in der **PR_RESOURCE_FLAGS** ([pidtagresourceflags (](pidtagresourceflags-canonical-property.md))-Eigenschaft festgelegt ist. 
+ **SetTransportOrder** überschreibt Transportanbietereinstellungen, z. B. das STATUS_XP_PREFER_LAST, das in der **eigenschaft PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) festgelegt ist. 
   
 ## <a name="see-also"></a>Siehe auch
 

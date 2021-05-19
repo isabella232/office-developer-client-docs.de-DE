@@ -1,5 +1,5 @@
 ---
-title: AufZählungen (OneNote-Entwicklerreferenz)
+title: Enumerationen (OneNote Entwicklerreferenz)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -14,11 +14,11 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33410336"
 ---
-# <a name="enumerations-onenote-developer-reference"></a>AufZählungen (OneNote-Entwicklerreferenz)
+# <a name="enumerations-onenote-developer-reference"></a>Enumerationen (OneNote Entwicklerreferenz)
 
 This topic describes the enumerations in the OneNote 2013 object model.
   
-## <a name="createfiletype"></a>CreateFiletype
+## <a name="createfiletype"></a>CreateFileType
 <a name="odc_CreateFileType"> </a>
 
 When passed to the **OpenHierarchy** method, specifies the type of object to create, if any, if the path passed to the method does not yet exist. 
@@ -41,7 +41,7 @@ Indicates the docked location of a OneNote 2013 window by using the [Window](win
 |**dlLeft** <br/> |1  <br/> |The OneNote window is docked on the left side of the desktop.  <br/> |
 |**dlRight** <br/> |2  <br/> |The OneNote window is docked on the right side of the desktop.  <br/> |
 |**dlTop** <br/> |3  <br/> |The OneNote window is docked at the top of the desktop.  <br/> |
-|**dlBottom** <br/> |4  <br/> |The OneNote window is docked at the bottom of the desktop.  <br/> |
+|**dlBottom** <br/> |4   <br/> |The OneNote window is docked at the bottom of the desktop.  <br/> |
    
 ## <a name="filinglocation"></a>FilingLocation
 <a name="odc_CreateFileType"> </a>
@@ -54,8 +54,8 @@ When passed to the **SetFilingLocation** method, specifies what type of content 
 |**flContacts** <br/> |1  <br/> |Sets where Outlook contacts will be filed.  <br/> |
 |**flTasks** <br/> |2  <br/> |Sets where Outlook tasks will be filed.  <br/> |
 |**flMeetings** <br/> |3  <br/> |Sets where Outlook meetings will be filed.  <br/> |
-|**flWebContent** <br/> |4  <br/> |Sets where Internet Explorer contents will be filed.  <br/> |
-|**flPrintOuts** <br/> |5  <br/> |Sets where printouts from the OneNote printer will be filed.  <br/> |
+|**flWebContent** <br/> |4   <br/> |Sets where Internet Explorer contents will be filed.  <br/> |
+|**flPrintOuts** <br/> |5   <br/> |Sets where printouts from the OneNote printer will be filed.  <br/> |
    
 ## <a name="filinglocationtype"></a>FilingLocationType
 <a name="odc_CreateFileType"> </a>
@@ -67,7 +67,7 @@ When passed to the **SetFilingLocation** method, specifies where content that is
 |**fltNamedSectionNewPage** <br/> |0  <br/> |Sets content to be filed on a new page in a specified section.  <br/> |
 |**fltCurrentSectionNewPage** <br/> |1  <br/> |Sets content to be filed on a new page in the current section.  <br/> |
 |**fltCurrentPage** <br/> |2  <br/> |Sets content to be filed on the current page.  <br/> |
-|**fltNamedPage** <br/> |4  <br/> |Sets content to be filed on a specified page.  <br/> |
+|**fltNamedPage** <br/> |4   <br/> |Sets content to be filed on a specified page.  <br/> |
    
 ## <a name="hierarchyelement"></a>HierarchyElement
 <a name="odc_CreateFileType"> </a>
@@ -79,8 +79,8 @@ When assigned to the **TreeDepth** property of the [IQuickFilingDialog](quick-fi
 |**heNone** <br/> |0  <br/> |Refers to no element.  <br/> |
 |**heNotebooks** <br/> |1  <br/> |Refers to the Notebook elements.  <br/> |
 |**heSectionGroups** <br/> |2  <br/> |Refers to the Section Group elements.  <br/> |
-|**heSections** <br/> |4  <br/> |Refers to the Section elements.  <br/> |
-|**hePages** <br/> |8  <br/> |Refers to the Page elements.  <br/> |
+|**heSections** <br/> |4   <br/> |Refers to the Section elements.  <br/> |
+|**hePages** <br/> |8   <br/> |Refers to the Page elements.  <br/> |
    
 ## <a name="hierarchyscope"></a>HierarchyScope
 <a name="odc_HierarchyScope"> </a>
@@ -93,9 +93,9 @@ When passed to the **GetHierarchy** method, specifies the lowest level to get in
 |**hsChildren** <br/> |1  <br/> |Gets the immediate child nodes of the start node, and no descendants in higher or lower subsection groups.  <br/> |
 |**hsNotebooks** <br/> |2  <br/> |Gets all notebooks below the start node, or root.  <br/> |
 |**hsSections** <br/> |3  <br/> |Gets all sections below the start node, including sections in section groups and subsection groups.  <br/> |
-|**hsPages** <br/> |4  <br/> |Gets all pages below the start node, including all pages in section groups and subsection groups.  <br/> |
+|**hsPages** <br/> |4   <br/> |Gets all pages below the start node, including all pages in section groups and subsection groups.  <br/> |
    
-## <a name="newpagestyle"></a>NeuPagestyle
+## <a name="newpagestyle"></a>NewPageStyle
 <a name="odc_HierarchyScope"> </a>
 
 When passed to the **CreateNewPage** method, specifies the style of the new page. 
@@ -115,8 +115,8 @@ When passed to the **NotebookFilterOut** method of the **QFD** object, specifies
 |:-----|:-----|:-----|
 |**nfoLocal** <br/> |1  <br/> |Allow only Local Notebooks.  <br/> |
 |**nfoNetwork** <br/> |2  <br/> |Allows UNC or SharePoint Notebooks.  <br/> |
-|**nfoWeb** <br/> |4  <br/> |Allows OneDrive notebooks.  <br/> |
-|**nfoNoWacUrl** <br/> |8  <br/> |Any notebooks in locations that do not have a web client.  <br/> |
+|**nfoWeb** <br/> |4   <br/> |Allows OneDrive notebooks.  <br/> |
+|**nfoNoWacUrl** <br/> |8   <br/> |Any notebooks in locations that do not have a web client.  <br/> |
    
 ## <a name="pageinfo-updated-for-onenote-2013"></a>PageInfo (Updated for OneNote 2013)
 <a name="odc_PageInfo"> </a>
@@ -129,10 +129,10 @@ When passed to the **GetPageContent** method, specifies the type of information 
 |**piBinaryData** <br/> |1  <br/> |Returns page content with no selection markup, but with all binary data.  <br/> |
 |**piSelection** <br/> |2  <br/> |Returns page content with selection markup, but no binary data.  <br/> |
 |**piBinaryDataSelection** <br/> |3  <br/> |Returns page content with selection markup and all binary data.  <br/> |
-|**piFileType** <br/> |4  <br/> |Returns page content with file type info for binary data objects.  <br/> |
-|**piBinaryDataFileType** <br/> |5  <br/> |Returns page content with file type info for binary data objects and binary data objects  <br/> |
-|**piSelectionFileType** <br/> |6  <br/> |Returns page content with selection markup and file type info for binary data.  <br/> |
-|**piAll** <br/> |7  <br/> |Returns all page content.  <br/> |
+|**piFileType** <br/> |4   <br/> |Returns page content with file type info for binary data objects.  <br/> |
+|**piBinaryDataFileType** <br/> |5   <br/> |Returns page content with file type info for binary data objects and binary data objects  <br/> |
+|**piSelectionFileType** <br/> |6   <br/> |Returns page content with selection markup and file type info for binary data.  <br/> |
+|**piAll** <br/> |7   <br/> |Returns all page content.  <br/> |
    
 ## <a name="publishformat"></a>PublishFormat
 <a name="odc_PublishFormat"> </a>
@@ -145,11 +145,11 @@ When passed to the **Publish** method, specifies the format in which the publish
 |**pfOneNotePackage** <br/> |1  <br/> |Published page is in the .onepkg format.  <br/> |
 |**pfMHTML** <br/> |2  <br/> |Published page is in the .mht format.  <br/> |
 |**pfPDF** <br/> |3  <br/> |Published page is in the .pdf format.  <br/> |
-|**pfXPS** <br/> |4  <br/> |Published page is in the .xps format.  <br/> |
-|**pfWord** <br/> |5  <br/> |Published page is in the .doc or .docx format.  <br/> |
-|**pfEMF** <br/> |6  <br/> |Published page is in the enhanced metafile (.emf) format.  <br/> |
-|**pfHTML** <br/> |7  <br/> |Published page is in the .html format. This member is new in OneNote 2013.  <br/> |
-|**pfOneNote2007** <br/> |8  <br/> |Published page is in the 2007 .one format. This member is new in OneNote 2013.  <br/> |
+|**pfXPS** <br/> |4   <br/> |Published page is in the .xps format.  <br/> |
+|**pfWord** <br/> |5   <br/> |Published page is in the .doc or .docx format.  <br/> |
+|**pfEMF** <br/> |6   <br/> |Published page is in the enhanced metafile (.emf) format.  <br/> |
+|**pfHTML** <br/> |7   <br/> |Published page is in the .html format. This member is new in OneNote 2013.  <br/> |
+|**pfOneNote2007** <br/> |8   <br/> |Published page is in the 2007 .one format. This member is new in OneNote 2013.  <br/> |
    
 ## <a name="recentresulttype"></a>RecentResultType
 <a name="odc_RecentResultType"> </a>
@@ -158,7 +158,7 @@ When passed to the **SetRecentResults** method of the **IQuickFilingDialog** obj
   
 |**Member**|**Wert**|**Beschreibung**|
 |:-----|:-----|:-----|
-|**Rrtnone ausgewählt** <br/> |0  <br/> |Sets no recent-result list to be rendered.  <br/> |
+|**rrtNone** <br/> |0  <br/> |Sets no recent-result list to be rendered.  <br/> |
 |**rrtFiling** <br/> |1  <br/> |Sets the "Filing" recent-result list to be rendered.  <br/> |
 |**rrtSearch** <br/> |2  <br/> |Sets the "Search" recent-result list to be rendered.  <br/> |
 |**rrtLinks** <br/> |3  <br/> |Sets the "Links" recent-result list to be rendered.  <br/> |
@@ -189,26 +189,26 @@ When passed to the **TreeCollapsedState** method of the **QFD** object, specifie
 
 When passed to one of the following methods, specifies the version of the OneNote XML schema to use:
   
-- **OneNote15. Application. GetPageContent**
+- **OneNote15.Application.GetPageContent**
     
-- **OneNote15. Application. FindMeta**
+- **OneNote15.Application.FindMeta**
     
-- **OneNote15. Application. FindPages**
+- **OneNote15.Application.FindPages**
     
-- **OneNote15. Application. getHierarchy**
+- **OneNote15.Application.GetHierarchy**
     
-- **OneNote15. Application. GetPageContent**
+- **OneNote15.Application.GetPageContent**
     
-- **OneNote15. Application. UpdateHierarchy**
+- **OneNote15.Application.UpdateHierarchy**
     
-- **OneNote15. Application. UpdatePageContent**
+- **OneNote15.Application.UpdatePageContent**
     
 |**Member**|**Wert**|**Beschreibung**|
 |:-----|:-----|:-----|
 |**xs2007** <br/> |0  <br/> |References the OneNote 2007 schema.  <br/> |
 |**xs2010** <br/> |1  <br/> |References the OneNote 2010 schema.  <br/> |
 |**xs2013** <br/> |2  <br/> |References the OneNote 2013 schema.  <br/> |
-|**xsCurrent** <br/> |2  <br/> |References the schema of the current OneNote version.  <br/> <br/>**Hinweis**: Es wird nicht empfohlen, **xsCurrent** in den meisten Fällen zu verwenden, da dies zu Kompatibilitätsproblemen mit zukünftigen Versionen von OneNote führen kann. Instead specify the version of the schema that your app was built to handle, like xs2013.           |
+|**xsCurrent** <br/> |2  <br/> |References the schema of the current OneNote version.  <br/> <br/>**HINWEIS**: In den meisten Fällen wird die Verwendung von **xsCurrent** nicht empfohlen, da dies Kompatibilitätsprobleme mit zukünftigen Versionen von OneNote. Instead specify the version of the schema that your app was built to handle, like xs2013.           |
    
 ## <a name="see-also"></a>Siehe auch
 

@@ -23,12 +23,12 @@ ms.locfileid: "33410931"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt eine benannte [SRowSet](srowset.md) -Struktur, die eine angegebene Anzahl von Zeilen enthält. 
+Erstellt eine benannte [SRowSet-Struktur,](srowset.md) die eine angegebene Anzahl von Zeilen enthält. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |**SRowSet** <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |**SRowSet** <br/> |
    
 ```cpp
 SizedSRowSet (_crow, _name)
@@ -36,17 +36,17 @@ SizedSRowSet (_crow, _name)
 
 ## <a name="parameters"></a>Parameter
 
-__Crow_
+_ _krähe_
   
-> Die Anzahl der Zeilen, die in die neue Struktur eingeschlossen werden sollen.
+> Anzahl der Zeilen, die in die neue Struktur eingeschlossen werden sollen.
     
-__Name_
+_ _name_
   
 > Name für die neue Struktur.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Um die neue Struktur zu verwenden, die aus dem **SizedSRowSet** -Makro als Zeiger auf eine **SRowSet** -Struktur resultiert, führen Sie die folgenden Schritte aus: 
+Führen Sie die folgende Umsetzung aus, um die neue Struktur zu verwenden, die aus dem **Makro SizedSRowSet** als Zeiger auf eine **SRowSet-Struktur** resultiert: 
   
 ```cpp
 lpSRowSet = (LPSRowSet) &SizedSRowSet;

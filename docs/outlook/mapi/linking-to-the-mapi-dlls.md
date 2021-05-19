@@ -21,9 +21,9 @@ ms.locfileid: "33419303"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPI-Clients können implizit oder explizit mithilfe der Windows-Funktionen **LoadLibrary** und **GetProcAddress**eine Verknüpfung zu den MAPI-DLLs herstellen. Informationen zum expliziten Verknüpfen von MAPI-DLLs finden Sie unter [Link to MAPI Functions](how-to-link-to-mapi-functions.md).
+MAPI-Clients können implizit oder explizit mithilfe der Windows **LoadLibrary** und **GetProcAddress** mit den MAPI-DLLs verknüpfen. Informationen zum expliziten Verknüpfen von MAPI-DLLs finden Sie [unter Link zu MAPI-Funktionen](how-to-link-to-mapi-functions.md).
   
-MAPI stellt typdefinitions Anweisungen in der MAPIX bereit. H-Headerdatei für jede der folgenden Funktionen:
+MAPI stellt Typdefinitionsanweisungen im MAPIX zur H-Headerdatei für jede der folgenden Funktionen:
   
 [MAPILogonEx](mapilogonex.md)
   
@@ -39,8 +39,8 @@ MAPI stellt typdefinitions Anweisungen in der MAPIX bereit. H-Headerdatei für j
   
 [MAPIAdminProfiles](mapiadminprofiles.md)
   
-Verwenden Sie diese Typdefinitionen, um die entsprechenden Einstiegspunkte richtig aufzurufen, wenn Sie explizit mit den MAPI-DLLs verknüpfen.
+Verwenden Sie diese Typdefinitionen, um die entsprechenden Einstiegspunkte korrekt auf aufruft, wenn Sie explizit mit den MAPI-DLLs verknüpfen.
   
-Dienstanbieter können nicht-MAPI-Funktionen enthalten, die vollständig mit MAPI in Verbindung stehen (in Ihrer DLL). Wenn Sie diese Funktionen verwenden müssen, rufen Sie **LoadLibrary** vor der Verwendung der dll und **FreeLibrary** , um die dll aus dem Speicher nach ihrer Verwendung zu entfernen. Da MAPI die nicht-MAPI-Verwendung einer Dienstanbieter-DLL nicht kennt, gibt es keine Garantie dafür, dass die DLL bei Bedarf verfügbar ist. MAPI gibt eine Dienstanbieter-DLL frei, wenn es keine Clients mit aktiven Sitzungen mehr gibt, die deren Dienste erfordern. 
+Dienstanbieter können Nicht-MAPI-Funktionen – Features, die keinerlei Bezug zu MAPI haben – in ihrer DLL enthalten. Wenn Sie diese Features verwenden müssen, rufen Sie **LoadLibrary** auf, bevor Sie die DLL und **FreeLibrary** verwenden, um die DLL nach der Verwendung aus dem Arbeitsspeicher zu entfernen. Da MAPI keine Nicht-MAPI-Verwendungen einer Dienstanbieter-DLL kennt, gibt es keine Garantie, dass die DLL bei Bedarf verfügbar ist. MAPI gibt eine Dienstanbieter-DLL frei, wenn es keine Clients mehr mit aktiven Sitzungen gibt, die ihre Dienste erfordern. 
   
 

@@ -25,21 +25,21 @@ Zeigt an, ob eine Linie eine Pfeilspitze oder eine andere Linienendformatierung 
 | 0  <br/> | Keine Pfeilspitze  <br/> |
 | 1 - 45  <br/> | Verschiedene Pfeilspitzenformatvorlagen, die den indizierten Einträgen im Dialogfeld **Linie** entsprechen.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Die Größe der Pfeilspitze wird in der Zelle PfeilBeginnGröße angegeben.
   
-Wenn Sie einen Verweis auf die Zelle beginArrow aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle BeginArrow anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Zelle BeginArrow  <br/> |
+| Zellenname:  <br/> | BeginArrow  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle beginArrow aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die BeginArrow-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowLine** <br/> |
 | Zellenindex:  <br/> |**visLineBeginArrow** <br/> |
    

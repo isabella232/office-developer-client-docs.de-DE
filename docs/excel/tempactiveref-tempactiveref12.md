@@ -8,7 +8,7 @@ f1_keywords:
 - TempActiveRef
 - TempActiveRef12
 keywords:
-- tempactiveref-Funktion [Excel 2007], TempActiveRef12-Funktion [Excel 2007]
+- tempactiveref-Funktion [excel 2007],TempActiveRef12-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: 7c69d15a-294b-4545-983b-720409001e0e
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -23,7 +23,7 @@ ms.locfileid: "33415544"
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Framework-Bibliotheksfunktion, mit der ein temporäres **XLOPER**/ -**XLOPER12** erstellt wird, das eine externe Referenz auf rechteckigen Zellenblock im aktiven Blatt enthält. 
+Framework library function that creates a temporary **XLOPER** /  **XLOPER12** containing an external reference to rechteckige block of cells on the active sheet. 
   
 ```cs
 LPXLOPER TempActiveRef(WORD rwFirst, WORD rwLast, BYTE colFirst, BYTE colLast);
@@ -34,31 +34,31 @@ LPXLOPER12 TempActiveRef12(ROW rwFirst, ROW rwLast, COL colFirst, COL colLast);
 
  _rwFirst_
   
-Die Startzeile des Verweises.
+Die Anfangszeile des Verweises.
   
  _rwLast_
   
-Die Endzeile des Verweises.
+Die endende Zeile des Verweises.
   
-Zeilenargumente sind nullbasiert, sodass Zeile 1 als 0 übergeben wird. In Microsoft Office Excel 2003 und früheren Versionen und beginnend mit Excel 2007, die eine Arbeitsmappe im Kompatibilitätsmodus ausführt, ist der Höchstwert 65.535 = 2 ^ 16-1 und ist der Höchstwert, der von einem Wort Integer verwendet werden kann. Ab Excel 2007 mit einer Arbeitsmappe ist der Höchstwert 1.048.575 = 2 ^ 20-1. RW ist als eine 32-Bit-Ganzzahl mit Vorzeichen in XLCALL definiert. H.
+Zeilenargumente sind nullbasierte, sodass Zeile 1 als 0 übergeben wird. In Microsoft Office Excel 2003 und früheren Versionen und ab Excel 2007, in dem eine Arbeitsmappe im Kompatibilitätsmodus ausgeführt wird, ist der höchstwert 65.535 = 2^16 - 1 und der Höchstwert, der von einer ganzzahligen WORD-Zahl verwendet werden kann. Ab Excel 2007, in dem eine Arbeitsmappe ausgeführt wird, ist der maximale Wert 1.048.575 = 2^20 - 1. RW ist in XLCALL.H als 32-Bit-ganze Zahl mit Vorzeichen definiert.
   
  _colFirst_
   
-Die Nummer der ersten Spalte des Verweises.
+Die Nummer der Anfangsspalte des Verweises.
   
- _colLa_
+ _colLast_
   
-Die Nummer der letzten Spalte des Verweises.
+Die Nummer der Endspalte des Verweises.
   
-Spalten Argumente sind nullbasiert, sodass Spalte A als 0 übergeben wird. In Excel 2003 und früheren Versionen und beginnend mit Excel 2007, die eine Arbeitsmappe im Kompatibilitätsmodus ausführt, ist der Höchstwert 255 = 2 ^ 8-1 und ist der Maximalwert, der von einer BYTE-Ganzzahl verwendet werden kann. Ab Excel 2007 mit einer Arbeitsmappe ist der Höchstwert 16.383 = 2 ^ 14-1. COL ist als eine 32-Bit-Ganzzahl mit Vorzeichen in XLCALL definiert. H.
+Spaltenargumente sind nullbasierte, sodass Spalte A als 0 übergeben wird. In Excel 2003 und früheren Versionen und ab Excel 2007, in dem eine Arbeitsmappe im Kompatibilitätsmodus ausgeführt wird, ist der Maximalwert 255 = 2^8 – 1 und der Höchstwert, der von einer ganzzahligen BYTE verwendet werden kann. Ab Excel 2007, in dem eine Arbeitsmappe ausgeführt wird, ist der maximale Wert 16.383 = 2^14 - 1. COL ist in XLCALL.H als 32-Bit-ganzzahlige 32-Bit-Zahl definiert.
   
 ## <a name="return-value"></a>Rückgabewert
 
-Gibt einen **externen xltypeRef** -externen Verweis auf den rechteckigen Block der übergebenen Zellen zurück. 
+Gibt einen **externen xltypeRef-Verweis** auf einen rechteckigen Zellenblock zurück, der übergeben wird. 
   
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird die **TempActiveRef12** -Funktion verwendet, um Zellen A105: C110 auszuwählen. 
+In diesem Beispiel wird die **TempActiveRef12-Funktion** zum Auswählen der Zellen A105:C110 verwendet. 
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   

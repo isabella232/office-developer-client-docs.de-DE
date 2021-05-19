@@ -20,8 +20,8 @@ ms.locfileid: "33414830"
 
 Enthält Zellen für ein Dokument, über die die Vorschauqualität, der Geltungsbereich und das Ausgabeformat gesteuert werden.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
- Sie können diese Werte auch über das Dialogfeld **Eigenschaften** festlegen (Klicken Sie auf die Registerkarte **Datei** , klicken Sie auf **Info**, klicken Sie auf **Eigenschaften**, und klicken Sie dann auf **Erweiterte Eigenschaften**).
+ Sie können diese Werte auch  mithilfe des Dialogfelds Eigenschaften festlegen (klicken Sie auf die Registerkarte Datei, klicken Sie auf **Info,** klicken Sie auf **Eigenschaften,** und klicken Sie dann auf **Erweiterte Eigenschaften**). 
   
 

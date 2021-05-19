@@ -1,5 +1,5 @@
 ---
-title: Dateneingabevorgänge (Access Custom Web App)
+title: Dateneingabevorgänge (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33415677"
 ---
-# <a name="data-entry-operations-access-custom-web-app"></a>Dateneingabevorgänge (Access Custom Web App)
+# <a name="data-entry-operations-access-custom-web-app"></a>Dateneingabevorgänge (benutzerdefinierte Access-Web-App)
 
 > [!IMPORTANT]
 > Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
@@ -22,9 +22,9 @@ ms.locfileid: "33415677"
 
 - [DeleteRecord-Makroaktion (benutzerdefinierte Access-Web-App)](deleterecord-macro-action-access-custom-web-app.md)
     
-- [Bearbeitendatensatz-Makroaktion (benutzerdefinierte Access-Web-App)](editrecord-macro-action-access-custom-web-app.md)
+- [EditRecord-Makroaktion (benutzerdefinierte Access-Web-App)](editrecord-macro-action-access-custom-web-app.md)
     
-- [Datensatz-Makroaktion (benutzerdefinierte Access-Web-App)](newrecord-macro-action-access-custom-web-app.md)
+- [NewRecord-Makroaktion (benutzerdefinierte Access-Web-App)](newrecord-macro-action-access-custom-web-app.md)
     
 - [SaveRecord-Makroaktion (benutzerdefinierte Access-Web-App)](saverecord-macro-action-access-custom-web-app.md)
     

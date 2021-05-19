@@ -25,11 +25,11 @@ ms.locfileid: "33420745"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt eine Dropdownliste, die in einem Dialogfeldverwendet wird, das aus einer Anzeigetabelle erstellt wird.
+Beschreibt eine Dropdownliste, die in einem Dialogfeld verwendet wird, das aus einer Anzeigetabelle erstellt wird.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _DTBLMVDDLBX
@@ -44,21 +44,21 @@ typedef struct _DTBLMVDDLBX
 
  **ulFlags**
   
-> Reserviert muss NULL sein.
+> Reserviert; muss null sein.
     
  **ulMVPropTag**
   
-> Property-Tag für eine mehrwertige Eigenschaft vom Typ PT_MV_TSTRING. Die unterschiedlichen Werte dieser Eigenschaft werden in der Dropdownliste als verschiedene Einträge angezeigt.
+> Eigenschaftstag für eine mehrwertige Eigenschaft vom Typ PT_MV_TSTRING. Die verschiedenen Werte dieser Eigenschaft werden als unterschiedliche Einträge in der Dropdownliste angezeigt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Eine **DTBLMVDDLBOX** -Struktur beschreibt eine mehrwertige Dropdownliste eine schreibgeschützte Liste von Elementen. Bei Verwendung einer mehrwertigen Dropdownliste werden Werte angezeigt, wenn ein Benutzer auf eine Bildlaufleiste klickt. 
+Eine **DTBLMVDDLBOX-Struktur** beschreibt eine mehrwertige Dropdownliste eine schreibgeschützte Liste von Elementen. Mithilfe einer mehrwertigen Dropdownliste werden Werte angezeigt, wenn ein Benutzer auf eine Bildlaufleiste klickt. 
   
-Die angezeigten Daten stammen aus der im **ulMVPropTag** -Element angegebenen Eigenschaft. Es ist nicht erforderlich, von der Eigenschaften Schnittstelle zu lesen, die der Anzeigetabelle zugeordnet ist. Da Benutzer keine Auswahl aus diesen Typen von Listenfeldern treffen können, werden auch keine Daten in die Eigenschaften Schnittstelle geschrieben. 
+Die angezeigten Daten stammen aus der Im **ulMVPropTag-Element identifizierten** Eigenschaft. Es ist nicht erforderlich, von der Eigenschaftenschnittstelle zu lesen, die der Anzeigetabelle zugeordnet ist. Da Benutzer keine Auswahl aus diesen Listenfeldern treffen können, werden daten nicht in die Eigenschaftsschnittstelle geschrieben. 
   
-Nur mehrwertige Zeichenfolgeneigenschaften werden für die mehrwertige Dropdownliste unterstützt. andere mehrwertige Eigenschaftstypen werden nicht unterstützt. 
+Für die mehrwertige Dropdownliste werden nur mehrwertige Zeichenfolgeneigenschaften unterstützt. Andere mehrwertige Eigenschaftstypen werden nicht unterstützt. 
   
-Eine Übersicht über Anzeige Tabellen finden Sie unter [Display Tables](display-tables.md). Weitere Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
+Eine Übersicht über Anzeigetabellen finden Sie unter [Display Tables](display-tables.md). Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
   
 ## <a name="see-also"></a>Siehe auch
 

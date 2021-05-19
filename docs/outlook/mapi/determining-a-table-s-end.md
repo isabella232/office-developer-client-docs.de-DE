@@ -21,14 +21,14 @@ ms.locfileid: "33420087"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
- Eine häufige Fehlermeldung ist, dass das Ende der Tabelle erreicht wurde, wenn: 
+ Ein häufiger Fehler besteht in der Annahme, dass das Ende der Tabelle erreicht wurde, wenn: 
   
-- [IMAPITable:: QueryRows](imapitable-queryrows.md) wurde in einer Schleife aufgerufen, wobei das Ende der Schleife durch die von [IMAPITable:: GetRowCount](imapitable-getrowcount.md)zurückgegebene Zeilenanzahl bestimmt wird. Die von **GetRowCount** zurückgegebene Anzahl stellt nicht immer die genaue Anzahl der Zeilen in der Tabelle dar. Es handelt sich um eine ungefähre Anzahl. 
+- [IMAPITable::QueryRows](imapitable-queryrows.md) wurde in einer Schleife aufgerufen, und das Ende der Schleife wird durch die von [IMAPITable::GetRowCount](imapitable-getrowcount.md)zurückgegebene Zeilenanzahl bestimmt. Die von **GetRowCount** zurückgegebene Anzahl stellt nicht immer die genaue Anzahl der Zeilen in der Tabelle dar. Es handelt sich um eine ungefähre Anzahl. 
     
-- **QueryRows** wurde mit einer festen Anzahl von Zeilen aufgerufen, und es werden weniger Zeilen zurückgegeben. Erst wenn **QueryRows** einen Zeilensatz mit einer Zeilenanzahl gleich 0 (null) zurückgibt, dass keine weiteren Zeilen abgerufen werden sollen. 
+- **QueryRows** wurde mit einer festen Anzahl von Zeilen aufgerufen, und es werden weniger Zeilen zurückgegeben. Erst wenn **QueryRows** einen Zeilensatz mit einer Zeilenanzahl von null zurückgibt, sind keine zeilen mehr abzurufen. 
     
 > [!IMPORTANT]
-> Ein Anrufer kann nur davon ausgehen, dass der Cursor am Ende der Tabelle für eine positive Zeilenanzahl oder am Anfang der Tabelle für eine negative Zeilenanzahl positioniert ist, wenn der Wert S_OK und null Zeilen zurückgegeben werden. Der Wert MAPI_E_NOT_FOUND wird nie zurückgegeben. 
+> Der einzige Zeitpunkt, zu dem ein Aufrufer davon ausgehen kann, dass der Cursor am Ende der Tabelle für eine positive Zeilenanzahl oder am Anfang der Tabelle für eine negative Zeilenanzahl positioniert wird, ist, wenn der Wert S_OK- und Nullzeilen zurückgegeben wird. Der Wert MAPI_E_NOT_FOUND wird nie zurückgegeben. 
   
 ## <a name="see-also"></a>Siehe auch
 

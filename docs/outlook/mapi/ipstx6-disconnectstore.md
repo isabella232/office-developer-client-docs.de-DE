@@ -37,7 +37,7 @@ HRESULT DisconnectStore(
 
  _ulFlags_
   
->  [in] Flags, die Verhalten ändern. Dieser Parameter muss immer auf 0 festgelegt werden. 
+>  [in] Flags, die Verhalten ändern. Dieser Parameter muss immer auf 0 festgelegt sein. 
     
 ## <a name="see-also"></a>Siehe auch
 

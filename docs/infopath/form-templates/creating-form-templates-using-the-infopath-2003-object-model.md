@@ -1,10 +1,10 @@
 ---
-title: Erstellen von Formularvorlagen mit dem InfoPath-Objektmodell 2003
+title: Erstellen von Formularvorlagen mithilfe des InfoPath 2003-Objektmodells
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
-- InfoPath 2003-kompatible Formularvorlagen, erstellen, Objektmodelle [InfoPath 2003], Erstellen von Formularvorlagen mit verwaltetem Code für InfoPath 2007, Formularvorlagen [InfoPath 2007], Erstellen von InfoPath 2003-kompatibel
+- infopath 2003-kompatible Formularvorlagen, Erstellen,Objektmodelle [InfoPath 2003], Erstellen von Formularvorlagen für verwalteten Code für InfoPath 2007,Formularvorlagen [InfoPath 2007], Erstellen von InfoPath 2003-kompatiblen Formularvorlagen
 localization_priority: Normal
 ms.assetid: e0513178-ddcb-4086-ab19-1bc80cf114cc
 description: In diesem Abschnitt wird Initialisierungs- und Bereinigungscode sowie das Hinzufügen von Ereignishandlern, Debuggen und das Bereitstellen von InfoPath-Formularvorlagen erläutert, die das InfoPath 2003-kompatible Objektmodell verwenden, die Unterstützung von Threads und das Arbeiten mit Microsoft XML Core Services (MSXML) aus InfoPath-Lösungen mit verwaltetem Code.
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33410532"
 ---
-# <a name="creating-form-templates-using-the-infopath-2003-object-model"></a>Erstellen von Formularvorlagen mit dem InfoPath-Objektmodell 2003
+# <a name="creating-form-templates-using-the-infopath-2003-object-model"></a>Erstellen von Formularvorlagen mithilfe des InfoPath 2003-Objektmodells
 
 In diesem Abschnitt wird Initialisierungs- und Bereinigungscode sowie das Hinzufügen von Ereignishandlern, Debuggen und das Bereitstellen von InfoPath-Formularvorlagen erläutert, die das InfoPath 2003-kompatible Objektmodell verwenden, die Unterstützung von Threads und das Arbeiten mit Microsoft XML Core Services (MSXML) aus InfoPath-Lösungen mit verwaltetem Code.
   
@@ -25,11 +25,11 @@ In diesem Abschnitt wird Initialisierungs- und Bereinigungscode sowie das Hinzuf
   
 > Enthält Erklärungen zum Schreiben von Initialisierungs- und Bereinigungscode in den Methoden "_Startup" und "_Shutdown" Ihres Projekts.
     
-[Hinzufügen eines Ereignishandlers mit dem InfoPath-Objektmodell 2003](how-to-add-an-event-handler-using-the-infopath-2003-object-model.md)
+[Hinzufügen eines Ereignishandlers mithilfe des InfoPath 2003-Objektmodells](how-to-add-an-event-handler-using-the-infopath-2003-object-model.md)
   
 > Erläutert, wie Ereignishandler und die Attribute zur Identifizierung von Ereignishandlern angewendet werden.
     
-[Debuggen von InfoPath-Projekten mit dem InfoPath-2003-Objektmodell](how-to-debug-infopath-projects-using-the-infopath-2003-object-model.md)
+[Debuggen von InfoPath-Projekten mithilfe des InfoPath 2003-Objektmodells](how-to-debug-infopath-projects-using-the-infopath-2003-object-model.md)
   
 > Erläutert das Debuggen von InfoPath-Projekten mit verwaltetem Code.
     

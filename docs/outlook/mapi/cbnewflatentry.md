@@ -25,12 +25,12 @@ ms.locfileid: "33419408"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl der Bytes, die für eine neue [FLATENTRY](flatentry.md) -Struktur reserviert werden sollen, die eine Eintrags-ID einer angegebenen Bytegröße enthält. 
+Berechnet die Anzahl der Bytes, die einer neuen [FLATENTRY-Struktur](flatentry.md) zugeordnet werden sollen, die einen Eintragsbezeichner einer angegebenen Bytegröße enthält. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |**FLATENTRY** <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |**FLATENTRY** <br/> |
    
 ```cpp
 CbNewFLATENTRY (_cb)
@@ -38,9 +38,9 @@ CbNewFLATENTRY (_cb)
 
 ## <a name="parameters"></a>Parameter
 
- __CB_
+ _ _cb_
   
-> Die Anzahl von Bytes in der Eintrags-ID, die in die neue **FLATENTRY** -Struktur eingeschlossen werden soll. 
+> Anzahl der Bytes in der Eintrags-ID, die in die neue **FLATENTRY-Struktur eingeschlossen werden** sollen. 
     
 ## <a name="see-also"></a>Siehe auch
 

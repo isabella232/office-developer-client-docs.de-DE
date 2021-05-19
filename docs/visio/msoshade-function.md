@@ -25,17 +25,17 @@ Hinzugefügte Version: Visio 2010
   
 ## <a name="syntax"></a>Syntax
 
-MSOSHADE (* * *Color* * *, * * *-deltaLum* * *) 
+MSOSHADE(** *color* **, ** *-deltaLum* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _color_ <br/> |Erforderlich  <br/> |**RGB** <br/> |Der standardmäßige RGB-Farbwert (Rot, Grün, Blau) oder eine Referenz auf eine Farbe.  <br/> |
-| _-deltaLum_ <br/> |Erforderlich  <br/> |**Integer** <br/> |Die prozentuale Änderung in Richtung weiß (-100%) oder schwarz (100%) aus dem _Farbwert_ .  <br/> |
+| _-deltaLum_ <br/> |Erforderlich  <br/> |**Integer** <br/> |Die prozentuale Änderung in Richtung Weiß (-100 %) oder schwarz (100 %) aus dem _Farbwert._  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Je näher der _Farbwert_ zu weiß oder schwarz ist, desto kleiner ist die Änderung der Schattierung, die von einem bestimmten _deltaLum-_ Wert erzeugt wird. 
+Je näher der  _Farbwert_ weiß oder schwarz ist, desto kleiner ist die Änderung an der Schattierung, die durch einen bestimmten  _-deltaLum-Wert erzeugt_ wird. 
   
 

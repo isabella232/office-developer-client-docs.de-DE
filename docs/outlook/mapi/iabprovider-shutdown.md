@@ -25,7 +25,7 @@ ms.locfileid: "33409783"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bricht eine Verbindung mit einer aktiven Sitzung ab.
+Bricht eine Verbindung zu einer aktiven Sitzung ab.
   
 ```cpp
 HRESULT Shutdown(
@@ -37,7 +37,7 @@ HRESULT Shutdown(
 
  _lpulFlags_
   
-> In Reserviert muss ein Zeiger auf NULL sein.
+> [In] Reserviert; muss ein Zeiger auf Null sein.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -47,7 +47,7 @@ S_OK
     
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Führen Sie in der Implementierung der **Shutdown** -Methode alle Aufgaben aus, die Sie für erforderlich halten. MAPI Ruft die **Shutdown** -Methode nur auf, nachdem Sie alle Anmeldeobjekte freigegeben haben. 
+Führen Sie bei der Implementierung der **Shutdown-Methode** alle aufgaben aus, die Sie für erforderlich halten. MAPI ruft Ihre **Shutdown-Methode** erst auf, nachdem Sie alle Anmeldeobjekte freigegeben haben. 
   
 ## <a name="see-also"></a>Siehe auch
 

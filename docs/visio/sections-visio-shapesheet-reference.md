@@ -1,5 +1,5 @@
 ---
-title: Abschnitte (Visio-ShapeSheet-Referenz)
+title: Sections (Visio ShapeSheet Reference)
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,25 +13,25 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33419226"
 ---
-# <a name="sections-visio-shapesheet-reference"></a>Abschnitte (Visio-ShapeSheet-Referenz)
+# <a name="sections-visio-shapesheet-reference"></a>Sections (Visio ShapeSheet Reference)
 
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
 - [Abschnitt "1-D Endpoints"](1-d-endpoints-section.md)
     
-- [3D-Rotations Eigenschaften (Abschnitt)](3-d-rotation-properties-section.md)
+- [Abschnitt "3D-Rotationseigenschaften"](3-d-rotation-properties-section.md)
     
 - [Im Abschnitt Aktion-Tag](action-tag-section.md)
     
 - [Abschnitt "Actions"](actions-section.md)
     
-- [Abschnitt "Additional Effect Properties"](additional-effect-properties-section.md)
+- [Abschnitt "Zusätzliche Effekteigenschaften"](additional-effect-properties-section.md)
     
 - [Abschnitt "Alignment"](alignment-section.md)
     
 - [Abschnitt "Annotation"](annotation-section.md)
     
-- [Abschnitt "Fase Properties"](bevel-properties-section.md)
+- [Abschnitt "Abschrägungseigenschaften"](bevel-properties-section.md)
     
 - [Abschnitt "Shape-Verhalten ändern"](change-shape-behavior-section.md)
     
@@ -47,7 +47,7 @@ ms.locfileid: "33419226"
     
 - [Abschnitt "Fill Format"](fill-format-section.md)
     
-- [Abschnitt "Füll Verlauf"](fill-gradient-section.md)
+- [Abschnitt "Füllgradient"](fill-gradient-section.md)
     
 - [Abschnitt "Foreign Image Info"](foreign-image-info-section.md)
     
@@ -69,7 +69,7 @@ ms.locfileid: "33419226"
     
 - [Abschnitt "Line Format"](line-format-section.md)
     
-- [Linien Gradient (Abschnitt)](line-gradient-section.md)
+- [Abschnitt "Linienverlauf"](line-gradient-section.md)
     
 - [Abschnitt "Miscellaneous"](miscellaneous-section.md)
     
@@ -83,11 +83,11 @@ ms.locfileid: "33419226"
     
 - [Abschnitt "Protection"](protection-section.md)
     
-- [Abschnitt "Schnellformatvorlage"](quick-style-section.md)
+- [Abschnitt "Quick Style"](quick-style-section.md)
     
 - [Abschnitt "Reviewer"](reviewer-section.md)
     
-- [Lineal &amp; -Raster (Abschnitt)](rulergrid-section.md)
+- [Abschnitt "Ruler &amp; Grid"](rulergrid-section.md)
     
 - [Abschnitt "Scratch"](scratch-section.md)
     
@@ -107,7 +107,7 @@ ms.locfileid: "33419226"
     
 - [Abschnitt "Text Transform"](text-transform-section.md)
     
-- [Abschnitt "Design Properties"](theme-properties-section.md)
+- [Abschnitt "Designeigenschaften"](theme-properties-section.md)
     
 - [Abschnitt "User-defined Cells"](user-defined-cells-section.md)
     

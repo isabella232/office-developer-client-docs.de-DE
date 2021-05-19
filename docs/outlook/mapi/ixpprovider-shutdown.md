@@ -25,7 +25,7 @@ ms.locfileid: "33409692"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Schließt einen Transportanbieter ordnungsgemäß ab.
+Schließt einen Transportanbieter in geordneter Weise.
   
 ```cpp
 HRESULT Shutdown (
@@ -43,11 +43,11 @@ HRESULT Shutdown (
 
 S_OK 
   
-> Der Aufruf konnte beim Herunterfahren des Transportanbieters ausgeführt werden.
+> Durch den Aufruf konnte der Transportanbieter beendet werden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die MAPI-Warteschlange ruft die **IXPProvider:: Shutdown** -Methode auf, bevor ein Transportanbieter Objekt freigegeben wird. Vor dem Aufrufen von **Shutdown**gibt MAPI alle Anmeldeobjekte für einen Anbieter frei.
+Der MAPI-Spooler ruft die **IXPProvider::Shutdown-Methode** kurz vor der Veröffentlichung eines Transportanbieterobjekts auf. Vor dem **Aufrufen von Shutdown** gibt MAPI alle Anmeldeobjekte für einen Anbieter frei.
   
 ## <a name="see-also"></a>Siehe auch
 

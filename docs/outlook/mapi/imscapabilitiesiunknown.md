@@ -25,22 +25,22 @@ ms.locfileid: "33414781"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält Informationen zu den unterstützten Speichermöglichkeiten.
+Enthält Informationen dazu, was ein Store unterstützen kann.
   
 |||
 |:-----|:-----|
-|Bereitgestellt von:  <br/> |Nachrichtenspeicher Anbieter  <br/> |
+|Bereitgestellt von:  <br/> |Anbieter des Nachrichtenspeichers  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMSCapabilities  <br/> |
    
 ## <a name="vtable-order"></a>Vtable-Reihenfolge
 
 |||
 |:-----|:-----|
-|**[GetCapabilities](imscapabilities-getcapabilities.md)** <br/> |Gibt die Funktionen eines Speichers basierend auf der angegebenen Auswahl zurück.  <br/> |
+|**[GetCapabilities](imscapabilities-getcapabilities.md)** <br/> |Gibt Funktionen eines Speichers basierend auf der angegebenen Auswahl zurück.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
- **IMSCapabilities** bietet Informationen darüber, was ein Informationsspeicher unterstützenkann, wenn der Speicher diese Schnittstelle unterstützt. 
+ **IMSCapabilities** enthält Informationen dazu, was ein Store unterstützen kann, wenn der Speicher diese Schnittstelle unterstützt. 
   
 ## <a name="see-also"></a>Siehe auch
 

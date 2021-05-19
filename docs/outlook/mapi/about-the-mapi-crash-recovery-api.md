@@ -19,13 +19,13 @@ ms.locfileid: "33420262"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die MAPI-Notfall wiederHerstellungs-API überprüft den Status des freigegebenen Speichers (PST) oder der Offline Ordner Datei (OST), um sicherzustellen, dass die Daten konsistent sind. Wenn Sie sich in einem konsistenten Zustand befindet, verschiebt die [MAPICrashRecovery](mapicrashrecovery.md) -Funktion die Daten aus dem geöffneten PST-oder Kosten auf den Datenträger und sperrt die PST oder Kosten und lässt keinen Lese-oder Schreibzugriff auf die Daten zu. Dadurch wird sichergestellt, dass die Daten in einem konsistenten Zustand bleiben, bis der Prozess beendet wird. Wenn Sie sicherstellen, dass sich PST oder Kosten in einem konsistenten Zustand befinden, bevor der Prozess beendet wird, können Sie verhindern, dass Microsoft Outlook 2013 und Microsoft Outlook 2010 die folgende Fehlermeldung anzeigen und Leistungsprobleme vermeiden. 
+Die MAPI Crash Recovery-API überprüft den Status des freigegebenen Arbeitsspeichers für persönliche Ordner (PST) oder Offlineordner (OST), um sicherzustellen, dass sich die Daten in einem konsistenten Zustand befinden. Wenn sie sich in einem konsistenten Zustand befindet, verschiebt die [MAPICrashRecovery-Funktion](mapicrashrecovery.md) die Daten aus den geöffneten PSTs oder OSTs auf den Datenträger und sperrt die PSTs oder OSTs und lässt keinen Lese- oder Schreibzugriff auf die Daten zu. Dadurch wird sichergestellt, dass die Daten in einem konsistenten Zustand bleiben, bis der Prozess beendet wird. Indem Sie sicherstellen, dass sich die PSTs oder OSTs in einem konsistenten Zustand befinden, bevor der Prozess beendet wird, können Sie verhindern, dass Microsoft Outlook 2013 und Microsoft Outlook 2010 die folgende Fehlermeldung anzeigen und Leistungsprobleme vermeiden. 
   
- **Eine Datendatei wurde bei der letzten Verwendung nicht ordnungsgemäß geschlossen und wird auf Probleme überprüft. Die Leistung kann beeinträchtigt werden, während die Überprüfung ausgeführt wird.**
+ **Eine Datendatei wurde bei der letzten Verwendung nicht ordnungsgemäß geschlossen und wird auf Probleme überprüft. Die Leistung kann während der Überprüfung beeinträchtigt werden.**
   
 Diese API bietet Folgendes:
   
-Konstanten
+Konstanten:
   
 - [MAPI-Konstanten](mapi-constants.md)
     

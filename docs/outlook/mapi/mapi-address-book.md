@@ -45,11 +45,11 @@ Messaging-Benutzer und Verteilerlisten weist eine Reihe von f�nf Eigenschaften
   
 |**Basisadresse-Eigenschaft**|**Beschreibung**|
 |:-----|:-----|
-|**PR_ADDRTYPE** ([Pidtagaddresstype (](pidtagaddresstype-canonical-property.md))  <br/> |Adresstyp f�r den Empf�nger. Jeden Adresstyp folgt ein bestimmtes Format und mit einem bestimmten messaging-System verwendet wird.  <br/> |
+|**PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))  <br/> |Adresstyp f�r den Empf�nger. Jeden Adresstyp folgt ein bestimmtes Format und mit einem bestimmten messaging-System verwendet wird.  <br/> |
 |**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |Anzeigename f�r den Empf�nger.  <br/> |
 |**PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))  <br/> |Die Adresse des Empf�ngers.  <br/> |
 |**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |Eintrags-ID verwendet, um den Empf�nger zuzugreifen.  <br/> |
-|**PR_SEARCH_KEY** ([Pidtagsearchkey (](pidtagsearchkey-canonical-property.md))  <br/> |Bin�re vergleichbaren Schl�ssel verwendet, um den Empf�nger zu identifizieren.  <br/> |
+|**PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md))  <br/> |Bin�re vergleichbaren Schl�ssel verwendet, um den Empf�nger zu identifizieren.  <br/> |
    
 MAPI definiert viele Gruppen von Eigenschaften, die Variationen der Basisadresse Eigenschaften sind. Diese anderen Gruppen werden messaging-Benutzer und Verteilerlisten in verschiedenen Situationen beschrieben. Beispielsweise wird eine Gruppe von Eigenschaften den Delegaten Absender eine Nachricht und eine andere Gruppe der Stellvertretung Empf�nger beschrieben.
   

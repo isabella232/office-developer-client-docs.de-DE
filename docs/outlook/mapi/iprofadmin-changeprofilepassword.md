@@ -40,31 +40,31 @@ HRESULT ChangeProfilePassword(
 
  _lpszProfileName_
   
-> in Ein Zeiger auf den Namen des Profils, das dem zu ändernden Kennwort zugeordnet ist.
+> [in] Ein Zeiger auf den Namen des Profils, das dem zu ändernde Kennwort zugeordnet ist.
     
  _lpszOldPassword_
   
-> in Ein Zeiger auf das aktuelle Kennwort.
+> [in] Ein Zeiger auf das aktuelle Kennwort.
     
  _lpszNewPassword_
   
-> in Ein Zeiger auf das neue Kennwort.
+> [in] Ein Zeiger auf das neue Kennwort.
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die den Typ der übergebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die den Typ der übergebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
     
 MAPI_UNICODE 
   
-> Der Profilname und die Kennwörter sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, sind diese Zeichenfolgen im ANSI-Format.
+> Der Profilname und die Kennwörter sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, sind diese Zeichenfolgen im ANSI-Format.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Wenn diese Methode aufgerufen wird, wird S_OK zurückgegeben. Es wird jedoch keine Aktion ausgeführt.
+> Wenn diese Methode aufgerufen wird, gibt sie S_OK. Es werden jedoch keine Aktionen ergriffen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Verwenden Sie diese Methode nicht. MAPI unterstützt keine Kennwörter für Profile.
   

@@ -22,13 +22,13 @@ Bestimmt, ob ein 1D-Shape statischen (Punkt-zu-Punkt) oder dynamischen (Shape-zu
   
 |**Wert**|**Beschreibung**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
-| &amp;H0  <br/> | Standardwert. Dynamischen Kleber nur für dynamische Verbinder zulassen, sonst statischen Kleber verwenden.  <br/> |**visGlueTypeDefault** <br/> |
+| &amp;H0  <br/> | Standardeinstellung. Dynamischen Kleber nur für dynamische Verbinder zulassen, sonst statischen Kleber verwenden.  <br/> |**visGlueTypeDefault** <br/> |
 | &amp;H1  <br/> | Dynamischen Kleber zulassen.  <br/> | Wird ab Visio 2002 nicht mehr verwendet.  <br/> |
 | &amp;H2  <br/> | Dynamischen Kleber zulassen.  <br/> |**visGlueTypeWalking** <br/> |
 | &amp;H4  <br/> | Dynamischen Kleber nicht zulassen.  <br/> |**visGlueTypeNoWalking** <br/> |
 | &amp;H8  <br/> | Dieses 2D-Shape darf nicht mit dynamischem Kleber verbunden werden.  <br/> |**visGlueTypeNoWalkingTo** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Wenn diese Zelle den Wert 1, 2 oder 3 enthält, wird dynamischer Kleber verwendet, wenn eine der folgenden Bedingungen vorliegt:
   
@@ -40,17 +40,17 @@ Wenn Shapes von einem Programm an Shape-Zellen außer PinX oder PinY geklebt wer
   
 Wenn Sie diesen Wert ändern, sodass dynamisches Kleben nicht mehr zulässig ist, werden bereits vorhandene dynamisch geklebte Verbindungen weder getrennt noch verändert. Programme können dynamischen Kleber verwenden, auch wenn das dynamische Kleben in der Zelle GlueType deaktiviert ist.
   
-Wenn Sie einen Verweis auf die Zelle GlueType aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle GlueType anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Zelle GlueType  <br/> |
+| Zellenname:  <br/> | GlueType  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle GlueType nach Index aus einem Programm erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle GlueType nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowMisc** <br/> |
 | Zellenindex:  <br/> |**visGlueType** <br/> |
    

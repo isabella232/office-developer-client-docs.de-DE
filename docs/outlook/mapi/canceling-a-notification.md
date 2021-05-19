@@ -1,5 +1,5 @@
 ---
-title: Stornieren einer Benachrichtigung
+title: Abbrechen einer Benachrichtigung
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,14 +15,14 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33409762"
 ---
-# <a name="canceling-a-notification"></a>Stornieren einer Benachrichtigung
+# <a name="canceling-a-notification"></a>Abbrechen einer Benachrichtigung
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Um eine Benachrichtigung abzubrechen, rufen die Clients eine **Unadvise** -Methode der Advise-Quelle auf. Das **** Aufrufen von Unadvise ist wichtig, da der Dienstanbieter den Verweis auf Ihre Advise-Senke freigibt. Solange ein Dienstanbieter einen Verweis auf eine Advise-Senke beibehält, kann die Advise-Senke weiterhin [IMAPIAdviseSink:: OnNotify](imapiadvisesink-onnotify.md) -Anrufe empfangen. Aufgrund der asynchronen Art der Ereignisbenachrichtigung können Clients sogar nach einem erfolgreichen Unadvise-Aufruf benachrichtigt werden **** . Clients müssen den Empfang von Benachrichtigungen jederzeit verarbeiten können. 
+Zum Abbrechen einer Benachrichtigung rufen Clients die **Unadvise-Methode** einer Beratenden Quelle auf. Das **Aufrufen von Unadvise** ist wichtig, da der Dienstanbieter seinen Verweis auf Ihre Ratgebersenke veröffentlicht. Solange ein Dienstanbieter einen Verweis auf eine Ratgebersenke verwaltet, kann die Ratgebersenke weiterhin [IMAPIAdviseSink::OnNotify-Anrufe](imapiadvisesink-onnotify.md) empfangen. Aufgrund der asynchronen Art der Ereignisbenachrichtigung können Clients auch nach einem erfolgreichen **Unadvise-Aufruf benachrichtigt** werden. Clients müssen den Empfang von Benachrichtigungen jederzeit verarbeiten können. 
   
-Da sich die Implementierung von Dienstanbietern unterscheidet, **** können Clients, die nicht Unadvise aufrufen, eine Benachrichtigung abzubrechen, nicht davon ausgehen, wann ein Anbieter ihren Verweis auf die Advise-Senke freigibt. Einige Dienstanbieter veröffentlichen ihre Verweise auf Advise-Senken, wenn Sie Ihre Advise-Quellen freigeben. Einige Dienstanbieter nicht. Solange ein Dienstanbieter einen Verweis auf eine Advise-Senke beibehält, kann diese Advise-Senke weiterhin Benachrichtigungen erhalten. 
+Da sich die Implementierungen des Dienstanbieters unterscheiden, können Clients, die **Unadvise** nicht aufrufen, um eine Benachrichtigung abgesagt zu werden, nicht davon ausgehen, wann ein Anbieter seinen Verweis auf seine Ratgebersenke veröffentlicht. Einige Dienstanbieter geben ihre Referenzen frei, um Senken zu beraten, wenn sie ihre Ratgeberquellen veröffentlichen. Einige Dienstanbieter nicht. Solange ein Dienstanbieter einen Verweis auf eine Ratgebersenke verwaltet, kann die Ratgebersenke weiterhin Benachrichtigungen empfangen. 
   
 

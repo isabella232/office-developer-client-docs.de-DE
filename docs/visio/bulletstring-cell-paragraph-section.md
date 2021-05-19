@@ -20,24 +20,24 @@ ms.locfileid: "33409748"
 
 Ermöglicht das Erstellen von benutzerdefinierten Aufzählungszeichen. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Geben Sie die Formatvorlage in Form einer Zeichenfolge (eingeschlossen in Anführungszeichen) ein. Sie können beispielsweise die Zeichenfolge "ooo" eingeben.
   
 Sie können den Wert für diese Zelle auch festlegen, indem Sie mit der rechten Maustaste auf ein Shape klicken, auf **Format** zeigen, auf **Text** klicken und dann die Registerkarte **Aufzählungszeichen** auswählen. 
   
-Wenn Sie einen Verweis auf die Zelle Bullete aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle BulletString anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Abs. BulletStr [ *i* ] wobei *i* = <1>, 2, 3,...  <br/> |
+|Zellenname:  <br/> |Para.BulletStr[ *i*  ] where  *i*  = <1>, 2, 3, ...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Bullete aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle BulletString nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
 |Abschnittsindex:  <br/> |**visSectionParagraph** <br/> |
-|Zeilenindex:  <br/> |**visRowParagraph** +  *i* , wobei *i* = 0, 1, 2,...  <br/> |
+|Zeilenindex:  <br/> |**visRowParagraph**  +   *i* where *i* = 0, 1, 2, ...  <br/> |
 |Zellenindex:  <br/> |**visBulletString** <br/> |
    
 

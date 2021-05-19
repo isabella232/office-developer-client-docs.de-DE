@@ -21,23 +21,23 @@ ms.locfileid: "33419877"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine Clientanwendung bereitet Empfänger vor, indem Sie Ihre kurzfristigen Eintrags-IDs in langfristige Eintrags-IDs konvertieren und möglicherweise Eigenschaften hinzufügen, ändern oder neu anordnen. Sie können Empfänger, die Teil einer Empfängerliste sind, für eine Nachricht oder Empfänger vorbereiten, die nichts mit einer Nachricht zu tun haben. In der Regel rufen Clients [IAddrBook::P reparerecips](iaddrbook-preparerecips.md) direkt auf, um kurzfristige Eintragsbezeichner in langfristige Eintragsbezeichner für Empfänger zu übersetzen, die im Dialogfeld Allgemeine Adresse enthalten sind. Bei Empfängern, die einer ausgehenden Nachricht zugeordnet sind, wird die Empfänger Vorbereitung vom Prozess der Namensauflösung behandelt. 
+Eine Clientanwendung bereitet Empfänger vor, indem sie ihre kurzfristigen Eintragsbezeichner in langfristige Eintragsbezeichner konvertieren und möglicherweise Eigenschaften hinzufügen, ändern oder neu anordnen. Sie können Empfänger vorbereiten, die Teil einer Empfängerliste sind, für eine Nachricht oder Empfänger, die nicht mit einer Nachricht in Zusammenhang stehen. In der Regel rufen Clients [IAddrBook::P repareRecips](iaddrbook-preparerecips.md) direkt auf, um bezeichner für kurzfristige Eingaben in langfristige Eintragsbezeichner für Empfänger zu übersetzen, die im Dialogfeld allgemeine Adresse enthalten sind. Bei Empfängern, die einer ausgehenden Nachricht zugeordnet sind, wird die Empfängervorbereitung durch den Namensauflösungsprozess behandelt. 
   
-Um eine Liste von Empfängern vorzubereiten, rufen Sie **IAddrBook::P Reparerecips**auf. **PrepareRecips** akzeptiert eine [ADRLIST](adrlist.md) -Struktur und eine Liste von Property-Tags. Die **ADRLIST** -Struktur enthält die zu präparierenden Empfänger, während die Eigenschaftsliste Eigenschaften darstellt, die von jedem Empfänger unterstützt werden sollen. **PrepareRecips** versucht, die Eigenschaften, die in der Eigenschaftsliste enthalten sind, am Anfang der **ADRLIST** -Struktur zu platzieren. Wenn eine der Eigenschaften in der Liste in der **ADRLIST** -Struktur fehlt, ruft MAPI den Adressbuchanbieter zur Bereitstellung auf. Wenn Sie nur langfristige Eintragsbezeichner überprüfen müssen, übergeben Sie NULL für den _lpSPropTagArray_ -Parameter. 
+Um eine Liste der Empfänger vorzubereiten, rufen Sie **IAddrBook::P repareRecips auf.** **PrepareRecips** akzeptiert eine [ADRLIST-Struktur](adrlist.md) und eine Liste von Eigenschaftstags. Die **ADRLIST-Struktur** enthält die empfänger, die vorbereitet werden sollen, während die Eigenschaftstagliste Eigenschaften darstellt, die von jedem Empfänger unterstützt werden sollen. **PrepareRecips** versucht, die Eigenschaften, die in der Eigenschaftstagliste enthalten sind, am Anfang der **ADRLIST-Struktur zu** platzieren. Wenn eine der Eigenschaften in der Liste in der **ADRLIST-Struktur** fehlt, ruft MAPI den Adressbuchanbieter auf, diese zu liefern. Wenn Sie nur nach langfristigen Eintragsbezeichnern suchen müssen, übergeben Sie NULL für den _lpSPropTagArray-Parameter._ 
   
-Angenommen, Sie arbeiten mit fünf Empfängern. Alle fünf Empfänger werden in der **ADRLIST** -Struktur mit den folgenden Eigenschaften in der folgenden Reihenfolge angezeigt: 
+Angenommen, Sie arbeiten mit fünf Empfängern. Alle fünf Empfänger werden in der **ADRLIST-Struktur** mit den folgenden Eigenschaften in der folgenden Reihenfolge angezeigt: 
   
 1. **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))
     
 2. **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))
     
-3. **PR_SEARCH_KEY** ([Pidtagsearchkey (](pidtagsearchkey-canonical-property.md))
+3. **PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md))
     
 4. **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))
     
-5. **PR_ADDRTYPE** ([Pidtagaddresstype (](pidtagaddresstype-canonical-property.md))
+5. **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))
     
-Drei weitere Eigenschaften sind in der **ADRLIST** -Struktur für die ersten beiden Empfänger enthalten. 
+Drei weitere Eigenschaften sind in der **ADRLIST-Struktur** für die ersten beiden Empfänger enthalten. 
   
 1. **PR_ACCOUNT** ([PidTagAccount](pidtagaccount-canonical-property.md))
     
@@ -45,9 +45,9 @@ Drei weitere Eigenschaften sind in der **ADRLIST** -Struktur für die ersten bei
     
 3. **PR_SURNAME** ([PidTagSurname](pidtagsurname-canonical-property.md))
     
-Da alle Empfänger als erste drei Eigenschaften **PR_ADDRTYPE**, **PR_ENTRYID**und **PR_HOME_TELEPHONE_NUMBER** ([pidtaghometelephonenumber (](pidtaghometelephonenumber-canonical-property.md)) verfügen müssen, erstellen Sie ein Property-Tag-Array mit diesen Eigenschaften, und führen Sie und die **ADRLIST** -Struktur zu **PrepareRecips**. **PrepareRecips** Ruft die **IMAPIProp::** GetProps-Methode der einzelnen Empfänger auf, um **PR_HOME_TELEPHONE_NUMBER** abzurufen, da es derzeit nicht Teil der **ADRLIST** -Struktur ist. Wenn **PrepareRecips** zurückgibt, stellt die Empfängerliste eine zusammengeführte Liste von Empfängern dar, wobei die Eigenschaften in der **ADRLIST** -Struktur aufgeführt sind, die zuerst für jeden Empfänger angezeigt wird. 
+Da alle Empfänger als erste drei Eigenschaften **PR_ADDRTYPE**, **PR_ENTRYID** und **PR_HOME_TELEPHONE_NUMBER** ([PidTagHomeTelephoneNumber](pidtaghometelephonenumber-canonical-property.md)) verfügen müssen, erstellen Sie ein Eigenschaftentagarray mit diesen Eigenschaften und übergeben es und die **ADRLIST-Struktur** an **PrepareRecips**. **PrepareRecips** ruft die **IMAPIProp::GetProps-Methode** jedes Empfängers auf, um PR_HOME_TELEPHONE_NUMBER **abzurufen,** da sie derzeit nicht Teil der **ADRLIST-Struktur** ist. Wenn **PrepareRecips** zurückgegeben wird, stellt die Empfängerliste eine zusammengeführte Liste von Empfängern dar, deren Eigenschaften in der **ADRLIST-Struktur** für jeden Empfänger zuerst angezeigt werden. 
   
-Die Empfängerliste für Empfänger 1 und 2 enthält Eigenschaften in der folgenden Reihenfolge:
+Die Empfängerliste für empfänger 1 und 2 enthält Eigenschaften in der folgenden Reihenfolge:
   
 1. **PR_ADDRTYPE**
     
@@ -69,7 +69,7 @@ Die Empfängerliste für Empfänger 1 und 2 enthält Eigenschaften in der folgen
     
 10. **PR_SURNAME**
     
-Die Empfängerliste für Empfänger 3, 4 und 5 enthält Eigenschaften in der folgenden Reihenfolge:
+Die Empfängerliste für empfänger 3, 4 und 5 enthält Eigenschaften in der folgenden Reihenfolge:
   
 1. **PR_ADDRTYPE**
     
@@ -85,6 +85,6 @@ Die Empfängerliste für Empfänger 3, 4 und 5 enthält Eigenschaften in der fol
     
 7. **PR_ADDRTYPE**
     
-Als Alternative zum Aufrufen von **IAddrBook::P reparerecips** , um mit Eigenschaften zu arbeiten, rufen Sie die [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode der einzelnen Empfänger und gegebenenfalls deren [IMAPIProp::](imapiprop-setprops.md) SetProps-Methode auf. Wenn nur ein Empfänger beteiligt ist, ist beide Techniken zufrieden stellend. Wenn jedoch mehrere Empfänger beteiligt sind, spart der Aufruf von **PrepareRecips** anstelle der **IMAPIProp** -Methoden Zeit und, wenn Sie Remote arbeiten, viele Remoteprozeduraufrufe. **PrepareRecips** verarbeitet alle Empfänger in einem einzelnen Aufruf, **** während getProps und SetProps einen Anruf für jeden Empfänger durchführen. **** 
+Rufen Sie als Alternative zum Aufrufen von **IAddrBook::P repareRecips** für die Arbeit mit Eigenschaften die [IMAPIProp::GetProps-Methode](imapiprop-getprops.md) und gegebenenfalls die [IMAPIProp::SetProps-Methode](imapiprop-setprops.md) jedes Empfängers auf. Wenn nur ein Empfänger beteiligt ist, ist beide Technik zufriedenstellend. Wenn jedoch mehrere Empfänger beteiligt sind, spart das Aufrufen von **PrepareRecips** anstelle der **IMAPIProp-Methoden** Zeit und, wenn Sie remote arbeiten, viele Remoteprozeduraufrufe. **PrepareRecips** verarbeitet alle Empfänger in einem einzigen Anruf, **während GetProps** und **SetProps** einen Aufruf für jeden Empfänger erstellen. 
   
 

@@ -25,13 +25,13 @@ ms.locfileid: "33414536"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Sucht einen UNC-Pfad Gegenstück (Universal Naming Convention) für den angegebenen lokalen Pfad.
+Sucht eine Unc-Pfad-Entsprechung (Universal Naming Convention) zum angegebenen lokalen Pfad.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 SCODE ScUNCFromLocalPath(
@@ -45,21 +45,21 @@ SCODE ScUNCFromLocalPath(
 
  _szLocal_
   
-> in Ein Pfad im Format [ _Drive:_]\[ _path_] einer Datei oder eines Verzeichnisses.
+> [in] Ein Pfad im Format [ _Laufwerk:_] \[ _Pfad_] einer Datei oder eines Verzeichnisses.
     
  _szUNC_
   
-> Out Ein Pfad im \\Format [ _Server_]\[ _Freigabe_\[ _Pfad_] derselben Datei oder desselben Verzeichnisses wie für den _szLocal_ -Parameter. 
+> [out] Ein Pfad im Format [ server ] share ] path ] derselben Datei oder desselben Verzeichnisses \\ wie für den  \[  \[  _szLocal-Parameter._ 
     
  _cchUNC_
   
-> in Die Größe des Puffers für die Ausgabezeichenfolge.
+> [in] Größe des Puffers für die Ausgabezeichenfolge.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK
   
-> Der UNC-Pfad Gegenstück wurde erfolgreich gefunden.
+> Die Entsprechung für den UNC-Pfad wurde erfolgreich auf dem Entsprechendenpfad befindet.
     
 MAPI_E_INVALID_PARAMETER
   
@@ -67,7 +67,7 @@ MAPI_E_INVALID_PARAMETER
     
 MAPI_E_TOO_BIG
   
->  _szUNC_ war nicht groß genug, um das Ergebnis zu halten. 
+>  _szUNC war_ nicht groß genug, um das Ergebnis zu halten. 
     
 S_FALSE
   
