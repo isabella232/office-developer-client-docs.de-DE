@@ -19,13 +19,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33410469"
 ---
-# <a name="imapimessagesitegetstore"></a><span data-ttu-id="2e4b0-103">IMAPIMessageSite::GetStore</span><span class="sxs-lookup"><span data-stu-id="2e4b0-103">IMAPIMessageSite::GetStore</span></span>
+# <a name="imapimessagesitegetstore"></a><span data-ttu-id="68072-103">IMAPIMessageSite::GetStore</span><span class="sxs-lookup"><span data-stu-id="68072-103">IMAPIMessageSite::GetStore</span></span>
 
   
   
-<span data-ttu-id="2e4b0-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="2e4b0-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="68072-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="68072-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="2e4b0-105">Gibt den Nachrichtenspeicher zurück, der die aktuelle Nachricht enthält, wenn ein solcher Speicher vorhanden ist.</span><span class="sxs-lookup"><span data-stu-id="2e4b0-105">Returns the message store that contains the current message, if such a store exists.</span></span> <span data-ttu-id="2e4b0-106">Diese Methode gibt NULL im _ppStore_ -Parameter für eingebettete Nachrichten zurück, die in einer anderen Nachricht statt direkt in einem Nachrichtenspeicher gespeichert werden.</span><span class="sxs-lookup"><span data-stu-id="2e4b0-106">This method will return NULL in the  _ppStore_ parameter for embedded messages, which are stored in another message instead of directly in a message store.</span></span> 
+<span data-ttu-id="68072-105">Gibt den Nachrichtenspeicher zurück, der die aktuelle Nachricht enthält, wenn ein solcher Speicher vorhanden ist.</span><span class="sxs-lookup"><span data-stu-id="68072-105">Returns the message store that contains the current message, if such a store exists.</span></span> <span data-ttu-id="68072-106">Diese Methode gibt NULL im  _ppStore-Parameter_ für eingebettete Nachrichten zurück, die in einer anderen Nachricht statt direkt in einem Nachrichtenspeicher gespeichert werden.</span><span class="sxs-lookup"><span data-stu-id="68072-106">This method will return NULL in the  _ppStore_ parameter for embedded messages, which are stored in another message instead of directly in a message store.</span></span> 
   
 ```cpp
 HRESULT GetStore(
@@ -33,42 +33,42 @@ HRESULT GetStore(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="2e4b0-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="2e4b0-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="68072-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="68072-107">Parameters</span></span>
 
- <span data-ttu-id="2e4b0-108">_ppStore_</span><span class="sxs-lookup"><span data-stu-id="2e4b0-108">_ppStore_</span></span>
+ <span data-ttu-id="68072-108">_ppStore_</span><span class="sxs-lookup"><span data-stu-id="68072-108">_ppStore_</span></span>
   
-> <span data-ttu-id="2e4b0-109">Out Ein Zeiger auf einen Zeiger auf den Nachrichtenspeicher.</span><span class="sxs-lookup"><span data-stu-id="2e4b0-109">[out] A pointer to a pointer to the message store.</span></span>
+> <span data-ttu-id="68072-109">[out] Ein Zeiger auf einen Zeiger auf den Nachrichtenspeicher.</span><span class="sxs-lookup"><span data-stu-id="68072-109">[out] A pointer to a pointer to the message store.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="2e4b0-110">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="2e4b0-110">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="68072-110">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="68072-110">Return value</span></span>
 
-<span data-ttu-id="2e4b0-111">S_OK</span><span class="sxs-lookup"><span data-stu-id="2e4b0-111">S_OK</span></span> 
+<span data-ttu-id="68072-111">S_OK</span><span class="sxs-lookup"><span data-stu-id="68072-111">S_OK</span></span> 
   
-> <span data-ttu-id="2e4b0-112">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="2e4b0-112">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="68072-112">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="68072-112">The call succeeded and has returned the expected value or values.</span></span>
     
-<span data-ttu-id="2e4b0-113">S_FALSE</span><span class="sxs-lookup"><span data-stu-id="2e4b0-113">S_FALSE</span></span> 
+<span data-ttu-id="68072-113">S_FALSE</span><span class="sxs-lookup"><span data-stu-id="68072-113">S_FALSE</span></span> 
   
-> <span data-ttu-id="2e4b0-114">Es ist kein Speicher vorhanden, der die Nachricht enthält.</span><span class="sxs-lookup"><span data-stu-id="2e4b0-114">There is no store that contains the message.</span></span>
+> <span data-ttu-id="68072-114">Es gibt keinen Speicher, der die Nachricht enthält.</span><span class="sxs-lookup"><span data-stu-id="68072-114">There is no store that contains the message.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="2e4b0-115">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="2e4b0-115">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="68072-115">Hinweise</span><span class="sxs-lookup"><span data-stu-id="68072-115">Remarks</span></span>
 
-<span data-ttu-id="2e4b0-116">Eine Liste der Schnittstellen im Zusammenhang mit Formular Servern finden Sie unter [MAPI-Formular Schnittstellen](mapi-form-interfaces.md).</span><span class="sxs-lookup"><span data-stu-id="2e4b0-116">For a list of interfaces related to form servers, see [MAPI Form Interfaces](mapi-form-interfaces.md).</span></span>
+<span data-ttu-id="68072-116">Eine Liste der Schnittstellen im Zusammenhang mit Formularservern finden Sie unter [MAPI Form Interfaces](mapi-form-interfaces.md).</span><span class="sxs-lookup"><span data-stu-id="68072-116">For a list of interfaces related to form servers, see [MAPI Form Interfaces](mapi-form-interfaces.md).</span></span>
   
-## <a name="mfcmapi-reference"></a><span data-ttu-id="2e4b0-117">MFCMAPI-Referenz</span><span class="sxs-lookup"><span data-stu-id="2e4b0-117">MFCMAPI reference</span></span>
+## <a name="mfcmapi-reference"></a><span data-ttu-id="68072-117">MFCMAPI-Referenz</span><span class="sxs-lookup"><span data-stu-id="68072-117">MFCMAPI reference</span></span>
 
-<span data-ttu-id="2e4b0-118">Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.</span><span class="sxs-lookup"><span data-stu-id="2e4b0-118">For MFCMAPI sample code, see the following table.</span></span>
+<span data-ttu-id="68072-118">Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.</span><span class="sxs-lookup"><span data-stu-id="68072-118">For MFCMAPI sample code, see the following table.</span></span>
   
-|<span data-ttu-id="2e4b0-119">**Datei**</span><span class="sxs-lookup"><span data-stu-id="2e4b0-119">**File**</span></span>|<span data-ttu-id="2e4b0-120">**Funktion**</span><span class="sxs-lookup"><span data-stu-id="2e4b0-120">**Function**</span></span>|<span data-ttu-id="2e4b0-121">**Comment**</span><span class="sxs-lookup"><span data-stu-id="2e4b0-121">**Comment**</span></span>|
+|<span data-ttu-id="68072-119">**Datei**</span><span class="sxs-lookup"><span data-stu-id="68072-119">**File**</span></span>|<span data-ttu-id="68072-120">**Funktion**</span><span class="sxs-lookup"><span data-stu-id="68072-120">**Function**</span></span>|<span data-ttu-id="68072-121">**Comment**</span><span class="sxs-lookup"><span data-stu-id="68072-121">**Comment**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="2e4b0-122">MyMAPIFormViewer. cpp</span><span class="sxs-lookup"><span data-stu-id="2e4b0-122">MyMAPIFormViewer.cpp</span></span>  <br/> |<span data-ttu-id="2e4b0-123">CMyMAPIFormViewer:: getStore</span><span class="sxs-lookup"><span data-stu-id="2e4b0-123">CMyMAPIFormViewer::GetStore</span></span>  <br/> |<span data-ttu-id="2e4b0-124">MFCMAPI verwendet die **IMAPIMessageSite:: GetStore** -Methode, um den aktuell zwischengespeicherten Zeiger auf den angegebenen Speicher abzurufen, sofern dieser verfügbar ist.</span><span class="sxs-lookup"><span data-stu-id="2e4b0-124">MFCMAPI uses the **IMAPIMessageSite::GetStore** method to get the currently cached pointer to the specified store, if it is available.</span></span>  <br/> |
+|<span data-ttu-id="68072-122">MyMAPIFormViewer.cpp</span><span class="sxs-lookup"><span data-stu-id="68072-122">MyMAPIFormViewer.cpp</span></span>  <br/> |<span data-ttu-id="68072-123">CMyMAPIFormViewer::GetStore</span><span class="sxs-lookup"><span data-stu-id="68072-123">CMyMAPIFormViewer::GetStore</span></span>  <br/> |<span data-ttu-id="68072-124">MFCMAPI verwendet die **IMAPIMessageSite::GetStore-Methode,** um den aktuell zwischengespeicherten Zeiger auf den angegebenen Speicher zu erhalten, sofern er verfügbar ist.</span><span class="sxs-lookup"><span data-stu-id="68072-124">MFCMAPI uses the **IMAPIMessageSite::GetStore** method to get the currently cached pointer to the specified store, if it is available.</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="2e4b0-125">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="2e4b0-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="68072-125">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="68072-125">See also</span></span>
 
 
 
-[<span data-ttu-id="2e4b0-126">IMAPIMessageSite : IUnknown</span><span class="sxs-lookup"><span data-stu-id="2e4b0-126">IMAPIMessageSite : IUnknown</span></span>](imapimessagesiteiunknown.md)
+[<span data-ttu-id="68072-126">IMAPIMessageSite : IUnknown</span><span class="sxs-lookup"><span data-stu-id="68072-126">IMAPIMessageSite : IUnknown</span></span>](imapimessagesiteiunknown.md)
 
 
-[<span data-ttu-id="2e4b0-127">MFCMAPI (engl.) als ein Codebeispiel</span><span class="sxs-lookup"><span data-stu-id="2e4b0-127">MFCMAPI as a Code Sample</span></span>](mfcmapi-as-a-code-sample.md)
+[<span data-ttu-id="68072-127">MFCMAPI (engl.) als ein Codebeispiel</span><span class="sxs-lookup"><span data-stu-id="68072-127">MFCMAPI as a Code Sample</span></span>](mfcmapi-as-a-code-sample.md)
   
-[<span data-ttu-id="2e4b0-128">MAPI-Formular Schnittstellen</span><span class="sxs-lookup"><span data-stu-id="2e4b0-128">MAPI Form Interfaces</span></span>](mapi-form-interfaces.md)
+[<span data-ttu-id="68072-128">MAPI-Formularschnittstellen</span><span class="sxs-lookup"><span data-stu-id="68072-128">MAPI Form Interfaces</span></span>](mapi-form-interfaces.md)
 

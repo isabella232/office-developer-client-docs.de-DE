@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagdeltax (-Eigenschaft
+title: PidTagDeltaX (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,46 +19,46 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33420521"
 ---
-# <a name="pidtagdeltax-canonical-property"></a><span data-ttu-id="cd2fc-103">Kanonische Pidtagdeltax (-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="cd2fc-103">PidTagDeltaX Canonical Property</span></span>
+# <a name="pidtagdeltax-canonical-property"></a><span data-ttu-id="b94c5-103">PidTagDeltaX (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="b94c5-103">PidTagDeltaX Canonical Property</span></span>
 
   
   
-<span data-ttu-id="cd2fc-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="cd2fc-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="b94c5-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="b94c5-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="cd2fc-105">Enthält die Breite eines Dialogfeld-Steuerelements in Windows-Standarddialog Einheiten.</span><span class="sxs-lookup"><span data-stu-id="cd2fc-105">Contains the width of a dialog box control in standard Windows dialog units.</span></span> 
+<span data-ttu-id="b94c5-105">Enthält die Breite eines Dialogfeldsteuerelements in Windows Dialogeinheiten.</span><span class="sxs-lookup"><span data-stu-id="b94c5-105">Contains the width of a dialog box control in standard Windows dialog units.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="cd2fc-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="cd2fc-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="cd2fc-107">PR_DELTAX</span><span class="sxs-lookup"><span data-stu-id="cd2fc-107">PR_DELTAX</span></span>  <br/> |
-|<span data-ttu-id="cd2fc-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="cd2fc-108">Identifier:</span></span>  <br/> |<span data-ttu-id="cd2fc-109">0x3F03</span><span class="sxs-lookup"><span data-stu-id="cd2fc-109">0x3F03</span></span>  <br/> |
-|<span data-ttu-id="cd2fc-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="cd2fc-110">Data type:</span></span>  <br/> |<span data-ttu-id="cd2fc-111">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="cd2fc-111">PT_LONG</span></span>  <br/> |
-|<span data-ttu-id="cd2fc-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="cd2fc-112">Area:</span></span>  <br/> |<span data-ttu-id="cd2fc-113">MAPI-Anzeigetabelle</span><span class="sxs-lookup"><span data-stu-id="cd2fc-113">MAPI display table</span></span>  <br/> |
+|<span data-ttu-id="b94c5-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="b94c5-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="b94c5-107">PR_DELTAX</span><span class="sxs-lookup"><span data-stu-id="b94c5-107">PR_DELTAX</span></span>  <br/> |
+|<span data-ttu-id="b94c5-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="b94c5-108">Identifier:</span></span>  <br/> |<span data-ttu-id="b94c5-109">0x3F03</span><span class="sxs-lookup"><span data-stu-id="b94c5-109">0x3F03</span></span>  <br/> |
+|<span data-ttu-id="b94c5-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="b94c5-110">Data type:</span></span>  <br/> |<span data-ttu-id="b94c5-111">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="b94c5-111">PT_LONG</span></span>  <br/> |
+|<span data-ttu-id="b94c5-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="b94c5-112">Area:</span></span>  <br/> |<span data-ttu-id="b94c5-113">MAPI-Anzeigetabelle</span><span class="sxs-lookup"><span data-stu-id="b94c5-113">MAPI display table</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="cd2fc-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="cd2fc-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b94c5-114">Hinweise</span><span class="sxs-lookup"><span data-stu-id="b94c5-114">Remarks</span></span>
 
-<span data-ttu-id="cd2fc-115">Die Eigenschaften **PR_XPOS** ([Pidtagxcoordinate (](pidtagxcoordinate-canonical-property.md)) **, PR_YPOS** ([pidtagycoordinate (](pidtagycoordinate-canonical-property.md)), **PR_DELTAY** ([pidtagdeltay (](pidtagdeltay-canonical-property.md)) und diese Eigenschaft steuern die Position und Größe des Dialogfeld-Steuerelements.</span><span class="sxs-lookup"><span data-stu-id="cd2fc-115">The **PR_XPOS** ([PidTagXCoordinate](pidtagxcoordinate-canonical-property.md)), **PR_YPOS** ([PidTagYCoordinate](pidtagycoordinate-canonical-property.md)), **PR_DELTAY** ([PidTagDeltaY](pidtagdeltay-canonical-property.md)) properties ,and this property control the position and size the dialog box control.</span></span> 
+<span data-ttu-id="b94c5-115">Die **PR_XPOS** ([PidTagXCoordinate](pidtagxcoordinate-canonical-property.md)), **PR_YPOS** ([PidTagYCoordinate](pidtagycoordinate-canonical-property.md)), **PR_DELTAY** ([PidTagDeltaY](pidtagdeltay-canonical-property.md)) -Eigenschaften , und diese Eigenschaft steuern die Position und Größe des Dialogfeldsteuerelements.</span><span class="sxs-lookup"><span data-stu-id="b94c5-115">The **PR_XPOS** ([PidTagXCoordinate](pidtagxcoordinate-canonical-property.md)), **PR_YPOS** ([PidTagYCoordinate](pidtagycoordinate-canonical-property.md)), **PR_DELTAY** ([PidTagDeltaY](pidtagdeltay-canonical-property.md)) properties ,and this property control the position and size the dialog box control.</span></span> 
   
-## <a name="related-resources"></a><span data-ttu-id="cd2fc-116">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="cd2fc-116">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="b94c5-116">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="b94c5-116">Related resources</span></span>
 
-### <a name="header-files"></a><span data-ttu-id="cd2fc-117">Header Dateien</span><span class="sxs-lookup"><span data-stu-id="cd2fc-117">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="b94c5-117">Headerdateien</span><span class="sxs-lookup"><span data-stu-id="b94c5-117">Header files</span></span>
 
-<span data-ttu-id="cd2fc-118">Mapidefs. h</span><span class="sxs-lookup"><span data-stu-id="cd2fc-118">Mapidefs.h</span></span>
+<span data-ttu-id="b94c5-118">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="b94c5-118">Mapidefs.h</span></span>
   
-> <span data-ttu-id="cd2fc-119">Stellt Datentypdefinitionen bereit.</span><span class="sxs-lookup"><span data-stu-id="cd2fc-119">Provides data type definitions.</span></span>
+> <span data-ttu-id="b94c5-119">Bietet Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="b94c5-119">Provides data type definitions.</span></span>
     
-<span data-ttu-id="cd2fc-120">Mapitags. h</span><span class="sxs-lookup"><span data-stu-id="cd2fc-120">Mapitags.h</span></span>
+<span data-ttu-id="b94c5-120">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="b94c5-120">Mapitags.h</span></span>
   
-> <span data-ttu-id="cd2fc-121">Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.</span><span class="sxs-lookup"><span data-stu-id="cd2fc-121">Contains definitions of properties listed as alternate names.</span></span>
+> <span data-ttu-id="b94c5-121">Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.</span><span class="sxs-lookup"><span data-stu-id="b94c5-121">Contains definitions of properties listed as alternate names.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="cd2fc-122">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="cd2fc-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b94c5-122">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="b94c5-122">See also</span></span>
 
 
 
-[<span data-ttu-id="cd2fc-123">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="cd2fc-123">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="b94c5-123">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="b94c5-123">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="cd2fc-124">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="cd2fc-124">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="b94c5-124">KANONISCHE EIGENSCHAFTEN VON MAPI</span><span class="sxs-lookup"><span data-stu-id="b94c5-124">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="cd2fc-125">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="cd2fc-125">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="b94c5-125">Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="b94c5-125">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="cd2fc-126">Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="cd2fc-126">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="b94c5-126">Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="b94c5-126">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

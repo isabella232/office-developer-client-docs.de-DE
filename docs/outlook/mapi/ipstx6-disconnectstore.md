@@ -19,13 +19,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33409818"
 ---
-# <a name="ipstx6disconnectstore"></a><span data-ttu-id="fe891-103">IPSTX6::DisconnectStore</span><span class="sxs-lookup"><span data-stu-id="fe891-103">IPSTX6::DisconnectStore</span></span>
+# <a name="ipstx6disconnectstore"></a><span data-ttu-id="8ced0-103">IPSTX6::DisconnectStore</span><span class="sxs-lookup"><span data-stu-id="8ced0-103">IPSTX6::DisconnectStore</span></span>
 
   
   
-<span data-ttu-id="fe891-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="fe891-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="8ced0-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="8ced0-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="fe891-105">Trennt den lokalen Speicher.</span><span class="sxs-lookup"><span data-stu-id="fe891-105">Disconnects the local store.</span></span>
+<span data-ttu-id="8ced0-105">Trennt den lokalen Speicher.</span><span class="sxs-lookup"><span data-stu-id="8ced0-105">Disconnects the local store.</span></span>
   
 ```cpp
 HRESULT DisconnectStore( 
@@ -33,17 +33,17 @@ HRESULT DisconnectStore(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="fe891-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="fe891-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="8ced0-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="8ced0-106">Parameters</span></span>
 
- <span data-ttu-id="fe891-107">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="fe891-107">_ulFlags_</span></span>
+ <span data-ttu-id="8ced0-107">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="8ced0-107">_ulFlags_</span></span>
   
->  <span data-ttu-id="fe891-108">[in] Flags, die Verhalten ändern.</span><span class="sxs-lookup"><span data-stu-id="fe891-108">[in] Flags to modify behavior.</span></span> <span data-ttu-id="fe891-109">Dieser Parameter muss immer auf 0 festgelegt werden.</span><span class="sxs-lookup"><span data-stu-id="fe891-109">This parameter must always be set to 0.</span></span> 
+>  <span data-ttu-id="8ced0-108">[in] Flags, die Verhalten ändern.</span><span class="sxs-lookup"><span data-stu-id="8ced0-108">[in] Flags to modify behavior.</span></span> <span data-ttu-id="8ced0-109">Dieser Parameter muss immer auf 0 festgelegt sein.</span><span class="sxs-lookup"><span data-stu-id="8ced0-109">This parameter must always be set to 0.</span></span> 
     
-## <a name="see-also"></a><span data-ttu-id="fe891-110">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="fe891-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8ced0-110">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="8ced0-110">See also</span></span>
 
 
 
-[<span data-ttu-id="fe891-111">Informationen über die Replikations-API</span><span class="sxs-lookup"><span data-stu-id="fe891-111">About the Replication API</span></span>](about-the-replication-api.md)
+[<span data-ttu-id="8ced0-111">Informationen über die Replikations-API</span><span class="sxs-lookup"><span data-stu-id="8ced0-111">About the Replication API</span></span>](about-the-replication-api.md)
   
-[<span data-ttu-id="fe891-112">MAPI-Konstanten</span><span class="sxs-lookup"><span data-stu-id="fe891-112">MAPI Constants</span></span>](mapi-constants.md)
+[<span data-ttu-id="8ced0-112">MAPI-Konstanten</span><span class="sxs-lookup"><span data-stu-id="8ced0-112">MAPI Constants</span></span>](mapi-constants.md)
 

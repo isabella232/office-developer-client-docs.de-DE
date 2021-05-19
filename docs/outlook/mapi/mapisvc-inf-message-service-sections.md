@@ -1,5 +1,5 @@
 ---
-title: MapiSvc. inf-Nachrichtendienst Abschnitte
+title: MapiSvc.inf-Nachrichtendienstabschnitte
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,12 +15,12 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33415369"
 ---
-# <a name="mapisvcinf-message-service-sections"></a><span data-ttu-id="727b0-103">MapiSvc. inf-Nachrichtendienst Abschnitte</span><span class="sxs-lookup"><span data-stu-id="727b0-103">MapiSvc.inf Message Service Sections</span></span>
+# <a name="mapisvcinf-message-service-sections"></a><span data-ttu-id="23053-103">MapiSvc.inf-Nachrichtendienstabschnitte</span><span class="sxs-lookup"><span data-stu-id="23053-103">MapiSvc.inf Message Service Sections</span></span>
 
   
   
-<span data-ttu-id="727b0-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="727b0-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="23053-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="23053-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="727b0-105">MAPISVC. inf enthält einen Nachrichtendienst Abschnitt für jeden Eintrag im Abschnitt **[Dienste]** .</span><span class="sxs-lookup"><span data-stu-id="727b0-105">mapisvc.inf includes one message service section for each of the entries listed in the **[Services]** section.</span></span> <span data-ttu-id="727b0-106">In diesen Abschnitten gibt es zwei Arten von Einträgen: eine zum Festlegen bestimmter Eigenschaften und die andere für das Auflisten von Namen von Abschnitten im Zusammenhang mit dem konfigurierten Nachrichtendienst.</span><span class="sxs-lookup"><span data-stu-id="727b0-106">There are two types of entries in these sections: one for setting certain properties and the other for listing names of sections that are related to the message service being configured.</span></span> 
+<span data-ttu-id="23053-105">mapisvc.inf enthält einen Nachrichtendienstabschnitt für jeden der einträge, die im **Abschnitt [Dienste] aufgeführt** sind.</span><span class="sxs-lookup"><span data-stu-id="23053-105">mapisvc.inf includes one message service section for each of the entries listed in the **[Services]** section.</span></span> <span data-ttu-id="23053-106">In diesen Abschnitten gibt es zwei Arten von Einträgen: einen zum Festlegen bestimmter Eigenschaften und einen zum Auflisten von Namen von Abschnitten, die mit dem zu konfigurierenden Nachrichtendienst in Zusammenhang stehen.</span><span class="sxs-lookup"><span data-stu-id="23053-106">There are two types of entries in these sections: one for setting certain properties and the other for listing names of sections that are related to the message service being configured.</span></span> 
   
 

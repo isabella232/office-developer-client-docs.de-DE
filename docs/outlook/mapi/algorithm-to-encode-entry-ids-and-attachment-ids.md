@@ -1,5 +1,5 @@
 ---
-title: Algorithmus zum Codieren von Eintrags-IDs und Anlage-IDs
+title: Algorithmus zum Codieren von Eintrags-IDs und Anlagen-IDs
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,13 +13,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33420136"
 ---
-# <a name="algorithm-to-encode-entry-ids-and-attachment-ids"></a><span data-ttu-id="d9600-103">Algorithmus zum Codieren von Eintrags-IDs und Anlage-IDs</span><span class="sxs-lookup"><span data-stu-id="d9600-103">Algorithm to Encode Entry IDs and Attachment IDs</span></span>
+# <a name="algorithm-to-encode-entry-ids-and-attachment-ids"></a><span data-ttu-id="ba3d1-103">Algorithmus zum Codieren von Eintrags-IDs und Anlagen-IDs</span><span class="sxs-lookup"><span data-stu-id="ba3d1-103">Algorithm to Encode Entry IDs and Attachment IDs</span></span>
 
   
   
-<span data-ttu-id="d9600-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="d9600-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="ba3d1-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="ba3d1-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="d9600-105">Ein Informationsspeicher Anbieter kann als Teil einer MAPI-URL (Uniform Resource Locator) eine Eintrags-ID und eine Anlagen-ID an den MAPI-Protokoll Handler senden, um ein Objekt zu identifizieren, das für die Indizierung bereit ist.</span><span class="sxs-lookup"><span data-stu-id="d9600-105">A store provider can send as part of a MAPI Uniform Resource Locator (URL) an entry ID and an attachment ID to the MAPI Protocol Handler to identify an object that is ready for indexing.</span></span> <span data-ttu-id="d9600-106">Der Informationsspeicher Anbieter codiert die Eintrags-ID und die Anlagen-ID als Unicode-Zeichenfolgen.</span><span class="sxs-lookup"><span data-stu-id="d9600-106">The store provider encodes the entry ID and attachment ID as Unicode strings.</span></span> <span data-ttu-id="d9600-107">In diesem Thema wird ein Algorithmus gezeigt, der eine kompakte Darstellung der Eintrags-ID oder der Anlagen-ID generiert.</span><span class="sxs-lookup"><span data-stu-id="d9600-107">This topic shows an algorithm that generates a compact representation of the entry ID or attachment ID.</span></span>
+<span data-ttu-id="ba3d1-105">Ein Speicheranbieter kann im Rahmen eines MAPI Uniform Resource Locator (URL) eine Eintrags-ID und eine Anlagen-ID an den MAPI-Protokollhandler senden, um ein Objekt zu identifizieren, das für die Indizierung bereit ist.</span><span class="sxs-lookup"><span data-stu-id="ba3d1-105">A store provider can send as part of a MAPI Uniform Resource Locator (URL) an entry ID and an attachment ID to the MAPI Protocol Handler to identify an object that is ready for indexing.</span></span> <span data-ttu-id="ba3d1-106">Der Speicheranbieter codiert die Eintrags-ID und die Anlagen-ID als Unicode-Zeichenfolgen.</span><span class="sxs-lookup"><span data-stu-id="ba3d1-106">The store provider encodes the entry ID and attachment ID as Unicode strings.</span></span> <span data-ttu-id="ba3d1-107">In diesem Thema wird ein Algorithmus gezeigt, der eine kompakte Darstellung der Eintrags- oder Anlagen-ID generiert.</span><span class="sxs-lookup"><span data-stu-id="ba3d1-107">This topic shows an algorithm that generates a compact representation of the entry ID or attachment ID.</span></span>
   
 ```cpp
 const WORD kwBaseOffset = 0xAC00;  // Hangul char range (AC00-D7AF) 
@@ -52,11 +52,11 @@ LPWSTR EncodeID(ULONG cbEID, LPENTRYID rgbID)
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="d9600-108">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="d9600-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ba3d1-108">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="ba3d1-108">See also</span></span>
 
 
 
-[<span data-ttu-id="d9600-109">Informationen zu Benachrichtigungs basierter Speicher Indizierung</span><span class="sxs-lookup"><span data-stu-id="d9600-109">About Notification-Based Store Indexing</span></span>](about-notification-based-store-indexing.md)
+[<span data-ttu-id="ba3d1-109">Informationen Notification-Based Store Indizierung</span><span class="sxs-lookup"><span data-stu-id="ba3d1-109">About Notification-Based Store Indexing</span></span>](about-notification-based-store-indexing.md)
   
-[<span data-ttu-id="d9600-110">Informationen zu MAPI-URLs für die Benachrichtigungs basierte Indizierung</span><span class="sxs-lookup"><span data-stu-id="d9600-110">About MAPI URLs for Notification-Based Indexing</span></span>](about-mapi-urls-for-notification-based-indexing.md)
+[<span data-ttu-id="ba3d1-110">Informationen zu MAPI-URLs für Notification-Based Indizierung</span><span class="sxs-lookup"><span data-stu-id="ba3d1-110">About MAPI URLs for Notification-Based Indexing</span></span>](about-mapi-urls-for-notification-based-indexing.md)
 

@@ -19,13 +19,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33409909"
 ---
-# <a name="imapisupportspooleryield"></a><span data-ttu-id="7b3d2-103">IMAPISupport::SpoolerYield</span><span class="sxs-lookup"><span data-stu-id="7b3d2-103">IMAPISupport::SpoolerYield</span></span>
+# <a name="imapisupportspooleryield"></a><span data-ttu-id="2a5f1-103">IMAPISupport::SpoolerYield</span><span class="sxs-lookup"><span data-stu-id="2a5f1-103">IMAPISupport::SpoolerYield</span></span>
 
   
   
-<span data-ttu-id="7b3d2-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="7b3d2-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="2a5f1-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="2a5f1-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="7b3d2-105">Gibt die CPU-Steuerung für den MAPI-Spooler an, sodass Sie alle für erforderlich erachteten Aufgaben ausführen kann.</span><span class="sxs-lookup"><span data-stu-id="7b3d2-105">Gives control of the CPU to the MAPI spooler so that it can perform any tasks it considers necessary.</span></span>
+<span data-ttu-id="2a5f1-105">Gibt dem MAPI-Spooler die Kontrolle über die CPU, sodass er alle für erforderlich erachteten Aufgaben ausführen kann.</span><span class="sxs-lookup"><span data-stu-id="2a5f1-105">Gives control of the CPU to the MAPI spooler so that it can perform any tasks it considers necessary.</span></span>
   
 ```cpp
 HRESULT SpoolerYield(
@@ -33,37 +33,37 @@ ULONG ulFlags
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="7b3d2-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="7b3d2-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="2a5f1-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="2a5f1-106">Parameters</span></span>
 
- <span data-ttu-id="7b3d2-107">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="7b3d2-107">_ulFlags_</span></span>
+ <span data-ttu-id="2a5f1-107">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="2a5f1-107">_ulFlags_</span></span>
   
-> <span data-ttu-id="7b3d2-108">Reserviert muss NULL sein.</span><span class="sxs-lookup"><span data-stu-id="7b3d2-108">Reserved; must be zero.</span></span>
+> <span data-ttu-id="2a5f1-108">Reserviert; muss null sein.</span><span class="sxs-lookup"><span data-stu-id="2a5f1-108">Reserved; must be zero.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="7b3d2-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="7b3d2-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="2a5f1-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="2a5f1-109">Return value</span></span>
 
-<span data-ttu-id="7b3d2-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="7b3d2-110">S_OK</span></span> 
+<span data-ttu-id="2a5f1-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="2a5f1-110">S_OK</span></span> 
   
-> <span data-ttu-id="7b3d2-111">Der Transportanbieter hat die CPU erfolgreich veröffentlicht.</span><span class="sxs-lookup"><span data-stu-id="7b3d2-111">The transport provider successfully released the CPU.</span></span>
+> <span data-ttu-id="2a5f1-111">Der Transportanbieter hat die CPU erfolgreich freigegeben.</span><span class="sxs-lookup"><span data-stu-id="2a5f1-111">The transport provider successfully released the CPU.</span></span>
     
-<span data-ttu-id="7b3d2-112">MAPI_W_CANCEL_MESSAGE</span><span class="sxs-lookup"><span data-stu-id="7b3d2-112">MAPI_W_CANCEL_MESSAGE</span></span> 
+<span data-ttu-id="2a5f1-112">MAPI_W_CANCEL_MESSAGE</span><span class="sxs-lookup"><span data-stu-id="2a5f1-112">MAPI_W_CANCEL_MESSAGE</span></span> 
   
-> <span data-ttu-id="7b3d2-113">Weist den Transportanbieter an, die Übermittlung der Nachricht an Empfänger zu beenden, die Sie noch nicht erhalten haben.</span><span class="sxs-lookup"><span data-stu-id="7b3d2-113">Instructs the transport provider to stop the delivery of the message to any recipients that have not yet received it.</span></span>
+> <span data-ttu-id="2a5f1-113">Der Transportanbieter wird angewiesen, die Zustellung der Nachricht an alle Empfänger zu beenden, die sie noch nicht empfangen haben.</span><span class="sxs-lookup"><span data-stu-id="2a5f1-113">Instructs the transport provider to stop the delivery of the message to any recipients that have not yet received it.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="7b3d2-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="7b3d2-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="2a5f1-114">Hinweise</span><span class="sxs-lookup"><span data-stu-id="2a5f1-114">Remarks</span></span>
 
-<span data-ttu-id="7b3d2-115">Die **IMAPISupport:: SpoolerYield** -Methode wird für Support Objekte des Transportanbieters implementiert.</span><span class="sxs-lookup"><span data-stu-id="7b3d2-115">The **IMAPISupport::SpoolerYield** method is implemented for transport provider support objects.</span></span> <span data-ttu-id="7b3d2-116">Transport Anbieter rufen **SpoolerYield** auf, damit der MAPI-Spooler alle erforderlichen Verarbeitungsschritte ausführen kann.</span><span class="sxs-lookup"><span data-stu-id="7b3d2-116">Transport providers call **SpoolerYield** to allow the MAPI spooler to accomplish any necessary processing.</span></span> 
+<span data-ttu-id="2a5f1-115">Die **IMAPISupport::SpoolerYield-Methode** wird für Unterstützungsobjekte des Transportanbieters implementiert.</span><span class="sxs-lookup"><span data-stu-id="2a5f1-115">The **IMAPISupport::SpoolerYield** method is implemented for transport provider support objects.</span></span> <span data-ttu-id="2a5f1-116">Transportanbieter rufen **SpoolerYield auf,** damit der MAPI-Spooler alle erforderlichen Verarbeitungsschritte ausführen kann.</span><span class="sxs-lookup"><span data-stu-id="2a5f1-116">Transport providers call **SpoolerYield** to allow the MAPI spooler to accomplish any necessary processing.</span></span> 
   
-## <a name="notes-to-callers"></a><span data-ttu-id="7b3d2-117">Hinweise für Aufrufer</span><span class="sxs-lookup"><span data-stu-id="7b3d2-117">Notes to callers</span></span>
+## <a name="notes-to-callers"></a><span data-ttu-id="2a5f1-117">Hinweise für Aufrufer</span><span class="sxs-lookup"><span data-stu-id="2a5f1-117">Notes to callers</span></span>
 
-<span data-ttu-id="7b3d2-118">Rufen Sie **SpoolerYield** auf, wenn Sie längere Vorgänge ausführen, die angehalten werden können.</span><span class="sxs-lookup"><span data-stu-id="7b3d2-118">Call **SpoolerYield** when you are performing lengthy operations that can be paused.</span></span> <span data-ttu-id="7b3d2-119">Auf diese Weise können vordergrundanwendungen während eines langen Betriebs ausgeführt werden, beispielsweise die Übertragung an eine große Empfängerliste in einem belebten Netzwerk.</span><span class="sxs-lookup"><span data-stu-id="7b3d2-119">This allows foreground applications to run during a long operation, such as delivery to a large recipient list across a busy network.</span></span> 
+<span data-ttu-id="2a5f1-118">Rufen **Sie SpoolerYield auf,** wenn Sie langwierige Vorgänge ausführen, die angehalten werden können.</span><span class="sxs-lookup"><span data-stu-id="2a5f1-118">Call **SpoolerYield** when you are performing lengthy operations that can be paused.</span></span> <span data-ttu-id="2a5f1-119">Dadurch können Vordergrundanwendungen während eines langen Vorgangs ausgeführt werden, z. B. die Zustellung an eine große Empfängerliste über ein ausgelastetes Netzwerk.</span><span class="sxs-lookup"><span data-stu-id="2a5f1-119">This allows foreground applications to run during a long operation, such as delivery to a large recipient list across a busy network.</span></span> 
   
-<span data-ttu-id="7b3d2-120">Wenn **SpoolerYield** mit MAPI_W_CANCEL_MESSAGE zurückgibt, hat der MAPI-Spooler festgestellt, dass die Nachricht nicht mehr gesendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="7b3d2-120">If **SpoolerYield** returns with MAPI_W_CANCEL_MESSAGE, the MAPI spooler has determined that the message should no longer be sent.</span></span> <span data-ttu-id="7b3d2-121">Geben Sie MAPI_E_USER_CANCEL an den Anruf Prozess zurück, und beenden Sie, wenn möglich.</span><span class="sxs-lookup"><span data-stu-id="7b3d2-121">Return MAPI_E_USER_CANCEL to your calling process and exit, if possible.</span></span> 
+<span data-ttu-id="2a5f1-120">Wenn **SpoolerYield** mit MAPI_W_CANCEL_MESSAGE zurückgibt, hat der MAPI-Spooler festgestellt, dass die Nachricht nicht mehr gesendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="2a5f1-120">If **SpoolerYield** returns with MAPI_W_CANCEL_MESSAGE, the MAPI spooler has determined that the message should no longer be sent.</span></span> <span data-ttu-id="2a5f1-121">Geben MAPI_E_USER_CANCEL Zurück zu Ihrem Anrufprozess zurück, und beenden Sie sie, wenn möglich.</span><span class="sxs-lookup"><span data-stu-id="2a5f1-121">Return MAPI_E_USER_CANCEL to your calling process and exit, if possible.</span></span> 
   
-<span data-ttu-id="7b3d2-122">Weitere Informationen zur Angabe des MAPI-Spoolers finden Sie unter [interagieren mit dem MAPI](interacting-with-the-mapi-spooler.md)-Spooler.</span><span class="sxs-lookup"><span data-stu-id="7b3d2-122">For more information about yielding to the MAPI spooler, see [Interacting with the MAPI Spooler](interacting-with-the-mapi-spooler.md).</span></span>
+<span data-ttu-id="2a5f1-122">Weitere Informationen zum Nachgeben an den MAPI-Spooler finden Sie unter [Interacting with the MAPI Spooler](interacting-with-the-mapi-spooler.md).</span><span class="sxs-lookup"><span data-stu-id="2a5f1-122">For more information about yielding to the MAPI spooler, see [Interacting with the MAPI Spooler](interacting-with-the-mapi-spooler.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="7b3d2-123">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="7b3d2-123">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2a5f1-123">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="2a5f1-123">See also</span></span>
 
 
 
-[<span data-ttu-id="7b3d2-124">IMAPISupport: IUnknown</span><span class="sxs-lookup"><span data-stu-id="7b3d2-124">IMAPISupport : IUnknown</span></span>](imapisupportiunknown.md)
+[<span data-ttu-id="2a5f1-124">IMAPISupport: IUnknown</span><span class="sxs-lookup"><span data-stu-id="2a5f1-124">IMAPISupport : IUnknown</span></span>](imapisupportiunknown.md)
 

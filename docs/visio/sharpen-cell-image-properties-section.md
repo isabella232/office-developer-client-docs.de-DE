@@ -16,24 +16,24 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33415922"
 ---
-# <a name="sharpen-cell-image-properties-section"></a><span data-ttu-id="9142b-105">Zelle "Sharpen" (Abschnitt "Image Properties")</span><span class="sxs-lookup"><span data-stu-id="9142b-105">Sharpen Cell (Image Properties Section)</span></span>
+# <a name="sharpen-cell-image-properties-section"></a><span data-ttu-id="f8fd6-105">Zelle "Sharpen" (Abschnitt "Image Properties")</span><span class="sxs-lookup"><span data-stu-id="f8fd6-105">Sharpen Cell (Image Properties Section)</span></span>
 
-<span data-ttu-id="9142b-106">Schärft eine Bitmapgrafik.</span><span class="sxs-lookup"><span data-stu-id="9142b-106">Sharpens a bitmap image.</span></span> <span data-ttu-id="9142b-107">Der Standardwert ist 0 %.</span><span class="sxs-lookup"><span data-stu-id="9142b-107">The default value is 0%.</span></span> <span data-ttu-id="9142b-108">Beim Scharfzeichnen einer Grafik wird diese durch Erhöhen des Kontrasts angrenzender Pixel fokussiert.</span><span class="sxs-lookup"><span data-stu-id="9142b-108">Sharpening an image focuses it by increasing the contrast of adjacent pixels.</span></span>
+<span data-ttu-id="f8fd6-p102">Schärft eine Bitmapgrafik. Der Standardwert ist 0 %. Beim Scharfzeichnen einer Grafik wird diese durch Erhöhen des Kontrasts angrenzender Pixel fokussiert.</span><span class="sxs-lookup"><span data-stu-id="f8fd6-p102">Sharpens a bitmap image. The default value is 0%. Sharpening an image focuses it by increasing the contrast of adjacent pixels.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="9142b-109">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="9142b-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f8fd6-109">Hinweise</span><span class="sxs-lookup"><span data-stu-id="f8fd6-109">Remarks</span></span>
 
-<span data-ttu-id="9142b-110">Wenn Sie einen Verweis auf die Zelle schärfen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="9142b-110">To get a reference to the Sharpen cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="f8fd6-110">Um einen Verweis auf die Zelle Sharpen anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie:</span><span class="sxs-lookup"><span data-stu-id="f8fd6-110">To get a reference to the Sharpen cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="9142b-111">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="9142b-111">Cell name:</span></span>  <br/> | <span data-ttu-id="9142b-112">"Sharpen</span><span class="sxs-lookup"><span data-stu-id="9142b-112">Sharpen</span></span>  <br/> |
+| <span data-ttu-id="f8fd6-111">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="f8fd6-111">Cell name:</span></span>  <br/> | <span data-ttu-id="f8fd6-112">Sharpen</span><span class="sxs-lookup"><span data-stu-id="f8fd6-112">Sharpen</span></span>  <br/> |
    
-<span data-ttu-id="9142b-113">Wenn Sie einen Verweis auf die Zelle Scharfzeichnen aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="9142b-113">To get a reference to the Sharpen cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="f8fd6-113">Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle Sharpen nach Index aus einem Programm zu erhalten:</span><span class="sxs-lookup"><span data-stu-id="f8fd6-113">To get a reference to the Sharpen cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="9142b-114">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="9142b-114">Section index:</span></span>  <br/> |<span data-ttu-id="9142b-115">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="9142b-115">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="9142b-116">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="9142b-116">Row index:</span></span>  <br/> |<span data-ttu-id="9142b-117">**visRowImage**</span><span class="sxs-lookup"><span data-stu-id="9142b-117">**visRowImage**</span></span> <br/> |
-| <span data-ttu-id="9142b-118">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="9142b-118">Cell index:</span></span>  <br/> |<span data-ttu-id="9142b-119">**visImageSharpen**</span><span class="sxs-lookup"><span data-stu-id="9142b-119">**visImageSharpen**</span></span> <br/> |
+| <span data-ttu-id="f8fd6-114">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="f8fd6-114">Section index:</span></span>  <br/> |<span data-ttu-id="f8fd6-115">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="f8fd6-115">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="f8fd6-116">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="f8fd6-116">Row index:</span></span>  <br/> |<span data-ttu-id="f8fd6-117">**visRowImage**</span><span class="sxs-lookup"><span data-stu-id="f8fd6-117">**visRowImage**</span></span> <br/> |
+| <span data-ttu-id="f8fd6-118">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="f8fd6-118">Cell index:</span></span>  <br/> |<span data-ttu-id="f8fd6-119">**visImageSharpen**</span><span class="sxs-lookup"><span data-stu-id="f8fd6-119">**visImageSharpen**</span></span> <br/> |
    
 

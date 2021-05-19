@@ -16,12 +16,12 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33414830"
 ---
-# <a name="document-properties-section"></a><span data-ttu-id="d8f72-103">Abschnitt "Document Properties"</span><span class="sxs-lookup"><span data-stu-id="d8f72-103">Document Properties Section</span></span>
+# <a name="document-properties-section"></a><span data-ttu-id="e8c0c-103">Abschnitt "Document Properties"</span><span class="sxs-lookup"><span data-stu-id="e8c0c-103">Document Properties Section</span></span>
 
-<span data-ttu-id="d8f72-104">Enthält Zellen für ein Dokument, über die die Vorschauqualität, der Geltungsbereich und das Ausgabeformat gesteuert werden.</span><span class="sxs-lookup"><span data-stu-id="d8f72-104">Contains cells for a document that control preview quality, scope, and output format.</span></span>
+<span data-ttu-id="e8c0c-104">Enthält Zellen für ein Dokument, über die die Vorschauqualität, der Geltungsbereich und das Ausgabeformat gesteuert werden.</span><span class="sxs-lookup"><span data-stu-id="e8c0c-104">Contains cells for a document that control preview quality, scope, and output format.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="d8f72-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="d8f72-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="e8c0c-105">Hinweise</span><span class="sxs-lookup"><span data-stu-id="e8c0c-105">Remarks</span></span>
 
- <span data-ttu-id="d8f72-106">Sie können diese Werte auch über das Dialogfeld **Eigenschaften** festlegen (Klicken Sie auf die Registerkarte **Datei** , klicken Sie auf **Info**, klicken Sie auf **Eigenschaften**, und klicken Sie dann auf **Erweiterte Eigenschaften**).</span><span class="sxs-lookup"><span data-stu-id="d8f72-106">You can also set these values by using the **Properties** dialog box (click the **File** tab, click **Info**, click **Properties**, and then click **Advanced Properties**).</span></span>
+ <span data-ttu-id="e8c0c-106">Sie können diese Werte auch  mithilfe des Dialogfelds Eigenschaften festlegen (klicken Sie auf die Registerkarte Datei, klicken Sie auf **Info,** klicken Sie auf **Eigenschaften,** und klicken Sie dann auf **Erweiterte Eigenschaften**). </span><span class="sxs-lookup"><span data-stu-id="e8c0c-106">You can also set these values by using the **Properties** dialog box (click the **File** tab, click **Info**, click **Properties**, and then click **Advanced Properties**).</span></span>
   
 
