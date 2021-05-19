@@ -14,25 +14,25 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/27/2021
 ms.locfileid: "52061258"
 ---
-# <a name="listmembercount-function"></a><span data-ttu-id="45fb6-103">LISTMEMBERCOUNT Function</span><span class="sxs-lookup"><span data-stu-id="45fb6-103">LISTMEMBERCOUNT Function</span></span>
+# <a name="listmembercount-function"></a><span data-ttu-id="bebca-103">LISTMEMBERCOUNT Function</span><span class="sxs-lookup"><span data-stu-id="bebca-103">LISTMEMBERCOUNT Function</span></span>
 
-<span data-ttu-id="45fb6-104">Gibt die Anzahl der Member-Shapes im Listencontainer-Shape zurück.</span><span class="sxs-lookup"><span data-stu-id="45fb6-104">Returns the number of member shapes in the list container shape.</span></span>
+<span data-ttu-id="bebca-104">Gibt die Anzahl der Member-Shapes im Listencontainer-Shape zurück.</span><span class="sxs-lookup"><span data-stu-id="bebca-104">Returns the number of member shapes in the list container shape.</span></span>
   
-## <a name="version-information"></a><span data-ttu-id="45fb6-105">Versionsinformationen</span><span class="sxs-lookup"><span data-stu-id="45fb6-105">Version Information</span></span>
+## <a name="version-information"></a><span data-ttu-id="bebca-105">Versionsinformationen</span><span class="sxs-lookup"><span data-stu-id="bebca-105">Version Information</span></span>
 
-<span data-ttu-id="45fb6-106">Hinzugefügte Version: Visio 2010
-</span><span class="sxs-lookup"><span data-stu-id="45fb6-106">Version Added: Visio 2010</span></span> 
+<span data-ttu-id="bebca-106">Hinzugefügte Version: Visio 2010
+</span><span class="sxs-lookup"><span data-stu-id="bebca-106">Version Added: Visio 2010</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="45fb6-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="45fb6-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="bebca-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="bebca-107">Syntax</span></span>
 
-<span data-ttu-id="45fb6-108">LISTMEMBERCOUNT()</span><span class="sxs-lookup"><span data-stu-id="45fb6-108">LISTMEMBERCOUNT()</span></span>
+<span data-ttu-id="bebca-108">LISTMEMBERCOUNT()</span><span class="sxs-lookup"><span data-stu-id="bebca-108">LISTMEMBERCOUNT()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="45fb6-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="45fb6-109">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="bebca-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="bebca-109">Return value</span></span>
 
-<span data-ttu-id="45fb6-110">Ganze Zahl</span><span class="sxs-lookup"><span data-stu-id="45fb6-110">Integer</span></span>
+<span data-ttu-id="bebca-110">Ganze Zahl</span><span class="sxs-lookup"><span data-stu-id="bebca-110">Integer</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="45fb6-111">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="45fb6-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="bebca-111">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="bebca-111">Remarks</span></span>
 
-<span data-ttu-id="45fb6-112">Wenn es sich bei dem Shape nicht um einen Listencontainer handelt, gibt die LISTMEMBERCOUNT-Funktion 0 zurück.</span><span class="sxs-lookup"><span data-stu-id="45fb6-112">If the shape is not a list container, the LISTMEMBERCOUNT function returns 0.</span></span>
+<span data-ttu-id="bebca-112">Wenn es sich bei dem Shape nicht um einen Listencontainer handelt, gibt die LISTMEMBERCOUNT-Funktion 0 zurück.</span><span class="sxs-lookup"><span data-stu-id="bebca-112">If the shape is not a list container, the LISTMEMBERCOUNT function returns 0.</span></span>
   
 

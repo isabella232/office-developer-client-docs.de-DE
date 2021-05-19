@@ -1,5 +1,5 @@
 ---
-title: Kanonische pidtagcontroltype (-Eigenschaft
+title: PidTagControlType (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,94 +19,94 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 12/28/2020
 ms.locfileid: "49734203"
 ---
-# <a name="pidtagcontroltype-canonical-property"></a><span data-ttu-id="35f4d-103">Kanonische pidtagcontroltype (-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="35f4d-103">PidTagControlType Canonical Property</span></span>
+# <a name="pidtagcontroltype-canonical-property"></a><span data-ttu-id="9ba92-103">PidTagControlType (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="9ba92-103">PidTagControlType Canonical Property</span></span>
 
   
   
-<span data-ttu-id="35f4d-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="35f4d-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="9ba92-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="9ba92-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="35f4d-105">Enthält einen Wert, der einen Steuerelementtyp für ein in einem Dialogfeld verwendetes Steuerelement angibt.</span><span class="sxs-lookup"><span data-stu-id="35f4d-105">Contains a value indicating a control type for a control used in a dialog box.</span></span> 
+<span data-ttu-id="9ba92-105">Enthält einen Wert, der einen Steuerelementtyp für ein Steuerelement angibt, das in einem Dialogfeld verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="9ba92-105">Contains a value indicating a control type for a control used in a dialog box.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="35f4d-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="35f4d-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="35f4d-107">PR_CONTROL_TYPE</span><span class="sxs-lookup"><span data-stu-id="35f4d-107">PR_CONTROL_TYPE</span></span>  <br/> |
-|<span data-ttu-id="35f4d-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="35f4d-108">Identifier:</span></span>  <br/> |<span data-ttu-id="35f4d-109">0x3F02</span><span class="sxs-lookup"><span data-stu-id="35f4d-109">0x3F02</span></span>  <br/> |
-|<span data-ttu-id="35f4d-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="35f4d-110">Data type:</span></span>  <br/> |<span data-ttu-id="35f4d-111">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="35f4d-111">PT_LONG</span></span>  <br/> |
-|<span data-ttu-id="35f4d-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="35f4d-112">Area:</span></span>  <br/> |<span data-ttu-id="35f4d-113">MAPI-Anzeigetabelle</span><span class="sxs-lookup"><span data-stu-id="35f4d-113">MAPI display table</span></span>  <br/> |
+|<span data-ttu-id="9ba92-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="9ba92-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="9ba92-107">PR_CONTROL_TYPE</span><span class="sxs-lookup"><span data-stu-id="9ba92-107">PR_CONTROL_TYPE</span></span>  <br/> |
+|<span data-ttu-id="9ba92-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="9ba92-108">Identifier:</span></span>  <br/> |<span data-ttu-id="9ba92-109">0x3F02</span><span class="sxs-lookup"><span data-stu-id="9ba92-109">0x3F02</span></span>  <br/> |
+|<span data-ttu-id="9ba92-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="9ba92-110">Data type:</span></span>  <br/> |<span data-ttu-id="9ba92-111">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="9ba92-111">PT_LONG</span></span>  <br/> |
+|<span data-ttu-id="9ba92-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="9ba92-112">Area:</span></span>  <br/> |<span data-ttu-id="9ba92-113">MAPI-Anzeigetabelle</span><span class="sxs-lookup"><span data-stu-id="9ba92-113">MAPI display table</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="35f4d-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="35f4d-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="9ba92-114">Hinweise</span><span class="sxs-lookup"><span data-stu-id="9ba92-114">Remarks</span></span>
 
-<span data-ttu-id="35f4d-115">Diese Eigenschaft kann genau einen der folgenden Werte aufweisen:</span><span class="sxs-lookup"><span data-stu-id="35f4d-115">This property can have exactly one of the following values:</span></span>
+<span data-ttu-id="9ba92-115">Diese Eigenschaft kann genau einen der folgenden Werte haben:</span><span class="sxs-lookup"><span data-stu-id="9ba92-115">This property can have exactly one of the following values:</span></span>
     
-<span data-ttu-id="35f4d-116">DTCT_LABEL (0x00000000)</span><span class="sxs-lookup"><span data-stu-id="35f4d-116">DTCT_LABEL (0x00000000)</span></span>
+<span data-ttu-id="9ba92-116">DTCT_LABEL (0x00000000)</span><span class="sxs-lookup"><span data-stu-id="9ba92-116">DTCT_LABEL (0x00000000)</span></span>
   
-> <span data-ttu-id="35f4d-117">Eine Dialogfeld Bezeichnung.</span><span class="sxs-lookup"><span data-stu-id="35f4d-117">A dialog label.</span></span>
+> <span data-ttu-id="9ba92-117">Eine Dialogbeschriftung.</span><span class="sxs-lookup"><span data-stu-id="9ba92-117">A dialog label.</span></span>
    
-<span data-ttu-id="35f4d-118">DTCT_EDIT (0x00000001)</span><span class="sxs-lookup"><span data-stu-id="35f4d-118">DTCT_EDIT (0x00000001)</span></span>
+<span data-ttu-id="9ba92-118">DTCT_EDIT (0x00000001)</span><span class="sxs-lookup"><span data-stu-id="9ba92-118">DTCT_EDIT (0x00000001)</span></span>
   
-> <span data-ttu-id="35f4d-119">Ein Dialogfeld Bearbeitungstextfeld.</span><span class="sxs-lookup"><span data-stu-id="35f4d-119">A dialog edit text box.</span></span>
+> <span data-ttu-id="9ba92-119">Ein Dialogfeld Bearbeiten eines Textfelds.</span><span class="sxs-lookup"><span data-stu-id="9ba92-119">A dialog edit text box.</span></span>
 
-<span data-ttu-id="35f4d-120">DTCT_LBX (0x00000002)</span><span class="sxs-lookup"><span data-stu-id="35f4d-120">DTCT_LBX (0x00000002)</span></span>
+<span data-ttu-id="9ba92-120">DTCT_LBX (0x00000002)</span><span class="sxs-lookup"><span data-stu-id="9ba92-120">DTCT_LBX (0x00000002)</span></span>
   
-> <span data-ttu-id="35f4d-121">Dialog-Listenfeld.</span><span class="sxs-lookup"><span data-stu-id="35f4d-121">A dialog list box.</span></span>
+> <span data-ttu-id="9ba92-121">Ein Dialogfeld.</span><span class="sxs-lookup"><span data-stu-id="9ba92-121">A dialog list box.</span></span>
     
-<span data-ttu-id="35f4d-122">DTCT_COMBOBOX (0x00000003)</span><span class="sxs-lookup"><span data-stu-id="35f4d-122">DTCT_COMBOBOX (0x00000003)</span></span>
+<span data-ttu-id="9ba92-122">DTCT_COMBOBOX (0x00000003)</span><span class="sxs-lookup"><span data-stu-id="9ba92-122">DTCT_COMBOBOX (0x00000003)</span></span>
   
-> <span data-ttu-id="35f4d-123">Ein Dialogfeld-Kombinationsfeld.</span><span class="sxs-lookup"><span data-stu-id="35f4d-123">A dialog combo box.</span></span>
+> <span data-ttu-id="9ba92-123">Ein Dialogfeld-Kombinationsfeld.</span><span class="sxs-lookup"><span data-stu-id="9ba92-123">A dialog combo box.</span></span>
 
-<span data-ttu-id="35f4d-124">DTCT_DDLBX (0x00000004)</span><span class="sxs-lookup"><span data-stu-id="35f4d-124">DTCT_DDLBX (0x00000004)</span></span>
+<span data-ttu-id="9ba92-124">DTCT_DDLBX (0x00000004)</span><span class="sxs-lookup"><span data-stu-id="9ba92-124">DTCT_DDLBX (0x00000004)</span></span>
   
-> <span data-ttu-id="35f4d-125">Ein Dropdown-Listenfeld für Dialogfelder.</span><span class="sxs-lookup"><span data-stu-id="35f4d-125">A dialog drop-down list box.</span></span>
+> <span data-ttu-id="9ba92-125">Ein Dropdownlistenfeld des Dialogfelds.</span><span class="sxs-lookup"><span data-stu-id="9ba92-125">A dialog drop-down list box.</span></span>
 
-<span data-ttu-id="35f4d-126">DTCT_CHECKBOX (0x00000005)</span><span class="sxs-lookup"><span data-stu-id="35f4d-126">DTCT_CHECKBOX (0x00000005)</span></span>
+<span data-ttu-id="9ba92-126">DTCT_CHECKBOX (0x00000005)</span><span class="sxs-lookup"><span data-stu-id="9ba92-126">DTCT_CHECKBOX (0x00000005)</span></span>
   
-> <span data-ttu-id="35f4d-127">Ein Kontrollkästchen für ein Dialogfeld.</span><span class="sxs-lookup"><span data-stu-id="35f4d-127">A dialog check box.</span></span>
+> <span data-ttu-id="9ba92-127">Ein Dialogfeld.</span><span class="sxs-lookup"><span data-stu-id="9ba92-127">A dialog check box.</span></span>
 
-<span data-ttu-id="35f4d-128">DTCT_GROUPBOX (0x00000006)</span><span class="sxs-lookup"><span data-stu-id="35f4d-128">DTCT_GROUPBOX (0x00000006)</span></span>
+<span data-ttu-id="9ba92-128">DTCT_GROUPBOX (0x00000006)</span><span class="sxs-lookup"><span data-stu-id="9ba92-128">DTCT_GROUPBOX (0x00000006)</span></span>
   
-> <span data-ttu-id="35f4d-129">Dialoggruppen Feld.</span><span class="sxs-lookup"><span data-stu-id="35f4d-129">A dialog group box.</span></span>
+> <span data-ttu-id="9ba92-129">Ein Dialogfeld.</span><span class="sxs-lookup"><span data-stu-id="9ba92-129">A dialog group box.</span></span>
   
-<span data-ttu-id="35f4d-130">DTCT_BUTTON (0x00000007)</span><span class="sxs-lookup"><span data-stu-id="35f4d-130">DTCT_BUTTON (0x00000007)</span></span>
+<span data-ttu-id="9ba92-130">DTCT_BUTTON (0x00000007)</span><span class="sxs-lookup"><span data-stu-id="9ba92-130">DTCT_BUTTON (0x00000007)</span></span>
   
-> <span data-ttu-id="35f4d-131">Ein Dialogfeld-Steuerelement.</span><span class="sxs-lookup"><span data-stu-id="35f4d-131">A dialog button control.</span></span>
+> <span data-ttu-id="9ba92-131">Ein Dialogfeldschaltfläche-Steuerelement.</span><span class="sxs-lookup"><span data-stu-id="9ba92-131">A dialog button control.</span></span>
     
-<span data-ttu-id="35f4d-132">DTCT_PAGE (0x00000008)</span><span class="sxs-lookup"><span data-stu-id="35f4d-132">DTCT_PAGE (0x00000008)</span></span>
+<span data-ttu-id="9ba92-132">DTCT_PAGE (0x00000008)</span><span class="sxs-lookup"><span data-stu-id="9ba92-132">DTCT_PAGE (0x00000008)</span></span>
   
-> <span data-ttu-id="35f4d-133">Seite mit Registerkarten im Dialogfeld.</span><span class="sxs-lookup"><span data-stu-id="35f4d-133">A dialog tabbed page.</span></span>
+> <span data-ttu-id="9ba92-133">Eine Seite mit Registerkarten im Dialogfeld.</span><span class="sxs-lookup"><span data-stu-id="9ba92-133">A dialog tabbed page.</span></span>
     
-<span data-ttu-id="35f4d-134">DTCT_RADIOBUTTON (0x00000009)</span><span class="sxs-lookup"><span data-stu-id="35f4d-134">DTCT_RADIOBUTTON (0x00000009)</span></span>
+<span data-ttu-id="9ba92-134">DTCT_RADIOBUTTON (0x00000009)</span><span class="sxs-lookup"><span data-stu-id="9ba92-134">DTCT_RADIOBUTTON (0x00000009)</span></span>
   
-> <span data-ttu-id="35f4d-135">Optionsfeld "Dialog".</span><span class="sxs-lookup"><span data-stu-id="35f4d-135">A dialog radio button.</span></span>
+> <span data-ttu-id="9ba92-135">Ein Dialogfeld-Optionsfeld.</span><span class="sxs-lookup"><span data-stu-id="9ba92-135">A dialog radio button.</span></span>
     
-<span data-ttu-id="35f4d-136">DTCT_MVLISTBOX (0x0000000B)</span><span class="sxs-lookup"><span data-stu-id="35f4d-136">DTCT_MVLISTBOX (0x0000000B)</span></span>
+<span data-ttu-id="9ba92-136">DTCT_MVLISTBOX (0x0000000B)</span><span class="sxs-lookup"><span data-stu-id="9ba92-136">DTCT_MVLISTBOX (0x0000000B)</span></span>
   
-> <span data-ttu-id="35f4d-137">Ein mehrwertiges Listenfeld, das von einer mehrwertigen Eigenschaft vom Typ String aufgefüllt wird.</span><span class="sxs-lookup"><span data-stu-id="35f4d-137">A multivalued list box populated by a multivalued property of type string.</span></span>
+> <span data-ttu-id="9ba92-137">Ein mehrwertiges Listenfeld, das von einer mehrwertigen Eigenschaft vom Typ string aufgefüllt wird.</span><span class="sxs-lookup"><span data-stu-id="9ba92-137">A multivalued list box populated by a multivalued property of type string.</span></span>
     
-<span data-ttu-id="35f4d-138">DTCT_MVDDLBX (0x0000000C)</span><span class="sxs-lookup"><span data-stu-id="35f4d-138">DTCT_MVDDLBX (0x0000000C)</span></span>
+<span data-ttu-id="9ba92-138">DTCT_MVDDLBX (0x0000000C)</span><span class="sxs-lookup"><span data-stu-id="9ba92-138">DTCT_MVDDLBX (0x0000000C)</span></span>
   
-> <span data-ttu-id="35f4d-139">Ein mehrwertiges Dropdown-Listenfeld, das von einer mehrwertigen Eigenschaft vom Typ String aufgefüllt wird.</span><span class="sxs-lookup"><span data-stu-id="35f4d-139">A multivalued drop-down list box populated by a multivalued property of type string.</span></span>
+> <span data-ttu-id="9ba92-139">Ein mehrwertiges Dropdownlistenfeld, das von einer mehrwertigen Eigenschaft vom Typ string aufgefüllt wird.</span><span class="sxs-lookup"><span data-stu-id="9ba92-139">A multivalued drop-down list box populated by a multivalued property of type string.</span></span>
     
-## <a name="related-resources"></a><span data-ttu-id="35f4d-140">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="35f4d-140">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="9ba92-140">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="9ba92-140">Related resources</span></span>
 
-### <a name="header-files"></a><span data-ttu-id="35f4d-141">Header Dateien</span><span class="sxs-lookup"><span data-stu-id="35f4d-141">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="9ba92-141">Headerdateien</span><span class="sxs-lookup"><span data-stu-id="9ba92-141">Header files</span></span>
 
-<span data-ttu-id="35f4d-142">Mapidefs. h</span><span class="sxs-lookup"><span data-stu-id="35f4d-142">Mapidefs.h</span></span>
+<span data-ttu-id="9ba92-142">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="9ba92-142">Mapidefs.h</span></span>
   
-> <span data-ttu-id="35f4d-143">Stellt Definitionen von Datentypen bereit.</span><span class="sxs-lookup"><span data-stu-id="35f4d-143">Provides data type definitions.</span></span>
+> <span data-ttu-id="9ba92-143">Bietet Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="9ba92-143">Provides data type definitions.</span></span>
     
-<span data-ttu-id="35f4d-144">mapitags. h</span><span class="sxs-lookup"><span data-stu-id="35f4d-144">mapitags.h</span></span>
+<span data-ttu-id="9ba92-144">mapitags.h</span><span class="sxs-lookup"><span data-stu-id="9ba92-144">mapitags.h</span></span>
   
-> <span data-ttu-id="35f4d-145">Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet werden.</span><span class="sxs-lookup"><span data-stu-id="35f4d-145">Contains definitions of properties listed as alternate names.</span></span>
+> <span data-ttu-id="9ba92-145">Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.</span><span class="sxs-lookup"><span data-stu-id="9ba92-145">Contains definitions of properties listed as alternate names.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="35f4d-146">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="35f4d-146">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9ba92-146">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="9ba92-146">See also</span></span>
 
 
 
-[<span data-ttu-id="35f4d-147">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="35f4d-147">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="9ba92-147">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="9ba92-147">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="35f4d-148">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="35f4d-148">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="9ba92-148">KANONISCHE EIGENSCHAFTEN VON MAPI</span><span class="sxs-lookup"><span data-stu-id="9ba92-148">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="35f4d-149">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="35f4d-149">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="9ba92-149">Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="9ba92-149">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="35f4d-150">Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="35f4d-150">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="9ba92-150">Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="9ba92-150">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 
