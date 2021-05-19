@@ -17,26 +17,26 @@ ms.locfileid: "32346459"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Dieses Thema enthält ein Codebeispiel in C++, das zeigt, wie der Pfad einer bestimmten Version von MAPI abgerufen wird, die vom Standard-e-Mail-Client auf einem Computer verwendet wird. MAPI-e-Mail-Clients können in der Registrierung eine benutzerdefinierte DLL angeben, die von der MAPI-Stub-Bibliothek geladen und MAPI-Aufrufe an gesendet werden soll. Der Registrierungsschlüssel, der für diese benutzerdefinierte DLL für einen standardmäßigen e-Mail-Client festgelegt werden soll, lautet **MSIComponentID**unter dem **HKLM\Software\Clients\Mail** -Schlüssel des Standard-e-Mail-Clients. Die [FGetComponentPath](fgetcomponentpath.md) -Funktion, die von der MAPI-Stub-Bibliothek, mapistub. dll, exportiert wird, kann den Pfad zur BENUTZERdefinierten MAPI-Version zurückgeben, die durch den **MSIComponentID** -Registrierungsschlüssel angegeben wird. 
+Dieses Thema enthält ein Codebeispiel in C++, das zeigt, wie Sie den Pfad einer bestimmten Version von MAPI abrufen, die vom Standard-E-Mail-Client auf einem Computer verwendet wird. MAPI-E-Mail-Clients können in der Registrierung eine benutzerdefinierte DLL angeben, an die die MAPI-Stubbibliothek MAPI-Aufrufe laden und senden soll. Der Registrierungsschlüssel, der für diese benutzerdefinierte DLL für einen Standard-E-Mail-Client festgelegt werden soll, ist **MSIComponentID** unter **dem HKLM\Software\Clients\Mail-Schlüssel** des Standard-E-Mail-Clients. Die [FGetComponentPath-Funktion,](fgetcomponentpath.md) die von der MAPI-Stubbibliothek mapistub.dll exportiert wird, kann den Pfad zur benutzerdefinierten Version von MAPI zurückgeben, die durch den **Registrierungsschlüssel MSIComponentID** angegeben wird. 
   
-Dieses Codebeispiel umfasst zwei Funktionen: `HrGetRegMultiSZValueA` und `GetMAPISVCPath`. Die `GetMAPISVCPath` Funktion verwendet [FGetComponentPath](fgetcomponentpath.md) , um den Pfad zur benutzerdefinierten Version von MAPI abzurufen. Es wird davon ausgegangen, dass der standardmäßige e-Mail- **** Client Microsoft Office Outlook `{FF1D0740-D227-11D1-A4B0-006008AF820E}`2007 ist und an FGetComponentPath den Wert übergibt, der von Outlook 2007 als Komponenten-ID von MAPI für den **MSIComponentID** -Registrierungsschlüssel festgelegt wird. 
+Dieses Codebeispiel enthält zwei Funktionen:  `HrGetRegMultiSZValueA` und  `GetMAPISVCPath` . Die  `GetMAPISVCPath` Funktion verwendet [FGetComponentPath,](fgetcomponentpath.md) um den Pfad zur benutzerdefinierten Version von MAPI zu erhalten. Es wird davon ausgegangen, dass der Standard-E-Mail-Client Microsoft Office Outlook 2007 ist und **an FGetComponentPath** den Wert übergibt, den Outlook 2007 als Komponenten-ID von MAPI für den  `{FF1D0740-D227-11D1-A4B0-006008AF820E}` **MSIComponentID-Registrierungsschlüssel** legt. 
   
 > [!NOTE]
-> In der Praxis sollten Sie nicht davon ausgehen, `{FF1D0740-D227-11D1-A4B0-006008AF820E}`dass der Wert, ist immer die Komponenten-ID von MAPI und direkt an **FGetComponentPath**. Um zuverlässig herauszufinden, welche Version von MAPI Outlook auf einem Computer verwendet wird, müssen Sie den Wert von **MSIComponentID** aus der Registrierung lesen und an **FGetComponentPath**weiterleiten. 
+> In der Praxis sollten Sie nicht davon ausgehen, dass der Wert , immer die Komponenten-ID von MAPI ist, und ihn direkt an `{FF1D0740-D227-11D1-A4B0-006008AF820E}` **FGetComponentPath übergeben.** Um zuverlässig herauszufinden, welche Version von MAPI Outlook auf einem Computer verwendet, müssen Sie aus der Registrierung den Wert von **MSIComponentID** lesen und an **FGetComponentPath übergeben.** 
   
-In den folgenden Schritten wird `GetMAPISVCPath` beschrieben, wie dies funktioniert. 
+In den folgenden Schritten wird  `GetMAPISVCPath` beschrieben, wie dies funktioniert. 
   
-1. Lädt die MAPI-Stub-Bibliothek mapistub. dll aus dem Systemverzeichnis.
+1. Lädt die MAPI-Stubbibliothek mapistub.dll aus dem Systemverzeichnis.
     
-2. Wird davon ausgeGangen, dass mapistub. dll die **FGetComponentPath** -Funktion exportiert, versucht Sie, die Adresse dieser Funktion aus mapistub. dll abzurufen. 
+2. Angenommen, mapistub.dll die **FGetComponentPath-Funktion** exportiert, wird versucht, die Adresse dieser Funktion aus mapistub.dll. 
     
-3. Wenn die Adresse von mapistub. dll nicht abgerufen wird, versucht Sie, die Adresse aus Mapi32. dll abzurufen.
+3. Wenn beim Abrufen der Adresse aus mapistub.dll fehlert, wird versucht, die Adresse aus dem mapi32.dll.
     
-4. Wenn die Adresse von **FGetComponentPath** erfolgreich abgerufen wird, wird die Registrierung geöffnet, und die `HrGetRegMultiSZValueA` -Funktion wird verwendet, um die Registrierungswerte unter **HKLM\Software\Clients\Mail\Microsoft Outlook**zu lesen. 
+4. Wenn das Abrufen der Adresse von **FGetComponentPath** erfolgreich ist, wird die Registrierung geöffnet und die Funktion verwendet, um die Registrierungswerte unter  `HrGetRegMultiSZValueA` **HKLM\Software\Clients\Mail\Microsoft Outlook** zu lesen. 
     
-5. Ruft **FGetComponentPath** `{FF1D0740-D227-11D1-A4B0-006008AF820E}`auf, um den Pfad zur Version von MAPI abzurufen, die von Outlook 2007 verwendet wird.
+5. Ruft **FGetComponentPath auf,** um den Von Outlook 2007 verwendeten Pfad zur  `{FF1D0740-D227-11D1-A4B0-006008AF820E}` MapI-Version zu erhalten.
     
-Beachten Sie, dass zur Unterstützung lokalisierter Kopien von MAPI für englische und nicht-englische Gebietsschemata das Codebeispiel die Werte für die **MSIApplicationLCID** und **MSIOfficeLCID** liest und **FGetComponentPath**aufruft, indem **Sie zuerst MSIApplicationLCID** als *szQualifier* und dann erneut angeben von **MSIOfficeLCID** als *szQualifier* . Weitere Informationen zu Registrierungsschlüsseln für e-Mail-Clients, die nicht-englische Sprachen unterstützen, finden Sie unter [Einrichten der MSI-Schlüssel für Ihre MAPI-DLL](https://msdn.microsoft.com/library/ee909494%28VS.85%29.aspx).
+Beachten Sie, dass zum Unterstützen lokalisierter Kopien von MAPI für englische und nicht englische Locales im Codebeispiel die Werte für die Unterschlüssel **MSIApplicationLCID** und **MSIOfficeLCID** gelesen und **FGetComponentPath aufruft,** zunächst **MSIApplicationLCID** als  *szQualifier*  angegeben und dann **erneut MSIOfficeLCID** als  *szQualifier*  angegeben wird. Weitere Informationen zu Registrierungsschlüsseln für E-Mail-Clients, die nicht englische Sprachen unterstützen, finden Sie unter [Einrichten der MSI-Schlüssel für Ihre MAPI-DLL](https://msdn.microsoft.com/library/ee909494%28VS.85%29.aspx).
   
 ```cpp
 // HrGetRegMultiSZValueA 

@@ -25,7 +25,7 @@ ms.locfileid: "32341699"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Legt den angegebenen Container als Standard Adressbuchcontainer fest.
+Richtet den angegebenen Container als Standard-Adressbuchcontainer ein.
   
 ```cpp
 HRESULT SetDefaultDir(
@@ -38,24 +38,24 @@ HRESULT SetDefaultDir(
 
  _cbEntryID_
   
-> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID_ -Parameter verwiesen wird. 
+> [in] Die Byteanzahl im Eintragsbezeichner, auf den der  _lpEntryID-Parameter_ verweist. 
     
  _lpEntryID_
   
-> in Ein Zeiger auf die Eintrags-ID des standardmäßigen Adressbuch Containers.
+> [in] Ein Zeiger auf die Eintrags-ID des Standard-Adressbuchcontainers.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der standardmäßige Adressbuchcontainer wurde erfolgreich festgelegt.
+> Der Standard-Adressbuchcontainer wurde erfolgreich festgelegt.
     
 ## <a name="remarks"></a>Hinweise
 
-Clients und Dienstanbieter rufen die **SetDefaultDir** -Methode auf, um einen neuen Standard Adressbuchcontainer einzurichten. Der Standardcontainer ist der Container, den der Benutzer sieht, der im Adressbuch angezeigt wird, wenn das Adressbuch zum ersten Mal geöffnet wird. **SetDefaultDir** speichert den Standardcontainer als Eintrag im Profil. Der Container bleibt als Standard, bis entweder ein anderer Aufruf von **SetDefaultDir** in derselben Sitzung oder in einer anderen Sitzung erfolgt oder der Container entfernt wird. 
+Clients und Dienstanbieter rufen die **SetDefaultDir-Methode** auf, um einen neuen Standard-Adressbuchcontainer zu erstellen. Der Standardcontainer ist der Container, den der Benutzer beim ersten Öffnen des Adressbuchs im Adressbuch angezeigt sieht. **SetDefaultDir** speichert den Standardcontainer als Eintrag im Profil. Der Container bleibt die Standardeinstellung, bis ein anderer Aufruf von **SetDefaultDir** in derselben Sitzung oder in einer anderen Sitzung erfolgt oder der Container entfernt wird. 
   
 > [!NOTE]
-> Die [PR_AB_CHOOSE_DIRECTORY_AUTOMATICALLY](pidtagaddressbookchoosedirectoryautomatically-canonical-property.md) -Eigenschaft entspricht der Einstellung **automatisch auswählen** im Dialogfeld Adressbuchoptionen. Wenn diese Eigenschaft im Abschnitt [IID_CAPONE_PROF](https://msdn.microsoft.com/library/281aabc3-9656-299c-4c78-7733dc71050a%28Office.15%29.aspx) vorhanden ist und auf **true**festgelegt ist, wird das Adressbuch Dialogfeld nicht mehr standardmäßig den von **SetDefaultDir**angegebenen Containers, sondern wählt ein Adressbuch, das Microsoft Outlook berücksichtigt geeignet für den Kontext, in dem das Dialogfeld angezeigt wurde. Beachten Sie, dass dies zu einer schlechten Erfahrung für Drittanbieter-Adressbuchanbieter führen kann. 
+> Die [PR_AB_CHOOSE_DIRECTORY_AUTOMATICALLY](pidtagaddressbookchoosedirectoryautomatically-canonical-property.md) entspricht der Einstellung **Automatisch** auswählen im Dialogfeld Adressbuchoptionen. Wenn diese Eigenschaft im Abschnitt [IID_CAPONE_PROF-Profil](https://msdn.microsoft.com/library/281aabc3-9656-299c-4c78-7733dc71050a%28Office.15%29.aspx) vorhanden ist und auf **true** festgelegt ist, wird im Adressbuchdialogfeld nicht mehr standardmäßig der von **SetDefaultDir** angegebene Container verwendet, sondern ein Adressbuch ausgewählt, das von Microsoft Outlook für den Kontext geeignet erachtet wird, in dem das Dialogfeld angezeigt wurde. Beachten Sie, dass dies zu einer schlechten Erfahrung für Adressbuchanbieter von Drittanbietern führen kann. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -63,7 +63,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|Abcontdlg. cpp  <br/> |CAbContDlg::OnSetDefaultDir  <br/> |MfcMapi verwendet die **SetDefaultDir** -Methode, um den angegebenen Adressbuchcontainer als Standardwert festzustellen.  <br/> |
+|Abcontdlg.cpp  <br/> |CAbContDlg::OnSetDefaultDir  <br/> |MFCMAPI verwendet die **SetDefaultDir-Methode,** um den angegebenen Adressbuchcontainer zum Standardcontainer zu machen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

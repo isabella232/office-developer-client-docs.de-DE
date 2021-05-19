@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1f5ce6e0-b79a-4da2-b014-8c00cd72912e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 0905fbe2ba584aef49c50152aaf448267d477c10
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -23,50 +23,50 @@ ms.locfileid: "32348958"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ermöglicht den Zugriff auf Adressbuchcontainer. MAPI-und Clientanwendungen rufen die Methoden von **IABContainer** auf, um die Namensauflösung auszuführen und Empfänger zu erstellen, zu kopieren und zu löschen. 
+Bietet Zugriff auf Adressbuchcontainer. MAPI- und Clientanwendungen rufen die Methoden von **IABContainer** auf, um Namensauflösungen durchzuführen und Empfänger zu erstellen, zu kopieren und zu löschen. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Adressbuchcontainer-Objekte  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Adressbuchcontainerobjekte  <br/> |
 |Implementiert von:  <br/> |Adressbuchanbieter  <br/> |
-|Aufgerufen von:  <br/> |MAPI-und Clientanwendungen  <br/> |
+|Aufgerufen von:  <br/> |MAPI- und Clientanwendungen  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IABContainer  <br/> |
 |Zeigertyp:  <br/> |LPABCONT  <br/> |
-|Transaktionsmodell:  <br/> |Durchgeführt  <br/> |
+|Transaktionsmodell:  <br/> |Transacted  <br/> |
    
 ## <a name="vtable-order"></a>Vtable-Reihenfolge
 
 |||
 |:-----|:-----|
-|[CreateEntry](iabcontainer-createentry.md) <br/> |Erstellt einen neuen Eintrag, bei dem es sich um einen Messagingbenutzer, eine Verteilerliste oder einen anderen Container handeln kann.  <br/> |
+|[CreateEntry](iabcontainer-createentry.md) <br/> |Erstellt einen neuen Eintrag, der ein Messagingbenutzer, eine Verteilerliste oder ein anderer Container sein kann.  <br/> |
 |[CopyEntries](iabcontainer-copyentries.md) <br/> |Kopiert einen oder mehrere Einträge, in der Regel Messagingbenutzer oder Verteilerlisten.  <br/> |
 |[DeleteEntries](iabcontainer-deleteentries.md) <br/> |Entfernt einen oder mehrere Einträge, in der Regel Messagingbenutzer, Verteilerlisten oder andere Container.  <br/> |
-|[ResolveNames](iabcontainer-resolvenames.md) <br/> |Führt die Namensauflösung für einen oder mehrere Empfänger Einträge aus.  <br/> |
+|[ResolveNames](iabcontainer-resolvenames.md) <br/> |Führt die Namensauflösung für einen oder mehrere Empfängereinträge aus.  <br/> |
    
 |**Erforderliche Eigenschaften**|**Access**|
 |:-----|:-----|
-|**PR_CONTAINER_FLAGS** ([Pidtagcontainerflags (](pidtagcontainerflags-canonical-property.md))  <br/> |Lesen/Schreiben  <br/> |
+|**PR_CONTAINER_FLAGS** ([PidTagContainerFlags](pidtagcontainerflags-canonical-property.md))  <br/> |Lesen/Schreiben  <br/> |
 |**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |Lesen/Schreiben  <br/> |
 |**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
-|**PR_OBJECT_TYPE** ([Pidtagobjecttype (](pidtagobjecttype-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
-|**PR_RECORD_KEY** ([Pidtagrecordkey (](pidtagrecordkey-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
+|**PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
+|**PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
    
 |**Optionale Eigenschaften**|**Access**|
 |:-----|:-----|
-|**PR_CONTAINER_CONTENTS** ([Pidtagcontainercontents (](pidtagcontainercontents-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
-|**PR_CONTAINER_HIERARCHY** ([Pidtagcontainerhierarchy (](pidtagcontainerhierarchy-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
-|**PR_DEF_CREATE_DL** ([Pidtagdefcreatedl (](pidtagdefcreatedl-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
-|**PR_DEF_CREATE_MAILUSER** ([Pidtagdefcreatemailuser (](pidtagdefcreatemailuser-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
+|**PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
+|**PR_CONTAINER_HIERARCHY** ([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
+|**PR_DEF_CREATE_DL** ([PidTagDefCreateDl](pidtagdefcreatedl-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
+|**PR_DEF_CREATE_MAILUSER** ([PidTagDefCreateMailuser](pidtagdefcreatemailuser-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
 |**PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IABContainer** -Schnittstelle erbt indirekt von der [IUnknown](https://msdn.microsoft.com/library/ms680509%28VS.85%29.aspx) -Schnittstelle über die [IMAPIContainer: IMAPIProp](imapicontainerimapiprop.md) und [IMAPIProp: IUnknown](imapipropiunknown.md) -Schnittstellen. Adressbuchanbieter implementieren die **IABContainer** -Schnittstelle. 
+Die **IABContainer-Schnittstelle** erbt indirekt von der [IUnknown-Schnittstelle](https://msdn.microsoft.com/library/ms680509%28VS.85%29.aspx) über die [SCHNITTSTELLEN IMAPIContainer : IMAPIProp](imapicontainerimapiprop.md) und [IMAPIProp : IUnknown.](imapipropiunknown.md) Adressbuchanbieter implementieren die **IABContainer-Schnittstelle.** 
   
-Eine beliebige Anzahl von Messaging-Benutzerobjekten, Verteilerlisten und anderen Adressbuch Containern kann in einem Adressbuchcontainer vorhanden sein. Wie bei jedem Container können Clients oder Dienstanbieter einen Adressbuchcontainer verwenden, um einen seiner Einträge zu öffnen oder um eine Hierarchietabelle oder eine Inhaltstabelle abzurufen. Adressbuchcontainer bieten außerdem eine Namensauflösung und je nach Anbieter die Möglichkeit, Einträge hinzuzufügen, zu entfernen oder zu ändern.
+Eine beliebige Anzahl von Messagingbenutzerobjekten, Verteilerlisten und anderen Adressbuchcontainern kann in einem Adressbuchcontainer vorhanden sein. Wie bei jedem Container können Clients oder Dienstanbieter einen Adressbuchcontainer verwenden, um einen seiner Einträge zu öffnen oder eine Hierarchietabelle oder Inhaltstabelle abzurufen. Adressbuchcontainer bieten auch die Namensauflösung und je nach Anbieter die Möglichkeit, Einträge hinzuzufügen, zu entfernen oder zu ändern.
   
-MAPI definiert einen speziellen Adressbuchcontainer, der als persönliches Adressbuch (PAB) bezeichnet wird und Einträge aus anderen Containern enthält. Ein PAB kann immer geändert werden. Benutzer füllen Ihr PAB in der Regel mit Einträgen, die die Empfänger angeben, mit denen Sie am häufigsten kommunizieren. Ein PAB kann auch einmalige Adressen und neue Empfänger enthalten, die noch nicht Bestandteileines Adressbuch Containers sind.
+MAPI definiert einen speziellen Adressbuchcontainer namens Persönliches Adressbuch (PAB), der Einträge enthält, die aus anderen Containern kopiert wurden. Ein PAB ist immer veränderbar. Benutzer füllen ihr PAB in der Regel mit Einträgen auf, mit denen die Empfänger bezeichnet werden, mit denen sie am häufigsten kommunizieren. Ein PAB kann auch einmal adressen und neue Empfänger enthalten, die noch nicht Teil eines Adressbuchcontainers sind.
   
 ## <a name="see-also"></a>Siehe auch
 

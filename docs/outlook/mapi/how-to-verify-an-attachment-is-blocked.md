@@ -17,9 +17,9 @@ ms.locfileid: "32345885"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Dieses Codebeispiel in C++ zeigt, wie Sie die [IAttachmentSecurity: IUnknown](iattachmentsecurityiunknown.md) -Schnittstelle verwenden, um herauszufinden, ob eine Anlage von microsoft Outlook 2010 oder microsoft Outlook 2013 zum Anzeigen und indizieren blockiert wird. 
+Dieses Codebeispiel in C++ zeigt, wie Sie die [IAttachmentSecurity : IUnknown-Schnittstelle](iattachmentsecurityiunknown.md) verwenden, um herauszufinden, ob eine Anlage von Microsoft Outlook 2010 oder Microsoft Outlook 2013 zum Anzeigen und Indizierung blockiert wird. 
   
-[IAttachmentSecurity: IUnknown](iattachmentsecurityiunknown.md) ist von der [IUnknown](https://msdn.microsoft.com/library/ms680509%28VS.85%29.aspx) -Schnittstelle abgeleitet. Sie können die [IAttachmentSecurity: IUnknown](iattachmentsecurityiunknown.md) -Schnittstelle abrufen, indem Sie [IUnknown:: QUERYINTERFACE](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx) für das MAPI-sitzungsObjekt aufrufen, das **IID_IAttachmentSecurity**anfordert. [IAttachmentSecurity:: IsAttachmentBlocked](iattachmentsecurity-isattachmentblocked.md) gibt **true** in _pfBlocked_ zurück, wenn die anlage von Outlook 2010 oder Outlook 2013 als unsicher betrachtet wird und zum anzeigen und Indizieren in Outlook 2010 oder Outlook 2013 gesperrt ist. 
+[IAttachmentSecurity : IUnknown](iattachmentsecurityiunknown.md) wird von der [IUnknown-Schnittstelle](https://msdn.microsoft.com/library/ms680509%28VS.85%29.aspx) abgeleitet. Sie können die [IAttachmentSecurity : IUnknown-Schnittstelle](iattachmentsecurityiunknown.md) abrufen, indem Sie [IUnknown::QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx) im MAPI-Sitzungsobjekt aufrufen und **IID_IAttachmentSecurity.** [IAttachmentSecurity::IsAttachmentBlocked](iattachmentsecurity-isattachmentblocked.md) gibt **true** in _pfBlocked_ zurück, wenn die Anlage Outlook 2010 oder Outlook 2013 als unsicher eingestuft wird und für die Anzeige und Indizierung in Outlook 2010 oder Outlook 2013 gesperrt ist. 
   
 ```cpp
 HRESULT IsAttachmentBlocked(LPMAPISESSION lpMAPISession, LPCWSTR pwszFileName, BOOL* pfBlocked) 

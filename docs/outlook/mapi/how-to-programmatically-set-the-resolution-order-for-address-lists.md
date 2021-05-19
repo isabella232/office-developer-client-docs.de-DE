@@ -5,7 +5,7 @@ ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: f9559afb-8db1-ce72-3e11-9b3d47bb80b6
-description: 'Zuletzt geändert: 06 Juli, 2012'
+description: 'Letzte Änderung: 06. Juli 2012'
 ms.openlocfilehash: 4ca3e9d11a3133236d38ef31b01ecded932e8013
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -17,41 +17,41 @@ ms.locfileid: "32345962"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Dieses Thema enthält ein Codebeispiel in C++, das die Reihenfolge von Adresslisten programmgesteuert festlegt, nach der Empfänger in e-Mail-Nachrichten und Teilnehmern in Besprechungsanfragen aufgelöst werden.
+Dieses Thema enthält ein Codebeispiel in C++, mit dem programmgesteuert die Reihenfolge der Adresslisten bestimmt wird, nach der Empfänger in E-Mail-Nachrichten und Teilnehmer in Besprechungsanfragen aufgelöst werden.
   
-In MAPI kann jedes Profil mehrere Adresslisten unterstützen, und jede Adressliste befindet sich in einem eigenen Container. MAPI unterstützt die **[SetSearchPath](https://support.microsoft.com/kb/292590)** -Methode in der Schnittstelle, mit der Sie einen neuen Suchpfad im Profil festlegen können, das für die Namensauflösung verwendet wird. Um die **IAddrBook:: SetSearchPath** -Methode verwenden zu können, müssen Sie die gewünschte Auflösungsreihenfolge in einem **[SRowSet](srowset.md)** -Array definieren, in dem die Container der relevanten Adressbücher in der gewünschten Reihenfolge enthalten sind, und dann das Array als *lpSearchPath*  Parameter. Die erste Eigenschaft für jeden Eintrag im **SRowSet** -Array muss die **[PR_ENTRYID](pidtagentryid-canonical-property.md)** -Eigenschaft des entsprechenden Adressbuchs sein. 
+In MAPI kann jedes Profil mehrere Adresslisten unterstützen, und jede Adressliste befindet sich in einem eigenen Container. MAPI unterstützt die **[SetSearchPath-Methode](https://support.microsoft.com/kb/292590)** in der Schnittstelle, mit der Sie einen neuen Suchpfad im Profil festlegen können, der für die Namensauflösung verwendet wird. Um die **IAddrBook::SetSearchPath-Methode** zu verwenden, müssen Sie die gewünschte Auflösungsreihenfolge in einem **[SRowSet-Array](srowset.md)** definieren, das die Container der relevanten Adressbücher in der gewünschten Reihenfolge enthält, und dann das Array als  *lpSearchPath-Parameter*  angeben. Die erste Eigenschaft für jeden Eintrag im **SRowSet-Array** muss die **[PR_ENTRYID](pidtagentryid-canonical-property.md)** des entsprechenden Adressbuchs sein. 
   
-Im Codebeispiel wird die Auflösungsreihenfolge in den folgenden Schritten festgelegt:
+Das Codebeispiel legt die Auflösungsreihenfolge in den folgenden Schritten fest:
   
-1. Initialisiert `numANR` die Anzahl der übereinstimmenden Container und gibt die Namen und die Auflösungsreihenfolge der gewünschten Adresslisten in `ANROrder` einem Array an. 
+1. Initialisiert die Anzahl der zu übereinstimmenden Container und gibt die Namen und die Auflösungsreihenfolge der gewünschten Adresslisten  `numANR` in einem  `ANROrder` Array an. 
     
-2. Initialisiert MAPI mithilfe der **MAPIInitialize** -Funktion. 
+2. Initialisiert MAPI mithilfe der **MAPIInitialize-Funktion.** 
     
-3.  Meldet sich bei MAPI an und ermöglicht es dem Benutzer, ein Profil auszuwählen. 
+3.  Meldet sich bei MAPI an und ermöglicht dem Benutzer die Auswahl eines Profils. 
     
 4.  Ruft einen Zeiger auf das Adressbuch aus der aktuellen Sitzung ab. 
     
 5. Öffnet das Adressbuch.
     
-6. Öffnet den Container für das Stamm Adressbuch.
+6. Öffnet den Container für das Stamm-Adressbuch.
     
-7. Öffnet die Hierarchietabelle des Stamm Adressbuch-Containers.
+7. Öffnet die Hierarchietabelle des Stamm-Adressbuchcontainers.
     
 8. Ruft die Liste der Adressbuchcontainer in der Hierarchie ab.
     
-9. Sucht nach den Eintrags-IDs der gewünschten Adresslisten, indem die Namen der gewünschten Adresslisten in `ANROrder` den vorhandenen Namen in der Adressbuchhierarchie verglichen werden. 
+9. Sucht nach den Eintrags-IDs der gewünschten Adresslisten, indem die Namen der gewünschten Adresslisten in mit den vorhandenen Namen in der  `ANROrder` Adressbuchhierarchie verglichen werden. 
     
-10. Legt die entsprechenden Eintrags-IDs **** auf das SRowSet `pNewRows`-Array fest.
+10. Legt die entsprechenden Eintrags-IDs auf das **SRowSet-Array** fest,  `pNewRows` .
     
-11. Aufrufe und übergibt `pNewRows` als *lpSearchPath* -Parameter an **IAddrBook:: SetSearchPath** , um den Suchpfad festzulegen. 
+11. Aufrufe und Übergeben  `pNewRows` als  *lpSearchPath-Parameter*  an **IAddrBook::SetSearchPath** zum Festlegen des Suchpfads. 
     
 12. Bereinigt interne Puffer und Zeiger.
     
 13. Meldet sich von MAPI ab.
     
-14. Uninitalizes MAPI.
+14. Deinitalizes MAPI.
     
-In diesem Codebeispiel werden Adresslisten verwendet, die in der Standardinstallation von Microsoft Office Outlook verfügbar sind: **alle Kontakte**, **alle Gruppen**und **Kontakte**. Sie müssen das Beispiel ausführen, nachdem Outlook gestartet wurde und in einem initialisierten Profil ausgeführt wird. Das Beispiel funktioniert gut mit Namen, die sich in einer Sprache befinden (beispielsweise sind alle Namen in Englisch). Es ist nicht für die Verwendung in mehrsprachigen Bereitstellungen vorgesehen, beispielsweise für den Ordner " **Kontakte** ", der für einen Benutzer mit einem nicht-englischen Outlook-Build lokalisiert wurde. 
+In diesem Codebeispiel werden Adresslisten verwendet, die in der Standardinstallation von Microsoft Office Outlook verfügbar sind: **Alle Kontakte**, **Alle Gruppen** und **Kontakte**. Sie müssen das Beispiel ausführen, nachdem Outlook gestartet wurde und in einem initialisierten Profil ausgeführt wird. Das Beispiel funktioniert gut mit Namen in einer Sprache (z. B. sind alle Namen in Englisch). Er ist nicht für mehrsprachige Bereitstellungen ausgelegt, z. B. für den Ordner Kontakte, der für einen Benutzer lokalisiert wurde, der einen nicht englischen Outlook hat.  
   
 ```cpp
 #include "stdafx.h" 
@@ -266,5 +266,5 @@ STDMETHODIMP CopySBinary(
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Informationen zum Festlegen der aufLösungsReihenfolge für Adresslisten in Outlook](about-setting-the-resolution-order-for-address-lists-in-outlook.md)
+- [Informationen zum Festlegen der Auflösungsreihenfolge für Adresslisten in Outlook](about-setting-the-resolution-order-for-address-lists-in-outlook.md)
 

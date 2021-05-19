@@ -1,5 +1,5 @@
 ---
-title: Kanonische pidlidcalendartype (-Eigenschaft
+title: PidLidCalendarType (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,25 +19,25 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32341993"
 ---
-# <a name="pidlidcalendartype-canonical-property"></a>Kanonische pidlidcalendartype (-Eigenschaft
+# <a name="pidlidcalendartype-canonical-property"></a>PidLidCalendarType (kanonische Eigenschaft)
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt den Wert des CalendarType-Felds aus der **dispidApptRecur** ([pidlidappointmentrecur (](pidlidappointmentrecur-canonical-property.md))-Eigenschaft an.
+Gibt den Wert des CalendarType-Felds aus der **eigenschaft dispidApptRecur** ([PidLidAppointmentRecur](pidlidappointmentrecur-canonical-property.md)) an.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |LID_CALENDAR_TYPE  <br/> |
-|Eigenschaftengruppe:  <br/> |PSETID_Meeting  <br/> |
+|Eigenschaftensatz:  <br/> |PSETID_Meeting  <br/> |
 |Lange ID (LID):  <br/> |0x0000001C  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |Meetings  <br/> |
+|Bereich:  <br/> |Besprechungen  <br/> |
    
 ## <a name="remarks"></a>Hinweise
 
-Wenn die Besprechungsanfrage eine wiederkehrende Datenreihe oder eine Ausnahme darstellt, ist dies der Wert des CalendarType-Felds aus der **dispidApptRecur** -Eigenschaft. Andernfalls wird diese Eigenschaft nicht festgelegt, und es wird davon ausgegangen, dass Sie 0 ist. 
+Wenn die Besprechungsanfrage eine Serienserie oder eine Ausnahme darstellt, ist dies der Wert des CalendarType-Felds aus der **dispidApptRecur-Eigenschaft.** Andernfalls wird diese Eigenschaft nicht festgelegt und als 0 angenommen. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -45,17 +45,17 @@ Wenn die Besprechungsanfrage eine wiederkehrende Datenreihe oder eine Ausnahme d
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Stellt Eigenschaftenmengen Definitionen und Verweise auf zugehörige Exchange Server Protokollspezifikationen bereit.
+> Stellt Eigenschaftensatzdefinitionen und Verweise auf verwandte Exchange Server zur Verfügung.
     
 [[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften und Vorgänge für Termin-, Besprechungsanfrage-und Antwortnachrichten an.
+> Gibt die Eigenschaften und Vorgänge für Termin-, Besprechungs- und Antwortnachrichten an.
     
-### <a name="header-files"></a>Header Dateien
+### <a name="header-files"></a>Headerdateien
 
-Mapidefs. h
+Mapidefs.h
   
-> Stellt Definitionen von Datentypen bereit.
+> Bietet Datentypdefinitionen.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -63,9 +63,9 @@ Mapidefs. h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

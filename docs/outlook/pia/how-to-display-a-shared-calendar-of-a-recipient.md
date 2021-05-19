@@ -30,7 +30,7 @@ Im folgenden Codebeispiel wird von DisplayManagerCalendarder Kalenderordner des 
 
 > [!NOTE]
 > Wenn Sie ein **Recipient**-Objekt mithilfe der **CreateRecipient**-Methode des **Namespace**-Objekts oder der [Add(String)](https://msdn.microsoft.com/library/bb612668(v=office.15)) -Methode der **Recipients**-Sammlung erstellen müssen Sie einen Empfängernamen angeben. **Recipient** wird dann in diesen Namen aufgelöst. Ein Empfängername kann eines der folgenden Formate aufweisen:
-> - Name
+> - Anzeigename
 > - Alias
 > - SMTP-Adresse (Simple Mail Transfer Protocol)
 

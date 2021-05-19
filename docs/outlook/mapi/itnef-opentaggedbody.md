@@ -25,7 +25,7 @@ ms.locfileid: "32348734"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Öffnet eine Stream-Schnittstelle für den Text einer gekapselte Nachricht.
+Öffnet eine Streamschnittstelle für den Text einer gekapselten Nachricht.
   
 ```cpp
 HRESULT OpenTaggedBody(
@@ -39,43 +39,43 @@ HRESULT OpenTaggedBody(
 
  _lpMessage_
   
-> in Ein Zeiger auf die Nachricht, der der Stream zugeordnet ist. Diese Nachricht muss nicht dieselbe Nachricht sein, die beim Aufruf der [OpenTnefStream](opentnefstream.md) -oder [OpenTnefStreamEx](opentnefstreamex.md) -Funktion übergeben wird. 
+> [in] Ein Zeiger auf die Nachricht, der der Datenstrom zugeordnet ist. Diese Nachricht muss nicht dieselbe Nachricht sein, die beim Aufruf der [OpenTnefStream-](opentnefstream.md) oder [OpenTnefStreamEx-Funktion übergeben](opentnefstreamex.md) wird. 
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die steuert, wie die Stream-Schnittstelle geöffnet wird. Die folgenden Flags können festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie die Streamschnittstelle geöffnet wird. Die folgenden Kennzeichen können festgelegt werden:
     
 MAPI_CREATE 
   
-> Wenn eine Eigenschaft nicht in der aktuellen Nachricht vorhanden ist, sollte Sie erstellt werden. Wenn die Eigenschaft vorhanden ist, sollten die aktuellen Daten in der-Eigenschaft durch die Daten aus dem TNEF-Stream (Transport-Neutral Encapsulation Format) ersetzt werden. Wenn eine Implementierung das MAPI_CREATE-Flag festlegt, sollte auch das MAPI_MODIFY-Flag festgelegt werden.
+> Wenn in der aktuellen Nachricht keine Eigenschaft vorhanden ist, sollte sie erstellt werden. Wenn die Eigenschaft vorhanden ist, sollten die aktuellen Daten in der Eigenschaft durch die Daten aus dem Transport-Neutral Encapsulation Format (TNEF)-Stream ersetzt werden. Wenn eine Implementierung das MAPI_CREATE legt, sollte sie auch das MAPI_MODIFY festlegen.
     
 MAPI_MODIFY 
   
-> Fordert Lese-/Schreibzugriff-Berechtigung an. Die Standardschnittstelle ist schreibgeschützt. MAPI_MODIFY muss festgelegt werden, wenn MAPI_CREATE festgelegt ist.
+> Fordert Lese-/Schreibberechtigungen an. Die Standardschnittstelle ist schreibgeschützt. MAPI_MODIFY muss festgelegt werden, wenn MAPI_CREATE festgelegt wird.
     
  _lppStream_
   
-> Out Ein Zeiger auf einen Zeiger auf ein Stream-Objekt, das den Text aus der **PR_BODY** ([pidtagbody (](pidtagbody-canonical-property.md))-Eigenschaft der übergebenen verkapselten Nachricht enthält und die [IStream](https://docs.microsoft.com/windows/desktop/api/objidl/nn-objidl-istream) -Schnittstelle unterstützt. 
+> [out] Ein Zeiger auf einen Zeiger auf ein Streamobjekt, das den Text aus der **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md))-Eigenschaft der übergebenen gekapselten Nachricht enthält und die [IStream-Schnittstelle](https://docs.microsoft.com/windows/desktop/api/objidl/nn-objidl-istream) unterstützt. 
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Aufruf war erfolgreich, und der erwartete Wert oder die Werte wurden zurückgegeben.
+> Der Aufruf war erfolgreich und hat den erwarteten Wert oder die erwarteten Werte zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Transport Anbieter, Nachrichtenspeicher Anbieter und Gateways rufen die **ITnef:: OpenTaggedBody** -Methode auf, um eine Stream-Schnittstelle für den Text einer gekapselte Nachricht zu öffnen (also für ein TNEF-Objekt). 
+Transportanbieter, Nachrichtenspeicheranbieter und Gateways rufen die **ITnef::OpenTaggedBody-Methode** auf, um eine Streamschnittstelle für den Text einer gekapselten Nachricht (d. h. für ein TNEF-Objekt) zu öffnen. 
   
-Im Rahmen seiner Verarbeitung fügt **OpenTaggedBody** entweder Anhänge-Tags ein, die die Position von Anlagen oder OLE-Objekten im Nachrichtentext Kennzeichen. Die Attachment-Tags haben das folgende Format: 
+Im Rahmen der Verarbeitung fügt **OpenTaggedBody** Anlagentags ein oder analysiert sie, die die Position von Anlagen oder OLE-Objekten im Nachrichtentext angeben. Die Anlagentags haben das folgende Format: 
   
- **[[** _Attachment Name_ **:** _n_ **in** _Attachment Containername_ **]]**
+ **[[** _Anlagenname_ **:** _n_ **im** Namen des _Anlagencontainers_ **]]**
   
- _Attachment Name_ Beschreibung des Attachment-Objekts;  _n_ ist eine Zahl, die die Anlage identifiziert, die Teil einer Sequenz ist, die von dem Wert inkrementiert wird, der im _lpKey_ -Parameter der [OpenTnefStream](opentnefstream.md) -oder [OpenTnefStreamEx](opentnefstreamex.md) -Funktion übergeben wird; und der _Name des Anlagen Containers_ beschreibt die physische Komponente, in der sich das Attachment-Objekt befindet. 
+ _Anlagenname_ beschreibt das Attachment-Objekt.  _n_ ist eine Zahl, die die Anlage identifiziert, die Teil einer Sequenz ist, inkrementiert von dem Wert, der im  _lpKey-Parameter_ der [OpenTnefStream-](opentnefstream.md) oder [OpenTnefStreamEx-Funktion](opentnefstreamex.md) übergeben wird. und  _der Name des Anlagencontainers_ beschreibt die physische Komponente, in der sich das Anlageobjekt befindet. 
   
- **OpenTaggedBody** liest Nachrichtentext aus und fügt ein Attachment-Tag ein, wenn ein Attachment-Objekt ursprünglich im Text erschien. Der ursprüngliche Nachrichtentext wird nicht geändert. 
+ **OpenTaggedBody** liest Nachrichtentext aus und fügt ein Anlagentag an jedem Ort ein, an dem ein Anlageobjekt ursprünglich im Text angezeigt wurde. Der ursprüngliche Nachrichtentext wird nicht geändert. 
   
-Wenn eine Nachricht mit Tags an einen Stream übergeben wird, werden die Tags entfernt, und die Attachment-Objekte werden an die Position der Tags im Stream verschoben.
+Wenn eine Nachricht mit Tags an einen Datenstrom übergeben wird, werden die Tags entfernt, und die Anlagenobjekte werden an der Position der Tags im Datenstrom verschoben.
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -85,7 +85,7 @@ Wenn eine Nachricht mit Tags an einen Stream übergeben wird, werden die Tags en
   
 [OpenTnefStreamEx](opentnefstreamex.md)
   
-[Kanonische Pidtagbody (-Eigenschaft](pidtagbody-canonical-property.md)
+[PidTagBody (kanonische Eigenschaft)](pidtagbody-canonical-property.md)
   
 [ITnef : IUnknown](itnefiunknown.md)
 

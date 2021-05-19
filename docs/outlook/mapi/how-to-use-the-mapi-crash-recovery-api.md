@@ -17,11 +17,11 @@ ms.locfileid: "32346424"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Dieses Thema enthält ein Codebeispiel in C++, das zeigt, wie die [MAPICrashRecovery](mapicrashrecovery.md) -Funktion von der [UnhandledExceptionFilter](https://msdn.microsoft.com/library/ms681401%28VS.85%29.aspx) -Funktion aufgerufen wird. Die [MAPICrashRecovery](mapicrashrecovery.md) -Funktion überprüft den Status des freigegebenen Speichers (PST) oder der Offline Ordner Datei (Ost). 
+Dieses Thema enthält ein Codebeispiel in C++, das zeigt, wie die [MAPICrashRecovery-Funktion](mapicrashrecovery.md) aus der [UnhandledExceptionFilter-Funktion aufruft.](https://msdn.microsoft.com/library/ms681401%28VS.85%29.aspx) Die [MAPICrashRecovery-Funktion](mapicrashrecovery.md) überprüft den Status des freigegebenen Speichers für persönliche Ordner (PST) oder Offlineordnerdatei (OST). 
 
-Wenn sich der Speicher in einem konsistenten Zustand befindet, verschiebt die [MAPICrashRecovery](mapicrashrecovery.md) -Funktion die Daten auf den Datenträger und verhindert den weiteren Lese-oder Schreibzugriff, bis der Prozess beendet wird. Wenn Sie sicherstellen, dass sich PST oder Kosten in einem konsistenten Zustand befinden, bevor der Prozess beendet wird, können Sie verhindern, dass Microsoft Outlook 2010 oder Microsoft Outlook 2013 folgende Fehlermeldung angezeigt wird und Leistungsprobleme vermeiden: 
+Wenn sich der Arbeitsspeicher in einem konsistenten Zustand befindet, verschiebt die [MAPICrashRecovery-Funktion](mapicrashrecovery.md) die Daten auf den Datenträger und verhindert weiteren Lese- oder Schreibzugriff, bis der Prozess beendet wird. Indem Sie sicherstellen, dass sich die PSTs oder BETRIEBSSYSTEME in einem konsistenten Zustand befinden, bevor der Prozess beendet wird, können Sie verhindern, dass Microsoft Outlook 2010 oder Microsoft Outlook 2013 die folgende Fehlermeldung anzeigen und Leistungsprobleme vermeiden: 
   
-**Eine Datendatei wurde bei der letzten Verwendung nicht ordnungsgemäß geschlossen und wird auf Probleme überprüft. Die Leistung kann beeinträchtigt werden, während die Überprüfung ausgeführt wird.**
+**Eine Datendatei wurde bei der letzten Verwendung nicht ordnungsgemäß geschlossen und wird auf Probleme überprüft. Die Leistung kann während der Überprüfung beeinträchtigt werden.**
   
 ```cpp
 LONG WINAPI UnhandledExceptionFilter(__in EXCEPTION_POINTERS* pep) 

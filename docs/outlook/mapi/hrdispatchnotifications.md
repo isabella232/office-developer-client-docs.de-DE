@@ -29,9 +29,9 @@ Erzwingt die Versendung aller Benachrichtigungen in der Warteschlange.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 HRESULT HrDispatchNotifications(
@@ -53,7 +53,7 @@ S_OK
     
 MAPI_E_USER_CANCEL
   
-> WM_QUIT, WM_QUERYENDSESSION oder WM_ENDSESSION wurde empfangen.
+> WM_QUIT, WM_QUERYENDSESSION oder WM_ENDSESSION empfangen wurde.
     
 MAPI_E_NOT_INITIALIZED
   
@@ -61,10 +61,10 @@ MAPI_E_NOT_INITIALIZED
     
 ## <a name="remarks"></a>Hinweise
 
-Die **HrDispatchNotifications** -Funktion bewirkt, dass MAPI alle Benachrichtigungen versendet, die derzeit in der MAPI-Benachrichtigungsmodul in der Warteschlange liegen, ohne auf den Nachrichtenversand zu warten. Dies kann sich vorteilhaft auf die Speicherauslastung auswirken. Weitere Informationen finden Sie unter [Erzwingen einer Benachrichtigung](forcing-a-notification.md). 
+Die **HrDispatchNotifications-Funktion** bewirkt, dass MAPI alle Benachrichtigungen versendet, die derzeit im MAPI-Benachrichtigungsmodul in der Warteschlange stehen, ohne auf einen Nachrichtenversand zu warten. Dies kann sich positiv auf die Arbeitsspeicherauslastung aus wirken. Weitere Informationen finden Sie unter [Erzwingen einer Benachrichtigung](forcing-a-notification.md). 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Einige Anwendungen warten auf eine Benachrichtigungsmeldung in einer Timeout Schleife mit den Funktionen Windows [PeekMessage](https://msdn.microsoft.com/library/ms644943.aspx) und [DispatchMessage](https://msdn.microsoft.com/library/ms644934.aspx) . Auf allen, aber auf den schnellsten Plattformen können solche Anwendungen schlechte Leistung oder sogar Blockierung von Benachrichtigungen haben. Durch die Verwendung von **HrDispatchNotifications** wird nicht nur der Code reduziert, sondern auch die Leistung verbessert. 
+Einige Anwendungen warten mit den Funktionen [PeekMessage](https://msdn.microsoft.com/library/ms644943.aspx) und [DispatchMessage](https://msdn.microsoft.com/library/ms644934.aspx) in einer Timeoutschleife auf eine Windows Benachrichtigung. Auf allen bis auf die schnellsten Plattformen kann es zu Leistungsausfällen oder sogar Zusperren von Benachrichtigungen für solche Anwendungen führen. Die **Verwendung von HrDispatchNotifications** reduziert nicht nur Code, sondern verbessert auch die Leistung. 
   
 

@@ -25,7 +25,7 @@ ms.locfileid: "32348874"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Meldet einen Nachrichtenspeicher Anbieter ab. 
+Protokolliert einen Nachrichtenspeicheranbieter. 
   
 ```cpp
 HRESULT Logoff(
@@ -37,7 +37,7 @@ HRESULT Logoff(
 
  _lpulFlags_
   
-> in Reserviert muss ein Zeiger auf NULL sein.
+> [in] Reserviert; muss ein Zeiger auf Null sein.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -45,13 +45,13 @@ S_OK
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Nachrichtenspeicher Anbieter implementieren die **IMSLogon:: Logout** -Methode, um den Nachrichtenspeicher Anbieter gewaltsam herunterzufahren. **IMSLogon:: Logoff** wird in den folgenden Situationen aufgerufen: 
+Nachrichtenspeicheranbieter implementieren die **IMSLogon::Logoff-Methode** zum gewaltsamen Herunterfahren eines Nachrichtenspeicheranbieters. **IMSLogon::Logoff** wird in den folgenden Situationen aufgerufen: 
   
-- Während MAPI nach einem Aufruf der [IMAPISession:: Abmelde](imapisession-logoff.md) Methode einen Client abmeldet. 
+- Während MAPI einen Client nach einem Aufruf der [IMAPISession::Logoff-Methode](imapisession-logoff.md) abmeldet. 
     
-- Während MAPI sich bei einem Nachrichtenspeicher Anbieter abmeldet. In diesem Fall wird **IMSLogon:: Logoff** als Teil der MAPI-Verarbeitung der [IUnknown:: Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) -Methode des Support Objekts aufgerufen, die der Nachrichtenspeicher Anbieter während der Verarbeitung eines [IMsgStore:: StoreLogoff](imsgstore-storelogoff.md) oder IUnknown erstellt:: ** Release** -Methodenaufruf für ein Nachrichtenspeicherobjekt. 
+- Während MAPI einen Nachrichtenspeicheranbieter abmeldet. In diesem Fall wird **IMSLogon::Logoff** als Teil der MAPI-Verarbeitung der [IUnknown::Release-Methode](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) des Supportobjekts aufgerufen, das der Nachrichtenspeicheranbieter erstellt, während er einen [IMsgStore::StoreLogoff-](imsgstore-storelogoff.md) oder **IUnknown::Release-Methodenaufruf** für ein Nachrichtenspeicherobjekt verarbeitet. 
     
 ## <a name="see-also"></a>Siehe auch
 

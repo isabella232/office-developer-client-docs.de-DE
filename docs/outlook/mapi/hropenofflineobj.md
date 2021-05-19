@@ -31,7 +31,7 @@ ms.locfileid: "32347747"
 
 |||
 |:-----|:-----|
-|Exportiert von:  <br/> |msmapi32. dll  <br/> |
+|Exportiert von:  <br/> |msmapi32.dll  <br/> |
 |Aufgerufen von:  <br/> |Client  <br/> |
 |Implementiert von:  <br/> |Outlook  <br/> |
    
@@ -49,23 +49,23 @@ typedef HRESULT (STDMETHODCALLTYPE HROPENOFFLINEOBJ)(
 
  _ulReserved_
   
-> in Dieser Parameter wird nicht verwendet. Es muss 0 sein.
+> [in] Dieser Parameter wird nicht verwendet. Es muss 0 sein.
     
  _pwszProfileNameIn_
   
-> in Der Name des Profils, für das das Offlineobjekt gilt. Es muss in Unicode ausgedrückt werden. 
+> [in] Der Name des Profils, für das das Offlineobjekt verwendet wird. Sie muss in Unicode ausgedrückt werden. 
     
  _pGUID_
   
-> in Zeiger auf eine GUID, die verwendet werden kann, um dieses Objekt von anderen Offlineobjekten eindeutig zu identifizieren. Es muss **GUID_GlobalState**sein.
+> [in] Zeiger auf eine GUID, mit der dieses Objekt von anderen Offlineobjekten eindeutig identifiziert werden kann. Es muss **GUID_GlobalState** werden.
     
- _beibehalten_
+ _pReserved_
   
-> in Dieser Parameter wird nicht verwendet. Es muss **null**sein.
+> [in] Dieser Parameter wird nicht verwendet. Er muss **null sein.**
     
  _ppOfflineObj_
   
-> Timeout Ein Zeiger auf das angeforderte Offlineobjekt. Der Aufrufer kann mit diesem Zeiger auf die [IMAPIOfflineMgr: IMAPIOffline](imapiofflinemgrimapioffline.md) -Schnittstelle zugreifen, um die Rückrufe zu finden, die dieses Objekt unterstützt, und um Rückrufe dafür einzurichten. 
+> [out] Ein Zeiger auf das angeforderte Offlineobjekt. Der Aufrufer kann diesen Zeiger verwenden, um auf die [IMAPIOfflineMgr : IMAPIOffline-Schnittstelle](imapiofflinemgrimapioffline.md) zu zugreifen, um die von diesem Objekt unterstützten Rückrufe zu finden und Rückrufe für dieses Objekt einrichten. 
     
 ## <a name="return-values"></a>Rückgabewerte
 
@@ -75,15 +75,15 @@ S_OK
     
 MAPI_E_NOT_FOUND
   
-- Der Funktionsaufruf ist fehlgeschlagen.
+- Fehler beim Funktionsaufruf.
     
 ## <a name="remarks"></a>Hinweise
 
-Dies ist der erste Anruf, den ein Client vornimmt, wenn der Client über etwaige Verbindungsstatusänderungen für ein bestimmtes Profil benachrichtigt werden möchte. Beim Aufruf von **HrOpenOfflineObj**ruft der Client ein Offlineobjekt ab, das **IMAPIOfflineMgr**unterstützt. Der Client kann nach den vom Objekt unterstützten Arten von Rückrufen suchen (mithilfe von [IMAPIOffline:: getCapabilities](imapioffline-getcapabilities.md)) und dann Rückrufe für ihn einrichten (mithilfe von [IMAPIOfflineMgr:: Advise](imapiofflinemgr-advise.md)).
+Dies ist der erste Aufruf eines Clients, wenn der Client über Änderungen des Verbindungsstatus für ein bestimmtes Profil benachrichtigt werden möchte. Beim Aufrufen **von HrOpenOfflineObj** ruft der Client ein Offlineobjekt ab, das **IMAPIOfflineMgr unterstützt.** Der Client kann nach den Arten von Rückrufen suchen, die vom Objekt unterstützt werden (mithilfe von [IMAPIOffline::GetCapabilities](imapioffline-getcapabilities.md)), und anschließend Rückrufe für das Objekt einrichten (mithilfe von [IMAPIOfflineMgr::Advise](imapiofflinemgr-advise.md)).
   
-Wenn Sie [GetProcAddress](https://msdn.microsoft.com/library/ms683212.aspx) verwenden, um nach der Adresse dieser Funktion in msmapi32. dll zu suchen, geben Sie **HrOpenOfflineObj @ 20** als Prozedurnamen an. 
+Wenn Sie [GetProcAddress](https://msdn.microsoft.com/library/ms683212.aspx) zum Suchen nach der Adresse dieser Funktion in msmapi32.dll verwenden, geben Sie HrOpenOfflineObj@20 **Prozedurnamen** an. 
   
- **HrOpenOfflineObj** funktioniert nur für Clients, bei denen es sich um MAPI-Anbieter, COM-Add-Ins und Exchange-Client Erweiterungen handelt, die innerhalb des Outlook-Prozesses ausgeführt werden. Andernfalls gibt **HrOpenOfflineObj** **MAPI_E_NOT_FOUND**zurück. 
+ **HrOpenOfflineObj** funktioniert nur für Clients, bei den es sich um MAPI-Anbieter, COM-Add-Ins und Exchange-Clienterweiterungen handelt, die innerhalb des Outlook werden. Andernfalls **gibt HrOpenOfflineObj** **MAPI_E_NOT_FOUND** zurück. 
   
 ## <a name="see-also"></a>Siehe auch
 

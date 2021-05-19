@@ -20,24 +20,24 @@ ms.locfileid: "32349322"
 
 Gibt eine Position im Zieldokument an, mit der eine Verknüpfung hergestellt werden kann.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn die Zelle Address beispielsweise "Zeichnung1. vsdx" ist, kann die Zelle unter Adresse einen Seitennamen wie "page-3" angeben. Wenn die Zelle address die Microsoft Excel-Datei Samples. xlsx ist, kann der Wert dieser Zelle ein Arbeitsblatt oder ein Bereich innerhalb eines Arbeitsblatts sein, beispielsweise "Arbeitsblattfunktionen" oder "Sheet1! A1: D10 ". Wenn die Zelle Address "https://www.microsoft.com/office/" ist, kann der Wert dieser Zelle ein benannter Anker innerhalb des Dokuments sein, beispielsweise "Lösungen".
+Wenn die Zelle Address beispielsweise "Drawing1.vsdx" ist, kann die Zelle SubAddress einen Seitennamen wie "Page-3" angeben. Wenn die Zelle Address die Microsoft Excel "Samples.xlsx" ist, kann der Wert dieser Zelle ein Arbeitsblatt oder ein Bereich innerhalb eines Arbeitsblatts sein, z. B. "Worksheet Functions" oder "Sheet1! A1:D10". Wenn die Zelle Address den Wert " hat, kann der Wert dieser Zelle ein benannter Anker im Dokument sein, z. B. https://www.microsoft.com/office/ "lösungen".
   
 Sie können den Wert dieser Zelle auch im Dialogfeld **Hyperlinks** festlegen (klicken Sie dazu auf der Registerkarte **Einfügen** in der Gruppe **Hyperlinks** auf **Hyperlink**).
   
-Wenn Sie einen Verweis auf die Zelle subAddress aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle SubAddress anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Hyperlink.  *Name* . Unter Adresse, bei der Hyperlink *. Name* der Zeilenname ist  <br/> |
+| Zellenname:  <br/> | Hyperlink.  *Name*  . SubAddress, wobei Hyperlink  *.name*  der Zeilenname ist  <br/> |
    
-Wenn Sie einen Verweis auf die **** Zelle SubAddress aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die **Zelle SubAddress** nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionHyperlink** <br/> |
-| Zeilenindex:  <br/> |**visRow1stHyperlink** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRow1stHyperlink**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
 | Zellenindex:  <br/> |**visHLinkSubAddress** <br/> |
    
 

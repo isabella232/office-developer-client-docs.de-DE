@@ -19,15 +19,15 @@ ms.locfileid: "32346774"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Implementierungen der [IUnknown:: QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx) -Methode in C ähneln C++-Implementierungen. Die Implementierung umfasst zwei grundlegende Schritte: 
+Implementierungen der [IUnknown::QueryInterface-Methode](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx) in C ähneln C++-Implementierungen sehr. Es gibt zwei grundlegende Schritte für die Implementierung: 
   
-1. Validieren von Parametern.
+1. Überprüfen von Parametern.
     
-2. Überprüfen des Bezeichners der angeforderten Schnittstelle anhand der Liste der vom Objekt unterstützten Schnittstellen und Zurückgeben des E_NO_INTERFACE-Werts oder eines gültigen Schnittstellenzeigers. Wenn ein Schnittstellenzeiger zurückgegeben wird, sollte die Implementierung auch die [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) -Methode aufrufen, um den Verweiszähler zu erhöhen. 
+2. Überprüfen des Bezeichners der angeforderten Schnittstelle mit der Liste der vom Objekt unterstützten Schnittstellen und Zurückgeben des werts E_NO_INTERFACE oder eines gültigen Schnittstellenzeigers. Wenn ein Schnittstellenzeiger zurückgegeben wird, sollte die Implementierung auch die [IUnknown::AddRef-Methode](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) aufrufen, um die Referenzanzahl zu erhöhen. 
     
-Der Hauptunterschied zwischen einer Implementierung von **QueryInterface** in c und C++ ist der zusätzliche erste Parameter in der c-Version. Da der Objektzeiger der Parameterliste hinzugefügt wird, muss eine C-Implementierung von **QueryInterface** mehr Parametervalidierung als eine C++-Implementierung aufweisen. Die Logik zum Überprüfen des Schnittstellen Bezeichners, erhöhen der Verweisanzahl und Zurückgeben eines Objektzeigers sollte in beiden Sprachen identisch sein. 
+Der Hauptunterschied zwischen einer Implementierung von **QueryInterface** in C und C++ ist der zusätzliche erste Parameter in der C-Version. Da der Objektzeiger der Parameterliste hinzugefügt wird, muss eine C-Implementierung von **QueryInterface** mehr Parameterüberprüfung als eine C++-Implementierung haben. Die Logik zum Überprüfen der Schnittstellen-ID, zum Erhöhen der Referenzanzahl und zum Zurückgeben eines Objektzeigers sollte in beiden Sprachen identisch sein. 
   
-Im folgenden Codebeispiel wird veranschaulicht, wie **QueryInterface** in C für ein Status-Objekt implementiert wird. 
+Das folgende Codebeispiel zeigt, wie **Sie QueryInterface** in C für ein Statusobjekt implementieren. 
   
 ```cpp
 STDMETHODIMP STATUS_QueryInterface(LPMYSTATUSOBJ lpMyObj, REFIID riid,
@@ -64,9 +64,9 @@ STDMETHODIMP STATUS_QueryInterface(LPMYSTATUSOBJ lpMyObj, REFIID riid,
 
 ```
 
-Während die Implementierung der **AddRef** -Methode in c der c++-Implementierung ähnelt, kann eine C-Implementierung der [IUnknown:: Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) -Methode aufwändiger als eine c++-Version sein. Der Grund dafür ist, dass ein Großteil der Funktionalität, die mit der Freigabe eines Objekts verbunden ist, in den C++-Konstruktor und Destruktor integriert werden kann und C keinen solchen Mechanismus besitzt. Alle diese Funktionen müssen in der **Release** -Methode enthalten sein. Außerdem ist aufgrund des zusätzlichen Parameters und der expliziten Vtable eine weitere Validierung erforderlich. 
+Während die Implementierung der **AddRef-Methode** in C einer C++-Implementierung ähnelt, kann eine C-Implementierung der [IUnknown::Release-Methode](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) aufwändiger sein als eine C++-Version. Dies liegt daran, dass ein Teil der Funktionalität, die mit der Freimachen eines Objekts in den C++-Konstruktor und -Destruktor integriert werden kann, und C über keinen solchen Mechanismus verfügt. Alle diese Funktionen müssen in der **Release-Methode enthalten** sein. Außerdem ist aufgrund des zusätzlichen Parameters und der expliziten vtable eine weitere Überprüfung erforderlich. 
   
-Der folgende **AddRef** -Methodenaufruf veranschaulicht eine typische C-Implementierung für ein Status-Objekt. 
+Der folgende **AddRef-Methodenaufruf** veranschaulicht eine typische C-Implementierung für ein Statusobjekt. 
   
 ```cpp
 STDMETHODIMP_(ULONG) STATUS_AddRef(LPMYSTATUSOBJ lpMyObj)
@@ -90,13 +90,13 @@ STDMETHODIMP_(ULONG) STATUS_AddRef(LPMYSTATUSOBJ lpMyObj)
 
 ```
 
-Das folgende Codebeispiel zeigt eine typische Implementierung von **Release** für ein C Status-Objekt. Wenn der Verweiszähler nach dem Dekrementieren 0 ist, sollte die Implementierung eines C-Status Objekts die folgenden Aufgaben ausführen: 
+Das folgende Codebeispiel zeigt eine typische Implementierung von **Release** für ein C-Status-Objekt. Wenn die Referenzanzahl nach der Dekrementierung 0 ist, sollte eine C-Statusobjektimplementierung die folgenden Aufgaben ausführen: 
   
-- Geben Sie alle gehaltenen Zeiger auf Objekte frei. 
+- Lassen Sie alle gehaltenen Zeiger auf Objekte los. 
     
-- Legen Sie die Vtable auf NULL fest, um das Debuggen zu erleichtern, wenn der Benutzer des Objekts " **Release** " noch weiterhin versucht, das Objekt zu verwenden. 
+- Legen Sie die vtable auf NULL fest, was das Debuggen in dem Fall erleichtert, in dem der Benutzer eines Objekts mit dem Namen **"Release"** das Objekt weiterhin zu verwenden versucht. 
     
-- Rufen Sie **mapifreebufferfreigegeben** auf, um das Objekt freizugeben. 
+- Rufen **Sie MAPIFreeBuffer auf,** um das Objekt frei zu machen. 
     
 ```cpp
 STDMETHODIMP_(ULONG) STATUS_Release(LPMYSTATUSOBJ lpMyObj)

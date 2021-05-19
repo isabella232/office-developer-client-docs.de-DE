@@ -5,7 +5,7 @@ ms.date: 09/17/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: eac6be6a-9a20-4bc0-8da2-b2fd93aab04f
-description: Die Project Server-Schnittstelle (PSI) kann bei der Automatisierung zahlreicher Server seitiger Prozesse in lokalen Installationen von Project Server 2013 helfen. Mehrere Funktionen erfordern jedoch die Verwendung von Microsoft Project Professional 2013.
+description: Die Project Server Interface (PSI) kann dazu beitragen, viele serverseitige Prozesse in lokalen Installationen von Project Server 2013 zu automatisieren. Mehrere Funktionen erfordern jedoch die Verwendung von Microsoft Project Professional 2013.
 ms.openlocfilehash: b93c3535ca6693a84d11370de17bc18375f168ab
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
 ms.translationtype: MT
@@ -15,27 +15,27 @@ ms.locfileid: "32346529"
 ---
 # <a name="what-the-psi-does-and-does-not-do"></a>Was die PSI durchführen kann und was nicht
 
-Die Project Server-Schnittstelle (PSI) kann bei der Automatisierung zahlreicher Server seitiger Prozesse in lokalen Installationen von Project Server 2013 helfen. Mehrere Funktionen erfordern jedoch die Verwendung von Microsoft Project Professional 2013.
+Die Project Server Interface (PSI) kann dazu beitragen, viele serverseitige Prozesse in lokalen Installationen von Project Server 2013 zu automatisieren. Mehrere Funktionen erfordern jedoch die Verwendung von Microsoft Project Professional 2013.
   
 |||
 |:-----|:-----|
 |||
    
-Die PSI wurde entwickelt, um die Funktionen von Project Professional 2013 zu ergänzen, statt eine serverbasierte Alternative für alle Project Professional-Funktionen bereitzustellen. Drittanbieterentwickler können das PSI verwenden, um Webparts für lokale Installationen von Project Web App und Projektarbeitsbereichen zu erstellen, benutzerdefinierte Windows-Anwendungen und Webanwendungen zu erstellen, die mit lokalen Project Server-Daten interagieren, Workflow zu entwickeln. Logik für die Projektportfolio Verwaltung, entwickeln Sie lokale voll vertrauenswürdige Ereignishandler, und integrieren Sie Project Server in andere Anwendungen. Das PSI kann nicht für die Entwicklung von Apps für den Office Store, für mobile Geräte oder Tablets verwendet werden. dafür können Sie das clientseitige Objektmodell (CSOM) verwenden.
+Die PSI ist so konzipiert, dass sie die Funktionen von Project Professional 2013 ergänzt, anstatt eine serverbasierte Alternative für alle Project Professional-Funktionen zu bieten. Drittanbieterentwickler können das PSI verwenden, um Webparts für lokale Installationen von Project Web App und Projektarbeitsbereiche zu erstellen, benutzerdefinierte Windows-Anwendungen und Webanwendungen zu erstellen, die mit lokalen Project Server-Daten interagieren, Workflowlogik für die Projektportfolioverwaltung zu entwickeln, lokale Ereignishandler mit voller Vertrauenswürdigkeit zu entwickeln und Project Server in andere Anwendungen zu integrieren. Die PSI kann nicht für die Entwicklung von Apps für den Office Store, mobile Geräte oder Tablets verwendet werden. Dazu können Sie das clientseitige Objektmodell (CSOM) verwenden.
   
 > [!NOTE]
-> Das PSI bietet eine umfassendere programmgesteuerte Schnittstelle für Project Server 2013 als die CSOM bereitstellt. Es wird jedoch empfohlen, dass Sie die CSOM verwenden, um neue Anwendungen zu entwickeln, es sei denn, der CSOM bietet nicht die von Ihnen benötigte Funktionalität. Weitere Informationen finden Sie unter Funktionsweise [des CSOM und nicht](what-the-csom-does-and-does-not-do.md). 
+> Die PSI bietet eine umfassendere programmgesteuerte Schnittstelle für Project Server 2013, als das CSOM bietet. Es wird jedoch empfohlen, das CSOM zum Entwickeln neuer Anwendungen zu verwenden, es sei denn, das CSOM bietet nicht die von Ihnen benötigten Funktionen. Weitere Informationen finden Sie unter [What the CSOM does and does not do](what-the-csom-does-and-does-not-do.md). 
   
-## <a name="usage-scenarios-for-the-psi"></a>Nutzungsszenarien für die PSI
+## <a name="usage-scenarios-for-the-psi"></a>Verwendungsszenarien für die PSI
 <a name="pj14_WhatPSIDoes_UsageScenarios"> </a>
 
-Im folgenden finden Sie einige Beispiele für Anwendungen, die von der PSI für serverseitige Projekte und Berechnungen unterstützt werden:
+Im Folgenden finden Sie Beispiele für einige Anwendungen, die von der PSI für serverseitige Projekte und Berechnungen unterstützt werden:
   
-- **Automatisieren der Erstellung oder Verwaltung von Entitäten in Project Server** Obwohl Project Professional 2013 und Project Web App zusammen entworfen wurden, um die Verwaltung und Erstellung von Entitäten wie Projekten, Enterprise-Ressourcen und benutzerdefinierten Feldern zu behandeln, gibt es oft Fälle, in denen eine benutzerdefinierte Anwendung Zeit mit Massen-oder wiederkehrende Aufträge. Das PSI kann mehrere Arten von Aufträgen automatisieren, die das CSOM nicht ausführt, beispielsweise mit OLAP-Cubes, Projektportfolio Analysen, Geschäfts Treibern, Benachrichtigungen, Objekt Verknüpfungs Anbietern, Sicherheit und SharePoint-Interoperabilität. 
+- **Automatisieren der Erstellung oder Verwaltung von Entitäten in Project Server** Obwohl Project Professional 2013 und Project Web App zusammen für die Verwaltung und Erstellung von Entitäten wie Projekten, Unternehmensressourcen und benutzerdefinierten Feldern konzipiert sind, kann eine benutzerdefinierte Anwendung in vielen Fällen zeitsparend mit Massenaufträgen oder wiederholten Aufträgen arbeiten. Das PSI kann verschiedene Arten von Aufträgen automatisieren, die das CSOM nicht macht, z. B. mit OLAP-Cubes, Projektportfolioanalysen, Geschäftstreibern, Benachrichtigungen, Objektlinkanbietern, Sicherheit und SharePoint-Interoperabilität. 
     
-- **Abrufen von Daten in den veröffentlichten oder Archivtabellen der Project-Datenbank** Da der direkte Datenbankzugriff auf die Entwurfs-, Veröffentlichungs-und Archivtabellen nicht unterstützt wird, können Sie die PSI zum Lesen von Daten verwenden, die in den Berichtstabellen oder-Ansichten nicht verfügbar sind. Holen Sie sich beispielsweise Informationen zu Projektversionen, Datumsangaben und Änderungen, die in den Archivtabellen gespeichert sind, und füllen Sie dann ein JS Grid-Steuerelement in einem Webpart mit den Informationen. 
+- **Daten in den veröffentlichten oder Archivtabellen der Project-Datenbank abspeichern** Da der direkte Datenbankzugriff auf die Entwurfs-, Veröffentlichten- und Archivtabellen nicht unterstützt wird, können Sie die PSI verwenden, um Daten zu lesen, die in den Berichtstabellen oder -ansichten nicht verfügbar sind. Beispielsweise erhalten Sie Informationen zu Projektversionen, Datumsangaben und Änderungen, die in den Archivtabellen gespeichert sind, und füllen Sie dann ein JS Grid-Steuerelement in einem Webteil mit den Informationen auf. 
     
-- Über **prüfen des Status und der Arbeitszeittabellendaten** Verwenden Sie die PSI in lokalen vor-Ereignishandlern, um den Zuordnungsstatus oder die Arbeitszeittabellendaten zu überprüfen, die Benutzer eingeben, bevor die Daten in Project Web App gespeichert werden. 
+- **Überprüfen von Status- und Arbeitszeittabellendaten** Verwenden Sie die PSI in lokalen Pre-Event-Handlern, um den Zuweisungsstatus oder die Arbeitszeittabellendaten zu überprüfen, die Benutzer eingeben, bevor die Daten in Project Web App gespeichert werden. 
     
 - **Wartungsprojekte**: Erstellen Sie Platzhalterprojekte für die Verwendung mit Ressourcenplänen. Reservieren oder buchen Sie Zeit gegen Ressourcen für Wartungsarbeiten oder grundlegende Geschäftsvorgänge. Wartungsprojekte weisen normalerweise keine Aufgaben auf. 
     
@@ -45,136 +45,136 @@ Im folgenden finden Sie einige Beispiele für Anwendungen, die von der PSI für 
     
 - **Automatisieren von Aktualisierungen von Teammitgliedern**: Für Projekte, die nicht aktiv verwaltet werden, aktualisieren Sie automatisch Projekte auf dem Server mithilfe von Informationen von Teammitgliedern zu Fortschritt und anderen Änderungen. Projekte können aktualisiert und neu veröffentlicht werden, ohne dass ein Projektmanager die Ergebnisse überprüft oder Anpassungen am Plan vornimmt. 
     
-- **Auswerten von Project Server-Daten in lokalen voll vertrauenswürdigen Ereignishandlern** Ein lokaler Ereignishandler für das **ProjectCreating** -Pre-Event kann Project Server-Daten aus dem PSI verwenden, um zu ermitteln, ob ein Ereignis abgebrochen werden soll. Vergleichen Sie zum Beispiel vor dem Erstellen eines Projekts den Projektvorschlag mit vorhandenen Projekten. 
+- **Auswerten von Project Server-Daten in lokalen Ereignishandlern** mit voller Vertrauenswürdigkeit Ein lokaler Ereignishandler für das **ProjectCreating-Präereignis** kann Project Server-Daten aus der PSI verwenden, um zu bestimmen, ob ein Ereignis abgebrochen werden soll. Vergleichen Sie zum Beispiel vor dem Erstellen eines Projekts den Projektvorschlag mit vorhandenen Projekten. 
     
-- **Erstellen benutzerdefinierter Workflowaktivitäten für das Bedarfsmanagement** Verwenden Sie die PSI in lokalen, voll vertrauenswürdigen Workflowaktivitäten, um Projektvorschläge basierend auf Enterprise-Projektvorlagen zu ändern und zu aktualisieren. Verwenden Sie benutzerdefinierte Project-Felder, um das Projekt mit Informationen zu versehen, die für den Initiierungs-und Genehmigungsprozess benötigt werden. Fügen Sie Aufgaben zum Identifizieren von Projektphasen für wichtige Meilensteine oder Projektergebnisse hinzu. Wenn Projektvorschläge genehmigt werden, kann ein Workflow die Vorschläge in vollständige Projekte ändern, die mit Project Professional verwaltet werden. 
+- **Erstellen benutzerdefinierter Workflowaktivitäten für die Bedarfsverwaltung** Verwenden Sie die PSI in lokalen, voll vertrauenswürdigen Workflowaktivitäten, um Projektvorschläge basierend auf Unternehmensprojektvorlagen zu ändern und zu aktualisieren. Verwenden Sie benutzerdefinierte Projektfelder, um das Projekt mit Informationen zu kennzeichnen, die für den Initiierungs- und Genehmigungsprozess erforderlich sind. Fügen Sie Aufgaben zum Identifizieren von Projektphasen für wichtige Meilensteine oder Projektergebnisse hinzu. Wenn Projektvorschläge genehmigt werden, kann ein Workflow die Vorschläge in vollständige Projekte ändern, die mit Project Professional verwaltet werden. 
     
-- **PSI-Erweiterungen erstellen** (**Veraltet.** Erweiterungen sind in Project Server 2013 veraltet und werden in zukünftigen Versionen nicht unterstützt.) Die PSI kann mithilfe der Windows Communication Foundation (WCF)-Schnittstelle mit benutzerdefinierten Diensten erweitert werden. PSI-Erweiterungen werden auf dem Project Server-Computer ausgeführt und können dieselbe Sicherheitsinfrastruktur verwenden, die von den integrierten PSI-Diensten verwendet wird. Erweiterungen können die Berichtstabellen Abfragen, separate Datenbanktabellen verwenden, PSI-Aufrufe konsolidieren, um Bandbreite zu sparen und mit Drittanbieteranwendungen und anderen serverseitigen Komponenten zu integrieren. Weitere Informationen finden Sie unter [developING PSI Extensions](https://msdn.microsoft.com/library/1b484623-94fb-47c9-84c1-3e68a9133042%28Office.15%29.aspx).
+- **Erstellen von PSI-Erweiterungen** (**Veraltet.** Erweiterungen sind in Project Server 2013 veraltet und werden in zukünftigen Versionen nicht mehr unterstützt.) Die PSI kann mit benutzerdefinierten Diensten mithilfe der Windows Communication Foundation (WCF)-Schnittstelle erweitert werden. PSI-Erweiterungen werden auf dem Project Server-Computer ausgeführt und können dieselbe Sicherheitsinfrastruktur wie die integrierten PSI-Dienste verwenden. Erweiterungen können die Berichtstabellen abfragen, separate Datenbanktabellen verwenden, PSI-Aufrufe konsolidieren, um Bandbreite zu sparen, und in Anwendungen von Drittanbietern und andere serverseitige Komponenten integrieren. Weitere Informationen finden Sie unter [Developing PSI Extensions](https://msdn.microsoft.com/library/1b484623-94fb-47c9-84c1-3e68a9133042%28Office.15%29.aspx).
     
-- **Verwenden des Identitätswechsels in lokalen, voll vertrauenswürdigen Anwendungen** Aufrufe an die WCF-Schnittstelle der PSI können imitiert werden, sodass eine Anwendung die Sicherheitsberechtigungen des imitierten Benutzers übernimmt. Der Identitätswechsel sollte sparsam und vorsichtig verwendet werden. Das Lesen und Aktualisieren von Statusinformationen für andere Benutzer erfordert keinen Identitätswechsel. Neue Anwendungen, die Identitätswechsel erfordern, sollten die CSOM und das OAuth-Protokoll anstelle der PSI verwenden. Weitere Informationen zum Identitätswechsel mit dem PSI finden Sie unter [use Impersonation with WCF](https://msdn.microsoft.com/library/e3597901-2f02-44a2-8076-d32aae540b38%28Office.15%29.aspx).
+- **Verwenden des Identitätswechsels in lokalen, voll vertrauenswürdigen Anwendungen** Aufrufe der WCF-Schnittstelle der PSI können als Identitätswechsel verwendet werden, sodass eine Anwendung die Sicherheitsberechtigungen des identitätswechselten Benutzers übernimmt. Identitätswechsel sollte sparsam und sorgfältig verwendet werden. Das Lesen und Aktualisieren von Statusinformationen für andere Benutzer erfordert keinen Identitätswechsel. Neue Anwendungen, die einen Identitätswechsel erfordern, sollten das CSOM und das OAuth-Protokoll anstelle der PSI verwenden. Weitere Informationen zum Identitätswechsel mit der PSI finden Sie unter [Use Impersonation with WCF](https://msdn.microsoft.com/library/e3597901-2f02-44a2-8076-d32aae540b38%28Office.15%29.aspx).
     
 > [!NOTE]
-> In einigen Fällen kann das PSI in Clientanwendungen mit dem CSOM und Project Online verwendet werden. Wenn Sie einen ASMX-basierten PSI-Webdienst verwenden, muss die Anwendung eine Methode zum Authentifizieren des [Microsoft. projectserver. Client. projectcontext](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.ProjectContext.aspx) -Objekts in der CSOM und eine Methode zum Authentifizieren des ** System. Web. Services. Protocols. SoapHttpClientProtocol** -Clientobjekt. Ein Beispiel, in dem ein Webdienst mit der SharePoint-CSOM verwendet wird, finden Sie unter [Remote Authentication in SharePoint Online using Claims-Based Authentication](https://msdn.microsoft.com/library/49067f7a-3020-478f-ba97-4b7ce3ea9b87%28Office.15%29.aspx). > aufgrund der eingeschränkten Berechtigungen auf App-Ebene kann das PSI nicht in Apps verwendet werden, die für die Verteilung im öffentlichen Office Store entwickelt wurden. In diesem Fall können Sie nur die CSOM verwenden. 
+> In einigen Fällen kann die PSI in Clientanwendungen mit dem CSOM und Project Online verwendet werden. Wenn Sie einen ASMX-basierten PSI-Webdienst verwenden, muss die Anwendung eine Methode zum Authentifizieren des [Microsoft.ProjectServer.Client.ProjectContext-Objekts](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.ProjectContext.aspx) im CSOM und eine Methode zum Authentifizieren des **System.Web.Services.Protocols.SoapHttpClientProtocol-Clientobjekts** enthalten. Ein Beispiel, das einen Webdienst mit dem SharePoint-CSOM verwendet, finden Sie unter [Remoteauthentifizierung in SharePoint Online mithilfe](https://msdn.microsoft.com/library/49067f7a-3020-478f-ba97-4b7ce3ea9b87%28Office.15%29.aspx)der anspruchsbasierten Authentifizierung . > Aufgrund eingeschränkter Berechtigungen auf App-Ebene kann die PSI nicht in Apps verwendet werden, die für die Verteilung im öffentlichen Office Store entwickelt wurden. In diesem Fall können Sie nur das CSOM verwenden. 
   
-## <a name="what-the-psi-does-not-do"></a>Was die PSI nicht tut
+## <a name="what-the-psi-does-not-do"></a>Was die PSI nicht macht
 <a name="pj14_WhatPSIDoes_DoesNotDo"> </a>
 
-Zwar gibt es viele Dinge, die das PSI ausführen kann, aber es gibt einige Dinge, die das PSI nicht tut. Im folgenden finden Sie zwei Dinge, die das PSI nicht kann, aber die CSOM ausführen kann.
+Obwohl es viele Dinge gibt, die die PSI tun kann, gibt es einige Dinge, die die PSI nicht tut. Es folgen zwei Dinge, die die PSI nicht tun kann, aber das CSOM kann dies tun.
   
-### <a name="project-online-and-remote-event-receivers"></a>Project Online-und Remoteereignis Empfänger
+### <a name="project-online-and-remote-event-receivers"></a>Project Online- und Remoteereignisempfänger
 
-Die primäre Einschränkung der PSI ist mit Project online. Für Anwendungen, die das PSI verwenden, ist der voll vertrauenswürdige Zugriff auf eine lokale Installation von Project Server erforderlich. Die PSI kann beispielsweise nicht in Remoteereignis Empfängern verwendet werden, in denen der Ereignis Receiver als Dienst in Microsoft Azure installiert wird.
+Die primäre Einschränkung der PSI liegt bei Project Online. Anwendungen, die die PSI verwenden, benötigen voll vertrauenswürdigen Zugriff auf eine lokale Installation von Project Server. Beispielsweise kann die PSI nicht in Remoteereignisempfängern verwendet werden, bei denen der Ereignisempfänger als Dienst in Microsoft Azure installiert ist.
   
 ### <a name="workflows-and-claims-authentication"></a>Workflows und Anspruchsauthentifizierung
 
-Eine Workflowdefinition, die Windows Workflow Foundation, Version 4 (WF4) verwendet, erfordert die Forderungsauthentifizierung, die von der PSI nicht direkt unterstützt wird. Das PSI kann daher nicht zum Erstellen eines Projekts in Project Server 2013 mit einem Enterprise-Projekttyp (EPT) mit einer WF4-Workflowdefinition verwendet werden.
+Eine Workflowdefinition, die Windows Workflow Foundation, Version 4 (WF4), verwendet, erfordert die Anspruchsauthentifizierung, die von der PSI nicht direkt unterstützt wird. Dies bedeutet, dass Sie das PSI nicht verwenden können, um ein Projekt in Project Server 2013 zu erstellen, das über einen Unternehmensprojekttyp (Enterprise Project Type, EPT) mit einer WF4-Workflowdefinition verfügt.
   
-Sie können die PSI verwenden, um Projekte mit EPTs zu erstellen, die entweder keinen Workflow besitzen oder eine Legacy-WF 3.5-Definition verwenden (die Workflow Version in Project Server 2010). Wenn Sie ein Projekt mit einer EPT mit einer WF4-Definition erstellen möchten, verwenden Sie die CSOM.
+Sie können das PSI verwenden, um Projekte mit EPTs zu erstellen, die entweder keinen Workflow haben oder eine ältere WF3.5-Definition (die Workflowversion in Project Server 2010) verwenden. Verwenden Sie das CSOM, um ein Projekt mit einer EPT mit einer WF4-Definition zu erstellen.
   
  **Aktionen, die Project Professional erfordern:**
   
-Die folgende Liste ist Dinge, die weder die PSI noch die CSOM ausführen können.
+Die folgende Liste enthält Dinge, die weder die PSI noch das CSOM tun können.
   
 #### <a name="local-data"></a>Lokale Daten
 
-- Bearbeiten von Daten in lokalen Projekten (MPP-Dateien). Beispiel: Definieren von Kostensatztabellen oder Verfügbarkeits Konturen für lokale Ressourcen. 
+- Bearbeiten von Daten in lokalen Projekten (MPP-Dateien). Beispielsweise definieren Sie Kostensatztabellen oder Verfügbarkeitskonturen für lokale Ressourcen. 
     
-- Definieren oder Bearbeiten von lokalen Basiskalendern oder Ressourcenkalendern, einschließlich Kalenderausnahmen.
+- Definieren oder Bearbeiten lokaler Basiskalender oder Ressourcenkalender, einschließlich Kalenderausnahmen.
     
-- Definieren lokaler benutzerdefinierter Felder. (Die PSI unterstützt das Bearbeiten lokaler benutzerdefinierter Feldwerte für Vorgänge, Ressourcen und Zuordnungen.)
+- Definieren lokaler benutzerdefinierter Felder. (Die PSI unterstützt die Bearbeitung lokaler benutzerdefinierter Feldwerte für Vorgänge, Ressourcen und Zuordnungen.)
     
 #### <a name="enterprise-data"></a>Enterprise-Daten
 
-- AusChecken oder Bearbeiten der Enterprise-Global-Projektvorlage. Die Enterprise-Global-Daten in Project Server 2013 sind eine Reihe von binären Datentabellen in der Projektdatenbank, keine Projektvorlage wie in Office Project Server 2007 und früheren Versionen.
+- Auschecken oder Bearbeiten der Enterprise-Global-Vorlage. Die globalen Unternehmensdaten in Project Server 2013 sind eine Reihe von binären Datentabellen in der Project-Datenbank und keine Projektvorlage wie in Office Project Server 2007 und früheren Versionen.
     
-- Definieren oder Bearbeiten von Enterprise-Kalendern. Die [Calendar](https://msdn.microsoft.com/library/WebSvcCalendar.Calendar.aspx) -Methoden verwalten nur Kalenderausnahmen. 
+- Definieren oder Bearbeiten von Unternehmenskalendern. Die [Calendar-Methoden](https://msdn.microsoft.com/library/WebSvcCalendar.Calendar.aspx) verwalten nur Kalenderausnahmen. 
     
-#### <a name="master-projects-and-cross-project-links"></a>Hauptprojekte und projektübergreifende Verknüpfungen
+#### <a name="master-projects-and-cross-project-links"></a>Masterprojekte und projektübergreifende Links
 
 - Erstellen von Hauptprojekten und Einfügen von Teilprojekten.
     
-- Planen eines kritischen Pfads in einem Hauptprojekt 
+- Planen eines kritischen Pfads für ein Hauptprojekt. 
     
-- Erstellen projektübergreifender Verknüpfungen.
+- Erstellen projektübergreifender Links.
     
 #### <a name="resources"></a>Ressourcen
 
-- Anfordern oder Durchführen des Ressourcenabgleichs.
+- Anfordern oder Durchführen des Ressourcenlevels.
     
 - Ändern der Ressource für eine Zuordnung. (Sie können die PSI verwenden, um die Zuordnung zu löschen und eine neue zu erstellen.)
     
-- Löschen oder Ersetzen einer Ressource, die tatsächliche Arbeit akzeptiert hat (aktuelle Werte).
+- Löschen oder Ersetzen einer Ressource, für die aktuelle Arbeit akzeptiert ist (ist).
     
 - Ändern eines Ressourcentyps zwischen Arbeit, Material und Kosten.
     
 - Erstellen oder Bearbeiten von Ressourcenkalendern.
     
-- Beim Hinzufügen einer Ressource zu einem Vorgang wird die Arbeitsweise von Project Professional nicht automatisch neu verteilt. Es ist Aufgabe des Entwicklers, die Arbeitsverteilung für die Zuordnungen auszuwählen und explizit festzulegen.
+- Beim Hinzufügen einer Ressource zu einem Vorgang verteilt die PSI die Arbeit nicht automatisch wie Project Professional. Der Entwickler muss die Arbeitsverteilung für die Zuordnungen auswählen und explizit festlegen.
     
 #### <a name="cost-resources"></a>Kostenressourcen
 
-- Bearbeiten, erstellen oder Löschen von Kostenressourcen und Zuordnungen mithilfe der [Project](https://msdn.microsoft.com/library/WebSvcProject.Project.aspx) -Methoden. Mit den [Ressourcen](https://msdn.microsoft.com/library/WebSvcResource.Resource.aspx) Methoden können Kostenressourcen erstellt, aber nicht bearbeitet werden. 
+- Bearbeiten, Erstellen oder Löschen von Kostenressourcen und Zuordnungen mithilfe der [Project-Methoden.](https://msdn.microsoft.com/library/WebSvcProject.Project.aspx) Die [Resource-Methoden](https://msdn.microsoft.com/library/WebSvcResource.Resource.aspx) können Kostenressourcen erstellen, aber nicht bearbeiten. 
     
-#### <a name="work-contours"></a>Arbeits Konturen
+#### <a name="work-contours"></a>Arbeitskonturen
 
 - Bearbeiten von Zeitphasendaten.
     
     > [!NOTE]
-    > Die [UpdateStatus](https://msdn.microsoft.com/library/WebSvcStatusing.Statusing.UpdateStatus.aspx) -Methode im **Statusing** -Webdienst kann Zeitphasen-Istwerte für Zuordnungen bearbeiten, nachdem der Projektmanager die Zuordnungsdaten aktualisiert und veröffentlicht hat. 
+    > Die [UpdateStatus-Methode](https://msdn.microsoft.com/library/WebSvcStatusing.Statusing.UpdateStatus.aspx) im **Statusing-Webdienst** kann zeitphasenweise Aktuelles für Zuordnungen bearbeiten, nachdem der Projektmanager die Zuordnungsdaten aktualisiert und veröffentlicht hat. 
   
-- Festlegen oder Ändern des Typs der Zuordnungs Kontur (beispielsweise flach, rückwärts geladen oder Front-loaded).
+- Festlegen oder Ändern des Zuweisungskonturtyps (z. B. flach, zurückgeladen oder frontgeladen).
     
-#### <a name="baselines-and-earned-value"></a>Basispläne und Ertragswert
+#### <a name="baselines-and-earned-value"></a>Baselines and earned value
 
-- Speichern einer Baseline oder Bearbeiten von Basisdaten. 
+- Speichern eines Basisplans oder Bearbeiten von Basisplandaten. 
     
-- Festlegen eines Fortschrittsdatums.
+- Festlegen eines Statusdatums.
     
-- Berechnen von Varianz und Ertragswert. 
+- Berechnen der Varianz und des Gewinnwerts. 
     
-#### <a name="interactive-scheduling"></a>InterAktiver Terminplan
+#### <a name="interactive-scheduling"></a>Interaktive Planung
 
-- Unterstützen der interaktiven Planung. (Da Project Server die Interaktionen asynchron verarbeitet, sollte die interaktive Planung mit Project Professional durchgeführt werden.)
+- Unterstützung der interaktiven Planung. (Da Project Server Interaktionen asynchron verarbeitet, sollte die interaktive Planung mit Project Professional durchgeführt werden.)
     
     > [!NOTE]
-    > Um eine Änderung des programmgesteuerten Verhaltens zu vermeiden, fungieren die PSI-Methoden, die von Project Server 2010 weitergeleitet werden, in Project Server 2013 auf die gleiche Weise. [Queue](https://msdn.microsoft.com/library/WebSvcProject.Project.QueueUpdateProject.aspx) hat beispielsweise weiterhin die gleichen Einschränkungen und verwendet das ältere serverseitige Planungsmodul. Die neue [Methode queueupdateproject2](https://msdn.microsoft.com/library/WebSvcProject.Project.QueueUpdateProject2.aspx) -Methode entfernt viele dieser Einschränkungen und verwendet das neue serverseitige Planungsmodul von project Server 2013, bei dem es sich um das gleiche Planungsmodul in project Professional 2013 handelt. 
+    > Um eine Änderung des programmgesteuerten Verhaltens zu vermeiden, verhalten sich die psi-Methoden, die von Project Server 2010 weitergeleitet werden, in Project Server 2013 auf die gleiche Weise. Beispielsweise hat [QueueUpdateProject](https://msdn.microsoft.com/library/WebSvcProject.Project.QueueUpdateProject.aspx) weiterhin dieselben Einschränkungen und verwendet das ältere serverseitige Planungsmodul. Die neue [QueueUpdateProject2-Methode](https://msdn.microsoft.com/library/WebSvcProject.Project.QueueUpdateProject2.aspx) entfernt viele dieser Einschränkungen und verwendet das neue serverseitige Project Server 2013-Planungsmodul, das das gleiche Planungsmodul wie in Project Professional 2013 ist. 
   
 #### <a name="wbs"></a>WBS
 
-- Definieren eines Projektstrukturplan-Codeformats (PSP). 
+- Definieren eines Psp-Codeformats (Work Breakdown Structure). 
     
 #### <a name="tasks"></a>Aufgaben
 
-- Ändern des Vorgangstyps (Feste Arbeit, Dauer oder Einheiten)
+- Ändern des Vorgangstyps (feste Arbeit, Dauer oder Einheiten).
     
-- Ändern, ob ein Vorgang leistungsgesteuert ist.
+- Ändern, ob ein Vorgang aufwandsgesteuert ist.
     
-- Änderung der festgelegten Kosten Abgrenzung.
+- Ändern der fixen Kosten des Vorgangs.
     
-- Ändern des Inhalts des [TASK_NOTES](https://msdn.microsoft.com/library/WebSvcProject.ProjectDataSet.TaskRow.TASK_NOTES.aspx) -Felds. Die PSI kann nur den Text Teil der Aufgaben Notizen lesen, die binäre RTF-Daten sind. Sie können jedoch Zuordnungsnotizen ( [ASSN_NOTES](https://msdn.microsoft.com/library/WebSvcProject.ProjectDataSet.AssignmentRow.ASSN_NOTES.aspx) ) bearbeiten, die Textdaten sind. Die Berichtsdatenbank enthält keine Aufgaben-oder Zuordnungsnotizen. 
+- Ändern des Inhalts des [TASK_NOTES](https://msdn.microsoft.com/library/WebSvcProject.ProjectDataSet.TaskRow.TASK_NOTES.aspx) Felds. Die PSI kann nur den Textteil der Aufgabenhinweise lesen, bei denen es sich um RTF-Binärdaten handelt. Sie können jedoch Zuweisungshinweise ( ASSN_NOTES ) [bearbeiten,](https://msdn.microsoft.com/library/WebSvcProject.ProjectDataSet.AssignmentRow.ASSN_NOTES.aspx) bei denen es sich um Textdaten handelt. Die Berichtsdatenbank enthält keine Aufgaben- oder Zuordnungshinweise. 
     
 - Erstellen oder Bearbeiten von wiederkehrenden Vorgängen.
     
 - Zuweisen oder Ändern des Vorgangskalenders für vorhandene Vorgänge.
     
-- Erstellen einer neuen Aufgabe mit einem Vorgangskalender.
+- Erstellen eines neuen Vorgangs mit einem Vorgangskalender.
     
-- Ändern des Werts des [TASK_IGNORES_RES_CAL](https://msdn.microsoft.com/library/WebSvcProject.ProjectDataSet.TaskRow.TASK_IGNORES_RES_CAL.aspx) -Felds (Vorgangs ignoriert Ressourcenkalender). 
+- Ändern des Werts [des](https://msdn.microsoft.com/library/WebSvcProject.ProjectDataSet.TaskRow.TASK_IGNORES_RES_CAL.aspx) TASK_IGNORES_RES_CAL (Vorgang ignoriert Ressourcenkalender). 
     
-- Ändern des aktiven Status einer Aufgabe mithilfe von [Queue](https://msdn.microsoft.com/library/WebSvcProject.Project.QueueUpdateProject.aspx) , wenn im selben Aufruf zusätzliche Änderungen vorgenommen werden. Weitere Informationen finden Sie im Abschnitt *Projektplanung auf dem Server* in [Project Server-Programmierbarkeit](project-server-programmability.md).
+- Ändern des aktiven Status eines Vorgangs mithilfe von [QueueUpdateProject](https://msdn.microsoft.com/library/WebSvcProject.Project.QueueUpdateProject.aspx) , wenn im gleichen Aufruf weitere Änderungen vorgenommen werden. Weitere Informationen finden Sie im Abschnitt  *Project Scheduling on the Server*  unter Project Server [programmability](project-server-programmability.md).
     
-#### <a name="summary-tasks"></a>Sammelvorgänge
+#### <a name="summary-tasks"></a>Sammelaufgaben
 
-- Erstellen oder Ändern von Zuordnungen für Sammelvorgänge.
+- Erstellen oder Ändern von Zuordnungen für Sammelaufgaben.
     
     > [!NOTE]
-    > Es wird empfohlen, keine Zuordnungen für Sammelvorgänge in Project Professional oder auf andere Weise vorzunehmen. Weitere Informationen finden Sie im Abschnitt *Projektplanung auf dem Server* in [Project Server-Programmierbarkeit](project-server-programmability.md). 
+    > Es wird empfohlen, keine Zuordnungen für Sammelaufgaben mithilfe von Project Professional oder auf andere Weise durchzuführen. Weitere Informationen finden Sie im Abschnitt  *Project Scheduling on the Server*  unter Project Server [programmability](project-server-programmability.md). 
   
-- Bearbeiten von Sammelvorgangs Feldern, die normalerweise aus dem Teilvorgang rollupiert werden. Server seitige Projekte Rollup zusammenfassende Informationen, anstatt Informationen über den Sammelvorgang festzulegen und ihn auf die Teilvorgänge zu verschieben. Sie können nur die folgenden Felder für Sammelvorgänge bearbeiten:
+- Bearbeiten von Sammelaufgabenfeldern, die normalerweise aus dem Teilvorgang aufgerollt werden. Serverseitige Projekte können immer Zusammenfassungsinformationen rollupieren, anstatt Informationen zur Sammelaufgabe zu setzen und auf die Untervorgänge zu übertragen. Sie können nur die folgenden Felder für Sammelaufgaben bearbeiten:
     
   - Anordnungsbeziehungen
     
-  - Benutzerdefinierte Felder ohne Formel
+  - Benutzerdefinierte Nichtformelfelder
     
   - [TASK_NAME](https://msdn.microsoft.com/library/WebSvcProject.ProjectDataSet.TaskRow.TASK_NAME.aspx)
     
@@ -192,19 +192,19 @@ Die folgende Liste ist Dinge, die weder die PSI noch die CSOM ausführen können
     
   - [TASK_FIXED_COST](https://msdn.microsoft.com/library/WebSvcProject.ProjectDataSet.TaskRow.TASK_FIXED_COST.aspx)
     
-  - [TASK_FIXED_COST_ACCRUAL](https://msdn.microsoft.com/library/WebSvcProject.ProjectDataSet.TaskRow.TASK_FIXED_COST_ACCRUAL.aspx) (legen Sie den Wert nur beim Erstellen der Aufgabe fest) 
+  - [TASK_FIXED_COST_ACCRUAL](https://msdn.microsoft.com/library/WebSvcProject.ProjectDataSet.TaskRow.TASK_FIXED_COST_ACCRUAL.aspx) (legen Sie den Wert nur beim Erstellen des Vorgangs) 
     
   - [TASK_WBS](https://msdn.microsoft.com/library/WebSvcProject.ProjectDataSet.TaskRow.TASK_WBS.aspx)
     
-Für den Projektsammelvorgang sind die PSI-Einschränkungen identisch mit Project Professional. Das PSI kann Budget Zuordnungen bearbeiten, einschließlich Kostenbudgets.
+Für die Projektzusammenfassungsaufgabe sind die PSI-Einschränkungen mit project Professional identisch. Die PSI kann Budgetzuordnungen bearbeiten, einschließlich Kostenbudgets.
   
 #### <a name="project-level-calculation-options"></a>Berechnungsoptionen auf Projektebene
 
-- Ändern eines Projekttyps zwischen schedule from Start (SFS) und schedule from Finish (SFF). (Das PSI kann ein Projekt entweder als SFS oder als SFF erstellen, aber nach der Erstellung kann es nur in Project Professional geändert werden.)
+- Ändern eines Projekttyps zwischen Schedule From Start (SFS) und Schedule From Finish (SFF). (Die PSI kann ein Projekt entweder als SFS oder SFF erstellen, aber nach der Erstellung kann es nur in Project Professional geändert werden.)
     
-- Ändern des Projektbasis Kalenders ([CAL_UID](https://msdn.microsoft.com/library/WebSvcProject.ProjectDataSet.ProjectRow.CAL_UID.aspx) ) nach der Projekterstellung. 
+- Ändern des Projektbasiskalenders ([CAL_UID](https://msdn.microsoft.com/library/WebSvcProject.ProjectDataSet.ProjectRow.CAL_UID.aspx) ) nach der Projekterstellung. 
     
-- Ändern von Optionen für Berechnungen. Sie können die PSI verwenden, um die folgenden Berechnungsoptionen festzulegen, wenn das Projekt erstellt wird, aber die Änderung der Optionen erfordert Project Professional. (Wählen Sie in der backstaging-Ansicht **Optionen**aus, und wählen Sie dann im Dialogfeld **Projektoptionen** die Registerkarte **Zeitplan** aus.) 
+- Ändern von Optionen für Berechnungen. Mit der PSI können Sie die folgenden Berechnungsoptionen festlegen, wenn das Projekt erstellt wird, aber das Ändern der Optionen erfordert Project Professional. (Wählen Sie in der Backstage-Ansicht  **Optionen** aus, und wählen Sie dann im Dialogfeld **Projektoptionen** die Registerkarte Zeitplan aus.) 
     
   - [PROJ_OPT_CALC_ACT_COSTS](https://msdn.microsoft.com/library/WebSvcProject.ProjectDataSet.ProjectRow.PROJ_OPT_CALC_ACT_COSTS.aspx)
     

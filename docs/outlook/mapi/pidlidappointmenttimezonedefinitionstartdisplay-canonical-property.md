@@ -1,5 +1,5 @@
 ---
-title: Kanonische pidlidappointmenttimezonedefinitionstartdisplay (-Eigenschaft
+title: PidLidAppointmentTimeZoneDefinitionStartDisplay (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,31 +19,31 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32345017"
 ---
-# <a name="pidlidappointmenttimezonedefinitionstartdisplay-canonical-property"></a>Kanonische pidlidappointmenttimezonedefinitionstartdisplay (-Eigenschaft
+# <a name="pidlidappointmenttimezonedefinitionstartdisplay-canonical-property"></a>PidLidAppointmentTimeZoneDefinitionStartDisplay (kanonische Eigenschaft)
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält einen Datenstrom, der dem beibehaltenen Format einer [TZDEFINITION](https://msdn.microsoft.com/library/0ae21571-2299-6407-807c-428668bb6798%28Office.15%29.aspx) -Struktur zugeordnet wird, in der die Beschreibung für die Zeitzone gespeichert wird, die verwendet wird, wenn die Startzeit eines Einzelinstanz-Termins oder einer Besprechungsanfrage ausgewählt wird. 
+Enthält einen Datenstrom, der dem dauerhaften Format einer [TZDEFINITION-Struktur](https://msdn.microsoft.com/library/0ae21571-2299-6407-807c-428668bb6798%28Office.15%29.aspx) zu ordnet, der die Beschreibung für die Zeitzone speichert, die verwendet wird, wenn die Startzeit eines Termins oder einer Besprechungsanfrage mit einer einzelnen Instanz ausgewählt wird. 
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidApptTZDefStartDisplay  <br/> |
-|Eigenschaftengruppe:  <br/> |PSETID_Appointment  <br/> |
+|Eigenschaftensatz:  <br/> |PSETID_Appointment  <br/> |
 |Lange ID (LID):  <br/> |0x0000825E  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
 ## <a name="remarks"></a>Hinweise
 
-Microsoft Office Outlook 2003 oder früher und Lösungen, die auf Zusammenarbeits Datenobjekten (CDO) 1.2.1 basieren und das Tool zum Aktualisieren von Kalendern für Outlook oder Exchange Server nicht ausgeführt haben, speichern Sie die Startzeit und die Endzeit der einzelnen Instanzen. Termine und Besprechungsanfragen in koordinierter Weltzeit (Coordinated Universal Time, UTC). Diese Clients speichern keine Informationen für die Zeitzone, in der der Termin oder die Besprechungsanfrage erstellt wird.
+Microsoft Office Outlook 2003 oder früheren Versionen und Lösungen, die auf #A0 (Collaboration Data Objects, CDO) 1.2.1 basieren und das Kalenderaktualisierungstool für Outlook oder Microsoft Exchange Server nicht ausgeführt haben, speichern Sie die Start- und Endzeit von Terminen und Besprechungsanfragen in koordinierter Weltzeit (Coordinated Universal Time, UTC). Diese Clients speichern keine Informationen für die Zeitzone, in der der Termin oder die Besprechungsanfrage erstellt wird.
   
-Versionen von Outlook seit Microsoft Office Outlook 2007 und auf CDO 1.2.1 basierende Lösungen, die das Outlook-oder Exchange Server-Kalender Update Tool ausgeführt haben, verwenden diese Eigenschaft zum Speichern der Zeitzone für die Startzeit. Die **dispidApptTZDefStartDisplay** -Eigenschaft zeigt den Termin oder die Besprechung in der ursprünglichen Zeitzone an, die geplant wurde. Er bestimmt, ob die Startzeit angepasst werden soll, wenn sich die Regeln der Zeitzone ändern. Wenn diese Eigenschaft nicht vorhanden ist, wird die aktuelle lokale Zeitzone angenommen. Diese Eigenschaft wird nur für Anzeigezwecke verwendet und wird bei der Serienerweiterung nicht verwendet. 
+Versionen von Outlook seit Microsoft Office Outlook 2007 und Lösungen, die auf CDO 1.2.1 basieren, die das kalenderaktualisierungstool Outlook oder Exchange Server ausgeführt haben, verwenden diese Eigenschaft, um die Zeitzone für die Startzeit zu speichern. Die **dispidApptTZDefStartDisplay-Eigenschaft** zeigt den Termin oder die Besprechung in der ursprünglich geplanten Zeitzone an. Sie bestimmt, ob die Startzeit angepasst werden soll, wenn sich die Regeln der Zeitzone ändern. Wenn diese Eigenschaft fehlt, wird die aktuelle lokale Zeitzone angenommen. Diese Eigenschaft wird nur zu Anzeigezwecken verwendet und nicht in der Serienerweiterung verwendet. 
   
-Ein Parser muss vorsichtig sein, wenn er einen Stream liest, der von dieser Eigenschaft abgerufen wird, oder wenn er **TZDEFINITION** in einem Stream zur Bindung an eine binäre Eigenschaft wie **dispidApptTZDefStartDisplay**beibehält. Weitere Informationen finden Sie unter [about persistent TZDEFINITION to a Stream to Commit to a binary Property](https://msdn.microsoft.com/library/0dec535d-d48f-39a5-97d5-0bd109134b3b%28Office.15%29.aspx).
+Ein Parser muss vorsichtig sein, wenn er einen von dieser Eigenschaft erhaltenen Datenstrom liest oder **wenn er TZDEFINITION** in einem Datenstrom für die Verpflichtung zu einer binären Eigenschaft wie **dispidApptTZDefStartDisplay** beibehalten. Weitere Informationen finden Sie unter [About persisting TZDEFINITION to a stream to commit to a binary property](https://msdn.microsoft.com/library/0dec535d-d48f-39a5-97d5-0bd109134b3b%28Office.15%29.aspx).
   
-Diese Eigenschaft gibt Zeitzoneninformationen für die **dispidApptStartWhole** ([pidlidappointmentstartwhole (](pidlidappointmentstartwhole-canonical-property.md))-Eigenschaft an. Der Wert von **dispidApptTZDefStartDisplay** wird verwendet, um Startdatum und-Uhrzeit für Anzeigezwecke von UTC in die lokale Zeitzone zu konvertieren. Für jede von dieser Eigenschaft angegebene **TZRULE** darf das TZRULE_FLAG_RECUR_CURRENT_TZREG-Flag nicht festgelegt werden. Wenn beispielsweise **TZRULE** die effektive Regel ist, muss der Wert des Felds **TZRULE** "0x0002" lauten. Andernfalls muss es sich um "0x0000" handeln. 
+Diese Eigenschaft gibt Zeitzoneninformationen für die **eigenschaft dispidApptStartWhole** ([PidLidAppointmentStartWhole](pidlidappointmentstartwhole-canonical-property.md)) an. Der Wert **von dispidApptTZDefStartDisplay** wird zum Konvertieren des Startdatums und der Startzeit von UTC in die lokale Zeitzone zu Anzeigezwecken verwendet. Für jede von dieser Eigenschaft angegebene **TZRULE** darf das TZRULE_FLAG_RECUR_CURRENT_TZREG nicht festgelegt werden. Wenn z. B. **die TZRULE** die effektive Regel ist, muss der Wert des Felds **TZRULE** "0x0002" sein. Andernfalls muss es "0x0000" sein. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -51,17 +51,17 @@ Diese Eigenschaft gibt Zeitzoneninformationen für die **dispidApptStartWhole** 
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Eigenschaftenmengen Definitionen und Verweise auf zugehörige Exchange Server Protokollspezifikationen..
+> Stellt Eigenschaftensatzdefinitionen und Verweise auf verwandte Exchange Server zur Verfügung.
     
 [[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften und Vorgänge für Termin-, Besprechungsanfrage-und Antwortnachrichten an.
+> Gibt die Eigenschaften und Vorgänge für Termin-, Besprechungs- und Antwortnachrichten an.
     
-### <a name="header-files"></a>Header Dateien
+### <a name="header-files"></a>Headerdateien
 
-Mapidefs. h
+Mapidefs.h
   
-> Stellt Definitionen von Datentypen bereit.
+> Bietet Datentypdefinitionen.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -69,9 +69,9 @@ Mapidefs. h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

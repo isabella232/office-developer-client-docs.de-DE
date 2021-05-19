@@ -34,29 +34,29 @@ Sie können ein ShapeSheet-Fenster und ein Zeichnungsfenster gleichzeitig anzeig
   
 ## <a name="structure-of-the-shapesheet-window"></a>Struktur des ShapeSheet-Fensters
 
-Ein ShapeSheet ist in *Abschnitte* unterteilt, die einen bestimmten Aspekt des Verhaltens oder der Darstellung eines Shapes steuern, beispielsweise seine Geometrie oder seine Formatierung. Jeder Abschnitt enthält eine oder mehrere *Zeilen* , die *Zellen* enthalten. Jede Zelle kann eine Formel, deren Ergebnis (im Allgemeinen als Zellenwert bezeichnet) sowie optionale Fehlerinformationen enthalten. Abhängig von der jeweiligen Zelle kann eine Formel erforderlich oder optional sein. Die Daten einer Zelle (z.B. ihre Formel oder ihr Wert) können lokal definiert oder, was häufiger vorkommt, aus der entsprechenden Zelle im Master-Shape oder in der Formatvorlage des Shapes übernommen werden. 
+Ein ShapeSheet ist  *in*  Abschnitte unterteilt, die einen bestimmten Aspekt des Verhaltens oder der Darstellung eines Shapes steuern, z. B. dessen Geometrie oder Formatierung. Jeder Abschnitt enthält eine oder mehrere *Zeilen,* die Zellen *enthalten.* Jede Zelle kann eine Formel, deren Ergebnis (im Allgemeinen als Zellenwert bezeichnet) sowie optionale Fehlerinformationen enthalten. Abhängig von der jeweiligen Zelle kann eine Formel erforderlich oder optional sein. Die Daten einer Zelle (z.B. ihre Formel oder ihr Wert) können lokal definiert oder, was häufiger vorkommt, aus der entsprechenden Zelle im Master-Shape oder in der Formatvorlage des Shapes übernommen werden. 
   
-Das folgende Beispiel zeigt die Bearbeitungsleiste ![Bearbeitungsleiste](media/callout1_ZA01036259.gif), ein Abschnitt ![section](media/callout2_ZA01036260.gif), eine Zelle ![Zelle](media/callout3_ZA01036261.gif)und eine Zeile ![row](media/callout4_ZA01036262.gif) im ShapeSheet-Fenster. 
+Das folgende Beispiel zeigt die Formelleiste ![Bearbeitungsleiste](media/callout1_ZA01036259.gif), ein Abschnitt ![section](media/callout2_ZA01036260.gif), eine Zelle ![Zelle](media/callout3_ZA01036261.gif)und eine Zeile ![row](media/callout4_ZA01036262.gif) im ShapeSheet-Fenster. 
   
 ![ShapeSheet-Fenster](media/ShpSheetRef_CA_02a_ZA07645861.gif)
   
-Wenn Sie ein Shape zeichnen, wird es in Visio als Sammlung horizontaler und vertikaler Positionen gespeichert, die über Liniensegmente miteinander verbunden sind. Diese Speicherorte (als Scheitelpunkte bezeichnet) werden in den Zellen X und Y des **Geometrie** Abschnitts des Shapes aufgezeichnet. Wie im folgenden Beispiel dargestellt, wird beim Klicken auf die Zellen X und Y im Abschnitt **Geometrie** des ShapeSheet-Fensters eines Shapes ein Feld mit schwarzer Umrandung angezeigt, das den Scheitelpunkt des Shapes im Zeichnungsfenster hervorhebt. 
+Wenn Sie ein Shape zeichnen, wird es in Visio als Sammlung horizontaler und vertikaler Positionen gespeichert, die über Liniensegmente miteinander verbunden sind. Diese Positionen (als Scheitelpunkte bezeichnet) werden in den X- und Y-Zellen des Abschnitts **Geometry des Shapes** aufgezeichnet. Wie im folgenden Beispiel gezeigt, wird beim Klicken auf die X- und Y-Zellen im Abschnitt **Geometrie** des ShapeSheet-Fensters eines Shapes ein schwarz umrandes Feld angezeigt, in dem der Scheitelpunkt des Shapes im Zeichnungsfenster hervorgehoben wird. 
   
-![Schwarz umrandetes Feld, das den Scheitelpunkt des Shapes im Zeichnungsfenster hervorhebt](media/ShpSheetRef_CA_01_ZA07645860.gif)
+![Schwarzrahmenfeld, das den Scheitelpunkt auf der Form im Zeichnungsfenster hervorhebt](media/ShpSheetRef_CA_01_ZA07645860.gif)
   
 ## <a name="editing-an-object-in-the-shapesheet-window"></a>Bearbeiten eines Objekts im ShapeSheet-Fenster
 
 Wenn ein ShapeSheet-Fenster aktiv ist, ändert sich das Menüband entsprechend, um Optionen für das Arbeiten in diesem Fenster anzuzeigen. Wenn Sie eine ShapeSheet-Zelle auswählen, wird eine Formelleiste angezeigt, die Sie verwenden können, um die Formeln eines Objekts einzugeben oder zu ändern. Sie können aber auch direkt in der Zelle arbeiten.
   
-In einem ShapeSheet-Fenster können Sie einem ShapeSheet Abschnitte hinzufügen, um dem Shape auf dem Zeichenblatt beispielsweise neue Merkmale hinzuzufügen. Sie können beispielsweise einen **Connection Points** -Abschnitt hinzufügen, um eine Verbindung zu erstellen. Wenn Sie einen Abschnitt nicht mehr benötigen, können Sie ihn löschen. 
+In einem ShapeSheet-Fenster können Sie einem ShapeSheet Abschnitte hinzufügen, um dem Shape auf dem Zeichenblatt beispielsweise neue Merkmale hinzuzufügen. Sie können z. B. einen Abschnitt **"Verbindungspunkte"** hinzufügen, um eine Verbindung zu erstellen. Wenn Sie einen Abschnitt nicht mehr benötigen, können Sie ihn löschen. 
   
-Sie können darüber hinaus einzelnen Abschnitten Zeilen hinzufügen, um zusätzliche Formeln zu speichern oder das Erscheinungsbild eines Shapes zu ändern. Sie können beispielsweise einem **Geometry** -Abschnitt eine Zeile hinzufügen, um ein Segment zu einem Shape hinzuzufügen. Auch hier können Sie Zeilen löschen, die Sie nicht mehr benötigen. 
+Sie können darüber hinaus einzelnen Abschnitten Zeilen hinzufügen, um zusätzliche Formeln zu speichern oder das Erscheinungsbild eines Shapes zu ändern. Sie können z. B. einem **Abschnitt Geometry** eine Zeile hinzufügen, um einem Shape ein Segment hinzuzufügen. Auch hier können Sie Zeilen löschen, die Sie nicht mehr benötigen. 
   
 Sie können in Zellen entweder Formeln oder Werte anzeigen. Zeigen Sie Formeln an, wenn Sie neue Formeln eingeben, vorhandene Formeln ändern oder überprüfen möchten, in welcher Beziehung Formeln in verschiedenen Zellen zueinander stehen. Ein Wert ist das Ergebnis, das Sie erhalten, wenn Visio die Formel in einer Zelle berechnet. Sie können die Werte in den Zellen anzeigen, um die Ergebnisse der Berechnungen zu erhalten.
   
 ## <a name="additional-shapesheet-references"></a>Weitere Informationen zu ShapeSheets
 
-Details zu einem bestimmten Abschnitt, einer Zeile oder Zelle im ShapeSheet finden Sie in dem entsprechenden Artikel in dieser [ShapeSheet-Referenz](reference-visio-shapesheet.md).
+Details zu einem bestimmten Abschnitt, einer Bestimmten Zeile oder Zelle im ShapeSheet finden Sie im entsprechenden Artikel in dieser [ShapeSheet-Referenz](reference-visio-shapesheet.md).
   
 Einzelheiten zum programmgesteuerten Zugriff auf die ShapeSheet-Kalkulationstabelle finden Sie in der Microsoft Visio Automation Reference.
   

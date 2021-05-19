@@ -25,13 +25,13 @@ ms.locfileid: "32347803"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt einen XML-Stream (Extensible Markup Language) zurück, der Informationen darstellt, die aus dem Auto-Discovery-Dienst eines Microsoft Exchange 2007-Servers abgerufen werden.
+Gibt einen XML-Stream (Extensible Markup Language) zurück, der Informationen darstellt, die aus dem AutoErmittlungsdienst eines Microsoft Exchange 2007-Servers abgerufen wurden.
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
-|Exportiert von:  <br/> |olmapi32. dll  <br/> |
+|Exportiert von:  <br/> |olmapi32.dll  <br/> |
 |Aufgerufen von:  <br/> |Client  <br/> |
 |Implementiert von:  <br/> |Outlook  <br/> |
    
@@ -49,23 +49,23 @@ HRESULT HrGetAutoDiscoverXML(
 
  _pwzAddress_
   
-> in Eine nullterminierte SMTP-e-Mail-Adresse (Simple Mail Transfer Protocol) des Kontos, für das Sie die Auto Ermittlungsinformationen abrufen möchten.
+> [in] Eine SMTP-E-Mail-Adresse (Simple Mail Transfer Protocol, Simple Mail Transfer Protocol) des Kontos, für das Sie die Informationen zur automatischen Ermittlung abrufen möchten.
     
  _pwzPassword_
   
-> in Ein optionales Kennwort für das von _pwzAddress_angegebene Konto. Beachten Sie, dass das Übergeben eines beliebigen Kennworts keine Auswirkung hat, wenn das von _pwzAddress_ angegebene Konto kein Kennwort erfordert. 
+> [in] Ein optionales Kennwort für das von _pwzAddress angegebene Konto._ Beachten Sie, dass das Übergeben eines Kennworts keine Auswirkung hat, wenn für das von  _pwzAddress_ angegebene Konto kein Kennwort erforderlich ist. 
     
  _hCancelEvent_
   
-> in Ein nicht festgelegtes Win32-Ereignishandle, das optional ist und zum Abbrechen des Vorgangs verwendet werden kann. Um den Vorgang abzubrechen, legen Sie das Ereignis fest, und übergeben Sie das Ereignishandle als _hCancelEvent_; übergeben Sie **null** , wenn Sie den Vorgang nicht abbrechen möchten. Beachten Sie, dass das Übergeben eines Werts, der kein Ereignishandle darstellt, keine Auswirkung hat und von der Funktion ignoriert wird. 
+> [in] Ein nicht verwendetes Win32-Ereignishandle, das optional ist und zum Abbrechen des Vorgangs verwendet werden kann. Zum Abbrechen des Vorgangs legen Sie das Ereignis fest, und übergeben Sie das Ereignishandle als  _hCancelEvent_; übergeben **Sie null,** wenn Sie den Vorgang nicht abbrechen möchten. Beachten Sie, dass das Übergeben eines Werts, der kein Ereignishandle repräsentiert, keine Auswirkung hat und von der Funktion ignoriert wird. 
     
  _ulFlags_
   
-> in Dieser Parameter wird nicht verwendet. Es muss 0 sein.
+> [in] Dieser Parameter wird nicht verwendet. Es muss 0 sein.
     
  _ppXmlStream_
   
-> Timeout Ein Zeiger auf ein [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) -Objekt, das die AutoDiscovery-XML enthält. Gibt **null** zurück, wenn der AutoDiscovery-Vorgang fehlschlägt. Sie müssen das [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) -Objekt freigeben, wenn Sie damit fertig sind. 
+> [out] Ein Zeiger auf ein [IStream-Objekt,](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) das die AutoErmittlungs-XML enthält. Gibt **null zurück,** wenn der AutoErmittlungsvorgang fehlschlägt. Sie müssen das [IStream-Objekt](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) los, wenn Sie damit fertig sind. 
     
 ## <a name="return-values"></a>Rückgabewerte
 
@@ -75,18 +75,18 @@ S_OK
     
 E_INVALIDARG 
   
--  _pwzAddress_ ist **null** oder ist keine gültige SMTP-Adresse, oder _ppXmlStream_ ist ein **null** -Zeiger auf ein [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) -Objekt. 
+-  _pwzAddress_ ist **null** oder ist keine gültige SMTP-Adresse, oder _ppXmlStream_ ist ein **Nullzeiger** auf ein [IStream-Objekt.](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) 
     
 MAPI_E_NOT_FOUND 
   
-- Der Clientcomputer ist nicht mit dem Netzwerk verbunden, der Clientcomputer ist nicht mit einem Microsoft Exchange 2007-Server verbunden, _pwzAddress_ ist kein Konto auf einem Exchange 2007-Server, oder _pwzAddress_ ist ein Konto, das Exchange nicht unterstützt. Auto-Discovery-Dienst. 
+- Der Clientcomputer ist nicht mit dem Netzwerk verbunden, der Clientcomputer ist nicht mit einem Microsoft Exchange 2007-Server verbunden, _pwzAddress_ ist kein Konto auf einem Exchange 2007-Server, oder _pwzAddress_ ist ein Konto, das Exchange auto-discovery service nicht unterstützt. 
     
 MAPI_E_USER_CANCEL 
   
-- Ein Ereignishandle wurde an _hCancelEvent_ übergeben, um den Vorgang abzubrechen. 
+- Ein Ereignishandle wurde an  _hCancelEvent übergeben,_ um den Vorgang abbricht. 
     
 STRSAFE_E_INSUFFICIENT_BUFFER
   
-- Der an _pwzAddress_ oder _pwzPassword_ übergebene Wert ist zu lang, sodass er den internen Puffer der Größe 256 Bytes überfließt. 
+- Der an  _pwzAddress_ oder  _pwzPassword_ übergebene Wert ist zu lang, so dass er den internen Puffer der Größe 256 Byte überschreitet. 
     
 

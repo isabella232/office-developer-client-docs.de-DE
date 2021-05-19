@@ -25,7 +25,7 @@ ms.locfileid: "32342140"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Hält einen geöffneten Formularserver im Arbeitsspeicher.
+Behält einen geöffneten Formularserver im Arbeitsspeicher bei.
   
 ```cpp
 HRESULT LockServer(
@@ -42,7 +42,7 @@ HRESULT LockServer(
     
  _fLockServer_
   
-> in **true** , um die Anzahl der Sperren zu erhöhen; andernfalls **false**.
+> [in] **true,** um die Sperranzahl zu erhöhen. Andernfalls **false**.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -50,13 +50,13 @@ S_OK
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Formular Betrachter rufen die **IMAPIFormFactory:: LockServer** -Methode auf, um eine geöffnete Formularserver Anwendung im Arbeitsspeicher zu speichern. Wenn Formulare häufig erstellt und veröffentlicht werden, wird die Leistung beim Formularserver im Arbeitsspeicher verbessert. 
+Formularbetrachter rufen die **IMAPIFormFactory::LockServer-Methode auf,** um eine geöffnete Formularserveranwendung im Arbeitsspeicher zu behalten. Das Halten des Formularservers im Arbeitsspeicher verbessert die Leistung, wenn Formulare häufig erstellt und freigegeben werden. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Die **IMAPIFormFactory:: LockServer** -Methode ähnelt der [IClassFactory:: LockServer](https://msdn.microsoft.com/library/ms682332%28v=VS.85%29.aspx) -Methode. Im wesentlichen behält die **IMAPIFormFactory:: LockServer** -Methode die Anzahl, wie oft Sie aufgerufen wurde; solange diese Anzahl größer als 0 ist, wird durch die Methode verhindert, dass der Formularserver aus dem Arbeitsspeicher entladen wird. Sie können die [CoLockObjectExternal](https://msdn.microsoft.com/library/ms680592%28VS.85%29.aspx) -Funktion verwenden, um diese zu implementieren. 
+Die **IMAPIFormFactory::LockServer-Methode** ist der [IClassFactory::LockServer-Methode sehr](https://msdn.microsoft.com/library/ms682332%28v=VS.85%29.aspx) ähnlich. Im Wesentlichen behält die **IMAPIFormFactory::LockServer-Methode** die Anzahl der Aufrufe bei. Solange diese Anzahl größer als 0 ist, verhindert die Methode, dass der Formularserver aus dem Arbeitsspeicher entladen wird. Sie können [dies mithilfe der CoLockObjectExternal-Funktion](https://msdn.microsoft.com/library/ms680592%28VS.85%29.aspx) implementieren. 
   
 ## <a name="see-also"></a>Siehe auch
 

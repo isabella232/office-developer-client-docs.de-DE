@@ -40,77 +40,77 @@ HRESULT CopyEntries(
 
  _lpEntries_
   
-> in Ein Zeiger auf ein Array von [entrylist](entrylist.md) -Strukturen, das die Eintragsbezeichner der zu kopierende Einträge enthält. 
+> [in] Ein Zeiger auf ein Array von [ENTRYLIST-Strukturen,](entrylist.md) das die Eintragsbezeichner der zu kopierenden Einträge enthält. 
     
  _ulUIParam_
   
-> in Das Handle für das übergeordnete Fenster aller von dieser Methode angezeigten Dialogfelder oder Fenster. Der _ulUIParam_ -Parameter muss NULL sein, wenn das AB_NO_DIALOG-Flag im _ulFlags_ -Parameter festgelegt ist. 
+> [in] Das Handle zum übergeordneten Fenster aller Dialogfelder oder Fenster, die von dieser Methode angezeigt werden. Der  _ulUIParam-Parameter_ muss null sein, wenn AB_NO_DIALOG im  _ulFlags-Parameter festgelegt_ ist. 
     
  _lpProgress_
   
-> in Ein Zeiger auf ein Progress-Objekt, das eine Statusanzeige oder NULL anzeigt. Wenn _lpProgress_ ist, sollte eine Statusanzeige mithilfe des von MAPI über die [IMAPISupport::D oprogressdialog](imapisupport-doprogressdialog.md) -Methode bereitgestellten Progress-Objekts angezeigt werden. Der _lpProgress_ -Parameter wird ignoriert, wenn das AB_NO_DIALOG-Flag in _ulFlags_festgelegt ist.
+> [in] Ein Zeiger auf ein Statusobjekt, das eine Statusanzeige oder NULL anzeigt. Wenn  _lpProgress_ NULL ist, sollte mithilfe des von MAPI bereitgestellten Progress-Objekts über die [IMAPISupport::D oProgressDialog-Methode](imapisupport-doprogressdialog.md) ein Fortschrittsindikator angezeigt werden. Der _lpProgress-Parameter_ wird ignoriert, wenn AB_NO_DIALOG in _ulFlags festgelegt ist._
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die die Ausführung des Kopiervorgangs steuert. Die folgenden Flags können festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie der Kopiervorgang ausgeführt wird. Die folgenden Kennzeichen können festgelegt werden:
     
 AB_NO_DIALOG 
   
-> UnterDrückt die Anzeige einer Statusanzeige. Wenn dieses Flag nicht festgelegt ist, wird eine Statusanzeige angezeigt.
+> Unterdrückt die Anzeige eines Statusindikators. Wenn dieses Kennzeichen nicht festgelegt ist, wird eine Statusanzeige angezeigt.
     
 CREATE_CHECK_DUP_LOOSE 
   
-> Gibt an, dass eine Überprüfung der doppelten Eingabe durchgeführt werden soll. Die Implementierung von Loose Duplicate entry checking ist Anbieter spezifisch. Ein Anbieter kann beispielsweise eine lockere Übereinstimmung als zwei Einträge definieren, die den gleichen Anzeigenamen aufweisen.
+> Gibt an, dass eine lose Ebene doppelter Eingabeprüfungen durchgeführt werden soll. Die Implementierung der Überprüfung von losen doppelten Einträgen ist anbieterspezifisch. Beispielsweise kann ein Anbieter eine lose Übereinstimmung als zwei beliebige Einträge definieren, die denselben Anzeigenamen haben.
     
 CREATE_CHECK_DUP_STRICT 
   
-> Gibt an, dass eine strikte doppelte Eingabeüberprüfung durchgeführt werden soll. Die Implementierung einer strengen doppelten Eintrags Überprüfung ist Anbieter spezifisch. Ein Anbieter kann beispielsweise eine strikte Übereinstimmung als zwei Einträge definieren, die den gleichen Anzeigenamen und die gleiche Messaging Adresse aufweisen.
+> Gibt an, dass eine strenge Stufe doppelter Eingabeprüfungen durchgeführt werden sollte. Die Implementierung einer strengen Doppelten Eintragsprüfung ist anbieterspezifisch. Ein Anbieter kann z. B. eine strikte Übereinstimmung als zwei Einträge definieren, die denselben Anzeigenamen und dieselbe Messagingadresse haben.
     
 CREATE_REPLACE 
   
-> Gibt an, dass ein neuer Eintrag eine vorhandene ersetzen soll, wenn festgestellt wird, dass die beiden Duplikate sind.
+> Gibt an, dass ein neuer Eintrag einen vorhandenen Eintrag ersetzen soll, wenn festgestellt wird, dass es sich bei den beiden um Duplikate handelt.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Kopiervorgang war erfolgreich.
+> Der Kopiervorgang ist erfolgreich.
     
 MAPI_W_PARTIAL_COMPLETION 
   
-> Der Kopiervorgang war insgesamt erfolgreich, aber mindestens einer der Einträge konnte nicht kopiert werden. Wenn dieser Wert zurückgegeben wird, sollte der Aufruf als erfolgreich behandelt werden. Verwenden Sie das **HR_FAILED** -Makro, um diesen Wert zu testen. Weitere Informationen finden Sie unter [Verwenden von Makros zur Fehlerbehandlung](using-macros-for-error-handling.md).
+> Der Kopiervorgang war insgesamt erfolgreich, aber mindestens einer der Einträge konnte nicht kopiert werden. Wenn dieser Wert zurückgegeben wird, sollte der Anruf als erfolgreich behandelt werden. Verwenden Sie zum Testen dieses Werts **das HR_FAILED** Makro. Weitere Informationen finden Sie unter [Using Macros for Error Handling](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IABContainer:: CopyEntries** -Methode kopiert Einträge aus demselben Container oder aus einem anderen Container. Ein Aufruf von **CopyEntries** ist funktionell gleichbedeutend mit der folgenden Aufrufe für jeden Eintrag kopiert werden: 
+Die **IABContainer::CopyEntries-Methode** kopiert Einträge aus demselben Container oder einem anderen Container. Ein Aufruf von **CopyEntries** entspricht funktional den folgenden Aufrufen für jeden zu kopierenden Eintrag: 
   
-1. Die [IABContainer:: CreateEntry](iabcontainer-createentry.md) -Methode zum Erstellen des neuen Eintrags. 
+1. Die [IABContainer::CreateEntry-Methode](iabcontainer-createentry.md) zum Erstellen des neuen Eintrags. 
     
-2. Die [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode zum Lesen von Eigenschaften aus dem zu kopierenden Eintrag. 
+2. Die [IMAPIProp::GetProps-Methode](imapiprop-getprops.md) zum Lesen von Eigenschaften aus dem zu kopierenden Eintrag. 
     
-3. Die [IMAPIProp::](imapiprop-setprops.md) SetProps-Methode zum Schreiben von Eigenschaften in den neuen Eintrag. 
+3. Die [IMAPIProp::SetProps-Methode](imapiprop-setprops.md) zum Schreiben von Eigenschaften in den neuen Eintrag. 
     
-4. Die [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) -Methode des neuen Eintrags zum Durchführen eines Speichers. 
+4. Die [IMAPIProp::SaveChanges-Methode](imapiprop-savechanges.md) des neuen Eintrags zum Ausführen eines Speichers. 
     
-5. Die [IUnknown:: Release](https://msdn.microsoft.com/library/ms682317%28VS.85%29.aspx) -Methode des neuen Eintrags zum Freigeben des Container-Verweises. 
+5. Die [IUnknown::Release-Methode](https://msdn.microsoft.com/library/ms682317%28VS.85%29.aspx) des neuen Eintrags, um den Containerverweis frei zu geben. 
     
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Alle Container, die die **IABContainer:: CopyEntries** -Methode unterstützen, müssen geändert werden können. Legen Sie das AB_MODIFIABLE-Flag ihres Containers in seiner **PR_CONTAINER_FLAGS** ([pidtagcontainerflags (](pidtagcontainerflags-canonical-property.md))-Eigenschaft fest, um anzugeben, dass es veränderbar ist. 
+Alle Container, die die **IABContainer::CopyEntries-Methode** unterstützen, müssen veränderbar sein. Legen Sie das AB_MODIFIABLE des Containers in der **PR_CONTAINER_FLAGS** ([PidTagContainerFlags](pidtagcontainerflags-canonical-property.md)) -Eigenschaft fest, um anzugeben, dass es veränderbar ist. 
   
-Sie müssen alle Flags unterstützen. die Interpretation und Verwendung dieser Flags ist jedoch implementierungsspezifisch, d. h., Sie können bestimmen, welche Semantik die Flags CREATE_CHECK_DUP_LOOSE und CREATE_CHECK_DUP_STRICT im Kontext ihrer Implementierung bedeuten. Wenn Sie nicht feststellen können, ob ein Eintrag ein Duplikat ist, können Sie immer zulassen, dass der Eintrag kopiert wird. 
+Sie müssen alle Kennzeichen unterstützen. Die Interpretation und Verwendung dieser Flags ist jedoch implementierungsspezifisch, d. h. Sie können bestimmen, was die Semantik der CREATE_CHECK_DUP_LOOSE- und CREATE_CHECK_DUP_STRICT-Flags im Kontext Ihrer Implementierung bedeutet. Wenn Sie nicht ermitteln können oder nicht, ob es sich bei einem Eintrag um ein Duplikat handelt, lassen Sie immer zu, dass der Eintrag kopiert wird. 
   
-Wenn das CREATE_REPLACE-Flag festgelegt ist, kopieren Sie den Eintrag immer unabhängig davon, ob CREATE_CHECK_DUP_LOOSE oder CREATE_CHECK_DUP_STRICT festgelegt ist und ob der Eintrag ein Duplikat ist. 
+Wenn das CREATE_REPLACE festgelegt ist, kopieren Sie den Eintrag immer, unabhängig davon, ob CREATE_CHECK_DUP_LOOSE oder CREATE_CHECK_DUP_STRICT festgelegt ist und ob es sich bei dem Eintrag um ein Duplikat handelt. 
   
-Wenn CREATE_REPLACE nicht festgelegt ist und CREATE_CHECK_DUP_STRICT festgelegt ist, überprüfen Sie, ob Duplikate vorhanden sind. Wenn ein Eintrag als Duplikat festgelegt wurde, kopieren Sie den Eintrag nicht. 
+Wenn CREATE_REPLACE nicht festgelegt und CREATE_CHECK_DUP_STRICT festgelegt ist, suchen Sie nach Duplikaten. Wenn ein Eintrag als Duplikat ermittelt wird, kopieren Sie den Eintrag nicht. 
   
-Sie müssen CREATE_REPLACE nicht unterstützen; nicht die Unterstützung von CREATE_REPLACE, dass Sie Sie bedenkenlos ignorieren und immer eine Kopie ausführen können. 
+Sie müssen keine CREATE_REPLACE. Keine Unterstützung CREATE_REPLACE bedeutet, dass Sie sie sicher ignorieren und immer eine Kopie ausführen können. 
   
-Geben Sie die Warnung MAPI_W_PARTIAL_COMPLETION nur dann zurück, wenn ein nicht doppelter Eintrag nicht kopiert werden kann. 
+Geben Sie die Warnung MAPI_W_PARTIAL_COMPLETION zurück, wenn ein nicht duplizierter Eintrag nicht kopiert werden kann. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Verwenden Sie die CREATE_CHECK_DUP_LOOSE-und CREATE_CHECK_DUP_STRICT-Flags, um dem Anbieter anzuzeigen, wie der Container die Überprüfung durch doppelte Eingabe ausführen soll. Wenn ein Eintrag hinzugefügt werden muss, unabhängig davon, ob es sich um ein Duplikat handelt, legen Sie entweder keine dieser Flags fest oder legen Sie das CREATE_REPLACE-Flag fest. CREATE_REPLACE gibt an, dass es Ihnen egal ist, ob ein Eintrag ein Duplikat ist; Sie möchten immer, dass der ursprüngliche Eintrag ersetzt wird. 
+Verwenden Sie die CREATE_CHECK_DUP_LOOSE und CREATE_CHECK_DUP_STRICT, um dem Anbieter anzugeben, wie der Container die Duplikateingabeprüfung durchführen soll. Wenn Sie unabhängig davon, ob es sich um ein Duplikat handelt, einen Eintrag hinzufügen müssen, legen Sie entweder keines dieser Flags fest, oder legen Sie das CREATE_REPLACE fest. CREATE_REPLACE gibt an, dass Es ihnen nicht egal ist, ob es sich bei einem Eintrag um ein Duplikat handelt. Sie möchten immer, dass er den ursprünglichen Eintrag ersetzt. 
   
 ## <a name="see-also"></a>Siehe auch
 

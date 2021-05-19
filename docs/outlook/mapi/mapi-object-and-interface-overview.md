@@ -1,5 +1,5 @@
 ---
-title: Übersicht über MAPI-Objekte und-Schnittstellen
+title: Übersicht über das MAPI-Objekt und die Schnittstelle
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,19 +15,19 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32345787"
 ---
-# <a name="mapi-object-and-interface-overview"></a>Übersicht über MAPI-Objekte und-Schnittstellen
+# <a name="mapi-object-and-interface-overview"></a>Übersicht über das MAPI-Objekt und die Schnittstelle
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bei einem MAPI-Objekt handelt es sich um eine C++-Objektklasse oder eine C-Datenstruktur, die von einer oder mehreren MAPI-Schnittstellen geerbt wurde, oder Auflistungen verwandter Funktionen. Diese Auflistungen verwandter Funktionen sind C++-Entwicklern als reine virtuelle Funktionen bekannt. Für eine reine virtuelle Funktion liefert MAPI nur den Funktionsprototyp, keine Implementierung. Es wird erwartet, dass eine Clientanwendung, ein Dienstanbieter oder eine MAPI diese Implementierung bereitstellt, indem eine Objektklasse erstellt wird, die von der Schnittstelle erbt und den Funktionsbeschreibungen der Messaging-API entspricht. Eine MAPI-Schnittstelle kann nur über eine geerbte Klasse instanziiert werden.
+Ein MAPI-Objekt ist eine C++-Objektklasse oder C-Datenstruktur, die von einer oder mehreren #A0 oder Auflistungen verwandter Funktionen geerbt wird. Diese Auflistungen verwandter Funktionen werden C++-Entwicklern als reine virtuelle Funktionen bekannt. Für eine reine virtuelle Funktion liefert MAPI nur den Funktionsprototyp, keine Implementierung. Es wird erwartet, dass eine Clientanwendung, ein Dienstanbieter oder mapI diese Implementierung bereitstellen, indem eine Objektklasse erstellt wird, die von der Schnittstelle erbt und den Funktionsbeschreibungen der Messaging-API entspricht. Eine MAPI-Schnittstelle kann nur über eine geerbte Klasse instanziiert werden.
   
-Es gibt viele verschiedene MAPI-Objekte, jedes Objekt erbt von einer Schnittstelle, die letztlich von der [IUnknown](https://msdn.microsoft.com/library/33f1d79a-33fc-4ce5-a372-e08bda378332%28Office.15%29.aspx) -Schnittstelle geerbt wird. **IUnknown** ist die OLE Component Object Model (com)-Basisschnittstelle. MAPI-Objekte werden mit einem Standardmechanismus für die Kommunikation und Steuerung bereitgestellt. COM bestimmt, wie Objekt Implementierer Probleme wie Speicherverwaltung, Parameterverwaltung und Multithreading behandeln. Durch die Übereinstimmung mit diesem Modell wird ein objektimplementierer an einen Vertrag gemäß den Schnittstellen des Objekts gebunden. 
+Es gibt viele verschiedene MAPI-Objekte, von der jedes Objekt von einer Schnittstelle erbt, die letztendlich von der [IUnknown-Schnittstelle geerbt](https://msdn.microsoft.com/library/33f1d79a-33fc-4ce5-a372-e08bda378332%28Office.15%29.aspx) wird. **IUnknown** ist die BASISschnittstelle (OLE Component Object Model, COM). Es bietet MAPI-Objekten einen Standardmechanismus für Kommunikation und Kontrolle. COM bestimmt, wie Objekt implementierer Probleme wie Speicherverwaltung, Parameterverwaltung und Multithreading behandeln. Durch Die Konformität mit diesem Modell hält ein Objekt implementier einen Vertrag gemäß den Schnittstellen im Objekt angegeben. 
   
-Viele MAPI-Schnittstellen werden direkt von **IUnknown**geerbt, während andere indirekt über eine der beiden anderen Basisschnittstellen vererbt werden: [IMAPIProp: IUnknown](imapipropiunknown.md) für Property Management und [IMAPIContainer: IMAPIProp](imapicontainerimapiprop.md) für Folder und Zugriff auf das Adressbuch. Basisschnittstellen werden nie als separate, eigenständige Objekte implementiert; Sie werden immer als Teil anderer Objekte implementiert, die abgeleitete Schnittstellen implementieren. 
+Viele MAPI-Schnittstellen werden direkt von **IUnknown** geerbt, während andere indirekt über eine von zwei anderen Basisschnittstellen geerbt werden: [IMAPIProp : IUnknown](imapipropiunknown.md) für die Eigenschaftenverwaltung und [IMAPIContainer : IMAPIProp](imapicontainerimapiprop.md) für den Ordner- und Adressbuchzugriff. Basisschnittstellen werden nie als separate, eigenständige Objekte implementiert. Sie werden immer als Teil anderer Objekte implementiert, objekte, die abgeleitete Schnittstellen implementieren. 
   
-MAPI definiert viele Objekttypen, die jeweils von einer oder mehreren MAPI-Komponenten implementiert werden. Von Clients implementierte Objekte werden von MAPI, von Dienstanbietern und von benutzerdefinierten Formularkomponenten verwendet. Von Dienstanbietern implementierte Objekte werden in der Regel von MAPI und von Clients verwendet. Von Formular Bibliotheks Anbietern und Formular Servern implementierte Objekte werden von anderen Formularkomponenten und von Clients verwendet. 
+MAPI definiert viele Objekttypen, die jeweils von einer oder mehreren MAPI-Komponenten implementiert werden. Von Clients implementierte Objekte werden von MAPI, von Dienstanbietern und von benutzerdefinierten Formularkomponenten verwendet. Von Dienstanbietern implementierte Objekte werden in der Regel von MAPI und von Clients verwendet. Von Formularbibliotheksanbietern und Formularservern implementierte Objekte werden von anderen Formularkomponenten und von Clients verwendet. 
   
 ## <a name="see-also"></a>Siehe auch
 

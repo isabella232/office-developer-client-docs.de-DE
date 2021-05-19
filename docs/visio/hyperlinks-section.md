@@ -20,7 +20,7 @@ ms.locfileid: "32344800"
 
 Enthält Zellen zum Erstellen mehrerer Sprünge zwischen einem Shape oder Zeichenblatt und einem anderen Zeichenblatt, einer anderen Datei oder einer Website.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Wenn Sie einen Hyperlink definieren möchten, geben Sie Werte in die Zellen dieses Abschnitts ein, oder verwenden Sie das Dialogfeld **Hyperlinks** (klicken Sie auf der Registerkarte **Einfügen** auf **Hyperlink**). 
   

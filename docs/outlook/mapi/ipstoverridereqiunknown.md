@@ -25,26 +25,26 @@ ms.locfileid: "32356980"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Greift auf Ressourcen eines PST-Speicheranbieters (Personal Folders File) zu.
+Accesses resources of a Personal Folders file (PST) store provider.
   
 |||
 |:-----|:-----|
 |Erbt von:  <br/> |IUnknown  <br/> |
-|Implementiert von:  <br/> |PST-Speicheranbieter  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
+|Implementiert von:  <br/> |Anbieter für den PST-Speicher  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IPSTOVERRIDEREQ  <br/> |
    
 ## <a name="vtable-order"></a>Vtable-Reihenfolge
 
 |||
 |:-----|:-----|
-|[IPSTOVERRIDEREQ::RegisterTrustedPSTOverrideHandler](ipstoverridereq-registertrustedpstoverridehandler.md) <br/> |Initiiert die entsperrungs Prozedur für eine persönliche Ordner-Datei (PST).  <br/> |
+|[IPSTOVERRIDEREQ::RegisterTrustedPSTOverrideHandler](ipstoverridereq-registertrustedpstoverridehandler.md) <br/> |Initiiert die Entsperrprozedur für eine Datei mit persönlichen Ordnern (PST).  <br/> |
    
 ## <a name="remarks"></a>Hinweise
 
-Die Schnittstellenbezeichner für den PST-Außerkraftsetzungs Handler sind möglicherweise nicht in der herunterladbaren Headerdatei definiert, die Sie derzeit haben, in diesem Fall werden Sie Sie im Thema [MAPI-Konstanten](mapi-constants.md) finden, und Sie können Sie kopieren und Ihrem Code hinzufügen. Verwenden Sie das DEFINE_GUID-Makro, das in der Microsoft Windows Software Development Kit (SDK)-Headerdatei guiddef. h definiert ist, um GUID-symbolische Namen (Globally Unique Identifier) mit ihren Werten zu verknüpfen. 
+Die Pst Override Handler Interface Identifiers sind möglicherweise nicht in der herunterladbaren Headerdatei definiert, die Sie derzeit haben. In diesem Fall finden Sie sie im Thema [MAPI-Konstanten](mapi-constants.md) und können sie kopieren und ihrem Code hinzufügen. Verwenden Sie das DEFINE_GUID, das in der Microsoft Windows Software Development Kit (SDK)-Headerdatei guiddef.h definiert ist, um ihren Werten symbolische Namen (Globally Unique Identifier, GUID) zuzuordnen. 
   
-Weitere Informationen finden Sie unter [How to implement a PST override Handler to Bypass the PSTDisableGrow Policy in Outlook 2007](https://support.microsoft.com/kb/956070).
+Weitere Informationen finden Sie unter Implementieren eines PST-Außerkraftsetzungshandlers zum Umgehen der [PSTDisableGrow-Richtlinie in Outlook 2007](https://support.microsoft.com/kb/956070).
   
 ## <a name="see-also"></a>Siehe auch
 
