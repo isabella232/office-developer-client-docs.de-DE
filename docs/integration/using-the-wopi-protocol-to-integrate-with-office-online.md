@@ -13,8 +13,8 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33433087"
 ---
-# <a name="using-the-wopi-protocol-to-integrate-with-office-online"></a><span data-ttu-id="03b21-104">Verwenden des WOPI-Protokolls zur Integration in Office Online</span><span class="sxs-lookup"><span data-stu-id="03b21-104">Using the WOPI protocol to integrate with Office Online</span></span>
+# <a name="using-the-wopi-protocol-to-integrate-with-office-online"></a><span data-ttu-id="5eb21-104">Verwenden des WOPI-Protokolls zur Integration in Office Online</span><span class="sxs-lookup"><span data-stu-id="5eb21-104">Using the WOPI protocol to integrate with Office Online</span></span>
 
-<span data-ttu-id="03b21-p102">Dieser Inhalt ist an diesem Speicherort nicht mehr verfügbar. Um fortzufahren, finden Sie unter [Verwenden des WOPI-Protokolls zur Integration in in Office Online](https://wopi.readthedocs.org/en/latest/intro.html) auf GitHub weitere Informationen.</span><span class="sxs-lookup"><span data-stu-id="03b21-p102">This content is no longer available at this location. To continue, see [Using the WOPI protocol to integrate with Office Online](https://wopi.readthedocs.org/en/latest/intro.html) on GitHub.</span></span> 
+<span data-ttu-id="5eb21-p102">Dieser Inhalt ist an diesem Speicherort nicht mehr verfügbar. Um fortzufahren, finden Sie unter [Verwenden des WOPI-Protokolls zur Integration in in Office Online](https://wopi.readthedocs.org/en/latest/intro.html) auf GitHub weitere Informationen.</span><span class="sxs-lookup"><span data-stu-id="5eb21-p102">This content is no longer available at this location. To continue, see [Using the WOPI protocol to integrate with Office Online](https://wopi.readthedocs.org/en/latest/intro.html) on GitHub.</span></span> 
   
 

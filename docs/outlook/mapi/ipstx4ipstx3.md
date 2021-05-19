@@ -19,30 +19,30 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33433003"
 ---
-# <a name="ipstx4--ipstx3"></a><span data-ttu-id="d20d0-103">IPSTX4 : IPSTX3</span><span class="sxs-lookup"><span data-stu-id="d20d0-103">IPSTX4 : IPSTX3</span></span>
+# <a name="ipstx4--ipstx3"></a><span data-ttu-id="b1761-103">IPSTX4 : IPSTX3</span><span class="sxs-lookup"><span data-stu-id="b1761-103">IPSTX4 : IPSTX3</span></span>
 
   
   
-<span data-ttu-id="d20d0-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="d20d0-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="b1761-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="b1761-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="d20d0-105">Diese Schnittstelle bietet Hilfsfunktionen bei der Replikation über die IOSTX-Schnittstelle.</span><span class="sxs-lookup"><span data-stu-id="d20d0-105">This interface provides helper functionality when performing replication through the IOSTX interface.</span></span>
+<span data-ttu-id="b1761-105">Diese Schnittstelle bietet Hilfsfunktionen bei der Replikation über die IOSTX-Schnittstelle.</span><span class="sxs-lookup"><span data-stu-id="b1761-105">This interface provides helper functionality when performing replication through the IOSTX interface.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="d20d0-106">Bereitgestellt von</span><span class="sxs-lookup"><span data-stu-id="d20d0-106">Provided by</span></span>  <br/> |<span data-ttu-id="d20d0-107">Abfrage auf [IMsgStore](imsgstoreimapiprop.md)</span><span class="sxs-lookup"><span data-stu-id="d20d0-107">Query on [IMsgStore](imsgstoreimapiprop.md)</span></span> <br/> |
-|<span data-ttu-id="d20d0-108">Schnittstellenbezeichner:</span><span class="sxs-lookup"><span data-stu-id="d20d0-108">Interface identifier:</span></span>  <br/> |<span data-ttu-id="d20d0-109">IID_IPSTX4</span><span class="sxs-lookup"><span data-stu-id="d20d0-109">IID_IPSTX4</span></span>  <br/> |
+|<span data-ttu-id="b1761-106">Bereitgestellt von</span><span class="sxs-lookup"><span data-stu-id="b1761-106">Provided by</span></span>  <br/> |<span data-ttu-id="b1761-107">Abfrage in [IMsgStore](imsgstoreimapiprop.md)</span><span class="sxs-lookup"><span data-stu-id="b1761-107">Query on [IMsgStore](imsgstoreimapiprop.md)</span></span> <br/> |
+|<span data-ttu-id="b1761-108">Schnittstellenbezeichner:</span><span class="sxs-lookup"><span data-stu-id="b1761-108">Interface identifier:</span></span>  <br/> |<span data-ttu-id="b1761-109">IID_IPSTX4</span><span class="sxs-lookup"><span data-stu-id="b1761-109">IID_IPSTX4</span></span>  <br/> |
    
-## <a name="vtable-order"></a><span data-ttu-id="d20d0-110">Vtable-Reihenfolge</span><span class="sxs-lookup"><span data-stu-id="d20d0-110">Vtable order</span></span>
+## <a name="vtable-order"></a><span data-ttu-id="b1761-110">Vtable-Reihenfolge</span><span class="sxs-lookup"><span data-stu-id="b1761-110">Vtable order</span></span>
 
 |||
 |:-----|:-----|
-| <span data-ttu-id="d20d0-111">*Platzhalterelement*</span><span class="sxs-lookup"><span data-stu-id="d20d0-111">*Placeholder member*</span></span>  <br/> | <span data-ttu-id="d20d0-112">*Nicht unterstützt oder dokumentiert* .</span><span class="sxs-lookup"><span data-stu-id="d20d0-112">*Not supported or documented*  .</span></span>  <br/> |
+| <span data-ttu-id="b1761-111">*Platzhaltermitglied*</span><span class="sxs-lookup"><span data-stu-id="b1761-111">*Placeholder member*</span></span>  <br/> | <span data-ttu-id="b1761-112">*Nicht unterstützt oder dokumentiert.*</span><span class="sxs-lookup"><span data-stu-id="b1761-112">*Not supported or documented*  .</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="d20d0-113">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="d20d0-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b1761-113">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="b1761-113">See also</span></span>
 
 
 
-[<span data-ttu-id="d20d0-114">Informationen über die Replikations-API</span><span class="sxs-lookup"><span data-stu-id="d20d0-114">About the Replication API</span></span>](about-the-replication-api.md)
+[<span data-ttu-id="b1761-114">Informationen über die Replikations-API</span><span class="sxs-lookup"><span data-stu-id="b1761-114">About the Replication API</span></span>](about-the-replication-api.md)
   
-[<span data-ttu-id="d20d0-115">MAPI-Konstanten</span><span class="sxs-lookup"><span data-stu-id="d20d0-115">MAPI Constants</span></span>](mapi-constants.md)
+[<span data-ttu-id="b1761-115">MAPI-Konstanten</span><span class="sxs-lookup"><span data-stu-id="b1761-115">MAPI Constants</span></span>](mapi-constants.md)
 

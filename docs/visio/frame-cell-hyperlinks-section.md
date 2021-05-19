@@ -16,24 +16,24 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33432856"
 ---
-# <a name="frame-cell-hyperlinks-section"></a><span data-ttu-id="ce137-104">Zelle "Frame" (Abschnitt "Hyperlinks")</span><span class="sxs-lookup"><span data-stu-id="ce137-104">Frame Cell (Hyperlinks Section)</span></span>
+# <a name="frame-cell-hyperlinks-section"></a><span data-ttu-id="b5421-104">Zelle "Frame" (Abschnitt "Hyperlinks")</span><span class="sxs-lookup"><span data-stu-id="b5421-104">Frame Cell (Hyperlinks Section)</span></span>
 
-<span data-ttu-id="ce137-p102">Stellt den Namen eines Zielframes dar, wenn die Anwendung als aktives Dokument in einer Containeranwendung geöffnet ist. Der Standardwert ist eine leere Zeichenfolge.</span><span class="sxs-lookup"><span data-stu-id="ce137-p102">Represents the name of a frame to target when the application is open as an Active document in a container application. The default is an empty string.</span></span>
+<span data-ttu-id="b5421-p102">Stellt den Namen eines Zielframes dar, wenn die Anwendung als aktives Dokument in einer Containeranwendung geöffnet ist. Der Standardwert ist eine leere Zeichenfolge.</span><span class="sxs-lookup"><span data-stu-id="b5421-p102">Represents the name of a frame to target when the application is open as an Active document in a container application. The default is an empty string.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="ce137-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="ce137-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b5421-107">Hinweise</span><span class="sxs-lookup"><span data-stu-id="b5421-107">Remarks</span></span>
 
-<span data-ttu-id="ce137-108">Wenn Sie einen Verweis auf die Zelle "Frame" aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="ce137-108">To get a reference to the Frame cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="b5421-108">Um einen Verweis auf die Zelle Frame anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie:</span><span class="sxs-lookup"><span data-stu-id="b5421-108">To get a reference to the Frame cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="ce137-109">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="ce137-109">Cell name:</span></span>  <br/> | <span data-ttu-id="ce137-110">Hyperlink.</span><span class="sxs-lookup"><span data-stu-id="ce137-110">Hyperlink.</span></span>  <span data-ttu-id="ce137-111">*Name* . Frame, auf dem Hyperlink.</span><span class="sxs-lookup"><span data-stu-id="ce137-111">*name*  .Frame            where Hyperlink.</span></span>  <span data-ttu-id="ce137-112">*Name* ist der Name der Zeile</span><span class="sxs-lookup"><span data-stu-id="ce137-112">*name*  is the row name</span></span>  <br/> |
+| <span data-ttu-id="b5421-109">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="b5421-109">Cell name:</span></span>  <br/> | <span data-ttu-id="b5421-110">Hyperlink.</span><span class="sxs-lookup"><span data-stu-id="b5421-110">Hyperlink.</span></span>  <span data-ttu-id="b5421-111">*Name*  . Frame, in dem Hyperlink.</span><span class="sxs-lookup"><span data-stu-id="b5421-111">*name*  .Frame            where Hyperlink.</span></span>  <span data-ttu-id="b5421-112">*Name*  ist der Zeilenname</span><span class="sxs-lookup"><span data-stu-id="b5421-112">*name*  is the row name</span></span>  <br/> |
    
-<span data-ttu-id="ce137-113">Wenn Sie einen Verweis auf die Zelle Rahmen aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="ce137-113">To get a reference to the Frame cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="b5421-113">Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle Frame nach Index aus einem Programm zu erhalten:</span><span class="sxs-lookup"><span data-stu-id="b5421-113">To get a reference to the Frame cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="ce137-114">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="ce137-114">Section index:</span></span>  <br/> |<span data-ttu-id="ce137-115">**visSectionHyperlink**</span><span class="sxs-lookup"><span data-stu-id="ce137-115">**visSectionHyperlink**</span></span> <br/> |
-| <span data-ttu-id="ce137-116">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="ce137-116">Row index:</span></span>  <br/> |<span data-ttu-id="ce137-117">**visRow1stHyperlink** +  *i* , wobei *i* = 0, 1, 2...</span><span class="sxs-lookup"><span data-stu-id="ce137-117">**visRow1stHyperlink** +  *i*            where  *i*  = 0, 1, 2...</span></span>  <br/> |
-| <span data-ttu-id="ce137-118">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="ce137-118">Cell index:</span></span>  <br/> |<span data-ttu-id="ce137-119">**visHLinkFrame**</span><span class="sxs-lookup"><span data-stu-id="ce137-119">**visHLinkFrame**</span></span> <br/> |
+| <span data-ttu-id="b5421-114">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="b5421-114">Section index:</span></span>  <br/> |<span data-ttu-id="b5421-115">**visSectionHyperlink**</span><span class="sxs-lookup"><span data-stu-id="b5421-115">**visSectionHyperlink**</span></span> <br/> |
+| <span data-ttu-id="b5421-116">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="b5421-116">Row index:</span></span>  <br/> |<span data-ttu-id="b5421-117">**visRow1stHyperlink**  +   *i,* *wobei i* = 0, 1, 2...</span><span class="sxs-lookup"><span data-stu-id="b5421-117">**visRow1stHyperlink** +  *i*            where  *i*  = 0, 1, 2...</span></span>  <br/> |
+| <span data-ttu-id="b5421-118">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="b5421-118">Cell index:</span></span>  <br/> |<span data-ttu-id="b5421-119">**visHLinkFrame**</span><span class="sxs-lookup"><span data-stu-id="b5421-119">**visHLinkFrame**</span></span> <br/> |
    
 

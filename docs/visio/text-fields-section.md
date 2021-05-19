@@ -16,14 +16,14 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33434949"
 ---
-# <a name="text-fields-section"></a><span data-ttu-id="7f611-103">Abschnitt "Text Fields"</span><span class="sxs-lookup"><span data-stu-id="7f611-103">Text Fields Section</span></span>
+# <a name="text-fields-section"></a><span data-ttu-id="0a418-103">Abschnitt "Text Fields"</span><span class="sxs-lookup"><span data-stu-id="0a418-103">Text Fields Section</span></span>
 
-<span data-ttu-id="7f611-104">Zeigt Funktionen und Formeln an, die über das Dialogfeld **Feld** in den Text des Shapes eingefügt werden.</span><span class="sxs-lookup"><span data-stu-id="7f611-104">Displays functions and formulas inserted in the shape's text by using the **Field** dialog box.</span></span> 
+<span data-ttu-id="0a418-104">Zeigt Funktionen und Formeln an, die über das Dialogfeld **Feld** in den Text des Shapes eingefügt werden.</span><span class="sxs-lookup"><span data-stu-id="0a418-104">Displays functions and formulas inserted in the shape's text by using the **Field** dialog box.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="7f611-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="7f611-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="0a418-105">Hinweise</span><span class="sxs-lookup"><span data-stu-id="0a418-105">Remarks</span></span>
 
-<span data-ttu-id="7f611-106">Die einzige Möglichkeit zum Hinzufügen dieses Abschnitts ist das Einfügen eines Felds in ein Shape unter Verwendung des Dialogfelds **Feld** (Registerkarte **Einfügen**).</span><span class="sxs-lookup"><span data-stu-id="7f611-106">The only way to add this section is to insert a field into a shape by using the **Field** dialog box (**Insert** tab).</span></span> 
+<span data-ttu-id="0a418-106">Die einzige Möglichkeit zum Hinzufügen dieses Abschnitts ist das Einfügen eines Felds in ein Shape unter Verwendung des Dialogfelds **Feld** (Registerkarte **Einfügen**).</span><span class="sxs-lookup"><span data-stu-id="0a418-106">The only way to add this section is to insert a field into a shape by using the **Field** dialog box (**Insert** tab).</span></span> 
   
-<span data-ttu-id="7f611-p101">Jedem Textfeld in einem Textblock entspricht eine Zeile im ShapeSheet-Fenster. Dem Namen der Zeile kann die Anzahl von Zeichen im Feld entnommen werden.</span><span class="sxs-lookup"><span data-stu-id="7f611-p101">Each text field in a text block has a corresponding row in the ShapeSheet window. The name of the row represents the number of characters the field contains.</span></span>
+<span data-ttu-id="0a418-p101">Jedem Textfeld in einem Textblock entspricht eine Zeile im ShapeSheet-Fenster. Dem Namen der Zeile kann die Anzahl von Zeichen im Feld entnommen werden.</span><span class="sxs-lookup"><span data-stu-id="0a418-p101">Each text field in a text block has a corresponding row in the ShapeSheet window. The name of the row represents the number of characters the field contains.</span></span>
   
 

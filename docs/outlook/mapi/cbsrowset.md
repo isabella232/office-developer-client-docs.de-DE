@@ -19,35 +19,35 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33432891"
 ---
-# <a name="cbsrowset"></a><span data-ttu-id="c67bd-103">CbSRowSet</span><span class="sxs-lookup"><span data-stu-id="c67bd-103">CbSRowSet</span></span>
+# <a name="cbsrowset"></a><span data-ttu-id="90e1e-103">CbSRowSet</span><span class="sxs-lookup"><span data-stu-id="90e1e-103">CbSRowSet</span></span>
 
   
   
-<span data-ttu-id="c67bd-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="c67bd-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="90e1e-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="90e1e-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="c67bd-105">Berechnet die Anzahl der Bytes in einer vorhandenen [SRowSet](srowset.md) -Struktur.</span><span class="sxs-lookup"><span data-stu-id="c67bd-105">Computes the number of bytes in an existing [SRowSet](srowset.md) structure.</span></span> 
+<span data-ttu-id="90e1e-105">Berechnet die Anzahl der Bytes in einer vorhandenen [SRowSet-Struktur.](srowset.md)</span><span class="sxs-lookup"><span data-stu-id="90e1e-105">Computes the number of bytes in an existing [SRowSet](srowset.md) structure.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="c67bd-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="c67bd-106">Header file:</span></span>  <br/> |<span data-ttu-id="c67bd-107">Mapidefs. h</span><span class="sxs-lookup"><span data-stu-id="c67bd-107">Mapidefs.h</span></span>  <br/> |
-|<span data-ttu-id="c67bd-108">Zugehörige Struktur:</span><span class="sxs-lookup"><span data-stu-id="c67bd-108">Related structure:</span></span>  <br/> |<span data-ttu-id="c67bd-109">**SRowSet**</span><span class="sxs-lookup"><span data-stu-id="c67bd-109">**SRowSet**</span></span> <br/> |
+|<span data-ttu-id="90e1e-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="90e1e-106">Header file:</span></span>  <br/> |<span data-ttu-id="90e1e-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="90e1e-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="90e1e-108">Verwandte Struktur:</span><span class="sxs-lookup"><span data-stu-id="90e1e-108">Related structure:</span></span>  <br/> |<span data-ttu-id="90e1e-109">**SRowSet**</span><span class="sxs-lookup"><span data-stu-id="90e1e-109">**SRowSet**</span></span> <br/> |
    
 ```cpp
 CbSRowSet (_lprowset)
 ```
 
-## <a name="parameters"></a><span data-ttu-id="c67bd-110">Parameter</span><span class="sxs-lookup"><span data-stu-id="c67bd-110">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="90e1e-110">Parameter</span><span class="sxs-lookup"><span data-stu-id="90e1e-110">Parameters</span></span>
 
- <span data-ttu-id="c67bd-111">__lprowset_</span><span class="sxs-lookup"><span data-stu-id="c67bd-111">__lprowset_</span></span>
+ <span data-ttu-id="90e1e-111">_ _lprowset_</span><span class="sxs-lookup"><span data-stu-id="90e1e-111">_ _lprowset_</span></span>
   
-> <span data-ttu-id="c67bd-112">Zeiger auf die vorhandene **SRowSet** -Struktur.</span><span class="sxs-lookup"><span data-stu-id="c67bd-112">Pointer to the existing **SRowSet** structure.</span></span> 
+> <span data-ttu-id="90e1e-112">Zeiger auf die vorhandene **SRowSet-Struktur.**</span><span class="sxs-lookup"><span data-stu-id="90e1e-112">Pointer to the existing **SRowSet** structure.</span></span> 
     
-## <a name="see-also"></a><span data-ttu-id="c67bd-113">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="c67bd-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="90e1e-113">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="90e1e-113">See also</span></span>
 
 
 
-[<span data-ttu-id="c67bd-114">SRowSet</span><span class="sxs-lookup"><span data-stu-id="c67bd-114">SRowSet</span></span>](srowset.md)
+[<span data-ttu-id="90e1e-114">SRowSet</span><span class="sxs-lookup"><span data-stu-id="90e1e-114">SRowSet</span></span>](srowset.md)
 
 
-[<span data-ttu-id="c67bd-115">Makros im Zusammenhang mit Strukturen</span><span class="sxs-lookup"><span data-stu-id="c67bd-115">Macros Related to Structures</span></span>](macros-related-to-structures.md)
+[<span data-ttu-id="90e1e-115">Makros im Zusammenhang mit Strukturen</span><span class="sxs-lookup"><span data-stu-id="90e1e-115">Macros Related to Structures</span></span>](macros-related-to-structures.md)
 

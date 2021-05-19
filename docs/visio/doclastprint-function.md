@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251594
 localization_priority: Normal
 ms.assetid: 9587283b-4f4d-0ad6-34aa-58e2001f085e
-description: Gibt das Datum und die Uhrzeit des letzten Drucks eines Dokuments als seriellen Wert zurück.
+description: Gibt das Datum und die Uhrzeit zurück, zu der ein Dokument zuletzt gedruckt wurde, als serieller Wert.
 ms.openlocfilehash: 3198b98b58e2b68e58ae16643e396e1a91635940
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,16 +16,16 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33433640"
 ---
-# <a name="doclastprint-function"></a><span data-ttu-id="307ec-103">DOCLASTPRINT Function</span><span class="sxs-lookup"><span data-stu-id="307ec-103">DOCLASTPRINT Function</span></span>
+# <a name="doclastprint-function"></a><span data-ttu-id="12a9b-103">DOCLASTPRINT Function</span><span class="sxs-lookup"><span data-stu-id="12a9b-103">DOCLASTPRINT Function</span></span>
 
-<span data-ttu-id="307ec-104">Gibt das Datum und die Uhrzeit des letzten Drucks eines Dokuments als seriellen Wert zurück.</span><span class="sxs-lookup"><span data-stu-id="307ec-104">Returns the date and time a document was last printed, as a serial value.</span></span>
+<span data-ttu-id="12a9b-104">Gibt das Datum und die Uhrzeit zurück, zu der ein Dokument zuletzt gedruckt wurde, als serieller Wert.</span><span class="sxs-lookup"><span data-stu-id="12a9b-104">Returns the date and time a document was last printed, as a serial value.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="307ec-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="307ec-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="12a9b-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="12a9b-105">Syntax</span></span>
 
-<span data-ttu-id="307ec-106">DOCLASTPRINT ()</span><span class="sxs-lookup"><span data-stu-id="307ec-106">DOCLASTPRINT ()</span></span>
+<span data-ttu-id="12a9b-106">DOCLASTPRINT ()</span><span class="sxs-lookup"><span data-stu-id="12a9b-106">DOCLASTPRINT ()</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="307ec-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="307ec-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="12a9b-107">Hinweise</span><span class="sxs-lookup"><span data-stu-id="12a9b-107">Remarks</span></span>
 
-<span data-ttu-id="307ec-108">Verwenden Sie die FORMAT-Funktion, um den Wert zu formatieren.</span><span class="sxs-lookup"><span data-stu-id="307ec-108">Use the FORMAT function to format the value.</span></span> 
+<span data-ttu-id="12a9b-108">Verwenden Sie die FORMAT-Funktion, um den Wert zu formatieren.</span><span class="sxs-lookup"><span data-stu-id="12a9b-108">Use the FORMAT function to format the value.</span></span> 
   
 

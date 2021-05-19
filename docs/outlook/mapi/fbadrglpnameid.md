@@ -19,19 +19,19 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33434830"
 ---
-# <a name="fbadrglpnameid"></a><span data-ttu-id="d6973-103">FBadRglpNameID</span><span class="sxs-lookup"><span data-stu-id="d6973-103">FBadRglpNameID</span></span>
+# <a name="fbadrglpnameid"></a><span data-ttu-id="3f3a5-103">FBadRglpNameID</span><span class="sxs-lookup"><span data-stu-id="3f3a5-103">FBadRglpNameID</span></span>
 
   
   
-<span data-ttu-id="d6973-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="d6973-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="3f3a5-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="3f3a5-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="d6973-105">Überprüft ein Array von Strukturen, die benannte Eigenschaften beschreiben und deren Zuordnung überprüfen.</span><span class="sxs-lookup"><span data-stu-id="d6973-105">Validates an array of structures that describe named properties and verifies their allocation.</span></span> 
+<span data-ttu-id="3f3a5-105">Überprüft ein Array von Strukturen, die benannte Eigenschaften beschreiben, und überprüft deren Zuordnung.</span><span class="sxs-lookup"><span data-stu-id="3f3a5-105">Validates an array of structures that describe named properties and verifies their allocation.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="d6973-106">Headerdatei:</span><span class="sxs-lookup"><span data-stu-id="d6973-106">Header file:</span></span>  <br/> |<span data-ttu-id="d6973-107">Mapival.h</span><span class="sxs-lookup"><span data-stu-id="d6973-107">Mapival.h</span></span>  <br/> |
-|<span data-ttu-id="d6973-108">Implementiert von:</span><span class="sxs-lookup"><span data-stu-id="d6973-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="d6973-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="d6973-109">MAPI</span></span>  <br/> |
-|<span data-ttu-id="d6973-110">Aufgerufen von:</span><span class="sxs-lookup"><span data-stu-id="d6973-110">Called by:</span></span>  <br/> |<span data-ttu-id="d6973-111">Dienstanbieter</span><span class="sxs-lookup"><span data-stu-id="d6973-111">Service providers</span></span>  <br/> |
+|<span data-ttu-id="3f3a5-106">Headerdatei:</span><span class="sxs-lookup"><span data-stu-id="3f3a5-106">Header file:</span></span>  <br/> |<span data-ttu-id="3f3a5-107">Mapival.h</span><span class="sxs-lookup"><span data-stu-id="3f3a5-107">Mapival.h</span></span>  <br/> |
+|<span data-ttu-id="3f3a5-108">Implementiert von:</span><span class="sxs-lookup"><span data-stu-id="3f3a5-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="3f3a5-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="3f3a5-109">MAPI</span></span>  <br/> |
+|<span data-ttu-id="3f3a5-110">Aufgerufen von:</span><span class="sxs-lookup"><span data-stu-id="3f3a5-110">Called by:</span></span>  <br/> |<span data-ttu-id="3f3a5-111">Dienstanbieter</span><span class="sxs-lookup"><span data-stu-id="3f3a5-111">Service providers</span></span>  <br/> |
    
 ```cpp
 BOOL FBadRglpNameID(
@@ -40,28 +40,28 @@ BOOL FBadRglpNameID(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="d6973-112">Parameter</span><span class="sxs-lookup"><span data-stu-id="d6973-112">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="3f3a5-112">Parameter</span><span class="sxs-lookup"><span data-stu-id="3f3a5-112">Parameters</span></span>
 
- <span data-ttu-id="d6973-113">_lppNameId_</span><span class="sxs-lookup"><span data-stu-id="d6973-113">_lppNameId_</span></span>
+ <span data-ttu-id="3f3a5-113">_lppNameId_</span><span class="sxs-lookup"><span data-stu-id="3f3a5-113">_lppNameId_</span></span>
   
-> <span data-ttu-id="d6973-114">in Zeiger auf ein Array von [MAPINAMEID](mapinameid.md) -Strukturen, die die benannten Eigenschaften beschreiben.</span><span class="sxs-lookup"><span data-stu-id="d6973-114">[in] Pointer to an array of [MAPINAMEID](mapinameid.md) structures describing the named properties.</span></span> 
+> <span data-ttu-id="3f3a5-114">[in] Zeiger auf ein Array von [MAPINAMEID-Strukturen,](mapinameid.md) die die benannten Eigenschaften beschreiben.</span><span class="sxs-lookup"><span data-stu-id="3f3a5-114">[in] Pointer to an array of [MAPINAMEID](mapinameid.md) structures describing the named properties.</span></span> 
     
- <span data-ttu-id="d6973-115">_cNames_</span><span class="sxs-lookup"><span data-stu-id="d6973-115">_cNames_</span></span>
+ <span data-ttu-id="3f3a5-115">_cNames_</span><span class="sxs-lookup"><span data-stu-id="3f3a5-115">_cNames_</span></span>
   
-> <span data-ttu-id="d6973-116">in Die Anzahl der benannten Eigenschaftsstrukturen im Array, auf die durch den _lppNameId_ -Parameter verwiesen wird.</span><span class="sxs-lookup"><span data-stu-id="d6973-116">[in] Count of named property structures in the array pointed to by the  _lppNameId_ parameter.</span></span> 
+> <span data-ttu-id="3f3a5-116">[in] Anzahl der benannten Eigenschaftenstrukturen im Array, auf die der  _lppNameId-Parameter_ verweist.</span><span class="sxs-lookup"><span data-stu-id="3f3a5-116">[in] Count of named property structures in the array pointed to by the  _lppNameId_ parameter.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="d6973-117">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="d6973-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="3f3a5-117">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="3f3a5-117">Return value</span></span>
 
-<span data-ttu-id="d6973-118">TRUE</span><span class="sxs-lookup"><span data-stu-id="d6973-118">TRUE</span></span> 
+<span data-ttu-id="3f3a5-118">TRUE</span><span class="sxs-lookup"><span data-stu-id="3f3a5-118">TRUE</span></span> 
   
-> <span data-ttu-id="d6973-119">Mindestens eine der angegebenen Strukturen für den Eigenschaftennamen ist ungültig.</span><span class="sxs-lookup"><span data-stu-id="d6973-119">One or more of the specified property name structures is invalid.</span></span> 
+> <span data-ttu-id="3f3a5-119">Mindestens eine der angegebenen Eigenschaftennamensstrukturen ist ungültig.</span><span class="sxs-lookup"><span data-stu-id="3f3a5-119">One or more of the specified property name structures is invalid.</span></span> 
     
-<span data-ttu-id="d6973-120">FALSE</span><span class="sxs-lookup"><span data-stu-id="d6973-120">FALSE</span></span> 
+<span data-ttu-id="3f3a5-120">FALSE</span><span class="sxs-lookup"><span data-stu-id="3f3a5-120">FALSE</span></span> 
   
-> <span data-ttu-id="d6973-121">Die angegebenen Strukturen für den Eigenschaftennamen sind alle gültig.</span><span class="sxs-lookup"><span data-stu-id="d6973-121">The specified property name structures are all valid.</span></span>
+> <span data-ttu-id="3f3a5-121">Die angegebenen Eigenschaftennamensstrukturen sind alle gültig.</span><span class="sxs-lookup"><span data-stu-id="3f3a5-121">The specified property name structures are all valid.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="d6973-122">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="d6973-122">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="3f3a5-122">Hinweise</span><span class="sxs-lookup"><span data-stu-id="3f3a5-122">Remarks</span></span>
 
-<span data-ttu-id="d6973-123">Die **FBadRglpNameID** -Funktion kann verwendet werden, wenn Sie einen Aufruf von [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) oder [IMAPIProp:: GetNamesFromIDs](imapiprop-getnamesfromids.md)einrichten.</span><span class="sxs-lookup"><span data-stu-id="d6973-123">The **FBadRglpNameID** function can be used when setting up for a call to [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) or [IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md).</span></span> 
+<span data-ttu-id="3f3a5-123">Die **FBadRglpNameID-Funktion** kann beim Einrichten eines Aufrufs von [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) oder [IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md)verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="3f3a5-123">The **FBadRglpNameID** function can be used when setting up for a call to [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) or [IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md).</span></span> 
   
 
