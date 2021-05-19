@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: c88f087e-4ff4-0837-186d-b6e761468a4d
-description: Registriert einen Client mit dem Kontomanager für Benachrichtigungen zu allen Konten.
+description: Registriert einen Client beim Konto-Manager für Benachrichtigungen zu allen Konten.
 ms.openlocfilehash: 5460d55d906d382ce40ecd3fd9277cf370295680
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.locfileid: "33427710"
 ---
 # <a name="iolkaccountmanageradvise"></a>IOlkAccountManager::Advise
 
-Registriert einen Client mit dem Kontomanager für Benachrichtigungen zu allen Konten.
+Registriert einen Client beim Konto-Manager für Benachrichtigungen zu allen Konten.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -33,11 +33,11 @@ HRESULT IOlkAccountManager::Advise (
 
 _pNotify_
   
-> in Eine [IOlkAccountNotify](iolkaccountnotify.md) -Schnittstelle, die der Kontomanager zum Senden von Benachrichtigungen an den Client verwendet. 
+> [in] Eine [IOlkAccountNotify-Schnittstelle,](iolkaccountnotify.md) die der Kontomanager zum Senden von Benachrichtigungen an den Client verwendet. 
     
 _pdwCookie_
   
-> Out Ein Cookie, das [IOlkAccountManager:: Unadvise](iolkaccountmanager-unadvise.md) verwendet, wenn die Registrierung für das Konto entfernt wird. 
+> [out] Ein Cookie, [das IOlkAccountManager::Unadvise](iolkaccountmanager-unadvise.md) verwendet, wenn die Registrierung für das Konto entfernt wird. 
     
 ## <a name="return-values"></a>Rückgabewerte
 

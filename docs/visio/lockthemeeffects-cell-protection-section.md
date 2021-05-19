@@ -17,21 +17,21 @@ ms.locfileid: "33426331"
 ---
 # <a name="lockthemeeffects-cell-protection-section"></a>Zelle "LockThemeEffects" (Abschnitt "Protection")
 
-Verhindert die Anwendung von Designeffekten auf das Shape. 
+Verhindert die Anwendung von Designeffekten auf die Form. 
   
-Entspricht dem Kontrollkästchen **von Designeffekten** im Dialogfeld **Schutz** . 
+Entspricht der **Kontrollkästchen Von Designeffekten** im Dialogfeld **Schutz.** 
   
-Wenn Sie TI die Zelle LockThemeColors aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen verweisen möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Verweisen auf die Zelle LockThemeColors anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |LockThemeEffects  <br/> |
    
-Wenn Sie aus einem Programm aus nach Index auf die Zelle LockThemeEffects verweisen möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um von einem Programm aus auf die Zelle LockThemeEffects nach Index zu verweisen: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowLock** <br/> |
 |Zellenindex:  <br/> |**visLockThemeEffects** <br/> |
    

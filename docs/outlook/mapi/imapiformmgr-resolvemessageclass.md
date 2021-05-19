@@ -25,7 +25,7 @@ ms.locfileid: "33426394"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Löst eine Nachrichtenklasse in Ihrem Formular innerhalb eines Formular Containers auf und gibt ein Formular Informationsobjekt für dieses Formular zurück.
+Löst eine Nachrichtenklasse in ihr Formular in einem Formularcontainer auf und gibt ein Formularinformationsobjekt für dieses Formular zurück.
   
 ```cpp
 HRESULT ResolveMessageClass(
@@ -40,23 +40,23 @@ HRESULT ResolveMessageClass(
 
  _szMsgClass_
   
-> in Eine Zeichenfolge, die die zu lösende Nachrichtenklasse benennt.
+> [in] Eine Zeichenfolge, die die aufgelöste Nachrichtenklasse benennt.
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die die Auflösung der Nachrichtenklasse steuert. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie die Nachrichtenklasse aufgelöst wird. Das folgende Flag kann festgelegt werden:
     
 MAPIFORM_EXACTMATCH 
   
-> Nur Nachrichtenklassen Zeichenfolgen, die exakt übereinstimmen, sollten aufgelöst werden.
+> Es sollten nur Nachrichtenklassenzeichenfolgen aufgelöst werden, die eine genaue Übereinstimmung sind.
     
  _pFolderFocus_
   
-> in Ein Zeiger auf den Ordner, der die zu bearbeitende Nachricht enthält. Der _pFolderFocus_ -Parameter kann NULL sein. 
+> [in] Ein Zeiger auf den Ordner, der die aufgelöste Nachricht enthält. Der  _pFolderFocus-Parameter_ kann NULL sein. 
     
  _ppResult_
   
-> Out Ein Zeiger auf einen Zeiger auf ein zurückgegebenes Formular Informationsobjekt.
+> [out] Ein Zeiger auf einen Zeiger auf ein zurückgegebenes Formularinformationsobjekt.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -66,21 +66,21 @@ S_OK
     
 MAPI_E_NOT_FOUND 
   
-> Die Nachrichtenklasse, die im _szMsgClass_ -Parameter übergeben wird, stimmt nicht mit der Nachrichtenklasse für ein Formular in der Formularbibliothek überein. 
+> Die im  _szMsgClass-Parameter_ übergebene Nachrichtenklasse ist nicht mit der Nachrichtenklasse für ein Formular in der Formularbibliothek übereinstimmend. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Formular Betrachter rufen die **IMAPIFormMgr:: ResolveMessageClass** -Methode auf, um eine Nachrichtenklasse in Ihr Formular innerhalb eines Formular Containers aufzulösen. Das im _ppResult_ -Parameter zurückgegebene Formular Informationsobjekt bietet weiteren Zugriff auf die Eigenschaften des Formulars, das über die angegebene Nachrichtenklasse verfügt. 
+Formularbetrachter rufen die **IMAPIFormMgr::ResolveMessageClass-Methode** auf, um eine Nachrichtenklasse in ihr Formular innerhalb eines Formularcontainers zu auflösen. Das im  _ppResult-Parameter_ zurückgegebene Formularinformationsobjekt bietet weiteren Zugriff auf die Eigenschaften des Formulars mit der angegebenen Nachrichtenklasse. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Um eine Nachrichtenklasse in ein Formular aufzulösen, übergibt ein Formular Betrachter den Namen der zu lösenden Nachrichtenklasse, beispielsweise " `IPM.HelpDesk.Software`". Um die Auflösung genau zu erzwingen (das heißt, um die Auflösung einer Basisklasse der Nachrichtenklasse zu verhindern, wenn ein genau übereinstimmender Formularserver nicht verfügbar ist), kann das MAPIFORM_EXACTMATCH-Flag im _ulFlags_ -Parameter übergeben werden. Wenn der _pFolderFocus_ -Parameter NULL ist, durchsucht der Prozess der Nachrichtenklassen Auflösung keinen Ordner Container. 
+Um eine Nachrichtenklasse in ein Formular zu auflösen, übergibt eine Formularanzeige den Namen der zu auflösenden Nachrichtenklasse, z. B. " `IPM.HelpDesk.Software` ". Um zu erzwingen, dass die Auflösung exakt ist (d. h. um die Auflösung zu einer Basisklasse der Nachrichtenklasse zu verhindern, wenn kein exakt übereinstimmender Formularserver verfügbar ist), kann das MAPIFORM_EXACTMATCH-Flag im  _ulFlags-Parameter_ übergeben werden. Wenn der  _pFolderFocus-Parameter_ NULL ist, durchsucht der Nachrichtenklassenauflösungsprozess keinen Ordnercontainer. 
   
-Die Reihenfolge der gesuchten Container hängt von der Implementierung des Formularbibliothek Anbieters ab. Der Standardanbieter für Formularbibliotheken durchsucht zuerst den lokalen Container, dann den Ordner Container für den übergebenen Ordner, den persönlichen Formular Container und schließlich den Organisationscontainer.
+Die Reihenfolge der durchsuchten Container hängt von der Implementierung des Formularbibliotheksanbieters ab. Der Standardmäßige Formularbibliotheksanbieter durchsucht zuerst den lokalen Container, dann den Ordnercontainer für den übergebenen Ordner, den persönlichen Formularcontainer und schließlich den Organisationscontainer.
   
 Nachrichtenklassennamen sind immer ANSI-Zeichenfolgen, nie Unicode.
   
-Der Klassenbezeichner für die aufgelöste Nachrichtenklasse wird als Teil des Form Information-Objekts zurückgegeben. Ein Formular Betrachter sollte nicht davon ausgehen, dass der Klassenbezeichner in der OLE-Bibliothek vorhanden ist, bis die [IMAPIFormMgr::P repareform](imapiformmgr-prepareform.md) -Methode oder die [IMAPIFormMgr:: CreateForm](imapiformmgr-createform.md) -Methode aufgerufen wurde. 
+Der Klassenbezeichner für die aufgelöste Nachrichtenklasse wird als Teil des Formularinformationsobjekts zurückgegeben. Eine Formularanzeige sollte erst dann in der Annahme funktionieren, dass der Klassenbezeichner in der OLE-Bibliothek vorhanden ist, nachdem die Formularanzeige entweder die [IMAPIFormMgr::P repareForm-Methode](imapiformmgr-prepareform.md) oder die [IMAPIFormMgr::CreateForm-Methode](imapiformmgr-createform.md) aufgerufen hat. 
   
 ## <a name="see-also"></a>Siehe auch
 

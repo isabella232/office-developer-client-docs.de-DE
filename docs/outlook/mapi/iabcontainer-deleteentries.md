@@ -38,7 +38,7 @@ HRESULT DeleteEntries(
 
  _lpEntries_
   
-> in Ein Zeiger auf ein Array von [entrylist](entrylist.md) -Strukturen, die Eintrags-IDs enthalten, die die zu löschenden Einträge darstellen. 
+> [in] Ein Zeiger auf ein Array von [ENTRYLIST-Strukturen,](entrylist.md) die Eintragsbezeichner enthalten, die die zu löschenden Einträge darstellen. 
     
  _ulFlags_
   
@@ -52,7 +52,7 @@ S_OK
     
 MAPI_W_PARTIAL_COMPLETION 
   
-> Der Aufruf war erfolgreich, aber mindestens einer der Einträge konnte nicht gelöscht werden. Wenn dieser Wert zurückgegeben wird, sollte der Aufruf als erfolgreich behandelt werden. Verwenden Sie das **HR_FAILED** -Makro, um diesen Wert zu testen. Weitere Informationen finden Sie unter [Verwenden von Makros zur Fehlerbehandlung](using-macros-for-error-handling.md).
+> Der Aufruf ist erfolgreich, aber mindestens einer der Einträge konnte nicht gelöscht werden. Wenn dieser Wert zurückgegeben wird, sollte der Anruf als erfolgreich behandelt werden. Verwenden Sie zum Testen dieses Werts **das HR_FAILED** Makro. Weitere Informationen finden Sie unter [Using Macros for Error Handling](using-macros-for-error-handling.md).
     
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -60,7 +60,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|Abdlg. cpp  <br/> |CabDlg:: OnDeleteSelectedItem  <br/> |MFCMAPI verwendet die **DeleteEntries** -Methode, um einen bestimmten Eintrag aus einem Adressbuchcontainer zu löschen.  <br/> |
+|Abdlg.cpp  <br/> |CabDlg::OnDeleteSelectedItem  <br/> |MFCMAPI verwendet die **DeleteEntries-Methode,** um einen bestimmten Eintrag aus einem Adressbuchcontainer zu löschen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

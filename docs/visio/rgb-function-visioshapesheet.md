@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251489
 localization_priority: Normal
 ms.assetid: f6b9f65c-6752-16cb-7eb1-44e1ce56e80b
-description: Gibt einen Wert zurück, der einen Index in der Farbpalette des Dokuments darstellt. Sie gibt eine Farbe anhand ihrer rot-, grün-und Blau-Komponenten an, wobei jedes eine Zahl im Bereich von 0 bis 255, einschließlich oder ein Ausdruck ist, der zu einer solchen Zahl ausgewertet wird.
+description: Gibt einen Wert zurück, der einen Index in der Farbpalette des Dokuments darstellt. Es gibt eine Farbe durch seine roten, grünen und blauen Komponenten an, wobei jede eine Zahl im Bereich von 0 bis einschließlich 255 oder ein Ausdruck ist, der zu einer solchen Zahl ausgewertet wird.
 ms.openlocfilehash: 34f9c2f2043afe6144feba561e545dc7be35a5a2
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,25 +18,25 @@ ms.locfileid: "33426303"
 ---
 # <a name="rgb-function-visioshapesheet"></a>RGB-Funktion (VisioShapeSheet)
 
-Gibt einen Wert zurück, der einen Index in der Farbpalette des Dokuments darstellt. Sie gibt eine Farbe anhand ihrer rot-, grün-und Blau-Komponenten an, wobei jedes eine Zahl im Bereich von 0 bis 255, einschließlich oder ein Ausdruck ist, der zu einer solchen Zahl ausgewertet wird. 
+Gibt einen Wert zurück, der einen Index in der Farbpalette des Dokuments darstellt. Es gibt eine Farbe durch seine roten, grünen und blauen Komponenten an, wobei jede eine Zahl im Bereich von 0 bis einschließlich 255 oder ein Ausdruck ist, der zu einer solchen Zahl ausgewertet wird. 
   
 ## <a name="syntax"></a>Syntax
 
-RGB (* * *rot* * *, * * *grün* * *, * * *blau* * *) 
+RGB(** *red* **, ** *green* **, ** *blue* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _rot_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die Rotkomponente.  <br/> |
+| _red_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die Rotkomponente.  <br/> |
 | _grün_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die Grünkomponente.  <br/> |
-| _blau_ <br/> |Erforderlich  <br/> |**Nmber** <br/> |Die Blaukomponente.  <br/> |
+| _blue_ <br/> |Erforderlich  <br/> |**Nmber** <br/> |Die Blaukomponente.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
-Zahl
+Nummer
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Wenn die durch die Funktion zurückgegebene Farbe nicht bereits in der Farbpalette des aktuellen Dokuments vorhanden ist, wird sie in diese eingefügt.
   
@@ -55,13 +55,13 @@ Die folgende Tabelle listet einige Standardfarben mit ihren Rot-, Grün- und Bla
    
 ## <a name="example-1"></a>Beispiel 1
 
-RGB (0, 0255)
+RGB(0,0,255)
   
 Gibt den Index für die Farbe Blau zurück.
   
 ## <a name="example-2"></a>Beispiel 2
 
-RGB (rot (Blatt. 1! Zelle FillForegnd), 120, 0)
+RGB(RED(Sheet.1! FillForegnd),120,0)
   
 Gibt den Index für eine Farbe zurück, deren Rotkomponente der Vordergrundfüllfarbe von Sheet.1 entspricht.
   

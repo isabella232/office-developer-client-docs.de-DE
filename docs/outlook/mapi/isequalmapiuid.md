@@ -25,12 +25,12 @@ ms.locfileid: "33426933"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Testet zwei [MAPIUID](mapiuid.md) -Strukturen, um zu bestimmen, ob Sie den gleichen Bezeichner enthalten. 
+Testet zwei [MAPIUID-Strukturen,](mapiuid.md) um festzustellen, ob sie denselben Bezeichner enthalten. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |**MAPIUID** <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |**MAPIUID** <br/> |
    
 ```cpp
 IsEqualMAPIUID(lpuid1, lpuid2)
@@ -40,17 +40,17 @@ IsEqualMAPIUID(lpuid1, lpuid2)
 
  _lpuid1_
   
-> Zeiger auf die erste zu testende **MAPIUID** -Struktur. 
+> Zeiger auf die erste **mapIUID-Struktur,** die getestet werden soll. 
     
  _lpuid2_
   
-> Zeiger auf die zweite zu testende **MAPIUID** -Struktur. 
+> Zeiger auf die zweite **mapIUID-Struktur,** die getestet werden soll. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Das **IsEqualMAPIUID** -Makro gibt true zurück, wenn die beiden **MAPIUID** -Strukturen denselben Bezeichner enthalten, und false, wenn dies nicht der Fall ist. 
+Das **IsEqualMAPIUID-Makro** gibt TRUE zurück, wenn die beiden **MAPIUID-Strukturen** denselben Bezeichner und FALSE enthalten, falls nicht. 
   
-Das **IsEqualMAPIUID** -Makro erfordert, dass die Headerdatei Memory. h enthalten ist. 
+Das **IsEqualMAPIUID-Makro** erfordert, dass die Headerdatei "Memory.h" enthalten ist. 
   
 ## <a name="see-also"></a>Siehe auch
 

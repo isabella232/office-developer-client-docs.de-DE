@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: eb6b921d-ecf8-3ce5-87ba-ac1632416b05
-description: 'Die Account Management-API bietet Zugriff auf Kontoinformationen und unterstützt Benachrichtigungen über Kontoänderungen. Als Clients dieser API führen e-Mail-Anbieter folgende Aktionen aus:'
+description: 'Die Kontoverwaltungs-API bietet Zugriff auf Kontoinformationen und unterstützt Benachrichtigungen über Kontoänderungen. Als Clients dieser API gehen E-Mail-Anbieter wie folgt vor:'
 ms.openlocfilehash: 76520b7cc7f28ede28257729e4e4fbe2d5096290
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,23 +16,23 @@ ms.locfileid: "33426249"
 ---
 # <a name="about-the-account-management-api"></a>Informationen zur Kontoverwaltungs-API
 
-Die Account Management-API bietet Zugriff auf Kontoinformationen und unterstützt Benachrichtigungen über Kontoänderungen. Als Clients dieser API führen e-Mail-Anbieter folgende Aktionen aus:
+Die Kontoverwaltungs-API bietet Zugriff auf Kontoinformationen und unterstützt Benachrichtigungen über Kontoänderungen. Als Clients dieser API gehen E-Mail-Anbieter wie folgt vor:
   
-1. Verwenden Sie [IOlkAccountManager](iolkaccountmanager.md) , um den Zugriff auf Konten zu verwalten und Benachrichtigungen zu Kontoänderungen einzurichten. 
+1. Verwenden [Sie IOlkAccountManager,](iolkaccountmanager.md) um den Zugriff auf Konten zu verwalten und Benachrichtigungen zu Kontoänderungen einrichten. 
     
-2. Implementieren und Verwenden von [IOlkAccountNotify](iolkaccountnotify.md) zum Senden von Benachrichtigungen zu Kontoänderungen. 
+2. Implementieren und verwenden [Sie IOlkAccountNotify,](iolkaccountnotify.md) um Benachrichtigungen zu Kontoänderungen zu senden. 
     
-3. Verwenden Sie [IOlkEnum](iolkenum.md) zum Aufzählen von Konten. 
+3. Verwenden [Sie IOlkEnum](iolkenum.md) zum Aufzählen von Konten. 
     
-4. Verwenden Sie [IOlkAccount](iolkaccount.md) , um Eigenschaften und andere Informationen zu einem Konto abzurufen und festzulegen. Clients rufen diese Schnittstelle über [IOlkAccountManager:: FindAccount](iolkaccountmanager-findaccount.md) oder [IOlkEnum:: GetNext](iolkenum-getnext.md) ab, um auf ein einzelnes Konto zuzugreifen. 
+4. Verwenden [Sie IOlkAccount,](iolkaccount.md) um Eigenschaften und andere Informationen zu einem Konto zu erhalten und zu festlegen. Clients erhalten diese Schnittstelle über [IOlkAccountManager::FindAccount](iolkaccountmanager-findaccount.md) oder [IOlkEnum::GetNext,](iolkenum-getnext.md) um auf ein einzelnes Konto zuzugreifen. 
     
-5. Implementieren und verwenden Sie [IOlkAccountHelper](iolkaccounthelper.md) , um die Hilfsfunktion des Konto-Managers bereitzustellen, einschließlich dem Profilnamen eines Kontos und der aktuellen MAPI-Sitzung. 
+5. Implementieren und verwenden [Sie IOlkAccountHelper,](iolkaccounthelper.md) um die Funktionen der Account-Manager-Hilfsfunktion bereitzustellen, einschließlich abrufen des Profilnamens eines Kontos und der aktuellen MAPI-Sitzung. 
     
-6. Implementieren und verwenden Sie [IOlkErrorUnknown](iolkerrorunknown.md) , um zusätzliche Informationen zu einem Fehler in **IOlkAccountManager**, **IOlkAccountNotify**und **IOlkAccount**bereitzustellen. 
+6. Implementieren und verwenden [Sie IOlkErrorUnknown,](iolkerrorunknown.md) um zusätzliche Informationen zu einem Fehler in **IOlkAccountManager**, **IOlkAccountNotify** und **IOlkAccount zur Verfügung zu stellen.** 
 
-##  <a name="account-management-api-components"></a>API-Komponenten für die Kontoverwaltung
+##  <a name="account-management-api-components"></a>Komponenten der Kontoverwaltungs-API
 
-Die Account Management-API bietet die folgenden Definitionen, Datentypen, Schnittstellen, benannten Eigenschaften und Eigenschaften.
+Die Kontoverwaltungs-API stellt die folgenden Definitionen, Datentypen, Schnittstellen, benannten Eigenschaften und Eigenschaften bereit.
   
 ### <a name="definitions"></a>Definitionen
   

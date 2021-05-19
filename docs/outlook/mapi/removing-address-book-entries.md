@@ -19,16 +19,16 @@ ms.locfileid: "33425260"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die [IABContainer::D eleteentries](iabcontainer-deleteentries.md) -Methode des Containers wird aufgerufen, um einen oder mehrere Empfänger zu entfernen. **DeleteEntries** hat zwei Parameter: ein Array von Eintrags Bezeichnern, die die zu löschenden Empfänger und einen reservierten Flags-Wert darstellen. Das Löschen eines Empfängers wirkt sich auf die Inhaltstabelle ihres Containers aus; Zusätzlich zum Löschen des Empfängers muss der Container die Inhaltstabellen Zeile löschen, die den Empfänger darstellt. Wenn die Zeile aus der Tabelle entfernt wurde, muss Ihr Container eine Tabellenbenachrichtigung für jeden registrierten Client ausgeben. 
+Die [IABContainer::D eleteEntries-Methode Ihres Containers](iabcontainer-deleteentries.md) wird aufgerufen, um einen oder mehrere Empfänger zu entfernen. **DeleteEntries** verfügt über zwei Parameter: ein Array von Eintragsbezeichnern, die die zu löschenden Empfänger darstellen, und einen reservierten Flagswert. Das Löschen eines Empfängers wirkt sich auf das Inhaltsverzeichnis Des Containers aus. Zusätzlich zum Löschen des Empfängers muss ihr Container die Inhaltsverzeichniszeile löschen, die den Empfänger darstellt. Wenn die Zeile aus der Tabelle entfernt wurde, muss ihr Container eine Tabellenbenachrichtigung an jeden registrierten Client aus senden. 
   
 ### <a name="to-implement-iabcontainerdeleteentries"></a>So implementieren Sie IABContainer::D eleteEntries
   
-1. Löschen Sie jeden durch die Eintrags-ID dargestellten Empfänger aus Ihrem Container.
+1. Löschen Sie jeden Empfänger, der durch die Eintrags-ID dargestellt wird, aus Ihrem Container.
     
-2. Wenn die Tabelle Inhalt Ihres Containers geöffnet ist:
+2. Wenn die Inhaltstabelle Ihres Containers geöffnet ist:
     
-   - Senden Sie eine _fnevTableModified_ -Benachrichtigung mit dem **ulTableEvent** -Element, das auf TABLE_ROW_DELETED für jede gelöschte Inhaltstabellen Zeile auf registrierte Clients festgelegt ist. Wenn Ihr Anbieter das Benachrichtigungs Dienstprogramm verwendet, rufen Sie [IMAPISupport:: notify](imapisupport-notify.md) auf, um diese Benachrichtigungen zu senden. 
+   - Senden Sie  _eine fnevTableModified-Benachrichtigung,_ bei der das **ulTableEvent-Element** auf TABLE_ROW_DELETED für jede gelöschte Inhaltstabellenzeile an registrierte Clients gesendet wird. Wenn Ihr Anbieter das Benachrichtigungsprogramm verwendet, rufen [Sie IMAPISupport::Notify auf,](imapisupport-notify.md) um diese Benachrichtigungen zu senden. 
     
-   - Wenn Ihr Anbieterobjekt Benachrichtigungen unterstützt, senden Sie auch eine _fnevObjectDeleted_ -Benachrichtigung. 
+   - Wenn Ihr Anbieter Objektbenachrichtigungen unterstützt, senden Sie auch eine _fnevObjectDeleted-Benachrichtigung._ 
     
 

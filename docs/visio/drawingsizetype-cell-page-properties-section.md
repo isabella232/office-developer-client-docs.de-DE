@@ -26,26 +26,26 @@ Legt die Zeichnungsgröße fest.
 |1  <br/> |Blatt an Zeichnungsgröße anpassen  <br/> |**visTight** <br/> |
 |2  <br/> |Standard  <br/> |**visStandard** <br/> |
 |3  <br/> |Benutzerdefiniert  <br/> |**visCustom** <br/> |
-|4  <br/> |Benutzerdefinierte Skalierung  <br/> |**visLogical** <br/> |
-|5  <br/> |Metrisch (ISO)  <br/> |**visDSMetric** <br/> |
-|6  <br/> |ANSI-Konstruktion  <br/> |**visDSEngr** <br/> |
-|7  <br/> |ANSI-Architektur  <br/> |**visDSArch** <br/> |
+|4   <br/> |Benutzerdefinierte Skalierung  <br/> |**visLogical** <br/> |
+|5   <br/> |Metrisch (ISO)  <br/> |**visDSMetric** <br/> |
+|6   <br/> |ANSI-Konstruktion  <br/> |**visDSEngr** <br/> |
+|7   <br/> |ANSI-Architektur  <br/> |**visDSArch** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Verwenden Sie das Dialogfeld **Seite einrichten**, um die Zeichnungsgröße festzulegen (klicken Sie dazu auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten**), oder passen Sie die Größe der Seite manuell mit der Maus an. 
   
-Wenn Sie einen Verweis auf die Zelle "DrawingSizeType aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle DrawingSizeType anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |"DrawingSizeType  <br/> |
+|Zellenname:  <br/> |DrawingSizeType  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle "DrawingSizeType aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die DrawingSizeType-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowPage** <br/> |
 |Zellenindex:  <br/> |**visPageDrawSizeType** <br/> |
    

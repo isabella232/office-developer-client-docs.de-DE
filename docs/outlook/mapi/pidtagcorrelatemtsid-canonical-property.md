@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagcorrelatemtsid (-Eigenschaft
+title: PidTagCorrelateMtsid (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,13 +19,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33426835"
 ---
-# <a name="pidtagcorrelatemtsid-canonical-property"></a>Kanonische Pidtagcorrelatemtsid (-Eigenschaft
+# <a name="pidtagcorrelatemtsid-canonical-property"></a>PidTagCorrelateMtsid (kanonische Eigenschaft)
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält den MTS-Bezeichner (Message Transfer System), der bei der Korrelation von Berichten mit gesendeten Nachrichten verwendet wird.
+Enthält die ID des Nachrichtenübertragungssystems (Message Transfer System, MTS), die bei der Korrelierung von Berichten mit gesendeten Nachrichten verwendet wird.
   
 |||
 |:-----|:-----|
@@ -34,25 +34,25 @@ Enthält den MTS-Bezeichner (Message Transfer System), der bei der Korrelation v
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Exchange  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn ein Transportanbieter eine übermittelte Nachricht findet, deren Eigenschaft auf TRUE festgelegt ist, wird diese Eigenschaft auf den MTS-Bezeichner für diese Nachricht gesetzt. Nach der Übertragung wird diese Eigenschaft mit der Nachricht im Ordner "Gesendete Elemente" zwischenmenschlichen Nachrichten (IPM) gespeichert.
+Wenn ein Transportanbieter eine übermittelte Nachricht mit dieser Eigenschaft auf TRUE trifft, wird diese Eigenschaft auf den MTS-Bezeichner für diese Nachricht festgelegt. Nach der Übertragung wird diese Eigenschaft mit der Nachricht im Ordner "Interpersonal Message( IPM) Gesendete Elemente" gespeichert.
   
-Messaging Systeme, die eine Korrelation durch MTS-ID, wie X. 400, unterstützen, behalten den Bezeichner als Teil des Transport Umschlags der ursprünglichen Nachricht und auch für alle als Antwort generierten Berichte bei. Wenn ein Bericht von einem solchen Messagingsystem übermittelt wird, wird diese Eigenschaft vom Transportanbieter auf den ursprünglichen MTS-Bezeichner aus dem Transport Umschlag des Berichts festgelegt. Diese Eigenschaft wird dann mit dem Bericht gespeichert.
+Messagingsysteme, die die Korrelation nach MTS-Id unterstützen, z. B. X.400, behalten den Bezeichner als Teil des Transportumschlags der ursprünglichen Nachricht sowie aller berichte bei, die als Reaktion darauf generiert wurden. Wenn ein Bericht von einem solchen Messagingsystem zugestellt wird, legt der Transportanbieter diese Eigenschaft auf den ursprünglichen MTS-Bezeichner aus dem Transportumschlag des Berichts fest. Diese Eigenschaft wird dann mit dem Bericht gespeichert.
   
-Eine Clientanwendung kann einen Suchergebnisordner aller Nachrichten mit dieser Eigenschaft verwalten. Wenn ein Bericht für eine solche Nachricht eingeht, kann der Client Einschränkungen für den Ordner Suchergebnisse anwenden, die ursprüngliche Version der Nachricht suchen und die ursprünglichen Nachrichten Informationen mit den neuen Informationen korrelieren.
+Eine Clientanwendung kann einen Suchergebnisordner aller Nachrichten mit dieser Eigenschaft verwalten. Wenn ein Bericht für eine solche Nachricht einkommt, kann der Client Einschränkungen auf den Suchergebnisordner anwenden, die ursprüngliche Version der Nachricht suchen und die ursprünglichen Nachrichteninformationen mit den neuen Informationen korrelieren.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
-### <a name="header-files"></a>Header Dateien
+### <a name="header-files"></a>Headerdateien
 
-Mapidefs. h
+Mapidefs.h
   
-> Stellt Datentypdefinitionen bereit.
+> Bietet Datentypdefinitionen.
     
-Mapitags. h
+Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,9 +60,9 @@ Mapitags. h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

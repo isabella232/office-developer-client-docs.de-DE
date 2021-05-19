@@ -23,22 +23,22 @@ Definiert die vertikale Ausrichtung von Text in einem Textblock.
 |**Wert**|**Beschreibung**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
 | 0  <br/> | Oben  <br/> |**visVertTop** <br/> |
-| 1  <br/> | Mittleren  <br/> |**visVertMiddle** <br/> |
+| 1  <br/> | Middle  <br/> |**visVertMiddle** <br/> |
 | 2  <br/> | Nach unten  <br/> |**visVertBottom** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle VerticalAlign aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle VerticalAlign anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | VerticalAlign  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle VerticalAlign aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die VerticalAlign-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowText** <br/> |
 | Zellenindex:  <br/> |**visTxtBlkVerticalAlign** <br/> |
    

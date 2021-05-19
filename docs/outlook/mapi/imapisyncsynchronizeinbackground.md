@@ -25,7 +25,7 @@ ms.locfileid: "33426856"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
- Initiiert eine Synchronisierung. Diese Methode wird von Microsoft Outlook 2010 und Microsoft Outlook 2013 aufgerufen und von Nachrichtenspeicher Anbietern implementiert. 
+ Initiiert eine Synchronisierung. Diese Methode wird von Microsoft Outlook 2010 und Microsoft Outlook 2013 aufgerufen und von Nachrichtenspeicheranbietern implementiert. 
   
 ```cpp
 HRESULT SynchronizeInBackground (
@@ -37,7 +37,7 @@ HRESULT SynchronizeInBackground (
 
  _psibpb_
   
-> Informiert den Anbieter darüber, was synchronisiert wird, und gibt Zugriff auf Schnittstellen, die während der Synchronisierung verwendet werden können. Es handelt sich um eine [MAPISIB](mapisib.md) -Struktur. 
+> Informiert den Anbieter darüber, was synchronisiert wird, und gewährt Zugriff auf Schnittstellen, die während der Synchronisierung verwendet werden können. Es handelt sich um eine [MAPISIB-Struktur.](mapisib.md) 
     
 ## <a name="return-value"></a>Rückgabewert
 

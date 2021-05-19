@@ -20,9 +20,9 @@ Gibt das Datum und die Uhrzeit als seriellen Werten zurück, zu dem das Dokument
   
 ## <a name="syntax"></a>Syntax
 
-DOCLASTEDIT ()
+DOCLASTEDIT()
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Verwenden Sie die [FORMAT](format-function.md)-Funktion zum Formatieren des Werts. 
   

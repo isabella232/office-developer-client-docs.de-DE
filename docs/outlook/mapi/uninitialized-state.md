@@ -21,21 +21,21 @@ ms.locfileid: "33425561"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Der nicht initialisierte Status ist der anfängliche Zustand, in dem Formularobjekte bei der ersten Erstellung vorliegen sollen. Formularobjekte werden mit Nachrichtendaten initialisiert, wenn eine Clientanwendung die [IPersistMessage:: InitNew](ipersistmessage-initnew.md) -oder [IPersistMessage:: Laden](ipersistmessage-load.md) -Methode für das Form-Objekt aufruft. In der folgenden Tabelle werden zulässige Übergänge vom initialisierten-Status beschrieben. 
+Der Status "Nicht initialisiert" ist der Anfangszustand, in dem sich Formularobjekte befinden sollten, wenn sie zum ersten Mal erstellt werden. Formularobjekte werden mit Nachrichtendaten initialisiert, wenn eine Clientanwendung die [IPersistMessage::InitNew-](ipersistmessage-initnew.md) oder [IPersistMessage::Load-Methode](ipersistmessage-load.md) für das Formularobjekt aufruft. In der folgenden Tabelle werden zulässige Übergänge vom Unitialized-Zustand beschrieben. 
   
-|**IPersistMessage-Methode**|**Aktion**|**Neuer Status**|
+|**IPersistMessage-Methode**|**Action**|**Neuer Status**|
 |:-----|:-----|:-----|
-|[IPersistMessage::InitNew](ipersistmessage-initnew.md) <br/> |Laden Sie das Form-Objekt mit Standarddaten.  <br/> |[Normal](normal-state.md) <br/> |
-|[IPersistMessage::Load](ipersistmessage-load.md) <br/> |Laden Sie das Form-Objekt mit Daten aus der Zielnachricht.  <br/> |Normal  <br/> |
-|[IPersistMessage::GetClassID](ipersistmessage-getclassid.md) <br/> |Zurückgeben des Erfolgs oder Festlegen des letzten Fehlers auf und Zurückgeben von E_UNEXPECTED.  <br/> |Initialisierten  <br/> |
-|[IPersistMessage::GetLastError](ipersistmessage-getlasterror.md) <br/> |Zurückgeben des letzten Fehlers.  <br/> |Initialisierten  <br/> |
-|Andere [IPersistMessage: IUnknown](ipersistmessageiunknown.md) -Methoden oder Methoden von anderen Schnittstellen  <br/> |Legen Sie den letzten Fehler an und geben Sie E_UNEXPECTED.  <br/> |Initialisierten  <br/> |
+|[IPersistMessage::InitNew](ipersistmessage-initnew.md) <br/> |Laden Sie das Formularobjekt mit Standarddaten.  <br/> |[Normal](normal-state.md) <br/> |
+|[IPersistMessage::Load](ipersistmessage-load.md) <br/> |Laden Sie das Formularobjekt mit Daten aus der Zielnachricht.  <br/> |Standard  <br/> |
+|[IPersistMessage::GetClassID](ipersistmessage-getclassid.md) <br/> |Zurückgeben des Erfolgs oder Festlegen des letzten Fehlers auf und Zurückgeben E_UNEXPECTED.  <br/> |Nicht initialisiert  <br/> |
+|[IPersistMessage::GetLastError](ipersistmessage-getlasterror.md) <br/> |Gibt den letzten Fehler zurück.  <br/> |Nicht initialisiert  <br/> |
+|Andere [IPersistMessage : IUnknown-Methoden](ipersistmessageiunknown.md) oder -Methoden aus anderen Schnittstellen  <br/> |Legen Sie den letzten Fehler auf und geben E_UNEXPECTED.  <br/> |Nicht initialisiert  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Normaler Status](normal-state.md)
+[Normalzustand](normal-state.md)
   
-[Formular Status](form-states.md)
+[Formularzustände](form-states.md)
 

@@ -15,21 +15,21 @@ ms.locfileid: "33426058"
 ---
 # <a name="lockfromgroupformat-cell-protection-section"></a>Zelle "LockFromGroupFormat" (Abschnitt "Protection")
 
-Blockiert Formatänderungen an einem Gruppen-Shape, die an die unter Formen weitergegeben werden, während Benutzer die ausgewählten unter Formen weiterhin direkt formatieren können. 
+Verhindert, dass Formatänderungen an einem Gruppen-Shape an seine Unterformen verbreitet werden, während benutzer dennoch ausgewählte Unterformen direkt formatieren können. 
   
-Der Wert der Zelle LockFromGroupFormat entspricht dem Kontrollkästchen **von Gruppen Formatierungen** im Dialogfeld **Schutz** . 
+Der Wert der Zelle LockFromGroupFormat  entspricht der Kontrollkästchen Von-Gruppenformatierung im Dialogfeld **Schutz.** 
   
-Wenn Sie auf die Zelle LockFromGroupFormat aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen verweisen möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Verweisen auf die Zelle LockFromGroupFormat anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |LockFromGroupFormat  <br/> |
    
-Wenn Sie aus einem Programm aus nach Index auf die Zelle LockFromGroupFormat verweisen möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um von einem Programm aus auf die Zelle LockFromGroupFormat nach Index zu verweisen: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowLock** <br/> |
 |Zellenindex:  <br/> |**visLockFromGroupFormat** <br/> |
    

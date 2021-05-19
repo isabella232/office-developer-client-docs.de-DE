@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - debugPrintf
 keywords:
-- debugprintf-Funktion [Excel 2007]
+- debugprintf-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: 9ad541f6-0b35-4f50-926a-8940e3f8033a
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -22,7 +22,7 @@ ms.locfileid: "33424798"
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Framework-Bibliotheksfunktion, die eine mit NULL endende Byte-Zeichenfolge in den aktiven Debugger über die Windows SDK-Funktion **OutputDebugStringA**schreibt. Wenn die Anwendung keinen Debugger hat, zeigt der Systemdebugger die Zeichenfolge an. Wenn die Anwendung keinen Debugger hat und der Systemdebugger nicht aktiv ist, wird von **debugPrintf** keine Aktion ausgeführt. 
+Framework library function that writes a null-terminated byte-string to the active debugger via the Windows SDK function **OutputDebugStringA**. Wenn die Anwendung keinen Debugger besitzt, zeigt der Systemdebugger die Zeichenfolge an. Wenn die Anwendung keinen Debugger hat und der Systemdebugger nicht aktiv ist, **führt debugPrintf** nichts aus. 
   
 Diese Funktion gibt keinen Wert zurück.
   
@@ -34,15 +34,15 @@ void WINAPI debugPrintf(LPSTR lpFormat, arguments);
 
  _lpFormat (LPSTR)_
   
-Die Formatzeichenfolge, die die Syntax und Regeln für die mit der **sprintf** -Funktion verwendete folgt. 
+Die Formatzeichenfolge, die der Syntax und Regeln für die mit der **sprintf-Funktion verwendete Folgt.** 
   
  _Argumente_
   
-NULL oder mehr Argumente, die mit der Formatzeichenfolge übereinstimmen.
+Null oder mehr Argumente, die der Formatzeichenfolge entsprechen.
   
 ## <a name="example"></a>Beispiel
 
-Diese Funktion druckt eine Zeichenfolge, um anzuzeigen, dass das Steuerelement an Sie übergeben wurde. Das _DEBUG-Flag muss vor dem Kompilieren definiert werden, sonst hat diese Funktion nichts.
+Diese Funktion druckt eine Zeichenfolge, um zu zeigen, dass das Steuerelement an sie übergeben wurde. Das _DEBUG muss vor der Kompilierung definiert werden, sonst führt diese Funktion nichts aus.
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   

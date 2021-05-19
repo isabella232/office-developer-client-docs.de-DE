@@ -1,5 +1,5 @@
 ---
-title: LOG10-Funktion (Access Custom Web App)
+title: Log10-Funktion (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33424868"
 ---
-# <a name="log10-function-access-custom-web-app"></a>LOG10-Funktion (Access Custom Web App)
+# <a name="log10-function-access-custom-web-app"></a>Log10-Funktion (benutzerdefinierte Access-Web-App)
 
 Gibt den Logarithmus einer Zahl zur Basis 10 zurück.
   
@@ -23,16 +23,16 @@ Gibt den Logarithmus einer Zahl zur Basis 10 zurück.
   
 ## <a name="syntax"></a>Syntax
 
- **Log10** (*Numerischer Ausdruck*) 
+ **Log10** (*NumericExpression*) 
   
-Die **log10** -Funktion enthält das folgende Argument. 
+Die **Log10-Funktion** enthält das folgende Argument. 
   
 |**Argumentname**|**Beschreibung**|
 |:-----|:-----|
-| *Numerischer Ausdruck*  <br/> |Die positive Zahl, für die Sie den Logarithmus Basis 10 wünschen.  <br/> |
+| *NumericExpression*  <br/> |Die positive Zahl, für die der Basis-10-Logarithmus verwendet werden soll.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Mit der **Log** -Funktion können Sie die Basis des Logarithmus ändern, anstatt die Basis 10 zu verwenden. 
+Mit **der Log-Funktion** können Sie die Basis des Logarithmus ändern, anstatt die Basis 10 zu verwenden. 
   
 

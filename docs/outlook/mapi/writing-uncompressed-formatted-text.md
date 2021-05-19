@@ -1,5 +1,5 @@
 ---
-title: Schreiben von nicht komprimiertem formatiertem Text
+title: Schreiben von nicht komprimierten formatierten Texten
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,22 +15,22 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33426324"
 ---
-# <a name="writing-uncompressed-formatted-text"></a>Schreiben von nicht komprimiertem formatiertem Text
+# <a name="writing-uncompressed-formatted-text"></a>Schreiben von nicht komprimierten formatierten Texten
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beim Vorbereiten des Sendens einer Nachricht mit formatiertem Text legen Sie die **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md))-Eigenschaft der Nachricht auf komprimierten oder nicht komprimierten Text fest. Das Schreiben von komprimiertem Text in der **PR_RTF_COMPRESSED** -Eigenschaft ist ein sehr CPU-intensiver Vorgang und kann die Leistung erheblich beeinträchtigen. 
+Wenn Sie das Senden einer Nachricht mit formatiertem Text **vorbereiten,** legen Sie entweder die eigenschaft PR_RTF_COMPRESSED ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) der Nachricht auf komprimierten oder nicht komprimierten Text festgelegt. Das Schreiben von komprimiertem Text in **PR_RTF_COMPRESSED** ist ein sehr CPU-intensiver Vorgang und kann sich erheblich auf die Leistung auswirken. 
   
-Um die Leistung beim Senden formatierter Nachrichten zu verbessern, können Sie Folgendes tun:
+Um die Leistung des Sendens formatierter Nachrichten zu verbessern, führen Sie entweder die
   
-- Upgraden Sie die CPU, eine Lösung, die nicht immer plausibel ist.
+- Aktualisieren Sie die CPU, eine Lösung, die nicht immer plausibel ist.
     
-    - Oder
+    - Oder -
     
-- Schreiben Sie unkomprimierten Text in der **PR_RTF_COMPRESSED** -Eigenschaft. 
+- Schreiben Sie unkomprimierten Text in die **PR_RTF_COMPRESSED** Eigenschaft. 
     
-Die Vorgehensweise zum Festlegen von **PR_RTF_COMPRESSED** mit unkomprimiertem Text ist identisch mit der Einstellung für den komprimierten Text mit einer Ausnahme. Legen Sie beim Aufrufen von [WrapCompressedRTFStream](wrapcompressedrtfstream.md)die STORE_UNCOMPRESSED_RTF-Kennzeichnung im _ulFlags_ -Parameter fest. Das Festlegen von nicht komprimiertem Text hat den Nachteil, dass die Größe der Nachrichten erhöht wird. 
+Das Verfahren zum Festlegen **PR_RTF_COMPRESSED** mit nicht komprimiertem Text ist identisch mit dem Festlegen mit komprimiertem Text, mit einer Ausnahme. Legen Sie [beim Aufrufen von WrapCompressedRTFStream](wrapcompressedrtfstream.md)das STORE_UNCOMPRESSED_RTF im  _ulFlags-Parameter_ ein. Das Festlegen von nicht komprimierten Text hat den Nachteil, dass die Größe von Nachrichten erhöht wird. 
   
 

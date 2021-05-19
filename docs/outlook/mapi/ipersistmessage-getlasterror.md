@@ -25,7 +25,7 @@ ms.locfileid: "33426709"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt eine [MAPIERROR](mapierror.md) -Struktur zurück, die Informationen zum vorherigen Fehler im Form-Objekt enthält. 
+Gibt eine [MAPIERROR-Struktur](mapierror.md) zurück, die Informationen zum vorherigen Fehler im Formularobjekt enthält. 
   
 ```cpp
 HRESULT GetLastError(
@@ -39,19 +39,19 @@ HRESULT GetLastError(
 
  _hResult_
   
-> in Ein HRESULT-Datentyp, der den im vorherigen Methodenaufruf generierten Fehlerwert enthält.
+> [in] Ein HRESULT-Datentyp, der den im vorherigen Methodenaufruf generierten Fehlerwert enthält.
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die den Typ der zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die den Typ der zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
     
 MAPI_UNICODE 
   
-> Die Zeichenfolgen in der [MAPIERROR](mapierror.md) -Struktur, die im _lppMAPIError_ -Parameter zurückgegeben werden, sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format. 
+> Die Zeichenfolgen in der [MAPIERROR-Struktur,](mapierror.md) die im  _lppMAPIError-Parameter_ zurückgegeben wird, sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Zeichenfolgen im ANSI-Format. 
     
  _lppMAPIError_
   
-> Out Ein Zeiger auf einen Zeiger auf eine **MAPIERROR** -Struktur, die Versions-, Komponenten-und Kontextinformationen für den Fehler enthält. Der _lppMAPIError_ -Parameter kann auf NULL festgelegt werden, wenn das Formular keine geeigneten Informationen für eine **MAPIERROR** -Struktur bereitstellen kann. 
+> [out] Ein Zeiger auf einen Zeiger auf eine **MAPIERROR-Struktur,** die Versions-, Komponenten- und Kontextinformationen für den Fehler enthält. Der  _lppMAPIError-Parameter_ kann auf NULL festgelegt werden, wenn das Formular keine geeigneten Informationen für eine **MAPIERROR-Struktur liefern** kann. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -61,19 +61,19 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> Entweder wurde das MAPI_UNICODE-Flag festgelegt, und der Adressbuchanbieter unterstützt Unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und der Adressbuchanbieter unterstützt nur Unicode.
+> Entweder wurde MAPI_UNICODE-Flag festgelegt, und der Adressbuchanbieter unterstützt Unicode nicht, oder MAPI_UNICODE nicht festgelegt, und der Adressbuchanbieter unterstützt nur Unicode.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Formularobjekte implementieren die **IPersistMessage:: getlasterroraufzurufen** -Methode, um Informationen zu einem fehlgeschlagenen Methodenaufruf bereitzustellen. Formular Betrachter können Ihren Benutzern detaillierte Informationen zu dem Fehler bereitstellen, indem Sie die Daten aus der [MAPIERROR](mapierror.md) -Struktur in ein Dialogfeld einschließen. 
+Form-Objekte implementieren die **IPersistMessage::GetLastError-Methode,** um Informationen zu einem vorherigen Methodenaufruf zu liefern, der fehlgeschlagen ist. Formularbetrachter können ihren Benutzern detaillierte Informationen zum Fehler bereitstellen, indem sie die Daten aus der [MAPIERROR-Struktur](mapierror.md) in ein Dialogfeld eingeben. 
   
-Ein Aufruf von **getlasterroraufzurufen** wirkt sich nicht auf den Status des Formulars aus. Wenn **getlasterroraufzurufen** zurückgegeben wird, bleibt das Formular in dem Zustand, in dem Sie sich befanden, bevor der Anruf getätigt wurde. 
+Ein Aufruf von **GetLastError** wirkt sich nicht auf den Status des Formulars aus. Wenn **GetLastError zurückgegeben** wird, verbleibt das Formular in dem Zustand, in dem es sich vor dem Aufruf auf dem Formular begnnen hat. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Sie können die **MAPIERROR** -Struktur verwenden, wenn das Formular eine bereitstellt, auf die durch den _lppMAPIError_ -Parameter verwiesen wird, nur, wenn **getlasterroraufzurufen** S_OK zurückgibt. In einigen Fällen kann das Formular nicht ermitteln, was der letzte Fehler aufweist oder nicht mehr über den Fehler berichtet. In dieser Situation gibt das Formular stattdessen einen Zeiger auf NULL in _lppMAPIError_ zurück. 
+Sie können die **MAPIERROR-Struktur** verwenden, wenn das Formular eine angibt, auf die der  _lppMAPIError-Parameter_ nur verweist, wenn **GetLastError** eine S_OK. Manchmal kann das Formular nicht bestimmen, was der letzte Fehler war oder hat nichts mehr über den Fehler zu melden. In diesem Fall gibt das Formular stattdessen einen Zeiger auf NULL in  _lppMAPIError_ zurück. 
   
-Weitere Informationen zur **getlasterroraufzurufen** -Methode finden Sie unter [MAPI Extended Errors](mapi-extended-errors.md).
+Weitere Informationen zur **GetLastError-Methode** finden Sie unter [MAPI Extended Errors](mapi-extended-errors.md).
   
 ## <a name="see-also"></a>Siehe auch
 

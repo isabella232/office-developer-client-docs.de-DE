@@ -1,5 +1,5 @@
 ---
-title: ABS-Funktion (Access Custom Web App)
+title: Abs-Funktion (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33426317"
 ---
-# <a name="abs-function-access-custom-web-app"></a>ABS-Funktion (Access Custom Web App)
+# <a name="abs-function-access-custom-web-app"></a>Abs-Funktion (benutzerdefinierte Access-Web-App)
 
 Gibt den absoluten (positiven) Wert des angegebenen numerischen Ausdrucks zurück.
   
@@ -22,12 +22,12 @@ Gibt den absoluten (positiven) Wert des angegebenen numerischen Ausdrucks zurüc
   
 ## <a name="syntax"></a>Syntax
 
- **ABS** (*Numerischer Ausdruck*) 
+ **Abs** (*NumericExpression*) 
   
-Die **ABS** -Funktion enthält das folgende Argument. 
+Die **Abs-Funktion** enthält das folgende Argument. 
   
 |**Argumentname**|**Beschreibung**|
 |:-----|:-----|
-| *Numerischer Ausdruck*  <br/> |Ein numerischer Ausdruck.  <br/> |
+| *NumericExpression*  <br/> |Ein numerischer Ausdruck.  <br/> |
    
 

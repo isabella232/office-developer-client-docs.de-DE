@@ -44,11 +44,11 @@ HRESULT ValidateParameters(
 
  _eMethod_
   
-> in Gibt die zu überprüfende Methode an. 
+> [in] Gibt die zu überprüfende Methode per Enumeration an. 
     
  _First_
   
-> in Zeiger auf das erste Argument im Stapel.
+> [in] Zeiger auf das erste Argument auf dem Stapel.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -60,8 +60,8 @@ MAPI_E_CALL_FAILED
   
 > Mindestens einer der Parameter ist ungültig.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Das **ValidateParameters** -Makro wurde vom [ValidateParms](validateparms.md) -Makro abgelöst. **ValidateParameters** funktioniert auf RISC-Plattformen nicht ordnungsgemäß und kann nun nicht mehr kompiliert werden. Es wird weiterhin auf Intel-Plattformen kompiliert und funktioniert, aber **ValidateParms** wird auf allen Plattformen empfohlen. 
+Das **Makro ValidateParameters** wurde durch das Makro [ValidateParms ersetzt.](validateparms.md) **ValidateParameters** funktioniert auf RISC-Plattformen nicht ordnungsgemäß und kann jetzt nicht mehr für sie kompiliert werden. Es wird weiterhin auf Intel-Plattformen kompiliert und funktioniert ordnungsgemäß, **validateParms** wird jedoch auf allen Plattformen empfohlen. 
   
 

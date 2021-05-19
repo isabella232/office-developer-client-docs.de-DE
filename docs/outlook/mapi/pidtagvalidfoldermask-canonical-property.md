@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagvalidfoldermask (-Eigenschaft
+title: PidTagValidFolderMask (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,13 +19,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33427794"
 ---
-# <a name="pidtagvalidfoldermask-canonical-property"></a>Kanonische Pidtagvalidfoldermask (-Eigenschaft
+# <a name="pidtagvalidfoldermask-canonical-property"></a>PidTagValidFolderMask (kanonische Eigenschaft)
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine Bitmaske von Flags, die die Gültigkeit der Eintragsbezeichner der Ordner in einem Nachrichtenspeicher kennzeichnen.
+Enthält eine Bitmaske mit Flags, die die Gültigkeit der Eintragsbezeichner der Ordner in einem Nachrichtenspeicher angeben.
   
 |||
 |:-----|:-----|
@@ -34,55 +34,55 @@ Enthält eine Bitmaske von Flags, die die Gültigkeit der Eintragsbezeichner der
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Nachrichtenspeicher  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die Eintrags-ID eines Ordners kann ungültig werden, wenn ein Benutzer den Ordner löscht oder wenn der Nachrichtenspeicher beschädigt wird.
+Der Eintragsbezeichner eines Ordners kann ungültig werden, wenn ein Benutzer den Ordner löscht oder wenn der Nachrichtenspeicher beschädigt wird.
   
 Mindestens eines der folgenden Flags kann für die Bitmaske festgelegt werden: 
   
 FOLDER_COMMON_VIEWS_VALID 
   
-> Der Ordner Allgemeine Ansichten hat einen gültigen Eintragsbezeichner. Siehe **PR_COMMON_VIEWS_ENTRYID** ([pidtagcommonviewsentryid (](pidtagcommonviewsentryid-canonical-property.md)).
+> Der Ordner "Allgemeine Ansichten" verfügt über einen gültigen Eintragsbezeichner. Siehe **PR_COMMON_VIEWS_ENTRYID** ([PidTagCommonViewsEntryId](pidtagcommonviewsentryid-canonical-property.md)).
     
 FOLDER_FINDER_VALID 
   
-> Der Finder-Ordner verfügt über eine gültige Eintrags-ID. Siehe **PR_FINDER_ENTRYID** ([pidtagfinderentryid (](pidtagfinderentryid-canonical-property.md)). 
+> Der Finderordner verfügt über einen gültigen Eintragsbezeichner. Siehe **PR_FINDER_ENTRYID** ([PidTagFinderEntryId](pidtagfinderentryid-canonical-property.md)). 
     
 FOLDER_IPM_INBOX_VALID 
   
-> Der Empfänger Ordner für die zwischenmenschlichen Nachrichten (IPM) verfügt über eine gültige Eintrags-ID. Weitere Informationen finden Sie unter [IMsgStore:: GetReceiveFolder](imsgstore-getreceivefolder.md). 
+> Der IpM-Empfangsordner (Interpersonal Message) verfügt über einen gültigen Eintragsbezeichner. Weitere [Informationen finden Sie unter IMsgStore::GetReceiveFolder](imsgstore-getreceivefolder.md). 
     
 FOLDER_IPM_OUTBOX_VALID 
   
-> Der IPM-Ausgangsordner hat einen gültigen Eintragsbezeichner. Siehe **PR_IPM_OUTBOX_ENTRYID** ([pidtagipmoutboxentryid (](pidtagipmoutboxentryid-canonical-property.md)). 
+> Der Ordner "IPM-Posteingang" verfügt über einen gültigen Eintragsbezeichner. Siehe **PR_IPM_OUTBOX_ENTRYID** ([PidTagIpmOutboxEntryId](pidtagipmoutboxentryid-canonical-property.md)). 
     
 FOLDER_IPM_SENTMAIL_VALID 
   
-> Der Ordner "IPM Sent Items" hat einen gültigen Eintragsbezeichner. Siehe **PR_IPM_SENTMAIL_ENTRYID** ([pidtagipmsentmailentryid (](pidtagipmsentmailentryid-canonical-property.md)).
+> Der Ordner "IPM Gesendete Elemente" verfügt über einen gültigen Eintragsbezeichner. Siehe **PR_IPM_SENTMAIL_ENTRYID** ([PidTagIpmSentMailEntryId](pidtagipmsentmailentryid-canonical-property.md)).
     
 FOLDER_IPM_SUBTREE_VALID 
   
-> Die Unterstruktur des IPM-Ordners verfügt über eine gültige Eintrags-ID. Siehe **PR_IPM_SUBTREE_ENTRYID** ([pidtagipmsubtreeentryid (](pidtagipmsubtreeentryid-canonical-property.md)).
+> Die Unterstruktur des IPM-Ordners verfügt über einen gültigen Eintragsbezeichner. Siehe **PR_IPM_SUBTREE_ENTRYID** ([PidTagIpmSubtreeEntryId](pidtagipmsubtreeentryid-canonical-property.md)).
     
 FOLDER_IPM_WASTEBASKET_VALID 
   
-> Der Ordner "IPM Deleted Items" hat einen gültigen Eintragsbezeichner. Siehe **PR_IPM_WASTEBASKET_ENTRYID** ([pidtagipmwastebasketentryid (](pidtagipmwastebasketentryid-canonical-property.md)).
+> Der Ordner "Gelöschte Elemente" von IPM verfügt über einen gültigen Eintragsbezeichner. Siehe **PR_IPM_WASTEBASKET_ENTRYID** ([PidTagIpmWastebasketEntryId](pidtagipmwastebasketentryid-canonical-property.md)).
     
 FOLDER_VIEWS_VALID 
   
-> Der Ordner views hat eine gültige Eintrags-ID. Siehe **PR_VIEWS_ENTRYID** ([pidtagviewsentryid (](pidtagviewsentryid-canonical-property.md)).
+> Der Ordner Ansichten verfügt über einen gültigen Eintragsbezeichner. Siehe **PR_VIEWS_ENTRYID** ([PidTagViewsEntryId](pidtagviewsentryid-canonical-property.md)).
     
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
-### <a name="header-files"></a>Header Dateien
+### <a name="header-files"></a>Headerdateien
 
-Mapidefs. h
+Mapidefs.h
   
-> Stellt Datentypdefinitionen bereit.
+> Bietet Datentypdefinitionen.
     
-Mapitags. h
+Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -90,9 +90,9 @@ Mapitags. h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

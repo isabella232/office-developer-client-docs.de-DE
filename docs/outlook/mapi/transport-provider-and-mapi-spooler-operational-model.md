@@ -1,5 +1,5 @@
 ---
-title: Transport Anbieter und MAPI-Spooler-Betriebsmodell
+title: Betriebsmodell des Transportanbieters und des MAPI-Spoolers
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,30 +15,30 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33426625"
 ---
-# <a name="transport-provider-and-mapi-spooler-operational-model"></a>Transport Anbieter und MAPI-Spooler-Betriebsmodell
+# <a name="transport-provider-and-mapi-spooler-operational-model"></a>Betriebsmodell des Transportanbieters und des MAPI-Spoolers
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Transportanbieter Initialisierung, Start, Verarbeitung, Herunterfahren und Deinitialisierung werden durch eine Reihe von Aufrufen vom MAPI-Spooler an den Transportanbieter durchgeführt. Die Anrufe werden wie folgt sequenziert:
+Die Initialisierung, der Start, die Verarbeitung, das Herunterfahren und die Deinitialisierung des Transportanbieters werden durch eine Reihe von Aufrufen vom MAPI-Spooler an den Transportanbieter durchgeführt. Die Aufrufe werden wie folgt sequenziert:
   
-1. Der MAPI-Spooler Ruft die [XPProviderInit](xpproviderinit.md) -Funktion auf, übergibt ein Support-Objekt, ruft das Anbieterobjekt ab und überprüft, ob der Transportanbieter und der MAPI-Spooler einen kompatiblen MAPI-Versions Nummerntyp unterstützen. 
+1. Der MAPI-Spooler ruft die [XPProviderInit-Funktion](xpproviderinit.md) auf, übergibt ein Supportobjekt, ruft das Anbieterobjekt ab und überprüft, ob der Transportanbieter und der MAPI-Spooler einen kompatiblen Bereich von MAPI-Versionsnummern unterstützen. 
     
-2. Der MAPI-Spooler Ruft die [IXPProvider:: TransportLogon](ixpprovider-transportlogon.md) -Methode der [IXPProvider: IUnknown](ixpprovideriunknown.md) -Schnittstelle auf. Zwischen dem MAPI-Spooler und dem Transportanbieter wird eine Sitzung mit den Anmeldeinformationen im aktuellen Abschnitt des Profils eingerichtet. Der Transportanbieter gibt ein LOGON-Objekt zurück. 
+2. Der MAPI-Spooler ruft die [IXPProvider::TransportLogon-Methode](ixpprovider-transportlogon.md) der [IXPProvider : IUnknown-Schnittstelle](ixpprovideriunknown.md) auf. Es wird eine Sitzung zwischen dem MAPI-Spooler und dem Transportanbieter mit den Anmeldeinformationen im aktuellen Abschnitt des Profils eingerichtet. Der Transportanbieter gibt ein Anmeldeobjekt zurück. 
     
-3. Die MAPI-Warteschlange ruft die [IXPLogon:: AddressTypes](ixplogon-addresstypes.md) -Methode auf. Der Transportanbieter gibt eine Liste der eindeutigen Bezeichner (IDs) und e-Mail-Adresstypen zurück, die er akzeptiert. 
+3. Der MAPI-Spooler ruft die [IXPLogon::AddressTypes-Methode](ixplogon-addresstypes.md) auf. Der Transportanbieter gibt eine Liste der eindeutigen Bezeichner (UIDs) und E-Mail-Adresstypen zurück, die er akzeptiert. 
     
-4. Der Transportanbieter Ruft die [IMAPISupport:: ModifyStatusRow](imapisupport-modifystatusrow.md) -Methode auf, um die Zeile in der MAPI-Statustabelle zu erstellen. 
+4. Der Transportanbieter ruft die [IMAPISupport::ModifyStatusRow-Methode auf,](imapisupport-modifystatusrow.md) um die Zeile in der MAPI-Statustabelle zu erstellen. 
     
-5. Die MAPI-Warteschlange ruft die [IXPLogon:: TransportNotify](ixplogon-transportnotify.md) -Methode auf, um die Nachrichtenübertragung und den Empfang zu aktivieren. 
+5. Der MAPI-Spooler ruft die [IXPLogon::TransportNotify-Methode auf,](ixplogon-transportnotify.md) um die Nachrichtenübermittlung und den Empfang zu aktivieren. 
     
-6. Wenn der Transportanbieter in seiner Rückgabe für den **TransportLogon** -Aufruf angefordert wird, ruft der MAPI-Spooler in regelmäßigen Abständen die [IXPLogon:: idle](ixplogon-idle.md) -Methode auf. Die Leerlaufverarbeitung ist nützlich, wenn der Transportanbieter das zugrunde liegende Messagingsystem auf neue Nachrichten Abfragen oder andere Aufgaben mit niedriger Priorität ausführen muss. 
+6. Wenn der Transportanbieter in seiner Rückgabe für den **TransportLogon-Aufruf** angefordert wird, ruft der MAPI-Spooler regelmäßig die [IXPLogon::Idle-Methode](ixplogon-idle.md) auf. Die Verarbeitung im Leerlauf ist hilfreich, wenn der Transportanbieter das zugrunde liegende Messagingsystem auf neue Nachrichten abfragen oder andere Aufgaben mit niedriger Priorität ausführen muss. 
     
-7. Die MAPI-Warteschlange und der Transportanbieter senden und empfangen Nachrichten. Weitere Informationen finden Sie unter [Nachrichten Übermittlungs Modell](message-submission-model.md) und [Nachrichtenempfangs Modell](message-reception-model.md). Die MAPI-Warteschlangendienste transportieren Anforderungen und Aufrufe für Support-, Message-und Attachment-Objekte.
+7. Der MAPI-Spooler und der Transportanbieter senden und empfangen Nachrichten. Weitere Informationen finden Sie unter [Nachrichtenübermittlungsmodell](message-submission-model.md) und [Nachrichtenempfangsmodell](message-reception-model.md). Die MAPI-Spoolerdienste transportieren Anforderungen und Aufrufe von Support-, Nachrichten- und Anlagenobjekten.
     
-8. Die MAPI-Warteschlange ruft die **TransportNotify** -Methode auf, um die Nachrichtenübertragung und den Empfang zu deaktivieren. 
+8. Der MAPI-Spooler ruft die **TransportNotify-Methode** auf, um die Nachrichtenübermittlung und den Empfang zu deaktivieren. 
     
-9. Der MAPI-Spooler gibt die Objekte LOGON und Provider frei. Weitere Informationen finden Sie unter der [IXPProvider:: Shutdown](ixpprovider-shutdown.md) -Methode. 
+9. Der MAPI-Spooler gibt die Anmelde- und Anbieterobjekte frei. Weitere Informationen finden Sie unter [der IXPProvider::Shutdown-Methode.](ixpprovider-shutdown.md) 
     
 

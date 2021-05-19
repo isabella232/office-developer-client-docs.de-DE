@@ -21,45 +21,45 @@ ms.locfileid: "33425176"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPI stellt eine Tabelle mit Informationen zum Status des MAPI-Subsystems, des MAPI-Spoolers, des Adressbuchs oder eines bestimmten Dienstanbieters bereit. Sie können auf diese Tabelle zugreifen, indem Sie [IMAPISession::](imapisession-getstatustable.md)getstatusable aufrufen.
+MAPI enthält eine Tabelle mit Informationen zum Status des MAPI-Subsystems, des MAPI-Spoolers, des Adressbuchs oder eines bestimmten Dienstanbieters. Sie können auf diese Tabelle zugreifen, indem Sie [IMAPISession::GetStatusTable aufrufen.](imapisession-getstatustable.md)
   
-Jede Zeile in der Statustabelle stellt ein Statusobjekt dar, das von MAPI oder einem Dienstanbieter implementiert wurde. Sie können ein Status-Objekt verwenden, um das Konfigurationseigenschaften Fenster eines Anbieters anzuzeigen, ein Anbieter Kennwort zu ändern, Nachrichten hochzuladen oder herunterzuladen und mit einem bestimmten Transportanbieter zu kommunizieren. 
+Jede Zeile in der Statustabelle stellt ein status-Objekt dar, das von MAPI oder einem Dienstanbieter implementiert wurde. Mit einem Statusobjekt können Sie das Konfigurationseigenschaftsblatt eines Anbieters anzeigen, ein Anbieterkennwort ändern, Nachrichten hochladen oder herunterladen und mit einem bestimmten Transportanbieter kommunizieren. 
   
-Es gibt zwei Möglichkeiten, auf ein Status-Objekt zuzugreifen:
+Es gibt zwei Möglichkeiten für den Zugriff auf ein Statusobjekt:
   
-- Über die Statustabelle
+- Durch die Statustabelle
     
-- Über die **OpenStatusEntry** -Methode eines LOGON-Objekts 
+- Über die **OpenStatusEntry-Methode eines Anmeldeobjekts** 
     
-Da Anmeldeobjekte für Clients nicht verfügbar sind, müssen Sie die Status-Tabelle verwenden, um auf Statusobjekte zuzugreifen. Der Statustabellen Ansatz ist indirekt, erfordert ein paar Aufrufe, bevor das Status-Objekt geöffnet wird und ein Zeiger auf die **IMAPIStatus** -Implementierung zurückgegeben. 
+Da Anmeldeobjekte für Clients nicht verfügbar sind, müssen Sie die Statustabelle verwenden, um auf Statusobjekte zu zugreifen. Der Ansatz der Statustabelle ist indirekt und erfordert einige Aufrufe, bevor das status-Objekt geöffnet wird, und ein Zeiger auf seine **IMAPIStatus-Implementierung** wird zurückgegeben. 
   
- **So öffnen Sie ein Statusobjekt mithilfe der Status-Tabelle**
+ **So öffnen Sie ein Statusobjekt mithilfe der Statustabelle**
   
-1. Rufen Sie **IMAPIStatus::** getstatusable auf, um einen [IMAPITable](imapitableiunknown.md) -Zeiger abzurufen. 
+1. Rufen **Sie IMAPIStatus::GetStatusTable auf,** um einen [IMAPITable-Zeiger abzurufen.](imapitableiunknown.md) 
     
-2. Rufen Sie die [IMAPITable::](imapitable-setcolumns.md) SetColumns-Methode der Statustabelle auf, um den Spaltensatz auf **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)), **PR_RESOURCE_TYPE** ([pidtagresourcetype (](pidtagresourcetype-canonical-property.md)) und **PR_DISPLAY_NAME** ([ PidTagDisplayName](pidtagdisplayname-canonical-property.md)).
+2. Rufen Sie die [IMAPITable::SetColumns-Methode](imapitable-setcolumns.md) der Statustabelle auf, um den Spaltensatz auf **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)), **PR_RESOURCE_TYPE** ([PidTagResourceType](pidtagresourcetype-canonical-property.md)) und **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) zu beschränken.
     
-3. Schränkt die Tabellenansicht auf ein bestimmtes Statusobjekt ein. Bei MAPI-Implementierungen kann ein Client mithilfe von **PR_RESOURCE_TYPE**eine Eigenschaftseinschränkung definieren. Bei Implementierungen von Dienstanbietern kann ein Client die **PR_PROVIDER_DISPLAY** ([pidtagproviderdisplay (](pidtagproviderdisplay-canonical-property.md)), den Namen des Anbieters oder **PR_PROVIDER_DLL_NAME** ([pidtagproviderdllname (](pidtagproviderdllname-canonical-property.md)), den Namen der Anbieter-DLL einschränken. Datei.
+3. Beschränken Sie die Tabellenansicht auf ein bestimmtes Statusobjekt. Für MAPI-Implementierungen kann ein Client eine Eigenschaftseinschränkung mithilfe von **PR_RESOURCE_TYPE.** Bei Dienstanbieterimplementierung kann ein Client **PR_PROVIDER_DISPLAY** ([PidTagProviderDisplay](pidtagproviderdisplay-canonical-property.md)), den Namen des Anbieters oder **auf PR_PROVIDER_DLL_NAME** ([PidTagProviderDllName](pidtagproviderdllname-canonical-property.md)) den Namen der Anbieter-DLL-Datei einschränken.
     
-4. Rufen Sie [IMAPITable:: Restrict](imapitable-restrict.md) auf, um die Einschränkung festzulegen. 
+4. Rufen [Sie IMAPITable::Restrict auf, um](imapitable-restrict.md) die Einschränkung zu setzen. 
     
-5. Rufen Sie [HrQueryAllRows](hrqueryallrows.md)auf, und übergeben Sie die [SPropertyRestriction](spropertyrestriction.md) -Struktur, um die Zeile abzurufen, die den Status des Anbieters darstellt. 
+5. Rufen [Sie HrQueryAllRows auf,](hrqueryallrows.md)und übergeben Sie die [SPropertyRestriction-Struktur,](spropertyrestriction.md) um die Zeile abzurufen, die den Status des Anbieters darstellt. 
     
-6. Rufen Sie [IMAPISession:: OpenEntry](imapisession-openentry.md)auf, indem Sie die Eintrags-ID aus der Zeile der Statustabelle angeben, um das Status-Objekt zu öffnen und einen **IMAPIStatus** -Zeiger abzurufen. 
+6. Rufen [Sie IMAPISession::OpenEntry](imapisession-openentry.md)auf, und geben Sie den Eintragsbezeichner aus der Zeile der Statustabelle an, um das Statusobjekt zu öffnen und einen **IMAPIStatus-Zeiger abzurufen.** 
     
-Zum Anzeigen eines Eigenschaftenblatts rufen Sie die [IMAPIStatus:: Settingsdialog](imapistatus-settingsdialog.md) -Methode des Status-Objekts für den Zielanbieter auf. **Settingsdialog** zeigt ein Eigenschaftenfenster zum Anzeigen und in einigen Fällen die Konfigurationseigenschaften eines Anbieters an. 
+Rufen Sie zum Anzeigen eines Eigenschaftenblatts die [IMAPIStatus::SettingsDialog-Methode](imapistatus-settingsdialog.md) des Statusobjekts für den Zielanbieter auf. **SettingsDialog zeigt** ein Eigenschaftenblatt zum Anzeigen und in einigen Fällen zum Ändern der Konfigurationseigenschaften eines Anbieters an. 
   
-Wenn Sie mit einem Transportanbieter kommunizieren möchten, rufen Sie die [IMAPIStatus:: ValidateState](imapistatus-validatestate.md) -Methode des Status-Objekts auf. **ValidateState** kann einen Transportanbieter neu konfigurieren, den Anbieter daran hindern, eine Benutzeroberfläche anzuzeigen und eine Sitzung zu steuern, die das Herunterladen von Nachrichtenkopfzeilen von einem Remoteserver abhängig von den übertragenen Kennzeichen umfasst. Wenn Sie beispielsweise das Herunterladen von Remoteheadern abbrechen möchten, müssen Sie das ABORT_XP_HEADER_OPERATION-Flag an **ValidateState**. Zum Verbinden oder Trennen vom Remoteserver führen Sie FORCE_XP_CONNECT oder FORCE_XP_DISCONNECT. Um den Anbieter neu zu konfigurieren, führen Sie CONFIG_CHANGED. 
+Um mit einem Transportanbieter zu kommunizieren, rufen Sie die [IMAPIStatus::ValidateState-Methode des Statusobjekts](imapistatus-validatestate.md) auf. **ValidateState** kann einen Transportanbieter neu konfigurieren, verhindern, dass der Anbieter eine Benutzeroberfläche anzeigen kann, und eine Sitzung steuern, die das Herunterladen von Nachrichtenkopfzeilen von einem Remoteserver erfordert, abhängig von den von Ihnen übergebenen Flags. Wenn Sie beispielsweise das Herunterladen von Remoteheadern abbrechen möchten, übergeben Sie das ABORT_XP_HEADER_OPERATION **an ValidateState**. Um eine Verbindung mit dem Remoteserver herzustellen oder die Verbindung zu trennen, übergeben FORCE_XP_CONNECT oder FORCE_XP_DISCONNECT. Um den Anbieter neu zu konfigurieren, übergeben Sie CONFIG_CHANGED. 
   
-Clients, die das Senden oder empfangen von Nachrichten bei Bedarf implementieren, rufen entweder die [IMAPIStatus:: FlushQueues](imapistatus-flushqueues.md) -Methode eines Transportanbieters oder eines MAPI-Spoolers auf. Sie können drei Flags an die-Methode weiterleiten: FLUSH_UPLOAD, FLUSH_DOWNLOAD und FLUSH_FORCE. FLUSH_UPLOAD weist den Anbieter oder die MAPI-Warteschlange an, alle Nachrichten zu senden, die in der Ausgabewarteschlange warten, während FLUSH_DOWNLOAD den Anbieter oder den MAPI-Spooler anweist, eingehende Nachrichten zu empfangen. FLUSH_FORCE kann mit einem der anderen Flags festgelegt werden, damit das Status-Objekt den Flush unabhängig vom Timing ausführt. 
+Clients, die das Senden oder Empfangen von Nachrichten bei Bedarf implementieren, rufen entweder die [IMAPIStatus::FlushQueues-Methode](imapistatus-flushqueues.md) eines Transportanbieters oder des MAPI-Spoolers auf. Sie können drei Flags an die Methode übergeben: FLUSH_UPLOAD, FLUSH_DOWNLOAD und FLUSH_FORCE. FLUSH_UPLOAD an den Anbieter oder den MAPI-Spooler, alle nachrichten zu senden, die in der Ausgabewarteschlange warten, während FLUSH_DOWNLOAD den Anbieter oder den MAPI-Spooler anweisen, eingehende Nachrichten zu empfangen. FLUSH_FORCE kann mit einem der anderen Flags festgelegt werden, damit das status-Objekt die Leerung unabhängig vom Zeitpunkt ausführen kann. 
   
-Erwarten Sie nicht, dass Sie **Settingsdialog** oder [CHANGEPASSWORD](imapistatus-changepassword.md) für ein MAPI-Subsystem, MAPI-Spooler oder Adressbuch Status-Objekte aufrufen können. Sowohl das Subsystem als auch das Adressbuch-Statusobjekt unterstützen nur **ValidateState**; das MAPI-Spooler Status-Objekt unterstützt **FlushQueues** zusätzlich zu **ValidateState**.
+Erwarten Sie nicht, dass **SettingsDialog** oder [ChangePassword](imapistatus-changepassword.md) für eines der MAPI-Subsysteme, MAPI-Spooler- oder Adressbuchstatusobjekte aufrufen können. Sowohl die Subsystem- als auch die Adressbuchstatusobjekte unterstützen **nur ValidateState**; Das MAPI-Spoolerstatusobjekt unterstützt **FlushQueues** zusätzlich zu **ValidateState**.
   
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Status Tabellen](status-tables.md)
+[Statustabellen](status-tables.md)
   
-[MAPI-Status Objekte](mapi-status-objects.md)
+[MAPI-Statusobjekte](mapi-status-objects.md)
 

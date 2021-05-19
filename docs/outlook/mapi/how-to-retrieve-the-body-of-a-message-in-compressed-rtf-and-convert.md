@@ -1,5 +1,5 @@
 ---
-title: Nachrichtentext in komprimiertem RTF abrufen und in das systemeigene Format konvertieren
+title: Abrufen des Nachrichtentexts in komprimiertem RTF und Konvertieren in das systemeigene Format
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,11 +13,11 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33426114"
 ---
-# <a name="retrieve-body-of-message-in-compressed-rtf-and-convert-to-its-native-format"></a>Nachrichtentext in komprimiertem RTF abrufen und in das systemeigene Format konvertieren
+# <a name="retrieve-body-of-message-in-compressed-rtf-and-convert-to-its-native-format"></a>Abrufen des Nachrichtentexts in komprimiertem RTF und Konvertieren in das systemeigene Format
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-In diesem Codebeispiel in Microsoft C++ wird gezeigt, wie Sie die exportierte Microsoft Outlook 2010-oder Microsoft Outlook 2013-Funktion [WrapCompressedRTFStreamEx](wrapcompressedrtfstreamex.md) verwenden, um auf den Text einer Nachricht zuzugreifen, die in komprimiertem RTF gekapselt ist, und um den Text in der systemeigenes Format. 
+In diesem Codebeispiel in Microsoft C++ wird gezeigt, wie Sie die exportierte Microsoft Outlook 2010- oder Microsoft Outlook 2013-Funktion [WrapCompressedRTFStreamEx](wrapcompressedrtfstreamex.md) verwenden, um auf den Textkörper einer Nachricht zu zugreifen, die in komprimiertem RTF gekapselt ist, und um den Textkörper im systemeigenen Format zu erhalten. 
   
 ```cpp
 //These are definitions for the WrapCompressedRTFStreamEx function. 

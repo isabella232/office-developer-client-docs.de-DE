@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 58119969-1d56-5b38-57ac-d8adf5097ef0
-description: Dieser Member ist ein Platzhalter und wird nicht unterstützt.
+description: Dieses Element ist ein Platzhalter und wird nicht unterstützt.
 ms.openlocfilehash: a7e77846538a03691c134298396cb23c42c47f15
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,11 +16,11 @@ ms.locfileid: "33425652"
 ---
 # <a name="ifreebusydataplaceholder4"></a>IFreeBusyData::Placeholder4
 
-Dieser Member ist ein Platzhalter und wird nicht unterstützt.
+Dieses Element ist ein Platzhalter und wird nicht unterstützt.
   
 ## <a name="quick-info"></a>QuickInfo
 
-Siehe [IFreeBusyData](ifreebusydata.md).
+Weitere [Informationen finden Sie unter IFreeBusyData](ifreebusydata.md).
   
 ```cpp
 HRESULT Placeholder4( 
@@ -40,13 +40,13 @@ HRESULT Placeholder4(
 
 Immer S_OK, da dies ein Platzhalter ist und nicht unterstützt wird.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Dieser Member muss S_OK zurückgeben.
+Dieses Element muss die S_OK.
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Konstanten (frei/gebucht-API)](constants-free-busy-api.md)
+- [Konstanten (Frei/Gebucht-API)](constants-free-busy-api.md)
 - [IFreeBusyData::EnumBlocks](ifreebusydata-enumblocks.md)
 - [IFreeBusyData::GetFBPublishRange](ifreebusydata-getfbpublishrange.md)
 - [IFreeBusyData::SetFBRange](ifreebusydata-setfbrange.md)

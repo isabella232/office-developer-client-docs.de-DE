@@ -23,24 +23,24 @@ Legt fest, ob die Zeichnung eine Vorschau mit einschließt. Wenn die Zeichnung e
 |**Wert**|**Umfang der Vorschau**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
 | 0  <br/> | Erste Seite  <br/> |**visDocPreviewScope1stPage** <br/> |
-| 1  <br/> | Keine  <br/> |**visDocPreviewScopeNone** <br/> |
+| 1  <br/> | Keinen  <br/> |**visDocPreviewScopeNone** <br/> |
 | 2  <br/> | Alle Seiten  <br/> |**visDocPreviewScopeAllPages** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Sie können diesen Wert auch im Dialogfeld **Eigenschaften** auf der Registerkarte **Zusammenfassung** festlegen (Klicken Sie auf die **Office** -Schaltfläche, klicken Sie auf die Registerkarte **Info** , klicken Sie auf **Dokumenteigenschaften**und dann auf **Erweiterte Eigenschaften**).
+Sie können diesen Wert  auch auf  der Registerkarte Zusammenfassung im Dialogfeld Eigenschaften festlegen (klicken Sie auf die Schaltfläche **Office,** klicken Sie auf die Registerkarte **Info,** klicken Sie auf Dokumenteigenschaften **und** dann auf **Erweiterte Eigenschaften**).
   
-Wenn Sie einen Verweis auf die Zelle "PreviewScope aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle PreviewScope anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | "PreviewScope  <br/> |
+| Zellenname:  <br/> | PreviewScope  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle "PreviewScope aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle PreviewScope nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowDoc** <br/> |
 | Zellenindex:  <br/> |**visDocPreviewScope** <br/> |
    

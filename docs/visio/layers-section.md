@@ -20,7 +20,7 @@ ms.locfileid: "33424203"
 
 Zeigt alle Layer, die für das Zeichenblatt definiert sind, sowie die eingerichteten Eigenschaften für die einzelnen Layer an. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Dieser Abschnitt ist eine Zeichenblatteigenschaft, die nur im ShapeSheet-Fenster eines Zeichenblatts angezeigt werden kann. Die Zellen entsprechen den Optionen im Dialogfeld **Layereigenschaften** (klicken Sie auf der Registerkarte **Start** in der Gruppe **Bearbeiten** auf **Layer**, und klicken Sie dann auf **Layereigenschaften**).
   

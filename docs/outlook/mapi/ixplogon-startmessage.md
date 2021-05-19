@@ -43,11 +43,11 @@ HRESULT StartMessage(
     
  _lpMessage_
   
-> in Ein Zeiger auf ein Nachrichtenobjekt (das die eingehende Nachricht darstellt) mit Lese-/Schreibzugriff, das vom Transportanbieter zum zugreifen und Bearbeiten dieser Nachricht verwendet wird. Dieses Objekt bleibt gültig, bis der Transportanbieter vom Aufruf an **IXPLogon:: StartMessage**zurückkehrt.
+> [in] Ein Zeiger auf ein Nachrichtenobjekt (das die eingehende Nachricht darstellt), das über Lese-/Schreibberechtigungen verfügt, die vom Transportanbieter verwendet werden, um auf diese Nachricht zu zugreifen und diese zu bearbeiten. Dieses Objekt bleibt gültig, bis der Transportanbieter vom Aufruf von **IXPLogon::StartMessage zurückkommt.**
     
  _lpulMsgRef_
   
-> Out Ein Zeiger auf einen Verweiswert, der der Nachricht zugewiesen ist. Der MAPI-Spooler initialisiert diesen Wert mit 1, bevor er den Zeiger an den Transportanbieter zurückgibt.
+> [out] Ein Zeiger auf einen Der Nachricht zugewiesenen Referenzwert. Der MAPI-Spooler initialisiert diesen Wert auf 1, bevor er den Zeiger an den Transportanbieter zurückgibt.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -55,25 +55,25 @@ S_OK
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Der MAPI-Spooler Ruft die **IXPLogon:: StartMessage** -Methode auf, um die Übertragung einer eingehenden Nachricht vom Transportanbieter an den MAPI-Spooler zu initiieren. Bevor der Transportanbieter mit der Verwendung der Nachricht beginnt, auf die von _lpMessage_verwiesen wird, sollte ein Nachrichtenverweis im _lpulMsgRef_ -Parameter gespeichert werden, damit Sie von einem Aufruf der [IXPLogon:: TransportNotify](ixplogon-transportnotify.md) -Methode verwendet werden kann. 
+Der MAPI-Spooler ruft die **IXPLogon::StartMessage-Methode** auf, um die Übertragung einer eingehenden Nachricht vom Transportanbieter an den MAPI-Spooler zu initiieren. Bevor der Transportanbieter mit der Verwendung der Nachricht beginnt, auf die  _von lpMessage_ verwiesen wird, sollte er einen Nachrichtenverweis im  _lpulMsgRef-Parameter_ speichern, damit er durch einen Aufruf der [IXPLogon::TransportNotify-Methode](ixplogon-transportnotify.md) verwendet werden kann. 
   
-Während eines **StartMessage** -Aufrufs verarbeitet der MAPI-Spooler Methoden für Objekte, die während der Übertragung der Nachricht geöffnet werden, und verarbeitet auch Anlagen. Diese Verarbeitung kann sehr viel Zeit in Anspruch nehmen. Transport Anbieter können die [IMAPISupport:: SpoolerYield](imapisupport-spooleryield.md) -Rückruffunktion für den MAPI-Spooler während dieser Verarbeitung häufig aufrufen, um die CPU-Zeit für andere Systemaufgaben zu veröffentlichen. 
+Während eines **StartMessage-Aufrufs** verarbeitet der MAPI-Spooler Methoden für Objekte, die während der Übertragung der Nachricht geöffnet wurden, und verarbeitet auch Anlagen. Diese Verarbeitung kann sehr lange dauern. Transportanbieter können während dieser Verarbeitung häufig die [IMAPISupport::SpoolerYield-Rückruffunktion](imapisupport-spooleryield.md) für den MAPI-Spooler aufrufen, um die CPU-Zeit für andere Systemaufgaben frei zu geben. 
   
-Alle Empfänger in der Empfängertabelle, die der Transportanbieter für die Nachricht erstellt, müssen alle erforderlichen Adressierungs Eigenschaften enthalten. Bei Bedarf kann der Anbieter einen benutzerdefinierten Empfänger erstellen, um einen bestimmten Empfänger darzustellen. Wenn der Anbieter jedoch einen Empfängereintrag mit weiteren Informationen erstellen kann, sollte dies der Fall sein. Wenn beispielsweise ein Transportanbieter über genügend Informationen zum Empfänger Format des Adressbuch Anbieters verfügt, dass er eine gültige Eintrags-ID für einen Empfänger für dieses Format erstellen kann, sollte er die Eintrags-ID erstellen.
+Alle Empfänger in der Empfängertabelle, die der Transportanbieter für die Nachricht erstellt, müssen alle erforderlichen Adressierungseigenschaften enthalten. Bei Bedarf kann der Anbieter einen benutzerdefinierten Empfänger erstellen, der einen bestimmten Empfänger repräsentiert. Wenn der Anbieter jedoch einen Empfängereintrag erstellen kann, der weitere Informationen enthält, sollte er dies tun. Wenn ein Transportanbieter beispielsweise über genügend Informationen zum Empfängerformat eines Adressbuchanbieters verfügt, dass er einen gültigen Eintragsbezeichner für einen Empfänger für dieses Format erstellen kann, sollte er die Eintrags-ID erstellen.
   
-Wenn nicht übertragbare Eigenschaften empfangen werden, sollte der Transportanbieter diese nicht in der neuen Nachricht speichern. Der Transportanbieter sollte jedoch alle übertragenen Eigenschaften speichern, die er in der neuen Nachricht empfängt.
+Wenn nichttransmittable Eigenschaften empfangen werden, sollte der Transportanbieter sie nicht in der neuen Nachricht speichern. Der Transportanbieter sollte jedoch alle übertragungsbaren Eigenschaften speichern, die er in der neuen Nachricht erhält.
   
-Wenn die eingehende Nachricht ein zugestellter Bericht oder ein Unzustellbarkeitsbericht ist und der Transportanbieter die [IMAPISupport:: StatusRecips](imapisupport-statusrecips.md) -Methode nicht verwenden kann, um den Bericht aus der ursprünglichen Nachricht zu generieren, sollte der Anbieter die Nachricht selbst mit die entsprechenden Eigenschaften. Der Transportanbieter kann jedoch die **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))-Eigenschaft der Nachricht nicht festlegen.
+Wenn es sich bei der eingehenden Nachricht um einen Zustellungsbericht oder einen Nicht-Zustellungsbericht handelt und der Transportanbieter die [IMAPISupport::StatusRecips-Methode](imapisupport-statusrecips.md) nicht verwenden kann, um den Bericht aus der ursprünglichen Nachricht zu generieren, sollte der Anbieter die Nachricht selbst mit den entsprechenden Eigenschaften auffüllen. Der Transportanbieter kann jedoch die Eigenschaft PR_ENTRYID **(** [PidTagEntryId](pidtagentryid-canonical-property.md)) der Nachricht nicht festlegen.
   
-Wenn die eingehende Nachricht nach der Verarbeitung im entsprechenden MAPI-Nachrichtenspeicher gespeichert werden soll, ruft der Transportanbieter die [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) -Methode auf. Wenn der Transportanbieter keine Nachrichten an den MAPI-Spooler übergibt, kann er die eingehende Nachricht beenden, indem er vom **StartMessage** -Aufruf zurückkehrt ****, ohne SaveChanges zu aufrufen.
+Um die eingehende Nachricht nach der Verarbeitung im entsprechenden MAPI-Nachrichtenspeicher zu speichern, ruft der Transportanbieter die [IMAPIProp::SaveChanges-Methode](imapiprop-savechanges.md) auf. Wenn der Transportanbieter über keine Nachrichten verfügt, die an den MAPI-Spooler übergeben werden sollen, kann er die eingehende Nachricht beenden, indem er vom **StartMessage-Anruf** ohne **SaveChanges zurückkehrt.**
   
-Alle Objekte, die der Transportanbieter während eines **StartMessage** -Aufrufs geöffnet hat, sollten vor der Rückgabe freigegeben werden. Der Anbieter sollte jedoch das Message-Objekt, das der MAPI-Spooler ursprünglich im _lpMessage_ -Parameter übergeben hat, nicht freigeben. 
+Alle Objekte, die der Transportanbieter während eines **StartMessage-Aufrufs** öffnet, sollten vor der Rückgabe freigegeben werden. Der Anbieter sollte jedoch das Message-Objekt nicht los, das der MAPI-Spooler ursprünglich im  _lpMessage-Parameter übergeben_ hat. 
   
-Wenn **StartMessage** einen Fehler zurückgibt, wird die Nachricht in Process ohne gespeicherte Änderungen freigegeben und geht verloren. In diesem Fall sollte der Transportanbieter das NOTIFY_CRITICAL_ERROR-Flag mit einem Aufruf an die [IMAPISupport:: SpoolerNotify](imapisupport-spoolernotify.md) -Methode weiterleiten und die [IXPLogon::P oll](ixplogon-poll.md) -Methode aufrufen, um die MAPI-Warteschlange zu benachrichtigen, dass Sie sich in einem schwerwiegenden Fehlerzustand befindet. 
+Wenn **StartMessage** einen Fehler zurückgibt, wird die In-Process-Nachricht ohne gespeicherte Änderungen freigegeben und geht verloren. In diesem Fall sollte der Transportanbieter das NOTIFY_CRITICAL_ERROR-Flag mit einem Aufruf der [IMAPISupport::SpoolerNotify-Methode](imapisupport-spoolernotify.md) übergeben und die [IXPLogon::P oll-Methode](ixplogon-poll.md) aufrufen, um den MAPI-Spooler zu benachrichtigen, dass er sich in einem schwerwiegenden Fehlerzustand befindet. 
   
-Weitere Informationen finden Sie unter [interagieren mit dem MAPI](interacting-with-the-mapi-spooler.md)-Spooler. 
+Weitere Informationen finden Sie unter [Interacting with the MAPI Spooler](interacting-with-the-mapi-spooler.md). 
   
 ## <a name="see-also"></a>Siehe auch
 

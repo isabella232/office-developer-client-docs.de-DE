@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - xlAutoRemove
 keywords:
-- xlAutoRemove-Funktion [Excel 2007]
+- xlautoremove-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: fff0de4d-605d-49e6-a5be-a000410c09d8
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -22,11 +22,11 @@ ms.locfileid: "33425477"
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Wird von Microsoft Excel aufgerufen, wenn der Benutzer die XLL während einer Excel-Sitzung mithilfe des Add-in-Managers deaktiviert. Diese Funktion wird nicht aufgerufen, wenn eine Excel-Sitzung mit dem installierten Add-In (ordnungsgemäß oder unerwartet) beendet wird.
+Wird von Microsoft Excel, wenn der Benutzer die XLL während einer Excel mit dem Add-In deaktiviert. Diese Funktion wird nicht aufgerufen, wenn eine Excel-Sitzung mit dem installierten Add-In (ordnungsgemäß oder unerwartet) beendet wird.
   
-Diese Funktion kann verwendet werden, um ein benutzerdefiniertes Dialogfeld anzuzeigen, das dem Benutzer mitteilt, dass das Add-in deaktiviert wurde, oder beispielsweise in die Registrierung zu lesen oder zu schreiben.
+Diese Funktion kann verwendet werden, um ein benutzerdefiniertes Dialogfeld anzuzeigen, das dem Benutzer mitteilt, dass das Add-In deaktiviert wurde, oder um beispielsweise aus der Registrierung zu lesen oder in die Registrierung zu schreiben.
   
-Excel benötigt keine XLL, um diese Funktion zu implementieren und zu exportieren. 
+Excel erfordert keine XLL, um diese Funktion zu implementieren und zu exportieren. 
   
 ```cs
 int WINAPI xlAutoRemove(void);
@@ -42,7 +42,7 @@ Die Implementierung dieser Funktion muss 1 zurückgeben (**Int**).
   
 ## <a name="remarks"></a>Hinweise
 
-Verwenden Sie diese Funktion, wenn Ihre XLL eine Aufgabe ausführen muss, wenn Sie vom Add-in-Manager entfernt wird.
+Verwenden Sie diese Funktion, wenn Ihre XLL eine Aufgabe abschließen muss, wenn sie vom Add-In entfernt wird.
   
 ## <a name="example"></a>Beispiel
 

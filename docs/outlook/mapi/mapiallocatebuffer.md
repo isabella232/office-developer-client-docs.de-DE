@@ -29,9 +29,9 @@ Weist einen Speicherpuffer zu.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapix. h  <br/> |
+|Headerdatei  <br/> |Mapix.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 SCODE MAPIAllocateBuffer(
@@ -44,23 +44,23 @@ SCODE MAPIAllocateBuffer(
 
  _cbSize_
   
-> in Die Größe des Puffers in Byte, der reserviert werden soll. 
+> [in] Größe des zu zugeordneten Puffers in Bytes. 
     
  _lppBuffer_
   
-> Out Zeiger auf den zurückgegebenen reservierten Puffer.
+> [out] Zeiger auf den zurückgegebenen zugewiesenen Puffer.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Aufruf war erfolgreich, und der angeforderte Speicherpuffer wurde zurückgegeben.
+> Der Aufruf ist erfolgreich und hat den angeforderten Speicherpuffer zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Während der **MAPIAllocateBuffer** -Anrufverarbeitung erwirbt die aufrufende Implementierung einen Speicherblock vom Betriebssystem. Der Arbeitsspeicherpuffer wird für eine gerade nummerierte Byte-Adresse zugewiesen. Auf Plattformen, auf denen der Zugriff auf lange ganze Zahlen effizienter ist, weist das Betriebssystem den Puffer einer Adresse zu, deren Größe in Byte ein Vielfaches von vier ist. 
+Während **der MAPIAllocateBuffer-Anrufverarbeitung** erhält die aufrufende Implementierung einen Speicherblock vom Betriebssystem. Der Speicherpuffer wird für eine byte-Adresse mit gleichmäßiger Nummer zugewiesen. Auf Plattformen, auf denen der lange ganzzahlige Zugriff effizienter ist, ordnet das Betriebssystem den Puffer einer Adresse zu, deren Größe in Bytes ein Vielfaches von vier ist. 
   
-Das Aufrufen der [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion gibt den von **MAPIAllocateBuffer**zugewiesenen Speicherpuffer frei, indem die [MAPIAllocateMore](mapiallocatemore.md) -Funktion und alle damit verknüpften Puffer aufgerufen werden, wenn der Arbeitsspeicher nicht mehr benötigt wird. 
+Durch Aufrufen der [MAPIFreeBuffer-Funktion](mapifreebuffer.md) wird der von **MAPIAllocateBuffer zugewiesene** Speicherpuffer durch Aufrufen der [MAPIAllocateMore-Funktion](mapiallocatemore.md) und mit ihr verknüpfter Puffer frei, wenn der Arbeitsspeicher nicht mehr benötigt wird. 
   
 ## <a name="see-also"></a>Siehe auch
 

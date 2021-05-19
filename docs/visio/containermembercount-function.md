@@ -25,13 +25,13 @@ Hinzugefügte Version: Visio 2010
   
 ## <a name="syntax"></a>Syntax
 
-CONTAINERMEMBERCOUNT ()
+CONTAINERMEMBERCOUNT()
   
 ### <a name="return-value"></a>Rückgabewert
 
  **Integer**
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Wenn es sich bei dem Shape nicht um einen Container handelt, gibt CONTAINERMEMBERCOUNT -1 zurück.
   

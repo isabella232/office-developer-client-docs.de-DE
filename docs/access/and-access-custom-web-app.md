@@ -1,5 +1,5 @@
 ---
-title: UND (Access Custom Web App)
+title: AND (Benutzerdefinierte Web-App access)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33426282"
 ---
-# <a name="and-access-custom-web-app"></a>UND (Access Custom Web App)
+# <a name="and-access-custom-web-app"></a>AND (Benutzerdefinierte Web-App access)
 
 Kombiniert zwei boolesche Ausdrücke und gibt TRUE zurück, wenn beide Ausdrücke TRUE sind. 
   
@@ -22,14 +22,14 @@ Kombiniert zwei boolesche Ausdrücke und gibt TRUE zurück, wenn beide Ausdrück
   
 ## <a name="syntax"></a>Syntax
 
- *Boolean_expression* **Und** *Boolean_expression* 
+ *boolean_expression* **UND** *boolean_expression* 
   
 ## <a name="return-value"></a>Rückgabewert
 
 Gibt TRUE zurück, wenn beide Ausdrücke TRUE sind.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn in einer Anweisung mehr als ein logischer Operator verwendet wird, werden die Operatoren und zuerst ausgewertet. Sie können die Reihenfolge der Auswertung mithilfe von Klammern ändern.
+Wenn in einer Anweisung mehrere logische Operatoren verwendet werden, werden die AND-Operatoren zuerst ausgewertet. Sie können die Reihenfolge der Auswertung mithilfe von Klammern ändern.
   
 

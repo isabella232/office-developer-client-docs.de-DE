@@ -21,6 +21,6 @@ ms.locfileid: "33427136"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Das **attAttachRenddata** -Attribut wird als eine **RENDDATA** -Struktur codiert, die beschreibt, wie und wo die Anlage im Nachrichtentext gerendert wird. Die **RENDDATA** -Struktur wird einfach im TNEF-Stream als **sizeof (RENDDATA)-** Byte codiert, beginnend mit dem ersten Element der **RENDDATA** -Struktur. Wenn der Wert des **dwFlags** -Elements der **RENDDATA** -Struktur auf **MAC_BINARY**festgelegt ist, werden die Daten für die folgende Anlage im MacBinary-Format gespeichert. Andernfalls werden die Anlagendaten wie üblich codiert.
+Das **attAttachRenddata-Attribut** wird als **RENDDATA-Struktur** codiert, die beschreibt, wie und wo die Anlage im Nachrichtentext gerendert wird. Die **RENDDATA-Struktur** wird einfach im TNEF-Stream als **sizeof(RENDDATA)-Bytes** codiert, beginnend mit dem ersten Element der **RENDDATA-Struktur.** Wenn der Wert des **dwFlags-Mitglieds** der **RENDDATA-Struktur** auf **MAC_BINARY** festgelegt ist, werden die Daten für die folgende Anlage im MacBinary-Format gespeichert. Andernfalls werden die Anlagendaten wie gewohnt codiert.
   
 

@@ -25,7 +25,7 @@ ms.locfileid: "33427773"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Überprüft eine Liste von MAPI-Eintrags-IDs. 
+Überprüft eine Liste der MAPI-Eintragsbezeichner. 
   
 |||
 |:-----|:-----|
@@ -43,20 +43,20 @@ BOOL FBadEntryList(
 
  _lpEntryList_
   
-> in Zeiger auf eine [entrylist](entrylist.md) -Struktur, die ein Array von Eintrags-IDs enthält, die validiert werden sollen. 
+> [in] Zeiger auf eine [ENTRYLIST-Struktur,](entrylist.md) die ein Array von Eintragsbezeichnern enthält, die überprüft werden sollen. 
     
 ## <a name="return-value"></a>Rückgabewert
 
 TRUE 
   
-> Mindestens einer der aufgeführten Eintragsbezeichner ist ungültig. 
+> Mindestens eine der aufgeführten Eintragsbezeichner ist ungültig. 
     
 FALSE 
   
 > Alle aufgeführten Eintragsbezeichner sind gültig.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **FBadEntryList** -Funktion bestimmt, ob die Eintrags-ID-Liste ordnungsgemäß generiert wurde. Ein Beispiel für einen ungültigen Bezeichner ist einer, für den der Arbeitsspeicher falsch zugeordnet wurde, oder ein Bezeichner mit einer falschen Größe. 
+Die **FBadEntryList-Funktion** bestimmt, ob die Eintragsbezeichnerliste ordnungsgemäß generiert wurde. Ein Beispiel für einen ungültigen Bezeichner ist ein Bezeichner, für den der Arbeitsspeicher falsch zugewiesen wurde, oder ein Bezeichner mit einer falschen Größe. 
   
 

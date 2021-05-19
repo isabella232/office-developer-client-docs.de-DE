@@ -1,5 +1,5 @@
 ---
-title: Festlegen einer Tabellen Position mit einem Filter
+title: Festlegen einer Tabellenposition mit einem Filter
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,17 +15,17 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33425470"
 ---
-# <a name="setting-a-table-position-with-a-filter"></a>Festlegen einer Tabellen Position mit einem Filter
+# <a name="setting-a-table-position-with-a-filter"></a>Festlegen einer Tabellenposition mit einem Filter
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Tabellen Benutzer können den Cursor in eine Zeile verschieben, die mit einem Satz von Filterkriterien übereinstimmt. Filter können auf einer Vielzahl von Richtlinien basieren, wie beispielsweise Spalten Eigenschaftswerte, Bitmasken oder unter Objekte. Filter werden in MAPI mithilfe einer [SRestriction](srestriction.md) -Struktur angegeben. 
+Tabellenbenutzer können den Cursor in eine Zeile verschieben, die einer Reihe von Filterkriterien entspricht. Filter können auf einer Vielzahl von Richtlinien basieren, z. B. Spalteneigenschaftswerte, Bitmasken oder Unterobjekte. Filter werden in MAPI mithilfe einer [SRestriction-Struktur](srestriction.md) angegeben. 
   
- **So positionieren Sie eine Tabelle auf der ersten Zeile, die den Kriterien entspricht, die in einer Einschränkung festgelegt sind**
+ **So positionieren Sie eine Tabelle in der ersten Zeile, die den in einer Einschränkung festgelegten Kriterien entspricht**
   
-- Rufen Sie die [IMAPITable:: FindRow](imapitable-findrow.md) -Methode auf. Beginnend mit der Zeile, die durch eine bestimmte Textmarke dargestellt wird, sucht **FindRow** entweder nach vorn oder rückwärts, um eine Zeile zu suchen, die den in der Einschränkung angegebenen Kriterien entspricht. **FindRow** kann für die Implementierung einer Bildlaufleiste, die auf Zeichen Zeichenfolgen basiert, anstelle von Bruchwerten hilfreich sein. Beispielsweise kann ein Client die MAPI-Implementierung von **FindRow** aufrufen, wenn er das integrierte Adressbuch durchsucht, um einen Benutzer durch Eingabe eines oder mehrerer Zeichen zu aktivieren, um den ersten Namen zu finden, der mit den angegebenen Zeichen beginnt. 
+- Rufen Sie die [IMAPITable::FindRow-Methode](imapitable-findrow.md) auf. Beginnend mit der Zeile, die durch eine bestimmte Textmarke dargestellt wird, sucht **FindRow** vorwärts oder rückwärts nach einer Zeile, die den in der Einschränkung angegebenen Kriterien entspricht. **FindRow** kann nützlich sein, um eine Bildlaufleiste zu implementieren, die auf Zeichenzeichenfolgen anstelle von Bruchwerten basiert. Beispielsweise kann ein Client die MAPI-Implementierung von **FindRow** aufrufen, wenn er das integrierte Adressbuch durchsucht, um einem Benutzer durch Eingabe eines oder mehrere Zeichen zu ermöglichen, den Vornamen zu finden, der mit den angegebenen Zeichen beginnt. 
     
 ## <a name="see-also"></a>Siehe auch
 

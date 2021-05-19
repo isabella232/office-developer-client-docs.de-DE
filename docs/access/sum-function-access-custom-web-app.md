@@ -1,5 +1,5 @@
 ---
-title: Sum-Funktion (Access Custom Web App)
+title: Sum-Funktion (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33427101"
 ---
-# <a name="sum-function-access-custom-web-app"></a>Sum-Funktion (Access Custom Web App)
+# <a name="sum-function-access-custom-web-app"></a>Sum-Funktion (benutzerdefinierte Access-Web-App)
 
 Gibt die Summe aller Werte im Ausdruck zurück.
   
@@ -23,18 +23,18 @@ Gibt die Summe aller Werte im Ausdruck zurück.
   
 ## <a name="syntax"></a>Syntax
 
- **Summe** (*Numerischer Ausdruck*) 
+ **Sum** (*NumericExpression*) 
   
-Die **Sum** -Funktion enthält das folgende Argument. 
+Die **Sum-Funktion** enthält das folgende Argument. 
   
 |**Argumentname**|**Beschreibung**|
 |:-----|:-----|
-| *Numerischer Ausdruck*  <br/> |Ein Ausdruck, der das Feld mit den numerischen Daten enthält, die Sie hinzufügen möchten, oder ein Ausdruck, der eine Berechnung mithilfe der Daten in diesem Feld ausführt. Operanden in *numericive* können den Namen eines Tabellenfelds, eine Konstante oder eine Funktion enthalten (Dies kann entweder systeminterne oder benutzerdefinierte, aber nicht eine der anderen SQL-Aggregatfunktionen sein).  <br/> |
+| *NumericExpression*  <br/> |Ein Ausdruck, der das Feld identifiziert, das die numerischen Daten enthält, die Sie hinzufügen möchten, oder ein Ausdruck, der eine Berechnung mit den Daten in diesem Feld ausführt. Operanden in *NumericExpression* können den Namen eines Tabellenfelds, einer Konstanten oder einer Funktion enthalten (die entweder systeminterne oder benutzerdefinierte, aber keine der anderen Aggregatfunktionen SQL sein kann).  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **Sum** -Funktion ignoriert Datensätze, die Nullwerte enthalten. 
+Die **Sum-Funktion** ignoriert Datensätze, die Null-Werte enthalten. 
   
-Die **Sum** -Funktion kann nur mit numerischen Spalten verwendet werden. 
+Die **Sum-Funktion** kann nur mit numerischen Spalten verwendet werden. 
   
 

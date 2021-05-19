@@ -1,5 +1,5 @@
 ---
-title: Implementieren von Standard mäßigen Formular Verben
+title: Implementieren von Standardformularverben
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,26 +15,26 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33426121"
 ---
-# <a name="implementing-standard-form-verbs"></a>Implementieren von Standard mäßigen Formular Verben
+# <a name="implementing-standard-form-verbs"></a>Implementieren von Standardformularverben
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPI definiert eine Reihe von Standardverben oder Aktionen, die ausgeführt werden, wenn ein Benutzer eine Menüauswahl vornimmt oder auf eine Schaltfläche klickt, die von allen Formular Betrachtern unterstützt werden sollte. Jedem Verb ist eine Konstante zugeordnet, die in der EXCHFORM definiert ist. H-Headerdatei. In der folgenden Tabelle sind die standardmäßigen Verben und die zugehörigen Konstanten aufgeführt:
+MAPI definiert eine Reihe von Standardverben oder Aktionen, die von allen Formularbetrachtern unterstützt werden sollen, wenn ein Benutzer eine Menüauswahl vor nimmt oder auf eine Schaltfläche klickt. Jedem Verb ist eine Konstante zur Identifikation zugeordnet, die in EXCHFORM definiert ist. H-Headerdatei. In der folgenden Tabelle sind die Standardformularverben und die zugehörigen Konstanten aufgeführt:
   
 |**Verb**|**Wert**|
 |:-----|:-----|
 |Öffnen  <br/> |EXCHIVERB_OPEN  <br/> |
-|Antworten  <br/> |EXCHIVERB_REPLYTOSENDER  <br/> |
+|Reply  <br/> |EXCHIVERB_REPLYTOSENDER  <br/> |
 |Allen antworten  <br/> |EXCHIVERB_REPLYTOALL  <br/> |
-|Weiterleiten  <br/> |EXCHIVERB_FORWARD  <br/> |
-|Print  <br/> |EXCHIVERB_PRINT  <br/> |
+|Forward  <br/> |EXCHIVERB_FORWARD  <br/> |
+|Drucken  <br/> |EXCHIVERB_PRINT  <br/> |
 |Speichern unter  <br/> |EXCHIVERB_SAVEAS  <br/> |
 |In Ordner antworten  <br/> |EXCHIVERB_REPLYTOFOLDER  <br/> |
    
-Wenn ein Benutzer ein Verb auswählt, übergibt seine Konstante in einem Aufruf an die [IMAPIForm::D overb](imapiform-doverb.md) -Methode des Formulars, um die entsprechende Aktion auszuführen. 
+Wenn ein Benutzer ein Verb aus wählt, übergeben Sie seine Konstante in einem Aufruf an die [IMAPIForm::D oVerb-Methode](imapiform-doverb.md) des Formulars, um die entsprechende Aktion durchzuführen. 
   
-Zusätzlich zum Zugreifen auf Verben über den Formular Betrachter können Benutzer manchmal direkt über das Formular auf Verben zugreifen. Einige Formularobjekte ermöglichen es dem Benutzer beispielsweise, das **Druck** -Verb aufzurufen, indem Sie mit der rechten Maustaste auf das Formular klicken und im kontextabhängigen Menü **Drucken** auswählen. 
+Neben dem Zugriff auf Verben über die Formularanzeige können Benutzer manchmal direkt über das Formular auf Verben zugreifen. Bei einigen Formularobjekten kann der Benutzer beispielsweise das **Verb Print** aufrufen, indem er mit der rechten Maustaste auf das Formular klickt und **in** einem kontextbezogenen Menü Drucken wählt. 
   
 

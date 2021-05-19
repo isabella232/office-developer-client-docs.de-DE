@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagserviceuid (-Eigenschaft
+title: PidTagServiceUid (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,13 +19,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33426527"
 ---
-# <a name="pidtagserviceuid-canonical-property"></a>Kanonische Pidtagserviceuid (-Eigenschaft
+# <a name="pidtagserviceuid-canonical-property"></a>PidTagServiceUid (kanonische Eigenschaft)
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält die [MAPIUID](mapiuid.md) -Struktur für einen Nachrichtendienst. 
+Enthält die [MAPIUID-Struktur](mapiuid.md) für einen Nachrichtendienst. 
   
 |||
 |:-----|:-----|
@@ -34,21 +34,21 @@ Enthält die [MAPIUID](mapiuid.md) -Struktur für einen Nachrichtendienst.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Profil  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Diese Eigenschaft wird von MAPI für Profile Section-Objekte berechnet. MAPI verwendet es, um alle Anbieter zu gruppieren, die zum gleichen Nachrichtendienst gehören. Diese Eigenschaft wird als Parameter für die meisten [IMsgServiceAdmin](imsgserviceadminiunknown.md) -Methoden bereitgestellt. Sie darf nicht in MAPISVC. inf angezeigt werden. 
+Diese Eigenschaft wird von MAPI für Profilabschnittsobjekte berechnet. MAPI verwendet es, um alle Anbieter zu gruppieren, die zum gleichen Nachrichtendienst gehören. Diese Eigenschaft wird als Parameter für die meisten [IMsgServiceAdmin-Methoden](imsgserviceadminiunknown.md) bereitgestellt. Sie darf nicht in Mapisvc.inf angezeigt werden. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
-### <a name="header-files"></a>Header Dateien
+### <a name="header-files"></a>Headerdateien
 
-Mapidefs. h
+Mapidefs.h
   
-> Stellt Datentypdefinitionen bereit.
+> Bietet Datentypdefinitionen.
     
-Mapitags. h
+Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -59,9 +59,9 @@ Mapitags. h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -19,16 +19,16 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33425883"
 ---
-# <a name="proptag"></a>PROP_TAG
+# <a name="prop_tag"></a>PROP_TAG
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt ein Eigenschaftentag zurück, das durch Kombinieren eines angegebenen Eigenschaftentyps und Bezeichners erstellt wurde. 
+Gibt ein Eigenschaftentag zurück, das durch Kombinieren eines angegebenen Eigenschaftentyps und bezeichners erstellt wurde. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |[SPropValue](spropvalue.md) <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |[SPropValue](spropvalue.md) <br/> |
    
 ```cpp
 PROP_TAG (ulPropType, ulPropID)
@@ -38,24 +38,24 @@ PROP_TAG (ulPropType, ulPropID)
 
 _ulPropType_
   
-> Eigenschafts für das neue Property-Tag.
+> Eigenschaftstyp für das neue Eigenschaftstag.
     
 _ulPropID_
   
-> Eigenschaftenbezeichner für das neue Property-Tag.
+> Eigenschafts-ID für das neue Eigenschaftstag.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Das **Prop\_-Tag** -Makro erstellt ein Property-Tag für eine Eigenschaft vom Typ _ulPropType_ und den in _ulPropID_angegebenen Bezeichner. Beispielsweise kann ein Property-Tag für eine Eintrags-ID wie folgt mithilfe des **PROP_TAG** -Makros erstellt werden: 
+Das **PROP \_ TAG-Makro** erstellt ein Eigenschaftentag für eine Eigenschaft vom Typ _ulPropType_ und den bezeichner, der in _ulPropID angegeben ist._ Beispielsweise kann ein Eigenschaftentag für einen Eintragsbezeichner mithilfe des PROP_TAG wie folgt erstellt werden:  
   
 ```cpp
 PROP_TAG( PT_BINARY, 0x0FFF)
 
 ```
 
-Die niedrigwertigen 16 Bits des zurückgegebenen Property-Tags enthalten den Eigenschaftentyp PT_BINARY, und die hochwertigen 16 Bits enthalten den Eigenschaftenbezeichner 0xFFFF.
+Die 16 Bit niedriger Reihenfolge des zurückgegebenen Eigenschaftstags enthalten den Eigenschaftentyp PT_BINARY, und die 16 Bit in hoher Reihenfolge enthalten den Eigenschaftenbezeichner 0xFFFF.
   
-Weitere Informationen zu Eigenschaftstags finden Sie unter [MAPI property Tags](mapi-property-tags.md).
+Weitere Informationen zu Eigenschaftstags finden Sie unter [MAPI Property Tags](mapi-property-tags.md).
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,5 @@
 ---
-title: Bewährte Methoden für das schnelle Herunterfahren
+title: Bewährte Methoden für schnelles Herunterfahren
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,25 +15,25 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33426968"
 ---
-# <a name="best-practices-for-fast-shutdown"></a>Bewährte Methoden für das schnelle Herunterfahren
+# <a name="best-practices-for-fast-shutdown"></a>Bewährte Methoden für schnelles Herunterfahren
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-In diesem Thema werden bewährte Methoden für Administratoren, MAPI-Clients und MAPI-Anbieter empfohlen, die die Windows-Registrierungseinstellungen und die schnell heruntergefahrenen Schnittstellen verwenden, um Datenverluste beim Herunterfahren des Clients zu minimieren.
+In diesem Thema werden bewährte Methoden für Administratoren, MAPI-Clients und MAPI-Anbieter empfohlen, Windows Registrierungseinstellungen und die Schnittstellen zum schnellen Herunterfahren zu verwenden, um Datenverluste beim Herunterfahren des Clients zu minimieren.
   
-- Damit ein MAPI-Client das schnelle Herunterfahren erfolgreich ausführen kann, sodass Anbieter Prozesse keinen Datenverlust verursachen, sollte der MAPI-Client zunächst die [IMAPIClientShutdown:: QueryFastShutdown](imapiclientshutdown-queryfastshutdown.md) -Methode aufrufen. Der Client sollte dann mit den Methoden [IMAPIClientShutdown:: NotifyProcessShutdown](imapiclientshutdown-notifyprocessshutdown.md) und [IMAPIClientShutdown::D ofastshutdown](imapiclientshutdown-dofastshutdown.md) basierend auf der Unterstützung des MAPI-Subsystems für schnelles Herunterfahren Vorgehen, wie durch den Rückgabewert von ** IMAPIClientShutdown:: QueryFastShutdown**. Als MAPI-Client ruft Microsoft Outlook nicht **IMAPIClientShutdown:: NotifyProcessShutdown** oder **IMAPIClientShutdown::D ofastshutdown** auf, wenn **IMAPIClientShutdown:: QueryFastShutdown** einen Fehler zurückgibt. Wenn der Administrator das schnelle Herunterfahren in der Windows-Registrierung deaktiviert hat, würde das MAPI-Subsystem MAPI_E_NO_SUPPORT an **IMAPIClientShutdown:: QueryFastShutdown**zurückgeben. In diesem Fall informiert das MAPI-Subsystem MAPI-Anbieter nicht über einen sofortigen Clientprozess-Exit. Wenn also ein MAPI-Client diesen Fehler zurückgibt, wird der Rückgabewert des Fehlers beendet, und alle externen Verweise werden getrennt, alle geladenen MAPI-Anbieter haben Datenverlust. 
+- Damit ein MAPI-Client das schnelle Herunterfahren erfolgreich ausführen kann, damit anbieterprozesse keinen Datenverlust entstehen, sollte der MAPI-Client zuerst die [IMAPIClientShutdown::QueryFastShutdown-Methode](imapiclientshutdown-queryfastshutdown.md) aufrufen. Der Client sollte dann mit den [Methoden IMAPIClientShutdown::NotifyProcessShutdown](imapiclientshutdown-notifyprocessshutdown.md) und [IMAPIClientShutdown::D oFastShutdown](imapiclientshutdown-dofastshutdown.md) basierend auf der Unterstützung des MAPI-Subsystems für schnelles Herunterfahren fortfahren, wie durch den Rückgabewert von **IMAPIClientShutdown::QueryFastShutdown angegeben.** Als MAPI-Client wird von Microsoft Outlook **nicht IMAPIClientShutdown::NotifyProcessShutdown** oder **IMAPIClientShutdown::D oFastShutdown aufgerufen,** wenn **IMAPIClientShutdown::QueryFastShutdown** einen Fehler zurückgibt. Wenn der Administrator das schnelle Herunterfahren in der Windows deaktiviert hat, würde das MAPI-Subsystem MAPI_E_NO_SUPPORT **IMAPIClientShutdown::QueryFastShutdown zurückgeben.** In diesem Fall informiert das MAPI-Subsystem die MAPI-Anbieter nicht über einen sofortigen Clientprozessabgang. Wenn daher ein MAPI-Client diesen Fehlerrücklaufcode ignoriert, mit dem schnellen Herunterfahren fortschreitet und alle externen Verweise getrennt werden, haben alle geladenen MAPI-Anbieter Datenverlust. 
     
-- MAPI-Anbieter sollten die [IMAPIProviderShutdown: IUnknown](imapiprovidershutdowniunknown.md) -Schnittstelle implementieren, um rechtzeitige und erforderliche Schritte auszuführen, um Datenverluste zu vermeiden, da externe Verweise vom Client getrennt werden, bevor der Client beendet wird. Ein Anbieter sollte alles andere verschieben, was nicht unbedingt erforderlich ist, um Daten in seinem primären Datenspeicher zu speichern. Ein Transportanbieter sollte beispielsweise unnötige Hintergrundvorgänge verschieben, die auf neue e-Mails prüfen, ein Adressbuchanbieter sollte das Herunterladen der letzten Änderungen von seinem Server hinausschieben, und ein Speicheranbieter sollte Wartungsaufgaben wie komprimieren oder indizieren. 
+- MAPI-Anbieter sollten die [IMAPIProviderShutdown : IUnknown-Schnittstelle](imapiprovidershutdowniunknown.md) implementieren, um rechtzeitige und erforderliche Schritte zur Vermeidung von Datenverlusten zu ergreifen, da der Client externe Verweise trennt, bevor der Client beendet wird. Ein Anbieter sollte alles andere verschieben, was für das Speichern von Daten in seinem primären Datenspeicher nicht von Bedenklich ist. Beispielsweise sollte ein Transportanbieter unnötige Hintergrundvorgänge verschieben, die nach neuen E-Mails suchen, ein Adressbuchanbieter sollte das Herunterladen der letzten Änderungen von seinem Server verschieben, und ein Speicheranbieter sollte Wartungsaufgaben wie die Komprimiertheit oder Indizierung verschieben. 
     
-- Benutzer, die MAPI-Clients beenden sollen, sobald Sie Sie schließen, sollten die Standard Registrierungseinstellung verwenden, die das schnelle Herunterfahren ermöglicht, es sei denn, ein Anbieter wählt aus.
+- Benutzer, für die MAPI-Clients beendet werden sollen, sobald sie sie schließen, sollten die Standardregistrierungseinstellung verwenden, die ein schnelles Herunterfahren ermöglicht, sofern sich ein Anbieter nicht abmeldet.
     
-- Wenn ein MAPI-Client **IMAPIClientShutdown::D ofastshutdown**aufruft, dürfen keine weiteren Aufrufe an MAPI vorgenommen werden, einschließlich der [MAPIUninitialize](mapiuninitialize.md) -Funktion. Der Client sollte MAPI für die restliche Lebensdauer des Clientprozesses nicht verwenden. 
+- Sobald ein MAPI-Client **IMAPIClientShutdown::D oFastShutdown** aufruft, sollte er keine weiteren Aufrufe von MAPI, einschließlich der [MAPIUninitialize-Funktion,](mapiuninitialize.md) machen. Der Client sollte MAPI für die restliche Lebensdauer des Clientprozesses nicht verwenden. 
     
-- Ein MAPI-Client sollte niemals die **IMAPIProviderShutdown** -Schnittstelle eines Anbieters direkt aufrufen. MAPI-Clients sollten immer die [IMAPIClientShutdown: IUnknown](imapiclientshutdowniunknown.md) -Schnittstelle verwenden. 
+- Ein MAPI-Client sollte niemals die **IMAPIProviderShutdown-Schnittstelle** eines Anbieters direkt aufrufen. MAPI-Clients sollten immer die [IMAPIClientShutdown : IUnknown-Schnittstelle](imapiclientshutdowniunknown.md) verwenden. 
     
-- Wenn ein MAPI-Anbieter sicherstellen muss, dass das schnelle Herunterfahren beim Laden nicht verwendet wird, sollte er die **IMAPIProviderShutdown** -Schnittstelle implementieren und MAPI_E_NO_SUPPORT für die **IMAPIProviderShutdown:: QueryFastShutdown** -Methode zurückgeben. Für MAPI-Clients wie Outlook führt dies jedoch dazu, dass der Client das schnelle Herunterfahren aufgibt und das Herunterfahren länger dauert. 
+- Wenn ein MAPI-Anbieter sicherstellen muss, dass beim Laden kein schnelles Herunterfahren verwendet wird, sollte er die **IMAPIProviderShutdown-Schnittstelle** implementieren und MAPI_E_NO_SUPPORT für die **IMAPIProviderShutdown::QueryFastShutdown-Methode** zurückgeben. Für MAPI-Clients wie Outlook verursacht dies jedoch, dass der Client das schnelle Herunterfahren auf sich nimmt und längere Zeit zum Herunterfahren benötigt. 
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -43,5 +43,5 @@ In diesem Thema werden bewährte Methoden für Administratoren, MAPI-Clients und
   
 [Übersicht über das schnelle Herunterfahren](fast-shutdown-overview.md)
   
-[Benutzeroptionen für das schnelle Herunterfahren](fast-shutdown-user-options.md)
+[Benutzeroptionen für schnelles Herunterfahren](fast-shutdown-user-options.md)
 

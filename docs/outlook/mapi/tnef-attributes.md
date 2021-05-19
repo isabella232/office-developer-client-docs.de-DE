@@ -21,6 +21,6 @@ ms.locfileid: "33427857"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Dieser Abschnitt enthält zusätzliche Informationen zu bestimmten TNEF-Attributen. Weitere Informationen zu den MAPI-Eigenschaften, denen die Attribute zugeordnet sind, finden Sie in den Referenz Einträgen für die einzelnen Eigenschaften.
+Dieser Abschnitt enthält zusätzliche Informationen zu bestimmten TNEF-Attributen. Weitere Informationen zu den MAPI-Eigenschaften, den die Attribute zugeordnet sind, finden Sie in den Referenzeinträgen für die einzelnen Eigenschaften.
   
 

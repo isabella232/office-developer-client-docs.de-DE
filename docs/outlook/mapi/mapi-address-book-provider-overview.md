@@ -19,19 +19,19 @@ ms.locfileid: "33426541"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Adressbuchanbieter behandeln den Zugriff auf Verzeichnisinformationen. Verzeichnisinformationen bestehen aus Daten für zwei Arten von Nachrichtenempfängern: einzelne Messagingbenutzer und Gruppen von Messaging Benutzern, die gemeinsam in Verteilerlisten adressiert werden. Je nach Empfängertyp und Adressbuchanbieter gibt es eine Vielzahl von Informationen, die verfügbar gemacht werden können. Alle Adressbuchanbieter speichern beispielsweise den Namen, die Adresse und den Adresstyp eines Empfängers.
+Adressbuchanbieter verarbeiten den Zugriff auf Verzeichnisinformationen. Verzeichnisinformationen bestehen aus Daten für zwei Arten von Nachrichtenempfängern: einzelne Messagingbenutzer und Gruppen von Messagingbenutzern, die häufig gemeinsam in Verteilerlisten adressiert werden. Je nach Empfängertyp und Adressbuchanbieter gibt es eine vielzahl von Informationen, die zur Verfügung stehen können. Beispielsweise speichern alle Adressbuchanbieter den Namen, die Adresse und den Adresstyp eines Empfängers.
   
-Jeder Adressbuchanbieter organisiert diese Daten mithilfe eines oder mehrerer Container. Die Anzahl und Struktur der Container hängt von der Implementierung des Adressbuch Anbieters ab. Beispielsweise kann ein Adressbuchanbieter einen einzigen Container für alle Informationen verwenden, ein anderer Container der obersten Ebene, in dem untergeordnete Speicher enthalten sind, und ein drittes kann mehrere Container auf oberster Ebene verwenden, die jeweils untergeordnete Containers enthalten. Eine Adressbuch-Containerhierarchie kann sehr tief sein; Es gibt keine Begrenzung für die Anzahl der Untercontainer, die verwendet werden können.
+Jeder Adressbuchanbieter organisiert diese Daten mithilfe eines oder mehreren Containern. Die Anzahl und Struktur der Container hängt von der Implementierung des Adressbuchanbieters ab. Ein Adressbuchanbieter kann z. B. einen einzelnen Container verwenden, um alle Informationen zu enthalten, ein anderer kann einen Container auf oberster Ebene verwenden, der Untercontainer enthält, und ein dritter kann mehrere Container auf oberster Ebene verwenden, die jeweils Untercontainer enthalten. Eine Adressbuchcontainerhierarchie kann recht tief sein. Es gibt keine Beschränkung der Anzahl von Untercontainern, die verwendet werden können.
   
-Die folgende Abbildung zeigt eine typische MAPI-Adressbuch Organisation.
+Die folgende Abbildung zeigt eine typische MAPI-Adressbuchorganisation.
   
 **Adressbuchorganisation**
   
-![Adressbuch Organisation] (media/amapi_04.gif "Adressbuch Organisation")
+![Adressbuchorganisation](media/amapi_04.gif "Adressbuchorganisation")
   
-MAPI integriert alle von den installierten Adressbuch Anbietern bereitgestellten Informationen in ein einzelnes Adressbuch und stellt eine einheitliche Ansicht für die Clientanwendung dar. In der integrierten Liste sind die Container der obersten Ebene aufgeführt, die von den einzelnen installierten Adressbuch Anbietern angezeigt werden. Die meisten Adressbuchanbieter setzen nur einige wenige Container (in der Regel eins bis drei) auf der obersten Ebene für die Aufnahme in die oberste Ebene des integrierten MAPI-Adressbuchs ein. Ein Adressbuchanbieter kann beispielsweise "alle Benutzer" und "lokale Benutzer" als zwei Container auf der obersten Ebene zur Verfügung stellen.
+MAPI integriert alle Informationen, die von den installierten Adressbuchanbietern bereitgestellt werden, in ein einzelnes Adressbuch und stellt eine einheitliche Ansicht für die Clientanwendung zur Verfügung. Die integrierte Liste zeigt die Container auf oberster Ebene an, die von jedem der installierten Adressbuchanbieter angezeigt werden. Die meisten Adressbuchanbieter machen nur wenige Container (in der Regel 1 bis 3) auf oberster Ebene verfügbar, um in die oberste Ebene des integrierten Adressbuchs mapI zu integrieren. Ein Adressbuchanbieter kann beispielsweise "Alle Benutzer" und "Lokale Benutzer" als zwei Container auf oberster Ebene zur Verfügung stellen.
   
-Die Benutzer von Clientanwendungen können die Inhalte von Adressbuch Containern anzeigen und in einigen Fällen den Inhalt ändern. Adressbuchcontainer können je nach Adressbuchanbieter mit unterschiedlichen Zugriffsebenen erstellt werden. 
+Die Benutzer von Clientanwendungen können den Inhalt von Adressbuchcontainern anzeigen und in einigen Fällen den Inhalt ändern. Adressbuchcontainer können je nach Adressbuchanbieter mit unterschiedlichen Zugriffsebenen erstellt werden. 
   
 ## <a name="see-also"></a>Siehe auch
 

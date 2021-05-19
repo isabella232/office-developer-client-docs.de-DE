@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251500
 localization_priority: Normal
 ms.assetid: 513302d3-3be8-882f-5258-95529098f95d
-description: Gibt die Quadratwurzel einer Zahl zurück.
+description: Gibt den Quadratstamm einer Zahl zurück.
 ms.openlocfilehash: f9f31b9360248f002cac74dfb87ac3b292d34620
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33425022"
 ---
 # <a name="sqrt-function"></a>WURZEL-Funktion
 
-Gibt die Quadratwurzel einer Zahl zurück. 
+Gibt den Quadratstamm einer Zahl zurück. 
   
 ## <a name="syntax"></a>Syntax
 
-SQRT (* * *Number* * *) 
+SQRT(** *number* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -34,13 +34,13 @@ SQRT (* * *Number* * *)
 
 Numeric
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn _Zahl_ negativ ist, gibt die SQRT-Funktion den fehlerwert #NUM! zurück. 
+Wenn  _Zahl_ negativ ist, gibt die SQRT-Funktion den Fehlerwert #NUM!. 
   
 ## <a name="example"></a>Beispiel
 
-SQRT (2) 
+SQRT(2) 
   
 Gibt 1,4142 zurück. 
   

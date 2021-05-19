@@ -19,7 +19,7 @@ ms.locfileid: "33424882"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erweiterte Informationen für Elemente, die in einem lokalen Speicher gelöscht wurden. Diese Informationen werden während des Status Status des [Uploads gelöscht](upload-delete-status-state.md).
+Erweiterte Informationen für Elemente, die in einem lokalen Speicher gelöscht wurden. Diese Informationen werden während des [Statusstatus zum Hochladen des Löschstatus verwendet.](upload-delete-status-state.md)
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -40,35 +40,35 @@ struct UPDELE
 
 _ulFlags_
   
-> [out]/[in] Flags zur Bestimmung des geeigneten Verhaltens beim Hochladen.
+> [out]/[in] Flags, um das entsprechende Verhalten beim Hochladen zu bestimmen.
     
   - UPD_ASSOC
     
-    - Out Element zugeordnet ist.
+    - [out] Element ist zugeordnet.
     
   - UPD_MOV
     
-    - Out Das Element wurde verschoben.
+    - [out] Element wurde verschoben.
     
   - UPD_OK 
     
-    - in Der Upload war erfolgreich. Der Client legt dies nach dem Hochladen von Informationen auf den Server fest.
+    - [in] Hochladen war erfolgreich. Der Client legt dies nach dem Hochladen von Informationen auf den Server fest.
     
   - UPD_MOVED
     
-    - in Das Element wurde erfolgreich verschoben.
+    - [in] Element wurde erfolgreich verschoben.
     
   - UPD_UPDATE
     
-    - in Quellelement als geändert markieren.
+    - [in] Markieren Sie das Quellelement als geändert.
     
   - UPD_COMMIT
     
-    - in Commit-Uploadstatus Now (Entry 0).
+    - [in] Commituploadstatus jetzt (Eintrag 0).
     
 _skey_
   
-> Out Quellschlüssel des Elements.
+> [out] Quellschlüssel des Elements.
     
 _dwReserved_
   
@@ -76,19 +76,19 @@ _dwReserved_
     
 _binChg_
   
-> Out Ändern des Schlüssels des Zielelements, wenn das Element verschoben wurde.
+> [out] Ändern Sie den Schlüssel des Zielelements, wenn das Element verschoben wurde.
     
 _binPcl_
   
-> Out Ändern der Liste des Zielelements, wenn das Element verschoben wurde.
+> [out] Ändern der Liste des Zielelements, wenn das Element verschoben wurde.
     
 _skeyDst_
   
-> Out Quellschlüssel des Zielelements, wenn das Element verschoben wurde.
+> [out] Quellschlüssel des Zielelements, wenn das Element verschoben wurde.
     
 _pupmov_
   
-> Out Zielordner Informationen, wenn das Element verschoben wurde.
+> [out] Zielordnerinformationen, wenn das Element verschoben wurde.
     
 ## <a name="see-also"></a>Siehe auch
 

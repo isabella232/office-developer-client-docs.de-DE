@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - xlFree
 keywords:
-- xlFree-Funktion [Excel 2007]
+- xlfree-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: 8ce2eef2-0138-495d-b6cb-bbb727a3cda4
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -22,7 +22,7 @@ ms.locfileid: "33424714"
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Wird verwendet, um von Microsoft Excel zugewiesene Speicherressourcen freizugeben, wenn der Rückgabewert **XLOPER**/ **XLOPER12** bei einem Aufruf von [Excel4](excel4-excel12.md), [Excel4v](excel4v-excel12v.md), [Excel12](excel4-excel12.md)oder [Excel12v](excel4v-excel12v.md)erstellt wird. Die **xlFree** -Funktion gibt den hilfsspeicher frei und setzt den Zeiger auf **null** , aber andere Teile des **XLOPER**/ -**XLOPER12**werden nicht gelöscht.
+Wird zum Freispeichern von von Microsoft Excel beim Erstellen des Rückgabewerts **XLOPER** XLOPER12 in einem Aufruf von /   [Excel4,](excel4-excel12.md) [Excel4v,](excel4v-excel12v.md) [Excel12](excel4-excel12.md)oder [Excel12v](excel4v-excel12v.md)verwendet. Die **xlFree-Funktion** gibt den Hilfsspeicher frei und setzt den Zeiger auf **NULL zurück,** zerstört aber keine anderen Teile der **XLOPER** /  **XLOPER12**.
   
 ```cs
 Excel4(xlFree, 0, n, LPXLOPER px_1, ..., LPXLOPER px_n);
@@ -31,23 +31,23 @@ Excel12(xlFree, 0, n, LPXLOPER12 px_1, ..., LPXLOPER12 px_n);
 
 ## <a name="parameters"></a>Parameter
 
- _px_1,..., px_n_
+ _px_1, ..., px_n_
   
-Mindestens ein **XLOPER**/ -**XLOPER12**, das freigegeben werden soll. In Excel-Versionen bis zu 2003 ist die maximale Anzahl von Zeigern, die übergeben werden können, 30. Ab Excel 2007 wird dieser Wert auf 255 erhöht.
+Ein oder mehrere **XLOPER** /  **XLOPER12** s, die frei werden sollen. In Excel bis 2003 beträgt die maximale Anzahl von Zeigern, die übergeben werden können, 30. Ab Excel 2007 wird diese Zahl auf 255 erhöht.
   
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
 Diese Funktion gibt keinen Wert zurück.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Sie müssen jedes **XLOPER** freigeben, das Sie als Rückgabewert aus **Excel4** oder **Excel4v** und jeder **XLOPER12** erhalten, die Sie als Rückgabewert von **Excel12** oder **Excel12v** erhalten, wenn Sie einen der folgenden Typen aufweisen: **xltypeStr **, **XltypeMulti**oder **externen xltypeRef**. Es ist immer sicher, andere Typen freizugeben, auch wenn Sie keinen zusätzlichen Speicher verwenden, solange Sie von **Excel4** oder **Excel12**.
+Sie müssen alle **XLOPER,** die Sie als Rückgabewert aus **Excel4** oder **Excel4v** erhalten, und alle **XLOPER12,** die Sie als Rückgabewert von **Excel12** oder **Excel12v** erhalten, freigeben, wenn es sich um einen der folgenden Typen handelt: **xltypeStr**, **xltypeMulti** oder **xltypeRef**. Es ist immer sicher, andere Typen frei zu machen, auch wenn sie keinen Zusätzlichen Speicher verwenden, solange Sie sie von **Excel4** oder **Excel12 erhalten haben.**
   
-Wenn Sie zu Excel einen Zeiger auf eine **XLOPER**/ -**XLOPER12** zurückgeben, die noch zu enthaltenden Excel-Arbeitsspeicher enthält, müssen Sie die **xlbitXLFree** festlegen, um sicherzustellen, dass Excel den Arbeitsspeicher freigibt. 
+Wenn Sie zu Excel einem Zeiger auf einen **XLOPER** /  **XLOPER12** zurückkehren, der weiterhin Excel zugewiesenen Arbeitsspeicher enthält, müssen Sie **xlbitXLFree** festlegen, um sicherzustellen, dass Excel den Arbeitsspeicher freilässt. 
   
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird **Get aufgerufen. Arbeitsbereich (1)** , um die Plattform zurückzugeben, auf der Excel derzeit als Zeichenfolge läuft. Der Code kopiert diese zurückgegebene Zeichenfolge zur späteren Verwendung in einen Puffer. Der Code platziert den Puffer wieder in der **XLOPER12** für die spätere Verwendung mit der Excel-Funktion. Schließlich zeigt der Code die Zeichenfolge in einem Warnungsfeld an. 
+In diesem Beispiel wird **GET aufruft. WORKSPACE(1),** um die Plattform zurück, auf der Excel derzeit als Zeichenfolge ausgeführt wird. Der Code kopiert diese zurückgegebene Zeichenfolge in einen Puffer für eine spätere Verwendung. Der Code platziert den Puffer zur späteren Verwendung mit der Excel **xlOPER12.** Schließlich zeigt der Code die Zeichenfolge in einem Warnungsfeld an. 
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   

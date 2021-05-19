@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - xlGetHwnd
 keywords:
-- xlGetHwnd-Funktion [Excel 2007]
+- xlgethwnd-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: be33b097-812b-4f5c-81be-4d9673e95b0b
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -22,7 +22,7 @@ ms.locfileid: "33425456"
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Gibt das Fensterhandle des Microsoft Excel-Fensters auf oberster Ebene zurück.
+Gibt das Fensterhandle des Fensters auf oberster Microsoft Excel zurück.
   
 ```cs
 Excel4(xlGetHwnd, LPXLOPER pxRes, 0); /* returns low part only */
@@ -35,17 +35,17 @@ Diese Funktion hat keine Argumente.
   
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-Enthält das Fensterhandle (**xltypeInt**) im Feld **Val. w** . 
+Enthält das Fensterhandle (**xltypeInt**) im **Feld val.w.** 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Diese Funktion ist nützlich, um Windows-API-Code zu schreiben.
   
-Wenn Sie diese Funktion mit [Excel4](excel4-excel12.md) oder [Excel4v](excel4v-excel12v.md)aufrufen, handelt es sich bei der zurückgegebenen XLOPER-ganzzahligen Variablen um einen signierten 16-Bit-short-int-Wert. Dies kann nur die niedrigen 16 Bits des Windows-Handles von 32-Bit enthalten. Um den hohen Anteil zu ermitteln, muss der Code alle geöffneten Fenster durchlaufen, um eine Übereinstimmung mit dem niedrigen Webpart zu suchen. Beginnend mit Excel 2007 ist die ganzzahlige Variable des **XLOPER12** ein signiertes 32-Bit int und enthält daher das gesamte handle, sodass nicht alle geöffneten Fenster durchlaufen werden müssen. 
+Wenn Sie diese Funktion mithilfe von [Excel4](excel4-excel12.md) oder [Excel4v](excel4v-excel12v.md)aufrufen, ist die zurückgegebene XLOPER-Ganzzahlvariable eine signierte 16-Bit-Short-Int. Dies kann nur die niedrigen 16 Bit des 32-Bit-Windows enthalten. Um den hohen Teil zu finden, muss Ihr Code alle geöffneten Fenster durch iterieren, die nach einer Übereinstimmung mit dem niedrigen Teil suchen. Ab Excel 2007 ist die ganzzahlige Variable des **XLOPER12** ein signiertes 32-Bit-Int und enthält daher das gesamte Handle, ohne dass alle geöffneten Fenster durch iteriert werden müssen. 
   
 ### <a name="example"></a>Beispiel
 
-Weitere Informationen finden Sie im Code für die `SAMPLES\GENERIC\GENERIC.C`fShowDialog- [Funktion](fshowdialog.md) in.
+Weitere Informationen finden Sie im Code für [die fShowDialog-Funktion](fshowdialog.md) in  `SAMPLES\GENERIC\GENERIC.C` .
   
 ## <a name="see-also"></a>Siehe auch
 

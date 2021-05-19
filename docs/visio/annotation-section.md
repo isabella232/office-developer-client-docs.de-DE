@@ -21,14 +21,14 @@ ms.locfileid: "33427423"
 Enthält Informationen zu Kommentaren, die in eine Dokumentseite eingefügt wurden. 
   
 > [!NOTE]
-> Dieser Abschnitt dient nur zum Nachverfolgen von Kommentaren beim Öffnen einer VSD-Datei in Microsoft Visio 2013 oder beim Speichern einer. vsdx-Datei im VSD-Dateiformat. Sie wird nicht zum Nachverfolgen von Kommentaren in neuen vsdx-Dokumenten in Visio 2013 verwendet. 
+> Dieser Abschnitt wird nur zum Nachverfolgen von Kommentaren verwendet, wenn Sie eine VSD-Datei in Microsoft Visio 2013 öffnen oder eine VSDX-Datei im VSD-Dateiformat speichern. Es wird nicht zum Nachverfolgen von Kommentaren in neuen VSDX-Dokumenten in Visio 2013 verwendet. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Der Abschnitt **Annotation** des ShapeSheets einer Seite enthält eine Zeile für jeden Kommentar, der einer Seite in der Zeichnung hinzugefügt wurde, unabhängig davon, ob es sich um ein Originalzeichen Blatt oder eine Markup Überlagerungs Seite handelt (eine Seite mit Markup, das von einem Prüfer zur Zeichnung hinzugefügt wurde). Informationen zu Markups, die mit Freihandeingaben oder anderen Formen anstelle von Kommentaren hinzugefügt wurden, sind im Abschnitt **Annotation** nicht enthalten. 
+Der **Abschnitt Annotation** eines ShapeSheet einer Seite enthält eine Zeile für jeden Kommentar, der einer Seite in der Zeichnung hinzugefügt wird, unabhängig davon, ob es sich um ein ursprüngliches Zeichenblatt oder ein Markupüberlagerungsblatt handelt (eine Seite mit Markup, das der Zeichnung von einem Prüfer hinzugefügt wurde). Informationen zu Markup, das mithilfe von Freihandeingaben oder anderen Formen anstelle von Kommentaren hinzugefügt wurde, sind nicht im Abschnitt **Anmerkung** enthalten. 
   
 Wenn ein ShapeSheet für eine Seite angezeigt werden soll, dürfen keine Elemente der Seite ausgewählt sein. Klicken Sie mit der rechten Maustaste auf die Seite, und klicken Sie dann auf die Option **ShapeSheet anzeigen**.
   
-Informationen zu bestimmten Bearbeiter finden Sie im Abschnitt **** Reviewer im ShapeSheet des Dokuments. 
+Informationen zu bestimmten Prüfern finden Sie im Abschnitt **Reviewer** im ShapeSheet des Dokuments. 
   
 

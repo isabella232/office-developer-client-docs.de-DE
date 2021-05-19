@@ -21,13 +21,13 @@ ms.locfileid: "33426681"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Stellt sicher, **** dass die OpenEntry-Methode vom erwarteten Exchange-Adressbuchanbieter geöffnet wird. Diese Funktion funktioniert ähnlich wie [IAddrBook::D ails](iaddrbook-details.md) , aber die **Eingabe** -Nr. wird mithilfe des von _pEmsabpUID_identifizierten Exchange-Adressbuchs geöffnet.
+Stellt sicher, **dass die OpenEntry-Methode** vom erwarteten Adressbuchanbieter Exchange geöffnet wird. Diese Funktion funktioniert ähnlich wie [IAddrBook::D etails,](iaddrbook-details.md) öffnet **jedoch entryID** mit dem Exchange, das von _pEmsabpUID_ identifiziert wird.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |abhelp. h  <br/> |
+|Headerdatei  <br/> |abhelp.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 HRESULT HrDoABDetailsWithProviderUID(
@@ -49,62 +49,62 @@ HRESULT HrDoABDetailsWithProviderUID(
 
  _pEmsabpUID_
   
-> in Ein Zeiger auf ein _emsabpUID_ , das den Exchange-Adressbuchanbieter identifiziert, der von dieser Funktion verwendet werden soll, um Details zur Eintrags-ID anzuzeigen. Wenn die ID des eingehenden Eintrags kein Exchange-Adressbuchanbieter ist, wird dieser Parameter ignoriert, und der Funktionsaufruf wirkt genau wie [IAddrBook::D ails](iaddrbook-details.md). Wenn dieser Parameter NULL oder eine NULL-MAPIUID ist, wirkt sich diese Funktion auch genau wie [IAddrBook::D ails](iaddrbook-details.md).
+> [in] Ein Zeiger auf eine _emsabpUID,_ die den Exchange identifiziert, den diese Funktion verwenden sollte, um Details zur Eintrags-ID anzuzeigen. Wenn der Bezeichner für eingehende Eingaben kein eintragsbezeichner Exchange Adressbuchanbieter ist, wird dieser Parameter ignoriert, und der Funktionsaufruf verhält sich genau wie [IAddrBook::D etails](iaddrbook-details.md). Wenn dieser Parameter NULL oder null MAPIUID ist, funktioniert diese Funktion auch genau wie [IAddrBook::D etails](iaddrbook-details.md).
     
  _pAddrBook_
   
-> in Das zum Öffnen des Eintrags Bezeichners verwendete Adressbuch. Er darf nicht NULL sein.
+> [in] Das Adressbuch, das zum Öffnen der Eintrags-ID verwendet wird. Es kann nicht NULL sein.
     
  _lpulUIParam_
   
-> Out Ein Handle für das übergeordnete Fenster für das Dialogfeld.
+> [out] Ein Handle zum übergeordneten Fenster für das Dialogfeld.
     
  _lpfnDismiss_
   
-> in Ein Zeiger auf eine Funktion, die auf dem **DISMISSMODELESS** -Prototyp basiert, oder NULL. Dieses Element gilt nur für die nicht modale Version des Dialogfelds, wie durch das festgelegte DIALOG_SDI-Flag angegeben. MAPI Ruft die **DISMISSMODELESS** -Funktion auf, wenn der Benutzer das Dialogfeld nicht modale Adresse zurückweist und einen Client darüber informiert, dass das Dialogfeld nicht mehr aktiv ist. 
+> [in] Ein Zeiger auf eine Funktion basierend auf dem **DISMISSMODELESS-Prototyp** oder NULL. Dieses Element gilt nur für die moduslose Version des Dialogfelds, wie durch das festgelegte DIALOG_SDI angegeben wird. MAPI ruft die **FUNKTION DISMISSMODELESS** auf, wenn der Benutzer das Dialogfeld "Modeless Address" schließt und einen Client informiert, der Details aufruft, dass das Dialogfeld nicht mehr aktiv ist. 
     
  _lpvDismissContext_
   
-> in Ein Zeiger auf Kontextinformationen, die an die **DISMISSMODELESS** -Funktion übergeben werden, auf die durch den _lpfnDismiss_ -Parameter verwiesen wird. Dieser Parameter gilt nur für die nicht modale Version des Dialogfelds, indem das **DIALOG_SDI** -Flag im _ulFlags_ -Parameter eingeschlossen wird. 
+> [in] Ein Zeiger auf Kontextinformationen, der an die **DISMISSMODELESS-Funktion übergeben** wird, auf die der  _lpfnDismiss-Parameter_ verweist. Dieser Parameter gilt nur für die moduslose Version  des Dialogfelds, indem das DIALOG_SDI im _ulFlags-Parameter verwendet_ wird. 
     
  _cbEntryID_
   
-> in Die Bytezahl der vom _lpEntryID_ -Parameter angegebenen Eintrags-ID. 
+> [in] Die Byteanzahl des Eintragsbezeichners, der durch den  _lpEntryID-Parameter angegeben_ wird. 
     
  _lpEntryID_
   
-> in Ein Zeiger auf die Eintrags-ID, die den zu öffnenden Adressbucheintrag darstellt.
+> [in] Ein Zeiger auf den Eintragsbezeichner, der den zu öffnende Adressbucheintrag darstellt.
     
  _lpfButtonCallback_
   
-> in Ein Zeiger auf eine Funktion, die auf dem Prototyp der **LPFNBUTTON** -Funktion basiert. Mit einer **LPFNBUTTON** -Funktion wird dem Dialogfeld Details eine Schaltfläche hinzugefügt. 
+> [in] Ein Zeiger auf eine Funktion basierend auf dem **LPFNBUTTON-Funktionsprototyp.** Eine **LPFNBUTTON-Funktion** fügt dem Dialogfeld Details eine Schaltfläche hinzu. 
     
  _lpvButtonContext_
   
-> in Ein Zeiger auf Daten, die als Parameter für die durch den _lpfButtonCallback_ -Parameter angegebene Funktion verwendet wurden. 
+> [in] Ein Zeiger auf Daten, die als Parameter für die durch den  _lpfButtonCallback-Parameter_ angegebene Funktion verwendet wurden. 
     
  _lpszButtonText_
   
-> in Ein Zeiger auf eine Zeichenfolge, die den Text enthält, der auf die hinzugefügte Schaltfläche angewendet werden soll, wenn diese Schaltfläche erweiterbar ist. Der Parameter _lpszButtonText_ sollte NULL sein, wenn eine erweiterbare Schaltfläche nicht erforderlich ist. 
+> [in] Ein Zeiger auf eine Zeichenfolge, die Text enthält, der auf die hinzugefügte Schaltfläche angewendet werden soll, wenn diese Schaltfläche erweiterbar ist. Der  _lpszButtonText-Parameter_ sollte NULL sein, wenn keine erweiterbare Schaltfläche erforderlich ist. 
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die den Texttyp für den _lpszButtonText_ -Parameter steuert. Die folgenden Flags können festgelegt werden: 
+> [in] Eine Bitmaske mit Flags, die den Texttyp für den  _lpszButtonText-Parameter_ steuert. Die folgenden Kennzeichen können festgelegt werden: 
     
 AB_TELL_DETAILS_CHANGE
   
-> Gibt an, dass Details TRUE zurückgegeben werden, wenn tatsächlich Änderungen an der Adresse vorgenommen werden. Andernfalls gibt Details FALSE zurück.
+> Gibt an, dass Details TRUE zurückgibt, wenn tatsächlich Änderungen an der Adresse vorgenommen werden. Andernfalls gibt Details FALSE zurück.
     
 DIALOG_MODAL
   
-> Zeigt die modale Version des Dialogfelds allgemeine Adresse an. Dieses Flag ist mit DIALOG_SDI gegenseitig ausschließen.
+> Zeigt die modale Version des Dialogfelds allgemeine Adresse an. Dieses Flag schließen sich gegenseitig mit DIALOG_SDI.
     
 DIALOG_SDI
   
-> Zeigt die nicht modale Version des Dialogfelds allgemeine Adresse an. Dieses Flag ist mit DIALOG_MODAL gegenseitig ausschließen.
+> Zeigt die moduslose Version des Dialogfelds allgemeine Adresse an. Dieses Flag schließen sich gegenseitig mit DIALOG_MODAL.
     
 MAPI_UNICODE
   
-> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format.
+> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Zeichenfolgen im ANSI-Format.
     
 

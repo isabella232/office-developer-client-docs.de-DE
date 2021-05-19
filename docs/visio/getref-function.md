@@ -22,17 +22,17 @@ Verweist auf eine Zelle und berechnet die Formel nicht neu, wenn sich die refere
   
 ## <a name="syntax"></a>Syntax
 
-GETREF (* * *cellName* * *) 
+GETREF(** *cellname* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _cellName_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Name der Zelle, auf die ein Verweis abgerufen werden soll.  <br/> |
+| _cellname_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Name der Zelle, auf die verwiesen werden soll.  <br/> |
    
 ## <a name="example"></a>Beispiel
 
-SETF (GETREF (PinX), 5.1) 
+SETF(GETREF(PinX),5.1) 
   
 Legt die Formel der Zelle DrehbezX auf 5,1 fest. 
   

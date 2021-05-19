@@ -39,53 +39,53 @@ HRESULT SetDefaultStore(
 
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die die Einstellung des Standardnachrichten Speichers steuert. Diese Flags schließen sich gegenseitig aus; nur eines der folgenden Flags kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die die Einstellung des Standardnachrichtenspeichers steuert. Diese Kennzeichen schließen sich gegenseitig aus. Es kann nur eines der folgenden Kennzeichen festgelegt werden:
     
 MAPI_DEFAULT_STORE
   
-> Richtet den Nachrichtenspeicher als Sitzungs Standard ein. Aktualisiert die Statustabellen Zeile des Nachrichtenspeichers, indem das STATUS_DEFAULT_STORE-Flag in der **PR_RESOURCE_FLAGS** ([pidtagresourceflags (](pidtagresourceflags-canonical-property.md))-Spalte festgelegt wird.
+> Richtet den Nachrichtenspeicher als Sitzungs standardwert ein. Aktualisiert die Statustabelle des Nachrichtenspeichers, indem STATUS_DEFAULT_STORE in der Spalte **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) festlegen.
     
 MAPI_PRIMARY_STORE
   
-> Richtet den Nachrichtenspeicher als den bei der Anmeldung zu verwendenden Speicher ein. Wenn es sich bei dem Nachrichtenspeicher nicht um den Standardspeicher handelt, sollten Clients diesen standardmäßig festlegen. Aktualisiert die Statustabellen Zeile des Nachrichtenspeichers, indem das STATUS_PRIMARY_STORE-Flag in der **PR_RESOURCE_FLAGS** -Spalte festgelegt wird. 
+> Richtet den Nachrichtenspeicher als speicher ein, der bei der Anmeldung verwendet werden soll. Wenn der Nachrichtenspeicher nicht der Standardspeicher ist, sollten Clients ihn als Standard festlegen. Aktualisiert die Statustabelle des Nachrichtenspeichers, indem das STATUS_PRIMARY_STORE in der Spalte **PR_RESOURCE_FLAGS** wird. 
     
 MAPI_SECONDARY_STORE
   
-> Richtet den Nachrichtenspeicher als den bei der Anmeldung zu verwendenden Speicher ein, wenn der primäre Nachrichtenspeicher nicht verfügbar ist. Wenn ein Client den primären Speicher nicht öffnen kann, sollte er den sekundären Speicher öffnen und als Standard festlegen. Aktualisiert die Statustabellen Zeile des Nachrichtenspeichers, indem das STATUS_SECONDARY_STORE-Flag in der **PR_RESOURCE_FLAGS** -Spalte festgelegt wird. 
+> Richtet den Nachrichtenspeicher als Speicher ein, der bei der Anmeldung verwendet werden soll, wenn der primäre Nachrichtenspeicher nicht verfügbar ist. Wenn ein Client den primären Speicher nicht öffnen kann, sollte er den sekundären Speicher öffnen und als Standard festlegen. Aktualisiert die Statustabelle des Nachrichtenspeichers, indem STATUS_SECONDARY_STORE in der Spalte **PR_RESOURCE_FLAGS** wird. 
     
 MAPI_SIMPLE_STORE_PERMANENT
   
-> Legt das STATUS_SIMPLE_STORE-Flag in der **PR_RESOURCE_FLAGS** -Eigenschaft des Nachrichtenspeichers in der Zeile Status Tabelle, Nachrichtenspeicher-Tabellenzeile und im Sitzungsprofil fest. 
+> Legt das STATUS_SIMPLE_STORE in der **PR_RESOURCE_FLAGS-Eigenschaft** des Nachrichtenspeichers in der Statustabelle, der Tabellenzeile des Nachrichtenspeichers und im Sitzungsprofil fest. 
     
 MAPI_SIMPLE_STORE_TEMPORARY
   
-> Legt das STATUS_SIMPLE_STORE-Flag in der **PR_RESOURCE_FLAGS** -Eigenschaft des Nachrichtenspeichers in der Zeile Status Tabelle und Nachrichtenspeichertabelle fest. Das Profil wird nicht geändert. 
+> Legt das STATUS_SIMPLE_STORE in der PR_RESOURCE_FLAGS-Eigenschaft des Nachrichtenspeichers in der Zeile "Statustabelle" und "Nachrichtenspeichertabelle" fest.  Das Profil wird nicht geändert. 
     
  _cbEntryID_
   
-> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID_ -Parameter verwiesen wird. 
+> [in] Die Byteanzahl im Eintragsbezeichner, auf den der  _lpEntryID-Parameter_ verweist. 
     
  _lpEntryID_
   
-> in Ein Zeiger auf die Eintrags-ID des Nachrichtenspeichers, der als Standard verwendet werden soll. Wenn ein Client in _LPENTRYID_NULL übergibt, wird kein Nachrichtenspeicher als Standard ausgewählt.
+> [in] Ein Zeiger auf den Eintragsbezeichner des Nachrichtenspeichers, der als Standard vorgesehen ist. Wenn ein Client NULL in  _lpEntryID übergibt,_ wird kein Nachrichtenspeicher als Standard ausgewählt.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Aufruf war erfolgreich, und der erwartete Wert oder die Werte wurden zurückgegeben.
+> Der Aufruf war erfolgreich und hat den erwarteten Wert oder die erwarteten Werte zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Mit der **IMAPISession:: SetDefaultStore** -Methode wird ein Nachrichtenspeicher als einer der folgenden festgelegt: 
+Die **IMAPISession::SetDefaultStore-Methode** richtet einen Nachrichtenspeicher als einen der folgenden Methoden ein: 
   
-- Der standardmäßige Nachrichtenspeicher für die Sitzung.
+- Der Standardnachrichtenspeicher für die Sitzung.
     
 - Der primäre Nachrichtenspeicher für die Sitzung.
     
 - Der sekundäre Nachrichtenspeicher für die Sitzung.
     
-Zum Einrichten eines Nachrichtenspeichers als Standard muss für den Nachrichtenspeicher die folgenden Flags in der **PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md))-Eigenschaft festgelegt sein:
+Um einen Nachrichtenspeicher als Standard einrichten zu können, muss der Nachrichtenspeicher die folgenden Flags in seiner **PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md)) -Eigenschaft festgelegt haben:
   
 - STORE_SUBMIT_OK
     
@@ -95,15 +95,15 @@ Zum Einrichten eines Nachrichtenspeichers als Standard muss für den Nachrichten
     
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Sie können den standardmäßigen Nachrichtenspeicher für die Sitzung bestimmen, indem Sie die Statustabelle abrufen und nach der Einstellung des STATUS_DEFAULT_STORE-Flags in der **PR_RESOURCE_FLAGS** -Spalte suchen. Die Zeile mit dieser Einstellung stellt den Nachrichtenspeicher dar, der als Sitzungs Standard festgelegt ist. 
+Sie können den Standardnachrichtenspeicher für die Sitzung ermitteln, indem Sie die Statustabelle abrufen und nach der Einstellung des STATUS_DEFAULT_STORE in der Spalte **PR_RESOURCE_FLAGS** suchen. Die Zeile mit dieser Einstellung stellt den Nachrichtenspeicher dar, der als Sitzungs standardwert festgelegt ist. 
   
-Wenn das MAPI_DEFAULT_STORE-oder das MAPI_SIMPLE_STORE_PERMANENT-Flag festgelegt ist, aktualisiert MAPI das Profil, die Nachrichtenspeichertabelle und die Statustabelle. 
+Wenn entweder das MAPI_DEFAULT_STORE oder das MAPI_SIMPLE_STORE_PERMANENT festgelegt ist, aktualisiert MAPI das Profil, die Nachrichtenspeichertabelle und die Statustabelle. 
   
-Bei jeder Änderung der Standardeinstellung für den Nachrichtenspeicher werden die folgenden Benachrichtigungen generiert:
+Wenn eine Änderung an der Standardeinstellung für den Nachrichtenspeicher vorgenommen wird, werden die folgenden Benachrichtigungen generiert:
   
-- Für jede betroffene Zeile in der Nachrichtenspeicher-und Statustabelle wird eine **fnevTableModified** -Ereignisbenachrichtigung ausgegeben. 
+- Für jede betroffene Zeile im Nachrichtenspeicher und in der Statustabelle wird eine **fnevTableModified-Ereignisbenachrichtigung** ausgegeben. 
     
-- Eine interne Benachrichtigung wird an den MAPI-Spooler ausgegeben. Vorgänge, die bereits ausgeführt werden, werden ohne Änderung abgeschlossen. neue Vorgänge, die den standardmäßigen Nachrichtenspeicher betreffen, wie das Herunterladen von Nachrichten, werden für den neuen Standardspeicher verarbeitet.
+- Eine interne Benachrichtigung wird an den MAPI-Spooler ausgegeben. Vorgänge, die bereits ausgeführt werden, werden ohne Änderung abgeschlossen. Neue Vorgänge, die den Standardnachrichtenspeicher betreffen, z. B. das Herunterladen von Nachrichten, werden für den neuen Standardspeicher verarbeitet.
     
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -111,15 +111,15 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MainDlg. cpp  <br/> |CMainDlg:: OnSetDefaultStore  <br/> |MFCMAPI verwendet die **IMAPISession:: SetDefaultStore** -Methode, um den ausgewählten Speicher als Standardspeicher festzulegen.  <br/> |
+|MainDlg.cpp  <br/> |CMainDlg::OnSetDefaultStore  <br/> |MFCMAPI verwendet die **IMAPISession::SetDefaultStore-Methode,** um den ausgewählten Speicher als Standardspeicher zu festlegen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Kanonische Pidtagresourceflags (-Eigenschaft](pidtagresourceflags-canonical-property.md)
+[PidTagResourceFlags (kanonische Eigenschaft)](pidtagresourceflags-canonical-property.md)
   
-[Kanonische PidTagStoreSupportMask-Eigenschaft](pidtagstoresupportmask-canonical-property.md)
+[PidTagStoreSupportMask (kanonische Eigenschaft)](pidtagstoresupportmask-canonical-property.md)
   
 [TABLE_NOTIFICATION](table_notification.md)
   

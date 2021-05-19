@@ -20,21 +20,21 @@ ms.locfileid: "33426485"
 
 Legt den Abstand in Seiteneinheiten fest, den der Schatten eines Shapes auf horizontaler Ebene vom Shape entfernt ist.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Dieser Wert entspricht dem Wert der Einstellung **X-Abstand** im Dialogfeld **Schatten** (klicken Sie auf der Registerkarte **Start** in der Gruppe **Shape** auf **Schatten**, und klicken Sie dann auf **Schattenoptionen**).
   
-Wenn Sie einen Verweis auf die Zelle Zelle ShapeShdwOffsetX aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle ShapeShdwOffsetX anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Zelle ShapeShdwOffsetX  <br/> |
+| Zellenname:  <br/> | ShapeShdwOffsetX  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle ShapeShdwOffsetX aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Um einen Verweis auf die Zelle ShapeShdwOffsetX nach Index aus einem Programm zu erhalten, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowFill** <br/> |
 | Zellenindex:  <br/> |**visFillShdwOffsetX** <br/> |
    

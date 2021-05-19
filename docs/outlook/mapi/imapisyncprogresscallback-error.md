@@ -25,7 +25,7 @@ ms.locfileid: "33424931"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Stellt Details bereit, die im Dialogfeld senden/empfangen angezeigt werden. Wenn während der Synchronisierung Fehler auftreten, ruft der Informationsspeicher Anbieter diese Funktion auf.
+Enthält Details, die im Dialogfeld Senden/Empfangen angezeigt werden. Wenn während der Synchronisierung Fehler auftreten, ruft der Speicheranbieter diese Funktion auf.
   
 ```cpp
 HRESULT Error(
@@ -42,7 +42,7 @@ HRESULT Error(
     
  **pwcszErrorStr**
   
-> Ein Zeiger auf die Zeichenfolge, die mit dem Fehler verknüpft ist, der angezeigt werden soll.
+> Ein Zeiger auf die Zeichenfolge, die dem angezeigten Fehler zugeordnet ist.
     
 ## <a name="return-value"></a>Rückgabewert
 

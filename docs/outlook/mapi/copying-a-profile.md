@@ -21,18 +21,18 @@ ms.locfileid: "33424728"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine Möglichkeit zum Erstellen eines Profils besteht darin, aus einem vorhandenen Profil zu kopieren und die erforderlichen Nachrichtendienste und Dienstanbieter zu ändern. Zum Kopieren eines Profils muss ein Profilverwaltungsobjekt verwendet werden, das von MAPI über die [MAPIAdminProfiles](mapiadminprofiles.md) -Funktion bereitgestellt wird. 
+Eine Möglichkeit zum Erstellen eines Profils ist das Kopieren aus einem vorhandenen Profil und das Ändern der erforderlichen Nachrichtendienste und Dienstanbieter. Das Kopieren eines Profils umfasst die Verwendung eines Profilverwaltungsobjekts, das von MAPI über die [MAPIAdminProfiles-Funktion bereitgestellt](mapiadminprofiles.md) wird. 
   
  **So kopieren Sie ein Profil**
   
-1. Rufen Sie **MAPIAdminProfiles** auf, um einen **IProfAdmin** -Schnittstellenzeiger abzurufen. 
+1. Rufen **Sie MAPIAdminProfiles auf,** um einen **IProfAdmin-Schnittstellenzeiger** abzurufen. 
     
-2. Aufrufen von [IProfAdmin::](iprofadmin-getprofiletable.md) getprofilable für den Zugriff auf die Profiltabelle. 
+2. Rufen [Sie IProfAdmin::GetProfileTable auf,](iprofadmin-getprofiletable.md) um auf die Profiltabelle zu zugreifen. 
     
-3. Erstellen Sie eine Eigenschaftseinschränkung mit einer [SPropertyRestriction](spropertyrestriction.md) -Struktur, die **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) mit dem Namen des zu kopierenden Profils entspricht. 
+3. Erstellen Sie eine Eigenschaftseinschränkung mit [einer SPropertyRestriction-Struktur,](spropertyrestriction.md) um PR_DISPLAY_NAME **(** [PidTagDisplayName](pidtagdisplayname-canonical-property.md)) mit dem Namen des zu kopierenden Profils zu übereinstimmen. 
     
-4. Rufen Sie [IMAPITable:: FindRow](imapitable-findrow.md) auf, um die entsprechende Zeile in der Profiltabelle zu suchen. 
+4. Rufen [Sie IMAPITable::FindRow auf,](imapitable-findrow.md) um die entsprechende Zeile in der Profiltabelle zu finden. 
     
-5. Rufen Sie [IProfAdmin:: CopyProfile](iprofadmin-copyprofile.md)auf, und übergeben Sie den Wert der **PR_DISPLAY_NAME** -Spalte als _lpszOldProfileName_ -Parameter. 
+5. Rufen [Sie IProfAdmin::CopyProfile](iprofadmin-copyprofile.md)auf, und übergeben Sie den Wert der **PR_DISPLAY_NAME** als _lpszOldProfileName-Parameter._ 
     
 

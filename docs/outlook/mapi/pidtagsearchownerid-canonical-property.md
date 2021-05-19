@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagsearchownerid (-Eigenschaft
+title: PidTagSearchOwnerId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,23 +15,23 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33426492"
 ---
-# <a name="pidtagsearchownerid-canonical-property"></a>Kanonische Pidtagsearchownerid (-Eigenschaft
+# <a name="pidtagsearchownerid-canonical-property"></a>PidTagSearchOwnerId (kanonische Eigenschaft)
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält die Prozess-ID des Prozesses, der Benachrichtigungen an den Indexer über Objekte sendet, die für die Indizierung bereit sind.
+Enthält die Prozess-ID des Prozesses, der Benachrichtigungen über indizierungsbereite Objekte an den Indexer sendet.
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_SEARCH_OWNER_ID  <br/> |
-|Verf�gbar gemacht von:  <br/> |Nachrichtenspeicherobjekt  <br/> |
+|Verf�gbar gemacht von:  <br/> |Message store-Objekt  <br/> |
 |Kennung:  <br/> |0x3419  <br/> |
-|Eigenschafts:  <br/> |PT_LONG  <br/> |
-|Property-Tag:  <br/> |0x34190003  <br/> |
-|Access  <br/> |Schreibgeschützt  <br/> |
+|Eigenschaftstyp:  <br/> |PT_LONG  <br/> |
+|Eigenschaftstag:  <br/> |0x34190003  <br/> |
+|Zugriff:  <br/> |Schreibgeschützt  <br/> |
    
 

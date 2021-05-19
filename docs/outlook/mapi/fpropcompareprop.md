@@ -27,9 +27,9 @@ Vergleicht zwei Eigenschaftswerte mit einem angegebenen relationalen Operator.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 BOOL FPropCompareProp(
@@ -43,15 +43,15 @@ BOOL FPropCompareProp(
 
 _lpSPropValue1_
   
-> in Zeiger auf eine [SPropValue](spropvalue.md) -Struktur, die den ersten Eigenschaftswert für den Vergleich definiert. 
+> [in] Zeiger auf eine [SPropValue-Struktur,](spropvalue.md) die den ersten Eigenschaftswert für den Vergleich definiert. 
     
 _ulRelOp_
   
-> in Der relationale Operator, der im Vergleich verwendet werden soll. Informationen zu zulässigen Werten finden Sie in der [SComparePropsRestriction](scomparepropsrestriction.md) -Struktur. 
+> [in] Der relationale Operator, der im Vergleich verwendet werden soll. Zulässige Werte finden Sie in der [SComparePropsRestriction-Struktur.](scomparepropsrestriction.md) 
     
 _lpSPropValue2_
   
-> in Zeiger auf eine **SPropValue** -Struktur, die den zweiten Eigenschaftswert für den Vergleich definiert. 
+> [in] Zeiger auf eine **SPropValue-Struktur,** die den zweiten Eigenschaftswert für den Vergleich definiert. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -63,10 +63,10 @@ FALSE
   
 > Die Eigenschaftswerte erfüllen nicht die angegebene Beziehung.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die Vergleichsmethode hängt von den Eigenschaftentypen ab, die in den [SPropValue](spropvalue.md) -Eigenschaftsdefinitionen angegeben sind. Die **FPropCompareProp** -und [FPropContainsProp](fpropcontainsprop.md) -Funktionen können verwendet werden, um Einschränkungen für das Generieren einer Tabelle vorzubereiten. 
+Die Vergleichsmethode hängt von den in den [SPropValue-Eigenschaftsdefinitionen angegebenen Eigenschaftstypen](spropvalue.md) ab. Die **Funktionen FPropCompareProp** und [FPropContainsProp](fpropcontainsprop.md) können verwendet werden, um Einschränkungen für das Generieren einer Tabelle vorzubereiten. 
   
-Die Reihenfolge des Vergleichs ist _lpSPropValue1_, _ ulRelOp _, _ lpSPropValue2 _. Wenn die Eigenschaftentypen der zu vergleichenden Eigenschaftswerte nicht übereinstimmen, gibt die **FPropCompareProp** -Funktion false zurück. 
+Die Reihenfolge des Vergleichs ist  _lpSPropValue1_, _ ulRelOp _, _ lpSPropValue2 _. Wenn die Eigenschaftstypen der zu vergleichende Eigenschaftswerte nicht übereinstimmen, gibt **die FPropCompareProp-Funktion** FALSE zurück. 
   
 

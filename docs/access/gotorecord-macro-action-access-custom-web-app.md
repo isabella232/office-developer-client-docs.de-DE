@@ -16,7 +16,7 @@ ms.locfileid: "33424896"
 ---
 # <a name="gotorecord-macro-action-access-custom-web-app"></a>GoToRecord-Makroaktion (benutzerdefinierte Access-Web-App)
 
-Sie können die **GoToRecord** -Aktion verwenden, um den angegebenen Datensatz zum aktuellen Datensatz in einer Ansicht zu machen. 
+Sie können die **GoToRecord-Aktion** verwenden, um den angegebenen Datensatz zum aktuellen Datensatz in einer Ansicht zu machen. 
   
 > [!IMPORTANT]
 > Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
@@ -27,6 +27,6 @@ Die **GeheZuDatensatz**-Aktion hat die folgenden Argumente.
   
 |**Aktionsargument**|**Beschreibung**|
 |:-----|:-----|
-|**Record** <br/> |Der Datensatz, der zum aktuellen Datensatz werden soll. Wählen Sie **Previous**, **Next**, **First**oder **Last**aus. Die Standardeinstellung ist **Nächster**.  <br/> |
+|**Record** <br/> |Der Datensatz, der zum aktuellen Datensatz werden soll. Wählen **Sie Zurück**, **Weiter**, **First** oder **Last aus.** Die Standardeinstellung ist **Nächster**.  <br/> |
    
 

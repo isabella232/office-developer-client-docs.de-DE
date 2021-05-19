@@ -1,5 +1,5 @@
 ---
-title: Status "handsofffromnormal-Status
+title: HandsOffFromNormal-Status
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,25 +15,25 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33426471"
 ---
-# <a name="handsofffromnormal-state"></a>Status "handsofffromnormal-Status
+# <a name="handsofffromnormal-state"></a>HandsOffFromNormal-Status
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Der Status "handsofffromnormal-Zustand ist dem [HandsOffAfterSave](handsoffaftersave-state.md) -Status sehr ähnlich. Sie ist Teil des Prozesses zum Speichern des Inhalts eines Formulars in einem permanenten Speicher. Wenn Sie in diesem Zustand sind, sollte das Form-Objekt keine Änderungen an den in-Memory-Kopien von Werten der Eigenschaften der Nachricht vornehmen, da es möglicherweise keine weitere Möglichkeit gibt, diese Änderungen zu speichern. In der folgenden Tabelle werden zulässige Übergänge vom Status "handsofffromnormal-Status beschrieben. 
+Der Status HandsOffFromNormal ist dem Status [HandsOffAfterSave sehr](handsoffaftersave-state.md) ähnlich. Es ist Teil des Prozesses zum Speichern des Inhalts eines Formulars in einem dauerhaften Speicher. In diesem Zustand sollte das Formularobjekt keine Änderungen an den Speicherkopien der Werte der Eigenschaften der Nachricht vornehmen, da es möglicherweise keine weitere Möglichkeit gibt, diese Änderungen zu speichern. In der folgenden Tabelle werden zulässige Übergänge vom Status HandsOffFromNormal beschrieben. 
   
-|IPersistMessage * *-Methode * *|**Aktion**|**Neuer Status**|
+|IPersistMessage**-Methode**|**Action**|**Neuer Status**|
 |:-----|:-----|:-----|
-|[IPersistMessage:: SaveCompleted](ipersistmessage-savecompleted.md) (_pMessage! =_ null)  <br/> |Ersetzen Sie die Nachricht des Nachrichtenobjekts durch _pMessage_, wobei es sich um die Ersetzung der Nachricht handelt, die durch den vorherigen Aufruf von [IPersistMessage:: HandsOffMessage](ipersistmessage-handsoffmessage.md)widerrufen wurde. Die Daten in der neuen Nachricht sind mit Sicherheit identisch mit der Nachricht. Die Nachricht sollte nicht als sauber gekennzeichnet werden, noch sollte [IMAPIViewAdviseSink::](imapiviewadvisesink-onsaved.md) onsaved nach diesem Aufruf aufgerufen werden. Wenn der **SaveCompleted** -Aufruf erfolgreich ist, geben Sie den [normalen](normal-state.md) Status ein. Andernfalls bleiben Sie im Status "handsofffromnormal-Zustand.  <br/> |Normal oder Status "handsofffromnormal  <br/> |
-|**IPersistMessage:: SaveCompleted** (_pMessage = =_ null)  <br/> |Legen Sie den letzten Fehler auf E_UNEXPECTED.  <br/> |Status "handsofffromnormal  <br/> |
-|**HandsOffMessage**, [IPersistMessage:: Save](ipersistmessage-save.md), [IPersistMessage:: InitNew](ipersistmessage-initnew.md)oder [IPersistMessage:: Laden](ipersistmessage-load.md) <br/> |Legen Sie den letzten Fehler auf E_UNEXPECTED.  <br/> |Status "handsofffromnormal  <br/> |
-|[IPersistMessage::GetLastError](ipersistmessage-getlasterror.md) <br/> |Zurückgeben des letzten Fehlers.  <br/> |Status "handsofffromnormal  <br/> |
-|Andere [IPersistMessage: IUnknown](ipersistmessageiunknown.md) -Methoden oder Methoden von anderen Schnittstellen  <br/> |Legen Sie den letzten Fehler auf E_UNEXPECTED.  <br/> |Status "handsofffromnormal  <br/> |
+|[IPersistMessage::SaveCompleted](ipersistmessage-savecompleted.md)(_pMessage !=_ NULL)  <br/> |Ersetzen Sie die Nachricht des Nachrichtenobjekts durch  _pMessage_. Dies ist der Ersatz für die Nachricht, die durch den vorherigen Aufruf von [IPersistMessage::HandsOffMessage](ipersistmessage-handsoffmessage.md)widerrufen wurde. Die Daten in der neuen Nachricht sind garantiert dieselben wie in der widerrufenen Nachricht. Die Nachricht sollte nicht als "clean" gekennzeichnet werden, und nach diesem Aufruf sollte [auch nicht IMAPIViewAdviseSink::OnSaved](imapiviewadvisesink-onsaved.md) aufgerufen werden. Wenn der **SaveCompleted-Aufruf** erfolgreich ist, geben Sie den Status [Normal](normal-state.md) ein. Bleiben Sie andernfalls im Status HandsOffFromNormal.  <br/> |Normal oder HandsOffFromNormal  <br/> |
+|**IPersistMessage::SaveCompleted**(_pMessage ==_ NULL)  <br/> |Legen Sie den letzten Fehler auf E_UNEXPECTED.  <br/> |HandsOffFromNormal  <br/> |
+|**HandsOffMessage**, [IPersistMessage::Save](ipersistmessage-save.md), [IPersistMessage::InitNew](ipersistmessage-initnew.md)oder [IPersistMessage::Load](ipersistmessage-load.md) <br/> |Legen Sie den letzten Fehler auf E_UNEXPECTED.  <br/> |HandsOffFromNormal  <br/> |
+|[IPersistMessage::GetLastError](ipersistmessage-getlasterror.md) <br/> |Gibt den letzten Fehler zurück.  <br/> |HandsOffFromNormal  <br/> |
+|Andere [IPersistMessage : IUnknown-Methoden](ipersistmessageiunknown.md) oder -Methoden aus anderen Schnittstellen  <br/> |Legen Sie den letzten Fehler auf E_UNEXPECTED.  <br/> |HandsOffFromNormal  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Formular Status](form-states.md)
+[Formularzustände](form-states.md)
 

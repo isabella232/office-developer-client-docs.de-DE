@@ -21,21 +21,21 @@ ms.locfileid: "33425932"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Formularserver Implementierer sollten die folgende Abfolge von Methoden aufrufen zu ihren Formularserver-und Formularobjekten erwarten, wenn eine Clientanwendung eine Nachricht lädt:
+Die Implementierung von Formularservern sollte die folgende Abfolge von Methodenaufrufen an ihren Formularserver und Formularobjekte erwarten, wenn eine Clientanwendung eine Nachricht lädt:
   
-1. Die Clientanwendung öffnet den Formular-Manager mit einem Aufruf der [MAPIOpenFormMgr](mapiopenformmgr.md) -Funktion. 
+1. Die Clientanwendung öffnet den Formular-Manager mit einem Aufruf der [MAPIOpenFormMgr-Funktion.](mapiopenformmgr.md) 
     
-2. Die Clientanwendung Ruft die [IMAPIFormMgr:: LoadForm](imapiformmgr-loadform.md) -Methode auf, die ein Objekt mit [IMAPIForm](imapiformiunknown.md)zurückgibt. Der Formular-Manager kann jetzt veröffentlicht werden, wenn er nicht für weitere Formular Aktivierungen verwendet wird. Beachten Sie, dass ein Aufruf von **LoadForm** möglicherweise einige Zeit in Anspruch nimmt, da der Formular-Manager die ausführbaren Dateien des Formular Servers möglicherweise installieren muss, bevor Sie fortfahren. 
+2. Die Clientanwendung ruft die [IMAPIFormMgr::LoadForm-Methode](imapiformmgr-loadform.md) auf, die ein Objekt mit [IMAPIForm zurückgibt.](imapiformiunknown.md) Der Formular-Manager kann jetzt freigegeben werden, wenn er nicht für weitere Formularaktivierungen verwendet wird. Beachten Sie, dass ein Aufruf von **LoadForm** einige Zeit dauern kann, da der Formular-Manager möglicherweise die ausführbaren Dateien des Formularservers installieren muss, bevor er fortfahren kann. 
     
-3. Optional kann die Clientanwendung [IMAPIViewContext](imapiviewcontextiunknown.md) vorbereiten, um Vorgänge zu steuern, die dazu führen können, dass das Formularobjekt die vorherige oder nächste Nachricht im Ordner lädt. Die Clientanwendung kann die [IMAPIForm::](imapiform-setviewcontext.md) setviewcontext-Methode verwenden, um den Standard Ansichtskontext zu ändern, der im **LoadForm** -Aufruf festgelegt wurde. 
+3. Optional kann die Clientanwendung [IMAPIViewContext](imapiviewcontextiunknown.md) vorbereiten, um Vorgänge zu steuern, die dazu führen können, dass das Formularobjekt die vorherige oder nächste Nachricht in den Ordner laden kann. Die Clientanwendung kann die [IMAPIForm::SetViewContext-Methode](imapiform-setviewcontext.md) verwenden, um den Standardansichtskontext zu ändern, der im **LoadForm-Aufruf festgelegt** wurde. 
     
-4. Die Clientanwendung Ruft die [IPersistMessage:: Laden](ipersistmessage-load.md) -Methode auf, um Nachrichtendaten in das Form-Objekt zu laden. 
+4. Die Clientanwendung ruft die [IPersistMessage::Load-Methode](ipersistmessage-load.md) auf, um Nachrichtendaten in das Formularobjekt zu laden. 
     
-5. Die Clientanwendung Ruft [IMAPIForm::D overb](imapiform-doverb.md) auf, um das Open-Verb aufzurufen, wobei der optionale [IMAPIViewContext](imapiviewcontextiunknown.md) -Schnittstellenzeiger übergeben wird. 
+5. Die Clientanwendung ruft [IMAPIForm::D oVerb](imapiform-doverb.md) auf, um das geöffnete Verb auf aufruft, und übergeben dabei den optionalen [IMAPIViewContext-Schnittstellenzeiger.](imapiviewcontextiunknown.md) 
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Formular Server interAktionen](form-server-interactions.md)
+[Formularserverinteraktionen](form-server-interactions.md)
 

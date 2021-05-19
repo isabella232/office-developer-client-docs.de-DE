@@ -21,7 +21,7 @@ ms.locfileid: "33426807"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Quellschlüssel für ein Outlook-Element.
+Quellschlüssel für ein Outlook Element.
   
 ## <a name="quick-info"></a>QuickInfo
 

@@ -1,5 +1,5 @@
 ---
-title: Sicherstellen einer Thread sicheren Benachrichtigung
+title: Sicherstellen einer Thread-Safe Benachrichtigung
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,14 +15,14 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33424847"
 ---
-# <a name="ensuring-a-thread-safe-notification"></a>Sicherstellen einer Thread sicheren Benachrichtigung
+# <a name="ensuring-a-thread-safe-notification"></a>Sicherstellen einer Thread-Safe Benachrichtigung
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Wenn Ihr Client auf einer Multithread-Plattform ausgeführt wird, müssen Sie möglicherweise sicherstellen, dass Aufrufe an Ihre [IMAPIAdviseSink:: OnNotify](imapiadvisesink-onnotify.md) -Methoden in einem bestimmten Thread stattfinden. Da Aufrufe von **OnNotify** in der Regel in einem beliebigen Thread auftreten können, ist es möglich, Benachrichtigungen zu unerwarteten und unerwünschten Threads zu erhalten, was zu Fehlern führt, die schwierig zu Debuggen sind. 
+Wenn Ihr Client auf einer Multithreadplattform ausgeführt wird, müssen Sie möglicherweise sicher sein, dass Aufrufe ihrer [IMAPIAdviseSink::OnNotify-Methoden](imapiadvisesink-onnotify.md) für einen bestimmten Thread ausgeführt werden. Da Aufrufe von **OnNotify** in der Regel in jedem Thread auftreten können, ist es möglich, Benachrichtigungen zu unerwarteten und unerwünschten Threads zu erhalten, was zu Fehlern führt, die schwer zu debuggen sind. 
   
-Um sicherzustellen, dass Aufrufe von onNotify für eine bestimmte Benachrichtigung für den gleichen Thread ausgeführt werden, der für den **Advise** -Aufruf verwendet wurde, rufen Sie [HrThisThreadAdviseSink](hrthisthreadadvisesink.md) auf, bevor **Sie** **Advise**aufrufen. * * * * HrThisThreadAdviseSink * * * * erstellt ein neues Advise-Senke-Objekt aus dem Advise-Senke-Objekt. Führen Sie dieses neue Objekt im Aufruf von **Advise**aus. Alle Clients mit Advise-Senke-Objekten, die möglicherweise nicht außerhalb des Kontexts eines bestimmten Threads funktionieren, sollten immer Advise-Senke-Objekte registrieren, die mit **HrThisThreadAdviseSink**erstellt wurden.
+Rufen Sie [HrThisThreadAdviseSink](hrthisthreadadvisesink.md) auf, bevor Sie Advise aufrufen, um zu gewährleisten, dass Anrufe an **OnNotify** für eine bestimmte Benachrichtigung im selben Thread ausgeführt werden, der für den **Anruf "Advise"** verwendet **wurde.** ** **HrThisThreadAdviseSink**** erstellt ein neues Advise Sink-Objekt aus Ihrem Advise Sink-Objekt. Übergeben Sie dieses neue Objekt im Aufruf von **Advise**. Alle Clients mit beratenden Sinkobjekten, die möglicherweise nicht außerhalb des Kontexts eines bestimmten Threads funktionieren, sollten immer mit **HrThisThreadAdviseSink** erstellte Ratensenkenobjekte registrieren.
   
 

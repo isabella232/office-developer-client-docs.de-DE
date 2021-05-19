@@ -23,8 +23,8 @@ ms.locfileid: "33425393"
   
  **So kopieren Sie einen Nachrichtendienst in ein Profil**
   
-- Rufen Sie [IMsgServiceAdmin:: CopyMsgService](imsgserviceadmin-copymsgservice.md)auf.
+- Rufen [Sie IMsgServiceAdmin::CopyMsgService auf.](imsgserviceadmin-copymsgservice.md)
     
-Wenn ein Nachrichtendienst kopiert wird, wird die neue Instanz des Diensts genau auf die gleiche Weise konfiguriert wie das Original. Manchmal gibt **CopyMsgService** den Fehler MAPI_E_ACCESS_DENIED zurück. Die häufigste Ursache für diesen Fehler ist ein Nachrichtendienst, der nicht dupliziert werden kann. 
+Wenn ein Nachrichtendienst kopiert wird, wird die neue Instanz des Diensts auf die gleiche Weise wie das Original konfiguriert. Manchmal **gibt CopyMsgService** den Fehler MAPI_E_ACCESS_DENIED. Die häufigste Ursache für diese Fehlerrückmeldung ist ein Nachrichtendienst, der sich nicht duplizieren lässt. 
   
 

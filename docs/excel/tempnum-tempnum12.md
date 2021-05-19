@@ -8,7 +8,7 @@ f1_keywords:
 - TempNum
 - TempNum12
 keywords:
-- tempnum12-Funktion [Excel 2007], TempNum-Funktion [Excel 2007]
+- tempnum12-Funktion [excel 2007],TempNum-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: 5b74d618-db3a-4d84-bd17-4fee7ae3b51e
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -23,7 +23,7 @@ ms.locfileid: "33426632"
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Framework-Bibliotheksfunktion, mit der ein temporäres **XLOPER**/ -**XLOPER12** mit einer Microsoft Excel-Arbeitsblatt Nummer (ein IEEE 8-Byte-Double) erstellt wird. 
+Framework library function that creates a temporary **XLOPER** /  **XLOPER12** containing a Microsoft Excel worksheet number (an IEEE 8-byte double). 
   
 ```cs
 LPXLOPER TempNum(double d);
@@ -32,17 +32,17 @@ LPXLOPER12 TempNum12(double d);
 
 ## <a name="parameters"></a>Parameter
 
- _d_ (**Double**)
+ _d_ (**double**)
   
-Der vorgesehene Wert. Beachten Sie, dass IEEE-Sub-normal zahlen derzeit nicht unterstützt werden und auf NULL gerundet werden. Negative Unendlichkeit wird unterstützt.
+Der beabsichtigte Wert. Beachten Sie, dass IEEE-Unternormalnummern derzeit nicht unterstützt werden und auf Null gerundet werden. Negative Unendlichkeit wird unterstützt.
   
 ## <a name="return-value"></a>Rückgabewert
 
-Gibt eine numerische **XltypeNum** zurück, die den übergebenen Wert enthält, oder NULL, wenn der übergebene Wert unter normal ist. 
+Gibt einen numerischen **xltypeNum-Wert zurück,** der den übergebenen Wert oder Null enthält, wenn der übergebene Wert subnormal war. 
   
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird die **TempNum12** -Funktion verwendet, um ein Argument an **xlfGetWorkspace**zu übergeben.
+In diesem Beispiel wird die **TempNum12-Funktion** verwendet, um ein Argument an **xlfGetWorkspace zu übergeben.**
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   

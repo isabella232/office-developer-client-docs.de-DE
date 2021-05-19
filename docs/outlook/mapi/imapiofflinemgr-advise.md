@@ -25,7 +25,7 @@ ms.locfileid: "33426919"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Registriert einen Client für den Empfang von Rückrufen für ein Offlineobjekt.
+Registriert einen Client zum Empfangen von Rückrufen für ein Offlineobjekt.
   
 ```cpp
 HRESULT COfflineObj::Advise( 
@@ -39,33 +39,33 @@ HRESULT COfflineObj::Advise(
 
  _ulFlags_
   
->  in Kennzeichen, die das Verhalten ändern. Nur der Wert MAPIOFFLINE_ADVISE_DEFAULT wird unterstützt. 
+>  [in] Flags, die das Verhalten ändern. Nur der Wert MAPIOFFLINE_ADVISE_DEFAULT wird unterstützt. 
     
  _pAdviseInfo_
   
-> in Informationen zum Rückruftyp, zum Empfang eines Rückrufs, eine Rückrufschnittstelle für den Anrufer und weitere Details. Außerdem enthält es ein Clienttoken, das Outlook beim Senden von nachfolgenden Benachrichtigungs Rückrufen an den Client Aufrufer verwendet.
+> [in] Informationen zum Typ des Rückrufs, zum Empfang eines Rückrufs, einer Rückrufschnittstelle für den Anrufer und anderen Details. Außerdem enthält es ein Clienttoken, das Outlook beim Senden nachfolgender Benachrichtigungsrückrufe an den Clientaufrufer verwendet wird.
     
  _pulAdviseToken_
   
-> Out Ein Advise-Token, das an den Aufrufer des Clients zurückgegeben wird, um den Rückruf für das Objekt abzubrechen.
+> [out] Ein an den Clientaufrufer zurückgegebenes Ratschlagtoken zum anschließenden Abbrechen des Rückrufs für das Objekt.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK
   
-> Der Anruf wurde erfolgreich ausgeführt.
+> Der Aufruf war erfolgreich.
     
 E_INVALIDARG
   
-> Es wurde ein ungültiger Parameter angegeben.
+> Ein ungültiger Parameter wurde angegeben.
     
 E_NOINTERFACE
   
-> Die in *pAdviseInfo* angegebene Rückrufschnittstelle ist ungültig. 
+> Die in  *pAdviseInfo*  angegebene Rückrufschnittstelle ist ungültig. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Beim Öffnen eines Offline Objekts mithilfe von **[HrOpenOfflineObj](hropenofflineobj.md)** Ruft ein Client ein Offlineobjekt ab, das **IMAPIOfflineMgr**unterstützt. Der Client kann die vom Objekt unterstützten Rückruf Typen mithilfe von **[IMAPIOffline:: getCapabilities](imapioffline-getcapabilities.md)** überprüfen. Der Client kann den Typ und weitere Details zu dem gewünschten Rückruf ermitteln und dann **IMAPIOfflineMgr:: Advise** aufrufen, um sich für das empfangen solcher Rückrufe über das Objekt zu registrieren. 
+Beim Öffnen eines Offlineobjekts mithilfe von **[HrOpenOfflineObj](hropenofflineobj.md)** ruft ein Client ein Offlineobjekt ab, das **IMAPIOfflineMgr unterstützt.** Der Client kann mithilfe von **[IMAPIOffline::GetCapabilities](imapioffline-getcapabilities.md)** nach den Arten von Rückrufen suchen, die vom Objekt unterstützt werden. Der Client kann den Typ und andere Details zu dem Rückruf bestimmen, den er möchte, und dann **IMAPIOfflineMgr::Advise** aufrufen, sich zu registrieren, um solche Rückrufe für das Objekt zu erhalten. 
   
 ## <a name="see-also"></a>Siehe auch
 

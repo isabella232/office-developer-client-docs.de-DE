@@ -25,7 +25,7 @@ ms.locfileid: "33424252"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Vergleicht zwei Eintragsbezeichner, um zu bestimmen, ob Sie auf den gleichen Eintrag in einem Nachrichtenspeicher verweisen. Dieser Aufruf wird von MAPI nur dann an einen Dienstanbieter weitergeleitet, wenn die eindeutigen IDs in beiden Eintrags Bezeichnern, die verglichen werden sollen, von diesem Anbieter verarbeitet werden.
+Vergleicht zwei Eintragsbezeichner, um zu bestimmen, ob sie auf denselben Eintrag in einem Nachrichtenspeicher verweisen. MAPI übergibt diesen Aufruf nur an einen Dienstanbieter, wenn die eindeutigen Bezeichner (UIDs) in beiden zu vergleichenden Eintragsbezeichnern von diesem Anbieter verarbeitet werden.
   
 ```cpp
 HRESULT CompareEntryIDs(
@@ -42,19 +42,19 @@ HRESULT CompareEntryIDs(
 
  _cbEntryID1_
   
-> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID1_ -Parameter verwiesen wird _._
+> [in] Die Byteanzahl in der Eintrags-ID, auf die der  _lpEntryID1-Parameter_  _verweist._
     
  _lpEntryID1_
   
-> in Ein Zeiger auf den ersten zu vergleichenden Eintragsbezeichner.
+> [in] Ein Zeiger auf die erste Zutritts-ID, die verglichen werden soll.
     
  _cbEntryID2_
   
-> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID2_ -Parameter verwiesen wird _._
+> [in] Die Byteanzahl in der Eintrags-ID, auf die der  _lpEntryID2-Parameter_  _verweist._
     
  _lpEntryID2_
   
-> in Ein Zeiger auf die zweite Eintrags-ID, die verglichen werden soll.
+> [in] Ein Zeiger auf den zweiten Eintragsbezeichner, der verglichen werden soll.
     
  _ulFlags_
   
@@ -62,7 +62,7 @@ HRESULT CompareEntryIDs(
     
  _lpulResult_
   
-> Out Ein Zeiger auf das Ergebnis des Vergleichs. TRUE, wenn die beiden Eintragsbezeichner auf dasselbe Objekt verweisen, andernfalls false. andernfalls FALSE.
+> [out] Ein Zeiger auf das Ergebnis des Vergleichs. TRUE, wenn die beiden Eintragsbezeichner auf dasselbe Objekt verweisen. Andernfalls FALSE.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -72,17 +72,17 @@ S_OK
     
 MAPI_E_UNKNOWN_ENTRYID 
   
-> Eine oder beide der als Parameter angegebenen Eintragsbezeichner verweisen nicht auf Objekte, möglicherweise weil die entsprechenden Objekte ungeöffnet und derzeit nicht verfügbar sind.
+> Eine oder beide der als Parameter angegebenen Eintragsbezeichner beziehen sich nicht auf Objekte, möglicherweise weil die entsprechenden Objekte ungeöffnet sind und derzeit nicht verfügbar sind.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMsgStore:: CompareEntryIDs** -Methode vergleicht zwei Eintragsbezeichner, die zum Nachrichtenspeicher gehören, um zu bestimmen, ob Sie auf dasselbe Objekt verweisen. 
+Die **IMsgStore::CompareEntryIDs-Methode** vergleicht zwei Eintragsbezeichner, die zum Nachrichtenspeicher gehören, um zu bestimmen, ob sie auf dasselbe Objekt verweisen. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
- **CompareEntryIDs** ist nützlich, da ein Objekt mehrere gültige Eintragsbezeichner aufweisen kann (beispielsweise nach der Installation einer neuen Version eines Nachrichtenspeicher Anbieters). 
+ **CompareEntryIDs** ist nützlich, da ein Objekt mehrere gültige Eintragsbezeichner haben kann (z. B. nach der Installation einer neuen Version eines Nachrichtenspeicheranbieters). 
   
-Wenn **CompareEntryIDs** einen Fehler zurückgibt, führen Sie keine Aktion basierend auf dem Ergebnis des Vergleichs aus. Verwenden Sie stattdessen die konservativste Vorgehensweise. **CompareEntryIDs** kann fehlschlagen, wenn beispielsweise eine oder beide der Eintragsbezeichner eine ungültige **MAPIUID**enthält. 
+Wenn **CompareEntryIDs** einen Fehler zurückgibt, führen Sie keine Aktion basierend auf dem Ergebnis des Vergleichs aus. Verwenden Sie stattdessen den möglichst konservativen Ansatz. **CompareEntryIDs** können fehlschlagen, wenn beispielsweise eine oder beide Eintragsbezeichner eine ungültige **MAPIUID enthalten.** 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -90,7 +90,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|BaseDialog. cpp  <br/> |CBaseDialog:: OnCompareEntryIDs  <br/> |MFCMAPI verwendet die **IMsgStore:: CompareEntryIDs** -Methode, um Eintrags-IDs zu vergleichen.  <br/> |
+|BaseDialog.cpp  <br/> |CBaseDialog::OnCompareEntryIDs  <br/> |MFCMAPI verwendet die **IMsgStore::CompareEntryIDs-Methode,** um Eintrags-IDs zu vergleichen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

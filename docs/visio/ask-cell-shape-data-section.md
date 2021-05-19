@@ -25,22 +25,22 @@ Bestimmt, ob der Benutzer beim Erstellen einer Instanz oder beim Duplizieren ode
 |TRUE  <br/> |Der Benutzer wird aufgefordert, Shape-Daten in das Dialogfeld **Shape-Daten definieren** einzugeben.  <br/> |
 |FALSE  <br/> |Benutzer nicht zur Dateneingabe auffordern.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Der Wert in dieser Zelle entspricht dem Kontrollkästchen **Beim Ablegen fragen** im Dialogfeld **Shape-Daten definieren**. (Klicken Sie mit der rechten Maustaste auf das Shape, zeigen Sie auf **Daten**, und klicken Sie dann auf **Shape-Daten definieren**.)
   
-Wenn Sie einen Verweis auf die Zelle Ask aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle Ask anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Prop. *Name* . Überprüfen Sie, wo Prop.  *Name* ist der Name der benutzerdefinierten Eigenschaftenzeile.  <br/> |
+|Zellenname:  <br/> |Prop. *Name*  . Überprüfen Sie, wo Prop.  *name*  ist der Name der benutzerdefinierten Eigenschaftenzeile.  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Ask nach Index aus einem Programm erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle Ask nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
 |Abschnittsindex:  <br/> |**visSectionProp** <br/> |
-|Zeilenindex:  <br/> |**visRowProp** +  *i* , wobei *i* = 0, 1, 2,...  <br/> |
+|Zeilenindex:  <br/> |**visRowProp**  +   *i,* *wobei i* = 0, 1, 2,...  <br/> |
 |Zellenindex:  <br/> |**visCustPropsAsk** <br/> |
    
 

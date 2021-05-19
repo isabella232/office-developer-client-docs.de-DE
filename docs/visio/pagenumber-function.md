@@ -22,13 +22,13 @@ Gibt die Nummer der Seite zurück, die die Form enthält.
   
 ## <a name="syntax"></a>Syntax
 
-PAGENUMBER ()
+PAGENUMBER()
   
 ### <a name="return-value"></a>Rückgabewert
 
-Zahl
+Nummer
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Wenn es sich bei dem aktuellen Zeichenblatt um ein Hintergrundzeichenblatt (ohne Nummerierung) handelt oder ein Fehler auftritt, gibt die PAGENUMBER-Funktion 0 zurück.
   

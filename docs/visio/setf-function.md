@@ -22,7 +22,7 @@ Legt die Formel einer Zelle fest.
   
 ## <a name="syntax"></a>Syntax
 
-Setf (GETREF (* * *Cell* * *), * * *Formel* * *) 
+SETF( GETREF(** *cell* ** ), ** *formula* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -31,25 +31,25 @@ Setf (GETREF (* * *Cell* * *), * * *Formel* * *)
 | _Zelle_ <br/> |Erforderlich  <br/> |**String** <br/> |Die Zelle, deren Formel festgelegt werden soll.  <br/> |
 | _formula_ <br/> |Erforderlich  <br/> |**String** <br/> |Die zu verwendende Formel.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Bei der Auswertung wird das Ergebnis des Ausdrucks in der _Formel_ zur neuen Formel in _Cell_. Wenn die _Formel_ in Anführungszeichen eingeschlossen ist, wird der zitierte Ausdruck in _Cell_geschrieben. Um eine _Zelle_ auf eine Zeichenfolge festzulegen, müssen Sie die _Formel_ in drei Gruppen von Anführungszeichen einschließen. 
+Bei der Auswertung wird das Ergebnis des Ausdrucks in  _der Formel_ zur neuen Formel in  _zelle_. Wenn _formel_ in Anführungszeichen eingeschlossen ist, wird der in Anführungszeichen gesetzte Ausdruck in die Zelle _geschrieben._ Um die  _Zelle auf_ eine Zeichenfolge zu setzen, setzen Sie  _die Formel_ in drei Sätze von Anführungszeichen. 
   
 Die Zielzelle muss mithilfe eines GETREF()-Bezugs oder als Zeichenfolge angegeben werden, um eine Zirkularität zu vermeiden. Die Verwendung von GETREF wird bevorzugt, da Bezüge in Microsoft Visio angepasst werden können, wenn das Shape in ein anderes Dokument verschoben wird.
   
-Wenn _Cell_ nicht mit getref oder als Zeichenfolge angegeben wird, gibt die Funktion einen Fehler zurück, und die Formel der Zelle wird nicht geändert. Wenn die _Formel_ einen Syntaxfehler enthält, gibt die Funktion einen Fehler zurück, und die Formel in _Cell_ wird nicht geändert. 
+Wenn  _zelle_ nicht mit GETREF oder als Zeichenfolge angegeben wird, gibt die Funktion einen Fehler zurück, und die Formel der Zelle wird nicht geändert. Wenn  _die Formel_ einen Syntaxfehler enthält, gibt die Funktion einen Fehler zurück, und die Formel in  _der_ Zelle wird nicht geändert. 
   
 ## <a name="example-1"></a>Beispiel 1
 
-SETF (GETREF (Scratch. a1), 1,5 in \* 6 + 1 ft)
+SETF( GETREF(Scratch.A1), 1,5 in \* 6 + 1 ft)
   
 Legt die Formel von Scratch.A1 auf 39 cm fest.
   
 ## <a name="example-2"></a>Beispiel 2
 
-SETF (GETREF (Scratch. a1), "1,5 in \* 6 + 1 ft")
+SETF( GETREF(Scratch.A1), "1.5 in \* 6 + 1 ft")
   
-Legt die Formel für Scratch. A1 auf den Ausdruck 1,5 in\*6 + 1 ft.
+Legt die Formel für Scratch. A1 bis zum Ausdruck 1,5 in \* 6+1 ft.
   
 ## <a name="example-3"></a>Beispiel 3
 

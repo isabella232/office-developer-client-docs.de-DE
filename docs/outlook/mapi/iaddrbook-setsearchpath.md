@@ -25,7 +25,7 @@ ms.locfileid: "33426205"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Legt einen neuen Suchpfad im Profil fest, der für den Prozess der Namensauflösung verwendet wird. 
+Legt einen neuen Suchpfad im Profil fest, der für den Namensauflösungsprozess verwendet wird. 
   
 ```cpp
 HRESULT SetSearchPath(
@@ -42,7 +42,7 @@ HRESULT SetSearchPath(
     
  _lpSearchPath_
   
-> in Ein Zeiger auf die [SRowSet](srowset.md) -Struktur, die zum Speichern des Suchpfads verwendet wird. Die erste Eigenschaft für jedes **aRow** -Element in **SRowSet** muss **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) sein.
+> [in] Ein Zeiger auf die [SRowSet-Struktur,](srowset.md) die zum Halten des Suchpfads verwendet wird. Die erste Eigenschaft für jedes **aRow-Element** in **SRowSet** muss **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) sein.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -52,13 +52,13 @@ S_OK
     
 MAPI_E_MISSING_REQUIRED_COLUMN 
   
-> Einer der in der **SRowSet** -Struktur beschriebenen Container enthielt nicht die zugehörige **PR_ENTRYID** -Eigenschaft. 
+> Einer der in der **SRowSet-Struktur** beschriebenen Container hat seine PR_ENTRYID **enthalten.** 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Clients und Dienstanbieter rufen die **SetSearchPath** -Methode auf, um Änderungen an der Container Suchreihenfolge zu speichern, die zum Auflösen von Namen mithilfe der [IAddrBook::](iaddrbook-resolvename.md) ResolveName-Methode verwendet wird. Der Suchpfad wird zwischen den Instanzen einer Sitzung gespeichert. 
+Clients und Dienstanbieter rufen die **SetSearchPath-Methode** auf, um Änderungen an der Containersuchreihenfolge zu speichern, die zum Auflösen von Namen mit der [IAddrBook::ResolveName-Methode](iaddrbook-resolvename.md) verwendet wird. Der Suchpfad wird zwischen Instanzen einer Sitzung gespeichert. 
   
-Clients und Anbieter müssen nicht die [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) -Methode aufrufen, um den Suchpfad dauerhaft zu ändern. 
+Clients und Anbieter müssen die [IMAPIProp::SaveChanges-Methode](imapiprop-savechanges.md) nicht aufrufen, um die Änderungen des Suchpfads dauerhaft vorzunehmen. 
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -70,7 +70,7 @@ Clients und Anbieter müssen nicht die [IMAPIProp:: SaveChanges](imapiprop-savec
   
 [IAddrBook::GetSearchPath](iaddrbook-getsearchpath.md)
   
-[Kanonische Pidtagcontainerflags (-Eigenschaft](pidtagcontainerflags-canonical-property.md)
+[PidTagContainerFlags (kanonische Eigenschaft)](pidtagcontainerflags-canonical-property.md)
   
 [IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 

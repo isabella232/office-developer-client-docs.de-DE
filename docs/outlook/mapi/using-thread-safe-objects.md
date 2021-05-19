@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Thread sicheren Objekten
+title: Verwenden Thread-Safe Objekten
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,22 +15,22 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33425169"
 ---
-# <a name="using-thread-safe-objects"></a>Verwenden von Thread sicheren Objekten
+# <a name="using-thread-safe-objects"></a>Verwenden Thread-Safe Objekten
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Client Anwendungen können davon ausgehen, dass Objekte, die direkt oder als Rückrufe verwendet werden, nur in den folgenden Fällen threadsicher sind:
+Clientanwendungen können davon ausgehen, dass objekte, die direkt oder als Rückrufe verwendet werden, immer threadsicher sind, außer in den folgenden Fällen:
   
-- Das Statusobjekt eines Transportanbieters, das über einen Clientaufruf von [IMAPISession:: OpenEntry](imapisession-openentry.md) mit einer Eintrags-ID aus der Statustabellen Zeile des Anbieters abgerufen wurde. 
+- Das Statusobjekt eines Transportanbieters, das über einen Clientaufruf von [IMAPISession::OpenEntry](imapisession-openentry.md) mit einem Eintragsbezeichner aus der Statustabelle des Anbieters erhalten wurde. 
     
-- Alle MAPI-Formularobjekte, die über einen Clientaufruf an [MAPIOpenFormMgr](mapiopenformmgr.md)abgerufen werden. Formularobjekte gehorchen Apartmentmodell Regeln, und Clients müssen diese und alle darin enthaltenen Objekte nur für den Thread verwenden, der Sie erstellt hat.
+- Alle MAPI-Formularobjekte, die über einen Clientaufruf von [MAPIOpenFormMgr erhalten wurden.](mapiopenformmgr.md) Formularobjekte befolgen Apartmentmodellregeln, und Clients müssen sie und alle darin enthaltenen Objekte nur im Thread verwenden, von dem sie erstellt wurden.
     
-Wenn ein Client in der Statustabelle, die die Eintrags-ID des zugeordneten Status Objekts enthält, auf die Zeile eines Transportanbieters zugreift **** , kann der Client OpenEntry mit dieser Eintrags-ID aufrufen, um das Status-Objekt zu öffnen. Dieses Statusobjekt ist nicht threadsicher, da Transportanbieter im Kontext des MAPI-Spoolers ausgeführt werden und keinen separaten Kontext für Ihr Status-Objekt beibehalten. Das Status-Objekt befolgt Apartmentmodell Regeln, und Clients müssen es nur für den Thread verwenden, der es erstellt hat. 
+Wenn ein Client auf die Zeile eines Transportanbieters in der Statustabelle zutritt, die die Eintrags-ID des zugeordneten Statusobjekts enthält, kann der Client **OpenEntry** mit diesem Eintragsbezeichner aufrufen, um das Statusobjekt zu öffnen. Dieses Statusobjekt ist nicht threadsicher, da Transportanbieter im Kontext des MAPI-Spoolers ausgeführt werden und keinen separaten Kontext für ihr Statusobjekt beibehalten. Das status-Objekt befolgt Apartmentmodellregeln, und Clients dürfen es nur für den Thread verwenden, von dem es erstellt wurde. 
   
-Ein Client muss [MAPIInitialize](mapiinitialize.md) auch für jeden Thread aufrufen, bevor MAPI-Objekte und [MAPIUninitialize](mapiuninitialize.md) verwendet werden, wenn die Verwendung abgeschlossen ist. Diese Aufrufe sollten auch dann vorgenommen werden, wenn die zu verwendenden Objekte aus einer externen Quelle an den Thread übergeben werden. **MAPIInitialize** und **MAPIUninitialize** können von überall aus aufgerufen werden, außer innerhalb einer Win32- **DllMain** -Funktion, eine Funktion, die vom System aufgerufen wird, wenn Prozesse und Threads initialisiert und beendet werden, oder bei Aufrufen der ** LoadLibrary** -und **FreeLibrary** -Funktionen. 
+Ein Client muss [mapIInitialize](mapiinitialize.md) auch in jedem Thread aufrufen, bevor mapI-Objekte verwendet werden und [MAPIUninitialize,](mapiuninitialize.md) wenn diese Verwendung abgeschlossen ist. Diese Aufrufe sollten auch dann ausgeführt werden, wenn die zu verwendenden Objekte von einer externen Quelle an den Thread übergeben werden. **MAPIInitialize** und **MAPIUninitialize** können von überall aufgerufen werden, mit Ausnahme einer Win32 **DllMain-Funktion,** einer Funktion, die vom System aufgerufen wird, wenn Prozesse und Threads initialisiert und beendet werden, oder bei Aufrufen der **LoadLibrary-** und **FreeLibrary-Funktionen.** 
   
-InDirekte use-Objekte sollten nie als threadsicher angenommen werden. InDirekte use-Objekte werden von Methoden zurückgegeben, die Ziel Schnittstellenzeiger als Eingabeparameter erfordern. Beispiele für solche Methoden sind **IMAPIProp:: CopyTo** und **CopyProps**, **IMAPIFolder:: CopyFolder** und **CopyMessage**und **IMsgServiceAdmin:: CopyMsgService**. Wenn ein Dienstanbieter ein solches Objekt aus einem anderen Thread als dem, an dem es übergeben wurde, aufrufen möchte, ist er dafür verantwortlich, das Objekt explizit zu marshallen.
+Indirekte Verwendungsobjekte sollten niemals als threadsicher angenommen werden. Indirekte Verwendungsobjekte werden von Methoden zurückgegeben, für die Zielschnittstellenzeiger als Eingabeparameter erforderlich sind. Beispiele für solche Methoden sind **IMAPIProp::CopyTo** und **CopyProps**, **IMAPIFolder::CopyFolder** und **CopyMessage** und **IMsgServiceAdmin::CopyMsgService**. Wenn ein Dienstanbieter ein solches Objekt von einem anderen Thread als dem Thread aufrufen möchte, an den es übergeben wurde, ist der Anbieter für das explizite Marshalling des Objekts verantwortlich.
   
 

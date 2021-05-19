@@ -21,17 +21,17 @@ ms.locfileid: "33424350"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-In der Profiltabelle werden Informationen zu allen Profilen aufgelistet, die einer bestimmten Clientanwendung zugeordnet sind. Es gibt eine Profiltabelle für jede Sitzung, die von MAPI zur Verwendung durch Clients implementiert wird. 
+In der Profiltabelle sind Informationen zu allen Profilen aufgeführt, die einer bestimmten Clientanwendung zugeordnet sind. Es gibt eine Profiltabelle für jede Sitzung, die von MAPI zur Verwendung durch Clients implementiert wird. 
   
-Clients greifen auf die Profiltabelle zu, indem Sie die [IProfAdmin::](iprofadmin-getprofiletable.md) getprofilable-Methode aufrufen. 
+Clients greifen auf die Profiltabelle zu, indem sie die [IProfAdmin::GetProfileTable-Methode](iprofadmin-getprofiletable.md) aufrufen. 
   
 Die Profiltabelle ist eine statische Tabelle. Profile, die zum Löschen markiert wurden, sind nicht in der Profiltabelle enthalten.
   
-Wie bei den meisten Tabellen Implementierungen **** wird die Tabelle mit null Zeilen erstellt, wenn getprofilable aufgerufen wird und keine Profile für den Client verfügbar sind. 
+Wie bei den meisten Tabellenimplementierungen wird die Tabelle mit null Zeilen erstellt, wenn **GetProfileTable** aufgerufen wird und dem Client keine Profile zur Verfügung stehen. 
   
-Die folgenden Eigenschaften bilden den erforderlichen Spaltensatz in Profiltabellen:
+Die folgenden Eigenschaften sind die erforderlichen Spalten, die in Profiltabellen festgelegt sind:
   
- **PR_DEFAULT_PROFILE** ([Pidtagdefaultprofile (](pidtagdefaultprofile-canonical-property.md)) 
+ **PR_DEFAULT_PROFILE** ([PidTagDefaultProfile](pidtagdefaultprofile-canonical-property.md)) 
   
  **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) 
   

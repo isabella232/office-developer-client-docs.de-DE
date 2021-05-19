@@ -19,15 +19,15 @@ ms.locfileid: "33426422"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ein Nachrichtenspeicher Anbieter ist, wenn er im Arbeitsspeicher läuft, eine [IMSProvider: IUnknown](imsprovideriunknown.md) -Schnittstelle. Die **IMSProvider** -Schnittstelle ermöglicht es Clientanwendungen und der MAPI-Warteschlange, sich am Nachrichtenspeicher an-und abmelden zu lassen. Die Schnittstellen, die Clientanwendungen und der MAPI-Spooler für den Zugriff auf Ordner und Nachrichten im Nachrichtenspeicher verwenden, sind [IMSLogon](imslogoniunknown.md) -und [IMsgStore](imsgstoreimapiprop.md) -Schnittstellen. Diese Schnittstellen werden in der Regel erstellt, wenn der Nachrichtenspeicher zum ersten Mal angemeldet ist, obwohl der [MSProviderInit](msproviderinit.md) -Einstiegspunkt der nachrichtenSPEICHER-dll Sie auch erstellen kann. 
+Ein Nachrichtenspeicheranbieter, wenn er im Arbeitsspeicher ausgeführt wird, ist eine [IMSProvider : IUnknown-Schnittstelle.](imsprovideriunknown.md) Über **die IMSProvider-Schnittstelle** können sich Clientanwendungen und der MAPI-Spooler beim nachrichtenspeicher anmelden und abmelden. Die Schnittstellen, die Clientanwendungen und der MAPI-Spooler für den Zugriff auf Ordner und Nachrichten im Nachrichtenspeicher verwenden, sind [IMSLogon-](imslogoniunknown.md) und [IMsgStore-Schnittstellen.](imsgstoreimapiprop.md) Diese Schnittstellen werden in der Regel erstellt, wenn der Nachrichtenspeicher zum ersten Mal angemeldet ist, obwohl sie auch vom [MSProviderInit-Einstiegspunkt](msproviderinit.md) der Nachrichtenspeicher-DLL erstellt werden können. 
   
-Da die **IMSLogon** -und **IMsgStore** -Schnittstellen einige Methoden gemeinsam nutzen, ist es möglicherweise einfacher, ein Klassenobjekt zu erstellen, das von beiden Schnittstellen erbt. Sie können diese Schnittstellen auch in separaten Objekten implementieren und Hilfsfunktionen innerhalb Ihrer DLL schreiben, die die freigegebenen Methoden implementieren, die dann von den Methoden in den **IMSLogon** -und **IMsgStore** -Schnittstellen aufgerufen werden können. 
+Da die **IMSLogon-** und **IMsgStore-Schnittstellen** einige Methoden gemeinsam verwenden, ist es möglicherweise einfacher, ein Klassenobjekt zu erstellen, das von beiden Schnittstellen erbt. Sie können diese Schnittstellen auch in separaten Objekten implementieren und Hilfsfunktionen intern in Ihre DLL schreiben, die die gemeinsam genutzten Methoden implementieren, die dann von den Methoden in den **ImSLogon-** und **IMsgStore-Schnittstellen** aufgerufen werden können. 
   
-Die folgende Abbildung zeigt eine allgemeine Gliederung der Objekthierarchie innerhalb eines aktiven Nachrichtenspeichers.
+Die folgende Abbildung zeigt eine übersichtsorientierte Gliederung der Objekthierarchie innerhalb eines ausgeführten Nachrichtenspeichers.
   
 **Objekthierarchie des Nachrichtenspeichers**
   
-![Nachrichtenspeicher-Objekthierarchie] (media/storeobj.gif "Nachrichtenspeicher-Objekthierarchie")
+![Objekthierarchie des Nachrichtenspeichers](media/storeobj.gif "Nachrichtenspeicherobjekthierarchie")
   
 ## <a name="see-also"></a>Siehe auch
 

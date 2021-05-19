@@ -50,7 +50,7 @@ MODRECIP_MODIFY
     
 MODRECIP_REMOVE 
   
-> Vorhandene Empfänger sollten aus der Empfängerliste entfernt werden, indem die **PR_ROWID** ([pidtagrowid (](pidtagrowid-canonical-property.md))-Eigenschaft, die im Eigenschaftswert Array der einzelnen Empfänger Einträge im _lpMods_ -Parameter enthalten ist, als Index verwendet wird. 
+> Vorhandene Empfänger sollten aus der Empfängerliste entfernt werden, indem als Index die **PR_ROWID** ([PidTagRowid](pidtagrowid-canonical-property.md)) -Eigenschaft verwendet wird, die im Eigenschaftenwertarray jedes Empfängereintrags im  _lpMods-Parameter_ enthalten ist. 
     
  _lpMods_
   
@@ -62,13 +62,13 @@ S_OK
   
 > Die Empf�ngerliste wurde erfolgreich ge�ndert.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Die **IMessage::ModifyRecipients** -Methode �ndert die Nachricht Empf�ngerliste. Es ist in dieser Liste gehalten in eine [ADRLIST](adrlist.md) -Struktur, dass die Empf�nger Tabelle erstellt wird. 
   
 Die **ADRLIST** -Datenstruktur enth�lt eine [ADRENTRY](adrentry.md) -Struktur f�r jeden Empf�nger und jede **ADRENTRY** -Datenstruktur enth�lt ein Array der Eigenschaftswerte, die die Empf�ngereigenschaften beschreibt. 
   
-Empf�nger in der Struktur **ADRLIST** k�nnen gel�st oder nicht aufgel�st werden. Der Unterschied liegt in der Anzahl und Typ der Eigenschaften, die eingebunden werden. Ein nicht aufgelöster Empfänger enthält nur die Eigenschaften **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) und **PR_RECIPIENT_TYPE** ([pidtagrecipienttype (](pidtagrecipienttype-canonical-property.md)), während ein aufgelöst Empfänger diese beiden Eigenschaften Plus **PR_ADDRTYPE **([Pidtagaddresstype (](pidtagaddresstype-canonical-property.md)) und **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)). Wenn **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md)) verfügbar ist, kann es auch hinzugefügt werden.
+Empf�nger in der Struktur **ADRLIST** k�nnen gel�st oder nicht aufgel�st werden. Der Unterschied liegt in der Anzahl und Typ der Eigenschaften, die eingebunden werden. Ein nicht aufgelöster Empfänger enthält nur die **Eigenschaften PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) und **PR_RECIPIENT_TYPE** ([PidTagRecipientType](pidtagrecipienttype-canonical-property.md)), während ein aufgelöster Empfänger diese beiden Eigenschaften plus **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) und **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) enthält. Wenn **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md)) verfügbar ist, kann sie auch einbezogen werden.
   
 Durch die Zeit, die eine Nachricht gesendet wird, muss nur aufgel�sten Empf�nger in der Empf�ngerliste enthalten. Nicht aufgel�sten Empf�nger verursachen Unzustellbarkeitsberichten erstellt und an den urspr�nglichen Absender der Nachricht gesendet werden. Weitere Informationen zu den Vorgang der Namensaufl�sung aus Sicht des Clients finden Sie unter [Aufl�sen von Namen](resolving-a-recipient-name.md). Weitere Informationen aus der Perspektive der Adressbuchanbieter finden Sie unter [Implementieren der Namensaufl�sung](implementing-name-resolution.md).
   
@@ -78,7 +78,7 @@ Nicht aufgel�st und nicht aufgel�sten Empf�nger kann ein Empf�nger NULL 
 
 Sie k�nnen eine Empf�ngerliste durch Aufrufen von [IAddrBook::Address](imapisupport-address.md) zum Anzeigen des Standarddialogfelds und der Benutzer aufgefordert, w�hlen Sie Eintr�ge erstellen. Die Adressliste auf die durch den Parameter  _lppAdrList_ auf **Address** kann an **ModifyRecipients** als  _lpMods_ -Parameter �bergeben werden. 
   
-Wenn Sie Eigenschaften f�r einen Empf�nger in der Struktur [ADRLIST](adrlist.md) angeben, schlie�en Sie alle Eigenschaften des Empf�ngers, nicht nur diejenigen neuen oder ge�nderten. Wenn Sie ein Empf�nger ge�ndert wird, werden alle Eigenschaften, die nicht in der Struktur **ADRLIST** enthalten gel�scht. Zum Abrufen der aktuellen Gruppe von Eigenschaften f�r alle Empf�nger einer Nachricht [GetRecipientTable](imessage-getrecipienttable.md) aufrufen und Abrufen von allen Zeilen. Da ein **SRowSet** dieselbe Struktur wie eine **ADRLIST**ist, k�nnen Sie diese austauschbar verwenden.
+Wenn Sie Eigenschaften f�r einen Empf�nger in der Struktur [ADRLIST](adrlist.md) angeben, schlie�en Sie alle Eigenschaften des Empf�ngers, nicht nur diejenigen neuen oder ge�nderten. Wenn Sie ein Empf�nger ge�ndert wird, werden alle Eigenschaften, die nicht in der Struktur **ADRLIST** enthalten gel�scht. Zum Abrufen der aktuellen Gruppe von Eigenschaften f�r alle Empf�nger einer Nachricht [GetRecipientTable](imessage-getrecipienttable.md) aufrufen und Abrufen von allen Zeilen. Da ein **SRowSet** dieselbe Struktur wie eine **ADRLIST** ist, k�nnen Sie diese austauschbar verwenden.
   
  **ModifyRecipients** ersetzt alle Eintr�ge in der aktuellen Empf�ngerliste mit den Informationen, die auf den  _lpMods_, wenn keines der Flags im  _ulFlags_ -Parameter festgelegt werden. 
   
@@ -96,15 +96,15 @@ Es folgen einige Regeln zum Festlegen der Eigenschaften der Empf�nger in der S
     
 - Schlie�en Sie die **PR_ROWID** -Eigenschaft nicht f�r alle Empf�nger beim Festlegen der MODRECIP_ADD-Flag in  _ulFlags_ oder wenn Sie NULL in  _ulFlags_�bergeben.
     
-Wenn Sie die **PR_ADDRTYPE** -Eigenschaft oder die **PR_EMAIL_ADDRESS** -Eigenschaft f�r einen Empf�nger und eine oder beide Eigenschaften sind inkonsistent mit den Adresstyp und die Adresse des Empf�ngers durch **PR_ENTRYID**bezeichnet, sind die Ergebnisse nicht definiert. D. h., gibt es drei M�glichkeiten, je nach Dienstanbieter:
+Wenn Sie die **PR_ADDRTYPE** -Eigenschaft oder die **PR_EMAIL_ADDRESS** -Eigenschaft f�r einen Empf�nger und eine oder beide Eigenschaften sind inkonsistent mit den Adresstyp und die Adresse des Empf�ngers durch **PR_ENTRYID** bezeichnet, sind die Ergebnisse nicht definiert. D. h., gibt es drei M�glichkeiten, je nach Dienstanbieter:
   
 - Die Nachricht wird an die Adresse, die von den Eigenschaften **PR_ADDRTYPE** und **PR_EMAIL_ADDRESS** beschriebenen �bermittelt werden. 
     
-- Die Nachricht wird an den Empf�nger durch **PR_ENTRYID**identifizierten �bermittelt werden.
+- Die Nachricht wird an den Empf�nger durch **PR_ENTRYID** identifizierten �bermittelt werden.
     
 - Die Nachricht wird aufgrund der Mehrdeutigkeit der Adressinformationen unzustellbar deklariert werden.
     
-Verwenden Sie die Regeln f�r die Zuweisung in [Verwalten von Arbeitsspeicher f�r ADRLIST und SRowSet Strukturen](managing-memory-for-adrlist-and-srowset-structures.md) beschriebenen Speicherzuordnung f�r die Empf�ngerliste. **ModifyRecipients** Freigabe nicht die Struktur **ADRLIST** noch keines der Unterstrukturen frei. Die Struktur **ADRLIST** und jede [SPropValue](spropvalue.md) Struktur m�ssen separat mithilfe der Funktion [MAPIAllocateBuffer](mapiallocatebuffer.md) so, dass jeweils einzeln freigegeben werden zugeordnet werden. Wenn die Methode zus�tzlichen Speicherplatz f�r alle **SPropValue** Struktur erfordert, kann es die **SPropValue** -Struktur mit einer neuen ersetzen, die sp�ter mithilfe der [MAPIFreeBuffer](mapifreebuffer.md)freigegeben werden k�nnen. **SPropValue** Originalstruktur sollten auch mithilfe der **MAPIFreeBuffer**freigegeben werden.
+Verwenden Sie die Regeln f�r die Zuweisung in [Verwalten von Arbeitsspeicher f�r ADRLIST und SRowSet Strukturen](managing-memory-for-adrlist-and-srowset-structures.md) beschriebenen Speicherzuordnung f�r die Empf�ngerliste. **ModifyRecipients** Freigabe nicht die Struktur **ADRLIST** noch keines der Unterstrukturen frei. Die Struktur **ADRLIST** und jede [SPropValue](spropvalue.md) Struktur m�ssen separat mithilfe der Funktion [MAPIAllocateBuffer](mapiallocatebuffer.md) so, dass jeweils einzeln freigegeben werden zugeordnet werden. Wenn die Methode zus�tzlichen Speicherplatz f�r alle **SPropValue** Struktur erfordert, kann es die **SPropValue** -Struktur mit einer neuen ersetzen, die sp�ter mithilfe der [MAPIFreeBuffer](mapifreebuffer.md)freigegeben werden k�nnen. **SPropValue** Originalstruktur sollten auch mithilfe der **MAPIFreeBuffer** freigegeben werden.
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -112,7 +112,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIABFunctions. cpp  <br/> |AddRecipient  <br/> |MFCMAPI (engl.) verwendet die **IMessage::ModifyRecipients** -Methode, um einen neuen Empf�nger einer Nachricht hinzuf�gen.  <br/> |
+|MAPIABFunctions.cpp  <br/> |AddRecipient  <br/> |MFCMAPI (engl.) verwendet die **IMessage::ModifyRecipients** -Methode, um einen neuen Empf�nger einer Nachricht hinzuf�gen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

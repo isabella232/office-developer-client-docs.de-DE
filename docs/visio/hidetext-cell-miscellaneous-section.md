@@ -25,19 +25,19 @@ Blendet den Text für ein Shape aus. Sie können Text anzeigen, Eigenschaften ä
 | TRUE  <br/> | Text ist verborgen und wird nicht ausgedruckt.  <br/> |
 | FALSE  <br/> | Text ist nicht verborgen.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle Zelle HideText aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle HideText anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Zelle HideText  <br/> |
+| Zellenname:  <br/> | HideText  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle HideText aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die HideText-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowMisc** <br/> |
 | Zellenindex:  <br/> |**visHideText** <br/> |
    

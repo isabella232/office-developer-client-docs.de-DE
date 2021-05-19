@@ -25,23 +25,23 @@ Legt die Tabausrichtung fest.
 | 0  <br/> | Left  <br/> |**visTabStopLeft** <br/> |
 | 1  <br/> | Zentriert  <br/> |**visTabStopCenter** <br/> |
 | 2  <br/> | Nach rechts  <br/> |**visTabStopRight** <br/> |
-| 3  <br/> | Decimal  <br/> |**visTabStopDecimal** <br/> |
-| 4  <br/> | Komma  <br/> |**visTabStopComma** <br/> |
+| 3  <br/> | Dezimal  <br/> |**visTabStopDecimal** <br/> |
+| 4   <br/> | Komma  <br/> |**visTabStopComma** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle Alignment aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle Alignment anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Registerkarten.  *IJ* , wobei *i und j =* <1>, 2, 3  <br/> |
+| Zellenname:  <br/> | Registerkarten.  *ij,*            *wobei i und j = <*  1>, 2, 3  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Alignment aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle Alignment nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionTab** <br/> |
-| Zeilenindex:  <br/> |**visRowTab +** *i* wobei *i* = 0, 1, 2...  <br/> |
-| Zellenindex:  <br/> | (*j* * 3) **+ visTabAlign** <br/> |
+| Zeilenindex:  <br/> |**visRowTab +** *i*            where  *i*  = 0, 1, 2...  <br/> |
+| Zellenindex:  <br/> | (*j*  *3) **+ visTabAlign** <br/> |
    
 

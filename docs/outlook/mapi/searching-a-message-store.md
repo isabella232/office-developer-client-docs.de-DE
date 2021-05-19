@@ -19,30 +19,30 @@ ms.locfileid: "33426037"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Client Anwendungen können einen oder mehrere Ordner durchsuchen, die nach Nachrichten suchen, die den Suchkriterien entsprechen. Die einfachste Suchmethode umfasst das Anwenden einer Einschränkung zum Definieren von Kriterien und das Platzieren der Ergebnisse in einem Suchergebnisordner, der explizit für diese Suche oder für eine vorherige Suche erstellt wurde. Diese Technik wird nicht von allen Nachrichten speichern unterstützt. 
+Clientanwendungen können einen oder mehrere Ordner durchsuchen, die nach Nachrichten suchen, die den Suchkriterien entsprechen. Die unkomplizierteste Suchmethode umfasst das Anwenden einer Einschränkung zum Definieren von Kriterien und das Platzieren der Ergebnisse in einem Suchergebnisordner, der explizit für diese Suche oder für eine vorherige Suche erstellt wurde. Nicht alle Nachrichtenspeicher unterstützen diese Technik. 
 
-Um zu bestimmen, ob der von Ihnen verwendete Nachrichtenspeicher mithilfe von Suchergebnis Ordnern unterstützt, rufen Sie die [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode auf, um die **\_PR STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md))-Eigenschaft abzurufen. Wenn das STORE_SEARCH_OK-Flag festgelegt ist, wird die Suche unterstützt. Wenn Sie nicht festgelegt ist, benötigen Sie einen alternativen Ansatz wie die manuelle Überprüfung der Zielordner.
+Rufen Sie die [IMAPIProp::GetProps-Methode](imapiprop-getprops.md) auf, um zu bestimmen, ob der von Ihnen verwendete Nachrichtenspeicher die Verwendung von Suchergebnissen unterstützt, um die **PR \_ STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md))-Eigenschaft abzurufen. Wenn das STORE_SEARCH_OK festgelegt ist, wird die Suche unterstützt. Wenn sie nicht festgelegt ist, benötigen Sie einen alternativen Ansatz, z. B. die manuelle Überprüfung der Zielordner.
   
 ### <a name="to-search-one-or-more-folders-in-a-message-store"></a>So durchsuchen Sie einen oder mehrere Ordner in einem Nachrichtenspeicher
   
-1. Wenn Sie einen Suchergebnisordner aus einer früheren Suche haben, fahren Sie mit Schritt 2 fort. Andernfalls können Sie einen Suchergebnisordner erstellen:
+1. Wenn Sie über einen Suchergebnisordner aus einer vorherigen Suche verfügen, fahren Sie mit Schritt 2 fort. Andernfalls, um einen Suchergebnisordner zu erstellen:
     
-    1. Rufen Sie die Eintrags-ID für den Suchergebnis-Stammordner ab, indem Sie die [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode des Nachrichtenspeichers aufrufen und **PR_FINDER_ENTRYID** ([pidtagfinderentryid (](pidtagfinderentryid-canonical-property.md)) anfordern.
+    1. Rufen Sie die Eintrags-ID für den Stammordner der Suchergebnisse ab, indem Sie die [IMAPIProp::GetProps-Methode](imapiprop-getprops.md) des Nachrichtenspeichers aufrufen und PR_FINDER_ENTRYID **(** [PidTagFinderEntryId](pidtagfinderentryid-canonical-property.md)) anfordern.
         
-    2. Rufen Sie [IMsgStore:: OpenEntry](imsgstore-openentry.md) auf, um den durch PR_FINDER_ENTRYID dargestellten Ordner zu öffnen. 
+    2. Rufen [Sie IMsgStore::OpenEntry auf,](imsgstore-openentry.md) um den durch die Datei dargestellten Ordner PR_FINDER_ENTRYID. 
         
-    3. Rufen Sie die [IMAPIFolder:: CreateFolder](imapifolder-createfolder.md) -Methode des Ordners auf, um einen Ordner mit Suchergebnissen mit dem FOLDER_SEARCH-Kennzeichen Satz zu erstellen. 
+    3. Rufen Sie die [IMAPIFolder::CreateFolder-Methode](imapifolder-createfolder.md) des Ordners auf, um einen Suchergebnisordner mit dem FOLDER_SEARCH zu erstellen. 
     
-2. Erstellen Sie eine Einschränkung für Ihre Suchkriterien. 
+2. Erstellen Sie eine Einschränkung, um Ihre Suchkriterien zu halten. 
     
-3. Erstellen Sie ein Array von Eintrags Bezeichnern, die die zu durchsuchenden Ordner darstellen. Dieser Schritt ist nicht erforderlich, wenn der Ordner Suchergebnisse zuvor verwendet wurde und Sie die gleichen Ordner durchsuchen möchten.
+3. Erstellen Sie ein Array von Eintragsbezeichnern, die die zu durchsuchenden Ordner darstellen. Dieser Schritt ist nicht erforderlich, wenn der Suchergebnisordner bereits verwendet wurde und Sie dieselben Ordner durchsuchen möchten.
     
-4. Rufen Sie die [IMAPIContainer:: SetSearchCriteria](imapicontainer-setsearchcriteria.md) -Methode des Suchergebnis Ordners auf, und zeigen Sie _lpContainerList_ auf das Array Eintrags-ID und _lpRestriction_ auf die Einschränkung. 
+4. Rufen Sie die [IMAPIContainer::SetSearchCriteria-Methode](imapicontainer-setsearchcriteria.md) des Suchergebnisordners auf, und zeigen Sie  _lpContainerList_ auf das Eintragsbezeichnerarray und  _lpRestriction_ auf die Einschränkung. 
     
-5. Wenn Sie sich mit dem Nachrichtenspeicher für vollständige Benachrichtigungen bei der Suche registriert haben, warten Sie, bis die Benachrichtigung eingeht.
+5. Wenn Sie sich für die Suche mit vollständigen Benachrichtigungen beim Nachrichtenspeicher registriert haben, warten Sie, bis die Benachrichtigung eintrifft.
     
-6. Zeigen Sie die Ergebnisse der Suche an, indem Sie die [IMAPIContainer::](imapicontainer-getcontentstable.md) getcontentable-Methode des Search-results-Ordners aufrufen, um auf die Inhaltstabelle zuzugreifen. 
+6. Zeigen Sie die Ergebnisse der Suche an, indem Sie die [IMAPIContainer::GetContentsTable-Methode](imapicontainer-getcontentstable.md) des Suchergebnisordners aufrufen, um auf die Inhaltstabelle zu zugreifen. 
     
-7. Rufen Sie die [IMAPITable:: QueryRows](imapitable-queryrows.md) -Methode der Inhaltstabelle auf, um die Nachrichten abzurufen, die den Suchkriterien entsprechen. 
+7. Rufen Sie die [IMAPITable::QueryRows-Methode](imapitable-queryrows.md) der Inhaltstabelle auf, um die Nachrichten abzurufen, die den Suchkriterien entsprechen. 
     
 
