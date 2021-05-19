@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251575
 localization_priority: Normal
 ms.assetid: c19efa2e-8249-d589-3f93-26c22dc4f4e7
-description: Gibt den Text aus dem Feld Subject der Eigenschaften eines Dokuments zurück.
+description: Gibt den Text aus dem Feld Betreff der Eigenschaften eines Dokuments zurück.
 ms.openlocfilehash: 39413620e94a33726088e2a0e90989b1ccbbdabc
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,16 +16,16 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33426849"
 ---
-# <a name="subject-function"></a><span data-ttu-id="c9970-103">SUBJECT Function</span><span class="sxs-lookup"><span data-stu-id="c9970-103">SUBJECT Function</span></span>
+# <a name="subject-function"></a><span data-ttu-id="d65a0-103">SUBJECT Function</span><span class="sxs-lookup"><span data-stu-id="d65a0-103">SUBJECT Function</span></span>
 
-<span data-ttu-id="c9970-104">Gibt den Text aus dem Feld **Subject** der Eigenschaften eines Dokuments zurück.</span><span class="sxs-lookup"><span data-stu-id="c9970-104">Returns the text from the **Subject** field of a document's properties.</span></span> 
+<span data-ttu-id="d65a0-104">Gibt den Text aus dem **Feld Betreff** der Eigenschaften eines Dokuments zurück.</span><span class="sxs-lookup"><span data-stu-id="d65a0-104">Returns the text from the **Subject** field of a document's properties.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="c9970-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="c9970-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="d65a0-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="d65a0-105">Syntax</span></span>
 
-<span data-ttu-id="c9970-106">Betreff ()</span><span class="sxs-lookup"><span data-stu-id="c9970-106">SUBJECT ()</span></span>
+<span data-ttu-id="d65a0-106">SUBJECT ()</span><span class="sxs-lookup"><span data-stu-id="d65a0-106">SUBJECT ()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="c9970-107">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="c9970-107">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="d65a0-107">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="d65a0-107">Return value</span></span>
 
-<span data-ttu-id="c9970-108">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="c9970-108">String</span></span>
+<span data-ttu-id="d65a0-108">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="d65a0-108">String</span></span>
   
 

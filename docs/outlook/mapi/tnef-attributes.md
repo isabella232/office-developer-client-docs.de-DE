@@ -15,12 +15,12 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33427857"
 ---
-# <a name="tnef-attributes"></a><span data-ttu-id="b645a-103">TNEF-Attribute</span><span class="sxs-lookup"><span data-stu-id="b645a-103">TNEF Attributes</span></span>
+# <a name="tnef-attributes"></a><span data-ttu-id="c4f9c-103">TNEF-Attribute</span><span class="sxs-lookup"><span data-stu-id="c4f9c-103">TNEF Attributes</span></span>
 
   
   
-<span data-ttu-id="b645a-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="b645a-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="c4f9c-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="c4f9c-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="b645a-105">Dieser Abschnitt enthält zusätzliche Informationen zu bestimmten TNEF-Attributen.</span><span class="sxs-lookup"><span data-stu-id="b645a-105">This section provides additional information about certain TNEF attributes.</span></span> <span data-ttu-id="b645a-106">Weitere Informationen zu den MAPI-Eigenschaften, denen die Attribute zugeordnet sind, finden Sie in den Referenz Einträgen für die einzelnen Eigenschaften.</span><span class="sxs-lookup"><span data-stu-id="b645a-106">For more information about the MAPI properties that the attributes are mapped to, see the reference entries for the individual properties.</span></span>
+<span data-ttu-id="c4f9c-105">Dieser Abschnitt enthält zusätzliche Informationen zu bestimmten TNEF-Attributen.</span><span class="sxs-lookup"><span data-stu-id="c4f9c-105">This section provides additional information about certain TNEF attributes.</span></span> <span data-ttu-id="c4f9c-106">Weitere Informationen zu den MAPI-Eigenschaften, den die Attribute zugeordnet sind, finden Sie in den Referenzeinträgen für die einzelnen Eigenschaften.</span><span class="sxs-lookup"><span data-stu-id="c4f9c-106">For more information about the MAPI properties that the attributes are mapped to, see the reference entries for the individual properties.</span></span>
   
 

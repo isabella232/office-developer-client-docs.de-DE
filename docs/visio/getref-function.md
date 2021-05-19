@@ -16,24 +16,24 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33424329"
 ---
-# <a name="getref-function"></a><span data-ttu-id="61959-103">GETREF Function</span><span class="sxs-lookup"><span data-stu-id="61959-103">GETREF Function</span></span>
+# <a name="getref-function"></a><span data-ttu-id="13163-103">GETREF Function</span><span class="sxs-lookup"><span data-stu-id="13163-103">GETREF Function</span></span>
 
-<span data-ttu-id="61959-104">Verweist auf eine Zelle und berechnet die Formel nicht neu, wenn sich die referenzierte Zelle ändert.</span><span class="sxs-lookup"><span data-stu-id="61959-104">References a cell and doesn't recalculate the formula when the referenced cell changes.</span></span>
+<span data-ttu-id="13163-104">Verweist auf eine Zelle und berechnet die Formel nicht neu, wenn sich die referenzierte Zelle ändert.</span><span class="sxs-lookup"><span data-stu-id="13163-104">References a cell and doesn't recalculate the formula when the referenced cell changes.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="61959-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="61959-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="13163-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="13163-105">Syntax</span></span>
 
-<span data-ttu-id="61959-106">GETREF (\* \* *cellName* \* \*)</span><span class="sxs-lookup"><span data-stu-id="61959-106">GETREF(\*\* *cellname* \*\* )</span></span> 
+<span data-ttu-id="13163-106">GETREF(\*\* *cellname* \*\* )</span><span class="sxs-lookup"><span data-stu-id="13163-106">GETREF(\*\* *cellname* \*\* )</span></span> 
   
-### <a name="parameters"></a><span data-ttu-id="61959-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="61959-107">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="13163-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="13163-107">Parameters</span></span>
 
-|<span data-ttu-id="61959-108">**Name**</span><span class="sxs-lookup"><span data-stu-id="61959-108">**Name**</span></span>|<span data-ttu-id="61959-109">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="61959-109">**Required/Optional**</span></span>|<span data-ttu-id="61959-110">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="61959-110">**Data Type**</span></span>|<span data-ttu-id="61959-111">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="61959-111">**Description**</span></span>|
+|<span data-ttu-id="13163-108">**Name**</span><span class="sxs-lookup"><span data-stu-id="13163-108">**Name**</span></span>|<span data-ttu-id="13163-109">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="13163-109">**Required/Optional**</span></span>|<span data-ttu-id="13163-110">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="13163-110">**Data Type**</span></span>|<span data-ttu-id="13163-111">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="13163-111">**Description**</span></span>|
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="61959-112">_cellName_</span><span class="sxs-lookup"><span data-stu-id="61959-112">_cellname_</span></span> <br/> |<span data-ttu-id="61959-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="61959-113">Required</span></span>  <br/> |<span data-ttu-id="61959-114">**String**</span><span class="sxs-lookup"><span data-stu-id="61959-114">**String**</span></span> <br/> |<span data-ttu-id="61959-115">Der Name der Zelle, auf die ein Verweis abgerufen werden soll.</span><span class="sxs-lookup"><span data-stu-id="61959-115">The name of the cell to get a reference to.</span></span>  <br/> |
+| <span data-ttu-id="13163-112">_cellname_</span><span class="sxs-lookup"><span data-stu-id="13163-112">_cellname_</span></span> <br/> |<span data-ttu-id="13163-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="13163-113">Required</span></span>  <br/> |<span data-ttu-id="13163-114">**String**</span><span class="sxs-lookup"><span data-stu-id="13163-114">**String**</span></span> <br/> |<span data-ttu-id="13163-115">Der Name der Zelle, auf die verwiesen werden soll.</span><span class="sxs-lookup"><span data-stu-id="13163-115">The name of the cell to get a reference to.</span></span>  <br/> |
    
-## <a name="example"></a><span data-ttu-id="61959-116">Beispiel</span><span class="sxs-lookup"><span data-stu-id="61959-116">Example</span></span>
+## <a name="example"></a><span data-ttu-id="13163-116">Beispiel</span><span class="sxs-lookup"><span data-stu-id="13163-116">Example</span></span>
 
-<span data-ttu-id="61959-117">SETF (GETREF (PinX), 5.1)</span><span class="sxs-lookup"><span data-stu-id="61959-117">SETF(GETREF(PinX),5.1)</span></span> 
+<span data-ttu-id="13163-117">SETF(GETREF(PinX),5.1)</span><span class="sxs-lookup"><span data-stu-id="13163-117">SETF(GETREF(PinX),5.1)</span></span> 
   
-<span data-ttu-id="61959-118">Legt die Formel der Zelle DrehbezX auf 5,1 fest.</span><span class="sxs-lookup"><span data-stu-id="61959-118">Sets the formula of the PinX cell to 5.1.</span></span> 
+<span data-ttu-id="13163-118">Legt die Formel der Zelle DrehbezX auf 5,1 fest.</span><span class="sxs-lookup"><span data-stu-id="13163-118">Sets the formula of the PinX cell to 5.1.</span></span> 
   
 

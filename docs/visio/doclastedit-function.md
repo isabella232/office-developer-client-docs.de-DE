@@ -14,16 +14,16 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33427717"
 ---
-# <a name="doclastedit-function"></a><span data-ttu-id="8b16d-103">DOCLASTEDIT Function</span><span class="sxs-lookup"><span data-stu-id="8b16d-103">DOCLASTEDIT Function</span></span>
+# <a name="doclastedit-function"></a><span data-ttu-id="529be-103">DOCLASTEDIT Function</span><span class="sxs-lookup"><span data-stu-id="529be-103">DOCLASTEDIT Function</span></span>
 
-<span data-ttu-id="8b16d-104">Gibt das Datum und die Uhrzeit als seriellen Werten zurück, zu dem das Dokument zuletzt bearbeitet wurde.</span><span class="sxs-lookup"><span data-stu-id="8b16d-104">Returns, as a serial value, the date and the time that a document was last edited.</span></span>
+<span data-ttu-id="529be-104">Gibt das Datum und die Uhrzeit als seriellen Werten zurück, zu dem das Dokument zuletzt bearbeitet wurde.</span><span class="sxs-lookup"><span data-stu-id="529be-104">Returns, as a serial value, the date and the time that a document was last edited.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="8b16d-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="8b16d-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="529be-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="529be-105">Syntax</span></span>
 
-<span data-ttu-id="8b16d-106">DOCLASTEDIT ()</span><span class="sxs-lookup"><span data-stu-id="8b16d-106">DOCLASTEDIT()</span></span>
+<span data-ttu-id="529be-106">DOCLASTEDIT()</span><span class="sxs-lookup"><span data-stu-id="529be-106">DOCLASTEDIT()</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="8b16d-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="8b16d-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="529be-107">Hinweise</span><span class="sxs-lookup"><span data-stu-id="529be-107">Remarks</span></span>
 
-<span data-ttu-id="8b16d-108">Verwenden Sie die [FORMAT](format-function.md)-Funktion zum Formatieren des Werts.</span><span class="sxs-lookup"><span data-stu-id="8b16d-108">Use the [FORMAT](format-function.md) function to format the value.</span></span> 
+<span data-ttu-id="529be-108">Verwenden Sie die [FORMAT](format-function.md)-Funktion zum Formatieren des Werts.</span><span class="sxs-lookup"><span data-stu-id="529be-108">Use the [FORMAT](format-function.md) function to format the value.</span></span> 
   
 

@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagsearchownerid (-Eigenschaft
+title: PidTagSearchOwnerId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,23 +15,23 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33426492"
 ---
-# <a name="pidtagsearchownerid-canonical-property"></a><span data-ttu-id="b4c70-103">Kanonische Pidtagsearchownerid (-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="b4c70-103">PidTagSearchOwnerId Canonical Property</span></span>
+# <a name="pidtagsearchownerid-canonical-property"></a><span data-ttu-id="f76e3-103">PidTagSearchOwnerId (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="f76e3-103">PidTagSearchOwnerId Canonical Property</span></span>
 
   
   
-<span data-ttu-id="b4c70-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="b4c70-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="f76e3-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="f76e3-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="b4c70-105">Enthält die Prozess-ID des Prozesses, der Benachrichtigungen an den Indexer über Objekte sendet, die für die Indizierung bereit sind.</span><span class="sxs-lookup"><span data-stu-id="b4c70-105">Contains the process ID of the process that is sending notifications to the indexer about objects ready for indexing.</span></span>
+<span data-ttu-id="f76e3-105">Enthält die Prozess-ID des Prozesses, der Benachrichtigungen über indizierungsbereite Objekte an den Indexer sendet.</span><span class="sxs-lookup"><span data-stu-id="f76e3-105">Contains the process ID of the process that is sending notifications to the indexer about objects ready for indexing.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="b4c70-106">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="b4c70-106">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="f76e3-106">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="f76e3-106">Quick info</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="b4c70-107">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="b4c70-107">Associated properties:</span></span>  <br/> |<span data-ttu-id="b4c70-108">PR_SEARCH_OWNER_ID</span><span class="sxs-lookup"><span data-stu-id="b4c70-108">PR_SEARCH_OWNER_ID</span></span>  <br/> |
-|<span data-ttu-id="b4c70-109">Verf�gbar gemacht von:</span><span class="sxs-lookup"><span data-stu-id="b4c70-109">Exposed by:</span></span>  <br/> |<span data-ttu-id="b4c70-110">Nachrichtenspeicherobjekt</span><span class="sxs-lookup"><span data-stu-id="b4c70-110">Message store object</span></span>  <br/> |
-|<span data-ttu-id="b4c70-111">Kennung:</span><span class="sxs-lookup"><span data-stu-id="b4c70-111">Identifier:</span></span>  <br/> |<span data-ttu-id="b4c70-112">0x3419</span><span class="sxs-lookup"><span data-stu-id="b4c70-112">0x3419</span></span>  <br/> |
-|<span data-ttu-id="b4c70-113">Eigenschafts:</span><span class="sxs-lookup"><span data-stu-id="b4c70-113">Property type:</span></span>  <br/> |<span data-ttu-id="b4c70-114">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="b4c70-114">PT_LONG</span></span>  <br/> |
-|<span data-ttu-id="b4c70-115">Property-Tag:</span><span class="sxs-lookup"><span data-stu-id="b4c70-115">Property tag:</span></span>  <br/> |<span data-ttu-id="b4c70-116">0x34190003</span><span class="sxs-lookup"><span data-stu-id="b4c70-116">0x34190003</span></span>  <br/> |
-|<span data-ttu-id="b4c70-117">Access</span><span class="sxs-lookup"><span data-stu-id="b4c70-117">Access:</span></span>  <br/> |<span data-ttu-id="b4c70-118">Schreibgeschützt</span><span class="sxs-lookup"><span data-stu-id="b4c70-118">Read-only</span></span>  <br/> |
+|<span data-ttu-id="f76e3-107">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="f76e3-107">Associated properties:</span></span>  <br/> |<span data-ttu-id="f76e3-108">PR_SEARCH_OWNER_ID</span><span class="sxs-lookup"><span data-stu-id="f76e3-108">PR_SEARCH_OWNER_ID</span></span>  <br/> |
+|<span data-ttu-id="f76e3-109">Verf�gbar gemacht von:</span><span class="sxs-lookup"><span data-stu-id="f76e3-109">Exposed by:</span></span>  <br/> |<span data-ttu-id="f76e3-110">Message store-Objekt</span><span class="sxs-lookup"><span data-stu-id="f76e3-110">Message store object</span></span>  <br/> |
+|<span data-ttu-id="f76e3-111">Kennung:</span><span class="sxs-lookup"><span data-stu-id="f76e3-111">Identifier:</span></span>  <br/> |<span data-ttu-id="f76e3-112">0x3419</span><span class="sxs-lookup"><span data-stu-id="f76e3-112">0x3419</span></span>  <br/> |
+|<span data-ttu-id="f76e3-113">Eigenschaftstyp:</span><span class="sxs-lookup"><span data-stu-id="f76e3-113">Property type:</span></span>  <br/> |<span data-ttu-id="f76e3-114">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="f76e3-114">PT_LONG</span></span>  <br/> |
+|<span data-ttu-id="f76e3-115">Eigenschaftstag:</span><span class="sxs-lookup"><span data-stu-id="f76e3-115">Property tag:</span></span>  <br/> |<span data-ttu-id="f76e3-116">0x34190003</span><span class="sxs-lookup"><span data-stu-id="f76e3-116">0x34190003</span></span>  <br/> |
+|<span data-ttu-id="f76e3-117">Zugriff:</span><span class="sxs-lookup"><span data-stu-id="f76e3-117">Access:</span></span>  <br/> |<span data-ttu-id="f76e3-118">Schreibgeschützt</span><span class="sxs-lookup"><span data-stu-id="f76e3-118">Read-only</span></span>  <br/> |
    
 

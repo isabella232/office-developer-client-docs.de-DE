@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagformhidden (-Eigenschaft
+title: PidTagFormHidden (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,46 +19,46 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33424707"
 ---
-# <a name="pidtagformhidden-canonical-property"></a><span data-ttu-id="f8545-103">Kanonische Pidtagformhidden (-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="f8545-103">PidTagFormHidden Canonical Property</span></span>
+# <a name="pidtagformhidden-canonical-property"></a><span data-ttu-id="3faba-103">PidTagFormHidden (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="3faba-103">PidTagFormHidden Canonical Property</span></span>
 
   
   
-<span data-ttu-id="f8545-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="f8545-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="3faba-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="3faba-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="f8545-105">Enthält TRUE, wenn ein Formular unterdrückt werden soll, indem Sie Menüs und Dialogfelder verfassen.</span><span class="sxs-lookup"><span data-stu-id="f8545-105">Contains TRUE if a form is to be suppressed from display by compose menus and dialog boxes.</span></span> 
+<span data-ttu-id="3faba-105">Enthält TRUE, wenn ein Formular durch Verfassenmenüs und Dialogfelder von der Anzeige unterdrückt werden soll.</span><span class="sxs-lookup"><span data-stu-id="3faba-105">Contains TRUE if a form is to be suppressed from display by compose menus and dialog boxes.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="f8545-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="f8545-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="f8545-107">PR_FORM_HIDDEN</span><span class="sxs-lookup"><span data-stu-id="f8545-107">PR_FORM_HIDDEN</span></span>  <br/> |
-|<span data-ttu-id="f8545-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="f8545-108">Identifier:</span></span>  <br/> |<span data-ttu-id="f8545-109">0x3307</span><span class="sxs-lookup"><span data-stu-id="f8545-109">0x3307</span></span>  <br/> |
-|<span data-ttu-id="f8545-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="f8545-110">Data type:</span></span>  <br/> |<span data-ttu-id="f8545-111">PT_BOOLEAN</span><span class="sxs-lookup"><span data-stu-id="f8545-111">PT_BOOLEAN</span></span>  <br/> |
-|<span data-ttu-id="f8545-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="f8545-112">Area:</span></span>  <br/> |<span data-ttu-id="f8545-113">MAPI allgemein</span><span class="sxs-lookup"><span data-stu-id="f8545-113">MAPI common</span></span>  <br/> |
+|<span data-ttu-id="3faba-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="3faba-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="3faba-107">PR_FORM_HIDDEN</span><span class="sxs-lookup"><span data-stu-id="3faba-107">PR_FORM_HIDDEN</span></span>  <br/> |
+|<span data-ttu-id="3faba-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="3faba-108">Identifier:</span></span>  <br/> |<span data-ttu-id="3faba-109">0x3307</span><span class="sxs-lookup"><span data-stu-id="3faba-109">0x3307</span></span>  <br/> |
+|<span data-ttu-id="3faba-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="3faba-110">Data type:</span></span>  <br/> |<span data-ttu-id="3faba-111">PT_BOOLEAN</span><span class="sxs-lookup"><span data-stu-id="3faba-111">PT_BOOLEAN</span></span>  <br/> |
+|<span data-ttu-id="3faba-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="3faba-112">Area:</span></span>  <br/> |<span data-ttu-id="3faba-113">MAPI allgemein</span><span class="sxs-lookup"><span data-stu-id="3faba-113">MAPI common</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="f8545-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="f8545-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="3faba-114">Hinweise</span><span class="sxs-lookup"><span data-stu-id="3faba-114">Remarks</span></span>
 
-<span data-ttu-id="f8545-115">Formularbezogene Eigenschaften sind schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="f8545-115">Form-related properties are read-only.</span></span> 
+<span data-ttu-id="3faba-115">Formularbezogene Eigenschaften sind schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="3faba-115">Form-related properties are read-only.</span></span> 
   
-## <a name="related-resources"></a><span data-ttu-id="f8545-116">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="f8545-116">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="3faba-116">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="3faba-116">Related resources</span></span>
 
-### <a name="header-files"></a><span data-ttu-id="f8545-117">Header Dateien</span><span class="sxs-lookup"><span data-stu-id="f8545-117">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="3faba-117">Headerdateien</span><span class="sxs-lookup"><span data-stu-id="3faba-117">Header files</span></span>
 
-<span data-ttu-id="f8545-118">Mapidefs. h</span><span class="sxs-lookup"><span data-stu-id="f8545-118">Mapidefs.h</span></span>
+<span data-ttu-id="3faba-118">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="3faba-118">Mapidefs.h</span></span>
   
-> <span data-ttu-id="f8545-119">Stellt Datentypdefinitionen bereit.</span><span class="sxs-lookup"><span data-stu-id="f8545-119">Provides data type definitions.</span></span>
+> <span data-ttu-id="3faba-119">Bietet Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="3faba-119">Provides data type definitions.</span></span>
     
-<span data-ttu-id="f8545-120">Mapitags. h</span><span class="sxs-lookup"><span data-stu-id="f8545-120">Mapitags.h</span></span>
+<span data-ttu-id="3faba-120">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="3faba-120">Mapitags.h</span></span>
   
-> <span data-ttu-id="f8545-121">Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.</span><span class="sxs-lookup"><span data-stu-id="f8545-121">Contains definitions of properties listed as alternate names.</span></span>
+> <span data-ttu-id="3faba-121">Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.</span><span class="sxs-lookup"><span data-stu-id="3faba-121">Contains definitions of properties listed as alternate names.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="f8545-122">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="f8545-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3faba-122">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="3faba-122">See also</span></span>
 
 
 
-[<span data-ttu-id="f8545-123">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="f8545-123">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="3faba-123">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="3faba-123">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="f8545-124">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="f8545-124">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="3faba-124">KANONISCHE EIGENSCHAFTEN VON MAPI</span><span class="sxs-lookup"><span data-stu-id="3faba-124">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="f8545-125">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="f8545-125">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="3faba-125">Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="3faba-125">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="f8545-126">Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="f8545-126">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="3faba-126">Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="3faba-126">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 
