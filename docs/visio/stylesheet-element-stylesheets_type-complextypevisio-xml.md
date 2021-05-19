@@ -1,5 +1,5 @@
 ---
-title: Stylesheet-Element (StyleSheets_Type complexType) (Visio XML)
+title: StyleSheet-Element (StyleSheets_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34541939"
 ---
-# <a name="stylesheet-element-stylesheetstype-complextype-visio-xml"></a>Stylesheet-Element (StyleSheets_Type complexType) (Visio XML)
+# <a name="stylesheet-element-stylesheets_type-complextype-visio-xml"></a>StyleSheet-Element (StyleSheets_Type complexType) (Visio XML)
 
 Repräsentiert eine in einem Dokument definierte Formatvorlage.
   
@@ -24,8 +24,8 @@ Repräsentiert eine in einem Dokument definierte Formatvorlage.
 |:-----|:-----|
 |**Elementtyp** <br/> |[StyleSheet_Type](stylesheet_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
-|**Dokumentteile** <br/> |Document. XML  <br/> |
+|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
+|**Dokumentteile** <br/> |document.xml  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -35,13 +35,13 @@ Repräsentiert eine in einem Dokument definierte Formatvorlage.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[StyleSheets](stylesheets-element-visiodocument_type-complextypevisio-xml.md) <br/> |[StyleSheets_Type](stylesheets_type-complextypevisio-xml.md) <br/> |Enthält eine Auflistung von **Stylesheet** -Elementen für das Dokument.  <br/> |
+|[StyleSheets](stylesheets-element-visiodocument_type-complextypevisio-xml.md) <br/> |[StyleSheets_Type](stylesheets_type-complextypevisio-xml.md) <br/> |Enthält eine Auflistung von **StyleSheet-Elementen** für das Dokument.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -54,13 +54,13 @@ Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOc
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|FillStyle  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> |Die ID des Stylesheet-Elements, von dem diese Formatvorlage die Füllungsformatierung erbt.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
-|ID  <br/> |XSD: unsignedInt  <br/> |erforderlich  <br/> |Die eindeutige ID des Elements innerhalb des übergeordneten Elements.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
-|Iscustomname  <br/> |XSD: Boolean  <br/> |Optional  <br/> |Gibt an, ob der Name vom Benutzer angepasst wurde.  <br/> |Werte des XSD: Boolean-Typs.  <br/> |
-|IsCustomNameU  <br/> |XSD: Boolean  <br/> |Optional  <br/> |Gibt an, ob der universelle Name vom Benutzer angepasst wurde.  <br/> |Werte des XSD: Boolean-Typs.  <br/> |
-|LineStyle  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> |Die ID des Stylesheet-Elements, von dem diese Format Linienformatierung erbt.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
-|Name  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Der Name des Elements.  <br/> |Werte des Typs XSD: String.  <br/> |
-|NameU  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Der universelle Name des-Elements.  <br/> |Werte des Typs XSD: String.  <br/> |
-|TextStyle  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> |Die ID des Stylesheet-Elements, von dem diese Formatvorlage die Textformatierung erbt.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
+|FillStyle  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> |Die ID des StyleSheet-Elements, von dem diese Formatvorlage die Füllformatierung erbt.  <br/> |Werte des xsd:unsignedInt-Typs.  <br/> |
+|ID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> |Die eindeutige ID des Elements innerhalb des übergeordneten Elements.  <br/> |Werte des xsd:unsignedInt-Typs.  <br/> |
+|IsCustomName  <br/> |xsd:boolean  <br/> |Optional  <br/> |Gibt an, ob der Name vom Benutzer angepasst wurde.  <br/> |Werte des typs xsd:boolean.  <br/> |
+|IsCustomNameU  <br/> |xsd:boolean  <br/> |Optional  <br/> |Gibt an, ob der universelle Name vom Benutzer angepasst wurde.  <br/> |Werte des typs xsd:boolean.  <br/> |
+|LineStyle  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> |Die ID des StyleSheet-Elements, von dem diese Formatvorlage die Zeilenformatierung erbt.  <br/> |Werte des xsd:unsignedInt-Typs.  <br/> |
+|Name  <br/> |xsd:string  <br/> |Optional  <br/> |Der Name des Elements.  <br/> |Werte des xsd:string-Typs.  <br/> |
+|NameU  <br/> |xsd:string  <br/> |Optional  <br/> |Der universelle Name des Elements.  <br/> |Werte des xsd:string-Typs.  <br/> |
+|TextStyle  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> |Die ID des StyleSheet-Elements, von dem diese Formatvorlage die Textformatierung erbt.  <br/> |Werte des xsd:unsignedInt-Typs.  <br/> |
    
 

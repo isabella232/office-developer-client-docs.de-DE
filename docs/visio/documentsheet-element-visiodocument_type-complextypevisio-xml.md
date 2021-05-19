@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34540042"
 ---
-# <a name="documentsheet-element-visiodocumenttype-complextype-visio-xml"></a>DocumentSheet-Element (VisioDocument_Type complexType) (Visio XML)
+# <a name="documentsheet-element-visiodocument_type-complextype-visio-xml"></a>DocumentSheet-Element (VisioDocument_Type complexType) (Visio XML)
 
 Gibt eine DocumentSheet-Struktur an.
   
@@ -24,8 +24,8 @@ Gibt eine DocumentSheet-Struktur an.
 |:-----|:-----|
 |**Elementtyp** <br/> |[DocumentSheet_Type](documentsheet_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
-|**Dokumentteile** <br/> |Document. XML  <br/> |
+|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
+|**Dokumentteile** <br/> |document.xml  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,28 +36,28 @@ Gibt eine DocumentSheet-Struktur an.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[VisioDocument](visiodocument-elementvisio-xml.md) <br/> |[VisioDocument_Type](visiodocument_type-complextypevisio-xml.md) <br/> |Das Stammelement eines Microsoft Visio Dokuments.  <br/> |
+|[VisioDocument](visiodocument-elementvisio-xml.md) <br/> |[VisioDocument_Type](visiodocument_type-complextypevisio-xml.md) <br/> |Das Stammelement eines Microsoft-Visio Dokument.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Cell](cell-elementvisio-xml.md) <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |Gibt eine Zelle in einer DocumentSheet an.  <br/> |
+|[Cell](cell-elementvisio-xml.md) <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |Gibt eine Zelle in einem DocumentSheet an.  <br/> |
    
 ### <a name="attributes"></a>Attribute
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|Iscustomname  <br/> |XSD: Boolean  <br/> |Optional  <br/> |Beschreibt, ob der Name vom Benutzer angepasst wurde.  <br/> |Werte des XSD: Boolean-Typs.  <br/> |
-|IsCustomNameU  <br/> |XSD: Boolean  <br/> |Optional  <br/> |Beschreibt, ob der universelle Name vom Benutzer angepasst wurde.  <br/> |Werte des XSD: Boolean-Typs.  <br/> |
-|Name  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Gibt den sprachabhängigen Namen des DocumentSheet an.  <br/> |Werte des Typs XSD: String.  <br/> |
-|NameU  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Gibt den sprachunabhängigen Namen des DocumentSheet an.  <br/> |Werte des Typs XSD: String.  <br/> |
-|UniqueID  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Optionaler string-Wert. Eine GUID (Globally Unique Identifier), die das Shape identifiziert.  <br/> |Werte des Typs XSD: String.  <br/> |
+|IsCustomName  <br/> |xsd:boolean  <br/> |Optional  <br/> |Beschreibt, ob der Name vom Benutzer angepasst wurde.  <br/> |Werte des xsd:Boolean-Typs.  <br/> |
+|IsCustomNameU  <br/> |xsd:boolean  <br/> |Optional  <br/> |Beschreibt, ob der universelle Name vom Benutzer angepasst wurde.  <br/> |Werte des xsd:Boolean-Typs.  <br/> |
+|Name  <br/> |xsd:string  <br/> |Optional  <br/> |Gibt den sprachabhängigen Namen des DocumentSheet an.  <br/> |Werte des xsd:string-Typs.  <br/> |
+|NameU  <br/> |xsd:string  <br/> |Optional  <br/> |Gibt den sprachunabhängigen Namen des DocumentSheets an.  <br/> |Werte des xsd:string-Typs.  <br/> |
+|UniqueID  <br/> |xsd:string  <br/> |Optional  <br/> |Optionaler string-Wert. Eine GUID (global eindeutiger Bezeichner), die das Shape identifiziert.  <br/> |Werte des xsd:string-Typs.  <br/> |
    
 

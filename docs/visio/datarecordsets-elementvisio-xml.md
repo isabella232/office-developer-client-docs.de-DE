@@ -1,5 +1,5 @@
 ---
-title: DataRecordsets-Element (Visio XML)
+title: DataRecordSets-Element (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -14,9 +14,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34542443"
 ---
-# <a name="datarecordsets-element-visio-xml"></a>DataRecordsets-Element (Visio XML)
+# <a name="datarecordsets-element-visio-xml"></a>DataRecordSets-Element (Visio XML)
 
-Enthält alle DataRecordset-Elemente im Dokument. **** 
+Enthält alle **DataRecordset-Elemente** im Dokument. 
   
 ## <a name="element-information"></a>Informationen zum Element
 
@@ -24,8 +24,8 @@ Enthält alle DataRecordset-Elemente im Dokument. ****
 |:-----|:-----|
 |**Elementtyp** <br/> |[DataRecordSets_Type](datarecordsets_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
-|**Dokumentteile** <br/> |Recordsets. XML  <br/> |
+|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
+|**Dokumentteile** <br/> |recordsets.xml  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,7 +36,7 @@ Enthält alle DataRecordset-Elemente im Dokument. ****
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -46,14 +46,14 @@ Keine.
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[DataRecordSet](datarecordset-element-datarecordsets_type-complextypevisio-xml.md) <br/> |[DataRecordSet_Type](datarecordset_type-complextypevisio-xml.md) <br/> |Enthält alle DataRecordset-Elemente im Dokument. ****  <br/> |
+|[DataRecordSet](datarecordset-element-datarecordsets_type-complextypevisio-xml.md) <br/> |[DataRecordSet_Type](datarecordset_type-complextypevisio-xml.md) <br/> |Enthält alle **DataRecordset-Elemente** im Dokument.  <br/> |
    
 ### <a name="attributes"></a>Attribute
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|ActiveRecordsetID  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> |Die ID des aktiven Datenrecordset im Fenster **externe Daten** , wenn das Fenster geschlossen wird, sodass es wiederhergestellt werden kann, wenn das Fenster das nächste Mal geöffnet wird.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
-|DataWindowOrder  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Die Reihenfolge der Daten Recordsets, die auf den Registerkarten des Fensters **externe Daten** angezeigt werden. Eine sortierte Liste von Datensatzgruppen-IDs, getrennt durch Semikolons.  <br/> |Werte des Typs XSD: String.  <br/> |
-|NextID  <br/> |XSD: unsignedInt  <br/> |erforderlich  <br/> |Die nächste verfügbare ID für ein neues Daten-Recordset-Objekt.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
+|ActiveRecordsetID  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> |Die ID des aktiven Datendatensatz im Fenster Externe Daten, wenn das Fenster geschlossen wird, sodass es beim nächsten Öffnen des Fensters wiederhergestellt werden kann.   <br/> |Werte des xsd:unsignedInt-Typs.  <br/> |
+|DataWindowOrder  <br/> |xsd:string  <br/> |Optional  <br/> |Die Reihenfolge der Datendatensätze, die auf den Registerkarten des Fensters Externe **Daten angezeigt** werden. Eine geordnete Liste von Daten-Recordset-IDs, getrennt durch Semikolonen.  <br/> |Werte des xsd:string-Typs.  <br/> |
+|NextID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> |Die nächste verfügbare ID für ein neues Daten recordset.  <br/> |Werte des xsd:unsignedInt-Typs.  <br/> |
    
 

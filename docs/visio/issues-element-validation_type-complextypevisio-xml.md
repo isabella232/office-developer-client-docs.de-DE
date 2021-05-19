@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34542940"
 ---
-# <a name="issues-element-validationtype-complextype-visio-xml"></a>Issues-Element (Validation_Type complexType) (Visio XML)
+# <a name="issues-element-validation_type-complextype-visio-xml"></a>Issues-Element (Validation_Type complexType) (Visio XML)
 
 Enthält alle Issue-Elemente für das Dokument.
   
@@ -24,8 +24,8 @@ Enthält alle Issue-Elemente für das Dokument.
 |:-----|:-----|
 |**Elementtyp** <br/> |[Issues_Type](issues_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
-|**Dokumentteile** <br/> |Validation. XML  <br/> |
+|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
+|**Dokumentteile** <br/> |validation.xml  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,7 +36,7 @@ Enthält alle Issue-Elemente für das Dokument.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -48,7 +48,7 @@ Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOc
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Problem](issue-element-issues_type-complextypevisio-xml.md) <br/> |[Issue_Type](issue_type-complextypevisio-xml.md) <br/> |Stellt ein einzelnes Validierungs Problem im Dokument dar.  <br/> |
+|[Problem](issue-element-issues_type-complextypevisio-xml.md) <br/> |[Issue_Type](issue_type-complextypevisio-xml.md) <br/> |Stellt ein einzelnes Überprüfungsproblem im Dokument dar.  <br/> |
    
 ### <a name="attributes"></a>Attribute
 

@@ -1,5 +1,5 @@
 ---
-title: WeatherData-Element (Outlook-Wetter Informations Schema)
+title: weatherdata-Element (Outlook Wetterinformationsschema)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 84b16927-964e-24be-feaa-e0c11cf062f3
-description: Definiert das Weather-Element.
+description: Definiert das Wetterelement.
 ms.openlocfilehash: bb8c76efd03661083a15aa315cf42c3a6c088b6f
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
@@ -15,9 +15,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34538984"
 ---
-# <a name="weatherdata-element-outlook-weather-information-schema"></a>WeatherData-Element (Outlook-Wetter Informations Schema)
+# <a name="weatherdata-element-outlook-weather-information-schema"></a>weatherdata-Element (Outlook Wetterinformationsschema)
 
-Definiert das Weather-Element.
+Definiert das Wetterelement.
   
 ## <a name="element-information"></a>Informationen zum Element
 
@@ -25,7 +25,7 @@ Definiert das Weather-Element.
 |:-----|:-----|
 |**Elementtyp** <br/> ||
 |**Namespace** <br/> |http://schemas.microsoft.com/office/outlook/15/getweatherinfo.xsd  <br/> |
-|**Schemadatei** <br/> |GetWeatherInfo. xsd  <br/> |
+|**Schemadatei** <br/> |getweatherinfo.xsd  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -46,7 +46,7 @@ Definiert das Weather-Element.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -56,7 +56,7 @@ Keine.
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Wetter](weather-element-weatherdata-elementoutlook-weather-information-schema.md) <br/> |[weathertype](weathertype-complextype-outlook-weather-information-schema.md) <br/> |Gibt die Wetterbedingungen eines Standorts an.  <br/> |
+|[Wetter](weather-element-weatherdata-elementoutlook-weather-information-schema.md) <br/> |[weatherType](weathertype-complextype-outlook-weather-information-schema.md) <br/> |Gibt die Wetterbedingungen eines Standorts an.  <br/> |
    
 ### <a name="attributes"></a>Attribute
 

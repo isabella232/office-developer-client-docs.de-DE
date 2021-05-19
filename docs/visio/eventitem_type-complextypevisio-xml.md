@@ -13,14 +13,14 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34541792"
 ---
-# <a name="eventitemtype-complextype-visio-xml"></a>EventItem_Type complexType (Visio XML)
+# <a name="eventitem_type-complextype-visio-xml"></a>EventItem_Type complexType (Visio XML)
 
 ## <a name="type-information"></a>Informationen zum Typ
 
 |||
 |:-----|:-----|
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
-|**Schemadatei** <br/> |VisioSchema15-2012-06 -05. xsd  <br/> |
+|**Schemadatei** <br/> |VisioSchema15-2012-06-05.xsd  <br/> |
 |**Erweiterungsbasis** <br/> |Keine  <br/> |
    
 ## <a name="definition"></a>Definition
@@ -56,7 +56,7 @@ ms.locfileid: "34541792"
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -66,11 +66,11 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|Aktion  <br/> |XSD: unsignedShort abgeleitet  <br/> |erforderlich  <br/> ||Werte des XSD: unsignedShort abgeleitet-Typs.  <br/> |
-|Aktiviert  <br/> |XSD: Boolean  <br/> |Optional  <br/> ||Werte des XSD: Boolean-Typs.  <br/> |
-|EventCode  <br/> |XSD: unsignedShort abgeleitet  <br/> |erforderlich  <br/> ||Werte des XSD: unsignedShort abgeleitet-Typs.  <br/> |
-|ID  <br/> |XSD: unsignedInt  <br/> |erforderlich  <br/> ||Werte des XSD: unsignedInt-Typs.  <br/> |
-|Ziel  <br/> |XSD: Zeichenfolge  <br/> |erforderlich  <br/> ||Werte des Typs XSD: String.  <br/> |
-|TargetArgs  <br/> |XSD: Zeichenfolge  <br/> |erforderlich  <br/> ||Werte des Typs XSD: String.  <br/> |
+|Aktion  <br/> |xsd:unsignedShort  <br/> |erforderlich  <br/> ||Werte des Typs xsd:unsignedShort.  <br/> |
+|Aktiviert  <br/> |xsd:boolean  <br/> |Optional  <br/> ||Werte des typs xsd:boolean.  <br/> |
+|EventCode  <br/> |xsd:unsignedShort  <br/> |erforderlich  <br/> ||Werte des Typs xsd:unsignedShort.  <br/> |
+|ID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> ||Werte des xsd:unsignedInt-Typs.  <br/> |
+|Ziel  <br/> |xsd:string  <br/> |erforderlich  <br/> ||Werte des xsd:string-Typs.  <br/> |
+|TargetArgs  <br/> |xsd:string  <br/> |erforderlich  <br/> ||Werte des xsd:string-Typs.  <br/> |
    
 

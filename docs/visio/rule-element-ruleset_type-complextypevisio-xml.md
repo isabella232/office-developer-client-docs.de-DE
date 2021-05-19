@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34541708"
 ---
-# <a name="rule-element-rulesettype-complextype-visio-xml"></a>Rule-Element (RuleSet_Type complexType) (Visio XML)
+# <a name="rule-element-ruleset_type-complextype-visio-xml"></a>Rule-Element (RuleSet_Type complexType) (Visio XML)
 
 Repräsentiert eine einzelne Überprüfungsregel in einem Regelsatz für die Diagrammüberprüfung.
   
@@ -24,8 +24,8 @@ Repräsentiert eine einzelne Überprüfungsregel in einem Regelsatz für die Dia
 |:-----|:-----|
 |**Elementtyp** <br/> |[Rule_Type](rule_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
-|**Dokumentteile** <br/> |Validation. XML  <br/> |
+|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
+|**Dokumentteile** <br/> |validation.xml  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,30 +36,30 @@ Repräsentiert eine einzelne Überprüfungsregel in einem Regelsatz für die Dia
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[RuleSet](ruleset-element-rulesets_type-complextypevisio-xml.md) <br/> |[RuleSet_Type](ruleset_type-complextypevisio-xml.md) <br/> |Stellt einen Satz von Diagramm Validierungsregeln dar.  <br/> |
+|[RuleSet](ruleset-element-rulesets_type-complextypevisio-xml.md) <br/> |[RuleSet_Type](ruleset_type-complextypevisio-xml.md) <br/> |Stellt einen Satz von Diagrammüberprüfungsregeln dar.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[RuleFilter](rulefilter-element-rule_type-complextypevisio-xml.md) <br/> |[RuleFilter_Type](rulefilter_type-complextypevisio-xml.md) <br/> |Gibt den logischen Ausdruck an, der bestimmt, ob die Validierungsregel auf ein Zielobjekt angewendet werden soll.  <br/> |
-|[RuleTest](ruletest-element-rule_type-complextypevisio-xml.md) <br/> |[RuleTest_Type](ruletest_type-complextypevisio-xml.md) <br/> |Gibt den logischen Ausdruck an, der bestimmt, ob das Zielobjekt der Überprüfungsregel entspricht.  <br/> |
+|[RuleFilter](rulefilter-element-rule_type-complextypevisio-xml.md) <br/> |[RuleFilter_Type](rulefilter_type-complextypevisio-xml.md) <br/> |Gibt den logischen Ausdruck an, der bestimmt, ob die Gültigkeitsprüfungsregel auf ein Zielobjekt angewendet werden soll.  <br/> |
+|[RuleTest](ruletest-element-rule_type-complextypevisio-xml.md) <br/> |[RuleTest_Type](ruletest_type-complextypevisio-xml.md) <br/> |Gibt den logischen Ausdruck an, der bestimmt, ob das Zielobjekt der Gültigkeitsprüfungsregel entspricht.  <br/> |
    
 ### <a name="attributes"></a>Attribute
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|Kategorie  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Gibt den Text an, der in der Spalte **Category** des Fensters Probleme angezeigt wird. Der Standardwert ist eine leere Zeichenfolge.  <br/> |Werte des Typs XSD: String.  <br/> |
-|Beschreibung  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Gibt die Beschreibung der Überprüfungsregel an, die auf der Benutzeroberfläche angezeigt wird. Der Standardwert ist "unbekannt".  <br/> |Werte des Typs XSD: String.  <br/> |
-|ID  <br/> |XSD: unsignedInt  <br/> |erforderlich  <br/> |Gibt den eindeutigen Bezeichner für die Validierungsregel an.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
-|Ignoriert  <br/> |XSD: Boolean  <br/> |Optional  <br/> |Gibt an, ob die Überprüfungsregel derzeit ignoriert wird. Der Standardwert ist False.  <br/> |Werte des XSD: Boolean-Typs.  <br/> |
-|NameU  <br/> |XSD: Zeichenfolge  <br/> |erforderlich  <br/> |Gibt den universellen Namen der Überprüfungsregel an.  <br/> |Werte des Typs XSD: String.  <br/> |
-|RuleTarget  <br/> |XSD: int  <br/> |Optional  <br/> |Gibt den Typ des Objekts an, auf das die Validierungsregel angewendet wird.  <br/> |Werte des Typs XSD: int.  <br/> |
+|Kategorie  <br/> |xsd:string  <br/> |Optional  <br/> |Gibt den Text an, der in der **Spalte Kategorie** des Fensters Probleme angezeigt wird. Der Standardwert ist eine leere Zeichenfolge.  <br/> |Werte des xsd:string-Typs.  <br/> |
+|Beschreibung  <br/> |xsd:string  <br/> |Optional  <br/> |Gibt die Beschreibung der Überprüfungsregel an, die auf der Benutzeroberfläche angezeigt wird. Der Standardwert ist "Unknown".  <br/> |Werte des xsd:string-Typs.  <br/> |
+|ID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> |Gibt den eindeutigen Bezeichner für die Gültigkeitsprüfungsregel an.  <br/> |Werte des xsd:unsignedInt-Typs.  <br/> |
+|Ignoriert  <br/> |xsd:boolean  <br/> |Optional  <br/> |Gibt an, ob die Gültigkeitsprüfungsregel derzeit ignoriert wird. Der Standardwert ist False.  <br/> |Werte des typs xsd:boolean.  <br/> |
+|NameU  <br/> |xsd:string  <br/> |erforderlich  <br/> |Gibt den universellen Namen der Gültigkeitsprüfungsregel an.  <br/> |Werte des xsd:string-Typs.  <br/> |
+|RuleTarget  <br/> |xsd:int  <br/> |Optional  <br/> |Gibt den Objekttyp an, auf den die Überprüfungsregel angewendet wird.  <br/> |Werte des xsd:int-Typs.  <br/> |
    
 

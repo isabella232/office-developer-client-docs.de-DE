@@ -20,32 +20,32 @@ ms.locfileid: "34541890"
 
 Stellt die Informationen in den verschiedenen Zeilen dar. In der Tabelle wird die Zelle C auf der Grundlage der Zeile beschrieben, in der sie enthalten ist.
   
-|Row|Beschreibung|
+|Zeile|Beschreibung|
 |:-----|:-----|
-|[EllipticalArcTo](ellipticalarcto-row-geometry-section.md) <br/> | Der Winkel der Hauptachse eines Bogens relativ zur *x* -Achse des übergeordneten Elements.  <br/> |
+|[EllipticalArcTo](ellipticalarcto-row-geometry-section.md) <br/> | Der Winkel der Hauptachse eines Bogens relativ zur  *x-Achse*  des übergeordneten Bogens.  <br/> |
 |[NURBSTo](nurbsto-row-geometry-section.md) <br/> | Der erste Knoten des nicht einheitlichen rationalen B-Splines (Nonuniform Rational B-spline, NURBS).  <br/> |
-|[Zeile SplineStart](splinestart-row-geometry-section.md) <br/> | Der letzte Knoten eines Splines.  <br/> |
-|[Ellipse](ellipse-row-geometry-section.md) <br/> | Eine *x* -Koordinate eines Points auf einer Ellipse; gepaart mit der *y* -Koordinate, dargestellt durch die Zelle [D](d-cell-geometry-section.md) .  <br/> |
+|[SplineStart](splinestart-row-geometry-section.md) <br/> | Der letzte Knoten eines Splines.  <br/> |
+|[Ellipse](ellipse-row-geometry-section.md) <br/> | Eine  x-Koordinate eines Punkts auf einer Ellipse; gekoppelt mit der y-Koordinate, die durch die [Zelle D dargestellt](d-cell-geometry-section.md) wird.   <br/> |
    
 ## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle C aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle C anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Geometrie *i* . C *j* wobei *i* und *j* = <1>, 2, 3...  <br/> |
-|| Geometrie *i* . C1 (Ellipsen Zeile)  <br/> |
+| Zellenname:  <br/> | Geometry  *i*  . C  *j,*            *wobei i*  und  *j*  = <1>, 2, 3...  <br/> |
+|| Geometry  *i*  . C1 (Ellipsenzeile)  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle C aus einem Programm aus nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle C nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**visSectionFirstComponent** +  *i* wobei *i* = 0, 1, 2...  <br/> |
-| Zeilenindex:  <br/> |**visRowVertex** +  *j* , wobei *j* = 0, 1, 2...  <br/> |
-||**visRowVertex** (Ellipsen Zeile)  <br/> |
+| Abschnittsindex:  <br/> |**visSectionFirstComponent**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowVertex**  +   *j,* *wobei j* = 0, 1, 2...  <br/> |
+||**visRowVertex** (Ellipsenzeile)  <br/> |
 | Zellenindex:  <br/> |**visEccentricityAngle** (EllipticalArcTo-Zeile)  <br/> |
 ||**visNURBSKnotPrev** (NURBSTo-Zeile)  <br/> |
-||**visSplineKnot3** (Zeile SplineStart-Zeile)  <br/> |
-||**visEllipseMinorX** (Ellipsen Zeile)  <br/> |
+||**visSplineKnot3** (SplineStart-Zeile)  <br/> |
+||**visEllipseMinorX** (Ellipse-Zeile)  <br/> |
    
 

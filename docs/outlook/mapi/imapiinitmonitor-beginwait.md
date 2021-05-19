@@ -44,7 +44,7 @@ S_OK
 E_OUTOFMEMORY
 >Es war nicht genügend Arbeitsspeicher vorhanden, um ein neues Objekt zu erstellen.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 Diese API hat dem Aufrufer eine Schnittstelle (threadsicher) bereitgestellt, die verwendet werden kann, um eine Blockierungswarte warten auf die MAPI-Initialisierung zu initiieren. Auf diese Weise kann der Verbraucher am besten auf die Anwendung warten.   Das Verhalten des Aufrufens von IMAPIWaitResult::End ist identisch mit dem Aufrufen von IMAPIInitMonitor::Wait.
 
 ## <a name="see-also"></a>Siehe auch

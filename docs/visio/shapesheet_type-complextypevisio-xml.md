@@ -13,14 +13,14 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34542058"
 ---
-# <a name="shapesheettype-complextype-visio-xml"></a>ShapeSheet_Type complexType (Visio XML)
+# <a name="shapesheet_type-complextype-visio-xml"></a>ShapeSheet_Type complexType (Visio XML)
 
 ## <a name="type-information"></a>Informationen zum Typ
 
 |||
 |:-----|:-----|
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
-|**Schemadatei** <br/> |VisioSchema15-2012-06 -05. xsd  <br/> |
+|**Schemadatei** <br/> |VisioSchema15-2012-06-05.xsd  <br/> |
 |**Erweiterungsbasis** <br/> |Sheet_Type  <br/> |
    
 ## <a name="definition"></a>Definition
@@ -110,33 +110,33 @@ ms.locfileid: "34542058"
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Data1](data1-element-shapesheet_type-complextypevisio-xml.md) <br/> |[Data_type](data_type-complextypevisio-xml.md) <br/> ||
-|[Data2](data2-element-shapesheet_type-complextypevisio-xml.md) <br/> |[Data_type](data_type-complextypevisio-xml.md) <br/> ||
-|[Data3](data3-element-shapesheet_type-complextypevisio-xml.md) <br/> |[Data_type](data_type-complextypevisio-xml.md) <br/> ||
+|[Data1](data1-element-shapesheet_type-complextypevisio-xml.md) <br/> |[Data_Type](data_type-complextypevisio-xml.md) <br/> ||
+|[Data2](data2-element-shapesheet_type-complextypevisio-xml.md) <br/> |[Data_Type](data_type-complextypevisio-xml.md) <br/> ||
+|[Data3](data3-element-shapesheet_type-complextypevisio-xml.md) <br/> |[Data_Type](data_type-complextypevisio-xml.md) <br/> ||
 |[ForeignData](foreigndata-element-shapesheet_type-complextypevisio-xml.md) <br/> |[ForeignData_Type](foreigndata_type-complextypevisio-xml.md) <br/> ||
-|[Shapes](shapes-element-shapesheet_type-complextypevisio-xml.md) <br/> |[Shapes_Type](shapes_type-complextypevisio-xml.md) <br/> ||
-|[Text](text-element-shapesheet_type-complextypevisio-xml.md) <br/> |[Text_type](text_type-complextypevisio-xml.md) <br/> ||
+|[Formen](shapes-element-shapesheet_type-complextypevisio-xml.md) <br/> |[Shapes_Type](shapes_type-complextypevisio-xml.md) <br/> ||
+|[Text](text-element-shapesheet_type-complextypevisio-xml.md) <br/> |[Text_Type](text_type-complextypevisio-xml.md) <br/> ||
    
 ### <a name="attributes"></a>Attribute
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|Del  <br/> |XSD: Boolean  <br/> |Optional  <br/> ||Werte des XSD: Boolean-Typs.  <br/> |
-|ID  <br/> |XSD: unsignedInt  <br/> |erforderlich  <br/> ||Werte des XSD: unsignedInt-Typs.  <br/> |
-|Iscustomname  <br/> |XSD: Boolean  <br/> |Optional  <br/> ||Werte des XSD: Boolean-Typs.  <br/> |
-|IsCustomNameU  <br/> |XSD: Boolean  <br/> |Optional  <br/> ||Werte des XSD: Boolean-Typs.  <br/> |
-|Master  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> ||Werte des XSD: unsignedInt-Typs.  <br/> |
-|MasterShape  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> ||Werte des XSD: unsignedInt-Typs.  <br/> |
-|Name  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> ||Werte des Typs XSD: String.  <br/> |
-|NameU  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> ||Werte des Typs XSD: String.  <br/> |
-|OriginalID  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> ||Werte des XSD: unsignedInt-Typs.  <br/> |
-|Typ  <br/> |XSD: Token  <br/> |Optional  <br/> ||Werte des XSD: Token-Typs.  <br/> |
-|UniqueID  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> ||Werte des Typs XSD: String.  <br/> |
+|Del  <br/> |xsd:boolean  <br/> |Optional  <br/> ||Werte des typs xsd:boolean.  <br/> |
+|ID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> ||Werte des xsd:unsignedInt-Typs.  <br/> |
+|IsCustomName  <br/> |xsd:boolean  <br/> |Optional  <br/> ||Werte des typs xsd:boolean.  <br/> |
+|IsCustomNameU  <br/> |xsd:boolean  <br/> |Optional  <br/> ||Werte des typs xsd:boolean.  <br/> |
+|Master  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> ||Werte des xsd:unsignedInt-Typs.  <br/> |
+|MasterShape  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> ||Werte des xsd:unsignedInt-Typs.  <br/> |
+|Name  <br/> |xsd:string  <br/> |Optional  <br/> ||Werte des xsd:string-Typs.  <br/> |
+|NameU  <br/> |xsd:string  <br/> |Optional  <br/> ||Werte des xsd:string-Typs.  <br/> |
+|OriginalID  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> ||Werte des xsd:unsignedInt-Typs.  <br/> |
+|Typ  <br/> |xsd:token  <br/> |Optional  <br/> ||Werte des xsd:token-Typs.  <br/> |
+|UniqueID  <br/> |xsd:string  <br/> |Optional  <br/> ||Werte des xsd:string-Typs.  <br/> |
    
 

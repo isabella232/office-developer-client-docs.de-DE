@@ -1,12 +1,12 @@
 ---
-title: Schema Zuordnung (Visio XML)
+title: Schemazuordnung (Visio XML)
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 3ff1f2e1-bdfe-2766-3c0f-0f299cc256e9
-description: In diesem Thema wird die XML-Schema Definition für das Visio 2013 Dateiformat veranschaulicht.
+description: In diesem Thema wird die XML-Schemadefinition für das Visio 2013-Dateiformat veranschaulicht.
 ms.openlocfilehash: 1822134546b730ceecb2f30183b4a8c325f37906
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
@@ -14,9 +14,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34539082"
 ---
-# <a name="schema-map-visio-xml"></a>Schema Zuordnung (Visio XML)
+# <a name="schema-map-visio-xml"></a>Schemazuordnung (Visio XML)
 
-In diesem Thema wird die XML-Schema Definition für das Visio 2013 Dateiformat veranschaulicht.
+In diesem Thema wird die XML-Schemadefinition für das Visio 2013-Dateiformat veranschaulicht.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

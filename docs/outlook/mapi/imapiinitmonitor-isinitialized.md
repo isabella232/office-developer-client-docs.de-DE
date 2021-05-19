@@ -36,7 +36,7 @@ Keine
 ## <a name="return-value"></a>Rückgabewert
 Ein BOOL, der den aktuellen Zustand der MAPI-Initialisierung angibt, ein Wert von TRUE bedeutet, dass MAPI initialisiert wurde und zur Verwendung verfügbar ist, während der Wert FALSE bedeutet, dass MAPI aktuell nicht initialisiert ist und nicht verwendet werden kann.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 Dies kann verwendet werden, um zu ermitteln, ob MAPI einsatzbereit ist, z. B. wenn Ihre Anwendung nur dann etwas tun wollte, wenn MAPI bereits initialisiert wurde, könnte dies eine nützliche Überprüfung einer Hintergrundaufgabe sein, um die Kosten für das Drehen von MAPI für optionale Arbeit zu verhindern.
 
 ## <a name="see-also"></a>Siehe auch

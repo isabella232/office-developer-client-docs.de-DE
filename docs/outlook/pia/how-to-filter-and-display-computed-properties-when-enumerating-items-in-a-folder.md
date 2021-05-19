@@ -52,8 +52,8 @@ Das [Table](https://msdn.microsoft.com/library/bb652856\(v=office.15\)) -Objekt 
 </tr>
 <tr class="odd">
 <td><p>Computer-Eigenschaften, z. B. <b>AutoResolvedWinner</b> und <b>BodyFormat</b>.</p></td>
-<td><p>Nicht unterstützt.</p></td>
-<td><p>Nicht unterstützt.</p></td>
+<td><p>Nicht unterstützt</p></td>
+<td><p>Nicht unterstützt</p></td>
 </tr>
 <tr class="even">
 <td><p>Mehrwertige Eigenschaften, z. B. <b>Categories</b>, <b>Children</b>, <b>Companies</b> und <b>VotingOptions</b>.</p></td>
@@ -122,7 +122,7 @@ In der folgenden Tabelle werden bekannte ungültige Eigenschaften aufgelistet, d
 </table>
 
 
-Einige berechnete Eigenschaften können nicht zum Spaltensatz für eine Tabelle hinzugefügt werden; im folgenden Codebeispiel wird diese Einschränkung umgangen. GetToDoItems verwendet eine DASL-Abfrage, um die Elemente zu beschränken, die in der **Table** angezeigt werde.. Wenn die berechnete Eigenschaft eine Namespacedarstellung hat, wird diese verwendet, um eine DASL-Abfrage erstellen, die das **Table**-Objekt so einschränkt, dass Zeilen für einen bestimmten Wert der berechneten Eigenschaft zurückgegeben werden. GetToDoItems ruft Elemente im Posteingang ab, wobei der Wert der[IsMarkedAsTask](https://msdn.microsoft.com/library/bb623631\(v=office.15\))- Eigenschaft gleich **true** ist; dann werden Werte bestimmten Aufgabeneigenschaften zugewiesen, z. B. [TaskSubject](https://msdn.microsoft.com/library/bb643880\(v=office.15\)), [TaskDueDate](https://msdn.microsoft.com/library/bb623035\(v=office.15\)), [TaskStartDate](https://msdn.microsoft.com/library/bb610832\(v=office.15\)) und [TaskCompletedDate](https://msdn.microsoft.com/library/bb624055\(v=office.15\)). Schließlich werden diese Eigenschaften in die Listener der Ablaufverfolgung der [Listeners](https://msdn.microsoft.com/library/system.diagnostics.debug.listeners.aspx)-Auflistung geschrieben.
+Einige berechnete Eigenschaften können nicht zum Spaltensatz für eine Tabelle hinzugefügt werden; im folgenden Codebeispiel wird diese Einschränkung umgangen. GetToDoItems verwendet eine DASL-Abfrage, um die Elemente zu beschränken, die in der **Table** angezeigt werde.. Wenn die berechnete Eigenschaft eine Namespacedarstellung hat, wird diese verwendet, um eine DASL-Abfrage erstellen, die das **Table**-Objekt so einschränkt, dass Zeilen für einen bestimmten Wert der berechneten Eigenschaft zurückgegeben werden. GetToDoItems ruft Elemente im Posteingang ab, wobei der Wert der [IsMarkedAsTask](https://msdn.microsoft.com/library/bb623631\(v=office.15\))- Eigenschaft gleich **true** ist; dann werden Werte bestimmten Aufgabeneigenschaften zugewiesen, z. B. [TaskSubject](https://msdn.microsoft.com/library/bb643880\(v=office.15\)), [TaskDueDate](https://msdn.microsoft.com/library/bb623035\(v=office.15\)), [TaskStartDate](https://msdn.microsoft.com/library/bb610832\(v=office.15\)) und [TaskCompletedDate](https://msdn.microsoft.com/library/bb624055\(v=office.15\)). Schließlich werden diese Eigenschaften in die Listener der Ablaufverfolgung der [Listeners](https://msdn.microsoft.com/library/system.diagnostics.debug.listeners.aspx)-Auflistung geschrieben.
 
 Wenn Sie Visual Studio verwenden, um dieses Codebeispiel zu testen, müssen Sie der Microsoft Outlook 15.0-Objektbibliothekkomponente zuerst einen Verweis hinzufügen und die Outlook-Variable angeben, wenn Sie den **Microsoft.Office.Interop.Outlook**-Namespace importieren. Die **using**-Anweisung darf im Codebeispiel nicht direkt vor den Funktionen stehen, sondern muss vor der öffentlichen Class-Deklaration hinzugefügt werden. Die folgende Codezeile zeigt, wie Sie den Import und die Zuweisung in C\# vornehmen.
 

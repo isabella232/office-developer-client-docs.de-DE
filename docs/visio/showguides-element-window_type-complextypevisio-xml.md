@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: b81bc46b-6eff-c11f-f583-85959a47c313
-description: Gibt an, ob Hilfslinien im Zeichnungsfenster angezeigt werden.
+description: Gibt an, ob Führungslinien im Zeichnungsfenster angezeigt werden.
 ms.openlocfilehash: 9f747568c664f86dd88a68b9a6e6e2f6df723f67
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
@@ -14,9 +14,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34542982"
 ---
-# <a name="showguides-element-windowtype-complextype-visio-xml"></a>ShowGuides-Element (Window_Type complexType) (Visio XML)
+# <a name="showguides-element-window_type-complextype-visio-xml"></a>ShowGuides-Element (Window_Type complexType) (Visio XML)
 
-Gibt an, ob Hilfslinien im Zeichnungsfenster angezeigt werden.
+Gibt an, ob Führungslinien im Zeichnungsfenster angezeigt werden.
   
 ## <a name="element-information"></a>Informationen zum Element
 
@@ -24,8 +24,8 @@ Gibt an, ob Hilfslinien im Zeichnungsfenster angezeigt werden.
 |:-----|:-----|
 |**Elementtyp** <br/> |[ShowGuides_Type](showguides_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
-|**Dokumentteile** <br/> |Windows. XML  <br/> |
+|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
+|**Dokumentteile** <br/> |windows.xml  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,7 +36,7 @@ Gibt an, ob Hilfslinien im Zeichnungsfenster angezeigt werden.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 2a15e5df-b8e3-9c37-b1ee-2881d010e30b
-description: Dieses Thema enthält Konstante Definitionen, Klassenbezeichner und Schnittstellenbezeichner für die Konten Verwaltungs-API.
+description: Dieses Thema enthält Konstantendefinitionen, Klassenbezeichner und Schnittstellenbezeichner für die Kontoverwaltungs-API.
 ms.openlocfilehash: d36116e30eb7879dcd0db0523be8f28bb8fe82a7
 ms.sourcegitcommit: adcf409d56b6cb25be6117f09794defa41ad6c0f
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.locfileid: "37495313"
 ---
 # <a name="constants-account-management-api"></a>Konstanten (Account Management API)
 
-Dieses Thema enthält Konstante Definitionen, Klassenbezeichner und Schnittstellenbezeichner für die Konten Verwaltungs-API.
+Dieses Thema enthält Konstantendefinitionen, Klassenbezeichner und Schnittstellenbezeichner für die Kontoverwaltungs-API.
   
 ## <a name="constants"></a>Konstanten
 
@@ -31,14 +31,14 @@ Dieses Thema enthält Konstante Definitionen, Klassenbezeichner und Schnittstell
 |E_ACCT_NOT_FOUND  <br/> |0x800C8101  <br/> |
 |E_ACCT_UI_BUSY  <br/> |0x800C8102  <br/> |
 |E_ACCT_WRONG_SORT_ORDER  <br/> |0x800C8105  <br/> |
-|E_INVALIDARG  <br/> | *Wie in der Windows Software Development Kit (SDK)-Headerdatei Winerror. h definiert.*  <br/> |
-|E_NOTIMPL  <br/> | *Wie in der Windows SDK-Headerdatei Winerror. h definiert.*  <br/> |
+|E_INVALIDARG  <br/> | *Wie in der Windows Software Development Kit (SDK) winerror.h definiert.*  <br/> |
+|E_NOTIMPL  <br/> | *Wie in der Windows sdk-Headerdatei winerror.h definiert.*  <br/> |
 |E_OLK_ALREADY_INITIALIZED  <br/> |0x800C8002  <br/> |
 |E_OLK_NOT_INITIALIZED  <br/> |0x800C8005  <br/> |
 |E_OLK_PARAM_NOT_SUPPORTED  <br/> |0x800C8003  <br/> |
 |E_OLK_PROP_READ_ONLY  <br/> |0x800C800D  <br/> |
 |E_OLK_REGISTRY  <br/> |0x800C8001  <br/> |
-|Die folgenden Konstanten, die mit ENCRYPT_ beginnen, werden von der [PROP_SMTP_SECURE_CONNECTION](prop_smtp_secure_connection.md) -Eigenschaft verwendet, um den Typ der verschlüsselten Verbindung anzugeben.  <br/> ||
+|Die folgenden Konstanten, die mit ENCRYPT_ beginnen, werden von der [PROP_SMTP_SECURE_CONNECTION-Eigenschaft](prop_smtp_secure_connection.md) verwendet, um den Typ der verschlüsselten Verbindung anzugeben.  <br/> ||
 |ENCRYPT_CONN_AUTO  <br/> |3  <br/> |
 |ENCRYPT_CONN_NO_SECURITY  <br/> |0  <br/> |
 |ENCRYPT_CONN_SSL  <br/> |1  <br/> |
@@ -50,86 +50,86 @@ Dieses Thema enthält Konstante Definitionen, Klassenbezeichner und Schnittstell
 |NOTIFY_ACCT_ORDER_CHANGED  <br/> |4   <br/> |
 |NOTIFY_ACCT_PREDELETED  <br/> |5   <br/> |
 |OLK_ACCOUNT_NO_FLAGS  <br/> |0  <br/> |
-|S_OK  <br/> | *Wie in der Windows SDK-Headerdatei Winerror. h definiert.*  <br/> |
-|S_FALSE  <br/> | *Wie in der Windows SDK-Headerdatei Winerror. h definiert.*  <br/> |
-|SECURE_FLAG  <br/> |0X8000  <br/> |
-|Die folgenden Konstanten, die mit SMTP_ beginnen, werden von der [PROP_SMTP_AUTH_METHOD](prop_smtp_auth_method.md) -Eigenschaft verwendet und geben die Authentifizierungsmethode an.  <br/> ||
+|S_OK  <br/> | *Wie in der Windows sdk-Headerdatei winerror.h definiert.*  <br/> |
+|S_FALSE  <br/> | *Wie in der Windows sdk-Headerdatei winerror.h definiert.*  <br/> |
+|SECURE_FLAG  <br/> |0x8000  <br/> |
+|Die folgenden Konstanten, die mit SMTP_ beginnen, werden von der [PROP_SMTP_AUTH_METHOD-Eigenschaft](prop_smtp_auth_method.md) verwendet und geben die Authentifizierungsmethode an.  <br/> ||
 |SMTP_AUTH_SAME_AS_POP  <br/> |0  <br/> |
 |SMTP_AUTH_RECEIVE_BEFORE_SEND  <br/> |2  <br/> |
 |SMTP_AUTH_USER_PASS  <br/> |1  <br/> |
-|Die folgenden 5 Konstanten und Makros werden von der [PROP_POP_LEAVE_ON_SERVER](prop_pop_leave_on_server.md) -Eigenschaft verwendet und geben Optionen für POP-Konten an, um eine Kopie einer Nachricht auf dem Server zu hinterlassen.  <br/> ||
+|Die folgenden 5 Konstanten und Makros werden von der [PROP_POP_LEAVE_ON_SERVER-Eigenschaft](prop_pop_leave_on_server.md) verwendet und geben Optionen für POP-Konten an, um eine Kopie einer Nachricht auf dem Server zu hinterlassen.  <br/> ||
 |LEAVE_ON_SERVER  <br/> |0x1  <br/> |
 |REMOVE_AFTER  <br/> |0x2  <br/> |
 |REMOVE_ON_NUKE  <br/> |0x4  <br/> |
-|GET_REMOVE_AFTER_DAYS (UL)  <br/> |((UL)\>\>16)  <br/> |
-|SET_REMOVE_AFTER_DAYS (Tage)  <br/> |((Tage)\<\<16)  <br/> |
+|GET_REMOVE_AFTER_DAYS(ul)  <br/> |((ul) \> \> 16)  <br/> |
+|SET_REMOVE_AFTER_DAYS(Tage)  <br/> |((Tage) \< \< 16)  <br/> |
    
 ## <a name="class-identifiers"></a>Klassenbezeichner
 
-Verwenden Sie das DEFINE_GUID-Makro, das in der Windows SDK-Headerdatei guiddef. h definiert ist, um den symbolischen GUID-Namen seinem Wert zuzuordnen.
+Verwenden Sie DEFINE_GUID makro, das in der Windows-SDK-Headerdatei guiddef.h definiert ist, um den symbolischen NAMEN der GUID seinem Wert zuzuordnen.
   
 {ed475410-b0d6-11d2-8c3b-00104b2a6676}
   
-DEFINE_GUID (CLSID_OlkAccountManager, 0xed475410, 0xb0d6, 0x11D2, 0x8c, 0x3B, 0x0 festlegen, 0x10, 0x4B, 0x2A, 0x66, 0x76); 
+DEFINE_GUID(CLSID_OlkAccountManager, 0xed475410, 0xb0d6, 0x11d2, 0x8c, 0x3b, 0x0, 0x10, 0x4b, 0x2a, 0x66, 0x76); 
   
 {ed475411-b0d6-11d2-8c3b-00104b2a6676}
   
-DEFINE_GUID (CLSID_OlkPOP3Account, 0xed475411, 0xb0d6, 0x11D2, 0x8c, 0x3B, 0x0 festlegen, 0x10, 0x4B, 0x2A, 0x66, 0x76);
+DEFINE_GUID(CLSID_OlkPOP3Account, 0xed475411, 0xb0d6, 0x11d2, 0x8c, 0x3b, 0x0, 0x10, 0x4b, 0x2a, 0x66, 0x76);
   
 {ed475412-b0d6-11d2-8c3b-00104b2a6676}
   
-DEFINE_GUID (CLSID_OlkIMAP4Account, 0xed475412, 0xb0d6, 0x11D2, 0x8c, 0x3B, 0x0 festlegen, 0x10, 0x4B, 0x2A, 0x66, 0x76);
+DEFINE_GUID(CLSID_OlkIMAP4Account, 0xed475412, 0xb0d6, 0x11d2, 0x8c, 0x3b, 0x0, 0x10, 0x4b, 0x2a, 0x66, 0x76);
   
 {ed475414-b0d6-11d2-8c3b-00104b2a6676}
   
-DEFINE_GUID (CLSID_OlkMAPIAccount, 0xed475414, 0xb0d6, 0x11D2, 0x8c, 0x3B, 0x0 festlegen, 0x10, 0x4B, 0x2A, 0x66, 0x76);
+DEFINE_GUID(CLSID_OlkMAPIAccount, 0xed475414, 0xb0d6, 0x11d2, 0x8c, 0x3b, 0x0, 0x10, 0x4b, 0x2a, 0x66, 0x76);
   
 {ed475418-b0d6-11d2-8c3b-00104b2a6676}
   
-DEFINE_GUID (CLSID_OlkMail, 0xed475418, 0xb0d6, 0x11D2, 0x8c, 0x3B, 0x0 festlegen, 0x10, 0x4B, 0x2A, 0x66, 0x76);
+DEFINE_GUID(CLSID_OlkMail, 0xed475418, 0xb0d6, 0x11d2, 0x8c, 0x3b, 0x0, 0x10, 0x4b, 0x2a, 0x66, 0x76);
   
 {ed475419-b0d6-11d2-8c3b-00104b2a6676}
   
-DEFINE_GUID (CLSID_OlkAddressBook, 0xed475419, 0xb0d6, 0x11D2, 0x8c, 0x3B, 0x0 festlegen, 0x10, 0x4B, 0x2A, 0x66, 0x76);
+DEFINE_GUID(CLSID_OlkAddressBook, 0xed475419, 0xb0d6, 0x11d2, 0x8c, 0x3b, 0x0, 0x10, 0x4b, 0x2a, 0x66, 0x76);
   
 {ed475420-b0d6-11d2-8c3b-00104b2a6676}
   
-DEFINE_GUID (CLSID_OlkStore, 0xed475420, 0xb0d6, 0x11D2, 0x8c, 0x3B, 0x0 festlegen, 0x10, 0x4B, 0x2A, 0x66, 0x76);
+DEFINE_GUID(CLSID_OlkStore, 0xed475420, 0xb0d6, 0x11d2, 0x8c, 0x3b, 0x0, 0x10, 0x4b, 0x2a, 0x66, 0x76);
   
 {4db5cbf0-3b77-4852-bc8e-bb81908861f3}
   
-DEFINE_GUID (CLSID_OlkHotmailAccount, 0x4db5cbf0, 0x3b77, 0x4852, 0xBC, 0x8e, 0xBB, 0x81, 0x90, 0x88, 0x61, 0xf3);
+DEFINE_GUID(CLSID_OlkHotmailAccount, 0x4db5cbf0, 0x3b77, 0x4852, 0xbc, 0x8e, 0xbb, 0x81, 0x90, 0x88, 0x61, 0xf3);
   
 {4db5cbf2-3b77-4852-bc8e-bb81908861f3}
   
-DEFINE_GUID (CLSID_OlkLDAPAccount, 0x4db5cbf2, 0x3b77, 0x4852, 0xBC, 0x8e, 0xBB, 0x81, 0x90, 0x88, 0x61, 0xf3);
+DEFINE_GUID(CLSID_OlkLDAPAccount, 0x4db5cbf2, 0x3b77, 0x4852, 0xbc, 0x8e, 0xbb, 0x81, 0x90, 0x88, 0x61, 0xf3);
   
 ## <a name="interface-identifiers"></a>Schnittstellenbezeichner
 
-Verwenden Sie das DEFINE_GUID-Makro, das in der Windows SDK-Headerdatei guiddef. h definiert ist, um den symbolischen GUID-Namen seinem Wert zuzuordnen.
+Verwenden Sie DEFINE_GUID makro, das in der Windows-SDK-Headerdatei guiddef.h definiert ist, um den symbolischen NAMEN der GUID seinem Wert zuzuordnen.
   
 {9240A6C0-AF41-11d2-8C3B-00104B2A6676}
   
-DEFINE_GUID (IID_IOlkErrorUnknown, 0x9240a6c0, 0xaf41, 0x11D2, 0x8c, 0x3B, 0x0 festlegen, 0x10, 0x4B, 0x2A, 0x66, 0x76);
+DEFINE_GUID(IID_IOlkErrorUnknown, 0x9240a6c0, 0xaf41, 0x11d2, 0x8c, 0x3b, 0x0, 0x10, 0x4b, 0x2a, 0x66, 0x76);
   
 {9240A6C1-AF41-11d2-8C3B-00104B2A6676}
   
-DEFINE_GUID (IID_IOlkEnum, 0x9240a6c1, 0xaf41, 0x11D2, 0x8c, 0x3B, 0x0 festlegen, 0x10, 0x4B, 0x2A, 0x66, 0x76);
+DEFINE_GUID(IID_IOlkEnum, 0x9240a6c1, 0xaf41, 0x11d2, 0x8c, 0x3b, 0x0, 0x10, 0x4b, 0x2a, 0x66, 0x76);
   
 {9240a6c3-af41-11d2-8c3b-00104b2a6676}
   
-DEFINE_GUID (IID_IOlkAccountNotify, 0x9240a6c3, 0xaf41, 0x11D2, 0x8c, 0x3B, 0x0 festlegen, 0x10, 0x4B, 0x2A, 0x66, 0x76);
+DEFINE_GUID(IID_IOlkAccountNotify, 0x9240a6c3, 0xaf41, 0x11d2, 0x8c, 0x3b, 0x0, 0x10, 0x4b, 0x2a, 0x66, 0x76);
   
 {9240a6cb-af41-11d2-8c3b-00104b2a6676}
   
-DEFINE_GUID (IID_IOlkAccountHelper, 0x9240a6cb, 0xaf41, 0x11D2, 0x8c, 0x3B, 0x0 festlegen, 0x10, 0x4B, 0x2A, 0x66, 0x76); 
+DEFINE_GUID(IID_IOlkAccountHelper, 0x9240a6cb, 0xaf41, 0x11d2, 0x8c, 0x3b, 0x0, 0x10, 0x4b, 0x2a, 0x66, 0x76); 
   
 {9240a6cd-af41-11d2-8c3b-00104b2a6676}
   
-DEFINE_GUID (IID_IOlkAccountManager, 0x9240a6cd, 0xaf41, 0x11D2, 0x8c, 0x3B, 0x0 festlegen, 0x10, 0x4B, 0x2A, 0x66, 0x76); 
+DEFINE_GUID(IID_IOlkAccountManager, 0x9240a6cd, 0xaf41, 0x11d2, 0x8c, 0x3b, 0x0, 0x10, 0x4b, 0x2a, 0x66, 0x76); 
   
 {9240a6d2-af41-11d2-8c3b-00104b2a6676}
   
-DEFINE_GUID (IID_IOlkAccount, 0x9240a6d2, 0xaf41, 0x11D2, 0x8c, 0x3B, 0x0 festlegen, 0x10, 0x4B, 0x2A, 0x66, 0x76);
+DEFINE_GUID(IID_IOlkAccount, 0x9240a6d2, 0xaf41, 0x11d2, 0x8c, 0x3b, 0x0, 0x10, 0x4b, 0x2a, 0x66, 0x76);
   
 
