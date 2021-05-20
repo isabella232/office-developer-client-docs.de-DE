@@ -16,12 +16,12 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33438505"
 ---
-# <a name="text-block-format-section"></a><span data-ttu-id="3b735-103">Abschnitt "Text Block Format"</span><span class="sxs-lookup"><span data-stu-id="3b735-103">Text Block Format Section</span></span>
+# <a name="text-block-format-section"></a><span data-ttu-id="71cd4-103">Abschnitt "Text Block Format"</span><span class="sxs-lookup"><span data-stu-id="71cd4-103">Text Block Format Section</span></span>
 
-<span data-ttu-id="3b735-104">Enthält Zellen zum Steuern der Ausrichtung, der Ränder und der Standardtabstoppposition von Text im Textblock eines Shapes.</span><span class="sxs-lookup"><span data-stu-id="3b735-104">Contains cells that control the alignment, margins, and default tab stop position of text in a shape's text block.</span></span>
+<span data-ttu-id="71cd4-104">Enthält Zellen zum Steuern der Ausrichtung, der Ränder und der Standardtabstoppposition von Text im Textblock eines Shapes.</span><span class="sxs-lookup"><span data-stu-id="71cd4-104">Contains cells that control the alignment, margins, and default tab stop position of text in a shape's text block.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="3b735-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="3b735-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="71cd4-105">Hinweise</span><span class="sxs-lookup"><span data-stu-id="71cd4-105">Remarks</span></span>
 
-<span data-ttu-id="3b735-106">Sie können diese Textattribute auch festlegen, indem Sie das Dialogfeld **Text** verwenden (Klicken Sie auf der Registerkarte **Start** auf das Dialogfeldstartprogramm in der Gruppe **Schriftart** ).</span><span class="sxs-lookup"><span data-stu-id="3b735-106">You can also set these text attributes by using the **Text** dialog box (on the **Home** tab, click the dialog box launcher in the **Font** group).</span></span> 
+<span data-ttu-id="71cd4-106">Sie können diese Textattribute auch mithilfe des Dialogfelds **Text** festlegen (klicken Sie auf der Registerkarte **Start** auf das Startfeld des Dialogfelds in der **Gruppe Schriftart).**</span><span class="sxs-lookup"><span data-stu-id="71cd4-106">You can also set these text attributes by using the **Text** dialog box (on the **Home** tab, click the dialog box launcher in the **Font** group).</span></span> 
   
 

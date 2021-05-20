@@ -15,24 +15,24 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33436846"
 ---
-# <a name="lockthemecolors-cell-protection-section"></a><span data-ttu-id="cb2d2-102">Zelle "LockThemeColors" (Abschnitt "Protection")</span><span class="sxs-lookup"><span data-stu-id="cb2d2-102">LockThemeColors Cell (Protection Section)</span></span>
+# <a name="lockthemecolors-cell-protection-section"></a><span data-ttu-id="ca37d-102">Zelle "LockThemeColors" (Abschnitt "Protection")</span><span class="sxs-lookup"><span data-stu-id="ca37d-102">LockThemeColors Cell (Protection Section)</span></span>
 
-<span data-ttu-id="cb2d2-103">Verhindert die Anwendung von Designfarben in der Form.</span><span class="sxs-lookup"><span data-stu-id="cb2d2-103">Prevents application of theme colors to the shape.</span></span> 
+<span data-ttu-id="ca37d-103">Verhindert die Anwendung von Designfarben auf die Form.</span><span class="sxs-lookup"><span data-stu-id="ca37d-103">Prevents application of theme colors to the shape.</span></span> 
   
-<span data-ttu-id="cb2d2-104">Der Wert der Zelle LockThemeColors entspricht dem Kontrollkästchen **von Designfarben** im Dialogfeld **Schutz** .</span><span class="sxs-lookup"><span data-stu-id="cb2d2-104">The value of the LockThemeColors cell corresponds to the **From theme colors** check box setting in the **Protection** dialog box.</span></span> 
+<span data-ttu-id="ca37d-104">Der Wert der Zelle LockThemeColors entspricht der Einstellung **Von** Designfarben im **Dialogfeld** Schutz.</span><span class="sxs-lookup"><span data-stu-id="ca37d-104">The value of the LockThemeColors cell corresponds to the **From theme colors** check box setting in the **Protection** dialog box.</span></span> 
   
-<span data-ttu-id="cb2d2-105">Wenn Sie auf die Zelle LockThemeColors aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen verweisen möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="cb2d2-105">To refer to the LockThemeColors cell by name from another formula, or from a program, using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="ca37d-105">Verwenden Sie zum Verweisen auf die Zelle LockThemeColors anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft:**</span><span class="sxs-lookup"><span data-stu-id="ca37d-105">To refer to the LockThemeColors cell by name from another formula, or from a program, using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="cb2d2-106">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="cb2d2-106">Cell name:</span></span>  <br/> |<span data-ttu-id="cb2d2-107">LockThemeColors</span><span class="sxs-lookup"><span data-stu-id="cb2d2-107">LockThemeColors</span></span>  <br/> |
+|<span data-ttu-id="ca37d-106">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="ca37d-106">Cell name:</span></span>  <br/> |<span data-ttu-id="ca37d-107">LockThemeColors</span><span class="sxs-lookup"><span data-stu-id="ca37d-107">LockThemeColors</span></span>  <br/> |
    
-<span data-ttu-id="cb2d2-108">Wenn Sie aus einem Programm aus nach Index auf die Zelle LockThemeColors verweisen möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="cb2d2-108">To refer to the LockThemeColors cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="ca37d-108">Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um von einem Programm aus auf die Zelle LockThemeColors nach Index zu verweisen:</span><span class="sxs-lookup"><span data-stu-id="ca37d-108">To refer to the LockThemeColors cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="cb2d2-109">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="cb2d2-109">Section index:</span></span>  <br/> |<span data-ttu-id="cb2d2-110">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="cb2d2-110">**visSectionObject**</span></span> <br/> |
-|<span data-ttu-id="cb2d2-111">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="cb2d2-111">Row index:</span></span>  <br/> |<span data-ttu-id="cb2d2-112">**visRowLock**</span><span class="sxs-lookup"><span data-stu-id="cb2d2-112">**visRowLock**</span></span> <br/> |
-|<span data-ttu-id="cb2d2-113">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="cb2d2-113">Cell index:</span></span>  <br/> |<span data-ttu-id="cb2d2-114">**visLockThemeColors**</span><span class="sxs-lookup"><span data-stu-id="cb2d2-114">**visLockThemeColors**</span></span> <br/> |
+|<span data-ttu-id="ca37d-109">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="ca37d-109">Section index:</span></span>  <br/> |<span data-ttu-id="ca37d-110">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="ca37d-110">**visSectionObject**</span></span> <br/> |
+|<span data-ttu-id="ca37d-111">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="ca37d-111">Row index:</span></span>  <br/> |<span data-ttu-id="ca37d-112">**visRowLock**</span><span class="sxs-lookup"><span data-stu-id="ca37d-112">**visRowLock**</span></span> <br/> |
+|<span data-ttu-id="ca37d-113">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="ca37d-113">Cell index:</span></span>  <br/> |<span data-ttu-id="ca37d-114">**visLockThemeColors**</span><span class="sxs-lookup"><span data-stu-id="ca37d-114">**visLockThemeColors**</span></span> <br/> |
    
 

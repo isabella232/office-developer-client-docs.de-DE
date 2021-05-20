@@ -8,7 +8,7 @@ f1_keywords:
 - TempInt
 - TempInt12
 keywords:
-- tempint12-Funktion [Excel 2007], TempInt-Funktion [Excel 2007]
+- tempint12-Funktion [excel 2007],TempInt-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: 86d690b8-caca-450d-93f7-69ca4cd1a6e0
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -19,30 +19,30 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33438750"
 ---
-# <a name="tempinttempint12"></a><span data-ttu-id="9e3bd-104">TempInt/TempInt12</span><span class="sxs-lookup"><span data-stu-id="9e3bd-104">TempInt/TempInt12</span></span>
+# <a name="tempinttempint12"></a><span data-ttu-id="346f2-104">TempInt/TempInt12</span><span class="sxs-lookup"><span data-stu-id="346f2-104">TempInt/TempInt12</span></span>
 
- <span data-ttu-id="9e3bd-105">**Gilt für**: Excel 2013 | Office 2013 | Visual Studio</span><span class="sxs-lookup"><span data-stu-id="9e3bd-105">**Applies to**: Excel 2013 | Office 2013 | Visual Studio</span></span> 
+ <span data-ttu-id="346f2-105">**Gilt für**: Excel 2013 | Office 2013 | Visual Studio</span><span class="sxs-lookup"><span data-stu-id="346f2-105">**Applies to**: Excel 2013 | Office 2013 | Visual Studio</span></span> 
   
-<span data-ttu-id="9e3bd-106">Framework-Bibliotheksfunktion, die eine temporäre **XLOPER**/ -**XLOPER12** erstellt, die eine ganze Zahl enthält.</span><span class="sxs-lookup"><span data-stu-id="9e3bd-106">Framework library function that creates a temporary **XLOPER**/ **XLOPER12** that contains an integer.</span></span> 
+<span data-ttu-id="346f2-106">Frameworkbibliotheksfunktion, die eine temporäre **XLOPER** /  **XLOPER12** erstellt, die eine ganze Zahl enthält.</span><span class="sxs-lookup"><span data-stu-id="346f2-106">Framework library function that creates a temporary **XLOPER**/ **XLOPER12** that contains an integer.</span></span> 
   
 ```cs
 LPXLOPER TempInt(short int i);
 LPXLOPER12 TempInt12(int i);
 ```
 
-## <a name="parameters"></a><span data-ttu-id="9e3bd-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="9e3bd-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="346f2-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="346f2-107">Parameters</span></span>
 
- <span data-ttu-id="9e3bd-108">_i_</span><span class="sxs-lookup"><span data-stu-id="9e3bd-108">_i_</span></span>
+ <span data-ttu-id="346f2-108">_i_</span><span class="sxs-lookup"><span data-stu-id="346f2-108">_i_</span></span>
   
-<span data-ttu-id="9e3bd-109">Der vorgesehene ganzzahlige Wert.</span><span class="sxs-lookup"><span data-stu-id="9e3bd-109">The intended integer value.</span></span> <span data-ttu-id="9e3bd-110">Beachten Sie, dass die **XLOPER** -Ganzzahl eine signierte 16-Bit-Ganzzahl (short int) ist, wohingegen die **XLOPER12** -ganzzahl eine signierte 32-Bit-Ganzzahl ([Long] int) ist.</span><span class="sxs-lookup"><span data-stu-id="9e3bd-110">Note that the **XLOPER** integer is a signed 16-bit integer (short int), whereas the **XLOPER12** integer is a signed 32-bit integer ([long] int).</span></span> 
+<span data-ttu-id="346f2-109">Der beabsichtigte ganzzahlige Wert.</span><span class="sxs-lookup"><span data-stu-id="346f2-109">The intended integer value.</span></span> <span data-ttu-id="346f2-110">Beachten Sie, dass die **XLOPER-Ganzzahl** eine signierte 16-Bit-Ganzzahl (short int) ist, während die **XLOPER12-Ganzzahl** eine signierte ganzzahlige 32-Bit-Zahl ([long] int) ist.</span><span class="sxs-lookup"><span data-stu-id="346f2-110">Note that the **XLOPER** integer is a signed 16-bit integer (short int), whereas the **XLOPER12** integer is a signed 32-bit integer ([long] int).</span></span> 
   
-## <a name="return-value"></a><span data-ttu-id="9e3bd-111">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="9e3bd-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="346f2-111">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="346f2-111">Return value</span></span>
 
-<span data-ttu-id="9e3bd-112">Gibt eine **xltypeInt** -Ganzzahl zurück, die den übergebenen Wert enthält.</span><span class="sxs-lookup"><span data-stu-id="9e3bd-112">Returns an **xltypeInt** integer containing the value passed in.</span></span> 
+<span data-ttu-id="346f2-112">Gibt eine **xltypeInt-Ganzzahl** zurück, die den übergebenen Wert enthält.</span><span class="sxs-lookup"><span data-stu-id="346f2-112">Returns an **xltypeInt** integer containing the value passed in.</span></span> 
   
-## <a name="example"></a><span data-ttu-id="9e3bd-113">Beispiel</span><span class="sxs-lookup"><span data-stu-id="9e3bd-113">Example</span></span>
+## <a name="example"></a><span data-ttu-id="346f2-113">Beispiel</span><span class="sxs-lookup"><span data-stu-id="346f2-113">Example</span></span>
 
-<span data-ttu-id="9e3bd-114">In diesem Beispiel wird die **TempInt12** -Funktion verwendet, um ein Argument an **xlfGetWorkspace**zu übergeben.</span><span class="sxs-lookup"><span data-stu-id="9e3bd-114">This example uses the **TempInt12** function to pass an argument to **xlfGetWorkspace**.</span></span>
+<span data-ttu-id="346f2-114">In diesem Beispiel wird die **TempInt12-Funktion** verwendet, um ein Argument an **xlfGetWorkspace zu übergeben.**</span><span class="sxs-lookup"><span data-stu-id="346f2-114">This example uses the **TempInt12** function to pass an argument to **xlfGetWorkspace**.</span></span>
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   
@@ -56,9 +56,9 @@ short WINAPI TempIntExample(void)
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="9e3bd-115">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="9e3bd-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="346f2-115">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="346f2-115">See also</span></span>
 
 
 
-[<span data-ttu-id="9e3bd-116">Funktionen in der Framework-Klassenbibliothek</span><span class="sxs-lookup"><span data-stu-id="9e3bd-116">Functions in the Framework Library</span></span>](functions-in-the-framework-library.md)
+[<span data-ttu-id="346f2-116">Funktionen in der Framework-Klassenbibliothek</span><span class="sxs-lookup"><span data-stu-id="346f2-116">Functions in the Framework Library</span></span>](functions-in-the-framework-library.md)
 

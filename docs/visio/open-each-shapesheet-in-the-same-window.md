@@ -1,5 +1,5 @@
 ---
-title: Öffnen aller ShapeSheets im gleichen Fenster
+title: Öffnen Sie jedes ShapeSheet im gleichen Fenster
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -16,12 +16,12 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33436636"
 ---
-# <a name="open-each-shapesheet-in-the-same-window"></a><span data-ttu-id="139fa-102">Öffnen aller ShapeSheets im gleichen Fenster</span><span class="sxs-lookup"><span data-stu-id="139fa-102">Open Each ShapeSheet in the Same Window</span></span>
+# <a name="open-each-shapesheet-in-the-same-window"></a><span data-ttu-id="00482-102">Öffnen Sie jedes ShapeSheet im gleichen Fenster</span><span class="sxs-lookup"><span data-stu-id="00482-102">Open Each ShapeSheet in the Same Window</span></span>
 
-1. <span data-ttu-id="139fa-103">Klicken Sie auf die Registerkarte **Datei** , klicken Sie auf **Optionen**und dann auf **erweitert**.</span><span class="sxs-lookup"><span data-stu-id="139fa-103">Click the **File** tab, click **Options**, and then click **Advanced**.</span></span>
+1. <span data-ttu-id="00482-103">Klicken Sie **auf die** Registerkarte Datei, klicken Sie **auf Optionen,** und klicken Sie dann auf **Erweitert**.</span><span class="sxs-lookup"><span data-stu-id="00482-103">Click the **File** tab, click **Options**, and then click **Advanced**.</span></span>
     
-2. <span data-ttu-id="139fa-104">Aktivieren Sie unter **Allgemein** das Kontrollkästchen **Alle ShapeSheets in einem Fenster öffnen**.</span><span class="sxs-lookup"><span data-stu-id="139fa-104">Under **General**, select **Open each ShapeSheet in the same window**.</span></span>
+2. <span data-ttu-id="00482-104">Aktivieren Sie unter **Allgemein** das Kontrollkästchen **Alle ShapeSheets in einem Fenster öffnen**.</span><span class="sxs-lookup"><span data-stu-id="00482-104">Under **General**, select **Open each ShapeSheet in the same window**.</span></span>
     
-3. <span data-ttu-id="139fa-105">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="139fa-105">Click **OK**.</span></span> 
+3. <span data-ttu-id="00482-105">Klicken Sie auf **OK**.</span><span class="sxs-lookup"><span data-stu-id="00482-105">Click **OK**.</span></span> 
     
 

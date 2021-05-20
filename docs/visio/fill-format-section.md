@@ -16,12 +16,12 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33437924"
 ---
-# <a name="fill-format-section"></a><span data-ttu-id="34522-103">Abschnitt "Fill Format"</span><span class="sxs-lookup"><span data-stu-id="34522-103">Fill Format Section</span></span>
+# <a name="fill-format-section"></a><span data-ttu-id="db96f-103">Abschnitt "Fill Format"</span><span class="sxs-lookup"><span data-stu-id="db96f-103">Fill Format Section</span></span>
 
-<span data-ttu-id="34522-104">Zeigt die aktuellen Füllbereichformatattribute für das Shape und den Schatten des Shapes an, darunter Füllmuster, Vordergrundfarbe und Hintergrundfarbe.</span><span class="sxs-lookup"><span data-stu-id="34522-104">Shows the current fill formatting attributes for the shape and the shape's drop shadow, including pattern, foreground color, and background color.</span></span> 
+<span data-ttu-id="db96f-104">Zeigt die aktuellen Füllbereichformatattribute für das Shape und den Schatten des Shapes an, darunter Füllmuster, Vordergrundfarbe und Hintergrundfarbe.</span><span class="sxs-lookup"><span data-stu-id="db96f-104">Shows the current fill formatting attributes for the shape and the shape's drop shadow, including pattern, foreground color, and background color.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="34522-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="34522-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="db96f-105">Hinweise</span><span class="sxs-lookup"><span data-stu-id="db96f-105">Remarks</span></span>
 
-<span data-ttu-id="34522-106">Sie können Füllformate im Bereich **Shape formatieren** (auf der Registerkarte **Start** in der Gruppe Shape-Format **Vorlagen** , klicken \*\*\*\* Sie auf Füllung, und klicken Sie dann auf **Fülloptionen**), durch Anwenden einer Füllformat Vorlage oder durch einen Eintrag in einer Zelle im **Füll Format** im Abschnitt.</span><span class="sxs-lookup"><span data-stu-id="34522-106">You can set fill formats in the **Format Shape** pane (on the **Home** tab, in the **Shape Styles** group, click **Fill**, and then click **Fill Options**), by applying a fill style, or by making an entry in a cell in the **Fill Format** section.</span></span> 
+<span data-ttu-id="db96f-106">Sie können Füllungsformate im Bereich  Form formatieren  festlegen (klicken Sie auf der Registerkarte Start in der Gruppe Formenarten auf Füllen **und** dann auf Fülloptionen), indem Sie eine Füllformatvorlage anwenden oder einen Eintrag in einer Zelle im Abschnitt **Füllformat** erstellen. </span><span class="sxs-lookup"><span data-stu-id="db96f-106">You can set fill formats in the **Format Shape** pane (on the **Home** tab, in the **Shape Styles** group, click **Fill**, and then click **Fill Options**), by applying a fill style, or by making an entry in a cell in the **Fill Format** section.</span></span> 
   
 

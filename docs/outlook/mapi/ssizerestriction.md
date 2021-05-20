@@ -19,17 +19,17 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33439086"
 ---
-# <a name="ssizerestriction"></a><span data-ttu-id="70413-103">SSizeRestriction</span><span class="sxs-lookup"><span data-stu-id="70413-103">SSizeRestriction</span></span>
+# <a name="ssizerestriction"></a><span data-ttu-id="0d2b1-103">SSizeRestriction</span><span class="sxs-lookup"><span data-stu-id="0d2b1-103">SSizeRestriction</span></span>
 
   
   
-<span data-ttu-id="70413-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="70413-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="0d2b1-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="0d2b1-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="70413-105">Beschreibt eine Größenbeschränkung, die zum Testen der Größe eines Eigenschaftswerts verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="70413-105">Describes a size restriction which is used to test the size of a property value.</span></span> 
+<span data-ttu-id="0d2b1-105">Beschreibt eine Größeneinschränkung, die zum Testen der Größe eines Eigenschaftswerts verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="0d2b1-105">Describes a size restriction which is used to test the size of a property value.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="70413-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="70413-106">Header file:</span></span>  <br/> |<span data-ttu-id="70413-107">Mapidefs. h</span><span class="sxs-lookup"><span data-stu-id="70413-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="0d2b1-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="0d2b1-106">Header file:</span></span>  <br/> |<span data-ttu-id="0d2b1-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="0d2b1-107">Mapidefs.h</span></span>  <br/> |
    
 ```cpp
 typedef struct _SSizeRestriction
@@ -41,58 +41,58 @@ typedef struct _SSizeRestriction
 
 ```
 
-## <a name="members"></a><span data-ttu-id="70413-108">Members</span><span class="sxs-lookup"><span data-stu-id="70413-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="0d2b1-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="0d2b1-108">Members</span></span>
 
- <span data-ttu-id="70413-109">**RelOp**</span><span class="sxs-lookup"><span data-stu-id="70413-109">**relop**</span></span>
+ <span data-ttu-id="0d2b1-109">**relop**</span><span class="sxs-lookup"><span data-stu-id="0d2b1-109">**relop**</span></span>
   
-> <span data-ttu-id="70413-110">Relationaler Operator, der im Größenvergleich verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="70413-110">Relational operator that is used in the size comparison.</span></span> <span data-ttu-id="70413-111">Folgende Werte sind möglich:</span><span class="sxs-lookup"><span data-stu-id="70413-111">Possible values are as follows:</span></span> 
+> <span data-ttu-id="0d2b1-110">Relationaler Operator, der im Größenvergleich verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="0d2b1-110">Relational operator that is used in the size comparison.</span></span> <span data-ttu-id="0d2b1-111">Mögliche Werte sind:</span><span class="sxs-lookup"><span data-stu-id="0d2b1-111">Possible values are as follows:</span></span> 
     
-<span data-ttu-id="70413-112">RELOP_GE</span><span class="sxs-lookup"><span data-stu-id="70413-112">RELOP_GE</span></span> 
+<span data-ttu-id="0d2b1-112">RELOP_GE</span><span class="sxs-lookup"><span data-stu-id="0d2b1-112">RELOP_GE</span></span> 
   
-> <span data-ttu-id="70413-113">Der Vergleich erfolgt basierend auf einem größer oder gleich dem ersten Wert.</span><span class="sxs-lookup"><span data-stu-id="70413-113">The comparison is made based on a greater or equal first value.</span></span>
+> <span data-ttu-id="0d2b1-113">Der Vergleich basiert auf einem höheren oder gleichen ersten Wert.</span><span class="sxs-lookup"><span data-stu-id="0d2b1-113">The comparison is made based on a greater or equal first value.</span></span>
     
-<span data-ttu-id="70413-114">RELOP_GT</span><span class="sxs-lookup"><span data-stu-id="70413-114">RELOP_GT</span></span> 
+<span data-ttu-id="0d2b1-114">RELOP_GT</span><span class="sxs-lookup"><span data-stu-id="0d2b1-114">RELOP_GT</span></span> 
   
-> <span data-ttu-id="70413-115">Der Vergleich erfolgt basierend auf einem höheren ersten Wert.</span><span class="sxs-lookup"><span data-stu-id="70413-115">The comparison is made based on a greater first value.</span></span>
+> <span data-ttu-id="0d2b1-115">Der Vergleich basiert auf einem größeren ersten Wert.</span><span class="sxs-lookup"><span data-stu-id="0d2b1-115">The comparison is made based on a greater first value.</span></span>
     
-<span data-ttu-id="70413-116">RELOP_LE</span><span class="sxs-lookup"><span data-stu-id="70413-116">RELOP_LE</span></span> 
+<span data-ttu-id="0d2b1-116">RELOP_LE</span><span class="sxs-lookup"><span data-stu-id="0d2b1-116">RELOP_LE</span></span> 
   
-> <span data-ttu-id="70413-117">Der Vergleich erfolgt basierend auf einem niedrigeren oder gleichen ersten Wert.</span><span class="sxs-lookup"><span data-stu-id="70413-117">The comparison is made based on a lesser or equal first value.</span></span>
+> <span data-ttu-id="0d2b1-117">Der Vergleich basiert auf einem kleineren oder gleichen ersten Wert.</span><span class="sxs-lookup"><span data-stu-id="0d2b1-117">The comparison is made based on a lesser or equal first value.</span></span>
     
-<span data-ttu-id="70413-118">RELOP_LT</span><span class="sxs-lookup"><span data-stu-id="70413-118">RELOP_LT</span></span> 
+<span data-ttu-id="0d2b1-118">RELOP_LT</span><span class="sxs-lookup"><span data-stu-id="0d2b1-118">RELOP_LT</span></span> 
   
-> <span data-ttu-id="70413-119">Der Vergleich erfolgt basierend auf einem niedrigeren ersten Wert.</span><span class="sxs-lookup"><span data-stu-id="70413-119">The comparison is made based on a lesser first value.</span></span>
+> <span data-ttu-id="0d2b1-119">Der Vergleich basiert auf einem niedrigeren ersten Wert.</span><span class="sxs-lookup"><span data-stu-id="0d2b1-119">The comparison is made based on a lesser first value.</span></span>
     
-<span data-ttu-id="70413-120">RELOP_NE</span><span class="sxs-lookup"><span data-stu-id="70413-120">RELOP_NE</span></span> 
+<span data-ttu-id="0d2b1-120">RELOP_NE</span><span class="sxs-lookup"><span data-stu-id="0d2b1-120">RELOP_NE</span></span> 
   
-> <span data-ttu-id="70413-121">Der Vergleich erfolgt basierend auf ungleich Werten.</span><span class="sxs-lookup"><span data-stu-id="70413-121">The comparison is made based on unequal values.</span></span>
+> <span data-ttu-id="0d2b1-121">Der Vergleich basiert auf ungleichen Werten.</span><span class="sxs-lookup"><span data-stu-id="0d2b1-121">The comparison is made based on unequal values.</span></span>
     
-<span data-ttu-id="70413-122">RELOP_RE</span><span class="sxs-lookup"><span data-stu-id="70413-122">RELOP_RE</span></span> 
+<span data-ttu-id="0d2b1-122">RELOP_RE</span><span class="sxs-lookup"><span data-stu-id="0d2b1-122">RELOP_RE</span></span> 
   
-> <span data-ttu-id="70413-123">Der Vergleich basiert auf LIKE (Regular Expression)-Werten.</span><span class="sxs-lookup"><span data-stu-id="70413-123">The comparison is made based on LIKE (regular expression) values.</span></span>
+> <span data-ttu-id="0d2b1-123">Der Vergleich erfolgt basierend auf LIKE -Werten (regulärer Ausdruck).</span><span class="sxs-lookup"><span data-stu-id="0d2b1-123">The comparison is made based on LIKE (regular expression) values.</span></span>
     
-<span data-ttu-id="70413-124">RELOP_EQ</span><span class="sxs-lookup"><span data-stu-id="70413-124">RELOP_EQ</span></span> 
+<span data-ttu-id="0d2b1-124">RELOP_EQ</span><span class="sxs-lookup"><span data-stu-id="0d2b1-124">RELOP_EQ</span></span> 
   
-> <span data-ttu-id="70413-125">Der Vergleich erfolgt basierend auf gleichen Werten.</span><span class="sxs-lookup"><span data-stu-id="70413-125">The comparison is made based on equal values.</span></span>
+> <span data-ttu-id="0d2b1-125">Der Vergleich basiert auf gleichen Werten.</span><span class="sxs-lookup"><span data-stu-id="0d2b1-125">The comparison is made based on equal values.</span></span>
     
- <span data-ttu-id="70413-126">**ulPropTag**</span><span class="sxs-lookup"><span data-stu-id="70413-126">**ulPropTag**</span></span>
+ <span data-ttu-id="0d2b1-126">**ulPropTag**</span><span class="sxs-lookup"><span data-stu-id="0d2b1-126">**ulPropTag**</span></span>
   
-> <span data-ttu-id="70413-127">Property-Tag, das die zu testende Eigenschaft identifiziert.</span><span class="sxs-lookup"><span data-stu-id="70413-127">Property tag identifying the property to test.</span></span>
+> <span data-ttu-id="0d2b1-127">Eigenschaftstag, das die zu testende Eigenschaft identifiziert.</span><span class="sxs-lookup"><span data-stu-id="0d2b1-127">Property tag identifying the property to test.</span></span>
     
- <span data-ttu-id="70413-128">**cb**</span><span class="sxs-lookup"><span data-stu-id="70413-128">**cb**</span></span>
+ <span data-ttu-id="0d2b1-128">**cb**</span><span class="sxs-lookup"><span data-stu-id="0d2b1-128">**cb**</span></span>
   
-> <span data-ttu-id="70413-129">Die Anzahl der Bytes im Eigenschaftswert.</span><span class="sxs-lookup"><span data-stu-id="70413-129">Count of bytes in the property value.</span></span>
+> <span data-ttu-id="0d2b1-129">Anzahl der Bytes im Eigenschaftswert.</span><span class="sxs-lookup"><span data-stu-id="0d2b1-129">Count of bytes in the property value.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="70413-130">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="70413-130">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="0d2b1-130">Hinweise</span><span class="sxs-lookup"><span data-stu-id="0d2b1-130">Remarks</span></span>
 
-<span data-ttu-id="70413-131">Eine allgemeine Erläuterung der Funktionsweise von Einschränkungen finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md).</span><span class="sxs-lookup"><span data-stu-id="70413-131">For a general discussion of how restrictions work, see [About Restrictions](about-restrictions.md).</span></span> 
+<span data-ttu-id="0d2b1-131">Eine allgemeine Diskussion über die Funktionsweise von Einschränkungen finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md).</span><span class="sxs-lookup"><span data-stu-id="0d2b1-131">For a general discussion of how restrictions work, see [About Restrictions](about-restrictions.md).</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="70413-132">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="70413-132">See also</span></span>
-
-
-
-[<span data-ttu-id="70413-133">SRestriction</span><span class="sxs-lookup"><span data-stu-id="70413-133">SRestriction</span></span>](srestriction.md)
+## <a name="see-also"></a><span data-ttu-id="0d2b1-132">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="0d2b1-132">See also</span></span>
 
 
-[<span data-ttu-id="70413-134">MAPI-Strukturen</span><span class="sxs-lookup"><span data-stu-id="70413-134">MAPI Structures</span></span>](mapi-structures.md)
+
+[<span data-ttu-id="0d2b1-133">SRestriction</span><span class="sxs-lookup"><span data-stu-id="0d2b1-133">SRestriction</span></span>](srestriction.md)
+
+
+[<span data-ttu-id="0d2b1-134">MAPI-Strukturen</span><span class="sxs-lookup"><span data-stu-id="0d2b1-134">MAPI Structures</span></span>](mapi-structures.md)
 

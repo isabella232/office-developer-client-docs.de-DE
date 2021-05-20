@@ -16,26 +16,26 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33438694"
 ---
-# <a name="pagesx-cell-print-properties-section"></a><span data-ttu-id="7ecdd-103">Zelle "PagesX" (Abschnitt "Print Properties")</span><span class="sxs-lookup"><span data-stu-id="7ecdd-103">PagesX Cell (Print Properties Section)</span></span>
+# <a name="pagesx-cell-print-properties-section"></a><span data-ttu-id="27202-103">Zelle "PagesX" (Abschnitt "Print Properties")</span><span class="sxs-lookup"><span data-stu-id="27202-103">PagesX Cell (Print Properties Section)</span></span>
 
-<span data-ttu-id="7ecdd-104">Bestimmt die Anzahl der Druckseiten, auf denen das Zeichenblatt horizontal dargestellt werden soll.</span><span class="sxs-lookup"><span data-stu-id="7ecdd-104">Determines the number of printer pages on which to fit the drawing page horizontally.</span></span> 
+<span data-ttu-id="27202-104">Bestimmt die Anzahl der Druckseiten, auf denen das Zeichenblatt horizontal dargestellt werden soll.</span><span class="sxs-lookup"><span data-stu-id="27202-104">Determines the number of printer pages on which to fit the drawing page horizontally.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="7ecdd-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="7ecdd-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="27202-105">Hinweise</span><span class="sxs-lookup"><span data-stu-id="27202-105">Remarks</span></span>
 
-<span data-ttu-id="7ecdd-106">Dieser Wert wird nur dann verwendet, wenn die Zelle OnPage auf WAHR festgelegt ist.</span><span class="sxs-lookup"><span data-stu-id="7ecdd-106">This value is used only when the OnPage cell is set to TRUE.</span></span> 
+<span data-ttu-id="27202-106">Dieser Wert wird nur dann verwendet, wenn die Zelle OnPage auf WAHR festgelegt ist.</span><span class="sxs-lookup"><span data-stu-id="27202-106">This value is used only when the OnPage cell is set to TRUE.</span></span> 
   
-<span data-ttu-id="7ecdd-107">Wenn Sie einen Verweis auf die Zelle PagesX aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="7ecdd-107">To get a reference to the PagesX cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="27202-107">Um einen Verweis auf die Zelle PagesX anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie:</span><span class="sxs-lookup"><span data-stu-id="27202-107">To get a reference to the PagesX cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="7ecdd-108">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="7ecdd-108">Cell name:</span></span>  <br/> | <span data-ttu-id="7ecdd-109">PagesX</span><span class="sxs-lookup"><span data-stu-id="7ecdd-109">PagesX</span></span>  <br/> |
+| <span data-ttu-id="27202-108">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="27202-108">Cell name:</span></span>  <br/> | <span data-ttu-id="27202-109">PagesX</span><span class="sxs-lookup"><span data-stu-id="27202-109">PagesX</span></span>  <br/> |
    
-<span data-ttu-id="7ecdd-110">Wenn Sie einen Verweis auf die Zelle PagesX aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="7ecdd-110">To get a reference to the PagesX cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="27202-110">Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle PagesX nach Index aus einem Programm zu erhalten:</span><span class="sxs-lookup"><span data-stu-id="27202-110">To get a reference to the PagesX cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="7ecdd-111">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="7ecdd-111">Section index:</span></span>  <br/> |<span data-ttu-id="7ecdd-112">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="7ecdd-112">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="7ecdd-113">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="7ecdd-113">Row index:</span></span>  <br/> |<span data-ttu-id="7ecdd-114">**visRowPrintProperties**</span><span class="sxs-lookup"><span data-stu-id="7ecdd-114">**visRowPrintProperties**</span></span> <br/> |
-| <span data-ttu-id="7ecdd-115">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="7ecdd-115">Cell index:</span></span>  <br/> |<span data-ttu-id="7ecdd-116">**visPrintPropertiesPagesX**</span><span class="sxs-lookup"><span data-stu-id="7ecdd-116">**visPrintPropertiesPagesX**</span></span> <br/> |
+| <span data-ttu-id="27202-111">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="27202-111">Section index:</span></span>  <br/> |<span data-ttu-id="27202-112">**visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="27202-112">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="27202-113">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="27202-113">Row index:</span></span>  <br/> |<span data-ttu-id="27202-114">**visRowPrintProperties**</span><span class="sxs-lookup"><span data-stu-id="27202-114">**visRowPrintProperties**</span></span> <br/> |
+| <span data-ttu-id="27202-115">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="27202-115">Cell index:</span></span>  <br/> |<span data-ttu-id="27202-116">**visPrintPropertiesPagesX**</span><span class="sxs-lookup"><span data-stu-id="27202-116">**visPrintPropertiesPagesX**</span></span> <br/> |
    
 

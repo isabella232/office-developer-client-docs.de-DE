@@ -19,18 +19,18 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33438393"
 ---
-# <a name="dtblgroupbox"></a><span data-ttu-id="80109-103">DTBLGROUPBOX</span><span class="sxs-lookup"><span data-stu-id="80109-103">DTBLGROUPBOX</span></span>
+# <a name="dtblgroupbox"></a><span data-ttu-id="f2ad8-103">DTBLGROUPBOX</span><span class="sxs-lookup"><span data-stu-id="f2ad8-103">DTBLGROUPBOX</span></span>
 
   
   
-<span data-ttu-id="80109-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="80109-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="f2ad8-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="f2ad8-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="80109-105">Beschreibt ein Gruppenfeld-Steuerelement, das in einem von einer Anzeigetabelle erstellten Dialogfeldverwendet wird.</span><span class="sxs-lookup"><span data-stu-id="80109-105">Describes a group box control that will be used in a dialog box built from a display table.</span></span>
+<span data-ttu-id="f2ad8-105">Beschreibt ein Gruppenfeldsteuerelement, das in einem Dialogfeld verwendet wird, das aus einer Anzeigetabelle erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="f2ad8-105">Describes a group box control that will be used in a dialog box built from a display table.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="80109-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="80109-106">Header file:</span></span>  <br/> |<span data-ttu-id="80109-107">Mapidefs. h</span><span class="sxs-lookup"><span data-stu-id="80109-107">Mapidefs.h</span></span>  <br/> |
-|<span data-ttu-id="80109-108">Zugehöriges Makro:</span><span class="sxs-lookup"><span data-stu-id="80109-108">Related macro:</span></span>  <br/> |[<span data-ttu-id="80109-109">SizedDtblGroupBox</span><span class="sxs-lookup"><span data-stu-id="80109-109">SizedDtblGroupBox</span></span>](sizeddtblgroupbox.md) <br/> |
+|<span data-ttu-id="f2ad8-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="f2ad8-106">Header file:</span></span>  <br/> |<span data-ttu-id="f2ad8-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="f2ad8-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="f2ad8-108">Verwandtes Makro:</span><span class="sxs-lookup"><span data-stu-id="f2ad8-108">Related macro:</span></span>  <br/> |[<span data-ttu-id="f2ad8-109">SizedDtblGroupBox</span><span class="sxs-lookup"><span data-stu-id="f2ad8-109">SizedDtblGroupBox</span></span>](sizeddtblgroupbox.md) <br/> |
    
 ```cpp
 typedef struct _DTBLGROUPBOX
@@ -41,32 +41,32 @@ typedef struct _DTBLGROUPBOX
 
 ```
 
-## <a name="members"></a><span data-ttu-id="80109-110">Members</span><span class="sxs-lookup"><span data-stu-id="80109-110">Members</span></span>
+## <a name="members"></a><span data-ttu-id="f2ad8-110">Elemente</span><span class="sxs-lookup"><span data-stu-id="f2ad8-110">Members</span></span>
 
- <span data-ttu-id="80109-111">**ulbLpszLabel**</span><span class="sxs-lookup"><span data-stu-id="80109-111">**ulbLpszLabel**</span></span>
+ <span data-ttu-id="f2ad8-111">**ulbLpszLabel**</span><span class="sxs-lookup"><span data-stu-id="f2ad8-111">**ulbLpszLabel**</span></span>
   
-> <span data-ttu-id="80109-112">Position im Arbeitsspeicher der Zeichenfolge, die das Gruppenfeld begleitet.</span><span class="sxs-lookup"><span data-stu-id="80109-112">Position in memory of the character string that accompanies the group box.</span></span> <span data-ttu-id="80109-113">Wenn diese Option angezeigt wird, wird Sie oben links im Feld angezeigt.</span><span class="sxs-lookup"><span data-stu-id="80109-113">If displayed, the label appears on the top, left-hand side of the box.</span></span>
+> <span data-ttu-id="f2ad8-112">Position im Arbeitsspeicher der Zeichenzeichenfolge, die das Gruppenfeld begleitet.</span><span class="sxs-lookup"><span data-stu-id="f2ad8-112">Position in memory of the character string that accompanies the group box.</span></span> <span data-ttu-id="f2ad8-113">Wenn sie angezeigt wird, wird die Beschriftung oben links im Feld angezeigt.</span><span class="sxs-lookup"><span data-stu-id="f2ad8-113">If displayed, the label appears on the top, left-hand side of the box.</span></span>
     
- <span data-ttu-id="80109-114">**ulFlags**</span><span class="sxs-lookup"><span data-stu-id="80109-114">**ulFlags**</span></span>
+ <span data-ttu-id="f2ad8-114">**ulFlags**</span><span class="sxs-lookup"><span data-stu-id="f2ad8-114">**ulFlags**</span></span>
   
-> <span data-ttu-id="80109-115">Bitmaske der Flags, mit denen das Format der Bezeichnung festgelegt wird, auf die durch das **ulbLpszLabel** -Element verwiesen wird.</span><span class="sxs-lookup"><span data-stu-id="80109-115">Bitmask of flags used to designate the format of the label pointed to by the **ulbLpszLabel** member.</span></span> <span data-ttu-id="80109-116">Das folgende Flag kann festgelegt werden:</span><span class="sxs-lookup"><span data-stu-id="80109-116">The following flag can be set:</span></span> 
+> <span data-ttu-id="f2ad8-115">Bitmaske von Flags, die verwendet werden, um das Format der Bezeichnung zu bestimmen, auf das das **ulbLpszLabel-Element** verweist.</span><span class="sxs-lookup"><span data-stu-id="f2ad8-115">Bitmask of flags used to designate the format of the label pointed to by the **ulbLpszLabel** member.</span></span> <span data-ttu-id="f2ad8-116">Das folgende Flag kann festgelegt werden:</span><span class="sxs-lookup"><span data-stu-id="f2ad8-116">The following flag can be set:</span></span> 
     
-<span data-ttu-id="80109-117">MAPI_UNICODE</span><span class="sxs-lookup"><span data-stu-id="80109-117">MAPI_UNICODE</span></span> 
+<span data-ttu-id="f2ad8-117">MAPI_UNICODE</span><span class="sxs-lookup"><span data-stu-id="f2ad8-117">MAPI_UNICODE</span></span> 
   
-> <span data-ttu-id="80109-118">Die Bezeichnung ist im Unicode-Format.</span><span class="sxs-lookup"><span data-stu-id="80109-118">The label is in Unicode format.</span></span> <span data-ttu-id="80109-119">Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, ist die Bezeichnung im ANSI-Format.</span><span class="sxs-lookup"><span data-stu-id="80109-119">If the MAPI_UNICODE flag is not set, the label is in ANSI format.</span></span>
+> <span data-ttu-id="f2ad8-118">Die Bezeichnung ist im Unicode-Format.</span><span class="sxs-lookup"><span data-stu-id="f2ad8-118">The label is in Unicode format.</span></span> <span data-ttu-id="f2ad8-119">Wenn das MAPI_UNICODE nicht festgelegt ist, befindet sich die Bezeichnung im ANSI-Format.</span><span class="sxs-lookup"><span data-stu-id="f2ad8-119">If the MAPI_UNICODE flag is not set, the label is in ANSI format.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="80109-120">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="80109-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f2ad8-120">Hinweise</span><span class="sxs-lookup"><span data-stu-id="f2ad8-120">Remarks</span></span>
 
-<span data-ttu-id="80109-121">Eine **DTBLGROUPBOX** -Struktur beschreibt ein Gruppenfeld-Steuerelement, mit dem andere Steuerelemente im Dialogfeld visuell zugeordnet werden.</span><span class="sxs-lookup"><span data-stu-id="80109-121">A **DTBLGROUPBOX** structure describes a group box control that is used to visually associate other controls in the dialog box.</span></span> <span data-ttu-id="80109-122">Die Hervorhebungs Technik umfasst das umschließen der anderen Steuerelemente durch ein Feld.</span><span class="sxs-lookup"><span data-stu-id="80109-122">The highlighting technique involves surrounding the other controls by a box.</span></span> 
+<span data-ttu-id="f2ad8-121">Eine **DTBLGROUPBOX-Struktur** beschreibt ein Gruppenfeldsteuerelement, das zum visuellen Zuordnen anderer Steuerelemente im Dialogfeld verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="f2ad8-121">A **DTBLGROUPBOX** structure describes a group box control that is used to visually associate other controls in the dialog box.</span></span> <span data-ttu-id="f2ad8-122">Die Hervorhebungstechnik umfasst das Um umgeben der anderen Steuerelemente durch ein Feld.</span><span class="sxs-lookup"><span data-stu-id="f2ad8-122">The highlighting technique involves surrounding the other controls by a box.</span></span> 
   
-<span data-ttu-id="80109-123">Eine Übersicht über Anzeige Tabellen finden Sie unter [Display Tables](display-tables.md).</span><span class="sxs-lookup"><span data-stu-id="80109-123">For an overview of display tables, see [Display Tables](display-tables.md).</span></span> <span data-ttu-id="80109-124">Weitere Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).</span><span class="sxs-lookup"><span data-stu-id="80109-124">For information about how to implement a display table, see [Implementing a Display Table](display-table-implementation.md).</span></span>
+<span data-ttu-id="f2ad8-123">Eine Übersicht über Anzeigetabellen finden Sie unter [Display Tables](display-tables.md).</span><span class="sxs-lookup"><span data-stu-id="f2ad8-123">For an overview of display tables, see [Display Tables](display-tables.md).</span></span> <span data-ttu-id="f2ad8-124">Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).</span><span class="sxs-lookup"><span data-stu-id="f2ad8-124">For information about how to implement a display table, see [Implementing a Display Table](display-table-implementation.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="80109-125">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="80109-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f2ad8-125">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="f2ad8-125">See also</span></span>
 
 
 
-[<span data-ttu-id="80109-126">DTCTL</span><span class="sxs-lookup"><span data-stu-id="80109-126">DTCTL</span></span>](dtctl.md)
+[<span data-ttu-id="f2ad8-126">DTCTL</span><span class="sxs-lookup"><span data-stu-id="f2ad8-126">DTCTL</span></span>](dtctl.md)
 
 
-[<span data-ttu-id="80109-127">MAPI-Strukturen</span><span class="sxs-lookup"><span data-stu-id="80109-127">MAPI Structures</span></span>](mapi-structures.md)
+[<span data-ttu-id="f2ad8-127">MAPI-Strukturen</span><span class="sxs-lookup"><span data-stu-id="f2ad8-127">MAPI Structures</span></span>](mapi-structures.md)
 

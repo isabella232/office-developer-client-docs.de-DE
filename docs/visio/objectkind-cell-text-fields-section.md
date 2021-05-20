@@ -16,35 +16,35 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33438512"
 ---
-# <a name="objectkind-cell-text-fields-section"></a><span data-ttu-id="2258f-103">Zelle "ObjectKind" (Abschnitt "Text Fields")</span><span class="sxs-lookup"><span data-stu-id="2258f-103">ObjectKind Cell (Text Fields Section)</span></span>
+# <a name="objectkind-cell-text-fields-section"></a><span data-ttu-id="b7a93-103">Zelle "ObjectKind" (Abschnitt "Text Fields")</span><span class="sxs-lookup"><span data-stu-id="b7a93-103">ObjectKind Cell (Text Fields Section)</span></span>
 
-<span data-ttu-id="2258f-104">Gibt den Textfeldtyp an.</span><span class="sxs-lookup"><span data-stu-id="2258f-104">Indicates the type of text field.</span></span>
+<span data-ttu-id="b7a93-104">Gibt den Textfeldtyp an.</span><span class="sxs-lookup"><span data-stu-id="b7a93-104">Indicates the type of text field.</span></span>
   
-|<span data-ttu-id="2258f-105">**Wert**</span><span class="sxs-lookup"><span data-stu-id="2258f-105">**Value**</span></span>|<span data-ttu-id="2258f-106">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="2258f-106">**Description**</span></span>|<span data-ttu-id="2258f-107">**Automatisierungskonstante**</span><span class="sxs-lookup"><span data-stu-id="2258f-107">**Automation constant**</span></span>|
+|<span data-ttu-id="b7a93-105">**Wert**</span><span class="sxs-lookup"><span data-stu-id="b7a93-105">**Value**</span></span>|<span data-ttu-id="b7a93-106">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="b7a93-106">**Description**</span></span>|<span data-ttu-id="b7a93-107">**Automatisierungskonstante**</span><span class="sxs-lookup"><span data-stu-id="b7a93-107">**Automation constant**</span></span>|
 |:-----|:-----|:-----|
-| <span data-ttu-id="2258f-108">0</span><span class="sxs-lookup"><span data-stu-id="2258f-108">0</span></span>  <br/> | <span data-ttu-id="2258f-109">Standard</span><span class="sxs-lookup"><span data-stu-id="2258f-109">Standard</span></span>  <br/> |<span data-ttu-id="2258f-110">**visTFOKStandard**</span><span class="sxs-lookup"><span data-stu-id="2258f-110">**visTFOKStandard**</span></span> <br/> |
-| <span data-ttu-id="2258f-111">1</span><span class="sxs-lookup"><span data-stu-id="2258f-111">1</span></span>  <br/> |<span data-ttu-id="2258f-112">Horizontal in Vertikal</span><span class="sxs-lookup"><span data-stu-id="2258f-112">Horizontal in vertical</span></span>  <br/> |<span data-ttu-id="2258f-113">**visTFOKHorizontaInVertical**</span><span class="sxs-lookup"><span data-stu-id="2258f-113">**visTFOKHorizontaInVertical**</span></span> <br/> |
+| <span data-ttu-id="b7a93-108">0</span><span class="sxs-lookup"><span data-stu-id="b7a93-108">0</span></span>  <br/> | <span data-ttu-id="b7a93-109">Standard</span><span class="sxs-lookup"><span data-stu-id="b7a93-109">Standard</span></span>  <br/> |<span data-ttu-id="b7a93-110">**visTFOKStandard**</span><span class="sxs-lookup"><span data-stu-id="b7a93-110">**visTFOKStandard**</span></span> <br/> |
+| <span data-ttu-id="b7a93-111">1</span><span class="sxs-lookup"><span data-stu-id="b7a93-111">1</span></span>  <br/> |<span data-ttu-id="b7a93-112">Horizontal in Vertikal</span><span class="sxs-lookup"><span data-stu-id="b7a93-112">Horizontal in vertical</span></span>  <br/> |<span data-ttu-id="b7a93-113">**visTFOKHorizontaInVertical**</span><span class="sxs-lookup"><span data-stu-id="b7a93-113">**visTFOKHorizontaInVertical**</span></span> <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="2258f-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="2258f-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b7a93-114">Hinweise</span><span class="sxs-lookup"><span data-stu-id="b7a93-114">Remarks</span></span>
 
-<span data-ttu-id="2258f-115">Die folgenden Typen von Textfeldern sind möglich:</span><span class="sxs-lookup"><span data-stu-id="2258f-115">Text fields can be one of the following types:</span></span>
+<span data-ttu-id="b7a93-115">Die folgenden Typen von Textfeldern sind möglich:</span><span class="sxs-lookup"><span data-stu-id="b7a93-115">Text fields can be one of the following types:</span></span>
   
-- <span data-ttu-id="2258f-116">Standard. Damit wird angegeben, dass das Feld nach Feldkategorie eingefügt wurde.</span><span class="sxs-lookup"><span data-stu-id="2258f-116">Standard, indicating that the field was inserted by field category.</span></span>
+- <span data-ttu-id="b7a93-116">Standard. Damit wird angegeben, dass das Feld nach Feldkategorie eingefügt wurde.</span><span class="sxs-lookup"><span data-stu-id="b7a93-116">Standard, indicating that the field was inserted by field category.</span></span>
     
-- <span data-ttu-id="2258f-117">Horizontal in Vertikal. Damit wird angegeben, dass im Feld horizontaler Text in vertikalen Text gesetzt ist.</span><span class="sxs-lookup"><span data-stu-id="2258f-117">Horizontal in vertical, indicating that the field is horizontal text set within vertical text.</span></span>
+- <span data-ttu-id="b7a93-117">Horizontal in Vertikal. Damit wird angegeben, dass im Feld horizontaler Text in vertikalen Text gesetzt ist.</span><span class="sxs-lookup"><span data-stu-id="b7a93-117">Horizontal in vertical, indicating that the field is horizontal text set within vertical text.</span></span>
     
-<span data-ttu-id="2258f-118">Wenn Sie einen Verweis auf die Zelle objectKind aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="2258f-118">To get a reference to the ObjectKind cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="b7a93-118">Um einen Verweis auf die Zelle ObjectKind anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie:</span><span class="sxs-lookup"><span data-stu-id="b7a93-118">To get a reference to the ObjectKind cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="2258f-119">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="2258f-119">Cell name:</span></span>  <br/> | <span data-ttu-id="2258f-120">Fields. objectKind [ *i* ] wobei *i* = <1>, 2, 3...</span><span class="sxs-lookup"><span data-stu-id="2258f-120">Fields.ObjectKind[  *i*  ]            where  *i*  = <1>, 2, 3...</span></span>  <br/> |
+| <span data-ttu-id="b7a93-119">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="b7a93-119">Cell name:</span></span>  <br/> | <span data-ttu-id="b7a93-120">Fields.ObjectKind[  *i*  ] where  *i*  = <1>, 2, 3...</span><span class="sxs-lookup"><span data-stu-id="b7a93-120">Fields.ObjectKind[  *i*  ]            where  *i*  = <1>, 2, 3...</span></span>  <br/> |
    
-<span data-ttu-id="2258f-121">Wenn Sie einen Verweis auf die Zelle objectKind aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="2258f-121">To get a reference to the ObjectKind cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="b7a93-121">Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die ObjectKind-Zelle nach Index aus einem Programm zu erhalten:</span><span class="sxs-lookup"><span data-stu-id="b7a93-121">To get a reference to the ObjectKind cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="2258f-122">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="2258f-122">Section index:</span></span>  <br/> |<span data-ttu-id="2258f-123">**visSectionTextField**</span><span class="sxs-lookup"><span data-stu-id="2258f-123">**visSectionTextField**</span></span> <br/> |
-| <span data-ttu-id="2258f-124">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="2258f-124">Row index:</span></span>  <br/> |<span data-ttu-id="2258f-125">**visRowField** +  *i* , wobei *i* = 0, 1, 2...</span><span class="sxs-lookup"><span data-stu-id="2258f-125">**visRowField** +  *i*            where  *i*  = 0, 1, 2...</span></span>  <br/> |
-| <span data-ttu-id="2258f-126">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="2258f-126">Cell index:</span></span>  <br/> |<span data-ttu-id="2258f-127">**visFieldObjectKind**</span><span class="sxs-lookup"><span data-stu-id="2258f-127">**visFieldObjectKind**</span></span> <br/> |
+| <span data-ttu-id="b7a93-122">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="b7a93-122">Section index:</span></span>  <br/> |<span data-ttu-id="b7a93-123">**visSectionTextField**</span><span class="sxs-lookup"><span data-stu-id="b7a93-123">**visSectionTextField**</span></span> <br/> |
+| <span data-ttu-id="b7a93-124">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="b7a93-124">Row index:</span></span>  <br/> |<span data-ttu-id="b7a93-125">**visRowField**  +   *i,* *wobei i* = 0, 1, 2...</span><span class="sxs-lookup"><span data-stu-id="b7a93-125">**visRowField** +  *i*            where  *i*  = 0, 1, 2...</span></span>  <br/> |
+| <span data-ttu-id="b7a93-126">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="b7a93-126">Cell index:</span></span>  <br/> |<span data-ttu-id="b7a93-127">**visFieldObjectKind**</span><span class="sxs-lookup"><span data-stu-id="b7a93-127">**visFieldObjectKind**</span></span> <br/> |
    
 
