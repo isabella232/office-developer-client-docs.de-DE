@@ -14,25 +14,25 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33439646"
 ---
-# <a name="iolkenumreset"></a><span data-ttu-id="433de-103">IOlkEnum::Reset</span><span class="sxs-lookup"><span data-stu-id="433de-103">IOlkEnum::Reset</span></span>
+# <a name="iolkenumreset"></a><span data-ttu-id="2bf5d-103">IOlkEnum::Reset</span><span class="sxs-lookup"><span data-stu-id="2bf5d-103">IOlkEnum::Reset</span></span>
 
-<span data-ttu-id="433de-104">Setzt den Enumerator auf den Anfang zurück.</span><span class="sxs-lookup"><span data-stu-id="433de-104">Resets the enumerator to the beginning.</span></span>
+<span data-ttu-id="2bf5d-104">Setzt den Enumerator auf den Anfang zurück.</span><span class="sxs-lookup"><span data-stu-id="2bf5d-104">Resets the enumerator to the beginning.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="433de-105">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="433de-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="2bf5d-105">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="2bf5d-105">Quick info</span></span>
 
-<span data-ttu-id="433de-106">Siehe [IOlkEnum](iolkenum.md).</span><span class="sxs-lookup"><span data-stu-id="433de-106">See [IOlkEnum](iolkenum.md).</span></span>
+<span data-ttu-id="2bf5d-106">Siehe [IOlkEnum](iolkenum.md).</span><span class="sxs-lookup"><span data-stu-id="2bf5d-106">See [IOlkEnum](iolkenum.md).</span></span>
   
 ```cpp
 HRESULT IOlkEnum::Reset ();
 ```
 
-## <a name="return-values"></a><span data-ttu-id="433de-107">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="433de-107">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="2bf5d-107">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="2bf5d-107">Return values</span></span>
 
-<span data-ttu-id="433de-108">S_OK zurück, wenn der Aufruf erfolgreich war; andernfalls einen Fehlercode.</span><span class="sxs-lookup"><span data-stu-id="433de-108">S_OK if the call succeeded; otherwise, an error code.</span></span>
+<span data-ttu-id="2bf5d-108">S_OK zurück, wenn der Aufruf erfolgreich war; andernfalls einen Fehlercode.</span><span class="sxs-lookup"><span data-stu-id="2bf5d-108">S_OK if the call succeeded; otherwise, an error code.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="433de-109">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="433de-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2bf5d-109">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="2bf5d-109">See also</span></span>
 
-- [<span data-ttu-id="433de-110">IOlkEnum::GetCount</span><span class="sxs-lookup"><span data-stu-id="433de-110">IOlkEnum::GetCount</span></span>](iolkenum-getcount.md)
-- [<span data-ttu-id="433de-111">IOlkEnum::GetNext</span><span class="sxs-lookup"><span data-stu-id="433de-111">IOlkEnum::GetNext</span></span>](iolkenum-getnext.md)
-- [<span data-ttu-id="433de-112">IOlkEnum::Skip</span><span class="sxs-lookup"><span data-stu-id="433de-112">IOlkEnum::Skip</span></span>](iolkenum-skip.md)
+- [<span data-ttu-id="2bf5d-110">IOlkEnum::GetCount</span><span class="sxs-lookup"><span data-stu-id="2bf5d-110">IOlkEnum::GetCount</span></span>](iolkenum-getcount.md)
+- [<span data-ttu-id="2bf5d-111">IOlkEnum::GetNext</span><span class="sxs-lookup"><span data-stu-id="2bf5d-111">IOlkEnum::GetNext</span></span>](iolkenum-getnext.md)
+- [<span data-ttu-id="2bf5d-112">IOlkEnum::Skip</span><span class="sxs-lookup"><span data-stu-id="2bf5d-112">IOlkEnum::Skip</span></span>](iolkenum-skip.md)
 

@@ -19,13 +19,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33439611"
 ---
-# <a name="imapigetsessiongetmapisession"></a><span data-ttu-id="7365e-103">IMAPIGetSession::GetMAPISession</span><span class="sxs-lookup"><span data-stu-id="7365e-103">IMAPIGetSession::GetMAPISession</span></span>
+# <a name="imapigetsessiongetmapisession"></a><span data-ttu-id="39ac5-103">IMAPIGetSession::GetMAPISession</span><span class="sxs-lookup"><span data-stu-id="39ac5-103">IMAPIGetSession::GetMAPISession</span></span>
 
   
   
-<span data-ttu-id="7365e-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="7365e-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="39ac5-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="39ac5-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="7365e-105">Gibt einen Verweis auf die MAPI-Sitzung zurück, die dem MAPI-Unterstützungsobjekt zugeordnet ist.</span><span class="sxs-lookup"><span data-stu-id="7365e-105">Returns a pointer to the MAPI session associated with the MAPI support object.</span></span>
+<span data-ttu-id="39ac5-105">Gibt einen Zeiger auf die MAPI-Sitzung zurück, die dem MAPI-Supportobjekt zugeordnet ist.</span><span class="sxs-lookup"><span data-stu-id="39ac5-105">Returns a pointer to the MAPI session associated with the MAPI support object.</span></span>
   
 ```cpp
 HRESULT GetMAPISession(
@@ -33,18 +33,18 @@ HRESULT GetMAPISession(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="7365e-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="7365e-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="39ac5-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="39ac5-106">Parameters</span></span>
 
- <span data-ttu-id="7365e-107">_lppSession_</span><span class="sxs-lookup"><span data-stu-id="7365e-107">_lppSession_</span></span>
+ <span data-ttu-id="39ac5-107">_lppSession_</span><span class="sxs-lookup"><span data-stu-id="39ac5-107">_lppSession_</span></span>
   
-> <span data-ttu-id="7365e-108">Out Ein Zeiger auf die aktuelle MAPI-Sitzung.</span><span class="sxs-lookup"><span data-stu-id="7365e-108">[out] A pointer to the current MAPI session.</span></span>
+> <span data-ttu-id="39ac5-108">[out] Ein Zeiger auf die aktuelle MAPI-Sitzung.</span><span class="sxs-lookup"><span data-stu-id="39ac5-108">[out] A pointer to the current MAPI session.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="7365e-109">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="7365e-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="39ac5-109">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="39ac5-109">See also</span></span>
 
 
 
-[<span data-ttu-id="7365e-110">IMAPIGetSession : IUnknown</span><span class="sxs-lookup"><span data-stu-id="7365e-110">IMAPIGetSession : IUnknown</span></span>](imapigetsessioniunknown.md)
+[<span data-ttu-id="39ac5-110">IMAPIGetSession : IUnknown</span><span class="sxs-lookup"><span data-stu-id="39ac5-110">IMAPIGetSession : IUnknown</span></span>](imapigetsessioniunknown.md)
 
 
-[<span data-ttu-id="7365e-111">Übersicht über das Support Objekt</span><span class="sxs-lookup"><span data-stu-id="7365e-111">Support Object Overview</span></span>](support-object-overview.md)
+[<span data-ttu-id="39ac5-111">Übersicht über das Supportobjekt</span><span class="sxs-lookup"><span data-stu-id="39ac5-111">Support Object Overview</span></span>](support-object-overview.md)
 

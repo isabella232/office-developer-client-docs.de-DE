@@ -16,25 +16,25 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33439786"
 ---
-# <a name="defaultevent-function"></a><span data-ttu-id="7196d-103">DEFAULTEVENT Function</span><span class="sxs-lookup"><span data-stu-id="7196d-103">DEFAULTEVENT Function</span></span>
+# <a name="defaultevent-function"></a><span data-ttu-id="02d5f-103">DEFAULTEVENT Function</span><span class="sxs-lookup"><span data-stu-id="02d5f-103">DEFAULTEVENT Function</span></span>
 
-<span data-ttu-id="7196d-104">Führt das Standardereignis aus, das dem Objekt zugeordnet ist.</span><span class="sxs-lookup"><span data-stu-id="7196d-104">Performs the default event associated with the object.</span></span>
+<span data-ttu-id="02d5f-104">Führt das Standardereignis aus, das dem Objekt zugeordnet ist.</span><span class="sxs-lookup"><span data-stu-id="02d5f-104">Performs the default event associated with the object.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="7196d-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="7196d-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="02d5f-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="02d5f-105">Syntax</span></span>
 
-<span data-ttu-id="7196d-106">DEFAULTEVENT( )</span><span class="sxs-lookup"><span data-stu-id="7196d-106">DEFAULTEVENT( )</span></span>
+<span data-ttu-id="02d5f-106">DEFAULTEVENT( )</span><span class="sxs-lookup"><span data-stu-id="02d5f-106">DEFAULTEVENT( )</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="7196d-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="7196d-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="02d5f-107">Hinweise</span><span class="sxs-lookup"><span data-stu-id="02d5f-107">Remarks</span></span>
 
-<span data-ttu-id="7196d-108">In der folgenden Tabelle wird die Standardaktion aufgelistet, die mehreren Objekten zugeordnet ist.</span><span class="sxs-lookup"><span data-stu-id="7196d-108">The following table lists the default event associated with several objects.</span></span>
+<span data-ttu-id="02d5f-108">In der folgenden Tabelle wird die Standardaktion aufgelistet, die mehreren Objekten zugeordnet ist.</span><span class="sxs-lookup"><span data-stu-id="02d5f-108">The following table lists the default event associated with several objects.</span></span>
   
-|<span data-ttu-id="7196d-109">**Objekt**</span><span class="sxs-lookup"><span data-stu-id="7196d-109">**Object**</span></span>|<span data-ttu-id="7196d-110">**Standardaktion**</span><span class="sxs-lookup"><span data-stu-id="7196d-110">**Default event**</span></span>|
+|<span data-ttu-id="02d5f-109">**Objekt**</span><span class="sxs-lookup"><span data-stu-id="02d5f-109">**Object**</span></span>|<span data-ttu-id="02d5f-110">**Standardaktion**</span><span class="sxs-lookup"><span data-stu-id="02d5f-110">**Default event**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="7196d-111">Form</span><span class="sxs-lookup"><span data-stu-id="7196d-111">Shape</span></span>  <br/> |<span data-ttu-id="7196d-112">Text bearbeiten</span><span class="sxs-lookup"><span data-stu-id="7196d-112">Edit text.</span></span>  <br/> |
-|<span data-ttu-id="7196d-113">Group</span><span class="sxs-lookup"><span data-stu-id="7196d-113">Group</span></span>  <br/> |<span data-ttu-id="7196d-114">Keine Aktion ausführen.</span><span class="sxs-lookup"><span data-stu-id="7196d-114">Do nothing.</span></span>  <br/> |
-|<span data-ttu-id="7196d-115">OLE</span><span class="sxs-lookup"><span data-stu-id="7196d-115">OLE</span></span>  <br/> |<span data-ttu-id="7196d-116">Primäres Verb ausführen</span><span class="sxs-lookup"><span data-stu-id="7196d-116">Do primary verb.</span></span>  <br/> |
-|<span data-ttu-id="7196d-117">Andere</span><span class="sxs-lookup"><span data-stu-id="7196d-117">Other</span></span>  <br/> |<span data-ttu-id="7196d-118">Keine Aktion</span><span class="sxs-lookup"><span data-stu-id="7196d-118">Do nothing.</span></span>  <br/> |
+|<span data-ttu-id="02d5f-111">Form</span><span class="sxs-lookup"><span data-stu-id="02d5f-111">Shape</span></span>  <br/> |<span data-ttu-id="02d5f-112">Text bearbeiten</span><span class="sxs-lookup"><span data-stu-id="02d5f-112">Edit text.</span></span>  <br/> |
+|<span data-ttu-id="02d5f-113">Gruppe</span><span class="sxs-lookup"><span data-stu-id="02d5f-113">Group</span></span>  <br/> |<span data-ttu-id="02d5f-114">Keine Aktion</span><span class="sxs-lookup"><span data-stu-id="02d5f-114">Do nothing.</span></span>  <br/> |
+|<span data-ttu-id="02d5f-115">OLE</span><span class="sxs-lookup"><span data-stu-id="02d5f-115">OLE</span></span>  <br/> |<span data-ttu-id="02d5f-116">Primäres Verb ausführen</span><span class="sxs-lookup"><span data-stu-id="02d5f-116">Do primary verb.</span></span>  <br/> |
+|<span data-ttu-id="02d5f-117">Andere</span><span class="sxs-lookup"><span data-stu-id="02d5f-117">Other</span></span>  <br/> |<span data-ttu-id="02d5f-118">Keine Aktion</span><span class="sxs-lookup"><span data-stu-id="02d5f-118">Do nothing.</span></span>  <br/> |
    
-<span data-ttu-id="7196d-119">In früheren Versionen von Visio weist diese Funktion die Form _DEFAULTEVENT auf, und die Standardaktion für eine Gruppe ist das Öffnen eines Gruppenfensters.</span><span class="sxs-lookup"><span data-stu-id="7196d-119">In earlier versions of Visio, this function appears as _DEFAULTEVENT and the default event for a group is to open a group window.</span></span> 
+<span data-ttu-id="02d5f-119">In früheren Versionen von Visio weist diese Funktion die Form _DEFAULTEVENT auf, und die Standardaktion für eine Gruppe ist das Öffnen eines Gruppenfensters.</span><span class="sxs-lookup"><span data-stu-id="02d5f-119">In earlier versions of Visio, this function appears as _DEFAULTEVENT and the default event for a group is to open a group window.</span></span> 
   
 
