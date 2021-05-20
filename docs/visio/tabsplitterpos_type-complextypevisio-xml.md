@@ -13,17 +13,17 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34538830"
 ---
-# <a name="tabsplitterpostype-complextype-visio-xml"></a><span data-ttu-id="72a2c-102">TabSplitterPos_Type complexType (Visio XML)</span><span class="sxs-lookup"><span data-stu-id="72a2c-102">TabSplitterPos_Type complexType (Visio XML)</span></span>
+# <a name="tabsplitterpos_type-complextype-visio-xml"></a><span data-ttu-id="e080c-102">TabSplitterPos_Type complexType (Visio XML)</span><span class="sxs-lookup"><span data-stu-id="e080c-102">TabSplitterPos_Type complexType (Visio XML)</span></span>
 
-## <a name="type-information"></a><span data-ttu-id="72a2c-103">Informationen zum Typ</span><span class="sxs-lookup"><span data-stu-id="72a2c-103">Type information</span></span>
+## <a name="type-information"></a><span data-ttu-id="e080c-103">Informationen zum Typ</span><span class="sxs-lookup"><span data-stu-id="e080c-103">Type information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="72a2c-104">**Namespace**</span><span class="sxs-lookup"><span data-stu-id="72a2c-104">**Namespace**</span></span> <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
-|<span data-ttu-id="72a2c-105">**Schemadatei**</span><span class="sxs-lookup"><span data-stu-id="72a2c-105">**Schema file**</span></span> <br/> |<span data-ttu-id="72a2c-106">VisioSchema15-2012-06 -05. xsd</span><span class="sxs-lookup"><span data-stu-id="72a2c-106">VisioSchema15-2012-06-05.xsd</span></span>  <br/> |
-|<span data-ttu-id="72a2c-107">**Erweiterungsbasis**</span><span class="sxs-lookup"><span data-stu-id="72a2c-107">**Extension base**</span></span> <br/> |<span data-ttu-id="72a2c-108">XSD: Double</span><span class="sxs-lookup"><span data-stu-id="72a2c-108">xsd:double</span></span>  <br/> |
+|<span data-ttu-id="e080c-104">**Namespace**</span><span class="sxs-lookup"><span data-stu-id="e080c-104">**Namespace**</span></span> <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
+|<span data-ttu-id="e080c-105">**Schemadatei**</span><span class="sxs-lookup"><span data-stu-id="e080c-105">**Schema file**</span></span> <br/> |<span data-ttu-id="e080c-106">VisioSchema15-2012-06-05.xsd</span><span class="sxs-lookup"><span data-stu-id="e080c-106">VisioSchema15-2012-06-05.xsd</span></span>  <br/> |
+|<span data-ttu-id="e080c-107">**Erweiterungsbasis**</span><span class="sxs-lookup"><span data-stu-id="e080c-107">**Extension base**</span></span> <br/> |<span data-ttu-id="e080c-108">xsd:double</span><span class="sxs-lookup"><span data-stu-id="e080c-108">xsd:double</span></span>  <br/> |
    
-## <a name="definition"></a><span data-ttu-id="72a2c-109">Definition</span><span class="sxs-lookup"><span data-stu-id="72a2c-109">Definition</span></span>
+## <a name="definition"></a><span data-ttu-id="e080c-109">Definition</span><span class="sxs-lookup"><span data-stu-id="e080c-109">Definition</span></span>
 
 ```XML
       <xs:complexType name="TabSplitterPos_Type">
@@ -31,16 +31,16 @@ ms.locfileid: "34538830"
       
 ```
 
-## <a name="elements-and-attributes"></a><span data-ttu-id="72a2c-110">Elemente und Attribute</span><span class="sxs-lookup"><span data-stu-id="72a2c-110">Elements and attributes</span></span>
+## <a name="elements-and-attributes"></a><span data-ttu-id="e080c-110">Elemente und Attribute</span><span class="sxs-lookup"><span data-stu-id="e080c-110">Elements and attributes</span></span>
 
-<span data-ttu-id="72a2c-111">Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition.</span><span class="sxs-lookup"><span data-stu-id="72a2c-111">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
+<span data-ttu-id="e080c-111">Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition.</span><span class="sxs-lookup"><span data-stu-id="e080c-111">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
   
-### <a name="child-elements"></a><span data-ttu-id="72a2c-112">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="72a2c-112">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="e080c-112">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="e080c-112">Child elements</span></span>
 
-<span data-ttu-id="72a2c-113">Keine.</span><span class="sxs-lookup"><span data-stu-id="72a2c-113">None.</span></span>
+<span data-ttu-id="e080c-113">Keine.</span><span class="sxs-lookup"><span data-stu-id="e080c-113">None.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="72a2c-114">Attribute</span><span class="sxs-lookup"><span data-stu-id="72a2c-114">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="e080c-114">Attribute</span><span class="sxs-lookup"><span data-stu-id="e080c-114">Attributes</span></span>
 
-<span data-ttu-id="72a2c-115">Keine.</span><span class="sxs-lookup"><span data-stu-id="72a2c-115">None.</span></span>
+<span data-ttu-id="e080c-115">Keine.</span><span class="sxs-lookup"><span data-stu-id="e080c-115">None.</span></span>
   
 
