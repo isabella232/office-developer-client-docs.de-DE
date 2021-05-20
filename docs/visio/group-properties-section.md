@@ -16,12 +16,12 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33430749"
 ---
-# <a name="group-properties-section"></a><span data-ttu-id="2afb3-103">Abschnitt "Group Properties"</span><span class="sxs-lookup"><span data-stu-id="2afb3-103">Group Properties Section</span></span>
+# <a name="group-properties-section"></a><span data-ttu-id="ac1d2-103">Abschnitt "Group Properties"</span><span class="sxs-lookup"><span data-stu-id="ac1d2-103">Group Properties Section</span></span>
 
-<span data-ttu-id="2afb3-104">Enthält Zellen für eine Gruppe, die steuern, wie Sie Shapes in Gruppen einfügen, Mitglieder von Gruppen verschieben und Gruppen auswählen können.</span><span class="sxs-lookup"><span data-stu-id="2afb3-104">Contains cells for a group that control how you add shapes to a group, move members of a group, and select groups.</span></span> 
+<span data-ttu-id="ac1d2-104">Enthält Zellen für eine Gruppe, die steuern, wie Sie Shapes in Gruppen einfügen, Mitglieder von Gruppen verschieben und Gruppen auswählen können.</span><span class="sxs-lookup"><span data-stu-id="ac1d2-104">Contains cells for a group that control how you add shapes to a group, move members of a group, and select groups.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="2afb3-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="2afb3-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="ac1d2-105">Hinweise</span><span class="sxs-lookup"><span data-stu-id="ac1d2-105">Remarks</span></span>
 
-<span data-ttu-id="2afb3-106">Sie können diese Werte auch im Dialogfeld **Verhalten** auf der Registerkarte **Verhalten** festlegen (klicken Sie dazu auf der Registerkarte [Entwickler](run-in-developer-mode-display-the-developer-tab.md) in der Gruppe **Shape-Design** auf **Verhalten**).</span><span class="sxs-lookup"><span data-stu-id="2afb3-106">You can also set these values on the **Behavior** tab in the **Behavior** dialog box (click **Behavior** in the **Shape Design** group on the [Developer](run-in-developer-mode-display-the-developer-tab.md) tab).</span></span> 
+<span data-ttu-id="ac1d2-106">Sie können diese Werte auch im Dialogfeld **Verhalten** auf der Registerkarte **Verhalten** festlegen (klicken Sie dazu auf der Registerkarte [Entwickler](run-in-developer-mode-display-the-developer-tab.md) in der Gruppe **Shape-Design** auf **Verhalten**).</span><span class="sxs-lookup"><span data-stu-id="ac1d2-106">You can also set these values on the **Behavior** tab in the **Behavior** dialog box (click **Behavior** in the **Shape Design** group on the [Developer](run-in-developer-mode-display-the-developer-tab.md) tab).</span></span> 
   
 

@@ -14,21 +14,21 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33435950"
 ---
-# <a name="propsmtppassword"></a><span data-ttu-id="7fb07-103">PROP_SMTP_PASSWORD</span><span class="sxs-lookup"><span data-stu-id="7fb07-103">PROP_SMTP_PASSWORD</span></span>
+# <a name="prop_smtp_password"></a><span data-ttu-id="6fde3-103">PROP_SMTP_PASSWORD</span><span class="sxs-lookup"><span data-stu-id="6fde3-103">PROP_SMTP_PASSWORD</span></span>
 
-<span data-ttu-id="7fb07-104">Stellt das Kennwort des SMTP-Kontos dar.</span><span class="sxs-lookup"><span data-stu-id="7fb07-104">Represents the password of the SMTP account.</span></span>
+<span data-ttu-id="6fde3-104">Stellt das Kennwort des SMTP-Kontos dar.</span><span class="sxs-lookup"><span data-stu-id="6fde3-104">Represents the password of the SMTP account.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="7fb07-105">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="7fb07-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="6fde3-105">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="6fde3-105">Quick info</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="7fb07-106">Kennung:</span><span class="sxs-lookup"><span data-stu-id="7fb07-106">Identifier:</span></span>  <br/> |<span data-ttu-id="7fb07-107">0x0205</span><span class="sxs-lookup"><span data-stu-id="7fb07-107">0x0205</span></span>  <br/> |
-|<span data-ttu-id="7fb07-108">Eigenschafts:</span><span class="sxs-lookup"><span data-stu-id="7fb07-108">Property type:</span></span>  <br/> |<span data-ttu-id="7fb07-109">PT_UNICODE</span><span class="sxs-lookup"><span data-stu-id="7fb07-109">PT_UNICODE</span></span>|<span data-ttu-id="7fb07-110">SECURE_FLAG</span><span class="sxs-lookup"><span data-stu-id="7fb07-110">SECURE_FLAG</span></span>  <br/> |
-|<span data-ttu-id="7fb07-111">Property-Tag:</span><span class="sxs-lookup"><span data-stu-id="7fb07-111">Property tag:</span></span>  <br/> |<span data-ttu-id="7fb07-112">0x2058001F</span><span class="sxs-lookup"><span data-stu-id="7fb07-112">0x2058001F</span></span>  <br/> |
-|<span data-ttu-id="7fb07-113">Access</span><span class="sxs-lookup"><span data-stu-id="7fb07-113">Access:</span></span>  <br/> |<span data-ttu-id="7fb07-114">Schreibgeschützt</span><span class="sxs-lookup"><span data-stu-id="7fb07-114">Read-only</span></span>  <br/> |
+|<span data-ttu-id="6fde3-106">Kennung:</span><span class="sxs-lookup"><span data-stu-id="6fde3-106">Identifier:</span></span>  <br/> |<span data-ttu-id="6fde3-107">0x0205</span><span class="sxs-lookup"><span data-stu-id="6fde3-107">0x0205</span></span>  <br/> |
+|<span data-ttu-id="6fde3-108">Eigenschaftstyp:</span><span class="sxs-lookup"><span data-stu-id="6fde3-108">Property type:</span></span>  <br/> |<span data-ttu-id="6fde3-109">PT_UNICODE</span><span class="sxs-lookup"><span data-stu-id="6fde3-109">PT_UNICODE</span></span>|<span data-ttu-id="6fde3-110">SECURE_FLAG</span><span class="sxs-lookup"><span data-stu-id="6fde3-110">SECURE_FLAG</span></span>  <br/> |
+|<span data-ttu-id="6fde3-111">Eigenschaftstag:</span><span class="sxs-lookup"><span data-stu-id="6fde3-111">Property tag:</span></span>  <br/> |<span data-ttu-id="6fde3-112">0x2058001F</span><span class="sxs-lookup"><span data-stu-id="6fde3-112">0x2058001F</span></span>  <br/> |
+|<span data-ttu-id="6fde3-113">Zugriff:</span><span class="sxs-lookup"><span data-stu-id="6fde3-113">Access:</span></span>  <br/> |<span data-ttu-id="6fde3-114">Schreibgeschützt</span><span class="sxs-lookup"><span data-stu-id="6fde3-114">Read-only</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="7fb07-115">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="7fb07-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6fde3-115">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="6fde3-115">See also</span></span>
 
-- [<span data-ttu-id="7fb07-116">Verwalten des Nachrichtendownloads für POP3-Konten</span><span class="sxs-lookup"><span data-stu-id="7fb07-116">Managing message downloads for POP3 accounts</span></span>](managing-message-downloads-for-pop3-accounts.md) 
-- [<span data-ttu-id="7fb07-117">Konstanten (Account Management API)</span><span class="sxs-lookup"><span data-stu-id="7fb07-117">Constants (Account management API)</span></span>](constants-account-management-api.md)
+- [<span data-ttu-id="6fde3-116">Verwalten des Nachrichtendownloads für POP3-Konten</span><span class="sxs-lookup"><span data-stu-id="6fde3-116">Managing message downloads for POP3 accounts</span></span>](managing-message-downloads-for-pop3-accounts.md) 
+- [<span data-ttu-id="6fde3-117">Konstanten (Account Management API)</span><span class="sxs-lookup"><span data-stu-id="6fde3-117">Constants (Account management API)</span></span>](constants-account-management-api.md)
 

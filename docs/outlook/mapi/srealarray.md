@@ -19,17 +19,17 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33429873"
 ---
-# <a name="srealarray"></a><span data-ttu-id="36073-103">SRealArray</span><span class="sxs-lookup"><span data-stu-id="36073-103">SRealArray</span></span>
+# <a name="srealarray"></a><span data-ttu-id="3dd1d-103">SRealArray</span><span class="sxs-lookup"><span data-stu-id="3dd1d-103">SRealArray</span></span>
 
   
   
-<span data-ttu-id="36073-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="36073-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="3dd1d-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="3dd1d-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="36073-105">Enthält ein Array von float-Werten, die zum Beschreiben einer Eigenschaft vom Typ PT_MV_R4 verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="36073-105">Contains an array of float values that are used to describe a property of type PT_MV_R4.</span></span> 
+<span data-ttu-id="3dd1d-105">Enthält ein Array von Gleitkommawerten, die zum Beschreiben einer Eigenschaft vom Typ PT_MV_R4.</span><span class="sxs-lookup"><span data-stu-id="3dd1d-105">Contains an array of float values that are used to describe a property of type PT_MV_R4.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="36073-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="36073-106">Header file:</span></span>  <br/> |<span data-ttu-id="36073-107">Mapidefs. h</span><span class="sxs-lookup"><span data-stu-id="36073-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="3dd1d-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="3dd1d-106">Header file:</span></span>  <br/> |<span data-ttu-id="3dd1d-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="3dd1d-107">Mapidefs.h</span></span>  <br/> |
    
 ```cpp
 typedef struct _SRealArray
@@ -40,26 +40,26 @@ typedef struct _SRealArray
 
 ```
 
-## <a name="members"></a><span data-ttu-id="36073-108">Members</span><span class="sxs-lookup"><span data-stu-id="36073-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="3dd1d-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="3dd1d-108">Members</span></span>
 
- <span data-ttu-id="36073-109">**cValues**</span><span class="sxs-lookup"><span data-stu-id="36073-109">**cValues**</span></span>
+ <span data-ttu-id="3dd1d-109">**cValues**</span><span class="sxs-lookup"><span data-stu-id="3dd1d-109">**cValues**</span></span>
   
-> <span data-ttu-id="36073-110">Die Anzahl der Werte im Array, auf die durch das **lpflt** -Element verwiesen wird.</span><span class="sxs-lookup"><span data-stu-id="36073-110">Count of values in the array pointed to by the **lpflt** member.</span></span> 
+> <span data-ttu-id="3dd1d-110">Anzahl der Werte im Array, auf das das **lpflt-Element** verweist.</span><span class="sxs-lookup"><span data-stu-id="3dd1d-110">Count of values in the array pointed to by the **lpflt** member.</span></span> 
     
- <span data-ttu-id="36073-111">**lpflt**</span><span class="sxs-lookup"><span data-stu-id="36073-111">**lpflt**</span></span>
+ <span data-ttu-id="3dd1d-111">**lpflt**</span><span class="sxs-lookup"><span data-stu-id="3dd1d-111">**lpflt**</span></span>
   
-> <span data-ttu-id="36073-112">Zeiger auf ein Array von float-Werten.</span><span class="sxs-lookup"><span data-stu-id="36073-112">Pointer to an array of float values.</span></span>
+> <span data-ttu-id="3dd1d-112">Zeiger auf ein Array von Gleitkommawerten.</span><span class="sxs-lookup"><span data-stu-id="3dd1d-112">Pointer to an array of float values.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="36073-113">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="36073-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="3dd1d-113">Hinweise</span><span class="sxs-lookup"><span data-stu-id="3dd1d-113">Remarks</span></span>
 
-<span data-ttu-id="36073-114">Weitere Informationen zum PT_MV_R4-Eigenschaftentyp finden Sie unter [Property](property-types.md)Types.</span><span class="sxs-lookup"><span data-stu-id="36073-114">For more information about the PT_MV_R4 property type, see [Property Types](property-types.md).</span></span>
+<span data-ttu-id="3dd1d-114">Weitere Informationen zum eigenschaftentyp PT_MV_R4 finden Sie unter [Property Types](property-types.md).</span><span class="sxs-lookup"><span data-stu-id="3dd1d-114">For more information about the PT_MV_R4 property type, see [Property Types](property-types.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="36073-115">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="36073-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3dd1d-115">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="3dd1d-115">See also</span></span>
 
 
 
-[<span data-ttu-id="36073-116">SPropValue</span><span class="sxs-lookup"><span data-stu-id="36073-116">SPropValue</span></span>](spropvalue.md)
+[<span data-ttu-id="3dd1d-116">SPropValue</span><span class="sxs-lookup"><span data-stu-id="3dd1d-116">SPropValue</span></span>](spropvalue.md)
 
 
-[<span data-ttu-id="36073-117">MAPI-Strukturen</span><span class="sxs-lookup"><span data-stu-id="36073-117">MAPI Structures</span></span>](mapi-structures.md)
+[<span data-ttu-id="3dd1d-117">MAPI-Strukturen</span><span class="sxs-lookup"><span data-stu-id="3dd1d-117">MAPI Structures</span></span>](mapi-structures.md)
 

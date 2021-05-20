@@ -14,31 +14,31 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33429551"
 ---
-# <a name="listsheetref-function"></a><span data-ttu-id="289b6-103">LISTSHEETREF Function</span><span class="sxs-lookup"><span data-stu-id="289b6-103">LISTSHEETREF Function</span></span>
+# <a name="listsheetref-function"></a><span data-ttu-id="f1d80-103">LISTSHEETREF Function</span><span class="sxs-lookup"><span data-stu-id="f1d80-103">LISTSHEETREF Function</span></span>
 
-<span data-ttu-id="289b6-104">Gibt eine Blattreferenz auf das Listencontainer-Shape zurück, das das Shape enthält.</span><span class="sxs-lookup"><span data-stu-id="289b6-104">Returns a sheet reference to the list container shape that contains the shape.</span></span>
+<span data-ttu-id="f1d80-104">Gibt eine Blattreferenz auf das Listencontainer-Shape zurück, das das Shape enthält.</span><span class="sxs-lookup"><span data-stu-id="f1d80-104">Returns a sheet reference to the list container shape that contains the shape.</span></span>
   
-## <a name="version-information"></a><span data-ttu-id="289b6-105">Versionsinformationen</span><span class="sxs-lookup"><span data-stu-id="289b6-105">Version Information</span></span>
+## <a name="version-information"></a><span data-ttu-id="f1d80-105">Versionsinformationen</span><span class="sxs-lookup"><span data-stu-id="f1d80-105">Version Information</span></span>
 
-<span data-ttu-id="289b6-106">Hinzugefügte Version: Visio 2010
-</span><span class="sxs-lookup"><span data-stu-id="289b6-106">Version Added: Visio 2010</span></span> 
+<span data-ttu-id="f1d80-106">Hinzugefügte Version: Visio 2010
+</span><span class="sxs-lookup"><span data-stu-id="f1d80-106">Version Added: Visio 2010</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="289b6-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="289b6-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="f1d80-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="f1d80-107">Syntax</span></span>
 
-<span data-ttu-id="289b6-108">LISTMEMBERCOUNT ()</span><span class="sxs-lookup"><span data-stu-id="289b6-108">LISTMEMBERCOUNT()</span></span>
+<span data-ttu-id="f1d80-108">LISTMEMBERCOUNT()</span><span class="sxs-lookup"><span data-stu-id="f1d80-108">LISTMEMBERCOUNT()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="289b6-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="289b6-109">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="f1d80-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="f1d80-109">Return value</span></span>
 
-<span data-ttu-id="289b6-110">ShapeSheet-Referenz</span><span class="sxs-lookup"><span data-stu-id="289b6-110">ShapeSheet reference</span></span>
+<span data-ttu-id="f1d80-110">ShapeSheet-Referenz</span><span class="sxs-lookup"><span data-stu-id="f1d80-110">ShapeSheet reference</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="289b6-111">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="289b6-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f1d80-111">Hinweise</span><span class="sxs-lookup"><span data-stu-id="f1d80-111">Remarks</span></span>
 
-<span data-ttu-id="289b6-112">Wenn es sich bei dem Shape nicht um ein Listenelement handelt, gibt die LISTSHEETREF-Funktion #REF! zurück.</span><span class="sxs-lookup"><span data-stu-id="289b6-112">If the shape is not a list member, the LISTSHEETREF function returns #REF!.</span></span>
+<span data-ttu-id="f1d80-112">Wenn es sich bei dem Shape nicht um ein Listenelement handelt, gibt die LISTSHEETREF-Funktion #REF! zurück.</span><span class="sxs-lookup"><span data-stu-id="f1d80-112">If the shape is not a list member, the LISTSHEETREF function returns #REF!.</span></span>
   
-## <a name="example"></a><span data-ttu-id="289b6-113">Beispiel</span><span class="sxs-lookup"><span data-stu-id="289b6-113">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f1d80-113">Beispiel</span><span class="sxs-lookup"><span data-stu-id="f1d80-113">Example</span></span>
 
-<span data-ttu-id="289b6-114">LISTSHEETREF (1)! Höhe</span><span class="sxs-lookup"><span data-stu-id="289b6-114">LISTSHEETREF(1)!Height</span></span> 
+<span data-ttu-id="f1d80-114">LISTSHEETREF(1)! Height</span><span class="sxs-lookup"><span data-stu-id="f1d80-114">LISTSHEETREF(1)!Height</span></span> 
   
-<span data-ttu-id="289b6-115">Gibt den Werte in der Zelle "Height" des Listencontainer-Shapes zurück, das das Shape enthält.</span><span class="sxs-lookup"><span data-stu-id="289b6-115">Returns the value in the Height cell of the list container shape that contains the shape.</span></span> 
+<span data-ttu-id="f1d80-115">Gibt den Werte in der Zelle "Height" des Listencontainer-Shapes zurück, das das Shape enthält.</span><span class="sxs-lookup"><span data-stu-id="f1d80-115">Returns the value in the Height cell of the list container shape that contains the shape.</span></span> 
   
 

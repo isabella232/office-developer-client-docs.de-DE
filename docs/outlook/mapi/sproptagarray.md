@@ -19,18 +19,18 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33430700"
 ---
-# <a name="sproptagarray"></a><span data-ttu-id="2c002-103">SPropTagArray</span><span class="sxs-lookup"><span data-stu-id="2c002-103">SPropTagArray</span></span>
+# <a name="sproptagarray"></a><span data-ttu-id="bfc7e-103">SPropTagArray</span><span class="sxs-lookup"><span data-stu-id="bfc7e-103">SPropTagArray</span></span>
 
   
   
-<span data-ttu-id="2c002-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="2c002-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="bfc7e-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="bfc7e-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="2c002-105">Enthält ein Array von Property-Tags.</span><span class="sxs-lookup"><span data-stu-id="2c002-105">Contains an array of property tags.</span></span> 
+<span data-ttu-id="bfc7e-105">Enthält ein Array von Eigenschaftstags.</span><span class="sxs-lookup"><span data-stu-id="bfc7e-105">Contains an array of property tags.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="2c002-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="2c002-106">Header file:</span></span>  <br/> |<span data-ttu-id="2c002-107">Mapidefs. h</span><span class="sxs-lookup"><span data-stu-id="2c002-107">Mapidefs.h</span></span>  <br/> |
-|<span data-ttu-id="2c002-108">Verwandte Makros:</span><span class="sxs-lookup"><span data-stu-id="2c002-108">Related macros:</span></span>  <br/> |<span data-ttu-id="2c002-109">[CbNewSPropTagArray](cbnewsproptagarray.md), [CbSPropTagArray](cbsproptagarray.md), [SizedSPropTagArray](sizedsproptagarray.md)</span><span class="sxs-lookup"><span data-stu-id="2c002-109">[CbNewSPropTagArray](cbnewsproptagarray.md), [CbSPropTagArray](cbsproptagarray.md), [SizedSPropTagArray](sizedsproptagarray.md)</span></span> <br/> |
+|<span data-ttu-id="bfc7e-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="bfc7e-106">Header file:</span></span>  <br/> |<span data-ttu-id="bfc7e-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="bfc7e-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="bfc7e-108">Verwandte Makros:</span><span class="sxs-lookup"><span data-stu-id="bfc7e-108">Related macros:</span></span>  <br/> |<span data-ttu-id="bfc7e-109">[CbNewSPropTagArray](cbnewsproptagarray.md), [CbSPropTagArray](cbsproptagarray.md), [SizedSPropTagArray](sizedsproptagarray.md)</span><span class="sxs-lookup"><span data-stu-id="bfc7e-109">[CbNewSPropTagArray](cbnewsproptagarray.md), [CbSPropTagArray](cbsproptagarray.md), [SizedSPropTagArray](sizedsproptagarray.md)</span></span> <br/> |
    
 ```cpp
 typedef struct _SPropTagArray
@@ -41,41 +41,41 @@ typedef struct _SPropTagArray
 
 ```
 
-## <a name="members"></a><span data-ttu-id="2c002-110">Members</span><span class="sxs-lookup"><span data-stu-id="2c002-110">Members</span></span>
+## <a name="members"></a><span data-ttu-id="bfc7e-110">Elemente</span><span class="sxs-lookup"><span data-stu-id="bfc7e-110">Members</span></span>
 
- <span data-ttu-id="2c002-111">**cValues**</span><span class="sxs-lookup"><span data-stu-id="2c002-111">**cValues**</span></span>
+ <span data-ttu-id="bfc7e-111">**cValues**</span><span class="sxs-lookup"><span data-stu-id="bfc7e-111">**cValues**</span></span>
   
-> <span data-ttu-id="2c002-112">Die Anzahl der Eigenschaftstags im vom **aulPropTag** -Element angegebenen Array.</span><span class="sxs-lookup"><span data-stu-id="2c002-112">Count of property tags in the array indicated by the **aulPropTag** member.</span></span> 
+> <span data-ttu-id="bfc7e-112">Anzahl der Eigenschaftstags im Array, das vom **aulPropTag-Element angegeben** wird.</span><span class="sxs-lookup"><span data-stu-id="bfc7e-112">Count of property tags in the array indicated by the **aulPropTag** member.</span></span> 
     
- <span data-ttu-id="2c002-113">**aulPropTag**</span><span class="sxs-lookup"><span data-stu-id="2c002-113">**aulPropTag**</span></span>
+ <span data-ttu-id="bfc7e-113">**aulPropTag**</span><span class="sxs-lookup"><span data-stu-id="bfc7e-113">**aulPropTag**</span></span>
   
-> <span data-ttu-id="2c002-114">Array von Property-Tags.</span><span class="sxs-lookup"><span data-stu-id="2c002-114">Array of property tags.</span></span>
+> <span data-ttu-id="bfc7e-114">Array von Eigenschaftstags.</span><span class="sxs-lookup"><span data-stu-id="bfc7e-114">Array of property tags.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="2c002-115">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="2c002-115">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="bfc7e-115">Hinweise</span><span class="sxs-lookup"><span data-stu-id="bfc7e-115">Remarks</span></span>
 
-<span data-ttu-id="2c002-116">Ein Property-Tag ist eine 32-Bit-Ganzzahl ohne Vorzeichen, die aus zwei Teilen besteht:</span><span class="sxs-lookup"><span data-stu-id="2c002-116">A property tag is a 32-bit unsigned integer that consists of two parts:</span></span> 
+<span data-ttu-id="bfc7e-116">Ein Eigenschaftstag ist eine 32-Bit-Ganzzahl ohne Vorzeichen, die aus zwei Teilen besteht:</span><span class="sxs-lookup"><span data-stu-id="bfc7e-116">A property tag is a 32-bit unsigned integer that consists of two parts:</span></span> 
   
-- <span data-ttu-id="2c002-117">Ein Bezeichner in den hochwertigen 16 Bits.</span><span class="sxs-lookup"><span data-stu-id="2c002-117">An identifier in the high-order 16 bits.</span></span>
+- <span data-ttu-id="bfc7e-117">Ein Bezeichner in der hohen Reihenfolge von 16 Bit.</span><span class="sxs-lookup"><span data-stu-id="bfc7e-117">An identifier in the high-order 16 bits.</span></span>
     
-- <span data-ttu-id="2c002-118">Ein Typ in den niederwertigen 16 Bits.</span><span class="sxs-lookup"><span data-stu-id="2c002-118">A type in the low-order 16 bits.</span></span>
+- <span data-ttu-id="bfc7e-118">Ein Typ in niedriger Reihenfolge von 16 Bit.</span><span class="sxs-lookup"><span data-stu-id="bfc7e-118">A type in the low-order 16 bits.</span></span>
     
-<span data-ttu-id="2c002-119">Der Bezeichner ist ein numerischer Wert in einem bestimmten Zeitraum.</span><span class="sxs-lookup"><span data-stu-id="2c002-119">The identifier is a numeric value in a particular range.</span></span> <span data-ttu-id="2c002-120">MAPI definiert Bereiche für Bezeichner, um zu beschreiben, wofür die Eigenschaft verwendet wird und wer für deren Verwaltung zuständig ist.</span><span class="sxs-lookup"><span data-stu-id="2c002-120">MAPI defines ranges for identifiers to describe what the property is used for and who is responsible for maintaining it.</span></span> <span data-ttu-id="2c002-121">MAPI definiert Einschränkungen für die einzelnen Eigenschaftentags, die in der Headerdatei Mapitags. h unterstützt werden.</span><span class="sxs-lookup"><span data-stu-id="2c002-121">MAPI defines constraints for each of the property tags that it supports in the Mapitags.h header file.</span></span>
+<span data-ttu-id="bfc7e-119">Der Bezeichner ist ein numerischer Wert in einem bestimmten Bereich.</span><span class="sxs-lookup"><span data-stu-id="bfc7e-119">The identifier is a numeric value in a particular range.</span></span> <span data-ttu-id="bfc7e-120">MAPI definiert Bereiche für Bezeichner, um zu beschreiben, wofür die Eigenschaft verwendet wird und wer für die Verwaltung verantwortlich ist.</span><span class="sxs-lookup"><span data-stu-id="bfc7e-120">MAPI defines ranges for identifiers to describe what the property is used for and who is responsible for maintaining it.</span></span> <span data-ttu-id="bfc7e-121">MAPI definiert Einschränkungen für jedes der Eigenschaftentags, die es in der Mapitags.h-Headerdatei unterstützt.</span><span class="sxs-lookup"><span data-stu-id="bfc7e-121">MAPI defines constraints for each of the property tags that it supports in the Mapitags.h header file.</span></span>
   
-<span data-ttu-id="2c002-122">Der Typ gibt das Format für den Wert der Eigenschaft an.</span><span class="sxs-lookup"><span data-stu-id="2c002-122">The type indicates the format for the property's value.</span></span> <span data-ttu-id="2c002-123">MAPI definiert Konstanten für alle Eigenschaftentypen, die in der Headerdatei Mapidefs. h unterstützt werden.</span><span class="sxs-lookup"><span data-stu-id="2c002-123">MAPI defines constants for each of the property types that it supports in the Mapidefs.h header file.</span></span> 
+<span data-ttu-id="bfc7e-122">Der Typ gibt das Format für den Wert der Eigenschaft an.</span><span class="sxs-lookup"><span data-stu-id="bfc7e-122">The type indicates the format for the property's value.</span></span> <span data-ttu-id="bfc7e-123">MAPI definiert Konstanten für jeden der Eigenschaftentypen, die in der Mapidefs.h-Headerdatei unterstützt werden.</span><span class="sxs-lookup"><span data-stu-id="bfc7e-123">MAPI defines constants for each of the property types that it supports in the Mapidefs.h header file.</span></span> 
   
-<span data-ttu-id="2c002-124">Weitere Informationen zu Eigenschaftstags und ihren Komponenten finden Sie in einem der folgenden Themen:</span><span class="sxs-lookup"><span data-stu-id="2c002-124">For more information about property tags and their components, see one of the following topics:</span></span> 
+<span data-ttu-id="bfc7e-124">Weitere Informationen zu Eigenschaftstags und deren Komponenten finden Sie in einem der folgenden Themen:</span><span class="sxs-lookup"><span data-stu-id="bfc7e-124">For more information about property tags and their components, see one of the following topics:</span></span> 
   
-[<span data-ttu-id="2c002-125">MAPI-Eigenschafts Tags</span><span class="sxs-lookup"><span data-stu-id="2c002-125">MAPI Property Tags</span></span>](mapi-property-tags.md)
+[<span data-ttu-id="bfc7e-125">MAPI-Eigenschaftstags</span><span class="sxs-lookup"><span data-stu-id="bfc7e-125">MAPI Property Tags</span></span>](mapi-property-tags.md)
   
-[<span data-ttu-id="2c002-126">Übersicht über die MAPI-EigenschaftsKennung</span><span class="sxs-lookup"><span data-stu-id="2c002-126">MAPI Property Identifier Overview</span></span>](mapi-property-identifier-overview.md)
+[<span data-ttu-id="bfc7e-126">Übersicht über die MAPI-Eigenschafts-ID</span><span class="sxs-lookup"><span data-stu-id="bfc7e-126">MAPI Property Identifier Overview</span></span>](mapi-property-identifier-overview.md)
   
-[<span data-ttu-id="2c002-127">Übersicht über die MAPI-EigenschaftsTypen</span><span class="sxs-lookup"><span data-stu-id="2c002-127">MAPI Property Type Overview</span></span>](mapi-property-type-overview.md)
+[<span data-ttu-id="bfc7e-127">Übersicht über den MAPI-Eigenschaftstyp</span><span class="sxs-lookup"><span data-stu-id="bfc7e-127">MAPI Property Type Overview</span></span>](mapi-property-type-overview.md)
   
-<span data-ttu-id="2c002-128">Eine vollständige Liste der einwertigen und mehrwertigen Eigenschaftentypen finden Sie im Anhang, [Eigenschaftenbezeichner und-Typen](property-identifiers-and-types.md).</span><span class="sxs-lookup"><span data-stu-id="2c002-128">For a complete list of the single-valued and multi-valued property types, see the appendix, [Property Identifiers and Types](property-identifiers-and-types.md).</span></span> 
+<span data-ttu-id="bfc7e-128">Eine vollständige Liste der einwertigen und mehrwertigen Eigenschaftentypen finden Sie im Anhang, [Property Identifiers und Types](property-identifiers-and-types.md).</span><span class="sxs-lookup"><span data-stu-id="bfc7e-128">For a complete list of the single-valued and multi-valued property types, see the appendix, [Property Identifiers and Types](property-identifiers-and-types.md).</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="2c002-129">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="2c002-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bfc7e-129">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="bfc7e-129">See also</span></span>
 
 
 
-[<span data-ttu-id="2c002-130">MAPI-Strukturen</span><span class="sxs-lookup"><span data-stu-id="2c002-130">MAPI Structures</span></span>](mapi-structures.md)
+[<span data-ttu-id="bfc7e-130">MAPI-Strukturen</span><span class="sxs-lookup"><span data-stu-id="bfc7e-130">MAPI Structures</span></span>](mapi-structures.md)
 

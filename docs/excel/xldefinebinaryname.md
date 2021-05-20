@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - xlDefineBinaryName
 keywords:
-- xlDefineBinaryName-Funktion [Excel 2007]
+- xldefinebinaryname-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: e3e8f91b-cc31-4f09-9941-f950ae96820a
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -18,36 +18,36 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33430252"
 ---
-# <a name="xldefinebinaryname"></a><span data-ttu-id="4a56b-104">xlDefineBinaryName</span><span class="sxs-lookup"><span data-stu-id="4a56b-104">xlDefineBinaryName</span></span>
+# <a name="xldefinebinaryname"></a><span data-ttu-id="dbf53-104">xlDefineBinaryName</span><span class="sxs-lookup"><span data-stu-id="dbf53-104">xlDefineBinaryName</span></span>
 
- <span data-ttu-id="4a56b-105">**Gilt für**: Excel 2013 | Office 2013 | Visual Studio</span><span class="sxs-lookup"><span data-stu-id="4a56b-105">**Applies to**: Excel 2013 | Office 2013 | Visual Studio</span></span> 
+ <span data-ttu-id="dbf53-105">**Gilt für**: Excel 2013 | Office 2013 | Visual Studio</span><span class="sxs-lookup"><span data-stu-id="dbf53-105">**Applies to**: Excel 2013 | Office 2013 | Visual Studio</span></span> 
   
-<span data-ttu-id="4a56b-106">Wird verwendet, um persistenten Speicher für ein **xltypeBigData** **XLOPER**/ -**XLOPER12**zu reservieren.</span><span class="sxs-lookup"><span data-stu-id="4a56b-106">Used to allocate persistent storage for an **xltypeBigData** **XLOPER**/ **XLOPER12**.</span></span> <span data-ttu-id="4a56b-107">Daten mit einem definierten binären Namen werden mit der Arbeitsmappe gespeichert und können jederzeit über den Namen aufgerufen werden.</span><span class="sxs-lookup"><span data-stu-id="4a56b-107">Data with a defined binary name is saved with the workbook, and can be accessed by name at any time.</span></span> <span data-ttu-id="4a56b-108">Weitere Informationen finden Sie unter "Beschränkung des binären Namensbereichs" in [bekannte Probleme in Excel XLL Development](known-issues-in-excel-xll-development.md).</span><span class="sxs-lookup"><span data-stu-id="4a56b-108">For more information, see "Binary Name Scope Limitation" in [Known Issues in Excel XLL Development](known-issues-in-excel-xll-development.md).</span></span>
+<span data-ttu-id="dbf53-106">Wird verwendet, um beständigen Speicher für einen **xltypeBigData** **XLOPER** /  **XLOPER12 zuzuordnen.**</span><span class="sxs-lookup"><span data-stu-id="dbf53-106">Used to allocate persistent storage for an **xltypeBigData** **XLOPER**/ **XLOPER12**.</span></span> <span data-ttu-id="dbf53-107">Daten mit einem definierten binären Namen werden mit der Arbeitsmappe gespeichert und können jederzeit über den Namen zugegriffen werden.</span><span class="sxs-lookup"><span data-stu-id="dbf53-107">Data with a defined binary name is saved with the workbook, and can be accessed by name at any time.</span></span> <span data-ttu-id="dbf53-108">Weitere Informationen finden Sie unter "Binary Name Scope Limitation" in [Known Issues in Excel XLL Development](known-issues-in-excel-xll-development.md).</span><span class="sxs-lookup"><span data-stu-id="dbf53-108">For more information, see "Binary Name Scope Limitation" in [Known Issues in Excel XLL Development](known-issues-in-excel-xll-development.md).</span></span>
   
 ```cs
 Excel12(xlDefineBinaryName, 0, 2, LPXLOPER12 pxName, LPXLOPER12 pxData);
 ```
 
-## <a name="parameters"></a><span data-ttu-id="4a56b-109">Parameter</span><span class="sxs-lookup"><span data-stu-id="4a56b-109">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="dbf53-109">Parameter</span><span class="sxs-lookup"><span data-stu-id="dbf53-109">Parameters</span></span>
 
- <span data-ttu-id="4a56b-110">_pxName_ (**xltypeStr**)</span><span class="sxs-lookup"><span data-stu-id="4a56b-110">_pxName_ (**xltypeStr**)</span></span>
+ <span data-ttu-id="dbf53-110">_pxName_ (**xltypeStr**)</span><span class="sxs-lookup"><span data-stu-id="dbf53-110">_pxName_ (**xltypeStr**)</span></span>
   
-<span data-ttu-id="4a56b-111">Eine Zeichenfolge, die den Namen der Daten angibt.</span><span class="sxs-lookup"><span data-stu-id="4a56b-111">A string specifying the name of the data.</span></span> <span data-ttu-id="4a56b-112">Die Zeichenfolge unterliegt denselben Benennungseinschränkungen wie definierte Namen.</span><span class="sxs-lookup"><span data-stu-id="4a56b-112">The string is subject to the same naming restrictions as defined names.</span></span>
+<span data-ttu-id="dbf53-111">Eine Zeichenfolge, die den Namen der Daten an gibt.</span><span class="sxs-lookup"><span data-stu-id="dbf53-111">A string specifying the name of the data.</span></span> <span data-ttu-id="dbf53-112">Die Zeichenfolge unterliegt den gleichen Benennungseinschränkungen wie definierte Namen.</span><span class="sxs-lookup"><span data-stu-id="dbf53-112">The string is subject to the same naming restrictions as defined names.</span></span>
   
- <span data-ttu-id="4a56b-113">_pxData_ (**xltypeBigData**)</span><span class="sxs-lookup"><span data-stu-id="4a56b-113">_pxData_ (**xltypeBigData**)</span></span>
+ <span data-ttu-id="dbf53-113">_pxData_ (**xltypeBigData**)</span><span class="sxs-lookup"><span data-stu-id="dbf53-113">_pxData_ (**xltypeBigData**)</span></span>
   
-<span data-ttu-id="4a56b-114">Eine Struktur, die die zu speichernden Daten angibt.</span><span class="sxs-lookup"><span data-stu-id="4a56b-114">Bigdata structure specifying the data to be stored.</span></span> <span data-ttu-id="4a56b-115">Wenn Sie diese Funktion aufrufen, sollte das **lpbData** -Element der Struktur von **gdata** auf die Daten verweisen, für die der Name definiert wird, und das **cbData** -Element sollte die Länge der Daten in Byte enthalten.</span><span class="sxs-lookup"><span data-stu-id="4a56b-115">When you call this function, the **lpbData** member of the **bigdata** structure should point to the data for which the name is being defined, and the **cbData** member should contain the length of the data in bytes.</span></span> 
+<span data-ttu-id="dbf53-114">Bigdata-Struktur, die die zu speichernden Daten an gibt.</span><span class="sxs-lookup"><span data-stu-id="dbf53-114">Bigdata structure specifying the data to be stored.</span></span> <span data-ttu-id="dbf53-115">Wenn Sie diese Funktion aufrufen, sollte das **lpbData-Element** der **bigdata-Struktur** auf die Daten verweisen, für die der Name definiert wird, und das **cbData-Element** sollte die Länge der Daten in Bytes enthalten.</span><span class="sxs-lookup"><span data-stu-id="dbf53-115">When you call this function, the **lpbData** member of the **bigdata** structure should point to the data for which the name is being defined, and the **cbData** member should contain the length of the data in bytes.</span></span> 
   
-<span data-ttu-id="4a56b-116">Wenn das _pxData_ -Argument nicht angegeben wird (**xltypeMissing**), wird die durch _pxName_ angegebene benannte Zuordnung gelöscht.</span><span class="sxs-lookup"><span data-stu-id="4a56b-116">If the  _pxData_ argument is not specified (**xltypeMissing**), the named allocation specified by  _pxName_ is deleted.</span></span> 
+<span data-ttu-id="dbf53-116">Wenn das  _Argument pxData_ nicht angegeben ist (**xltypeMissing**), wird die durch  _pxName_ angegebene benannte Zuordnung gelöscht.</span><span class="sxs-lookup"><span data-stu-id="dbf53-116">If the  _pxData_ argument is not specified (**xltypeMissing**), the named allocation specified by  _pxName_ is deleted.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="4a56b-117">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="4a56b-117">See also</span></span>
-
-
-
-[<span data-ttu-id="4a56b-118">xlGetBinaryName</span><span class="sxs-lookup"><span data-stu-id="4a56b-118">xlGetBinaryName</span></span>](xlgetbinaryname.md)
+## <a name="see-also"></a><span data-ttu-id="dbf53-117">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="dbf53-117">See also</span></span>
 
 
-[<span data-ttu-id="4a56b-119">C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden können</span><span class="sxs-lookup"><span data-stu-id="4a56b-119">C API Functions That Can Be Called Only from a DLL or XLL</span></span>](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
+
+[<span data-ttu-id="dbf53-118">xlGetBinaryName</span><span class="sxs-lookup"><span data-stu-id="dbf53-118">xlGetBinaryName</span></span>](xlgetbinaryname.md)
+
+
+[<span data-ttu-id="dbf53-119">C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden können</span><span class="sxs-lookup"><span data-stu-id="dbf53-119">C API Functions That Can Be Called Only from a DLL or XLL</span></span>](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
   
-[<span data-ttu-id="4a56b-120">Bekannte Probleme in Excel XLL-Entwicklung</span><span class="sxs-lookup"><span data-stu-id="4a56b-120">Known Issues in Excel XLL Development</span></span>](known-issues-in-excel-xll-development.md)
+[<span data-ttu-id="dbf53-120">Bekannte Probleme in Excel XLL-Entwicklung</span><span class="sxs-lookup"><span data-stu-id="dbf53-120">Known Issues in Excel XLL Development</span></span>](known-issues-in-excel-xll-development.md)
 

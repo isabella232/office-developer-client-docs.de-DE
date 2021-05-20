@@ -15,15 +15,15 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33428648"
 ---
-# <a name="gender"></a><span data-ttu-id="9c861-103">Geschlecht</span><span class="sxs-lookup"><span data-stu-id="9c861-103">Gender</span></span>
+# <a name="gender"></a><span data-ttu-id="1753f-103">Geschlecht</span><span class="sxs-lookup"><span data-stu-id="1753f-103">Gender</span></span>
 
   
   
-<span data-ttu-id="9c861-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="9c861-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="1753f-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="1753f-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="9c861-105">Gibt die möglichen Werte für das Geschlecht eines Messaging Benutzers an.</span><span class="sxs-lookup"><span data-stu-id="9c861-105">Specifies the possible values for the gender of a messaging user.</span></span>
+<span data-ttu-id="1753f-105">Gibt die möglichen Werte für das Geschlecht eines Messagingbenutzers an.</span><span class="sxs-lookup"><span data-stu-id="1753f-105">Specifies the possible values for the gender of a messaging user.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="9c861-106">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="9c861-106">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="1753f-106">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="1753f-106">Quick info</span></span>
 
 ```cpp
 enum Gender { 
@@ -37,35 +37,35 @@ enum Gender {
 
 ```
 
-## <a name="members"></a><span data-ttu-id="9c861-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="9c861-107">Members</span></span>
+## <a name="members"></a><span data-ttu-id="1753f-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="1753f-107">Members</span></span>
 
- <span data-ttu-id="9c861-108">_genderMin_</span><span class="sxs-lookup"><span data-stu-id="9c861-108">_genderMin_</span></span>
+ <span data-ttu-id="1753f-108">_genderMin_</span><span class="sxs-lookup"><span data-stu-id="1753f-108">_genderMin_</span></span>
   
-> <span data-ttu-id="9c861-109">Die Mindestanzahl von unterschiedlichen Werten, die für das Geschlecht unterstützt werden.</span><span class="sxs-lookup"><span data-stu-id="9c861-109">The minimum number of different values supported for the gender.</span></span>
+> <span data-ttu-id="1753f-109">Die Mindestanzahl unterschiedlicher Werte, die für das Geschlecht unterstützt werden.</span><span class="sxs-lookup"><span data-stu-id="1753f-109">The minimum number of different values supported for the gender.</span></span>
     
- <span data-ttu-id="9c861-110">_genderUnspecified_</span><span class="sxs-lookup"><span data-stu-id="9c861-110">_genderUnspecified_</span></span>
+ <span data-ttu-id="1753f-110">_genderUnspecified_</span><span class="sxs-lookup"><span data-stu-id="1753f-110">_genderUnspecified_</span></span>
   
-> <span data-ttu-id="9c861-111">Das Geschlecht ist für den Messagingbenutzer nicht angegeben.</span><span class="sxs-lookup"><span data-stu-id="9c861-111">The gender is not specified for the messaging user.</span></span>
+> <span data-ttu-id="1753f-111">Das Geschlecht wird für den Messagingbenutzer nicht angegeben.</span><span class="sxs-lookup"><span data-stu-id="1753f-111">The gender is not specified for the messaging user.</span></span>
     
- <span data-ttu-id="9c861-112">_genderFemale_</span><span class="sxs-lookup"><span data-stu-id="9c861-112">_genderFemale_</span></span>
+ <span data-ttu-id="1753f-112">_genderFemale_</span><span class="sxs-lookup"><span data-stu-id="1753f-112">_genderFemale_</span></span>
   
-> <span data-ttu-id="9c861-113">Der Messagingbenutzer ist weiblich.</span><span class="sxs-lookup"><span data-stu-id="9c861-113">The messaging user is female.</span></span>
+> <span data-ttu-id="1753f-113">Der Messagingbenutzer ist weiblich.</span><span class="sxs-lookup"><span data-stu-id="1753f-113">The messaging user is female.</span></span>
     
- <span data-ttu-id="9c861-114">_genderMale_</span><span class="sxs-lookup"><span data-stu-id="9c861-114">_genderMale_</span></span>
+ <span data-ttu-id="1753f-114">_genderMale_</span><span class="sxs-lookup"><span data-stu-id="1753f-114">_genderMale_</span></span>
   
-> <span data-ttu-id="9c861-115">Der Messaging-Benutzer ist männlich.</span><span class="sxs-lookup"><span data-stu-id="9c861-115">The messaging user is male.</span></span>
+> <span data-ttu-id="1753f-115">Der Messagingbenutzer ist männlich.</span><span class="sxs-lookup"><span data-stu-id="1753f-115">The messaging user is male.</span></span>
     
- <span data-ttu-id="9c861-116">_genderCount_</span><span class="sxs-lookup"><span data-stu-id="9c861-116">_genderCount_</span></span>
+ <span data-ttu-id="1753f-116">_genderCount_</span><span class="sxs-lookup"><span data-stu-id="1753f-116">_genderCount_</span></span>
   
-> <span data-ttu-id="9c861-117">Die Anzahl der unterstützten Werte für das Geschlecht.</span><span class="sxs-lookup"><span data-stu-id="9c861-117">The number of different values supported for the gender.</span></span>
+> <span data-ttu-id="1753f-117">Die Anzahl der verschiedenen Werte, die für das Geschlecht unterstützt werden.</span><span class="sxs-lookup"><span data-stu-id="1753f-117">The number of different values supported for the gender.</span></span>
     
- <span data-ttu-id="9c861-118">_genderMax_</span><span class="sxs-lookup"><span data-stu-id="9c861-118">_genderMax_</span></span>
+ <span data-ttu-id="1753f-118">_genderMax_</span><span class="sxs-lookup"><span data-stu-id="1753f-118">_genderMax_</span></span>
   
-> <span data-ttu-id="9c861-119">Die maximale Anzahl unterschiedlicher Werte für das Geschlecht.</span><span class="sxs-lookup"><span data-stu-id="9c861-119">The maximum number of different values supported for the gender.</span></span>
+> <span data-ttu-id="1753f-119">Die maximale Anzahl unterschiedlicher Werte, die für das Geschlecht unterstützt werden.</span><span class="sxs-lookup"><span data-stu-id="1753f-119">The maximum number of different values supported for the gender.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="9c861-120">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="9c861-120">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1753f-120">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="1753f-120">See also</span></span>
 
 
 
-[<span data-ttu-id="9c861-121">Kanonische Pidtaggender (-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="9c861-121">PidTagGender Canonical Property</span></span>](pidtaggender-canonical-property.md)
+[<span data-ttu-id="1753f-121">PidTagGender (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="1753f-121">PidTagGender Canonical Property</span></span>](pidtaggender-canonical-property.md)
 

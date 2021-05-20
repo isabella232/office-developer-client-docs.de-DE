@@ -14,13 +14,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33429607"
 ---
-# <a name="iolkaccountmanagersavechanges"></a><span data-ttu-id="44b15-103">IOlkAccountManager::SaveChanges</span><span class="sxs-lookup"><span data-stu-id="44b15-103">IOlkAccountManager::SaveChanges</span></span>
+# <a name="iolkaccountmanagersavechanges"></a><span data-ttu-id="cc844-103">IOlkAccountManager::SaveChanges</span><span class="sxs-lookup"><span data-stu-id="cc844-103">IOlkAccountManager::SaveChanges</span></span>
 
-<span data-ttu-id="44b15-104">Speichert Änderungen am angegebenen Konto.</span><span class="sxs-lookup"><span data-stu-id="44b15-104">Saves changes to the specified account.</span></span>
+<span data-ttu-id="cc844-104">Speichert Änderungen am angegebenen Konto.</span><span class="sxs-lookup"><span data-stu-id="cc844-104">Saves changes to the specified account.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="44b15-105">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="44b15-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="cc844-105">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="cc844-105">Quick info</span></span>
 
-<span data-ttu-id="44b15-106">See [IOlkAccountManager](iolkaccountmanager.md).</span><span class="sxs-lookup"><span data-stu-id="44b15-106">See [IOlkAccountManager](iolkaccountmanager.md).</span></span>
+<span data-ttu-id="cc844-106">See [IOlkAccountManager](iolkaccountmanager.md).</span><span class="sxs-lookup"><span data-stu-id="cc844-106">See [IOlkAccountManager](iolkaccountmanager.md).</span></span>
   
 ```cpp
 HRESULT IOlkAccountManager::SaveChanges (  
@@ -29,30 +29,30 @@ HRESULT IOlkAccountManager::SaveChanges (
 ); 
 ```
 
-## <a name="parameters"></a><span data-ttu-id="44b15-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="44b15-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="cc844-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="cc844-107">Parameters</span></span>
 
-<span data-ttu-id="44b15-108">_dwAcctID_</span><span class="sxs-lookup"><span data-stu-id="44b15-108">_dwAcctID_</span></span>
+<span data-ttu-id="cc844-108">_dwAcctID_</span><span class="sxs-lookup"><span data-stu-id="cc844-108">_dwAcctID_</span></span>
   
-> <span data-ttu-id="44b15-109">in Die zu speichernde Konto-ID.</span><span class="sxs-lookup"><span data-stu-id="44b15-109">[in] The account ID to save.</span></span> 
+> <span data-ttu-id="cc844-109">[in] Die zu speichernde Konto-ID.</span><span class="sxs-lookup"><span data-stu-id="cc844-109">[in] The account ID to save.</span></span> 
     
-<span data-ttu-id="44b15-110">_dwFlags_</span><span class="sxs-lookup"><span data-stu-id="44b15-110">_dwFlags_</span></span>
+<span data-ttu-id="cc844-110">_dwFlags_</span><span class="sxs-lookup"><span data-stu-id="cc844-110">_dwFlags_</span></span>
   
-> <span data-ttu-id="44b15-111">[in] Flags, die Verhalten ändern.</span><span class="sxs-lookup"><span data-stu-id="44b15-111">[in] Flags to modify behavior.</span></span> <span data-ttu-id="44b15-112">OLK_ACCOUNT_NO_FLAGS ist der einzige unterstützte Wert.</span><span class="sxs-lookup"><span data-stu-id="44b15-112">OLK_ACCOUNT_NO_FLAGS is the only supported value.</span></span>
+> <span data-ttu-id="cc844-111">[in] Flags, die Verhalten ändern.</span><span class="sxs-lookup"><span data-stu-id="cc844-111">[in] Flags to modify behavior.</span></span> <span data-ttu-id="cc844-112">OLK_ACCOUNT_NO_FLAGS ist der einzige unterstützte Wert.</span><span class="sxs-lookup"><span data-stu-id="cc844-112">OLK_ACCOUNT_NO_FLAGS is the only supported value.</span></span>
     
-## <a name="return-values"></a><span data-ttu-id="44b15-113">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="44b15-113">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="cc844-113">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="cc844-113">Return values</span></span>
 
-|<span data-ttu-id="44b15-114">**[HRESULT]**</span><span class="sxs-lookup"><span data-stu-id="44b15-114">**HRESULT**</span></span>|<span data-ttu-id="44b15-115">**Description**</span><span class="sxs-lookup"><span data-stu-id="44b15-115">**Description**</span></span>|
+|<span data-ttu-id="cc844-114">**[HRESULT]**</span><span class="sxs-lookup"><span data-stu-id="cc844-114">**HRESULT**</span></span>|<span data-ttu-id="cc844-115">**Description**</span><span class="sxs-lookup"><span data-stu-id="cc844-115">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="44b15-116">S_OK</span><span class="sxs-lookup"><span data-stu-id="44b15-116">S_OK</span></span>  <br/> |<span data-ttu-id="44b15-117">Der Aufruf war erfolgreich.</span><span class="sxs-lookup"><span data-stu-id="44b15-117">The call succeeded</span></span>  <br/> |
-|<span data-ttu-id="44b15-118">E_ACCT_NOT_FOUND</span><span class="sxs-lookup"><span data-stu-id="44b15-118">E_ACCT_NOT_FOUND</span></span>  <br/> |<span data-ttu-id="44b15-119">Das angegebene Konto wurde nicht gefunden.</span><span class="sxs-lookup"><span data-stu-id="44b15-119">The specified account cannot be found.</span></span>  <br/> |
-|<span data-ttu-id="44b15-120">E_OLK_NOT_INITIALIZED</span><span class="sxs-lookup"><span data-stu-id="44b15-120">E_OLK_NOT_INITIALIZED</span></span>  <br/> |<span data-ttu-id="44b15-121">Konto-Manager wurde nicht für die Verwendung initialisiert.</span><span class="sxs-lookup"><span data-stu-id="44b15-121">The account manager has not been initialized for use.</span></span>  <br/> |
+|<span data-ttu-id="cc844-116">S_OK</span><span class="sxs-lookup"><span data-stu-id="cc844-116">S_OK</span></span>  <br/> |<span data-ttu-id="cc844-117">Der Aufruf ist erfolgreich</span><span class="sxs-lookup"><span data-stu-id="cc844-117">The call succeeded</span></span>  <br/> |
+|<span data-ttu-id="cc844-118">E_ACCT_NOT_FOUND</span><span class="sxs-lookup"><span data-stu-id="cc844-118">E_ACCT_NOT_FOUND</span></span>  <br/> |<span data-ttu-id="cc844-119">Das angegebene Konto wurde nicht gefunden.</span><span class="sxs-lookup"><span data-stu-id="cc844-119">The specified account cannot be found.</span></span>  <br/> |
+|<span data-ttu-id="cc844-120">E_OLK_NOT_INITIALIZED</span><span class="sxs-lookup"><span data-stu-id="cc844-120">E_OLK_NOT_INITIALIZED</span></span>  <br/> |<span data-ttu-id="cc844-121">Konto-Manager wurde nicht für die Verwendung initialisiert.</span><span class="sxs-lookup"><span data-stu-id="cc844-121">The account manager has not been initialized for use.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="44b15-122">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="44b15-122">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="cc844-122">Hinweise</span><span class="sxs-lookup"><span data-stu-id="cc844-122">Remarks</span></span>
 
-<span data-ttu-id="44b15-123">Nachdem Sie den Wert der Kontoeigenschaften mithilfe von [IOlkAccount:: setprop](iolkaccount-setprop.md)geändert haben, verwenden Sie **IOlkAccountManager:: SaveChanges** oder [IOlkAccount:: SaveChanges](iolkaccount-savechanges.md) , um solche Änderungen zu speichern.</span><span class="sxs-lookup"><span data-stu-id="44b15-123">After changing the value of account properties by using [IOlkAccount::SetProp](iolkaccount-setprop.md), use **IOlkAccountManager::SaveChanges** or [IOlkAccount::SaveChanges](iolkaccount-savechanges.md) to save such changes.</span></span> 
+<span data-ttu-id="cc844-123">Nachdem Sie den Wert der Kontoeigenschaften mithilfe von [IOlkAccount::SetProp](iolkaccount-setprop.md)geändert haben, verwenden Sie **IOlkAccountManager::SaveChanges** oder [IOlkAccount::SaveChanges,](iolkaccount-savechanges.md) um solche Änderungen zu speichern.</span><span class="sxs-lookup"><span data-stu-id="cc844-123">After changing the value of account properties by using [IOlkAccount::SetProp](iolkaccount-setprop.md), use **IOlkAccountManager::SaveChanges** or [IOlkAccount::SaveChanges](iolkaccount-savechanges.md) to save such changes.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="44b15-124">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="44b15-124">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="cc844-124">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="cc844-124">See also</span></span>
 
-- [<span data-ttu-id="44b15-125">Konstanten (Account Management API)</span><span class="sxs-lookup"><span data-stu-id="44b15-125">Constants (Account management API)</span></span>](constants-account-management-api.md) 
-- [<span data-ttu-id="44b15-126">IOlkAccount::SaveChanges</span><span class="sxs-lookup"><span data-stu-id="44b15-126">IOlkAccount::SaveChanges</span></span>](iolkaccount-savechanges.md)
+- [<span data-ttu-id="cc844-125">Konstanten (Account Management API)</span><span class="sxs-lookup"><span data-stu-id="cc844-125">Constants (Account management API)</span></span>](constants-account-management-api.md) 
+- [<span data-ttu-id="cc844-126">IOlkAccount::SaveChanges</span><span class="sxs-lookup"><span data-stu-id="cc844-126">IOlkAccount::SaveChanges</span></span>](iolkaccount-savechanges.md)
 

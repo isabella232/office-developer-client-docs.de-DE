@@ -16,8 +16,8 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33431330"
 ---
-# <a name="style-properties-section"></a><span data-ttu-id="d1896-103">Abschnitt "Style Properties"</span><span class="sxs-lookup"><span data-stu-id="d1896-103">Style Properties Section</span></span>
+# <a name="style-properties-section"></a><span data-ttu-id="33d27-103">Abschnitt "Style Properties"</span><span class="sxs-lookup"><span data-stu-id="33d27-103">Style Properties Section</span></span>
 
-<span data-ttu-id="d1896-104">Enthält Zellen, die das Verhalten von Formatvorlagen steuern, z. B. ob eine Formatvorlage Text-, Zeilen- und Füllattribute enthält.</span><span class="sxs-lookup"><span data-stu-id="d1896-104">Includes cells that control style behavior, such as whether a style includes text, line, and fill attributes.</span></span>
+<span data-ttu-id="33d27-104">Enthält Zellen, die das Verhalten von Formatvorlagen steuern, z. B. ob eine Formatvorlage Text-, Zeilen- und Füllattribute enthält.</span><span class="sxs-lookup"><span data-stu-id="33d27-104">Includes cells that control style behavior, such as whether a style includes text, line, and fill attributes.</span></span>
   
 

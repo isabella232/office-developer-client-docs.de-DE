@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251467
 localization_priority: Normal
 ms.assetid: e099dbb3-c591-d934-5cfd-7728b10bd8dc
-description: Gibt eine ganze Zahl zwischen 1 und 12 zurück, die einen Monat darstellt.
+description: Gibt eine ganze Zahl von 1 bis 12 zurück, die einen Monat darstellt.
 ms.openlocfilehash: 71ecc7992839c871780e9b703377db37279246e1
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,52 +16,52 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33431974"
 ---
-# <a name="month-function-visioshapesheet"></a><span data-ttu-id="32f3a-103">MONTH-Funktion (VisioShapeSheet)</span><span class="sxs-lookup"><span data-stu-id="32f3a-103">MONTH Function (VisioShapeSheet)</span></span>
+# <a name="month-function-visioshapesheet"></a><span data-ttu-id="f20dc-103">MONTH-Funktion (VisioShapeSheet)</span><span class="sxs-lookup"><span data-stu-id="f20dc-103">MONTH Function (VisioShapeSheet)</span></span>
 
-<span data-ttu-id="32f3a-104">Gibt eine ganze Zahl zwischen 1 und 12 zurück, die einen Monat darstellt.</span><span class="sxs-lookup"><span data-stu-id="32f3a-104">Returns an integer from 1 to 12 that represents a month.</span></span>
+<span data-ttu-id="f20dc-104">Gibt eine ganze Zahl von 1 bis 12 zurück, die einen Monat darstellt.</span><span class="sxs-lookup"><span data-stu-id="f20dc-104">Returns an integer from 1 to 12 that represents a month.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="32f3a-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="32f3a-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="f20dc-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="f20dc-105">Syntax</span></span>
 
-<span data-ttu-id="32f3a-106">MONTH ("\* \* *DateTime* \* \*" | \* \* *Expression* \* \* [, \* \* *LCID* \* \*])</span><span class="sxs-lookup"><span data-stu-id="32f3a-106">MONTH(" \*\* *datetime* \*\* "| \*\* *expression* \*\* [, \*\* *lcid* \*\* ])</span></span> 
+<span data-ttu-id="f20dc-106">MONTH(" \*\* *datetime* \*\* "| \*\* *Ausdruck* \*\* [, \*\* *lcid* \*\* ])</span><span class="sxs-lookup"><span data-stu-id="f20dc-106">MONTH(" \*\* *datetime* \*\* "| \*\* *expression* \*\* [, \*\* *lcid* \*\* ])</span></span> 
   
-### <a name="parameters"></a><span data-ttu-id="32f3a-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="32f3a-107">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="f20dc-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="f20dc-107">Parameters</span></span>
 
-|<span data-ttu-id="32f3a-108">**Name**</span><span class="sxs-lookup"><span data-stu-id="32f3a-108">**Name**</span></span>|<span data-ttu-id="32f3a-109">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="32f3a-109">**Required/Optional**</span></span>|<span data-ttu-id="32f3a-110">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="32f3a-110">**Data Type**</span></span>|<span data-ttu-id="32f3a-111">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="32f3a-111">**Description**</span></span>|
+|<span data-ttu-id="f20dc-108">**Name**</span><span class="sxs-lookup"><span data-stu-id="f20dc-108">**Name**</span></span>|<span data-ttu-id="f20dc-109">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="f20dc-109">**Required/Optional**</span></span>|<span data-ttu-id="f20dc-110">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="f20dc-110">**Data Type**</span></span>|<span data-ttu-id="f20dc-111">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="f20dc-111">**Description**</span></span>|
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="32f3a-112">_DateTime_</span><span class="sxs-lookup"><span data-stu-id="32f3a-112">_datetime_</span></span> <br/> |<span data-ttu-id="32f3a-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="32f3a-113">Required</span></span>  <br/> |<span data-ttu-id="32f3a-114">**String**</span><span class="sxs-lookup"><span data-stu-id="32f3a-114">**String**</span></span> <br/> |<span data-ttu-id="32f3a-115">Beliebige Zeichenfolge, die allgemein als Datums- und Zeitangabe erkannt wird, oder ein Bezug auf eine Zelle mit einer Datums- und Zeitangabe.</span><span class="sxs-lookup"><span data-stu-id="32f3a-115">Any string commonly recognized as a date and time or a reference to a cell containing a date and time.</span></span>  <br/> |
-| <span data-ttu-id="32f3a-116">_expression_</span><span class="sxs-lookup"><span data-stu-id="32f3a-116">_expression_</span></span> <br/> |<span data-ttu-id="32f3a-117">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="32f3a-117">Required</span></span>  <br/> |<span data-ttu-id="32f3a-118">**String**</span><span class="sxs-lookup"><span data-stu-id="32f3a-118">**String**</span></span> <br/> | <span data-ttu-id="32f3a-119">Beliebiger Ausdruck, der eine Datums- und Zeitangabe liefert.</span><span class="sxs-lookup"><span data-stu-id="32f3a-119">Any expression that yields a date and time.</span></span>  <br/> |
-| <span data-ttu-id="32f3a-120">_lcid_</span><span class="sxs-lookup"><span data-stu-id="32f3a-120">_lcid_</span></span> <br/> |<span data-ttu-id="32f3a-121">Optional</span><span class="sxs-lookup"><span data-stu-id="32f3a-121">Optional</span></span>  <br/> |<span data-ttu-id="32f3a-122">**Number**</span><span class="sxs-lookup"><span data-stu-id="32f3a-122">**Number**</span></span> <br/> |<span data-ttu-id="32f3a-123">Der lokale Bezeichner, der bei der Auswertung eines nicht lokalen Werts für datetime verwendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="32f3a-123">The locale identifier to be used in evaluating a nonlocal datetime.</span></span> <span data-ttu-id="32f3a-124">Der lokale Bezeichner ist eine Zahl, die in den Systemkopfdateien beschrieben wird.</span><span class="sxs-lookup"><span data-stu-id="32f3a-124">The locale identifier is a number described in the system header files.</span></span>  <br/> |
+| <span data-ttu-id="f20dc-112">_datetime_</span><span class="sxs-lookup"><span data-stu-id="f20dc-112">_datetime_</span></span> <br/> |<span data-ttu-id="f20dc-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="f20dc-113">Required</span></span>  <br/> |<span data-ttu-id="f20dc-114">**String**</span><span class="sxs-lookup"><span data-stu-id="f20dc-114">**String**</span></span> <br/> |<span data-ttu-id="f20dc-115">Beliebige Zeichenfolge, die allgemein als Datums- und Zeitangabe erkannt wird, oder ein Bezug auf eine Zelle mit einer Datums- und Zeitangabe.</span><span class="sxs-lookup"><span data-stu-id="f20dc-115">Any string commonly recognized as a date and time or a reference to a cell containing a date and time.</span></span>  <br/> |
+| <span data-ttu-id="f20dc-116">_expression_</span><span class="sxs-lookup"><span data-stu-id="f20dc-116">_expression_</span></span> <br/> |<span data-ttu-id="f20dc-117">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="f20dc-117">Required</span></span>  <br/> |<span data-ttu-id="f20dc-118">**String**</span><span class="sxs-lookup"><span data-stu-id="f20dc-118">**String**</span></span> <br/> | <span data-ttu-id="f20dc-119">Beliebiger Ausdruck, der eine Datums- und Zeitangabe liefert.</span><span class="sxs-lookup"><span data-stu-id="f20dc-119">Any expression that yields a date and time.</span></span>  <br/> |
+| <span data-ttu-id="f20dc-120">_lcid_</span><span class="sxs-lookup"><span data-stu-id="f20dc-120">_lcid_</span></span> <br/> |<span data-ttu-id="f20dc-121">Optional.</span><span class="sxs-lookup"><span data-stu-id="f20dc-121">Optional</span></span>  <br/> |<span data-ttu-id="f20dc-122">**Number**</span><span class="sxs-lookup"><span data-stu-id="f20dc-122">**Number**</span></span> <br/> |<span data-ttu-id="f20dc-p101">Der lokale Bezeichner, der bei der Auswertung eines nicht lokalen Werts für datetime verwendet werden soll. Der lokale Bezeichner ist eine Zahl, die in den Systemkopfdateien beschrieben wird.</span><span class="sxs-lookup"><span data-stu-id="f20dc-p101">The locale identifier to be used in evaluating a nonlocal datetime. The locale identifier is a number described in the system header files.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="32f3a-125">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="32f3a-125">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="f20dc-125">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="f20dc-125">Return value</span></span>
 
-<span data-ttu-id="32f3a-126">Ganze Zahl</span><span class="sxs-lookup"><span data-stu-id="32f3a-126">Integer</span></span>
+<span data-ttu-id="f20dc-126">Ganze Zahl</span><span class="sxs-lookup"><span data-stu-id="f20dc-126">Integer</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="32f3a-127">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="32f3a-127">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f20dc-127">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="f20dc-127">Remarks</span></span>
 
-<span data-ttu-id="32f3a-128">Die Zeitkomponente von _DateTime_ oder _Expression_ wird verworfen.</span><span class="sxs-lookup"><span data-stu-id="32f3a-128">The time component of  _datetime_ or  _expression_ is discarded.</span></span> 
+<span data-ttu-id="f20dc-128">Die Zeitkomponente  _von datetime_ oder  _ausdruck_ wird verworfen.</span><span class="sxs-lookup"><span data-stu-id="f20dc-128">The time component of  _datetime_ or  _expression_ is discarded.</span></span> 
   
-<span data-ttu-id="32f3a-p102">Es findet kein Auf- oder Abrunden statt. Wenn die Eingabezeichenfolge nicht angegeben wurde oder nicht in ein gültiges Ergebnis konvertiert werden kann, gibt die MONTH-Funktion einen Fehler zurück.</span><span class="sxs-lookup"><span data-stu-id="32f3a-p102">No rounding is done. If the input string is missing or cannot be converted to a valid result, the MONTH function returns an error.</span></span>
+<span data-ttu-id="f20dc-p102">Es findet kein Auf- oder Abrunden statt. Wenn die Eingabezeichenfolge nicht angegeben wurde oder nicht in ein gültiges Ergebnis konvertiert werden kann, gibt die MONTH-Funktion einen Fehler zurück.</span><span class="sxs-lookup"><span data-stu-id="f20dc-p102">No rounding is done. If the input string is missing or cannot be converted to a valid result, the MONTH function returns an error.</span></span>
   
-<span data-ttu-id="32f3a-131">Der Wert wird in dem Kurzdatumsformat zurückgegeben, der aktuell in den Ländereinstellungen des Systems festgelegt ist.</span><span class="sxs-lookup"><span data-stu-id="32f3a-131">The returned value is formatted according to the short date style set by the system's current Regional Settings.</span></span>
+<span data-ttu-id="f20dc-131">Der Wert wird in dem Kurzdatumsformat zurückgegeben, der aktuell in den Ländereinstellungen des Systems festgelegt ist.</span><span class="sxs-lookup"><span data-stu-id="f20dc-131">The returned value is formatted according to the short date style set by the system's current Regional Settings.</span></span>
   
-<span data-ttu-id="32f3a-132">Die MONTH-Funktion akzeptiert auch einen einzelnen Zahlenwert für _Expression_ , wobei der ganzzahlige Teil des Ergebnisses die Anzahl von Tagen seit dem 30. Dezember 1899 darstellt.</span><span class="sxs-lookup"><span data-stu-id="32f3a-132">The MONTH function also accepts a single number value for  _expression_ where the integer portion of the result represents the number of days since December 30, 1899.</span></span> 
+<span data-ttu-id="f20dc-132">Die MONTH-Funktion akzeptiert auch  einen einzelnen Zahlenwert für ausdruck, wobei der ganzzahlige Teil des Ergebnisses die Anzahl der Tage seit dem 30. Dezember 1899 darstellt.</span><span class="sxs-lookup"><span data-stu-id="f20dc-132">The MONTH function also accepts a single number value for  _expression_ where the integer portion of the result represents the number of days since December 30, 1899.</span></span> 
   
-## <a name="example-1"></a><span data-ttu-id="32f3a-133">Beispiel 1</span><span class="sxs-lookup"><span data-stu-id="32f3a-133">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="f20dc-133">Beispiel 1</span><span class="sxs-lookup"><span data-stu-id="f20dc-133">Example 1</span></span>
 
-<span data-ttu-id="32f3a-134">MONTH("30. Mai 1999 13:45:24")</span><span class="sxs-lookup"><span data-stu-id="32f3a-134">MONTH("May 30, 1999 13:45:24")</span></span>
+<span data-ttu-id="f20dc-134">MONTH("30. Mai 1999 13:45:24")</span><span class="sxs-lookup"><span data-stu-id="f20dc-134">MONTH("May 30, 1999 13:45:24")</span></span>
   
-<span data-ttu-id="32f3a-135">Gibt 5 zurück.</span><span class="sxs-lookup"><span data-stu-id="32f3a-135">Returns 5.</span></span>
+<span data-ttu-id="f20dc-135">Gibt 5 zurück.</span><span class="sxs-lookup"><span data-stu-id="f20dc-135">Returns 5.</span></span>
   
-## <a name="example-2"></a><span data-ttu-id="32f3a-136">Beispiel 2</span><span class="sxs-lookup"><span data-stu-id="32f3a-136">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="f20dc-136">Beispiel 2</span><span class="sxs-lookup"><span data-stu-id="f20dc-136">Example 2</span></span>
 
-<span data-ttu-id="32f3a-137">MONTH(DATUMSWERT("30. Mai 1999")+7 t.)</span><span class="sxs-lookup"><span data-stu-id="32f3a-137">MONTH(DATEVALUE("May 30, 1999")+7 ed.)</span></span>
+<span data-ttu-id="f20dc-137">MONTH(DATUMSWERT("30. Mai 1999")+7 t.)</span><span class="sxs-lookup"><span data-stu-id="f20dc-137">MONTH(DATEVALUE("May 30, 1999")+7 ed.)</span></span>
   
-<span data-ttu-id="32f3a-138">Gibt 6 zurück.</span><span class="sxs-lookup"><span data-stu-id="32f3a-138">Returns 6.</span></span>
+<span data-ttu-id="f20dc-138">Gibt 6 zurück.</span><span class="sxs-lookup"><span data-stu-id="f20dc-138">Returns 6.</span></span>
   
-## <a name="example-3"></a><span data-ttu-id="32f3a-139">Beispiel 3</span><span class="sxs-lookup"><span data-stu-id="32f3a-139">Example 3</span></span>
+## <a name="example-3"></a><span data-ttu-id="f20dc-139">Beispiel 3</span><span class="sxs-lookup"><span data-stu-id="f20dc-139">Example 3</span></span>
 
-<span data-ttu-id="32f3a-140">MONAT (35580.6337)</span><span class="sxs-lookup"><span data-stu-id="32f3a-140">MONTH(35580.6337)</span></span>
+<span data-ttu-id="f20dc-140">MONTH(35580.6337)</span><span class="sxs-lookup"><span data-stu-id="f20dc-140">MONTH(35580.6337)</span></span>
   
-<span data-ttu-id="32f3a-141">Gibt 5 zurück.</span><span class="sxs-lookup"><span data-stu-id="32f3a-141">Returns 5.</span></span>
+<span data-ttu-id="f20dc-141">Gibt 5 zurück.</span><span class="sxs-lookup"><span data-stu-id="f20dc-141">Returns 5.</span></span>
   
 

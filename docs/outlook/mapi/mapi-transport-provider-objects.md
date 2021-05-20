@@ -1,5 +1,5 @@
 ---
-title: MAPI-Transportanbieter Objekte
+title: OBJEKTE des MAPI-Transportanbieters
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,17 +15,17 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33430357"
 ---
-# <a name="mapi-transport-provider-objects"></a><span data-ttu-id="fbf64-103">MAPI-Transportanbieter Objekte</span><span class="sxs-lookup"><span data-stu-id="fbf64-103">MAPI transport provider objects</span></span>
+# <a name="mapi-transport-provider-objects"></a><span data-ttu-id="860bf-103">OBJEKTE des MAPI-Transportanbieters</span><span class="sxs-lookup"><span data-stu-id="860bf-103">MAPI transport provider objects</span></span>
   
-<span data-ttu-id="fbf64-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="fbf64-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="860bf-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="860bf-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="fbf64-105">Zusätzlich zu den Standardanbieter-und anmeldeobjekten, die von allen Dienstanbietern implementiert werden, müssen Transportanbieter ein Status-Objekt implementieren.</span><span class="sxs-lookup"><span data-stu-id="fbf64-105">In addition to the standard provider and logon objects implemented by all service providers, transport providers are required to implement a status object.</span></span> <span data-ttu-id="fbf64-106">Für die anderen Dienstanbieter Typen ist die Implementierung eines Status-Objekts optional.</span><span class="sxs-lookup"><span data-stu-id="fbf64-106">For the other service provider types, implementing a status object is optional.</span></span> <span data-ttu-id="fbf64-107">MAPI ist jedoch für Transportanbieter erforderlich.</span><span class="sxs-lookup"><span data-stu-id="fbf64-107">However, MAPI requires it for transport providers.</span></span> <span data-ttu-id="fbf64-108">Transport Anbieter, die das Herunterladen von Nachrichtenkopfzeilen von einem Remoteserver unterstützen, implementieren auch einen Ordner und eine Tabelle.</span><span class="sxs-lookup"><span data-stu-id="fbf64-108">Transport providers that support the downloading of message headers from a remote server also implement a folder and a table.</span></span> 
+<span data-ttu-id="860bf-105">Zusätzlich zu den von allen Dienstanbietern implementierten Standardanbieter- und Anmeldeobjekten müssen Transportanbieter ein Statusobjekt implementieren.</span><span class="sxs-lookup"><span data-stu-id="860bf-105">In addition to the standard provider and logon objects implemented by all service providers, transport providers are required to implement a status object.</span></span> <span data-ttu-id="860bf-106">Für die anderen Dienstanbietertypen ist die Implementierung eines Statusobjekts optional.</span><span class="sxs-lookup"><span data-stu-id="860bf-106">For the other service provider types, implementing a status object is optional.</span></span> <span data-ttu-id="860bf-107">MapI erfordert dies jedoch für Transportanbieter.</span><span class="sxs-lookup"><span data-stu-id="860bf-107">However, MAPI requires it for transport providers.</span></span> <span data-ttu-id="860bf-108">Transportanbieter, die das Herunterladen von Nachrichtenkopfzeilen von einem Remoteserver unterstützen, implementieren auch einen Ordner und eine Tabelle.</span><span class="sxs-lookup"><span data-stu-id="860bf-108">Transport providers that support the downloading of message headers from a remote server also implement a folder and a table.</span></span> 
   
-<span data-ttu-id="fbf64-109">In der folgenden Abbildung sind alle Objekte dargestellt, die Transportanbieter mit den entsprechenden Schnittstellen implementieren können.</span><span class="sxs-lookup"><span data-stu-id="fbf64-109">The following illustration shows each of the objects that transport providers can implement with their corresponding interfaces.</span></span> <span data-ttu-id="fbf64-110">Die Abbildung gibt auch an, ob MAPI oder ein Client der Benutzer des Objekts ist.</span><span class="sxs-lookup"><span data-stu-id="fbf64-110">The illustration also indicates whether MAPI or a client is the object's user.</span></span>
+<span data-ttu-id="860bf-109">Die folgende Abbildung zeigt jedes der Objekte, die Transportanbieter mit ihren entsprechenden Schnittstellen implementieren können.</span><span class="sxs-lookup"><span data-stu-id="860bf-109">The following illustration shows each of the objects that transport providers can implement with their corresponding interfaces.</span></span> <span data-ttu-id="860bf-110">Die Abbildung gibt außerdem an, ob MAPI oder ein Client der Benutzer des Objekts ist.</span><span class="sxs-lookup"><span data-stu-id="860bf-110">The illustration also indicates whether MAPI or a client is the object's user.</span></span>
   
-<span data-ttu-id="fbf64-111">Von ![Transportanbietern implementierte Objekte] Von (media/amapi_66.gif "Transportanbietern implementierte Objekte")</span><span class="sxs-lookup"><span data-stu-id="fbf64-111">![Objects that transport providers implement](media/amapi_66.gif "Objects that transport providers implement")</span></span>
+<span data-ttu-id="860bf-111">![Objekte, die Transportanbieter implementieren Objekte,](media/amapi_66.gif "die von Transportanbietern implementiert werden")</span><span class="sxs-lookup"><span data-stu-id="860bf-111">![Objects that transport providers implement](media/amapi_66.gif "Objects that transport providers implement")</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="fbf64-112">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="fbf64-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="860bf-112">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="860bf-112">See also</span></span>
 
-- [<span data-ttu-id="fbf64-113">MAPI-Dienstanbieter Objekte</span><span class="sxs-lookup"><span data-stu-id="fbf64-113">MAPI Service Provider Objects</span></span>](mapi-service-provider-objects.md)
+- [<span data-ttu-id="860bf-113">OBJEKTE des MAPI-Dienstanbieters</span><span class="sxs-lookup"><span data-stu-id="860bf-113">MAPI Service Provider Objects</span></span>](mapi-service-provider-objects.md)
 

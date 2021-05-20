@@ -19,17 +19,17 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33431120"
 ---
-# <a name="currency"></a><span data-ttu-id="2756e-103">CURRENCY</span><span class="sxs-lookup"><span data-stu-id="2756e-103">CURRENCY</span></span>
+# <a name="currency"></a><span data-ttu-id="89c9b-103">CURRENCY</span><span class="sxs-lookup"><span data-stu-id="89c9b-103">CURRENCY</span></span>
 
   
   
-<span data-ttu-id="2756e-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="2756e-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="89c9b-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="89c9b-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="2756e-105">Enthält eine signierte 64-Bit-Ganzzahl, die einen Währungswert darstellt.</span><span class="sxs-lookup"><span data-stu-id="2756e-105">Contains a signed 64-bit integer representing a currency value.</span></span> 
+<span data-ttu-id="89c9b-105">Enthält eine signierte ganzzahlige 64-Bit-Zahl, die einen Währungswert darstellt.</span><span class="sxs-lookup"><span data-stu-id="89c9b-105">Contains a signed 64-bit integer representing a currency value.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="2756e-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="2756e-106">Header file:</span></span>  <br/> |<span data-ttu-id="2756e-107">Mapidefs. h</span><span class="sxs-lookup"><span data-stu-id="2756e-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="89c9b-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="89c9b-106">Header file:</span></span>  <br/> |<span data-ttu-id="89c9b-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="89c9b-107">Mapidefs.h</span></span>  <br/> |
    
 ```cpp
 typedef struct tagCY
@@ -40,28 +40,28 @@ typedef struct tagCY
 
 ```
 
-## <a name="members"></a><span data-ttu-id="2756e-108">Members</span><span class="sxs-lookup"><span data-stu-id="2756e-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="89c9b-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="89c9b-108">Members</span></span>
 
- <span data-ttu-id="2756e-109">**Lo**</span><span class="sxs-lookup"><span data-stu-id="2756e-109">**Lo**</span></span>
+ <span data-ttu-id="89c9b-109">**Lo**</span><span class="sxs-lookup"><span data-stu-id="89c9b-109">**Lo**</span></span>
   
-> <span data-ttu-id="2756e-110">Low-Order 32 Bits des Currency-Werts.</span><span class="sxs-lookup"><span data-stu-id="2756e-110">Low-order 32 bits of the currency value.</span></span> 
+> <span data-ttu-id="89c9b-110">32 Bit niedriger Reihenfolge des Währungswerts.</span><span class="sxs-lookup"><span data-stu-id="89c9b-110">Low-order 32 bits of the currency value.</span></span> 
     
- <span data-ttu-id="2756e-111">**Hallo**</span><span class="sxs-lookup"><span data-stu-id="2756e-111">**Hi**</span></span>
+ <span data-ttu-id="89c9b-111">**Hallo**</span><span class="sxs-lookup"><span data-stu-id="89c9b-111">**Hi**</span></span>
   
-> <span data-ttu-id="2756e-112">High-Order 32 Bits des Currency-Werts.</span><span class="sxs-lookup"><span data-stu-id="2756e-112">High-order 32 bits of the currency value.</span></span>
+> <span data-ttu-id="89c9b-112">32 Bit in hoher Reihenfolge des Währungswerts.</span><span class="sxs-lookup"><span data-stu-id="89c9b-112">High-order 32 bits of the currency value.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="2756e-113">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="2756e-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="89c9b-113">Hinweise</span><span class="sxs-lookup"><span data-stu-id="89c9b-113">Remarks</span></span>
 
-<span data-ttu-id="2756e-114">Die **Währungs** Struktur ist eine skalierte ganzzahlige Darstellung einer Dezimalzahl mit vier Ziffern rechts vom Dezimaltrennzeichen.</span><span class="sxs-lookup"><span data-stu-id="2756e-114">The **CURRENCY** structure is a scaled integer representation of a decimal number with four digits to the right of the decimal point.</span></span> <span data-ttu-id="2756e-115">Beispielsweise ist ein gespeicherter Wert von 327500 so auszulegen, dass er einen Währungswert von 32,7500 darstellt.</span><span class="sxs-lookup"><span data-stu-id="2756e-115">For example, a stored value of 327500 is to be construed as representing a currency value of 32.7500.</span></span> 
+<span data-ttu-id="89c9b-114">Die **CURRENCY-Struktur** ist eine skalierte ganzzahlige Darstellung einer Dezimalzahl mit vier Ziffern rechts neben dem Dezimalkomma.</span><span class="sxs-lookup"><span data-stu-id="89c9b-114">The **CURRENCY** structure is a scaled integer representation of a decimal number with four digits to the right of the decimal point.</span></span> <span data-ttu-id="89c9b-115">Beispielsweise ist ein gespeicherter Wert von 327500 so zu verstehen, dass er einen Währungswert von 32,7500 darstellt.</span><span class="sxs-lookup"><span data-stu-id="89c9b-115">For example, a stored value of 327500 is to be construed as representing a currency value of 32.7500.</span></span> 
   
-<span data-ttu-id="2756e-116">Die **Currency** -Struktur dient zur Beschreibung einer Eigenschaft vom Typ PT_CURRENCY.</span><span class="sxs-lookup"><span data-stu-id="2756e-116">The **CURRENCY** structure is used to describe a property of type PT_CURRENCY.</span></span> <span data-ttu-id="2756e-117">Weitere Informationen zu Eigenschaftstypen finden Sie unter [MAPI property Type Overview](mapi-property-type-overview.md).</span><span class="sxs-lookup"><span data-stu-id="2756e-117">For information about property types, see [MAPI Property Type Overview](mapi-property-type-overview.md).</span></span>
+<span data-ttu-id="89c9b-116">Die **CURRENCY-Struktur** wird verwendet, um eine Eigenschaft vom Typ PT_CURRENCY.</span><span class="sxs-lookup"><span data-stu-id="89c9b-116">The **CURRENCY** structure is used to describe a property of type PT_CURRENCY.</span></span> <span data-ttu-id="89c9b-117">Informationen zu Eigenschaftstypen finden Sie unter [MAPI Property Type Overview](mapi-property-type-overview.md).</span><span class="sxs-lookup"><span data-stu-id="89c9b-117">For information about property types, see [MAPI Property Type Overview](mapi-property-type-overview.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="2756e-118">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="2756e-118">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="89c9b-118">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="89c9b-118">See also</span></span>
 
 
 
-[<span data-ttu-id="2756e-119">SPropValue</span><span class="sxs-lookup"><span data-stu-id="2756e-119">SPropValue</span></span>](spropvalue.md)
+[<span data-ttu-id="89c9b-119">SPropValue</span><span class="sxs-lookup"><span data-stu-id="89c9b-119">SPropValue</span></span>](spropvalue.md)
 
 
-[<span data-ttu-id="2756e-120">MAPI-Strukturen</span><span class="sxs-lookup"><span data-stu-id="2756e-120">MAPI Structures</span></span>](mapi-structures.md)
+[<span data-ttu-id="89c9b-120">MAPI-Strukturen</span><span class="sxs-lookup"><span data-stu-id="89c9b-120">MAPI Structures</span></span>](mapi-structures.md)
 
