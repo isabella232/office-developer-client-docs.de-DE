@@ -21,7 +21,7 @@ ms.locfileid: "33436800"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Informationen zu Elementen, die in einem lokalen Speicher gelöscht wurden. Diese Informationen werden während des Status Status des [Uploads gelöscht](upload-delete-status-state.md).
+Informationen zu Elementen, die in einem lokalen Speicher gelöscht wurden. Diese Informationen werden während des [Statusstatus zum Hochladen des Löschstatus verwendet.](upload-delete-status-state.md)
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -37,11 +37,11 @@ struct UPDEL
 
  _pupde_
   
->  Out Vektor der [UPdele](updele.md) -Einträge. 
+>  [out] Vektor von [UPDELE-Einträgen.](updele.md) 
     
- _Prozent_
+ _cEnt_
   
-> Out Anzahl der Einträge in *pupde* . 
+> [out] Anzahl der Einträge in  *pupde*  . 
     
 ## <a name="see-also"></a>Siehe auch
 

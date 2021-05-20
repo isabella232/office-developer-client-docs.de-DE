@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34541015"
 ---
-# <a name="facename-element-facenamestype-complextype-visio-xml"></a>FaceName-Element (FaceNames_Type complexType) (Visio XML)
+# <a name="facename-element-facenames_type-complextype-visio-xml"></a>FaceName-Element (FaceNames_Type complexType) (Visio XML)
 
 Enthält Informationen zu einer Schriftart.
   
@@ -24,8 +24,8 @@ Enthält Informationen zu einer Schriftart.
 |:-----|:-----|
 |**Elementtyp** <br/> |[FaceName_Type](facename_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
-|**Dokumentteile** <br/> |Document. XML  <br/> |
+|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
+|**Dokumentteile** <br/> |document.xml  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,13 +36,13 @@ Enthält Informationen zu einer Schriftart.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[FaceNames](facenames-element-visiodocument_type-complextypevisio-xml.md) <br/> |[FaceNames_Type](facenames_type-complextypevisio-xml.md) <br/> |Enthält eine Auflistung von **FaceName** -Elementen.  <br/> |
+|[FaceNames](facenames-element-visiodocument_type-complextypevisio-xml.md) <br/> |[FaceNames_Type](facenames_type-complextypevisio-xml.md) <br/> |Enthält eine Auflistung von **FaceName-Elementen.**  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -52,10 +52,10 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|CharSets  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Die unterstützten Zeichensätze der Schriftart.  <br/> |Werte des Typs XSD: String.  <br/> |
-|Flags  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> |Flags, die Folgendes angeben: fehlende Schriftart, Standardschriftart, asiatische Schriftart, komplexe Schriftart, vertikale Schriftart und Schriftarttyp.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
-|NameU  <br/> |XSD: Zeichenfolge  <br/> |erforderlich  <br/> |Der Name der Schriftart als UTF-16-Unicode-Zeichenfolge.  <br/> ||
-|PANOS  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Die Panose-Signatur für die Schriftart. Panose ist ein Klassifikationssystem für Schriften, die Sie basierend auf Ihren visuellen Eigenschaften kategorisieren.  <br/> |Werte des Typs XSD: String.  <br/> |
-|Unicode Ranges  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Die unterstützten Unicode-Bereiche der Schriftart.  <br/> |Werte des Typs XSD: String.  <br/> |
+|CharSets  <br/> |xsd:string  <br/> |Optional  <br/> |Die unterstützten Zeichensätze der Schriftart.  <br/> |Werte des xsd:string-Typs.  <br/> |
+|Flags  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> |Kennzeichen, die Folgendes angeben: fehlende Schriftart, Standardschriftart, asiatische Schriftart, komplexe Schriftart, vertikale Schriftart und Schriftarttyp.  <br/> |Werte des xsd:unsignedInt-Typs.  <br/> |
+|NameU  <br/> |xsd:string  <br/> |erforderlich  <br/> |Der Name der Schriftart als UTF-16-Unicode-Zeichenfolge.  <br/> ||
+|Panos  <br/> |xsd:string  <br/> |Optional  <br/> |Die Panosesignatur für die Schriftart. Panose ist ein Klassifizierungssystem für Schriftarten, das sie basierend auf ihren visuellen Merkmalen kategorisiert.  <br/> |Werte des xsd:string-Typs.  <br/> |
+|UnicodeRanges  <br/> |xsd:string  <br/> |Optional  <br/> |Die unterstützten Unicode-Bereiche der Schriftart.  <br/> |Werte des xsd:string-Typs.  <br/> |
    
 

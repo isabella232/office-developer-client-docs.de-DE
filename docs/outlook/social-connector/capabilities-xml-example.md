@@ -7,7 +7,7 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: ae1abafe-160c-47c0-b4d5-4a689c8c4cb1
-description: 'Das XML-Beispiel in diesem Thema ist eine XML-Zeichenfolge, die an die Connector für soziale Netzwerke (OSC) zurückgegeben wird, nachdem Sie die ISocialProvider:: getCapabilities-Methode für ein soziales Netzwerk aufgerufen hat. Der XML-Code zeigt, wie ein osc-Anbieter seine Funktionen und Anforderungen für die osc angibt.'
+description: Das XML-Beispiel in diesem Thema ist eine XML-Zeichenfolge, die an den Outlook Social Connector (OSC) zurückgegeben wird, nachdem die ISocialProvider::GetCapabilities-Methode für ein soziales Netzwerk aufruft. Die XML zeigt, wie ein OSC-Anbieter seine Funktionen und Anforderungen für das OSC angibt.
 ms.openlocfilehash: 3340f5b1e0718edd1a062ab817c6621c338bee42
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
@@ -17,51 +17,51 @@ ms.locfileid: "34542261"
 ---
 # <a name="capabilities-xml-example"></a>XML-Beispiel für „capabilities“
 
-Das XML-Beispiel in diesem Thema ist eine XML-Zeichenfolge, die an die Connector für soziale Netzwerke (OSC) zurückgegeben wird, nachdem Sie die [ISocialProvider:: getCapabilities](isocialprovider-getcapabilities.md) -Methode für ein soziales Netzwerk aufgerufen hat. Der XML-Code zeigt, wie ein osc-Anbieter seine Funktionen und Anforderungen für die osc angibt. 
+Das XML-Beispiel in diesem Thema ist eine XML-Zeichenfolge, die an den Outlook Social Connector (OSC) zurückgegeben wird, nachdem die [ISocialProvider::GetCapabilities-Methode](isocialprovider-getcapabilities.md) für ein soziales Netzwerk aufruft. Die XML zeigt, wie ein OSC-Anbieter seine Funktionen und Anforderungen für das OSC angibt. 
   
 ## <a name="capabilities-for-friends"></a>Funktionen für Freunde
 
-In diesem Beispiel gibt der osc-Anbieter die folgenden Elemente an, um seine Funktionen zur Unterstützung der Funktion "Friends" anzuzeigen:
+In diesem Beispiel gibt der OSC-Anbieter die folgenden Elemente an, um seine Funktionen bei der Unterstützung des Freundesfeatures zu zeigen:
   
-- **getfriends** als **true** , um anzugeben, dass der osc-Anbieter die [ISocialPerson:: GetFriendsAndColleagues](isocialperson-getfriendsandcolleagues.md) -Methode unterstützt, um Freundes Informationen programmgesteuert abzurufen. 
+- **getFriends** als **true,** um anzugeben, dass der OSC-Anbieter die [ISocialPerson::GetFriendsAndColleagues-Methode](isocialperson-getfriendsandcolleagues.md) unterstützt, um die Informationen von Freunden programmgesteuert zu erhalten. 
     
-- **cacheFriends** als **true** , um die Zwischenspeicherung von Freunden-Informationen in einem Outlook-Kontaktordner zu unterstützen. 
+- **cacheFriends** als **true,** um das Zwischenspeichern von Informationen von Freunden in einem Outlook zu unterstützen. 
     
-- **contactSyncRestartInterval** als 60, um anzugeben, dass der osc bei einem Fehler alle 60 Minuten wiederholen sollte, um den Cache zu aktualisieren. 
+- **contactSyncRestartInterval** als 60, um anzugeben, dass das OSC bei einem Fehler alle 60 Minuten erneut versuchen sollte, den Cache zu aktualisieren. 
     
-- **followPerson** als **true** , um anzugeben, dass Freunde im sozialen Netzwerk hinzugefügt werden können. 
+- **followPerson** als **true,** um die Möglichkeit anzugeben, Freunde im sozialen Netzwerk hinzuzufügen. 
     
-- **doNotFollowPerson** als **false** , um anzugeben, dass der osc-Anbieter das Entfernen einer Person als Freund im sozialen Netzwerk nicht unterstützt. 
+- **doNotFollowPerson** als **false,** um anzugeben, dass der OSC-Anbieter das Entfernen einer Person als Freund im sozialen Netzwerk nicht unterstützt. 
     
-- **dynamicContactsLookup** als **false** , um anzugeben, dass der osc keine Freundes Informationen im Arbeitsspeicher speichern soll. 
+- **dynamicContactsLookup** als **false,** um anzugeben, dass das OSC keine Freundesinformationen im Speicher speichern soll. 
     
 ## <a name="capabilities-for-activities"></a>Funktionen für Aktivitäten
 
-Der osc-Anbieter gibt die folgenden Elemente an, die seine Fähigkeit zur Unterstützung von Aktivitäten zeigen:
+Der OsC-Anbieter gibt die folgenden Elemente an, um seine Fähigkeit zur Unterstützung von Aktivitäten zu zeigen:
   
-- **GetActivities** als **true** , um anzugeben, dass der osc-Anbieter die [ISocialProfile:: GetActivitiesOfFriendsAndColleagues](isocialprofile-getactivitiesoffriendsandcolleagues.md) -Methode unterstützt, um Aktivitäten von friends programmgesteuert abzurufen. 
+- **getActivities** as **true,** um anzugeben, dass der OSC-Anbieter die [ISocialProfile::GetActivitiesOfFriendsAndColleagues-Methode](isocialprofile-getactivitiesoffriendsandcolleagues.md) unterstützt, um die Aktivitäten von Freunden programmgesteuert zu erhalten. 
     
-- **cacheActivities** als **false** , um zwischen Speicherungs Aktivitäten von Freunden im verborgenen Outlook-Nachrichten Feed-Ordner zu unterstützen. 
+- **cacheActivities** as **false** to support caching activities of friends in the hidden Outlook News Feed folder. 
     
-- **dynamicActivitiesLookupEx** als **true** , um anzugeben, dass der osc Aktivitäten von Freunden im Arbeitsspeicher speichern soll. 
+- **dynamicActivitiesLookupEx** als **true,** um anzugeben, dass das OSC die Aktivitäten von Freunden im Speicher speichern soll. 
     
-## <a name="capabilities-for-authentication-and-account-configuration"></a>Funktionen für Authentifizierung und Kontokonfiguration
+## <a name="capabilities-for-authentication-and-account-configuration"></a>Funktionen für die Authentifizierung und Kontokonfiguration
 
-Der osc-Anbieter gibt die folgenden Elemente an, die seine Unterstützung für Authentifizierung und Kontokonfiguration anzeigen:
+Der OsC-Anbieter gibt die folgenden Elemente an, um seine Unterstützung für die Authentifizierung und Kontokonfiguration zu zeigen:
   
-- **useLogonWebAuth** als **false** , um anzugeben, dass der osc-Anbieter die Standardauthentifizierung unterstützt. 
+- **useLogonWebAuth** als **false,** um anzugeben, dass der OSC-Anbieter die Standardauthentifizierung unterstützt. 
     
-- **supportsAutoConfigure** als **false** , um anzugeben, dass der osc nicht versuchen sollte, sich automatisch beim sozialen Netzwerk für den Benutzer zu konfigurieren und sich anzumelden. 
+- **supportsAutoConfigure** as **false,** um anzugeben, dass das OSC nicht automatisch konfigurieren und sich beim sozialen Netzwerk für den Benutzer anmelden sollte. 
     
-- **useLogonCached** und **hideRememberMyPassword** als **false** , um anzugeben, dass der osc jedes Mal nach einem Kennwort gefragt werden soll und keine zwischengespeicherten Anmeldeinformationen für die Anmeldung verwendet werden soll. 
+- **useLogonCached** und **hideRememberMyPassword** als **false,** um anzugeben, dass das OSC jedes Mal ein Kennwort einfordern und keine zwischengespeicherten Anmeldeinformationen zum Anmelden verwenden sollte. 
     
-- **displayUrl** als **false** , um anzugeben, dass der osc die URL für das soziale Netzwerk im Dialogfeld Kontokonfiguration nicht anzeigen soll. 
+- **displayUrl** als **false,** um anzugeben, dass die URL für das soziale Netzwerk im Dialogfeld Kontokonfiguration nicht angezeigt werden soll. 
     
-- **hideHyperlinks** als **false** , um anzugeben, dass der osc-Anbieter nur vorhandene Konten mit bekannten Kennwörtern unterstützt, und die osc sollte nicht die **Klicken Sie hier, um ein Konto zu erstellen** und **Ihr Kennwort vergessen angezeigt?** Hyperlinks in der Dialogfeld Kontokonfiguration. 
+- **hideHyperlinks** als **false,** um anzugeben, dass der OSC-Anbieter nur vorhandene Konten  mit bekannten Kennwörtern unterstützt, und das OSC sollte nicht die Hyperlinks Klicken Sie hier zum Erstellen eines Kontos und **Kennwort vergessen?** im Dialogfeld Kontokonfiguration anzeigen. 
     
 ## <a name="xml-example"></a>XML-Beispiel
 
-Das folgende Beispiel zeigt die XML- **Funktionen** eines osc-Anbieters. 
+Das folgende Beispiel zeigt die **Funktionen-XML** eines OSC-Anbieters. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
@@ -89,9 +89,9 @@ Das folgende Beispiel zeigt die XML- **Funktionen** eines osc-Anbieters.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [XML-Beispiele für osc-Anbieter](osc-provider-xml-examples.md)  
+- [OSC-Anbieter-XML-Beispiele](osc-provider-xml-examples.md)  
 - [XML für Funktionen](xml-for-capabilities.md)  
-- [XML-Beispiel für Freunde](friends-xml-example.md)  
-- [XML-Beispiel für Aktivitätsfeeds](activity-feed-xml-example.md)  
-- [Connector für soziale Netzwerke Anbieter-XML-Schema](outlook-social-connector-provider-xml-schema.md)
+- [Friends-XML-Beispiel](friends-xml-example.md)  
+- [Beispiel für Aktivitätsfeed-XML](activity-feed-xml-example.md)  
+- [Outlook XML-Schema des Anbieters für sozialen Connector](outlook-social-connector-provider-xml-schema.md)
 

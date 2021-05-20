@@ -20,8 +20,8 @@ ms.locfileid: "33437924"
 
 Zeigt die aktuellen Füllbereichformatattribute für das Shape und den Schatten des Shapes an, darunter Füllmuster, Vordergrundfarbe und Hintergrundfarbe. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Sie können Füllformate im Bereich **Shape formatieren** (auf der Registerkarte **Start** in der Gruppe Shape-Format **Vorlagen** , klicken **** Sie auf Füllung, und klicken Sie dann auf **Fülloptionen**), durch Anwenden einer Füllformat Vorlage oder durch einen Eintrag in einer Zelle im **Füll Format** im Abschnitt. 
+Sie können Füllungsformate im Bereich  Form formatieren  festlegen (klicken Sie auf der Registerkarte Start in der Gruppe Formenarten auf Füllen **und** dann auf Fülloptionen), indem Sie eine Füllformatvorlage anwenden oder einen Eintrag in einer Zelle im Abschnitt **Füllformat** erstellen.  
   
 

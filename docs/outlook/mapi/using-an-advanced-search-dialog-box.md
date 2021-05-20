@@ -1,5 +1,5 @@
 ---
-title: Verwenden eines Dialog Felds für die erweiterte Suche
+title: Verwenden eines Dialogfelds für die erweiterte Suche
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,24 +15,24 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33437301"
 ---
-# <a name="using-an-advanced-search-dialog-box"></a>Verwenden eines Dialog Felds für die erweiterte Suche
+# <a name="using-an-advanced-search-dialog-box"></a>Verwenden eines Dialogfelds für die erweiterte Suche
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Einige Adressbuchcontainer unterstützen eine erweiterte Suchfunktion, die es Clients ermöglicht, andere Eigenschaften als **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) zu suchen. Adressbuchcontainer, die erweiterte Suchvorgänge unterstützen, verfügen über eine Containerobjekt Eigenschaft namens **PR_SEARCH** ([pidtagsearch (](pidtagsearch-canonical-property.md)). Dieses Container-Objekt ermöglicht den Zugriff auf eine Anzeigetabelle, die das Dialogfeld Suchen beschreibt – ein Dialogfeld zum eingeben und Bearbeiten der erweiterten Suchkriterien.
+Einige Adressbuchcontainer unterstützen eine erweiterte Suchfunktion, mit der Clients nach anderen Eigenschaften als PR_DISPLAY_NAME **(** [PidTagDisplayName](pidtagdisplayname-canonical-property.md)) suchen können. Adressbuchcontainer, die erweiterte Suchen unterstützen, verfügen über eine Containerobjekteigenschaft namens **PR_SEARCH** ([PidTagSearch](pidtagsearch-canonical-property.md)). Dieses Containerobjekt bietet Zugriff auf eine Anzeigetabelle, die das Suchdialogfeld beschreibt – ein Dialogfeld, das zum Eingeben und Bearbeiten der erweiterten Suchkriterien verwendet wird.
   
- **So führen Sie eine erweiterte Suche für einen Adressbuchcontainer aus**
+ **So führen Sie eine erweiterte Suche in einem Adressbuchcontainer aus**
   
-1. Rufen Sie die [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode des Containers auf, und geben Sie **PR_SEARCH** für das Property-Tag und IID_IMAPIContainer für den Schnittstellenbezeichner an. 
+1. Rufen Sie die [IMAPIProp::OpenProperty-Methode](imapiprop-openproperty.md)  des Containers auf, und geben PR_SEARCH für das Eigenschaftstag und IID_IMAPIContainer für die Schnittstellen-ID an. 
     
-2. Rufen Sie die **IMAPIProp:: OpenProperty** -Methode des Search-Objekts auf, und geben Sie **PR_DETAILS_TABLE** ([pidtagdetailstable (](pidtagdetailstable-canonical-property.md)) für das Property-Tag und IID_IMAPITable für den Schnittstellenbezeichner an. 
+2. Rufen Sie die **IMAPIProp::OpenProperty-Methode** des Suchobjekts auf, und geben Sie **PR_DETAILS_TABLE** ([PidTagDetailsTable](pidtagdetailstable-canonical-property.md)) für das Eigenschaftstag und IID_IMAPITable für den Schnittstellenbezeichner an. 
     
-3. Rufen Sie die [IMAPIProp::](imapiprop-setprops.md) SetProps-Methode des Search-Objekts auf, um Werte für die in der erweiterten Suche zu verwendenden Eigenschaften einzurichten. 
+3. Rufen Sie die [IMAPIProp::SetProps-Methode](imapiprop-setprops.md) des Suchobjekts auf, um Werte für die Eigenschaften zu erstellen, die in der erweiterten Suche verwendet werden sollen. 
     
-4. Rufen Sie die [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) -Methode des Search-Objekts auf, um die erweiterten Suchkriterien zu speichern. 
+4. Rufen Sie die [IMAPIProp::SaveChanges-Methode](imapiprop-savechanges.md) des Suchobjekts auf, um die erweiterten Suchkriterien zu speichern. 
     
-Diese Sequenz von Aufrufen führt zu einer Einschränkung, die verfügbar ist, wenn ein Client die **GetSearchCriteria** -Methode des Search-Objekts aufruft. 
+Diese Abfolge von Aufrufen führt dazu, dass eine Einschränkung verfügbar ist, wenn ein Client die **GetSearchCriteria-Methode des Suchobjekts** aufruft. 
   
 

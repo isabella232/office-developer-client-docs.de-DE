@@ -1,5 +1,5 @@
 ---
-title: Deklarieren von Formular Schnittstellen
+title: Deklarieren von Formularschnittstellen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,13 +15,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33437511"
 ---
-# <a name="declaring-form-interfaces"></a>Deklarieren von Formular Schnittstellen
+# <a name="declaring-form-interfaces"></a>Deklarieren von Formularschnittstellen
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Sie können die Deklarationen ihrer Implementierungen von MAPI-Formular Schnittstellen vereinfachen, indem Sie die MAPI_-_interface__METHOD-Makros verwenden, wobei _Interface_ eine in der Headerdatei Mapiform. h definierte Formularschnittstelle ist. Sie müssen diese Makros nicht verwenden, aber wenn Sie dies nicht tun, sollten Sie besonders darauf achten, dass ihre Deklarationen den Deklarationen in der Headerdatei Mapiform. h entsprechen. Sie können beispielsweise die Formularobjekt Klasse Ihres Formular Servers wie folgt deklarieren: 
+Sie können die Deklarationen Ihrer Implementierungen von MAPI-Formularschnittstellen vereinfachen, indem Sie die MAPI_ _interface__METHOD-Makros verwenden. Dabei handelt es sich bei der Schnittstelle um eine Formularschnittstelle, die in der Mapiform.h-Headerdatei definiert ist.  Sie müssen diese Makros nicht verwenden, aber andern falls nicht, sollten Sie besonders darauf achten, dass Ihre Deklarationen den Deklarationen in der Mapiform.h-Headerdatei entsprechen. Beispielsweise können Sie die Formularobjektklasse des Formularservers wie folgt deklarieren: 
   
 ```cpp
 class CMyForm : public IPersistMessage, public IMAPIForm,
@@ -45,5 +45,5 @@ public:
 
 
 
-[Schreiben von Formular Server Code](writing-form-server-code.md)
+[Schreiben von Formularservercode](writing-form-server-code.md)
 

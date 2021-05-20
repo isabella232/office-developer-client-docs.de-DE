@@ -1,5 +1,5 @@
 ---
-title: Beendenfürjedendatensatz-Makroaktion (benutzerdefinierte Access-Web-App)
+title: ExitForEachRecord-Makroaktion (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33438044"
 ---
-# <a name="exitforeachrecord-macro-action-access-custom-web-app"></a>Beendenfürjedendatensatz-Makroaktion (benutzerdefinierte Access-Web-App)
+# <a name="exitforeachrecord-macro-action-access-custom-web-app"></a>ExitForEachRecord-Makroaktion (benutzerdefinierte Access-Web-App)
 
 Mit der **BeendenFürJedenDatensatz** -Aktion beenden Sie einen **[FürJedenDatensatz](foreachrecord-data-block-access-custom-web-app.md)** -Datenblock sofort. 
   

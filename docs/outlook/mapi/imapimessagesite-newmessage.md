@@ -42,27 +42,27 @@ HRESULT NewMessage(
 
  _fComposeInFolder_
   
-> in Gibt an, in welchem Ordner die Nachricht erstellt werden soll. Wenn die Variable auf FALSE festgelegt ist, wird der _pFolderFocus_ -Parameter ignoriert, und der Formular Betrachter kann die Nachricht in einem beliebigen Ordner verfassen. Wenn die Variable auf TRUE festgelegt ist und im _pFolderFocus_ -Parameter NULL übergeben wird, wird die Nachricht im aktuellen Ordner zusammengefasst. Wenn die Variable auf TRUE festgelegt ist und ein Wert ungleich NULL in _pFolderFocus_übergeben wird, wird die Nachricht in dem Ordner zusammengestellt, auf den von _pFolderFocus_verwiesen wird.
+> [in] Gibt an, in welchem Ordner die Nachricht verfasst werden soll. Wenn die Variable FALSE ist, wird  _der pFolderFocus-Parameter_ ignoriert, und die Formularanzeige kann die Nachricht in einem beliebigen Ordner verfassen. Wenn die Variable TRUE ist und NULL im  _pFolderFocus-Parameter_ übergeben wird, wird die Nachricht im aktuellen Ordner verfasst. Wenn die Variable TRUE ist und ein Nicht-NULL-Wert in _pFolderFocus_ übergeben wird, wird die Nachricht in dem Ordner verfasst, auf den _pFolderFocus verweist._
     
  _pFolderFocus_
   
-> in Ein Zeiger auf den Ordner, in dem die neue Nachricht erstellt wird.
+> [in] Ein Zeiger auf den Ordner, in dem die neue Nachricht erstellt wird.
     
  _pPersistMessage_
   
-> in Ein Zeiger auf das Form-Objekt für das neue Formular.
+> [in] Ein Zeiger auf das Formularobjekt für das neue Formular.
     
  _ppMessage_
   
-> Out Ein Zeiger auf einen Zeiger auf die neue Nachricht.
+> [out] Ein Zeiger auf einen Zeiger auf die neue Nachricht.
     
  _ppMessageSite_
   
-> Out Ein Zeiger auf einen Zeiger auf ein Nachrichtenwebsite Objekt für die neue Nachricht.
+> [out] Ein Zeiger auf einen Zeiger auf ein Nachrichtenwebsiteobjekt für die neue Nachricht.
     
  _ppViewContext_
   
-> Out Ein Zeiger auf einen Zeiger auf einen Ansichtskontext, der für die Übergabe an ein neues Formular mit der neuen Nachricht geeignet ist. Wenn das Formular einen eigenen Ansichtskontext implementiert, kann im _ppViewContext_ -Parameter NULL übergeben werden. 
+> [out] Ein Zeiger auf einen Zeiger auf einen Ansichtskontext, der für die Übergabe an ein neues Formular mit der neuen Nachricht geeignet ist. Wenn das Formular einen eigenen Ansichtskontext implementiert, kann NULL im  _ppViewContext-Parameter übergeben_ werden. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -70,13 +70,13 @@ S_OK
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Formularobjekte rufen die **IMAPIMessageSite:: PostMessage** -Methode auf, um eine neue Nachricht zu erstellen. Das Formular verwendet **** eine neumeldung, um eine neue Nachricht und die zugehörige Nachrichtenwebsite aus ihrer Ansicht abzurufen. Anschließend kann die neue Nachricht geändert werden. 
+Formularobjekte rufen die **IMAPIMessageSite::NewMessage-Methode** auf, um eine neue Nachricht zu erstellen. Das Formular verwendet **NewMessage,** um eine neue Nachricht und die zugeordnete Nachrichtenwebsite aus der Ansicht zu erhalten. Anschließend kann die neue Nachricht geändert werden. 
   
-Sie können auch einen zugeordneten Ansichtskontext abrufen, indem Sie einen Wert ungleich NULL im _ppViewContext_ -Parameter übergeben. Dieser Ansichtskontext kann direkt verwendet werden, oder er kann aggregiert und an die neue Nachricht übergeben werden. Wenn eine vollständige Implementierung erforderlich ist, müssen Sie in _ppViewContext_den Wert NULL überschreiten.
+Sie können auch einen zugeordneten Ansichtskontext abrufen, indem Sie einen Nicht-NULL-Wert im  _ppViewContext-Parameter_ übergeben. Dieser Ansichtskontext kann direkt verwendet oder aggregiert und an die neue Nachricht übergeben werden. Wenn eine vollständige Implementierung erforderlich ist, übergeben Sie NULL in  _ppViewContext_.
   
-Eine Liste der Schnittstellen im Zusammenhang mit Formular Servern finden Sie unter [MAPI-Formular Schnittstellen](mapi-form-interfaces.md).
+Eine Liste der Schnittstellen im Zusammenhang mit Formularservern finden Sie unter [MAPI Form Interfaces](mapi-form-interfaces.md).
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -84,7 +84,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer. cpp  <br/> |CMyMAPIFormViewer:: neuNachricht  <br/> |MFCMAPI verwendet die **IMAPIMessageSite:: PostMessage** -Methode, um eine neue Nachricht zu erstellen, einen neuen Formular Betrachter zu **** instanziieren und setpersist aufzurufen, um die Nachricht im Formular-Viewer festzulegen. Schließlich wird der Formular Betrachter als Nachrichtenwebsite zurückgegeben.  <br/> |
+|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::NewMessage  <br/> |MFCMAPI verwendet die **IMAPIMessageSite::NewMessage-Methode,** um eine neue Nachricht zu erstellen, eine neue Formularanzeige zu instanziieren und **SetPersist** zum Festlegen der Nachricht in der Formularanzeige auf. Schließlich wird die Formularanzeige als Nachrichtenwebsite zurückgegeben.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -97,5 +97,5 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
-[MAPI-Formular Schnittstellen](mapi-form-interfaces.md)
+[MAPI-Formularschnittstellen](mapi-form-interfaces.md)
 

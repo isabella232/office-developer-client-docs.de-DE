@@ -1,5 +1,5 @@
 ---
-title: EXP-Funktion (Access Custom Web App)
+title: Exp-Funktion (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33436412"
 ---
-# <a name="exp-function-access-custom-web-app"></a>EXP-Funktion (Access Custom Web App)
+# <a name="exp-function-access-custom-web-app"></a>Exp-Funktion (benutzerdefinierte Access-Web-App)
 
 Gibt den exponentiellen Wert des angegebenen Ausdrucks zurück.
   
@@ -23,20 +23,20 @@ Gibt den exponentiellen Wert des angegebenen Ausdrucks zurück.
   
 ## <a name="syntax"></a>Syntax
 
- **Exp** (*Numerischer Ausdruck*) 
+ **Exp** (*NumericExpression*) 
   
-Die **Exp** -Funktion enthält das folgende Argument. 
+Die **Exp-Funktion** enthält das folgende Argument. 
   
 |**Argumentname**|**Beschreibung**|
 |:-----|:-----|
-| *Numerischer Ausdruck*  <br/> |Ein Ausdruck vom Typ Double oder eines Typs, der implizit in Double konvertiert werden kann.  <br/> |
+| *NumericExpression*  <br/> |Ein Ausdruck vom Typ Double oder eines Typs, der implizit in Double konvertiert werden kann.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die Konstante **e** (2,718281...) ist die Basis natürlicher Logarithmen. 
+Die Konstante **e** (2,718281...), ist die Basis natürlicher Logarithmen. 
   
-Der Exponent einer Zahl ist die Konstante **e** , die potenziert wird. Beispiel **Exp** (1,0) = e ^ 1.0 = 2.71828182845905 und **Exp** (10) = e ^ 10 = 22026.4657948067. 
+Der Exponent einer Zahl ist die Konstante **e,** die auf die Kraft der Zahl angehoben wird. Beispiel: **Exp** (1.0) = e^1.0 = 2.71828182845905 und **Exp** (10) = e^10 = 22026.4657948067. 
   
-Die exponentielle des natürlichen Logarithmus einer Zahl ist die Zahl selbst: **Exp** (Log (n)) = n. Und der natürliche Logarithmus des exponentiellen Werts einer Zahl ist die Zahl selbst: LOG (**Exp** (n)) = n. 
+Die Exponentielle des natürlichen Logarithmus einer Zahl ist die Zahl selbst: **Exp** (LOG (n)) = n. Und der natürliche Logarithmus des Exponentiellen einer Zahl ist die Zahl selbst: LOG (**Exp** (n)) = n. 
   
 

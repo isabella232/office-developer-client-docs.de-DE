@@ -20,10 +20,10 @@ ms.locfileid: "33437182"
 
 Enthält die Zellen, die die Formatierung (das Erscheinungsbild) des Zeichenblatts auf der Druckseite steuern. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Verwenden Sie den Abschnitt **Druckeigenschaften** , um das Drucken auf Seitenebene zu steuern. Diese Einstellungen sind pro Seite und unabhängig von den Zeichenblatteinstellungen, beispielsweise kann ein Zeichenblatt, das die Querformatausrichtung verwendet, im Hochformat gedruckt werden. Außerdem können Dokumente mit einer Kombination aus Orientierungen gedruckt werden. 
+Verwenden Sie **den Abschnitt Druckeigenschaften,** um das Drucken auf Seitenebene zu steuern. Diese Einstellungen sind pro Seite und unabhängig von den Zeichenblatteinstellungen, z. B. kann ein Zeichenblatt, das die Querformatausrichtung verwendet, mithilfe der Hochformatausrichtung gedruckt werden. Außerdem können Dokumente mithilfe einer Kombination von Ausrichtungen gedruckt werden. 
   
-Die Einstellungen im Abschnitt **Print Properties** entsprechen den im Dialogfeld **Seite einrichten** auf der Registerkarte **Druckeinrichtung** festgelegten Werten (Klicken Sie auf der Registerkarte **Entwurf** auf der **Seite Setup** Gruppe auf das Dialogfeldstartprogramm). Im Abschnitt **Seiteneigenschaften** finden Sie Einstellungen für das Zeichenblatt. 
+Die Einstellungen  im Abschnitt Druckeigenschaften entsprechen den  Werten, die  auf der Registerkarte  Druckeinrichtung im Dialogfeld Seiteneinrichtung festgelegt sind (klicken Sie auf der Registerkarte Entwurf in der Gruppe Seiteneinrichtung auf das Startfeld des **Dialogfelds).** Im Abschnitt **Seiteneigenschaften** finden Sie Einstellungen, die für das Zeichenblatt gelten. 
   
 

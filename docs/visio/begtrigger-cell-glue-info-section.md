@@ -20,21 +20,21 @@ ms.locfileid: "33437952"
 
 Enthält eine von der Anwendung generierte Triggerformel, die festlegt, ob der Anfangspunkt eines 1D-Shapes zur Aufrechterhaltung seiner Verbindung zu einem anderen Shape verschoben werden soll.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Wenn Sie ein 1D-Shape mit dynamischem Kleber an ein anderes Shape kleben, generiert die Anwendung eine Formel, die sich auf die Zelle EventXFMod eines anderen Shapes bezieht. Wenn das Shape geändert wird, berechnet Visio alle auf die Zelle EventXFMod bezogenen Formeln neu, einschließlich der Formel in der Zelle BegTrigger. Andere Formeln für das 1D-Shape beziehen sich auf die Zelle BegTrigger und verschieben den Anfangspunkt des 1D-Shape oder verändern ggf. das Shape entsprechend.
   
-Wenn Sie einen Verweis auf die Zelle Zelle BegTrigger aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle "BegTrigger" anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Zelle BegTrigger  <br/> |
+| Zellenname:  <br/> | BegTrigger  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle BegTrigger aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle "BegTrigger" nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowGroup** <br/> |
 | Zellenindex:  <br/> |**visBegTrigger** <br/> |
    

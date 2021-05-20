@@ -25,14 +25,14 @@ ms.locfileid: "33436384"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ermöglicht es den Formular Viewern, mit Formular Ansichts Kontexten und Formular Benachrichtigungen zu arbeiten, Formular Verben auszuführen und Formulare herunterzufahren.
+Ermöglicht Formularanzeigen das Arbeiten mit Formularansichtskontexten und Formularbenachrichtigungen, das Ausführen von Formularverben und das Herunterfahren von Formularen.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiform. h  <br/> |
+|Headerdatei  <br/> |Mapiform.h  <br/> |
 |Verf�gbar gemacht von:  <br/> |Formularobjekte  <br/> |
 |Implementiert von:  <br/> |Formularserver  <br/> |
-|Aufgerufen von:  <br/> |Formular Betrachter  <br/> |
+|Aufgerufen von:  <br/> |Formularanzeigen  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPIForm  <br/> |
 |Zeigertyp:  <br/> |LPMAPIFORM  <br/> |
    
@@ -40,13 +40,13 @@ Ermöglicht es den Formular Viewern, mit Formular Ansichts Kontexten und Formula
 
 |||
 |:-----|:-----|
-|[SetViewcontext](imapiform-setviewcontext.md) <br/> |Richtet einen Ansichtskontext für das Formular ein.  <br/> |
-|[GetViewcontext](imapiform-getviewcontext.md) <br/> |Gibt den aktuellen Ansichtskontext für das Formular zurück.  <br/> |
+|[SetViewContext](imapiform-setviewcontext.md) <br/> |Richtet einen Ansichtskontext für das Formular ein.  <br/> |
+|[GetViewContext](imapiform-getviewcontext.md) <br/> |Gibt den aktuellen Ansichtskontext für das Formular zurück.  <br/> |
 |[ShutdownForm](imapiform-shutdownform.md) <br/> |Schließt das Formular.  <br/> |
-|[DoVerb](imapiform-doverb.md) <br/> |Fordert, dass das Formular alle Aufgaben ausführt, die es einem bestimmten Verb zuordnet.  <br/> |
-|[Beraten](imapiform-advise.md) <br/> |Registriert einen Formular-Viewer für Benachrichtigungen zu Ereignissen, die das Formular betreffen.  <br/> |
-|[Unadvise](imapiform-unadvise.md) <br/> |Bricht eine Registrierung für Benachrichtigungen mit einem Formular Betrachter ab, der zuvor durch Aufrufen von **Advise**eingerichtet wurde.  <br/> |
-|[Getlasterroraufzurufen](imapiform-getlasterror.md) <br/> |Gibt eine [MAPIERROR](mapierror.md) -Struktur zurück, die Informationen zum vorherigen Fehler enthält, der für das Form-Objekt auftritt.  <br/> |
+|[DoVerb](imapiform-doverb.md) <br/> |Fordert an, dass das Formular alle Aufgaben ausführen soll, die es einem bestimmten Verb zurrent.  <br/> |
+|[Raten](imapiform-advise.md) <br/> |Registriert eine Formularanzeige für Benachrichtigungen über Ereignisse, die sich auf das Formular auswirken.  <br/> |
+|[Unadvise](imapiform-unadvise.md) <br/> |Bricht eine Registrierung für Benachrichtigungen bei einer zuvor durch Aufrufen von Advise eingerichteten Formularanzeige **ab.**  <br/> |
+|[GetLastError](imapiform-getlasterror.md) <br/> |Gibt eine [MAPIERROR-Struktur](mapierror.md) zurück, die Informationen zum vorherigen Fehler enthält, der für das Formularobjekt aufgetreten ist.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

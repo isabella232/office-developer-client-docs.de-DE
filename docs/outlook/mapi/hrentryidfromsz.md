@@ -25,13 +25,13 @@ ms.locfileid: "33437728"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt eine Eintrags-ID aus der ASCII-Codierung. 
+Erstellt einen Eintragsbezeichner aus seiner ASCII-Codierung neu. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
    
 ```cpp
 HRESULT HrEntryIDFromSz(
@@ -43,34 +43,34 @@ HRESULT HrEntryIDFromSz(
 
 ## <a name="parameters"></a>Parameter
 
- _SZ_
+ _sz_
   
-> in Zeiger auf die ASCII-Zeichenfolge, aus der ein Eintragsbezeichner erstellt werden soll. 
+> [in] Zeiger auf die ASCII-Zeichenfolge, aus der ein Eintragsbezeichner erstellt werden soll. 
     
- _PCB_
+ _leiterplatte_
   
-> Out Zeiger auf die Größe der Eintrags-ID, auf die durch den _ppentry_ -Parameter verwiesen wird, in Bytes. 
+> [out] Zeiger auf die Größe des Eintragsbezeichners in Bytes, auf den der  _ppentry-Parameter_ verweist. 
     
  _ppentry_
   
-> Out Zeiger auf einen Zeiger auf die zurück [](entryid.md) geGebene Eintrags-ID-Struktur, die den neuen Eintragsbezeichner enthält. 
+> [out] Zeiger auf einen Zeiger auf die zurückgegebene [ENTRYID-Struktur,](entryid.md) die den neuen Eintragsbezeichner enthält. 
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK
   
-> Die Erholung war erfolgreich.
+> Die Neugestaltung war erfolgreich.
     
 MAPI_E_INVALID_ENTRYID
   
 > Die Eintrags-ID war ungültig.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **HrEntryIDFromSz** -und [HrSzFromEntryID](hrszfromentryid.md) -Funktionen ermöglichen die Konvertierung zwischen den Zeichenfolgen-und Binärformaten der Eintrags-IDs. 
+Die **Funktionen HrEntryIDFromSz** und [HrSzFromEntryID](hrszfromentryid.md) stellen eine Konvertierung zwischen den Zeichenfolgen- und Binärformaten von Eintragsbezeichnern zur Verfügung. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Die **HrEntryIDFromSz** -Funktion reserviert Speicher für die ASCII-Zeichenfolge mithilfe der [MAPIAllocateBuffer](mapiallocatebuffer.md) -Funktion. 
+Die **HrEntryIDFromSz-Funktion** weist der ASCII-Zeichenfolge mithilfe der [MAPIAllocateBuffer-Funktion Arbeitsspeicher](mapiallocatebuffer.md) zu. 
   
 

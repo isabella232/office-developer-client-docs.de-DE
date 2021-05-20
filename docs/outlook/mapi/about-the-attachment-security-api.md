@@ -19,7 +19,7 @@ ms.locfileid: "33438876"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die Attachment Security API ermöglicht es Outlook-Lösungen zu ermitteln, ob eine Anlage von Outlook als unsicher betrachtet wird und für die Anzeige und Indizierung gesperrt ist. Es bietet die folgenden Definitionen und Schnittstellen.
+Die Anlagensicherheits-API ermöglicht Outlook Lösungen zu ermitteln, ob eine Anlage von der Outlook als unsicher eingestuft wird und für die Anzeige und Indizierung gesperrt ist. Es enthält die folgenden Definitionen und Schnittstellen.
   
 Definitionen
   

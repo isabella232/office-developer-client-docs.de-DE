@@ -25,13 +25,13 @@ ms.locfileid: "33438204"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft die Adresse der standardmäßigen MAPI-Speicher Zuordnungsfunktion ab.
+Ruft die Adresse der standardmäßigen MAPI-Speicherzuordnungsfunktion ab.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 LPMALLOC MAPIGetDefaultMalloc( );
@@ -43,6 +43,6 @@ Keine.
   
 ## <a name="return-value"></a>Return value
 
-Die **MAPIGetDefaultMalloc** -Funktion gibt einen Zeiger auf die standardmäßige MAPI-Speicher Zuordnungsfunktion zurück. 
+Die **MAPIGetDefaultMalloc-Funktion** gibt einen Zeiger auf die standardmäßige MAPI-Speicherzuordnungsfunktion zurück. 
   
 

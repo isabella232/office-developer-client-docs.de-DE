@@ -25,7 +25,7 @@ ms.locfileid: "33437539"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Registriert eine [MAPIUID](mapiuid.md) -Struktur, die den Dienstanbieter eindeutig darstellt. 
+Registriert eine [MAPIUID-Struktur,](mapiuid.md) die den Dienstanbieter eindeutig darstellt. 
   
 ```cpp
 HRESULT SetProviderUID(
@@ -38,27 +38,27 @@ ULONG ulFlags
 
  _lpProviderID_
   
-> in Ein Zeiger auf die **MAPIUID** -Struktur, die das Adressbuch oder den Nachrichtenspeicher Anbieter identifiziert. 
+> [in] Ein Zeiger auf die **MAPIUID-Struktur,** die das Adressbuch oder den Nachrichtenspeicheranbieter identifiziert. 
     
  _ulFlags_
   
-> Reserviert muss NULL sein.
+> Reserviert; muss null sein.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die **MAPIUID** -Struktur wurde erfolgreich registriert. 
+> Die **MAPIUID-Struktur** wurde erfolgreich registriert. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPISupport:: SetProviderUID** -Methode wird für Support Objekte des Adressbuchs und des Nachrichtenspeichers implementiert. Diese Anbieter rufen **SetProviderUID** auf, um einen eindeutigen Bezeichner zu registrieren, der in der **MAPIUID** -Struktur beschrieben ist, auf die von _lpProviderID_verwiesen wird. Anbieter schließen diesen Bezeichner in alle Eintrags-IDs ein, die Sie erstellen. 
+Die **IMAPISupport::SetProviderUID-Methode** wird für Unterstützungsobjekte für Adressbuch- und Nachrichtenspeicheranbieter implementiert. Diese Anbieter rufen **SetProviderUID auf,** um einen eindeutigen Bezeichner zu registrieren, der in der **MAPIUID-Struktur** beschrieben ist, auf die _von lpProviderID verwiesen wird._ Anbieter enthalten diesen Bezeichner in alle von ihnen erstellten Eintragsbezeichner. 
   
-MAPI verwendet die **MAPIUID** -Struktur beim Senden ausgehender Nachrichten an den MAPI-Spooler und zum Bestimmen des geeigneten Anbieters für die Verarbeitung von Clientanforderungen. Wenn ein Client beispielsweise die [IMAPISession:: OpenEntry](imapisession-openentry.md) -Methode aufruft, untersucht MAPI **den MAPIUID** -Teil der Eintrags-ID, ordnet ihn dem Anbieter zu, der ihn an **SetProviderUID**übergeben hat, und ruft den OpenEntry- **Eintrag** des Anbieters auf. . 
+MAPI verwendet die **MAPIUID-Struktur,** wenn ausgehende Nachrichten an den MAPI-Spooler gesendet werden und um den geeigneten Anbieter für die Verarbeitung von Clientanforderungen zu ermitteln. Wenn ein Client beispielsweise die [IMAPISession::OpenEntry-Methode](imapisession-openentry.md) aufruft, untersucht MAPI den **MAPIUID-Teil** des Eintragsbezeichners, ordnet ihn dem Anbieter zu, der ihn an **SetProviderUID** übergeben hat, und ruft **openEntry** dieses Anbieters auf. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Rufen Sie **SetProviderUID** bei der Anmeldung auf, um Ihre **MAPIUID** -Struktur zu registrieren. MAPI ermöglicht es Adressbuch-und Nachrichtenspeicher Anbietern, mehrere Bezeichner zu registrieren. Wenn Sie mehrere Aufrufe an **SetProviderUID**durchführen, wird die **MAPIUID** -Struktur immer dem Satz von **MAPIUID** -Strukturen des Anbieters hinzugefügt, auch wenn die **MAPIUID** ein Duplikat ist. **SetProviderUID** kann keine **MAPIUID**entfernen. 
+Rufen **Sie SetProviderUID bei** der Anmeldung auf, um Ihre **MAPIUID-Struktur zu** registrieren. MAPI ermöglicht Adressbuch- und Nachrichtenspeicheranbietern die Registrierung mehrerer Bezeichner. Wenn Sie mehrere Aufrufe von **SetProviderUID** erstellen, wird dem Satz von **MAPIUID-Strukturen** des Anbieters immer die **MAPIUID-Struktur** hinzugefügt, auch wenn **die MAPIUID** ein Duplikat ist. **SetProviderUID** kann keine **MAPIUID entfernen.** 
   
 ## <a name="see-also"></a>Siehe auch
 

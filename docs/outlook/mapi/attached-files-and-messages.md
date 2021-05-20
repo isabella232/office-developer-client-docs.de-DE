@@ -1,5 +1,5 @@
 ---
-title: AngeFügte Dateien und Nachrichten
+title: Angefügte Dateien und Nachrichten
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,69 +15,69 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33436839"
 ---
-# <a name="attached-files-and-messages"></a>AngeFügte Dateien und Nachrichten
+# <a name="attached-files-and-messages"></a>Angefügte Dateien und Nachrichten
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Wenn MIME mit TNEF während der Codierung des Nachrichteninhalts verwendet wird, befinden sich alle Anlageneigenschaften und Inhalte im TNEF-Stream. Die TNEF selbst ist eine einzelne, binäre angefügte Datei mit dem Namen Winmail. dat, codiert gemäß der Beschreibung für MIME ohne TNEF. 
+Wenn MIME mit TNEF beim Codieren von Nachrichteninhalten verwendet wird, befinden sich alle Anlageneigenschaften und Inhalte im TNEF-Stream. Der TNEF selbst ist eine einzelne binäre angefügte Datei mit dem Namen Winmail.dat, die wie für MIME ohne TNEF beschrieben codiert wird. 
   
-Wenn MIME ohne TNEF verwendet wird, werden angefügte Dateien als MIME-Nachrichteninhalts Teile gesendet. Der Dateiname wird im *Content-Type-* Header der Anlage im *Name* -Parameter angegeben. Der Zeichensatz für die Anlage wird im Parameter *CharSet* in den *Content-Type* ; Sie und die Inhaltsübertragungscodierung werden durch Überprüfen des gesamten Anlageninhalts bestimmt. URL-Anhänge werden speziell behandelt: 
+Wenn MIME ohne TNEF verwendet wird, werden angefügte Dateien als MIME-Nachrichteninhaltsteile gesendet. Der Dateiname wird im  *Name-Parameter*  im  *Inhaltstypheader*  für die Anlage platziert. Der Zeichensatz für die Anlage wird im  *charset-Parameter*  für den  *Inhaltstyp platziert.*  sie und die Inhaltsübertragungscodierung werden durch Das Scannen des gesamten Anlageninhalts bestimmt. URL-Anlagen werden speziell behandelt: 
   
-- Bei der Anlage handelt es sich um eine URL (eine angefügte Datei mit der Erweiterung. URL), und der darin definierte Zugriffsmodus ist anonymer FTP, er wird als externe Nachricht codiert, und der Inhalt der Datei (die URL) wird in den Header der externen Nachricht kopiert. *Inhaltstyp: Message/External-Body; Access-Type = anon-FTP*  (Content-Transfer-Encoding: 7bit wird angenommen.) 
+- Wenn es sich bei der Anlage um eine URL (eine angefügte Datei mit Erweiterung) handelt. URL), und der in ihr definierte Zugriffsmodus ist anonymes FTP, wird als externe Nachricht codiert, und der Inhalt der Datei (die URL) wird in die Kopfzeile der externen Nachricht kopiert. *Inhaltstyp: message/external-body; access-type=anon-ftp*  (Content-Transfer-Encoding: 7bit wird vorausgesetzt).) 
     
-- Wenn nur 7-Bit-Zeichen gefunden werden und keine Zeile mehr als 140 Zeichen lang ist, ist die Anlage ASCII-Text. *Inhaltstyp: Text/Plain; charset = US-ASCII Content-Transfer-Encoding: 7bit* 
+- Wenn nur 7-Bit-Zeichen gefunden werden und keine Zeile mehr als 140 Zeichen lang ist, ist die Anlage ASCII-Text. *Inhaltstyp: text/plain; charset=us-ascii Content-Transfer-Encoding: 7bit* 
     
-- Wenn lange Zeilen oder bis zu 25% 8-Bit-Zeichen gefunden werden, handelt es sich beim Anlageninhalt um Text, und der Zeichensatz wird vom Gebietsschema bestimmt. Sie sollte aus den vom ISO-Standard 8859 definierten Zeichensätzen ausgewählt werden. *Inhaltstyp: text/plain; charset = ISO-8859-1*  (zum Beispiel) 
+- Wenn lange Zeilen oder bis zu 25 % 8-Bit-Zeichen gefunden werden, ist der Anlageninhalt Text, und der Zeichensatz wird vom Locale bestimmt. Sie sollte aus den Zeichensätzen ausgewählt werden, die durch den ISO-Standard 8859 definiert sind. *Inhaltstyp: text/plain; charset=ISO-8859-1*  (z. B.) 
     
      *Content-Transfer-Encoding: quoted-printable* 
     
-- Wenn 25% oder mehr der Zeichen das hohe Bit festgelegt haben, ist die Anlage binär. Es wird mit dem Base64-Algorithmus codiert. *Inhaltstyp: Application/Oktett-Stream*  (standardmäßig, basierend auf der Dateierweiterung) 
+- Wenn für 25 % oder mehr zeichen das High-Bit festgelegt ist, ist die Anlage binär. Sie wird mithilfe des Base64-Algorithmus codiert. *Inhaltstyp: Anwendung/Oktett-Stream*  (standardmäßig; basierend auf der Dateierweiterung) 
     
-     * Content-Transfer-Encoding: Base64 * 
+     * Content-Transfer-Encoding: base64 * 
     
-Bei ausgehenden Nachrichten sollte der Inhaltstyp von der Erweiterung mit drei Buchstaben des Datei namens abgeleitet werden. Diese Zuordnung ist in der Systemregistrierung vorhanden; unter gibt es einen String-Wert mit dem Namen "Inhaltstyp", der den MIME-Inhaltstyp gibt, wenn einer definiert ist. Dieses Beispiel ist für eine TIFF-Bilddatei:
+Bei ausgehenden Nachrichten sollte der Inhaltstyp von der Drei-Buchstaben-Erweiterung des Dateinamens abgeleitet werden. Diese Zuordnung ist in der Systemregistrierung vorhanden. unter befindet sich ein Zeichenfolgenwert namens "Content Type", der den MIME-Inhaltstyp angibt, wenn einer definiert ist. Dieses Beispiel gilt für eine TIFF-Bilddatei:
   
-HKEY_LOCAL_MACHINE \
+HKEY_LOCAL_MACHINE\
   
-Software
+Software\
   
-Microsoft
+Microsoft\
   
-Klassen
+Klassen\
   
-. TIF
+.tif
   
-Inhaltstyp = "Bild/TIFF"
+Inhaltstyp = "image/tiff"
   
-Wenn es keine Zuordnung für die Dateierweiterung gibt, sollte der standardmäßige *Application/Oktett* -Stream verwendet werden. 
+Wenn keine Zuordnung für die Dateierweiterung besteht, sollte der  *Standardanwendungs-/Oktettdatenstrom*  verwendet werden. 
   
-Bei eingehenden Nachrichten sollte der Inhaltstyp für eine Anlage immer in die MAPI-Eigenschaft **PR_ATTACH_MIME_TAG** ([pidtagattachmimetag (](pidtagattachmimetag-canonical-property.md)) kopiert werden. Auch wenn ein Dateiname für eine angefügte Datei definiert ist, sollte die vom Inhaltstyp zugeordnete Erweiterung in den Eigenschaften **PR_ATTACH_FILENAME** ([Pidtagattachfilename (](pidtagattachfilename-canonical-property.md)) und **PR_ATTACH_EXTENSION** ([pidtagattachextension (](pidtagattachextension-canonical-property.md)) verwendet werden. .
+Bei eingehenden Nachrichten sollte der Inhaltstyp für eine Anlage immer in die #A0 **PR_ATTACH_MIME_TAG** ([PidTagAttachMimeTag](pidtagattachmimetag-canonical-property.md)) kopiert werden. Auch wenn ein Dateiname für eine angefügte Datei definiert ist, sollte die durch den Inhaltstyp zugeordnete Erweiterung in den Eigenschaften **PR_ATTACH_FILENAME** ([PidTagAttachFilename](pidtagattachfilename-canonical-property.md)) und **PR_ATTACH_EXTENSION** ([PidTagAttachExtension](pidtagattachextension-canonical-property.md)) verwendet werden.
   
-Der *Name* -Parameter wird offiziell durch RFC 821 veraltet. Bei der Entwicklung von Standards wird Microsoft erwägen, eine alternative Zuordnung für angefügte Dateinamen anzugeben. 
+Der  *Name-Parameter*  ist von RFC 821 offiziell veraltet. Bei der Weiterentwicklung der Standards wird Microsoft erwägen, eine alternative Zuordnung für angefügte Dateinamen anzugeben. 
   
-Ausgehende angefügte Nachrichten werden als * Content-Type: Message/RFC822 *-Nachrichten in angefügten Nachrichten werden rekursiv an der richtigen Stelle verschlüsselt. Inhaltsteile für eingehende Nachrichten mit dem *Inhaltstyp: multipart/Digest* werden auch eingebetteten Nachrichten zugeordnet. 
+Ausgehende angefügte Nachrichten werden als * Inhaltstyp gesendet: message/rfc822 * Nachrichten innerhalb angefügter Nachrichten werden rekursiv an der richtigen Stelle codiert. Eingehende Nachrichteninhaltsteile mit  *Content-Type: Multipart/Digest*  werden auch eingebetteten Nachrichten zugeordnet. 
   
-Wenn UUEncode mit TNEF während der Codierung des Nachrichteninhalts verwendet wird, befinden sich alle Anlageneigenschaften und Inhalte im TNEF-Stream. Die TNEF selbst ist eine einzelne, binäre angefügte Datei mit dem Namen Winmail. dat, codiert, wie für UUEncode ohne TNEF beschrieben.
+Wenn uuencode mit TNEF beim Codieren von Nachrichteninhalten verwendet wird, befinden sich alle Anlageneigenschaften und -inhalte im TNEF-Stream. Der TNEF selbst ist eine einzelne binäre angefügte Datei mit dem Namen Winmail.dat, codiert wie für Uuencode ohne TNEF beschrieben.
   
-Wenn UUEncode ohne TNEF verwendet wird, werden alle angefügten Dateien nach dem Nachrichtentext als Binär und UUEncode behandelt. Der Dateiname ist im UUEncode-Header vorhanden:
+Wenn uuencode ohne TNEF verwendet wird, werden alle angefügten Dateien nach dem Nachrichtentext als binär und uuencoded behandelt. Der Dateiname ist im uuencode-Header vorhanden:
   
- BEGIN 0755 Winmail. dat 
+ begin 0755 Winmail.dat 
   
- ... Data... 
+ ... data ... 
   
  end 
   
-AngeFügte Nachrichten werden in den Nachrichtentext übersetzt. Die Hierarchie der angefügten Nachrichten wird immer abgeflacht; Das heißt, Nachrichten in angefügten Nachrichten werden auf die oberste Ebene gezogen.
+Angefügte Nachrichten werden in den Nachrichtentext textisiert. Die Hierarchie der angefügten Nachrichten wird immer abgeflachte. Das heißt, Nachrichten innerhalb angefügter Nachrichten werden auf die oberste Ebene gezogen.
   
 Eingebettete OLE-Objekte werden verworfen.
   
-Anlagen Wiedergabepositionen werden buchstäblich mithilfe der Eigenschaft **PR_ATTACH_RENDERING** ([PIDTAGATTACHRENDERING (](pidtagattachrendering-canonical-property.md)) im TNEF übertragen. Wenn TNEF nicht verwendet wird, gehen Sie verloren. Eingehende Anlagen ohne Wiedergabeposition (einschließlich, wenn kein TNEF vorhanden ist) haben ihre Renderingposition auf 0xFFFFFFFF, also keine Position im Nachrichtentext festgelegt.
+Anlagenrenderingpositionen werden mithilfe der Eigenschaft **PR_ATTACH_RENDERING** ([PidTagAttachRendering](pidtagattachrendering-canonical-property.md)) im TNEF übertragen. Wenn TNEF nicht verwendet wird, gehen sie verloren. Eingehende Anlagen ohne Renderingposition (einschließlich, wenn kein TNEF besteht) haben ihre Renderingposition auf 0xFFFFFFFF festgelegt, d. h. keine Position im Nachrichtentext.
   
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Zuordnen von Internet-e-Mail-Attributen zu MAPI-Eigenschaften](mapping-of-internet-mail-attributes-to-mapi-properties.md)
+[Zuordnung von Internet-Mail-Attributen zu MAPI-Eigenschaften](mapping-of-internet-mail-attributes-to-mapi-properties.md)
 

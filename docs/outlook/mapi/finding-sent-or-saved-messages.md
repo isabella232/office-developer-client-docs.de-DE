@@ -21,26 +21,26 @@ ms.locfileid: "33437420"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
- **So suchen Sie nach allen ausgehenden Nachrichten, die Sie gespeichert oder gesendet haben**
+ **So suchen Sie alle ausgehenden Nachrichten, die Sie gespeichert oder gesendet haben**
   
-1. Rufen Sie [IMsgStore:: CompareEntryIDs](imsgstore-compareentryids.md) auf, um den Ordner mit den gesendeten Nachrichten mit dem Ordner zu vergleichen, der die eingehenden Nachrichten enthält. 
+1. Rufen [Sie IMsgStore::CompareEntryIDs](imsgstore-compareentryids.md) auf, um den Ordner mit den gesendeten Nachrichten mit dem Ordner zu vergleichen, der ihre eingehenden Nachrichten enthält. 
     
-2. Legen Sie den Parameter _lpEntryID1_ auf **PR_IPM_SENTMAIL_ENTRYID** ([pidtagipmsentmailentryid (](pidtagipmsentmailentryid-canonical-property.md)) und den _LpEntryID2_ -Parameter fest, um auf **PR_PARENT_ENTRYID** ([pidtagparententryid (](pidtagparententryid-canonical-property.md)) zu zeigen.
+2. Legen Sie den  _lpEntryID1-Parameter_ **auf PR_IPM_SENTMAIL_ENTRYID** ([PidTagIpmSentMailEntryId](pidtagipmsentmailentryid-canonical-property.md)) und  _den lpEntryID2-Parameter_ auf **PR_PARENT_ENTRYID** ([PidTagParentEntryId](pidtagparententryid-canonical-property.md))
     
-Beachten Sie, dass diese Strategie nicht funktioniert, wenn Sie Nachrichten entweder löschen, nachdem Sie gesendet wurden oder eine der gesendeten Nachrichten in einen anderen Ordner verschoben haben. 
+Beachten Sie, dass diese Strategie nicht funktioniert, wenn Sie Nachrichten löschen, nachdem sie gesendet wurden oder eine der gesendeten Nachrichten in einen anderen Ordner verschoben haben. 
   
-Wenn Sie bei der Untersuchung einer eingehenden Nachricht feststellen, dass die Eigenschaften, die normalerweise von einem Transportanbieter festgelegt werden, nicht vorhanden sind, können Sie davon ausgehen, dass die Nachricht nie von einem Transportanbieter behandelt wurde. Zu diesen Eigenschaften zählen:
+Wenn Sie bei der Untersuchung einer eingehenden Nachricht feststellen, dass die Eigenschaften fehlen, die normalerweise von einem Transportanbieter festgelegt werden, können Sie davon ausgehen, dass die Nachricht nie von einem Transportanbieter verarbeitet wurde. Zu diesen Eigenschaften zählen:
   
-- **PR_RECEIVED_BY** -Eigenschaften 
+- **PR_RECEIVED_BY** Eigenschaften 
     
-- **PR_MESSAGE_DOWNLOAD_TIME** ([Pidtagmessagedownloadtime (](pidtagmessagedownloadtime-canonical-property.md))
+- **PR_MESSAGE_DOWNLOAD_TIME** ([PidTagMessageDownloadTime](pidtagmessagedownloadtime-canonical-property.md))
     
-- **PR_TRANSPORT_MESSAGE_HEADERS** ([Pidtagtransportmessageheaders (](pidtagtransportmessageheaders-canonical-property.md))
+- **PR_TRANSPORT_MESSAGE_HEADERS** ([PidTagTransportMessageHeaders](pidtagtransportmessageheaders-canonical-property.md))
     
-- **PR_MESSAGE_TO_ME** ([Pidtagmessagetome (](pidtagmessagetome-canonical-property.md))
+- **PR_MESSAGE_TO_ME** ([PidTagMessageToMe](pidtagmessagetome-canonical-property.md))
     
 - **PR_MESSAGE_CC_ME** ([PidTagMessageCcMe](pidtagmessageccme-canonical-property.md))
     
-- **PR_MESSAGE_RECIP_ME** ([Pidtagmessagerecipientme (](pidtagmessagerecipientme-canonical-property.md))
+- **PR_MESSAGE_RECIP_ME** ([PidTagMessageRecipientMe](pidtagmessagerecipientme-canonical-property.md))
     
 

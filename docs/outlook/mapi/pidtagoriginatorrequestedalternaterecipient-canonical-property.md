@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagoriginatorrequestedalternaterecipient (-Eigenschaft
+title: PidTagOriginatorRequestedAlternateRecipient (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,13 +19,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33437861"
 ---
-# <a name="pidtagoriginatorrequestedalternaterecipient-canonical-property"></a>Kanonische Pidtagoriginatorrequestedalternaterecipient (-Eigenschaft
+# <a name="pidtagoriginatorrequestedalternaterecipient-canonical-property"></a>PidTagOriginatorRequestedAlternateRecipient (kanonische Eigenschaft)
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine Eintrags-ID für einen vom Absender angegebenen alternativen Empfänger.
+Enthält eine Eintrags-ID für einen alternativen Empfänger, der vom Absender angegeben wird.
   
 |||
 |:-----|:-----|
@@ -34,21 +34,21 @@ Enthält eine Eintrags-ID für einen vom Absender angegebenen alternativen Empf�
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MIME  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Diese Eigenschaft wird in Nachrichten mit Auto Weiterleitung verwendet. Wenn die Auto Weiterleitung nicht zulässig ist oder kein alternativer Empfänger festgelegt wurde, sollte ein Unzustellbarkeitsbericht generiert werden.
+Diese Eigenschaft wird in automatischenForwarded-Nachrichten verwendet. Wenn die automatischeForwarding nicht zulässig ist oder kein alternativer Empfänger festgelegt wurde, sollte ein Nichtabnehmerbericht generiert werden.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
-### <a name="header-files"></a>Header Dateien
+### <a name="header-files"></a>Headerdateien
 
-Mapidefs. h
+Mapidefs.h
   
-> Stellt Datentypdefinitionen bereit.
+> Bietet Datentypdefinitionen.
     
-Mapitags. h
+Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapitags. h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

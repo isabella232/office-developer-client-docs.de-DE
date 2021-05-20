@@ -25,26 +25,26 @@ Bestimmt, ob der Seitenname auf der Benutzeroberfläche angezeigt wird.
 |0  <br/> |Der Seitenname wird in der Benutzeroberfläche angezeigt (Standardwert).  <br/> |**visUIVNormal** <br/> |
 |1  <br/> |Der Seitenname wird nicht in der Benutzeroberfläche angezeigt.  <br/> |**visUIVHidden** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Das Festlegen der "UIVisibility-Zelle auf **visUIVHidden** verhindert, dass die Seite an einer beliebigen Stelle in der Benutzeroberfläche angezeigt wird, auf der die Zeichenfolge mit dem Seitennamen angezeigt wird. Die Seite wäre beispielsweise nicht als Option im **Zeichnungs-Explorer** oder auf den Seitenregisterkarten aufgeführt. Auf die Seite kann jedoch zugegriffen werden, wenn Sie Automatisierungs-oder UI-Pfade verwenden, die nicht den Seitennamen, beispielsweise den **Druck** Befehl, aufweisen. 
+Durch Festlegen der Zelle UIVisibility auf **visUIVHidden** wird verhindert, dass die Seite an einer beliebigen Stelle auf der Benutzeroberfläche angezeigt wird, an der die Zeichenfolge mit dem Seitennamen angezeigt wird. Beispielsweise würde die Seite nicht als Option  im Zeichnungs-Explorer oder auf den Registerkarten der Seite aufgeführt. Auf die Seite kann jedoch weiterhin zugegriffen werden, wenn Sie Automatisierungs- oder Benutzeroberflächenpfade verwenden, die nicht den Seitennamen enthalten, z. B. den **Befehl Drucken.** 
   
- Diese Zelle ist für die Verwendung mit Dokumentseiten vorgesehen. Es ist nicht für die Verwendung mit Markup Überlagerungs Seiten vorgesehen, bei denen die "UIVisibility-Zelle standardmäßig auf **visUIVHidden** festgelegt ist und nicht geändert werden sollte. 
+ Diese Zelle ist für die Verwendung mit Dokumentseiten vorgesehen. Sie ist nicht für die Verwendung mit Markupüberlagerungsseiten vorgesehen, für die die Zelle UIVisibility standardmäßig **auf visUIVHidden** festgelegt ist und nicht geändert werden sollte. 
   
 > [!NOTE]
-> Wenn Sie eine Seite aus dem **Druck** Befehl des Dokuments ausblenden möchten, legen Sie Sie als Hintergrundseite fest (**Type** -Eigenschaft ist **visTypeBackground** ), die von keiner Seite als Hintergrund verwendet wird (Shapes auf Hintergrundseiten werden gedruckt, wenn eine Seite, die es als Hintergrund verwendet, gedruckt). Der **Druck** Befehl des Dokuments funktioniert nur mit indizierten Seiten, und Hintergrundseiten werden nicht indiziert. 
+> Um eine Seite aus dem  Befehl Drucken des Dokuments auszublenden, machen Sie sie zu einer Hintergrundseite (**Type-Eigenschaft** ist **visTypeBackground** ), die von keinem Blatt als Hintergrund verwendet wird (Shapes auf Hintergrundseiten werden gedruckt, wenn eine Seite gedruckt wird, die sie als Hintergrund verwendet). Der Befehl **Drucken** des Dokuments funktioniert nur mit indizierten Seiten, und Hintergrundseiten werden nicht indiziert. 
   
-Wenn Sie einen Verweis auf die Zelle "UIVisibility aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle UIVisibility anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |"UIVisibility  <br/> |
+|Zellenname:  <br/> |UIVisibility  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle "UIVisibility aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle UIVisibility nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowPage** <br/> |
 |Zellenindex:  <br/> |**visPageUIVisibility** <br/> |
    

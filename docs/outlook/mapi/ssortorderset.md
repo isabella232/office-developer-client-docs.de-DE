@@ -25,12 +25,12 @@ ms.locfileid: "33438099"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Definiert eine Auflistung von Sortierschlüsseln für eine Tabelle, die für die standardmäßige oder kategorisierte Sortierung verwendet wird.
+Definiert eine Auflistung von Sortierschlüsseln für eine Tabelle, die für die standard- oder kategorisierte Sortierung verwendet wird.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Verwandte Makros:  <br/> |[CbNewSSortOrderSet](cbnewssortorderset.md), [CbSSortOrderSet](cbssortorderset.md), [SizedSSortOrderSet](sizedssortorderset.md) <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Makros:  <br/> |[CbNewsSortOrderSet](cbnewssortorderset.md), [CbSSortOrderSet](cbssortorderset.md), [SizedSSortOrderSet](sizedssortorderset.md) <br/> |
    
 ```cpp
 typedef struct _SSortOrderSet
@@ -43,35 +43,35 @@ typedef struct _SSortOrderSet
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cSorts**
   
-> Die Anzahl der [SSortOrder](ssortorder.md) -Strukturen, die im **einersortierreihenfolge** -Element enthalten sind. 
+> Anzahl der [SSortOrder-Strukturen,](ssortorder.md) die im **aSort-Element enthalten** sind. 
     
  **cCategories**
   
-> Anzahl der Spalten, die als Category-Spalten festgelegt sind. Mögliche Werte reichen von NULL, die eine nicht kategorisierte oder Standardsortierung angibt, bis zu der vom **cSorts** -Element angegebenen Nummer. 
+> Anzahl der Spalten, die als Kategoriespalten festgelegt sind. Mögliche Werte reichen von Null, was eine nicht kategorisierte oder standardsortierte Sortierung angibt, bis zur vom **cSorts-Element angegebenen** Nummer. 
     
  **cExpanded**
   
-> Die Anzahl der Kategorien, die in einem erweiterten Zustand beginnen, wobei alle Zeilen, die auf die Kategorie angewendet werden, in der Tabellenansicht sichtbar sind. Mögliche Werte liegen zwischen 0 und der von **cCategories**angegebenen Zahl.
+> Anzahl der Kategorien, die in einem erweiterten Zustand beginnen, wobei alle Zeilen, die für die Kategorie gelten, in der Tabellenansicht angezeigt werden. Mögliche Werte liegen zwischen 0 und der durch **cCategories angegebenen Zahl.**
     
- **Einersortierreihenfolge**
+ **aSort**
   
-> Array von **SSortOrder** -Strukturen, die jeweils eine Sortierreihenfolge definieren. 
+> Array von **SSortOrder-Strukturen,** die jeweils eine Sortierreihenfolge definieren. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Eine **SSortOrderSet** -Struktur wird zum Definieren mehrerer Sortierreihenfolgen für die standardmäßige und kategorisierte Sortierung verwendet. 
+Eine **SSortOrderSet-Struktur** wird zum Definieren mehrerer Sortierreihenfolgen für die standard- und kategorisierte Sortierung verwendet. 
   
-Jede **SSortOrderSet** -Struktur enthält mindestens eine **SSortOrder** -Struktur, die die Richtung der Sortierung und die Spalte definiert, die als Sortierschlüssel verwendet wird. Für die kategorisierte Sortierung wird diese Spalte als Kategorie verwendet. Wenn der Wert des **cSorts** -Elements den Wert des **cCategories** -Elements überschreitet, gibt es mehr Sortierschlüssel als Kategorien, und Kategorien werden aus den Spalten erstellt, die zuerst im **SSortOrder** -Array angezeigt werden. 
+Jede **SSortOrderSet-Struktur** enthält mindestens eine **SSortOrder-Struktur,** die die Sortierrichtung und die Spalte definiert, die als Sortierschlüssel verwendet wird. Für die kategorisierte Sortierung wird diese Spalte als Kategorie verwendet. Wenn der Wert des **cSorts-Members** den Wert des **cCategories-Members** überschreitet, gibt es mehr Sortierschlüssel als Kategorien, und Kategorien werden aus den Spalten erstellt, die zuerst im **SSortOrder-Array** angezeigt werden. 
   
-Wenn **cSorts** beispielsweise auf 3 festgelegt ist und **cCategories** auf 2 festgelegt ist, werden die Spalten, die durch das **ulPropTag** -Element der ersten beiden Einträge im **SSortOrder** -Array beschrieben werden, als Category-Spalten verwendet. Der erste Eintrag dient als Gruppierung der obersten Ebene; der zweite Eintrag als sekundäre Gruppierung. Alle Zeilen, die mit den beiden rubrikengruppen übereinstimmen, werden mit dem im dritten Eintrag definierten Sortierschlüssel sortiert. 
+Wenn **cSorts** beispielsweise auf 3 und **cCategories** auf 2 festgelegt ist, werden die Spalten, die vom **ulPropTag-Element** der ersten beiden Einträge im **SSortOrder-Array** beschrieben werden, als Kategoriespalten verwendet. Der erste Eintrag dient als Kategoriegruppe auf oberster Ebene. der zweite Eintrag als sekundäre Gruppierung. Alle Zeilen, die mit den beiden Kategoriespalten übereinstimmen, werden mithilfe des im dritten Eintrag definierten Sortierschlüssels sortiert. 
   
-Das **cExpanded** -Element gibt die Anzahl der Kategorien an, die zuerst erweitert werden. Wenn es mehrere Kategorien gibt, beginnt die Tabellen Implementierung mit der ersten Spalte, die als Kategorie festgelegt werden soll, und wird in sequenzieller Reihenfolge mit den nachfolgenden Category-Spalten fortgesetzt, bis die Anzahl der **cCategories** überschritten wurde. Wenn mehr Kategorien Spalten vorhanden sind als erweiterte Spalten, werden die Spalten für die Kategorie reduziert. Wenn **cExpanded** gleich NULL ist, steht der Tabellen Benutzer nur Überschriftenzeilen der obersten Ebene zur Anzeige zur Verfügung. Ist **cExpanded** gleich 1 kleiner als die Anzahl der Kategorien, sind alle Überschriftenzeilen und keine der Blattzeilen verfügbar. Wenn **cExpanded** der Anzahl von Kategorien entspricht, wird die Tabelle vollständig erweitert. 
+Das **cExpanded-Element** gibt die Anzahl der Kategorien an, die zunächst erweitert werden. Wenn mehrere Kategorien enthalten sind, beginnt die Tabellenimplementierung mit der ersten Spalte, die als Kategorie festgelegt werden soll, und wird in sequenzieller Reihenfolge mit den nachfolgenden Kategoriespalten fortgesetzt, bis die Anzahl der **CCategories** überschritten wurde. Wenn mehr Kategoriespalten als erweiterte Spalten enthalten sind, werden die Kategoriespalten reduziert. Wenn **cExpanded** gleich Null ist, steht dem Tabellenbenutzer nur die Überschriftenzeile auf oberster Ebene zur Anzeige zur Verfügung. Wenn **cExpanded** gleich 1 kleiner als die Anzahl der Kategorien ist, sind alle Überschriftenzeilen und keine der Blattzeilen verfügbar. Wenn **cExpanded** gleich der Anzahl der Kategorien ist, wird die Tabelle vollständig erweitert. 
   
-Weitere Informationen zu standardmäßigen und kategorisierten Sortierungen finden Sie unter [Sortieren und kategorisieren](sorting-and-categorization.md).
+Weitere Informationen zur standard- und kategorisierten Sortierung finden Sie unter [Sorting and Categorization](sorting-and-categorization.md).
   
 ## <a name="see-also"></a>Siehe auch
 

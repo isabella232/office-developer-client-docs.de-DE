@@ -41,27 +41,27 @@ HRESULTCopyProfile(
 
  _lpszOldProfileName_
   
-> in Ein Zeiger auf den Namen des zu kopierende Profils.
+> [in] Ein Zeiger auf den Namen des zu kopierende Profils.
     
  _lpszOldPassword_
   
-> in Ein Zeiger auf das Kennwort des zu kopierende Profils.
+> [in] Ein Zeiger auf das Kennwort des zu kopierende Profils.
     
  _lpszNewProfileName_
   
-> in Ein Zeiger auf den neuen Namen des kopierten Profils.
+> [in] Ein Zeiger auf den neuen Namen des kopierten Profils.
     
  _ulUIParam_
   
-> in Ein Handle für das übergeordnete Fenster aller von dieser Methode angezeigten Dialogfelder oder Fenster.
+> [in] Ein Handle zum übergeordneten Fenster aller Dialogfelder oder Fenster, die von dieser Methode angezeigt werden.
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die das Kopieren des Profils steuert. Die folgenden Flags können festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie das Profil kopiert wird. Die folgenden Kennzeichen können festgelegt werden:
     
 MAPI_DIALOG 
   
-> Zeigt ein Dialogfeld an, in dem der Benutzer das richtige Kennwort des zu kopierenden Profils auffordert. Wenn dieses Flag nicht festgelegt ist, wird kein Dialogfeld angezeigt.
+> Zeigt ein Dialogfeld an, in dem der Benutzer zum richtigen Kennwort des zu kopierenden Profils aufgefordert wird. Wenn dieses Kennzeichen nicht festgelegt ist, wird kein Dialogfeld angezeigt.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -71,11 +71,11 @@ S_OK
     
 MAPI_E_ACCESS_DENIED 
   
-> Der neue Profilname ist derselbe wie der eines vorhandenen Profils.
+> Der neue Profilname ist identisch mit dem eines vorhandenen Profils.
     
 MAPI_E_LOGON_FAILED 
   
-> Das Kennwort für das zu kopierende Profil ist falsch, und dem Benutzer kann kein Dialogfeld angezeigt werden, das das richtige Kennwort anfordert, da MAPI_DIALOG nicht im _ulFlags_ -Parameter festgelegt wurde. 
+> Das Kennwort für das zu kopierende Profil ist falsch, und dem Benutzer konnte kein Dialogfeld angezeigt werden, um das richtige Kennwort anzugeben, da MAPI_DIALOG nicht im  _ulFlags-Parameter festgelegt_ wurde. 
     
 MAPI_E_NOT_FOUND 
   
@@ -83,21 +83,21 @@ MAPI_E_NOT_FOUND
     
 MAPI_E_USER_CANCEL 
   
-> Der Benutzer hat den Vorgang abgebrochen, indem er in einem Dialogfeld auf die Schaltfläche **Abbrechen** geklickt hat. 
+> Der Benutzer hat den Vorgang abgebrochen, in der Regel durch Klicken auf die **Schaltfläche** Abbrechen in einem Dialogfeld. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IProfAdmin:: CopyProfile** -Methode erstellt eine Kopie des Profils, auf die von _lpszOldProfileName_verwiesen wird, und gibt ihr den Namen, auf den _lpszNewProfileName_verweist. Beim Kopieren eines Profils wird die Kopie mit dem gleichen Kennwort wie das Original kopiert.
+Die **IProfAdmin::CopyProfile-Methode** erstellt eine Kopie des Profils, auf das _von lpszOldProfileName_ verwiesen wird, und gibt ihm den Namen, auf den _lpszNewProfileName verweist._ Beim Kopieren eines Profils bleibt die Kopie mit demselben Kennwort wie das Original erhalten.
   
 Der Name des ursprünglichen Profils, sein Kennwort und die Kopie können bis zu 64 Zeichen lang sein und die folgenden Zeichen enthalten:
   
-- Alle alphanumerischen Zeichen, einschließlich Akzentzeichen und der Unterstrich.
+- Alle alphanumerischen Zeichen, einschließlich Akzentzeichen und Unterstrichzeichen.
     
-- Eingebettete Leerzeichen, aber keine führenden oder nachstehenden Leerzeichen.
+- Eingebettete Leerzeichen, jedoch keine führenden oder nachgestellten Leerzeichen.
     
-Profil Kennwörter werden auf allen Betriebssystemen nicht unterstützt. Auf Betriebssystemen, die Profil Kennwörter nicht unterstützen, kann _LPSZOLDPASSWORD_ NULL oder ein Zeiger auf eine leere Zeichenfolge sein. 
+Profilkennwörter werden nicht auf allen Betriebssystemen unterstützt. Auf Betriebssystemen, die keine Profilkennwörter unterstützen,  _kann lpszOldPassword_ NULL oder ein Zeiger auf eine Zeichenfolge mit null Länge sein. 
   
-Wenn _lpszOldPassword_ auf NULL festgelegt ist, erfordert das zu kopierende Profil ein Kennwort, und das MAPI_DIALOG-Flag wird festgelegt; ein Dialogfeld, in dem der Benutzer aufgefordert wird, das Kennwort anzugeben, wird angezeigt. Wenn ein Kennwort erforderlich ist, aber _lpszOldPassword_ auf NULL festgelegt ist und das MAPI_DIALOG-Flag nicht festgelegt ist, gibt **CopyProfile** MAPI_E_LOGON_FAILED zurück. 
+Wenn  _lpszOldPassword_ auf NULL festgelegt ist, erfordert das zu kopierende Profil ein Kennwort, und das MAPI_DIALOG ist festgelegt. Ein Dialogfeld, in dem der Benutzer zur Eingabe des Kennworts aufgefordert wird, wird angezeigt. Wenn ein Kennwort erforderlich ist,  _lpszOldPassword_ jedoch auf NULL festgelegt ist und das MAPI_DIALOG nicht festgelegt ist, gibt **CopyProfile** MAPI_E_LOGON_FAILED. 
   
 ## <a name="see-also"></a>Siehe auch
 

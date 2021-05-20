@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251447
 localization_priority: Normal
 ms.assetid: d51120f7-df80-f0bb-8af9-751d3c59f045
-description: Rundet eine Zahl auf die nächste Ganzzahl ab.
+description: Rundet eine Zahl auf die nächste ganze Zahl ab.
 ms.openlocfilehash: 6acc150e5291093bc7436c1d8e915b28e4840ca3
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33436950"
 ---
 # <a name="int-function"></a>INT Function
 
-Rundet eine Zahl auf die nächste Ganzzahl ab.
+Rundet eine Zahl auf die nächste ganze Zahl ab.
   
 ## <a name="syntax"></a>Syntax
 
-INT (* * *Number* * *) 
+INT(** *number* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -32,13 +32,13 @@ INT (* * *Number* * *)
    
 ## <a name="example-1"></a>Beispiel 1
 
-INT (7.2)
+INT(7.2)
   
 Gibt 7 zurück.
   
 ## <a name="example-2"></a>Beispiel 2
 
-INT (-7,2)
+INT(-7.2)
   
 Gibt -8 zurück.
   

@@ -23,12 +23,12 @@ ms.locfileid: "33437644"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt eine benannte Struktur, die eine [DTBLEDIT](dtbledit.md) -Struktur zur Beschreibung eines Bearbeitungssteuerelements und die maximale Anzahl von Zeichen enthält, die im Steuerelement eingegeben werden können. 
+Erstellt eine benannte Struktur, die eine [DTBLEDIT-Struktur](dtbledit.md) zum Beschreiben eines Bearbeitungssteuerelements und die maximale Anzahl von Zeichen enthält, die in das Steuerelement eingegeben werden können. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |**DTBLEDIT** <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |**DTBLEDIT** <br/> |
    
 ```cpp
 SizedDtblEdit (n, u)
@@ -44,9 +44,9 @@ _u_
   
 > Name für die neue Struktur.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Mit dem **SizedDtblEdit** -Makro können Sie ein Bearbeitungssteuerelement definieren, wenn die Anzahl der aktivierten Zeichen bekannt ist. Die neue Struktur wird mit den folgenden Elementen erstellt: 
+Mit **dem Makro SizedDtblEdit** können Sie ein Bearbeitungssteuerelement definieren, wenn die Anzahl der aktivierten Zeichen bekannt ist. Die neue Struktur wird mit den folgenden Mitgliedern erstellt: 
   
 ```cpp
 DTBLEDIT dtbledit;
@@ -54,7 +54,7 @@ TCHAR lpszCharsAllowed[n];
 
 ```
 
-Wenn Sie einen Zeiger auf die resultierende Struktur aus dem **SizedDtblEdit** -Makro als **DTBLEDIT** -Struktur Zeiger verwenden möchten, führen Sie die folgenden Schritte aus: 
+Führen Sie die folgende Gliederung aus, um einen Zeiger auf die resultierende Struktur des **SizeDtblEdit-Makros** als **DTBLEDIT-Strukturzeiger** zu verwenden: 
   
 ```cpp
 lpDtblEdit = (LPDTBLEDIT) &SizedDtblEdit;

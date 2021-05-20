@@ -44,17 +44,17 @@ BOOL FBadRglpszW(
 
  _lppszW_
   
-> in Zeiger auf ein Array von null-terminierten Unicode-Zeichenfolgen. 
+> [in] Zeiger auf ein Array mit mit Nullen beendeten Unicode-Zeichenfolgen. 
     
  _cStrings_
   
-> in Anzahl der Zeichenfolgen im Array, auf die durch den _lppszW_ -Parameter verwiesen wird. 
+> [in] Anzahl der Zeichenfolgen im Array, auf die der  _lppszW-Parameter_ verweist. 
     
 ## <a name="return-value"></a>Rückgabewert
 
 TRUE 
   
-> Mindestens eine der Zeichenfolgen im angegebenen Array ist ungültig. 
+> Eine oder mehrere Zeichenfolgen im angegebenen Array sind ungültig. 
     
 FALSE 
   

@@ -25,11 +25,11 @@ ms.locfileid: "33439086"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt eine Größenbeschränkung, die zum Testen der Größe eines Eigenschaftswerts verwendet wird. 
+Beschreibt eine Größeneinschränkung, die zum Testen der Größe eines Eigenschaftswerts verwendet wird. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SSizeRestriction
@@ -41,51 +41,51 @@ typedef struct _SSizeRestriction
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
- **RelOp**
+ **relop**
   
-> Relationaler Operator, der im Größenvergleich verwendet wird. Folgende Werte sind möglich: 
+> Relationaler Operator, der im Größenvergleich verwendet wird. Mögliche Werte sind: 
     
 RELOP_GE 
   
-> Der Vergleich erfolgt basierend auf einem größer oder gleich dem ersten Wert.
+> Der Vergleich basiert auf einem höheren oder gleichen ersten Wert.
     
 RELOP_GT 
   
-> Der Vergleich erfolgt basierend auf einem höheren ersten Wert.
+> Der Vergleich basiert auf einem größeren ersten Wert.
     
 RELOP_LE 
   
-> Der Vergleich erfolgt basierend auf einem niedrigeren oder gleichen ersten Wert.
+> Der Vergleich basiert auf einem kleineren oder gleichen ersten Wert.
     
 RELOP_LT 
   
-> Der Vergleich erfolgt basierend auf einem niedrigeren ersten Wert.
+> Der Vergleich basiert auf einem niedrigeren ersten Wert.
     
 RELOP_NE 
   
-> Der Vergleich erfolgt basierend auf ungleich Werten.
+> Der Vergleich basiert auf ungleichen Werten.
     
 RELOP_RE 
   
-> Der Vergleich basiert auf LIKE (Regular Expression)-Werten.
+> Der Vergleich erfolgt basierend auf LIKE -Werten (regulärer Ausdruck).
     
 RELOP_EQ 
   
-> Der Vergleich erfolgt basierend auf gleichen Werten.
+> Der Vergleich basiert auf gleichen Werten.
     
  **ulPropTag**
   
-> Property-Tag, das die zu testende Eigenschaft identifiziert.
+> Eigenschaftstag, das die zu testende Eigenschaft identifiziert.
     
  **cb**
   
-> Die Anzahl der Bytes im Eigenschaftswert.
+> Anzahl der Bytes im Eigenschaftswert.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Eine allgemeine Erläuterung der Funktionsweise von Einschränkungen finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md). 
+Eine allgemeine Diskussion über die Funktionsweise von Einschränkungen finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md). 
   
 ## <a name="see-also"></a>Siehe auch
 

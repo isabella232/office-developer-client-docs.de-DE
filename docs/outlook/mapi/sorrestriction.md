@@ -25,11 +25,11 @@ ms.locfileid: "33437931"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt eine **oder** -Einschränkung, die zum Anwenden einer logischen **or** -Operation auf eine Einschränkung verwendet wird. 
+Beschreibt eine **OR-Einschränkung,** die zum Anwenden eines logischen **OR-Vorgangs** auf eine Einschränkung verwendet wird. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SOrRestriction
@@ -40,19 +40,19 @@ typedef struct _SOrRestriction
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cRes**
   
-> Anzahl der Strukturen im Array, auf die durch das **lpRes** -Element verwiesen wird. 
+> Anzahl der Strukturen im Array, auf die das **lpRes-Element** verweist. 
     
  **lpRes**
   
-> Zeiger auf die [SRestriction](srestriction.md) -Struktur, die die zu verbindende Einschränkung mit der logischen **or** -Operation beschreibt. 
+> Zeiger auf die [SRestriction-Struktur,](srestriction.md) die die Einschränkung beschreibt, die mithilfe des logischen OR-Vorgangs **verbunden werden** soll. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Weitere Informationen zur **SOrRestriction** -Struktur finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md). 
+Weitere Informationen zur **SOrRestriction-Struktur** finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md). 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: f90dc76b-7f0b-dead-38c0-97062a7b76a6
-description: Ordnet einer Form eine Data-Recordset-Zeile zu.
+description: Karten einer Daten-Recordset-Zeile zu einer Form.
 ms.openlocfilehash: 178ceb06d64bfc9ef50f75dd22f8bd94f09f5c33
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
@@ -14,9 +14,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34540770"
 ---
-# <a name="rowmap-element-datarecordsettype-complextype-visio-xml"></a>RowMap-Element (DataRecordSet_Type complexType) (Visio XML)
+# <a name="rowmap-element-datarecordset_type-complextype-visio-xml"></a>RowMap-Element (DataRecordSet_Type complexType) (Visio XML)
 
-Ordnet einer Form eine Data-Recordset-Zeile zu.
+Karten einer Daten-Recordset-Zeile zu einer Form.
   
 ## <a name="element-information"></a>Informationen zum Element
 
@@ -24,8 +24,8 @@ Ordnet einer Form eine Data-Recordset-Zeile zu.
 |:-----|:-----|
 |**Elementtyp** <br/> |[RowMap_Type](rowmap_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
-|**Dokumentteile** <br/> |Recordsets. XML  <br/> |
+|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
+|**Dokumentteile** <br/> |recordsets.xml  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,7 +36,7 @@ Ordnet einer Form eine Data-Recordset-Zeile zu.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -54,8 +54,8 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|PageID  <br/> |XSD: unsignedInt  <br/> |erforderlich  <br/> |Seiten-ID des Shapes, das mit Daten in der von **ROWID**identifizierten Datensatzzeile verknüpft ist.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
-|ROWID  <br/> |XSD: unsignedInt  <br/> |erforderlich  <br/> |Zeilen-ID der Zeile, eindeutig innerhalb des Datenrecordset.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
-|ShapeID  <br/> |XSD: unsignedInt  <br/> |erforderlich  <br/> |Shape-ID des Shapes, das mit Daten in der von **ROWID**identifizierten Datensatzzeile verknüpft ist.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
+|PageID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> |Seiten-ID des Shapes, das mit Daten in der Daten-Recordset-Zeile verknüpft ist, die von **RowID identifiziert wird.**  <br/> |Werte des xsd:unsignedInt-Typs.  <br/> |
+|RowID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> |Zeilen-ID der Zeile, die innerhalb des Datendatensatz eindeutig ist.  <br/> |Werte des xsd:unsignedInt-Typs.  <br/> |
+|ShapeID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> |Shape-ID der Form, die mit Daten in der Daten-Recordset-Zeile verknüpft ist, die von **RowID identifiziert wird.**  <br/> |Werte des xsd:unsignedInt-Typs.  <br/> |
    
 

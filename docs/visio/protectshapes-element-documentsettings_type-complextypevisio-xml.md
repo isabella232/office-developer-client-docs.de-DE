@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: e3835fc6-0ae6-b8c3-b1d0-bf893d4a9470
-description: Gibt an, ob verhindert werden soll, dass der Benutzer Shapes auswählt, deren "LockSelect-Element auf 1 festgelegt ist.
+description: Gibt an, ob der Benutzer an der Auswahl von Shapes gehindert wird, deren LockSelect-Element auf 1 festgelegt ist.
 ms.openlocfilehash: f022c5a0be37f18c0cf0c10dbf18e6a90065e911
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
@@ -14,9 +14,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34540665"
 ---
-# <a name="protectshapes-element-documentsettingstype-complextype-visio-xml"></a>ProtectShapes-Element (DocumentSettings_Type complexType) (Visio XML)
+# <a name="protectshapes-element-documentsettings_type-complextype-visio-xml"></a>ProtectShapes-Element (DocumentSettings_Type complexType) (Visio XML)
 
-Gibt an, ob verhindert werden soll, dass der Benutzer Shapes auswählt, deren **"LockSelect** -Element auf 1 festgelegt ist. 
+Gibt an, ob der Benutzer an der Auswahl von Shapes gehindert wird, deren **LockSelect-Element** auf 1 festgelegt ist. 
   
 ## <a name="element-information"></a>Informationen zum Element
 
@@ -24,8 +24,8 @@ Gibt an, ob verhindert werden soll, dass der Benutzer Shapes auswählt, deren **
 |:-----|:-----|
 |**Elementtyp** <br/> |[ProtectShapes_Type](protectshapes_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
-|**Dokumentteile** <br/> |Document. XML  <br/> |
+|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
+|**Dokumentteile** <br/> |document.xml  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,7 +36,7 @@ Gibt an, ob verhindert werden soll, dass der Benutzer Shapes auswählt, deren **
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

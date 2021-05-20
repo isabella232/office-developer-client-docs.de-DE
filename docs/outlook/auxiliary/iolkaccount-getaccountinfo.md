@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 97f08cde-d6e4-8935-1758-4018a3baf682
-description: Ruft den Typ und die Kategorien Informationen für das angegebene Konto ab.
+description: Ruft die Typ- und Kategorieninformationen für das angegebene Konto ab.
 ms.openlocfilehash: 88021537cc7ff4c55759081e6f3619c2a9f10ea3
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.locfileid: "33437903"
 ---
 # <a name="iolkaccountgetaccountinfo"></a>IOlkAccount::GetAccountInfo
 
-Ruft den Typ und die Kategorien Informationen für das angegebene Konto ab.
+Ruft die Typ- und Kategorieninformationen für das angegebene Konto ab.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -35,7 +35,7 @@ HRESULT IOlkAccount::GetAccountInfo(
 
 _pclsidType_
   
-> Out Der Klassenbezeichner für den Kontotyp. Der Wert muss eine der folgenden sein:
+> [out] Die Klassen-ID für den Kontotyp. Der Wert muss eine der folgenden sein:
     
    - CLSID_OlkPOP3Account 
     
@@ -49,11 +49,11 @@ _pclsidType_
     
 _pcCategories_
   
-> Out Die Anzahl der Kategorien in _prgclsidCategory_.
+> [out] Die Anzahl der Kategorien in  _prgclsidCategory_.
     
 _prgclsidCategory_
   
-> Out Ein Array von Kategorien, denen dieses Konto zugeordnet ist. Das Array hat die Größe * _pcCategories_. Der Wert jeder Kategorie im Array muss einer der folgenden Werte sein:
+> [out] Ein Array von Kategorien, dem dieses Konto zugeordnet ist. Das Array hat die Größe * _pcCategories_. Der Wert jeder Kategorie im Array muss einer der folgenden Sein:
     
    - CLSID_OlkMail
     
@@ -65,11 +65,11 @@ _prgclsidCategory_
 
 S_OK zurück, wenn der Aufruf erfolgreich war; andernfalls einen Fehlercode.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Nachdem diese Methode zurückgegeben wurde, müssen Sie *prgclsidCategory* mit [IOlkAccount:: freier Arbeitsspeicher](iolkaccount-freememory.md)freigeben.
+Nachdem diese Methode zurückgegeben wurde, müssen Sie *prgclsidCategory* mithilfe von [IOlkAccount::FreeMemory frei machen.](iolkaccount-freememory.md)
   
-**IOlkAccount:: GetAccountInfo** unterstützt die Adressbuch Kategorie für ein Exchange-Konto nicht. Wenn es sich bei dem Konto um ein Exchange-Konto handelt (*pclsidType* ist **CLSID_OlkMAPIAccount** ), und wenn das Konto das Adressbuch implementiert, ruft **IOlkAccount:: GetAccountInfo** nicht **CLSID_OlkAddressBook** als Kategorie in * prgclsidCategory* . 
+**IOlkAccount::GetAccountInfo** unterstützt die Adressbuchkategorie für ein Exchange Konto. Wenn es sich bei dem Konto um ein Exchange-Konto handelt (*pclsidType* ist **CLSID_OlkMAPIAccount** ), und das Konto das Adressbuch implementiert, gibt der Aufruf von **IOlkAccount::GetAccountInfo** **CLSID_OlkAddressBook** als Kategorie in *prgclsidCategory* nicht zurück. 
   
 ## <a name="see-also"></a>Siehe auch
 

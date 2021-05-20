@@ -21,21 +21,21 @@ ms.locfileid: "33438722"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Client Anwendungen rufen die [IMessage:: SubmitMessage](imessage-submitmessage.md) -Methode auf, um eine Nachricht zu senden. **SubmitMessage** ruft [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) auf, um die Nachricht zu speichern, bevor die Steuerung an den MAPI-Spooler oder direkt an einen Transportanbieter übertragen wird. 
+Clientanwendungen rufen die [IMessage::SubmitMessage-Methode](imessage-submitmessage.md) auf, um eine Nachricht zu senden. **SubmitMessage ruft** [IMAPIProp::SaveChanges](imapiprop-savechanges.md) auf, um die Nachricht zu speichern, bevor die Steuerung an den MAPI-Spooler oder direkt an einen Transportanbieter übertragen wird. 
   
-Der MAPI-Spooler empfängt die Nachricht, wenn eine der folgenden Aktionen Eintritt:
+Der MAPI-Spooler empfängt die Nachricht, wenn eine der folgenden Fehler auftritt:
   
-- Der Nachrichtenspeicher Anbieter und der Transportanbieter sind nicht eng gekoppelt.
+- Der Nachrichtenspeicheranbieter und der Transportanbieter sind nicht eng gekoppelt.
     
-- Die Nachricht erfordert die Vorverarbeitung.
+- Die Nachricht erfordert eine Vorverarbeitung.
     
-- Der eng gekoppelte Nachrichtenspeicher und der Transport können nicht alle Empfänger verarbeiten, an die die Nachricht adressiert ist.
+- Der eng gekoppelte Nachrichtenspeicher und -transport kann nicht alle Empfänger verarbeiten, an die die Nachricht adressiert ist.
     
-Bei einem eng gekoppelten Nachrichtenspeicher muss der Status einer Nachricht berücksichtigt werden, bevor Sie dem MAPI-Spooler zum Herunterladen an einen Transportanbieter präsentiert wird. Es gibt Situationen, in denen eine Nachricht möglicherweise die MAPI-Spooler erfordert, aber die MAPI-Spooler sollte wirklich nicht beteiligt sein.
+Ein eng gekoppelter Nachrichtenspeicher muss den Status einer Nachricht berücksichtigen, bevor er sie dem MAPI-Spooler zum Herunterladen an einen Transportanbieter präsentiert. Es gibt Situationen, in denen eine Nachricht möglicherweise den MAPI-Spooler erfordert, aber der MAPI-Spooler sollte wirklich nicht beteiligt sein.
   
-Betrachten Sie beispielsweise die Situation, in der ein Benutzer eine Nachricht aus dem Posteingang übermittelt. Der Client verwendet einen eng gekoppelten Speicher und Transport. Wenn der eng gekoppelte Nachrichtenspeicher den Speicherort der Nachricht als alleiniges Kriterium verwendet, um zu entscheiden, ob der MAPI-Spooler die Nachricht verarbeiten darf, wird die Nachricht vom MAPI-Spooler immer angezeigt. Um diese Art von Problem zu vermeiden, muss ein eng gekoppelter Nachrichtenspeicher zusätzlich zum Nachrichten Speicherort den Nachrichtenstatus überprüfen. Insbesondere sollte der Transportanbieter nicht anfordern, dass der MAPI-Spooler eine Nachricht herunterlädt, die aktiv übermittelt wird.
+Betrachten Sie beispielsweise die Situation, in der ein Benutzer eine Nachricht aus dem Posteingang sendet. Der Client verwendet einen eng gekoppelten Speicher und Transport. Wenn der eng gekoppelte Nachrichtenspeicher den Speicherort der Nachricht als einziges Kriterium für die Entscheidung verwendet, ob der MAPI-Spooler die Nachricht verarbeiten soll, erhält der MAPI-Spooler immer die Nachricht. Um diese Art von Problem zu vermeiden, muss ein eng gekoppelter Nachrichtenspeicher zusätzlich zum Nachrichtenspeicherort den Nachrichtenstatus überprüfen. Insbesondere sollte der Transportanbieter nicht anfordern, dass der MAPI-Spooler aktiv übermittelte Nachrichten herunterloaden muss.
   
-Der Nachrichtenübertragungsprozess umfasst den Nachrichtenspeicher Anbieter, einen oder mehrere Transportanbieter und MAPI. Die Themen in diesem Abschnitt enthalten detaillierte Informationen zu bestimmten Rollen im Nachrichtenübertragungsprozess.
+Der Nachrichtenübermittlungsprozess umfasst den Nachrichtenspeicheranbieter, einen oder mehrere Transportanbieter und MAPI. Die Themen in diesem Abschnitt enthalten detaillierte Informationen zu bestimmten Rollen im Nachrichtenübermittlungsprozess.
   
 ## <a name="see-also"></a>Siehe auch
 

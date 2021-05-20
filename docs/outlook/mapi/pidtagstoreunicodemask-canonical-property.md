@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagstoreunicodemask (-Eigenschaft
+title: PidTagStoreUnicodeMask (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,13 +19,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33437938"
 ---
-# <a name="pidtagstoreunicodemask-canonical-property"></a>Kanonische Pidtagstoreunicodemask (-Eigenschaft
+# <a name="pidtagstoreunicodemask-canonical-property"></a>PidTagStoreUnicodeMask (kanonische Eigenschaft)
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine Bitmaske von Flags, die von Clientanwendungen abgefragt werden sollen, um die Merkmale eines Nachrichtenspeichers zu bestimmen.
+Enthält eine Bitmaske mit Flags, die Clientanwendungen abfragen sollten, um die Merkmale eines Nachrichtenspeichers zu bestimmen.
   
 |||
 |:-----|:-----|
@@ -34,19 +34,19 @@ Enthält eine Bitmaske von Flags, die von Clientanwendungen abgefragt werden sol
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Nachrichtenspeicher  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Diese Eigenschaft offenbart die Funktionen eines Nachrichtenspeichers für Clientanwendungen, die eine Nachricht senden möchten. Die Flags können Entscheidungen von einem Client oder einem anderen Speicher erleichtern, beispielsweise ob **PR_BODY** ([pidtagbody (](pidtagbody-canonical-property.md)) oder nur **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) gesendet werden soll. Ein Client sollte diese Eigenschaft nie festlegen. Ein Versuch gibt **MAPI_E_COMPUTED**zurück. 
+Diese Eigenschaft gibt die Funktionen eines Nachrichtenspeichers an Clientanwendungen weiter, die planen, eine Nachricht zu senden. Die Flags können Entscheidungen eines Clients oder eines anderen Speichers erleichtern, z. B. ob PR_BODY **(** [PidTagBody](pidtagbody-canonical-property.md)) oder nur **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) gesendet werden soll. Ein Client sollte diese Eigenschaft nie festlegen. Ein Versuch gibt **MAPI_E_COMPUTED** zurück. 
   
-Mindestens eines der folgenden Flags kann für diese Eigenschaft festgelegt werden: 
+Mindestens eines der folgenden Kennzeichen kann für diese Eigenschaft festgelegt werden: 
   
 STORE_ANSI_OK
   
-> (131072, 0x00020000) Der Nachrichtenspeicher unterstützt Eigenschaften, die ANSI (8-Bit)-Zeichen (American National Standards Institute) enthalten.
+> (131072, 0x00020000) Der Nachrichtenspeicher unterstützt Eigenschaften, die 8-Bit-Zeichen des American National Standards Institute (ANSI) enthalten.
     
 STORE_ATTACH_OK 
   
-> (32, 0x00000020) Der Nachrichtenspeicher unterstützt das Verknüpfen und einBetten von Objekten (OLE) oder nicht-OLE-Anlagen zu Nachrichten. 
+> (32, 0x00000020) Der Nachrichtenspeicher unterstützt Ole-Anlagen (Object Linking and Embedding) oder Nicht-OLE-Anlagen für Nachrichten. 
     
 STORE_CATEGORIZE_OK 
   
@@ -58,15 +58,15 @@ STORE_CREATE_OK
     
 STORE_ENTRYID_UNIQUE 
   
-> (1, 0x00000001) Eintragsbezeichner für die Objekte im Nachrichtenspeicher sind eindeutig, also nie wieder verwendet während der Lebensdauer des Speichers. 
+> (1, 0x00000001) Die Eintragsbezeichner für die Objekte im Nachrichtenspeicher sind eindeutig, d. h., sie werden während der Lebensdauer des Informationsspeichers nie wiederverwendet. 
     
 STORE_HTML_OK 
   
-> (65536, 0x00010000) Der Nachrichtenspeicher unterstützt HTML-Nachrichten, die in der **PR_BODY_HTML** ([pidtagbodyhtml (](pidtagbodyhtml-canonical-property.md))-Eigenschaft gespeichert werden. Beachten Sie, dass **STORE_HTML_OK** in Versionen von MAPIDEFS nicht definiert ist. H, die in Microsoft Exchange 2000 Server und früher enthalten sind. Wenn in der Entwicklungsumgebung ein MAPIDEFS verwendet wird. H die Datei, die nicht **STORE_HTML_OK**enthält, verwenden Sie stattdessen den Wert "0x00010000". 
+> (65536, 0x00010000) Der Nachrichtenspeicher unterstützt HTML-Nachrichten, die in der **PR_BODY_HTML** ([PidTagBodyHtml )-Eigenschaft](pidtagbodyhtml-canonical-property.md)gespeichert sind. Beachten **Sie, STORE_HTML_OK** in Versionen von MAPIDEFS nicht definiert ist. H, die in Microsoft Exchange 2000 Server und früher enthalten sind. Wenn Ihre Entwicklungsumgebung ein MAPIDEFS verwendet. H-Datei, die keine **STORE_HTML_OK** enthält, verwenden Sie stattdessen den Wert "0x00010000". 
     
 STORE_ITEMPROC
   
-> (2097152, 0x00200000) Gibt in einem umbrochenen PST-Speicher an, dass beim Eintreffen einer neuen Nachricht im Speicher der Store Regeln und die Spamfilter Verarbeitung für die Nachricht separat ausführt. Der Store ruft [IMAPISupport:: notify](imapisupport-notify.md)auf, legt **Uleventmaskfnevnewmail** in der [Benachrichtigungs](notification.md) Struktur fest, die als Parameter übergeben wird, und übergibt dann die Details der neuen Nachricht an den überwachenden Client. Wenn der überwachende Client die Nachricht erhält, wendet er keine Regeln darauf an. 
+> (2097152, 0x00200000) Gibt in einem umschlossenen PST-Speicher an, dass beim Eintreffen einer neuen Nachricht im Store regeln und Spamfilter für die Nachricht separat verarbeitet werden. Der Speicher ruft [IMAPISupport::Notify](imapisupport-notify.md)auf, legt **fnevNewMail** in der [NOTIFICATION-Struktur](notification.md) fest, die als Parameter übergeben wird, und übergibt dann die Details der neuen Nachricht an den Abhörclient. Wenn der überwachende Client die Nachricht erhält, wendet er keine Regeln darauf an. 
     
 STORE_LOCALSTORE
   
@@ -86,19 +86,19 @@ STORE_NOTIFY_OK
     
 STORE_OLE_OK 
   
-> (64, 0x00000040) Der Nachrichtenspeicher unterstützt OLE-Anlagen. Auf die OLE-Daten kann über eine **IStorage** -Schnittstelle zugegriffen werden, wie Sie über die **PR_ATTACH_DATA_OBJ** ([pidtagattachdataobject (](pidtagattachdataobject-canonical-property.md))-Eigenschaft verfügbar ist. 
+> (64, 0x00000040) Der Nachrichtenspeicher unterstützt OLE-Anlagen. Auf die #A0 kann über eine **IStorage-Schnittstelle** zugegriffen werden, z. B. über die **PR_ATTACH_DATA_OBJ** ([PidTagAttachDataObject](pidtagattachdataobject-canonical-property.md)) -Eigenschaft. 
     
 STORE_PUBLIC_FOLDERS 
   
-> (16384, 0x00004000) Die Ordner in diesem Speicher sind öffentlich (mehr Benutzer) und nicht privat (möglicherweise mehrere Instanzen, jedoch nicht mehrere Benutzer). 
+> (16384, 0x00004000) Die Ordner in diesem Speicher sind öffentlich (mehrere Benutzer), nicht privat (möglicherweise mehrere Instanzen, aber nicht mehr benutzer). 
     
 STORE_PUSHER_OK
   
-> (8388608, 0x00800000) Der MAPI-Protokoll Handler crawlt den Speicher nicht, und der Speicher ist dafür verantwortlich, alle Änderungen durch Benachrichtigungen an den Indexer zu übertragen, damit Nachrichten indiziert werden.
+> (8388608, 0x00800000) Der MAPI-Protokollhandler durchforstet den Speicher nicht, und der Speicher ist dafür verantwortlich, Änderungen über Benachrichtigungen an den Indexer zu übertragen, damit Nachrichten indiziert werden.
     
 STORE_READONLY 
   
-> (2, 0x00000002) Alle Schnittstellen für den Nachrichtenspeicher weisen eine schreibgeschützte Zugriffsebene auf. 
+> (2, 0x00000002) Alle Schnittstellen für den Nachrichtenspeicher verfügen über eine schreibgeschützte Zugriffsebene. 
     
 STORE_RESTRICTION_OK 
   
@@ -106,15 +106,15 @@ STORE_RESTRICTION_OK
     
 STORE_RTF_OK 
   
-> (2048, 0x00000800) Der Nachrichtenspeicher unterstützt RTF-Nachrichten (Rich Text Format), in der Regel komprimiert, und der Speicher selbst hält **PR_BODY** und **PR_RTF_COMPRESSED** synchronisiert. 
+> (2048, 0x00000800) Der Nachrichtenspeicher unterstützt in der Regel komprimierte Rich Text Format (RTF)-Nachrichten, und der Speicher selbst PR_BODY **und** **PR_RTF_COMPRESSED** synchronisiert. 
     
 STORE_SEARCH_OK 
   
-> (4, 0x00000004) Der Nachrichtenspeicher unterstützt Ordner mit Suchergebnissen. 
+> (4, 0x00000004) Der Nachrichtenspeicher unterstützt Suchergebnisordner. 
     
 STORE_SORT_OK 
   
-> (8192, 0x00002000) Der Nachrichtenspeicher unterstützt das Sortieren von Tabellen Ansichten. 
+> (8192, 0x00002000) Der Nachrichtenspeicher unterstützt das Sortieren von Tabellenansichten. 
     
 STORE_SUBMIT_OK 
   
@@ -122,25 +122,25 @@ STORE_SUBMIT_OK
     
 STORE_UNCOMPRESSED_RTF 
   
-> (32768, 0x00008000) Der Nachrichtenspeicher unterstützt das Speichern von überarbeiteten Formulartext Nachrichten (RTF) in nicht komprimierter Form. Ein unkomprimierter RTF-Datenstrom wird durch den Wert **dwMagicUncompressedRTF** im Stream-Header identifiziert. Der **dwMagicUncompressedRTF** -Wert wird in der RTFLIB definiert. H-Datei. 
+> (32768, 0x00008000) Der Nachrichtenspeicher unterstützt das Speichern von wieder lesbaren Formulartextnachrichten (Revisable Form Text, RTF) in nicht komprimierten Formularen. Ein nicht komprimierter RTF-Stream wird durch den Wert **dwMagicUncompressedRTF** im Datenstromheader identifiziert. Der **wert dwMagicUncompressedRTF** ist in rtFLIB definiert. H-Datei. 
     
 STORE_UNICODE_OK
   
 > (262144, 0x00040000) Der Nachrichtenspeicher unterstützt Eigenschaften, die Unicode-Zeichen enthalten.
     
-Eine RTF-Version einer Nachricht kann immer gespeichert werden, auch wenn der Nachrichtenspeicher nicht im RTF-Format unterstützt wird. Wenn das STORE_RTF_OK-Bit für einen bestimmten Speicher nicht festgelegt ist, muss ein Client, der RTF-Versionen verwaltet, selbst die [RTFSync](rtfsync.md) -Funktion aufrufen, um die **PR_BODY** -und **PR_RTF_COMPRESSED** -Versionen für Textinhalte zu synchronisieren. RTF wird immer in **PR_RTF_COMPRESSED**gespeichert, unabhängig davon, ob es tatsächlich komprimiert ist oder nicht. 
+Eine RTF-Version einer Nachricht kann immer gespeichert werden, auch wenn der Nachrichtenspeicher nicht RTF-bewusst ist. Wenn das STORE_RTF_OK-Bit nicht für einen bestimmten Speicher festgelegt ist, muss ein Client mit RTF-Versionen selbst die [RTFSync-Funktion](rtfsync.md) aufrufen, um die **PR_BODY-** und **PR_RTF_COMPRESSED-Versionen** für Textinhalte synchronisiert zu halten. RTF wird immer **in** PR_RTF_COMPRESSED gespeichert, unabhängig davon, ob es tatsächlich komprimiert ist oder nicht. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
-### <a name="header-files"></a>Header Dateien
+### <a name="header-files"></a>Headerdateien
 
-Mapidefs. h
+Mapidefs.h
   
-> Stellt Datentypdefinitionen bereit.
+> Bietet Datentypdefinitionen.
     
-Mapitags. h
+Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -148,9 +148,9 @@ Mapitags. h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

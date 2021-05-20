@@ -25,7 +25,7 @@ ms.locfileid: "33436650"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ermöglicht den Zugriff auf die aktuelle MAPI-Sitzung, die dem Support Objekt zugeordnet ist. MAPI-Anbieter können Ihr MAPI-UnterstützungsObjekt für diese Schnittstelle Abfragen. Weitere Informationen zu Support Objekten finden Sie unter [Support Object Overview](support-object-overview.md).
+Bietet Zugriff auf die aktuelle MAPI-Sitzung, die dem Supportobjekt zugeordnet ist. MAPI-Anbieter können ihr MAPI-Supportobjekt für diese Schnittstelle abfragen. Weitere Informationen zu Supportobjekten finden Sie unter [Support Object Overview](support-object-overview.md).
   
 |||
 |:-----|:-----|
@@ -37,7 +37,7 @@ Ermöglicht den Zugriff auf die aktuelle MAPI-Sitzung, die dem Support Objekt zu
 
 |||
 |:-----|:-----|
-|[GetMAPISession](imapigetsession-getmapisession.md) <br/> |Wird aufgerufen, um einen Zeiger auf die aktuelle MAPI-Sitzung abzurufen.  <br/> |
+|[GetMAPISession](imapigetsession-getmapisession.md) <br/> |Wird aufgerufen, um einen Zeiger auf die aktuelle MAPI-Sitzung zu erhalten.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -50,5 +50,5 @@ Ermöglicht den Zugriff auf die aktuelle MAPI-Sitzung, die dem Support Objekt zu
 
 [MAPI-Schnittstellen](mapi-interfaces.md)
   
-[Übersicht über das Support Objekt](support-object-overview.md)
+[Übersicht über das Supportobjekt](support-object-overview.md)
 

@@ -19,7 +19,7 @@ ms.locfileid: "33438113"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Informationen zum Hochladen der Inhalte eines Ordners während des [Upload-Tabellenstatus](upload-table-state.md).
+Informationen zum Hochladen des Inhalts eines Ordners während des [Status der Uploadtabelle](upload-table-state.md).
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -43,11 +43,11 @@ struct UPTBL
 
 _ulFlags_
   
-> in Flags zum Bestimmen des geeigneten Verhaltens während des Uploads.
+> [in] Flags, um das entsprechende Verhalten während des Uploads zu bestimmen.
     
   - UPT_OK
     
-    - in Der Upload war erfolgreich. Der Client legt dies fest, nachdem der Ordnerinhalt auf den Server hochgeladen wurde.
+    - [in] Hochladen war erfolgreich. Der Client legt dies nach dem Hochladen des Ordnerinhalts auf den Server fest.
     
 _pstmReserved_
   
@@ -67,25 +67,25 @@ _uintReserved_
     
 _rgte_
   
-> Out Struktur für die folgenden Informationen für normale (oder nicht ausgeblendete) Elemente und zugeordnete (oder ausgeblendete) Elemente im Ordner: _rgte [0]_ gilt für normale Elemente, und _rgte [1]_ gilt für zugeordnete Elemente. 
+> [out] Struktur zum Speichern der folgenden Informationen für normale (oder nicht ausgeblendete) Elemente und zugeordnete (oder ausgeblendete) Elemente im Ordner:  _rgte[0]_ ist für normale Elemente und  _rgte[1]_ für zugeordnete Elemente. 
     
-   - die Anzahl der neuen oder geänderten Elemente
-   - die Anzahl der gelesenen Elemente 
-   - die Anzahl der gelöschten Elemente
+   - Die Anzahl der neuen oder geänderten Elemente
+   - Die Anzahl der gelesenen Elemente 
+   - Die Anzahl der gelöschten Elemente
     
  _iEnt_
   
-> Out Index zum Nachverfolgen des Uploads die Anzahl der durch _cEnt_angegebenen Änderungen.
+> [out] Index zum Nachverfolgen des Hochladens der von _cEnt angegebenen Anzahl von Änderungen._
     
-_Prozent_
+_cEnt_
   
-> Out Die Anzahl der Änderungen am Ordner.
+> [out] Anzahl der Änderungen am Ordner.
     
 _pupmovHead_
   
-> Out Kette von [UPMOV](upmov.md) -Strukturen. 
+> [out] Kette von [UPMOV-Strukturen.](upmov.md) 
     
-_Beibehalten_
+_pReserved_
   
 > [out] Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.
     

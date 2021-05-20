@@ -1,5 +1,5 @@
 ---
-title: Synchronisieren des Inhaltsstatus
+title: Status "Inhalt synchronisieren"
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -13,35 +13,35 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33438470"
 ---
-# <a name="synchronize-contents-state"></a>Synchronisieren des Inhaltsstatus
+# <a name="synchronize-contents-state"></a>Status "Inhalt synchronisieren"
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
- In diesem Thema wird beschrieben, was während des Status "Inhalt synchronisieren" des Replikationsstatus Computers geschieht. 
+ In diesem Thema wird beschrieben, was während des Synchronisierungsinhaltsstatus des Replikationsstatuscomputers geschieht. 
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
-|Status-ID:  <br/> |**LR_SYNC_CONTENTS** <br/> |
-|Zugehörige Datenstruktur:  <br/> |**[SYNCCONT](synccont.md)** <br/> |
-|Aus folgendem Zustand:  <br/> |[Zustand „Synchronisieren“](synchronize-state.md) <br/> |
-|Zu folgendem Status:  <br/> |[Tabellenstatus herunterladen](download-table-state.md), [Tabellenstatus hochladen](upload-table-state.md)oder Status Synchronisieren  <br/> |
+|Statusbezeichner:  <br/> |**LR_SYNC_CONTENTS** <br/> |
+|Verwandte Datenstruktur:  <br/> |**[SYNCCONT](synccont.md)** <br/> |
+|In diesem Zustand:  <br/> |[Zustand „Synchronisieren“](synchronize-state.md) <br/> |
+|In diesem Zustand:  <br/> |[Tabellenstatus herunterladen,](download-table-state.md) [Tabellenstatus hochladen](upload-table-state.md)oder Synchronisieren  <br/> |
    
 > [!NOTE]
-> Der Replikationsstatus Computer ist ein deterministischer Statuscomputer. Ein Client, der von einem Staat zu einem anderen abgeht, muss schließlich aus letzterem zurückkehren. 
+> Der Replikationsstatuscomputer ist ein deterministischer Zustandsautomat. Ein Client, der von einem Zustand in einen anderen abt, muss schließlich zu dem ersten von letzterem zurückkehren. 
   
 ## <a name="description"></a>Beschreibung
 
-Dieser Status initiiert einen der beiden Replikationsprozesse: Hochladen der Inhalte bestimmter Ordner in einem lokalen Speicher oder eine vollständige Synchronisierung. Bei einer vollständigen Synchronisierung für jeden der angegebenen Ordner werden die Inhalte zuerst hochgeladen und dann heruntergeladen. Abhängig vom *ulFlags* -Satz in der entsprechenden **[Synchronisierungs](sync.md)** Struktur im vorherigen Synchronisierungsstatus initialisiert Outlook [out]-Elemente in der **SYNCCONT** -Struktur, um Informationen zu den Inhalten bereitzustellen. 
+Dieser Zustand initiiert einen der beiden Replikationsprozesse: Das Hochladen des Inhalts der angegebenen Ordner in einem lokalen Speicher oder eine vollständige Synchronisierung. Bei einer vollständigen Synchronisierung werden die Inhalte für jeden der angegebenen Ordner zuerst hochgeladen und dann heruntergeladen. Abhängig von *den ulFlags,* die in der entsprechenden **[SYNC-Struktur](sync.md)** im vorherigen Synchronisierungsstatus festgelegt sind, initialisiert Outlook [out]-Elemente in der **SYNCCONT-Struktur,** um Informationen zu den Inhalten zur Verfügung zu stellen. 
   
-Über dieselbe **SYNCCONT** -Struktur ruft der Client die Anzahl der Ordner ab, die Inhalte hoch-oder heruntergeladen werden sollen. Der Client durchläuft jeden dieser Ordner, indem er den lokalen Speicher in den Status der hochgeladenen Tabelle verschiebt, um einen Ordner hochzuladen, oder den lokalen Speicher in den Status der Download Tabelle verschiebt, um den Ordner herunterzuladen. 
+Über die gleiche **SYNCCONT-Struktur** ruft der Client die Anzahl der Ordner ab, für die Inhalte hochgeladen oder heruntergeladen werden müssen. Der Client durchrundet jeden dieser Ordner, indem er den lokalen Speicher in den Status der Uploadtabelle zum Hochladen eines Ordners oder den lokalen Speicher in den Zustand der Downloadtabelle verschieben, um den Ordner herunterzuladen. 
   
-Darüber hinaus erhält der Client Eintrags-IDs für die Ordner, die eine Replikation erfordern.
+Darüber hinaus ruft der Client Eintrags-IDs für die Ordner ab, die eine Replikation erfordern.
   
-Wenn dieser Status endet, bereinigt Outlook seine internen Informationen. Der lokale Speicher wird zum Synchronisierungsstatus zurückgegeben.
+Wenn dieser Zustand endet, Outlook interne Informationen bereinigt. Der lokale Speicher kehrt zum Synchronisierungsstatus zurück.
   
 ## <a name="see-also"></a>Siehe auch
 

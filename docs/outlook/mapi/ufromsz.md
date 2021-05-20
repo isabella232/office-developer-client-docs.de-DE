@@ -25,13 +25,13 @@ ms.locfileid: "33439009"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Konvertiert eine NULL-terminierte Zeichenfolge von Dezimalstellen in eine unsignierte Ganzzahl. 
+Wandelt eine mit Null beendete Zeichenfolge von Dezimalstellen in eine ganze Zahl ohne Vorzeichen um. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 UINT UFromSz(
@@ -43,16 +43,16 @@ UINT UFromSz(
 
  _lpsz_
   
-> in Zeiger auf die zu konvertierende NULL-terminierte Zeichenfolge. Der _lpsz_ -parameter darf 65536 Zeichen nicht überschreiten. 
+> [in] Zeiger auf die zu konvertierte Zeichenfolge mit Nullen terminiert. Der  _lpsz-Parameter_ darf 65536 Zeichen nicht überschreiten. 
     
 ## <a name="return-value"></a>Rückgabewert
 
- **UFromSz** gibt eine ganze Zahl ohne Vorzeichen zurück. Wenn die Zeichenfolge nicht mit mindestens einer Dezimalstelle beginnt, wird NULL zurückgegeben. 
+ **UFromSz** gibt eine ganze Zahl ohne Vorzeichen zurück. Wenn die Zeichenfolge nicht mit mindestens einer Dezimalziffer beginnt, wird Null zurückgegeben. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **UFromSz** -Funktion wird nicht mehr konvertiert, wenn Sie das erste Zeichen in der Zeichenfolge erreicht, die keine Dezimalziffer ist. Beispiel: bei der Zeichenfolge "55" gibt **UFromSz** den ganzzahligen Wert 55 zurück. Bei der Zeichenfolge "5a5b" gibt die Funktion den ganzzahligen Wert 5 zurück. Bei der Zeichenfolge "a5b5" gibt **UFromSz** NULL zurück. 
+Die **UFromSz-Funktion** beendet die Konvertierung, wenn sie das erste Zeichen in der Zeichenfolge erreicht, das keine Dezimalziffer ist. Bei der Zeichenfolge "55" gibt **UFromSz** beispielsweise den ganzzahligen Wert 55 zurück. Angesichts der Zeichenfolge "5a5b" gibt die Funktion den ganzzahligen Wert 5 zurück. Angesichts der Zeichenfolge "a5b5" gibt **UFromSz** null zurück. 
   
- **UFromSz** ist anfällig für diakritische Unterschiede. Zeichenfolgen im Unicode-und DBCS-Format werden unterstützt. Die Längenbeschränkung für _lpsz_ ist in Zeichen, nicht unbedingt in Bytes. 
+ **UFromSz** ist für diakritische Unterschiede sensibel. Zeichenfolgen in den Formaten Unicode und DBCS werden unterstützt. Der Längengrenzwert für  _lpsz_ beträgt Zeichen, nicht unbedingt Byte. 
   
 

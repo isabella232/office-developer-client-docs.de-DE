@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 6cc93fef-a6a8-9ca6-dc34-bfb9bf2926f5
-description: Dieser Member ist ein Platzhalter und wird nicht unterstützt.
+description: Dieses Element ist ein Platzhalter und wird nicht unterstützt.
 ms.openlocfilehash: 7029b257fdf818b4b4d298024285d4463044d934
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,11 +16,11 @@ ms.locfileid: "33438169"
 ---
 # <a name="ifreebusysupportplaceholder15"></a>IFreeBusySupport::Placeholder15
 
-Dieser Member ist ein Platzhalter und wird nicht unterstützt.
+Dieses Element ist ein Platzhalter und wird nicht unterstützt.
   
 ## <a name="quick-info"></a>QuickInfo
 
-Siehe [IFreeBusySupport](ifreebusysupport.md).
+Weitere [Informationen finden Sie unter IFreeBusySupport](ifreebusysupport.md).
   
 ```cpp
 HRESULT Placeholder15();
@@ -28,14 +28,14 @@ HRESULT Placeholder15();
 
 ## <a name="return-values"></a>Rückgabewerte
 
-Immer E_NOTIMPL, da dieser Member ein Platzhalter ist und nicht unterstützt wird.
+Immer E_NOTIMPL, da dieses Element ein Platzhalter ist und nicht unterstützt wird.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Dieser Member muss E_NOTIMPL zurückgeben.
+Dieses Element muss die E_NOTIMPL.
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Konstanten (frei/gebucht-API)](constants-free-busy-api.md)
+- [Konstanten (Frei/Gebucht-API)](constants-free-busy-api.md)
 - [IFreeBusySupport::LoadFreeBusyData](ifreebusysupport-loadfreebusydata.md)
 

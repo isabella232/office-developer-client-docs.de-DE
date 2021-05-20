@@ -25,13 +25,13 @@ ms.locfileid: "33437385"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Definiert eine Funktion, mit der die Profil-Assistentenanwendung gestartet wird, um einen oder mehrere Nachrichtendienste zu einem Profil hinzuzufügen. 
+Definiert eine Funktion, mit der die Anwendung des Profil-Assistenten gestartet wird, um einem Profil einen oder mehrere Nachrichtendienste hinzufügen zu können. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiwz. h  <br/> |
-|Definierte Funktion, implementiert von:  <br/> |MAPI  <br/> |
-|Definierte Funktion, aufgerufen von:  <br/> |Client Anwendungen  <br/> |
+|Headerdatei  <br/> |Mapiwz.h  <br/> |
+|Definierte Funktion implementiert von:  <br/> |MAPI  <br/> |
+|Definierte Funktion, die von:  <br/> |Clientanwendungen  <br/> |
    
 ```cpp
 HRESULT LAUNCHWIZARDENTRY(
@@ -47,15 +47,15 @@ HRESULT LAUNCHWIZARDENTRY(
 
  _hParentWnd_
   
-> in Ein Handle für das übergeordnete Fenster des Anrufers. Wenn der Aufrufer kein übergeordnetes Fenster hat, sollte der _hParentWnd_ -Parameter NULL sein. 
+> [in] Ein Handle zum übergeordneten Fenster des Anrufers. Wenn der Aufrufer kein übergeordnetes Fenster hat, sollte  _der hParentWnd-Parameter_ NULL sein. 
     
  _ulFlags_
   
-> in Bitmaske von Flags, die Optionen für den Profil-Assistenten angeben. Die folgenden Flags können festgelegt werden:
+> [in] Bitmaske mit Flags, die Optionen für den Profil-Assistenten angibt. Die folgenden Kennzeichen können festgelegt werden:
     
 MAPI_PW_ADD_SERVICE_ONLY 
   
-> Der Profil-Assistent besteht darin, nur die Nachrichtendienste hinzuzufügen, die über den Parameter _lppszServiceNameToAdd_ aufgeführt sind, und nicht die zugehörige Seite für die Auswahl der Nachrichtendienste anzuzeigen. 
+> Der Profil-Assistent fügt nur die Nachrichtendienste hinzu, die über den  _lppszServiceNameToAdd-Parameter_ aufgelistet sind, und nicht seine Seite zum Auswählen von Nachrichtendiensten anzeigen. 
     
 MAPI_PW_FIRST_PROFILE 
   
@@ -67,23 +67,23 @@ MAPI_PW_HIDE_SERVICES_LIST
     
 MAPI_PW_LAUNCHED_BY_CONFIG 
   
-> Der Profil-Assistent wurde von der Konfigurationsanwendung der Systemsteuerung gestartet. 
+> Der Profil-Assistent wurde von der Systemsteuerungskonfigurationsanwendung gestartet. 
     
 MAPI_PW_PROVIDER_UI_ONLY 
   
-> Nur die Konfigurationsdialogfelder der Dienstanbieter sollten angezeigt werden, und die Seiten des Profil-Assistenten sollten nicht angezeigt werden. Dieses Flag kann nur festgelegt werden, wenn das MAPI_PW_ADD_SERVICE_ONLY-Flag festgelegt ist. 
+> Es sollten nur die Konfigurationsdialogfelder der Dienstanbieter angezeigt werden, und die Seiten des Profil-Assistenten sollten nicht angezeigt werden. Dieses Flag kann nur festgelegt werden, wenn MAPI_PW_ADD_SERVICE_ONLY festgelegt ist. 
     
  _lppszServiceNameToAdd_
   
-> in Zeiger auf ein Array von Zeichenfolgen, die die Namen der Nachrichtendienste enthalten, die dem Profil hinzugefügt werden sollen. Das Array muss mit einem NULL-Wert beendet werden. 
+> [in] Zeiger auf ein Array von Zeichenfolgen, das die Namen der Nachrichtendienste enthält, die dem Profil hinzugefügt werden sollen. Das Array muss mit einem NULL-Wert beendet werden. 
     
  _cbBufferMax_
   
-> in Die Größe des Puffers, auf den durch den _lpszNewProfileName_ -Parameter verwiesen wird. 
+> [in] Die Größe des Puffers, auf den der  _lpszNewProfileName-Parameter_ verweist. 
     
  _lpszNewProfileName_
   
-> Out Zeiger auf einen Zeichenfolgenpuffer, in dem die auf **LAUNCHWIZARDENTRY** basierende Funktion den Namen des erstellten Profils zurückgibt. 
+> [out] Zeiger auf einen Zeichenfolgenpuffer, in dem die auf **LAUNCHWIZARDENTRY** basierende Funktion den Namen des erstellten Profils zurückgibt. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -93,24 +93,24 @@ S_OK
     
 MAPI_E_CALL_FAILED 
   
-> Der Vorgang konnte nicht abgeschlossen werden. Zu den Möglichkeiten gehört das Initialisieren des MAPI-Subsystems für den Profil-Assistenten, das nicht zugreifen auf das Standardprofil und das Zurückgeben eines Fehlers aus dem Dialogfeld.
+> Ein Fehler mit unerwartetem oder unbekanntem Ursprung verhinderte den Abschluss des Vorgangs. Zu den Möglichkeiten gehören das Nicht initialisieren des MAPI-Subsystems für den Profil-Assistenten, der Nichtzugriff auf das Standardprofil und eine Fehlerrückskehr aus dem Dialogfeld.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die MAPI-Implementierung des Prototyps der **LAUNCHWIZARDENTRY** -Funktion ist der Einstiegspunkt in die MAPI-Profil-Assistentenanwendung. MAPI benennt diesen Einstiegspunkt **LaunchWizard**. 
+Die MAPI-Implementierung des **LAUNCHWIZARDENTRY-Funktionsprototyps** ist der Einstiegspunkt in die MAPI-Profil-Assistenten-Anwendung. MAPI benennt diesen Einstiegspunkt **LaunchWizard**. 
   
-Wenn das MAPI_PW_ADD_SERVICE_ONLY-Flag im Parameter _ulFlags_ festgelegt ist, gelten die folgenden Regeln: 
+Wenn das MAPI_PW_ADD_SERVICE_ONLY im  _ulFlags-Parameter_ festgelegt ist, gelten die folgenden Regeln: 
   
-- Das MAPI_PW_LAUNCHED_BY_CONFIG-Flag verhindert, dass die Willkommensseite angezeigt wird. 
+- Das MAPI_PW_LAUNCHED_BY_CONFIG verhindert, dass die Willkommensseite angezeigt wird. 
     
-- Die MAPI_PW_HIDE_SERVICES_LIST-und MAPI_PW_PROVIDER_UI_ONLY-Flags sind nur dann nützlich, wenn kein Standardprofil vorhanden ist. In diesem Fall bestimmen diese Flags, welche Seite des Profil-Assistenten angezeigt werden soll. 
+- Die MAPI_PW_HIDE_SERVICES_LIST und MAPI_PW_PROVIDER_UI_ONLY sind nur nützlich, wenn kein Standardprofil vorlag. In diesem Fall bestimmen diese Kennzeichen, welche Seite des Profil-Assistenten angezeigt werden soll. 
     
-- Wenn ein Standardprofil vorhanden ist, werden keine der Profil-Assistentenseiten angezeigt. 
+- Wenn ein Standardprofil vorhanden ist, wird keine der Seiten des Profil-Assistenten angezeigt. 
     
-- Wenn ein Standardprofil vorhanden ist, wird nur ein Nachrichtendienst über den Parameter _lppszServiceNameToAdd_ aufgeführt, und der Nachrichtendienst befindet sich bereits im Standardprofil, der Profil-Assistent gibt S_OK zurück, ohne dem Profil etwas hinzuzufügen. 
+- Wenn ein Standardprofil vorhanden ist, nur ein Nachrichtendienst über den  _lppszServiceNameToAdd-Parameter_ aufgelistet wird und sich dieser Nachrichtendienst bereits im Standardprofil befindet, gibt der Profil-Assistent S_OK zurück, ohne dem Profil etwas hinzufügen zu müssen. 
     
-Für jeden Nachrichtendienst, der dem Profil hinzugefügt werden soll, ruft der Profil-Assistent die Einstiegspunktfunktion des Diensts auf der Grundlage des [MSGSERVICEENTRY](msgserviceentry.md) -Prototyps auf. Für jeden von einem Nachrichtendienst ausgewählten Dienstanbieter, der dem Profil hinzugefügt werden soll, ruft der Profil-Assistent die Einstiegspunktfunktion des Anbieters basierend auf dem [WIZARDENTRY](wizardentry.md) -Prototypen auf. Während der interaktiven Konfiguration führt jedes Benutzerereignis auf den Eigenschaftenseiten dazu, dass der Profil-Assistent die Rückruffunktion des Anbieters basierend auf dem [SERVICEWIZARDDLGPROC](servicewizarddlgproc.md) -Prototyp aufruft. 
+Damit jeder Nachrichtendienst dem Profil hinzugefügt werden kann, ruft der Profil-Assistent die Einstiegspunktfunktion des Diensts basierend auf dem [MSGSERVICEENTRY-Prototyp](msgserviceentry.md) auf. Für jeden Dienstanbieter, der aus einem Nachrichtendienst ausgewählt wurde, der dem Profil hinzugefügt werden soll, ruft der Profil-Assistent die Einstiegspunktfunktion des Anbieters basierend auf dem [WIZARDENTRY-Prototyp](wizardentry.md) auf. Während der interaktiven Konfiguration führt jedes Benutzerereignis auf den Eigenschaftenseiten dazu, dass der Profil-Assistent die Rückruffunktion des Anbieters basierend auf dem [SERVICEWIZARDDLGPROC-Prototyp](servicewizarddlgproc.md) aufruft. 
   
-Wenn ein Dienstanbieter, der dem Profil hinzugefügt wird, die Profil-Assistentenseiten unterstützt, muss die programmgesteuerte Konfiguration des Profils zugelassen werden.
+Wenn ein Dienstanbieter, der dem Profil hinzugefügt wird, die Seiten des Profil-Assistenten unterstützt, muss er die programmgesteuerte Konfiguration des Profils zulassen.
   
 

@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 0cb95b34-3ce0-07a5-5d57-8ac9b0570b9a
-description: Gibt den logischen Ausdruck an, der bestimmt, ob das Zielobjekt der Überprüfungsregel entspricht.
+description: Gibt den logischen Ausdruck an, der bestimmt, ob das Zielobjekt der Gültigkeitsprüfungsregel entspricht.
 ms.openlocfilehash: bb1f0cf9b3f712903f6e45d6d09f96607089f920
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
@@ -14,9 +14,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34541519"
 ---
-# <a name="ruletest-element-ruletype-complextype-visio-xml"></a>RuleTest-Element (Rule_Type complexType) (Visio XML)
+# <a name="ruletest-element-rule_type-complextype-visio-xml"></a>RuleTest-Element (Rule_Type complexType) (Visio XML)
 
-Gibt den logischen Ausdruck an, der bestimmt, ob das Zielobjekt der Überprüfungsregel entspricht.
+Gibt den logischen Ausdruck an, der bestimmt, ob das Zielobjekt der Gültigkeitsprüfungsregel entspricht.
   
 ## <a name="element-information"></a>Informationen zum Element
 
@@ -24,8 +24,8 @@ Gibt den logischen Ausdruck an, der bestimmt, ob das Zielobjekt der Überprüfun
 |:-----|:-----|
 |**Elementtyp** <br/> |[RuleTest_Type](ruletest_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
-|**Dokumentteile** <br/> |Validation. XML  <br/> |
+|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
+|**Dokumentteile** <br/> |validation.xml  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,7 +36,7 @@ Gibt den logischen Ausdruck an, der bestimmt, ob das Zielobjekt der Überprüfun
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -52,6 +52,6 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|Formel  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Stellt die Formel des Elements dar.  <br/> |Werte der XSD: String.  <br/> |
+|Formel  <br/> |xsd:string  <br/> |Optional  <br/> |Stellt die Formel des Elements dar.  <br/> |Werte der xsd:string.  <br/> |
    
 

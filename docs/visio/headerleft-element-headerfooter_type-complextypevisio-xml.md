@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34541043"
 ---
-# <a name="headerleft-element-headerfootertype-complextype-visio-xml"></a>HeaderLeft-Element (HeaderFooter_Type complexType) (Visio XML)
+# <a name="headerleft-element-headerfooter_type-complextype-visio-xml"></a>HeaderLeft-Element (HeaderFooter_Type complexType) (Visio XML)
 
 Enthält die Textzeichenfolge, die im linken Teil der Kopfzeile eines Dokuments angezeigt wird.
   
@@ -24,8 +24,8 @@ Enthält die Textzeichenfolge, die im linken Teil der Kopfzeile eines Dokuments 
 |:-----|:-----|
 |**Elementtyp** <br/> |[HeaderLeft_Type](headerleft_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
-|**Dokumentteile** <br/> |Document. XML  <br/> |
+|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
+|**Dokumentteile** <br/> |document.xml  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,13 +36,13 @@ Enthält die Textzeichenfolge, die im linken Teil der Kopfzeile eines Dokuments 
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[HeaderFooter](headerfooter-element-visiodocument_type-complextypevisio-xml.md) <br/> |[HeaderFooter_Type](headerfooter_type-complextypevisio-xml.md) <br/> |Enthält Elemente für die Kopf-und Fußzeile eines Dokuments.  <br/> |
+|[HeaderFooter](headerfooter-element-visiodocument_type-complextypevisio-xml.md) <br/> |[HeaderFooter_Type](headerfooter_type-complextypevisio-xml.md) <br/> |Enthält Elemente für die Kopf- und Fußzeile eines Dokuments.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 

@@ -25,14 +25,14 @@ ms.locfileid: "33437532"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Arbeitet mit Dienstanbietern in einem Nachrichtendienst. 
+Funktioniert mit Dienstanbietern in einem Nachrichtendienst. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Anbieter Verwaltungsobjekte  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Anbieterverwaltungsobjekte  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IProviderAdmin  <br/> |
 |Zeigertyp:  <br/> |LPPROVIDERADMIN  <br/> |
    
@@ -40,15 +40,15 @@ Arbeitet mit Dienstanbietern in einem Nachrichtendienst.
 
 |||
 |:-----|:-----|
-|[Getlasterroraufzurufen](iprovideradmin-getlasterror.md) <br/> |Gibt eine [MAPIERROR](mapierror.md) -Struktur zurück, die Informationen zum vorherigen Fehler enthält, der für das Anbieter Verwaltungsobjekt aufgetreten ist.  <br/> |
-|[GetProviderable](iprovideradmin-getprovidertable.md) <br/> |Ermöglicht den Zugriff auf die Anbieter Tabelle des Nachrichtendiensts, eine Liste der Dienstanbieter im Nachrichtendienst.  <br/> |
+|[GetLastError](iprovideradmin-getlasterror.md) <br/> |Gibt eine [MAPIERROR-Struktur](mapierror.md) zurück, die Informationen zum vorherigen Fehler enthält, der für das Anbieterverwaltungsobjekt aufgetreten ist.  <br/> |
+|[GetProviderTable](iprovideradmin-getprovidertable.md) <br/> |Bietet Zugriff auf die Anbietertabelle des Nachrichtendiensts, eine Liste der Dienstanbieter im Nachrichtendienst.  <br/> |
 |[CreateProvider](iprovideradmin-createprovider.md) <br/> |Fügt dem Nachrichtendienst einen Dienstanbieter hinzu.  <br/> |
 |[DeleteProvider](iprovideradmin-deleteprovider.md) <br/> |Löscht einen Dienstanbieter aus dem Nachrichtendienst.  <br/> |
-|[OpenProfileSection](iprovideradmin-openprofilesection.md) <br/> |Öffnet einen Profil Abschnitt aus dem aktuellen Profil und gibt einen [IProfSect](iprofsectimapiprop.md) -Zeiger für weiteren Zugriff zurück.  <br/> |
+|[OpenProfileSection](iprovideradmin-openprofilesection.md) <br/> |Öffnet einen Profilabschnitt aus dem aktuellen Profil und gibt einen [IProfSect-Zeiger](iprofsectimapiprop.md) für weiteren Zugriff zurück.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Clients können einen Zeiger auf eine **IProviderAdmin** -Schnittstelle abrufen, indem Sie die [IMsgServiceAdmin:: AdminProviders](imsgserviceadmin-adminproviders.md) -Methode aufrufen; Dienstanbietern wird ein **IProviderAdmin** -Zeiger übergeben, wenn die Einstiegspunktfunktion des Nachrichtendiensts aufgerufen wird. 
+Clients können einen Zeiger auf eine **IProviderAdmin-Schnittstelle** durch Aufrufen der [IMsgServiceAdmin::AdminProviders-Methode](imsgserviceadmin-adminproviders.md) erhalten. Dienstanbietern wird ein **IProviderAdmin-Zeiger** übergeben, wenn die Einstiegspunktfunktion des Nachrichtendiensts aufgerufen wird. 
   
 ## <a name="see-also"></a>Siehe auch
 

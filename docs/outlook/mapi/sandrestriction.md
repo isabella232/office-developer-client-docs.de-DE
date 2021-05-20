@@ -25,11 +25,11 @@ ms.locfileid: "33438883"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt eine **und-** Einschränkung, die verwendet wird, um einer Gruppe von Einschränkungen mithilfe einer logischen **and-** Operation beizutreten. 
+Beschreibt eine **AND-Einschränkung,** die zum Beitreten zu einer Gruppe von Einschränkungen mithilfe eines logischen **AND-Vorgangs verwendet** wird. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SAndRestriction
@@ -40,21 +40,21 @@ typedef struct _SAndRestriction
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cRes**
   
-> Die Anzahl der Sucheinschränkungen im Array, auf die durch das **lpRes** -Element verwiesen wird. 
+> Anzahl der Sucheinschränkungen im Array, auf die das **lpRes-Element** verweist. 
     
  **lpRes**
   
-> Zeiger auf ein Array von [SRestriction](srestriction.md) -Strukturen, die mit einer logischen **and-** Operation kombiniert werden. 
+> Zeiger auf ein Array von [SRestriction-Strukturen,](srestriction.md) das mit einem logischen **AND-Vorgang kombiniert** wird. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Das Ergebnis des **SAndRestriction** ist true, wenn alle untergeordneten Einschränkungen zu true ausgewertet werden. Er ist FALSE, wenn eine untergeordnete Einschränkung als FALSE ausgewertet wird. 
+Das Ergebnis der **SAndRestriction** ist TRUE, wenn alle untergeordneten Einschränkungen auf TRUE ausgewertet werden. Es ist FALSE, wenn eine untergeordnete Einschränkung auf FALSE ausgewertet wird. 
   
-Eine Beschreibung der Einschränkungen, ihre Erstellung und Beispielcode finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md).
+Eine Beschreibung der Arten von Einschränkungen, deren Erstellung und Beispielcode finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md).
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -25,13 +25,13 @@ ms.locfileid: "33438820"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Zerstört eine [SRowSet](srowset.md) -Struktur und gibt zugeordneten Arbeitsspeicher frei, einschließlich des Arbeitsspeichers, der für alle Elementarrays und-Strukturen reserviert ist. 
+Zerstört eine [SRowSet-Struktur](srowset.md) und gibt den zugeordneten Arbeitsspeicher frei, einschließlich des für alle Memberarrays und -strukturen zugewiesenen Arbeitsspeichers. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 void FreeProws(
@@ -41,9 +41,9 @@ void FreeProws(
 
 ## <a name="parameters"></a>Parameter
 
- _PROWS_
+ _prows_
   
-> in Zeiger auf die **SRowSet** -Struktur, die zerstört werden soll. 
+> [in] Zeiger auf die **zu zerstörende SRowSet-Struktur.** 
     
 ## <a name="return-value"></a>Return value
 
@@ -51,9 +51,9 @@ None.
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Im Rahmen der Implementierung von **FreeProws**ruft MAPI die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion auf, um jeden Eintrag in der **SRowSet** -Struktur freizugeben, bevor die gesamte Struktur freigegeben wird. Daher müssen alle diese Einträge den Zuordnungsregeln für die [SRowSet](srowset.md) -Struktur unter Verwendung eines einzelnen [MAPIAllocateBuffer](mapiallocatebuffer.md) -Aufrufs für die einzelnen Elementarrays und-Strukturen gefolgt sein. 
+Im Rahmen der Implementierung von **FreeProws** ruft MAPI die [MAPIFreeBuffer-Funktion](mapifreebuffer.md) auf, um jeden Eintrag in der **SRowSet-Struktur** frei zu geben, bevor die vollständige Struktur frei wird. Daher müssen alle diese Einträge die Zuweisungsregeln für die [SRowSet-Struktur](srowset.md) befolgt haben, indem sie einen individuellen [MAPIAllocateBuffer-Aufruf](mapiallocatebuffer.md) für jedes Elementarray und jede Elementstruktur verwenden. 
   
-Weitere Informationen zum Zuweisen von Arbeitsspeicher für **ADRLIST** -und **SRowSet** -Strukturen finden Sie unter [Managing Memory for ADRLIST and SRowSet Structures](managing-memory-for-adrlist-and-srowset-structures.md). 
+Weitere Informationen zum Zuordnen von Arbeitsspeicher für **ADRLIST-** und **SRowSet-Strukturen** finden Sie unter [Managing Memory for ADRLIST and SRowSet Structures](managing-memory-for-adrlist-and-srowset-structures.md). 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -61,7 +61,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|ContentsTableListCtrl. cpp  <br/> |DwThreadFuncLoadTable  <br/> |MFCMAPI verwendet die **FreeProws** -Methode, um eine SRowSet-Struktur mit Zeilen der verarbeiteten Tabelle freizugeben.  <br/> |
+|ContentsTableListCtrl.cpp  <br/> |DwThreadFuncLoadTable  <br/> |MFCMAPI verwendet die **FreeProws-Methode,** um eine SRowSet-Struktur frei zu geben, die Zeilen der zu verarbeitenden Tabelle enthält.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

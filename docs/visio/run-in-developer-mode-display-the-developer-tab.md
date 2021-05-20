@@ -19,7 +19,7 @@ ms.locfileid: "33438792"
 
 - Klicken Sie auf die Registerkarte **Datei**, und klicken Sie dann auf **Optionen**.
     
-- Klicken Sie im Dialogfeld **Visio-Optionen** auf **erweitert**, und wählen Sie dann unter **Allgemein**die Option **im Entwicklermodus ausführen**aus.
+- Klicken Sie **im Visio Optionen** auf **Erweitert,** und wählen Sie dann unter **Allgemein** die Option **Im Entwicklermodus ausführen aus.**
     
 Danach können Sie ein Objekt auswählen und auf **ShapeSheet anzeigen** klicken, um einen schnelleren Zugriff auf das ShapeSheet-Fenster zu erhalten. 
   

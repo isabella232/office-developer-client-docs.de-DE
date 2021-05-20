@@ -25,12 +25,12 @@ ms.locfileid: "33439121"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl der Bytes, die für eine neue [SPropAttrArray](spropattrarray.md) -Struktur reserviert werden sollen, die eine bestimmte Anzahl von Eigenschaftsattributen enthält. 
+Berechnet die Anzahl der Bytes, die einer neuen [SPropAttrArray-Struktur](spropattrarray.md) zugeordnet werden sollen, die eine angegebene Anzahl von Eigenschaftsattributen enthält. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |IMessage. h  <br/> |
-|Zugehörige Struktur:  <br/> |**SPropAttrArray** <br/> |
+|Headerdatei  <br/> |Imessage.h  <br/> |
+|Verwandte Struktur:  <br/> |**SPropAttrArray** <br/> |
    
 ```cpp
 CbNewSPropAttrArray (_cattr)
@@ -38,9 +38,9 @@ CbNewSPropAttrArray (_cattr)
 
 ## <a name="parameters"></a>Parameter
 
- __cattr_
+ _ _cattr_
   
-> Die Anzahl der Eigenschaftsattribute, die in die neue **SPropAttrArray** -Struktur eingeschlossen werden sollen. 
+> Anzahl der Eigenschaftenattribute, die in die neue **SPropAttrArray-Struktur eingeschlossen werden** sollen. 
     
 ## <a name="see-also"></a>Siehe auch
 

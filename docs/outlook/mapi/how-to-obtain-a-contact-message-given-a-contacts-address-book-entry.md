@@ -1,11 +1,11 @@
 ---
-title: Abrufen einer Kontakt Nachricht bei Adressbucheinträgen für Kontakte
+title: Abrufen einer Kontaktnachricht mit einem Kontakt-Adressbucheintrag
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: a263894b-b3da-f1e4-a7da-ca3695bddc94
-description: 'Zuletzt geändert: 13 August, 2013'
+description: 'Letzte Änderung: 13. August 2013'
 ms.openlocfilehash: be988a3036c2d882f65e2e588cc9a40bfda146a5
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -13,25 +13,25 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33437791"
 ---
-# <a name="obtain-a-contact-message-given-a-contacts-address-book-entry"></a>Abrufen einer Kontakt Nachricht bei Adressbucheinträgen für Kontakte
+# <a name="obtain-a-contact-message-given-a-contacts-address-book-entry"></a>Abrufen einer Kontaktnachricht mit einem Kontakt-Adressbucheintrag
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Dieses Thema enthält ein Beispiel in C++ `HrOpenContact`, das zeigt, wie die [CONTAB_ENTRYID](contab_entryid.md) -Struktur verwendet wird, die einen Eintrag in einem Adressbuch für Kontakte identifiziert, um die zugehörige MAPI-Kontakt Nachricht abzurufen. 
+Dieses Thema enthält ein Beispiel in C++, , das zeigt, wie Sie die CONTAB_ENTRYID-Struktur verwenden, die einen Eintrag in einem Adressbuch für Kontakte identifiziert, um die zugeordnete `HrOpenContact` [#A0](contab_entryid.md) zu erhalten. 
   
-`HrOpenContact`hat die folgenden Parameter: 
+`HrOpenContact` hat die folgenden Parameter: 
   
--  *lpSession* ist ein Eingabeparameter, der die aktuelle Sitzung darstellt. **LPMAPISESSION** ist in der MAPI-Headerdatei mapix. h als Zeiger auf [IMAPISession: IUnknown](imapisessioniunknown.md)definiert.
+-  *lpSession*  ist ein Eingabeparameter, der die aktuelle Sitzung darstellt. **LPMAPISESSION** ist in der MAPI-Headerdatei mapix.h als Zeiger auf [IMAPISession : IUnknown definiert.](imapisessioniunknown.md)
     
--  *cbEntryID* ist ein Eingabeparameter, der die Größe der mit *lpEntryID* verknüpften Eintrags-ID darstellt. 
+-  *cbEntryID* ist ein Eingabeparameter, der die Größe des Eintragsbezeichners darstellt, der *lpEntryID zugeordnet ist.* 
     
--  *lpEntryID* ist ein Eingabeparameter, der einen Zeiger auf den Eintragsbezeichner eines Eintrags in einem Kontakt Adressbuch darstellt. 
+-  *lpEntryID ist*  ein Eingabeparameter, der einen Zeiger auf die Eintrags-ID eines Eintrags in einem Kontaktadressenbuch darstellt. 
     
--  *ulFlags* ist ein Eingabeparameter, der eine Bitmaske darstellt, die Objektzugriffs Kennzeichen für die MAPI-Kontakt Nachricht enthält. 
+-  *ulFlags ist*  ein Eingabeparameter, der eine Bitmaske darstellt, die Objektzugriffsflags für die MAPI-Kontaktnachricht enthält. 
     
--  *lpContactMessage* ist ein Ausgabeparameter, der einen Zeiger auf die MAPI-Kontakt Nachricht darstellt. 
+-  *lpContactMessage*  ist ein Ausgabeparameter, der einen Zeiger auf die MAPI-Kontaktnachricht darstellt. 
     
-Um die zugrunde liegende MAPI- `HrOpenContact` Kontakt Nachricht zu öffnen, wandelt *lpEntryID* zunächst in einen Zeiger auf **CONTAB_ENTRYID**. Anschließend wird [IMAPISession:: OpenEntry](imapisession-openentry.md) aufgerufen, um die MAPI-Kontakt Nachricht abzurufen und als Parameter die Felder *cbeid* und *Abeid* des Eintrags im Adressbuchkontakte zu übergeben, die die Größe der Eintrags-ID und die Eintragsbezeichner der MAPI-Kontakt Nachricht. 
+Um die zugrunde liegende MAPI-Kontaktnachricht zu öffnen, wird `HrOpenContact` *zunächst lpEntryID* in einen Zeiger auf **CONTAB_ENTRYID.** Anschließend ruft sie [IMAPISession::OpenEntry](imapisession-openentry.md) auf, um die #A0 zu erhalten. Dabei werden die  *Felder cbeid*  und  *abeid*  des Eintrags im Adressbuch kontakte übergeben, die die Größe der Eintrags-ID bzw. die Eintrags-ID der #A1 identifizieren. 
   
 ```cpp
 TZDEFINITION* BinToTZDEFINITION(ULONG cbDef, LPBYTE lpbDef) 

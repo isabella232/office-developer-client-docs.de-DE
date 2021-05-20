@@ -25,7 +25,7 @@ ms.locfileid: "33436874"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt die Eintrags-ID für den anfänglichen Adressbuchcontainer zurück.
+Gibt den Eintragsbezeichner für den anfänglichen Adressbuchcontainer zurück.
   
 ```cpp
 HRESULT GetDefaultDir(
@@ -38,11 +38,11 @@ HRESULT GetDefaultDir(
 
  _lpcbEntryID_
   
-> Out Ein Zeiger auf die Bytezahl in der Eintrags-ID, auf die durch den _lppEntryID_ -Parameter verwiesen wird. 
+> [out] Ein Zeiger auf die Byteanzahl in der Eintrags-ID, auf die der  _lppEntryID-Parameter_ verweist. 
     
  _lppEntryID_
   
-> Out Ein Zeiger auf einen Zeiger auf die Eintrags-ID des Standardcontainers.
+> [out] Ein Zeiger auf einen Zeiger auf die Eintrags-ID des Standardcontainers.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -50,11 +50,11 @@ S_OK
   
 > Der Eintragsbezeichner des Standardcontainers wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Client Anwendungen und Dienstanbieter rufen die **GetDefaultDir** -Methode auf, um den Eintragsbezeichner des Standard Adressbuch Containers abzurufen. Der Standardcontainer ist, was der Benutzer im Adressbuch angezeigt sieht, wenn das Adressbuch zum ersten Mal geöffnet wird. Wenn kein Standardcontainer durch einen Aufruf der [IAddrBook:: SetDefaultDir](iaddrbook-setdefaultdir.md) -Methode festgelegt wurde, weist MAPI als Standardcontainer den ersten Container mit Namen, die nicht das persönliche Adressbuch (PAB) ist. Wenn ein solcher Container nicht gefunden werden kann, wird das PAB zum Standardcontainer. 
+Clientanwendungen und Dienstanbieter rufen die **GetDefaultDir-Methode** auf, um die Eintrags-ID des Standard-Adressbuchcontainers abzurufen. Der Standardcontainer wird dem Benutzer angezeigt, der beim ersten Öffnen des Adressbuchs im Adressbuch angezeigt wird. Wenn ein Standardcontainer nicht durch einen Aufruf der [IAddrBook::SetDefaultDir-Methode](iaddrbook-setdefaultdir.md) festgelegt wurde, weist MAPI als Standardcontainer den ersten Container mit Namen zu, bei dem es sich nicht um das persönliche Adressbuch (PAB) handelt. Wenn ein solcher Container nicht gefunden werden kann, wird das PAB zum Standardcontainer. 
   
-Zum Festlegen des Standardverzeichnisses Ruft ein Client oder Anbieter die **SetDefaultDir** -Methode auf. Clients und Anbieter müssen die [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) -Methode nicht aufrufen; Da Änderungen am Adressbuch nicht durchgeführt werden, werden Änderungen sofort dauerhaft vorgenommen. 
+Zum Festlegen des Standardverzeichnisses ruft ein Client oder Anbieter die **SetDefaultDir-Methode** auf. Clients und Anbieter müssen die [IMAPIProp::SaveChanges-Methode nicht](imapiprop-savechanges.md) aufrufen. Da Änderungen am Adressbuch nicht vorgenommen werden, werden Änderungen sofort dauerhaft vorgenommen. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -62,7 +62,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MainDlg. cpp  <br/> |CMainDlg:: OnOpenDefaultDir  <br/> |MFCMAPI verwendet die **GetDefaultDir** -Methode, um die ID für den standardmäßigen Adressbuchcontainer abzurufen.  <br/> |
+|MainDlg.cpp  <br/> |CMainDlg::OnOpenDefaultDir  <br/> |MFCMAPI verwendet die **GetDefaultDir-Methode,** um die ID für den Standard-Adressbuchcontainer zu erhalten.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -74,7 +74,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[Kanonische Pidtagcontainerflags (-Eigenschaft](pidtagcontainerflags-canonical-property.md)
+[PidTagContainerFlags (kanonische Eigenschaft)](pidtagcontainerflags-canonical-property.md)
   
 [IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 

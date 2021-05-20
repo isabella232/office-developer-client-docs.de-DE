@@ -21,13 +21,13 @@ ms.locfileid: "33439107"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt die Eintrags-ID des globalen Adressbuchs für den Exchange-Dienst zurück, der von _pEmsmdbUID_identifiziert wurde. Der zurückgegebene Eintragsbezeichner sollte mit [mapifreebufferfreigegeben](mapifreebuffer.md)freigegeben werden.
+Gibt den Eintragsbezeichner des globalen Adressbuchs für den Exchange, der von _pEmsmdbUID identifiziert wurde._ Der zurückgegebene Eintragsbezeichner sollte mithilfe von [MAPIFreeBuffer freigebe.](mapifreebuffer.md)
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |abhelp. h  <br/> |
+|Headerdatei  <br/> |abhelp.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 HRESULT HrGetGALFromEmsmdbUID(
@@ -43,22 +43,22 @@ HRESULT HrGetGALFromEmsmdbUID(
 
  _pSess_
   
-> in Der angemeldete IMAPISession. Er darf nicht NULL sein.
+> [in] Die angemeldete IMAPISession. Es kann nicht NULL sein.
     
  _pAddrBook_
   
-> in Das zum Öffnen des Eintrags Bezeichners verwendete Adressbuch. Er darf nicht NULL sein.
+> [in] Das Adressbuch, das zum Öffnen der Eintrags-ID verwendet wird. Es kann nicht NULL sein.
     
  _pEmsmdbUID_
   
-> in Ein Zeiger auf ein **emsmdbUID** , das die GAL des Exchange-Diensts identifiziert, der abgerufen werden soll. Wenn _pEmsmdbUID_ oder die UID NULL ist, ruft diese Funktion die Legacy-GAL des Exchange-Diensts ab. 
+> [in] Ein Zeiger auf eine **emsmdbUID,** die die GAL des abzurufenden Exchange identifiziert. Wenn _pEmsmdbUID_ NULL oder null UID ist, ruft diese Funktion die legacy-GAL des Exchange ab. 
     
  _lpcbeid_
   
-> Out Ein Zeiger auf die Bytezahl des Eintrags Bezeichners der globalen Adressliste.
+> [out] Ein Zeiger auf die Byteanzahl des Eintragsbezeichners der globalen Adressliste.
     
  _lppeid_
   
-> Out Ein Zeiger auf die Eintrags-ID der globalen Adressliste. Dies sollte mit [mapifreebufferfreigegeben](mapifreebuffer.md)freigegeben werden.
+> [out] Ein Zeiger auf die Eintrags-ID der globalen Adressliste. Dies sollte mithilfe von [MAPIFreeBuffer frei werden.](mapifreebuffer.md)
     
 

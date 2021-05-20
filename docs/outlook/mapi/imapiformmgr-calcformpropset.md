@@ -25,7 +25,7 @@ ms.locfileid: "33436426"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt ein Array der Eigenschaften zurück, die eine Gruppe von Formularen verwendet.
+Gibt ein Array der Eigenschaften zurück, die von einer Gruppe von Formularen verwendet werden.
   
 ```cpp
 HRESULT CalcFormPropSet(
@@ -39,15 +39,15 @@ HRESULT CalcFormPropSet(
 
  _pfrminfoarray_
   
-> in Ein Zeiger auf ein Array von Formular Informationsobjekten, die die Formulare identifizieren, für die Eigenschaften zurückgegeben werden sollen.
+> [in] Ein Zeiger auf ein Array von Formularinformationsobjekten, die die Formulare identifizieren, für die Eigenschaften zurückgeben werden sollen.
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die steuert, wie das Eigenschaftenarray im _ppResults_ -Parameter zurückgegeben wird. Die folgenden Flags können festgelegt werden: 
+> [in] Eine Bitmaske mit Flags, die steuert, wie das Eigenschaftenarray im  _ppResults-Parameter_ zurückgegeben wird. Die folgenden Kennzeichen können festgelegt werden: 
     
 FORMPROPSET_INTERSECTION 
   
-> Das zurückgegebene Array enthält den Schnittpunkt der Eigenschaften des Formulars.
+> Das zurückgegebene Array enthält die Schnittmenge der Eigenschaften des Formulars.
     
 FORMPROPSET_UNION 
   
@@ -55,29 +55,29 @@ FORMPROPSET_UNION
     
 MAPI_UNICODE 
   
-> Die im Array zurückgegebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format.
+> Die im Array zurückgegebenen Zeichenfolgen haben das Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Zeichenfolgen im ANSI-Format.
     
  _ppResults_
   
-> Out Ein Zeiger auf einen Zeiger auf die zurückgegebene [SMAPIFormPropArray](smapiformproparray.md) -Struktur, die die Eigenschaften enthält, die von den Formularen verwendet werden. 
+> [out] Ein Zeiger auf einen Zeiger auf die zurückgegebene [SMAPIFormPropArray-Struktur,](smapiformproparray.md) die die von den Formularen verwendeten Eigenschaften enthält. 
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Aufruf war erfolgreich, und der erwartete Wert oder die Werte wurden zurückgegeben.
+> Der Aufruf war erfolgreich und hat den erwarteten Wert oder die erwarteten Werte zurückgegeben.
     
 MAPI_E_BAD_CHARWIDTH 
   
-> Entweder wurde das MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt Unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
+> Entweder wurde MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Formular Betrachter rufen die **IMAPIFormMgr:: CalcFormPropSet** -Methode auf, um ein Array der Eigenschaften abzurufen, die eine Gruppe von Formularen verwendet. **CalcFormPropSet** nimmt entweder einen Schnittpunkt oder eine Vereinigung dieser Formulareigenschaften Sätze an, je nach dem im _ulFlags_ -Parameter festgelegten Flag und gibt eine **SMAPIFormPropArray** -Struktur zurück, die die resultierende Gruppe von Eigenschaften. 
+Formularbetrachter rufen die **IMAPIFormMgr::CalcFormPropSet-Methode** auf, um ein Array der Eigenschaften zu erhalten, die von einer Gruppe von Formularen verwendet werden. **CalcFormPropSet** verwendet je nach dem im  _ulFlags-Parameter_ festgelegten Kennzeichen eine Schnittmenge oder eine Vereinigung der Eigenschaftensätze dieser Formulare und gibt eine **SMAPIFormPropArray-Struktur** zurück, die die resultierende Gruppe von Eigenschaften enthält. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Wenn ein Formular Betrachter das MAPI_UNICODE-Flag im _ulFlags_ -Parameter übergibt, sollten alle Zeichenfolgen als Unicode-Zeichenfolgen zurückgegeben werden. Formularbibliothek Anbieter, die Unicode-Zeichenfolgen nicht unterstützen, sollten MAPI_E_BAD_CHARWIDTH zurückgeben, wenn MAPI_UNICODE übergeben wird. 
+Wenn ein Formularanzeiger das MAPI_UNICODE im  _ulFlags-Parameter_ übergibt, sollten alle Zeichenfolgen als Unicode-Zeichenfolgen zurückgegeben werden. Formularbibliotheksanbieter, die keine Unicode-Zeichenfolgen unterstützen, sollten MAPI_E_BAD_CHARWIDTH zurückgeben, MAPI_UNICODE übergeben wird. 
   
 ## <a name="see-also"></a>Siehe auch
 

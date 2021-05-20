@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagcommonviewsentryid (-Eigenschaft
+title: PidTagCommonViewsEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,13 +19,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33437343"
 ---
-# <a name="pidtagcommonviewsentryid-canonical-property"></a>Kanonische Pidtagcommonviewsentryid (-Eigenschaft
+# <a name="pidtagcommonviewsentryid-canonical-property"></a>PidTagCommonViewsEntryId (kanonische Eigenschaft)
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält die Eintrags-ID des vordefinierten allgemeinen Ansichts Ordners. 
+Enthält die Eintrags-ID des vordefinierten Ordners für allgemeine Ansicht. 
   
 |||
 |:-----|:-----|
@@ -34,38 +34,38 @@ Enthält die Eintrags-ID des vordefinierten allgemeinen Ansichts Ordners.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Outlook-Anwendung  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Der Ordner allgemeine Ansicht enthält eine vordefinierte Gruppe von Standard Ansichtsbezeichnern, während der Ansichtsordner Bezeichner enthält, die von einem Messagingbenutzer definiert werden. Diese Ordner, die in der Hierarchie der zwischenmenschlichen Nachrichten (IPM) nicht sichtbar sind, können viele Ansichtsbezeichner enthalten, die jeweils als Nachricht gespeichert werden. Eine Clientanwendung kann die beiden Gruppen von Bezeichnern zusammenführen und beide zur Verfügung stellen. 
+Der Allgemeine Ansichtsordner enthält einen vordefinierten Satz von Standardansichtsbezeichnern, während der Ansichtsordner von einem Messagingbenutzer definierte Specifier enthält. Diese Ordner, die in der IpM-Hierarchie (Interpersonal Message) nicht sichtbar sind, können viele Ansichtsbezeichner enthalten, die jeweils als Nachricht gespeichert sind. Eine Clientanwendung kann die beiden Sätze von Specifiern zusammenführen und beide verfügbar machen. 
   
-Weitere Informationen zu Ansichten finden Sie unter [Anzeigen von Ordnern](mapi-view-folders.md).
+Weitere Informationen zu Ansichten finden Sie unter [View Folders](mapi-view-folders.md).
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
-### <a name="header-files"></a>Header Dateien
+### <a name="header-files"></a>Headerdateien
 
-Mapidefs. h
+Mapidefs.h
   
-> Stellt Datentypdefinitionen bereit.
+> Bietet Datentypdefinitionen.
     
-Mapitags. h
+Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Kanonische Pidtagdefaultviewentryid (-Eigenschaft](pidtagdefaultviewentryid-canonical-property.md)
+[PidTagDefaultViewEntryId (kanonische Eigenschaft)](pidtagdefaultviewentryid-canonical-property.md)
   
-[Kanonische Pidtagviewsentryid (-Eigenschaft](pidtagviewsentryid-canonical-property.md)
+[PidTagViewsEntryId (kanonische Eigenschaft)](pidtagviewsentryid-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

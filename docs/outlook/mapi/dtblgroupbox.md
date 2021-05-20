@@ -25,12 +25,12 @@ ms.locfileid: "33438393"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt ein Gruppenfeld-Steuerelement, das in einem von einer Anzeigetabelle erstellten Dialogfeldverwendet wird.
+Beschreibt ein Gruppenfeldsteuerelement, das in einem Dialogfeld verwendet wird, das aus einer Anzeigetabelle erstellt wird.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehöriges Makro:  <br/> |[SizedDtblGroupBox](sizeddtblgroupbox.md) <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandtes Makro:  <br/> |[SizedDtblGroupBox](sizeddtblgroupbox.md) <br/> |
    
 ```cpp
 typedef struct _DTBLGROUPBOX
@@ -41,25 +41,25 @@ typedef struct _DTBLGROUPBOX
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **ulbLpszLabel**
   
-> Position im Arbeitsspeicher der Zeichenfolge, die das Gruppenfeld begleitet. Wenn diese Option angezeigt wird, wird Sie oben links im Feld angezeigt.
+> Position im Arbeitsspeicher der Zeichenzeichenfolge, die das Gruppenfeld begleitet. Wenn sie angezeigt wird, wird die Beschriftung oben links im Feld angezeigt.
     
  **ulFlags**
   
-> Bitmaske der Flags, mit denen das Format der Bezeichnung festgelegt wird, auf die durch das **ulbLpszLabel** -Element verwiesen wird. Das folgende Flag kann festgelegt werden: 
+> Bitmaske von Flags, die verwendet werden, um das Format der Bezeichnung zu bestimmen, auf das das **ulbLpszLabel-Element** verweist. Das folgende Flag kann festgelegt werden: 
     
 MAPI_UNICODE 
   
-> Die Bezeichnung ist im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, ist die Bezeichnung im ANSI-Format.
+> Die Bezeichnung ist im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befindet sich die Bezeichnung im ANSI-Format.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Eine **DTBLGROUPBOX** -Struktur beschreibt ein Gruppenfeld-Steuerelement, mit dem andere Steuerelemente im Dialogfeld visuell zugeordnet werden. Die Hervorhebungs Technik umfasst das umschließen der anderen Steuerelemente durch ein Feld. 
+Eine **DTBLGROUPBOX-Struktur** beschreibt ein Gruppenfeldsteuerelement, das zum visuellen Zuordnen anderer Steuerelemente im Dialogfeld verwendet wird. Die Hervorhebungstechnik umfasst das Um umgeben der anderen Steuerelemente durch ein Feld. 
   
-Eine Übersicht über Anzeige Tabellen finden Sie unter [Display Tables](display-tables.md). Weitere Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
+Eine Übersicht über Anzeigetabellen finden Sie unter [Display Tables](display-tables.md). Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
   
 ## <a name="see-also"></a>Siehe auch
 

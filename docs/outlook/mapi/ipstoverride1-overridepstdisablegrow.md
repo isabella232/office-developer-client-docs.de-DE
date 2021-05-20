@@ -25,7 +25,7 @@ ms.locfileid: "33438925"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Hebt die Sperre für eine persönliche Ordner-Datei (PST) für eine Sitzung auf und überschreibt die PSTDisableGrow-Richtlinie.
+Entsperrt eine Pst-Datei (Personal Folders) für eine Sitzung, wobei die RICHTLINIE PSTDisableGrow überschrieben wird.
   
 ```cpp
 HRESULT OverridePSTDisableGrow();

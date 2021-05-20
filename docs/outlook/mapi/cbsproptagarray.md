@@ -25,12 +25,12 @@ ms.locfileid: "33438428"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl der Bytes in einer vorhandenen [SPropTagArray](sproptagarray.md) -Struktur. 
+Berechnet die Anzahl der Bytes in einer vorhandenen [SPropTagArray-Struktur.](sproptagarray.md) 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |**SPropTagArray** <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |**SPropTagArray** <br/> |
    
 ```cpp
 CbSPropTagArray (_lparray)
@@ -38,9 +38,9 @@ CbSPropTagArray (_lparray)
 
 ## <a name="parameters"></a>Parameter
 
- __LPArray_
+ _ _lparray_
   
-> Zeiger auf die vorhandene **SPropTagArray** -Struktur. 
+> Zeiger auf die vorhandene **SPropTagArray-Struktur.** 
     
 ## <a name="see-also"></a>Siehe auch
 

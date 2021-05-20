@@ -1,5 +1,5 @@
 ---
-title: Show Page Breaks-Element (Window_Type complexType) (Visio XML)
+title: ShowPageBreaks-Element (Window_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34541442"
 ---
-# <a name="showpagebreaks-element-windowtype-complextype-visio-xml"></a>Show Page Breaks-Element (Window_Type complexType) (Visio XML)
+# <a name="showpagebreaks-element-window_type-complextype-visio-xml"></a>ShowPageBreaks-Element (Window_Type complexType) (Visio XML)
 
 Gibt an, ob Seitenumbrüche in einem Fenster angezeigt werden.
   
@@ -24,8 +24,8 @@ Gibt an, ob Seitenumbrüche in einem Fenster angezeigt werden.
 |:-----|:-----|
 |**Elementtyp** <br/> |[ShowPageBreaks_Type](showpagebreaks_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
-|**Dokumentteile** <br/> |Windows. XML  <br/> |
+|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
+|**Dokumentteile** <br/> |windows.xml  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,7 +36,7 @@ Gibt an, ob Seitenumbrüche in einem Fenster angezeigt werden.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

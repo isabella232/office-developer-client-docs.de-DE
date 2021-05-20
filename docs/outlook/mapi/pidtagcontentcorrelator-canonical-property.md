@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagcontentcorrelator (-Eigenschaft
+title: PidTagContentCorrelator (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,13 +19,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33438526"
 ---
-# <a name="pidtagcontentcorrelator-canonical-property"></a>Kanonische Pidtagcontentcorrelator (-Eigenschaft
+# <a name="pidtagcontentcorrelator-canonical-property"></a>PidTagContentCorrelator (kanonische Eigenschaft)
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält einen Wert, den der Absender der Nachricht verwenden kann, um einen Bericht mit der ursprünglichen Nachricht abzugleichen.
+Enthält einen Wert, den der Absender der Nachricht verwenden kann, um einen Bericht mit der ursprünglichen Nachricht zu übereinstimmen.
   
 |||
 |:-----|:-----|
@@ -34,21 +34,21 @@ Enthält einen Wert, den der Absender der Nachricht verwenden kann, um einen Ber
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Exchange  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Der Inhalt der binären Zeichenfolge wird vom Absender der Nachricht definiert. Wenn diese Eigenschaft für eine ausgehende Nachricht festgelegt ist, sollte Sie in alle Berichte kopiert werden, die als Antwort auf die Nachricht generiert wurden.
+Der Inhalt der binären Zeichenfolge wird vom Nachrichtenursprung definiert. Wenn für eine ausgehende Nachricht festgelegt, sollte diese Eigenschaft in alle Berichte kopiert werden, die als Antwort auf die Nachricht generiert werden.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
-### <a name="header-files"></a>Header Dateien
+### <a name="header-files"></a>Headerdateien
 
-Mapidefs. h
+Mapidefs.h
   
-> Stellt Datentypdefinitionen bereit.
+> Bietet Datentypdefinitionen.
     
-Mapitags. h
+Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapitags. h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

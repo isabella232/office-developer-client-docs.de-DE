@@ -22,12 +22,12 @@ Dekodiert eine Base64-Zeichenfolge und speichert sie in Form von binären Daten.
   
 ## <a name="syntax"></a>Syntax
 
-BLOB (* * *ntext* * *) 
+BLOB (** *bintext* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _ntext_ <br/> |Erforderlich  <br/> |**String** <br/> | Eine Base64-codierte Zeichenfolge.  <br/> |
+| _bintext_ <br/> |Erforderlich  <br/> |**String** <br/> | Eine Base64-codierte Zeichenfolge.  <br/> |
    
 

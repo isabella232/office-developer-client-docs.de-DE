@@ -25,11 +25,11 @@ ms.locfileid: "33438288"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von binären Werten. 
+Enthält ein Array mit binären Werten. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SBinaryArray
@@ -40,21 +40,21 @@ typedef struct _SBinaryArray
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cValues**
   
-> Die Anzahl der Werte im Array, auf die durch das **lpbin** -Element verwiesen wird. 
+> Anzahl der Werte im Array, auf die das **lpbin-Element** verweist. 
     
  **lpbin**
   
-> Zeiger auf ein Array von [SBinary](sbinary.md) -Strukturen, die die Binärwerte enthält. 
+> Zeiger auf ein Array von [SBinary-Strukturen,](sbinary.md) das die binären Werte enthält. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **SBinaryArray** -Struktur wird verwendet, um Eigenschaften vom Typ PT_MV_BINARY zu beschreiben. 
+Die **SBinaryArray-Struktur** wird verwendet, um Eigenschaften vom Typ PT_MV_BINARY. 
   
-Weitere Informationen zu PT_MV_BINARY finden Sie unter [Liste der Eigenschaftstypen](property-types.md).
+Weitere Informationen zu PT_MV_BINARY finden Sie unter [List of Property Types](property-types.md).
   
 ## <a name="see-also"></a>Siehe auch
 

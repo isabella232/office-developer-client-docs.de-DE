@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34541085"
 ---
-# <a name="headerfooterfont-element-headerfootertype-complextype-visio-xml"></a>HeaderFooterFont-Element (HeaderFooter_Type complexType) (Visio XML)
+# <a name="headerfooterfont-element-headerfooter_type-complextype-visio-xml"></a>HeaderFooterFont-Element (HeaderFooter_Type complexType) (Visio XML)
 
 Gibt die Schriftart an, die für den Text in der Kopf- und Fußzeile verwendet wird.
   
@@ -24,8 +24,8 @@ Gibt die Schriftart an, die für den Text in der Kopf- und Fußzeile verwendet w
 |:-----|:-----|
 |**Elementtyp** <br/> |[HeaderFooterFont_Type](headerfooterfont_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
-|**Dokumentteile** <br/> |Document. XML  <br/> |
+|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
+|**Dokumentteile** <br/> |document.xml  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,13 +36,13 @@ Gibt die Schriftart an, die für den Text in der Kopf- und Fußzeile verwendet w
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[HeaderFooter](headerfooter-element-visiodocument_type-complextypevisio-xml.md) <br/> |[HeaderFooter_Type](headerfooter_type-complextypevisio-xml.md) <br/> |Enthält Elemente für die Kopf-und Fußzeile eines Dokuments.  <br/> |
+|[HeaderFooter](headerfooter-element-visiodocument_type-complextypevisio-xml.md) <br/> |[HeaderFooter_Type](headerfooter_type-complextypevisio-xml.md) <br/> |Enthält Elemente für die Kopf- und Fußzeile eines Dokuments.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -52,19 +52,19 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|CharSet  <br/> |XSD: unsignedByte  <br/> |Optional  <br/> |Gibt den Zeichensatz der Schriftart an. Entspricht dem GDI-LOGFONTlfCharSet-Feld.  <br/> |Werte des XSD: unsignedByte-Typs.  <br/> |
-|ClipPrecision  <br/> |XSD: unsignedByte  <br/> |Optional  <br/> |Gibt die Clipping-Genauigkeit der Schriftart an. Entspricht dem GDI-LOGFONTlfClipPrecision-Feld.  <br/> |Werte des XSD: unsignedByte-Typs.  <br/> |
-|Hemmung  <br/> |XSD: int  <br/> |Optional  <br/> |Gibt das Escapement-Attribut der Schriftart an. Entspricht dem GDI-LOGFONTlfEscapement-Feld.  <br/> |Werte des Typs XSD: int.  <br/> |
-|FaceName  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Enthält Informationen zu einer Schriftart.  <br/> |Werte des Typs XSD: String.  <br/> |
-|Height  <br/> |XSD: int  <br/> |Optional  <br/> |Gibt die Höhe der Form in Zeichnungseinheiten an.  <br/> |Werte des Typs XSD: int.  <br/> |
-|Kursiv  <br/> |XSD: unsignedByte  <br/> |Optional  <br/> |Gibt an, ob die Schriftart kursiv formatiert ist. Entspricht dem GDI-LOGFONTlfItalic-Feld.  <br/> |Werte des XSD: unsignedByte-Typs.  <br/> |
-|Orientierung  <br/> |XSD: int  <br/> |Optional  <br/> |Gibt die Ausrichtung der Schriftart an. Entspricht dem GDI-LOGFONTlfOrientation-Feld.  <br/> |Werte des Typs XSD: int.  <br/> |
-|OutPrecision  <br/> |XSD: unsignedByte  <br/> |Optional  <br/> |Gibt das Ausgabe Genauigkeits Attribut der Schriftart an. Entspricht dem GDI-LOGFONTlfOutPrecision-Feld.  <br/> |Werte des XSD: unsignedByte-Typs.  <br/> |
-|PitchAndFamily  <br/> |XSD: unsignedByte  <br/> |Optional  <br/> |Gibt die Tonhöhe und die Schriftfamilie der Schriftart an. Entspricht dem GDI-LOGFONTlfPitchAndFamily-Feld.  <br/> |Werte des XSD: unsignedByte-Typs.  <br/> |
-|Quality  <br/> |XSD: unsignedByte  <br/> |Optional  <br/> |Gibt die Ausgabequalität der Schriftart an. Entspricht dem GDI-LOGFONTlfQuality-Feld.  <br/> |Werte des XSD: unsignedByte-Typs.  <br/> |
-|Durchgestrichen  <br/> |XSD: unsignedByte  <br/> |Optional  <br/> |Gibt an, ob die Schriftart eine durchgestrichen Schriftart ist. Entspricht dem GDI-LOGFONTlfStrikeOut-Feld.  <br/> |Werte des XSD: unsignedByte-Typs.  <br/> |
-|Unterstrichen  <br/> |XSD: unsignedByte  <br/> |Optional  <br/> |Gibt an, ob die Schriftart unterstrichen ist. Entspricht dem GDI-LOGFONTlfUnderline-Feld.  <br/> |Werte des XSD: unsignedByte-Typs.  <br/> |
-|Schriftbreite  <br/> |XSD: int  <br/> |Optional  <br/> |Gibt die Gewichtung der Schriftart an. Entspricht dem GDI-LOGFONTlfWeight-Feld.  <br/> |Werte des Typs XSD: int.  <br/> |
-|Width  <br/> |XSD: int  <br/> |Optional  <br/> |Enthält die Breite der zugeordneten Form in Zeichnungseinheiten.  <br/> |Werte des Typs XSD: int.  <br/> |
+|CharSet  <br/> |xsd:unsignedByte  <br/> |Optional  <br/> |Gibt den Zeichensatz der Schriftart an. Entspricht dem Feld GDI LOGFONTlfCharSet.  <br/> |Werte des xsd:unsignedByte-Typs.  <br/> |
+|ClipPrecision  <br/> |xsd:unsignedByte  <br/> |Optional  <br/> |Gibt die Zuschneidegenauigkeit der Schriftart an. Entspricht dem Feld GDI LOGFONTlfClipPrecision.  <br/> |Werte des xsd:unsignedByte-Typs.  <br/> |
+|Escapement  <br/> |xsd:int  <br/> |Optional  <br/> |Gibt das escapement-Attribut der Schriftart an. Entspricht dem GDI LOGFONTlfEscapement-Feld.  <br/> |Werte des xsd:int-Typs.  <br/> |
+|FaceName  <br/> |xsd:string  <br/> |Optional  <br/> |Enthält Informationen zu einer Schriftart.  <br/> |Werte des xsd:string-Typs.  <br/> |
+|Height  <br/> |xsd:int  <br/> |Optional  <br/> |Gibt die Höhe der Form in Zeichnungseinheiten an.  <br/> |Werte des xsd:int-Typs.  <br/> |
+|Kursiv  <br/> |xsd:unsignedByte  <br/> |Optional  <br/> |Gibt an, ob die Schriftart italisch ist. Entspricht dem GDI LOGFONTlfItalic-Feld.  <br/> |Werte des xsd:unsignedByte-Typs.  <br/> |
+|Orientierung  <br/> |xsd:int  <br/> |Optional  <br/> |Gibt die Ausrichtung der Schriftart an. Entspricht dem Feld GDI LOGFONTlfOrientation.  <br/> |Werte des xsd:int-Typs.  <br/> |
+|OutPrecision  <br/> |xsd:unsignedByte  <br/> |Optional  <br/> |Gibt das Ausgabegenauigkeitsattribut der Schriftart an. Entspricht dem Feld GDI LOGFONTlfOutPrecision.  <br/> |Werte des xsd:unsignedByte-Typs.  <br/> |
+|PitchAndFamily  <br/> |xsd:unsignedByte  <br/> |Optional  <br/> |Gibt die Tonhöhe und Familie der Schriftart an. Entspricht dem GDI LOGFONTlfPitchAndFamily-Feld.  <br/> |Werte des xsd:unsignedByte-Typs.  <br/> |
+|Qualität  <br/> |xsd:unsignedByte  <br/> |Optional  <br/> |Gibt die Ausgabequalität der Schriftart an. Entspricht dem Feld GDI LOGFONTlfQuality.  <br/> |Werte des xsd:unsignedByte-Typs.  <br/> |
+|StrikeOut  <br/> |xsd:unsignedByte  <br/> |Optional  <br/> |Gibt an, ob es sich bei der Schriftart um eine Streichschriftart handelt. Entspricht dem Feld GDI LOGFONTlfStrikeOut.  <br/> |Werte des xsd:unsignedByte-Typs.  <br/> |
+|Unterstrichen  <br/> |xsd:unsignedByte  <br/> |Optional  <br/> |Gibt an, ob die Schriftart unterstrichen ist. Entspricht dem GDI LOGFONTlfUnderline-Feld.  <br/> |Werte des xsd:unsignedByte-Typs.  <br/> |
+|Schriftbreite  <br/> |xsd:int  <br/> |Optional  <br/> |Gibt die Gewichtung der Schriftart an. Entspricht dem Feld GDI LOGFONTlfWeight.  <br/> |Werte des xsd:int-Typs.  <br/> |
+|Width  <br/> |xsd:int  <br/> |Optional  <br/> |Enthält die Breite der zugeordneten Form in Zeichnungseinheiten.  <br/> |Werte des xsd:int-Typs.  <br/> |
    
 

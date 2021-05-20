@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: b5292f82-f299-ea96-6101-ebb799bbec9a
-description: Gibt die Objekte an, an die die Shapes kleben, wenn der Klebstoff im Dokument aktiviert ist.
+description: Gibt die Objekte an, an die Shapes kleben, wenn der Kleber im Dokument aktiviert ist.
 ms.openlocfilehash: c2966cfb8805120aca164fc2f6f28b0210923f6f
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
@@ -14,9 +14,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34542205"
 ---
-# <a name="gluesettings-element-windowtype-complextype-visio-xml"></a>GlueSettings-Element (Window_Type complexType) (Visio XML)
+# <a name="gluesettings-element-window_type-complextype-visio-xml"></a>GlueSettings-Element (Window_Type complexType) (Visio XML)
 
-Gibt die Objekte an, an die die Shapes kleben, wenn der Klebstoff im Dokument aktiviert ist.
+Gibt die Objekte an, an die Shapes kleben, wenn der Kleber im Dokument aktiviert ist.
   
 ## <a name="element-information"></a>Informationen zum Element
 
@@ -24,8 +24,8 @@ Gibt die Objekte an, an die die Shapes kleben, wenn der Klebstoff im Dokument ak
 |:-----|:-----|
 |**Elementtyp** <br/> |[GlueSettings_Type](gluesettings_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
-|**Dokumentteile** <br/> |Windows. XML, Document. XML  <br/> |
+|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
+|**Dokumentteile** <br/> |windows.xml, document.xml  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,7 +36,7 @@ Gibt die Objekte an, an die die Shapes kleben, wenn der Klebstoff im Dokument ak
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

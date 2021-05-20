@@ -18,13 +18,13 @@ ms.locfileid: "33438267"
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Ab Excel 2010 können XLLs Ereignisse empfangen, die zum Verwalten des asynchronen Funktions Lebenszyklus entwickelt wurden. Die Ereignisse lauten wie folgt:
+Ab Excel 2010 können XLLs Ereignisse empfangen, die zum Verwalten des asynchronen Funktionslebenszyklus entwickelt wurden. Die Ereignisse sind wie folgt:
   
-- **CalculationEnded**: wird ausgelöst, wenn Excel nicht mehr berechnet wird. Nach diesem Ereignis können Sie während der Berechnung zugewiesene Ressourcen freigeben.
+- **CalculationEnded**: Wird ausgelöst, wenn Excel Berechnung abgeschlossen ist. Nach diesem Ereignis können Sie ressourcen frei, die während der Berechnung zugewiesen wurden.
     
-- **CalculationCanceled**: wird ausgelöst, wenn der Benutzer die Berechnung unterbricht. Die XLL beendet alle asynchronen Aktivitäten. Unmittelbar nach diesem Ereignis wird das **CalculationEnded** -Ereignis ausgelöst. 
+- **CalculationCanceled**: Wird ausgelöst, wenn der Benutzer die Berechnung unterbricht. Die XLL beendet alle asynchronen Aktivitäten. Unmittelbar nach diesem Ereignis wird **das CalculationEnded-Ereignis** ausgelöst. 
     
-Zur Behandlung dieser Ereignisse verwendet die XLL die C-API-Funktion [xlEventRegister](xleventregister.md). 
+Zum Behandeln dieser Ereignisse verwendet die XLL die C-API-Funktion [xlEventRegister](xleventregister.md). 
   
 > [!NOTE]
 > **CalculationEnded** und **CalculationCanceled** werden während der programmgesteuerten Neuberechnung nicht ausgelöst. 

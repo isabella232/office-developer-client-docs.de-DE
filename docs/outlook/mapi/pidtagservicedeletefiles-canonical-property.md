@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagservicedeletefiles (-Eigenschaft
+title: PidTagServiceDeleteFiles (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,13 +19,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33436825"
 ---
-# <a name="pidtagservicedeletefiles-canonical-property"></a>Kanonische Pidtagservicedeletefiles (-Eigenschaft
+# <a name="pidtagservicedeletefiles-canonical-property"></a>PidTagServiceDeleteFiles (kanonische Eigenschaft)
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine Liste von Dateinamen, die gelöscht werden sollen, wenn der Nachrichtendienst deinstalliert wird.
+Enthält eine Liste der Dateinamen, die gelöscht werden sollen, wenn der Nachrichtendienst deinstalliert wird.
   
 |||
 |:-----|:-----|
@@ -34,23 +34,23 @@ Enthält eine Liste von Dateinamen, die gelöscht werden sollen, wenn der Nachri
 |Datentyp:  <br/> |PT_MV_STRING8, PT_MV_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Profil  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die Dateinamen in der Liste, die in diesen Eigenschaften enthalten sind, werden auf dem Computer gelöscht, wenn der Nachrichtendienst mithilfe der Systemsteuerung deinstalliert wird. Fügen Sie nicht in die Liste eine DLL ein, die mehrere Nachrichtendienste unterstützt, oder weitere Nachrichtendienste können versehentlich entfernt werden.
+Die Dateinamen in der Liste, die in diesen Eigenschaften enthalten sind, werden vom Computer gelöscht, wenn der Nachrichtendienst mithilfe der Systemsteuerung deinstalliert wird. Fügen Sie keine DLL hinzu, die mehrere Nachrichtendienste unterstützt, oder zusätzliche Nachrichtendienste können versehentlich entfernt werden.
   
-MAPI kann nur mit Dateinamen und anderen Zeichenfolgen im ANSI-Zeichensatz verwendet werden. Anwendungen, die Dateinamen in einem OEM-Zeichensatz verwenden, müssen Sie vor dem Aufrufen von MAPI in ANSI konvertieren.
+MAPI funktioniert nur mit Dateinamen und anderen Zeichenfolgen, die im ANSI-Zeichensatz an sie übergeben werden. Anwendungen, die Dateinamen in einem OEM-Zeichensatz verwenden, müssen sie vor dem Aufrufen von MAPI in ANSI konvertieren.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
-### <a name="header-files"></a>Header Dateien
+### <a name="header-files"></a>Headerdateien
 
-Mapidefs. h
+Mapidefs.h
   
-> Stellt Datentypdefinitionen bereit.
+> Bietet Datentypdefinitionen.
     
-Mapitags. h
+Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -58,9 +58,9 @@ Mapitags. h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

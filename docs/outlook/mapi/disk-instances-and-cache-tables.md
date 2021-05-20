@@ -1,5 +1,5 @@
 ---
-title: Datenträgerinstanzen und Cache Tabellen
+title: Datenträgerinstanzen und Cachetabellen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,18 +15,18 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33436755"
 ---
-# <a name="disk-instances-and-cache-tables"></a>Datenträgerinstanzen und Cache Tabellen
+# <a name="disk-instances-and-cache-tables"></a>Datenträgerinstanzen und Cachetabellen
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Um ein Formular zu aktivieren, müssen die ausführbaren Dateien auf dem Computer des Benutzers verfügbar sein. Wenn Sie nicht verfügbar sind, müssen Sie aus der Formularbibliothek auf den lokalen Datenträger kopiert werden. Zu diesem Zweck erstellt der standardmäßige Formular-Manager ein Unterverzeichnis im Windows-Verzeichnis des Benutzers, das die ausführbaren Dateien des Formulars enthält (. Exe,. HLPs). Dieses Verzeichnis wird als Datenträger Instanz des Formulars bezeichnet.
+Zum Aktivieren eines Formulars müssen die ausführbaren Dateien auf dem Computer des Benutzers verfügbar sein. Wenn sie nicht verfügbar sind, müssen sie aus der Formularbibliothek auf den lokalen Datenträger kopiert werden. Dazu erstellt der Standardformular-Manager ein Unterverzeichnis im Windows des Benutzers, das die ausführbaren Dateien des Formulars enthält (. EXEs,. HLPs). Dieses Verzeichnis wird als Datenträgerinstanz des Formulars bezeichnet.
   
-Der standardmäßige Formular-Manager verwaltet eine Tabelle aller Datenträgerinstanzen, sodass eine Datenträger Instanz, die bereits vorhanden ist, verwendet werden kann, ohne dass Dateien aus der Formularbibliothek auf den Datenträger des Benutzers kopiert werden müssen. Die Tabelle der Datenträgerinstanzen wird als der am wenigsten verwendete Cache verwaltet. Wenn eine neue Datenträger Instanz benötigt wird, wird Sie auf den Computer des Benutzers kopiert, wobei die am wenigsten verwendete Datenträger Instanz ersetzt wird. Die Cache-Tabelle der Datenträger Instanz wird dann entsprechend der neuesten Konfiguration aktualisiert. Die Größe des Datenträgercaches ist eine vom benutzerkonfigurierbare Option, die es Benutzern ermöglicht, die Geschwindigkeit mit der verfügbaren Datenträgerkapazität auszugleichen.
+Der Standardmäßige Formular-Manager verwaltet eine Tabelle aller Datenträgerinstanzen, sodass sie verwendet werden kann, wenn bereits eine Datenträgerinstanz vorhanden ist, ohne Dateien aus der Formularbibliothek auf den Datenträger des Benutzers kopieren zu müssen. Die Tabelle der Datenträgerinstanzen wird als am wenigsten häufig verwendeter Cache verwaltet. Wenn eine neue Datenträgerinstanz erforderlich ist, wird sie auf den Computer des Benutzers kopiert und ersetzt die am wenigsten häufig verwendete Datenträgerinstanz. Die Cachetabelle der Datenträgerinstanz wird dann entsprechend der neuesten Konfiguration aktualisiert. Die Größe des Datenträgercaches ist eine vom Benutzer konfigurierbare Option, mit der Benutzer die Geschwindigkeit mit der verfügbaren Datenträgerkapazität ausgleichen können.
   
-Zusätzlich zum Cache der Datenträger Instanz verwaltet der standardmäßige Formular-Manager eine laufende Instanz-Tabelle, in der alle laufenden Instanzen von Formular Servern auf dem Computer des Benutzers aufgelistet sind. Dies verwendet die MAPI-Fähigkeit, Leerlauf Formular Instanzen in einem unsichtbaren Zustand zu halten, bis ein Formular der Nachrichtenklasse dieses Formular Servers aktiviert ist. Mit anderen Worten können Formularserver im RAM zwischengespeichert werden, um zu minimieren, wie oft die ausführbare Datei eines Formulars in einer Formularbibliothek gespeichert und vom Datenträger oder über das Netzwerk in den Arbeitsspeicher geladen werden muss. Wie der Datenträger Instanz-Cache verhält sich der Cache der laufenden Instanz in einer am wenigsten verwendeten Art und Weise so, dass eine laufende Formularinstanz aus dem Cache gelöscht werden kann, um Platz für eine andere Formularinstanz zu bilden. Dieser Cache wird nach einer aktiven Instanz eines Formular Servers durchsucht, bevor die Formularbibliotheken nach dem Formularserver durchsucht werden.
+Zusätzlich zum Datenträgerinstanzcache verwaltet der Standardformular-Manager eine ausgeführte Instanztabelle, in der alle ausgeführten Instanzen von Formularservern auf dem Computer des Benutzers aufgeführt sind. Dies nutzt die MapI-Fähigkeit, leerlaufformularinstanzen in einem unsichtbaren Zustand zu halten, bis eine Form der Nachrichtenklasse dieses Formularservers aktiviert wird. Mit anderen Worten, Formularserver können im RAM zwischengespeichert werden, um die Anzahl der ausführbaren Dateien eines Formulars in einer Formularbibliothek zu minimieren und vom Datenträger oder über das Netzwerk in den Arbeitsspeicher zu laden. Wie der Cache der Datenträgerinstanz verhält sich der ausgeführte Instanzcache am wenigsten häufig verwendet, sodass eine ausgeführte Formularinstanz aus dem Cache gelöscht werden kann, um Platz für eine andere Formularinstanz zu machen. Dieser Cache wird nach einer ausgeführten Instanz eines Formularservers durchsucht, bevor die Formularbibliotheken nach dem Formularserver durchsucht werden.
   
 > [!NOTE]
-> Der Standardformular-Manager zeigt beim Installieren eines Formulars auf der Arbeitsstation eines Benutzers eine Statusanzeige an, sodass der Benutzer den Vorgang abbrechen kann. Dies ist besonders nützlich, wenn sich die Verbindung des Benutzers mit der ausführbaren Datei des Formular Servers über einem Netzwerk mit niedriger Bandbreite befindet. 
+> Der Standardformular-Manager zeigt beim Installieren eines Formulars auf der Arbeitsstation eines Benutzers eine Statusanzeige an, sodass der Benutzer den Vorgang abbrechen kann. Dies ist besonders hilfreich, wenn die Verbindung des Benutzers mit der ausführbaren Datei des Formularservers über ein Netzwerk mit niedriger Bandbreite liegt. 
   
 ## <a name="see-also"></a>Siehe auch
 

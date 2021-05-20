@@ -25,7 +25,7 @@ ms.locfileid: "33437651"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Codiert eine Ansicht für die Empfängertabelle einer Nachricht im TNEF-Datenstrom (Transport-Neutral Encapsulation Format) für die Nachricht.
+Codiert eine Ansicht für die Empfängertabelle einer Nachricht im Transport-Neutral Encapsulation Format (TNEF)-Datenstrom für die Nachricht.
   
 ```cpp
 HRESULT EncodeRecips(
@@ -42,23 +42,23 @@ HRESULT EncodeRecips(
     
  _lpRecipientTable_
   
-> in Ein Zeiger auf die Empfängertabelle, für die die Ansicht codiert ist. Der _lpRecipientTable_ -Parameter kann NULL sein. 
+> [in] Ein Zeiger auf die Empfängertabelle, für die die Ansicht codiert ist. Der  _lpRecipientTable-Parameter_ kann NULL sein. 
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Aufruf war erfolgreich, und der erwartete Wert oder die Werte wurden zurückgegeben.
+> Der Aufruf war erfolgreich und hat den erwarteten Wert oder die erwarteten Werte zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Transport Anbieter, Nachrichtenspeicher Anbieter und Gateways rufen die **ITnef:: EncodeRecips** -Methode auf, um die TNEF-Codierung für eine bestimmte Empfänger Tabellenansicht durchzuführen. Die TNEF-Codierung ist beispielsweise nützlich, wenn ein Anbieter oder ein Gateway eine bestimmte Spaltengruppe, Sortierreihenfolge oder Einschränkung für die Empfängertabelle erfordert. 
+Transportanbieter, Nachrichtenspeicheranbieter und Gateways rufen die **ITnef::EncodeRecips-Methode** auf, um die TNEF-Codierung für eine bestimmte Empfängertabellesansicht durchzuführen. Die TNEF-Codierung ist z. B. hilfreich, wenn ein Anbieter oder Gateway einen bestimmten Spaltensatz, eine Sortierreihenfolge oder eine Einschränkung für die Empfängertabelle erfordert. 
   
-Ein Anbieter oder Gateway übergibt die Tabellenansicht, die im Parameter _lpRecipientTable_ codiert werden soll. Die TNEF-Implementierung codiert die Empfängertabelle mit der angegebenen Ansicht, wobei der angegebene Spaltensatz, die Sortierreihenfolge, die Einschränkung und die Position verwendet werden. Wenn ein Anbieter oder ein Gateway in _LPRECIPIENTTABLE_NULL übergibt, ruft TNEF die Empfängertabelle aus der zu codierenden Nachricht mithilfe der [IMessage::](imessage-getrecipienttable.md) getrecipientable-Methode ab und verarbeitet jede Zeile der Tabelle im TNEF-Stream mithilfe der Aktuelle Einstellungen der Tabelle. 
+Ein Anbieter oder Gateway übergibt die Tabellenansicht, die im  _lpRecipientTable-Parameter codiert werden_ soll. Die TNEF-Implementierung codiert die Empfängertabelle mit der angegebenen Ansicht mithilfe der angegebenen Spaltensatz, Sortierreihenfolge, Einschränkung und Position. Wenn ein Anbieter oder Gateway NULL in  _lpRecipientTable_ übergibt, ruft TNEF die Empfängertabelle aus der Nachricht ab, die mithilfe der [IMessage::GetRecipientTable-Methode](imessage-getrecipienttable.md) codiert wird, und verarbeitet jede Zeile der Tabelle mithilfe der aktuellen Einstellungen der Tabelle in den TNEF-Stream. 
   
-Das Aufrufen von **EncodeRecips** mit NULL in _lpRecipientTable_ codiert daher alle Nachrichtenempfänger und entspricht dem Aufrufen der [ITnef::](itnef-addprops.md) AddProps-Methode mit dem TNEF_PROP_INCLUDE-Flag im _ulFlags_ -Parameter und dem **PR_ MESSAGE_RECIPIENTS** ([pidtagmessagerecipients (](pidtagmessagerecipients-canonical-property.md))-Eigenschaft im _lpPropList_ -Parameter. 
+Das Aufrufen von **EncodeRecips** mit NULL in _lpRecipientTable_ codiert daher alle Nachrichtenempfänger und entspricht dem Aufrufen der [ITnef::AddProps-Methode](itnef-addprops.md) mit dem TNEF_PROP_INCLUDE-Flag im _ulFlags-Parameter_ und der **PR_MESSAGE_RECIPIENTS** ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md))-Eigenschaft im _lpPropList-Parameter._ 
   
-Beachten Sie, dass es selten erforderlich ist, **EncodeRecips** aufzurufen, es sei denn, eine bestimmte Empfänger Tabellenansicht muss codiert werden. Ausländische Messagingsysteme verfügen fast immer über Einrichtungen für die Verarbeitung von Empfängerlisten, die leistungsfähig genug sind, um die allgemeinen Anforderungen der Codierung von Empfängerlisten zu bewältigen. Daher benötigen diese Systeme für diesen Zweck fast nie TNEF. 
+Beachten Sie, dass es selten erforderlich **ist, EncodeRecips** aufzugeben, es sei denn, es ist erforderlich, eine bestimmte Empfängertabelle zu codieren. Fremde Messagingsysteme verfügen fast immer über Möglichkeiten zum Behandeln von Empfängerlisten, die leistungsfähig genug sind, um die allgemeinen Anforderungen der Codierung von Empfängerlisten zu erfüllen. Daher benötigen diese Systeme zu diesem Zweck fast nie TNEF. 
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -68,7 +68,7 @@ Beachten Sie, dass es selten erforderlich ist, **EncodeRecips** aufzurufen, es s
   
 [ITnef::AddProps](itnef-addprops.md)
   
-[Kanonische Pidtagmessagerecipients (-Eigenschaft](pidtagmessagerecipients-canonical-property.md)
+[PidTagMessageRecipients (kanonische Eigenschaft)](pidtagmessagerecipients-canonical-property.md)
   
 [ITnef : IUnknown](itnefiunknown.md)
 

@@ -25,36 +25,36 @@ ms.locfileid: "33436594"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ermöglicht den Zugriff auf die vielen Eigenschaften, die Messaging Benutzern zugeordnet sind. Die **IMailUser** -Schnittstelle wird von Messaging-Benutzerobjekten implementiert. **IMailUser** erbt von der [IMAPIProp: IUnknown](imapipropiunknown.md) -Schnittstelle und verfügt über keine eigenen eindeutigen Methoden. 
+Bietet Zugriff auf die vielen Eigenschaften, die Messagingbenutzern zugeordnet sind. Die **IMailUser-Schnittstelle** wird von Messagingbenutzerobjekten implementiert. **IMailUser erbt** von der [IMAPIProp : IUnknown-Schnittstelle](imapipropiunknown.md) und verfügt über keine eigenen eindeutigen Methoden. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Messaging-Benutzerobjekte  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Messagingbenutzerobjekte  <br/> |
 |Implementiert von:  <br/> |Adressbuchanbieter  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMailUser  <br/> |
 |Zeigertyp:  <br/> |LPMAILUSER  <br/> |
-|Transaktionsmodell:  <br/> |Durchgeführt  <br/> |
+|Transaktionsmodell:  <br/> |Transacted  <br/> |
    
 ## <a name="vtable-order"></a>Vtable-Reihenfolge
 
-Diese Schnittstelle hat keine eindeutigen Methoden.
+Diese Schnittstelle verfügt nicht über eindeutige Methoden.
   
 |**Erforderliche Eigenschaften**|**Access**|
 |:-----|:-----|
-|**PR_ADDRTYPE** ([Pidtagaddresstype (](pidtagaddresstype-canonical-property.md))  <br/> |Lesen/Schreiben  <br/> |
+|**PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))  <br/> |Lesen/Schreiben  <br/> |
 |**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |Lesen/Schreiben  <br/> |
 |**PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
 |**PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))  <br/> |Lesen/Schreiben  <br/> |
 |**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
-|**PR_OBJECT_TYPE** ([Pidtagobjecttype (](pidtagobjecttype-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
-|**PR_RECORD_KEY** ([Pidtagrecordkey (](pidtagrecordkey-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
-|**PR_SEARCH_KEY** ([Pidtagsearchkey (](pidtagsearchkey-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
+|**PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
+|**PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
+|**PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Fünf der erforderlichen Eigenschaften werden als Basis Adresseigenschaften für Empfänger bezeichnet:
+Fünf der erforderlichen Eigenschaften werden als Basisadresseneigenschaften für Empfänger bekannt:
   
 - **PR_ADDRTYPE**
     
@@ -66,11 +66,11 @@ Fünf der erforderlichen Eigenschaften werden als Basis Adresseigenschaften für
     
 - **PR_SEARCH_KEY**
     
-Diese Eigenschaften gelten als besonders, da viele andere Gruppen ähnlicher Eigenschaften auf dieser Basisgruppe basieren. Die anderen Gruppen werden zur Beschreibung eines Empfängers in verschiedenen Rollen verwendet, beispielsweise als ursprünglicher oder Stellvertreter der Nachricht. Weitere Informationen zu diesen Eigenschaften und deren Verwendung finden Sie unter [MAPI address types](mapi-address-types.md).
+Diese Eigenschaften gelten als besonders, da viele andere Gruppen ähnlicher Eigenschaften auf dieser Basisgruppe aufgebaut sind. Die anderen Gruppen werden verwendet, um einen Empfänger in verschiedenen Rollen zu beschreiben, z. B. dem ursprünglichen Absender oder dem Stellvertretungssender einer Nachricht. Weitere Informationen zu diesen Eigenschaften und deren Verwendung finden Sie unter [MAPI Address Types](mapi-address-types.md).
   
-Messaging Benutzer können eine Auflistung ihrer Eigenschaften anzeigen, indem Sie die **PR_DETAILS_TABLE** ([pidtagdetailstable (](pidtagdetailstable-canonical-property.md))-Eigenschaft unterstützen. **PR_DETAILS_TABLE** ist eine Anzeigetabelle, die das Layout eines Details-Dialogfelds oder einer Eigenschaftenseite mit Registerkarten beschreibt, auf dem Informationen zu Empfänger Eigenschaften angezeigt werden. MAPI erstellt Detail Dialogfelder, wenn ein Client die [IAddrBook::D ails](iaddrbook-details.md) -Methode aufruft. 
+Messagingbenutzer können eine Auflistung ihrer Eigenschaften anzeigen, indem sie die **PR_DETAILS_TABLE** ([PidTagDetailsTable](pidtagdetailstable-canonical-property.md)) -Eigenschaft unterstützen. **PR_DETAILS_TABLE** ist eine Anzeigetabelle, in der das Layout eines Detaildialogfelds oder einer Registerkarteneigenschaftsseite beschrieben wird, auf der Empfängereigenschaftsinformationen angezeigt werden. MAPI erstellt Detaildialogfelder, wenn ein Client die [IAddrBook::D etails-Methode](iaddrbook-details.md) aufruft. 
   
-Für Messaging-Benutzerobjekte können andere optionale Eigenschaften zugeordnet werden. MAPI definiert viele Eigenschaften, die zusätzliche Adressinformationen zu einem Messagingbenutzer bereitstellen. Alle diese Eigenschaften sind Zeichenfolgen. Die folgende Liste zeigt die häufiger verwendeten Eigenschaften:
+Messagingbenutzerobjekten können andere optionale Eigenschaften zugeordnet sein. MAPI definiert viele Eigenschaften, die zusätzliche Adressierungsinformationen zu einem Messagingbenutzer bereitstellen. Alle diese Eigenschaften sind Zeichenzeichenfolgen. Die folgende Liste zeigt die häufiger verwendeten Eigenschaften:
   
 - **PR_ACCOUNT** ([PidTagAccount](pidtagaccount-canonical-property.md)) 
     
@@ -80,13 +80,13 @@ Für Messaging-Benutzerobjekte können andere optionale Eigenschaften zugeordnet
     
 - **PR_GIVEN_NAME** ([PidTagGivenName](pidtaggivenname-canonical-property.md)) 
     
-- **PR_GOVERNMENT_ID_NUMBER** ([Pidtaggovernmentidnumber (](pidtaggovernmentidnumber-canonical-property.md)) 
+- **PR_GOVERNMENT_ID_NUMBER** ([PidTagGovernmentIdNumber](pidtaggovernmentidnumber-canonical-property.md)) 
     
-- **PR_LOCALITY** ([Pidtaglocality (](pidtaglocality-canonical-property.md)) 
+- **PR_LOCALITY** ([PidTagLocality](pidtaglocality-canonical-property.md)) 
     
-- **PR_POSTAL_ADDRESS** ([Pidtagpostaladdress (](pidtagpostaladdress-canonical-property.md)) 
+- **PR_POSTAL_ADDRESS** ([PidTagPostalAddress](pidtagpostaladdress-canonical-property.md)) 
     
-Eine vollständige Liste der Eigenschaften finden Sie unter [Zuordnen von kanonischEn Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md).
+Eine vollständige Liste der Eigenschaften finden Sie unter [Mapping Canonical Property Names to MAPI Names](mapping-canonical-property-names-to-mapi-names.md).
   
 ## <a name="see-also"></a>Siehe auch
 

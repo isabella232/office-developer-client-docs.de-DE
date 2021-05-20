@@ -25,11 +25,11 @@ ms.locfileid: "33439219"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von [MTSID](mtsid.md) -Strukturen, die jeweils eine MTS-Eintrags-ID (X. 400-Nachrichtentransportsystem) enthalten. 
+Enthält ein Array von [MTSID-Strukturen,](mtsid.md) von denen jede einen X.400 Message Transport System (MTS)-Eintragsbezeichner enthält. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
 |Verwandte Makros:  <br/> |[CbFLATMTSIDLIST](cbflatmtsidlist.md), [CbNewFLATMTSIDLIST](cbnewflatmtsidlist.md) <br/> |
    
 ```cpp
@@ -42,25 +42,25 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cMTSIDs**
   
-> Die Anzahl der **MTSID** -Strukturen in dem vom **abMTSIDs** -Element beschriebenen Array. 
+> Anzahl der **MTSID-Strukturen** im array, das vom **abMTSIDs-Element beschrieben** wird. 
     
  **cbMTSIDs**
   
-> Die Anzahl der Bytes im von **abMTSIDs**beschriebenen Array.
+> Anzahl der Byte im Array, das von **abMTSIDs beschrieben wird.**
     
  **abMTSIDs**
   
-> Bytearray, das eine oder mehrere **MTSID** -Strukturen enthält. 
+> Bytearray, das eine oder mehrere **MTSID-Strukturen** enthält. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die Verwendung der **FLATMTSIDLIST** -Struktur in X. 400-Messaging entspricht der Verwendung der [FLATENTRYLIST](flatentrylist.md) -Struktur in MAPI-Messaging. MAPI verwendet **FLATMTSIDLIST** -Strukturen, um X. 400-Eigenschaften während der Nachrichtenverarbeitung zu verwalten. Dienstanbieter verwenden **FLATMTSIDLIST** -Strukturen, wenn Sie eingehende und ausgehende X. 400-Nachrichten verarbeiten. 
+Die **Verwendung der FLATMTSIDLIST-Struktur** in X.400-Messaging entspricht der Verwendung der [FLATENTRYLIST-Struktur](flatentrylist.md) in MAPI-Messaging. MAPI verwendet **FLATMTSIDLIST-Strukturen,** um X.400-Eigenschaften während der Nachrichtenverarbeitung zu verwalten. Dienstanbieter verwenden **FLATMTSIDLIST-Strukturen** beim Behandeln eingehender und ausgehender X.400-Nachrichten. 
   
-Im **abMTSIDs** -Array wird jede **MTSID** -Struktur an einer natürlich ausgerichteten Grenze ausgerichtet. Zusätzliche Bytes sind als Padding enthalten, um eine natürliche Ausrichtung zwischen zwei **MTSID** -Strukturen sicherzustellen. Die erste **MTSID** -Struktur im Array wird immer korrekt ausgerichtet, da der Offset des **abMTSIDs** -Elements 8 ist. Um den Offset der nächsten Struktur zu berechnen, verwenden Sie die Größe des ersten Eintrags, aufgerundet auf das nächste Vielfache von 4. Verwenden Sie das [CbNewMTSID](cbnewmtsid.md) -Makro, um die Größe einer **MTSID** -Struktur zu berechnen. 
+Im **abMTSIDs-Array** wird jede **MTSID-Struktur** an einer natürlich ausgerichteten Grenze ausgerichtet. Zusätzliche Bytes sind als Abstand enthalten, um die natürliche Ausrichtung zwischen zwei **MTSID-Strukturen sicherzustellen.** Die erste **MTSID-Struktur** im Array wird immer richtig ausgerichtet, da der Offset des **abMTSIDs-Mitglieds** 8 ist. Verwenden Sie zum Berechnen des Offsets der nächsten Struktur die Größe des ersten Eintrags, der auf das nächste Vielfache von 4 aufgerundet wurde. Verwenden Sie [das CbNewMTSID-Makro,](cbnewmtsid.md) um die Größe einer **MTSID-Struktur zu** berechnen. 
   
 ## <a name="see-also"></a>Siehe auch
 

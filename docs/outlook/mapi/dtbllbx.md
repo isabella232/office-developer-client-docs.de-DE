@@ -25,11 +25,11 @@ ms.locfileid: "33438568"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt eine Liste, die in einem Dialogfeldverwendet wird, das aus einer Anzeigetabelle erstellt wird.
+Beschreibt eine Liste, die in einem Dialogfeld verwendet wird, das aus einer Anzeigetabelle erstellt wird.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _DTBLLBX
@@ -45,7 +45,7 @@ typedef struct _DTBLLBX
 
  **ulFlags**
   
-> Bitmaske der Flags, die verwendet werden, um eine horizontale oder vertikale Bildlaufleiste aus der Liste zu entfernen. Die folgenden Flags können festgelegt werden:
+> Bitmaske von Flags, die verwendet werden, um eine horizontale oder vertikale Bildlaufleiste aus der Liste zu entfernen. Die folgenden Kennzeichen können festgelegt werden:
     
 MAPI_NO_HBAR 
   
@@ -57,21 +57,21 @@ MAPI_NO_VBAR
     
  **ulPRSetProperty**
   
-> Property-Tag für eine Eigenschaft eines beliebigen Typs. Diese Eigenschaft ist eine der Spalten in der Tabelle, die durch das **ulPRTableTable** -Element identifiziert wird. 
+> Eigenschaftstag für eine Eigenschaft eines beliebigen Typs. Diese Eigenschaft ist eine der Spalten in der Tabelle, die vom **ulPRTableTable-Element identifiziert** wird. 
     
  **ulPRTableName**
   
-> Property-Tag für eine Table-Eigenschaft vom Typ PT_OBJECT, die mithilfe eines **openProperty** -Aufrufs geöffnet werden kann. Die Anzahl der Spalten, die die Tabelle aufweisen sollte, hängt davon ab, ob es sich bei der Liste um eine einzelne oder mehrere Auswahllisten handelt. Wenn das **ulPRSetProperty** -Element auf **PR_NULL** ([pidtagnull (](pidtagnull-canonical-property.md)) festgelegt ist, ermöglicht die Liste die Mehrfachauswahl.
+> Property tag for a table property of type PT_OBJECT that can be opened by using an **OpenProperty** call. Die Anzahl der Spalten, die die Tabelle enthalten soll, hängt davon ab, ob es sich bei der Liste um eine einzelne oder mehrere Auswahlliste handelt. Wenn das **ulPRSetProperty-Element** auf PR_NULL ([PidTagNull)](pidtagnull-canonical-property.md)festgelegt ist, ermöglicht die Liste die Mehrfachauswahl. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Eine **DTBLLBX** -Struktur beschreibt eine Liste ein Steuerelement, das zum Anzeigen mehrerer Elemente verwendet wird, und lassen Sie einen Benutzer eines oder mehrere der Elemente auswählen. 
+Eine **DTBLLBX-Struktur** beschreibt eine Liste eines Steuerelements, das zum Anzeigen mehrerer Elemente verwendet wird und einem Benutzer die Auswahl eines oder mehrerer Elemente gestatten soll. 
   
-Das **ulPRSetProperty** -Element und das **ulPRTableName** -Element arbeiten zusammen; Wenn ein Wert aus der Tabelle ausgewählt wird, wird er zurück in **ulPRSetProperty** geschrieben, wenn das Dialogfeld geschlossen wird. 
+Das **ulPRSetProperty-Mitglied** und **das ulPRTableName-Mitglied** arbeiten zusammen. Wenn ein Wert aus der Tabelle ausgewählt wird, wird er in **ulPRSetProperty** zurückgeschrieben, wenn das Dialogfeld verworfen wird. 
   
-Der Flags-Wert gibt an, ob eine horizontale oder vertikale Bildlaufleiste mit der Liste angezeigt werden soll. Der Standardwert ist, dass bei Bedarf Typen von Bildlaufleisten angezeigt werden. Dienstanbieter können festlegen, dass MAPI_NO_HBAR eine horizontale Bildlaufleiste und MAPI_NO_VBAR zum unterdrücken einer vertikalen Bildlaufleiste unterdrückt. 
+Der Flags-Wert gibt an, ob eine horizontale oder vertikale Bildlaufleiste mit der Liste angezeigt werden soll. Standardmäßig werden bei Bedarf Bildlaufleistentypen angezeigt. Dienstanbieter können festlegen MAPI_NO_HBAR eine horizontale Bildlaufleiste zu unterdrücken und MAPI_NO_VBAR vertikale Bildlaufleiste zu unterdrücken. 
   
-Die beiden Elemente des Property-Tags arbeiten zusammen, um Werte in der Liste anzuzeigen und entsprechende Eigenschaften festzulegen, wenn ein Element in der Liste ausgewählt ist. Wenn die Liste von MAPI zuerst angezeigt wird, wird die OpenProperty **** -Methode der **IMAPIProp** -Implementierung aufgerufen, um die im **ulPRTableName** -Element identifizierte Tabelle abzurufen. Die Anzahl der Spalten in der Tabelle hängt vom Wert des **ulPRSetProperty** -Elements ab. Wenn **ulPRSetProperty** auf **PR_NULL**festgelegt ist, handelt es sich bei der Liste um eine Liste mit mehreren Auswahlen, die auf einem Objekt mit Empfängern wie einem Adressbuchcontainer, einer Empfängertabelle für eine Nachricht oder einer Tabelle mit Verteilerlisten Inhalten basiert. 
+Die beiden Eigenschaftentagmitglieder arbeiten zusammen, um Werte in der Liste anzeigen und entsprechende Eigenschaften festlegen, wenn ein Element in der Liste ausgewählt ist. Wenn MAPI die Liste zum ersten Mal anzeigt, ruft sie die **OpenProperty-Methode** der **IMAPIProp-Implementierung** auf, um die im **ulPRTableName-Element identifizierte Tabelle abzurufen.** Die Anzahl der Spalten in der Tabelle hängt vom Wert des **ulPRSetProperty-Mitglieds** ab. Wenn **ulPRSetProperty** auf **PR_NULL** festgelegt ist, handelt es sich bei der Liste um eine Liste mit mehreren Auswahllisten, die auf einem Objekt basiert, das Empfänger enthält, z. B. einen Adressbuchcontainer, eine Empfängertabelle für eine Nachricht oder eine Inhaltstabelle für Verteilerlisten. 
   
 Eine Tabelle für eine Liste mit mehreren Auswahlen muss die folgenden Spalten enthalten:
   
@@ -79,13 +79,13 @@ Eine Tabelle für eine Liste mit mehreren Auswahlen muss die folgenden Spalten e
   
  **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))
   
- **PR_INSTANCE_KEY** ([Pidtaginstancekey (](pidtaginstancekey-canonical-property.md))
+ **PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md))
   
- **PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md)) und maximal fünf weitere Zeichenfolgeneigenschaften können auch mit den drei erforderlichen Spalten angezeigt werden. 
+ **PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md)) und maximal fünf weitere mehrwertige Zeichenfolgeneigenschaften können auch mit den drei erforderlichen Spalten angezeigt werden. 
   
-Wenn das **ulPRSetProperty** -Element nicht auf **PR_NULL**festgelegt ist, handelt es sich bei der Liste um eine einzelne Auswahlliste. Der Anfangswert von **ulPRSetProperty** bestimmt die erste ausgewählte Zeile. Wenn ein Benutzer eine der Zeilen auswählt, wird das **ulPRSetProperty** -Element auf den ausgewählten Wert festgelegt, und dieser Wert wird in die Implementierung der Property-Schnittstelle mit einem Aufruf von [IMAPIProp::](imapiprop-setprops.md)SetProps zurückgeschrieben. 
+Wenn das **ulPRSetProperty-Element** nicht auf PR_NULL **festgelegt** ist, handelt es sich bei der Liste um eine einzelne Auswahlliste. Der Anfangswert von **ulPRSetProperty** bestimmt die erste ausgewählte Zeile. Wenn ein Benutzer eine der Zeilen auswählt, wird das **element ulPRSetProperty** auf den ausgewählten Wert festgelegt, und dieser Wert wird mit einem Aufruf von [IMAPIProp::SetProps](imapiprop-setprops.md)in die Implementierung der Eigenschaftsschnittstelle geschrieben. 
   
-Eine Übersicht über Anzeige Tabellen finden Sie unter [Display Tables](display-tables.md). Weitere Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
+Eine Übersicht über Anzeigetabellen finden Sie unter [Display Tables](display-tables.md). Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
   
 ## <a name="see-also"></a>Siehe auch
 

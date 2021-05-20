@@ -20,31 +20,31 @@ ms.locfileid: "33438078"
 
 Bestimmt die Pfeilspitzengröße am Linienende.
   
-|**Wert**|**Size**|**Automatisierungskonstante**|
+|**Wert**|**Größe**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
 |0  <br/> |Sehr klein  <br/> |**visArrowSizeVerySmall** <br/> |
 |1  <br/> |Small  <br/> |**visArrowSizeSmall** <br/> |
 |2  <br/> |Mittel  <br/> |**visArrowSizeMedium** <br/> |
 |3  <br/> |Large  <br/> |**visArrowSizeLarge** <br/> |
-|4  <br/> |Sehr groß  <br/> |**visArrowSizeVeryLarge** <br/> |
-|5  <br/> |Jumbo  <br/> |**visArrowSizeJumbo** <br/> |
-|6  <br/> |Kolossalen  <br/> |**visArrowSizeColossal** <br/> |
+|4   <br/> |Sehr groß  <br/> |**visArrowSizeVeryLarge** <br/> |
+|5   <br/> |Jumbo  <br/> |**visArrowSizeJumbo** <br/> |
+|6   <br/> |Colossal  <br/> |**visArrowSizeColossal** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Sie können diesen Wert auch im Dialogfeld **Linie** festlegen (klicken Sie dazu auf der Registerkarte **Start** in der Gruppe **Shape** auf **Linie**, zeigen Sie auf **Pfeile**, und klicken Sie dann auf **Weitere Pfeile**).
   
-Wenn Sie einen Verweis auf die Zelle Zelle EndArrowSize aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle EndArrowSize anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Zelle EndArrowSize  <br/> |
+|Zellenname:  <br/> |EndArrowSize  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle EndArrowSize aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die EndArrowSize-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowLine** <br/> |
 |Zellenindex:  <br/> |**visLineEndArrowSize** <br/> |
    

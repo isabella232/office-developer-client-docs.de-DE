@@ -22,21 +22,21 @@ Gibt den Tangens eines Winkels zurück.
   
 ## <a name="syntax"></a>Syntax
 
-TAN (* * *Winkel* * *) 
+TAN(** *angle* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Winkel_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Winkel, dessen Tangente abgerufen werden soll.  <br/> |
+| _angle_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Winkel, an dem die Tangente erhalten werden soll.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
 Numeric
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die TAN-Funktion verwendet Radiant, es sei denn, Sie geben eine andere Maßeinheit im *Winkel* an. 
+Die TAN-Funktion verwendet Bogenmaß, es sei denn, Sie geben eine andere Maßeinheit im Winkel *an.* 
   
 ## <a name="example"></a>Beispiel
 

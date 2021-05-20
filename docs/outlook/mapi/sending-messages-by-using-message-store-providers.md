@@ -19,59 +19,59 @@ ms.locfileid: "33437609"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Nachrichtenspeicher Anbieter sind nicht zur Unterstützung ausgehender Nachrichtenübermittlungen erforderlich (also die Möglichkeit, dass Clientanwendungen den Nachrichtenspeicher Anbieter zum Senden von Nachrichten verwenden können). Client Anwendungen müssen beim Senden von Nachrichten einen Nachrichtenspeicher verwenden, da die Daten der Nachricht irgendwo zwischen dem Zeitpunkt gespeichert werden müssen, zu dem der Benutzer Sie erstellt hat, und der Zeit, die der MAPI-Spooler die Nachricht an einen Transportanbieter für Übermittlung an das zugrunde liegende Messagingsystem. Wenn der Nachrichtenspeicher Anbieter ausgehende Nachrichten nicht unterstützt, kann er nicht als Standardnachrichtenspeicher verwendet werden.
+Nachrichtenspeicheranbieter sind nicht erforderlich, um ausgehende Nachrichtenübermittlungen zu unterstützen (d. h. die Möglichkeit für Clientanwendungen, den Nachrichtenspeicheranbieter zum Senden von Nachrichten zu verwenden). Clientanwendungen müssen beim Senden von Nachrichten einen Nachrichtenspeicher verwenden, da die Daten der Nachricht zwischen dem Zeitpunkt, zu dem der Benutzer mit dem Verfassen fertig ist, und dem Zeitpunkt, zu dem der MAPI-Spooler die Nachricht an einen Transportanbieter zur Übermittlung an das zugrunde liegende Messagingsystem übergibt, gespeichert werden müssen. Wenn Ihr Nachrichtenspeicheranbieter ausgehende Nachrichtenübermittlungen nicht unterstützt, kann er nicht als Standardnachrichtenspeicher verwendet werden.
   
-Um das Senden von Nachrichten zu unterstützen, muss der Nachrichtenspeicher Anbieter folgende Schritte ausführen:
+Um das Senden von Nachrichten zu unterstützen, muss Ihr Nachrichtenspeicheranbieter die folgenden Schritte unternehmen:
   
-- Implementieren Sie eine Warteschlange für ausgehende Nachrichten.
+- Implementieren sie eine Warteschlange für ausgehende Nachrichten.
     
-- Unterstützen Sie die [IMessage:: SubmitMessage](imessage-submitmessage.md) -Methode für Nachrichtenobjekte, die im Nachrichtenspeicher erstellt werden. 
+- Unterstützt die [IMessage::SubmitMessage-Methode](imessage-submitmessage.md) für Nachrichtenobjekte, die im Nachrichtenspeicher erstellt wurden. 
     
-- Unterstützen Sie die **IMsgStore** -Methoden, die für den MAPI-Spooler spezifisch sind: [IMsgStore:: FinishedMsg](imsgstore-finishedmsg.md), [IMsgStore:: GetOutgoingQueue](imsgstore-getoutgoingqueue.md), [IMsgStore:: NotifyNewMail](imsgstore-notifynewmail.md)und [IMsgStore:: SetLockState](imsgstore-setlockstate.md).
+- Unterstützt die **IMsgStore-Methoden,** die für den MAPI-Spooler spezifisch sind: [IMsgStore::FinishedMsg](imsgstore-finishedmsg.md), [IMsgStore::GetOutgoingQueue](imsgstore-getoutgoingqueue.md), [IMsgStore::NotifyNewMail](imsgstore-notifynewmail.md)und [IMsgStore::SetLockState](imsgstore-setlockstate.md).
     
-Die **SetLockState** -Methode ist wichtig für eine ordnungsgemäße Zusammenarbeit zwischen dem MAPI-Spooler und den Clients. Wenn der MAPI-Spooler **SetLockState** für eine ausgehende Nachricht aufruft, darf der Nachrichtenspeicher Anbieter die Nachricht nicht öffnen. Wenn ein Client versucht, eine vom MAPI-Spooler gesperrte Nachricht zu öffnen, sollte der Nachrichtenspeicher Anbieter MAPI_E_NO_ACCESS zurückgeben. Der gesperrte Status einer Nachricht muss nicht persistent sein, wenn der Speicher heruntergefahren wird, während die Nachricht vom MAPI-Spooler gesperrt wird. 
+Die **SetLockState-Methode** ist wichtig für eine ordnungsgemäße Zusammenarbeit zwischen dem MAPI-Spooler und Clients. Wenn der MAPI-Spooler **SetLockState** für eine ausgehende Nachricht aufruft, darf der Nachrichtenspeicheranbieter die Nachricht nicht von Clients öffnen lassen. Wenn ein Client versucht, eine Nachricht zu öffnen, die durch den MAPI-Spooler gesperrt ist, sollte der Nachrichtenspeicheranbieter MAPI_E_NO_ACCESS. Der gesperrte Status einer Nachricht muss nicht dauerhaft sein, wenn der Speicher heruntergefahren wird, während die Nachricht vom MAPI-Spooler gesperrt wird. 
   
-Unabhängig davon, ob der MAPI-Spooler eine ausgehende Nachricht gesperrt hat, sollte der Nachrichtenspeicher Anbieter nicht zulassen, dass eine Nachricht in der Warteschlange für ausgehende Nachrichten zum Schreiben geöffnet wird. Wenn ein Client die [IMSgStore:: OpenEntry](imsgstore-openentry.md) -Methode für eine ausgehende Nachricht mit dem MAPI_MODIFY-Flag aufruft, sollte der Aufruf fehlschlagen und MAPI_E_SUBMITTED zurückgeben. Wenn eine Clientanwendung **OpenEntry** für eine ausgehende Nachricht mit dem MAPI_BEST_ACCESS-Flag aufruft, sollte der Nachrichtenspeicher Anbieter schreibgeschützten Zugriff auf die Nachricht zulassen. 
+Unabhängig davon, ob der MAPI-Spooler eine ausgehende Nachricht gesperrt hat, sollte der Nachrichtenspeicheranbieter nicht zulassen, dass eine Nachricht in der Warteschlange für ausgehende Nachrichten zum Schreiben geöffnet wird. Wenn ein Client die [IMSgStore::OpenEntry-Methode](imsgstore-openentry.md) für eine ausgehende Nachricht mit dem Flag MAPI_MODIFY aufruft, sollte der Aufruf fehlschlagen und MAPI_E_SUBMITTED. Wenn eine Clientanwendung **OpenEntry** für eine ausgehende Nachricht mit dem MAPI_BEST_ACCESS aufruft, sollte der Nachrichtenspeicheranbieter schreibgeschützten Zugriff auf die Nachricht zulassen. 
   
-Wenn eine Nachricht vom MAPI-Spooler verarbeitet werden soll, legt der Nachrichtenspeicher Anbieter die **PR_SUBMIT_FLAGS** ([pidtagsubmitflags (](pidtagsubmitflags-canonical-property.md))-Eigenschaft der Nachricht auf SUBMITFLAG_LOCKED fest. Der SUBMITFLAG_LOCKED-Wert gibt an, dass die MAPI-Warteschlange die Nachricht für ihre exklusive Verwendung gesperrt hat. Der andere Wert für **PR_SUBMIT_FLAGS**, SUBMITFLAG_PREPROCESS, wird festgelegt, wenn die Nachricht die Vorverarbeitung durch eine oder mehrere präprozessorfunktionen erfordert, die von einem Transportanbieter registriert werden.
+Wenn eine Nachricht vom #A0 verarbeitet werden soll, legt der Nachrichtenspeicheranbieter die **eigenschaft PR_SUBMIT_FLAGS** ([PidTagSubmitFlags](pidtagsubmitflags-canonical-property.md)) der Nachricht auf SUBMITFLAG_LOCKED. Der SUBMITFLAG_LOCKED gibt an, dass der MAPI-Spooler die Nachricht für die exklusive Verwendung gesperrt hat. Der andere Wert für **PR_SUBMIT_FLAGS**, SUBMITFLAG_PREPROCESS, wird festgelegt, wenn für die Nachricht eine Vorverarbeitung durch eine oder mehrere von einem Transportanbieter registrierte Präprozessorfunktionen erforderlich ist.
   
-In den folgenden Verfahren wird beschrieben, wie Nachrichtenspeicher, Transport und MAPI-Spooler interagieren, um eine Nachricht von einem Client an einen oder mehrere Empfänger zu senden. 
+In den folgenden Verfahren wird beschrieben, wie der Nachrichtenspeicher, der Transport und der MAPI-Spooler interagieren, um eine Nachricht von einem Client an einen oder mehrere Empfänger zu senden. 
   
-Die Clientanwendung Ruft die [IMessage:: SubmitMessage](imessage-submitmessage.md) -Methode auf. In **SubmitMessage**führt der Nachrichtenspeicher Anbieter folgende Aktionen aus:
+Die Clientanwendung ruft die [IMessage::SubmitMessage-Methode](imessage-submitmessage.md) auf. In **SubmitMessage** führt der Nachrichtenspeicheranbieter die folgenden Schritte aus:
   
-1. Ruft [IMAPISupport::P reparesubmit](imapisupport-preparesubmit.md). Wenn MAPI einen Fehler zurückgibt, gibt der Nachrichtenspeicher Anbieter diesen Fehler an den Client zurück.
+1. Ruft [IMAPISupport::P repareSubmit auf.](imapisupport-preparesubmit.md) Wenn MAPI einen Fehler zurückgibt, gibt der Nachrichtenspeicheranbieter diesen Fehler an den Client zurück.
     
-2. Legt das MSGFLAG_SUBMIT-Bit in der **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))-Eigenschaft der Nachricht fest.
+2. Legt das MSGFLAG_SUBMIT in der **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) -Eigenschaft der Nachricht fest.
     
-3. Stellt sicher, dass eine Spalte für die **PR_RESPONSIBILITY** ([pidtagresponsibility (](pidtagresponsibility-canonical-property.md))-Eigenschaft in der Recipient-Tabelle vorhanden ist, und legt Sie auf false fest, um anzugeben, dass noch kein Transport die Verantwortung für die Übertragung der Nachricht übernommen hat.
+3. Stellt sicher, dass eine Spalte für die **PR_RESPONSIBILITY** ([PidTagResponsibility](pidtagresponsibility-canonical-property.md)) -Eigenschaft in der Empfängertabelle enthalten ist, und legt diese auf FALSE fest, um anzugeben, dass noch kein Transport die Verantwortung für die Übertragung der Nachricht übernommen hat.
     
-4. Legt das Datum und die Uhrzeit der Ursprung in der **PR_CLIENT_SUBMIT_TIME** ([PidTagClientSubmitTime](pidtagclientsubmittime-canonical-property.md))-Eigenschaft.
+4. Legt Das Datum und die Uhrzeit der Ursprünge in der **PR_CLIENT_SUBMIT_TIME** ([PidTagClientSubmitTime](pidtagclientsubmittime-canonical-property.md)) -Eigenschaft fest.
     
-5. Ruft [IMAPISupport:: ExpandRecips](imapisupport-expandrecips.md) auf, um folgende Aufgaben auszuführen: 
+5. Ruft [IMAPISupport::ExpandRecips auf,](imapisupport-expandrecips.md) um die folgenden Schritte zu tun: 
     
     1. Erweitern Sie alle pers�nlichen Verteilerlisten und benutzerdefinierte Empf�nger, und Ersetzen Sie alle ge�nderten Anzeigenamen durch ihren Originalnamen.
         
     2. Entfernen von Duplikaten.
         
-    3. Überprüfen Sie, ob die erforderliche Vorverarbeitung erforderlich ist, und legen Sie das NEEDS_PREPROCESSING-Flag und die **PR_PREPROCESS** ([pidtagpreprocess (](pidtagpreprocess-canonical-property.md))-Eigenschaft fest, die für MAPI reserviert ist. 
+    3. Überprüfen Sie die erforderliche Vorverarbeitung, und legen Sie, falls die Vorverarbeitung erforderlich ist, das flag NEEDS_PREPROCESSING und die **PR_PREPROCESS** ([PidTagPreprocess](pidtagpreprocess-canonical-property.md))-Eigenschaft, die für MAPI reserviert ist. 
         
     4. Legen Sie das Flag NEEDS_SPOOLER, wenn der Nachrichtenspeicher eng mit einer Transport verkn�pft ist und nicht behandelt alle Empf�nger werden kann. 
     
 6. F�hrt die folgenden Aufgaben aus, wenn der Nachrichtenkennzeichnung NEEDS_PREPROCESSING festgelegt ist:
     
-    1. Platziert die Nachricht in der ausgehenden Warteschlange mit dem SUBMITFLAG_PREPROCESS-Bit, das in der **PR_SUBMIT_FLAGS** -Eigenschaft festgelegt ist. 
+    1. Legt die Nachricht in die ausgehende Warteschlange ein, SUBMITFLAG_PREPROCESS bit in der PR_SUBMIT_FLAGS **festgelegt** ist. 
         
     2. Benachrichtigt die MAPI-Warteschlange, die die Warteschlange ge�ndert wurde.
         
     3. Gibt die Steuerung an den Client, und Nachrichtenfluss wird in die Warteschlange MAPI fortgesetzt. Die MAPI-Warteschlange f�hrt die folgenden Aufgaben: 
     
-       1. Sperrt die Nachricht durch Aufrufen von [IMsgStore:: SetLockState](imsgstore-setlockstate.md).
+       1. Sperrt die Nachricht durch Aufrufen von [IMsgStore::SetLockState](imsgstore-setlockstate.md).
             
-       2. Führt die erforderliche Vorverarbeitung aus, indem alle Vorverarbeitungsfunktionen in der Reihenfolge der Registrierung aufgerufen werden. Transport Anbieter rufen [IMAPISupport:: RegisterPreprocessor](imapisupport-registerpreprocessor.md) auf, um Vorverarbeitungsfunktionen zu registrieren. 
+       2. Führt die benötigte Vorverarbeitung durch Aufrufen aller Vorverarbeitungsfunktionen in der Reihenfolge der Registrierung aus. Transportanbieter rufen [IMAPISupport::RegisterPreprocessor auf,](imapisupport-registerpreprocessor.md) um Vorverarbeitungsfunktionen zu registrieren. 
             
-       3. Ruft [IMessage:: SubmitMessage](imessage-submitmessage.md) für die offene Nachricht auf, um dem Nachrichtenspeicher anzuzeigen, dass die Vorverarbeitung abgeschlossen ist. 
+       3. Ruft [IMessage::SubmitMessage](imessage-submitmessage.md) für die geöffnete Nachricht auf, um dem Nachrichtenspeicher anzugeben, dass die Vorverarbeitung abgeschlossen ist. 
     
-Wenn es keine Vorverarbeitung oder eine Vorverarbeitung gab, und der MAPI-Spooler namens **SubmitMessage**, führt der Nachrichtenspeicher Anbieter im Clientprozess folgende Aktionen aus: 
+Wenn keine Vorverarbeitung oder eine Vorverarbeitung und der MAPI-Spooler **"SubmitMessage"** ausgeführt wurde, führt der Nachrichtenspeicheranbieter im Clientprozess die folgenden Schritte aus: 
   
 - Performs the following tasks if the message store is tightly coupled to a transport and the NEEDS_SPOOLER flag was returned from [IMAPISupport::ExpandRecips](imapisupport-expandrecips.md):
     
@@ -81,33 +81,33 @@ Wenn es keine Vorverarbeitung oder eine Vorverarbeitung gab, und der MAPI-Spoole
     
    - F�hrt die folgenden Aufgaben aus, wenn alle Empf�nger zu diesem eng gekoppelten Store und Transport bekannt sind: 
     
-     - Ruft [IMAPISupport:: CompleteMsg](imapisupport-completemsg.md) auf, wenn die Nachricht vorverarbeitet wurde oder der Nachrichtenspeicher Anbieter den MAPI-Spooler zum Abschließen der Nachrichtenverarbeitung wünscht. Der Nachrichtenfluss wird mit dem MAPI-Spooler fortgesetzt. 
+     - Ruft [IMAPISupport::CompleteMsg](imapisupport-completemsg.md) auf, wenn die Nachricht vorverarbeitet wurde oder der Nachrichtenspeicheranbieter möchte, dass der MAPI-Spooler die Nachrichtenverarbeitung abgeschlossen hat. Der Nachrichtenfluss wird mit dem MAPI-Spooler fortgesetzt. 
     
-     - Führt die folgenden Aufgaben aus, wenn die Nachricht nicht vorverarbeitet wurde oder der Nachrichtenspeicher Anbieter nicht möchten, dass die Nachrichtenverarbeitung vom MAPI-Spooler abgeschlossen wird:
+     - Führt die folgenden Aufgaben aus, wenn die Nachricht nicht vorverarbeitet wurde oder der Nachrichtenspeicheranbieter nicht möchte, dass der MAPI-Spooler die Nachrichtenverarbeitung abgeschlossen hat:
     
-       1. Kopiert die Nachricht in den Ordner, der durch den Eintragsbezeichner in der **PR_SENTMAIL_ENTRYID** ([pidtagsentmailentryid (](pidtagsentmailentryid-canonical-property.md))-Eigenschaft identifiziert wird, falls festgelegt.
+       1. Kopiert die Nachricht in den Ordner, der durch den Eintragsbezeichner in der **PR_SENTMAIL_ENTRYID** ([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md)) -Eigenschaft identifiziert wird, sofern festgelegt.
             
-       2. Löscht die Nachricht, wenn die **PR_DELETE_AFTER_SUBMIT** ([pidtagdeleteaftersubmit (](pidtagdeleteaftersubmit-canonical-property.md))-Eigenschaft auf true festgelegt wurde.
+       2. Löscht die Nachricht, **wenn PR_DELETE_AFTER_SUBMIT** ([PidTagDeleteAfterSubmit](pidtagdeleteaftersubmit-canonical-property.md)) -Eigenschaft auf TRUE festgelegt wurde.
             
-       3. Hebt die Sperre der Nachricht auf, wenn Sie gesperrt ist.
+       3. Entsperrt die Nachricht, wenn sie gesperrt ist.
             
-       4. Gibt den Client zurück. Der Nachrichtenfluss ist abgeschlossen.
+       4. Gibt an den Client zurück. Der Nachrichtenfluss ist abgeschlossen.
     
-  - Führt die folgenden Aufgaben aus, wenn die Nachricht vorverarbeitet wurde oder der Anbieter den MAPI-Spooler zum Abschließen der Nachrichtenverarbeitung wünscht:
+  - Führt die folgenden Aufgaben aus, wenn die Nachricht vorverarbeitet wurde oder der Anbieter möchte, dass der MAPI-Spooler die Nachrichtenverarbeitung abgeschlossen hat:
     
-    1. Ruft [IMAPISupport:: CompleteMsg](imapisupport-completemsg.md)auf. 
+    1. Ruft [IMAPISupport::CompleteMsg auf.](imapisupport-completemsg.md) 
           
-    2. Setzt den Nachrichtenfluss mit dem MAPI-Spooler fort. Weitere Informationen finden Sie unter [Senden von Nachrichten: MAPI](sending-messages-mapi-spooler-tasks.md)-spoolEr-Aufgaben.
+    2. Setzt den Nachrichtenfluss mit dem MAPI-Spooler fort. Weitere Informationen finden Sie unter [Sending Messages: MAPI Spooler Tasks](sending-messages-mapi-spooler-tasks.md).
     
-  - Führt die folgenden Aufgaben aus, wenn die Nachricht nicht vorverarbeitet wurde oder wenn der Spooler die Nachrichtenverarbeitung nicht abschließen soll:
+  - Führt die folgenden Aufgaben aus, wenn die Nachricht nicht vorverarbeitet wurde oder der Anbieter nicht möchte, dass der Spooler die Nachrichtenverarbeitung abgeschlossen hat:
     
-    1. Kopiert die Nachricht in den Ordner, der durch den Eintragsbezeichner in der **PR_SENTMAIL_ENTRYID** -Eigenschaft identifiziert wird, falls festgelegt. 
+    1. Kopiert die Nachricht in den Ordner, der durch den Eintragsbezeichner in der **PR_SENTMAIL_ENTRYID** festgelegt ist. 
         
-    2. Löscht die Nachricht, wenn die **PR_DELETE_AFTER_SUBMIT** -Eigenschaft auf true festgelegt wurde. 
+    2. Löscht die Nachricht, **wenn die PR_DELETE_AFTER_SUBMIT** auf TRUE festgelegt wurde. 
         
-    3. Hebt die Sperre der Nachricht auf, wenn Sie gesperrt ist. 
+    3. Entsperrt die Nachricht, wenn sie gesperrt ist. 
         
-    4. Gibt den Aufrufer zurück. Der Nachrichtenfluss ist abgeschlossen.
+    4. Gibt an den Anrufer zurück. Der Nachrichtenfluss ist abgeschlossen.
     
 - F�hrt die folgenden Aufgaben aus, wenn der Nachrichtenspeicher nicht eng um einen Transport verkn�pft, nicht alle Empf�nger mit dem Nachrichtenspeicher bezeichnet wurden oder das Flag NEEDS_SPOOLER festgelegt ist:
     

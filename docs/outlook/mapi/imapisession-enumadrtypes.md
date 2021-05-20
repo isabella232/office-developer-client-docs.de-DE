@@ -39,19 +39,19 @@ HRESULT EnumAdrTypes(
 
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die das Format für die zurückgegebenen Adresstypen angibt. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die das Format für die zurückgegebenen Adresstypen angibt. Das folgende Flag kann festgelegt werden:
     
 MAPI_UNICODE 
   
-> Die Adresstypen sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, sind die Adresstypen im ANSI-Format.
+> Die Adresstypen sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Adresstypen im ANSI-Format.
     
  _lpcAdrTypes_
   
-> Out Ein Zeiger auf die Anzahl von Adresstypen, auf die durch den _lpppszAdrTypes_ -Parameter verwiesen wird. 
+> [out] Ein Zeiger auf eine Anzahl von Adresstypen, auf die der _lpppszAdrTypes-Parameter verweist._ 
     
  _lpppszAdrTypes_
   
-> Out Ein Zeiger auf ein Array von Zeigern auf Adresstypen.
+> [out] Ein Zeiger auf ein Array von Zeigern auf Adresstypen.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -59,13 +59,13 @@ S_OK
   
 > Die Adresstypen wurden erfolgreich abgerufen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPISession:: EnumAdrTypes** -Methode gibt eine Liste der Adresstypen zurück, die von allen aktiven Transportanbietern in der Sitzung verarbeitet werden können. Die Adresstypen für Transportanbieter, die derzeit nicht geladen werden, sind nicht in der Liste enthalten. Transport Anbieter registrieren, um einen oder mehrere Adresstypen zu behandeln, wenn MAPI Ihre [IXPLogon:: AddressTypes](ixplogon-addresstypes.md) -Methode aufruft. 
+Die **IMAPISession::EnumAdrTypes-Methode** gibt eine Liste der Adresstypen zurück, die von allen aktiven Transportanbietern in der Sitzung verarbeitet werden können. Die Adresstypen für Transportanbieter, die derzeit nicht geladen sind, sind nicht in der Liste enthalten. Transportanbieter registrieren sich, um einen oder mehrere Adresstypen zu behandeln, wenn MAPI ihre [IXPLogon::AddressTypes-Methode](ixplogon-addresstypes.md) aufruft. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Rufen Sie [mapifreebufferfreigegeben](mapifreebuffer.md) auf, um das Zeichenfolgenarray zu veröffentlichen, auf das durch den _lpppszAdrTypes_ -Parameter verwiesen wird. 
+Rufen [Sie MAPIFreeBuffer auf,](mapifreebuffer.md) um das Zeichenfolgenarray frei zu lassen, auf das der  _lpppszAdrTypes-Parameter_ verweist. 
   
 ## <a name="see-also"></a>Siehe auch
 

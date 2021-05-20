@@ -1,5 +1,5 @@
 ---
-title: Logische Operatoren (Access Custom Web App)
+title: Logische Operatoren (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,18 +14,18 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33437665"
 ---
-# <a name="logical-operators-access-custom-web-app"></a>Logische Operatoren (Access Custom Web App)
+# <a name="logical-operators-access-custom-web-app"></a>Logische Operatoren (benutzerdefinierte Access-Web-App)
 
 > [!IMPORTANT]
 > Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
-- [UND (Access Custom Web App)](and-access-custom-web-app.md)
+- [AND (Benutzerdefinierte Web-App access)](and-access-custom-web-app.md)
     
-- [NOT (Access Custom Web App)](not-access-custom-web-app.md)
+- [NOT (Benutzerdefinierte Web-App zugreifen)](not-access-custom-web-app.md)
     
-- [ODER (Access Custom Web App)](or-access-custom-web-app.md)
+- [OR (Benutzerdefinierte Web-App access)](or-access-custom-web-app.md)
     
 - [IS [NOT] NULL (benutzerdefinierte Access-Web-App)](is-not-null-access-custom-web-app.md)
     

@@ -8,7 +8,7 @@ f1_keywords:
 - vis_sdr.chm80002
 localization_priority: Normal
 ms.assetid: 99a5ca0e-5cb4-64cc-8af5-15ac6d02c77f
-description: Bestimmt, ob das Zeichenblatt automatisch an das Diagramm angepasst wird.
+description: Bestimmt, ob die Größe des Zeichenblatts automatisch an das Diagramm angepasst wird.
 ms.openlocfilehash: 6956c1e021ffffdb54f3dfa36270b9df04e892b0
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,21 +18,21 @@ ms.locfileid: "33437007"
 ---
 # <a name="drawingresizetype-cell-page-properties-section"></a>Zelle "DrawingResizeType" (Abschnitt "Zeichenblatteigenschaften")
 
-Bestimmt, ob das Zeichenblatt automatisch an das Diagramm angepasst wird. 
+Bestimmt, ob die Größe des Zeichenblatts automatisch an das Diagramm angepasst wird. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle DrawingResizeType aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes. 
+Verwenden Sie folgendes, um einen Verweis auf die Zelle DrawingResizeType anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** zu erhalten. 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |DrawingResizeType  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle DrawingResizeType aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die DrawingResizeType-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowPage** <br/> |
 |Zellenindex:  <br/> |**visPageDrawResizeType** <br/> |
    

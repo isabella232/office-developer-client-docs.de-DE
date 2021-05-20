@@ -1,5 +1,5 @@
 ---
-title: In dieser Edition deprecated API-Elemente
+title: In dieser Edition veraltete API-Elemente
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,31 +15,31 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33436888"
 ---
-# <a name="api-elements-deprecated-in-this-edition"></a>In dieser Edition deprecated API-Elemente
+# <a name="api-elements-deprecated-in-this-edition"></a>In dieser Edition veraltete API-Elemente
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die folgenden API-Elemente sind in Microsoft Outlook 2013 veraltet. Sie werden nicht mehr unterstützt, und Sie sollten Sie nicht in neuen Projekten verwenden.
+Die folgenden API-Elemente sind in der Microsoft Outlook 2013. Sie werden nicht mehr unterstützt, und Sie sollten sie nicht in neuen Projekten verwenden.
   
-## <a name="deprecation-of-message-and-recipient-options"></a>Veraltet Nachrichten-und Empfängeroptionen
+## <a name="deprecation-of-message-and-recipient-options"></a>Veraltete Nachrichten- und Empfängeroptionen
 
-Die folgenden API-Elemente sind in dieser Release aufgrund veralteter Nachrichten-und Empfängeroptionen veraltet:
+Die folgenden API-Elemente sind in dieser Version aufgrund veralteter Nachrichten- und Empfängeroptionen veraltet:
   
-- **IXPLogon:: Register**Options – das MAPI-Subsystem ruft diese Methode nicht mehr auf, um Standardwerte für Nachrichten-und Empfängeroptionen für einen Transportanbieter einzurichten.
+- **IXPLogon::RegisterOptions**– Das MAPI-Subsystem ruft diese Methode nicht mehr auf, um Standardwerte für Nachrichten- und Empfängeroptionen für einen Transportanbieter zu erstellen.
     
-- **, OptionDatenquelle**– diese Datenstruktur, die Eigenschaften für Nachrichten-und Empfängeroptionen unterstützt hat, ist veraltet. Das MAPI-Subsystem ruft **IXPLogon:: Register** options nicht mehr auf, um Nachrichten-oder Empfängeroptionen abzurufen, die ein Transportanbieter für einen bestimmten Adresstyp unterstützt. 
+- **OPTIONDATA**– Diese Datenstruktur, die Eigenschaften für Nachrichten- und Empfängeroptionen unterstützt, ist veraltet. Das MAPI-Subsystem ruft **IXPLogon::RegisterOptions** nicht mehr auf, um Nachrichten- oder Empfängeroptionen zu erhalten, die ein Transportanbieter für einen bestimmten Adresstyp unterstützt. 
     
-- **OPTIONCALLBACK**– dieser Funktionsprototyp, den ein Transportanbieter zum Deklarieren einer Rückruffunktion verwendet hat und der wiederum das MAPI-Subsystem zum Auflösen der Eigenschaften des Anbieters verwendet, ist veraltet. Das MAPI-Subsystem ruft **IXPLogon:: registeroptions** nicht mehr auf oder verwendet eine Rückruffunktion, die vom Transportanbieter zurückgegeben wird. 
+- **OPTIONCALLBACK**– Dieser Funktionsprototyp, den ein Transportanbieter zum Deklarieren einer Rückruffunktion verwendet hat und der wiederum das ZUM Auflösen der Eigenschaften des Anbieters verwendete MAPI-Subsystem ist veraltet. Das MAPI-Subsystem ruft nicht mehr **IXPLogon::RegisterOptions auf** oder verwendet eine rückruffunktion, die vom Transportanbieter zurückgegeben wird. 
     
-- **IMAPISession:: messageoptions**– MAPI-Client-und-Dienstanbieter sollten diese Methode nicht mehr aufrufen, um Eigenschaften anzuzeigen oder Benutzereigenschaften festzulegen, die eine bestimmte Nachricht und einen bestimmten Adresstyp steuern. Die Methode gibt immer MAPI_E_NOT_FOUND zurück, was bedeutet, dass für die jeweilige Nachricht keine Nachrichtenoptionen vorhanden sind.
+- **IMAPISession::MessageOptions**– MAPI-Client- und -Dienstanbieter sollten diese Methode nicht mehr aufrufen, um Eigenschaften anzuzeigen oder Benutzern das Festlegen von Eigenschaften zu ermöglichen, die einen bestimmten Nachrichten- und Adresstyp steuern. Die Methode gibt immer MAPI_E_NOT_FOUND zurück, was angibt, dass es keine Nachrichtenoptionen für die bestimmte Nachricht gibt.
     
-- **IMAPISession:: QueryDefaultMessageOpt**– MAPI-Client-und-Dienstanbieter sollten diese Methode nicht mehr aufrufen, um Eigenschaften abzurufen, die Nachrichtenoptionen für einen bestimmten Adresstyp steuern. Die-Methode gibt keinen Zeiger mehr auf ein Array von Eigenschaftswerten zurück.
+- **IMAPISession::QueryDefaultMessageOpt**– MAPI-Client- und -Dienstanbieter sollten diese Methode nicht mehr aufrufen, um Eigenschaften abzurufen, die Nachrichtenoptionen für einen bestimmten Adresstyp steuern. Die Methode gibt keinen Zeiger mehr auf ein Array von Eigenschaftswerten zurück.
     
-- **IAddrBook:: RecipOptions**– MAPI-Client-und-Dienstanbieter sollten diese Methode nicht mehr aufrufen, um Eigenschaften anzuzeigen oder Benutzereigenschaften festzulegen, die die Verarbeitung für einen Empfänger eines bestimmten Adresstyps steuern. Die Methode gibt immer MAPI_W_ERRORS_RETURNED zurück, was bedeutet, dass für den jeweiligen Empfänger keine Empfängeroptionen vorhanden sind.
+- **IAddrBook::RecipOptions**– MAPI-Client- und -Dienstanbieter sollten diese Methode nicht mehr aufrufen, um Eigenschaften anzuzeigen oder Benutzern das Festlegen von Eigenschaften zu ermöglichen, die die Verarbeitung für einen Empfänger eines bestimmten Adresstyps steuern. Die Methode gibt immer MAPI_W_ERRORS_RETURNED zurück, was angibt, dass es keine Empfängeroptionen für den jeweiligen Empfänger gibt.
     
-- **IAddrBook:: QueryDefaultRecipOpt**– MAPI-Client-und-Dienstanbieter sollten diese Methode nicht mehr aufrufen, um Eigenschaften abzurufen, die Empfängeroptionen für einen bestimmten Adresstyp steuern. Die-Methode gibt keinen Zeiger mehr auf ein Array von Eigenschaftswerten zurück.
+- **IAddrBook::QueryDefaultRecipOpt**– MAPI-Client- und -Dienstanbieter sollten diese Methode nicht mehr aufrufen, um Eigenschaften abzurufen, die Empfängeroptionen für einen bestimmten Adresstyp steuern. Die Methode gibt keinen Zeiger mehr auf ein Array von Eigenschaftswerten zurück.
     
 ## <a name="see-also"></a>Siehe auch
 

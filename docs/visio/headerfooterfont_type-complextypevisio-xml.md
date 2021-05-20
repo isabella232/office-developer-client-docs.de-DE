@@ -13,14 +13,14 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34541071"
 ---
-# <a name="headerfooterfonttype-complextype-visio-xml"></a>HeaderFooterFont_Type complexType (Visio XML)
+# <a name="headerfooterfont_type-complextype-visio-xml"></a>HeaderFooterFont_Type complexType (Visio XML)
 
 ## <a name="type-information"></a>Informationen zum Typ
 
 |||
 |:-----|:-----|
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
-|**Schemadatei** <br/> |VisioSchema15-2012-06 -05. xsd  <br/> |
+|**Schemadatei** <br/> |VisioSchema15-2012-06-05.xsd  <br/> |
 |**Erweiterungsbasis** <br/> |Keine  <br/> |
    
 ## <a name="definition"></a>Definition
@@ -75,7 +75,7 @@ ms.locfileid: "34541071"
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -85,19 +85,19 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|CharSet  <br/> |XSD: unsignedByte  <br/> |Optional  <br/> ||Werte des XSD: unsignedByte-Typs.  <br/> |
-|ClipPrecision  <br/> |XSD: unsignedByte  <br/> |Optional  <br/> ||Werte des XSD: unsignedByte-Typs.  <br/> |
-|Hemmung  <br/> |XSD: int  <br/> |Optional  <br/> ||Werte des Typs XSD: int.  <br/> |
-|FaceName  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> ||Werte des Typs XSD: String.  <br/> |
-|Height  <br/> |XSD: int  <br/> |Optional  <br/> ||Werte des Typs XSD: int.  <br/> |
-|Kursiv  <br/> |XSD: unsignedByte  <br/> |Optional  <br/> ||Werte des XSD: unsignedByte-Typs.  <br/> |
-|Orientierung  <br/> |XSD: int  <br/> |Optional  <br/> ||Werte des Typs XSD: int.  <br/> |
-|OutPrecision  <br/> |XSD: unsignedByte  <br/> |Optional  <br/> ||Werte des XSD: unsignedByte-Typs.  <br/> |
-|PitchAndFamily  <br/> |XSD: unsignedByte  <br/> |Optional  <br/> ||Werte des XSD: unsignedByte-Typs.  <br/> |
-|Quality  <br/> |XSD: unsignedByte  <br/> |Optional  <br/> ||Werte des XSD: unsignedByte-Typs.  <br/> |
-|Durchgestrichen  <br/> |XSD: unsignedByte  <br/> |Optional  <br/> ||Werte des XSD: unsignedByte-Typs.  <br/> |
-|Unterstrichen  <br/> |XSD: unsignedByte  <br/> |Optional  <br/> ||Werte des XSD: unsignedByte-Typs.  <br/> |
-|Schriftbreite  <br/> |XSD: int  <br/> |Optional  <br/> ||Werte des Typs XSD: int.  <br/> |
-|Width  <br/> |XSD: int  <br/> |Optional  <br/> ||Werte des Typs XSD: int.  <br/> |
+|CharSet  <br/> |xsd:unsignedByte  <br/> |Optional  <br/> ||Werte des xsd:unsignedByte-Typs.  <br/> |
+|ClipPrecision  <br/> |xsd:unsignedByte  <br/> |Optional  <br/> ||Werte des xsd:unsignedByte-Typs.  <br/> |
+|Escapement  <br/> |xsd:int  <br/> |Optional  <br/> ||Werte des xsd:int-Typs.  <br/> |
+|FaceName  <br/> |xsd:string  <br/> |Optional  <br/> ||Werte des xsd:string-Typs.  <br/> |
+|Height  <br/> |xsd:int  <br/> |Optional  <br/> ||Werte des xsd:int-Typs.  <br/> |
+|Kursiv  <br/> |xsd:unsignedByte  <br/> |Optional  <br/> ||Werte des xsd:unsignedByte-Typs.  <br/> |
+|Orientierung  <br/> |xsd:int  <br/> |Optional  <br/> ||Werte des xsd:int-Typs.  <br/> |
+|OutPrecision  <br/> |xsd:unsignedByte  <br/> |Optional  <br/> ||Werte des xsd:unsignedByte-Typs.  <br/> |
+|PitchAndFamily  <br/> |xsd:unsignedByte  <br/> |Optional  <br/> ||Werte des xsd:unsignedByte-Typs.  <br/> |
+|Qualität  <br/> |xsd:unsignedByte  <br/> |Optional  <br/> ||Werte des xsd:unsignedByte-Typs.  <br/> |
+|StrikeOut  <br/> |xsd:unsignedByte  <br/> |Optional  <br/> ||Werte des xsd:unsignedByte-Typs.  <br/> |
+|Unterstrichen  <br/> |xsd:unsignedByte  <br/> |Optional  <br/> ||Werte des xsd:unsignedByte-Typs.  <br/> |
+|Schriftbreite  <br/> |xsd:int  <br/> |Optional  <br/> ||Werte des xsd:int-Typs.  <br/> |
+|Width  <br/> |xsd:int  <br/> |Optional  <br/> ||Werte des xsd:int-Typs.  <br/> |
    
 

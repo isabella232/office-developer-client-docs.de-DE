@@ -20,8 +20,8 @@ ms.locfileid: "33438505"
 
 Enthält Zellen zum Steuern der Ausrichtung, der Ränder und der Standardtabstoppposition von Text im Textblock eines Shapes.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Sie können diese Textattribute auch festlegen, indem Sie das Dialogfeld **Text** verwenden (Klicken Sie auf der Registerkarte **Start** auf das Dialogfeldstartprogramm in der Gruppe **Schriftart** ). 
+Sie können diese Textattribute auch mithilfe des Dialogfelds **Text** festlegen (klicken Sie auf der Registerkarte **Start** auf das Startfeld des Dialogfelds in der **Gruppe Schriftart).** 
   
 

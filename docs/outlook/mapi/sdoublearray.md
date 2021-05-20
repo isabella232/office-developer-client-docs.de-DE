@@ -25,11 +25,11 @@ ms.locfileid: "33439268"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von Doubles, die zum Beschreiben einer Eigenschaft vom Typ PT_MV_DOUBLE verwendet werden.
+Enthält ein Array von Doubles, das zum Beschreiben einer Eigenschaft vom Typ PT_MV_DOUBLE.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SDoubleArray
@@ -40,19 +40,19 @@ typedef struct _SDoubleArray
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cValues**
   
-> Die Anzahl der Werte im Array, auf die durch das **lpdbl** -Element verwiesen wird. 
+> Anzahl der Werte im Array, auf das das **lpdbl-Element verweist.** 
     
  **lpdbl**
   
-> Zeiger auf ein Array von Double-Werten.
+> Zeiger auf ein Array mit doppelten Werten.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Weitere Informationen zu PT_MV_DOUBLE finden Sie unter [Liste der Eigenschaftstypen](property-types.md).
+Weitere Informationen zu PT_MV_DOUBLE finden Sie unter [List of Property Types](property-types.md).
   
 ## <a name="see-also"></a>Siehe auch
 

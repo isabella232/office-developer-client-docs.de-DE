@@ -20,24 +20,24 @@ ms.locfileid: "33438036"
 
 Legt eine aufzurufende URL-Adresse, einen Dateinamen oder einen UNC-Pfad fest.
   
-Sie können die Adresse als relativen Pfad basierend auf dem Basis Pfad angeben, der für das Dokument im **** Feld Hyperlinkbasis auf der Registerkarte **Zusammenfassung** des Dialogfelds **Eigenschaften** festgelegt ist (Klicken Sie auf die Registerkarte **Datei** , dann auf **Info**und dann auf * * Eigenschaften * * , und klicken Sie dann auf **Erweiterte Eigenschaften**). Wenn das Dokument keinen Basispfad aufweist, navigiert die Anwendung auf Grundlage des Dokumentpfads. Wenn das Dokument noch nicht gespeichert wurde, bleibt der Hyperlink undefiniert.
+Sie können Address als relativen Pfad basierend auf dem Basispfad angeben,  der für  das Dokument im  **Feld Hyperlinkbasis** auf der Registerkarte Zusammenfassung des Dialogfelds Eigenschaften definiert ist (klicken Sie auf die Registerkarte Datei, klicken Sie auf **Info,** klicken Sie auf ** Eigenschaften **, und klicken Sie dann auf **Erweiterte Eigenschaften**). Wenn das Dokument keinen Basispfad hat, navigiert die Anwendung basierend auf dem Dokumentpfad. Wenn das Dokument noch nicht gespeichert wurde, bleibt der Hyperlink undefiniert.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Sie können den Wert der Zelle Adresse auch im Dialogfeld **Hyperlinks** festlegen (Klicken Sie auf der Registerkarte **Einfügen** auf **Hyperlink** ). 
+Sie können auch den Wert der Zelle Address im Dialogfeld  **Hyperlinks** festlegen (klicken Sie auf der Registerkarte Einfügen auf **Hyperlink).** 
   
-Wenn Sie einen Verweis auf die Zelle address aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle Address nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Hyperlink. *Name* . Adresse, an der Hyperlink. *Name* ist der Name der Hyperlink-Zeile.  <br/> |
+|Zellenname:  <br/> |Hyperlink. *Name*  . Adresse, an der Hyperlink angezeigt wird. *Name*  ist der Name der Hyperlinkzeile  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle address aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle Address anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionHyperlink** <br/> |
-| Zeilenindex:  <br/> |**visRow1stHyperlink** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRow1stHyperlink**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
 | Zellenindex:  <br/> |**visHLinkAddress** <br/> |
    
 

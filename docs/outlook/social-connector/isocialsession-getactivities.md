@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 6546be99-aee4-41a6-8297-ace378776503
-description: Diese Methode ist in OSC 1,1 veraltet.
+description: Diese Methode ist in OSC 1.1 veraltet.
 ms.openlocfilehash: 29a7cdc9895dcfa2bd926d95dbd2089b7a5dc778
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -17,15 +17,15 @@ ms.locfileid: "33439296"
 ---
 # <a name="isocialsessiongetactivities"></a>ISocialSession::GetActivities
 
-Diese Methode ist in OSC 1,1 veraltet.
+Diese Methode ist in OSC 1.1 veraltet.
   
 ```cpp
 HRESULT GetActivities([in] SAFEARRAY(BSTR) emailAddresses, [in] DATE startTime, [out, retval] BSTR *activities);
 ```
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Ab OSC 1,1 ruft der OSC getActivities nicht mehr **** auf. OSC ignoriert den Wert von **dynamicActivitiesLookup**. Zur Unterstützung der Suche nach dynamischen Aktivitäten implementieren Sie die [ISocialSession2:: GetActivitiesEx](isocialsession2-getactivitiesex.md) -Methode. Legen **Sie cacheActivities** als **false**, **** und GetActivities und **DYNAMICACTIVITIESLOOKUPEX** als **true**fest, wodurch der osc aufgefordert wird, **ISocialSession2:: GetActivitiesEx** stattdessen aufzurufen. 
+Ab OSC 1.1 ruft das OSC **getActivities** nicht mehr auf. Das OSC ignoriert den Wert **von dynamicActivitiesLookup**. Implementieren Sie die [ISocialSession2::GetActivitiesEx-Methode,](isocialsession2-getactivitiesex.md) um die Suche nach dynamischen Aktivitäten zu unterstützen. Legen Sie **cacheActivities** als **false** und **getActivities** und **dynamicActivitiesLookupEx** als **true** fest, wodurch das OSC **stattdessen ISocialSession2::GetActivitiesEx** aufruft. 
   
 ## <a name="see-also"></a>Siehe auch
 

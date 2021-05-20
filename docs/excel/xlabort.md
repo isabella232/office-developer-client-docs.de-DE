@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - xlAbort
 keywords:
-- xlAbort-Funktion [Excel 2007]
+- xlabort-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: 0fe71454-6b00-464b-8abf-afb209d57754
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -22,7 +22,7 @@ ms.locfileid: "33436657"
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Liefert den Prozessor anderen Aufgaben im System und überprüft, ob der Benutzer **ESC** gedrückt hat, um ein Makro abzubrechen. Wenn der Benutzer während einer Neuberechnung der Arbeitsmappe **ESC** gedrückt hat, kann er auch aus einer Arbeitsblattfunktion durch Aufrufen dieser Funktion erkannt werden. 
+Gibt den Prozessor anderen Aufgaben im System zu und überprüft, ob der Benutzer **esC** gedrückt hat, um ein Makro abgesagt zu haben. Wenn der Benutzer während einer Neuberechnung der Arbeitsmappe **esC** gedrückt hat, kann er auch innerhalb einer Arbeitsblattfunktion erkannt werden, indem diese Funktion aufruft. 
   
 ```cs
 Excel12(xlAbort, LPXLOPER12 pxRes, 1, LPXLOPER12 pxRetain);
@@ -32,27 +32,27 @@ Excel12(xlAbort, LPXLOPER12 pxRes, 1, LPXLOPER12 pxRetain);
 
  _pxRetain_ (**xltypeBool**)
   
-(Optional). Wenn **false**, prüft diese Funktion auf die Unterbrechungsbedingung und löscht alle ausstehenden Breaks. Dadurch kann der Benutzer trotz der Unterbrechungsbedingung fortfahren. Wenn dieses Argument ausgelassen oder **true**ist, prüft die Funktion, ob ein Benutzer abgebrochen wird, ohne Sie zu löschen.
+(Optional). Bei **FALSE** überprüft diese Funktion die Unterbrechungsbedingung und alle ausstehenden Unterbrechungen. Dadurch kann der Benutzer trotz der Unterbrechungsbedingung fortfahren. Wenn dieses Argument ausgelassen wird oder **TRUE** ist, sucht die Funktion nach einem Benutzerabbruch, ohne es zu löschen.
   
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-Gibt **true** (**xltypeBool**) zurück, wenn der Benutzer **ESC**gedrückt hat.
+Gibt **TRUE** (**xltypeBool**) zurück, wenn der Benutzer **ESC gedrückt hat.**
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 ### 
 
-#### <a name="frequent-calls-may-be-needed"></a>Häufige Anrufe sind MöglicherWeise erforderlich
+#### <a name="frequent-calls-may-be-needed"></a>Häufige Anrufe sind möglicherweise erforderlich
 
-Funktionen und Befehle, die längere Zeit in Anspruch nehmen können, sollten diese Funktion häufig aufrufen, um den Prozessor an andere Aufgaben im System zu übergeben.
+Funktionen und Befehle, die sehr lange dauern können, sollten diese Funktion häufig aufrufen, um dem Prozessor andere Aufgaben im System zu ermöglichen.
   
-#### <a name="avoid-sensitive-language"></a>Vermeiden von vertraulichen Sprachen
+#### <a name="avoid-sensitive-language"></a>Vermeiden vertraulicher Sprache
 
-Vermeiden Sie die Verwendung des Ausdrucks "Abort" auf Ihrer Benutzeroberfläche. Verwenden Sie stattdessen "Abbrechen", "anhalten", "Break" oder "Stop".
+Vermeiden Sie die Verwendung des Begriffs "Abort" in Der Benutzeroberfläche. Erwägen Sie stattdessen die Verwendung von "Cancel", "Halt", "Break" oder "Stop".
   
 ## <a name="example"></a>Beispiel
 
-Mit dem folgenden Code wird die aktive Zelle wiederholt auf einem Blatt verschoben, bis eine Minute abgelaufen ist oder der Benutzer **ESC**drückt. Die Funktion **XlAbort** wird gelegentlich aufgerufen. Dadurch erhält der Prozessor eine Vereinfachung des kooperativen Multitaskings. 
+Der folgende Code verschiebt die aktive Zelle auf einem Blatt wiederholt, bis eine Minute verstrichen ist oder bis der Benutzer **ESC drückt.** Die Funktion **xlAbort** wird gelegentlich aufruft. Dies führt zu einer Beschleunigung des kooperativen Multitaskings durch den Prozessor. 
   
  `\SAMPLES\GENERIC\GENERIC.C`
   

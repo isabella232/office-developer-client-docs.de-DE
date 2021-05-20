@@ -21,36 +21,36 @@ ms.locfileid: "33436810"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt an, ob Microsoft Office Outlook Kontakteordner in einem Speicher überprüfen soll.
+Gibt an, Microsoft Office Outlook Kontakteordner in einem Speicher überprüfen soll.
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
-|Verfügbar unter:  <br/> |[IMsgStore: IMAPIProp](imsgstoreimapiprop.md) -Objekt  <br/> |
-|Erstellt von:  <br/> |Speicheranbieter  <br/> |
+|Verfügbar gemacht für:  <br/> |[IMsgStore : IMAPIProp-Objekt](imsgstoreimapiprop.md)  <br/> |
+|Erstellt von:  <br/> |Store Anbieter  <br/> |
 |Zugriff durch:  <br/> |Outlook und andere Clients  <br/> |
-|Eigenschafts:  <br/> |PT_LONG  <br/> |
-|Zugriffstyp:  <br/> |Je nach Speicheranbieter schreibgeschützt oder Lese-/Schreibzugriff  <br/> |
+|Eigenschaftstyp:  <br/> |PT_LONG  <br/> |
+|Zugriffstyp:  <br/> |Schreibgeschützt oder Lese-/Schreibzugriff je nach Speicheranbieter  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Um eine der Store-Funktionen bereitzustellen, muss der Informationsspeicher Anbieter [IMAPIProp: IUnknown](imapipropiunknown.md) implementieren und ein gültiges Property-Tag für eine dieser Eigenschaften zurückgeben, die an einen [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) -Aufruf übergeben werden. Wenn das Property-Tag für eine dieser Eigenschaften an [IMAPIProp::](imapiprop-getprops.md)GetProps übergeben wird, muss der Informationsspeicher Anbieter auch den richtigen Eigenschaftswert zurückgeben. Speicheranbieter können [HrGetOneProp](hrgetoneprop.md) und [HrSetOneProp](hrsetoneprop.md) aufrufen, um diese Eigenschaften abzurufen oder festzulegen. 
+Um eine der Speicherfunktionen bereitzustellen, muss der Speicheranbieter [IMAPIProp : IUnknown](imapipropiunknown.md) implementieren und ein gültiges Eigenschaftstag für eine dieser Eigenschaften zurückgeben, die an einen [IMAPIProp::GetIDsFromNames-Aufruf](imapiprop-getidsfromnames.md) übergeben werden. Wenn das Eigenschaftstag für eine dieser Eigenschaften an [IMAPIProp::GetProps](imapiprop-getprops.md)übergeben wird, muss der Speicheranbieter auch den richtigen Eigenschaftswert zurückgeben. Store können [HrGetOneProp](hrgetoneprop.md) und [HrSetOneProp](hrsetoneprop.md) aufrufen, um diese Eigenschaften zu erhalten oder zu festlegen. 
   
-Um den Wert dieser Eigenschaft abzurufen, sollte der Client zuerst [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) verwenden, um das Property-Tag abzurufen, und dann dieses Property-Tag in [IMAPIProp::](imapiprop-getprops.md) GetProps angeben, um den Wert abzurufen. Geben Sie beim Aufrufen von [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md)die folgenden Werte für die [MAPINAMEID](mapinameid.md) -Struktur an, auf die durch den Eingabeparameter _lppPropNames_verwiesen wird:
+Zum Abrufen des Werts dieser Eigenschaft sollte der Client zunächst [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) verwenden, um das Eigenschaftstag abzurufen, und dann dieses Eigenschaftstag in [IMAPIProp::GetProps](imapiprop-getprops.md) angeben, um den Wert abzurufen. Geben Sie beim Aufrufen von [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)die folgenden Werte für die [MAPINAMEID-Struktur](mapinameid.md) an, auf die der Eingabeparameter _lppPropNames verweist:_
   
 |||
 |:-----|:-----|
 |lpGuid:  <br/> |PSETID_Common  <br/> |
 |ulKind:  <br/> |MNID_STRING  <br/> |
-|Art. lpwstrName:  <br/> |L "NoFolderScan"  <br/> |
+|Kind.lpwstrName:  <br/> |L"NoFolderScan"  <br/> |
    
-Diese Eigenschaft bietet Speicheranbietern die Möglichkeit, Outlook nicht zu überprüfen, um die Leistungsbeeinträchtigung zu vermeiden. Sie wird in Seriendruck Vorgängen verwendet, in denen Outlook vor dem Initiieren der Überprüfung auf Anwesenheit und Wert dieser Eigenschaft prüft.
+Diese Eigenschaft bietet Speicheranbietern die Möglichkeit, anzugeben, Outlook Kontakteordner im Speicher nicht zu überprüfen, um Leistungseinbußen zu vermeiden. Sie wird in Seriendruckvorgängen verwendet, Outlook vor dem Starten der Überprüfung auf das Vorhandensein und den Wert dieser Eigenschaft überprüft werden.
   
-Standardmäßig ist diese Eigenschaft nicht in einem Speicher verfügbar, was bedeutet, dass Outlook den Ordner "Kontakte" im Speicher überprüfen kann. Wenn die Eigenschaft verfügbar gemacht wird, sind die folgenden Werte möglich:
+Diese Eigenschaft wird standardmäßig nicht in einem Speicher verfügbar gemacht, d. h., Outlook den Ordner Kontakte im Speicher überprüfen kann. Wenn die Eigenschaft verfügbar gemacht wird, sind die folgenden Werte möglich:
   
-- NULL (0): Outlook kann die Überprüfung ausführen.
+- Null (0): Outlook können den Scan durchführen.
     
-- Wert unGleich NULL: Outlook sollte Kontakteordner im Speicher nicht überprüfen.
+- Non-Zero-Wert: Outlook sollte keine Kontakteordner im Speicher überprüfen.
     
 

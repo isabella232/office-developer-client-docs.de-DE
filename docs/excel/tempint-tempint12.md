@@ -8,7 +8,7 @@ f1_keywords:
 - TempInt
 - TempInt12
 keywords:
-- tempint12-Funktion [Excel 2007], TempInt-Funktion [Excel 2007]
+- tempint12-Funktion [excel 2007],TempInt-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: 86d690b8-caca-450d-93f7-69ca4cd1a6e0
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -23,7 +23,7 @@ ms.locfileid: "33438750"
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Framework-Bibliotheksfunktion, die eine temporäre **XLOPER**/ -**XLOPER12** erstellt, die eine ganze Zahl enthält. 
+Frameworkbibliotheksfunktion, die eine temporäre **XLOPER** /  **XLOPER12** erstellt, die eine ganze Zahl enthält. 
   
 ```cs
 LPXLOPER TempInt(short int i);
@@ -34,15 +34,15 @@ LPXLOPER12 TempInt12(int i);
 
  _i_
   
-Der vorgesehene ganzzahlige Wert. Beachten Sie, dass die **XLOPER** -Ganzzahl eine signierte 16-Bit-Ganzzahl (short int) ist, wohingegen die **XLOPER12** -ganzzahl eine signierte 32-Bit-Ganzzahl ([Long] int) ist. 
+Der beabsichtigte ganzzahlige Wert. Beachten Sie, dass die **XLOPER-Ganzzahl** eine signierte 16-Bit-Ganzzahl (short int) ist, während die **XLOPER12-Ganzzahl** eine signierte ganzzahlige 32-Bit-Zahl ([long] int) ist. 
   
 ## <a name="return-value"></a>Rückgabewert
 
-Gibt eine **xltypeInt** -Ganzzahl zurück, die den übergebenen Wert enthält. 
+Gibt eine **xltypeInt-Ganzzahl** zurück, die den übergebenen Wert enthält. 
   
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird die **TempInt12** -Funktion verwendet, um ein Argument an **xlfGetWorkspace**zu übergeben.
+In diesem Beispiel wird die **TempInt12-Funktion** verwendet, um ein Argument an **xlfGetWorkspace zu übergeben.**
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   

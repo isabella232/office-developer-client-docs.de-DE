@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 7a0201e6-9a93-83ae-8a0a-47630ed291ce
-description: Enthält ein ruleSet-Element für jeden Überprüfungsregel Satz im Dokument.
+description: Enthält ein RuleSet-Element für jeden Überprüfungsregelsatz im Dokument.
 ms.openlocfilehash: 0aca3f52bd8b201d1afc2ab7d647757452ff8899
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
@@ -14,9 +14,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34541575"
 ---
-# <a name="rulesets-element-validationtype-complextype-visio-xml"></a>RuleSets-Element (Validation_Type complexType) (Visio XML)
+# <a name="rulesets-element-validation_type-complextype-visio-xml"></a>RuleSets-Element (Validation_Type complexType) (Visio XML)
 
-Enthält ein **RuleSet** -Element für jeden Überprüfungsregel Satz im Dokument. 
+Enthält ein **RuleSet-Element** für jeden Überprüfungsregelsatz im Dokument. 
   
 ## <a name="element-information"></a>Informationen zum Element
 
@@ -24,8 +24,8 @@ Enthält ein **RuleSet** -Element für jeden Überprüfungsregel Satz im Dokumen
 |:-----|:-----|
 |**Elementtyp** <br/> |[RuleSets_Type](rulesets_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
-|**Dokumentteile** <br/> |Validation. XML  <br/> |
+|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
+|**Dokumentteile** <br/> |validation.xml  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,7 +36,7 @@ Enthält ein **RuleSet** -Element für jeden Überprüfungsregel Satz im Dokumen
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -48,7 +48,7 @@ Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOc
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[RuleSet](ruleset-element-rulesets_type-complextypevisio-xml.md) <br/> |[RuleSet_Type](ruleset_type-complextypevisio-xml.md) <br/> |Stellt einen Satz von Diagramm Validierungsregeln dar.  <br/> |
+|[RuleSet](ruleset-element-rulesets_type-complextypevisio-xml.md) <br/> |[RuleSet_Type](ruleset_type-complextypevisio-xml.md) <br/> |Stellt einen Satz von Diagrammüberprüfungsregeln dar.  <br/> |
    
 ### <a name="attributes"></a>Attribute
 

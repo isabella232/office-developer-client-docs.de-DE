@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagproviderordinal (-Eigenschaft
+title: PidTagProviderOrdinal (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,13 +19,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33438351"
 ---
-# <a name="pidtagproviderordinal-canonical-property"></a>Kanonische Pidtagproviderordinal (-Eigenschaft
+# <a name="pidtagproviderordinal-canonical-property"></a>PidTagProviderOrdinal (kanonische Eigenschaft)
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält den nullbasierten Index der Position eines Dienstanbieters in der Anbieter Tabelle.
+Enthält den nullbasierten Index der Position eines Dienstanbieters in der Anbietertabelle.
   
 |||
 |:-----|:-----|
@@ -34,23 +34,23 @@ Enthält den nullbasierten Index der Position eines Dienstanbieters in der Anbie
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI allgemein  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft wird von MAPI berechnet.
   
-Rufen Sie die Anbieter Tabelle ab, indem Sie die [IMsgServiceAdmin:: GetProvider](imsgserviceadmin-getprovidertable.md) Table-Methode aufrufen. Sortieren Sie die Anbieter Tabelle für diese Eigenschaft, um den Transportauftrag anzuzeigen. 
+Rufen Sie die Anbietertabelle ab, indem Sie die [IMsgServiceAdmin::GetProviderTable-Methode](imsgserviceadmin-getprovidertable.md) aufrufen. Sortieren Sie die Anbietertabelle für diese Eigenschaft so, dass die Transportreihenfolge angezeigt wird. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
-### <a name="header-files"></a>Header Dateien
+### <a name="header-files"></a>Headerdateien
 
-Mapidefs. h
+Mapidefs.h
   
-> Stellt Datentypdefinitionen bereit.
+> Bietet Datentypdefinitionen.
     
-Mapitags. h
+Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -58,9 +58,9 @@ Mapitags. h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

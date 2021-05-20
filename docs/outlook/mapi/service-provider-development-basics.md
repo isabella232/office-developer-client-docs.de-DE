@@ -1,5 +1,5 @@
 ---
-title: Grundlagen der Entwicklung von Dienstanbietern
+title: Grundlagen der Dienstanbieterentwicklung
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,21 +15,21 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33437805"
 ---
-# <a name="service-provider-development-basics"></a>Grundlagen der Entwicklung von Dienstanbietern
+# <a name="service-provider-development-basics"></a>Grundlagen der Dienstanbieterentwicklung
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Dieser Abschnitt enthält Übersichtsinformationen, die Sie vor dem Erstellen Ihrer eigenen MAPI-Dienstanbieter überarbeiten sollten.
+Dieser Abschnitt enthält Übersichtsinformationen, die Sie vor dem Erstellen eigener MAPI-Dienstanbieter überprüfen sollten.
   
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Entwickeln eines MAPI-Adressbuch Anbieters](developing-a-mapi-address-book-provider.md)
+[Entwickeln eines MAPI-Adressbuchanbieters](developing-a-mapi-address-book-provider.md)
   
-[Entwickeln eines MAPI-Transport Anbieters](developing-a-mapi-transport-provider.md)
+[Entwickeln eines MAPI-Transportanbieters](developing-a-mapi-transport-provider.md)
   
 [Entwickeln eines Providers MAPI-Nachrichtenspeicher](developing-a-mapi-message-store-provider.md)
   

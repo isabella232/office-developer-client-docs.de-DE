@@ -25,7 +25,7 @@ ms.locfileid: "33438372"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Vergleicht zwei Eintragsbezeichner, um zu bestimmen, ob Sie auf dasselbe Objekt verweisen.
+Vergleicht zwei Eintragsbezeichner, um zu bestimmen, ob sie auf dasselbe Objekt verweisen.
   
 ```cpp
 HRESULT CompareEntryIDs(
@@ -42,19 +42,19 @@ HRESULT CompareEntryIDs(
 
  _cbEntryID1_
   
-> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID1_ -Parameter verwiesen wird. 
+> [in] Die Byteanzahl im Eintragsbezeichner, auf den der  _lpEntryID1-Parameter_ verweist. 
     
  _lpEntryID1_
   
-> in Ein Zeiger auf den ersten zu vergleichenden Eintragsbezeichner.
+> [in] Ein Zeiger auf die erste Zutritts-ID, die verglichen werden soll.
     
  _cbEntryID2_
   
-> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID2_ -Parameter verwiesen wird. 
+> [in] Die Byteanzahl in der Eintrags-ID, auf die der  _lpEntryID2-Parameter_ verweist. 
     
  _lpEntryID2_
   
-> in Ein Zeiger auf die zweite Eintrags-ID, die verglichen werden soll.
+> [in] Ein Zeiger auf den zweiten Eintragsbezeichner, der verglichen werden soll.
     
  _ulFlags_
   
@@ -62,25 +62,25 @@ HRESULT CompareEntryIDs(
     
  _lpulRet_
   
-> Out Ein Zeiger auf das Ergebnis des Vergleichs. TRUE, um anzugeben, dass die beiden Eintragsbezeichner auf dasselbe Objekt verweisen; andernfalls FALSE.
+> [out] Ein Zeiger auf das Ergebnis des Vergleichs. TRUE, um anzugeben, dass sich die beiden Eintragsbezeichner auf dasselbe Objekt beziehen. Andernfalls FALSE.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Eintrags-IDs wurden erfolgreich verglichen.
+> Die Eintragsbezeichner wurden erfolgreich verglichen.
     
 MAPI_E_INVALID_ENTRYID 
   
-> Eine oder beide der Eintrags-IDs gehören nicht zum Adressbuchanbieter.
+> Eine oder beide eintragsbezeichner gehören nicht zum Adressbuchanbieter.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Adressbuchanbieter implementieren die **CompareEntryIDs** -Methode, um zwei Eintragsbezeichner zu vergleichen, um zu bestimmen, ob Sie auf dasselbe Objekt verweisen. 
+Adressbuchanbieter implementieren die **CompareEntryIDs-Methode,** um zwei Eintragsbezeichner zu vergleichen, um festzustellen, ob sie auf dasselbe Objekt verweisen. 
   
- **CompareEntryIDs** ist nützlich, da ein Objekt mehrere gültige Eintragsbezeichner aufweisen kann. eine solche Situation kann beispielsweise auftreten, wenn Sie eine kurzfristige Eintrags-ID mit einer langfristigen Eintrags-ID vergleichen. 
+ **CompareEntryIDs** ist nützlich, da ein Objekt mehrere gültige Eintragsbezeichner enthalten kann. Eine solche Situation kann beispielsweise auftreten, wenn Sie eine kurzfristige Eintrags-ID mit einer langfristigen Eintrags-ID vergleichen. 
   
-Weitere Informationen zum Erstellen von Eintrags Bezeichnern finden Sie unter [MAPI Entry Identifiers](mapi-entry-identifiers.md).
+Weitere Informationen zum Erstellen von Eintragsbezeichnern finden Sie unter [MAPI Entry Identifiers](mapi-entry-identifiers.md).
   
 ## <a name="see-also"></a>Siehe auch
 

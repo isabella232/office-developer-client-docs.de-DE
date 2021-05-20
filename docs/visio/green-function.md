@@ -22,13 +22,13 @@ Gibt die grüne Komponente einer Farbe zurück.
   
 ## <a name="syntax"></a>Syntax
 
-Grün (* * *Ausdruck* * *) 
+GREEN(** *Expression* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _expression_ <br/> |Erforderlich  <br/> |**Variiert** <br/> |Ein Index einer Farbe in der Farbtabelle des Dokuments, ein Ausdruck, der in eine benutzerdefinierte Farbe (wie RGB oder GSL) aufgelöst wird, oder ein Bezug auf eine Zelle, die einen Farbindex oder ein Farbergebnis enthält.  <br/> |
+| _expression_ <br/> |Erforderlich  <br/> |**Variiert** <br/> |Ein Index einer Farbe in der Farbtabelle des Dokuments, ein Ausdruck, der in eine benutzerdefinierte Farbe aufgelöst wird (z. B. RGB oder HSL), oder ein Verweis auf eine Zelle, die einen Farbindex oder ein Farbergebnis enthält.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
@@ -36,17 +36,17 @@ Ganze Zahl
   
 ## <a name="remarks"></a>Bemerkungen
 
-Der Rückgabewert ist eine Zahl im Bereich von 0 bis einschließlich 255, oder ein Zellbezug, der als Index aufgelöst wird. Wenn *Ausdruck* ungültig ist, gibt er 0 (schwarz) zurück. 
+Der Rückgabewert ist eine Zahl im Bereich von 0 bis einschließlich 255, oder ein Zellbezug, der als Index aufgelöst wird. Wenn  *Ausdruck*  ungültig ist, gibt er 0 (Schwarz) zurück. 
   
 ## <a name="example-1"></a>Beispiel 1
 
-Grün (Blatt. 4! Zelle FillForegnd
+GREEN(Sheet.4! FillForegnd)
   
 Gibt den Wert der Grünkomponente der Vordergrundfüllfarbe von Sheet.4 zurück.
   
 ## <a name="example-2"></a>Beispiel 2
 
-GRÜN (11)
+GREEN(11)
   
 Gibt 128 zurück, wenn das Dokument die Standardfarbpalette von Visio verwendet, wobei Dunkelgelb die Farbe mit Index 11 darstellt.
   

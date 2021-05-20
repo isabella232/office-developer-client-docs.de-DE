@@ -21,13 +21,13 @@ ms.locfileid: "33436433"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Vergleicht zwei Adressbuch **entryIDs** sicher in einem Exchange-Profil. Diese Funktion ist eine Ersatzfunktion für [IAddrBook:: CompareEntryIDs](iaddrbook-compareentryids.md).
+Vergleicht zwei **AdressbucheintragIDs** sicher in einem Multiple Exchange Profil. Diese Funktion ist eine Ersetzungsfunktion für [IAddrBook::CompareEntryIDs](iaddrbook-compareentryids.md).
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |abhelp. h  <br/> |
+|Headerdatei  <br/> |abhelp.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 HRESULT HrCompareABEntryIDsWithExchangeContext(
@@ -47,31 +47,31 @@ HRESULT HrCompareABEntryIDsWithExchangeContext(
 
  _pmsess_
   
-> in Der angemeldete **IMAPISession**. Er darf nicht NULL sein.
+> [in] Die angemeldete **IMAPISession**. Es kann nicht NULL sein.
     
  _pEmsmdbUID_
   
-> in Ein Zeiger auf ein **emsmdbUID** , das den Exchange-Dienst identifiziert, der den Exchange-Adressbuchanbieter enthält, den diese Funktion verwenden sollte, um Details zur Eintrags-ID anzuzeigen. Wenn die ID des eingehenden Eintrags kein Exchange-Adressbuchanbieter ist, wird dieser Parameter ignoriert, und der Funktionsaufruf verhält sich wie [IAddrBook::D ails](iaddrbook-details.md). Wenn dieser Parameter NULL oder eine NULL-MAPIUID ist, verhält sich diese Funktion wie [IAddrBook::D ails](iaddrbook-details.md).
+> [in] Ein Zeiger auf eine **emsmdbUID,** die den Exchange-Dienst identifiziert, der den Exchange-Adressbuchanbieter enthält, den diese Funktion verwenden soll, um Details zur Eintrags-ID anzuzeigen. Wenn der Bezeichner für eingehende Eingaben kein eintragsbezeichner Exchange Adressbuchanbieter ist, wird dieser Parameter ignoriert, und der Funktionsaufruf verhält sich wie [IAddrBook::D etails](iaddrbook-details.md). Wenn dieser Parameter NULL oder null MAPIUID ist, verhält sich diese Funktion wie [IAddrBook::D etails](iaddrbook-details.md).
     
  _pAddrBook_
   
-> in Das zum Öffnen des Eintrags Bezeichners verwendete Adressbuch. Er darf nicht NULL sein.
+> [in] Das Adressbuch, das zum Öffnen der Eintrags-ID verwendet wird. Es kann nicht NULL sein.
     
  _cbEntryID1_
   
-> in Die Bytezahl des ersten Eintrags-Bezeichners, der durch den _lpEntryID1_ -Parameter angegeben wird. 
+> [in] Die Byteanzahl des ersten Eintragsbezeichners, der durch den  _lpEntryID1-Parameter angegeben_ wird. 
     
  _lpEntryID1_
   
-> in Ein Zeiger auf die erste Eintrags-ID, die den zu vergleichenden Adressbucheintrag darstellt.
+> [in] Ein Zeiger auf den ersten Eintragsbezeichner, der den zu vergleichende Adressbucheintrag darstellt.
     
  _cbEntryID2_
   
-> in Die Bytezahl der zweiten Eintrags-ID, die durch den _lpEntryID2_ -Parameter angegeben wird. 
+> [in] Die Byteanzahl des zweiten Eintragsbezeichners, der durch den  _lpEntryID2-Parameter angegeben_ wird. 
     
  _lpEntryID2_
   
-> in Ein Zeiger auf die zweite Eintrags-ID im Vergleich, die den zu vergleichenden Adressbucheintrag darstellt.
+> [in] Ein Zeiger auf den zweiten Eintragsbezeichner, der im Vergleich verwendet wird und den zu vergleichende Adressbucheintrag darstellt.
     
  _ulFlags_
   
@@ -79,6 +79,6 @@ HRESULT HrCompareABEntryIDsWithExchangeContext(
     
  _lpulResult_
   
-> Out Ein Zeiger auf den Speicherort, der die Ergebnisse des Vergleichs enthält. 
+> [out] Ein Zeiger auf die Position, die die Ergebnisse des Vergleichs enthält. 
     
 

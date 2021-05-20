@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: b05497e6-722f-9203-e03c-0f14a712cddb
-description: Gibt den logischen Ausdruck an, der bestimmt, ob die Validierungsregel auf ein Zielobjekt angewendet werden soll.
+description: Gibt den logischen Ausdruck an, der bestimmt, ob die Gültigkeitsprüfungsregel auf ein Zielobjekt angewendet werden soll.
 ms.openlocfilehash: 3abcd7e2dd093fa8e2321052e73835db22c150db
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
@@ -14,9 +14,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34541680"
 ---
-# <a name="rulefilter-element-ruletype-complextype-visio-xml"></a>RuleFilter-Element (Rule_Type complexType) (Visio XML)
+# <a name="rulefilter-element-rule_type-complextype-visio-xml"></a>RuleFilter-Element (Rule_Type complexType) (Visio XML)
 
-Gibt den logischen Ausdruck an, der bestimmt, ob die Validierungsregel auf ein Zielobjekt angewendet werden soll.
+Gibt den logischen Ausdruck an, der bestimmt, ob die Gültigkeitsprüfungsregel auf ein Zielobjekt angewendet werden soll.
   
 ## <a name="element-information"></a>Informationen zum Element
 
@@ -24,8 +24,8 @@ Gibt den logischen Ausdruck an, der bestimmt, ob die Validierungsregel auf ein Z
 |:-----|:-----|
 |**Elementtyp** <br/> |[RuleFilter_Type](rulefilter_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
-|**Dokumentteile** <br/> |Validation. XML  <br/> |
+|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
+|**Dokumentteile** <br/> |validation.xml  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,7 +36,7 @@ Gibt den logischen Ausdruck an, der bestimmt, ob die Validierungsregel auf ein Z
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -52,6 +52,6 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|Formel  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Stellt die Formel des Elements dar.  <br/> |Werte der XSD: String.  <br/> |
+|Formel  <br/> |xsd:string  <br/> |Optional  <br/> |Stellt die Formel des Elements dar.  <br/> |Werte der xsd:string.  <br/> |
    
 

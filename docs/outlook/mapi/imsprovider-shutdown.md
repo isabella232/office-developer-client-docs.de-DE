@@ -25,7 +25,7 @@ ms.locfileid: "33438624"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Schließt einen Nachrichtenspeicher Anbieter ordnungsgemäß.
+Schließt einen Nachrichtenspeicheranbieter in geordneter Weise.
   
 ```cpp
 HRESULT Shutdown(
@@ -37,17 +37,17 @@ HRESULT Shutdown(
 
  _lpulFlags_
   
-> in Reserviert muss ein Zeiger auf NULL sein.
+> [in] Reserviert; muss ein Zeiger auf Null sein.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Aufruf war erfolgreich, und der erwartete Wert oder die Werte wurden zurückgegeben.
+> Der Aufruf war erfolgreich und hat den erwarteten Wert oder die erwarteten Werte zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-MAPI Ruft die **IMSProvider:: Shutdown** -Methode unmittelbar vor dem Freigeben des Nachrichtenspeicher-Anbieterobjekts auf. MAPI gibt alle Anmeldeobjekte für einen Anbieter frei, bevor das **Herunterfahren** für diesen Anbieter aufgerufen wird. 
+MAPI ruft die **IMSProvider::Shutdown-Methode auf,** kurz bevor das Objekt des Nachrichtenspeicheranbieters veröffentlicht wird. MAPI gibt alle Anmeldeobjekte für einen Anbieter frei, bevor **das Herunterfahren für** den Anbieter aufruft. 
   
 ## <a name="see-also"></a>Siehe auch
 

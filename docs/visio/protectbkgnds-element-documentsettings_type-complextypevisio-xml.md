@@ -1,12 +1,12 @@
 ---
-title: Protectbkgnd-Element (DocumentSettings_Type complexType) (Visio XML)
+title: ProtectBkgnds-Element (DocumentSettings_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 99b7d89e-b482-ef19-1683-667095f8114a
-description: Gibt an, ob verhindert werden soll, dass der Benutzer Hintergrundseiten löscht oder bearbeitet.
+description: Gibt an, ob der Benutzer am Löschen oder Bearbeiten von Hintergrundseiten gehindert wird.
 ms.openlocfilehash: b053eca7b669b60bedd34bc4a6798f9b9182b529
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
@@ -14,9 +14,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34540749"
 ---
-# <a name="protectbkgnds-element-documentsettingstype-complextype-visio-xml"></a>Protectbkgnd-Element (DocumentSettings_Type complexType) (Visio XML)
+# <a name="protectbkgnds-element-documentsettings_type-complextype-visio-xml"></a>ProtectBkgnds-Element (DocumentSettings_Type complexType) (Visio XML)
 
-Gibt an, ob verhindert werden soll, dass der Benutzer Hintergrundseiten löscht oder bearbeitet.
+Gibt an, ob der Benutzer am Löschen oder Bearbeiten von Hintergrundseiten gehindert wird.
   
 ## <a name="element-information"></a>Informationen zum Element
 
@@ -24,8 +24,8 @@ Gibt an, ob verhindert werden soll, dass der Benutzer Hintergrundseiten löscht 
 |:-----|:-----|
 |**Elementtyp** <br/> |[ProtectBkgnds_Type](protectbkgnds_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
-|**Dokumentteile** <br/> |Document. XML  <br/> |
+|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
+|**Dokumentteile** <br/> |document.xml  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,7 +36,7 @@ Gibt an, ob verhindert werden soll, dass der Benutzer Hintergrundseiten löscht 
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

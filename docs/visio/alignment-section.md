@@ -18,6 +18,6 @@ ms.locfileid: "33436517"
 ---
 # <a name="alignment-section"></a>Abschnitt "Alignment"
 
-Gibt die Ausrichtung einer Form im Hinblick auf die Führungslinie oder den Führungspunkt an, an die das Shape geklebt ist. Der Abschnitt **Ausrichtung** wird nur für Shapes angezeigt, die an Führungslinien geklebt sind. 
+Gibt die Ausrichtung einer Form in Bezug auf den Führungs- oder Führungspunkt an, an den das Shape geklebt ist. Der **Abschnitt Ausrichtung** wird nur für Shapes angezeigt, die an Führungslinien geklebt sind. 
   
 

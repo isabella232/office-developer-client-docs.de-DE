@@ -25,30 +25,30 @@ Hinzugefügte Version: Visio 2010
   
 ## <a name="syntax"></a>Syntax
 
-CONTAINERSHEETREF (* * *Index* * * * * * *[, Category]* * *) 
+CONTAINERSHEETREF(** *index* ** ** *[, category]* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _Index_ <br/> |Erforderlich  <br/> |**Integer** <br/> |Der auf 1 basierende Index des Containers. Weitere Informationen finden Sie unter "Anmerkungen".  <br/> |
-| _Kategorie_ <br/> |Optional  <br/> |**String** <br/> |Die Kategorie des Containers. Weitere Informationen finden Sie unter "Anmerkungen".  <br/> |
+| _category_ <br/> |Optional  <br/> |**String** <br/> |Die Kategorie des Containers. Weitere Informationen finden Sie unter "Anmerkungen".  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
 ShapeSheet-Referenz
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Der Index eines Containers wird basierend auf der Z-Reihenfolge der Container von vorne nach hinten berechnet.
   
- *Kategorien* sind benutzerdefinierte Zeichenfolgen, die Sie verwenden können, um Shapes zu kategorisieren. Kategorien können in der Zelle User.msvShapeCategories im ShapeSheet eines Shapes definiert werden. Sie können mehrere Kategorien für ein Shape definieren, indem Sie die Kategorien durch Semikolons trennen. 
+ *Kategorien*  sind benutzerdefinierte Zeichenfolgen, die Sie zum Kategorisieren von Shapes verwenden können. Kategorien können in der Zelle User.msvShapeCategories im ShapeSheet eines Shapes definiert werden. Sie können mehrere Kategorien für ein Shape definieren, indem Sie die Kategorien durch Semikolons trennen. 
   
 Wenn das Shape nicht Element eines Containers ist, oder wenn es keinen Container gibt, der sowohl der angegebenen Indexnummer als auch der Kategorie entspricht, gibt CONTAINERSHEETREF #REF! zurück.
   
 ## <a name="example"></a>Beispiel
 
-CONTAINERSHEETREF (1)! Höhe 
+CONTAINERSHEETREF(1)! Height 
   
 Gibt den Wert in der Zelle Height des Containers zurück, der sich auf der Seite, auf der sich das Shape befindet, am weitesten vorne befindet. 
   

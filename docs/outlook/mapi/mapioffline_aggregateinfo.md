@@ -15,13 +15,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33438162"
 ---
-# <a name="mapiofflineaggregateinfo"></a>MAPIOFFLINE_AGGREGATEINFO
+# <a name="mapioffline_aggregateinfo"></a>MAPIOFFLINE_AGGREGATEINFO
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die Struktur wird mit [HrCreateOfflineObj](hrcreateofflineobj.md)verwendet. 
+Die Struktur wird mit [HrCreateOfflineObj verwendet.](hrcreateofflineobj.md) 
   
 ```cpp
 typedef struct
@@ -32,7 +32,7 @@ typedef struct
 } MAPIOFFLINE_AGGREGATEINFO;
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **ulSize**
   
@@ -40,7 +40,7 @@ typedef struct
     
  **pOuterObj**
   
-> Ein Zeiger auf das IUnknown-Objekt, auf das dieses Objekt aggregiert wird. Dadurch können QueryInterface-Aufrufe an das erstellte Objekt weitergeleitet werden.
+> Ein Zeiger auf das IUnknown-Objekt, auf das dieses Objekt aggregiert wird. Dadurch können alle QueryInterface-Aufrufe an das erstellte Objekt übergeben werden.
     
  **pRefTrackRoot**
   

@@ -44,11 +44,11 @@ HRESULT ValidateParms(
 
  _eMethod_
   
-> in Gibt die zu überprüfende Methode an. 
+> [in] Gibt die zu überprüfende Methode per Enumeration an. 
     
  _First_
   
-> in Zeiger auf das erste Argument im Stapel.
+> [in] Zeiger auf das erste Argument auf dem Stapel.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -60,13 +60,13 @@ MAPI_E_CALL_FAILED
   
 > Mindestens einer der Parameter ist ungültig.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Parameter, die zwischen MAPI-und Dienstanbietern übergeben werden, werden als richtig angenommen und werden nur mit dem [CheckParms](checkparms.md) -Makro überprüft. Anbieter sollten alle Parameter überprüfen, die von Clientanwendungen übergeben wurden, aber Clients sollten davon ausgehen, dass MAPI-und Anbieter Parameter korrekt sind. Verwenden Sie das **HR_FAILED** -Makro, um Rückgabewerte zu testen. 
+Parameter, die zwischen MAPI und Dienstanbietern übergeben werden, werden als richtig angenommen und werden nur mit dem [CheckParms-Makro](checkparms.md) einer Debugüberprüfung unterzogen. Anbieter sollten alle von Clientanwendungen übergebenen Parameter überprüfen, Clients sollten jedoch davon ausgehen, dass MAPI- und Anbieterparameter korrekt sind. Verwenden Sie das **HR_FAILED,** um Rückgabewerte zu testen. 
   
- **ValidateParms** wird unterschiedlich aufgerufen, je nachdem, ob der Aufrufcode C oder C++ ist. C++ übergibt einen impliziten Parameter, der als _this_ bezeichnet wird, an jeden Methodenaufruf, der in C explizit wird und die Adresse des Objekts ist. Der erste Parameter, _eMethod_, ist ein Enumerator aus der Schnittstelle und der Methode, die validiert wird, und gibt an, welche Parameter im Stapel zu finden sind. Der zweite Parameter ist für C und C++ unterschiedlich. In C++ wird es _zuerst_aufgerufen und ist der erste Parameter für die validierte Methode. Der zweite Parameter für die Sprache C, _ppThis_, ist die Adresse des ersten Parameters der Methode, bei der es sich immer um einen Objektzeiger handelt. In beiden Fällen gibt der zweite Parameter die Adresse des Beginns der Parameterliste der Methode an und basiert auf _eMethod_, verschiebt den Stapel nach unten und überprüft die Parameter. 
+ **ValidateParms** wird unterschiedlich aufgerufen, je nachdem, ob der aufrufende Code C oder C++ ist. C++ übergibt jeden Methodenaufruf einen impliziten Parameter, der in C explizit wird und die Adresse des Objekts ist.  Der erste  _Parameter, eMethod_, ist ein Aufzählerator, der aus der zu überprüfenden Schnittstelle und Methode besteht, und gibt an, welche Parameter auf dem Stapel zu finden sind. Der zweite Parameter ist für C und C++ unterschiedlich. In C++ heißt er  _First_, und er ist der erste Parameter für die zu überprüfende Methode. Der zweite Parameter für die Sprache C,  _ppThis_, ist die Adresse des ersten Parameters für die Methode, die immer ein Objektzeiger ist. In beiden Fällen gibt der zweite Parameter die Adresse des Anfangs der Parameterliste der Methode an, und basierend auf  _eMethod_ wird der Stapel nach unten bewegt und die Parameter überprüft. 
   
-Anbieter, die gängige Schnittstellen wie **IMAPITable** und **IMAPIProp** implementieren, sollten Parameter mithilfe der **ValidateParms** -Funktion immer überprüfen, um die Konsistenz aller Anbieter sicherzustellen. Es wurden zusätzliche Parameter Validierungsfunktionen für einige komplexe Parametertypen definiert, die stattdessen entsprechend verwendet werden. In den Referenzthemen finden Sie die folgenden Funktionen: 
+Anbieter, die allgemeine Schnittstellen wie **IMAPITable** und **IMAPIProp** implementieren, sollten parameter immer mit der **ValidateParms-Funktion** überprüfen, um die Konsistenz für alle Anbieter sicherzustellen. Zusätzliche Parameterüberprüfungsfunktionen wurden definiert, damit einige komplexe Parametertypen stattdessen entsprechend verwendet werden können. Die folgenden Funktionen finden Sie in den Referenzthemen: 
   
 - [FBadColumnSet](fbadcolumnset.md)
     
@@ -88,7 +88,7 @@ Anbieter, die gängige Schnittstellen wie **IMAPITable** und **IMAPIProp** imple
     
 - [FBadSortOrderSet](fbadsortorderset.md)
     
-Geerbte Methoden verwenden die gleiche Parametervalidierung wie die Schnittstelle, von der Sie erben. Beispielsweise sollte die Parameterüberprüfung für **IMessage** und **IMAPIProp** identisch sein. 
+Geerbte Methoden verwenden dieselbe Parameterüberprüfung wie die Schnittstelle, von der sie erben. Beispielsweise sollte die Parameterüberprüfung für **IMessage** und **IMAPIProp** identisch sein. 
   
 ## <a name="see-also"></a>Siehe auch
 

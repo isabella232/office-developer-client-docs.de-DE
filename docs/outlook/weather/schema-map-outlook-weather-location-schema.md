@@ -1,5 +1,5 @@
 ---
-title: Schemazuordnung (Outlook-Wetter Standortschema)
+title: Schemakarte (Outlook Wetterspeicherortschema)
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1a5195ae-7905-477a-7818-9eb3bff64af0
-description: In diesem Thema wird die Schema Definition für das XML-Schema des Outlook-Wetter Standorts dargestellt.
+description: In diesem Thema wird die Schemadefinition für das Outlook Wetterspeicherort-XML-Schemas gezeigt.
 ms.openlocfilehash: e35a993c44c9f54168a7ad5c38e13e850d530a2d
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
@@ -15,9 +15,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34541281"
 ---
-# <a name="schema-map-outlook-weather-location-schema"></a>Schemazuordnung (Outlook-Wetter Standortschema)
+# <a name="schema-map-outlook-weather-location-schema"></a>Schemakarte (Outlook Wetterspeicherortschema)
 
-In diesem Thema wird die Schema Definition für das XML-Schema des Outlook-Wetter Standorts dargestellt.
+In diesem Thema wird die Schemadefinition für das Outlook Wetterspeicherort-XML-Schemas gezeigt.
   
 ```XML
 <?xml version="1.0" ?>

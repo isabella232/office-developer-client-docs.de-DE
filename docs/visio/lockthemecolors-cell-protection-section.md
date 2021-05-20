@@ -17,21 +17,21 @@ ms.locfileid: "33436846"
 ---
 # <a name="lockthemecolors-cell-protection-section"></a>Zelle "LockThemeColors" (Abschnitt "Protection")
 
-Verhindert die Anwendung von Designfarben in der Form. 
+Verhindert die Anwendung von Designfarben auf die Form. 
   
-Der Wert der Zelle LockThemeColors entspricht dem Kontrollkästchen **von Designfarben** im Dialogfeld **Schutz** . 
+Der Wert der Zelle LockThemeColors entspricht der Einstellung **Von** Designfarben im **Dialogfeld** Schutz. 
   
-Wenn Sie auf die Zelle LockThemeColors aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen verweisen möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Verweisen auf die Zelle LockThemeColors anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |LockThemeColors  <br/> |
    
-Wenn Sie aus einem Programm aus nach Index auf die Zelle LockThemeColors verweisen möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um von einem Programm aus auf die Zelle LockThemeColors nach Index zu verweisen: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowLock** <br/> |
 |Zellenindex:  <br/> |**visLockThemeColors** <br/> |
    

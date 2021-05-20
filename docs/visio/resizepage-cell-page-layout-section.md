@@ -18,26 +18,26 @@ ms.locfileid: "33438092"
 ---
 # <a name="resizepage-cell-page-layout-section"></a>Zelle "ResizePage" (Abschnitt "Page Layout")
 
-Bestimmt, ob die Seite vergrößert werden soll, um die Zeichnung einzuschließen, nachdem Shapes mithilfe des Dialogfelds **Layout konfigurieren** (Klicken Sie auf der Registerkarte **Entwurf** in der Gruppe **Layout** auf Seite **neu Layout** ), und klicken Sie dann auf **weiteres Layout Optionen**).
+Bestimmt, ob die Seite vergrößert werden soll, um die Zeichnung nach dem Layout von Shapes zu schließen, indem Sie das Dialogfeld **Layout** konfigurieren verwenden (klicken Sie auf der Registerkarte **Entwurf** in der **Gruppe Layout** auf **Seite** neu layout, und klicken Sie dann auf Weitere **Layoutoptionen**).
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
 | TRUE  <br/> | Blatt vergrößern.  <br/> |
 | FALSE  <br/> | Blatt nicht vergrößern.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle Zelle ResizePage aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle ResizePage anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Zelle ResizePage  <br/> |
+| Zellenname:  <br/> | ResizePage  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle ResizePage aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die ResizePage-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowPageLayout** <br/> |
 | Zellenindex:  <br/> |**visPLOResizePage** <br/> |
    

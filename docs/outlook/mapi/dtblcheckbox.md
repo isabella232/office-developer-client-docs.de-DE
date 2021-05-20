@@ -25,12 +25,12 @@ ms.locfileid: "33436832"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält Informationen zu einem Kontrollkästchen, das in einem von einer Anzeigetabelle erstellten Dialogfeldverwendet wird. 
+Enthält Informationen zu einem Kontrollkästchen, das in einem Dialogfeld verwendet wird, das aus einer Anzeigetabelle erstellt wird. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehöriges Makro:  <br/> |[SizedDtblCheckBox](sizeddtblcheckbox.md) <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandtes Makro:  <br/> |[SizedDtblCheckBox](sizeddtblcheckbox.md) <br/> |
    
 ```cpp
 typedef struct _DTBLCHECKBOX
@@ -42,11 +42,11 @@ typedef struct _DTBLCHECKBOX
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **ulbLpszLabel**
   
-> Position im Arbeitsspeicher der Zeichenfolge, die mit dem Kontrollkästchen angezeigt wird. 
+> Position im Arbeitsspeicher der Zeichenzeichenfolge, die mit dem Kontrollkästchen angezeigt wird. 
     
  **ulFlags**
   
@@ -54,23 +54,23 @@ typedef struct _DTBLCHECKBOX
     
 MAPI_UNICODE 
   
-> Die Bezeichnung ist im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, ist die Bezeichnung im ANSI-Format.
+> Die Bezeichnung ist im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befindet sich die Bezeichnung im ANSI-Format.
     
  **ulPRPropertyName**
   
-> Property-Tag für eine Eigenschaft vom Typ PT_BOOLEAN. Der Wert dieser Eigenschaft hängt vom Status des Kontrollkästchens ab.
+> Eigenschaftstag für eine Eigenschaft vom Typ PT_BOOLEAN. Der Wert dieser Eigenschaft wird vom Status des Kontrollkästchens beeinflusst.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Eine **DTBLCHECKBOX** -Struktur beschreibt ein Kontrollkästchen ein Steuerelement, das einen der beiden Zustände widerspiegelt: Enabled (ein aktiviertes Kontrollkästchen) oder deaktiviert (ein leeres Feld). 
+Eine **DTBLCHECKBOX-Struktur** beschreibt ein Kontrollkästchen eines Steuerelements, das einen der beiden Zustände widerspiegelt: aktiviert (ein aktiviertes Kontrollkästchen) oder deaktiviert (ein leeres Feld). 
   
-Das **ulPRPropertyName** -Element beschreibt eine boolesche Eigenschaft, deren Wert durch Ändern des Status des Kontrollkästchens geändert wird. Wenn das Kontrollkästchen zuerst angezeigt wird, ruft MAPI die **** GetProps-Methode der **IMAPIProp** -Implementierung auf, die der Anzeigetabelle zugeordnet ist, um einen Satz von Standardeigenschaften abzurufen. Wenn eine der Eigenschaften dem Property-Tag in der **DTBLCHECKBOX** -Struktur zugeordnet ist, wird der Wert für diese Eigenschaft als Anfangswert des Kontrollkästchens angezeigt. 
+Das **UlPRPropertyName-Element** beschreibt eine boolesche Eigenschaft, deren Wert durch Ändern des Status des Kontrollkästchens geändert wird. Wenn das Kontrollkästchen zum ersten Mal angezeigt wird, ruft MAPI die **GetProps-Methode** der **IMAPIProp-Implementierung** auf, die der Anzeigetabelle zugeordnet ist, um eine Reihe von Standardeigenschaften abzurufen. Wenn eine der Eigenschaften dem Eigenschaftstag in der **DTBLCHECKBOX-Struktur** zu ordnet, wird der Wert für diese Eigenschaft als Anfangswert des Kontrollkästchens angezeigt. 
   
-Kontrollkästchen-Steuerelemente können geändert werden. Dadurch kann ein Benutzer seine Status ändern. Veränderbare Kontrollkästchen legen Sie das DT_EDITABLE-Flag im **ulCtlFlags** -Element ihrer [DTCTL](dtctl.md) -Struktur und in Ihrer **PR_CONTROL_FLAGS** ([pidtagcontrolflags (](pidtagcontrolflags-canonical-property.md))-Eigenschaft fest. Wenn ein Kontrollkästchen seinen Status ändert, ruft MAPI [IMAPIProp::](imapiprop-setprops.md) SetProps auf, um die im Property-Tag-Element der **DTBLCHECKBOX** -Struktur angegebene Eigenschaft auf den neuen Status festzulegen. 
+Kontrollkästchensteuerelemente können geändert werden. Dadurch kann ein Benutzer seine Zustände ändern. Modifizierbare Kontrollkästchen legen das DT_EDITABLE-Flag im **ulCtlFlags-Element** der [DTCTL-Struktur](dtctl.md) und in der **PR_CONTROL_FLAGS** ([PidTagControlFlags](pidtagcontrolflags-canonical-property.md)) -Eigenschaft. Wenn ein Kontrollkästchen seinen Status ändert, ruft MAPI [IMAPIProp::SetProps](imapiprop-setprops.md) auf, um die im Eigenschaftstagm member der **DTBLCHECKBOX-Struktur** identifizierte Eigenschaft auf den neuen Zustand zu setzen. 
   
-Ein Adressbuchanbieter kann beispielsweise ein änderbares Kontrollkästchen-Steuerelement in sein Konfigurationsdialogfeld aufnehmen, um die Einstellung der **PR_SEND_RICH_INFO** ([pidtagsendrichinfo (](pidtagsendrichinfo-canonical-property.md))-Eigenschaft eines Empfängers anzupassen. Wenn der Benutzer das Kontrollkästchen aktiviert, wird diese Eigenschaft von MAPI auf TRUE festgelegt. Wenn das Kontrollkästchen deaktiviert ist, wird die Eigenschaft auf FALSE festgelegt.
+Ein **Adressbuchanbieter** kann z. B. ein modifizierbares Kontrollkästchensteuerelement in sein Konfigurationsdialogfeld hinzufügen, um die Einstellung der PR_SEND_RICH_INFO ([PidTagSendRichInfo](pidtagsendrichinfo-canonical-property.md))-Eigenschaft eines Empfängers anzupassen. Wenn der Benutzer das Kontrollkästchen auswählt, legt MAPI diese Eigenschaft auf TRUE fest. Wenn das Kontrollkästchen deaktiviert ist, wird die Eigenschaft auf FALSE festgelegt.
   
-Eine Übersicht über Anzeige Tabellen finden Sie unter [Display Tables](display-tables.md). Weitere Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md). Weitere Informationen zu Eigenschaftstypen finden Sie unter [MAPI property Type Overview](mapi-property-type-overview.md).
+Eine Übersicht über Anzeigetabellen finden Sie unter [Display Tables](display-tables.md). Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md). Informationen zu Eigenschaftstypen finden Sie unter [MAPI Property Type Overview](mapi-property-type-overview.md).
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -78,7 +78,7 @@ Eine Übersicht über Anzeige Tabellen finden Sie unter [Display Tables](display
 
 [DTCTL](dtctl.md)
   
-[Kanonische Pidtagcontroltype (-Eigenschaft](pidtagcontroltype-canonical-property.md)
+[PidTagControlType (kanonische Eigenschaft)](pidtagcontroltype-canonical-property.md)
 
 
 [MAPI-Strukturen](mapi-structures.md)

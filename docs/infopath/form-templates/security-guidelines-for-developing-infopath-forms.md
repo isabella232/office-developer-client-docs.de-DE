@@ -5,7 +5,7 @@ ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 4690028e-20ac-297b-4651-801f5159c747
-description: Lesen Sie vor der Lektüre dieses Themas Weitere Informationen zu Sicherheitskonzepten in InfoPath-Formularen, um sich mit dem InfoPath-Sicherheitsmodell vertraut zu machen.
+description: Informationen zum InfoPath-Sicherheitsmodell finden Sie unter Additional InfoPath Form Security Concepts, bevor Sie dieses Thema lesen.
 ms.openlocfilehash: 5108d8b1967b72ac4805f892bcf3bbae3aecccbe
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -15,11 +15,11 @@ ms.locfileid: "33437812"
 ---
 # <a name="security-guidelines-for-developing-infopath-forms"></a>Sicherheitsrichtlinien für die Entwicklung von InfoPath-Formularen
 
-Lesen Sie vor der Lektüre dieses Themas Weitere Informationen zu [Sicherheitskonzepten in InfoPath-Formularen](additional-infopath-form-security-concepts.md) , um sich mit dem InfoPath-Sicherheitsmodell vertraut zu machen. 
+Informationen zum InfoPath-Sicherheitsmodell finden Sie unter [Additional InfoPath Form Security Concepts,](additional-infopath-form-security-concepts.md) bevor Sie dieses Thema lesen. 
   
 ## <a name="security-issues-for-users-of-infopath-forms"></a>Sicherheitsaspekte für Benutzer von InfoPath-Formularen
 
-Die wichtigsten Sicherheitsprobleme für Benutzer von Microsoft InfoPath ähneln denen für Webanwendungen, die in Internet Explorer laufen. Sie sollten jedoch beachten, dass die Sicherheitsstufe für eine Formular nur vom Speicherort der Formularvorlage abhängt, und nicht davon, wo Benutzer die resultierenden erstellten XML-Dokumente speichern oder öffnen. Die Benutzer können den Speicherort der verwendeten Formularvorlage mithilfe der Statusleiste in InfoPath bestimmen.
+Die wichtigsten Sicherheitsbedenken für Benutzer von Microsoft InfoPath ähneln denen für Webanwendungen, die in Internet Explorer ausgeführt werden. Sie sollten jedoch beachten, dass die Sicherheitsstufe für eine Formular nur vom Speicherort der Formularvorlage abhängt, und nicht davon, wo Benutzer die resultierenden erstellten XML-Dokumente speichern oder öffnen. Die Benutzer können den Speicherort der verwendeten Formularvorlage mithilfe der Statusleiste in InfoPath bestimmen.
   
 InfoPath schützt die Benutzer vor den folgenden potenziellen Bedrohungen durch von böswilligen Benutzern erstellte Formularvorlagen:
   
@@ -31,7 +31,7 @@ InfoPath schützt die Benutzer vor den folgenden potenziellen Bedrohungen durch 
     
 ## <a name="disclosure-of-sensitive-information"></a>Weitergabe vertraulicher Informationen
 
-Das gängigste Szenario für die Weitergabe vertraulicher Informationen ist denkbar, wenn ein Formularautor mit böswilligen Absichten ein Formular erstellt, das mithilfe der Sicherheitsanmeldeinformationen des aktuellen Benutzers auf eine Datenquelle in einer anderen als der Domäne zugreift, in der das Formular selbst bereitgestellt wurde. Ein böswilliger Benutzer könnte beispielsweise ein Formular per e-Mail-Nachricht oder mithilfe einer URL zu einem Formular auf einer privaten Freigabe oder einem Webserver senden. Das Formular könnte ein Skript enthalten, das mithilfe der Anmeldeinformationen des aktuellen Benutzers eine Datenzugriffsanforderung ausführt, um Daten von einer Datenquelle in einer anderen Domäne abzurufen, auf die der böswillige Benutzer andernfalls keinen Zugriff hätte (z. B. eine Datenbank mit Lohnbuchhaltungsinformationen oder anderen vertraulichen Informationen). Diese Arte von Sicherheitsrisiko wird als domänenübergreifender Datenzugriff bezeichnet.
+Das gängigste Szenario für die Weitergabe vertraulicher Informationen ist denkbar, wenn ein Formularautor mit böswilligen Absichten ein Formular erstellt, das mithilfe der Sicherheitsanmeldeinformationen des aktuellen Benutzers auf eine Datenquelle in einer anderen als der Domäne zugreift, in der das Formular selbst bereitgestellt wurde. Beispielsweise kann ein böswilliger Benutzer ein Formular per E-Mail oder mithilfe einer URL an ein Formular auf einer privaten Freigabe oder einem Webserver senden. Das Formular könnte ein Skript enthalten, das mithilfe der Anmeldeinformationen des aktuellen Benutzers eine Datenzugriffsanforderung ausführt, um Daten von einer Datenquelle in einer anderen Domäne abzurufen, auf die der böswillige Benutzer andernfalls keinen Zugriff hätte (z. B. eine Datenbank mit Lohnbuchhaltungsinformationen oder anderen vertraulichen Informationen). Diese Arte von Sicherheitsrisiko wird als domänenübergreifender Datenzugriff bezeichnet.
   
 Das Sicherheitsmodell von Internet Explorer, auf dem InfoPath basiert, enthält die Einstellung **Auf Datenquellen über Domänengrenzen hinweg zugreifen**. Standardmäßig wird mit dieser Einstellung der domänenübergreifende Zugriff für InfoPath-Formulare in den Sicherheitszonen **Internet** und **Eingeschränkte Sites** deaktiviert. Der Benutzer wird außerdem gefragt, ob der domänenübergreifende Zugriff für InfoPath-Formulare in der Sicherheitszone **Lokales Intranet** zugelassen werden soll, und der domänenübergreifende Zugriff für InfoPath-Formulare in den Zonen **Vertrauenswürdige Sites** oder **Lokaler Computer** wird aktiviert. 
   
@@ -57,11 +57,11 @@ Entwickler, die InfoPath-Formulare erstellen, sollten mit der Implementierung de
     
 - Wie die CAB-Dateien von ActiveX-Steuerelementen signiert werden.
     
-- VorGehensWeise Signieren von Formularvorlagen, die als Anlage an eine e-Mail-Nachricht gesendet werden.
+- So signieren Sie Formularvorlagen, die als Anlage an eine E-Mail-Nachricht gesendet werden.
     
 ## <a name="best-practices-for-xml-data-associated-with-a-form"></a>Bewährte Methoden für einem Formular zugeordnete XML-Daten
 
-Beachten Sie, dass InfoPath-Formulare mit XML-Daten aus einer beliebigen Quelle aufgefüllt werden können, einschließlich Quellen, denen der Benutzer nicht notwendigerweise vertraut oder die er nicht notwendigerweise kontrolliert. InfoPath kann beispielsweise XML-Daten aus einem Link zu einer Webseite oder aus einer XML-Anlage abrufen, die an den Benutzer in einer e-Mail-Nachricht gesendet wird. Beachten Sie die folgenden bewährten Methoden, um diese Risiken zu reduzieren:
+Beachten Sie, dass InfoPath-Formulare mit XML-Daten aus einer beliebigen Quelle aufgefüllt werden können, einschließlich Quellen, denen der Benutzer nicht notwendigerweise vertraut oder die er nicht notwendigerweise kontrolliert. Beispielsweise kann InfoPath XML-Daten aus einem Link zu einer Webseite oder aus einer XML-Anlage, die an den Benutzer in einer E-Mail-Nachricht gesendet wird, erhalten. Beachten Sie die folgenden bewährten Methoden, um diese Risiken zu reduzieren:
   
 - Übergeben Sie keine nicht vertrauenswürdigen Daten, die aus der XML-Datei gelesen wird, an die **eval()**-Funktion von Microsoft JScript oder an die **innerHTML**-Eigenschaft des Aufgabenbereichs. Mithilfe beider Aufrufe könnte ein böswilliges Skript ausgeführt werden. Verwenden Sie in einem Aufgabenbereich alternativ die **innerText**-Eigenschaft. Beachten Sie, dass in InfoPath-Ansichten kein Skript ausgeführt werden kann. 
     
@@ -83,19 +83,19 @@ InfoPath verwendet ein Sicherheitsmodell, das auf den Sicherheitszonen von Inter
   
 ## <a name="best-practices-for-managing-the-cab-files-of-activex-controls"></a>Bewährte Methoden für die Verwaltung der CAB-Dateien von ActiveX-Steuerelementen
 
-ActiveX-Steuerelemente können in Formularvorlagen gehostet werden, die für den InfoPath-Editor entworfen wurden. CAB-Dateien für diese Steuerelemente, die noch nicht auf dem Computer des Benutzers vorhanden sind, müssen in der Formularvorlagendatei (XSN) enthalten sein. In Formularvorlagen enthaltene CAB-Dateien müssen digital signiert sein, damit die CAB-Dateien installiert werden. Eine nicht signierte CAB-Datei wird von InfoPath nicht installiert, und zwar unabhängig von der Vertrauensebene oder der Sicherheitszone.
+ActiveX-Steuerelemente können in Formularvorlagen gehostet werden, die für den InfoPath-Editor entworfen wurden. CAB-Dateien für diese Steuerelemente, die nicht bereits auf dem Computer des Benutzers vorhanden sind, müssen in der Formularvorlagendatei (XSN) enthalten sein. In Formularvorlagen enthaltene CAB-Dateien müssen digital signiert sein, damit die CAB-Dateien installiert werden. Eine nicht signierte CAB-Datei wird von InfoPath nicht installiert, und zwar unabhängig von der Vertrauensebene oder der Sicherheitszone.
   
 Um sicherzustellen, dass die digitale Signatur in der CAB-Datei überprüft werden kann, sollte die Datei mit einem Zertifikat signiert werden, das eine Vertrauenskette zu einem bereits vertrauenswürdigen Stammzertifikat aufweist. Andernfalls kann die Signatur nicht authentifiziert werden, die Signaturüberprüfung schlägt fehl, und die CAB-Datei wird nicht installiert.
   
-## <a name="best-practices-for-form-templates-sent-as-an-attachment-to-an-email-message"></a>Bewährte Methoden für Formularvorlagen, die als Anlage an eine e-Mail-Nachricht gesendet werden
+## <a name="best-practices-for-form-templates-sent-as-an-attachment-to-an-email-message"></a>Bewährte Methoden für Formularvorlagen, die als Anlage an eine E-Mail-Nachricht gesendet werden
 
-InfoPath unterstützt das Bereitstellen von Formularvorlagen als Anlage einer e-Mail-Nachricht und das Bewegen von Formularvorlagen von einem Speicherort an einen anderen. Es empfiehlt sich, eine Formularvorlage digital zu signieren, die Sie als Anlage einer e-Mail-Nachricht bereitstellen möchten. Eine digitale Signatur in einer Formularvorlage, die per e-Mail-Nachricht bereitgestellt wird, sichert nicht nur die Authentizität der Vorlage. Dies hat zusätzlich den Vorteil, dass die Formularvorlage automatisch aktualisiert werden kann.
+InfoPath unterstützt die Bereitstellung von Formularvorlagen als Anlage für eine E-Mail-Nachricht und das Verschieben von Formularvorlagen von einem Speicherort an einen anderen. Es ist eine bewährte Sicherheitspraxis, eine Formularvorlage, die Sie entwerfen und als Anlage für eine E-Mail-Nachricht bereitstellen möchten, digital zu signieren. Eine digitale Signatur in einer Formularvorlage, die von einer E-Mail-Nachricht bereitgestellt wird, stellt nicht nur die Echtheit der Vorlage sicher. Dies hat zusätzlich den Vorteil, dass die Formularvorlage automatisch aktualisiert werden kann.
   
 Die Formularvorlage sollte mit einem Zertifikat signiert werden, das eine Vertrauenskette zu einem bereits vertrauenswürdigen Stammzertifikat aufweist. Andernfalls schlägt die Signaturüberprüfung fehl, da die Signatur nicht authentifiziert werden kann.
   
 > [!NOTE]
 > Wenn eine signierte Formularvorlage die Domänensicherheitsstufe oder die eingeschränkte Sicherheitsstufe erfordert, wird die Signatur von InfoPath nicht überprüft. Es wird lediglich festgestellt, ob die Vorlage von InfoPath automatisch aktualisiert werden kann. 
   
-Weitere Informationen zur e-Mail-Bereitstellung finden Sie unter [Sicherheitsstufen, e-Mail-Bereitstellung und Remote Formularvorlagen](security-levels-email-deployment-and-remote-form-templates.md).
+Weitere Informationen zur E-Mail-Bereitstellung finden Sie unter [Sicherheitsstufen, E-Mail-Bereitstellung und Remoteformularvorlagen.](security-levels-email-deployment-and-remote-form-templates.md)
   
 
