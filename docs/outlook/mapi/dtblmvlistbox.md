@@ -25,11 +25,11 @@ ms.locfileid: "33439702"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt eine Liste mit mehreren Werten, die in einem Dialogfeld angezeigt wird, das aus einer Anzeigetabelle erstellt wird.
+Beschreibt eine mehrwertige Liste, die in einem Dialogfeld angezeigt wird, das aus einer Anzeigetabelle erstellt wird.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _DTBLMVLISTBOX
@@ -44,21 +44,21 @@ typedef struct _DTBLMVLISTBOX
 
  **ulFlags**
   
-> Reserviert muss NULL sein.
+> Reserviert; muss null sein.
     
  **ulMVPropTag**
   
-> Property-Tag für eine mehrwertige Eigenschaft vom Typ PT_MV_TSTRING.
+> Eigenschaftstag für eine mehrwertige Eigenschaft vom Typ PT_MV_TSTRING.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Eine **DTBLMVLISTBOX** -Struktur beschreibt eine standardmäßige mehrwertige Liste mit einer schreibgeschützten Liste von Elementen. Bei Verwendung einer standardmäßigen mehrwertigen Liste werden die Werte sofort angezeigt. 
+Eine **DTBLMVLISTBOX-Struktur** beschreibt eine standardmäßige mehrwertige Liste mit einer schreibgeschützten Liste von Elementen. Mithilfe einer mehrwertigen Standardliste werden die Werte sofort angezeigt. 
   
-Die angezeigten Daten stammen aus der im **ulMVPropTag** -Element angegebenen Eigenschaft. Es ist nicht erforderlich, von der Eigenschaften Schnittstelle zu lesen, die der Anzeigetabelle zugeordnet ist. Da Benutzer keine Auswahl aus diesen Listentypen treffen können, werden auch keine Daten in die Eigenschaften Schnittstelle geschrieben. 
+Die angezeigten Daten stammen aus der Im **ulMVPropTag-Element identifizierten** Eigenschaft. Es ist nicht erforderlich, von der Eigenschaftenschnittstelle zu lesen, die der Anzeigetabelle zugeordnet ist. Da Benutzer keine Auswahl aus diesen Listentypen treffen können, werden daten nicht in die Eigenschaftsschnittstelle geschrieben. 
   
-Nur mehrwertige Zeichenfolgeneigenschaften werden für die mehrwertige Liste unterstützt. andere mehrwertige Eigenschaftstypen werden nicht unterstützt. 
+Für die mehrwertige Liste werden nur mehrwertige Zeichenfolgeneigenschaften unterstützt. Andere mehrwertige Eigenschaftstypen werden nicht unterstützt. 
   
-Eine Übersicht über Anzeige Tabellen finden Sie unter [Display Tables](display-tables.md). Weitere Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
+Eine Übersicht über Anzeigetabellen finden Sie unter [Display Tables](display-tables.md). Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
   
 ## <a name="see-also"></a>Siehe auch
 

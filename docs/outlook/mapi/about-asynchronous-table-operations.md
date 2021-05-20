@@ -19,7 +19,7 @@ ms.locfileid: "33439569"
  
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die **IMAPITable** -Schnittstelle umfasst drei Methoden, die asynchron ausgeführt werden, und drei Methoden zum Steuern eines asynchronen Vorgangs. In der folgenden Tabelle sind diese Methoden aufgeführt: 
+Die **IMAPITable-Schnittstelle** umfasst drei asynchrone Methoden und drei Methoden zum Steuern eines asynchronen Vorgangs. In der folgenden Tabelle sind diese Methoden aufgeführt: 
   
 |**Asynchroner Vorgang**|**Asynchrone Steuerelementmethode**|
 |:-----|:-----|
@@ -27,13 +27,13 @@ Die **IMAPITable** -Schnittstelle umfasst drei Methoden, die asynchron ausgefüh
 |[IMAPITable::Restrict](imapitable-restrict.md) <br/> |[IMAPITable::Abort](imapitable-abort.md) <br/> |
 |[IMAPITable::SortTable](imapitable-sorttable.md) <br/> |[IMAPITable::WaitForCompletion](imapitable-waitforcompletion.md) <br/> |
    
-**So rufen Sie Statusinformationen über den Typ einer Tabelle und den aktuellen Vorgang ab**
+**So rufen Sie Statusinformationen zum Typ und aktuellen Vorgang einer Tabelle ab**
   
-- Rufen Sie [IMAPITable:: GetStatus](imapitable-getstatus.md)auf. Mit **GetStatus**kann ein Tabellen Benutzer bestimmen, ob die Tabelle statisch oder dynamisch ist, ob ein Vorgang ausgeführt oder abgeschlossen wurde und ob ein Fehler aus einem abgeschlossenen Vorgang aufgetreten ist. Wenn ein Client beispielsweise einen Sortiervorgang abbrechen muss, da er zu viel Zeit in Anspruch nimmt, kann der Client zunächst **GetStatus** aufrufen, um zu bestimmen, ob tatsächlich ein Sortiervorgang derzeit verarbeitet wird. Der Client kann dann [IMAPITable:: Abort](imapitable-abort.md) aufrufen, um ihn zu beenden. 
+- Rufen [Sie IMAPITable::GetStatus auf.](imapitable-getstatus.md) Mit **GetStatus** kann ein Tabellenbenutzer bestimmen, ob die Tabelle statisch oder dynamisch ist, ob ein Vorgang ausgeführt oder abgeschlossen wurde und ob ein Fehler aus einem abgeschlossenen Vorgang aufgetreten ist. Wenn ein Client beispielsweise einen Sortiervorgang abbrechen muss, weil er zu viel Zeit in Sich nimmt, kann der Client **zunächst GetStatus** aufrufen, um zu ermitteln, ob derzeit ein Sortiervorgang verarbeitet wird. Anschließend kann der Client [IMAPITable::Abort aufrufen, um](imapitable-abort.md) ihn zu beenden. 
     
-**So halten Sie die Aktivität an, bis eine asynchrone Aufgabe abgeschlossen ist**
+**So anhalten Sie die Aktivität, bis eine asynchrone Aufgabe abgeschlossen ist**
   
-- Rufen Sie [IMAPITable:: WaitForCompletion](imapitable-waitforcompletion.md)auf. Durch Aufrufen von **WaitForCompletion** kann die Aufgabe ohne Unterbrechung abgeschlossen werden. 
+- Rufen [Sie IMAPITable::WaitForCompletion auf.](imapitable-waitforcompletion.md) Durch **das Aufrufen von WaitForCompletion** kann die Aufgabe ohne Unterbrechung abgeschlossen werden. 
     
 ## <a name="see-also"></a>Siehe auch
 

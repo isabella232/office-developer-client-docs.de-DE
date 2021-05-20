@@ -25,15 +25,15 @@ ms.locfileid: "33439576"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beendet die Synchronisierung im aktuellen Zustand und beendet diesen Status.
+Beendet die Synchronisierung im aktuellen Zustand und beendet den Status.
   
 ```cpp
 HRESULT SyncEnd();
 ```
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Der Client muss **IOSTX:: SyncEnd** für jeden Aufruf von [IOSTX:: SyncBeg](iostx-syncbeg.md)aufrufen. Die entsprechende Datenstruktur enthält Informationen, um anzugeben, ob der Client den aktuellen Zustand erfolgreich abgeschlossen hat, damit Outlook seinen internen Status bereinigen kann.
+Der Client muss **IOSTX::SyncEnd** für jeden Aufruf von [IOSTX::SyncBeg aufrufen.](iostx-syncbeg.md) Die entsprechende Datenstruktur enthält Informationen, um anzugeben, ob der Client den aktuellen Status erfolgreich abgeschlossen hat, damit Outlook internen Zustand bereinigen kann.
   
 ## <a name="see-also"></a>Siehe auch
 

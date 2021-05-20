@@ -25,7 +25,7 @@ ms.locfileid: "33439877"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Unterstützt Microsoft Outlook 2010 und Microsoft Outlook 2013 beim Senden von Benachrichtigungs Rückrufen an einen Client.
+Unterstützt Microsoft Outlook 2010 und Microsoft Outlook 2013 beim Senden von Benachrichtigungsrückrufen an einen Client.
   
 |||
 |:-----|:-----|
@@ -36,11 +36,11 @@ Unterstützt Microsoft Outlook 2010 und Microsoft Outlook 2013 beim Senden von B
 
 |||
 |:-----|:-----|
-|[Benachrichtigen](imapiofflinenotify-notify.md) <br/> |Sendet Benachrichtigungen an einen Client über Änderungen im Verbindungsstatus.  <br/> |
+|[Notify](imapiofflinenotify-notify.md) <br/> |Sendet Benachrichtigungen über Änderungen im Verbindungsstatus an einen Client.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Der Client muss diese Schnittstelle implementieren und beim Einrichten von Rückrufen mithilfe von **[IMAPIOfflineMgr:: Advise](imapiofflinemgr-advise.md)** als Member in **[MAPIOFFLINE_ADVISEINFO](mapioffline_adviseinfo.md)** einen Zeiger an diesen übergeben. Anschließend kann Outlook 2010 oder Outlook 2013 diese Schnittstelle zum Senden von Benachrichtigungs Rückrufen an den Client verwenden. 
+Der Client muss diese Schnittstelle implementieren und einen Zeiger als Mitglied **[in](mapioffline_adviseinfo.md)** MAPIOFFLINE_ADVISEINFO beim Einrichten von Rückrufen mit **[IMAPIOfflineMgr::Advise übergeben.](imapiofflinemgr-advise.md)** Anschließend können Outlook 2010 oder Outlook 2013 diese Schnittstelle verwenden, um Benachrichtigungsrückrufe an den Client zu senden. 
   
 ## <a name="see-also"></a>Siehe auch
 

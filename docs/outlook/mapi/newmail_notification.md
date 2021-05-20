@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33439856"
 ---
-# <a name="newmailnotification"></a>NEWMAIL_NOTIFICATION
+# <a name="newmail_notification"></a>NEWMAIL_NOTIFICATION
 
   
   
@@ -29,7 +29,7 @@ Beschreibt Informationen, die sich auf das Eintreffen einer neuen Nachricht bezi
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _NEWMAIL_NOTIFICATION
@@ -45,53 +45,53 @@ typedef struct _NEWMAIL_NOTIFICATION
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cbEntryID**
   
-> Die Anzahl der Bytes in der Eintrags-ID, auf die durch das **lpEntryID** -Element verwiesen wird. 
+> Anzahl der Bytes in der Eintrags-ID, auf die das **lpEntryID-Element** verweist. 
     
  **lpEntryID**
   
-> Zeiger auf die Eintrags-ID der neu angekommenen Nachricht.
+> Zeiger auf die Eintrags-ID der neu eingetroffenen Nachricht.
     
  **cbParentID**
   
-> Die Anzahl der Bytes in der Eintrags-ID, auf die durch das **lpParentID** -Element verwiesen wird. 
+> Anzahl der Bytes in der Eintrags-ID, auf die das **lpParentID-Element** verweist. 
     
  **lpParentID**
   
-> Zeiger auf die Eintrags-ID des Empfangs Ordners für die neu eingetroffene Nachricht.
+> Zeiger auf die Eintrags-ID des Empfangsordners für die neu eingetroffene Nachricht.
     
  **ulFlags**
   
-> Bitmaske von Flags zur Beschreibung des Formats der Zeichenfolgeneigenschaften, die in der Nachricht enthalten sind. Das folgende Flag kann festgelegt werden:
+> Bitmaske von Flags, die verwendet werden, um das Format der Zeichenfolgeneigenschaften zu beschreiben, die in der Nachricht enthalten sind. Das folgende Flag kann festgelegt werden:
     
 MAPI_UNICODE 
   
-> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format.
+> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Zeichenfolgen im ANSI-Format.
     
  **lpszMessageClass**
   
-> Zeiger auf die Nachrichtenklasse der neu angekommenen Nachricht. 
+> Zeiger auf die Nachrichtenklasse der neu eingetroffenen Nachricht. 
     
  **ulMessageFlags**
   
-> Bitmaske von Flags, die den aktuellen Status der neu angekommenen Nachricht beschreibt. Das **ulMessageFlags** -Element ist eine Kopie der **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))-Eigenschaft der Nachricht.
+> Bitmaske von Flags, die den aktuellen Status der neu eingetroffenen Nachricht beschreibt. Das **ulMessageFlags-Element** ist eine Kopie der **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) -Eigenschaft der Nachricht.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **NEWMAIL_NOTIFICATION** -Struktur ist ein Mitglied der Vereinigung von Strukturen, die im **Info** -Element der Benachrichtigungs [](notification.md) Struktur enthalten sind. Wenn der **Info** -Member einer **Benachrichtigungs** Struktur eine **NEWMAIL_NOTIFICATION** -Struktur enthält, wird das **ulEventType** -Element der **Benachrichtigungs** Struktur auf uleventmaskfnevnewmail festgelegt _._
+Die **NEWMAIL_NOTIFICATION** ist eines der Mitglieder der Strukturgewerkschaft, die im **info-Element** der [NOTIFICATION-Struktur enthalten](notification.md) ist. Wenn das **Infom** member einer **NOTIFICATION-Struktur** eine NEWMAIL_NOTIFICATION **enthält,** wird das **ulEventType-Element** der **NOTIFICATION-Struktur** auf  _fnevNewMail festgelegt._
   
-MAPI verwendet die **NEWMAIL_NOTIFICATION** -Struktur nur als Mitglied der **Benachrichtigungs** Struktur, die Informationen zu einem Benachrichtigungsereignis für die Advise-Senke enthält. 
+MAPI verwendet die **NEWMAIL_NOTIFICATION** nur als Mitglied der **NOTIFICATION-Struktur,** die Informationen zu einem Benachrichtigungsereignis für die Hinweissenke enthält. 
   
-Weitere Informationen zur Benachrichtigung finden Sie in den in der folgenden Tabelle beschriebenen Themen.
+Weitere Informationen zur Benachrichtigung finden Sie in den In der folgenden Tabelle beschriebenen Themen.
   
 |**Thema**|**Beschreibung**|
 |:-----|:-----|
-|[Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md) <br/> |Allgemeine Übersicht über Benachrichtigungs-und Benachrichtigungsereignisse.  <br/> |
-|[Behandeln von Benachrichtigungen](handling-notifications.md) <br/> |Erläuterung, wie Clients Benachrichtigungen behandeln sollen.  <br/> |
-|[Unterstützende Ereignisbenachrichtigung](supporting-event-notification.md) <br/> |Erläuterung, wie Dienstanbieter die [IMAPISupport](imapisupportiunknown.md) -Methode verwenden können, um Benachrichtigungen zu generieren.  <br/> |
+|[Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md) <br/> |Allgemeine Übersicht über Benachrichtigungs- und Benachrichtigungsereignisse.  <br/> |
+|[Behandeln von Benachrichtigungen](handling-notifications.md) <br/> |Diskussion darüber, wie Clients mit Benachrichtigungen umgehen sollten.  <br/> |
+|[Unterstützende Ereignisbenachrichtigung](supporting-event-notification.md) <br/> |Hier erfahren Sie, wie Dienstanbieter die [IMAPISupport-Methode](imapisupportiunknown.md) zum Generieren von Benachrichtigungen verwenden können.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -99,7 +99,7 @@ Weitere Informationen zur Benachrichtigung finden Sie in den in der folgenden Ta
 
 [Benachrichtigung](notification.md)
   
-[Kanonische PidTagMessageFlags-Eigenschaft](pidtagmessageflags-canonical-property.md)
+[PidTagMessageFlags (kanonische Eigenschaft)](pidtagmessageflags-canonical-property.md)
 
 
 [MAPI-Strukturen](mapi-structures.md)

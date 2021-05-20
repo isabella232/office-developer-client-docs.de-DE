@@ -24,14 +24,14 @@ Führt das Standardereignis aus, das dem Objekt zugeordnet ist.
 
 DEFAULTEVENT( )
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 In der folgenden Tabelle wird die Standardaktion aufgelistet, die mehreren Objekten zugeordnet ist.
   
 |**Objekt**|**Standardaktion**|
 |:-----|:-----|
 |Form  <br/> |Text bearbeiten  <br/> |
-|Group  <br/> |Keine Aktion ausführen.  <br/> |
+|Gruppe  <br/> |Keine Aktion  <br/> |
 |OLE  <br/> |Primäres Verb ausführen  <br/> |
 |Andere  <br/> |Keine Aktion  <br/> |
    

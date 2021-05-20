@@ -19,28 +19,28 @@ ms.locfileid: "33439562"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine kurzfristige Eintrags-ID wird einem Objekt von einem Dienstanbieter zugewiesen, wenn der Bezeichner schnell erstellt werden muss und nicht über die Zeit oder den Abstand zu halten ist. Die Eindeutigkeit einer kurzfristigen Eintrags-ID wird nur über die Lebensdauer der aktuellen Sitzung auf der aktuellen Arbeitsstation gewährleistet. NormalerWeise ist eine kurzfristige Eintrags-ID nur gültig, bis das Objekt, das es darstellt, freigegeben wird. 
+Ein kurzfristiger Eintragsbezeichner wird von einem Dienstanbieter einem Objekt zugewiesen, wenn der Bezeichner schnell erstellt werden muss und nicht über zeit- oder entfernungsüber einen Bestimmten Zeitraum verfügen muss. Die Eindeutigkeit eines kurzfristigen Eintragsbezeichners wird nur während der Laufzeit der aktuellen Sitzung auf der aktuellen Arbeitsstation garantiert. In der Regel ist eine kurzfristige Eintrags-ID nur gültig, bis das objekt, das sie darstellt, freigegeben wird. 
   
-Kurzfristige Eintrags-IDs werden Zeilen in Tabellen und Einträgen in Dialogfeldern zugewiesen, in denen Daten schnell zum Browsen bereitgestellt werden müssen. Beispielsweise weisen Nachrichtenspeicher Anbieter kurzfristige Eintragsbezeichner zu Zeilen von Nachrichten in einer Inhaltstabelle und Empfängern in einer Recipients-Tabelle zu. 
+Kurzfristige Eintragsbezeichner werden Zeilen in Tabellen und Einträgen in Dialogfeldern zugewiesen, wo es erforderlich ist, schnell Daten für das Browsen zur Verfügung zu stellen. Nachrichtenspeicheranbieter weisen beispielsweise Zeilen von Nachrichten in einer Inhaltstabelle und Empfängern in einer Empfängertabelle kurzfristige Eintragsbezeichner zu. 
 
-Clients können diese kurzfristigen Eintragsbezeichner verwenden, um die Objekte zu öffnen, die von den Tabellenzeilen dargestellt werden. Im Gegensatz zu langfristigen Eintrags Bezeichnern, die mit einer der openEntry **** -Methoden verwendet werden können, sollten jedoch kurzfristige Eintragsbezeichner mit der OpenEntry-Methode des Containers verwendet werden. **** 
+Clients können diese kurzfristigen Eintragsbezeichner verwenden, um die durch die Tabellenzeilen dargestellten Objekte zu öffnen. Im Gegensatz zu langfristigen Eintragsbezeichnern, die mit einer der **OpenEntry-Methoden** verwendet werden können, sollten jedoch kurzfristige Eintragsbezeichner mit der **OpenEntry-Methode** des Containers verwendet werden. 
   
-## <a name="implementing-short-term-entry-identifiers"></a>Implementieren von kurzfristigen Eintrags Bezeichnern
+## <a name="implementing-short-term-entry-identifiers"></a>Implementieren kurzfristiger Eintragsbezeichner
 
-Die gängigsten Methoden zum Implementieren von kurzfristigen Eintrags-IDs sind folgende:
+Die gängigsten Methoden zum Implementieren kurzfristiger Eintragsbezeichner sind:
   
-- Festlegen, dass die kurzfristigen Eintragsbezeichner mit den langfristigen Bezeichnern identisch sind, sodass alle Flags nicht mehr verfügbar sind. 
+- Machen Sie die kurzfristigen Eintragsbezeichner mit den langfristigen Bezeichnern identisch, ohne dass alle Kennzeichen nicht mehr verwendet werden. 
     
-- Unterscheiden sich die kurzfristigen Eintragsbezeichner von den langfristigen Bezeichnern, wobei alle Flags festgelegt werden. 
+- Ändern Sie die Kurzzeiteintragsbezeichner von den langfristigen Bezeichnern, indem Sie alle Kennzeichen festlegen. 
     
-Clients können eine kurzfristige Eintrags-ID des zweiten Typs identifizieren, indem Sie das **abFlags** -Element wie folgt untersuchen: 
+Clients können einen kurzfristigen Eintragsbezeichner des zweiten Typs identifizieren, indem sie sein **abFlags-Mitglied** wie folgt untersuchen: 
   
 ```cpp
 abFlags[0] = 0xFF;
  
 ```
 
-Einige Dienstanbieter löschen ein oder mehrere Flags, um kurzfristige Eintragsbezeichner mit höherer Gültigkeit zu erstellen. Die folgenden **abFlags** -Elemente stellen beispielsweise kurzfristige Eintragsbezeichner dar, die für mehrere Tage oder für mehrere Sitzungen verwendet werden können: 
+Einige Dienstanbieter löschen ein oder mehrere Kennzeichen, um kurzfristige Eintragsbezeichner zu erstellen, die eine höhere Gültigkeit haben. Die folgenden **abFlags-Mitglieder** stellen beispielsweise kurzfristige Eintragsbezeichner dar, die für mehrere Tage oder für mehrere Sitzungen verwendet werden können: 
   
 ```cpp
 abFlags[0] = 0xFF & ~MAPI_NOW;
@@ -48,9 +48,9 @@ abFlags[0] = 0xFF & ~MAPI_THISSESSION;
  
 ```
 
-Clients können kurzfristige Eintrags-IDs schnell erfassen, verwenden und verwerfen. In den meisten Fällen können Sie auf die gleiche Weise wie langfristige Eintragsbezeichner verwendet werden. Sie können aus einer Tabelle abgerufen werden, an die **OpenEntry** -Methode übergeben und mit der **CompareEntryIDs** -Methode verglichen werden. Die einzige Ausnahme besteht darin, dass Sie nie von der [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode zurückgegeben werden. Die von getProps zurückgegebenen Eigenschaften sind immer langfristige Eintragsbezeichner. **** 
+Clients erwerben, verwenden und verwerfen schnell kurzfristige Eintragsbezeichner. Sie können meist auf die gleiche Weise wie langfristige Eintragsbezeichner verwendet werden. Sie können aus einer Tabelle abgerufen, an die **OpenEntry-Methode** übergeben und mit der **CompareEntryIDs-Methode verglichen** werden. Die einzige Ausnahme ist, dass sie nie von der [IMAPIProp::GetProps-Methode zurückgegeben](imapiprop-getprops.md) werden. Die von **GetProps** zurückgegebenen Eigenschaften sind immer langfristige Eintragsbezeichner. 
   
 ## <a name="see-also"></a>Siehe auch
 
-- [MAPI-Eintrags-IDs](mapi-entry-identifiers.md)
+- [MAPI-Eintragsbezeichner](mapi-entry-identifiers.md)
 

@@ -25,7 +25,7 @@ ms.locfileid: "33439730"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Zeigt ein Eigenschaftenfenster an, in dem der Benutzer die Konfiguration eines Dienstanbieters ändern kann diese Methode wird in den von MAPI implementierten Statusobjekten nicht unterstützt.
+Zeigt ein Eigenschaftenblatt an, mit dem der Benutzer die Konfiguration eines Dienstanbieters ändern kann Diese Methode wird in von MAPI implementierten Statusobjekten nicht unterstützt.
   
 ```cpp
 HRESULT SettingsDialog(
@@ -38,61 +38,61 @@ HRESULT SettingsDialog(
 
  _ulUIParam_
   
-> in Ein Handle für das übergeordnete Fenster des Konfigurationseigenschaften Blatts.
+> [in] Ein Handle zum übergeordneten Fenster des Konfigurationseigenschaftsblatts.
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die die Anzeige des Eigenschaftenblatts steuert. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die die Anzeige des Eigenschaftenblatts steuert. Das folgende Flag kann festgelegt werden:
     
 UI_READONLY 
   
-> Weist darauf hin, dass der Anbieter die Konfigurationseigenschaften nicht ändern sollte. Dieses Flag ist nur ein Vorschlag; Sie kann ignoriert werden.
+> Schlägt vor, dass der Anbieter keine Benutzer zum Ändern von Konfigurationseigenschaften aktivieren sollte. Dieses Flag ist nur ein Vorschlag. sie kann ignoriert werden.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Das Konfigurationseigenschaften Blatt wurde erfolgreich angezeigt.
+> Das Konfigurationseigenschaftsblatt wurde erfolgreich angezeigt.
     
 MAPI_E_NO_SUPPORT 
   
-> Das Status-Objekt unterstützt diese Methode nicht, wie durch das Fehlen des STATUS_SETTINGS_DIALOG-Flags in der **PR_RESOURCE_METHODS** ([pidtagresourcemethods (](pidtagresourcemethods-canonical-property.md))-Eigenschaft angegeben.
+> Das status-Objekt unterstützt diese Methode nicht, wie durch das Fehlen des STATUS_SETTINGS_DIALOG-Flag in der **PR_RESOURCE_METHODS** ([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md)) -Eigenschaft angegeben wird.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPIStatus:: Settingsdialog** -Methode zeigt ein Konfigurationseigenschaften Fenster an. Alle Dienstanbieter sollten die **Settingsdialog** -Methode unterstützen, Sie ist jedoch nicht erforderlich. Dienstanbieter können eigene Eigenschaftenblätter implementieren oder die Implementierung verwenden, die in der [IMAPISupport::D oconfigpropsheet](imapisupport-doconfigpropsheet.md) -Methode des Support-Objekts bereitgestellt wird. **DoConfigPropsheet** erstellt ein Eigenschaftenblatt mit Lese-/Schreibzugriff. 
+Die **IMAPIStatus::SettingsDialog-Methode** zeigt ein Konfigurationseigenschaftsblatt an. Alle Dienstanbieter sollten die **SettingsDialog-Methode** unterstützen, sie ist jedoch nicht erforderlich. Dienstanbieter können eigene Eigenschaftenblätter implementieren oder die Implementierung verwenden, die in der [IMAPISupport::D oConfigPropsheet-Methode des Supportobjekts bereitgestellt](imapisupport-doconfigpropsheet.md) wird. **DoConfigPropsheet erstellt** ein Eigenschaftenblatt mit Lese-/Schreibzugriff. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Wenn ein Remote Transportanbieter über Einstellungen verfügt, sollte er folgende Schritte ausführen:
+Wenn ein Remotetransportanbieter über Einstellungen verfügt, sollte er die folgenden Schritte vornehmen:
   
-- Öffnen Sie den Abschnitt Profil des Transportanbieters.
+- Öffnen Sie den Profilabschnitt des Transportanbieters.
     
-- Rufen Sie die Eigenschafteneinstellungen des Transportanbieters aus dem Profil ab.
+- Holen Sie sich die Eigenschafteneinstellungen des Transportanbieters aus dem Profil.
     
 - Zeigen Sie die Eigenschafteneinstellungen in einem Dialogfeld an.
     
-- Wenn im Dialogfeld die Eigenschafteneinstellungen bearbeitet werden können, überprüfen Sie, ob die neuen Einstellungen gültig sind, und speichern Sie Sie im Abschnitt Profil des Transportanbieters.
+- Wenn das Dialogfeld die Bearbeitung der Eigenschafteneinstellungen zulässt, überprüfen Sie, ob die neuen Einstellungen gültig sind, und speichern Sie sie wieder im Profilabschnitt des Transportanbieters.
     
-- Zurückgeben von S_OK oder von Fehlerwerten, die während der vorangehenden Schritte zurückgegeben wurden.
+- Geben S_OK oder Fehlerwerte zurück, die während der vorherigen Schritte zurückgegeben wurden.
     
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Mithilfe des Eigenschaftenblatts, das über **Settingsdialog** angezeigt wird, können Sie verschiedene Aufgaben ausführen, beispielsweise: 
+Sie können das über **SettingsDialog** angezeigte Eigenschaftenblatt verwenden, um eine Vielzahl von Aufgaben auszuführen, z. B.: 
   
-- Angeben eines Standardnachrichten Speichers.
+- Geben Sie einen Standardnachrichtenspeicher an.
     
 - Geben Sie einen Transportauftrag an.
     
-- Geben Sie einen standardmäßigen Adressbuchcontainer für das Browsen an.
+- Geben Sie einen Standard-Adressbuchcontainer für das Browsen an.
     
-- Geben Sie eine Suchreihenfolge zum Auflösen von mehrdeutigen Namen an.
+- Geben Sie eine Suchreihenfolge zum Auflösen mehrdeutiger Namen an.
     
-- Angeben eines standardmäßigen persönlichen Adressbuchs.
+- Geben Sie ein standardmäßiges persönliches Adressbuch an.
     
-Dienstanbieter können abhängig von der Eigenschaft Eigenschaftenblätter implementieren, die Lese-/Schreibzugriff, schreibgeschützt oder eine Kombination aus Berechtigungen sind. Dienstanbieter können unterschiedliche Berechtigungen für einzelne Eigenschaften implementieren, indem Sie Eigenschaftseinschränkungen festlegen. Der Standardmodus für Eigenschaftenblätter ist Lese-/Schreibzugriff. Sie können schreibgeschützte Eigenschaftenblätter anfordern, indem Sie das UI_READONLY-Flag in ihren Aufrufen an **Settingsdialog**festlegen. Dienstanbieter, die schreibgeschützte Eigenschaftenblätter implementieren können, sind in der Lage, dies zu tun. Da einige Dienstanbieter den Standardmodus jedoch nicht außer Kraft setzen können, müssen Sie bereit sein, Eigenschaftenblätter eines der beiden Typen zu behandeln. 
+Dienstanbieter können Je nach Eigenschaft Eigenschaftenblätter implementieren, die schreibgeschützt oder eine Mischung aus Berechtigungen sind. Dienstanbieter können unterschiedliche Berechtigungen für einzelne Eigenschaften implementieren, indem Sie Eigenschaftseinschränkungen festlegen. Der Standardmodus für Eigenschaftenblätter ist Lese-/Schreibzugriff. Sie können schreibgeschützte Eigenschaftenblätter anfordern, indem Sie UI_READONLY in Ihren Aufrufen von **SettingsDialog festlegen.** Dienstanbieter, die schreibgeschützte Eigenschaftenblätter implementieren können, können dies tun. Da einige Dienstanbieter den Standardmodus jedoch nicht außer Kraft setzen können, müssen Sie bereit sein, Eigenschaftenblätter eines der beiden Typen zu behandeln. 
   
-Da eine Benutzeroberfläche immer an diesem Vorgang beteiligt ist, sollten nur interaktive Clients **Settingsdialog**aufrufen.
+Da an diesem Vorgang immer eine Benutzeroberfläche beteiligt ist, sollten nur interaktive Clients **SettingsDialog aufrufen.**
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -100,7 +100,7 @@ Da eine Benutzeroberfläche immer an diesem Vorgang beteiligt ist, sollten nur i
 
 [IMAPISupport::DoConfigPropsheet](imapisupport-doconfigpropsheet.md)
   
-[Kanonische Pidtagresourcemethods (-Eigenschaft](pidtagresourcemethods-canonical-property.md)
+[PidTagResourceMethods (kanonische Eigenschaft)](pidtagresourcemethods-canonical-property.md)
   
 [IMAPIStatus : IMAPIProp](imapistatusimapiprop.md)
 

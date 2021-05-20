@@ -17,7 +17,7 @@ ms.locfileid: "33439905"
 ---
 # <a name="isocialsessiongetloggedonuser"></a>ISocialSession::GetLoggedOnUser
 
-Ruft eine [ISocialProfile](isocialprofileisocialperson.md) -Schnittstelle ab, die den angemeldeten Benutzer darstellt. 
+Ruft eine [ISocialProfile-Schnittstelle](isocialprofileisocialperson.md) ab, die den angemeldeten Benutzer darstellt. 
   
 ```cpp
 HRESULT _stdcall GetLoggedOnUser([out, retval] ISocialProfile** result);
@@ -27,7 +27,7 @@ HRESULT _stdcall GetLoggedOnUser([out, retval] ISocialProfile** result);
 
 _result_
   
-> Out Eine **ISocialProfile** -Schnittstelle. 
+> [out] Eine **ISocialProfile-Schnittstelle.** 
     
 ## <a name="see-also"></a>Siehe auch
 

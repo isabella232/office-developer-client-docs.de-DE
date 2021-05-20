@@ -38,63 +38,63 @@ HRESULT ValidateState(
 
  _ulUIParam_
   
-> in Ein Handle für das übergeordnete Fenster aller von dieser Methode angezeigten Dialogfelder oder Fenster.
+> [in] Ein Handle zum übergeordneten Fenster aller Dialogfelder oder Fenster, die von dieser Methode angezeigt werden.
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die die Ausführung der Statusüberprüfung und die Ergebnisse der Statusüberprüfung steuert. Die folgenden Flags können festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie die Statusüberprüfung durchgeführt wird, und die Ergebnisse der Statusüberprüfung. Die folgenden Kennzeichen können festgelegt werden:
     
 ABORT_XP_HEADER_OPERATION 
   
-> Der Benutzer hat den Vorgang abgebrochen, indem er in einem Dialogfeld auf die Schaltfläche **Abbrechen** geklickt hat. Der Transportanbieter hat die Möglichkeit, weiterhin an dem Vorgang zu arbeiten, oder er kann den Vorgang abbrechen und MAPI_E_USER_CANCELED zurückgeben. 
+> Der Benutzer hat den Vorgang abgebrochen, in der Regel durch Klicken auf die **Schaltfläche** Abbrechen in einem Dialogfeld. Der Transportanbieter kann weiterhin an dem Vorgang arbeiten, oder er kann den Vorgang abbrechen und MAPI_E_USER_CANCELED. 
     
 CONFIG_CHANGED 
   
-> Überprüft den Status der derzeit geladenen Transportanbieter, indem der MAPI-Spooler die [IXPLogon:: AddressTypes](ixplogon-addresstypes.md) -Methode aufruft. Dieses Flag bietet dem MAPI-Spooler außerdem die Möglichkeit, kritische Transportanbieter Fehler zu korrigieren, ohne dass Clientanwendungen sich abmelden und dann erneut anmelden müssen. 
+> Überprüft den Status der derzeit geladenen Transportanbieter, indem der MAPI-Spooler seine [IXPLogon::AddressTypes-Methode aufruft.](ixplogon-addresstypes.md) Dieses Flag bietet dem MAPI-Spooler auch die Möglichkeit, kritische Fehler des Transportanbieters zu beheben, ohne clientanwendungen zum Abmelden und anschließenden erneuten Anmelden zu zwingen. 
     
 FORCE_XP_CONNECT 
   
-> Der Benutzer hat einen Connect-Vorgang ausgewählt. Wenn dieses Flag mit dem REFRESH_XP_HEADER_CACHE-oder PROCESS_XP_HEADER_CACHE-Flag verwendet wird, tritt die Connect-Aktion ohne Zwischenspeicherung auf.
+> Der Benutzer hat einen Verbindungsvorgang ausgewählt. Wenn dieses Flag mit dem REFRESH_XP_HEADER_CACHE- oder PROCESS_XP_HEADER_CACHE verwendet wird, erfolgt die Verbindungsaktion ohne Zwischenspeicherung.
     
 FORCE_XP_DISCONNECT 
   
-> Der Benutzer hat einen Disconnect-Vorgang ausgewählt. Wenn dieses Flag mit REFRESH_XP_HEADER_CACHE oder PROCESS_XP_HEADER_CACHE verwendet wird, tritt die Disconnect-Aktion ohne Zwischenspeicherung auf.
+> Der Benutzer hat einen Verbindungstrennungsvorgang ausgewählt. Wenn dieses Flag mit REFRESH_XP_HEADER_CACHE oder PROCESS_XP_HEADER_CACHE verwendet wird, erfolgt die Verbindungstrennungsaktion ohne Zwischenspeicherung.
     
 PROCESS_XP_HEADER_CACHE 
   
-> Einträge in der Kopfzeile-Cache-Tabelle sollten verarbeitet werden, alle Nachrichten, die mit dem MSGSTATUS_REMOTE_DOWNLOAD-Flag gekennzeichnet sind, sollten heruntergeladen werden, und alle Nachrichten, die mit dem MSGSTATUS_REMOTE_DELETE-Flag gekennzeichnet sind, sollten gelöscht werden. Nachrichten, die sowohl MSGSTATUS_REMOTE_DOWNLOAD als auch MSGSTATUS_REMOTE_DELETE festgelegt haben, sollten verschoben werden.
+> Einträge in der Kopfzeilencachetabelle sollten verarbeitet werden, alle nachrichten, die mit dem flag MSGSTATUS_REMOTE_DOWNLOAD gekennzeichnet sind, heruntergeladen werden, und alle Nachrichten, die mit dem MSGSTATUS_REMOTE_DELETE gekennzeichnet sind, sollten gelöscht werden. Nachrichten, die sowohl MSGSTATUS_REMOTE_DOWNLOAD als auch MSGSTATUS_REMOTE_DELETE festgelegt sind, sollten verschoben werden.
     
 REFRESH_XP_HEADER_CACHE 
   
-> Eine neue Liste der Nachrichtenkopfzeilen sollte heruntergeladen werden, und alle Markierungsfahnen für den Nachrichtenstatus sollten deaktiviert werden.
+> Eine neue Liste von Nachrichtenkopfzeilen sollte heruntergeladen werden, und alle Kennzeichnungskennzeichen für nachrichtenstatus sollten entfernt werden.
     
 SUPPRESS_UI 
   
-> Verhindert, dass der Transportanbieter eine Benutzeroberfläche anzeigt.
+> Verhindert, dass vom Transportanbieter eine Benutzeroberfläche angezeigt wird.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Aufruf war erfolgreich, und der erwartete Wert oder die Werte wurden zurückgegeben.
+> Der Aufruf war erfolgreich und hat den erwarteten Wert oder die erwarteten Werte zurückgegeben.
     
 MAPI_E_BUSY 
   
-> Ein anderer Vorgang wird ausgeführt; Es sollte zugelassen werden, oder es sollte beendet werden, bevor dieser Vorgang versucht wird.
+> Ein weiterer Vorgang wird ausgeführt. Sie sollte abgeschlossen sein oder beendet werden, bevor dieser Vorgang versucht wird.
     
 MAPI_E_NO_SUPPORT 
   
-> Der betroffene Remote Transportanbieter unterstützt keine Benutzeroberfläche, und die Clientanwendung selbst sollte das Dialogfeld anzeigen.
+> Der beteiligte Remotetransportanbieter unterstützt keine Benutzeroberfläche, und die Clientanwendung selbst sollte das Dialogfeld anzeigen.
     
 MAPI_E_USER_CANCEL 
   
-> Der Benutzer hat den Vorgang abgebrochen, indem er in einem Dialogfeld auf die Schaltfläche **Abbrechen** geklickt hat. 
+> Der Benutzer hat den Vorgang abgebrochen, in der Regel durch Klicken auf die **Schaltfläche** Abbrechen in einem Dialogfeld. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die MAPI-Warteschlange ruft die **IXPLogon:: ValidateState** -Methode auf, um Aufrufe der [IMAPIStatus:: ValidateState](imapistatus-validatestate.md) -Methode für das Status-Objekt zu unterstützen. Der Transportanbieter sollte auf den **IXPLogon:: ValidateState** -Aufruf genau so reagieren, als ob der MAPI-Spooler ein Status-Objekt für die aktuelle Anmeldesitzung geöffnet und dann **IMAPIStatus:: ValidateState** für dieses Objekt aufgerufen hätte. 
+Der MAPI-Spooler ruft die **IXPLogon::ValidateState-Methode** auf, um Aufrufe der [IMAPIStatus::ValidateState-Methode](imapistatus-validatestate.md) für das Statusobjekt zu unterstützen. Der Transportanbieter sollte auf den **IXPLogon::ValidateState-Aufruf** genauso reagieren, als ob der MAPI-Spooler ein Statusobjekt für die aktuelle Anmeldesitzung geöffnet und dann **IMAPIStatus::ValidateState für** dieses Objekt aufgerufen hätte. 
   
-Zur Unterstützung der Implementierung von **IMAPIStatus:: ValidateState**ruft der MAPI-Spooler **IXPLogon:: ValidateState** für alle Anmeldeobjekte für alle aktiven Transportanbieter auf, die in einer Profil Sitzung aktiv sind. 
+Zur Unterstützung der Implementierung von **IMAPIStatus::ValidateState** ruft der MAPI-Spooler **IXPLogon::ValidateState** für alle Anmeldeobjekte für alle aktiven Transportanbieter auf, die in einer Profilsitzung ausgeführt werden. 
   
 ## <a name="see-also"></a>Siehe auch
 

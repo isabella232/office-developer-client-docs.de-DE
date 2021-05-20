@@ -1,5 +1,5 @@
 ---
-title: Tipps für das Arbeiten mit Tabellen
+title: Tipps zum Arbeiten mit Tabellen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,23 +15,23 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33439737"
 ---
-# <a name="tips-for-working-with-tables"></a>Tipps für das Arbeiten mit Tabellen
+# <a name="tips-for-working-with-tables"></a>Tipps zum Arbeiten mit Tabellen
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Das Arbeiten mit einer MAPI-Tabelle ähnelt dem Arbeiten mit einer relationalen Datenbanktabelle. Ein Benutzer kann die Anzahl der Zeilen und Spalten in der Ansicht begrenzen und deren Reihenfolge angeben. Zeilen können einzeln oder in Gruppen abgerufen werden. Ein Cursor, der die aktuelle Position verfolgt, kann an eine bestimmte Stelle in der Tabelle verschoben werden. 
+Das Arbeiten mit einer MAPI-Tabelle ist ein wenig wie die Arbeit mit einer relationalen Datenbanktabelle. Ein Benutzer kann die Anzahl der Zeilen und Spalten in der Ansicht einschränken und seine Reihenfolge angeben. Zeilen können gleichzeitig oder in Gruppen abgerufen werden. Ein Cursor, der die aktuelle Position nachverfolgt, kann an eine bestimmte Stelle in der Tabelle verschoben werden. 
   
-Zum Arbeiten mit Tabellen verwenden Clients die schreibgeschützte Schnittstelle [IMAPITable: IUnknown](imapitableiunknown.md), wohingegen Dienstanbieter, je nachdem, ob Sie die Daten besitzen, auf denen die Tabelle basiert, entweder **IMAPITable** oder [ITableData: IUnknown](itabledataiunknown.md)verwenden können. Die in diesen Schnittstellen definierten Vorgänge können als Vorgänge kategorisiert werden, die von allen Benutzern von Tabellen ausgeführt oder aufgerufen werden können, und Vorgänge, die nicht so häufig verwendet werden, da Sie weiter fortgeschritten sind. Einige der erweiterten Vorgänge sind komplexer zu implementieren; andere sind nicht komplexer, sondern interessieren sich für eine kleine Gruppe von MAPI-Komponenten. 
+Zum Arbeiten mit Tabellen verwenden Clients die schreibgeschützte Schnittstelle [IMAPITable : IUnknown](imapitableiunknown.md), während Dienstanbieter je nachdem, ob sie die Daten besitzen, auf der die Tabelle basiert, **entweder IMAPITable** oder [ITableData : IUnknown](itabledataiunknown.md)verwenden können. Die in diesen Schnittstellen definierten Vorgänge können als Vorgänge kategorisiert werden, die alle Benutzer von Tabellen entweder tun oder aufrufen können, und Vorgänge, die nicht so häufig verwendet werden, weil sie fortgeschrittener sind. Einige der erweiterten Vorgänge sind komplexer zu implementieren. Andere sind nicht komplexer, aber für eine kleine Minderheit von MAPI-Komponenten von Interesse. 
   
-Die gängigeren Vorgänge sind:
+Die gängigen Vorgänge sind:
   
-- Spalten Vorgänge, die sich auf einzelne Spalten auswirken. Dazu gehören das Angeben der Eigenschaften, die in den Spaltensatz eingeschlossen werden sollen, und die Reihenfolge, in der Sie eingeschlossen werden sollen.
+- Spaltenvorgänge, die sich auf einzelne Spalten auswirken. Dazu gehören das Angeben der Eigenschaften, die in den Spaltensatz eingeschlossen werden sollen, und die Reihenfolge, in der sie eingeschlossen werden sollen.
     
-- Zeilenvorgänge, die sich auf einzelne Zeilen auswirken. Hierzu gehört der Datenabruf und die Wartungsvorgänge: Hinzufügen, löschen und Ändern einer einzelnen Zeile oder Zeilen.
+- Zeilenvorgänge, die sich auf einzelne Zeilen auswirken. Dazu gehören der Datenabruf und die Wartungsvorgänge: Hinzufügen, Löschen und Ändern einer einzelnen Zeile oder Zeile.
     
-- Globale Vorgänge, die sich auf die gesamte Tabelle auswirken. Dazu gehört die Ereignisbenachrichtigung, das Suchen und sortieren.
+- Globale Vorgänge, die sich auf die gesamte Tabelle auswirken. Dazu gehören Ereignisbenachrichtigungen, Suchen und Sortieren.
     
 ## <a name="see-also"></a>Siehe auch
 

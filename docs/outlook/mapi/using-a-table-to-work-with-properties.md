@@ -21,16 +21,16 @@ ms.locfileid: "33439912"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Viele Eigenschaften sind sowohl von den Objekten, die Sie unterstützen, als auch von Spalten in Tabellen verfügbar. Rufen Sie diese Eigenschaften nach Möglichkeit über die Tabelle ab.
+Viele Eigenschaften sind sowohl für die Objekte verfügbar, die sie unterstützen, als auch als Spalten in Tabellen. Rufen Sie diese Eigenschaften nach Möglichkeit über die Tabelle ab.
   
-Rufen Sie [IMAPITable::](imapitable-setcolumns.md) SetColumns auf, um alle Eigenschaften einzuschließen, die der Client benötigt, und [IMAPITable:: QueryRows](imapitable-queryrows.md) , um alle Zeilen der Tabelle abzurufen. 
+Rufen [Sie IMAPITable::SetColumns](imapitable-setcolumns.md) auf, um alle Eigenschaften, die Ihr Client benötigt, und [IMAPITable::QueryRows](imapitable-queryrows.md) zum Abrufen aller Zeilen der Tabelle zu verwenden. 
   
-Diese beiden Aufrufe sind in der Regel ausreichend, um genügend Informationen abzurufen, die für einen Benutzer angezeigt werden sollen, und Sie sind häufig für die erforderliche interne Verarbeitung **** ausreichend, wodurch ein Aufruf von OpenEntry zum Öffnen des Objekts erforderlich ist. 
+Diese beiden Aufrufe sind in der Regel ausreichend, um genügend Informationen zum Anzeigen für einen Benutzer zu erhalten, und sind häufig ausreichend für die erforderliche interne Verarbeitung, wodurch ein Aufruf von **OpenEntry** erfolgt, um das Objekt unnötig zu öffnen. 
   
 Es gibt nur zwei Ausnahmen:
   
-- Wenn die Eigenschaft über 255 Byte ist. Die * * IMAPITable * *-Schnittstelle gibt möglicherweise nicht den gesamten Eigenschaftswert zurück und schneidet Sie stattdessen mit 255 Byte ab. Denken Sie jedoch an diesen Kompromiss. Wenn Sie diese Daten dem Benutzer anzeigen, können 255 Byte für ein Textfeld wie einen Kommentar ausreichen. 
+- Wenn die Eigenschaft über 255 Byte ist. Die ** IMAPITable **-Schnittstelle gibt möglicherweise nicht den gesamten Eigenschaftswert zurück, sondern 255 Byte. Denken Sie jedoch an diesen Tradeoff. Wenn Sie diese Daten dem Benutzer anzeigen, reichen möglicherweise 255 Byte für ein Textfeld wie einen Kommentar aus. 
     
-- Wenn Sie eine bestimmte Eigenschaft aus einer einzelnen Zeile in einer Tabelle benötigen. In diesem Fall ist es nicht erforderlich, eine Tabelle mit Eigenschaften zu erstellen, die nie verwendet werden. In den meisten Fällen benötigen Sie die gleichen Eigenschaften für alle Zeilen.
+- Wenn Sie eine bestimmte Eigenschaft aus einer einzelnen Zeile in einer Tabelle benötigen. In diesem Fall ist es nicht erforderlich, eine Tabelle mit Eigenschaften zu erstellen, die niemals verwendet werden. Meistens benötigen Sie die gleichen Eigenschaften für alle Zeilen.
     
 

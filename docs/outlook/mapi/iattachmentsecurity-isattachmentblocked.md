@@ -25,7 +25,7 @@ ms.locfileid: "33439779"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Überprüft, ob eine angegebene Anlage von Microsoft Outlook 2010 oder Microsoft Outlook 2013 zum Anzeigen und indizieren blockiert wurde.
+Überprüft, ob eine angegebene Anlage von Microsoft Outlook 2010 oder Microsoft Outlook 2013 zum Anzeigen und Indizierung gesperrt wird.
   
 ```cpp
 HRESULT IAttachmentSecurity::IsAttachmentBlocked( 
@@ -38,11 +38,11 @@ HRESULT IAttachmentSecurity::IsAttachmentBlocked(
 
  _pwszFileName_
   
-> in Zeiger auf den Dateinamen einer Anlage.
+> [in] Zeiger auf den Dateinamen einer Anlage.
     
  _pfBlocked_
   
-> Out Zeiger auf einen Wert, der **true** angibt, wenn die angegebene Anlage blockiert ist; andernfalls **false**.
+> [out] Zeiger auf einen Wert, der **true angibt,** wenn die angegebene Anlage blockiert ist. Andernfalls **false**.
     
 ## <a name="see-also"></a>Siehe auch
 

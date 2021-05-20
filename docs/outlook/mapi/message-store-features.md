@@ -1,5 +1,5 @@
 ---
-title: Nachrichtenspeicher Features
+title: Nachrichten-Store-Features
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,33 +15,33 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33439520"
 ---
-# <a name="message-store-features"></a>Nachrichtenspeicher Features
+# <a name="message-store-features"></a>Nachrichten-Store-Features
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Nachrichtenspeicher Anbieter sind komplexer als andere MAPI-Dienstanbieter, da Nachrichtenspeicher Anbieter über eine breitere Auswahl von Features verfügen, die Sie implementieren können. Die Liste der erforderlichen Funktionen für einen Nachrichtenspeicher Anbieter ist relativ kurz. Ein typischer Nachrichtenspeicher Anbieter unterstützt jedoch eine Reihe von optionalen Features, da viele der optionalen Features für die meisten MAPI-Clients sehr nützlich oder erforderlich sind. In der folgenden Tabelle sind die wichtigsten Features aufgeführt, die von Nachrichtenspeicher Anbietern implementiert werden können, und die Angabe, ob jedes Feature für alle Nachrichtenspeicher Anbieter und für standardmäßige Nachrichtenspeicher Anbieter erforderlich oder optional ist.
+Nachrichtenspeicheranbieter sind komplexer als andere MAPI-Dienstanbieter in diesem Nachrichtenspeicheranbieter verfügen über eine größere Palette optionaler Features, die sie implementieren können. Die Liste der erforderlichen Features für einen Nachrichtenspeicheranbieter ist relativ kurz. Ein typischer Nachrichtenspeicheranbieter unterstützt jedoch eine Reihe optionaler Features, da viele der optionalen Features sehr nützlich oder für die meisten MAPI-Clients erforderlich sind. In der folgenden Tabelle sind die wichtigsten Features aufgeführt, die Nachrichtenspeicheranbieter implementieren können, und ob jedes Feature für alle Nachrichtenspeicheranbieter und für Standardnachrichtenspeicheranbieter erforderlich oder optional ist.
   
-|**Funktion**|**All**|**Standard**|
+|**Feature**|**All**|**Default**|
 |:-----|:-----|:-----|
-|Status wird mit der MAPI-Statustabelle bereitgestellt.  <br/> |Erforderlich  <br/> |Erforderlich  <br/> |
-|Implementieren von Folder-Objekten.  <br/> |Erforderlich  <br/> |Erforderlich  <br/> |
-|Implementieren von Message-Objekten.  <br/> |Erforderlich  <br/> |Erforderlich  <br/> |
+|Bereitstellen des Status mit der MAPI-Statustabelle.  <br/> |Erforderlich  <br/> |Erforderlich  <br/> |
+|Implementieren von Ordnerobjekten.  <br/> |Erforderlich  <br/> |Erforderlich  <br/> |
+|Implementieren von Nachrichtenobjekten.  <br/> |Erforderlich  <br/> |Erforderlich  <br/> |
 |Bereitstellen von Lese- und nonread Berichten.  <br/> |Erforderlich  <br/> |Erforderlich  <br/> |
-|Bereitstelleneiner Fortschritts Schnittstelle.  <br/> |Erforderlich  <br/> |Erforderlich  <br/> |
-|Bereitstelleneiner Konfigurationsschnittstelle.  <br/> |Erforderlich  <br/> |Erforderlich  <br/> |
-|Unterstützen von Tabellen für verknüpfte Inhalte für Formular-und Ansichts Unterstützung.  <br/> |Optional  <br/> |Optional  <br/> |
-|Senden von Nachrichten mit dem Nachrichtenspeicher Anbieter.  <br/> |Optional  <br/> |Erforderlich  <br/> |
-|Empfangen von Nachrichten mit dem Nachrichtenspeicher Anbieter.  <br/> |Optional  <br/> |Erforderlich  <br/> |
+|Bereitstellen einer Statusschnittstelle.  <br/> |Erforderlich  <br/> |Erforderlich  <br/> |
+|Bereitstellen einer Konfigurationsschnittstelle.  <br/> |Erforderlich  <br/> |Erforderlich  <br/> |
+|Unterstützung zugeordneter Inhaltstabellen für die Unterstützung von Formularen und Anzeigen.  <br/> |Optional  <br/> |Optional  <br/> |
+|Senden von Nachrichten mit dem Nachrichtenspeicheranbieter.  <br/> |Optional.  <br/> |Erforderlich  <br/> |
+|Empfangen von Nachrichten mit dem Nachrichtenspeicheranbieter.  <br/> |Optional.  <br/> |Erforderlich  <br/> |
 |Unterstützen von Nachrichtenanlagen.  <br/> |Optional  <br/> |Optional  <br/> |
 |Unterstützung des Rich-Text-Formats für Nachrichten.  <br/> |Optional  <br/> |Optional  <br/> |
 |Bereitstellen von Benachrichtigungen.  <br/> |Optional  <br/> |Optional  <br/> |
-|Unterstützen von Suchvorgängen.  <br/> |Optional  <br/> |Optional  <br/> |
-|Unterstützung eng gekoppelter Nachrichtenspeicher/Transportanbieter.  <br/> |Optional  <br/> |Optional  <br/> |
-|Unterstützung der nicht Wiederverwendung von Eintrags-IDs.  <br/> |Optional  <br/> |Optional  <br/> |
+|Unterstützen von Suchen.  <br/> |Optional  <br/> |Optional  <br/> |
+|Unterstützung von eng gekoppelten Nachrichtenspeicher-/Transportanbietern.  <br/> |Optional  <br/> |Optional  <br/> |
+|Unterstützung der Nichtwiederverwendung von Eintragsbezeichnern.  <br/> |Optional  <br/> |Optional  <br/> |
    
-Viele der optionalen Features können MAPI-und Clientanwendungen angekündigt werden, indem verschiedene Flags in der **PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md))-Eigenschaft des Nachrichtenspeicher Objekts festgelegt werden. Den erforderlichen Features sind keine Flags zugeordnet. **PR_STORE_SUPPORT_MASK** ist für Nachrichtenspeicher-, Ordner-und Nachrichtenobjekte erforderlich. 
+Viele der optionalen Features können MAPI- und Clientanwendungen angekündigt werden, indem sie verschiedene Flags in der PR_STORE_SUPPORT_MASK ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md)) -Eigenschaft des **Nachrichtenspeicherobjekts** festlegen. Den erforderlichen Features sind keine Kennzeichen zugeordnet. **PR_STORE_SUPPORT_MASK** für Nachrichtenspeicher, Ordner und Nachrichtenobjekte erforderlich. 
   
 ## <a name="see-also"></a>Siehe auch
 

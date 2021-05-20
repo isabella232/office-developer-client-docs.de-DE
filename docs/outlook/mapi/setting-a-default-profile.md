@@ -21,12 +21,12 @@ ms.locfileid: "33439814"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Das Standardprofil ist das Profil, das verwendet wird, wenn Sie im Aufruf von [MAPILogonEx](mapilogonex.md)nicht explizit angeben, sondern stattdessen das MAPI_USE_DEFAULT-Flag festlegen.
+Das Standardprofil ist das Profil, das verwendet wird, wenn Sie im Aufruf von [MAPILogonEx](mapilogonex.md)kein explizites Profil angeben und stattdessen das MAPI_USE_DEFAULT festlegen.
   
  **So richten Sie ein Standardprofil ein**
   
-1. Rufen Sie die [MAPIAdminProfiles](mapiadminprofiles.md) -Funktion auf, um einen **IProfAdmin** -Schnittstellenzeiger abzurufen. 
+1. Rufen Sie die [MAPIAdminProfiles-Funktion](mapiadminprofiles.md) auf, um einen **IProfAdmin-Schnittstellenzeiger** abzurufen. 
     
-2. Rufen Sie [IProfAdmin:: SetDefaultProfile](iprofadmin-setdefaultprofile.md)auf. **SetDefaultProfile** legt die **PR_DEFAULT_PROFILE** ([pidtagdefaultprofile (](pidtagdefaultprofile-canonical-property.md))-Eigenschaft für das neue Standardprofil fest und entfernt die Einstellung für das vorherige Standardprofil.
+2. Rufen [Sie IProfAdmin::SetDefaultProfile auf.](iprofadmin-setdefaultprofile.md) **SetDefaultProfile** legt die **PR_DEFAULT_PROFILE** ([PidTagDefaultProfile](pidtagdefaultprofile-canonical-property.md)) -Eigenschaft für das neue Standardprofil fest und entfernt die Einstellung für das vorherige Standardprofil.
     
 

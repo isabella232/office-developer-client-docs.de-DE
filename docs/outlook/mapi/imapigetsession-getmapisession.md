@@ -25,7 +25,7 @@ ms.locfileid: "33439611"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt einen Verweis auf die MAPI-Sitzung zurück, die dem MAPI-Unterstützungsobjekt zugeordnet ist.
+Gibt einen Zeiger auf die MAPI-Sitzung zurück, die dem MAPI-Supportobjekt zugeordnet ist.
   
 ```cpp
 HRESULT GetMAPISession(
@@ -37,7 +37,7 @@ HRESULT GetMAPISession(
 
  _lppSession_
   
-> Out Ein Zeiger auf die aktuelle MAPI-Sitzung.
+> [out] Ein Zeiger auf die aktuelle MAPI-Sitzung.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -46,5 +46,5 @@ HRESULT GetMAPISession(
 [IMAPIGetSession : IUnknown](imapigetsessioniunknown.md)
 
 
-[Übersicht über das Support Objekt](support-object-overview.md)
+[Übersicht über das Supportobjekt](support-object-overview.md)
 

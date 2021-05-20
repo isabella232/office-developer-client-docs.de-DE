@@ -25,13 +25,13 @@ ms.locfileid: "33439996"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft Attribute von Eigenschaften für ein [IMessage](imessageimapiprop.md) -Objekt ab, das von der [OpenIMsgOnIStg](openimsgonistg.md) -Funktion bereitgestellt wird. 
+Ruft Attribute von Eigenschaften für ein [IMessage-Objekt](imessageimapiprop.md) ab, das von der [OpenIMsgOnIStg-Funktion bereitgestellt](openimsgonistg.md) wird. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |IMessage. h  <br/> |
+|Headerdatei  <br/> |Imessage.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Nachrichtenspeicher Anbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Nachrichtenspeicheranbieter  <br/> |
    
 ```cpp
 HRESULT GetAttribIMsgOnIStg(
@@ -45,15 +45,15 @@ HRESULT GetAttribIMsgOnIStg(
 
  _lpObject_
   
-> in Zeiger auf ein **IMessage** -Objekt, das von der [OpenIMsgOnIStg](openimsgonistg.md) -Funktion abgerufen wurde. 
+> [in] Zeiger auf ein **IMessage-Objekt,** das von der [OpenIMsgOnIStg-Funktion erhalten](openimsgonistg.md) wurde. 
     
  _lpPropTagArray_
   
-> in Zeiger auf eine [SPropTagArray](sproptagarray.md) -Struktur, die ein Array von Property-Tags enthält, die die Eigenschaften angeben, für die Attribute abgerufen werden sollen. 
+> [in] Zeiger auf eine [SPropTagArray-Struktur,](sproptagarray.md) die ein Array von Eigenschaftstags enthält, die die Eigenschaften angeben, für die Attribute abgerufen werden sollen. 
     
  _lppPropAttrArray_
   
-> Out Zeiger auf einen Zeiger auf die zurückgegebene [SPropAttrArray](spropattrarray.md) -Struktur, die die abgerufenen Eigenschaftsattribute enthält. 
+> [out] Zeiger auf einen Zeiger auf die zurückgegebene [SPropAttrArray-Struktur,](spropattrarray.md) die die abgerufenen Eigenschaftsattribute enthält. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -63,15 +63,15 @@ S_OK
     
 MAPI_W_ERRORS_RETURNED 
   
-> Der Aufruf war insgesamt erfolgreich, aber auf eine oder mehrere Eigenschaften konnte nicht zugegriffen werden, und es wurde ein Eigenschaftentyp von PT_ERROR zurückgegeben.
+> Der Aufruf war insgesamt erfolgreich, aber auf eine oder mehrere Eigenschaften konnte nicht zugegriffen werden und wurde mit dem Eigenschaftstyp PT_ERROR.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Auf Eigenschaftsattribute kann nur über Property-Objekte zugegriffen werden, also auf Objekte, die die [IMAPIProp: IUnknown](imapipropiunknown.md) -Schnittstelle implementieren. Um MAPI-Eigenschaften für ein OLE Structured Storage-Objekt verfügbar zu machen, erstellt [OpenIMsgOnIStg](openimsgonistg.md) ein [IMessage: IMAPIProp](imessageimapiprop.md) -Objekt über dem OLE- **IStorage** -Objekt. Die Eigenschaftsattribute für solche Objekte können mit [SetAttribIMsgOnIStg](setattribimsgonistg.md) festgelegt oder geändert und mit **GetAttribIMsgOnIStg**abgerufen werden. 
+Auf Eigenschaftsattribute kann nur auf Eigenschaftsobjekte zugegriffen werden, d. h. auf Objekte, die die [IMAPIProp : IUnknown-Schnittstelle](imapipropiunknown.md) implementieren. Um MAPI-Eigenschaften für ein strukturiertes OLE-Speicherobjekt verfügbar zu machen, erstellt [OpenIMsgOnIStg](openimsgonistg.md) ein [IMessage : IMAPIProp-Objekt](imessageimapiprop.md) über dem OLE **IStorage-Objekt.** Die Eigenschaftenattribute für solche Objekte können mit [SetAttribIMsgOnIStg](setattribimsgonistg.md) festgelegt oder geändert und mit **GetAttribIMsgOnIStg abgerufen werden.** 
   
 > [!NOTE]
-> **GetAttribIMsgOnIStg** und **SetAttribIMsgOnIStg** funktionieren nicht für alle **IMessage** -Objekte. Sie sind nur für **IMessage**-on- **IStorage** -Objekte gültig, die von **OpenIMsgOnIStg**zurückgegeben werden. 
+> **GetAttribIMsgOnIStg** und **SetAttribIMsgOnIStg** funktionieren nicht für alle **IMessage-Objekte.** Sie sind nur gültig für **IMessage** **-on-IStorage-Objekte,** die von **OpenIMsgOnIStg zurückgegeben werden.** 
   
-Die Anzahl und Position der Attribute im _lppPropAttrArray_ -Parameter entsprechen der Anzahl und Position der Property-Tags im _lpPropTagArray_ -Parameter. 
+Die Anzahl und die Positionen der Attribute im _lppPropAttrArray-Parameter_ entsprechen der Anzahl und position der Eigenschaftstags im _lpPropTagArray-Parameter._ 
   
 

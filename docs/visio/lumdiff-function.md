@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 6a79f124-20a2-e119-4c58-25da99ecc555
-description: Gibt die Differenz der Leuchtkraft zwischen color1 und color2 zurück.
+description: Gibt den Unterschied in der Helligkeit zwischen Color1 und Color2 zurück.
 ms.openlocfilehash: 654ce6a92402278d8b6a6db1e03d0a6fa1f4575f
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,11 +16,11 @@ ms.locfileid: "33439744"
 ---
 # <a name="lumdiff-function"></a>LUMDIFF Function
 
-Gibt die Differenz der Leuchtkraft zwischen *color1* und *color2* zurück. 
+Gibt den Unterschied in der Helligkeit zwischen *Color1* und *Color2 zurück.* 
   
 ## <a name="syntax"></a>Syntax
 
-LUMDIFF (* * *color1* * *, * * *color2* * *) 
+LUMDIFF(** *color1* **, ** *color2* ** ) 
   
 ### <a name="parameters"></a>Parameter
 

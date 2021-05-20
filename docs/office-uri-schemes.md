@@ -140,7 +140,7 @@ Die maximale Länge für URI-Befehlsargumente beträgt 256 Zeichen für alle App
   
 ### <a name="allowed-characters-in-uri-command-arguments"></a>Zulässige Zeichen in URI-Befehlsargumenten
 
-Zugelassene URIs müssen den in RFC 3987-Internationalisierungs-Ressourcen-IDs (IRIS) vorgeschlagenen Standards entsprechen. Zeichen, die in RFC 3986 als reserviert identifiziert werden, sollten nicht Prozent codiert sein. . Dateinamen dürfen keines der folgenden Zeichen enthalten: \/:? \< \> | "oder \* .  
+Zulässige URIs müssen den in RFC 3987 - Internationalized Resource Identifiers (IRIs) - vorgeschlagenen Standards entsprechen. In RFC 3986 als reserviert aufgeführte Zeichen dürfen nicht mit Prozentzeichen codiert werden. Dateinamen dürfen die folgenden Zeichen nicht enthalten: \ / : ? \< \> | " oder \*.  
   
 ## <a name="appendix-a---uri-scheme-registration-template-for-ms-word-scheme"></a>ANHANG A - URI-SCHEMAREGISTRIERUNGSVORLAGE FÜR DAS MS-WORD-SCHEMA
 <a name="bk_addresources"> </a>
@@ -343,7 +343,7 @@ Das URI-Schema „ms-access" wird von Microsoft Office 2013 zum Aufrufen von Mic
   
 ### <a name="e-6-interoperability-considerations"></a>E-6. Überlegungen zur Interoperabilität
 
-Beachten Sie, dass der senkrechte Strich, der in dieser Spezifikation als Trennzeichen verwendet wird, nicht unter den im Abschnitt 2.2 von RFC 3986 zur potenziellen Verwendung als Trennzeichen reservierten Zeichen genannt ist. Dies geschieht absichtlich, um die Menge der Zeichen zu maximieren, die ohne Codierung mit Prozentzeichen im URI-Befehlsargument verwendet werden können. Innerhalb \<command-argument\> von Segmenten sind die in RFC 3986 reservierten Zeichen ":" und "/" Teil der Argument Daten und keine Trennzeichen und werden daher ohne Escapezeichen angegeben.
+Beachten Sie, dass der senkrechte Strich, der in dieser Spezifikation als Trennzeichen verwendet wird, nicht unter den im Abschnitt 2.2 von RFC 3986 zur potenziellen Verwendung als Trennzeichen reservierten Zeichen genannt ist. Dies geschieht absichtlich, um die Menge der Zeichen zu maximieren, die ohne Codierung mit Prozentzeichen im URI-Befehlsargument verwendet werden können. Innerhalb von Segmenten sind die reservierten RFC 3986-Zeichen ":" und "/" Teil der Argumentdaten, keine Trennzeichen, und werden daher nicht in die \<command-argument\> Landschaft einbezogen.
   
 ### <a name="e-7-security-considerations"></a>E-7. Überlegungen zur Sicherheit
 
@@ -427,7 +427,7 @@ Das URI-Schema „ms-publisher" wird von Microsoft Office 2013 zum Aufrufen von 
   
 ### <a name="g-6-interoperability-considerations"></a>G-6. Überlegungen zur Interoperabilität
 
-Beachten Sie, dass der senkrechte Strich, der in dieser Spezifikation als Trennzeichen verwendet wird, nicht unter den im Abschnitt 2.2 von RFC 3986 zur potenziellen Verwendung als Trennzeichen reservierten Zeichen genannt ist. Dies geschieht absichtlich, um die Menge der Zeichen zu maximieren, die ohne Codierung mit Prozentzeichen im URI-Befehlsargument verwendet werden können. Innerhalb \<command-argument\> von Segmenten sind die in RFC 3986 reservierten Zeichen ":" und "/" Teil der Argument Daten und keine Trennzeichen und werden daher ohne Escapezeichen angegeben.
+Beachten Sie, dass der senkrechte Strich, der in dieser Spezifikation als Trennzeichen verwendet wird, nicht unter den im Abschnitt 2.2 von RFC 3986 zur potenziellen Verwendung als Trennzeichen reservierten Zeichen genannt ist. Dies geschieht absichtlich, um die Menge der Zeichen zu maximieren, die ohne Codierung mit Prozentzeichen im URI-Befehlsargument verwendet werden können. Innerhalb von Segmenten sind die reservierten RFC 3986-Zeichen ":" und "/" Teil der Argumentdaten, keine Trennzeichen, und werden daher nicht in die \<command-argument\> Landschaft einbezogen.
   
 ### <a name="g-7-security-considerations"></a>G-7. Überlegungen zur Sicherheit
 
@@ -485,7 +485,7 @@ RFC 3987 - International Resource Identifiers (IRIs)  
     
 ### <a name="i-4-uri-scheme-semantics"></a>I-4. URI-Schemasemantik
 
-Das Schema „ms-infopath" definiert eine URI-Syntax zum Öffnen oder Erstellen eines Microsoft Infopath-Dokuments. Das Schema definiert zwei Befehle, die als Anweisungen dafür dienen, was mit dem referenzierten Dokument geschehen soll. Die Befehle sind 1) Open-for-Edit-cmd (TSV), mit dem InfoPath angewiesen wird, das Dokument beim angegebenen URI zum Bearbeiten zu öffnen; und 2) Open-for-View-cmd (OFV), mit dem InfoPath angewiesen wird, das Dokument mit dem angegebenen URI im schreibgeschützten Modus zu öffnen.
+Das Schema „ms-infopath" definiert eine URI-Syntax zum Öffnen oder Erstellen eines Microsoft Infopath-Dokuments. Das Schema definiert zwei Befehle, die als Anweisungen dafür dienen, was mit dem referenzierten Dokument geschehen soll. Die Befehle sind 1) open-for-edit-cmd (ofe), die InfoPath anweisen, das Dokument am angegebenen URI zur Bearbeitung zu öffnen. und 2) open-for-view-cmd (ofv), die InfoPath anweisen, das Dokument im angegebenen URI im schreibgeschützten Modus zu öffnen.
   
 ### <a name="i-5-applicationsprotocols-that-use-the-ms-infopath-uri-scheme"></a>I-5. Anwendungen/Protokolle, die das URI-Schema „ms-infopath" verwenden
 

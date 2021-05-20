@@ -21,18 +21,18 @@ ms.locfileid: "33439765"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine automatisierte Clientanwendung ist eine unbeaufsichtigte Anwendung, die keine Benutzeroberfläche anzeigt.
+Eine automatisierte Clientanwendung ist eine Anwendung, die unbeaufsichtigt ausgeführt wird und keine Benutzeroberfläche zeigt.
   
- Standardmäßig zeigen viele MAPI-Schnittstellenmethoden eine Benutzeroberfläche an. Alle diese Methoden verfügen über Flags, mit denen ein Client diese Anzeige zulassen oder unterdrücken kann. Obwohl MAPI davon ausgeht, dass Dienstanbieter diese Flags honorieren, gibt es einige Anbieter, die diese Erwartungen nicht immer erfüllen. Ein legitimer Grund für die Nichtanerkennung der Flags ist die Abhängigkeit des Dienstanbieters in einem anderen Dienst, der die Unterdrückung der Benutzeroberfläche nicht zulässt. Wenn Sie einen automatisierten Client entwickeln, achten Sie sorgfältig auf die von Ihnen verwendeten Dienstanbieter und deren Konfiguration. Gehen Sie nicht davon aus, dass alle Aufrufe zum unterdrücken einer Benutzeroberfläche erfolgreich ausgeführt werden. 
+ Standardmäßig zeigen viele MAPI-Schnittstellenmethoden eine Benutzeroberfläche an. Alle diese Methoden verfügen über Flags, mit denen ein Client diese Anzeige entweder zulassen oder unterdrücken kann. Obwohl MAPI erwartet, dass Dienstanbieter diese Kennzeichen erfüllen, gibt es einige Anbieter, die diese Erwartungen nicht immer erfüllen. Ein legitimer Grund dafür, dass die Kennzeichen nicht berücksichtigt werden, ist die Abhängigkeit des Dienstanbieters von einem anderen Dienst, der keine Benutzeroberflächenunterdrückung zu lässt. Wenn Sie einen automatisierten Client entwickeln, achten Sie sorgfältig auf die von Ihnen verwendeten Dienstanbieter und deren Konfiguration. Gehen Sie nicht davon aus, dass alle Aufrufe zum Unterdrücken einer Benutzeroberfläche erfolgreich sind. 
   
-Automatisierte Clients müssen über die erforderlichen Informationen für die ordnungsgemäße Konfiguration der einzelnen Nachrichtendienste im Profil verfügen. Es gibt zwei Möglichkeiten, Konfigurationsinformationen zur Anmeldezeit bereitzustellen:
+Automatisierte Clients müssen über die erforderlichen Informationen für die ordnungsgemäße Konfiguration der einzelnen Nachrichtendienste im Profil verfügen. Es gibt zwei Möglichkeiten, Konfigurationsinformationen zur Anmeldezeit zur Verfügung zu stehen:
   
 - Der Dienstanbieter kann Informationen aus dem Profil abrufen.
     
-- Der Dienstanbieter kann den Benutzer auffordern, Informationen zu erhalten. 
+- Der Dienstanbieter kann den Benutzer zur Eingabe von Informationen aufforderen. 
     
 Da die zweite Option für automatisierte Clients nicht verfügbar ist, müssen diese Clients die erste Option verwenden. Clients müssen ihre Profile sorgfältig konfigurieren, um sicherzustellen, dass diese Option immer funktioniert.
   
-Automatisierte Clients legen immer das MAPI_NO_MAIL-Flag im [MAPILogonEx](mapilogonex.md) -Funktionsaufruf fest, um eine MAPI-Sitzung zu starten. 
+Automatisierte Clients legen immer das MAPI_NO_MAIL im [MAPILogonEx-Funktionsaufruf](mapilogonex.md) ein, um eine MAPI-Sitzung zu starten. 
   
 

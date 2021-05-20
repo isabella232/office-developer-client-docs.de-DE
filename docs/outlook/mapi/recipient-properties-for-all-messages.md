@@ -1,5 +1,5 @@
 ---
-title: Empfänger Eigenschaften für alle Nachrichten
+title: Empfängereigenschaften für alle Nachrichten
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,24 +15,24 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33439716"
 ---
-# <a name="recipient-properties-for-all-messages"></a>Empfänger Eigenschaften für alle Nachrichten
+# <a name="recipient-properties-for-all-messages"></a>Empfängereigenschaften für alle Nachrichten
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die folgenden Eigenschaften sind in der Regel für alle Nachrichtenempfänger vorhanden. **PR_EMAIL_ADDRESS** und **PR_SEARCH_KEY** sind optional; alle anderen Eigenschaften sind erforderlich. 
+Die folgenden Eigenschaften sind in der Regel für alle Nachrichtenempfänger vorhanden. **PR_EMAIL_ADDRESS** und **PR_SEARCH_KEY** sind optional. alle anderen Eigenschaften sind erforderlich. 
   
 **Tabellentitel**
 
 |**Eigenschaft**|**Beschreibung**|
 |:-----|:-----|
-|**PR_ADDRTYPE** ([Pidtagaddresstype (](pidtagaddresstype-canonical-property.md))  <br/> |Enthält den e-Mail-Adresstyp des Messaging Benutzers, beispielsweise SMTP.  <br/> |
+|**PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))  <br/> |Enthält den E-Mail-Adresstyp des Messagingbenutzers, z. B. SMTP.  <br/> |
 |**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |Enthält den Anzeigenamen für ein bestimmtes MAPI-Objekt.  <br/> |
 |**PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))  <br/> |Enthält einen Wert, der zum Zuordnen eines Symbols zu einer bestimmten Zeile einer Tabelle verwendet wird.  <br/> |
-|**PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))  <br/> |Enthält die e-Mail-Adresse des Messaging Benutzers.  <br/> |
-|**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |Enthält eine MAPI-Eintrags-ID zum Öffnen und Bearbeiten der Eigenschaften eines bestimmten MAPI-Objekts.  <br/> |
-|**PR_OBJECT_TYPE** ([Pidtagobjecttype (](pidtagobjecttype-canonical-property.md))  <br/> |Enthält den Typ eines Objekts.  <br/> |
-|**PR_SEARCH_KEY** ([Pidtagsearchkey (](pidtagsearchkey-canonical-property.md))  <br/> |Enthält einen binären-vergleichbaren Schlüssel, der korrelierte Objekte für eine Suche identifiziert.  <br/> |
+|**PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))  <br/> |Enthält die E-Mail-Adresse des Messagingbenutzers.  <br/> |
+|**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |Enthält einen MAPI-Eintragsbezeichner, der zum Öffnen und Bearbeiten von Eigenschaften eines bestimmten MAPI-Objekts verwendet wird.  <br/> |
+|**PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |Enthält den Typ eines Objekts.  <br/> |
+|**PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md))  <br/> |Enthält einen binär-vergleichbaren Schlüssel, der korrelierte Objekte für eine Suche identifiziert.  <br/> |
    
 

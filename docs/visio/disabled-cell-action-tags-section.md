@@ -28,22 +28,22 @@ Gibt an, ob das Aktionstag im Zeichnungsfenster angezeigt wird.
 | TRUE  <br/> | Das Aktionstag ist deaktiviert.  <br/> |
 | FALSE  <br/> | Das Aktionstag ist aktiviert (Standardeinstellung).  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Deaktivierte Aktionstags werden erst angezeigt, wenn sie wieder aktiviert werden. 
   
-Wenn Sie einen Verweis auf die Zelle disabled aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle Disabled anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Smarttags.  *Name* . Deaktiviert, wobei SmartTags. *Name* ist der Name der Zeile mit dem Aktionstag.  <br/> |
+| Zellenname:  <br/> | SmartTags.  *Name*  . Deaktiviert, wobei SmartTags. *Name*  ist der Name der Aktionstagzeile  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle disabled aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Deaktivierte Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionSmartTag** <br/> |
-| Zeilenindex:  <br/> |**visRowSmartTag** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowSmartTag**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
 | Zellenindex:  <br/> |**visSmartTagDisabled** <br/> |
    
 

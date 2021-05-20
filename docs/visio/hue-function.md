@@ -22,7 +22,7 @@ Gibt den Wert der Farbtonkomponente einer Farbe zurück.
   
 ## <a name="syntax"></a>Syntax
 
-HUE (* * *Expression* * *) 
+HUE(** *Expression* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -32,21 +32,21 @@ HUE (* * *Expression* * *)
    
 ### <a name="return-value"></a>Rückgabewert
 
-Zahl
+Nummer
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Der zurückgegebene Wert ist eine Zahl im Bereich von 0 bis einschließlich 239. Die Eingabe ist ein Index einer Farbe aus der Farbtabelle des Dokuments, ein Ausdruck, der in eine angepasste Farbe (wie RGB oder HSL) aufgelöst wird oder ein Verweis auf eine Zelle, die einen Farbindex oder ein Farbergebnis enthält. Die Funktion gibt bei einer ungültigen Eingabe 0 zurück. 
   
 ## <a name="example-1"></a>Beispiel 1
 
-Farbton (Blatt. 4! Zelle FillForegnd
+HUE(Sheet.4! FillForegnd)
   
 Gibt den Wert der Farbtonkomponente der Vordergrundfüllfarbe von Sheet.4 zurück.
   
 ## <a name="example-2"></a>Beispiel 2
 
-FARBTON (7)
+HUE(7)
   
 Gibt 120 zurück, wenn das Dokument die Farbpalette von Microsoft Visio verwendet, wobei Zyan die Farbe mit Index 7 darstellt.
   

@@ -25,11 +25,11 @@ ms.locfileid: "33439331"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Entfernt Kontaktordner aus dem Adressbuch von Microsoft Outlook 2010 und Microsoft Outlook 2013.
+Entfernt Kontaktordner aus Microsoft Outlook 2010 und Microsoft Outlook 2013 Adressbuch.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |cabadmin. h  <br/> |
+|Headerdatei  <br/> |cabadmin.h  <br/> |
 |Verf�gbar gemacht von:  <br/> ||
 |Implementiert von:  <br/> |[IABContainer : IMAPIContainer](iabcontainerimapicontainer.md) <br/> |
 |Aufgerufen von:  <br/> |CRM  <br/> |
@@ -40,6 +40,6 @@ Entfernt Kontaktordner aus dem Adressbuch von Microsoft Outlook 2010 und Microso
 
 |||
 |:-----|:-----|
-|[IContabAdmin::RemoveStore](icontabadmin-removestore.md) <br/> |Entfernt das von der angegebenen Eintrags-ID angegebene Kontakt Adressbuch (CAB) aus der Adressbuchhierarchie.  <br/> |
+|[IContabAdmin::RemoveStore](icontabadmin-removestore.md) <br/> |Entfernt das durch die angegebene Eintrags-ID angegebene Adressbuch (Contact Address Book, CAB) aus der Adressbuchhierarchie.  <br/> |
    
 

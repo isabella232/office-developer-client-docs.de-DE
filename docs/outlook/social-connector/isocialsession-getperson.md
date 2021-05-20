@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 2d0a2945-54d7-417f-b5c6-2647c70263cf
-description: Ruft eine ISocialPerson-Schnittstelle basierend auf dem Parameter userID ab.
+description: Ruft eine ISocialPerson-Schnittstelle basierend auf dem userID-Parameter ab.
 ms.openlocfilehash: b54e39b3712fb57d89d03787f1e5fa0ff50ff84a
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -17,7 +17,7 @@ ms.locfileid: "33439821"
 ---
 # <a name="isocialsessiongetperson"></a>ISocialSession::GetPerson
 
-Ruft eine [ISocialPerson](isocialpersoniunknown.md) -Schnittstelle basierend auf dem Parameter _UserID_ ab. 
+Ruft eine [ISocialPerson-Schnittstelle](isocialpersoniunknown.md) basierend auf dem  _userID-Parameter_ ab. 
   
 ```cpp
 HRESULT _stdcall GetPerson([in] BSTR userId, [out, retval] ISocialPerson** result);
@@ -27,15 +27,15 @@ HRESULT _stdcall GetPerson([in] BSTR userId, [out, retval] ISocialPerson** resul
 
 _userId_
   
-> in Eine Zeichenfolge, die eine Benutzer-ID oder eine SMTP-Adresse einer Person enthält.
+> [in] Eine Zeichenfolge, die eine Benutzer-ID oder SMTP-Adresse einer Person enthält.
     
 _result_
   
-> Out Eine **ISocialPerson** -Schnittstelle. 
+> [out] Eine **ISocialPerson-Schnittstelle.** 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Der Parameter _UserID_ muss eine Benutzer-ID oder eine SMTP-Adresse sein. 
+Der  _parameter userID_ muss eine Benutzer-ID oder EINE SMTP-Adresse sein. 
   
 ## <a name="see-also"></a>Siehe auch
 

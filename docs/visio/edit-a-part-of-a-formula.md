@@ -35,6 +35,6 @@ ms.locfileid: "33439828"
 | Bis zum Ende markieren  <br/> | Drücken Sie UMSCHALT+ENDE.  <br/> |
 | Bis zum Anfang markieren  <br/> | Drücken Sie UMSCHALT+POS1.  <br/> |
 | Den markierten Text ersetzen  <br/> | Geben Sie den neuen Text ein.  <br/> |
-| Den markierten Text löschen  <br/> | Drücken Sie ENTF. Klicken Sie auf der Registerkarte **Start** auf Ausschneiden. ****  <br/> |
+| Den markierten Text löschen  <br/> | Drücken Sie ENTF. Oder klicken Sie **auf der Registerkarte Start** auf **Ausschneiden**.  <br/> |
    
 

@@ -1,13 +1,13 @@
 ---
-title: Behandeln von Fehlern mithilfe des InfoPath-2003-Objektmodells
+title: Behandeln von Fehlern mithilfe des InfoPath 2003-Objektmodells
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
-- InfoPath 2003-kompatible Formularvorlagen, behandeln von Fehlern, InfoPath 2003-kompatible Formularvorlagen, Fehlerbehandlung, Formularvorlagen [InfoPath 2007], Fehlerbehandlung, Fehlerbehandlung [InfoPath 2007], InfoPath 2003-kompatible Formularvorlagen
+- infopath 2003-kompatible Formularvorlagen, Behandeln von Fehlern, InfoPath 2003-kompatible Formularvorlagen, Fehlerbehandlung, Formularvorlagen [InfoPath 2007], Fehlerbehandlung,Fehlerbehandlung [InfoPath 2007], InfoPath 2003-kompatible Formularvorlagen
 localization_priority: Normal
 ms.assetid: eeb05205-d6f4-4931-b9a9-55a663bb1a25
-description: Beim Erstellen von benutzerdefinierten Anwendungen müssen Entwickler häufig Fehler behandeln, wobei auch Programmiercode geschrieben werden muss, um nach Fehlern zu suchen, die von der Anwendung ausgelöst wurden, oder um benutzerdefinierte Fehler zu erstellen und auszulösen. Das InfoPath 2003-kompatible Objektmodell unterstützt die Fehlerbehandlung durch die Verwendung des ErrorObject-Objekts in Verbindung mit der ErrorsCollection-Auflistung.
+description: Beim Erstellen von benutzerdefinierten Anwendungen müssen Entwickler häufig Fehler behandeln, wobei auch Programmiercode geschrieben werden muss, um nach Fehlern zu suchen, die von der Anwendung ausgelöst wurden, oder um benutzerdefinierte Fehler zu erstellen und auszulösen. Das InfoPath 2003-kompatible Objektmodell unterstützt die Fehlerbehandlung mithilfe des ErrorObject-Objekts in Verbindung mit der ErrorsCollection-Auflistung.
 ms.openlocfilehash: 93991e33d8867f89454bec08b41ba83e98ab0a17
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -15,11 +15,11 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33439478"
 ---
-# <a name="handle-errors-using-the-infopath-2003-object-model"></a>Behandeln von Fehlern mithilfe des InfoPath-2003-Objektmodells
+# <a name="handle-errors-using-the-infopath-2003-object-model"></a>Behandeln von Fehlern mithilfe des InfoPath 2003-Objektmodells
 
-Beim Erstellen von benutzerdefinierten Anwendungen müssen Entwickler häufig Fehler behandeln, wobei auch Programmiercode geschrieben werden muss, um nach Fehlern zu suchen, die von der Anwendung ausgelöst wurden, oder um benutzerdefinierte Fehler zu erstellen und auszulösen. Das InfoPath 2003-kompatible Objektmodell unterstützt die Fehlerbehandlung durch die Verwendung des [ErrorObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.ErrorObject.aspx) -Objekts in Verbindung mit der [ErrorsCollection](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.ErrorsCollection.aspx) -Auflistung. 
+Beim Erstellen von benutzerdefinierten Anwendungen müssen Entwickler häufig Fehler behandeln, wobei auch Programmiercode geschrieben werden muss, um nach Fehlern zu suchen, die von der Anwendung ausgelöst wurden, oder um benutzerdefinierte Fehler zu erstellen und auszulösen. Das InfoPath 2003-kompatible Objektmodell unterstützt die Fehlerbehandlung mithilfe des [ErrorObject-Objekts](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.ErrorObject.aspx) in Verbindung mit der [ErrorsCollection-Auflistung.](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.ErrorsCollection.aspx) 
   
-In InfoPath können Fehler auftreten, wenn bei Daten, die in ein Formular eingegeben werden, die XML-Schemaüberprüfung fehlschlägt, wenn eine benutzerdefinierte Validierungs Einschränkung fehlschlägt, wenn ein Fehler durch die [ReportError](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.DataDOMEvent.ReportError.aspx) -Methode des [DataDOMEventObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.DataDOMEventObject.aspx) -Objekts generiert wird oder wenn ein Fehler erstellt wird. Verwenden der [Add](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Errors.Add.aspx) -Methode der [ErrorsCollection](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.ErrorsCollection.aspx) -Auflistung. 
+In InfoPath können Fehler auftreten, wenn in ein Formular eingegebene Daten die XML-Schemaüberprüfung nicht erfolgreich sind, wenn eine benutzerdefinierte Überprüfungseinschränkung fehlschlägt, wenn ein Fehler von der [ReportError-Methode](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.DataDOMEvent.ReportError.aspx) des [DataDOMEventObject-Objekts](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.DataDOMEventObject.aspx) generiert wird oder wenn ein Fehler mit der [Add-Methode](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Errors.Add.aspx) der [ErrorsCollection-Auflistung](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.ErrorsCollection.aspx) erstellt wird. 
   
 ## <a name="overview-of-the-errorscollection-collection"></a>Übersicht über die ErrorsCollection-Auflistung
 
@@ -29,7 +29,7 @@ Die **ErrorsCollection**-Auflistung stellt die folgenden Methoden und Eigenschaf
 |:-----|:-----|
 |[Add](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Errors.Add.aspx)-Methode  <br/> |Erstellt ein **ErrorObject**-Objekt und fügt es der Auflistung hinzu.  <br/> |
 |[Delete](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Errors.Delete.aspx)-Methode  <br/> |Löscht alle **ErrorObject**-Objekte, die dem angegebenen XML-Knoten und Bedingungsnamen zugeordnet sind, mit Ausnahme von benutzerdefinierten Fehlern, die mithilfe der **ReportError**-Methode hinzugefügt wurden.  <br/> |
-|[DeleteAll](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Errors.DeleteAll.aspx) -Methode  <br/> |Löscht alle **ErrorObject**-Objekte, die in der Auflistung enthalten sind.  <br/> |
+|[DeleteAll-Methode](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Errors.DeleteAll.aspx)  <br/> |Löscht alle **ErrorObject**-Objekte, die in der Auflistung enthalten sind.  <br/> |
 |[Count](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Errors.Count.aspx)-Eigenschaft  <br/> |Ruft die Anzahl der **ErrorObject**-Objekte ab, die in der Auflistung enthalten sind.  <br/> |
 |[Item](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Errors.Item.aspx)-Eigenschaft  <br/> |Ruft einen Verweis auf ein **ErrorObject**-Objekt basierend auf der angegebenen Indexnummer ab.  <br/> |
    
@@ -39,16 +39,16 @@ Das **ErrorObject**-Objekt stellt die folgenden Eigenschaften bereit, über die 
   
 |**Name**|**Beschreibung**|
 |:-----|:-----|
-|[ConditionName](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Error.ConditionName.aspx) -Eigenschaft  <br/> |Ruft in Abhängigkeit vom Typ des **ErrorObject**-Objekts den Namen der Fehlerbedingung ab oder gibt **null** zurück.  <br/> |
-|[DetailedErrorMessage](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Error.DetailedErrorMessage.aspx) -Eigenschaft  <br/> |Ruft die ausführliche Fehlermeldung des **ErrorObject**-Objekts ab oder legt sie fest.  <br/> |
-|[ErrorCode](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Error.ErrorCode.aspx) -Eigenschaft  <br/> |Ruft den Fehlercode des **ErrorObject**-Objekts ab oder legt ihn fest.  <br/> |
-|[Node](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Error.Node.aspx) -Eigenschaft  <br/> |Ruft einen Verweis auf den XML-Knoten ab, der dem **ErrorObject**-Objekt zugeordnet ist.  <br/> |
-|[ShortErrorMessage](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Error.ShortErrorMessage.aspx) -Eigenschaft  <br/> |Ruft die kurze Fehlermeldung des **ErrorObject**-Objekts ab oder legt sie fest.  <br/> |
-|[ErrorType](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Error.ErrorType.aspx) -Eigenschaft  <br/> |Ruft den Typ des **ErrorObject**-Objekts ab.  <br/> |
+|[ConditionName-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Error.ConditionName.aspx)  <br/> |Ruft in Abhängigkeit vom Typ des **ErrorObject**-Objekts den Namen der Fehlerbedingung ab oder gibt **null** zurück.  <br/> |
+|[DetailedErrorMessage-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Error.DetailedErrorMessage.aspx)  <br/> |Ruft die ausführliche Fehlermeldung des **ErrorObject**-Objekts ab oder legt sie fest.  <br/> |
+|[ErrorCode-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Error.ErrorCode.aspx)  <br/> |Ruft den Fehlercode des **ErrorObject**-Objekts ab oder legt ihn fest.  <br/> |
+|[Node-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Error.Node.aspx)  <br/> |Ruft einen Verweis auf den XML-Knoten ab, der dem **ErrorObject**-Objekt zugeordnet ist.  <br/> |
+|[ShortErrorMessage-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Error.ShortErrorMessage.aspx)  <br/> |Ruft die kurze Fehlermeldung des **ErrorObject**-Objekts ab oder legt sie fest.  <br/> |
+|[ErrorType-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Error.ErrorType.aspx)  <br/> |Ruft den Typ des **ErrorObject**-Objekts ab.  <br/> |
    
 ## <a name="using-the-errorscollection-and-errorobject"></a>Verwenden der ErrorsCollection-Auflistung und des ErrorObject-Objekts
 
-Der **** Zugriff auf die ErrorsCollection-Auflistung erfolgt über die [Errors](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocument.Errors.aspx) -Eigenschaft des [XDocument](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XDocument.aspx) -Objekts. Die **ErrorsCollection**-Auflistung ist dem einem Formular zugrunde liegenden XML-Dokument zugeordnet; falls ein Fehler auftritt, tritt er daher innerhalb des XML-Dokuments auf. Das folgende Beispiel zeigt, wie eine in Visual C# geschriebene **foreach**-Schleife verwendet werden kann, um die Fehler zu überprüfen, die in dem einem Formular zugrunde liegenden XML-Dokument vorhanden sein könnten. Falls Fehler gefunden werden, durchläuft die Funktion jeden dieser Fehler und zeigt mithilfe der **ShortErrorMessage**-Eigenschaft des **ErrorObject**-Objekts ein Meldungsfeld für den Benutzer an. 
+Auf **die ErrorsCollection-Auflistung** wird über die [Errors-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocument.Errors.aspx) des [XDocument-Objekts](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XDocument.aspx) zugegriffen. Die **ErrorsCollection**-Auflistung ist dem einem Formular zugrunde liegenden XML-Dokument zugeordnet; falls ein Fehler auftritt, tritt er daher innerhalb des XML-Dokuments auf. Das folgende Beispiel zeigt, wie eine in Visual C# geschriebene **foreach**-Schleife verwendet werden kann, um die Fehler zu überprüfen, die in dem einem Formular zugrunde liegenden XML-Dokument vorhanden sein könnten. Falls Fehler gefunden werden, durchläuft die Funktion jeden dieser Fehler und zeigt mithilfe der **ShortErrorMessage**-Eigenschaft des **ErrorObject**-Objekts ein Meldungsfeld für den Benutzer an. 
   
 ```cs
 public void CheckErrors(IXMLDOMNode xmlNode)
@@ -62,7 +62,7 @@ public void CheckErrors(IXMLDOMNode xmlNode)
 }
 ```
 
-Die vorangegangene Funktion kann von einem der Datenüberprüfungs-Ereignishandler des Formulars aufgerufen werden. Wenn beispielsweise im [OnAfterChange](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._DataDOMEventSink_Event.OnAfterChange.aspx) -Ereignishandler für ein Feld im Formular verwendet wird, würde der Aufruf der Funktion das XML-Knoten Argument mithilfe der [Site](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.DataDOMEvent.Site.aspx) -Eigenschaft des [DataDOMEventObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.DataDOMEventObject.aspx) -Objekts wie folgt übergeben. 
+Die vorangegangene Funktion kann von einem der Datenüberprüfungs-Ereignishandler des Formulars aufgerufen werden. Wenn sie beispielsweise im [OnAfterChange-Ereignishandler](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._DataDOMEventSink_Event.OnAfterChange.aspx) für ein Feld im Formular verwendet wird, würde der Aufruf der Funktion das Argument XML-Knoten mit der [Site-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.DataDOMEvent.Site.aspx) des [DataDOMEventObject-Objekts](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.DataDOMEventObject.aspx) wie folgt übergeben. 
   
 ```cs
 CheckErrors(e.Site);

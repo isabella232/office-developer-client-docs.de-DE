@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 9148c73f-970d-61f8-b5da-e3bc748a6541
-description: Gibt eine Beziehung zu einem Webpart mit dem zugeordneten Recordset-Objekt und Datenbindungsinformationen an.
+description: Gibt eine Beziehung zu einem Teil mit den zugeordneten Recordset- und Datenbindungsinformationen an.
 ms.openlocfilehash: fa93a3cbc32b6929b159b958ef2a96eafacf204f
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
@@ -14,9 +14,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34542863"
 ---
-# <a name="rel-element-datarecordsettype-complextype-visio-xml"></a>Rel-Element (DataRecordSet_Type complexType) (Visio XML)
+# <a name="rel-element-datarecordset_type-complextype-visio-xml"></a>Rel-Element (DataRecordSet_Type complexType) (Visio XML)
 
-Gibt eine Beziehung zu einem Webpart mit dem zugeordneten Recordset-Objekt und Datenbindungsinformationen an.
+Gibt eine Beziehung zu einem Teil mit den zugeordneten Recordset- und Datenbindungsinformationen an.
   
 ## <a name="element-information"></a>Informationen zum Element
 
@@ -24,8 +24,8 @@ Gibt eine Beziehung zu einem Webpart mit dem zugeordneten Recordset-Objekt und D
 |:-----|:-----|
 |**Elementtyp** <br/> |[Rel_Type](rel_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
-|**Dokumentteile** <br/> |Pages. XML, Masters. XML, Recordsets. XML, Page #. XML, Master #. XML  <br/> |
+|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
+|**Dokumentteile** <br/> |pages.xml, masters.xml, recordsets.xml, Seite#.xml, Master#.xml  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,13 +36,13 @@ Gibt eine Beziehung zu einem Webpart mit dem zugeordneten Recordset-Objekt und D
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[DataRecordSet](datarecordset-element-datarecordsets_type-complextypevisio-xml.md) <br/> |[DataRecordSet_Type](datarecordset_type-complextypevisio-xml.md) <br/> |Gibt eine Instanz eines Recordset-Objekts und Datenbindungsinformationen an, die in der Zeichnung gespeichert sind.  <br/> |
+|[DataRecordSet](datarecordset-element-datarecordsets_type-complextypevisio-xml.md) <br/> |[DataRecordSet_Type](datarecordset_type-complextypevisio-xml.md) <br/> |Gibt eine Instanz eines Recordset- und Datenbindungsinformationen an, die in der Zeichnung gespeichert sind.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -52,12 +52,12 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|r:ID  <br/> |XSD: Zeichenfolge  <br/> Weitere Informationen finden Sie in der "Anmerkungen".  <br/> |erforderlich  <br/> |Gibt eine Beziehung zu einem Webpart an.  <br/> |"rId #"  <br/> Weitere Informationen finden Sie in der "Anmerkungen".  <br/> |
+|r:id  <br/> |xsd:string  <br/> Weitere Informationen finden Sie in der "Anmerkungen".  <br/> |erforderlich  <br/> |Gibt eine Beziehung zu einem Teil an.  <br/> |"rId#"  <br/> Weitere Informationen finden Sie in der "Anmerkungen".  <br/> |
    
 ## <a name="remarks"></a>Hinweise
 
-Der Wert des **r:ID** -Attributs muss ein **ST_RelationshipID** -Typ sein. Der **ST_RelationshipID** -Typ ist eine Zeichenfolge, die im Format "rId #" sein muss, wobei das letzte Zeichen eine Zahl sein muss. Die Zahl muss unter allen gleichgeordneten Elementen des **rel** -Elements eindeutig sein. 
+Der Wert des **r:id-Attributs** muss ein **ST_RelationshipID** sein. Der **ST_RelationshipID** ist eine Zeichenfolge im Format "rId#", wobei das letzte Zeichen eine Zahl sein muss. Die Zahl muss zwischen allen gleichgeordneten Elementen des **Rel-Elements eindeutig** sein. 
   
-Weitere Informationen zum ST_RelationshipID-Typ finden Sie in der [Spezifikation ISO/IEC 29500 Part 1](https://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.md?csnumber=61750).
+Weitere Informationen zum ST_RelationshipID finden Sie in der [SPEZIFIKATION ISO/IEC 29500 Part 1](https://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.md?csnumber=61750).
   
 

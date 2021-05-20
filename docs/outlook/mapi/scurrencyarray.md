@@ -25,11 +25,11 @@ ms.locfileid: "33439401"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von Currency-Werten, die zum Beschreiben einer Eigenschaft vom Typ PT_MV_CURRENCY verwendet werden. 
+Enthält ein Array von Währungswerten, die zum Beschreiben einer Eigenschaft vom Typ PT_MV_CURRENCY. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SCurrencyArray
@@ -40,19 +40,19 @@ typedef struct _SCurrencyArray
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cValues**
   
-> Die Anzahl der Werte im Array, auf die durch das **lpcur** -Element verwiesen wird. 
+> Anzahl der Werte im Array, auf das das **lpcur-Element verweist.** 
     
  **lpcur**
   
-> Zeiger auf ein Array von [Währungs](currency.md) Strukturen, die die Währungswerte enthalten. 
+> Zeiger auf ein Array von [CURRENCY-Strukturen,](currency.md) die die Währungswerte enthalten. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Weitere Informationen zu PT_MV_CURRENCY finden Sie unter [Liste der Eigenschaftentypen](property-types.md). 
+Weitere Informationen zu PT_MV_CURRENCY finden Sie [unter List of Property Types](property-types.md). 
   
 ## <a name="see-also"></a>Siehe auch
 

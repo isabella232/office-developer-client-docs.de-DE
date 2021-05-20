@@ -27,7 +27,7 @@ Beschreibt eine Compare-Eigenschaftseinschränkung, die zwei Eigenschaften mithi
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SComparePropsRestriction
@@ -39,43 +39,43 @@ typedef struct _SComparePropsRestriction
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
-**RelOp**
+**relop**
   
-> Relationaler Operator, der zum Vergleichen der beiden Eigenschaften verwendet werden soll. Folgende Werte sind möglich:
+> Relationaler Operator, der zum Vergleichen der beiden Eigenschaften verwendet werden soll. Mögliche Werte sind:
     
-  - RELOP_GE: der Vergleich erfolgt basierend auf einem größer oder gleich dem ersten Wert.
+  - RELOP_GE: Der Vergleich basiert auf einem höheren oder gleichen ersten Wert.
       
-  - RELOP_GT: der Vergleich erfolgt basierend auf einem höheren ersten Wert.
+  - RELOP_GT: Der Vergleich basiert auf einem größeren ersten Wert.
       
-  - RELOP_LE: der Vergleich erfolgt basierend auf einem niedrigeren oder gleichen ersten Wert.
+  - RELOP_LE: Der Vergleich basiert auf einem kleineren oder gleichen ersten Wert.
       
-  - RELOP_LT: der Vergleich erfolgt basierend auf einem niedrigeren ersten Wert.
+  - RELOP_LT: Der Vergleich basiert auf einem niedrigeren ersten Wert.
       
-  - RELOP_NE: der Vergleich erfolgt basierend auf ungleich Werten.
+  - RELOP_NE: Der Vergleich basiert auf ungleichen Werten.
       
-  - RELOP_RE: der Vergleich basiert auf LIKE (Regular Expression)-Werten.
+  - RELOP_RE: Der Vergleich wird basierend auf LIKE -Werten (regulärer Ausdruck) vorgenommen.
       
-  - RELOP_EQ: der Vergleich erfolgt basierend auf gleichen Werten.
+  - RELOP_EQ: Der Vergleich basiert auf gleichen Werten.
     
 **ulPropTag1**
   
-> Property-Tag der ersten Eigenschaft, die verglichen werden soll. 
+> Eigenschaftstag der ersten zu vergleichende Eigenschaft. 
     
 **ulPropTag2**
   
-> Property-Tag der zweiten Eigenschaft, die verglichen werden soll.
+> Eigenschaftstag der zweiten zu vergleichende Eigenschaft.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die Vergleichsreihenfolge ist _(Property Tag 1) (relationaler Operator) (Eigenschafts Tag 2)_. Die zu vergleichenden Eigenschaften müssen vom gleichen Typ sein. Der Versuch, Eigenschaften unterschiedlicher Typen zu vergleichen, bewirkt, dass MAPI oder der Dienstanbieter den Fehlerwert MAPI_E_TOO_COMPLEX aus der [IMAPITable](imapitableiunknown.md) -Methode zurückgibt, an die die Struktur als Parameter übergeben wird. 
+Die Vergleichsreihenfolge ist  _(Eigenschaftstag 1) (relationaler Operator) (Eigenschaftstag 2)_. Die zu vergleichenden Eigenschaften müssen vom gleichen Typ sein. Wenn Sie versuchen, Eigenschaften verschiedener Typen zu vergleichen, gibt MAPI oder der Dienstanbieter den Fehlerwert MAPI_E_TOO_COMPLEX aus der [IMAPITable-Methode](imapitableiunknown.md) zurück, an die die Struktur als Parameter übergeben wird. 
   
-Das Ergebnis einer Einschränkung des Compare-Eigenschaftswerts ist nicht definiert, wenn eine oder beide Eigenschaften nicht vorhanden sind. Wenn ein Client ein genau definiertes Verhalten für eine solche Einschränkung benötigt und nicht sicher ist, ob die Eigenschaft vorhanden ist (beispielsweise ist es keine erforderliche Spalte einer Tabelle), sollte es eine **und** -Einschränkung für den Join der Compare-Eigenschaftseinschränkung mit einem exist-Objekt erstellen. Einschränkung. Verwenden Sie eine [SExistRestriction](sexistrestriction.md) -Struktur, um die exist-Einschränkung und eine [SAndRestriction](sandrestriction.md) -Struktur zum Definieren der **und-** Einschränkung zu definieren. 
+Das Ergebnis einer Einschränkung des Werts einer Compare-Eigenschaft ist nicht definiert, wenn eine oder beide Eigenschaften nicht vorhanden sind. Wenn ein Client ein wohldefiniertes Verhalten für eine solche Einschränkung erfordert und nicht sicher ist, ob die Eigenschaft vorhanden ist (z. B. ist es keine erforderliche Spalte einer Tabelle), sollte er eine **AND-Einschränkung** erstellen, um die Eigenschaftseinschränkung compare mit einer vorhandenen Einschränkung zu verbinden. Verwenden Sie eine [SExistRestriction-Struktur,](sexistrestriction.md) um die exist-Einschränkung und eine [SAndRestriction-Struktur](sandrestriction.md) zu definieren, um die **AND-Einschränkung zu** definieren. 
   
-Die im **ulPropTag1** -und **ulPropTag2** -Member angegebenen Eigenschaften können mehrwertig sein, wenn der Dienstanbieter Sie unterstützt. 
+Die in den **Mitgliedern ulPropTag1** und **ulPropTag2** angegebenen Eigenschaften können mehrwertig sein, wenn der Dienstanbieter sie unterstützt. 
   
-Weitere Informationen zur **SComparePropsRestriction** -Struktur und zu Einschränkungen im Allgemeinen finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md).
+Weitere Informationen zur Struktur und Einschränkungen **von SComparePropsRestriction** im Allgemeinen finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md).
   
 ## <a name="see-also"></a>Siehe auch
 

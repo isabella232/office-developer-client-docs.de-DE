@@ -25,13 +25,13 @@ ms.locfileid: "33439758"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Konvertiert den angegebenen Teil einer Zeichenfolgendarstellung einer hexadezimalen Zahl in eine binäre Zahl. 
+Wandelt den angegebenen Teil einer Zeichenfolgendarstellung einer Hexadezimalzahl in eine binäre Zahl um. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 SCODE ScBinFromHexBounded(
@@ -43,17 +43,17 @@ SCODE ScBinFromHexBounded(
 
 ## <a name="parameters"></a>Parameter
 
- _SZ_
+ _sz_
   
-> in Zeiger auf die zu konvertierende NULL-terminierte Zeichenfolge. Gültige Zeichen sind die Hexadezimalzeichen 0 bis 9 und groß-und Kleinbuchstaben a bis f.
+> [in] Zeiger auf die zu konvertierte Zeichenfolge mit Nullen terminiert. Gültige Zeichen sind die Hexadezimalzeichen 0 bis 9 sowie Groß- und Kleinbuchstaben a bis f.
     
  _pb_
   
-> Out Zeiger auf die zurückgegebene binäre Zahl.
+> [out] Zeiger auf die zurückgegebene Binärnummer.
     
  _cb_
   
-> in Die Größe des _PB_ -Parameters in Byte. 
+> [in] Größe des pb-Parameters  in Bytes. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -63,7 +63,7 @@ S_OK
     
 MAPI_E_CALL_FAILED
   
-> Ungültige Zeichen wurden gefunden.
+> Es wurden ungültige Zeichen gefunden.
     
 ## <a name="see-also"></a>Siehe auch
 

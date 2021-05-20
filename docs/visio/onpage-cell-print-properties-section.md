@@ -22,26 +22,26 @@ Gibt an, ob die Zeichnung auf einer bestimmten Anzahl von Seiten gedruckt wird.
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|TRUE  <br/> |Das Zeichenblatt wird an eine bestimmte Anzahl von Drucker Seiten angepasst.  <br/> |
+|TRUE  <br/> |Passen Sie das Zeichenblatt an eine definierte Anzahl von Druckerseiten an.  <br/> |
 |FALSE  <br/> |Das Zeichenblatt wird nicht auf einer definierten Anzahl von Druckseiten ausgegeben (Standardwert).  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Wenn die Zelle OnPage auf WAHR festgelegt ist, bestimmt Microsoft Visio anhand der Zellen PagesX und PagesY die Anzahl der Druckseiten, auf denen die Zeichnung ausgegeben werden soll. Die Werte in den Zellen ScaleX und ScaleY werden ignoriert. Diese Einstellung ist eine AutoSkalieren-Einstellung.
   
-Dieser Wert entspricht der Option **an anpassen** auf der Register **Karte Druckeinrichtung** im Dialogfeld **Seite einrichten** (Klicken Sie auf der Registerkarte **Entwurf** auf den Pfeil für die **Seite einrichten** ). 
+Dieser Wert entspricht der Option **Anpassen** auf der  Registerkarte Druckeinrichtung im  Dialogfeld Seiteneinrichtung (klicken Sie auf der Registerkarte Entwurf auf den Pfeil **Seite einrichten).**  
   
-Wenn Sie einen Verweis auf die Zelle onPage aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle OnPage anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |OnPage  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle onPage aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Um einen Verweis auf die OnPage-Zelle nach Index aus einem Programm zu erhalten, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowPrintProperties** <br/> |
 |Zellenindex:  <br/> |**visPrintPropertiesOnPage** <br/> |
    
