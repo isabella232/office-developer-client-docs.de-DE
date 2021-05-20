@@ -22,21 +22,21 @@ Gibt den Sinus eines Winkels zurück.
   
 ## <a name="syntax"></a>Syntax
 
-SIN (* * *Angle* * *) 
+SIN(** *angle* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Winkel_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Winkel, dessen Sinus abgerufen werden soll.  <br/> |
+| _angle_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Winkel, dessen Sinus abgerufen werden soll.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
-Zahl
+Nummer
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die SIN-Funktion verwendet Radiant, es sei denn, Sie geben eine andere Maßeinheit im _Winkel_an.
+Die SIN-Funktion verwendet Bogenmaß, es sei denn, Sie geben eine andere Maßeinheit im Winkel _an._
   
 ## <a name="example"></a>Beispiel
 

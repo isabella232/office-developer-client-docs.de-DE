@@ -20,8 +20,8 @@ ms.locfileid: "33427171"
 
 Enthält eine Zeile und Zellen für jeden für das Shape definierten Steuerpunkt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Sie können Steuerpunkte im Abschnitt **Steuerelemente** im ShapeSheet-Fenster definieren. Wenn Ihre Form keinen **Steuerelement** Abschnitt hat, können Sie eine in das ShapeSheet-Fenster einfügen. Klicken Sie mit der rechten Maustaste in das ShapeSheet-Fenster, klicken Sie auf **Abschnitt einfügen**, und aktivieren Sie dann das Kontrollkästchen **Steuerelemente** . Um einem vorhandenen **Steuer** Element Steuerpunkte hinzuzufügen, klicken Sie mit der rechten Maustaste auf eine Zeile, und klicken Sie dann im kontextMenü auf **Zeile einfügen** . 
+Sie können Steuerelementziehpunkte im Abschnitt **Steuerelemente** im ShapeSheet-Fenster definieren. Wenn Ihr Shape keinen **Abschnitt Steuerelemente** enthält, können Sie einen in das ShapeSheet-Fenster einfügen. Klicken Sie mit der rechten Maustaste im ShapeSheet-Fenster auf Abschnitt **einfügen,** und aktivieren Sie dann das Kontrollkästchen **Steuerelemente.** Klicken Sie zum Hinzufügen von Steuerelementhandles zu einem vorhandenen **Abschnitt Steuerelemente** mit der rechten Maustaste auf eine Zeile, und klicken Sie im Kontextmenü **auf** Zeile einfügen. 
   
 

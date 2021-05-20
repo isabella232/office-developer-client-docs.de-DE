@@ -23,12 +23,12 @@ ms.locfileid: "33429348"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt eine benannte [SPropTagArray](sproptagarray.md) -Struktur, die eine angegebene Anzahl von Property-Tags enthält. 
+Erstellt eine benannte [SPropTagArray-Struktur,](sproptagarray.md) die eine angegebene Anzahl von Eigenschaftstags enthält. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |**SPropTagArray** <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |**SPropTagArray** <br/> |
    
 ```cpp
 SizedSPropTagArray (_ctag, _name)
@@ -36,19 +36,19 @@ SizedSPropTagArray (_ctag, _name)
 
 ## <a name="parameters"></a>Parameter
 
-__CTAG_
+_ _ctag_
   
-> Die Anzahl der Eigenschaftstags, die in die neue Struktur eingeschlossen werden sollen.
+> Anzahl der Eigenschaftstags, die in der neuen Struktur enthalten sein sollen.
     
-__Name_
+_ _name_
   
 > Name für die neue Struktur.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Verwenden Sie das **SizedSPropTagArray** -Makro, um ein Property-Tag-Array mit expliziten Begrenzungen zu erstellen. 
+Verwenden Sie **das #A0 SizedSPropTagArray,** um ein Eigenschaftentagarray mit expliziten Grenzen zu erstellen. 
   
-Um die neue Struktur zu verwenden, die aus dem **SizedSPropTagArray** -Makro als Zeiger auf eine **SPropTagArray** -Struktur resultiert, führen Sie die folgenden Schritte aus: 
+Führen Sie die folgende Gliederung aus, um die neue Struktur zu verwenden, die aus dem **#A0 als** Zeiger auf eine **SPropTagArray-Struktur** resultiert: 
   
 ```cpp
 lpPropTagArray = (LPPropTagArray) &SizedSPropTagArray;

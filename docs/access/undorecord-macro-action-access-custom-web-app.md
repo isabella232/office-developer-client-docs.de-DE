@@ -21,8 +21,8 @@ Verwirft Änderungen am aktuellen Datensatz.
 > [!IMPORTANT]
 > Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **UndoRecord** -Aktion entspricht der Verwendung der Schaltfläche **Abbrechen** in der Aktionsleiste verwerfen Änderungen. 
+Die **UndoRecord-Aktion** entspricht der Verwendung der Schaltfläche **Abbrechen** in der Aktionsleiste, um Änderungen zu verwerfen. 
   
 

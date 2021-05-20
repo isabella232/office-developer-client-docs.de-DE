@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagrecipientcertificate (-Eigenschaft
+title: PidTagRecipientCertificate (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,13 +19,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33431666"
 ---
-# <a name="pidtagrecipientcertificate-canonical-property"></a>Kanonische Pidtagrecipientcertificate (-Eigenschaft
+# <a name="pidtagrecipientcertificate-canonical-property"></a>PidTagRecipientCertificate (kanonische Eigenschaft)
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält das ASN. 1-Zertifikat eines Nachrichtenempfängers für die Verwendung in einem Bericht.
+Enthält das ASN.1-Zertifikat eines Nachrichtenempfängers zur Verwendung in einem Bericht.
   
 |||
 |:-----|:-----|
@@ -34,21 +34,21 @@ Enthält das ASN. 1-Zertifikat eines Nachrichtenempfängers für die Verwendung 
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Diese Eigenschaft ist eine Kopie der **PR_USER_CERTIFICATE** ([pidtagusercertificate (](pidtagusercertificate-canonical-property.md))-Eigenschaft des Empfängers für die Verwendung in einem Bericht. Es kann verwendet werden, um dem Absender zu beweisen, dass der Empfänger die Nachricht tatsächlich erhalten hat, die ein zugestellter Bericht nicht unbedingt anzeigt.
+Diese Eigenschaft ist eine Kopie der PR_USER_CERTIFICATE **(** [PidTagUserCertificate](pidtagusercertificate-canonical-property.md))-Eigenschaft des Empfängers zur Verwendung in einem Bericht. Sie kann verwendet werden, um dem Absender nachzuweisen, dass der Empfänger die Nachricht tatsächlich empfangen hat, was in einem Zustellungsbericht nicht notwendigerweise angegeben wird.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
-### <a name="header-files"></a>Header Dateien
+### <a name="header-files"></a>Headerdateien
 
-Mapidefs. h
+Mapidefs.h
   
-> Stellt Datentypdefinitionen bereit.
+> Bietet Datentypdefinitionen.
     
-Mapitags. h
+Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapitags. h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

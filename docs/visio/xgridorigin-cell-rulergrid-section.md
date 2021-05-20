@@ -1,5 +1,5 @@
 ---
-title: Zelle XGridOrigin Cell (Ruler &amp; Grid section)
+title: Zelle "XGridOrigin" (Abschnitt "Ruler &amp; Grid")
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -16,25 +16,25 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33428620"
 ---
-# <a name="xgridorigin-cell-ruler-amp-grid-section"></a>Zelle XGridOrigin Cell (Ruler &amp; Grid section)
+# <a name="xgridorigin-cell-ruler-amp-grid-section"></a>Zelle "XGridOrigin" (Abschnitt "Ruler &amp; Grid")
 
 Gibt die horizontale Koordinate des Gitterursprungs an.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Diese Zelle entspricht der Option horizontaler **Gitterursprung** im Dialog **Feld &amp; Lineal (Raster** ) (Klicken Sie auf der Registerkarte **Ansicht** auf den Pfeil **anzeigen** . 
+Diese Zelle entspricht der horizontalen Startoption **Raster** im  Dialogfeld **&amp; Linealraster** (klicken Sie auf der Registerkarte Ansicht auf den **Pfeil anzeigen.** 
   
-Wenn Sie einen Verweis auf die Zelle Zelle XGridOrigin aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle XGridOrigin anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Zelle XGridOrigin  <br/> |
+|Zellenname:  <br/> |XGridOrigin  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle XGridOrigin aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die XGridOrigin-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowRulerGrid** <br/> |
 |Zellenindex:  <br/> |**visXGridOrigin** <br/> |
    

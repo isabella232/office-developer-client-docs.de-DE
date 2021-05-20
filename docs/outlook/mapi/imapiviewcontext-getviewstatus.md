@@ -25,7 +25,7 @@ ms.locfileid: "33429016"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft den aktuellen viewerstatus ab. 
+Ruft den aktuellen Viewerstatus ab. 
   
 ```cpp
 HRESULT GetViewStatus(
@@ -37,11 +37,11 @@ ULONG FAR * lpulStatus
 
  _lpulStatus_
   
-> Out Zeiger auf eine Bitmaske von Flags, die den Status des Viewers bereitstellt. Die folgenden Flags können festgelegt werden:
+> [out] Zeiger auf eine Bitmaske mit Flags, die den Status des Viewers bereitstellen. Die folgenden Kennzeichen können festgelegt werden:
     
 VCSTATUS_CATEGORY 
   
-> Es gibt eine nächste oder eine vorherige Nachricht in einer anderen Kategorie. 
+> Es gibt eine nächste oder vorherige Nachricht in einer anderen Kategorie. 
     
 VCSTATUS_DELETE 
   
@@ -49,27 +49,27 @@ VCSTATUS_DELETE
     
 VCSTATUS_INTERACTIVE 
   
-> Im Formular sollte eine Benutzeroberfläche angezeigt werden. Wenn dieses Flag nicht festgelegt ist, sollte das Formular die Anzeige einer Benutzeroberfläche auch als Reaktion auf ein Verb unterdrücken, das in der Regel bewirkt, dass eine Benutzeroberfläche angezeigt wird. 
+> Das Formular sollte eine Benutzeroberfläche anzeigen. Wenn dieses Kennzeichen nicht festgelegt ist, sollte das Formular die Anzeige einer Benutzeroberfläche auch als Reaktion auf ein Verb unterdrücken, das normalerweise dazu führt, dass eine Benutzeroberfläche angezeigt wird. 
     
 VCSTATUS_MODAL 
   
-> Das Formular ist für den Viewer modal. 
+> Das Formular ist modal für den Viewer. 
     
 VCSTATUS_NEXT 
   
-> In der Ansicht wird eine nächste Nachricht angezeigt. 
+> Es gibt eine nächste Nachricht in der Ansicht. 
     
 VCSTATUS_PREV 
   
-> In der Ansicht ist eine vorherige Nachricht vorhanden. 
+> In der Ansicht befindet sich eine vorherige Nachricht. 
     
 VCSTATUS_READONLY 
   
-> Die Nachricht soll im schreibgeschützten Modus geöffnet werden. Lösch-, Sende-und Verschiebungsvorgänge sollten deaktiviert werden. 
+> Die Nachricht soll im schreibgeschützten Modus geöffnet werden. Lösch-, Absenden- und Verschiebevorgänge sollten deaktiviert sein. 
     
 VCSTATUS_UNREAD 
   
-> Es gibt eine nächste oder vorherige ungelesene Nachricht in der Ansicht.
+> In der Ansicht befindet sich eine nächste oder vorherige ungelesene Nachricht.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -77,13 +77,13 @@ S_OK
   
 > Der Status des Viewers wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Formularobjekte rufen die **IMAPIViewContext:: GetViewStatus** -Methode auf, um zu bestimmen, ob in einer Formularansicht in einer oder in beide Richtungen Weitere Nachrichten aktiviert werden sollen, die in der Richtung, in der ein **Nächster** Befehl Nachrichten aktiviert, in der Richtung, in der **** ein vorheriger Befehl Nachrichten aktiviert, oder in beide Richtungen. Der Wert, auf den durch den _lpulStatus_ -Parameter verwiesen wird, wird verwendet, um zu bestimmen, ob die VCSTATUS_NEXT-und VCSTATUS_PREV-Flags für [IMAPIViewContext:: ActivateNext](imapiviewcontext-activatenext.md)gültig sind. Wenn das VCSTATUS_DELETE-Flag festgelegt ist, aber nicht das VCSTATUS_READONLY-Flag, kann die Nachricht mithilfe der [IMAPIMessageSite::D eletemessage](imapimessagesite-deletemessage.md) -Methode gelöscht werden. 
+Form-Objekte rufen die **IMAPIViewContext::GetViewStatus-Methode** auf, um zu bestimmen, ob in einer Formularansicht mehr Nachrichten in einer oder beiden Richtungen aktiviert  werden sollen, d. h. in der Richtung, in der ein **Next-Befehl** Nachrichten aktiviert, in der Richtung, in der ein Vorheriger Befehl Nachrichten aktiviert, oder in beide Richtungen. Der Wert, auf den der _lpulStatus-Parameter_ verweist, wird verwendet, um zu bestimmen, ob die Flags VCSTATUS_NEXT und VCSTATUS_PREV für [IMAPIViewContext::ActivateNext gültig sind.](imapiviewcontext-activatenext.md) Wenn das VCSTATUS_DELETE- und nicht das VCSTATUS_READONLY-Flag festgelegt ist, kann die Nachricht mit der [IMAPIMessageSite::D eleteMessage-Methode](imapimessagesite-deletemessage.md) gelöscht werden. 
   
-In der Regel werden Menübefehle und Schaltflächen von Formularen deaktiviert, wenn Sie nicht für den Kontext des Betrachters gültig sind. Ein Betrachter kann ein Formular durch Aufrufen seiner [IMAPIFormAdviseSink:: OnChange](imapiformadvisesink-onchange.md) -Methode auf eine Änderung des Statushinweisen. 
+In der Regel deaktivieren Formulare Menübefehle und Schaltflächen, wenn sie nicht für den Kontext des Betrachters gültig sind. Ein Benutzer kann ein Formular auf eine Statusänderung aufmerksam machen, indem er seine [IMAPIFormAdviseSink::OnChange-Methode](imapiformadvisesink-onchange.md) aufruft. 
   
-Das VCSTATUS_MODAL-Flag wird festgelegt, wenn das Formular in das Fenster gebunden werden muss, dessen Handle im früheren [IMAPIForm::D overb](imapiform-doverb.md) -Aufruf übergeben wird. Wenn VCSTATUS_MODAL festgelegt ist, kann das Formular den Thread verwenden, in dem der **DoVerb** -Aufruf vorgenommen wurde, bis das Formular geschlossen wird. Wenn VCSTATUS_MODAL nicht festgelegt ist, sollte das Formular nicht in dieses Fenster gebunden sein und den Thread nicht verwenden. 
+Das VCSTATUS_MODAL wird festgelegt, wenn das Formular modal zu dem Fenster sein muss, dessen Handle im früheren [IMAPIForm::D oVerb-Aufruf](imapiform-doverb.md) übergeben wurde. Wenn VCSTATUS_MODAL festgelegt ist, kann das Formular den Thread verwenden, in dem der **DoVerb-Aufruf** ausgeführt wurde, bis das Formular geschlossen wurde. Wenn VCSTATUS_MODAL nicht festgelegt ist, sollte das Formular nicht modal zu diesem Fenster sein und den Thread nicht verwenden. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -91,7 +91,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer. cpp  <br/> |CMyMAPIFormViewer:: GetViewStatus  <br/> |MFCMAPI implementiert die **IMAPIViewContext:: GetViewStatus** -Methode in dieser Funktion.  <br/> |
+|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::GetViewStatus  <br/> |MFCMAPI implementiert die **IMAPIViewContext::GetViewStatus-Methode** in dieser Funktion.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

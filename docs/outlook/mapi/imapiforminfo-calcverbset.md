@@ -25,7 +25,7 @@ ms.locfileid: "33428781"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt einen Zeiger auf den vollständigen Satz von Verben zurück, die ein Formular verwendet.
+Gibt einen Zeiger auf den vollständigen Satz von Verben zurück, den ein Formular verwendet.
   
 ```cpp
 HRESULT CalcVerbSet(
@@ -38,15 +38,15 @@ HRESULT CalcVerbSet(
 
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die den Typ der zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die den Typ der zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
     
 MAPI_UNICODE 
   
-> Die zurückgegebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format.
+> Die zurückgegebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Zeichenfolgen im ANSI-Format.
     
  _ppMAPIVerbArray_
   
-> Out Ein Zeiger auf einen Zeiger auf die zurückgegebene [SMAPIVerbArray](smapiverbarray.md) -Struktur, die die Verben des Formulars enthält. 
+> [out] Ein Zeiger auf einen Zeiger auf die zurückgegebene [SMAPIVerbArray-Struktur,](smapiverbarray.md) die die Verben des Formulars enthält. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -56,11 +56,11 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> Entweder wurde das MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt Unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
+> Entweder wurde MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Client Anwendungen rufen die **IMAPIFormInfo:: CalcVerbSet** -Methode auf, um einen Zeiger auf die von einem Formular verwendete Verben abzurufen. In der **SMAPIVerbArray** -Struktur, die im Parameter _ppMAPIVerbArray_ zurückgegeben wird, werden die Verben in der Reihenfolge der Indexnummer zurückgegeben. jeder Verb Index wird im **lVerb** -Element gefunden. Client Anwendungen können das Verb-Array verwenden, um Menüs dynamisch zu erstellen, Schaltflächen ein-oder auszublenden usw. 
+Clientanwendungen rufen die **IMAPIFormInfo::CalcVerbSet-Methode** auf, um einen Zeiger auf die von einem Formular verwendeten Verben zu erhalten. In der **SMAPIVerbArray-Struktur,** die im _ppMAPIVerbArray-Parameter_ zurückgegeben wird, werden die Verben in der Reihenfolge der Indexnummer zurückgegeben. Der Index jedes Verbs befindet sich im **lVerb-Element.** Clientanwendungen können das Verbarray verwenden, um Menüs dynamisch zu erstellen, Schaltflächen auszublenden oder anzuzeigen und so weiter. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -68,7 +68,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MFCOutput. cpp  <br/> |_OutputFormInfo  <br/> |MFCMAPI verwendet die **IMAPIFormInfo:: CalcVerbSet** -Methode beim Schreiben der Debug-Ausgabe für Formular Informationsobjekte.  <br/> |
+|MFCOutput.cpp  <br/> |_OutputFormInfo  <br/> |MFCMAPI verwendet die **IMAPIFormInfo::CalcVerbSet-Methode** beim Schreiben der Debugausgabe für Formularinformationsobjekte.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

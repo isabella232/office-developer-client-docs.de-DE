@@ -24,14 +24,14 @@ Formatvorlagen sind benannte Sammlungen von Formatierungsattributen, die auf ein
   
 Im Gegensatz zu Shapes, auf die Sie Formatierungsattribute individuell angewendet haben, stellen Shapes mit Formatierungseinstellungen aus Formatvorlagen nicht nur die Konsistenz sicher. Sie bieten auch beim Erstellen, Verschieben, Skalieren und Drehen eine höhere Benutzerfreundlichkeit. 
   
-Das Fenster **Format-Explorer** enthält die Informationen, die Sie benötigen, um die Auswirkungen von Änderungen an Shapes besser zu verstehen. 
+Das **Fenster Stil-Explorer** enthält die Informationen, die Sie benötigen, um die Auswirkungen von Änderungen, die Sie an Shapes vornehmen, besser zu verstehen. 
   
 > [!NOTE]
 > Im ShapeSheet-Fenster schwarz formatiert angezeigte Zellenwerte sind geerbte Werte, blau formatierte Werte sind lokale Werte. 
   
 ## <a name="using-the-style-explorer-window"></a>Verwenden des Fensters "Format-Explorer"
 
-Um das Fenster **Format-Explorer** anzuzeigen und das ShapeSheet-Fenster zu aktivieren, wählen Sie auf der Registerkarte **ShapeSheet-Tools** in der Gruppe **Ansicht** die Option **Format-Explorer**aus. Das Fenster **Format-Explorer** wird standardmäßig im ShapeSheet-Fenster angedockt, es handelt sich jedoch um ein verankertes Fenster, das angedockt, unverankert oder mit anderen verfügbaren verankerten ShapeSheet-Fenstern verbunden werden kann, beispielsweise dem Fenster für die **Formel Ablaufverfolgung** . Das Fenster **Formatexplorer** enthält eine Baumstruktur aller Formatvorlagen, die in der aktuellen Zeichnung definiert sind. 
+Wenn Sie das **Fenster Style Explorer** anzeigen möchten, wählen Sie auf der  Registerkarte ShapeSheet Tools Design in der Gruppe Ansicht die Option Style Explorer aus, wenn das **ShapeSheet-Fenster** **aktiv ist.** Das **Fenster Stil-Explorer** wird standardmäßig im ShapeSheet-Fenster angedockt angezeigt, ist jedoch ein verankertes Fenster, das angedockt, gleitet oder mit anderen verfügbaren verankerten ShapeSheet-Fenstern zusammengeführt werden kann, z. B. dem **Fenster Formelablaufverfolgung.** Das Fenster **Formatexplorer** enthält eine Baumstruktur aller Formatvorlagen, die in der aktuellen Zeichnung definiert sind. 
   
 > [!NOTE]
 > Wenn Sie Informationen über eine Formatvorlage erhalten möchten, klicken Sie mit der rechten Maustaste auf die betreffende Formatvorlage im Fenster **Format-Explorer**, um das dazugehörige ShapeSheet anzuzeigen. 

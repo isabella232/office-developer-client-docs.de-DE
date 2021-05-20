@@ -25,13 +25,13 @@ ms.locfileid: "33428879"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Greift auf Ressourcen in einem Nachrichtenspeicher-Anmeldeobjekt zu.
+Accesses resources in a message store logon object.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapispi. h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Nachrichtenspeicher-Anmeldeobjekte  <br/> |
-|Implementiert von:  <br/> |Nachrichtenspeicher Anbieter  <br/> |
+|Headerdatei  <br/> |Mapispi.h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Anmeldeobjekte des Nachrichtenspeichers  <br/> |
+|Implementiert von:  <br/> |Anbieter von Nachrichtenspeichern  <br/> |
 |Aufgerufen von:  <br/> |MAPI  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMSLogon  <br/> |
 |Zeigertyp:  <br/> |LPMSLOGON  <br/> |
@@ -40,17 +40,17 @@ Greift auf Ressourcen in einem Nachrichtenspeicher-Anmeldeobjekt zu.
 
 |||
 |:-----|:-----|
-|[Getlasterroraufzurufen](imslogon-getlasterror.md) <br/> |Gibt eine [MAPIERROR](mapierror.md) -Struktur zurück, die Informationen zum letzten Fehler enthält, der für das Nachrichtenspeicherobjekt aufgetreten ist.  <br/> |
-|[Logoff](imslogon-logoff.md) <br/> |Meldet einen Nachrichtenspeicher Anbieter ab.  <br/> |
-|[OpenEntry](imslogon-openentry.md) <br/> |Öffnet ein Folder-oder Message-Objekt und gibt einen Zeiger auf das Objekt zurück, um weiteren Zugriff zu ermöglichen.  <br/> |
-|[CompareEntryIDs](imslogon-compareentryids.md) <br/> |Vergleicht zwei Eintragsbezeichner, um zu bestimmen, ob Sie auf dasselbe Objekt verweisen.  <br/> |
-|[Beraten](imslogon-advise.md) <br/> |Registriert ein Objekt bei einem Nachrichtenspeicher Anbieter für Benachrichtigungen zu Änderungen im Nachrichtenspeicher.  <br/> |
-|[Unadvise](imslogon-unadvise.md) <br/> |Entfernt die Registrierung eines Objekts für die Benachrichtigung über Änderungen am Nachrichtenspeicher, die zuvor mithilfe eines Aufrufs der **IMSLogon:: Advise** -Methode festgelegt wurden.  <br/> |
-|[OpenStatusEntry](imslogon-openstatusentry.md) <br/> |Öffnet ein Status-Objekt.  <br/> |
+|[GetLastError](imslogon-getlasterror.md) <br/> |Gibt eine [MAPIERROR-Struktur](mapierror.md) zurück, die Informationen zum letzten Fehler enthält, der für das Nachrichtenspeicherobjekt aufgetreten ist.  <br/> |
+|[Logoff](imslogon-logoff.md) <br/> |Protokolliert einen Nachrichtenspeicheranbieter.  <br/> |
+|[OpenEntry](imslogon-openentry.md) <br/> |Öffnet einen Ordner oder ein Nachrichtenobjekt und gibt einen Zeiger auf das Objekt zurück, um weiteren Zugriff zu ermöglichen.  <br/> |
+|[CompareEntryIDs](imslogon-compareentryids.md) <br/> |Vergleicht zwei Eintragsbezeichner, um zu bestimmen, ob sie auf dasselbe Objekt verweisen.  <br/> |
+|[Raten](imslogon-advise.md) <br/> |Registriert ein Objekt bei einem Nachrichtenspeicheranbieter für Benachrichtigungen über Änderungen im Nachrichtenspeicher.  <br/> |
+|[Unadvise](imslogon-unadvise.md) <br/> |Entfernt die Registrierung eines Objekts zur Benachrichtigung über Nachrichtenspeicheränderungen, die zuvor mithilfe eines Aufrufs der **IMSLogon::Advise-Methode erstellt** wurden.  <br/> |
+|[OpenStatusEntry](imslogon-openstatusentry.md) <br/> |Öffnet ein Statusobjekt.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Das Nachrichtenspeicher-Anmeldeobjekt ist der Teil eines geöffneten Nachrichtenspeicher Anbieters, der von MAPI direkt aufgerufen wird. Es gibt eine 1:1-Entsprechung zwischen dem Nachrichtenspeicher-Anmeldeobjekt, das von MAPI aufgerufen wird, und dem Nachrichtenspeicherobjekt, das von Clientanwendungen aufgerufen wird; Sie können sich die Anmelde-und Speicherobjekte als ein Objekt vorstellen, das zwei Schnittstellen verfügbar macht. Die beiden Objekte werden zusammen erstellt und gemeinsam freigegeben.
+Das Anmeldeobjekt des Nachrichtenspeichers ist Teil eines geöffneten Nachrichtenspeicheranbieters, den MAPI direkt aufruft. Es besteht eine 1:1-Entsprechung zwischen dem von MAPI aufruften Anmeldeobjekt des Nachrichtenspeichers und dem Nachrichtenspeicherobjekt, das Clientanwendungen aufrufen. Sie können sich die Anmeldung und das Speichern von Objekten als ein Objekt ausbilden, das zwei Schnittstellen verfügbar macht. Die beiden Objekte werden zusammen erstellt und gemeinsam frei.
   
 ## <a name="see-also"></a>Siehe auch
 

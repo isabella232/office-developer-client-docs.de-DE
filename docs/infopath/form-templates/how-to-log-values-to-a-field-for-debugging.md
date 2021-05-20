@@ -17,20 +17,20 @@ ms.locfileid: "33431813"
 
 Beim Debuggen einer InfoPath-Formularvorlage ist es häufig sinnvoll, Werte direkt in einem Feld des Formulars zu protokollieren, um im Verlauf einer Sitzung zum Testen des Formulars eine Aufzeichnung der Daten zum Debugging zu erstellen. Nachfolgend wird erklärt, wie Sie ein mehrzeiliges Feld erstellen und anschließend dem Formularcode Hilfsfunktionen hinzufügen können, um das Protokollieren von Daten für das Debugging zu ermöglichen.
   
-## <a name="create-a-multi-line-text-field"></a>Erstellen eines mehrzeiligen Textfelds
+## <a name="create-a-multi-line-text-field"></a>Erstellen eines mehrzeilenigen Textfelds
 
 1. Fügen Sie dem Formular ein Steuerelement vom Typ **Textfeld** hinzu, und ändern Sie dessen Größe so, dass mehrere Zeilen angezeigt werden. 
     
 2. Klicken Sie mit der rechten Maustaste auf **Textfeldeigenschaften**, und aktivieren Sie anschließend auf der Registerkarte **Anzeige** das Kontrollkästchen **Mehrzeilig**. 
     
-## <a name="add-helper-functions-to-log-debug-information-to-the-field"></a>Hinzufügen von Hilfsfunktionen zum Protokollieren von Debuginformationen für das Feld
+## <a name="add-helper-functions-to-log-debug-information-to-the-field"></a>Hinzufügen von Hilfsfunktionen zum Protokollieren von Debuginformationen zum Feld
 
 1. Klicken Sie auf der Registerkarte **Entwicklertools** auf **Code-Editor**, und speichern Sie anschließend nach Aufforderung die Formularvorlage.
     
 2. Fügen Sie im Code-Editor der öffentlichen Klasse in der Formularcodedatei die folgenden drei Hilfsfunktionen hinzu.
     
    > [!IMPORTANT]
-   > Stellen Sie sicher, dass Sie den Wert, der `debugFieldXpath` für die Variable `AddToDebugField` in der-Funktion festgelegt ist, auf den korrekten XPath-Ausdruck für das Feld aktualisieren, das an das Steuerelement gebunden ist, das Sie im ersten Verfahren erstellt haben. 
+   > Stellen Sie sicher, dass Sie den für die Variable in der Funktion festgelegten Wert auf den richtigen XPath-Ausdruck für das Feld aktualisieren, das an das Steuerelement gebunden ist, das Sie im ersten Verfahren  `debugFieldXpath`  `AddToDebugField` erstellt haben. 
   
     ```cs
         private void AddToDebugField(string valueToAdd)
@@ -76,7 +76,7 @@ Beim Debuggen einer InfoPath-Formularvorlage ist es häufig sinnvoll, Werte dire
     ```
 
 > [!NOTE] 
-> Bei Verwendung von Visual Basic fügen `Imports Microsoft.VisualBasic.Constants` Sie den Direktiven am Anfang der Formular Codedatei hinzu. 
+> Wenn Sie Visual Basic, fügen Sie den Direktiven oben in der `Imports Microsoft.VisualBasic.Constants` Formularcodedatei hinzu. 
   
 ## <a name="test-the-addtodebugfield-function"></a>Testen der AddToDebugField-Funktion
 
@@ -102,6 +102,6 @@ Beim Debuggen einer InfoPath-Formularvorlage ist es häufig sinnvoll, Werte dire
 
 3. Klicken Sie auf der Registerkarte **Start** auf **Vorschau**.
     
-   Im Feld für das Debugging müssen zwei Einträge angezeigt werden: einer zur Angabe, dass das Formular geladen wurde, und ein zweiter zur Angabe des Namens der Ansicht. In diesen Beispielen werden Ereignishandler für Ereignisse verwendet, die beim Öffnen des Formulars erfolgen. Nachdem das Formular geladen wurde, können Sie die `AddToDebugField` Funktion zusätzlich zu anderen Code, der im Kontext des Formulars läuft, auch von anderen Ereignishandlern aufrufen. 
+   Im Feld für das Debugging müssen zwei Einträge angezeigt werden: einer zur Angabe, dass das Formular geladen wurde, und ein zweiter zur Angabe des Namens der Ansicht. In diesen Beispielen werden Ereignishandler für Ereignisse verwendet, die beim Öffnen des Formulars erfolgen. Nachdem das Formular geladen wurde, können Sie die Funktion jedoch zusätzlich zu jedem anderen Code, der im Kontext des Formulars ausgeführt wird, von anderen  `AddToDebugField` Ereignishandlern aufrufen. 
   
 

@@ -40,47 +40,47 @@ HRESULT CreateProvider(
 
  _lpszProvider_
   
-> in Ein Zeiger auf den Namen des hinzuzufügenden Anbieters.
+> [in] Ein Zeiger auf den Namen des hinzuzufügende Anbieters.
     
  _cValues_
   
-> in Die Anzahl der Eigenschaftswerte, auf die durch den _lpProps_ -Parameter verwiesen wird. 
+> [in] Die Anzahl der Eigenschaftswerte, auf die der  _lpProps-Parameter_ verweist. 
     
  _lpProps_
   
-> in Ein Zeiger auf ein Eigenschafts Wertarray, das die Eigenschaften des hinzuzufügenden Anbieters beschreibt.
+> [in] Ein Zeiger auf ein Eigenschaftenwertarray, das die Eigenschaften des hinzuzufügenden Anbieters beschreibt.
     
  _ulUIParam_
   
-> in Ein Handle für das übergeordnete Fenster aller Dialogfelder oder Fenster, die diese Methode anzeigt. Der _ulUIParam_ -Parameter wird verwendet, wenn das MAPI_DIALOG-Flag im _ulFlags_ -Parameter festgelegt ist. 
+> [in] Ein Handle zum übergeordneten Fenster aller Dialogfelder oder Fenster, die diese Methode anzeigt. Der  _ulUIParam-Parameter_ wird verwendet, wenn MAPI_DIALOG im  _ulFlags-Parameter festgelegt_ ist. 
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die das Hinzufügen des Anbieters steuert. Die folgenden Flags können festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die die Anbieter-Addition steuert. Die folgenden Kennzeichen können festgelegt werden:
     
-  - MAPI_DIALOG: zeigt ein Dialog Feld an, in dem Sie nach Konfigurationsinformationen gefragt werden.
+  - MAPI_DIALOG: Zeigt ein Dialogfeld an, in dem Konfigurationsinformationen angezeigt werden.
       
-  - MAPI_UNICODE: der Anbietername und die Zeichenfolgeneigenschaften sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, sind diese Zeichenfolgen im ANSI-Format.
+  - MAPI_UNICODE: Der Anbietername und die Zeichenfolgeneigenschaften sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, sind diese Zeichenfolgen im ANSI-Format.
     
  _lpUID_
   
-> Out Ein Zeiger auf die [MAPIUID](mapiuid.md) -Struktur, die den eindeutigen Bezeichner enthält, der den hinzuzufügenden Anbieter darstellt. 
+> [out] Ein Zeiger auf die [MAPIUID-Struktur,](mapiuid.md) die den eindeutigen Bezeichner enthält, der den hinzuzufügenden Anbieter darstellt. 
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Anbieter wurde dem Nachrichtendienst erfolgreich hinzugefügt.
+> Der Anbieter wurde erfolgreich dem Nachrichtendienst hinzugefügt.
     
 MAPI_E_USER_CANCEL 
   
-> Der Benutzer hat den Vorgang abgebrochen, indem er in einem Dialogfeld auf die Schaltfläche **Abbrechen** geklickt hat. 
+> Der Benutzer hat den Vorgang abgebrochen, in der Regel durch Klicken auf die **Schaltfläche** Abbrechen in einem Dialogfeld. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Mit der **IProviderAdmin:: CreateProvider** -Methode wird dem Nachrichtendienst ein Dienstanbieter hinzugefügt. Der Parameter _lpszProvider_ muss auf den Namen eines Anbieters verweisen, der zum Nachrichtendienst gehört. **CreateProvider** überprüft nicht, ob der Name mit dem Namen eines Anbieters im Dienst übereinstimmt. Wenn der übergebene Name nicht mit einem Dienstnamen übereinstimmt, ist der Aufruf erfolgreich, aber die Ergebnisse sind unvorhersehbar. Bei den meisten Nachrichtendiensten können Anbieter nicht hinzugefügt oder gelöscht werden, während das Profil verwendet wird. 
+Die **IProviderAdmin::CreateProvider-Methode** fügt dem Nachrichtendienst einen Dienstanbieter hinzu. Der  _lpszProvider-Parameter_ muss auf den Namen eines Anbieters verweisen, der zum Nachrichtendienst gehört. **CreateProvider** überprüft nicht, ob der Name dem Namen eines Anbieters im Dienst entspricht. Wenn der übergebene Name nicht mit einem Dienstnamen übereinstimmen, ist der Aufruf erfolgreich, die Ergebnisse sind jedoch unvorhersehbar. Die meisten Nachrichtendienste ermöglichen das Hinzufügen oder Löschen von Anbietern während der Verwendung des Profils nicht. 
   
-Nachdem alle verfügbaren Informationen zum Dienstanbieter aus der Datei MAPISVC. inf zum Profil hinzugefügt wurden, ruft **CreateProvider** die Einstiegspunktfunktion des Nachrichtendiensts auf, wobei der Parameter _ulContext_ auf MSG_SERVICE_ festgelegt ist. PROVIDER_CREATE. Wenn MAPI_DIALOG im _ulFlags_ -Parameter **** der CreateProvider-Methode festgelegt ist, werden die Werte in den Parametern _ulUIParam_ und _ulFlags_ auch an die Einstiegspunktfunktion übergeben. Diese zusätzlichen Parameter ermöglichen es dem Dienstanbieter, sein Eigenschaftenblatt anzuzeigen, damit der Benutzerkonfigurationseinstellungen eingeben kann. 
+Nachdem alle verfügbaren Informationen zum Dienstanbieter dem Profil aus der Datei Mapisvc.inf hinzugefügt wurden, ruft **CreateProvider** die Einstiegspunktfunktion des Nachrichtendiensts auf, und der  _ulContext-Parameter_ ist auf MSG_SERVICE_PROVIDER_CREATE. Wenn MAPI_DIALOG im _ulFlags-Parameter_ der **CreateProvider-Methode** festgelegt ist, werden die Werte in den Parametern _ulUIParam_ und _ulFlags_ ebenfalls an die Einstiegspunktfunktion übergeben. Mit diesen zusätzlichen Parametern kann der Dienstanbieter sein Eigenschaftenblatt anzeigen, damit der Benutzer Konfigurationseinstellungen eingeben kann. 
   
 ## <a name="see-also"></a>Siehe auch
 

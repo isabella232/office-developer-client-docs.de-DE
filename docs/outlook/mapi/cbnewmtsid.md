@@ -25,12 +25,12 @@ ms.locfileid: "33428102"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl der Bytes, die für eine neue [MTSID](mtsid.md) -Struktur mit einem Nachrichtenübermittlungs-Agent-Bezeichner einer angegebenen Größe zugeordnet werden sollen. 
+Berechnet die Anzahl der Bytes, die für eine neue [MTSID-Struktur](mtsid.md) mit einer Nachrichtenübertragungs-Agent-ID einer angegebenen Größe zugewiesen werden sollen. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |**MTSID** <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |**MTSID** <br/> |
    
 ```cpp
 CbNewMTSID (_cb)
@@ -38,9 +38,9 @@ CbNewMTSID (_cb)
 
 ## <a name="parameters"></a>Parameter
 
- __CB_
+ _ _cb_
   
-> Die Anzahl der Bytes für die ID des Nachrichtenübermittlungs-Agents, die in die neue **MTSID** -Struktur eingeschlossen werden soll. 
+> Anzahl der Bytes für die Id des Nachrichtenübertragungs-Agents, die in die neue **MTSID-Struktur eingeschlossen werden** soll. 
     
 ## <a name="see-also"></a>Siehe auch
 

@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - xlGetName
 keywords:
-- xlgetname-Funktion [Excel 2007]
+- xlgetname-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: 72dbebc0-7436-4771-8fbf-2b445341da65
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -22,7 +22,7 @@ ms.locfileid: "33430588"
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Gibt den vollständigen Pfad und den Dateinamen der DLL in Form einer Zeichenfolge zurück.
+Gibt den vollständigen Pfad und Dateinamen der DLL in Form einer Zeichenfolge zurück.
   
 ```cs
 Excel12(xlGetName, LPXLOPER12 pxRes, 0);
@@ -34,7 +34,7 @@ Diese Funktion hat keine Argumente.
   
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-Gibt den Pfad und den Dateinamen (**xltypeStr**) zurück. 
+Gibt den Pfad und dateinamen (**xltypeStr**) zurück. 
   
 ## <a name="example"></a>Beispiel
 

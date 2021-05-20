@@ -26,22 +26,22 @@ Legt den im Dialogfeld **Seite einrichten** ausgewählten Zeichnungsmaßstab fes
 | 1  <br/> | Architekturmaßstab  <br/> |**visArchitectural** <br/> |
 | 2  <br/> | Tiefbaumaßstab  <br/> |**visEngineering** <br/> |
 | 3  <br/> | Benutzerdefinierter Maßstab  <br/> |**visScaleCustom** <br/> |
-| 4  <br/> | Metrik  <br/> |**visScaleMetric** <br/> |
-| 5  <br/> | Maschinenbaumaßstab  <br/> |**visScaleMechanical** <br/> |
+| 4   <br/> | Metrik  <br/> |**visScaleMetric** <br/> |
+| 5   <br/> | Maschinenbaumaßstab  <br/> |**visScaleChanal** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle "DrawingScaleType aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle DrawingScaleType anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | "DrawingScaleType  <br/> |
+| Zellenname:  <br/> | DrawingScaleType  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle "DrawingScaleType aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die DrawingScaleType-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowPage** <br/> |
 | Zellenindex:  <br/> |**visPageDrawScaleType** <br/> |
    

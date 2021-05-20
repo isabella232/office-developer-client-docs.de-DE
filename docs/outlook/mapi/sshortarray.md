@@ -25,11 +25,11 @@ ms.locfileid: "33429614"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von Ganzzahlwerten ohne Vorzeichen, die zum Beschreiben einer Eigenschaft vom Typ PT_MV_SHORT verwendet werden.
+Enthält ein Array nicht signierter ganzzahliger Werte, die zum Beschreiben einer Eigenschaft vom Typ PT_MV_SHORT.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SShortArray
@@ -40,19 +40,19 @@ typedef struct _SShortArray
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cValues**
   
-> Die Anzahl der Werte im Array, auf die durch das **LPI** -Element verwiesen wird. 
+> Anzahl der Werte im Array, auf die das **lpi-Element verweist.** 
     
- **LPI**
+ **lpi**
   
-> Zeiger auf ein Array von Ganzzahlwerten ohne Vorzeichen.
+> Zeiger auf ein Array nicht signierter ganzzahliger Werte.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Weitere Informationen zu PT_MV_SHORT und anderen Eigenschaftstypen finden Sie unter [Property Types](property-types.md). 
+Weitere Informationen zu PT_MV_SHORT und anderen Eigenschaftentypen finden Sie unter [Property Types](property-types.md). 
   
 ## <a name="see-also"></a>Siehe auch
 

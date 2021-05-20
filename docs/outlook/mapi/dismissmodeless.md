@@ -25,13 +25,13 @@ ms.locfileid: "33428186"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Definiert eine Rückruffunktion, die von MAPI aufgerufen wird, wenn ein Dialogfeld für nicht modale Adressbücher geschlossen wurde. 
+Definiert eine Rückruffunktion, die MAPI aufruft, wenn sie ein Dialogfeld für ein modusloses Adressbuch verworfen hat. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Definierte Funktion, implementiert von:  <br/> |Client Anwendungen  <br/> |
-|Definierte Funktion, aufgerufen von:  <br/> |MAPI  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Definierte Funktion implementiert von:  <br/> |Clientanwendungen  <br/> |
+|Definierte Funktion, die von:  <br/> |MAPI  <br/> |
    
 ```cpp
 void (STDMETHODCALLTYPE DISMISSMODELESS)(
@@ -44,19 +44,19 @@ void (STDMETHODCALLTYPE DISMISSMODELESS)(
 
  _ulUIParam_
   
-> in Ein implementierungsspezifischer Wert, der normalerweise zum Übergeben von Benutzeroberflächeninformationen an eine Funktion verwendet wird. In Microsoft Windows ist dieser Parameter beispielsweise das übergeordnete Fensterhandle für das Dialogfeld und vom Typ HWND und wird in einen **ULONG_PTR**umgewandelt. Der Wert 0 (null) gibt an, dass kein übergeordnetes Fenster vorhanden ist. 
+> [in] Ein implementierungsspezifischer Wert, der in der Regel zum Übergeben von Benutzeroberflächeninformationen an eine Funktion verwendet wird. In Microsoft Windows ist dieser Parameter beispielsweise das übergeordnete Fensterhandle für das Dialogfeld und hat den Typ HWND, wird in ein **ULONG_PTR.** Der Wert Null gibt an, dass kein übergeordnetes Fenster besteht. 
     
  _lpvContext_
   
-> in Zeiger auf einen beliebigen Wert, der beim Aufrufen von MAPI an die Rückruffunktion übergeben wird. Dieser Wert kann eine für die Clientanwendung bedeutsame Adresse darstellen. Für C++-Code ist _LpvContext_ in der Regel ein Zeiger auf die Adresse einer c++-Objektinstanz. 
+> [in] Zeiger auf einen beliebigen Wert, der an die Rückruffunktion übergeben wird, wenn MAPI ihn aufruft. Dieser Wert kann eine Für die Clientanwendung wichtige Adresse darstellen. In der Regel ist  _lpvContext_ für C++-Code ein Zeiger auf die Adresse einer C++-Objektinstanz. 
     
 ## <a name="return-value"></a>Rückgabewert
 
 Keine
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn die Clientanwendung ein nicht modales Adressbuch-Dialogfeld aufruft, enthält es in der Windows-Meldungsschleife einen Aufruf an eine auf dem [ACCELERATEABSDI](accelerateabsdi.md) -Prototyp basierende Funktion, die Zugriffstasten überprüft und verarbeitet. Wenn das Dialogfeld geschlossen ist, ruft MAPI die **DISMISSMODELESS** -basierte Funktion auf, sodass die Clientanwendung den Aufruf der **ACCELERATEABSDI** -basierten Funktion beendet. 
+Wenn die Clientanwendung ein Dialogfeld ohne Adressbuch aufruft, enthält sie in der Windows-Nachrichtenschleife einen Aufruf einer Funktion basierend auf dem [ACCELERATEABSDI-Prototyp,](accelerateabsdi.md) der nach Zugriffstasten sucht und diese verarbeitet. Wenn das Dialogfeld geschlossen wird, ruft MAPI die **DISMISSMODELESS-basierte** Funktion auf, sodass die Clientanwendung den Aufruf der **ACCELERATEABSDI-basierten** Funktion beendet. 
   
 ## <a name="see-also"></a>Siehe auch
 

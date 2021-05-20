@@ -1,5 +1,5 @@
 ---
-title: Implementieren einer einmaligen Anbieter Tabelle
+title: Implementieren eines Anbieters One-Off Tabelle
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,42 +15,42 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33436293"
 ---
-# <a name="implementing-a-provider-one-off-table"></a>Implementieren einer einmaligen Anbieter Tabelle
+# <a name="implementing-a-provider-one-off-table"></a>Implementieren eines Anbieters One-Off Tabelle
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPI Ruft die [IABLogon:: GetOneOffTable](iablogon-getoneofftable.md) -Methode Ihres Anbieters auf, wenn der Benutzer einer Clientanwendung einer ausgehenden Nachricht einen Empfänger hinzufügt. In der Regel sind die angeforderten Adresstypen für Ihr Messagingsystem eindeutig. Wenn Ihr Anbieter die Empfänger Erstellung unterstützt, muss er eine einmalige Tabelle bereitstellen, die Vorlagen für alle unterstützten Empfängeradressen verfügbar macht. Wenn Ihr Anbieter die Empfänger Erstellung nicht unterstützt, geben Sie MAPI_E_NO_SUPPORT aus dem **GetOneOffTable** -Aufruf zurück. 
+MAPI ruft die [IABLogon::GetOneOffTable-Methode](iablogon-getoneofftable.md) Ihres Anbieters auf, wenn der Benutzer einer Clientanwendung einer ausgehenden Nachricht einen Empfänger hinzufügt. In der Regel sind die angeforderten Adresstypen für Ihr Messagingsystem eindeutig. Wenn Ihr Anbieter die Erstellung von Empfängern unterstützt, muss er eine einzelne Tabelle angeben, in der Vorlagen für jeden Typ unterstützter Empfängeradressen verfügbar gemacht werden. Wenn Ihr Anbieter die Erstellung von Empfängern nicht unterstützt, geben MAPI_E_NO_SUPPORT vom **GetOneOffTable-Aufruf** zurück. 
   
-In der Regel wird die einmalige Tabelle Ihres Anbieters für die gesamte Lebensdauer der Sitzung geöffnet, und Sie wird nur dann freigegeben, wenn ein Client die [IMAPIStatus:: ValidateState](imapistatus-validatestate.md) -Methode des Subsystems oder des Adressbuchs aufruft. MAPI registriert für Benachrichtigungen in dieser Tabelle, sodass diese Änderungen für den Benutzer reflektiert werden können, wenn Vorlagen hinzugefügt oder gelöscht werden. 
+MAPI hält in der Regel die einmal geöffnete Tabelle Ihres Anbieters für die Lebensdauer der Sitzung offen und gibt sie nur frei, wenn ein Client die [IMAPIStatus::ValidateState-Methode](imapistatus-validatestate.md) des Subsystems oder adressbuchs aufruft. MAPI registriert sich für Benachrichtigungen in dieser Tabelle, sodass beim Hinzufügen oder Löschen von Vorlagen diese Änderungen für den Benutzer widerspiegelt werden können. 
   
- **So implementieren Sie IABLogon:: GetOneOffTable**
+ **So implementieren Sie IABLogon::GetOneOffTable**
   
-1. Überprüfen Sie den Wert des flags-Parameters _ulFlags_. Wenn das MAPI_UNICODE-Flag festgelegt ist und Ihr Anbieter Unicode nicht unterstützt, schlagen Sie fehl und geben MAPI_E_BAD_CHARWIDTH zurück. 
+1. Überprüfen Sie den Wert des Flags-Parameters  _ulFlags_. Wenn das MAPI_UNICODE festgelegt ist und Ihr Anbieter Unicode nicht unterstützt, führen Sie einen Fehler aus, und geben Sie MAPI_E_BAD_CHARWIDTH. 
     
-2. Überprüfen Sie, ob die einmalige Tabelle Ihres Anbieters bereits erstellt wurde. Da einmalige Tabellen in der Regel statisch sind, muss Ihr Anbieter den Erstellungsprozess nie mehr als einmal durchlaufen. Wenn bereits eine Tabelle vorhanden ist, geben Sie einen Zeiger darauf zurück. 
+2. Überprüfen Sie, ob die einmal erstellte Tabelle Ihres Anbieters bereits erstellt wurde. Da die Tabellen in der Regel statisch sind, muss Ihr Anbieter den Erstellungsprozess niemals mehr als einmal durchgehen. Wenn bereits eine Tabelle vorhanden ist, geben Sie einen Zeiger auf sie zurück. 
     
-3. Wenn noch keine einmalige Tabelle vorhanden ist, rufen Sie **Create** Table auf, um eine zu erstellen. 
+3. Wenn noch keine einzige Tabelle vorhanden ist, rufen Sie **CreateTable auf,** um eine zu erstellen. 
     
-4. Legen Sie die folgenden Eigenschaften für die Spalten in den Tabellenzeilen fest:
+4. Legen Sie die folgenden Eigenschaften für die Spalten in den Tabellenzeilen ein:
     
-  - **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) an den Namen des Empfängertyps, der von der Vorlage erstellt werden kann. 
+  - **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) auf den Namen des Empfängertyps, den die Vorlage erstellen kann. 
     
-  - **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) an die Eintrags-ID für die einmalige Vorlage.
+  - **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) zur Eintrags-ID für die einmal vorlage.
     
-  - **PR_DEPTH** ([Pidtagdepth (](pidtagdepth-canonical-property.md)), um die Hierarchieebene in der einmaligen Tabellenanzeige anzugeben.
+  - **PR_DEPTH** ([PidTagDepth](pidtagdepth-canonical-property.md)) zum Angeben der Hierarchieebene in der Tabellenanzeige.
     
-  - **PR_SELECTABLE** ([Pidtagselectable (](pidtagselectable-canonical-property.md)) auf true, um anzugeben, ob die Zeile eine Vorlage darstellt, andernfalls false.
+  - **PR_SELECTABLE** ([PidTagSelectable](pidtagselectable-canonical-property.md)) auf TRUE, um anzugeben, ob die Zeile eine Vorlage und andernfalls FALSE darstellt.
     
-  - **PR_ADDRTYPE** ([Pidtagaddresstype (](pidtagaddresstype-canonical-property.md)) an den Typ der von der Vorlage erstellten Adresse.
+  - **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) auf den Von der Vorlage erstellten Adresstyp an.
     
-  - **PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md)) an DT_MAILUSER oder einen anderen Wert, der den Anzeigetyp für die Vorlage angibt.
+  - **PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md)) auf DT_MAILUSER oder einen anderen Wert, der den Anzeigetyp für die Vorlage angibt.
     
-  - **PR_INSTANCE_KEY** ([Pidtaginstancekey (](pidtaginstancekey-canonical-property.md)) an einen eindeutigen Binärwert. 
+  - **PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md)) auf einen eindeutigen binären Wert. 
     
-5. Rufen Sie [ITableData:: HrModifyRow](itabledata-hrmodifyrow.md) auf, um die Tabelle direkt zu ändern. 
+5. Rufen [Sie ITableData::HrModifyRow auf,](itabledata-hrmodifyrow.md) um die Tabelle direkt zu ändern. 
     
-6. Rufen Sie [ITableData:: HrGetView](itabledata-hrgetview.md) auf, um eine **IMAPITable** -Schnittstellenimplementierung zum zurückkehren zum Aufrufer zu erstellen. 
+6. Rufen [Sie ITableData::HrGetView auf,](itabledata-hrgetview.md) um eine **IMAPITable-Schnittstellenimplementierung** zu erstellen, um zum Aufrufer zurückzukehren. 
     
 

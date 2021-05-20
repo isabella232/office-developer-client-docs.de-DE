@@ -1,5 +1,5 @@
 ---
-title: Unterstützen des Objektzugriffs und-Vergleichs
+title: Unterstützen des Objektzugriffs und -vergleichs
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,25 +15,25 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33429033"
 ---
-# <a name="supporting-object-access-and-comparison"></a>Unterstützen des Objektzugriffs und-Vergleichs
+# <a name="supporting-object-access-and-comparison"></a>Unterstützen des Objektzugriffs und -vergleichs
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Dienstanbieter können die [IMAPISupport:: OpenEntry](imapisupport-openentry.md) -und [IMAPISupport:: CompareEntryIDs](imapisupport-compareentryids.md) -Methoden verwenden, um Objekte zu öffnen und zu vergleichen, die zu Ihrem Anbieter oder anderen Anbietern gehören: 
+Dienstanbieter können die [Methoden IMAPISupport::OpenEntry](imapisupport-openentry.md) und [IMAPISupport::CompareEntryIDs](imapisupport-compareentryids.md) verwenden, um Objekte zu öffnen und zu vergleichen, die zu ihrem Anbieter oder zu anderen Anbietern gehören: 
   
-Wie [IMAPISession:: OpenEntry](imapisession-openentry.md) für Clients können Anbieter die OpenEntry-Methode Ihres **** Support-Objekts verwenden, um auf ein Objekt zuzugreifen, solange Sie die Eintrags-ID des Objekts kennen. Im Gegensatz zur Session-Methode erfordert die Support-Methode, dass Sie eine gültige Eintrags-ID im _lpEntryID_ -Parameter angeben. Er darf nicht NULL sein. 
+Wie [IMAPISession::OpenEntry](imapisession-openentry.md) für Clients können Anbieter die **OpenEntry-Methode** ihres Supportobjekts verwenden, um auf jedes Objekt zu zugreifen, solange sie den Eintragsbezeichner des Objekts kennen. Im Gegensatz zur Sitzungsmethode erfordert die Supportmethode, dass Sie einen gültigen Eintragsbezeichner im  _lpEntryID-Parameter_ angeben. Es kann nicht NULL sein. 
   
-Um zu veranschaulichen, wie ein Transportanbieter **IMAPISupport:: OpenEntry**verwenden kann, betrachten Sie das folgende Szenario. Der Transportanbieter hat eine Nachricht im Rich-Text-Format erhalten und weiß nicht, ob der Zielempfänger dieses Format verarbeiten kann. Vor der Übermittlung der Nachricht muss der Transportanbieter folgende Schritte ausführen:
+Um zu veranschaulichen, wie ein Transportanbieter **IMAPISupport::OpenEntry** verwenden kann, sollten Sie das folgende Szenario berücksichtigen. Der Transportanbieter hat eine Im Rich-Text-Format formatierte Nachricht empfangen und weiß nicht, ob der Zielempfänger dieses Format verarbeiten kann. Vor dem Senden der Nachricht muss der Transportanbieter die folgenden Schritte tun:
   
-1. Rufen Sie die [IMessage::](imessage-getrecipienttable.md) getrecipientable-Methode der Nachricht auf, um auf die Empfängertabelle und die Eintrags-ID des Empfängers, seine **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))-Eigenschaft zuzugreifen.
+1. Rufen Sie die [IMessage::GetRecipientTable-Methode](imessage-getrecipienttable.md) der Nachricht auf, um auf die Empfängertabelle und die Eintrags-ID des Empfängers zu zugreifen, deren **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) -Eigenschaft.
     
-2. Führen Sie die Eintrags-ID an **IMAPISupport:: OpenEntry** , um den Empfänger zu öffnen, in der Regel entweder ein Messaging-Benutzer oder eine Verteilerliste. Der _lpInterface_ -Parameter sollte auf NULL festgelegt werden, da der Anbieter den Objekttyp des Empfängers nicht vorzeitig kennen kann. Die openEntry- **** Methode des Support-Objekts ruft [IMAPISession:: OpenEntry](imapisession-openentry.md) auf, um den für den Empfänger Verantwortlichen Adressbuchanbieter zu bestimmen. Das Session-Objekt ruft dann die entsprechende openEntry- **** Methode des Adressbuch Anbieters auf, um den Empfänger zu öffnen und einen Schnittstellenzeiger an den Transportanbieter zurückzugeben. 
+2. Übergeben Sie die Eintrags-ID **an IMAPISupport::OpenEntry,** um den Empfänger zu öffnen, in der Regel entweder einen Messagingbenutzer oder eine Verteilerliste. Der  _lpInterface-Parameter_ sollte auf NULL festgelegt werden, da der Anbieter den Objekttyp des Empfängers nicht im Voraus kennen kann. Die **OpenEntry-Methode des Supportobjekts** ruft [IMAPISession::OpenEntry auf,](imapisession-openentry.md) um den Adressbuchanbieter zu ermitteln, der für den Empfänger verantwortlich ist. Das Sitzungsobjekt ruft dann die **OpenEntry-Methode** des entsprechenden Adressbuchanbieters auf, um den Empfänger zu öffnen und einen Schnittstellenzeiger an den Transportanbieter zurückzukehren. 
     
-3. Rufen Sie die [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode des Empfängers auf, um die zugehörige **PR_SEND_RICH_INFO** ([pidtagsendrichinfo (](pidtagsendrichinfo-canonical-property.md))-Eigenschaft abzurufen. Wenn **PR_SEND_RICH_INFO** auf true festgelegt ist, kann der Empfänger formatierten Text verarbeiten. 
+3. Rufen Sie die [IMAPIProp::GetProps-Methode](imapiprop-getprops.md) des Empfängers auf, um die **PR_SEND_RICH_INFO** ([PidTagSendRichInfo](pidtagsendrichinfo-canonical-property.md)) abzurufen. Wenn **PR_SEND_RICH_INFO** true festgelegt ist, kann der Empfänger formatierten Text verarbeiten. 
     
-Wenn Sie mehrere Objekte von anderen Anbietern geöffnet haben, müssen Sie möglicherweise herausfinden, ob zwei Eintragsbezeichner auf dasselbe Objekt verweisen. Sie können beispielsweise eine kurzfristige Eintrags-ID und eine langfristige Eintrags-ID haben, und diese Bezeichner können das gleiche Objekt nicht identifizieren. Um eine redundante Verarbeitung zu vermeiden, rufen Sie die [IMAPISupport:: CompareEntryIDs](imapisupport-compareentryids.md) -Methode auf, um diese Eintragsbezeichner zu vergleichen. Sie müssen diese Methode für den Vergleich der Eintragsbezeichner verwenden, da Eintragsbezeichner nicht direkt verglichen werden können. 
+Wenn Sie mehrere Objekte von anderen Anbietern geöffnet haben, müssen Sie möglicherweise herausfinden, ob zwei Eintragsbezeichner auf dasselbe Objekt verweisen. Beispielsweise verfügen Sie möglicherweise über einen kurzfristigen Eintragsbezeichner und einen langfristigen Eintragsbezeichner, und diese Bezeichner können dasselbe Objekt identifizieren oder nicht. Um eine redundante Verarbeitung zu vermeiden, rufen Sie die [IMAPISupport::CompareEntryIDs-Methode](imapisupport-compareentryids.md) auf, um diese Eintragsbezeichner zu vergleichen. Sie müssen diese Methode für den Eintragsbezeichnervergleich verwenden, da Eintragsbezeichner nicht direkt verglichen werden können. 
   
 ## <a name="see-also"></a>Siehe auch
 

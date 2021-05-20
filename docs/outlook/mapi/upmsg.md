@@ -19,7 +19,7 @@ ms.locfileid: "33427269"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Informationen zum Hochladen eines Outlook-Elements während des [Upload-Nachrichtenstatus](upload-message-state.md).
+Informationen zum Hochladen eines Outlook element während des [Status der Uploadnachricht](upload-message-state.md).
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -42,79 +42,79 @@ struct UPMSG
 
  _ulFlags_
   
-> [out]/[in] Flags zum Bestimmen des geeigneten Verhaltens während des Uploads. 
+> [out]/[in] Flags, um das entsprechende Verhalten während des Uploads zu bestimmen. 
     
   - UPM_ASSOC
     
-    - Out Element zugeordnet ist.
+    - [out] Element ist zugeordnet.
     
   - UPM_NEW
     
-    - Out Neues Element. 
+    - [out] Neues Element. 
     
   - UPM_MOV
     
-    - Out Das Element wurde hierhin verschoben.
+    - [out] Element wurde hier verschoben.
     
   - UPM_MOD_PROPS
     
-    - Out Elementeigenschaften wurden geändert.
+    - [out] Elementeigenschaften wurden geändert.
     
   - UPM_HEADER
     
-    - Out Item ist eine Nachrichtenkopfzeile.
+    - [out] Element ist eine Nachrichtenkopfzeile.
     
   - UPM_OK
     
-    - in Der Upload war erfolgreich. Der Client legt dies nach dem Hochladen von Informationen auf den Server fest.
+    - [in] Hochladen war erfolgreich. Der Client legt dies nach dem Hochladen von Informationen auf den Server fest.
     
   - UPM_MOVED
     
-    - in Das Element wurde erfolgreich verschoben.
+    - [in] Element wurde erfolgreich verschoben.
     
   - UPM_COMMIT
     
-    - in Commit-Uploadstatus jetzt.
+    - [in] Commit-Uploadstatus jetzt.
     
   - UPM_DELETE
     
-    - in Element jetzt löschen.
+    - [in] Element jetzt löschen.
     
   - UPM_SAVE
     
-    - in Speichert die Änderungen am Element.
+    - [in] Speichern Sie Änderungen am Element.
     
 _pmsg_
   
-> Out Open Item-Objekt. Weitere Informationen finden Sie unter mapidefs. h für die Typdefinition von **LPMESSAGE**. 
+> [out] Öffnen Sie das Elementobjekt. Die Typdefinition von **LPMESSAGE** finden Sie unter mapidefs.h. 
     
-_MEID_
+_meid_
   
-> Out Eintrags-ID des Elements.
+> [out] Eintrags-ID des Elements.
     
 _binReserved1_
   
-> in Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
+> [in] Dieses Mitglied ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
     
 _binReserved2_
   
-> in Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
+> [in] Dieses Mitglied ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
     
 _feid_
   
-> Out Eintrags-ID des Quellordners, wenn item verschoben wurde.
+> [out] Eintrags-ID des Quellordners, wenn das Element verschoben wurde.
     
 _binChg_
   
-> Out Ändern des Schlüssels des Zielelements, wenn das Element verschoben wurde. Weitere Informationen finden Sie unter mapidefs. h für die Typdefinition von **SBinary**. 
+> [out] Ändern Sie den Schlüssel des Zielelements, wenn das Element verschoben wurde. Die Typdefinition von **SBinary** finden Sie unter mapidefs.h. 
     
 _binPcl_
   
-> Out Ändern Sie die Liste des Zielelements, wenn das Element verschoben wurde. Weitere Informationen finden Sie unter mapidefs. h für die Typdefinition von **SBinary**. 
+> [out] Ändern der Liste des Zielelements, wenn das Element verschoben wurde. Die Typdefinition von **SBinary** finden Sie unter mapidefs.h. 
     
 _skeySrc_
   
-> Out Quellschlüssel des Quellelements, wenn das Element verschoben wurde.
+> [out] Quellschlüssel des Quellelements, wenn das Element verschoben wurde.
     
 ## <a name="see-also"></a>Siehe auch
 

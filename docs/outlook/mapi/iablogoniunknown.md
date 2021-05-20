@@ -25,12 +25,12 @@ ms.locfileid: "33431078"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Greift auf Ressourcen in einem Adressbuchanbieter zu.
+Zugriff auf Ressourcen in einem Adressbuchanbieter.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapispi. h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Adressbuch-Anmeldeobjekte  <br/> |
+|Headerdatei  <br/> |Mapispi.h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Adressbuchanmeldeobjekte  <br/> |
 |Implementiert von:  <br/> |Adressbuchanbieter  <br/> |
 |Aufgerufen von:  <br/> |MAPI  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IABLogon  <br/> |
@@ -40,20 +40,20 @@ Greift auf Ressourcen in einem Adressbuchanbieter zu.
 
 |||
 |:-----|:-----|
-|[Getlasterroraufzurufen](iablogon-getlasterror.md) <br/> |Gibt eine [MAPIERROR](mapierror.md) -Struktur zurück, die Informationen zum vorherigen Fehler des Adressbuch Anbieters enthält.  <br/> |
-|[Logoff](iablogon-logoff.md) <br/> |Initiiert den ABMELDEPROZESS.  <br/> |
+|[GetLastError](iablogon-getlasterror.md) <br/> |Gibt eine [MAPIERROR-Struktur](mapierror.md) zurück, die Informationen zum vorherigen Adressbuchanbieterfehler enthält.  <br/> |
+|[Logoff](iablogon-logoff.md) <br/> |Initiiert den Abmeldevorgang.  <br/> |
 |[OpenEntry](iablogon-openentry.md) <br/> |Öffnet einen Container, einen Messagingbenutzer oder eine Verteilerliste und gibt einen Zeiger auf eine Schnittstellenimplementierung zurück, um weiteren Zugriff zu ermöglichen.  <br/> |
-|[CompareEntryIDs](iablogon-compareentryids.md) <br/> |Vergleicht zwei Eintragsbezeichner, um zu bestimmen, ob Sie auf dasselbe Objekt verweisen.  <br/> |
-|[Beraten](iablogon-advise.md) <br/> |Registriert den Anrufer so, dass er Benachrichtigungen über angegebene Ereignisse erhält, die sich auf einen Container, einen Messagingbenutzer oder eine Verteilerliste auswirken.  <br/> |
-|[Unadvise](iablogon-unadvise.md) <br/> |Bricht Benachrichtigungen ab, die zuvor mit einem Aufruf der **Advise** -Methode eingerichtet wurden.  <br/> |
-|[OpenStatusEntry](iablogon-openstatusentry.md) <br/> |Öffnet das Status-Objekt des Anbieters.  <br/> |
-|[OpenTemplate-Nr.](iablogon-opentemplateid.md) <br/> |Öffnet einen Empfängereintrag mit Daten, die sich in einem Host-Adressbuchanbieter befinden.  <br/> |
-|[GetOneOffTable](iablogon-getoneofftable.md) <br/> |Gibt eine Tabelle mit einmaligen Vorlagen zum Erstellen von Empfängern zurück, die der Empfängerliste einer ausgehenden Nachricht hinzugefügt werden sollen.  <br/> |
+|[CompareEntryIDs](iablogon-compareentryids.md) <br/> |Vergleicht zwei Eintragsbezeichner, um zu bestimmen, ob sie auf dasselbe Objekt verweisen.  <br/> |
+|[Raten](iablogon-advise.md) <br/> |Registriert den Anrufer, um Benachrichtigungen über angegebene Ereignisse zu erhalten, die sich auf einen Container, einen Messagingbenutzer oder eine Verteilerliste auswirken.  <br/> |
+|[Unadvise](iablogon-unadvise.md) <br/> |Benachrichtigungen, die zuvor mit einem Aufruf der **Advise-Methode eingerichtet wurden,** werden abgebrochen.  <br/> |
+|[OpenStatusEntry](iablogon-openstatusentry.md) <br/> |Öffnet das Statusobjekt des Anbieters.  <br/> |
+|[OpenTemplateID](iablogon-opentemplateid.md) <br/> |Öffnet einen Empfängereintrag mit Daten in einem Host-Adressbuchanbieter.  <br/> |
+|[GetOneOffTable](iablogon-getoneofftable.md) <br/> |Gibt eine Tabelle mit einmal erstellten Vorlagen zum Erstellen von Empfängern zurück, die der Empfängerliste einer ausgehenden Nachricht hinzugefügt werden sollen.  <br/> |
 |[PrepareRecips](iablogon-preparerecips.md) <br/> |Bereitet eine Empfängerliste für die spätere Verwendung durch das Messagingsystem vor.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Allgemeine Informationen zu den Methoden der **IABLogon** -Schnittstelle finden Sie unter [Implementieren der Dienstanbieter Anmeldung](implementing-service-provider-logon.md).
+Allgemeine Informationen zu den Methoden der **IABLogon-Schnittstelle** finden Sie unter [Implementing Service Provider Logon](implementing-service-provider-logon.md).
   
 ## <a name="see-also"></a>Siehe auch
 

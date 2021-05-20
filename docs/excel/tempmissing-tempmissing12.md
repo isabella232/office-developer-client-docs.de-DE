@@ -8,7 +8,7 @@ f1_keywords:
 - TempMissing
 - TempMissing12
 keywords:
-- tempmissing-Funktion [Excel 2007], TempMissing12-Funktion [Excel 2007]
+- tempmissing function [excel 2007],TempMissing12 function [Excel 2007]
 localization_priority: Normal
 ms.assetid: d9cb6afc-1fbb-45d6-88e5-84eba3af3c60
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -23,7 +23,7 @@ ms.locfileid: "33435957"
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Framework-Bibliotheksfunktion, die eine temporäre **XLOPER**/ -**XLOPER12** vom Typ **xltypeMissing**erstellt.
+Frameworkbibliotheksfunktion, die eine temporäre **XLOPER** /  **XLOPER12 vom** Typ **xltypeMissing erstellt.**
   
 ```cs
 LPXLOPER TempMissing(void);
@@ -36,11 +36,11 @@ Diese Funktion verwendet keine Parameter.
   
 ## <a name="return-value"></a>Rückgabewert
 
-Gibt einen Zeiger auf eine **xltypeMissing** **XLOPER**/ **XLOPER12**zurück.
+Gibt einen Zeiger auf **xltypeMissing** **XLOPER** /  **XLOPER12 zurück.**
   
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird **TempMissing12** verwendet, um drei fehlende Argumente für **xlcWorkspace** gefolgt von einem **booleschen Wert** **false** bereitzustellen, um die Anzeige von Arbeitsblatt-Bildlaufleisten zu unterdrücken. Die ersten drei Argumente entsprechen anderen Arbeitsbereichseinstellungen, die nicht betroffen sind. 
+In diesem Beispiel wird **TempMissing12** verwendet, um **xlcWorkspace** drei fehlende Argumente zu geben, gefolgt von **einem Boolean** **FALSE,** um die Anzeige von Arbeitsblatt-Bildlaufleisten zu unterdrücken. Die ersten drei Argumente entsprechen anderen Arbeitsbereichseinstellungen, die nicht betroffen sind. 
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   

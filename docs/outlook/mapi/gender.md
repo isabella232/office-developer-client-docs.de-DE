@@ -21,7 +21,7 @@ ms.locfileid: "33428648"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt die möglichen Werte für das Geschlecht eines Messaging Benutzers an.
+Gibt die möglichen Werte für das Geschlecht eines Messagingbenutzers an.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -41,11 +41,11 @@ enum Gender {
 
  _genderMin_
   
-> Die Mindestanzahl von unterschiedlichen Werten, die für das Geschlecht unterstützt werden.
+> Die Mindestanzahl unterschiedlicher Werte, die für das Geschlecht unterstützt werden.
     
  _genderUnspecified_
   
-> Das Geschlecht ist für den Messagingbenutzer nicht angegeben.
+> Das Geschlecht wird für den Messagingbenutzer nicht angegeben.
     
  _genderFemale_
   
@@ -53,19 +53,19 @@ enum Gender {
     
  _genderMale_
   
-> Der Messaging-Benutzer ist männlich.
+> Der Messagingbenutzer ist männlich.
     
  _genderCount_
   
-> Die Anzahl der unterstützten Werte für das Geschlecht.
+> Die Anzahl der verschiedenen Werte, die für das Geschlecht unterstützt werden.
     
  _genderMax_
   
-> Die maximale Anzahl unterschiedlicher Werte für das Geschlecht.
+> Die maximale Anzahl unterschiedlicher Werte, die für das Geschlecht unterstützt werden.
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Kanonische Pidtaggender (-Eigenschaft](pidtaggender-canonical-property.md)
+[PidTagGender (kanonische Eigenschaft)](pidtaggender-canonical-property.md)
 

@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - xlStack
 keywords:
-- xlstack-Funktion [Excel 2007]
+- xlstack-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: f9f030e8-1ec9-4cbf-92e1-360526260916
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -22,7 +22,7 @@ ms.locfileid: "33429979"
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Überprüft den Abstand im Stapel.
+Überprüft den Speicherplatz, der auf dem Stapel bleibt.
   
 ```cs
 Excel12(xlStack, LPXLOPER12 pxRes, 0);
@@ -34,21 +34,21 @@ Diese Funktion verwendet keine Parameter.
   
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-Gibt die Anzahl von Bytes (**xltypeInt**) zurück, die auf dem Stapel verbleiben.
+Gibt die Anzahl der Bytes (**xltypeInt**) zurück, die auf dem Stapel bleiben.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die Menge des verfügbaren Stapelspeichers der letzten Versionen überschreitet die 16-Bit-Ganzzahl mit Vorzeichen des **XLOPER**. Dies führt dazu, dass **xlStack** einen Wert zwischen-32767 und 32768 zurückgeben kann, wenn Sie mit **XLOPER**s und **Excel4** oder **Excel4v**aufgerufen werden. Wenn Sie in diesem Fall den richtigen Wert abrufen möchten, müssen Sie den zurückgegebenen Wert in einen unsigned Short umwandeln.
+Die Menge des verfügbaren Stapelspeichers der letzten Versionen überläuft die 16-Bit-signierte ganze Zahl der **XLOPER**. Dies bedeutet, **dass xlStack** einen Wert zwischen -32767 und 32768 zurückgeben kann, wenn er mithilfe von **XLOPER** s und **Excel4** oder **Excel4v** aufgerufen wird. Um in diesem Fall den richtigen Wert zu erhalten, müssen Sie den zurückgegebenen Wert in eine nicht signierte Short umgedumst haben.
   
-Ab Excel 2007 sollten Sie diese Funktion mit **XLOPER12**s und **Excel12** oder **Excel12v**aufrufen, in diesem Fall ist der zurückgegebene Wert Menge des verfügbaren Stapelspeichers oder 64 KB, je nachdem, welcher kleiner ist.
+Ab Excel 2007 sollten Sie diese Funktion mithilfe von **XLOPER12** s und **Excel12** oder **Excel12v** aufrufen, in diesem Fall ist der zurückgegebene Wert der verfügbare Stapelspeicher oder 64 KB, unabhängig davon, welcher Wert kleiner ist.
   
-Excel weist nur begrenzten Speicherplatz auf dem Stapel auf, und Sie sollten diesen Speicherplatz nicht überschreiten. Legen Sie keine sehr großen Datenstrukturen auf den Stapel, und stellen Sie so viele lokale Variablen wie möglich statisch dar. Vermeiden Sie das Aufrufen von Funktionen rekursiv, da dadurch schnell der Stapel aufgefüllt wird.
+Excel verfügt über einen begrenzten Speicherplatz auf dem Stapel, und Sie sollten darauf achten, diesen Speicherplatz nicht zu überziehen. Legen Sie niemals sehr große Datenstrukturen auf den Stapel, und legen Sie so viele lokale Variablen wie möglich statisch fest. Vermeiden Sie rekursives Aufrufen von Funktionen, da dadurch der Stapel schnell auffüllt wird.
   
-Wenn Sie vermuten, dass Sie den Stapel überlaufen haben, rufen Sie diese Funktion häufig auf, um zu sehen, wie viel Stapelplatz noch übrig ist.
+Wenn Sie vermuten, dass Sie den Stapel überlaufen, rufen Sie diese Funktion häufig auf, um zu sehen, wie viel Stapelspeicherplatz übrig bleibt.
   
 ## <a name="example"></a>Beispiel
 
-Im ersten Beispiel wird eine Warnmeldung mit der Menge des linken Stapelspeichers angezeigt, die `\SAMPLES\EXAMPLE\EXAMPLE.C`in enthalten ist. Im zweiten Beispiel wird die gleiche Funktion mit **XLOPER**s ausgeführt und ist nicht im SDK-Beispielcode enthalten.
+Im ersten Beispiel wird eine Benachrichtigung angezeigt, die die Menge an Stapelspeicherplatz enthält, die in enthalten  `\SAMPLES\EXAMPLE\EXAMPLE.C` ist. Im zweiten Beispiel wird dasselbe Beispiel verwendet, das **mit XLOPER** s arbeitet und nicht im SDK-Beispielcode enthalten ist.
   
 ```cs
 short WINAPI xlStackExample(void)

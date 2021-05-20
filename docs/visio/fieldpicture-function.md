@@ -22,7 +22,7 @@ Gibt eine Zeichenfolge zum Formatieren von Bildern zurück, die dem internen Tex
   
 ## <a name="syntax"></a>Syntax
 
-FIELDPICTURE (* * *Code* * *) 
+FIELDPICTURE(** *code* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -34,13 +34,13 @@ FIELDPICTURE (* * *Code* * *)
 
 Zeichenfolge
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Zeichenfolgen für Formatierungsangaben werden in der FORMAT-Funktion verwendet, um die Expandierung von Werten zu Datumsangaben, Zeitangaben, Zahlen und Einheitenbeschriftungen zu definieren.
   
 ## <a name="example"></a>Beispiel
 
-FIELDPICTURE (0) 
+FIELDPICTURE(0) 
   
 Gibt die Zeichenfolge für eine Formatierungsangabe "0,0" zurück, die eine Zahl mit einer Dezimalstelle und eine Einheitenbeschreibung in Kleinbuchstaben festlegt, wenn sie in der FORMAT-Funktion verwendet wird. 
   

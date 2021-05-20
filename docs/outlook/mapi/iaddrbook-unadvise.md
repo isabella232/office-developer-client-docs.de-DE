@@ -25,7 +25,7 @@ ms.locfileid: "33436153"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bricht eine zuvor für einen Adressbucheintrag eingerichtete Benachrichtigungs Registrierung ab.
+Bricht eine Benachrichtigungsregistrierung ab, die zuvor für einen Adressbucheintrag eingerichtet wurde.
   
 ```cpp
 HRESULT Unadvise(
@@ -37,7 +37,7 @@ HRESULT Unadvise(
 
  _ulConnection_
   
-> in Eine Verbindungsnummer, die die zu abgebrochene Registrierung darstellt. Der _ulConnection_ -Parameter sollte einen Wert enthalten, der von einem vorherigen Aufruf der [IAddrBook:: Advise](iaddrbook-advise.md) -Methode zurückgegeben wird. 
+> [in] Eine Verbindungsnummer, die die zu kündigende Registrierung darstellt. Der  _ulConnection-Parameter_ sollte einen Wert enthalten, der durch einen vorherigen Aufruf der [IAddrBook::Advise-Methode zurückgegeben](iaddrbook-advise.md) wurde. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -45,9 +45,9 @@ S_OK
   
 > Die Registrierung wurde erfolgreich abgebrochen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Clients rufen die **Unadvise** -Methode auf, um das Empfangen von Benachrichtigungen zu Änderungen an einem bestimmten Adressbucheintrag zu beenden. Wenn eine Benachrichtigungs Registrierung abgebrochen wird, gibt der Adressbuchanbieter den Zeiger auf die Advise-Senke des Anrufers frei. Die Version kann jedoch während des Unadvise **** -Aufrufs oder zu einem späteren Zeitpunkt auftreten, wenn ein anderer Thread gerade die [IMAPIAdviseSink:: OnNotify](imapiadvisesink-onnotify.md) -Methode aufruft. Wenn eine Benachrichtigung ausgeführt wird, wird die Freigabe verzögert, bis die **OnNotify** -Methode zurückgegeben wird. 
+Clients rufen die **Unadvise-Methode** auf, um den Empfang von Benachrichtigungen über Änderungen an einem bestimmten Adressbucheintrag zu beenden. Wenn eine Benachrichtigungsregistrierung abgebrochen wird, gibt der Adressbuchanbieter seinen Zeiger auf die Ratgebersenke des Anrufers frei. Die Veröffentlichung kann jedoch während des **Unadvise-Aufrufs** oder zu einem späteren Zeitpunkt auftreten, wenn ein anderer Thread die [IMAPIAdviseSink::OnNotify-Methode](imapiadvisesink-onnotify.md) aufruft. Wenn eine Benachrichtigung ausgeführt wird, wird die Veröffentlichung verzögert, bis die **OnNotify-Methode zurückgegeben** wird. 
   
 ## <a name="see-also"></a>Siehe auch
 

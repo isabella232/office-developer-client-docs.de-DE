@@ -20,12 +20,12 @@ ms.locfileid: "33432247"
 
 Enthält eine Zeile, in der alle Layer aufgeführt werden, denen das Shape zugewiesen ist.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Die Layerzuweisung wird als Index zu der Liste der Layer auf dem Zeichenblatt angezeigt. Der Layerindex entspricht der Reihenfolge der Layer im Dialogfeld **Layereigenschaften** (klicken Sie auf der Registerkarte **Start** in der Gruppe **Bearbeiten** auf **Layer**, und klicken Sie dann auf **Layereigenschaften**). Der erste Name in dem Dialogfeld ist Layer 0, der zweite ist Layer 1 und so weiter.
   
 Wenn ein Shape mehreren Layern zugewiesen ist, werden die einzelnen Layerindizes in der Zelle Layer Membership durch ein Semikolon getrennt angezeigt.
   
-Wenn Sie auf den Wert der Layer-Mitgliedschafts Zelle in einer Formel verweisen möchten, verwenden Sie den Namen **LayerMember**.
+Verwenden Sie den Namen **LayerMember,** um auf den Wert der Zelle "Layer Membership" in einer Formel zu verweisen.
   
 

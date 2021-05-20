@@ -21,12 +21,12 @@ ms.locfileid: "33430315"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPI-Nachrichtenkennzeichen werden TNEF-Flags zugeordnet, um die Abwärtskompatibilität beizubehalten. Alle Flags werden zusammengefasst und in einem einzigen Byte codiert. Die Zuordnungen lauten wie folgt:
+MAPI-Nachrichtenflags werden TNEF-Flags zugeordnet, um die Abwärtskompatibilität zu erhalten. Alle Flags werden in einem einzelnen Byte gruppieren und codiert. Die Zuordnungen sind wie folgt:
   
-|**MAPI-Nachrichtenkennzeichen**|**TNEF-Flags**|
+|**MAPI-Nachrichtenflags**|**TNEF-Flags**|
 |:-----|:-----|
 |MSGFLAG_READ  <br/> |fmsRead  <br/> |
-|MSGFLAG_UNMODIFED  <br/> |~ fmsModified  <br/> |
+|MSGFLAG_UNMODIFED  <br/> |~fmsModified  <br/> |
 |MSGFLAG_SUBMIT  <br/> |fmsSubmitted  <br/> |
 |MSGFLAG_HASATTACH  <br/> |fmsHasAttach  <br/> |
 |MSGFLAG_UNSENT  <br/> |fmsLocal  <br/> |

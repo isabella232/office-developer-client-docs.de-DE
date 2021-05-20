@@ -15,13 +15,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33430532"
 ---
-# <a name="rtfwcsinfo"></a>RTF_WCSINFO
+# <a name="rtf_wcsinfo"></a>RTF_WCSINFO
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Mit dieser Struktur können Sie Informationen zum Dekomprimieren des Textkörpers einer Nachricht im komprimierten Rich-Text-Format (RTF) angeben und optional den Body-Stream im systemeigenen Format zurückgeben.
+Mit dieser Struktur können Sie Informationen zum Dekomprimieren des Nachrichtentexts im komprimierten Rich Text Format (RTF) angeben und optional den Textdatenstrom im systemeigenen Format zurückgeben.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -39,25 +39,25 @@ typedef struct {
 
  _size_
   
-> Die Größe der **RTF_WCSINFO** -Struktur in der Anzahl von Bytes. 
+> Die Größe der **RTF_WCSINFO** in der Anzahl der Bytes. 
     
  _ulFlags_
   
-> Dies ist die Bitmaske von Options Kennzeichen für die [WrapCompressedRTFStreamEx](wrapcompressedrtfstreamex.md) -Funktion. Die unterstützten Options-Flags sind: 
+> Dies ist die Bitmaske der Optionskennzeichen für die [WrapCompressedRTFStreamEx-Funktion.](wrapcompressedrtfstreamex.md) Die unterstützten Optionskennzeichen sind: 
     
 |||
 |:-----|:-----|
-|MAPI_MODIFY  <br/> |Dies gibt an, ob der Client beabsichtigt, die eingebundene Datenstromschnittstelle zu schreiben, die zurückgegeben wird.  <br/> |
-|STORE_UNCOMPRESSED_RTF  <br/> |Dies gibt an, ob das dekomprimierte RTF-Format in den Stream geschrieben werden soll, auf den durch den _lpCompressedRTFStream_ -Zeiger der [WrapCompressedRTFStreamEx](wrapcompressedrtfstreamex.md) -Funktion verwiesen wird.  <br/> |
-|MAPI_NATIVE_BODY  <br/> |Dies gibt an, ob der dekomprimierte Stream auch in den systemeigenen Text konvertiert wird, bevor der Stream zurückgegeben wird. Dieses Flag kann nicht mit dem **MAPI_MODIFY** -Flag kombiniert werden.  <br/> |
+|MAPI_MODIFY  <br/> |Dies gibt an, ob der Client die zurückgegebene umschlossene Streamschnittstelle schreiben möchte.  <br/> |
+|STORE_UNCOMPRESSED_RTF  <br/> |Dies gibt an, ob der dekomprimierte RTF in den Datenstrom geschrieben werden soll, auf den der  _lpCompressedRTFStream-Zeiger_ der [WrapCompressedRTFStreamEx-Funktion](wrapcompressedrtfstreamex.md) verweist.  <br/> |
+|MAPI_NATIVE_BODY  <br/> |Dies gibt an, ob der dekomprimierte Datenstrom auch in den systemeigenen Textkörper konvertiert wird, bevor der Datenstrom zurückgibt. Dieses Flag kann nicht mit dem MAPI_MODIFY **kombiniert** werden.  <br/> |
    
  _ulInCodePage_
   
-> Dies ist der Codepage-Wert der Nachricht. Dieser Wert wird in der Regel von der [kanonischEn Pidtaginternetcodepage (-Eigenschaft](pidtaginternetcodepage-canonical-property.md) der Nachricht abgerufen. Dieser Wert wird nur verwendet, wenn das **MAPI_NATIVE_BODY** -Flag in _ulFlags_übergeben wird. Andernfalls wird dieser Wert ignoriert.
+> Dies ist der Codeseitenwert der Nachricht. In der Regel wird dieser Wert aus der [kanonischen Eigenschaft PidTagInternetCodepage für](pidtaginternetcodepage-canonical-property.md) die Nachricht bezogen. Dieser Wert wird nur verwendet, wenn **das MAPI_NATIVE_BODY** in _ulFlags übergeben wird._ Andernfalls wird dieser Wert ignoriert.
     
  _ulOutCodePage_
   
-> Hierbei handelt es sich um den Codepage-Wert des zurückgegebenen dekomprimierten Streams, den Sie wünschen. Wenn dies auf einen Wert ungleich NULL festgelegt ist, wird der Stream von der [WrapCompressedRTFStreamEx](wrapcompressedrtfstreamex.md) -Funktion in die angegebene Codepage konvertiert. Wenn dies auf einen Nullwert festgelegt ist, bestimmt MAPI, welche Codepage verwendet werden soll. Dieser Wert wird nur verwendet, wenn das **MAPI_NATIVE_BODY** -Flag in _ulFlags_übergeben wird, und das Body-Format nicht RTF ist. Andernfalls wird dieser Wert ignoriert.
+> Dies ist der Codeseitenwert des zurückgegebenen dekomprimierten Datenstroms, den Sie möchten. Wenn dies auf einen Nicht-Null-Wert festgelegt ist, konvertiert die [WrapCompressedRTFStreamEx-Funktion](wrapcompressedrtfstreamex.md) den Datenstrom in die angegebene Codeseite. Wenn dieser Wert auf null festgelegt ist, entscheidet MAPI, welche Codeseite verwendet werden soll. Dieser Wert wird nur verwendet, wenn **das MAPI_NATIVE_BODY** in  _ulFlags_ übergeben wird und das Textformat nicht RTF ist. Andernfalls wird dieser Wert ignoriert.
     
 ## <a name="see-also"></a>Siehe auch
 

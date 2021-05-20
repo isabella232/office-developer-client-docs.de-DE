@@ -25,7 +25,7 @@ ms.locfileid: "33430231"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bricht das Senden von Benachrichtigungen ab, die zuvor mit einem Aufruf der [IMAPITable:: Advise](imapitable-advise.md) -Methode eingerichtet wurden. 
+Bricht das Senden von Benachrichtigungen ab, die zuvor mit einem Aufruf der [IMAPITable::Advise-Methode eingerichtet](imapitable-advise.md) wurden. 
   
 ```cpp
 HRESULT Unadvise(
@@ -37,7 +37,7 @@ ULONG_PTR ulConnection
 
  _ulConnection_
   
-> in Die Nummer der Registrierungs Verbindung, die von einem Aufruf von [IMAPITable:: Advise](imapitable-advise.md)zurückgegeben wird.
+> [in] Die Nummer der Registrierungsverbindung, die von einem Aufruf von [IMAPITable::Advise zurückgegeben wird.](imapitable-advise.md)
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -45,11 +45,11 @@ S_OK
   
 > Der Aufruf war erfolgreich.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Verwenden Sie die **IMAPITable:: Unadvise** -Methode, um den Zeiger auf das Advise-Senke-Objekt, das im _lpAdviseSink_ -Parameter im vorherigen Aufruf von **IMAPITable:: Advise**übergeben wird, aufzuheben, wodurch eine Benachrichtigungs Registrierung abgebrochen wird. Als Teil des Verwerfens des Zeigers auf das Advise-Senke-Objekt wird die **IUnknown:: Release** -Methode des Objekts aufgerufen. Im Allgemeinen wird **Release** während des Unadvise-Aufrufs aufgerufen, aber wenn ein anderer Thread gerade **** die [IMAPIAdviseSink:: OnNotify](imapiadvisesink-onnotify.md) -Methode für die Advise-Senke aufruft, wird der **Freigabe** Aufruf verzögert, bis die OnNotify **** Methode gibt zurück. 
+Verwenden Sie die **IMAPITable::Unadvise-Methode,** um den Zeiger auf das im  _lpAdviseSink-Parameter im_ vorherigen Aufruf von **IMAPITable::Advise** übergebene Advise-Sink-Objekt frei zu geben, wodurch eine Benachrichtigungsregistrierung abgebrochen wird. Im Rahmen des Verwerfens des Zeigers auf das advise-Sink-Objekt wird die **IUnknown::Release-Methode des** Objekts aufgerufen. Im Allgemeinen wird **Release** während des **Unadvise-Aufrufs** aufgerufen, aber wenn ein anderer Thread die [IMAPIAdviseSink::OnNotify-Methode](imapiadvisesink-onnotify.md) für die Ratensenke aufruft, wird der Release-Aufruf verzögert, bis die **OnNotify-Methode** zurückgegeben wird.  
   
-Weitere Informationen zum Benachrichtigungsprozess finden Sie unter [Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md). Spezifische Informationen zur Tabellenbenachrichtigung finden Sie unter [Informationen zu Tabellen Benachrichtigungen](about-table-notifications.md). Informationen zur Verwendung der **IMAPISupport** -Methoden zur Unterstützung von Benachrichtigungen finden Sie unter [unterstützende Ereignisbenachrichtigung](supporting-event-notification.md).
+Weitere Informationen zum Benachrichtigungsprozess finden Sie unter [Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md). Spezifische Informationen zur Tabellenbenachrichtigung finden Sie unter [Informationen zu Tabellenbenachrichtigungen](about-table-notifications.md). Informationen zur Verwendung der **IMAPISupport-Methoden** zur Unterstützung von Benachrichtigungen finden Sie unter [Supporting Event Notification](supporting-event-notification.md).
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -57,7 +57,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|ContentsTableListCtrl. cpp  <br/> |CContentsTableListCtrl:: NotificationOff  <br/> |MFCMAPI verwendet die **IMAPITable:: Unadvise** -Methode, um Benachrichtigungen für die Tabelle abzubrechen.  <br/> |
+|ContentsTableListCtrl.cpp  <br/> |CContentsTableListCtrl::NotificationOff  <br/> |MFCMAPI verwendet die **IMAPITable::Unadvise-Methode,** um Benachrichtigungen für die Tabelle abbricht.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

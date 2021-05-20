@@ -25,7 +25,7 @@ ms.locfileid: "33429110"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Aktualisiert den Status im Dialogfeld senden/empfangen. Der Informationsspeicher Anbieter ruft diese Funktion regelmäßig auf.
+Aktualisiert den Status im Dialogfeld Senden/Empfangen. Der Speicheranbieter ruft diese Funktion regelmäßig auf.
   
 ```cpp
 HRESULT Progress(
@@ -39,11 +39,11 @@ HRESULT Progress(
 
  **pwczsProgress**
   
-> Ein Zeiger auf eine Zeichenfolge, die den aktuellen Status Schritt anzeigt. Es kann NULL sein, um den Fortschritt zu aktualisieren.
+> Ein Zeiger auf eine Zeichenfolge, die den aktuellen Fortschrittsschritt anzeigt. Es kann NULL sein, um den Fortschritt zu aktualisieren.
     
  **ulIndex**
   
-> Aktuelle Position.
+> Die aktuelle position in Bearbeitung.
     
  **ulIndexMax**
   

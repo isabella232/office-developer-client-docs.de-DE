@@ -25,7 +25,7 @@ ms.locfileid: "33430364"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Legt fest, dass ein Nachrichtendienst der Lieferant der primären Identität für das Profil ist.
+Bestimmt einen Nachrichtendienst als Anbieter der primären Identität für das Profil.
   
 ```cpp
 HRESULT SetPrimaryIdentity(
@@ -38,7 +38,7 @@ HRESULT SetPrimaryIdentity(
 
  _lpUID_
   
-> in Ein Zeiger auf die [MAPIUID](mapiuid.md) -Struktur, die den eindeutigen Bezeichner für den Nachrichtendienst enthält, um die primäre Identität anzugeben, oder NULL, die angibt, dass **SetPrimaryIdentity** die aktuelle Identität löschen soll. 
+> [in] Ein Zeiger auf die [MAPIUID-Struktur,](mapiuid.md) die den eindeutigen Bezeichner für den Nachrichtendienst enthält, um die primäre Identität anzugeben, oder NULL, der angibt, dass **SetPrimaryIdentity** die aktuelle Identität löschen soll. 
     
  _ulFlags_
   
@@ -48,27 +48,27 @@ HRESULT SetPrimaryIdentity(
 
 S_OK 
   
-> Dem Nachrichtendienst wurde der Lieferant mit der primären Identität erfolgreich zugewiesen.
+> Dem Nachrichtendienst wurde der Anbieter der primären Identität erfolgreich zugewiesen.
     
 MAPI_E_NO_ACCESS 
   
-> **SetPrimaryIdentity** hat versucht, einen Nachrichtendienst mit dem SERVICE_NO_PRIMARY_IDENTITY-Flag in seiner **PR_RESOURCE_FLAGS** ([pidtagresourceflags (](pidtagresourceflags-canonical-property.md))-Eigenschaft festzulegen.
+> **SetPrimaryIdentity** hat versucht, einen Nachrichtendienst zu bestimmen, für den das SERVICE_NO_PRIMARY_IDENTITY-Flag in seiner **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md))-Eigenschaft festgelegt ist.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMsgServiceAdmin:: SetPrimaryIdentity** -Methode richtet einen Nachrichtendienst als Anbieter der primären Identität für das Profil ein. Die primäre Identität ist in der Regel der Benutzer, der beim Nachrichtendienst angemeldet ist. Es wird durch drei Eigenschaften dargestellt: 
+Die **IMsgServiceAdmin::SetPrimaryIdentity-Methode** richtet einen Nachrichtendienst als Anbieter der primären Identität für das Profil ein. Die primäre Identität ist in der Regel der Benutzer, der beim Nachrichtendienst angemeldet ist. Es wird durch drei Eigenschaften dargestellt: 
   
-- **PR_IDENTITY_DISPLAY** ([Pidtagidentitydisplay (](pidtagidentitydisplay-canonical-property.md))
+- **PR_IDENTITY_DISPLAY** ([PidTagIdentityDisplay](pidtagidentitydisplay-canonical-property.md))
     
-- **PR_IDENTITY_ENTRYID** ([Pidtagidentityentryid (](pidtagidentityentryid-canonical-property.md))
+- **PR_IDENTITY_ENTRYID** ([PidTagIdentityEntryId](pidtagidentityentryid-canonical-property.md))
     
-- **PR_IDENTITY_SEARCH_KEY** ([Pidtagidentitysearchkey (](pidtagidentitysearchkey-canonical-property.md))
+- **PR_IDENTITY_SEARCH_KEY** ([PidTagIdentitySearchKey](pidtagidentitysearchkey-canonical-property.md))
     
-Jeder Dienstanbieter im angegebenen Nachrichtendienst legt diese drei Eigenschaften auf den Anzeigenamen, die Eintrags-ID und den Suchschlüssel des Messaging Benutzers fest, der die primäre Identität bereitstellt. Clients können die Eintrags-ID der primären Identität abrufen, indem Sie die [IMAPISession:: QueryIdentity](imapisession-queryidentity.md) -Methode aufrufen. 
+Jeder Dienstanbieter im angegebenen Nachrichtendienst legt diese drei Eigenschaften auf den Anzeigenamen, die Eintrags-ID und den Suchschlüssel des Messagingbenutzers fest, der die primäre Identität liefert. Clients können den Eintragsbezeichner der primären Identität abrufen, indem sie die [IMAPISession::QueryIdentity-Methode](imapisession-queryidentity.md) aufrufen. 
   
-Die **PR_RESOURCE_FLAGS** -Eigenschaft wird für jeden Anbieter, der ein Mitglied des Nachrichtendiensts ist, der die primäre Identität bereitstellt, und SERVICE_PRIMARY_IDENTITY für den Nachrichtendienst auf STATUS_PRIMARY_IDENTITY festgelegt. Wenn ein Dienstanbieter die primäre Identität für seinen Nachrichtendienst nicht angeben kann, wird **PR_RESOURCE_FLAGS** auf STATUS_NO_PRIMARY_IDENTITY festgelegt. **SetPrimaryIdentity** legt die **PR_RESOURCE_FLAGS** -Eigenschaft der einzelnen Nachrichtendienste fest, die nicht die primäre Identität für SERVICE_NO_PRIMARY_IDENTITY bereitstellen. 
+Die **PR_RESOURCE_FLAGS-Eigenschaft** ist auf STATUS_PRIMARY_IDENTITY für jeden Anbieter festgelegt, der Mitglied des Nachrichtendiensts ist, der die primäre Identität liefert, und auf SERVICE_PRIMARY_IDENTITY für den Nachrichtendienst festgelegt. Wenn ein Dienstanbieter die primäre Identität für seinen Nachrichtendienst nicht liefern kann, wird **PR_RESOURCE_FLAGS** auf STATUS_NO_PRIMARY_IDENTITY. **SetPrimaryIdentity** legt **die PR_RESOURCE_FLAGS** der einzelnen Nachrichtendienste fest, die die primäre Identität nicht für SERVICE_NO_PRIMARY_IDENTITY. 
   
-Jeder Nachrichtendienst Anbieter, über den MAPI Informationen enthält, kann für jeden seiner Benutzer eine Identität festlegen, wenn sich ein Client beim Dienst anmeldet. Da MAPI jedoch Verbindungen mit mehreren Dienstanbietern für jede MAPI-Sitzung unterstützt, gibt es keine feste Definition der Identität eines bestimmten Benutzers für die MAPI-Sitzung als Ganzes; die Identität eines Benutzers hängt davon ab, welcher Dienst beteiligt ist. Clients können **SetPrimaryIdentity** aufrufen, um eine der vielen Identitäten festzulegen, die von Nachrichtendiensten für einen Benutzer als primäre Identität für diesen Benutzer erstellt wurden. 
+Jeder Nachrichtendienstanbieter, zu dem MAPI Informationen hat, kann eine Identität für jeden seiner Benutzer einrichten, wenn sich ein Client beim Dienst anmeldet. Da MAPI jedoch Verbindungen zu mehreren Dienstanbietern für jede #A0 unterstützt, gibt es keine feste Definition der Identität eines bestimmten Benutzers für die #A1 insgesamt. Die Identität eines Benutzers hängt davon ab, welcher Dienst beteiligt ist. Clients können **SetPrimaryIdentity aufrufen,** um eine der vielen Identitäten zu bestimmen, die von Nachrichtendiensten für einen Benutzer als primäre Identität für den Benutzer eingerichtet wurden. 
   
 ## <a name="see-also"></a>Siehe auch
 

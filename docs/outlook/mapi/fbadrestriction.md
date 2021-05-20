@@ -43,20 +43,20 @@ ULONG FBadRestriction(
 
  _lpres_
   
-> in Eine [SRestriction](srestriction.md) -Struktur, die die zu überprüfende Einschränkung definiert. 
+> [in] Eine [SRestriction-Struktur,](srestriction.md) die die zu überprüfende Einschränkung definiert. 
     
 ## <a name="return-value"></a>Rückgabewert
 
 TRUE 
   
-> Die angegebene Einschränkung oder mindestens eine der unter Einschränkungen ist ungültig. 
+> Die angegebene Einschränkung oder mindestens eine ihrer Untereinschränkungen ist ungültig. 
     
 FALSE 
   
-> Die angegebene Einschränkung und alle zugehörigen unter Einschränkungen sind gültig.
+> Die angegebene Einschränkung und alle ihre Untereinschränkungen sind gültig.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Sobald eine Einschränkung validiert wurde, kann Sie in Aufrufen der [IMAPITable:: Restrict](imapitable-restrict.md) -Methode übergeben werden, um die Tabelle auf bestimmte Zeilen einzuschränken, auf die [IMAPITable:: FindRow](imapitable-findrow.md) -Methode, um eine Tabellenzeile und die Methoden des [IMAPIContainer](imapicontainerimapiprop.md) zu finden. Schnittstelle zum Durchführen einer Einschränkung für ein Container-Objekt. 
+Nachdem eine Einschränkung überprüft wurde, kann sie in Aufrufen der [IMAPITable::Restrict-Methode](imapitable-restrict.md) übergeben werden, um die Tabelle auf bestimmte Zeilen, die [IMAPITable::FindRow-Methode](imapitable-findrow.md) zum Suchen einer Tabellenzeile und methoden der [IMAPIContainer-Schnittstelle](imapicontainerimapiprop.md) zum Ausführen einer Einschränkung für ein Containerobjekt zu beschränken. 
   
 

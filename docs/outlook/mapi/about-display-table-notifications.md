@@ -19,36 +19,36 @@ ms.locfileid: "33430014"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Benachrichtigungen für eine Anzeigetabelle werden von dem Dienstanbieter gesendet, der für die Erstellung der Anzeigetabelle in MAPI zuständig ist. MAPI registriert diese Benachrichtigungen, indem die [IMAPITable:: Advise](imapitable-advise.md) -Methode der Display-Tabelle aufgerufen und das Table modified-Ereignis angegeben wird. 
+Benachrichtigungen in einer Anzeigetabelle werden vom Dienstanbieter gesendet, der für das Erstellen der Anzeigetabelle an MAPI zuständig ist. MAPI registriert diese Benachrichtigungen, indem die [IMAPITable::Advise-Methode](imapitable-advise.md) einer Anzeigetabelle aufruft und das Table Modified-Ereignis angegeben wird. 
   
-Wie bei allen Tabellen Benachrichtigungen, enthält die Anzeige Tabellen Benachrichtigungen eine [TABLE_NOTIFICATION](table_notification.md) -Struktur. Nur die **ulTableEvent** -und die **propIndex** -Elemente dieser Struktur sind erheblich; die anderen Elemente werden ignoriert. Das **ulTableEvent** -Element wird auf TABLE_ROW_MODIFIED festgelegt, und das **propIndex** -Element wird auf den Wert der **PR_CONTROL_ID** ([pidtagcontrolid (](pidtagcontrolid-canonical-property.md))-Spalte in der entsprechenden Zeile festgelegt. MAPI reagiert auf die Benachrichtigung durch Aufrufen der [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode für die im Steuerelement angezeigte Eigenschaft und durch Anzeigen des neuen Werts. 
+Wie bei allen Tabellenbenachrichtigungen enthalten Anzeigetabelle Benachrichtigungen eine [TABLE_NOTIFICATION](table_notification.md) Struktur. Nur die **ulTableEvent-** und **propIndex-Elemente** dieser Struktur sind signifikant. die anderen Mitglieder werden ignoriert. Das **element ulTableEvent** wird auf TABLE_ROW_MODIFIED und das **element propIndex** auf den Wert der **Spalte PR_CONTROL_ID** ([PidTagControlId](pidtagcontrolid-canonical-property.md)) in der entsprechenden Zeile festgelegt. MAPI antwortet auf die Benachrichtigung, indem die [IMAPIProp::GetProps-Methode](imapiprop-getprops.md) für die im Steuerelement angezeigte Eigenschaft und der neue Wert angezeigt wird. 
   
-Anzeige Tabellen Benachrichtigungen können von einem Dienstanbieter verwendet werden, um Änderungen an verwandten Steuerelementen im Dialogfeld zu koordinieren. Wenn die Implementierung der Eigenschaften Schnittstelle beispielsweise ein oder mehrere Felder im Dialogfeld aktualisieren muss, möglicherweise als Reaktion auf ein anderes Steuerelement, das das DT_SET_IMMEDIATE-Flag in seiner **PR_CONTROL_FLAGS** ([pidtagcontrolflags (](pidtagcontrolflags-canonical-property.md))-Eigenschaft festgelegt hat, Es kann eine Anzeige Tabellenbenachrichtigung generieren. Eine Anzeige Tabellenbenachrichtigung kann die Eigenschaften Schnittstellenimplementierung Benachrichtigen, dass der Wert eines oder mehrerer Steuerelemente aufgrund einer Änderung oder eines externen Ereignisses erneut gelesen werden muss. 
+Anzeigetabelle Benachrichtigungen können von einem Dienstanbieter verwendet werden, um Änderungen an verwandten Steuerelementen im Dialogfeld zu koordinieren. Wenn die Implementierung der Eigenschaftsschnittstelle beispielsweise ein oder mehrere Felder im Dialogfeld aktualisieren muss – möglicherweise als Reaktion auf ein anderes Steuerelement, das das DT_SET_IMMEDIATE-Flag in seiner **PR_CONTROL_FLAGS** ([PidTagControlFlags](pidtagcontrolflags-canonical-property.md))-Eigenschaft festgelegt hat – kann eine Anzeigetabelle generiert werden. Eine Anzeigetabelle Benachrichtigung kann die Implementierung der Eigenschaftsschnittstelle warnen, dass der Wert eines oder mehrere Steuerelemente aufgrund einer vorgenommenen Änderung oder eines externen Ereignisses erneut gelesen werden muss. 
   
-Ein Dienstanbieter kann Anzeige Tabellen Benachrichtigungen ausgeben, indem er:
+Ein Dienstanbieter kann Benachrichtigungen zur Anzeigetabelle aus dem Folgenden erstellen:
   
-- Aufrufen von [ITableData:: HrNotify](itabledata-hrnotify.md), wenn die Anzeigetabelle mit einem Tabellendaten Objekt erstellt wurde.
+- Aufrufen [von ITableData::HrNotify](itabledata-hrnotify.md), wenn die Anzeigetabelle mit einem Tabellendatenobjekt erstellt wurde.
     
-    - Oder
+    - Oder -
     
-- Verwenden des eigenen Codes, wenn die Anzeigetabelle mit der **IMAPITable** -Implementierung des Anbieters erstellt wurde. 
+- Verwenden Sie eigenen Code, wenn die Anzeigetabelle mit der **IMAPITable-Implementierung** des Anbieters erstellt wurde. 
     
-MAPI reagiert auf Anzeige von Tabellen Benachrichtigungen, wenn dies erforderlich ist, indem der Wert eines Steuerelements aus der Eigenschaften Schnittstellenimplementierung erneut gelesen wird. In der folgenden Tabelle werden die Details zur Behandlung von Benachrichtigungen für bestimmte Steuerelementtypen beschrieben.
+MAPI reagiert auf die Anzeige von Tabellenbenachrichtigungen, wenn dies erforderlich ist, indem der Wert eines Steuerelements aus der Implementierung der Eigenschaftsschnittstelle erneut gelesen wird. In der folgenden Tabelle werden die Details zur Art und Weise beschrieben, wie MAPI Benachrichtigungen für bestimmte Steuerelementtypen verarbeitet.
   
 |**Control**|**MAPI-Aktion**|
 |:-----|:-----|
-|Schaltfläche  <br/> |Ruft [IMAPIProp:: OpenProperty](imapiprop-openproperty.md)auf, um das Control-Objekt mithilfe der vom **ulPRControl** -Element der [DTBLBUTTON](dtblbutton.md) -Struktur dargestellten Eigenschaft abzurufen, wenn der Aufruf zuvor fehlgeschlagen war. Ruft das [IMAPIControl:: GetState](imapicontrol-getstate.md) des Control-Objekts auf, um zu bestimmen, ob die Schaltfläche aktiviert werden soll, und aktiviert oder deaktiviert die Schaltfläche entsprechend.  <br/> |
-|Kontrollkästchen  <br/> |Liest den Wert für das **ulPRPropertyName** -Element erneut.  <br/> |
-|Kombinationsfeld  <br/> |Öffnet die Tabelle, die dem **ulPRTableName** -Element der [DTBLCOMBOBOX](dtblcombobox.md) -Struktur zugeordnet ist, erneut. Liest alle Zeilen einschließlich des Werts für das **ulPRPropertyName**-Element erneut.  <br/> |
-|Dropdown-Listenfeld  <br/> |Öffnet die Tabelle, die dem **ulPRTableName** -Element der [DTBLDDLBX](dtblddlbx.md) -Struktur zugeordnet ist, und liest alle Zeilen erneut. Ruft [IMAPIProp::](imapiprop-getprops.md) GetProps auf, um die Werte für die Eigenschaften abzurufen, die in den **UlPRDisplayProperty** -und **ulPRSetProperty** -Elementen gespeichert sind.  <br/> |
+|Schaltfläche  <br/> |Ruft [IMAPIProp::OpenProperty auf,](imapiprop-openproperty.md)um das Steuerelementobjekt über die Eigenschaft abzurufen, die durch das **ulPRControl-Element** der [DTBLBUTTON-Struktur](dtblbutton.md) dargestellt wird, wenn der Aufruf zuvor fehlgeschlagen war. Ruft im [IMAPIControl::GetState](imapicontrol-getstate.md) des Steuerelementobjekts auf, um zu bestimmen, ob die Schaltfläche aktiviert werden soll, und aktiviert oder deaktiviert die Schaltfläche entsprechend.  <br/> |
+|Kontrollkästchen  <br/> |Der Wert für das **ulPRPropertyName-Element wird erneut** gelesen.  <br/> |
+|Kombinationsfeld  <br/> |Öffnet die Tabelle, die dem **ulPRTableName-Element** der [DTBLCOMBOBOX-Struktur zugeordnet](dtblcombobox.md) ist. Alle Zeilen einschließlich des Werts für das **ulPRPropertyName-Element** werden erneut gelesen.  <br/> |
+|Dropdownlistenfeld  <br/> |Öffnet die tabelle, die dem **ulPRTableName-Element** der [DTBLDDLBX-Struktur](dtblddlbx.md) zugeordnet ist, und alle Zeilen erneut. Ruft [IMAPIProp::GetProps auf,](imapiprop-getprops.md) um die Werte für die Eigenschaften abzurufen, die in **den UlPRDisplayProperty-** und **ulPRSetProperty-Membern gespeichert** sind.  <br/> |
 |Bearbeiten  <br/> |Die Eigenschaft wird erneut gelesen und erneut angezeigt.  <br/> |
-|Gruppenfeld  <br/> |Die Benachrichtigung wird ignoriert.  <br/> |
-|Label  <br/> |Die Benachrichtigung wird ignoriert.  <br/> |
-|Listenfeld für Mehrfachauswahl  <br/> |Wenn eine der Spalten eine Eintrags-ID ist, wird das Listenfeld aktualisiert. Das entsprechende Objekt wird nicht geschlossen oder erneut geladen.  <br/> |
-|Einzelauswahl-Listenfeld  <br/> |Liest die Set-Eigenschaft und versucht, Sie zu identifizieren.  <br/> |
-|Mehrwertiges Listenfeld  <br/> |Liest die Eigenschaft erneut ein und füllt das Listenfeld erneut auf.  <br/> |
-|Registerkartenseite  <br/> |Es sind keine Benachrichtigungen für dieses Steuerelement vorhanden; Alles ist statisch.  <br/> |
-|Optionsfeld  <br/> |Liest die Eigenschaft, die der Schaltfläche zugeordnet ist und im **ulPropTag** -Element der [DTBLRADIOBUTTON](dtblradiobutton.md) -Struktur gespeichert ist, und trifft die entsprechende Auswahl mit den Steuerelementen.  <br/> |
+|Gruppenfeld  <br/> |Ignoriert die Benachrichtigung.  <br/> |
+|Bezeichnung  <br/> |Ignoriert die Benachrichtigung.  <br/> |
+|Listenfeld mit mehreren Auswahlen  <br/> |Wenn es sich bei einer der Spalten um einen Eintragsbezeichner handelt, wird das Listenfeld aktualisiert. Das entsprechende Objekt wird nicht geschlossen oder neu geladen.  <br/> |
+|Listenfeld für einzelne Auswahl  <br/> |Liest die set-Eigenschaft und versucht, sie zu identifizieren.  <br/> |
+|Mehrwertiges Listenfeld  <br/> |Die Eigenschaft wird erneut gelesen und das Listenfeld erneut aufgefüllt.  <br/> |
+|Registerkartenseite  <br/> |Es gibt keine Benachrichtigungen für dieses Steuerelement. alles ist statisch.  <br/> |
+|Optionsfeld  <br/> |Die Eigenschaft, die der Schaltfläche zugeordnet ist und im **ulPropTag-Element** der [DTBLRADIOBUTTON-Struktur](dtblradiobutton.md) gespeichert ist, wird erneut gelesen und mit den Steuerelementen die entsprechende Auswahl getroffen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

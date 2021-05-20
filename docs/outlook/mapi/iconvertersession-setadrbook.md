@@ -25,7 +25,7 @@ ms.locfileid: "33429194"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt ein optionales MAPI-Adressbuch an, das vom MAPI-in-MIME-Konverter verwendet wird, um mehrdeutige Adressen beim Konvertieren einer MAPI-Nachricht in einen MIME-Stream aufzulösen.
+Gibt ein optionales MAPI-Adressbuch an, das der MAPI-zu-MIME-Konverter zum Auflösen mehrdeutiger Adressen beim Konvertieren einer MAPI-Nachricht in einen MIME-Stream verwendet.
   
 ```cpp
 HRESULT IConverterSession::SetAdrBook( 
@@ -34,9 +34,9 @@ LPADRBOOK pab);
 
 ## <a name="parameters"></a>Parameter
 
- _PAB_
+ _pab_
   
-> in Zeiger auf eine [IAddrBook: IMAPIProp](iaddrbookimapiprop.md) -Schnittstelle, die in der MAPI-zu-MIME-Konvertierung verwendet werden soll. Legen Sie diesen Parameter auf **null** fest, wenn Sie das Adressbuch nicht mehr benötigen; Dadurch wird die Schnittstelle freigegeben und der Konverter wird so zurückgesetzt, dass kein Adressbuch verwendet wird. 
+> [in] Zeiger auf ein [IAddrBook : IMAPIProp-Schnittstelle,](iaddrbookimapiprop.md) die in der MAPI-zu-MIME-Konvertierung verwendet werden soll. Legen Sie diesen Parameter **auf null,** wenn Sie das Adressbuch nicht mehr benötigen. Dadurch wird die Schnittstelle veröffentlicht, und der Konverter wird auf kein Adressbuch zurückgesetzt. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -44,9 +44,9 @@ S_OK
   
 > Der Funktionsaufruf ist erfolgreich.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Das Konvertieren einer MAPI-Nachricht in einen MIME-Stream erfordert im Allgemeinen keine Anmeldung an einem MAPI-Profil. Wenn Sie jedoch ein MAPI-Adressbuch für die Konvertierung angeben, müssen Sie sich an einem Profil anmelden, um das Adressbuch abzurufen.
+Für das Konvertieren einer MAPI-Nachricht in einen MIME-Stream ist in der Regel keine Anmeldung bei einem MAPI-Profil erforderlich. Wenn Sie jedoch ein MAPI-Adressbuch für die Konvertierung angeben, müssen Sie sich bei einem Profil anmelden, um das Adressbuch zu erhalten.
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -54,8 +54,8 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MapiMime. cpp  <br/> |ImportEMLToIMessage  <br/> |MFCMAPI verwendet MimeToMAPI, um eine EML-Datei in eine MAPI-Nachricht umzuwandeln.  <br/> |
-|MapiMime. cpp  <br/> |ExportIMessageToEML  <br/> |MFCMAPI verwendet MAPIToMIMEStm, um eine MAPI-Nachricht in eine EML-Datei umzuwandeln.  <br/> |
+|MapiMime.cpp  <br/> |ImportEMLToIMessage  <br/> |MFCMAPI verwendet MimeToMAPI, um eine EML-Datei in eine MAPI-Nachricht zu konvertieren.  <br/> |
+|MapiMime.cpp  <br/> |ExportIMessageToEML  <br/> |MFCMAPI verwendet MAPIToMIMEStm, um eine MAPI-Nachricht in eine EML-Datei zu konvertieren.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

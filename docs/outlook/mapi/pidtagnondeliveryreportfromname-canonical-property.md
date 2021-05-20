@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagnondeliveryreportfromname (-Eigenschaft
+title: PidTagNonDeliveryReportFromName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,20 +19,20 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33428403"
 ---
-# <a name="pidtagnondeliveryreportfromname-canonical-property"></a>Kanonische Pidtagnondeliveryreportfromname (-Eigenschaft
+# <a name="pidtagnondeliveryreportfromname-canonical-property"></a>PidTagNonDeliveryReportFromName (kanonische Eigenschaft)
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Wenn für einen Unzustellbarkeitsbericht festgelegt ist, wird der Name des fehlerhaften senden als Benutzer.
+Wenn sie für einen Bericht ohne Löschinformationen festgelegt ist, wird der Name des fehlgeschlagenen Send-As bezeichnet.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_NDR_FROM_NAME  <br/> |
 |Kennung:  <br/> |0x6905  <br/> |
 |Datentyp:  <br/> |PT_STRING8  <br/> |
-|Bereich:  <br/> |Allgemeine Nachrichtenübermittlung  <br/> |
+|Bereich:  <br/> |Allgemeines Messaging  <br/> |
    
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -40,17 +40,17 @@ Wenn für einen Unzustellbarkeitsbericht festgelegt ist, wird der Name des fehle
 
 [[MS-OXPROPS]] 
   
-> Enthält Verweise auf zugehörige Exchange Server-Protokollspezifikationen.
+> Enthält Verweise auf Exchange Server Protokollspezifikationen.
     
-### <a name="header-files"></a>Header Dateien
+### <a name="header-files"></a>Headerdateien
 
-Mapidefs. h
+Mapidefs.h
   
-> Stellt Datentypdefinitionen bereit.
+> Bietet Datentypdefinitionen.
     
-Mapitags. h
+Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -58,9 +58,9 @@ Mapitags. h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

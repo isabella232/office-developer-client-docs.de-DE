@@ -20,13 +20,13 @@ ms.locfileid: "33430070"
 
 Gibt die Standardsprache für das Dokument an.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die Dokumentsprache basiert auf der Sprache, die im Dialogfeld **Microsoft Office-Spracheinstellungen** definiert ist. (Klicken Sie auf **Start**, **Alle Programme**, **Microsoft Office**, Microsoft Office- **Tools**und dann auf **Microsoft Office-Spracheinstellungen**.)
+Die Dokumentsprache basiert auf der Sprache, die im Dialogfeld **Microsoft Office Spracheinstellungen definiert** ist. (Klicken **Sie auf Start,** **klicken** Sie auf Alle Programme, **Microsoft Office**, klicken Sie **Microsoft Office Tools** und dann auf **Microsoft Office Spracheinstellungen**.)
   
-Wenn Sie die Sprache für ein Dokument ändern möchten, ist es am besten, diesen Wert im Dialogfeld **Eigenschaften** zu ändern (Klicken Sie auf die Registerkarte **Datei** , klicken Sie auf **Informationen**, dann auf **Eigenschaften**und dann auf **erweitert. Eigenschaften**) oder programmgesteuert mithilfe der **Language** -Eigenschaft des **Document** -Objekts. 
+Wenn Sie die Sprache für ein Dokument ändern möchten, sollten Sie diesen Wert  nicht direkt bearbeiten, sondern im Dialogfeld Eigenschaften (klicken Sie auf die Registerkarte Datei, klicken Sie auf **Info,** dann auf Eigenschaften **und** dann auf Erweiterte Eigenschaften **)** oder programmgesteuert mithilfe der  **Language-Eigenschaft** des **Document-Objekts** ändern. 
   
-Die folgende Tabelle enthält eine Liste der Sprachen und die entsprechenden LCIDs.
+Die folgende Tabelle enthält eine Liste der Sprachen und ihrer entsprechenden LCIDs.
   
 |**Sprache**|**LCID**|
 |:-----|:-----|
@@ -52,9 +52,9 @@ Die folgende Tabelle enthält eine Liste der Sprachen und die entsprechenden LCI
 |Dhivehi  <br/> |1125  <br/> |
 |Niederländisch  <br/> |1043  <br/> |
 |Edo  <br/> |1126  <br/> |
-|Englisch (Australier)  <br/> |3081  <br/> |
+|Englisch (Australisch)  <br/> |3081  <br/> |
 |Englisch (Kanada)  <br/> |4105  <br/> |
-|Englisch (Großbritannien)  <br/> |2057  <br/> |
+|Englisch ( Großbritannien)  <br/> |2057  <br/> |
 |Englisch (USA)  <br/> |1033  <br/> |
 |Estnisch  <br/> |1061  <br/> |
 |Färöisch  <br/> |1080  <br/> |
@@ -62,17 +62,17 @@ Die folgende Tabelle enthält eine Liste der Sprachen und die entsprechenden LCI
 |Finnisch  <br/> |1035  <br/> |
 |Französisch  <br/> |1036  <br/> |
 |Französisch (Kanada)  <br/> |3084  <br/> |
-|Friesischen  <br/> |1122  <br/> |
+|Friesisch  <br/> |1122  <br/> |
 |Fulfulde  <br/> |1127  <br/> |
 |Galicisch  <br/> |1110  <br/> |
 |Georgisch  <br/> |1079  <br/> |
 |Deutsch  <br/> |1031  <br/> |
-|Deutsch (Österreich)  <br/> |3079  <br/> |
+|Deutsch (Österreichisch)  <br/> |3079  <br/> |
 |Deutsch (Schweiz)  <br/> |2055  <br/> |
 |Griechisch  <br/> |1032  <br/> |
 |Gujarati  <br/> |1095  <br/> |
 |Haussa  <br/> |1128  <br/> |
-|Hawaiisch  <br/> |1141  <br/> |
+|Hawaiianisch  <br/> |1141  <br/> |
 |Hebräisch  <br/> |1037  <br/> |
 |Hindi  <br/> |1081  <br/> |
 |Ungarisch  <br/> |1038  <br/> |
@@ -94,15 +94,15 @@ Die folgende Tabelle enthält eine Liste der Sprachen und die entsprechenden LCI
 |Lateinisch  <br/> |1142  <br/> |
 |Lettisch  <br/> |1062  <br/> |
 |Litauisch  <br/> |1063  <br/> |
-|Mazedonisch (F.Y.R.O. Mazedonien  <br/> |1071  <br/> |
-|Malaiisch  <br/> |1086  <br/> |
+|Mazedonisch (F.Y.R.O. Mazedonien)  <br/> |1071  <br/> |
+|Malay  <br/> |1086  <br/> |
 |Malayalam  <br/> |1100  <br/> |
 |Maltesisch  <br/> |1082  <br/> |
 |Manipuri  <br/> |1112  <br/> |
 |Marathi  <br/> |1102  <br/> |
 |Mongolisch  <br/> |1104  <br/> |
 |Nepalesisch  <br/> |1121  <br/> |
-|Norwegische Bokmal  <br/> |1044  <br/> |
+|Norwegian Bokmal  <br/> |1044  <br/> |
 |Norwegisch (Nynorsk)  <br/> |2068  <br/> |
 |Norwegisch (Nynorsk)  <br/> |1096  <br/> |
 |Oromo  <br/> |1138  <br/> |
@@ -118,7 +118,7 @@ Die folgende Tabelle enthält eine Liste der Sprachen und die entsprechenden LCI
 |Serbisch (Kyrillisch)  <br/> |3098  <br/> |
 |Serbisch (Lateinisch)  <br/> |2074  <br/> |
 |Sindhi  <br/> |1113  <br/> |
-|Singhalesen  <br/> |1115  <br/> |
+|Singhalesisch  <br/> |1115  <br/> |
 |Slowakisch  <br/> |1051  <br/> |
 |Slowenisch  <br/> |1060  <br/> |
 |Somali  <br/> |1143  <br/> |
@@ -128,7 +128,7 @@ Die folgende Tabelle enthält eine Liste der Sprachen und die entsprechenden LCI
 |Syrisch  <br/> |1114  <br/> |
 |Tadschikisch  <br/> |1064  <br/> |
 |Tamazight (Arabisch, Marokko)  <br/> |1119  <br/> |
-|Tamazight (lateinisch)  <br/> |2143  <br/> |
+|Tamazight (Lateinisch)  <br/> |2143  <br/> |
 |Tamil  <br/> |1097  <br/> |
 |Tatarisch  <br/> |1092  <br/> |
 |Telugu  <br/> |1098  <br/> |
@@ -136,7 +136,7 @@ Die folgende Tabelle enthält eine Liste der Sprachen und die entsprechenden LCI
 |Tigrigna (Äthiopien)  <br/> |1139  <br/> |
 |Tigrigna (Eritrea)  <br/> |2163  <br/> |
 |Türkisch  <br/> |1055  <br/> |
-|Turkmenischen  <br/> |1090  <br/> |
+|Turkmenische  <br/> |1090  <br/> |
 |Ukrainisch  <br/> |1058  <br/> |
 |Urdu  <br/> |1056  <br/> |
 |Usbekisch (Kyrillisch)  <br/> |2115  <br/> |
@@ -146,17 +146,17 @@ Die folgende Tabelle enthält eine Liste der Sprachen und die entsprechenden LCI
 |Jiddisch  <br/> |1085  <br/> |
 |Yoruba  <br/> |1130  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle "DocLangID aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle DocLangID anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |"DocLangID  <br/> |
+|Zellenname:  <br/> |DocLangID  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle "DocLangID aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Um einen Verweis auf die DocLangID-Zelle nach Index aus einem Programm zu erhalten, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowDoc** <br/> |
 |Zellenindex:  <br/> |**visDocLangID** <br/> |
    

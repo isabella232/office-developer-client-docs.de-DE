@@ -25,11 +25,11 @@ ms.locfileid: "33431120"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine signierte 64-Bit-Ganzzahl, die einen Währungswert darstellt. 
+Enthält eine signierte ganzzahlige 64-Bit-Zahl, die einen Währungswert darstellt. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct tagCY
@@ -40,21 +40,21 @@ typedef struct tagCY
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **Lo**
   
-> Low-Order 32 Bits des Currency-Werts. 
+> 32 Bit niedriger Reihenfolge des Währungswerts. 
     
  **Hallo**
   
-> High-Order 32 Bits des Currency-Werts.
+> 32 Bit in hoher Reihenfolge des Währungswerts.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **Währungs** Struktur ist eine skalierte ganzzahlige Darstellung einer Dezimalzahl mit vier Ziffern rechts vom Dezimaltrennzeichen. Beispielsweise ist ein gespeicherter Wert von 327500 so auszulegen, dass er einen Währungswert von 32,7500 darstellt. 
+Die **CURRENCY-Struktur** ist eine skalierte ganzzahlige Darstellung einer Dezimalzahl mit vier Ziffern rechts neben dem Dezimalkomma. Beispielsweise ist ein gespeicherter Wert von 327500 so zu verstehen, dass er einen Währungswert von 32,7500 darstellt. 
   
-Die **Currency** -Struktur dient zur Beschreibung einer Eigenschaft vom Typ PT_CURRENCY. Weitere Informationen zu Eigenschaftstypen finden Sie unter [MAPI property Type Overview](mapi-property-type-overview.md).
+Die **CURRENCY-Struktur** wird verwendet, um eine Eigenschaft vom Typ PT_CURRENCY. Informationen zu Eigenschaftstypen finden Sie unter [MAPI Property Type Overview](mapi-property-type-overview.md).
   
 ## <a name="see-also"></a>Siehe auch
 

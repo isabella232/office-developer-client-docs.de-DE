@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251465
 localization_priority: Normal
 ms.assetid: cb6326a5-1bf8-b6a3-5c0d-d38c071353a5
-description: Gibt den Rest (Modulo) zurück, der ergibt, wenn eine Zahl durch einen Divisor geteilt wird.
+description: Gibt den Rest (Modulus) zurück, der ergibt, wenn eine Zahl durch einen Teiler geteilt wird.
 ms.openlocfilehash: f6b713b1b3a9d2afa85f49de9d451642a00d8dad
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,24 +18,24 @@ ms.locfileid: "33429271"
 ---
 # <a name="modulus-function"></a>MODULUS Function
 
-Gibt den Rest (Modulo) zurück, der ergibt, wenn eine Zahl durch einen Divisor geteilt wird.
+Gibt den Rest (Modulus) zurück, der ergibt, wenn eine Zahl durch einen Teiler geteilt wird.
   
 ## <a name="syntax"></a>Syntax
 
-MODULo (* * *Number* * *, * * *Divisor* * *) 
+MODULUS(** *number* **, ** *divisor* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _Anzahl_ <br/> |Erforderlich  <br/> |**Number** <br/> |Der Dividend.  <br/> |
-| _Divisor_ <br/> |Erforderlich  <br/> |**Number** <br/> |Der Divisor.  <br/> |
+| _divisor_ <br/> |Erforderlich  <br/> |**Number** <br/> |Der Divisor.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
-Zahl
+Nummer
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Das Ergebnis hat das gleiche Vorzeichen wie der Divisor. Wenn der Divisor 0 ist, wird der Fehler #DIV/0! zurückgegeben. 
   

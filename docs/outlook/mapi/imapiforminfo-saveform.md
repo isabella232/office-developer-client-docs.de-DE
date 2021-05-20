@@ -37,7 +37,7 @@ HRESULT SaveForm(
 
  _szFileName_
   
-> in Eine Zeichenfolge, die die Beschreibungsdatei des Formulars benennt, in der die Beschreibung gespeichert wird. Dieser Dateiname muss die. FDM-Erweiterung aufweisen.
+> [in] Eine Zeichenfolge, die die Beschreibungsnachrichtendatei des Formulars benennt, in der die Beschreibung gespeichert wird. Dieser Dateiname muss die .fdm-Erweiterung haben.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -47,21 +47,21 @@ S_OK
     
 MAPI_E_EXTENDED_ERROR 
   
-> Die Konfigurationsdatei konnte nicht geschrieben werden. Rufen Sie die [IMAPIProp:: getlasterroraufzurufen](imapiprop-getlasterror.md) -Methode auf, um die [MAPIERROR](mapierror.md) -Struktur abzurufen, die dem Fehler zugeordnet ist. 
+> Die Konfigurationsdatei konnte nicht geschrieben werden. Rufen Sie die [IMAPIProp::GetLastError-Methode](imapiprop-getlasterror.md) auf, um die [MAPIERROR-Struktur](mapierror.md) zu erhalten, die dem Fehler zugeordnet ist. 
     
 MAPI_E_NO_SUPPORT 
   
-> **SaveForm** wurde wahrscheinlich aufgerufen, um ein Formular im lokalen Formular Container zu speichern. **SaveForm** wird für den lokalen Formular Container nicht unterstützt. 
+> **SaveForm** wurde wahrscheinlich aufgerufen, um ein Formular im lokalen Formularcontainer zu speichern. **SaveForm** wird im lokalen Formularcontainer nicht unterstützt. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Client Anwendungen rufen die **IMAPIFormInfo:: SaveForm** -Methode auf, um eine Beschreibung des aktuellen Formulars in der Datei mit dem angegebenen Dateinamen zu speichern. **SaveForm** erstellt eine Konfigurationsdatei. 
+Clientanwendungen rufen die **IMAPIFormInfo::SaveForm-Methode** auf, um eine Beschreibung des aktuellen Formulars in der Datei mit dem angegebenen Dateinamen zu speichern. **SaveForm** erstellt eine Konfigurationsdatei. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Sie können Formulare neu installieren, indem Sie Sie in einer Liste von Formular Deskriptor-Nachrichten in einem Dialogfeld auswählen, das von Formularbibliothek Anbietern angezeigt wird. Die empfohlene Erweiterung für Formular Deskriptor-Nachrichten ist. fdm.
+Sie können Formulare erneut installieren, indem Sie sie aus einer Liste von Formularbeschreibungsmeldungen in einem Dialogfeld auswählen, das von Formularbibliotheksanbietern angezeigt wird. Die empfohlene Erweiterung für Formulardeskriptormeldungen ist .fdm.
   
-Rufen Sie die [IMAPIProp:: getlasterroraufzurufen](imapiprop-getlasterror.md) -Methode, wenn **SaveForm** MAPI_E_EXTENDED_ERROR zurückgibt, und überprüfen Sie die zurückgegebene **MAPIERROR** -Struktur, um die Bedingung zu bestimmen, die den Fehler verursacht hat. 
+Rufen Sie [die IMAPIProp::GetLastError-Methode](imapiprop-getlasterror.md) auf, wenn **SaveForm** MAPI_E_EXTENDED_ERROR zurückgibt, und überprüfen Sie die zurückgegebene **MAPIERROR-Struktur,** um die Bedingung zu ermitteln, die den Fehler verursacht hat. 
   
 ## <a name="see-also"></a>Siehe auch
 

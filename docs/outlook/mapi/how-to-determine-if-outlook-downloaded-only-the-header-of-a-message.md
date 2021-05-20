@@ -17,7 +17,7 @@ ms.locfileid: "33428151"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-In diesem Thema wird ein Codebeispiel in Visual C++ gezeigt, das die [kanonische Pidlidheaderitem (-Eigenschaft](pidlidheaderitem-canonical-property.md) verwendet, um zu bestimmen, ob Microsoft Outlook 2013 nur die Kopfzeile einer Nachricht oder die Kopfzeile und den Text einer Nachricht heruntergeladen hat. 
+In diesem Thema wird ein Codebeispiel in Visual C++ gezeigt, das die benannte [PidLidHeaderItem-Kanonische](pidlidheaderitem-canonical-property.md) Eigenschaft verwendet, um zu bestimmen, ob Microsoft Outlook 2013 nur die Kopfzeile einer Nachricht oder die Kopfzeile und den Textkörper einer Nachricht heruntergeladen hat. 
   
 ```cpp
 BOOL bIsHeader(LPMESSAGE lpMessage) 

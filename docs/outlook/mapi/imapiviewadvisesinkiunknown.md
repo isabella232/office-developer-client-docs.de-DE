@@ -29,9 +29,9 @@ Empfängt Benachrichtigungen von Formularen.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiform. h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Anzeigen von Advise-Senke-Objekten  <br/> |
-|Implementiert von:  <br/> |Formular Betrachter  <br/> |
+|Headerdatei  <br/> |Mapiform.h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Anzeigen von Ratensenkenobjekten  <br/> |
+|Implementiert von:  <br/> |Formularanzeigen  <br/> |
 |Aufgerufen von:  <br/> |Formularobjekte  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPIViewAdviseSink  <br/> |
 |Zeigertyp:  <br/> |LPMAPIVIEWADVISESINK  <br/> |
@@ -40,11 +40,11 @@ Empfängt Benachrichtigungen von Formularen.
 
 |||
 |:-----|:-----|
-|[OnShutdown](imapiviewadvisesink-onshutdown.md) <br/> |Benachrichtigt den Formular Betrachter darüber, dass ein Formular geschlossen wird.  <br/> |
-|[OnNewMessage](imapiviewadvisesink-onnewmessage.md) <br/> |Benachrichtigt den Formular Betrachter, dass eine neue oder eine vorhandene Nachricht in ein Formular geladen wurde.  <br/> |
-|[OnPrint](imapiviewadvisesink-onprint.md) <br/> |Benachrichtigt den Formular Betrachter über den Druckstatus eines Formulars.  <br/> |
-|[OnSubmitted](imapiviewadvisesink-onsubmitted.md) <br/> |Benachrichtigt den Formular Betrachter darüber, dass die aktuelle Nachricht an MAPI-Spooler übermittelt wurde.  <br/> |
-|[OnSaved](imapiviewadvisesink-onsaved.md) <br/> |Benachrichtigt den Formular Betrachter darüber, dass die aktuelle Nachricht in einem Formular gespeichert wurde.  <br/> |
+|[OnShutdown](imapiviewadvisesink-onshutdown.md) <br/> |Benachrichtigt die Formularanzeige, dass ein Formular geschlossen wird.  <br/> |
+|[OnNewMessage](imapiviewadvisesink-onnewmessage.md) <br/> |Benachrichtigt die Formularanzeige, dass eine neue oder eine vorhandene Nachricht in einem Formular geladen wurde.  <br/> |
+|[OnPrint](imapiviewadvisesink-onprint.md) <br/> |Benachrichtigt die Formularanzeige über den Druckstatus eines Formulars.  <br/> |
+|[OnSubmitted](imapiviewadvisesink-onsubmitted.md) <br/> |Benachrichtigt die Formularanzeige, dass die aktuelle Nachricht an den MAPI-Spooler übermittelt wurde.  <br/> |
+|[OnSaved](imapiviewadvisesink-onsaved.md) <br/> |Benachrichtigt die Formularanzeige, dass die aktuelle Nachricht in einem Formular gespeichert wurde.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

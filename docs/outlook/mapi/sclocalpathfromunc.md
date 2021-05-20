@@ -25,13 +25,13 @@ ms.locfileid: "33432233"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Sucht einen lokalen Pfad Gegenstück zum angegebenen UNC-Pfad (Universal Naming Convention). 
+Sucht ein lokales Pfad-Gegenstück zum angegebenen Unc-Pfad (Universal Naming Convention). 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 SCODE ScLocalPathFromUNC(
@@ -45,25 +45,25 @@ SCODE ScLocalPathFromUNC(
 
  _szUNC_
   
-> in Ein Pfad \\im Format [ _Server_]\[ _Freigabe_\[ _Pfad_] einer Datei oder eines Verzeichnisses.
+> [in] Ein Pfad im Format \\ [ _server_] \[ _share_] \[ _path_] einer Datei oder eines Verzeichnisses.
     
  _szLocal_
   
-> Out Ein Pfad im Format [ _Drive:_]\[ _path_] derselben Datei oder desselben Verzeichnisses wie für den _szUNC_ -Parameter. 
+> [out] Ein Pfad im Format [ _drive:_] path ] derselben Datei oder desselben Verzeichnisses \[ wie für den _szUNC-Parameter._ 
     
  _cchLocal_
   
-> in Die Größe des Puffers für die Ausgabezeichenfolge.
+> [in] Größe des Puffers für die Ausgabezeichenfolge.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK
   
-> Ein lokaler Pfad wurde erfolgreich gefunden.
+> Ein lokaler Pfad wurde erfolgreich lokalisiert.
     
 MAPI_E_TOO_BIG
   
->  _szLocal_ war nicht groß genug, um das Ergebnis zu halten. 
+>  _szLocal war_ nicht groß genug, um das Ergebnis zu halten. 
     
 S_FALSE
   
@@ -71,7 +71,7 @@ S_FALSE
     
 MAPI_E_NOT_FOUND
   
-> Es wurde kein lokaler Pfad gefunden.
+> Ein lokaler Pfad wurde nicht gefunden.
     
 ## <a name="see-also"></a>Siehe auch
 

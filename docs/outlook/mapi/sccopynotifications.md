@@ -29,9 +29,9 @@ Kopiert eine Gruppe von Ereignisbenachrichtigungen in einen einzelnen Speicherbl
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 SCODE ScCopyNotifications(
@@ -46,19 +46,19 @@ SCODE ScCopyNotifications(
 
  _cntf_
   
-> in Die Anzahl [](notification.md) der Benachrichtigungs Strukturen im durch den _rgntf_ -Parameter angegebenen Array. 
+> [in] Anzahl der [NOTIFICATION-Strukturen](notification.md) im Array, das durch den  _rgntf-Parameter angegeben_ wird. 
     
  _rgntf_
   
-> in Zeiger auf ein Array von **Benachrichtigungs** Strukturen, das die zu kopierenden Ereignisbenachrichtigungen definiert. 
+> [in] Zeiger auf ein Array von **NOTIFICATION-Strukturen,** die die zu kopierenden Ereignisbenachrichtigungen definieren. 
     
  _pvDst_
   
-> Out Zeiger auf die zurückgegebenen Benachrichtigungen. 
+> [out] Zeiger auf die zurückgegebenen Benachrichtigungen. 
     
- _PCB_
+ _leiterplatte_
   
-> Out Optionaler Zeiger auf eine Variable, in der die Größe des Arrays, auf das durch den _rgntf_ -Parameter verwiesen wird, in Bytes gespeichert wird. Wenn nicht NULL, wird der _PCB_ -Parameter auf die Anzahl von Bytes festgelegt, die im Parameter _pvDst_ gespeichert sind. 
+> [out] Optionaler Zeiger auf eine Variable, in der die Größe des Arrays in Bytes gespeichert wird, auf das der  _rgntf-Parameter_ verweist. Wenn nicht NULL, wird  _der Parameter "pcb"_ auf die Anzahl der Bytes festgelegt, die im  _pvDst-Parameter gespeichert_ sind. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -70,8 +70,8 @@ E_INVALIDARG
   
 > Es wurde eine ungültige Benachrichtigung gefunden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn NULL in den _PCB_ -Parameter übergeben wird, wird kein Kopieren ausgeführt; Wenn ein Wert ungleich NULL in _PCB_übergeben wird, kopiert die **ScCopyNotifications** -Funktion die Größe des Arrays und das Array selbst in einen einzelnen Speicherblock. Wenn _PCB_ nicht NULL ist, wird die Anzahl der Bytes festgelegt, die im Parameter _pvDst_ gespeichert sind. Der Parameter _pvDst_ muss so hoch sein, dass er das gesamte Array enthält. 
+Wenn NULL im  _#A0 übergeben_ wird, wird kein Kopieren ausgeführt. Wenn ein Nicht-Null-Wert  _in_ einer Leiterplatte übergeben wird, kopiert die **ScCopyNotifications-Funktion** die Größe des Arrays und des Arrays selbst in einen einzelnen Speicherblock. Wenn  _die Leiterplatte_ nicht NULL ist, wird sie auf die Anzahl der Bytes festgelegt, die im  _pvDst-Parameter gespeichert_ sind. Der  _pvDst-Parameter_ muss groß genug sein, um das gesamte Array enthalten zu können. 
   
 

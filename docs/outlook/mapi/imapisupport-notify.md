@@ -23,7 +23,7 @@ ms.locfileid: "33435936"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Sendet eine Benachrichtigung über ein angegebenes Ereignis an eine Advise-Quelle, die ursprünglich für die Benachrichtigung über die [IMAPISupport:: subscribe](imapisupport-subscribe.md) -Methode registriert wurde. 
+Sendet eine Benachrichtigung über ein angegebenes Ereignis an eine Hinweisquelle, die ursprünglich über die [IMAPISupport::Subscribe-Methode](imapisupport-subscribe.md) für die Benachrichtigung registriert wurde. 
   
 ```cpp
 HRESULT Notify(
@@ -38,23 +38,23 @@ ULONG FAR * lpulFlags
 
 _lpKey_
   
-> in Ein Zeiger auf den Benachrichtigungs Schlüssel für das Advise-Quellobjekt. Der _lpKey_ -Parameter darf nicht NULL sein. 
+> [in] Ein Zeiger auf den Benachrichtigungsschlüssel für das advise-Quellobjekt. Der  _lpKey-Parameter_ darf nicht NULL sein. 
     
 _cNotification_
   
-> in Die Anzahl der Benachrichtigungs Strukturen, auf die durch den _lpNotifications_ -Parameter verwiesen wird. 
+> [in] Die Anzahl der Benachrichtigungsstrukturen, auf die der  _lpNotifications-Parameter_ verweist. 
     
 _lpNotifications_
   
-> in Ein Zeiger auf ein Array von [Benachrichtigungs](notification.md) Strukturen, die ausstehende Benachrichtigungen beschreiben. 
+> [in] Ein Zeiger auf ein Array von [NOTIFICATION-Strukturen,](notification.md) die ausstehende Benachrichtigungen beschreiben. 
     
 _lpulFlags_
   
-> [in, out] Eine Bitmaske von Flags, die den Benachrichtigungsprozess steuert. Bei Eingabe kann das folgende Flag festgelegt werden:
+> [in, out] Eine Bitmaske mit Flags, die den Benachrichtigungsprozess steuert. Bei der Eingabe kann das folgende Flag festgelegt werden:
     
   - MAPI_UNICODE 
     
-    > Die Zeichenfolgen in den Benachrichtigungs Strukturen, auf die von _lpNotifications_ verwiesen wird, liegen im Unicode-Format vor. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, werden die Zeichenfolgen im ANSI-Format. 
+    > Die Zeichenfolgen in den Benachrichtigungsstrukturen, auf die  _von lpNotifications_ verwiesen wird, sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Zeichenfolgen im ANSI-Format. 
 
     Bei der Ausgabe kann MAPI das folgende Flag festlegen:
         
@@ -68,23 +68,23 @@ S_OK
   
 > Die Benachrichtigungen wurden erfolgreich generiert.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPISupport:: notify** -Methode wird für alle Support Objekte des Dienstanbieters implementiert. Dienstanbieter rufen **Notify** auf, um zu fordern, dass MAPI eine Benachrichtigung für eine Advise-Senke generiert, die zuvor für die Benachrichtigung über die **IMAPISupport:: subscribe** -Methode registriert wurde. 
+Die **IMAPISupport::Notify-Methode** wird für alle Dienstanbieterunterstützungsobjekte implementiert. Dienstanbieter rufen **Notify auf,** um an zu fordern, dass MAPI eine Benachrichtigung für eine Ratgebersenke generiert, die zuvor über die **IMAPISupport::Subscribe-Methode** für die Benachrichtigung registriert wurde. 
   
-**Notify** kopiert die Strukturen, auf die durch den _lpNotifications_ -Parameter verwiesen wird, in den Arbeitsspeicher und ruft die [IMAPIAdviseSink:: OnNotify](imapiadvisesink-onnotify.md) -Methode der entsprechenden Advise-Senke auf. Wenn **OnNotify** mit der Benachrichtigung beendet wird, gibt Sie den betreffenden Arbeitsspeicher frei. Der Aufrufer muss keinen Arbeitsspeicher reservieren; MAPI führt alle erforderlichen Speicherzuordnungen aus. 
+**Notify** kopiert die Strukturen, auf die der  _lpNotifications-Parameter_ verweist, in den Arbeitsspeicher und ruft die [IMAPIAdviseSink::OnNotify-Methode](imapiadvisesink-onnotify.md) der entsprechenden Ratensenke auf. Wenn **OnNotify** mit der Benachrichtigung fertig ist, gibt es den betroffenen Arbeitsspeicher frei. Der Aufrufer muss keinen Arbeitsspeicher zuweisen. MAPI führt alle erforderlichen Speicherzuweisungen durch. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Der im _lpKey_ -Parameter übergebene Benachrichtigungs Schlüssel sollte mit dem Schlüssel identisch sein, der in _LpKey_ an die **IMAPISupport:: subscribe** -Methode übergeben wird. Viele Anbieter verwenden den Eintragsbezeichner der Advise-Quelle als Schlüssel, aber andere Daten, wie beispielsweise ein Dateipfad, können verwendet werden. MAPI verwendet diesen Schlüssel, um alle Registrierungen für Benachrichtigungen in der angegebenen Advise-Quelle zu finden. 
+Der im  _lpKey-Parameter_ übergebene Benachrichtigungsschlüssel sollte mit dem schlüssel identisch sein, der in  _lpKey_ an die **IMAPISupport::Subscribe-Methode übergeben** wurde. Viele Anbieter verwenden den Eintragsbezeichner der Quelle "Advise" als Schlüssel, aber andere Daten, z. B. ein Dateipfad, können verwendet werden. MAPI verwendet diesen Schlüssel, um alle Registrierungen für Benachrichtigungen in der identifizierten Informationsquelle zu finden. 
   
-Stellen Sie sicher, dass Sie das **lpEntryID** -Element der Benachrichtigungsstruktur auf eine langfristige Eintrags-ID festlegen. 
+Stellen Sie sicher, dass Sie das **lpEntryID-Element** der Benachrichtigungsstruktur auf einen langfristigen Eintragsbezeichner festlegen. 
   
-Wenn Sie das NOTIFY_SYNC-Flag für den **subscribe** -Aufruf für eine der ausstehenden Benachrichtigungen festlegen, ruft **Notify** die **IMAPIAdviseSink:: OnNotify** -Methoden-Rückruffunktionen vor dem zurückgeben auf. Eine Advise-Senke kann manuell oder durch Aufrufen von [HrAllocAdviseSink](hrallocadvisesink.md)erstellt werden. Mit der **HrAllocAdviseSink** -Funktion kann der Aufrufer eine Rückruffunktion angeben, die Anrufe im Rahmen der Benachrichtigung **benachrichtigt** . Die Rückruffunktion entspricht dem Prototyp [NOTIFCALLBACK](notifcallback.md) . Von Clients implementierte Rückruffunktionen geben immer S_OK zurück; von Dienstanbietern implementierte Rückruffunktionen können CALLBACK_DISCONTINUE zurückgeben. 
+Wenn Sie das NOTIFY_SYNC für den  Aufruf abonnieren für eine der ausstehenden Benachrichtigungen festlegen, ruft **Notify** die Rückruffunktionen der **IMAPIAdviseSink::OnNotify-Methode** auf, bevor sie zurückkehrt. Eine Ratensenke kann manuell oder durch Aufrufen von [HrAllocAdviseSink erstellt werden.](hrallocadvisesink.md) Die **HrAllocAdviseSink-Funktion** ermöglicht es dem Aufrufer, eine Rückruffunktion anzugeben, die **Aufrufe** als Teil der Benachrichtigung benachrichtigt. Die Rückruffunktion entspricht dem [NOTIFCALLBACK-Prototyp.](notifcallback.md) Von Clients implementierte Rückruffunktionen geben immer S_OK; Rückruffunktionen, die von Dienstanbietern implementiert werden, können CALLBACK_DISCONTINUE. 
   
-Wenn eine Rückruffunktion CALLBACK_DISCONTINUE zurückgibt, beendet MAPI das Senden von Benachrichtigungen und gibt NOTIFY_CANCELED im _lpulFlags_ -Parameter der **Notify** -Methode zurück. Sie können davon ausgehen, dass der Prozess inaktiv ist und die Generierung von Benachrichtigungen für diesen Prozess beenden. Wenn **Notify** 0 in _lpulFlags_zurückgibt, ist der Prozess weiterhin aktiv, und Sie sollten weiterhin nach Bedarf Benachrichtigungen senden.
+Wenn eine Rückruffunktion CALLBACK_DISCONTINUE, beendet MAPI das Senden von Benachrichtigungen und gibt NOTIFY_CANCELED _LpulFlags-Parameter_ der **Notify-Methode** zurück. Sie können davon ausgehen, dass der Prozess inaktiv ist, und die Generierung von Benachrichtigungen für diesen Prozess beenden. Wenn **Notify** 0 in  _lpulFlags_ zurückgibt, ist der Prozess weiterhin aktiv, und Sie sollten weiterhin Benachrichtigungen senden.
   
-Wenn Sie synchrone Benachrichtigungen verwenden, achten Sie darauf, Deadlock-Situationen zu vermeiden.
+Wenn Sie synchrone Benachrichtigungen verwenden, achten Sie darauf, Deadlocksituationen zu vermeiden.
   
 Weitere Informationen zum Benachrichtigungsprozess finden Sie unter [Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md). 
   
@@ -95,6 +95,6 @@ Weitere Informationen zum Benachrichtigungsprozess finden Sie unter [Ereignisben
 - [NOTIFCALLBACK](notifcallback.md) 
 - [Benachrichtigung](notification.md)  
 - [NOTIFKEY](notifkey.md)  
-- [Kanonische Pidtagrecordkey (-Eigenschaft](pidtagrecordkey-canonical-property.md)  
+- [PidTagRecordKey (kanonische Eigenschaft)](pidtagrecordkey-canonical-property.md)  
 - [IMAPISupport: IUnknown](imapisupportiunknown.md)
 

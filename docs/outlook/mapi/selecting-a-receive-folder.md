@@ -1,5 +1,5 @@
 ---
-title: Auswählen eines Empfangs Ordners
+title: Auswählen eines Empfangsordners
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,36 +15,36 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33428417"
 ---
-# <a name="selecting-a-receive-folder"></a>Auswählen eines Empfangs Ordners
+# <a name="selecting-a-receive-folder"></a>Auswählen eines Empfangsordners
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ein Empfangsordner ist der Speicherort eingehender Nachrichten einer bestimmten Klasse. Bei IPM-und verwandten Berichtnachrichten weist MAPI den Posteingang als standardmäßigen Empfangsordner zu. Für IPC und zugehörige Berichtnachrichten weist MAPI den Stammordner des Nachrichtenspeichers als standardmäßigen Empfangsordner zu. Sie können diese Zuordnungen ändern oder zusätzliche Zuordnungen für andere Nachrichtenklassen vornehmen. Die explizite Zuweisung von Empfangs Ordnern für die unterstützten Nachrichtenklassen des Clients ist optional.
+In einem Empfangsordner werden eingehende Nachrichten einer bestimmten Klasse platziert. Für IPM- und zugehörige Berichtsnachrichten weist MAPI den Posteingang als Standard-Empfangsordner zu. Für IPC- und zugehörige Berichtsnachrichten weist MAPI den Stammordner des Nachrichtenspeichers als Standard-Empfangsordner zu. Sie können diese Zuordnungen ändern oder zusätzliche Zuordnungen für andere Nachrichtenklassen erstellen. Die explizite Zuweisung von Empfangsordnern für die unterstützten Nachrichtenklassen Ihres Clients ist optional.
   
-Wenn für eine Klasse für eingehende Nachrichten kein Empfangsordner zugewiesen ist, verwendet der Nachrichtenspeicher Anbieter automatisch den Ordner Receive für die Klasse, die mit dem längsten möglichen Präfix der eingehenden Klasse übereinstimmt. Wenn Ihr Client beispielsweise eine Nachricht der Klasse IPM erhält. Hinweis. myDocument und der einzige empfangene Ordner, der eingerichtet wurde, ist der Posteingang für IPM-Nachrichten, diese Nachricht wird im Posteingang abgelegt, da IPM. Hinweis. myDocument wird von der Basisklasse IPM abgeleitet.
+Wenn einer eingehenden Nachrichtenklasse kein Empfangsordner zugewiesen ist, verwendet der Nachrichtenspeicheranbieter automatisch den Empfangsordner für die Klasse, die dem längsten möglichen Präfix der eingehenden Klasse entspricht. Wenn Ihr Client z. B. eine Nachricht der Klasse IPM empfängt. Note.MyDocument und der einzige Empfangsordner, der eingerichtet wurde, ist der Posteingang für IPM-Nachrichten, diese Nachricht wird im Posteingang platziert, da IPM. Note.MyDocument leitet sich von der Basisklasse IPM ab.
   
 Wenn Sie einen Empfangsordner für IPC-Nachrichten zuweisen, verwenden Sie niemals einen Ordner aus der IPM-Unterstruktur. Diese Ordner sollten nur für IPM-Nachrichten reserviert werden. Verwenden Sie stattdessen einen Ordner, der im Stammordner des Nachrichtenspeichers enthalten ist. 
   
  **So erstellen Sie einen Empfangsordner für eine IPM-Nachrichtenklasse**
   
-1. Rufen Sie die [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode des Nachrichtenspeichers auf, um die **PR_IPM_SUBTREE_ENTRYID** ([pidtagipmsubtreeentryid (](pidtagipmsubtreeentryid-canonical-property.md))-Eigenschaft abzurufen. 
+1. Rufen Sie die [IMAPIProp::GetProps-Methode](imapiprop-getprops.md) des **Nachrichtenspeichers** auf, um die PR_IPM_SUBTREE_ENTRYID ([PidTagIpmSubtreeEntryId](pidtagipmsubtreeentryid-canonical-property.md)) -Eigenschaft abzurufen. 
     
-2. Rufen Sie [IMsgStore:: OpenEntry](imsgstore-openentry.md) mit **PR_IPM_SUBTREE_ENTRYID** als Eintragsbezeichner auf, um den Stammordner der IPM-Unterstruktur im Nachrichtenspeicher zu öffnen. 
+2. Rufen [Sie IMsgStore::OpenEntry](imsgstore-openentry.md) mit **PR_IPM_SUBTREE_ENTRYID** als Eintrags-ID auf, um den Stammordner der IPM-Unterstruktur im Nachrichtenspeicher zu öffnen. 
     
-3. Rufen Sie [IMAPIFolder:: CreateFolder](imapifolder-createfolder.md) auf, um den Empfangsordner zu erstellen. 
+3. Rufen [Sie IMAPIFolder::CreateFolder auf,](imapifolder-createfolder.md) um den Empfangsordner zu erstellen. 
     
-4. Rufen Sie [IMsgStore:: SetReceiveFolder](imsgstore-setreceivefolder.md) auf, um den neuen Ordner der IPM-Nachrichtenklasse zuzuordnen. 
+4. Rufen [Sie IMsgStore::SetReceiveFolder auf,](imsgstore-setreceivefolder.md) um den neuen Ordner Ihrer IPM-Nachrichtenklasse zu zuordnungen. 
     
  **So erstellen Sie einen Empfangsordner für eine IPC-Nachrichtenklasse**
   
-1. Rufen Sie [IMsgStore:: OpenEntry](imsgstore-openentry.md) mit einer NULL-Eintrags-ID auf, um den Stammordner des Nachrichtenspeichers zu öffnen. 
+1. Rufen [Sie IMsgStore::OpenEntry](imsgstore-openentry.md) mit einem Nulleintragsbezeichner auf, um den Stammordner des Nachrichtenspeichers zu öffnen. 
     
-2. Rufen Sie [IMAPIFolder:: CreateFolder](imapifolder-createfolder.md) auf, um den Empfangsordner zu erstellen. 
+2. Rufen [Sie IMAPIFolder::CreateFolder auf,](imapifolder-createfolder.md) um den Empfangsordner zu erstellen. 
     
-3. Rufen Sie [IMsgStore:: SetReceiveFolder](imsgstore-setreceivefolder.md) auf, um den neuen Ordner der IPC-Nachrichtenklasse zuzuordnen. 
+3. Rufen [Sie IMsgStore::SetReceiveFolder auf,](imsgstore-setreceivefolder.md) um den neuen Ordner Ihrer IPC-Nachrichtenklasse zu zuordnungen. 
     
-Weisen Sie den empfangenen Ordner, den Sie für Nachrichten verwenden, für Verwandte Berichtnachrichten zu. Wenn Ihr Client beispielsweise IPM. Hinweis Nachrichten, Einrichten eines Empfangs Ordners für zukünftige IPM. Hinweis Nachrichten und derselbe Empfänger Ordner für zukünftige Berichte. IPM. Note-Nachrichten.
+Weisen Sie den Empfangsordner zu, den Sie für Nachrichten für verwandte Berichtsnachrichten verwenden. Beispiel: Wenn Ihr Client IPM empfängt. Notieren Sie Nachrichten, richten Sie einen Empfangsordner für zukünftige IPM ein. Notieren Sie Nachrichten und denselben Empfangsordner für zukünftige Report.IPM.Note-Nachrichten.
   
 

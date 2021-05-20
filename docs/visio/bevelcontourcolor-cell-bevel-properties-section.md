@@ -1,12 +1,12 @@
 ---
-title: Zelle "BevelContourColor" (Abschnitt "Fase Properties")
+title: Zelle "BevelContourColor" (Abschnitt "Bevel Properties")
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 90bc9be5-282e-4a84-9d8b-e11788070768
-description: Bestimmt die Farbe der Kontur der Abschrägung im RGB-Wert oder vom aktiven Design.
+description: Bestimmt die Farbe der Abschrägungskontur im RGB-Wert oder wie durch das aktive Design bestimmt.
 ms.openlocfilehash: df22f001dc7fa85e192ab93d5ff799a0b424aefe
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -14,24 +14,24 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33428382"
 ---
-# <a name="bevelcontourcolor-cell-bevel-properties-section"></a>Zelle "BevelContourColor" (Abschnitt "Fase Properties")
+# <a name="bevelcontourcolor-cell-bevel-properties-section"></a>Zelle "BevelContourColor" (Abschnitt "Bevel Properties")
 
-Bestimmt die Farbe der Kontur der Abschrägung im RGB-Wert oder vom aktiven Design.
+Bestimmt die Farbe der Abschrägungskontur im RGB-Wert oder wie durch das aktive Design bestimmt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle **BevelContourColor** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die **Zelle BevelContourColor** anhand des Namens aus einer anderen Formel, nach dem Wert des **N-Attributs** eines **Cell-Elements** oder aus einem Programm mit der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | BevelContourColor  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle **BevelContourColor** aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die **Zelle "BevelContourColor"** nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowBevelProperties** <br/> |
-| Zellenindex:  <br/> |**VIS-BevelContourColor** <br/> |
+| Zellenindex:  <br/> |**vis BevelContourColor** <br/> |
    
 

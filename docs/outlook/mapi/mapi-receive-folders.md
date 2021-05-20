@@ -33,7 +33,7 @@ Eine Empfangsordner enth�lt eingehende Nachrichten von einer bestimmten Nachri
     
 Alle Berichtnachrichten, auch wenn diese als Antwort auf eine Nachricht IPK gesendet werden im Ordner Posteingang platziert. IPK-Clientanwendungen, die ihre eigenen Berichte verarbeiten m�ssen explizit eine Empfangsordner f�r die Klasse des Berichts hinzuf�gen. Wenn beispielsweise ein Client erwartet, zum Empfangen von Nachrichten mit der IPK-Klasse. Paper.Order, sollten sie die [IMsgStore::SetReceiveFolder](imsgstore-setreceivefolder.md) -Methode zum Herstellen einer Empfangsordner f�r Berichte mit der Report.IPC.Paper.Order-Klasse aufrufen. 
   
-Erhalten Sie Ordner, den Zuordnungen f�r die hierarchische Organisation von Nachrichtenklassen basieren. Clients k�nnen explizit eine Zuordnung zwischen einem Empfangsordner und eine Nachrichtenklasse herstellen oder verwenden Sie die MAPI-Standardordner empfangen. Festlegen von Clients in der Regel ein Ordner zum Empfangen von Nachrichten f�r eine Basisklasse und alle Unterklassen. Beispielsweise w�rde ein typischer Client eine Zuordnung f�r Nachrichten mit der Klasse **MyClass**herstellen. Wenn der Client Nachrichten mit Klassen **MyClass.Home** oder **MyClass.Home.Kitchen.Computer**empfangen, w�rde dann diese Nachrichten den Empfangsordner f�r die Basisklasse **MyClass**�ffnen.
+Erhalten Sie Ordner, den Zuordnungen f�r die hierarchische Organisation von Nachrichtenklassen basieren. Clients k�nnen explizit eine Zuordnung zwischen einem Empfangsordner und eine Nachrichtenklasse herstellen oder verwenden Sie die MAPI-Standardordner empfangen. Festlegen von Clients in der Regel ein Ordner zum Empfangen von Nachrichten f�r eine Basisklasse und alle Unterklassen. Beispielsweise w�rde ein typischer Client eine Zuordnung f�r Nachrichten mit der Klasse **MyClass** herstellen. Wenn der Client Nachrichten mit Klassen **MyClass.Home** oder **MyClass.Home.Kitchen.Computer** empfangen, w�rde dann diese Nachrichten den Empfangsordner f�r die Basisklasse **MyClass**�ffnen.
   
 Es gibt drei Nachricht, dass Store-Methoden, mit denen Clients zum Arbeiten mit Ordnern erhalten:
   
@@ -55,14 +55,14 @@ Die folgende Tabelle zeigt, wie Nachrichten mit verschiedenen Klassen an die ent
   
 |**Eingehende Nachricht-Klasse**|**Ordner empfangen**|
 |:-----|:-----|
-|**IPM. Hinweis. Sample. Simple** <br/> |F�r Beispielordner  <br/> |
+|**IPM. Note.Sample.Simple** <br/> |F�r Beispielordner  <br/> |
 |**IPM.Note** <br/> |Ordner Posteingang  <br/> |
 |**IPM. Timecard** <br/> |Ordner Posteingang  <br/> |
-|**IPM. Note. Sample. Simple. Total** <br/> |F�r Beispielordner  <br/> |
+|**IPM. Note.Sample.Simple.Totally** <br/> |F�r Beispielordner  <br/> |
    
 Clients rufen Sie die **SetReceiveFolder** -Methode, um eine explizite Zuordnung zwischen einem bestimmten Nachrichtenklasse t�tigen und annehmen von Ordner. Wenn eine Nachricht an eine leere Nachrichtenklasse �bermittelt werden, platziert MAPI die Nachricht im Ordner "empfangen", die f�r ein Pr�fix der leere-Klasse definiert ist. Wenn der Client eine Empfangsordner f�r Nachrichten mit Klasse **IPM** hergestellt hat und eine Nachricht mit der Klasse **IPM.Note.Test** �bermittelt wird, wird diese Nachricht im Ordner "empfangen" f�r die Nachrichtenklasse **IPM** platziert. 
   
-Clients in der Regel eine Meldungszeichenfolge-Klasse �bergeben, und klicken Sie in das **SetReceiveFolder**aufrufen, die Eintrags-ID des neuen Ordner empfangen. Clients k�nnen jedoch NULL f�r eine oder beide der folgenden Parameter �bergeben. Die folgende Tabelle beschreibt das Verhalten, das ergibt NULL f�r die Nachricht-Klasse und Eintrags-ID-Parameter angeben. 
+Clients in der Regel eine Meldungszeichenfolge-Klasse �bergeben, und klicken Sie in das **SetReceiveFolder** aufrufen, die Eintrags-ID des neuen Ordner empfangen. Clients k�nnen jedoch NULL f�r eine oder beide der folgenden Parameter �bergeben. Die folgende Tabelle beschreibt das Verhalten, das ergibt NULL f�r die Nachricht-Klasse und Eintrags-ID-Parameter angeben. 
   
 |**_SetReceiveFolder_ -parameter**|**Resultierende Verhalten**|
 |:-----|:-----|

@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - xlDefineBinaryName
 keywords:
-- xlDefineBinaryName-Funktion [Excel 2007]
+- xldefinebinaryname-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: e3e8f91b-cc31-4f09-9941-f950ae96820a
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -22,7 +22,7 @@ ms.locfileid: "33430252"
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Wird verwendet, um persistenten Speicher für ein **xltypeBigData** **XLOPER**/ -**XLOPER12**zu reservieren. Daten mit einem definierten binären Namen werden mit der Arbeitsmappe gespeichert und können jederzeit über den Namen aufgerufen werden. Weitere Informationen finden Sie unter "Beschränkung des binären Namensbereichs" in [bekannte Probleme in Excel XLL Development](known-issues-in-excel-xll-development.md).
+Wird verwendet, um beständigen Speicher für einen **xltypeBigData** **XLOPER** /  **XLOPER12 zuzuordnen.** Daten mit einem definierten binären Namen werden mit der Arbeitsmappe gespeichert und können jederzeit über den Namen zugegriffen werden. Weitere Informationen finden Sie unter "Binary Name Scope Limitation" in [Known Issues in Excel XLL Development](known-issues-in-excel-xll-development.md).
   
 ```cs
 Excel12(xlDefineBinaryName, 0, 2, LPXLOPER12 pxName, LPXLOPER12 pxData);
@@ -32,13 +32,13 @@ Excel12(xlDefineBinaryName, 0, 2, LPXLOPER12 pxName, LPXLOPER12 pxData);
 
  _pxName_ (**xltypeStr**)
   
-Eine Zeichenfolge, die den Namen der Daten angibt. Die Zeichenfolge unterliegt denselben Benennungseinschränkungen wie definierte Namen.
+Eine Zeichenfolge, die den Namen der Daten an gibt. Die Zeichenfolge unterliegt den gleichen Benennungseinschränkungen wie definierte Namen.
   
  _pxData_ (**xltypeBigData**)
   
-Eine Struktur, die die zu speichernden Daten angibt. Wenn Sie diese Funktion aufrufen, sollte das **lpbData** -Element der Struktur von **gdata** auf die Daten verweisen, für die der Name definiert wird, und das **cbData** -Element sollte die Länge der Daten in Byte enthalten. 
+Bigdata-Struktur, die die zu speichernden Daten an gibt. Wenn Sie diese Funktion aufrufen, sollte das **lpbData-Element** der **bigdata-Struktur** auf die Daten verweisen, für die der Name definiert wird, und das **cbData-Element** sollte die Länge der Daten in Bytes enthalten. 
   
-Wenn das _pxData_ -Argument nicht angegeben wird (**xltypeMissing**), wird die durch _pxName_ angegebene benannte Zuordnung gelöscht. 
+Wenn das  _Argument pxData_ nicht angegeben ist (**xltypeMissing**), wird die durch  _pxName_ angegebene benannte Zuordnung gelöscht. 
   
 ## <a name="see-also"></a>Siehe auch
 

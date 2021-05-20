@@ -15,13 +15,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33429565"
 ---
-# <a name="mapiofflinecreateinfo"></a>MAPIOFFLINE_CREATEINFO
+# <a name="mapioffline_createinfo"></a>MAPIOFFLINE_CREATEINFO
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Diese Struktur wird mit [HrCreateOfflineObj](hrcreateofflineobj.md)verwendet.
+Diese Struktur wird mit [HrCreateOfflineObj verwendet.](hrcreateofflineobj.md)
   
 ```cpp
 typedef struct
@@ -39,7 +39,7 @@ typedef struct
 } MAPIOFFLINE_CREATEINFO;
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **ulSize**
   
@@ -55,36 +55,36 @@ typedef struct
     
  **ulCapabilities**
   
-> Eine Bitmaske der folgenden Capability Flags.
+> Eine Bitmaske der folgenden Funktionskennzeichen.
     
 |||
 |:-----|:-----|
-|MAPIOFFLINE_CAPABILITY_OFFLINE  <br/> |Das Offlineobjekt kann offline geschaltet werden.  <br/> |
+|MAPIOFFLINE_CAPABILITY_OFFLINE  <br/> |Das Offlineobjekt kann offline gehen.  <br/> |
 |MAPIOFFLINE_CAPABILITY_ONLINE  <br/> |Das Offlineobjekt kann online gehen.  <br/> |
    
  **pGUID**
   
-> Zeiger auf eine GUID, die verwendet wird, um diese Art von Offlineobjekt von anderen Offlineobjekten eindeutig zu identifizieren. GUID_GlobalState bezieht sich auf das globale Offlineobjekt, das Objekte als übergeordnetes Objekt verwenden können.
+> Zeiger auf eine GUID, mit der dieser Typ von Offlineobjekten von anderen Offlineobjekten eindeutig identifiziert wird. GUID_GlobalState bezieht sich auf das globale Offlineobjekt, das Objekte als übergeordnetes Objekt verwenden können.
     
  **pInstance**
   
-> Zeiger auf GUID, die dieses Offlineobjekt eindeutig identifiziert. Es wird verwendet, um diese Offlineobjekte von anderen Objekten zu unterscheiden.
+> Zeiger auf GUID, die dieses Offlineobjekt eindeutig identifiziert. Es wird verwendet, um diese Offlineobjekte von anderen Objekten zu entfernen.
     
  **pParent**
   
-> Zeiger auf das Offline-Objekt, das das übergeordnete Element dieses Offline Objekts ist und dessen Änderungen dieses Offlineobjekt erbt.
+> Zeiger auf ein Offlineobjekt, das das übergeordnete Objekt dieses Offlineobjekts ist und dessen Änderungen dieses Offlineobjekt erbt.
     
  **pMAPISupport**
   
->  Identifiziert das MAPI-Unterstützungsobjekt, das dieses Offlineobjekt verwendet. Wenn beispielsweise dieses Offlineobjekt verwendet wird, um den Offline-und Onlinestatus eines Speichers nachzuverfolgen, handelt es sich um das Support Objekt Stores. Wenn es sich jedoch um ein Offlineobjekt für ein Objekt ohne Support Objekt handelt, kann es NULL sein. 
+>  Identifiziert das MAPI-Supportobjekt, das dieses Offlineobjekt verwendet. Wenn dieses Offlineobjekt beispielsweise verwendet wird, um den Offline- und Onlinestatus eines Speichers nachverfolgt zu werden, ist dies das Speicherunterstützungsobjekt. Wenn es sich jedoch um ein Offlineobjekt für ein Objekt ohne Supportobjekt handelt, kann es NULL sein. 
     
  **pAggregateInfo**
   
-> Ein Zeiger auf eine MAPIOFFLINE_AGGREGATEINFO-Struktur. Weitere Informationen finden Sie unter [MAPIOFFLINE_AGGREGATEINFO](mapioffline_aggregateinfo.md).
+> Ein Zeiger auf eine MAPIOFFLINE_AGGREGATEINFO Struktur. Weitere Informationen finden Sie unter [MAPIOFFLINE_AGGREGATEINFO](mapioffline_aggregateinfo.md).
     
  **pConnectInfo**
   
-> Muss NULL sein.
+> Muss null sein.
     
 ## <a name="see-also"></a>Siehe auch
 

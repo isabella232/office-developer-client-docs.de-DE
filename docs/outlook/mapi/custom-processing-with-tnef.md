@@ -19,6 +19,6 @@ ms.locfileid: "33430847"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Transport Anbieter können die benutzerdefinierte Verarbeitung verwenden, um die Eigenschaften für eine Anlage selbst zu verarbeiten, Anlagen separat zu übertragen oder über das Anlagenmodell des Messagingsystems zu übertragen. TNEF verwendet einen Mechanismus, der es dem Transportanbieter ermöglicht, die Anlagen außer der Nachricht zu senden und Sie erneut auf der empfangenden Seite zu verbinden.
+Transportanbieter können benutzerdefinierte Verarbeitung verwenden, um die Eigenschaften einer Anlage selbst zu verarbeiten, Anlagen separat zu übertragen oder sie über das Anlagenmodell des Messagingsystems zu übertragen. TNEF verwendet einen Mechanismus, der es dem Transportanbieter ermöglicht, die Anlagen außerhalb der Nachricht zu senden und sie auf der empfangenden Seite erneut zu verbinden.
   
 

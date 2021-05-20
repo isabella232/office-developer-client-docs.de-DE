@@ -1,5 +1,5 @@
 ---
-title: MAPI-Dienstanbieter Objekte
+title: OBJEKTE des MAPI-Dienstanbieters
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,41 +15,41 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33432268"
 ---
-# <a name="mapi-service-provider-objects"></a>MAPI-Dienstanbieter Objekte
+# <a name="mapi-service-provider-objects"></a>OBJEKTE des MAPI-Dienstanbieters
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Dienstanbieter implementieren viele Objekte. Einige werden hauptsächlich von MAPI verwendet, andere werden von Clientanwendungen verwendet. Einige Objekte werden von allen Arten von Dienstanbietern implementiert; die übrigen sind für einen einzelnen Anbietertyp spezifisch. In der folgenden Tabelle werden alle Dienstanbieter Objekte beschrieben.
+Dienstanbieter implementieren viele Objekte. Einige werden hauptsächlich von MAPI und andere von Clientanwendungen verwendet. Einige Objekte werden von allen Arten von Dienstanbietern implementiert. Der Rest ist für einen einzelnen Anbietertyp spezifisch. In der folgenden Tabelle werden alle Dienstanbieterobjekte beschrieben.
   
 |**Dienstanbieterobjekt**|**Beschreibung**|
 |:-----|:-----|
-|Adressbuchcontainer  <br/> |Enthält Empfängerinformationen für einen Adressbuchanbieter im aktiven Profil; Adressbuchanbieter können über einen oder mehrere Adressbuchcontainer verfügen.  <br/> |
-|Attachment  <br/> |Enthält zusätzliche Daten wie eine Datei oder ein OLE-Objekt, die einer Nachricht zugeordnet werden sollen.  <br/> |
-|Control  <br/> |Aktiviert oder deaktiviert eine Schaltfläche und initiiert die Verarbeitung, wenn auf die Schaltfläche geklickt wird.  <br/> |
+|Adressbuchcontainer  <br/> |Enthält Empfängerinformationen für einen Adressbuchanbieter im aktiven Profil. Adressbuchanbieter können über einen oder mehrere Adressbuchcontainer verfügen.  <br/> |
+|Attachment  <br/> |Enthält zusätzliche Daten, z. B. eine Datei oder ein OLE-Objekt, die einer Nachricht zugeordnet werden sollen.  <br/> |
+|Steuerelement  <br/> |Aktiviert oder deaktiviert eine Schaltfläche und initiiert die Verarbeitung, wenn auf die Schaltfläche geklickt wird.  <br/> |
 |Verteilerliste  <br/> |Beschreibt eine Gruppierung einzelner Nachrichtenempfänger.  <br/> |
 |Ordner  <br/> |Enthält Nachrichten und andere Nachrichtencontainer.  <br/> |
-|Anmeldung  <br/> |Behandelt Dienstanbieter-Ereignisbenachrichtigung und Clientanforderungen.  <br/> |
-|Messaging Benutzer  <br/> |Beschreibt einen einzelnen Empfänger einer Nachricht.  <br/> |
-|Nachricht  <br/> |Enthält Informationen, die an einen oder mehrere Empfänger gesendet werden können.  <br/> |
-|Nachrichtenspeicher  <br/> |Fungiert als hierarchisch organisierte Datenbank mit Nachrichten.  <br/> |
+|Anmeldung  <br/> |Behandelt Ereignisbenachrichtigungen und Clientanforderungen des Dienstanbieters.  <br/> |
+|Messagingbenutzer  <br/> |Beschreibt einen einzelnen Empfänger einer Nachricht.  <br/> |
+|Message  <br/> |Enthält Informationen, die an einen oder mehrere Empfänger gesendet werden können.  <br/> |
+|Nachrichtenspeicher  <br/> |Dient als hierarchische Geordnete Datenbank von Nachrichten.  <br/> |
 |Anbieter  <br/> |Behandelt das Starten und Herunterfahren des Dienstanbieters.  <br/> |
-|Spooler-Hook  <br/> |Führt eine spezielle Verarbeitung für eingehende und ausgehende Nachrichten aus.  <br/> |
-|Status  <br/> |Ermöglicht den Zugriff auf den Status des Dienstanbieters.  <br/> |
-|Tabelle  <br/> |Ermöglicht den Zugriff auf eine Zusammenfassungsansicht von Objektdaten im Zeilen-und Spaltenformat, ähnlich wie bei einer Datenbanktabelle.  <br/> |
+|Spooler-Hook  <br/> |Führt eine spezielle Verarbeitung für eingehende und ausgehende Nachrichten durch.  <br/> |
+|Status  <br/> |Bietet Zugriff auf den Status des Dienstanbieters.  <br/> |
+|Tabelle  <br/> |Bietet Zugriff auf eine Zusammenfassungsansicht von Objektdaten im Zeilen- und Spaltenformat, ähnlich einer Datenbanktabelle.  <br/> |
    
-Alle Dienstanbieter implementieren ein Provider-Objekt und ein LOGON-Objekt. Anbieterobjekte sind ausschließlich für die Buchhaltung; Sie werden von MAPI verwendet, um die Prozesse zum Starten und Herunterfahren zu steuern. Anmeldeobjekte Dienst einige Clientanforderungen indirekt. Beispielsweise verarbeitet das Anmeldeobjekt des Nachrichtenspeicher Anbieters die Benachrichtigungs Registrierung und die Anforderungen zum Öffnen von Nachrichtenspeicher Objekten. 
+Alle Dienstanbieter implementieren ein Anbieterobjekt und ein Anmeldeobjekt. Anbieterobjekte sind ausschließlich für die Buchhaltung; sie werden von MAPI verwendet, um die Start- und Herunterfahrensprozesse zu steuern. Anmeldeobjekte verarbeiten einige Clientanforderungen indirekt. Das Anmeldeobjekt des Nachrichtenspeicheranbieters verarbeitet beispielsweise die Benachrichtigungsregistrierung und Anforderungen zum Öffnen von Nachrichtenspeicherobjekten. 
   
-Anbieter-und Anmeldeobjekte implementieren eine andere Schnittstelle, je nach Typ des Dienstanbieters, der die Implementierung bereitstellt. Ein Nachrichtenspeicher Anbieter implementiert die [IMSProvider: IUnknown](imsprovideriunknown.md) -und [IMSLogon: IUnknown](imslogoniunknown.md) -Schnittstellen in seinem Provider-und LOGON-Objekt, ein Adressbuchanbieter implementiert die [IABProvider: IUnknown](iabprovideriunknown.md) und [IABLogon: IUnknown](iablogoniunknown.md) Schnittstellen, und ein Transportanbieter implementiert die Schnittstellen [IXPProvider: IUnknown](ixpprovideriunknown.md) und [IXPLogon: IUnknown](ixplogoniunknown.md) . 
+Anbieter- und Anmeldeobjekte implementieren je nach Typ des Dienstanbieters, der die Implementierung liefert, eine andere Schnittstelle. Ein Nachrichtenspeicheranbieter implementiert die [ImSProvider : IUnknown](imsprovideriunknown.md) und [IMSLogon : IUnknown-Schnittstellen](imslogoniunknown.md) in seinen Anbieter- und Anmeldeobjekten, ein Adressbuchanbieter implementiert die [IABProvider : IUnknown](iabprovideriunknown.md) und [IABLogon : IUnknown-Schnittstellen,](iablogoniunknown.md) und ein Transportanbieter implementiert die [IXPProvider : IUnknown](ixpprovideriunknown.md) und [IXPLogon : IUnknown-Schnittstellen.](ixplogoniunknown.md) 
   
-Nachrichten Hook-Anbieter implementieren Spooler-Hook-Objekte oder Objekte, die eingehende und ausgehende Nachrichten filtern.
+Nachrichtenhakenanbieter implementieren Spooler-Hook-Objekte oder Objekte, die eingehende und ausgehende Nachrichten filtern.
   
-Dienstanbieter verwenden in der Regel nur wenige Objekte. Am häufigsten verwenden Sie ein Unterstützungsobjekt, das MAPI zur Implementierung von Clientanforderungen bereitstellt. Das Support-Objekt ist für den Anbietertyp angepasst, der es verwendet. Für alle Dienstanbieter beinhaltet das Support-Objektmethoden für die Behandlung von Ereignisbenachrichtigungen, die Anzeige von Konfigurationseigenschaften, öffnenden Objekten und die Fehlerbehandlung. Die restlichen Methoden sind spezifisch für die Verwendung; Es gibt angepasste Versionen für Adressbuch, Nachrichtenspeicher und Transportanbieter sowie für Konfigurationsunterstützung. Beispielsweise zeigt das Adressbuch-Support-Objektdetails und benutzerdefinierte Empfänger Dialogfelder an. Das Nachrichtenspeicher-Support Objekt unterstützt Kopier-und Verschiebungsvorgänge für Ordner und Nachrichten. Das Transportanbieter-Unterstützungsobjekt enthält Methoden zum erleichtern der Interaktion mit dem MAPI-Spooler. 
+Dienstanbieter verwenden in der Regel nur wenige Objekte. Am häufigsten verwenden sie ein Supportobjekt, das MAPI zur Implementierung von Clientanforderungen zur Verfügung stellt. Das Supportobjekt wird für den Anbietertyp angepasst, der es verwendet. Für alle Dienstanbieter umfasst das Supportobjekt Methoden zum Behandeln von Ereignisbenachrichtigungen, zum Anzeigen von Konfigurationseigenschaften, zum Öffnen von Objekten und zur Fehlerbehandlung. Die restlichen Methoden sind spezifisch für ihre Verwendung. Es gibt angepasste Versionen für Adressbuch-, Nachrichtenspeicher- und Transportanbieter sowie für die Konfigurationsunterstützung. Das Adressbuchunterstützungsobjekt zeigt beispielsweise Details und benutzerdefinierte Empfängerdialogfelder an. Das Unterstützungsobjekt für den Nachrichtenspeicher unterstützt Kopier- und Verschiebevorgänge für Ordner und Nachrichten. Das Supportobjekt des Transportanbieters enthält Methoden zur Erleichterung der Interaktion mit dem MAPI-Spooler. 
   
-Einige Dienstanbieter verwenden Tabellendaten und Eigenschaftendaten Objekte, die von MAPI implementiert werden. Mit Tabellendaten Objekten können Dienstanbieter die zugrunde liegenden Daten einer Tabelle verwalten. Mit Eigenschaftendaten Objekten können Dienstanbieterobjekt-und Eigenschaftenzugriff festlegen. 
+Einige Dienstanbieter verwenden Tabellendaten- und Eigenschaftsdatenobjekte – Hilfsobjekte, die MAPI implementiert. Tabellendatenobjekte ermöglichen Dienstanbietern die Verwaltung der zugrunde liegenden Daten einer Tabelle. Eigenschaftendatenobjekte ermöglichen Dienstanbietern das Festlegen des Objekt- und Eigenschaftszugriffs. 
   
-Transportanbieter, die das Transport Neutral Encapsulation Format (TNEF) für die Übertragung von Eigenschaften unterstützen, verwenden ein TNEF-Objekt, das von MAPI zur Unterstützung der [ITnef: IUnknown](itnefiunknown.md) -Schnittstelle implementiert wird. Weitere Informationen finden Sie unter [Entwickeln eines TNEF-fähigEn Transport Anbieters](developing-a-tnef-enabled-transport-provider.md). 
+Transportanbieter, die das Transport Neutral Encapsulation Format (TNEF) für die Übertragung von Eigenschaften unterstützen, verwenden ein TNEF-Objekt, das MAPI implementiert, um die [ITnef : IUnknown-Schnittstelle](itnefiunknown.md) zu unterstützen. Weitere Informationen finden Sie unter [Developing a TNEF-Enabled Transport Provider](developing-a-tnef-enabled-transport-provider.md). 
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -70,5 +70,5 @@ Transportanbieter, die das Transport Neutral Encapsulation Format (TNEF) für di
 [IXPLogon : IUnknown](ixplogoniunknown.md)
 
 
-[Entwickeln eines TNEF-fähigen Transport Anbieters](developing-a-tnef-enabled-transport-provider.md)
+[Entwickeln eines TNEF-Enabled-Transportanbieters](developing-a-tnef-enabled-transport-provider.md)
 

@@ -25,19 +25,19 @@ Hinzugefügte Version: Visio 2010
   
 ## <a name="syntax"></a>Syntax
 
-LISTMEMBERCOUNT ()
+LISTMEMBERCOUNT()
   
 ### <a name="return-value"></a>Rückgabewert
 
 ShapeSheet-Referenz
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Wenn es sich bei dem Shape nicht um ein Listenelement handelt, gibt die LISTSHEETREF-Funktion #REF! zurück.
   
 ## <a name="example"></a>Beispiel
 
-LISTSHEETREF (1)! Höhe 
+LISTSHEETREF(1)! Height 
   
 Gibt den Werte in der Zelle "Height" des Listencontainer-Shapes zurück, das das Shape enthält. 
   

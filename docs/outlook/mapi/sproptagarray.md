@@ -25,11 +25,11 @@ ms.locfileid: "33430700"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von Property-Tags. 
+Enthält ein Array von Eigenschaftstags. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
 |Verwandte Makros:  <br/> |[CbNewSPropTagArray](cbnewsproptagarray.md), [CbSPropTagArray](cbsproptagarray.md), [SizedSPropTagArray](sizedsproptagarray.md) <br/> |
    
 ```cpp
@@ -41,37 +41,37 @@ typedef struct _SPropTagArray
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cValues**
   
-> Die Anzahl der Eigenschaftstags im vom **aulPropTag** -Element angegebenen Array. 
+> Anzahl der Eigenschaftstags im Array, das vom **aulPropTag-Element angegeben** wird. 
     
  **aulPropTag**
   
-> Array von Property-Tags.
+> Array von Eigenschaftstags.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Ein Property-Tag ist eine 32-Bit-Ganzzahl ohne Vorzeichen, die aus zwei Teilen besteht: 
+Ein Eigenschaftstag ist eine 32-Bit-Ganzzahl ohne Vorzeichen, die aus zwei Teilen besteht: 
   
-- Ein Bezeichner in den hochwertigen 16 Bits.
+- Ein Bezeichner in der hohen Reihenfolge von 16 Bit.
     
-- Ein Typ in den niederwertigen 16 Bits.
+- Ein Typ in niedriger Reihenfolge von 16 Bit.
     
-Der Bezeichner ist ein numerischer Wert in einem bestimmten Zeitraum. MAPI definiert Bereiche für Bezeichner, um zu beschreiben, wofür die Eigenschaft verwendet wird und wer für deren Verwaltung zuständig ist. MAPI definiert Einschränkungen für die einzelnen Eigenschaftentags, die in der Headerdatei Mapitags. h unterstützt werden.
+Der Bezeichner ist ein numerischer Wert in einem bestimmten Bereich. MAPI definiert Bereiche für Bezeichner, um zu beschreiben, wofür die Eigenschaft verwendet wird und wer für die Verwaltung verantwortlich ist. MAPI definiert Einschränkungen für jedes der Eigenschaftentags, die es in der Mapitags.h-Headerdatei unterstützt.
   
-Der Typ gibt das Format für den Wert der Eigenschaft an. MAPI definiert Konstanten für alle Eigenschaftentypen, die in der Headerdatei Mapidefs. h unterstützt werden. 
+Der Typ gibt das Format für den Wert der Eigenschaft an. MAPI definiert Konstanten für jeden der Eigenschaftentypen, die in der Mapidefs.h-Headerdatei unterstützt werden. 
   
-Weitere Informationen zu Eigenschaftstags und ihren Komponenten finden Sie in einem der folgenden Themen: 
+Weitere Informationen zu Eigenschaftstags und deren Komponenten finden Sie in einem der folgenden Themen: 
   
-[MAPI-Eigenschafts Tags](mapi-property-tags.md)
+[MAPI-Eigenschaftstags](mapi-property-tags.md)
   
-[Übersicht über die MAPI-EigenschaftsKennung](mapi-property-identifier-overview.md)
+[Übersicht über die MAPI-Eigenschafts-ID](mapi-property-identifier-overview.md)
   
-[Übersicht über die MAPI-EigenschaftsTypen](mapi-property-type-overview.md)
+[Übersicht über den MAPI-Eigenschaftstyp](mapi-property-type-overview.md)
   
-Eine vollständige Liste der einwertigen und mehrwertigen Eigenschaftentypen finden Sie im Anhang, [Eigenschaftenbezeichner und-Typen](property-identifiers-and-types.md). 
+Eine vollständige Liste der einwertigen und mehrwertigen Eigenschaftentypen finden Sie im Anhang, [Property Identifiers und Types](property-identifiers-and-types.md). 
   
 ## <a name="see-also"></a>Siehe auch
 

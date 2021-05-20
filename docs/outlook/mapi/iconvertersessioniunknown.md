@@ -25,7 +25,7 @@ ms.locfileid: "33432317"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ermöglicht Konvertierungen zwischen MIME-Objekten und MAPI-Nachrichten. Dies kann beim Transportieren von Nachrichten über das Internet hilfreich sein.
+Ermöglicht Konvertierungen zwischen MIME-Objekten und MAPI-Nachrichten. Dies kann beim Transport von Nachrichten über das Internet hilfreich sein.
   
 |||
 |:-----|:-----|
@@ -36,22 +36,22 @@ Ermöglicht Konvertierungen zwischen MIME-Objekten und MAPI-Nachrichten. Dies ka
 
 |||
 |:-----|:-----|
-|**[SetAdrBook](iconvertersession-setadrbook.md)** <br/> |Gibt ein optionales MAPI-Adressbuch an, das vom MAPI-in-MIME-Konverter verwendet wird, um mehrdeutige Adressen beim Konvertieren einer MAPI-Nachricht in einen MIME-Stream aufzulösen.  <br/> |
-|**[SetEncoding](iconvertersession-setencoding.md)** <br/> |Initialisiert die Codierung, die während der Konvertierung verwendet werden soll.  <br/> |
-| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+|**[SetAdrBook](iconvertersession-setadrbook.md)** <br/> |Gibt ein optionales MAPI-Adressbuch an, das der MAPI-zu-MIME-Konverter zum Auflösen mehrdeutiger Adressen beim Konvertieren einer MAPI-Nachricht in einen MIME-Stream verwendet.  <br/> |
+|**[SetEncoding](iconvertersession-setencoding.md)** <br/> |Initialisiert die während der Konvertierung zu verwendende Codierung.  <br/> |
+| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
 |**[MIMEToMAPI](iconvertersession-mimetomapi.md)** <br/> |Konvertiert einen MIME-Stream in eine MAPI-Nachricht.  <br/> |
 |**[MAPIToMIMEStm](iconvertersession-mapitomimestm.md)** <br/> |Konvertiert eine MAPI-Nachricht in einen MIME-Stream.  <br/> |
-| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
-| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
-| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
-|**[SetTextWrapping](iconvertersession-settextwrapping.md)** <br/> |Legt die Breite des Textumbruchs für einen MIME-Stream fest, der vom Konverter in **MAPIToMIMEStm**zurückgegeben wird.  <br/> |
-|**[SetSaveFormat](iconvertersession-setsaveformat.md)** <br/> |Legt das Format fest, das der Konverter einen MIME-Stream in **MAPIToMIMEStm**zurückgibt.  <br/> |
-| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
-|**[SetCharSet](iconvertersession-setcharset.md)** <br/> |Gibt einen optionalen Zeichensatz an, den der MAPI-in-MIME-Konverter beim Konvertieren einer MAPI-Nachricht in einen MIME-Stream verwendet.  <br/> |
+| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+|**[SetTextWrapping](iconvertersession-settextwrapping.md)** <br/> |Legt die Textumbruchbreite für einen MIME-Stream fest, den der Konverter in **MAPIToMIMEStm zurückgibt.**  <br/> |
+|**[SetSaveFormat](iconvertersession-setsaveformat.md)** <br/> |Legt das Format fest, das der Konverter einen MIME-Stream in **MAPIToMIMEStm zurückgibt.**  <br/> |
+| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+|**[SetCharSet](iconvertersession-setcharset.md)** <br/> |Gibt einen optionalen Zeichensatz an, den der MAPI-zu-MIME-Konverter beim Konvertieren einer MAPI-Nachricht in einen MIME-Stream verwendet.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Aufrufen **** der setEncoding vor der Verwendung von **MAPIToMIMEStm** für die Konvertierung. 
+Rufen **Sie SetEncoding auf,** bevor Sie **MAPIToMIMEStm** zum Ausführen der Konvertierung verwenden. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,5 @@
 ---
-title: Unterstützung von formatiertem Text in den Client Aufgaben für ausgehende Nachrichten
+title: Unterstützen von formatierten Text in Clientaufgaben für ausgehende Nachrichten
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,28 +15,28 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33431603"
 ---
-# <a name="supporting-formatted-text-in-outgoing-messages-client-responsibilities"></a>Unterstützung von formatiertem Text in ausgehenden Nachrichten: Aufgaben des Kunden
+# <a name="supporting-formatted-text-in-outgoing-messages-client-responsibilities"></a>Unterstützen von formatierten Text in ausgehenden Nachrichten: Clientaufgaben
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Client Anwendungen legen die **PR_BODY** ([pidtagbody (](pidtagbody-canonical-property.md))-Eigenschaft, die **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md))-Eigenschaft oder die **PR_HTML** ([pidtaghtml (](pidtaghtml-canonical-property.md))-Eigenschaft für eine ausgehende Nachricht fest. Clients, die nur einfachen Text unterstützen, legen nur die **PR_BODY** -Eigenschaft fest. Rich Text Format (RTF)-fähige Clients können sowohl **PR_BODY** -als auch **PR_RTF_COMPRESSED** -Eigenschaften oder nur **PR_RTF_COMPRESSED**-abhängig vom verwendeten Nachrichtenspeicher Anbieter festlegen. HTML-fähige Clients legen die **PR_HTML** -Eigenschaft fest. 
+Clientanwendungen legen die **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) -Eigenschaft, die **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) -Eigenschaft oder die **PR_HTML** ([PidTagHtml](pidtaghtml-canonical-property.md)) -Eigenschaft für eine ausgehende Nachricht. Clients, die nur Nur-Text unterstützen, legen nur die **PR_BODY** fest. RtF-bewusste Clients (Rich Text  Format) können PR_BODY- und **PR_RTF_COMPRESSED-Eigenschaften** oder nur **PR_RTF_COMPRESSED** festlegen, abhängig vom verwendeten Nachrichtenspeicheranbieter. HTML- aware clients set **the PR_HTML** property. 
   
-Es ist wichtig, dass ein Client die **PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md))-Eigenschaft des Nachrichtenspeichers überprüft, um zu bestimmen, ob der Speicher RTF unterstützt. Wenn der Nachrichtenspeicher nicht RTF-fähig ist, legt ein RTF-fähiger Client sowohl die **PR_BODY** -als auch die **PR_RTF_COMPRESSED** -Eigenschaft für jede ausgehende Nachricht fest. 
+Es ist wichtig, dass ein Client die **PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md)) -Eigenschaft des Nachrichtenspeichers überprüft, um zu bestimmen, ob der Speicher RTF unterstützt. Wenn der Nachrichtenspeicher nicht RTF-bewusst ist, legt  ein RTF-bewusster Client die Eigenschaften PR_BODY und **PR_RTF_COMPRESSED** für jede ausgehende Nachricht fest. 
   
-Wenn der Nachrichtenspeicher RTF-fähig ist, muss nur die **PR_RTF_COMPRESSED** -Eigenschaft festgelegt werden. 
+Wenn der Nachrichtenspeicher RTF-bewusst ist, muss nur **die PR_RTF_COMPRESSED** festgelegt werden. 
   
- **Um PR_RTF_COMPRESSED festzulegen und sicherzustellen, dass der Synchronisierungsprozess bei Bedarf erfolgt, werden RTF-fähige Clients**
+ **Zum Festlegen PR_RTF_COMPRESSED und sicherstellen, dass der Synchronisierungsprozess bei Bedarf ausgeführt wird, müssen RTF-bewusste Clients**
   
-1. Rufen Sie die [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode auf, um die **PR_RTF_COMPRESSED** -Eigenschaft zu öffnen und sowohl die MAPI_CREATE-als auch die MAPI_MODIFY-Flags festzulegen. MAPI_CREATE stellt sicher, dass alle neuen Daten alle alten Daten ersetzen, und MAPI_MODIFY ermöglicht es Ihnen, diese Ersetzungen vorzunehmen. 
+1. Rufen Sie die [IMAPIProp::OpenProperty-Methode](imapiprop-openproperty.md) auf, um die **PR_RTF_COMPRESSED-Eigenschaft** zu öffnen, indem Sie sowohl die MAPI_CREATE als auch MAPI_MODIFY festlegen. MAPI_CREATE stellt sicher, dass alle neuen Daten alte Daten ersetzen und MAPI_MODIFY sie ersetzen können. 
     
-2. Rufen Sie die [WrapCompressedRTFStream](wrapcompressedrtfstream.md) -Funktion auf, und übergeben Sie STORE_UNCOMPRESSED_RTF, wenn der Nachrichtenspeicher das STORE_UNCOMPRESSED_RTF-Bit in seiner **PR_STORE_SUPPORT_MASK** -Eigenschaft festlegt, um eine nicht komprimierte Version des PR_RTF_COMPRESSED zu erhalten. ** **von OpenProperty **** zurückgegebener Stream.
+2. Rufen Sie die [WrapCompressedRTFStream-Funktion](wrapcompressedrtfstream.md) auf, und übergeben Sie STORE_UNCOMPRESSED_RTF, wenn der Nachrichtenspeicher das STORE_UNCOMPRESSED_RTF-Bit in seiner **PR_STORE_SUPPORT_MASK-Eigenschaft** fest, um eine nicht komprimierte Version des PR_RTF_COMPRESSED-Datenstroms zu erhalten, der von **OpenProperty** zurückgegeben wird. 
     
-3. Schreiben Sie die Nachrichten Textdaten in den unkomprimierten Stream, der von **WrapCompressedRTFStream**zurückgegeben wird.
+3. Schreiben Sie die Nachrichtentextdaten in den nicht komprimierten Datenstrom, der von **WrapCompressedRTFStream zurückgegeben wird.**
     
-4. Commit und Freigeben der unkomprimierten und komprimierten Streams.
+4. Commit und Freigabe der nicht komprimierten und komprimierten Datenströme.
     
-Wenn der Nachrichtenspeicher Anbieter RTF unterstützt, haben Sie jetzt alle erforderlichen Schritte ausgeführt. Sie können den Synchronisierungsprozess und die Erstellung der **PR_BODY** -Eigenschaft, falls erforderlich, vom Nachrichtenspeicher Anbieter abhängig zu behandeln. Wenn der Nachrichtenspeicher Anbieter jedoch RTF nicht unterstützt, müssen Sie die [RTFSync](rtfsync.md) -Funktion aufrufen, um den Text mit der Formatierung zu synchronisieren, indem Sie das RTF_SYNC_RTF_CHANGED-Flag festlegen. 
+Wenn der Nachrichtenspeicheranbieter zu diesem Zeitpunkt RTF unterstützt, haben Sie alles erforderliche getan. Sie können vom Nachrichtenspeicheranbieter abhängig sein, um den Synchronisierungsprozess und die Erstellung der **PR_BODY-Eigenschaft** zu verarbeiten, falls erforderlich. Wenn der Nachrichtenspeicheranbieter rtF jedoch nicht unterstützt, müssen Sie die [RTFSync-Funktion](rtfsync.md) aufrufen, um den Text mit der Formatierung zu synchronisieren, indem Sie RTF_SYNC_RTF_CHANGED festlegen. 
   
 

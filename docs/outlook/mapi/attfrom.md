@@ -19,24 +19,24 @@ ms.locfileid: "33432415"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Das **attFrom** -Attribut wird als **TRP** -Struktur codiert, die den Anzeigenamen und die e-Mail-Adresse des Absenders kodiert, gefolgt von dem Anzeigenamen und der Adresse des Absenders, gefolgt von jedem erforderlichen Abstand. Das Format für **attFrom** lautet wie folgt: 
+Das **attFrom-Attribut** wird als **TRP-Struktur** codiert, die den Anzeigenamen und die E-Mail-Adresse des Absenders codiert, gefolgt vom Anzeigenamen und der Adresse des Absenders, gefolgt von einem erforderlichen Abstand. Das Format für **attFrom** lautet wie folgt: 
   
-**attFrom**: _TRP-Structure_ Sender-Display-Name _ Absender-Adresse _ Padding 
+**attFrom**: _TRP-structure_ sender-display-name _ sender-address _ padding 
     
-Der Sender-Display-Name ist eine mit NULL endende Zeichenfolge, die bei Bedarf mit einem zusätzlichen NULL-Zeichen aufgefüllt wird, um eine 2-Byte-Grenze zu erreichen. Der Abstand am Ende der **attFrom** -Codierung besteht aus beliebig vielen NULL-Zeichen, um eine **sizeof (TRP)-** Grenze zu erreichen. 
+Der Sender-display-name ist eine null-beendete Zeichenfolge, die bei Bedarf mit einem zusätzlichen Nullzeichen gepolstert wird, um eine 2-Byte-Grenze zu erreichen. Der Abstand am Ende der **attFrom-Codierung** besteht aus so vielen Nullzeichen wie nötig, um eine **Sizeof(TRP)-Grenze zu** erreichen. 
   
-_TRP-Struktur:_ **trpidOneOff** cbgrtrp CCH CB 
+_TRP-struktur:_ **trpidOneOff** cbgrtrp cch cb 
     
-Für das **attFrom** -Element ist die **TRP**-Struktur immer eine einmalige Codierung, sodass die trpid aus dem **TRP**-Structure-Feld immer **trpidOneOff**ist. Die cbgrtrp-, CCH-und CB-Elemente entsprechen den restlichen Feldern der **TRP** -Struktur. 
+Für das **attFrom-Element** ist die **TRP-Struktur** immer eine einmalige Codierung, daher ist der Trpid aus dem **TRP**-structure-Feld **immer trpidOneOff**. Die cbgrtrp-, cch- und cb-Elemente entsprechen den verbleibenden Feldern der **TRP-Struktur.** 
   
-Das cbgrtrp-Feld wird als Summe aus **(sizeof (TRP \*) 2)**, der Länge des null-terminierten Sender-Display-namens mit seinem Abstand und der Länge der null-terminierten Absenderadresse berechnet.
+Das cbgrtrp-Feld wird als Summe **von (sizeof(TRP) \* 2),** der Länge des null-terminated sender-display-name mit dem Abstand und der Länge der null-terminated sender-address berechnet.
   
-Das Feld CCH wird als Länge des mit NULL endenden Anzeige namens mit seinem Abstand berechnet.
+Das #A0 wird als Länge des mit Null beendeten Anzeigenamens mit seinem Abstand berechnet.
   
-Das CB-Feld wird als Länge der null-terminierten Absenderadresse berechnet.
+Das cb-Feld wird als Länge der mit Null beendeten Absenderadresse berechnet.
   
-_Absender-Adresse:_ Address-Type **:** Address **' \ 0 '**
+_sender-address:_ address-type **:** address **'\0'**
     
-Die Absenderadresse ist eine Zeichenfolge, die aus vier Teilen besteht, dem Adresstyp, einem Zeichenfolgenliteral (:), der Adresse selbst und einem abschließenden NULL-Zeichen). Die Zeichenfolge `fax:1-909-555-1234\0` wäre beispielsweise ein gültiger Absender-Adresswert.
+Die Absenderadresse ist eine Zeichenfolge, die aus vier Teilen besteht, dem Adresstyp, einem literalen Doppelpunkt (:), der Adresse selbst und einem endenden Nullzeichen. Die Zeichenfolge wäre z. `fax:1-909-555-1234\0` B. ein gesetzlicher Absenderadressenwert.
   
 

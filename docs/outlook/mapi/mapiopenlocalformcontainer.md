@@ -25,13 +25,13 @@ ms.locfileid: "33427738"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt einen Schnittstellenzeiger auf die lokale Formularbibliothek zurück. 
+Gibt einen Schnittstellenzeiger zur lokalen Formularbibliothek zurück. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiform. h  <br/> |
+|Headerdatei  <br/> |Mapiform.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
    
 ```cpp
 MAPIOpenLocalFormContainer(
@@ -43,15 +43,15 @@ MAPIOpenLocalFormContainer(
 
  _ppfcnt_
   
-> Out Zeiger auf einen Zeiger auf die Schnittstelle der lokalen Formularbibliothek.
+> [out] Zeiger auf einen Zeiger auf die lokale Formularbibliotheksschnittstelle.
     
 ## <a name="return-value"></a>Return value
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die Schnittstelle, an die ein Zeiger zurückgegeben wird, kann von Drittanbieter-Installationsprogrammen verwendet werden, um anwendungsspezifische Formulare in der Bibliothek zu installieren, ohne dass sich das Programm zuerst bei MAPI anmelden muss. 
+Die Schnittstelle, an die ein Zeiger zurückgegeben wird, kann von Installationsprogrammen von Drittanbietern verwendet werden, um anwendungsspezifische Formulare in der Bibliothek zu installieren, ohne dass sich das Programm zuerst bei MAPI anmelden muss. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -59,7 +59,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MainDlg. cpp  <br/> |CMainDlg:: OnMAPIOpenLocalFormContainer  <br/> |MFCMAPI verwendet die **MAPIOpenLocalFormContainer** -Methode, um den lokalen Formular Container zu öffnen, der in einem neuen Fenster gerendert werden soll.  <br/> |
+|MainDlg.cpp  <br/> |CMainDlg::OnMAPIOpenLocalFormContainer  <br/> |MFCMAPI verwendet die **MAPIOpenLocalFormContainer-Methode,** um den lokalen Formularcontainer zum Rendern in einem neuen Fenster zu öffnen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

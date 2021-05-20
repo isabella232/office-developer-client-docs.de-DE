@@ -25,7 +25,7 @@ ms.locfileid: "33430567"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt den Ordner zurück, in dem die aktuelle Nachricht erstellt oder geöffnet wurde, wenn ein solcher Ordner vorhanden ist. Diese Methode gibt NULL im _ppFolder_ -Parameter für eingebettete Nachrichten zurück, die nicht direkt in einem Ordner gespeichert werden. 
+Gibt den Ordner zurück, in dem die aktuelle Nachricht erstellt oder geöffnet wurde, wenn ein solcher Ordner vorhanden ist. Diese Methode gibt NULL im  _ppFolder-Parameter_ für eingebettete Nachrichten zurück, die nicht direkt in einem Ordner gespeichert werden. 
   
 ```cpp
 HRESULT GetFolder(
@@ -37,7 +37,7 @@ HRESULT GetFolder(
 
  _ppFolder_
   
-> Out Ein Zeiger auf einen Zeiger auf den zurückgegebenen Ordner.
+> [out] Ein Zeiger auf einen Zeiger auf den zurückgegebenen Ordner.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -49,9 +49,9 @@ S_FALSE
   
 > Für die Nachricht ist kein Ordner vorhanden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Eine Liste der Schnittstellen im Zusammenhang mit Formular Servern finden Sie unter [MAPI-Formular Schnittstellen](mapi-form-interfaces.md).
+Eine Liste der Schnittstellen im Zusammenhang mit Formularservern finden Sie unter [MAPI Form Interfaces](mapi-form-interfaces.md).
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -59,7 +59,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer. cpp  <br/> |CMyMAPIFormViewer:: getFolder  <br/> |MFCMAPI verwendet die **IMAPIMessageSite:: GetFolder** -Methode, um den aktuell zwischengespeicherten Zeiger auf den angegebenen Ordner zurückzugeben.  <br/> |
+|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::GetFolder  <br/> |MFCMAPI verwendet die **IMAPIMessageSite::GetFolder-Methode,** um den aktuell zwischengespeicherten Zeiger auf den angegebenen Ordner zurückzukehren.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -70,5 +70,5 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
-[MAPI-Formular Schnittstellen](mapi-form-interfaces.md)
+[MAPI-Formularschnittstellen](mapi-form-interfaces.md)
 

@@ -30,7 +30,7 @@ NA( )
 
 Zeichenfolge
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Der Fehlerwert NV bedeutet, dass "kein Wert verfügbar" ist.
   

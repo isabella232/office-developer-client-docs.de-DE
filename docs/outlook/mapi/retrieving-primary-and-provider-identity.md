@@ -1,5 +1,5 @@
 ---
-title: Abrufen der primären und Anbieter Identität
+title: Abrufen der primären und Anbieteridentität
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,38 +15,38 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33430812"
 ---
-# <a name="retrieving-primary-and-provider-identity"></a>Abrufen der primären und Anbieter Identität
+# <a name="retrieving-primary-and-provider-identity"></a>Abrufen der primären und Anbieteridentität
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Dienstanbieter, in der Regel Adressbuchanbieter, haben die Möglichkeit, eine Identität anzugeben, die verwendet werden kann, um die Sitzung in einer Vielzahl von Situationen darzustellen. Drei Eigenschaften beschreiben die Identität eines Anbieters:
+Dienstanbieter, in der Regel Adressbuchanbieter, haben die Möglichkeit, eine Identität zur Darstellung der Sitzung in einer Vielzahl von Situationen zur Verfügung zu stellen. Drei Eigenschaften beschreiben die Identität eines Anbieters:
   
-- **PR_IDENTITY_ENTRYID** ([Pidtagidentityentryid (](pidtagidentityentryid-canonical-property.md)) 
+- **PR_IDENTITY_ENTRYID** ([PidTagIdentityEntryId](pidtagidentityentryid-canonical-property.md)) 
     
-- **PR_IDENTITY_DISPLAY** ([Pidtagidentitydisplay (](pidtagidentitydisplay-canonical-property.md)) 
+- **PR_IDENTITY_DISPLAY** ([PidTagIdentityDisplay](pidtagidentitydisplay-canonical-property.md)) 
     
-- **PR_IDENTITY_SEARCH_KEY** ([Pidtagidentitysearchkey (](pidtagidentitysearchkey-canonical-property.md)) 
+- **PR_IDENTITY_SEARCH_KEY** ([PidTagIdentitySearchKey](pidtagidentitysearchkey-canonical-property.md)) 
     
-Diese Eigenschaften werden auf die Eintrags-ID, den Anzeigenamen und den Suchschlüssel des entsprechenden Identity-Objekts festgelegt, bei dem es sich in der Regel um einen Messagingbenutzer handelt. Anbieter, die eine Identität angeben, legen auch das STATUS_PRIMARY_IDENTITY-Flag in Ihrer **PR_RESOURCE_FLAGS** ([pidtagresourceflags (](pidtagresourceflags-canonical-property.md))-Eigenschaft fest.
+Diese Eigenschaften werden auf die Eintrags-ID, den Anzeigenamen und den Suchschlüssel des entsprechenden Identitätsobjekts festgelegt, bei dem es sich in der Regel um einen Messagingbenutzer handelt. Anbieter, die eine Identität liefern, legen auch das STATUS_PRIMARY_IDENTITY in ihrer **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)) -Eigenschaft fest.
   
-Je nach Ihren Anforderungen können Sie die Identität eines bestimmten Anbieters oder die primäre Identität für die Sitzung verwenden. Sie können die Identität eines Anbieters auch zu Anzeigezwecken oder zum Abrufen von Eigenschaften wie **PR_RESOURCE_PATH** ([pidtagresourcepath (](pidtagresourcepath-canonical-property.md)) verwenden. **PR_RESOURCE_PATH**, wenn festgelegt, enthält den Pfad zu Dateien, die vom Anbieter verwendet oder erstellt werden. Rufen Sie die **PR_RESOURCE_PATH** -Eigenschaft für den Anbieter ab, der die primäre Identität angibt, wenn Sie Dateien suchen möchten, die für den Benutzer der Sitzung relevant sind. 
+Je nach Ihren Anforderungen können Sie die Identität eines bestimmten Anbieters oder die primäre Identität für die Sitzung verwenden. Sie können die Identität eines Anbieters auch zu Anzeigezwecken oder zum Abrufen von Eigenschaften wie PR_RESOURCE_PATH **(** [PidTagResourcePath](pidtagresourcepath-canonical-property.md)) verwenden. **PR_RESOURCE_PATH** enthält , falls festgelegt, den Pfad zu Dateien, die vom Anbieter verwendet oder erstellt wurden. Rufen Sie **die PR_RESOURCE_PATH-Eigenschaft** für den Anbieter ab, der die primäre Identität anliefert, wenn Sie Dateien suchen möchten, die für den Benutzer der Sitzung enthalten sind. 
   
  **So rufen Sie die Identität eines bestimmten Anbieters ab**
   
-1. Rufen Sie [IMAPISession::](imapisession-getstatustable.md) getstatusable auf, um auf die Statustabelle zuzugreifen. 
+1. Rufen [Sie IMAPISession::GetStatusTable auf,](imapisession-getstatustable.md) um auf die Statustabelle zu zugreifen. 
     
-2. Erstellen Sie eine Einschränkung mithilfe einer [SPropertyRestriction](spropertyrestriction.md) -Struktur, um die **PR_PROVIDER_DLL_NAME** ([pidtagproviderdllname (](pidtagproviderdllname-canonical-property.md))-Spalte mit dem Namen des angegebenen Anbieters zu vergleichen. 
+2. Erstellen Sie eine Einschränkung mithilfe einer [SPropertyRestriction-Struktur,](spropertyrestriction.md) um der **spalte PR_PROVIDER_DLL_NAME** ([PidTagProviderDllName](pidtagproviderdllname-canonical-property.md)) mit dem Namen des angegebenen Anbieters zu entsprechen. 
     
-3. Rufen Sie [IMAPITable:: FindRow](imapitable-findrow.md) auf, um die Zeile des Anbieters zu finden. Die Identität des Anbieters wird in der **PR_IDENTITY_ENTRYID** -Spalte gespeichert, sofern vorhanden. 
+3. Rufen [Sie IMAPITable::FindRow auf,](imapitable-findrow.md) um die Zeile des Anbieters zu finden. Die Identität des Anbieters wird in der Spalte **PR_IDENTITY_ENTRYID** gespeichert, falls vorhanden. 
     
  **So rufen Sie die primäre Identität für eine Sitzung ab**
   
-- Rufen Sie [IMAPISession:: QueryIdentity](imapisession-queryidentity.md)auf. **QueryIdentity** basiert die Sitzungs Identität auf dem vorhanden sein des STATUS_PRIMARY_IDENTITY-Werts in der **PR_RESOURCE_FLAGS** -Spalte für eine der Zeilen in der Status Tabelle. Wenn für keine der Statuszeilen dieser Wert festgelegt ist, weist **QueryIdentity** dem ersten Dienstanbieter die Identität zu, der die drei PR_IDENTITY-Eigenschaften festlegt. Wenn kein Dienstanbieter eine Identität bereitstellt, gibt **QUERYIDENTITY** MAPI_W_NO_SERVICE zurück. In diesem Fall sollten Sie eine Zeichenfolge erstellen, die einen generischen Benutzer darstellt, der als primäre Identität dienen kann. 
+- Rufen [Sie IMAPISession::QueryIdentity auf.](imapisession-queryidentity.md) **QueryIdentity** basiert auf dem Vorhandensein des STATUS_PRIMARY_IDENTITY in der spalte **PR_RESOURCE_FLAGS** für eine der Zeilen in der Statustabelle. Wenn keine der Statuszeilen diesen Wert festgelegt hat, weist **QueryIdentity** dem ersten Dienstanbieter, der die drei Eigenschaften PR_IDENTITY, eine Identität zu. Wenn kein Dienstanbieter eine Identität angibt, gibt **QueryIdentity** MAPI_W_NO_SERVICE. In diesem Fall sollten Sie eine Zeichenzeichenfolge erstellen, um einen generischen Benutzer zu repräsentieren, der als primäre Identität dienen kann. 
     
- **So legen Sie die primäre Identität für eine Sitzung explizit fest**
+ **So legen Sie die primäre Identität für eine Sitzung explizit**
   
-- Rufen Sie [IMsgServiceAdmin:: SetPrimaryIdentity](imsgserviceadmin-setprimaryidentity.md)auf. Führen Sie die **MAPIUID** für den Zieldienst Anbieter aus. 
+- Rufen [Sie IMsgServiceAdmin::SetPrimaryIdentity auf.](imsgserviceadmin-setprimaryidentity.md) Übergeben Sie **die MAPIUID** für den Zieldienstanbieter. 
     
 

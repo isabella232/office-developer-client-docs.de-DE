@@ -33,7 +33,7 @@ HRESULT IOlkAccountManager::SaveChanges (
 
 _dwAcctID_
   
-> in Die zu speichernde Konto-ID. 
+> [in] Die zu speichernde Konto-ID. 
     
 _dwFlags_
   
@@ -43,13 +43,13 @@ _dwFlags_
 
 |**[HRESULT]**|**Description**|
 |:-----|:-----|
-|S_OK  <br/> |Der Aufruf war erfolgreich.  <br/> |
+|S_OK  <br/> |Der Aufruf ist erfolgreich  <br/> |
 |E_ACCT_NOT_FOUND  <br/> |Das angegebene Konto wurde nicht gefunden.  <br/> |
 |E_OLK_NOT_INITIALIZED  <br/> |Konto-Manager wurde nicht für die Verwendung initialisiert.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Nachdem Sie den Wert der Kontoeigenschaften mithilfe von [IOlkAccount:: setprop](iolkaccount-setprop.md)geändert haben, verwenden Sie **IOlkAccountManager:: SaveChanges** oder [IOlkAccount:: SaveChanges](iolkaccount-savechanges.md) , um solche Änderungen zu speichern. 
+Nachdem Sie den Wert der Kontoeigenschaften mithilfe von [IOlkAccount::SetProp](iolkaccount-setprop.md)geändert haben, verwenden Sie **IOlkAccountManager::SaveChanges** oder [IOlkAccount::SaveChanges,](iolkaccount-savechanges.md) um solche Änderungen zu speichern. 
   
 ## <a name="see-also"></a>Siehe auch
 

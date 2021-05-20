@@ -25,11 +25,11 @@ ms.locfileid: "33429873"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von float-Werten, die zum Beschreiben einer Eigenschaft vom Typ PT_MV_R4 verwendet werden. 
+Enthält ein Array von Gleitkommawerten, die zum Beschreiben einer Eigenschaft vom Typ PT_MV_R4. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SRealArray
@@ -40,19 +40,19 @@ typedef struct _SRealArray
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cValues**
   
-> Die Anzahl der Werte im Array, auf die durch das **lpflt** -Element verwiesen wird. 
+> Anzahl der Werte im Array, auf das das **lpflt-Element** verweist. 
     
  **lpflt**
   
-> Zeiger auf ein Array von float-Werten.
+> Zeiger auf ein Array von Gleitkommawerten.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Weitere Informationen zum PT_MV_R4-Eigenschaftentyp finden Sie unter [Property](property-types.md)Types.
+Weitere Informationen zum eigenschaftentyp PT_MV_R4 finden Sie unter [Property Types](property-types.md).
   
 ## <a name="see-also"></a>Siehe auch
 

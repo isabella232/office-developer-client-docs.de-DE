@@ -25,39 +25,39 @@ ms.locfileid: "33429824"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Unterstützt den Zugriff auf das MAPI-Adressbuch und enthält Vorgänge wie das Anzeigen allgemeiner Dialogfelder; Öffnen von Containern, Messaging Benutzern und Verteilerlisten; und durchführen der Namensauflösung.
+Unterstützt den Zugriff auf das #A0 und umfasst Vorgänge wie das Anzeigen gängiger Dialogfelder. Öffnen von Containern, Messagingbenutzern und Verteilerlisten; und Durchführen der Namensauflösung.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapix. h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Adressbuch Objekte  <br/> |
+|Headerdatei  <br/> |Mapix.h  <br/> |
+|Verf�gbar gemacht von:  <br/> |Adressbuchobjekte  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen, Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen, Dienstanbieter  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IAddrBook  <br/> |
 |Zeigertyp:  <br/> |LPADRBOOK  <br/> |
-|Transaktionsmodell:  <br/> |Nicht schreibbar  <br/> |
+|Transaktionsmodell:  <br/> |Nicht beschreibbar  <br/> |
    
 ## <a name="vtable-order"></a>Vtable-Reihenfolge
 
 |||
 |:-----|:-----|
 |[OpenEntry](iaddrbook-openentry.md) <br/> |Öffnet einen Adressbucheintrag und gibt einen Zeiger auf eine Schnittstelle zurück, die für den Zugriff auf den Eintrag verwendet werden kann.  <br/> |
-|[CompareEntryIDs](iaddrbook-compareentryids.md) <br/> |Vergleicht zwei Eintrags-IDs, die zu einem bestimmten Adressbuchanbieter gehören, um zu bestimmen, ob Sie auf dasselbe Adressbuchobjekt verweisen.  <br/> |
-|[Beraten](iaddrbook-advise.md) <br/> |Registriert einen Client oder Dienstanbieter für den Empfang von Benachrichtigungen zu Änderungen an einem oder mehreren Einträgen im Adressbuch.  <br/> |
-|[Unadvise](iaddrbook-unadvise.md) <br/> |Bricht eine zuvor für einen Adressbucheintrag eingerichtete Benachrichtigungs Registrierung ab.  <br/> |
-|[CreateOneOff](iaddrbook-createoneoff.md) <br/> |Erstellt eine Eintrags-ID für eine einmalige Adresse.  <br/> |
-|[NeuEintrag](iaddrbook-newentry.md) <br/> |Fügt einen neuen Empfänger zu einem Adressbuchcontainer oder zur Empfängerliste einer ausgehenden Nachricht hinzu.  <br/> |
-|[ResolveName](iaddrbook-resolvename.md) <br/> |Führt eine Namensauflösung durch und weist Empfängern in einer Empfängerliste Eintragsbezeichner zu.  <br/> |
-|[Adresse](iaddrbook-address.md) <br/> |Zeigt das Dialogfeld Outlook-Adressbuch an.  <br/> |
+|[CompareEntryIDs](iaddrbook-compareentryids.md) <br/> |Vergleicht zwei Eintragsbezeichner, die zu einem bestimmten Adressbuchanbieter gehören, um zu bestimmen, ob sie auf dasselbe Adressbuchobjekt verweisen.  <br/> |
+|[Raten](iaddrbook-advise.md) <br/> |Registriert einen Client oder Dienstanbieter, um Benachrichtigungen über Änderungen an einem oder mehreren Einträgen im Adressbuch zu erhalten.  <br/> |
+|[Unadvise](iaddrbook-unadvise.md) <br/> |Bricht eine Benachrichtigungsregistrierung ab, die zuvor für einen Adressbucheintrag eingerichtet wurde.  <br/> |
+|[CreateOneOff](iaddrbook-createoneoff.md) <br/> |Erstellt einen Eintragsbezeichner für eine eindeutige Adresse.  <br/> |
+|[NewEntry](iaddrbook-newentry.md) <br/> |Fügt einem Adressbuchcontainer oder der Empfängerliste einer ausgehenden Nachricht einen neuen Empfänger hinzu.  <br/> |
+|[ResolveName](iaddrbook-resolvename.md) <br/> |Führt die Namensauflösung durch und weist Empfängern in einer Empfängerliste Eintragsbezeichner zu.  <br/> |
+|[Adresse](iaddrbook-address.md) <br/> |Zeigt das Outlook Adressbuch an.  <br/> |
 |[Details](iaddrbook-details.md) <br/> |Zeigt ein Dialogfeld an, in dem Details zu einem bestimmten Adressbucheintrag angezeigt werden.  <br/> |
 |**RecipOptions** <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
 |**QueryDefaultRecipOpt** <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
 |[GetPAB](iaddrbook-getpab.md) <br/> |Gibt den Eintragsbezeichner des Containers zurück, der als persönliches Adressbuch (PAB) festgelegt ist.  <br/> |
-|[SetPAB](iaddrbook-setpab.md) <br/> |Legt einen bestimmten Container als persönliches Adressbuch (PAB) fest.  <br/> |
-|[GetDefaultDir](iaddrbook-getdefaultdir.md) <br/> |Gibt die Eintrags-ID für den anfänglichen Adressbuchcontainer zurück.  <br/> |
-|[SetDefaultDir](iaddrbook-setdefaultdir.md) <br/> |Legt den angegebenen Container als Standard-Adressbuchcontainer fest, der zunächst zur Verfügung gestellt wird.  <br/> |
-|[GetSearchPath](iaddrbook-getsearchpath.md) <br/> |Gibt eine sortierte Liste von Eintrags Bezeichnern der Container zurück, die in den von der ResolveName-Methode initiierten namens Auflösungsprozess eingeschlossen werden sollen. [](iaddrbook-resolvename.md)  <br/> |
-|[SetSearchPath](iaddrbook-setsearchpath.md) <br/> |Legt einen neuen Suchpfad im Profil fest, der für den Prozess der Namensauflösung verwendet wird.  <br/> |
+|[SetPAB](iaddrbook-setpab.md) <br/> |Bestimmt einen bestimmten Container als persönliches Adressbuch (PAB).  <br/> |
+|[GetDefaultDir](iaddrbook-getdefaultdir.md) <br/> |Gibt den Eintragsbezeichner für den anfänglichen Adressbuchcontainer zurück.  <br/> |
+|[SetDefaultDir](iaddrbook-setdefaultdir.md) <br/> |Richtet den angegebenen Container als Standard-Adressbuchcontainer ein, der zunächst verfügbar gemacht wird.  <br/> |
+|[GetSearchPath](iaddrbook-getsearchpath.md) <br/> |Gibt eine geordnete Liste der Eintragsbezeichner der Container zurück, die in den von der [ResolveName-Methode](iaddrbook-resolvename.md) initiierten Namensauflösungsprozess einbezogen werden sollen.  <br/> |
+|[SetSearchPath](iaddrbook-setsearchpath.md) <br/> |Legt einen neuen Suchpfad im Profil fest, der für den Namensauflösungsprozess verwendet wird.  <br/> |
 |[PrepareRecips](iaddrbook-preparerecips.md) <br/> |Bereitet eine Empfängerliste für die spätere Verwendung durch das Messagingsystem vor.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

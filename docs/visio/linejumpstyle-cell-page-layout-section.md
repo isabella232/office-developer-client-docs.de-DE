@@ -22,32 +22,32 @@ Bestimmt das Liniensprungformat für sämtliche Verbinder auf dem Zeichenblatt, 
   
 |**Wert**|**Liniensprungformat**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
-|0  <br/> |Bogens  <br/> |**visLOJumpStyleDefault** <br/> |
-|1  <br/> |Bogens  <br/> |**visLOJumpStyleArc** <br/> |
+|0  <br/> |Arc  <br/> |**visLOJumpStyleDefault** <br/> |
+|1  <br/> |Arc  <br/> |**visLOJumpStyleArc** <br/> |
 |2  <br/> |Lücke  <br/> |**visLOJumpStyleGap** <br/> |
 |3  <br/> |Square  <br/> |**visLOJumpStyleSquare** <br/> |
-|4  <br/> |2 Seiten  <br/> |**visLOJumpStyleTriangle** <br/> |
-|5  <br/> |3 Seiten  <br/> |**visLOJumpStyle2Point** <br/> |
-|6  <br/> |4 Seiten  <br/> |**visLOJumpStyle3Point** <br/> |
-|7  <br/> |5 Seiten  <br/> |**visLOJumpStyle4Point** <br/> |
-|8  <br/> |6 Seiten  <br/> |**visLOJumpStyle5Point** <br/> |
-|9  <br/> |7 Seiten  <br/> |**visLOJumpStyle6Point** <br/> |
+|4   <br/> |2 Seiten  <br/> |**visLOJumpStyleTriangle** <br/> |
+|5   <br/> |3 Seiten  <br/> |**visLOJumpStyle2Point** <br/> |
+|6   <br/> |4 Seiten  <br/> |**visLOJumpStyle3Point** <br/> |
+|7   <br/> |5 Seiten  <br/> |**visLOJumpStyle4Point** <br/> |
+|8   <br/> |6 Seiten  <br/> |**visLOJumpStyle5Point** <br/> |
+|9   <br/> |7 Seiten  <br/> |**visLOJumpStyle6Point** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Sie können den Wert dieser Zelle auch im Dialogfeld **Seite einrichten** auf der Registerkarte **Layout und Routing** festlegen (klicken Sie dazu auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten**, und klicken Sie dann auf **Layout und Routing**).
   
-Wenn Sie einen Verweis auf die Zelle Zelle LineJumpStyle aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die LineJumpStyle-Zelle anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Zelle LineJumpStyle  <br/> |
+|Zellenname:  <br/> |LineJumpStyle  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle LineJumpStyle aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die LineJumpStyle-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowPageLayout** <br/> |
 |Zellenindex:  <br/> |**visPLOJumpStyle** <br/> |
    

@@ -1,5 +1,5 @@
 ---
-title: NOT (Access Custom Web App)
+title: NOT (Benutzerdefinierte Web-App zugreifen)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33430721"
 ---
-# <a name="not-access-custom-web-app"></a>NOT (Access Custom Web App)
+# <a name="not-access-custom-web-app"></a>NOT (Benutzerdefinierte Web-App zugreifen)
 
 Negiert eine boolesche Eingabe.
   
@@ -23,21 +23,21 @@ Negiert eine boolesche Eingabe.
   
 ## <a name="syntax"></a>Syntax
 
-[ **Nicht** ]  *Boolean-Wert* 
+[ **Nicht** ]  *BooleanExpression* 
   
-Der **Not** -Operator enthält die folgenden Argumente. 
+Der **Not-Operator** enthält die folgenden Argumente. 
   
 |**Argumentname**|**Beschreibung**|
 |:-----|:-----|
-| *BoolescherAusdruck*  <br/> |Ein gültiger boolescher Ausdruck.  <br/> |
+| *BooleanExpression*  <br/> |Ein gültiger boolescher Ausdruck.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-In der folgenden Tabelle sind die Ergebnisse des Vergleichs von TRUE-und FALSE-Werten mithilfe des **Not** -Operators dargestellt. 
+In der folgenden Tabelle sind die Ergebnisse des Vergleichs von TRUE- und FALSE-Werten mit dem **Not-Operator** aufgeführt. 
   
-||**Not**|
+||**not**|
 |:-----|:-----|
-|**TRUE** <br/> |False  <br/> |
-|**FALSE** <br/> |True  <br/> |
+|**TRUE** <br/> |Falsch  <br/> |
+|**FALSE** <br/> |Wahr  <br/> |
    
 

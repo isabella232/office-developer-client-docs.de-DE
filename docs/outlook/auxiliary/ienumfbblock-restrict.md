@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 887cea55-8f1c-45ec-3100-d03e1213d7c9
-description: Schränkt die Enumeration auf einen bestimmten Zeitraum ein.
+description: Schränkt die Enumeration auf einen angegebenen Zeitraum ein.
 ms.openlocfilehash: e7f7a5d846d13422f9ed79ef26f1b9b0008463f6
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,11 +16,11 @@ ms.locfileid: "33431946"
 ---
 # <a name="ienumfbblockrestrict"></a>IEnumFBBlock::Restrict
 
-Schränkt die Enumeration auf einen bestimmten Zeitraum ein.
+Schränkt die Enumeration auf einen angegebenen Zeitraum ein.
   
 ## <a name="quick-info"></a>QuickInfo
 
-Siehe [IEnumFBBlock](ienumfbblock.md).
+Weitere [Informationen finden Sie unter IEnumFBBlock](ienumfbblock.md).
   
 ```cpp
 HRESULT Restrict(  
@@ -34,19 +34,19 @@ HRESULT Restrict(
 
 _ftmStart_
   
->  in Die Startzeit, um die Enumeration einzuschränken. 
+>  [in] Die Startzeit zum Einschränken der Enumeration. 
     
 _ftmEnd_
   
-> in Die Endzeit, um die Enumeration einzuschränken.
+> [in] Die Endzeit zum Einschränken der Enumeration.
     
 ## <a name="return-values"></a>Rückgabewerte
 
 S_OK zurück, wenn der Aufruf erfolgreich war; andernfalls einen Fehlercode.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Diese Methode setzt auch die Enumeration zurück.
+Mit dieser Methode wird auch die Enumeration zurückgesetzt.
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -37,7 +37,7 @@ HRESULT CopyMessage(
 
  _pFolderDestination_
   
-> in Ein Zeiger auf den Ordner, in den die Nachricht kopiert werden soll.
+> [in] Ein Zeiger auf den Ordner, in den die Nachricht kopiert werden soll.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -49,23 +49,23 @@ MAPI_E_NO_SUPPORT
   
 > Der Vorgang wird von dieser Nachrichtenwebsite nicht unterstützt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Formularobjekte rufen die **IMAPIMessageSite:: CopyMessage** -Methode auf, um die aktuelle Nachricht in einen neuen Ordner zu kopieren. **CopyMessage** ändert die aktuell angezeigte Nachricht nicht, und es wird keine Schnittstelle für die neu erstellte Nachricht an das Formular zurückgegeben. 
+Form-Objekte rufen die **IMAPIMessageSite::CopyMessage-Methode** auf, um die aktuelle Nachricht in einen neuen Ordner zu kopieren. **CopyMessage** ändert die Nachricht, die dem Benutzer derzeit angezeigt wird, nicht, und es wird keine Schnittstelle für die neu erstellte Nachricht an das Formular zurückgegeben. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Eine typische Implementierung der **CopyMessage** -Methode führt die folgenden Aufgaben aus: 
+Eine typische Implementierung der **CopyMessage-Methode** führt die folgenden Aufgaben aus: 
   
-1. Erstellt eine neue Nachricht für die aktuelle Nachricht, in die kopiert werden soll.
+1. Erstellt eine neue Nachricht, in die die aktuelle Nachricht kopiert werden soll.
     
-2. Ruft die [IPersistMessage:: Save](ipersistmessage-save.md) -Methode mit einem Zeiger auf die neue Nachricht im _pMessage_ -Parameter und false im _fSameAsLoad_ -Parameter auf. 
+2. Ruft die [IPersistMessage::Save-Methode](ipersistmessage-save.md) mit einem Zeiger auf die neue Nachricht im  _pMessage-Parameter_ und FALSE im  _fSameAsLoad-Parameter_ auf. 
     
-3. Ruft die [IPersistMessage:: SaveCompleted](ipersistmessage-savecompleted.md) -Methode auf und übergibt NULL im _pMessage_ -Parameter. 
+3. Ruft die [IPersistMessage::SaveCompleted-Methode](ipersistmessage-savecompleted.md) auf, und übergeben Sie NULL im _pMessage-Parameter._ 
     
-4. Ruft die [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) -Methode für die neue Nachricht auf. 
+4. Ruft die [IMAPIProp::SaveChanges-Methode für](imapiprop-savechanges.md) die neue Nachricht auf. 
     
-Eine Liste der Schnittstellen im Zusammenhang mit Formular Servern finden Sie unter [MAPI-Formular Schnittstellen](mapi-form-interfaces.md).
+Eine Liste der Schnittstellen im Zusammenhang mit Formularservern finden Sie unter [MAPI Form Interfaces](mapi-form-interfaces.md).
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -73,7 +73,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer. cpp  <br/> |CMyMAPIFormViewer:: CopyMessage  <br/> |Nicht implementiert.  <br/> |
+|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::CopyMessage  <br/> |Nicht implementiert.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -90,5 +90,5 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
-[MAPI-Formular Schnittstellen](mapi-form-interfaces.md)
+[MAPI-Formularschnittstellen](mapi-form-interfaces.md)
 

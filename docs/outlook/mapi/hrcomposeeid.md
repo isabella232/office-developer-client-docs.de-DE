@@ -25,13 +25,13 @@ ms.locfileid: "33429047"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt eine verknüpfte Eintrags-ID für ein Objekt, in der Regel eine Nachricht in einem Nachrichtenspeicher. 
+Erstellt einen zusammengesetzten Eintragsbezeichner für ein Objekt, in der Regel eine Nachricht in einem Nachrichtenspeicher. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
    
 ```cpp
 HrComposeEID(
@@ -49,41 +49,41 @@ HrComposeEID(
 
  _psession_
   
-> in Zeiger auf die Sitzung, die von der Clientanwendung verwendet wird. 
+> [in] Zeiger auf die Sitzung, die von der Clientanwendung verwendet wird. 
     
  _cbStoreRecordKey_
   
-> in Größe (in Byte) des Daten Satz Schlüssels des Nachrichtenspeichers, der die Nachricht oder ein anderes Objekt hält. Wenn NULL im _cbStoreRecordKey_ -Parameter übergeben wird, zeigt der _ppEID_ -Parameter auf eine Kopie der Eintrags-ID des Objekts. 
+> [in] Größe des Datensatzschlüssels des Nachrichtenspeichers, der die Nachricht oder ein anderes Objekt enthält, in Bytes. Wenn null im  _cbStoreRecordKey-Parameter_ übergeben wird, zeigt der  _ppEID-Parameter_ auf eine Kopie des Eintragsbezeichners des Objekts. 
     
  _pStoreRecordKey_
   
-> in Zeiger auf den Datensatzschlüssel des Nachrichtenspeichers, der die Nachricht oder ein anderes Objekt enthält. 
+> [in] Zeiger auf den Datensatzschlüssel des Nachrichtenspeichers, der die Nachricht oder ein anderes Objekt enthält. 
     
  _cbMsgEID_
   
-> in Größe (in Bytes) der Eintrags-ID der Nachricht oder eines anderen Objekts. 
+> [in] Größe des Eintragsbezeichners der Nachricht oder eines anderen Objekts in Bytes. 
     
  _pMsgEID_
   
-> in Zeiger auf die Eintrags-ID des Objekts. 
+> [in] Zeiger auf die Eintrags-ID des Objekts. 
     
  _pcbEID_
   
-> Out Zeiger auf die Größe des zurückgegebenen Bezeichners in Byte. 
+> [out] Zeiger auf die Größe des zurückgegebenen Bezeichners in Bytes. 
     
  _ppEID_
   
-> Out Zeiger auf einen Zeiger auf den zurückgegebenen Eintragsbezeichner. Wenn der Wert des _cbStoreRecordKey_ -Parameters größer als NULL ist, zeigt der Parameter _ppEID_ auf einen Zeiger auf den verknüpften Eintragsbezeichner, der erstellt wird. Wenn _cbStoreRecordKey_ ist, verweist _ppEID_ auf einen Zeiger auf eine Kopie des Eintrags Bezeichners des Objekts. 
+> [out] Zeiger auf einen Zeiger auf die zurückgegebene Eintrags-ID. Wenn der Wert des  _cbStoreRecordKey-Parameters_ größer als Null ist, zeigt der  _ppEID-Parameter_ auf einen Zeiger auf den zusammengesetzten Eintragsbezeichner, der erstellt wird. Wenn  _cbStoreRecordKey_ null ist,  _zeigt ppEID_ auf einen Zeiger auf eine Kopie des Eintragsbezeichners des Objekts. 
     
 ## <a name="return-value"></a>Return value
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn die Nachricht oder ein anderes Objekt, für das die verknüpfte Eintrags-ID erstellt wird, in einem Nachrichtenspeicher gespeichert ist, wird der Bezeichner aus der Eintrags-ID des Objekts und dem Record-Schlüssel des Speichers erstellt. Wenn sich das Objekt nicht in einem Speicher befindet, das heißt, wenn die Bytezahl für den in _cbStoreRecordKey_ übergebenen Speicher Eintragsschlüssel NULL ist, wird die Eintrags-ID des Objekts einfach kopiert. 
+Wenn sich die Nachricht oder ein anderes Objekt, für das der zusammengesetzte Eintragsbezeichner erstellt wird, in einem Nachrichtenspeicher befindet, wird der Bezeichner aus dem Eintragsbezeichner des Objekts und dem Datensatzschlüssel des Speichers erstellt. Wenn sich das Objekt nicht in einem Speicher befindet, d. h. wenn die Byteanzahl für den in  _cbStoreRecordKey_ übergebenen Speicherdatensatzschlüssel null ist, wird der Eintragsbezeichner des Objekts einfach kopiert. 
   
-Mit der **HrComposeEID** -Funktion können Anwendungen mit Objekten in mehreren speichern mithilfe von verknüpften Eingabe Bezeichnern verwendet werden. Eine Anwendung kann die [HrDecomposeEID](hrdecomposeeid.md) -Funktion aufrufen, um den verknüpften Eintragsbezeichner in seine ursprünglichen Bestandteile aufzuteilen. 
+Die **HrComposeEID-Funktion** ermöglicht Anwendungen das Arbeiten mit Objekten in mehreren Speichern mithilfe von zusammengesetzten Eingabebezeichnern. Eine Anwendung kann die [HrDecomposeEID-Funktion](hrdecomposeeid.md) aufrufen, um die zusammengesetzte Eintrags-ID in ihre ursprünglichen Bestandteile zu teilen. 
   
 ## <a name="see-also"></a>Siehe auch
 

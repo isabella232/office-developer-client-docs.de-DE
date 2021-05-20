@@ -1,5 +1,5 @@
 ---
-title: OpenPopup-Makroaktion (Access Custom Web App)
+title: OpenPopup-Makroaktion (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33427388"
 ---
-# <a name="openpopup-macro-action-access-custom-web-app"></a>OpenPopup-Makroaktion (Access Custom Web App)
+# <a name="openpopup-macro-action-access-custom-web-app"></a>OpenPopup-Makroaktion (benutzerdefinierte Access-Web-App)
 
 Öffnet die angegebene Ansicht in einem Popupfenster.
   
@@ -23,24 +23,24 @@ ms.locfileid: "33427388"
   
 ## <a name="syntax"></a>Syntax
 
- **Openpopup** (*View*, *Where =*, *Order by*) 
+ **OpenPopup** (*View*, *Where=*, *Order By*) 
   
-Die **openpopup** -Aktion enthält die folgenden Argumente. 
+Die **OpenPopup-Aktion** enthält die folgenden Argumente. 
   
 |**Argumentname**|**Beschreibung**|
 |:-----|:-----|
-| *View*  <br/> |Der Name der zu öffnenden Ansicht.  <br/> |
-| *WHERE =*  <br/> |Eine gültige SQL-WHERE-Klausel (ohne das Wort WHERE), die die Datensätze in der Ansicht einschränkt.  <br/> |
-| *Sortiert nach*  <br/> |Ein Zeichenfolgenausdruck, der den Namen des Felds oder der Felder, nach dem oder denen Datensätze sortiert werden sollen, sowie die optionalen ASC- oder DESC-Schlüsselwörter enthält. Dieses Argument ist standardmäßig leer.  <br/> |
+| *View*  <br/> |Der Name der zu öffnende Ansicht.  <br/> |
+| *Where=*  <br/> |Eine gültige SQL WHERE-Klausel (ohne das Wort WHERE), die die Datensätze in der Ansicht einschränkt.  <br/> |
+| *Sortiert nach*  <br/> |Ein Zeichenfolgenausdruck, der den Namen des Felds oder der Felder, nach dem oder denen Datensätze sortiert werden sollen, sowie die optionalen ASC- oder DESC-Schlüsselwörter enthält. Standardmäßig ist dieses Argument leer.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Das aktuelle Makro endet, nachdem **** die openpopup-Aktion verarbeitet wurde. 
+Das aktuelle Makro endet, nachdem die **OpenPopup-Aktion** verarbeitet wurde. 
   
-Alle vom Benutzer angewendeten Sortier-oder Filter Vorgänge werden gelöscht **** , wenn die openpopup-Aktion aufgerufen wird. 
+Alle vom Benutzer angewendeten Sortierungen oder Filter werden beim **ÖffnenPopup-Aktionsvorgang** geleert. 
   
-Das *OrderBy* -Argument ist der Name der Felder, für die Sie Datensätze sortieren möchten. Wenn Sie mehr als einen Feldnamen verwenden, trennen Sie die Namen durch ein Komma (,). 
+Das  *OrderBy-Argument*  ist der Name des Felds oder der Felder, nach denen Sie Datensätze sortieren möchten. Wenn Sie mehr als einen Feldnamen verwenden, trennen Sie die Namen durch ein Komma (,). 
   
-Wenn Sie das *OrderBy* -Argument festlegen, werden die Datensätze standardmäßig in aufsteigender Reihenfolge sortiert. 
+Wenn Sie das  *Argument OrderBy*  festlegen, werden die Datensätze standardmäßig in aufsteigender Reihenfolge sortiert. 
   
 

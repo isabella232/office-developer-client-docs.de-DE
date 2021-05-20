@@ -20,25 +20,25 @@ ms.locfileid: "33430427"
 
 Enthält eine Zahl, die den Winkel der Schräge angibt, wenn Sie den Standardzeichenblatt-Schattentyp anwenden.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Der Wert Null (0) in dieser Zelle zeigt an, dass die Winkelrichtung genau nach oben verläuft und im Uhrzeigersinn gemessen wird.
   
- Der in dieser Zelle beschriebene Winkel wird verwendet, wenn die Zelle-Zelle (der Schattentyp für ein Shape auf dem Zeichenblatt) auf Seiten Standard (**visFSTPageDefault** ) festgelegt ist und der Schattentyp schräg ist. Der standardmäßige Seiten Schattentyp wird in der Zelle "ShdwType definiert. 
+ Der in dieser Zelle beschriebene Winkel wird immer dann verwendet, wenn die Zelle ShapeShdwType (der Schattentyp für ein Shape auf der Seite) auf Page Default (**visFSTPageDefault** ) festgelegt ist und der Schattentyp schräg ist. Der Standardmäßige Seitenschattentyp ist in der Zelle ShdwType definiert. 
   
 Wenn Sie dieses Verhalten für einen einzelnen Schatten festlegen möchten, verwenden Sie im Abschnitt Fill Format die Zelle ShapeShdwObliqueAngle.
   
-Wenn Sie einen Verweis auf die Zelle "ShdwObliqueAngle aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Rufen eines Verweises auf die Zelle ShdwObliqueAngle anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | "ShdwObliqueAngle  <br/> |
+| Zellenname:  <br/> | ShdwObliqueAngle  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle "ShdwObliqueAngle aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die ShdwObliqueAngle-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowPage** <br/> |
 | Zellenindex:  <br/> |**visPageShdwObliqueAngle** <br/> |
    

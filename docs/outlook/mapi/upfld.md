@@ -19,7 +19,7 @@ ms.locfileid: "33431358"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Informationen zum Hochladen eines Ordners während des [Upload-Ordner Status](upload-folder-state.md).
+Informationen zum Hochladen eines Ordners während des [Uploadordnerstatus](upload-folder-state.md).
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -37,31 +37,31 @@ struct UPFLD
 
 _ulFlags_
   
->  [out]/[in] Flags, um geeignete Aktionen für das Uplaod zu bestimmen. 
+>  [out]/[in] Flags, um geeignete Aktionen für den Uplaod zu ermitteln. 
     
   - UPF_NEW
     
-    - Out Folder ist neu.
+    - [out] Ordner ist neu.
     
   - UPF_MOD_PARENT
     
-    - Out Der Ordner wurde verschoben.
+    - [out] Ordner wurde verschoben.
     
   - UPF_MOD_PROPS
     
-    - Out Die Ordner Eigenschaften wurden geändert.
+    - [out] Die Ordnereigenschaften wurden geändert.
     
   - UPF_DEL
     
-    - Out Der Ordner wurde gelöscht.
+    - [out] Ordner wurde gelöscht.
     
   - UPF_OK
     
-    - in Der Upload war erfolgreich. Der Client legt dies nach dem Hochladen von Ordnerinformationen auf den Server fest.
+    - [in] Hochladen war erfolgreich. Der Client legt dies nach dem Hochladen von Ordnerinformationen auf den Server fest.
     
 _pfld_
   
-> Out Das geöffnete Folder-Objekt, das hochgeladen werden soll.
+> [out] Das hochzuladende Objekt des geöffneten Ordners.
     
 _feid_
   

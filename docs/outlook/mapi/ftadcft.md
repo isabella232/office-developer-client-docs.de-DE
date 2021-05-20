@@ -21,12 +21,12 @@ ms.locfileid: "33429705"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Fügt eine unsignierte 64-Bit-Ganzzahl zu einem anderen hinzu, optional mit einem Carry-Flag.
+Fügt einer anderen einen nicht signierten ganzzahligen 64-Bit-Wert hinzu, optional mit einem Carry-Flag.
   
 |||
 |:-----|:-----|
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 FILETIME FtAdcFt( 
@@ -38,25 +38,25 @@ FILETIME FtAdcFt(
 
 ## <a name="parameters"></a>Parameter
 
- _FT1_
+ _ft1_
   
-> in Eine [FILETIME](filetime.md) -Struktur, die die erste nicht signierte 64-Bit-Ganzzahl enthält, die hinzugefügt werden soll. 
+> [in] Eine [FILETIME-Struktur,](filetime.md) die die erste nicht signierte 64-Bit-Ganzzahl enthält, die hinzugefügt werden soll. 
     
  _ft2_
   
-> in Eine fileTIME-Struktur, die die zweite nicht signierte 64-Bit-Ganzzahl enthält, die hinzugefügt werden soll.
+> [in] Eine FILETIME-Struktur, die die zweite nicht signierte 64-Bit-Ganzzahl enthält, die hinzugefügt werden soll.
     
  _pwCarry_
   
-> [in, out, optional] Bei Eingabe ein Zeiger auf die eingehende Carry-Kennzeichnung. Bei Ausgabe ein Zeiger auf das Carry-Ergebnis für den Zusatz. Dieser Parameter kann NULL sein, wenn das Carry-Ergebnis nicht erforderlich ist.
+> [in, out, optional] Bei der Eingabe ein Zeiger auf das eingehende Carry-Flag. Bei der Ausgabe ein Zeiger auf das Carry-Ergebnis für die Addition. Dieser Parameter kann NULL sein, wenn das Carry-Ergebnis nicht erforderlich ist.
     
 ## <a name="return-value"></a>Rückgabewert
 
-Die **FtAdcFt** -Funktion gibt **** eine FILETIME-Struktur zurück, die die Summe der beiden ganzen Zahlen enthält. Die beiden Eingabeparameter bleiben unverändert. Wenn **pwCarry** ungleich NULL ist, enthält es das Carry-Ergebnis für die Summe, entweder 0 oder 1. 
+Die **FtAdcFt-Funktion** gibt eine **FILETIME-Struktur** zurück, die die Summe der beiden ganzen Zahlen enthält. Die beiden Eingabeparameter bleiben unverändert. Wenn **pwCarry** nicht NULL ist, enthält es das Carry-Ergebnis für die Summe, entweder 0 oder 1. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **FtAdcFt** -Funktion ist identisch mit **FtAddFt** , wenn _pwCarry_ NULL ist. Wenn _pwCarry_ nicht NULL ist und auf 0 zeigt, gibt **FtAdcFt** den gleichen **FILETIME** -Wert zurück, der **FtAddFt** zurückgibt. 
+Die **FtAdcFt-Funktion** ist mit **FtAddFt** identisch, wenn  _pwCarry_ NULL ist. Wenn _pwCarry_ nicht NULL ist und auf 0 zeigt, gibt **FtAdcFt** denselben **FILETIME-Wert** zurück, den **FtAddFt zurückgibt.** 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - ConvertXLRefToXLRef12
 keywords:
-- convertxlreftoxlref12-Funktion [Excel 2007]
+- convertxlreftoxlref12-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: 94580044-9497-425f-a31e-53bb4d94dc30
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -22,7 +22,7 @@ ms.locfileid: "33432030"
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Framework-Funktion, die versucht, ein **XLREF** in ein **XLREF12**zu konvertieren.
+Framework-Funktion, die versucht, eine **XLREF** in eine **XLREF12 zu konvertieren.**
   
 ```cs
 BOOL ConvertXLRefToXLRef12(LPXLREF pxRef, LPXLREF12 pxRef12);
@@ -32,19 +32,19 @@ BOOL ConvertXLRefToXLRef12(LPXLREF pxRef, LPXLREF12 pxRef12);
 
  _pxRef_ (**LPXLREF**)
   
-Zeiger auf die Quellverweis Struktur.
+Zeiger auf die Quellreferenzstruktur.
   
  _pxRef12_ (**LPXLREF12**)
   
-Zeiger auf die Zielverweis Struktur, in die der konvertierte Wert eingefügt werden soll.
+Zeiger auf die Zielreferenzstruktur, in die der konvertierte Wert platziert werden soll.
   
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
- **True** , wenn die Konvertierung erfolgreich war, andernfalls **false** . 
+ **TRUE,** wenn die Konvertierung erfolgreich war, **andernfalls FALSE.** 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Sofern die übergebene **XLREF** gültig ist, sollte dieser Vorgang immer erfolgreich sein. Im Gegensatz dazu schlägt die Konvertierung in die andere Richtung von **XLREF12** zu **XLREF**, die von [ConvertXLRef12ToXLRef](convertxlref12toxlref.md)ausgeführt wird, fehl, wenn der angegebene verweis auf einen Teil eines Excel 2007-Arbeitsblatts verweist, das in früheren Versionen nicht unterstützt wird.
+Sofern die übergebene **XLREF** gültig ist, sollte dieser Vorgang immer erfolgreich sein. Im Gegensatz dazu schlägt die Konvertierung von **XLREF12** in **XLREF**, die von [ConvertXLRef12ToXLRef](convertxlref12toxlref.md)ausgeführt wird, fehl, wenn sich der angegebene Verweis auf einen Teil eines Arbeitsblatts von Excel 2007 bezieht, das in früheren Versionen nicht unterstützt wird.
   
 ## <a name="example"></a>Beispiel
 

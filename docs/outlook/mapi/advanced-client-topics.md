@@ -1,5 +1,5 @@
 ---
-title: Erweiterte Client Themen
+title: Erweiterte Clientthemen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,38 +15,38 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33431029"
 ---
-# <a name="advanced-client-topics"></a>Erweiterte Client Themen
+# <a name="advanced-client-topics"></a>Erweiterte Clientthemen
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Dieser Abschnitt enthält Unterthemen zum Implementieren einiger der ungewöhnlicheren oder schwierigeren Features in einer Clientanwendung.
+Dieser Abschnitt enthält Untertopen zum Implementieren einiger der ungewöhnlicheren oder schwierigeren Features in einer Clientanwendung.
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
 [Schreiben eines automatisierten Clients](writing-an-automated-client.md)
   
-> Beschreibt, wie ein automatisierter Client geschrieben wird, der die Benutzeroberfläche unterdrückt.
+> Beschreibt das Schreiben eines automatisierten Clients, der die Benutzeroberfläche unterdrückt.
     
-[Schreiben eines Remote Viewers](writing-a-remote-viewer.md)
+[Schreiben einer Remoteanzeige](writing-a-remote-viewer.md)
   
-> Beschreibt das Schreiben einer Clientanwendung, die den kontrollierten Zugriff auf Nachrichten bereitstellt, die auf einem anderen Computer gespeichert sind.
+> Beschreibt das Schreiben einer Clientanwendung, die kontrollierten Zugriff auf Nachrichten bietet, die auf einem anderen Computer gespeichert sind.
     
-[Schreiben eines Hierarchie-Viewers](writing-a-hierarchy-viewer.md)
+[Schreiben einer Hierarchieanzeige](writing-a-hierarchy-viewer.md)
   
-> Beschreibt das Schreiben eines Hierarchie-Viewers, eine Benutzeroberflächenkomponente, die für die Anzeige von Ordner-und Adressbuchcontainer-Hierarchietabellen verwendet wird.
+> Beschreibt das Schreiben einer Hierarchieanzeige, einer Benutzeroberflächenkomponente, die zum Anzeigen von Ordner- und Adressbuchcontainerhierarchietabellen verwendet wird.
     
 [Verwenden der MAPI-Dienstprogramme](using-the-mapi-utilities.md)
   
-> Beschreibt die Verwendung von MAPI-Dienstprogrammen, die aus Tabellendaten und Eigenschaftendaten Objekten und einer Vielzahl von Funktionen zur Unterstützung von verschiedenen Features bestehen.
+> Beschreibt die Verwendung von MAPI-Dienstprogrammen, die aus Tabellendaten- und Eigenschaftsdatenobjekten und einer Vielzahl von Funktionen zur Unterstützung verschiedener Features besteht
     
 [Implementieren eines Statusindikators](implementing-a-progress-indicator.md)
   
-> Beschreibt, wie eine Statusanzeige implementiert wird.
+> Beschreibt die Implementierung eines Statusindikators.
     
-[Zentralisieren des Empfangs von Unzustellbarkeitsberichten](centralizing-the-receipt-of-ndrs.md)
+[Zentralisierung des Empfangs von Unzugängen](centralizing-the-receipt-of-ndrs.md)
   
-> Beschreibt, wie der Empfang von Unzustellbarkeitsberichten zentralisiert wird.
+> Beschreibt, wie der Empfang von Nichtzustellberichten zentralisiert wird.
     
 

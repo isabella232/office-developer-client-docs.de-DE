@@ -17,23 +17,23 @@ ms.locfileid: "33428165"
  
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Wenn Sie einem Microsoft Outlook-Element ein benutzerdefiniertes Feld hinzufügen, fügen Sie der entsprechenden [PropertyDefinition](propertydefinition-stream-structure.md) -Datenstrom Struktur eine Felddefinition hinzu. Verwenden Sie das folgende Verfahren, um einer PropertyDefinition-Datenstrom Struktur eine neue Felddefinition hinzuzufügen. 
+Wenn Sie ein benutzerdefiniertes Feld zu einem Microsoft Outlook hinzufügen, fügen Sie der entsprechenden [PropertyDefinition-Streamstruktur](propertydefinition-stream-structure.md) eine Felddefinition hinzu. Verwenden Sie das folgende Verfahren, um einer PropertyDefinition-Streamstruktur eine neue Felddefinition hinzuzufügen. 
   
 ### <a name="to-add-a-definition-for-a-new-user-defined-field"></a>So fügen Sie eine Definition für ein neues benutzerdefiniertes Feld hinzu
 
-1. Kopieren Sie die vorhandenen Felddefinitionen der PropertyDefinition-Datenstrom Struktur in ein neues Feld Definitions Array. 
+1. Kopieren Sie die vorhandenen Felddefinitionen der PropertyDefinition-Streamstruktur in ein neues Felddefinitionsarray. 
     
-2. Wenn vorhandene Felddefinitionen im PropDefV1-Format vorliegen, konvertieren Sie Sie in das PropDefV2-Format. Weitere Informationen zu Feld Definitions Formaten finden Sie unter [PropertyDefinition Stream Structure](propertydefinition-stream-structure.md) und [FieldDefinition streamstruktur Stream Structure](fielddefinition-stream-structure.md).
+2. Wenn sich vorhandene Felddefinitionen im PropDefV1-Format befinden, konvertieren Sie sie in das PropDefV2-Format. Weitere Informationen zu Felddefinitionsformaten finden Sie unter [PropertyDefinition Stream Structure](propertydefinition-stream-structure.md) und [FieldDefinition Stream Structure](fielddefinition-stream-structure.md).
     
-3. Erstellen Sie eine Definition des neuen benutzerdefinierten Felds im PropDefV2-Format, und fügen Sie Sie dem Array hinzu.
+3. Erstellen Sie eine Definition des neuen benutzerdefinierten Felds im PropDefV2-Format, und fügen Sie es dem Array hinzu.
     
-4. Legen Sie das Version-Element der PropertyDefinition-Datenstrom Struktur als 0x0103 fest, wenn das Version-Element nicht auf diesen Wert festgelegt wurde.
+4. Legen Sie das Version-Element der PropertyDefinition-Streamstruktur als 0x0103 fest, wenn das Version-Element nicht auf den Wert festgelegt wurde.
     
-5. Inkrementieren Sie das FieldDefinitionCount-Element um 1.
+5. Erhöhen Sie das FieldDefinitionCount-Element um 1.
     
-6. Speichern Sie das Array als Wert des FieldDefinitions-Elements.
+6. Store array als Wert des FieldDefinitions-Elements.
     
 ## <a name="see-also"></a>Siehe auch
 
-- [PropertyDefinition-Datenstrom Struktur](propertydefinition-stream-structure.md)
+- [PropertyDefinition Stream Structure](propertydefinition-stream-structure.md)
 

@@ -25,7 +25,7 @@ ms.locfileid: "33431043"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Vergleicht zwei Eintragsbezeichner, um zu bestimmen, ob Sie auf dasselbe Objekt verweisen. 
+Vergleicht zwei Eintragsbezeichner, um zu bestimmen, ob sie auf dasselbe Objekt verweisen. 
   
 ```cpp
 HRESULT CompareEntryIDs(
@@ -42,19 +42,19 @@ HRESULT CompareEntryIDs(
 
  _cbEntryID1_
   
-> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID1_ -Parameter verwiesen wird. 
+> [in] Die Byteanzahl im Eintragsbezeichner, auf den der  _lpEntryID1-Parameter_ verweist. 
     
  _lpEntryID1_
   
-> in Ein Zeiger auf den ersten zu vergleichenden Eintragsbezeichner.
+> [in] Ein Zeiger auf die erste Zutritts-ID, die verglichen werden soll.
     
  _cbEntryID2_
   
-> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID2_ -Parameter verwiesen wird. 
+> [in] Die Byteanzahl in der Eintrags-ID, auf die der  _lpEntryID2-Parameter_ verweist. 
     
  _lpEntryID2_
   
-> in Ein Zeiger auf die zweite Eintrags-ID, die verglichen werden soll.
+> [in] Ein Zeiger auf den zweiten Eintragsbezeichner, der verglichen werden soll.
     
  _ulFlags_
   
@@ -62,7 +62,7 @@ HRESULT CompareEntryIDs(
     
  _lpulResult_
   
-> Out Ein Zeiger auf das Ergebnis des Vergleichs. TRUE, wenn die beiden Eintragsbezeichner auf dasselbe Objekt verweisen, andernfalls false. andernfalls FALSE.
+> [out] Ein Zeiger auf das Ergebnis des Vergleichs. TRUE, wenn die beiden Eintragsbezeichner auf dasselbe Objekt verweisen. Andernfalls FALSE.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -72,17 +72,17 @@ S_OK
     
 MAPI_E_UNKNOWN_ENTRYID 
   
-> Eine oder beide der als Parameter angegebenen Eintragsbezeichner beziehen sich nicht auf gültige Objekte, möglicherweise weil Sie derzeit nicht geöffnet und nicht verfügbar sind.
+> Eine oder beide der als Parameter angegebenen Eintragsbezeichner verweisen nicht auf gültige Objekte, möglicherweise weil sie derzeit ungeöffnet sind und nicht verfügbar sind.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPISupport:: CompareEntryIDs** -Methode wird für Support Objekte des Adressbuchs und des Nachrichtenspeichers implementiert. **CompareEntryIDs** vergleicht zwei Eintrags-IDs, die zu einem einzelnen Dienstanbieter gehören, um zu bestimmen, ob Sie auf dasselbe Objekt verweisen. MAPI extrahiert den [MAPIUID](mapiuid.md) -Teil aus den Eintrags Bezeichnern, um den für die Objekte Verantwortlichen Dienstanbieter zu bestimmen. MAPI ruft dann die **CompareEntryIDs** -Methode des LOGON-Objekts auf, um den Vergleich durchzuführen. 
+Die **IMAPISupport::CompareEntryIDs-Methode** wird für Unterstützungsobjekte für Adressbuch- und Nachrichtenspeicheranbieter implementiert. **CompareEntryIDs** vergleicht zwei Eintragsbezeichner, die zu einem einzelnen Dienstanbieter gehören, um zu bestimmen, ob sie auf dasselbe Objekt verweisen. MAPI extrahiert den [MAPIUID-Teil](mapiuid.md) aus den Eintragsbezeichnern, um den für die Objekte zuständigen Dienstanbieter zu ermitteln. MAPI ruft dann die **CompareEntryIDs-Methode** des Anmeldeobjekts auf, um den Vergleich durchzuführen. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
- **CompareEntryIDs** ist nützlich, da ein Objekt mehrere gültige Eintragsbezeichner aufweisen kann. Diese Situation kann beispielsweise auftreten, nachdem eine neue Version eines Dienstanbieters installiert wurde. 
+ **CompareEntryIDs** ist nützlich, da ein Objekt mehrere gültige Eintragsbezeichner enthalten kann. Diese Situation kann beispielsweise auftreten, nachdem eine neue Version eines Dienstanbieters installiert wurde. 
   
-Wenn **CompareEntryIDs** einen Fehler zurückgibt, führen Sie keine Aktion basierend auf dem Ergebnis des Vergleichs aus. Verwenden Sie stattdessen die konservativste Vorgehensweise. **CompareEntryIDs** kann fehlschlagen, wenn beispielsweise eine oder beide der Eintragsbezeichner eine ungültige **MAPIUID** -Struktur enthalten. 
+Wenn **CompareEntryIDs** einen Fehler zurückgibt, führen Sie keine Aktion basierend auf dem Ergebnis des Vergleichs aus. Verwenden Sie stattdessen den möglichst konservativen Ansatz. **CompareEntryIDs** können fehlschlagen, wenn beispielsweise eine oder beide Eintragsbezeichner eine ungültige **MAPIUID-Struktur** enthalten. 
   
 ## <a name="see-also"></a>Siehe auch
 

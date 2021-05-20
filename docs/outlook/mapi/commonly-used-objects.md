@@ -21,25 +21,25 @@ ms.locfileid: "33429411"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Informationen zu Objekten werden in verschiedenen Abschnitten der MAPI-Referenz von Microsoft Outlook 2013 dokumentiert. Da fast alle MAPI-Objekte eine einzelne MAPI-Schnittstelle verfügbar machen, besteht der Ansatz darin, Objekte und die Schnittstellen zu behandeln, die Sie als Synonym darstellen.
+Informationen zu Objekten sind in verschiedenen Abschnitten der mapI-Referenz Microsoft Outlook 2013 dokumentiert. Da fast alle MAPI-Objekte eine einzelne MAPI-Schnittstelle verfügbar machen, besteht der Ansatz in der Behandlung von Objekten und schnittstellen, die sie als Synonym verfügbar machen.
   
 Informationen zu Objekten und Schnittstellen finden Sie in den folgenden Abschnitten.
   
 - [MAPI-Schnittstellen](mapi-interfaces.md)
     
-    Beschreibt die Schnittstellen in der MAPI-Referenz für Outlook 2013. In diesem Abschnitt finden Sie beispielsweise Informationen zum Implementieren und Verwenden eines Ordners unter seiner Standardschnittstelle **IMAPIFolder**.
+    Beschreibt die Schnittstellen in der Outlook 2013-MAPI-Referenz. In diesem Abschnitt können Sie beispielsweise Informationen zum Implementieren und Verwenden eines Ordners unter der Standardschnittstelle **IMAPIFolder finden.**
     
-- [Übersicht über MAPI-Objekte und-Schnittstellen](mapi-object-and-interface-overview.md)
+- [Übersicht über das MAPI-Objekt und die Schnittstelle](mapi-object-and-interface-overview.md)
     
-    Stellt das Komponentenobjektmodell im Zusammenhang mit MAPI vor, beschreibt die MAPI-Objekthierarchie und das Kapselungs Modell, ordnet Objekte zu Schnittstellen zu und beschreibt die Implementierungs Verantwortlichkeiten.
+    Stellt das Component-Objektmodell in Bezug auf MAPI vor, beschreibt die MAPI-Objekthierarchie und das Containmentmodell, ordnet Objekte Schnittstellen zu und beschreibt Implementierungsaufgaben.
     
 - [Übersicht über die MAPI-Eigenschaft](mapi-property-overview.md)
     
-    Beschreibt, wie Objekte verwaltet werden und wie Clients mit Eigenschaften arbeiten.
+    Beschreibt, wie Objekte verwaltet und Clients mit Eigenschaften arbeiten.
     
 - [MAPI-Tabellen](mapi-tables.md)
     
-    Beschreibt ausführlich, wie ein Table-Objekt implementiert und verwendet wird, und erläutert die Zusammensetzung und den Zweck der verschiedenen Tabellentypen.
+    Beschreibt ausführlich die Implementierung und Verwendung eines Tabellenobjekts und erläutert die Zusammensetzung und den Zweck der verschiedenen Tabellentypen.
     
 - [MAPI-Formulare](mapi-forms.md)
     
@@ -47,7 +47,7 @@ Informationen zu Objekten und Schnittstellen finden Sie in den folgenden Abschni
     
 - [MAPI-Anwendungsentwicklung](mapi-application-development.md)
     
-    Enthält Informationen zu den folgenden Objekttypen:
+    Stellt Informationen zu den folgenden Objekttypen zur Verfügung:
     
   - Formulare
     
@@ -59,30 +59,30 @@ Informationen zu Objekten und Schnittstellen finden Sie in den folgenden Abschni
     
   - Statusobjekte
     
-  - Profil-und Nachrichtendienst Objekte
+  - Profil- und Nachrichtendienstobjekte
     
-- [Entwickeln einer MAPI-Client Anwendung](developing-a-mapi-client-application.md)
+- [Entwickeln einer MAPI-Clientanwendung](developing-a-mapi-client-application.md)
     
     Beschreibt, wie Objekte zum Implementieren einer MAPI-Clientanwendung verwendet werden.
     
 - [MAPI-Dienstanbieter](mapi-service-providers.md)
     
-    Beschreibt, wie Support-und Progress-Objekte verwendet werden und wie ein Statusobjekt und eine Anzeigetabelle implementiert werden.
+    Beschreibt, wie Sie Unterstützungs- und Statusobjekte verwenden und wie Sie ein Statusobjekt und eine Anzeigetabelle implementieren.
     
-- [Entwickeln eines MAPI-Adressbuch Anbieters](developing-a-mapi-address-book-provider.md)
+- [Entwickeln eines MAPI-Adressbuchanbieters](developing-a-mapi-address-book-provider.md)
     
-    Beschreibt die Implementierung von Adressbuch-und Anbieter Objekten, Adressbuch Containern, Messaging Benutzern, Verteilerlisten und verwandten Tabellen.
+    Beschreibt die Implementierung der Adressbuchanmelde- und Anbieterobjekte, Adressbuchcontainer, Messagingbenutzer, Verteilerlisten und zugehörigen Tabellen.
     
-- [Entwickeln eines MAPI-Transport Anbieters](developing-a-mapi-transport-provider.md)
+- [Entwickeln eines MAPI-Transportanbieters](developing-a-mapi-transport-provider.md)
     
-    Beschreibt, wie die Transport Anmelde-und Anbieterobjekte, das Statusobjekt, das Transport neutrale Encapsulation Format (TNEF)-Objekt und Ordner implementiert werden.
+    Beschreibt die Implementierung der Transportanmelde- und Anbieterobjekte, des Statusobjekts, des TNEF-Objekts (Transport Neutral Encapsulation Format) und der Ordner.
     
 - [Entwickeln eines Providers MAPI-Nachrichtenspeicher](developing-a-mapi-message-store-provider.md)
     
-    Beschreibt, wie die Nachrichtenspeicher-Anmelde-und-Anbieterobjekte, Nachrichtenspeicher, Ordner, Nachrichten, Anlagen, Empfänger und zugehörige Tabellen implementiert werden.
+    Beschreibt, wie die Anmelde- und Anbieterobjekte des Nachrichtenspeichers, Nachrichtenspeicher, Ordner, Nachrichten, Anlagen, Empfänger und zugehörige Tabellen implementiert werden.
     
-- [Entwickeln von MAPI-Formular Servern](developing-mapi-form-servers.md)
+- [Entwickeln von MAPI-Formularservern](developing-mapi-form-servers.md)
     
-    Beschreibt, wie Formularobjekte implementiert werden.
+    Beschreibt die Implementierung von Formularobjekten.
     
 

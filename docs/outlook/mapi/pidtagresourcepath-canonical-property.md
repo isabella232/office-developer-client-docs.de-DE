@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagresourcepath (-Eigenschaft
+title: PidTagResourcePath (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33429859"
 ---
-# <a name="pidtagresourcepath-canonical-property"></a>Kanonische Pidtagresourcepath (-Eigenschaft
+# <a name="pidtagresourcepath-canonical-property"></a>PidTagResourcePath (kanonische Eigenschaft)
 
   
   
@@ -34,25 +34,25 @@ Enthält einen Pfad zum Server des Dienstanbieters.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Status  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Der in diesen Eigenschaften enthaltene Pfad stellt den vorgeschlagenen Pfad dar, in dem der Benutzer Ressourcen finden kann. Die Definition dieser Eigenschaften ist Anbieter spezifisch. Eine Planungsanwendung verwendet diese Eigenschaften zum Beispiel, um den vorgeschlagenen Speicherort für die Planungs Anwendungsdateien anzugeben.
+Der in diesen Eigenschaften enthaltene Pfad stellt den vorgeschlagenen Pfad dar, in dem der Benutzer Ressourcen finden kann. Die Definition dieser Eigenschaften ist anbieterspezifisch. Beispielsweise verwendet eine Planungsanwendung diese Eigenschaften, um den vorgeschlagenen Speicherort für die Planungsanwendungsdateien anzugeben.
   
-Das Messaging-Benutzerprofil stellt diese Eigenschaften als Bequemlichkeit bereit, sodass eine Clientanwendung den Messagingbenutzer nicht für einen Netzwerkpfad oder Netzlaufwerkbuchstaben auffordern muss.
+Das Messagingbenutzerprofil bietet diese Eigenschaften als Komfort, sodass eine Clientanwendung den Messagingbenutzer nicht zur Eingabe eines Netzwerkpfads oder Eines Netzlaufwerkbuchstabens anfordern muss.
   
-MAPI funktioniert nur mit Dateinamen im ANSI-Zeichensatz (American National Standards Institute). Anwendungen, die Dateinamen in einem OEM-Zeichensatz (Original Equipment Manufacturer) verwenden, müssen Sie vor dem Aufrufen von MAPI in ANSI konvertieren.
+MAPI kann nur mit Dateinamen im Zeichensatz American National Standards Institute (ANSI) verwendet werden. Anwendungen, die Dateinamen in einem OEM-Zeichensatz (Original Equipment Manufacturer) verwenden, müssen sie vor dem Aufrufen von MAPI in ANSI konvertieren.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
-### <a name="header-files"></a>Header Dateien
+### <a name="header-files"></a>Headerdateien
 
-Mapidefs. h
+Mapidefs.h
   
-> Stellt Datentypdefinitionen bereit.
+> Bietet Datentypdefinitionen.
     
-Mapitags. h
+Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,9 +60,9 @@ Mapitags. h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

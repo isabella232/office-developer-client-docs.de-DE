@@ -29,7 +29,7 @@ Enthält ein Array von Zeitwerten.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SAppTimeArray
@@ -40,19 +40,19 @@ typedef struct _SAppTimeArray
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cValues**
   
-> Die Anzahl der Werte im Array, auf die durch das **lpat** -Element verwiesen wird. 
+> Anzahl der Werte im Array, auf das das **lpat-Element verweist.** 
     
  **lpat**
   
-> Zeiger auf ein Array von Anwendungszeit Werten. 
+> Zeiger auf ein Array von Anwendungszeitwerten. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **SAppTimeArray** -Struktur wird verwendet, um Eigenschaften vom Typ PT_MV_APPTIME zu definieren. Weitere Informationen zu PT_MV_APPTIME finden Sie unter [Liste der Eigenschaftstypen](property-types.md).
+Die **SAppTimeArray-Struktur** wird verwendet, um Eigenschaften vom Typ PT_MV_APPTIME. Weitere Informationen zu PT_MV_APPTIME finden Sie [unter List of Property Types](property-types.md).
   
 ## <a name="see-also"></a>Siehe auch
 

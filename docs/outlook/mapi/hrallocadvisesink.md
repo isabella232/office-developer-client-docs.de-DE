@@ -25,13 +25,13 @@ ms.locfileid: "33428900"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt ein Advise-Senke-Objekt, wenn der durch die aufrufende Implementierung angegebene Kontext und eine Rückruffunktion durch eine Ereignisbenachrichtigung ausgelöst werden. 
+Erstellt ein Advise-Sink-Objekt, das einen durch die aufrufende Implementierung angegebenen Kontext und eine Rückruffunktion, die durch eine Ereignisbenachrichtigung ausgelöst werden soll, angegeben wird. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 STDAPI HrAllocAdviseSink(
@@ -45,27 +45,27 @@ STDAPI HrAllocAdviseSink(
 
  _lpfnCallback_
   
-> in Zeiger auf eine Rückruffunktion basierend auf dem [NOTIFCALLBACK](notifcallback.md) -Prototyp, den MAPI aufrufen soll, wenn ein Benachrichtigungsereignis für die neu erstellte Advise-Senke auftritt. 
+> [in] Zeiger auf eine Rückruffunktion basierend auf dem [NOTIFCALLBACK-Prototyp,](notifcallback.md) den MAPI aufrufen soll, wenn ein Benachrichtigungsereignis für die neu erstellte Hinweissenke auftritt. 
     
  _lpvContext_
   
-> in Zeiger auf Anrufer-Daten, die an die Rückruffunktion übergeben werden, wenn Sie von MAPI aufgerufen wird. Die Anrufer-Daten können eine Adresse darstellen, die für den Client oder Anbieter von Bedeutung ist. In der Regel stellt der Parameter _lpvContext_ für C++-Code einen Zeiger auf die Adresse eines Objekts dar. 
+> [in] Zeiger auf Aufruferdaten, die an die Rückruffunktion übergeben werden, wenn MAPI sie aufruft. Die Anruferdaten können eine Adresse darstellen, die für den Client oder Anbieter von Bedeutung ist. In der Regel stellt der  _lpvContext-Parameter_ für C++-Code einen Zeiger auf die Adresse eines Objekts dar. 
     
  _lppAdviseSink_
   
-> Out Zeiger auf einen Zeiger auf ein Advise-Senke-Objekt.
+> [out] Zeiger auf einen Zeiger auf ein Advise Sink-Objekt.
     
 ## <a name="return-value"></a>Return value
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Um die **HrAllocAdviseSink** -Funktion zu verwenden, erstellt eine Clientanwendung oder ein Dienstanbieter ein Objekt zum Empfangen von Benachrichtigungen, erstellt eine Benachrichtigungsrückruffunktion basierend auf dem [NOTIFCALLBACK](notifcallback.md) -Funktionsprototyp, der mit diesem Objekt einhergeht. und übergibt einen Zeiger auf das Objekt in der **HrAllocAdviseSink** -Funktion als _lpvContext_ -Wert. Dadurch wird eine Benachrichtigung ausgeführt; und als Teil des Benachrichtigungsprozesses ruft MAPI die Rückruffunktion mit dem Objektzeiger als Kontext auf. 
+Um die **HrAllocAdviseSink-Funktion** zu verwenden, erstellt eine Clientanwendung oder ein Dienstanbieter ein Objekt zum Empfangen von Benachrichtigungen, erstellt eine Benachrichtigungsrückruffunktion basierend auf dem [NOTIFCALLBACK-Funktionsprototyp,](notifcallback.md) der mit diesem Objekt verwendet wird, und übergibt einen Zeiger auf das Objekt in der **HrAllocAdviseSink-Funktion** als _lpvContext-Wert._ Dies führt eine Benachrichtigung aus. und im Rahmen des Benachrichtigungsprozesses ruft MAPI die Rückruffunktion mit dem Objektzeiger als Kontext auf. 
   
-MAPI implementiert das Benachrichtigungsmodul asynchron. In C++ kann der Benachrichtigungsrückruf eine Objektmethode sein. Wenn das Objekt, das die Benachrichtigung generiert, nicht vorhanden ist, muss der Client oder der Anbieter, der die Benachrichtigung anfordert, einen separaten Verweiszähler für dieses Objekt für die Advise-Senke des Objekts aufbewahren. 
+MAPI implementiert sein Benachrichtigungsmodul asynchron. In C++ kann der Benachrichtigungsrückruf eine Objektmethode sein. Wenn das Objekt, das die Benachrichtigung generiert, nicht vorhanden ist, muss der Client oder Anbieter, der eine Benachrichtigung anfordert, eine separate Referenzanzahl für dieses Objekt für die Hinweissenke des Objekts behalten. 
   
 > [!CAUTION]
-> **HrAllocAdviseSink** sollte sparsam verwendet werden; Es ist sicherer für Clients, eigene Advise-Senken zu erstellen. 
+> **HrAllocAdviseSink** sollte sparsam verwendet werden. Es ist sicherer für Kunden, eigene Ratensenken zu erstellen. 
   
 

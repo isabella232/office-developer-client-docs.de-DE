@@ -25,7 +25,7 @@ ms.locfileid: "33430791"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Legt den Wert einer oder mehrerer Eigenschaften für eine gekapselte Nachricht oder Anlage fest, ohne die ursprüngliche Nachricht oder Anlage zu ändern. 
+Legt den Wert einer oder mehreren Eigenschaften für eine gekapselte Nachricht oder Anlage fest, ohne die ursprüngliche Nachricht oder Anlage zu ändern. 
   
 ```cpp
 HRESULT SetProps(
@@ -40,38 +40,38 @@ HRESULT SetProps(
 
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die steuert, wie Eigenschaftswerte festgelegt werden. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie Eigenschaftswerte festgelegt werden. Das folgende Flag kann festgelegt werden:
     
 TNEF_PROP_CONTAINED 
   
-> Codiert nur Eigenschaften aus der Nachricht oder Anlage, die durch den _ulElemID_ -Parameter angegeben wird. 
+> Codiert nur Eigenschaften aus der Nachricht oder Anlage, die durch den  _ulElemID-Parameter angegeben_ wird. 
     
  _ulElemID_
   
-> in Die **PR_ATTACH_NUM** ([pidtagattachnumber (](pidtagattachnumber-canonical-property.md))-Eigenschaft einer Anlage, die eine Zahl enthält, die die Anlage in der übergeordneten Nachricht eindeutig identifiziert.
+> [in] Die eigenschaft PR_ATTACH_NUM **(** [PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) einer Anlage, die eine Zahl enthält, die die Anlage in ihrer übergeordneten Nachricht eindeutig identifiziert.
     
  _cValues_
   
-> in Die Anzahl der Eigenschaftswerte in der [SPropValue](spropvalue.md) -Struktur, auf die durch den _lpProps_ -Parameter verwiesen wird. 
+> [in] Die Anzahl der Eigenschaftswerte in der [SPropValue-Struktur,](spropvalue.md) auf die der  _lpProps-Parameter_ verweist. 
     
  _lpProps_
   
-> in Ein Zeiger auf eine **SPropValue** -Struktur, die die Eigenschaftswerte der festzulegenden Eigenschaften enthält. 
+> [in] Ein Zeiger auf eine **SPropValue-Struktur,** die die Eigenschaftswerte der festgelegten Eigenschaften enthält. 
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Aufruf war erfolgreich, und der erwartete Wert oder die Werte wurden zurückgegeben.
+> Der Aufruf war erfolgreich und hat den erwarteten Wert oder die erwarteten Werte zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Transport Anbieter, Nachrichtenspeicher Anbieter und Gateways rufen die **ITnef::** SetProps-Methode auf, um die Eigenschaften festzulegen, die in die Kapselung einer Nachricht oder Anlage eingeschlossen werden sollen, ohne die ursprüngliche Nachricht oder Anlage zu ändern. Alle Eigenschaften, die mit diesem Aufruf festgelegt wurden, überschreiben vorhandene Eigenschaften in der gekapselte Nachricht. 
+Transportanbieter, Nachrichtenspeicheranbieter und Gateways rufen die **ITnef::SetProps-Methode** auf, um Eigenschaften so zu festlegen, dass sie in die Kapselung einer Nachricht oder Anlage ohne Änderung der ursprünglichen Nachricht oder Anlage enthalten sind. Mit diesem Aufruf festgelegte Eigenschaften überschreiben vorhandene Eigenschaften in der gekapselten Nachricht. 
   
- **** SetProps wird nur für TNEF-Objekte unterstützt, die mit dem TNEF_ENCODE-Flag für die [OpenTnefStream](opentnefstream.md) -oder [OpenTnefStreamEx](opentnefstreamex.md) -Funktion geöffnet werden. Mit diesem Aufruf kann eine beliebige Anzahl von Eigenschaften festgelegt werden. 
+ **SetProps wird** nur für TNEF-Objekte unterstützt, die mit dem TNEF_ENCODE für die [OpenTnefStream-](opentnefstream.md) oder [OpenTnefStreamEx-Funktion geöffnet](opentnefstreamex.md) werden. Mit diesem Aufruf kann eine beliebige Anzahl von Eigenschaften festgelegt werden. 
   
 > [!NOTE]
-> Es erfolgt keine tatsächliche TNEF **** -Codierung für SetProps, bevor die [ITnef:: Finish](itnef-finish.md) -Methode aufgerufen wird. Diese Funktionalität bedeutet, dass Zeiger, **** die an SetProps übergeben werden, gültig bleiben müssen, bis der Aufruf **beendet** wurde. An diesem Punkt können alle Objekte und Daten, die **** an SetProps-Aufrufe übergeben werden, freigegeben oder freigeschaltet werden. 
+> Eine tatsächliche TNEF-Codierung für **SetProps** erfolgt erst, nachdem die [ITnef::Finish-Methode](itnef-finish.md) aufgerufen wurde. Diese Funktionalität bedeutet, dass Zeiger, die an **SetProps** übergeben werden, bis nach dem Aufruf von **Finish** gültig bleiben müssen. An diesem Punkt können alle an **SetProps-Aufrufe** übergebenen Objekte und Daten freigegeben oder freigegeben werden. 
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -83,7 +83,7 @@ Transport Anbieter, Nachrichtenspeicher Anbieter und Gateways rufen die **ITnef:
   
 [OpenTnefStreamEx](opentnefstreamex.md)
   
-[Kanonische Pidtagattachnumber (-Eigenschaft](pidtagattachnumber-canonical-property.md)
+[PidTagAttachNumber (kanonische Eigenschaft)](pidtagattachnumber-canonical-property.md)
   
 [SPropValue](spropvalue.md)
   

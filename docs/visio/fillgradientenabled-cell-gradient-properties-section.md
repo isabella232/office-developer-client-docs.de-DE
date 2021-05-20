@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 80db9c0c-13c6-47de-967f-ade6e5899f14
-description: Bestimmt, ob ein Füll Verlauf für dieses Shape aktiviert ist.
+description: Bestimmt, ob für diese Form ein Füllgradient aktiviert ist.
 ms.openlocfilehash: 17f617c13b632318be22b86a3354a194f0f835f5
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,27 +16,27 @@ ms.locfileid: "33431211"
 ---
 # <a name="fillgradientenabled-cell-gradient-properties-section"></a>Zelle "FillGradientEnabled" (Abschnitt "Gradient Properties")
 
-Bestimmt, ob ein Füll Verlauf für dieses Shape aktiviert ist. 
+Bestimmt, ob für diese Form ein Füllgradient aktiviert ist. 
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|TRUE  <br/> |Die Farbverlaufsfüllung wird auf dem Shape angezeigt.  <br/> |
-|FALSE  <br/> |Farbverlaufsfüllungen werden nicht auf dem Shape angezeigt.  <br/> |
+|TRUE  <br/> |Die Farbverlaufsfüllung wird auf der Form angezeigt.  <br/> |
+|FALSE  <br/> |Farbverlaufsfüllungen werden in der Form nicht angezeigt.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle **FillGradientEnabled** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die **FillGradientEnabled-Zelle** anhand des Namens aus einer anderen Formel, nach dem Wert des **N-Attributs** eines **Cell-Elements** oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | FillGradientEnabled  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle **FillGradientEnabled** aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die **FillGradientEnabled-Zelle** nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowGradientProperties** <br/> |
-| Zellenindex:  <br/> |* * visFillGradientEnabled * * <br/> |
+| Zellenindex:  <br/> |**visFillGradientEnabled ** <br/> |
    
 

@@ -19,26 +19,26 @@ ms.locfileid: "33429166"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Formularobjekte können sich in einem von fünf unterschiedlichen Status befinden, je nachdem, welche Methoden in diesen aufgerufen wurden und ob beim Ausführen dieser Methoden Fehler aufgetreten sind. Die Zustände werden in den folgenden Themen beschrieben:
+Formularobjekte können sich in einem von fünf unterschiedlichen Zuständen unterscheiden, je nachdem, welche Methoden in ihnen aufgerufen wurden und ob Fehler bei der Ausführung dieser Methoden aufgetreten sind. Die Zustände werden in den folgenden Themen beschrieben:
   
 - [Nicht initialisierter Status](uninitialized-state.md)
     
-- [Normaler Status](normal-state.md)
+- [Normalzustand](normal-state.md)
     
-- [Status "noScribble"](noscribble-state.md)
+- [NoScribble State](noscribble-state.md)
     
 - [HandsOffAfterSave-Status](handsoffaftersave-state.md)
     
-- [Status "handsofffromnormal-Status](handsofffromnormal-state.md)
+- [HandsOffFromNormal-Status](handsofffromnormal-state.md)
     
-Die Zustände beziehen sich in erster Linie auf den Status der Daten im Form-Objekt. Die verschiedenen Statusangaben geben an, ob die Daten gespeichert werden müssen, ob das Form-Objektänderungen an den Daten zulassen soll und wie die Daten, in denen das Formular gespeichert ist, in den Prozess eingespart werden. Daher haben die Formular Zustände und Übergänge zwischen diesen mehr mit der Implementierung der [IPersistMessage: IUnknown](ipersistmessageiunknown.md) -Schnittstellenmethoden durch den Formularserver als alle anderen. Die Kenntnis dieser Zustände ist sehr nützlich für die ordnungsgemäße Implementierung der MAPI-Formular Schnittstellen, die der Formularserver implementieren muss. 
+Die Zustände beziehen sich in erster Linie auf den Status der Daten im Formularobjekt. Die verschiedenen Zustände geben an, ob die Daten gespeichert werden müssen, ob das Formularobjekt Änderungen an den Daten zulassen soll und welchen Punkt das Speichern der Daten im Formular hat. Daher haben die Formularzustände und -übergänge zwischen ihnen mehr mit der Implementierung von [IPersistMessage : IUnknown-Schnittstellenmethoden](ipersistmessageiunknown.md) zu tun als alle anderen. Die Kenntnis dieser Zustände ist sehr nützlich für die ordnungsgemäße Implementierung der MAPI-Formularschnittstellen, die ihr Formularserver implementieren muss. 
   
-In den Themen in diesem Abschnitt werden die verschiedenen Status zusammen mit den zulässigen Aktionen beschrieben, die Übergänge zu anderen Zuständen verursachen. Alle Übergänge, die nicht in den Themen aufgeführt sind, sind nicht zulässig. Wenn Ihre Formularobjekte nicht zulässige Übergänge zwischen Zuständen vornehmen, Verhalten Sie sich nicht auf die Art und Weise, wie Messaging-Clients erwarten, und können zu unvorhersehbaren Client-oder Formularobjekt Verhalten führen.
+In den Themen in diesem Abschnitt werden die verschiedenen Zustände sowie die zulässigen Aktionen beschrieben, die Übergänge in andere Zustände verursachen. Übergänge, die in den Themen nicht aufgeführt sind, sind nicht zulässig. Wenn Ihre Formularobjekte nicht zulässige Übergänge zwischen Zuständen erstellen, verhalten sie sich nicht wie von Messagingclients erwartet und können unvorhersehbares Client- oder Formularobjektverhalten verursachen.
   
 > [!NOTE]
-> Einige Statusübergänge hängen von Informationen aus früheren Status ab. Der Formularserver muss höchstwahrscheinlich ein Flag in seinen Form-Objekten implementieren, um anzugeben, ob die Werte der Eigenschaften der Nachricht geändert wurden, um spätere Statusänderungen zu erleichtern. 
+> Einige Zustandsübergänge hängen von Informationen aus früheren Zuzuständen ab. Der Formularserver muss höchstwahrscheinlich ein Kennzeichen in seinen Formularobjekten implementieren, um anzugeben, ob die Werte der Eigenschaften der Nachricht geändert wurden, um spätere Statusänderungen zu erleichtern. 
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Entwickeln von MAPI-Formular Servern](developing-mapi-form-servers.md)
+- [Entwickeln von MAPI-Formularservern](developing-mapi-form-servers.md)
 

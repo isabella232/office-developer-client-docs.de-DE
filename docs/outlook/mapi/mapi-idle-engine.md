@@ -1,5 +1,5 @@
 ---
-title: MAPI-Leerlauf Modul
+title: MAPI Idle Engine
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,21 +15,21 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33428452"
 ---
-# <a name="mapi-idle-engine"></a>MAPI-Leerlauf Modul
+# <a name="mapi-idle-engine"></a>MAPI Idle Engine
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPI bietet mehrere Funktionen, die gemeinsam als Leerlauf Modul bezeichnet werden. Diese Funktionen ermöglichen es Clients, Adressbuch Anbietern und Nachrichtenspeicher Anbietern, verschiedene Aufgaben in langsamen Zeiten in der Sitzung oder als Antwort auf eine langsame Zeit auszuführen. So können Clients und Dienstanbieter beispielsweise langsame Vorgänge zurückstellen oder Dateien, die für einen längeren Zeitraum nicht verwendet wurden, beenden. Transport Anbieter verwenden normalerweise das Leerlauf Modul nicht, da die **IXPLogon:: idle** -Methode ihren Platz einnimmt. Weitere Informationen finden Sie unter [IXPLogon:: idle](ixplogon-idle.md).
+MAPI bietet mehrere Funktionen, die gemeinsam als Leerlaufmodul bezeichnet werden. Mit diesen Funktionen können Clients, Adressbuchanbieter und Nachrichtenspeicheranbieter verschiedene Aufgaben in langsamen Zeiten in der Sitzung oder als Reaktion auf eine langsame Zeit ausführen. Clients und Dienstanbieter können z. B. langsame Vorgänge zurückdingen oder Dateien schließen, die für einen längeren Zeitraum nicht verwendet wurden. Transportanbieter verwenden in der Regel nicht das Leerlaufmodul, da die **IXPLogon::Idle-Methode** ihren Platz einnimmt. Weitere Informationen finden Sie unter [IXPLogon::Idle](ixplogon-idle.md).
   
-Um das Leerlauf Modul zu verwenden, erstellen Clients und Dienstanbieter eine Rückruffunktion, die die Aufgaben enthält, die auftreten sollten, wenn das MAPI-Subsystem inaktiv ist. Wenn MAPI die Leerlaufzeit erkennt, wird diese Rückruffunktion aufgerufen. Die Callback-Funktion folgt dem **FNIDLE** -Prototyp, wie folgt definiert: 
+Um das Leerlaufmodul zu verwenden, erstellen Clients und Dienstanbieter eine Rückruffunktion, die die Aufgaben enthält, die auftreten sollten, wenn sich das MAPI-Subsystem im Leerlauf befindet. Wenn MAPI Leerlaufzeit erkennt, wird diese Rückruffunktion aufgerufen. Die Rückruffunktion folgt dem **FNIDLE-Prototyp,** der wie folgt definiert ist: 
   
  `BOOL (STDAPICALLTYPE FNIDLE) (LPVOID lpvContext)`
   
 Weitere Informationen finden Sie unter [FNIDLE](fnidle.md).
   
-Die Funktionen, aus denen das Leerlauf Modul besteht, sind:
+Die Funktionen des Leerlaufmoduls sind:
   
 [ChangeIdleRoutine](changeidleroutine.md)
   
@@ -43,22 +43,22 @@ Die Funktionen, aus denen das Leerlauf Modul besteht, sind:
   
 [MAPIInitIdle](mapiinitidle.md)
   
-Um eine Rückruffunktion zu registrieren, rufen Clients und Dienstanbieter die **FtgRegisterIdleRoutine** -Funktion auf. Zu den Eingabeparametern gehört eine optionale Priorität, ein Speicherblock, der als Eingabe an die Rückruffunktion übergeben wird, eine Zeitdauer, die in beliebiger Weise verwendet werden soll, und eine Reihe von Options-Flags. 
+Um eine Rückruffunktion zu registrieren, rufen Clients und Dienstanbieter die **FtgRegisterIdleRoutine-Funktion** auf. Die Eingabeparameter umfassen eine optionale Priorität, einen Speicherblock, der an Ihre Rückruffunktion als Eingabe übergeben wird, einen Zeitraum, der in irgendeiner Weise verwendet werden muss, und eine Reihe von Optionskennzeichen. 
   
-Clients und Dienstanbieter können eine Priorität im _priIdle_ -Parameter angeben, der steuert, wie die Leerlauf Funktion ausgeführt wird, oder NULL angeben, wenn die Priorität kein Problem darstellt. Da negative Zahlen höhere Prioritäten als positive Zahlen oder NULL darstellen, sollten Komprimierung und Suchvorgänge negative Zahlen erhalten. Für Vorgänge, die einmal auftreten, sollten positive Zahlen zugewiesen werden. 
+Clients und Dienstanbieter können eine Priorität im  _priIdle-Parameter_ angeben, der steuert, wie die Leerlauffunktion ausgeführt wird, oder Null angeben, wenn die Priorität kein Problem ist. Da negative Zahlen höhere Prioritäten als positive Zahlen oder Null darstellen, sollten Komprimierungs- und Suchvorgängen negative Zahlen zugewiesen werden. Vorgängen, die einmal auftreten, sollten positive Zahlen zugewiesen werden. 
   
-Zum Aufheben der Registrierung einer aktiven Rückruffunktion rufen Clients und Dienstanbieter die **DeregisterIdleRoutine** -Funktion auf. Da **DeregisterIdleRoutine** asynchron arbeitet, ist es möglich, dass die Rückruffunktion jederzeit während des Deregistrierungs Aufrufs und möglicherweise auch nach dem zurückGeben von **DeregisterIdleRoutine** aufgerufen wird. 
+Zum Aufheben der Registrierung einer aktiven Rückruffunktion rufen Clients und Dienstanbieter die **DeregisterIdleRoutine-Funktion** auf. Da **DeregisterIdleRoutine** asynchron funktioniert, kann die Rückruffunktion jederzeit während des Registrierungsaufrufs und möglicherweise auch nach der **DeregisterIdleRoutine** aufgerufen werden. 
   
-Um einige oder alle Merkmale einer Rückruffunktion zu ändern, rufen Clients und Dienstanbieter die **ChangeIdleRoutine** -Funktion auf. **ChangeIdleRoutine** ändert entsprechend der Festlegung des flags-Parameters _ircIdle_ ; **ChangeIdleRoutine** kann die Funktion selbst, die Priorität, die Uhrzeiteinstellung und den Eingabeparameter ändern. 
+Um einige oder alle Merkmale einer Rückruffunktion zu ändern, rufen Clients und Dienstanbieter die **ChangeIdleRoutine-Funktion** auf. **ChangeIdleRoutine** nimmt Änderungen an der Einstellung des flags-Parameters  _"ircIdle"_ vor. **ChangeIdleRoutine** kann die Funktion selbst, ihre Priorität, Die Zeiteinstellung und den Eingabeparameter ändern. 
   
-MAPI definiert Leerlauf mit dem Betriebssystem, wenn das Betriebssystem eine Definition aufweist. Auf Win32 erstellt MAPI einen Thread mit Leerlaufpriorität, um Leerlauf Vorgänge zu planen. Dieser Thread verfolgt die Zeit und sendet eine Nachricht an den Thread, der die Leerlauf Aufgabe ausführt, wenn der Zeitpunkt für die Ausführung ankommt. Win32 plant Threads, nicht Prozesse. Wenn auf der Arbeitsstation Aufgaben mit einer höheren Priorität als der Leerlaufpriorität ausgeführt werden, sollte die Leerlauf Aufgabe erst ausgeführt werden, wenn die Aufgaben abgeschlossen sind. 
+MAPI definiert leerlauf wie das Betriebssystem, wenn das Betriebssystem über eine Definition verfügt. In Win32 erstellt MAPI einen Thread mit Der Priorität der Leerlaufklasse, um Aufgaben im Leerlauf zu planen. Dieser Thread verfolgt die Uhrzeit und postet eine Nachricht an den Thread, der die Leerlaufaufgabe ausführen soll, wenn der Zeitpunkt für die Ausführung eintrifft. Win32 plant Threads, nicht Prozesse. Wenn Vorgänge mit einer Höheren Priorität als die Leerlaufpriorität auf der Arbeitsstation ausgeführt werden, sollte die Leerlaufaufgabe erst nach Abschluss der Vorgänge für die Ausführung geplant werden. 
   
-Alle Leerlaufaufgaben werden im Thread ausgeführt, der **MAPIInitIdle**aufgerufen hat. MAPI hat einen separaten Thread für die Planung, aber wenn eine Leerlauf Aufgabe berechtigt wird, sendet Sie eine Nachricht zurück in den Initialisierungsthread und die Leerlauf Aufgabe wird dort ausgeführt. Die Auswirkungen auf unterschiedliche Clienttypen lauten wie folgt:
+Alle Leerlaufaufgaben werden im Thread ausgeführt, der **MAPIInitIdle aufgerufen hat.** MAPI verfügt über einen separaten Thread für die Planung, aber wenn eine Leerlaufaufgabe berechtigt wird, wird eine Nachricht zurück an den Initialisierungsthread gesendet, und die Leerlaufaufgabe wird dort ausgeführt. Die Auswirkungen auf unterschiedliche Typen von Clients sind wie folgt:
   
-|**Threadingmodell**|**Implikation**|
+|**Threadmodell**|**Implikationen**|
 |:-----|:-----|
-|Single Threaded  <br/> |Kein Problem. Leerlauf Funktionen werden im Hauptthread des Clients ausgeführt und werden über die Nachrichtenschleife serialisiert.  <br/> |
-|Free-Threaded  <br/> |Leerlauf Funktionen müssen threadsicher sein, aber Ihr Client verfügt bereits über die erforderliche Infrastruktur. Möglicherweise benötigt Ihr Client nicht das MAPI-Leerlauf Modul.  <br/> |
-|Apartment-Threaded  <br/> |Die Leerlauf Funktion muss im selben Thread ausgeführt werden, der Sie registriert hat, wenn Sie MAPI, OLE oder andere COM-Schnittstellen verwenden möchte. Die einfachste Möglichkeit besteht darin, eine Leerlauf Funktion mit MAPI zu registrieren, die eine Nachricht an den richtigen Thread sendet und die "Real"-Leerlauf Funktion direkt aus der Nachrichtenschleife dieses Threads ausgibt.  <br/> |
+|Singlethreading  <br/> |Kein Problem. Leerlauffunktionen werden im Hauptthread Ihres Clients ausgeführt und über die Nachrichtenschleife serialisiert.  <br/> |
+|Freethreading  <br/> |Leerlauffunktionen müssen threadsicher sein, aber Ihr Client verfügt bereits über die erforderliche Infrastruktur. Ihr Client benötigt möglicherweise das MAPI-Leerlaufmodul überhaupt nicht.  <br/> |
+|Apartmentthreading  <br/> |Die Idle-Funktion muss für denselben Thread ausgeführt werden, der sie registriert hat, wenn sie MAPI, OLE oder andere COM-Schnittstellen verwenden möchte. Die unkomplizierteste Möglichkeit besteht in der Registrierung einer Leerlauffunktion bei MAPI, die eine Nachricht an den richtigen Thread postet und die "echte" Leerlauffunktion direkt aus der Nachrichtenschleife dieses Threads zurücksennen.  <br/> |
    
 

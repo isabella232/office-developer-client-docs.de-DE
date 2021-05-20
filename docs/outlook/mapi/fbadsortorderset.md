@@ -25,7 +25,7 @@ ms.locfileid: "33428459"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Überprüft eine Sortierreihenfolge, die durch Überprüfen der Speicherbelegung festgelegt wurde. 
+Überprüft eine Sortierreihenfolge, indem die Speicherzuordnung überprüft wird. 
   
 |||
 |:-----|:-----|
@@ -43,20 +43,20 @@ ULONG FBadSortOrderSet(
 
  _lpsos_
   
-> in Zeiger auf eine [SSortOrderSet](ssortorderset.md) -Struktur, die die zu validierende Sortierreihenfolge festgelegt. 
+> [in] Zeiger auf eine [SSortOrderSet-Struktur,](ssortorderset.md) die die zu überprüfende Sortierreihenfolge identifiziert. 
     
 ## <a name="return-value"></a>Rückgabewert
 
 TRUE 
   
-> Die angegebene Sortierreihenfolge ist ungültig. 
+> Der angegebene Sortierreihenfolgensatz ist ungültig. 
     
 FALSE 
   
-> Der angegebene Sortierreihenfolge-Satz ist gültig.
+> Der angegebene Sortierreihenfolgensatz ist gültig.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **FBadSortOrderSet** -Funktion kann verwendet werden, um einen Aufruf einer Sort-Methode wie der [IMAPITable:: sortable](imapitable-sorttable.md) -Methode vorzubereiten. 
+Die **FBadSortOrderSet-Funktion** kann verwendet werden, um einen Aufruf einer Sortiermethode wie der [IMAPITable::SortTable-Methode vorzubereiten.](imapitable-sorttable.md) 
   
 

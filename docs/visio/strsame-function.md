@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251786
 localization_priority: Normal
 ms.assetid: d9fc2007-cc21-b20c-adee-be87cc356753
-description: Bestimmt, ob Zeichenfolgen identisch sind. Es gibt TRUE zurück, wenn Sie identisch sind, und FALSE, wenn dies nicht der Fall ist.
+description: Bestimmt, ob Zeichenfolgen identisch sind. Es gibt TRUE zurück, wenn sie identisch sind, und FALSE, wenn dies nicht der Fall ist.
 ms.openlocfilehash: 0f298c966ec7a3f1e23c89473fecc555ed950f79
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33428683"
 ---
 # <a name="strsame-function"></a>STRSAME Function
 
-Bestimmt, ob Zeichenfolgen identisch sind. Es gibt TRUE zurück, wenn Sie identisch sind, und FALSE, wenn dies nicht der Fall ist. 
+Bestimmt, ob Zeichenfolgen identisch sind. Es gibt TRUE zurück, wenn sie identisch sind, und FALSE, wenn dies nicht der Fall ist. 
   
 ## <a name="syntax"></a>Syntax
 
-STRSAME ("* * *string1* * *", "* * *string2* * *", * * *ignoreCase* * *) 
+STRSAME (" ** *string1* ** ", " ** *string2* ** ", ** *ignoreCase* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -42,13 +42,13 @@ Wenn Sie Multibyte-Zeichenfolgen vergleichen oder Vergleiche mit Groß- und Klei
   
 ## <a name="example-1"></a>Beispiel 1
 
-STRSAME ("Cat", "Dog")
+STRSAME("Katze","Hund")
   
 Gibt FALSE zurück.
   
 ## <a name="example-2"></a>Beispiel 2
 
-STRSAME ("Cat", "Cat")
+STRSAME("cat","cat")
   
 Gibt TRUE zurück.
   
@@ -60,7 +60,7 @@ Gibt TRUE zurück.
   
 ## <a name="example-4"></a>Beispiel 4
 
-STRSAME ("Cat", "CAT")
+STRSAME("cat","CAT")
   
 Gibt FALSE zurück.
   

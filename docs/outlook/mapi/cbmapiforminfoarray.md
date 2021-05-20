@@ -25,12 +25,12 @@ ms.locfileid: "33430504"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl der Bytes in einer vorhandenen [SMAPIFormInfoArray](smapiforminfoarray.md) -Struktur, die eine angegebene Anzahl von Formular Informationsobjekten enthält. 
+Berechnet die Anzahl der Bytes in einer vorhandenen [SMAPIFormInfoArray-Struktur,](smapiforminfoarray.md) die eine angegebene Anzahl von Formularinformationsobjekten enthält. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiform. h  <br/> |
-|Zugehörige Struktur:  <br/> |**SMAPIFormInfoArray** <br/> |
+|Headerdatei  <br/> |Mapiform.h  <br/> |
+|Verwandte Struktur:  <br/> |**SMAPIFormInfoArray** <br/> |
    
 ```cpp
 CbMAPIFormInfoArray (_c)
@@ -38,9 +38,9 @@ CbMAPIFormInfoArray (_c)
 
 ## <a name="parameters"></a>Parameter
 
- __c_
+ _ _c_
   
-> Die Anzahl der Formular Informationsobjekte in der vorhandenen **SMAPIFormInfoArray** -Struktur. 
+> Anzahl von Formularinformationsobjekten in der vorhandenen **SMAPIFormInfoArray-Struktur.** 
     
 ## <a name="see-also"></a>Siehe auch
 

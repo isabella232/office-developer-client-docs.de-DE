@@ -25,7 +25,7 @@ ms.locfileid: "33432198"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Entfernt ein bestimmtes Formular aus einem Formular Container.
+Entfernt ein bestimmtes Formular aus einem Formularcontainer.
   
 ```cpp
 HRESULT RemoveForm(
@@ -37,7 +37,7 @@ HRESULT RemoveForm(
 
  _szMessageClass_
   
-> in Eine Zeichenfolge, die die Nachrichtenklasse des Formulars benennt, das aus dem Formular Container entfernt werden soll. Nachrichtenklassennamen sind immer ANSI-Zeichenfolgen, nie Unicode.
+> [in] Eine Zeichenfolge, die die Nachrichtenklasse des Formulars benennt, das aus dem Formularcontainer entfernt werden soll. Nachrichtenklassennamen sind immer ANSI-Zeichenfolgen, nie Unicode.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -47,7 +47,7 @@ S_OK
     
 MAPI_E_NOT_FOUND 
   
-> Die Nachrichtenklasse, die im _szMessageClass_ -Parameter übergeben wird, stimmt nicht mit der Nachrichtenklasse eines beliebigen Formulars im Formular Container überein. 
+> Die im  _szMessageClass-Parameter_ übergebene Nachrichtenklasse ist nicht mit der Nachrichtenklasse eines Formulars im Formularcontainer übereinstimmend. 
     
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -55,7 +55,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|FormContainerDlg. cpp  <br/> |CFormContainerDlg:: OnDeleteSelectedItem  <br/> |MFCMAPI verwendet die **IMAPIFormContainer:: RemoveForm** -Methode, um ein Formular aus einem Formular Container zu löschen.  <br/> |
+|FormContainerDlg.cpp  <br/> |CFormContainerDlg::OnDeleteSelectedItem  <br/> |MFCMAPI verwendet die **IMAPIFormContainer::RemoveForm-Methode,** um ein Formular aus einem Formularcontainer zu löschen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

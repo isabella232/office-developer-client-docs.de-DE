@@ -1,5 +1,5 @@
 ---
-title: Programmablauf (Access Custom Web App)
+title: Programmablauf (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -14,17 +14,17 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33428928"
 ---
-# <a name="program-flow-access-custom-web-app"></a>Programmablauf (Access Custom Web App)
+# <a name="program-flow-access-custom-web-app"></a>Programmablauf (benutzerdefinierte Access-Web-App)
 
 > [!IMPORTANT]
 > Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
-- [Kommentar Makro Block (Access Custom Web App)](comment-macro-block-access-custom-web-app.md)
+- [Kommentar-Makroblock (benutzerdefinierte Access-Web-App)](comment-macro-block-access-custom-web-app.md)
     
-- [If... Dann... Else-Makro Block (Access Custom Web App)](ifthenelse-macro-block-access-custom-web-app.md)
+- [If... Dann... Else-Makroblock (benutzerdefinierte Access-Web-App)](ifthenelse-macro-block-access-custom-web-app.md)
     
-- [Gruppen Makro Block (Access Custom Web App)](group-macro-block-access-custom-web-app.md)
+- [Gruppenmakroblock (benutzerdefinierte Access-Web-App)](group-macro-block-access-custom-web-app.md)
     
 

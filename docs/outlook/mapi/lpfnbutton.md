@@ -25,13 +25,13 @@ ms.locfileid: "33431512"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Definiert eine Rückruffunktion, die von MAPI aufgerufen wird, um ein optionales Schaltflächen-Steuerelement in einem Adressbuch Dialogfeld zu aktivieren. Diese Schaltfläche ist in der Regel eine Schaltfläche **Details** . 
+Definiert eine Rückruffunktion, die MAPI aufruft, um ein optionales Schaltflächensteuerelement in einem Adressbuchdialogfeld zu aktivieren. Diese Schaltfläche ist in der Regel eine **Schaltfläche Details.** 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Definierte Funktion, implementiert von:  <br/> |Dienstanbieter  <br/> |
-|Definierte Funktion, aufgerufen von:  <br/> |MAPI  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Definierte Funktion implementiert von:  <br/> |Dienstanbieter  <br/> |
+|Definierte Funktion, die von:  <br/> |MAPI  <br/> |
    
 ```cpp
 SCODE (STDMETHODCALLTYPE FAR * LPFNBUTTON)(
@@ -47,19 +47,19 @@ SCODE (STDMETHODCALLTYPE FAR * LPFNBUTTON)(
 
  _ulUIParam_
   
-> in Handle der übergeordneten Fenster für alle Dialogfelder oder Windows, die diese Funktion anzeigt.
+> [in] Handle der übergeordneten Fenster für alle Dialogfelder oder Fenster, die diese Funktion anzeigt.
     
  _lpvContext_
   
-> in Zeiger auf einen beliebigen Wert, der beim Aufrufen von MAPI an die Rückruffunktion übergeben wird. Dieser Wert kann eine für die Clientanwendung bedeutsame Adresse darstellen. Für C++-Code stellt _LpvContext_ in der Regel einen Zeiger auf ein c++-Objekt dar. 
+> [in] Zeiger auf einen beliebigen Wert, der an die Rückruffunktion übergeben wird, wenn MAPI ihn aufruft. Dieser Wert kann eine Für die Clientanwendung wichtige Adresse darstellen. In der Regel stellt  _lpvContext_ für C++-Code einen Zeiger auf ein C++-Objekt dar. 
     
  _cbEntryID_
   
-> in Größe (in Bytes) der Eintrags-ID, auf die durch den _lpSelection_ -Parameter verwiesen wird. 
+> [in] Größe des Eintragsbezeichners in Bytes, auf den der  _lpSelection-Parameter_ verweist. 
     
  _lpSelection_
   
-> in Zeiger auf die Eintrags-ID, die die Auswahl im Dialogfeld definiert.
+> [in] Zeiger auf den Eintragsbezeichner, der die Auswahl im Dialogfeld definiert.
     
  _ulFlags_
   
@@ -71,13 +71,13 @@ S_OK
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Client Anwendungen rufen eine Rückruffunktion auf der Grundlage des **LPFNBUTTON** -Prototyps auf, um eine Schaltfläche in einem Detail Dialogfeld zu definieren. Der Client übergibt einen Zeiger auf die Rückruffunktion in Aufrufen der [IAddrBook::D ails](iaddrbook-details.md) -Methode. 
+Clientanwendungen rufen eine Rückruffunktion basierend auf dem **LPFNBUTTON-Prototyp** auf, um eine Schaltfläche in einem Detaildialogfeld zu definieren. Der Client übergibt einen Zeiger an die Rückruffunktion in Aufrufen der [IAddrBook::D etails-Methode.](iaddrbook-details.md) 
   
-Dienstanbieter rufen eine Hookfunktion auf der Grundlage des **LPFNBUTTON** -Prototyps auf, um eine Schaltfläche in einem Detail Dialogfeld zu definieren. Der Anbieter übergibt einen Zeiger auf diese Hookfunktion in Aufrufen der [IMAPISupport::D ails](imapisupport-details.md) -Methode. 
+Dienstanbieter rufen eine Hookfunktion basierend auf dem **LPFNBUTTON-Prototyp** auf, um eine Schaltfläche in einem Detaildialogfeld zu definieren. Der Anbieter übergibt einen Zeiger auf diese Hookfunktion in Aufrufen der [IMAPISupport::D etails-Methode.](imapisupport-details.md) 
   
-Wenn das Dialogfeld angezeigt wird und der Benutzer die definierte Schaltfläche auswählt, ruft MAPI in beiden Fällen **LPFNBUTTON**auf. 
+In beiden Fällen ruft MAPI **LPFNBUTTON** auf, wenn das Dialogfeld angezeigt wird und der Benutzer die definierte Schaltfläche aus wählt. 
   
 ## <a name="see-also"></a>Siehe auch
 

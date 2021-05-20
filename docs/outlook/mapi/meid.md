@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: aa8f18d9-691d-d0cc-a660-f15ea6cff6ce
-description: 'Zuletzt geändert: 03 Juli, 2012'
+description: 'Letzte Änderung: 03. Juli 2012'
 ms.openlocfilehash: a9aea0db700de9c82aa2a41a443ebf03da8ce9b3
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "33430308"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bezeichner für ein Outlook-Element. Sie enthält eine Eintrags-ID und andere relevante Informationen.
+Bezeichner für ein Outlook Element. Sie enthält eine Eintrags-ID und andere relevante Informationen.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -40,15 +40,15 @@ struct MEID
 
  _abFlags_
   
-> 4-Byte-Eintrags-ID für das Outlook-Element. Weitere Informationen zu MAPI-Eintrags Bezeichnern **[](entryid.md)** finden Sie Untereintrags-ID. 
+> 4-Byte-Eintrags-ID für das Outlook Element. Weitere Informationen zu MAPI-Eintragsbezeichnern finden Sie unter **[ENTRYID](entryid.md)**. 
     
  _muid_
   
-> GUID, die den Informationsspeicher Anbieter identifiziert. Weitere Informationen finden Sie unter mapidefs. h für die Typdefinition von **MAPIUID**. 
+> GUID, die den Speicheranbieter identifiziert. Die Typdefinition von **MAPIUID** finden Sie unter mapidefs.h. 
     
  _Platzhalter_
   
-> Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.
+> Dieses Mitglied ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.
     
  _ltidFld_
   
@@ -56,7 +56,7 @@ struct MEID
     
  _ltidMsg_
   
-> Langfristige ID des Outlook-Elements.
+> Langfristige ID des Outlook Element.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -68,7 +68,7 @@ struct MEID
   
 [LTID](ltid.md)
   
-[SYNCHRONISIERUNGS](sync.md)
+[SYNC](sync.md)
   
 [UPMSG](upmsg.md)
 

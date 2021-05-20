@@ -25,7 +25,7 @@ ms.locfileid: "33428018"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Löst eine Gruppe von Nachrichtenklassen in Ihre Formulare innerhalb eines Formular Containers auf und gibt ein Array von Formular Informationsobjekten für diese Formulare zurück.
+Löst eine Gruppe von Nachrichtenklassen in ihre Formulare in einem Formularcontainer auf und gibt ein Array von Formularinformationsobjekten für diese Formulare zurück.
   
 ```cpp
 HRESULT ResolveMultipleMessageClasses(
@@ -40,27 +40,27 @@ HRESULT ResolveMultipleMessageClasses(
 
  _pMsgClasses_
   
-> in Ein Zeiger auf ein Array, das die Namen der aufzulösenden Nachrichtenklassen enthält.
+> [in] Ein Zeiger auf ein Array, das die Namen der zu auflösende Nachrichtenklassen enthält.
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die die Auflösung der Nachrichtenklassen steuert. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie die Nachrichtenklassen aufgelöst werden. Das folgende Flag kann festgelegt werden:
     
 MAPIFORM_EXACTMATCH 
   
-> Nur Nachrichtenklassen Zeichenfolgen, die exakt übereinstimmen, sollten aufgelöst werden.
+> Es sollten nur Nachrichtenklassenzeichenfolgen aufgelöst werden, die eine genaue Übereinstimmung sind.
     
 MAPIFORM_LOCALONLY
   
-> Verwenden Sie keine zwischengespeicherten Formulare.
+> Schließen Sie keine zwischengespeicherten Formulare ein.
     
  _pFolderFocus_
   
-> in Ein Zeiger auf den Ordner, der das Formular enthält, dessen Nachrichtenklasse aufgelöst wird. Der _pFolderFocus_ -Parameter kann NULL sein. 
+> [in] Ein Zeiger auf den Ordner, der das Formular enthält, dessen Nachrichtenklasse aufgelöst wird. Der  _pFolderFocus-Parameter_ kann NULL sein. 
     
  _ppfrminfoarray_
   
-> Out Ein Zeiger auf einen Zeiger auf ein Array von Formular Informationsobjekten. Wenn ein Formular-Viewer im _pMsgClasses_ -Parameter den Wert NULL übergibt, enthält der _ppfrminfoarray_ -parameterformular Informationsobjekte für alle Formulare im Container. 
+> [out] Ein Zeiger auf einen Zeiger auf ein Array von Formularinformationsobjekten. Wenn ein Formularanzeiger NULL im  _pMsgClasses-Parameter_ übergibt, enthält der  _ppfrminfoarray-Parameter_ Formularinformationsobjekte für alle Formulare im Container. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -68,17 +68,17 @@ S_OK
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Formular Betrachter rufen die **IMAPIFormMgr:: ResolveMultipleMessageClasses** -Methode auf, um eine Gruppe von Nachrichtenklassen in Formulare in einem Formular Container aufzulösen. Das Array der in _ppfrminfoarray_ zurückgegebenen Formular Informationsobjekte bietet weiteren Zugriff auf die einzelnen Eigenschaften der Formulare. 
+Formularbetrachter rufen die **IMAPIFormMgr::ResolveMultipleMessageClasses-Methode** auf, um eine Gruppe von Nachrichtenklassen in Formulare innerhalb eines Formularcontainers zu auflösen. Das Array von Formularinformationsobjekten, die in  _ppfrminfoarray_ zurückgegeben werden, bietet weiteren Zugriff auf die Eigenschaften der einzelnen Formulare. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Um eine Gruppe von Nachrichtenklassen in Formulare aufzulösen, übergibt ein Formular Betrachter ein Array von Nachrichtenklassennamen, die aufgelöst werden sollen. Um die Auflösung genau zu erzwingen (das heißt, um die Auflösung einer Basisklasse der Nachrichtenklasse zu verhindern, wenn ein genau übereinstimmender Formularserver nicht verfügbar ist), kann das MAPIFORM_EXACTMATCH-Flag im _ulFlags_ -Parameter übergeben werden. 
+Um eine Gruppe von Nachrichtenklassen in Formulare zu auflösen, übergibt eine Formularanzeige ein Array von Nachrichtenklassennamen, die aufgelöst werden sollen. Um zu erzwingen, dass die Auflösung exakt ist (d. h. um die Auflösung zu einer Basisklasse der Nachrichtenklasse zu verhindern, wenn kein exakt übereinstimmender Formularserver verfügbar ist), kann das MAPIFORM_EXACTMATCH-Flag im  _ulFlags-Parameter_ übergeben werden. 
   
 Nachrichtenklassennamen sind immer ANSI-Zeichenfolgen, nie Unicode.
   
-Wenn eine Nachrichtenklasse nicht in ein Formular aufgelöst werden kann, wird für diese Nachrichtenklasse im Formular Informations Array NULL zurückgegeben. Selbst wenn die Methode S_OK zurückgibt, sollten die Formular Betrachter daher nicht davon ausgehen, dass alle Nachrichtenklassen erfolgreich aufgelöst wurden. Stattdessen sollten Formular Betrachter die Werte im zurückgegebenen Array überprüfen.
+Wenn eine Nachrichtenklasse nicht in ein Formular aufgelöst werden kann, wird NULL für diese Nachrichtenklasse im Formularinformationsarray zurückgegeben. Daher sollten Formularanzeigen nicht unter der Annahme funktionieren, dass alle Nachrichtenklassen erfolgreich aufgelöst wurden, auch wenn die Methode S_OK zurückgibt. Stattdessen sollten Formularbetrachter die Werte im zurückgegebenen Array überprüfen.
   
 ## <a name="see-also"></a>Siehe auch
 

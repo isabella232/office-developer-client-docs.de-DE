@@ -40,23 +40,23 @@ ULONG ulFlags
 
  _ulAttachmentNum_
   
-> in Index Nummer der zu löschenden Anlage. Dies ist der Wert für die **PR_ATTACH_NUM** ([pidtagattachnumber (](pidtagattachnumber-canonical-property.md))-Eigenschaft der Anlage.
+> [in] Indexnummer der zu löschende Anlage. Dies ist der Wert für die **PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) -Eigenschaft der Anlage.
     
  _ulUIParam_
   
-> in Handle für das übergeordnete Fenster aller Dialogfelder oder Fenster, die diese Methode anzeigt. Der _ulUIParam_ -Parameter wird ignoriert, es sei denn, das ATTACH_DIALOG-Flag wird im _ulFlags_ -Parameter festgelegt. 
+> [in] Behandeln Sie das übergeordnete Fenster aller Dialogfelder oder Fenster, die diese Methode anzeigt. Der  _ulUIParam-Parameter_ wird ignoriert, es sei denn, das ATTACH_DIALOG wird im  _ulFlags-Parameter_ festgelegt. 
     
  _lpProgress_
   
-> in Zeiger auf ein Progress-Objekt, das eine Statusanzeige anzeigt. Wenn NULL in _lpProgress_übergeben wird, zeigt der Nachrichtenspeicher Anbieter mithilfe der MAPI-Progress-Objekt Implementierung eine Statusanzeige an. Der _lpProgress_ -Parameter wird ignoriert, es sei denn, das ATTACH_DIALOG-Flag wird in _ulFlags_festgelegt.
+> [in] Zeiger auf ein Statusobjekt, das eine Statusanzeige anzeigt. Wenn NULL in  _lpProgress übergeben_ wird, zeigt der Nachrichtenspeicheranbieter mithilfe der MAPI-Fortschrittsobjektimplementierung eine Statusanzeige an. Der _lpProgress-Parameter_ wird ignoriert, es sei denn, ATTACH_DIALOG in _ulFlags festgelegt ist._
     
  _ulFlags_
   
-> in Bitmaske von Flags, die die Anzeige einer Benutzeroberfläche steuert. Das folgende Flag kann festgelegt werden:
+> [in] Bitmaske von Flags, die die Anzeige einer Benutzeroberfläche steuert. Das folgende Flag kann festgelegt werden:
     
 ATTACH_DIALOG 
   
-> Fordert die Anzeige einer Statusanzeige an, während der Vorgang fortgesetzt wird.
+> Fordert die Anzeige eines Statusindikators an, während der Vorgang fortgesetzt wird.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -64,17 +64,17 @@ S_OK
   
 > Die Anlage wurde erfolgreich gelöscht.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMessage::D eleteattach** -Methode löscht eine Anlage aus einer Nachricht. 
+Die **IMessage::D eleteAttach-Methode** löscht eine Anlage innerhalb einer Nachricht. 
   
-Eine gelöschte Anlage wird erst dann endgültig gelöscht, wenn die [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) -Methode der Nachricht aufgerufen wurde. 
+Eine gelöschte Anlage wird erst endgültig gelöscht, wenn die [IMAPIProp::SaveChanges-Methode](imapiprop-savechanges.md) der Nachricht aufgerufen wurde. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Rufen Sie vor dem Aufrufen von **DeleteAttach**die **IUnknown:: Release** -Methode für die Anlage und alle zugehörigen Streams auf. 
+Rufen Sie **vor dem Aufrufen von DeleteAttach** die **IUnknown::Release-Methode** für die Anlage und jeden ihrer Datenströme auf. 
   
-Da das Löschen einer Anlage ein langwieriger Prozess sein kann, stellt **DeleteAttach** den Mechanismus bereit, mit dem eine Statusanzeige angezeigt wird. Sie können die Anzeige einer Statusanzeige anfordern, indem Sie einen Zeiger an Ihre [IMAPIProgress: IUnknown](imapiprogressiunknown.md) -Implementierung oder NULL übergeben, wenn Sie keine Implementierung haben. Sie müssen auch ein Fensterhandle im Parameter _ulUIParam_ und das ATTACH_DIALOG-Flag im _ulFlags_ -Parameter angeben. 
+Da das Löschen einer Anlage ein langwieriger Prozess sein kann, bietet **DeleteAttach** den Mechanismus, der eine Statusanzeige anzeigt. Sie können die Anzeige eines Statusindikators anfordern, indem Sie einen Zeiger an Ihre [IMAPIProgress : IUnknown-Implementierung](imapiprogressiunknown.md) oder NULL übergeben, wenn Sie über keine Implementierung verfügen. Sie müssen auch ein Fensterhandle im  _ulUIParam-Parameter_ und das ATTACH_DIALOG im  _ulFlags-Parameter_ angeben. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -82,7 +82,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|AttachmentsDlg. cpp  <br/> |CAttachmentsDlg:: OnDeleteSelectedItem  <br/> |MFCMAPI verwendet die **IMessage::D eleteattach** -Methode, um die ausgewählte Anlage zu löschen.  <br/> |
+|AttachmentsDlg.cpp  <br/> |CAttachmentsDlg::OnDeleteSelectedItem  <br/> |MFCMAPI verwendet die **IMessage::D eleteAttach-Methode,** um die ausgewählte Anlage zu löschen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

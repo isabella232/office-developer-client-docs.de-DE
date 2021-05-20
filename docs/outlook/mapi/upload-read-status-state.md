@@ -1,5 +1,5 @@
 ---
-title: Status Status des Uploads
+title: Hochladen Statusstatus lesen
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -13,31 +13,31 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33431540"
 ---
-# <a name="upload-read-status-state"></a>Status Status des Uploads
+# <a name="upload-read-status-state"></a>Hochladen Statusstatus lesen
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
- In diesem Thema wird beschrieben, was während des Status Status des Replikats beim Hochladen des Computers geschieht. 
+ In diesem Thema wird beschrieben, was während des Statusstatus des Upload-Lesestatus des Replikationsstatuscomputers geschieht. 
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
-|Status-ID:  <br/> |**LR_SYNC_UPLOAD_MESSAGE_READ** <br/> |
-|Zugehörige Datenstruktur:  <br/> |**[UPREAD](upread.md)** <br/> |
-|Aus folgendem Zustand:  <br/> |[Tabellenstatus hochladen](upload-table-state.md) <br/> |
-|Zu folgendem Status:  <br/> |Tabellenstatus hochladen  <br/> |
+|Statusbezeichner:  <br/> |**LR_SYNC_UPLOAD_MESSAGE_READ** <br/> |
+|Verwandte Datenstruktur:  <br/> |**[UPREAD](upread.md)** <br/> |
+|In diesem Zustand:  <br/> |[Hochladen Tabellenstatus](upload-table-state.md) <br/> |
+|In diesem Zustand:  <br/> |Hochladen Tabellenstatus  <br/> |
    
 > [!NOTE]
-> Der Replikationsstatus Computer ist ein deterministischer Statuscomputer. Ein Client, der von einem Staat zu einem anderen abgeht, muss schließlich aus letzterem zurückkehren. 
+> Der Replikationsstatuscomputer ist ein deterministischer Zustandsautomat. Ein Client, der von einem Zustand in einen anderen abt, muss schließlich zu dem ersten von letzterem zurückkehren. 
   
 ## <a name="description"></a>Beschreibung
 
-Dieser Status initiiert das Hochladen des Lesestatus von Elementen in einem Ordner, der in einem vorherigen Upload-Tabellenstatus angegeben ist. Während dieses Status initialisiert Outlook die zugehörige **upread** -Datenstruktur mit Informationen für die Elemente im Ordner, deren Lesestatus geändert wurde. Der Client aktualisiert dann den Lesestatus dieser Elemente auf dem Server als gelesen oder ungelesen. 
+Dieser Status initiiert das Hochladen des Lesestatus von Elementen in einem Ordner, der in einem vorherigen Uploadtabelle-Status angegeben ist. Während dieses Status initialisiert Outlook die zugeordnete **UPREAD-Datenstruktur** mit Informationen zu den Elementen im Ordner, dessen Lesestatus sich geändert hat. Der Client aktualisiert dann den Lesestatus dieser Elemente auf dem Server als gelesen oder ungelesen. 
   
-Wenn dieser Status endet, werden die internen Informationen zum Lesestatus des Elements gelöscht, und es wird verhindert, dass der Lesestatus des Elements erneut hochgeladen wird. Der lokale Speicher gibt den Status der hochzuladenden Tabelle zurück.
+Wenn dieser Status endet, Outlook interne Informationen zum Lesestatus des Elements entfernt, was verhindert, dass der Lesestatus des Elements erneut hochgeladen wird. Der lokale Speicher kehrt zum Status der Uploadtabelle zurück.
   
 ## <a name="see-also"></a>Siehe auch
 

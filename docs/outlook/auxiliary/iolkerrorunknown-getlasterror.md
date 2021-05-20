@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 3f332de3-470d-9bc2-0c65-684bb58bcd7a
-description: Ruft eine Meldungszeichenfolge für den angegebenen Fehler ab.
+description: Ruft eine Nachrichtenzeichenfolge für den angegebenen Fehler ab.
 ms.openlocfilehash: 4d2aa3a7513687484988921734eb4c0e6f91226b
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,11 +16,11 @@ ms.locfileid: "33431701"
 ---
 # <a name="iolkerrorunknowngetlasterror"></a>IOlkErrorUnknown::GetLastError
 
-Ruft eine Meldungszeichenfolge für den angegebenen Fehler ab. 
+Ruft eine Nachrichtenzeichenfolge für den angegebenen Fehler ab. 
   
 ## <a name="quick-info"></a>QuickInfo
 
-Siehe [IOlkErrorUnknown](iolkerrorunknown.md).
+Weitere Informationen finden Sie unter [IOlkErrorUnknown](iolkerrorunknown.md).
   
 ```cpp
 HRESULT IOlkErrorUnknown::GetLastError(  
@@ -32,13 +32,13 @@ HRESULT IOlkErrorUnknown::GetLastError(
 
 ## <a name="parameters"></a>Parameter
 
-_HR_
+_hr_
   
-> in Der Fehlercode, nach dem gesucht werden soll.
+> [in] Der zu suchende Fehlercode.
     
 _ppwszError_
   
-> Out Die Fehlermeldung, die *HR* entspricht. 
+> [out] Die Fehlermeldung, die hr *entspricht.* 
     
 ## <a name="return-values"></a>Rückgabewerte
 

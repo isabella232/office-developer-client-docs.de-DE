@@ -25,31 +25,31 @@ Hinzugefügte Version: Visio 2010
   
 ## <a name="syntax"></a>Syntax
 
-BOUNDINGBOXDIST (* * *Index* * *) 
+BOUNDINGBOXDIST(** *Index* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Index_ <br/> |Erforderlich  <br/> |**Number** <br/> |Der Teil des umgebenden Felds des Shapes, der gemessen und zurückgegeben werden soll. Mögliche Werte finden Sie in den Hinweisen.  <br/> |
+| _Index_ <br/> |Erforderlich  <br/> |**Number** <br/> |Der Teil des begrenzungsfelds des Shapes, der gemessen und zurückzukehren ist. Mögliche Werte finden Sie in den Hinweisen.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
  **Number**
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
- *Index* kann einer der folgenden Werte sein. 
+ *Index*  kann einer der folgenden Werte sein. 
   
-|**Item**|**Wert**|
+|**Aspekt**|**Wert**|
 |:-----|:-----|
 |Width  <br/> |0  <br/> |
 |Height  <br/> |1  <br/> |
 |Shape-Pin bis linke Kante  <br/> |2  <br/> |
 |Shape-Pin bis rechte Kante  <br/> |3  <br/> |
-|Shape-Pin bis obere Kante  <br/> |4  <br/> |
-|Shape-Pin bis untere Kante  <br/> |5  <br/> |
-|Mitte des umgebenden Felds bis PinX  <br/> |6  <br/> |
-|Mitte des umgebenden Felds bis PinY  <br/> |7  <br/> |
+|Shape-Pin bis obere Kante  <br/> |4   <br/> |
+|Shape-Pin bis untere Kante  <br/> |5   <br/> |
+|Mitte des umgebenden Felds bis PinX  <br/> |6   <br/> |
+|Mitte des umgebenden Felds bis PinY  <br/> |7   <br/> |
    
 

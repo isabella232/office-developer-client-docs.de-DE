@@ -19,82 +19,82 @@ ms.locfileid: "33435740"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ein ausländischer Anbieter ist ein Adressbuchanbieter, der: 
+Ein fremder Anbieter ist ein Adressbuchanbieter, der: 
   
-- Weist den Empfängern Vorlagenbezeichner zu.
+- Weist vorlagenbezeichner für die Empfänger zu.
     
-- Unterstützt die [IABLogon::](iablogon-opentemplateid.md) opentemplatecollection-Methode. 
+- Unterstützt die [IABLogon::OpenTemplateID-Methode.](iablogon-opentemplateid.md) 
     
-- Stellt Code zum Verwalten von Empfängern bereit, die in den Containern anderer Adressbuchanbieter vorhanden sind, die als Hostanbieter bezeichnet werden. Dieser Code umfasst ein Property-Objekt, in der Regel eine **IMAPIProp** -Schnittstellenimplementierung, die ein Property-Objekt vom Hostanbieter umschließt. 
+- Gibt Code zum Verwalten von Empfängern an, die in containern anderer Adressbuchanbieter vorhanden sind, die als Hostanbieter bezeichnet werden. Dieser Code umfasst ein Eigenschaftsobjekt, in der Regel eine IMAPIProp-Schnittstellenimplementierung, die ein Eigenschaftsobjekt vom Hostanbieter umschließt.  
     
-Als ausländischer Anbieter handelt es sich um eine optionale Rolle. nicht alle Anbieter müssen Vorlagenbezeichner und den dazugehörigen Code unterstützen. Implementieren Sie Ihren Anbieter als fremden Anbieter, wenn Sie die Kontrolle über Empfänger behalten möchten, die von Hostanbietern mithilfe von Vorlagen bereitgestellt werden. 
+Die Funktion als fremder Anbieter ist eine optionale Rolle. Nicht alle Anbieter müssen Vorlagenbezeichner und deren zugehörigen Code unterstützen. Implementieren Sie Ihren Anbieter als fremder Anbieter, wenn Sie die Kontrolle über Empfänger behalten möchten, die Hostanbieter mithilfe von Vorlagen ihres Anbieters erstellen. 
   
-Das Format, das Ihr Anbieter für seine Eintrags-IDs verwendet, kann auch für seine Vorlagenbezeichner verwendet werden. Vorlagenbezeichner müssen die registrierten **MAPIUID** Ihres Anbieters aufweisen, damit MAPI die Empfänger erfolgreich an die entsprechenden Anbieter binden kann. 
+Das Format, das Ihr Anbieter für seine Eintragsbezeichner verwendet, kann auch für seine Vorlagenbezeichner verwendet werden. Vorlagenbezeichner müssen die registrierte **MAPIUID** Ihres Anbieters enthalten, damit MAPI Empfänger erfolgreich an die entsprechenden Anbieter binden kann. 
   
-MAPI Ruft die **IABLogon::** opentemplatecode-Methode Ihres Anbieters auf, wenn ein Hostanbieter [IMAPISupport::](imapisupport-opentemplateid.md)opentemplatecollection aufruft. Der Hostanbieter übergibt den Vorlagenbezeichner des Empfängers im _lpTemplateID_ -Parameter im Aufruf an **IMAPISupport::** opentemplatecollection. MAPI bestimmt, dass der Vorlagenbezeichner zu Ihrem Anbieter gehört, indem der [MAPIUID](mapiuid.md) im Vorlagenbezeichner mit dem **MAPIUID** übereinstimmt, den Ihr Anbieter bei der Anmeldung registriert hat. MAPI leitet dann den Anruf des Host Anbieters über die **IABLogon::** opentemplated-Methode an Ihren Anbieter weiter. 
+MAPI ruft die **IABLogon::OpenTemplateID-Methode** Ihres Anbieters auf, wenn ein Hostanbieter [IMAPISupport::OpenTemplateID aufruft.](imapisupport-opentemplateid.md) Der Hostanbieter übergibt den Vorlagenbezeichner des Empfängers im  _lpTemplateID-Parameter_ in seinem Aufruf an **IMAPISupport::OpenTemplateID**. MAPI bestimmt, dass die Vorlagen-ID zu Ihrem Anbieter gehört, indem sie die [MAPIUID](mapiuid.md) in der Vorlagen-ID mit der **MAPIUID** abgleicht, die Ihr Anbieter bei der Anmeldung registriert hat. MAPI gibt dann den Aufruf des Hostanbieters über die **IABLogon::OpenTemplateID-Methode** an Ihren Anbieter weiter. 
   
-Der Hostanbieter übergibt auch einen Zeiger auf seine Property-Objekt-Implementierung für den Empfänger im _lpMAPIPropData_ -Parameter, einen Schnittstellenbezeichner im _lpInterface_ -Parameter, der dem Typ der Schnittstellenimplementierung entspricht. übergeben in _lpMAPIPropData_und eine optionale Kennzeichnung, FILL_ENTRY. Es wird erwartet, dass Ihr Anbieter im _lppMAPIPropNew_ -Parameter einen Zeiger auf eine Implementierung des Property-Objekts des in _lpInterface_angegebenen Typs zurückgibt. Der zurückgegebene Zeiger kann entweder für das Wrapped Property-Objekt sein, das von Ihrem Anbieter oder für das vom Hostanbieter in _lpMAPIPropData_bereitgestellte Objekt implementiert wurde. Ihr Anbieter sollte einen umschlossenen Property-Objektzeiger zurückgeben, wenn:
+Der Hostanbieter übergibt außerdem einen Zeiger auf die Eigenschaftsobjektimplementierung für den Empfänger im  _lpMAPIPropData-Parameter,_ einen Schnittstellenbezeichner im  _lpInterface-Parameter,_ der dem Typ der in  _lpMAPIPropData_ übergebenen Schnittstellenimplementierung und einem optionalen Flag FILL_ENTRY. Ihr Anbieter soll im _lppMAPIPropNew-Parameter_ einen Zeiger auf eine Eigenschaftsobjektimplementierung des in _lpInterface angegebenen Typs zurückgeben._ Der zurückgegebene Zeiger kann entweder auf das von Ihrem Anbieter implementierte umschlossene Eigenschaftsobjekt oder auf das vom Hostanbieter in  _lpMAPIPropData_ bereitgestellte Objekt sein. Ihr Anbieter sollte einen umschlossenen Eigenschaftsobjektzeiger zurückgeben, wenn:
   
-- Die Anzeigetabelle des Empfängers enthält Listenfeld-Steuerelemente.
+- Die Anzeigetabelle des Empfängers enthält Listenfeldsteuerelemente.
     
-- Die e-Mail-Adresse des Empfängers muss aus Daten in mehreren Anzeige Tabellen-Steuerelementen zusammengestellt werden.
+- Die E-Mail-Adresse für den Empfänger muss aus Daten in mehreren Anzeigetabelle-Steuerelementen zusammengesetzt werden.
     
-- Der Anbieter gibt Anzeige Tabellen Benachrichtigungen aus.
+- Ihr Anbieter gibt Probleme mit der Anzeige von Tabellenbenachrichtigungen auf.
     
-Das FILL_ENTRY-Flag gibt Ihrem Anbieter an, dass der Hostanbieter alle Eigenschaften des Empfängers aktualisieren muss. Der Anbieter muss diese Anforderung erfüllen.
+Das FILL_ENTRY zeigt Ihrem Anbieter an, dass der Hostanbieter alle Eigenschaften des Empfängers aktualisieren muss. Ihr Anbieter muss diese Anforderung erfüllen.
   
-Wenn ein Hostanbieter die openTemplate- **** Methode Ihres Anbieters aufruft, kann Ihr Anbieter Folgendes: 
+Wenn ein Hostanbieter die **OpenTemplateID-Methode Ihres** Anbieters aufruft, kann ihr Anbieter: 
   
-- Aktualisieren Sie die Daten für einen kopierten Eintrag regelmäßig.
+- Aktualisieren Sie regelmäßig die Daten für einen kopierten Eintrag.
     
-- Halten Sie einen kopierten Eintrag mit seinem Original synchronisiert, beispielsweise wenn ein Adressbucheintrag in das persönliche Adressbuch kopiert wird.
+- Halten Sie einen kopierten Eintrag mit dem Original synchronisiert, z. B. wenn ein Adressbucheintrag in das persönliche Adressbuch kopiert wird.
     
-- Implementieren Sie Funktionen, die nicht vom Hostanbieter implementiert werden können, wie das dynamische Auffüllen von Listenfeldern in der Details-Tabelle des kopierten Eintrags aus Daten auf einem Server.
+- Implementieren Sie Funktionen, die vom Hostanbieter nicht implementiert werden können, z. B. dynamisches Auffüllen von Listenfeldern in der Detailtabelle des kopierten Eintrags aus Daten auf einem Server.
     
-- Steuern der Interaktion zwischen den Eigenschaften eines kopierten Eintrags oder einer instanziierten Vorlage. Beispiel: Computing **PR_EMAIL_ADDRESS** aus anderen Eigenschaften, die in der Details-Tabelle angezeigt werden. 
+- Steuern der Interaktion zwischen Eigenschaften in einem kopierten Eintrag oder einer instanziierten Vorlage. Beispielsweise wird das **PR_EMAIL_ADDRESS** von anderen In der Detailtabelle angezeigten Eigenschaften verwendet. 
     
-Die ersten beiden Elemente sind Beispiele für Aufgaben, für die kein Anbieter ein Wrapped Property-Objekt angeben muss – eine Implementierung von **IMAPIProp** , die auf der Implementierung des Host Anbieters basiert. Ihr Anbieter kann die Eigenschaften einfach nach Bedarf aktualisieren und zurückgeben, wobei der _lppMAPIPropNew_ -Parameter so festgelegt wird, dass er auf den vom Hostanbieter im _lpMAPIPropData_ -Parameter übergebenen Zeiger zeigt. 
+Die ersten beiden Elemente sind Beispiele für Aufgaben, für die ihr Anbieter kein umschlossenes Eigenschaftsobjekt liefern muss – eine Implementierung von **IMAPIProp,** die auf der Implementierung des Hostanbieters basiert. Ihr Anbieter kann die Eigenschaften einfach bei Bedarf aktualisieren und zurückgeben und den  _lppMAPIPropNew-Parameter_ so festlegen, dass er auf den Zeiger verweist, der vom Hostanbieter im  _lpMAPIPropData-Parameter_ übergeben wird. 
   
-Die zweiten beiden Aufgaben erfordern, dass Ihr Anbieter zum Hostanbieter ein Property-Objekt zurückgibt, das das Objekt des Host Anbieters mit zusätzlicher Funktionalität umschließt, beispielsweise die Möglichkeit, ein Eigenschaftenblatt für den Eintrag anzuzeigen. Dieses Property-Objekt ist entweder ein Messaging-Benutzer oder eine Verteilerliste, je nach Typ des Objekts, das vom Hostanbieter im _lpMAPIPropData_ -Parameter übergeben und durch den Schnittstellenbezeichner im _lpInterface_ -Parameter angegeben wird. Wenn der _lpMAPIPropData_ -Parameter auf einen Messagingbenutzer verweist, muss das Wrapped Property-Objekt des Anbieters eine **IMailUser** -Implementierung sein. Wenn _lpMAPIPropData_ auf eine Verteilerliste verweist, muss es sich um eine **IDistList** -Implementierung handeln. 
+Für die zweiten beiden Aufgaben muss Ihr Anbieter ein Eigenschaftsobjekt an den Hostanbieter zurückgeben, das das Objekt des Hostanbieters mit zusätzlichen Funktionen umschließt, z. B. die Möglichkeit, ein Eigenschaftenblatt für den Eintrag anzeigen zu können. Dieses Eigenschaftsobjekt ist entweder ein Messagingbenutzer oder eine Verteilerliste, abhängig vom Typ des Objekts, das vom Hostanbieter im  _lpMAPIPropData-Parameter_ übergeben und durch den Schnittstellenbezeichner im  _lpInterface-Parameter_ angegeben wird. Wenn der  _lpMAPIPropData-Parameter_ auf einen Messagingbenutzer verweist, muss das umschlossene Eigenschaftsobjekt ihres Anbieters eine **IMailUser-Implementierung** sein. Wenn _lpMAPIPropData_ auf eine Verteilerliste verweist, muss es sich um eine **IDistList-Implementierung.** 
   
-Das Wrapped Property-Objekt des Anbieters fängt **IMAPIProp** -Methodenaufrufe ab, um die kontextspezifische Manipulation des Empfängers des Host Anbieters zu durchzuführen – das Objekt, das es umfließt. MAPI hat nur eine Anforderung für Wrapped Property Objects: alle Aufrufe an [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) , die die **PR_DETAILS_TABLE** ([pidtagdetailstable (](pidtagdetailstable-canonical-property.md))-Eigenschaft anfordern, sollten an den Hostanbieter übergeben werden. Die Implementierung Ihres Anbieters kann die zurückgegebene Tabelle verwenden, um Anzeige Tabellen Benachrichtigungen abzufangen oder bei Bedarf eigene hinzuzufügen. 
+Das umschlossene Eigenschaftsobjekt Ihres Anbieters fängt **IMAPIProp-Methodenaufrufe** ab, um kontextspezifische Manipulationen am Empfänger des Hostanbieters durchzuführen– dem Objekt, das umbrochen wird. MAPI hat nur eine Anforderung für umschlossene Eigenschaftsobjekte: Alle Aufrufe von [IMAPIProp::OpenProperty,](imapiprop-openproperty.md) die die **PR_DETAILS_TABLE** ([PidTagDetailsTable](pidtagdetailstable-canonical-property.md))-Eigenschaft anfordern, sollten an den Hostanbieter übergeben werden. Die Implementierung Ihres Anbieters kann die zurückgegebene Tabelle verwenden, um Benachrichtigungen über Anzeigetabelle abzufangen oder bei Bedarf eigene hinzuzufügen. 
   
-Die folgende Liste enthält Aufgaben, die normalerweise in das von fremden Anbietern implementierte Wrapped Property-Objekt implementiert werden:
+Die folgende Liste enthält Aufgaben, die in der Regel in dem umschlossenen Eigenschaftsobjekt implementiert werden, das von fremden Anbietern implementiert wird:
   
-- Vorverarbeitungs-und postverarbeitungs-Eigenschaftswerte für den Host Empfänger in [IMAPIProp::](imapiprop-getprops.md)GetProps.
+- Werte der Vorverarbeitungs- und Postverarbeitungseigenschaft für den Hostempfänger in [IMAPIProp::GetProps](imapiprop-getprops.md).
     
-- Behandlung Details anzeigen von Tabellensteuerelementen wie Schaltflächen und Listenfeldern in **IMAPIProp:: OpenProperty**.
+- Behandeln von Details anzeigen Tabellensteuerelemente, z. B. Schaltflächen und Listenfelder, in **IMAPIProp::OpenProperty**.
     
-- Validieren oder Bearbeiten von Eigenschaftswerten für den Host Empfänger in [IMAPIProp::](imapiprop-setprops.md)SetProps.
+- Überprüfen oder Bearbeiten von Eigenschaftswerten für den Hostempfänger in [IMAPIProp::SetProps](imapiprop-setprops.md).
     
-- Berechnen erforderlicher Eigenschaften wie **PR_EMAIL_ADDRESS** und überprüfen, ob alle erforderlichen Eigenschaften festgelegt wurden, bevor der Host Empfänger in [IMAPIProp:: SaveChanges](imapiprop-savechanges.md)gespeichert wird.
+- Berechnen erforderlicher Eigenschaften wie **PR_EMAIL_ADDRESS** und Überprüfen, ob alle erforderlichen Eigenschaften festgelegt wurden, bevor der Hostempfänger in [IMAPIProp::SaveChanges](imapiprop-savechanges.md)gespeichert wird.
     
-### <a name="to-implement-iablogonopentemplateid"></a>So implementieren Sie IABLogon:: openTemplateable
+### <a name="to-implement-iablogonopentemplateid"></a>So implementieren Sie IABLogon::OpenTemplateID
   
-1. Überprüfen Sie, ob der mit dem _lpTemplateID_ -Parameter übergebene Vorlagenbezeichner gültig ist und sich in einem Format befindet, das Ihr Anbieter erkennt. Wenn dies nicht der Fall ist, schlagen Sie fehl, und geben Sie MAPI_E_INVALID_ENTRYID. 
+1. Überprüfen Sie, ob der vorlagenbezeichner, der mit dem  _lpTemplateID-Parameter_ übergeben wurde, gültig ist und ein Format hat, das ihr Anbieter erkennt. Andern falls nicht, führen Sie einen Fehler aus, und geben Sie MAPI_E_INVALID_ENTRYID. 
     
-2. Erstellen Sie ein Objekt des vom Vorlagenbezeichner angegebenen Typs, entweder einen Messagingbenutzer, eine Verteilerliste oder einen einmaligen Empfänger. 
+2. Erstellen Sie ein Objekt des Typs, der durch den Vorlagenbezeichner angegeben ist, entweder ein Messagingbenutzer, eine Verteilerliste oder ein einmal verwendeter Empfänger. 
     
-3. Rufen Sie die **IUnknown:: AddRef** -Methode im Property-Objekt des Host Anbieters auf, auf das durch den _lpMAPIPropData_ -Parameter verwiesen wird. 
+3. Rufen Sie **die IUnknown::AddRef-Methode** im Eigenschaftsobjekt des Hostanbieters auf, auf das das Objekt verweist, auf das der  _lpMAPIPropData-Parameter_ verweist. 
     
-4. Wenn der _ulTemplateFlags_ -Parameter auf FILL_ENTRY festgelegt ist: 
+4. Wenn der  _ulTemplateFlags-Parameter_ auf "FILL_ENTRY: 
     
    1. Wenn es sich bei dem neuen Objekt um einen Messagingbenutzer oder eine Verteilerliste handelt:
       
-      1. Rufen Sie alle Eigenschaften des neuen Objekts ab, indem Sie die **IMAPIProp::** GetProps-Methode aufrufen. 
+      1. Rufen Sie alle Eigenschaften des neuen Objekts ab, möglicherweise durch Aufrufen der **IMAPIProp::GetProps-Methode.** 
           
-      2. Rufen Sie die **IMAPIProp::** SetProps-Methode des Host Anbieters auf, um alle abgerufenen Eigenschaften in das Property-Objekt des Host Anbieters zu kopieren. 
+      2. Rufen Sie die **IMAPIProp::SetProps-Methode** des Hostanbieters auf, um alle abgerufenen Eigenschaften in das Eigenschaftsobjekt des Hostanbieters zu kopieren. 
       
-   2. Wenn das neue Objekt ein einmaliger Empfänger ist, rufen Sie die **IMAPIProp::** SetProps-Methode des Host Anbieters auf, um die folgenden Eigenschaften festzulegen: 
+   2. Wenn es sich bei dem neuen Objekt um einen einmal verwendeten Empfänger handelt, rufen Sie die **IMAPIProp::SetProps-Methode** des Hostanbieters auf, um die folgenden Eigenschaften zu setzen: 
       
-      - **PR_ADDRTYPE** ([Pidtagaddresstype (](pidtagaddresstype-canonical-property.md)) an den vom Anbieter behandelten Adresstyp.
+      - **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) an den Adresstyp an, der von Ihrem Anbieter verarbeitet wird.
         
-      - **PR\_-Vorlagen** -ID ([pidtagtemplateid (](pidtagtemplateid-canonical-property.md)) zum Vorlagenbezeichner aus den Parametern _lpTemplateID_ und _cbTemplateID_ . 
+      - **PR \_ TEMPLATEID** ([PidTagTemplateid](pidtagtemplateid-canonical-property.md)) zum Vorlagenbezeichner aus den _Parametern lpTemplateID_ und _cbTemplateID._ 
         
-      - **PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md)) an DT_MAILUSER oder DT_DISTLIST.
+      - **PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md)) zu DT_MAILUSER oder DT_DISTLIST, wenn dies der Richtige ist.
     
-5. Legen Sie den Inhalt des _lppMAPIPropNew_ -Parameters so fest, dass entweder das neue Objekt des Anbieters oder das Property-Objekt, das mit dem _lpMAPIPropData_ -Parameter übergeben wird, angegeben wird, je nachdem, ob Ihr Anbieter ein umschlossenes Objekt bestimmt. 
+5. Legen Sie den Inhalt des  _lppMAPIPropNew-Parameters_ so fest, dass er entweder auf das neue Objekt Ihres Anbieters oder auf das eigenschaftsobjekt verweisen soll, das mit dem  _lpMAPIPropData-Parameter_ übergeben wird, je nachdem, ob ihr Anbieter bestimmt, dass ein umschlossenes Objekt erforderlich ist. 
     
-6. Wenn ein kritischer Fehler auftritt, beispielsweise ein Netzwerkfehler oder eine nicht genügend Arbeitsspeicher Bedingung, geben Sie den entsprechenden Fehlerwert zurück. Dieser Wert sollte an den Client mit der entsprechenden [MAPIERROR](mapierror.md) -Struktur weitergegeben werden, eine vom Hostanbieter ausgeführte Aufgabe. 
+6. Wenn ein kritischer Fehler auftritt, z. B. ein Netzwerkfehler oder eine Nichtspeicherbedingung, geben Sie den entsprechenden Fehlerwert zurück. Dieser Wert sollte an den Client mit der entsprechenden [MAPIERROR-Struktur,](mapierror.md) einer Aufgabe, die vom Hostanbieter ausgeführt wird, verbreitet werden. 
     
 

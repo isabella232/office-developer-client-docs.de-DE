@@ -23,33 +23,33 @@ ms.locfileid: "33430133"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ein 32-Bit-Statuswert, der verwendet wird, um einen Fehler oder eine Warnung zu beschreiben. 
+Ein 32-Bit-Statuswert, der zum Beschreiben eines Fehlers oder einer Warnung verwendet wird. 
   
 ```cpp
 typedef ULONG SCODE;
 
 ```
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Der **SCODE** -Datentyp ist derselbe wie der [HRESULT](hresult.md) -Datentyp. 
+Der **SCODE-Datentyp** ist identisch mit dem [HRESULT-Datentyp.](hresult.md) 
   
-Ein **SCODE** -Wert ist in vier Felder unterteilt: 
+Ein **SCODE-Wert** ist in vier Felder unterteilt: 
   
-- Ein Single-Bit-Schweregradcode, der auf 0 festgelegt ist, um den Erfolg und 1 zum Anzeigen des Fehlers anzuzeigen.
+- Ein Ein-Bit-Schweregradcode, der auf 0 festgelegt ist, um den Erfolg anzuzeigen, und 1, um einen Fehler anzuzeigen.
     
 - Ein reserviertes 11-Bit-Feld
     
-- Ein 4-Bit-Code, der den für den Fehler oder die Warnung verantwortlichen Bereich angibt.
+- Ein 4-Bit-Einrichtungscode, der den Bereich angibt, der für den Fehler oder die Warnung verantwortlich ist.
     
 - Ein 16-Bit-Fehler oder Warnungscode, der das Problem beschreibt, das den Fehler oder die Warnung verursacht.
     
-Viele der MAPI-Funktionen und-Methoden geben **SCODE** -Werte zurück, die als **HRESULT** -Datentypen definiert sind, ebenso wie die OLE-Methoden und-Funktionen. OLE definiert mehrere Makros, die zum Konvertieren zwischen einem **SCODE** und einem **HRESULT**verwendet werden können.
+Viele der MAPI-Funktionen und -Methoden geben **SCODE-Werte** zurück, die als **HRESULT-Datentypen** definiert sind, ebenso wie die OLE-Methoden und -Funktionen. OLE definiert mehrere Makros, die zum Konvertieren zwischen einem **SCODE** und einem **HRESULT verwendet werden können.**
   
 > [!NOTE]
-> In 64-Bit-MAPI ist **SCODE** immer noch ein 32-Bit-Wert. 
+> In 64-Bit-MAPI ist **SCODE** weiterhin ein 32-Bit-Wert. 
   
-Weitere Informationen zur Verwendung des **SCODE** -Datentyps in MAPI finden Sie unter [Error Handling](error-handling-in-mapi.md). Weitere Informationen zu OLE und zum **SCODE** -Datentyp finden Sie unter *OLE Programmer es Reference* . 
+Weitere Informationen dazu, wie MAPI den **SCODE-Datentyp** verwendet, finden Sie unter [Error Handling](error-handling-in-mapi.md). Weitere Informationen zu OLE und dem **SCODE-Datentyp** finden Sie unter  *OLE Programmer's Reference*  . 
   
 ## <a name="see-also"></a>Siehe auch
 

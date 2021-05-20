@@ -1,5 +1,5 @@
 ---
-title: Kanonische Pidtagcontrolflags (-Eigenschaft
+title: PidTagControlFlags (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,13 +19,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33430882"
 ---
-# <a name="pidtagcontrolflags-canonical-property"></a>Kanonische Pidtagcontrolflags (-Eigenschaft
+# <a name="pidtagcontrolflags-canonical-property"></a>PidTagControlFlags (kanonische Eigenschaft)
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine Bitmaske von Flags, die das Verhalten eines Steuerelements steuern, das in einem von einer Anzeigetabelle erstellten Dialogfeldverwendet wird.
+Enthält eine Bitmaske mit Flags, die das Verhalten eines Steuerelements steuern, das in einem Dialogfeld verwendet wird, das aus einer Anzeigetabelle erstellt wurde.
   
 |||
 |:-----|:-----|
@@ -34,72 +34,72 @@ Enthält eine Bitmaske von Flags, die das Verhalten eines Steuerelements steuern
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Anzeigetabelle  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Mindestens eines der folgenden Flags kann für diese Eigenschaft festgelegt werden:
+Mindestens eines der folgenden Kennzeichen kann für diese Eigenschaft festgelegt werden:
   
 DT_ACCEPT_DBCS 
   
-> Das Steuerelement kann Double-Byte Character Set (DBCS)-Zeichen enthalten. Dieses Flag wird mit Bearbeitungssteuerelementen verwendet. Es ermöglicht mehr Byte-Zeichensätze.
+> Das Steuerelement kann Double-Byte Zeichensatz (Character Set, DBCS) enthalten. Dieses Flag wird mit Bearbeitungssteuerelementen verwendet. Sie ermöglicht Mehrere-Byte-Zeichensätze.
     
 DT_EDITABLE 
   
-> Das Steuerelement kann bearbeitet werden; der Wert, der dem Steuerelement zugeordnet ist, kann geändert werden. Wenn dieses Flag nicht festgelegt ist, ist das Steuerelement schreibgeschützt. Dieser Wert wird bei Bezeichnung, Gruppenfeld, Standard-Schaltflächen, mehrwertigen Dropdown-Listenfeldern und Listenfeld-Steuerelementen ignoriert.
+> Das Steuerelement kann bearbeitet werden. der dem Steuerelement zugeordnete Wert kann geändert werden. Wenn dieses Flag nicht festgelegt ist, ist das Steuerelement schreibgeschützt. Dieser Wert wird für Bezeichnungs-, Gruppenfeld-, Standard-Pushschaltfläche, mehrwertige Dropdownlistenfeld- und Listenfeldsteuerelemente ignoriert.
     
 DT_MULTILINE 
   
-> Das Bearbeitungssteuerelement kann mehrere Zeilen enthalten. Dies gibt an, dass ein Rückgabe Zeichen innerhalb des Steuerelements eingegeben werden kann. Dieses Flag ist nur für Bearbeitungssteuerelemente gültig.
+> Das Bearbeitungssteuerelement kann mehrere Zeilen enthalten. Dies bedeutet, dass innerhalb des Steuerelements ein Rückgabezeichen eingegeben werden kann. Dieses Flag ist nur für Bearbeitungssteuerelemente gültig.
     
 DT_PASSWORD_EDIT 
   
-> Gilt für Bearbeitungssteuerelemente. Das Bearbeitungssteuerelement wird wie ein Kennwort behandelt. Der Wert wird mit Sternchen angezeigt, statt die eingegebenen tatsächlichen Zeichen wiederzugeben.
+> Gilt für Bearbeitungssteuerelemente. Das Bearbeitungssteuerelement wird wie ein Kennwort behandelt. Der Wert wird mithilfe von Sternchen angezeigt, anstatt die tatsächlich eingegebenen Zeichen zu echosen.
     
 DT_REQUIRED 
   
-> Wenn das Steuerelementänderungen (DT_EDITABLE) zulässt, muss es einen Wert aufweisen, bevor [IMAPIProp:: SaveChanges](imapiprop-savechanges.md) aufgerufen wird. 
+> Wenn das Steuerelement Änderungen zulässt (DT_EDITABLE), muss es einen Wert haben, bevor [IMAPIProp::SaveChanges](imapiprop-savechanges.md) aufgerufen wird. 
     
 DT_SET_IMMEDIATE 
   
-> Ermöglicht die sofortige Einstellung eines Werts; Sobald ein Wert im Steuerelement geändert wird, ruft MAPI die setProps-Methode für die Eigenschaft auf, die diesem Steuerelement zugeordnet ist. **** Wenn dieses Flag nicht festgelegt ist, werden die Werte festgelegt, wenn das Dialogfeld geschlossen wird. 
+> Ermöglicht das sofortige Festlegen eines Werts. Sobald sich ein Wert im Steuerelement ändert, ruft MAPI die **SetProps-Methode** für die diesem Steuerelement zugeordnete Eigenschaft auf. Wenn dieses Flag nicht festgelegt ist, werden die Werte festgelegt, wenn das Dialogfeld nicht mehr angezeigt wird. 
     
 DT_SET_SELECTION 
   
-> Wenn im Listenfeld eine Auswahl vorgenommen wird, wird die Indexspalte des Listenfelds als Eigenschaft festgelegt. Wird immer mit DT_SET_IMMEDIATE verwendet.
+> Wenn innerhalb des Listenfelds eine Auswahl getroffen wird, wird die Indexspalte dieses Listenfelds als Eigenschaft festgelegt. Wird immer mit DT_SET_IMMEDIATE.
     
-Diese Eigenschaft wird im ulCtlFlags-Element der [DTCTL](dtctl.md) -Struktur eines Steuerelements gespeichert. Die meisten der Steuerelement-Flags gelten für alle Steuerelemente, die Benutzereingaben zulassen; einige wenige gelten nur für das Bearbeitungssteuerelement. Steuerelemente, die keine Benutzereingabe zulassen, beispielsweise eine Schaltfläche oder eine Bezeichnung, legen 0 für Ihre Steuerelement-Flags fest. 
+Diese Eigenschaft wird im ulCtlFlags-Element der [DTCTL-Struktur](dtctl.md) eines Steuerelements gespeichert. Die meisten Steuerelementflags gelten für alle Steuerelemente, die Benutzereingaben zulassen. einige gelten nur für das Bearbeitungssteuerelement. Steuerelemente, die keine Benutzereingaben zulassen, z. B. eine Schaltfläche oder eine Bezeichnung, legen 0 für ihre Steuerelementflags fest. 
   
-Viele der Flags-Werte sind selbsterklärend. Wenn DT_REQUIRED beispielsweise für ein Steuerelement festgelegt ist, muss es einen Wert enthalten, bevor das Dialogfeld geschlossen werden kann. Entweder kann der Dienstanbieter einen Wert über die **IMAPIProp** -Implementierung angeben, oder der Benutzer kann eine eingeben. DT_EDITABLE gibt an, dass der Wert für das Steuerelement geändert werden kann. DT_MULTILINE ermöglicht, dass der Wert für ein Bearbeitungssteuerelement mehrere Zeilen umfasst. 
+Viele der Kennzeichenwerte sind selbsterklärend. Wenn z. B. DT_REQUIRED für ein Steuerelement festgelegt ist, muss es einen Wert enthalten, bevor das Dialogfeld verworfen werden kann. Entweder kann der Dienstanbieter einen Wert über seine **IMAPIProp-Implementierung** liefern, oder der Benutzer kann einen Wert eingeben. DT_EDITABLE gibt an, dass der Wert für das Steuerelement geändert werden kann. DT_MULTILINE kann der Wert für ein Bearbeitungssteuerelement mehrere Zeilen umfassen. 
   
-Einige Steuerelement-Flags sind nicht so offensichtlich. Wenn ein Steuerelement das DT_SET_IMMEDIATE-Flag festlegt, wirken sich Änderungen an seinem Wert ab, sobald der Benutzer zu einem neuen Steuerelement wechselt. MAPI führt einen einzelnen Aufruf der [IMAPIProp::](imapiprop-setprops.md) SetProps-Methode der Property-Schnittstelle für die Eigenschaft des Steuerelements aus. Dies unterscheidet sich vom Standardverhalten, das bedeutet, dass Änderungen an den Steuerelementwerten erst wirksam werden, wenn der Benutzer die Schaltfläche **OK** auswählt oder das Dialogfeld abschließt. Das DT_SET_IMMEDIATE-Flag wird häufig in Kombination mit Anzeige Tabellen Benachrichtigungen verwendet. 
+Einige Steuerelementflags sind in ihrer Bedeutung nicht so offensichtlich. Wenn ein Steuerelement das DT_SET_IMMEDIATE, wirken sich alle Änderungen an seinem Wert aus, sobald der Benutzer zu einem neuen Steuerelement wechselt. MAPI macht einen einzelnen Aufruf der [IMAPIProp::SetProps-Methode](imapiprop-setprops.md) der Eigenschaft des Steuerelements. Dies ist anders als das Standardverhalten, bei dem Änderungen an Steuerelementwerten erst wirksam werden, wenn der Benutzer die Schaltfläche **OK** auswählt oder das Dialogfeld schließt. Das DT_SET_IMMEDIATE wird häufig in Kombination mit Anzeigetabelle Benachrichtigungen verwendet. 
   
-In der folgenden Tabelle werden die Typen von Steuerelementen und alle Flagwerte aufgelistet, die für jeden Typ festgelegt werden können.
+In der folgenden Tabelle sind die Typen von Steuerelementen und alle Kennzeichenwerte aufgeführt, die für jeden Typ festgelegt werden können.
   
 |**Control**|**Gültige Werte für diese Eigenschaft**|
 |:-----|:-----|
-|Schaltfläche  <br/> |Muss NULL sein  <br/> |
+|Schaltfläche  <br/> |Muss null sein  <br/> |
 |Kontrollkästchen  <br/> |DT_EDITABLE, DT_SET_IMMEDIATE  <br/> |
 |Kombinationsfeld  <br/> |DT_EDITABLE, DT_REQUIRED, DT_SET_IMMEDIATE  <br/> |
-|Dropdown-Listenfeld  <br/> |DT_EDITABLE, DT_SET_IMMEDIATE  <br/> |
+|Dropdownlistenfeld  <br/> |DT_EDITABLE, DT_SET_IMMEDIATE  <br/> |
 |Bearbeiten  <br/> |DT_ACCEPT_DBCS, DT_MULTILINE, DT_EDITABLE, DT_PASSWORD_EDIT, DT_REQUIRED, DT_SET_IMMEDIATE  <br/> |
-|Gruppenfeld  <br/> |Muss NULL sein  <br/> |
-|Label  <br/> |Muss NULL sein  <br/> |
-|Listenfeld  <br/> |Muss NULL sein  <br/> |
-|MehrWertiges Dropdown-Listenfeld  <br/> |Muss NULL sein  <br/> |
-|MehrWertiges Listenfeld  <br/> |Muss NULL sein  <br/> |
-|Registerkartenseite  <br/> |Muss NULL sein  <br/> |
-|Optionsfeld  <br/> |Muss NULL sein  <br/> |
+|Gruppenfeld  <br/> |Muss null sein  <br/> |
+|Bezeichnung  <br/> |Muss null sein  <br/> |
+|Listenfeld  <br/> |Muss null sein  <br/> |
+|Dropdownlistenfeld für mehrwertige Werte  <br/> |Muss null sein  <br/> |
+|Listenfeld mit mehreren Bewertungswerten  <br/> |Muss null sein  <br/> |
+|Registerkartenseite  <br/> |Muss null sein  <br/> |
+|Optionsfeld  <br/> |Muss null sein  <br/> |
    
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
-### <a name="header-files"></a>Header Dateien
+### <a name="header-files"></a>Headerdateien
 
-Mapidefs. h
+Mapidefs.h
   
-> Stellt Datentypdefinitionen bereit.
+> Bietet Datentypdefinitionen.
     
-Mapitags. h
+Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -107,9 +107,9 @@ Mapitags. h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
   
-[Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
 [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 

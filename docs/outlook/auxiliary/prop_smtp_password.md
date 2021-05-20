@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33435950"
 ---
-# <a name="propsmtppassword"></a>PROP_SMTP_PASSWORD
+# <a name="prop_smtp_password"></a>PROP_SMTP_PASSWORD
 
 Stellt das Kennwort des SMTP-Kontos dar.
   
@@ -23,9 +23,9 @@ Stellt das Kennwort des SMTP-Kontos dar.
 |||
 |:-----|:-----|
 |Kennung:  <br/> |0x0205  <br/> |
-|Eigenschafts:  <br/> |PT_UNICODE|SECURE_FLAG  <br/> |
-|Property-Tag:  <br/> |0x2058001F  <br/> |
-|Access  <br/> |Schreibgeschützt  <br/> |
+|Eigenschaftstyp:  <br/> |PT_UNICODE|SECURE_FLAG  <br/> |
+|Eigenschaftstag:  <br/> |0x2058001F  <br/> |
+|Zugriff:  <br/> |Schreibgeschützt  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

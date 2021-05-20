@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251492
 localization_priority: Normal
 ms.assetid: 122c1d30-3cb9-7e7d-b4cc-e93ab8e4da4f
-description: Führt ein Add-on oder ein Makro in einem VBA-Projekt (Microsoft Visual Basic für Applikationen) aus.
+description: Führt ein Add-On oder ein Makro in einem Microsoft Visual Basic for Applications (VBA)-Projekt aus.
 ms.openlocfilehash: 280f6eaf1e5db045d8c1d22965df00960d188112
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,11 +18,11 @@ ms.locfileid: "33432009"
 ---
 # <a name="runaddon-function"></a>RUNADDON Function
 
-Führt ein Add-on oder ein Makro in einem VBA-Projekt (Microsoft Visual Basic für Applikationen) aus. 
+Führt ein Add-On oder ein Makro in einem Microsoft Visual Basic for Applications (VBA)-Projekt aus. 
   
 ## <a name="syntax"></a>Syntax
 
-RUNADDON (" *String* ") 
+RUNADDON(" *string*  ") 
   
 ### <a name="parameters"></a>Parameter
 
@@ -30,13 +30,13 @@ RUNADDON (" *String* ")
 |:-----|:-----|:-----|:-----|
 | _Zeichenfolge_ <br/> |Erforderlich  <br/> |**String** <br/> | Der Name eines Add-Ons in der **Addons**-Auflistung oder ein Makro in einem VBA-Projekt.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn das Projekt des Dokuments, das den RUNADDON-Funktionsaufruf enthält (oder ein anderes Projekt, auf das verwiesen wird), kein Makro (eine Prozedur ohne Argumente) mit dem Namen _String_hat, führt Microsoft Visio das Add-on mit dem Namen _String_aus. Wenn kein Add-on mit dem Namen _String_ gefunden werden kann, wird in Visio nichts ausgeführt, und es wird kein Fehler gemeldet. (Sie können mit der **TraceFlags**-Eigenschaft die Prozeduren und Add-Ons überwachen, die Visio versucht auszuführen.) 
+Wenn das Projekt des Dokuments, das den RUNADDON-Funktionsaufruf enthält (oder ein anderes Projekt, auf das verwiesen wird), kein Makro (eine Prozedur ohne Argumente) mit der Zeichenfolge _hat,_ führt Microsoft Visio die benannte Add-On-Zeichenfolge _aus._ Wenn keine benannte  Add-On-Zeichenfolge gefunden werden kann, führt Visio nichts aus und meldet keinen Fehler. (Sie können mit der **TraceFlags**-Eigenschaft die Prozeduren und Add-Ons überwachen, die Visio versucht auszuführen.) 
   
-Wenn Sie eine Prozedur in einem Standardmodul aufrufen, empfiehlt es sich, der Zeichenfolge den Modulnamen voranzustellen, der die Prozedur enthält (beispielsweise *ModuleName. procName*), da mehrere Module eine Prozedur mit demselben Namen aufweisen können. 
+Wenn Sie eine Prozedur in einem Standardmodul aufrufen, wird empfohlen, der Zeichenfolge den Modulnamen voran zu geben, der die Prozedur enthält (z. B.  *moduleName.procName*), da mehrere Module eine Prozedur mit demselben Namen haben können. 
   
-Wenn Sie eine Prozedur in einem anderen Projekt als dem Projekt des Dokuments aufrufen möchten, das den RUNADDON-Funktionsaufruf enthält, verwenden Sie die Syntax *ProjName. modName. procName* (Sie müssen explizit einen Verweis auf *ProjName* in Ihrem VBA-Projekt festgelegt haben). 
+Verwenden Sie zum Aufrufen einer Prozedur in einem anderen Projekt als dem Projekt des Dokuments, das den RUNADDON-Funktionsaufruf enthält, die Syntax  *projName.modName.procName*  (Sie müssen in Ihrem #A0 explizit einen Verweis auf  *projName*  festgelegt haben). 
   
 > [!NOTE]
 >  Ab Visio 2002 kann die RUNADDON-Funktion keine Zeichenfolgen mit beliebigem VBA-Code ausführen. Code, der früher an die RUNADDON-Funktion übergeben wurde, kann in eine Prozedur im VBA-Projekt eines Dokuments verschoben werden, das aus der RUNADDON-Funktion aufgerufen wird. 
@@ -47,9 +47,9 @@ In früheren Visio-Versionen wird diese Funktion in der Form _RUNADDON geschrieb
   
 ## <a name="example-1"></a>Beispiel 1
 
-RUNADDON ("Calendar. exe")
+RUNADDON("Calendar.exe")
   
-Startet ein Add-on mit dem Namen Calendar. exe.
+Startet ein Add-On namens Calendar.exe.
   
 ## <a name="example-2"></a>Beispiel 2
 
@@ -59,17 +59,17 @@ Startet das (VSL-implementierte) Add-On Shapes anordnen.
   
 ## <a name="example-3"></a>Beispiel 3
 
-RUNADDON ("ThisDocument. das ReportStatistics")
+RUNADDON("ThisDocument.ReportStatistics")
   
-Ruft das das ReportStatistics-Makro im **ThisDocument** -Modul im Dokumentprojekt mit diesem Funktionsaufruf auf. 
+Ruft das Makro ReportStatistics im **ThisDocument-Modul** im Dokumentprojekt auf, das diesen Funktionsaufruf enthält. 
   
 > [!NOTE]
 >  Zum Aufrufen eines Makros im Modul **ThisDocument** müssen Sie der Zeichenfolge wie dargestellt "ThisDocument" voranstellen. 
   
-## <a name="example-4"></a>Example 4
+## <a name="example-4"></a>Beispiel 4
 
-RUNADDON (" *ModuleName* ". Das ReportStatistics ") 
+RUNADDON(" *ModuleName*  . ReportStatistics") 
   
-Ruft das das ReportStatistics-Makro ** in Modulname im Dokumentprojekt auf, das diesen Funktionsaufruf enthält. 
+Ruft das ReportStatistics-Makro in ModuleName im Dokumentprojekt  *auf,*  das diesen Funktionsaufruf enthält. 
   
 

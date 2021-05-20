@@ -25,26 +25,26 @@ Legt fest, wie ein platzierbares Shape auf dem Zeichenblatt gekippt und/oder ged
 |0  <br/> |Zeichenblattstandard verwenden:  <br/> |**visLOFlipDefault** <br/> |
 |1  <br/> |Horizontal kippen.  <br/> |**visLOFlipX** <br/> |
 |2  <br/> |Vertikal kippen.  <br/> |**visLOFlipY** <br/> |
-|4  <br/> |In 90-Grad-Schritten zwischen 0 und 270 kippen.  <br/> |**visLOFlipRotate** <br/> |
-|8  <br/> |Nicht kippen.  <br/> |**visLOFlipNone** <br/> |
+|4   <br/> |In 90-Grad-Schritten zwischen 0 und 270 kippen.  <br/> |**visLOFlipRotate** <br/> |
+|8   <br/> |Nicht kippen.  <br/> |**visLOFlipNone** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Der Wert in der Zelle ShapePlaceFlip hilft bei der Ausrichtung eines platzierbaren Shapes in Richtung des nächsten platzierbaren Shapes, mit dem es verbunden ist.
   
-Wenn Sie dieses Verhalten für *alle* Formen auf dem Zeichenblatt festlegen möchten, verwenden Sie die Zelle Zelle placeflip im Abschnitt Seiten Layout. 
+Verwenden Sie zum Festlegen dieses Verhaltens für  *alle*  Formen auf dem Zeichenblatt die Zelle PlaceFlip im Abschnitt Seitenlayout. 
   
-Wenn Sie einen Verweis auf die Zelle ShapePlaceFlip aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle ShapePlaceFlip anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |ShapePlaceFlip  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ShapePlaceFlip aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die ShapePlaceFlip-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowShapeLayout** <br/> |
 |Zellenindex:  <br/> |**visSLOPlaceFlip** <br/> |
    

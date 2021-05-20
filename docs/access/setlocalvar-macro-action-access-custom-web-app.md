@@ -22,7 +22,7 @@ Mit der **FestlegenLokaleVar**-Aktion erstellen Sie eine temporäre Variable und
 > Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 > [!NOTE]
-> Die **SetLocalVar** -Aktion ist nur in datenmakros verfügbar. 
+> Die **SetLocalVar-Aktion** ist nur in Datenmakros verfügbar. 
   
 ## <a name="setting"></a>Einstellung
 

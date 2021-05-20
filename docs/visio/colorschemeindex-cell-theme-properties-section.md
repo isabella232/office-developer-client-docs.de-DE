@@ -1,12 +1,12 @@
 ---
-title: ColorSchemeIndex Cell (Theme Properties section)
+title: Zelle "ColorSchemeIndex" (Abschnitt "Theme Properties")
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: fb84f71e-59c4-43d4-a28b-c3d6f267d2ae
-description: Bestimmt den Index des Designs, nach dem das Farbschema des Shapes stattfindet, als ganze Zahl.
+description: Bestimmt den Index des Designs, nach dem das Farbschema des Shapes folgt, als ganze Zahl.
 ms.openlocfilehash: d67363b48454a717914b8ff9e39952609d848118
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -14,23 +14,23 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33430763"
 ---
-# <a name="colorschemeindex-cell-theme-properties-section"></a>ColorSchemeIndex Cell (Theme Properties section)
+# <a name="colorschemeindex-cell-theme-properties-section"></a>Zelle "ColorSchemeIndex" (Abschnitt "Theme Properties")
 
-Bestimmt den Index des Designs, nach dem das Farbschema des Shapes stattfindet, als ganze Zahl.
+Bestimmt den Index des Designs, nach dem das Farbschema des Shapes folgt, als ganze Zahl.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle **ColorSchemeIndex** aus einer anderen Formel, nach dem Wert des **N** -Attributs eines **Cell** -Elements oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die **Zelle ColorSchemeIndex** anhand des Namens aus einer anderen Formel, nach dem Wert des **N-Attributs** eines **Cell-Elements** oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | ColorSchemeIndex  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle **ColorSchemeIndex** aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Um einen Verweis auf die **ColorSchemeIndex-Zelle nach Index** aus einem Programm zu erhalten, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowThemeProperties** <br/> |
 | Zellenindex:  <br/> |**visColorSchemeIndex** <br/> |
    

@@ -21,9 +21,9 @@ ms.locfileid: "33431281"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Lokale Formularbibliotheken werden direkt auf dem Computer eines Benutzers gespeichert, normalerweise in einer Datei namens FRMCACHE. DAT. 
+Lokale Formularbibliotheken werden direkt auf dem Computer eines Benutzers gespeichert, in der Regel in einer Datei namens FRMCACHE.DAT. 
   
-Client Anwendungen können auf Formulare in der lokalen Formularbibliothek zugreifen, ohne auf Netzwerkressourcen zuzugreifen. Lokale Formularbibliotheken stellen eine Ausnahme von der Regel dar, dass Formulare in verknüpften Inhaltstabellen gespeichert werden, da es sich bei der lokalen Formularbibliothek einfach um eine Datei auf dem Datenträger handelt, die nicht Teil einer MAPI-Ordnerhierarchie ist.
+Clientanwendungen können auf Formulare in der lokalen Formularbibliothek zugreifen, ohne auf Netzwerkressourcen zu zugreifen. Lokale Formularbibliotheken sind eine Ausnahme von der Regel, dass Formulare in zugeordneten Inhaltstabellen gespeichert werden, da die lokale Formularbibliothek einfach eine Datei auf dem Datenträger ist, die nicht Teil einer MAPI-Ordnerhierarchie ist.
   
 ## <a name="see-also"></a>Siehe auch
 

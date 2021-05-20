@@ -25,7 +25,7 @@ ms.locfileid: "33428228"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Registriert den Anrufer so, dass er Benachrichtigungen über angegebene Ereignisse erhält, die sich auf einen Container, einen Messagingbenutzer oder eine Verteilerliste auswirken.
+Registriert den Anrufer, um Benachrichtigungen über angegebene Ereignisse zu erhalten, die sich auf einen Container, einen Messagingbenutzer oder eine Verteilerliste auswirken.
   
 ```cpp
 HRESULT Advise(
@@ -41,17 +41,17 @@ HRESULT Advise(
 
  _cbEntryID_
   
-> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpEntryID_ -Parameter verwiesen wird. 
+> [in] Die Anzahl der Bytes in der Eintrags-ID, auf die der  _lpEntryID-Parameter_ verweist. 
     
  _lpEntryID_
   
-> in Ein Zeiger auf die Eintrags-ID des Objekts, über das Benachrichtigungen generiert werden sollen.
+> [in] Ein Zeiger auf den Eintragsbezeichner des Objekts, über das Benachrichtigungen generiert werden sollen.
     
  _ulEventMask_
   
-> in Eine Bitmaske von Werten, die die Typen von Benachrichtigungsereignissen angibt, an denen der Anrufer interessiert ist, und die in die Registrierung aufgenommen werden sollen. Jeder Art von Ereignis [](notification.md) , das Informationen über das Ereignis enthält, ist eine entsprechende Benachrichtigungsstruktur zugeordnet. In der folgenden Tabelle sind die gültigen Werte für den _ulEventMask_ -Parameter und die jedem Wert zugeordneten Strukturen aufgeführt. 
+> [in] Eine Bitmaske mit Werten, die die Arten von Benachrichtigungsereignissen angibt, die der Anrufer interessiert und in die Registrierung einbezogen werden sollte. Jedem Ereignistyp ist eine entsprechende [NOTIFICATION-Struktur](notification.md) zugeordnet, die Informationen zum Ereignis enthält. In der folgenden Tabelle sind die gültigen Werte für den  _ulEventMask-Parameter_ und die strukturen aufgeführt, die jedem Wert zugeordnet sind. 
     
-|**Benachrichtigungs Ereignistyp**|**Entsprechende **Benachrichtigungs** Struktur**|
+|**Benachrichtigungsereignistyp**|**Entsprechende **BENACHRICHTIGUNGsstruktur****|
 |:-----|:-----|
 |**fnevCriticalError** <br/> |[ERROR_NOTIFICATION](error_notification.md) <br/> |
 |**fnevObjectCreated** <br/> |[OBJECT_NOTIFICATION](object_notification.md) <br/> |
@@ -62,41 +62,41 @@ HRESULT Advise(
    
  _lpAdviseSink_
   
-> in Ein Zeiger auf ein Advise-Senke-Objekt, um die nachfolgenden Benachrichtigungen zu empfangen.
+> [in] Ein Zeiger auf ein Advise Sink-Objekt, um die nachfolgenden Benachrichtigungen zu erhalten.
     
  _lpulConnection_
   
-> Out Ein Zeiger auf einen Wert ungleich NULL, der die Benachrichtigungs Registrierung darstellt.
+> [out] Ein Zeiger auf einen Wert ungleich Null, der die Benachrichtigungsregistrierung darstellt.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Benachrichtigungs Registrierung war erfolgreich.
+> Die Benachrichtigungsregistrierung war erfolgreich.
     
 MAPI_E_INVALID_ENTRYID 
   
-> Die im _lpEntryID_ -Parameter übergebene Eintrags-ID weist nicht das entsprechende Format auf. 
+> Der im  _lpEntryID-Parameter_ übergebene Eintragsbezeichner hat nicht das entsprechende Format. 
     
 MAPI_E_NO_SUPPORT 
   
-> Der Adressbuchanbieter unterstützt keine Benachrichtigung, da möglicherweise keine Änderungen an den Objekten vorgenommen werden können.
+> Der Adressbuchanbieter unterstützt keine Benachrichtigung, möglicherweise, weil er keine Änderungen an seinen Objekten zu lässt.
     
 MAPI_E_UNKNOWN_ENTRYID 
   
-> Der Adressbuchanbieter kann den in _lpEntryID_übergebenen Eintragsbezeichner nicht verarbeiten.
+> Der Adressbuchanbieter kann die in  _lpEntryID_ übergebene Eintrags-ID nicht verarbeiten.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Adressbuchanbieter implementieren die **IABLogon:: Advise** -Methode, um den Anrufer zu registrieren, der benachrichtigt werden soll, wenn eine Änderung an einem Objekt in einem ihrer Container erfolgt. Anrufer können sich für Benachrichtigungen zu Messaging Benutzern, Verteilerlisten oder ganzen Containern registrieren. 
+Adressbuchanbieter implementieren die **IABLogon::Advise-Methode,** um den Anrufer zu registrieren, der benachrichtigt wird, wenn eine Änderung an einem Objekt in einem ihrer Container auftritt. Anrufer können sich für Benachrichtigungen zu Messagingbenutzern, Verteilerlisten oder ganzen Containern registrieren. 
   
-Clients rufen in der Regel die [IAddrBook:: Advise](iaddrbook-advise.md) -Methode auf, um Adressbuch Benachrichtigungen zu registrieren. Anschließend ruft MAPI die **Advise** -Methode des Adressbuch Anbieters auf, der für das durch den Eintragsbezeichner in _lpEntryID_dargestellte Objekt zuständig ist.
+Clients rufen in der Regel die [IAddrBook::Advise-Methode auf, um](iaddrbook-advise.md) sich für Adressbuchbenachrichtigungen zu registrieren. MAPI ruft dann die **Advise-Methode** des Adressbuchanbieters auf, der für das Objekt verantwortlich ist, das durch den Eintragsbezeichner in _lpEntryID dargestellt wird._
   
-Wenn eine Änderung an dem angegebenen Objekt des in _ulEventMask_dargestellten Typs erfolgt, wird ein Aufruf an die OnNotify-Methode der Advise-Senke durch _lpAdviseSink_verwiesen. **** Die Daten, die **** in der Benachrichtigungsstruktur an die OnNotify-Routine übergeben werden, beschreiben das Ereignis. **** 
+Wenn eine Änderung am angegebenen Objekt des typs auftritt, der in  _ulEventMask_ dargestellt wird, wird ein Aufruf der **OnNotify-Methode** der Ratensenke vorgenommen, auf die  _von lpAdviseSink_ verwiesen wird. Daten, die in der **NOTIFICATION-Struktur** an die **OnNotify-Routine** übergeben werden, beschreiben das Ereignis. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Sie können Benachrichtigungen mit oder ohne Hilfe von MAPI unterstützen. MAPI verfügt über drei Support Objektmethoden, mit denen Dienstanbieter Benachrichtigungen implementieren können:
+Sie können Benachrichtigungen mit oder ohne Hilfe von MAPI unterstützen. MAPI verfügt über drei Unterstützungsobjektmethoden, mit deren Hilfe Dienstanbieter Benachrichtigungen implementieren können:
   
 - [IMAPISupport::Subscribe](imapisupport-subscribe.md)
     
@@ -104,19 +104,19 @@ Sie können Benachrichtigungen mit oder ohne Hilfe von MAPI unterstützen. MAPI 
     
 - [IMAPISupport::Notify](imapisupport-notify.md)
     
-Wenn Sie die MAPI-Supportmethoden verwenden möchten, rufen Sie **subscribe** auf, wenn Ihre **Advise** -Methode aufgerufen wird, und geben Sie den _lpAdviseSink_ -Zeiger frei. 
+Wenn Sie die MAPI-Supportmethoden verwenden möchten, rufen Sie **Subscribe** auf, wenn Ihre **Advise-Methode** aufgerufen wird, und geben Sie den  _lpAdviseSink-Zeiger_ frei. 
   
-Wenn Sie sich für die Unterstützung der Benachrichtigung entscheiden, rufen Sie die **AddRef** -Methode der durch den _lpAdviseSink_ -Parameter dargestellten Advise-Senke auf, um eine Kopie dieses Zeigers aufzubewahren. Bewahren Sie diese Kopie auf, bis die [IABLogon:: Unadvise](iablogon-unadvise.md) -Methode aufgerufen wird, um die Registrierung abzubrechen. 
+Wenn Sie die Benachrichtigung selbst unterstützen möchten, rufen Sie die **AddRef-Methode** der Durchwahlsenke auf, die durch den  _lpAdviseSink-Parameter_ dargestellt wird, um eine Kopie dieses Zeigers zu behalten. Bewahren Sie diese Kopie auf, bis Ihre [IABLogon::Unadvise-Methode](iablogon-unadvise.md) aufgerufen wird, um die Registrierung abbricht. 
   
-Unabhängig davon, wie Sie die Benachrichtigung unterstützen, weisen Sie der Benachrichtigungs Registrierung eine unGleich NULL-Verbindung zu und geben Sie im _lpulConnection_ -Parameter zurück. Geben Sie diese Verbindungsnummer erst frei, **** wenn die Unadvise-Methode aufgerufen wurde. 
+Weisen Sie unabhängig davon, wie Sie die Benachrichtigung unterstützen, der Benachrichtigungsregistrierung eine Verbindungsnummer ungleich Null zu, und geben Sie sie im  _lpulConnection-Parameter_ zurück. Geben Sie diese Verbindungsnummer erst frei, wenn die **Unadvise-Methode** aufgerufen wurde. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Der Advise-Senke-Zeiger, den Sie im _lpAdviseSink_ -Parameter an **Advise** übergeben, kann auf ein Objekt verweisen, das Sie erstellt haben oder die MAPI über die [HrThisThreadAdviseSink](hrthisthreadadvisesink.md) -Funktion erstellt hat. Möglicherweise möchten Sie **HrThisThreadAdviseSink** verwenden, wenn Sie mehrere Threads der Ausführung unterstützen und sicher sein möchten, dass nachfolgende **** Aufrufe an Ihre OnNotify-Methode zu einem geeigneten Zeitpunkt in einem entsprechenden Thread stattfinden. 
+Der Hinweissenkenzeiger, den Sie im  _lpAdviseSink-Parameter_ **an Advise** übergeben, kann auf ein Objekt verweisen, das Sie erstellt haben oder das MAPI über die [HrThisThreadAdviseSink-Funktion](hrthisthreadadvisesink.md) erstellt hat. Möglicherweise sollten Sie **HrThisThreadAdviseSink** verwenden, wenn Sie mehrere Ausführungsthreads unterstützen und sicherstellen möchten, dass nachfolgende Aufrufe ihrer **OnNotify-Methode** zu einem geeigneten Zeitpunkt in einem geeigneten Thread erfolgen. 
   
-Bereiten Sie sich darauf vor, dass Ihr Advise-Senke-Objekt jederzeit nach dem Anruf zur **Beratung** und vor dem Aufruf von Unadvise freigegeben werden kann. **** Daher sollten Sie Ihr Advise-Senke-Objekt nach der Rückgabe von **Advise** freigeben, es sei denn, Sie haben eine bestimmte langfristige Verwendung dafür. 
+Bereiten Sie sich darauf vor, dass Ihr Advise Sink-Objekt jederzeit nach Ihrem Aufruf von **Advise** und vor Ihrem Anruf bei **Unadvise** freigegeben wird. Daher sollten Sie Ihr Advise Sink-Objekt nach der Rückgabe von **Advise** frei geben, es sei denn, Sie haben eine bestimmte langfristige Verwendung dafür. 
   
-Weitere Informationen zum Benachrichtigungsprozess finden Sie unter [Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md). Informationen zur Verwendung der **IMAPISupport** -Methoden zur Unterstützung von Benachrichtigungen finden Sie unter [unterstützende Ereignisbenachrichtigung](supporting-event-notification.md). Weitere Informationen zu Multithreading und MAPI finden Sie unter [Threading in MAPI](threading-in-mapi.md).
+Weitere Informationen zum Benachrichtigungsprozess finden Sie unter [Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md). Informationen zur Verwendung der **IMAPISupport-Methoden** zur Unterstützung von Benachrichtigungen finden Sie unter [Supporting Event Notification](supporting-event-notification.md). Weitere Informationen zu Multithreading und MAPI finden Sie unter [Threading in MAPI](threading-in-mapi.md).
   
 ## <a name="see-also"></a>Siehe auch
 

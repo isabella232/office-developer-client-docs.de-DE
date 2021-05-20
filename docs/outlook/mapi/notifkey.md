@@ -25,11 +25,11 @@ ms.locfileid: "33429628"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Identifiziert eindeutig eine Verbindung zwischen einer Advise-Senke, einer Advise-Quelle und MAPI.
+Identifiziert eindeutig eine Verbindung zwischen einer Ratensenke, einer Ratenquelle und MAPI.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapispi. h  <br/> |
+|Headerdatei  <br/> |Mapispi.h  <br/> |
    
 ```cpp
 typedef struct
@@ -40,27 +40,27 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cb**
   
-> Die Anzahl der Bytes im **ab** -Element. 
+> Anzahl der Bytes im **ab-Element.** 
     
  **ab**
   
-> Bytearray, das den Benachrichtigungs Schlüssel beschreibt.
+> Array von Bytes, die den Benachrichtigungsschlüssel beschreiben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die [subscribe](imapisupport-subscribe.md) -und [Notify](imapisupport-notify.md) -Methoden von [IMAPISupport](imapisupportiunknown.md) verwenden die **NOTIFKEY** -Struktur, um Benachrichtigungen für die entsprechende Advise-Quelle zu generieren. 
+Die [Subscribe-](imapisupport-subscribe.md) und [Notify-Methoden](imapisupport-notify.md) von [IMAPISupport](imapisupportiunknown.md) verwenden die **NOTIFKEY-Struktur,** um Benachrichtigungen an die entsprechende Ratensenke über die entsprechende Informationsquelle zu generieren. 
   
-Dienstanbieter generieren Benachrichtigungs Schlüssel, wenn Ihre **Advise** -Methode aufgerufen wird, und Sie möchten **abonnieren** aufrufen, um die Benachrichtigungs Registrierung und das anschließende Senden von Benachrichtigungen zu behandeln. Ein Benachrichtigungs Schlüssel kann die Eintrags-ID der Advise-Quelle oder ein beliebiges anderes identifizierendes Element wie eine Konstante sein. Beispielsweise kann ein Nachrichtenspeicher Anbieter den Pfad eines Ordners als Benachrichtigungs Schlüssel verwenden. 
+Dienstanbieter generieren Benachrichtigungsschlüssel, wenn ihre **Advise-Methode** aufgerufen wird, und sie möchten **Subscribe** aufrufen, um die Benachrichtigungsregistrierung und das nachfolgende Senden von Benachrichtigungen zu verarbeiten. Ein Benachrichtigungsschlüssel kann der Eintragsbezeichner der Beratenden Quelle oder ein anderes identifizierendes Element wie eine Konstante sein. Beispielsweise kann ein Nachrichtenspeicheranbieter den Pfad eines Ordners als Benachrichtigungsschlüssel verwenden. 
   
-Der Benachrichtigungs Schlüssel sollte über mehrere Prozesse hinweg funktionieren. 
+Der Benachrichtigungsschlüssel sollte über mehrere Prozesse hinweg funktionieren. 
   
-Die Bereichsanforderungen für einen Benachrichtigungs Schlüssel ähneln denen für eine langfristige Eintrags-ID. Anders als bei einer Eintrags-ID muss ein Benachrichtigungs Schlüssel jedoch Binär-vergleichbar sein. In der Regel enthält ein Benachrichtigungs Schlüssel einen vom Dienstanbieter definierten **GUID** -Wert, gefolgt von anderen anbieterspezifischen Informationen, die für das Objekt eindeutig sind. 
+Die Bereichsanforderungen für einen Benachrichtigungsschlüssel ähneln denen für eine langfristige Eintrags-ID. Im Gegensatz zu einem Eintragsbezeichner muss ein Benachrichtigungsschlüssel jedoch binär vergleichbar sein. In der Regel enthält ein Benachrichtigungsschlüssel einen vom Dienstanbieter definierten **GUID-Wert,** gefolgt von anderen anbieterspezifischen Informationen, die für das Objekt eindeutig sind. 
   
-Eine Erläuterung der Verwendung der **NOTIFKEY** -Struktur zum Verwalten der Verbindungen zwischen den Advise-Senken und den Objekten, die die Benachrichtigungen generieren, finden Sie unter [unterstützende Ereignisbenachrichtigung](supporting-event-notification.md). 
+Eine Diskussion über die Verwendung der **NOTIFKEY-Struktur** zum Verwalten der Verbindungen zwischen den Ratensenken und den Objekten, die die Benachrichtigungen generieren, finden Sie unter [Supporting Event Notification](supporting-event-notification.md). 
   
 ## <a name="see-also"></a>Siehe auch
 

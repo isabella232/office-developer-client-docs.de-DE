@@ -24,22 +24,22 @@ Legt die Methode fest, anhand derer die Zeichnung vor Erstellen des Layouts anal
 |:-----|:-----|:-----|
 | 0  <br/> | Zeichenblattstandard  <br/> |**visPLOPlaceDepthDefault** <br/> |
 | 1  <br/> | Mittel  <br/> |**visPLOPlaceDepthMedium** <br/> |
-| 2  <br/> | Tiefe  <br/> |**visPLOPlaceDepthDeep** <br/> |
-| 3  <br/> | Flache  <br/> |**visPLOPlaceDepthShallow** <br/> |
+| 2  <br/> | Deep  <br/> |**visPLOPlaceDepthDeep** <br/> |
+| 3  <br/> | Flach  <br/> |**visPLOPlaceDepthShallow** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle Zelle PlaceDepth aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle PlaceDepth anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Zelle PlaceDepth  <br/> |
+| Zellenname:  <br/> | PlaceDepth  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle PlaceDepth aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die PlaceDepth-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowPageLayout** <br/> |
 | Zellenindex:  <br/> |**visPLOPlaceDepth** <br/> |
    

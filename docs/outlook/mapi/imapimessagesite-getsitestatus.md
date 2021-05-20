@@ -25,7 +25,7 @@ ms.locfileid: "33430126"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt Informationen aus einem Nachrichtenwebsite Objekt über die Funktionen der Nachrichtenwebsite für die aktuelle Nachricht zurück.
+Gibt Informationen von einem Nachrichtenwebsiteobjekt zu den Funktionen der Nachrichtenwebsite für die aktuelle Nachricht zurück.
   
 ```cpp
 HRESULT GetSiteStatus(
@@ -37,7 +37,7 @@ HRESULT GetSiteStatus(
 
  _lpulStatus_
   
-> Out Ein Zeiger auf eine Bitmaske von Flags, die Informationen zum Status der Nachricht bereitstellt. Die folgenden Flags können festgelegt werden:
+> [out] Ein Zeiger auf eine Bitmaske mit Flags, die Informationen zum Nachrichtenstatus enthält. Die folgenden Kennzeichen können festgelegt werden:
     
 VCSTATUS_COPY 
   
@@ -49,7 +49,7 @@ VCSTATUS_DELETE
     
 VCSTATUS_DELETE_IS_MOVE 
   
-> Nach dem Löschen wird eine Nachricht in einen Ordner " **Gelöschte Elemente** " im Nachrichtenspeicher verschoben, anstatt Sie sofort aus dem Nachrichtenspeicher zu entfernen. 
+> Beim Löschen wird eine Nachricht in einen Ordner **"Gelöschte** Elemente" im Nachrichtenspeicher verschoben, anstatt sofort aus dem Nachrichtenspeicher entfernt zu werden. 
     
 VCSTATUS_MOVE 
   
@@ -73,15 +73,15 @@ S_OK
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Formularobjekte rufen die **IMAPIMessageSite:: GetSiteStatus** -Methode auf, um die Funktionen des Nachrichtenwebsite Objekts für die aktuelle Nachricht abzurufen. Die im Parameter _lpulStatus_ zurückgegebenen Flags enthalten Informationen zur Nachrichtenwebsite. In der Regel aktiviert oder deaktiviert ein Formular Menübefehle, je nachdem, welche Informationen die Flags über die Funktionen der Nachrichtenwebsite Implementierung bereitstellen. Wenn eine neue Nachricht von der [IPersistMessage:: SaveCompleted](ipersistmessage-savecompleted.md) -Methode oder der [IPersistMessage:: Laden](ipersistmessage-load.md) -Methode in ein Formular geladen wird, müssen die Status-Flags überprüft werden. Bei einigen Nachrichtenwebsite Objekten, insbesondere schreibgeschützten Objekten, können keine Nachrichten gespeichert oder gelöscht werden. 
+Form-Objekte rufen die **IMAPIMessageSite::GetSiteStatus-Methode** auf, um die Funktionen des Nachrichtenwebsiteobjekts für die aktuelle Nachricht zu erhalten. Die im  _lpulStatus-Parameter_ zurückgegebenen Flags enthalten Informationen zur Nachrichtenwebsite. In der Regel aktiviert oder deaktiviert ein Formular Menübefehle, abhängig von den Informationen, die die Flags zu den Funktionen der Nachrichtenwebsiteimplementierung bereitstellen. Wenn eine neue Nachricht von der [IPersistMessage::SaveCompleted-Methode](ipersistmessage-savecompleted.md) oder der [IPersistMessage::Load-Methode](ipersistmessage-load.md) in ein Formular geladen wird, müssen die Statusflags überprüft werden. Einige Nachrichtenwebsiteobjekte, insbesondere schreibgeschützte Objekte, lassen das Speichern oder Löschen von Nachrichten nicht zu. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Die **IMAPIMessageSite:: GetSiteStatus** -Methode erfordert möglicherweise eine Berechnung der Clientanwendung, um zu bestimmen, welche Vorgänge für die aktuelle Nachricht ausgeführt werden können. In der Regel müssen Sie sich die Statuszeile des Nachrichtenspeicher Anbieters der aktuellen Nachricht ansehen oder den Speicheranbieter Abfragen, um zu bestimmen, welche Aktionen die Clientanwendung mithilfe des Nachrichtenspeichers ausführen kann. Um beispielsweise zu bestimmen, ob das MAPI_DELETE_IS_MOVE-Flag zurückgegeben werden soll, überprüfen Sie die **PR_IPM_WASTEBASKET_ENTRYID** ([pidtagipmwastebasketentryid (](pidtagipmwastebasketentryid-canonical-property.md))-Eigenschaft des Nachrichtenspeicher Objekts, um festzustellen, ob ein Ordner " **Gelöschte Elemente** " in der Nachrichtenspeicher. 
+Die **IMAPIMessageSite::GetSiteStatus-Methode** erfordert möglicherweise, dass die Clientanwendung eine Berechnung vor sich hat, um zu bestimmen, welche Vorgänge für die aktuelle Nachricht ausgeführt werden können oder nicht. In der Regel umfasst dies das Überprüfen der Statuszeile für den Nachrichtenspeicheranbieter der aktuellen Nachricht oder das Abfragen des Speicheranbieters, um zu bestimmen, welche Aktionen die Clientanwendung mithilfe des Nachrichtenspeichers ausführen kann. Um z. B. zu ermitteln, ob das flag MAPI_DELETE_IS_MOVE zurückgeben soll, überprüfen Sie die **PR_IPM_WASTEBASKET_ENTRYID** ([PidTagIpmWastebasketEntryId](pidtagipmwastebasketentryid-canonical-property.md))-Eigenschaft des Nachrichtenspeicherobjekts, um festzustellen, ob im Nachrichtenspeicher ein Ordner **"Gelöschte** Elemente" enthalten ist. 
   
-Eine Liste der Schnittstellen im Zusammenhang mit Formular Servern finden Sie unter [MAPI-Formular Schnittstellen](mapi-form-interfaces.md).
+Eine Liste der Schnittstellen im Zusammenhang mit Formularservern finden Sie unter [MAPI Form Interfaces](mapi-form-interfaces.md).
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -89,7 +89,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer. cpp  <br/> |CMyMAPIFormViewer:: GetSiteStatus  <br/> |MFCMAPI verwendet die **IMAPIMessageSite:: GetSiteStatus** -Methode, um den Status der angegebenen Website abzurufen. Es kann VCSTATUS_NEW_MESSAGE, VCSTATUS_SAVE oder VCSTATUS_SUBMIT zurückgeben.  <br/> |
+|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::GetSiteStatus  <br/> |MFCMAPI verwendet die **IMAPIMessageSite::GetSiteStatus-Methode,** um den Status der angegebenen Website zu erhalten. Es kann VCSTATUS_NEW_MESSAGE, VCSTATUS_SAVE oder VCSTATUS_SUBMIT.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -99,12 +99,12 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 [IPersistMessage::SaveCompleted](ipersistmessage-savecompleted.md)
   
-[Kanonische Pidtagipmwastebasketentryid (-Eigenschaft](pidtagipmwastebasketentryid-canonical-property.md)
+[PidTagIpmWastebasketEntryId (kanonische Eigenschaft)](pidtagipmwastebasketentryid-canonical-property.md)
   
 [IMAPIMessageSite : IUnknown](imapimessagesiteiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
-[MAPI-Formular Schnittstellen](mapi-form-interfaces.md)
+[MAPI-Formularschnittstellen](mapi-form-interfaces.md)
 

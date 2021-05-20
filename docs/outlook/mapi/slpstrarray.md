@@ -25,11 +25,11 @@ ms.locfileid: "33435908"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von String-Werten, die zum Beschreiben einer Eigenschaft vom Typ PT_MV_STRING8 verwendet werden.
+Enthält ein Array von Zeichenfolgenwerten, die zum Beschreiben einer Eigenschaft vom Typ PT_MV_STRING8.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SLPSTRArray
@@ -40,19 +40,19 @@ typedef struct _SLPSTRArray
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cValues**
   
-> Die Anzahl der Werte im Array, auf die durch das **lppszA** -Element verwiesen wird. 
+> Anzahl der Werte im Array, auf das das **lppszA-Element** verweist. 
     
  **lppszA**
   
-> Zeiger auf ein Array von NULL-beendeten 8-Bit-Zeichenfolgen.
+> Zeiger auf ein Array mit 8-Bit-Zeichenfolgen mit Nullen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Weitere Informationen zu PT_MV_STRING8 finden Sie unter [Liste der Eigenschaftstypen](property-types.md).
+Weitere Informationen zu PT_MV_STRING8 finden Sie unter [List of Property Types](property-types.md).
   
 ## <a name="see-also"></a>Siehe auch
 

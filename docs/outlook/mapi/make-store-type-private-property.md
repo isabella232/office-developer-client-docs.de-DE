@@ -1,5 +1,5 @@
 ---
-title: Speichertyp als private Eigenschaft festlegen
+title: Make Store Type Private Property
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33428543"
 ---
-# <a name="make-store-type-private-property"></a>Speichertyp als private Eigenschaft festlegen
+# <a name="make-store-type-private-property"></a>Make Store Type Private Property
 
   
   
@@ -31,28 +31,28 @@ Behandelt einen sekundären Speicher als privat.
 
 |||
 |:-----|:-----|
-|Verfügbar unter:  <br/> |[IMsgStore: IMAPIProp](imsgstoreimapiprop.md) -Objekt  <br/> |
-|Erstellt von:  <br/> |Speicheranbieter  <br/> |
+|Verfügbar gemacht für:  <br/> |[IMsgStore : IMAPIProp-Objekt](imsgstoreimapiprop.md)  <br/> |
+|Erstellt von:  <br/> |Store Anbieter  <br/> |
 |Zugriff durch:  <br/> |Outlook und andere Clients  <br/> |
-|Eigenschafts:  <br/> |PT_BOOLEAN  <br/> |
+|Eigenschaftstyp:  <br/> |PT_BOOLEAN  <br/> |
 |Zugriffstyp:  <br/> |Lesen/Schreiben  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Um eine der Store-Funktionen bereitzustellen, muss der Informationsspeicher Anbieter [IMsgStore: IMAPIProp](imsgstoreimapiprop.md) implementieren und ein gültiges Property-Tag für eine dieser Eigenschaften zurückgeben, die an einen [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) -Aufruf übergeben werden. Wenn das Property-Tag für eine dieser Eigenschaften an [IMAPIProp::](imapiprop-getprops.md)GetProps übergeben wird, muss der Informationsspeicher Anbieter auch den richtigen Eigenschaftswert zurückgeben. Speicheranbieter können [HrGetOneProp](hrgetoneprop.md) und [HrSetOneProp](hrsetoneprop.md) aufrufen, um diese Eigenschaften abzurufen oder festzulegen. 
+Um eine der Speicherfunktionen bereitzustellen, muss der Speicheranbieter [IMsgStore : IMAPIProp](imsgstoreimapiprop.md) implementieren und ein gültiges Eigenschaftstag für eine dieser Eigenschaften zurückgeben, die an einen [IMAPIProp::GetIDsFromNames-Aufruf](imapiprop-getidsfromnames.md) übergeben werden. Wenn das Eigenschaftstag für eine dieser Eigenschaften an [IMAPIProp::GetProps](imapiprop-getprops.md)übergeben wird, muss der Speicheranbieter auch den richtigen Eigenschaftswert zurückgeben. Store können [HrGetOneProp](hrgetoneprop.md) und [HrSetOneProp](hrsetoneprop.md) aufrufen, um diese Eigenschaften zu erhalten oder zu festlegen. 
   
-Um den Wert dieser Eigenschaft abzurufen, sollte der Client zuerst [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md) verwenden, um das Property-Tag abzurufen, und dann dieses Property-Tag in [IMAPIProp::](imapiprop-getprops.md) GetProps angeben, um den Wert abzurufen. Geben Sie beim Aufrufen von [IMAPIProp:: GetIDsFromNames](imapiprop-getidsfromnames.md)die folgenden Werte für die [MAPINAMEID](mapinameid.md) -Struktur an, auf die durch den Eingabeparameter _lppPropNames_verwiesen wird:
+Zum Abrufen des Werts dieser Eigenschaft sollte der Client zunächst [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) verwenden, um das Eigenschaftstag abzurufen, und dann dieses Eigenschaftstag in [IMAPIProp::GetProps](imapiprop-getprops.md) angeben, um den Wert abzurufen. Geben Sie beim Aufrufen von [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)die folgenden Werte für die [MAPINAMEID-Struktur](mapinameid.md) an, auf die der Eingabeparameter _lppPropNames verweist:_
   
 |||
 |:-----|:-----|
 |lpGuid:  <br/> |PS_PUBLIC_STRINGS  <br/> |
 |ulKind:  <br/> |MNID_STRING  <br/> |
-|Art. lpwstrName:  <br/> |L "urn: Schemas-Microsoft-com: Office: Outlook # storetypeprivate"  <br/> |
+|Kind.lpwstrName:  <br/> |L"urn:schemas-microsoft-com:office:outlook#storetypeprivate"  <br/> |
    
-Ein Informationsspeicher Anbieter kann diese Eigenschaft verwenden, damit Outlook Sie als private behandelt, wenn es sich um einen sekundären Speicher für einen Benutzer handelt. 
+Ein Speicheranbieter kann diese Eigenschaft verwenden, um Outlook als privat zu behandeln, wenn es sich um einen sekundären Speicher für einen Benutzer handelt. 
   
-Standardmäßig behandelt Outlook einen sekundären Speicher auf dieselbe Weise wie ein Stellvertreter Speicher, und Elemente im sekundären Speicher sind nur dann privat, wenn der Benutzer Sie ausdrücklich als privat kennzeichnet. Wenn diese Eigenschaft auf **true**festgelegt ist, werden aus einem sekundären Speicher gelöschte Elemente in den Ordner **Gelöschte Elemente** im primären Speicher verschoben. Als privat gekennzeichnete Elemente werden nicht angezeigt. Entwürfe werden im Ordner "Entwürfe" im primären Speicher gespeichert. 
+Standardmäßig behandelt Outlook einen sekundären Speicher auf die gleiche Weise wie ein Stellvertretungsspeicher, und Elemente im sekundären Speicher sind nur dann privat, wenn der Benutzer sie speziell als privat kennzeichnet. Wenn diese Eigenschaft **true ist,** werden elemente, die aus einem sekundären Speicher gelöscht wurden, in den Ordner **Gelöschte** Elemente im primären Speicher verschoben. Als privat markierte Elemente werden nicht angezeigt. Entwürfe werden im Ordner Entwürfe im primären Speicher gespeichert. 
   
-Diese Eigenschaft wird ignoriert, wenn die Version von Outlook älter als Microsoft Office Outlook 2003 Service Pack 1 ist, oder wenn der Wert **false**ist.
+Diese Eigenschaft wird ignoriert, wenn die Version von Outlook vor Microsoft Office Outlook 2003 Service Pack 1 liegt oder wenn ihr Wert **false ist.**
   
 

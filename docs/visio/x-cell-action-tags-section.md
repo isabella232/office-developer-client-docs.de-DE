@@ -8,7 +8,7 @@ f1_keywords:
 - vis_sdr.chm60093
 localization_priority: Normal
 ms.assetid: d13e362b-9b69-30c5-003a-9c5df2aa29f6
-description: Die x-Koordinate in den lokalen Koordinaten des Shapes, um die sich die Schaltfläche Aktionstag befindet.
+description: Die x-Koordinatenposition in den lokalen Koordinaten des Shapes, um die sich die Aktionstagschaltfläche befindet.
 ms.openlocfilehash: 9f26bec81563c9813a88ed5c69730266834ee101
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,27 +18,27 @@ ms.locfileid: "33431113"
 ---
 # <a name="x-cell-action-tags-section"></a>Zelle "X" (Abschnitt "Action Tags")
 
-Die *x* -Koordinate in den lokalen Koordinaten des Shapes, um die sich die Schaltfläche Aktionstag befindet. 
+Die  x-Koordinatenposition in den lokalen Koordinaten des Shapes, um die sich die Aktionstagschaltfläche befindet. 
   
 > [!NOTE]
 > In früheren Versionen von Microsoft Visio werden Aktionstags als Smarttags bezeichnet. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Die Zellen X und Y definieren einen Punkt in den lokalen Koordinaten des Shapes, und die Zellen X Justify und Y Justify definieren, wo die Schaltfläche Aktionstag in Bezug auf diesen Punkt platziert werden soll. 
   
-Wenn Sie einen Verweis auf die Zelle X aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle X anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> |Smarttags. *Name* . X, wobei SmartTags. *Name* ist der Name der Zeile mit dem Aktionstag.  <br/> |
+| Zellenname:  <br/> |SmartTags. *Name*  . X, wobei SmartTags. *Name*  ist der Name der Aktionstagzeile  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle X aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die X-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionSmartTag** <br/> |
-| Zeilenindex:  <br/> |**visRowSmartTag** +  *i* , wobei *i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowSmartTag**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
 | Zellenindex:  <br/> |**visSmartTagX** <br/> |
    
 

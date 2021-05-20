@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 31004aec-7bd2-6e12-83eb-1a32da121c54
-description: Sucht nach einem Eigenschaftswert.
+description: Sucht ein Konto nach Eigenschaftswert.
 ms.openlocfilehash: d09bce88413f85ee3ccc332c3cb88bb545a0ccaf
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.locfileid: "33428802"
 ---
 # <a name="iolkaccountmanagerfindaccount"></a>IOlkAccountManager::FindAccount
 
-Sucht nach einem Eigenschaftswert.
+Sucht ein Konto nach Eigenschaftswert.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -34,15 +34,15 @@ HRESULT IOlkAccountManager::FindAccount (
 
 _dwProp_
   
-> in Die Eigenschaft, nach der gesucht werden soll. Muss [PROP_ACCT_ID](prop_acct_id.md) oder [PROP_ACCT_IS_EXCH](prop_acct_is_exch.md)sein.
+> [in] Die Zu durchsuchende Eigenschaft. Muss [PROP_ACCT_ID](prop_acct_id.md) [oder](prop_acct_is_exch.md)PROP_ACCT_IS_EXCH sein.
     
 _pVar_
   
-> in Der Wert, der abgeglichen werden soll.
+> [in] Der wert, der übereinstimmen soll.
     
 _ppAccount_
   
-> Out Das Konto wurde gefunden. Dieses Objekt unterstützt eine [IOlkAccount](iolkaccount.md) -Schnittstelle. 
+> [out] Das gefundene Konto. Dieses Objekt unterstützt eine [IOlkAccount-Schnittstelle.](iolkaccount.md) 
     
 ## <a name="return-values"></a>Rückgabewerte
 

@@ -25,14 +25,14 @@ ms.locfileid: "33428515"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Stellt Methoden zum Kapseln von MAPI-Eigenschaften bereit, die von einem Messagingsystem nicht in binäre Streams unterstützt werden, die an Nachrichten angefügt werden können. Das für diese Kapselung verwendete Format ist das Transport neutrale Encapsulation Format (TNEF). Der Ziel Transportanbieter oder die MAPI-basierte Clientanwendung kann dann beim Empfang einer Nachricht, die eine TNEF-Anlage enthält, die Eigenschaften aus der Anlage wiederherstellen.
+Stellt Methoden zum Kapseln von MAPI-Eigenschaften zur Verfügung, die von einem Messagingsystem nicht unterstützt werden, in binäre Datenströme, die an Nachrichten angefügt werden können. Das für diese Kapselung verwendete Format ist das Transport-Neutral Encapsulation Format (TNEF). Der Zieltransportanbieter oder die MAPI-basierte Clientanwendung kann dann beim Empfangen einer Nachricht, die eine TNEF-Anlage enthält, die Eigenschaften aus der Anlage wiederherstellen.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |TNEF. h  <br/> |
+|Headerdatei  <br/> |Tnef.h  <br/> |
 |Verf�gbar gemacht von:  <br/> |TNEF-Objekte  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Transport Anbieter, Nachrichtenspeicher Anbieter und Gateways  <br/> |
+|Aufgerufen von:  <br/> |Transportanbieter, Nachrichtenspeicheranbieter und Gateways  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_ITNEF  <br/> |
 |Zeigertyp:  <br/> |LPTNEF  <br/> |
    
@@ -42,11 +42,11 @@ Stellt Methoden zum Kapseln von MAPI-Eigenschaften bereit, die von einem Messagi
 |:-----|:-----|
 |[AddProps](itnef-addprops.md) <br/> |Ermöglicht dem aufrufenden Dienstanbieter oder Gateway das Hinzufügen von Eigenschaften zur Kapselung einer Nachricht oder Anlage.  <br/> |
 |[ExtractProps](itnef-extractprops.md) <br/> |Extrahiert die Eigenschaften aus einer TNEF-Kapselung.  <br/> |
-|[Finish](itnef-finish.md) <br/> |Die Verarbeitung für alle in der Warteschlange befindlichen TNEF-Vorgänge wird abgeschlossen.  <br/> |
-|[OpenTaggedBody](itnef-opentaggedbody.md) <br/> |Öffnet eine Stream-Schnittstelle für den Text einer gekapselte Nachricht.  <br/> |
-|[SetProps](itnef-setprops.md) <br/> |Legt den Wert einer oder mehrerer Eigenschaften für eine gekapselte Nachricht oder Anlage fest, ohne die ursprüngliche Nachricht oder Anlage zu ändern.  <br/> |
+|[Finish](itnef-finish.md) <br/> |Beendet die Verarbeitung für alle TNEF-Vorgänge, die in die Warteschlange eingereiht und gewartet werden.  <br/> |
+|[OpenTaggedBody](itnef-opentaggedbody.md) <br/> |Öffnet eine Streamschnittstelle für den Text einer gekapselten Nachricht.  <br/> |
+|[SetProps](itnef-setprops.md) <br/> |Legt den Wert einer oder mehreren Eigenschaften für eine gekapselte Nachricht oder Anlage fest, ohne die ursprüngliche Nachricht oder Anlage zu ändern.  <br/> |
 |[EncodeRecips](itnef-encoderecips.md) <br/> |Codiert eine Ansicht für die Empfängertabelle einer Nachricht im TNEF-Datenstrom für die Nachricht.  <br/> |
-|[FinishComponent](itnef-finishcomponent.md) <br/> |Verarbeitet einzelne Komponenten aus einer Nachricht nacheinander in einem TNEF-Stream.  <br/> |
+|[FinishComponent](itnef-finishcomponent.md) <br/> |Verarbeitet einzelne Komponenten aus einer Nachricht einzeln in einen TNEF-Stream.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

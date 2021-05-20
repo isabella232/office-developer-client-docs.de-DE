@@ -25,11 +25,11 @@ ms.locfileid: "33431470"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Stellt eine Methode zum Anmelden an einem Adressbuchanbieter-Objekt und eine Methode zum Auflösen eines Adressbuchanbieter-Objekts bereit.
+Stellt eine Methode zum Anmelden bei einem Adressbuchanbieterobjekt und eine Methode zum Ungültigen eines Adressbuchanbieterobjekts zur Wahl.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapispi. h  <br/> |
+|Headerdatei  <br/> |Mapispi.h  <br/> |
 |Verf�gbar gemacht von:  <br/> |Adressbuchanbieter-Objekte  <br/> |
 |Implementiert von:  <br/> |Adressbuchanbieter  <br/> |
 |Aufgerufen von:  <br/> |MAPI  <br/> |
@@ -40,8 +40,8 @@ Stellt eine Methode zum Anmelden an einem Adressbuchanbieter-Objekt und eine Met
 
 |||
 |:-----|:-----|
-|[Logon](iabprovider-logon.md) <br/> |Stellt eine Verbindung mit einer aktiven Sitzung her.  <br/> |
-|[Herunterfahren](iabprovider-shutdown.md) <br/> |Bricht eine Verbindung mit einer aktiven Sitzung ab.  <br/> |
+|[Logon](iabprovider-logon.md) <br/> |Stellt eine Verbindung mit einer aktiven Sitzung fest.  <br/> |
+|[Shutdown](iabprovider-shutdown.md) <br/> |Bricht eine Verbindung zu einer aktiven Sitzung ab.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

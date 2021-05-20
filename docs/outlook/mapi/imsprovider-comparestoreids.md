@@ -25,7 +25,7 @@ ms.locfileid: "33431708"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Vergleicht zwei Nachrichtenspeicher Eintrags-IDs, um zu bestimmen, ob Sie auf dasselbe Store-Objekt verweisen.
+Vergleicht zwei Nachrichtenspeichereintragsbezeichner, um zu bestimmen, ob sie auf dasselbe Speicherobjekt verweisen.
   
 ```cpp
 HRESULT CompareStoreIDs(
@@ -42,19 +42,19 @@ HRESULT CompareStoreIDs(
 
  _cbEntryID1_
   
-> in Die Größe der Eintrags-ID, auf die durch den _lpEntryID1_ -Parameter verwiesen wird, in Bytes _._
+> [in] Die Größe des Eintragsbezeichners in Bytes, auf den der  _lpEntryID1-Parameter_  _verweist._
     
  _lpEntryID1_
   
-> in Ein Zeiger auf den ersten zu vergleichenden Eintragsbezeichner.
+> [in] Ein Zeiger auf die erste Zutritts-ID, die verglichen werden soll.
     
  _cbEntryID2_
   
-> in Die Größe der Eintrags-ID, auf die durch den _lpEntryID2_ -Parameter verwiesen wird, in Bytes _._
+> [in] Die Größe des Eintragsbezeichners in Bytes, auf den der  _lpEntryID2-Parameter_  _verweist._
     
  _lpEntryID2_
   
-> in Ein Zeiger auf die zweite Eintrags-ID, die verglichen werden soll.
+> [in] Ein Zeiger auf den zweiten Eintragsbezeichner, der verglichen werden soll.
     
  _ulFlags_
   
@@ -62,7 +62,7 @@ HRESULT CompareStoreIDs(
     
  _lpulResult_
   
-> Out Ein Zeiger auf das zurückgegebene Ergebnis des Vergleichs. TRUE, wenn die beiden Eintragsbezeichner auf dasselbe Objekt verweisen, andernfalls false. andernfalls FALSE.
+> [out] Ein Zeiger auf das zurückgegebene Ergebnis des Vergleichs. TRUE, wenn die beiden Eintragsbezeichner auf dasselbe Objekt verweisen. Andernfalls FALSE.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -70,13 +70,13 @@ S_OK
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-MAPI Ruft die **IMSProvider:: CompareStoreIDs** -Methode auf, wenn ein Aufruf der [IMAPISession:: OpenMsgStore](imapisession-openmsgstore.md) -Methode verarbeitet wird. **CompareStoreIDs** wird an dieser Stelle aufgerufen, um zu bestimmen, welcher Profil Abschnitt, falls vorhanden, dem zu öffnenden Nachrichtenspeicher zugeordnet ist. Ein **CompareStoreIDs** -Aufruf kann vorgenommen werden, wenn kein Nachrichtenspeicher für einen bestimmten Speicheranbieter geöffnet ist. Außerdem ruft MAPI **CompareStoreIDs** auf, wenn ein Speicheranbieter Aufruf an die [IMAPISupport:: OpenProfileSection](imapisupport-openprofilesection.md) -Methode verarbeitet wird. 
+MAPI ruft die **IMSProvider::CompareStoreIDs-Methode** auf, wenn sie einen Aufruf der [IMAPISession::OpenMsgStore-Methode](imapisession-openmsgstore.md) verarbeitet. **CompareStoreIDs wird** an dieser Stelle aufgerufen, um zu bestimmen, welcher Profilabschnitt dem geöffneten Nachrichtenspeicher zugeordnet ist. Ein **CompareStoreIDs-Aufruf** kann vorgenommen werden, wenn keine Nachrichtenspeicher für einen bestimmten Speicheranbieter geöffnet sind. Darüber hinaus ruft MAPI **compareStoreIDs** auf, wenn ein Speicheranbieteraufruf an die [IMAPISupport::OpenProfileSection-Methode verarbeitet](imapisupport-openprofilesection.md) wird. 
   
-Die Eintrags-IDs, die von **CompareStoreIDs** verglichen werden, sind sowohl für die Dynamic Link Library (dll) des aktuellen Speicheranbieters als auch für unwrappede Speicher Eintrags-IDs. Weitere Informationen zum Einbinden von Speicher Eintrags Bezeichnern finden Sie unter [IMAPISupport:: WrapStoreEntryID](imapisupport-wrapstoreentryid.md).
+Die mit **CompareStoreIDs** verglichenen Eintrags-IDs sind sowohl für die Dynamic-Link Library (DLL) des aktuellen Speicheranbieters als auch für die entpackten Speichereintrags-IDs. Weitere Informationen zum Umbruch von Speichereintragsbezeichnern finden Sie unter [IMAPISupport::WrapStoreEntryID](imapisupport-wrapstoreentryid.md).
   
-Das Vergleichen von Eintrags Bezeichnern ist nützlich, da ein Objekt mehrere gültige Eintragsbezeichner aufweisen kann. Dies kann beispielsweise der Fall sein, nachdem eine neue Version eines Nachrichtenspeicher Anbieters installiert wurde. 
+Das Vergleichen von Eintragsbezeichnern ist nützlich, da ein Objekt mehr als einen gültigen Eintragsbezeichner enthalten kann. Dies kann beispielsweise auftreten, nachdem eine neue Version eines Nachrichtenspeicheranbieters installiert wurde. 
   
 ## <a name="see-also"></a>Siehe auch
 

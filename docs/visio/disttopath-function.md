@@ -25,23 +25,23 @@ Hinzugefügte Version: Visio 2010
   
 ## <a name="syntax"></a>Syntax
 
-DISTTOPATH (* * *section* * *, * * *x* * *, * * *y* * *) 
+DISTTOPATH(** *Section* **, ** *x* **, ** *y* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _section_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Abschnitt "Geometrie", der den Pfad darstellt, angegeben mit einer Referenz auf dessen Zelle "Path" (z. B. Geometrie1.Path).  <br/> |
-| _x_ <br/> |Erforderlich  <br/> |**Double** <br/> |Die _x_-Koordinate des Punkts.  <br/> |
-| _y_ <br/> |Erforderlich  <br/> |**Double** <br/> |Die _y_-Koordinate des Punkts.  <br/> |
+| _x_ <br/> |Erforderlich  <br/> |**Double** <br/> |Die x-Koordinate des Punkts.  <br/> |
+| _y_ <br/> |Erforderlich  <br/> |**Double** <br/> |Die y-Koordinate des Punkts.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
  **Double**
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Microsoft Visio gibt #REF! Wenn _section_ nicht vorhanden ist. 
+Microsoft Visio gibt #REF! wenn  _der Abschnitt_ nicht vorhanden ist. 
   
 Der Rückgabewert ist positiv, wenn sich der Punkt links der Laufrichtung befindet; er ist positiv, wenn sich der Punkt rechts der Laufrichtung befindet.
   

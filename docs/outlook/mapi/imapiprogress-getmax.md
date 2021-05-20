@@ -25,7 +25,7 @@ ms.locfileid: "33436202"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt die maximale Anzahl von Elementen in dem Vorgang zurück, für die Statusinformationen angezeigt werden.
+Gibt die maximale Anzahl von Elementen im Vorgang zurück, für die Statusinformationen angezeigt werden.
   
 ```cpp
 HRESULT GetMax(
@@ -37,25 +37,25 @@ HRESULT GetMax(
 
  _lpulMax_
   
-> Out Ein Zeiger auf die maximale Anzahl von Elementen in dem Vorgang.
+> [out] Ein Zeiger auf die maximale Anzahl von Elementen im Vorgang.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die maximale Anzahl von Elementen in dem Vorgang wurde abgerufen.
+> Die maximale Anzahl von Elementen im Vorgang wurde abgerufen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Der Maximalwert stellt das Ende des Vorgangs in numerischer Form dar. Der Wert kann ein globaler Maximalwert sein, der verwendet wird, um den Umfang der gesamten Statusanzeige darzustellen, oder ein lokaler Wert, der zum Darstellen eines Teils der Anzeige verwendet wird. 
   
-Der Wert der Flag-Einstellung wirkt sich darauf aus, ob das Progress-Objekt den Maximalwert auf "lokal" oder "Global" versteht. Wenn das MAPI_TOP_LEVEL-Flag festgelegt ist, wird der Höchstwert als Global betrachtet und zum Berechnen des Fortschritts für den gesamten Vorgang verwendet. Wenn MAPI_TOP_LEVEL nicht festgelegt ist, wird der Maximalwert als lokal betrachtet, und die Anbieter verwenden ihn intern, um den Fortschritt für unter Objekte auf niedrigerer Ebene anzuzeigen. Progress-Objekte speichern den lokalen Maximalwert nur, um ihn über einen **GetMax** -Aufruf an einen Anbieter zurückzugeben. 
+Der Wert der Kennzeicheneinstellung wirkt sich darauf aus, ob das progress-Objekt den maximalen Wert als lokal oder global versteht. Wenn das MAPI_TOP_LEVEL festgelegt ist, wird der maximal zulässige Wert als global betrachtet und zum Berechnen des Fortschritts für den gesamten Vorgang verwendet. Wenn MAPI_TOP_LEVEL festgelegt ist, wird der maximal zulässige Wert als lokal betrachtet, und Anbieter verwenden ihn intern, um den Fortschritt für Unterobjekte auf niedrigerer Ebene anzeigen zu können. Progress-Objekte speichern den lokalen Maximalwert nur, um ihn über einen **GetMax-Aufruf** an einen Anbieter zurückzukehren. 
   
 Weitere Informationen dazu, wie und wann Statusobjekte aufgerufen werden, finden Sie unter [Anzeigen einer Statusanzeige](how-to-display-a-progress-indicator.md).
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Initialisieren Sie den Höchstwert auf 1000. Dienstanbieter können diesen Wert durch Aufrufen der [IMAPIProgress::SetLimits](imapiprogress-setlimits.md)-Methode zurücksetzen. Weitere Informationen zum Implementieren von **GetMax** und den anderen [IMAPIProgress](imapiprogressiunknown.md) -Methoden finden Sie unter [Implementieren einer Statusanzeige](implementing-a-progress-indicator.md).
+Initialisieren Sie den Maximalwert auf 1000. Dienstanbieter können diesen Wert durch Aufrufen der [IMAPIProgress::SetLimits](imapiprogress-setlimits.md)-Methode zurücksetzen. Weitere Informationen zum Implementieren von **GetMax** und den anderen [IMAPIProgress-Methoden](imapiprogressiunknown.md) finden Sie unter [Implementing a Progress Indicator](implementing-a-progress-indicator.md).
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -63,7 +63,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Kommentar**|
 |:-----|:-----|:-----|
-|MAPIProgress.cpp  <br/> |CMAPIProgress:: GetMax  <br/> |MFCMAPI verwendet die **IMAPIProgress:: GetMax** -Methode, um den Maximalwert für das Progress-Objekt abzurufen. Gibt 1000 zurück, es sei denn, es wurden zuvor Werte mit der **IMAPIProgress::** setlimits-Methode festgelegt.  <br/> |
+|MAPIProgress.cpp  <br/> |CMAPIProgress::GetMax  <br/> |MFCMAPI verwendet die **IMAPIProgress::GetMax-Methode,** um den maximalen Wert für das Progress-Objekt zu erhalten. Gibt 1000 zurück, es sei denn, mit der **IMAPIProgress::SetLimits-Methode** wurden zuvor Grenzwerte festgelegt.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

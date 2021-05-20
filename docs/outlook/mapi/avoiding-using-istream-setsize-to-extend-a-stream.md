@@ -1,5 +1,5 @@
 ---
-title: Vermeiden der Verwendung von IStreamSetSize zum Erweitern eines Streams
+title: Vermeiden der Verwendung von IStreamSetSize zum Erweitern eines Datenstroms
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,12 +15,12 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33428914"
 ---
-# <a name="avoiding-using-istreamsetsize-to-extend-a-stream"></a>Vermeiden der Verwendung von IStream:: SetSize zum Erweitern eines Streams
+# <a name="avoiding-using-istreamsetsize-to-extend-a-stream"></a>Vermeiden der Verwendung von IStream::SetSize zum Erweitern eines Datenstroms
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beim Schreiben in Streams ist es manchmal erforderlich, Sie zu vergrößern, da ihre anfängliche Größe nicht mehr ausreicht. Verwenden Sie die OLE-Methode **IStream:: Write** anstelle von **IStream:: SetSize**. **IStream:: Write** erweitert den Stream automatisch, sodass * * IStream:: SetSize * * nicht erforderlich ist. Das Aufrufen von **IStream:: Write** ohne **IStream:: SetSize** kann bis zu dreimal schneller sein als das Ausführen des SetSize-Aufrufs vor dem **Schreiben**. ****
+Beim Schreiben in Datenströme ist es manchmal erforderlich, sie zu vergrößern, da ihre Anfangsgröße nicht mehr ausreicht. Verwenden Sie die **OLE-Methode IStream::Write,** um dies zu erreichen, anstatt **IStream::SetSize**. **IStream::Write** erweitert den Datenstrom automatisch und macht ** IStream::SetSize ** unnötig. Das **Aufrufen von IStream::Write** ohne **IStream::SetSize** kann bis zu dreimal schneller sein als der **SetSize-Aufruf** vor **Write**.
   
 

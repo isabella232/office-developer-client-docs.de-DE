@@ -19,9 +19,9 @@ ms.locfileid: "33430476"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gateway-zuzuordnende-Eigenschaften sind Eigenschaften, die beim Senden von einer Messaging Domäne an eine andere Übersetzung erfordern. Die MAPI-zuzuordnende-Eigenschaften ermöglichen es, dass Nachrichten Informationen enthält, die ein Gateway erfordern, um sicherzustellen, dass das Ziel Messagingsystem Sie ordnungsgemäß verwendet. Obwohl Gateway-Entwickler diese Übersetzungsfunktion nicht bereitstellen müssen, sollten Sie die zuzuordnende-Eigenschaften als Gelegenheit zur Verbesserung der Verarbeitung von Nachrichteninhalten berücksichtigen.
+Gateway-mappable-Eigenschaften sind Eigenschaften, die eine Übersetzung erfordern, wenn sie von einer Messagingdomäne in eine andere gesendet werden. Die Gateway-Mappable-Eigenschaften von MAPI ermöglichen es Nachrichten, Informationen zu enthalten, für die ein Gateway erforderlich ist, um sicherzustellen, dass das Zielnachrichtensystem es ordnungsgemäß verwendet. Obwohl Gatewayentwickler diese Übersetzungsfunktion nicht bereitstellen müssen, sollten sie Gateway-mappable-Eigenschaften als Möglichkeit zur Verbesserung der Behandlung von Nachrichteninhalten betrachten.
   
-MAPI gibt fünf Typen von Gateway-zuzuordnende-Eigenschaften an:
+MAPI gibt fünf Typen von Gateway-mappable-Eigenschaften an:
   
 - Distinguished Name (DN)
     
@@ -31,15 +31,15 @@ MAPI gibt fünf Typen von Gateway-zuzuordnende-Eigenschaften an:
     
 - Eintrags-ID
     
-- Suchschlüssel
+- Suchtaste
     
-Hierbei handelt es sich um den Satz von Adressierungs Eigenschaften, die Empfängern, Absendern, Berichts Empfängern und Delegierten Absendern und Empfängern zugeordnet sind. Um dem Client zu helfen, diese Eigenschaften so zu definieren, dass er Sie speziell behandelt, gibt MAPI eine Benennungskonvention mit benannten Eigenschaften und Eigenschaftensätzen an. Es sind fünf Eigenschaftensätze vorhanden, die benannte Eigenschaften enthalten, die Adressierungs Eigenschaften, die zugeordnet werden müssen. Für jeden zuzuordnende-Eigenschafts ist ein Eigenschaftensatz vorhanden. Die Eigenschaftensätze, in denen diese benannten Adressierungs Einstellungen gespeichert werden, lauten wie folgt.
+Dies ist der Satz von Adressierungseigenschaften, die Empfängern, Absendern, Berichtsempfängern und delegierten Absendern und Empfängern zugeordnet sind. Damit Der Client diese Eigenschaften so definieren kann, dass sie von einem Gateway speziell behandelt werden, gibt MAPI eine Benennungskonvention mit benannten Eigenschaften und Eigenschaftensätzen an. Es sind fünf Eigenschaftensätze vorhanden, die benannte Eigenschaften enthalten, die Adressierungseigenschaften, die eine Zuordnung erfordern. Für jeden Typ von mappable-Eigenschaft ist eine Eigenschaft festgelegt. Die Eigenschaftensätze, die diese benannten Adressierungseigenschaften enthalten, sind wie folgt.
   
 |**Eigenschaftensatz**|**Beschreibung**|
 |:-----|:-----|
 |PS_ROUTING_DISPLAY_NAME  <br/> |Enthält Zeichenfolgeneigenschaften, die als Anzeigenamen verwendet werden.  <br/> |
-|PS_ROUTING_EMAIL_ADDRESSES  <br/> |Enthält Zeichenfolgeneigenschaften, die als e-Mail-Adressen verwendet werden.  <br/> |
-|PS_ROUTING_ADDRTYPE  <br/> |Enthält Zeichenfolgeneigenschaften, die als e-Mail-Adresstypen verwendet werden.  <br/> |
+|PS_ROUTING_EMAIL_ADDRESSES  <br/> |Enthält Zeichenfolgeneigenschaften, die als E-Mail-Adressen verwendet werden.  <br/> |
+|PS_ROUTING_ADDRTYPE  <br/> |Enthält Zeichenfolgeneigenschaften, die als E-Mail-Adresstypen verwendet werden.  <br/> |
 |PS_ROUTING_ENTRYID  <br/> |Enthält binäre Eigenschaften, die als langfristige Eintragsbezeichner verwendet werden.  <br/> |
 |PS_ROUTING_SEARCH_KEY  <br/> |Enthält binäre Eigenschaften, die als Suchschlüssel verwendet werden.  <br/> |
    

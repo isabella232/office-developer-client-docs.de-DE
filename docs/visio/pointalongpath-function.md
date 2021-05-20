@@ -25,28 +25,28 @@ Hinzugefügte Version: Visio 2010
   
 ## <a name="syntax"></a>Syntax
 
-POINTALONGPATH (* * *section* * *, * * *Reise* * * * * *[, Offset]* * * * * *[, Segment]* * *) 
+POINTALONGPATH(** *Section* **, ** *travel* ** *** [,offset]* ** ** *[,segment]* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _section_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Abschnitt "Geometrie", der den Pfad darstellt, angegeben mit einer Referenz auf dessen Zelle "Path" (z. B. Geometrie1.Path).  <br/> |
-| _Reise_ <br/> |Erforderlich  <br/> |**Double** <br/> |Der Prozentsatz entlang des durchlaufenen Pfads vom Anfangs- zum Endpunkt, der den Punkt bezeichnet. Muss zwischen 0 und 1 liegen.  <br/> |
-| _Offset_ <br/> |Optional  <br/> |**Double** <br/> |Der Abstand, um den der Punkt vom Pfad abgesetzt ist. Weitere Informationen finden Sie unter "Anmerkungen".  <br/> |
-| _Segment_ <br/> |Optional  <br/> |**Integer** <br/> |Das auf 1 basierende Segment des Pfads, in dem die Koordinaten berechnet werden sollen.  <br/> |
+| _reise_ <br/> |Erforderlich  <br/> |**Double** <br/> |Der Prozentsatz entlang des durchlaufenen Pfads vom Anfangs- zum Endpunkt, der den Punkt bezeichnet. Muss zwischen 0 und 1 liegen.  <br/> |
+| _offset_ <br/> |Optional  <br/> |**Double** <br/> |Der Abstand, um den der Punkt vom Pfad abgesetzt ist. Weitere Informationen finden Sie unter "Anmerkungen".  <br/> |
+| _segment_ <br/> |Optional  <br/> |**Integer** <br/> |Das auf 1 basierende Segment des Pfads, in dem die Koordinaten berechnet werden sollen.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
  **Point**
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn _section_ oder _Segment_ nicht vorhanden ist, gibt Microsoft Visio #REF! zurück. 
+Wenn _kein Abschnitt_ oder _Segment_ vorhanden ist, gibt Microsoft Visio #REF! zurück. 
   
-Positive *Offset* Werte geben Punkte links von der Fahrtrichtung an. 
+Positive  *Offsetwerte*  geben Punkte links von der Reiserichtung an. 
   
-Negative *Offset* Werte geben die Punkte rechts neben der Fahrtrichtung an. 
+Negative  *Offsetwerte*  geben Punkte rechts neben der Reiserichtung an. 
   
 Ein **Point** steht für ein geordnetes Paar geometrischer Koordinaten (*x,y*) als einzelner Wert. 
   

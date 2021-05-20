@@ -1,5 +1,5 @@
 ---
-title: MAPI-Transportanbieter Objekte
+title: OBJEKTE des MAPI-Transportanbieters
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,17 +15,17 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33430357"
 ---
-# <a name="mapi-transport-provider-objects"></a>MAPI-Transportanbieter Objekte
+# <a name="mapi-transport-provider-objects"></a>OBJEKTE des MAPI-Transportanbieters
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Zusätzlich zu den Standardanbieter-und anmeldeobjekten, die von allen Dienstanbietern implementiert werden, müssen Transportanbieter ein Status-Objekt implementieren. Für die anderen Dienstanbieter Typen ist die Implementierung eines Status-Objekts optional. MAPI ist jedoch für Transportanbieter erforderlich. Transport Anbieter, die das Herunterladen von Nachrichtenkopfzeilen von einem Remoteserver unterstützen, implementieren auch einen Ordner und eine Tabelle. 
+Zusätzlich zu den von allen Dienstanbietern implementierten Standardanbieter- und Anmeldeobjekten müssen Transportanbieter ein Statusobjekt implementieren. Für die anderen Dienstanbietertypen ist die Implementierung eines Statusobjekts optional. MapI erfordert dies jedoch für Transportanbieter. Transportanbieter, die das Herunterladen von Nachrichtenkopfzeilen von einem Remoteserver unterstützen, implementieren auch einen Ordner und eine Tabelle. 
   
-In der folgenden Abbildung sind alle Objekte dargestellt, die Transportanbieter mit den entsprechenden Schnittstellen implementieren können. Die Abbildung gibt auch an, ob MAPI oder ein Client der Benutzer des Objekts ist.
+Die folgende Abbildung zeigt jedes der Objekte, die Transportanbieter mit ihren entsprechenden Schnittstellen implementieren können. Die Abbildung gibt außerdem an, ob MAPI oder ein Client der Benutzer des Objekts ist.
   
-Von ![Transportanbietern implementierte Objekte] Von (media/amapi_66.gif "Transportanbietern implementierte Objekte")
+![Objekte, die Transportanbieter implementieren Objekte,](media/amapi_66.gif "die von Transportanbietern implementiert werden")
   
 ## <a name="see-also"></a>Siehe auch
 
-- [MAPI-Dienstanbieter Objekte](mapi-service-provider-objects.md)
+- [OBJEKTE des MAPI-Dienstanbieters](mapi-service-provider-objects.md)
 

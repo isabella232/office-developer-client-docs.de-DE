@@ -25,12 +25,12 @@ ms.locfileid: "33432205"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine unabhängige Bytereihenfolge-Version einer [GUID](guid.md) -Struktur, die zum eindeutigen Identifizieren eines Dienstanbieters verwendet wird. 
+Eine unabhängige Bytereihenfolge einer [GUID-Struktur,](guid.md) die zum eindeutigen Identifizieren eines Dienstanbieters verwendet wird. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehöriges Makro:  <br/> |[IsEqualMAPIUID](isequalmapiuid.md) <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandtes Makro:  <br/> |[IsEqualMAPIUID](isequalmapiuid.md) <br/> |
    
 ```cpp
 typedef struct _MAPIUID
@@ -40,35 +40,35 @@ typedef struct _MAPIUID
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **ab**
   
 > Ein Array, das einen 16-Byte-Bezeichner enthält.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Eine **MAPIUID** -Struktur ist eine **GUID** -Struktur, die in die Bytereihenfolge der Intel ® processors eingefügt wird. 
+Eine **MAPIUID-Struktur** ist eine **GUID-Struktur,** die in intel® Prozessor-Bytereihenfolge geordnet ist. 
   
-MAPI erstellt **MAPIUID** -Strukturen so, dass es sehr selten ist, dass zwei verschiedene Elemente denselben Bezeichner aufweisen. **MAPIUID** -Strukturen können als binäre Eigenschaften oder als Dateien gespeichert werden, unabhängig von der Bytereihenfolge des Computers, auf dem Informationen gespeichert werden. 
+MAPI erstellt **MAPIUID-Strukturen** so, dass es sehr selten ist, dass zwei unterschiedliche Elemente denselben Bezeichner haben. **MAPIUID-Strukturen** können als binäre Eigenschaften oder als Dateien gespeichert werden, unabhängig von der Bytereihenfolge des Computers, der die Informationen speichert oder auf diese zu zugegriffen hat. 
   
- **MAPIUID** -Strukturen werden verwendet: 
+ **Es werden MAPIUID-Strukturen** verwendet: 
   
-- , Um einen Profil Abschnitt zu identifizieren.
+- So identifizieren Sie einen Profilabschnitt.
     
-- In den Eintrags Bezeichnern von Nachrichtenspeicher-und Adressbuch Objekten, um den Verantwortlichen Dienstanbieter zu identifizieren.
+- In den Eintragsbezeichnern von Nachrichtenspeicher- und Adressbuchobjekten, um den zuständigen Dienstanbieter zu identifizieren.
     
-- In der **PR_SEARCH_KEY** ([pidtagsearchkey (](pidtagsearchkey-canonical-property.md))-Eigenschaft von Nachrichten.
+- In der **PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md)) -Eigenschaft von Nachrichten.
     
-Um einen **MAPIUID** -Bezeichner für einen Suchschlüssel zu generieren, rufen Dienstanbieter [IMAPISupport:: NewUID](imapisupport-newuid.md)auf.
+Zum Generieren eines **MAPIUID-Bezeichners** für einen Suchschlüssel rufen Dienstanbieter [IMAPISupport::NewUID auf.](imapisupport-newuid.md)
   
-Wenn ein Client eine Nachricht über ein Netzwerk übermittelt, sollte Sie ein Protokoll-oder Übertragungsformat verwenden, das die Bytereihenfolge der **MAPIUID** -Daten nicht ändert. 
+Wenn ein Client eine Nachricht über ein Netzwerk überträgt, sollte er ein Protokoll- oder Übertragungsformat verwenden, das die Bytereihenfolge von **MAPIUID-Daten nicht** ändert. 
   
-Weitere Informationen zur Verwendung von **MAPIUID** -Strukturen finden Sie in den folgenden Themen: 
+Weitere Informationen zur Verwendung von **MAPIUID-Strukturen** finden Sie in den folgenden Themen: 
   
-[Registrieren von eindeutigen Bezeichnern des Dienstanbieters](registering-service-provider-unique-identifiers.md)
+[Registrieren eindeutiger Bezeichner des Dienstanbieters](registering-service-provider-unique-identifiers.md)
   
-[Festlegen des Transport Auftrags](setting-transport-order.md)
+[Festlegen der Transportreihenfolge](setting-transport-order.md)
   
 ## <a name="see-also"></a>Siehe auch
 

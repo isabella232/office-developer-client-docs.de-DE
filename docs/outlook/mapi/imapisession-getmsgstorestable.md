@@ -25,7 +25,7 @@ ms.locfileid: "33428137"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ermöglicht den Zugriff auf die Nachrichtenspeichertabelle, die Informationen zu allen Nachrichten speichern im Sitzungsprofil enthält.
+Bietet Zugriff auf die Nachrichtenspeichertabelle, die Informationen zu allen Nachrichtenspeichern im Sitzungsprofil enthält.
   
 ```cpp
 HRESULT GetMsgStoresTable(
@@ -38,15 +38,15 @@ HRESULT GetMsgStoresTable(
 
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die das Format für Spalten bestimmt, die Zeichen Zeichenfolgen sind. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die das Format für Spalten bestimmt, die Zeichenzeichenfolgen sind. Das folgende Flag kann festgelegt werden:
     
 MAPI_UNICODE 
   
-> Die Zeichenfolgenspalten sind im Unicode-Format. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, sind die Zeichenfolgenspalten im ANSI-Format.
+> Die Zeichenfolgenspalten sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Zeichenfolgenspalten im ANSI-Format.
     
  _lppTable_
   
-> Out Ein Zeiger auf einen Zeiger auf die Nachrichtenspeichertabelle.
+> [out] Ein Zeiger auf einen Zeiger auf die Nachrichtenspeichertabelle.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -56,19 +56,19 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> Das MAPI_UNICODE-Flag wurde festgelegt, und die Sitzung unterstützt Unicode nicht.
+> Das MAPI_UNICODE wurde festgelegt, und die Sitzung unterstützt Unicode nicht.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPISession:: GetMsgStoresTable** -Methode ruft einen Zeiger auf die Nachrichtenspeichertabelle ab, eine von MAPI verwaltete Tabelle, die Informationen zu jedem geöffneten Nachrichtenspeicher im Profil enthält. 
+Die **IMAPISession::GetMsgStoresTable-Methode** ruft einen Zeiger auf die Nachrichtenspeichertabelle ab, eine von MAPI verwaltete Tabelle, die Informationen zu jedem geöffneten Nachrichtenspeicher im Profil enthält. 
   
-Eine vollständige Liste der erforderlichen und optionalen Spalten in der Nachrichtenspeichertabelle finden Sie unter [nachrichtenspeichertabellen](message-store-tables.md). 
+Eine vollständige Liste der erforderlichen und optionalen Spalten in der Nachrichtenspeichertabelle finden Sie unter [Message Store Tables](message-store-tables.md). 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Da MAPI die Nachrichtenspeichertabelle während der Sitzung aktualisiert, sobald Änderungen auftreten, rufen Sie die **Advise** -Methode der Nachrichtenspeichertabelle auf, um die Benachrichtigung über diese Änderungen zu registrieren. Zu den möglichen Änderungen gehört das Hinzufügen neuer Nachrichtenspeicher, das Entfernen vorhandener Speicher und Änderungen am Standardspeicher. 
+Da MAPI die Nachrichtenspeichertabelle während der Sitzung aktualisiert, wenn Änderungen auftreten, rufen Sie die **Advise-Methode** der Nachrichtenspeichertabelle auf, um sich zu registrieren, um über diese Änderungen benachrichtigt zu werden. Mögliche Änderungen sind das Hinzu- und Entfernen von neuen Nachrichtenspeichern, das Entfernen vorhandener Speicher und Änderungen am Standardspeicher. 
   
-Das Festlegen des MAPI_UNICODE-Flags im _ulFlags_ -Parameter wirkt sich auf das Format der Spalten aus, die von den Methoden [IMAPITable:: QueryColumns](imapitable-querycolumns.md) und [IMAPITable:: QueryRows](imapitable-queryrows.md) zurückgegeben werden. Dieses Flag steuert auch die Eigenschaftentypen in der von der [IMAPITable:: QuerySortOrder](imapitable-querysortorder.md) -Methode zurückgegebenen Sortierreihenfolge. 
+Das Festlegen MAPI_UNICODE im  _ulFlags-Parameter_ wirkt sich auf das Format der Spalten aus, die von den [Methoden IMAPITable::QueryColumns](imapitable-querycolumns.md) und [IMAPITable::QueryRows](imapitable-queryrows.md) zurückgegeben werden. Dieses Flag steuert auch die Eigenschaftstypen in der Sortierreihenfolge, die von der [IMAPITable::QuerySortOrder-Methode zurückgegeben](imapitable-querysortorder.md) wird. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -76,7 +76,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MainDlg. cpp  <br/> |CMainDlg:: OnOpenMessageStoreTable  <br/> |MFCMAPI verwendet die **IMAPISession:: GetMsgStoresTable** -Methode, um die Nachrichtenspeichertabelle so abzurufen, dass Sie im Hauptdialogfeld von MfcMapi gerendert werden kann.  <br/> |
+|MainDlg.cpp  <br/> |CMainDlg::OnOpenMessageStoreTable  <br/> |MFCMAPI verwendet die **IMAPISession::GetMsgStoresTable-Methode,** um die Nachrichtenspeichertabelle zu erhalten, sodass sie im Hauptdialogfeld von MFCMAPI gerendert werden kann.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -101,5 +101,5 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
-[Nachrichtenspeichertabellen](message-store-tables.md)
+[Nachrichten Store Tabellen](message-store-tables.md)
 

@@ -25,7 +25,7 @@ ms.locfileid: "33431897"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt an, dass eine Änderung im Status des Formular-Viewers aufgetreten ist. 
+Gibt an, dass eine Änderung im Status der Formularanzeige aufgetreten ist. 
   
 ```cpp
 HRESULT OnChange(
@@ -37,51 +37,51 @@ HRESULT OnChange(
 
  _ulDir_
   
-> in Eine Bitmaske von Flags, die Informationen zur Änderung im Viewer und zur erwarteten Antwort im Formular bereitstellt. Die folgenden Flags können festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die Informationen über die im Viewer aufgetretene Änderung und die erwartete Antwort im Formular enthält. Die folgenden Kennzeichen können festgelegt werden:
     
 VCSTATUS_CATEGORY 
   
-> Es gibt eine nächste oder eine vorherige Nachricht in einer anderen Kategorie. 
+> Es gibt eine nächste oder vorherige Nachricht in einer anderen Kategorie. 
     
 VCSTATUS_INTERACTIVE 
   
-> Im Formular sollte eine Benutzeroberfläche angezeigt werden. Wenn dieses Flag nicht festgelegt ist, sollte das Formular die Anzeige einer Benutzeroberfläche unterdrücken, auch als Reaktion auf ein Verb, das in der Regel bewirkt, dass eine Benutzeroberfläche angezeigt wird. 
+> Das Formular sollte eine Benutzeroberfläche anzeigen. Wenn dieses Kennzeichen nicht festgelegt ist, sollte das Formular die Anzeige einer Benutzeroberfläche unterdrücken, auch als Reaktion auf ein Verb, das normalerweise dazu führt, dass eine Benutzeroberfläche angezeigt wird. 
     
 VCSTATUS_MODAL 
   
-> Das Formular soll an den Formular Betrachter gebunden werden. 
+> Das Formular soll modal für die Formularanzeige sein. 
     
 VCSTATUS_NEXT 
   
-> Es gibt eine nächste Nachricht im Formular-Viewer. 
+> Es gibt eine nächste Nachricht in der Formularanzeige. 
     
 VCSTATUS_PREV 
   
-> Es gibt eine vorherige Nachricht im Formular-Viewer. 
+> Es ist eine vorherige Nachricht in der Formularanzeige. 
     
 VCSTATUS_READONLY 
   
-> Lösch-, Sende-und Verschiebungsvorgänge sollten deaktiviert werden. 
+> Lösch-, Absenden- und Verschiebevorgänge sollten deaktiviert sein. 
     
 VCSTATUS_UNREAD 
   
-> Es gibt eine nächste oder vorherige ungelesene Nachricht im Formular-Viewer.
+> Es gibt eine nächste oder vorherige ungelesene Nachricht in der Formularanzeige.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Benachrichtigung wurde erfolgreich ausgeführt.
+> Die Benachrichtigung war erfolgreich.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Formular Betrachter rufen die **IMAPIFormAdviseSink:: OnChange** -Methode auf, um das Formular über eine Änderung des Status eines Viewers zu benachrichtigen. In der Regel ist die einzige Änderung das Festlegen oder Deaktivieren des VCSTATUS_NEXT-oder VCSTATUS_PREVIOUS-Kennzeichens basierend auf dem vorhanden sein oder Fehlen einer nächsten oder einer vorherigen Nachricht im Viewer. Dementsprechend aktiviert oder deaktiviert das Form-Objekt alle nächsten oder vorherigen Aktionen, die unterstützt werden. 
+Formularbetrachter rufen die **IMAPIFormAdviseSink::OnChange-Methode** auf, um das Formular über eine Änderung des Status eines Betrachters zu benachrichtigen. In der Regel ist die einzige Änderung das Festlegen oder Löschen der VCSTATUS_NEXT oder VCSTATUS_PREVIOUS basierend auf dem Vorhandensein oder Fehlen einer nächsten oder vorherigen Nachricht im Viewer. Entsprechend aktiviert oder deaktiviert das Formularobjekt dann alle nächsten oder vorherigen Aktionen, die es unterstützt. 
   
-Die Einstellungen von VCSTATUS_MODAL und VCSTATUS_INTERACTIVE können nicht in einem Ansichtskontext geändert werden, nachdem Sie erstellt wurden.
+Die Einstellungen von VCSTATUS_MODAL und VCSTATUS_INTERACTIVE können sich in einem Ansichtskontext nicht ändern, nachdem er erstellt wurde.
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Die spezifische Implementierung dieser Methode ist vollständig von den Details des Formulars abhängig. Die meisten Formularobjekte verwenden diese Methode, um Ihre Benutzeroberfläche zu ändern (beispielsweise, um Menübefehle oder Schaltflächen so zu aktivieren oder zu deaktivieren, dass Sie mit dem Parameter Viewer Status Flags übereinstimmen).
+Die spezifische Implementierung dieser Methode hängt vollständig von den Besonderheiten des Formulars ab. Die meisten Formularobjekte verwenden diese Methode, um ihre Benutzeroberfläche zu ändern (z. B. zum Aktivieren oder Deaktivieren von Menübefehlen oder Schaltflächen, die mit dem Parameter "Viewer status flags" übereinstimmen).
   
 ## <a name="see-also"></a>Siehe auch
 

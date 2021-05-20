@@ -25,7 +25,7 @@ ms.locfileid: "33435677"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beendet die Verarbeitung aller TNEF-Vorgänge (Transport Neutral Encapsulation Format), die in der Warteschlange gespeichert sind. 
+Beendet die Verarbeitung für alle Transport-Neutral Encapsulation Format (TNEF), die in die Warteschlange eingereiht und gewartet werden. 
   
 ```cpp
 HRESULT Finish(
@@ -43,29 +43,29 @@ HRESULT Finish(
     
  _lpKey_
   
-> Out Ein Zeiger auf die **PR_ATTACH_NUM** ([pidtagattachnumber (](pidtagattachnumber-canonical-property.md))-Schlüsseleigenschaft einer Anlage. Das TNEF-Kapselungs Objekt verwendet diesen Schlüssel, um eine Anlage mit dem Attachment-Platzierungs-Tag in einer Nachricht abzugleichen. Dieser Schlüssel sollte für jede Anlage eindeutig sein.
+> [out] Ein Zeiger auf **die PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md))-Schlüsseleigenschaft einer Anlage. Das TNEF-Kapselungsobjekt verwendet diesen Schlüssel, um eine Anlage mit dem Anlagenplatzierungstag in einer Nachricht zu versehen. Dieser Schlüssel sollte für jede Anlage eindeutig sein.
     
  _lpProblem_
   
-> Out Ein Zeiger auf einen Zeiger auf eine zurückgegebene [STnefProblemArray](stnefproblemarray.md) -Struktur. Die **STnefProblemArray** -Struktur gibt an, welche Eigenschaften, falls vorhanden, nicht ordnungsgemäß codiert wurden. Wenn NULL im _lpProblem_ -Parameter übergeben wird, wird kein Property-Problem-Array zurückgegeben. 
+> [out] Ein Zeiger auf einen Zeiger auf eine zurückgegebene [STnefProblemArray-Struktur.](stnefproblemarray.md) Die **STnefProblemArray-Struktur** gibt an, welche Eigenschaften, falls welche, nicht ordnungsgemäß codiert wurden. Wenn NULL im  _lpProblem-Parameter_ übergeben wird, wird kein Array mit Eigenschaftsproblemen zurückgegeben. 
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Aufruf war erfolgreich, und der erwartete Wert oder die Werte wurden zurückgegeben.
+> Der Aufruf war erfolgreich und hat den erwarteten Wert oder die erwarteten Werte zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Transport Anbieter, Nachrichtenspeicher Anbieter und Gateways rufen die **ITnef:: Finish** -Methode auf, um die Codierung aller Eigenschaften auszuführen, für die die Codierung in Aufrufen der [ITnef::](itnef-addprops.md) AddProps-und [ITnef:](itnef-setprops.md) : SetProps-Methoden angefordert wurde. Wenn das TNEF-Objekt mit dem TNEF_ENCODE-Flag für die [OpenTnefStream](opentnefstream.md) -oder die [OpenTnefStreamEx](opentnefstreamex.md) -Funktion geöffnet wurde, codiert die **Finish** -Methode die angeforderten Eigenschaften in den an dieses Objekt übergebenen Kapselungs Datenstrom. Wenn das TNEF-Objekt mit dem TNEF_DECODE-Flag geöffnet wurde, dekodiert die **Finish** -Methode die Eigenschaften aus dem TNEF-Stream und schreibt Sie zurück in die Nachricht, zu der Sie gehören. 
+Transportanbieter, Nachrichtenspeicheranbieter und Gateways rufen die **ITnef::Finish-Methode** auf, um die Codierung aller Eigenschaften durchzuführen, für die die Codierung in Aufrufen der [Methoden ITnef::AddProps](itnef-addprops.md) und [ITnef::SetProps angefordert](itnef-setprops.md) wurde. Wenn das TNEF-Objekt mit dem flag TNEF_ENCODE für die [OpenTnefStream-](opentnefstream.md) oder [OpenTnefStreamEx-Funktion](opentnefstreamex.md) geöffnet wurde, codiert die **Finish-Methode** die angeforderten Eigenschaften in den an dieses Objekt übergebenen Kapselungsstream. Wenn das TNEF-Objekt mit dem flag TNEF_DECODE geöffnet wurde, decodiert die **Finish-Methode** die Eigenschaften aus dem TNEF-Stream und schreibt sie zurück in die Nachricht, zu der sie gehören. 
   
-Nach dem **Finish** -Aufruf zeigt der Zeiger auf den Encapsulation-Stream auf das Ende der TNEF-Daten. Wenn der Anbieter oder das Gateway die TNEF-Streamdaten nach dem **Beendigungs** Aufruf verwenden muss, muss er den Stream-Zeiger auf den Anfang der TNEF-Datenstrom zurücksetzen. 
+Nach dem **Aufruf Fertig** stellen zeigt der Zeiger auf den Kapselungsstream auf das Ende der TNEF-Daten. Wenn der Anbieter oder das Gateway die Daten des TNEF-Datenstroms nach dem **Aufruf** Beenden verwenden muss, muss der Datenstromzeiger auf den Anfang der TNEF-Daten zurückgesetzt werden. 
   
-Die TNEF-Implementierung meldet TNEF-Datenstrom Codierungsprobleme, ohne den **Abschluss** Prozess zu beenden. Die im Parameter _lpProblem_ zurückgeGebene [STnefProblemArray](stnefproblemarray.md) -Struktur gibt an, welche TNEF-Attribute oder MAPI-Eigenschaften, falls vorhanden, nicht verarbeitet werden konnten. Der Wert, der im **SCODE** -Element einer der in **STnefProblemArray** enthaltenen **STnefProblem** -Strukturen zurückgegeben wird, gibt das spezifische Problem an. Der Anbieter oder das Gateway kann davon ausgehen, dass alle Eigenschaften oder Attribute, für die **Finish** keinen Problembericht zurückgibt, erfolgreich verarbeitet wurden. 
+Die TNEF-Implementierung meldet TNEF-Streamcodierungsprobleme, ohne den **Fertig stellen-Prozess zu** beenden. Die im _lpProblem-Parameter_ zurückgegebene [STnefProblemArray-Struktur](stnefproblemarray.md) gibt an, welche TNEF-Attribute oder MAPI-Eigenschaften (falls welche) nicht verarbeitet werden konnten. Der im **scode-Element** der in **STnefProblemArray enthaltene STnefProblemProblem-Struktur** zurückgegebene Wert gibt das spezifische Problem an.  Der Anbieter oder das Gateway kann davon ausgehen, dass alle Eigenschaften oder Attribute, für die **Finish** keinen Problembericht zurück gibt, erfolgreich verarbeitet wurden. 
   
-Wenn ein Anbieter oder Gateway nicht mit Problem Arrays funktioniert, kann er in _lpProblem_den Wert NULL überschreiten; in diesem Fall wird kein Problem Array zurückgegeben. 
+Wenn ein Anbieter oder Gateway nicht mit Problemarrays funktioniert, kann er NULL in  _lpProblem übergeben._ In diesem Fall wird kein Problemarray zurückgegeben. 
   
-Der in _lpProblem_ zurückgegebene Wert ist nur gültig, wenn der Aufruf S_OK zurückgibt. Wenn S_OK zurückgegeben wird, sollte der Anbieter oder das Gateway die in der **STnefProblemArray** -Struktur zurückgegebenen Werte überprüfen. Wenn für den Anruf ein Fehler auftritt, wird die **STnefProblemArray** -Struktur nicht ausgefüllt, und der aufrufende Anbieter oder das Gateway sollte die Struktur nicht verwenden oder freigeben. Wenn beim Aufruf kein Fehler auftritt, muss der aufrufende Anbieter oder das Gateway den Speicher für das **STnefProblemArray** freigeben, indem er die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion aufruft. 
+Der in  _lpProblem_ zurückgegebene Wert ist nur gültig, wenn der Aufruf S_OK. Wenn S_OK zurückgegeben wird, sollte der Anbieter oder das Gateway die in der **STnefProblemArray-Struktur** zurückgegebenen Werte überprüfen. Wenn beim Anruf ein Fehler auftritt, wird die **STnefProblemArray-Struktur** nicht ausgefüllt, und der aufrufende Anbieter oder das Gateway sollte die Struktur nicht verwenden oder frei geben. Wenn beim Anruf kein Fehler auftritt, muss der aufrufende Anbieter oder das Gateway den Arbeitsspeicher für **das STnefProblemArray** durch Aufrufen der [MAPIFreeBuffer-Funktion](mapifreebuffer.md) frei geben. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -73,7 +73,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|Datei. cpp  <br/> |SaveToTNEF  <br/> |MFCMAPI verwendet die **ITnef:: Finish** -Methode, um die Verarbeitung des neuen TNEF-Streams abzuschließen.  <br/> |
+|File.cpp  <br/> |SaveToTNEF  <br/> |MFCMAPI verwendet die **ITnef::Finish-Methode,** um die Verarbeitung des neuen TNEF-Datenstroms zu beenden.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -87,7 +87,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 [OpenTnefStreamEx](opentnefstreamex.md)
   
-[Kanonische Pidtagattachnumber (-Eigenschaft](pidtagattachnumber-canonical-property.md)
+[PidTagAttachNumber (kanonische Eigenschaft)](pidtagattachnumber-canonical-property.md)
   
 [STnefProblemArray](stnefproblemarray.md)
   

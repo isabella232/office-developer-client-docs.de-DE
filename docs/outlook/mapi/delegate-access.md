@@ -25,25 +25,25 @@ Delegieren des Zugriffs bezieht sich auf die M�glichkeit des Benutzers als and
   
 Es gibt zwei Gruppen von Eigenschaften, die zur Unterst�tzung von Zugriffsrechten f�r Stellvertretung verwendet werden:
   
- **PR_SENT_REPRESENTING_ADDRTYPE** ([Pidtagsentrepresentingaddresstype (](pidtagsentrepresentingaddresstype-canonical-property.md)) 
+ **PR_SENT_REPRESENTING_ADDRTYPE** ([PidTagSentRepresentingAddressType](pidtagsentrepresentingaddresstype-canonical-property.md)) 
   
- **PR_SENT_REPRESENTING_EMAIL_ADDRESS** ([Pidtagsentrepresentingemailaddress (](pidtagsentrepresentingemailaddress-canonical-property.md)) 
+ **PR_SENT_REPRESENTING_EMAIL_ADDRESS** ([PidTagSentRepresentingEmailAddress](pidtagsentrepresentingemailaddress-canonical-property.md)) 
   
- **PR_SENT_REPRESENTING_ENTRYID** ([Pidtagsentrepresentingentryid (](pidtagsentrepresentingentryid-canonical-property.md)) 
+ **PR_SENT_REPRESENTING_ENTRYID** ([PidTagSentRepresentingEntryId](pidtagsentrepresentingentryid-canonical-property.md)) 
   
  **PR_SENT_REPRESENTING_NAME** ([PidTagSentRepresentingName](pidtagsentrepresentingname-canonical-property.md)) 
   
- **PR_SENT_REPRESENTING_SEARCH_KEY** ([Pidtagsentrepresentingsearchkey (](pidtagsentrepresentingsearchkey-canonical-property.md)) 
+ **PR_SENT_REPRESENTING_SEARCH_KEY** ([PidTagSentRepresentingSearchKey](pidtagsentrepresentingsearchkey-canonical-property.md)) 
   
- **PR_RCVD_REPRESENTING_ADDRTYPE** ([Pidtagreceivedrepresentingaddresstype (](pidtagreceivedrepresentingaddresstype-canonical-property.md)) 
+ **PR_RCVD_REPRESENTING_ADDRTYPE** ([PidTagReceivedRepresentingAddressType](pidtagreceivedrepresentingaddresstype-canonical-property.md)) 
   
- **PR_RCVD_REPRESENTING_EMAIL_ADDRESS** ([Pidtagreceivedrepresentingemailaddress (](pidtagreceivedrepresentingemailaddress-canonical-property.md)) 
+ **PR_RCVD_REPRESENTING_EMAIL_ADDRESS** ([PidTagReceivedRepresentingEmailAddress](pidtagreceivedrepresentingemailaddress-canonical-property.md)) 
   
  **PR_RCVD_REPRESENTING_ENTRYID** ([PidTagReceivedRepresentingEntryId](pidtagreceivedrepresentingentryid-canonical-property.md)) 
   
  **PR_RCVD_REPRESENTING_NAME** ([PidTagReceivedRepresentingName](pidtagreceivedrepresentingname-canonical-property.md)) 
   
- **PR_RCVD_REPRESENTING_SEARCH_KEY** ([Pidtagreceivedrepresentingsearchkey (](pidtagreceivedrepresentingsearchkey-canonical-property.md)) 
+ **PR_RCVD_REPRESENTING_SEARCH_KEY** ([PidTagReceivedRepresentingSearchKey](pidtagreceivedrepresentingsearchkey-canonical-property.md)) 
   
 F�r ausgehende Nachrichten den **PR_SENT_REPRESENTING** Eigenschaften identifiziert des messaging-Benutzers, der als Absender fungieren soll. Clients k�nnen diese Eigenschaften als Option festlegen. Wenn die **PR_SENT_REPRESENTING** Zeitpunkt nicht festgelegt werden des Anbieters Verantwortung zusammen mit den Eigenschaften **PR_SENDER** festgelegt ist, die Nachricht erreicht eine Adressbuchhierarchie Delegieren des Zugriffs, unterst�tzt. 
   

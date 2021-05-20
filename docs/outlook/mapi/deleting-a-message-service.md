@@ -23,10 +23,10 @@ ms.locfileid: "33428123"
   
  **So löschen Sie einen Nachrichtendienst aus einem Profil**
   
-1. Rufen Sie **IMAPISession:: GetMsgServiceTable** auf, um auf die Nachrichtendienst Tabelle zuzugreifen. 
+1. Rufen **Sie IMAPISession::GetMsgServiceTable auf,** um auf die Nachrichtendiensttabelle zu zugreifen. 
     
-2. Suchen Sie die Zeile für den Nachrichtendienst, und übergeben Sie die **PR_SERVICE_UID** ([pidtagserviceuid (](pidtagserviceuid-canonical-property.md))-Spalte im _lpuid_ -Parameter an [IMsgServiceAdmin::D eletemsgservice](imsgserviceadmin-deletemsgservice.md). 
+2. Suchen Sie die Zeile für den **Nachrichtendienst, und** übergeben Sie die spalte PR_SERVICE_UID ([PidTagServiceUid](pidtagserviceuid-canonical-property.md)) im  _lpuid-Parameter_ an [IMsgServiceAdmin::D eleteMsgService](imsgserviceadmin-deletemsgservice.md). 
     
- **DeleteMsgService** Ruft die Einstiegspunktfunktion des Nachrichtendiensts auf, wobei der Parameter _ulContext_ auf MSG_SERVICE_DELETE festgelegt ist. Nachrichtendienste führen zu diesem Zeitpunkt Aufräumvorgänge aus, bevor Sie aus dem Profil entfernt werden. 
+ **DeleteMsgService** ruft die Einstiegspunktfunktion des Nachrichtendiensts auf, der  _ulContext-Parameter_ ist auf MSG_SERVICE_DELETE. Nachrichtendienste führen zu diesem Zeitpunkt alle Bereinigungsaufgaben aus, bevor sie aus dem Profil entfernt werden. 
   
 

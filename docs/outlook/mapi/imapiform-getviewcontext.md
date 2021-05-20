@@ -37,7 +37,7 @@ HRESULT GetViewContext(
 
  _ppViewContext_
   
-> Out Ein Zeiger auf einen Zeiger auf den Ansichtskontext des Formulars.
+> [out] Ein Zeiger auf einen Zeiger auf den Ansichtskontext des Formulars.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -49,13 +49,13 @@ S_FALSE
   
 > Es gibt keinen Ansichtskontext für das Formular.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Formular Betrachter rufen **** getviewcontext auf, um einen Zeiger auf den Ansichtskontext abzurufen, der in einem vorherigen Aufruf von [IMAPIForm::](imapiform-setviewcontext.md)setviewcontext festgelegt wurde. Wenn kein vorheriger Aufruf an setViewcontext vorgenommen wurde, **** wird _ppViewContext_ auf NULL festgelegt. **** 
+Formularbetrachter rufen **GetViewContext auf,** um einen Zeiger auf den Ansichtskontext zu erhalten, der in einem vorherigen Aufruf von [IMAPIForm::SetViewContext eingerichtet wurde.](imapiform-setviewcontext.md) Wenn kein vorheriger Aufruf von **SetViewContext** erfolgt ist, legt **GetViewContext**  _ppViewContext_ auf NULL fest. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Kopieren Sie den Ansichtskontext des Formulars in den Zeiger, der vom aufrufenden Formular Betrachter im _ppViewContext_ -Parameter übergeben wird. Wenn das Formular keinen Ansichtskontext hat, legen Sie _ppViewContext_ auf NULL fest. 
+Kopieren Sie den Ansichtskontextzeiger Ihres Formulars in den Zeiger, der von der aufrufenden Formularanzeige im  _ppViewContext-Parameter übergeben_ wird. Wenn das Formular keinen Ansichtskontext hat, legen Sie  _ppViewContext auf_ NULL. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -63,7 +63,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MAPIFormFunctions. cpp  <br/> |OpenMessageNonModal  <br/> |MFCMAPI verwendet die **IMAPIForm::** getviewcontext-Methode, um zu überprüfen, ob ein Formular einen Ansichtskontext aufweist.  <br/> |
+|MAPIFormFunctions.cpp  <br/> |OpenMessageNonModal  <br/> |MFCMAPI verwendet die **IMAPIForm::GetViewContext-Methode,** um zu überprüfen, ob ein Formular über einen Ansichtskontext verfügt.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

@@ -25,7 +25,7 @@ ms.locfileid: "33435831"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt eine [MAPIERROR](mapierror.md) -Struktur zurück, die Informationen zum vorherigen Fehler enthält. 
+Gibt eine [MAPIERROR-Struktur](mapierror.md) zurück, die Informationen zum vorherigen Fehler enthält. 
   
 ```cpp
 HRESULT GetLastError(
@@ -39,19 +39,19 @@ HRESULT GetLastError(
 
  _hResult_
   
-> in Ein Handle für den im vorherigen Methodenaufruf generierten Fehlercode.
+> [in] Ein Handle für den Fehlercode, der im vorherigen Methodenaufruf generiert wurde.
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die das Format für den Text angibt, der in der **MAPIERROR** -Struktur zurückgegeben wird, auf die durch _lppMAPIError_verwiesen wird. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die das Format für den in der **MAPIERROR-Struktur** zurückgegebenen Text angibt, auf den _lppMAPIError zeigt._ Das folgende Flag kann festgelegt werden:
     
 MAPI_UNICODE 
   
-> Die Zeichenfolgen sollten im Unicode-Format vorliegen. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, sollten die Zeichenfolgen im ANSI-Format sein.
+> Die Zeichenfolgen sollten im Unicode-Format vorliegen. Wenn das MAPI_UNICODE nicht festgelegt ist, sollten die Zeichenfolgen im ANSI-Format vorliegen.
     
  _lppMAPIError_
   
-> Out Ein Zeiger auf einen Zeiger auf die **MAPIERROR** -Struktur, die Versions-, Komponenten-und Kontextinformationen für den Fehler enthält. Der Parameter _lppMAPIError_ kann auf NULL festgelegt werden, wenn keine Fehlerinformationen zurückgegeben werden sollen. 
+> [out] Ein Zeiger auf einen Zeiger auf die **MAPIERROR-Struktur,** die Versions-, Komponenten- und Kontextinformationen für den Fehler enthält. Der  _lppMAPIError-Parameter_ kann auf NULL festgelegt werden, wenn keine Fehlerinformationen zurückgegeben werden sollen. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -61,25 +61,25 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> Entweder wurde das MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt Unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
+> Entweder wurde MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPIProp:: getlasterroraufzurufen** -Methode liefert Informationen zu einem vorherigen Methodenaufruf, der fehlgeschlagen ist. Clients können Ihren Benutzern detaillierte Informationen zu dem Fehler bereitstellen, indem Sie die Daten aus der **MAPIERROR** -Struktur in ein Dialogfeld einschließen. 
+Die **IMAPIProp::GetLastError-Methode** stellt Informationen zu einem vorherigen Methodenaufruf zur Verfügung, der fehlgeschlagen ist. Clients können ihren Benutzern detaillierte Informationen zu dem Fehler bereitstellen, indem sie die Daten aus der **MAPIERROR-Struktur** in ein Dialogfeld eingeben. 
   
-Alle von MAPI bereitgestellten Implementierungen von **getlasterroraufzurufen** sind ANSI-Implementierungen, mit Ausnahme der [IAddrBook](iaddrbookimapiprop.md) -Implementierung. Die **getlasterroraufzurufen** -Methode, die in **IAddrBook** enthalten ist, unterstützt Unicode. 
+Alle von MAPI bereitgestellten Implementierungen von **GetLastError** sind ANSI-Implementierungen, mit Ausnahme der [IAddrBook-Implementierung.](iaddrbookimapiprop.md) Die **getLastError-Methode,** die in **IAddrBook enthalten** ist, unterstützt Unicode. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Die Details der Implementierung der Methode eines Remote Transportanbieters und der von dieser Methode zurückgegebenen Nachrichten sind für den Transportanbieter, da die besonderen Fehlerbedingungen, die zu verschiedenen HRESULT-Werten führen, für unterschiedliche Transportvorgänge unterschiedlich sind. Anbieter.
+Die Details der Implementierung dieser Methode durch einen Remote-Transport-Anbieter und die von dieser Methode zurückgegebenen Nachrichten liegen beim Transportanbieter, da die besonderen Fehlerbedingungen, die zu verschiedenen HRESULT-Werten führen, für unterschiedliche Transportanbieter unterschiedlich sind.
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Sie können die **MAPIERROR** -Struktur, auf die durch den _lppMAPIError_ -Parameter verwiesen wird, verwenden, wenn **getlasterroraufzurufen** eine bereitstellt, nur, wenn der Rückgabewert S_OK ist. Manchmal kann **getlasterroraufzurufen** nicht ermitteln, was der letzte Fehler war oder nicht mehr über den Fehler berichtet. In dieser Situation wird stattdessen ein Zeiger auf NULL in _lppMAPIError_ zurückgegeben. 
+Sie können die **MAPIERROR-Struktur** verwenden, auf die der  _lppMAPIError-Parameter_ verweist, wenn **GetLastError** einen Parameter anriert, nur wenn der Rückgabewert S_OK. Manchmal **kann GetLastError** nicht bestimmen, was der letzte Fehler war oder hat nichts mehr über den Fehler zu melden. In diesem Fall wird stattdessen ein Zeiger auf NULL in  _lppMAPIError_ zurückgegeben. 
   
-Zum Freigeben des Speichers für die **MAPIERROR** -Struktur rufen Sie die [Mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion auf. 
+Um den Arbeitsspeicher für die **MAPIERROR-Struktur frei** zu geben, rufen Sie die [MAPIFreeBuffer-Funktion](mapifreebuffer.md) auf. 
   
-Weitere Informationen zur **getlasterroraufzurufen** -Methode finden Sie unter [MAPI Extended Errors](mapi-extended-errors.md).
+Weitere Informationen zur **GetLastError-Methode** finden Sie unter [MAPI Extended Errors](mapi-extended-errors.md).
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -94,5 +94,5 @@ Weitere Informationen zur **getlasterroraufzurufen** -Methode finden Sie unter [
 [IMAPIProp : IUnknown](imapipropiunknown.md)
 
 
-[Erweiterte MAPI-Fehler](mapi-extended-errors.md)
+[ERWEITERTE MAPI-Fehler](mapi-extended-errors.md)
 

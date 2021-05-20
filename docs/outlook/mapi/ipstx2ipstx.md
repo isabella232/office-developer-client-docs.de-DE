@@ -25,20 +25,20 @@ ms.locfileid: "33430875"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Diese Schnittstelle bietet Hilfsfunktionen bei der Replikation über die **[IOSTX](iostxiunknown.md)** -Schnittstelle. 
+Diese Schnittstelle bietet Hilfsfunktionen bei der Replikation über die **[IOSTX-Schnittstelle.](iostxiunknown.md)** 
   
 |||
 |:-----|:-----|
-|Bereitgestellt von  <br/> |Abfrage auf [IMsgStore](imsgstoreimapiprop.md) <br/> |
+|Bereitgestellt von  <br/> |Abfrage in [IMsgStore](imsgstoreimapiprop.md) <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IPSTX2  <br/> |
    
 ## <a name="vtable-order"></a>Vtable-Reihenfolge
 
 |||
 |:-----|:-----|
-| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
-| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
-|**[SetSpoolSuspendState](ipstx2-setspoolsuspendstate.md)** <br/> |Legt den angehalten-Status für den Spooler fest.  <br/> |
+| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+|**[SetSpoolSuspendState](ipstx2-setspoolsuspendstate.md)** <br/> |Legt den angehaltenen Status für den Spooler fest.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

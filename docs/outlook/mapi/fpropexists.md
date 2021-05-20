@@ -25,13 +25,13 @@ ms.locfileid: "33429488"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Sucht nach einem bestimmten Property-Tag in einer [IMAPIProp](imapipropiunknown.md) -Schnittstelle oder einer von **IMAPIProp**abgeleiteten Schnittstelle wie [IMessage](imessageimapiprop.md) oder [IMAPIFolder](imapifolderimapicontainer.md). 
+Sucht nach einem bestimmten Eigenschaftstag in einer [IMAPIProp-Schnittstelle](imapipropiunknown.md) oder einer Schnittstelle, die von **IMAPIProp** abgeleitet ist, z. B. [IMessage](imessageimapiprop.md) oder [IMAPIFolder](imapifolderimapicontainer.md). 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiutil. h  <br/> |
+|Headerdatei  <br/> |Mapiutil.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
-|Aufgerufen von:  <br/> |Client Anwendungen und Dienstanbieter  <br/> |
+|Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
 BOOL FPropExists(
@@ -44,24 +44,24 @@ BOOL FPropExists(
 
  _pobj_
   
-> in Zeiger auf die **IMAPIProp** -Schnittstelle oder-Schnittstelle, die von **IMAPIProp** abgeleitet ist, in der nach dem Property-Tag gesucht werden soll. 
+> [in] Zeiger auf die VON IMAPIProp abgeleitete **IMAPIProp-Schnittstelle,** in der nach dem Eigenschaftstag gesucht werden soll.  
     
  _ulPropTag_
   
-> in Eigenschaftentag, nach dem gesucht werden soll.
+> [in] Eigenschaftstag, nach dem gesucht werden soll.
     
 ## <a name="return-value"></a>Rückgabewert
 
 TRUE 
   
-> Eine Übereinstimmung für das angegebene Property-Tag wurde gefunden. 
+> Es wurde eine Übereinstimmung für das angegebene Eigenschaftstag gefunden. 
     
 FALSE 
   
-> Eine Übereinstimmung für das angegebene Property-Tag wurde nicht gefunden.
+> Eine Übereinstimmung für das angegebene Eigenschaftstag wurde nicht gefunden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn das Property-Tag im _ulPropTag_ -Parameter den Typ PT_UNSPECIFIED hat, sucht die **FPropExists** -Funktion nach einer Übereinstimmung, die nur auf dem Eigenschaftenbezeichner basiert. Andernfalls ist die Übereinstimmung für das gesamte Property-Tag, einschließlich des Typs. 
+Wenn das Eigenschaftstag im  _ulPropTag-Parameter_ den Typ PT_UNSPECIFIED hat, sucht die **FPropExists-Funktion** nach einer Übereinstimmung, die nur auf dem Eigenschaftenbezeichner basiert. Andernfalls gilt die Übereinstimmung für das gesamte Eigenschaftstag, einschließlich des Typs. 
   
 

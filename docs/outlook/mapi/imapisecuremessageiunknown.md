@@ -29,7 +29,7 @@ Definiert Methoden zum Verwalten sicherer Nachrichten.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Exchsec. h  <br/> |
+|Headerdatei  <br/> |Exchsec.h  <br/> |
 |Verf�gbar gemacht von:  <br/> |[IMessage: IMAPIProp](imessageimapiprop.md) <br/> |
 |Implementiert von:  <br/> |Microsoft Outlook 2010 und Microsoft Outlook 2013  <br/> |
 |Aufgerufen von:  <br/> |Client  <br/> |
@@ -40,14 +40,14 @@ Definiert Methoden zum Verwalten sicherer Nachrichten.
 
 |||
 |:-----|:-----|
-|Platzhalterelement.  <br/> |Nicht unterstützt oder dokumentiert.  <br/> |
-|Platzhalterelement.  <br/> |Nicht unterstützt oder dokumentiert.  <br/> |
-|Platzhalterelement.  <br/> |Nicht unterstützt oder dokumentiert.  <br/> |
-|Platzhalterelement.  <br/> |Nicht unterstützt oder dokumentiert.  <br/> |
-|[IMAPISecureMessage::GetBaseMessage](imapisecuremessage-getbasemessage.md) <br/> |Ruft die zugrunde liegende [IMessage: IMAPIProp](imessageimapiprop.md) ab, die dieser [IMAPISecureMessage: IUnknown](imapisecuremessageiunknown.md) kapselt.  <br/> |
-|Platzhalterelement.  <br/> |Nicht unterstützt oder dokumentiert.  <br/> |
-|Platzhalterelement.  <br/> |Nicht unterstützt oder dokumentiert.  <br/> |
-|Platzhalterelement.  <br/> |Nicht unterstützt oder dokumentiert.  <br/> |
+|Platzhaltermitglied.  <br/> |Nicht unterstützt oder dokumentiert.  <br/> |
+|Platzhaltermitglied.  <br/> |Nicht unterstützt oder dokumentiert.  <br/> |
+|Platzhaltermitglied.  <br/> |Nicht unterstützt oder dokumentiert.  <br/> |
+|Platzhaltermitglied.  <br/> |Nicht unterstützt oder dokumentiert.  <br/> |
+|[IMAPISecureMessage::GetBaseMessage](imapisecuremessage-getbasemessage.md) <br/> |Ruft die zugrunde liegende [IMessage : IMAPIProp](imessageimapiprop.md) ab, die diese [IMAPISecureMessage : IUnknown](imapisecuremessageiunknown.md) kapselt.  <br/> |
+|Platzhaltermitglied.  <br/> |Nicht unterstützt oder dokumentiert.  <br/> |
+|Platzhaltermitglied.  <br/> |Nicht unterstützt oder dokumentiert.  <br/> |
+|Platzhaltermitglied.  <br/> |Nicht unterstützt oder dokumentiert.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

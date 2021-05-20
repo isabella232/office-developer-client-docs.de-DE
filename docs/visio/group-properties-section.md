@@ -20,7 +20,7 @@ ms.locfileid: "33430749"
 
 Enthält Zellen für eine Gruppe, die steuern, wie Sie Shapes in Gruppen einfügen, Mitglieder von Gruppen verschieben und Gruppen auswählen können. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Sie können diese Werte auch im Dialogfeld **Verhalten** auf der Registerkarte **Verhalten** festlegen (klicken Sie dazu auf der Registerkarte [Entwickler](run-in-developer-mode-display-the-developer-tab.md) in der Gruppe **Shape-Design** auf **Verhalten**). 
   

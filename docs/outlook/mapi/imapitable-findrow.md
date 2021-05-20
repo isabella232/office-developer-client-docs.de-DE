@@ -25,7 +25,7 @@ ms.locfileid: "33429572"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Sucht die nächste Zeile in einer Tabelle, die bestimmten Suchkriterien entspricht, und verschiebt den Cursor zu dieser Zeile.
+Sucht die nächste Zeile in einer Tabelle, die bestimmten Suchkriterien entspricht, und verschiebt den Cursor in diese Zeile.
   
 ```cpp
 HRESULT FindRow(
@@ -39,11 +39,11 @@ ULONG ulFlags
 
  _lpRestriction_
   
-> in Ein Zeiger auf eine [SRestriction](srestriction.md) -Struktur, die die Suchkriterien beschreibt. 
+> [in] Ein Zeiger auf eine [SRestriction-Struktur,](srestriction.md) die die Suchkriterien beschreibt. 
     
  _BkOrigin_
   
-> in Eine Textmarke, die die Zeile identifiziert, in der **FindRow** Ihre Suche beginnen soll. Eine Textmarke kann mit der [IMAPITable:: CreateBookMark](imapitable-createbookmark.md) -Methode oder einem der folgenden vordefinierten Werte erstellt werden. 
+> [in] Eine Textmarke, die die Zeile identifiziert, in der **FindRow** mit der Suche beginnen soll. Eine Textmarke kann mit der [IMAPITable::CreateBookmark-Methode](imapitable-createbookmark.md) erstellt werden, oder einer der folgenden vordefinierten Werte kann übergeben werden. 
     
 BOOKMARK_BEGINNING 
   
@@ -59,55 +59,55 @@ BOOKMARK_END
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die die Richtung der Suche steuert. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die die Richtung der Suche steuert. Das folgende Flag kann festgelegt werden:
     
 DIR_BACKWARD 
   
-> Sucht aus der durch die Textmarke identifizierten Zeile rückwärts.
+> Sucht rückwärts aus der zeile, die durch die Textmarke identifiziert wird.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Suchvorgang war erfolgreich.
+> Der Findvorgang war erfolgreich.
     
 MAPI_E_INVALID_BOOKMARK 
   
-> Die Textmarke im _BkOrigin_ -Parameter ist ungültig, da Sie entfernt wurde oder über die letzte angeforderte Zeile hinausgeht. 
+> Die Textmarke im  _BkOrigin-Parameter_ ist ungültig, weil sie entfernt wurde oder weil sie über die letzte angeforderte Zeile hinaus liegt. 
     
 MAPI_E_NOT_FOUND 
   
-> Es wurden keine Zeilen gefunden, die mit der Einschränkung übereinstimmen.
+> Es wurden keine Zeilen gefunden, die der Einschränkung entsprechen.
     
 MAPI_W_POSITION_CHANGED
   
-> Der Aufruf wurde erfolgreich ausgeführt, aber die im Vorgang verwendete Textmarke wird nicht mehr in derselben Zeile festgelegt wie bei der letzten Verwendung; Wenn die Textmarke nicht verwendet wurde, befindet Sie sich nicht mehr in derselben Position wie bei ihrer Erstellung. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich behandelt werden. Verwenden Sie zum Testen dieser Warnung das **HR_FAILED** -Makro. Weitere Informationen finden Sie unter [Verwenden von Makros zur Fehlerbehandlung](using-macros-for-error-handling.md).
+> Der Aufruf ist erfolgreich, aber die im Vorgang verwendete Textmarke wird nicht mehr in derselben Zeile wie bei der letzten Verwendung festgelegt. Wenn die Textmarke nicht verwendet wurde, befindet sie sich nicht mehr an derselben Position wie beim Erstellen. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich behandelt werden. Verwenden Sie zum Testen dieser Warnung das **HR_FAILED** Makro. Weitere [Informationen finden Sie unter Using Macros for Error Handling](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPITable:: FindRow** -Methode sucht die erste Zeile in der Tabelle, die einer Reihe von Suchkriterien entspricht, die in der **SRestriction** -Struktur beschrieben ist, auf die durch den _lpRestriction_ -Parameter verwiesen wird. 
+Die **IMAPITable::FindRow-Methode** sucht die erste Zeile in der Tabelle, um mit einer Reihe von Suchkriterien zu übereinstimmen, die in der **SRestriction-Struktur** beschrieben sind, auf die der  _lpRestriction-Parameter_ verweist. 
   
-In der Regel sucht **FindRow** nach vorn aus der angegebenen Textmarke. Der Anrufer kann festlegen, dass die Suche rückwärts aus der Textmarke verschoben wird, indem das DIR_BACKWARD-Flag im _ulFlags_ -Parameter festgelegt wird. Die Vorwärtssuche beginnt mit der aktuellen Textmarke; die Rückwärtssuche beginnt von der Zeile vor der Textmarke. Die Endposition der Suche ist unmittelbar vor der ersten gefundenen Zeile, die die Einschränkung erfüllt hat. 
+In der Regel **sucht FindRow** von der angegebenen Textmarke nach vorn. Der Aufrufer kann festlegen, dass die Suche von der Textmarke rückwärts bewegt wird, indem DIR_BACKWARD im  _ulFlags-Parameter festgelegt_ wird. Das Vorwärtssuchen beginnt mit der aktuellen Textmarke. Die Rückwärtssuche beginnt in der Zeile vor der Textmarke. Die Endposition der Suche befindet sich kurz vor der ersten Zeile, die die Einschränkung erfüllt hat. 
   
-Wenn die Zeile, auf die durch die Textmarke im _BkOrigin_ -Parameter verwiesen wird, in der Tabelle nicht mehr vorhanden ist und die Tabelle keine neue Position für die Textmarke festlegen kann, gibt **FindRow** MAPI_E_INVALID_BOOKMARK zurück. Wenn die Zeile, auf die durch _BkOrigin_ verwiesen wird, nicht mehr vorhanden ist und die Tabelle eine neue Position für die Textmarke festlegen kann, gibt **FindRow** MAPI_W_POSITION_CHANGED zurück. 
+Wenn die Zeile, auf die die Textmarke im  _BkOrigin-Parameter_ verweist, nicht mehr in der Tabelle vorhanden ist und die Tabelle keine neue Position für die Textmarke einrichten kann, gibt **FindRow** MAPI_E_INVALID_BOOKMARK. Wenn die Zeile, auf die  _BkOrigin_ verweist, nicht mehr vorhanden ist und die Tabelle eine neue Position für die Textmarke einrichten kann, gibt **FindRow** MAPI_W_POSITION_CHANGED. 
   
-Wenn die in _BkOrigin_ übergebene Textmarke entweder BOOKMARK_BEGINNING oder BOOKMARK_END ist, gibt **FindRow** MAPI_E_NOT_FOUND zurück, wenn keine übereinstimmende Zeile gefunden wird. Wenn die in _BkOrigin_ verwendete Textmarke BOOKMARK_CURRENT ist, kann **FindRow** MAPI_W_POSITION_CHANGED zurückgeben, aber nicht MAPI_E_INVALID_BOOKMARK, da immer eine aktuelle Cursor Position vorliegt. 
+Wenn die in  _BkOrigin_ übergebene Textmarke entweder BOOKMARK_BEGINNING oder BOOKMARK_END ist, gibt **FindRow** MAPI_E_NOT_FOUND zurück, wenn keine übereinstimmende Zeile gefunden wird. Wenn die in  _BkOrigin_ verwendete Textmarke BOOKMARK_CURRENT ist, kann **FindRow** MAPI_W_POSITION_CHANGED aber nicht MAPI_E_INVALID_BOOKMARK zurück, da immer eine aktuelle Cursorposition besteht. 
   
-Die **PR_INSTANCE_KEY** ([pidtaginstancekey (](pidtaginstancekey-canonical-property.md))-Eigenschaftsspalte ist für alle Tabellen erforderlich, und alle Implementierungen von **FindRow** sind erforderlich, um Aufrufe zu unterstützen, die eine Zeile auf der Grundlage von PR_INSTANCE_KEY suchen. 
+Die **PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md)) -Eigenschaftsspalte ist für alle Tabellen erforderlich, und alle Implementierungen von **FindRow** sind erforderlich, um Aufrufe zu unterstützen, die eine Zeile basierend auf PR_INSTANCE_KEY. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Der Typ der durch **FindRow** durchgeführten Präfixsuche ist nur nützlich, wenn die Suche dieselbe Richtung hat wie die Tabellenorganisation. Um das erforderliche Verhalten zu erreichen, sollte die Vergleichsfunktion, die von der **RELOP_GE** , die in der Eigenschafts Einschränkungs Struktur übergeben wird, die gleiche Vergleichsfunktion sein, auf der die Tabellen Sortierreihenfolge basiert. 
+Der Typ der Präfixsuche, die **von FindRow** ausgeführt wird, ist nur hilfreich, wenn die Suche dieselbe Richtung wie die Tabellenorganisation hat. Um das erforderliche Verhalten zu erreichen, sollte  die vergleichsfunktion, die von der RELOP_GE in der Eigenschaftseinschränkungsstruktur übergeben wird, dieselbe Vergleichsfunktion sein, auf der die Tabellensortierungsreihenfolge basiert. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Sie können **FindRow** verwenden, um den Bildlauf basierend auf vom Benutzer eingegebenen Zeichenfolgen zu unterstützen, insbesondere in Listenfeldern in Adress Dialogfeldern. Bei diesem Bildlauftyp geben Benutzer progressiv längere Präfixe eines gewünschten Zeichenfolgenwerts ein, und Sie können in regelmäßigen Abständen einen **FindRow** -Aufruf ausgeben, um zur ersten Zeile zu wechseln, die mit dem Präfix übereinstimmt. Welche Richtung der Cursor springt, hängt davon ab, in welcher Richtung die Suche ausgeführt wird. 
+Sie können **FindRow verwenden,** um einen Bildlauf basierend auf vom Benutzer ein eingabebasierten Zeichenfolgen zu unterstützen, insbesondere in Listenfeldern innerhalb von Adressdialogfeldern. Bei dieser Art von Bildlauf geben Benutzer schrittweise längere Präfixe eines gewünschten Zeichenfolgenwerts ein, und Sie können regelmäßig einen **FindRow-Aufruf** durchführen, um zur ersten Zeile zu springen, die dem Präfix entspricht. Welche Richtung der Cursor springt, hängt davon ab, in welche Richtung die Suche ausgeführt werden soll. 
   
-Um **FindRow**zu verwenden, muss eine Textmarke festgelegt werden. Die Zeichenfolgensuche kann von einer beliebigen Textmarke stammen, einschließlich der vordefinierten Lesezeichen, die die aktuelle Position und den Anfang und das Ende der Tabelle angeben. Wenn eine hohe Anzahl von Zeilen in der Tabelle vorhanden ist, kann der Suchvorgang langsam sein.
+Um **FindRow verwenden zu** können, muss eine Textmarke festgelegt werden. Die Zeichenfolgensuche kann von beliebigen Textmarken stammen, einschließlich der vordefinierten Lesezeichen, die die aktuelle Position sowie den Anfang und das Ende der Tabelle angeben. Wenn eine große Anzahl von Zeilen in der Tabelle vorhanden ist, kann der Suchvorgang langsam sein.
   
-Verwenden Sie eine Einschränkung, um nach einem Zeichenfolgen Präfix zum Scrollen wie folgt zu suchen. Zum Weiterleiten der Suche in einer Spalte in aufsteigender Reihenfolge und zur Rückwärtssuche für eine in absteigender Reihenfolge sortierte Spalte übergeben Sie eine Eigenschafts Einschränkungs Struktur im _lpRestriction_ -Parameter mit der Relation **RELOP_GE** und dem entsprechenden Property-Tag und Prefix, wobei das Format- _Tag_ **ge** - _Präfix_verwendet wird. 
+Verwenden Sie eine Einschränkung, um ein Zeichenfolgenpräfix für den Bildlauf wie folgt zu finden. Übergeben Sie für die Vorwärtssuche für eine Spalte, die in aufsteigender Reihenfolge sortiert ist, und für die Rückwärtssuche in einer Spalte, die in absteigender Reihenfolge sortiert ist, eine Eigenschaftseinschränkungsstruktur im _lpRestriction-Parameter_ mit der Beziehung **RELOP_GE** und dem entsprechenden Eigenschaftentag und Präfix, indem Sie das _Formattag_ _GE-Präfix verwenden._  
   
-Weitere Informationen zur Verwendung von Einschränkungs Strukturen zum Angeben eines Filters finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md).
+Weitere Informationen zum Verwenden von Einschränkungsstrukturen zum Angeben eines Filters finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md).
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -115,7 +115,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|ContentsTableListCtrl. cpp  <br/> |DwThreadFuncLoadTable  <br/> |MFCMAPI verwendet die **IMAPITable:: FindRow** -Methode, um Zeilen zu finden, die mit einer Einschränkung übereinstimmen.  <br/> |
+|ContentsTableListCtrl.cpp  <br/> |DwThreadFuncLoadTable  <br/> |MFCMAPI verwendet die **IMAPITable::FindRow-Methode,** um Zeilen zu finden, die einer Einschränkung entsprechen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

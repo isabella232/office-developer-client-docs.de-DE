@@ -18,21 +18,21 @@ ms.locfileid: "33432170"
 ---
 # <a name="txtangle-cell-text-transform-section"></a>Zelle "TxtAngle" (Abschnitt "Text Transform")
 
-Bestimmt den aktuellen Drehwinkel des Textblocks im Verhältnis zur *x* -Achse der Form. Der Standardwert ist 0 Grad. 
+Bestimmt den aktuellen Drehwinkel des Textblocks im Verhältnis zur  *x-Achse*  der Form. Der Standardwert ist 0 Grad. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle Zelle TxtAngle aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle TxtAngle anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Zelle TxtAngle  <br/> |
+| Zellenname:  <br/> | TxtAngle  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle TxtAngle aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle TxtAngle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowTextXForm** <br/> |
 | Zellenindex:  <br/> |**visXFormAngle** <br/> |
    

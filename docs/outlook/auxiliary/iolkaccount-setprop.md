@@ -33,22 +33,22 @@ HRESULT IOlkAccount::SetProp(
 
 _dwProp_
   
-> in Das Property-Tag der festzulegenden Account-Eigenschaft.
+> [in] Das Eigenschaftstag der festgelegten Account-Eigenschaft.
     
 _pVar_
   
-> in Der Wert der angegebenen Eigenschaft.
+> [in] Der Wert der angegebenen Eigenschaft.
     
 ## <a name="return-values"></a>Rückgabewerte
 
 |**[HRESULT]**|**Description**|
 |:-----|:-----|
 |S_OK  <br/> |Der Methodenaufruf war erfolgreich.  <br/> |
-|E_INVALIDARG  <br/> |Es wurde ein ungültiges Property-Tag angegeben.  <br/> |
+|E_INVALIDARG  <br/> |Ein ungültiges Eigenschaftstag wurde angegeben.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Verwenden Sie [IOlkAccount:: SaveChanges](iolkaccount-savechanges.md) , um Änderungen am Wert der Kontoeigenschaften zu speichern. 
+Verwenden [Sie IOlkAccount::SaveChanges,](iolkaccount-savechanges.md) um Änderungen am Wert der Kontoeigenschaften zu speichern. 
   
 ## <a name="see-also"></a>Siehe auch
 

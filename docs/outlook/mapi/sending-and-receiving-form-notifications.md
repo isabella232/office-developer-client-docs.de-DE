@@ -1,5 +1,5 @@
 ---
-title: Senden und empfangen von Formular Benachrichtigungen
+title: Senden und Empfangen von Formularbenachrichtigungen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,32 +15,32 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33431855"
 ---
-# <a name="sending-and-receiving-form-notifications"></a>Senden und empfangen von Formular Benachrichtigungen
+# <a name="sending-and-receiving-form-notifications"></a>Senden und Empfangen von Formularbenachrichtigungen
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Formular Benachrichtigungen werden in MAPI verwendet, um die Kommunikation sowohl vom Formular zum Betrachter als auch von Ihrem Betrachter zum Formular zu erleichtern.
+Formularbenachrichtigungen werden in MAPI verwendet, um die Kommunikation sowohl vom Formular zum Viewer als auch vom Viewer zum Formular zu erleichtern.
   
-Formulare senden Benachrichtigungen an den Betrachter, wenn eines der folgenden Ereignisse eintritt:
+Formulare senden Benachrichtigungen an Ihren Viewer, wenn eines der folgenden Ereignisse auftritt:
   
-- Das Formular ist geschlossen.
+- Das Formular wird geschlossen.
     
-- Eine neue Nachricht wird in das Formular geladen.
+- Im Formular wird eine neue Nachricht geladen.
     
 - Ein Speichervorgang ist abgeschlossen.
     
-- Eine Nachricht wird gesendet.
+- Es wird eine Nachricht gesendet.
     
-Jeder dieser Ereignistypen entspricht einer bestimmten Methode in [IMAPIViewAdviseSink: IUnknown](imapiviewadvisesinkiunknown.md), eine der Schnittstellen, die der Formular Betrachter implementieren muss. Wenn ein Ereignis auftritt, ruft das Formular die entsprechende **IMAPIViewAdviseSink** -Methode in der Advise-Senke des Viewers auf. Wenn beispielsweise eine neue Nachricht eingeht, die Ihr Viewer in die Anzeige aufnehmen soll, ruft das Formular die [IMAPIViewAdviseSink:: OnNewMessage](imapiviewadvisesink-onnewmessage.md) -Methode auf. 
+Jeder dieser Ereignistypen entspricht einer bestimmten Methode in [IMAPIViewAdviseSink : IUnknown](imapiviewadvisesinkiunknown.md), einer der Schnittstellen, die die Formularanzeige implementieren muss. Wenn ein Ereignis auftritt, ruft das Formular die entsprechende **IMAPIViewAdviseSink-Methode** in der Anzeigesenke auf. Wenn z. B. eine neue Nachricht eintrifft, die ihr Viewer in die Anzeige einbezahlen soll, ruft das Formular Ihre [IMAPIViewAdviseSink::OnNewMessage-Methode](imapiviewadvisesink-onnewmessage.md) auf. 
   
-Implementieren Sie Ihre Ansicht Advise-Senke auf eine Weise, die für Ihren Betrachter sinnvoll ist. Es gibt keine Standardimplementierung. In **OnNewMessage** können Sie beispielsweise die Ansicht der Inhaltstabelle des aktuellen Ordners aktualisieren, um die neu eingetroffene Nachricht einzuschließen. In [IMAPIViewAdviseSink:: onsubmitted](imapiviewadvisesink-onsubmitted.md), die Methode, die aufgerufen wird, wenn Sie ein gesendetes Nachrichtenereignis empfangen, können Sie die übermittelte Nachricht in einen Ordner "Gesendete Elemente" kopieren.
+Implementieren Sie Ihre Ansichts-Ratensenke auf eine Weise, die für Ihren Betrachter sinnvoll ist. es gibt keine Standardimplementierung. Beispielsweise können Sie in **OnNewMessage** die Ansicht der Inhaltstabelle des aktuellen Ordners so aktualisieren, dass sie die neu eingetroffene Nachricht enthält. In [IMAPIViewAdviseSink::OnSubmitted](imapiviewadvisesink-onsubmitted.md), der Methode, die aufgerufen wird, wenn Sie ein gesendetes Nachrichtenereignis empfangen, können Sie die übermittelte Nachricht in einen Ordner "Gesendete Elemente" kopieren.
   
-Formulare erhalten eine Benachrichtigung von Ihrem Betrachter, wenn eine Änderung auftritt, die sich auf das Formular auswirkt und wenn Sie eine neue Nachricht laden. Wenn Sie ein Formular benachrichtigen möchten, rufen Sie eine der Methoden von **IMAPIFormAdviseSink**: [IMAPIFormAdviseSink:: OnChange](imapiformadvisesink-onchange.md) oder [IMAPIFormAdviseSink:: OnActivateNext](imapiformadvisesink-onactivatenext.md)auf. Rufen **** Sie OnChange auf, um den Status zu kommunizieren. Wenn beispielsweise das Formular das letzte Element in einem Ordner anzeigt, wenn eine neue Nachricht eingeht, rufen **** Sie OnChange mit dem VCSTATUS_NEXT-Flag auf, um dem Formular mitzuteilen, dass es jetzt ein nächstes Element gibt. 
+Formulare erhalten eine Benachrichtigung von Ihrem Viewer, wenn eine Änderung auftritt, die sich auf das Formular auswirkt, und wenn Sie eine neue Nachricht laden. Rufen Sie zum Benachrichtigen eines Formulars eine der Methoden von **IMAPIFormAdviseSink** auf: [IMAPIFormAdviseSink::OnChange](imapiformadvisesink-onchange.md) oder [IMAPIFormAdviseSink::OnActivateNext](imapiformadvisesink-onactivatenext.md). Rufen **Sie OnChange auf,** um den Status zu kommunizieren. Wenn das Formular z. B. das letzte Element in einem Ordner zeigt, wenn eine neue Nachricht eintrifft, rufen Sie **OnChange** mit dem VCSTATUS_NEXT-Flag auf, um dem Formular zu sagen, dass es jetzt ein nächstes Element gibt. 
   
-Rufen Sie **OnActivateNext** auf, um das Formular an den Eingang einer neuen Nachricht zu benachrichtigen, die möglicherweise nicht angezeigt werden kann oder nicht. Führen Sie die Nachrichtenklasse der Nachricht an **OnActivateNext**. 
+Rufen **Sie OnActivateNext auf,** um das Formular vor dem Eintreffen einer neuen Nachricht zu warnen, die möglicherweise angezeigt werden kann oder nicht. Übergeben Sie die Nachrichtenklasse der Nachricht an **OnActivateNext**. 
   
-Benachrichtigungen durch ein Form-Objekt an die Clientanwendung werden von der **IMAPIViewAdviseSink** -Schnittstelle der Clientanwendung verarbeitet. Weitere Informationen finden Sie unter [IMAPIViewAdviseSink: IUnknown](imapiviewadvisesinkiunknown.md).
+Benachrichtigungen eines Formularobjekts an die Clientanwendung werden von der **IMAPIViewAdviseSink-Schnittstelle** der Clientanwendung verarbeitet. Weitere Informationen finden Sie unter [IMAPIViewAdviseSink : IUnknown](imapiviewadvisesinkiunknown.md).
   
 

@@ -25,7 +25,7 @@ ms.locfileid: "33430448"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Konvertiert die interne Eintrags-ID eines Nachrichtenspeichers in eine Eintrags-ID im MAPI-Standardformat.
+Konvertiert den internen Eintragsbezeichner eines Nachrichtenspeichers in einen Eintragsbezeichner im MAPI-Standardformat.
   
 ```cpp
 HRESULT WrapStoreEntryID(
@@ -40,37 +40,37 @@ LPENTRYID FAR * lppWrappedEntry
 
  _cbOrigEntry_
   
-> in Die Anzahl der Bytes in der Eintrags-ID, auf die durch den _lpOrigEntry_ -Parameter verwiesen wird. 
+> [in] Die Byteanzahl im Eintragsbezeichner, auf den der  _lpOrigEntry-Parameter_ verweist. 
     
  _lpOrigEntry_
   
-> in Ein Zeiger auf die ID des privaten Eintrags für den Nachrichtenspeicher.
+> [in] Ein Zeiger auf den privaten Eintragsbezeichner für den Nachrichtenspeicher.
     
  _lpcbWrappedEntry_
   
-> Out Ein Zeiger auf die Bytezahl in der Eintrags-ID, auf die durch den _lppWrappedEntry_ -Parameter verwiesen wird. 
+> [out] Ein Zeiger auf die Byteanzahl in der Eintrags-ID, auf die der  _lppWrappedEntry-Parameter_ verweist. 
     
  _lppWrappedEntry_
   
-> Out Ein Zeiger auf einen Zeiger auf den eingebundenen Eintragsbezeichner.
+> [out] Ein Zeiger auf einen Zeiger auf die umschlossene Eintrags-ID.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Eintrags-ID wurde erfolgreich umbrochen.
+> Der Eintragsbezeichner wurde erfolgreich umschlossen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPISupport:: WrapStoreEntryID** -Methode wird für alle Support Objekte des Dienstanbieters implementiert. Dienstanbieter verwenden **WrapStoreEntryID** , um MAPI eine Eintrags-ID für einen Nachrichtenspeicher zu generieren, der die interne Eintrags-ID des Speichers umschließt. 
+Die **IMAPISupport::WrapStoreEntryID-Methode** wird für alle Dienstanbieterunterstützungsobjekte implementiert. Dienstanbieter verwenden **WrapStoreEntryID,** damit MAPI einen Eintragsbezeichner für einen Nachrichtenspeicher generiert, der den internen Eintragsbezeichner des Informationsspeichers umschließt. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Wenn ein Client die [IMAPIProp::](imapiprop-getprops.md) GetProps-Methode des Nachrichtenspeichers zum Abrufen seiner **PR_STORE_ENTRYID** ([pidtagstoreentryid (](pidtagstoreentryid-canonical-property.md))-Eigenschaft aufruft und Ihr Nachrichtenspeicher eine Eintrags-ID in einem privaten Format verwendet, rufen Sie WrapStoreEntryID auf. ** **, und geben Sie die Eintrags-ID zurück, auf die durch den _lppWrappedEntry_ -Parameter verwiesen wird. 
+Wenn ein Client die [IMAPIProp::GetProps-Methode](imapiprop-getprops.md) ihres Nachrichtenspeichers aufruft, um seine **PR_STORE_ENTRYID** ([PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md))-Eigenschaft abzurufen, und ihr Nachrichtenspeicher einen Eintragsbezeichner in einem privaten Format verwendet, rufen Sie **WrapStoreEntryID** auf, und geben Sie den Eintragsbezeichner zurück, auf den der  _lppWrappedEntry-Parameter_ verweist. 
   
-Aufrufe der [IMSProvider:: Login](imsprovider-logon.md) -und [IMSLogon:: CompareEntryIDs](imslogon-compareentryids.md) -Methoden rufen immer den privaten Eintragsbezeichner des Speichers ab; die Wrapped-Version wird nur zwischen Clientanwendungen und MAPI verwendet. 
+Aufrufe der [Methoden IMSProvider::Logon](imsprovider-logon.md) und [IMSLogon::CompareEntryIDs](imslogon-compareentryids.md) rufen immer den privaten Eintragsbezeichner des Speichers ab. die umschlossene Version wird nur zwischen Clientanwendungen und MAPI verwendet. 
   
-Freigeben des Speichers für die Eintrags-ID, auf die durch den _lppWrappedEntry_ -Parameter verwiesen wird, mithilfe der [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion, wenn Sie die Eintrags-ID nicht mehr verwenden. 
+Gibt den Arbeitsspeicher für den Eintragsbezeichner frei, auf den der  _lppWrappedEntry-Parameter_ verweist, indem Sie die [MAPIFreeBuffer-Funktion](mapifreebuffer.md) verwenden, wenn Sie mit der Eingabe-ID fertig sind. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -20,10 +20,10 @@ ms.locfileid: "33428347"
 
 Enthält Zellen, die die Zeichenblatteinstellungen für Shapes und Verbinder steuern. Dazu zählen die Abstände zwischen allen Shapes auf dem Zeichenblatt, die Abstände zwischen allen Verbindern auf dem Zeichenblatt und das Routingformat für alle Verbinder auf dem Zeichenblatt.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie die Standardwerte für eine bestimmte Form außer Kraft setzen möchten, verwenden Sie die Zellen im Abschnitt **Shape Layout** . 
+Verwenden Sie die Zellen im Abschnitt Shape Layout, um die Seiteneinstellungen für ein bestimmtes Shape **zu überschreiben.** 
   
-Sie können die Werte der Zellen in diesem Abschnitt auch im Dialogfeld **Seite einrichten** auf der Registerkarte **Layout und Routing** festlegen (Klicken Sie auf der Registerkarte **Entwurf** auf der **Seite Setup** Gruppe auf das Dialogfeldstartprogramm). 
+Sie können die Werte der Zellen in diesem Abschnitt auch  auf der Registerkarte Layout  und **Routing** im Dialogfeld Seiteneinrichtung festlegen (klicken Sie auf der Registerkarte Entwurf in der Gruppe Seiteneinrichtung auf das Startfeld des **Dialogfelds).** 
   
 

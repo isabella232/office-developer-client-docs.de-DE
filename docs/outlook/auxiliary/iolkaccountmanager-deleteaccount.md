@@ -32,13 +32,13 @@ HRESULT IOlkAccountManager::DeleteAccount (
 
 _dwAcctID_
   
-> in Die Konto-ID des zu löschenden Kontos.
+> [in] Die Konto-ID des zu löschende Kontos.
     
 ## <a name="return-values"></a>Rückgabewerte
 
 |**[HRESULT]**|**Description**|
 |:-----|:-----|
-|S_OK  <br/> |Der Aufruf war erfolgreich.  <br/> |
+|S_OK  <br/> |Der Aufruf ist erfolgreich  <br/> |
 |E_ACCT_NOT_FOUND  <br/> |Das angegebene Konto wurde nicht gefunden.  <br/> |
 |E_OLK_NOT_INITIALIZED  <br/> |Konto-Manager wurde nicht für die Verwendung initialisiert.  <br/> |
    

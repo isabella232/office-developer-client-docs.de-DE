@@ -22,32 +22,32 @@ Definiert das Platzierungsverhalten für ein platzierbares Shape.
   
 |**Wert**|**Auswahlmodus**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
-|&amp;H1  <br/> |Verschieben Sie dieses Shape nicht, wenn Shapes mithilfe des Dialogfelds **Layout konfigurieren** festgelegt werden.  <br/> |**visSLOFixedPlacement** <br/> |
+|&amp;H1  <br/> |Verschieben Sie dieses Shape nicht, wenn Shapes mithilfe des Dialogfelds **Layout** konfigurieren ausgelegt werden.  <br/> |**visSLOFixedPlacement** <br/> |
 |&amp;H2  <br/> |Dieses Shape nicht verschieben und nicht zulassen, dass verschiebbare Shapes darüber platziert werden.  <br/> |**visSLOFixedPlow** <br/> |
 |&amp;H4  <br/> |Dieses Shape nicht verschieben, aber zulassen, dass verschiebbare Shapes darüber platziert werden.  <br/> |**visSLOFixedPermeablePlow** <br/> |
 |&amp;H20 (32)  <br/> |Bei Weiterleitungen Verbindungspunktpositionen ignorieren.  <br/> |**visSLOFixedConnPtsIgnore** <br/> |
 |&amp;H40 (64)  <br/> |Nur die Weiterleitung zu Seiten mit Verbindungspunkten zulassen.  <br/> |**visSLOFixedConnPtsOnly** <br/> |
 |&amp;H80 (128)  <br/> |Keine Objekte an den Rand dieses Shapes kleben. Objekte stattdessen an das Ausrichtungsfeld des Shapes kleben.  <br/> |**visSLOFixedNoFoldToShape** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Sie können den Wert dieser Zelle auch im Dialogfeld **Verhalten** auf der Registerkarte **Platzierung** festlegen (wenn ein Shape ausgewählt ist, klicken Sie auf der Registerkarte [Entwicklertools](run-in-developer-mode-display-the-developer-tab.md) in der Gruppe **Shape-Design** auf **Verhalten**, und klicken Sie dann auf die Registerkarte **Platzierung** ). 
+Sie können den Wert dieser Zelle auch auf der Registerkarte Platzierung im Dialogfeld [](run-in-developer-mode-display-the-developer-tab.md) Verhalten festlegen (wenn eine Form ausgewählt ist, klicken  Sie auf der Registerkarte Entwickler in der Gruppe **Shape-Entwurf** auf **Verhalten,** und klicken Sie dann auf die Registerkarte Platzierung).   
   
-Sie können für diese Zelle jede beliebige Kombination dieser Werte festlegen. Sie können beispielsweise den Wert 3&amp;(H3) eingeben, der beim Layout von Shapes mithilfe des Dialogfelds **Layout konfigurieren** (Klicken Sie auf der Registerkarte **Entwurf** in der Gruppe **Layout** auf **Seite neu Layout**), und klicken Sie dann auf ** Weitere Layoutoptionen** ) und wenn andere Platzierungs Formen auf oder in der Nähe der Form platziert werden. 
+Sie können für diese Zelle jede beliebige Kombination dieser Werte festlegen. Sie können z. B. den Wert 3 ( H3) eingeben, der Bewegungen bei der Anordnung von Shapes unter Verwendung des Dialogfelds Layout konfigurieren eliminiert (klicken Sie auf der Registerkarte Entwurf in der Gruppe Layout auf Seite neu layout, und klicken Sie dann auf Weitere &amp; **Layoutoptionen**  )   und wenn andere platzierbare Shapes auf oder in der Nähe der Form platziert werden.  
   
 In Versionen vor Microsoft Visio 2000 wird dieses Verhalten in der Zelle ObjInterakt im Abschnitt Miscellaneous festgelegt. 
   
-Wenn Sie einen Verweis auf die Zelle Zelle ShapeFixedCode aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Verwenden Sie zum Erhalten eines Verweises auf die Zelle ShapeFixedCode anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft:** 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Zelle ShapeFixedCode  <br/> |
+|Zellenname:  <br/> |ShapeFixedCode  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle ShapeFixedCode aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Um einen Verweis auf die Zelle ShapeFixedCode nach Index aus einem Programm zu erhalten, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowShapeLayout** <br/> |
 |Zellenindex:  <br/> |**visSLOFixedCode** <br/> |
    

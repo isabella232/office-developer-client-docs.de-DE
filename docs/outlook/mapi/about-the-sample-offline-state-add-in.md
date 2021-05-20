@@ -1,5 +1,5 @@
 ---
-title: Informationen zum Offline Status-Beispiel-Add-in
+title: Informationen zum Beispiel-Offlinestatus-Add-In
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,31 +13,31 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33431183"
 ---
-# <a name="about-the-sample-offline-state-add-in"></a>Informationen zum Offline Status-Beispiel-Add-in
+# <a name="about-the-sample-offline-state-add-in"></a>Informationen zum Beispiel-Offlinestatus-Add-In
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die Offline Status-API unterstützt Rückrufe, die Änderungen des Verbindungsstatus eines Benutzers in Outlook anzeigen, beispielsweise von der Online-Bereitstellung in Outlook zum Offline schalten. Das Beispiel für Offlinestatus-Add-in ist ein in C++ geschriebenes COM-Add-in, das zeigt, wie Benachrichtigungen über Verbindungsstatusänderungen empfangen werden und wie der aktuelle Status mithilfe der Offline Status-API geändert wird. Weitere Informationen zur Offlinestatus-API finden Sie unter [Informationen zur Offlinestatus-API](about-the-offline-state-api.md).
+Die Offlinestatus-API unterstützt Rückrufe, die Änderungen im Verbindungsstatus eines Benutzers in Outlook angeben, z. B. von online in Outlook offline zu sein. Das Beispiel-Offlinestatus-Add-In ist ein in C++ geschriebenes COM-Add-In, das veranschaulicht, wie Benachrichtigungen über Verbindungsstatusänderungen empfangen werden und wie der aktuelle Status mithilfe der Offlinestatus-API geändert wird. Weitere Informationen zur Offlinestatus-API finden Sie unter [Informationen zur Offlinestatus-API](about-the-offline-state-api.md).
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
 - [Installieren des Offlinestatus-Add-In-Beispiels](installing-the-sample-offline-state-add-in.md)
     
-- Erläutert, wie Sie das Offline Status-Beispiel-Add-in herunterladen und installieren.
+- Erläutert, wie Sie das Beispiel-Offlinestatus-Add-In herunterladen und installieren.
     
 - [Einrichten eines Offlinestatus-Add-Ins](setting-up-an-offline-state-add-in.md)
     
-- Beschreibt, wie Verbindungs-, Initialisierungs-und Setup Funktionen implementiert werden, um ein Offlinestatus-Add-in zu verwenden.
+- Beschreibt, wie Sie Verbindungs-, Initialisierungs- und Setupfunktionen implementieren, um ein Offlinestatus-Add-In zu verwenden.
     
 - [Überwachen von Verbindungsstatusänderungen mit einem Offlinestatus-Add-In](monitoring-connection-state-changes-using-an-offline-state-add-in.md)
     
-- Beschreibt die Verwendung der **[HrOpenOfflineObj](hropenofflineobj.md)** -Funktion zum Abrufen eines Offline Objekts zum Überwachen und Ändern des Verbindungsstatus. 
+- Beschreibt, wie Sie die **[HrOpenOfflineObj-Funktion](hropenofflineobj.md)** verwenden, um ein Offlineobjekt zum Überwachen und Ändern des Verbindungsstatus zu erhalten. 
     
-- [Trennen eines Offline Status-Add-ins](disconnecting-an-offline-state-add-in.md)
+- [Trennen der Trennung eines Offlinestatus-Add-Ins](disconnecting-an-offline-state-add-in.md)
     
-- Beschreibt, wie ein Offlinestatus-Add-in ordnungsgemäß beendet und bereinigt wird, wenn das Add-in getrennt wird.
+- Beschreibt, wie ein Offlinestatus-Add-In ordnungsgemäß beendet und bereinigt wird, wenn das Add-In getrennt ist.
     
 ## <a name="see-also"></a>Siehe auch
 

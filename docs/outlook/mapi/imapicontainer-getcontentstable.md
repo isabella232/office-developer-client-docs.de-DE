@@ -38,31 +38,31 @@ HRESULT GetContentsTable(
 
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die steuert, wie die Inhaltstabelle zurückgegeben wird. Die folgenden Flags können festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie die Inhaltstabelle zurückgegeben wird. Die folgenden Kennzeichen können festgelegt werden:
     
 MAPI_ASSOCIATED 
   
-> Die Tabelle mit den zugeordneten Inhalten des Containers sollte anstelle der Standardinhalts Tabelle zurückgegeben werden. Dieses Flag wird nur mit Ordnern verwendet. Die Nachrichten, die in der Tabelle zugeordnete Inhalte enthalten sind, wurden mit dem MAPI_ASSOCIATED-Flag erstellt, das im Aufruf der [IMAPIFolder:: CreateMessage](imapifolder-createmessage.md) -Methode festgelegt wurde. Clients verwenden in der Regel die zugeordnete Inhaltstabelle, um Formulare, Ansichten und andere ausgeblendete Nachrichten abzurufen. 
+> Die zugeordnete Inhaltstabelle des Containers sollte anstelle der Standardinhaltstabelle zurückgegeben werden. Dieses Flag wird nur für Ordner verwendet. Die Nachrichten, die in der zugeordneten Inhaltstabelle enthalten sind, wurden mit dem MAPI_ASSOCIATED im Aufruf der [IMAPIFolder::CreateMessage-Methode](imapifolder-createmessage.md) erstellt. Clients verwenden in der Regel die zugeordnete Inhaltstabelle, um Formulare, Ansichten und andere ausgeblendete Nachrichten abzurufen. 
     
 ACLTABLE_FREEBUSY
   
-> Ermöglicht den Zugriff auf die frightsFreeBusySimple-und frightsFreeBusyDetailed-Rechte in **PR_MEMBER_RIGHTS**.
+> Ermöglicht den Zugriff auf die Rechte frightsFreeBusySimple und frightsFreeBusyDetailed in **PR_MEMBER_RIGHTS**.
     
 MAPI_DEFERRED_ERRORS 
   
-> **** Getcontentable kann erfolgreich zurückgegeben werden, bevor die Tabelle dem Aufrufer zur Verfügung gestellt wird. Wenn die Tabelle nicht verfügbar ist, kann durch einen nachfolgenden Tabellen Aufruf ein Fehler ausgelöst werden. 
+> **GetContentsTable** kann erfolgreich zurückgeben, möglicherweise bevor die Tabelle dem Aufrufer zur Verfügung steht. Wenn die Tabelle nicht verfügbar ist, kann durch einen nachfolgenden Tabellenaufruf ein Fehler verursacht werden. 
     
 MAPI_UNICODE 
   
-> Fordert an, dass die Spalten, die Zeichenfolgendaten enthalten, im Unicode-Format zurückgegeben werden. Wenn das MAPI_UNICODE-Flag nicht festgelegt ist, sollten die Zeichenfolgen im ANSI-Format zurückgegeben werden. 
+> Fordert an, dass die Spalten, die Zeichenfolgendaten enthalten, im Unicode-Format zurückgegeben werden. Wenn das MAPI_UNICODE nicht festgelegt ist, sollten die Zeichenfolgen im ANSI-Format zurückgegeben werden. 
     
 SHOW_SOFT_DELETES
   
-> Zeigt Elemente an, die derzeit als weich gelöscht markiert sind, d. h., Sie befinden sich in der Aufbewahrungszeit für gelöschte Elemente.
+> Zeigt Elemente an, die derzeit als "soft deleted" gekennzeichnet sind, d. h. sie befinden sich in der Aufbewahrungszeit für gelöschte Elemente.
     
  _lppTable_
   
-> Out Ein Zeiger auf einen Zeiger auf die Inhaltstabelle.
+> [out] Ein Zeiger auf einen Zeiger auf die Inhaltstabelle.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -72,31 +72,31 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> Entweder wurde das MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt Unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
+> Entweder wurde MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
     
 MAPI_E_NO_SUPPORT 
   
 > Der Container hat keinen Inhalt und kann keine Inhaltstabelle bereitstellen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPIContainer::** getcontentable-Methode gibt einen Zeiger auf die Inhaltstabelle eines Containers zurück. Eine Inhaltstabelle enthält zusammenfassende Informationen zu Objekten im Container. 
+Die **IMAPIContainer::GetContentsTable-Methode** gibt einen Zeiger auf das Inhaltsverzeichnis eines Containers zurück. Eine Inhaltstabelle enthält Zusammenfassungsinformationen zu Objekten im Container. 
   
-Inhaltstabellen haben lange Spaltensätze. Eine vollständige Liste der erforderlichen und optionalen Spalten in Inhaltstabellen finden Sie unter [Inhaltstabellen](contents-tables.md). 
+Inhaltstabellen verfügen über lange Spaltensätze. Eine vollständige Liste der erforderlichen und optionalen Spalten in Inhaltstabellen finden Sie unter [Contents Tables](contents-tables.md). 
   
-Es ist möglich, dass einige Container keinen Inhalt haben. Diese Container geben MAPI_E_NO_SUPPORT aus ihren Implementierungen **** von getcontentable zurück.
+Es ist möglich, dass einige Container keinen Inhalt haben. Diese Container geben MAPI_E_NO_SUPPORT ihrer Implementierungen von **GetContentsTable zurück.**
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Wenn Sie eine Inhaltstabelle für ihren Container unterstützen, müssen Sie auch Folgendes tun:
+Wenn Sie eine Inhaltstabelle für Ihren Container unterstützen, müssen Sie auch die folgenden Schritte tun:
   
-- Unterstützen Sie Aufrufe der [IMAPIProp:: OpenProperty](imapiprop-openproperty.md) -Methode des Containers, um die **PR_CONTAINER_CONTENTS** ([pidtagcontainercontents (](pidtagcontainercontents-canonical-property.md))-Eigenschaft zu öffnen.
+- Unterstützt Aufrufe der [IMAPIProp::OpenProperty-Methode](imapiprop-openproperty.md) des Containers, um die **PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md)) -Eigenschaft zu öffnen.
     
-- Zurückgeben von **PR_CONTAINER_CONTENTS** als Reaktion auf einen Aufruf des Containers 
+- Zurückgeben **PR_CONTAINER_CONTENTS** als Reaktion auf einen Aufruf des Containers 
     
-    [IMAPIProp::](imapiprop-getprops.md) GetProps und [IMAPIProp::](imapiprop-getproplist.md) getproplist-Methoden. 
+    [IMAPIProp::GetProps-](imapiprop-getprops.md) und [IMAPIProp::GetPropList-Methoden.](imapiprop-getproplist.md) 
     
-Die Implementierung dieser Methode durch einen Remote Transportanbieter muss einen Zeiger auf eine [IMAPITable: IUnknown](imapitableiunknown.md) -Schnittstelle im _ppTable_ -Parameter zurückgeben, der an die getcontentable-Methode übergeben wird. **** Wenn Ihr Transportanbieter über eine vorhandene Inhaltstabelle verfügt, genügt es, einen Zeiger darauf zurückzugeben. Wenn dies nicht der Fall ist, muss diese Methode ein neues [IMAPITable: IUnknown](imapitableiunknown.md) -Objekt erstellen, die Tabelle mit Nachrichtenheadern Auffüllen (sofern vorhanden), und einen Zeiger auf die neue Tabelle zurückgeben. Die [ITableData:: HrGetView](itabledata-hrgetview.md) -Methode ist nützlich, um einen Rückgabewert zu generieren und den Tabellen Zeiger im _ppTable_ -Parameter zu speichern. Die Contents-Tabelle muss mindestens die folgenden Eigenschaftsspalten unterstützen: 
+Die Implementierung dieser Methode durch einen Remotetransportanbieter muss einen Zeiger auf eine [IMAPITable : IUnknown-Schnittstelle](imapitableiunknown.md) im  _ppTable-Parameter_ zurückgeben, der an die **GetContentsTable-Methode übergeben** wird. Wenn Ihr Transportanbieter über eine vorhandene Inhaltstabelle verfügt, reicht es aus, einen Zeiger auf dieses zurückzukehren. Wenn dies nicht der Fall ist, muss diese Methode ein neues [IMAPITable : IUnknown-Objekt](imapitableiunknown.md) erstellen, die Tabelle mit Nachrichtenkopfzeilen auffüllen (sofern vorhanden) und einen Zeiger auf die neue Tabelle zurückgeben. Die [ITableData::HrGetView-Methode](itabledata-hrgetview.md) ist nützlich, um einen Rückgabewert zu generieren und den Tabellenzeiger im  _ppTable-Parameter zu_ speichern. Die Inhaltstabelle muss mindestens die folgenden Eigenschaftenspalten unterstützen: 
   
 - **PR_ENTRYID** ([PidTagEntryID](pidtagentryid-canonical-property.md))
     
@@ -106,39 +106,39 @@ Die Implementierung dieser Methode durch einen Remote Transportanbieter muss ein
     
 - **PR_DISPLAY_TO** ([PidTagDisplayTo](pidtagdisplayto-canonical-property.md))
     
-- **PR_Subject** ([PidTagSubject](pidtagsubject-canonical-property.md))
+- **PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md))
     
 - **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md))
     
 - **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))
     
-- **PR_MESSAGE_SIZE** ([Pidtagmessagesize (](pidtagmessagesize-canonical-property.md))
+- **PR_MESSAGE_SIZE** ([PidTagMessageSize](pidtagmessagesize-canonical-property.md))
     
-- **PR_PRIORITY** ([Pidtagpriority (](pidtagpriority-canonical-property.md))
+- **PR_PRIORITY** ([PidTagPriority](pidtagpriority-canonical-property.md))
     
 - **PR_IMPORTANCE** ([PidTagImportance](pidtagimportance-canonical-property.md))
     
 - **PR_SENSITIVITY** ([PidTagSensitivity](pidtagsensitivity-canonical-property.md))
     
-- **PR_MESSAGE_DELIVERY_TIME** ([Pidtagmessagedeliverytime (](pidtagmessagedeliverytime-canonical-property.md))
+- **PR_MESSAGE_DELIVERY_TIME** ([PidTagMessageDeliveryTime](pidtagmessagedeliverytime-canonical-property.md))
     
-- **PR_MSG_STATUS** ([Pidtagmessagestatus (](pidtagmessagestatus-canonical-property.md))
+- **PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md))
     
-- **PR_MESSAGE_DOWNLOAD_TIME** ([Pidtagmessagedownloadtime (](pidtagmessagedownloadtime-canonical-property.md))
+- **PR_MESSAGE_DOWNLOAD_TIME** ([PidTagMessageDownloadTime](pidtagmessagedownloadtime-canonical-property.md))
     
-- **PR_HASATTACH** ([Pidtaghasattachments (](pidtaghasattachments-canonical-property.md))
+- **PR_HASATTACH** ([PidTagHasAttachments](pidtaghasattachments-canonical-property.md))
     
-- **PR_OBJECT_TYPE** ([Pidtagobjecttype (](pidtagobjecttype-canonical-property.md))
+- **PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md))
     
-- **PR_INSTANCE_KEY** ([Pidtaginstancekey (](pidtaginstancekey-canonical-property.md))
+- **PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md))
     
 - **PR_NORMALIZED_SUBJECT** ([PidTagNormalizedSubject](pidtagnormalizedsubject-canonical-property.md))
     
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Tabellenspalten für String-und Binary-Inhalte können abgeschnitten werden. In der Regel geben Anbieter 255 Zeichen zurück. Da Sie nicht vorher wissen können, ob eine Tabelle abgeschnittene Spalten enthält, wird davon ausgegangen, dass eine Spalte abgeschnitten wird, wenn die Länge der Spalte 255 oder 510 Byte beträgt. Sie können den vollständigen Wert einer abgeschnittenen Spalte, falls erforderlich, jederzeit direkt aus dem Objekt abrufen, indem Sie die Eintrags-ID verwenden, um Sie zu öffnen und dann die **IMAPIProp::** GetProps-Methode aufzurufen. 
+Tabellenspalten mit Zeichenfolgen und binären Inhalten können abgeschnitten werden. In der Regel geben Anbieter 255 Zeichen zurück. Da Sie vorher nicht wissen können, ob eine Tabelle abgeschnittene Spalten enthält, nehmen Sie an, dass eine Spalte abgeschnitten wird, wenn die Länge der Spalte entweder 255 oder 510 Byte beträgt. Sie können jederzeit den vollständigen Wert einer abgeschnittenen Spalte bei Bedarf direkt aus dem Objekt abrufen, indem Sie den Eintragsbezeichner zum Öffnen verwenden und dann die **IMAPIProp::GetProps-Methode** aufrufen. 
   
-Abhängig von der Implementierung des Anbieters können Einschränkungen und Sortiervorgänge für alle Zeichenfolgen oder die gekürzte Version dieser Zeichenfolge gelten.
+Abhängig von der Implementierung des Anbieters können Einschränkungen und Sortiervorgänge für alle Zeichenfolgen oder die abgeschnittene Version dieser Zeichenfolge gelten.
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -146,7 +146,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|ContentsTableDialog. cpp  <br/> |CContentsTableDlg:: CContentsTableDlg  <br/> |Die **CContentsTableDlg** -Klasse **** verwendet getcontentable, um die Einträge in einer Inhaltstabelle abzurufen.  <br/> |
+|ContentsTableDialog.cpp  <br/> |CContentsTableDlg::CContentsTableDlg  <br/> |Die **CContentsTableDlg-Klasse** verwendet **GetContentsTable,** um die Einträge in einer Inhaltstabelle zu erhalten.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -160,7 +160,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 [IMAPITable : IUnknown](imapitableiunknown.md)
   
-[Kanonische Pidtagcontainercontents (-Eigenschaft](pidtagcontainercontents-canonical-property.md)
+[PidTagContainerContents (kanonische Eigenschaft)](pidtagcontainercontents-canonical-property.md)
   
 [IMAPIContainer : IMAPIProp](imapicontainerimapiprop.md)
 

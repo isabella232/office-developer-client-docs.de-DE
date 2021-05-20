@@ -29,8 +29,8 @@ Initialisiert einen Transportanbieter für den Vorgang.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapispi. h  <br/> |
-|Implementiert von:  <br/> |Transport Anbieter  <br/> |
+|Headerdatei  <br/> |Mapispi.h  <br/> |
+|Implementiert von:  <br/> |Transportanbieter  <br/> |
 |Aufgerufen von:  <br/> |MAPI  <br/> |
    
 ```cpp
@@ -51,43 +51,43 @@ HRESULT XPProviderInit(
 
  _hInstance_
   
-> in Die Instanz der Dynamic Link Library (DLL) des Transportanbieters, die MAPI beim Laden der DLL verwendet hat.
+> [in] Die Instanz der Dll (Dynamic Link Library) des Transportanbieters, die MAPI beim Laden der DLL verwendet hat.
     
  _lpMalloc_
   
-> in Zeiger auf ein Speicher Reservierungs Objekt, das die OLE **IMalloc** -Schnittstelle verfügbar macht. Der Transportanbieter muss diese Zuordnungsmethode möglicherweise beim Arbeiten mit bestimmten Schnittstellen wie **IStream**verwenden. 
+> [in] Zeiger auf ein Speicherzuweisungsobjekt, das die OLE **IMalloc-Schnittstelle verfügbar** machen soll. Der Transportanbieter muss diese Zuweisungsmethode möglicherweise verwenden, wenn er mit bestimmten Schnittstellen wie **IStream arbeitet.** 
     
  _lpAllocateBuffer_
   
-> in Zeiger auf die [MAPIAllocateBuffer](mapiallocatebuffer.md) -Funktion, die zum Reservieren von Arbeitsspeicher verwendet werden soll. 
+> [in] Zeiger auf die [MAPIAllocateBuffer-Funktion,](mapiallocatebuffer.md) die zum Zuordnen von Arbeitsspeicher verwendet werden soll. 
     
  _lpAllocateMore_
   
-> in Zeiger auf die [MAPIAllocateMore](mapiallocatemore.md) -Funktion, die zum Zuweisen von zusätzlichem Arbeitsspeicher verwendet werden soll. 
+> [in] Zeiger auf die [MAPIAllocateMore-Funktion,](mapiallocatemore.md) die zum Zuordnen von zusätzlichem Arbeitsspeicher verwendet werden soll. 
     
  _lpFreeBuffer_
   
-> in Zeiger auf die [mapifreebufferfreigegeben](mapifreebuffer.md) -Funktion, die verwendet werden, um Arbeitsspeicher freizugeben. 
+> [in] Zeiger auf die [MAPIFreeBuffer-Funktion,](mapifreebuffer.md) die zum Freispeichern verwendet werden soll. 
     
  _ulFlags_
   
-> in Bitmaske von Flags. Das folgende Flag kann festgelegt werden:
+> [in] Bitmaske von Flags. Das folgende Flag kann festgelegt werden:
     
 MAPI_NT_SERVICE 
   
-> Der Anbieter wird im Kontext eines Windows-Diensts, einem speziellen Prozesstyp ohne Zugriff auf eine beliebige Benutzeroberfläche, geladen. 
+> Der Anbieter wird im Kontext eines Windows geladen, einem speziellen Prozesstyp ohne Zugriff auf eine Benutzeroberfläche. 
     
  _ulMAPIVer_
   
-> in Versionsnummer der Dienstanbieterschnittstelle (SPI), die von MAPI. dll verwendet wird. Die aktuelle Versionsnummer finden Sie in der Headerdatei Mapispi. h. 
+> [in] Versionsnummer der Dienstanbieterschnittstelle (SPI), die Mapi.dll wird. Die aktuelle Versionsnummer finden Sie in der Mapispi.h-Headerdatei. 
     
  _lpulProviderVer_
   
-> Out Zeiger auf die Versionsnummer des SPI, die dieser Transportanbieter verwendet. 
+> [out] Zeiger auf die Versionsnummer des SPI, den dieser Transportanbieter verwendet. 
     
  _lppXPProvider_
   
-> Out Zeiger auf einen Zeiger auf das initialisierte Transportanbieter Objekt.
+> [out] Zeiger auf einen Zeiger auf das initialisierte Transportanbieterobjekt.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -97,21 +97,21 @@ S_OK
     
 MAPI_E_VERSION 
   
-> Die SPI-Version, die von MAPI verwendet wird, ist nicht mit dem SPI kompatibel, der von diesem Anbieter verwendet wird.
+> Die von MAPI verwendete SPI-Version ist nicht mit dem von diesem Anbieter verwendeten SPI kompatibel.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-MAPI Ruft die Einstiegspunktfunktion **XPProviderInit** auf, um einen Transportanbieter nach einer Clientanmeldung zu initialisieren. **XPProviderInit** wird einmal für jeden Transportanbieter aufgerufen, der im Profil des Clients angegeben ist. 
+MAPI ruft die Einstiegspunktfunktion **XPProviderInit** auf, um einen Transportanbieter nach einer Clientanmeldung zu initialisieren. **XPProviderInit** wird einmal für jeden Transportanbieter aufgerufen, der im Clientprofil angegeben ist. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Ein Transportanbieter muss **XPProviderInit** als Einstiegspunktfunktion in der DLL des Anbieters implementieren. Die Implementierung muss auf dem **XPPROVIDERINIT** -Funktionsprototyp basieren, der auch in Mapispi. h angegeben ist. MAPI definiert **XPPROVIDERINIT** für die Verwendung des standardMÄßIGen MAPI-Initialisierungsaufruf Typs STDMAPIINITCALLTYPE, wodurch **XPPROVIDERINIT** der Cdecl-Aufrufkonvention folgt. Ein Vorteil von CDECL besteht darin, dass Aufrufe auch dann versucht werden können, wenn die Anzahl der Anruf Parameter nicht mit der Anzahl der definierten Parameter übereinstimmt. 
+Ein Transportanbieter muss **XPProviderInit** als Einstiegspunktfunktion in der DLL des Anbieters implementieren. Die Implementierung muss auf dem **XPPROVIDERINIT-Funktionsprototyp** basieren, der auch in Mapispi.h angegeben ist. MAPI definiert **XPPROVIDERINIT** für die Verwendung des standardmäßigen MAPI-Initialisierungsaufruftyps STDMAPIINITCALLTYPE, wodurch **XPProviderInit** der CDECL-Aufrufkonvention folgt. Ein Vorteil von CDECL ist, dass Aufrufe auch dann versucht werden können, wenn die Anzahl der aufrufenden Parameter nicht mit der Anzahl der definierten Parameter übereinstimmen. 
   
-Ein Anbieter kann mehrmals initialisiert werden, wenn er in mehreren Profilen gleichzeitig verwendet wird oder mehr als einmal im gleichen Profil angezeigt wird. Da das Provider-Objekt den Kontext enthält, muss **XPProviderInit** für jede Initialisierung ein anderes Anbieterobjekt in _lppXPProvider_ zurückgeben, auch für mehrere Initialisierungen im selben Prozess. 
+Ein Anbieter kann mehrmals initialisiert werden, da er in mehreren Profilen gleichzeitig angezeigt wird oder mehr als einmal im gleichen Profil angezeigt wird. Da das provider-Objekt Kontext enthält, muss **XPProviderInit** ein anderes Anbieterobjekt in  _lppXPProvider_ für jede Initialisierung zurückgeben, auch für mehrere Initialisierungen im gleichen Prozess. 
   
-Der Transportanbieter sollte die Funktionen, auf die von _lpAllocateBuffer_, _lpAllocateMore_und _lpFreeBuffer_ verwiesen wird, für die meisten Speicherzuweisungen und-Aufhebungen verwenden. Insbesondere muss der Anbieter diese Funktionen verwenden, um Arbeitsspeicher für die Verwendung durch Clientanwendungen zu reservieren, wenn Objektschnittstellen wie [IMAPIProp::](imapiprop-getprops.md) GetProps und [IMAPITable:: QueryRows](imapitable-queryrows.md)aufgerufen werden. Wenn der Anbieter auch die Verwendung der OLE-Speicherzuweisung erwartet, sollte er die **IUnknown:: AddRef** -Methode des Zuweisungs Objekts aufrufen, auf die durch den _lpMalloc_ -Parameter verwiesen wird. 
+Der Transportanbieter sollte die Funktionen verwenden, auf die  _lpAllocateBuffer_,  _lpAllocateMore_ und  _lpFreeBuffer_ für die meisten Speicherzuweisungen und Deallocation verwiesen. Insbesondere muss der Anbieter diese Funktionen verwenden, um Speicher für die Verwendung durch Clientanwendungen beim Aufrufen von Objektschnittstellen wie [IMAPIProp::GetProps](imapiprop-getprops.md) und [IMAPITable::QueryRows zu reservieren.](imapitable-queryrows.md) Wenn der Anbieter auch die Verwendung der OLE-Speicherzuweisung erwartet, sollte er die **IUnknown::AddRef-Methode** des Zuweisungsobjekts aufrufen, auf das der  _lpMalloc-Parameter_ verweist. 
   
-Weitere Informationen zum Schreiben von **XPProviderInit**finden Sie unter [Initialisieren des Transport Anbieters](initializing-the-transport-provider.md). Weitere Informationen zu Einstiegspunktfunktionen finden Sie unter [Implementieren einer Dienstanbieter-Einstiegspunktfunktion](implementing-a-service-provider-entry-point-function.md). 
+Weitere Informationen zum Schreiben von **XPProviderInit** finden Sie unter [Initializing the Transport Provider](initializing-the-transport-provider.md). Weitere Informationen zu Einstiegspunktfunktionen finden Sie unter [Implementing a Service Provider Entry Point Function](implementing-a-service-provider-entry-point-function.md). 
   
 ## <a name="see-also"></a>Siehe auch
 

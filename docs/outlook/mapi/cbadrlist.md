@@ -25,12 +25,12 @@ ms.locfileid: "33429040"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Berechnet die Anzahl der Bytes in einer vorhandenen [ADRLIST](adrlist.md) -Struktur. 
+Berechnet die Anzahl der Bytes in einer vorhandenen [ADRLIST-Struktur.](adrlist.md) 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur  <br/> |**ADRLIST** <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur  <br/> |**ADRLIST** <br/> |
    
 ```cpp
 CbADRLIST (_lpadrlist)
@@ -38,9 +38,9 @@ CbADRLIST (_lpadrlist)
 
 ## <a name="parameters"></a>Parameter
 
- __lpadrlist_
+ _ _lpadrlist_
   
-> Zeiger auf die vorhandene **ADRLIST** -Struktur. 
+> Zeiger auf die vorhandene **ADRLIST-Struktur.** 
     
 ## <a name="see-also"></a>Siehe auch
 

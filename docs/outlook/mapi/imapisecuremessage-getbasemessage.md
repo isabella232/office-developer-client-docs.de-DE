@@ -25,7 +25,7 @@ ms.locfileid: "33428578"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft die zugrunde liegende [IMessage: IMAPIProp](imessageimapiprop.md) ab, die dieser [IMAPISecureMessage: IUnknown](imapisecuremessageiunknown.md) kapselt. 
+Ruft die zugrunde liegende [IMessage : IMAPIProp](imessageimapiprop.md) ab, die diese [IMAPISecureMessage : IUnknown](imapisecuremessageiunknown.md) kapselt. 
   
 ```cpp
 HRESULT GetBaseMessage(
@@ -37,7 +37,7 @@ HRESULT GetBaseMessage(
 
  _ppmsg_
   
-> Out Ein sicheres Nachrichtenobjekt.
+> [out] Ein sicheres Nachrichtenobjekt.
     
 ## <a name="return-value"></a>Rückgabewert
 

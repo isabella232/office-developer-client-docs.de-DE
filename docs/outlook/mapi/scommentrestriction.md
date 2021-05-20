@@ -25,11 +25,11 @@ ms.locfileid: "33430609"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt eine Kommentar Einschränkung, die zum kommentieren einer Einschränkung verwendet wird. 
+Beschreibt eine Kommentareinschränkung, die zum Kommentieren einer Einschränkung verwendet wird. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
    
 ```cpp
 typedef struct _SCommentRestriction
@@ -41,27 +41,27 @@ typedef struct _SCommentRestriction
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cValues**
   
-> Die Anzahl der Eigenschaftswerte im Array, auf die durch das **lpProp** -Element verwiesen wird. 
+> Anzahl der Eigenschaftswerte im Array, auf das das **lpProp-Element verweist.** 
     
  **lpRes**
   
-> Zeiger auf eine [SRestriction](srestriction.md) -Struktur. 
+> Zeiger auf eine [SRestriction-Struktur.](srestriction.md) 
     
  **lpProp**
   
-> Zeiger auf ein Array von [SPropValue](spropvalue.md) -Strukturen, die jeweils das Property-Tag und den Wert für eine benannte Eigenschaft enthalten. 
+> Zeiger auf ein Array von [SPropValue-Strukturen,](spropvalue.md) die jeweils das Eigenschaftstag und den Wert für eine benannte Eigenschaft enthalten. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **SCommentRestriction** -Struktur ordnet ein Objekt einer Gruppe benannter Eigenschaften zu. Kommentar Einschränkungen sind im Gegensatz zu anderen Einschränkungen, da Sie nicht ausgewertet werden. Das heißt, Sie werden von der [IMAPITable:: Restrict](imapitable-restrict.md) -Methode ignoriert. Es gibt keine Auswirkung auf die Zeilen, die von der [IMAPITable:: QueryRows](imapitable-queryrows.md) -Methode zurückgegeben werden, nachdem ein **IMAPITable:: Restrict** -Aufruf ausgeführt wurde. 
+Die **SCommentRestriction-Struktur** ordnet ein Objekt einem Satz benannter Eigenschaften zu. Kommentareinschränkungen sind im Gegensatz zu anderen Einschränkungen, da sie nicht ausgewertet werden. Das heißt, sie werden von der [IMAPITable::Restrict-Methode](imapitable-restrict.md) ignoriert. Es gibt keine Auswirkungen auf die Zeilen, die von der [IMAPITable::QueryRows-Methode](imapitable-queryrows.md) zurückgegeben werden, nachdem ein **IMAPITable::Restrict-Aufruf** ausgeführt wurde. 
   
-Die **SCommentRestriction** -Struktur kann verwendet werden, um anwendungsspezifische Informationen mit einer Einschränkung beizubehalten, wenn Sie auf dem Datenträger gespeichert wird. Beispielsweise kann ein Client, der den Namen einer benannten Eigenschaft speichert, die in einer Eigenschaftseinschränkung verwendet wird, dies in einer **SCommentRestriction** -Struktur tun. Das Speichern eines Eigenschaftennamens ist in einer Eigenschaftseinschränkung nicht möglich, da die zugeordnete [SPropertyRestriction](spropertyrestriction.md) -Struktur nur das Tag der Eigenschaft enthält. 
+Die **SCommentRestriction-Struktur** kann verwendet werden, um anwendungsspezifische Informationen mit einer Einschränkung zu speichern, wenn sie auf dem Datenträger gespeichert werden. Beispielsweise kann ein Client, der den Namen einer benannten Eigenschaft, die in einer Eigenschaftseinschränkung verwendet wird, speichern, dies in einer **SCommentRestriction-Struktur** tun. Das Speichern eines Eigenschaftennamens ist in einer Eigenschaftseinschränkung nicht möglich, da die zugeordnete [SPropertyRestriction-Struktur](spropertyrestriction.md) nur das Eigenschaftstag enthält. 
   
-Weitere Informationen zur **SCommentRestriction** -Struktur und zu Einschränkungen im Allgemeinen finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md). 
+Weitere Informationen zur Struktur und Einschränkungen **von SCommentRestriction** im Allgemeinen finden Sie unter [About Restrictions](about-restrictions.md). 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -19,7 +19,7 @@ ms.locfileid: "33430406"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Informationen zum Synchronisieren des Inhalts bestimmter Ordner in einem lokalen Speicher mit dem Server während des [Synchronisierungs Inhaltsstatus](synchronize-contents-state.md). Dazu gehört das Hochladen oder eine vollständige Synchronisierung mit einem Upload und dann einem Download.
+Informationen zum Synchronisieren des Inhalts der angegebenen Ordner in einem lokalen Speicher mit dem Server während des [Synchronisierungsinhaltsstatus](synchronize-contents-state.md). Dies umfasst lediglich das Hochladen oder eine vollständige Synchronisierung, die einen Upload und dann einen Download umfasst.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -39,31 +39,31 @@ struct SYNCCONT
 
 _ulFlags_
   
-> in Flags zum Bestimmen des geeigneten Verhaltens während der Synchronisierung.
+> [in] Flags, um das entsprechende Verhalten während der Synchronisierung zu bestimmen.
     
   - UPC_OK
     
-  - in Die hoch-oder vollständige Synchronisierung war erfolgreich. Der Client legt dies fest, nachdem Informationen mit dem Server synchronisiert wurden.
+  - [in] Hochladen oder vollständige Synchronisierung war erfolgreich. Der Client legt dies nach der Synchronisierung von Informationen mit dem Server fest.
     
 _iEnt_
   
-> Out Index, um die Synchronisierung der Inhalte in der Anzahl der durch _cEnt_angegebenen Ordner nachzuverfolgen.
+> [out] Index, um die Synchronisierung der Inhalte in der anzahl der von _cEnt angegebenen Ordner nachverfolgt zu werden._
     
-_Prozent_
+_cEnt_
   
-> Out Die Anzahl der zu replizierenden Ordner.
+> [out] Anzahl der zu replizierenden Ordner.
     
 _pvReserved_
   
-> Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
+> Dieses Mitglied ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
     
 _ptagaReserved_
   
-> Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
+> Dieses Mitglied ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
     
 _psosReserved_
   
-> Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
+> Dieses Mitglied ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
     
 ## <a name="see-also"></a>Siehe auch
 

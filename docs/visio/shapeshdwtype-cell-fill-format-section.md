@@ -23,28 +23,28 @@ Gibt den Schattentyp für ein Shape an.
 |**Wert**|**Beschreibung**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
 |0  <br/> |Zeichenblattstandard verwenden (Standard)  <br/> |**visFSTPageDefault** <br/> |
-|1  <br/> |Simple  <br/> |**visFSTSimple** <br/> |
-|2  <br/> |Oblique  <br/> |**visFSTOblique** <br/> |
+|1  <br/> |Einfach  <br/> |**visFSTSimple** <br/> |
+|2  <br/> |Schräg  <br/> |**visFSTOblique** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Verwenden Sie diese Zelle, um einen anderen Shape-Schatten als den Seiten Standard anzuwenden (der Standard Schattentyp der Seite ist in der Zelle "ShdwType im Abschnitt Page Properties definiert).
+Verwenden Sie diese Zelle, um einen Formschatten anzuwenden, der sich von der Seiteneinstellung ablöst (der Standardmäßige Schattentyp der Seite wird in der Zelle ShdwType im Abschnitt Seiteneigenschaften definiert).
   
 Einfache Schattentypen werden als Abstandsschatten auf der Benutzeroberfläche beschrieben. Ein einfacher Schatten hat den Effekt, dass das Shape auf einer zum Shape parallelen Ebene einen Schatten zu werfen scheint. Schräge Schatten werden als schräge Schatten auf der Benutzeroberfläche beschrieben und haben den Effekt, dass der Schatten auf einer zum Shape rechtwinkligen Ebene zu liegen scheint. 
   
 Eine Liste vordefinierter einfacher und schräger Schatten finden Sie im Dialogfeld **Schatten** im Feld **Formatvorlage** (klicken Sie auf der Registerkarte **Start** in der Gruppe **Shape** auf **Schatten**, und klicken Sie dann auf **Schattenoptionen**).
   
-Wenn Sie einen Verweis auf die Zelle Zelle aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle ShapeShdwType anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Zelle  <br/> |
+|Zellenname:  <br/> |ShapeShdwType  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Um einen Verweis auf die Zelle ShapeShdwType nach Index aus einem Programm zu erhalten, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowFill** <br/> |
 |Zellenindex:  <br/> |**visFillShdwType** <br/> |
    

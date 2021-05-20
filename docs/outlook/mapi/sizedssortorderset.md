@@ -23,12 +23,12 @@ ms.locfileid: "33428606"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt eine benannte [SSortOrderSet](ssortorderset.md) -Struktur, die eine angegebene Anzahl von Sortierreihenfolgen enthält. 
+Erstellt eine benannte [SSortOrderSet-Struktur,](ssortorderset.md) die eine angegebene Anzahl von Sortierreihenfolgen enthält. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs. h  <br/> |
-|Zugehörige Struktur:  <br/> |**SSortOrderSet** <br/> |
+|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Verwandte Struktur:  <br/> |**SSortOrderSet** <br/> |
    
 ```cpp
 SizedSSortOrderSet (_csort,_name)
@@ -36,19 +36,19 @@ SizedSSortOrderSet (_csort,_name)
 
 ## <a name="parameters"></a>Parameter
 
-__csort_
+_ _csort_
   
-> Die Anzahl der Sortierreihenfolgen, die in die neue Struktur eingeschlossen werden sollen.
+> Anzahl der Sortierreihenfolgen, die in die neue Struktur eingeschlossen werden sollen.
     
-__Name_
+_ _name_
   
 > Name für die neue Struktur.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Verwenden Sie das **SizedSSortOrderSet** -Makro, um eine Sortierreihenfolge mit expliziten Begrenzungen festzulegen. 
+Verwenden Sie **das Makro SizedSSortOrderSet,** um einen Sortierreihenfolgensatz mit expliziten Grenzen zu erstellen. 
   
-Um die neue Struktur zu verwenden, die aus dem **SizedSSortOrderSet** -Makro als Zeiger auf eine **SSortOrderSet** -Struktur resultiert, führen Sie die folgenden Schritte aus: 
+Führen Sie die folgende Gliederung aus, um die neue Struktur zu verwenden, die aus dem **Makro SizedSSortOrderSet** als Zeiger auf eine **SSortOrderSet-Struktur** resultiert: 
   
 ```cpp
 lpSSortOrderSet = (LPSSortOrderSet) &SizedSSortOrderSet;

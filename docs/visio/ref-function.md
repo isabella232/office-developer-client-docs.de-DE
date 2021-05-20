@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82253262
 localization_priority: Normal
 ms.assetid: 7acfeef6-29e4-d5e0-116a-75b5c61c3b41
-description: 'Die REF-Funktion gibt den Fehlerwert #REF! zurück.'
+description: 'Die REF-Funktion gibt den Fehlerwert #REF!.'
 ms.openlocfilehash: 21683edb3da717f7b1968f409b68e3bf242e665b
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,7 +18,7 @@ ms.locfileid: "33429972"
 ---
 # <a name="ref-function"></a>REF Function
 
-Die REF-Funktion gibt den Fehlerwert #REF! zurück.
+Die REF-Funktion gibt den Fehlerwert #REF!.
   
 ## <a name="syntax"></a>Syntax
 

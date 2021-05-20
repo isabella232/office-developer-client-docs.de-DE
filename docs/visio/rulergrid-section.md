@@ -1,5 +1,5 @@
 ---
-title: Lineal &amp; -Raster (Abschnitt)
+title: Abschnitt "Ruler &amp; Grid"
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -16,12 +16,12 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33430784"
 ---
-# <a name="ruler-amp-grid-section"></a>Lineal &amp; -Raster (Abschnitt)
+# <a name="ruler-amp-grid-section"></a>Abschnitt "Ruler &amp; Grid"
 
 Zeigt die aktuellen Einstellungen für das Lineal und die Gitter eines Zeichenblatts an.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Dieser Abschnitt ist eine Zeichenblatteigenschaft, die nur im ShapeSheet-Fenster eines Zeichenblatts angezeigt werden kann. Die darin enthaltenen Zellen entsprechen den Einstellungen im Dialogfeld **Lineal &amp; -Raster** (Klicken Sie auf der Registerkarte **Ansicht** in der Gruppe **einblenden/ausblenden** auf das Dialogfeldstartprogramm). 
+Dieser Abschnitt ist eine Zeichenblatteigenschaft, die nur im ShapeSheet-Fenster eines Zeichenblatts angezeigt werden kann. Die zellen, die sie enthält, entsprechen den Einstellungen  im Dialogfeld Linealraster (klicken Sie auf der Registerkarte Ansicht in der Gruppe **Ein-/Ausblenden** auf das Startfeld des Dialogfelds). **&amp;** 
   
 

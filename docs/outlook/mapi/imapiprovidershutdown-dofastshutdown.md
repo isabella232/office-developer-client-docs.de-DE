@@ -25,7 +25,7 @@ ms.locfileid: "33428844"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt dem MAPI-Anbieter an, dass der MAPI-Client sofort beendet wird, sodass der MAPI-Anbieter Änderungen anhält, um Datenverluste zu vermeiden.
+Gibt dem MAPI-Anbieter an, dass der MAPI-Client sofort beendet wird, sodass der MAPI-Anbieter Änderungen beibehalten wird, um Datenverluste zu verhindern.
   
 ```cpp
 HRESULT DoFastShutdown ();
@@ -35,7 +35,7 @@ HRESULT DoFastShutdown ();
 
 S_OK
   
-> Der MAPI-Anbieter kann sofort mit dem MAPI-Client beendet werden. 
+> Der MAPI-Anbieter ist bereit, den MAPI-Client sofort zu beenden. 
     
 ## <a name="see-also"></a>Siehe auch
 

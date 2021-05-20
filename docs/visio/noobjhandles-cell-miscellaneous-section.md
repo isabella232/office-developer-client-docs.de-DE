@@ -25,19 +25,19 @@ Aktiviert bzw. deaktiviert die Anzeige der Auswahlpunkte für das ausgewählte S
 | TRUE  <br/> | Auswahlpunkte werden nicht angezeigt, wenn ein Shape ausgewählt wird.  <br/> |
 | FALSE  <br/> | Auswahlpunkte werden angezeigt, wenn ein Shape ausgewählt wird.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle Zelle NoObjHandles aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle NoObjHandles anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Zelle NoObjHandles  <br/> |
+| Zellenname:  <br/> | NoObjHandles  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle NoObjHandles aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle NoObjHandles nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-| Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+| Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowMisc** <br/> |
 | Zellenindex:  <br/> |**visNoObjHandles** <br/> |
    

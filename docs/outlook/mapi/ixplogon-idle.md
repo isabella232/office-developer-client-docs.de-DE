@@ -25,7 +25,7 @@ ms.locfileid: "33436048"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt an, dass das System im Leerlauf ist, sodass der Transportanbieter Vorgänge mit niedriger Priorität ausführen kann.
+Gibt an, dass sich das System im Leerlauf befindet, sodass der Transportanbieter Vorgänge mit niedriger Priorität ausführen kann.
   
 ```cpp
 HRESULT Idle(
@@ -43,11 +43,11 @@ HRESULT Idle(
 
 S_OK 
   
-> Der Aufruf war erfolgreich, und der erwartete Wert oder die Werte wurden zurückgegeben.
+> Der Aufruf war erfolgreich und hat den erwarteten Wert oder die erwarteten Werte zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Der MAPI-Spooler ruft in regelmäßigen Abständen die **IXPLogon:: idle** -Methode auf, wenn das System inaktiv ist, indem das XP_LOGON_SP-Flag im Aufruf an die [IXPProvider:: TransportLogon](ixpprovider-transportlogon.md) -Methode übergeben wird, die die aktuelle Sitzung geöffnet hat. Wenn sich das System im Leerlauf befindet, kann der Transportanbieter Hintergrundvorgänge ausführen, die während anderer Aufrufe nicht geeignet sind oder die regelmäßig erfolgen müssen. 
+Der MAPI-Spooler ruft die **IXPLogon::Idle-Methode** regelmäßig auf, wenn dies angefordert wird, wenn das System im Leerlauf ist, indem das flag XP_LOGON_SP im Aufruf der [IXPProvider::TransportLogon-Methode](ixpprovider-transportlogon.md) übergeben wird, die die aktuelle Sitzung geöffnet hat. In Zeiten, in denen sich das System im Leerlauf befindet, kann der Transportanbieter Hintergrundvorgänge ausführen, die bei anderen Anrufen nicht geeignet sind oder regelmäßig ausgeführt werden müssen. 
   
 ## <a name="see-also"></a>Siehe auch
 

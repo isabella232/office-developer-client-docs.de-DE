@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - xlGetInst
 keywords:
-- xlgetinst-Funktion [Excel 2007]
+- xlgetinst-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: 631a8f4e-ea7c-4743-9ee1-b2233fd7d98d
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
@@ -22,7 +22,7 @@ ms.locfileid: "33428130"
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Gibt den Instanz-Handle der Instanz von Microsoft Excel zurück, die derzeit eine DLL aufruft.
+Gibt das Instanzhandle der Instanz des Microsoft Excel, die derzeit eine DLL aufruft.
   
 ```cs
 Excel4(xlGetInst, LPXLOPER pxRes, 0); /* returns low part only */
@@ -35,20 +35,20 @@ Diese Funktion hat keine Argumente.
   
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-Der Instanz-handle (**xltypeInt**) befindet sich im **Val. w** -Feld. 
+Das Instanzhandle (**xltypeInt**) wird im **Val.w-Feld** angezeigt. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Diese Funktion kann verwendet werden, um zwischen mehreren laufenden Instanzen von Excel zu unterscheiden, die die DLL aufrufen.
+Diese Funktion kann verwendet werden, um zwischen mehreren ausgeführten Instanzen von Excel, die die DLL aufrufen, zu unterscheiden.
   
-Wenn Sie diese Funktion mithilfe von [Excel4](excel4-excel12.md) oder [Excel4v](excel4v-excel12v.md)aufrufen, handelt es sich bei der zurückgegebenen XLOPER-ganzzahligen Variablen um einen signierten 16-Bit-short-int-Wert. Dies kann nur die niedrigen 16 Bits des Windows-Handles von 32-Bit enthalten. Beginnend mit Excel 2007 ist die ganzzahlige Variable des **XLOPER12** ein signiertes 32-Bit int und enthält daher das gesamte handle, sodass nicht alle geöffneten Fenster durchlaufen werden müssen. 
+Wenn Sie diese Funktion mithilfe von [Excel4](excel4-excel12.md) oder [Excel4v](excel4v-excel12v.md)aufrufen, ist die zurückgegebene XLOPER-Ganzzahlvariable eine signierte 16-Bit-Short-Int. Dies kann nur die niedrigen 16 Bit des 32-Bit-Windows enthalten. Ab Excel 2007 ist die ganzzahlige Variable des **XLOPER12** ein signiertes 32-Bit-Int und enthält daher das gesamte Handle, ohne dass alle geöffneten Fenster durch iteriert werden müssen. 
   
 > [!IMPORTANT]
-> Wenn die **xlGetInst** -Funktion mit der 64-Bit-Version von Microsoft Excel verwendet wird, schlägt die Funktion fehl. Der Grund ist, dass der **xltypeInt** -Werttyp nicht breit genug ist, um das von Excel zurückgegebene 64-Bit Long-Handle in diesem Fall zu speichern. Zu diesem Zweck hat Excel 2010 eine neue Funktion namens [xlGetInstPtr](xlgetinstptr.md)eingeführt, die sowohl mit der 32-Bit-als auch der 64-Bit-Version von Excel ordnungsgemäß ausgeführt wird. 
+> Wenn die **xlGetInst-Funktion** mit der 64-Bit-Version von Microsoft Excel verwendet wird, kann die Funktion fehlschlagen. Dies liegt daran, dass der **xltypeInt-Werttyp** nicht breit genug ist, um den 64-Bit-Long-Handle zu halten, der von Excel in diesem Fall zurückgegeben wird. Zu diesem Zweck wurde Excel 2010 eine neue Funktion namens [xlGetInstPtr](xlgetinstptr.md)eingeführt, die sowohl mit der 32-Bit- als auch der 64-Bit-Version von Excel. 
   
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel wird die Instanz der letzten Excel-Kopie, die Sie aufgerufen hat, mit der aktuellen Excel-Kopie verglichen, die Sie aufgerufen hat. Wenn Sie identisch sind, wird 1 zurückgegeben; Wenn dies nicht der Fall ist, wird 0 zurückgegeben; Wenn die Funktion fehlschlägt, gibt Sie-1 zurück.
+Im folgenden Beispiel wird die Instanz der letzten Kopie von Excel, die sie aufgerufen hat, mit der aktuellen Kopie von Excel, die sie aufgerufen hat, verglichen. Wenn sie identisch sind, wird 1 zurückgegeben. Andern falls nicht, wird 0 zurückgegeben. Wenn die Funktion fehlschlägt, gibt sie -1 zurück.
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   

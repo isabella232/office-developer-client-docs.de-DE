@@ -19,47 +19,47 @@ ms.locfileid: "33432373"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Je nach Profil muss ein Client einen oder mehrere Nachrichtenspeicher während einer typischen Sitzung öffnen. Das Öffnen eines Nachrichtenspeichers ermöglicht den Zugriff auf einen Zeiger auf seine [IMsgStore: IMAPIProp](imsgstoreimapiprop.md) -Implementierung. Die **IMsgStore** -Schnittstelle stellt Methoden für Benachrichtigungen, Ordner Zuweisungen und den Zugriff auf Ordner und Nachrichten bereit. 
+Je nach Profil muss ein Client während einer typischen Sitzung mindestens einen Nachrichtenspeicher öffnen. Wenn Sie einen Nachrichtenspeicher öffnen, erhalten Sie Zugriff auf einen Zeiger auf die [IMsgStore : IMAPIProp-Implementierung.](imsgstoreimapiprop.md) Die **IMsgStore-Schnittstelle** bietet Methoden für die Benachrichtigung, das Erstellen von Ordnerzuweisungen und den Zugriff auf Ordner und Nachrichten. 
   
-Clients öffnen Nachrichtenspeicher bei der Anmeldung und bei der Änderung eines Profils. Wenn Ihr Client Benutzern das Hinzufügen von Nachrichtenspeicher zu dem Profil während einer aktiven Sitzung ermöglicht, können Sie Sie entweder sofort öffnen oder bis zur nächsten Sitzung ignorieren. Wenn Sie sich für Benachrichtigungen in der Nachrichtenspeichertabelle registrieren, werden Sie über die Verfügbarkeit eines neuen Nachrichtenspeichers benachrichtigt.
+Clients öffnen Nachrichtenspeicher bei der Anmeldung und bei der Änderung eines Profils. Wenn Ihr Client Benutzern das Hinzufügen von Nachrichtenspeichern zum Profil während einer aktiven Sitzung ermöglicht, können Sie sie entweder sofort öffnen oder bis zur nächsten Sitzung ignorieren. Durch die Registrierung für Benachrichtigungen in der Nachrichtenspeichertabelle werden Sie auf die Verfügbarkeit eines neuen Nachrichtenspeichers aufmerksam.
   
-Zum Öffnen eines Nachrichtenspeichers muss die Eintrags-ID verfügbar sein. Die meisten Clients greifen auf die Eintrags-IDs für die Nachrichtenspeicher zu, die Sie über die Nachrichtenspeichertabelle öffnen möchten. Einige Nachrichtenspeicher dokumentieren jedoch das Format Ihrer Eintrags-IDs und ermöglichen Clients somit, die Nachrichtenspeichertabelle zu umgehen und die erforderliche Eintrags-ID zu erstellen. Sie können diese Eintrags-ID direkt an [IMAPISession:: OpenMsgStore](imapisession-openmsgstore.md) und MAPI wird automatisch einen Profil Abschnitt für den Anbieter ohne Zuordnung zu einem Nachrichtendienst. 
+Zum Öffnen eines Nachrichtenspeichers muss der Eintragsbezeichner verfügbar sein. Die meisten Clients greifen auf die Eintragsbezeichner für die Nachrichtenspeicher zu, die sie über die Nachrichtenspeichertabelle öffnen möchten. Einige Nachrichtenspeicher dokumentieren jedoch das Format ihrer Eintragsbezeichner, wodurch Clients die Tabelle des Nachrichtenspeichers umgehen und die erforderliche Eintrags-ID erstellen können. Sie können diese Eintrags-ID direkt an [IMAPISession::OpenMsgStore](imapisession-openmsgstore.md) übergeben, und MAPI erstellt automatisch einen Profilabschnitt für den Anbieter, ohne ihn einem Nachrichtendienst zuzuordnen. 
   
 ## <a name="retrieve-an-entry-identifier-from-the-message-store-table"></a>Abrufen einer Eintrags-ID aus der Nachrichtenspeichertabelle
   
-1. Rufen Sie [IMAPISession:: GetMsgStoresTable](imapisession-getmsgstorestable.md) auf, um die Nachrichtenspeichertabelle zu öffnen. 
+1. Rufen [Sie IMAPISession::GetMsgStoresTable auf,](imapisession-getmsgstorestable.md) um die Nachrichtenspeichertabelle zu öffnen. 
     
-2. Rufen Sie **IMAPITable::** SetColumns auf, um die Tabelle auf einen kleinen Spaltensatz einzuschränken, der die folgenden Spalten enthält: 
+2. Rufen **Sie IMAPITable::SetColumns auf,** um die Tabelle auf einen kleinen Spaltensatz zu beschränken, der die folgenden Spalten enthält: 
     
    - **PR_PROVIDER_DISPLAY** oder **PR_DISPLAY_NAME**
-   - **PR_ENTRYID** -Eigenschaften 
+   - **PR_ENTRYID** Eigenschaften 
    - **PR_MDB_PROVIDER**
    - **PR_RESOURCE_FLAGS**
     
-3. Erstellen Sie eine Einschränkung zum Filtern der Zeile, die den zu öffnenden Nachrichtenspeicher darstellt. Weitere Informationen zum Suchen nach dem Standardnachrichtenspeicher finden Sie unter [Öffnen des Standardnachrichten Speichers](opening-the-default-message-store.md). Wenn Sie nach einem Nachrichtenspeicher anhand des Namens suchen möchten, wenden Sie die folgenden Eigenschaftseinschränkungen an:
+3. Erstellen Sie eine Einschränkung, um die Zeile herausfiltern, die den zu öffnende Nachrichtenspeicher darstellt. Weitere Informationen zum Suchen nach dem Standardnachrichtenspeicher finden Sie unter [Öffnen des Standardnachrichtenspeichers Store](opening-the-default-message-store.md). Wenden Sie eine der folgenden Eigenschaftseinschränkungen an, um nach einem Nachrichtenspeicher nach Namen zu suchen:
     
-   - Vergleichen Sie **PR_PROVIDER_DISPLAY** ([pidtagproviderdisplay (](pidtagproviderdisplay-canonical-property.md)) mit dem allgemeinen Namen für diesen Nachrichten Speichertyp. PR_PROVIDER_DISPLAY kann beispielsweise auf "Persönliche Ordner" festgelegt werden.
+   - Match **PR_PROVIDER_DISPLAY** ([PidTagProviderDisplay](pidtagproviderdisplay-canonical-property.md)) mit dem allgemeinen Namen für diesen Typ von Nachrichtenspeicher. Beispielsweise kann PR_PROVIDER_DISPLAY "Persönliche Ordner" festgelegt werden.
     
-   - Vergleichen Sie **PR_MDB_PROVIDER** ([pidtagstoreprovider (](pidtagstoreprovider-canonical-property.md)) mit dem spezifischen **MAPIUID** für diesen Nachrichten Speichertyp. 
+   - Match **PR_MDB_PROVIDER** ([PidTagStoreProvider](pidtagstoreprovider-canonical-property.md)) mit der spezifischen **MAPIUID** für diesen Typ von Nachrichtenspeicher. 
     
-   - Vergleichen Sie **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) mit dem Namen für diesen bestimmten Nachrichtenspeicher. **PR_DISPLAY_NAME** kann beispielsweise auf "meine Nachrichten für das geschäftsjahr 2010" festgelegt werden. 
+   - Match **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) mit dem Namen für diesen bestimmten Nachrichtenspeicher. Beispielsweise kann **PR_DISPLAY_NAME** auf "Meine Nachrichten für das Geschäftsjahr 2010" festgelegt werden. 
     
-4. Rufen Sie [HrQueryAllRows](hrqueryallrows.md) auf, um die entsprechende Zeile aus der Nachrichtenspeichertabelle abzurufen. Der Eintragsbezeichner für die Zeile wird in das Eigenschafts Wertarray für das **aRow** -Element des Zeilen Satzes eingeschlossen, auf den durch den _pprows_ -Parameter verwiesen wird. 
+4. Rufen [Sie HrQueryAllRows auf,](hrqueryallrows.md) um die entsprechende Zeile aus der Nachrichtenspeichertabelle abzurufen. Der Eintragsbezeichner für die Zeile wird im Eigenschaftenwertarray für das **aRow-Element** der Zeilensatz enthalten, auf die der  _pprows-Parameter_ verweist. 
     
-5. Rufen Sie [FreeProws](freeprows.md) auf, um den Zeilensatz freizugeben, auf den von _pprows_verwiesen wird.
+5. Rufen [Sie FreeProws auf,](freeprows.md) um den Zeilensatz frei zu machen, auf den _pprows verweist._
     
-6. Geben Sie die Nachrichtenspeichertabelle durch Aufrufen der **IUnknown:: Release** -Methode frei. 
+6. Geben Sie die Tabelle für den Nachrichtenspeicher frei, indem Sie die **IUnknown::Release-Methode** aufrufen. 
     
-Wenn Sie einen benutzerdefinierten Eintragsbezeichner für den zu öffnenden Nachrichtenspeicher erstellt haben, rufen Sie die [WrapStoreEntryID](wrapstoreentryid.md) -Funktion auf, um Sie in eine Standardeintrags-ID zu konvertieren. 
+Wenn Sie einen benutzerdefinierten Eintragsbezeichner für den zu öffnenden Nachrichtenspeicher erstellt haben, rufen Sie die [WrapStoreEntryID-Funktion](wrapstoreentryid.md) auf, um sie in einen Standardeintragsbezeichner zu konvertieren. 
   
-Nachdem Sie die Eintrags-ID eines Nachrichtenspeichers angegeben haben, rufen Sie eine der folgenden Methoden auf, um Sie zu öffnen:
+Nachdem Sie den Eintragsbezeichner eines Nachrichtenspeichers verwendet haben, rufen Sie eine der folgenden Methoden auf, um ihn zu öffnen:
   
 - [IMAPISession::OpenMsgStore](imapisession-openmsgstore.md)
 - [IMAPISession::OpenEntry](imapisession-openentry.md)
     
-Rufen Sie **OpenMsgStore** auf, wenn Sie eine Vielzahl spezieller Optionen für den Nachrichtenspeicher angeben müssen. **OpenMsgStore** ermöglicht es Ihnen, die Anzeige von Dialogfeldern zu unterdrücken, den Nachrichtenspeicher als vorübergehend oder als nonmessaging-Speicher zu identifizieren, Zugriffsebenen festzulegen und Fehler zu verzögern. **** Mit OpenEntry können Sie nur Zugriffsebenen festlegen und Fehler zurückstellen. 
+Rufen **Sie OpenMsgStore** auf, wenn Sie eine Vielzahl spezieller Optionen für den Nachrichtenspeicher angeben müssen. **Mit OpenMsgStore** können Sie die Anzeige von Dialogfeldern unterdrücken, den Nachrichtenspeicher als temporär oder als Nichtmessagingspeicher identifizieren, Zugriffsebenen festlegen und Fehler zurückspeichern. **Mit OpenEntry** können Sie nur Zugriffsebenen festlegen und Fehler aufschubsen. 
   
-Das Festlegen des MDB_NO_MAIL-Flags gibt MAPI an, dass der Nachrichtenspeicher nicht zum Senden oder empfangen von Nachrichten verwendet wird. MAPI informiert den MAPI-Spooler nicht über das vorhanden sein dieses Nachrichtenspeichers. Das MDB_TEMPORARY-Flag kennzeichnet einen Nachrichtenspeicher als vorübergehend, was impliziert, dass er nicht zum Speichern von dauerhaften Informationen verwendet werden kann. Temporäre Nachrichtenspeicher werden nicht in der Nachrichtenspeichertabelle angezeigt. 
+Das Festlegen MDB_NO_MAIL zeigt MAPI an, dass der Nachrichtenspeicher nicht zum Senden oder Empfangen von Nachrichten verwendet wird. MAPI informiert den MAPI-Spooler nicht über das Vorhandensein dieses Nachrichtenspeichers. Das MDB_TEMPORARY kennzeichnet einen Nachrichtenspeicher als temporär, was bedeutet, dass er nicht zum Speichern dauerhafter Informationen verwendet werden kann. Temporäre Nachrichtenspeicher werden nicht in der Nachrichtenspeichertabelle angezeigt. 
   
 ## <a name="see-also"></a>Siehe auch
 

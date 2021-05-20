@@ -1,5 +1,5 @@
 ---
-title: Algorithmus zum Berechnen der Speicher-Hash-Nummer
+title: Algorithmus zum Berechnen der Store Hashnummer
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,22 +13,22 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33436307"
 ---
-# <a name="algorithm-to-calculate-the-store-hash-number"></a>Algorithmus zum Berechnen der Speicher-Hash-Nummer
+# <a name="algorithm-to-calculate-the-store-hash-number"></a>Algorithmus zum Berechnen der Store Hashnummer
  
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Als Teil einer MAPI-URL (Uniform Resource Locator) sendet ein Informationsspeicher Anbieter eine Speicher-Hash Nummer an den MAPI-Protokoll Handler, um ein Objekt zu identifizieren, das für die Indizierung bereit ist. Der MAPI-Protokoll Handler verwendet diese Speicher-Hash Nummer, um einen Speicher zu identifizieren. Im allgemeinen berechnet ein Informationsspeicher Anbieter die Speicher-Hash-Nummer auf Basis der Store-Zuordnungs Signatur, wenn der Store die **[PR_MAPPING_SIGNATURE](pidtagmappingsignature-canonical-property.md)** -Eigenschaft im globalen Profil Abschnitt definiert hat. Andernfalls verwendet der Informationsspeicher Anbieter die Speicher Eintrags-ID. Der Algorithmus zum Berechnen der Speicher-hashzahl muss Mehrdeutigkeiten, die Speicher identifizieren, minimieren. 
+Als Teil eines #A0 (Uniform Resource Locator, URL) sendet ein Speicheranbieter eine Speicherhashnummer an den MAPI-Protokollhandler, um ein Objekt zu identifizieren, das für die Indizierung bereit ist. Der #A0 verwendet diese Speicherhashnummer, um einen Speicher zu identifizieren. Im Allgemeinen berechnet ein Speicheranbieter die Speicherhashnummer basierend auf der Speicherzuordnungssignatur, wenn für den Speicher die **[PR_MAPPING_SIGNATURE](pidtagmappingsignature-canonical-property.md)** im abschnitt globales Profil definiert ist. Andernfalls verwendet der Speicheranbieter die Speichereintrags-ID. Der Algorithmus zum Berechnen der Speicherhashnummer muss Mehrdeutigkeiten bei der Identifizierung von Speichern minimieren. 
   
-In diesem Thema wird ein Algorithmus beschrieben, der von Microsoft Office Outlook zum Berechnen einer Speicher-Hash-Nummer basierend auf der Speicher Zuordnungs Signatur oder der Eintrags-ID und dem Namen der Speicherdatei verwendet wird. 
+In diesem Thema wird ein Algorithmus beschrieben Microsoft Office Outlook der zum Berechnen einer Speicherhashnummer basierend auf der Signatur oder Eintrags-ID des Speichers und dem Namen der Speicherdatei verwendet wird. 
   
-Der binäre Blob, der codiert werden soll, ist in den meisten Fällen die PR_ENTRYID des Speichers, aber für Exchange-Cachespeicher (sowohl öffentlich als auch privat) sollte der binäre Blob das PR_MAPPING_SIGNATURE sein, das im Profil enthalten ist.
+Das binäre Blob, das codiert werden soll, ist in den meisten Fällen die PR_ENTRYID des Speichers, aber für zwischengespeicherte Exchange-Speicher, sowohl öffentlich als auch privat, sollte das binäre Blob das PR_MAPPING_SIGNATURE sein, das sich im Profil befindet.
   
-Nach dem Berechnen des Hashs für den binären BLOB eines öffentlichen Ordners, aber vor dem Hash-in der OST-Pfad, die Konstante 0x2E505542, die die Zeichenfolge darstellt ". PUB ", ist Hashed, um sicherzustellen, dass es eindeutig ist, das heißt, unterscheidet sich vom Hash des privaten Speichers.
+Nach dem Berechnen des Hashs für das binäre Blob eines öffentlichen Ordnerspeichers, aber vor dem Hashen im #A0 wird die Konstante 0x2E505542, die die Zeichenfolge darstellt". PUB", wird mit hashed in verwendet, um sicherzustellen, dass es eindeutig ist, d. h. im Unterschied zum Hash des privaten Speichers.
   
-Der Unterstützungscode culled die relevanten Bits aus dem Profil, die verwendet werden können, um zu bestimmen, ob ein Speicher öffentlich oder privat ist, wenn es zwischengespeichert wird, und der Pfad zur OST. Um diesen Code in ein Projekt zu integrieren, rufen Sie die Funktion ComputeStoreHash, die als Eingabe der Sitzungs Zeiger sowie PR\_-Eintrags-, PR\_-SERVICE_UID und PR\_-MDB_PROVIDER aus der Nachrichtenspeichertabelle verwendet. Die restlichen benötigten Informationen werden aus dem Profil abgerufen. Für die Ausgabe gibt diese Funktion den Hashwert zurück, der von\_PR MAPPING_SIGNATURE berechnet wird, wenn es sich bei dem Speicher um einen zwischengespeicherten Exchange-\_Speicher handelt, oder um den durch PR-Eintragswert berechneten Hash.
+Der Supportcode entfernt die relevanten Bits aus dem Profil, die verwendet werden können, um festzustellen, ob ein Speicher öffentlich oder privat ist, ob er zwischengespeichert ist, und den Pfad zum OST. Um diesen Code in ein Projekt zu integrieren, rufen Sie die Funktion ComputeStoreHash auf, die als Eingabe den Sitzungszeiger sowie PR ENTRYID, PR SERVICE_UID und PR MDB_PROVIDER aus der Nachrichtenspeichertabelle \_ \_ \_ verwendet. Die restlichen benötigten Informationen werden aus dem Profil erhalten. Für die Ausgabe gibt diese Funktion den Hash wie von PR MAPPING_SIGNATURE, wenn es sich bei dem Speicher um einen zwischengespeicherten Exchange-Speicher oder den Hash handelt, der aus \_ PR \_ ENTRYID berechnet wird.
   
 > [!NOTE]
-> Die HrEmsmdbUIDFromStore-Support Funktion ist eine [mehrfach Exchange-Konten](using-multiple-exchange-accounts.md)basierte Ersetzung für die Verwendung von pbglobalprofilesectionguidabgerufen zum Öffnen des Profil Abschnitts für ein Exchange-Postfach. 
+> Die Unterstützungsfunktion HrEmsmdbUIDFromStore ist ein [Multi-Exchange-Konten-aktiver](using-multiple-exchange-accounts.md)Ersatz für die Verwendung von pbGlobalProfileSectionGuid zum Öffnen des Profilabschnitts für ein Exchange Postfach. 
   
 ```cpp
 #define PR_PROFILE_OFFLINE_STORE_PATH_A PROP_TAG(PT_STRING8, 0x6610)
@@ -238,10 +238,10 @@ void ComputeStoreHash(LPMAPISESSION lpMAPISession, LPSBinary lpEntryID, LPSBinar
 ```
 
 > [!TIP]
-> Die HrEmsmdbUIDFromStore-Funktion funktioniert ohne tatsächlichen Öffnen des Speichers, daher handelt es sich um eine gute allgemeine Herangehensweise. Wenn Sie jedoch über einen Zeiger auf das Store-Objekt verfügen, können Sie die Profil Abschnitts-GUID auch direkt aus dem Nachrichtenspeicher abrufen, indem Sie die PR_EMSMDB_SECTION_UID-Eigenschaft lesen. 
+> Die HrEmsmdbUIDFromStore-Funktion funktioniert, ohne den Store tatsächlich zu öffnen, daher ist sie ein guter allgemeiner Ansatz. Wenn Sie jedoch bereits über einen Zeiger auf das Store-Objekt verfügen, können Sie die Profilabschnitt-GUID auch direkt aus dem Nachrichtenspeicher abrufen, indem Sie die PR_EMSMDB_SECTION_UID lesen. 
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Informationen zu Benachrichtigungs basierter Speicher Indizierung](about-notification-based-store-indexing.md)
-- [Informationen zu MAPI-URLs für die Benachrichtigungs basierte Indizierung](about-mapi-urls-for-notification-based-indexing.md)
+- [Informationen Notification-Based Store Indizierung](about-notification-based-store-indexing.md)
+- [Informationen zu MAPI-URLs für Notification-Based Indizierung](about-mapi-urls-for-notification-based-indexing.md)
 

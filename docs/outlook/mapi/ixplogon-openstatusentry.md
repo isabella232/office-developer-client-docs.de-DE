@@ -25,7 +25,7 @@ ms.locfileid: "33435901"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Öffnet das Status-Objekt des Transportanbieters.
+Öffnet das Statusobjekt des Transportanbieters.
   
 ```cpp
 HRESULT OpenStatusEntry(
@@ -40,33 +40,33 @@ HRESULT OpenStatusEntry(
 
  _lpInterface_
   
-> in Ein Zeiger auf einen Schnittstellenbezeichner (IID) für das Transport Anmeldeobjekt. Durch das Übergeben von NULL wird die [IMAPIStatus](imapistatusimapiprop.md) -Schnittstelle zurückgegeben. Der _lpInterface_ -Parameter kann auch auf einen Bezeichner für eine Schnittstelle für das Objekt festgelegt werden. 
+> [in] Ein Zeiger auf eine Schnittstellen-ID (Interface Identifier, IID) für das Transportanmeldeobjekt. Durch Übergeben von NULL wird die [IMAPIStatus-Schnittstelle](imapistatusimapiprop.md) zurückgegeben. Der  _lpInterface-Parameter_ kann auch auf einen Bezeichner für eine Schnittstelle für das Objekt festgelegt werden. 
     
  _ulFlags_
   
-> in Eine Bitmaske von Flags, die steuert, wie das Statusobjekt geöffnet wird. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie das Statusobjekt geöffnet wird. Das folgende Flag kann festgelegt werden:
     
 MAPI_MODIFY 
   
-> Fordert Lese-/Schreibzugriff-Berechtigung an. Die Standardschnittstelle ist schreibgeschützt. 
+> Fordert Lese-/Schreibberechtigungen an. Die Standardschnittstelle ist schreibgeschützt. 
     
  _lpulObjType_
   
-> Out Ein Zeiger auf den Typ des geöffneten Objekts.
+> [out] Ein Zeiger auf den Typ des geöffneten Objekts.
     
  _lppEntry_
   
-> Out Ein Zeiger auf den Zeiger auf das geöffnete Status-Objekt.
+> [out] Ein Zeiger auf den Zeiger auf das geöffnete Statusobjekt.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Aufruf war erfolgreich, und der erwartete Wert oder die Werte wurden zurückgegeben.
+> Der Aufruf war erfolgreich und hat den erwarteten Wert oder die erwarteten Werte zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die MAPI-Warteschlange ruft die **IXPLogon:: OpenStatusEntry** -Methode auf, wenn eine **** Clientanwendung eine OpenEntry-Methode für die Eintrags-ID in der Statustabellen Zeile des Transportanbieters aufruft. **OpenStatusEntry** öffnet ein Objekt mit der **IMAPIStatus** -Schnittstelle, die dieser bestimmten Transportanbieter Anmeldung zugeordnet ist. Dieses Objekt wird dann verwendet, um Clientanwendungen das Aufrufen von **IMAPIStatus** -Methoden (beispielsweise zum erneuten Konfigurieren der Anmeldesitzung mithilfe der [IMAPIStatus:: Settingsdialog](imapistatus-settingsdialog.md) -Methode oder zum Überprüfen des Status der Anmeldesitzung mithilfe der [ IMAPIStatus:: ValidateState](imapistatus-validatestate.md) -Methode). 
+Der MAPI-Spooler ruft die **IXPLogon::OpenStatusEntry-Methode** auf, wenn eine Clientanwendung eine **OpenEntry-Methode** für den Eintragsbezeichner in der Statustabelle des Transportanbieters aufruft. **OpenStatusEntry** öffnet ein Objekt mit der **IMAPIStatus-Schnittstelle,** die dieser bestimmten Transportanbieteranmeldung zugeordnet ist. Dieses Objekt wird dann verwendet, um Clientanwendungen das Aufrufen von **IMAPIStatus-Methoden** zu ermöglichen (z. B. um die Anmeldesitzung mithilfe der [IMAPIStatus::SettingsDialog-Methode](imapistatus-settingsdialog.md) neu zu konfigurieren oder den Status der Anmeldesitzung mithilfe der [IMAPIStatus::ValidateState-Methode](imapistatus-validatestate.md) zu überprüfen). 
   
 ## <a name="see-also"></a>Siehe auch
 

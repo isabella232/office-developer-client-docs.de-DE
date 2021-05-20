@@ -18,7 +18,7 @@ ms.locfileid: "33431834"
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Dieser Abschnitt enthält Informationen zum Erstellen und Aufrufen von DLLs, die mit Microsoft Excel funktionieren.
+Dieser Abschnitt enthält Informationen zum Erstellen und Aufrufen von DLLs, die mit Microsoft Excel.
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
@@ -28,11 +28,11 @@ Dieser Abschnitt enthält Informationen zum Erstellen und Aufrufen von DLLs, die
     
 [Zugreifen auf DLLs in Excel](how-to-access-dlls-in-excel.md)
   
-> Beschreibt das Aufrufen von DLL-Funktionen und-Befehlen über ein VBA-Codemodul (Visual Basic für Applikationen), direkt aus einem Arbeitsblatt oder über die Excel-Benutzeroberfläche. 
+> Beschreibt das Aufrufen von DLL-Funktionen und -Befehlen über ein Visual Basic for Applications (VBA)-Codemodul, direkt aus einem Arbeitsblatt oder über Excel Benutzeroberfläche. 
     
-[Aufrufen von benutzerdefinierten Funktionen aus DLLs](calling-user-defined-functions-from-dlls.md)
+[Aufrufen User-Defined Funktionen von DLLs](calling-user-defined-functions-from-dlls.md)
   
-> Beschreibt, wie DLLs zum Aufrufen von benutzerdefinierten Funktionen aktiviert werden.
+> Beschreibt, wie SIE DLLs zum Aufrufen benutzerdefinierter Funktionen aktivieren.
     
 ## <a name="see-also"></a>Siehe auch
 

@@ -39,7 +39,7 @@ HRESULT GetTable(
 
  _ulFlags_
   
-> in Reserviert muss 0 (null) sein.
+> [in] Reserviert; muss 0 (Null) sein.
     
 ACLTABLE_FREEBUSY
   
@@ -47,15 +47,15 @@ ACLTABLE_FREEBUSY
     
 frightsFreeBusyDetailed
   
-> Wenn ACLTABLE_FREEBUSY übergeben wird, werden neue frei/gebucht-Rechte ausführlich angezeigt.
+> Wenn ACLTABLE_FREEBUSY übergeben wird, wird eine detaillierte Anzeige der neuen Frei/Gebucht-Rechte angezeigt.
     
 frightsFreeBusySimple
   
-> Wenn ACLTABLE_FREEBUSY übergeben wird, bietet eine einfache Anzeige der neuen frei/gebucht-Rechte.
+> Wenn ACLTABLE_FREEBUSY übergeben wird, wird eine einfache Anzeige neuer Frei/Gebucht-Rechte angezeigt.
     
  _lppTable_
   
-> Out Verweist auf eine [IMAPITable: IUnknown](imapitableiunknown.md) -Schnittstelle, die das Table-Objekt enthält. 
+> [out] Zeigt auf eine [IMAPITable : IUnknown-Schnittstelle,](imapitableiunknown.md) die das Tabellenobjekt enthält. 
     
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -63,7 +63,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|RulesDlg. cpp  <br/> |CRulesDlg:: OnRefreshView  <br/> |MFCMAPI verwendet die **IExchangeModifyTable:: GetTable** -Methode, um eine Tabelle mit Regeln abzurufen.  <br/> |
+|RulesDlg.cpp  <br/> |CRulesDlg::OnRefreshView  <br/> |MFCMAPI verwendet die **IExchangeModifyTable::GetTable-Methode,** um ein Regelverzeichnis zu erhalten.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm1033809
 localization_priority: Normal
 ms.assetid: 86b0f071-5e0b-56de-ff5b-63c114ad823a
-description: Ruft ein Makro in einem VBA-Projekt (Microsoft Visual Basic für Applikationen) auf.
+description: Ruft ein Makro in einem Microsoft Visual Basic for Applications (VBA)-Projekt auf.
 ms.openlocfilehash: 77045bd67fe9be9aab14e73199b33b93c6d70c2c
 ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
 ms.translationtype: MT
@@ -18,24 +18,24 @@ ms.locfileid: "33428088"
 ---
 # <a name="runmacro-function"></a>RUNMACRO Function
 
-Ruft ein Makro in einem VBA-Projekt (Microsoft Visual Basic für Applikationen) auf. 
+Ruft ein Makro in einem Microsoft Visual Basic for Applications (VBA)-Projekt auf. 
   
 ## <a name="syntax"></a>Syntax
 
-RunMacro (* * *Makroname* * * [, * * *projname_opt* * *]) 
+RUNMACRO (** *macroname* ** [, ** *projname_opt* ** ]) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Makroname_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Name des aufzurufenden Makros.  <br/> |
+| _macroname_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Name des aufzurufenden Makros.  <br/> |
 | _projname_opt_ <br/> |Optional  <br/> |**String** <br/> | Das Projekt, das den Makro enthält.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn ein Projekt angegeben wird, scannt Microsoft Visio alle geöffneten Dokumente für diejenige, die _projname_opt_ enthält, __ und ruft Makroname in diesem Projekt auf. Wenn _projname_opt_ ausgelassen oder NULL ("") ist, __ wird Makroname davon ausgegangen, dass es sich im VBA-Projekt des Dokuments befindet, das die RUNMACRO-Formel enthält, die ausgewertet wird. 
+Wenn ein Projekt angegeben wird, überprüft Microsoft Visio alle  geöffneten Dokumente auf das Dokument, das projname_opt enthält, und ruft den _Makronamen_ in diesem Projekt auf. Wenn  _projname_opt_ oder Null ("") ausgelassen wird, wird davon ausgegangen, dass  _sich macroname_ im #A0 des Dokuments befindet, das die zu bewertende RUNMACRO-Formel enthält. 
   
-Die RUNMACRO-Funktion unterscheidet sich von der CALLTHIS-Funktion dadurch, dass Sie keinen Verweis auf die Form übergibt, die die __ zu bewertende Formel besitzt. Wie CALLTHIS erfordert die RUNMACRO-Funktion keinen Verweis auf _projname_opt_ , um Sie aufzurufen. 
+Die RUNMACRO-Funktion unterscheidet sich von der CALLTHIS-Funktion, da sie keinen Verweis auf die Form übernimmt, deren Name die Formel ist, die an _macroname ausgewertet wird._ Wie CALLTHIS erfordert die RUNMACRO-Funktion keinen Verweis  _auf_ projname_opt aufrufen. 
   
  VBA-Code, der aufgerufen wird, wenn die Visio-Instanz eine RUNMACRO-Funktion in einer Formel auswertet, darf das Dokument mit der Zelle, die die Funktion verwendet, nicht schließen, da dies zu einem Anwendungsfehler führt und Visio beendet wird. 
   

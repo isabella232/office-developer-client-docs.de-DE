@@ -23,7 +23,7 @@ ms.locfileid: "33428858"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Signalisiert das Eintreffen eines Ereignisses, über das der Transportanbieter eine Benachrichtigung angefordert hat.
+Signalisiert das Auftreten eines Ereignisses, über das der Transportanbieter eine Benachrichtigung angefordert hat.
   
 ```cpp
 HRESULT TransportNotify(
@@ -36,67 +36,67 @@ HRESULT TransportNotify(
 
  _lpulFlags_
   
-> [in, out] Eine Bitmaske von Flags, die Benachrichtigungsereignisse signalisiert. Die folgenden Flags können vom MAPI-Spooler bei der Eingabe festgelegt werden und müssen bei der Ausgabe unverändert zurückgegeben werden:
+> [in, out] Eine Bitmaske mit Flags, die Benachrichtigungsereignisse signalisiert. Die folgenden Flags können vom MAPI-Spooler bei der Eingabe festgelegt werden und müssen bei der Ausgabe unverändert zurückgegeben werden:
     
 NOTIFY_ABORT_DEFERRED 
   
-> Benachrichtigt den Transportanbieter, dass eine Nachricht, für die die Verantwortung übernommen wurde, verzögert wird. Nur Transportanbieter, die eine Verschiebung unterstützen, müssen dieses Flag unterstützen. Der _lppvData_ -Parameter verweist auf die Eintrags-ID der abgebrochenen Nachricht. Nachrichten, die der MAPI-Spooler nicht verarbeitet hat, können weiterhin durch Aufrufen der [IMsgStore:: AbortSubmit](imsgstore-abortsubmit.md) -Methode verzögert werden. 
+> Benachrichtigt den Transportanbieter, dass eine Nachricht, für die er die Verantwortung übernommen hat, zurückgestellt wird. Dieses Flag muss nur von Transportanbietern unterstützt werden, die die Verschiebung unterstützen. Der  _lppvData-Parameter_ zeigt auf den Eintragsbezeichner der abgebrochenen Nachricht. Nachrichten, die der MAPI-Spooler nicht verarbeitet hat, können weiterhin durch Aufrufen der [IMsgStore::AbortSubmit-Methode zurückgestellt](imsgstore-abortsubmit.md) werden. 
     
 NOTIFY_BEGIN_INBOUND 
   
-> Der MAPI-Spooler kann jetzt eingehende Nachrichten für diese Transportanbieter Sitzung akzeptieren. Der MAPI-Spooler ruft regelmäßig die [IXPLogon::P oll](ixplogon-poll.md) -Methode auf, wenn der Transportanbieter das LOGON_SP_POLL-Flag mit dem [IXPProvider:: TransportLogon](ixpprovider-transportlogon.md) -Aufruf bei der Anmeldung festgelegt hat. Nachdem das NOTIFY_BEGIN_INBOUND-Flag festgelegt wurde, ehrt der MAPI-Spooler das NOTIFY_NEWMAIL-Flag, das beim Aufruf der [IMAPISupport:: SpoolerNotify](imapisupport-spoolernotify.md) -Methode übergeben wird. Die Statustabellen Zeile für die Transportanbieter Sitzung sollte vor dem zurückgeben durch Aufrufen der [IMAPISupport:: ModifyStatusRow](imapisupport-modifystatusrow.md) -Methode aktualisiert werden. Die Flags NOTIFY_BEGIN_INBOUND und NOTIFY_END_INBOUND schließen sich gegenseitig aus. 
+> Der MAPI-Spooler kann nun eingehende Nachrichten für diese Transportanbietersitzung akzeptieren. Der MAPI-Spooler ruft regelmäßig die [IXPLogon::P oll-Methode](ixplogon-poll.md) auf, wenn der Transportanbieter das LOGON_SP_POLL-Flag mit dem [IXPProvider::TransportLogon-Aufruf](ixpprovider-transportlogon.md) bei der Anmeldung festgelegt hat. Nachdem das NOTIFY_BEGIN_INBOUND festgelegt wurde, berücksichtigt der MAPI-Spooler das NOTIFY_NEWMAIL-Flag, das im Aufruf der [IMAPISupport::SpoolerNotify-Methode](imapisupport-spoolernotify.md) übergeben wurde. Die Zeile "Statustabelle" für die Transportanbietersitzung sollte aktualisiert werden, bevor sie durch Aufrufen der [IMAPISupport::ModifyStatusRow-Methode zurückkehrt.](imapisupport-modifystatusrow.md) Die NOTIFY_BEGIN_INBOUND und NOTIFY_END_INBOUND schließen sich gegenseitig aus. 
     
 NOTIFY_BEGIN_INBOUND_FLUSH 
   
-> Signalisiert, dass der Transportanbieter eingehende Nachrichten so schnell wie möglich durchlaufen soll. Zur Einhaltung dieser Benachrichtigung muss der Transportanbieter das STATUS_INBOUND_FLUSH-Flag in der **PR_STATUS_CODE** ([pidtagstatuscode (](pidtagstatuscode-canonical-property.md))-Eigenschaft der Status Tabellenzeile so schnell wie möglich festlegen, indem Sie **ModifyStatusRow**verwenden. Ein eingehender Messaging Zyklus ist abgeschlossen, wenn der Anbieter feststellt, dass er alle möglicherweise heruntergeladen hat, oder wenn er einen **TransportNotify** -Methodenaufruf mit dem NOTIFY_END_INBOUND_FLUSH-Kennzeichen Satz erhalten hat. Bis zum Ende des eingehenden Messaging Zyklus sollte der Anbieter die [IMAPISupport:: SpoolerYield](imapisupport-spooleryield.md) -Methode nicht aufrufen oder anderweitig Zyklen an das Betriebssystem abgeben, um die Übermittlung eingehender Nachrichten zu beschleunigen. Dies ist akzeptabel, da der MAPI-Spooler in der Regel NOTIFY_BEGIN_INBOUND_FLUSH nur als Reaktion auf die Anforderung eines Benutzers über eine Clientanwendung verwendet, um alle Nachrichten jetzt zuzustellen. Am Ende des eingehenden Flush-Vorgangs sollte der Anbieter **SpoolerNotify** verwenden, um das STATUS_INBOUND_FLUSH-Flag in der **PR_STATUS_CODE** -Eigenschaft seiner Status Zeile zu löschen. 
+> Signalisiert dem Transportanbieter, eingehende Nachrichten so schnell wie möglich zu durchrunden. Um diese Benachrichtigung zu erfüllen, sollte der Transportanbieter das STATUS_INBOUND_FLUSH-Flag in der **PR_STATUS_CODE** ([PidTagStatusCode](pidtagstatuscode-canonical-property.md))-Eigenschaft der Statustabelle so schnell wie möglich mithilfe von **ModifyStatusRow festlegen.** Ein eingehender Messagingzyklus ist abgeschlossen, wenn der Anbieter feststellt, dass er alles heruntergeladen hat, was er kann, oder wenn er einen **TransportNotify-Methodenaufruf** mit dem NOTIFY_END_INBOUND_FLUSH empfangen hat. Bis zum Ende des eingehenden Messagingzyklus sollte der Anbieter die [IMAPISupport::SpoolerYield-Methode](imapisupport-spooleryield.md) nicht aufrufen oder Zyklen auf andere Weise an das Betriebssystem abliefern, um die Zustellung eingehender Nachrichten zu beschleunigen. Dies ist akzeptabel, da der MAPI-Spooler NOTIFY_BEGIN_INBOUND_FLUSH in der Regel nur als Reaktion auf die Anforderung eines Benutzers über eine Clientanwendung verwendet, um jetzt alle Nachrichten zu senden. Am Ende des eingehenden Leervorgangs sollte der Anbieter **SpoolerNotify** verwenden, um das STATUS_INBOUND_FLUSH in der **PR_STATUS_CODE-Eigenschaft** der Statuszeile zu löschen. 
     
 NOTIFY_BEGIN_OUTBOUND 
   
-> Ausgehende Vorgänge können nun für diese Transportanbieter Sitzung ausgeführt werden. Wenn für diesen Anbieter Nachrichten gesendet werden, folgt ein Aufruf der [IXPLogon:: SubmitMessage](ixplogon-submitmessage.md) -Methode. Die Statustabellen Zeile für diese Sitzung sollte vor dem zurückgeben aktualisiert werden. Die Flags NOTIFY_BEGIN_OUTBOUND und NOTIFY_END_OUTBOUND schließen sich gegenseitig aus. 
+> Ausgehende Vorgänge können jetzt für diese Transportanbietersitzung auftreten. Wenn nachrichten für diesen Anbieter gesendet werden sollen, folgt ein Aufruf der [IXPLogon::SubmitMessage-Methode.](ixplogon-submitmessage.md) Die Zeile der Statustabelle für diese Sitzung sollte vor der Rückgabe aktualisiert werden. Die NOTIFY_BEGIN_OUTBOUND und NOTIFY_END_OUTBOUND schließen sich gegenseitig aus. 
     
 NOTIFY_BEGIN_OUTBOUND_FLUSH 
   
-> Funktioniert ähnlich wie das NOTIFY_BEGIN_INBOUND_FLUSH-Flag, verweist jedoch auf ausgehende Nachrichten. Das entsprechende Statuskennzeichen ist STATUS_OUTBOUND_FLUSH.
+> Funktioniert ähnlich wie das NOTIFY_BEGIN_INBOUND_FLUSH, bezieht sich jedoch auf ausgehende Nachrichten. Das entsprechende Statusflag ist STATUS_OUTBOUND_FLUSH.
     
 NOTIFY_CANCEL_MESSAGE 
   
-> Der MAPI-Spooler muss die Übertragung der Nachricht abbrechen, für die der _lppvData_ -Parameter auf den 32-Bit-Wert vom **IXPLogon:: SubmitMessage** -Methodenaufruf zeigt. Das NOTIFY_CANCEL_MESSAGE-Flag kann festgelegt werden, ohne dass der Transportanbieter vom **SubmitMessage**, **IXPLogon:: StartMessage**oder **IXPLogon:: EndMessage** -Methodenaufruf zurückgegeben wird, der der Nachricht zugeordnet ist. Der Transportanbieter muss so schnell wie möglich vom Einstiegspunkt zurückkehren, der die abgebrochene Nachricht verarbeitet. Für eine eingehende Nachricht, die derzeit verarbeitet wird, sollte der Transportanbieter die eingehenden Nachrichten speichern, wo Sie derzeit gespeichert ist, und Sie zum nächsten bequemen Zeitpunkt erneut bereitstellen. Die Daten des Nachrichtenobjekts, die bereits für die eingehende Nachricht gespeichert wurden, werden verworfen. Wenn der Transportanbieter diesen 32-Bit-Wert nicht zur **StartMessage** -oder **SubmitMessage** -Zeit aktualisiert hat, ist der Wert 0 für ausgehende Nachrichten und 1 für eingehende Nachrichten. 
+> Der MAPI-Spooler muss die Übertragung der Nachricht abbrechen, für die der  _lppvData-Parameter_ vom **IXPLogon::SubmitMessage-Methodenaufruf** auf den 32-Bit-Wert verweist. Das NOTIFY_CANCEL_MESSAGE kann festgelegt werden, ohne dass der Transportanbieter vom **SubmitMessage-,** **IXPLogon::StartMessage-** oder **IXPLogon::EndMessage-Methodenaufruf** zurückgegeben wurde, der der Nachricht zugeordnet ist. Der Transportanbieter muss so schnell wie möglich vom Einstiegspunkt zurückgeben, der die abgebrochene Nachricht abhanden kommt. Für eine eingehende Nachricht, die derzeit verarbeitet wird, sollte der Transportanbieter die eingehende Nachricht überall speichern, wo sie derzeit gespeichert ist, und sie zum nächsten geeigneten Zeitpunkt erneut zu senden. Die daten des Nachrichtenobjekts, die bereits für die eingehende Nachricht gespeichert sind, werden verworfen. Wenn der Transportanbieter diesen 32-Bit-Wert nicht zur **StartMessage-** oder **SubmitMessage-Zeit** aktualisiert hat, ist der Wert 0 für ausgehende Nachrichten und 1 für eingehende Nachrichten. 
     
 NOTIFY_END_INBOUND 
   
-> Eingehende Vorgänge müssen für diese Transportanbieter Sitzung beendet werden. Der MAPI-Spooler beendet die Verwendung der **Poll** -Methode und ignoriert NOTIFY_NEWMAIL für diese Sitzung. In-Process-Nachrichten sollten abgeschlossen sein. Die Statustabellen Zeile für die Transportsitzung sollte durch Aufrufen von [ModifyStatusRow](imapisupport-modifystatusrow.md) vor dem zurückgeben aktualisiert werden. Die Flags NOTIFY_END_INBOUND und NOTIFY_BEGIN_INBOUND schließen sich gegenseitig aus. 
+> Eingehende Vorgänge müssen für diese Transportanbietersitzung beendet werden. Der MAPI-Spooler verwendet die **Poll-Methode** nicht mehr und ignoriert NOTIFY_NEWMAIL für diese Sitzung. In-Process-Nachrichten sollten abgeschlossen werden. Die Zeile der Statustabelle für die Transportsitzung sollte aktualisiert werden, indem [Sie ModifyStatusRow aufrufen,](imapisupport-modifystatusrow.md) bevor Sie zurückkehren. Die NOTIFY_END_INBOUND und NOTIFY_BEGIN_INBOUND schließen sich gegenseitig aus. 
     
 NOTIFY_END_INBOUND_FLUSH 
   
-> Benachrichtigt den Transportanbieter, dass er den eingehenden Flush-Modus ausgibt. Der Transportanbieter sollte den Download nicht beenden, das herunterladen sollte jedoch im Hintergrund erfolgen. Die Statustabellen Zeile für die Transportsitzung sollte durch Aufrufen von **ModifyStatusRow** aktualisiert werden, wenn der Transportanbieter diese Benachrichtigung einhalten kann. 
+> Benachrichtigt den Transportanbieter, den eingehenden Leermodus zu verlassen. Der Transportanbieter sollte das Herunterladen nicht beenden, das Herunterladen sollte jedoch im Hintergrund ausgeführt werden. Die Zeile der Statustabelle für die Transportsitzung sollte durch Aufrufen von **ModifyStatusRow** aktualisiert werden, wenn der Transportanbieter diese Benachrichtigung erfüllen kann. 
     
 NOTIFY_END_OUTBOUND 
   
-> Ausgehende Vorgänge müssen für diese Transportanbieter Sitzung beendet werden. Der MAPI-Spooler beendet den Aufruf von **SubmitMessage** und ignoriert das **SpoolerNotify** -NOTIFY_READYTOSEND-Flag. Wenn eine ausgehende Nachricht derzeit gesendet wird, sollte Sie nicht beendet werden; um die Übermittlung einer Nachricht zu beenden, verwenden Sie das NOTIFY_CANCEL_MESSAGE-Flag. Die Statustabellen Zeile für diese Sitzung sollte durch Aufrufen von **ModifyStatusRow** vor dem zurückgeben aktualisiert werden. Die Flags NOTIFY_END_INBOUND und NOTIFY_BEGIN_OUTBOUND schließen sich gegenseitig aus. 
+> Ausgehende Vorgänge müssen für diese Transportanbietersitzung beendet werden. Der MAPI-Spooler beendet den Aufruf von **SubmitMessage** und ignoriert das **SpoolerNotify-NOTIFY_READYTOSEND** Flag. Wenn derzeit eine ausgehende Nachricht gesendet wird, sollte sie nicht beendet werden. Um die Zustellung einer Nachricht zu beenden, verwenden Sie das NOTIFY_CANCEL_MESSAGE Flag. Die Zeile der Statustabelle für diese Sitzung sollte aktualisiert werden, indem **Sie ModifyStatusRow aufrufen,** bevor Sie zurückkehren. Die NOTIFY_END_INBOUND und NOTIFY_BEGIN_OUTBOUND schließen sich gegenseitig aus. 
     
 NOTIFY_END_OUTBOUND_FLUSH 
   
-> Funktioniert ähnlich wie NOTIFY_END_INBOUND_FLUSH, bezieht sich jedoch auf ausgehende Nachrichten. Das entsprechende Statuskennzeichen ist STATUS_OUTBOUND_FLUSH.
+> Funktioniert ähnlich wie NOTIFY_END_INBOUND_FLUSH, bezieht sich jedoch auf ausgehende Nachrichten. Das entsprechende Statusflag ist STATUS_OUTBOUND_FLUSH.
     
  _lppvData_
   
-> Out Ein Zeiger auf einen Zeiger auf ereignisspezifische Daten. Weitere Informationen dazu, was von _lppvData_ angegeben wird, finden Sie in der Beschreibung des Parameters _lpulFlags_ . 
+> [out] Ein Zeiger auf einen Zeiger auf ereignisspezifische Daten. Weitere Informationen dazu, _was lppvData_ angibt, finden Sie in der Beschreibung für den _lpulFlags-Parameter._ 
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Der Aufruf war erfolgreich, und der erwartete Wert oder die Werte wurden zurückgegeben.
+> Der Aufruf war erfolgreich und hat den erwarteten Wert oder die erwarteten Werte zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Der MAPI-Spooler Ruft die **IXPLogon:: TransportNotify** -Methode auf, um den Transportanbieter über Ereignisse zu signalisieren, für die eine Benachrichtigung angefordert wurde. Diese Ereignisse enthalten eine MAPI-Spooler-Anforderung zum Abbrechen einer Nachrichtenübertragung, den Anfang oder das Ende des eingehenden oder ausgehenden Transports und den Anfang oder das Ende eines Vorgangs, um eine eingehende oder ausgehende Nachrichtenwarteschlange zu löschen. 
+Der MAPI-Spooler ruft die **IXPLogon::TransportNotify-Methode auf,** um den Transportanbieter über Ereignisse zu signalisieren, für die eine Benachrichtigung angefordert wurde. Diese Ereignisse umfassen eine MAPI-Spooleranforderung zum Abbrechen einer Nachrichtenübertragung, den Anfang oder das Ende eingehender oder ausgehender Transportvorgänge sowie den Anfang oder das Ende eines Vorgangs zum Löschen einer eingehenden oder ausgehenden Nachrichtenwarteschlange. 
   
-Wenn der Benutzer versucht, eine Nachricht abzubrechen, die der Transportanbieter zuvor zurückgestellt hat, ruft der MAPI-Spooler **TransportNotify**auf und übergibt sowohl die NOTIFY_ABORT_DEFERRED-als auch die NOTIFY_CANCEL_MESSAGE-Flags in _ulFlags_. Wenn sich der MAPI-Spooler abmeldet und weiterhin Nachrichten in der Warteschlange aufweist, übergibt er nur NOTIFY_ABORT_DEFERRED in _ulFlags_ , wenn er **TransportNotify**aufruft.
+Wenn der Benutzer versucht, eine Nachricht abgesagt zu haben, die der Transportanbieter zuvor zurückgestellt hat, ruft der MAPI-Spooler **TransportNotify** auf und über NOTIFY_ABORT_DEFERRED- und NOTIFY_CANCEL_MESSAGE-Flags in  _ulFlags_. Wenn sich der MAPI-Spooler abmeldet und weiterhin Nachrichten in der Warteschlange hat, übergibt er nur NOTIFY_ABORT_DEFERRED in _ulFlags,_ wenn er **TransportNotify aufruft.**
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Der Anbieter muss den Zugriff auf seine Daten für diesen Aufruf synchronisieren, da der MAPI-Spooler diese Methode von einem anderen Ausführungsthread oder von einer Prozedur für ein anderes Fenster aus aufrufen kann. Dies wird wahrscheinlich auftreten, wenn der MAPI-Spooler den Abbruch einer Nachricht signalisiert, die der Transportanbieter mit dem Senden begonnen hat.
+Der Anbieter muss den Zugriff auf seine Daten bei diesem Aufruf synchronisieren, da der MAPI-Spooler diese Methode aus einem anderen Ausführungsthread oder aus einer Prozedur für ein anderes Fenster aufrufen kann. Dies tritt höchstwahrscheinlich auf, wenn der MAPI-Spooler den Abbruch einer Nachricht signalisiert, die der Transportanbieter gesendet hat.
   
 ## <a name="see-also"></a>Siehe auch
 

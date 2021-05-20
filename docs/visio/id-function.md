@@ -26,6 +26,6 @@ ID ()
   
 ### <a name="return-value"></a>Rückgabewert
 
-Zahl
+Nummer
   
 
