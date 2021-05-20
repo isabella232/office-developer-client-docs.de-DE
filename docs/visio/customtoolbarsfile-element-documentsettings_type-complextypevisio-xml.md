@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: c9789239-a919-97f6-8109-126bb1038be6
-description: Enthält den Namen der Microsoft Visio-Benutzeroberflächendatei (VSU), die benutzerdefinierte Symbolleisten und Statusleisten für ein Dokument definiert.
+description: Enthält den Namen der Visio -Datei (VSU), die benutzerdefinierte Symbolleisten und Statusleisten für ein Dokument definiert.
 ms.openlocfilehash: c374bc571163936ccdd4812bcf58a8db19a81f1e
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
@@ -14,9 +14,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34539234"
 ---
-# <a name="customtoolbarsfile-element-documentsettingstype-complextype-visio-xml"></a>CustomToolbarsFile-Element (DocumentSettings_Type complexType) (Visio XML)
+# <a name="customtoolbarsfile-element-documentsettings_type-complextype-visio-xml"></a>CustomToolbarsFile-Element (DocumentSettings_Type complexType) (Visio XML)
 
-Enthält den Namen der Microsoft Visio-Benutzeroberflächendatei (VSU), die benutzerdefinierte Symbolleisten und Statusleisten für ein Dokument definiert.
+Enthält den Namen der Visio -Datei (VSU), die benutzerdefinierte Symbolleisten und Statusleisten für ein Dokument definiert.
   
 ## <a name="element-information"></a>Informationen zum Element
 
@@ -24,8 +24,8 @@ Enthält den Namen der Microsoft Visio-Benutzeroberflächendatei (VSU), die benu
 |:-----|:-----|
 |**Elementtyp** <br/> |[CustomToolbarsFile_Type](customtoolbarsfile_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
-|**Dokumentteile** <br/> |Document. XML  <br/> |
+|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
+|**Dokumentteile** <br/> |document.xml  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,7 +36,7 @@ Enthält den Namen der Microsoft Visio-Benutzeroberflächendatei (VSU), die benu
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

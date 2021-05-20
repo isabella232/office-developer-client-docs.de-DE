@@ -1,5 +1,5 @@
 ---
-title: Cell-Element (Layer section) (Visio XML)
+title: Cell-Element (Layer Section) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34539757"
 ---
-# <a name="cell-element-layer-section-visio-xml"></a>Cell-Element (Layer section) (Visio XML)
+# <a name="cell-element-layer-section-visio-xml"></a>Cell-Element (Layer Section) (Visio XML)
 
 Gibt eine Eigenschaft für einen Layer oder seine Eigenschaften für eine Seite an.
   
@@ -24,8 +24,8 @@ Gibt eine Eigenschaft für einen Layer oder seine Eigenschaften für eine Seite 
 |:-----|:-----|
 |**Elementtyp** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
-|**Dokumentteile** <br/> |Masters. XML, Pages. XML  <br/> |
+|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
+|**Dokumentteile** <br/> |masters.xml, pages.xml  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,13 +36,13 @@ Gibt eine Eigenschaft für einen Layer oder seine Eigenschaften für eine Seite 
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Row-Element (Layer-Abschnitt)](row-element-layer-sectionvisio-xml.md) <br/> |[LayerRow_Type](layerrow_type-complextypevisio-xml.md) <br/> |Gibt eine Eigenschaft für einen Layer oder seine Eigenschaften für eine Seite an.  <br/> |
+|[Row-Element (Layer Section)](row-element-layer-sectionvisio-xml.md) <br/> |[LayerRow_Type](layerrow_type-complextypevisio-xml.md) <br/> |Gibt eine Eigenschaft für einen Layer oder seine Eigenschaften für eine Seite an.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -54,28 +54,28 @@ Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOc
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|E  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Gibt an, dass die Formel zu einem Fehler ausgewertet wird. Der Wert von **E** ist der aktuelle Wert (eine Fehler Meldungszeichenfolge); der Wert des **V** -Attributs ist der letzte gültige Wert.  <br/> |Eine Fehler Meldungszeichenfolge.  <br/> |
-|F  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> | Stellt die Formel des Elements dar. Dieses Attribut kann eine der folgenden Zeichenfolgen enthalten:  <br/>  "(eine Formel)", wenn die Formel lokal vorhanden ist  <br/>  `No Formula`Wenn die Formel lokal gelöscht oder blockiert wird  <br/>  `Inh`, wenn die Formel vererbt wird.  <br/> |Eine Formel.  <br/> |
-|N  <br/> |XSD: Zeichenfolge  <br/> |erforderlich  <br/> |Stellt den Namen der ShapeSheet-Zelle dar.  <br/> |Der Name der ShapeSheet-Zelle.  <br/> Weitere Informationen finden Sie im Abschnitt "Hinweise" weiter unten.  <br/> |
-|U  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Stellt eine Maßeinheit dar, bei der es sich bei der Standardeinstellung um DL handelt.  <br/> |Die Einheiten der Zelle.  <br/> |
-|V  <br/> |XSD: Zeichenfolge  <br/> |Optional  <br/> |Stellt den Wert der Zelle dar.  <br/> |Der Wert der ShapeSheet-Zelle.  <br/> |
+|E  <br/> |xsd:string  <br/> |Optional  <br/> |Gibt an, dass die Formel zu einem Fehler ausgewertet wird. Der Wert von **E** ist der aktuelle Wert (eine Fehlermeldungszeichenfolge); Der Wert  des V-Attributs ist der letzte gültige Wert.  <br/> |Eine Fehlermeldungszeichenfolge.  <br/> |
+|F  <br/> |xsd:string  <br/> |Optional  <br/> | Stellt die Formel des Elements dar. Dieses Attribut kann eine der folgenden Zeichenfolgen enthalten:  <br/>  '(einige Formel)' wenn die Formel lokal vorhanden ist  <br/>  `No Formula` wenn die Formel lokal gelöscht oder blockiert wird  <br/>  `Inh` wenn die Formel geerbt wird.  <br/> |Eine Formel.  <br/> |
+|N  <br/> |xsd:string  <br/> |erforderlich  <br/> |Stellt den Namen der Zelle ShapeSheet dar.  <br/> |Der Name der Zelle ShapeSheet.  <br/> Weitere Informationen finden Sie im Abschnitt "Hinweise".  <br/> |
+|U  <br/> |xsd:string  <br/> |Optional  <br/> |Stellt eine Maßeinheit dar Die Standardeinstellung ist DL.  <br/> |Die Einheiten der Zelle.  <br/> |
+|V  <br/> |xsd:string  <br/> |Optional  <br/> |Stellt den Wert der Zelle dar.  <br/> |Der Wert der Zelle ShapeSheet.  <br/> |
    
 ## <a name="remarks"></a>Hinweise
 
-Das **N** -Attribut dieses **Cell** -Elements muss einer der begrenzten Werte sein, die ShapeSheet-Zellen entsprechen. In der folgenden Tabelle können Sie die Werte des **N** -Attributs bestimmen, die für dieses **Zellen** Element zulässig sind. 
+Das **N-Attribut** dieses **Cell-Elements** muss einer der begrenzten Werte sein, die ShapeSheet-Zellen entsprechen. In der folgenden Tabelle finden Sie  Informationen zu den Werten des N-Attributs, die für dieses **Cell-Element zulässig** sind. 
   
 |**Wert**|**Beschreibung**|**Weitere Informationen**|
 |:-----|:-----|:-----|
 |Aktiv  <br/> |Gibt an, ob eine Ebene aktiv ist.  <br/> |Keine.  <br/> |
-|Farbe  <br/> |Gibt eine der folgenden Optionen an: den Index der Farbe in der Farbtabelle, die zum Anzeigen der Ebene verwendet wird, oder einen RGB-Wert, der eine benutzerdefinierte Farbe nicht in der Farbtabelle angibt.  <br/> |Keine.  <br/> |
-|ColorTrans  <br/> |Legt den Grad der Transparenz für die Textfarbe einer Ebene oder Form fest (von 0 (vollständig deckend) auf 1 (vollständig transparent).  <br/> |Keine.  <br/> |
-|Kleber  <br/> |Gibt an, ob Shapes, die zur Ebene gehören, an geklebt werden können.  <br/> |Keine.  <br/> |
+|Farbe  <br/> |Gibt einen der folgenden Werte an: Der Index der Farbe in der Farbtabelle, die zum Anzeigen der Ebene oder eines RGB-Werts verwendet wird, der eine benutzerdefinierte Farbe angibt, die nicht in der Farbtabelle angegeben ist.  <br/> |Keine.  <br/> |
+|ColorTrans  <br/> |Bestimmt den Grad der Transparenz für die Textfarbe einer Ebene oder Form von 0 (vollständig undurchsichtig) bis 1 (vollständig transparent).  <br/> |Keine.  <br/> |
+|Glue  <br/> |Gibt an, ob Shapes, die zu der Ebene gehören, geklebt werden können.  <br/> |Keine.  <br/> |
 |Lock  <br/> |Gibt an, ob die dem Layer zugehörigen Shapes gesperrt sind, damit sie nicht ausgewählt oder bearbeitet werden können.  <br/> |Keine.  <br/> |
-|Name  <br/> |Der Name eines Layers.  <br/> |Keine.  <br/> |
+|Name  <br/> |Der Name einer Ebene.  <br/> |Keine.  <br/> |
 |NameUniv  <br/> |Gibt den universellen Namen einer Ebene an.  <br/> |Keine.  <br/> |
-|Print  <br/> |Gibt an, ob Shapes, die zur Ebene gehören gedruckt werden, wenn die Zeichnung gedruckt wird.  <br/> |Keine.  <br/> |
-|Snap  <br/> |Gibt an, ob andere Formen an Shapes ausgerichtet werden können, die der Ebene zugewiesen sind.  <br/> |Keine.  <br/> |
-|Status  <br/> |Gibt an, ob es sich bei der Ebene um eine gültige Ebene für ein Dokument handelt.  <br/> |Keine.  <br/> |
+|Drucken  <br/> |Gibt an, ob Formen, die zu der Ebene gehören, gedruckt werden, wenn die Zeichnung gedruckt wird.  <br/> |Keine.  <br/> |
+|Andocken  <br/> |Gibt an, ob andere Shapes an Shapes fangen können, die der Ebene zugewiesen sind.  <br/> |Keine.  <br/> |
+|Status  <br/> |Gibt an, ob die Ebene eine gültige Ebene für ein Dokument ist.  <br/> |Keine.  <br/> |
 |Visible  <br/> |Gibt an, ob die dem Layer zugehörigen Shapes auf dem Zeichenblatt sichtbar sind.  <br/> |None.  <br/> |
    
 

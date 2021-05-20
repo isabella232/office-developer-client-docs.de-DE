@@ -1,5 +1,5 @@
 ---
-title: ITableDataHrInsertRow
+title: ITableDatahrInsertrow
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -38,11 +38,11 @@ HRESULT HrInsertRow(
 
  _uliRow_
   
-> in Eine sequenzielle Zeilennummer, die eine bestimmte Zeile darstellt. Die neue Zeile wird nach der Zeile, die die Zahl angibt. Der _uliRow_ -Parameter kann Zeilenzahlen von 0 bis n enthalten, wobei n die Gesamtanzahl der Zeilen in der Tabelle ist. Beim Übergeben von n in _uliRow_ wird die Zeile am Ende der Tabelle angefügt. 
+> [in] Eine fortlaufende Zeilennummer, die eine bestimmte Zeile darstellt. Die neue Zeile wird nach der Zeile platziert, die die Zahl angibt. Der  _parameter uliRow_ kann Zeilennummern von 0 bis n enthalten, wobei n die Gesamtzahl der Zeilen in der Tabelle ist. Durch übergeben n in  _uliRow_ wird die Zeile an das Ende der Tabelle angehängt. 
     
  _lpSRow_
   
-> in Ein Zeiger auf eine [SRow](srow.md) -Struktur, die die einzufügende Zeile beschreibt. 
+> [in] Ein Zeiger auf eine [SRow-Struktur,](srow.md) die die eingefügte Zeile beschreibt. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -52,19 +52,19 @@ S_OK
     
 MAPI_E_INVALID_PARAMETER 
   
-> Eine Zeile, die den gleichen Wert für die Indexspalte hat wie die einzufügende Zeile, ist bereits in der Tabelle vorhanden.
+> Eine Zeile, die denselben Wert für ihre Indexspalte wie die eingefügte Zeile hat, ist bereits in der Tabelle vorhanden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **ITableData:: HrInsertRow** -Methode fügt eine Zeile an einer bestimmten Position in eine Tabelle ein. Die neue Zeile wird nach der Zeile eingefügt, die sich in der durch den _uliRow_ -Parameter angegebenen Position befindet. 
+Die **ITableData::HrInsertRow-Methode** fügt eine Zeile in eine Tabelle an einer bestimmten Position ein. Die neue Zeile wird nach der Zeile eingefügt, die sich an der durch den Parameter  _uliRow_ angegebenen Position befindet. 
   
-Wenn _uliRow_ auf die Anzahl der Zeilen in der Tabelle festgelegt ist, wird die neue Zeile am Ende der Tabelle angefügt. 
+Wenn  _uliRow_ auf die Anzahl der Zeilen in der Tabelle festgelegt ist, wird die neue Zeile an das Ende der Tabelle angehängt. 
   
-Die Eigenschaft, die als Indexspalte für die Tabelle fungiert, muss im **lpProps** -Element der [SRow](srow.md) -Struktur enthalten sein, auf die durch den _lpSRow_ -Parameter verwiesen wird. Diese Index Eigenschaft, normalerweise **PR_INSTANCE_KEY** ([pidtaginstancekey (](pidtaginstancekey-canonical-property.md)), wird verwendet, um die Zeile für zukünftige Wartungsaufgaben eindeutig zu identifizieren.
+Die Eigenschaft, die als Indexspalte für die Tabelle fungiert, muss im **lpProps-Member** der [SRow-Struktur](srow.md) enthalten sein, auf die der  _Parameter lpSRow_ zeigt. Diese Indexeigenschaft, in der Regel **PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md)), wird verwendet, um die Zeile für zukünftige Wartungsaufgaben eindeutig zu identifizieren.
   
-Die Eigenschaftenspalten in der **SRow** -Struktur müssen nicht in der gleichen Reihenfolge wie die Eigenschaftenspalten in der Tabelle sein. 
+Die Eigenschaftenspalten in der **SRow-Struktur** müssen nicht in der gleichen Reihenfolge wie die Eigenschaftenspalten in der Tabelle sein. 
   
-Nachdem die Zeile eingefügt wurde, werden Benachrichtigungen an alle Clients oder Dienstanbieter gesendet, die über eine Tabellenansicht verfügen und die [IMAPITable:: Advise](imapitable-advise.md) -Methode der Tabelle aufgerufen haben, um sich für Benachrichtigungen zu registrieren. Es wird keine Benachrichtigung gesendet, wenn die eingefügte Zeile aufgrund einer Einschränkung nicht in der Ansicht enthalten ist. 
+Nachdem die Zeile eingefügt wurde, werden Benachrichtigungen an alle Clients oder Dienstanbieter gesendet, die über eine Ansicht der Tabelle verfügen und die [IMAPITable::Advise-Methode](imapitable-advise.md) der Tabelle aufgerufen haben, um sich für Benachrichtigungen zu registrieren. Es wird keine Benachrichtigung gesendet, wenn die eingefügte Zeile aufgrund einer Einschränkung nicht in die Ansicht einbezogen wird. 
   
 ## <a name="see-also"></a>Siehe auch
 

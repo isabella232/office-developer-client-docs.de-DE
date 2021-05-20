@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 2b9db404-a56a-efeb-90bc-669b61483f81
-description: In diesem Thema werden die Typen im XML-Schema Visio 2013 Dateiformats aufgelistet.
+description: In diesem Thema werden die Typen im Visio 2013-XML-Schema aufgeführt.
 ms.openlocfilehash: 465204a71b991fa0402665086ca146c3e094f641
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.locfileid: "34538592"
 ---
 # <a name="types-visio-xml"></a>Typen (Visio XML)
 
-In diesem Thema werden die Typen im XML-Schema Visio 2013 Dateiformats aufgelistet.
+In diesem Thema werden die Typen im Visio 2013-XML-Schema aufgeführt.
   
 - [Actions_Type complexType](actions_type-complextypevisio-xml.md)
     

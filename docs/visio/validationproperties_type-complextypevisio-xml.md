@@ -13,14 +13,14 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34538515"
 ---
-# <a name="validationpropertiestype-complextype-visio-xml"></a>ValidationProperties_Type complexType (Visio XML)
+# <a name="validationproperties_type-complextype-visio-xml"></a>ValidationProperties_Type complexType (Visio XML)
 
 ## <a name="type-information"></a>Informationen zum Typ
 
 |||
 |:-----|:-----|
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
-|**Schemadatei** <br/> |VisioSchema15-2012-06 -05. xsd  <br/> |
+|**Schemadatei** <br/> |VisioSchema15-2012-06-05.xsd  <br/> |
 |**Erweiterungsbasis** <br/> |Keine  <br/> |
    
 ## <a name="definition"></a>Definition
@@ -41,7 +41,7 @@ ms.locfileid: "34538515"
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -51,7 +51,7 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|LastValidated  <br/> |XSD: DateTime  <br/> |erforderlich  <br/> ||Werte des Typs XSD: DateTime.  <br/> |
-|ShowIgnored  <br/> |XSD: Boolean  <br/> |erforderlich  <br/> ||Werte des XSD: Boolean-Typs.  <br/> |
+|LastValidated  <br/> |xsd:dateTime  <br/> |erforderlich  <br/> ||Werte des xsd:dateTime-Typs.  <br/> |
+|ShowIgnored  <br/> |xsd:boolean  <br/> |erforderlich  <br/> ||Werte des typs xsd:boolean.  <br/> |
    
 

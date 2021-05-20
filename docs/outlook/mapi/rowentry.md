@@ -23,7 +23,7 @@ ms.locfileid: "33436034"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine Zeile und die Operation, die für diese Zeile in einer Tabelle über die [IExchangeModifyTable](iexchangemodifytableiunknown.md) -Schnittstelle ausgeführt wird. 
+Enthält eine Zeile und den Vorgang, der für diese Zeile in einer Tabelle über die [IExchangeModifyTable-Schnittstelle ausgeführt](iexchangemodifytableiunknown.md) wird. 
   
 ```cpp
 typedef struct
@@ -34,19 +34,19 @@ typedef struct
 }  ROWENTRY, FAR * LPROWENTRY;
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
 **ulRowFlags**
   
 > Einer der folgenden Vorgänge, die für die Daten ausgeführt werden sollen: 
     
-  - ROW_ADD: Fügen Sie die Daten der Tabelle als neue Zeile hinzu.
+  - ROW_ADD: Fügen Sie der Tabelle die Daten als neue Zeile hinzu.
       
-  - ROW_MODIFY: diese Zeile in der Tabelle ändern.
+  - ROW_MODIFY: Ändern Sie diese Zeile in der Tabelle.
       
-  - ROW_REMOVE: diese Zeile aus der Tabelle entfernen.
+  - ROW_REMOVE: Entfernen Sie diese Zeile aus der Tabelle.
       
-  - ROW_EMPTY: Fügen Sie die Zeilendaten nicht zur Tabelle hinzu. (Die Zeile ist leer.)
+  - ROW_EMPTY: Fügen Sie der Tabelle keine Zeilendaten hinzu. (Die Zeile ist leer.)
     
 **cValues**
   
@@ -54,7 +54,7 @@ typedef struct
     
 **rgPropVals**
   
-> Ein Array von [SPropValue](spropvalue.md) -Strukturen, das die Spaltenwerte darstellt, die in die Tabelle eingefügt werden sollen. 
+> Ein Array von [SPropValue-Strukturen,](spropvalue.md) die die Spaltenwerte darstellen, die in die Tabelle eingefügt werden sollen. 
     
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -62,7 +62,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|RulesDlg. cpp  <br/> |CRulesDlg:: getSelectedItems  <br/> |Wird zum Erstellen einer Liste ausgewählter Regeln für nachfolg **** Ende modifyable-Aktionen verwendet.  <br/> |
+|RulesDlg.cpp  <br/> |CRulesDlg::GetSelectedItems  <br/> |Wird verwendet, um eine Liste ausgewählter Regeln für nachfolgende **ModifyTable-Aktionen zu** erstellen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
   

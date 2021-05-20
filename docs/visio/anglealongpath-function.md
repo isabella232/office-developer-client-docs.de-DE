@@ -25,26 +25,26 @@ Hinzugefügte Version: Visio 2010
   
 ## <a name="syntax"></a>Syntax
 
-ANGLEALONGPATH (***Abschnitt***, ***Reisen*** ***[, Segment]*** ) 
+ANGLEALONGPATH(***section***, ***travel*** ***[,segment]*** ) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _section_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Abschnitt "Geometrie", der den Pfad darstellt, angegeben mit einer Referenz auf dessen Zelle "Path" (z. B. Geometrie1.Path).  <br/> |
-| _Reise_ <br/> |Erforderlich  <br/> |**Double** <br/> |Der Prozentsatz entlang des Pfads vom Anfangs- zum Endpunkt. Muss zwischen 0 und 1 liegen.  <br/> |
+| _reise_ <br/> |Erforderlich  <br/> |**Double** <br/> |Der Prozentsatz entlang des Pfads vom Anfangs- zum Endpunkt. Muss zwischen 0 und 1 liegen.  <br/> |
 | _segment_ <br/> |Optional  <br/> |**Integer** <br/> |Das 1-basierte Segment des Pfads, an dem der Tangentenwinkel berechnet werden soll.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
  **Double**
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen _Segment_ Wert einschließen, gibt ANGLEALONGPATH nur den Wert für dieses Segment zurück. 
+Wenn Sie einen  _Segmentwert_ enthalten, gibt ANGLEALONGPATH nur den Wert für dieses Segment zurück. 
   
-Wenn Sie einen _Segment_ Wert einschließen, bestimmt ANGLEALONGPATH den Eckpunkt der Tangente mithilfe von _Reisen_ , um das percertage entlang des _Segments_zu berechnen.
+Wenn Sie einen _Segmentwert_ verwenden, bestimmt ANGLEALONGPATH den Punkt der Tangente mithilfe von _Travel,_ um die Percertage entlang des Abschnitts _zu berechnen._
   
-Wenn einer der _Abschnitte_ oder _Segmente_ nicht vorhanden ist, gibt Microsoft Visio #Ref! zurück. 
+Wenn weder _abschnitt noch_ _segment_ vorhanden ist, gibt Microsoft Visio #REF! zurück. 
   
 

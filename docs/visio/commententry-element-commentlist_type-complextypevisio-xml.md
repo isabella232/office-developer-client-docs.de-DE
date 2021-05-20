@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34540112"
 ---
-# <a name="commententry-element-commentlisttype-complextype-visio-xml"></a>CommentEntry-Element (CommentList_Type complexType) (Visio XML)
+# <a name="commententry-element-commentlist_type-complextype-visio-xml"></a>CommentEntry-Element (CommentList_Type complexType) (Visio XML)
 
 Gibt Eigenschaften an, die zum Identifizieren eines Kommentars in einer Zeichnung verwendet werden.
   
@@ -24,8 +24,8 @@ Gibt Eigenschaften an, die zum Identifizieren eines Kommentars in einer Zeichnun
 |:-----|:-----|
 |**Elementtyp** <br/> |[CommentEntry_Type](commententry_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
-|**Dokumentteile** <br/> |comments. XML  <br/> |
+|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
+|**Dokumentteile** <br/> |comments.xml  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,13 +36,13 @@ Gibt Eigenschaften an, die zum Identifizieren eines Kommentars in einer Zeichnun
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Kommentarliste](commentlist-element-comments_type-complextypevisio-xml.md) <br/> |[CommentList_Type](commentlist_type-complextypevisio-xml.md) <br/> |Gibt die Kommentare in einer Zeichnung an.  <br/> |
+|[CommentList](commentlist-element-comments_type-complextypevisio-xml.md) <br/> |[CommentList_Type](commentlist_type-complextypevisio-xml.md) <br/> |Gibt die Kommentare in einer Zeichnung an.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -52,12 +52,12 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|AuthorID  <br/> |XSD: unsignedInt  <br/> |erforderlich  <br/> |Ein 1-basierter Wert, der den Autor identifiziert.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
-|Kommentar-Nr  <br/> |XSD: unsignedInt  <br/> |erforderlich  <br/> |Ein eindeutiger Wert, der den Kommentar auf einem Zeichenblatt identifiziert.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
-|Datum  <br/> |XSD: DateTime  <br/> |erforderlich  <br/> |Gibt an, wann ein Kommentar erstellt wurde.  <br/> |Werte des Typs XSD: DateTime.  <br/> |
-|Fertig  <br/> |XSD: Boolean  <br/> |Optional  <br/> |Gibt den aktuellen Status des Kommentars an.  <br/> |Werte des XSD: Boolean-Typs.  <br/> |
-|EditDate  <br/> |XSD: DateTime  <br/> |Optional  <br/> |Gibt an, wann ein Kommentar zuletzt geändert wurde.  <br/> |Werte des Typs XSD: DateTime.  <br/> |
-|PageID  <br/> |XSD: unsignedInt  <br/> |erforderlich  <br/> |Ein Wert, der das Zeichenblatt angibt, auf dem sich der Kommentar befindet.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
-|ShapeID  <br/> |XSD: unsignedInt  <br/> |Optional  <br/> |Ein Wert, der die Form angibt, in der sich der Kommentar befindet. Wenn keine Shape-Wert angegeben ist, bezieht sich der Kommentar auf das Zeichenblatt.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
+|AuthorID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> |Ein einbasierter Wert, der den Autor identifiziert.  <br/> |Werte des xsd:unsignedInt-Typs.  <br/> |
+|CommentID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> |Ein eindeutiger Wert, der den Kommentar auf einem Zeichenblatt identifiziert.  <br/> |Werte des xsd:unsignedInt-Typs.  <br/> |
+|Datum  <br/> |xsd:dateTime  <br/> |erforderlich  <br/> |Gibt an, wann ein Kommentar erstellt wurde.  <br/> |Werte des xsd:dateTime-Typs.  <br/> |
+|Fertig  <br/> |xsd:boolean  <br/> |Optional  <br/> |Gibt den aktuellen Status des Kommentars an.  <br/> |Werte des typs xsd:boolean.  <br/> |
+|EditDate  <br/> |xsd:dateTime  <br/> |Optional  <br/> |Gibt an, wann ein Kommentar zuletzt geändert wurde.  <br/> |Werte des xsd:dateTime-Typs.  <br/> |
+|PageID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> |Ein Wert, der das Zeichenblatt identifiziert, auf dem sich der Kommentar befindet.  <br/> |Werte des xsd:unsignedInt-Typs.  <br/> |
+|ShapeID  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> |Ein Wert, der die Form identifiziert, auf der sich der Kommentar befindet. Wenn keine ShapeID angegeben ist, bezieht sich der Kommentar auf das Zeichenblatt.  <br/> |Werte des xsd:unsignedInt-Typs.  <br/> |
    
 

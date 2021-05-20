@@ -1,5 +1,5 @@
 ---
-title: Commentlist-Element (Comments_Type complexType) (Visio XML)
+title: CommentList-Element (Comments_Type complexType) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34539248"
 ---
-# <a name="commentlist-element-commentstype-complextype-visio-xml"></a>Commentlist-Element (Comments_Type complexType) (Visio XML)
+# <a name="commentlist-element-comments_type-complextype-visio-xml"></a>CommentList-Element (Comments_Type complexType) (Visio XML)
 
 Gibt die Kommentare in einer Zeichnung an.
   
@@ -24,8 +24,8 @@ Gibt die Kommentare in einer Zeichnung an.
 |:-----|:-----|
 |**Elementtyp** <br/> |[CommentList_Type](commentlist_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
-|**Dokumentteile** <br/> |comments. XML  <br/> |
+|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
+|**Dokumentteile** <br/> |comments.xml  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,7 +36,7 @@ Gibt die Kommentare in einer Zeichnung an.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

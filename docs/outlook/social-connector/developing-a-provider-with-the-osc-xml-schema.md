@@ -7,7 +7,7 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 0872b1b9-c21f-4bba-8cf1-4b010d8d7fb6
-description: Das Connector für soziale Netzwerke (OSC)-Anbieter-XML-Schema definiert das Format einer bedeutenden Menge an Informationen, die von einem sozialen Netzwerk über den osc-Anbieter des Netzwerks an den osc übergeben wird.
+description: Das Outlook Social Connector (OSC)-Anbieter-XML-Schema definiert das Format einer erheblichen Menge von Informationen, die von einem sozialen Netzwerk über den OSC-Anbieter des Netzwerks an das OSC übergeben werden.
 ms.openlocfilehash: 2346e23beb2de1664ec90263a8f5db5d46c54e6f
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
@@ -17,22 +17,22 @@ ms.locfileid: "34539255"
 ---
 # <a name="developing-a-provider-with-the-osc-xml-schema"></a>Entwickeln eines Providers mit dem OSC-XML-Schema
 
-Das Connector für soziale Netzwerke (OSC)-Anbieter-XML-Schema definiert das Format einer bedeutenden Menge an Informationen, die von einem sozialen Netzwerk über den osc-Anbieter des Netzwerks an den osc übergeben wird. Mit dem XML-Schema kann ein osc-Anbieter Funktionen des Anbieters, der Freunde und der Aktivitätsfeed-Elemente im sozialen Netzwerk mithilfe der drei Hauptelemente, **Funktionen**, **Freunde**und **activityFeed**und ihres untergeordneten Elements angeben. Elemente. Der osc-Anbieter implementiert Schnittstellen und deren Methoden in der Erweiterbarkeit des osc-Anbieters und gibt XML-Zeichenfolgen als Ausgabeparameter zurück, die dem XML-Schema des osc-Anbieters entsprechen. Der osc ruft diese Methoden auf, um Informationen zu erhalten, die er gemäß Definition des XML-Schemas verstehen kann.
+Das Outlook Social Connector (OSC)-Anbieter-XML-Schema definiert das Format einer erheblichen Menge von Informationen, die von einem sozialen Netzwerk über den OSC-Anbieter des Netzwerks an das OSC übergeben werden. Das XML-Schema ermöglicht es einem OSC-Anbieter, Funktionen des Anbieters, der Freunde und der Aktivitätsfeedelemente im sozialen Netzwerk anzugeben, indem die drei Hauptelemente, Funktionen, **Freunde** und **activityFeed** und deren untergeordnete Elemente verwendet werden. Der OSC-Anbieter implementiert Schnittstellen und deren Methoden in der Erweiterbarkeit des OSC-Anbieters und gibt XML-Zeichenfolgen als Ausgabeparameter zurück, die dem XML-Schema des OSC-Anbieters entsprechen. Die OSC ruft diese Methoden auf, um Informationen zu erhalten, die sie gemäß der Definition durch das XML-Schema verstehen kann.
   
 > [!NOTE]
-> OSC-Anbieter Erweiterbarkeit unterstützt das Debuggen `DebugProviders` von Anbietern, `HKEY_CURRENT_USER\Software\Microsoft\Office\Outlook\SocialConnector` indem der Wert des Registrierungsschlüssels auf 1 festgesetzt wird. Wenn Sie das Anbieter Debugging aktivieren, überprüft der osc den Anbieter-XML-Code anhand der Version des osc-XML-Schemas, das Sie im **xmlns** XML-Attribut angeben. Geben Sie für osc 1,1 und Versionen von OSC seit Outlook Connector für soziale Netzwerke 2013 das **xmlns** -Attribut wie folgt an:`xmlns="http://schemas.microsoft.com/office/outlook/2010/06/socialprovider.xsd"`
+> Die Erweiterbarkeit des OSC-Anbieters unterstützt Debuganbieter, indem der Wert `DebugProviders` des  `HKEY_CURRENT_USER\Software\Microsoft\Office\Outlook\SocialConnector` Registrierungsschlüssels auf 1 festlegen wird. Wenn Sie das Anbieterdebuding aktivieren, überprüft die OSC die Anbieter-XML mit der Version des OSC-XML-Schemas, das Sie im **xmlns-XML-Attribut** angeben. Geben Sie für OSC 1.1 und Versionen der OSC seit Outlook Social Connector 2013 das **xmlns-Attribut** wie folgt an:`xmlns="http://schemas.microsoft.com/office/outlook/2010/06/socialprovider.xsd"`
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
-- [Synchronisieren von Freunden und Aktivitäten](synchronizing-friends-and-activities.md): Beschreibt die verschiedenen Möglichkeiten, mit denen osc-Anbieter Freunde, nicht-Freunde und Aktivitäten in einem sozialen Netzwerk synchronisieren können. 
+- [Synchronisieren von Freunden und Aktivitäten:](synchronizing-friends-and-activities.md)Beschreibt die verschiedenen Möglichkeiten, wie OSC-Anbieter Freunde, Nicht-Freunde und Aktivitäten in einem sozialen Netzwerk synchronisieren können. 
     
-- [Osc-Anbieter-XML-Beispiele](osc-provider-xml-examples.md): enthält XML-Beispiele, in denen gezeigt wird, wie Funktionen eines osc-Anbieters, von Freunden und von Aktivitätsfeed-Elementen in einem sozialen Netzwerk mithilfe des osc-XML-Schemas angegeben werden.
+- [OSC-Anbieter-XML-Beispiele:](osc-provider-xml-examples.md)Enthält XML-Beispiele, die zeigen, wie Funktionen eines OSC-Anbieters, von Freunden und Aktivitätsfeedelementen in einem sozialen Netzwerk mithilfe des OSC-XML-Schemas angegeben werden.
     
-- [XML für Funktionen](xml-for-capabilities.md): erläutert die- [ISocialProvider:: getCapabilities](isocialprovider-getcapabilities.md) -Methode, mit der die osc-Funktionen Informationen abrufen, die in **Capabilities** XML vom osc-Anbieter ausgedrückt werden. In diesem Abschnitt werden außerdem die XML-Elemente im XML-Schema des osc-Anbieters beschrieben, mit denen ein osc-Anbieter seine Funktionalität angeben kann, einschließlich der Authentifizierung von Benutzern und der Synchronisierung von Freunden und Aktivitäten. 
+- [XML for Capabilities](xml-for-capabilities.md): Erläutert die - [ISocialProvider::GetCapabilities-Methode,](isocialprovider-getcapabilities.md) die vom OSC zum Abrufen von Funktioneninformationen verwendet wird, ausgedrückt **in** Funktionen-XML, vom OSC-Anbieter. In diesem Abschnitt werden auch die XML-Elemente im OSC-Anbieter-XML-Schema beschrieben, mit denen ein OSC-Anbieter seine Funktionalität angeben kann, einschließlich der Authentifizierung von Benutzern und der Synchronisierung von Freunden und Aktivitäten. 
     
-- [XML für Freunde](xml-for-friends.md): enthält Beispiele der APIs, die die osc verwendet, um Freundes Informationen, ausgedrückt in **friends** XML, vom osc-Anbieter zu erhalten. In diesem Abschnitt werden auch Elemente im **friends** -XML-Code beschrieben. 
+- [XML für Freunde](xml-for-friends.md): Enthält Beispiele für apIs, die das OSC verwendet, um Freundesinformationen, ausgedrückt in **Friends** XML, vom OSC-Anbieter zu erhalten. In diesem Abschnitt werden auch Elemente in der **friends-XML** beschrieben. 
     
-- [XML for Activities](xml-for-activities.md): enthält Beispiele der APIs, die die osc zum Abrufen von Aktivitätsinformationen verwendet, ausgedrückt in **activityFeed** XML, vom osc-Anbieter. In diesem Abschnitt werden außerdem die XML-Elemente im XML-Schema des osc-Anbieters beschrieben, mit denen ein osc-Anbieter einen Aktivitätsfeed angeben kann. Ein Aktivitätsfeed umfasst das Netzwerk, in dem die Aktivitätsfeed-Elemente stammen, Details zu den einzelnen Aktivitätsfeed-Elementen (wie Besitzer, Typ und Veröffentlichungsdatum der Aktivität) und die Vorlage zum Anzeigen der Aktivität. 
+- [XML for Activities](xml-for-activities.md): Enthält Beispiele für apIs, die das OSC zum Abrufen von Aktivitäteninformationen verwendet, ausgedrückt in **activityFeed** XML, vom OSC-Anbieter. In diesem Abschnitt werden auch die XML-Elemente im XML-Schema des OSC-Anbieters beschrieben, mit denen ein OSC-Anbieter einen Aktivitätsfeed angeben kann. Ein Aktivitätsfeed enthält das Netzwerk, in dem die Aktivitätsfeedelemente stammen, Details zu den einzelnen Aktivitätsfeedelementen (z. B. Besitzer, Typ und Veröffentlichungsdatum der Aktivität) und die Vorlage zum Anzeigen der Aktivität. 
     
 ## <a name="reference"></a>Referenz
 

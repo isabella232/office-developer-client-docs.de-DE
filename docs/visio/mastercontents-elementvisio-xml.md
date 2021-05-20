@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 71e75e9a-1392-b40b-1d51-167cd28b2c53
-description: Gibt Informationen zu den Shapes in einem Master-Shape in einer Zeichnung an.
+description: Gibt Informationen zu den Formen in einem Master in einer Zeichnung an.
 ms.openlocfilehash: 26bc86aedeb96544f61f53052ab723b13b29500d
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.locfileid: "34538039"
 ---
 # <a name="mastercontents-element-visio-xml"></a>MasterContents-Element (Visio XML)
 
-Gibt Informationen zu den Shapes in einem Master-Shape in einer Zeichnung an. 
+Gibt Informationen zu den Formen in einem Master in einer Zeichnung an. 
   
 ## <a name="element-information"></a>Informationen zum Element
 
@@ -24,8 +24,8 @@ Gibt Informationen zu den Shapes in einem Master-Shape in einer Zeichnung an.
 |:-----|:-----|
 |**Elementtyp** <br/> |[PageContents_Type](pagecontents_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
-|**Dokumentteile** <br/> |Master #. XML  <br/> |
+|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
+|**Dokumentteile** <br/> |master#.xml  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,7 +36,7 @@ Gibt Informationen zu den Shapes in einem Master-Shape in einer Zeichnung an.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -46,8 +46,8 @@ Keine.
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Connects](connects-element-pagecontents_type-complextypevisio-xml.md) <br/> |[Connects_Type](connects_type-complextypevisio-xml.md) <br/> |Enthält ein **Connect** -Element für jede Verbindung zwischen zwei Formen in einer Zeichnung.  <br/> |
-|[Shapes](shapes-element-pagecontents_type-complextypevisio-xml.md) <br/> |[Shapes_Type](shapes_type-complextypevisio-xml.md) <br/> |Enthält eine Auflistung von **Shape** -Elementen.  <br/> |
+|[Connects](connects-element-pagecontents_type-complextypevisio-xml.md) <br/> |[Connects_Type](connects_type-complextypevisio-xml.md) <br/> |Enthält ein **Verbinden-Element** für jede Verbindung zwischen zwei Formen in einer Zeichnung.  <br/> |
+|[Formen](shapes-element-pagecontents_type-complextypevisio-xml.md) <br/> |[Shapes_Type](shapes_type-complextypevisio-xml.md) <br/> |Enthält eine Auflistung von **Shape-Elementen.**  <br/> |
    
 ### <a name="attributes"></a>Attribute
 

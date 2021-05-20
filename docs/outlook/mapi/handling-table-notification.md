@@ -19,10 +19,10 @@ ms.locfileid: "33435894"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Als Alternative zur direkten Registrierung bei einem Advise-Quellobjekt wie einem Ordner oder einem Messagingbenutzer kann ein Client sich für Benachrichtigungen in einer Inhalts-oder Hierarchietabelle registrieren. Das Nachverfolgen von Änderungen an Adressbucheinträgen, Ordnern und Nachrichten über eine Inhalts-oder Hierarchietabelle kann einfacher und geradliniger sein als durch einzelne Objekte. 
+Als Alternative zur direkten Registrierung bei einem Advise-Quellobjekt, z. B. einem Ordner oder einem Messagingbenutzer, kann sich ein Client für Benachrichtigungen in einer Inhalts- oder Hierarchietabelle registrieren. Das Nachverfolgen von Änderungen an Adressbucheinträgen, Ordnern und Nachrichten über einen Inhalt oder eine Hierarchietabelle kann einfacher und einfacher sein als durch einzelne Objekte. 
 
-Sie können beispielsweise [IMAPITable:: Advise](imapitable-advise.md) für die Hierarchietabelle eines Ordners aufrufen, um zu ermitteln, wann Änderungen an einem der Unterordner vorgenommen werden. Wenn Sie die Anzeige von Remotenachrichten unterstützen, registrieren Sie sich in der Statustabelle, um die Aktivitäten von Transportanbietern und dem MAPI-Spooler zu überwachen. 
+Sie können beispielsweise [IMAPITable::Advise](imapitable-advise.md) in der Hierarchietabelle eines Ordners aufrufen, um zu ermitteln, wann Änderungen an einem der Unterordner vorgenommen werden. Wenn Sie die Anzeige von Remotenachrichten unterstützen, registrieren Sie sich bei der Statustabelle, um Aktivitäten von Transportanbietern und dem MAPI-Spooler zu beobachten. 
   
-Es ist jedoch nicht immer vorzuziehen, Tabellen Benachrichtigungen anstelle von Objekt Benachrichtigungen zu verwenden. Das überWachen von Änderungen an der Anzahl von Nachrichten in einem Ordner ist ein Beispiel dafür, wann Ihr Client sich möglicherweise für Objekt Benachrichtigungen in einem Ordner anstatt in einer vom Ordner implementierten Tabelle registrieren muss.
+Es ist jedoch nicht immer vorzuziehen, Tabellenbenachrichtigungen anstelle von Objektbenachrichtigungen zu verwenden. Die Überwachung von Änderungen an der Anzahl der Nachrichten in einem Ordner ist ein Beispiel dafür, wann Ihr Client möglicherweise für Objektbenachrichtigungen in einem Ordner und nicht in einer vom Ordner implementierten Tabelle registrieren muss.
   
 

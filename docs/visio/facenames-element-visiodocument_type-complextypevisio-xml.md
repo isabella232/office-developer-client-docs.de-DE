@@ -14,9 +14,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34539713"
 ---
-# <a name="facenames-element-visiodocumenttype-complextype-visio-xml"></a>FaceNames-Element (VisioDocument_Type complexType) (Visio XML)
+# <a name="facenames-element-visiodocument_type-complextype-visio-xml"></a>FaceNames-Element (VisioDocument_Type complexType) (Visio XML)
 
-Enthält eine Auflistung von **FaceName** -Elementen. 
+Enthält eine Auflistung von **FaceName-Elementen.** 
   
 ## <a name="element-information"></a>Informationen zum Element
 
@@ -24,8 +24,8 @@ Enthält eine Auflistung von **FaceName** -Elementen.
 |:-----|:-----|
 |**Elementtyp** <br/> |[FaceNames_Type](facenames_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
-|**Dokumentteile** <br/> |Document. XML  <br/> |
+|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
+|**Dokumentteile** <br/> |document.xml  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,13 +36,13 @@ Enthält eine Auflistung von **FaceName** -Elementen.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[VisioDocument](visiodocument-elementvisio-xml.md) <br/> |[VisioDocument_Type](visiodocument_type-complextypevisio-xml.md) <br/> |Das Stammelement eines Microsoft Visio Dokuments.  <br/> |
+|[VisioDocument](visiodocument-elementvisio-xml.md) <br/> |[VisioDocument_Type](visiodocument_type-complextypevisio-xml.md) <br/> |Das Stammelement eines Microsoft-Visio Dokument.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 

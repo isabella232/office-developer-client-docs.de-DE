@@ -24,8 +24,8 @@ Speichert Informationen zur Diagrammüberprüfung des Dokuments.
 |:-----|:-----|
 |**Elementtyp** <br/> |[Validation_Type](validation_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
-|**Dokumentteile** <br/> |Validation. XML  <br/> |
+|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
+|**Dokumentteile** <br/> |validation.xml  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -35,7 +35,7 @@ Speichert Informationen zur Diagrammüberprüfung des Dokuments.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -45,8 +45,8 @@ Keine.
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Issues](issues-element-validation_type-complextypevisio-xml.md) <br/> |[Issues_Type](issues_type-complextypevisio-xml.md) <br/> |Enthält alle **Issue** -Elemente für das Dokument.  <br/> |
-|[RuleSets](rulesets-element-validation_type-complextypevisio-xml.md) <br/> |[RuleSets_Type](rulesets_type-complextypevisio-xml.md) <br/> |Enthält ein **RuleSet** -Element für jeden Überprüfungsregel Satz im Dokument.  <br/> |
+|[Issues](issues-element-validation_type-complextypevisio-xml.md) <br/> |[Issues_Type](issues_type-complextypevisio-xml.md) <br/> |Enthält alle **Issue-Elemente** für das Dokument.  <br/> |
+|[RuleSets](rulesets-element-validation_type-complextypevisio-xml.md) <br/> |[RuleSets_Type](rulesets_type-complextypevisio-xml.md) <br/> |Enthält ein **RuleSet-Element** für jeden Überprüfungsregelsatz im Dokument.  <br/> |
 |[ValidationProperties](validationproperties-element-validation_type-complextypevisio-xml.md) <br/> |[ValidationProperties_Type](validationproperties_type-complextypevisio-xml.md) <br/> |Kapselt die Eigenschaften, die im Zusammenhang mit der Überprüfung des Dokuments stehen.  <br/> |
    
 ### <a name="attributes"></a>Attribute

@@ -16,7 +16,7 @@ ms.locfileid: "34539182"
 ---
 # <a name="dataconnections-element-visio-xml"></a>DataConnections-Element (Visio XML)
 
-Enthält die **** DataConnection-Elemente für das Dokument. 
+Enthält die **DataConnection-Elemente** für das Dokument. 
   
 ## <a name="element-information"></a>Informationen zum Element
 
@@ -24,8 +24,8 @@ Enthält die **** DataConnection-Elemente für das Dokument.
 |:-----|:-----|
 |**Elementtyp** <br/> |[DataConnections_Type](dataconnections_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
-|**Dokumentteile** <br/> |Connections. XML  <br/> |
+|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
+|**Dokumentteile** <br/> |connections.xml  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,7 +36,7 @@ Enthält die **** DataConnection-Elemente für das Dokument.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -46,12 +46,12 @@ Keine.
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[DataConnection](dataconnection-element-dataconnections_type-complextypevisio-xml.md) <br/> |[DataConnection_Type](dataconnection_type-complextypevisio-xml.md) <br/> |Abstrahiert die Kommunikation zwischen einem oder mehreren **** DataRecordset-Elementen und einer nicht-XML-Datenquelle.  <br/> |
+|[DataConnection](dataconnection-element-dataconnections_type-complextypevisio-xml.md) <br/> |[DataConnection_Type](dataconnection_type-complextypevisio-xml.md) <br/> |Abstrahiert die Kommunikation zwischen einem oder **mehreren DataRecordset-Elementen** und einer Nicht-XML-Datenquelle.  <br/> |
    
 ### <a name="attributes"></a>Attribute
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|NextID  <br/> |XSD: unsignedInt  <br/> |erforderlich  <br/> |Die nächste verfügbare ID für neue Verbindungen.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
+|NextID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> |Die nächste verfügbare ID für neue Verbindungen.  <br/> |Werte des xsd:unsignedInt-Typs.  <br/> |
    
 

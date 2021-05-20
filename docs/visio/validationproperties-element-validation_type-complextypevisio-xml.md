@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34538522"
 ---
-# <a name="validationproperties-element-validationtype-complextype-visio-xml"></a>ValidationProperties-Element (Validation_Type complexType) (Visio XML)
+# <a name="validationproperties-element-validation_type-complextype-visio-xml"></a>ValidationProperties-Element (Validation_Type complexType) (Visio XML)
 
 Kapselt die Eigenschaften, die im Zusammenhang mit der Überprüfung des Dokuments stehen.
   
@@ -24,8 +24,8 @@ Kapselt die Eigenschaften, die im Zusammenhang mit der Überprüfung des Dokumen
 |:-----|:-----|
 |**Elementtyp** <br/> |[ValidationProperties_Type](validationproperties_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
-|**Dokumentteile** <br/> |Validation. XML  <br/> |
+|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
+|**Dokumentteile** <br/> |validation.xml  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,7 +36,7 @@ Kapselt die Eigenschaften, die im Zusammenhang mit der Überprüfung des Dokumen
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -52,7 +52,7 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|LastValidated  <br/> |XSD: DateTime  <br/> |erforderlich  <br/> |Das Datum und die Uhrzeit, zu der das Dokument zuletzt überprüft wurde.  <br/> |Werte des Typs XSD: DateTime.  <br/> |
-|ShowIgnored  <br/> |XSD: Boolean  <br/> |erforderlich  <br/> |Gibt an, ob ignorierte Überprüfungsprobleme im Fenster Probleme angezeigt werden sollen.  <br/> |Werte des XSD: Boolean-Typs.  <br/> |
+|LastValidated  <br/> |xsd:dateTime  <br/> |erforderlich  <br/> |Datum und Uhrzeit der letzten Überprüfung des Dokuments.  <br/> |Werte des xsd:dateTime-Typs.  <br/> |
+|ShowIgnored  <br/> |xsd:boolean  <br/> |erforderlich  <br/> |Gibt an, ob ignorierte Überprüfungsprobleme im Fenster Probleme angezeigt werden.  <br/> |Werte des typs xsd:boolean.  <br/> |
    
 

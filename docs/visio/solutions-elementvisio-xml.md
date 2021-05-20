@@ -24,8 +24,8 @@ Gibt die Eigenschaften der im Dokument gespeicherten Lösungen an.
 |:-----|:-----|
 |**Elementtyp** <br/> |[Solutions_Type](solutions_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
-|**Dokumentteile** <br/> |Solutions. XML  <br/> |
+|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
+|**Dokumentteile** <br/> |solutions.xml  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -35,7 +35,7 @@ Gibt die Eigenschaften der im Dokument gespeicherten Lösungen an.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -45,7 +45,7 @@ Keine.
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Solution](solution-element-solutions_type-complextypevisio-xml.md) <br/> |[Solution_Type](solution_type-complextypevisio-xml.md) <br/> |Gibt eine Instanz des in der Zeichnung gespeicherten Lösungs-XML-Code an.  <br/> |
+|[Solution](solution-element-solutions_type-complextypevisio-xml.md) <br/> |[Solution_Type](solution_type-complextypevisio-xml.md) <br/> |Gibt eine Instanz von Lösungs-XML an, die in der Zeichnung gespeichert ist.  <br/> |
    
 ### <a name="attributes"></a>Attribute
 

@@ -22,7 +22,7 @@ Gibt eine Sounddatei oder einen Systemsound wieder.
   
 ## <a name="syntax"></a>Syntax
 
-PlaySound ("* * *filename* * *" | "* * *Alias* * *", * * *isalias* * *, * * *Beep* * *, * * *Synch* * *) 
+PLAYSOUND(" ** *filename* ** "|" ** *alias* ** ", ** *isAlias* **, ** *beep* **, ** *synch* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -32,11 +32,12 @@ PlaySound ("* * *filename* * *" | "* * *Alias* * *", * * *isalias* * *, * * *Bee
 | _alias_ <br/> |Erforderlich  <br/> |**String** <br/> | Ein Systemsignal, das durch einen Alias dargestellt wird.  <br/> |
 | _isAlias_ <br/> |Erforderlich  <br/> |**Boolean** <br/> | Gibt an, ob der vorangegangene Ausdruck ein Alias oder ein Dateiname ist. Verwenden Sie einen Wert ungleich null zur Angabe eines Alias.  <br/> |
 | _Signalton_ <br/> |Erforderlich  <br/> |**Boolean** <br/> |Gibt an, ob Microsoft Visio eine akustische Meldung ausgibt, wenn der Sound nicht abgespielt werden kann. Verwenden Sie einen Wert ungleich null, um ein akustisches Signal zu veranlassen.  <br/> |
-| _Synch_ <br/> |Erforderlich  <br/> |**Boolean** <br/> |Bestimmt, ob Klänge asynchron (0) oder synchron (1) abgespielt werden.  <br/> |
+| _synch_ <br/> |Erforderlich  <br/> |**Boolean** <br/> |Bestimmt, ob Klänge asynchron (0) oder synchron (1) abgespielt werden.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Sie sollten Sounds in der Regel asynchron abspielen, damit Visio die Verarbeitung fortsetzen kann, während der Sound wiedergegeben wird. Um mehrere Sounds miteinander zu verbinden, spielen Sie sie synchron ab, oder es kann ein Fehler auftreten. 
+Sounds sollten normalerweise asynchron abgespielt werden, damit Visio fortgesetzt werden kann, während der Sound abgespielt wird. Wenn Sie mehrere Sounds hintereinander abspielen möchten, sollten Sie diese synchron abspielen. Sonst könnte es geschehen, dass einige nicht abgespielt werden.
+ 
   
 ## <a name="example-1"></a>Beispiel 1
 

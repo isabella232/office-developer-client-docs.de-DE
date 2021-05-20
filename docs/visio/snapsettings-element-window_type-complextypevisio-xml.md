@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 7b87a244-b331-7e93-d304-239f8ca77061
-description: Gibt die Objekte an, an denen Shapes ausgerichtet werden, wenn Snap im Fenster aktiv ist.
+description: Gibt die Objekte an, an denen Shapes ausrichten, wenn die Ausrichtung im Fenster aktiv ist.
 ms.openlocfilehash: 0fbe54f56f79d84e6c6bd8ddc11aa28b7e5ba1dc
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
@@ -14,9 +14,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34540315"
 ---
-# <a name="snapsettings-element-windowtype-complextype-visio-xml"></a>SnapSettings-Element (Window_Type complexType) (Visio XML)
+# <a name="snapsettings-element-window_type-complextype-visio-xml"></a>SnapSettings-Element (Window_Type complexType) (Visio XML)
 
-Gibt die Objekte an, an denen Shapes ausgerichtet werden, wenn Snap im Fenster aktiv ist.
+Gibt die Objekte an, an denen Shapes ausrichten, wenn die Ausrichtung im Fenster aktiv ist.
   
 ## <a name="element-information"></a>Informationen zum Element
 
@@ -24,8 +24,8 @@ Gibt die Objekte an, an denen Shapes ausgerichtet werden, wenn Snap im Fenster a
 |:-----|:-----|
 |**Elementtyp** <br/> |[SnapSettings_Type](snapsettings_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
-|**Dokumentteile** <br/> |Windows. XML  <br/> |
+|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
+|**Dokumentteile** <br/> |windows.xml  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,7 +36,7 @@ Gibt die Objekte an, an denen Shapes ausgerichtet werden, wenn Snap im Fenster a
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -59,16 +59,16 @@ Der Wert kann eine Summe der Werte in der folgenden Tabelle sein.
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
 |0  <br/> |Nicht ausrichten.  <br/> |
-|1  <br/> |An Lineal-Unterabteilungen ausrichten.  <br/> |
-|2  <br/> |Am Raster ausrichten.  <br/> |
-|4  <br/> |An Führungslinien ausrichten.  <br/> |
-|8  <br/> |An Auswahlpunkten ausrichten.  <br/> |
-|16  <br/> |An Scheitelpunkten ausrichten.  <br/> |
+|1  <br/> |Andocken lineal unterdivisions.  <br/> |
+|2  <br/> |Andocken zum Raster.  <br/> |
+|4   <br/> |An Führungslinien ausrichten.  <br/> |
+|8   <br/> |An Auswahlpunkten ausrichten.  <br/> |
+|16   <br/> |An Scheitelpunkten ausrichten.  <br/> |
 |32  <br/> |An Verbindungspunkten ausrichten.  <br/> |
-|256  <br/> |An sichtbaren Kanten von Formen ausrichten.  <br/> |
-|512  <br/> |Feld Ausrichtung ausrichten.  <br/> |
+|256  <br/> |Andocken zu sichtbaren Kanten von Formen.  <br/> |
+|512  <br/> |Andocken ausrichtungsfeld.  <br/> |
 |1024  <br/> |An Optionen für Shape-Erweiterungen ausrichten.  <br/> |
-|32768  <br/> |Snap deaktiviert.  <br/> |
+|32768  <br/> |Andocken deaktiviert.  <br/> |
 |65536  <br/> |An Schnittpunkten ausrichten.  <br/> |
    
 

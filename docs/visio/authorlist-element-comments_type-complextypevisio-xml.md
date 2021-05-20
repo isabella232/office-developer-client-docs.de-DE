@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34537857"
 ---
-# <a name="authorlist-element-commentstype-complextype-visio-xml"></a>AuthorList-Element (Comments_Type complexType) (Visio XML)
+# <a name="authorlist-element-comments_type-complextype-visio-xml"></a>AuthorList-Element (Comments_Type complexType) (Visio XML)
 
 Gibt die Autoren von Kommentaren in einer Zeichnung an.
   
@@ -24,8 +24,8 @@ Gibt die Autoren von Kommentaren in einer Zeichnung an.
 |:-----|:-----|
 |**Elementtyp** <br/> |[AuthorList_Type](authorlist_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
-|**Dokumentteile** <br/> |comments. XML  <br/> |
+|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
+|**Dokumentteile** <br/> |comments.xml  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,7 +36,7 @@ Gibt die Autoren von Kommentaren in einer Zeichnung an.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

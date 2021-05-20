@@ -1,5 +1,5 @@
 ---
-title: Zelle XGridDensity Cell (Ruler &amp; Grid section)
+title: Zelle "XGridDensity" (Abschnitt "Ruler &amp; Grid")
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -16,32 +16,32 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2019
 ms.locfileid: "33436041"
 ---
-# <a name="xgriddensity-cell-ruler-amp-grid-section"></a>Zelle XGridDensity Cell (Ruler &amp; Grid section)
+# <a name="xgriddensity-cell-ruler-amp-grid-section"></a>Zelle "XGridDensity" (Abschnitt "Ruler &amp; Grid")
 
 Gibt den Typ des zu verwendenden horizontalen Gitters an.
   
 |**Wert**|**Beschreibung**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
 |0  <br/> |Fest  <br/> |**visGridFixed** <br/> |
-|2  <br/> |Grob  <br/> |**visGridCoarse** <br/> |
-|4  <br/> |Normal (Standard)  <br/> |**visGridNormal** <br/> |
-|8  <br/> |Abgestimmter  <br/> |**visGridFine** <br/> |
+|2  <br/> |Vorschrr  <br/> |**visGridCoarse** <br/> |
+|4   <br/> |Normal (Standard)  <br/> |**visGridNormal** <br/> |
+|8   <br/> |Fine  <br/> |**visGridFine** <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Diese Zelle entspricht der horizontalen **Rasterabstand** Option im Dialogfeld **Lineal &amp; -Raster** (Klicken Sie auf der Registerkarte **Ansicht** auf **** den Pfeil). 
+Diese Zelle entspricht der **Horizontalrasterabstandsoption** im Dialogfeld  **&amp; Linealraster** (klicken Sie auf der Registerkarte Ansicht auf den **Pfeil anzeigen).** 
   
-Wenn Sie einen Verweis auf die Zelle Zelle XGridDensity aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
+Um einen Verweis auf die Zelle XGridDensity anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Zelle XGridDensity  <br/> |
+|Zellenname:  <br/> |XGridDensity  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Zelle XGridDensity aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die XGridDensity-Zelle nach Index aus einem Programm zu erhalten: 
   
 |||
 |:-----|:-----|
-|Abschnittsindex:  <br/> |**Konstanten visSectionObject** <br/> |
+|Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 |Zeilenindex:  <br/> |**visRowRulerGrid** <br/> |
 |Zellenindex:  <br/> |**visXGridDensity** <br/> |
    

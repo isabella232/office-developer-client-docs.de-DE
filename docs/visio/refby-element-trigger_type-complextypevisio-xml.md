@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 09f2430a-184d-eaa2-2cb9-51bb24345c51
-description: Gibt einen Verweis auf eine Seite in der Zeichnung an.
+description: Gibt einen Verweis auf ein Zeichenblatt in der Zeichnung an.
 ms.openlocfilehash: 6d081ad1bf9e089a16820db33cec92694db7ac98
 ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
 ms.translationtype: MT
@@ -14,9 +14,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34538291"
 ---
-# <a name="refby-element-triggertype-complextype-visio-xml"></a>RefBy-Element (Trigger_Type complexType) (Visio XML)
+# <a name="refby-element-trigger_type-complextype-visio-xml"></a>RefBy-Element (Trigger_Type complexType) (Visio XML)
 
-Gibt einen Verweis auf eine Seite in der Zeichnung an.
+Gibt einen Verweis auf ein Zeichenblatt in der Zeichnung an.
   
 ## <a name="element-information"></a>Informationen zum Element
 
@@ -24,7 +24,7 @@ Gibt einen Verweis auf eine Seite in der Zeichnung an.
 |:-----|:-----|
 |**Elementtyp** <br/> |[RefBy_Type](refby_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
+|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentteile** <br/> ||
    
 ## <a name="definition"></a>Definition
@@ -36,13 +36,13 @@ Gibt einen Verweis auf eine Seite in der Zeichnung an.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Trigger](trigger-elementvisio-xml.md) <br/> |[Trigger_Type](trigger_type-complextypevisio-xml.md) <br/> |Enthält Anweisungen zum Microsoft Visio zum Neuberechnen einer Beziehung zwischen Dokument Parts in einer Visio-Datei.  <br/> |
+|[Trigger](trigger-elementvisio-xml.md) <br/> |[Trigger_Type](trigger_type-complextypevisio-xml.md) <br/> |Enthält Anweisungen für Microsoft Visio, um eine Beziehung zwischen Dokumentteilen in einer Visio zu berechnen.  <br/> |
 
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
@@ -53,7 +53,7 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|ID  <br/> |XSD: unsignedInt  <br/> |erforderlich  <br/> |Gibt das ID-Attribut eines Zeichenblatts in der Zeichnung an.  <br/> |Werte des XSD: unsignedInt-Typs.  <br/> |
-|T  <br/> |XSD: Zeichenfolge  <br/> |erforderlich  <br/> |Gibt den Verweistyp an.  <br/> |Werte des Typs XSD: String.  <br/> |
+|ID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> |Gibt das ID-Attribut einer Seite in der Zeichnung an.  <br/> |Werte des xsd:unsignedInt-Typs.  <br/> |
+|T  <br/> |xsd:string  <br/> |erforderlich  <br/> |Gibt den Referenztyp an.  <br/> |Werte des xsd:string-Typs.  <br/> |
    
 

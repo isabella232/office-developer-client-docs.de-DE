@@ -14,9 +14,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2019
 ms.locfileid: "34540392"
 ---
-# <a name="snapangles-element-documentsettingstype-complextype-visio-xml"></a>SnapAngles-Element (DocumentSettings_Type complexType) (Visio XML)
+# <a name="snapangles-element-documentsettings_type-complextype-visio-xml"></a>SnapAngles-Element (DocumentSettings_Type complexType) (Visio XML)
 
-Enthält eine Auflistung von **SnapAngle** -Elementen. 
+Enthält eine Auflistung von **SnapAngle-Elementen.** 
   
 ## <a name="element-information"></a>Informationen zum Element
 
@@ -24,8 +24,8 @@ Enthält eine Auflistung von **SnapAngle** -Elementen.
 |:-----|:-----|
 |**Elementtyp** <br/> |[SnapAngles_Type](snapangles_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|**Schemadatei** <br/> |VisioSchema15. xsd  <br/> |
-|**Dokumentteile** <br/> |Document. XML  <br/> |
+|**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
+|**Dokumentteile** <br/> |document.xml  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -36,7 +36,7 @@ Enthält eine Auflistung von **SnapAngle** -Elementen.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOccurs**und **Choice**definiert, lesen Sie den Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -48,7 +48,7 @@ Wenn das Schema bestimmte Anforderungen wie **Sequence**, **minOccurs**, **maxOc
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[SnapAngle](snapangle-element-snapangles_type-complextypevisio-xml.md) <br/> |[SnapAngle_Type](snapangle_type-complextypevisio-xml.md) <br/> |Enthält eine Gleitkommazahl, die einen fangwinkel in Grad angibt.  <br/> |
+|[SnapAngle](snapangle-element-snapangles_type-complextypevisio-xml.md) <br/> |[SnapAngle_Type](snapangle_type-complextypevisio-xml.md) <br/> |Enthält eine Gleitkommazahl, die einen Einrastwinkel in Grad angibt.  <br/> |
    
 ### <a name="attributes"></a>Attribute
 

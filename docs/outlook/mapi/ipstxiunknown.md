@@ -25,29 +25,29 @@ ms.locfileid: "33436223"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Diese Schnittstelle bietet Hilfsfunktionen bei der Replikation über die **[IOSTX](iostxiunknown.md)** -Schnittstelle. 
+Diese Schnittstelle bietet Hilfsfunktionen bei der Replikation über die **[IOSTX-Schnittstelle.](iostxiunknown.md)** 
   
 |||
 |:-----|:-----|
-|Bereitgestellt von  <br/> |Abfrage auf [IMsgStore](imsgstoreimapiprop.md) <br/> |
+|Bereitgestellt von  <br/> |Abfrage in [IMsgStore](imsgstoreimapiprop.md) <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IPSTX  <br/> |
    
 ## <a name="vtable-order"></a>Vtable-Reihenfolge
 
 |||
 |:-----|:-----|
-|**[Getlasterroraufzurufen](ipstx-getlasterror.md)** <br/> |Ruft erweiterte Informationen zum letzten Fehler ab.  <br/> |
-|**[GetSyncobject](ipstx-getsyncobject.md)** <br/> |Ruft die zugeordnete **[IOSTX](iostxiunknown.md)** -Schnittstelle ab.  <br/> |
-| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
-| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
-| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
-| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
-|**[EmulateSpooler](ipstx-emulatespooler.md)** <br/> |Legt einen lokalen Speicher für die Emulation des Outlook-Protokoll-Managers zum Spoolen ausgehender Nachrichten an einen Server fest.  <br/> |
-| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
-| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
-| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
-| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
-| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+|**[GetLastError](ipstx-getlasterror.md)** <br/> |Ruft erweiterte Informationen zum letzten Fehler ab.  <br/> |
+|**[GetSyncObject](ipstx-getsyncobject.md)** <br/> |Ruft die zugeordnete **[IOSTX-Schnittstelle](iostxiunknown.md)** ab.  <br/> |
+| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+|**[EmulateSpooler](ipstx-emulatespooler.md)** <br/> |Legt einen lokalen Speicher fest, um den Outlook Protokoll-Manager zu emulieren, um ausgehende Nachrichten mit einem Server zu spoolen.  <br/> |
+| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

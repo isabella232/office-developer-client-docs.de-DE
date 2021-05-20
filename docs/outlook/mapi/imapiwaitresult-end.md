@@ -43,7 +43,7 @@ S_OK
 HRESULT_FROM_WIN32(ERROR_TIMEOUT)
 > Bei einem nicht unendlichen Timeout bedeutet dies, dass MAPI während dieses Zeitraums nicht initialisiert wurde.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 Diese API verhält sich genauso wie [IMAPInitMonitor::Wait](imapiinitmonitor-wait.md).
   
 ## <a name="see-also"></a>Siehe auch
