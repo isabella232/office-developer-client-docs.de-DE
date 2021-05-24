@@ -12,12 +12,12 @@ api_type:
 - HeaderDef
 ms.assetid: 8d0a381a-e714-4663-9a57-b0e1cdbd6ba7
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e5adc7d0c317d8b803645d78227777998d7d241f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 95273bf6025d6ef995d7c21c0e44bdbbf59072f6
+ms.sourcegitcommit: fb521c23df785c9c3aefa5062272b2630a32e587
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33416055"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52589173"
 ---
 # <a name="hrgetoneprop"></a>HrGetOneProp
 
@@ -34,7 +34,7 @@ Ruft den Wert einer einzelnen Eigenschaft von einer Eigenschaftenschnittstelle a
 |Aufgerufen von:  <br/> |Clientanwendungen und Dienstanbieter  <br/> |
    
 ```cpp
-HrGetOneProp(
+HRESULT HrGetOneProp(
   LPMAPIPROP pmp,
   ULONG ulPropTag,
   LPSPropValue FAR * ppprop
@@ -61,7 +61,7 @@ MAPI_E_NOT_FOUND
   
 > Die angeforderte Eigenschaft ist nicht über die angegebene Schnittstelle verfügbar.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Im Gegensatz zur [IMAPIProp::GetProps-Methode](imapiprop-getprops.md) gibt die **HrGetOneProp-Funktion** nie eine Warnung zurück. Da nur eine Eigenschaft abgerufen wird, ist sie einfach erfolgreich oder schlägt fehl. Zum Abrufen mehrerer Eigenschaften ist **GetProps** schneller. 
   

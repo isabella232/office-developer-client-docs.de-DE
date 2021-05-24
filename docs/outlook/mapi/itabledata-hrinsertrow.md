@@ -1,5 +1,5 @@
 ---
-title: ITableDatahrInsertrow
+title: ITableDataHrInsertRow
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -38,7 +38,7 @@ HRESULT HrInsertRow(
 
  _uliRow_
   
-> [in] Eine fortlaufende Zeilennummer, die eine bestimmte Zeile darstellt. Die neue Zeile wird nach der Zeile platziert, die die Zahl angibt. Der  _parameter uliRow_ kann Zeilennummern von 0 bis n enthalten, wobei n die Gesamtzahl der Zeilen in der Tabelle ist. Durch übergeben n in  _uliRow_ wird die Zeile an das Ende der Tabelle angehängt. 
+> [in] Eine sequenzielle Zeilennummer, die eine bestimmte Zeile darstellt. Die neue Zeile wird hinter der Zeile platziert, die die Zahl angibt. Der  _Parameter uliRow_ kann Zeilennummern von 0 bis n enthalten, wobei n die Gesamtanzahl der Zeilen in der Tabelle ist. Durch Übergeben von n in  _uliRow_ wird die Zeile am Ende der Tabelle angefügt. 
     
  _lpSRow_
   
@@ -52,19 +52,19 @@ S_OK
     
 MAPI_E_INVALID_PARAMETER 
   
-> Eine Zeile, die denselben Wert für ihre Indexspalte wie die eingefügte Zeile hat, ist bereits in der Tabelle vorhanden.
+> Eine Zeile mit demselben Wert für die Indexspalte wie die zu einfügende Zeile ist bereits in der Tabelle vorhanden.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die **ITableData::HrInsertRow-Methode** fügt eine Zeile in eine Tabelle an einer bestimmten Position ein. Die neue Zeile wird nach der Zeile eingefügt, die sich an der durch den Parameter  _uliRow_ angegebenen Position befindet. 
+Die **ITableData::HrInsertRow-Methode** fügt eine Zeile in eine Tabelle an einer bestimmten Position ein. Die neue Zeile wird nach der Zeile eingefügt, die sich an der durch den  _Parameter uliRow angegebenen Position_ befindet. 
   
-Wenn  _uliRow_ auf die Anzahl der Zeilen in der Tabelle festgelegt ist, wird die neue Zeile an das Ende der Tabelle angehängt. 
+Wenn  _uliRow_ auf die Anzahl der Zeilen in der Tabelle festgelegt ist, wird die neue Zeile am Ende der Tabelle angefügt. 
   
-Die Eigenschaft, die als Indexspalte für die Tabelle fungiert, muss im **lpProps-Member** der [SRow-Struktur](srow.md) enthalten sein, auf die der  _Parameter lpSRow_ zeigt. Diese Indexeigenschaft, in der Regel **PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md)), wird verwendet, um die Zeile für zukünftige Wartungsaufgaben eindeutig zu identifizieren.
+Die Eigenschaft, die als Indexspalte für die Tabelle fungiert, muss im **lpProps-Element** der [SRow-Struktur](srow.md) enthalten sein, auf die der  _lpSRow-Parameter_ verweist. Diese Indexeigenschaft, normalerweise **PR_INSTANCE_KEY** ([PidTagInstanceKey](pidtaginstancekey-canonical-property.md)), wird verwendet, um die Zeile für zukünftige Wartungsaufgaben eindeutig zu identifizieren.
   
-Die Eigenschaftenspalten in der **SRow-Struktur** müssen nicht in der gleichen Reihenfolge wie die Eigenschaftenspalten in der Tabelle sein. 
+Die Eigenschaftenspalten in der **SRow-Struktur** müssen nicht in derselben Reihenfolge wie die Eigenschaftenspalten in der Tabelle liegen. 
   
-Nachdem die Zeile eingefügt wurde, werden Benachrichtigungen an alle Clients oder Dienstanbieter gesendet, die über eine Ansicht der Tabelle verfügen und die [IMAPITable::Advise-Methode](imapitable-advise.md) der Tabelle aufgerufen haben, um sich für Benachrichtigungen zu registrieren. Es wird keine Benachrichtigung gesendet, wenn die eingefügte Zeile aufgrund einer Einschränkung nicht in die Ansicht einbezogen wird. 
+Nachdem die Zeile eingefügt wurde, werden Benachrichtigungen an alle Clients oder Dienstanbieter gesendet, die über eine Ansicht der Tabelle verfügen und die die [IMAPITable::Advise-Methode](imapitable-advise.md) der Tabelle aufgerufen haben, um sich für Benachrichtigungen zu registrieren. Es wird keine Benachrichtigung gesendet, wenn die eingefügte Zeile aufgrund einer Einschränkung nicht in der Ansicht enthalten ist. 
   
 ## <a name="see-also"></a>Siehe auch
 
