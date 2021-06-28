@@ -9,12 +9,12 @@ keywords:
 ms.assetid: b4c38442-42e6-4fd2-a1b0-97cfa3300379
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 localization_priority: Priority
-ms.openlocfilehash: 07deec5ad104c59074567725d6abf9b66711e351
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: c4b6dbad7a31b7155d1bec3a5c867b6c74d0ff42
+ms.sourcegitcommit: 35b723efe168ae4bad461bd16b26f9a2412656f2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32304116"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53139093"
 ---
 # <a name="excel-recalculation"></a>Excel-Neuberechnung
 
@@ -59,7 +59,7 @@ Die Abhängigkeitsstruktur informiert Excel darüber, welche Zellen von anderen 
   
 Wenn eine Änderung an der Struktur einer Arbeitsmappe vorgenommen wird (z. B. durch Eingabe einer neuen Formel), erstellt Excel die Abhängigkeitsstruktur und die Berechnungskette neu. Wenn neue Daten oder neue Formeln eingegeben werden, markiert Excel alle Zellen, die von den neuen Daten abhängen, als Zellen, für die eine Neuberechnung erforderlich ist. Auf diese Weise markierte Zellen werden als  *geändert*  bezeichnet. Alle direkt und indirekt abhängigen Zellen werden als geändert markiert; dies bedeutet Folgendes: Wenn B1 von A1 und C1 von B1 abhängt, werden bei einer Änderung von A1 sowohl B1 als auch C1 als geändert markiert. 
   
-Wenn eine Zelle direkt oder indirekt von sich selbst abhängt, erkennt Excel den Zirkelbezug und gibt eine Warnung aus. Dies ist normalerweise eine Fehlerbedingung, die der Benutzer beheben muss, und Excel zeigt sehr hilfreiche grafische und Navigationstools an, die den Benutzer bei der Suche nach dem Ursprung des Zirkelbezugs unterstützen. In einigen Fällen ist diese Bedingung sogar wünschenswert, z. B. wenn Sie eine iterative Berechnung durchführen möchten, bei der der Startpunkt der jeweils nächsten Iteration das Ergebnis der vorherigen Iteration ist. Excel unterstützt die Steuerung von iterativen Berechnungen über das Dialogfeld mit Berechnungsoptionen.
+Wenn eine Zelle direkt oder indirekt von sich selbst abhängt, erkennt Excel den Zirkelbezug und gibt eine Warnung aus. Dies ist normalerweise eine Fehlerbedingung, die der Benutzer beheben muss, und Excel zeigt sehr hilfreiche grafische und Navigationstools an, die den Benutzer bei der Suche nach dem Ursprung des Zirkelbezugs unterstützen. In einigen Fällen ist diese Bedingung sogar wünschenswert, z. B. wenn Sie eine iterative Berechnung durchführen möchten, bei der der Startpunkt der jeweils nächsten Iteration das Ergebnis der vorherigen Iteration ist. Excel unterstützt die Steuerung von iterativen Berechnungen über das Dialogfeld mit Berechnungsoptionen.
   
 Nachdem Zellen als geändert markiert wurden, wird bei der nächsten Neuberechnung der Inhalt jeder geänderten Zelle von Excel erneut ausgewertet, und zwar in der von der Berechnungskette vorgegebenen Reihenfolge. Für das vorherige Beispiel bedeutet dies, dass zuerst B1 und dann C1 ausgewertet wird. Diese Neuberechnung findet im automatischen Neuberechnungsmodus unmittelbar nach dem Markieren der Zellen als geändert statt, andernfalls erst später.
   
@@ -97,10 +97,10 @@ Die folgenden Excel-Funktionen sind veränderlich:
     
 Sowohl VBA als auch die C-API bieten Möglichkeiten, Excel darüber zu informieren, dass eine benutzerdefinierte Funktion (UDF) als veränderlich behandelt werden soll. Bei Verwendung von VBA wird die UDF wie folgt als veränderlich deklariert.
   
-```vb
+```vba
 Function MyUDF(MakeMeVolatile As Boolean) As Double
    ' Good practice to call this on the first line.
-   Application.Volatile (MakeMeVolatile)
+   Application.Volatile MakeMeVolatile
    MyUDF = Now
 End Function
 
@@ -122,7 +122,7 @@ Excel verfügt über drei Berechnungsmodi:
     
 - Manual
     
-Im automatischen Berechnungsmodus erfolgt die Neuberechnung nach jeder Dateneingabe und nach bestimmten Ereignissen, wie z. B. den im vorherigen Abschnitt genannten Beispielen. Für sehr große Arbeitsmappen ist die Neuberechnungszeit möglicherweise so lang, dass Benutzer Neuberechnungen auf absolut erforderliche Fälle beschränken müssen. Hierzu unterstützt Excel den manuellen Modus. Der Benutzer kann den Modus über das Excel-Menüsystem oder programmgesteuert mithilfe von VBA, COM oder der C-API auswählen.
+Im automatischen Berechnungsmodus erfolgt die Neuberechnung nach jeder Dateneingabe und nach bestimmten Ereignissen, wie z. B. den im vorherigen Abschnitt genannten Beispielen. Für sehr große Arbeitsmappen ist die Neuberechnungszeit möglicherweise so lang, dass Benutzer Neuberechnungen auf absolut erforderliche Fälle beschränken müssen. Hierzu unterstützt Excel den manuellen Modus. Der Benutzer kann den Modus über das Excel-Menüsystem oder programmgesteuert mithilfe von VBA, COM oder der C-API auswählen.
   
 Datentabellen sind spezielle Strukturen in einem Arbeitsblatt. Der Benutzer richtet zuerst die Berechnung des Ergebnisses auf einem Arbeitsblatt ein. Diese hängt von einer oder zwei veränderbaren Schlüsseleingaben und anderen Parametern ab. Der Benutzer kann dann eine Tabelle mit Ergebnissen für einen Satz von Werten für eine oder beide Schlüsseleingaben erstellen. Die Tabelle wird mit dem **Assistenten für Datentabellen** erstellt. Nachdem die Tabelle eingerichtet wurde, fügt Excel die Eingaben einzeln nacheinander in die Berechnung ein und kopiert den resultierenden Wert in die Tabelle. Da eine oder zwei Eingaben verwendet werden können, können Datentabellen ein- oder zweidimensional sein. 
   
@@ -215,7 +215,7 @@ C-API: **xlcCalculateNow**
   
 - **Alle Modi**
     
-    Berechnet alle Zellen neu, die Excel als geändert markiert hat, d. h. abhängige Elemente von veränderlichen oder geänderten Daten sowie programmgesteuert als geändert markierte Zellen. Im Berechnungsmodus "Automatisch außer bei Datentabellen" werden die Tabellen berechnet, die aktualisiert werden müssen, sowie alle veränderlichen Funktionen und ihre abhängigen Elemente.
+    Berechnet alle Zellen neu, die Excel als geändert markiert hat, d. h. abhängige Elemente von veränderlichen oder geänderten Daten sowie programmgesteuert als geändert markierte Zellen. Im Berechnungsmodus "Automatisch außer bei Datentabellen" werden die Tabellen berechnet, die aktualisiert werden müssen, sowie alle veränderlichen Funktionen und ihre abhängigen Elemente.
     
 ### <a name="all-open-workbooks-tree-rebuild-and-forced-calculation"></a>Neuerstellung der Struktur und erzwungene Berechnung für alle geöffneten Arbeitsmappen
 
