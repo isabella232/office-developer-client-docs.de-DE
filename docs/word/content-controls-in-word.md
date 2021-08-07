@@ -10,7 +10,7 @@ description: Erfahren Sie, wie Microsoft Word 2013-Inhaltssteuerelemente eine gr
 localization_priority: Priority
 ms.openlocfilehash: 4234425cc8398d87b72108d389953fc0eb802c87
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32358669"

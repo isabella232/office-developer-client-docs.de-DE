@@ -8,7 +8,7 @@ description: Hier erfahren Sie, wie Sie die Darstellung einer Zahl durch das Ers
 localization_priority: Priority
 ms.openlocfilehash: b23b1f7ee806a03df8f1c0d6ec1de0f3282b427b
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32282201"
@@ -18,7 +18,7 @@ ms.locfileid: "32282201"
 Hier erfahren Sie, wie Sie die Darstellung einer Zahl durch das Erstellen eines benutzerdefinierten Zahlenformats steuern.
   
 > [!IMPORTANT]
-> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/de-DE/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
 
 Sie können die Darstellung einer Zahl ändern, indem Sie ein benutzerdefiniertes Zahlenformat erstellen. Ein benutzerdefiniertes Zahlenformat kann über ein bis drei Teile, die durch ein Semikolon (;) getrennt sind, verfügen. Wenn das Formatargument der [Format-Funktion (Access benutzerdefinierte Web app)](format-function-access-custom-web-app.md)-Funktion eines der vordefinierten numerischen Formate enthält, ist nur ein Teil zulässig. 
   
@@ -46,10 +46,10 @@ Die folgende Tabelle enthält einige Beispiele für Zahlenformatausdrücke. (Bei
   
 |**Format (Stil)**|**„5" formatiert als**|**„-5" formatiert als**|**„0.5" formatiert als**|**„0" formatiert als**|
 |:-----|:-----|:-----|:-----|:-----|
-|Zeichnfolge der Länge Null ("")  <br/> |5  <br/> |-5  <br/> |0.5  <br/> |0  <br/> |
-|0  <br/> |5  <br/> |-5  <br/> |1  <br/> |0  <br/> |
+|Zeichnfolge der Länge Null ("")  <br/> |5   <br/> |-5  <br/> |0.5  <br/> |0  <br/> |
+|0  <br/> |5   <br/> |-5  <br/> |1  <br/> |0  <br/> |
 |0.00  <br/> |5.00  <br/> |-5.00  <br/> |0.50  <br/> |0.00  <br/> |
-|#,##0  <br/> |5  <br/> |-5  <br/> |1  <br/> |0  <br/> |
+|#,##0  <br/> |5   <br/> |-5  <br/> |1  <br/> |0  <br/> |
 |$#,##0;($#,##0)  <br/> |$5  <br/> |($5)  <br/> |$1  <br/> |$0  <br/> |
 |$#,##0.00;($#,##0.00)  <br/> |$5.00  <br/> |($5.00)  <br/> |$0.50  <br/> |$0.00  <br/> |
 |0%  <br/> |500%  <br/> |-500%  <br/> |50%  <br/> |0%  <br/> |

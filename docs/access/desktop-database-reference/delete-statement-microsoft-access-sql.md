@@ -13,7 +13,7 @@ f1_categories:
 localization_priority: Priority
 ms.openlocfilehash: a4ef478e74f9851012d6f749e64b4ddb34f3a959
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32294043"
@@ -70,11 +70,13 @@ Sie können die DELETE-Anweisung verwenden, um Datensätze aus Tabellen zu entfe
 
 > [!IMPORTANT]
 > - Nachdem Sie Datensätze über eine Löschabfrage entfernt haben, können Sie diesen Vorgang nicht rückgängig machen. Wenn Sie zunächst wissen möchten, welche Datensätze gelöscht werden, überprüfen Sie im Vorfeld die Ergebnisse einer Auswahlabfrage, die die gleichen Kriterien wie die Löschabfrage verwendet, und führen Sie dann erst die Löschabfrage aus.
-> - Bewahren Sie jederzeit Sicherungskopien Ihrer Daten auf. Wenn Sie die falschen Datensätze gelöscht haben, können Sie sie aus Ihren Sicherungskopien wieder abrufen.
+> - Bewahren Sie immer eine Sicherungskopie Ihrer Daten auf. Auf diese Weise können Sie irrtümlich gelöschte Datensätze aus den Sicherungskopien abrufen.
 
 ## <a name="example"></a>Beispiel
 
 Im folgenden Beispiel werden alle Datensätze der Mitarbeiter gelöscht, die über die Position eines Trainees verfügen. Wenn die FROM-Klausel nur eine Tabelle einschließt, muss der Tabellenname nicht in der DELETE-Anweisung aufgelistet werden.
+
+
 
 ```vb
     Sub DeleteX() 

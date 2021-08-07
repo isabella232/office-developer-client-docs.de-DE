@@ -8,7 +8,7 @@ description: Hier finden Sie Vorgehensweisen, Beispielcode, SDK- und API-Dokumen
 localization_priority: Priority
 ms.openlocfilehash: e3f07a7a265882c9a5f30aca6fab9072ac2805cd
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32336372"

@@ -11,7 +11,7 @@ dev_langs:
 localization_priority: Priority
 ms.openlocfilehash: 962e425c2c69511b6d7770fb03e954588249cf2a
 ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "32314637"
@@ -114,7 +114,7 @@ AS HeadCount FROM Employees;
 
 Sie können die anderen Klauseln in einer SELECT-Anweisung verwenden, um die zurückgegebenen Daten weiter einzuschränken und zu organisieren. Weitere Informationen finden Sie im Hilfethema zur verwendeten Klausel.
 
-**Links zur Verfügung gestellt von: ** [UtterAccess](https://www.utteraccess.com)-Community. UtterAccess ist das führende Microsoft Access-Wiki und -Hilfeforum.
+**Links zur Verfügung gestellt von:** [UtterAccess](https://www.utteraccess.com)-Community. UtterAccess ist das führende Microsoft Access-Wiki und -Hilfeforum.
 
 - [SQL-zu-VBA-Formatierungsprogramm](https://www.utteraccess.com/forum/sql-vba-formatter-t1165308.html)
 
