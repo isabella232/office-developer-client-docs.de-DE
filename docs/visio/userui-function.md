@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251511
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c01dd938-677c-b2ba-8f56-4638e7e988fd
-description: Wertet einen der beiden Ausdrücke abhängig vom Wert des Zustands aus.
-ms.openlocfilehash: 544bb2b19dc610591afc78c407301098fac9c7c3
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Wertet einen der beiden Ausdrücke in Abhängigkeit vom Statuswert aus.
+ms.openlocfilehash: 8e26154b6d6f4f8102380d03ee95417a09994567
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33420346"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59549357"
 ---
 # <a name="userui-function"></a>USERUI Function
 
-Wertet einen der beiden Ausdrücke abhängig vom Wert des Status _aus._
+Wertet einen der beiden Ausdrücke in Abhängigkeit vom  _Statuswert_ aus.
   
 ## <a name="syntax"></a>Syntax
 
@@ -32,14 +32,14 @@ USERUI(** *state* **, ** *defaultexpression* **, ** *userexpression* ** )
 | _defaultexpression_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Standardausdruck.  <br/> |
 | _userexpression_ <br/> |Erforderlich  <br/> |**String** <br/> |Ein vom Benutzer bereitgestellter Ausdruck.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Wenn _der Status_ 0 ist, wertet die USERUI-Funktion den _defaultexpression aus._ Wenn _der Status_ 1 ist, wird der _userexpression ausgewertet._
+Wenn  _der Status_ 0 ist, wertet die USERUI-Funktion den  _Defaultexpression_ aus. Wenn  _der Status_ 1 ist, wird der  _Userexpression_ ausgewertet.
   
 ## <a name="example"></a>Beispiel
 
-USERUI(1, if(Width \> 6in, 6in, Width), Width \* 0.75) 
+USERUI(1, if(Width \> 6in, 6in, Width), Width \* 0,75) 
   
-Ausgewertet den Ausdruck Width \* .075 und gibt das Ergebnis zurück. 
+Wertet den Ausdruck Width \* .075 aus und gibt das Ergebnis zurück. 
   
 

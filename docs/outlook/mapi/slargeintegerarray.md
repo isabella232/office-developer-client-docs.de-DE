@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.SLargeIntegerArray
 api_type:
 - COM
 ms.assetid: 9ec9a674-c1a2-4137-856f-6cabe6f0eb9f
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ab82fff2645a5e1861523eb3f1866e0ddc7d13a5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: ea314971e43450235bab8af806ad810a718bd6f6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32331388"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59550001"
 ---
 # <a name="slargeintegerarray"></a>SLargeIntegerArray
 
@@ -25,7 +25,7 @@ ms.locfileid: "32331388"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array [von LARGE_INTEGER](https://go.microsoft.com/fwlink/?LinkId=132130) Strukturen, die zum Beschreiben einer Eigenschaft vom Typ PT_MV_I8. 
+Enthält ein Array von [LARGE_INTEGER](https://go.microsoft.com/fwlink/?LinkId=132130) Strukturen, die verwendet werden, um eine Eigenschaft vom Typ PT_MV_I8 zu beschreiben. 
   
 |||
 |:-----|:-----|
@@ -40,19 +40,19 @@ typedef struct _SLargeIntegerArray
 
 ```
 
-## <a name="members"></a>Elemente
+## <a name="members"></a>Members
 
  **cValues**
   
-> Anzahl der Werte im Array, auf das das **lpli-Element verweist.** 
+> Anzahl der Werte im Array, auf das vom **lpli-Element** verwiesen wird. 
     
  **lpli**
   
-> Zeiger auf ein Array von **LARGE_INTEGER,** das die ganzzahligen Werte enthält. 
+> Zeiger auf ein Array von **LARGE_INTEGER** Strukturen, die die ganzzahligen Werte enthalten. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Weitere Informationen zu PT_MV_18 finden Sie [unter List of Property Types](property-types.md).
+Weitere Informationen zu PT_MV_18 finden Sie unter [List of Property Types](property-types.md).
   
 ## <a name="see-also"></a>Siehe auch
 

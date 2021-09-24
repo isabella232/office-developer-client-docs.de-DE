@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.SBitMaskRestriction
 api_type:
 - COM
 ms.assetid: ddd42180-6e4f-410c-9f78-d868a91452dc
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: afac8c352ad0a07fcb1cd98683b6a5c87940ab4d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8459e21becc85e3bee0603d5d8ade7f44ddee712
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424476"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59550134"
 ---
 # <a name="sbitmaskrestriction"></a>SBitMaskRestriction
 
@@ -25,7 +25,7 @@ ms.locfileid: "33424476"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt eine Bitmaskeneinschränkung, die verwendet wird, um einen bitweisen **AND-Vorgang** durchzuführen und das Ergebnis zu testen. 
+Beschreibt eine Bitmaskeneinschränkung, die verwendet wird, um einen bitweisen **AND-Vorgang** auszuführen und das Ergebnis zu testen. 
   
 |||
 |:-----|:-----|
@@ -41,19 +41,19 @@ typedef struct _SBitMaskRestriction
 
 ```
 
-## <a name="members"></a>Elemente
+## <a name="members"></a>Members
 
  **relBMR**
   
-> Relationaler Operator, der beschreibt, wie die im **ulMask-Element** angegebene Maske auf das Eigenschaftstag angewendet werden soll. Mögliche Werte sind: 
+> Relationaler Operator, der beschreibt, wie die im **ulMask-Element** angegebene Maske auf das Eigenschaftentag angewendet werden soll. Mögliche Werte sind: 
     
 BMR_EQZ 
   
-> Führen Sie einen bitweisen **AND-Vorgang** der Maske im **ulMask-Element** aus, mit der Eigenschaft, die durch das **ulPropTag-Element** dargestellt wird, und testen Sie, ob sie gleich Null ist. 
+> Führen Sie eine bitweise **AND-Operation** der Maske im **ulMask-Element** durch, wobei die Eigenschaft durch das **ulPropTag-Element** dargestellt wird, und testen Sie, dass sie gleich Null ist. 
     
 BMR_NEZ 
   
-> Führen Sie einen bitweisen **#A0** der Maske im **ulMask-Element** aus, mit der Eigenschaft, die durch das **ulPropTag-Element** dargestellt wird, und testen Sie, ob sie nicht gleich Null ist. 
+> Führen Sie eine bitweise **AND-Operation** der Maske im **ulMask-Element** durch, wobei die Eigenschaft durch das **ulPropTag-Element** dargestellt wird, und testen Sie, dass sie ungleich Null ist. 
     
  **ulPropTag**
   
@@ -63,11 +63,11 @@ BMR_NEZ
   
 > Bitmaske, die auf die durch **ulPropTag** identifizierte Eigenschaft angewendet werden soll.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die **SBitMaskRestriction-Struktur** führt einen bitweisen **#A0** mithilfe der im **ulMask-Element** beschriebenen Bitmaske und des Werts der Eigenschaft durch, die vom **ulPropTag-Element beschrieben** wird. Wenn das Ergebnis null ist, BMR_EQZ erfüllt. Wenn der Wert ungleich null ist, d. h. wenn der Eigenschaftswert mindestens einen der gleichen Bits wie **ulMask** festgelegt hat, ist BMR_NEZ erfüllt.
+Die **SBitMaskRestriction-Struktur** führt einen bitweisen **AND-Vorgang** mithilfe der bitmaske aus, die im **ulMask-Element** und dem Wert der vom **ulPropTag-Element** beschriebenen Eigenschaft beschrieben wird. Wenn das Ergebnis Null ist, wird BMR_EQZ erfüllt. Wenn der Wert ungleich Null ist, d. h., wenn für den Eigenschaftswert mindestens eines der gleichen Bits wie **"ulMask"** festgelegt ist, wird BMR_NEZ erfüllt.
   
-Weitere Informationen zur Struktur und Einschränkungen **von SBitMaskRestriction** im Allgemeinen finden Sie unter [About Restrictions](about-restrictions.md).
+Weitere Informationen zur Struktur und Einschränkungen von **SBitMaskRestriction** im Allgemeinen finden Sie unter ["Informationen zu Einschränkungen".](about-restrictions.md)
   
 ## <a name="see-also"></a>Siehe auch
 

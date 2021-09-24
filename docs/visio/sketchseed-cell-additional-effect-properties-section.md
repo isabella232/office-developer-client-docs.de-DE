@@ -4,29 +4,29 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6f62650d-36f8-4c6e-b79f-c9c397a5954d
-description: Stellt einen Randomisierungswert dar, der zum Bestimmen der Geometrie eines Skizziereffekts als positive ganze Zahl verwendet wird. Der Wert der Zelle SketchSeed wird zufällig erstellt, wenn ein Skizziereneffekt auf die Form angewendet wird.
-ms.openlocfilehash: 3ec58fbfa183d1a6d7bb6960672658f9a6cca073
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Stellt einen Zufallswert dar, der verwendet wird, um die Geometrie eines Skizzeneffekts als positive ganze Zahl zu bestimmen. Der Wert der Zelle SketchSeed wird nach dem Zufallsprinzip erstellt, wenn ein Skizzeneffekt auf die Form angewendet wird.
+ms.openlocfilehash: 9b7edab031427e34dbff0aac02a4f72110a0821f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33434396"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59549588"
 ---
 # <a name="sketchseed-cell-additional-effect-properties-section"></a>Zelle "SketchSeed" (Abschnitt "Additional Effect Properties")
 
-Stellt einen Randomisierungswert dar, der zum Bestimmen der Geometrie eines Skizziereffekts als positive ganze Zahl verwendet wird. Der Wert der **Zelle SketchSeed** wird zufällig erstellt, wenn ein Skizziereneffekt auf die Form angewendet wird. 
+Stellt einen Zufallswert dar, der verwendet wird, um die Geometrie eines Skizzeneffekts als positive ganze Zahl zu bestimmen. Der Wert der Zelle **SketchSeed** wird nach dem Zufallsprinzip erstellt, wenn ein Skizzeneffekt auf die Form angewendet wird. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Verwenden Sie zum Erhalten eines Verweises auf die **Zelle SketchSeed** anhand des Namens aus einer anderen Formel, nach dem Wert des **N-Attributs** eines **Cell-Elements** oder aus einem Programm mit der **CellsU-Eigenschaft:** 
+Verwenden Sie Folgendes, um einen Verweis auf die **Zelle "SketchSeed"** anhand des Namens aus einer anderen Formel, anhand des Werts des **N-Attributs** eines **Cell-Elements** oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | SketchSeed  <br/> |
    
-Um einen Verweis auf die **Zelle SketchSeed nach** Index aus einem Programm zu erhalten, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
+Um einen Verweis auf die Zelle **"SketchSeed"** anhand des Indexes eines Programms abzurufen, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|

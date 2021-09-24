@@ -3,15 +3,15 @@ title: Verwenden mehrerer Exchange-Konten
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4e1804bf-4c50-4942-a7ab-9a8caf1be7e5
-description: 'Letzte Änderung: Montag, 25. Juni 2012'
-ms.openlocfilehash: a5792ebaf78d77924bc3157be63d937b66e9f4b2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: HT
+description: 'Letzte �nderung: Montag, 25. Juni 2012'
+ms.openlocfilehash: 2a6705a8a17add99559b4ef6de918181eadc1e73
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329653"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59549769"
 ---
 # <a name="using-multiple-exchange-accounts"></a>Verwenden mehrerer Exchange-Konten
 
@@ -19,15 +19,15 @@ ms.locfileid: "32329653"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Microsoft Outlook 2010 und Microsoft Outlook 2013 unterstützen die Integration mit mehreren Exchange-E-Mail-Konten. In Outlook 2010 oder Outlook 2013 konnte ein Benutzer zwei Exchange-Konten zum gleichen Profil hinzufügen und dennoch umfangreiche Exchange-Funktionen wie die veröffentlichte globale Adressliste (GAL), die Exchange-Abwesenheitskonfiguration und die Ordnerfreigabe nutzen.
+Microsoft Outlook 2010 und Microsoft Outlook 2013 unterstützen die Integration mit mehreren Exchange-E-Mail-Konten. In Outlook 2010 oder Outlook 2013 kann ein Benutzer zwei Exchange-Konten hinzuf�gen, um das gleiche Profil und genie�en Sie trotzdem umfassende Exchange-Funktionen wie die ver�ffentlichte globale Adressliste (GAL), Exchange Out-of-Office-Konfiguration und Freigabeeinstellungen.
   
-Wer mit den MAPI-Profilabschnitten für Microsoft Office Outlook 2007 und früher vertraut ist, weiß, dass Exchange-Einstellungen, wie der E-Mail-Benutzername und der Servername, im festen Exchange Global Profile-Abschnitt, **pbGlobalProfileSectionGuid**, gespeichert sind. In Outlook 2010 und Outlook 2013 benötigt jedes Exchange-Konto einen eigenen Profilabschnitt zum Speichern von Einstellungen, was **pbGlobalProfileSectionGuid** überflüssig macht. 
+Diejenigen, die mit den MAPI-Profilabschnitten für Microsoft Office Outlook 2007 und früheren Versionen vertraut sind, wissen, dass Exchange Einstellungen, z. B. der E-Mail-Benutzername und der Servername, im Abschnitt "Festes globales Profil" Exchange **pbGlobalProfileSectionGuid** gespeichert werden. Outlook 2010 und Outlook 2013 ben�tigt jede Exchange-Konto eine eigene Profilabschnitt zum Speichern von Einstellungen, die **pbGlobalProfileSectionGuid** veraltet vornehmen. 
   
-Die Exchange-Einstellungen für Outlook 2010 und Outlook 2013 sind weiterhin im Profil gespeichert, aber pro Profil wird dynamisch ein eindeutiger Bezeichner für den Profilabschnitt zugewiesen, der die Einstellungen enthält. Der Speicherort der Exchange-Einstellungen im Profil wird in der [kanonischen Eigenschaft "PidTagExchangeProfileSectionId"](pidtagexchangeprofilesectionid-canonical-property.md) gespeichert, die sich im Nachrichtendienst-Profilabschnitt des Exchange-Kontos befindet. Diese Eigenschaft finden Sie auch im Profilabschnitt für jeden Anbieter in diesem Nachrichtendienst des Kontos. Der eindeutige Bezeichner wird nicht auf dem Server gespeichert und unterscheidet sich von Profil zu Profil.
+Outlook 2010 and Outlook 2013 Exchange settings are still stored in the profile, but a unique identifier for the profile section that contains their settings is dynamically allocated per profile. The location of the Exchange settings in the profile is stored in the [Kanonische PidTagExchangeProfileSectionId-Eigenschaft](pidtagexchangeprofilesectionid-canonical-property.md), which can be found in the message service profile section of the Exchange account. This property can also be found in the profile section for each provider in this message service of the account. The unique identifier is not stored on the server and will be different across profiles.
   
-Outlook 2010 und Outlook 2013 verwenden **PidTagExchangeProfileSectionId** als eindeutigen Bezeichner, um ein Exchange-Konto anzugeben. Bei dieser Art der Verwendung wird dieser eindeutige Bezeichner **emsmdbUID** genannt. Für einige MAPI- und Outlook-Operationen kann eine **emsmdbUID** erforderlich sein, um anzugeben, welches Exchange-Konto für die Operation verwendet werden soll. 
+Outlook 2010 und Outlook 2013 verwenden die **PidTagExchangeProfileSectionId** als eindeutiger Bezeichner, um ein Exchange-Konto anzugeben. Wenn auf diese Weise verwendet wird, wird diese eindeutige ID als die **emsmdbUID** bezeichnet. F�r einige Vorg�nge MAPI- und Outlook m�glicherweise ein **emsmdbUID** ben�tigt, um anzugeben, welche Exchange-Konto f�r den Vorgang verwendet werden soll. 
   
-Um mehrere Exchange-Konten zu unterstützen, müssen Sie bestimmte Aufrufe neuer Funktionen in Ihrem Code verwenden. Ersetzen Sie jeden Aufruf, der eine **entryID** und entweder [IAddrBook::OpenEntry](iaddrbook-openentry.md) oder [IAddrBook::CompareEntryIDs](iaddrbook-compareentryids.md) auf [IMailUser : IMAPIProp](imailuserimapiprop.md) und [IDistList : IMAPIContainer](idistlistimapicontainer.md) verwendet, durch eine der folgenden Funktionen. 
+In order to support multiple Exchange accounts, you must use some calls to new functions in your code. Replace any call that uses an **entryID** and either [IAddrBook::OpenEntry](iaddrbook-openentry.md) or [IAddrBook::CompareEntryIDs](iaddrbook-compareentryids.md) on [IMailUser: IMAPIProp](imailuserimapiprop.md) and [IDistList: IMAPIContainer](idistlistimapicontainer.md) with one of the following functions. 
   
 - [HrCompareABEntryIDsWithExchangeContext](hrcompareabentryidswithexchangecontext.md)
     
@@ -49,40 +49,40 @@ Um mehrere Exchange-Konten zu unterstützen, müssen Sie bestimmte Aufrufe neuer
     
 - [HrOpenABEntryWithSupport](hropenabentrywithsupport.md)
     
-## <a name="legacy-support"></a>Legacyunterstützung
+## <a name="legacy-support"></a>Legacy-Unterst�tzung
 
-Alle MAPI-Clients, die vor der Erstellung dieses neuen **emsmdbUID**-Abschnitts geschrieben wurden, werden weiterhin unterstützt. Diese Clients rufen weiterhin den vorherigen globalen Abschnitt ab (**pbGlobalProfileSectionGuid**). Abfragen nach diesem Profilabschnitt werden an ein bestimmtes Exchange-Konto weitergeleitet, das Legacyanfragen verarbeitet. Das Konto, das die Legacyaufrufe verarbeitet, kann anhand der Nachrichtendiensttabelle und durch Hinzufügen einer Spalte für PR_EMSMDB_LEGACY bestimmt werden. Nur für einen Nachrichtendienst ist diese Einstellung auf "true" festgelegt, und sein **PidTagExchangeProfileSectionId** wird als Legacy-**emsmdbUID** bezeichnet.
+MAPI-Clients vor der Erstellung dieses neue **emsmdbUID** Abschnitts geschrieben werden weiterhin unterst�tzt. Diese Clients werden weiterhin der vorherigen globalen Abschnitt **pbGlobalProfileSectionGuid** abgerufen. Abfragen f�r diesen Profilabschnitt werden auf einem bestimmten Exchange-Konto weitergeleitet, die die Vorversion Anfragen behandelt. Das Konto, das die Vorversion Aufrufe behandelt kann in der Tabelle in der Dienste und Hinzuf�gen einer Spalte f�r PR_EMSMDB_LEGACY bestimmt werden. Nur eine Messagingdiensts dies auf True festgelegt, und seine **PidTagExchangeProfileSectionId** wird der Vorversion **emsmdbUID** aufgerufen.
   
 > [!NOTE]
-> Konfigurierbare MAPI-Einstellungen wie der Standardspeicher und das Standardkonto haben keinen Einfluss darauf, welches Konto Legacyaufrufe verarbeitet. Das Konto, das die Legacyaufrufe verarbeitet, kann nicht konfiguriert werden. 
+> [!HINWEIS] Konfigurierbare MAPI-Einstellungen wie die Standard-Informationsspeichers und das Standardkonto wirken sich nicht auf dem Konto legacy get�tigte Anrufe behandelt werden. Das Konto, das die Vorversion Aufrufe behandelt kann nicht konfiguriert werden. 
   
-Der **emsmdbUID** des Legacykontos wird in den Outlook Global Profile-Abschnitt kopiert. Wenn diese Eigenschaft nicht vorhanden ist, wird durch Abfragen nach der Nachrichtendiensttabelle ermittelt, welches Konto der Legacyhandler ist, und der Wert im Outlook Global Profile-Abschnitt festgelegt. 
+Die **emsmdbUID** des legacy-Kontos wird in der globalen Profilabschnitt Outlook kopiert. Wenn diese Eigenschaft nicht vorhanden ist, wird f�r die Nachricht Services Tabelle Abfragen bestimmen, welches Konto der Vorversion Handler ist und legen Sie den Wert in der globalen Profilabschnitt Outlook. 
   
-Um es deutlich zu sagen: Der Outlook Global Profile-Abschnitt unterscheidet sich vom Exchange Global Profile-Abschnitt, und in Outlook 2010 und Outlook 2013 ist der Exchange Global Profile-Abschnitt nicht mehr wirklich global, da Sie mehrere Exchange Konten verwenden können. Der Outlook Global Profile-Abschnitt enthält Eigenschaften über Outlook, wie z. B. den Status des MRU-Ordners oder den Status der globalen Verbindung.
+Deaktivieren der Outlook sich im Abschnitt globale Profile aus dem Exchange-Abschnitt der globalen Profil unterscheidet und in Outlook 2010 und Outlook 2013 Abschnitts Profile globale Exchange ist nicht mehr wirklich globale m�ssen Sie mehrere Exchange-Konten sein. Die globale Benutzerprofilabschnitt Outlook enth�lt Outlook wie den Status des Ordners MRU oder den Status der Verbindung, globale Eigenschaften.
   
-## <a name="address-book-account-contexts"></a>Adressbuch-Kontokontexte
+## <a name="address-book-account-contexts"></a>Address Book Konto Kontext
 
-Um Adressen mit mehreren Exchange-Konten korrekt aufzulösen, verwenden Sie die neuen Funktionen, die einen Kontenkontext berücksichtigen, sodass Aufrufe an das Adressbuch das richtige Exchange-Konto durchsuchen.
+Um Adressen ordnungsgem�� mit mehreren Exchange-Konten zu beheben, verwenden Sie die neuen Funktionen, die einen Konto Kontext ergreifen, damit Anrufe im Adressbuch das richtige Exchange-Konto suchen.
   
-Einige frühere Adressbuch-APIs sind veraltet, da sie keine vollständige Unterstützung mehrerer Exchange-Konten boten. Dieser Kontokontext ist in der Regel eine **emsmdbUID**.
+Einige fr�here Adressbuch APIs wurden verworfen, da die APIs nicht vollst�ndig mehrere Exchange-f�hig sind. In diesem Kontext ist in der Regel ein **emsmdbUID**.
   
-Neben der **emsmdbUID** haben mehrere Exchange-Konten auch eine **emsabpUID**.
+Zus�tzlich zu den **emsmdbUID** haben mehrere Exchange-Konten auch ein **emsabpUID**.
   
 1. Der Wert **emsmdbUID** gibt den Konto-Kontext. 
     
 2. Der Wert **emsabpUID** identifiziert eine Exchange-Adressbuchanbieter. 
     
-Der **emsabpUID**-Wert wird typischerweise bei der Auflösung eines Empfängers verwendet. Wenn Sie einen Empfänger mit [IAddrBook::ResolveName](iaddrbook-resolvename.md) auflösen, enthält eine Exchange-Empfängerzeile die Eigenschaft **PR_AB_PROVIDERS** (0x3D010102), die den **emsabpUID**-Wert enthält. Dieser **emsabpUID**-Wert identifiziert den Exchange-Adressbuchanbieter für den jeweiligen Empfänger. 
+The **emsabpUID** value is typically used when resolving a recipient. When resolving a recipient using [IAddrBook::ResolveName](iaddrbook-resolvename.md), an Exchange recipient row contains the **PR_AB_PROVIDERS** (0x3D010102) property, which contains the **emsabpUID** value. This **emsabpUID** value identifies the Exchange address book provider for the specific recipient. 
   
-Wenn Sie den **emsabpUID**-Wert für eine bestimmte **emsmdbUID** ermitteln möchten, öffnen Sie den Profilabschnitt für **emsmdbUID**, und rufen Sie die Eigenschaft **PR_EMSABP_USER_UID** (0x0x3D1A0102) ab. 
+Wenn Sie den Wert **emsabpUID** f�r einen bestimmten **emsmdbUID** ermitteln m�chten, �ffnen Sie den Profilabschnitt f�r die **emsmdbUID**, und rufen Sie die **PR_EMSABP_USER_UID** (0x0x3D1A0102)-Eigenschaft. 
   
-Wenn Sie [IAddrBook::PrepareRecips](iaddrbook-preparerecips.md) aufrufen, stellen Sie sicher, dass die Exchange-Empfänger in der Liste, die Sie übergeben, die Eigenschaft **PR_AB_PROVIDERS** mit der **emsabpUID**-Eigenschaft enthalten, die dem Adressbuchanbieter entspricht, zu dem der Empfänger gehört. Der Aufruf von [IAddrBook::PrepareRecips](iaddrbook-preparerecips.md) in einer Zeile, die Sie von [IAddrBook::ResolveName](iaddrbook-resolvename.md) erhalten haben, erfordert keine zusätzliche Aktion, aber bestimmter Codes ruft [IAddrBook::PrepareRecips](iaddrbook-preparerecips.md) in Zeilen auf, die nur die Eigenschaft **PR_ENTRYID** enthalten. Zeilen in dieser und ähnlichen Situationen sollten sowohl **PR_ENTRYID** als auch **PR_AB_PROVIDERS** enthalten, deren Eigenschaft **PR_AB_PROVIDERS** auf die richtige **emsabpUID** festgelegt ist.
+If you are calling [IAddrBook::PrepareRecips](iaddrbook-preparerecips.md), make sure that the Exchange recipients in the list that you pass in contain the **PR_AB_PROVIDERS** property that has the **emsabpUID** that corresponds to the address book provider that the recipient belongs to. Calling [IAddrBook::PrepareRecips](iaddrbook-preparerecips.md) on a row that you obtained from [IAddrBook::ResolveName](iaddrbook-resolvename.md) requires no additional action, but some code will call [IAddrBook::PrepareRecips](iaddrbook-preparerecips.md) on rows that contain only the **PR_ENTRYID** property. Rows in this and similar situations should contain both **PR_ENTRYID** and **PR_AB_PROVIDERS** with the **PR_AB_PROVIDERS** property set to the correct **emsabpUID**.
   
-Eine einfache Beschreibung des Prozesses zum Auflösen mehrerer Exchange-Konten lautet wie folgt:
+Eine einfache Beschreibung des Prozesses f�r die Beilegung von mehreren Exchange-Konten lautet wie folgt:
   
-- Auf der Grundlage des angegebenen eindeutigen Dienstbezeichners sucht Ihr Code in der Tabelle des Nachrichtenspeichers der **PR_SERVICE_UID**-Eigenschaft, die mit Ihrem Dienstbezeichner übereinstimmt. Von dort aus können Sie den richtigen **PR_MDB_PROVIDER** ermitteln. Diese Zeile enthält den entsprechenden Speicher.
+- Den eindeutige Bezeichner der Dienst erteilt, sollte der Code in der Tabelle des Nachrichtenspeichers der **PR_SERVICE_UID** -Eigenschaft, die der, die Ihnen �bereinstimmt. Dort k�nnen Sie die richtige **PR_MDB_PROVIDER** bestimmen. Diese Zeile enth�lt den entsprechenden Store.
     
-- Auf der Grundlage der angegebenen **emsmdbUID** sucht Ihr Code in der Nachrichtendiensttabelle nach der Zeile, die die **PidTagExchangeProfileSectionId** enthält, die der **emsmdbUID** übereinstimmt.
+- Ein **emsmdbUID** angegeben, sollte der Code in der Tabelle Nachricht Dienste f�r die Zeile, die die **PidTagExchangeProfileSectionId** verf�gbar macht, die mit der **emsmdbUID**�bereinstimmt.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -111,5 +111,5 @@ Eine einfache Beschreibung des Prozesses zum Auflösen mehrerer Exchange-Konten 
 [Kanonische PidTagExchangeProfileSectionId-Eigenschaft](pidtagexchangeprofilesectionid-canonical-property.md)
 
 
-[Öffnen des globalen Profilabschnitts](https://support.microsoft.com/kb/188482)
+[How To Open the Global Profile Section](https://support.microsoft.com/kb/188482)
 

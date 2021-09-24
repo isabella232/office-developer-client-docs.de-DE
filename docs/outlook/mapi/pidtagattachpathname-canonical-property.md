@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagAttachPathname
 api_type:
 - HeaderDef
 ms.assetid: e19c7cd1-7c56-4f63-8736-d6971c7c5f4d
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 05df7fe04f511de9310edc7a8ef09130e6354ad2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 03c6f15c314cf83d3bcd779a0df38e94068a6af2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327230"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59550841"
 ---
 # <a name="pidtagattachpathname-canonical-property"></a>PidTagAttachPathname (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32327230"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält den vollqualifizierten Pfad und Dateinamen einer Anlage.
+Enthält den vollqualifizierten Pfad und dateinamen einer Anlage.
   
 |||
 |:-----|:-----|
@@ -34,15 +34,15 @@ Enthält den vollqualifizierten Pfad und Dateinamen einer Anlage.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Es wird empfohlen, dass Anlagenunterobjekte diese Eigenschaften verfügbar machen. Wenn Sie sie festlegen, wird angegeben, dass die Anlagendaten nicht in der Nachricht enthalten sind, aber auf einem allgemeinen Dateiserver verfügbar sind. Diese Eigenschaften sind in Verbindung mit allen **PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md)) -Flags erforderlich, die anlage durch Verweis angeben: **ATTACH_BY_REFERENCE**, **ATTACH_BY_REF_RESOLVE** oder **ATTACH_BY_REF_ONLY**. 
+Es wird empfohlen, dass Anlagenunterobjekte diese Eigenschaften verfügbar machen. Durch das Festlegen dieser Daten wird angegeben, dass die Anlagendaten nicht in der Nachricht enthalten sind, aber auf einem gemeinsamen Dateiserver verfügbar sind. Diese Eigenschaften sind in Verbindung mit einem der **PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md)) Flags erforderlich, die anlagenweise angeben: **ATTACH_BY_REFERENCE**, **ATTACH_BY_REF_RESOLVE** oder **ATTACH_BY_REF_ONLY**. 
   
-Jedes Verzeichnis oder jeder Dateiname ist auf einen Namen mit acht Zeichen und eine Erweiterung mit drei Zeichen beschränkt. Der Allgemeine Pfad ist auf 256 Zeichen beschränkt. Legen Sie für eine Plattform, die lange Dateinamen unterstützt, diese Eigenschaften und PR_ATTACH_LONG_PATHNAME **(** [PidTagAttachLongPathname](pidtagattachlongpathname-canonical-property.md)) fest. 
+Jedes Verzeichnis oder jeder Dateiname ist auf einen Acht-Zeichen-Namen und eine dreistellige Erweiterung beschränkt. Der Gesamtpfad ist auf 256 Zeichen beschränkt. Legen Sie für eine Plattform, die lange Dateinamen unterstützt, diese Eigenschaften und **PR_ATTACH_LONG_PATHNAME** ([PidTagAttachLongPathname](pidtagattachlongpathname-canonical-property.md)) fest. 
   
-Clientanwendungen sollten in den meisten Fällen eine universelle Benennungskonvention (Universal Naming Convention, UNC) verwenden, wenn die Datei freigegeben wird, und einen absoluten Pfad verwenden, wenn die Datei lokal ist.
+Clientanwendungen sollten in den meisten Fällen eine universelle Benennungskonvention (UNIVERSAL Naming Convention, UNC) verwenden, wenn die Datei freigegeben wird, und einen absoluten Pfad verwenden, wenn die Datei lokal ist.
   
-MAPI funktioniert nur mit Pfaden und Dateinamen im ANSI-Zeichensatz. Clients, die Pfade und Dateinamen in einem OEM-Zeichensatz verwenden, müssen sie vor dem Aufrufen von MAPI in ANSI konvertieren. 
+MAPI funktioniert nur mit Pfaden und Dateinamen im ANSI-Zeichensatz. Clients, die Pfade und Dateinamen in einem OEM-Zeichensatz verwenden, müssen sie vor dem Aufrufen der MAPI in ANSI konvertieren. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -54,17 +54,17 @@ MAPI funktioniert nur mit Pfaden und Dateinamen im ANSI-Zeichensatz. Clients, di
     
 [[MS-OXORMMS]](https://msdn.microsoft.com/library/a121dda4-48f3-41f8-b12f-170f533038bb%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften von mit Rechten verwalteten codierten Nachrichten an.
+> Gibt die Eigenschaften von nachrichten mit verwalteten Rechten an.
     
 ### <a name="header-files"></a>Headerdateien
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -77,9 +77,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

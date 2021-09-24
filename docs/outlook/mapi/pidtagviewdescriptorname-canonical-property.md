@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagViewDescriptorName
 api_type:
 - COM
 ms.assetid: 1e689ee4-9e89-4328-beb9-05c80a6544a0
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ab906d83ae4ad46747fd9037728620db1d656d25
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 7cb5f25e9e9c4dc26998d164b0450ea5443f61bf
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360725"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59550281"
 ---
 # <a name="pidtagviewdescriptorname-canonical-property"></a>PidTagViewDescriptorName (kanonische Eigenschaft)
 
@@ -32,11 +32,11 @@ Enthält den Namen eines Ansichtsdeskriptors.
 |Zugeordnete Eigenschaften:  <br/> |PR_VD_NAME, PR_VD_NAME_A, PR_VD_NAME_W  <br/> |
 |Kennung:  <br/> |0x7006  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
-|Bereich:  <br/> |Durch nachrichtenklassendefinierte übertragungsfähige Nachrichten  <br/> |
+|Bereich:  <br/> |Nachrichtenklassendefiniert datenübertragungsfähig  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaften müssen auf eine nicht leere Zeichenfolge für eine Folder Associate Information (FAI)-Nachricht festgelegt werden, die Ansichtsdefinitionen enthält.
+Diese Eigenschaften müssen auf eine nicht leere Zeichenfolge für eine FAI-Nachricht (Folder Associate Information) festgelegt werden, die Ansichtsdefinitionen enthält.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -50,11 +50,11 @@ Diese Eigenschaften müssen auf eine nicht leere Zeichenfolge für eine Folder A
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -62,9 +62,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagDetailsTable
 api_type:
 - HeaderDef
 ms.assetid: 7a0ccad3-f497-4871-b733-771e6cb8ef6a
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 74eae4a4ed742c3bb90496f5975ad7dac6ff798f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 81a8fd91fcc920a7ba2a165c3f4867675e3d9204
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33419254"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59550715"
 ---
 # <a name="pidtagdetailstable-canonical-property"></a>PidTagDetailsTable (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "33419254"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein eingebettetes Anzeigetabelle-Objekt.
+Enthält ein eingebettetes Anzeigetabellenobjekt.
   
 |||
 |:-----|:-----|
@@ -34,9 +34,9 @@ Enthält ein eingebettetes Anzeigetabelle-Objekt.
 |Datentyp:  <br/> |PT_OBJECT  <br/> |
 |Bereich:  <br/> |MAPI-Container  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Durch Übergeben dieser Eigenschaft an die [IMAPIProp::OpenProperty-Methode](imapiprop-openproperty.md) für das Objekt wird eine [IMAPITable-Schnittstelle](imapitableiunknown.md) zurückgegeben, die das Erstellen der Anzeigetabelle ermöglicht. MAPI verwendet diese Tabelle, um Eigenschaftenblätter für ein Adressbuchobjekt als Reaktion auf einen [IAddrBook::D etails-Aufruf anzuzeigen.](iaddrbook-details.md) 
+Wenn Sie diese Eigenschaft an die [IMAPIProp::OpenProperty-Methode](imapiprop-openproperty.md) für das Objekt übergeben, wird eine [IMAPITable-Schnittstelle](imapitableiunknown.md) zurückgegeben, die das Erstellen der Anzeigetabelle ermöglicht. MAPI verwendet diese Tabelle, um Eigenschaftsblätter für ein Adressbuchobjekt als Reaktion auf einen [IAddrBook::D Etails-Aufruf](iaddrbook-details.md) anzuzeigen. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,11 +44,11 @@ Durch Übergeben dieser Eigenschaft an die [IMAPIProp::OpenProperty-Methode](ima
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,14 +56,14 @@ Mapitags.h
 
 [PidTagCreateTemplates (kanonische Eigenschaft)](pidtagcreatetemplates-canonical-property.md)
   
-[PidTagSearch (kanonische Eigenschaft)](pidtagsearch-canonical-property.md)
+[Kanonische PidTagSearch-Eigenschaft](pidtagsearch-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

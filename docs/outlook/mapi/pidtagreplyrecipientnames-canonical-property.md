@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagReplyRecipientNames
 api_type:
 - COM
 ms.assetid: f5ae6124-3e44-400f-95c2-24b19f3085b5
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 02dcbcccd003fb0b53356da11a3b90b38e632c2a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: e6d169cf0434240207afd2e1db1fbdaa9556a3f4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355174"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59550568"
 ---
 # <a name="pidtagreplyrecipientnames-canonical-property"></a>PidTagReplyRecipientNames (kanonische Eigenschaft)
 
@@ -34,13 +34,13 @@ Enthält eine Liste der Anzeigenamen für Empfänger, die eine Antwort erhalten 
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaften enthalten die Durch Semikolons getrennten Anzeigenamen.
+Diese Eigenschaften enthalten die durch Semikolons getrennten Anzeigenamen.
   
-Wenn diese Eigenschaft nicht vorhanden ist, wird eine Antwort nur an den Benutzer gesendet, der durch die **PR_SENDER_NAME** ([PidTagSenderName](pidtagsendername-canonical-property.md)) -Eigenschaft identifiziert wird. Wenn **PR_REPLY_RECIPIENT_ENTRIES** ([PidTagReplyRecipientEntries](pidtagreplyrecipiententries-canonical-property.md)) und diese Eigenschaften definiert sind, wird die Antwort an alle Empfänger gesendet, die durch diese beiden Eigenschaften identifiziert werden. Ein Transportanbieter verwendet diese Eigenschaften, um die übliche Antwortlogik außer Kraft zu setzen.
+Wenn diese Eigenschaft nicht vorhanden ist, wird eine Antwort nur an den Benutzer gesendet, der von der **PR_SENDER_NAME** ([PidTagSenderName](pidtagsendername-canonical-property.md)) -Eigenschaft identifiziert wird. Wenn **PR_REPLY_RECIPIENT_ENTRIES** ([PidTagReplyRecipientEntries](pidtagreplyrecipiententries-canonical-property.md)) und diese Eigenschaften definiert sind, wird die Antwort an alle von diesen beiden Eigenschaften identifizierten Empfänger gesendet. Ein Transportanbieter verwendet diese Eigenschaften, um die übliche Antwortlogik zu überschreiben.
   
-Wenn eine **PR_REPLY_RECIPIENT_ENTRIES** oder diese Eigenschaften festgelegt sind, muss auch die andere Eigenschaft festgelegt werden. Diese Eigenschaften müssen die gleiche Anzahl von Empfängern enthalten, und sie müssen sie in derselben Reihenfolge enthalten. Wenn diese Anforderungen nicht erfüllt werden, kann dies zu unvorhersehbaren Ergebnissen führen. 
+Wenn **entweder PR_REPLY_RECIPIENT_ENTRIES** oder diese Eigenschaften festgelegt sind, muss auch die andere Eigenschaft festgelegt werden. Diese Eigenschaften müssen dieselbe Anzahl von Empfängern enthalten, und sie müssen in derselben Reihenfolge enthalten sein. Wenn diese Anforderungen nicht beachtet werden, kann dies zu unvorhersehbaren Ergebnissen führen. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -48,7 +48,7 @@ Wenn eine **PR_REPLY_RECIPIENT_ENTRIES** oder diese Eigenschaften festgelegt sin
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
@@ -62,11 +62,11 @@ Wenn eine **PR_REPLY_RECIPIENT_ENTRIES** oder diese Eigenschaften festgelegt sin
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -74,9 +74,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

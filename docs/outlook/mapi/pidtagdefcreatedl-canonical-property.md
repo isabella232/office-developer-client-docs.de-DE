@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagDefCreateDl
 api_type:
 - HeaderDef
 ms.assetid: 172dc15b-7bda-403f-a93a-446b2f9ff1d3
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ff5d35104e9effc27c405b716cb61cf4643677b3
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 16b9af522adfba01e76a97aeb228c4414b48b79c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33417791"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59550729"
 ---
 # <a name="pidtagdefcreatedl-canonical-property"></a>PidTagDefCreateDl (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "33417791"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält die Vorlageneintrags-ID für eine Standardverteilungsliste. 
+Enthält den Vorlageneintragsbezeichner für eine Standardverteilerliste. 
   
 |||
 |:-----|:-----|
@@ -34,11 +34,11 @@ Enthält die Vorlageneintrags-ID für eine Standardverteilungsliste.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Adressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Clientanwendungen verwenden diese Eigenschaft, um eine Verteilerliste innerhalb eines Containers zu erstellen. Die Unterstützung der Eintragserstellung ist für Adressbuchcontainer optional. Diejenigen, die sie nicht unterstützen, müssen diese Eigenschaft nicht verfügbar machen. 
+Clientanwendungen verwenden diese Eigenschaft, um eine Verteilerliste innerhalb eines Containers zu erstellen. Die Unterstützung der Erstellung von Einträgen ist für Adressbuchcontainer optional. Diejenigen, die diese Eigenschaft nicht unterstützen, müssen diese Eigenschaft nicht verfügbar machen. 
   
-Diese Eigenschaft gibt einen Eintrag an, der in der **PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) -Eigenschaft für Verteilerlisten angezeigt werden kann. Nach dem Abrufen des Bezeichners verwendet der Client ihn in einem Aufruf der [IABContainer::CreateEntry-Methode.](iabcontainer-createentry.md) Der Eintrag stellt die Vorlage für die Standardverteilungsliste dar. 
+Diese Eigenschaft gibt einen Eintrag an, der in der **eigenschaft PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) für Verteilerlisten angezeigt werden kann. Nach dem Abrufen des Bezeichners verwendet der Client ihn in einem Aufruf der [IABContainer::CreateEntry-Methode.](iabcontainer-createentry.md) Der Eintrag stellt die Vorlage für die Standardverteilerliste dar. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -46,11 +46,11 @@ Diese Eigenschaft gibt einen Eintrag an, der in der **PR_CREATE_TEMPLATES** ([Pi
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -61,9 +61,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

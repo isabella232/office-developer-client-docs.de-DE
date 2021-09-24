@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.SGuidArray
 api_type:
 - COM
 ms.assetid: 2091e5fc-75c8-4ea4-87e9-a9bf508e9c58
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 3d20a0932de0fb29ea73e56c37e262c0ccd062c3
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 156234b52f092c25314603f7f65da2b20bdbbbc5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424924"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59550009"
 ---
 # <a name="sguidarray"></a>SGuidArray
 
@@ -25,7 +25,7 @@ ms.locfileid: "33424924"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von [GUID-Strukturen,](guid.md) die zum Beschreiben einer Eigenschaft vom Typ PT_MV_CLSID. 
+Enthält ein Array von [GUID-Strukturen,](guid.md) die verwendet werden, um eine Eigenschaft vom Typ PT_MV_CLSID zu beschreiben. 
   
 |||
 |:-----|:-----|
@@ -40,17 +40,17 @@ typedef struct _SGuidArray
 
 ```
 
-## <a name="members"></a>Elemente
+## <a name="members"></a>Members
 
  **cValues**
   
-> Anzahl der Werte im Array, auf die das **lpguid-Element** verweist. 
+> Anzahl der Werte im Array, auf das vom **lpguid-Element** verwiesen wird. 
     
  **lpguid**
   
-> Zeiger auf ein Array von **GUID-Strukturen,** das die Klassenbezeichnerwerte enthält. 
+> Zeiger auf ein Array von **GUID-Strukturen,** die die Klassenbezeichnerwerte enthalten. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Weitere Informationen zu PT_MV_CLSID finden Sie unter [List of Property Types](property-types.md).
   

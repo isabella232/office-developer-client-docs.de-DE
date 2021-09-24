@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251507
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 53579e0e-fcec-e745-0207-3861b5efa333
-description: Gibt den Zeitwert zurück, der durch Datetime oder Ausdruck dargestellt wird, basierend auf den Einstellungen region und language des Systems.
-ms.openlocfilehash: 61eeafac64ce199eba0f9032c42474d2b44febce
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Gibt basierend auf den Einstellungen für Region und Sprache des Systems den durch datetime oder Expression dargestellten Zeitwert zurück.
+ms.openlocfilehash: 19b6d92fa5efeb1f9881e429a3368b20b3bc9893
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33432324"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59549469"
 ---
 # <a name="timevalue-function-visioshapesheet"></a>TIMEVALUE-Funktion (VisioShapeSheet)
 
-Gibt den Zeitwert zurück, der durch  _datetime_ oder  _ausdruck_ dargestellt wird, basierend auf den Einstellungen region und language des Systems.
+Gibt basierend auf den Einstellungen für Region und Sprache des Systems den Zeitwert zurück, der durch _Datum/Uhrzeit_ oder Ausdruck dargestellt wird. 
   
 ## <a name="syntax"></a>Syntax
 
@@ -28,17 +28,17 @@ TIMEVALUE(" ** *datetime* ** "| ** *Ausdruck* ** [, ** *lcid* ** ])
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _datetime_ <br/> |Erforderlich  <br/> |**String** <br/> | Beliebige Zeichenfolge, die allgemein als Datums- und Zeitangabe erkannt wird, oder ein Bezug auf eine Zelle mit einer Datums- und Zeitangabe.  <br/> |
+| _Datetime_ <br/> |Erforderlich  <br/> |**String** <br/> | Beliebige Zeichenfolge, die allgemein als Datums- und Zeitangabe erkannt wird, oder ein Bezug auf eine Zelle mit einer Datums- und Zeitangabe.  <br/> |
 | _expression_ <br/> |Erforderlich  <br/> |**Variiert** <br/> | Beliebiger Ausdruck, der eine Datums- und Zeitangabe liefert.  <br/> |
-| _lcid_ <br/> |Optional.  <br/> |**Number** <br/> |Der lokale Bezeichner, der bei der Auswertung eines nicht lokalen Werts für datetime verwendet werden soll. Der lokale Bezeichner ist eine Zahl, die in den Systemkopfdateien beschrieben wird.  <br/> |
+| _lcid_ <br/> |Optional  <br/> |**Number** <br/> |Der lokale Bezeichner, der bei der Auswertung eines nicht lokalen Werts für datetime verwendet werden soll. Der lokale Bezeichner ist eine Zahl, die in den Systemkopfdateien beschrieben wird.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Jede Datumskomponente in  _datetime_ oder  _ausdruck_ wird verworfen. 
+Jede Datumskomponente in _datetime_ oder Expression wird verworfen.  
   
 Wenn  _datetime_ fehlt oder nicht in ein gültiges Ergebnis konvertiert werden kann, gibt diese Funktion eine #VALUE! zurück. 
   
-Die TIMEVALUE-Funktion akzeptiert auch  einen einzelnen Zahlenwert für ausdruck, wobei der Dezimalteil des Ergebnisses den Bruchteil eines Tages seit Mitternacht darstellt. 
+Die TIMEVALUE-Funktion akzeptiert auch einen einzelnen Zahlenwert für  _einen Ausdruck,_ bei dem der Dezimalteil des Ergebnisses den Bruchteil eines Tages seit Mitternacht darstellt. 
   
 ## <a name="example-1"></a>Beispiel 1
 

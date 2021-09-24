@@ -1,25 +1,25 @@
 ---
-title: PidTagDisplayType (kanonische Eigenschaft)
+title: Kanonische PidTagDisplayType-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagDisplayType
 api_type:
 - HeaderDef
 ms.assetid: ee2bc6ca-3769-4b56-a77d-81418d28f768
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: da26fd2a8643817cf60adbfa6f4e85da345b875c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 1e48d31ade72639adfa5ea5f9d4d2e87a201b302
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360781"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59550701"
 ---
-# <a name="pidtagdisplaytype-canonical-property"></a>PidTagDisplayType (kanonische Eigenschaft)
+# <a name="pidtagdisplaytype-canonical-property"></a>Kanonische PidTagDisplayType-Eigenschaft
 
   
   
@@ -34,11 +34,11 @@ Enthält einen Wert, der zum Zuordnen eines Symbols zu einer bestimmten Zeile ei
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Adressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft enthält eine lange ganze Zahl, die eine spezielle Behandlung des Tabelleneintrags basierend auf seinem Typ erleichtert. Diese Spezielle Behandlung besteht in der Regel darin, ein Symbol oder ein anderes Anzeigeelement zu zeigen, das dem Anzeigetyp zugeordnet ist. 
+Diese Eigenschaft enthält eine lange ganze Zahl, die die besondere Behandlung des Tabelleneintrags basierend auf seinem Typ erleichtert. Diese besondere Behandlung besteht in der Regel darin, ein Symbol oder ein anderes Anzeigeelement anzuzeigen, das dem Anzeigetyp zugeordnet ist. 
   
-Diese Eigenschaft wird in Ordnerinhaltstabellen nicht verwendet. Clientanwendungen sollten die **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md))-Eigenschaft einer Nachricht und die entsprechende [IMAPIFormInfo-Schnittstelle](imapiforminfoimapiprop.md) verwenden, um die **Eigenschaften PR_ICON** ([PidTagIcon](pidtagicon-canonical-property.md)) und **PR_MINI_ICON** ([PidTagMiniIcon](pidtagminiicon-canonical-property.md)) für diese Nachricht zu erhalten. 
+Diese Eigenschaft wird nicht in Ordnerinhaltstabellen verwendet. Clientanwendungen sollten die **eigenschaft PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) einer Nachricht und die entsprechende [IMAPIFormInfo-Schnittstelle](imapiforminfoimapiprop.md) verwenden, um die **Eigenschaften PR_ICON** ([PidTagIcon](pidtagicon-canonical-property.md)) und **PR_MINI_ICON** ([PidTagMiniIcon](pidtagminiicon-canonical-property.md)) für diese Nachricht abzurufen. 
   
 Diese Eigenschaft kann genau einen der folgenden Werte haben:
   
@@ -52,19 +52,19 @@ DT_DISTLIST
     
 DT_FOLDER 
   
-> Zeigen Sie das Standardordnersymbol neben dem Ordner an.
+> Zeigt das Standardordnersymbol neben dem Ordner an.
     
 DT_FOLDER_LINK 
   
-> Anzeigen des Standardsymbols für Ordnerlinks neben dem Ordner anstelle des Standardordnersymbols.
+> Zeigt das Standard-Ordnerverknüpfungssymbol neben dem Ordner anstelle des Standardordnersymbols an.
     
 DT_FOLDER_SPECIAL 
   
-> Anzeigesymbol für einen Ordner mit anwendungsspezifischem Unterschied, z. B. einem speziellen Typ von öffentlichem Ordner.
+> Anzeigesymbol für einen Ordner mit anwendungsspezifischer Unterscheidung, z. B. einem speziellen Öffentlichen Ordnertyp.
     
 DT_FORUM 
   
-> Ein Forum, z. B. ein Bulletin Board-Dienst oder ein öffentlicher oder freigegebener Ordner.
+> Ein Forum, z. B. einBulletin-Board-Dienst oder ein öffentlicher oder freigegebener Ordner.
     
 DT_GLOBAL 
   
@@ -72,23 +72,23 @@ DT_GLOBAL
     
 DT_LOCAL 
   
-> Ein lokales Adressbuch, das Sie für eine kleine Arbeitsgruppe freigeben.
+> Ein lokales Adressbuch, das Sie mit einer kleinen Arbeitsgruppe teilen.
     
 DT_MAILUSER 
   
-> Ein typischer Messagingbenutzer.
+> Ein typischer Messaging-Benutzer.
     
 DT_MODIFIABLE 
   
-> Modifiable; Der Container sollte auf der Benutzeroberfläche als veränderbar bezeichnet werden.
+> Modifizierbar; Der Container sollte auf der Benutzeroberfläche als modifizierbar gekennzeichnet werden.
     
 DT_NOT_SPECIFIC 
   
-> Passt nicht zu den anderen Einstellungen.
+> Entspricht keiner der anderen Einstellungen.
     
 DT_ORGANIZATION 
   
-> Ein spezieller Alias, der für eine große Gruppe definiert ist, z. B. helpdesk, accounting oder blood-drive coordinator.
+> Ein spezieller Alias, der für eine große Gruppe definiert ist, z. B. Helpdesk- oder Buchhaltungs- oder Blut-Laufwerk-Coordinator.
     
 DT_PRIVATE_DISTLIST 
   
@@ -96,17 +96,17 @@ DT_PRIVATE_DISTLIST
     
 DT_REMOTE_MAILUSER 
   
-> Ein Empfänger, der von einem fremden oder Remotenachrichtensystem kommt.
+> Ein Empfänger, der bekannt ist, dass er von einem fremden oder Remotenachrichtensystem stammt.
     
 DT_WAN 
   
-> Ein Weitbereichsnetzwerk-Adressbuch.
+> Ein Adressbuch für ein breites Netzwerk.
     
-Adressbuchinhaltstabellen verwenden die Werte DT_AGENT, DT_DISTLIST, DT_FORUM, DT_MAILUSER, DT_ORGANIZATION, DT_PRIVATE_DISTLIST und DT_REMOTE_MAILUSER. Adressbuchhierarchietabellen und Einmaltabellen verwenden die Werte DT_GLOBAL, DT_LOCAL, DT_MODIFIABLE, DT_NOT_SPECIFIC und DT_WAN. Ordnerhierarchietabellen verwenden die werte DT_FOLDER, DT_FOLDER_LINK und DT_FOLDER_SPECIAL. 
+Adressbuchinhaltsverzeichnisse verwenden die Werte DT_AGENT, DT_DISTLIST, DT_FORUM, DT_MAILUSER, DT_ORGANIZATION, DT_PRIVATE_DISTLIST und DT_REMOTE_MAILUSER. Adressbuchhierarchietabellen und einmalige Tabellen verwenden die Werte DT_GLOBAL, DT_LOCAL, DT_MODIFIABLE, DT_NOT_SPECIFIC und DT_WAN. Ordnerhierarchietabellen verwenden die Werte DT_FOLDER, DT_FOLDER_LINK und DT_FOLDER_SPECIAL. 
   
-Wenn diese Eigenschaft nicht festgelegt ist, sollte der Client den standardtyp annehmen, der für die Tabelle geeignet ist, in der Regel DT_FOLDER, DT_LOCAL oder DT_MAILUSER. 
+Wenn diese Eigenschaft nicht festgelegt ist, sollte der Client den für die Tabelle geeigneten Standardtyp annehmen, in der Regel DT_FOLDER, DT_LOCAL oder DT_MAILUSER. 
   
- **Hinweis** Alle nicht dokumentierten Werte sind für MAPI reserviert. Clientanwendungen dürfen keine neuen Werte definieren und müssen für den Umgang mit einem nicht dokumentierten Wert vorbereitet sein. 
+ **Hinweis** Alle nicht dokumentierten Werte sind für DIE MAPI reserviert. Clientanwendungen dürfen keine neuen Werte definieren und müssen darauf vorbereitet sein, mit einem undokumentierten Wert umzugehen. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -114,7 +114,7 @@ Wenn diese Eigenschaft nicht festgelegt ist, sollte der Client den standardtyp a
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
@@ -132,11 +132,11 @@ Wenn diese Eigenschaft nicht festgelegt ist, sollte der Client den standardtyp a
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -144,9 +144,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

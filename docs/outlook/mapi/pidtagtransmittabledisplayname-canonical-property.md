@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagTransmittableDisplayName
 api_type:
 - COM
 ms.assetid: aadd9086-b936-4067-bf7d-f54fc50e3c83
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e66fe8d3621c122ccc19bdde169f20f7d47a148d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: d4baeb6d47c0f57385ae01a4abe5382d3c3e4d07
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32331857"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59550302"
 ---
 # <a name="pidtagtransmittabledisplayname-canonical-property"></a>PidTagTransmittableDisplayName (kanonische Eigenschaft)
 
@@ -34,11 +34,11 @@ Enthält den Anzeigenamen eines Empfängers in einem sicheren Formular, das nich
 |Datentyp:  <br/> |PT_UNICODE, PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaften sollten von allen Adressbuchanbietern implementiert werden. Sie enthalten die Version des Anzeigenamens des Empfängers, die mit der Nachricht übermittelt wird. Für die meisten Adressbuchanbieter haben diese Eigenschaften denselben Wert wie die **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) -Eigenschaft. Anbieter ohne sicheren Anzeigenamen geben PT_ERROR und MAPI ändert den Anzeigenamen durch Hinzufügen von Anführungszeichen um den Namen.
+Diese Eigenschaften sollten von allen Adressbuchanbietern implementiert werden. Sie enthalten die Version des Anzeigenamens des Empfängers, der mit der Nachricht übertragen wird. Für die meisten Adressbuchanbieter haben diese Eigenschaften den gleichen Wert wie die **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) -Eigenschaft. Anbieter, die nicht über einen sicheren Anzeigenamen verfügen, geben PT_ERROR zurück, und MAPI ändert den Anzeigenamen durch Hinzufügen von Anführungszeichen um den Namen.
   
-Eine Clientanwendung kann diese Eigenschaft verwenden, um änderungen oder "Spoofing" von Einträgen zu verhindern. Ein Beispiel für Spoofing ist die Übertragung von John Doe als John (What a Guy) Doe.
+Eine Clientanwendung kann diese Eigenschaft verwenden, um Änderungen oder Spoofing von Einträgen zu verhindern. Ein Beispiel für Spoofing ist die Übertragung von John Doe als John (What a Gif) Doe.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -46,7 +46,7 @@ Eine Clientanwendung kann diese Eigenschaft verwenden, um änderungen oder "Spoo
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
@@ -68,11 +68,11 @@ Eine Clientanwendung kann diese Eigenschaft verwenden, um änderungen oder "Spoo
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -80,9 +80,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

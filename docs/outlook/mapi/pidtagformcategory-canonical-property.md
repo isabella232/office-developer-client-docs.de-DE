@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagFormCategory
 api_type:
 - HeaderDef
 ms.assetid: f4bd5ddb-f1e7-4e2a-b312-b1884f78cc1a
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 3b9d1d76be6f61a1b8e60c2553d74424672d1a6f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 9f40b1373bc851f4a71c8a5d8748650e6737f7f2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33414221"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59550610"
 ---
 # <a name="pidtagformcategory-canonical-property"></a>PidTagFormCategory (kanonische Eigenschaft)
 
@@ -32,9 +32,9 @@ Enthält die Kategorie eines Formulars.
 |Zugeordnete Eigenschaften:  <br/> |PR_FORM_CATEGORY, PR_FORM_CATEGORY_A, PR_FORM_CATEGORY_W  <br/> |
 |Kennung:  <br/> |0x3304  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
-|Bereich:  <br/> |MAPI allgemein  <br/> |
+|Bereich:  <br/> |ALLGEMEINE MAPI  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Kategoriename wird von einer Clientanwendung so definiert, dass er für die Anwendung geeignet ist. 
   
@@ -44,11 +44,11 @@ Der Kategoriename wird von einer Clientanwendung so definiert, dass er für die 
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

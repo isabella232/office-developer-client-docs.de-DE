@@ -4,14 +4,14 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c514ce79-0920-4f1b-5332-0bdef146e802
-ms.openlocfilehash: 08b65a5f0e108c5503e29c7e195d681d0a343521
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 9aa09cf63e4806b6ece9ca8d8257a0e0e8cd9a60
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538452"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59549308"
 ---
 # <a name="window_type-complextype-visio-xml"></a>Window_Type complexType (Visio XML)
 
@@ -21,7 +21,7 @@ ms.locfileid: "34538452"
 |:-----|:-----|
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
 |**Schemadatei** <br/> |VisioSchema15-2012-06-05.xsd  <br/> |
-|**Erweiterungsbasis** <br/> |Keine  <br/> |
+|**Erweiterungsbasis** <br/> |Keines  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -170,7 +170,7 @@ ms.locfileid: "34538452"
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -194,23 +194,23 @@ Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccur
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|Container  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> ||Werte des xsd:unsignedInt-Typs.  <br/> |
-|ContainerType  <br/> |xsd:token  <br/> |Optional  <br/> ||Werte des xsd:token-Typs.  <br/> |
-|Dokument  <br/> |xsd:string  <br/> |Optional  <br/> ||Werte des xsd:string-Typs.  <br/> |
-|ID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> ||Werte des xsd:unsignedInt-Typs.  <br/> |
-|Master  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> ||Werte des xsd:unsignedInt-Typs.  <br/> |
-|Seite  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> ||Werte des xsd:unsignedInt-Typs.  <br/> |
-|ParentWindow  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> ||Werte des xsd:unsignedInt-Typs.  <br/> |
-|ReadOnly  <br/> |xsd:boolean  <br/> |Optional  <br/> ||Werte des typs xsd:boolean.  <br/> |
-|Blatt  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> ||Werte des xsd:unsignedInt-Typs.  <br/> |
-|ViewCenterX  <br/> |xsd:double  <br/> |Optional  <br/> ||Werte des xsd:double-Typs.  <br/> |
-|ViewCenterY  <br/> |xsd:double  <br/> |Optional  <br/> ||Werte des xsd:double-Typs.  <br/> |
-|ViewScale  <br/> |xsd:double  <br/> |Optional  <br/> ||Werte des xsd:double-Typs.  <br/> |
-|WindowHeight  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> ||Werte des xsd:unsignedInt-Typs.  <br/> |
-|WindowLeft  <br/> |xsd:short  <br/> |Optional  <br/> ||Werte des xsd:short-Typs.  <br/> |
-|WindowState  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> ||Werte des xsd:unsignedInt-Typs.  <br/> |
-|WindowTop  <br/> |xsd:short  <br/> |Optional  <br/> ||Werte des xsd:short-Typs.  <br/> |
-|WindowType  <br/> |xsd:token  <br/> |erforderlich  <br/> ||Werte des xsd:token-Typs.  <br/> |
-|WindowWidth  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> ||Werte des xsd:unsignedInt-Typs.  <br/> |
+|Container  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> ||Werte des Typs "xsd:unsignedInt".  <br/> |
+|ContainerType  <br/> |xsd:token  <br/> |Optional  <br/> ||Werte des Typs "xsd:token".  <br/> |
+|Dokument  <br/> |xsd:string  <br/> |Optional  <br/> ||Werte des Typs "xsd:string".  <br/> |
+|ID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> ||Werte des Typs "xsd:unsignedInt".  <br/> |
+|Master  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> ||Werte des Typs "xsd:unsignedInt".  <br/> |
+|Seite  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> ||Werte des Typs "xsd:unsignedInt".  <br/> |
+|ParentWindow  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> ||Werte des Typs "xsd:unsignedInt".  <br/> |
+|ReadOnly  <br/> |xsd:boolean  <br/> |Optional  <br/> ||Werte des Typs "xsd:boolean".  <br/> |
+|Blatt  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> ||Werte des Typs "xsd:unsignedInt".  <br/> |
+|ViewCenterX  <br/> |xsd:double  <br/> |Optional  <br/> ||Werte des Typs "xsd:double".  <br/> |
+|ViewCenterY  <br/> |xsd:double  <br/> |Optional  <br/> ||Werte des Typs "xsd:double".  <br/> |
+|ViewScale  <br/> |xsd:double  <br/> |Optional  <br/> ||Werte des Typs "xsd:double".  <br/> |
+|WindowHeight  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> ||Werte des Typs "xsd:unsignedInt".  <br/> |
+|WindowLeft  <br/> |xsd:short  <br/> |Optional  <br/> ||Werte des Typs "xsd:short".  <br/> |
+|WindowState  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> ||Werte des Typs "xsd:unsignedInt".  <br/> |
+|WindowTop  <br/> |xsd:short  <br/> |Optional  <br/> ||Werte des Typs "xsd:short".  <br/> |
+|Windowtype  <br/> |xsd:token  <br/> |erforderlich  <br/> ||Werte des Typs "xsd:token".  <br/> |
+|WindowWidth  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> ||Werte des Typs "xsd:unsignedInt".  <br/> |
    
 

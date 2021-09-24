@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PROP_TYPE
 api_type:
 - COM
 ms.assetid: 746d63fa-bfb7-479f-94dc-ba40011c1ec9
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 0c33633c4decd697cf241f8b7c27360f776a1ade
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 5c31622e99079dc7c27d28d95aa26ecd5ac5689f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33412835"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59550183"
 ---
 # <a name="prop_type"></a>PROP_TYPE
 
@@ -25,7 +25,7 @@ ms.locfileid: "33412835"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt den Eigenschaftentyp eines angegebenen Eigenschaftstags zurück.
+Gibt den Eigenschaftstyp eines angegebenen Eigenschaftstags zurück.
   
 |||
 |:-----|:-----|
@@ -40,13 +40,13 @@ PROP_TYPE (ulPropTag)
 
  _ulPropTag_
   
-> Eigenschaftstag, das den zurückgegebenen Eigenschaftentyp enthält.
+> Eigenschaftstag, das den zurückzugebenden Eigenschaftstyp enthält.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das **PROP_TYPE** kann verwendet werden, um den Typ einer Eigenschaft zu bestimmen. Wenn Sie z. B. PROP_TYPE (**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))) aufrufen, wird der Wert PT_BINARY zurückgegeben.
+Das **PROP_TYPE** Makro kann verwendet werden, um den Typ einer Eigenschaft zu bestimmen. Wenn Sie beispielsweise PROP_TYPE (**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))) aufrufen, wird der Wert zurückgegeben PT_BINARY.
   
-Jedes Eigenschaftstag enthält den Eigenschaftentyp im Wort mit niedriger Reihenfolge (Bits 0 bis 15) und den Eigenschaftenbezeichner im Wort mit hoher Ordnung (Bits 16 bis 31). Das **PROP_TYPE** extrahiert den Eigenschaftentyp und legt ihn in bits 0 bis 15 der ganzen Zahl, die zurückgegeben werden soll. Die verbleibenden Bits des Rückgabewerts werden auf Nullen festgelegt. 
+Jedes Eigenschaftstag enthält den Eigenschaftstyp im Wort in niedriger Reihenfolge (Bits 0 bis 15) und den Eigenschaftsbezeichner im Hochkomma (Bits 16 bis 31). Das **PROP_TYPE** Makro extrahiert den Eigenschaftentyp und legt ihn in bits 0 bis 15 der ganzen Zahl, die zurückgegeben werden soll. Die verbleibenden Bits des Rückgabewerts werden auf Nullen festgelegt. 
   
 ## <a name="see-also"></a>Siehe auch
 

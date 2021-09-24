@@ -4,19 +4,19 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f5954685-3a2d-7848-388f-5dd7e536551c
-description: Das Stammelement eines Microsoft-Visio Dokument.
-ms.openlocfilehash: acb0a4e8ef1efb6d6d5872118241e36bb4e9630c
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+description: Das Stammelement eines Microsoft Visio-Dokuments.
+ms.openlocfilehash: 82e8465d342571b438491e9196c3ed6f5359f8d4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538487"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59549350"
 ---
 # <a name="visiodocument-element-visio-xml"></a>VisioDocument-Element (Visio XML)
 
-Das Stammelement eines Microsoft-Visio Dokument.
+Das Stammelement eines Microsoft Visio-Dokuments.
   
 ## <a name="element-information"></a>Informationen zum Element
 
@@ -36,7 +36,7 @@ Das Stammelement eines Microsoft-Visio Dokument.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -49,10 +49,10 @@ Keine.
 |[Colors](colors-element-visiodocument_type-complextypevisio-xml.md) <br/> |[Colors_Type](colors_type-complextypevisio-xml.md) <br/> |Enthält die Farbtabelle des Dokuments.  <br/> |
 |[DocumentSettings](documentsettings-element-visiodocument_type-complextypevisio-xml.md) <br/> |[DocumentSettings_Type](documentsettings_type-complextypevisio-xml.md) <br/> |Enthält Elemente, die Dokumenteinstellungen angeben.  <br/> |
 |[DocumentSheet](documentsheet-element-visiodocument_type-complextypevisio-xml.md) <br/> |[DocumentSheet_Type](documentsheet_type-complextypevisio-xml.md) <br/> |Gibt die **ShapeSheet-Struktur** eines Dokuments an.  <br/> |
-|[EventList](eventlist-element-visiodocument_type-complextypevisio-xml.md) <br/> |[EventList_Type](eventlist_type-complextypevisio-xml.md) <br/> |Enthält ein **EventItem-Element** für jedes Ereignis, auf das ein Objekt antworten soll.  <br/> |
+|[EventList](eventlist-element-visiodocument_type-complextypevisio-xml.md) <br/> |[EventList_Type](eventlist_type-complextypevisio-xml.md) <br/> |Enthält ein **EventItem-Element** für jedes Ereignis, auf das ein Objekt reagieren soll.  <br/> |
 |[FaceNames](facenames-element-visiodocument_type-complextypevisio-xml.md) <br/> |[FaceNames_Type](facenames_type-complextypevisio-xml.md) <br/> |Enthält eine Auflistung von **FaceName-Elementen.**  <br/> |
 |[HeaderFooter](headerfooter-element-visiodocument_type-complextypevisio-xml.md) <br/> |[HeaderFooter_Type](headerfooter_type-complextypevisio-xml.md) <br/> |Enthält Elemente für die Kopf- und Fußzeile eines Dokuments.  <br/> |
-|[PublishSettings](publishsettings-element-visiodocument_type-complextypevisio-xml.md) <br/> |[PublishSettings_Type](publishsettings_type-complextypevisio-xml.md) <br/> |Gibt den Satz von Zeichnungsseiten an, die angezeigt werden können, und Datensatzsätze, die in einer Zeichnung aktualisiert werden können.  <br/> |
+|[PublishSettings](publishsettings-element-visiodocument_type-complextypevisio-xml.md) <br/> |[PublishSettings_Type](publishsettings_type-complextypevisio-xml.md) <br/> |Gibt den Satz von Zeichnungsseiten an, die angezeigt werden können, und eine Gruppe von Recordsets, die in einer Zeichnung aktualisiert werden können.  <br/> |
 |[StyleSheets](stylesheets-element-visiodocument_type-complextypevisio-xml.md) <br/> |[StyleSheets_Type](stylesheets_type-complextypevisio-xml.md) <br/> |Enthält eine Auflistung von StyleSheet-Elementen für das Dokument.  <br/> |
    
 ### <a name="attributes"></a>Attribute

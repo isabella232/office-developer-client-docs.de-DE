@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagEmailAddress
 api_type:
 - HeaderDef
 ms.assetid: bbd1e187-172e-4612-9efe-7c8e52967dfe
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: efcb72d872836adce544f3a90cf093de1f3713a7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 942ecbc8fcfe78fd1163fe5eb650557105353d44
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32338640"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59550687"
 ---
 # <a name="pidtagemailaddress-canonical-property"></a>PidTagEmailAddress (kanonische Eigenschaft)
 
@@ -32,13 +32,13 @@ Enthält die E-Mail-Adresse des Messagingbenutzers.
 |Zugeordnete Eigenschaften:  <br/> |PR_EMAIL_ADDRESS, PR_EMAIL_ADDRESS_A, PR_EMAIL_ADDRESS_W  <br/> |
 |Kennung:  <br/> |0x3003  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
-|Bereich:  <br/> |MAPI allgemein  <br/> |
+|Bereich:  <br/> |ALLGEMEINE MAPI  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaften sind Beispiele für die Basisadresseneigenschaften für alle Messagingbenutzer. Es handelt sich um eine Zeichenfolge mit Nullen, deren Format nur für das zugrunde liegende Messagingsystem bedeutungslos ist. 
+Diese Eigenschaften sind Beispiele für die grundlegenden Adresseigenschaften für alle Messagingbenutzer. Es handelt sich um eine Zeichenfolge mit NULL-Terminierung, deren Format nur für das zugrunde liegende Messagingsystem bedeutungslos ist. 
   
-Diese Eigenschaften werden zusammen mit den **Eigenschaften PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) und **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) bei der Adressierung von Nachrichten verwendet. Das Zeichenfolgenformat wird durch **PR_ADDRTYPE.** 
+Diese Eigenschaften werden in Verbindung mit den Eigenschaften **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) und **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) beim Adressieren von Nachrichten verwendet. Das Zeichenfolgenformat wird durch **PR_ADDRTYPE** qualifiziert. 
   
 Gültige Werte für diese Eigenschaft sind: 
   
@@ -55,7 +55,7 @@ Bruce@XYZZY.COM
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
@@ -69,11 +69,11 @@ Bruce@XYZZY.COM
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -81,9 +81,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

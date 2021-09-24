@@ -6,25 +6,25 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm2180
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5630b446-5668-f7c1-1e34-6d4f84600f7f
 description: Eine Arbeitsumgebung für die Eingabe von Formeln in benutzerspezifische Zellen, auf die von anderen Zellen und Add-On-Tools verwiesen werden kann.
-ms.openlocfilehash: d10336578ae5738b5ffe06cad01ae5075d3ee3dc
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 7346492d4b4c0e11ebba933d718a93d20d8952f6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33405576"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59549434"
 ---
 # <a name="user-defined-cells-section"></a>Abschnitt "User-defined Cells"
 
 Eine Arbeitsumgebung für die Eingabe von Formeln in benutzerspezifische Zellen, auf die von anderen Zellen und Add-On-Tools verwiesen werden kann.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Wie im [Abschnitt Scratch](scratch-section.md) kann der Abschnitt **Benutzerdefinierte** Zellen von Ihrer Lösung auf unterschiedliche Weise verwendet werden. Der Vorteil des **Abschnitts Benutzerdefinierte Zellen** ist, dass Zellen benannt werden können. Zellen im **Abschnitt Scratch** können nicht benannt werden. 
+Wie der Abschnitt Scratch kann der Abschnitt User-defined **Cells** von Ihrer Lösung auf unterschiedliche Weise verwendet werden. [](scratch-section.md) Der Vorteil des Abschnitts **"User-defined Cells"** besteht darin, dass Zellen benannt werden können. Zellen im **Abschnitt Scratch** können nicht benannt werden. 
   
-Wenn Ihre Lösung einen genau definierten Zweck hat,  wird empfohlen, Zellen im Abschnitt Benutzerdefinierte Zellen zu verwenden, um Klarheit zu schaffen, da Benutzerzellen benannt werden können. Der **Abschnitt Scratch** wird in der Regel verwendet, um wiederholte komplexe Berechnungen zu isolieren. 
+Wenn Ihre Lösung einen klar definierten Zweck hat, wird empfohlen, zellen im Abschnitt **"User-defined Cells"** zur Übersichtlichkeit zu verwenden, da Benutzerzellen benannt werden können. Der Abschnitt **Scratch** wird in der Regel verwendet, um wiederholte komplexe Berechnungen zu isolieren. 
   
 Wenn Sie diesen Abschnitt hinzufügen möchten, verwenden Sie das Dialogfeld **Abschnitt einfügen** (klicken Sie dazu mit der rechten Maustaste in das ShapeSheet-Fenster, und klicken Sie auf **Abschnitt einfügen**).
   

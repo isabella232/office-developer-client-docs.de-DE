@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251512
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f2625ef8-3bdb-5a8d-48b9-149be0592533
-description: Gibt eine ganze Zahl von 1 bis 7 zurück, die den Wochentag in Datetime oder Ausdruck darstellt.
-ms.openlocfilehash: 7c5d467d8c6ff14b99b64b8b0462d21d0b769998
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Gibt eine ganze Zahl zwischen 1 und 7 zurück, die den Wochentag in datetime oder Ausdruck darstellt.
+ms.openlocfilehash: 38643d223bbafaeb0b66bfaf4f59ab4dbf9f5159
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404806"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59549329"
 ---
 # <a name="weekday-function-visioshapesheet"></a>WEEKDAY-Funktion (VisioShapeSheet)
 
-Gibt eine ganze Zahl von 1 bis 7 zurück, die den Wochentag in _Datetime oder_ Ausdruck _darstellt._
+Gibt eine ganze Zahl, 1 bis 7, die den Wochentag in  _Datum und Uhrzeit_ oder  _Ausdruck_ darstellt.
   
 ## <a name="syntax"></a>Syntax
 
@@ -28,9 +28,9 @@ WEEKDAY(" ** *datetime* ** "| ** *Ausdruck* ** [, ** *lcid* ** ])
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _datetime_ <br/> |Erforderlich  <br/> |**String** <br/> | Beliebige Zeichenfolge, die allgemein als Datums- und Zeitangabe erkannt wird, oder ein Bezug auf eine Zelle mit einer Datums- und Zeitangabe.  <br/> |
+| _Datetime_ <br/> |Erforderlich  <br/> |**String** <br/> | Beliebige Zeichenfolge, die allgemein als Datums- und Zeitangabe erkannt wird, oder ein Bezug auf eine Zelle mit einer Datums- und Zeitangabe.  <br/> |
 | _expression_ <br/> |Erforderlich  <br/> |**Variiert** <br/> |Beliebiger Ausdruck, der eine Datums- und Zeitangabe liefert.  <br/> |
-| _lcid_ <br/> |Optional.  <br/> |**Numeric** <br/> |Der lokale Bezeichner, der bei der Auswertung eines nicht lokalen Werts für datetime verwendet werden soll. Der lokale Bezeichner ist eine Zahl, die in den Systemkopfdateien beschrieben wird.  <br/> |
+| _lcid_ <br/> |Optional  <br/> |**Numeric** <br/> |Der lokale Bezeichner, der bei der Auswertung eines nicht lokalen Werts für datetime verwendet werden soll. Der lokale Bezeichner ist eine Zahl, die in den Systemkopfdateien beschrieben wird.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
@@ -38,11 +38,11 @@ Ganze Zahl
   
 ## <a name="remarks"></a>Bemerkungen
 
-Die Zeitkomponente in  _datetime_ oder  _ausdruck_ wird verworfen. 
+Die Zeitkomponente in _datetime_ oder Expression wird verworfen.  
   
 Das Ergebnis entspricht Montag (1) bis Sonntag (7). Es findet kein Auf- oder Abrunden statt. Wenn  _datetime_ fehlt oder nicht als gültiges Datum oder eine gültige Uhrzeit interpretiert werden kann, gibt die Funktion eine #VALUE! zurück. 
   
-Die WEEKDAY-Funktion akzeptiert auch  einen einzelnen Zahlenwert für ausdruck, wobei der ganzzahlige Teil des Ergebnisses die Anzahl der Tage seit dem 30. Dezember 1899 darstellt. 
+The WEEKDAY function also accepts a single number value for  _expression_ where the integer portion of the result represents the number of days since December 30, 1899. 
   
 ## <a name="example-1"></a>Beispiel 1
 

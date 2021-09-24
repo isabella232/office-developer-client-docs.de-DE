@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagStoreEntryId
 api_type:
 - COM
 ms.assetid: 0d705667-19f4-4eda-a068-e65ea8f00d9b
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 7dc8ea74d36dd8aee4acec426e97d8b5e3ba2234
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: e1e56668de79fedb37da8cbe47aca7c2e28e1d59
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278750"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59550337"
 ---
 # <a name="pidtagstoreentryid-canonical-property"></a>PidTagStoreEntryId (kanonische Eigenschaft)
 
@@ -34,11 +34,11 @@ Enthält den eindeutigen Eintragsbezeichner des Nachrichtenspeichers, in dem sic
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |ID-Eigenschaften  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft wird verwendet, um einen Nachrichtenspeicher mit der [IMAPISession::OpenMsgStore-Methode zu](imapisession-openmsgstore.md) öffnen. Es wird auch verwendet, um alle Objekte zu öffnen, die im Besitz des Nachrichtenspeichers sind. 
+Diese Eigenschaft wird verwendet, um einen Nachrichtenspeicher mit der [IMAPISession::OpenMsgStore-Methode](imapisession-openmsgstore.md) zu öffnen. Es wird auch verwendet, um alle Objekte zu öffnen, die im Besitz des Nachrichtenspeichers sind. 
   
-Bei einem Nachrichtenspeicher ist diese Eigenschaft mit der eigenen PR_ENTRYID **(** [PidTagEntryId](pidtagentryid-canonical-property.md)) identisch. Eine Clientanwendung kann die beiden Eigenschaften mithilfe der [IMAPISession::CompareEntryIDs-Methode](imapisession-compareentryids.md) vergleichen. 
+Bei einem Nachrichtenspeicher ist diese Eigenschaft identisch mit der eigenen **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) -Eigenschaft des Speichers. Eine Clientanwendung kann die beiden Eigenschaften mithilfe der [IMAPISession::CompareEntryIDs-Methode](imapisession-compareentryids.md) vergleichen. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -46,7 +46,7 @@ Bei einem Nachrichtenspeicher ist diese Eigenschaft mit der eigenen PR_ENTRYID *
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
@@ -62,17 +62,17 @@ Bei einem Nachrichtenspeicher ist diese Eigenschaft mit der eigenen PR_ENTRYID *
     
 [[MS-OXSHARE]](https://msdn.microsoft.com/library/e4e5bd27-d5e0-43f9-a6ea-550876724f3d%28Office.15%29.aspx)
   
-> Gibt Postfachordner zwischen Clients zurück.
+> Teilt Postfachordner zwischen Clients.
     
 ### <a name="header-files"></a>Headerdateien
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -80,9 +80,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

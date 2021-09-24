@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PROP_ID
 api_type:
 - COM
 ms.assetid: 6ddaced5-49bb-41fe-95da-4e3300883bf7
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 228ea91969b35a1608dd6b3378b751312aa9c665
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 765f1c0aae042721e2a03f6b22a7652786b50af3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33409132"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59550197"
 ---
 # <a name="prop_id"></a>PROP_ID
 
@@ -25,7 +25,7 @@ ms.locfileid: "33409132"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt den Eigenschaftenbezeichner eines angegebenen Eigenschaftstags zurück.
+Gibt den Eigenschaftsbezeichner eines angegebenen Eigenschaftstags zurück.
   
 |||
 |:-----|:-----|
@@ -40,13 +40,13 @@ PROP_ID (ulPropTag)
 
  _ulPropTag_
   
-> Eigenschaftstag, das den zurück zu verwendende Bezeichner enthält.
+> Eigenschaftstag, das den zurückzugebenden Bezeichner enthält.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Jedes Eigenschaftstag enthält den Eigenschaftentyp im Wort mit niedriger Reihenfolge (Bits 0 bis 15) und den Eigenschaftenbezeichner im Wort mit hoher Ordnung (Bits 16 bis 31). Das **PROP_ID** extrahiert den Eigenschaftsbezeichner und legt ihn in die Bits 0 bis 15 der zurück zu verwendenden ganzen Zahl. Die verbleibenden Bits des Rückgabewerts werden auf Nullen festgelegt. 
+Jedes Eigenschaftstag enthält den Eigenschaftstyp im Wort in niedriger Reihenfolge (Bits 0 bis 15) und den Eigenschaftsbezeichner im Hochkomma (Bits 16 bis 31). Das **PROP_ID** Makro extrahiert den Eigenschaftsbezeichner und fügt ihn in die Bits 0 bis 15 der ganzen Zahl ein, die zurückgegeben werden soll. Die verbleibenden Bits des Rückgabewerts werden auf Nullen festgelegt. 
   
-Das **PROP_ID** kann z. B. verwendet werden, um einen Bezeichner abzurufen, der [an IMAPIProp::GetNamesFromIDs übergeben werden soll.](imapiprop-getnamesfromids.md) **GetNamesFromIDs** ruft den Eigenschaftennamen ab, der einem Bezeichner für eine benannte Eigenschaft zugeordnet ist. 
+Das **PROP_ID** Makro kann beispielsweise verwendet werden, um einen Bezeichner abzurufen, der an [IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md)übergeben werden soll. **GetNamesFromIDs** ruft den Eigenschaftennamen ab, der einem Bezeichner für eine benannte Eigenschaft zugeordnet ist. 
   
 ## <a name="see-also"></a>Siehe auch
 

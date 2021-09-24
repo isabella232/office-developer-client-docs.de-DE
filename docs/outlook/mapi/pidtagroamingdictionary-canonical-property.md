@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagRoamingDictionary
 api_type:
 - COM
 ms.assetid: 40b50181-f88c-40ee-b3d0-a36dd36c158e
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 4b2aa12b1b81dfd218781a839f5f84881763ef06
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: a2f3e4638ac87bef8c692933739711a444d90ba8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359549"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59550505"
 ---
 # <a name="pidtagroamingdictionary-canonical-property"></a>PidTagRoamingDictionary (kanonische Eigenschaft)
 
@@ -32,9 +32,9 @@ Enthält ein XML-Dokument, das das Roamingwörterbuch beschreibt.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Konfiguration  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft enthält ein UNICODE-XML-Dokument, das die UTF8-Codierung verwendet. Eine Nachricht mit einem Wörterbuchdatenstrom muss diese Eigenschaft mit dem folgenden Schema festlegen:
+Diese Eigenschaft enthält ein UNICODE-XML-Dokument, das UTF8-Codierung verwendet. Eine Nachricht mit einem Wörterbuchdatenstrom muss diese Eigenschaft mit dem folgenden Schema festlegen:
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?> 
@@ -50,7 +50,7 @@ Diese Eigenschaft enthält ein UNICODE-XML-Dokument, das die UTF8-Codierung verw
    </xs:complexType>
 ```
 
-Im Folgenden finden Sie ein XML-Beispieldokument, das in dieser Eigenschaft in einer Konfigurationsdatennachricht gespeichert ist: 
+Es folgt ein XML-Beispieldokument, das in dieser Eigenschaft in einer Konfigurationsdatennachricht gespeichert ist: 
   
 ```xml
 <?xml version="1.0"?> 
@@ -70,7 +70,7 @@ Im Folgenden finden Sie ein XML-Beispieldokument, das in dieser Eigenschaft in e
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXOCFG]](https://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx)
   
@@ -80,11 +80,11 @@ Im Folgenden finden Sie ein XML-Beispieldokument, das in dieser Eigenschaft in e
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -92,9 +92,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

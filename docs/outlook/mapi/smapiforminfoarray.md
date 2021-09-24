@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.SMAPIFormInfoArray
 api_type:
 - COM
 ms.assetid: f5eeb75d-debb-4ac1-b239-e8e852460ce0
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e274e24d9aff30bb39b1865306477164d413d9a8
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c6a68c4f1d2861dee4d111ee2a193ba0c7aa8cd6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33416972"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59549917"
 ---
 # <a name="smapiforminfoarray"></a>SMAPIFormInfoArray
 
@@ -25,7 +25,7 @@ ms.locfileid: "33416972"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von Zeigern zu Formularinformationsobjekten. 
+Enthält ein Array von Zeigern auf Formularinformationsobjekte. 
   
 |||
 |:-----|:-----|
@@ -41,17 +41,17 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Elemente
+## <a name="members"></a>Members
 
- **cForms**
+ **Cforms**
   
-> Anzahl der Zeiger im Array, auf die das **Element aFormInfo verweist.** 
+> Anzahl der Zeiger im Array, auf die vom **aFormInfo-Element** verwiesen wird. 
     
  **aFormInfo**
   
-> Zeiger auf ein Array von Zeigern, um Informationsobjekte zu bilden.
+> Zeiger auf ein Array von Zeigern auf Formularinformationsobjekte.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **SMAPIFormInfoArray-Struktur** wird in den folgenden Methoden als Parameter übergeben: 
   
