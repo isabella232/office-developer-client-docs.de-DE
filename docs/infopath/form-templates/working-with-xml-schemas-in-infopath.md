@@ -3,19 +3,19 @@ title: Arbeiten mit XML-Schemas in InfoPath
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c1d70e9f-b9fc-7bdb-107e-d0cd8191607b
-description: Eine Formularvorlage, die Sie mit Microsoft InfoPath erstellen, verwendet ein XML-Schema (XSD), um eine Struktur- und Datenüberprüfung für die XML durchzuführen, die von einem InfoPath-Formular eingegeben, bearbeitet und ausgegeben wird. Jede im InfoPath-Formulardesigner erstellte Formularvorlage enthält mindestens eine XSD-Schemadatei (.xsd), die zur Laufzeigt für die Validierung verwendet wird.
-ms.openlocfilehash: 25828c3ec21d22a9952452d5a82fe1a3b4bab54c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: Eine Formularvorlage, die Sie mit Microsoft InfoPath erstellen, verwendet ein XML-Schema (XSD), um eine strukturelle und Datenüberprüfung für den XML-Code auszuführen, der in einem InfoPath-Formular eingegeben, bearbeitet und ausgegeben wird. Jede im InfoPath-Formulardesigner erstellte Formularvorlage enthält mindestens eine XSD-Schemadatei (.xsd), die zur Laufzeigt für die Validierung verwendet wird.
+ms.openlocfilehash: 0c6d079cbe4ed9f37e63ae945eda232fced44995
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303164"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557358"
 ---
 # <a name="working-with-xml-schemas-in-infopath"></a>Arbeiten mit XML-Schemas in InfoPath
 
-Eine Formularvorlage, die Sie mit Microsoft InfoPath erstellen, verwendet ein XML-Schema (XSD), um eine Struktur- und Datenüberprüfung für die XML durchzuführen, die von einem InfoPath-Formular eingegeben, bearbeitet und ausgegeben wird. Jede im InfoPath-Formulardesigner erstellte Formularvorlage enthält mindestens eine XSD-Schemadatei (.xsd), die zur Laufzeigt für die Validierung verwendet wird.
+Eine Formularvorlage, die Sie mit Microsoft InfoPath erstellen, verwendet ein XML-Schema (XSD), um eine strukturelle und Datenüberprüfung für den XML-Code auszuführen, der in einem InfoPath-Formular eingegeben, bearbeitet und ausgegeben wird. Jede im InfoPath-Formulardesigner erstellte Formularvorlage enthält mindestens eine XSD-Schemadatei (.xsd), die zur Laufzeigt für die Validierung verwendet wird.
   
 > [!NOTE]
 > Die in diesem Thema enthaltenen Informationen gelten für Formularvorlagen, die für die Verwendung im InfoPath-Editor entwickelt wurden. Browserkompatible Formularvorlagen haben strengere XSD-Schemaanforderungen. Weitere Informationen fniden Sie in der Dokumentation zu XML-Schemas in browserkompatiblen Formularvorlagen, die im MSDN verfügbar sind. 
@@ -26,7 +26,7 @@ Befolgen Sie diese Schritte, um eine XSD-Schemadatei zu laden, die außerhalb vo
   
 ### <a name="to-create-a-form-template-based-on-an-external-schema"></a>Erstellen einer Formularvorlage auf Grundlage eines externen Schemas
 
-1. Klicken Sie in der Backstage auf **Neu,** klicken Sie unter **Erweiterte Formularvorlagen** auf XML oder **Schema,** und klicken Sie dann **auf Dieses Formular entwerfen.**
+1. Klicken Sie in der Backstage-Datei auf **"Neu",** klicken Sie unter **"Erweiterte Formularvorlagen"** auf **"XML" oder "Schema",** und klicken Sie dann auf **"Dieses Formular entwerfen".**
     
 2. Geben Sie im **Datenquellen-Assistent** die XSD-Schemadatei an, die Sie verwenden möchten und klicken Sie dann auf **Weiter**, um die restlichen Seiten im Assistenten zu vervollständigen. 
     
@@ -47,7 +47,7 @@ Ein Vorkommen eines **xsd:any**-Platzhalterelements, also ein Vorkommen eines **
   
 ## <a name="elements-with-an-abstract-complex-type"></a>Elemente mit einem abstrakten komplexen Typ
 
-Der InfoPath-Entwurfsmodus unterstützt das Entwerfen einer Formularvorlatge mit Schemas, die abstrakte komplexe Typen verwenden. Wenn ein Element mit dem Namen beispielsweise einen abstrakten komplexen Typ mit dem Namen hat, der zwei Ableitungen enthält, und  `shippingAddress`  `address` behandelt  `USAddress`  `CanadianAddress` InfoPath  `shippingAddress`  `shippingAddress`  `USAddress`  `shippingAddress` jede  `CanadianAddress` Instanz von als Auswahl zwischen typ und mit typ . Wenn die in diesem Beispiel bereitgestellten Schemas keine Typen enthalten, die von einer Adresse abgeleitet wurden, fordert InfoPath ein zusätzliches Schema an, das diese Anforderung erfüllt. 
+Der InfoPath-Entwurfsmodus unterstützt das Entwerfen einer Formularvorlatge mit Schemas, die abstrakte komplexe Typen verwenden. Wenn z. B. ein benanntes Element  `shippingAddress` einen abstrakten komplexen Typ  `address` mit zwei Ableitungen aufweist und InfoPath jede Instanz als  `USAddress` Auswahl zwischen Typ und Typ  `CanadianAddress`  `shippingAddress`  `shippingAddress`  `USAddress`  `shippingAddress`  `CanadianAddress` behandelt. Wenn die in diesem Beispiel bereitgestellten Schemas keine Typen enthalten, die von einer Adresse abgeleitet wurden, fordert InfoPath ein zusätzliches Schema an, das diese Anforderung erfüllt. 
   
 ## <a name="xsd-constructs-with-reduced-functionality"></a>XSD-Konstrukte mit reduzierter Funktionialität
 
@@ -104,7 +104,7 @@ Der InfoPath-Entwurfsmodus unterstützt diese XSD-Konstrukte, ohne dass eine Anp
   
 ## <a name="optional-sibling-with-same-qualified-name"></a>Optionales gleichgeordnetes Element mit dem gleichen qualifizierten Namen
 
-Das folgende Schemafragment zeigt ein optionales gleichgeordnetes Schema mit demselben qualifizierten Namen ( `QName` ):
+Das folgende Schemafragment zeigt ein optionales gleichgeordnetes Element mit demselben qualifizierten Namen ( `QName` ):
   
 ```xml
 <xsd:sequence> 
@@ -151,7 +151,7 @@ Sie können Ihr Schema so erstellen, dass Sie den Aufgabenbereich **Felder** zum
 
 ## <a name="storing-xml-signatures-in-the-data-source"></a>Speichern von XML-Signaturen in der Datenquelle
 
-Damit Benutzer ein Formular zur Laufzeit digital signieren können, muss das Schema der Datenquelle ein Element mit der Bezeichnung "Signatur" zum Speichern von XML-Signaturinformationen (digitale Signatur) deklarieren, das beim Signieren des Formulars durch einen Benutzer signiert wird. Sie erstellen diese Deklaration, indem Sie das **xsd:any-Element** mit dem Namespaceattribut verwenden, das als XML Signatures-Namespace mit einem Platzhalterzeichen angegeben ist, wie folgt: https://www.w3c.org/2000/09/xmldsig# " " 
+Damit Benutzer ein Formular zur Laufzeit digital signieren können, muss das Schema der Datenquelle ein Element mit der Bezeichnung "Signatur" zum Speichern von XML-Signaturinformationen (digitale Signatur) deklarieren, das beim Signieren des Formulars durch einen Benutzer signiert wird. Sie erstellen diese Deklaration mithilfe des Elements **"xsd:any"** mit dem Namespaceattribut, das als XML-Signaturennamespace mit einem Platzhalterzeichen angegeben ist: " https://www.w3c.org/2000/09/xmldsig# " 
   
 ```XML
 <xsd:element name="signature"> 
@@ -191,7 +191,7 @@ Wenn Sie extern verfasste XSD-Dateien zum Erstellen von Formularvorlagen im Info
 
 Ähnlich wie bei allen W3C-Standards, haben XML-Schemas (XSD) ein langwieriges Überprüfungsverfahren durchlaufen, bevor Sie als Empfehlung genannte wurden. Es gab viele Arbeitsentwürfe und folglich wurden viele XSD-Dateien basierend auf diesen entwickelten Standards geschrieben. Während des Verfahrens hat Microsoft eine proprietäre Schemasprache mit der Bezeichnung XML-Data Reduced (XDR) entwickelt, die bei MSXML 3.0 enthalten ist. Ab Version MSXML 4.0 unterstützen die Microsoft XML Core Services das gesamte Empfehlungsspektrum an XSD. Viele Programme zum Erstellen von Schemas warteten nicht darauf, dass das gesamte Empfehlungsspektrum für XSD ausgesprochen wurde. Ältere Versionen dieser Programme erzeugen möglicherweise veraltete XSD-Dateien, das die MSXML 5.0-Infrastruktur nicht unterstützt, von der InfoPath abhängt.
   
-Um sicherzustellen, dass eine XSD-Datei die vollständige XSD-Empfehlung unterstützt, sollte sie die folgende XML-Namespacedeklaration im \< Schematag \> enthalten:
+Um sicherzustellen, dass eine XSD-Datei die vollständige XSD-Empfehlung unterstützt, sollte sie die folgende XML-Namespacedeklaration im \<schema\> Tag enthalten:
   
 ```XML
 xmlns:xsd="https://www.w3.org/2001/XMLSchema"
@@ -254,11 +254,11 @@ Um aufzuzeigen, warum dieses XSD-Segment nicht deterministisch ist, nehmen Sie a
 
 ```
 
-In diesem XML-Fragment ist nicht klar, ob das *\< \> file_path-Element* der erforderliche Knoten aus dem ersten Teil der Auswahldeklaration oder der optionale aus dem zweiten Teil der Auswahldeklaration ist. Diese Unterscheidung ist aus folgenden Gründen relevant: 
+In diesem XML-Fragment ist nicht klar, ob das  *\<file_path\>*  Element der erforderliche Knoten aus dem ersten Teil der Auswahldeklaration oder der optionale Knoten aus dem zweiten Teil der Auswahldeklaration ist. Diese Unterscheidung ist aus folgenden Gründen relevant: 
   
 1. Wenn das XML-Fragment mit dem ersten Teil der Auswahldeklaration validiert wird, ist die XML mit dem Schema gültig.
     
-2. Wenn das XML-Fragment für den zweiten Teil der Auswahldeklaration überprüft wird, ist das Schema ungültig, da der erforderliche \< URI-Knoten \> fehlt. 
+2. Wenn das XML-Fragment anhand des zweiten Teils der Auswahldeklaration überprüft wird, ist das Schema ungültig, da der erforderliche \<URI\> Knoten fehlt. 
     
 Einige XSD-Validierungssysteme validieren mit diesem Schema, da es einen gültigen Pfad gibt. MSXML ist strenger und löst einen Fehler aus, in dem angegeben ist,dass das Schema nicht deterministisch ist.
   
@@ -288,7 +288,7 @@ Um zu verstehen, warum dieses Schemasegment nicht deterministisch ist, wird davo
 
 ```
 
-Wenn Sie sich dieses Fragment anschauen, sehen Sie, warum es ungültig ist: Es gibt zwei Elemente vor dem Element, wenn nur  `<aNode>`  `<anotherNode>` eines zulässig ist. 
+Wenn Sie sich dieses Fragment ansehen, können Sie sehen, warum es ungültig ist: Es gibt zwei  `<aNode>` Elemente vor dem  `<anotherNode>` Element, wenn nur ein Element zulässig ist. 
   
 Gehen wir nun davon aus, Sie müssen folgende XML-Instanz validieren:
   
@@ -300,7 +300,7 @@ Gehen wir nun davon aus, Sie müssen folgende XML-Instanz validieren:
 
 ```
 
-Die Herausforderung besteht darin, zu ermitteln, ob diese Instanz gültig ist. Verfügen Sie über zwei Elemente, bei denen nur eines zulässig ist, oder haben Sie ein Element, in dem es zulässig ist, und ein weiteres Element, in dem  `<aNode>`  `<aNode>` es zulässig ist? Das Schema ist nicht deterministisch, da es keine Möglichkeit gibt, es mit Sicherheit zu sagen. 
+Die Herausforderung besteht darin, zu ermitteln, ob diese Instanz gültig ist. Verfügen Sie über zwei  `<aNode>` Elemente, bei denen nur eines zulässig ist, oder verfügen Sie über ein  `<aNode>` Element, in dem es zulässig ist, und ein anderes, in dem es zulässig ist? Das Schema ist nicht deterministisch, da es keine Möglichkeit gibt, es mit Sicherheit zu sagen. 
   
 Optionale in einem **xsd:choice**-Element deklarierte Elementen sind in der Regel problematisch. Im folgenden vereinfachten Beispiel gibt es keine Möglichkeit zu ermitteln, ob die Auswahl einmal mit dem nicht vorhandenen optionalen Element auftrat, oder es nie auftrat. 
   
@@ -311,7 +311,7 @@ Optionale in einem **xsd:choice**-Element deklarierte Elementen sind in der Rege
 
 ```
 
-Die letzte fragwürdige Vorgehensweise ist die Verwendung eines **xsd:any-Elements** ohne Namespacedefinition, wie in , nach einem `<xsd:any namespace="##other"/>` **xsd:sequence-Element.** Dieses Konstrukt ist besonders fehleranfällit, wenn es auf ein optionales Element folgt. Wenn Sie das vorherige Beispiel erneut aufrufen, uund nur den letzen Knoten eines **xsd:any**-Elements ändern, werden Sie sehen, dass alle vorherigen Argumente zu den nicht deterministischen Eigenschaften weiterhin gelten, siehe Folgendes: 
+Die letzte fragebare Vorgehensweise ist die Verwendung eines **xsd:any-Elements** ohne Namespacedefinition, wie in `<xsd:any namespace="##other"/>` , nach einem **xsd:sequence-Element.** Dieses Konstrukt ist besonders fehleranfällit, wenn es auf ein optionales Element folgt. Wenn Sie das vorherige Beispiel erneut aufrufen, uund nur den letzen Knoten eines **xsd:any**-Elements ändern, werden Sie sehen, dass alle vorherigen Argumente zu den nicht deterministischen Eigenschaften weiterhin gelten, siehe Folgendes: 
   
 ```XML
 <xsd:element name="container"> 
@@ -377,11 +377,11 @@ Das Entfernen des leeren  `<xsd:choice />` Tags sollte dieses Problem beheben.
   
 ## <a name="regular-expressions"></a>Reguläre Ausdrücke
 
-MSXML 5.0 kann Probleme beim Überprüfen regulärer Ausdrucksmuster beim Laden haben. Reguläre Ausdrücke können kompliziert sein, und Sie sollten vorsichtig sein, wenn Sie sie verwenden. Jeder XSD-Parser scheint flexible Sprachen für reguläre Ausdrücke zu haben. Das heißt, sie implementieren die offizielle XSD-reguläre Ausdruckssprache sowie Elemente aus anderen regulären Ausdruckssprachen. Wenn der InfoPath-Formulardesigner Probleme beim Analyse eines regulären Ausdrucks hat, sind die von InfoPath generierten Beispieldaten möglicherweise ungültig oder werden gar nicht generiert. Dies ist zur Entwurfszeit akzeptabel, da InfoPath nur Beispieldaten für die Formatierung verwendet. Wenn Sie jedoch einen regulären Ausdruck verwenden, der von MSXML nicht unterstützt wird, kann InfoPath keinen Wert dafür überprüfen, wenn ein Benutzer ein Formular ausfüllt. [Xml Schema Part 0: Primer Second Edition](https://www.w3.org/TR/xmlschema-0/)beschreibt, was in regulären XSD-Ausdrücken unterstützt wird. Weitere Informationen zu regulären XSD-Ausdrücken und regulären Unicode-Ausdrücke auf Ebene 1 finden Sie unter [Unicode Regular Expressions](https://www.unicode.org/reports/tr18/) . 
+MSXML 5.0 kann Probleme beim Validieren regulärer Ausdrucksmuster beim Laden haben. Reguläre Ausdrücke können kompliziert sein, und Sie sollten vorsichtig sein, wenn Sie sie verwenden. Jeder XSD-Parser scheint flexible Sprachen für reguläre Ausdrücke zu haben. d. h., sie implementieren die offizielle XSD-Sprache für reguläre Ausdrücke sowie Elemente aus anderen Sprachen für reguläre Ausdrücke. Wenn der InfoPath-Formular-Designer Probleme beim Analysieren eines regulären Ausdrucks hat, sind die von InfoPath generierten Beispieldaten möglicherweise ungültig oder werden möglicherweise gar nicht generiert. Dies ist zur Entwurfszeit akzeptabel, da InfoPath nur Beispieldaten für die Formatierung verwendet. Wenn Sie jedoch einen regulären Ausdruck verwenden, der MSXML nicht unterstützt, kann InfoPath einen Wert nicht überprüfen, wenn ein Benutzer ein Formular ausfüllt. [XML Schema Part 0: Primer Second Edition](https://www.w3.org/TR/xmlschema-0/)beschreibt, was in regulären XSD-Ausdrücken unterstützt wird. Weitere Informationen zu regulären XSD-Ausdrücken und regulären Ausdrücken der Unicode-Ebene 1 finden Sie unter [Unicode Regular Expressions](https://www.unicode.org/reports/tr18/) . 
   
 ## <a name="targetnamespace-attribute-issues"></a>targetNamespace-Attribut-Probleme
 
-XSD ist interessant, da sich das **targetNamespace-Attribut** standardmäßig nur auf die Deklarationen auf oberster Ebene bezieht, obwohl Sie dieses Standardverhalten festlegen und  `attributeFormDefault=qualified`  `elementFormDefault=qualified` überschreiben können. Gehen Sie als Beispiel von folgender XSD aus. 
+XSD ist interessant, da sich das **targetNamespace-Attribut** standardmäßig nur auf die Deklarationen der obersten Ebene bezieht, obwohl Sie dieses Standardverhalten festlegen  `attributeFormDefault=qualified` und  `elementFormDefault=qualified` überschreiben können. Gehen Sie als Beispiel von folgender XSD aus. 
   
 ```XML
 <xsd:schema xmlns:xsd="https://www.w3.org/2001/XMLSchema" targetNamespace="https://ns" > 
@@ -422,7 +422,7 @@ Lokale Definitionen erfordern keinen Zielnamespace, da die Qualifizierung standa
 
 ```
 
-Dieses Schema ist ungültig, da sich "global" im Namespace " " https://ns " befindet. Der einfache ref="global" wird nicht erkannt, da der Standardnamespace nicht " https://ns " ist. Um dieses Problem zu lösen, müssen Sie ein Präfix für den Zielnamespace hinzufügen und es für alle globalen Verweise und Typen verwenden. Das korrigierte Schema sieht folgendermaßen aus.
+Dieses Schema ist ungültig, da sich "global" im Namespace " https://ns " befindet. The simple ref="global" is not recognized because the default namespace is not " https://ns ". Um dieses Problem zu lösen, müssen Sie ein Präfix für den Zielnamespace hinzufügen und es für alle globalen Verweise und Typen verwenden. Das korrigierte Schema sieht folgendermaßen aus.
   
 ```XML
 <xsd:schema xmlns:xsd="https://www.w3.org/2001/XMLSchema"  
@@ -474,9 +474,9 @@ Dieses Beispiel ist jedoch ungültig.
 
 ```
 
-Dieses Beispiel ist ungültig, da das Überprüfungssystem nicht ermitteln kann, ob zwei Vorkommen von Zuordnungen zur einzelnen Deklaration oder zur Deklaration und zu einer anderen  `<x/>` ungültigen Definition auftreten. In einem Tag können nicht zwei Elemente mit demselben Namen enthalten  `<xsd:all>` sein. 
+This example is invalid because the validation system cannot determine whether two occurrences of  `<x/>` map to the single declaration or to the declaration and another invalid definition. Es können nicht zwei Elemente mit demselben Namen in einem  `<xsd:all>` Tag vorhanden sein. 
   
-Dieses Beispiel ist auch deshalb interessant, weil es ihnen ermöglicht, eine beliebige Anzahl von und Knoten in einem enthaltenden Element  `<x/>`  `<docs/>` in beliebiger Reihenfolge zu haben. Obwohl dieses Konstrukt ungültig ist, gibt es eine Problemumgehung. Indem Sie das **xsd:choice**-Element verwenden, können Sie das gleiche Ergebnis erzielen, wie in folgendem Beispiel dargestellt. 
+Dieses Beispiel ist auch interessant, da es ihnen ermöglicht, eine beliebige Anzahl von  `<x/>`  `<docs/>` Knoten innerhalb eines enthaltenden Elements in beliebiger Reihenfolge zu haben. Obwohl dieses Konstrukt ungültig ist, gibt es eine Problemumgehung. Indem Sie das **xsd:choice**-Element verwenden, können Sie das gleiche Ergebnis erzielen, wie in folgendem Beispiel dargestellt. 
   
 ```XML
 <xsd:choice minOccurs="0" maxOccurs="unbounded"> 
@@ -492,7 +492,7 @@ Die beiden Beispiel in den folgenden beiden Abschnitten zeigen auf, wie ein Sche
   
 ## <a name="allowing-user-defined-elements-to-be-inserted-in-the-fields-task-pane"></a>Zulassen von Einfügevorgängen benutzerdefinierter Elemente im Aufgabenbereich "Felder"
 
-Damit benutzerdefinierte Elemente unter einem übergeordneten Elemente im Aufgabenbereich **Felder** angezeigt werden, müssen Sie unter dem übergeordneten Element ein **xsd:any**-Element einfügen. Damit benutzerdefinierte Elemente innerhalb eingefügt werden  `<your_node_name>` können, sollte die XSD-Deklaration wie folgt aussehen. 
+Damit benutzerdefinierte Elemente unter einem übergeordneten Elemente im Aufgabenbereich **Felder** angezeigt werden, müssen Sie unter dem übergeordneten Element ein **xsd:any**-Element einfügen. Damit benutzerdefinierte Elemente eingefügt werden  `<your_node_name>` können, sollte die XSD-Deklaration wie folgt aussehen. 
   
 ```XML
 <xsd:element name="your_node_name"> 
@@ -506,11 +506,11 @@ Damit benutzerdefinierte Elemente unter einem übergeordneten Elemente im Aufgab
 
 ```
 
-Wenn Sie auch benutzerdefinierte Attribute zulassen möchten, müssen Sie der  `<xsd:anyAttribute namespace="##any | ##other"/>` Elementdeklaration hinzufügen. 
+Wenn Sie auch benutzerdefinierte Attribute zulassen möchten, müssen Sie  `<xsd:anyAttribute namespace="##any | ##other"/>` der Elementdeklaration hinzufügen. 
   
 ## <a name="allowing-rich-text-elements-to-be-bound-in-infopath-design-and-edit-modes"></a>Zulassen des Bindens von Rich-Text-Elementen in den Entwurfs- und Bearbeitungsmodi in InfoPath
 
-Wenn Sie ein Element deklarieren möchten, das an ein **Rich-Text-Box-Steuerelement** gebunden werden kann, sollte es das folgende Formular haben, das das **xsd:any-Element** enthält, für das ein Namespaceattribut auf " festgelegt ist, wie im folgenden Beispiel https://www.w3.org/1999/xhtml gezeigt. 
+Wenn Sie ein Element deklarieren möchten, das an ein **Rich-Text-Feld-Steuerelement** gebunden werden kann, sollte es das folgende Formular aufweisen, das das xsd:any-Element enthält, dessen Namespaceattribut auf " festgelegt ist, wie im folgenden Beispiel  https://www.w3.org/1999/xhtml dargestellt. 
   
 ```XML
 <xsd:element name="your_node_name"> 
@@ -524,16 +524,16 @@ Wenn Sie ein Element deklarieren möchten, das an ein **Rich-Text-Box-Steuerelem
 
 ```
 
-## <a name="conclusion"></a>Zusammenfassung
+## <a name="conclusion"></a>Schlussbemerkung
 
 Durch die Nutzung der InfoPath-Unterstützung zum Entwerden von XML-Formularlösungen, die auf extern verfassten XML Schemadateien (.xsd) basieren, können Sie eine Formularvorlage erstellen, die mit einem Schema gemäß Industriestandard oder einem benutzerdefinierten Schema funktioniert, das von Ihrem Unternehmen erstellt wurde. Mithilfe der Informationen in diesem artikel können Sie benutzerdefinierte XSD-Schemadateien erstellen, die mit InfoPath kompatibel sind und Sie können häufige Probleme behandeln, die beim Laden extern verfasster XS-Dateien in der InfoPath-Entwurfsumgebung auftreten können.
   
 ## <a name="see-also"></a>Siehe auch
 
 - [W3C-XML-Schema](https://www.w3.org/XML/Schema)
-- [W3C XML Schema Primer](https://www.w3.org/TR/xmlschema-0/)
+- [W3C-XML-Schema-Einführung](https://www.w3.org/TR/xmlschema-0/)
 - [Referenz zu W3C-XML-Schemastrukturen](https://www.xml.com/pub/a/2000/11/29/schemas/structuresref.html)
-- [Referenz zu W3C-XML-Schemadatentypen](https://www.xml.com/pub/a/2000/11/29/schemas/dataref.html)
-- [XML-Schema-Lernprogramm](https://www.w3schools.com/xml/schema_intro.asp)
+- [W3C XML Schema Datatypes Reference](https://www.xml.com/pub/a/2000/11/29/schemas/dataref.html)
+- [XML-Schemalernprogramm](https://www.w3schools.com/xml/schema_intro.asp)
 - [XML Developer Center](https://msdn.microsoft.com/xml/default.aspx)
 

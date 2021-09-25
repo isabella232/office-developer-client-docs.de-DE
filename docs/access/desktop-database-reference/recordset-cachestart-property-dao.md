@@ -1,5 +1,5 @@
 ---
-title: Recordset. CacheStart-Eigenschaft (DAO)
+title: Recordset.CacheStart-Eigenschaft (DAO)
 TOCTitle: CacheStart Property
 ms:assetid: 03814312-660a-d8e9-8a7b-bc14d66e05ab
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff844802(v=office.15)
@@ -10,26 +10,26 @@ f1_keywords:
 - dao360.chm1053171
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 514f109f0eed902287e519bcd7a729397e70eaa5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 84ea617bf555b38de79ed36e0209248ef6c2af3b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300616"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580916"
 ---
-# <a name="recordsetcachestart-property-dao"></a>Recordset. CacheStart-Eigenschaft (DAO)
+# <a name="recordsetcachestart-property-dao"></a>Recordset.CacheStart-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
 
-Legt einen Wert fest, der das Lesezeichen des ersten Datensatzes in einem Recordset-Objekt angibt, das Daten enthält, die lokal von einer ODBC-Datenquelle zwischengespeichert werden sollen, oder gibt den betreffenden Wert zurück (nur Microsoft Access-Arbeitsbereiche).
+Sets or returns a value that specifies the bookmark of the first record in a dynaset-type Recordset object containing data to be locally cached from an ODBC data source (Microsoft Access workspaces only).
 
 ## <a name="syntax"></a>Syntax
 
 *Ausdruck* . CacheStart
 
-*Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 

@@ -1,22 +1,22 @@
 ---
-title: Referenz zur Datendegradierungsschicht-API
+title: Api-Referenz zur Datendegradationsebene
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c6c6bfda-5525-4618-b08c-bf85440b7415
-description: Referenzinhalt für die Data Degradation Layer-API, die die Möglichkeit bietet, das zugrunde liegende systemeigene Zeichenformat eines Outlook auszublenden.
-ms.openlocfilehash: 4edbf09ce2b123425a271f090a466fdad770fb0b
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Referenzinhalte für die Datendegradierungsschicht-API, mit der das zugrunde liegende systemeigene Zeichenformat eines Outlook-Objekts ausgeblendet werden kann.
+ms.openlocfilehash: 3dc2e64f8dbbae2b2f34437013019a0eaaa4eb43
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423363"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557316"
 ---
-# <a name="data-degradation-layer-api-reference"></a>Referenz zur Datendegradierungsschicht-API
+# <a name="data-degradation-layer-api-reference"></a>Api-Referenz zur Datendegradationsebene
 
-Dieser Abschnitt enthält Referenzinhalte für die Data Degradation Layer-API, die die Möglichkeit bietet, das zugrunde liegende systemeigene Zeichenformat eines Outlook-Objekts auszublenden, sodass ein Client in einem bevorzugten Zeichenformat und nicht im systemeigenen Zeichenformat des Objekts auf das Objekt zugreifen kann.
+Dieser Abschnitt enthält Referenzinhalte für die Data Degradation Layer-API, die die Möglichkeit bietet, das zugrunde liegende systemeigene Zeichenformat eines Outlook-Objekts auszublenden, sodass ein Client auf das Objekt in einem bevorzugten Zeichenformat statt im nativen Zeichenformat des Objekts zugreifen kann.
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 

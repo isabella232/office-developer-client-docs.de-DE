@@ -10,13 +10,13 @@ f1_keywords:
 - jetsql40.chm5277479
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 20122fee617597987940766a076d5f968a87c2d2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 41ae1f88b89a7fb0293b4f0cd3df500687edd799
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306531"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580888"
 ---
 # <a name="revoke-statement-microsoft-access-sql"></a>REVOKE-Anweisung (Microsoft Access SQL)
 
@@ -26,9 +26,9 @@ Widerruft bestimmte Berechtigungen eines vorhandenen Benutzers oder einer Gruppe
 
 ## <a name="syntax"></a>Syntax
 
-REVOKE {*Privilege*\[, *Privileg*,... \]} On {Table *Tabelle* | Objekt *Objekt*|
+REVOKE {*Berechtigung* \[ , *Berechtigung*, ... \] } ON {TABLE *table* | *OBJECT-Objekt*|
 
-*Container*für "beflecker"**\[von {authorizationname, *authorizationname*,... \]}
+*CONTAINTER-Container*} FROM {*Autorisierungsname* \[ , *Autorisierungsname*, ... \] }
 
 Die REVOKE-Anweisung enthält folgende Bestandteile:
 
@@ -45,8 +45,8 @@ Die REVOKE-Anweisung enthält folgende Bestandteile:
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>Berechtigungen</em></p></td>
-<td><p>Die zu widerrufenden Berechtigungen. Berechtigungen werden mithilfe der folgenden Schlüsselwörter angegeben: SELECT, DELETE, INSERT, UPDATE, DROP, SELECTSECURITY, UPDATESECURITY, dbPASSWORD, UPDATEIDENTITY, CREATE, SELECTSCHEMA, SCHEMA und UPDATEOWNER.</p></td>
+<td><p><em>Privileg</em></p></td>
+<td><p>Die zu widerrufenden Berechtigungen. Berechtigungen werden mit den folgenden Schlüsselwörtern angegeben: SELECT, DELETE, INSERT, UPDATE, DROP, SELECTSECURITY, UPDATESECURITY, DBPASSWORD, UPDATEIDENTITY, CREATE, SELECTSCHEMA, SCHEMA und UPDATEOWNER.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>table</em></p></td>

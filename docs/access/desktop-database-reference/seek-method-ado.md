@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250027(v=office.15)
 ms:contentKeyID: 48547802
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 321040a39b02f31f0265df6e91748df13c05032c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: bdf15631bc1897158e5efab5712434a5ef61eb07
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308792"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580875"
 ---
 # <a name="seek-method-ado"></a>Seek-Methode (ADO)
 
@@ -22,7 +22,7 @@ Durchsucht den Index eines [Recordset](recordset-object-ado.md)-Objekt, um auf s
 
 ## <a name="syntax"></a>Syntax
 
-*Recordset*. Seek**-keyValues, *SeekOption*
+*Recordset*. Seek *KeyValues*, *SeekOption*
 
 ## <a name="parameters"></a>Parameter
 
@@ -31,7 +31,7 @@ Durchsucht den Index eines [Recordset](recordset-object-ado.md)-Objekt, um auf s
 |*KeyValues* |Ein Array mit **Variant** -Werten. Ein Index besteht aus einer oder mehreren Spalten, und das Array enthält einen Wert, mit dem jede einzelne Spalte verglichen wird.|
 |*SeekOption* |Ein [SeekEnum](seekenum.md)-Wert, der die Art des Vergleichs angibt, der zwischen den Spalten des Index und den entsprechenden *KeyValues* vorgenommen wird.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Verwenden Sie die **Seek**-Methode in Verbindung mit der [Index](index-property-ado.md)-Eigenschaft, falls der zugrunde liegende Anbieter Indizes für das **Recordset**-Objekt unterstützt. Mit der [Supports](supports-method-ado.md)**(adSeek)**-Methode bestimmen Sie, ob der zugrunde liegende Anbieter **Seek** unterstützt, und mit der **Supports(adIndex)**-Methode, ob der Anbieter Indizes unterstützt. (Beispielsweise werden **Seek** und **Index** vom [OLE DB-Anbieter für Microsoft Jet](microsoft-ole-db-provider-for-microsoft-jet.md) unterstützt.)
 

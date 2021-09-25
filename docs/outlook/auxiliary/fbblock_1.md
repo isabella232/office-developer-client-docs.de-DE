@@ -4,19 +4,19 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: da67171d-d25f-3424-1409-33189ac63a12
-description: Definiert einen Frei/Gebucht-Block von Daten. Dies ist ein Element in einem Kalender, der durch eine Termin- oder Besprechungsanfrage dargestellt wird.
-ms.openlocfilehash: 60d2ff50081a8950a397df6f2f6bbfd37d3bdb61
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Definiert einen Frei/Gebucht-Datenblock. Dies ist ein Element in einem Kalender, der durch einen Termin oder eine Besprechungsanfrage dargestellt wird.
+ms.openlocfilehash: 5cf556e4df99801a56857d55c43b008f4071f714
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33413199"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557323"
 ---
 # <a name="fbblock_1"></a>FBBlock_1
 
-Definiert einen Frei/Gebucht-Block von Daten. Dies ist ein Element in einem Kalender, der durch eine Termin- oder Besprechungsanfrage dargestellt wird.
+Definiert einen Frei/Gebucht-Datenblock. Dies ist ein Element in einem Kalender, der durch einen Termin oder eine Besprechungsanfrage dargestellt wird.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -42,7 +42,7 @@ _m_tmEnd_
     
 _m_fbStatus_
   
-> Der Frei/Gebucht-Status für diesen Block, der angibt, ob der Benutzer im Zeitraum zwischen  m_tmStart und m_tmEnd ist.
+> Der Frei/Gebucht-Status für diesen Block, der angibt, ob der Benutzer während des Zeitraums zwischen  _m_tmStart_ und  _m_tmEnd_ außer Haus, beschäftigt, mit Vorbehalt oder kostenlos ist.
     
 ## <a name="see-also"></a>Siehe auch
 

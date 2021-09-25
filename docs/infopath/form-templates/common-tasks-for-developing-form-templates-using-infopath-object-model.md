@@ -4,16 +4,16 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
-- infopath 2003-kompatible Formularvorlagen, allgemeine Aufgaben,Formularvorlagen [InfoPath 2007], allgemeine Aufgaben für die Entwicklung von 2003-kompatiblen Formularvorlagen
-localization_priority: Normal
+- infopath 2003-kompatible Formularvorlagen, allgemeine Aufgaben,Formularvorlagen [InfoPath 2007], allgemeine Aufgaben für die Entwicklung von 2003-kompatiblen
+ms.localizationpriority: medium
 ms.assetid: 578a38a9-b8d8-42e2-b98b-5e5bb85ebe05
 description: Dieses Thema hilft Ihnen dabei, schnell Antworten zu allgemeinen Fragen in Bezug auf das Entwickeln von Formularvorlagen mit Formularcode zu finden, der mit der Microsoft.Office.Interop.InfoPath.SemiTrust-Assembly arbeitet.
-ms.openlocfilehash: 1c5f72a3fa22cbe54b1290357aae1d2a68dff5b4
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c94b5fbae2ddd7bb3d430f633a9aeed3c43e1426
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411575"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557498"
 ---
 # <a name="common-tasks-for-developing-form-templates-using-the-infopath-object-model"></a>Allgemeine Aufgaben zum Entwickeln von Formularvorlagen mithilfe des InfoPath-Objektmodells
 
@@ -37,13 +37,13 @@ Allgemeine Aufgaben beim Erstellen und Entwickeln von Projekten.
 
 Allgemeine Aufgaben beim Programmieren von Formularvorlagen mit verwaltetem Code.
   
-- [Antworten auf Formularereignisse mithilfe des InfoPath 2003-Objektmodells](how-to-respond-to-form-events-using-the-infopath-2003-object-model.md)
+- [Reagieren auf Formularereignisse mithilfe des InfoPath 2003-Objektmodells](how-to-respond-to-form-events-using-the-infopath-2003-object-model.md)
     
 - [Arbeiten mit Ansichten mithilfe des InfoPath 2003-Objektmodells](how-to-work-with-views-using-the-infopath-2003-object-model.md)
     
-- [Arbeiten mit formular Windows Verwenden des InfoPath 2003-Objektmodells](how-to-work-with-form-windows-using-the-infopath-2003-object-model.md)
+- [Arbeiten mit Formularen Windows Verwenden des InfoPath 2003-Objektmodells](how-to-work-with-form-windows-using-the-infopath-2003-object-model.md)
     
-- [Anzeigen von Warnungen und Dialogfelder mithilfe des InfoPath 2003-Objektmodells](how-to-display-alerts-and-dialog-boxes-using-the-infopath-2003-object-model.md)
+- [Anzeigen von Warnungen und Dialogfeldern mithilfe des InfoPath 2003-Objektmodells](how-to-display-alerts-and-dialog-boxes-using-the-infopath-2003-object-model.md)
     
 - [Behandeln von Fehlern mithilfe des InfoPath 2003-Objektmodells](how-to-handle-errors-using-the-infopath-2003-object-model.md)
     
@@ -71,7 +71,7 @@ Allgemeine Aufgaben und Informationen zur Sicherheit und Bereitstellung von Form
     
 - [Bereitstellen von InfoPath-Formularvorlagen mit Code](how-to-deploy-infopath-form-templates-with-code.md)
     
-- [Konfigurieren von Einstellungen für Formularvorlagen mit Code](how-to-configure-security-settings-for-form-templates-with-code.md)
+- [Konfigurieren von Sicherheits-Einstellungen für Formularvorlagen mit Code](how-to-configure-security-settings-for-form-templates-with-code.md)
     
 - [Anzeigen einer Vorschau und Debuggen von Formularvorlagen, die vollständig vertrauenswürdig sein müssen](how-to-preview-and-debug-form-templates-that-require-full-trust.md)
     

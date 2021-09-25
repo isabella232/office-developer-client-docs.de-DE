@@ -3,15 +3,15 @@ title: Integration in Office von Win32-Synchronisierungsclients aus
 manager: soliver
 ms.date: 07/29/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 348555d3-3cd4-4e4a-b5ad-436571c25251
 description: Integrieren Sie Ihre Drittanbieter-Win32-Synchronisierungsclients mit Excel Mobile-, PowerPoint Mobile- und Word Mobile-Office-Anwendungen.
-ms.openlocfilehash: 83bc6e4cddc17e539b371999fff620c72c595534
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: ad0c93bb03ba3b23c8395853bec77b8dec29a333
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303136"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557337"
 ---
 # <a name="integrate-with-office-from-win32-sync-clients"></a>Integration in Office von Win32-Synchronisierungsclients aus
 

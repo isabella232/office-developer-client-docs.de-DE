@@ -4,16 +4,16 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
-- infopath 2007, allgemeine Aufgaben
-localization_priority: Normal
+- InfoPath 2007, allgemeine Aufgaben
+ms.localizationpriority: medium
 ms.assetid: da678213-fae0-4854-8194-762866600100
 description: Mithilfe der Links in diesem Thema erhalten Sie schnell Antworten auf die wichtigsten Programmierfragen zur Arbeit mit InfoPath-Formularvorlagen mit verwaltetem Code.
-ms.openlocfilehash: 6fb2c565413b2dff67287bf659d8137306bd2860
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: decb22af2997fe378bf6a607317fc97fcbc8a3ed
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33419499"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557491"
 ---
 # <a name="how-do-iin-infopath-form-templates-with-code"></a>Vorgehensweisen in InfoPath-Formularvorlagen mit Code
 

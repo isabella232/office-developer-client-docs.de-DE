@@ -3,19 +3,19 @@ title: Veröffentlichen von Formularen mit Code
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: caafab24-6413-4731-813d-cba3ae9ea97e
-description: Jeder Websitesammlungsadministrator kann Formulare mit Code direkt aus dem InfoPath Designer-Veröffentlichungs-Assistenten in einer Formularbibliothek auf SharePoint. Der Code wird in einer Sandkastenumgebung ausgeführt, damit der Server nicht durch bösartigen Code geschädigt werden kann. Dies wird als Veröffentlichen einer Sandkastenlösung oder Veröffentlichen in der SharePoint-Sandkasteninfrastruktur bezeichnet.
-ms.openlocfilehash: f8f8a48ea6810b5331198f6ddc112b3bd38ab886
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Jeder Websitesammlungsadministrator kann Formulare mit Code direkt aus dem InfoPath Designer-Veröffentlichungs-Assistenten in einer Formularbibliothek auf SharePoint veröffentlichen. Der Code wird in einer Sandkastenumgebung ausgeführt, damit der Server nicht durch bösartigen Code geschädigt werden kann. Dies wird als Veröffentlichen einer Sandkastenlösung oder Veröffentlichen in der SharePoint-Sandkasteninfrastruktur bezeichnet.
+ms.openlocfilehash: ddc224826650ecda8f54bc7d882b78bc90377b81
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33428326"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557435"
 ---
 # <a name="publishing-forms-with-code"></a>Veröffentlichen von Formularen mit Code
 
-Jeder Websitesammlungsadministrator kann Formulare mit Code direkt aus dem InfoPath Designer-Veröffentlichungs-Assistenten in einer Formularbibliothek auf SharePoint. Der Code wird in einer Sandkastenumgebung ausgeführt, damit der Server nicht durch bösartigen Code geschädigt werden kann. Dies wird als Veröffentlichen einer Sandkastenlösung oder Veröffentlichen in der SharePoint-Sandkasteninfrastruktur bezeichnet.
+Jeder Websitesammlungsadministrator kann Formulare mit Code direkt aus dem InfoPath Designer-Veröffentlichungs-Assistenten in einer Formularbibliothek auf SharePoint veröffentlichen. Der Code wird in einer Sandkastenumgebung ausgeführt, damit der Server nicht durch bösartigen Code geschädigt werden kann. Dies wird als Veröffentlichen einer Sandkastenlösung oder Veröffentlichen in der SharePoint-Sandkasteninfrastruktur bezeichnet.
   
 InfoPath 2010 und SharePoint Server 2010 unterstützen auch vom Administrator bereitgestellte Lösungen. Ein Formulardesigner veröffentlicht in einem lokalen Speicher Formulare mit Code, die später von einem SharePoint-Farmadministrator überprüft und hochgeladen werden. Der Code wird als voll vertrauenswürdig eingestuft und kann Funktionalität enthalten, für die erhöhte Berechtigungen wie beispielsweise Datei-E/A erforderlich sind.
   
@@ -32,7 +32,7 @@ In der folgenden Tabelle werden die Unterschiede zwischen dem Veröffentlichen v
    
 ### <a name="publishing-form-templates-as-sandboxed-solutions"></a>Veröffentlichen von Formularvorlagen als Sandkastenlösungen
 
-Das Veröffentlichen eines Formulars mit Code als Sandkastenlösung ist nicht anders als das Veröffentlichen eines anderen Formulars in einer Dokumentbibliothek. Verwenden Sie einfach wie gewohnt den Veröffentlichungs-Assistenten, und das Formular wird auf den Server hochgeladen und kann im Sandkasten verwendet werden.
+Das Veröffentlichen eines Formulars mit Code als Sandkastenlösung unterscheidet sich nicht von der Veröffentlichung eines anderen Formulars in einer Dokumentbibliothek. Verwenden Sie einfach wie gewohnt den Veröffentlichungs-Assistenten, und das Formular wird auf den Server hochgeladen und kann im Sandkasten verwendet werden.
   
 Beachten Sie, dass es bestimmte Einschränkungen für die Bereitstellung Ihres Formulars als Sandkastenlösung gibt:
   
@@ -40,13 +40,13 @@ Beachten Sie, dass es bestimmte Einschränkungen für die Bereitstellung Ihres F
     
 - Als Programmiersprache muss C# oder Visual Basic verwendet werden.
     
-- An E-Mail-Datenverbindungen kann nicht übermittelt werden.
+- An E-Mail-Datenverbindungen kann nicht gesendet werden.
     
 - Es ist nicht möglich, Eigenschaften für Webpart-zu-Webpart-Verbindungen heraufzustufen.
     
 - Es dürfen keine Steuerelemente für verwaltete Metadaten oder Datenverbindungen verwendet werden.
     
-Damit Websitesammlungsadministratoren Sandkastenlösungen auf Microsoft SharePoint Server 2010 oder einem Server verwenden können, der Microsoft SharePoint Foundation 2010 ausgeführt wird, muss der Farmadministrator den Windows SharePoint-Benutzercodedienst starten.
+Damit Websitesammlungsadministratoren Sandkastenlösungen auf Microsoft SharePoint Server 2010 oder einem Server verwenden können, der Microsoft SharePoint Foundation 2010 ausgeführt wird, muss der Farmadministrator den Windows SharePoint Benutzercodedienst starten.
   
 ### <a name="to-start-the-windows-sharepoint-user-code-service"></a>So starten Sie den Windows SharePoint-Benutzercodedienst
 
@@ -60,7 +60,7 @@ Damit Websitesammlungsadministratoren Sandkastenlösungen auf Microsoft SharePoi
 
 1. Öffnen Sie die Formularvorlage in InfoPath Designer.
     
-2. Klicken Sie **auf die** Registerkarte Datei, und klicken  **SharePoint auf** der Registerkarte Veröffentlichen in der Backstage auf Server. 
+2. Klicken Sie auf die Registerkarte **"Datei"** und dann auf der Registerkarte **"Veröffentlichen"** in backstage auf **SharePoint Server.** 
     
 3. Geben Sie die URL der SharePoint-Website ein, auf der das Formular veröffentlicht werden soll, und klicken Sie dann auf **Weiter**. 
     
@@ -75,7 +75,7 @@ Damit Websitesammlungsadministratoren Sandkastenlösungen auf Microsoft SharePoi
     
 7. Klicken Sie auf **Veröffentlichen**.
     
-Beispiellösungen, die Szenarien veranschaulichen, die für als Sandkastenlösungen veröffentlichte Formularvorlagen geeignet sind, finden Sie unter [Beispiel sandkastenlösungen](sample-sandboxed-solutions.md).
+Beispiellösungen, die Szenarien veranschaulichen, die für Formularvorlagen geeignet sind, die als Sandkastenlösungen veröffentlicht wurden, finden Sie unter ["Beispiel-Sandkastenlösungen".](sample-sandboxed-solutions.md)
   
 ### <a name="publishing-form-templates-as-administrator-deployed-solutions"></a>Veröffentlichen von Formularvorlagen als vom Administrator bereitgestellte Lösungen
 
@@ -99,11 +99,11 @@ Veröffentlichen Sie dann das Formular mithilfe des folgenden Verfahrens. Beacht
   
 ### <a name="to-publish-an-administrator-deployed-solution"></a>So veröffentlichen Sie eine vom Administrator bereitgestellte Lösung
 
-1. Geben Sie auf der ersten Seite des Veröffentlichungs-Assistenten den Speicherort der SharePoint Server 2010- oder SharePoint Foundation 2010-Website an, und klicken Sie dann auf **Weiter**. 
+1. Geben Sie auf der ersten Seite des **Veröffentlichungs-Assistenten** den Speicherort der Website SharePoint Server 2010 oder SharePoint Foundation 2010 an, und klicken Sie dann auf **"Weiter".**
     
-2. InfoPath aktiviert automatisch das Kontrollkästchen **Vom Administrator** genehmigte Formularvorlagen auf der zweiten Seite des Assistenten. Klicken Sie auf **Weiter**.
+2. InfoPath aktiviert automatisch das Kontrollkästchen für vom **Administrator genehmigte Formularvorlagen** auf der zweiten Seite des Assistenten. Klicken Sie auf **Weiter**.
     
-3. Die dritte Seite gilt nur für Szenarien mit Bereitstellung durch den Administrator. Anstatt einen server SharePoint, veröffentlichen Sie das Formular in einem lokalen Speicher. Der SharePoint-Administrator lädt die Datei während des Bereitstellungsvorgangs aus diesem Speicherort hoch.
+3. Die dritte Seite gilt nur für Szenarien mit Bereitstellung durch den Administrator. Anstatt einen SharePoint Server auszuwählen, veröffentlichen Sie das Formular in einem lokalen Speicher. Der SharePoint-Administrator lädt die Datei während des Bereitstellungsvorgangs aus diesem Speicherort hoch.
     
 4. Schließen Sie die restlichen Seiten des Veröffentlichungs-Assistenten ab.
     

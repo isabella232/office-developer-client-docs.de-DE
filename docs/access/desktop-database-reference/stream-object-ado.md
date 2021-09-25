@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250065(v=office.15)
 ms:contentKeyID: 48547945
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 1f6d7e8f64f6b14ea699006fc0461cdf0ded2a06
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 6357a0f8ce0544294c54345bd5200b10b3fc95c3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308484"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580755"
 ---
 # <a name="stream-object-ado"></a>Stream-Objekt (ADO)
 
@@ -21,9 +21,9 @@ ms.locfileid: "32308484"
 
 Stellt einen Datenstrom von Binärdaten oder Text dar.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-In Struktur strukturierten Hierarchien wie einem Dateisystem oder einem e-Mail-System kann ein [Datensatz](record-object-ado.md) mit einem standardmäßigen binären Stream von Bits verknüpft sein, der den Inhalt der Datei oder die e-Mail enthält. Mit einem **Stream** -Objekt können Felder oder Datensätze bearbeitet werden, die diese Datenströme enthalten. Sie können ein **Stream** -Objekt auf folgende Weise erhalten:
+In strukturstrukturierten Hierarchien wie z. B. einem Dateisystem oder einem E-Mail-System ist einem [Datensatz](record-object-ado.md) möglicherweise ein standardmäßiger binärer Bitdatenstrom zugeordnet, der den Inhalt der Datei oder der E-Mail enthält. Mit einem **Stream** -Objekt können Felder oder Datensätze bearbeitet werden, die diese Datenströme enthalten. Sie können ein **Stream** -Objekt auf folgende Weise erhalten:
 
   - Von einer URL, die auf ein Objekt (gewöhnlich eine Datei) zeigt, das die Binär- oder Textdaten enthält. Dieses Objekt kann ein einfaches Dokument, ein **Record** -Objekt, das ein strukturiertes Objekt darstellt, oder ein Ordner sein.
 
@@ -66,6 +66,6 @@ Mit den Methoden und Eigenschaften eines **Stream** -Objekts können Sie die fol
   - Festlegen des Zugriffsmodus für das **Stream** -Objekt mit der [Mode](mode-property-ado.md)-Eigenschaft.
 
 > [!NOTE]
-> [!HINWEIS] Bei URLs, die das HTTP-Schema verwenden, wird automatisch der [Microsoft OLE DB-Anbieter für Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) aufgerufen. Weitere Informationen finden Sie unter [absolute und relative URLs](absolute-and-relative-urls.md).
+> [!HINWEIS] Bei URLs, die das HTTP-Schema verwenden, wird automatisch der [Microsoft OLE DB-Anbieter für Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) aufgerufen. Weitere Informationen finden Sie unter [Absolute und relative URLs.](absolute-and-relative-urls.md)
 
 

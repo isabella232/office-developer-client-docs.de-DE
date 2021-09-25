@@ -4,20 +4,20 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
-- solutions [infopath 2007], offline,offline solutions [InfoPath 2007], InfoPath 2003-compatible form templates,InfoPath 2003-compatible form templates, offline solutions
-localization_priority: Normal
+- solutions [infopath 2007], offline,offline solutions [InfoPath 2007], InfoPath 2003-kompatible Formularvorlagen,InfoPath 2003-kompatible Formularvorlagen, Offlinelösungen
+ms.localizationpriority: medium
 ms.assetid: 634ccd8c-0b5f-4161-875c-0e546a517377
-description: Das InfoPath 2003-kompatible Objektmodell stellt die MachineOnlineState-Eigenschaft des Application-Objekts zur Verfügung, mit der Der Formularcode überprüfen kann, ob der Computer des Benutzers mit dem Netzwerk verbunden ist. Je nach dem Status der Verbindung können vom Formularcode verschiedene Aktionen ausgeführt werden.
-ms.openlocfilehash: 452eb0d92b09dc0c3f9b2c247f7cda243dc8eb13
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Das InfoPath 2003-kompatible Objektmodell stellt die MachineOnlineState-Eigenschaft des Application-Objekts bereit, mit der ihr Formularcode überprüfen kann, ob der Computer des Benutzers mit dem Netzwerk verbunden ist. Je nach dem Status der Verbindung können vom Formularcode verschiedene Aktionen ausgeführt werden.
+ms.openlocfilehash: 5ac33120d3f88cdff0a0aa3eb8bdffe81962d095
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429243"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580573"
 ---
 # <a name="work-with-offline-solutions-using-the-infopath-object-model"></a>Arbeiten mit Offlinelösungen mithilfe des InfoPath-Objektmodells
 
-Das InfoPath 2003-kompatible Objektmodell stellt die [MachineOnlineState-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._Application2.MachineOnlineState.aspx) des [Application-Objekts](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Application.aspx) zur Verfügung, mit der Der Formularcode überprüfen kann, ob der Computer des Benutzers mit dem Netzwerk verbunden ist. Je nach dem Status der Verbindung können vom Formularcode verschiedene Aktionen ausgeführt werden. 
+Das InfoPath 2003-kompatible Objektmodell stellt die [MachineOnlineState-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._Application2.MachineOnlineState.aspx) des [Application-Objekts](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Application.aspx) bereit, mit der ihr Formularcode überprüfen kann, ob der Computer des Benutzers mit dem Netzwerk verbunden ist. Je nach dem Status der Verbindung können vom Formularcode verschiedene Aktionen ausgeführt werden. 
   
 ## <a name="using-the-machineonlinestate-property"></a>Verwenden der MachineOnlineState-Eigenschaft
 
@@ -33,15 +33,15 @@ Bei dem Beispiel wird davon ausgegangen, dass Sie ein Formular zum Senden eines 
     
 3. Klicken Sie im Dialogfeld **Datenverbindungen** auf **Hinzufügen**.
     
-4. Klicken Sie **im Assistenten für Datenverbindung** auf **Daten übermitteln,** und klicken Sie dann auf **Weiter**.
+4. Klicken Sie im **Datenverbindungs-Assistenten** auf **"Daten übermitteln"** und dann auf **"Weiter".**
     
-5. Klicken Sie auf der nächsten Seite des Assistenten auf Als E-Mail-Nachricht, und klicken Sie dann auf **Weiter**. 
+5. Klicken Sie auf der nächsten Seite des Assistenten auf **"Als E-Mail-Nachricht"** und dann auf **"Weiter".**
     
-6. Geben Sie auf der nächsten Seite des Assistenten Ihre E-Mail-Adresse in das Feld **An** ein. 
+6. Geben Sie auf der nächsten Seite des Assistenten Ihre E-Mail-Adresse in das Feld **"An"** ein. 
     
 7. Führen Sie im Feld **Betreff** die folgenden Schritte aus, um den Umsatzzeitraum mit dem Text "Sales Report" (Umsatzbericht) zu kombinieren: 
     
-   1. Klicken Sie **neben** dem Feld Betreff auf die Schaltfläche **Formel.** 
+   1. Klicken Sie auf die Schaltfläche **Formel** neben dem **Feld Betreff.** 
       
    2. Klicken Sie im Dialogfeld **Formel einfügen** auf **Funktion einfügen**.
       
@@ -57,7 +57,7 @@ Bei dem Beispiel wird davon ausgegangen, dass Sie ein Formular zum Senden eines 
     
 8. Klicken Sie im Assistenten auf **Weiter**.
     
-9. Geben Sie auf der nächsten Seite des Assistenten  im Feld Geben Sie einen Namen für diese Datenverbindung ein, und klicken Sie dann auf **Fertig stellen.**
+9. Geben Sie auf der nächsten Seite des Assistenten in der **Eingabe eines Namens für dieses Datenverbindungsfeld** "E-Mail Absenden" ein, und klicken Sie dann auf Fertig **stellen.**
     
 ### <a name="add-logic-for-submitting-the-form-depending-on-the-connected-state-of-a-users-computer"></a>Hinzufügen von Logik zum Senden des Formulars je nach dem Verbindungsstatus eines Benutzercomputers
 
@@ -119,7 +119,7 @@ Bei dem Beispiel wird davon ausgegangen, dass Sie ein Formular zum Senden eines 
     
 4. Klicken Sie in Internet Explorer im Menü **Datei** auf **Offline arbeiten**. 
     
-5. Klicken Sie in InfoPath auf **Absenden**. Es sollte eine Meldung angezeigt werden, dass das Formular als E-Mail-Nachricht übermittelt wird.
+5. Klicken Sie in InfoPath auf **Absenden**. Es sollte eine Meldung angezeigt werden, dass das Formular als E-Mail-Nachricht gesendet wird.
     
 6. Klicken Sie auf **Senden**. Eine Meldung sollte mitteilen, dass das Formular offline abgesendet wurde.
     

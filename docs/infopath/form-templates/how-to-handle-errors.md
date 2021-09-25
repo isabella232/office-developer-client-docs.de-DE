@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
 - errors [infopath 2007], handling,FormErrorCollection [InfoPath 2007],InfoPath 2007, error handling,FormError [InfoPath 2007],error handling [InfoPath 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 132cb698-d9a5-4767-b3d1-5dd1343a1ff4
-description: Beim Erstellen von benutzerdefinierten Anwendungen müssen Entwickler häufig Fehler behandeln, wobei auch Programmiercode geschrieben werden muss, um nach Fehlern zu suchen, die von der Anwendung ausgelöst wurden, oder um benutzerdefinierte Fehler zu erstellen und auszulösen. Das von Microsoft bereitgestellte InfoPath-Objektmodell. Office. Der InfoPath-Namespace unterstützt die Fehlerbehandlung mithilfe der FormError-Klasse in Verbindung mit der FormErrorCollection-Klasse.
-ms.openlocfilehash: 30cf649188b7e4cbc35469d2a50540bb13ecb38d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Beim Erstellen von benutzerdefinierten Anwendungen müssen Entwickler häufig Fehler behandeln, wobei auch Programmiercode geschrieben werden muss, um nach Fehlern zu suchen, die von der Anwendung ausgelöst wurden, oder um benutzerdefinierte Fehler zu erstellen und auszulösen. Das von Microsoft bereitgestellte InfoPath-Objektmodell. Office. Der InfoPath-Namespace unterstützt die Fehlerbehandlung durch die Verwendung der FormError-Klasse in Verbindung mit der FormErrorCollection-Klasse.
+ms.openlocfilehash: 7697a2a40be1f2dda76a6a9f1f218192acad9453
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33410777"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557470"
 ---
 # <a name="handle-errors"></a>Behandeln von Fehlern
 
-Beim Erstellen von benutzerdefinierten Anwendungen müssen Entwickler häufig Fehler behandeln, wobei auch Programmiercode geschrieben werden muss, um nach Fehlern zu suchen, die von der Anwendung ausgelöst wurden, oder um benutzerdefinierte Fehler zu erstellen und auszulösen. Das infoPath-Objektmodell, das von [Microsoft.Office. Der InfoPath-Namespace](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.aspx) unterstützt die Fehlerbehandlung mithilfe der [FormError-Klasse](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormError.aspx) in Verbindung mit der [FormErrorCollection-Klasse.](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormErrorCollection.aspx) 
+Beim Erstellen von benutzerdefinierten Anwendungen müssen Entwickler häufig Fehler behandeln, wobei auch Programmiercode geschrieben werden muss, um nach Fehlern zu suchen, die von der Anwendung ausgelöst wurden, oder um benutzerdefinierte Fehler zu erstellen und auszulösen. Das von Microsoft.Office bereitgestellte InfoPath-Objektmodell. [ Der InfoPath-Namespace](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.aspx) unterstützt die Fehlerbehandlung durch die Verwendung der [FormError-Klasse](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormError.aspx) in Verbindung mit der [FormErrorCollection-Klasse.](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormErrorCollection.aspx) 
   
 Fehler in InfoPath können aus den folgenden Gründen auftreten:
   
@@ -27,11 +27,11 @@ Fehler in InfoPath können aus den folgenden Gründen auftreten:
     
 - Wenn ein Fehler von der [ReportError-Methode](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlValidatingEventArgs.ReportError.aspx) des [XmlValidatingEventArgs-Ereignisobjekts](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlValidatingEventArgs.aspx) generiert wird. 
     
-- Wenn ein benutzerdefinierter Fehler mit der [Add-Methode](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormErrorCollection.Add.aspx) der [FormErrorCollection-Klasse erstellt](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormErrorCollection.aspx) wird. 
+- Wenn ein benutzerdefinierter Fehler mithilfe der [Add-Methode](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormErrorCollection.Add.aspx) der [FormErrorCollection-Klasse](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormErrorCollection.aspx) erstellt wird. 
     
 ## <a name="overview-of-the-formerrorcollection-class"></a>Übersicht über die FormErrorCollection-Klasse
 
-Die [FormErrorCollection-Klasse](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormErrorCollection.aspx) stellt die folgenden Methoden und Eigenschaften zur Verfügung, mit denen Formularentwickler die [FormError-Objekte](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormError.aspx) verwalten können, die die Auflistung enthält. 
+Die [FormErrorCollection-Klasse](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormErrorCollection.aspx) stellt die folgenden Methoden und Eigenschaften bereit, mit denen Formularentwickler die [FormError-Objekte](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormError.aspx) verwalten können, die die Auflistung enthält. 
   
 |**Name**|**Beschreibung**|
 |:-----|:-----|
@@ -44,7 +44,7 @@ Die [FormErrorCollection-Klasse](https://msdn.microsoft.com/library/Microsoft.Of
    
 ## <a name="overview-of-the-formerror-class"></a>Übersicht über die FormError-Klasse
 
-Die [FormError-Klasse](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormError.aspx) stellt die folgenden Eigenschaften zur Verfügung, mit denen Formularentwickler auf Informationen zu dem ausgelösten Fehler zugreifen können. 
+Die [FormError-Klasse](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormError.aspx) stellt die folgenden Eigenschaften bereit, mit denen Formularentwickler auf Informationen zu dem ausgelösten Fehler zugreifen können. 
   
 |**Name**|**Beschreibung**|
 |:-----|:-----|
@@ -56,7 +56,7 @@ Die [FormError-Klasse](https://msdn.microsoft.com/library/Microsoft.Office.InfoP
    
 ## <a name="using-the-formerrorcollection-and-formerror-classes"></a>Verwenden der Klassen "FormErrorCollection" und "FormError"
 
-Auf das einem Formular zugeordnete **FormErrorCollection-Objekt** wird über die [Errors-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.Errors.aspx) des [XmlForm-Objekts](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.aspx) zugegriffen. Das **FormErrorCollection-Objekt** ist dem einem Formular zugrunde liegenden XML-Dokument zugeordnet, sodass beim Auftreten eines Fehlers auf weitere Fehler im aktuellen XML-Dokument zugegriffen und verwaltet werden kann. Im folgenden Beispiel wird veranschaulicht, wie eine Schleife verwendet werden kann, um die Fehler zu überprüfen, die im zugrunde liegenden XML-Dokument eines Formulars vorhanden sein können. Wenn Fehler auftreten, durchlauft die Funktion jeden dieser Objekte und zeigt dem Benutzer mithilfe der **Message-Eigenschaft** des **FormError-Objekts** ein Meldungsfeld an. 
+Der Zugriff auf das einem Formular zugeordnete **FormErrorCollection-Objekt** erfolgt über die [Errors-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.Errors.aspx) des [XmlForm-Objekts.](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.aspx) Das **FormErrorCollection-Objekt** ist dem einem Formular zugrunde liegenden XML-Dokument zugeordnet, sodass beim Auftreten eines Fehlers auf dieses und alle zusätzlichen Fehler im aktuellen XML-Dokument zugegriffen und verwaltet werden kann. Im folgenden Beispiel wird veranschaulicht, wie eine Schleife verwendet werden kann, um die Fehler zu überprüfen, die möglicherweise im einem Formular zugrunde liegenden XML-Dokument vorhanden sind. Wenn Fehler auftreten, durchläuft die Funktion die einzelnen Fehler und zeigt dem Benutzer mithilfe der **Message-Eigenschaft** des **FormError-Objekts** ein Meldungsfeld an. 
   
 ```cs
 public void CheckErrors(XPathNavigator xmlNode)
@@ -81,7 +81,7 @@ Public Sub CheckErrors(ByVal xmlNode As XPathNavigator)
 End Sub
 ```
 
-Die vorangegangene Funktion kann von einem der Datenüberprüfungs-Ereignishandler des Formulars aufgerufen werden. Wenn sie beispielsweise im Ereignishandler für das [Changed-Ereignis](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlEvent.Changed.aspx) eines Felds im Formular verwendet wird, würde der Aufruf der Funktion das Argument XML-Knoten mithilfe der [Site-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlEventArgs.Site.aspx) des [XmlEventArgs-Ereignisobjekts](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlEventArgs.aspx) wie folgt übergeben. 
+Die vorangegangene Funktion kann von einem der Datenüberprüfungs-Ereignishandler des Formulars aufgerufen werden. Wenn beispielsweise im Ereignishandler für das [Changed-Ereignis](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlEvent.Changed.aspx) eines Felds im Formular verwendet wird, würde der Aufruf der Funktion das XML-Knotenargument mithilfe der [Site-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlEventArgs.Site.aspx) des [XmlEventArgs-Ereignisobjekts](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlEventArgs.aspx) wie folgt übergeben. 
   
 ```cs
 CheckErrors(e.Site);
@@ -91,7 +91,7 @@ CheckErrors(e.Site);
 CheckErrors(e.Site)
 ```
 
-Neben der Behandlung von von InfoPath generierten Fehlern können Formularentwickler auch benutzerdefinierte Fehler mithilfe der [ReportError(XPathNavigator,Boolean, String)-Methode](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlValidatingEventArgs.ReportError.aspx) des [XmlValidatingEventArgs-Ereignisobjekts](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlValidatingEventArgs.aspx) oder mithilfe der [Add-Methode](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormErrorCollection.Add.aspx) der [FormErrorCollection-Klasse](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormErrorCollection.aspx) generieren. Informationen zur Verwendung der [Methoden ReportError(XPathNavigator, Boolean, String)](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlValidatingEventArgs.ReportError.aspx) oder [Add](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormErrorCollection.Add.aspx) finden Sie am Anfang dieses Themas auf die Links für diese Methoden. 
+Zusätzlich zur Behandlung von Fehlern, die von InfoPath generiert werden, können Formularentwickler auch benutzerdefinierte Fehler mithilfe der [ReportError(XPathNavigator, Boolean, String)-Methode](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlValidatingEventArgs.ReportError.aspx) des [XmlValidatingEventArgs-Ereignisobjekts](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlValidatingEventArgs.aspx) oder mithilfe der [Add-Methode](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormErrorCollection.Add.aspx) der [FormErrorCollection-Klasse](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormErrorCollection.aspx) generieren. Wenn Sie Informationen zur Verwendung der Methoden [ReportError(XPathNavigator, Boolean, String)](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlValidatingEventArgs.ReportError.aspx) oder [Add](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormErrorCollection.Add.aspx) erhalten möchten, klicken Sie am Anfang dieses Themas auf die Links für diese Methoden. 
   
 ## <a name="handling-managed-code-exceptions"></a>Behandlung von Ausnahmen im verwalteten Code
 
@@ -128,7 +128,7 @@ Wenn Sie im Formularcode keine try-catch-Ausnahmebehandlung verwenden, zeigt Inf
   
 ### <a name="enable-notifications-for-unhandled-managed-code-exceptions-at-run-time"></a>Aktivieren von Benachrichtigungen zu unbehandelten Ausnahmen im verwalteten Code zur Laufzeit
 
-1. Öffnen Sie den InfoPath-Designer, und klicken Sie dann auf die **Registerkarte** Datei. 
+1. Öffnen Sie den InfoPath-Designer, und klicken Sie dann auf die Registerkarte **"Datei".** 
     
 2. Klicken Sie auf **Optionen**, und klicken Sie dann in der Kategorie **Allgemein** auf **InfoPath-Optionen**. 
     
