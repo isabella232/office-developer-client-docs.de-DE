@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff194433(v=office.15)
 ms:contentKeyID: 48545034
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: dca910ff7ae8fb4ce72c488829166dae1201f535
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 5e3d7b86dcb370bdfbfba81dc80e3679684d5af1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314238"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601667"
 ---
 # <a name="tabledefattributeenum-enumeration-dao"></a>TableDefAttributeEnum-Aufzählung (DAO)
 
@@ -41,7 +41,7 @@ Hiermit bestimmen Sie zusammen mit der **Attributes**-Eigenschaft die Attribute 
 <td><p>Verknüpfte ODBC-Datenbanktabelle.</p></td>
 </tr>
 <tr class="even">
-<td><p>dbAttachedable</p></td>
+<td><p>dbAttachedTable</p></td>
 <td><p>1073741824</p></td>
 <td><p>Verknüpfte Nicht-ODBC-Datenbanktabelle.</p></td>
 </tr>
@@ -56,12 +56,12 @@ Hiermit bestimmen Sie zusammen mit der **Attributes**-Eigenschaft die Attribute 
 <td><p>Speichert die Benutzer-ID und das Kennwort für die verknüpfte Remotetabelle.</p></td>
 </tr>
 <tr class="odd">
-<td><p>dbhidden</p></td>
+<td><p>dbHiddenObject</p></td>
 <td><p>1</p></td>
 <td><p>Ausgeblendete Tabelle (für die temporäre Verwendung).</p></td>
 </tr>
 <tr class="even">
-<td><p>dbSystemobject</p></td>
+<td><p>dbSystemObject</p></td>
 <td><p>-2147483646</p></td>
 <td><p>Systemtabelle.</p></td>
 </tr>

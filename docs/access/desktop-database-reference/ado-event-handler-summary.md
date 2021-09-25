@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250247(v=office.15)
 ms:contentKeyID: 48548701
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: c37c1257ad3f3cb046f7faf82ffcb93f067b1ff5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: ce180d7ebf76c758155b8af006100a070596875c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283373"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59553389"
 ---
 # <a name="ado-event-handler-summary"></a>ADO-Ereignishandler (Zusammenfassung)
 
@@ -40,7 +40,7 @@ Die Ereignisse und ihre Beschreibungen werden in den folgenden Tabellen zusammen
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="begintranscomplete-committranscomplete-and-rollbacktranscomplete-events-ado.md">BeginTransComplete</a>, CommitTransComplete, RollbackTransComplete-</p></td>
+<td><p><a href="begintranscomplete-committranscomplete-and-rollbacktranscomplete-events-ado.md">BeginTransComplete</a>, CommitTransComplete, RollbackTransComplete</p></td>
 <td><p><strong>Verwaltung von Transaktionen</strong> - Benachrichtigung, dass die aktuelle Transaktion für die Verbindung gestartet wurde, ein Commit für sie ausgeführt wurde oder ein Rollback für sie ausgeführt wurde.</p></td>
 </tr>
 <tr class="even">
@@ -52,7 +52,7 @@ Die Ereignisse und ihre Beschreibungen werden in den folgenden Tabellen zusammen
 <td><p><strong>Verwaltung der Befehlsausführung</strong> - Benachrichtigung, dass die Ausführung des aktuellen Befehls für die Verbindung gestartet wird oder beendet wurde.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="infomessage-event-ado.md">InfoMessage</a></p></td>
+<td><p><a href="infomessage-event-ado.md">Infomessage</a></p></td>
 <td><p><strong>Informationen</strong> - Benachrichtigung, dass zusätzliche Informationen zur aktuellen Operation vorhanden sind.</p></td>
 </tr>
 </tbody>
@@ -81,15 +81,15 @@ Die Ereignisse und ihre Beschreibungen werden in den folgenden Tabellen zusammen
 </tr>
 <tr class="odd">
 <td><p><a href="willmove-and-movecomplete-events-ado.md">WillMove, MoveComplete</a>, <a href="endofrecordset-event-ado.md">EndOfRecordset</a></p></td>
-<td><p><strong>Navigations Verwaltung</strong> -Benachrichtigung, dass sich die aktuelle Zeilenposition in einem <strong>Recordset</strong> -Objekt ändert, geändert wurde oder das Ende des <strong>Recordset-Objekts</strong>erreicht hat.</p></td>
+<td><p><strong>Navigationsverwaltung</strong> – Benachrichtigung, dass sich die aktuelle Zeilenposition in einem <strong>Recordset</strong> ändert, geändert wurde oder das Ende des <strong>Recordsets</strong>erreicht hat.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="willchangerecord-and-recordchangecomplete-events-ado.md">WillChangeRecord, RecordChangeComplete</a></p></td>
-<td><p><strong>Verwaltung von Zeilenänderungen</strong> -Benachrichtigung, dass sich etwas in der aktuellen Zeile des <strong>Recordset-Objekts</strong> ändert oder geändert hat.</p></td>
+<td><p><strong>Zeilenänderungsverwaltung</strong> – Benachrichtigung, dass sich etwas in der aktuellen Zeile des <strong>Recordsets</strong> ändert oder geändert wurde.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="willchangerecordset-and-recordsetchangecomplete-events-ado.md">WillChangeRecordset, RecordsetChangeComplete</a></p></td>
-<td><p><strong>Recordset Change Management</strong> -Benachrichtigung, dass etwas im aktuellen <strong>Recordset</strong> -Objekt geändert wird oder geändert wurde.</p></td>
+<td><p><strong>Recordset Change Management</strong> – Benachrichtigung, dass sich etwas im aktuellen <strong>Recordset</strong> ändert oder geändert wurde.</p></td>
 </tr>
 </tbody>
 </table>

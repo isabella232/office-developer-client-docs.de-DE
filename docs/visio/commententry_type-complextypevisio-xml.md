@@ -4,14 +4,14 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6d9e99b8-fcd6-f36b-960e-bcf3a23afe04
-ms.openlocfilehash: 840f660d72acbda052d4729846d8a26686d82b2a
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 156177b5b97881180b6135c4495daac573b0e489
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34540126"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59566031"
 ---
 # <a name="commententry_type-complextype-visio-xml"></a>CommentEntry_Type complexType (Visio XML)
 
@@ -66,7 +66,7 @@ ms.locfileid: "34540126"
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -76,13 +76,13 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|AuthorID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> ||Werte des xsd:unsignedInt-Typs.  <br/> |
-|AutoCommentType  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> ||Werte des xsd:unsignedInt-Typs.  <br/> |
-|CommentID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> ||Werte des xsd:unsignedInt-Typs.  <br/> |
-|Datum  <br/> |xsd:dateTime  <br/> |erforderlich  <br/> ||Werte des xsd:dateTime-Typs.  <br/> |
-|Fertig  <br/> |xsd:boolean  <br/> |Optional  <br/> ||Werte des typs xsd:boolean.  <br/> |
-|EditDate  <br/> |xsd:dateTime  <br/> |Optional  <br/> ||Werte des xsd:dateTime-Typs.  <br/> |
-|PageID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> ||Werte des xsd:unsignedInt-Typs.  <br/> |
-|ShapeID  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> ||Werte des xsd:unsignedInt-Typs.  <br/> |
+|AuthorID  <br/> |xsd:unsignedInt  <br/> |Erforderlich  <br/> ||Werte des Typs "xsd:unsignedInt".  <br/> |
+|AutoCommentType  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> ||Werte des Typs "xsd:unsignedInt".  <br/> |
+|CommentID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> ||Werte des Typs "xsd:unsignedInt".  <br/> |
+|Datum  <br/> |xsd:dateTime  <br/> |erforderlich  <br/> ||Werte des Typs "xsd:dateTime".  <br/> |
+|Fertig  <br/> |xsd:boolean  <br/> |Optional  <br/> ||Werte des Typs "xsd:boolean".  <br/> |
+|EditDate  <br/> |xsd:dateTime  <br/> |Optional  <br/> ||Werte des Typs "xsd:dateTime".  <br/> |
+|PageID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> ||Werte des Typs "xsd:unsignedInt".  <br/> |
+|ShapeID  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> ||Werte des Typs "xsd:unsignedInt".  <br/> |
    
 

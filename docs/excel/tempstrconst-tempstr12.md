@@ -9,21 +9,21 @@ f1_keywords:
 - TempStrConst
 keywords:
 - tempstr12-Funktion [excel 2007],TempStrConst-Funktion [Excel 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: faf4ee4e-8d33-4cb3-ae16-5648a837ee4f
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: d93f9de021c7ba325d9c11af2cede0245ffbbf6b
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 44b065d7360345f3b12b47a0e8cbe957babab916
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407151"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601261"
 ---
 # <a name="tempstrconsttempstr12"></a>TempStrConst/TempStr12
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Framework library function that creates a temporary **XLOPER/XLOPER12** that contains an **xltypeStr** string, taking a null-terminated source string as input. Die Funktion weist einen neuen Speicherpuffer zu und kopiert die übergebene Zeichenfolge in diesen. Die Eingabezeichenfolge wird nicht geändert und daher als const **deklariert.**
+Framework-Bibliotheksfunktion, die einen temporären **XLOPER/XLOPER12** erstellt, der eine **xltypeStr-Zeichenfolge** enthält, wobei eine Mit Null beendete Quellzeichenfolge als Eingabe verwendet wird. Die Funktion weist einen neuen Speicherpuffer zu und kopiert die übergebene Zeichenfolge in ihn. Die Eingabezeichenfolge wird nicht geändert und daher als **Konstante** deklariert.
   
 ```cs
 LPXLOPER TempStrConst(const LPSTR str);
@@ -34,15 +34,15 @@ LPXLOPER12 TempStr12(const XCHAR* lpstr);
 
  _str_
   
-Ein Zeiger auf die mit Null beendete Quellzeichenfolge. Bei **XLOPER** s abgeschnitten TempStrConst Zeichenfolgen, die länger als 255 Byte sind. Bei **XLOPER12** s werden Zeichenfolgen, die länger als 32.767 Unicode-Zeichen sind, von TempStr12Const abgeschnitten.
+Ein Zeiger auf die mit NULL beendete Quellzeichenfolge. Im Fall von **XLOPER** s werden von TempStrConst Zeichenfolgen abgeschnitten, die länger als 255 Bytes sind. Bei **XLOPER12-Zeichen** werden von TempStr12Const Zeichenfolgen abgeschnitten, die länger als 32.767 Unicode-Zeichen sind.
   
 ## <a name="return-value"></a>Rückgabewert
 
 Gibt eine **xltypeStr-Zeichenfolge** zurück, die eine Kopie des übergebenen Zeichenfolgenpuffers enthält. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Beachten Sie, dass sich die XLOPER-Zeichenfolgenframework-Funktion **TempStr** anders verhält und versucht, das erste Zeichen der angegebenen Zeichenfolge mit der Länge der nachfolgenden Zeichenfolge zu überschreiben.  Dies ist nicht immer sicher: Microsoft Excel kann abstürzen, wenn eine schreibgeschützte Zeichenfolge übergeben wird. Diese Methode zum Erstellen temporärer Zeichenfolgen ist nun veraltet, da **tempStrConst** und **TempStr12 funktionieren.** Daher wird das erste Zeichen der Eingabezeichenfolge als Anfang der Zeichenfolge behandelt, d. h. nicht als Längenzeichen oder als Leerzeichen für ein Längenzeichen. Sie sollten keine Zeichenfolgen übergeben, deren Länge am Anfang codiert ist, da die Folgen unvorhersehbar sein können. 
+Beachten Sie, dass sich die **XLOPER** string Framework-Funktion **TempStr** anders verhält und versucht, das erste Zeichen der angegebenen Zeichenfolge mit der Länge der nachfolgenden Zeichenfolge zu überschreiben. Dies ist nicht immer sicher: Microsoft Excel kann abstürzt, wenn eine schreibgeschützte Zeichenfolge übergeben wird. Diese Methode zum Erstellen temporärer Zeichenfolgen ist jetzt veraltet, was die Funktionsweise von **TempStrConst** und **TempStr12** unterstützt. Daher wird das erste Zeichen der Eingabezeichenfolge als Anfang der Zeichenfolge behandelt, d. h. nicht als Längenzeichen oder als Leerzeichen für ein Längenzeichen. Sie sollten keine Zeichenfolgen übergeben, die zu Beginn ein Längenzeichen codiert haben, da die Folgen unvorhersehbar sein könnten. 
   
 ## <a name="example"></a>Beispiel
 

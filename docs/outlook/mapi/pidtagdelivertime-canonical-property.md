@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagDeliverTime
 api_type:
 - HeaderDef
 ms.assetid: da0ad17b-08ac-4c50-ac1d-13062b890dfd
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 3e9318e396bf195ad701b92372a3136dee7fd0d8
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 6e604a385d45ed9647182ed6329ad448238569bd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33435278"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613512"
 ---
 # <a name="pidtagdelivertime-canonical-property"></a>PidTagDeliverTime (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "33435278"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält das Datum und die Uhrzeit, zu der die ursprüngliche Nachricht zugestellt wurde. 
+Enthält das Datum und die Uhrzeit der Zustellung der ursprünglichen Nachricht. 
   
 |||
 |:-----|:-----|
@@ -34,9 +34,9 @@ Enthält das Datum und die Uhrzeit, zu der die ursprüngliche Nachricht zugestel
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft ist eine Pro-Empfänger-Eigenschaft für einen Zustellungsbericht, die angibt, zu welchem Zeitpunkt die ursprüngliche Nachricht an den Messagingbenutzer übermittelt wurde, für den der Übermittlungsbericht generiert wird.
+Diese Eigenschaft ist eine Eigenschaft pro Empfänger in einem Übermittlungsbericht, die den Zeitpunkt angibt, zu dem die ursprüngliche Nachricht an den Nachrichtenbenutzer übermittelt wurde, für den der Übermittlungsbericht generiert wird.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,11 +44,11 @@ Diese Eigenschaft ist eine Pro-Empfänger-Eigenschaft für einen Zustellungsberi
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -59,9 +59,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

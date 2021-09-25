@@ -1,25 +1,25 @@
 ---
-title: PidLidLocation (kanonische Eigenschaft)
+title: Kanonische PidLidLocation-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidLocation
 api_type:
 - COM
 ms.assetid: c0db4b9e-ab84-4f45-9dbf-9514d306119c
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 6b6bac5eccd2461424bc99268378da5a28fa4505
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 5b36cad53759e518ad1aa1619bdf2361c65d16f8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315407"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583772"
 ---
-# <a name="pidlidlocation-canonical-property"></a>PidLidLocation (kanonische Eigenschaft)
+# <a name="pidlidlocation-canonical-property"></a>Kanonische PidLidLocation-Eigenschaft
 
   
   
@@ -31,7 +31,7 @@ Stellt den Ort eines Termins dar.
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidLocation  <br/> |
 |Eigenschaftensatz:  <br/> |PSETID_Appointment  <br/> |
-|Lange ID (LID):  <br/> |0x00008208  <br/> |
+|Long ID (LID):  <br/> |0x00008208  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
@@ -41,17 +41,17 @@ Stellt den Ort eines Termins dar.
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Stellt Eigenschaftensatzdefinitionen und Verweise auf verwandte Exchange Server zur Verfügung.
+> Stellt Die Definition von Eigenschaftengruppen und Verweise auf verwandte Exchange Server Protokollspezifikationen bereit.
     
 [[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften und Vorgänge für Termin-, Besprechungs- und Antwortnachrichten an.
+> Gibt die Eigenschaften und Vorgänge für Termin-, Besprechungsanfrage- und Antwortnachrichten an.
     
 ### <a name="header-files"></a>Headerdateien
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -59,9 +59,9 @@ Mapidefs.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

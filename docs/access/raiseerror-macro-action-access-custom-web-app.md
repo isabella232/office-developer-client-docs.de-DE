@@ -4,15 +4,15 @@ manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5e29bf64-300a-4094-82ff-664e79782d86
 description: Die RaiseError-Aktion zeigt ein Popupfenster an, das eine angegebene Fehlermeldung enthält.
-ms.openlocfilehash: 49e544d2234759709c19052b5540d42e88070849
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 4ea27a71b8dc3265862c733ebcca95a624a002b4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33408243"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601506"
 ---
 # <a name="raiseerror-macro-action-access-custom-web-app"></a>RaiseError-Makroaktion (benutzerdefinierte Access-Web-App)
 
@@ -24,7 +24,7 @@ Die **RaiseError-Aktion** zeigt ein Popupfenster an, das eine angegebene Fehlerm
 > [!NOTE]
 > Die **AuslösenFehler**-Aktion ist nur in Datenmakros verfügbar. 
   
-## <a name="setting"></a>Setting
+## <a name="setting"></a>Einstellung
 
 Die **RaiseError-Aktion** hat das folgende Argument. 
   
@@ -32,7 +32,7 @@ Die **RaiseError-Aktion** hat das folgende Argument.
 |:-----|:-----|
 | _Fehlerbeschreibung_ <br/> |Ein Zeichenfolgenausdruck, der den Fehler beschreibt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn die **RaiseError-Aktion** aufgerufen wird, werden alle Vorgänge in der aktuellen Transaktion zurückgesetzt. 
   

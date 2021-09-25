@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPISyncProgressCallback.Progress
 api_type:
 - COM
 ms.assetid: 6797cd1c-8a0b-4f42-ba56-6162d8e7b058
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 9b44337a4bc9615558ac6337e99ea206ba063b1a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 0f01f495372122c2c2f8b2e5d1242d7a1898f62f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429110"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59592340"
 ---
 # <a name="imapisyncprogresscallbackprogress"></a>IMAPISyncProgressCallback : IUnknown
 
@@ -25,7 +25,7 @@ ms.locfileid: "33429110"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Aktualisiert den Status im Dialogfeld Senden/Empfangen. Der Speicheranbieter ruft diese Funktion regelmäßig auf.
+Aktualisiert den Status im Dialogfeld "Senden/Empfangen". Diese Funktion wird vom Store-Anbieter regelmäßig aufgerufen.
   
 ```cpp
 HRESULT Progress(
@@ -43,7 +43,7 @@ HRESULT Progress(
     
  **ulIndex**
   
-> Die aktuelle position in Bearbeitung.
+> Die aktuelle Position, die gerade ausgeführt wird.
     
  **ulIndexMax**
   

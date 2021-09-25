@@ -1,20 +1,20 @@
 ---
-title: Document. Properties-Eigenschaft (DAO)
+title: Document.Properties-Eigenschaft (DAO)
 TOCTitle: Properties Property
 ms:assetid: 38238c4f-e49c-6e07-dd2b-14a49ab25643
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192509(v=office.15)
 ms:contentKeyID: 48544216
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: c6518653770f5336dd40a414b82502433d5f1bde
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 888f2fc62144ddc3158be945d9591d886227d7b4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293756"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565492"
 ---
-# <a name="documentproperties-property-dao"></a>Document. Properties-Eigenschaft (DAO)
+# <a name="documentproperties-property-dao"></a>Document.Properties-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -25,5 +25,5 @@ Gibt die **[Properties](properties-collection-dao.md)** -Auflistung des angegebe
 
 *Ausdruck* . Eigenschaften
 
-*Ausdruck* Eine Variable, die ein **Document** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Document-Objekt** darstellt.
 

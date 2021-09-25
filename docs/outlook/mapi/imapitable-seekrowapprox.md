@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPITable.SeekRowApprox
 api_type:
 - COM
 ms.assetid: ce5e8c43-06af-4afc-9138-5cc51d8fc401
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: bbb79097d03a8ea09cb4aff374231ee780e15395
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: b88e7d71639d880a001a48d60e6089e9358f807a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33412149"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59592312"
 ---
 # <a name="imapitableseekrowapprox"></a>IMAPITable::SeekRowApprox
 
@@ -38,7 +38,7 @@ ULONG ulDenominator
 
  _ulNumerator_
   
-> [in] Zeiger auf den Zähler der Bruchzahl, die die Tabellenposition darstellt. Wenn der  _ulNumerator-Parameter_ null ist, wird der Cursor unabhängig vom Nennwert am Anfang der Tabelle positioniert. Wenn  _ulNumerator_ gleich dem  _ulDenominator-Parameter_ ist, wird der Cursor hinter der letzten Tabellenzeile positioniert. 
+> [in] Zeiger auf den Zähler des Bruchs, der die Tabellenposition darstellt. Wenn der  _UlNumerator-Parameter_ Null ist, wird der Cursor unabhängig vom Nennerwert am Anfang der Tabelle positioniert. Wenn  _ulNumerator_ gleich dem  _ulDenominator-Parameter_ ist, wird der Cursor hinter der letzten Tabellenzeile positioniert. 
     
  _ulDenominator_
   
@@ -52,17 +52,17 @@ S_OK
     
 MAPI_E_BUSY 
   
-> Ein weiterer Vorgang wird ausgeführt, der verhindert, dass der Zeilensuchenvorgang gestartet wird. Der ausgeführte Vorgang sollte entweder abgeschlossen oder beendet werden.
+> Ein weiterer Vorgang wird ausgeführt, der verhindert, dass der Vorgang für die Zeilensuche gestartet wird. Entweder sollte der laufende Vorgang abgeschlossen werden können, oder er sollte beendet werden.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die Cursorposition in einer Tabelle nach einem Aufruf der **IMAPITable::SeekRowApprox-Methode** ist heuristisch der Bruch und möglicherweise nicht exakt. Beispielsweise können bestimmte Anbieter eine Tabelle über einer binären Struktur implementieren und den Tabellenhalbpunkt aus Leistungsgründen als oberster Punkt der Struktur behandeln. Wenn die Struktur nicht ausgeglichen ist, ist der verwendete Halbzeitpunkt möglicherweise nicht genau in der Mitte der Tabelle. 
+Die Cursorposition in einer Tabelle nach einem Aufruf der **IMAPITable::SeekRowApprox-Methode** ist heuristisch der Bruch und ist möglicherweise nicht genau. Beispielsweise können bestimmte Anbieter eine Tabelle über einer binären Struktur implementieren, wobei der halbe Punkt der Tabelle aus Leistungsgründen als oberer Rand der Struktur behandelt wird. Wenn die Struktur nicht ausgeglichen ist, ist der verwendete Halbe-Punkt möglicherweise nicht genau in der Mitte der Tabelle. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Rufen **Sie SeekRowApprox** auf, um die Daten für eine Bildlaufleistenimplementierung zur Verfügung zu stellen. Wenn der Benutzer beispielsweise das Bildlauffeld 2/3 unten auf der Bildlaufleiste positioniert, können Sie diese Aktion modellieren, indem Sie **SeekRowApprox** aufrufen und einen entsprechenden Bruchwert mithilfe von _ulNumerator_ und _ulDenominator übergeben._ Die **SeekRowApprox-Suche** ist immer vom Anfang der Tabelle aus absolut. Um an das Ende der Tabelle zu wechseln, müssen die Werte in  _ulNumerator_ und  _ulDenominator_ identisch sein. 
+Rufen **Sie SeekRowApprox** auf, um die Daten für eine Implementierung einer Bildlaufleiste bereitzustellen. Wenn der Benutzer beispielsweise das Bildlauffeld 2/3 nach unten auf der Bildlaufleiste positioniert, können Sie diese Aktion modellieren, indem Sie **SeekRowApprox** aufrufen und einen entsprechenden Bruchwert mit  _ulNumerator_ und  _ulDenominator_ übergeben. Die **SeekRowApprox-Suche** ist immer absolut am Anfang der Tabelle. Um an das Ende der Tabelle zu wechseln, müssen die Werte in  _ulNumerator_ und  _ulDenominator_ identisch sein. 
   
-Verwenden Sie das entsprechende Nummernschema. Das heißt, sie können 1/2, 10/20 oder 50/100 angeben, um eine Position in der Mitte der Tabelle zu finden. 
+Verwenden Sie das richtige Zahlenschema. Um also eine Position in der Mitte der Tabelle zu suchen, können Sie 1/2, 10/20 oder 50/100 angeben. 
   
 ## <a name="see-also"></a>Siehe auch
 

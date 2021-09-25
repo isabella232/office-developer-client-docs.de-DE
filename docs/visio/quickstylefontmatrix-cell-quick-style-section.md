@@ -1,32 +1,32 @@
 ---
-title: Zelle QuickStyleFontMatrix (Abschnitt "Quick Style")
+title: Zelle "QuickStyleFontMatrix" (Abschnitt "Quick Style")
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 304ee083-e9c8-45df-b411-ba5e7db4c086
-description: Bestimmt die Schriftart für jede Schnellformatvorlage als ganze Zahl von 1 bis 6.
-ms.openlocfilehash: 0708a243b001c7b4e03158b5a332a3166727cabc
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Bestimmt das Format der Schriftart für jede Schnellformatvorlage als ganze Zahl zwischen 1 und 6.
+ms.openlocfilehash: 3a6a72d6fab247d223c181480a3fbf2ca6ca1dcd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407249"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607941"
 ---
-# <a name="quickstylefontmatrix-cell-quick-style-section"></a>Zelle QuickStyleFontMatrix (Abschnitt "Quick Style")
+# <a name="quickstylefontmatrix-cell-quick-style-section"></a>Zelle "QuickStyleFontMatrix" (Abschnitt "Quick Style")
 
-Bestimmt die Schriftart für jede Schnellformatvorlage als ganze Zahl von 1 bis 6.
+Bestimmt das Format der Schriftart für jede Schnellformatvorlage als ganze Zahl zwischen 1 und 6.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Verwenden Sie zum Erhalten eines Verweises auf die **QuickStyleFontMatrix-Zelle** anhand des Namens aus einer anderen Formel, nach dem Wert des **N-Attributs** eines **Cell-Elements** oder aus einem Programm mit der **CellsU-Eigenschaft:** 
+Verwenden Sie Folgendes, um einen Verweis auf die **Zelle "QuickStyleFontMatrix"** anhand des Namens aus einer anderen Formel, anhand des Werts des **N-Attributs** eines **Cell-Elements** oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | QuickStyleFontMatrix  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die **QuickStyleFontMatrix-Zelle** nach Index aus einem Programm zu erhalten: 
+Um einen Verweis auf die **Zelle "QuickStyleFontMatrix"** anhand des Indexes eines Programms abzurufen, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|

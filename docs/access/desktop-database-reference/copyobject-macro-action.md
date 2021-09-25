@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm12836
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 2d1fb13d04691b7bf5e0aafcc484cfc4f471e1e1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 19e003f1576405d4bc36c8365603c7871e1541c4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295492"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565674"
 ---
 # <a name="copyobject-macro-action"></a>CopyObject-Makroaktion
 
@@ -45,7 +45,7 @@ Die **KopierenObjekt**-Aktion hat die folgenden Argumente.
 <tbody>
 <tr class="odd">
 <td><p><strong>Zieldatenbank</strong></p></td>
-<td><p>Ein gültiger Pfad und Dateiname für die Zieldatenbank. Geben Sie den Pfad und den Dateinamen im Feld <strong>Zieldatenbank</strong> im Abschnitt <strong>Aktionsargumente</strong> des Bereichs Makro-Generator ein. Lassen Sie dieses Argument leer, wenn Sie die aktuelle Datenbank auswählen möchten.</p><p><strong>Hinweis</strong>: dieses Argument ist nur in der Access-Datenbankumgebung verfügbar. Wenn diese Aktion in einer Access-Projektumgebung (ADP) verwendet wird, muss das Argument Zieldatenbank leer sein.</p>
+<td><p>Ein gültiger Pfad und Dateiname für die Zieldatenbank. Geben Sie den Pfad und den Dateinamen im Feld <strong>"Zieldatenbank"</strong> im Abschnitt <strong>"Aktionsargumente"</strong> im Bereich "Makro-Generator" ein. Lassen Sie dieses Argument leer, wenn Sie die aktuelle Datenbank auswählen möchten.</p><p><strong>HINWEIS:</strong>Dieses Argument ist nur in der Access-Datenbankumgebung verfügbar. Wenn diese Aktion in einer Access-Projektumgebung (ADP) verwendet wird, muss das Argument Zieldatenbank leer sein.</p>
 <p>Wenn Sie ein Makro, das die <strong>KopierenObjekt</strong>-Aktion enthält, in einer Bibliotheksdatenbank ausführen und dieses Argument leer lassen, wird dieses Objekt von Microsoft Office Access 2007 in die Bibliotheksdatenbank kopiert.</p></td>
 </tr>
 <tr class="even">
@@ -64,7 +64,7 @@ Die **KopierenObjekt**-Aktion hat die folgenden Argumente.
 </table>
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Sie müssen für diese Aktion für mindestens eines der Argumente **Zieldatenbank** und **Neuer Name** einen Wert eingeben.
 

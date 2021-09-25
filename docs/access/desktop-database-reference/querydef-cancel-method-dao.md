@@ -1,5 +1,5 @@
 ---
-title: QueryDef. Cancel-Methode (DAO)
+title: QueryDef.Cancel-Methode (DAO)
 TOCTitle: Cancel Method
 ms:assetid: 91e61012-c01c-4c24-185c-bdadb7f33a58
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197642(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1055470
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 56a4ba804dba25eb0b4722bcf5396229ee003f43
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 6c404f493072974632bfdd155fc2664258721867
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301120"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558044"
 ---
-# <a name="querydefcancel-method-dao"></a>QueryDef. Cancel-Methode (DAO)
+# <a name="querydefcancel-method-dao"></a>QueryDef.Cancel-Methode (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -27,9 +27,9 @@ ms.locfileid: "32301120"
 
 *Ausdruck* . Abbrechen
 
-*Ausdruck* Eine Variable, die ein **QueryDef** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **QueryDef**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie die **Cancel** -Methode, um die Ausführung eines asynchronen **Execute** -oder OpenConnection-Methodenaufrufs zu beenden (das heißt, die Methode wurde mit der dbRunAsync-Option aufgerufen). **** **Cancel** gibt einen Laufzeitfehler zurück, wenn dbRunAsync nicht in der Methode verwendet wurde, die Sie beenden möchten.
+Verwenden Sie die **Cancel** -Methode, um die Ausführung eines asynchronen **Execute-** oder **OpenConnection-Methodenaufrufs** zu beenden (das heißt, die Methode wurde mit der Option dbRunAsync aufgerufen). **Cancel** gibt einen Laufzeitfehler zurück, wenn dbRunAsync nicht in der Methode verwendet wurde, die Sie beenden möchten.
 

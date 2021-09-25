@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ABProviderInit
 api_type:
 - HeaderDef
 ms.assetid: c3dcd0d4-018a-47b0-b040-227034ed59d8
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: acec07df0b72685cf9ec6b21499c730b72f58c59
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ea53639308f96c0b13641119e0e59dcc0a0359c7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33428284"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59592725"
 ---
 # <a name="abproviderinit"></a>ABProviderInit
  
@@ -47,41 +47,41 @@ HRESULT ABProviderInit(
 
 ## <a name="parameters"></a>Parameter
 
- _hInstance_
+ _Hinstance_
   
-> [in] Die Instanz der Dynamic-Link Library (DLL) des Adressbuchanbieters, die MAPI beim Verknüpfen verwendet hat. 
+> [in] Die Instanz der DLL (Dynamic Link Library) des Adressbuchanbieters, die die MAPI beim Verknüpfen verwendet hat. 
     
  _lpMalloc_
   
-> [in] Zeiger auf ein Speicherzuweisungsobjekt, das die OLE **IMalloc-Schnittstelle verfügbar** machen soll. Der Adressbuchanbieter muss diese Zuweisungsmethode möglicherweise verwenden, wenn er mit bestimmten Schnittstellen wie **IStream arbeitet.** 
+> [in] Zeiger auf ein Speicherzuweisungsobjekt, das die OLE **IMalloc-Schnittstelle** verfügbar machen kann. Der Adressbuchanbieter muss diese Zuordnungsmethode möglicherweise verwenden, wenn er mit bestimmten Schnittstellen wie **IStream** arbeitet. 
     
  _lpAllocateBuffer_
   
-> [in] Zeiger auf die [MAPIAllocateBuffer-Funktion,](mapiallocatebuffer.md) die bei Bedarf von MAPI zum Zuordnen von Arbeitsspeicher verwendet werden soll. 
+> [in] Zeiger auf die [MAPIAllocateBuffer-Funktion,](mapiallocatebuffer.md) die verwendet werden soll, wenn die MAPI Arbeitsspeicher zuweist. 
     
  _lpAllocateMore_
   
-> [in] Zeiger auf die [MAPIAllocateMore-Funktion,](mapiallocatemore.md) die bei Bedarf von MAPI zum Zuordnen von zusätzlichem Arbeitsspeicher verwendet werden soll. 
+> [in] Zeiger auf die [MAPIAllocateMore-Funktion,](mapiallocatemore.md) die verwendet werden soll, wenn die MAPI zusätzlichen Speicher zuweist. 
     
  _lpFreeBuffer_
   
-> [in] Zeiger auf die [MAPIFreeBuffer-Funktion,](mapifreebuffer.md) die verwendet werden soll, wenn mapi zum Freispeichern des Arbeitsspeichers erforderlich ist. 
+> [in] Zeiger auf die [MAPIFreeBuffer-Funktion,](mapifreebuffer.md) die verwendet werden soll, wenn die MAPI zum Freigeben von Arbeitsspeicher erforderlich ist. 
     
  _ulFlags_
   
-> [in] Bitmaske von Flags. Das folgende Flag kann festgelegt werden:
+> [in] Bitmaske von Flags. Das folgende Kennzeichen kann festgelegt werden:
     
 MAPI_NT_SERVICE 
   
-> Der Anbieter wird im Kontext eines Windows geladen, einem speziellen Prozesstyp ohne Zugriff auf eine Benutzeroberfläche. 
+> Der Anbieter wird im Kontext eines Windows Diensts geladen, einem speziellen Prozesstyp ohne Zugriff auf eine Benutzeroberfläche. 
     
  _ulMAPIVer_
   
-> [in] Versionsnummer der Dienstanbieterschnittstelle (SPI), die MAPI.DLL wird. Die aktuelle Versionsnummer finden Sie im MAPISPI. H-Headerdatei. 
+> [in] Versionsnummer der Dienstanbieterschnittstelle (SERVICE Provider Interface, SPI), die MAPI.DLL verwendet. Die aktuelle Versionsnummer finden Sie unter MAPISPI. H-Headerdatei. 
     
  _lpulProviderVer_
   
-> [out] Zeiger auf die Versionsnummer des SPI, den dieser Adressbuchanbieter verwendet. 
+> [out] Zeiger auf die Versionsnummer des SPI, die von diesem Adressbuchanbieter verwendet wird. 
     
  _lppABProvider_
   
@@ -95,21 +95,21 @@ S_OK
     
 MAPI_E_VERSION 
   
-> Die von MAPI verwendete SPI-Version ist nicht mit dem von diesem Anbieter verwendeten SPI kompatibel.
+> Die von der MAPI verwendete SPI-Version ist nicht mit dem von diesem Anbieter verwendeten SPI kompatibel.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 MAPI ruft die Einstiegspunktfunktion **ABProviderInit** auf, um einen Adressbuchanbieter nach einer Clientanmeldung zu initialisieren. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Ein Adressbuchanbieter muss **ABProviderInit** als Einstiegspunktfunktion in der DLL des Anbieters implementieren. Die Implementierung muss auf dem **AbPROVIDERINIT-Funktionsprototyp** basieren, der auch in MAPISPI.H angegeben ist. MAPI definiert **ABPROVIDERINIT** für die Verwendung des standardmäßigen MAPI-Initialisierungsaufruftyps STDMAPIINITCALLTYPE, wodurch **ABProviderInit** der CDECL-Aufrufkonvention folgt. 
+Ein Adressbuchanbieter muss **ABProviderInit** als Einstiegspunktfunktion in der DLL des Anbieters implementieren. Die Implementierung muss auf dem **ABPROVIDERINIT-Funktionsprototyp** basieren, der auch in MAPISPI.H angegeben ist. MAPI definiert **ABPROVIDERINIT** für die Verwendung des standardmäßigen MAPI-Initialisierungsaufruftyps STDMAPIINITCALLTYPE, wodurch **ABProviderInit** der CDECL-Aufrufkonvention folgt. 
   
-Ein Anbieter kann mehrmals initialisiert werden, da er in mehreren Profilen gleichzeitig angezeigt wird oder mehr als einmal im gleichen Profil angezeigt wird. Da das provider-Objekt Kontext enthält, muss **ABProviderInit** ein anderes Anbieterobjekt in  _lppABProvider_ für jede Initialisierung zurückgeben, auch für mehrere Initialisierungen im gleichen Prozess. 
+Ein Anbieter kann mehrmals initialisiert werden, wenn er in mehreren Profilen gleichzeitig oder mehrmals im selben Profil angezeigt wird. Da das Anbieterobjekt Kontext enthält, muss **ABProviderInit** ein anderes Anbieterobjekt in  _lppABProvider_ für jede Initialisierung zurückgeben, auch für mehrere Initialisierungen im selben Prozess. 
   
-Der Adressbuchanbieter sollte die Funktionen verwenden, auf die  _von lpAllocateBuffer,_  _lpAllocateMore_ und  _lpFreeBuffer_ verwiesen wird, für die meisten Speicherzuweisungen und Deallocation. Insbesondere muss der Anbieter diese Funktionen verwenden, um Speicher für die Verwendung durch Clientanwendungen beim Aufrufen von Objektschnittstellen wie [IMAPIProp::GetProps](imapiprop-getprops.md) und [IMAPITable::QueryRows zu reservieren.](imapitable-queryrows.md) Wenn der Anbieter auch die Verwendung der OLE-Speicherzuweisung erwartet, sollte er die **IUnknown::AddRef-Methode** des Zuweisungsobjekts aufrufen, auf das der  _lpMalloc-Parameter_ verweist. 
+Der Adressbuchanbieter sollte die Funktionen verwenden, auf die  _lpAllocateBuffer,_  _lpAllocateMore_ und  _lpFreeBuffer_ für die meisten Speicherzuweisungen und Zuordnungen verweisen. Insbesondere muss der Anbieter diese Funktionen verwenden, um Arbeitsspeicher für die Verwendung durch Clientanwendungen beim Aufrufen von Objektschnittstellen wie [IMAPIProp::GetProps](imapiprop-getprops.md) und [IMAPITable::QueryRows](imapitable-queryrows.md)zuzuweisen. Wenn der Anbieter auch erwartet, dass die OLE-Speicherzuweisung verwendet wird, sollte er die **IUnknown::AddRef-Methode** des Zuweisungsobjekts aufrufen, auf das durch den  _lpMalloc-Parameter_ verwiesen wird. 
   
-Weitere Informationen zum Schreiben von **ABProviderInit** finden Sie unter [Implementing an Address Book Provider Entry Point Function](implementing-an-address-book-provider-entry-point-function.md). Weitere Informationen zu Einstiegspunktfunktionen finden Sie unter [Implementing a Service Provider Entry Point Function](implementing-a-service-provider-entry-point-function.md). 
+Weitere Informationen zum Schreiben von **ABProviderInit** finden Sie unter [Implementieren einer Adressbuchanbieter-Einstiegspunktfunktion.](implementing-an-address-book-provider-entry-point-function.md) Weitere Informationen zu Einstiegspunktfunktionen finden Sie unter [Implementieren einer Dienstanbieter-Einstiegspunktfunktion.](implementing-a-service-provider-entry-point-function.md) 
   
 ## <a name="see-also"></a>Siehe auch
 

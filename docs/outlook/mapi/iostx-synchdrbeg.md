@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IOSTX.SyncHdrBeg
 api_type:
 - COM
 ms.assetid: 7f8ca7cf-ac0b-9b77-c1dd-9f1d0871d603
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 49ef9862d5156a1bed242652df32baab9a0123fc
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8059830b65045890ceb4b3e75bd059c420e58761
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33405093"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59592277"
 ---
 # <a name="iostxsynchdrbeg"></a>IOSTX::SyncHdrBeg
 
@@ -45,13 +45,13 @@ HRESULT SyncHdrBeg(
   
 > [in] Die Eintrags-ID für die Nachricht.
     
- _ppv_
+ _Ppv_
   
 >  [in]/[out] Zeiger auf die **[HDRSYNC-Struktur](hdrsync.md)** für den Nachrichtenkopf. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Bei **IOSTX::SyncHdrBeg** überwechselt der lokale Speicher den Status ["Nachrichtenkopf herunterladen".](download-message-header-state.md) Outlook für den Client die **HDRSYNC-Struktur** mit der aktuellen Darstellung des Nachrichtenkopfs im Speicher und im übergeordneten Ordner initialisiert. Der Client muss dann ein vollständiges Nachrichtenelement herunterladen (als  *pmsgFull*  in **HDRSYNC** ). Wenn dies erfolgreich war, legt der Client *auch ulFlags* in **HDRSYNC als** **HSF_OK.** Bei **[IOSTX::SyncHdrEnd](iostx-synchdrend.md)** überprüft Outlook das Ergebnis in **HDRSYNC** und verwendet die Informationen in **HDRSYNC,** um den lokalen Nachrichtenkopf zu aktualisieren. 
+Bei **IOSTX::SyncHdrBeg** wechselt der lokale Speicher in den Headerstatus der [Downloadnachricht.](download-message-header-state.md) Outlook initialisiert für den Client die **HDRSYNC-Struktur** mit der aktuellen Darstellung des Nachrichtenkopfs im Speicher und im übergeordneten Ordner. Der Client muss dann ein vollständiges Nachrichtenelement herunterladen (wie *pmsgFull* in **HDRSYNC).** Wenn dies erfolgreich war, legt der Client auch  *ulFlags*  in **HDRSYNC** als **HSF_OK** fest. Bei **[IOSTX::SyncHdrEnd](iostx-synchdrend.md)** überprüft Outlook das Ergebnis in **HDRSYNC** und verwendet die Informationen in **HDRSYNC,** um den lokalen Nachrichtenkopf zu aktualisieren. 
   
 ## <a name="see-also"></a>Siehe auch
 

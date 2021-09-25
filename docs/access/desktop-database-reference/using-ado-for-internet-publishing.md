@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248975(v=office.15)
 ms:contentKeyID: 48543622
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: ae8341151c7bf7d90585794061647ba33a5c4ea7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 3c6ec66f838691398afbff5f4f117bf4b8cff13f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32305901"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557750"
 ---
 # <a name="using-ado-for-internet-publishing"></a>Verwenden von ADO für Veröffentlichungen im Internet
 
@@ -21,7 +21,7 @@ ms.locfileid: "32305901"
 
 
 
-In [Der OLE DB-Anbieter für Internet Publishing](the-ole-db-provider-for-internet-publishing.md) wird ein konkretes Beispiel für das Zugreifen auf heterogene Daten mit ADO gezeigt. Während die Beispiele in diesem Abschnitt speziell für die Verwendung des Internet Publishing-Anbieters gelten, sollten die folgenden Prinzipien ähnlich sein, wenn ADO mit anderen Anbietern zu heterogenen Daten verwendet wird, beispielsweise einem Anbieter zu einem e-Mail-Speicher.
+In [Der OLE DB-Anbieter für Internet Publishing](the-ole-db-provider-for-internet-publishing.md) wird ein konkretes Beispiel für das Zugreifen auf heterogene Daten mit ADO gezeigt. Während die Beispiele in diesem Abschnitt speziell für die Verwendung des Internet Publishing-Anbieters gelten, sollten die dargestellten Prinzipien ähnlich sein, wenn Sie ADO mit anderen Anbietern für heterogene Daten verwenden, z. B. einen Anbieter für einen E-Mail-Speicher.
 
 ## <a name="urls"></a>URLs
 
@@ -45,4 +45,4 @@ Mehrere ADO-Objekte wurden verbessert, um mit den Objekten **Record** und **Stre
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Themen zu Internet Publishing-Szenarien](internet-publishing-scenario.md)
+- [Themen zum Internet Publishing-Szenario](internet-publishing-scenario.md)

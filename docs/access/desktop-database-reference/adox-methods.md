@@ -1,18 +1,18 @@
 ---
-title: ADOX-Methoden (Access Desktop Database Reference)
+title: ADOX-Methoden (Access-Desktopdatenbankreferenz)
 TOCTitle: ADOX methods
 ms:assetid: 1a2eed52-2b09-e528-2cdc-134df3c9441f
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248947(v=office.15)
 ms:contentKeyID: 48543516
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 40c4ca85e28813f9827d959ff202e0036e379e96
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d2b418b1b80b3a529e6661763016cf8f342a6713
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32270007"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607500"
 ---
 # <a name="adox-methods"></a>ADOX-Methoden
 
@@ -73,7 +73,7 @@ ms.locfileid: "32270007"
 <td><p>Erstellt einen neuen Katalog.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="delete-method-adox-collections.md">Delete</a></p></td>
+<td><p><a href="delete-method-adox-collections.md">Löschen</a></p></td>
 <td><p>Entfernt ein Objekt aus einer Auflistung.</p></td>
 </tr>
 <tr class="even">

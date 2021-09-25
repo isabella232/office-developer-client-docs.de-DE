@@ -5,17 +5,17 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 9cb4af50-3735-4029-a608-a6e7927019dd
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 6415ddcec2823192967b8869b46b22b58b08ba5f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: e2407a9efdf43a7a83418e1ab77e1054ac3b954b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33437308"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59574797"
 ---
 # <a name="pidtagpstpathhint-canonical-property"></a>PidTagPstPathHint (kanonische Eigenschaft)
 
@@ -23,16 +23,16 @@ ms.locfileid: "33437308"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Stellt den Namen der persönlichen Speichertabelle (PST-Datei) für das Konfigurationsdialogfeld zur Verfügung, den der Benutzer bearbeiten kann. 
+Stellt den Namen der persönlichen Speichertabelle (PST-Datei) für das Konfigurationsdialogfeld bereit, den der Benutzer bearbeiten kann. 
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_PST_PATH_HINT, PR_PST_PATH_HINT_A, PR_PST_PATH_HINT_W  <br/> |
 |Kennung:  <br/> |0x6771  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
-|Bereich:  <br/> |Interne Persönliche Speichertabelle (PST)  <br/> |
+|Bereich:  <br/> |Persönliche Speichertabelle (PST) intern  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn stattdessen die **PR_PST_PATH** ([PidTagPstPath](pidtagpstpath-canonical-property.md)) -Eigenschaft verwendet wird, wird das Konfigurationsdialogfeld geöffnet, aber der Benutzer kann den Pfad und viele andere Eigenschaften nicht bearbeiten.
   
@@ -42,17 +42,17 @@ Wenn stattdessen die **PR_PST_PATH** ([PidTagPstPath](pidtagpstpath-canonical-pr
 
 [[MS-OXPROPS]] 
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 ### <a name="header-files"></a>Headerdateien
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,9 +60,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

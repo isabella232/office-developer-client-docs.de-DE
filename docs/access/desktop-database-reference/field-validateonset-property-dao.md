@@ -1,5 +1,5 @@
 ---
-title: Field. ValidateOnSet-Eigenschaft (DAO)
+title: Field.ValidateOnSet-Eigenschaft (DAO)
 TOCTitle: ValidateOnSet Property
 ms:assetid: 00245a8a-a78f-b0a8-3eb3-11dd27873984
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff844720(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1052929
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 2d8fb358ab757d826bcfcd335aada8825e3ba980
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 384a67fa280bbfdd3d88742d921579522678f4be
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292958"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565380"
 ---
-# <a name="fieldvalidateonset-property-dao"></a>Field. ValidateOnSet-Eigenschaft (DAO)
+# <a name="fieldvalidateonset-property-dao"></a>Field.ValidateOnSet-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -29,7 +29,7 @@ Legt einen Wert fest, der angibt, ob der Wert eines **[Field](field-object-dao.m
 
 *Ausdruck* . ValidateOnSet
 
-*Ausdruck* Eine Variable, die ein **Field** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Field**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 

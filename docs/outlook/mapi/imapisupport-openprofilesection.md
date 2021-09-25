@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPISupport.OpenProfileSection
 api_type:
 - COM
 ms.assetid: cd1fa994-9531-46c4-94e5-505e7f90b884
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: e7f13acc34a77b79057d32fd4049db7222dadf49
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: cf4f3954b529dd40fe3b273f0bc469766645da33
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411386"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59592389"
 ---
 # <a name="imapisupportopenprofilesection"></a>IMAPISupport::OpenProfileSection
 
@@ -39,19 +39,19 @@ LPPROFSECT FAR * lppProfileObj
 
  _lpUid_
   
-> [in] Ein Zeiger auf die [MAPIUID-Struktur,](mapiuid.md) die den zu öffnenden Profilabschnitt identifiziert. Wenn Sie NULL für den  _lpUid-Parameter übergeben,_ wird der Profilabschnitt des Anrufers geöffnet. 
+> [in] Ein Zeiger auf die [MAPIUID-Struktur,](mapiuid.md) der den zu öffnenden Profilabschnitt identifiziert. Wird NULL für den  _Parameter lpUid übergeben,_ wird der Profilabschnitt des Aufrufers geöffnet. 
     
  _ulFlags_
   
-> [in] Eine Bitmaske mit Flags, die steuert, wie der Profilabschnitt geöffnet wird. Die folgenden Kennzeichen können festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie der Profilabschnitt geöffnet wird. Die folgenden Flags können festgelegt werden:
     
 MAPI_DEFERRED_ERRORS 
   
-> Ermöglicht **openProfileSection,** erfolgreich zurückzukehren, möglicherweise bevor der Profilabschnitt vollständig für den Aufrufer zugänglich ist. Wenn auf den Profilabschnitt nicht zugegriffen werden kann, kann ein nachfolgender Objektaufruf zu einem Fehler führen. 
+> Ermöglicht **OpenProfileSection** die erfolgreiche Rückgabe, möglicherweise bevor der Aufrufer vollständig auf den Profilabschnitt zugegriffen werden kann. Wenn auf den Profilabschnitt nicht zugegriffen werden kann, kann ein nachfolgender Objektaufruf zu einem Fehler führen. 
     
 MAPI_MODIFY 
   
-> Fordert Lese-/Schreibberechtigungen an. Standardmäßig werden Objekte als schreibgeschützt geöffnet, und Anrufer sollten nicht unter der Annahme arbeiten, dass Lese-/Schreibberechtigungen erteilt wurden. 
+> Fordert Lese-/Schreibberechtigung an. Standardmäßig werden Objekte schreibgeschützt geöffnet, und Aufrufer sollten nicht mit der Annahme arbeiten, dass Lese-/Schreibberechtigung erteilt wurde. 
     
  _lppProfileObj_
   
@@ -65,25 +65,25 @@ S_OK
     
 MAPI_E_NO_ACCESS 
   
-> Es wurde versucht, einen schreibgeschützten Profilabschnitt zu ändern oder auf ein Objekt zu zugreifen, für das der Aufrufer nicht über ausreichende Berechtigungen verfügt.
+> Es wurde versucht, einen schreibgeschützten Profilabschnitt zu ändern oder auf ein Objekt zuzugreifen, für das der Aufrufer nicht über ausreichende Berechtigungen verfügt.
     
 MAPI_E_NOT_FOUND 
   
-> Der in  _lpEntryID_ übergebenen Eintrags-ID ist kein Profilabschnitt zugeordnet.
+> Dem in  _lpEntryID übergebenen_ Eintragsbezeichner ist kein Profilabschnitt zugeordnet.
     
 MAPI_E_UNKNOWN_FLAGS 
   
-> Reservierte oder nicht unterstützte Flags wurden verwendet, und daher wurde der Vorgang nicht abgeschlossen.
+> Reservierte oder nicht unterstützte Flags wurden verwendet, weshalb der Vorgang nicht abgeschlossen wurde.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die **IMAPISupport::OpenProfileSection-Methode** wird für alle Supportobjekte implementiert. Dienstanbieter und Nachrichtendienste rufen **OpenProfileSection auf,** um einen Profilabschnitt zu öffnen und einen Zeiger auf die **IProfSect-Schnittstellenimplementierung** abzurufen. 
+Die **IMAPISupport::OpenProfileSection-Methode** wird für alle Unterstützungsobjekte implementiert. Dienstanbieter und Nachrichtendienste rufen **OpenProfileSection** auf, um einen Profilabschnitt zu öffnen und einen Zeiger auf die **IProfSect-Schnittstellenimplementierung** abzurufen. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
- **OpenProfileSection** öffnet Profilabschnitte als schreibgeschützt, es sei denn, Sie legen das MAPI_MODIFY im  _ulFlags-Parameter_ ein, und Ihre Berechtigung ist ausreichend. Das Festlegen dieses Kennzeichens garantiert keine Lese-/Schreibberechtigung. Die Ihnen erteilten Berechtigungen hängen von Ihrer Zugriffsebene und dem Objekt ab. 
+ **OpenProfileSection** öffnet Profilabschnitte schreibgeschützt, es sei denn, Sie legen das flag MAPI_MODIFY im  _UlFlags-Parameter_ fest, und Ihre Berechtigung ist ausreichend. Das Festlegen dieses Flags garantiert nicht die Lese-/Schreibberechtigung. Welche Berechtigungen Ihnen erteilt werden, hängt von Ihrer Zugriffsebene und dem Objekt ab. 
   
-Wenn **OpenProfileSection** versucht, einen nicht vorhandenen Profilabschnitt als schreibgeschützt zu öffnen, wird MAPI_E_NOT_FOUND. Wenn **OpenProfileSection** versucht, einen nicht vorhandenen Profilabschnitt als Lese-/Schreibzugriff zu öffnen, wird der Profilabschnitt erstellt und der **IProfSect-Zeiger** zurückgegeben. 
+Wenn **OpenProfileSection** versucht, einen nicht vorhandenen Profilabschnitt schreibgeschützt zu öffnen, wird MAPI_E_NOT_FOUND zurückgegeben. Wenn **OpenProfileSection** versucht, einen nicht vorhandenen Profilabschnitt mit Lese-/Schreibzugriff zu öffnen, wird der Profilabschnitt erstellt und der **IProfSect-Zeiger** zurückgegeben. 
   
 ## <a name="see-also"></a>Siehe auch
 

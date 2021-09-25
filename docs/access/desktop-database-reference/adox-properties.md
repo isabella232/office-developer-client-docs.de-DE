@@ -1,18 +1,18 @@
 ---
-title: ADOX-Eigenschaften (Access Desktop Database Reference)
+title: ADOX-Eigenschaften (Access-Desktopdatenbankreferenz)
 TOCTitle: ADOX properties
 ms:assetid: 7559af18-83a4-dc7f-015f-6a7c55c520d8
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249480(v=office.15)
 ms:contentKeyID: 48545675
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 0056764d80b5cfa19bf8e229d33c2c84c8b08c28
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c16858e6ec8e86cc71fcbf8b66a1b3be630e5b45
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32285251"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607486"
 ---
 # <a name="adox-properties"></a>ADOX-Eigenschaften
 
@@ -33,7 +33,7 @@ ms.locfileid: "32285251"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="activeconnection-property-adox.md">ActiveConnection</a></p></td>
+<td><p><a href="activeconnection-property-adox.md">Activeconnection</a></p></td>
 <td><p>Gibt das ADO-<strong>Connection</strong>-Objekt an, zu dem der Katalog gehört.</p></td>
 </tr>
 <tr class="even">
@@ -65,7 +65,7 @@ ms.locfileid: "32285251"
 <td><p>Gibt die festgelegte maximale Größe der Spalte an.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="deleterule-property-adox.md">DeleteRule</a></p></td>
+<td><p><a href="deleterule-property-adox.md">Deleterule</a></p></td>
 <td><p>Gibt die ausgeführte Aktion an, wenn ein Primärschlüssel gelöscht wird.</p></td>
 </tr>
 <tr class="even">
@@ -73,7 +73,7 @@ ms.locfileid: "32285251"
 <td><p>Gibt an, ob Datensätze mit nullwertigen Indexfeldern über Indexeinträge verfügen.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="item-property-ado.md">Element</a></p></td>
+<td><p><a href="item-property-ado.md">Aspekt</a></p></td>
 <td><p>Gibt ein bestimmtes Element einer Auflistung durch Namen oder Ordnungszahl an.</p></td>
 </tr>
 <tr class="even">
@@ -89,11 +89,11 @@ ms.locfileid: "32285251"
 <td><p>Gibt den übergeordneten Katalog einer Tabelle oder einer Spalte an, um Zugriff auf anbieterspezifische Eigenschaften bereitzustellen.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="precision-property-adox.md">Genauigkeit</a></p></td>
+<td><p><a href="precision-property-adox.md">Präzision</a></p></td>
 <td><p>Gibt die maximale Genauigkeit von Datenwerten in der Spalte an.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="primarykey-property-adox.md">PrimaryKey</a></p></td>
+<td><p><a href="primarykey-property-adox.md">Primarykey</a></p></td>
 <td><p>Gibt an, ob der Index der Primärschlüssel für die Tabelle ist.</p></td>
 </tr>
 <tr class="odd">
@@ -101,7 +101,7 @@ ms.locfileid: "32285251"
 <td><p>Gibt den Namen der verknüpften Spalte in der verknüpften Tabelle (nur Schlüsselspalten) an.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="relatedtable-property-adox.md">RelatedTable</a></p></td>
+<td><p><a href="relatedtable-property-adox.md">Relatedtable</a></p></td>
 <td><p>Gibt den Namen der verknüpften Tabelle an.</p></td>
 </tr>
 <tr class="odd">
@@ -125,7 +125,7 @@ ms.locfileid: "32285251"
 <td><p>Gibt an, ob die Indexschlüssel eindeutig sein müssen.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="updaterule-property-adox.md">UpdateRule</a></p></td>
+<td><p><a href="updaterule-property-adox.md">Updaterule</a></p></td>
 <td><p>Gibt die Aktion an, die bei der Aktualisierung eines Primärschlüssels ausgeführt wurde.</p></td>
 </tr>
 </tbody>

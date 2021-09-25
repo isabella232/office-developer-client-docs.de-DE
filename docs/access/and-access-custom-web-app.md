@@ -1,19 +1,19 @@
 ---
-title: AND (Benutzerdefinierte Web-App access)
+title: AND (Benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 44c11a0b-abca-4ea8-8770-f5c1375d8d76
 description: Kombiniert zwei boolesche Ausdrücke und gibt TRUE zurück, wenn beide Ausdrücke TRUE sind.
-ms.openlocfilehash: 247b15b9f8039d06d08c0ce9b2fcb443e3212350
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 6ee952eb924a2a673880c56b1605d76606d65ef3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33426282"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565842"
 ---
-# <a name="and-access-custom-web-app"></a>AND (Benutzerdefinierte Web-App access)
+# <a name="and-access-custom-web-app"></a>AND (Benutzerdefinierte Access-Web-App)
 
 Kombiniert zwei boolesche Ausdrücke und gibt TRUE zurück, wenn beide Ausdrücke TRUE sind. 
   
@@ -28,7 +28,7 @@ Kombiniert zwei boolesche Ausdrücke und gibt TRUE zurück, wenn beide Ausdrück
 
 Gibt TRUE zurück, wenn beide Ausdrücke TRUE sind.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn in einer Anweisung mehrere logische Operatoren verwendet werden, werden die AND-Operatoren zuerst ausgewertet. Sie können die Reihenfolge der Auswertung mithilfe von Klammern ändern.
   

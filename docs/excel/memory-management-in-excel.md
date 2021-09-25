@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: overview
 keywords:
 - Arbeitsspeicher xloper12 [excel 2007], Verwalten von Speicher in Excel, Excel-Stapel, Zeichenfolgen [Excel 2007], Speicherverwaltung, Speicherverwaltung in Excel, XLOPER-Speicher [Excel 2007], Speicher [Excel 2007], Richtlinien für die Verwaltung
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3bf5195b-6235-43cf-8795-0c7b0a63a095
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: f129dac2971f01c8ada15f0028958132b1945746
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 347835570e956672995d73ff69447d2cec0801cf
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33419541"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557652"
 ---
 # <a name="memory-management-in-excel"></a>Speicherverwaltung in Excel
 

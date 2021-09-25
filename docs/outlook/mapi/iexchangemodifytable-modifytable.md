@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IExchangeModifyTable.ModifyTable
 api_type:
 - COM
 ms.assetid: b9a745cc-260d-4a1c-896e-6a038ab3cfb9
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 46bb9b2cc1a4d54807d6929b4e1439b58fb3a531
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 460ec105fea740a81fdb8102b12d19f7bb875b8c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33418176"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613905"
 ---
 # <a name="iexchangemodifytablemodifytable"></a>IExchangeModifyTable::ModifyTable
 
@@ -43,7 +43,7 @@ HRESULT ModifyTable(
     
 0 (Null)
   
-> Verwenden Sie den Wert des **ulRowFlags-Mitglieds** der [ROWENTRY-Struktur.](rowentry.md) 
+> Verwenden Sie den Wert des **ulRowFlags-Elements** der [ROWENTRY-Struktur.](rowentry.md) 
     
 ACLTABLE_FREEBUSY
   
@@ -51,11 +51,11 @@ ACLTABLE_FREEBUSY
     
 frightsFreeBusyDetailed
   
-> Wenn ACLTABLE_FREEBUSY übergeben wird, wird eine detaillierte Anzeige der neuen Frei/Gebucht-Rechte angezeigt.
+> Wenn ACLTABLE_FREEBUSY übergeben wird, wird eine detaillierte Anzeige der neuen Frei/Gebucht-Rechte bereitgestellt.
     
 frightsFreeBusySimple
   
-> Wenn ACLTABLE_FREEBUSY übergeben wird, wird eine einfache Anzeige neuer Frei/Gebucht-Rechte angezeigt.
+> Wenn ACLTABLE_FREEBUSY übergeben wird, wird eine einfache Anzeige der neuen Frei/Gebucht-Rechte bereitgestellt.
     
 ROWLIST_REPLACE
   
@@ -63,7 +63,7 @@ ROWLIST_REPLACE
     
  _lpMods_
   
-> [in] Zeigt auf eine [ROWLIST-Struktur,](rowlist.md) die die Eigenschaften für das Tabellenobjekt enthält. 
+> [in] Verweist auf eine [ROWLIST-Struktur,](rowlist.md) die die Eigenschaften für das Tabellenobjekt enthält. 
     
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -71,7 +71,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|RulesDlg.cpp  <br/> |CRulesDlg::OnModifySelectedItem  <br/> |MFCMAPI verwendet die **IExchangeModifyTable::ModifyTable-Methode,** um eine geänderte Regel zurück in das Regelverzeichnis zu schreiben.  <br/> |
+|RulesDlg.cpp  <br/> |CRulesDlg::OnModifySelectedItem  <br/> |MFCMAPI verwendet die **IExchangeModifyTable::ModifyTable-Methode,** um eine geänderte Regel zurück in die Regeltabelle zu schreiben.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

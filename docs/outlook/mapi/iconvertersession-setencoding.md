@@ -5,25 +5,25 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IConverterSession.SetCharSet
 api_type:
 - COM
 ms.assetid: a9624d3f-a636-0267-5cbd-de0db42f9c22
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 5a81e04d112e0adf201dcacf03673daac77a04ab
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 7d1862f7aeae4c4bf2d1f6d1fb249a4ce90e18e2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341300"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613933"
 ---
 # <a name="iconvertersessionsetencoding"></a>IConverterSession::SetEncoding
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Initialisiert die während der Konvertierung zu verwendende Codierung.
+Initialisiert die Codierung, die während der Konvertierung verwendet werden soll.
   
 ```cpp
 HRESULT IConverterSession:: SetEncoding ( 
@@ -49,11 +49,11 @@ E_INVALIDARG
   
 > Der übergebene Codierungstyp war ungültig.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Rufen **Sie SetEncoding auf,** bevor [Sie IConverterSession::MAPIToMIMEStm](iconvertersession-mapitomimestm.md) zum Ausführen der Konvertierung verwenden. 
+Rufen Sie **"SetEncoding"** auf, bevor [Sie IConverterSession::MAPIToMIMEStm](iconvertersession-mapitomimestm.md) zum Ausführen der Konvertierung verwenden. 
   
-Verwenden **Sie SetEncoding,** um die Codierung nur für den äußersten Nachrichtentext eines E-Mail-Elements festlegen. Microsoft Outlook 2010 und Microsoft Outlook 2013 die Codierung für einzelne Anlagen auswählen. 
+Verwenden Sie **SetEncoding,** um die Codierung nur für den äußersten Nachrichtentext eines E-Mail-Elements festzulegen. Microsoft Outlook 2010 und Microsoft Outlook 2013 die Codierung für einzelne Anlagen auswählen. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 

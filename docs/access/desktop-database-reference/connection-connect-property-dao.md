@@ -1,20 +1,20 @@
 ---
-title: Connection. Connect-Eigenschaft (DAO)
+title: Verbindung. Verbinden-Eigenschaft (DAO)
 TOCTitle: Connect Property
 ms:assetid: 58b514a2-91cd-7918-cba5-15d71c2457a6
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194335(v=office.15)
 ms:contentKeyID: 48545001
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: e44ce5b4acf58f3f9d9e887d0136baed64c8e227
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 39576c39546e3f02652a0d997044fc2afac80010
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295926"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565765"
 ---
-# <a name="connectionconnect-property-dao"></a>Connection. Connect-Eigenschaft (DAO)
+# <a name="connectionconnect-property-dao"></a>Verbindung. Verbinden-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -23,7 +23,7 @@ Legt einen Wert fest, der Informationen zur Quelle einer geöffneten Verbindung 
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Verbinden
+*expression* .Connect
 
 *Ausdruck* Eine Variable, die ein **Connection** -Objekt darstellt.
 
@@ -33,9 +33,9 @@ Die Einstellung der **Connect**-Eigenschaft ist ein **String**-Wert, der aus ein
 
 Wenn Sie eine SQL Pass-Through-Abfrage zu einer Tabelle ausführen möchten, die mit der Microsoft Access-Datenbankdatei verknüpft ist, müssen Sie zuerst die **Connect**-Eigenschaft der Datenbank, zu der die verknüpfte Tabelle gehört, auf eine gültige ODBC-Verbindungszeichenfolge festlegen.
 
-Bei einem **TableDef**-Objekt, das eine verknüpfte Tabelle darstellt, besteht die Einstellung der **Connect**-Eigenschaft aus einem oder zwei Teilen (dem Bezeichner eines Datenbanktyps und dem Pfad zur Datenbank), die jeweils mit einem Semikolon enden.
+Bei einem **TableDef** -Objekt, das eine verknüpfte Tabelle darstellt, besteht die **Connect** -Eigenschaft aus einem oder zwei Teilen (ein Datenbanktypbezeichner und ein Pfad für die Datenbank). Beide Teile enden mit einem Semikolon.
 
-Der Pfad, wie in der folgenden Tabelle dargestellt, ist der vollständige Pfad für das Verzeichnis, das die Datenbankdateien enthält, und es muss der Bezeichner DATABASE = vorangestellt werden. In einigen Fällen (wie in den Datenbanken von Microsoft Excel und Microsoft Access-Datenbankmodul) sollten Sie einen bestimmten Dateinamen in das Argument Datenbankpfad aufnehmen.
+Der Pfad ist der vollständige Pfadname für das Verzeichnis, das die Datenbankdateien enthält, wie in der folgenden Tabelle dargestellt. Der Pfadname muss mit dem Bezeichner DATABASE= beginnen. In einigen Fällen (wie bei Microsoft Excel- und Microsoft Access-Datenbanken) muss ein spezifischer Dateiname in das Argument des Datenbankpfads einbezogen werden.
 
 In der folgenden Tabelle sind die möglichen Datenbanktypen und ihre entsprechenden Datenbankbezeichner und Pfadnamen für die Einstellungen der **Connect**-Eigenschaft aufgelistet.
 
@@ -91,37 +91,37 @@ In der folgenden Tabelle sind die möglichen Datenbanktypen und ihre entsprechen
 <tr class="even">
 <td><p>Microsoft Excel 3.0</p></td>
 <td><p>Excel 3.0;</p></td>
-<td><p>Laufwerk: \ path\filename.xls</p></td>
+<td><p>Laufwerk:\Pfad\Dateiname.xls</p></td>
 </tr>
 <tr class="odd">
 <td><p>Microsoft Excel 4.0</p></td>
 <td><p>Excel 4.0;</p></td>
-<td><p>Laufwerk: \ path\filename.xls</p></td>
+<td><p>Laufwerk:\Pfad\Dateiname.xls</p></td>
 </tr>
 <tr class="even">
 <td><p>Microsoft Excel 5.0 oder Microsoft Excel 95</p></td>
 <td><p>Excel 5.0;</p></td>
-<td><p>Laufwerk: \ path\filename.xls</p></td>
+<td><p>Laufwerk:\Pfad\Dateiname.xls</p></td>
 </tr>
 <tr class="odd">
 <td><p>Microsoft Excel 97</p></td>
 <td><p>Excel 8.0;</p></td>
-<td><p>Laufwerk: \ path\filename.xls</p></td>
+<td><p>Laufwerk:\Pfad\Dateiname.xls</p></td>
 </tr>
 <tr class="even">
 <td><p>Lotus 1-2-3 WKS und WK1</p></td>
 <td><p>Lotus WK1;</p></td>
-<td><p>Laufwerk: \ path\filename.WK1</p></td>
+<td><p>Laufwerk:\Pfad\Dateiname.wk1</p></td>
 </tr>
 <tr class="odd">
 <td><p>Lotus 1-2-3 WK3</p></td>
 <td><p>Lotus WK3;</p></td>
-<td><p>Laufwerk: \ path\filename.WK3</p></td>
+<td><p>Laufwerk:\Pfad\Dateiname.wk3</p></td>
 </tr>
 <tr class="even">
 <td><p>Lotus 1-2-3 WK4</p></td>
 <td><p>Lotus WK4;</p></td>
-<td><p>Laufwerk: \ path\filename.WK4</p></td>
+<td><p>Laufwerk:\Pfad\Dateiname.wk4</p></td>
 </tr>
 <tr class="odd">
 <td><p>HTML-Import</p></td>
@@ -145,7 +145,7 @@ In der folgenden Tabelle sind die möglichen Datenbanktypen und ihre entsprechen
 </tr>
 <tr class="odd">
 <td><p>Microsoft Exchange</p></td>
-<td><p>Exchange 4,0; MAPILEVEL = folderPath; [BASISTYP = {0 | 1}]; [PROFILE = Profil;] [PWD = Kennwort;] [DATABASE = Datenbank;]</p></td>
+<td><p>Exchange 4.0; MAPILEVEL=Ordnerpfad; [TABLETYPE={ 0 | 1 }];[PROFILE=Profil;] [PWD=Kennwort;] [DATABASE=Datenbank;]</p></td>
 <td><p>Laufwerk:\Pfad\Dateiname</p></td>
 </tr>
 </tbody>
@@ -160,9 +160,9 @@ Für Daten in Microsoft Exchange muss für den erforderlichen MAPILEVEL-Schlüss
 
 Für Basistabellen in einer Micorosoft Access-Datenbank ist der Wert der **Connect**-Eigenschaft eine Null-Zeichenfolge ("").
 
-Sie können die **Connect** -Eigenschaft für ein **Database** -Objekt festlegen, indem Sie der OpenDatabase-Methode ein Source-Argument bereitstellen. **** Überprüfen Sie die Einstellung, um den Typ, den Pfad, die Benutzer-ID, das Kennwort oder die ODBC-Datenquelle der Datenbank zu ermitteln.
+Sie können die **Verbinden-Eigenschaft** für ein **Database-Objekt** festlegen, indem Sie ein Quellargument für die **OpenDatabase-Methode** angeben. Überprüfen Sie die Einstellung, um den Typ, den Pfad, die Benutzer-ID, das Kennwort oder die ODBC-Datenquelle der Datenbank zu ermitteln.
 
-On a **QueryDef** object in a Microsoft Access workspace, you can use the **Connect** property with the ReturnsRecords property to create an ODBC SQL pass-through query. Der DatabaseType der Verbindungszeichenfolge ist "ODBC;", und der Rest der Zeichenfolge enthält spezifische Informationen für den ODBC-Treiber, der für den Zugriff auf die Remotedaten verwendet wird. For more information, see the documentation for the specific driver.
+On a **QueryDef** object in a Microsoft Access workspace, you can use the **Connect** property with the ReturnsRecords property to create an ODBC SQL pass-through query. Der Datenbanktyp der Verbindungszeichenfolge lautet "ODBC;", und der Rest der Zeichenfolge enthält Informationen speziell für den ODBC-Treiber, der für den Zugriff auf die Remotedaten verwendet wird. For more information, see the documentation for the specific driver.
 
 
 > [!NOTE]

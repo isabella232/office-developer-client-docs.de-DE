@@ -10,13 +10,13 @@ f1_keywords:
 - ado210.chm1231123
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 66797accb24cead7d7ba5732f0a9c58ee31049e5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c2fd60d7e14b840a11d12069dbd72879167c3bae
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296136"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565807"
 ---
 # <a name="commandtext-property-ado"></a>CommandText-Eigenschaft (ADO)
 
@@ -25,11 +25,11 @@ ms.locfileid: "32296136"
 
 Gibt den Text eines Befehls an, der an einen Anbieter ausgegeben werden soll.
 
-## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
+## <a name="settings-and-return-values"></a>Einstellungen- und Rückgabewerte
 
 Mit dieser Eigenschaft wird ein **String** -Wert festgelegt oder zurückgegeben, der einen Anbieterbefehl enthält, z. B. eine SQL-Anweisung, einen Tabellennamen, eine relative URL oder den Aufruf einer gespeicherten Prozedur. Die Standardeinstellung ist "" (leere Zeichenfolge).
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Verwenden Sie die **CommandText**-Eigenschaft, um den Text eines durch ein [Command](command-object-ado.md)-Objekt identifizierten Befehls festzulegen oder zurückzugeben. Gewöhnlich handelt es sich dabei um eine SQL-Anweisung. Möglich ist jedoch auch jede andere vom Anbieter erkannte Befehlsanweisung, wie z. B. ein Aufruf einer gespeicherten Prozedur. Eine SQL-Anweisung muss genau dem Dialekt oder der Version entsprechen, die vom Abfrageprozessor des Anbieters unterstützt werden.
 
@@ -41,6 +41,6 @@ Mit der **CommandText** -Eigenschaft können Sie eine relative URL festlegen ode
 
 
 > [!NOTE]
-> Bei URLs, die das HTTP-Schema verwenden, wird automatisch der [Microsoft OLE DB-Anbieter für Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) aufgerufen. Weitere Informationen finden Sie unter [absolute und relative URLs](absolute-and-relative-urls.md).
+> Bei URLs, die das HTTP-Schema verwenden, wird automatisch der [Microsoft OLE DB-Anbieter für Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) aufgerufen. Weitere Informationen finden Sie unter [Absolute und relative URLs.](absolute-and-relative-urls.md)
 
 

@@ -6,31 +6,31 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm575
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9d58e23e-b411-c5c1-b785-5014488d42c8
 description: Legt den horizontalen Abstand zwischen sämtlichen Verbindern und Shapes auf dem Zeichenblatt fest.
-ms.openlocfilehash: c5a27edb25ce7b1449ad6e2988027b474bd79fdb
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: a634e8d3b67566e63286a040f5bb112b63d7ad6e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439709"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565996"
 ---
 # <a name="linetonodex-cell-page-layout-section"></a>Zelle "LineToNodeX" (Abschnitt "Page Layout")
 
 Legt den horizontalen Abstand zwischen sämtlichen Verbindern und Shapes auf dem Zeichenblatt fest.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Sie können den Wert dieser Zelle auch im Dialogfeld **Abstände für Layout und Routing** festlegen. (Klicken Sie dazu auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten**, wählen Sie **Layout und Routing** aus, und klicken Sie dann auf **Abstand**.)
   
-Um einen Verweis auf die Zelle LineToNodeY anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Um einen Verweis auf die Zelle "LineToNodeY" anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |LineToNodeX  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die LineToNodeX-Zelle nach Index aus einem Programm zu erhalten: 
+Verwenden Sie zum Abrufen eines Verweises auf die Zelle "LineToNodeX" anhand des Indexes eines Programms die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|

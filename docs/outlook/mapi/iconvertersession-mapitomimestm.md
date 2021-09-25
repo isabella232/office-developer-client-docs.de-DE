@@ -4,19 +4,19 @@ ms.date: 9/20/2017
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IConverterSession.MAPIToMIMEStm
 api_type:
 - COM
 ms.assetid: 8660c701-f7f4-8d92-7984-5dae7f677783
-description: 'Letzte Änderung: 20. September 2017'
-ms.openlocfilehash: 55c547c4dae1acc3e9874edc7778f53a5d34f957
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: 'Last modified: September 20, 2017'
+ms.openlocfilehash: 563f83d6ebb76659afa99e446378b8d68a8e80b9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326944"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613947"
 ---
 # <a name="iconvertersessionmapitomimestm"></a>IConverterSession::MAPIToMIMEStm
  
@@ -41,7 +41,7 @@ HRESULT IConverterSession::MAPIToMIMEStm(
     
  _pstm_
   
-> [out] [IStream-Schnittstelle](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) zum Ausgabe des Datenstroms. 
+> [out] [IStream-Schnittstelle](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) zum Ausgeben des Datenstroms. 
     
  _ulFlags_
   
@@ -53,7 +53,7 @@ CCSF_8BITHEADERS
     
 CCSF_EMBEDDED_MESSAGE
   
-> Gesendete/nicht gesendete Informationen werden in X-Unsent beibehalten.
+> Gesendete/nicht gesendete Informationen werden in X-Unsent gespeichert.
     
 CCSF_GLOBAL_MESSAGE
   
@@ -65,11 +65,11 @@ CCSF_INCLUDE_BCC
     
 CCSF_NO_MSGID
   
-> Schließen Sie kein Message-Id in ausgehende Nachrichten ein.
+> Schließen Sie Message-Id Feld nicht in ausgehende Nachrichten ein.
     
 CCSF_NOHEADERS
   
-> Der Konverter sollte die Kopfzeilen der äußeren Nachricht ignorieren.
+> Der Konverter sollte die Kopfzeilen der externen Nachricht ignorieren.
     
 CCSF_PLAIN_TEXT_ONLY
   
@@ -77,11 +77,11 @@ CCSF_PLAIN_TEXT_ONLY
     
 CCSF_SMTP
   
-> Dem Konverter wird eine SMTP-Nachricht übergeben. Dieses Flag muss immer festgelegt werden.
+> Dem Konverter wird eine SMTP-Nachricht übergeben. Dieses Kennzeichen muss immer festgelegt werden.
     
 CCSF_USE_RTF
   
-> Der Konverter sollte in der MIME-Nachricht vom HTML-Format in das RTF-Format konvertieren.
+> Der Konverter sollte in der MIME-Nachricht vom HTML- in das RTF-Format konvertiert werden.
     
 CCSF_USE_TNEF
   
@@ -91,11 +91,11 @@ CCSF_USE_TNEF
 
 E_INVALIDARG
   
-> Ungültige Flags wurden übergeben,  *oder pmsg*  oder  *pstm*  ist NULL. 
+> Ungültige Flags wurden übergeben, oder  *pmsg*  oder  *pstm*  ist NULL. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wird nur für standardmäßige Outlook-Nachrichtentypen unterstützt.
+Wird nur für Standardnachrichtentypen Outlook unterstützt.
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 

@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249175(v=office.15)
 ms:contentKeyID: 48544387
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 1a53eb107bab0d31606dc161b9f9c910894c5bc6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 2b223e10e6ed8450a881225b76b01761436b12ba
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32281626"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607535"
 ---
 # <a name="adorecordconstruction-interface-ado"></a>ADORecordConstruction-Schnittstelle (ADO)
 
@@ -38,9 +38,9 @@ Diese Schnittstelle unterstützt die folgenden Eigenschaften:
 Legt den Container eines <strong>Row</strong>-Objekts von OLE DB auf dieses <strong>Record</strong>-Objekt von ADO fest.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="row-property-ado.md">Zeile</a></p></td>
+<td><p><a href="row-property-ado.md">Row</a></p></td>
 <td><p>Lese-/Schreibzugriff.<br />
-Ruft ein OLE DB- <strong>Row</strong> -Objekt aus diesem ADO- <strong>Record</strong> -Objekt ab oder legt dieses fest.</p></td>
+Ruft ein OLE DB <strong>Row</strong> -Objekt aus/für dieses ADO <strong>Record</strong> -Objekt ab/legt dieses fest.</p></td>
 </tr>
 </tbody>
 </table>
@@ -54,9 +54,9 @@ Keine.
 
 Keine.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Bei einem OLE DB- **Row** -Objekt (Bug) ist die Konstruktion eines ADO- **Record** -Objekts (), die Erstellung eines ADO- **Record** -Objekts (adoR), auf die folgenden drei grundlegenden Vorgänge festgesetzt:
+Bei einem OLE DB **Row-Objekt** (pRow) entspricht die Erstellung eines ADO **Record-Objekts** (), der Konstruktion eines ADO **Record-Objekts** (adoR), den folgenden drei grundlegenden Vorgängen:
 
 1.  Erstellen eines **Record** -Objekts von ADO:
     
@@ -73,7 +73,7 @@ Bei einem OLE DB- **Row** -Objekt (Bug) ist die Konstruktion eines ADO- **Record
                             (void**)&adoRConstruct);
     ```
 
-3.  Rufen Sie die **IADORecordConstruction::p\_UT Row** Property-Methode auf, um das OLE DB- **Zeilen** Objekt für das ADO- **Record** -Objekt festzulegen:
+3.  Rufen Sie die **IADORecordConstruction::p ut \_ Row-Eigenschaftsmethode** auf, um das OLE DB **Row-Objekt** für das ADO **Record-Objekt** festzulegen:
     
     ```vb
         IUnknown *pUnk=NULL;

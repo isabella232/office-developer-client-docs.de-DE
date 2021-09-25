@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidContactLinkSearchKey
 api_type:
 - COM
 ms.assetid: 82d21d38-a6c6-4e12-85b1-8158b2f5cce7
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ea815631f63b5585a3f2705cfbd2639b8c655e6e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: c455687a44b0f35a237638eb0c951042a1346932
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32319775"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583884"
 ---
 # <a name="pidlidcontactlinksearchkey-canonical-property"></a>PidLidContactLinkSearchKey (kanonische Eigenschaft)
 
@@ -29,16 +29,16 @@ Enthält die Liste der **SearchKeys** für den Kontakt, mit dem dieses Nachricht
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidContactLinkSearchKey  <br/> |
 |Eigenschaftensatz:  <br/> |PSETID_Common  <br/> |
-|Lange ID (LID):  <br/> |0x00008584  <br/> |
+|Long ID (LID):  <br/> |0x00008584  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-|**Länge in Bytes**|**Beschreibung**|**Hinweise**|
+|**Länge in Byte**|**Beschreibung**|**Hinweise**|
 |:-----|:-----|:-----|
-|2  <br/> |ContactEntryCount  <br/> |Keine  <br/> |
-|Variable  <br/> |SearchKey-Daten  <br/> |Wiederholt ContactEntryCount-Zeiten  <br/> |
+|2  <br/> |ContactEntryCount  <br/> |Keines  <br/> |
+|Variable  <br/> |SearchKey-Daten  <br/> |Repeats ContactEntryCount times  <br/> |
    
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -46,7 +46,7 @@ Enthält die Liste der **SearchKeys** für den Kontakt, mit dem dieses Nachricht
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Stellt Eigenschaftensatzdefinitionen und Verweise auf verwandte Exchange Server zur Verfügung.
+> Stellt Eigenschaftssatzdefinitionen und Verweise auf verwandte Exchange Server Protokollspezifikationen bereit.
     
 [[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
@@ -56,12 +56,12 @@ Enthält die Liste der **SearchKeys** für den Kontakt, mit dem dieses Nachricht
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
 - [MAPI-Eigenschaften](mapi-properties.md) 
-- [KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
-- [Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
-- [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+- [KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+- [Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+- [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

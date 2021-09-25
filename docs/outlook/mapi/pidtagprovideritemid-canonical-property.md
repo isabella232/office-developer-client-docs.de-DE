@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagProviderItemId
 api_type:
 - COM
 ms.assetid: fadbf1af-32c2-43ea-8475-15b31b2a9e68
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 48653b86d625da963b655dbd1acc01a46f4687dd
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: d69ff57fd02a6f25e97c24360519f3c215b731e1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33412121"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59574860"
 ---
 # <a name="pidtagprovideritemid-canonical-property"></a>PidTagProviderItemId (kanonische Eigenschaft)
 
@@ -34,9 +34,9 @@ Gibt einen Bezeichner für einen Ordner oder ein Element in einem Speicher an.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MapiNonTransmittable  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Store können einen Wert für diese Eigenschaft für einen Ordner oder ein Element angeben, der Wert sollte jedoch zwischen Sitzungen gleich bleiben. Store verwenden diese Eigenschaft, um suchergebnisse zu identifizieren, die von einer Suchmaschine zurückgegeben werden.
+Store Anbieter können einen Wert für diese Eigenschaft für einen Ordner oder ein Element angeben, sollten den Wert jedoch zwischen Sitzungen beibehalten. Store Anbieter verwenden diese Eigenschaft, um Suchergebnisse zu identifizieren, die von einer Suchmaschine zurückgegeben werden.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,11 +44,11 @@ Store können einen Wert für diese Eigenschaft für einen Ordner oder ein Eleme
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

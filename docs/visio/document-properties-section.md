@@ -6,22 +6,22 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm2035
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1e6f6448-b52a-c1f3-613f-10ea34d5286e
 description: Enthält Zellen für ein Dokument, über die die Vorschauqualität, der Geltungsbereich und das Ausgabeformat gesteuert werden.
-ms.openlocfilehash: dd82d8ffbe0f6e5e70a2c3dd745673dfa76f3909
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c9e29c1312c7ee58ce1cd64a088f12974ba08e07
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33414830"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59574377"
 ---
 # <a name="document-properties-section"></a>Abschnitt "Document Properties"
 
 Enthält Zellen für ein Dokument, über die die Vorschauqualität, der Geltungsbereich und das Ausgabeformat gesteuert werden.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
- Sie können diese Werte auch  mithilfe des Dialogfelds Eigenschaften festlegen (klicken Sie auf die Registerkarte Datei, klicken Sie auf **Info,** klicken Sie auf **Eigenschaften,** und klicken Sie dann auf **Erweiterte Eigenschaften**). 
+ Sie können diese Werte auch mithilfe des Dialogfelds **"Eigenschaften"** festlegen (klicken Sie auf die Registerkarte **"Datei",** **"Info",** **"Eigenschaften"** und dann auf **"Erweiterte Eigenschaften").**
   
 

@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm168493
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 32945f0822682a9432d75ed1ac59117dde3cc0e9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d24cf33bd9b5ced31ec7a71ce67efc70b26b5e02
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306811"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557792"
 ---
 # <a name="rundatamacro-macro-action"></a>RunDataMacro-Makroaktion
 
@@ -48,19 +48,19 @@ Die **AusführenDatenmakro**-Aktion kann mit dem folgenden Argument verwendet we
 </table>
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Sie können die **ausführendatenmakro** -Aktion in Makros, benannten datenmakros und den folgenden Makro Ereignissen verwenden: **[nach DELETE-Makro](after-delete-macro-event.md)** Ereignis, **[nach INSERT-Makro](after-insert-macro-event.md)** Ereignis und makroereignis **[nach Aktualisierung](after-update-macro-event.md)**.
+Sie können die **Aktion "RunDataMacro"** in Makros, benannten Datenmakros und den folgenden Makroereignissen verwenden: **[Makroereignis "Nach Löschvorgang",](after-delete-macro-event.md)** **[Makroereignis "Nach Einfügen"](after-insert-macro-event.md)** und **[Makroereignis "Nach Aktualisierung".](after-update-macro-event.md)**
 
-Der Name des datenmakros muss die Tabelle, an die er angefügt ist, aufweisen (beispielsweise **comments. AddComment**, nicht nur **AddComment**).
+Der Name des Datenmakros muss die Tabelle enthalten, der es angefügt ist (z. **B. Comments.AddComment**, nicht nur **AddComment**).
 
-Wenn Sie das auszuführende Datenmakro im Makro-Designer auswählen, wird von Access ermittelt, ob das Datenmakro Parameter erfordert. Wenn das datenmakro Parameter erfordert, werden Textfelder angezeigt, in denen Sie die Argumente eingeben können.
+Wenn Sie das auszuführende Datenmakro im Makro-Designer auswählen, wird von Access ermittelt, ob das Datenmakro Parameter erfordert. Wenn für das Datenmakro Parameter erforderlich sind, werden Textfelder angezeigt, in die Sie die Argumente eingeben können.
 
 Wenn Sie ein Makro ausführen, das die **AusführenDatenmakro** -Aktion enthält, und dieses die **AusführenDatenmakro** -Aktion erreicht, wird das aufgerufene Datenmakro in Access ausgeführt. Sobald das aufgerufene Datenmakro beendet wurde, kehrt Access zum ursprünglichen Makro zurück und führt die nächste Aktion aus.
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt, wie Sie einen Parameter an ein benanntes datenmakro übergeben. Das dmGetCurrentServiceRequest-datenmakro der tblServiceRequests-Tabelle wird mithilfe der Ausführendatenmakro-Aktion aufgerufen. Wenn die dmGetCurrentServiceRequest abgeschlossen ist, wird die CurrentServiceRequest-Variable zurückgegeben Formular das datenmakro in das Textfeld txtCurrentSR geschrieben.
+Das folgende Beispiel zeigt, wie Sie einen Parameter an ein benanntes Datenmakro übergeben. Das dmGetCurrentServiceRequest-Datenmakro der tblServiceRequests-Tabelle wird mithilfe der RunDataMacro-Aktion aufgerufen. Wenn dmGetCurrentServiceRequest abgeschlossen ist, wird die CurrentServiceRequest-Variable zurückgegeben, aus der das Datenmakro in das Textfeld txtCurrentSR geschrieben wird.
 
 **Der Beispielcode stammt von:**[Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
 

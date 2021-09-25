@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagDelegatedByRule
 api_type:
 - HeaderDef
 ms.assetid: 284b5001-5de6-4c4e-8e5c-0593ae1b301f
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 47458e2468215c6539ad07533c36564d37da8b96
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: b20c3da209ac862b32f257020c8f7520a2116702
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359920"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613534"
 ---
 # <a name="pidtagdelegatedbyrule-canonical-property"></a>PidTagDelegatedByRule (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32359920"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt an, ob die Nachricht eines Ordners von einer Regel delegiert wird.
+Gibt an, ob die Nachricht eines Ordners durch eine Regel delegiert wird.
   
 |||
 |:-----|:-----|
@@ -40,7 +40,7 @@ Gibt an, ob die Nachricht eines Ordners von einer Regel delegiert wird.
 
 [[MS-OXODLGT]](https://msdn.microsoft.com/library/01a89b11-9c43-4c40-b147-8f6a1ef5a44f%28Office.15%29.aspx)
   
-> Gibt Methoden zum Verbinden und Konfigurieren von Postfächern als Stellvertretung sowie Interaktionen mit Nachrichten- und Kalenderobjekten an, wenn sie im Auftrag eines anderen Benutzers agieren.
+> Gibt Methoden zum Verbinden mit und Konfigurieren von Postfächern als Stellvertretungen und Interaktionen mit Nachrichten- und Kalenderobjekten an, wenn sie im Auftrag eines anderen Benutzers handeln.
     
 [[MS-OXORULE]](https://msdn.microsoft.com/library/70ac9436-501e-43e2-9163-20d2b546b886%28Office.15%29.aspx)
   
@@ -50,11 +50,11 @@ Gibt an, ob die Nachricht eines Ordners von einer Regel delegiert wird.
 
 Mapidefs.h
   
-> Stellt Datentypdefinitionen zur
+> Stellt Datentypdefinitionen bereit
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -62,9 +62,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -1,18 +1,18 @@
 ---
-title: Umgestalten (Access Desktop Database Reference)
+title: Neugestaltung (Access-Desktopdatenbankreferenz)
 TOCTitle: Reshaping
 ms:assetid: 89c6a0d6-3bf4-36ae-26ec-d4e60f920490
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249605(v=office.15)
 ms:contentKeyID: 48546174
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: c820e82669789d7c3806cc1fd38a2eb6844b722e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: af282f86f75d6208be19ab7c8b491dfd8b17dc92
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314777"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557820"
 ---
 # <a name="reshaping"></a>Reshaping
 
@@ -36,9 +36,9 @@ rs2.Open "SHAPE {select * from Employees} " & _
 . . . 
 ```
 
-Die zweite Funktion besteht darin, den Zugriff auf vorhandene untergeordnete **Recordset** -Objekte mithilfe der Syntax `"SHAPE <recordset reshape name>"`zu aktivieren.
+Die zweite Funktion besteht darin, mithilfe der Syntax nicht kapitelbasierten Zugriff auf vorhandene untergeordnete **Recordset-Objekte** zu `"SHAPE <recordset reshape name>"` ermöglichen.
 
 > [!NOTE]
-> [!HINWEIS] Sie können keine Spalten an ein vorhandenes **Recordset** -Objekt anfügen, kein parametrisiertes **Recordset** -Objekt oder **Recordset** -Objekte in einer dazwischen liegenden COMPUTE-Klausel umstrukturieren und keine Aggregatoperationen zu einem **Recordset** -Objekt ausführen, das von dem umzustrukturierenden **Recordset** abstammt. Das **Recordset** -Objekt, das neu gestaltet wird, und der neue Shape-Befehl müssen beide dasselbe * *[Connection](connection-object-ado.md) -Objekts verwenden.
+> [!HINWEIS] Sie können keine Spalten an ein vorhandenes **Recordset** -Objekt anfügen, kein parametrisiertes **Recordset** -Objekt oder **Recordset** -Objekte in einer dazwischen liegenden COMPUTE-Klausel umstrukturieren und keine Aggregatoperationen zu einem **Recordset** -Objekt ausführen, das von dem umzustrukturierenden **Recordset** abstammt. Das **Recordset-Objekt, das** neu gestaltet wird, und der neue Shape-Befehl müssen beide dasselbe **[Connection-Objekt](connection-object-ado.md) verwenden.
 
 

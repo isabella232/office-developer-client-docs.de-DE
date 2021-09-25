@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250089(v=office.15)
 ms:contentKeyID: 48548027
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 387f37e180d346c09cf3dadbf66f665cb83dbd0a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 8fde92fc77ce53f265ab62e1c6334d919a81e722
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294544"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565555"
 ---
 # <a name="datacontrol-error-codes"></a>DataControl-Fehlercodes
 
@@ -82,14 +82,14 @@ In der folgenden Tabelle sind die Fehlercodes des [RDS.DataControl](datacontrol-
 <td><p>4112<br />
 -2146824170<br />
 0x800A1016</p></td>
-<td><p>Auf dieser Seite wird auf Daten in einer anderen Domäne zugegriffen. Möchten Sie dies zulassen? Um diese Meldung in Internet Explorer zu vermeiden, können Sie auf der Registerkarte <strong>Sicherheit</strong> im Dialogfeld <strong>Internetoptionen</strong> eine sichere Website zu Ihrer Zone für vertrauenswürdige Sites hinzufügen.</p></td>
+<td><p>Diese Seite greift auf Daten in einer anderen Domäne zu. Möchten Sie dies zulassen? Um diese Meldung in Internet Explorer zu vermeiden, können Sie ihrer Zone "Vertrauenswürdige Sites" auf der Registerkarte <strong>"Sicherheit"</strong> des Dialogfelds <strong>"Internetoptionen"</strong> eine sichere Website hinzufügen.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>IDS_InvalidADCClientVersion</strong></p></td>
 <td><p>4106<br />
 -2146824176<br />
 0x800A1010</p></td>
-<td><p>Ungültige Version des RDS-Clients – der Client ist neuer als der Server.</p></td>
+<td><p>Ungültige RDS-Clientversion – Client ist neuer als Server.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>IDS_INVALIDARG</strong></p></td>
@@ -173,7 +173,7 @@ In der folgenden Tabelle sind die Fehlercodes des [RDS.DataControl](datacontrol-
 <td><p>4119<br />
 -2146824169<br />
 0x800A1017</p></td>
-<td><p>Die Eigenschaft DataControl- <strong>URL</strong> erfordert die System Datei Urlmon. dll, die nicht gefunden werden kann.</p></td>
+<td><p>Die <strong>DataControl-URL-Eigenschaft</strong> erfordert die Systemdatei Urlmon.dll, die nicht gefunden werden kann.</p></td>
 </tr>
 </tbody>
 </table>

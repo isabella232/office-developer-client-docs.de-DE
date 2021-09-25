@@ -3,15 +3,15 @@ title: Informationen zur Speicher-API
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 166a8e60-e09d-7473-b61b-35d78a863192
 description: 'Letzte �nderung: Montag, 25. Juni 2012'
-ms.openlocfilehash: fb9b0a4c8ac1a2f41a0fddcd746dba5fc4bae1a2
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: deba8ea99e53d3bc20267d4beb92952af14adfaa
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33405555"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59592744"
 ---
 # <a name="about-the-store-api"></a>Informationen zur Speicher-API
 
@@ -19,7 +19,7 @@ ms.locfileid: "33405555"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die Store-API stellt verschiedene Speicherfunktionen für Speicheranbieter bereit. Es enthält die folgenden Defintions, Datentypen, Eigenschaften und Schnittstellen.
+Die Store-API bietet verschiedene Speicherfunktionen zum Speichern von Anbietern. Es stellt die folgenden Definitionen, Datentypen, Eigenschaften und Schnittstellen bereit.
   
 Definitionen:
   
@@ -37,16 +37,16 @@ Benannte Eigenschaften:
     
 - **[CrawlSourceSupportMask](crawlsourcesupportmask.md)**
     
-- **[Größe des Anzeigeserverordners](display-server-folder-sizes-property.md)**
+- **[Anzeigeserverordnergrößen](display-server-folder-sizes-property.md)**
     
-- **[Option zum Ausblenden von Besprechungsupdates](hide-meeting-update-option-property.md)**
+- **[Option "Besprechungsupdate ausblenden"](hide-meeting-update-option-property.md)**
     
 - **[Make Store Type Private](make-store-type-private-property.md)**
     
 - **[NoFolderScan](nofolderscan.md)**
     
 > [!NOTE]
-> Store, die keine der Funktionen dieser benannten Eigenschaften benötigen, können sie einfach ignorieren und keine Unterstützung in der **IMAPIProp-Schnittstelle** implementieren. Da diese Eigenschaften ab Microsoft Outlook 2003 Service Pack 1 bereitgestellt werden, hat das Hinzufügen zu einem Store in einer früheren Version von Microsoft Outlook keine Auswirkung. Sie werden ignoriert, wenn sie nicht vorhanden sind oder ihr Wert false **ist.** 
+> Store Anbieter, die keine der von diesen benannten Eigenschaften angebotenen Funktionen benötigen, können diese einfach ignorieren und keine Unterstützung in der **IMAPIProp-Schnittstelle** implementieren. Da diese Eigenschaften ab Microsoft Outlook 2003 Service Pack 1 bereitgestellt werden, hat das Hinzufügen zu einem Store in einer früheren Version von Microsoft Outlook keine Auswirkungen. Sie werden ignoriert, wenn sie nicht vorhanden sind oder wenn ihr Wert **falsch** ist. 
   
 Eigenschaften:
   
@@ -68,10 +68,10 @@ Schnittstellen:
     
 ## <a name="registering-stores-for-indexing"></a>Registrieren von Informationsspeichern für die Indizierung
 
-Der MAPI-Protokollhandler überprüft die Windows für Speicher, die zu Suchzwecken indiziert werden sollen. Store, die indiziert werden möchten, müssen in der Registrierung Windows werden. Weitere Informationen zum Registrieren von Speicheranbietern für die Indizierung in Outlook 2013 oder Outlook 2010 finden Sie unter [About Registering Stores for Indexing](about-registering-stores-for-indexing.md).
+Der MAPI-Protokollhandler überprüft die Windows-Registrierung auf Speicher, die für Suchzwecke indiziert werden sollen. Store Anbieter, die indiziert werden sollen, müssen in der Windows Registrierung registriert werden. Weitere Informationen zum Registrieren von Speicheranbietern für die Indizierung in Outlook 2013 oder Outlook 2010 finden Sie unter ["Registrieren von Stores für die Indizierung".](about-registering-stores-for-indexing.md)
   
 ## <a name="indexing-stores"></a>Indizierungsspeicher
 
-MAPI-Speicheranbieter können festlegen, dass der MAPI-Protokollhandler Nachrichten im Speicher durchforstet und indiziert oder Benachrichtigungen nur dann an den Indexer sendet, wenn Nachrichten indiziert werden sollen. Weitere Informationen zur Benachrichtigungsbasierten Indizierung finden Sie unter [Informationen Notification-Based Store Indizierung](about-notification-based-store-indexing.md).
+MAPI-Speicheranbieter können festlegen, dass der MAPI-Protokollhandler Nachrichten im Speicher durchforsten und indizieren kann, oder Benachrichtigungen nur dann an den Indexer senden, wenn Nachrichten indiziert werden sollen. Weitere Informationen zur benachrichtigungsbasierten Indizierung finden Sie unter [Info zu Notification-Based Store Indizierung.](about-notification-based-store-indexing.md)
   
 

@@ -1,18 +1,18 @@
 ---
-title: ADO-Ereignisse (ActiveX Data Objects)
+title: ActiveX Data Objects (ADO)-Ereignisse
 TOCTitle: ADO events
 ms:assetid: 84ca9525-99cb-4ba6-2a4d-172414b8f0cc
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249576(v=office.15)
 ms:contentKeyID: 48546041
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: cc2ef73798dca18e00c42768fde78da2abdb56a3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 911ac9e1388f1027ea9f0eab1a817c8e8735c73d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283338"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59553361"
 ---
 # <a name="ado-events"></a>ADO-Ereignisse
 
@@ -67,7 +67,7 @@ ms.locfileid: "32283338"
 <td><p>Wird aufgerufen, nachdem der Wert mindestens eines <strong>Field</strong>-Objekts geändert wurde.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="infomessage-event-ado.md">InfoMessage</a></p></td>
+<td><p><a href="infomessage-event-ado.md">Infomessage</a></p></td>
 <td><p>Wird immer aufgerufen, wenn während einer <strong>ConnectionEvent</strong>-Operation eine Warnung auftritt.</p></td>
 </tr>
 <tr class="odd">
@@ -83,7 +83,7 @@ ms.locfileid: "32283338"
 <td><p>Wird aufgerufen, nachdem das <strong>Recordset</strong>-Objekt geändert wurde.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="begintranscomplete-committranscomplete-and-rollbacktranscomplete-events-ado.md">RollbackTransComplete-</a></p></td>
+<td><p><a href="begintranscomplete-committranscomplete-and-rollbacktranscomplete-events-ado.md">RollbackTransComplete</a></p></td>
 <td><p>Wird nach der <strong>RollbackTrans</strong>-Operation aufgerufen.</p></td>
 </tr>
 <tr class="odd">

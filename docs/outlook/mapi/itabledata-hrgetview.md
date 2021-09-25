@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ITableData.HrGetView
 api_type:
 - COM
 ms.assetid: 0e2a47be-497b-4031-87ce-60b2635e25f7
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 375a0f1d39b09b7ad453120f20752e00ffda0e15
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 7567113d1247b55f1ee5a609964728980d928cac
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278715"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613779"
 ---
 # <a name="itabledatahrgetview"></a>ITableData::HrGetView
 
@@ -40,15 +40,15 @@ HRESULT HrGetView(
 
  _lpSSortOrderSet_
   
-> [in] Ein Zeiger auf eine Sortierreihenfolgenstruktur, die die Sortierreihenfolge für die Tabellenansicht beschreibt. Wenn NULL im  _lpSSortOrderSet-Parameter übergeben_ wird, wird die Ansicht nicht sortiert. 
+> [in] Ein Zeiger auf eine Sortierreihenfolgestruktur, die die Sortierreihenfolge für die Tabellenansicht beschreibt. Wenn NULL im  _lpSSortOrderSet-Parameter_ übergeben wird, wird die Ansicht nicht sortiert. 
     
  _lpfCallerRelease_
   
-> [in] Ein Zeiger auf eine Rückruffunktion basierend auf dem [CALLERRELEASE-Prototyp,](callerrelease.md) den MAPI aufruft, wenn die Ansicht veröffentlicht wird. Wenn NULL im  _lpfCallerRelease-Parameter übergeben_ wird, wird bei der Freigabe der Ansicht keine Funktion aufgerufen. 
+> [in] Ein Zeiger auf eine Rückruffunktion basierend auf dem [CALLERRELEASE-Prototyp,](callerrelease.md) den MAPI aufruft, wenn sie die Ansicht freigibt. Wenn NULL im  _lpfCallerRelease-Parameter_ übergeben wird, wird bei der Freigabe der Ansicht keine Funktion aufgerufen. 
     
  _ulCallerData_
   
-> [in] Die Daten, die mit der neuen Ansicht gespeichert und an die Rückruffunktion übergeben werden müssen, auf die von _lpfCallerRelease verwiesen wird._
+> [in] Die Daten, die mit der neuen Ansicht gespeichert und an die Rückruffunktion übergeben werden müssen, auf die durch  _lpfCallerRelease_ verwiesen wird.
     
  _lppMAPITable_
   
@@ -60,13 +60,13 @@ S_OK
   
 > Die Ansicht wurde erfolgreich erstellt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die **ITableData::HrGetView-Methode** erstellt eine schreibgeschützte Ansicht der Daten in der Tabelle, sortiert in der Reihenfolge, auf die der  _lpSSortOrderSet-Parameter_ verweist. Der Cursor wird am Anfang der ersten Zeile in der Ansicht platziert. Eine **IMAPITable-Schnittstellenimplementierung** für den Zugriff auf die Ansicht wird zurückgegeben. 
+Die **ITableData::HrGetView-Methode** erstellt eine schreibgeschützte Ansicht der Daten in der Tabelle, sortiert in der Reihenfolge, auf die mit dem  _lpSSortOrderSet-Parameter_ verwiesen wird. Der Cursor wird am Anfang der ersten Zeile in der Ansicht platziert. Es wird eine **IMAPITable-Schnittstellenimplementierung** für den Zugriff auf die Ansicht zurückgegeben. 
   
-Dienstanbieter rufen **HrGetView auf,** wenn sie einem Client Zugriff auf eine Tabelle geben müssen. **HrGetView** erstellt die Ansicht und gibt den **IMAPITable-Zeiger** zurück. Dienstanbieter geben den Zeiger wiederum an den Client weiter. Wenn der Client mit der Tabelle fertig ist und seine [IUnknown::Release-Methode](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx) aufruft, ruft **HrGetView** die Rückruffunktion auf, auf die der  _lpfCallerRelease-Parameter_ verweist. 
+Dienstanbieter rufen **HrGetView** auf, wenn sie einem Client Zugriff auf eine Tabelle gewähren müssen. **HrGetView** erstellt die Ansicht und gibt den **IMAPITable-Zeiger** zurück. Dienstanbieter wiederum übergeben den Zeiger an den Client. Wenn der Client mit der Verwendung der Tabelle fertig ist und die [IUnknown::Release-Methode](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx) aufruft, ruft **HrGetView** die Rückruffunktion auf, auf die der  _Parameter "lpfCallerRelease"_ verweist. 
   
-Wenn ein Dienstanbieter eine Ansicht mit einem angepassten Spaltensatz oder einer Einschränkung an einen Client zurückgeben muss, kann der Anbieter die [Methoden IMAPITable::SetColumns](imapitable-setcolumns.md) und [IMAPITable::Restrict](imapitable-restrict.md) der Ansicht aufrufen, bevor der Clientzugriff ermöglicht wird. 
+Wenn ein Dienstanbieter zu einem Client eine Ansicht zurückgeben muss, für die ein benutzerdefinierter Spaltensatz oder eine Einschränkung festgelegt ist, kann der Anbieter die [IMAPITable::SetColumns-](imapitable-setcolumns.md) und [IMAPITable::Restrict-Methoden](imapitable-restrict.md) der Ansicht aufrufen, bevor der Clientzugriff zugelassen wird. 
   
 ## <a name="see-also"></a>Siehe auch
 

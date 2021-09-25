@@ -4,23 +4,23 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f0baa310-7a53-07ee-0a7d-33dd1fb465c2
-description: Gibt für jeden angegebenen Benutzer eine Schnittstelle zum Aufzählen von Frei/Gebucht-Datenblöcken innerhalb eines Zeitbereichs zurück.
-ms.openlocfilehash: e55f902117a20bfefaa5d9a2f3a067cb78ec86cb
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Gibt für jeden angegebenen Benutzer eine Schnittstelle zum Aufzählen von Frei/Gebucht-Datenblöcken innerhalb eines Zeitraums zurück.
+ms.openlocfilehash: 51875b12244a6e2fb427c27d7fece6fae9833c03
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411232"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601247"
 ---
 # <a name="ifreebusysupportloadfreebusydata"></a>IFreeBusySupport::LoadFreeBusyData
 
-Gibt für jeden angegebenen Benutzer eine Schnittstelle zum Aufzählen von Frei/Gebucht-Datenblöcken innerhalb eines Zeitbereichs zurück. 
+Gibt für jeden angegebenen Benutzer eine Schnittstelle zum Aufzählen von Frei/Gebucht-Datenblöcken innerhalb eines Zeitraums zurück. 
   
 ## <a name="quick-info"></a>QuickInfo
 
-Weitere [Informationen finden Sie unter IFreeBusySupport](ifreebusysupport.md).
+Siehe [IFreeBusySupport](ifreebusysupport.md).
   
 ```cpp
 HRESULT LoadFreeBusyData( 
@@ -34,28 +34,28 @@ HRESULT LoadFreeBusyData(
 
 ## <a name="parameters"></a>Parameter
 
-_cMax_
+_Cmax_
   
-> [in] Die Anzahl der [zurückzukehrende IFreeBusyData-Schnittstellen.](ifreebusydata.md) 
+> [in] Die Anzahl der [zurückzugebenden IFreeBusyData-Schnittstellen.](ifreebusydata.md) 
     
-_rgfbuser_
+_rwgbuser_
   
-> [in] Das Array der Frei/Gebucht-Benutzer, für die Daten abgerufen werden.
+> [in] Das Array von Frei/Gebucht-Benutzern, für die Daten abgerufen werden sollen.
     
-_prgfbdata_
+_prwgbdata_
   
-> [in] [out] Das Array von **IFreeBusyData-Schnittstellen,** die dem  _rgfbuser-Array_ von [FBUser-Strukturen](fbuser.md) entsprechen. 
+> [in] [out] Das Array von **IFreeBusyData-Schnittstellen,** die dem  _Rfgbuser-Array_ von [FBUser-Strukturen](fbuser.md) entsprechen. 
     
    > [!NOTE]
-   > Dieses Array von Zeigern wird vom Anrufer zugewiesen und vom Anrufer frei. Die tatsächlichen Schnittstellen, auf die verwiesen wird, werden freigegeben, wenn der Aufrufer damit fertig ist. 
+   > Dieses Array von Zeigern wird vom Aufrufer zugewiesen und vom Aufrufer freigegeben. Die tatsächlichen Schnittstellen, auf die verwiesen wird, werden freigegeben, wenn der Aufrufer damit fertig ist. 
   
 _phrStatus_
   
-> [out] Das Array von **HRESULT-Ergebnissen** zum Abrufen jeder entsprechenden **IFreeBusyData-Schnittstelle.** Der Wert kann NULL sein. Ein Ergebnis wird auf S_OK festgelegt, wenn  _entsprechende prgfbdata_ gültig ist. 
+> [out] Das Array der **HRESULT-Ergebnisse** zum Abrufen jeder entsprechenden **IFreeBusyData-Schnittstelle.** Der Wert kann NULL sein. Ein Ergebnis wird auf S_OK festgelegt, wenn entsprechende  _Prwgbdata_ gültig sind. 
     
 _pcRead_
   
->  [out] Die tatsächliche Anzahl von Benutzern, für die eine **IFreeBusyData-Schnittstelle** gefunden wurde. 
+>  [out] Die tatsächliche Anzahl der Benutzer, für die eine **IFreeBusyData-Schnittstelle** gefunden wurde. 
     
 ## <a name="return-values"></a>Rückgabewerte
 

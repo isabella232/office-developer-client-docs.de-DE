@@ -1,20 +1,20 @@
 ---
-title: Recordset2. aktualisierbare Eigenschaft (DAO)
+title: Recordset2.Updatable-Eigenschaft (DAO)
 TOCTitle: Updatable Property
 ms:assetid: ad8184b6-ffe3-dde6-ddee-4b23cdaa9c59
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff821726(v=office.15)
 ms:contentKeyID: 48547041
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 5b6e6f2a20b4779259b80eff1fc152abe3698217
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 072eae0ef403aef283af5078cd0a2dc6f0320140
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309324"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557967"
 ---
-# <a name="recordset2updatable-property-dao"></a>Recordset2. aktualisierbare Eigenschaft (DAO)
+# <a name="recordset2updatable-property-dao"></a>Recordset2.Updatable-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -23,13 +23,13 @@ Gibt einen Wert zurück, der anzeigt, ob ein DAO-Objekt geändert werden kann. S
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Aktualisierbar
+*Ausdruck* . Aktualisierbare
 
-*Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset2-Objekt** darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Snapshot-und Forward-only-Recordset-Objekte geben immer **false**zurück.
+Recordset-Objekte vom Typ "Snapshot" und "forward-only" geben immer **"False"** zurück.
 
 Many types of objects can contain fields that can't be updated. For example, you can create a dynaset-type **Recordset** object in which only some fields can be changed. These fields can be fixed or contain data that increments automatically, or the dynaset can result from a query that combines updatable and nonupdatable tables.
 

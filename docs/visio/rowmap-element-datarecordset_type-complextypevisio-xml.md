@@ -4,19 +4,19 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f90dc76b-7f0b-dead-38c0-97062a7b76a6
-description: Karten einer Daten-Recordset-Zeile zu einer Form.
-ms.openlocfilehash: 178ceb06d64bfc9ef50f75dd22f8bd94f09f5c33
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+description: Karten einer Datensatzzeile zu einem Shape.
+ms.openlocfilehash: 250829c1199e4936bbdef91fdf3ba61873ff54fb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34540770"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607780"
 ---
 # <a name="rowmap-element-datarecordset_type-complextype-visio-xml"></a>RowMap-Element (DataRecordSet_Type complexType) (Visio XML)
 
-Karten einer Daten-Recordset-Zeile zu einer Form.
+Karten einer Datensatzzeile zu einem Shape.
   
 ## <a name="element-information"></a>Informationen zum Element
 
@@ -36,7 +36,7 @@ Karten einer Daten-Recordset-Zeile zu einer Form.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -54,8 +54,8 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|PageID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> |Seiten-ID des Shapes, das mit Daten in der Daten-Recordset-Zeile verknüpft ist, die von **RowID identifiziert wird.**  <br/> |Werte des xsd:unsignedInt-Typs.  <br/> |
-|RowID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> |Zeilen-ID der Zeile, die innerhalb des Datendatensatz eindeutig ist.  <br/> |Werte des xsd:unsignedInt-Typs.  <br/> |
-|ShapeID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> |Shape-ID der Form, die mit Daten in der Daten-Recordset-Zeile verknüpft ist, die von **RowID identifiziert wird.**  <br/> |Werte des xsd:unsignedInt-Typs.  <br/> |
+|PageID  <br/> |xsd:unsignedInt  <br/> |Erforderlich  <br/> |Seiten-ID des Shapes, das mit Daten in der Datenrecordsetzeile verknüpft ist, die durch **RowID** identifiziert wird.  <br/> |Werte des Typs "xsd:unsignedInt".  <br/> |
+|Rowid  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> |Zeilen-ID der Zeile, eindeutig innerhalb des Datenrecordsets.  <br/> |Werte des Typs "xsd:unsignedInt".  <br/> |
+|ShapeID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> |Shape-ID des Shapes, das mit Daten in der Datenrecordsetzeile verknüpft ist, die durch **RowID** identifiziert wird.  <br/> |Werte des Typs "xsd:unsignedInt".  <br/> |
    
 

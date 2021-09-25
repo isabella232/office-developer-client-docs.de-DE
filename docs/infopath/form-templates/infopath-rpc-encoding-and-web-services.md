@@ -3,21 +3,21 @@ title: InfoPath, RPC-Codierung und Webdienste
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f8d7b944-a8fd-9c5f-8f66-0f1b628b7c6e
-description: 'Webdienste können eine von zwei Formatvorlagen für die Bindung an ihre Webmethoden im Web Service Description Language (WSDL)-Vertrag verfügbar machen, der sie beschreibt: Dokument oder RPC.'
-ms.openlocfilehash: 0eacf013c9cdf74f18f3de1d4412ca4ca165a960
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: 'Webdienste können eine von zwei Formatvorlagen für die Bindung an ihre Webmethoden im WSDL-Vertrag (Web Service Description Language) verfügbar machen, der sie beschreibt: "Document" oder "RPC".'
+ms.openlocfilehash: 66f915ac299f20e91f7e2ed1404f65ac44af0afd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303528"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601268"
 ---
 # <a name="infopath-rpc-encoding-and-web-services"></a>InfoPath, RPC-Codierung und Webdienste
 
-Webdienste können eine von zwei Formatvorlagen für die Bindung an ihre Webmethoden im Web Service Description Language (WSDL)-Vertrag verfügbar machen, der sie beschreibt: Dokument oder RPC. Darüber hinaus können diese beiden Bindungstypen als literal oder encoded angegeben werden. Die gängigsten Implementierungen für die beiden Bindungstypen sind: "document/literal" und "RPC/encoded". Microsoft InfoPath unterstützt jedoch nur die Verbindung mit Webdiensten, die die Dokument-/Literalformatvorlage verwenden.
+Webdienste können eine von zwei Formatvorlagen für die Bindung an ihre Webmethoden im WSDL-Vertrag (Web Service Description Language) verfügbar machen, der sie beschreibt: "Document" oder "RPC". Darüber hinaus können diese beiden Bindungstypen als literal oder encoded angegeben werden. Die gängigsten Implementierungen für die beiden Bindungstypen sind: "document/literal" und "RPC/encoded". Microsoft InfoPath unterstützt jedoch nur das Herstellen einer Verbindung mit Webdiensten, die die Dokument-/Literalformatvorlage verwenden.
   
-Die meisten Webdienst-Bereitstellungstools weisen eine Option auf, mit der Sie angeben können, welche Art von Webdienst Sie erstellen möchten. Wenn Sie einen Webdienst entwickeln, mit dem Sie eine Verbindung von InfoPath herstellen, sollten Sie Dokument/Literal als Stil und Codierung ihres Webdiensts angeben.
+Die meisten Webdienst-Bereitstellungstools weisen eine Option auf, mit der Sie angeben können, welche Art von Webdienst Sie erstellen möchten. Wenn Sie einen Webdienst entwickeln, mit dem Sie eine Verbindung über InfoPath herstellen, sollten Sie dokument/literal als Formatvorlage und Codierung des Webdiensts angeben.
   
 Wenn Sie allerdings den Webdienst, den Sie verwenden möchten, nicht kontrollieren und eine Verbindung mit einem Webdienst vom Typ "RPC/encoded" herstellen müssen, können Sie mithilfe eines .NET-Proxydiensts eine Verbindung mit einem Webdienst vom Typ "RPC/encoded" herstellen.
   
@@ -33,7 +33,7 @@ Die Voraussetzungen zum Erstellen eines solchen Microsoft .NET-Proxywebdiensts s
 
 1. Erstellen Sie ein neues Projekt **ASP.NET-Webdienstanwendung**. 
     
-2. Klicken Sie **im Projektmappen-Explorer** mit der rechten Maustaste auf den Ordner **Verweise** ihres neuen Projekts, und klicken Sie dann **auf Webreferenz hinzufügen.** 
+2. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf den Ordner **"Verweise"** des neuen Projekts, und klicken Sie dann auf **"Webverweis hinzufügen".** 
     
 3. Geben Sie im Dialogfeld **Webverweis hinzufügen** die URL des Webdiensts vom Typ "RPC/encoded" ein, den Sie verwenden möchten, und klicken Sie dann auf **Weiter**.
     
@@ -41,7 +41,7 @@ Die Voraussetzungen zum Erstellen eines solchen Microsoft .NET-Proxywebdiensts s
     
 5. Öffnen Sie die ASMX-Datei für Ihren Webdienst, und fügen Sie eine Webdienstmethode zum Aufrufen jeder Webdienstmethode im referenzierten Webdienst vom Typ "RPC/encoded" hinzu.
     
-6. Öffnen Sie das Fenster **Klassenansicht**, um eine Liste der Methoden auf dem Referenzwebserver vom Typ "RPC/encoded" anzuzeigen. Für jede Webdienstmethode werden drei Methoden angezeigt. Wenn beispielsweise die Webdienstmethode aufgerufen wird, werden drei Methoden  `doSearch` namens  `doSearch` , und  `BegindoSearch`  `EnddoSearch` angezeigt. Sie müssen nur eine Wrapperwebdienstmethode für die Methode  `doSearch` erstellen. Achten Sie darauf, dass die Methodensignatur und der Rückgabetyp genau übereinstimmen. 
+6. Öffnen Sie das Fenster **Klassenansicht**, um eine Liste der Methoden auf dem Referenzwebserver vom Typ "RPC/encoded" anzuzeigen. Für jede Webdienstmethode werden drei Methoden angezeigt. Wenn beispielsweise die Webdienstmethode aufgerufen  `doSearch` wird, werden drei Methoden aufgerufen  `doSearch` , und  `BegindoSearch`  `EnddoSearch` . Sie müssen nur eine Wrapperwebdienstmethode für die  `doSearch` Methode erstellen. Achten Sie darauf, dass die Methodensignatur und der Rückgabetyp genau übereinstimmen. 
     
 7. Innerhalb jeder Wrappermethode müssen Sie wie im folgenden Beispiel dargestellt Code erstellen, um den referenzierten Webdienst vom Typ "RPC/encoded" aufzurufen. 
     
@@ -62,7 +62,7 @@ Die Voraussetzungen zum Erstellen eines solchen Microsoft .NET-Proxywebdiensts s
     
    ```
 
-Weitere Informationen finden Sie im Microsoft Knowledge Base-Artikel "HOW TO: Pass Current Credentials to an ASP.NET Web Service" unter https://support.microsoft.com/ .
+For more information, search for the Microsoft Knowledge Base article "HOW TO: Pass Current Credentials to an ASP.NET Web Service" on https://support.microsoft.com/ .
     
 ## <a name="creating-a-proxy-web-service-without-visual-studio-net"></a>Erstellen eines Proxywebdiensts ohne Visual Studio .NET
 

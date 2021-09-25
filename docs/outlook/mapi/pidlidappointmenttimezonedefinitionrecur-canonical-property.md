@@ -1,49 +1,49 @@
 ---
-title: PidLidAppointmentTimeZoneDefinitionRecur (kanonische Eigenschaft)
+title: Kanonische PidLidAppointmentTimeZoneDefinitionRecur-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidAppointmentTimeZoneDefinitionRecur
 api_type:
 - COM
 ms.assetid: 52fd57a0-9e34-4452-9ecd-2acb454446c9
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e5e9b06178a1517fc1c8652b0d667faf1afc77cc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 83e72d3862ef38d93dace38b91e7a8a70ecb538c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345353"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583933"
 ---
-# <a name="pidlidappointmenttimezonedefinitionrecur-canonical-property"></a>PidLidAppointmentTimeZoneDefinitionRecur (kanonische Eigenschaft)
+# <a name="pidlidappointmenttimezonedefinitionrecur-canonical-property"></a>Kanonische PidLidAppointmentTimeZoneDefinitionRecur-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält einen Datenstrom, der dem dauerhaften Format einer [TZDEFINITION-Struktur](https://msdn.microsoft.com/library/0ae21571-2299-6407-807c-428668bb6798%28Office.15%29.aspx) zu ordnet, in der die Beschreibung für die Zeitzone gespeichert wird, die beim Erstellen eines Termins oder einer Besprechungsserie verwendet wird. 
+Enthält einen Datenstrom, der dem beibehaltenen Format einer [TZDEFINITION-Struktur](https://msdn.microsoft.com/library/0ae21571-2299-6407-807c-428668bb6798%28Office.15%29.aspx) zugeordnet ist, in dem die Beschreibung für die Zeitzone gespeichert wird, die beim Erstellen einer Terminserie oder Besprechungsanfrage verwendet wird. 
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidApptTZDefRecur  <br/> |
 |Eigenschaftensatz:  <br/> |PSETID_Appointment  <br/> |
-|Lange ID (LID):  <br/> |0x00008260  <br/> |
+|Long ID (LID):  <br/> |0x00008260  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Versionen von Microsoft Outlook seit Microsoft Office Outlook 2007 und Lösungen, die auf den Eigenschaften Collaboration Data Objects (CDO) 1.2.1 basieren, die das Kalenderupdatetool Outlook oder Exchange Server ausgeführt haben, verwenden die **Eigenschaften dispidApptTZDefRecur** und **dispidTimeZoneStruct** ([PidLidTimeZoneStruct](pidlidtimezonestruct-canonical-property.md)), um zu bestimmen, ob die Besprechungsserie angepasst werden soll, wenn sich die Regeln der Zeitzone ändern. Diese Eigenschaften müssen synchronisiert werden, da ältere Clients möglicherweise weiterhin die **dispidTimeZoneStruct-Eigenschaft** bearbeiten. Um zu ermitteln, ob die beiden Eigenschaften synchronisiert sind, sollte das **wFlags-Element** für die Regel, die **dispidTimeZoneStruct** entspricht, über TZRULE_FLAG_RECUR_CURRENT_TZREG verfügen. Wenn dieses Flag nicht festgelegt oder festgelegt ist und die Regel in der **dispidTimeZoneStruct-Eigenschaft** nicht mit der markierten Regel übereinstimmen, sollte die **dispidApptTZDefRecur-Eigenschaft** verworfen und **stattdessen dispidTimeZoneStruct** verwendet werden. 
+Versionen von Microsoft Outlook seit Microsoft Office Outlook 2007 und Lösungen, die auf COLLABORATION Data Objects (CDO) 1.2.1 basieren und das Outlook- oder Exchange Server Kalenderaktualisierungstool ausgeführt haben, verwenden die Eigenschaften **dispidApptTZDefRecur** und **dispidTimeZoneStruct** ([PidLidTimeZoneStruct](pidlidtimezonestruct-canonical-property.md)) für bestimmen Sie, ob die Besprechungsserie angepasst werden soll, wenn sich die Regeln der Zeitzone ändern. Diese Eigenschaften müssen synchronisiert werden, da ältere Clients die **dispidTimeZoneStruct-Eigenschaft** möglicherweise noch bearbeiten. Um zu erkennen, ob die beiden Eigenschaften synchronisiert werden, sollte für das **wFlags-Element** für die Regel, die **dispidTimeZoneStruct entspricht,** das TZRULE_FLAG_RECUR_CURRENT_TZREG Flag festgelegt sein. Wenn dieses Flag nicht festgelegt ist oder festgelegt ist und die Regel in der **dispidTimeZoneStruct-Eigenschaft** nicht mit der markierten Regel übereinstimmt, sollte die **dispidApptTZDefRecur-Eigenschaft** verworfen und **stattdessen dispidTimeZoneStruct** verwendet werden. 
   
-Wenn Sie die Eigenschaften **dispidApptTZDefRecur** und **dispidTimeZoneStruct** in eine neue Besprechungsserie schreiben, oder wenn Sie eine beliebige Entscheidung für die Verwendung der **dispidTimeZoneStruct-Eigenschaft** treffen, sollte die aktuelle Definition für die Zeitzone (gemäß der Windows-Registrierung) verwendet werden. 
+Wenn Sie die Eigenschaften **dispidApptTZDefRecur** und **dispidTimeZoneStruct** in eine neue Besprechungsserie schreiben oder wenn Sie eine beliebige Wahl zur Verwendung der **dispidTimeZoneStruct-Eigenschaft** treffen, sollte die aktuelle Definition für die Zeitzone (gemäß der Windows Registrierung) verwendet werden. 
   
-Ein Parser muss vorsichtig sein, wenn er einen Datenstrom liest, der von **dispidApptTZDefRecur** erhalten wird, oder wenn **er TZDEFINITION** in einem Datenstrom für die Verpflichtung zu einer binären Eigenschaft wie **dispidApptTZDefRecur** beibehalten. Weitere Informationen finden Sie unter [About persisting TZDEFINITION to a stream to commit to a binary property](https://msdn.microsoft.com/library/0dec535d-d48f-39a5-97d5-0bd109134b3b%28Office.15%29.aspx).
+Ein Parser muss vorsichtig sein, wenn er einen Stream liest, der aus **dispidApptTZDefRecur** abgerufen wird, oder wenn **TZDEFINITION** in einem Stream gespeichert wird, um eine binäre Eigenschaft wie **dispidApptTZDefRecur** zu verwenden. Weitere Informationen finden Sie unter [Informationen zum Beibehalten von TZDEFINITION in einem Stream, um einen Commit für eine binäre Eigenschaft auszuführen.](https://msdn.microsoft.com/library/0dec535d-d48f-39a5-97d5-0bd109134b3b%28Office.15%29.aspx)
   
- **dispidApptTZDefRecur** gibt Zeitzoneninformationen an, die beschreiben, wie Das Datum und die Uhrzeit der Besprechung in einer Serie in koordinierte Weltzeit (Coordinated Universal Time, UTC) konvertiert werden. Wenn diese Eigenschaft festgelegt ist, aber Daten enthält, die mit den durch **dispidTimeZoneStruct** dargestellten Daten inkonsistent sind, muss der Client **dispidTimeZoneStruct** anstelle von **dispidApptTZDefRecur verwenden.** Wenn **dispidApptTZDefRecur** nicht festgelegt ist, wird stattdessen die **PidLidTimeZoneStruct-Eigenschaft** verwendet. Die Felder in diesem BLOB werden in klein-endischer Bytereihenfolge codiert. 
+ **dispidApptTZDefRecur** gibt Zeitzoneninformationen an, in denen beschrieben wird, wie Das Besprechungsdatum und die Besprechungszeit einer Terminserie in und aus koordinierter Weltzeit (UTC) konvertiert werden. Wenn diese Eigenschaft festgelegt ist, aber Daten enthält, die mit den durch **dispidTimeZoneStruct** dargestellten Daten inkonsistent sind, muss der Client **dispidTimeZoneStruct** anstelle von **dispidApptTZDefRecur** verwenden. Wenn **dispidApptTZDefRecur** nicht festgelegt ist, wird stattdessen die **PidLidTimeZoneStruct-Eigenschaft** verwendet. Die Felder in diesem BLOB werden in kleiner endischer Bytereihenfolge codiert. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -51,17 +51,17 @@ Ein Parser muss vorsichtig sein, wenn er einen Datenstrom liest, der von **dispi
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Stellt Eigenschaftensatzdefinitionen und Verweise auf verwandte Exchange Server zur Verfügung.
+> Stellt Eigenschaftssatzdefinitionen und Verweise auf verwandte Exchange Server Protokollspezifikationen bereit.
     
 [[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften und Vorgänge für Termin-, Besprechungs- und Antwortnachrichten an.
+> Gibt die Eigenschaften und Vorgänge für Termin-, Besprechungsanfrage- und Antwortnachrichten an.
     
 ### <a name="header-files"></a>Headerdateien
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -69,9 +69,9 @@ Mapidefs.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

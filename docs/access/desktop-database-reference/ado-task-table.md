@@ -1,24 +1,24 @@
 ---
-title: ActiveX Data Objects (ADO)-Aufgaben Tabelle
+title: ActiveX Tasktabelle für Datenobjekte (Data Objects, ADO)
 TOCTitle: ADO task table
 ms:assetid: 39671d86-72ac-a7b0-53d2-7a17429b15ad
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249141(v=office.15)
 ms:contentKeyID: 48544245
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: ffb9ece91d674e3447f43ae17e2ea9415e2339ac
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 05c377775e5da09f1d81e3e31b00e5d3939d423d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283247"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607570"
 ---
 # <a name="ado-task-table"></a>ADO-Aufgabentabelle
 
 **Gilt für**: Access 2013, Office 2013
 
-In der folgenden Tabelle sind die im ADO-Programmierhandbuch enthaltenen Programmieraufgaben aufgeführt, und *es* werden Verweise für die einzelnen Aufgaben bereitgestellt. Bei diesen Themen kann es sich um Beschreibungen oder Codebeispiele handeln, in denen Sie Informationen zum ADO-Feature finden, mit dem die Aufgabe ausgeführt wird.
+In der folgenden Tabelle sind Programmieraufgaben aufgeführt, die im *ADO-Programmierhandbuch* enthalten sind, und es werden Verweise für jede Aufgabe bereitgestellt. Bei diesen Themen kann es sich um Beschreibungen oder Codebeispiele handeln, in denen Sie Informationen zum ADO-Feature finden, mit dem die Aufgabe ausgeführt wird.
 
 <table>
 <colgroup>
@@ -28,7 +28,7 @@ In der folgenden Tabelle sind die im ADO-Programmierhandbuch enthaltenen Program
 <thead>
 <tr class="header">
 <th><p>ADO-Aufgabe</p></th>
-<th><p>Verweise</p></th>
+<th><p>Informationsquellen</p></th>
 </tr>
 </thead>
 <tbody>

@@ -4,14 +4,14 @@ manager: kelbow
 ms.date: 08/18/2017
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 31bda053-637f-4e1c-b9e0-817e5c3c5170
-ms.openlocfilehash: cc911f9598b9c5586b5be727d28195ab5f2662cb
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: a4316ccffa20199c37e813669e2be07e41442215
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33426989"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601422"
 ---
 # <a name="text-functions-access-custom-web-app"></a>Textfunktionen (benutzerdefinierte Access-Web-App)
 
@@ -22,19 +22,19 @@ ms.locfileid: "33426989"
   
 - [CharIndex-Funktion (benutzerdefinierte Access-Web-App)](charindex-function-access-custom-web-app.md)
     
-- [Concat-Funktion (benutzerdefinierte Access-Web-App)](concat-function-access-custom-web-app.md)
+- [Verketten-Funktion (benutzerdefinierte Access-Web-App)](concat-function-access-custom-web-app.md)
     
 - [Left-Funktion (benutzerdefinierte Access-Web-App)](left-function-access-custom-web-app.md)
     
 - [Len-Funktion (benutzerdefinierte Access-Web-App)](len-function-access-custom-web-app.md)
     
-- [Untere Funktion (benutzerdefinierte Access-Web-App)](lower-function-access-custom-web-app.md)
+- [Lower-Funktion (benutzerdefinierte Access-Web-App)](lower-function-access-custom-web-app.md)
     
 - [LTrim-Funktion (benutzerdefinierte Access-Web-App)](ltrim-function-access-custom-web-app.md)
     
 - [Replace-Funktion (benutzerdefinierte Access-Web-App)](replace-function-access-custom-web-app.md)
     
-- [Replikationsfunktion (benutzerdefinierte Access-Web-App)](replicate-function-access-custom-web-app.md)
+- [Replizieren-Funktion (benutzerdefinierte Access-Web-App)](replicate-function-access-custom-web-app.md)
     
 - [Right-Funktion (benutzerdefinierte Access-Web-App)](right-function-access-custom-web-app.md)
     

@@ -1,47 +1,47 @@
 ---
-title: PidLidTaskOrdinal (kanonische Eigenschaft)
+title: Kanonische PidLidTaskOrdinal-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidTaskOrdinal
 api_type:
 - COM
 ms.assetid: 1021860e-4c40-4c22-aa68-b568d046aaf7
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a64008da93584529916a9303176bba0aa08d3fac
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: c21826a5d9cdc7c2187c5866972109b396ea4919
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357960"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583674"
 ---
-# <a name="pidlidtaskordinal-canonical-property"></a>PidLidTaskOrdinal (kanonische Eigenschaft)
+# <a name="pidlidtaskordinal-canonical-property"></a>Kanonische PidLidTaskOrdinal-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Stellt eine Hilfe zu benutzerdefinierten Sortieraufgaben dar.
+Stellt eine Hilfe für benutzerdefinierte Sortieraufgaben bereit.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidTaskOrdinal  <br/> |
 |Eigenschaftensatz:  <br/> |PSETID_Task  <br/> |
-|Lange ID (LID):  <br/> |0x00008123  <br/> |
+|Long ID (LID):  <br/> |0x00008123  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft wird möglicherweise nicht mehr verwendet. Wenn festgelegt, muss der Wert größer als "0x800186A0" (-2.147.383.648) und kleiner als "0x7FFE7960" (2.147.383.648) sein und muss für Aufgaben im gleichen Ordner eindeutig sein.
+Diese Eigenschaft ist möglicherweise nicht festgelegt. Wenn dieser Wert festgelegt ist, muss er größer als "0x800186A0" (-2.147.383.648) und kleiner als "0x7FFE7960" (2.147.383.648) sein und zwischen Den Aufgaben im selben Ordner eindeutig sein.
   
-Wenn der Client diese Eigenschaft auf eine Zahl unter dem negativen Wert des aktuellen Werts der **PR_ORDINAL_MOST** ([PidTagOrdinalMost](pidtagordinalmost-canonical-property.md))-Eigenschaft des Ordners legt, muss der Client auch PR_ORDINAL_MOST ordner aktualisieren.  
+Wenn der Client diese Eigenschaft auf eine Zahl festlegt, die kleiner als das Negative des aktuellen Werts der **PR_ORDINAL_MOST** ([PidTagOrdinalMost](pidtagordinalmost-canonical-property.md)) -Eigenschaft des Ordners ist, muss der Client auch **PR_ORDINAL_MOST** für den Ordner aktualisieren. 
   
-Die **PR_ORDINAL_MOST-Eigenschaft** des Ordners bietet eine effiziente Möglichkeit, einen eindeutigen Wert zwischen Aufgaben im gleichen Ordner zu ermitteln. 
+Die **PR_ORDINAL_MOST** Eigenschaft des Ordners bietet eine effiziente Möglichkeit, einen eindeutigen Wert zwischen Aufgaben im selben Ordner zu ermitteln. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -49,17 +49,17 @@ Die **PR_ORDINAL_MOST-Eigenschaft** des Ordners bietet eine effiziente Möglichk
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Stellt Eigenschaftensatzdefinitionen und Verweise auf verwandte Exchange Server zur Verfügung.
+> Stellt Eigenschaftssatzdefinitionen und Verweise auf verwandte Exchange Server Protokollspezifikationen bereit.
     
 [[MS-OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
   
-> Definiert mehrere Objekte, die das elektronische Äquivalent von Vorgängen, Vorgangszuordnungen und Vorgangsaktualisierungen modellieren. 
+> Definiert mehrere Objekte, die das elektronische Äquivalent von Aufgaben, Aufgabenzuweisungen und Aufgabenaktualisierungen modellieren. 
     
 ### <a name="header-files"></a>Headerdateien
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -67,9 +67,9 @@ Mapidefs.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

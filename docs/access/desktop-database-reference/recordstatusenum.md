@@ -1,18 +1,18 @@
 ---
-title: RecordStatusEnum (Access Desktop Database Reference)
+title: RecordStatusEnum (Access-Desktopdatenbankreferenz)
 TOCTitle: RecordStatusEnum
 ms:assetid: 302915b8-494d-0be2-6dce-eaf91a0ea8ae
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249080(v=office.15)
 ms:contentKeyID: 48544022
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: a83de7730224c5ecd5080c795d38cf2e9a3305a9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c86a7038fdcabfc5a30eaf79ddf87521b68d8f58
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309380"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557897"
 ---
 # <a name="recordstatusenum"></a>RecordStatusEnum
 
@@ -103,7 +103,7 @@ Gibt den Status eines Datensatzes in Bezug auf Batchaktualisierungen und andere 
 </tr>
 <tr class="even">
 <td><p><strong>adRecOutOfMemory</strong></p></td>
-<td><p>0X8000</p></td>
+<td><p>0x8000</p></td>
 <td><p>Gibt an, dass der Datensatz nicht gespeichert wurde, da der Computer keinen Arbeitsspeicher mehr zur Verfügung hat.</p></td>
 </tr>
 <tr class="odd">
@@ -130,9 +130,9 @@ Gibt den Status eines Datensatzes in Bezug auf Batchaktualisierungen und andere 
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
-AdoEnums. RecordStatus.
+AdoEnums.RecordStatus.
 
 Paket: **com.ms.wfc.data**
 
@@ -147,58 +147,58 @@ Paket: **com.ms.wfc.data**
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums. RecordStatus. CANCELed</p></td>
+<td><p>AdoEnums.RecordStatus.CANCELED</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. RecordStatus. CANTRELEASE</p></td>
+<td><p>AdoEnums.RecordStatus.CANTRELEASE</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. RecordStatus. CONCURRENCYVIOLATION</p></td>
+<td><p>AdoEnums.RecordStatus.CONCURRENCYVIOLATION</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. RecordStatus. dbDELETEd</p></td>
+<td><p>AdoEnums.RecordStatus.DBDELETED</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. RecordStatus. DELETED</p></td>
+<td><p>AdoEnums.RecordStatus.DELETED</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. RecordStatus. INTEGRITYVIOLATION</p></td>
+<td><p>AdoEnums.RecordStatus.INTEGRITYVIOLATION</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. RecordStatus. INVALID</p></td>
+<td><p>AdoEnums.RecordStatus.INVALID</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. RecordStatus. MAXCHANGESEXCEEDED</p></td>
+<td><p>AdoEnums.RecordStatus.MAXCHANGESEXCEEDED</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. RecordStatus. MODIFIED</p></td>
+<td><p>AdoEnums.RecordStatus.MODIFIED</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. RecordStatus. MULTIPLECHANGES</p></td>
+<td><p>AdoEnums.RecordStatus.MULTIPLECHANGES</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. RecordStatus. NEW</p></td>
+<td><p>AdoEnums.RecordStatus.NEW</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. RecordStatus. objectOPEN</p></td>
+<td><p>AdoEnums.RecordStatus.OBJECTOPEN</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. RecordStatus. OK</p></td>
+<td><p>AdoEnums.RecordStatus.OK</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. RecordStatus. OUTOFMEMORY</p></td>
+<td><p>AdoEnums.RecordStatus.OUTOFMEMORY</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. RecordStatus. PENDINGCHANGES</p></td>
+<td><p>AdoEnums.RecordStatus.PENDINGCHANGES</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. RecordStatus. PERMISSIONDENIED</p></td>
+<td><p>AdoEnums.RecordStatus.PERMISSIONDENIED</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. RecordStatus. SCHEMAVIOLATION</p></td>
+<td><p>AdoEnums.RecordStatus.SCHEMAVIOLATION</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. RecordStatus. unMODIFIED</p></td>
+<td><p>AdoEnums.RecordStatus.UNMODIFIED</p></td>
 </tr>
 </tbody>
 </table>

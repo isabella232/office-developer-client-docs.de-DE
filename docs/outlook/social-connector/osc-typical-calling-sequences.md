@@ -5,35 +5,35 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f61960f7-e018-4d2e-8e32-426ed46d9064
-description: In diesem Abschnitt werden die typischen Outlook (Social Connector, OSC) von Mitgliedern in den Erweiterbarkeitsschnittstellen des OSC-Anbieters beschrieben, die von einem OSC-Anbieter implementiert werden.
-ms.openlocfilehash: f7829b710d6840ccd1fa0f990d6e03b2eb879431
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: In diesem Abschnitt wird die Outlook OSC(Social Connector) typische Aufrufsequenzen von Mitgliedern in den OSC-Anbietererweiterungsschnittstellen beschrieben, die ein OSC-Anbieter implementiert.
+ms.openlocfilehash: 5106bc31cab1854cba07d5188a5888ea5f382d50
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33413612"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59566178"
 ---
 # <a name="osc-typical-calling-sequences"></a>Für OSC typische Aufrufsequenzen
 
-In diesem Abschnitt werden die typischen Outlook (Social Connector, OSC) von Mitgliedern in den Erweiterbarkeitsschnittstellen des OSC-Anbieters beschrieben, die von einem OSC-Anbieter implementiert werden. Die typischen Aufrufsequenzen veranschaulichen, wie und wann das OSC solche Schnittstellen und Methoden verwendet, damit Sie besser bestimmen können, wie ein bestimmtes Mitglied auf einer Anbieterergehnbarkeitsschnittstelle implementiert wird. Die tatsächliche Aufrufsequenz kann je nach den von der [ISocialProvider::GetCapabilities-Methode](isocialprovider-getcapabilities.md) zurückgegebenen Funktionen variieren. Beispiele für Funktionen sind: 
+In diesem Abschnitt wird die Outlook OSC(Social Connector) typische Aufrufsequenzen von Mitgliedern in den OSC-Anbietererweiterungsschnittstellen beschrieben, die ein OSC-Anbieter implementiert. Die typischen Aufrufsequenzen veranschaulichen, wie und wann osc solche Schnittstellen und Methoden verwendet, um besser zu bestimmen, wie ein bestimmtes Element auf einer Anbietererweiterungsschnittstelle implementiert werden soll. Die tatsächliche Aufrufsequenz kann abhängig von den von der [ISocialProvider::GetCapabilities-Methode zurückgegebenen](isocialprovider-getcapabilities.md) Funktionen variieren. Beispiele für Funktionen sind: 
   
-- Anbieterunterstützung zum Abrufen, Zwischenspeichern oder dynamischen Suchen von Freunden und Aktivitäten aus dem sozialen Netzwerk.
+- Anbieterunterstützung für das Abrufen, Zwischenspeichern oder dynamisches Nachschlagen von Freunden und Aktivitäten aus dem sozialen Netzwerk.
     
-- Die Benutzeroberfläche, die das OSC für die Benutzeranmeldung anzeigen soll.
+- Die Benutzeroberfläche, die der OSC für die Benutzeranmeldung anzeigen soll.
     
-- Der Authentifizierungstyp (z. B. formularbasierte Authentifizierung), den das OSC verwenden soll.
+- Der Authentifizierungstyp (z. B. formularbasierte Authentifizierung), der vom OSC verwendet werden soll.
     
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
-- [Standardauthentifizierung](basic-authentication.md): Beschreibt die typische Anrufsequenz der OSC zur Unterstützung eines Office-Benutzers, der sich bei einem sozialen Netzwerk anmeldet, wenn der OSC-Anbieter die Standardauthentifizierung unterstützt.
+- [Standardauthentifizierung:](basic-authentication.md)Beschreibt die typische Aufrufsequenz des OSC zur Unterstützung eines Office Benutzers, der sich bei einem sozialen Netzwerk anmeldet, wenn der OSC-Anbieter die Standardauthentifizierung unterstützt.
     
-- [Formularbasierte](forms-based-authentication.md)Authentifizierung : Beschreibt die typische Anrufsequenz der OSC zur Unterstützung eines Office-Benutzers, der sich bei einem sozialen Netzwerk anmeldet, wenn der OSC-Anbieter die formularbasierte Authentifizierung unterstützt.
+- [Formularbasierte Authentifizierung:](forms-based-authentication.md)Beschreibt die typische Aufrufsequenz des OSC zur Unterstützung eines Office Benutzers, der sich bei einem sozialen Netzwerk anmeldet, wenn der OSC-Anbieter die formularbasierte Authentifizierung unterstützt.
     
-- [Abrufen](getting-activities.md)von Aktivitäten : Beschreibt die typische Anrufsequenz des OSC zum Synchronisieren der Aktivitäten der Freunde des Office-Benutzers aus einem sozialen Netzwerk, wenn der Anbieter für soziale Netzwerke die Synchronisierung von Aktivitäten unterstützt.
+- Abrufen von [Aktivitäten:](getting-activities.md)Beschreibt die typische Aufrufsequenz des OSC zum Synchronisieren der Aktivitäten der Freunde des Office Benutzers aus einem sozialen Netzwerk, wenn der OSC-Anbieter des sozialen Netzwerks die Synchronisierung von Aktivitäten unterstützt.
     
-- [Abrufen](getting-friends-information.md)von Freundesinformationen : Beschreibt die typische Anrufsequenz des OSC zum Synchronisieren der Freundesliste des Office-Benutzers aus einem sozialen Netzwerk, wenn der OsC-Anbieter für soziale Netzwerke die zwischengespeicherte Synchronisierung von Kontakten unterstützt.
+- Abrufen von [Informationen zu Freunden:](getting-friends-information.md)Beschreibt die typische Anrufsequenz des OSC zum Synchronisieren der Freundesliste des Office Benutzers aus einem sozialen Netzwerk, wenn der OSC-Anbieter des sozialen Netzwerks die zwischengespeicherte Synchronisierung von Kontakten unterstützt.
     
 ## <a name="reference"></a>Referenz
 

@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0f22ccf2-1004-4731-9d68-f66c01b4588b
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1e3d384f35726ff28bb47f3d537c8a7a1dda6dce
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: e1da4bca0307e69c36b9d8db2ee43be2c664aafc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32299433"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614101"
 ---
 # <a name="gettnefstreamcodepage"></a>GetTnefStreamCodepage
 
@@ -21,7 +21,7 @@ ms.locfileid: "32299433"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bestimmt die Codeseite für einen Transport-Neutral Encapsulation Format (TNEF).
+Bestimmt die Codepage für einen Transport-Neutral TNEF-Datenstrom (Encapsulation Format).
   
 |||
 |:-----|:-----|
@@ -41,7 +41,7 @@ HRESULT GetTnefStreamCodepage(
 
  _lpStream_
   
-> [in] Zeiger auf eine OLE **IStream-Schnittstelle** des Speicherdatenstromobjekts, die eine Quelle für eine TNEF-Streamnachricht bietet. 
+> [in] Zeiger auf eine OLE **IStream-Schnittstelle** eines Speicherdatenstromobjekts, die eine Quelle für eine TNEF-Streamnachricht bereitstellt. 
     
  _lpulCodepage_
   
@@ -59,15 +59,15 @@ HRESULT GetTnefStreamCodepage(
     
  **MAPI_E_NOT_ENOUGH_DISK**
   
-> Fehler beim Lesen eines Attributs im TNEF-Stream.
+> Beim Lesen eines Attributs im TNEF-Stream ist ein Fehler aufgetreten.
     
  **MAPI_E_CORRUPT_DATA**
   
-> Entweder war der Datenstrom kein TNEF-Stream, oder es ist ein Fehler beim Lesen des attOemCodepage-Attributs aufgetreten.
+> Entweder war der Datenstrom kein TNEF-Datenstrom, oder beim Lesen des AttOemCodepage-Attributs ist ein Fehler aufgetreten.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie **die GetTnefStreamCodepage-Funktion,** um das **attOemCodepage-Attribut** des TNEF-Datenstroms zu lesen, um die Codeseite und die Untercodeseite zu bestimmen. Wenn **attOemCodepage** nicht gefunden wird, gibt **GetTnefStreamCodepage** eine Codeseite von 437 und eine Untercodeseite von 0 zurück. 
+Verwenden Sie die **GetTnefStreamCodepage-Funktion,** um das **attOemCodepage-Attribut** des TNEF-Datenstroms zu lesen, um die Codeseite und die Untercodeseite zu bestimmen. Wenn **attOemCodepage** nicht gefunden wird, gibt **GetTnefStreamCodepage** die Codepage 437 und die Untercodeseite 0 zurück. 
   
 ## <a name="see-also"></a>Siehe auch
 

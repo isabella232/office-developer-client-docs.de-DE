@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidToDoTitle
 api_type:
 - COM
 ms.assetid: 94cf031f-4c78-441d-9c01-55905b4974e0
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 7ed69d9bab84a5c572026bb9480249c1212e3376
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: b93ff05c13ab9801e9830e36aeecdf942e53d233
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339942"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583639"
 ---
 # <a name="pidlidtodotitle-canonical-property"></a>PidLidToDoTitle (kanonische Eigenschaft)
 
@@ -25,25 +25,25 @@ ms.locfileid: "32339942"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält benutzerspezifikationsfähigen Text, um dieses Nachrichtenobjekt in einer konsolidierten To-Do-Liste zu identifizieren.
+Enthält benutzerdefinierten Text, um dieses Nachrichtenobjekt in einer konsolidierten Aufgabenliste zu identifizieren.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidToDoTitle  <br/> |
 |Eigenschaftensatz:  <br/> |PSETID_Common  <br/> |
-|Lange ID (LID):  <br/> |0x000085A4  <br/> |
+|Long ID (LID):  <br/> |0x000085A4  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft darf nicht für einen Vorgang festgelegt werden. Wenn Sie eine leere Eigenschaft angeben möchten, legen Sie diese Eigenschaft nicht auf die leere Zeichenfolge, sondern löschen Sie sie. 
+Diese Eigenschaft darf nicht für eine Aufgabe festgelegt werden. Um eine leere Eigenschaft anzugeben, legen Sie diese Eigenschaft nicht auf die leere Zeichenfolge fest, sondern löschen Sie sie. 
   
-Wenn ein Nachrichtenobjekt kennzeichnend ist und die Eigenschaft nicht vorhanden ist, sollte ein Client den Wert **von PR_NORMALIZED_SUBJECT** ([PidTagNormalizedSubject](pidtagnormalizedsubject-canonical-property.md)) in diese Eigenschaft schreiben.
+Wenn ein Nachrichtenobjekt gekennzeichnet wird und die Eigenschaft nicht vorhanden ist, sollte ein Client den Wert von **PR_NORMALIZED_SUBJECT** ([PidTagNormalizedSubject](pidtagnormalizedsubject-canonical-property.md)) in diese Eigenschaft schreiben.
   
-Wenn diese Eigenschaft nicht vorhanden ist, sollte ein Client in einer konsolidierten To-Do-Liste den Wert der **PR_NORMALIZED_SUBJECT-Eigenschaft** ersetzen, wenn diese Eigenschaft in der To-Do-Liste angezeigt wird. 
+Wenn diese Eigenschaft in einer konsolidierten Aufgabenliste nicht vorhanden ist, sollte ein Client den Wert der **PR_NORMALIZED_SUBJECT-Eigenschaft** ersetzen, wenn diese Eigenschaft in der Aufgabenliste angezeigt wird. 
   
-Wenn der Client Absenderflags implementiert, sollte diese Eigenschaft bei einem Nachrichtenentwurfsobjekt auf denselben Wert wie **dispidRequest** ([PidLidFlagRequest](pidlidflagrequest-canonical-property.md)) festgelegt werden.
+Wenn der Client in einem Nachrichtenentwurfsobjekt Absenderflags implementiert, sollte diese Eigenschaft auf denselben Wert wie **dispidRequest** ([PidLidFlagRequest](pidlidflagrequest-canonical-property.md)) festgelegt werden.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -51,7 +51,7 @@ Wenn der Client Absenderflags implementiert, sollte diese Eigenschaft bei einem 
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Stellt Eigenschaftensatzdefinitionen und Verweise auf verwandte Exchange Server zur Verfügung.
+> Stellt Eigenschaftssatzdefinitionen und Verweise auf verwandte Exchange Server Protokollspezifikationen bereit.
     
 [[MS-OXOFLAG]](https://msdn.microsoft.com/library/f1e50be4-ed30-4c2a-b5cb-8ff3aaaf9b91%28Office.15%29.aspx)
   
@@ -61,7 +61,7 @@ Wenn der Client Absenderflags implementiert, sollte diese Eigenschaft bei einem 
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -74,9 +74,9 @@ Mapidefs.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Database. PopulatePartial-Methode (DAO)
+title: Database.PopulatePartial-Methode (DAO)
 TOCTitle: PopulatePartial Method
 ms:assetid: fa3227a2-c961-6a98-32b3-5b6e5329a21d
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff837034(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1101186
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 9e0f77c356e0a13c2a1a83986a92c2b25029ecb4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 53ea3f545f27bbbea0ff4fb3ec3f142bd245d727
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294799"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565618"
 ---
-# <a name="databasepopulatepartial-method-dao"></a>Database. PopulatePartial-Methode (DAO)
+# <a name="databasepopulatepartial-method-dao"></a>Database.PopulatePartial-Methode (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -26,7 +26,7 @@ Synchronisiert alle Änderungen in einem Teilreplikat mit dem vollständigen Rep
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . PopulatePartial (****** DbPathName)
+*Ausdruck* . PopulatePartial(***DbPathName***)
 
 *Ausdruck* Eine Variable, die ein **Database** -Objekt darstellt.
 
@@ -49,7 +49,7 @@ Synchronisiert alle Änderungen in einem Teilreplikat mit dem vollständigen Rep
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>DbPathname</em></p></td>
+<td><p><em>DbPathName</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>String</strong></p></td>
 <td><p>Der Pfad und Name des vollständigen Replikats, aus dem Datensätze aufgefüllt werden sollen.</p></td>
@@ -58,9 +58,9 @@ Synchronisiert alle Änderungen in einem Teilreplikat mit dem vollständigen Rep
 </table>
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-When you synchronize a partial replica with a full replica, it is possible to create "orphaned" records in the partial replica. Angenommen, Sie verfügen über eine Customers-Tabelle, deren **[ReplicaFilter](tabledef-replicafilter-property-dao.md)** auf "Region = ' ca '" festgelegt ist. If a user changes a customer's region from CA to NY in the partial replica, and then a synchronization occurs via the **[Synchronize](database-synchronize-method-dao.md)** method, the change is propagated to the full replica but the record containing NY in the partial replica is orphaned because it now doesn't meet the replica filter criteria.
+When you synchronize a partial replica with a full replica, it is possible to create "orphaned" records in the partial replica. Angenommen, Sie haben eine Tabelle **[](tabledef-replicafilter-property-dao.md)** Customers mit dem Wert ReplicaFilter auf Region = 'CA' festgelegt. If a user changes a customer's region from CA to NY in the partial replica, and then a synchronization occurs via the **[Synchronize](database-synchronize-method-dao.md)** method, the change is propagated to the full replica but the record containing NY in the partial replica is orphaned because it now doesn't meet the replica filter criteria.
 
 Mit der **PopulatePartial**-Methode lässt sich das Problem der verwaisten Datensätze vermeiden. Die **PopulatePartial**-Methode ähnelt der **Synchronize**-Methode, synchronisiert allerdings alle Änderungen mit dem vollständigen Repliktat, entfernt alle Datensätze im Teilreplikat, und füllt anschließend das Teilreplikat auf Basis der aktuellen Replikatfilter erneut auf. Auch wenn sich die Replikatfilter nicht geändert haben, werden mit **PopulatePartial** immer sämtliche Datensätze im Teilreplikat entfernt, und dann wird es auf Basis der aktuellen Filter neu aufgefüllt.
 

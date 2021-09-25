@@ -5,13 +5,13 @@ ms.date: 05/17/2019
 ms.audience: Developer
 ms.assetid: 2cfa5a6e-2f5c-440c-b35a-bc7a34648f9c
 description: Project Server 2013 integriert Projektmanagement-Funktionen in eine SharePoint-Farm und ermöglicht die Verwendung von Project Online mit einem clientseitigen Objektmodell (CSOM) sowie einer OData-Schnittstelle für Berichtsdaten.
-localization_priority: Priority
-ms.openlocfilehash: fd940c9ae74e04587cdfa83354b6ee71da21073c
-ms.sourcegitcommit: e2cff03cb13d6c500942897b234db00476a72f18
+ms.localizationpriority: high
+ms.openlocfilehash: 51e106cb31ee7b4d385baf45082638998a3eeae5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34100895"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59566129"
 ---
 # <a name="project-server-architecture"></a>Project Server-Architektur
 
@@ -58,7 +58,7 @@ In Abbildung 1 sind die folgenden Prozesse für das Verwalten von Projekten in S
     
 **Abbildung 1. Verwenden von Projektwebsites als SharePoint-Aufgabenlisten**
 
-![Verwenden von Projektwebsites im Sichtbarkeitsmodus](media/pj15_Architecture_VisibilityMode.gif "Verwenden von Projektwebsites im Sichtbarkeitsmodus")
+![Verwenden von Projektsites im Sichtbarkeitsmodus](media/pj15_Architecture_VisibilityMode.gif "Verwenden von Projektwebsites im Sichtbarkeitsmodus")
 
 <br/>
 
@@ -80,7 +80,7 @@ In Abbildung 2 sind die folgenden Prozesse für das Verwalten von Enterprise-Pro
     
 **Abbildung 2. Verwenden von Projektwebsites mit Vollzugriff**
 
-![Verwenden von Projektwebsites im verwalteten Modus](media/pj15_Architecture_ManagedMode.gif "Verwenden von Projektwebsites im verwalteten Modus")
+![Verwenden von Projektsites im verwalteten Modus](media/pj15_Architecture_ManagedMode.gif "Verwenden von Projektwebsites im verwalteten Modus")
   
 ## <a name="general-architecture"></a>Allgemeine Architektur
 <a name="pj15_Architecture_General"> </a>
@@ -120,11 +120,11 @@ Für Abbildung 3 gelten die folgenden allgemeinen Anmerkungen:
     > [!NOTE]
     > Obwohl die Option `$metadata` für den **ProjectData**-Berichtsdienst gültig ist, wurde die Option `$metadata` für den **ProjectServer**-Dienst des clientseitigen Objektmodells in der veröffentlichten Version von Project Server 2013 entfernt. Weitere Informationen zu REST-Abfragen für das CSOM finden Sie unter [Clientsseitiges Objektmodell (CSOM) für Project Server](client-side-object-model-csom-for-project-2013.md). 
   
-- **PSI-Weiterleitung:** Der programmgesteuerte Zugriff auf das PSI über ein separates WFE wird über die PSI-Weiterleitung realisiert, die eine WCF-Weiterleitung und eine Webdienst-Weiterleitung. Clients, die die ASMX-Schnittstelle verwenden, greifen über die Webdienst-Weiterleitung auf das PSI zu. Clients, die die WCF-Schnittstelle verwenden, greifen über die WCF-Weiterleitung auf das PSI zu. Der programmgesteuerte Zugriff über CSOM, OData und REST wird ebenfalls über die WCF-Weiterleitung weitergereicht. 
+- **PSI-Weiterleitung:**  Der programmgesteuerte Zugriff auf das PSI über ein separates WFE wird über die PSI-Weiterleitung realisiert, die eine WCF-Weiterleitung und eine Webdienst-Weiterleitung. Clients, die das ASMX-Interface verwenden, greifen über die Webdienst-Weiterleitung auf das PSI zu. Clients, die das WCF-Interface verwenden, greifen über die WCF-Weiterleitung auf das PSI zu. Der programmgesteuerte Zugriff über CSOM, OData und REST wird ebenfalls über die WCF-Weiterleitung weitergereicht. 
     
 - **Workflows:** Deklarative Workflows (in SharePoint Designer 2013 definierte Workflows) werden zur Verarbeitung an Workflow-Manager-Client 1.0 ausgelagert. Workflow-Manager-Client 1.0 kann auf einem separaten Server in der SharePoint-Farm, unter Microsoft Azure in der Cloud oder zu Test- oder Demonstrationszwecken auf einem einzelnen Computer mit Project Server ausgeführt werden. Codierte Workflows, die mit Visual Studio 2012 entwickelt wurden, werden in der Workflowlaufzeit in SharePoint verarbeitet, so wie auch in Project Server 2010. Weitere Informationen finden Sie unter [Erste Schritte beim Entwickeln von Project Server-Workflows](getting-started-developing-project-server-workflows.md).
     
-- **Umkreisnetzwerk (DMZ):** In Abbildung 3 ist nicht dargestellt, dass ein lokaler WFE-Server von einer zusätzlichen Firewall in einem Umkreisnetzwerk (auch als demilitarisierte Zone oder DMZ bezeichnet) isoliert werden kann. Ein Umkreisnetzwerk kann Internetclients den Zugriff auf SharePoint und Project Server über eine Firewall erlauben. 
+- **Umkreisnetzwerk:**  Abbildung 3 zeigt nicht, dass ein lokaler WFE-Server durch eine zusätzliche Firewall in einem Umkreisnetzwerk (auch als "demilitarisierte Zone" oder DMZ bezeichnet) isoliert werden kann. Ein Umkreisnetzwerk kann Internetclients den Zugriff auf SharePoint und Project Server über eine Firewall ermöglichen. 
     
 - **SharePoint-Webdienste:** In der Abbildung 3 ist nicht die SharePoint-Infrastruktur dargestellt, z. B. die Back-End-SharePoint-Webdiensteanwendung, die Teil von SharePoint Server 2013 ist. Wenn Sie Project Server installieren, wird die Project-Dienstanwendung den SharePoint-Webdiensten hinzugefügt. 
     
@@ -171,7 +171,7 @@ Abbildung 4 zeigt den Bereich **Verbindungen** im **Internetinformationsdienste 
   
 **Abbildung 4. Front-End-PSI (A) und Back-End-PSI (B) in IIS-Manager**
 
-![Das Front-End- und das Back-End-PSI](media/pj15_Architecture_PSI_IIS.gif "Das Front-End- und das Back-End-PSI")
+![Das Front-End-PSI und das Back-End-PSI](media/pj15_Architecture_PSI_IIS.gif "Die Frontend-PSI und die Backend-PSI")
   
 Clientanwendungen können nicht direkt auf WCF-Dienste für das PSI in der Back-End-Project-Dienstanwendung zugreifen. Wenn für die Clientanwendungen und Komponenten der Branchenanwendungen kein Zugriff auf Project Online erforderlich ist, können diese Proxies für das PSI verwenden. Eine Back-End-URL für die WCF-Schnittstelle des Dienstes **Resource** in Abbildung 4 wäre z. B. `https://ServerName:32843/508c23fb7dfd4c83a8919fae24bc68c5/psi/resource.svc`. Port 32843 ist der Standard-HTTP-Port für die SharePoint-Webdienstanwendung (32844 ist der Port für die HTTPS-Kommunikation). Jedoch sperrt die Datei "web.config" für Project Web App den direkten Zugriff auf Back-End-PSI-Dienste.
   

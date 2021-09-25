@@ -1,16 +1,16 @@
 ---
 title: Kompatibilität zwischen der 32-Bit- und der 64-Bit-Version von Office
-ms.date: 07/04/2021
+ms.date: 09/14/2021
 ms.audience: ITPro
 ms.assetid: ff49dc9e-daf8-43cf-8802-51c2537ed561
 description: Hier finden Sie Informationen zur Kompatibilität zwischen der 32-Bit- und der 64-Bit-Version von Office.
-localization_priority: Priority
-ms.openlocfilehash: e1beaf4217091c1218653df33bd7d99883fb0862
-ms.sourcegitcommit: 8dcb4dc4aa066e3d79bcccd9a9aa6cd3f192b3e1
+ms.localizationpriority: high
+ms.openlocfilehash: 73c0459c2b5da6f8b63e77a4056fbebf83c88708
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53535892"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59574440"
 ---
 # <a name="compatibility-between-the-32-bit-and-64-bit-versions-of-office"></a>Kompatibilität zwischen der 32-Bit- und der 64-Bit-Version von Office
 
@@ -23,7 +23,7 @@ Mit den 64-Bit-Versionen von Office können Sie mehr Daten verschieben, um die F
 Visual Basic for Applications 7.0 (VBA-7) ist in 64-Bit-Versionen für Office veröffentlicht und kann sowohl mit 32-Bit- als auch 64-Bit-Anwendungen verwendet werden. Die in diesem Artikel beschriebenen Änderungen gelten nur für 64-Bit-Versionen von Office. Mit 32-Bit-Versionen von Microsoft Office können Sie die in früheren Versionen von Office integrierten Lösungen verwenden, ohne weitere Änderungen vorzunehmen.
   
 > [!NOTE]
-> Standardmäßig installieren Sie bei der Installation einer 64-Bit-Version von Office auch die 32-Bit-Version, wenn das 64-Bit-System verwendet wird. Sie müssen explizit die Installationsoption für die 64-Bit-Version von Microsoft Office auswählen. 
+> Wenn Sie eine 64-Bit-Version von Office installieren, installieren Sie standardmäßig auch die 32-Bit-Version daneben. Sie müssen explizit die Installationsoption für die 64-Bit-Version von Microsoft Office auswählen. 
   
 In VBA 7 müssen Sie die vorhandenen Windows-API-Anweisungen (**Declare**-Anweisungen) aktualisieren, damit Sie mit der 64-Bit-Version verwendet werden können. Darüber hinaus müssen Sie die Adresszeiger und Anzeigefensterhandles in benutzerdefinierten Typen aktualisieren, die von diesen Anweisungen verwendet werden. Dies sowie Kompatibilitätsprobleme zwischen den 32-Bit- und 64-Bit-Versionen und die zugehörigen Lösungen werden genau in diesem Artikel erläutert. 
   

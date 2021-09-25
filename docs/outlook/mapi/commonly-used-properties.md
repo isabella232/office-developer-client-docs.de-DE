@@ -3,17 +3,17 @@ title: Häufig verwendete Eigenschaften
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 887c5e82-170f-4c3c-986f-465c05fbbdbe
-description: 'Letzte Änderung: 08. November 2011'
-ms.openlocfilehash: 5e9a1832890c65998a1732278367c0e916fb0c5c
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: 'Last modified: November 08, 2011'
+ms.openlocfilehash: 792df6e70b7d67f4ed524cebf0279920ed6ebde5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33409202"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59592627"
 ---
 # <a name="commonly-used-properties"></a>Häufig verwendete Eigenschaften
 
@@ -23,7 +23,7 @@ ms.locfileid: "33409202"
   
 Listen der erforderlichen und optionalen MAPI-Eigenschaften sind an mehreren Stellen dokumentiert.
   
-In den folgenden Schnittstellen finden Sie Listen von Eigenschaften, die Objekten zugeordnet sind, die diese Schnittstellen unterstützen:
+In den folgenden Schnittstellen finden Sie Listen mit Eigenschaften, die Objekten zugeordnet sind, die diese Schnittstellen unterstützen:
   
 - [IABContainer : IMAPIContainer](iabcontainerimapicontainer.md)
     
@@ -43,9 +43,9 @@ In den folgenden Schnittstellen finden Sie Listen von Eigenschaften, die Objekte
     
 - [IProfSect : IMAPIProp](iprofsectimapiprop.md)
     
-Eine Liste der für Tabellen erforderlichen Eigenschaften finden Sie in der Dokumentation für jeden Tabellentyp in [MAPI Tables](mapi-tables.md).
+Listen mit Eigenschaften, die für Tabellen erforderlich sind, finden Sie in der Dokumentation für jeden Tabellentyp in [MAPI-Tabellen.](mapi-tables.md)
   
-Listen der erforderlichen und optionalen Nachrichteneigenschaften für nachrichtenklassen, die von MAPI definiert werden, finden Sie in den folgenden Themen: 
+Listen der erforderlichen und optionalen Nachrichteneigenschaften für von MAPI definierte Nachrichtenklassen finden Sie in den folgenden Themen: 
   
 - [Erforderliche Eigenschaften für alle Nachrichten](required-properties-for-all-messages.md)
     

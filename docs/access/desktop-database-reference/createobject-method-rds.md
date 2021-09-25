@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248905(v=office.15)
 ms:contentKeyID: 48543360
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 47ad61495bcc96b3099af6273796626e9442cbf0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: e5e3fb18aad122d7e4ef5174b724c9fce5a3f729
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295373"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565653"
 ---
 # <a name="createobject-method-rds"></a>CreateObject-Methode (RDS)
 
@@ -38,19 +38,19 @@ Von Remote Data Service werden die folgenden Protokolle unterstützt: HTTP, HTTP
 <tbody>
 <tr class="odd">
 <td><p>HTTP</p></td>
-<td><p><em>Objekt</em> = -Daten<em>Bereich</em>festlegen. CreateObject (&quot;<em>ProgID</em>&quot; &quot; <em>https://awebsrvr</em>, &quot;)</p></td>
+<td><p><em>Set-Objekt</em>  =  <em>DataSpace</em>. CreateObject( &quot; <em>ProgId</em> &quot; , &quot; <em>https://awebsrvr</em> &quot; )</p></td>
 </tr>
 <tr class="even">
 <td><p>HTTPS</p></td>
-<td><p><em>Objekt</em> = -Daten<em>Bereich</em>festlegen. CreateObject (&quot;<em>ProgID</em>&quot; &quot; <em>https://awebsrvr</em>, &quot;)</p></td>
+<td><p><em>Set-Objekt</em>  =  <em>DataSpace</em>. CreateObject( &quot; <em>ProgId</em> &quot; , &quot; <em>https://awebsrvr</em> &quot; )</p></td>
 </tr>
 <tr class="odd">
 <td><p>DCOM</p></td>
-<td><p><em>Objekt</em> = -Daten<em>Bereich</em>festlegen. CreateObject (&quot;<em>ProgID</em>&quot;, &quot; <em>Computername</em>&quot;)</p></td>
+<td><p><em>Set-Objekt</em>  =  <em>DataSpace</em>. CreateObject( &quot; <em>ProgId</em> &quot; , &quot; <em>computername</em> &quot; )</p></td>
 </tr>
 <tr class="even">
 <td><p>In-Process</p></td>
-<td><p><em>Objekt</em> = -Daten<em>Bereich</em>festlegen. CreateObject (&quot;<em>ProgID</em>&quot;, &quot; &quot;)</p></td>
+<td><p><em>Set-Objekt</em>  =  <em>DataSpace</em>. CreateObject( &quot; <em>ProgId</em> &quot; , &quot; &quot; )</p></td>
 </tr>
 </tbody>
 </table>
@@ -63,9 +63,9 @@ Von Remote Data Service werden die folgenden Protokolle unterstützt: HTTP, HTTP
 |*Objekt* |Eine Objektvariable, die zu einem Objekt ausgewertet wird, das den in *ProgID* angegebenen Typ hat.|
 |*DataSpace* |Eine Objektvariable, die ein [RDS.DataSpace](dataspace-object-rds.md)-Objekt darstellt, das zum Erstellen einer Instanz des neuen Objekts verwendet wird.|
 |*ProgID* |Ein **String** -Wert mit dem programmgesteuerten Bezeichner, der ein serverseitiges Geschäftsobjekt angibt, das die Geschäftregeln Ihrer Anwendung implementiert.|
-|*awebsrvr* oder *Computername* |Ein **String** -Wert, der eine URL darstellt, die den Internetinformationsdienste-Webserver (IIS) angibt, auf dem eine Instanz des Server Geschäftsobjekts erstellt wird.|
+|*awebsrvr* oder *Computername* |Ein **String -Wert,** der eine URL darstellt, die den Internetinformationsdienste (IIS)-Webserver identifiziert, auf dem eine Instanz des Server-Geschäftsobjekts erstellt wird.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das *http-Protokoll* ist das standardmäßige Webprotokoll. *Https* ist ein sicheres Webprotokoll. Verwenden Sie das *DCOM-Protokoll* , wenn Sie ein lokales Netzwerk ohne http betreiben. Das *in-Process* -Protokoll ist eine lokale Dynamic Link Library (dll); Es wird kein Netzwerk verwendet.
+Das *HTTP-Protokoll* ist das Standardmäßige Webprotokoll. *HTTPS* ist ein sicheres Webprotokoll. Verwenden Sie das *DCOM-Protokoll,* wenn Sie ein lokales Netzwerk ohne HTTP ausführen. Das *In-Process-Protokoll* ist eine lokale Dynamic Link Library (DLL). Es wird kein Netzwerk verwendet.
 

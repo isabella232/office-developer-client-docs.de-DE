@@ -4,22 +4,22 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3fa79e60-934b-46fd-a305-03fe9428a2c9
-description: Zeigt die aktuellen Formatierungswerte für die Schnellformatierung an, die auf die Form angewendet werden, einschließlich Linienfarbe und Formatvorlage, Füllfarbe und Formatvorlage, Schattenfarbe, Effekten, Schriftart und Stiltyp.
-ms.openlocfilehash: e56d14473077381d331574f0ab098beab0cbe50e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Zeigt die aktuellen Schnellformatierungswerte an, die auf die Form angewendet werden, einschließlich Linienfarbe und Formatvorlage, Füllfarbe und Formatvorlage, Schattenfarbe, Effekte, Schriftart und Formatvorlagentyp.
+ms.openlocfilehash: 3a0cd6aa6cb0905d67d9d2298f096e95569a5ce7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33418099"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607959"
 ---
 # <a name="quick-style-section"></a>Abschnitt "Quick Style"
 
-Zeigt die aktuellen Formatierungswerte für die Schnellformatierung an, die auf die Form angewendet werden, einschließlich Linienfarbe und Formatvorlage, Füllfarbe und Formatvorlage, Schattenfarbe, Effekten, Schriftart und Stiltyp. 
+Zeigt die aktuellen Schnellformatierungswerte an, die auf die Form angewendet werden, einschließlich Linienfarbe und Formatvorlage, Füllfarbe und Formatvorlage, Schattenfarbe, Effekte, Schriftart und Formatvorlagentyp. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Sie können die Form schnell formatieren und dann eine  neue Schnellformatvorlage auswählen (klicken Sie auf der Registerkarte Start in der Gruppe Formenarten auf **Weitere**, und wählen Sie dann eine andere Schnellformatvorlage aus dem Katalog aus). 
+You can Quick Style selecting the shape and then selecting a new Quick Style (on the **Home** tab, in the **Shape Styles** group, click **More**, and then select another Quick Style from the gallery).
   
 

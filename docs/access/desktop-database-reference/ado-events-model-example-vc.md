@@ -1,30 +1,30 @@
 ---
-title: ADO-Ereignismodell Beispiel (VC + +)
+title: Beispiel für das ADO-Ereignismodell (VC++)
 TOCTitle: ADO Events Model example (VC++)
 ms:assetid: 3785406b-844c-419f-e6ac-78aa8c4e78b2
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249132(v=office.15)
 ms:contentKeyID: 48544197
-ms.date: 09/18/2015
+ms.date: 09/18/2021
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 8e47e8961436be44a78596498754e01e3b0677d1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4f16c7367350d3728a893ee58e657f41075d0c2f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283352"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607612"
 ---
-# <a name="ado-events-model-example-vc"></a>ADO-Ereignismodell Beispiel (VC + +)
+# <a name="ado-events-model-example-vc"></a>Beispiel für das ADO-Ereignismodell (VC++)
 
 **Gilt für**: Access 2013, Office 2013
 
-Der Visual C++-Abschnitt der [ADO-Ereignisinstanziierung nach Sprache](https://docs.microsoft.com/office/client-developer/access/desktop-database-reference/ado-event-instantiation-by-language-ado) bietet eine allgemeine Beschreibung der Instanziierung des ADO-Ereignismodells. Nachfolgend sehen Sie ein spezifisches Beispiel für das Instanziieren des Ereignismodells in der durch die ** \#Import** -Direktive erstellten Umgebung.
+Der Visual C++-Abschnitt der [ADO-Ereignisinstanziierung nach Sprache](/office/client-developer/access/desktop-database-reference/ado-event-instantiation-by-language-ado.md) bietet eine allgemeine Beschreibung der Instanziierung des ADO-Ereignismodells. Es folgt ein bestimmtes Beispiel für die Instanziierung des Ereignismodells in der von der **\# Importdirektive** erstellten Umgebung.
 
-Die allgemeine Beschreibung verwendet **adoint.h** als Verweis für Methodensignaturen. Einige Details in der allgemeinen Beschreibung ändern sich jedoch leicht als Ergebnis der Verwendung der ** \#Import** -Direktive:
+Die allgemeine Beschreibung verwendet **adoint.h** als Verweis für Methodensignaturen. Einige Details in der allgemeinen Beschreibung ändern sich jedoch aufgrund der Verwendung der **\# Importdirektive** geringfügig:
 
-- Die ** \#Import** -Direktive löst die **typedef**-und Methodensignatur-Datentypen und-Modifizierer in ihre grundlegenden Formen auf.
+- Die **\# Importdirektive** löst Datentypen und Modifizierer von **TypeDef-Datentypen** und Methodensignaturen in ihre grundlegenden Formen auf.
 
-- Die reinen virtuellen Methoden, die überschrieben werden müssen, werden alle mit **"\_RAW**" vorangestellt.
+- Die reinen virtuellen Methoden, die überschrieben werden müssen, erhalten alle das Präfix **"raw". \_**
 
 Ein Teil des Codes spiegelt einfach den Codierungsstil wider.
 
@@ -34,19 +34,19 @@ Ein Teil des Codes spiegelt einfach den Codierungsstil wider.
 
 - Möglicherweise möchten Sie stabilere Implementierungen von QueryInterface, AddRef und Release.
 
-- ** \_Die \_uuidof ()** -Direktive wird weitgehend verwendet, um Schnittstellen-IDs abzurufen.
+- Die **\_ \_ uuidof()-Direktive** wird umfassend zum Abrufen von Schnittstellen-IDs verwendet.
 
 Schließlich enthält das Beispiel einigen funktionsfähigen Code.
 
 - Das Beispiel wird als Konsolenanwendung geschrieben.
 
-- Sie sollten ihren eigenen Code unter dem Kommentar "//do some work" einfügen.
+- Sie sollten Ihren eigenen Code unter den Kommentar "/ Arbeit erledigen" einfügen.
 
 - Alle Ereignishandler werden standardmäßig auf keine Tätigkeit und den Abbruch weiterer Benachrichtigungen festgelegt. Sie sollten den entsprechenden Code für Ihre Anwendung einfügen und gegebenenfalls Benachrichtigungen zulassen.
 
 <!-- end list -->
 
-```cpp 
+```cpp
  
 // eventmodel.cpp : Defines the entry point for the console application. 
 // 
@@ -551,4 +551,3 @@ int main(int argc, char* argv[])
  return 1; 
 } 
 ```
-

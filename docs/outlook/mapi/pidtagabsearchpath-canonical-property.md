@@ -1,31 +1,31 @@
 ---
-title: PidTagAbSearchPath (kanonische Eigenschaft)
+title: Kanonische PidTagAbSearchPath-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagAbSearchPath
 api_type:
 - HeaderDef
 ms.assetid: dfb7ce1b-8e2f-4360-a7d3-876ff5163c34
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 5e74c3fe337ef60ab2e6ff9811270c7b605dd676
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 43cc95e002f5ed36b8b7d0012a3677450dbf39c7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33427066"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583590"
 ---
-# <a name="pidtagabsearchpath-canonical-property"></a>PidTagAbSearchPath (kanonische Eigenschaft)
+# <a name="pidtagabsearchpath-canonical-property"></a>Kanonische PidTagAbSearchPath-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine Liste der Eintragsbezeichner für Adressbuchcontainer, die zum Auflösen von Namen durchsucht werden sollen. 
+Enthält eine Liste der Eintragsbezeichner für Adressbuchcontainer, die durchsucht werden sollen, um Namen aufzulösen. 
   
 |||
 |:-----|:-----|
@@ -34,9 +34,9 @@ Enthält eine Liste der Eintragsbezeichner für Adressbuchcontainer, die zum Auf
 |Datentyp:  <br/> |PT_MV_BINARY  <br/> |
 |Bereich:  <br/> |Adressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Verwenden Sie diese Eigenschaft nicht. Sie ist für die Verwendung durch MAPI reserviert.
+Verwenden Sie diese Eigenschaft nicht. Sie ist für die Verwendung durch mapi reserviert.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,11 +44,11 @@ Verwenden Sie diese Eigenschaft nicht. Sie ist für die Verwendung durch MAPI re
 
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapidefs.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagContactAddressBookFolderName
 api_type:
 - HeaderDef
 ms.assetid: 6149da2f-6e42-429c-bcdb-d517d21df720
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 0068b579bb570e49c4403baa017c550814af8f9a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 36f2f799b2ef7679ee7c51b4f91a56f3f98f93ad
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33419247"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613625"
 ---
 # <a name="pidtagcontactaddressbookfoldername-canonical-property"></a>PidTagContactAddressBookFolderName (kanonische Eigenschaft)
 
@@ -32,13 +32,13 @@ Enthält einen Ordnernamen, der für Adressbucheinträge verwendet wird.
 |Zugeordnete Eigenschaften:  <br/> |PR_CONTAB_FOLDER_NAME, PR_CONTAB_FOLDER_NAME_W  <br/> |
 |Kennung:  <br/> |0x6613  <br/> |
 |Datentyp:  <br/> |PT_UNICODE, PT_STRING8  <br/> |
-|Bereich:  <br/> |Kontaktadressenbuch  <br/> |
+|Bereich:  <br/> |Kontaktadressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die folgenden Zeichen können nicht in Ordnernamen verwendet werden:
   
-[ ] / \ &amp; ~ ? \* | \<\> " ; : +
+[ ] / \ &amp; ~ ? \* | \< \> " ; : +
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -46,11 +46,11 @@ Die folgenden Zeichen können nicht in Ordnernamen verwendet werden:
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -58,9 +58,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

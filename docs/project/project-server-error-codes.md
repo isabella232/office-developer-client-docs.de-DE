@@ -13,13 +13,13 @@ keywords:
 - psi, Fehlercodes,Fehlercodes, Project Server,PSErrorID,Project Server Interface, Fehlercodes,Project Server, Fehlercodes
 ms.assetid: db78a09c-ebef-47cc-8623-40abe117aa08
 description: Dieses Thema enthält Tabellen mit Fehlercodes zum PSI (Project Server Interface) in Project Server 2013.  Die Tabellen sind nach Funktionsbereich und Fehlercodebereich gegliedert.
-localization_priority: Priority
-ms.openlocfilehash: c61821bcb85fa3bd83601659850577eaa93eda61
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: a36610031e647ea46a18490908617f88608581cf
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301477"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59566108"
 ---
 # <a name="project-server-error-codes"></a>Project Server-Fehlercodes
 
@@ -201,7 +201,7 @@ Project Server 2013-Prozesse und PSI-Methoden besitzen Fehlercodenummern, die in
 
 <a name="pj15_ErrorCodes_ActiveCache"></a>
 
-## <a name="table-4-active-cache"></a>Tabelle 4. Aktiver Cache
+## <a name="table-4-active-cache"></a>Tabelle 4: Aktiver Cache
 
 |Fehlercode: Aktiver Cache|Beschreibung|
 |:-----|:-----|
@@ -223,7 +223,7 @@ Project Server 2013-Prozesse und PSI-Methoden besitzen Fehlercodenummern, die in
 
 <a name="pj15_ErrorCodes_ActiveDirectory"></a>
 
-## <a name="table-5-active-directory-synchronization"></a>Tabelle 5. Active Directory-Synchronisierung
+## <a name="table-5-active-directory-synchronization"></a>Tabelle 5: Active Directory-Synchronisierung
 
 |Fehlercode: Active Directory-Synchronisierung|Beschreibung|
 |:-----|:-----|
@@ -237,7 +237,7 @@ Project Server 2013-Prozesse und PSI-Methoden besitzen Fehlercodenummern, die in
 
 <a name="pj15_ErrorCodes_Admin"></a>
 
-## <a name="table-6-admin-web-service"></a>Tabelle 6. Admin-Webdienst
+## <a name="table-6-admin-web-service"></a>Tabelle 6: Admin-Webdienst
 
 |Fehlercode: Admin-Webdienst|Beschreibung|
 |:-----|:-----|
@@ -334,7 +334,7 @@ Project Server 2013-Prozesse und PSI-Methoden besitzen Fehlercodenummern, die in
 
 <a name="pj15_ErrorCodes_Calendar"></a>
 
-## <a name="table-9-calendar"></a>Tabelle 9. Kalender
+## <a name="table-9-calendar"></a>Tabelle 9: Kalender
 
 |Fehlercode: Kalender|Beschreibung|
 |:-----|:-----|
@@ -416,7 +416,7 @@ Project Server 2013-Prozesse und PSI-Methoden besitzen Fehlercodenummern, die in
 
 <a name="pj15_ErrorCodes_CICO"></a>
 
-## <a name="table-11-check-in-and-check-out"></a>Tabelle 11. Einchecken und Auschecken
+## <a name="table-11-check-in-and-check-out"></a>Tabelle 11. Ein- und Auschecken
 
 |Fehlercode: Einchecken – Auschecken|Beschreibung|
 |:-----|:-----|
@@ -510,7 +510,7 @@ Project Server 2013-Prozesse und PSI-Methoden besitzen Fehlercodenummern, die in
 
 <a name="pj15_ErrorCodes_LookupTables"></a>
 
-## <a name="table-13-lookup-table"></a>Tabelle 13. Nachschlagetabelle
+## <a name="table-13-lookup-table"></a>Tabelle 13: Nachschlagetabellen
 
 |Fehlercode: Nachschlagetabelle|Beschreibung|
 |:-----|:-----|
@@ -623,7 +623,7 @@ Alle Fehlercodes in Tabelle 16 sind für den Optimierer, der eine Komponente ist
 
 <a name="pj15_ErrorCodes_Optimizer"></a>
 
-## <a name="table-16-optimizer-project-portfolio-analysis"></a>Tabelle 16. Optimierer (Projektportfolioanalyse)
+## <a name="table-16-optimizer-project-portfolio-analysis"></a>Tabelle 16: Optimierer (Projektportfolioanalyse)
 
 |Fehlercode: Optimierer|Beschreibung|
 |:-----|:-----|
@@ -745,7 +745,7 @@ Die Fehlercodes in Tabelle 17 sind für Planner, eine Komponente, die in der Pro
 
 <a name="pj15_ErrorCodes_Planner"></a>
 
-## <a name="table-17-planner-project-portfolio-analysis"></a>Tabelle 17. Planner (Projektportfolioanalyse)
+## <a name="table-17-planner-project-portfolio-analysis"></a>Tabelle 17: Planner (Projektportfolioanalyse)
 
 |Fehlercode: Planner|Beschreibung|
 |:-----|:-----|
@@ -858,7 +858,7 @@ Die Fehlercodes in Tabelle 17 sind für Planner, eine Komponente, die in der Pro
 |ProjectIsNotPublished = 1051  <br/> |Projekt nicht veröffentlicht.  <br/> |
 |ProjectExceededLWPTaskLimit = 1052  <br/> |Das Vorgangslimit für einen Projektvorschlag (ein kleines Projekt) wurde überschritten.  <br/> |
 |ProjectOptFinishDateInvalid = 1053  <br/> |Der Endtermin in den Projektoptionen ist ungültig.  <br/> |
-|ProjectExceededItemsLimit = 1054  <br/> |Die Anzahl der zu verarbeitenden Elemente ist überschritten. Die Project Server-Dienstanwendung kann **ProjectDataSet** nicht verwenden, um mehr als 1000 Elemente insgesamt in allen Tabellen hinzuzufügen oder zu aktualisieren. Um mehr als 1000 Elemente zu verarbeiten, verwenden Sie Mehrfachaufrufe wie beispielsweise an **QueueUpdateProject**.  <br/> |
+|ProjectExceededItemsLimit = 1054  <br/> |Die Anzahl der zu verarbeitenden Elemente ist überschritten. Die Project Server-Dienstanwendung kann **ProjectDataSet** nicht verwenden, um mehr als 1000 Elemente insgesamt in allen Tabellen hinzuzufügen oder zu aktualisieren. Um mehr als 1000 Elemente zu verarbeiten, verwenden Sie Mehrfachaufrufe wie beispielsweise an **QueueUpdateProject**.<br/> |
 |ProjectColumnNotReadOnly = 1055  <br/> |Die Spalte ist nicht schreibgeschützt.  <br/> |
 |ProjectInvalidOwner = 1056  <br/> |Der Projektbesitzer ist ungültig.  <br/> |
 |ProjectCantEditPctWrkCompForNonWrkRscs = 1057  <br/> |Für einen Vorgang, der keine echten Arbeitszuordnungen enthält, kann **PctWorkComplete** nicht bearbeitet werden.  <br/> |
@@ -911,7 +911,7 @@ Die Fehlercodes in Tabelle 17 sind für Planner, eine Komponente, die in der Pro
 
 <a name="pj15_ErrorCodes_RDS"></a>
 
-## <a name="table-19-reporting-data-service-rds"></a>Table 19. Reporting Data Service (RDS)
+## <a name="table-19-reporting-data-service-rds"></a>Tabelle 19. Berichtsdatendienst (Reporting Data Service, RDS)
 
 |Fehlercode: RDS|Beschreibung|
 |:-----|:-----|
@@ -1047,11 +1047,11 @@ Die Fehlercodes in Tabelle 17 sind für Planner, eine Komponente, die in der Pro
 |ResourcePlanInvalidProjectUID = 30011  <br/> |Die Projekt-GUID für den Ressourcenplan ist ungültig.  <br/> |
 |ResourcePlanResourceAlreadyExists = 30012  <br/> |Die Ressource ist im Ressourcenplan bereits vorhanden.  <br/> |
    
-Die Fehlercodes in Tabelle 22 gelten für die **Rules**-Methoden im **PWA**-Webdienst. Sie werden für interne Zwecke verwendet. 
+Die Fehlercodes in Tabelle 22 gelten für die **Regel**-Methoden im **PWA**-Webdienst. Sie werden intern verwendet. 
 
 <a name="pj15_ErrorCodes_Rules"></a>
 
-## <a name="table-22-rules"></a>Tabelle 22. Regeln
+## <a name="table-22-rules"></a>Tabelle 22: Regeln
 
 |Fehlercode: Regeln|Beschreibung|
 |:-----|:-----|
@@ -1067,7 +1067,7 @@ Die Fehlercodes in Tabelle 22 gelten für die **Rules**-Methoden im **PWA**-Webd
 
 <a name="pj15_ErrorCodes_Security"></a>
 
-## <a name="table-23-security"></a>Tabelle 23. Sicherheit
+## <a name="table-23-security"></a>Tabelle 23: Sicherheit
 
 |Fehlercode: Sicherheit|Beschreibung|
 |:-----|:-----|
@@ -1151,9 +1151,9 @@ Die Fehlercodes in Tabelle 22 gelten für die **Rules**-Methoden im **PWA**-Webd
 |StatusingGetDataForTaskFailed = 3103  <br/> |Abrufen von Daten für Vorgangsstatus nicht erfolgreich.  <br/> |
 |StatusingGetTaskOrAssnCntrFailed = 3104  <br/> |Abrufen von Vorgang oder Zuordnungscenter für Status nicht erfolgreich.  <br/> |
 |StatusingInvalidPIDForProjCntr = 3105  <br/> |Die ID der **Statusing**-Eigenschaft für das Projektcenter ist ungültig.  <br/> |
-|StatusingDeleteAssnFailed = 3106  <br/> |Fehler beim Löschen einer Zuordnung im **Statuserfassung**sprozess.  <br/> |
-|StatusingAssnSaveFailed = 3107  <br/> |Fehler beim Speichern einer Zuordnung im **Statuserfassung**sprozess.  <br/> |
-|StatusingTaskSaveFailed = 3108  <br/> |Fehler beim Speichern eines Vorgangs im **Statuserfassung**sprozess.  <br/> |
+|StatusingDeleteAssnFailed = 3106  <br/> |Fehler beim Löschen einer Zuordnung im **Statuserfassung** sprozess.  <br/> |
+|StatusingAssnSaveFailed = 3107  <br/> |Fehler beim Speichern einer Zuordnung im **Statuserfassung** sprozess.  <br/> |
+|StatusingTaskSaveFailed = 3108  <br/> |Fehler beim Speichern eines Vorgangs im **Statuserfassung** sprozess.  <br/> |
 |StatusingInvalidPID = 3109  <br/> |Die ID der **Statusing**-Eigenschaft ist ungültig.  <br/> |
 |StatusingSetDataValueInvalid = 3111  <br/> |Der **Statusing**-Datenwert ist ungültig.  <br/> |
 |StatusingSetDataFailed = 3112  <br/> |Fehler beim Festlegen des **Statusing**-Datenwerts.  <br/> |
@@ -1162,13 +1162,13 @@ Die Fehlercodes in Tabelle 22 gelten für die **Rules**-Methoden im **PWA**-Webd
 |StatusingInvalidApprovalType = 3115  <br/> |Der Typ der Statusgenehmigung ist ungültig.  <br/> |
 |StatusingInternalError = 3116  <br/> |Interner Verarbeitungsfehler in einer **Statusing**-Methode.  <br/> |
 |StatusingInvalidUpdateData = 3117  <br/> |Die Aktualisierungsdaten in einer **Statusing**-Methode sind ungültig.  <br/> |
-|StatusingProjectUpdateFailed = 3118  <br/> |Fehler bei der **Statuserfassung**saktualisierung des Projekts.  <br/> |
+|StatusingProjectUpdateFailed = 3118  <br/> |Fehler bei der **Statuserfassung** saktualisierung des Projekts.  <br/> |
 |StatusingInvalidPreviewData = 3119  <br/> |Die **Statusing**-Vorschaudaten sind ungültig.  <br/> |
 |StatusingInvalidTransaction = 3120  <br/> |Die **Statusing**-Transaktion ist ungültig.  <br/> |
 |StatusingTooManyResults = 3121  <br/> |Zu viele Ergebnisse. Es würden mehr als 5.000 Zeilen beim Lesen von Statusdaten mit Zeitphasen zurückgegeben.  <br/> |
-|StatusingInvalidInterval = 3122  <br/> |Das Intervall in einer **Statusing**-Methode ist ungültig. Das Intervall muss in Minuten angegeben werden und größer null sein.  <br/> |
-|StatusingApplyUpdatesFailed = 3123  <br/> |Fehler beim Anwenden von **Statuserfassung**saktualisierungen beim Einstellen der Anforderung in die Warteschlange.  <br/> |
-|StatusingApplyUpdatesFailure = 3124  <br/> |Fehler beim Anwenden von **Statuserfassung**saktualisierungen während der Warteschlangenverarbeitung.  <br/> |
+|StatusingInvalidInterval = 3122  <br/> |Das Intervall in einer **Statusing**-Methode ist ungültig. Das Intervall muss in Minuten und größer als null sein.<br/> |
+|StatusingApplyUpdatesFailed = 3123  <br/> |Fehler beim Anwenden von **Statuserfassung** saktualisierungen beim Einstellen der Anforderung in die Warteschlange.  <br/> |
+|StatusingApplyUpdatesFailure = 3124  <br/> |Fehler beim Anwenden von **Statuserfassung** saktualisierungen während der Warteschlangenverarbeitung.  <br/> |
 |StatusingInvalidWorkData = 3125  <br/> |Die Arbeitsdaten für **Statusing** (Statuserfassung) sind ungültig.  <br/> |
 |StatusingMissingNameAttribute = 3126  <br/> |Fehlendes Attribut "Name" für **Statusing** (Statuserfassung).  <br/> |
 |StatusingInvalidNameAttribute = 3127  <br/> |Das Attribut "Name" für **Statusing** (Statuserfassung) ist ungültig.  <br/> |
@@ -1264,7 +1264,7 @@ Die Fehlercodes in Tabelle 26 gelten für die **StatusReports**-Methoden im **PW
 
 <a name="pj15_ErrorCodes_UserDelegation"></a>
 
-## <a name="table-29-user-delegation"></a>Tabelle 29. Benutzerdelegierung 
+## <a name="table-29-user-delegation"></a>Tabelle 29: Benutzerdelegierung 
 
 |Fehlercode: Benutzerdelegierung|Beschreibung|
 |:-----|:-----|
@@ -1282,7 +1282,7 @@ Die Fehlercodes in Tabelle 26 gelten für die **StatusReports**-Methoden im **PW
 
 <a name="pj15_ErrorCodes_Workflow"></a>
 
-## <a name="table-30-workflow"></a>Tabelle 30. Workflow 
+## <a name="table-30-workflow"></a>Tabelle 30: Workflow 
 
 |Fehlercode: Workflow|Beschreibung|
 |:-----|:-----|
@@ -1333,7 +1333,7 @@ Die Fehlercodes in Tabelle 26 gelten für die **StatusReports**-Methoden im **PW
 |EnterpriseProjectTypeCannotDeleteEnterpriseProjectType = 35203  <br/> |Enterprise-Projekttyp kann nicht gelöscht werden.  <br/> |
 |EnterpriseProjectTypeCannotCreateMultipleEnterpriseProjectTypes = 35204  <br/> |Es können nicht mehrere Enterprise-Projekttypen erstellt werden.  <br/> |
 |EnterpriseProjectTypeCannotUpdateMultipleEnterpriseProjectTypes = 35205  <br/> |Es können nicht mehrere Enterprise-Projekttypen aktualisiert werden.  <br/> |
-|EnterpriseProjectTypeInvalidCreatePDPUid = 35206  <br/> |Eine Enterprise-Projektvorlage (EPT) erfordert eine zugehörige Projektdetailseite (PDP), um ein Projekt mithilfe der EPT zu erstellen. Wenn die EPT für einen Workflow ist, tritt dieser Fehler während der ETP-Überprüfung auf, wenn die Projektdetailseite (PDP) nicht vom Typ *Erstellen* ist. Andere PDP-Typen sind *Normal* zum Bearbeiten eines Projekts und *Workflowstatus* zur Anzeigen der Details eines mit dem Workflow in Zusammenhang stehenden Projekts.  <br/> |
+|EnterpriseProjectTypeInvalidCreatePDPUid = 35206  <br/> |Eine Enterprise Project-Vorlage (EPT) erfordert eine zugehörige Projektdetailseite (PDP), um ein Projekt mit der EPT erstellen zu können. Ist die EPT für einen Workflow bestimmt, tritt dieser Fehler während der EPT-Prüfung auf, wenn die Projektdetailseite (PDP) nicht vom Typ *Create* ist. Weitere PDP-Typen sind *Normal* zum Bearbeiten eines Projekts und *Workflow Status* zum Anzeigen von Details eines projektbezogenen Workflows.<br/> |
 |EnterpriseProjectTypeInvalidProjectPlanTemplateUid = 35207  <br/> |Die [ENTERPRISE_PROJECT_PLAN_TEMPLATE_UID](https://msdn.microsoft.com/library/WebSvcWorkflow.WorkflowDataSet.EnterpriseProjectTypeRow.ENTERPRISE_PROJECT_PLAN_TEMPLATE_UID.aspx) ist ungültig.  <br/> |
 |EnterpriseProjectTypeInvalidWorkspaceTemplateName = 35208  <br/> |Der [ENTERPRISE_PROJECT_WORKSPACE_TEMPLATE_NAME](https://msdn.microsoft.com/library/WebSvcWorkflow.WorkflowDataSet.EnterpriseProjectTypeRow.ENTERPRISE_PROJECT_WORKSPACE_TEMPLATE_NAME.aspx) ist ungültig.  <br/> |
 |EnterpriseProjectTypeInvalidWorkflowAssociationUid = 35209  <br/> |Die [WORKFLOW_ASSOCIATION_UID](https://msdn.microsoft.com/library/WebSvcWorkflow.WorkflowDataSet.EnterpriseProjectTypeRow.WORKFLOW_ASSOCIATION_UID.aspx) ist ungültig.  <br/> |
@@ -1345,9 +1345,9 @@ Die Fehlercodes in Tabelle 26 gelten für die **StatusReports**-Methoden im **PW
 |EnterpriseProjectTypeCannotDeleteDefault = 35215  <br/> |Der standardmäßige Enterprise-Projekttyp kann nicht gelöscht werden.  <br/> |
 |EnterpriseProjectTypeCannotChangeDefault = 35216  <br/> |Der standardmäßige Enterprise-Projekttyp kann nicht geändert werden.  <br/> |
 |EnterpriseProjectTypeHasProjectsCannotDelete = 35217  <br/> |Ein Enterprise-Projekttyp, der Projekte enthält, kann nicht gelöscht werden.  <br/> |
-|EnterpriseProjectTypeCreatePDPIsRequired = 35218  <br/> |Eine Enterprise-Projektvorlage (EPT) für einen Workflow erfordert eine zugehörige Projektdetailseite (PDP) vom Typ *Erstellen*, um ein Projekt mithilfe der EPT zu erstellen. Dieser Fehler tritt auf, wenn die PDP nicht in der EPT-Definition enthalten ist. Andere PDP-Typen sind *Normal* zum Bearbeiten eines Projekts und *Workflowstatus* zur Anzeigen der Details eines mit dem Workflow in Zusammenhang stehenden Projekts.  <br/> |
+|EnterpriseProjectTypeCreatePDPIsRequired = 35218  <br/> |Eine Enterprise-Projektvorlage (EPT) für einen Workflow erfordert eine zugehörige Projektdetailseite (PDP) vom Typ *Create*, um eine Projekt mit der EPT zu erstellen. Dieser Fehler tritt auf, wenn die PDP nicht in der EPT-Definition eingeschlossen ist. Weitere PDP-Typen sind *Normal* zum Bearbeiten eines Projekts und *Workflow Status* zum Anzeigen von Details eines projektbezogenen Workflows.<br/> |
 |EnterpriseProjectTypeOnlyOneCreatePDPAllowed = 35219  <br/> |Die EPT-Definition lässt nur eine Projektdetailseite vom Typ *Create* zu.  <br/> |
-|EnterpriseProjectTypeHasWorkflowOnlyCreatePDPAllowed = 35220  <br/> |Eine Enterprise-Projektvorlage (EPT) für einen Workflow erfordert eine zugehörige Projektdetailseite (PDP) vom Typ *Erstellen*, um ein Projekt mithilfe der EPT zu erstellen. Dieser Fehler tritt auf, wenn die PDP in der EPT-Definition des Workflows einen anderen Typ aufweist. Andere PDP-Typen sind *Normal* zum Bearbeiten eines Projekts und *Workflowstatus* zur Anzeigen der Details eines mit dem Workflow in Zusammenhang stehenden Projekts.  <br/> |
+|EnterpriseProjectTypeHasWorkflowOnlyCreatePDPAllowed = 35220  <br/> |Eine Enterprise-Projektvorlage (EPT) für einen Workflow erfordert eine zugehörige Projektdetailseite (PDP) vom Typ *Create*, um eine Projekt mit der EPT zu erstellen. Dieser Fehler tritt auf, wenn die PDP in der EPT-Definition des Workflows von einem anderen Typ ist. Weitere PDP-Typen sind *Normal* zum Bearbeiten eines Projekts und *Workflow Status* zum Anzeigen von Details eines projektbezogenen Workflows.<br/> |
 |EnterpriseProjectTypeInvalidData = 35221  <br/> |Das **WorkflowDataSet** für den Enterprise-Projekttyp enthält Daten, die ungültig sind.  <br/> |
 |EnterpriseProjectNoDefaultEnterpriseProjectTypeDefined = 35222  <br/> |Es ist kein standardmäßiger Enterprise-Projekttyp definiert  <br/> |
 |EnterpriseProjectTypeAtLeastOnePDPIsRequired = 35223  <br/> |Mindestens eine Projektdetailseite ist für den Enterprise-Projekttyp erforderlich.  <br/> |
@@ -1372,7 +1372,7 @@ Die Fehlercodes in Tabelle 26 gelten für die **StatusReports**-Methoden im **PW
 |WSSURIInvalidFormat = 16409  <br/> |Das Format für eine SharePoint-Webanwendung-URI ist ungültig.  <br/> |
 |WSSSyncReportingDataFailed = 16410  <br/> |Fehler beim Synchronisieren der Berichtsdaten für SharePoint.  <br/> |
 |WSSWorkspaceUrlPathTooLong = 16411  <br/> |URL-Pfad des SharePoint-Projektarbeitsbereichs ist zu lang.  <br/> |
-|WSSWorkspaceNameContainsIllegalChars = 16412  <br/> |Mindestens ein Zeichen im Namen einer SharePoint-Projektsite ist ungültig. Die folgende Zeichen sind in einem Projektnamen nicht gültig: / " : \< \> | , . ' ? \* #  <br/> |
+|WSSWorkspaceNameContainsIllegalChars = 16412  <br/> |Mindestens ein Zeichen im Namen einer SharePoint-Projektsite ist ungültig. Die folgenden Zeichen sind in einem Projektnamen nicht gültig: / " : \< \> | , . ' ? \* #  <br/> |
 |WSSInvalidWssServerUid = 16413  <br/> |Die SharePoint Server-GUID ist ungültig.  <br/> |
 |WSSSyncUsersFailed = 16414  <br/> |Project Server-Benutzer konnten nicht mit SharePoint synchronisiert werden.  <br/> |
 |WSSWrongWebTemplateLCID = 16415  <br/> |Die Gebietsschema-ID der SharePoint-Webvorlage (Sprachen-ID) ist ungültig.  <br/> |
@@ -1397,7 +1397,7 @@ Die Fehlercodes in Tabelle 26 gelten für die **StatusReports**-Methoden im **PW
 |WSSOLPDeleteWebObjectLinkError = 18001  <br/> |Fehler beim Löschen einer Webobjektverknüpfung im SharePoint-Objekt Link Provider.  <br/> |
 |WSSInvalidPermissionsToWssList = 18002  <br/> |Berechtigungen gelten nicht für die SharePoint-Liste.  <br/> |
 |WSSWebIsNotUnderDefaultCollection = 18003  <br/> |Die SharePoint-Webanwendung ist nicht in der Standardsammlung.  <br/> |
-|WSSWorkspaceUrlIsNotUnderPrimaryCollection = 18004  <br/> |Die angegebene Workspace-URL ist nicht in der Websitesammlung, die mit dieser Instanz von project server verknüpft ist. Dies wird vom aktuellen Berechtigungsmodus gefordert.  <br/> |
+|WSSWorkspaceUrlIsNotUnderPrimaryCollection = 18004  <br/> |Die angegebene Arbeitsbereichs-URL befindet sich nicht in der Websitesammlung, die dieser Instanz des Projektservers zugeordnet ist. Dies ist für den aktuellen Berechtigungsmodus erforderlich.  <br/> |
 |WSSWorkspacesMustBeRestrictedToDefaultCollection = 18005  <br/> |Arbeitsbereiche müssen im aktuellen Berechtigungsmodus auf die Standardwebsitesammlung beschränkt sein.  <br/> |
 
 <a name="pj15_ErrorCodes_ASMXExample"> </a>

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagProviderParentItemId
 api_type:
 - COM
 ms.assetid: 6adb8e85-ae56-4542-8b19-ed3cfe7fe522
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 0f99cf38e65c75ce1ba74bf72d88e19f4fbfa03a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 3a0c8af1cc36fe7f3e4c97023381e0036fed18ed
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33433416"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59574818"
 ---
 # <a name="pidtagproviderparentitemid-canonical-property"></a>PidTagProviderParentItemId (kanonische Eigenschaft)
 
@@ -32,11 +32,11 @@ Gibt einen Bezeichner für das übergeordnete Element eines Ordners oder eines E
 |Zugeordnete Eigenschaften:  <br/> |PR_PROVIDER_PARENT_ITEMID  <br/> |
 |Kennung:  <br/> |0x0EA4  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
-|Bereich:  <br/> |MAPI nicht durchlässig  <br/> |
+|Bereich:  <br/> |MAPI nicht datenübertragungsfähig  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Store können einen Wert für diese Eigenschaft für ein übergeordnetes Element eines Ordners oder Elements angeben, der Wert sollte jedoch zwischen Sitzungen gleich bleiben. Store verwenden diese Eigenschaft, um suchergebnisse zu identifizieren, die von einer Suchmaschine zurückgegeben werden.
+Store Anbieter können einen Wert für diese Eigenschaft für ein übergeordnetes Element eines Ordners oder Elements angeben, aber der Wert sollte zwischen Sitzungen gleich bleiben. Store Anbieter verwenden diese Eigenschaft, um Suchergebnisse zu identifizieren, die von einer Suchmaschine zurückgegeben werden.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,11 +44,11 @@ Store können einen Wert für diese Eigenschaft für ein übergeordnetes Element
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

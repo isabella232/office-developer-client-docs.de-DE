@@ -1,20 +1,20 @@
 ---
-title: Connection-Objekt (ADO)-Referenz
+title: Connection-Objektreferenz (ADO)
 TOCTitle: Connection object (ADO)
 ms:assetid: 817875e9-0970-4d26-8c35-6c6257279bd0
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249556(v=office.15)
 ms:contentKeyID: 48545950
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 9024d2e226b4b30e2dce3b12e41f87b84127361c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 78f2881d4e8fa9c04846e24648d1e146bcbe95e2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295898"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565758"
 ---
-# <a name="connection-object-ado-reference"></a>Connection-Objekt (ADO)-Referenz
+# <a name="connection-object-ado-reference"></a>Connection-Objektreferenz (ADO)
 
 **Gilt für**: Access 2013, Office 2013
 

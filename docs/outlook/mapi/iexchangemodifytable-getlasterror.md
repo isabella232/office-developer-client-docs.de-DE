@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IExchangeModifyTable.GetLastError
 api_type:
 - COM
 ms.assetid: b850dc08-73c3-4b19-ae29-1892d6a2ff2f
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 8d5d4895e4440945896ee4f2212c5fca6da8610d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: a92089c9df921259b0df638ec94b118fa53276cf
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424511"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613926"
 ---
 # <a name="iexchangemodifytablegetlasterror"></a>IExchangeModifyTable::GetLastError
 
@@ -37,9 +37,9 @@ HRESULT GetLastError(
 
 ## <a name="parameters"></a>Parameter
 
- _hResult_
+ _Hresult_
   
-> [in] Der Rückgabewert der methode, die fehlgeschlagen ist.
+> [in] Der Rückgabewert der fehlgeschlagenen Methode.
     
  _ulFlags_
   
@@ -47,7 +47,7 @@ HRESULT GetLastError(
     
  _lppMAPIError_
   
-> [out] Zeigt auf eine [MAPI MAPIERROR-Struktur,](mapierror.md) die Informationen zum letzten Fehler enthält, der für ein Tabellenobjekt aufgetreten ist. 
+> [out] Verweist auf eine MAPI [MAPIERROR-Struktur,](mapierror.md) die Informationen zum letzten Fehler enthält, der für ein Tabellenobjekt aufgetreten ist. 
     
 ## <a name="see-also"></a>Siehe auch
 

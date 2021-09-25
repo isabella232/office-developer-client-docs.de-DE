@@ -1,25 +1,25 @@
 ---
-title: Benachrichtigung über eingestellte Inhalte (Content Retired Notice, MAPI)
+title: Hinweis zu Inhalten eingestellt (MAPI)
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2dd5d24d-0fbb-43bd-bc41-93c29536e342
-description: 'Letzte Änderung: 05. Oktober 2012'
-ms.openlocfilehash: 262955c0c2753dd69e874ab60246b3ed50500dbc
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: 'Last modified: October 05, 2012'
+ms.openlocfilehash: 3f0bc95d66ebb9c0346d648305d0eaa295ce6d65
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33409993"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59592662"
 ---
-# <a name="content-retired-notice-mapi"></a>Benachrichtigung über eingestellte Inhalte (Content Retired Notice, MAPI)
+# <a name="content-retired-notice-mapi"></a>Hinweis zu Inhalten eingestellt (MAPI)
 
 
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Der Inhalt, den Sie anzeigen möchten, ist nicht mehr verfügbar. Er wurde möglicherweise gelöscht oder durch eine aktuellere Version ersetzt. Erkunden Sie diesen Satz von Links, um Sie auf den ersten Weg zu machen.
+Der Inhalt, den Sie anzeigen möchten, ist nicht mehr verfügbar. Er wurde möglicherweise gelöscht oder durch eine aktuellere Version ersetzt. Erkunden Sie diese Gruppe von Links, um Sie auf dem laufenden zu halten.
   
 ## <a name="microsoft-outlook-2013-messaging-api-mapi-reference"></a>Referenz zur Microsoft Outlook 2013-MAPI (Messaging-API)
 

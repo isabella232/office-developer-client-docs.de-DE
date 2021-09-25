@@ -6,35 +6,35 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251455
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7db7a8ed-50a9-8495-b978-42a2fddb466a
-description: Nimmt einen Punkt an, der in den lokalen Koordinaten eines Shapes definiert ist, und gibt den entsprechenden Punkt zurück, der in den lokalen Koordinaten der Form ausgedrückt wird, die der Formel zugeordnet ist.
-ms.openlocfilehash: 4728e5f8301c6ef10ddb0c14b6c0868a7a48b2a7
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Nimmt einen in den lokalen Koordinaten eines Shapes definierten Punkt an und gibt den entsprechenden Punkt zurück, der in den lokalen Koordinaten des der Formel zugeordneten Shapes ausgedrückt wird.
+ms.openlocfilehash: 82a399a3e50aa94a9d158260bd9292a026af4017
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33422425"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565975"
 ---
 # <a name="loc-function-visioshapesheet"></a>LOC-Funktion(VisioShapeSheet)
 
-Nimmt einen Punkt an, der in den lokalen Koordinaten eines Shapes definiert ist, und gibt den entsprechenden Punkt zurück, der in den lokalen Koordinaten der Form ausgedrückt wird, die der Formel zugeordnet ist. 
+Nimmt einen in den lokalen Koordinaten eines Shapes definierten Punkt an und gibt den entsprechenden Punkt zurück, der in den lokalen Koordinaten des der Formel zugeordneten Shapes ausgedrückt wird. 
   
 ## <a name="syntax"></a>Syntax
 
-LOC(** *Point* ** ) 
+LOC(** *point* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _point_ <br/> |Erforderlich  <br/> |**String** <br/> | Ein Punkt, der in den lokalen Koordinaten eines Shapes definiert ist.  <br/> |
+| _Punkt_ <br/> |Erforderlich  <br/> |**String** <br/> | Ein Punkt, der in den lokalen Koordinaten eines Shapes definiert ist.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
 Zeichenfolge
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Lokale Koordinaten werden von der unteren linken Ecke des Auswahlrechtecks eines Shapes gemessen. Beide Shapes müssen sich auf demselben Zeichenblatt befinden.
   
