@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251728
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 102cce17-43ee-e313-3412-a72d6ee18fe6
 description: Legt fest, ob der Text überstrichen ist.
-ms.openlocfilehash: d5df39c2f12890d5fb4881346516abdb4f2b8099
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 4cf5c75f15fd9e40f5c59c9ff679de3de1dd9ae9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33431645"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59623313"
 ---
 # <a name="overline-cell-character-section"></a>Zelle "Overline" (Abschnitt "Character")
 
@@ -25,22 +25,22 @@ Legt fest, ob der Text überstrichen ist.
 |TRUE  <br/> |Text ist überstrichen.  <br/> |
 |FALSE  <br/> |Text ist nicht überstrichen.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Sie können den Wert dieser Zelle auch festlegen, indem Sie das Dialogfeld **Text** verwenden (klicken Sie dazu auf der Registerkarte **Start** auf den Pfeil neben **Schriftart**). 
   
-Verwenden Sie zum Erhalten eines Verweises auf die Zelle "Überline" anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft:** 
+Um einen Verweis auf die Zelle "Overline" anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Char.Overline[ *i*  ] wobei  *i*  = <1>, 2. 3...  <br/> |
+|Zellenname:  <br/> |Char.Overline[ *i*  ] where  *i*  = <1>, 2. 3...  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Überleitungszelle nach Index aus einem Programm zu erhalten: 
+Um einen Verweis auf die Zelle "Overline" anhand des Indexes eines Programms abzurufen, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 |Abschnittsindex:  <br/> |**visSectionCharacter** <br/> |
-|Zeilenindex:  <br/> |**visRowCharacter**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
+|Zeilenindex:  <br/> |**visRowCharacter**  +   *i* where *i* = 0, 1, 2...  <br/> |
 |Zellenindex:  <br/> |**visCharacterOverline** <br/> |
    
 

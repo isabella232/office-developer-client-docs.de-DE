@@ -10,13 +10,13 @@ f1_keywords:
 - dao360.chm1052884
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 7ef7f61ef632617b8d64a3fd9c34e5887e50065c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: a13db599846ebb851b2eb60de2baf813fabf0907
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32302961"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565058"
 ---
 # <a name="querydefexecute-method-dao"></a>QueryDef.Execute-Methode (DAO)
 
@@ -243,7 +243,7 @@ In diesem Beispiel demonstrates the **Execute** method when run from both a **Qu
 
 <br/>
 
-Im folgenden Beispiel wird gezeigt, wie eine Parameterabfrage ausgeführt wird. Die Parameter-Auflistung wird verwendet, um den Organization-Parameter der myActionQuery-Abfrage festzulegen, bevor die Abfrage ausgeführt wird.
+The following example shows how to execute a parameter query. The Parameters collection is used to set the Organization parameter of the myActionQuery query before the query is executed.
 
 **Der Beispielcode stammt von:**[Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
 

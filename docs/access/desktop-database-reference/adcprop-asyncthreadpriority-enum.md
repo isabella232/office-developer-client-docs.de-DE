@@ -6,15 +6,15 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249844(v=office.15)
 ms:contentKeyID: 48547143
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 53e51f2386658ee975ec8847f7e5550ac22bbd8e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7fe9de4f997397075d5ded328ddd2ecaae38a365
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32281901"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59586187"
 ---
-# <a name="adcpropasyncthreadpriorityenum"></a>ADCPROP\_-\_ASYNCTHREADPRIORITY-Enumeration
+# <a name="adcprop_asyncthreadpriority_enum"></a>ADCPROP \_ ASYNCTHREADPRIORITY \_ ENUM
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -40,7 +40,7 @@ Verwenden Sie diese Konstanten mit der dynamischen **Recordset**-Eigenschaft **B
 <tbody>
 <tr class="odd">
 <td><p><strong>adPriorityAboveNormal</strong></p></td>
-<td><p>4</p></td>
+<td><p>4 </p></td>
 <td><p>Legt die Priorität zwischen dem normalen Wert und dem Höchstwert fest.</p></td>
 </tr>
 <tr class="even">
@@ -66,7 +66,7 @@ Verwenden Sie diese Konstanten mit der dynamischen **Recordset**-Eigenschaft **B
 </tbody>
 </table>
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
 Paket: **com.ms.wfc.data**
 
@@ -81,19 +81,19 @@ Paket: **com.ms.wfc.data**
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums. AdcPropAsyncThreadPriority. ABOVENORMAL</p></td>
+<td><p>AdoEnums.AdcPropAsyncThreadPriority.ABOVENORMAL</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. AdcPropAsyncThreadPriority. BELOWNORMAL</p></td>
+<td><p>AdoEnums.AdcPropAsyncThreadPriority.BELOWNORMAL</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. AdcPropAsyncThreadPriority. HIGHEST</p></td>
+<td><p>AdoEnums.AdcPropAsyncThreadPriority.HIGHEST</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. AdcPropAsyncThreadPriority. NIEDRIGSTEr Wert</p></td>
+<td><p>AdoEnums.AdcPropAsyncThreadPriority.LOWEST</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. AdcPropAsyncThreadPriority. NORMAL</p></td>
+<td><p>AdoEnums.AdcPropAsyncThreadPriority.NORMAL</p></td>
 </tr>
 </tbody>
 </table>

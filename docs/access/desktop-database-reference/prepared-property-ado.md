@@ -10,13 +10,13 @@ f1_keywords:
 - ado210.chm1231161
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 9541b2d584728c09ee852f628cdfc35f3d170f04
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4e01b46685f2aef25005007736b138ecd50e8404
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301456"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606478"
 ---
 # <a name="prepared-property-ado"></a>Prepared-Eigenschaft (ADO)
 
@@ -25,11 +25,11 @@ ms.locfileid: "32301456"
 
 Gibt an, ob eine kompilierte Version eines Befehls vor dem Ausführen gespeichert werden soll.
 
-## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
+## <a name="settings-and-return-values"></a>Einstellungen- und Rückgabewerte
 
 Legt einen **Boolean**-Wert fest oder gibt den Wert zurück. Ein Wert **True** gibt an, dass der Befehl vorbereitet werden soll.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Verwenden Sie die **Prepared** -Eigenschaft, wenn der Anbieter eine vorbereitete (bzw. kompilierte) Version der in der [CommandText](commandtext-property-ado.md)-Eigenschaft angegebenen Abfrage speichern soll, bevor ein [Command](command-object-ado.md)-Objekt erstmalig ausgeführt wird. Dadurch wird möglicherweise das erste Ausführen des zugehörigen Befehls zwar verlangsamt, aber da der Anbieter nach dem Kompilieren des Befehls die kompilierte Version zum weiteren Ausführen des Befehls verwendet, ergibt sich eine verbesserte Leistung.
 

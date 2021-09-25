@@ -1,23 +1,23 @@
 ---
-title: Abrufen des Nachrichtentexts in komprimiertem RTF und Konvertieren in das systemeigene Format
+title: Abrufen des Nachrichtentexts in komprimierter RTF und Konvertieren in das systemeigene Format
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9408da71-4abf-60cf-5412-58c5ceeb2205
 description: 'Letzte �nderung: Montag, 25. Juni 2012'
-ms.openlocfilehash: e1c9de77c6e9a48326ad6b8f40d7f7a20ca762b0
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 30879323c81f51e80c8e1f66da5c1b424a882c98
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33426114"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59564267"
 ---
-# <a name="retrieve-body-of-message-in-compressed-rtf-and-convert-to-its-native-format"></a>Abrufen des Nachrichtentexts in komprimiertem RTF und Konvertieren in das systemeigene Format
+# <a name="retrieve-body-of-message-in-compressed-rtf-and-convert-to-its-native-format"></a>Abrufen des Nachrichtentexts in komprimierter RTF und Konvertieren in das systemeigene Format
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-In diesem Codebeispiel in Microsoft C++ wird gezeigt, wie Sie die exportierte Microsoft Outlook 2010- oder Microsoft Outlook 2013-Funktion [WrapCompressedRTFStreamEx](wrapcompressedrtfstreamex.md) verwenden, um auf den Textkörper einer Nachricht zu zugreifen, die in komprimiertem RTF gekapselt ist, und um den Textkörper im systemeigenen Format zu erhalten. 
+In diesem Codebeispiel in Microsoft C++ wird gezeigt, wie Sie die exportierte Microsoft Outlook 2010 oder Microsoft Outlook 2013-Funktion [WrapCompressedRTFStreamEx](wrapcompressedrtfstreamex.md) verwenden, um auf den Text einer Nachricht zuzugreifen, die in komprimierter RTF gekapselt ist, und um den Textkörper im systemeigenen Format abzurufen. 
   
 ```cpp
 //These are definitions for the WrapCompressedRTFStreamEx function. 

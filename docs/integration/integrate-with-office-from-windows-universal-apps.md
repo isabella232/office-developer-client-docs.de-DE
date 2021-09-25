@@ -3,15 +3,15 @@ title: Integration in Office von universellen Windows-Apps aus
 manager: soliver
 ms.date: 02/06/2017
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 60b4fa23-0075-4f6a-8bd0-9e53e99432d5
 description: Sie können Ihre Drittanbieter-Apps für die universelle Windows-App-Plattform in Excel Mobile, PowerPoint Mobile und Word Mobile integrieren. Universelle Apps lassen sich in Office-Apps über Windows-Verträge für die Dateiauswahl, Expando-Eigenschaften und Contracts für die Aktualisierung zwischengespeicherter Dateien integrieren.
-ms.openlocfilehash: ad04ccc3ceb6e0f1d53e4aebc12cf9724ab8ab66
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 3c61e5697fad8e79ca8c8a76843880fd79a842c3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32299768"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596722"
 ---
 # <a name="integrate-with-office-from-windows-universal-apps"></a>Integration in Office von universellen Windows-Apps aus
 

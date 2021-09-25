@@ -1,20 +1,20 @@
 ---
-title: Recordset2. BatchCollisionCount-Eigenschaft (DAO)
+title: Recordset2.BatchCollisionCount-Eigenschaft (DAO)
 TOCTitle: BatchCollisionCount Property
 ms:assetid: 997dfbb3-673c-8813-f51b-ab8d95093c4f
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197961(v=office.15)
 ms:contentKeyID: 48546514
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 33650b9fdbaf7fbc9266c8c778199e1138cd5b21
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d318199d29ca6859f4683d83878265c72a89b6c5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307483"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606058"
 ---
-# <a name="recordset2batchcollisioncount-property-dao"></a>Recordset2. BatchCollisionCount-Eigenschaft (DAO)
+# <a name="recordset2batchcollisioncount-property-dao"></a>Recordset2.BatchCollisionCount-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -23,9 +23,9 @@ ms.locfileid: "32307483"
 
 *Ausdruck* . BatchCollisionCount
 
-*Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset2-Objekt** darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft gibt an, wie viele Datensätze auf Konflikte gestoßen sind oder aus einem anderen Grund bei der letzten Aktualisierung nicht aktualisiert werden konnten. Der Wert dieser Eigenschaft entspricht der Anzahl der Lesezeichen in der **[BatchCollisions](recordset2-batchcollisions-property-dao.md)** -Eigenschaft.
 
@@ -35,7 +35,7 @@ Nachdem die Datensätze, die einen Konflikt verursacht haben, korrigiert wurden,
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird mithilfe der **BatchCollisionCount**-Eigenschaft und der **Update**-Methode die Batchaktualisierung veranschaulicht. Konflikte werden durch das Erzwingen der Batchaktualisierung gelöst.
+Dieses Beispiel verwendet die **BatchCollisionCount** -Eigenschaft und die **Update** -Methode, um die Batchaktualisierung zu demonstrieren, wenn Konflikte durch Erzwingen der Batchaktualisierung gelöst werden.
 
 ```vb 
 Sub BatchX() 

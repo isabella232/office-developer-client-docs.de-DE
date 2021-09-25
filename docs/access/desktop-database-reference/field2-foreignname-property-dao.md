@@ -1,5 +1,5 @@
 ---
-title: Field2. ForeignName-Eigenschaft (DAO)
+title: Field2.ForeignName-Eigenschaft (DAO)
 TOCTitle: ForeignName Property
 ms:assetid: 76da233a-efb4-63cd-a2a2-d18d9e2fb2fb
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196027(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1052932
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: a8368165f73fc52c51cf1503da9c2cc02e969bf4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f0cda5a100aadea71600ea6f21f6eac178870982
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292811"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577353"
 ---
-# <a name="field2foreignname-property-dao"></a>Field2. ForeignName-Eigenschaft (DAO)
+# <a name="field2foreignname-property-dao"></a>Field2.ForeignName-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -29,9 +29,9 @@ Mit dieser Eigenschaft wird ein Wert festgelegt oder zurückgegeben, der den Nam
 
 *Ausdruck* . ForeignName
 
-*Ausdruck* Eine Variable, die ein **Field2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Field2**-Objekt darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn das **[Relation](relation-object-dao.md)** -Objekt nicht dem **[Database](database-object-dao.md)** -Objekt sondern das **Field2**-Objekt dem **Relation**-Objekt angefügt wird, ist die **ForeignName**-Eigenschaft nicht schreibgeschützt. Sobald das **Relation**-Objekt der Datenbank angefügt wurde, ist die **ForeignName**-Eigenschaft schreibgeschützt.
 

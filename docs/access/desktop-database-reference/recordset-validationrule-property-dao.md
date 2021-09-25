@@ -1,20 +1,20 @@
 ---
-title: Recordset. ValidationRule-Eigenschaft (DAO)
+title: Recordset.ValidationRule-Eigenschaft (DAO)
 TOCTitle: ValidationRule Property
 ms:assetid: c9250c13-18fe-1ff7-7846-7872c49a1e3b
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff823208(v=office.15)
 ms:contentKeyID: 48547671
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: e73d81cd890930952835ca6529cc3bfb455e6c21
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: dd54fa6b9c8aca40b16185b51dc43adce785c87b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307504"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606065"
 ---
-# <a name="recordsetvalidationrule-property-dao"></a>Recordset. ValidationRule-Eigenschaft (DAO)
+# <a name="recordsetvalidationrule-property-dao"></a>Recordset.ValidationRule-Eigenschaft (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -22,9 +22,9 @@ Legt einen Wert fest, der die Daten in einem Feld überprüft, wenn es geändert
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . ValidationRule
+*Ausdruck* . Validationrule
 
-*Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 
@@ -42,7 +42,7 @@ Für ein **Recordset**-Objekt ist die **ValidationRule**-Eigenschaft schreibgesc
 <thead>
 <tr class="header">
 <th><p>TableDef</p></th>
-<th><p>Verwendung</p></th>
+<th><p>Nutzung</p></th>
 </tr>
 </thead>
 <tbody>
@@ -67,4 +67,4 @@ Die **ValidationRule**-Eigenschaft eines **Recordset**- oder **TableDef**-Objekt
 For a table-type **Recordset** object, the **ValidationRule** property inherits the **ValidationRule** property setting of the **TableDef** object that you use to create the table-type **Recordset** object.
 
 > [!NOTE]
-> Wenn Sie die-Eigenschaft auf eine Zeichenfolge festlegen, die mit einem nicht-ganzzahligen Wert verkettet ist, und die Systemparameter ein nicht-U. S. Decimal-Zeichen wie ein Komma (beispielsweise strRule &gt; = &amp; "Price" lngPrice und lngPrice = 125, 50) angeben, tritt ein Fehler auf, wenn Ihr Code versucht, alle Daten zu überprüfen. Dies liegt daran, dass der Wert während der Verkettung mithilfe des Standard-Dezimaltrennzeichens in eine Zeichenfolge konvertiert wird und Microsoft Access SQL nur US-Dezimaltrennzeichen akzeptiert.
+> Wenn Sie die Eigenschaft auf eine Zeichenfolge festlegen, die mit einem Nicht-Ganzzahlwert verkettet ist, und die Systemparameter eine Nicht-USA angeben. Dezimalzeichen wie z. B. ein Komma (z. B. strRule = "PRICE &gt; " &amp; lngPrice und gifPrice = 125,50) führt zu einem Fehler, wenn Ihr Code versucht, Daten zu überprüfen. Dies liegt daran, dass der Wert während der Verkettung mithilfe des Standard-Dezimaltrennzeichens in eine Zeichenfolge konvertiert wird und Microsoft Access SQL nur US-Dezimaltrennzeichen akzeptiert.

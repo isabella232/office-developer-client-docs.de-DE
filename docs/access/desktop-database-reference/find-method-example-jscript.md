@@ -6,20 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249589(v=office.15)
 ms:contentKeyID: 48546116
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: e70a9bcc90348d6be48b7d681b6273b1fdd9201f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 243f58cf3549f23a493e87116e5524d957cdc5f7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292391"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615467"
 ---
 # <a name="find-method-example-jscript"></a>Find-Methode (Beispiel) (JScript)
 
 
 **Gilt für**: Access 2013, Office 2013
 
-In diesem Beispiel wird die [Find](find-method-ado.md) -Methode des [Recordset](recordset-object-ado.md) -Objekts zum Suchen und Anzeigen der Unternehmen in der ***Northwind*** -Datenbank verwendet, deren Name mit dem Buchstaben "G. Cut" beginnt, und fügen Sie den folgenden Code in den Editor oder einen anderen Text-Editor ein, und speichern Sie ihn als ** FindJS. ASP**.
+In diesem Beispiel wird die [Find-Methode](find-method-ado.md) des [Recordset-Objekts](recordset-object-ado.md) verwendet, um die Unternehmen in der Datenbank ***Northwind** _ zu suchen und anzuzeigen, deren Name mit dem Buchstaben G beginnt. Schneiden Sie den folgenden Code aus, fügen Sie ihn in Editor oder einen anderen Texteditor ein, und speichern Sie ihn als _*FindJS.asp**.
 
 ```javascript 
  

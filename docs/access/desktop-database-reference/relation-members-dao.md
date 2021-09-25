@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff198338(v=office.15)
 ms:contentKeyID: 48546670
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 84e18afe4a11e53d68397efad71ac6136c779143
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 6b44236b61881d8af69a1738b0282d5185b0763a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307037"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59564918"
 ---
 # <a name="relation-members-dao"></a>Relation-Elemente (DAO)
 
@@ -36,8 +36,8 @@ Ein Relation-Objekt stellt eine Beziehung zwischen Feldern in Tabellen oder Abfr
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong><a href="relation-createfield-method-dao.md">CreateField</a></strong></p></td>
-<td><p>Erstellt ein neues <strong><a href="field-object-dao.md">Field</a></strong> -Objekt (nur Microsoft Access-Arbeitsbereiche).</p></td>
+<td><p><strong><a href="relation-createfield-method-dao.md">Createfield</a></strong></p></td>
+<td><p>Erstellt ein neues <strong><a href="field-object-dao.md">Field</a></strong>-Objekt (nur Microsoft Access-Arbeitsbereiche).</p></td>
 </tr>
 </tbody>
 </table>
@@ -58,7 +58,7 @@ Ein Relation-Objekt stellt eine Beziehung zwischen Feldern in Tabellen oder Abfr
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong><a href="relation-attributes-property-dao.md">Attributes</a></strong></p></td>
+<td><p><strong><a href="relation-attributes-property-dao.md">Attribute</a></strong></p></td>
 <td><p>Legt einen Wert fest, der mindestens ein Merkmal eines <strong>Relation</strong>-Objekts angibt, oder gibt den betreffenden Wert zurück. <strong>Long</strong>-Wert mit Lese-/Schreibzugriff.</p></td>
 </tr>
 <tr class="even">
@@ -67,7 +67,7 @@ Ein Relation-Objekt stellt eine Beziehung zwischen Feldern in Tabellen oder Abfr
 </tr>
 <tr class="odd">
 <td><p><strong><a href="relation-foreigntable-property-dao.md">ForeignTable</a></strong></p></td>
-<td><p>Gibt den Namen der Fremdtabelle in einer Beziehung zurück (nur Microsoft Access-Arbeitsbereiche). .</p></td>
+<td><p>Legt den Namen der Fremdtabelle in einer Beziehung fest oder gibt den Namen zurück (gilt nur für Microsoft Access-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="relation-name-property-dao.md">Name</a></strong></p></td>
@@ -78,7 +78,7 @@ Ein Relation-Objekt stellt eine Beziehung zwischen Feldern in Tabellen oder Abfr
 <td><p>Legt einen Wert für ein <strong>Relation</strong>-Objekt fest, der angibt, ob die Beziehung berücksichtigt werden soll, wenn ein Teilreplikat von einem vollständigen Replikat aufgefüllt wird, oder gibt den betreffenden Wert zurück (nur Microsoft Access-Datenbanken). <strong>Boolean</strong>-Wert mit Lese-/Schreibzugriff.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="relation-properties-property-dao.md">Eigenschaften</a></strong></p></td>
+<td><p><strong><a href="relation-properties-property-dao.md">Properties</a></strong></p></td>
 <td><p>Gibt die <strong><a href="properties-collection-dao.md">Properties</a></strong> -Auflistung des angegebenen Objekts zurück. Schreibgeschützt.</p></td>
 </tr>
 <tr class="odd">

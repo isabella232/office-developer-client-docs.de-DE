@@ -7,22 +7,22 @@ ms.topic: reference
 f1_keywords:
 - xlFree
 keywords:
-- xlfree-Funktion [excel 2007]
-localization_priority: Normal
+- xlfree-Funktion [Excel 2007]
+ms.localizationpriority: medium
 ms.assetid: 8ce2eef2-0138-495d-b6cb-bbb727a3cda4
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: de1c75ad65acacd44644e9bfb111b30abd0a578e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 99e3305d81f383c5b532828736b42aa5a146b9ed
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424714"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59564666"
 ---
 # <a name="xlfree"></a>xlFree
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Wird zum Freispeichern von von Microsoft Excel beim Erstellen des Rückgabewerts **XLOPER** XLOPER12 in einem Aufruf von /   [Excel4,](excel4-excel12.md) [Excel4v,](excel4v-excel12v.md) [Excel12](excel4-excel12.md)oder [Excel12v](excel4v-excel12v.md)verwendet. Die **xlFree-Funktion** gibt den Hilfsspeicher frei und setzt den Zeiger auf **NULL zurück,** zerstört aber keine anderen Teile der **XLOPER** /  **XLOPER12**.
+Wird verwendet, um Speicherressourcen freizugeben, die von Microsoft Excel beim Erstellen des **Rückgabewerts XLOPER** /  **XLOPER12** in einem Aufruf von [Excel4](excel4-excel12.md), [Excel4v](excel4v-excel12v.md), [Excel12](excel4-excel12.md)oder [Excel12v](excel4v-excel12v.md)zugeordnet sind. Die **XlFree-Funktion** gibt den Hilfsspeicher frei und setzt den Zeiger auf **NULL** zurück, zerstört jedoch keine anderen Teile der **XLOPER** /  **XLOPER12**.
   
 ```cs
 Excel4(xlFree, 0, n, LPXLOPER px_1, ..., LPXLOPER px_n);
@@ -33,21 +33,21 @@ Excel12(xlFree, 0, n, LPXLOPER12 px_1, ..., LPXLOPER12 px_n);
 
  _px_1, ..., px_n_
   
-Ein oder mehrere **XLOPER** /  **XLOPER12** s, die frei werden sollen. In Excel bis 2003 beträgt die maximale Anzahl von Zeigern, die übergeben werden können, 30. Ab Excel 2007 wird diese Zahl auf 255 erhöht.
+Ein oder mehrere **XLOPER** /  **XLOPER12** s, die freigegeben werden sollen. In Excel Versionen bis 2003 beträgt die maximale Anzahl von Zeigern, die übergeben werden können, 30. Ab Excel 2007 wird dies auf 255 erhöht.
   
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
 Diese Funktion gibt keinen Wert zurück.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Sie müssen alle **XLOPER,** die Sie als Rückgabewert aus **Excel4** oder **Excel4v** erhalten, und alle **XLOPER12,** die Sie als Rückgabewert von **Excel12** oder **Excel12v** erhalten, freigeben, wenn es sich um einen der folgenden Typen handelt: **xltypeStr**, **xltypeMulti** oder **xltypeRef**. Es ist immer sicher, andere Typen frei zu machen, auch wenn sie keinen Zusätzlichen Speicher verwenden, solange Sie sie von **Excel4** oder **Excel12 erhalten haben.**
+Sie müssen jeden **XLOPER, den** Sie als Rückgabewert aus **Excel4** oder **Excel4v** erhalten, und jeden **XLOPER12** freigeben, den Sie als Rückgabewert aus **Excel12** oder **Excel12v** erhalten, wenn es sich um einen der folgenden Typen handelt: **xltypeStr**, **xltypeMulti** oder **xltypeRef**. Es ist immer sicher, andere Typen freizugeben, auch wenn sie keinen Zusätzlichen Speicher verwenden, solange Sie sie aus **Excel4** oder **Excel12** erhalten haben.
   
-Wenn Sie zu Excel einem Zeiger auf einen **XLOPER** /  **XLOPER12** zurückkehren, der weiterhin Excel zugewiesenen Arbeitsspeicher enthält, müssen Sie **xlbitXLFree** festlegen, um sicherzustellen, dass Excel den Arbeitsspeicher freilässt. 
+Wenn Sie einen Zeiger auf einen **XLOPER XLOPER12** Excel, der /   noch Excel freigegebenen Arbeitsspeicher enthält, müssen Sie **xlbitXLFree** festlegen, um sicherzustellen, dass Excel den Arbeitsspeicher freigibt. 
   
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird **GET aufruft. WORKSPACE(1),** um die Plattform zurück, auf der Excel derzeit als Zeichenfolge ausgeführt wird. Der Code kopiert diese zurückgegebene Zeichenfolge in einen Puffer für eine spätere Verwendung. Der Code platziert den Puffer zur späteren Verwendung mit der Excel **xlOPER12.** Schließlich zeigt der Code die Zeichenfolge in einem Warnungsfeld an. 
+In diesem Beispiel wird **GET aufgerufen. WORKSPACE(1)** zum Zurückgeben der Plattform, auf der Excel derzeit als Zeichenfolge ausgeführt wird. Der Code kopiert diese zurückgegebene Zeichenfolge zur späteren Verwendung in einen Puffer. Der Code platziert den Puffer wieder in **XLOPER12,** um ihn später mit der Excel-Funktion zu verwenden. Schließlich zeigt der Code die Zeichenfolge in einem Warnungsfeld an. 
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   

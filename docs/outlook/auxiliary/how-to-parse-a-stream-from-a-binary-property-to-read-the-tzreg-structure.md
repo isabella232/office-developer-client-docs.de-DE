@@ -4,19 +4,19 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9e36e0d9-a28b-5978-0e23-f76e1bf506b5
-description: In diesem Thema wird gezeigt, wie Sie die TZREG-Struktur aus dem in der binären Eigenschaft PidLidTimeZoneStruct gespeicherten dauerhaften Format lesen.
-ms.openlocfilehash: f59251ebc980ca10f4ddce76b34e700bc430540a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: In diesem Thema wird gezeigt, wie Sie die TZREG-Struktur aus dem beibehaltenen Format lesen, das in der binären Eigenschaft PidLidTimeZoneStruct gespeichert ist.
+ms.openlocfilehash: 95f78f2d0ddc24376287f2eaabc2ed0def3395e6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317654"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596617"
 ---
 # <a name="parse-a-stream-from-a-binary-property-to-read-the-tzreg-structure"></a>Analysieren eines Streams aus einer binären Eigenschaft zum Lesen der TZREG-Struktur
 
-In diesem Thema wird gezeigt, wie Sie die [TZREG-Struktur](tzreg.md) aus dem in der binären Eigenschaft [PidLidTimeZoneStruct](https://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx)gespeicherten dauerhaften Format lesen.
+In diesem Thema wird gezeigt, wie Sie die [TZREG-Struktur](tzreg.md) aus dem beibehaltenen Format lesen, das in der binären Eigenschaft [PidLidTimeZoneStruct](https://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx)gespeichert ist.
   
 ```cpp
 TZREG* BinToTZREG(ULONG cbReg, LPBYTE lpbReg)  

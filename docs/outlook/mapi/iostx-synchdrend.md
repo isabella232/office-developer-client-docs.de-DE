@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IOSTX.SyncHdrEnd
 api_type:
 - COM
 ms.assetid: a0beb6eb-7978-c64e-dba1-89f0caf2090e
-description: 'Letzte Änderung: 03. Juli 2012'
-ms.openlocfilehash: 864c2d2dfd17c285b0d8a401d59ce5b7d0463864
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: 'Last modified: July 03, 2012'
+ms.openlocfilehash: d246754dd0ac9b131808b05d5ac669aee0f5d542
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33432772"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59564078"
 ---
 # <a name="iostxsynchdrend"></a>IOSTX::SyncHdrEnd
 
@@ -39,11 +39,11 @@ HRESULT SyncHdrEnd(
   
 > [in] **[IMAPIProgress-Schnittstelle](imapiprogressiunknown.md)** für die Synchronisierung von verschobenen oder kopierten Nachrichten. Die Typdefinition von **LPMAPIPROGRESS** finden Sie unter mapidefs.h. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Bei **[IOSTX::SyncBeg](iostx-syncbeg.md)** gibt der lokale Speicher den Status ["Nachrichtenkopf herunterladen" ein.](download-message-header-state.md) Der Client lädt ein vollständiges Nachrichtenelement herunter (als  *pmsgFull*  in **[HDRSYNC](hdrsync.md)** ). Wenn dies erfolgreich ist, legt der Client *auch ulFlags* in **HDRSYNC als** **HSF_OK.** Bei **IOSTX::SyncHdrEnd** überprüft Outlook das Ergebnis in **HDRSYNC** und verwendet *pprog* und die Informationen in **HDRSYNC,** um den lokalen Nachrichtenkopf zu aktualisieren. 
+Bei **[IOSTX::SyncBeg](iostx-syncbeg.md)** wechselt der lokale Speicher in den Headerstatus der [Downloadnachricht.](download-message-header-state.md) Der Client lädt ein vollständiges Nachrichtenelement herunter (wie *pmsgFull* in **[HDRSYNC).](hdrsync.md)** Wenn dies erfolgreich ist, legt der Client auch  *ulFlags*  in **HDRSYNC** als **HSF_OK** fest. Bei **IOSTX::SyncHdrEnd** überprüft Outlook das Ergebnis in **HDRSYNC** und verwendet *pprog* und die Informationen in **HDRSYNC,** um den lokalen Nachrichtenkopf zu aktualisieren. 
   
-Der lokale Speicher kehrt in den Zustand zurück, in dem er sich vor dem vorherigen **[IOSTX::SyncHdrBeg -Wert auftrat.](iostx-synchdrbeg.md)** 
+Der lokale Speicher kehrt in den Zustand zurück, in dem er sich vor dem vorherigen **[IOSTX::SyncHdrBeg](iostx-synchdrbeg.md)** befand. 
   
 ## <a name="see-also"></a>Siehe auch
 

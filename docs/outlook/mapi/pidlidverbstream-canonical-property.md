@@ -1,37 +1,37 @@
 ---
-title: PidLidVerbStream (kanonische Eigenschaft)
+title: Kanonische PidLidVerbStream-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidVerbStream
 api_type:
 - COM
 ms.assetid: e24c183c-8c20-4d9c-a3c6-f26dc0cd0135
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1e03349b987c2a73b43ad5c5b59f92d9ea834b1b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: bc259c7d0a41879e1d7a167c7459247bfdee4505
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341251"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59630012"
 ---
-# <a name="pidlidverbstream-canonical-property"></a>PidLidVerbStream (kanonische Eigenschaft)
+# <a name="pidlidverbstream-canonical-property"></a>Kanonische PidLidVerbStream-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt an, welche Abstimmungsantworten der Benutzer als Antwort auf die Nachricht geben kann.
+Gibt an, welche Abstimmungsantworten der Benutzer als Reaktion auf die Nachricht vornehmen kann.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidVerbStream  <br/> |
 |Eigenschaftensatz:  <br/> |PSETID_Common  <br/> |
-|Lange ID (LID):  <br/> |0x00008520  <br/> |
+|Long ID (LID):  <br/> |0x00008520  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Laufzeitkonfiguration  <br/> |
    
@@ -41,7 +41,7 @@ Gibt an, welche Abstimmungsantworten der Benutzer als Antwort auf die Nachricht 
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Stellt Eigenschaftensatzdefinitionen und Verweise auf verwandte Exchange Server zur Verfügung.
+> Stellt Eigenschaftssatzdefinitionen und Verweise auf verwandte Exchange Server Protokollspezifikationen bereit.
     
 [[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
@@ -51,7 +51,7 @@ Gibt an, welche Abstimmungsantworten der Benutzer als Antwort auf die Nachricht 
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -59,9 +59,9 @@ Mapidefs.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -1,20 +1,20 @@
 ---
-title: Indexes. Delete-Methode (DAO)
+title: Indexes.Delete-Methode (DAO)
 TOCTitle: Delete Method
 ms:assetid: 8d3c3221-3b2e-15ba-32ff-f2dfc592d82c
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197351(v=office.15)
 ms:contentKeyID: 48546252
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 6ab52f353b7a3e636f64ff2ad6ad5354d62bed48
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: ed6fa376b4e0205f33ee5515d908c810f4b4b31d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291552"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615332"
 ---
-# <a name="indexesdelete-method-dao"></a>Indexes. Delete-Methode (DAO)
+# <a name="indexesdelete-method-dao"></a>Indexes.Delete-Methode (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -22,7 +22,7 @@ Löscht das angegebene **Index**-Objekt aus der **Indexes**-Auflistung.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Delete (***Name***)
+*Ausdruck* . Delete(***Name***)
 
 *Ausdruck* Eine Variable, die ein **Indexes** -Objekt darstellt.
 

@@ -3,17 +3,17 @@ title: Abbrechen einer Benachrichtigung
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: decd5d7d-1f47-47c2-b9c4-be0e652c99dd
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: fb0972638fdd062c99040694222724566281024f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: d0381adadcebca05281353abed78916b994df59e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33409762"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59576534"
 ---
 # <a name="canceling-a-notification"></a>Abbrechen einer Benachrichtigung
 
@@ -21,8 +21,8 @@ ms.locfileid: "33409762"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Zum Abbrechen einer Benachrichtigung rufen Clients die **Unadvise-Methode** einer Beratenden Quelle auf. Das **Aufrufen von Unadvise** ist wichtig, da der Dienstanbieter seinen Verweis auf Ihre Ratgebersenke veröffentlicht. Solange ein Dienstanbieter einen Verweis auf eine Ratgebersenke verwaltet, kann die Ratgebersenke weiterhin [IMAPIAdviseSink::OnNotify-Anrufe](imapiadvisesink-onnotify.md) empfangen. Aufgrund der asynchronen Art der Ereignisbenachrichtigung können Clients auch nach einem erfolgreichen **Unadvise-Aufruf benachrichtigt** werden. Clients müssen den Empfang von Benachrichtigungen jederzeit verarbeiten können. 
+Um eine Benachrichtigung abzubrechen, rufen Clients die **Unadvise-Methode** einer Empfehlungsquelle auf. Das Aufrufen **von "Unadvise"** ist wichtig, da der Dienstanbieter seinen Verweis auf Ihre Empfehlungssenke freigibt. Solange ein Dienstanbieter einen Verweis auf eine Empfehlungssenke verwaltet, kann die Empfehlungssenke weiterhin [IMAPIAdviseSink::OnNotify-Aufrufe](imapiadvisesink-onnotify.md) empfangen. Aufgrund des asynchronen Charakters der Ereignisbenachrichtigung können Clients sogar nach einem erfolgreichen Aufruf der **Unadvise** benachrichtigt werden. Clients müssen den Empfang von Benachrichtigungen jederzeit verarbeiten können. 
   
-Da sich die Implementierungen des Dienstanbieters unterscheiden, können Clients, die **Unadvise** nicht aufrufen, um eine Benachrichtigung abgesagt zu werden, nicht davon ausgehen, wann ein Anbieter seinen Verweis auf seine Ratgebersenke veröffentlicht. Einige Dienstanbieter geben ihre Referenzen frei, um Senken zu beraten, wenn sie ihre Ratgeberquellen veröffentlichen. Einige Dienstanbieter nicht. Solange ein Dienstanbieter einen Verweis auf eine Ratgebersenke verwaltet, kann die Ratgebersenke weiterhin Benachrichtigungen empfangen. 
+Da sich die Implementierungen von Dienstanbietern unterscheiden, können Clients, die **"Unadvise"** nicht aufrufen, um eine Benachrichtigung abzubrechen, nichts davon ausgehen, wann ein Anbieter seinen Verweis auf seine Empfehlungssenke freigibt. Einige Dienstanbieter geben ihre Referenzen frei, um Senken zu empfehlen, wenn sie ihre Empfehlungsquellen freigeben. Bei einigen Dienstanbietern ist dies nicht der Fall. Solange ein Dienstanbieter einen Verweis auf eine Empfehlungssenke aufrechterhält, kann diese Empfehlungssenke weiterhin Benachrichtigungen empfangen. 
   
 

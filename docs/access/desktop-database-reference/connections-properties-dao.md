@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn142231(v=office.15)
 ms:contentKeyID: 52072709
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 4a8051cf45712f567a173c823a12d7c12a1aaebb
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 12e7e7fc42a38f7ae19f43cb93bfb75009ddc64d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295744"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615753"
 ---
 # <a name="connections-properties-dao"></a>Connections-Eigenschaften (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
-- [Connections. Count-Eigenschaft (DAO)](connections-count-property-dao.md)
+- [Connections.Count-Eigenschaft (DAO)](connections-count-property-dao.md)
 

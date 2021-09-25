@@ -1,31 +1,31 @@
 ---
-title: DbEngine. beginTrans-Methode (DAO)
+title: DBEngine.BeginTrans-Methode (DAO)
 TOCTitle: BeginTrans Method
 ms:assetid: fdde662f-2472-3af6-67d6-c8ca7fb1dca7
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff837255(v=office.15)
 ms:contentKeyID: 48548925
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 5672d9a202c6615e4bc1f5c367e3910887ddc7a8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f4a4e090d83fd1815f82eceb72bbd7de421e9f71
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294400"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615612"
 ---
-# <a name="dbenginebegintrans-method-dao"></a>DbEngine. beginTrans-Methode (DAO)
+# <a name="dbenginebegintrans-method-dao"></a>DBEngine.BeginTrans-Methode (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
 
-Startet eine neue Transaktion. **Database**-Wert mit Lese-/Schreibzugriff.
+Startet eine neue Transaktion. **Database** -Wert mit Lese-/Schreibzugriff.
 
 ## <a name="syntax"></a>Syntax
 
 *Ausdruck* . BeginTrans
 
-*Ausdruck* Eine Variable, die ein **DBEngine** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **DBEngine**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 

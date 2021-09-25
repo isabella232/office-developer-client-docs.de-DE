@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249968(v=office.15)
 ms:contentKeyID: 48547627
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 3612652f3473c0794dbfe9be60f84ea2e3fee252
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 9c78651cc6a706fdf3fecc43258d39baea13bb3d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295709"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615746"
 ---
 # <a name="connectionstring-property-ado"></a>ConnectionString-Eigenschaft (ADO)
 
@@ -21,13 +21,13 @@ ms.locfileid: "32295709"
 
 Gibt die Informationen an, mit denen eine Verbindung mit einer Datenquelle hergestellt wird.
 
-## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
+## <a name="settings-and-return-values"></a>Einstellungen- und Rückgabewerte
 
 Mit dieser Eigenschaft wird ein Wert vom Datentyp **Long** festgelegt oder zurückgegeben.
 
 ## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie die **ConnectionString** -Eigenschaft, um eine Datenquelle anzugeben, indem Sie eine detaillierte Verbindungszeichenfolge übergeben, die eine Reihe von durch Semikolons getrennte *Argument* *= Wert* -Anweisungen enthält.
+Verwenden Sie die **ConnectionString-Eigenschaft,** um eine Datenquelle anzugeben, indem Sie eine detaillierte Verbindungszeichenfolge übergeben, die eine Reihe von *Argument* = Durch Semikolons getrennte *Wertanweisungen* enthält.
 
 ADO unterstützt fünf Argumente für die **ConnectionString** -Eigenschaft. Alle anderen Argumente werden ohne weitere Verarbeitung durch ADO direkt an den Anbieter übergeben. ADO unterstützt die im Folgenden aufgeführten Argumente.
 
@@ -44,7 +44,7 @@ ADO unterstützt fünf Argumente für die **ConnectionString** -Eigenschaft. All
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>Provider =</em></p></td>
+<td><p><em>Provider=</em></p></td>
 <td><p>Gibt den Namen eines Anbieters an, der für die Verbindung verwendet werden soll.</p></td>
 </tr>
 <tr class="even">
@@ -53,14 +53,14 @@ ADO unterstützt fünf Argumente für die **ConnectionString** -Eigenschaft. All
 </tr>
 <tr class="odd">
 <td><p><em>Remote Provider=</em></p></td>
-<td><p>Gibt den Namen eines Anbieters an, der beim Öffnen einer clientseitigen Verbindung verwendet werden soll. (Nur Remote Datendienst.)</p></td>
+<td><p>Gibt den Namen eines Anbieters an, der beim Öffnen einer clientseitigen Verbindung verwendet werden soll (nur Remote Data Service).</p></td>
 </tr>
 <tr class="even">
 <td><p><em>Remote Server=</em></p></td>
 <td><p>Gibt den Pfadnamen des Servers an, der beim Öffnen einer clientseitigen Verbindung verwendet werden soll (nur Remote Data Service).</p></td>
 </tr>
 <tr class="odd">
-<td><p><em>URL =</em></p></td>
+<td><p><em>URL=</em></p></td>
 <td><p>Gibt die Verbindungszeichenfolge als absolute URL an, die eine Ressource wie z. B. eine Datei oder ein Verzeichnis identifiziert.</p></td>
 </tr>
 </tbody>
@@ -77,5 +77,5 @@ Die **ConnectionString**-Eigenschaft hat Lese-/Schreibzugriff, wenn die Verbindu
 
 Duplikate eines Arguments in der **ConnectionString** -Eigenschaft werden ignoriert. Die letzte Instanz eines Arguments wird verwendet.
 
-**Remote Data Service-Verwendung** Bei Verwendung in einem clientseitigen **Connection** -Objekt kann die **ConnectionString** -Eigenschaft nur die Parameter *Remote Provider* und *Remote Server* enthalten.
+**Remote data service usage** Bei Verwendung in einem clientseitigen **Connection-Objekt** kann die **ConnectionString-Eigenschaft** nur die *Parameter Remoteanbieter* und *Remoteserver* enthalten.
 

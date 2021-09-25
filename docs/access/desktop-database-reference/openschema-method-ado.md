@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249294(v=office.15)
 ms:contentKeyID: 48544970
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 43ca69b9d761629d42138780517f8de806ed7e8c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 0a51fbff30d9a7fdf47d21a7f5842d591db0a67d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288336"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565205"
 ---
 # <a name="openschema-method-ado"></a>OpenSchema-Methode (ADO)
 
@@ -22,7 +22,7 @@ Ruft Datenbank-Schemainformationen vom Anbieter ab.
 
 ## <a name="syntax"></a>Syntax
 
-**Set * * * Recordset* = -*Verbindung*. OpenSchema (* QueryType *, *Criteria*, *Schema*-Nr.)
+**Set**_recordset_  =  *connection*. OpenSchema (*QueryType*, *Criteria*, *SchemaID*)
 
 ## <a name="return-values"></a>Rückgabewerte
 
@@ -36,7 +36,7 @@ Gibt ein [Recordset](recordset-object-ado.md)-Objekt zurück, das Schemainformat
 |*Criteria* |Optional. Ein Array mit Abfrageeinschränkungen für jede *QueryType*-Option (**SchemaEnum** aufgeführt).|
 |*SchemaID* |GUID zur Abfrage eines Anbieterschemas, die nicht in der OLE DB-Spezifikation definiert ist. Dieser Parameter ist erforderlich, wenn *QueryType* auf **adSchemaProviderSpecific** festgelegt ist. Andernfalls wird er nicht verwendet.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **OpenSchema**-Methode gibt selbsterläuternde Informationen zur Datenquelle zurück (z. B. welche Tabellen sich in der Datenquelle und welche Spalten sich in den Tabellen befinden sowie die unterstützten Datentypen).
 
@@ -48,7 +48,7 @@ Die Konstante **adSchemaProviderSpecific** wird für das Argument *QueryType* ve
 
 Die Anbieter müssen nicht alle standardmäßigen OLE DB-Schemaabfragen unterstützen. Gemäß der OLE DB-Spezifikation sind insbesondere nur **adSchemaTables**, **adSchemaColumns** und **adSchemaProviderTypes** erforderlich. Der Anbieter muss für diese Schemaabfragen jedoch nicht die oben aufgeführten *Criteria*-Einschränkungen unterstützen.
 
-**Remote Data Service-Verwendung** Die **OpenSchema** -Methode ist in einem clientseitigen [Connection](connection-object-ado.md) -Objekt nicht verfügbar.
+**Remote data service usage** Die **OpenSchema-Methode** ist für ein clientseitiges [Connection-Objekt](connection-object-ado.md) nicht verfügbar.
 
 > [!NOTE]
 > In Visual Basic können Spalten, die im von der **OpenSchema**-Methode für das **Connection**-Objekt zurückgegebene **Recordset**-Objekt eine 4-Byte-Ganzzahl ohne Vorzeichen (DBTYPE UI4) enthalten, nicht mit anderen Variablen verglichen werden. Weitere Informationen zu den OLE DB-Datentypen erhalten Sie in Chapter 13 und Appendix A der *Microsoft OLE DB Programmer's Reference*.

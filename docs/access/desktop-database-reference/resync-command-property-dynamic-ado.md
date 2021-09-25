@@ -1,20 +1,20 @@
 ---
-title: Resync Command Dynamic-Eigenschaft (ADO)
+title: Dynamische Eigenschaft "Resync Command" (ADO)
 TOCTitle: Resync Command dynamic property (ADO)
 ms:assetid: 5c0c0819-620a-6eb0-a217-69113ec8d094
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249322(v=office.15)
 ms:contentKeyID: 48545081
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: aa1fe05e6aa7edf04ad74864eb30a03403323c8e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 70060c626754e5b81d8c1cfbee003523c983bdbc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306580"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59576919"
 ---
-# <a name="resync-command-dynamic-property-ado"></a>Resync Command Dynamic-Eigenschaft (ADO)
+# <a name="resync-command-dynamic-property-ado"></a>Dynamische Eigenschaft "Resync Command" (ADO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -24,7 +24,7 @@ Es wird eine vom Benutzer bereitgestellte Befehlszeichenfolge angegeben, die von
 
 Mit dieser Eigenschaft wird ein Wert vom Datentyp **String** festgelegt oder zurückgegeben, bei dem es sich um eine Befehlszeichenfolge handelt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das [Recordset](recordset-object-ado.md)-Objekt ist das Ergebnis einer für mehrere Basistabellen ausgeführten JOIN-Operation. Die betroffenen Zeilen hängen vom *AffectRecords*-Parameter der [Resync](resync-method-ado.md)-Methode ab. Die standardmäßige **Resync**-Methode wird ausgeführt, wenn die Eigenschaften [Unique Table](unique-table-unique-schema-unique-catalog-properties-dynamic-ado.md) und **Resync Command** nicht festgelegt sind.
 

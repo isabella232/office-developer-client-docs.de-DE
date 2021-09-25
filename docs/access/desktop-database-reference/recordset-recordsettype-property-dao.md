@@ -1,5 +1,5 @@
 ---
-title: Recordset. RecordsetType-Eigenschaft (DAO)
+title: Recordset.RecordsetType-Eigenschaft (DAO)
 TOCTitle: RecordsetType Property
 ms:assetid: a66d4043-08cc-ead1-f9ff-efc7d7ea21bf
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff821178(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - vbaac10.chm13361
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 64f7dda8bec7806ef510d265deab350dc3cdad6b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: fe9106d661567da70299de40f3c93aea45c539c6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307630"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606072"
 ---
-# <a name="recordsetrecordsettype-property-dao"></a>Recordset. RecordsetType-Eigenschaft (DAO)
+# <a name="recordsetrecordsettype-property-dao"></a>Recordset.RecordsetType-Eigenschaft (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -51,7 +51,7 @@ Die **RecordsetType**-Eigenschaft verwendet die folgenden Einstellungen in einer
 <tr class="odd">
 <td><p>0</p></td>
 <td><p>Dynaset</p></td>
-<td><p>(Standardeinstellung) Sie können gebundene Steuerelemente auf der Basis einer einzigen Tabelle oder von Tabellen mit einer 1:1-Beziehung bearbeiten. Für Steuerelemente, die an Felder gebunden sind, die auf Tabellen mit einer 1: n-Beziehung basieren, können Sie Daten aus dem &quot;Join&quot; -Feld auf der 1-Seite der Beziehung nur bearbeiten, wenn die Cascade-Aktualisierung zwischen den Tabellen aktiviert ist.</p></td>
+<td><p>(Standardeinstellung) Sie können gebundene Steuerelemente auf der Basis einer einzigen Tabelle oder von Tabellen mit einer 1:1-Beziehung bearbeiten. Bei Steuerelementen, die an Felder gebunden sind, die auf Tabellen mit einer 1:n-Beziehung basieren, können Sie Daten aus dem Verknüpfungsfeld auf der einen Seite der Beziehung nur bearbeiten, &quot; wenn die Weitergabe zwischen den Tabellen aktiviert &quot; ist.</p></td>
 </tr>
 <tr class="even">
 <td><p>1</p></td>
@@ -91,7 +91,7 @@ Die **RecordsetType**-Eigenschaft verwendet die folgenden Einstellungen in einem
 <td><p>Es können keine Tabellen oder an ihre Felder gebundenen Steuerelemente bearbeitet werden.</p></td>
 </tr>
 <tr class="even">
-<td><p>4</p></td>
+<td><p>4 </p></td>
 <td><p>Aktualisierbarer Snapshot</p></td>
 <td><p>(Standardeinstellung) Alle Tabellen und an ihre Felder gebundenen Steuerelemente können bearbeitet werden.</p></td>
 </tr>

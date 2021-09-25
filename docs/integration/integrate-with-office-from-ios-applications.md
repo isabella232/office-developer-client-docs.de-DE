@@ -3,15 +3,15 @@ title: Integration in Office von iOS-Anwendungen aus
 manager: soliver
 ms.date: 06/04/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f3a277ba-7ba1-4eea-83b5-915b409f3093
 description: Office für iOS bietet eine erweiterbare Lösung, die die Integration in Drittanbieteranwendungen ermöglicht. Dieser Artikel beschreibt, wie Sie eine Integration in Office von Ihrer iOS-Anwendung ausführen können, indem Sie Benutzer von Ihrer Anwendung in Office übergeben und sie dann an die Anwendung zurückgeben.
-ms.openlocfilehash: d17a096c17eadab0cd94ee1dce18e979e80fa65d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 90de84b8b99fb276157bb3b36290fa6e0d8838d2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33413850"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596729"
 ---
 # <a name="integrate-with-office-from-ios-applications"></a>Integration in Office von iOS-Anwendungen aus
 

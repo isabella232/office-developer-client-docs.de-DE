@@ -6,23 +6,23 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251402
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: da9fb933-4e2c-3e2a-1879-6e70db0cd830
-description: Gibt die blaue Komponente einer Farbe zurück. Der Rückgabewert ist eine ganze Zahl im Bereich von 0 bis einschließlich 255. Bei einer ungültigen Eingabe wird 0 zurückgegeben.
-ms.openlocfilehash: adefbe0f8c2df0ead0f3e50cd5d4945501972865
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Gibt die Blaukomponente einer Farbe zurück. Der Rückgabewert ist eine ganze Zahl im Bereich von 0 bis einschließlich 255. Bei einer ungültigen Eingabe wird 0 zurückgegeben.
+ms.openlocfilehash: eac92b4b83f63d99f65ba7f70cc2dfdcf2634a76
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439037"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616005"
 ---
 # <a name="blue-function"></a>BLUE Function
 
-Gibt die blaue Komponente einer Farbe zurück. Der Rückgabewert ist eine ganze Zahl im Bereich von 0 bis einschließlich 255. Bei einer ungültigen Eingabe wird 0 zurückgegeben.
+Gibt die Blaukomponente einer Farbe zurück. Der Rückgabewert ist eine ganze Zahl im Bereich von 0 bis einschließlich 255. Bei einer ungültigen Eingabe wird 0 zurückgegeben.
   
 ## <a name="syntax"></a>Syntax
 
-BLUE(** *Expression* ** ) 
+BLUE(** *Ausdruck* ** ) 
   
 ### <a name="parameters"></a>Parameter
 

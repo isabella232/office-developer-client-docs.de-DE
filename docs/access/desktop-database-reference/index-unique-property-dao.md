@@ -1,5 +1,5 @@
 ---
-title: Index. Unique-Eigenschaft (DAO)
+title: Index.Unique-Eigenschaft (DAO)
 TOCTitle: Unique Property
 ms:assetid: a4486da5-8a1a-b4fc-0e07-e65cd2e726f6
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff821087(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1052990
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 5c94200245b4736ad244cb37beec617a98d6c367
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 45428f15c0bca259703e0f95fb7ad8693d841044
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291692"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615340"
 ---
-# <a name="indexunique-property-dao"></a>Index. Unique-Eigenschaft (DAO)
+# <a name="indexunique-property-dao"></a>Index.Unique-Eigenschaft (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -26,9 +26,9 @@ Legt einen Wert fest, der angibt, ob ein **[Index](index-object-dao.md)** -Objek
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Eindeutige
+*Ausdruck* . Einzigartige
 
-*Ausdruck* Eine Variable, die ein **Index** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Index-Objekt** darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 
@@ -43,7 +43,7 @@ Wenn sowohl die **Unique**- als auch die **[Primary](index-primary-property-dao.
 > - Datensätze, die aus Tabellen ohne Indizes abgerufen werden, werden in einer unbestimmten Reihenfolge zurückgegeben.
 > - Die **[Attributes](field-attributes-property-dao.md)** -Eigenschaft der einzelnen **[Field](field-object-dao.md)** -Objekte im **Index**-Objekt legt die Reihenfolge der Datensätze fest und bestimmt daher das für das betreffende **Index**-Objekt zu verwendende Zugriffsverfahren.
 > - Mithilfe eines eindeutigen Indexes wird die Suche nach Datensätzen optimiert.
-> - Indizes wirken sich nicht auf die physische Reihenfolge einer Basistabelle aus. Indizes wirken sich nur auf die Verwendung des **[Recordset](recordset-object-dao.md)** -Objekts vom Typ "Tabelle" aus, wenn ein bestimmter Index ausgewählt wird oder wenn das Microsoft Access-Datenbankmodul **Recordset** -Objekte erstellt.
+> - Indizes wirken sich nicht auf die physische Reihenfolge einer Basistabelle aus. Indizes wirken sich nur darauf aus, wie das **[Recordset-Objekt](recordset-object-dao.md)** vom Tabellentyp auf die Datensätze zugreift, wenn ein bestimmter Index ausgewählt wird oder wenn das Microsoft Access-Datenbankmodul **Recordset-Objekte** erstellt.
 
 ## <a name="example"></a>Beispiel
 

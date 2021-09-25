@@ -1,20 +1,20 @@
 ---
-title: QueryDefs-Member (DAO)
+title: QueryDefs-Mitglieder (DAO)
 TOCTitle: QueryDefs Members
 ms:assetid: d178fa87-cf01-cb5b-357d-45d8b4e1b0ed
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff834754(v=office.15)
 ms:contentKeyID: 48547864
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: e5f77697bbf0f9231500f325545c0e6ccd9c45fe
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: a7086ab2bf67e66873f60bbc8a614b70bfa7897f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301022"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606352"
 ---
-# <a name="querydefs-members-dao"></a>QueryDefs-Member (DAO)
+# <a name="querydefs-members-dao"></a>QueryDefs-Mitglieder (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -36,11 +36,11 @@ Eine QueryDefs -Auflistung enthält alle QueryDef -Objekte eines Database -Objek
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong><a href="querydefs-append-method-dao.md">Append</a></strong></p></td>
+<td><p><strong><a href="querydefs-append-method-dao.md">Anfügen</a></strong></p></td>
 <td><p>Fügt der <strong>QueryDefs</strong>-Auflistung ein neues <strong>QueryDef</strong>-Objekt hinzu.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="querydefs-delete-method-dao.md">Löschen</a></strong></p></td>
+<td><p><strong><a href="querydefs-delete-method-dao.md">Delete</a></strong></p></td>
 <td><p>Wird für diese Auflistung nicht unterstützt.</p></td>
 </tr>
 <tr class="odd">

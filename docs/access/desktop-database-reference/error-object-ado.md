@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249678(v=office.15)
 ms:contentKeyID: 48546477
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: a7c77a59368851f43b5e7bf2275f9f282546fb4b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 32f7ea65274859a7988a145ee426dd361876bce0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293483"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615487"
 ---
 # <a name="error-object-ado"></a>Error-Objekt (ADO)
 
@@ -40,7 +40,7 @@ Sie können die Eigenschaften eines **Error** -Objekts lesen, um die folgenden D
 
 Wenn ein Anbieterfehler auftritt, wird er in die **Errors** -Auflistung des **Connection** -Objekts aufgenommen. ADO unterstützt die Rückgabe mehrerer Fehler durch einen einzelnen ADO-Vorgang, um anbieterspezifische Fehlerinformationen zu gestatten. Verwenden Sie die zutreffenden Fehlerbehandlungsfeatures der Sprache oder Umgebung, und durchlaufen Sie dann die Eigenschaften der einzelnen **Error** -Objekte in der **Errors** -Auflistung in geschachtelten Schleifen, um diese ausführlichen Fehlerinformationen in einer Fehlerbehandlungsroutine zu erhalten.
 
-**Microsoft Visual Basic-und VBScript-Benutzer** Wenn kein gültiges **Connection** -Objekt vorhanden ist, müssen Sie Fehlerinformationen aus dem **Error** -Objekt abrufen.
+**Benutzer von Microsoft Visual Basic und VBScript** Wenn kein gültiges **Connection** -Objekt vorhanden ist, müssen Sie Fehlerinformationen aus dem **Error** -Objekt abrufen.
 
 Wie andere Anbieter löscht auch ADO das **OLE Error Info** -Objekt vor dem Ausführen eines Aufrufs, der potenziell einen neuen Anbieterfehler erzeugen könnte. Die **Errors** -Auflistung des **Connection** -Objekts wird jedoch gelöscht und nur dann aufgefüllt, wenn der Anbieter einen neuen Fehler erzeugt, oder wenn die [Clear](clear-method-ado.md)-Methode aufgerufen wird.
 

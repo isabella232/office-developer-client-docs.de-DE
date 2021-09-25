@@ -1,20 +1,20 @@
 ---
-title: EOS-und LineSeparator-Eigenschaft und Skip-Methode (Beispiel) (VB)
+title: EOS- und LineSeparator-Eigenschaft und SkipLine-Methode (Beispiel) (VB)
 TOCTitle: EOS and LineSeparator Properties and SkipLine method example (VB)
 ms:assetid: 66508541-cc65-e16a-0f8d-2c0b20342b05
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249396(v=office.15)
 ms:contentKeyID: 48545340
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 2241d61f66ea8599b60bd83a044f2073664f4bbf
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7672f29a615c9cd48e6200657507fe9d2653cb92
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293532"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615494"
 ---
-# <a name="eos-and-lineseparator-properties-and-skipline-method-example-vb"></a>EOS-und LineSeparator-Eigenschaft und Skip-Methode (Beispiel) (VB)
+# <a name="eos-and-lineseparator-properties-and-skipline-method-example-vb"></a>EOS- und LineSeparator-Eigenschaft und SkipLine-Methode (Beispiel) (VB)
 
 
 **Gilt für**: Access 2013, Office 2013

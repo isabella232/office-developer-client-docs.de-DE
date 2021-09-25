@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPIProp.GetIDsFromNames
 api_type:
 - COM
 ms.assetid: e3f501a4-a8ee-43d7-bd83-c94e7980c398
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 28880b818bc80e31cae0c695d4aac92eb9555cac
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 4f79e82c1ecbca9f006d60a2eb724fc5900a5d68
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33433584"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59564141"
 ---
 # <a name="imapipropgetidsfromnames"></a>IMAPIProp::GetIDsFromNames
 
@@ -25,7 +25,7 @@ ms.locfileid: "33433584"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Stellt die Eigenschaftenbezeichner zur Verfügung, die einem oder mehreren Eigenschaftsnamen entsprechen.
+Stellt die Eigenschaftsbezeichner bereit, die einem oder mehreren Eigenschaftennamen entsprechen.
   
 ```cpp
 HRESULT GetIDsFromNames(
@@ -40,29 +40,29 @@ HRESULT GetIDsFromNames(
 
  _cPropNames_
   
-> [in] Die Anzahl der Eigenschaftsnamen, auf die der  _lppPropNames-Parameter_ verweist. Wenn  _lppPropNames_ NULL ist, muss  _der cPropNames-Parameter_ 0 sein. 
+> [in] Die Anzahl der Eigenschaftennamen, auf die der  _Parameter "lppPropNames"_ verweist. Wenn  _lppPropNames_ NULL ist, muss der  _cPropNames-Parameter_ 0 sein. 
     
  _lppPropNames_
   
-> [in] Ein Zeiger auf ein Array von Eigenschaftennamen oder NULL. Übergeben von NULL-Anforderungen Eigenschaftenbezeichner für alle Eigenschaftsnamen in allen Eigenschaftensätzen, über die das Objekt Informationen enthält. Der  _lppPropNames-Parameter_ darf nicht NULL sein, wenn MAPI_CREATE im  _ulFlags-Parameter festgelegt_ ist. 
+> [in] Ein Zeiger auf ein Array von Eigenschaftsnamen oder NULL. Das Übergeben von NULL fordert Eigenschaftsbezeichner für alle Eigenschaftsnamen in allen Eigenschaftensätzen an, zu denen das Objekt Informationen enthält. Der  _lppPropNames-Parameter_ darf nicht NULL sein, wenn das MAPI_CREATE-Flag im  _ulFlags-Parameter_ festgelegt ist. 
     
  _ulFlags_
   
-> [in] Eine Bitmaske mit Flags, die angibt, wie die Eigenschaftenbezeichner zurückgegeben werden sollen. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die angibt, wie die Eigenschaftsbezeichner zurückgegeben werden sollen. Das folgende Kennzeichen kann festgelegt werden:
     
 MAPI_CREATE 
   
-> Weist einem oder mehreren Namen im Eigenschaftennamenarray, auf die von  _lppPropNames_ verwiesen wird, einen Eigenschaftsbezeichner zu, falls noch keiner zugewiesen wurde. Mit diesem Flag wird der Bezeichner intern in der Tabelle für die Zuordnung von Namen zu Bezeichnern registriert.
+> Weist einem oder mehreren der Namen im Eigenschaftennamenarray, auf die durch  _lppPropNames_ verwiesen wird, einen Eigenschaftsbezeichner zu, sofern dieser noch nicht zugewiesen wurde. Mit diesem Flag wird der Bezeichner intern in der Zuordnungstabelle "Name-zu-Bezeichner" registriert.
     
  _lppPropTags_
   
-> [out] Ein Zeiger auf einen Zeiger auf ein Array von Eigenschaftstags, das vorhandene oder neu zugewiesene Eigenschaftenbezeichner enthält. Die Eigenschaftstypen für die Eigenschaftstags in diesem Array werden auf **PT_UNSPECIFIED.**
+> [out] Ein Zeiger auf einen Zeiger auf ein Array von Eigenschaftentags, das vorhandene oder neu zugewiesene Eigenschaftsbezeichner enthält. Die Eigenschaftstypen für die Eigenschaftentags in diesem Array werden auf **PT_UNSPECIFIED** festgelegt.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Bezeichner für die angegebenen Eigenschaftsnamen wurden erfolgreich zurückgegeben.
+> Die Bezeichner für die angegebenen Eigenschaftennamen wurden erfolgreich zurückgegeben.
     
 MAPI_E_NO_SUPPORT 
   
@@ -70,7 +70,7 @@ MAPI_E_NO_SUPPORT
     
 MAPI_E_NOT_ENOUGH_MEMORY 
   
-> Es war nicht genügend Arbeitsspeicher verfügbar, um die Bezeichner abzurufen.
+> Zum Abrufen der Bezeichner war nicht genügend Arbeitsspeicher verfügbar.
     
 MAPI_E_TOO_BIG 
   
@@ -78,37 +78,37 @@ MAPI_E_TOO_BIG
     
 MAPI_W_ERRORS_RETURNED 
   
-> Der Aufruf war insgesamt erfolgreich, aber mindestens eine Eigenschafts-ID konnte nicht zurückgegeben werden. Der entsprechende Eigenschaftstyp für jede nicht verfügbare Eigenschaft wird auf **PT_ERROR** und dessen Bezeichner auf Null festgelegt. Wenn diese Warnung zurückgegeben wird, behandeln Sie den Anruf als erfolgreich. Verwenden Sie zum Testen dieser Warnung das **HR_FAILED** Makro. Weitere [Informationen finden Sie unter Using Macros for Error Handling](using-macros-for-error-handling.md).
+> Der Aufruf war insgesamt erfolgreich, aber mindestens ein Eigenschaftsbezeichner konnte nicht zurückgegeben werden. Der entsprechende Eigenschaftstyp für jede nicht verfügbare Eigenschaft ist auf **PT_ERROR** und dessen Bezeichner auf Null festgelegt. Wenn diese Warnung zurückgegeben wird, behandeln Sie den Aufruf als erfolgreich. Verwenden Sie das Makro **HR_FAILED, um** diese Warnung zu testen. Informationen zur Fehlerbehandlung finden Sie unter [Verwenden von Makros.](using-macros-for-error-handling.md)
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die **IMAPIProp::GetIDsFromNames-Methode** ruft ein Array von Eigenschaftstags ab, die die Eigenschaftenbezeichner für eine oder mehrere benannte Eigenschaften enthalten. **IMAPIProp::GetIDsFromNames** kann aufgerufen werden, um die folgenden Schritte zu tun: 
+Die **IMAPIProp::GetIDsFromNames-Methode** ruft ein Array von Eigenschaftentags ab, die die Eigenschaftsbezeichner für eine oder mehrere benannte Eigenschaften enthalten. **IMAPIProp::GetIDsFromNames** kann aufgerufen werden, um Folgendes zu tun: 
   
-- Erstellen sie Bezeichner für neue Namen.
+- Erstellen Sie Bezeichner für neue Namen.
     
-- Ruft Bezeichner für bestimmte Namen ab.
+- Dient zum Abrufen von Bezeichnern für bestimmte Namen.
     
-- Ruft Bezeichner für alle benannten Eigenschaften ab, die in der Zuordnung des Objekts enthalten sind.
+- Dient zum Abrufen von Bezeichnern für alle benannten Eigenschaften, die in der Zuordnung des Objekts enthalten sind.
     
-Benannte Eigenschaften werden in der Regel von Nachrichtenspeicheranbietern für Ordner und Nachrichten verwendet. Andere Objekte, z. B. Messagingbenutzer und Profilabschnitte, unterstützen möglicherweise nicht die Zuordnung von Namen zu Eigenschaftenbezeichnern und geben möglicherweise MAPI_E_NO_SUPPORT von **GetIDsFromNames zurück.**
+Benannte Eigenschaften werden in der Regel von Nachrichtenspeicheranbietern für Ordner und Nachrichten verwendet. Andere Objekte, z. B. Messagingbenutzer und Profilabschnitte, unterstützen möglicherweise die Zuordnung von Namen zu Eigenschaftenbezeichnern nicht und geben möglicherweise MAPI_E_NO_SUPPORT von **GetIDsFromNames** zurück.
   
-Wenn ein Fehler auftritt, der einen Bezeichner für einen bestimmten Namen zurückgibt, gibt **GetIDsFromNames** MAPI_W_ERRORS_RETURNED zurück und legt den Eigenschaftentyp im Eigenschaftentagarrayeintrag fest, der dem Namen **auf PT_ERROR** und dem Bezeichner auf Null entspricht. 
+Wenn ein Fehler auftritt, der einen Bezeichner für einen bestimmten Namen zurückgibt, gibt **GetIDsFromNames** MAPI_W_ERRORS_RETURNED zurück und legt den Eigenschaftstyp im Eigenschaftstag-Arrayeintrag fest, der dem Namen **PT_ERROR** und dem Bezeichner auf Null entspricht. 
   
-Die Zuordnung zwischen Namen und Bezeichnern wird durch die Eigenschaft **PR_MAPPING_SIGNATURE** ([PidTagMappingSignature](pidtagmappingsignature-canonical-property.md)) eines Objekts dargestellt. **PR_MAPPING_SIGNATURE** enthält eine [MAPIUID-Struktur,](mapiuid.md) die den für das Objekt zuständigen Dienstanbieter angibt. Wenn die **PR_MAPPING_SIGNATURE-Eigenschaft** für zwei Objekte identisch ist, gehen Sie davon aus, dass diese Objekte dieselbe Zuordnung von Name zu Bezeichner verwenden. 
+Die Zuordnung von Namen zu Bezeichnern wird durch **die PR_MAPPING_SIGNATURE** -[PidTagMappingSignature](pidtagmappingsignature-canonical-property.md)) -Eigenschaft eines Objekts dargestellt. **PR_MAPPING_SIGNATURE** enthält eine [MAPIUID-Struktur,](mapiuid.md) die den für das Objekt verantwortlichen Dienstanbieter angibt. Wenn die **PR_MAPPING_SIGNATURE-Eigenschaft** für zwei Objekte identisch ist, wird davon ausgegangen, dass diese Objekte dieselbe Zuordnung von Name zu Bezeichner verwenden. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Die bezeichner, die Sie im Eigenschaftentagarray übergeben, auf das der  _lppPropNames-Parameter_ verweist, müssen sich im Bereich 0x8000 0xFFFE befindet. Die Einträge in diesem Array müssen in der gleichen Reihenfolge wie die Namen sein, die im Eigenschaftennamenarray übergeben werden, auf das _von lppPropNames verwiesen wird._ 
+Die Bezeichner, die Sie im Eigenschaftentagarray übergeben, auf das der  _Parameter "lppPropNames"_ verweist, müssen sich im 0x8000 0xFFFE Bereich befinden. Die Einträge in diesem Array müssen in derselben Reihenfolge wie die Namen sein, die im Eigenschaftennamenarray übergeben werden, auf die durch  _lppPropNames_ verwiesen wird. 
   
-Wenn Sie benannte Eigenschaften in einem Container unterstützen, verwenden Sie für alle Objekte im Container dieselbe Zuordnung von Name zu Bezeichner (d. h. verwenden Sie keine andere Zuordnung für jeden Ordner im Nachrichtenspeicher oder jede Nachricht in Ihrem Ordner).
+Wenn Sie benannte Eigenschaften in einem Container unterstützen, verwenden Sie dieselbe Namens-zu-Bezeichner-Zuordnung für alle Objekte in Ihrem Container (verwenden Sie also keine andere Zuordnung für jeden Ordner in Ihrem Nachrichtenspeicher oder für jede Nachricht in Ihrem Ordner).
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Da die Eigenschaftstypen für die zurückgegebenen Bezeichner im Eigenschaftentagarray, auf das  _von lppPropTags_ verwiesen wird, auf **PT_UNSPECIFIED** festgelegt sind, müssen Sie die [IMAPIProp::SetProps-Methode](imapiprop-setprops.md) aufrufen, um die genauen Typen abzurufen. 
+Da die Eigenschaftstypen für die zurückgegebenen Bezeichner im Eigenschaftentagarray, auf die durch  _lppPropTags_ verwiesen wird, auf **PT_UNSPECIFIED** festgelegt sind, müssen Sie die [IMAPIProp::SetProps-Methode](imapiprop-setprops.md) aufrufen, um die genauen Typen abzurufen. 
   
-Wenn Sie Objekte mit benannten Eigenschaften verschieben oder kopieren und die Quell- und Zielobjekte unterschiedliche Zuordnungssignaturen aufweisen, wie durch die Werte ihrer **PR_MAPPING_SIGNATURE-Eigenschaften** angegeben, müssen Sie die Namen während dieser Vorgänge beibehalten. Um Eigenschaftsnamen zu erhalten, passen Sie die entsprechenden Eigenschaftenbezeichner an die Zuordnung von Name zu Bezeichner des Zielobjekts an. 
+Wenn Sie Objekte mit benannten Eigenschaften verschieben oder kopieren und die Quell- und Zielobjekte unterschiedliche Zuordnungssignaturen aufweisen, wie durch die Werte ihrer **PR_MAPPING_SIGNATURE** Eigenschaften angegeben, müssen Sie die Namen während dieser Vorgänge beibehalten. Um Eigenschaftsnamen beizubehalten, passen Sie die entsprechenden Eigenschaftsbezeichner so an, dass sie der Zuordnung von Namen zu Bezeichnern des Zielobjekts entsprechen. 
   
-Einige Objekte haben eine Beschränkung der Anzahl von Eigenschaftsbezeichnern, die sie benennen können. Wenn bei einem Aufruf **von GetIDsFromNames** dieser Grenzwert überschritten wird, gibt die Methode MAPI_E_TOO_BIG. In diesem Fall abfrage nach Bezeichner. 
+Einige Objekte haben einen Grenzwert für die Anzahl der Eigenschaftsbezeichner, die sie benennen können. Wenn ein Aufruf von **GetIDsFromNames** bewirkt, dass dieser Grenzwert überschritten wird, gibt die Methode MAPI_E_TOO_BIG zurück. Fragen Sie in diesem Fall nach Bezeichner ab. 
   
 Weitere Informationen finden Sie unter [MAPI Named Properties](mapi-named-properties.md). 
   
@@ -118,7 +118,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|SingleMAPIPropListCtrl.cpp  <br/> |CSingleMAPIPropListCtrl::FindAllNamedPropsUsed  <br/> |MFCMAPI verwendet die **IMAPIProp::GetIDsFromNames-Methode, um Eigenschaftstags** für alle benannten Eigenschaften zu erhalten, die zugeordnet wurden.  <br/> |
+|SingleMAPIPropListCtrl.cpp  <br/> |CSingleMAPIPropListCtrl::FindAllNamedPropsUsed  <br/> |MFCMAPI verwendet die **IMAPIProp::GetIDsFromNames-Methode,** um Eigenschaftentags für alle benannten Eigenschaften abzurufen, die zugeordnet wurden.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

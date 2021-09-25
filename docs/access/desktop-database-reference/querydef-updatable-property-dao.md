@@ -1,20 +1,20 @@
 ---
-title: QueryDef. aktualisierbare Eigenschaft (DAO)
+title: QueryDef.Updatable-Eigenschaft (DAO)
 TOCTitle: Updatable Property
 ms:assetid: 9b978b7d-1d76-ff27-a032-dd94660fb088
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff198056(v=office.15)
 ms:contentKeyID: 48546575
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: c5321e834f1dd5ed663033cacb530962d7beeb5a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 5557e61a12d8db8c5532a547778540e4db5ac9ed
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303332"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565009"
 ---
-# <a name="querydefupdatable-property-dao"></a>QueryDef. aktualisierbare Eigenschaft (DAO)
+# <a name="querydefupdatable-property-dao"></a>QueryDef.Updatable-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -23,9 +23,9 @@ Gibt einen Wert zurück, der anzeigt, ob ein DAO-Objekt geändert werden kann. S
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Aktualisierbar
+*Ausdruck* . Aktualisierbare
 
-*Ausdruck* Eine Variable, die ein **QueryDef** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **QueryDef**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 

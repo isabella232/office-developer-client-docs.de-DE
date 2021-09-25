@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251465
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cb6326a5-1bf8-b6a3-5c0d-d38c071353a5
-description: Gibt den Rest (Modulus) zurück, der ergibt, wenn eine Zahl durch einen Teiler geteilt wird.
-ms.openlocfilehash: f6b713b1b3a9d2afa85f49de9d451642a00d8dad
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Gibt den Rest (Modulus) zurück, der resultiert, wenn eine Zahl durch einen Teiler geteilt wird.
+ms.openlocfilehash: 6d6d9893800aa8db0e882dd92d4adb0d05acb930
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429271"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59623334"
 ---
 # <a name="modulus-function"></a>MODULUS Function
 
-Gibt den Rest (Modulus) zurück, der ergibt, wenn eine Zahl durch einen Teiler geteilt wird.
+Gibt den Rest (Modulus) zurück, der resultiert, wenn eine Zahl durch einen Teiler geteilt wird.
   
 ## <a name="syntax"></a>Syntax
 
@@ -29,13 +29,13 @@ MODULUS(** *number* **, ** *divisor* ** )
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _Anzahl_ <br/> |Erforderlich  <br/> |**Number** <br/> |Der Dividend.  <br/> |
-| _divisor_ <br/> |Erforderlich  <br/> |**Number** <br/> |Der Divisor.  <br/> |
+| _Divisor_ <br/> |Erforderlich  <br/> |**Number** <br/> |Der Divisor.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
-Nummer
+Zahl
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Ergebnis hat das gleiche Vorzeichen wie der Divisor. Wenn der Divisor 0 ist, wird der Fehler #DIV/0! zurückgegeben. 
   

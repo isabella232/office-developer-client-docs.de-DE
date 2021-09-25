@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251401
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 672eacaf-a374-c7e2-b39b-8d42d2371aee
-description: Gibt eine 16-Bit-Binärzahl zurück, in der jedes Bit auf 1 festgelegt ist, wenn das entsprechende Bit in einer der beiden, aber nicht sowohl binäre Zahl1 als auch binäre Zahl2 1 ist. Andernfalls ist das Bit auf 0 festgelegt.
-ms.openlocfilehash: ab8ff46fe98512d963ef4ecd5c37127353827725
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Gibt eine 16-Bit-Binärzahl zurück, bei der jedes Bit auf 1 festgelegt ist, wenn das entsprechende Bit in der binären Zahl1 und der binären Zahl2 1 ist. Andernfalls wird das Bit auf 0 festgelegt.
+ms.openlocfilehash: b374eff1fb2644124bb5b4f2a52021d91b00df72
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439233"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616012"
 ---
 # <a name="bitxor-function"></a>BITXOR Function
 
-Gibt eine 16-Bit-Binärzahl zurück, in der jedes Bit auf 1 festgelegt ist, wenn das entsprechende Bit in einer der beiden, aber nicht sowohl binäre Zahl1 als auch binäre Zahl2 1 ist. Andernfalls ist das Bit auf 0 festgelegt.
+Gibt eine 16-Bit-Binärzahl zurück, bei der jedes Bit auf 1 festgelegt ist, wenn das entsprechende Bit in der binären Zahl1 und der binären Zahl2 1 ist. Andernfalls wird das Bit auf 0 festgelegt.
   
 ## <a name="syntax"></a>Syntax
 

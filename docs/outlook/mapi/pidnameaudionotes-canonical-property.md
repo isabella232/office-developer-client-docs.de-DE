@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidNameAudioNotes
 api_type:
 - COM
 ms.assetid: aec4d328-c192-4672-a478-b08442352794
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 188ddf13e623292e95a1af4af54cf4254d7b0345
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 1d0e04091cdf8f6cf34eb82ba79ddc56a2bcda99
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360907"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59629998"
 ---
 # <a name="pidnameaudionotes-canonical-property"></a>PidNameAudioNotes (kanonische Eigenschaft)
 
@@ -25,19 +25,19 @@ ms.locfileid: "32360907"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt die Textnotizen an, die einer Sprachnachricht zugeordnet sind.
+Gibt die Textnotizen an, die an eine Sprachnachricht angefügt sind.
   
 |||
 |:-----|:-----|
 |Anzeigenamen:  <br/> |UMAudioNotes  <br/> |
 |Eigenschaftensatz:  <br/> |PSETID_UnifiedMessaging  <br/> |
-|Eigenschaftsname:  <br/> |UMAudioNotes  <br/> |
+|Eigenschaftenname:  <br/> |UMAudioNotes  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Unified Messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Damit ein Endbenutzer Audionotizen direkt in einer Sprachnachricht lesen und bearbeiten kann, stellt ein Client ein Bearbeitungsfeld zur Verfügung, in dem der Benutzer eine Reihe von Notizen eingeben kann, die dieser Eigenschaft des Voicenachrichtenobjekts hinzugefügt werden.
+Damit ein Endbenutzer Audionotizen direkt in einer Sprachnachricht lesen und bearbeiten kann, stellt ein Client ein Bearbeitungsfeld bereit, in das der Benutzer eine Reihe von Notizen eingeben kann, die dieser Eigenschaft des VoIP-Nachrichtenobjekts hinzugefügt werden.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -45,7 +45,7 @@ Damit ein Endbenutzer Audionotizen direkt in einer Sprachnachricht lesen und bea
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Stellt Eigenschaftensatzdefinitionen und Verweise auf verwandte Exchange Server zur Verfügung.
+> Stellt Eigenschaftssatzdefinitionen und Verweise auf verwandte Exchange Server Protokollspezifikationen bereit.
     
 [[MS-OXOUM]](https://msdn.microsoft.com/library/2a0696c5-2caf-4f20-87fb-085db430afec%28Office.15%29.aspx)
   
@@ -55,7 +55,7 @@ Damit ein Endbenutzer Audionotizen direkt in einer Sprachnachricht lesen und bea
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -63,9 +63,9 @@ Mapidefs.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

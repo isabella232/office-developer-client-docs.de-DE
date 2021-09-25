@@ -1,18 +1,18 @@
 ---
-title: Das Field-Objekt (Access-Desktop-Daten Bankreferenz)
+title: Das Field-Objekt (Access-Desktopdatenbankreferenz)
 TOCTitle: The Field object
 ms:assetid: 55531e04-d74f-6394-df64-1660e5d572ca
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249284(v=office.15)
 ms:contentKeyID: 48544926
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 2cbd5752399e5a14f08b7eb944e3a028ba53f561
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 23b6db5cc5cb64ae0d302f147fcfa0f068338504
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314021"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59564799"
 ---
 # <a name="field-object"></a>Field-Objekt
 
@@ -46,7 +46,7 @@ In den folgenden Themen werden Eigenschaften des [Field](field-object-ado.md)-Ob
 
 ## <a name="discovering-the-data-type"></a>Ermitteln des Datentyps
 
-Die **Type** -Eigenschaft gibt den Datentyp des Felds an. Die von ADO unterstützten Aufzählungskonstanten des Datentyps werden in [DataTypeEnum](datatypeenum.md) im *ADO-Programmierhandbuch*beschrieben.
+Die **Type** -Eigenschaft gibt den Datentyp des Felds an. Die datentypenumerierten Konstanten, die von ADO unterstützt werden, werden in [DataTypeEnum](datatypeenum.md) in der *ADO-Programmierreferenz* beschrieben.
 
 Für numerische Gleitkomma-Datentypen wie z. B. **adNumeric** können Sie weitere Informationen abrufen. Die **NumericScale** -Eigenschaft gibt an, wie viele Stellen rechts des Dezimalzeichens zur Darstellung von Werten für das **Field** -Objekt verwendet werden. Die **Precision** -Eigenschaft gibt die maximale Anzahl von Stellen zur Darstellung von Werten für das **Field** -Objekt an.
 
@@ -67,13 +67,13 @@ Zum Ändern der Daten in einem Feld legen Sie die **Value** -Eigenschaft auf ein
 > [!NOTE]
 > **Recordset Field** values cannot be set when appending new **Fields** to a **Recordset**. Rather, new **Fields** can be appended to a closed **Recordset**. Then the **Recordset** must be opened, and only then can values be assigned to these **Fields**.
 
-## <a name="getting-more-field-information"></a>Weitere Feld Informationen
+## <a name="getting-more-field-information"></a>Abrufen weiterer Feldinformationen
 
 ADO-Objekte weisen zwei Arten von Eigenschaften auf, nämlich integrierte und dynamische Eigenschaften. Bisher wurden nur die integrierten Eigenschaften des **Field** -Objekts behandelt.
 
-Bei integrierten Eigenschaften handelt es sich um die Eigenschaften, die in ADO implementiert werden und die mit der Syntax sofort für jedes neue Objekt verfügbar sind. Sie werden nicht als **Property** -Objekte in der **Properties** -Auflistung eines Objekts angezeigt.
+Integrierte Eigenschaften sind diese Eigenschaften, die in ADO implementiert sind und mithilfe der Syntax sofort für jedes neue Objekt verfügbar sind. Sie werden nicht als **Property** -Objekte in der **Properties** -Auflistung eines Objekts angezeigt.
 
-Dynamische Eigenschaften werden durch den zugrunde liegenden Datenprovider definiert und in der **Properties** -Auflistung für das entsprechende ADO-Objekt angezeigt. Beispielsweise kann eine anbieterspezifische Eigenschaft kennzeichnen, ob Transaktionen oder Aktualisierungen von einem **Recordset**-Objekt unterstützt werden. Diese zusätzlichen Eigenschaften werden als **Property**-Objekte in der **Properties**-Auflistung dieses **Recordset**-Objekts angezeigt. Auf dynamische Eigenschaften kann nur über die Auflistung verwiesen werden, wobei die Syntax MyObject. Properties (0) oder MyObject. Properties ("Name") verwendet wird.
+Dynamische Eigenschaften werden durch den zugrunde liegenden Datenprovider definiert und in der **Properties** -Auflistung für das entsprechende ADO-Objekt angezeigt. Beispielsweise kann eine anbieterspezifische Eigenschaft kennzeichnen, ob Transaktionen oder Aktualisierungen von einem **Recordset**-Objekt unterstützt werden. Diese zusätzlichen Eigenschaften werden als **Property**-Objekte in der **Properties**-Auflistung dieses **Recordset**-Objekts angezeigt. Auf dynamische Eigenschaften kann nur über die Auflistung mithilfe der Syntax MyObject.Properties(0) oder MyObject.Properties("Name") verwiesen werden.
 
 Keiner der beiden Eigenschaftstypen kann gelöscht werden.
 
@@ -104,7 +104,7 @@ Die **Properties** -Auflistung für das **Field** -Objekt enthält zusätzliche 
 'EndFieldProps 
 ```
 
-## <a name="dealing-with-binary-data"></a>Umgang mit Binärdaten
+## <a name="dealing-with-binary-data"></a>Umgang mit binären Daten
 
 Use the [AppendChunk](appendchunk-method-ado.md) method on a **Field** object to fill it with long binary or character data. In situations where system memory is limited, you can use the **AppendChunk** method to manipulate long values in portions rather than in their entirety.
 
@@ -122,5 +122,5 @@ Wenn das **adFldLong** -Bit in der **Attributes** -Eigenschaft eines **Field** -
 
 Der Fehler 3021 (kein aktueller Datensatz) wird generiert, falls kein aktueller Datensatz vorhanden ist, wenn Sie die Methode **GetChunk** oder **AppendChunk** für ein **Field** -Objekt verwenden.
 
-Ein Beispiel für die Verwendung dieser Methoden zum Bearbeiten von Binärdaten finden Sie in den Beispielen zur [AppendChunk-Methode](appendchunk-method-ado.md) und GetChunk [-Methode](getchunk-method-ado.md) im *ADO-Programmierhandbuch*.
+Ein Beispiel für die Verwendung dieser Methoden zum Bearbeiten von Binärdaten finden Sie in den Beispielen ["AppendChunk-Methode"](appendchunk-method-ado.md) und ["GetChunk-Methode"](getchunk-method-ado.md) im *ADO-Programmierverweis.*
 

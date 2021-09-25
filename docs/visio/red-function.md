@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251487
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a95fd86d-ebc1-66b6-e7d9-9c8ea84d23ab
 description: Gibt die rote Komponente einer Farbe zurück.
-ms.openlocfilehash: e8c6115ac0441b25ce8333485828e8ef0f615459
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 37d54cb5cb35bb285b92ab31eea8482709410911
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33415523"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59623138"
 ---
 # <a name="red-function"></a>RED Function
 
@@ -22,7 +22,7 @@ Gibt die rote Komponente einer Farbe zurück.
   
 ## <a name="syntax"></a>Syntax
 
-RED(** *Expression* ** ) 
+RED(** *Ausdruck* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -32,11 +32,11 @@ RED(** *Expression* ** )
    
 ### <a name="return-value"></a>Rückgabewert
 
-Nummer
+Zahl
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Der Rückgabewert ist eine Zahl im Bereich von 0 bis einschließlich 255, oder ein Zellbezug, der als Index aufgelöst wird. Wenn  _Ausdruck_ ungültig ist, gibt diese Funktion 0 (Schwarz) zurück. 
+Der Rückgabewert ist eine Zahl im Bereich von 0 bis einschließlich 255, oder ein Zellbezug, der als Index aufgelöst wird. Wenn  _der Ausdruck_ ungültig ist, gibt diese Funktion 0 (schwarz) zurück. 
   
 ## <a name="example-1"></a>Beispiel 1
 

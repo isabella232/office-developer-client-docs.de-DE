@@ -1,20 +1,20 @@
 ---
-title: QueryDef. Connect-Eigenschaft (DAO)
+title: Querydef. Verbinden-Eigenschaft (DAO)
 TOCTitle: Connect Property
 ms:assetid: 14f19205-e92e-acc6-5677-b6d88772d5da
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845479(v=office.15)
 ms:contentKeyID: 48543398
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 009e49a96ea1cd5ee3db0b96adb9cae4a6bce21b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 91dde9c32671b6b1483b0d610aba1fbabb49b003
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301085"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577017"
 ---
-# <a name="querydefconnect-property-dao"></a>QueryDef. Connect-Eigenschaft (DAO)
+# <a name="querydefconnect-property-dao"></a>Querydef. Verbinden-Eigenschaft (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -22,9 +22,9 @@ Legt einen Wert fest, der Informationen über die Quelle der in einer Pass-Throu
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Verbinden
+*expression* .Connect
 
-*Ausdruck* Eine Variable, die ein **QueryDef** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **QueryDef**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 
@@ -32,7 +32,7 @@ Die Einstellung der **Connect**-Eigenschaft ist ein **String**-Wert, der aus ein
 
 Sie können eine SQL-Pass-Through-Abfrage für eine Tabelle ausführen, die mit Ihrer Microsoft Access-Datenbankdatei verknüpft ist, indem Sie zunächst die **Connect**-Eigenschaft der Datenbank der verknüpften Tabelle auf eine gültige ODBC-Verbindungszeichenfolge festlegen.
 
-Der Pfad, wie in der folgenden Tabelle dargestellt, ist der vollständige Pfad für das Verzeichnis, das die Datenbankdateien enthält, und es muss der Bezeichner DATABASE = vorangestellt werden. In einigen Fällen (wie in den Datenbanken von Microsoft Excel und Microsoft Access-Datenbankmodul) sollten Sie einen bestimmten Dateinamen in das Argument Datenbankpfad aufnehmen.
+Der Pfad ist der vollständige Pfadname für das Verzeichnis, das die Datenbankdateien enthält, wie in der folgenden Tabelle dargestellt. Der Pfadname muss mit dem Bezeichner DATABASE= beginnen. In einigen Fällen (wie bei Microsoft Excel- und Microsoft Access-Datenbanken) muss ein spezifischer Dateiname in das Argument des Datenbankpfads einbezogen werden.
 
 In der folgenden Tabelle sind die möglichen Datenbanktypen und ihre entsprechenden Datenbankbezeichner und Pfadnamen für die Einstellungen der **Connect**-Eigenschaft aufgelistet.
 
@@ -88,37 +88,37 @@ In der folgenden Tabelle sind die möglichen Datenbanktypen und ihre entsprechen
 <tr class="even">
 <td><p>Microsoft Excel 3.0</p></td>
 <td><p>Excel 3.0;</p></td>
-<td><p>Laufwerk: \ path\filename.xls</p></td>
+<td><p>Laufwerk:\Pfad\Dateiname.xls</p></td>
 </tr>
 <tr class="odd">
 <td><p>Microsoft Excel 4.0</p></td>
 <td><p>Excel 4.0;</p></td>
-<td><p>Laufwerk: \ path\filename.xls</p></td>
+<td><p>Laufwerk:\Pfad\Dateiname.xls</p></td>
 </tr>
 <tr class="even">
 <td><p>Microsoft Excel 5.0 oder Microsoft Excel 95</p></td>
 <td><p>Excel 5.0;</p></td>
-<td><p>Laufwerk: \ path\filename.xls</p></td>
+<td><p>Laufwerk:\Pfad\Dateiname.xls</p></td>
 </tr>
 <tr class="odd">
 <td><p>Microsoft Excel 97</p></td>
 <td><p>Excel 8.0;</p></td>
-<td><p>Laufwerk: \ path\filename.xls</p></td>
+<td><p>Laufwerk:\Pfad\Dateiname.xls</p></td>
 </tr>
 <tr class="even">
 <td><p>Lotus 1-2-3 WKS und WK1</p></td>
 <td><p>Lotus WK1;</p></td>
-<td><p>Laufwerk: \ path\filename.WK1</p></td>
+<td><p>Laufwerk:\Pfad\Dateiname.wk1</p></td>
 </tr>
 <tr class="odd">
 <td><p>Lotus 1-2-3 WK3</p></td>
 <td><p>Lotus WK3;</p></td>
-<td><p>Laufwerk: \ path\filename.WK3</p></td>
+<td><p>Laufwerk:\Pfad\Dateiname.wk3</p></td>
 </tr>
 <tr class="even">
 <td><p>Lotus 1-2-3 WK4</p></td>
 <td><p>Lotus WK4;</p></td>
-<td><p>Laufwerk: \ path\filename.WK4</p></td>
+<td><p>Laufwerk:\Pfad\Dateiname.wk4</p></td>
 </tr>
 <tr class="odd">
 <td><p>HTML-Import</p></td>
@@ -142,7 +142,7 @@ In der folgenden Tabelle sind die möglichen Datenbanktypen und ihre entsprechen
 </tr>
 <tr class="odd">
 <td><p>Microsoft Exchange</p></td>
-<td><p>Exchange 4,0; MAPILEVEL = folderPath; [BASISTYP = {0 | 1}]; [PROFILE = Profil;] [PWD = Kennwort;] [DATABASE = Datenbank;]</p></td>
+<td><p>Exchange 4.0; MAPILEVEL=Ordnerpfad; [TABLETYPE={ 0 | 1 }];[PROFILE=Profil;] [PWD=Kennwort;] [DATABASE=Datenbank;]</p></td>
 <td><p>Laufwerk:\Pfad\Dateiname</p></td>
 </tr>
 </tbody>
@@ -155,7 +155,7 @@ Wenn ein Kennwort erforderlich ist, aber in der **Connect**-Eigenschaft nicht an
 
 Für Daten in Microsoft Exchange muss für den erforderlichen MAPILEVEL-Schlüssel ein vollständig aufgelöster Ordnerpfad angegeben werden (z. B. "Mailbox - Pat SmithIAlpha/Today"). Der Pfad umfasst nicht den Namen des Ordners, der als Tabelle geöffnet wird. Der Name dieses Ordners muss stattdessen als name-Argument der **CreateTable**-Methode angegeben werden. Zum Öffnen eines Ordners muss der TABLETYPE-Schlüssel auf "0" gesetzt werden (Standard), zum Öffnen eines Adressbuchs muss er den Wert "1" erhalten. Der PROFILE-Schlüssel erhält standardmäßig den Wert des aktuell verwendeten Profils.
 
-On a **QueryDef** object in a Microsoft Access workspace, you can use the **Connect** property with the ReturnsRecords property to create an ODBC SQL pass-through query. Der DatabaseType der Verbindungszeichenfolge ist "ODBC;", und der Rest der Zeichenfolge enthält spezifische Informationen für den ODBC-Treiber, der für den Zugriff auf die Remotedaten verwendet wird. For more information, see the documentation for the specific driver.
+On a **QueryDef** object in a Microsoft Access workspace, you can use the **Connect** property with the ReturnsRecords property to create an ODBC SQL pass-through query. Der Datenbanktyp der Verbindungszeichenfolge lautet "ODBC;", und der Rest der Zeichenfolge enthält Informationen speziell für den ODBC-Treiber, der für den Zugriff auf die Remotedaten verwendet wird. For more information, see the documentation for the specific driver.
 
 > [!NOTE]
 > - Vor dem Festlegen der **ReturnsRecords**-Eigenschaft müssen Sie die **Connect**-Eigenschaft festlegen.

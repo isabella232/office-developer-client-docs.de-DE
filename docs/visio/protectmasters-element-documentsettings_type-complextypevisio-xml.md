@@ -4,21 +4,21 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: edc46630-c320-6b4e-4747-961075dd5fd7
-description: Gibt an, ob der Benutzer am Erstellen, Bearbeiten oder Löschen von Masterformen gehindert wird. Der Benutzer kann unabhängig von dieser Einstellung immer noch neue Shapes aus einem Master-Shape erstellen.
-ms.openlocfilehash: 34ace8c873b133f44ea7bd7c9c2e4127a103a760
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+description: Gibt an, ob verhindert wird, dass der Benutzer Master-Shapes erstellt, bearbeitet oder löscht. Der Benutzer kann unabhängig von dieser Einstellung weiterhin neue Shapes aus einem Master-Shape erstellen.
+ms.openlocfilehash: e0919e57bbdda5782548636793ba1ebb3744d788
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34540693"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59623173"
 ---
 # <a name="protectmasters-element-documentsettings_type-complextype-visio-xml"></a>ProtectMasters-Element (DocumentSettings_Type complexType) (Visio XML)
 
-Gibt an, ob der Benutzer am Erstellen, Bearbeiten oder Löschen von Masterformen gehindert wird. Der Benutzer kann unabhängig von dieser Einstellung immer noch neue Shapes aus einem Master-Shape erstellen. 
+Gibt an, ob verhindert wird, dass der Benutzer Master-Shapes erstellt, bearbeitet oder löscht. Der Benutzer kann unabhängig von dieser Einstellung weiterhin neue Shapes aus einem Master-Shape erstellen. 
   
-Der Bereich der möglichen Werte für dieses Element ist entweder "0" oder "1". Der Wert "0" gibt an, dass Benutzer Masterformen erstellen, bearbeiten oder löschen können. Der Wert "1" gibt an, dass Benutzer Masterformen nicht erstellen, bearbeiten oder löschen können.
+Der Bereich der möglichen Werte für dieses Element ist entweder '0' oder '1'. Der Wert "0" gibt an, dass Benutzer Master-Shapes erstellen, bearbeiten oder löschen können. Der Wert "1" gibt an, dass Benutzer keine Master-Shapes erstellen, bearbeiten oder löschen können.
   
 ## <a name="element-information"></a>Informationen zum Element
 
@@ -38,7 +38,7 @@ Der Bereich der möglichen Werte für dieses Element ist entweder "0" oder "1". 
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

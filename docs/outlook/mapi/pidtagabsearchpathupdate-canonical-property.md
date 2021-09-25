@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagAbSearchPathUpdate
 api_type:
 - HeaderDef
 ms.assetid: 5ea20b49-8b57-4ad0-a70d-6547a01c8344
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 86258711d7cc6bc1933102f7579bb46339a138de
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 068cfb81cd65e5fd626f5d11d6c6a992f8dde283
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33426590"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59629893"
 ---
 # <a name="pidtagabsearchpathupdate-canonical-property"></a>PidTagAbSearchPathUpdate (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "33426590"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine Liste der Eintragsbezeichner für Adressbuchcontainer, die vom Benutzer explizit konfiguriert wurden. 
+Enthält eine Liste der Eintragsbezeichner für Adressbuchcontainer, die explizit vom Benutzer konfiguriert wurden. 
   
 |||
 |:-----|:-----|
@@ -34,9 +34,9 @@ Enthält eine Liste der Eintragsbezeichner für Adressbuchcontainer, die vom Ben
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Adressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie diese Eigenschaft nicht. Sie ist für die Verwendung durch MAPI reserviert.
+Verwenden Sie diese Eigenschaft nicht. Sie ist für die Verwendung durch mapi reserviert.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,19 +44,19 @@ Verwenden Sie diese Eigenschaft nicht. Sie ist für die Verwendung durch MAPI re
 
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

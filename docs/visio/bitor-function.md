@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251400
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1d0954c5-b2cb-6c5d-62b3-a68011cf0c85
-description: Gibt eine 16-Bit-Binärzahl zurück, in der jedes Bit auf 1 festgelegt ist, wenn das entsprechende Bit in binärer Zahl1 oder binärer Zahl2 1 ist. Das Bit wird nur dann auf 0 festgelegt, wenn das entsprechende Bit sowohl in binärer Zahl1 als auch in binärer Zahl2 0 ist.
-ms.openlocfilehash: 13bda2c6c65557b1f8372432cf919b2aaf2d75de
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Gibt eine 16-Bit-Binärzahl zurück, bei der jedes Bit auf 1 festgelegt ist, wenn das entsprechende Bit in binärer Zahl1 oder binärer Zahl2 1 ist. Das Bit wird nur auf 0 festgelegt, wenn das entsprechende Bit in binärer Zahl1 und binärer Zahl2 0 ist.
+ms.openlocfilehash: 6f6e6176e2e14291547db31514fd105622a44fd4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33408082"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616019"
 ---
 # <a name="bitor-function"></a>BITOR Function
 
-Gibt eine 16-Bit-Binärzahl zurück, in der jedes Bit auf 1 festgelegt ist, wenn das entsprechende Bit in binärer  *Zahl1*  oder  *binärer Zahl2*  1 ist. Das Bit wird nur dann auf 0 festgelegt, wenn das entsprechende Bit sowohl in binärer *Zahl1* als auch in *binärer Zahl2 0 ist.* 
+Gibt eine 16-Bit-Binärzahl zurück, bei der jedes Bit auf 1 festgelegt ist, wenn das entsprechende Bit in  *binärer Zahl1*  oder  *binärer Zahl2*  1 ist. Das Bit wird nur auf 0 festgelegt, wenn das entsprechende Bit in  *binärer Zahl1*  und  *binärer Zahl2*  0 ist. 
   
 ## <a name="syntax"></a>Syntax
 

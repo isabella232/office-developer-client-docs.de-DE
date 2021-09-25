@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm1033777
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4d3bdf77-0ad4-86a4-d215-1d5a5fbe33f7
 description: Gibt an, ob Shapes auf dem Zeichenblatt automatisch geteilt werden können.
-ms.openlocfilehash: 18a40e0876b117556a1e7ab43f640e798dc248c0
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: d8e50a67746135ca43c3a9bee337be2fae31c827
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33422019"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59623236"
 ---
 # <a name="pageshapesplit-cell-page-layout-section"></a>Zelle "PageShapeSplit" (Abschnitt "Page Layout")
 
@@ -25,21 +25,21 @@ Gibt an, ob Shapes auf dem Zeichenblatt automatisch geteilt werden können.
 |0  <br/> |Automatische Shape-Teilung nicht zulassen.  <br/> |**visPLOSplitNone** <br/> |
 |1  <br/> |Automatische Shape-Teilung zulassen (Standardeinstellung).  <br/> |**visPLOSplitAllow** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das automatische Teilen von Shapes wird auf drei unterschiedlichen Ebenen aktiviert und deaktiviert: Anwendung, Zeichenblatt und Shape. In der Standardeinstellung ist das Teilen auf den Ebenen Anwendung und Zeichenblatt aktiviert. Die Standardeinstellungen für Shapes hängen vom Typ der Zeichnung ab. 
   
-Verwenden Sie zum Aktivieren oder Deaktivieren der  Aufteilung auf Anwendungsebene  die Einstellung Connectorteilung aktivieren auf der Registerkarte Erweitert im Dialogfeld  **Visio-Optionen** (klicken Sie auf die Schaltfläche **Office,** klicken Sie auf der Registerkarte **Visio** auf Optionen, und klicken Sie dann auf **Erweitert** ). 
+Um das Teilen auf Anwendungsebene zu aktivieren oder zu deaktivieren, verwenden Sie die Einstellung **"Verbinderteilung aktivieren"** auf der Registerkarte **"Erweitert"** des Dialogfelds **"Visio Optionen"** (klicken Sie auf die Schaltfläche **Office,** klicken Sie auf der Registerkarte **Visio** auf **Optionen,** und klicken Sie dann auf **"Erweitert").** 
   
-Informationen zum Aktivieren oder Deaktivieren der Aufteilung auf Formebene finden Sie in den Zellen ShapeSplit und ShapeSplittable. 
+Informationen zum Aktivieren oder Deaktivieren der Teilung auf Shape-Ebene finden Sie in den Zellen "ShapeSplit" und "ShapeSplittable". 
   
-Um einen Verweis auf die Zelle PageShapeSplit anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Um einen Verweis auf die Zelle "PageShapeSplit" anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |PageShapeSplit  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle PageShapeSplit nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle PageShapeSplit anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

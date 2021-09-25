@@ -4,36 +4,36 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e7470417-0d70-433e-9496-604ca2eafee6
-description: Bestimmt den Typ der Schnellformatvorlage (2-dimensional, 1-dimensional oder Verbinder), den die Form erbt.
-ms.openlocfilehash: 95aced62c6397fc3229de29b98d3f18e5f69d05b
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Bestimmt den Typ der Schnellformatvorlage (2-dimensional, 1-dimensional oder Verbinder), die das Shape erbt.
+ms.openlocfilehash: 4dbdb470f3e9bf2db46a47e2efebfd6414256902
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33410504"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59623152"
 ---
 # <a name="quickstyletype-cell-quick-style-section"></a>Zelle "QuickStyleType" (Abschnitt "Quick Style")
 
-Bestimmt den Typ der Schnellformatvorlage (2-dimensional, 1-dimensional oder Verbinder), den die Form erbt. 
+Bestimmt den Typ der Schnellformatvorlage (2-dimensional, 1-dimensional oder Verbinder), die das Shape erbt. 
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|0  <br/> |Visio automatisch auswählen  <br/> |
+|0  <br/> |Visio wird automatisch ausgewählt  <br/> |
 |1  <br/> |1-dimensional  <br/> |
 |2  <br/> |2-dimensional  <br/> |
 |3  <br/> |Connector  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie zum Erhalten eines Verweises auf die **Zelle QuickStyleType** anhand des Namens aus einer anderen Formel, nach dem Wert des **N-Attributs** eines **Cell-Elements** oder aus einem Programm mit der **CellsU-Eigenschaft:** 
+Um einen Verweis auf die **QuickStyleType-Zelle** anhand des Namens aus einer anderen Formel, anhand des Werts des **N-Attributs** eines **Cell-Elements** oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | QuickStyleType  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die **QuickStyleType-Zelle** nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die **Zelle "QuickStyleType"** anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

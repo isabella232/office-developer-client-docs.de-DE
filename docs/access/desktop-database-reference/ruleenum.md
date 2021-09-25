@@ -1,18 +1,18 @@
 ---
-title: RuleEnum (Access Desktop Database Reference)
+title: RuleEnum (Access-Desktopdatenbankreferenz)
 TOCTitle: RuleEnum
 ms:assetid: 5b59f202-315b-09b7-8505-9ac08ceccb3d
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249317(v=office.15)
 ms:contentKeyID: 48545071
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 8d01e685857c78ec33c82ca56943249488bf7d14
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 34085573d13a1b230d1243f1b232eb01518a34b8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306678"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59576884"
 ---
 # <a name="ruleenum"></a>RuleEnum
 

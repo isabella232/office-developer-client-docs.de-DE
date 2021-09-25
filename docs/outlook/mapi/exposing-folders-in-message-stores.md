@@ -3,17 +3,17 @@ title: Verf�gbarmachen von Ordnern in Nachrichtenspeicher
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: d9309e47-2a92-4576-9921-c89cc48472c2
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 457620dd0f805e78d12fc8feba09f8fc8aedc554
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: fb6134d462dbe7541e7672b5a684bc6af51a0d86
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341349"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596484"
 ---
 # <a name="exposing-folders-in-message-stores"></a>Verfügbarmachen von Ordnern in Nachrichtenspeichern
 

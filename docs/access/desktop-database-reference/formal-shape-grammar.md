@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249752(v=office.15)
 ms:contentKeyID: 48546774
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: d30ff9146146bb0457a5aa383b2b720a4fdaeb78
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 1fcc725a554496f7aa6c7e9ad07402aecabf9416
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292321"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615452"
 ---
 # <a name="formal-shape-grammar"></a>Formal Shape Grammar
 
@@ -22,7 +22,7 @@ Dies ist die formale Grammatik zum Erstellen von Shape-Befehlen:
 
   - Erforderliche Grammatikbegriffe sind Textzeichenfolgen, die durch spitze Klammern ("\<\>") getrennt sind.
 
-  - Optionale Ausdrücke werden durch eckige Klammern ("\[ \]") getrennt.
+  - Optionale Begriffe werden durch eckige Klammern (" ") getrennt. \[ \]
 
   - Alternativen werden durch einen Schrägstrich ("|") angegeben.
 
@@ -50,120 +50,120 @@ Alle andere Begriffe sind Literale.
 <tbody>
 <tr class="odd">
 <td><p>&lt;Shape-Befehl&gt;</p></td>
-<td><p>Shape [&lt;Tabelle-exp&gt; [[as] &lt;Alias&gt;]] [&lt;Shape-Aktion&gt;]</p></td>
+<td><p>SHAPE [ &lt; table-exp &gt; [[AS] &lt; alias &gt; ]][ &lt; shape-action &gt; ]</p></td>
 </tr>
 <tr class="even">
-<td><p>&lt;Tabelle-Exp&gt;</p></td>
-<td><p>{&lt;Anbieter-Command-Text&gt;} |<br />
-(&lt;Shape-Befehl&gt;) |<br />
-Tabelle &lt;in Anführungszeichen-Name&gt; |<br />
-&lt;zitiert-Name&gt;</p></td>
+<td><p>&lt;table-exp&gt;</p></td>
+<td><p>{ &lt; provider-command-text &gt; } |<br />
+( &lt; shape-command &gt; ) |<br />
+&lt;TABLE-Name in Anführungszeichen&gt; |<br />
+&lt;in Anführungszeichen&gt;</p></td>
 </tr>
 <tr class="odd">
 <td><p>&lt;Shape-Aktion&gt;</p></td>
-<td><p>Alias &lt;-field-list anfügen&gt; |</p>
-<p>COMPUTE &lt;aliased-Field-List&gt; [by &lt;Field-List&gt;]</p></td>
+<td><p>APPEND &lt; aliased-field-list&gt; |</p>
+<p>COMPUTE &lt; aliased-field-list &gt; [BY &lt; field-list &gt; ]</p></td>
 </tr>
 <tr class="even">
 <td><p>&lt;aliased-field-list&gt;</p></td>
-<td><p>&lt;aliased-Field&gt; [, &lt;aliased-Field... &gt;]</p></td>
+<td><p>&lt;aliased-field &gt; [, &lt; aliased-field... &gt; ]</p></td>
 </tr>
 <tr class="odd">
-<td><p>&lt;Alias-Field&gt;</p></td>
-<td><p>&lt;Field-exp&gt; [[as] &lt;Alias&gt;]</p></td>
+<td><p>&lt;Aliased-Field&gt;</p></td>
+<td><p>&lt;Field-Exp &gt; [[AS]-Alias &lt; &gt; ]</p></td>
 </tr>
 <tr class="even">
-<td><p>&lt;Field-Exp&gt;</p></td>
-<td><p>(&lt;Relation-exp&gt;) |</p>
-<p>&lt;berechnet-Exp&gt; |</p>
-<p>&lt;Aggregieren-Exp&gt; |</p>
-<p>&lt;neu-Exp&gt;</p></td>
+<td><p>&lt;field-exp&gt;</p></td>
+<td><p>( &lt; relation-exp &gt; ) |</p>
+<p>&lt;calculated-exp&gt; |</p>
+<p>&lt;aggregate-exp&gt; |</p>
+<p>&lt;new-exp&gt;</p></td>
 </tr>
 <tr class="odd">
 <td><p>&lt;relation_exp&gt;</p></td>
-<td><p>&lt;Tabelle-exp&gt; [[as] &lt;Alias&gt;]</p>
-<p>&lt;Tabelle-exp&gt; [[as] &lt;Alias&gt;]</p></td>
+<td><p>&lt;table-exp &gt; [[AS]-Alias &lt; &gt; ]</p>
+<p>&lt;table-exp &gt; [[AS]-Alias &lt; &gt; ]</p></td>
 </tr>
 <tr class="even">
-<td><p>&lt;Relation-Ltg-Liste&gt;</p></td>
-<td><p>&lt;Relation-Ltg&gt; [, &lt;Relation-Ltg&gt;...]</p></td>
+<td><p>&lt;relation-cond-list&gt;</p></td>
+<td><p>&lt;relation-cond &gt; [, &lt; relation-cond &gt; ...]</p></td>
 </tr>
 <tr class="odd">
-<td><p>&lt;Relation-Ltg&gt;</p></td>
-<td><p>&lt;Field-Name&gt; unter &lt;Child-Ref&gt;</p></td>
+<td><p>&lt;relation-cond&gt;</p></td>
+<td><p>&lt;Feldname &gt; TO &lt; untergeordneter Verweis&gt;</p></td>
 </tr>
 <tr class="even">
-<td><p>&lt;Child-Ref&gt;</p></td>
+<td><p>&lt;untergeordnete Referenz&gt;</p></td>
 <td><p>&lt;Feldname&gt; |</p>
-<p>PARAMETER &lt;param-Ref&gt;</p></td>
+<p>PARAMETER &lt; param-ref&gt;</p></td>
 </tr>
 <tr class="odd">
-<td><p>&lt;param-Ref&gt;</p></td>
+<td><p>&lt;param-ref&gt;</p></td>
 <td><p>&lt;Anzahl&gt;</p></td>
 </tr>
 <tr class="even">
-<td><p>&lt;Field-List&gt;</p></td>
-<td><p>&lt;Feldnamen&gt; [, &lt;Feldname]&gt;</p></td>
+<td><p>&lt;Feldliste&gt;</p></td>
+<td><p>&lt;Feldname &gt; [, &lt; Feldname &gt; ]</p></td>
 </tr>
 <tr class="odd">
-<td><p>&lt;Aggregieren-Exp&gt;</p></td>
-<td><p>SUM (&lt;Qualified-Field-Name&gt;) |</p>
-<p>AVG (&lt;Qualified-Field-Name&gt;) |</p>
-<p>MIN (&lt;Qualified-Field-Name&gt;) |</p>
-<p>MAX (&lt;Qualified-Field-Name&gt;) |</p>
-<p>COUNT (&lt;Qualified-Alias&gt; | &lt;Qualified-Name&gt;) |</p>
-<p>STDEV (&lt;Qualified-Field-Name&gt;) |</p>
-<p>ANY (&lt;Qualified-Field-Name&gt;)</p></td>
+<td><p>&lt;aggregate-exp&gt;</p></td>
+<td><p>SUM( &lt; qualified-field-name &gt; ) |</p>
+<p>AVG( &lt; qualified-field-name &gt; ) |</p>
+<p>MIN( &lt; qualified-field-name &gt; ) |</p>
+<p>MAX( &lt; qualified-field-name &gt; ) |</p>
+<p>COUNT( &lt; qualified-alias &gt;  |  &lt; qualified-name &gt; ) |</p>
+<p>STDEV( &lt; qualified-field-name &gt; ) |</p>
+<p>ANY( &lt; qualified-field-name &gt; )</p></td>
 </tr>
 <tr class="even">
-<td><p>&lt;berechnet-Exp&gt;</p></td>
-<td><p>CALC (&lt;Ausdruck&gt;)</p></td>
+<td><p>&lt;calculated-exp&gt;</p></td>
+<td><p>CALC( &lt; Ausdruck &gt; )</p></td>
 </tr>
 <tr class="odd">
-<td><p>&lt;Qualified-Field-Name&gt;</p></td>
-<td><p>&lt;Alias&gt;. [&lt;Alias&gt;...] &lt;Feldname&gt;</p></td>
+<td><p>&lt;qualified-field-name&gt;</p></td>
+<td><p>&lt;alias &gt; .[ &lt; Alias &gt; ...] &lt; Feldname&gt;</p></td>
 </tr>
 <tr class="even">
 <td><p>&lt;Alias&gt;</p></td>
-<td><p>&lt;zitiert-Name&gt;</p></td>
+<td><p>&lt;in Anführungszeichen&gt;</p></td>
 </tr>
 <tr class="odd">
 <td><p>&lt;Feldname&gt;</p></td>
-<td><p>&lt;Anführungs&gt; Zeichen-Name [ &lt;[&gt;as] Alias]</p></td>
+<td><p>&lt;Anführungszeichen &gt; [[AS]-Alias &lt; &gt; ]</p></td>
 </tr>
 <tr class="even">
-<td><p>&lt;zitiert-Name&gt;</p></td>
-<td><p>&quot;&lt;Zeichenfolge&gt;&quot; |</p>
-<p>'&lt;Zeichen&gt;Folge ' |</p>
-<p>[&lt;Zeichen&gt;Folge] |</p>
+<td><p>&lt;in Anführungszeichen&gt;</p></td>
+<td><p>&quot;&lt;Schnur&gt;&quot; |</p>
+<p>' &lt; string &gt; ' |</p>
+<p>[ &lt; Zeichenfolge &gt; ] |</p>
 <p>&lt;Namen&gt;</p></td>
 </tr>
 <tr class="odd">
 <td><p>&lt;qualifizierter Name&gt;</p></td>
-<td><p>Alias [. Alias...]</p></td>
+<td><p>alias[.alias...]</p></td>
 </tr>
 <tr class="even">
 <td><p>&lt;Namen&gt;</p></td>
-<td><p>Alpha [alpha | Ziffer | _ | # |: |...]</p></td>
+<td><p>alpha [ alpha | Ziffer | _ | # | : | ...]</p></td>
 </tr>
 <tr class="odd">
 <td><p>&lt;Anzahl&gt;</p></td>
 <td><p>Ziffer [Ziffer...]</p></td>
 </tr>
 <tr class="even">
-<td><p>&lt;neu-Exp&gt;</p></td>
-<td><p>Neuer &lt;field-type&gt; [(&lt;Number&gt; [, &lt;Number&gt;])]</p></td>
+<td><p>&lt;new-exp&gt;</p></td>
+<td><p>&lt;NEW-Feldtyp &gt; [( &lt; Zahl &gt; [, Zahl &lt; &gt; ])]</p></td>
 </tr>
 <tr class="odd">
-<td><p>&lt;Field-Typ&gt;</p></td>
+<td><p>&lt;Feldtyp&gt;</p></td>
 <td><p>Ein OLE DB- oder ADO-Datentyp.</p></td>
 </tr>
 <tr class="even">
-<td><p>&lt;string&gt;</p></td>
-<td><p>Unicode-Char [Unicode-Char...]</p></td>
+<td><p>&lt;Zeichenfolge&gt;</p></td>
+<td><p>unicode-char [unicode-char...]</p></td>
 </tr>
 <tr class="odd">
-<td><p>&lt;Ausdruck&gt;</p></td>
+<td><p>&lt;expression&gt;</p></td>
 <td><p>Ein Visual Basic für Applikationen-Ausdruck, dessen Operanden andere Nicht-CALC-Spalten in der gleichen Zeile sind.</p></td>
 </tr>
 </tbody>

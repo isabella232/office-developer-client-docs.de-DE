@@ -4,34 +4,34 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1ce8b52c-b6c1-4764-b4ec-00c7efb8929d
 description: Verhindert, dass die Zelle FontIndex in der Zeile Designeigenschaften geändert wird, indem ein neues Design angewendet wird. Verhindert nicht, dass Benutzer diesen Wert im ShapeSheet manuell bearbeiten.
-ms.openlocfilehash: b3bd21c1dcd8c8c13d843c50cb29edcc5b8c4999
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 037c5a3a4c480e7572add15b7cc36b1506735b17
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33421228"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615865"
 ---
 # <a name="lockthemefonts-cell-protection-section"></a>Zelle "LockThemeFonts" (Abschnitt "Protection")
 
-Verhindert, **dass die Zelle FontIndex** in der Zeile **Designeigenschaften** geändert wird, indem ein neues Design angewendet wird. Verhindert nicht, dass Benutzer diesen Wert im ShapeSheet manuell bearbeiten. 
+Verhindert, dass die **Zelle FontIndex** in der Zeile Designeigenschaften geändert wird, indem ein neues Design angewendet wird.  Verhindert nicht, dass Benutzer diesen Wert im ShapeSheet manuell bearbeiten. 
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|TRUE  <br/> |Die **Zelle FontIndex** kann nicht vom aktuellen Wert geändert werden, es sei denn, sie wird direkt im ShapeSheet geändert.  <br/> |
-|FALSE  <br/> |Die **Zelle FontIndex** kann von ihrem aktuellen Wert geändert werden, wenn das Design geändert wird.  <br/> |
+|TRUE  <br/> |Die Zelle **FontIndex** kann nicht vom aktuellen Wert geändert werden, es sei denn, sie wird direkt im ShapeSheet geändert.  <br/> |
+|FALSE  <br/> |Die **Zelle FontIndex** kann vom aktuellen Wert geändert werden, wenn das Design geändert wird.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie zum Erhalten eines Verweises auf die **Zelle LockThemeFonts** anhand des Namens aus einer anderen Formel, nach dem Wert des **N-Attributs** eines **Cell-Elements** oder aus einem Programm mit der **CellsU-Eigenschaft:** 
+Verwenden Sie Folgendes, um einen Verweis auf die **Zelle "LockThemeFonts"** anhand des Namens aus einer anderen Formel, anhand des Werts des **N-Attributs** eines **Cell-Elements** oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | LockThemeFonts  <br/> |
    
-Um einen Verweis auf die **Zelle LockThemeFonts** nach Index aus einem Programm zu erhalten, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle **LockThemeFonts** anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

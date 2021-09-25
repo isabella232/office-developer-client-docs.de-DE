@@ -1,20 +1,20 @@
 ---
-title: Recordset. NextRecordset-Methode (DAO)
+title: Recordset.NextRecordset-Methode (DAO)
 TOCTitle: NextRecordset Method
 ms:assetid: 4a3a6176-0aa0-efb6-b175-dbe23e266abc
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff193483(v=office.15)
 ms:contentKeyID: 48544664
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 39e508830b41e7b3f74f548451a30132723d210f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d7c0b44c72f449ff90f1433c260fde74af3cc598
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32284497"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606149"
 ---
-# <a name="recordsetnextrecordset-method-dao"></a>Recordset. NextRecordset-Methode (DAO)
+# <a name="recordsetnextrecordset-method-dao"></a>Recordset.NextRecordset-Methode (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -23,7 +23,7 @@ ms.locfileid: "32284497"
 
 *Ausdruck* . NextRecordset
 
-*Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset**-Objekt darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
 
@@ -31,7 +31,7 @@ Boolesch
 
 ## <a name="remarks"></a>Bemerkungen
 
-In einem ODBCDirect-Arbeitsbereich können Sie ein **[Recordset](recordset-object-dao.md)** -Objekt mit mehr als einer Auswahlabfrage im Source- **** Argument von OpenRecordset oder der **[SQL](querydef-sql-property-dao.md)** -Eigenschaft eines **[QueryDef](querydef-object-dao.md)** -Objekts der SELECT-Abfrage wie im folgenden Beispiel öffnen.
+In einem ODBCDirect-Arbeitsbereich können Sie ein **[Recordset](recordset-object-dao.md)** öffnen, das mehrere Auswahlabfragen im Quellargument von **OpenRecordset** oder die **[SQL-Eigenschaft](querydef-sql-property-dao.md)** eines **[QueryDef-Objekts](querydef-object-dao.md)** einer Auswahlabfrage enthält, wie im folgenden Beispiel gezeigt.
 
 ```sql
     SELECT LastName, FirstName FROM Authors 
@@ -44,7 +44,7 @@ Das zurückgegebene **Recordset** wird mit den Ergebnissen der ersten Abfrage ge
 
 Sind mehrere Datensätze verfügbar (der **OpenRecordset**-Aufruf oder die **SQL**-Eigenschaft enthielt also eine weitere Auswahlabfrage), werden die von der nächsten Abfrage zurückgegebenen Datensätze in das **Recordset** geladen, und **NextRecordset** gibt **True** zurück, was die Verfügbarkeit der Datensätze angibt. Sind keine Datensätze mehr verfügbar (d. h. die Ergebnisse der letzten Auswahlabfrage wurden in das **Recordset**-Objekt geladen), dann gibt **NextRecordset** den Wert **False** zurück, und **Recordset** ist leer.
 
-Sie können die **[Cancel](connection-cancel-method-dao.md)** -Methode auch verwenden, um den Inhalt eines **Recordset-Objekts**zu leeren. Mit **Cancel** werden auch die noch nicht geladenen Datensätze geleert.
+Sie können auch die **[Cancel](connection-cancel-method-dao.md)** -Methode verwenden, um den Inhalt eines **Recordset -Objekts** zu leeren. Mit **Cancel** werden auch die noch nicht geladenen Datensätze geleert.
 
 ## <a name="example"></a>Beispiel
 

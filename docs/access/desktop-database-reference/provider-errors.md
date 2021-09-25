@@ -1,18 +1,18 @@
 ---
-title: Anbieterfehler (Access Desktop Database Reference)
+title: Anbieterfehler (Access-Desktopdatenbankreferenz)
 TOCTitle: Provider errors
 ms:assetid: 9c39d450-6e67-b2fd-aeb5-849e6b65fd54
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249710(v=office.15)
 ms:contentKeyID: 48546592
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: d175cdaa007a354d12304dceff0352a923de2291
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4d2610be0ab206e5bb365b1147e06444ce7bbec7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301127"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606408"
 ---
 # <a name="provider-errors"></a>Anbieterfehler
 
@@ -81,7 +81,7 @@ Durch das Überprüfen eines **Error**-Objekts können Sie bestimmen, welcher Fe
 <td><p>Beschreibender Text für den aufgetretenen Fehler.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>HelpContext, hilfsHilfe</strong></p></td>
+<td><p><strong>HelpContext, HelpFile</strong></p></td>
 <td><p>Das Hilfethema und die Hilfedatei, die eine Beschreibung des aufgetretenen Fehlers enthalten.</p></td>
 </tr>
 <tr class="odd">
@@ -90,14 +90,14 @@ Durch das Überprüfen eines **Error**-Objekts können Sie bestimmen, welcher Fe
 </tr>
 <tr class="even">
 <td><p><strong>Number</strong></p></td>
-<td><p>Ein Long Integer-Wert, der die Zahl (in der <strong>ErrorValueEnum</strong>) des aufgetretenen Fehlers darstellt.</p></td>
+<td><p>Eine lange ganze Zahl, die die Zahl (im <strong>ErrorValueEnum</strong>aufgeführt) des aufgetretenen Fehlers darstellt.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Source</strong></p></td>
 <td><p>Gibt den Namen des Objekts oder der Anwendung an, das bzw. die einen Fehler generierte.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>SQLState</strong></p></td>
+<td><p><strong>Sqlstate</strong></p></td>
 <td><p>Ein aus fünf Zeichen bestehender Fehlercode, den der Anbieter während der Verarbeitung einer SQL-Anweisung zurückgibt.</p></td>
 </tr>
 </tbody>

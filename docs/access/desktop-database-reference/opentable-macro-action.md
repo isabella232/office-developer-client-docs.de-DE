@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm149011
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 48a3797c2008f261eda8acc3391b39561fec05f3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: fa0a62d24c67e64aeb25db4819df6a35e9fbfbff
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288294"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565212"
 ---
 # <a name="opentable-macro-action"></a>OpenTable-Makroaktion
 
@@ -42,7 +42,7 @@ Die **ÖffnenTabelle**-Aktion verwendet die folgenden Argumente.
 <tbody>
 <tr class="odd">
 <td><p><strong>Tabellenname</strong></p></td>
-<td><p>Der Name der zu öffnenden Tabelle. Im Feld <strong>Tabellen Name</strong> im Abschnitt <strong>Aktionsargumente</strong> des Bereichs Makro-Generator werden alle Tabellen in der aktuellen Datenbank angezeigt. Dies ist ein erforderliches Argument. Wenn Sie ein Makro in einer Bibliotheksdatenbank ausführen, das die <strong>ÖffnenTabelle</strong>-Aktion enthält, sucht Microsoft Access zunächst in der Bibliotheksdatenbank nach der Tabelle mit diesem Namen und dann in der aktuellen Datenbank.</p></td>
+<td><p>Der Name der zu öffnenden Tabelle. Im Feld <strong>Tabellenname</strong> im Abschnitt <strong>Aktionsargumente</strong> im Bereich Makro-Generator werden alle Tabellen in der aktuellen Datenbank angezeigt. Dies ist ein erforderliches Argument. Wenn Sie ein Makro in einer Bibliotheksdatenbank ausführen, das die <strong>ÖffnenTabelle</strong>-Aktion enthält, sucht Microsoft Access zunächst in der Bibliotheksdatenbank nach der Tabelle mit diesem Namen und dann in der aktuellen Datenbank.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>View</strong></p></td>
@@ -55,7 +55,7 @@ Die **ÖffnenTabelle**-Aktion verwendet die folgenden Argumente.
 </tbody>
 </table>
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Aktion ist mit dem Doppelklicken auf die Tabelle im Navigationsbereich, dem Klicken mit der rechten Maustaste auf die Tabelle im Navigationsbereich und dem Auswählen einer Ansicht vergleichbar.
 

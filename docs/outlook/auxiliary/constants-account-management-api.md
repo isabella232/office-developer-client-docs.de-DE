@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2a15e5df-b8e3-9c37-b1ee-2881d010e30b
 description: Dieses Thema enthält Konstantendefinitionen, Klassenbezeichner und Schnittstellenbezeichner für die Kontoverwaltungs-API.
-ms.openlocfilehash: d36116e30eb7879dcd0db0523be8f28bb8fe82a7
-ms.sourcegitcommit: adcf409d56b6cb25be6117f09794defa41ad6c0f
+ms.openlocfilehash: 2ff026a5fe8274b5279677f2c4da936ed12bd02f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "37495313"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596659"
 ---
 # <a name="constants-account-management-api"></a>Konstanten (Account Management API)
 
@@ -31,14 +31,14 @@ Dieses Thema enthält Konstantendefinitionen, Klassenbezeichner und Schnittstell
 |E_ACCT_NOT_FOUND  <br/> |0x800C8101  <br/> |
 |E_ACCT_UI_BUSY  <br/> |0x800C8102  <br/> |
 |E_ACCT_WRONG_SORT_ORDER  <br/> |0x800C8105  <br/> |
-|E_INVALIDARG  <br/> | *Wie in der Windows Software Development Kit (SDK) winerror.h definiert.*  <br/> |
-|E_NOTIMPL  <br/> | *Wie in der Windows sdk-Headerdatei winerror.h definiert.*  <br/> |
+|E_INVALIDARG  <br/> | *Wie in der headerdatei winerror.h des Windows Software Development Kit (SDK) definiert.*  <br/> |
+|E_NOTIMPL  <br/> | *Wie in der Windows SDK-Headerdatei winerror.h definiert.*  <br/> |
 |E_OLK_ALREADY_INITIALIZED  <br/> |0x800C8002  <br/> |
 |E_OLK_NOT_INITIALIZED  <br/> |0x800C8005  <br/> |
 |E_OLK_PARAM_NOT_SUPPORTED  <br/> |0x800C8003  <br/> |
 |E_OLK_PROP_READ_ONLY  <br/> |0x800C800D  <br/> |
 |E_OLK_REGISTRY  <br/> |0x800C8001  <br/> |
-|Die folgenden Konstanten, die mit ENCRYPT_ beginnen, werden von der [PROP_SMTP_SECURE_CONNECTION-Eigenschaft](prop_smtp_secure_connection.md) verwendet, um den Typ der verschlüsselten Verbindung anzugeben.  <br/> ||
+|Die folgenden Konstanten beginnend mit ENCRYPT_ werden von der [PROP_SMTP_SECURE_CONNECTION-Eigenschaft](prop_smtp_secure_connection.md) verwendet, um den Typ der verschlüsselten Verbindung anzugeben.  <br/> ||
 |ENCRYPT_CONN_AUTO  <br/> |3  <br/> |
 |ENCRYPT_CONN_NO_SECURITY  <br/> |0  <br/> |
 |ENCRYPT_CONN_SSL  <br/> |1  <br/> |
@@ -48,25 +48,25 @@ Dieses Thema enthält Konstantendefinitionen, Klassenbezeichner und Schnittstell
 |NOTIFY_ACCT_CREATED  <br/> |2  <br/> |
 |NOTIFY_ACCT_DELETED  <br/> |3  <br/> |
 |NOTIFY_ACCT_ORDER_CHANGED  <br/> |4   <br/> |
-|NOTIFY_ACCT_PREDELETED  <br/> |5   <br/> |
+|NOTIFY_ACCT_PREDELETED  <br/> |5  <br/> |
 |OLK_ACCOUNT_NO_FLAGS  <br/> |0  <br/> |
-|S_OK  <br/> | *Wie in der Windows sdk-Headerdatei winerror.h definiert.*  <br/> |
-|S_FALSE  <br/> | *Wie in der Windows sdk-Headerdatei winerror.h definiert.*  <br/> |
+|S_OK  <br/> | *Wie in der Windows SDK-Headerdatei winerror.h definiert.*  <br/> |
+|S_FALSE  <br/> | *Wie in der Windows SDK-Headerdatei winerror.h definiert.*  <br/> |
 |SECURE_FLAG  <br/> |0x8000  <br/> |
-|Die folgenden Konstanten, die mit SMTP_ beginnen, werden von der [PROP_SMTP_AUTH_METHOD-Eigenschaft](prop_smtp_auth_method.md) verwendet und geben die Authentifizierungsmethode an.  <br/> ||
+|Die folgenden Konstanten beginnend mit SMTP_ werden von der [PROP_SMTP_AUTH_METHOD-Eigenschaft](prop_smtp_auth_method.md) verwendet und geben die Authentifizierungsmethode an.  <br/> ||
 |SMTP_AUTH_SAME_AS_POP  <br/> |0  <br/> |
 |SMTP_AUTH_RECEIVE_BEFORE_SEND  <br/> |2  <br/> |
 |SMTP_AUTH_USER_PASS  <br/> |1  <br/> |
-|Die folgenden 5 Konstanten und Makros werden von der [PROP_POP_LEAVE_ON_SERVER-Eigenschaft](prop_pop_leave_on_server.md) verwendet und geben Optionen für POP-Konten an, um eine Kopie einer Nachricht auf dem Server zu hinterlassen.  <br/> ||
+|Die folgenden 5 Konstanten und Makros werden von der [PROP_POP_LEAVE_ON_SERVER-Eigenschaft](prop_pop_leave_on_server.md) verwendet und geben Optionen für POP-Konten an, um eine Kopie einer Nachricht auf dem Server zu belassen.  <br/> ||
 |LEAVE_ON_SERVER  <br/> |0x1  <br/> |
 |REMOVE_AFTER  <br/> |0x2  <br/> |
 |REMOVE_ON_NUKE  <br/> |0x4  <br/> |
 |GET_REMOVE_AFTER_DAYS(ul)  <br/> |((ul) \> \> 16)  <br/> |
-|SET_REMOVE_AFTER_DAYS(Tage)  <br/> |((Tage) \< \< 16)  <br/> |
+|SET_REMOVE_AFTER_DAYS(Tage)  <br/> |((tage)\<\<16)  <br/> |
    
 ## <a name="class-identifiers"></a>Klassenbezeichner
 
-Verwenden Sie DEFINE_GUID makro, das in der Windows-SDK-Headerdatei guiddef.h definiert ist, um den symbolischen NAMEN der GUID seinem Wert zuzuordnen.
+Verwenden Sie das in der Windows SDK-Headerdatei guiddef.h definierte DEFINE_GUID Makro, um den symbolischen GUID-Namen dem Wert zuzuordnen.
   
 {ed475410-b0d6-11d2-8c3b-00104b2a6676}
   
@@ -106,7 +106,7 @@ DEFINE_GUID(CLSID_OlkLDAPAccount, 0x4db5cbf2, 0x3b77, 0x4852, 0xbc, 0x8e, 0xbb, 
   
 ## <a name="interface-identifiers"></a>Schnittstellenbezeichner
 
-Verwenden Sie DEFINE_GUID makro, das in der Windows-SDK-Headerdatei guiddef.h definiert ist, um den symbolischen NAMEN der GUID seinem Wert zuzuordnen.
+Verwenden Sie das in der Windows SDK-Headerdatei guiddef.h definierte DEFINE_GUID Makro, um den symbolischen GUID-Namen dem Wert zuzuordnen.
   
 {9240A6C0-AF41-11d2-8C3B-00104B2A6676}
   

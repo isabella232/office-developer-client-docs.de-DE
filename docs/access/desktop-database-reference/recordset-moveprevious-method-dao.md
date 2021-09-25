@@ -1,5 +1,5 @@
 ---
-title: Recordset. MovePrevious-Methode (DAO)
+title: Recordset.MovePrevious-Methode (DAO)
 TOCTitle: MovePrevious Method
 ms:assetid: 82a3bc3e-5221-9a1a-1350-47bc6759edeb
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196699(v=office.15)
@@ -10,26 +10,26 @@ f1_keywords:
 - dao360.chm1052872
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 95cf5daa9eac6644b17f47b09ebc749bd9ed928e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 05f7722163e511c75337e879895db644625041d5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32284511"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606205"
 ---
-# <a name="recordsetmoveprevious-method-dao"></a>Recordset. MovePrevious-Methode (DAO)
+# <a name="recordsetmoveprevious-method-dao"></a>Recordset.MovePrevious-Methode (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
 
-Wechselt zum vorherigen Datensatz in einem angegebenen **Recordset**-Objekt und macht diesen zum aktuellen Datensatz.
+Wechselt zum vorherigen Datensatz in einem angegebenen **Recordset**-Objekt und macht diesen Datensatz zum aktuellen Datensatz.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . MovePrevious
+*Ausdruck* . Moveprevious
 
-*Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 
@@ -41,7 +41,7 @@ Beim Öffnen eines **Recordset**-Objekts ist der erste Datensatz aktuell, und di
 
 Wenn Sie **MovePrevious** verwenden, während der erste Datensatz aktuell ist, ist die **BOF**-Eigenschaft auf **True** festgelegt, und es ist kein aktueller Datensatz vorhanden. Beim erneuten Verwenden von **MovePrevious** tritt ein Fehler auf, und **BOF** bleibt auf **True** festgelegt.
 
-Wenn Recordset auf ein **Recordset** vom Typ "Tabelle" verweist (nur Microsoft Access-Arbeitsbereiche), folgt die Bewegung dem aktuellen Index. You can set the current index by using the **Index** property. Wenn Sie den aktuellen Index nicht festlegen, ist die Reihenfolge der zurückgegebenen Datensätze nicht definiert.
+Wenn Recordset sich auf ein **Recordset** vom Typ "Tabelle" bezieht (nur Microsoft Access-Arbeitsbereiche), folgt die Bewegung dem aktuellen Index. You can set the current index by using the **Index** property. Wenn Sie den aktuellen Index nicht festlegen, ist die Reihenfolge der zurückgegebenen Datensätze nicht definiert.
 
 Die Methoden **MoveFirst**, **MoveLast** und **MovePrevious** können für ein **Recordset**-Objekt vom Typ "Forward-only" nicht verwendet werden.
 

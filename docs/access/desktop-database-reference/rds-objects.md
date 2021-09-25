@@ -1,18 +1,18 @@
 ---
-title: RDS-Objekte (Access-Desktop-Daten Bankreferenz)
+title: RDS-Objekte (Access-Desktopdatenbankreferenz)
 TOCTitle: RDS objects
 ms:assetid: f675369d-26da-fd96-6a52-4a333be57bef
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250254(v=office.15)
 ms:contentKeyID: 48548740
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: f6d0d5ffe65c138b49752f5690b911899b4a91a8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 81bbbabc6948c6b0884f62954593068fa6e2f607
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300882"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59564967"
 ---
 # <a name="rds-objects"></a>RDS-Objekte
 
@@ -32,7 +32,7 @@ ms.locfileid: "32300882"
 </tr>
 <tr class="odd">
 <td><p><a href="datacontrol-object-rds.md">DataControl (RDS)</a></p></td>
-<td><p>Bindet ein Datenabfrage- <strong>Recordset</strong> -Objekt an ein oder mehrere Steuerelemente (beispielsweise ein Textfeld, ein Rastersteuerelement oder ein Kombinationsfeld), um die <strong>Recordset</strong> -Daten auf einer Webseite anzuzeigen.</p></td>
+<td><p>Bindet ein <strong>Datenabfragerecordset</strong> an ein oder mehrere Steuerelemente (z. B. ein Textfeld, ein Rastersteuerelement oder ein Kombinationsfeld), um die <strong>Recordset-Daten</strong> auf einer Webseite anzuzeigen.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="datafactory-object-rdsserver.md">DataFactory (RDSServer)</a></p></td>

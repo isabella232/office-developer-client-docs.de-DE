@@ -1,19 +1,19 @@
 ---
-title: Standardnachrichtentspeicher
+title: Standard-Nachrichtenspeicher
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: efa178eb-feb2-443f-8f6b-2ea53a456bf2
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 1ad325c68241c8a3924909b4dbf42c9657e68352
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: HT
+ms.openlocfilehash: 6f25fdeb176b2d885a4ba3fbf2bfb8b094de223f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32338045"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59576415"
 ---
 # <a name="default-message-stores"></a>Standardnachrichtentspeicher
 
@@ -27,15 +27,15 @@ Eine Standardnachrichtentspeicher ist ein Speicher, den Clientanwendungen für a
     
 - Bereitstellen von Lese- und nonread Berichten.
     
-- Zulassen der Übermittlung von eingehenden und ausgehenden Nachrichten.
+- Eingehende und ausgehende Nachrichten�bermittlungen zulassen.
     
-- Zulassen der Erstellung von Nachrichten mit beliebigen Nachrichtenklassen.
+- Erm�glicht die Erstellung von Nachrichten mit beliebigen Nachrichtenklassen.
     
-- Unterstützung benannter und mehrwertige Eigenschaften.
+- Unterst�tzung f�r benannte und mehrwertige Eigenschaften.
     
-- Unterstützung der [IMSProvider::SpoolerLogon](imsprovider-spoolerlogon.md)-Methode, auch dann, wenn der Nachrichtenspeicheranbieter eng mit einem Transportanbieter verknüpft ist. 
+- Supporting the [IMSProvider::SpoolerLogon](imsprovider-spoolerlogon.md) method, even if the message store provider is tightly coupled with a transport provider. 
     
-- Unterstützung zugehöriger Inhaltstabellen. Weitere Informationen finden Sie unter [Inhaltstabellen](contents-tables.md).
+- Supporting associated contents tables. For more information, see [Inhalt von Tabellen](contents-tables.md).
     
 - Unterstützung der Benachrichtigung des MAPI-Spoolers, wenn sich Nachrichten in der Warteschlange für ausgehende Nachrichten befinden.
     

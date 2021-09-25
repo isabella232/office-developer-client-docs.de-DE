@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPIControl.Activate
 api_type:
 - COM
 ms.assetid: 2b641030-2429-4217-a648-0a9f3d1a1b29
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: d3b47e423daf428c67761d13deef1ae0858c91c0
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: d2a8dcfda03d5bdb058a47fc1b2c0949411fa71a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33418015"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596351"
 ---
 # <a name="imapicontrolactivate"></a>IMAPIControl::Activate
 
@@ -42,7 +42,7 @@ HRESULT Activate(
     
  _ulUIParam_
   
-> [in] Ein Handle zum übergeordneten Fenster des Dialogfelds, in dem das Schaltflächensteuerelement angezeigt wird.
+> [in] Ein Handle für das übergeordnete Fenster des Dialogfelds, in dem das Schaltflächensteuerelement angezeigt wird.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -50,9 +50,9 @@ S_OK
   
 > Das Schaltflächensteuerelement wurde erfolgreich aktiviert.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die **IMAPIControl::Activate-Methode** führt Aufgaben durch, nachdem ein Benutzer auf das Schaltflächensteuerelement geklickt hat. Nachdem der Klick erfolgt ist, ruft MAPI im Rahmen der Verarbeitung der Anzeigetabelle **activate** nach dem ersten Aufruf von [IMAPIControl::GetState](imapicontrol-getstate.md) auf, um zu bestimmen, ob die Schaltfläche aktiviert ist. 
+Die **IMAPIControl::Activate-Methode** führt Aufgaben nach dem Klicken eines Benutzers auf das Schaltflächensteuerelement aus. Nachdem der Klick erfolgt ist, ruft MAPI im Rahmen der Verarbeitung der Anzeigetabelle **nach** dem ersten Aufrufen von [IMAPIControl::GetState](imapicontrol-getstate.md) die Aktivierung der Schaltfläche auf. 
   
 Weitere Informationen zum Implementieren von **Activate** und den anderen [IMAPIControl : IUnknown-Methoden](imapicontroliunknown.md) finden Sie unter [Control Object Implementation](control-object-implementation.md).
   

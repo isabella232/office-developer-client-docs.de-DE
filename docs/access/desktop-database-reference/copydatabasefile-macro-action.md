@@ -6,22 +6,22 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff835963(v=office.15)
 ms:contentKeyID: 48548373
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: b3c98d8795bb7039c0ae158414401dc5d754066f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 44f079d84ec3b651b114ed9341fbf5361caf87e1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295499"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615732"
 ---
 # <a name="copydatabasefile-macro-action"></a>CopyDatabaseFile-Makroaktion
 
 **Gilt für**: Access 2013, Office 2013
 
-Sie können die **KopierenDatenbankdatei**-Aktion verwenden, um eine Kopie der aktuellen Microsoft SQL Server 7.0-Datenbank oder einer neueren Datenbank anzulegen, die mit Ihrem Access-Projekt verbunden ist. Access trennt die aktuelle Datenbank und fügt Sie dann an den Zielserver an. Weitere Informationen zum Trennen und Verbinden einer Datenbank finden Sie in der SQL Server-Dokumentation.
+Sie können die **KopierenDatenbankdatei**-Aktion verwenden, um eine Kopie der aktuellen Microsoft SQL Server 7.0-Datenbank oder einer neueren Datenbank anzulegen, die mit Ihrem Access-Projekt verbunden ist. Access trennt die aktuelle Datenbank und fügt sie dann an den Zielserver an. Weitere Informationen zum Trennen und Verbinden einer Datenbank finden Sie in der SQL Server-Dokumentation.
 
 > [!NOTE]
-> [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. 
+> Diese Aktion ist nicht zulässig, wenn die Datenbank nicht vertrauenswürdig ist. 
 
 
 ## <a name="setting"></a>Einstellung
@@ -50,7 +50,9 @@ Die **KopierenDatenbankdatei**-Aktion hat die folgenden Argumente.
 </tr>
 <tr class="odd">
 <td><p><strong>Alle Verbindungen trennen</strong></p></td>
-<td><p>Gibt an, ob Access das Trennen von Datenbankverbindungen erzwingen sollte. Wenn <strong>Ja</strong> festgelegt ist, werden alle Verbindungen mit der aktuellen Datenbank getrennt, damit das Kopieren der Datenbank fortgesetzt werden kann. Wenn <strong>Nein</strong> festgelegt ist und mindestens eine Verbindung zur Datenbank besteht, schlägt das Kopieren der Datenbank fehl. Die Standardeinstellung ist <strong>Nein</strong>.</p><p><strong>Warnung</strong>: das Trennen von Benutzern aus einer Datenbank ohne ausreichende Warnung kann zu Datenverlusten führen.</p></td>
+<td><p>Gibt an, ob Access das Trennen von Datenbankverbindungen erzwingen sollte. Wenn <strong>Ja</strong> festgelegt ist, werden alle Verbindungen mit der aktuellen Datenbank getrennt, damit das Kopieren der Datenbank fortgesetzt werden kann. Wenn <strong>Nein</strong> festgelegt ist und mindestens eine Verbindung zur Datenbank besteht, schlägt das Kopieren der Datenbank fehl. Die Standardeinstellung ist <strong>Nein</strong>. 
+
+</p><p><strong>WARNUNG:</strong>Wenn Benutzer ohne entsprechende Warnung von einer Datenbank getrennt werden, kann dies zu Datenverlusten führen.</p></td>
 </tr>
 </tbody>
 </table>

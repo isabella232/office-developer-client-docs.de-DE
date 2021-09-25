@@ -4,30 +4,30 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
-- Formularvorlagen [infopath 2007], developing,form templates [InfoPath 2007], managed code,InfoPath 2007,managed code form templates [InfoPath 2007]
-localization_priority: Normal
+- formular templates [infopath 2007], developing,form templates [InfoPath 2007], managed code,InfoPath 2007,managed code form templates [InfoPath 2007]
+ms.localizationpriority: medium
 ms.assetid: b43ada73-349d-498f-a8bb-e8fd5020d207
-description: Die Themen in diesem Abschnitt enthalten Informationen zum Erstellen von Formularvorlagen, deren Geschäftslogik in verwalteten Code (Visual Basic oder C#) für Mitglieder von Microsoft geschrieben wurde. Office. InfoPath-Namespace.
-ms.openlocfilehash: 386542b5c5f4e502f48d97c2a18194638e8e1536
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: Die Themen in diesem Abschnitt enthalten Informationen zum Erstellen von Formularvorlagen, deren Geschäftslogik in verwaltetem Code (Visual Basic oder C#) für Mitglieder von Microsoft geschrieben wurde. Office. InfoPath-Namespace.
+ms.openlocfilehash: 38faa7d3b37f79c15d7283aade1184bda41d181a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303731"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59564645"
 ---
 # <a name="developing-infopath-form-templates-with-code"></a>Entwickeln von InfoPath-Formularvorlagen mit Code
 
-Die Themen in diesem Abschnitt enthalten Informationen zum Erstellen von Formularvorlagen, deren Geschäftslogik in verwalteten Code (Visual Basic oder C#) für Mitglieder der [Microsoft.Office. InfoPath-Namespace.](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.aspx) 
+Die Themen in diesem Abschnitt enthalten Informationen zum Erstellen von Formularvorlagen, deren Geschäftslogik in verwaltetem Code (Visual Basic oder C#) für Mitglieder der [Microsoft.Office geschrieben wurde. InfoPath-Namespace.](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.aspx) 
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
 [Erste Schritte beim Entwickeln von Formularvorlagen mit Code](getting-started-developing-form-templates-with-code.md)
   
-> Enthält Informationen zum Erstellen von Formularvorlagen für verwalteten Code, die mit dem infoPath-Objektmodell von [Microsoft.Office. InfoPath-Namespace.](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.aspx) 
+> Enthält Informationen zum Erstellen von Formularvorlagen mit verwaltetem Code, die mit dem infoPath-Objektmodell von [Microsoft.Office arbeiten. InfoPath-Namespace.](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.aspx) 
     
-[Grundlegendes zum InfoPath-Objektmodell und zu allgemeinen Entwickleraufgaben](understanding-the-infopath-object-model-and-common-developer-tasks.md)
+[Grundlegendes zum InfoPath-Objektmodell und allgemeinen Entwickleraufgaben](understanding-the-infopath-object-model-and-common-developer-tasks.md)
   
-> Erläutert das InfoPath-Objektmodell und allgemeine Programmieraufgaben für Formularvorlagen mit verwalteten Code, die mit dem von Microsoft.Office bereitgestellten [Objektmodell funktionieren. InfoPath-Namespace.](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.aspx) 
+> Erläutert das InfoPath-Objektmodell und allgemeine Programmieraufgaben für Formularvorlagen mit verwaltetem Code, die mit dem von Microsoft.Office bereitgestellten Objektmodell [arbeiten. InfoPath-Namespace.](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.aspx) 
     
 [Sicherheit in InfoPath-Formularvorlagen mit Code](security-in-infopath-form-templates-with-code.md)
   
@@ -37,13 +37,13 @@ Die Themen in diesem Abschnitt enthalten Informationen zum Erstellen von Formula
   
 > Erläutert die Objektmodellunterstützung und die Featurekompatibilität bei Formularvorlagen mit verwaltetem Code, die für InfoPath Forms Services erstellt wurden. 
     
-[Zusätzliche InfoPath-Entwicklungskonzepte](additional-infopath-development-concepts.md)
+[Weitere InfoPath-Entwicklungskonzepte](additional-infopath-development-concepts.md)
   
 > Erörtert weitere Konzepte, die sich auf die Entwicklung von InfoPath-Formularvorlagen beziehen.
     
 ## <a name="related-sections"></a>Verwandte Abschnitte
 
-[InfoPath Developer Portal](https://go.microsoft.com/fwlink?LinkID=11689)
+[InfoPath-Entwicklerportal](https://go.microsoft.com/fwlink?LinkID=11689)
   
 > Enthält Links zu technischen Artikeln, Codebeispielen, Downloads, Support sowie sonstige MSDN-Dokumentationen zum Erstellen benutzerdefinierter InfoPath-Lösungen.
     

@@ -1,5 +1,5 @@
 ---
-title: QueryDef. Properties-Eigenschaft (DAO)
+title: QueryDef.Properties-Eigenschaft (DAO)
 TOCTitle: Properties Property
 ms:assetid: 91d724bf-8e63-a517-c5be-2b8b382608e0
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197640(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1053178
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 077ca05014a5f5781ccded538e11ac7e4fc2b1bf
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 05b99ae43fd073775c8c41c7b360b848b133b297
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303220"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565037"
 ---
-# <a name="querydefproperties-property-dao"></a>QueryDef. Properties-Eigenschaft (DAO)
+# <a name="querydefproperties-property-dao"></a>QueryDef.Properties-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -29,5 +29,5 @@ Gibt die **[Properties](properties-collection-dao.md)** -Auflistung des angegebe
 
 *Ausdruck* . Eigenschaften
 
-*Ausdruck* Eine Variable, die ein **QueryDef** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **QueryDef**-Objekt darstellt.
 

@@ -1,19 +1,18 @@
 ---
-title: DeleteRecord Data Macro-Aktion (benutzerdefinierte Access-Web-App)
-manager: kelbow
-ms.date: 09/05/2017
+title: LöschenDatensatz-Makroaktion (benutzerdefinierte Access-Web-App)
+manager: lindalu
+ms.date: 09/05/2021
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f6b68a9a-e04a-476e-a407-b1779fea1953
-description: Mit der DatensatzLöschen -Aktion können Sie einen Datensatz löschen.
-ms.openlocfilehash: 0e8a658b944e894e4d4014fb3d3d9a583efbee8d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 01d0cdeecd7c1401c274822736a3cd40a865db52
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423153"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59586432"
 ---
-# <a name="deleterecord-data-macro-action-access-custom-web-app"></a>DeleteRecord Data Macro-Aktion (benutzerdefinierte Access-Web-App)
+# <a name="deleterecord-data-macro-action-access-custom-web-app"></a>LöschenDatensatz-Makroaktion (benutzerdefinierte Access-Web-App)
 
 Mit der **DatensatzLöschen** -Aktion können Sie einen Datensatz löschen. 
   
@@ -28,10 +27,8 @@ Die **DeleteRecord-Aktion** hat die folgenden Argumente.
 |:-----|:-----|
 |**Datensatzalias** <br/> |Eine Zeichenfolge, mit der der zu löschende Datensatz gekennzeichnet wird. Wenn das  *Alias-Argument*  nicht angegeben ist, wird der aktuelle Datensatz gelöscht.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Über die lokale Variable **LetztesErstellenDatensatzID** in einem **DatensatzErstellen** -Datenblock können Sie mit dem zuletzt erstellten Datensatz arbeiten. Verwenden Sie beispielsweise die folgende Syntax, um auf den zuletzt erstellten Datensatz zu verweisen: 
   
 `[LastCreateRecordIdentity]`
-
-

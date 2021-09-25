@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IAddrBook.SetPAB
 api_type:
 - COM
 ms.assetid: 75daf9d4-6975-435f-91e5-1b41e0047ab7
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 29677ce74f405e8ca03f1639f3d98288532e9653
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 60af07525de4ce66a470ad9db80fc3d5392f086d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424616"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59576135"
 ---
 # <a name="iaddrbooksetpab"></a>IAddrBook::SetPAB
 
@@ -25,7 +25,7 @@ ms.locfileid: "33424616"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bestimmt einen bestimmten Container als persönliches Adressbuch (PAB).
+Legt einen bestimmten Container als persönliches Adressbuch (PAB) fest.
   
 ```cpp
 HRESULT SetPAB(
@@ -42,7 +42,7 @@ HRESULT SetPAB(
     
  _lpEntryID_
   
-> [in] Ein Zeiger auf die Eintrags-ID des Containers, der als PAB festgelegt werden soll. Der  _lpEntryID-Parameter_ darf nicht NULL sein. 
+> [in] Ein Zeiger auf den Eintragsbezeichner des Containers, der als PAB festgelegt werden soll. Der  _lpEntryID-Parameter_ darf nicht NULL sein. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -50,11 +50,11 @@ S_OK
   
 > Der angegebene Container wurde als PAB eingerichtet.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Clients und Dienstanbieter rufen die **SetPAB-Methode** auf, um einen bestimmten Container als PAB zu bestimmen. Das PAB ist ein Container, der aus Einträgen besteht, die aus anderen Containern kopiert wurden, sowie aus neuen Einträgen. 
+Clients und Dienstanbieter rufen die **SetPAB-Methode** auf, um einen bestimmten Container als PAB festzulegen. Das PAB ist ein Container, der aus Einträgen besteht, die aus anderen Containern sowie aus neuen Einträgen kopiert wurden. 
   
-Ein Aufruf von **SetPAB** richtet einen Container als PAB ein, bis dieser Container nicht verfügbar gemacht wird oder ein neuer Container durch einen nachfolgenden Aufruf von **SetPAB** zum PAB wird. 
+Ein Aufruf von **SetPAB** richtet einen Container als PAB ein, bis dieser Container nicht verfügbar ist oder ein neuer Container durch einen nachfolgenden Aufruf von **SetPAB** zum PAB wird. 
   
 Clients und Anbieter müssen die [IMAPIProp::SaveChanges-Methode](imapiprop-savechanges.md) nicht aufrufen, um die PAB-Änderung dauerhaft zu machen. 
   

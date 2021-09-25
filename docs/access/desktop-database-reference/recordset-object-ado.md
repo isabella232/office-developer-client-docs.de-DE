@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248865(v=office.15)
 ms:contentKeyID: 48543267
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 636681cf8e0c20f078387b21974141a9cb66cfcd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 5baefaa562874eb3a654b6a7dd7ae4e4d7412a35
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300476"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606128"
 ---
 # <a name="recordset-object-ado"></a>Recordset-Objekt (ADO)
 
@@ -20,7 +20,7 @@ ms.locfileid: "32300476"
 
 Stellt den gesamten Satz der Datensätze aus einer Basistabelle oder die Ergebnisse eines ausgeführten Befehls dar. Das **Recordset** -Objekt verweist immer nur auf einen einzelnen Datensatz innerhalb des Satzes als aktueller Datensatz.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Mit **Recordset** -Objekten können Sie Daten eines Anbieters ändern. Wenn Sie ADO verwenden, ändern Sie Daten fast ausschließlich mit **Recordset** -Objekten. Alle **Recordset** -Objekte bestehen aus Datensätzen (Zeilen) und Feldern (Spalten). Abhängig von der vom Anbieter unterstützten Funktionalität sind einige **Recordset** -Methoden oder -Eigenschaften möglicherweise nicht verfügbar.
 

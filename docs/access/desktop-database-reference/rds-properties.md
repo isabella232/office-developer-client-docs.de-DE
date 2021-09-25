@@ -1,18 +1,18 @@
 ---
-title: RDS-Eigenschaften (Access-Desktop-Daten Bankreferenz)
+title: RDS-Eigenschaften (Access-Desktopdatenbankreferenz)
 TOCTitle: RDS properties
 ms:assetid: 002989dc-0022-d3a2-ddd2-2230837b3a63
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248775(v=office.15)
 ms:contentKeyID: 48542899
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 35d3552705ff358f34a40aa51a2ec13b4b80f6d2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7cc662abeca7dbc7135b7283631c0c441caaef3b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300840"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59564974"
 ---
 # <a name="rds-properties"></a>RDS-Eigenschaften
 
@@ -67,7 +67,7 @@ ms.locfileid: "32300840"
 <td><p>Der Fortschritt eines <strong>DataControl</strong>-Objekts beim Abrufen von Daten in sein <strong>Recordset</strong>-Objekt wird angegeben.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="recordset-sourcerecordset-properties-rds.md">Recordset-und SourceRecordset</a></p></td>
+<td><p><a href="recordset-sourcerecordset-properties-rds.md">Recordset und SourceRecordset</a></p></td>
 <td><p>Gibt das <strong>Recordset</strong> -Objekt an, das von einem benutzerdefinierten Geschäftsobjekt zurückgegeben wird.</p></td>
 </tr>
 <tr class="odd">
@@ -79,7 +79,7 @@ ms.locfileid: "32300840"
 <td><p>Gibt die Spalte an, nach der die Datensätze sortiert werden sollen.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="sortdirection-property-rds.md">SortDirection</a></p></td>
+<td><p><a href="sortdirection-property-rds.md">Sortdirection</a></p></td>
 <td><p>Gibt eine aufsteigende oder absteigende Sortierreihenfolge an.</p></td>
 </tr>
 <tr class="even">

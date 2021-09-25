@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagNonDeliveryReportFromName
 api_type:
 - HeaderDef
 ms.assetid: 886b4fdd-5d97-4b66-8329-052301e637fc
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: fa30a1b07f2b1f3c9ca837b5ddda629b3d8737f3
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 14e2bcdb8f9ca847dc1d3e471004c759de21fc4a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33428403"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59629739"
 ---
 # <a name="pidtagnondeliveryreportfromname-canonical-property"></a>PidTagNonDeliveryReportFromName (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "33428403"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Wenn sie für einen Bericht ohne Löschinformationen festgelegt ist, wird der Name des fehlgeschlagenen Send-As bezeichnet.
+Wenn dies für einen Nicht-Fehlerbericht festgelegt ist, wird der Name des fehlgeschlagenen Send-As Benutzers angegeben.
   
 |||
 |:-----|:-----|
@@ -40,17 +40,17 @@ Wenn sie für einen Bericht ohne Löschinformationen festgelegt ist, wird der Na
 
 [[MS-OXPROPS]] 
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 ### <a name="header-files"></a>Headerdateien
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -58,9 +58,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

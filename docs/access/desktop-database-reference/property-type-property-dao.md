@@ -1,20 +1,20 @@
 ---
-title: Eigenschaft. Type-Eigenschaft (DAO)
+title: Property.Type-Eigenschaft (DAO)
 TOCTitle: Type Property
 ms:assetid: bf8258ca-08b5-c4f9-e6d7-114e4300b2ef
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff822796(v=office.15)
 ms:contentKeyID: 48547490
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 4280b89102e06b2ecc09a783840e671b0af9ff73
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: b73bb73a5da8fb4cb7fed7d257cb7d6e801ba8be
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32302899"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606415"
 ---
-# <a name="propertytype-property-dao"></a>Eigenschaft. Type-Eigenschaft (DAO)
+# <a name="propertytype-property-dao"></a>Property.Type-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -23,11 +23,11 @@ Legt einen Wert fest, der den Funktions- oder Datentyp eines Objekts angibt, ode
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Typ
+*expression* .Type
 
-*Ausdruck* Eine Variable, die ein **Property-** Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Property-Objekt** darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Einstellung bzw. der Rückgabewert ist eine Konstante, die einen Funktions- oder Datentyp angibt. Ein **[Property](property-object-dao.md)** -Objekt hat Lese-/Schreibzugriff für diese Eigenschaft. Wenn das Objekt an eine Auflistung oder ein anderes Objekt angehängt wird, ist die Eigenschaft schreibgeschützt.
 
@@ -46,7 +46,7 @@ Die möglichen Einstellungen und Rückgabewerte für ein **Property**-Objekt sin
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>dbBigint</strong></p></td>
+<td><p><strong>dbBigInt</strong></p></td>
 <td><p>Große Ganzzahl</p></td>
 </tr>
 <tr class="even">
@@ -55,7 +55,7 @@ Die möglichen Einstellungen und Rückgabewerte für ein **Property**-Objekt sin
 </tr>
 <tr class="odd">
 <td><p><strong>dbBoolean</strong></p></td>
-<td><p>Boolescher Wert</p></td>
+<td><p>Boolesch</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbByte</strong></p></td>
@@ -63,7 +63,7 @@ Die möglichen Einstellungen und Rückgabewerte für ein **Property**-Objekt sin
 </tr>
 <tr class="odd">
 <td><p><strong>dbChar</strong></p></td>
-<td><p>Zeichen</p></td>
+<td><p>Char</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbCurrency</strong></p></td>
@@ -75,15 +75,15 @@ Die möglichen Einstellungen und Rückgabewerte für ein **Property**-Objekt sin
 </tr>
 <tr class="even">
 <td><p><strong>dbDecimal</strong></p></td>
-<td><p>Dezimal</p></td>
+<td><p>Decimal</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbDouble</strong></p></td>
-<td><p>Double</p></td>
+<td><p>Gleitkommawert mit doppelter Genauigkeit</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbFloat</strong></p></td>
-<td><p>Gleitkomma</p></td>
+<td><p>Gleitkommazahl</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbGUID</strong></p></td>
@@ -91,7 +91,7 @@ Die möglichen Einstellungen und Rückgabewerte für ein **Property**-Objekt sin
 </tr>
 <tr class="even">
 <td><p><strong>dbInteger</strong></p></td>
-<td><p>Integer</p></td>
+<td><p>Ganze Zahl</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbLong</strong></p></td>
@@ -107,7 +107,7 @@ Die möglichen Einstellungen und Rückgabewerte für ein **Property**-Objekt sin
 </tr>
 <tr class="even">
 <td><p><strong>dbNumeric</strong></p></td>
-<td><p>Numerisch</p></td>
+<td><p>Numeric</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbSingle</strong></p></td>
@@ -118,8 +118,8 @@ Die möglichen Einstellungen und Rückgabewerte für ein **Property**-Objekt sin
 <td><p>Text</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>DBZeit</strong></p></td>
-<td><p>Zeit</p></td>
+<td><p><strong>dbTime</strong></p></td>
+<td><p>Time</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbTimeStamp</strong></p></td>

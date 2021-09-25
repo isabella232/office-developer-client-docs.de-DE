@@ -1,18 +1,18 @@
 ---
-title: PersistFormatEnum (Access Desktop Database Reference)
+title: PersistFormatEnum (Access-Desktopdatenbankreferenz)
 TOCTitle: PersistFormatEnum
 ms:assetid: 5aa99a63-d422-0812-5aba-19305a3ad405
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249313(v=office.15)
 ms:contentKeyID: 48545050
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 4954c09c3eff67bb6f55dfc9e49464ad58fad5e6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 79b861831b4edadead1b49e6246de57ada874b55
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32287608"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565149"
 ---
 # <a name="persistformatenum"></a>PersistFormatEnum
 
@@ -60,7 +60,7 @@ Gibt das Format an, in dem ein [Recordset](recordset-object-ado.md) gespeichert 
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
 Paket: **com.ms.wfc.data**
 
@@ -75,10 +75,10 @@ Paket: **com.ms.wfc.data**
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums. PersistFormat. ADTG</p></td>
+<td><p>AdoEnums.PersistFormat.ADTG</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. PersistFormat. XML</p></td>
+<td><p>AdoEnums.PersistFormat.XML</p></td>
 </tr>
 </tbody>
 </table>

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagAddressBookHierarchicalIsHierarchicalGroup
 api_type:
 - HeaderDef
 ms.assetid: d5d289b2-d4d6-49ab-bf8b-945cb35272fc
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 37a0e31ea368f091e3ad9c46473d3d33299d5a21
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 1bef1cb779bc7e4f0915aa9c7a4b51a62962d1cd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32325725"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59629886"
 ---
 # <a name="pidtagaddressbookhierarchicalishierarchicalgroup"></a>PidTagAddressBookHierarchicalIsHierarchicalGroup
 
@@ -31,7 +31,7 @@ Enthält TRUE, wenn die Verteilerliste auch eine Abteilungsgruppe ist. Diese Eig
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_EMS_AB_HAB_IS_HIERARCHICAL_GROUP  <br/> |
 |Eigenschaftensatz:  <br/> |Adressbuch  <br/> |
-|Lange ID (LID):  <br/> |0x8CDD  <br/> |
+|Long ID (LID):  <br/> |0x8CDD  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Exchange-Adressbuch  <br/> |
    
@@ -41,7 +41,7 @@ Enthält TRUE, wenn die Verteilerliste auch eine Abteilungsgruppe ist. Diese Eig
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Stellt Eigenschaftensatzdefinitionen und Verweise auf verwandte Microsoft Exchange Server zur Verfügung.
+> Stellt Eigenschaftssatzdefinitionen und Verweise auf verwandte Microsoft Exchange Server Protokollspezifikationen bereit.
     
 [[MS-OXOABK]](https://msdn.microsoft.com/library/cc433489%28v=exchg.80%29)
   
@@ -51,7 +51,7 @@ Enthält TRUE, wenn die Verteilerliste auch eine Abteilungsgruppe ist. Diese Eig
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -59,9 +59,9 @@ Mapidefs.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

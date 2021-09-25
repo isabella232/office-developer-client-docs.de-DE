@@ -1,20 +1,20 @@
 ---
-title: Field. AppendChunk-Methode (DAO)
+title: Field.AppendChunk-Methode (DAO)
 TOCTitle: AppendChunk Method
 ms:assetid: f98c6862-fecf-06cb-a7c0-42b0d3150a06
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff837014(v=office.15)
 ms:contentKeyID: 48548819
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: b1ce1c359582194ce87dfaf4f409be4303486e09
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4ff1dd52a3a1a7a6d82629c958e309577defffd8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293168"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615480"
 ---
-# <a name="fieldappendchunk-method-dao"></a>Field. AppendChunk-Methode (DAO)
+# <a name="fieldappendchunk-method-dao"></a>Field.AppendChunk-Methode (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -22,9 +22,9 @@ Appends data from a string expression to a Memo or Long Binary **[Field](field-o
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . AppendChunk (***Val***)
+*Ausdruck* . AppendChunk(***Val***)
 
-*Ausdruck* Eine Variable, die ein **Field** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Field**-Objekt darstellt.
 
 ## <a name="parameters"></a>Parameter
 

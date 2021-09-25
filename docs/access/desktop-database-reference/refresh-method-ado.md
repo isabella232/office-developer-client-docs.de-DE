@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250227(v=office.15)
 ms:contentKeyID: 48548631
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: bd7c47e7c3e41a7b42571043cfafc9e4e909a9f9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 06c2fb95bbc44f089af6374512097f542f16b4f9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309256"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59564960"
 ---
 # <a name="refresh-method-ado"></a>Refresh-Methode (ADO)
 
@@ -22,9 +22,9 @@ Die Objekte in einer Auflistung werden aktualisiert, um Objekte widerzuspiegeln,
 
 ## <a name="syntax"></a>Syntax
 
-*Sammlung*. Aktualisieren
+*Auflistung*. Aktualisieren
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Abhängig von der Auflistung, aus der Sie die **Refresh**-Methode aufrufen, werden unterschiedliche Tasks ausgeführt.
 

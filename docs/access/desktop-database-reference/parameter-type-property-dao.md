@@ -1,20 +1,20 @@
 ---
-title: Parameter. Type-Eigenschaft (DAO)
+title: Parameter.Type-Eigenschaft (DAO)
 TOCTitle: Type Property
 ms:assetid: 68205cd6-eb45-56a3-593f-e1203472037b
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff195248(v=office.15)
 ms:contentKeyID: 48545377
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 208d0a5097b8473fef60b94f972f2c8579150fc7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: a01f4457e123642e72ec856a0deac6800ced1bd2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288021"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577115"
 ---
-# <a name="parametertype-property-dao"></a>Parameter. Type-Eigenschaft (DAO)
+# <a name="parametertype-property-dao"></a>Parameter.Type-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -23,11 +23,11 @@ Legt einen Wert fest, der den Funktions- oder Datentyp eines Objekts angibt, ode
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Typ
+*expression* .Type
 
 *Ausdruck* Eine Variable, die ein **Parameter** -Objekt darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Einstellung bzw. der Rückgabewert ist eine Konstante, die einen Funktions- oder Datentyp angibt. Für ein **[Parameter](parameter-object-dao.md)** -Objekt in einem Microsoft Access-Arbeitsbereich ist die Eigenschaft schreibgeschützt.
 
@@ -46,7 +46,7 @@ Die möglichen Einstellungen und Rückgabewerte für ein **Parameter**-Objekt si
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>dbBigint</strong></p></td>
+<td><p><strong>dbBigInt</strong></p></td>
 <td><p>Große Ganzzahl</p></td>
 </tr>
 <tr class="even">
@@ -55,7 +55,7 @@ Die möglichen Einstellungen und Rückgabewerte für ein **Parameter**-Objekt si
 </tr>
 <tr class="odd">
 <td><p><strong>dbBoolean</strong></p></td>
-<td><p>Boolescher Wert</p></td>
+<td><p>Boolesch</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbByte</strong></p></td>
@@ -63,7 +63,7 @@ Die möglichen Einstellungen und Rückgabewerte für ein **Parameter**-Objekt si
 </tr>
 <tr class="odd">
 <td><p><strong>dbChar</strong></p></td>
-<td><p>Zeichen</p></td>
+<td><p>Char</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbCurrency</strong></p></td>
@@ -75,15 +75,15 @@ Die möglichen Einstellungen und Rückgabewerte für ein **Parameter**-Objekt si
 </tr>
 <tr class="even">
 <td><p><strong>dbDecimal</strong></p></td>
-<td><p>Dezimal</p></td>
+<td><p>Decimal</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbDouble</strong></p></td>
-<td><p>Double</p></td>
+<td><p>Gleitkommawert mit doppelter Genauigkeit</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbFloat</strong></p></td>
-<td><p>Gleitkomma</p></td>
+<td><p>Gleitkommazahl</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbGUID</strong></p></td>
@@ -91,7 +91,7 @@ Die möglichen Einstellungen und Rückgabewerte für ein **Parameter**-Objekt si
 </tr>
 <tr class="even">
 <td><p><strong>dbInteger</strong></p></td>
-<td><p>Integer</p></td>
+<td><p>Ganze Zahl</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbLong</strong></p></td>
@@ -107,7 +107,7 @@ Die möglichen Einstellungen und Rückgabewerte für ein **Parameter**-Objekt si
 </tr>
 <tr class="even">
 <td><p><strong>dbNumeric</strong></p></td>
-<td><p>Numerisch</p></td>
+<td><p>Numeric</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbSingle</strong></p></td>
@@ -118,8 +118,8 @@ Die möglichen Einstellungen und Rückgabewerte für ein **Parameter**-Objekt si
 <td><p>Text</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>DBZeit</strong></p></td>
-<td><p>Zeit</p></td>
+<td><p><strong>dbTime</strong></p></td>
+<td><p>Time</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbTimeStamp</strong></p></td>
