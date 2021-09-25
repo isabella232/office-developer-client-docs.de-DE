@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagLatestDeliveryTime
 api_type:
 - HeaderDef
 ms.assetid: 6c2e64bc-786e-4867-a504-46f4d1214337
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 77ca51ae5a0e7e1d5a9be8f4ca05a1187fe71694
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: a230c627bdf28a3492f6f262c017ae8932997260
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407788"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59620009"
 ---
 # <a name="pidtaglatestdeliverytime-canonical-property"></a>PidTagLatestDeliveryTime (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "33407788"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält das aktuelle Datum und die Uhrzeit, zu der ein Nachrichtenübertragungs-Agent (Message Transfer Agent, MTA) eine Nachricht senden soll. 
+Enthält das neueste Datum und die neueste Uhrzeit, zu der ein Nachrichtenübertragungs-Agent (Message Transfer Agent, MTA) eine Nachricht übermitteln soll. 
   
 |||
 |:-----|:-----|
@@ -34,9 +34,9 @@ Enthält das aktuelle Datum und die Uhrzeit, zu der ein Nachrichtenübertragungs
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Allgemeines Messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn ein MTA eine Nachricht nicht bis zum angegebenen Zeitpunkt durch diese Eigenschaft senden kann, wird die Nachricht ohne Zustellung abgebrochen. 
+Wenn ein MTA bis zu dem Zeitpunkt, zu dem diese Eigenschaft angibt, keine Nachricht übermitteln kann, wird die Nachricht ohne Zustellung abgebrochen. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,11 +44,11 @@ Wenn ein MTA eine Nachricht nicht bis zum angegebenen Zeitpunkt durch diese Eige
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

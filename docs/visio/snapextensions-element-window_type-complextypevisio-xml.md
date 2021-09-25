@@ -4,19 +4,19 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7a12ae10-6aa4-c845-5ede-1c14c6dac80f
-description: Gibt an, ob eine bestimmte Einstellung für die Ausrichtungserweiterung für das aktive Fenster aktiviert oder deaktiviert ist. Der Wert kann eine Summe der Werte in der folgenden Tabelle sein.
-ms.openlocfilehash: bf3a6ae8cbeaadca8d4d899d96c916ee13ce9dfc
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+description: Gibt an, ob eine bestimmte Einstellung für die Snap-Erweiterung für das aktive Fenster aktiviert oder deaktiviert ist. Der Wert kann eine Summe der Werte in der folgenden Tabelle sein.
+ms.openlocfilehash: b1cf16a59480c9a800309f4a8c1411dfba52f4dd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34540322"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598024"
 ---
 # <a name="snapextensions-element-window_type-complextype-visio-xml"></a>SnapExtensions-Element (Window_Type complexType) (Visio XML)
 
-Gibt an, ob eine bestimmte Einstellung für die Ausrichtungserweiterung für das aktive Fenster aktiviert oder deaktiviert ist. Der Wert kann eine Summe der Werte in der folgenden Tabelle sein.
+Gibt an, ob eine bestimmte Einstellung für die Snap-Erweiterung für das aktive Fenster aktiviert oder deaktiviert ist. Der Wert kann eine Summe der Werte in der folgenden Tabelle sein.
   
 ## <a name="element-information"></a>Informationen zum Element
 
@@ -36,7 +36,7 @@ Gibt an, ob eine bestimmte Einstellung für die Ausrichtungserweiterung für das
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -52,25 +52,25 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Wert des **SnapExtensions-Elements** kann eine Summe der Werte in der folgenden Tabelle sein. 
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
 |0  <br/> |Nicht ausrichten.  <br/> |
-|1  <br/> |Andocken zur Erweiterung des Ausrichtungsfelds.  <br/> |
-|2  <br/> |Andocken zur Mittelachsenerweiterung.  <br/> |
-|4   <br/> |Andocken zur Kurve Tangentenerweiterung.  <br/> |
-|8   <br/> |Andocken endpunkterweiterung.  <br/> |
-|16   <br/> |Andocken zur Mittelpunkterweiterung.  <br/> |
-|32  <br/> |Andocken lineare Erweiterung.  <br/> |
-|64  <br/> |Andocken zur Kurvenerweiterung.  <br/> |
-|128  <br/> |Andocken endpunkt-senkrechte Erweiterung.  <br/> |
-|256  <br/> |Andocken Zur Mitte senkrechte Erweiterung.  <br/> |
-|512  <br/> |Andocken auf die horizontale Endpunkterweiterung.  <br/> |
-|1024  <br/> |Andocken der vertikalen Endpunkterweiterung.  <br/> |
-|2048  <br/> |Andocken zur Ellipsenmittenerweiterung.  <br/> |
-|4096  <br/> |Andocken isometrische Winkelerweiterung.  <br/> |
+|1  <br/> |An Ausrichtungsfelderweiterung ausrichten.  <br/> |
+|2  <br/> |Ausrichten an der Mittelachsenerweiterung.  <br/> |
+|4   <br/> |An der Tangenserweiterung der Kurve ausrichten.  <br/> |
+|8   <br/> |An Endpunkterweiterung ausrichten.  <br/> |
+|16   <br/> |An Der Mitte der Erweiterung ausrichten.  <br/> |
+|32  <br/> |An linearer Erweiterung ausrichten.  <br/> |
+|64  <br/> |An Kurvenerweiterung ausrichten.  <br/> |
+|128  <br/> |Ausrichten an der senkrechten Endpunkterweiterung.  <br/> |
+|256  <br/> |An senkrechter Mittelpunkterweiterung ausrichten.  <br/> |
+|512  <br/> |An horizontaler Endpunkterweiterung ausrichten.  <br/> |
+|1024  <br/> |An der vertikalen Erweiterung des Endpunkts ausrichten.  <br/> |
+|2048  <br/> |An Ellipse Center-Erweiterung ausrichten.  <br/> |
+|4096  <br/> |Ausrichten an der Erweiterung für isometrische Winkel.  <br/> |
    
 

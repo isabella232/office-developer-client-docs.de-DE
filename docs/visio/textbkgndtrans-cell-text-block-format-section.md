@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82253240
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b2f9d317-cc42-bec5-66f9-f988bcbdcc24
 description: Legt die Transparenzstufe für die Hintergrundfarbe des Textblocks des Shapes fest.
-ms.openlocfilehash: f4c4dc7700c553bd4c9bee337220e357c4c5538a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c376f56ffca919b9f07798b3f3da419463b805f4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33408691"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597891"
 ---
 # <a name="textbkgndtrans-cell-text-block-format-section"></a>Zelle "TextBkgndTrans" (Abschnitt "Text Block Format")
 
@@ -24,19 +24,19 @@ Legt die Transparenzstufe für die Hintergrundfarbe des Textblocks des Shapes fe
 |:-----|:-----|
 |0 - 100  <br/> |Stellt die Transparenz in Prozent dar. Der Standardwert ist 0% (vollständig undurchsichtig).  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Werte werden auf ein halbes Prozent gerundet. Ein Wert von 100 % bezeichnet völlige Transparenz. Ein Shape, dem ein völlig transparenter Texthintergrund zugewiesen wurde, verhält sich auf dem Zeichenblatt zwar genauso wie ein Shape ohne Texthintergrund, die Interaktion mit anderen Objekten auf dem Zeichenblatt erfolgt aber genauso wie bei einer Transparenz von 0 %.
   
 Sie können diesen Wert auch festlegen, indem Sie den Schieberegler auf der Registerkarte **Schriftart** des Dialogfelds **Text** verwenden (klicken Sie dazu auf der Registerkarte **Start** auf den Pfeil neben **Schriftart**). 
   
-Um einen Verweis auf die Zelle TextBkgndTrans anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Verwenden Sie Folgendes, um einen Verweis auf die Zelle "TextBkgndTrans" anhand des Namens einer anderen Formel oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |TextBkgndTrans  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die TextBkgndTrans-Zelle nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle "TextBkgndTrans" anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

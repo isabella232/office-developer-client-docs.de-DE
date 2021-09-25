@@ -6,20 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249686(v=office.15)
 ms:contentKeyID: 48546507
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: b977fc4273068ac52efe8960761a9e28a6234e2e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 97d4def23493bcbc881fa0a6df5166aba1e116c4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314070"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59588903"
 ---
 # <a name="understanding-the-customization-file"></a>Grundlegendes zur Anpassungsdatei
 
 
 **Gilt für**: Access 2013, Office 2013
 
-Jeder Abschnittskopf in der Anpassungsdatei besteht aus eckigen Klammern**\[**() mit einem Typ und Parameter. Die vier Abschnittstypen werden durch die Literalzeichenfolgen **connect**, **sql**, **userlist** oder **logs** angegeben. Der Parameter ist die Literalzeichenfolge, der Standardwert, ein benutzerdefinierter Bezeichner oder nichts.
+Jeder Abschnittsheader in der Anpassungsdatei besteht aus eckigen Klammern ( **\[\]** ), die einen Typ und einen Parameter enthalten. Die vier Abschnittstypen werden durch die Literalzeichenfolgen **connect**, **sql**, **userlist** oder **logs** angegeben. Der Parameter ist die Literalzeichenfolge, der Standardwert, ein benutzerdefinierter Bezeichner oder nichts.
 
 Jeder Abschnitt wird daher durch einen der folgenden Abschnittsheader gekennzeichnet:
 
@@ -48,15 +48,15 @@ Die Abschnittsheader bestehen aus den folgenden Teilen.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>verbinden</strong></p></td>
+<td><p><strong>Verbinden</strong></p></td>
 <td><p>Eine Literalzeichenfolge, durch die eine Verbindungszeichenfolge geändert wird.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>SQL</strong></p></td>
+<td><p><strong>Sql</strong></p></td>
 <td><p>Eine Literalzeichenfolge, durch die eine Befehlszeichenfolge geändert wird.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>UserList</strong></p></td>
+<td><p><strong>Userlist</strong></p></td>
 <td><p>Eine Literalzeichenfolge, durch die die Zugriffsrechte eines bestimmten Benutzers geändert werden.</p></td>
 </tr>
 <tr class="even">
@@ -86,9 +86,9 @@ Durch **DataFactory** wird der Handler aufgerufen, dabei werden Clientparameter 
 
 Unter den folgenden Bedingungen wird ein bestimmter Abschnitt verwendet:
 
-  - Ein **Connect** -Abschnitt wird verwendet, wenn der Wert Teil des Schlüsselwortes Client Connect String, "**Data Source = * * * * value*", **mit einem Connect** -Abschnitts Bezeichner übereinstimmt *.*
+  - Ein **connect**-Abschnitt wird verwendet, wenn der Wertteil des Schlüsselworts für die Clientverbindungszeichenfolge, "**Data Source=**_Wert_", mit einem **connect**-Abschnittsbezeichner übereinstimmt *.*
 
-  - Ein **sql** -Abschnitt wird verwendet, wenn die Clientbefehlszeichenfolge eine Zeichenfolge enthält, die mit einem **sql** -Abschnittsbezeichner übereinstimmt.
+  - Ein **sql**-Abschnitt wird verwendet, wenn die Clientbefehlszeichenfolge eine Zeichenfolge enthält, die mit einem **sql**-Abschnittsbezeichner übereinstimmt.
 
   - Ein **connect** - oder **sql** -Abschnitt mit einem Standardparameter wird verwendet, wenn kein entsprechender Bezeichner vorhanden ist.
 

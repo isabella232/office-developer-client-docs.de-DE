@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250056(v=office.15)
 ms:contentKeyID: 48547916
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 853d89bde9184bd546b3e7df9e8eda287faf86c9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 1eb003f761ae886bbcc57a573da5772d5b0c4945
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308549"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589085"
 ---
 # <a name="stat-method-ado"></a>Stat-Methode (ADO)
 
@@ -22,7 +22,7 @@ Ruft Informationen zu einem **Stream**-Objekt ab.
 
 ## <a name="syntax"></a>Syntax
 
-Long- *Stream*. Stat (*StatStg*, *StatFlag*)
+Long *stream*. Stat(*StatStg*, *StatFlag*)
 
 ## <a name="return-value"></a>Rückgabewert
 
@@ -32,23 +32,23 @@ Ein langer Wert, der den Status des Vorgangs angibt.
 
 |Parameter|Beschreibung|
 |:--------|:----------|
-|*StatStg* |A STATSTG structure that will be filled in with information about the stream. The implementation of the Stat method used by the ADO Stream object does not fill in all of the fields of the structure.|
-|*StatFlag* |Gibt an, dass diese Methode einige Member in der STATSTG-Struktur nicht zurückgibt und daher einen Speicherzuweisungsvorgang speichert. Die Werte werden der STATFLAG-Enumeration entnommen.<br/><br/>Die STATFLAG-Aufzählung hat zwei Werte:<br/>-STATFLAG_DEFAULT: 0<br/>-STATFLAG_NONAME: 1 |
+|*Statstg* |A STATSTG structure that will be filled in with information about the stream. The implementation of the Stat method used by the ADO Stream object does not fill in all of the fields of the structure.|
+|*StatFlag* |Gibt an, dass diese Methode einige Member in der STATSTG-Struktur nicht zurückgibt und daher einen Speicherzuweisungsvorgang speichert. Die Werte werden der STATFLAG-Enumeration entnommen.<br/><br/>Die STATFLAG-Aufzählung hat zwei Werte:<br/>- STATFLAG_DEFAULT: 0<br/>- STATFLAG_NONAME: 1 |
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Version der Stat-Methode, die für das Stream-Objekt in ADO implementiert wurde, füllt die folgenden Felder der STATSTG-Struktur aus:
 
 |Feld|Beschreibung|
 |:--------|:----------|
-|*pwcsName* |Eine Zeichenfolge mit dem Namen des Streams, sofern vorhanden, und der StatFlag-Wert STATFLAG\_Noname wurde nicht angegeben.|
+|*pwcsName* |Eine Zeichenfolge mit dem Namen des Datenstroms, sofern verfügbar, und der StatFlag-Wert STATFLAG \_ NONAME wurde nicht angegeben.|
 |*cbSize* |Gibt die Größe des Datenstroms oder des Bytearrays in Byte an.|
 |*mtime* |Gibt den Zeitpunkt der letzten Änderung dieses Speichers, Datenstroms oder Bytearrays an.|
 |*ctime* |Gibt den Zeitpunkt der Erstellung dieses Speichers, Datenstroms oder Bytearrays an.|
 |*atime* |Gibt den Zeitpunkt des letzten Zugriffs auf diesen Speicher, diesen Datenstrom oder dieses Bytearray an.|
 
-Wenn STATFLAG\_Noname im STATFLAG-Parameter angegeben ist, wird der Name des Streams nicht zurückgegeben.
+Wenn STATFLAG \_ NONAME im StatFlag-Parameter angegeben ist, wird der Name des Datenstroms nicht zurückgegeben.
 
-Wenn STATFLAG\_Noname nicht im STATFLAG-Parameter angegeben wurde und kein Name für den aktuellen Stream verfügbar ist, ist dieser Wert E\_NOTIMPL.
+Wenn STATFLAG \_ NONAME nicht im StatFlag-Parameter angegeben wurde und kein Name für den aktuellen Datenstrom verfügbar ist, ist dieser Wert E \_ NOTIMPL.
 

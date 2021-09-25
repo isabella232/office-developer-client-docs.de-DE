@@ -1,5 +1,5 @@
 ---
-title: TableDef. Conflictable-Eigenschaft (DAO)
+title: TableDef.ConflictTable-Eigenschaft (DAO)
 TOCTitle: ConflictTable Property
 ms:assetid: 0db8b975-eb6d-19c6-cfb7-6ce01230ebe4
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845218(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1053356
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 0189a5163dd5e225ad34841264cf84e85785d7fb
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 81a28d566abf4225bbb7560cdba11639451f8a16
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308428"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589008"
 ---
-# <a name="tabledefconflicttable-property-dao"></a>TableDef. Conflictable-Eigenschaft (DAO)
+# <a name="tabledefconflicttable-property-dao"></a>TableDef.ConflictTable-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -29,9 +29,9 @@ Gibt den Name einer Konflikttabelle zurück, die die Datensätze der Datenbank e
 
 *Ausdruck* . ConflictTable
 
-*Ausdruck* Ein Ausdruck, der ein **TableDef** -Objekt zurückgibt.
+*Ausdruck* Ein Ausdruck, der ein **TableDef-Objekt** zurückgibt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Rückgabewert ist vom Datentyp **String** mit einer leeren Zeichenfolge (""), wenn es keine Konflikttabelle gibt oder die Datenbank kein Replikat ist.
 
@@ -41,5 +41,5 @@ Konflikte treten auf Datensatzebene auf, nicht zwischen Feldern. Wenn z. B. ein 
 
 Der Synchronisierungsmechanismus verarbeitet die Datensatzkonflikte. Dabei werden Konflikttabellen erstellt, die die Informationen enthalten, die bei einer erfolgreichen Änderung in der Tabelle gespeichert worden wären. Sie können diese Konflikttabellen überprüfen und Zeile für Zeile die erforderlichen Korrekturen vornehmen.
 
-Alle Konflikttabellen heißen Tabellen\_Konflikt, wobei Table der ursprüngliche Name der Tabelle ist, die auf die maximale Länge des Tabellennamens abgeschnitten wurde.
+Alle Konflikttabellen haben den Namen \_ "Tabellenkonflikt", wobei die Tabelle der ursprüngliche Name der Tabelle ist und auf die maximale Länge des Tabellennamens abgeschnitten ist.
 

@@ -1,5 +1,5 @@
 ---
-title: QueryDef. Prepare-Eigenschaft (DAO)
+title: QueryDef.Prepare-Eigenschaft (DAO)
 TOCTitle: Prepare Property
 ms:assetid: d5a285c4-bd00-028b-b785-f1890db29bab
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835035(v=office.15)
@@ -10,23 +10,23 @@ f1_keywords:
 - dao360.chm1101187
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: ac05510a218d1cf4cf925acc2ca8908b7bcbcd03
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: fa4d794ce0cd75cf373d7e56e6aec9de3361315c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303269"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568628"
 ---
-# <a name="querydefprepare-property-dao"></a>QueryDef. Prepare-Eigenschaft (DAO)
+# <a name="querydefprepare-property-dao"></a>QueryDef.Prepare-Eigenschaft (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Vorbereiten
+*Ausdruck* . Zubereiten
 
-*Ausdruck* Eine Variable, die ein **QueryDef** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **QueryDef**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 
@@ -34,7 +34,7 @@ Sie können mit der **Prepare**-Eigenschaft festlegen, dass der Server anhand Ih
 
 Das Erstellen einer gespeicherten Prozedur kann die erste Ausführung verlangsamen. Alle nachfolgenden Verweise auf die Abfrage werden dann jedoch schneller ausgeführt. Einige Abfragen können nicht in Form von gespeicherten Prozeduren ausgeführt werden. In diesen Fällen setzen Sie die **Prepare**-Eigenschaft auf **dbQUnprepare**.
 
-Wenn **Prepare** auf **dbQPrepare**festgelegt ist, kann dies überschrieben werden, wenn die Abfrage ausgeführt wird, indem das Optionsargument der **[Execute](querydef-execute-method-dao.md)** -Methode auf **dbExecDirect**.
+Wenn **"Prepare"** auf **"dbQPrepare"** festgelegt ist, kann dies überschrieben werden, wenn die Abfrage ausgeführt wird, indem das Optionsargument der **[Execute-Methode](querydef-execute-method-dao.md)** auf **"dbExecDirect"** festgelegt wird.
 
 > [!NOTE]
 > [!HINWEIS] Die ODBC-API **SQLPrepare** wird aufgerufen, sobald die DAO- **[SQL](querydef-sql-property-dao.md)** -Eigenschaft festgelegt wird. Sie müssen daher zur Steigerung der Leistung mithilfe der **dbQUnprepare**-Option die **Prepare**-Eigenschaft festlegen, bevor Sie die **SQL**-Eigenschaft festlegen.

@@ -3,15 +3,15 @@ title: Digitales Signieren von Daten in InfoPath-Formularen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7b396d9f-9a47-3170-367f-5d1f0144f927
 description: Bei einer digitalen Signatur handelt es sich um einen elektronischen, verschlüsselungsbasierten, sicheren Echtheitsstempel in einem Makro oder Dokument. Eine gültige digitale Signatur bestätigt, dass die Daten vom Signierer stammen und seit dem Signieren nicht geändert wurden. Wenn Dokumente oder bestimmte Daten in den Dokumenten signiert werden, wird die Signatur berechnet und dem Dokument hinzugefügt. Auf diese Weise werden die Signaturen immer zusammen mit den signierten Daten übertragen.
-ms.openlocfilehash: 6c1f5a1c14c15bc88839dc44d9a5a595d8b52893
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 69ffc248da087aeeea90a905f6dbb34e91083237
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33425099"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568138"
 ---
 # <a name="digitally-signing-data-in-infopath-forms"></a>Digitales Signieren von Daten in InfoPath-Formularen
 
@@ -31,7 +31,7 @@ Microsoft InfoPath implementiert digitale Signaturen, um Daten in InfoPath-Formu
     
 - Digitale Signaturen, mit denen die Integrität, Echtheit und Unterstützung der Nichtabstreitbarkeit im Zusammenhang mit Daten in XML-Formularen sichergestellt werden.
     
-Während die erste Kategorie von Signaturen auf die Formularvorlage (XSN-Datei) zielt, zielt die zweite Kategorie auf die tatsächlichen vom Benutzer eingegebenen Daten in InfoPath-Formulardateien (.xml-Dateien) ab, wobei der Formulardesigner Benutzern das Erstellen digitaler Signaturen für das gesamte Formular oder für Abschnitte des Formulars ermöglichen kann. Es gibt grundlegende Unterschiede zwischen einer signierten Vorlage und einem signierten Formular. Obwohl dieses Dokument einige Verweise auf signierte Vorlagen enthält (als alternative Möglichkeit zum Erstellen eines Formulars, das als vollständig vertrauenswürdig ausgeführt wird), enthält es keine Details zu dieser Art von Signierung. Weitere Informationen zum Signieren von Formularvorlagen finden Sie unter [Deploying Signed InfoPath Form Templates](deploying-signed-infopath-form-templates.md) Der Schwerpunkt in diesem Thema liegt auf der Verwendung signierter InfoPath-XML-Formulare. Digitale Signaturen, die von InfoPath zum Signieren von Daten in XML-Formularen erstellt wurden, entsprechen den Spezifikationen für digitale W3C-XML-Signaturen. 
+Während die erste Kategorie von Signaturen auf die Formularvorlage (XSN-Datei) ausgerichtet ist, richtet sich die zweite Kategorie an die tatsächlich vom Benutzer eingegebenen Daten in InfoPath-Formulardateien (.xml Dateien), in denen der Formular-Designer Benutzern das Erstellen digitaler Signaturen für das gesamte Formular oder für Abschnitte des Formulars ermöglichen kann. Es gibt grundlegende Unterschiede zwischen einer signierten Vorlage und einem signierten Formular. Dieses Dokument enthält zwar einige Verweise auf signierte Vorlagen (als alternative Möglichkeit zum Erstellen eines Formulars, das als voll vertrauenswürdig ausgeführt wird), es enthält jedoch keine Details zu dieser Art der Signierung. Weitere Informationen zum Signieren von Formularvorlagen finden Sie unter [Bereitstellen signierter InfoPath-Formularvorlagen.](deploying-signed-infopath-form-templates.md) Der Schwerpunkt in diesem Thema liegt auf der Verwendung signierter InfoPath-XML-Formulare. Digitale Signaturen, die von InfoPath zum Signieren von Daten in XML-Formularen erstellt werden, entsprechen den W3C XML Digital Signatures-Spezifikationen. 
   
 ## <a name="digital-signatures-features"></a>Features für digitale Signaturen
 
@@ -45,7 +45,7 @@ Wenn ein Benutzer die Maus auf ein Steuerelement bewegt, das signierte Daten ent
   
 ## <a name="programmatic-support-for-digital-signatures"></a>Programmgesteuerte Unterstützung digitaler Signaturen
 
-Das InfoPath-Objektmodell enthält Unterstützung für digitale Signaturen, die Entwicklern programmgesteuerten Zugriff auf die Sätze signierbarer Daten ermöglichen, die im Formular über die [SignedDataBlockCollection-Klasse,](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SignedDataBlockCollection.aspx) die Signaturen, die jedem Satz signierter Daten über die [SignatureCollection-Klasse](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SignatureCollection.aspx) zugewiesen werden, und auf das Zertifikat, das zum Erstellen einer Signatur über die [Zertifikatklasse](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Certificate.aspx) verwendet wird. Darüber hinaus kann [der Sign-Ereignishandler](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Sign.aspx) in vollständig vertrauenswürdigen Formularen angepasst werden und bietet Unterstützung für die erweiterte Verarbeitung digitaler Signaturen in InfoPath-Formularen. 
+Das InfoPath-Objektmodell bietet Unterstützung für digitale Signaturen, die Entwicklern programmgesteuerten Zugriff auf signierbare Datengruppen ermöglichen, die im Formular über die [SignedDataBlockCollection-Klasse](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SignedDataBlockCollection.aspx) definiert werden, auf die Signaturen, die über die [SignatureCollection-Klasse](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SignatureCollection.aspx) jedem Satz signierter Daten zugewiesen sind, und auf das Zertifikat, das zum Erstellen einer Signatur über die [Certificate-Klasse](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Certificate.aspx) verwendet wird. Darüber hinaus [](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Sign.aspx) kann der Sign-Ereignishandler in voll vertrauenswürdigen Formularen angepasst werden und bietet Unterstützung für die erweiterte Verarbeitung digitaler Signaturen in InfoPath-Formularen. 
   
 ## <a name="interoperability"></a>Interoperabilität
 

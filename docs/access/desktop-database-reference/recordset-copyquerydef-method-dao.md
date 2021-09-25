@@ -1,31 +1,31 @@
 ---
-title: Recordset. CopyQueryDef-Methode (DAO)
+title: Recordset.CopyQueryDef-Methode (DAO)
 TOCTitle: CopyQueryDef Method
 ms:assetid: fee8c2fe-500e-dfb3-21ce-211e54ff334b
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff837296(v=office.15)
 ms:contentKeyID: 48548950
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: aa6c5aab5f357eef8c62c63c6fca873e64031411
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 84dbcdb2c3195f933f977142906b18c7196d1bc0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300560"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568502"
 ---
-# <a name="recordsetcopyquerydef-method-dao"></a>Recordset. CopyQueryDef-Methode (DAO)
+# <a name="recordsetcopyquerydef-method-dao"></a>Recordset.CopyQueryDef-Methode (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
 
-Gibt ein **[QueryDef](querydef-object-dao.md)** -Objekt zurück, das eine Kopie des **QueryDef** -Objekts ist, das zum Erstellen des **[Recordset](recordset-object-dao.md)** -Objekts verwendet wird, das durch den Platzhalter "Recordset" (nur Microsoft Access-Arbeitsbereiche) dargestellt wird. .
+Gibt ein **[QueryDef](querydef-object-dao.md)**-Objekt zurück, das eine Kopie des **QueryDef**-Objekts ist, welches zum Erstellen des **[Recordset](recordset-object-dao.md)**-Objekts verwendet wurde, das durch den recordset-Platzhalter dargestellt wird (gilt nur für Microsoft Access-Arbeitsbereiche). .
 
 ## <a name="syntax"></a>Syntax
 
 *Ausdruck* . CopyQueryDef
 
-*Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset**-Objekt darstellt.
 
 ## <a name="return-value"></a>Rückgabewert
 

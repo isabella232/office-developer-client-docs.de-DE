@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagAdditionalRenEntryIds
 api_type:
 - HeaderDef
 ms.assetid: 8c6e7ca2-1824-4cca-bf69-3c1ea52727de
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 4984055d370f3f8ab617b11b2d834ba277ef105a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 6f9b49eb8173bd5bc1420b76df2b4ead6de4e4a1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282361"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59609957"
 ---
 # <a name="pidtagadditionalrenentryids-canonical-property"></a>PidTagAdditionalRenEntryIds (kanonische Eigenschaft)
 
@@ -34,17 +34,17 @@ Enthält die Eintrags-IDs bestimmter Spezieller Ordner.
 |Datentyp:  <br/> |PT_MV_BINARY  <br/> |
 |Bereich:  <br/> |Outlook-Anwendung  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die ersten fünf Einträge dieser mehrwertigen Eigenschaft gelten für die folgenden speziellen Ordner, wenn sie im Store vorhanden sind:
+Die ersten fünf Einträge dieser mehrwertigen Eigenschaft gelten für die folgenden speziellen Ordner, sofern sie im Speicher vorhanden sind:
   
-0 – Konfliktordner
+0 – Ordner "Konflikte"
   
-1 – Ordner "Synchronisierungsprobleme"
+1 – Ordner mit Synchronisierungsproblemen
   
-2 – Lokaler Fehlerordner
+2 – Ordner "Lokale Fehler"
   
-3 – Ordner "Serverfehler"
+3 – Serverfehlerordner
   
 4 – Junk-E-Mail-Ordner
   
@@ -54,7 +54,7 @@ Die ersten fünf Einträge dieser mehrwertigen Eigenschaft gelten für die folge
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXOSFLD]](https://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb%28Office.15%29.aspx)
   
@@ -62,31 +62,31 @@ Die ersten fünf Einträge dieser mehrwertigen Eigenschaft gelten für die folge
     
 [[MS-OXPHISH]](https://msdn.microsoft.com/library/ed49ab26-ba13-4d4c-8a94-98d4ceecd4b7%28Office.15%29.aspx)
   
-> Identifiziert und markiert E-Mail-Nachrichten, die Empfänger dazu verwengen sollen, vertrauliche Informationen (z. B. Kennwörter und andere persönliche Informationen) an eine nicht vertrauenswürdige Quelle zu verschicken.
+> Identifiziert und kennzeichnet E-Mail-Nachrichten, die Empfänger dazu bringen sollen, vertrauliche Informationen (z. B. Kennwörter und andere persönliche Informationen) an eine nicht vertrauenswürdige Quelle zu verteilen.
     
 [[MS-OXCSPAM]](https://msdn.microsoft.com/library/522f8587-4aed-4cd6-831b-40bd87862189%28Office.15%29.aspx)
   
-> Ermöglicht die Behandlung von Zulässig-/Sperrlisten und die Ermittlung von Junk-E-Mail-Nachrichten.
+> Ermöglicht die Behandlung von Zulassungs-/Sperrlisten und die Ermittlung von Junk-E-Mail-Nachrichten.
     
 ### <a name="header-files"></a>Headerdateien
 
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 
 
 [Informationen zur Speicher-API](https://msdn.microsoft.com/library/aa192884.aspx)

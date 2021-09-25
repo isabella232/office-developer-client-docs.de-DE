@@ -5,19 +5,19 @@ ms.date: 9/7/2016
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagAttachMethod
 api_type:
 - HeaderDef
 ms.assetid: 32089213-ef7b-4152-84ab-b44e9911332b
-description: 'Letzte Änderung: 07. September 2016'
-ms.openlocfilehash: b84549ab31c939b4e6115795916ebd3520a96dbd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: 'Last modified: September 07, 2016'
+ms.openlocfilehash: b4e6aa70b793fafc08d0b975641f5bc0d07bc831
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327258"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59609901"
 ---
 # <a name="pidtagattachmethod-canonical-property"></a>PidTagAttachMethod (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32327258"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine MAPI-definierte Konstante, die den Zugriff auf den Inhalt einer Anlage darstellt. 
+Enthält eine MAPI-definierte Konstante, die angibt, wie auf den Inhalt einer Anlage zugegriffen werden kann. 
   
 |||
 |:-----|:-----|
@@ -34,7 +34,7 @@ Enthält eine MAPI-definierte Konstante, die den Zugriff auf den Inhalt einer An
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft kann genau einen der folgenden Werte haben:
   
@@ -48,15 +48,15 @@ ATTACH_BY_VALUE
     
 ATTACH_BY_REFERENCE 
   
-> Die **PR_ATTACH_PATHNAME** ([PidTagAttachPathname](pidtagattachpathname-canonical-property.md)) oder **PR_ATTACH_LONG_PATHNAME** ([PidTagAttachLongPathname](pidtagattachlongpathname-canonical-property.md)) -Eigenschaft enthält einen vollqualifizierten Pfad, der die Anlage für Empfänger mit Zugriff auf einen gemeinsamen Dateiserver identifiziert. 
+> Die **eigenschaft PR_ATTACH_PATHNAME** ([PidTagAttachPathname](pidtagattachpathname-canonical-property.md)) oder **PR_ATTACH_LONG_PATHNAME** ([PidTagAttachLongPathname](pidtagattachlongpathname-canonical-property.md)) enthält einen vollqualifizierten Pfad, der die Anlage an Empfänger mit Zugriff auf einen gemeinsamen Dateiserver identifiziert. 
     
 ATTACH_BY_REF_RESOLVE 
   
-> Die **PR_ATTACH_PATHNAME-** **oder PR_ATTACH_LONG_PATHNAME-Eigenschaft** enthält einen vollqualifizierten Pfad, der die Anlage identifiziert. 
+> Die **eigenschaft PR_ATTACH_PATHNAME** oder **PR_ATTACH_LONG_PATHNAME** enthält einen vollqualifizierten Pfad, der die Anlage identifiziert. 
     
 ATTACH_BY_REF_ONLY 
   
-> Die **PR_ATTACH_PATHNAME-** **oder PR_ATTACH_LONG_PATHNAME-Eigenschaft** enthält einen vollqualifizierten Pfad, der die Anlage identifiziert. 
+> Die **eigenschaft PR_ATTACH_PATHNAME** oder **PR_ATTACH_LONG_PATHNAME** enthält einen vollqualifizierten Pfad, der die Anlage identifiziert. 
     
 ATTACH_EMBEDDED_MSG 
   
@@ -68,27 +68,27 @@ ATTACH_OLE
     
 ATTACH_BY_WEBREFERENCE 
   
-> Der Anlageninhalt befindet sich nicht in der Nachricht. 
+> Der Anlageninhalt ist nicht in der Nachricht enthalten. 
     
-Beim Erstellen verfügen alle Anlagenobjekte über einen **PR_ATTACH_METHOD** Wert von **NO_ATTACHMENT**. 
+Bei der Erstellung weisen alle Anlagenobjekte einen anfänglichen **PR_ATTACH_METHOD** Wert **von NO_ATTACHMENT auf.** 
   
-Clientanwendungen und Dienstanbieter müssen nur die Anlagemethode unterstützen, die durch den Wert ATTACH_BY_VALUE **wird.** Die anderen Anlagenmethoden sind optional. Der Nachrichtenspeicher erzwingt keine Konsistenz  zwischen dem Wert PR_ATTACH_METHOD und den Werten der anderen Anlageneigenschaften. 
+Clientanwendungen und Dienstanbieter müssen nur die Anlagenmethode unterstützen, die durch den **wert ATTACH_BY_VALUE** dargestellt wird. Die anderen Anlagenmethoden sind optional. Der Nachrichtenspeicher erzwingt keine Konsistenz zwischen dem Wert von **PR_ATTACH_METHOD** und den Werten der anderen Anlageneigenschaften. 
   
-Namen der universellen Benennungskonvention (Universal Naming Convention, UNC) werden für vollqualifizierte Pfade empfohlen, die mit ATTACH_BY_REFERENCE **und** **ATTACH_BY_REF_ONLY.** Bei **ATTACH_BY_REF_RESOLVE** ist ein absoluter Pfad schneller, da der MAPI-Spooler die Anlage in **ATTACH_BY_VALUE.** 
+UnC-Namen (Universal Naming Convention) werden für vollqualifizierte Pfade empfohlen, die mit **ATTACH_BY_REFERENCE** und **ATTACH_BY_REF_ONLY** verwendet werden sollten. Bei **ATTACH_BY_REF_RESOLVE** ist ein absoluter Pfad schneller, da der MAPI-Spooler die Anlage in **ATTACH_BY_VALUE** konvertiert. 
   
-Wenn **ATTACH_BY_REFERENCE** festgelegt ist, **PR_ATTACH_DATA_BIN** leer sein. Ein ausgehendes Gateway kann eine **ATTACH_BY_REFERENCE** anlage in eine ATTACH_BY_VALUE anlage  verwandeln, indem die Anlagendaten in die PR_ATTACH_DATA_BIN **werden.** 
+Wenn **ATTACH_BY_REFERENCE** festgelegt ist, muss **PR_ATTACH_DATA_BIN** leer sein. Ein ausgehendes Gateway kann eine **ATTACH_BY_REFERENCE** Anlage in eine **ATTACH_BY_VALUE** Anlage umwandeln, indem die Anlagendaten in die eigenschaft PR_ATTACH_DATA_BIN kopiert **werden.** 
   
-Wenn **ATTACH_BY_REF_RESOLVE** festgelegt ist, **muss PR_ATTACH_DATA_BIN** leer sein. Wenn die Nachricht, die die **ATTACH_BY_REF_RESOLVE** enthält, gesendet wird, kopiert der MAPI-Spooler die Anlagendaten in eine **ATTACH_BY_VALUE** Anlage. Bei diesem Auflösungsprozess werden die Anlagendaten in **PR_ATTACH_DATA_BIN.** 
+Wenn **ATTACH_BY_REF_RESOLVE** festgelegt ist, muss **PR_ATTACH_DATA_BIN** leer sein. Wenn die Nachricht, die die **ATTACH_BY_REF_RESOLVE** Anlage enthält, gesendet wird, kopiert der MAPI-Spooler die Anlagendaten in eine **ATTACH_BY_VALUE** Anlage. Bei diesem Lösungsprozess werden die Anlagendaten in **PR_ATTACH_DATA_BIN** platziert. 
   
-Wenn **ATTACH_BY_REF_ONLY** festgelegt ist, **PR_ATTACH_DATA_BIN** leer sein, und das Messagingsystem löst den Anlagenverweis nie auf. Verwenden Sie diesen Wert, wenn Sie den Link senden möchten, jedoch nicht die Daten. 
+Wenn **ATTACH_BY_REF_ONLY** festgelegt ist, muss **PR_ATTACH_DATA_BIN** leer sein, und das Messagingsystem löst den Anlagenverweis nie auf. Verwenden Sie diesen Wert, wenn Sie den Link senden möchten, aber nicht die Daten. 
   
-Wenn sich das OLE-Objekt im OLE 2.0-IStorage-Format befindet, ist der Zugriff auf die **Daten** über PR_ATTACH_DATA_OBJ.  Wenn sich das OLE-Objekt im OLE 1.0-OLESTREAM-Format befindet, kann über PR_ATTACH_DATA_BIN **als** IStream auf die **Daten zugegriffen werden.**  Der Typ der #A0 kann durch den Wert PR_ATTACH_TAG **(** [PidTagAttachTag](pidtagattachtag-canonical-property.md)) bestimmt werden. 
+Wenn das OLE-Objekt im OLE 2.0-IStorage-Format vorliegt, kann auf die Daten über PR_ATTACH_DATA_OBJ zugegriffen **werden.**  Wenn sich das OLE-Objekt im OLE 1.0 **OLESTREAM-Format** befindet, kann auf die Daten über **PR_ATTACH_DATA_BIN** als **IStream** zugegriffen werden. Der Typ der OLE-Codierung kann durch den **wert PR_ATTACH_TAG** ([PidTagAttachTag](pidtagattachtag-canonical-property.md)) bestimmt werden. 
   
-Weitere Informationen zu OLE-Schnittstellen und -Formaten finden Sie unter  *OLE Programmer's Reference*  . 
+Weitere Informationen zu OLE-Schnittstellen und -Formaten finden Sie in der *OLE-Programmierreferenz.* 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Wenn die **PR_ATTACH_METHOD** **ATTACH_BY_WEBREFERENCE** wird, befindet sich der Anlageninhalt nicht in der Nachricht. Stattdessen enthält die **PR_ATTACH_LONG_FILENAME-Eigenschaft** eine absolute URL zum Anlageninhalt, der online gespeichert wird. 
+Wenn die **PR_ATTACH_METHOD** **ATTACH_BY_WEBREFERENCE** ist, befindet sich der Anlageninhalt nicht in der Nachricht. Stattdessen enthält die **PR_ATTACH_LONG_FILENAME-Eigenschaft** eine absolute URL zum Anlageninhalt, der online gespeichert wird. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -102,24 +102,24 @@ Wenn die **PR_ATTACH_METHOD** **ATTACH_BY_WEBREFERENCE** wird, befindet sich der
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[PidTagStoreSupportMask (kanonische Eigenschaft)](pidtagstoresupportmask-canonical-property.md)
+[Kanonische PidTagStoreSupportMask-Eigenschaft](pidtagstoresupportmask-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

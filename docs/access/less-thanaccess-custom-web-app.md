@@ -1,22 +1,22 @@
 ---
-title: Less Than (Benutzerdefinierte Access-Web-App)
+title: Kleiner als (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 169add60-06b1-4e17-b577-a67cc6c0987c
-description: Vergleicht zwei Ausdrücke. Wenn Sie Nicht-Null-Ausdrücke vergleichen, ist das Ergebnis TRUE, wenn der linke Operand einen Wert kleiner als der rechte Operand hat. Andernfalls ist das Ergebnis FALSE.
-ms.openlocfilehash: 6a13c038bc72e9c4f4be7dc730a3ebed2c197869
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Vergleicht zwei Ausdrücke. Wenn Sie Ausdrücke ungleich NULL vergleichen, ist das Ergebnis TRUE, wenn der linke Operand einen niedrigeren Wert als der rechte Operand aufweist. andernfalls ist das Ergebnis FALSE.
+ms.openlocfilehash: a5d79128249969e6d915b0c615085e0faa2b2b84
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424287"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568264"
 ---
-# <a name="less-than-access-custom-web-app"></a>Less Than (Benutzerdefinierte Access-Web-App)
+# <a name="less-than-access-custom-web-app"></a>Kleiner als (benutzerdefinierte Access-Web-App)
 
-Vergleicht zwei Ausdrücke. Wenn Sie Nicht-Null-Ausdrücke vergleichen, ist das Ergebnis TRUE, wenn der linke Operand einen Wert kleiner als der rechte Operand hat. Andernfalls ist das Ergebnis FALSE.
+Vergleicht zwei Ausdrücke. Wenn Sie Ausdrücke ungleich NULL vergleichen, ist das Ergebnis TRUE, wenn der linke Operand einen niedrigeren Wert als der rechte Operand aufweist. andernfalls ist das Ergebnis FALSE.
   
 > [!IMPORTANT]
 > Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 

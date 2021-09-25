@@ -24,13 +24,13 @@ keywords:
 - Project 2013,Architektur und Programmierbarkeit,PSI,Projekte,Versionen,Programmierbarkeit, Project Server,PSI, Einschränkungen,Project Server-Schnittstelle, nicht unterstützte Features,Project Server-Schnittstelle, PDS Kompatibilität,Project Server-Schnittstelle, generisch,Project Server, Project-Versionen,Versionen, Projekte, Project Server, Datenbanken,Project 2013, Plattform, Project Server-Schnittstelle, Nutzungsszenarien,Project Server, Ereignisse,Project Server,Project Data Service, Kompatibilität mit PSI,Project Server-Schnittstelle
 ms.assetid: a93d2153-5132-4289-af51-69350471e248
 description: Informationen zu den wichtigsten Features zur Programmierbarkeit in Project Server 2013. Dieser Artikel enthält Informationen zum Portieren von Anwendungen, die für frühere Versionen von Project Server erstellt wurden.
-localization_priority: Priority
-ms.openlocfilehash: e6991712b87291e90c6b4f277db84686aab384e7
-ms.sourcegitcommit: 31b0a7373ff74fe1d6383c30bc67d7675b73d283
+ms.localizationpriority: high
+ms.openlocfilehash: a45624c98a2bbd04353daa31eb47655e2c963012
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41773729"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59628997"
 ---
 # <a name="project-server-programmability"></a>Project Server-Programmierbarkeit
 

@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0cb95b34-3ce0-07a5-5d57-8ac9b0570b9a
 description: Gibt den logischen Ausdruck an, der bestimmt, ob das Zielobjekt der Gültigkeitsprüfungsregel entspricht.
-ms.openlocfilehash: bb1f0cf9b3f712903f6e45d6d09f96607089f920
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: c39996353368cbd58a7a3ec4b30c53b142123a3c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34541519"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598255"
 ---
 # <a name="ruletest-element-rule_type-complextype-visio-xml"></a>RuleTest-Element (Rule_Type complexType) (Visio XML)
 
@@ -36,7 +36,7 @@ Gibt den logischen Ausdruck an, der bestimmt, ob das Zielobjekt der Gültigkeits
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -52,6 +52,6 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|Formel  <br/> |xsd:string  <br/> |Optional  <br/> |Stellt die Formel des Elements dar.  <br/> |Werte der xsd:string.  <br/> |
+|Formel  <br/> |xsd:string  <br/> |Optional  <br/> |Stellt die Formel des Elements dar.  <br/> |Werte des xsd:string-Werts.  <br/> |
    
 

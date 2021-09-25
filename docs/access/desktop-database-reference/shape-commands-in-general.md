@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249814(v=office.15)
 ms:contentKeyID: 48547039
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 399836158084f07b30b06a9fb099da74527d0cb0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 19717ba09664798c8e3ac73c2d03502ec2222620
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308652"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568467"
 ---
 # <a name="shape-commands-in-general"></a>Shape-Befehle im Allgemeinen
 
@@ -64,7 +64,7 @@ Sie können eine SQL JOIN-Klausel verwenden, um zwei Tabellen miteinander in Bez
 
 Shape commands can be issued by **Recordset** objects or by setting the [CommandText](commandtext-property-ado.md) property of the [Command](command-object-ado.md) object and then calling the [Execute](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command) method.
 
-Shape commands can be nested. Das heißt, der *übergeordnete Befehl* oder *untergeordnete* Befehl kann selbst ein anderer Shape-Befehl sein.
+Shape commands can be nested. Das heißt, der *übergeordnete* oder untergeordnete Befehl kann selbst ein anderer *Shape-Befehl* sein.
 
 The shape provider always returns a client cursor, even when the user specifies a cursor location of **adUseServer**.
 
@@ -74,5 +74,5 @@ For precise information about syntactically correct shape commands, see [Formal 
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Ausgeben von Befehlen an den zuGrunde liegenden Datenanbieter](issuing-commands-to-the-underlying-data-provider.md)
+- [Ausgeben von Befehlen an die zugrunde liegende Datenanbieter](issuing-commands-to-the-underlying-data-provider.md)
 

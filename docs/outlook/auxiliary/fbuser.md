@@ -4,19 +4,19 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal649b5400-8dc5-cc5c-3455-f462e2d31689
+ms.localizationpriority: medium649b5400-8dc5-cc5c-3455-f462e2d31689
 ms.assetid: ''
-description: Identifiziert einen Benutzer, für den Frei/Gebucht-Daten verfügbar sind oder nicht.
-ms.openlocfilehash: 2511a94678f9ef8f2cb6be868db4f718d92ecb6d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: Identifiziert einen Benutzer, der möglicherweise Frei/Gebucht-Daten zur Verfügung hat.
+ms.openlocfilehash: e3c67d8cf4e858fa6b5bdde7bb1714c5caacb484
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317661"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568040"
 ---
 # <a name="fbuser"></a>FBUser
 
-Identifiziert einen Benutzer, für den Frei/Gebucht-Daten verfügbar sind oder nicht.
+Identifiziert einen Benutzer, der möglicherweise Frei/Gebucht-Daten zur Verfügung hat.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -35,7 +35,7 @@ typedef struct tagFBUser
 
 _m_cbEid_
   
-> Die Länge der Eintrags-ID des E-Mail-Benutzers, dargestellt durch die [IMailUser-Schnittstelle.](https://docs.microsoft.com/previous-versions/windows/desktop/wab/-wab-imailuser-deleteprops) 
+> Die Länge der Eintrags-ID des E-Mail-Benutzers, wie sie von der [IMailUser-Schnittstelle](https://docs.microsoft.com/previous-versions/windows/desktop/wab/-wab-imailuser-deleteprops) dargestellt wird. 
     
 _m_lpEid_
   
@@ -43,11 +43,11 @@ _m_lpEid_
     
 _m_ulReserved_
   
-> Dieser Parameter ist für die Outlook reserviert und wird nicht unterstützt.
+> Dieser Parameter ist für Outlook interne Verwendung reserviert und wird nicht unterstützt.
     
 _m_pwszReserved_
   
-> Dieser Parameter ist für die Outlook reserviert und wird nicht unterstützt.
+> Dieser Parameter ist für Outlook interne Verwendung reserviert und wird nicht unterstützt.
     
 ## <a name="see-also"></a>Siehe auch
 

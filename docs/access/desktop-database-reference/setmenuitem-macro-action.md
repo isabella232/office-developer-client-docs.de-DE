@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm16614
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: fe61a3368813ba3420920909f818beee2029d993
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: cda7c774e6af9f40d529fe809c49506a57c73c2b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308680"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568473"
 ---
 # <a name="setmenuitem-macro-action"></a>SetMenuItem-Makroaktion
 
@@ -45,7 +45,7 @@ Die **SetzenMenüelement**-Aktion verwendet folgende Argumente.
 <tbody>
 <tr class="odd">
 <td><p><strong>Menüindex</strong></p></td>
-<td><p>Der Index des Menüs, das den Befehl enthält, für den Sie den Status festlegen möchten. Geben Sie einen ganzzahligen Wert beginnend bei 0 für den Index des gewünschten Menüs im benutzerdefinierten oder im globalen Menü ein. Geben Sie den Indexwert im Feld <strong>Menü Index</strong> im Abschnitt <strong>Aktionsargumente</strong> des Bereichs Makro-Generator ein. Der Index ist relativ zur Position des Menüs im Menü Makro für das benutzerdefinierte oder das globale Menü (die Position der AddMenu- <strong></strong> Aktion dieses Menüs im Menü Makro, gezählt von 0). Die Anzeige des Menüs kann etwas anders aussehen, da Sie bedingte Ausdrücke im Menü Makro verwenden können, um benutzerdefinierte Menüelemente auszublenden oder anzuzeigen. Dies ist ein erforderliches Argument. Wenn Sie ein Menü mit diesem Argument auswählen und die Argumente für den <strong>Befehlsindex</strong> und den unter <strong>Befehl</strong> leer lassen, können Sie den Menünamen selbst aktivieren oder deaktivieren. Sie können jedoch keinen Menünamen aktivieren oder deaktivieren (Access ignoriert die Einstellungen zum <strong>überprüfen</strong> und unchecken für das <strong>Flag</strong> -Argument für Menünamen). <strong></strong></p></td>
+<td><p>Der Index des Menüs, das den Befehl enthält, für den Sie den Status festlegen möchten. Geben Sie einen ganzzahligen Wert ab 0 für den Index des gewünschten Menüs im benutzerdefinierten oder globalen Menü ein. Geben Sie den Indexwert in das <strong>Feld Menüindex</strong> im Abschnitt <strong>"Aktionsargumente"</strong> des Makro-Generator-Bereichs ein. Der Index ist relativ zur Menüposition im Menümakro für das benutzerdefinierte oder globale Menü (die Position der <strong>AddMenu-Aktion</strong> dieses Menüs im Menümakro, gezählt von 0). Die Anzeige des Menüs kann etwas anders sein, da Sie bedingte Ausdrücke im Menümakro verwenden können, um benutzerdefinierte Menüelemente auszublenden oder anzuzeigen. Dies ist ein erforderliches Argument. Wenn Sie ein Menü mit diesem Argument auswählen und die Argumente <strong>"Command Index"</strong> und <strong>"Subcommand Index"</strong> leer lassen, können Sie den Menünamen selbst aktivieren oder deaktivieren. Sie können jedoch keinen Menünamen auswählen oder die Auswahl aufheben (Access ignoriert die Einstellungen zum <strong>Aktivieren</strong> und <strong>Deaktivieren</strong> des <strong>Flag-Arguments</strong> für Menünamen).</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Befehlsindex</strong></p></td>
@@ -63,7 +63,7 @@ Die **SetzenMenüelement**-Aktion verwendet folgende Argumente.
 </table>
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **SetzenMenüelement**-Aktion kann nur in Kombination mit einem benutzerdefinierten oder globalen Menü verwendet werden. Ist in dem aktiven Fenster kein entsprechendes Menü enthalten, wird durch die Ausführung eines Makros, in dem die **SetzenMenüelement**-Aktion enthalten ist, ein Laufzeitfehler verursacht.
 

@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm47687
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 9e934b290472dc4bb0ad8619b2ada6992b4215c0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f9ff8558160d8815651c4b386297469227c81b73
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308631"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589120"
 ---
 # <a name="singlestep-macro-action"></a>SingleStep-Makroaktion
 
@@ -28,7 +28,7 @@ Mit der **MakroEinzelschritt**-Aktion können Sie die Makroausführung anhalten 
 
 Die **MakroEinzelschritt**-Aktion hat keine Argumente.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 - Verwenden Sie die **MakroEinzelschritt** -Aktion, um Probleme mit einem Makro zu beheben, das nicht richtig funktioniert. Sie können die **MakroEinzelschritt** -Aktion direkt vor der Aktion, die Ursache eines Problems sein könnte, einem Makro hinzufügen. Die Aktion hält das Makro an und öffnet das Dialogfeld **Einzelschritt**. In diesem Dialogfeld werden Informationen über das aktuelle Makro angezeigt, z. B. Name des Makros, angegebene Bedingungen, Name der Aktion, Argumente und ggf. die Fehlernummer. Klicken Sie in diesem Dialogfeld auf **Schritt**, um mit der nächsten Makroaktion fortzufahren, auf **Alle Makros anhalten**, um das aktuelle Makro und alle weiteren derzeit ausgeführten Makros anzuhalten, oder auf **Weiter**, um den Einzelschrittmodus zu verlassen und mit der Ausführung des Makros fortzufahren.
 

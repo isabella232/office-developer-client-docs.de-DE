@@ -1,5 +1,5 @@
 ---
-title: QueryDef. StillExecuting-Eigenschaft (DAO)
+title: QueryDef.StillExecuting-Eigenschaft (DAO)
 TOCTitle: StillExecuting Property
 ms:assetid: 98e85d37-de50-afe1-dcca-01623546e0ad
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197953(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1053584
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 60c0663eaa6857801555c6ce05f4256cfe4c290f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: caa81317ae55e00430594b06c0f73c1c21cc5fb6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303416"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568614"
 ---
-# <a name="querydefstillexecuting-property-dao"></a>QueryDef. StillExecuting-Eigenschaft (DAO)
+# <a name="querydefstillexecuting-property-dao"></a>QueryDef.StillExecuting-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -27,7 +27,7 @@ ms.locfileid: "32303416"
 
 *Ausdruck* . StillExecuting
 
-*Ausdruck* Eine Variable, die ein **QueryDef** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **QueryDef**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPIAllocateMore
 api_type:
 - HeaderDef
 ms.assetid: 3e48f76a-bc97-4cbc-9082-c07dd674b73e
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 01980b2da735838eeffa9afa5a0d139b69e76d0c
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 83867eae14cf147e38ca9a72051bc6f4ba3be0bb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33435390"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59610146"
 ---
 # <a name="mapiallocatemore"></a>MAPIAllocateMore
 
@@ -25,7 +25,7 @@ ms.locfileid: "33435390"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Weist einen Speicherpuffer zu, der mit einem anderen Puffer verknüpft ist, der zuvor mit der [MAPIAllocateBuffer-Funktion zugewiesen](mapiallocatebuffer.md) wurde. 
+Weist einen Speicherpuffer zu, der mit einem anderen Puffer verknüpft ist, der zuvor mit der [MAPIAllocateBuffer-Funktion](mapiallocatebuffer.md) zugeordnet wurde. 
   
 |||
 |:-----|:-----|
@@ -45,11 +45,11 @@ SCODE MAPIAllocateMore(
 
  _cbSize_
   
-> [in] Größe des zu zugeordneten neuen Puffers in Bytes. 
+> [in] Größe des zuzuweisenden neuen Puffers in Bytes. 
     
  _lpObject_
   
-> [in] Zeiger auf einen vorhandenen MAPI-Puffer, der mit **MAPIAllocateBuffer zugewiesen wurde.**
+> [in] Zeiger auf einen vorhandenen MAPI-Puffer, der mit **MAPIAllocateBuffer** zugeordnet wurde.
     
  _lppBuffer_
   
@@ -59,12 +59,12 @@ SCODE MAPIAllocateMore(
 
 S_OK 
   
-> Der Aufruf ist erfolgreich und hat einen Zeiger auf den angeforderten Arbeitsspeicher zurückgegeben.
+> Der Aufruf war erfolgreich und hat einen Zeiger auf den angeforderten Speicher zurückgegeben.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Während **der MAPIAllocateMore-Anrufverarbeitung** erhält die aufrufende Implementierung einen Speicherblock vom Betriebssystem. Der Speicherpuffer wird für eine byte-Adresse mit gleichmäßiger Nummer zugewiesen. Auf Plattformen, auf denen der lange ganzzahlige Zugriff effizienter ist, ordnet das Betriebssystem den Puffer einer Adresse zu, deren Größe in Bytes ein Vielfaches von vier ist. 
+Während der **MAPIAllocateMore-Anrufverarbeitung** ruft die aufrufende Implementierung einen Speicherblock vom Betriebssystem ab. Der Speicherpuffer wird einer gerade nummerierten Byteadresse zugeordnet. Auf Plattformen, auf denen der Zugriff auf lange ganze Zahlen effizienter ist, weist das Betriebssystem den Puffer einer Adresse zu, deren Größe in Bytes ein Vielfaches von vier ist. 
   
-Die einzige Möglichkeit, einen mit **MAPIAllocateMore zugewiesenen** Puffer frei zu geben, ist das Übergeben des im _lpObject-Parameter_ angegebenen Pufferzeigers an die [MAPIFreeBuffer-Funktion.](mapifreebuffer.md) Die Verknüpfung zwischen den Speicherpuffern, die [mapIAllocateBuffer](mapiallocatebuffer.md) und **MAPIAllocateMore** zugeordnet sind, ermöglicht **MAPIFreeBuffer,** beide Puffer mit einem einzigen Aufruf frei zu lassen. 
+The only way to release a buffer allocated with **MAPIAllocateMore** is to pass the buffer pointer specified in the  _lpObject_ parameter to the [MAPIFreeBuffer](mapifreebuffer.md) function. Die Verknüpfung zwischen den mit [MAPIAllocateBuffer](mapiallocatebuffer.md) und **MAPIAllocateMore** zugeordneten Speicherpuffern ermöglicht **MAPIFreeBuffer** die Freigabe beider Puffer mit einem einzigen Aufruf. 
   
 

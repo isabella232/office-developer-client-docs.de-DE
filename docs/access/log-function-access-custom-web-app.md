@@ -4,15 +4,15 @@ manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a897e812-08dc-49c9-954b-e8908a0daab3
 description: Gibt den natürlichen Logarithmus oder den Logarithmus der angegebenen Basis des angegebenen Ausdrucks zurück.
-ms.openlocfilehash: e2cfd1cf4ad3c1bf44778737faa0f697333f5234
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 4ba8e47cc3f022b8852509dfaa32daef6b11e2fd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33419296"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568222"
 ---
 # <a name="log-function-access-custom-web-app"></a>Protokollfunktion (benutzerdefinierte Access-Web-App)
 
@@ -29,13 +29,13 @@ Die **Log-Funktion** enthält die folgenden Argumente.
   
 |**Argumentname**|**Beschreibung**|
 |:-----|:-----|
-| *NumericExpression*  <br/> |Die positive Zahl, für die der Logarithmus verwendet werden soll.  <br/> |
-| *Base*  <br/> |Die Basis des Logarithmus. Wenn sie nicht angegeben wird, gibt die **Log-Funktion** den natürlichen Logarithmus zurück.  <br/> |
+| *NumericExpression*  <br/> |Die positive Zahl, für die der Logarithmus bestimmt werden soll.  <br/> |
+| *Base*  <br/> |Die Basis des Logarithmus. Wenn dieser Wert weggelassen wird, gibt die **Log-Funktion** den natürlichen Logarithmus zurück.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die Funktion **Log10** ist ähnlich, gibt jedoch immer den allgemeinen Logarithmus zurück, d. h. den Logarithmus für die Basis 10. 
+Die Funktion **Log10** ist ähnlich, gibt aber immer den allgemeinen Logarithmus zurück, d. h. den Logarithmus für die Basis 10. 
   
-Der natürliche Logarithmus ist der Logarithmus zur Basis e, wobei e eine unvernünftige Konstante ist, die ungefähr 2,718281828 entspricht.
+Der natürliche Logarithmus ist der Logarithmus zum Basis-e, wobei e eine Konstante ist, die ungefähr 2,718281828 entspricht.
   
 

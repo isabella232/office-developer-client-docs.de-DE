@@ -4,15 +4,15 @@ manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 89c2d4f0-0de9-41d4-bc34-a21f5636e8c4
 description: Gibt den Logarithmus einer Zahl zur Basis 10 zurück.
-ms.openlocfilehash: 3aa17051de4ce22d211ab909e6eaffebbabb4d6d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8b1a246e0581fa6fe0387c37eb1ac82110088167
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424868"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568208"
 ---
 # <a name="log10-function-access-custom-web-app"></a>Log10-Funktion (benutzerdefinierte Access-Web-App)
 
@@ -29,10 +29,10 @@ Die **Log10-Funktion** enthält das folgende Argument.
   
 |**Argumentname**|**Beschreibung**|
 |:-----|:-----|
-| *NumericExpression*  <br/> |Die positive Zahl, für die der Basis-10-Logarithmus verwendet werden soll.  <br/> |
+| *NumericExpression*  <br/> |Die positive Zahl, für die der Logarithmus der Basis 10 sein soll.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Mit **der Log-Funktion** können Sie die Basis des Logarithmus ändern, anstatt die Basis 10 zu verwenden. 
+Mit der **Log-Funktion** können Sie die Basis des Logarithmus ändern, anstatt die Basis 10 zu verwenden. 
   
 

@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff194099(v=office.15)
 ms:contentKeyID: 48544893
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: a9ef8f1714244b02ed5423a38cf3fb8fa328ec1e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 216a15a6152fd1920562ad04b9c0f1a4d150bf86
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300637"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568509"
 ---
 # <a name="recordsetfindnext-method-dao"></a>Recordset.FindNext-Methode (DAO)
 

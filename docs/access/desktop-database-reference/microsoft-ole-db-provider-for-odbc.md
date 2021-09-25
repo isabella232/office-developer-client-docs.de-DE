@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249964(v=office.15)
 ms:contentKeyID: 48547602
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 4f5ffae4880cadb90f47f1ac348ffc8b3ea58785
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 2bc1d657796a35cc1e371fb302ca069d20befd86
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288911"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589372"
 ---
 # <a name="microsoft-ole-db-provider-for-odbc"></a>Microsoft OLE DB Provider for ODBC
 
@@ -106,7 +106,7 @@ Alternativ zum Festlegen eines **DSN** können Sie auch den ODBC-Treiber (**DRIV
 
 Sie können auch den Namen (**UID=**) und das Kennwort für ein Benutzerkonto (**PWD=**) in den ODBC-spezifischen Parametern oder in den von ADO definierten Standardparametern *user* und *password* angeben.
 
-Obwohl eine **DSN** -Definition bereits eine Datenbank angibt, können Sie zusätzlich zu einem **DSN** *einen* *Daten Bank* Parameter angeben, um eine Verbindung mit einer anderen Datenbank herzustellen. Es empfiehlt sich, bei Verwendung eines **DSN**immer *den* Parameter *Database* einzuschließen. Dadurch wird sichergestellt, dass Sie eine Verbindung mit der richtigen Datenbank herstellen, falls ein anderer Benutzer den Standarddaten Bankparameter seit der letzten Überprüfung der **DSN** -Definition geändert hat.
+Obwohl eine **DSN-Definition** bereits eine Datenbank angibt, können Sie zusätzlich zu einem **DSN** *einen* *Datenbankparameter* angeben, um eine Verbindung mit einer anderen Datenbank herzustellen. Es empfiehlt sich, *immer den* *Datenbankparameter* einzuschließen, wenn Sie einen **DSN** verwenden. Dadurch wird sichergestellt, dass Sie eine Verbindung mit der richtigen Datenbank herstellen, falls ein anderer Benutzer den Standarddatenbankparameter seit der letzten Überprüfung der **DSN-Definition** geändert hat.
 
 ## <a name="provider-specific-connection-properties"></a>Anbieterspezifische Verbindungseigenschaften
 
@@ -125,7 +125,7 @@ Der OLE DB-Anbieter für ODBC fügt der [Properties](properties-collection-ado.m
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Zugängliche Verfahren<br />
+<td><p>Barrierefreie Verfahren<br />
 (KAGPROP_ACCESSIBLEPROCEDURES)</p></td>
 <td><p>Gibt an, ob der Benutzer Zugriff auf gespeicherte Prozeduren hat.</p></td>
 </tr>
@@ -135,52 +135,52 @@ Der OLE DB-Anbieter für ODBC fügt der [Properties](properties-collection-ado.m
 <td><p>Gibt an, ob der Benutzer über die Berechtigung zum Ausführen der SELECT-Anweisungen in Datenbanktabellen verfügt.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Aktive Anweisungen<br />
+<td><p>Active-Anweisungen<br />
 (KAGPROP_ACTIVESTATEMENTS)</p></td>
 <td><p>Gibt die Anzahl von Handles an, die ein ODBC-Treiber in einer Verbindung unterstützen kann.</p></td>
 </tr>
 <tr class="even">
-<td><p>Treiber Name<br />
+<td><p>Treibername<br />
 (KAGPROP_DRIVERNAME)</p></td>
 <td><p>Gibt den Dateinamen des ODBC-Treibers an.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Treiber-ODBC-Version<br />
+<td><p>Odbc-Treiberversion<br />
 (KAGPROP_DRIVERODBCVER)</p></td>
 <td><p>Gibt die Version von ODBC an, die von diesem Treiber unterstützt wird.</p></td>
 </tr>
 <tr class="even">
-<td><p>Datei Verwendung<br />
+<td><p>Dateiverwendung<br />
 (KAGPROP_FILEUSAGE)</p></td>
 <td><p>Gibt an, wie der Treiber eine Datei in einer Datenquelle behandelt: als Tabelle oder als Katalog.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Like-Escape-Klausel<br />
+<td><p>Like Escape-Klausel<br />
 (KAGPROP_LIKEESCAPECLAUSE)</p></td>
 <td><p>Gibt an, ob der Treiber die Definition und Verwendung eines Escapezeichens für das Prozentzeichen (%) und das Unterstrichzeichen (_) im LIKE-Prädikat einer WHERE-Klausel unterstützt.</p></td>
 </tr>
 <tr class="even">
-<td><p>Maximale Anzahl von Spalten in Group by<br />
+<td><p>Max Columns in Group By<br />
 (KAGPROP_MAXCOLUMNSINGROUPBY)</p></td>
 <td><p>Gibt die maximale Anzahl von Spalten an, die in der GROUP BY-Klausel einer SELECT-Anweisung enthalten sein darf.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Maximale Anzahl von Spalten im Index<br />
+<td><p>Max Columns in Index<br />
 (KAGPROP_MAXCOLUMNSININDEX)</p></td>
 <td><p>Gibt die maximale Anzahl von Spalten an, die in einem Index enthalten sein darf.</p></td>
 </tr>
 <tr class="even">
-<td><p>Maximale Anzahl von Spalten in der Reihenfolge nach<br />
+<td><p>Max Columns in Order By<br />
 (KAGPROP_MAXCOLUMNSINORDERBY)</p></td>
 <td><p>Gibt die maximale Anzahl von Spalten an, die in der ORDER BY-Klausel einer SELECT-Anweisung enthalten sein darf.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Maximale Anzahl von Spalten in SELECT<br />
+<td><p>Max Columns in Select<br />
 (KAGPROP_MAXCOLUMNSINSELECT)</p></td>
 <td><p>Gibt die maximale Anzahl von Spalten an, die im SELECT-Teil einer SELECT-Anweisung enthalten sein darf.</p></td>
 </tr>
 <tr class="even">
-<td><p>Maximale Anzahl von Spalten in der Tabelle<br />
+<td><p>Max Columns in Table<br />
 (KAGPROP_MAXCOLUMNSINTABLE)</p></td>
 <td><p>Gibt die maximale Anzahl von Spalten an, die in einer Tabelle zulässig sind.</p></td>
 </tr>
@@ -195,12 +195,12 @@ Der OLE DB-Anbieter für ODBC fügt der [Properties](properties-collection-ado.m
 <td><p>Gibt die vom Anbieter unterstützten OUTER JOIN-Typen an.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Outer-Joins<br />
+<td><p>Äußere Verknüpfungen<br />
 (KAGPROP_OUTERJOINS)</p></td>
 <td><p>Gibt an, ob der Anbieter OUTER JOIN-Typen unterstützt.</p></td>
 </tr>
 <tr class="even">
-<td><p>SonderZeichen<br />
+<td><p>Sonderzeichen<br />
 (KAGPROP_SPECIALCHARACTERS)</p></td>
 <td><p>Gibt an, welche Zeichen eine besondere Bedeutung für den ODBC-Treiber haben.</p></td>
 </tr>
@@ -215,17 +215,17 @@ Der OLE DB-Anbieter für ODBC fügt der [Properties](properties-collection-ado.m
 <td><p>Gibt an, welche Zeichenfolgenfunktionen vom ODBC-Treiber unterstützt werden. Eine Liste mit Funktionsnamen und den zugehörigen Werten, die in dieser Bitmaske verwendet werden, finden Sie in Appendix E: Scalar Functions in der Dokumentation zu ODBC.</p></td>
 </tr>
 <tr class="odd">
-<td><p>System Funktionen<br />
+<td><p>Systemfunktionen<br />
 (KAGPROP_SYSTEMFUNCTIONS)</p></td>
 <td><p>Gibt an, welche Systemfunktionen vom ODBC-Treiber unterstützt werden. Eine Liste mit Funktionsnamen und den zugehörigen Werten, die in dieser Bitmaske verwendet werden, finden Sie in Appendix E: Scalar Functions in der Dokumentation zu ODBC.</p></td>
 </tr>
 <tr class="even">
-<td><p>Zeit/Datum-Funktionen<br />
+<td><p>Time/Date-Funktionen<br />
 (KAGPROP_TIMEDATEFUNCTIONS)</p></td>
 <td><p>Gibt an, welche Uhrzeit- und Datumsfunktionen vom ODBC-Treiber unterstützt werden. Eine Liste mit Funktionsnamen und den zugehörigen Werten, die in dieser Bitmaske verwendet werden, finden Sie in Appendix E: Scalar Functions in der Dokumentation zu ODBC.</p></td>
 </tr>
 <tr class="odd">
-<td><p>SQL-Grammatik Unterstützung<br />
+<td><p>SQL Grammatikunterstützung<br />
 (KAGPROP_ODBCSQLCONFORMANCE)</p></td>
 <td><p>Gibt die SQL-Grammatik an, die von diesem ODBC-Treiber unterstützt wird.</p></td>
 </tr>
@@ -250,7 +250,7 @@ Der OLE DB-Anbieter für ODBC fügt der **Properties**-Auflistung der Objekte **
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Abfragebasierte Aktualisierungen/Löschungen/einFügungen<br />
+<td><p>Abfragebasierte Aktualisierungen/Löschungen/Einfügungen<br />
 (KAGPROP_QUERYBASEDUPDATES)</p></td>
 <td><p>Gibt an, ob Aktualisierungen und Lösch- und Einfügevorgänge mithilfe von SQL-Abfragen ausgeführt werden können.</p></td>
 </tr>
@@ -260,12 +260,12 @@ Der OLE DB-Anbieter für ODBC fügt der **Properties**-Auflistung der Objekte **
 <td><p>Gibt die Methode an, die verwendet wird, um potenzielle Probleme zu reduzieren, die von zwei Benutzern verursacht werden, die gleichzeitig auf dieselben Daten in der Datenquelle zugreifen möchten.</p></td>
 </tr>
 <tr class="odd">
-<td><p>BLOB-Barrierefreiheit bei Vorwärtscursor<br />
+<td><p>BLOB-Barrierefreiheit für Forward-Only Cursor<br />
 (KAGPROP_BLOBSONFOCURSOR)</p></td>
 <td><p>Gibt an, ob auf BLOB-<strong>Felder</strong> zugegriffen werden kann, wenn ein Vorwärtscursor verwendet wird.</p></td>
 </tr>
 <tr class="even">
-<td><p>Include SQL_FLOAT, SQL_DOUBLE und SQL_REAL in QBU WHERE-Klauseln<br />
+<td><p>Einschließen SQL_FLOAT, SQL_DOUBLE und SQL_REAL in QBU WHERE-Klauseln<br />
 (KAGPROP_INCLUDENONEXACT)</p></td>
 <td><p>Gibt an, ob die Werte SQL_FLOAT, SQL_DOUBLE und SQL_REAL in eine QBU WHERE-Klausel eingefügt werden können.</p></td>
 </tr>
@@ -301,7 +301,7 @@ ODBC stellt eine bestimmte Syntax zum Aufrufen von gespeicherten Prozeduren bere
 
 `"{ [ ? = ] call procedure [ ( ? [, ? [ ,  ]] ) ] }"`
 
-Jedes Fragezeichen ( **?** ) verweist auf ein Objekt in der [Parameters](parameters-collection-ado.md)-Auflistung. Das erste Fragezeichen ( **?** Verweise **Parameter**(0), die nächste **?** referenziert **Parameter**(1) usw.
+Jedes Fragezeichen (**?**) verweist auf ein Objekt in der [Parameters](parameters-collection-ado.md)-Auflistung. Das erste Fragezeichen (**?**) verweist auf **Parameters**(0), das nächste Fragezeichen (**?**) auf **Parameters**(1) usw.
 
 Die Parameterverweise sind optional und hängen von der Struktur der gespeicherten Prozedur ab. Wenn Sie eine gespeicherte Prozedur aufrufen möchten, die keine Parameter definiert, sieht die Zeichenfolge wie folgt aus:
 
@@ -341,7 +341,7 @@ Verfügbarkeit von ADO-Standardeigenschaften des **Recordset**-Objekts:
 <th><p>ForwardOnly</p></th>
 <th><p>Dynamisch</p></th>
 <th><p>Keyset</p></th>
-<th><p>Static</p></th>
+<th><p>Statisch</p></th>
 </tr>
 </thead>
 <tbody>
@@ -360,7 +360,7 @@ Verfügbarkeit von ADO-Standardeigenschaften des **Recordset**-Objekts:
 <td><p>Lese-/Schreibzugriff</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="activeconnection-property-ado.md">ActiveConnection</a></p></td>
+<td><p><a href="activeconnection-property-ado.md">Activeconnection</a></p></td>
 <td><p>Lese-/Schreibzugriff</p></td>
 <td><p>Lese-/Schreibzugriff</p></td>
 <td><p>Lese-/Schreibzugriff</p></td>
@@ -368,10 +368,10 @@ Verfügbarkeit von ADO-Standardeigenschaften des **Recordset**-Objekts:
 </tr>
 <tr class="even">
 <td><p><a href="bof-eof-properties-ado.md">BOF</a></p></td>
-<td><p>schreibgeschützt</p></td>
-<td><p>schreibgeschützt</p></td>
-<td><p>schreibgeschützt</p></td>
-<td><p>schreibgeschützt</p></td>
+<td><p>Schreibgeschützt</p></td>
+<td><p>Schreibgeschützt</p></td>
+<td><p>Schreibgeschützt</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="bookmark-property-ado.md">Bookmark</a></p></td>
@@ -395,7 +395,7 @@ Verfügbarkeit von ADO-Standardeigenschaften des **Recordset**-Objekts:
 <td><p>Lese-/Schreibzugriff</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="cursortype-property-ado.md">CursorType</a></p></td>
+<td><p><a href="cursortype-property-ado.md">Cursortype</a></p></td>
 <td><p>Lese-/Schreibzugriff</p></td>
 <td><p>Lese-/Schreibzugriff</p></td>
 <td><p>Lese-/Schreibzugriff</p></td>
@@ -403,10 +403,10 @@ Verfügbarkeit von ADO-Standardeigenschaften des **Recordset**-Objekts:
 </tr>
 <tr class="odd">
 <td><p><a href="editmode-property-ado.md">EditMode</a></p></td>
-<td><p>schreibgeschützt</p></td>
-<td><p>schreibgeschützt</p></td>
-<td><p>schreibgeschützt</p></td>
-<td><p>schreibgeschützt</p></td>
+<td><p>Schreibgeschützt</p></td>
+<td><p>Schreibgeschützt</p></td>
+<td><p>Schreibgeschützt</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="filter-property-ado.md">Filter</a></p></td>
@@ -440,8 +440,8 @@ Verfügbarkeit von ADO-Standardeigenschaften des **Recordset**-Objekts:
 <td><p><a href="pagecount-property-ado.md">PageCount</a></p></td>
 <td><p>Lese-/Schreibzugriff</p></td>
 <td><p>nicht verfügbar</p></td>
-<td><p>schreibgeschützt</p></td>
-<td><p>schreibgeschützt</p></td>
+<td><p>Schreibgeschützt</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="pagesize-property-ado.md">PageSize</a></p></td>
@@ -454,8 +454,8 @@ Verfügbarkeit von ADO-Standardeigenschaften des **Recordset**-Objekts:
 <td><p><a href="recordcount-property-ado.md">RecordCount</a></p></td>
 <td><p>Lese-/Schreibzugriff</p></td>
 <td><p>nicht verfügbar</p></td>
-<td><p>schreibgeschützt</p></td>
-<td><p>schreibgeschützt</p></td>
+<td><p>Schreibgeschützt</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="source-property-ado-recordset.md">Source</a></p></td>
@@ -466,17 +466,17 @@ Verfügbarkeit von ADO-Standardeigenschaften des **Recordset**-Objekts:
 </tr>
 <tr class="even">
 <td><p><a href="state-property-ado.md">State</a></p></td>
-<td><p>schreibgeschützt</p></td>
-<td><p>schreibgeschützt</p></td>
-<td><p>schreibgeschützt</p></td>
-<td><p>schreibgeschützt</p></td>
+<td><p>Schreibgeschützt</p></td>
+<td><p>Schreibgeschützt</p></td>
+<td><p>Schreibgeschützt</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="status-property-ado-recordset.md">Status</a></p></td>
-<td><p>schreibgeschützt</p></td>
-<td><p>schreibgeschützt</p></td>
-<td><p>schreibgeschützt</p></td>
-<td><p>schreibgeschützt</p></td>
+<td><p>Schreibgeschützt</p></td>
+<td><p>Schreibgeschützt</p></td>
+<td><p>Schreibgeschützt</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 </tbody>
 </table>
@@ -500,7 +500,7 @@ Verfügbarkeit von ADO-Standardmethoden des **Recordset**-Objekts:
 <th><p>ForwardOnly</p></th>
 <th><p>Dynamisch</p></th>
 <th><p>Keyset</p></th>
-<th><p>Static</p></th>
+<th><p>Statisch</p></th>
 </tr>
 </thead>
 <tbody>
@@ -540,14 +540,14 @@ Verfügbarkeit von ADO-Standardmethoden des **Recordset**-Objekts:
 <td><p>Ja</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="close-method-ado.md">Close</a></p></td>
+<td><p><a href="close-method-ado.md">Schließen</a></p></td>
 <td><p>Ja</p></td>
 <td><p>Ja</p></td>
 <td><p>Ja</p></td>
 <td><p>Ja</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="delete-method-ado-recordset.md">Delete</a></p></td>
+<td><p><a href="delete-method-ado-recordset.md">Löschen</a></p></td>
 <td><p>Ja</p></td>
 <td><p>Ja</p></td>
 <td><p>Ja</p></td>
@@ -603,7 +603,7 @@ Verfügbarkeit von ADO-Standardmethoden des **Recordset**-Objekts:
 <td><p>Ja</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="open-method-ado-recordset.md">Open</a></p></td>
+<td><p><a href="open-method-ado-recordset.md">Öffnen</a></p></td>
 <td><p>Ja</p></td>
 <td><p>Ja</p></td>
 <td><p>Ja</p></td>
@@ -761,7 +761,7 @@ Die folgenden Eigenschaften werden der **Properties**-Auflistung des **Connectio
 <td><p>DBPROP_INIT_LCID</p></td>
 </tr>
 <tr class="odd">
-<td><p>Standort</p></td>
+<td><p>Ort</p></td>
 <td><p>DBPROP_INIT_LOCATION</p></td>
 </tr>
 <tr class="even">
@@ -989,15 +989,15 @@ Die folgenden Eigenschaften werden der **Properties**-Auflistung des **Recordset
 <td><p>DBPROP_IAccessor</p></td>
 </tr>
 <tr class="even">
-<td><p>IColumnsInfo</p></td>
+<td><p>Icolumnsinfo</p></td>
 <td><p>DBPROP_IColumnsInfo</p></td>
 </tr>
 <tr class="odd">
-<td><p>IColumnsRowset</p></td>
+<td><p>Icolumnsrowset</p></td>
 <td><p>DBPROP_IColumnsRowset</p></td>
 </tr>
 <tr class="even">
-<td><p>IConnectionPointContainer</p></td>
+<td><p>Iconnectionpointcontainer</p></td>
 <td><p>DBPROP_IConnectionPointContainer</p></td>
 </tr>
 <tr class="odd">
@@ -1013,19 +1013,19 @@ Die folgenden Eigenschaften werden der **Properties**-Auflistung des **Recordset
 <td><p>DBPROP_IRowset</p></td>
 </tr>
 <tr class="even">
-<td><p>IRowsetChange</p></td>
-<td><p>DBPROP_IRowsetChange</p></td>
+<td><p>Irowsetchange</p></td>
+<td><p>Dbprop_irowsetchange</p></td>
 </tr>
 <tr class="odd">
 <td><p>IRowsetIdentity</p></td>
 <td><p>DBPROP_IRowsetIdentity</p></td>
 </tr>
 <tr class="even">
-<td><p>IRowsetInfo</p></td>
+<td><p>Irowsetinfo</p></td>
 <td><p>DBPROP_IRowsetInfo</p></td>
 </tr>
 <tr class="odd">
-<td><p>IRowsetLocate</p></td>
+<td><p>Irowsetlocate</p></td>
 <td><p>DBPROP_IRowsetLocate</p></td>
 </tr>
 <tr class="even">
@@ -1037,11 +1037,11 @@ Die folgenden Eigenschaften werden der **Properties**-Auflistung des **Recordset
 <td><p>DBPROP_IRowsetUpdate</p></td>
 </tr>
 <tr class="even">
-<td><p>ISequentialStream</p></td>
+<td><p>Isequentialstream</p></td>
 <td><p>DBPROP_ISequentialStream</p></td>
 </tr>
 <tr class="odd">
-<td><p>ISupportErrorInfo</p></td>
+<td><p>Isupporterrorinfo</p></td>
 <td><p>DBPROP_ISupportErrorInfo</p></td>
 </tr>
 <tr class="even">
@@ -1249,15 +1249,15 @@ Die folgenden Eigenschaften werden der **Properties**-Auflistung des **Command**
 <td><p>DBPROP_IAccessor</p></td>
 </tr>
 <tr class="even">
-<td><p>IColumnsInfo</p></td>
+<td><p>Icolumnsinfo</p></td>
 <td><p>DBPROP_IColumnsInfo</p></td>
 </tr>
 <tr class="odd">
-<td><p>IColumnsRowset</p></td>
+<td><p>Icolumnsrowset</p></td>
 <td><p>DBPROP_IColumnsRowset</p></td>
 </tr>
 <tr class="even">
-<td><p>IConnectionPointContainer</p></td>
+<td><p>Iconnectionpointcontainer</p></td>
 <td><p>DBPROP_IConnectionPointContainer</p></td>
 </tr>
 <tr class="odd">
@@ -1273,19 +1273,19 @@ Die folgenden Eigenschaften werden der **Properties**-Auflistung des **Command**
 <td><p>DBPROP_IRowset</p></td>
 </tr>
 <tr class="even">
-<td><p>IRowsetChange</p></td>
-<td><p>DBPROP_IRowsetChange</p></td>
+<td><p>Irowsetchange</p></td>
+<td><p>Dbprop_irowsetchange</p></td>
 </tr>
 <tr class="odd">
 <td><p>IRowsetIdentity</p></td>
 <td><p>DBPROP_IRowsetIdentity</p></td>
 </tr>
 <tr class="even">
-<td><p>IRowsetInfo</p></td>
+<td><p>Irowsetinfo</p></td>
 <td><p>DBPROP_IRowsetInfo</p></td>
 </tr>
 <tr class="odd">
-<td><p>IRowsetLocate</p></td>
+<td><p>Irowsetlocate</p></td>
 <td><p>DBPROP_IRowsetLocate</p></td>
 </tr>
 <tr class="even">
@@ -1297,11 +1297,11 @@ Die folgenden Eigenschaften werden der **Properties**-Auflistung des **Command**
 <td><p>DBPROP_IRowsetUpdate</p></td>
 </tr>
 <tr class="even">
-<td><p>ISequentialStream</p></td>
+<td><p>Isequentialstream</p></td>
 <td><p>DBPROP_ISequentialStream</p></td>
 </tr>
 <tr class="odd">
-<td><p>ISupportErrorInfo</p></td>
+<td><p>Isupporterrorinfo</p></td>
 <td><p>DBPROP_ISupportErrorInfo</p></td>
 </tr>
 <tr class="even">
@@ -1446,5 +1446,5 @@ Die folgenden Eigenschaften werden der **Properties**-Auflistung des **Command**
 
 ## <a name="see-also"></a>Siehe auch
 
-Ausführliche Informationen zu spezifischen Implementierungs-und Funktionsinformationen zum Microsoft OLE DB-Anbieter für ODBC finden Sie im [OLE DB Programmer es Guide](https://docs.microsoft.com/previous-versions/windows/desktop/ms713643(v=vs.85)) oder im [Data Platform Developer Center](https://docs.microsoft.com/sql/connect/sql-data-developer?view=sql-server-2017).
+Ausführliche Informationen zu bestimmten Implementierungs- und Funktionsinformationen zum Microsoft OLE DB-Anbieter für ODBC finden Sie im [OLE DB-Programmierhandbuch,](https://docs.microsoft.com/previous-versions/windows/desktop/ms713643(v=vs.85)) oder besuchen Sie das [Data Platform Developer Center.](https://docs.microsoft.com/sql/connect/sql-data-developer?view=sql-server-2017)
 

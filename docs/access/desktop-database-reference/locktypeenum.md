@@ -1,18 +1,18 @@
 ---
-title: LockTypeEnum (Access Desktop Database Reference)
+title: LockTypeEnum (Access-Desktopdatenbankreferenz)
 TOCTitle: LockTypeEnum
 ms:assetid: 966b4952-5591-4a99-82d5-99cb9ae3fc72
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249667(v=office.15)
 ms:contentKeyID: 48546448
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: d4b9dc49e647bdcd3123ade065da0c74538c9a88
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 754b998336ae8399e7f61257884faaf62a871f88
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289864"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568824"
 ---
 # <a name="locktypeenum"></a>LockTypeEnum
 
@@ -36,7 +36,7 @@ Gibt den Sperrentyp für Datensätze während der Bearbeitung an.
 <tbody>
 <tr class="odd">
 <td><p><strong>adLockBatchOptimistic</strong></p></td>
-<td><p>4</p></td>
+<td><p>4 </p></td>
 <td><p>Gibt optimistische Batchaktualisierungen an. Erforderlich für den Batchaktualisierungsmodus.</p></td>
 </tr>
 <tr class="even">
@@ -63,7 +63,7 @@ Gibt den Sperrentyp für Datensätze während der Bearbeitung an.
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
 Paket: **com.ms.wfc.data**
 
@@ -78,19 +78,19 @@ Paket: **com.ms.wfc.data**
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums. LockType. BATCHOPTIMISTIC</p></td>
+<td><p>AdoEnums.LockType.BATCHOPTIMISTIC</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. LockType. optimistisch</p></td>
+<td><p>AdoEnums.LockType.OPTIMISTIC</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. LockType. PESSIMISTISCH</p></td>
+<td><p>AdoEnums.LockType.PESSIMISTIC</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. LockType. READONLY</p></td>
+<td><p>AdoEnums.LockType.READONLY</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. LockType. unSPECIFIED</p></td>
+<td><p>AdoEnums.LockType.UNSPECIFIED</p></td>
 </tr>
 </tbody>
 </table>

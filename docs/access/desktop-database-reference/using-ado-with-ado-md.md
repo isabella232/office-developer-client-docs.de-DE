@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249655(v=office.15)
 ms:contentKeyID: 48546405
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 80c87f57a96f98de704e3cfa9b7689a522e4a7af
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 5d74f4d587462290fa99bb2524b4dc264af9d591
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32312747"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59588875"
 ---
 # <a name="using-ado-with-ado-md"></a>Verwenden von ADO mit ADO MD
 
@@ -23,9 +23,9 @@ ADO und ADO MD sind verwandte, aber separate Objektmodelle. ADO stellt Objekte z
 
 Beim Verwenden eines MDPs können Sie auswählen, ob Sie ADO, ADO MD oder beide Bibliotheken mit Ihrer Anwendung verwenden. Durch Verweisen auf beide Bibliotheken innerhalb eines Projekts haben Sie vollständigen Zugriff auf die Funktionalität Ihres MDPs.
 
-Es ist es für Benutzer sinnvoll, eine vereinfachte, tabellarische Sicht eines multidimensionalen Datasets zu verwenden. Dies wird durch das Verwenden des ADO- [Recordset](recordset-object-ado.md)-Objekts ermöglicht. Geben Sie die Datenquelle für das [Cellset](cellset-object-ado-md.md)-Objekt als ***Source***-Parameter für die [Open](open-method-ado-recordset.md)-Methode eines **Recordset**Objekts an, statt als Quelle für ein ADO MD-**Cellset**-Objekt.
+Es ist es für Benutzer sinnvoll, eine vereinfachte, tabellarische Sicht eines multidimensionalen Datasets zu verwenden. Dies wird durch das Verwenden des ADO- [Recordset](recordset-object-ado.md)-Objekts ermöglicht. Geben Sie die Quelle für Ihr [Cellset](cellset-object-ado-md.md) als ***Source** _ -Parameter für die [Open-Methode](open-method-ado-recordset.md) eines _*Recordset**-Objekts an, anstatt als Quelle für ein ADO MD **Cellset -Objekt.**
 
-Es kann auch nützlich sein, die Schemametadaten in einer tabellarischen Ansicht und nicht als Objekthierarchie anzuzeigen. Die ADO [](openschema-method-ado.md) -Methode OpenSchema für das [Connection](connection-object-ado.md) -Objekt ermöglicht es dem Benutzer, ein **Recordset** mit Schemainformationen zu öffnen. Der ***QueryType*** -Parameter der **OpenSchema** -Methode verfügt über mehrere [SchemaEnum](schemaenum.md) -Werte, die sich speziell auf MDPs beziehen. Diese Werte sind:
+Es kann auch hilfreich sein, die Schemametadaten in einer Tabellenansicht anstatt als Hierarchie von Objekten anzuzeigen. Die ADO [OpenSchema-Methode](openschema-method-ado.md) für das [Connection-Objekt](connection-object-ado.md) ermöglicht es dem Benutzer, ein **Recordset** mit Schemainformationen zu öffnen. Der **_QueryType_*_-Parameter der* _OpenSchema-Methode** weist mehrere [SchemaEnum-Werte](schemaenum.md) auf, die sich speziell auf MDPs beziehen. Die folgenden Werte sind:
 
   - **adSchemaCubes**
 

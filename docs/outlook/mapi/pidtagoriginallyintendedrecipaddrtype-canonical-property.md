@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagOriginallyIntendedRecipAddrtype
 api_type:
 - COM
 ms.assetid: dcfb6bd5-bff5-4a50-aec7-4bdfdabf7631
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a826f1bdf150b42b61a61b2f53870e9f170e0777
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 012840aa8a19dee70f905e625c770fc36780f264
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33416090"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59619840"
 ---
 # <a name="pidtagoriginallyintendedrecipaddrtype-canonical-property"></a>PidTagOriginallyIntendedRecipAddrtype (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "33416090"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält den Adresstyp des ursprünglich beabsichtigten Empfängers einer automatisch weitergeleiteten Nachricht.
+Enthält den Adresstyp des ursprünglich vorgesehenen Empfängers einer automatisch verschobenen Nachricht.
   
 |||
 |:-----|:-----|
@@ -34,9 +34,9 @@ Enthält den Adresstyp des ursprünglich beabsichtigten Empfängers einer automa
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Server  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaften sind eine der Adresseigenschaften für den ursprünglich beabsichtigten Nachrichtenempfänger. Sie muss vom automatischen Agent festgelegt werden, der die Nachricht weitergeleitet hat.
+Diese Eigenschaften sind eine der Adresseigenschaften für den ursprünglich vorgesehenen Nachrichtenempfänger. Sie muss vom automatischen Agent festgelegt werden, der die Nachricht weitergeleitet hat.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,11 +44,11 @@ Diese Eigenschaften sind eine der Adresseigenschaften für den ursprünglich bea
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

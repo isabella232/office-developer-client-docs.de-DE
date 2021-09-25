@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250316(v=office.15)
 ms:contentKeyID: 48548969
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 47ae7ea790265edc10be8c907869eefbe4e593ba
-ms.sourcegitcommit: 66e74e39f44dca8c41f97f05528b8f9eb1aaed87
+ms.localizationpriority: medium
+ms.openlocfilehash: ebaf5f3a9e0c8ae005c21b0872177e0699c0f9aa
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061307"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568418"
 ---
 # <a name="source-property-ado-error"></a>Source-Eigenschaft (ADO Error)
 
@@ -25,7 +25,7 @@ Gibt den Namen des Objekts oder der Anwendung an, die einen Fehler ursprünglich
 
 Gibt einen **String**-Wert zurück, der den Namen eines Objekts oder einer Anwendung angibt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Verwenden Sie die **Source** -Eigenschaft für ein [Error](error-object-ado.md)-Objekt, um den Namen des Objekts oder der Anwendung zu ermitteln, die einen Fehler ursprünglich generierte. Dabei kann es sich um den Klassennamen oder die ProgID des Objekts handeln. Bei Fehlern in ADO lautet der Eigenschaftswert **ADODB.** *ObjectName*, wobei *ObjectName* der Name des Objekts ist, das den Fehler ausgelöst hat. Bei ADOX und ADO MD lautet der Wert jeweils **ADOX.** *ObjectName* und **ADOMD.** *ObjectName*.
 

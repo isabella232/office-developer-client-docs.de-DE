@@ -1,18 +1,18 @@
 ---
-title: Verwenden von Lesezeichen (Access Desktop Database Reference)
+title: Verwenden von Lesezeichen (Access-Desktopdatenbankreferenz)
 TOCTitle: Using Bookmarks
 ms:assetid: fe6333ef-c9d9-1e84-2252-d27edc676e97
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250306(v=office.15)
 ms:contentKeyID: 48548935
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 469d8a0cc9b644fe434770d51c21d8210c8038d0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: b7291c1fd3fa63e20b5ac3a098884e0c4fd0ec6e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306307"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59588931"
 ---
 # <a name="using-bookmarks"></a>Verwenden von Lesezeichen
 

@@ -6,23 +6,23 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251398
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c437de23-d2e0-469d-62e6-8eb8b8cfea5c
-description: Gibt eine 16-Bit-Binärzahl zurück, in der jedes Bit nur dann auf 1 festgelegt ist, wenn das entsprechende Bit in binarynumber1 und binarynumber2 1 ist. Andernfalls ist das Bit auf 0 festgelegt.
-ms.openlocfilehash: a3c76a9122d0f02d5ab61460cf3457bb15da4d7b
-ms.sourcegitcommit: 939bd9686ba41a8f94b82e004ed84b9054d9c7cf
+description: Gibt eine 16-Bit-Binärzahl zurück, bei der jedes Bit nur auf 1 festgelegt ist, wenn das entsprechende Bit in binärer Zahl1 und binärer Zahl2 1 ist. Andernfalls wird das Bit auf 0 festgelegt.
+ms.openlocfilehash: ed0844dada0160cd8150762482c8d3b17742ec6b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48293492"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59628773"
 ---
 # <a name="bitand-function"></a>BITAND Function
 
-Gibt eine 16-Bit-Binärzahl zurück, in der jedes Bit nur dann auf 1 festgelegt ist, wenn das entsprechende Bit in binarynumber1 und binarynumber2 1 ist. Andernfalls ist das Bit auf 0 festgelegt. 
+Gibt eine 16-Bit-Binärzahl zurück, bei der jedes Bit nur auf 1 festgelegt ist, wenn das entsprechende Bit in binärer Zahl1 und binärer Zahl2 1 ist. Andernfalls wird das Bit auf 0 festgelegt. 
   
 ## <a name="syntax"></a>Syntax
 
-BITAND(***binarynumber1***, ***binarynumber2*** ) 
+BITAND(***binarynumber1** _, _ *_binarynumber2_** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -31,7 +31,7 @@ BITAND(***binarynumber1***, ***binarynumber2*** )
 | _binäre Zahl1_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die erste 16-Bit-Binärzahl.  <br/> |
 | _binäre Zahl2_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die zweite 16-Bit-Binärzahl.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Mit dieser Funktion können Sie in Bitmasken gespeicherte Shape-Eigenschaften testen und ändern, z. B. das Textformat des Shapes.
   

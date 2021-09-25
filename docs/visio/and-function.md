@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251391
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 434d7ceb-1050-c667-fb3d-b6634440c18e
 description: Gibt TRUE (1) zurück, wenn alle angegebenen logischen Ausdrücke TRUE sind. Wenn einer der logischen Ausdrücke FALSE oder 0 ist, gibt die AND-Funktion FALSE (0) zurück.
-ms.openlocfilehash: 74e8301718e69a2ab61f6bf9992d0d6855bbc6f1
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 82ce384641c400764356d3288ae7d903ee901292
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33422012"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59628878"
 ---
 # <a name="and-function"></a>AND Function
 
@@ -22,13 +22,13 @@ Gibt TRUE (1) zurück, wenn alle angegebenen logischen Ausdrücke TRUE sind. Wen
   
 ## <a name="syntax"></a>Syntax
 
-AND(** *logischer Ausdruck1* **, ** *logischer Ausdruck2* **,..., ** *logischer AusdruckN* ** ) 
+AND(** *logical expression1* **, ** *logical expression2* **,..., ** *logical expressionN* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _logischer Ausdruck_ <br/> |Erforderlich  <br/> |**String** <br/> | Eine Kombination aus Konstanten, Operatoren, Funktionen und Verweisen auf ShapeSheet-Zellen, die einen Wert ergeben. Ein mit einem Wert ungleich null ausgewerteter Ausdruck wird als TRUE angegeben.  <br/> |
+| _Logischer Ausdruck_ <br/> |Erforderlich  <br/> |**String** <br/> | Eine Kombination aus Konstanten, Operatoren, Funktionen und Verweisen auf ShapeSheet-Zellen, die einen Wert ergeben. Ein mit einem Wert ungleich null ausgewerteter Ausdruck wird als TRUE angegeben.  <br/> |
    
 ## <a name="example"></a>Beispiel
 

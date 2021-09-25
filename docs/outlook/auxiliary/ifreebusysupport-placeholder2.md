@@ -4,23 +4,23 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cf176321-b9ff-9b47-b785-da7da5e77536
-description: Dieses Element ist ein Platzhalter und wird nicht unterstützt.
-ms.openlocfilehash: b0150e0f43a1a115d45a7abe77a3852c31b02771
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Dieser Member ist ein Platzhalter und wird nicht unterstützt.
+ms.openlocfilehash: 3367126b3d9524f4206c93f7937b1e750d88222c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423601"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59567963"
 ---
 # <a name="ifreebusysupportplaceholder2"></a>IFreeBusySupport::Placeholder2
 
-Dieses Element ist ein Platzhalter und wird nicht unterstützt.
+Dieser Member ist ein Platzhalter und wird nicht unterstützt.
   
 ## <a name="quick-info"></a>QuickInfo
 
-Weitere [Informationen finden Sie unter IFreeBusySupport](ifreebusysupport.md).
+Siehe [IFreeBusySupport](ifreebusysupport.md).
   
 ```cpp
 HRESULT Placeholder2();
@@ -30,9 +30,9 @@ HRESULT Placeholder2();
 
 Immer S_OK, da dieses Element ein Platzhalter ist und nicht unterstützt wird.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Dieses Element muss die S_OK.
+Dieses Element muss S_OK zurückgeben.
   
 ## <a name="see-also"></a>Siehe auch
 

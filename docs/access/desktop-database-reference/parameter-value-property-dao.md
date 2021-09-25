@@ -1,24 +1,24 @@
 ---
-title: Parameter. Value-Eigenschaft (DAO)
+title: Parameter.Value-Eigenschaft (DAO)
 TOCTitle: Value Property
 ms:assetid: 7058f3cd-9102-c711-bc83-b1565a8b001c
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff195733(v=office.15)
 ms:contentKeyID: 48545556
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: d4e7f3976b934c407a038f321953259fd63a6f60
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4663a9dcdc31107e674cfe0e039e37240a81b0eb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32287990"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568747"
 ---
-# <a name="parametervalue-property-dao"></a>Parameter. Value-Eigenschaft (DAO)
+# <a name="parametervalue-property-dao"></a>Parameter.Value-Eigenschaft (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
-Legt den Wert eines Objekts fest oder gibt ihn zurück. **Variant** mit Lese-/Schreibzugriff.
+Legt den Wert eines Objekts fest oder gibt ihn zurück. **Variant**-Wert mit Lese-/Schreibzugriff.
 
 ## <a name="syntax"></a>Syntax
 
@@ -26,7 +26,7 @@ Legt den Wert eines Objekts fest oder gibt ihn zurück. **Variant** mit Lese-/Sc
 
 *Ausdruck* Eine Variable, die ein **Parameter** -Objekt darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 The setting or return value is a Variant data type that evaluates to a value appropriate for the data type, as specified by the **Type** property of an object.
 

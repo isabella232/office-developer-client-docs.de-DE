@@ -5,13 +5,13 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.assetid: 641659f2-3c0a-43af-96f1-2521b4b06680
 description: Codebeispiele, in denen gezeigt wird, wie mithilfe von Outlook-MAPI bestimmte Aufgaben ausgeführt oder bestimmte Dienstanbieter implementiert werden.
-localization_priority: Priority
-ms.openlocfilehash: b4d866d1e064c722228af4dbc16cf5f7251603d9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: c0de2de6cefc3dc6bc57365f5fa31ea445165e4a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328147"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59610174"
 ---
 # <a name="mapi-samples"></a>MAPI-Beispiele
 

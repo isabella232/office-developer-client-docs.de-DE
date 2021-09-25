@@ -1,25 +1,25 @@
 ---
-title: PidTagNickname (kanonische Eigenschaft)
+title: Kanonische PidTagNickname-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagNickname
 api_type:
 - HeaderDef
 ms.assetid: 088ffc58-d456-471b-af2f-7961e9c701f3
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 781b71fccd7f2383117e1b1d94c58bbf352ae094
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 3e6a95138d0f4bcb497a4cdbe0a7b1bc7cc9ebb5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329386"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59619904"
 ---
-# <a name="pidtagnickname-canonical-property"></a>PidTagNickname (kanonische Eigenschaft)
+# <a name="pidtagnickname-canonical-property"></a>Kanonische PidTagNickname-Eigenschaft
 
   
   
@@ -34,7 +34,7 @@ Enthält den Spitznamen des Kontakts.
 |Datentyp:  <br/> |PT_UNICODE, PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften sind optional. Ihre Inhalte werden vom Benutzer definiert.
   
@@ -44,7 +44,7 @@ Diese Eigenschaften sind optional. Ihre Inhalte werden vom Benutzer definiert.
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
@@ -58,11 +58,11 @@ Diese Eigenschaften sind optional. Ihre Inhalte werden vom Benutzer definiert.
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -70,9 +70,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

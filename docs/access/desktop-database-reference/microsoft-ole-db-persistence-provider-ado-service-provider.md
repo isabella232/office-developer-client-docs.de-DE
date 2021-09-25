@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249007(v=office.15)
 ms:contentKeyID: 48543719
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 4045445120d42f1ca88fce22ce566fc970fce28b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7b021daeb4d43be52d0b8c8409e3be866b8b27b2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288953"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589365"
 ---
 # <a name="microsoft-ole-db-persistence-provider-ado-service-provider"></a>Microsoft OLE DB Persistence Provider (ADO Service Provider)
 
@@ -60,13 +60,13 @@ Die folgenden Fehler, die von diesem Anbieter ausgegeben werden, können in Ihre
 </table>
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Microsoft OLE DB-Anbieter für Persistenz macht keine dynamischen Eigenschaften verfügbar.
 
 Derzeit können nur parametrisierte hierarchische **Recordset** -Objekte nicht gespeichert werden.
 
-Weitere Informationen zum permanenten Speichern von **Recordset**-Objekten finden Sie unter [Weitere Informationen zur Permanenz von Recordsets ](more-about-recordset-persistence.md).
+Weitere Informationen zum permanenten Speichern von **Recordset**-Objekten finden Sie unter [Weitere Informationen zur Permanenz von Recordsets](more-about-recordset-persistence.md).
 
 Wenn zum Öffnen eines **Recordset**-Objekts ein Stream verwendet wird, dürfen außer dem *Source*-Parameter der **Open**-Methode keine anderen Parameter angegeben werden.
 

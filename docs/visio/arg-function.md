@@ -4,32 +4,32 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 781369e1-fade-ec10-7c51-0f921b5c3b76
-description: Gibt ein Argument an, das die aufrufende Zelle an eine benutzerdefinierte Funktion übergeben kann, sowie den von der benutzerdefinierten Funktion zurückgegebenen Standardwert, wenn die aufrufende Zelle keinen Wert für das Argument übergibt. Gibt den durch die aufrufende Zelle und den übereinstimmenden argName-Parameter angegebenen Wert zurück.
-ms.openlocfilehash: 3cde7fe55d7bc60d15f32d7ad954443e545af914
-ms.sourcegitcommit: 939bd9686ba41a8f94b82e004ed84b9054d9c7cf
+description: Gibt ein Argument an, das die aufrufende Zelle an eine benutzerdefinierte Funktion übergeben kann, sowie den Standardwert, der von der benutzerdefinierten Funktion zurückgegeben wird, wenn die aufrufende Zelle keinen Wert für das Argument übergibt. Gibt den durch die aufrufende Zelle und den entsprechenden argName-Parameter angegebenen Wert zurück.
+ms.openlocfilehash: df1e3106eb624064be48bed76201dae6fe40e3cf
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48293485"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59628857"
 ---
 # <a name="arg-function"></a>ARG Function
 
-Gibt ein Argument an, das die aufrufende Zelle an eine benutzerdefinierte Funktion übergeben kann, sowie den von der benutzerdefinierten Funktion zurückgegebenen Standardwert, wenn die aufrufende Zelle keinen Wert für das Argument übergibt. Gibt den durch die aufrufende Zelle und den übereinstimmenden argName-Parameter angegebenen Wert zurück.
+Gibt ein Argument an, das die aufrufende Zelle an eine benutzerdefinierte Funktion übergeben kann, sowie den Standardwert, der von der benutzerdefinierten Funktion zurückgegeben wird, wenn die aufrufende Zelle keinen Wert für das Argument übergibt. Gibt den durch die aufrufende Zelle und den entsprechenden argName-Parameter angegebenen Wert zurück.
   
 ## <a name="syntax"></a>Syntax
 
-ARG(***argName***,[ ***defaultValue*** ]) 
+ARG(***argName** _,[ _ *_defaultValue_** ]) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _argName_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Name eines Arguments, das die aufrufende Zelle an die Funktion übergeben kann.  <br/> |
-| _Standardwert_ <br/> |Optional.  <br/> |**Numeric** <br/> |Der von ARG zurückgegebene Wert, wenn die aufrufende Zelle keinen Wert für den  _argName-Parameter übergeben_ hat.  <br/> |
+| _Standardwert_ <br/> |Optional  <br/> |**Numeric** <br/> |Der von ARG zurückgegebene Wert, wenn die aufrufende Zelle keinen Wert für den  _argName-Parameter_ übergeben hat.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Als Entwickler von Shapes können Sie benutzerdefinierte Funktionen erstellen, indem Sie einen Ausdruck in eine Zelle einfügen und diesen Ausdruck von anderen Zellen aus aufrufen. Der Ausdruck kann literale Zeichenfolgen, ShapeSheet-Funktionen und Zellbezüge enthalten. Außerdem kann der Ausdruck bestimmte Argumente enthalten, die von der aufrufenden Zelle übergeben werden. 
   

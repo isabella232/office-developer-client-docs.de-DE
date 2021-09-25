@@ -6,29 +6,29 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm90
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 59d92820-3ff6-a73d-ffb7-d33096e904f7
-description: Stellt die x-Koordinate des Anfangspunkts der 1D-Form im Verhältnis zum Ursprung des übergeordneten Shapes dar.
-ms.openlocfilehash: 34c1ef1b2500c78791fb4822851eb6d485d77f81
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Stellt die X-Koordinate des Anfangspunkts des 1D-Shapes im Verhältnis zum Ursprung des übergeordneten Shapes dar.
+ms.openlocfilehash: fcde79389cd86ed6853881790fb2b6764dd59a4f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407599"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59628829"
 ---
 # <a name="beginx-cell-1-d-endpoints-section"></a>Zelle "BeginX" (Abschnitt "1-D Endpoints")
 
-Stellt  die x-Koordinate des Anfangspunkts der 1D-Form im Verhältnis zum Ursprung des übergeordneten Shapes dar. 
+Stellt  die X-Koordinate des Anfangspunkts des 1D-Shapes im Verhältnis zum Ursprung des übergeordneten Shapes dar. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Um einen Verweis auf die Zelle BeginX anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Verwenden Sie Folgendes, um einen Verweis auf die Zelle BeginX anhand des Namens einer anderen Formel oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | BeginX  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die BeginX-Zelle nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle BeginX anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

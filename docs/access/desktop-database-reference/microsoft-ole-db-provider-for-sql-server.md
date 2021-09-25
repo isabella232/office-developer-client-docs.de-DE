@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248868(v=office.15)
 ms:contentKeyID: 48543282
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: c4faa664ed9001c1c06906f58c7d873faf75a5d0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 1ff202fa68af3bc31df7c5402e61a8b340eb511a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288890"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568817"
 ---
 # <a name="microsoft-ole-db-provider-for-sql-server"></a>Microsoft OLE DB Provider for SQL Server
 
@@ -98,7 +98,7 @@ Der Anbieter unterstützt neben den von ADO definierten verschiedene anbieterspe
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Trusted_Connection</p></td>
+<td><p>Trusted_connection</p></td>
 <td><p>Gibt den Benutzerauthentifizierungsmodus an. Dieser kann auf <strong>Yes</strong> oder <strong>No</strong> gesetzt werden. Der Standardwert ist <strong>No</strong>. Wenn diese Eigenschaft auf <strong>Yes</strong> gesetzt ist, verwendet SQLOLEDB den Microsoft Windows NT-Authentifizierungsmodus, um den Benutzerzugriff auf die in den Eigenschaftswerten <strong>Location</strong> und <a href="datasource-property-ado.md">Datasource</a> angegebene SQL Server-Datenbank zu autorisieren. Wenn diese Eigenschaft auf <strong>No</strong> gesetzt ist, verwendet SQLOLEDB den gemischten Modus, um den Benutzerzugriff auf die SQL Server-Datenbank zu autorisieren. Der Anmeldename und das Kennwort für SQL Server sind in den Eigenschaften <strong>User Id</strong> und <strong>Password</strong> angegeben.</p></td>
 </tr>
 <tr class="even">
@@ -111,7 +111,7 @@ Der Anbieter unterstützt neben den von ADO definierten verschiedene anbieterspe
 </tr>
 <tr class="even">
 <td><p>Network Library</p></td>
-<td><p>Gibt den Namen der Netzwerkbibliothek (Dynamic Link Libraries) an, die für die Kommunikation mit dem Computer mit SQL Server verwendet wird. Der Name darf weder den Pfad noch die Dateinamenerweiterung (DLL) enthalten. Der Standardwert wird von der SQL Server-Clientkonfiguration bereitgestellt.</p></td>
+<td><p>Gibt den Namen der Netzwerkbibliothek (Dynamic Link Libraries) an, die für die Kommunikation mit dem Computer mit SQL Server verwendet wird. Der Name darf weder den Pfad noch die Dateinamenerweiterung (DLL) enthalten. Der Standardwert wird von der SQL Server Clientkonfiguration bereitgestellt.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Use Procedure for Prepare</p></td>
@@ -514,15 +514,15 @@ Die folgenden Eigenschaften werden der **Properties**-Auflistung des **Recordset
 <td><p>DBPROP_IAccessor</p></td>
 </tr>
 <tr class="even">
-<td><p>IColumnsInfo</p></td>
+<td><p>Icolumnsinfo</p></td>
 <td><p>DBPROP_IColumnsInfo</p></td>
 </tr>
 <tr class="odd">
-<td><p>IColumnsRowset</p></td>
+<td><p>Icolumnsrowset</p></td>
 <td><p>DBPROP_IColumnsRowset</p></td>
 </tr>
 <tr class="even">
-<td><p>IConnectionPointContainer</p></td>
+<td><p>Iconnectionpointcontainer</p></td>
 <td><p>DBPROP_IConnectionPointContainer</p></td>
 </tr>
 <tr class="odd">
@@ -538,19 +538,19 @@ Die folgenden Eigenschaften werden der **Properties**-Auflistung des **Recordset
 <td><p>DBPROP_IRowset</p></td>
 </tr>
 <tr class="even">
-<td><p>IRowsetChange</p></td>
-<td><p>DBPROP_IRowsetChange</p></td>
+<td><p>Irowsetchange</p></td>
+<td><p>Dbprop_irowsetchange</p></td>
 </tr>
 <tr class="odd">
 <td><p>IRowsetIdentity</p></td>
 <td><p>DBPROP_IRowsetIdentity</p></td>
 </tr>
 <tr class="even">
-<td><p>IRowsetInfo</p></td>
+<td><p>Irowsetinfo</p></td>
 <td><p>DBPROP_IRowsetInfo</p></td>
 </tr>
 <tr class="odd">
-<td><p>IRowsetLocate</p></td>
+<td><p>Irowsetlocate</p></td>
 <td><p>DBPROP_IRowsestLocate</p></td>
 </tr>
 <tr class="even">
@@ -566,11 +566,11 @@ Die folgenden Eigenschaften werden der **Properties**-Auflistung des **Recordset
 <td><p>DBPROP_IRowsetUpdate</p></td>
 </tr>
 <tr class="odd">
-<td><p>ISequentialStream</p></td>
+<td><p>Isequentialstream</p></td>
 <td><p>DBPROP_ISequentialStream</p></td>
 </tr>
 <tr class="even">
-<td><p>ISupportErrorInfo</p></td>
+<td><p>Isupporterrorinfo</p></td>
 <td><p>DBPROP_ISupportErrorInfo</p></td>
 </tr>
 <tr class="odd">
@@ -810,15 +810,15 @@ Die folgenden Eigenschaften werden der **Properties**-Auflistung des **Command**
 <td><p>DBPROP_IAccessor</p></td>
 </tr>
 <tr class="odd">
-<td><p>IColumnsInfo</p></td>
+<td><p>Icolumnsinfo</p></td>
 <td><p>DBPROP_IColumnsInfo</p></td>
 </tr>
 <tr class="even">
-<td><p>IColumnsRowset</p></td>
+<td><p>Icolumnsrowset</p></td>
 <td><p>DBPROP_IColumnsRowset</p></td>
 </tr>
 <tr class="odd">
-<td><p>IConnectionPointContainer</p></td>
+<td><p>Iconnectionpointcontainer</p></td>
 <td><p>DBPROP_IConnectionPointContainer</p></td>
 </tr>
 <tr class="even">
@@ -834,19 +834,19 @@ Die folgenden Eigenschaften werden der **Properties**-Auflistung des **Command**
 <td><p>DBPROP_IRowset</p></td>
 </tr>
 <tr class="odd">
-<td><p>IRowsetChange</p></td>
-<td><p>DBPROP_IRowsetChange</p></td>
+<td><p>Irowsetchange</p></td>
+<td><p>Dbprop_irowsetchange</p></td>
 </tr>
 <tr class="even">
 <td><p>IRowsetIdentity</p></td>
 <td><p>DBPROP_IRowsetIdentity</p></td>
 </tr>
 <tr class="odd">
-<td><p>IRowsetInfo</p></td>
+<td><p>Irowsetinfo</p></td>
 <td><p>DBPROP_IRowsetInfo</p></td>
 </tr>
 <tr class="even">
-<td><p>IRowsetLocate</p></td>
+<td><p>Irowsetlocate</p></td>
 <td><p>DBPROP_IRowsetLocate</p></td>
 </tr>
 <tr class="odd">
@@ -862,11 +862,11 @@ Die folgenden Eigenschaften werden der **Properties**-Auflistung des **Command**
 <td><p>DBPROP_IRowsetUpdate</p></td>
 </tr>
 <tr class="even">
-<td><p>ISequentialStream</p></td>
+<td><p>Isequentialstream</p></td>
 <td><p>DBPROP_ISequentialStream</p></td>
 </tr>
 <tr class="odd">
-<td><p>ISupportErrorInfo</p></td>
+<td><p>Isupporterrorinfo</p></td>
 <td><p>DBPROP_ISupportErrorInfo</p></td>
 </tr>
 <tr class="even">

@@ -4,23 +4,23 @@ manager: soliver
 ms.date: 09/23/2016
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: dfb3bca5-5f51-9868-e4f6-e4a94006585d
-description: Dieses Element ist ein Platzhalter und wird nicht unterstützt.
-ms.openlocfilehash: ef07ea8d01c34fe9c1454cee3baa4dbb7d5adc71
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Dieser Member ist ein Platzhalter und wird nicht unterstützt.
+ms.openlocfilehash: 6e7e91b7bc3a376179c73e9175e817d38246bf9e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33422922"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59567970"
 ---
 # <a name="ifreebusysupportplaceholder1"></a>IFreeBusySupport::Placeholder1
 
-Dieses Element ist ein Platzhalter und wird nicht unterstützt.
+Dieser Member ist ein Platzhalter und wird nicht unterstützt.
   
 ## <a name="quick-info"></a>QuickInfo
 
-Weitere [Informationen finden Sie unter IFreeBusySupport](ifreebusysupport.md).
+Siehe [IFreeBusySupport](ifreebusysupport.md).
   
 ```cpp
 HRESULT Placeholder1( 

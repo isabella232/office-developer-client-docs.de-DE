@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff820932(v=office.15)
 ms:contentKeyID: 48546744
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: e26bc59221b4ff55c943b6a9a0c87ac5c0dd936b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 706f846b2f1e2aa173a059ffa0431e0392fb6eb8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301190"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568642"
 ---
 # <a name="property-object-dao"></a>Property-Objekt (DAO)
 
@@ -20,7 +20,7 @@ ms.locfileid: "32301190"
 
 Ein **Property**-Objekt stellt eine integrierte oder benutzerdefinierte Eigenschaft eines DAO-Objekts dar.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Alle DAO-Objekte, außer den Objekten **Connection** und **Error**, enthalten eine **Properties**-Auflistung mit **Property**-Objekten, die den integrierten Eigenschaften dieses DAO-Objekts entsprechen. Der Benutzer kann außerdem **Property**-Objekte definieren und sie der **Properties**-Auflistung eines DAO-Objekts anfügen. Diese **Property**-Objekte (die häufig lediglich "Eigenschaften" genannt werden) kennzeichnen die betreffende Objektinstanz eindeutig.
 
@@ -51,18 +51,18 @@ Das **Property**-Objekt besitzt auch vier integrierte Eigenschaften:
 
 Wenn Sie auf ein integriertes **Property**-Objekt in einer Auflistung mit seiner Ordnungszahl oder mit der Einstellung seiner **Name**-Eigenschaft verweisen möchten, verwenden Sie eine der folgenden Syntaxformen:
 
-- * Object ***. Eigenschaften**(0)
+- *object***. Eigenschaften**(0)
 
-- *Objekt ***. Properties**("* Name *")
+- *object***. Eigenschaften**("* Name*")
 
-- *Objekt ***. **Eigenschaften\!* Name *\]
+- *object***. Eigenschaftenname*** \! \[*\]
 
 Bei einer integrierten Eigenschaft können Sie auch diese Syntax verwenden:
 
-- - *Objekt*. *Name*
+- *objekt*. *Name*
 
 > [!NOTE]
-> Für eine benutzerdefinierte Eigenschaft müssen Sie das vollständige *Objekt * verwenden **. Eigenschaften**("* Name *")-Syntax.
+> Für eine benutzerdefinierte Eigenschaft müssen Sie das vollständige *Objekt***verwenden. Eigenschaften**("* Name*") Syntax.
 
 Sie können mit denselben Syntaxformen auf die **Value**-Eigenschaft eines **Property**-Objekts verweisen. Der Kontext des Verweises entscheidet, ob Sie sich auf das **Property**-Objekt selbst oder auf die **Value**-Eigenschaft des **Property**-Objekts beziehen.
 

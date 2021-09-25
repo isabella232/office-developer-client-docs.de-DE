@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagAttachLongPathname
 api_type:
 - HeaderDef
 ms.assetid: 3262cf95-48b5-4764-a96e-d752ce35b2dc
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: d8fe8525cf4fc11ac17ed6d73fb5d97e4f2d003e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 7183b878646a4f7171de71b042305ede8d90dab6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339368"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59609943"
 ---
 # <a name="pidtagattachlongpathname-canonical-property"></a>PidTagAttachLongPathname (kanonische Eigenschaft)
 
@@ -34,17 +34,17 @@ Enthält den vollqualifizierten langen Pfad und Dateinamen einer Anlage.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaften sind anwendbar, wenn Sie die Werte der **PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md))-Eigenschaft verwenden, die eine Anlage durch Verweis angeben: **ATTACH_BY_REFERENCE**, **ATTACH_BY_REF_RESOLVE** oder **ATTACH_BY_REF_ONLY**. Plattformen, die lange Dateinamen unterstützen, sollten beim Senden sowohl  **PR_ATTACH_LONG_PATHNAME-** als auch zugeordnete Eigenschaften und **PR_ATTACH_PATHNAME** -[PidTagAttachPathname](pidtagattachpathname-canonical-property.md)-Eigenschaften festlegen und beim Empfang zuerst PR_ATTACH_LONG_PATHNAME oder zugeordnete Eigenschaften überprüfen. 
+Diese Eigenschaften sind anwendbar, wenn Sie einen der Werte der **PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md)) -Eigenschaft verwenden, die anlagenweise angeben: **ATTACH_BY_REFERENCE**, **ATTACH_BY_REF_RESOLVE** oder **ATTACH_BY_REF_ONLY**. Plattformen, die lange Dateinamen unterstützen, sollten beim Senden sowohl **PR_ATTACH_LONG_PATHNAME-** als auch die zugehörigen Eigenschaften und **PR_ATTACH_PATHNAME** ([PidTagAttachPathname](pidtagattachpathname-canonical-property.md))-Eigenschaften festlegen und beim Empfang zuerst **PR_ATTACH_LONG_PATHNAME** oder zugeordnete Eigenschaften überprüfen. 
   
-Die Clientanwendung sollte diese Eigenschaften auf einen vorgeschlagenen langen Pfad und Dateinamen festlegen, der verwendet werden soll, wenn der Hostcomputer, der eine Nachricht empfängt, lange Dateinamen unterstützt. Das Festlegen dieser Eigenschaften gibt an, dass die Anlagendaten nicht in der Nachricht enthalten sind, aber auf einem gemeinsamen Dateiserver verfügbar sind. 
+Die Clientanwendung sollte diese Eigenschaften auf einen vorgeschlagenen langen Pfad und Dateinamen festlegen, der verwendet werden soll, wenn der Hostcomputer, der eine Nachricht empfängt, lange Dateinamen unterstützt. Das Festlegen dieser Eigenschaften weist darauf hin, dass die Anlagendaten nicht in der Nachricht enthalten sind, aber auf einem gemeinsamen Dateiserver verfügbar sind. 
   
-Im Gegensatz zu den von **PR_ATTACH_PATHNAME** bereitgestellten Verzeichnissen und Dateinamen sind diese Verzeichnisse und Dateinamen nicht auf ein Acht-Zeichen-Verzeichnis oder Dateinamen plus erweiterung mit drei Zeichen beschränkt. Stattdessen kann jedes Verzeichnis oder jeder Dateiname bis zu 256 Zeichen lang sein, einschließlich Name, Erweiterung und Trennzeitraum. Der Allgemeine Pfad ist jedoch auf 256 Zeichen beschränkt. 
+Im Gegensatz zu den von **PR_ATTACH_PATHNAME** bereitgestellten Verzeichnissen und Dateinamen sind diese Verzeichnisse und Dateinamen nicht auf ein 8-Zeichen-Verzeichnis oder einen Dateinamen sowie eine dreistellige Erweiterung beschränkt. Stattdessen kann jedes Verzeichnis oder jeder Dateiname bis zu 256 Zeichen lang sein, einschließlich Name, Erweiterung und Trennzeichen. Der Gesamtpfad ist jedoch auf 256 Zeichen beschränkt. 
   
-Clients sollten eine universelle Benennungskonvention (Universal Naming Convention, UNC) in den meisten Fällen verwenden, wenn die Datei freigegeben wird, und einen absoluten Pfad verwenden, wenn die Datei lokal ist.
+Clients sollten in den meisten Fällen eine universelle Benennungskonvention (UNIVERSAL Naming Convention, UNC) verwenden, wenn die Datei freigegeben wird, und einen absoluten Pfad verwenden, wenn die Datei lokal ist.
   
-MAPI funktioniert nur mit Pfaden und Dateinamen im ANSI-Zeichensatz. Clientanwendungen, die Pfade und Dateinamen in einem OEM-Zeichensatz verwenden, müssen sie vor dem Aufrufen von MAPI in ANSI konvertieren. 
+MAPI funktioniert nur mit Pfaden und Dateinamen im ANSI-Zeichensatz. Clientanwendungen, die Pfade und Dateinamen in einem OEM-Zeichensatz verwenden, müssen sie vor dem Aufrufen der MAPI in ANSI konvertieren. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -56,17 +56,17 @@ MAPI funktioniert nur mit Pfaden und Dateinamen im ANSI-Zeichensatz. Clientanwen
     
 [[MS-OXORMMS]](https://msdn.microsoft.com/library/a121dda4-48f3-41f8-b12f-170f533038bb%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften von mit Rechten verwalteten codierten Nachrichten an.
+> Gibt die Eigenschaften von nachrichten mit verwalteten Rechten an.
     
 ### <a name="header-files"></a>Headerdateien
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -74,9 +74,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

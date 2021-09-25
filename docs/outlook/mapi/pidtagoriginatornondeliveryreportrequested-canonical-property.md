@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagOriginatorNonDeliveryReportRequested
 api_type:
 - COM
 ms.assetid: 0a19ba44-abb0-4868-9d7d-75184058d4c0
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 227ceb468c54cea98519057b2f837a4aee84820c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: e303e9c887779e2da98209ee6fe021a2f0730a49
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341958"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59619812"
 ---
 # <a name="pidtagoriginatornondeliveryreportrequested-canonical-property"></a>PidTagOriginatorNonDeliveryReportRequested (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32341958"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält TRUE, wenn ein Nachrichtensender einen Unauslöschungsbericht für einen bestimmten Empfänger anfordert.
+Enthält TRUE, wenn ein Absender einer Nachricht einen Nicht-Absenderbericht für einen bestimmten Empfänger anfordert.
   
 |||
 |:-----|:-----|
@@ -34,9 +34,9 @@ Enthält TRUE, wenn ein Nachrichtensender einen Unauslöschungsbericht für eine
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MIME  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft wird verwendet, um das Messagingsystem bei der Verarbeitung nicht zugestellter Nachrichten anzufeinen. In diesem Fall muss die Nachricht auch die **eigenschaft PR_ORIGINATOR_DELIVERY_REPORT_REQUESTED** ([PidTagOriginatorDeliveryReportRequested](pidtagoriginatordeliveryreportrequested-canonical-property.md)) auf FALSE festlegen.
+Diese Eigenschaft wird verwendet, um das Messagingsystem bei der Verarbeitung nicht zugestellter Nachrichten zu leiten. In diesem Fall muss die Nachricht auch die **eigenschaft PR_ORIGINATOR_DELIVERY_REPORT_REQUESTED** ([PidTagOriginatorDeliveryReportRequested](pidtagoriginatordeliveryreportrequested-canonical-property.md)) auf FALSE festlegen.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -50,11 +50,11 @@ Diese Eigenschaft wird verwendet, um das Messagingsystem bei der Verarbeitung ni
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -62,9 +62,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 
