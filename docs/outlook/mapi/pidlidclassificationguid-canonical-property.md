@@ -1,43 +1,43 @@
 ---
-title: PidLidClassificationGuid (kanonische Eigenschaft)
+title: Kanonische PidLidClassificationGuid-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidClassificationGuid
 api_type:
 - COM
 ms.assetid: e95c2445-7711-4683-8c39-3979b64fe100
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 08b1d012c4e2b545d1477abebc8090607b6a3225
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 6e1b3b9c1ecc863ecd5bac361bc05e03927b7f5f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345094"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59575225"
 ---
-# <a name="pidlidclassificationguid-canonical-property"></a>PidLidClassificationGuid (kanonische Eigenschaft)
+# <a name="pidlidclassificationguid-canonical-property"></a>Kanonische PidLidClassificationGuid-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt eine guiD (Globally Unique Identifier) einer vorhandenen Nachrichtenklassifikation an.
+Gibt einen GUID (Globally Unique Identifier) einer vorhandenen Nachrichtenklassifizierung an.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidClassGuid  <br/> |
 |Eigenschaftensatz:  <br/> |PSETID_Common  <br/> |
-|Lange ID (LID):  <br/> |0x000085B8  <br/> |
+|Long ID (LID):  <br/> |0x000085B8  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeines Messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Weitere Informationen finden Sie unter [How to Deploy Message Classification for Outlook 2007](https://msdn.microsoft.com/library/5a220424-edd5-4a21-b7fd-8106c23c3b39.aspx)
+Weitere Informationen finden Sie unter ["Bereitstellen der Nachrichtenklassifizierung für Outlook 2007"](https://msdn.microsoft.com/library/5a220424-edd5-4a21-b7fd-8106c23c3b39.aspx)
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -45,7 +45,7 @@ Weitere Informationen finden Sie unter [How to Deploy Message Classification for
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Stellt Eigenschaftensatzdefinitionen und Verweise auf verwandte Exchange Server zur Verfügung.
+> Stellt Die Definition von Eigenschaftengruppen und Verweise auf verwandte Exchange Server Protokollspezifikationen bereit.
     
 [[MS-OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
@@ -55,7 +55,7 @@ Weitere Informationen finden Sie unter [How to Deploy Message Classification for
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -63,9 +63,9 @@ Mapidefs.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

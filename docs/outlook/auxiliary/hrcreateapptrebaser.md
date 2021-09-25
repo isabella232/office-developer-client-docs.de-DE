@@ -4,19 +4,19 @@ manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 265028b7-a583-f6ba-0214-5a4322f98f35
-description: Initialisiert ein IOlkApptRebaser-Objekt zur Verwendung beim Neubasieren von Terminen in Outlook Kalendern.
-ms.openlocfilehash: 33ad47d59ee2ca1b2461f730494f3466b9f8b54a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: Initialisiert ein IOlkApptRebaser-Objekt für die Verwendung beim Neubasieren von Terminen in Outlook Kalendern.
+ms.openlocfilehash: 8c9b8e2081904f9e37916a13b904d1595fc108a1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317612"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59592781"
 ---
 # <a name="hrcreateapptrebaser"></a>HrCreateApptRebaser
 
-Initialisiert ein [IOlkApptRebaser-Objekt](iolkapptrebaser.md) zur Verwendung beim Neubasieren von Terminen in Outlook Kalendern. 
+Initialisiert ein [IOlkApptRebaser-Objekt](iolkapptrebaser.md) für die Verwendung beim Neubasieren von Terminen in Outlook Kalendern. 
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -48,29 +48,29 @@ HRESULT HrCreateApptRebaser(
 
 _ulFlags_
   
-> [in] Erforderlich. Eine Bitmaske mit Flags, die zum Steuern der Neubasierung verwendet wird. Die folgenden Flags können festgelegt werden und sind in tzmovelib.h definiert:
+> [in] Erforderlich. Eine Bitmaske mit Flags, die zum Steuern der Neubasierung verwendet wird. Die folgenden Flags können festgelegt und in tzmovelib.h definiert werden:
     
-   - **REBASE_FLAG_UPDATE_ORGANIZED_MEETINGS** – Terminelemente, bei denen der Benutzer der Besprechungsorganisator ist, werden neu basisiert. Beachten Sie, dass dies standardmäßig dazu führt, Outlook Besprechungsupdates an alle Teilnehmer einer besprechungsbasierten Besprechung senden. Sie können dieses Flag mit REBASE_FLAG_FORCE_NO_EX_UPDATES **oder** REBASE_FLAG_FORCE_NO_UPDATES, um die Art und **Weise** zu ändern, wie Besprechungsupdates behandelt werden. 
+   - **REBASE_FLAG_UPDATE_ORGANIZED_MEETINGS** : Terminelemente, in denen der Benutzer der Besprechungsorganisator ist, werden neubasiert. Beachten Sie, dass dies standardmäßig dazu führt, dass Outlook Besprechungsupdates an alle Teilnehmer einer Besprechung senden, die neu basiert. Sie können dieses Flag mit **REBASE_FLAG_FORCE_NO_EX_UPDATES** oder **REBASE_FLAG_FORCE_NO_UPDATES** kombinieren, um die Behandlung von Besprechungsupdates zu ändern. 
     
-   - **REBASE_FLAG_UPDATE_UNMARKED** –Terminelemente aktualisieren, die nicht mit einer Zeitzone markiert wurden. Wenn dieses Flag angegeben wird, wird der  *pTZMissing-Wert*  als Zeitzone verwendet, in der ein Element für alle Elemente erstellt wird, die keine Zeitzonendaten enthalten. 
+   - **REBASE_FLAG_UPDATE_UNMARKED** : Terminelemente aktualisieren, die nicht mit einer Zeitzone markiert wurden. Wenn dieses Kennzeichen angegeben ist, wird der  *pTZMissing-Wert*  als Zeitzone verwendet, in der ein Element für alle Elemente erstellt wird, die keine Zeitzonendaten haben. 
     
-   - **REBASE_FLAG_UPDATE_ONLYRECURRING** – Nur Terminserienelemente aktualisieren. 
+   - **REBASE_FLAG_UPDATE_ONLYRECURRING** : Aktualisieren Sie nur Terminserienelemente. 
     
-   - **REBASE_FLAG_NO_UI** – Keine Benutzeroberfläche anzeigen, einschließlich Anmeldedialogfeldern, die beim Öffnen eines Nachrichtenspeichers in der Regel angezeigt werden. 
+   - **REBASE_FLAG_NO_UI** : Zeigen Sie keine Benutzeroberfläche an, einschließlich der Anmeldedialogfelder, die beim Öffnen eines Nachrichtenspeichers in der Regel angezeigt werden. 
     
-   - **REBASE_FLAG_UPDATE_MINIMIZEAPPTS** – In der Vergangenheit vorkommende Terminelemente dürfen nicht neu basierten werden. 
+   - **REBASE_FLAG_UPDATE_MINIMIZEAPPTS** : Erstellen Sie keine Neubasis für Terminelemente, die in der Vergangenheit aufgetreten sind. 
     
-   - **REBASE_FLAG_FORCE_REBASE** – Überprüfen Sie den Organisator nicht auf die Neubasierung von Entscheidungen, sondern erstellen Sie terminbezogene Elemente, bei denen der Benutzer ein Teilnehmer ist, neu. 
+   - **REBASE_FLAG_FORCE_REBASE** : Überprüfen Sie den Organisator nicht auf Neubasierungsentscheidungen, sondern überprüfen Sie terminbezogene Elemente, an denen der Benutzer teilnehmerbasiert ist. 
     
-   - **REBASE_FLAG_FORCE_NO_EX_UPDATES** – Aktualisierungen nur senden, wenn der Benutzer der Organisator ist und der Empfänger nicht mit einer Exchange Server. 
+   - **REBASE_FLAG_FORCE_NO_EX_UPDATES** : Senden von Updates nur, wenn der Benutzer der Organisator ist und der Empfänger nicht mit einem Exchange Server verbunden ist. 
     
-   - **REBASE_FLAG_FORCE_NO_UPDATES** – Niemals Updates senden. 
+   - **REBASE_FLAG_FORCE_NO_UPDATES** : Updates niemals senden. 
     
-   - **REBASE_FLAG_ONLY_CREATED_PRE_PATCH** – Basierten Sie nur Terminelemente mit einer Instanz neu, die vor dem Anwenden des Patches erstellt wurden. 
+   - **REBASE_FLAG_ONLY_CREATED_PRE_PATCH** : Erstellen Sie nur Terminelemente mit einer Instanz, die erstellt wurden, bevor der Patch angewendet wurde, neu. 
     
-   - **REBASE_FLAG_REPORTING_MODE** – Erstellen Sie keine rebase, sondern melden Sie lediglich Terminelemente, die neubasiert würden. 
+   - **REBASE_FLAG_REPORTING_MODE** : Erstellen Sie keine rebase, melden Sie nur Terminelemente, die neu basieren würden. 
     
-   - **REBASE_FLAG_SEND_RESOURCE_UPDATES** – Senden von Besprechungsupdates an Ressourcen. 
+   - **REBASE_FLAG_SEND_RESOURCE_UPDATES** : Senden von Besprechungsupdates an Ressourcen. 
     
 _pSession_
   
@@ -78,31 +78,31 @@ _pSession_
     
 _pCalendarMsgStore_
   
-> [in] Erforderlich. Ein Zeiger auf einen Nachrichtenspeicher, der neu zu erstellende Terminelemente enthält.
+> [in] Erforderlich. Ein Zeiger auf einen Nachrichtenspeicher mit Terminelementen, die neubasiert werden sollen.
     
 _pCalendarFolder_
   
-> [in] Erforderlich. Ein Zeiger auf einen Kalenderordner, der neu zu erstellende Terminelemente enthält.
+> [in] Erforderlich. Ein Zeiger auf einen Kalenderordner mit Terminelementen, die neu erstellt werden sollen.
     
 _pwszUpdatePrefix_
   
-> [in] Optional. Ein Zeiger auf eine Zeichenfolge, die das Präfix enthält, das für Besprechungsanfragen vorangestellt werden soll. Kann NULL sein.
+> [in] Optional. Ein Zeiger auf eine Zeichenfolge, die das Präfix enthält, das bei Besprechungsanfragen vorangestellt werden soll. Kann NULL sein.
     
 _pftInstallDateUTC_
   
-> [in] Optional. Das Installationsdatum des Zeitzonenpatches. Wird nur verwendet, **wenn REBASE_FLAG_ONLY_CREATED_PRE_PATCH** festgelegt ist. 
+> [in] Optional. Das Installationsdatum des Zeitzonenpatches. Wird nur verwendet, wenn das **REBASE_FLAG_ONLY_CREATED_PRE_PATCH-Flag** festgelegt ist. 
     
 _IExpansionDepth_
   
-> [in] Optional. Die Erweiterungstiefe beim Erweitern von Verteilerlisten, um Empfänger auszuschließen, die mit Exchange Server. Wird nur verwendet, **wenn REBASE_FLAG_FORCE_NO_EX_UPDATES** festgelegt ist. 
+> [in] Optional. Die Erweiterungstiefe beim Erweitern von Verteilerlisten, um Empfänger auszuschließen, die mit Exchange Server verbunden sind. Wird nur verwendet, wenn das **REBASE_FLAG_FORCE_NO_EX_UPDATES-Flag** festgelegt ist. 
     
 _pTZTo_
   
-> [in] Erforderlich. Ein Zeiger auf eine **TZDEFINITION-Struktur,** in der die Zeitzone beschrieben wird, in der eine erneute Datenbank verwendet werden soll. **TZDEFINITION** ist in tzmovelib definiert. 
+> [in] Erforderlich. Ein Zeiger auf eine **TZDEFINITION-Struktur,** die die Zeitzone beschreibt, auf die neu basiert werden soll. **TZDEFINITION** ist in tzmovelib definiert. 
     
 pTZMissing
   
-> [in] Erforderlich. Ein Zeiger auf eine **TZDEFINITION-Struktur,** die die anzunehmende Zeitzone beschreibt, wenn Zeitzoneninformationen nicht für ein Element gestempelt werden. Darf nicht NULL sein, sondern nur verwendet werden, wenn **das REBASE_FLAG_UPDATE_UNMARKED** festgelegt ist. 
+> [in] Erforderlich. Ein Zeiger auf eine **TZDEFINITION-Struktur,** die die Zeitzone beschreibt, die angenommen werden soll, wenn Zeitzoneninformationen für ein Element nicht gestempelt werden. Darf nicht NULL sein, sondern nur verwendet werden, wenn das **REBASE_FLAG_UPDATE_UNMARKED-Flag** festgelegt ist. 
     
 _ppError_
   
@@ -110,17 +110,17 @@ _ppError_
     
 _ppApptRebase_
   
-> [out] Ein Zeiger auf einen Zeiger auf die **zurückgegebene IOlkApptRebaser-Schnittstelle.** 
+> [out] Ein Zeiger auf einen Zeiger auf die zurückgegebene **IOlkApptRebaser-Schnittstelle.** 
     
 ## <a name="return-values"></a>Rückgabewerte
 
 S_OK zurück, wenn der Aufruf erfolgreich war; andernfalls einen Fehlercode.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Wenn Sie [GetProcAddress](https://msdn.microsoft.com/library/a0d7fc09-f888-4f46-a571-d3719a627597%28Office.15%29.aspx) zum Suchen nach der Adresse dieser Funktion in tzmovelib.dll verwenden, geben Sie HrCreateApptRebaser@44 **Prozedurnamen** an. Nicht alle Flags sind in Kombination miteinander gültig. 
+Wenn [Sie GetProcAddress](https://msdn.microsoft.com/library/a0d7fc09-f888-4f46-a571-d3719a627597%28Office.15%29.aspx) zum Suchen nach der Adresse dieser Funktion in tzmovelib.dll verwenden, geben Sie **HrCreateApptRebaser@44** als Prozedurnamen an. Nicht alle Flags sind in Kombination miteinander gültig. 
   
-Weitere Informationen zu den verschiedenen Optionen finden Sie im Abschnitt "Glossar der Befehlszeilenoptionen für das Outlook Time Zone Data Update Tool" in [KB 931667:](https://support.microsoft.com/kb/931667/en-us)How to address time zone changes by using the Time Zone Data Update Tool for Microsoft Office Outlook .
+Weitere Informationen zu den verschiedenen Optionen finden Sie im Abschnitt "Glossar der Befehlszeilenoptionen für das Tool Outlook Zeitzonen-Datenaktualisierung" in [KB 931667: Behandeln von Zeitzonenänderungen mithilfe des](https://support.microsoft.com/kb/931667/en-us)Tools zur Aktualisierung von Zeitzonen für Microsoft Office Outlook .
   
 ## <a name="see-also"></a>Siehe auch
 

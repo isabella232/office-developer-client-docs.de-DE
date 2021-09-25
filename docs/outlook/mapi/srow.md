@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.SRow
 api_type:
 - COM
 ms.assetid: 369c2d5c-8c2b-4314-9cb2-aaa89580aa2b
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 2e75bc6f8e14258787a6c9d80dfbf6334ec698b4
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c88cb2425e44844de4fc127a1b97ad5dc9ed851a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33410434"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59566493"
 ---
 # <a name="srow"></a>SRow
 
@@ -39,23 +39,23 @@ typedef struct _SRow
 
 ```
 
-## <a name="members"></a>Elemente
+## <a name="members"></a>Members
 
 **ulAdrEntryPad**
   
-> Padding bytes to properly align the property values pointed to the **lpProps** member. 
+> Byte auffüllen, um die Eigenschaftswerte, auf die der **lpProps-Member verweist,** ordnungsgemäß auszurichten. 
     
 **cValues**
   
-> Anzahl der Eigenschaftswerte, auf die **von lpProps verwiesen wird.** 
+> Anzahl der Eigenschaftswerte, auf die von **lpProps** verwiesen wird. 
     
 **lpProps**
   
 > Zeiger auf ein Array von [SPropValue-Strukturen,](spropvalue.md) die die Eigenschaftswerte für die Spalten in der Zeile beschreiben. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Eine **SRow-Struktur** beschreibt eine Zeile in einer Tabelle. Sie ist in der [TABLE_NOTIFICATION](table_notification.md) enthalten, die eine Tabellenbenachrichtigung begleitet. 
+Eine **SRow-Struktur** beschreibt eine Zeile in einer Tabelle. Sie ist in der [TABLE_NOTIFICATION](table_notification.md) Struktur enthalten, die mit einer Tabellenbenachrichtigung verbunden ist. 
   
 **SRow-Strukturen** werden in den folgenden Methoden verwendet: 
   
@@ -77,15 +77,15 @@ Eine **SRow-Struktur** beschreibt eine Zeile in einer Tabelle. Sie ist in der [T
     
 Wenn mehrere Zeilen beschrieben werden müssen, wird eine [SRowSet-Struktur](srowset.md) verwendet. Eine **SRowSet-Struktur** enthält ein Array von **SRow-Strukturen** und eine Anzahl von Strukturen im Array. 
   
-Die folgende Abbildung zeigt die Beziehung zwischen **einem SRow** und einer **SRowSet-Datenstruktur.** 
+Die folgende Abbildung zeigt die Beziehung zwischen einer **SRow-** und einer **SRowSet-Datenstruktur.** 
   
 **Beziehung zwischen SRow und SRowSet**
   
-![Beziehung zwischen SRow und SRowSet Beziehung](media/amapi_17.gif "zwischen SRow und SRowSet")
+![Beziehung zwischen SRow und SRowSet](media/amapi_17.gif "Beziehung zwischen SRow und SRowSet")
   
-**SRow-Strukturen** sind identisch mit [ADRENTRY-Strukturen.](adrentry.md) Daher können eine Zeile einer Empfängertabelle und ein Eintrag in einer Adressliste gleich behandelt werden. 
+**SRow-Strukturen** werden genauso definiert wie [ADRENTRY-Strukturen.](adrentry.md) Daher können eine Zeile einer Empfängertabelle und ein Eintrag in einer Adressliste gleich behandelt werden. 
   
-Informationen dazu, wie der Arbeitsspeicher für **SRow-Strukturen** zugewiesen werden soll, finden Sie unter [Managing Memory for ADRLIST and SRowSet Structures](managing-memory-for-adrlist-and-srowset-structures.md).
+Informationen dazu, wie der Speicher für **SRow-Strukturen** zugewiesen werden soll, finden Sie unter [Managing Memory for ADRLIST and SRowSet Structures](managing-memory-for-adrlist-and-srowset-structures.md).
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -4,15 +4,15 @@ manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7ba98948-b16d-4df5-8d59-7c9e2fdd2367
 description: ''
-ms.openlocfilehash: c820fcb9cfb7327ea2ff55bca31b3c533cdd37d0
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: fb79612dade3da3cbdf54a4d731873c6dcfe34d8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33437665"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593110"
 ---
 # <a name="logical-operators-access-custom-web-app"></a>Logische Operatoren (benutzerdefinierte Access-Web-App)
 
@@ -21,11 +21,11 @@ ms.locfileid: "33437665"
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
-- [AND (Benutzerdefinierte Web-App access)](and-access-custom-web-app.md)
+- [AND (Benutzerdefinierte Access-Web-App)](and-access-custom-web-app.md)
     
-- [NOT (Benutzerdefinierte Web-App zugreifen)](not-access-custom-web-app.md)
+- [NOT (Benutzerdefinierte Access-Web-App)](not-access-custom-web-app.md)
     
-- [OR (Benutzerdefinierte Web-App access)](or-access-custom-web-app.md)
+- [OR (Benutzerdefinierte Access-Web-App)](or-access-custom-web-app.md)
     
 - [IS [NOT] NULL (benutzerdefinierte Access-Web-App)](is-not-null-access-custom-web-app.md)
     

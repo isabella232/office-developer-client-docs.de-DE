@@ -3,17 +3,17 @@ title: Starten einer MAPI-Sitzung
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 7935ebed-f252-482c-ad8c-757aa2d8501d
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: d88ce382b6a6b5f98ec5f88c4deb1565d3b60151
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 765bfef3ab30ec4a534f78cc7175394d96d5163c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32336344"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59566381"
 ---
 # <a name="starting-a-mapi-session"></a>Starten einer MAPI-Sitzung
 
@@ -21,17 +21,17 @@ ms.locfileid: "32336344"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Obwohl beim Starten der Sitzung ein erheblicher Arbeitsaufwand ausgeführt wird, sind die erforderlichen Aufgaben minimal. Ein Teil dieser Arbeit wird in der MAPI-Verarbeitung der [MAPIInitialize-](mapiinitialize.md) und [MAPILogonEx-Aufrufe](mapilogonex.md) erledigt. Beide Funktionen akzeptieren Flags als Eingabeparameter für die Steuerung von Aspekten der Sitzung, z. B. der Benachrichtigungsbehandlung und der Benutzeroberfläche. Es ist wichtig, die Folgen des Festlegens dieser Flags beim Aufrufen von **MAPIInitialize** zu verstehen, um die MAPI-Bibliotheken und **MAPILogonEx** für die Anmeldung am MAPI-Subsystem zu initialisieren. 
+Obwohl während des Sitzungsstarts ein erheblicher Aufwand ausgeführt wird, sind die erforderlichen Aufgaben minimal. Ein Großteil dieser Arbeit erfolgt bei der MAPI-Verarbeitung der [MAPIInitialize-](mapiinitialize.md) und [MAPILogonEx-Aufrufe.](mapilogonex.md) Beide Funktionen akzeptieren Flags als Eingabeparameter zum Steuern von Aspekten der Sitzung, z. B. die Behandlung von Benachrichtigungen und die Benutzeroberfläche. Es ist wichtig zu verstehen, welche Auswirkungen das Festlegen dieser Flags beim Aufrufen von **MAPIInitialize** hat, um die MAPI-Bibliotheken und **MAPILogonEx** für die Anmeldung am MAPI-Subsystem zu initialisieren. 
   
  **So starten Sie eine MAPI-Sitzung**
   
-1. Rufen **Sie MAPIInitialize auf,** um den Standardsatz von MAPI-Bibliotheken zu initialisieren. 
+1. Rufen Sie **MAPIInitialize** auf, um den Standardsatz von MAPI-Bibliotheken zu initialisieren. 
     
-2. Wenn Sie die OLE-Bibliotheken verwenden müssen, rufen Sie die OLE-Funktion [OleInitialize auf.](https://msdn.microsoft.com/library/9a13e7a0-f2e2-466b-98f5-38d5972fa391%28Office.15%29.aspx)
+2. Wenn Sie die OLE-Bibliotheken verwenden müssen, rufen Sie die OLE-Funktion [OleInitialize](https://msdn.microsoft.com/library/9a13e7a0-f2e2-466b-98f5-38d5972fa391%28Office.15%29.aspx)auf.
     
-3. Wenn Sie die MAPI-Hilfsbibliothek verwenden müssen, rufen Sie [ScInitMapiUtil auf.](scinitmapiutil.md)
+3. Wenn Sie die MAPI-Hilfsprogrammbibliothek verwenden müssen, rufen Sie [ScInitMapiUtil](scinitmapiutil.md)auf.
     
-4. Rufen **Sie MAPILogonEx mit** einem gültigen Profil auf, um sich beim MAPI-Subsystem zu anmelden. **MAPILogonEx** überprüft die Konfiguration der einzelnen Dienstanbieter in den Nachrichtendiensten, die im Profil enthalten sind, und fordert den Benutzer auf, bei Bedarf und möglich weitere Informationen zu erhalten. Wenn **MAPILogonEx** abgeschlossen ist, sind die konfigurierten Dienstanbieter für den Dienst bereit. 
+4. Rufen Sie **MAPILogonEx** mit einem gültigen Profil auf, um sich beim MAPI-Subsystem anzumelden. **MAPILogonEx** überprüft die Konfiguration der einzelnen Dienstanbieter in den im Profil enthaltenen Nachrichtendiensten und fordert den Benutzer nach Bedarf und nach Möglichkeit auf, zusätzliche Informationen einzufordern. Wenn **MAPILogonEx** abgeschlossen ist, sind die konfigurierten Dienstanbieter bereit für den Dienst. 
     
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
@@ -45,7 +45,7 @@ Obwohl beim Starten der Sitzung ein erheblicher Arbeitsaufwand ausgeführt wird,
     
 [Initialisieren der MAPI-Dienstprogramme](initializing-the-mapi-utilities.md)
   
-> Beschreibt das Initialisieren von MAPI-Dienstprogrammen.
+> Beschreibt, wie MAPI-Dienstprogramme initialisiert werden.
     
 [Anmelden bei MAPI](logging-on-to-mapi.md)
   

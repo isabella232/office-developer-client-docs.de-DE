@@ -6,29 +6,29 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm790
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: dd88fb8d-3ec3-476a-870d-6642b191496f
-description: Stellt die x-Koordinate des Stifts der Form (Drehungsmitte) im Verhältnis zum Ursprung des übergeordneten Shapes dar.
-ms.openlocfilehash: de12b379d5f345209a468298174634ff4f9cd639
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Stellt die X-Koordinate des Drehbezugs (Drehmittelpunkt) des Shapes im Verhältnis zum Ursprung des übergeordneten Elements dar.
+ms.openlocfilehash: 35aa20d4b41d00bfb61a4d437dc0b4b06f5ed005
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404820"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608071"
 ---
 # <a name="pinx-cell-shape-transform-section"></a>Zelle "PinX" (Abschnitt "Shape Transform")
 
-Stellt  die x-Koordinate des Stifts der Form (Drehungsmitte) im Verhältnis zum Ursprung des übergeordneten Shapes dar. 
+Stellt  die X-Koordinate des Drehbezugs (Drehmittelpunkt) des Shapes im Verhältnis zum Ursprung des übergeordneten Elements dar. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Um einen Verweis auf die PinX-Zelle anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Verwenden Sie Folgendes, um einen Verweis auf die Zelle "PinX" anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | PinX  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die PinX-Zelle nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle PinX anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

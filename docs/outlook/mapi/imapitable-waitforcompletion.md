@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPITable.WaitForCompletion
 api_type:
 - COM
 ms.assetid: 7663c640-396e-4720-9345-370d0856bd49
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 778ff8f36478740e5ee23ba439db1e328eca2e06
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 6b726bbf32e6c97566471a6ae6be4c33aa7e92d9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407060"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59575736"
 ---
 # <a name="imapitablewaitforcompletion"></a>IMAPITable::WaitForCompletion
 
@@ -25,7 +25,7 @@ ms.locfileid: "33407060"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die Verarbeitung wird angehalten, bis ein oder mehrere asynchrone Vorgänge in der Tabelle abgeschlossen sind.
+Suspends processing until one or more asynchronous operations in progress on the table have completed.
   
 ```cpp
 HRESULT WaitForCompletion(
@@ -39,15 +39,15 @@ ULONG FAR * lpulTableStatus
 
  _ulFlags_
   
-> Reserviert; muss null sein.
+> Reserviert; muss Null sein.
     
  _ulTimeout_
   
-> [in] Maximale Anzahl von Millisekunden, bis der asynchrone Vorgang abgeschlossen ist. Legen Sie  _ulTimeout_ auf 0xFFFFFFFF. 
+> [in] Maximale Anzahl von Millisekunden, um auf den Abschluss des asynchronen Vorgangs oder der Vorgänge zu warten. Um unbegrenzt zu warten, bis der Abschluss erfolgt, legen Sie  _ulTimeout_ auf 0xFFFFFFFF fest. 
     
  _lpulTableStatus_
   
-> [in, out] Bei der Eingabe entweder ein gültiger Zeiger oder NULL. Wenn  _lpulTableStatus_ bei der Ausgabe ein gültiger Zeiger ist, zeigt er auf den neuesten Status der Tabelle. Wenn  _lpulTableStatus_ NULL ist, werden keine Statusinformationen zurückgegeben. Wenn **WaitForCompletion** einen nicht erfolgreichen HRESULT-Wert zurückgibt, ist der Inhalt von  _lpulTableStatus_ nicht definiert. 
+> [in, out] Bei der Eingabe entweder ein gültiger Zeiger oder NULL. Wenn  _lpulTableStatus_ bei der Ausgabe ein gültiger Zeiger ist, verweist er auf den neuesten Status der Tabelle. Wenn  _lpulTableStatus_ NULL ist, werden keine Statusinformationen zurückgegeben. Wenn **WaitForCompletion** einen nicht erfolgreichen HRESULT-Wert zurückgibt, sind die Inhalte von  _lpulTableStatus_ nicht definiert. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -57,15 +57,15 @@ S_OK
     
 MAPI_E_NO_SUPPORT 
   
-> Die Tabelle unterstützt nicht das Warten auf den Abschluss asynchroner Vorgänge.
+> Das Warten auf den Abschluss asynchroner Vorgänge wird in der Tabelle nicht unterstützt.
     
 MAPI_E_TIMEOUT 
   
-> Der asynchrone Vorgang oder die asynchronen Vorgänge wurden zum angegebenen Zeitpunkt nicht abgeschlossen.
+> Der asynchrone Vorgang bzw. die asynchronen Vorgänge wurden in der angegebenen Zeit nicht abgeschlossen.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die **IMAPITable::WaitForCompletion-Methode** setzt die Verarbeitung aus, bis alle derzeit für die Tabelle ausgeführten asynchronen Vorgänge abgeschlossen sind. **WaitForCompletion** kann zulassen, dass die asynchronen Vorgänge entweder vollständig abgeschlossen oder für eine bestimmte Anzahl von Millisekunden ausgeführt werden, wie von  _ulTimeout_ angegeben, bevor sie unterbrochen werden. Rufen Sie die [IMAPITable::GetStatus-Methode](imapitable-getstatus.md) auf, um asynchrone Vorgänge zu erkennen, die ausgeführt werden. 
+Die **IMAPITable::WaitForCompletion-Methode** hält die Verarbeitung an, bis asynchrone Vorgänge abgeschlossen sind, die derzeit für die Tabelle ausgeführt werden. **WaitForCompletion** kann zulassen, dass die asynchronen Vorgänge entweder vollständig abgeschlossen werden oder für eine bestimmte Anzahl von Millisekunden ausgeführt werden, wie durch  _ulTimeout_ angegeben, bevor sie unterbrochen werden. Rufen Sie die [IMAPITable::GetStatus-Methode](imapitable-getstatus.md) auf, um laufende asynchrone Vorgänge zu erkennen. 
   
 ## <a name="see-also"></a>Siehe auch
 

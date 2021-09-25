@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.CbNewSPropAttrArray
 api_type:
 - COM
 ms.assetid: c085e3e4-5d1e-42ab-8c44-2c326c032aea
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 365348a4eb3440d1f284a39cfce019cf4f89f915
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 4717f43153a258072104bed37b7c3b94bbc4bfec
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439121"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59584752"
 ---
 # <a name="cbnewspropattrarray"></a>CbNewSPropAttrArray
 
@@ -40,7 +40,7 @@ CbNewSPropAttrArray (_cattr)
 
  _ _cattr_
   
-> Anzahl der Eigenschaftenattribute, die in die neue **SPropAttrArray-Struktur eingeschlossen werden** sollen. 
+> Anzahl der Eigenschaftsattribute, die in die neue **SPropAttrArray-Struktur** eingeschlossen werden sollen. 
     
 ## <a name="see-also"></a>Siehe auch
 

@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm104968
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 4e44182dd4290b05a2cfc8fabdf9240819f4b7aa
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7a80017a58f0d0e1c1f9e50fbeb751e587822dcd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314476"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601786"
 ---
 # <a name="stopallmacros-macro-action"></a>StopAllMacros-Makroaktion
 
@@ -29,7 +29,7 @@ Verwenden Sie die **StoppAlleMakros**-Aktion, um alle laufenden Makros zu beende
 
 Die **StoppAlleMakros**-Aktion hat keine Argumente.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Normalerweise verwenden Sie diese Aktion, wenn eine Fehlersituation das Beenden aller Makros erfordert. Sie können einen bedingten Ausdruck in der Aktionszeile des Makros verwenden, die diese Aktion enthält. Wenn der Ausdruck als **Wahr** (–1) ausgewertet wird, beendet Microsoft Access alle Makros.
 

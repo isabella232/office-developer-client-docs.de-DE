@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248856(v=office.15)
 ms:contentKeyID: 48543221
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: ddd2ecf0d7d3df6d1caffd906cf318916a2a8882
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: aa5bdd448cc46e2b665c85d8aff9b79d1c5e81e9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293196"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558338"
 ---
 # <a name="fetchoptions-property-rds"></a>FetchOptions-Eigenschaft (RDS)
 
@@ -59,7 +59,7 @@ Legt einen der folgenden Werte fest oder gibt ihn zurück.
 
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-In einer Webanwendung möchten Sie normalerweise **adcFetchAsync** (den Standardwert) verwenden, da dadurch eine bessere Leistung erzielt wird. In einer kompilierten Clientanwendung wird meist **adcFetchBackground** verwendet.
+In einer Webanwendung sollten Sie in der Regel **adcFetchAsync** (Standardwert) verwenden, da es eine bessere Leistung bietet. In einer kompilierten Clientanwendung wird meist **adcFetchBackground** verwendet.
 

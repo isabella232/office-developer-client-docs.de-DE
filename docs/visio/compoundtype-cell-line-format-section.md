@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3e2a88ad-d92c-4550-8da3-fa7fdd032e73
 description: Bestimmt den zusammengesetzten Typ der Linie einer Form.
-ms.openlocfilehash: 120975e419656234266cb8151b2fa37ef19602e5
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c43175bc42e74bc18b8bf643976fdc859e3dbf8b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407172"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608459"
 ---
 # <a name="compoundtype-cell-line-format-section"></a>Zelle "CompoundType" (Abschnitt "Line Format")
 
@@ -26,15 +26,15 @@ Bestimmt den zusammengesetzten Typ der Linie einer Form.
 |3  <br/> |Dünn dick  <br/> |
 |4   <br/> |Triple  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Verwenden Sie zum Erhalten eines Verweises auf die **Zelle CompoundType** anhand des Namens aus einer anderen Formel, nach dem Wert des **N-Attributs** eines **Cell-Elements** oder aus einem Programm mit der **CellsU-Eigenschaft:** 
+Um einen Verweis auf die **Zelle "CompoundType"** anhand des Namens aus einer anderen Formel, anhand des Werts des **N-Attributs** eines **Cell-Elements** oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | CompoundType  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die **Zelle CompoundType** nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die **Zelle CompoundType** anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

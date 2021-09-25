@@ -1,20 +1,20 @@
 ---
-title: Die ADO-Bibliotheks Familie
+title: Die ADO-Bibliotheksfamilie
 TOCTitle: The ADO family of libraries
 ms:assetid: 9e794509-d0a8-2e5b-02a8-65e26f059c4e
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249724(v=office.15)
 ms:contentKeyID: 48546656
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 296e05118054ec045c23cd92a399afdc3cddd9a1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 6d3160a8cc0c21c8aa0a4714d48a5e1d16b62256
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32313972"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593495"
 ---
-# <a name="the-ado-family-of-libraries"></a>Die ADO-Bibliotheks Familie
+# <a name="the-ado-family-of-libraries"></a>Die ADO-Bibliotheksfamilie
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -22,9 +22,9 @@ Die ADO-Familie besteht aus drei Hauptbibliotheken: ADO (einschließlich RDS), A
 
 ## <a name="ado"></a>ADO
 
-Mit ADO können Clientanwendungen über einen OLE DB-Anbieter auf Daten auf einem Datenbankserver zugreifen und diese bearbeiten. Die wichtigsten Vorteile von ADO sind einfache Handhabung, hohe Geschwindigkeit sowie geringer Arbeitsspeicher- und Speicherplatzbedarf. ADO unterstützt die wichtigsten Features für die Erstellung von Client/Server-und webbasierten Anwendungen.
+Mit ADO können Clientanwendungen über einen OLE DB-Anbieter auf Daten auf einem Datenbankserver zugreifen und diese bearbeiten. Die wichtigsten Vorteile von ADO sind einfache Handhabung, hohe Geschwindigkeit sowie geringer Arbeitsspeicher- und Speicherplatzbedarf. ADO unterstützt Schlüsselfeatures für das Erstellen von Client-/Server- und webbasierten Anwendungen.
 
-ADO verfügt außerdem über Remote Data Service (RDS), mit dem Sie Daten von einem Server in eine Clientanwendung oder Webseite verschieben, die Daten auf dem Client bearbeiten und Aktualisierungen an den Server in einem einzelnen Roundtrip zurückgeben können.
+ADO bietet außerdem Remote Data Service (RDS). Hiermit können Sie Daten von einem Server in eine Clientanwendung oder auf eine Website verschieben, die Datei auf dem Client bearbeiten sowie Updates an den Server in einem einzelnen Roundtrip zurückgeben.
 
 ## <a name="ado-md"></a>ADO MD
 

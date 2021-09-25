@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249019(v=office.15)
 ms:contentKeyID: 48543764
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 4aff2c8b3394321367851ad82e4e7efe98badff8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 781019e44248866f6926e58bb3f75e9b044c4e4e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306027"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593306"
 ---
 # <a name="vbscript-ado-programming"></a>VBScript-ADO-Programmierung
 
@@ -25,11 +25,11 @@ Da von Microsoft Visual Basic Scripting Edition keine Typbibliotheken unterstüt
 
 In ADO werden jedoch zwei Includedateien bereitgestellt, die die folgenden Definitionen enthalten, die mit VBScript verwendet werden können:
 
-  - Für die serverseitige Skripterstellung verwenden Sie Datei Adovbs. Inc, die standardmäßig im Ordner\\c:\\Program Files\\Common\\Files\\ System ADO installiert ist.
+  - Verwenden Sie für serverseitiges Skripting Adovbs.inc, das standardmäßig im Ordner "c: \\ Program Files Common Files System \\ \\ \\ ado" installiert \\ ist.
 
-  - Für die clientseitige Skripterstellung verwenden Sie die Datei "addcvbs. Inc", die\\standardmäßig\\im Ordner\\"\\c\\ : Program Files System msdac" installiert ist.
+  - Verwenden Sie für clientseitiges Skripting Adcvbs.inc, das standardmäßig im Ordner "c: \\ Program Files Common Files System \\ \\ \\ msdac" installiert \\ ist.
 
-Sie können entweder kopieren und Einfügen von Konstanten Definitionen aus diesen Dateien in Ihre ASP-Seiten oder, wenn Sie serverseitige Skripterstellung durchführen, kopieren Sie die Datei Datei Adovbs. Inc in einen Ordner auf Ihrer Website, und verweisen Sie auf Ihrer ASP-Seite wie folgt:
+Sie können konstanten Definitionen aus diesen Dateien kopieren und in Ihre ASP-Seiten einfügen oder, wenn Sie serverseitige Skripts ausführen, die Datei "Adovbs.inc" in einen Ordner auf Ihrer Website kopieren und wie folgt von Ihrer ASP-Seite darauf verweisen:
 
 ```vb 
  
@@ -76,7 +76,7 @@ Response.Write("Success!")
 </HTML> 
 ```
 
-Konkretere VBScript-Beispiele sind in der ADO-Dokumentation enthalten. Weitere Informationen finden Sie unter [ADO-Codebeispiele in Microsoft Visual Basic scriptIng Edition](ado-code-examples-in-microsoft-visual-basic-scripting-edition.md).
+Konkretere VBScript-Beispiele sind in der ADO-Dokumentation enthalten. Weitere Informationen finden Sie [unter ADO-Codebeispiele in Microsoft Visual Basic Scripting Edition.](ado-code-examples-in-microsoft-visual-basic-scripting-edition.md)
 
 ## <a name="differences-between-vbscript-and-visual-basic"></a>Unterschiede zwischen VBScript und Visual Basic
 
@@ -84,7 +84,7 @@ Das Verwenden von ADO mit VBScript ist in vielerlei Hinsicht, z. B. hinsichtlich
 
 - VBScript supports only the Variant data type, which can hold different types of data. You can store the data you need in a Variant data type, and the data will function appropriately due to casting performed by VBScript. It recognizes the type required by ADO, and converts the value in the Variant accordingly.
 
-- Sie können nicht `on error goto <label>` innerhalb von VBScript verwenden.
+- Sie können in VBScript nicht `on error goto <label>` verwenden.
 
 - In VBScript werden einige der integrierten Visual Basic-Funktionen, wie z. B. **Msgbox**, **Date** und **IsNumeric**, unterstützt. Da es sich bei VBScript jedoch um eine Teilmenge von Visual Basic handelt, werden nicht alle integrierten Funktionen unterstützt. Beispielsweise werden in VBScript die **Format** -Funktion und die Datei-E/A-Funktionen nicht unterstützt.
 

@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
 - Neuigkeiten [Infopath 2007],Entwicklerfeatures [InfoPath 2007],InfoPath 2007, Neuigkeiten,neue Features [InfoPath 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d0ad3111-bd41-4f35-8a34-62c17f20fc19
 description: InfoPath wurde entwickelt, um die Erstellung reichhaltiger, formularbasierter Anwendungen auf der Plattform Microsoft SharePoint Server zu vereinfachen. Microsoft InfoPath 2013 in Verbindung mit Microsoft SharePoint Server 2013 und InfoPath Forms Services bieten zahlreiche Features für Entwickler. Mit InfoPath Forms Services, verfügbar in SharePoint Server 2013, können Sie eine InfoPath-Formularvorlage auf einem SharePoint-Server bereitstellen, damit Benutzer ohne InfoPath Rich Client InfoPath-Formulare in einem Webbrowser öffnen und ausfüllen können.
-ms.openlocfilehash: 5d469dfb99290054008271867f24d947a42efeee
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 61bbf2deba2ccaa91873e83c80f0d8385d97dd41
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303192"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614514"
 ---
 # <a name="whats-new-for-infopath-developers"></a>Neuerungen für InfoPath-Entwickler
 

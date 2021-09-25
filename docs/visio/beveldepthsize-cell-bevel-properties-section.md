@@ -4,29 +4,29 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c6a57e52-c7ed-4a52-940f-1cef9baa70a5
-description: Bestimmt die Tiefe der Abschrägung in Punkt.
-ms.openlocfilehash: 13c00536d6fc4f19ff2c62cab2afd04f9cdf8985
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Bestimmt die Größe der Abschrägungstiefe in Punkt.
+ms.openlocfilehash: 88e9f503c5ca863c888d70d3bd86180a00a50511
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33438498"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608627"
 ---
 # <a name="beveldepthsize-cell-bevel-properties-section"></a>Zelle "BevelDepthSize" (Abschnitt "Bevel Properties")
 
-Bestimmt die Tiefe der Abschrägung in Punkt. 
+Bestimmt die Größe der Abschrägungstiefe in Punkt. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Um einen Verweis auf die **Zelle "BevelDepthSize"** anhand des Namens aus einer anderen Formel, nach dem Wert des **N-Attributs** eines **Cell-Elements** oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Um einen Verweis auf die **Zelle "BevelDepthSize"** anhand des Namens aus einer anderen Formel, anhand des Werts des **N-Attributs** eines **Cell-Elements** oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | BevelDepthSize  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die **Zelle "BevelDepthSize"** nach Index aus einem Programm zu erhalten: 
+Um einen Verweis auf die Zelle **"BevelDepthSize"** anhand des Indexes eines Programms abzurufen, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|

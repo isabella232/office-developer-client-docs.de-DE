@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1bae0af9-229d-e114-4feb-bf6d7a7d8b08
 description: Ändert die Farbe, indem deren Helligkeit um den angegebenen Prozentsatz erhöht  wird.
-ms.openlocfilehash: d63b90d0cd6fcb35e23a8efa4ca9e13e2838bc21
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 6d263872f10971d913938370f580e95fe5d743fb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33406423"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608221"
 ---
 # <a name="msotint-function"></a>MSOTINT Function
 
@@ -32,10 +32,10 @@ MSOTINT(** *color* **, ** *deltaLum* ** )
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _color_ <br/> |Erforderlich  <br/> |**RGB** <br/> |Der standardmäßige RGB-Farbwert (Rot, Grün, Blau) oder eine Referenz auf eine Farbe.  <br/> |
-| _deltaLum_ <br/> |Erforderlich  <br/> |**Integer** <br/> |Die prozentuale Änderung in Richtung Weiß (-100 %) oder schwarz (100 %) aus dem _Farbwert._  <br/> |
+| _deltaLum_ <br/> |Erforderlich  <br/> |**Integer** <br/> |Die prozentuale Änderung in Richtung Weiß (-100 %) oder Schwarz (100 %) vom _Farbwert._  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Je näher der  _Farbwert_ weiß oder schwarz ist, desto kleiner ist die Änderung des Farbtons, der durch einen bestimmten  _deltaLum-Wert erzeugt_ wird. 
+Je näher der  _Farbwert_ weiß oder schwarz ist, desto kleiner ist die Änderung des Farbtons, der durch einen  _bestimmten DeltaLum-Wert_ erzeugt wird. 
   
 

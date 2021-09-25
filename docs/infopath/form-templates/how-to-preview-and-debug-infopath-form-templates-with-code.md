@@ -1,34 +1,34 @@
 ---
-title: Vorschau und Debuggen von InfoPath-Formularvorlagen mit Code
+title: Anzeigen einer Vorschau und Debuggen von InfoPath-Formularvorlagen mit Code
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
-- Vorschau von Formularvorlagen [infopath 2007],Debuggen von Formularvorlagen [InfoPath 2007],Formularvorlagen [InfoPath 2007], Vorschau,Debuggen [InfoPath 2007], Formularvorlagen mit verwalteten Code, Formularvorlagen [InfoPath 2007], Debuggen,InfoPath 2007, Debugformularvorlagen,InfoPath 2007, Vorschau von Formularvorlagen
-localization_priority: Normal
+- previewing form templates [infopath 2007],debugging form templates [InfoPath 2007],form templates [InfoPath 2007], previewing,debugging [InfoPath 2007], managed-code form templates,form templates [InfoPath 2007], debugging,InfoPath 2007, debugging form templates,InfoPath 2007, previewing form templates
+ms.localizationpriority: medium
 ms.assetid: c8387f1c-b34c-490e-8bf9-d824bf98d826
 description: Microsoft InfoPath mit Visual Studio 2012 ermöglicht das Debuggen, indem Formularcode im Vorschaumodus ausgeführt wird. Wenn Sie mit dem Debuggen von Formularcode beginnen, wird das Projekt kompiliert, und das Formular wird von InfoPath im InfoPath-Vorschaufenster angezeigt. Wenn eine Codezeile ermittelt wird, für die ein Haltepunkt festgelegt wurde, wird der Fokus auf den Code-Editor verschoben. Wenn Sie den Vorgang nach einem Haltepunkt fortsetzen, wird der Fokus wieder zum Vorschaufenster verschoben. Das Debuggen wird beendet, wenn Sie das Vorschaufenster schließen.
-ms.openlocfilehash: 8f9ff97fdd5b4b016d96129304fa6f994d7b4561
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 186d4db9bad84788cceeb7d0d8c2b677a0d09414
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33405240"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59584885"
 ---
-# <a name="preview-and-debug-infopath-form-templates-with-code"></a>Vorschau und Debuggen von InfoPath-Formularvorlagen mit Code
+# <a name="preview-and-debug-infopath-form-templates-with-code"></a>Anzeigen einer Vorschau und Debuggen von InfoPath-Formularvorlagen mit Code
 
 Microsoft InfoPath mit Visual Studio 2012 ermöglicht das Debuggen, indem Formularcode im Vorschaumodus ausgeführt wird. Wenn Sie mit dem Debuggen von Formularcode beginnen, wird das Projekt kompiliert, und das Formular wird von InfoPath im InfoPath-Vorschaufenster angezeigt. Wenn eine Codezeile ermittelt wird, für die ein Haltepunkt festgelegt wurde, wird der Fokus auf den Code-Editor verschoben. Wenn Sie den Vorgang nach einem Haltepunkt fortsetzen, wird der Fokus wieder zum Vorschaufenster verschoben. Das Debuggen wird beendet, wenn Sie das Vorschaufenster schließen.
   
 Sie können die Formularoptionen für die Formularvorlage auch so ändern, dass Vorschau und Debuggen mithilfe einer bestimmten Benutzerrolle, einer Beispieldatendatei oder durch Angeben der Domäne ausgeführt werden, in der das Formular veröffentlicht wird.  
   
 > [!NOTE]
-> Es ist nicht möglich, Formularvorlagen zu debuggen, nachdem sie zur Laufzeit ab Visual Studio 2012 bereitgestellt wurden. Dazu gehören Formularvorlagen, die nur mit InfoPath kompatibel sind, sowie formularkompatible Vorlagen mit InfoPath und dem Webbrowser, die InfoPath Forms Services. Sie können jedoch Werte im Code in einem Feld zur Laufzeit protokollieren, um das Debugging der Geschäftslogik einer Formularvorlage zu unterstützten. Weitere Informationen dazu finden Sie unter [Protokollieren von Werten in einem Feld zum Debuggen](how-to-log-values-to-a-field-for-debugging.md). 
+> Es ist nicht möglich, Formularvorlagen zu debuggen, nachdem sie zur Laufzeit ab Visual Studio 2012 bereitgestellt wurden. Dazu gehören Formularvorlagen, die nur mit InfoPath kompatibel sind, sowie Formularvorlagen, die mit InfoPath und dem Webbrowser mit InfoPath Forms Services kompatibel sind. Sie können jedoch Werte im Code in einem Feld zur Laufzeit protokollieren, um das Debugging der Geschäftslogik einer Formularvorlage zu unterstützten. Informationen dazu finden Sie unter [Protokollwerte für ein Feld zum Debuggen.](how-to-log-values-to-a-field-for-debugging.md) 
   
 ## <a name="debugging-in-preview-mode"></a>Debuggen im Vorschaumodus
 
 ### <a name="to-debug-an-infopath-project-in-preview-mode"></a>So debuggen Sie ein InfoPath-Projekt im Vorschaumodus
 
-1. Erstellen oder Öffnen einer InfoPath-Formularvorlage mit verwalteten Code in Visual Studio 2012.
+1. Erstellen oder öffnen Sie eine InfoPath-Formularvorlage mit verwaltetem Code in Visual Studio 2012.
     
 2. Legen Sie im Code-Editor im Formularcode mindestens einen Haltepunkt fest, indem Sie links neben der Codezeile, in der ein Haltepunkt eingefügt werden soll, auf die graue Leiste klicken.
     
@@ -47,7 +47,7 @@ Sie können die Formularoptionen für die Formularvorlage auch so ändern, dass 
 6. Wenn Sie das Debuggen abgeschlossen haben, schließen Sie das Vorschaufenster, oder klicken Sie im Menü **Debuggen** auf **Debuggen beenden**.
     
 > [!NOTE]
-> Zum Debuggen einer InfoPath-Formularvorlage mit verwalteten Code bei Verwendung eines Objektmodellmmitglieds, das volle Vertrauenswürdigkeit erfordert, müssen Sie die Formularvorlage konfigurieren, wie unter Vorschau und Debuggen von Formularvorlagen beschrieben, für die volle Vertrauenswürdigkeit erforderlich [ist.](how-to-preview-and-debug-form-templates-that-require-full-trust.md) 
+> Zum Debuggen einer InfoPath-Formularvorlage mit verwaltetem Code bei Verwendung eines Objektmodellmembers, für das volle Vertrauenswürdigkeit erforderlich ist, müssen Sie die Formularvorlage konfigurieren, wie unter ["Vorschau" und "Debuggen von Formularvorlagen" beschrieben, die voll vertrauenswürdig sein müssen.](how-to-preview-and-debug-form-templates-that-require-full-trust.md) 
   
 ## <a name="using-a-sample-data-file"></a>Verwenden einer Beispieldatendatei
 

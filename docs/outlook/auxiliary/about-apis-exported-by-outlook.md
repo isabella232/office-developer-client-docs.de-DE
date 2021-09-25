@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7b251308-70ff-a1ec-e968-9d5993909505
 description: Outlook exportiert die folgenden Definitionen, Datenstrukturen, Funktionen und Schnittstellen, die Waren ursprünglich für die interne Verwendung konzipiert, aber nun für die Öffentlichkeit verfügbar gemacht werden.
-ms.openlocfilehash: 0ed68b6c1b8082ee5cc22deb96333a0bd4d29390
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 0c9b1a63f57a8393584f19ffb0f0b5746f95b47f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316982"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614479"
 ---
 # <a name="about-apis-exported-by-outlook"></a>Über die APIs von Outlook exportiert
 

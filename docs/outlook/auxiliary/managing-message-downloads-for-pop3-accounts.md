@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b4218aa6-1591-49db-9782-f286135fc79a
 description: Dieser Abschnitt beschreibt, wie der POP3-Anbieter von Outlook verwendet den eindeutigen ID auflisten (UIDL)-Verlauf auf ein POP3-Konto zur Identifikation von Nachrichten, die der Anbieter gedownloadet oder vom POP3-Server, um zu vermeiden, downloaden dieselbe Nachricht mehr als einmal gelöscht.
-ms.openlocfilehash: 35c50d83c317ebefa52fd9bfcb348c8411a06f25
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: b878c551884d8e9a0bd7f85d6f1b5832a6fa8548
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32322246"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59584787"
 ---
 # <a name="managing-message-downloads-for-pop3-accounts"></a>Verwalten von Nachrichten für POP3-Konten gedownloadet
 
@@ -24,9 +24,9 @@ Das Post Office Protocol (POP) gibt ein Protokoll auf Anwendungsebene für ein e
   
 Nachrichten für ein POP-Konto werden durch eindeutige Bezeichner (UIDs) identifiziert. Ein e-Mail-Client, der e-Mail-Nachrichten auf dem Server lässt verwendet den UIDL-Befehl UIDL-Karte abrufen, die jede Nachricht zuordnet, die auf das Postfach, um die UID geliefert wurde. Der Client erhält den UIDL-Verlauf auch für Nachrichten, die gedownloadet oder für den Posteingang auf dem Client gelöscht wurden. Basierend auf den UIDL-Verlauf, kann der Client bestimmen, welche Nachrichten sind neu und heruntergeladen werden sollen.
 
-- Suchen des Nachrichtendownloadverlaufs für ein [POP3-Konto:](locating-the-message-download-history-for-a-pop3-account.md)In diesem Thema wird beschrieben, wie ein E-Mail-Client auf die [PidTagAttachDataBinary-Eigenschaft](https://msdn.microsoft.com/library/3b0a8b28-863e-4b96-a4c0-fdb8f40555b9%28Office.15%29.aspx) zusteuert, um den #A0 für Nachrichten im Client posteingang eines POP3-Kontos zu erhalten. 
+- [Suchen des Nachrichtendownloadverlaufs für ein POP3-Konto:](locating-the-message-download-history-for-a-pop3-account.md)In diesem Thema wird beschrieben, wie ein Mailclient auf die [PidTagAttachDataBinary-Eigenschaft](https://msdn.microsoft.com/library/3b0a8b28-863e-4b96-a4c0-fdb8f40555b9%28Office.15%29.aspx) zugreift, um den UIDL-Verlauf für Nachrichten im Posteingang des Clients eines POP3-Kontos abzurufen. 
     
-- [Analysieren](parsing-the-message-download-history-for-a-pop3-account.md)des Nachrichtendownloadverlaufs für ein POP3-Konto: In diesem Thema wird beschrieben, wie sie den POP3-BLOB analysieren, der den UIDL-Verlauf für Nachrichten im Client posteingang eines POP3-Kontos darstellt, um die Nachrichten zu identifizieren, die für dieses Konto heruntergeladen oder gelöscht wurden.
+- [Analysieren des Nachrichtendownloadverlaufs für ein POP3-Konto:](parsing-the-message-download-history-for-a-pop3-account.md)In diesem Thema wird beschrieben, wie Sie das POP3-BLOB analysieren, das den UIDL-Verlauf für Nachrichten im Client-Posteingang eines POP3-Kontos darstellt, um die Nachrichten zu identifizieren, die für dieses Konto heruntergeladen oder gelöscht wurden.
     
 ## <a name="see-also"></a>Siehe auch
 

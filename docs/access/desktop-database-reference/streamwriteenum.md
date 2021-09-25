@@ -1,18 +1,18 @@
 ---
-title: StreamWriteEnum (Access Desktop Database Reference)
+title: StreamWriteEnum (Access-Desktopdatenbankreferenz)
 TOCTitle: StreamWriteEnum
 ms:assetid: b4356999-d7a8-abfa-f6a8-6c2dd04b9257
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249861(v=office.15)
 ms:contentKeyID: 48547216
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 87144e5409fb54cf0cb8f59ad4d593ab05d694a4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 1f5448d697cb7cb6c959bc15ccb05abd7a8de5ae
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308477"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585291"
 ---
 # <a name="streamwriteenum"></a>StreamWriteEnum
 
@@ -42,7 +42,7 @@ Gibt an, ob der Zeichenfolge, die in ein [Stream](stream-object-ado.md)-Objekt g
 <td><p>Standardwert. Schreibt die angegebene Zeichenfolge (die vom <em>Data</em>-Parameter angegeben wird) in das <strong>Stream</strong>-Objekt.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>WriteLine</strong></p></td>
+<td><p><strong>adWriteLine</strong></p></td>
 <td><p>1</p></td>
 <td><p>Schreibt eine Textzeichenfolge und ein Zeilentrennzeichen in ein <strong>Stream</strong>-Objekt. Wenn keine <a href="lineseparator-property-ado.md">LineSeparator</a>-Eigenschaft definiert ist, wird ein Laufzeitfehler zurückgegeben.</p></td>
 </tr>
@@ -50,7 +50,7 @@ Gibt an, ob der Zeichenfolge, die in ein [Stream](stream-object-ado.md)-Objekt g
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
 Diese Konstanten haben keine ADO/WFC-Entsprechungen.
 

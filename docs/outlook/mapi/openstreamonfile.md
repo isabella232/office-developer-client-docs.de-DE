@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.OpenStreamOnFile
 api_type:
 - COM
 ms.assetid: 01fa459f-597d-4b16-b340-a79fb270cd71
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: b05f5b30eceb7df1bed76c64f4bdda87ede0e463
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f75f781c00fc4fe202e14bc955b2099ffb9ccdbc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439093"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59575337"
 ---
 # <a name="openstreamonfile"></a>OpenStreamOnFile
 
@@ -25,7 +25,7 @@ ms.locfileid: "33439093"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Weist ein OLE **IStream-Objekt** zu und initialisiert es, um auf den Inhalt einer Datei zu zugreifen. Diese Funktion verwendet eine ANSI-Zeichenfolge als Dateinamen, einschließlich des Pfads und der Dateierweiterung. Daher wird die Verwendung der Unicode-Version dieser Funktion, [OpenStreamOnFileW](openstreamonfilew.md), empfohlen.
+Weist ein OLE **IStream-Objekt** zu und initialisiert es, um auf den Inhalt einer Datei zuzugreifen. Diese Funktion verwendet eine ANSI-Zeichenfolge als Dateinamen einschließlich Pfad und Dateierweiterung. Daher wird die Verwendung der Unicode-Version dieser Funktion, [OpenStreamOnFileW,](openstreamonfilew.md)empfohlen.
   
 |||
 |:-----|:-----|
@@ -52,43 +52,43 @@ HRESULT STDMETHODCALLTYPE OpenStreamOnFile(
     
  _lpFreeBuffer_
   
-> [in] Zeiger auf die [MAPIFreeBuffer-Funktion,](mapifreebuffer.md) die zum Freispeichern verwendet werden soll. 
+> [in] Zeiger auf die [MAPIFreeBuffer-Funktion,](mapifreebuffer.md) die zum Freigeben von Arbeitsspeicher verwendet werden soll. 
     
  _ulFlags_
   
-> [in] Bitmaske von Flags, die zum Steuern des Erstellens oder Öffnens der Datei verwendet werden, auf die über das OLE **IStream-Objekt zugegriffen werden** soll. Die folgenden Kennzeichen können festgelegt werden: 
+> [in] Bitmaske von Flags, die zum Steuern der Erstellung oder des Öffnens der Datei verwendet werden, auf die über das OLE **IStream-Objekt** zugegriffen werden soll. Die folgenden Flags können festgelegt werden: 
     
 SOF_UNIQUEFILENAME 
   
-> Für das **IStream-Objekt** soll eine temporäre Datei erstellt werden. Wenn dieses Flag festgelegt ist, sollten auch die STGM_CREATE und STGM_READWRITE festgelegt werden. 
+> Für das **IStream-Objekt** soll eine temporäre Datei erstellt werden. Wenn dieses Flag festgelegt ist, sollten auch die Flags STGM_CREATE und STGM_READWRITE festgelegt werden. 
     
 STGM_CREATE 
   
-> Die Datei soll auch dann erstellt werden, wenn bereits eine vorhanden ist. Wenn der  _lpszFileName-Parameter_ nicht festgelegt ist, müssen sowohl dieses Flag als auch STGM_DELETEONRELEASE festgelegt werden. Wenn STGM_CREATE festgelegt ist, muss auch das STGM_READWRITE festgelegt werden. 
+> Die Datei soll auch dann erstellt werden, wenn bereits eine vorhanden ist. Wenn der  _Parameter lpszFileName_ nicht festgelegt ist, müssen sowohl dieses Flag als auch STGM_DELETEONRELEASE festgelegt werden. Wenn STGM_CREATE festgelegt ist, muss auch das STGM_READWRITE-Flag festgelegt werden. 
     
 STGM_DELETEONRELEASE 
   
-> Die Datei soll gelöscht werden, wenn das **IStream-Objekt** freigegeben wird. Wenn der  _lpszFileName-Parameter_ nicht festgelegt ist, müssen sowohl dieses Flag als auch STGM_CREATE festgelegt werden. 
+> Die Datei soll gelöscht werden, wenn das **IStream-Objekt** freigegeben wird. Wenn der  _Parameter lpszFileName_ nicht festgelegt ist, müssen sowohl dieses Flag als auch STGM_CREATE festgelegt werden. 
     
 STGM_READ 
   
-> Die Datei soll mit schreibgeschützten Zugriff erstellt oder geöffnet werden. 
+> Die Datei soll mit schreibgeschütztem Zugriff erstellt oder geöffnet werden. 
     
 STGM_READWRITE 
   
-> Die Datei soll mit Lese-/Schreibberechtigung erstellt oder geöffnet werden. Wenn dieses Flag nicht festgelegt ist, darf STGM_CREATE auch nicht festgelegt werden. 
+> Die Datei soll mit Lese-/Schreibberechtigung erstellt oder geöffnet werden. Wenn dieses Kennzeichen nicht festgelegt ist, darf auch das STGM_CREATE Flag nicht festgelegt werden. 
     
  _lpszFileName_
   
-> [in] Der Dateiname einschließlich Pfad und Erweiterung der Datei, für die **OpenStreamOnFile** das **IStream-Objekt initialisiert.** Wenn das SOF_UNIQUEFILENAME festgelegt ist, enthält  _lpszFileName_ den Pfad zum Verzeichnis, in dem eine temporäre Datei erstellt werden soll. Wenn  _lpszFileName_ null ist, **ruft OpenStreamOnFile** einen entsprechenden Pfad vom System ab, und sowohl die STGM_CREATE als auch STGM_DELETEONRELEASE müssen festgelegt werden. 
+> [in] Der Dateiname einschließlich Pfad und Erweiterung der Datei, für die **OpenStreamOnFile** das **IStream-Objekt** initialisiert. Wenn das flag SOF_UNIQUEFILENAME festgelegt ist, enthält  _lpszFileName_ den Pfad zum Verzeichnis, in dem eine temporäre Datei erstellt werden soll. Wenn  _lpszFileName_ NULL ist, ruft **OpenStreamOnFile** einen geeigneten Pfad vom System ab, und die Flags STGM_CREATE und STGM_DELETEONRELEASE müssen festgelegt werden. 
     
  _lpszPrefix_
   
-> [in] Das Präfix für den Dateinamen, für den **OpenStreamOnFile** das **IStream-Objekt initialisiert.** Wenn festgelegt, darf das Präfix nicht mehr als drei Zeichen enthalten. Wenn  _lpszPrefix_ NULL ist, wird das Präfix "SOF" verwendet. 
+> [in] Das Präfix für den Dateinamen, mit dem **OpenStreamOnFile** das **IStream-Objekt** initialisiert. Wenn festgelegt, darf das Präfix nicht mehr als drei Zeichen enthalten. Wenn  _lpszPrefix_ NULL ist, wird das Präfix "SOF" verwendet. 
     
  _lppStream_
   
-> [out] Zeiger auf einen Zeiger auf ein Objekt, das die **IStream-Schnittstelle verfügbar** machen soll. 
+> [out] Zeiger auf einen Zeiger auf ein Objekt, das die **IStream-Schnittstelle** verfügbar machen. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -98,27 +98,27 @@ S_OK
     
 MAPI_E_NO_ACCESS 
   
-> Der Zugriff auf die Datei konnte aufgrund unzureichender Benutzerberechtigungen oder aufgrund von schreibgeschützten Dateien nicht möglich sein. 
+> Auf die Datei konnte aufgrund unzureichender Benutzerberechtigungen oder aufgrund von schreibgeschützten Dateien nicht zugegriffen werden. 
     
 MAPI_E_NOT_FOUND 
   
-> Die festgelegte Datei ist nicht vorhanden.
+> Die angegebene Datei ist nicht vorhanden.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die **OpenStreamOnFile-Funktion** verfügt über zwei wichtige Verwendungsmöglichkeiten, die sich durch die Einstellung des SOF_UNIQUEFILENAME unterscheiden. Wenn dieses Flag nicht festgelegt ist, öffnet **OpenStreamOnFile** ein **IStream-Objekt** in einer vorhandenen Datei, z. B. um dessen Inhalt in die **PR_ATTACH_DATA_BIN** ([PidTagAttachDataBinary](pidtagattachdatabinary-canonical-property.md))-Eigenschaft einer Anlage mit der **IStream::CopyTo-Methode** zu kopieren. In diesem Fall gibt  _der lpszFileName-Parameter_ den Pfad und Dateinamen der Datei an. 
+Die **OpenStreamOnFile-Funktion** hat zwei wichtige Verwendungsmöglichkeiten, die sich durch die Einstellung des SOF_UNIQUEFILENAME Flags unterscheiden. Wenn dieses Kennzeichen nicht festgelegt ist, öffnet **OpenStreamOnFile** ein **IStream-Objekt** in einer vorhandenen Datei, z. B. um den Inhalt in die **PR_ATTACH_DATA_BIN** ([PidTagAttachDataBinary](pidtagattachdatabinary-canonical-property.md)) -Eigenschaft einer Anlage mithilfe der **IStream::CopyTo** -Methode zu kopieren. In diesem Fall gibt der  _Parameter lpszFileName_ den Pfad und den Dateinamen der Datei an. 
   
-Wenn SOF_UNIQUEFILENAME festgelegt ist, erstellt **OpenStreamOnFile** eine temporäre Datei zum Speichern von Daten für ein **IStream-Objekt.** Für diese Verwendung kann der  _lpszFileName-Parameter_ optional den Pfad zum Verzeichnis festlegen, in dem die Datei erstellt werden soll, und der  _lpszPrefix-Parameter_ kann optional ein Präfix für den Dateinamen angeben. 
+Wenn SOF_UNIQUEFILENAME festgelegt ist, erstellt **OpenStreamOnFile** eine temporäre Datei, die Daten für ein **IStream-Objekt** enthält. Für diese Verwendung kann der Parameter  _lpszFileName_ optional den Pfad zum Verzeichnis angeben, in dem die Datei erstellt werden soll, und der  _Parameter lpszPrefix_ kann optional ein Präfix für den Dateinamen angeben. 
   
-Wenn die aufrufende Clientanwendung oder der aufrufende Dienstanbieter mit dem **IStream-Objekt** fertig ist, sollte es durch Aufrufen der OLE **IStream::Release-Methode freigegeben** werden. 
+Wenn die aufrufende Clientanwendung oder der aufrufende Dienstanbieter mit dem **IStream-Objekt** fertig ist, sollte es durch Aufrufen der OLE **IStream::Release-Methode** freigegeben werden. 
   
-MAPI verwendet die Funktionen, auf die  _von lpAllocateBuffer_ und  _lpFreeBuffer_ verwiesen wird, für die meisten Speicherzuweisungen und Deallocation, insbesondere zum Zuordnen von Arbeitsspeicher zur Verwendung durch Clientanwendungen beim Aufrufen von Objektschnittstellen wie [IMAPIProp::GetProps](imapiprop-getprops.md) und [IMAPITable::QueryRows](imapitable-queryrows.md). 
+DIE MAPI verwendet die Funktionen, auf die _lpAllocateBuffer_ und _lpFreeBuffer_ verweisen, für die meisten Speicherzuweisungen und Freigaben, insbesondere zum Zuordnen von Arbeitsspeicher zur Verwendung durch Clientanwendungen beim Aufrufen von Objektschnittstellen wie [IMAPIProp::GetProps](imapiprop-getprops.md) und [IMAPITable::QueryRows.](imapitable-queryrows.md) 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Das SOF_UNIQUEFILENAME wird verwendet, um eine temporäre Datei mit einem für das Messagingsystem eindeutigen Namen zu erstellen. Wenn dieses Flag festgelegt ist, gibt der  _lpszFileName-Parameter_ den Pfad für die temporäre Datei an, und der  _lpszPrefix-Parameter_ enthält die Präfixzeichen des Dateinamens. Der konstruierte Dateiname ist <prefix> HHHH. TMP, wobei HHHH eine Hexadezimalzahl ist. Wenn _lpszFileName_ NULL ist, wird die Datei im temporären Dateiverzeichnis erstellt, das von der Windows-Funktion **GetTempPath** oder dem aktuellen Verzeichnis zurückgegeben wird, wenn kein temporäres Dateiverzeichnis festgelegt wurde. 
+Das flag SOF_UNIQUEFILENAME wird verwendet, um eine temporäre Datei mit einem eindeutigen Namen für das Messagingsystem zu erstellen. Wenn dieses Flag festgelegt ist, gibt der Parameter  _lpszFileName_ den Pfad für die temporäre Datei an, und der  _Parameter lpszPrefix_ enthält die Präfixzeichen des Dateinamens. Der erstellte Dateiname ist <prefix> HHHH. TMP, wobei HHHH eine Hexadezimalzahl ist. Wenn _lpszFileName_ NULL ist, wird die Datei im temporären Dateiverzeichnis erstellt, das von der Windows-Funktion **GetTempPath** zurückgegeben wird, oder im aktuellen Verzeichnis, wenn kein temporäres Dateiverzeichnis festgelegt wurde. 
   
-Wenn das SOF_UNIQUEFILENAME nicht festgelegt ist,  _wird lpszPrefix_ ignoriert, und  _lpszFileName_ sollte den vollqualifizierten Pfad und Dateinamen der datei enthalten, die geöffnet oder erstellt werden soll. Die Datei wird basierend auf den anderen Flags geöffnet oder erstellt, die in _ulFlags festgelegt sind._ 
+Wenn das SOF_UNIQUEFILENAME Flag nicht festgelegt ist, wird  _lpszPrefix_ ignoriert, und  _lpszFileName_ sollte den vollqualifizierten Pfad und Dateinamen der zu öffnenden oder zu erstellenden Datei enthalten. Die Datei wird geöffnet oder basierend auf den anderen Flags erstellt, die in  _ulFlags_ festgelegt sind. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -126,7 +126,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|File.cpp  <br/> |WriteAttachStreamToFile  <br/> |MFCMAPI verwendet die **OpenStreamOnFile-Methode,** um einen Datenstrom in einer Datei zu öffnen, damit eine Anlage darauf geschrieben werden kann.  <br/> |
+|File.cpp  <br/> |WriteAttachStreamToFile  <br/> |MFCMAPI verwendet die **OpenStreamOnFile-Methode,** um einen Datenstrom in einer Datei zu öffnen, damit eine Anlage in die Datei geschrieben werden kann.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

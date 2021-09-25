@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 12/08/2015
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d8c554c5-89ac-9b32-5561-8d8178d2525a
 description: Ein Offlineadressbuch (OAB) stellt Outlook-Benutzer in einem getrennten Status Zugriff auf Verzeichnisinformationen aus der globalen Adressliste (GAL) und aus anderen Adressbüchern bereit.
-ms.openlocfilehash: 3374f87cd62d46a80ed823bff0516115a58c155c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 57904298c0265585e4613c4f2a7f4dd466cedd7b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317017"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59592830"
 ---
 # <a name="about-the-last-update-time-of-an-offline-address-book"></a>Informationen zum Zeitpunkt letzten Aktualisierung des eines Offlineadressbuchs
 

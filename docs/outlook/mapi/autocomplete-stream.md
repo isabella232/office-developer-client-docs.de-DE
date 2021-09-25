@@ -3,15 +3,15 @@ title: Stream für automatisches Vervollständigen
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d4f380fa-2ed9-4c7c-9ef3-b32f8409f657
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: aadfba3e2674c35019a2e5f3eb374fbed1ad2a75
-ms.sourcegitcommit: 0419850d5c1b3439d9da59070201fb4952ca5d07
+ms.openlocfilehash: 00c2849b642a2434b6711bb584727c6f6d00d936
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/28/2020
-ms.locfileid: "49734224"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59584766"
 ---
 # <a name="autocomplete-stream"></a>Stream für automatisches Vervollständigen
 

@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff192304(v=office.15)
 ms:contentKeyID: 48544077
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 1175e3903e54fd3420be43dfd9e3652d9990468b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 1af4ce2684caec80d4cb8bb163ff9f824c5ce54f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289156"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558261"
 ---
 # <a name="messagebox-macro-action"></a>MessageBox-Makroaktion
 
@@ -50,13 +50,13 @@ Die **MessageBox**-Aktion hat die folgenden Argumente.
 </tr>
 <tr class="even">
 <td><p><strong>Title</strong></p></td>
-<td><p>Der in der Titelleiste des Nachrichtfelds angezeigte Text. Beispielsweise können Sie die Titelleiste anzeigen &quot;der Kunden-ID-&quot;Validierung. Wenn Sie dieses Argument leer lassen, &quot;wird Microsoft&quot; Access angezeigt.</p></td>
+<td><p>Der in der Titelleiste des Nachrichtfelds angezeigte Text. Beispielsweise können Sie in der Titelleiste die &quot; Kunden-ID-Überprüfung anzeigen &quot; lassen. Wenn Sie dieses Argument leer lassen, &quot; wird Microsoft Access &quot; angezeigt.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Sie können die **MessageBox** -Aktion verwenden, um eine formatierte Fehlermeldung zu erstellen, ähnlich wie integrierte Meldungen, die von Microsoft Access angezeigt werden. Mit der **MessageBox** -Aktion können Sie eine Nachricht in drei Abschnitten für das Message-Argument bereitstellen. Trennen Sie die Abschnitte mit dem "@"-Zeichen voneinander.
 
@@ -64,9 +64,9 @@ Das folgende Beispiel zeigt ein formatiertes Meldungsfeld mit einer unterteilten
 
 Geben Sie die folgende Zeichenfolge in das **Message** -Argument ein:
 
-**Falsche Schalt\!Fläche @This Schaltfläche funktioniert nicht. @Try eine andere.**
+**Falsche Schaltfläche \! @This Schaltfläche work.@Try keine andere.**
 
-Die **MessageBox** -Aktion kann nicht in einem VBA-Modul (Visual Basic für Applikationen) ausgeführt werden. Verwenden Sie stattdessen die **Msg**-Funktion.
+Die **MessageBox** -Aktion kann nicht in einem VBA-Modul (Visual Basic für Applikationen) ausgeführt werden. Verwenden Sie stattdessen die **Msg** -Funktion.
 
 ## <a name="examples"></a>Beispiele
 
@@ -97,9 +97,9 @@ Das folgende Makro öffnet ein Produktlistenformular in der unteren rechten Ecke
 <td><p>Beenden der Bildschirmaktualisierung, während das Makro ausgeführt wird</p></td>
 </tr>
 <tr class="even">
-<td><p>IsNull ([Lieferanten-Nr.])</p></td>
+<td><p>IsNull([SupplierID])</p></td>
 <td><p><strong>MessageBox</strong></p></td>
-<td><p><strong>Message</strong>: Wechseln Sie zum Datensatz des Lieferanten, dessen Produkte Sie anzeigen möchten, und klicken Sie dann erneut auf die Schaltfläche für die Überprüfung der Produkte. <strong>Beep</strong>: <strong>jatyp</strong>: <strong>Keinetitel</strong>: Wählen Sie einen Zulieferer aus</p></td>
+<td><p><strong>Message</strong>: Wechseln Sie zum Datensatz des Lieferanten, dessen Produkte Sie anzeigen möchten, und klicken Sie dann erneut auf die Schaltfläche für die Überprüfung der Produkte. <strong>Signalton</strong>: <strong>YesType</strong>: <strong>NoneTitle</strong>: Einen Lieferanten auswählen</p></td>
 <td><p>Wenn im Lieferantenformular kein aktueller Lieferant vorhanden ist, zeigen Sie eine Meldung an.</p></td>
 </tr>
 <tr class="odd">
@@ -117,13 +117,13 @@ Das folgende Makro öffnet ein Produktlistenformular in der unteren rechten Ecke
 <tr class="odd">
 <td><p></p></td>
 <td><p><strong>OpenForm</strong></p></td>
-<td><p><strong>Formularname</strong>: Produktlisten <strong>Ansicht</strong>: <strong>Datenblatt Filtername</strong>: <strong>Where Condition</strong>: [suppliercode] = [Forms]! [Lieferanten]! LieferantenNr <strong>Datenmodus</strong>: <strong>Lese-schreibgeschütztfenstermodus-Modus</strong>: <strong>Normal</strong></p></td>
+<td><p><strong>Formularname</strong>: <strong>Produktlistenansicht</strong>: <strong>DatasheetFilter-Name:</strong> <strong>Bedingung:</strong>[SupplierID] = [Formulare]! [Lieferanten]! [SupplierID] <strong>Datenmodus:</strong> <strong>Schreibgeschützter Fenstermodus:</strong> <strong>Normal</strong></p></td>
 <td><p>Öffnen Sie das Produktlistenformular, und ziegen Sie die Produkte des aktuellen Lieferanten an.</p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
-<td><p><strong>Verschiebenundgrößeändernfenster</strong></p></td>
-<td><p><strong>rechts</strong>: 0,7799&quot; <strong>unten</strong>: 1,8&quot;</p></td>
+<td><p><strong>MoveAndSizeWindow</strong></p></td>
+<td><p><strong>Rechts</strong>: 0,7799 &quot; <strong>Abwärts</strong>: 1,8&quot;</p></td>
 <td><p>Positionieren Sie das Produktlistenformular in der unteren rechten Ecke des Lieferantenformulars.</p></td>
 </tr>
 </tbody>
@@ -151,15 +151,15 @@ Mit dem folgenden Gültigkeitsprüfungsmakro werden die Postleitzahlen überprü
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>IsNull ([CountryRegion])</p></td>
+<td><p>IsNull([CountryRegion])</p></td>
 <td><p><strong>StopMacro</strong></p></td>
 <td><p></p></td>
 <td><p>Wenn „Land/Region" den Wert <strong>Null</strong> hat, kann die Postleitzahl nicht überprüft werden.</p></td>
 </tr>
 <tr class="even">
-<td><p>CountryRegion In (&quot;Frankreich&quot;,&quot;Italien&quot;,&quot;Spanien&quot;) und Len ([PostalCode] &lt; &gt; ) 5</p></td>
+<td><p>[CountryRegion] In ( &quot; Frankreich , Italien , Spanien ) und &quot; &quot; &quot; &quot; &quot; Len([Postleitzahl]) &lt; &gt; 5</p></td>
 <td><p><strong>MessageBox</strong></p></td>
-<td><p><strong>Message</strong>: Die Postleitzahl muss 5 Zeichen lang sein. <strong>Beep</strong>: <strong>jatyp</strong>: <strong>informationtitel</strong>: PLZ-Fehler</p></td>
+<td><p><strong>Message</strong>: Die Postleitzahl muss 5 Zeichen lang sein. <strong>Signalton</strong>: <strong>YesType</strong>: <strong>InformationTitle</strong>: Postleitzahl-Fehler</p></td>
 <td><p>Zeigt eine Meldung an, wenn die Postleitzahl nicht 5 Zeichen lang ist.</p></td>
 </tr>
 <tr class="odd">
@@ -175,9 +175,9 @@ Mit dem folgenden Gültigkeitsprüfungsmakro werden die Postleitzahlen überprü
 <td><p></p></td>
 </tr>
 <tr class="odd">
-<td><p>CountryRegion In (&quot;Australien&quot;,&quot;Singapur&quot;) und Len ([PostalCode] &lt; &gt; ) 4</p></td>
+<td><p>[CountryRegion] In ( &quot; Australien , Singapur ) and &quot; &quot; &quot; Len([PostalCode]) &lt; &gt; 4</p></td>
 <td><p><strong>MessageBox</strong></p></td>
-<td><p><strong>Message</strong>: Die Postleitzahl muss 4 Zeichen lang sein. <strong>Beep</strong>: <strong>jatyp</strong>: <strong>informationtitel</strong>: PLZ-Fehler</p></td>
+<td><p><strong>Message</strong>: Die Postleitzahl muss 4 Zeichen lang sein. <strong>Signalton</strong>: <strong>YesType</strong>: <strong>InformationTitle</strong>: Postleitzahl-Fehler</p></td>
 <td><p>Zeigt eine Meldung an, wenn die Postleitzahl nicht 4 Zeichen lang ist.</p></td>
 </tr>
 <tr class="even">
@@ -193,9 +193,9 @@ Mit dem folgenden Gültigkeitsprüfungsmakro werden die Postleitzahlen überprü
 <td><p></p></td>
 </tr>
 <tr class="even">
-<td><p>([CountryRegion] = &quot;Kanada&quot;) Und ([PostalCode] nicht&quot;wie [A-z] [0-9] [A-z] [0-9] [A-z] [0-9&quot;])</p></td>
+<td><p>([CountryRegion] = &quot; Kanada &quot; ) und ([Postleitzahl] nicht wie &quot; [A-Z][0-9][A-Z] [0-9][A-Z][0-9] &quot; )</p></td>
 <td><p><strong>MessageBox</strong></p></td>
-<td><p><strong>Meldung</strong>: Die Postleitzahl ist ungültig. Beispiel für kanadischen Code: H1J 1C3 <strong>Beep</strong>: <strong>jatyp</strong>: <strong>informationtitel</strong>: PLZ Error</p></td>
+<td><p><strong>Meldung</strong>: Die Postleitzahl ist ungültig. Beispiel für kanadischen Code: H1J 1C3 <strong>Beep</strong>: <strong>YesType</strong>: <strong>InformationTitle</strong>: Postal Code Error</p></td>
 <td><p>Zeigt eine Meldung an, wenn eine für Kanada ungültige Postleitzahl angegeben wird. (Beispiel für eine kanadische Postleitzahl: H1J 1C3).</p></td>
 </tr>
 <tr class="odd">

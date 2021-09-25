@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.MSGSERVICEENTRY
 api_type:
 - COM
 ms.assetid: 655774a6-588c-44c7-903b-4497b7eccbc2
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 56a5f153dbd563397b9216af32a715692d0876d7
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8cfd9e655a9690ac2207a36849fe1b6c63d99719
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33427878"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59575358"
 ---
 # <a name="msgserviceentry"></a>MSGSERVICEENTRY
 
@@ -25,13 +25,13 @@ ms.locfileid: "33427878"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Definiert einen Prototyp für eine Nachrichtendienst-Einstiegspunktfunktion, um die Konfiguration des Nachrichtendiensts zu unterstützen. 
+Definiert einen Prototyp für eine Nachrichtendienst-Einstiegspunktfunktion zur Unterstützung der Nachrichtendienstkonfiguration. 
   
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |Mapispi.h  <br/> |
 |Definierte Funktion implementiert von:  <br/> |Nachrichtendienste  <br/> |
-|Definierte Funktion, die von:  <br/> |MAPI  <br/> |
+|Definierte Funktion aufgerufen von:  <br/> |MAPI  <br/> |
    
 ```cpp
 HRESULT MSGSERVICEENTRY(
@@ -50,93 +50,93 @@ HRESULT MSGSERVICEENTRY(
 
 ## <a name="parameters"></a>Parameter
 
- _hInstance_
+ _Hinstance_
   
-> [in] Handle der Instanz des DienstanbietersDLL. Das Handle wird in der Regel zum Abrufen von Ressourcen verwendet. 
+> [in] Handle der Instanz der Dienstanbieter-DLL. Das Handle wird in der Regel zum Abrufen von Ressourcen verwendet. 
     
  _lpMalloc_
   
-> [in] Zeiger auf ein Speicherzuweisungsobjekt, das die OLE **IMalloc-Schnittstelle verfügbar** machen soll. Der Nachrichtendienst muss diese Zuordnungsmethode möglicherweise verwenden, wenn er mit bestimmten Schnittstellen wie **IStream arbeitet.** 
+> [in] Zeiger auf ein Speicherzuweisungsobjekt, das die OLE **IMalloc-Schnittstelle** verfügbar machen kann. Der Nachrichtendienst muss diese Zuordnungsmethode möglicherweise verwenden, wenn er mit bestimmten Schnittstellen wie **IStream** arbeitet. 
     
  _lpMAPISup_
   
-> [in] Zeiger auf eine [IMAPISupport : IUnknown-Schnittstellenimplementierung.](imapisupportiunknown.md) 
+> [in] Zeiger auf eine [IMAPISupport: IUnknown-Schnittstellenimplementierungen.](imapisupportiunknown.md) 
     
  _ulUIParam_
   
-> [in] Ein implementierungsspezifischer Wert, der zum Übergeben von Benutzeroberflächeninformationen an eine Funktion oder Null verwendet wird. Der  _ulUIParam-Parameter_ ist das übergeordnete Fensterhandle für das Konfigurationsdialogfeld und hat den Typ HWND (in eine ULONG_PTR). Der Wert Null gibt an, dass es kein übergeordnetes Fenster gibt. 
+> [in] Ein implementierungsspezifischer Wert, der zum Übergeben von Benutzeroberflächeninformationen an eine Funktion oder null verwendet wird. Der  _ulUIParam-Parameter_ ist das übergeordnete Fensterhandle für das Konfigurationsdialogfeld und hat den Typ HWND (umwandeln in eine ULONG_PTR). Der Wert Null gibt an, dass kein übergeordnetes Fenster vorhanden ist. 
     
  _ulFlags_
   
-> [in] Bitmaske mit Flags, die Optionen für die Diensteingabefunktion angibt. Die folgenden Kennzeichen können festgelegt werden:
+> [in] Bitmaske mit Flags, die Optionen für die Diensteintragsfunktion angeben. Die folgenden Flags können festgelegt werden:
     
 MAPI_UNICODE 
   
-> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Zeichenfolgen im ANSI-Format. 
+> Die übergebenen Zeichenfolgen haben das Unicode-Format. Wenn das flag MAPI_UNICODE nicht festgelegt ist, haben die Zeichenfolgen das ANSI-Format. 
     
 MSG_SERVICE_UI_READ_ONLY 
   
-> Die Benutzeroberfläche für die Konfiguration des Diensts sollte die aktuelle Konfiguration anzeigen, jedoch nicht zulassen, dass der Benutzer sie ändert. 
+> Die Konfigurations-Benutzeroberfläche des Diensts sollte die aktuelle Konfiguration anzeigen, dem Benutzer jedoch nicht erlauben, sie zu ändern. 
     
 SERVICE_UI_ALLOWED 
   
-> Ermöglicht bei Bedarf das Anzeigen eines Konfigurationsdialogfelds. Wenn das SERVICE_UI_ALLOWED festgelegt ist, sollte das Dialogfeld nur angezeigt werden, wenn das  _lpProps-Eigenschaftswertarray_ leer ist oder keine gültige Konfiguration enthält. Wenn SERVICE_UI_ALLOWED nicht festgelegt ist, wird möglicherweise weiterhin ein Dialogfeld angezeigt, wenn SERVICE_UI_ALWAYS festgelegt ist. 
+> Lässt zu, dass bei Bedarf ein Konfigurationsdialogfeld angezeigt wird. Wenn das SERVICE_UI_ALLOWED Flag festgelegt ist, sollte das Dialogfeld nur angezeigt werden, wenn das Wertarray der  _lpProps-Eigenschaft_ leer ist oder keine gültige Konfiguration enthält. Wenn SERVICE_UI_ALLOWED nicht festgelegt ist, wird möglicherweise weiterhin ein Dialogfeld angezeigt, wenn das SERVICE_UI_ALWAYS-Kennzeichen festgelegt ist. 
     
 UI_CURRENT_PROVIDER_FIRST 
   
-> Fordert an, dass das Konfigurationsdialogfeld für den aktiven Anbieter über anderen Dialogfelder angezeigt wird. 
+> Fordert an, dass das Konfigurationsdialogfeld für den aktiven Anbieter über anderen Dialogfeldern angezeigt wird. 
     
 SERVICE_UI_ALWAYS 
   
-> Der Nachrichtendienst muss ein Konfigurationsdialogfeld anzeigen. Wenn das SERVICE_UI_ALWAYS nicht festgelegt ist, wird möglicherweise weiterhin ein Konfigurationsdialogfeld angezeigt, wenn das SERVICE_UI_ALLOWED-Flag festgelegt ist und keine gültigen Konfigurationsinformationen im  _lpProps-Eigenschaftswertarray_ verfügbar sind. Entweder SERVICE_UI_ALLOWED oder SERVICE_UI_ALWAYS müssen so festgelegt sein, dass eine Benutzeroberfläche angezeigt werden kann. 
+> Erfordert, dass der Nachrichtendienst ein Konfigurationsdialogfeld anzeigt. Wenn das SERVICE_UI_ALWAYS Kennzeichen nicht festgelegt ist, wird möglicherweise weiterhin ein Konfigurationsdialogfeld angezeigt, wenn das SERVICE_UI_ALLOWED-Flag festgelegt ist und gültige Konfigurationsinformationen im  _LpProps-Eigenschaftswertarray_ nicht verfügbar sind. Es müssen entweder SERVICE_UI_ALLOWED oder SERVICE_UI_ALWAYS festgelegt werden, damit eine Benutzeroberfläche angezeigt werden kann. 
     
  _ulContext_
   
-> [in] Der Konfigurationsvorgang, den MAPI derzeit ausführen. Der  _ulContext-Parameter_ enthält einen der folgenden Werte: 
+> [in] Der Konfigurationsvorgang, den die MAPI derzeit ausführt. Der  _ulContext-Parameter_ enthält einen der folgenden Werte: 
     
 MSG_SERVICE_CONFIGURE 
   
-> Änderungen an der Konfiguration des Diensts sollten im Profil vorgenommen werden. Wenn das SERVICE_UI_ALWAYS festgelegt ist, sollte der Dienst sein Konfigurationsdialogfeld anzeigen. Das Dialogfeld sollte auch angezeigt werden, wenn das SERVICE_UI_ALLOWED festgelegt ist und der  _lpProps-Parameter_ leer ist oder keine gültigen Konfigurationsdaten enthält. Wenn  _lpProps_ gültige Daten enthält, sollte kein Dialogfeld angezeigt werden, und der Dienst sollte diese Daten für die Konfigurationsänderung verwenden. 
+> Änderungen an der Konfiguration des Diensts sollten im Profil vorgenommen werden. Wenn das SERVICE_UI_ALWAYS-Kennzeichen festgelegt ist, sollte der Dienst sein Konfigurationsdialogfeld anzeigen. Das Dialogfeld sollte auch angezeigt werden, wenn das flag SERVICE_UI_ALLOWED festgelegt ist und der  _Parameter lpProps_ leer ist oder keine gültigen Konfigurationsdaten enthält. Wenn  _lpProps_ gültige Daten enthält, sollte kein Dialogfeld angezeigt werden, und der Dienst sollte diese Daten verwenden, um die Konfigurationsänderung vorzunehmen. 
     
 MSG_SERVICE_CREATE 
   
-> Der Dienst wird einem Profil hinzugefügt. Wenn das SERVICE_UI_ALWAYS oder SERVICE_UI_ALLOWED festgelegt ist, sollte der Dienst sein Konfigurationsdialogfeld anzeigen. Wenn keines der Kennzeichen festgelegt ist, sollte der Dienst fehlschlagen. 
+> Der Dienst wird einem Profil hinzugefügt. Wenn entweder das SERVICE_UI_ALWAYS oder SERVICE_UI_ALLOWED Flag festgelegt ist, sollte der Dienst das Konfigurationsdialogfeld anzeigen. Wenn kein Flag festgelegt ist, sollte der Dienst fehlschlagen. 
     
 MSG_SERVICE_DELETE 
   
-> Der Dienst wird aus einem Profil entfernt. Nachdem dieses Ereignis empfangen wurde, sollte der Dienst S_OK.
+> Der Dienst wird aus einem Profil entfernt. Nach Erhalt dieses Ereignisses sollte der Dienst S_OK zurückgeben.
     
 MSG_SERVICE_INSTALL 
   
-> Der Dienst wurde auf der Arbeitsstation des Benutzers über ein Netzwerk, eine Diskette oder ein anderes externes Medium installiert. Nach dem Empfang dieses Ereignisses gibt der Dienst in der Regel S_OK. 
+> Der Dienst wurde auf der Arbeitsstation des Benutzers über ein Netzwerk, eine Diskette oder ein anderes externes Medium installiert. Nach Erhalt dieses Ereignisses gibt der Dienst in der Regel S_OK zurück. 
     
 MSG_SERVICE_PROVIDER_CREATE 
   
-> Fordert an, dass der Dienst eine zusätzliche Instanz eines Anbieters erstellt. Wenn der Dienst diesen Vorgang unterstützt, sollte [er IProviderAdmin::CreateProvider aufrufen.](iprovideradmin-createprovider.md) Wenn der Dienst diesen Vorgang nicht unterstützt, kann er MAPI_E_NO_SUPPORT. 
+> Fordert an, dass der Dienst eine zusätzliche Instanz eines Anbieters erstellt. Wenn der Dienst diesen Vorgang unterstützt, sollte er [IProviderAdmin::CreateProvider](iprovideradmin-createprovider.md)aufrufen. Wenn der Dienst diesen Vorgang nicht unterstützt, kann er MAPI_E_NO_SUPPORT zurückgeben. 
     
 MSG_SERVICE_PROVIDER_DELETE 
   
-> Fordert an, dass der Dienst eine Anbieterinstanz löscht. Wenn der Dienst diesen Vorgang unterstützt, sollte er [IProviderAdmin::D eleteProvider aufrufen.](iprovideradmin-deleteprovider.md) Wenn der Dienst diesen Vorgang nicht unterstützt, kann er MAPI_E_NO_SUPPORT.
+> Fordert an, dass der Dienst eine Anbieterinstanz löscht. Wenn der Dienst diesen Vorgang unterstützt, sollte er [IProviderAdmin::D eleteProvider](iprovideradmin-deleteprovider.md)aufrufen. Wenn der Dienst diesen Vorgang nicht unterstützt, kann er MAPI_E_NO_SUPPORT zurückgeben.
     
 MSG_SERVICE_UNINSTALL 
   
-> Der Dienst wird entfernt. Nach dem Empfang dieses Ereignisses kann der Dienst alle Bereinigungsaufgaben ausführen, die vor dem Ende des Diensts ausgeführt werden sollten, und dann mit einem Erfolgswert zurückgeben. Wenn der Benutzer die Entfernung abbricht, sollte der Dienst MAPI_E_USER_CANCEL. 
+> Der Dienst wird entfernt. Nach Erhalt dieses Ereignisses kann der Dienst alle Bereinigungsaufgaben ausführen, die vor dem Beenden des Diensts durchgeführt werden sollen, und dann mit einem Erfolgswert zurückgegeben werden. Wenn der Benutzer die Entfernung abbricht, sollte der Dienst MAPI_E_USER_CANCEL zurückgeben. 
     
  _cValues_
   
-> [in] Anzahl der Eigenschaftswerte im Array, auf die der  _lpProps-Parameter_ verweist. Der Wert des  _cValues-Parameters_ ist null, wenn MAPI keine Eigenschaftswerte übergeben. 
+> [in] Anzahl der Eigenschaftswerte im Array, auf das durch den  _LpProps-Parameter_ verwiesen wird. Der Wert des  _cValues-Parameters_ ist Null, wenn mapi keine Eigenschaftswerte übergibt. 
     
  _lpProps_
   
-> [in] Zeiger auf ein optionales Array von [SPropValue-Strukturen,](spropvalue.md) das Werte für vom Anbieter unterstützte Eigenschaften angibt, die die Funktion beim Konfigurieren des Nachrichtendiensts verwendet. Die Funktion verwendet diesen Parameter nur, wenn  _der ulContext-Parameter_ auf MSG_SERVICE_CONFIGURE. Dieser Parameter wird häufig verwendet, um den Pfad zu einer Datei für einen dateibasierten Dienst, z. B. einen persönlichen Adressbuchdienst, zu übergeben. Wenn das MSG_SERVICE_CONFIGURE im  _ulFlags-Parameter_ nicht übergeben wird, muss  _der lpProps-Parameter_ null sein. 
+> [in] Zeiger auf ein optionales Array von [SPropValue-Strukturen,](spropvalue.md) das Werte für vom Anbieter unterstützte Eigenschaften angibt, die die Funktion zum Konfigurieren des Nachrichtendiensts verwendet. Die Funktion verwendet diesen Parameter nur, wenn der  _ulContext-Parameter_ auf MSG_SERVICE_CONFIGURE festgelegt ist. Dieser Parameter wird häufig verwendet, um den Pfad zu einer Datei für einen dateibasierten Dienst zu übergeben, z. B. einen persönlichen Adressbuchdienst. Wenn das MSG_SERVICE_CONFIGURE-Flag nicht im  _ulFlags-Parameter_ übergeben wird, muss der  _LpProps-Parameter_ Null sein. 
     
  _lpProviderAdmin_
   
-> [in] Zeiger auf eine [IProviderAdmin:IUnknown-Schnittstelle,](iprovideradminiunknown.md) die die Funktion zum Suchen von Profilabschnitten für einen bestimmten Anbieter im aktuellen Nachrichtendienst verwenden kann. 
+> [in] Zeiger auf eine [IProviderAdmin:IUnknown-Schnittstelle,](iprovideradminiunknown.md) mit der die Funktion Profilabschnitte für einen bestimmten Anbieter im aktuellen Nachrichtendienst suchen kann. 
     
  _lppMapiError_
   
-> [out] Zeiger auf eine [MAPIERROR-Struktur.](mapierror.md) Die Struktur wird mit der [MAPIAllocateBuffer-Funktion](mapiallocatebuffer.md) zugewiesen. Alle Member sind optional, obwohl die meisten Strukturen eine gültige Fehlermeldungszeichenfolge im  _lpszError-Element_ enthalten. Wenn  _die lpszComponent-_ oder  _lpszError-Elemente_ der Struktur vorhanden sind, muss ihr Arbeitsspeicher schließlich durch einen einzelnen Aufruf von [MAPIFreeBuffer](mapifreebuffer.md) in der Basisstruktur frei werden. 
+> [out] Zeiger auf eine [MAPIERROR-Struktur.](mapierror.md) Die Struktur wird mit der [MAPIAllocateBuffer-Funktion](mapiallocatebuffer.md) zugeordnet. Alle Member sind optional, obwohl die meisten Strukturen eine gültige Fehlermeldungszeichenfolge im  _lpszError-Element_ enthalten. Wenn die  _lpszComponent-_ oder  _lpszError-Elemente_ der Struktur vorhanden sind, muss ihr Speicher schließlich durch einen einzigen Aufruf von [MAPIFreeBuffer](mapifreebuffer.md) in der Basisstruktur freigegeben werden. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -150,7 +150,7 @@ MAPI_E_UNCONFIGURED
     
 MAPI_E_USER_CANCEL 
   
-> Der Benutzer hat den Vorgang abgebrochen, in der Regel durch Klicken auf die **Schaltfläche** Abbrechen in einem Dialogfeld. 
+> Der Benutzer hat den Vorgang abgebrochen, in der Regel durch Klicken auf die Schaltfläche **Abbrechen** in einem Dialogfeld. 
     
 MAPI_E_NO_SUPPORT 
   
@@ -158,22 +158,22 @@ MAPI_E_NO_SUPPORT
     
 MAPI_E_BAD_CHARWIDTH 
   
-> Entweder wurde MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt Unicode nicht, oder MAPI_UNICODE nicht festgelegt, und die Implementierung unterstützt nur Unicode.
+> Entweder wurde das MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Eine funktion, die mithilfe des **MSGSERVICEENTRY-Funktionsprototyps** definiert wurde, ermöglicht Nachrichtendiensten, sich selbst zu konfigurieren oder andere dienstspezifische Aktionen durchzuführen. Die Funktion bietet in erster Linie ein Dialogfeld, in dem der Benutzer einstellungen speziell für den Nachrichtendienst ändern kann. Sie kann auch die programmgesteuerte Konfiguration mithilfe des Eigenschaftswertarrays unterstützen, das im  _lpProps-Parameter übergeben_ wird. Die programmgesteuerte Konfiguration ist optional, es sei denn, der Dienst unterstützt den Profil-Assistenten, für den er erforderlich ist. 
+Eine Funktion, die mit dem Prototyp der **MSGSERVICEENTRY-Funktion** definiert wurde, ermöglicht es Nachrichtendiensten, sich selbst zu konfigurieren oder andere dienstspezifische Aktionen auszuführen. Die Funktion stellt in erster Linie ein Dialogfeld bereit, in dem der Benutzer für den Nachrichtendienst spezifische Einstellungen ändern kann. Sie kann auch die programmgesteuerte Konfiguration mithilfe des Eigenschaftswertarrays unterstützen, das im  _LpProps-Parameter_ übergeben wird. Die programmgesteuerte Konfiguration ist optional, es sei denn, der Dienst unterstützt den Profil-Assistenten, für den er erforderlich ist. 
   
-MAPI ruft diesen Einstiegspunkt aus der Systemsteuerungsanwendung oder als Reaktion auf eine Clientanwendung auf, die [IMsgServiceAdmin::CreateMsgService](imsgserviceadmin-createmsgservice.md) oder [IMsgServiceAdmin::ConfigureMsgService aufruft.](imsgserviceadmin-configuremsgservice.md) 
+MAPI ruft diesen Einstiegspunkt aus der Systemsteuerungsanwendung oder als Reaktion auf eine Clientanwendung auf, die [IMsgServiceAdmin::CreateMsgService](imsgserviceadmin-createmsgservice.md) oder [IMsgServiceAdmin::ConfigureMsgService](imsgserviceadmin-configuremsgservice.md)aufruft. 
   
-MAPI legt keine Einschränkung auf den Funktionsnamen fest, den ein Nachrichtendienst für den **MSGSERVICEENTRY-Prototyp** verwendet, bevorzugt jedoch den Namen **ServiceEntry**. Es gibt keine Einschränkung für die Ordnungszahl für die Funktion, und eine einzelne Anbieter-DLL kann mehrere Funktionen enthalten. Allerdings kann nur eine der Funktionen den Namen **ServiceEntry haben.** 
+MAPI legt keine Einschränkung für den Funktionsnamen fest, den ein Nachrichtendienst für den **MSGSERVICEENTRY-Prototyp** verwendet, bevorzugt jedoch den Namen **ServiceEntry.** Es gibt keine Einschränkung der Ordnungszahl für die Funktion, und eine einzelne Anbieter-DLL kann mehr als eine Funktion enthalten. Es kann jedoch nur eine der Funktionen den Namen **ServiceEntry** haben. 
   
 Ein Nachrichtendienst kann die [BuildDisplayTable-Funktion](builddisplaytable.md) und die [IMAPISupport::D oConfigPropsheet-Methode](imapisupport-doconfigpropsheet.md) verwenden, um die Implementierung des Konfigurationsdialogfelds zu vereinfachen. 
   
-Ein Benutzer kann einen Vorgang MSG_SERVICE_UNINSTALL abbrechen. In diesem Fall sollte die **ServiceEntry-Funktion** mit dem Benutzer überprüfen, ob der Dienst nicht entfernt werden soll, und MAPI_E_USER_CANCEL, wenn der Dienst installiert bleibt. 
+Es ist möglich, dass ein Benutzer einen MSG_SERVICE_UNINSTALL Vorgang abbricht. In diesem Fall sollte die **ServiceEntry-Funktion** mit dem Benutzer überprüfen, ob der Dienst nicht entfernt werden soll, und MAPI_E_USER_CANCEL zurückgeben, wenn der Dienst installiert bleibt. 
   
-Eine Funktion, die auf dem **MSGSERVICEENTRY-Prototyp** basiert, gibt einen der aufgeführten HRESULT-Werte zurück. MAPI gibt diesen Wert weiter, wenn er auf den Aufruf eines Clients an [IMsgServiceAdmin::ConfigureMsgService reagiert.](imsgserviceadmin-configuremsgservice.md) 
+Eine auf dem **MSGSERVICEENTRY-Prototyp** basierende Funktion gibt einen der aufgelisteten HRESULT-Werte zurück. MAPI leitet diesen Wert weiter, wenn sie auf den Aufruf eines Clients an [IMsgServiceAdmin::ConfigureMsgService](imsgserviceadmin-configuremsgservice.md)antwortet. 
   
-Nachrichtendienste, die eine Diensteintragsfunktion exportieren, müssen die **Eigenschaften PR_SERVICE_DLL_NAME** ([PidTagServiceDllName](pidtagservicedllname-canonical-property.md)) und **PR_SERVICE_ENTRY_NAME** ([PidTagServiceEntryName](pidtagserviceentryname-canonical-property.md)) im Nachrichtendienstabschnitt von MAPISVC.INF enthalten. 
+Nachrichtendienste, die eine Diensteintragsfunktion exportieren, müssen die Eigenschaften **PR_SERVICE_DLL_NAME** ([PidTagServiceDllName](pidtagservicedllname-canonical-property.md)) und **PR_SERVICE_ENTRY_NAME** ([PidTagServiceEntryName](pidtagserviceentryname-canonical-property.md)) im Nachrichtendienstabschnitt von MAPISVC.INF enthalten. 
   
 

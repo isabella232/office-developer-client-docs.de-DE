@@ -1,31 +1,31 @@
 ---
-title: QueryDef. CacheSize-Eigenschaft (DAO)
+title: QueryDef.CacheSize-Eigenschaft (DAO)
 TOCTitle: CacheSize Property
 ms:assetid: a84d990e-8180-daa3-7640-47d2be8fd28b
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff821397(v=office.15)
 ms:contentKeyID: 48546899
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 0d826781bd668cff0a61c655e55834512a289c17
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 07ccd63bab2b7303b97063e163ad838ac2d37d44
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301092"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558065"
 ---
-# <a name="querydefcachesize-property-dao"></a>QueryDef. CacheSize-Eigenschaft (DAO)
+# <a name="querydefcachesize-property-dao"></a>QueryDef.CacheSize-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
 
-Mit dieser Eigenschaft wird die Anzahl von Datensätzen, die aus einer ODBC-Datenquelle abgerufen und lokal gespeichert werden, festgelegt oder zurückgegeben. **Long**-Wert mit Lese-/Schreibzugriff.
+Legt die Anzahl der von einer ODBC-Datenquelle abgefragten Datensätze fest, die lokal zwischengespeichert werden, oder gibt den betreffenden Wert zurück. **Long**-Wert mit Lese-/Schreibzugriff.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . CacheSize
+*Ausdruck* . Cachesize
 
-*Ausdruck* Eine Variable, die ein **QueryDef** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **QueryDef**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.MAPIInitIdle
 api_type:
 - COM
 ms.assetid: b6de7c6a-f2e7-4248-adea-d354924a8bbf
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: b07c40882c0b9974c71eeb03123e7025b948a75e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 43b5168f1d29ead887f884e6c61456c5ab28364b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33432443"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59575484"
 ---
 # <a name="mapiinitidle"></a>MAPIInitIdle
 
@@ -47,25 +47,25 @@ LONG MAPIInitIdle(
     
 ## <a name="return-value"></a>Rückgabewert
 
-Die **MAPIInitIdle-Funktion** gibt null zurück, wenn die Initialisierung erfolgreich ist, und andernfalls 1. Wenn **MAPIInitIdle** mehrmals aufgerufen wird, sind alle zusätzlichen Aufrufe erfolgreich, werden jedoch ignoriert, außer, um die Referenzanzahl zu erhöhen. 
+Die **MAPIInitIdle-Funktion** gibt null zurück, wenn die Initialisierung erfolgreich ist, andernfalls 1. Wenn **MAPIInitIdle** mehrmals aufgerufen wird, sind alle zusätzlichen Aufrufe erfolgreich, werden jedoch ignoriert, außer um die Referenzanzahl zu erhöhen. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Eine Clientanwendung oder ein Dienstanbieter muss **MAPIInitIdle** aufrufen, bevor eine andere Im leerlaufmodulfunktion aufruft. 
+Eine Clientanwendung oder ein Dienstanbieter muss **MAPIInitIdle** aufrufen, bevor eine andere Leerlaufmodulfunktion aufgerufen wird. 
   
-Jedem Aufruf von **MAPIInitIdle** muss ein nachfolgender Aufruf von [MAPIDeInitIdle](mapideinitidle.md)entsprechen, oder das Leerlaufmodul wird für die aufrufende Anwendung noch ausgeführt. 
+Jeder Aufruf von **MAPIInitIdle** muss mit einem nachfolgenden Aufruf von [MAPIDeInitIdle](mapideinitidle.md)abgeglichen werden, andernfalls wird das Leerlaufmodul für die aufrufende Anwendung ausgeführt. 
   
-Die folgenden Funktionen befassen sich mit dem MAPI-Leerlaufmodul und mit Leerlaufroutinen, die auf dem Prototyp der [FNIDLE-Funktion](fnidle.md) basieren: 
+Die folgenden Funktionen befassen sich mit dem MAPI-Leerlaufmodul und mit Leerlaufroutinen, die auf dem [FNIDLE-Funktionsprototyp](fnidle.md) basieren: 
   
-|**Routinefunktion im Leerlauf**|**Nutzung**|
+|**Routinefunktion "Leerlauf"**|**Nutzung**|
 |:-----|:-----|
 |[ChangeIdleRoutine](changeidleroutine.md) <br/> |Ändert die Merkmale einer registrierten Leerlaufroutine.  <br/> |
 |[DeregisterIdleRoutine](deregisteridleroutine.md) <br/> |Entfernt eine registrierte Leerlaufroutine aus dem MAPI-System.  <br/> |
-|[EnableIdleRoutine](enableidleroutine.md) <br/> |Deaktiviert oder aktiviert eine registrierte Leerlaufroutine, ohne sie aus dem MAPI-System zu entfernen.  <br/> |
-|[FtgRegisterIdleRoutine](ftgregisteridleroutine.md) <br/> |Fügt dem MAPI-System eine Leerlaufroutine mit oder ohne Aktivierung hinzu.  <br/> |
+|[EnableIdleRoutine](enableidleroutine.md) <br/> |Deaktiviert oder aktiviert eine registrierte Leerlaufroutine erneut, ohne sie aus dem MAPI-System zu entfernen.  <br/> |
+|[FtgRegisterIdleRoutine](ftgregisteridleroutine.md) <br/> |Fügt eine Leerlaufroutine zum MAPI-System hinzu, mit oder ohne sie zu aktivieren.  <br/> |
 |[MAPIDeInitIdle](mapideinitidle.md) <br/> |Beendet das MAPI-Leerlaufmodul für die aufrufende Anwendung.  <br/> |
 |**MAPIInitIdle** <br/> |Initialisiert das MAPI-Leerlaufmodul für die aufrufende Anwendung.  <br/> |
    
-Wenn alle Vordergrundaufgaben für die Plattform inaktiv werden, ruft das MAPI-Leerlaufmodul die Leerlaufroutine mit der höchsten Priorität auf, die ausgeführt werden kann. Es gibt keine Garantie für das Aufrufen der Reihenfolge zwischen Leerlaufroutinen mit derselben Priorität. 
+Wenn alle Vordergrundaufgaben für die Plattform inaktiv werden, ruft das MAPI-Leerlaufmodul die Leerlaufroutine mit der höchsten Priorität auf, die zur Ausführung bereit ist. Es gibt keine Garantie für die Anrufreihenfolge zwischen Leerlaufroutinen mit derselben Priorität. 
   
 

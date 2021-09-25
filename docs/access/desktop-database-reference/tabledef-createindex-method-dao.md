@@ -1,5 +1,5 @@
 ---
-title: TableDef. CreateIndex-Methode (DAO)
+title: TableDef.CreateIndex-Methode (DAO)
 TOCTitle: CreateIndex Method
 ms:assetid: 857b25c1-01fa-b926-0c74-7105e71b7505
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196791(v=office.15)
@@ -10,25 +10,25 @@ f1_keywords:
 - dao360.chm1052970
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: baa82b659cc2260d4a003c644b2d03d6c897fd21
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 5a88ecf43d84867f770cecd44057d0c796350e62
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314371"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601688"
 ---
-# <a name="tabledefcreateindex-method-dao"></a>TableDef. CreateIndex-Methode (DAO)
+# <a name="tabledefcreateindex-method-dao"></a>TableDef.CreateIndex-Methode (DAO)
 
 **Gilt für**: Access 2013, Office 2013 
 
-Erstellt ein neues **[Index](index-object-dao.md)** -Objekt (nur Microsoft Access-Arbeitsbereiche). .
+Erstellt ein neues **[Index](index-object-dao.md)** -Objekt (gilt nur für Microsoft Access-Arbeitsbereiche).
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . CreateIndex (***Name***)
+*Ausdruck* . CreateIndex(***Name***)
 
-*Ausdruck* Eine Variable, die ein **TableDef** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **TableDef**-Objekt darstellt.
 
 ## <a name="parameters"></a>Parameter
 
@@ -62,11 +62,11 @@ Erstellt ein neues **[Index](index-object-dao.md)** -Objekt (nur Microsoft Acces
 
 Index 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Mit der **CreateIndex** -Methode können Sie ein neues **Index** -Objekt für ein **TableDef** -Objekt erstellen. Wenn Sie den optionalen Namen-Webpart bei Verwendung von **CreateIndex**weglassen, können Sie eine entsprechende Zuweisungsanweisung verwenden, um die **Name** -Eigenschaft festzulegen oder zurückzusetzen, bevor Sie das neue Objekt an eine Auflistung anfügen. Ob Sie nach dem Anfügen des Objekts dessen **Name** -Eigenschaft festlegen können, hängt davon ab, welcher Objekttyp die **Indexes** -Auflistung enthält. Weitere Informationen finden Sie im Thema zur **Name** -Eigenschaft.
+Mit der **CreateIndex**-Methode können Sie ein neues **Index**-Objekt für ein **TableDef**-Objekt erstellen. Wenn Sie beim Verwenden von **CreateIndex** den optionalen Teil name weglassen, können Sie die **Name**-Eigenschaft mithilfe einer geeigneten Zuweisungsanweisung festlegen oder zurücksetzen, bevor Sie das neue Objekt an eine Auflistung anfügen. Ob Sie nach dem Anfügen des Objekts dessen **Name**-Eigenschaft festlegen können, hängt davon ab, welcher Objekttyp die **Indexes**-Auflistung enthält. Weitere Informationen finden Sie im Thema zur **Name**-Eigenschaft.
 
-Wenn Name auf ein Objekt verweist, das bereits ein Element der Auflistung ist, tritt ein Laufzeitfehler auf, wenn Sie die **[Append](fields-append-method-dao.md)** -Methode verwenden.
+Wenn sich der Name auf ein Objekt bezieht, das bereits ein Element der Auflistung ist, tritt ein Laufzeitfehler auf, wenn Sie die **[Append-Methode](fields-append-method-dao.md)** verwenden.
 
 Wenn Sie ein **Index** -Objekt aus einer Auflistung entfernen möchten, verwenden Sie die **[Delete](fields-delete-method-dao.md)** -Methode für die Auflistung.
 

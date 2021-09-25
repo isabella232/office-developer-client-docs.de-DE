@@ -1,43 +1,43 @@
 ---
-title: PidLidAppointmentDuration (kanonische Eigenschaft)
+title: Kanonische PidLidAppointmentDuration-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidAppointmentDuration
 api_type:
 - COM
 ms.assetid: 92c07a81-9dec-4118-af1f-02ecad340f07
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 8ce9df6290fe6e50e52c632f0a14f226c4d715d7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 86e64c8072849c0919b4feadff100d110c20f7dd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345395"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59575316"
 ---
-# <a name="pidlidappointmentduration-canonical-property"></a>PidLidAppointmentDuration (kanonische Eigenschaft)
+# <a name="pidlidappointmentduration-canonical-property"></a>Kanonische PidLidAppointmentDuration-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Stellt den Zeitraum (in Minuten) dar, für den ein Termin geplant wird.
+Gibt die Zeitdauer in Minuten an, in der ein Termin geplant ist.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidApptDuration  <br/> |
 |Eigenschaftensatz:  <br/> |PSETID_Appointment  <br/> |
-|Lange ID (LID):  <br/> |0x00008213  <br/> |
+|Long ID (LID):  <br/> |0x00008213  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Der Wert muss die Anzahl der Minuten zwischen dem Wert der **eigenschaften dispidApptStartWhole** ([PidLidAppointmentStartWhole](pidlidappointmentstartwhole-canonical-property.md)) und **dispidApptEndWhole** ([PidLidAppointmentEndWhole](pidlidappointmentendwhole-canonical-property.md)) sein.
+Der Wert muss die Anzahl der Minuten zwischen dem Wert der Eigenschaften **dispidApptStartWhole** ([PidLidAppointmentStartWhole](pidlidappointmentstartwhole-canonical-property.md)) und **dispidApptEndWhole** ([PidLidAppointmentEndWhole](pidlidappointmentendwhole-canonical-property.md)) sein.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -45,17 +45,17 @@ Der Wert muss die Anzahl der Minuten zwischen dem Wert der **eigenschaften dispi
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Stellt Eigenschaftensatzdefinitionen und Verweise auf verwandte Exchange Server zur Verfügung.
+> Stellt Eigenschaftssatzdefinitionen und Verweise auf verwandte Exchange Server Protokollspezifikationen bereit.
     
 [[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften und Vorgänge für Termin-, Besprechungs- und Antwortnachrichten an.
+> Gibt die Eigenschaften und Vorgänge für Termin-, Besprechungsanfrage- und Antwortnachrichten an.
     
 ### <a name="header-files"></a>Headerdateien
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -63,9 +63,9 @@ Mapidefs.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

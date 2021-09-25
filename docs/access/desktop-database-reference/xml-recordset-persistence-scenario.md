@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248825(v=office.15)
 ms:contentKeyID: 48543107
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 5bae48f3e9b2b5c3967b955c41ba01c634546164
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 99f8216c64b24328140aa5a0cc1b117c3008aee1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32302594"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593159"
 ---
 # <a name="xml-recordset-persistence-scenario"></a>Speicherszenario für XML-Recordset
 
@@ -34,9 +34,9 @@ Die folgenden Schritte sind für dieses Szenario erforderlich:
 
 ## <a name="step-1-set-up-the-application"></a>Schritt 1: Einrichten der Anwendung
 
-1. Erstellen Sie ein virtuelles IIS- **** Verzeichnis mit dem Namen XMLPersist mit Skriptberechtigungen. 
+1. Erstellen Sie ein virtuelles IIS-Verzeichnis namens **XMLPersist** mit Skriptberechtigungen. 
 
-2. Erstellen Sie zwei neue Textdateien in dem Ordner, auf den das virtuelle Verzeichnis zeigt, einen mit dem Namen " **XMLResponse. ASP**" und den anderen Namen " **default. htm**".
+2. Erstellen Sie zwei neue Textdateien in dem Ordner, auf den das virtuelle Verzeichnis verweist, eine mit dem Namen **XMLResponse.asp** und die andere mit dem Namen **Default.htm.**
 
 
 ## <a name="step-2-get-the-data"></a>Schritt 2: Abrufen der Daten
@@ -68,7 +68,7 @@ In this step, you will write the code to open an ADO **Recordset** and prepare t
         adoRec.Open strSQL, adoCon, adOpenStatic, adLockOptimistic, adCmdText 
    ```
 
-2. Stellen Sie sicher, dass Sie den Wert des Parameters Datenquelle in strCon in den Namen des Microsoft SQL Server-Computers ändern.
+2. Ändern Sie unbedingt den Wert des Datenquellenparameters in strCon in den Namen Ihres Microsoft SQL Server Computers.
 
 3. Lassen Sie die Datei geöffnet, und wechseln Sie zum nächsten Schritt.
 
@@ -92,15 +92,15 @@ Now that you have a **Recordset**, you need to send it to the client by saving i
     %> 
    ```
 
-   Beachten Sie, dass das ASP- **Antwort** Objekt als Ziel für die **** [Save](save-method-ado.md) -Methode des Recordset-Objekts angegeben wird. Das Ziel der **Save**-Methode kann jedes beliebige Objekt sein, das die **IStream**-Schnittstelle unterstützt, z. B. ein ADO-Objekt [Stream](stream-object-ado.md) oder ein Dateiname, der den vollständigen Pfad einschließt, unter dem das **Recordset**-Objekt gespeichert wird.
+   Beachten Sie, dass das ASP **Response-Objekt** als Ziel für die **Recordset** [Save-Methode](save-method-ado.md) angegeben ist. Das Ziel der **Save**-Methode kann jedes beliebige Objekt sein, das die **IStream**-Schnittstelle unterstützt, z. B. ein ADO-Objekt [Stream](stream-object-ado.md) oder ein Dateiname, der den vollständigen Pfad einschließt, unter dem das **Recordset**-Objekt gespeichert wird.
 
-2. Save and close XMLResponse.asp before going to the next step. Kopieren Sie auch die Datei Datei Adovbs. Inc aus dem\\Ordner C\\: Program\\Files\\Common Files System ADO in den Ordner, in dem Sie die Datei XMLResponse. ASP haben.
+2. Save and close XMLResponse.asp before going to the next step. Kopieren Sie außerdem die Datei "adovbs.inc" aus dem Ordner "C: \\ Program Files Common Files System \\ \\ \\ Ado" in denselben Ordner, in dem Sie die Datei "XMLResponse.asp" haben.
 
-## <a name="step-4-receive-and-display-the-data"></a>Schritt 4: empfangen und Anzeigen der Daten
+## <a name="step-4-receive-and-display-the-data"></a>Schritt 4: Empfangen und Anzeigen der Daten
 
-In diesem Schritt erstellen Sie eine HTML-Datei mit einem eingebetteten [RDS. DataControl](datacontrol-object-rds.md) -Objekt, das auf die XMLResponse. ASP-Datei zeigt, um das **Recordset**abzurufen. 
+In diesem Schritt erstellen Sie eine HTML-Datei mit einem eingebetteten [RDS. DataControl-Objekt,](datacontrol-object-rds.md) das auf die Datei XMLResponse.asp zeigt, um das **Recordset** abzurufen. 
 
-1. Öffnen Sie Default. htm mit einem Text-Editor wie Windows Notepad, und fügen Sie den folgenden Code hinzu. Ersetzen Sie "SQLServer" in der URL durch den Namen Ihres Servercomputers.
+1. Öffnen Sie default.htm mit einem Text-Editor, z. B. Windows Editor, und fügen Sie den folgenden Code hinzu. Ersetzen Sie "sqlserver" in der URL durch den Namen Ihres Servercomputers.
 
    ```html 
     
@@ -123,9 +123,9 @@ In diesem Schritt erstellen Sie eine HTML-Datei mit einem eingebetteten [RDS. Da
     </HTML> 
    ```
 
-2. Beenden Sie die Datei default. htm, und speichern Sie Sie in dem Ordner, in dem Sie xmlResponse. ASP gespeichert haben. 
+2. Schließen Sie die default.htm Datei, und speichern Sie sie in demselben Ordner, in dem Sie XMLResponse.asp gespeichert haben. 
 
-3. Öffnen Sie mit Internet Explorer 4,0 oder höher die URL `https://<sqlserver>/XMLPersist/default.htm` , und beobachten Sie die Ergebnisse. Die Daten werden in einer gebundenen DHTML-Tabelle angezeigt. 
+3. Öffnen Sie mit Internet Explorer 4.0 oder höher die URL, `https://<sqlserver>/XMLPersist/default.htm` und beobachten Sie die Ergebnisse. Die Daten werden in einer gebundenen DHTML-Tabelle angezeigt. 
 
 4. Öffnen Sie nun die `https://<sqlserver>/XMLPersist/XMLResponse.asp` URL, und beobachten Sie die Ergebnisse. Der XML-Code wird angezeigt.
 

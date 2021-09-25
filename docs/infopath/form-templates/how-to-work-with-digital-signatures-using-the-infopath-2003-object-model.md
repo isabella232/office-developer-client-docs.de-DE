@@ -4,16 +4,16 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
-- Digitale Signaturen [infopath 2007], infopath 2003-kompatible Formularvorlagen,InfoPath 2003-kompatible Formularvorlagen, digitale Signaturen
-localization_priority: Normal
+- digitale Signaturen [infopath 2007], infopath 2003-kompatible Formularvorlagen, InfoPath 2003-kompatible Formularvorlagen, digitale Signaturen
+ms.localizationpriority: medium
 ms.assetid: d6318238-fd45-4854-a3c9-c27c5685bd6b
 description: Das InfoPath 2003-kompatible Objektmodell bietet Features zum programmgesteuerten Verwenden von digitalen Signaturen.
-ms.openlocfilehash: 86e2c85c7515c896612df09b6186462480ceff61
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c9e317d15536842f5a9378485829be19018baa6a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33433444"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59592844"
 ---
 # <a name="work-with-digital-signatures-using-the-infopath-2003-object-model"></a>Arbeiten mit digitalen Signaturen mithilfe des InfoPath 2003-Objektmodells
 
@@ -43,15 +43,15 @@ Das Objektmodell für digitale Signaturen stellt das folgende Ereignis bereit.
   
 |**Name**|**Beschreibung**|
 |:-----|:-----|
-|[OnSign](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnSign.aspx) <br/> |Tritt ein, nachdem eine signierbare Datengruppe zum Signieren ausgewählt wurde.  <br/> Mithilfe dieses Ereignisses können Sie die in der digitalen Signatur gespeicherten Daten bearbeiten. So können Sie beispielsweise Daten eines vertrauenswürdigen Zeitstempelservers oder eine serverseitige Gegensignatur der Transaktion hinzufügen. Sie können mit diesem Ereignis auch Signaturen blockieren, wenn der aktuelle Benutzer kein Mitglied einer bestimmten Gruppe ist.  <br/> |
+|[Onsign](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnSign.aspx) <br/> |Tritt ein, nachdem eine signierbare Datengruppe zum Signieren ausgewählt wurde.  <br/> Mithilfe dieses Ereignisses können Sie die in der digitalen Signatur gespeicherten Daten bearbeiten. So können Sie beispielsweise Daten eines vertrauenswürdigen Zeitstempelservers oder eine serverseitige Gegensignatur der Transaktion hinzufügen. Sie können mit diesem Ereignis auch Signaturen blockieren, wenn der aktuelle Benutzer kein Mitglied einer bestimmten Gruppe ist.  <br/> |
    
-Das **OnSign-Ereignis** gibt einen Verweis auf das [SignEventObject-Objekt](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SignEventObject.aspx) zurück, das die folgenden Eigenschaften bietet. 
+Das **OnSign-Ereignis** gibt einen Verweis auf das [SignEventObject-Objekt](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SignEventObject.aspx) zurück, das die folgenden Eigenschaften bereitstellt. 
   
 |**Name**|**Beschreibung**|
 |:-----|:-----|
-|[ReturnStatus](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SignEvent.ReturnStatus.aspx) <br/> |Ruft einen Wert vom Typ **Boolean** ab, der den Rückgabestatus des **OnSign**-Ereignisses angibt, oder legt diesen Wert fest.  <br/> |
-|[SignedDataBlock](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SignEvent.SignedDataBlock.aspx) <br/> |Ruft den signierten Datenblock ab, durch den das **OnSign**-Ereignis ausgelöst wurde.  <br/> |
-|[XDocument](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SignEvent.XDocument.aspx) <br/> |Ruft einen Verweis auf das **XDocument**-Objekt ab, das dem **OnSign**-Ereignis zugeordnet ist.  <br/> |
+|[Returnstatus](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SignEvent.ReturnStatus.aspx) <br/> |Ruft einen Wert vom Typ **Boolean** ab, der den Rückgabestatus des **OnSign**-Ereignisses angibt, oder legt diesen Wert fest.  <br/> |
+|[Signeddatablock](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SignEvent.SignedDataBlock.aspx) <br/> |Ruft den signierten Datenblock ab, durch den das **OnSign**-Ereignis ausgelöst wurde.  <br/> |
+|[Xdocument](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SignEvent.XDocument.aspx) <br/> |Ruft einen Verweis auf das **XDocument**-Objekt ab, das dem **OnSign**-Ereignis zugeordnet ist.  <br/> |
    
 ### <a name="collections-and-objects"></a>Auflistungen und Objekte
 
@@ -59,16 +59,16 @@ Das Objektmodell für digitale Signaturen stellt die folgenden Auflistungen bere
   
 |**Name**|**Beschreibung**|
 |:-----|:-----|
-|[SignedDataBlocksCollection](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SignedDataBlocksCollection.aspx) <br/> |Die Auflistung der [SignedDataBlockObject-Objekte](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SignedDataBlockObject.aspx) in der Formularvorlage, wie in der Formulardefinitionsdatei (XSF) definiert.  <br/> Die **SignedDataBlocksCollection**-Auflistung implementiert Eigenschaften, die den Zugriff auf die einem Formular zugeordneten **SignedDataBlockObjects**-Objekte ermöglichen. Auf **die SignedDataBlocks-Auflistung** kann über die [SignedDataBlocks-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocument2.SignedDataBlocks.aspx) des [XDocument-Objekts zugegriffen](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XDocument.aspx) werden.  <br/> |
-|[SignaturesCollection](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SignaturesCollection.aspx) <br/> |Enthält eine Auflistung von [SignatureObject-Objekten](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SignatureObject.aspx) für jedes **SignedDataBlockObject-Objekt** im Formular.  <br/> Die **SignaturesCollection**-Auflistung implementiert Eigenschaften und eine Methode, um auf die zugeordneten **SignatureObject**-Objekte eines Formulars zuzugreifen und eine Signatur zu erstellen. Der Zugriff darauf ist über das **SignedDataBlockObject**-Objekt möglich. <br/> Wenn Sie die [Create-Methode](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Signatures.Create.aspx) der **SignaturesCollection-Auflistung** verwenden, beachten Sie, dass die Signatur erst geschrieben wird, wenn die [Sign-Methode](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Signature.Sign.aspx) für das **SignatureObject-Objekt aufgerufen** wird. Diese Methoden können nur vom **OnSign**-Ereignishandler einer vollständig vertrauenswürdigen Formularvorlage aus aufgerufen werden.  <br/> |
+|[Signeddatablockscollection](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SignedDataBlocksCollection.aspx) <br/> |Die Auflistung der [SignedDataBlockObject-Objekte](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SignedDataBlockObject.aspx) in der Formularvorlage gemäß definition in der Formulardefinitionsdatei (XSF).  <br/> Die **SignedDataBlocksCollection**-Auflistung implementiert Eigenschaften, die den Zugriff auf die einem Formular zugeordneten **SignedDataBlockObjects**-Objekte ermöglichen. Auf **die SignedDataBlocks-Auflistung** kann über die [SignedDataBlocks-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocument2.SignedDataBlocks.aspx) des [XDocument-Objekts](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.XDocument.aspx) zugegriffen werden.  <br/> |
+|[Signaturescollection](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SignaturesCollection.aspx) <br/> |Enthält eine Auflistung von [SignatureObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SignatureObject.aspx) -Objekten für jedes **SignedDataBlockObject** im Formular.  <br/> Die **SignaturesCollection**-Auflistung implementiert Eigenschaften und eine Methode, um auf die zugeordneten **SignatureObject**-Objekte eines Formulars zuzugreifen und eine Signatur zu erstellen. Der Zugriff darauf ist über das **SignedDataBlockObject**-Objekt möglich. <br/> Beachten Sie bei Verwendung der [Create-Methode](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Signatures.Create.aspx) der **SignaturesCollection-Auflistung,** dass die Signatur erst geschrieben wird, wenn die [Sign-Methode](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Signature.Sign.aspx) für das **SignatureObject-Objekt** aufgerufen wird. Diese Methoden können nur vom **OnSign**-Ereignishandler einer vollständig vertrauenswürdigen Formularvorlage aus aufgerufen werden.  <br/> |
    
 Das Objektmodell für digitale Signaturen stellt die folgenden Objekte bereit.
   
 |**Name**|**Beschreibung**|
 |:-----|:-----|
-|[SignedDataBlockObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SignedDataBlockObject.aspx) <br/> |Stellt eine signierbare Datengruppe in einem Formular dar. Das **SignedDataBlock**-Objekt stellt eine Reihe von Eigenschaften und eine Methode für die programmgesteuerte Interaktion mit einer signierbaren Datengruppe bereit.<br/> |
-|[SignatureObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SignatureObject.aspx) <br/> |Stellt eine digitale Signatur dar, die einem Formular oder einer signierbaren Datengruppe in einem Formular hinzugefügt wurde. Die **SignatureObject-Auflistung** implementiert Eigenschaften, die verwendet werden können, um Informationen zur digitalen Signatur abzurufen, und die [Sign-Methode](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Signature.Sign.aspx) zum Schreiben des digitalen #A0 und zum Berechnen des kryptografischen Hashwerts.  <br/> |
-|[CertificateObject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.CertificateObject.aspx) <br/> |Stellt das digitale X.509-Zertifikat dar, das zum Erstellen der Signatur verwendet wurde.  <br/> |
+|[Signeddatablockobject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SignedDataBlockObject.aspx) <br/> |Stellt eine signierbare Datengruppe in einem Formular dar. Das **SignedDataBlock**-Objekt stellt eine Reihe von Eigenschaften und eine Methode für die programmgesteuerte Interaktion mit einer signierbaren Datengruppe bereit.<br/> |
+|[Signatureobject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SignatureObject.aspx) <br/> |Stellt eine digitale Signatur dar, die einem Formular oder einer signierbaren Datengruppe in einem Formular hinzugefügt wurde. Die **SignatureObject** -Auflistung implementiert Eigenschaften, die verwendet werden können, um Informationen über die digitale Signatur abzurufen, und die [Sign-Methode](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.Signature.Sign.aspx) zum Schreiben des XML-Blocks für digitale Signaturen und zum Berechnen des kryptografischen Hashwerts.  <br/> |
+|[Certificateobject](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.CertificateObject.aspx) <br/> |Stellt das digitale X.509-Zertifikat dar, das zum Erstellen der Signatur verwendet wurde.  <br/> |
    
 ## <a name="working-with-digital-signatures-programmatically"></a>Programmgesteuertes Arbeiten mit digitalen Signaturen
 

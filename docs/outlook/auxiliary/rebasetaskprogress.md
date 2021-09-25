@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8b8368d2-b04b-42a5-fdc3-955fc873c2f5
 description: Meldet den Fortschritt für die Aufzählung und Neubasierung von Terminen.
-ms.openlocfilehash: e5df0cd6df10ab86b1a125b9807637438976726f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 8ea71e8a76baf8b7f69afa90ac9f0c06c1a64a1b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326453"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614311"
 ---
 # <a name="rebasetaskprogress"></a>RebaseTaskProgress
 
@@ -24,8 +24,8 @@ Meldet den Fortschritt für die Aufzählung und Neubasierung von Terminen.
 |:-----|:-----|
 |Headerdatei  <br/> |tzmovelib.h  <br/> |
 |Implementiert von:  <br/> |MAPI-Clientanwendungen  <br/> |
-|Aufgerufen von:  <br/> |Outlook-Neubasierungsobjekt  <br/> |
-|Zeigertyp:  <br/> |**PFNREBASETASKPROGRESS** gemäß definition in tzmovelib.h  <br/> |
+|Aufgerufen von:  <br/> |Outlook-Basisobjekt  <br/> |
+|Zeigertyp:  <br/> |**PFNREBASETASKPROGRESS** gemäß Definition in tzmovelib.h  <br/> |
    
 ```cpp
 void STDAPICALLTYPE RebaseTaskProgress(  
@@ -41,11 +41,11 @@ void STDAPICALLTYPE RebaseTaskProgress(
 
 _ulMin_
   
-> [in] Das niedrige Ende des zu verarbeitenden Terminbereichs. In der Regel ist es null.
+> [in] Das untere Ende des Bereichs von Terminen, die verarbeitet werden. Normalerweise ist dies Null.
     
 _ulMax_
   
-> [in] Das hohe Ende des zu verarbeitenden Terminbereichs. Dies ist in der Regel die Anzahl der Elemente im zu verarbeitende Kalenderordner.
+> [in] Das obere Ende des Bereichs von Terminen, die verarbeitet werden. Dies ist in der Regel die Anzahl der Elemente im Kalenderordner, der verarbeitet wird.
     
 _ulCur_
   
@@ -53,19 +53,19 @@ _ulCur_
     
 _State_
   
-> [in] Ein Wert, der den Status des verarbeiteten Elements angibt. Die Enumeration **REBASE_APPT_STATE** in tzmovelib.h definiert.  _State_ hat einen der folgenden Werte: 
+> [in] Ein Wert, der den Status des verarbeiteten Elements angibt. Die Enumeration **REBASE_APPT_STATE** ist in tzmovelib.h definiert.  _State_ hat einen der folgenden Werte: 
     
-   - **REBASE_APPT_STATE_SCANNING_EXAMINING** – Scannen und Untersuchen eines Elements. 
+   - **REBASE_APPT_STATE_SCANNING_EXAMINING** : Scannen und Untersuchen eines Elements. 
     
-   - **REBASE_APPT_STATE_SCANNING_FOUND** – Ein Element wurde gescannt und gefunden. 
+   - **REBASE_APPT_STATE_SCANNING_FOUND** : Ein Element wird gescannt und gefunden. 
     
-   - **REBASE_APPT_STATE_BEGIN** – Fixieren und Starten eines Elements. 
+   - **REBASE_APPT_STATE_BEGIN** : Korrigieren und Starten eines Elements. 
     
-   - **REBASE_APPT_STATE_REBASING** – Fixieren und Anpassen eines Elements. 
+   - **REBASE_APPT_STATE_REBASING** : Korrigieren und Anpassen eines Elements. 
     
-   - **REBASE_APPT_STATE_SENDING** – Beheben und Senden eines Besprechungsupdates. 
+   - **REBASE_APPT_STATE_SENDING** – Korrigieren und Senden eines Besprechungsupdates. 
     
-   - **REBASE_APPT_STATE_DONE** – Fixieren und Fertig mit einem Element. 
+   - **REBASE_APPT_STATE_DONE** : Korrigieren und Mit einem Element fertig. 
     
 _pRowCur_
   
@@ -75,9 +75,9 @@ _pRowCur_
 
 S_OK zurück, wenn der Aufruf erfolgreich war; andernfalls einen Fehlercode.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-MAPI-Clientanwendungen, die die [IOlkApptRebaser-Schnittstelle](iolkapptrebaser.md) verwenden, implementieren diese Funktion, um die Elementverarbeitung nachzuverfolgen. 
+MAPI-Clientanwendungen, die die [IOlkApptRebaser-Schnittstelle](iolkapptrebaser.md) verwenden, implementieren diese Funktion zum Nachverfolgen der Elementverarbeitung. 
   
 ## <a name="see-also"></a>Siehe auch
 

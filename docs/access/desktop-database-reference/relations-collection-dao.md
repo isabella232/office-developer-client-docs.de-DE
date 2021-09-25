@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197067(v=office.15)
 ms:contentKeyID: 48546153
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: fc60e36abbb353a178864b488a738fcf3247e1a1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: afa1880b97c2e5442f8c9833640e3ca8c001dd0e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306972"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601919"
 ---
 # <a name="relations-collection-dao"></a>Relations-Auflistung (DAO)
 
@@ -21,7 +21,7 @@ ms.locfileid: "32306972"
 
 Eine **Relations**-Auflistung enthält gespeicherte **Relation**-Objekte für ein **Database**-Objekt (gilt nur für Microsoft Access-Datenbanken).
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Sie können das **Relation**-Objekt verwenden, um neue Beziehungen zu erstellen und vorhandene Beziehungen in der Datenbank zu untersuchen. Wenn Sie der **Relations**-Auflistung ein **Relation**-Objekt hinzufügen möchten, erstellen Sie es zunächst mit der **CreateRelation**-Methode und fügen es dann an die **Relations**-Auflistung an, indem Sie die **Append**-Methode verwenden. Dadurch wird das **Relation**-Objekt gespeichert, wenn Sie das **Database**-Objekt schließen. Wenn Sie ein **Relation**-Objekt aus der Auflistung entfernen möchten, verwenden Sie die **Delete**-Methode.
 
@@ -29,9 +29,9 @@ Der Verweis auf ein **Relation**-Objekt in einer Auflistung erfolgt über dessen
 
 **Relations**(0)
 
-**Beziehungen** ("Name")
+**Beziehungen**("Name")
 
-**Beziehungs**\!\[Name\]
+ \! Beziehungen \[ Namen\]
 
 ## <a name="example"></a>Beispiel
 
@@ -96,7 +96,7 @@ This example shows how an existing **Relation** object can control data entry. T
 
 <br/>
 
-This example uses the **CreateRelation** method to create a **Relation** between the Employees **TableDef** and a new **TableDef** called Departments. Außerdem wird gezeigt, wie die Erstellung einer neuen **Beziehung** alle erforderlichen **Indizes** in der Fremdtabelle (der DepartmentsEmployees-Index in der Employees-Tabelle) erstellt.
+This example uses the **CreateRelation** method to create a **Relation** between the Employees **TableDef** and a new **TableDef** called Departments. Außerdem wird veranschaulicht, wie durch das Erstellen einer neuen **Beziehung** auch alle erforderlichen **Indizes** in der Fremdtabelle erstellt werden (die Tabelle "DepartmentsEmployees Index" in der Tabelle "Employees").
 
 ```vb
     Sub CreateRelationX() 

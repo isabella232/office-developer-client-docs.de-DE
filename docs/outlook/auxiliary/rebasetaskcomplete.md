@@ -4,19 +4,19 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2de5c77c-3fac-cfb6-3719-68df4013cf11
-description: Meldet den Abschluss der Neubasierung von Terminen.
-ms.openlocfilehash: 9fab0d06bf0b9856b9a968f5c0db1bb15b0fe0bd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: Meldet den Abschluss für die Neubasierung von Terminen.
+ms.openlocfilehash: 49061cf21f4a6ffd3218bac2470a1afc6e2ebf81
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32328322"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614332"
 ---
 # <a name="rebasetaskcomplete"></a>RebaseTaskComplete
 
-Meldet den Abschluss der Neubasierung von Terminen.
+Meldet den Abschluss für die Neubasierung von Terminen.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -24,8 +24,8 @@ Meldet den Abschluss der Neubasierung von Terminen.
 |:-----|:-----|
 |Headerdatei  <br/> |tzmovelib.h  <br/> |
 |Implementiert von:  <br/> |MAPI-Clientanwendungen  <br/> |
-|Aufgerufen von:  <br/> |Outlook-Neubasierungsobjekt  <br/> |
-|Zeigertyp:  <br/> |**PFNREBASETASKCOMPLETE** gemäß definition in tzmovelib.h  <br/> |
+|Aufgerufen von:  <br/> |Outlook-Basisobjekt  <br/> |
+|Zeigertyp:  <br/> |**PFNREBASETASKCOMPLETE** gemäß Definition in tzmovelib.h  <br/> |
    
 ```cpp
 void STDAPICALLTYPE RebaseTaskComplete(  
@@ -42,7 +42,7 @@ void STDAPICALLTYPE RebaseTaskComplete(
 
 _ulRowIndex_
   
-> [in] Die Zeile, die verarbeitet wurde. Dieser Index bezieht sich auf die **[SRowSet-Struktur,](https://msdn.microsoft.com/library/7e3761be-afd6-46cb-9a08-25e9016c1241%28Office.15%29.aspx)** die an [IOlkApptRebaser::BeginRebaseAppointments übergeben wird.](iolkapptrebaser-beginrebaseappointments.md)
+> [in] Die Zeile, die verarbeitet wurde. Dieser Index bezieht sich auf die **[SRowSet-Struktur,](https://msdn.microsoft.com/library/7e3761be-afd6-46cb-9a08-25e9016c1241%28Office.15%29.aspx)** die an [IOlkApptRebaser::BeginRebaseAppointments](iolkapptrebaser-beginrebaseappointments.md)übergeben wird.
     
 _pRowCur_
   
@@ -60,7 +60,7 @@ _fSentUpdate_
   
 > [in] Gibt an, ob eine Besprechungsaktualisierungsnachricht gesendet wurde. 
     
-_pError_
+_Perror_
   
 > [in] Ein Zeiger auf eine **MAPIERROR-Struktur** mit erweiterten Fehlerinformationen. 
     
@@ -68,7 +68,7 @@ _pError_
 
 S_OK zurück, wenn der Aufruf erfolgreich war; andernfalls einen Fehlercode.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 MAPI-Clientanwendungen, die die [IOlkApptRebaser-Schnittstelle](iolkapptrebaser.md) verwenden, implementieren diese Funktion, um den Abschluss von Elementupdates nachzuverfolgen. 
   

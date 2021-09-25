@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagAttachmentFlags
 api_type:
 - HeaderDef
 ms.assetid: 42981aac-f9e7-45dd-91a2-15d9784f30aa
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: d494f1f14daff75be55e910da56204ecb3dbcf83
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: a4f1ab8d5d0f68f9573b9f941d5889ab80cb2b4b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345800"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59575064"
 ---
 # <a name="pidtagattachmentflags-canonical-property"></a>PidTagAttachmentFlags (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32345800"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt eine spezielle Behandlung für dieses Attachment-Objekt an.
+Gibt eine besondere Behandlung für dieses Attachment-Objekt an.
   
 |||
 |:-----|:-----|
@@ -34,9 +34,9 @@ Gibt eine spezielle Behandlung für dieses Attachment-Objekt an.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Muss 0x00000000 werden, es sei denn, es werden andere Protokolle außer Kraft gesetzt, die das Message- und Attachment-Objektprotokoll erweitern, wie in [[MS-OXCMSG] erwähnt.](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+Muss 0x00000000 werden, es sei denn, sie werden von anderen Protokollen außer Kraft gesetzt, die das Message- und Attachment-Objektprotokoll wie in [[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx) angegeben erweitern.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -48,17 +48,17 @@ Muss 0x00000000 werden, es sei denn, es werden andere Protokolle außer Kraft ge
     
 [[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften und Vorgänge für Termin-, Besprechungs- und Antwortnachrichten an.
+> Gibt die Eigenschaften und Vorgänge für Termin-, Besprechungsanfrage- und Antwortnachrichten an.
     
 ### <a name="header-files"></a>Headerdateien
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -66,9 +66,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

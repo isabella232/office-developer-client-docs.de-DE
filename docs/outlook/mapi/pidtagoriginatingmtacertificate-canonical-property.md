@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagOriginatingMtaCertificate
 api_type:
 - COM
 ms.assetid: f6b7ff0c-19a0-4cad-8868-c05397fcebf4
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 6f78609537b85a89617e7b2fa8f30a4ba952805b
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 74cb85228ef64c2b6dfe1c31ddfb6efb43ec2814
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33414809"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59574994"
 ---
 # <a name="pidtagoriginatingmtacertificate-canonical-property"></a>PidTagOriginatingMtaCertificate (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "33414809"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält einen Bezeichner für den Nachrichtenübertragungs-Agent (Message Transfer Agent, MTA), der die Nachricht stammt.
+Enthält einen Bezeichner für den Nachrichtenübertragungs-Agent (Message Transfer Agent, MTA), von dem die Nachricht stammt.
   
 |||
 |:-----|:-----|
@@ -34,11 +34,11 @@ Enthält einen Bezeichner für den Nachrichtenübertragungs-Agent (Message Trans
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Server  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft ist, falls festgelegt, für gesendete Nachrichten im Ordner "Gesendete Elemente" verfügbar.
   
-Diese Eigenschaft entspricht dem X.400-Bericht pro Nachricht-Attribut.
+Diese Eigenschaft entspricht dem Attribut "X.400 Report per Message".
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -46,11 +46,11 @@ Diese Eigenschaft entspricht dem X.400-Bericht pro Nachricht-Attribut.
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -58,9 +58,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

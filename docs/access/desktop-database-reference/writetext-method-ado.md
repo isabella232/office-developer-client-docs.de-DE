@@ -1,20 +1,20 @@
 ---
-title: WRITETEXT-Methode (ADO)
+title: WriteText-Methode (ADO)
 TOCTitle: WriteText method (ADO)
 ms:assetid: 1ca2d9d5-11f4-d088-6fc3-53240208bb09
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248963(v=office.15)
 ms:contentKeyID: 48543574
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 92983163a909e72c3da142ebcf63b7e0723e96af
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: b61687a933ff7a9b52ebd10958aa080aa383723b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308267"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593215"
 ---
-# <a name="writetext-method-ado"></a>WRITETEXT-Methode (ADO)
+# <a name="writetext-method-ado"></a>WriteText-Methode (ADO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -22,7 +22,7 @@ Schreibt eine angegebene Textzeichenfolge in ein [Stream](stream-object-ado.md)-
 
 ## <a name="syntax"></a>Syntax
 
-*Stream*. WRITETEXT-*Daten*, *Optionen*
+*Stream*. WriteText *Data*, *Options*
 
 ## <a name="parameters"></a>Parameter
 
@@ -31,7 +31,7 @@ Schreibt eine angegebene Textzeichenfolge in ein [Stream](stream-object-ado.md)-
 |*Daten* |Ein Wert vom Datentyp **String**, der die Textzeichenfolge enthält, die geschrieben werden soll.|
 |*Options* |Optional. Ein [StreamWriteEnum](streamwriteenum.md)-Wert, der angibt, ob am Ende der angegebenen Zeichenfolge ein Zeilentrennzeichen geschrieben werden muss.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die angegebenen Zeichenfolgen werden ohne Leerzeichen oder Buchstaben zwischen den einzelnen Zeichenfolgen in das **Stream**-Objekt geschrieben.
 

@@ -1,5 +1,5 @@
 ---
-title: DbEngine. Rollback-Methode (DAO)
+title: DBEngine.Rollback-Methode (DAO)
 TOCTitle: Rollback Method
 ms:assetid: da7e2fe0-c837-7b1e-d35c-98e6cb0a7bbe
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835327(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1053424
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 378baa8cd2923366a453a6cf23d51af0ab0df5ee
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: faac22b235b9ac988cdde5198bc925b25d1a945f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294204"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558429"
 ---
-# <a name="dbenginerollback-method-dao"></a>DbEngine. Rollback-Methode (DAO)
+# <a name="dbenginerollback-method-dao"></a>DBEngine.Rollback-Methode (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -29,9 +29,9 @@ Beendet die aktuelle Transaktion und setzt die Datenbanken im **Workspace**-Obje
 
 *Ausdruck* . Rollback
 
-*Ausdruck* Eine Variable, die ein **DBEngine** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **DBEngine**-Objekt darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Mithilfe der Transaktionsmethoden **BeginTrans**, **CommitTrans** und **Rollback** wird die Transaktionsverarbeitung während einer Sitzung verwaltet, die durch ein **Workspace**-Objekt definiert wurde. Sie verwenden diese Methoden mit einem **Workspace**-Objekt, wenn Sie eine Reihe von an den Datenbanken vorgenommenen Änderungen in einer Sitzung als eine Einheit verarbeiten möchten.
 

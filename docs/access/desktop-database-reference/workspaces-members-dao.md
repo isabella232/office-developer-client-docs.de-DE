@@ -1,20 +1,20 @@
 ---
-title: Workspaces-Elemente (DAO)
+title: Workspaces-Mitglieder (DAO)
 TOCTitle: Workspaces Members
 ms:assetid: 5eaf6de5-44dc-5566-a98f-db54aecf15cb
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194667(v=office.15)
 ms:contentKeyID: 48545141
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 6be2aba5ab072e40193aff11ab6be54ba6c94f34
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 5f001a49f3bb47a56191dde4aa2330eb426f7bf2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32302604"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59584969"
 ---
-# <a name="workspaces-members-dao"></a>Workspaces-Elemente (DAO)
+# <a name="workspaces-members-dao"></a>Workspaces-Mitglieder (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -36,11 +36,11 @@ Eine Workspaces-Auflistung enthält alle aktiven, nicht ausgeblendeten Workspace
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong><a href="workspaces-append-method-dao.md">Append</a></strong></p></td>
+<td><p><strong><a href="workspaces-append-method-dao.md">Anfügen</a></strong></p></td>
 <td><p>Fügt der <strong>Workspaces</strong>-Auflistung ein neues <strong>Workspace</strong>-Objekt hinzu.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="workspaces-delete-method-dao.md">Löschen</a></strong></p></td>
+<td><p><strong><a href="workspaces-delete-method-dao.md">Delete</a></strong></p></td>
 <td><p>Löscht das angegebene <strong>Workspace</strong>-Objekt aus der <strong>Workspaces</strong>-Auflistung.</p></td>
 </tr>
 <tr class="odd">

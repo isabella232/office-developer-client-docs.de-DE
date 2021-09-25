@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249681(v=office.15)
 ms:contentKeyID: 48546483
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 5b7d0bab179cd7ec658bc04cee05f486947f38c9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: a18d861d8af77b3f269e9b26aafdd5d44afbec97
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306020"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585053"
 ---
 # <a name="what-you-can-do-with-ado"></a>Was Sie mit ADO tun können
 
@@ -25,7 +25,7 @@ ADO bietet Entwicklern ein leistungsfähiges, logisches Objektmodell, mit dem si
 
 - Zugreifen über das Internet auf Informationen in einem Dateispeicher.
 
-- Bearbeiten von Nachrichten und Ordnern in einem e-Mail-System.
+- Bearbeiten von Nachrichten und Ordnern in einem E-Mail-System.
 
 - Speichern von Daten aus einer Datenbank in einer XML-Datei.
 

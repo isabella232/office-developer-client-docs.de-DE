@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm165020
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: acf541bde41c282b752532cb74d5ec4fa4a13ca9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 0e25214d4ca7e6779efa127da71f63edef429e23
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308659"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585319"
 ---
 # <a name="setwarnings-macro-action"></a>SetWarnings-Makroaktion
 
@@ -25,7 +25,7 @@ ms.locfileid: "32308659"
 Verwenden Sie die **Warnmeldungen** -Aktion, um Systemmeldungen an- oder auszuschalten.
 
 > [!NOTE]
-> [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. 
+> Diese Aktion ist nicht zulässig, wenn die Datenbank nicht vertrauenswürdig ist. 
 
 ## <a name="setting"></a>Einstellung
 
@@ -45,13 +45,13 @@ Die **Warnmeldungen**-Aktion hat das folgende Argument.
 <tbody>
 <tr class="odd">
 <td><p><strong>Warnmeldungen An</strong></p></td>
-<td><p>Gibt an, ob Systemmeldungen angezeigt werden. Klicken Sie auf <strong>Ja</strong> (zum Aktivieren von Systemmeldungen) oder <strong>Nein</strong> (zum Deaktivieren von Systemmeldungen) im Feld <strong>Warnungen</strong> im im Abschnitt <strong>Aktionsargumente</strong> des Bereichs Makro-Generator. Die Standardeinstellung ist <strong>Nein</strong>.</p></td>
+<td><p>Gibt an, ob Systemmeldungen angezeigt werden. Klicken Sie im Feld <strong>"Warnungen</strong> an" im Abschnitt <strong>"Aktionsargumente"</strong> im Bereich "Makro-Generator" auf <strong>"Ja"</strong> (um Systemmeldungen zu aktivieren) oder auf <strong>"Nein"</strong> (um Systemmeldungen zu deaktivieren). Die Standardeinstellung ist <strong>Nein</strong>.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Mithilfe dieser Aktion können Sie verhindern, dass gebundene Warnmeldungen und Meldungsfelder das Makro anhalten. Fehlermeldungen werden jedoch immer angezeigt. Außerdem werden von Microsoft Access nur Dialogfelder angezeigt, in denen nicht nur eine Schaltfläche ausgewählt werden muss (wie **OK**, **Abbrechen**, **Ja** oder **Nein**), sondern eine Eingabe erforderlich ist. Dazu gehören z. B. alle Dialogfelder, in denen Sie Text eingeben oder unter verschiedenen Optionen auswählen müssen.
 

@@ -8,21 +8,21 @@ f1_keywords:
 - ExcelCursorProc
 keywords:
 - excelcursorproc-Funktion [excel 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 43759617-998d-4030-a17d-c4bbe35ffaf9
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: d3cc41487f0cae31e110249fe148f5370319a39a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 621a03c00ee4d1509edd3dd8b14a11dba9ba719a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33432492"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59584927"
 ---
 # <a name="excelcursorproc"></a>ExcelCursorProc
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Wenn ein modales Dialogfeld über dem Fenster Microsoft Excel angezeigt wird, ist der Cursor ein beschäftigter Cursor über Excel Fenster. Dieses **WndProc-Traping** WM_SETCURSOR Typ Windows Nachrichten und ändert den Cursor zurück in einen normalen Pfeil. 
+Wenn über dem Microsoft Excel Fenster ein modales Dialogfeld angezeigt wird, ist der Cursor ein beschäftigter Cursor über dem Excel Fenster. Mit diesem **WndProc** wird WM_SETCURSOR Typ Windows Nachrichten auffangen und der Cursor wieder in einen normalen Pfeil geändert. 
   
 ```cs
 LRESULT CALLBACK ExcelCursorProc(HWND hwnd, UINT wMsg, WPARAM wParam, LPARAM lParam);
@@ -32,7 +32,7 @@ LRESULT CALLBACK ExcelCursorProc(HWND hwnd, UINT wMsg, WPARAM wParam, LPARAM lPa
 
  _hWndDlg_ (**HWND**)
   
-Enthält das HWND-Windows-Handle des Dialogfelds.
+Enthält das HWND-Windows Handle des Dialogfelds.
   
  _message_ (**UINT**)
   
@@ -42,15 +42,15 @@ Die Nachricht, auf die reagiert werden soll.
   
  _lParam_ (**LPARAM**)
   
-Argumente, die von Windows.
+Von Windows übergebene Argumente.
   
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-LRESULT: 0, wenn die Nachricht verarbeitet wurde, andernfalls das Vom **Standard-WndProc zurückgegebene Ergebnis.**
+LRESULT: 0, wenn die Nachricht verarbeitet wurde, andernfalls das Ergebnis, das von der **Standard-WndProc** zurückgegeben wird.
   
 ### <a name="example"></a>Beispiel
 
-Den  `\SAMPLES\GENERIC\GENERIC.C` Quellcode für diese Funktion finden Sie unter. 
+Informationen zum Quellcode für diese Funktion finden Sie  `\SAMPLES\GENERIC\GENERIC.C` unter. 
   
 ## <a name="see-also"></a>Siehe auch
 

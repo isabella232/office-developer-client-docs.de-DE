@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm60025
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cf15b879-a47e-a5a5-bfdd-1d7ea423742f
 description: Bestimmt das Symbol, das neben einem Element in einem Kontext- oder Aktionstagmenü angezeigt wird.
-ms.openlocfilehash: 7ee9c4e7e857acb34ce75429aa0aaf679320b0e8
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 96610ad6e1add550ab6ed940b7dc2ccbfb8373da
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407375"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608613"
 ---
 # <a name="buttonface-cell-actions-section"></a>Zelle "ButtonFace" (Abschnitt "Actions")
 
@@ -23,24 +23,24 @@ Bestimmt das Symbol, das neben einem Element in einem Kontext- oder Aktionstagme
 > [!NOTE]
 > In früheren Versionen von Microsoft Visio werden Aktionstags als Smarttags bezeichnet. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Zeichenfolge in einer ButtonFace-Zelle stellt die ID einer Microsoft Office-Schaltflächenoberseite dar. Der Wert Null (0) oder ein Leerzeichen bedeutet, dass kein Symbol angezeigt wird. 
   
-Die IDs, die in der Zelle ButtonFace verwendet werden können, sind identisch mit den IDs, die mit der **FaceID-Eigenschaft** eines **CommandBarButton-Objekts verwendet** werden. Weitere Informationen zu diesen IDs finden Sie unter "Arbeiten mit Befehlsleistenschaltflächebildern" auf MSDN. 
+Die IDs, die in der Zelle ButtonFace verwendet werden können, entsprechen den IDs, die mit der **FaceID-Eigenschaft** eines **CommandBarButton-Objekts** verwendet werden. Weitere Informationen zu diesen IDs erhalten Sie, indem Sie auf MSDN nach "Arbeiten mit Befehlsleisten-Schaltflächenbildern" suchen. 
   
-Verwenden Sie zum Erhalten eines Verweises auf die Zelle ButtonFace anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft:** 
+Verwenden Sie Folgendes, um einen Verweis auf die Zelle "ButtonFace" anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |**Aktionen**:  *Name*  . **ButtonFace,**         wobei **Aktionen**.  *Name*  ist der Name der Aktionszeile  <br/> |
+|Zellenname:  <br/> |**Aktionen**:  *Name*  . **ButtonFace**         where **Actions**.  *Name*  ist der Name der Aktionszeile  <br/> |
    
-Um einen Verweis auf die ButtonFace-Zelle nach Index aus einem Programm zu erhalten, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle ButtonFace anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|
 |Abschnittsindex:  <br/> |**visSectionAction** <br/> |
-|Zeilenindex:  <br/> |**visRowAction**  +   *i,* **wobei i** = 0, 1, 2...  <br/> |
+|Zeilenindex:  <br/> |**visRowAction**  +   *i* where **i** = 0, 1, 2...  <br/> |
 |Zellenindex:  <br/> |**visActionButtonFace** <br/> |
    
 

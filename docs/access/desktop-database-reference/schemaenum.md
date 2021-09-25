@@ -1,18 +1,18 @@
 ---
-title: SchemaEnum (Access Desktop Database Reference)
+title: SchemaEnum (Access-Desktopdatenbankreferenz)
 TOCTitle: SchemaEnum
 ms:assetid: 6147b682-3c4f-ea91-fff6-ac73107d206d
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249359(v=office.15)
 ms:contentKeyID: 48545208
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: aa70f275de164716b5b3975b56588e9dc4aec1a5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: b1085695b76077e4041523def48944a48ffeeb65
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308863"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601807"
 ---
 # <a name="schemaenum"></a>SchemaEnum
 
@@ -20,15 +20,15 @@ ms.locfileid: "32308863"
 
 Der Typ des **Recordset** -Schemaobjekts wird angegeben, das von der [OpenSchema](openschema-method-ado.md)-Methode abgerufen wird.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Weitere Informationen zu der Funktion und den Spalten, die für jede ADO-Konstante zurückgegeben werden, finden Sie in den Themen von Anhang B der *OLE DB Programmer's Reference*. Die Namen der einzelnen Themen werden in Klammern im Abschnitt Description der folgenden Tabelle aufgeführt.
+Weitere Informationen zu der Funktion und den Spalten, die für jede ADO-Konstante zurückgegeben werden, finden Sie in den Themen von Anhang B der *OLE DB Programmer's Reference*. Der Name der einzelnen Themen wird im Abschnitt "Beschreibung" der folgenden Tabelle in Klammern aufgeführt.
 
-Weitere Informationen zu der Funktion und den Spalten, die für jede ADO MD-Konstante zurückgegeben werden, finden Sie in Kapitel 23 der Dokumentation zu *OLE DB für OLAP*. Die Namen der einzelnen Themen werden in Klammern aufgelistet und mit einem Sternchen (\*) in der Spalte Description der folgenden Tabelle gekennzeichnet.
+Weitere Informationen zu der Funktion und den Spalten, die für jede ADO MD-Konstante zurückgegeben werden, finden Sie in Kapitel 23 der Dokumentation zu *OLE DB für OLAP*. Der Name der einzelnen Themen wird in Klammern aufgeführt und in der Spalte "Beschreibung" der folgenden Tabelle mit einem Sternchen ( \* ) gekennzeichnet.
 
-Translate the data types of columns in the OLE DB documentation to ADO data types by referring to the Description column of the ADO [DataTypeEnum](datatypeenum.md) topic. Ein OLE DB-Datentyp von **\_DbType WSTR** entspricht beispielsweise einem ADO-Datentyp von **adWChar**.
+Translate the data types of columns in the OLE DB documentation to ADO data types by referring to the Description column of the ADO [DataTypeEnum](datatypeenum.md) topic. Beispielsweise entspricht ein OLE DB-Datentyp von **DBTYPE \_ WSTR** einem ADO-Datentyp von **adWChar.**
 
-ADO generates schema-like results for the constants, **adSchemaDBInfoKeywords** and **adSchemaDBInfoLiterals**. ADO erstellt ein **Recordset**-Objekt und füllt dann jede Zeile mit den Werten, die von den **IDBInfo:: GetKeywords** -und **IDBInfo:: GetLiteralInfo** -Methoden zurückgegeben werden. Weitere Informationen zu diesen Methoden finden Sie im Abschnitt IDBInfo der *OLE DB Programmer es Reference*.
+ADO generates schema-like results for the constants, **adSchemaDBInfoKeywords** and **adSchemaDBInfoLiterals**. ADO erstellt ein **Recordset-Objekt** und füllt dann jede Zeile mit den jeweils von den **IDBInfo::GetKeywords-** und **IDBInfo::GetLiteralInfo-Methoden** zurückgegebenen Werten. Weitere Informationen zu diesen Methoden finden Sie im IDBInfo-Abschnitt der *OLE DB-Programmierreferenz.*
 
 <br/>
 
@@ -94,12 +94,12 @@ COLLATION_NAME</p></td>
 TABLE_SCHEMA<br />
 TABLE_NAME<br />
 COLUMN_NAME<br />
-RECHTEFÜR<br />
-GRANTEE</p></td>
+GRANTOR<br />
+EMPFÄNGER</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adSchemaColumns</strong></p></td>
-<td><p>4</p></td>
+<td><p>4 </p></td>
 <td><p>Gibt die im Katalog definierten Tabellenspalten (einschließlich Sichten) zurück, auf die ein bestimmter Benutzer zugreifen kann. (COLUMNS-Rowset)</p></td>
 <td><p>TABLE_CATALOG<br />
 TABLE_SCHEMA<br />
@@ -117,7 +117,7 @@ COLUMN_NAME</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adSchemaConstraintColumnUsage</strong></p></td>
-<td><p>6</p></td>
+<td><p>6 </p></td>
 <td><p>Gibt die im Katalog definierten Spalten zurück, die von referenziellen Einschränkungen, eindeutigen Einschränkungen, CHECK-Einschränkungen und Assertionen verwendet werden und einem bestimmten Benutzer gehören. (CONSTRAINT_COLUMN_USAGE-Rowset)</p></td>
 <td><p>TABLE_CATALOG<br />
 TABLE_SCHEMA<br />
@@ -126,7 +126,7 @@ COLUMN_NAME</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adSchemaConstraintTableUsage</strong></p></td>
-<td><p>7</p></td>
+<td><p>7 </p></td>
 <td><p>Gibt die im Katalog definierten Tabellen zurück, die von referenziellen Einschränkungen, eindeutigen Einschränkungen, CHECK-Einschränkungen und Assertionen verwendet werden und einem bestimmten Benutzer gehören. (CONSTRAINT_TABLE_USAGE-Rowset)</p></td>
 <td><p>TABLE_CATALOG<br />
 TABLE_SCHEMA<br />
@@ -143,14 +143,14 @@ CUBE_NAME</p></td>
 <tr class="even">
 <td><p><strong>adSchemaDBInfoKeywords</strong></p></td>
 <td><p>30</p></td>
-<td><p>Gibt eine Liste anbieterspezifischer Schlüsselwörter zurück. (IDBInfo:: getKeywords *)</p></td>
-<td><p>&lt;Keine&gt;</p></td>
+<td><p>Gibt eine Liste anbieterspezifischer Schlüsselwörter zurück. (IDBInfo::GetKeywords *)</p></td>
+<td><p>&lt;Nichts&gt;</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adSchemaDBInfoLiterals</strong></p></td>
 <td><p>31</p></td>
-<td><p>Gibt eine Liste anbieterspezifischer Literale zurück, die in Textbefehlen verwendet werden. (IDBInfo:: GetLiteralInfo *)</p></td>
-<td><p>&lt;Keine&gt;</p></td>
+<td><p>Gibt eine Liste anbieterspezifischer Literale zurück, die in Textbefehlen verwendet werden. (IDBInfo::GetLiteralInfo *)</p></td>
+<td><p>&lt;Nichts&gt;</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adSchemaDimensions</strong></p></td>
@@ -186,17 +186,17 @@ HIERARCHY_UNIQUE_NAME</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adSchemaIndexes</strong></p></td>
-<td><p>12</p></td>
+<td><p>12 </p></td>
 <td><p>Gibt die im Katalog definierten Indizes zurück, die einem bestimmten Benutzer gehören. (INDEXES-Rowset)</p></td>
 <td><p>TABLE_CATALOG<br />
 TABLE_SCHEMA<br />
 INDEX_NAME<br />
-Typ<br />
+TYP<br />
 TABLE_NAME</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adSchemaKeyColumnUsage</strong></p></td>
-<td><p>8</p></td>
+<td><p>8 </p></td>
 <td><p>Gibt die im Katalog definierten Spalten zurück, die von einem bestimmten Benutzer als Schlüssel eingeschränkt werden. (KEY_COLUMN_USAGE-Rowset)</p></td>
 <td><p>CONSTRAINT_CATALOG<br />
 CONSTRAINT_SCHEMA<br />
@@ -225,7 +225,7 @@ LEVEL_UNIQUE_NAME</p></td>
 <td><p>CATALOG_NAME<br />
 SCHEMA_NAME<br />
 CUBE_NAME<br />
-MESSGRÖßE<br />
+MEASURE_NAME<br />
 MEASURE_UNIQUE_NAME</p></td>
 </tr>
 <tr class="odd">
@@ -243,7 +243,7 @@ MEMBER_NAME<br />
 MEMBER_UNIQUE_NAME<br />
 MEMBER_CAPTION<br />
 MEMBER_TYPE<br />
-Tree-Operator (Weitere Informationen finden Sie in der Dokumentation zu OLE DB für OLAP.)</p></td>
+Strukturoperator (Weitere Informationen finden Sie in der Dokumentation zu OLE DB für OLAP.)</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adSchemaPrimaryKeys</strong></p></td>
@@ -273,7 +273,7 @@ PARAMETER_NAME</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adSchemaProcedures</strong></p></td>
-<td><p>16</p></td>
+<td><p>16 </p></td>
 <td><p>Gibt die im Katalog definierten Prozeduren zurück, die einem bestimmten Benutzer gehören. (PROCEDURES-Rowset)</p></td>
 <td><p>PROCEDURE_CATALOG<br />
 PROCEDURE_SCHEMA<br />
@@ -298,7 +298,7 @@ PROPERTY_NAME</p></td>
 <td><p><strong>adSchemaProviderSpecific</strong></p></td>
 <td><p>-1</p></td>
 <td><p>Wird verwendet, wenn der Anbieter eigene, nicht standardmäßige Schemaabfragen definiert.</p></td>
-<td><p>&lt;Anbieter spezifisch&gt;</p></td>
+<td><p>&lt;Anbieterspezifisch&gt;</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adSchemaProviderTypes</strong></p></td>
@@ -309,7 +309,7 @@ BEST_MATCH</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>AdSchemaReferentialConstraints</strong></p></td>
-<td><p>9</p></td>
+<td><p>9 </p></td>
 <td><p>Gibt die im Katalog definierten referenziellen Einschränkungen zurück, die einem bestimmten Benutzer gehören. (REFERENTIAL_CONSTRAINTS-Rowset)</p></td>
 <td><p>CONSTRAINT_CATALOG<br />
 CONSTRAINT_SCHEMA<br />
@@ -317,7 +317,7 @@ CONSTRAINT_NAME</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adSchemaSchemata</strong></p></td>
-<td><p>17</p></td>
+<td><p>17 </p></td>
 <td><p>Gibt die Schemas (Datenbankobjekte) zurück, die einem bestimmten Benutzer gehören. (SCHEMATA-Rowset)</p></td>
 <td><p>CATALOG_NAME<br />
 SCHEMA_NAME<br />
@@ -325,9 +325,9 @@ SCHEMA_OWNER</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adSchemaSQLLanguages</strong></p></td>
-<td><p>18</p></td>
+<td><p>18 </p></td>
 <td><p>Gibt die Konformitätsebenen, die Optionen und die Dialekte zurück, die von den Verarbeitungsdaten der SQL-Implementierung unterstützt werden. (SQL_LANGUAGES-Rowset)</p></td>
-<td><p>&lt;Keine&gt;</p></td>
+<td><p>&lt;Nichts&gt;</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adSchemaStatistics</strong></p></td>
@@ -351,13 +351,13 @@ CONSTRAINT_TYPE</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adSchemaTablePrivileges</strong></p></td>
-<td><p>14</p></td>
+<td><p>14 </p></td>
 <td><p>Gibt die im Katalog definierten Tabellenberechtigungen zurück, die einem bestimmten Benutzer zur Verfügung stehen oder von diesem erteilt werden. (TABLE_PRIVILEGES-Rowset)</p></td>
 <td><p>TABLE_CATALOG<br />
 TABLE_SCHEMA<br />
 TABLE_NAME<br />
-RECHTEFÜR<br />
-GRANTEE</p></td>
+GRANTOR<br />
+EMPFÄNGER</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adSchemaTables</strong></p></td>
@@ -366,11 +366,11 @@ GRANTEE</p></td>
 <td><p>TABLE_CATALOG<br />
 TABLE_SCHEMA<br />
 TABLE_NAME<br />
-_TYPE</p></td>
+TABLE_TYPE</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adSchemaTranslations</strong></p></td>
-<td><p>21</p></td>
+<td><p> 21</p></td>
 <td><p>Gibt die im Katalog definierten Zeichenumwandlungen zurück, auf die ein bestimmter Benutzer zugreifen kann. (TRANSLATIONS-Rowset)</p></td>
 <td><p>TRANSLATION_CATALOG<br />
 TRANSLATION_SCHEMA<br />
@@ -385,14 +385,14 @@ TRANSLATION_NAME</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adSchemaUsagePrivileges</strong></p></td>
-<td><p>15</p></td>
+<td><p>15 </p></td>
 <td><p>Gibt die im Katalog definierten USAGE-Berechtigungen zurück, die einem bestimmten Benutzer zur Verfügung stehen oder von diesem erteilt werden. (USAGE_PRIVILEGES-Rowset)</p></td>
 <td><p>OBJECT_CATALOG<br />
 OBJECT_SCHEMA<br />
 OBJECT_NAME<br />
 OBJECT_TYPE<br />
-RECHTEFÜR<br />
-GRANTEE</p></td>
+GRANTOR<br />
+EMPFÄNGER</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adSchemaViewColumnUsage</strong></p></td>
@@ -422,7 +422,7 @@ VIEW_NAME</p></td>
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
 Paket: **com.ms.wfc.data**
 
@@ -437,127 +437,127 @@ Paket: **com.ms.wfc.data**
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums. Schema. ASSERTs</p></td>
+<td><p>AdoEnums.Schema.ASSERTS</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. Schema. CATALOGs</p></td>
+<td><p>AdoEnums.Schema.CATALOGS</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. Schema. CHARACTERSETS</p></td>
+<td><p>AdoEnums.Schema.CHARACTERSETS</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. Schema. CHECKCONSTRAINTS</p></td>
+<td><p>AdoEnums.Schema.CHECKCONSTRAINTS</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. Schema. COLLation</p></td>
+<td><p>AdoEnums.Schema.COLLATIONS</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. Schema. COLUMNPRIVILEGES</p></td>
+<td><p>AdoEnums.Schema.COLUMNPRIVILEGES</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. Schema. COLUMNS</p></td>
+<td><p>AdoEnums.Schema.COLUMNS</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. Schema. COLUMNSDOMAINUSAGE</p></td>
+<td><p>AdoEnums.Schema.COLUMNSDOMAINUSAGE</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. Schema. CONSTRAINTCOLUMNUSAGE</p></td>
+<td><p>AdoEnums.Schema.CONSTRAINTCOLUMNUSAGE</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. Schema. CONSTRAINTTABLEUSAGE</p></td>
+<td><p>AdoEnums.Schema.CONSTRAINTTABLEUSAGE</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. Schema. Cubes</p></td>
+<td><p>AdoEnums.Schema.CUBES</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. Schema. DBINFOKEYWORDS</p></td>
+<td><p>AdoEnums.Schema.DBINFOKEYWORDS</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. Schema. DBINFOLITERALS</p></td>
+<td><p>AdoEnums.Schema.DBINFOLITERALS</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. Schema. DIMENSIONs</p></td>
+<td><p>AdoEnums.Schema.DIMENSIONS</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. Schema. FOREIGNKEYS</p></td>
+<td><p>AdoEnums.Schema.FOREIGNKEYS</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. Schema. HIERARCHIEs</p></td>
+<td><p>AdoEnums.Schema.HIERARCHIES</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. Schema. INDEXes</p></td>
+<td><p>AdoEnums.Schema.INDEXES</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. Schema. KEYCOLUMNUSAGE</p></td>
+<td><p>AdoEnums.Schema.KEYCOLUMNUSAGE</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. Schema. LEVELS</p></td>
+<td><p>AdoEnums.Schema.LEVELS</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. Schema. MEASUREs</p></td>
+<td><p>AdoEnums.Schema.MEASURES</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. Schema. MEMBERS</p></td>
+<td><p>AdoEnums.Schema.MEMBERS</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. Schema. PRIMARy</p></td>
+<td><p>AdoEnums.Schema.PRIMARYKEYS</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. Schema. PROCEDURECOLUMNS</p></td>
+<td><p>AdoEnums.Schema.PROCEDURECOLUMNS</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. Schema. PROCEDUREPARAMETERS</p></td>
+<td><p>AdoEnums.Schema.PROCEDUREPARAMETERS</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. Schema. PROCEDURes</p></td>
+<td><p>AdoEnums.Schema.PROCEDURES</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. Schema. PROPERTIES</p></td>
+<td><p>AdoEnums.Schema.PROPERTIES</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. Schema. PROVIDERSPECIFIC</p></td>
+<td><p>AdoEnums.Schema.PROVIDERSPECIFIC</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. Schema. PROVIDERTYPES</p></td>
+<td><p>AdoEnums.Schema.PROVIDERTYPES</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. Schema. REFERENTIALCONTRAINTS</p></td>
+<td><p>AdoEnums.Schema.REFERENTIALCONTRAINTS</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. Schema. SCHEMATA</p></td>
+<td><p>AdoEnums.Schema.SCHEMATA</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. Schema. sqlLANGUAGEs</p></td>
+<td><p>AdoEnums.Schema.SQLLANGUAGES</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. Schema. STATISTICs</p></td>
+<td><p>AdoEnums.Schema.STATISTICS</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. Schema. TableSchema</p></td>
+<td><p>AdoEnums.Schema.TABLECONSTRAINTS</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. Schema. TableSchema-Berechtigungen</p></td>
+<td><p>AdoEnums.Schema.TABLEPRIVILEGES</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. Schema. TABLEs</p></td>
+<td><p>AdoEnums.Schema.TABLES</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. Schema. TRANSLATIONS</p></td>
+<td><p>AdoEnums.Schema.TRANSLATIONS</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. Schema. TRUSTEES</p></td>
+<td><p>AdoEnums.Schema.TRUSTEES</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. Schema. USAGEPRIVILEGES</p></td>
+<td><p>AdoEnums.Schema.USAGEPRIVILEGES</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. Schema. VIEWCOLUMNUSAGE</p></td>
+<td><p>AdoEnums.Schema.VIEWCOLUMNUSAGE</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. Schema. VIEWS</p></td>
+<td><p>AdoEnums.Schema.VIEWS</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. Schema. VIEWTABLEUSAGE</p></td>
+<td><p>AdoEnums.Schema.VIEWTABLEUSAGE</p></td>
 </tr>
 </tbody>
 </table>

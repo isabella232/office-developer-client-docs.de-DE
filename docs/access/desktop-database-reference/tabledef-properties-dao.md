@@ -6,32 +6,32 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn142653(v=office.15)
 ms:contentKeyID: 52073890
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: b1b0169e7500e31e5762a6f7f1ae2902f70bb6e6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 0ddce981ba7ce860d41fe476ebcc22919972d7c0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314315"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601674"
 ---
 # <a name="tabledef-properties-dao"></a>TableDef-Eigenschaften (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
-- [TableDef. Attributes-Eigenschaft (DAO)](tabledef-attributes-property-dao.md)
-- [TableDef. Conflictable-Eigenschaft (DAO)](tabledef-conflicttable-property-dao.md)
-- [TableDef. Connect-Eigenschaft (DAO)](tabledef-connect-property-dao.md)
-- [TableDef. DateCreated-Eigenschaft (DAO)](tabledef-datecreated-property-dao.md)
-- [TableDef. Fields-Eigenschaft (DAO)](tabledef-fields-property-dao.md)
-- [TableDef. Indexes-Eigenschaft (DAO)](tabledef-indexes-property-dao.md)
-- [TableDef. LastUpdated-Eigenschaft (DAO)](tabledef-lastupdated-property-dao.md)
+- [TableDef.Attributes-Eigenschaft (DAO)](tabledef-attributes-property-dao.md)
+- [TableDef.ConflictTable-Eigenschaft (DAO)](tabledef-conflicttable-property-dao.md)
+- [TableDef.Connect-Eigenschaft (DAO)](tabledef-connect-property-dao.md)
+- [TableDef.DateCreated-Eigenschaft (DAO)](tabledef-datecreated-property-dao.md)
+- [TableDef.Fields-Eigenschaft (DAO)](tabledef-fields-property-dao.md)
+- [TableDef.Indexes-Eigenschaft (DAO)](tabledef-indexes-property-dao.md)
+- [TableDef.LastUpdated-Eigenschaft (DAO)](tabledef-lastupdated-property-dao.md)
 - [TableDef.Name-Eigenschaft (DAO)](tabledef-name-property-dao.md)
-- [TableDef. Properties-Eigenschaft (DAO)](tabledef-properties-property-dao.md)
-- [TableDef. RecordCount-Eigenschaft (DAO)](tabledef-recordcount-property-dao.md)
-- [TableDef. ReplicaFilter-Eigenschaft (DAO)](tabledef-replicafilter-property-dao.md)
-- [TableDef. SourceTableName-Eigenschaft (DAO)](tabledef-sourcetablename-property-dao.md)
-- [TableDef. aktualisierbare Eigenschaft (DAO)](tabledef-updatable-property-dao.md)
-- [TableDef. ValidationRule-Eigenschaft (DAO)](tabledef-validationrule-property-dao.md)
-- [TableDef. ValidationText-Eigenschaft (DAO)](tabledef-validationtext-property-dao.md)
+- [TableDef.Properties-Eigenschaft (DAO)](tabledef-properties-property-dao.md)
+- [TableDef.RecordCount-Eigenschaft (DAO)](tabledef-recordcount-property-dao.md)
+- [TableDef.ReplicaFilter-Eigenschaft (DAO)](tabledef-replicafilter-property-dao.md)
+- [TableDef.SourceTableName-Eigenschaft (DAO)](tabledef-sourcetablename-property-dao.md)
+- [TableDef.Updatable-Eigenschaft (DAO)](tabledef-updatable-property-dao.md)
+- [TableDef.ValidationRule-Eigenschaft (DAO)](tabledef-validationrule-property-dao.md)
+- [TableDef.ValidationText-Eigenschaft (DAO)](tabledef-validationtext-property-dao.md)
 
 

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagOriginatorCertificate
 api_type:
 - COM
 ms.assetid: 65f890d8-9d25-408e-ab29-89991278b92d
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: d367073de2134ff766cbae3d4f6bcfa30b862122
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 28c3c0b1f9da2c456f1d76c1471ea11d8ae85426
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33438939"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59574938"
 ---
 # <a name="pidtagoriginatorcertificate-canonical-property"></a>PidTagOriginatorCertificate (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "33438939"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein ASN.1-Zertifikat für den Nachrichtenurkunder.
+Enthält ein ASN.1-Zertifikat für den Nachrichtenursprungsgeber.
   
 |||
 |:-----|:-----|
@@ -34,9 +34,9 @@ Enthält ein ASN.1-Zertifikat für den Nachrichtenurkunder.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MIME  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft ist eine Kopie der PR_USER_CERTIFICATE **(** [PidTagUserCertificate](pidtagusercertificate-canonical-property.md))-Eigenschaft des Ermittlers.
+Diese Eigenschaft ist eine Kopie der **PR_USER_CERTIFICATE** ([PidTagUserCertificate](pidtagusercertificate-canonical-property.md)) -Eigenschaft des Absenders.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,11 +44,11 @@ Diese Eigenschaft ist eine Kopie der PR_USER_CERTIFICATE **(** [PidTagUserCertif
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

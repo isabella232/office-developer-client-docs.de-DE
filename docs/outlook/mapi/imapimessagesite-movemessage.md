@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPIMessageSite.MoveMessage
 api_type:
 - COM
 ms.assetid: cd4d7b11-fad0-4f05-a99e-9567abcab45c
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: c68e4fbda661a119416918a2c35d1780f1deccda
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 2efdf723e38f45c13d53467dd67100b883ed8944
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32321365"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59575967"
 ---
 # <a name="imapimessagesitemovemessage"></a>IMAPIMessageSite::MoveMessage
 
@@ -59,15 +59,15 @@ MAPI_E_NO_SUPPORT
   
 > Der Vorgang wird von dieser Nachrichtenwebsite nicht unterstützt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Formularobjekte rufen die **IMAPIMessageSite::MoveMessage-Methode auf,** um die aktuelle Nachricht in einen neuen Ordner zu verschieben. 
+Formularobjekte rufen die **IMAPIMessageSite::MoveMessage-Methode** auf, um die aktuelle Nachricht in einen neuen Ordner zu verschieben. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Die Implementierung von **MoveMessage** durch einen Formularanzeiger muss die [IMAPIViewContext::ActivateNext-Methode](imapiviewcontext-activatenext.md) aufrufen und das VCDIR_MOVE-Flag übergeben, bevor die Nachricht tatsächlich in einen neuen Ordner verschoben wird. Um die vom Formularfenster verwendete **RECT-Struktur** zu erhalten, rufen Sie die Windows [GetWindowRect-Funktion](https://msdn.microsoft.com/library/ms633519) auf. 
+Die **MoveMessage-Implementierung** eines Formularviewers muss die [IMAPIViewContext::ActivateNext-Methode](imapiviewcontext-activatenext.md) aufrufen und das flag VCDIR_MOVE übergeben, bevor die Nachricht tatsächlich in einen neuen Ordner verschoben wird. Rufen Sie die Windows [GetWindowRect-Funktion](https://msdn.microsoft.com/library/ms633519) auf, um die von einem Formularfenster verwendete **RECT-Struktur** abzurufen. 
   
-Eine Liste der Schnittstellen im Zusammenhang mit Formularservern finden Sie unter [MAPI Form Interfaces](mapi-form-interfaces.md).
+Eine Liste der Schnittstellen im Zusammenhang mit Formularservern finden Sie unter [MAPI-Formularschnittstellen.](mapi-form-interfaces.md)
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 

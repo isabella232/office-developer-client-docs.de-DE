@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagContactAddressBookStoreSupportMasks
 api_type:
 - HeaderDef
 ms.assetid: 68f5aac1-714c-48fc-a0cf-a0c0401a6070
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e06d9a3ee2352e05e38ab1f2d86014f970160f9d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c52a08479e223ef15194bc4fc1a53ddc746f89c7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33427801"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59575050"
 ---
 # <a name="pidtagcontactaddressbookstoresupportmasks-canonical-property"></a>PidTagContactAddressBookStoreSupportMasks (kanonische Eigenschaft)
 
@@ -25,18 +25,18 @@ ms.locfileid: "33427801"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält Kennzeichen, die die unterstützten Features des Speichers angeben.
+Enthält Flags, die die unterstützten Features des Stores angeben.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_CONTAB_STORE_SUPPORT_MASKS  <br/> |
 |Kennung:  <br/> |0x6621  <br/> |
 |Datentyp:  <br/> |PT_MV_LONG  <br/> |
-|Bereich:  <br/> |Kontaktadressenbuch  <br/> |
+|Bereich:  <br/> |Kontaktadressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft wird aus den Speichern mit den Ordnern Kontakte erhalten. Der Adressbuchanbieter verwendet es, um die Angemessenheit der unterstützten Funktionen des Informationsspeichers zu bewerten. Es handelt sich um eine Eigenschaft in einem Abschnitt "Kontaktadressenbuch". 
+Diese Eigenschaft wird aus den Informationsspeichern abgerufen, die die Kontakteordner enthalten. Der Kontaktadressbuchanbieter verwendet es, um die Eignung der unterstützten Funktionen des Stores zu bewerten. Es handelt sich um eine Eigenschaft in einem Kontaktadressbuch-Profilabschnitt. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,11 +44,11 @@ Diese Eigenschaft wird aus den Speichern mit den Ordnern Kontakte erhalten. Der 
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

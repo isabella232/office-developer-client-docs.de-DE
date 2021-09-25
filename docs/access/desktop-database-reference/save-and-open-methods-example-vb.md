@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249828(v=office.15)
 ms:contentKeyID: 48547081
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 2e4eff3eae32cf4d910a44eca5a733ac044a7829
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 39281576ad291aead8cd68d652ecf5b04bc9199b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308981"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601821"
 ---
 # <a name="save-and-open-methods-example-vb"></a>Save- und Open-Methoden (Beispiel) (VB)
 
@@ -83,7 +83,7 @@ End Sub
 
 <br/>
 
-At this point, you have arrived at your destination. Sie greifen auf die ***Authors*** -Tabelle als ein lokales, getrenntes **Recordset**-Objekt zu. Vergessen Sie nicht, dass Sie über den **MSPersist** -Anbieter auf dem Computer verfügen, den Sie verwenden, um auf die gespeicherte Datei\\, a: Pubs. XML, zuzugreifen.
+At this point, you have arrived at your destination. Sie greifen auf die Tabelle ***Autoren** _ als lokales, getrenntes _*Recordset**-Objekt zu. Vergessen Sie nicht, dass Sie den **MSPersist-Anbieter** auf dem Computer haben müssen, den Sie verwenden, um auf die gespeicherte Datei zuzugreifen, ein: \\Pubs.xml.
 
 ```vb 
  

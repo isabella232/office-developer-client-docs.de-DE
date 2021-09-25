@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.SRealArray
 api_type:
 - COM
 ms.assetid: 95be07bf-5732-4775-9e0f-fec47e99d9b7
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 8439d6609ebece75699a1150a9d0c1a41277fd52
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8c6fc32463fda6589f1cf8b2508c826bbcab1560
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429873"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59566521"
 ---
 # <a name="srealarray"></a>SRealArray
 
@@ -25,7 +25,7 @@ ms.locfileid: "33429873"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von Gleitkommawerten, die zum Beschreiben einer Eigenschaft vom Typ PT_MV_R4. 
+Enthält ein Array von Float-Werten, die verwendet werden, um eine Eigenschaft vom Typ PT_MV_R4 zu beschreiben. 
   
 |||
 |:-----|:-----|
@@ -40,19 +40,19 @@ typedef struct _SRealArray
 
 ```
 
-## <a name="members"></a>Elemente
+## <a name="members"></a>Members
 
  **cValues**
   
-> Anzahl der Werte im Array, auf das das **lpflt-Element** verweist. 
+> Anzahl der Werte im Array, auf das der **lpflt-Member** verweist. 
     
  **lpflt**
   
-> Zeiger auf ein Array von Gleitkommawerten.
+> Zeiger auf ein Array von Float-Werten.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Weitere Informationen zum eigenschaftentyp PT_MV_R4 finden Sie unter [Property Types](property-types.md).
+Weitere Informationen zum PT_MV_R4 Eigenschaftentyp finden Sie unter [Property Types](property-types.md).
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -4,19 +4,19 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4c88bde5-45e1-8030-e72c-a735c374a5c4
-description: Enthält den Namen der Microsoft Visio -Datei (VSU), die benutzerdefinierte Menüs und Zugriffstasten für ein Dokument definiert.
-ms.openlocfilehash: 69eca703acf30a10296c13452c2f3e2a11521cd4
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+description: Enthält den Namen der Microsoft Visio-Benutzeroberflächendatei (VSU), die benutzerdefinierte Menüs und Zugriffstasten für ein Dokument definiert.
+ms.openlocfilehash: 8b1b2df9ec9bf7cf168a476b01967eb9f323ca36
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34540525"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608354"
 ---
 # <a name="custommenusfile-element-documentsettings_type-complextype-visio-xml"></a>CustomMenusFile-Element (DocumentSettings_Type complexType) (Visio XML)
 
-Enthält den Namen der Microsoft Visio -Datei (VSU), die benutzerdefinierte Menüs und Zugriffstasten für ein Dokument definiert.
+Enthält den Namen der Microsoft Visio-Benutzeroberflächendatei (VSU), die benutzerdefinierte Menüs und Zugriffstasten für ein Dokument definiert.
   
 ## <a name="element-information"></a>Informationen zum Element
 
@@ -36,7 +36,7 @@ Enthält den Namen der Microsoft Visio -Datei (VSU), die benutzerdefinierte Men�
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

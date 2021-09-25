@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248893(v=office.15)
 ms:contentKeyID: 48543328
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 23cb90161e5e0728aa652ae5d496216676f781a5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c3b3b189f97cfc7aa338614d06c75437eb3b24df
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309205"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601835"
 ---
 # <a name="running-business-objects-in-component-services"></a>Ausführen von Geschäftsobjekten in Komponentendiensten
 
@@ -26,11 +26,11 @@ Bei Geschäftsobjekten kann es sich um ausführbare Dateien (EXE) oder um Dynami
 
 
 > [!NOTE]
-> Wenn Geschäftsobjekte auf der mittleren Ebene als Komponenten-Dienste-Komponente implementiert werden ****(mithilfe von GetObjectContext, SetComplete und SetAbort), können Sie Komponentendienste (oder MTS, wenn Sie Windows NT-Kontextobjekte verwenden) verwenden, um **** **** Verwalten Sie Ihren Status über mehrere Clientaufrufe hinweg. Dieses Szenario ist mit DCOM möglich, das üblicherweise zwischen vertrauenswürdigen Clients und Servern (ein Intranet) implementiert wird. 
+> Wenn Geschäftsobjekte auf der mittleren Ebene als Komponenten der Komponenten der Komponenten für komponenten (mit **GetObjectContext,** **SetComplete** und **SetAbort)** implementiert werden, können sie Component Services (oder MTS, wenn Sie Windows NT)-Kontextobjekte verwenden, um ihren Status über mehrere Clientaufrufe hinweg aufrechtzuerhalten. Dieses Szenario ist mit DCOM möglich, das üblicherweise zwischen vertrauenswürdigen Clients und Servern (ein Intranet) implementiert wird. 
 >
 > In diesem Fall werden das [RDS.DataSpace](dataspace-object-rds.md)-Objekt und die [CreateObject](createobject-method-rds.md)-Methode auf dem Client durch das Transaktionskontextobjekt und die **CreateInstance** -Methode ersetzt (bereitgestellt von der **ITransactionContext** -Schnittstelle), die von den Komponentendiensten implementiert wird.
 
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Durchführen von Geschäftsobjekten in Komponentendiensten (SQL Server)](https://docs.microsoft.com/sql/ado/guide/remote-data-service/running-business-objects-in-component-services?view=sql-server-2017)
+- [Ausführen von Geschäftsobjekten in Komponentendiensten (SQL Server)](https://docs.microsoft.com/sql/ado/guide/remote-data-service/running-business-objects-in-component-services?view=sql-server-2017)

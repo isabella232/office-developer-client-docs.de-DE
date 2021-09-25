@@ -6,20 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248948(v=office.15)
 ms:contentKeyID: 48543518
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 40ce95c5879f5da9615c66d132d6c4847fae1569
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 0bdafc34ae7a79a17c5b0cef7fb70647347078e0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288644"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59602129"
 ---
 # <a name="named-commands"></a>Benannte Befehle
 
 
 **Gilt für**: Access 2013, Office 2013
 
-Sie können die **Name** -Eigenschaft für ein **Command** -Objekt festlegen und dann den Befehl ausführen, indem Sie ihn aufrufen, als wäre es eine Methode für die **ActiveConnection** -Eigenschaft des **Command** -Objekts. Dies wird im folgenden Beispiel veranschaulicht, in dem der Befehl getCustomers ** heißt. Beachten Sie, dass der Code ein deklariertes und instanziiertes **Recordset** -Objekt an die GetCustomers-Methode übergibt. Sie können auch Parameter an die "Method" übergeben, wenn Sie für den **Befehl**erforderlich sind.
+Sie können die **Name** -Eigenschaft für ein **Command -Objekt** festlegen und dann den Befehl ausführen, indem Sie ihn aufrufen, als wäre es eine Methode für das **Command -Objekt** **ActiveConnection** -Eigenschaft. Dies wird im folgenden Beispiel veranschaulicht, in dem der Befehl *"GetCustomers"* heißt. Beachten Sie, dass der Code ein deklariertes und instanziiertes **Recordset-Objekt** an die GetCustomers-"Methode" übergibt. Sie können parameter auch an die "Methode" übergeben, wenn sie für den **Befehl** erforderlich sind.
 
 ```vb 
  

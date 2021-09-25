@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagOriginatorDeliveryReportRequested
 api_type:
 - COM
 ms.assetid: 4461b35d-e2b9-41ff-b079-31bfef02e2bb
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a92ee13e571032c050f69677d9daba8dad7aea3c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 3a31b767ef02e12dced9e2a43f9cdba7f2a4e220
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32356301"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59574945"
 ---
 # <a name="pidtagoriginatordeliveryreportrequested-canonical-property"></a>PidTagOriginatorDeliveryReportRequested (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32356301"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält TRUE, wenn ein Nachrichtensender einen Zustellungsbericht für einen bestimmten Empfänger vom Messagingsystem anfordert, bevor die Nachricht im Nachrichtenspeicher platziert wird.
+Enthält TRUE, wenn ein Nachrichtensender einen Übermittlungsbericht für einen bestimmten Empfänger vom Messagingsystem anfordert, bevor die Nachricht im Nachrichtenspeicher abgelegt wird.
   
 |||
 |:-----|:-----|
@@ -34,11 +34,11 @@ Enthält TRUE, wenn ein Nachrichtensender einen Zustellungsbericht für einen be
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MIME  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft wird verwendet, um das Messagingsystem bei der Verarbeitung von zugestellten Nachrichten an das Messagingsystem weiter zu senden. In diesem Fall muss die Nachricht auch die **eigenschaft PR_ORIGINATOR_NON_DELIVERY_REPORT_REQUESTED** ([PidTagOriginatorNonDeliveryReportRequested](pidtagoriginatornondeliveryreportrequested-canonical-property.md)) auf FALSE festlegen.
+Diese Eigenschaft wird verwendet, um das Messagingsystem bei der Verarbeitung von zugestellten Nachrichten zu leiten. In diesem Fall muss die Nachricht auch die **eigenschaft PR_ORIGINATOR_NON_DELIVERY_REPORT_REQUESTED** ([PidTagOriginatorNonDeliveryReportRequested](pidtagoriginatornondeliveryreportrequested-canonical-property.md)) auf FALSE festlegen.
   
-Das Festlegen **PR_ORIGINATOR_DELIVERY_REPORT_REQUESTED** -Eigenschaft für eine Nachricht ist eine Möglichkeit zum Anfordern von Übermittlungsstatusberichten für alle Empfänger. 
+Das Festlegen der **PR_ORIGINATOR_DELIVERY_REPORT_REQUESTED** Eigenschaft für eine Nachricht ist eine Möglichkeit, Übermittlungsstatusberichte für alle Empfänger anzufordern. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -52,11 +52,11 @@ Das Festlegen **PR_ORIGINATOR_DELIVERY_REPORT_REQUESTED** -Eigenschaft für eine
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -64,9 +64,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

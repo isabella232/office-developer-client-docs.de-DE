@@ -4,19 +4,19 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f2d6a11e-847d-6bbe-cd77-e78ee961cb12
-description: Eine Enumeration für den Frei/Gebucht-Status von Frei/Gebucht-Blöcken.
-ms.openlocfilehash: 2a08ef142f9baddd453166c0ebcb989e69a51ceb
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Eine Aufzählung für den Frei/Gebucht-Status von Frei/Gebucht-Blöcken.
+ms.openlocfilehash: 61ac90849e2a0d40b48281cb6f145fc5d997d545
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424091"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59592802"
 ---
 # <a name="fbstatus"></a>FBStatus
 
-Eine Enumeration für den Frei/Gebucht-Status von Frei/Gebucht-Blöcken.
+Eine Aufzählung für den Frei/Gebucht-Status von Frei/Gebucht-Blöcken.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -31,9 +31,9 @@ enum
 
 ```
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Der Frei/Gebucht-Status eines Zeitblocks bestimmt, wie er in einem Kalender angezeigt **wird:** **Frei,** **Gebucht,** Zagig **oder** Office . 
+Der Frei/Gebucht-Status eines Zeitblocks bestimmt, wie er in einem Kalender angezeigt wird: **Frei,** **Gebucht,** **Mit Vorbehalt** oder **Außerhalb Office**. 
   
 ## <a name="see-also"></a>Siehe auch
 

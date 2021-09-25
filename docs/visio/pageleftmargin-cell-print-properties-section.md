@@ -6,31 +6,31 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm60061
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7ecdfc37-c9d4-2fde-ed3e-be81657c24e2
 description: Gibt den linken Rand der gedruckten Seite an.
-ms.openlocfilehash: 289bd0bf16c6dcd9b26ec1a8c7920a29dab724a7
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 0a7c5c9a19d14873bc134ffc47a7fe3c796b5993
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33435670"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608130"
 ---
 # <a name="pageleftmargin-cell-print-properties-section"></a>Zelle "PageLeftMargin" (Abschnitt "Print Properties")
 
 Gibt den linken Rand der gedruckten Seite an.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Durch diesen Wert werden physische Einheiten dargestellt, und er wird weder durch Skalierung noch durch Zeichnungseinheiten beeinflusst. Wenn diese Zelle beispielsweise den Wert 0,25 cm aufweist, beträgt der Rand 0,25 Zentimeter, selbst wenn als Einheit der Seite Dezimeter angegeben werden. Wenn keine Einheiten explizit angegeben sind, ist die Standardeinstellung Seiteneinheiten. 
   
-Um einen Verweis auf die Zelle PageLeftMargin anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Um einen Verweis auf die Zelle "PageLeftMargin" anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | PageLeftMargin  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die PageLeftMargin-Zelle nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle PageLeftMargin anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

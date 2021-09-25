@@ -1,25 +1,25 @@
 ---
-title: PidLidAutoLog (kanonische Eigenschaft)
+title: Kanonische PidLidAutoLog-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidAutoLog
 api_type:
 - COM
 ms.assetid: 60b7a411-a884-4836-8aca-a205bd503fef
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 50510a262a1021c1b9796437d6a005dab838681c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 902d031aebc7586c86f00ed67427be05a237679e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344982"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59575239"
 ---
-# <a name="pidlidautolog-canonical-property"></a>PidLidAutoLog (kanonische Eigenschaft)
+# <a name="pidlidautolog-canonical-property"></a>Kanonische PidLidAutoLog-Eigenschaft
 
   
   
@@ -31,7 +31,7 @@ Gibt an, ob für jede aktion, die diesem Kontakt zugeordnet ist, ein Journal ers
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidAutoLog  <br/> |
 |Eigenschaftensatz:  <br/> |PSETID_Address  <br/> |
-|Lange ID (LID):  <br/> |0x00008025  <br/> |
+|Long ID (LID):  <br/> |0x00008025  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
@@ -41,7 +41,7 @@ Gibt an, ob für jede aktion, die diesem Kontakt zugeordnet ist, ein Journal ers
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Stellt Eigenschaftensatzdefinitionen und Verweise auf verwandte Exchange Server zur Verfügung.
+> Stellt Eigenschaftssatzdefinitionen und Verweise auf verwandte Exchange Server Protokollspezifikationen bereit.
     
 [[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
@@ -51,7 +51,7 @@ Gibt an, ob für jede aktion, die diesem Kontakt zugeordnet ist, ein Journal ers
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -59,9 +59,9 @@ Mapidefs.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

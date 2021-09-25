@@ -1,18 +1,18 @@
 ---
-title: MarshalOptionsEnum (Access Desktop Database Reference)
+title: MarshalOptionsEnum (Access-Desktopdatenbankreferenz)
 TOCTitle: MarshalOptionsEnum
 ms:assetid: 5361884b-a0fe-c480-1b9f-18e53be77f86
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249272(v=office.15)
 ms:contentKeyID: 48544867
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: a128f9980bc8c827ddfcb72e738ce5f879be1051
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 04af7f1101c6cf4248d0c0f42a5998d06817e68c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289728"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558282"
 ---
 # <a name="marshaloptionsenum"></a>MarshalOptionsEnum
 
@@ -50,7 +50,7 @@ Gibt an, welche Datensätze an den Server zurückgegeben werden sollen.
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
 Paket: **com.ms.wfc.data**
 
@@ -65,10 +65,10 @@ Paket: **com.ms.wfc.data**
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums. MarshalOptions. ALL</p></td>
+<td><p>AdoEnums.MarshalOptions.ALL</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. MarshalOptions. MODIFIEDONLY</p></td>
+<td><p>AdoEnums.MarshalOptions.MODIFIEDONLY</p></td>
 </tr>
 </tbody>
 </table>

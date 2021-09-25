@@ -4,23 +4,23 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ef457ad5-f5a0-7bb1-ba0a-2dd8ea733df2
-description: Dieses Element ist ein Platzhalter und wird nicht unterstützt.
-ms.openlocfilehash: fedc15f8f84e1b7a0b8b74c0b66ae31db10f5fe4
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Dieser Member ist ein Platzhalter und wird nicht unterstützt.
+ms.openlocfilehash: c41ac0e215d6248b4b385e633d895b9a79f6b911
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33433241"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614360"
 ---
 # <a name="ifreebusysupportplaceholder7"></a>IFreeBusySupport::Placeholder7
 
-Dieses Element ist ein Platzhalter und wird nicht unterstützt.
+Dieser Member ist ein Platzhalter und wird nicht unterstützt.
   
 ## <a name="quick-info"></a>QuickInfo
 
-Weitere [Informationen finden Sie unter IFreeBusySupport](ifreebusysupport.md).
+Siehe [IFreeBusySupport](ifreebusysupport.md).
   
 ```cpp
 HRESULT Placeholder7( 
@@ -32,9 +32,9 @@ HRESULT Placeholder7(
 
 Immer E_NOTIMPL, da dieses Element ein Platzhalter ist und nicht unterstützt wird.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Dieses Element muss die E_NOTIMPL.
+Dieses Element muss E_NOTIMPL zurückgeben.
   
 ## <a name="see-also"></a>Siehe auch
 

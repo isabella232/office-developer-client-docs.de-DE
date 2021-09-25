@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 818793d6-608e-5f23-eca2-55ce6667050b
 description: Gibt die Informationen zu den Formen in einem Master- oder Zeichenblatt einer Zeichnung an.
-ms.openlocfilehash: 23ff6c74007adc5764007e34c1b2ac92c522b121
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: a87099a19480c90b18498009f5c0723de61a7427
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34537997"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608172"
 ---
 # <a name="pagecontents-element-visio-xml"></a>PageContents-Element (Visio XML)
 
@@ -36,7 +36,7 @@ Gibt die Informationen zu den Formen in einem Master- oder Zeichenblatt einer Ze
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

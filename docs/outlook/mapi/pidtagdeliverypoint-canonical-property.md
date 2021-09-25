@@ -1,31 +1,31 @@
 ---
-title: PidTagDeliveryPoint (kanonische Eigenschaft)
+title: Kanonische PidTagDeliveryPoint-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagDeliveryPoint
 api_type:
 - HeaderDef
 ms.assetid: 715a9dbd-78f8-41e1-a76e-29448d06ec19
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e18b08bcbd76cacf7dbb5b5fd36d80d5f266364d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 736d98fd779d9e22553ac076f7f6a4deaacc1597
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439422"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59566738"
 ---
-# <a name="pidtagdeliverypoint-canonical-property"></a>PidTagDeliveryPoint (kanonische Eigenschaft)
+# <a name="pidtagdeliverypoint-canonical-property"></a>Kanonische PidTagDeliveryPoint-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt die Art der funktionalen Entität an, mit der eine Nachricht an den Empfänger übermittelt wurde oder hätte. 
+Gibt die Art der funktionalen Entität an, mit der eine Nachricht an den Empfänger übermittelt wurde oder worden wäre. 
   
 |||
 |:-----|:-----|
@@ -34,37 +34,37 @@ Gibt die Art der funktionalen Entität an, mit der eine Nachricht an den Empfän
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft kann genau einen der folgenden Werte haben: 
   
 MAPI_MH_DP_ML 
   
-> An eine Verteilerliste zugestellt, ein Zustellungspunkt, der die Nachricht wiederum an viele Empfänger verteilen kann.
+> Wird an eine Verteilerliste übermittelt, ein Zustellungspunkt, der die Nachricht wiederum an viele Empfänger verteilen kann.
     
 MAPI_MH_DP_MS 
   
-> An einen Nachrichtenspeicher anstatt direkt an einen Empfänger zugestellt.
+> Wird an einen Nachrichtenspeicher statt direkt an einen Empfänger übermittelt.
     
 MAPI_MH_DP_OTHER_AU 
   
-> Wird an eine andere Zugriffseinheit (Access Unit, AU) als eine physische Zustellungszugriffseinheit (PHYSICAL Delivery Access Unit, PDAU) übermittelt, z. B. ein FAX-System.
+> Wird an eine Zugriffseinheit (ACCESS Unit, AU) geliefert, die keine physische Übermittlungszugriffseinheit (Physical Delivery Access Unit, PDAU) ist, z. B. ein FAX-System.
     
 MAPI_MH_DP_PDAU 
   
-> An eine physische Zustellungszugriffseinheit, z. B. ein menschliches Postunternehmen, zugestellt.
+> Wird an eine physische Zustelleinheit, z. B. einen netzbetreiber, geliefert.
     
 MAPI_MH_DP_PDS_PATRON 
   
-> Zugestellt an einen physischen Systempatron, z. B. ein herkömmliches Postpostfach.
+> Wird an einen Empfänger des physischen Zustellungssystems, z. B. ein herkömmliches Postpostfach, übermittelt.
     
 MAPI_MH_DP_PRIVATE_UA 
   
-> An einen privaten Benutzer-Agent (PRIVATE User Agent, UA) übermittelt, z. B. an einen Client in einem eigenen Messagingsystem.
+> Wird an einen privaten Benutzer-Agent (UA) übermittelt, z. B. an einen Client in einem internen Messagingsystem.
     
 MAPI_MH_DP_PUBLIC_UA 
   
-> An einen öffentlichen Benutzer-Agent oder öffentlichen Dienstanbieter übermittelt.
+> Wird an einen öffentlichen Benutzer-Agent oder öffentlichen Dienstanbieter übermittelt.
     
 Der Standardwert ist MAPI_MH_DP_PRIVATE_UA, d. h. ein MAPI-Client. 
   
@@ -74,11 +74,11 @@ Der Standardwert ist MAPI_MH_DP_PRIVATE_UA, d. h. ein MAPI-Client.
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -86,9 +86,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

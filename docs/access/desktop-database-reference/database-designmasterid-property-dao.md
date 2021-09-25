@@ -1,5 +1,5 @@
 ---
-title: Database. DesignMasterID-Eigenschaft (DAO)
+title: Database.DesignMasterID-Eigenschaft (DAO)
 TOCTitle: DesignMasterID Property
 ms:assetid: c0545561-d44f-5479-8ae0-e3955db91761
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff822824(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1053417
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: a189d16880fccdc34c169aee61c6781e1d86afa8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c19eb8e76765ddf2a9a8e4a52bd4f7e20d0f17ea
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294932"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558506"
 ---
-# <a name="databasedesignmasterid-property-dao"></a>Database. DesignMasterID-Eigenschaft (DAO)
+# <a name="databasedesignmasterid-property-dao"></a>Database.DesignMasterID-Eigenschaft (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -30,7 +30,7 @@ Mit dieser Eigenschaft wird ein 16-Byte-Wert festgelegt oder zurückgegeben, der
 
 *Ausdruck* Eine Variable, die ein **Database** -Objekt darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Legen Sie die **DesignMasterID**-Eigenschaft nur dann fest, wenn Sie den aktuellen Designmaster verschieben müssen. Wenn Sie diese Eigenschaft festlegen, wird ein bestimmtes Replikat der Replikatgruppe zum Designmaster.
 

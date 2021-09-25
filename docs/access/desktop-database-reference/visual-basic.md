@@ -1,18 +1,18 @@
 ---
-title: Visual Basic (Access-Desktop-Daten Bankreferenz)
+title: Visual Basic (Access-Desktopdatenbankreferenz)
 TOCTitle: Visual Basic
 ms:assetid: 9d153b6c-c860-7350-cb3c-b9bd08f75ba8
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249714(v=office.15)
 ms:contentKeyID: 48546616
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 3045cf3861409d2909f31536670a27c282eb2cdc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: fe56644d4bfe307ac3b9e42af94e7566b2507c9d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32312138"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593264"
 ---
 # <a name="visual-basic"></a>Visual Basic
 
@@ -77,5 +77,5 @@ End Sub
 ' EndEventExampleVB02 
 ```
 
-The **Connection** object is declared at the **Form** level using the **WithEvents** keyword to enable event handling. Der Ereignis\_Handler für den formularladevorgang erstellt das Objekt, indem ein neues **Connection** -Objekt zu *connEvent* zugewiesen und dann die Verbindung geöffnet wird. Natürlich würde eine echte Anwendung im Formular\_Lade-Ereignishandler mehr Verarbeitung als hier gezeigt.
+The **Connection** object is declared at the **Form** level using the **WithEvents** keyword to enable event handling. Der Form \_ Load-Ereignishandler erstellt tatsächlich das Objekt, indem er *connEvent* ein neues **Connection-Objekt** zuweist und dann die Verbindung öffnet. Natürlich würde eine echte Anwendung mehr Verarbeitung im Form \_ Load-Ereignishandler ausführen, als hier gezeigt wird.
 

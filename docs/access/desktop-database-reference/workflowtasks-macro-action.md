@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm8454
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 921396edd480e06194d1c3dcbb683aa8556553e2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 97c5c3bd337785e4222655538310a194ee45e8cf
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306006"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593284"
 ---
 # <a name="workflowtasks-macro-action"></a>WorkflowTasks-Makroaktion
 
@@ -49,7 +49,7 @@ Die **WorkflowAufgaben**-Aktion hat das folgende Argument.
 </table>
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
   - Die **WorkflowAufgaben** -Aktion öffnet das Dialogfeld **Workflow-Tasks**. In diesem Dialogfeld werden alle Tasks angezeigt, die für das angegebene Element zur Verfügung stehen. Ein Workflow muss für die Liste in SharePoint Foundation definiert sein.
 

@@ -10,19 +10,19 @@ f1_keywords:
 - vbaac10.chm111536
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 5ed20555726d0a6f63f0e48fb154cedb411ef8cd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 645dc3b4f098be2cd3f758c216c5606dff3ba9b9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306846"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593432"
 ---
 # <a name="transfersqldatabase-macro-action"></a>TransferSQLDatenbank-Makroaktion
 
 **Gilt für**: Access 2013, Office 2013
 
-Verwenden Sie in einem Access-Projekt die **TransferSQLDatenbank** -Aktion, um eine Microsoft SQL Server-Datenbank der Version 7.0 oder höher zu übertragen. Weitere Informationen zum Übertragen einer Datenbank finden Sie in der SQL Server-Dokumentation.
+Verwenden Sie in einem Access-Projekt die **TransferSQLDatenbank** -Aktion, um eine Microsoft SQL Server-Datenbank der Version 7.0 oder höher zu übertragen. Weitere Informationen zum Übertragen einer Datenbank finden Sie in der SQL Server Dokumentation.
 
 > [!NOTE]
 > Diese Aktion ist nicht zulässig, wenn die Datenbank nicht vertrauenswürdig ist.
@@ -53,10 +53,10 @@ Die **TransferSQLDatenbank**-Aktion hat die folgenden Argumente.
 </tr>
 <tr class="odd">
 <td><p><strong>Vertrauenswürdige Verbindung verwenden</strong></p></td>
-<td><p>Angibt, ob eine vertrauenswürdige Verbindung mit dem SQL Server besteht. Wenn dieser Wert auf <strong>Ja</strong>festgelegt ist, gibt es eine vertrauenswürdige Verbindung, und die Argumente <strong>Login</strong> und <strong>Password</strong> sind nicht erforderlich. Wenn der Wert auf <strong>Nein</strong>festgelegt ist, sind die Argumente <strong>Login</strong> und <strong>Password</strong> erforderlich. Die Standardeinstellung ist <strong>Ja</strong>. Wenn Sie eine vertrauenswürdige Verbindung verwenden, wird die SQL Server-Sicherheit in die Sicherheit des Windows-Betriebssystems integriert, um eine einzige Anmeldung am Netzwerk und der Datenbank bereitzustellen.</p></td>
+<td><p>Gibt an, ob eine vertrauenswürdige Verbindung mit dem SQL Server besteht. Wenn sie auf <strong>"Ja"</strong>festgelegt ist, gibt es eine vertrauenswürdige Verbindung, und die Argumente <strong>"Login"</strong> und <strong>"Password"</strong> sind nicht erforderlich. Bei Festlegung auf <strong>"Nein"</strong>sind die Argumente <strong>"Login"</strong> und <strong>"Password"</strong> erforderlich. Die Standardeinstellung ist <strong>Ja</strong>. Wenn Sie eine vertrauenswürdige Verbindung verwenden, wird SQL Server Sicherheit in die Windows Betriebssystemsicherheit integriert, um eine einzige Anmeldung am Netzwerk und in der Datenbank bereitzustellen.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Login</strong></p></td>
+<td><p><strong>Benutzername</strong></p></td>
 <td><p>Der Anmeldename für den Zielserver.</p></td>
 </tr>
 <tr class="odd">
@@ -71,7 +71,7 @@ Die **TransferSQLDatenbank**-Aktion hat die folgenden Argumente.
 </table>
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Während des Datenbanktransfers können keine weiteren Vorgänge ausgeführt werden.
 

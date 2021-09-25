@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPISyncProgressCallback.Error
 api_type:
 - COM
 ms.assetid: 4860992d-65d7-4cb0-a874-ceccb153dbac
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 80010ca19999ba519f051e914f02f240abb524e2
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: d70dc611a7756c8dca15e1c173e5702a7fc86f63
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424931"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59575750"
 ---
 # <a name="imapisyncprogresscallbackerror"></a>IMAPISyncProgressCallback::Error
 
@@ -25,7 +25,7 @@ ms.locfileid: "33424931"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält Details, die im Dialogfeld Senden/Empfangen angezeigt werden. Wenn während der Synchronisierung Fehler auftreten, ruft der Speicheranbieter diese Funktion auf.
+Stellt Details bereit, die im Dialogfeld "Senden/Empfangen" angezeigt werden. Wenn während der Synchronisierung Fehler auftreten, ruft der Speicheranbieter diese Funktion auf.
   
 ```cpp
 HRESULT Error(
@@ -36,13 +36,13 @@ HRESULT Error(
 
 ## <a name="parameters"></a>Parameter
 
- **hResult**
+ **Hresult**
   
 > Das HRESULT des Fehlers oder der Warnung.
     
  **pwcszErrorStr**
   
-> Ein Zeiger auf die Zeichenfolge, die dem angezeigten Fehler zugeordnet ist.
+> Ein Zeiger auf die Zeichenfolge, die dem anzuzeigenden Fehler zugeordnet ist.
     
 ## <a name="return-value"></a>Rückgabewert
 

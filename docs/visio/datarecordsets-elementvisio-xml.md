@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c75b3233-9ac5-d29c-a658-d554e86e6be4
 description: Enthält alle DataRecordset-Elemente im Dokument.
-ms.openlocfilehash: efa7d58eabc1b1192862dbbe090ddd5008947c1d
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 2465739067d0103e6e90cbb18c1cef6fc251732e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34542443"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608263"
 ---
 # <a name="datarecordsets-element-visio-xml"></a>DataRecordSets-Element (Visio XML)
 
@@ -36,7 +36,7 @@ Enthält alle **DataRecordset-Elemente** im Dokument.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -52,8 +52,8 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|ActiveRecordsetID  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> |Die ID des aktiven Datendatensatz im Fenster Externe Daten, wenn das Fenster geschlossen wird, sodass es beim nächsten Öffnen des Fensters wiederhergestellt werden kann.   <br/> |Werte des xsd:unsignedInt-Typs.  <br/> |
-|DataWindowOrder  <br/> |xsd:string  <br/> |Optional  <br/> |Die Reihenfolge der Datendatensätze, die auf den Registerkarten des Fensters Externe **Daten angezeigt** werden. Eine geordnete Liste von Daten-Recordset-IDs, getrennt durch Semikolonen.  <br/> |Werte des xsd:string-Typs.  <br/> |
-|NextID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> |Die nächste verfügbare ID für ein neues Daten recordset.  <br/> |Werte des xsd:unsignedInt-Typs.  <br/> |
+|ActiveRecordsetID  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> |Die ID des aktiven Datenrecordsets im Fenster **"Externe Daten",** wenn das Fenster geschlossen wird, sodass es beim nächsten Öffnen des Fensters wiederhergestellt werden kann.  <br/> |Werte des Typs "xsd:unsignedInt".  <br/> |
+|DataWindowOrder  <br/> |xsd:string  <br/> |Optional  <br/> |Die Reihenfolge der Datenrecordsets, die auf den Registerkarten des Fensters **"Externe Daten"** angezeigt werden. Eine sortierte Liste von Datenrecordset-IDs, getrennt durch Semikolons.  <br/> |Werte des Typs "xsd:string".  <br/> |
+|NextID  <br/> |xsd:unsignedInt  <br/> |Erforderlich  <br/> |Die nächste verfügbare ID für ein neues Datenrecordset.  <br/> |Werte des Typs "xsd:unsignedInt".  <br/> |
    
 

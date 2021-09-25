@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 62912d6e-c39e-4f8b-8cdb-ae9b6376cbc0
 description: This topic describes the enumerations in the OneNote 2013 object model.
-ms.openlocfilehash: 3338e444e5b0bfd0239e363c3161aeb1914b2d53
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 3c902c05053d3edf9e9edeba56baef3c340b232e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33410336"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614486"
 ---
 # <a name="enumerations-onenote-developer-reference"></a>Enumerationen (OneNote Entwicklerreferenz)
 
@@ -55,7 +55,7 @@ When passed to the **SetFilingLocation** method, specifies what type of content 
 |**flTasks** <br/> |2  <br/> |Sets where Outlook tasks will be filed.  <br/> |
 |**flMeetings** <br/> |3  <br/> |Sets where Outlook meetings will be filed.  <br/> |
 |**flWebContent** <br/> |4   <br/> |Sets where Internet Explorer contents will be filed.  <br/> |
-|**flPrintOuts** <br/> |5   <br/> |Sets where printouts from the OneNote printer will be filed.  <br/> |
+|**flPrintOuts** <br/> |5  <br/> |Sets where printouts from the OneNote printer will be filed.  <br/> |
    
 ## <a name="filinglocationtype"></a>FilingLocationType
 <a name="odc_CreateFileType"> </a>
@@ -130,9 +130,9 @@ When passed to the **GetPageContent** method, specifies the type of information 
 |**piSelection** <br/> |2  <br/> |Returns page content with selection markup, but no binary data.  <br/> |
 |**piBinaryDataSelection** <br/> |3  <br/> |Returns page content with selection markup and all binary data.  <br/> |
 |**piFileType** <br/> |4   <br/> |Returns page content with file type info for binary data objects.  <br/> |
-|**piBinaryDataFileType** <br/> |5   <br/> |Returns page content with file type info for binary data objects and binary data objects  <br/> |
+|**piBinaryDataFileType** <br/> |5  <br/> |Returns page content with file type info for binary data objects and binary data objects  <br/> |
 |**piSelectionFileType** <br/> |6   <br/> |Returns page content with selection markup and file type info for binary data.  <br/> |
-|**piAll** <br/> |7   <br/> |Returns all page content.  <br/> |
+|**PiAll** <br/> |7   <br/> |Returns all page content.  <br/> |
    
 ## <a name="publishformat"></a>PublishFormat
 <a name="odc_PublishFormat"> </a>
@@ -146,7 +146,7 @@ When passed to the **Publish** method, specifies the format in which the publish
 |**pfMHTML** <br/> |2  <br/> |Published page is in the .mht format.  <br/> |
 |**pfPDF** <br/> |3  <br/> |Published page is in the .pdf format.  <br/> |
 |**pfXPS** <br/> |4   <br/> |Published page is in the .xps format.  <br/> |
-|**pfWord** <br/> |5   <br/> |Published page is in the .doc or .docx format.  <br/> |
+|**pfWord** <br/> |5  <br/> |Published page is in the .doc or .docx format.  <br/> |
 |**pfEMF** <br/> |6   <br/> |Published page is in the enhanced metafile (.emf) format.  <br/> |
 |**pfHTML** <br/> |7   <br/> |Published page is in the .html format. This member is new in OneNote 2013.  <br/> |
 |**pfOneNote2007** <br/> |8   <br/> |Published page is in the 2007 .one format. This member is new in OneNote 2013.  <br/> |
@@ -208,7 +208,7 @@ When passed to one of the following methods, specifies the version of the OneNot
 |**xs2007** <br/> |0  <br/> |References the OneNote 2007 schema.  <br/> |
 |**xs2010** <br/> |1  <br/> |References the OneNote 2010 schema.  <br/> |
 |**xs2013** <br/> |2  <br/> |References the OneNote 2013 schema.  <br/> |
-|**xsCurrent** <br/> |2  <br/> |References the schema of the current OneNote version.  <br/> <br/>**HINWEIS**: In den meisten Fällen wird die Verwendung von **xsCurrent** nicht empfohlen, da dies Kompatibilitätsprobleme mit zukünftigen Versionen von OneNote. Instead specify the version of the schema that your app was built to handle, like xs2013.           |
+|**xsCurrent** <br/> |2  <br/> |References the schema of the current OneNote version.  <br/> <br/>**HINWEIS:** In den meisten Fällen wird die Verwendung von **xsCurrent** nicht empfohlen, da dies Kompatibilitätsprobleme mit zukünftigen Versionen von OneNote verursachen kann. Instead specify the version of the schema that your app was built to handle, like xs2013.           |
    
 ## <a name="see-also"></a>Siehe auch
 

@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm745
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3afee07b-e91a-a91c-fba2-0e3251dd6385
 description: Legt fest, ob Objekte in Diagrammen platzierbar oder umleitbar sind, wenn Shapes mithilfe des Dialogfelds Layout konfigurieren ausgerichtet werden.
-ms.openlocfilehash: 7a607fdb53ad569e84976b6f9911fbd89f7f2628
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 22a34d21cf383ea12c05bb43588702335ae593ff
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33425729"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608186"
 ---
 # <a name="objtype-cell-miscellaneous-section"></a>Zelle "ObjType" (Abschnitt "Miscellaneous")
 
@@ -28,19 +28,19 @@ Legt fest, ob Objekte in Diagrammen platzierbar oder umleitbar sind, wenn Shapes
 |&amp;H4  <br/> |Shape ist weder platzierbar noch umleitbar.  <br/> |**visLOFlagsDont** <br/> |
 |&amp;H8  <br/> |Gruppe enthält platzierbare oder umleitbare Shapes.  <br/> |**visLOFlagsPNRGroup** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Standardmäßig ist die Zelle ObjType auf Keine Formel für eine Form festgelegt, die auf 0 ausgewertet wird, was bedeutet, dass die Anwendung bestimmt, ob das Shape je nach Kontext platzierbar sein kann. Wenn Sie beispielsweise ein einfaches Rechteck zeichnen, ist der Wert der Zelle ObjType 0. Wenn Sie dann  das Connector-Tool verwenden, um das Rechteck mit einer anderen Form zu verbinden, setzt Visio den Wert der Zelle ObjType des Rechtecks auf 1 (platzierbar) zurück. 
+Standardmäßig ist die Zelle ObjType für ein Shape auf Keine Formel festgelegt, was bedeutet, dass die Anwendung bestimmt, ob das Shape je nach Kontext platzierbar sein kann. Wenn Sie z. B. ein einfaches Rechteck zeichnen, ist der Wert der Zelle ObjType 0. Wenn Sie dann das **Verbindertool** verwenden, um das Rechteck mit einer anderen Form zu verbinden, setzt Visio den Wert der Zelle ObjType des Rechtecks auf 1 zurück (platzierbar). 
   
-Der Wert der Zelle ObjType kann eine Kombination aus mehreren verschiedenen Werten sein. Wenn das nicht platzierbare Bit festgelegt ist ( H4), hat es jedoch Vorrang vor anderen Werten mit Ausnahme des &amp; Gruppenwerts ( &amp; H8).
+Der Wert der Zelle ObjType kann eine Kombination aus mehreren verschiedenen Werten sein. Wenn das nicht platzierbare Bit festgelegt ist ( &amp; H4), hat es jedoch Vorrang vor anderen Werten außer dem Gruppenwert ( &amp; H8).
   
-Um einen Verweis auf die Zelle ObjType anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Um einen Verweis auf die Zelle ObjType anhand des Namens einer anderen Formel oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |ObjType  <br/> |
    
-Um einen Verweis auf die Zelle ObjType nach Index aus einem Programm zu erhalten, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle ObjType anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

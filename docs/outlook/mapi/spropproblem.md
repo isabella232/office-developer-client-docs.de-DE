@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.SPropProblem
 api_type:
 - COM
 ms.assetid: 55943197-fd11-442d-bb4b-0bff565b846e
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: b3a0872c94459fc7c24d13e35adf335ef8012182
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f8fc822d4b3d11b2b310e511d43da612ffcc32c2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407774"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59566563"
 ---
 # <a name="spropproblem"></a>SPropProblem
 
@@ -25,7 +25,7 @@ ms.locfileid: "33407774"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt einen Fehler, der sich auf einen Vorgang mit einer Eigenschaft bezieht.
+Beschreibt einen Fehler, der sich auf einen Vorgang bezieht, der eine Eigenschaft betrifft.
   
 |||
 |:-----|:-----|
@@ -41,21 +41,21 @@ typedef struct _SPropProblem
 
 ```
 
-## <a name="members"></a>Elemente
+## <a name="members"></a>Members
 
  **ulIndex**
   
-> Ein Index in einem Array von Eigenschaftstags.
+> Ein Index in einem Array von Eigenschaftentags.
     
  **ulPropTag**
   
-> Property-Tag für die Eigenschaft, die den Fehler hat.
+> Eigenschaftstag für die Eigenschaft, die den Fehler aufweist.
     
  **scode**
   
 > Fehlerwert, der das Problem mit der Eigenschaft beschreibt. Dieser Wert kann ein beliebiger [MAPI-SCODE-Wert](scode.md) sein. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Ein Array von **SPropProblem-Strukturen** wird von den folgenden Methoden zurückgegeben: 
   

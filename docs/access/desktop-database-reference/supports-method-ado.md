@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249059(v=office.15)
 ms:contentKeyID: 48543924
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 42447614c5fc58bc4eb2933354908693adf68ce6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 9551120657b2284959f1f7c69d8a11324ea9e5e6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308463"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585256"
 ---
 # <a name="supports-method-ado"></a>Supports-Methode (ADO)
 
@@ -22,7 +22,7 @@ Bestimmt, ob ein angegebenes [Recordset](recordset-object-ado.md)-Objekt einen b
 
 ## <a name="syntax"></a>Syntax
 
-*Boolesches* = *Recordset*-Objekt. Unterstützt (*Cursor*Options)
+*Boolescher Wert*  =  *Recordset*. Supports (*CursorOptions*)
 
 ## <a name="return-value"></a>Rückgabewert
 
@@ -32,9 +32,9 @@ Gibt einen **Boolean**-Wert zurück, der kennzeichnet, ob alle vom *CursorOption
 
 |Parameter|Beschreibung|
 |:--------|:----------|
-|*Cursor Options* |Ein Ausdruck vom Datentyp **Long**, der aus mindestens einem [CursorOptionEnum](cursoroptionenum.md)-Wert besteht.|
+|*CursorOptions* |Ein Ausdruck vom Datentyp **Long**, der aus mindestens einem [CursorOptionEnum](cursoroptionenum.md)-Wert besteht.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Mit der **Supports**-Methode bestimmen Sie, welche Funktionalität ein **Recordset**-Objekt unterstützt. Wenn das **Recordset**-Objekt die Features unterstützt, deren entsprechende Konstanten in *CursorOptions* enthalten sind, gibt die **Supports**-Methode **True** zurück. Andernfalls wird **False** zurückgegeben.
 

@@ -1,20 +1,20 @@
 ---
-title: Recordset2. MoveLast-Methode (DAO)
+title: Recordset2.MoveLast-Methode (DAO)
 TOCTitle: MoveLast Method
 ms:assetid: 32717786-c59c-ec22-666b-fc78e4265c5a
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192306(v=office.15)
 ms:contentKeyID: 48544079
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 829c4dd759bce86388cc65aa5b63276eec438ea0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 1cd29fe99db3cdf3e00556b389328d46d06a6f82
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307259"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601933"
 ---
-# <a name="recordset2movelast-method-dao"></a>Recordset2. MoveLast-Methode (DAO)
+# <a name="recordset2movelast-method-dao"></a>Recordset2.MoveLast-Methode (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -22,9 +22,9 @@ Wechselt zum letzten Datensatz in einem angegebenen **Recordset**-Objekt und mac
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . MoveLast (***Optionen***)
+*Ausdruck* . MoveLast(***Options***)
 
-*Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset2-Objekt** darstellt.
 
 ## <a name="parameters"></a>Parameter
 
@@ -45,7 +45,7 @@ Wechselt zum letzten Datensatz in einem angegebenen **Recordset**-Objekt und mac
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>Options</em></p></td>
+<td><p><em>Optionen</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Long</strong></p></td>
 <td><p>Auf <strong>dbRunAsync</strong> festgelegt, damit der Aufruf für <strong>MoveLast</strong> asynchron ausgeführt wird.</p></td>
@@ -62,9 +62,9 @@ Wenn Sie den aktuellen Datensatz bearbeiten, sollten Sie die Änderungen mit der
 
 Beim Öffnen eines **Recordset**-Objekts ist der erste Datensatz aktuell, und die **BOF**-Eigenschaft ist auf **False** festgelegt. Wenn **Recordset** keine Datensätze enthält, ist die **BOF**-Eigenschaft auf **True** festgelegt, und es ist kein aktueller Datensatz vorhanden.
 
-Ist der erste bzw. letzte Datensatz beim Verwenden von **MoveFirst** oder **MoveLast** bereits aktuell, ändert sich der aktuelle Datensatz nicht.
+Wenn der erste oder letzte Datensatz bei Verwendung von **MoveFirst** oder **MoveLast** bereits aktuell ist, ändert sich der aktuelle Datensatz nicht.
 
-Wenn Recordset auf ein **Recordset** vom Typ "Tabelle" verweist (nur Microsoft Access-Arbeitsbereiche), folgt die Bewegung dem aktuellen Index. You can set the current index by using the **Index** property. If you don't set the current index, the order of returned records is undefined.
+Wenn Recordset sich auf ein **Recordset** vom Typ "Tabelle" bezieht (nur Microsoft Access-Arbeitsbereiche), folgt die Bewegung dem aktuellen Index. You can set the current index by using the **Index** property. Wenn Sie den aktuellen Index nicht festlegen, ist die Reihenfolge der zurückgegebenen Datensätze nicht definiert.
 
 > [!NOTE]
 > You can use the **MoveLast** method to fully populate a dynaset- or snapshot-type **Recordset** to provide the current number of records in the **Recordset**. However, if you use **MoveLast** in this way, you can slow down your application's performance. You should only use **MoveLast** to get a record count if it is absolutely necessary to obtain an accurate record count on a newly opened **Recordset**. 

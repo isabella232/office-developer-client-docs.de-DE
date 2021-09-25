@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 539bf79a-df09-2048-2aba-8c863dd26fc2
 description: Gibt den Prozentsatz des Abstands entlang des Pfads des Punkts zurück, der den angegebenen Koordinaten am nächsten liegt, wie einen Wert zwischen 0 und 1.
-ms.openlocfilehash: ced20cdf1f3531eafaa03c2666b09334029fd3da
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 29c5dac690913c1b3715f18c4a661991ea4c23aa
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407333"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608228"
 ---
 # <a name="nearestpointonpath-function"></a>NEARESTPOINTONPATH Function
 
@@ -32,15 +32,15 @@ NEARESTPOINTONPATH(** *section* **, ** *x* **, ** *y* ** )
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _section_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Abschnitt "Geometrie", der den Pfad darstellt, angegeben mit einer Referenz auf dessen Zelle "Path" (z. B. Geometrie1.Path).  <br/> |
-| _x_ <br/> |Erforderlich  <br/> |**Double** <br/> |Die x-Koordinate des angegebenen Punkts.  <br/> |
+| _x_ <br/> |Erforderlich  <br/> |**Double** <br/> |Die X-Koordinate des angegebenen Punkts.  <br/> |
 | _y_ <br/> |Erforderlich  <br/> |**Double** <br/> |Die y-Koordinate des angegebenen Punkts.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
  **Double**
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Wenn _der_ Abschnitt nicht vorhanden ist, gibt Microsoft Visio #REF! zurück. 
+Wenn _kein Abschnitt_ vorhanden ist, gibt Microsoft Visio #REF! zurück. 
   
 

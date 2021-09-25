@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249266(v=office.15)
 ms:contentKeyID: 48544833
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 0d0da48080b64e43cc39b9567275e1a8755a8881
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 991c3cf1e28db385af06a71cfb6ba247455bda91
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314112"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593446"
 ---
 # <a name="limits-of-a-recordset"></a>Die Einschränkungen eines Recordsets
 
@@ -29,9 +29,9 @@ Bestimmen Sie mithilfe der Eigenschaften **BOF** und **EOF**, ob ein **Recordset
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>ProductID</p></th>
-<th><p>ProductName</p></th>
-<th><p>UnitPrice</p></th>
+<th><p>Productid</p></th>
+<th><p>Productname</p></th>
+<th><p>Einzelpreis</p></th>
 </tr>
 </thead>
 <tbody>
@@ -43,29 +43,29 @@ Bestimmen Sie mithilfe der Eigenschaften **BOF** und **EOF**, ob ein **Recordset
 </p></td>
 </tr>
 <tr class="even">
-<td><p>7</p></td>
+<td><p>7 </p></td>
 <td><p>Uncle Bob's Organic Dried Pears</p></td>
-<td><p>30,0000</p></td>
+<td><p>30.0000</p></td>
 </tr>
 <tr class="odd">
-<td><p>14</p></td>
+<td><p>14 </p></td>
 <td><p>Tofu</p></td>
-<td><p>23,2500</p></td>
+<td><p>23.2500</p></td>
 </tr>
 <tr class="even">
 <td><p>28</p></td>
 <td><p>Rssle Sauerkraut</p></td>
-<td><p>45,6000</p></td>
+<td><p>45.6000</p></td>
 </tr>
 <tr class="odd">
 <td><p>51</p></td>
 <td><p>Manjimup Dried Apples</p></td>
-<td><p>53,0000</p></td>
+<td><p>53.0000</p></td>
 </tr>
 <tr class="even">
 <td><p>74</p></td>
 <td><p>Longlife Tofu</p></td>
-<td><p>10,0000</p></td>
+<td><p>10.0000</p></td>
 </tr>
 <tr class="odd">
 <td><p>EOF</p></td>
@@ -91,7 +91,7 @@ If oRs.BOF And oRs.EOF Then
 End If 
 ```
 
-If you open a **Recordset** object containing no records, the **BOF** and **EOF** properties are both set to **True** and the value of the **Recordset** object's **RecordCount** property setting depends on the cursor type. -1 wird für dynamische Cursor (**CursorType** = **adOpenDynamic**) zurückgegeben, und 0 wird für andere Cursor zurückgegeben.
+If you open a **Recordset** object containing no records, the **BOF** and **EOF** properties are both set to **True** and the value of the **Recordset** object's **RecordCount** property setting depends on the cursor type. -1 wird für dynamische Cursor (**CursorType**  =  **adOpenDynamic**) und 0 für andere Cursor zurückgegeben.
 
 Wenn Sie ein **Recordset**-Objekt öffnen, das mindestens einen Datensatz enthält, ist der erste Datensatz der aktuelle Datensatz, und die Eigenschaften **BOF** und **EOF** sind **False**.
 

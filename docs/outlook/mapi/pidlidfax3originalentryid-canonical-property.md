@@ -1,25 +1,25 @@
 ---
-title: PidLidFax3OriginalEntryId (kanonische Eigenschaft)
+title: Kanonische PidLidFax3OriginalEntryId-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidFax3OriginalEntryId
 api_type:
 - COM
 ms.assetid: afccacf1-0b8b-410c-b701-bf1bd8dcca99
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 2a77ab1fcebd729f6463a3480f1b217cd6e6041c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: ac7e6d8e9a2dbdf638f674c67a85a34dfe9aa79b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355874"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59566934"
 ---
-# <a name="pidlidfax3originalentryid-canonical-property"></a>PidLidFax3OriginalEntryId (kanonische Eigenschaft)
+# <a name="pidlidfax3originalentryid-canonical-property"></a>Kanonische PidLidFax3OriginalEntryId-Eigenschaft
 
   
   
@@ -31,13 +31,13 @@ Gibt die ursprüngliche EntryID der anderen Faxadresse des Kontakts an.
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidFax3OriginalEntryID  <br/> |
 |Eigenschaftensatz:  <br/> |PSETID_Address  <br/> |
-|Lange ID (LID):  <br/> |0x000080D5  <br/> |
+|Long ID (LID):  <br/> |0x000080D5  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft muss, falls vorhanden, die one-off EntryId angeben, die dieser Faxadresse entspricht.
+Diese Eigenschaft muss, sofern vorhanden, die einmalige EntryId angeben, die dieser Faxadresse entspricht.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -45,7 +45,7 @@ Diese Eigenschaft muss, falls vorhanden, die one-off EntryId angeben, die dieser
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Stellt Eigenschaftensatzdefinitionen und Verweise auf verwandte Exchange Server zur Verfügung.
+> Stellt Die Definition von Eigenschaftengruppen und Verweise auf verwandte Exchange Server Protokollspezifikationen bereit.
     
 [[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
@@ -55,7 +55,7 @@ Diese Eigenschaft muss, falls vorhanden, die one-off EntryId angeben, die dieser
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -63,9 +63,9 @@ Mapidefs.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

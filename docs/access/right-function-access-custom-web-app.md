@@ -4,26 +4,26 @@ manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 74cefaa2-3ac4-4a65-af0b-2ee4d9644a93
-description: Gibt den rechten Teil einer Zeichenzeichenfolge mit der angegebenen Anzahl von Zeichen zurück.
-ms.openlocfilehash: eb87f6d238802a950a4858bae942f75fdefc1d5b
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Gibt den rechten Teil einer Zeichenfolge mit der angegebenen Anzahl von Zeichen zurück.
+ms.openlocfilehash: 14d10be183a0c183c0332c9d09a478d17aa4c3b5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439954"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593075"
 ---
 # <a name="right-function-access-custom-web-app"></a>Right-Funktion (benutzerdefinierte Access-Web-App)
 
-Gibt den rechten Teil einer Zeichenzeichenfolge mit der angegebenen Anzahl von Zeichen zurück.
+Gibt den rechten Teil einer Zeichenfolge mit der angegebenen Anzahl von Zeichen zurück.
   
 > [!IMPORTANT]
 > Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 ## <a name="syntax"></a>Syntax
 
- **Right** (*TextExpression*, *Length*) 
+ **Rechts** (*TextExpression*, *Length*) 
   
 Die **Right-Funktion** enthält die folgenden Argumente. 
   

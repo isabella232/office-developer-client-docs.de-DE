@@ -1,20 +1,20 @@
 ---
-title: Member Workspace (DAO)
+title: Workspace-Mitglieder (DAO)
 TOCTitle: Workspace Members
 ms:assetid: 13ac7d41-1b25-20d2-5c85-0f21bfd38328
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845437(v=office.15)
 ms:contentKeyID: 48543374
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 8a2105c13f5f7ce9a75e7e18e20477d8b283543a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4ede4208d948c87b3c2dbe1a14a1ccc49fd9d142
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32302593"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585018"
 ---
-# <a name="workspace-members-dao"></a>Member Workspace (DAO)
+# <a name="workspace-members-dao"></a>Workspace-Mitglieder (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -40,25 +40,25 @@ Ein Arbeitsbereichs objekt definiert eine benannte Sitzung für einen Benutzer. 
 <td><p>Startet eine neue Transaktion. <strong>Database</strong> -Wert mit Lese-/Schreibzugriff.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="workspace-close-method-dao.md">Schließen Sie</a></strong></p></td>
+<td><p><strong><a href="workspace-close-method-dao.md">Close</a></strong></p></td>
 <td><p>Schließt ein geöffnetes <strong>Workspace</strong>-Objekt.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong><a href="workspace-committrans-method-dao.md">CommitTrans</a></strong></p></td>
+<td><p><strong><a href="workspace-committrans-method-dao.md">Committrans</a></strong></p></td>
 <td><p>Beendet die aktuelle Transaktion und speichert die Änderungen.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="workspace-createdatabase-method-dao.md">CreateDatabase</a></strong></p></td>
+<td><p><strong><a href="workspace-createdatabase-method-dao.md">Createdatabase</a></strong></p></td>
 <td><p>Erstellt ein neues <strong><a href="database-object-dao.md">Database</a></strong> -Objekt, speichert die Datenbank auf einem Datenträger und gibt ein geöffnetes <strong>Database</strong>-Objekt zurück (gilt nur für Microsoft Access-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="workspace-openconnection-method-dao.md">OpenConnection</a></strong></p></td>
-<td><p><strong>Hinweis</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
+<td><p><strong>HINWEIS</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
 <p>Öffnet ein <strong><a href="connection-object-dao.md">Connection</a></strong> -Objekt in einer ODBC-Datenquelle (gilt nur für ODBCDirect-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="workspace-opendatabase-method-dao.md">OpenDatabase</a></strong></p></td>
-<td><p>Öffnet eine bestimmte Datenbank in einem <strong><a href="workspace-object-dao.md">Workspace</a></strong> -Objekt und gibt einen Verweis auf das <strong><a href="database-object-dao.md">Database</a></strong> -Objekt zurück, das es darstellt.</p></td>
+<td><p>Öffnet eine bestimmte Datenbank in einem <strong><a href="workspace-object-dao.md">Workspace</a></strong>-Objekt und gibt einen Verweis auf das <strong><a href="database-object-dao.md">Database</a></strong>-Objekt zurück, das es darstellt.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="workspace-rollback-method-dao.md">Rollback</a></strong></p></td>
@@ -83,8 +83,8 @@ Ein Arbeitsbereichs objekt definiert eine benannte Sitzung für einen Benutzer. 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong><a href="workspace-connections-property-dao.md">Verbindungen</a></strong></p></td>
-<td><p>Gibt eine <strong>Connections</strong>-Auflistung zurück, die die aktuellen Verbindungen im angegebenen <strong>Workspace</strong>-Objekt darstellt. Schreibgeschützt.</p></td>
+<td><p><strong><a href="workspace-connections-property-dao.md">Connections</a></strong></p></td>
+<td><p>Gibt eine <strong>Connections</strong>-Auflistung zurück, die die aktuellen Verbindungen im angegebenen <strong>Workspace</strong>-Objekt darstellt. Schreibgeschützt</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="workspace-databases-property-dao.md">Datenbanken</a></strong></p></td>
@@ -92,7 +92,7 @@ Ein Arbeitsbereichs objekt definiert eine benannte Sitzung für einen Benutzer. 
 </tr>
 <tr class="odd">
 <td><p><strong><a href="workspace-defaultcursordriver-property-dao.md">DefaultCursorDriver</a></strong></p></td>
-<td><p><strong>Hinweis</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
+<td><p><strong>HINWEIS</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
 <p>Mit dieser Eigenschaft wird der Typ des Cursortreibers festgelegt oder zurückgegeben, der für die mit der <strong><a href="dbengine-openconnection-method-dao.md">OpenConnection</a></strong> - oder <strong><a href="dbengine-opendatabase-method-dao.md">OpenDatabase</a></strong> -Methode erstellte Verbindung verwendet wird (gilt nur für ODBCDirect-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="even">
@@ -108,7 +108,7 @@ Ein Arbeitsbereichs objekt definiert eine benannte Sitzung für einen Benutzer. 
 <td><p>Gibt den Namen des angegebenen Objekts zurück oder legt diesen fest. <strong>String</strong>-Wert mit Lese-/Schreibzugriff, wenn das Objekt noch keiner Auflistung angefügt wurde. Schreibgeschützter <strong>String</strong>-Wert, wenn das Objekt einer Auflistung angefügt wurde.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong><a href="workspace-properties-property-dao.md">Eigenschaften</a></strong></p></td>
+<td><p><strong><a href="workspace-properties-property-dao.md">Properties</a></strong></p></td>
 <td><p>Gibt die <strong><a href="properties-collection-dao.md">Properties</a></strong> -Auflistung des angegebenen Objekts zurück. Schreibgeschützt.</p></td>
 </tr>
 <tr class="even">

@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250285(v=office.15)
 ms:contentKeyID: 48548864
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 9cf773090ccb37bf4cad4aff41499ad01f966479
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c316893e29856169b4176ef5f1f5f3fc11e78178
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293252"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558373"
 ---
 # <a name="executeoptions-property-rds"></a>ExecuteOptions-Eigenschaft (RDS)
 
@@ -43,7 +43,7 @@ Legt einen der folgenden Werte fest oder gibt ihn zurück.
 </tr>
 <tr class="even">
 <td><p><strong>adcExecAsync</strong></p></td>
-<td><p>Standardwert. Führt die nächste Aktualisierung des <strong>Recordsets</strong> asynchron aus.</p></td>
+<td><p>Standard. Führt die nächste Aktualisierung des <strong>Recordsets</strong> asynchron aus.</p></td>
 </tr>
 </tbody>
 </table>
@@ -51,7 +51,7 @@ Legt einen der folgenden Werte fest oder gibt ihn zurück.
 > [!NOTE]
 > Each client-side executable file that uses these constants must provide declarations for them. You can cut and paste the constant declarations that you want from the file Adcvbs.inc, located in the C:\Program Files\Common Files\System\MSADC folder.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn **ExecuteOptions** auf **adcExecAsync** festgelegt ist, wird dadurch der nächste **Refresh**-Aufruf für das **Recordset**-Objekt des [RDS.DataControl](datacontrol-object-rds.md)-Objekts ausgeführt.
 

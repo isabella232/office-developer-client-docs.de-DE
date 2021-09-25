@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249664(v=office.15)
 ms:contentKeyID: 48546431
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 8aa3daef443c14710c87fd5c98d958693dd61cd6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c594298531e8e067a6138d0b49a6162f6b005164
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306468"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585312"
 ---
 # <a name="source-property-ado-md"></a>Source-Eigenschaft (ADO MD)
 
@@ -21,7 +21,7 @@ ms.locfileid: "32306468"
 
 Gibt die Quelle der Daten in der Zellmenge an.
 
-## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
+## <a name="settings-and-return-values"></a>Einstellungen- und Rückgabewerte
 
 Legt einen **Variant** -Wert fest oder gibt diesen zurück. Der Wert verfügt über Lese-/Schreibzugriff für geschlossene [Cellset](cellset-object-ado-md.md)-Objekte und ist schreibgeschützt für geöffnete **Cellset** -Objekte. Der **Variant** -Wert sollte ein gültiges **String** -Objekt enthalten, z. B. eine MDX-Abfrage.
 

@@ -4,21 +4,21 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7590a30e-3fd8-7ae3-f077-c80f6cc21d7b
-description: Dieses Thema enthält Konstantendefinitionen für APIs, die Outlook werden.
-ms.openlocfilehash: 65181932b858da1b32c3fbe5fd0bd7e92ca8dc9f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: Dieses Thema enthält Konstantendefinitionen für APIs, die Exporte Outlook.
+ms.openlocfilehash: 0ba6c94ad8f4e5ed78d8f6b4e2ea56ba8258c4e7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32319873"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614465"
 ---
 # <a name="constants-outlook-exported-apis"></a>Konstanten (Outlook exportierter APIs)
 
-Dieses Thema enthält Konstantendefinitionen für APIs, die Outlook werden.
+Dieses Thema enthält Konstantendefinitionen für APIs, die Exporte Outlook.
   
-## <a name="definitions-for-time-zone-support"></a>Definitionen für die Unterstützung der Zeitzone
+## <a name="definitions-for-time-zone-support"></a>Definitionen für die Zeitzonenunterstützung
 
 ```cpp
 const ULONG TZ_MAX_RULES                    = 0x00000001;  
@@ -35,16 +35,16 @@ const WORD  TZDEFINITION_FLAG_VALID_KEYNAME = 0x0002;
 |:-----|:-----|
 |PCAFSIF_MSGEID_IS_SEARCH_KEY  <br/> |0x00000001  <br/> |
    
-## <a name="miscellaneous-dispatch-identifiers"></a>Verschiedene Verteilerbezeichner
+## <a name="miscellaneous-dispatch-identifiers"></a>Verschiedene Verteiler-IDs
 
-Outlook werden die folgenden Dispatch identifiers (dispids) verfügbar gemacht, sodass Entwickler [IDispatch::Invoke](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) verwenden können, um auf die entsprechende Eigenschaft oder Methode zu zugreifen oder das entsprechende Ereignis abzuhören. 
+Outlook macht die folgenden Verteiler-IDs (Dispids) verfügbar, sodass Entwickler [IDispatch::Invoke](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) verwenden können, um auf die entsprechende Eigenschaft oder Methode zuzugreifen oder das entsprechende Ereignis abzuhören. 
   
 |**Zugeordnete Konstante**|**Dispid-Wert**|**Beschreibung**|**Anwendbare Schnittstelle**|
 |:-----|:-----|:-----|:-----|
-|**dispidFDirty** <br/> |0xF024  <br/> |Wird zum Aufrufen der entsprechenden Eigenschaft für ein Element verwendet, um zu überprüfen, ob das Element geändert, aber nicht gespeichert wurde.  <br/> |Objekte auf Elementebene  <br/> |
-|**dispidShowSenderPhoto** <br/> |0xF0D0  <br/> |Wird zum Aufrufen der entsprechenden Methode im Explorer oder Inspektor verwendet, um anzugeben, ob das Bild eines Kontakts basierend auf einem bestimmten Argument angezeigt werden soll.  <br/> |Explorer oder Inspektor  <br/> |
-|**dispidBeforePrint** <br/> |0xFC8E  <br/> |Wird verwendet, um das Ereignis von der **IDispatch::Invoke-Funktion** zu behandeln, die vor einem Druckvorgang ausgerufen wird.  <br/> |Anwendung  <br/> |
-|**dispidEventReadComplete** <br/> |0xFC8F  <br/> |Wird verwendet, um das Ereignis von der **IDispatch::Invoke-Funktion** zu behandeln, die nach abschluss Outlook die Eigenschaften des Elements gelesen hat.  <br/> |Objekte auf Elementebene  <br/> |
+|**dispidFDirty** <br/> |0xF024  <br/> |Wird verwendet, um die entsprechende Eigenschaft für ein Element aufzurufen, um zu überprüfen, ob das Element geändert, aber nicht gespeichert wurde.  <br/> |Objekte auf Elementebene  <br/> |
+|**dispidShowSenderPhoto** <br/> |0xF0D0  <br/> |Wird verwendet, um die entsprechende Methode im Explorer oder Inspektor aufzurufen, um anzugeben, ob das Bild eines Kontakts basierend auf einem bestimmten Argument angezeigt werden soll.  <br/> |Explorer oder Inspektor  <br/> |
+|**dispidBeforePrint** <br/> |0xFC8E  <br/> |Wird verwendet, um das Ereignis aus der **IDispatch::Invoke-Funktion** zu behandeln, die vor einem Druckvorgang ausgelöst wird.  <br/> |Application  <br/> |
+|**dispidEventReadComplete** <br/> |0xFC8F  <br/> |Wird verwendet, um das Ereignis aus der **IDispatch::Invoke-Funktion** zu behandeln, die ausgelöst wird, wenn Outlook das Lesen der Eigenschaften des Elements abgeschlossen hat.  <br/> |Objekte auf Elementebene  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

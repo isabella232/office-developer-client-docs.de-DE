@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249039(v=office.15)
 ms:contentKeyID: 48543842
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 5bd8196670513156011d69f08eacf790fa4a0a03
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4852562fcc755ae0edc8376d0e59d67a1e0affe0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288672"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558198"
 ---
 # <a name="moverecordoptionsenum"></a>MoveRecordOptionsEnum
 
@@ -48,18 +48,18 @@ Gibt das Verhalten der [MoveRecord](moverecord-method-ado.md)-Methode des [Recor
 <tr class="odd">
 <td><p><strong>adMoveDontUpdateLinks</strong></p></td>
 <td><p>2</p></td>
-<td><p>Ändert das Standardverhalten der <strong>MoveRecord</strong> -Methode, indem die Hypertext-Links des Quell <strong>Datensatzes</strong>nicht aktualisiert werden. Das Standardverhalten hängt von den Funktionen des Anbieters ab. Move-Vorgangs Updates Links, wenn der Anbieter fähig ist. Wenn der Anbieter keine Verknüpfungen korrigieren kann oder wenn dieser Wert nicht angegeben ist, wird die Verschiebung auch dann erfolgreich ausgeführt, wenn die Verknüpfungen nicht behoben wurden.</p></td>
+<td><p>Ändert das Standardverhalten der <strong>MoveRecord</strong> -Methode, indem die Hypertextlinks des <strong>Quelldatensatzes</strong>nicht aktualisiert werden. Das Standardverhalten hängt von den Funktionen des Anbieters ab. Der Verschiebungsvorgang aktualisiert Links, wenn der Anbieter in der Lage ist. Wenn der Anbieter Verknüpfungen nicht beheben kann oder dieser Wert nicht angegeben ist, ist die Verschiebung auch dann erfolgreich, wenn Verknüpfungen nicht behoben wurden.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adMoveAllowEmulation</strong></p></td>
-<td><p>4</p></td>
+<td><p>4 </p></td>
 <td><p>Fordert an, dass der Anbieter das Verschieben (mit Download-, Upload- und Löschvorgängen) simuliert. Wenn das Verschieben des Datensatzes fehlschlägt, weil sich die Ziel-URL auf einem anderen Server befindet oder von einem anderen Anbieter als die Quelle bedient wird, kann dies aufgrund verschiedener Anbieterfunktionen beim Verschieben von Ressourcen zwischen den Anbietern zu einer erhöhten Latenz oder zu Datenverlust führen.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
 Diese Konstanten haben keine ADO/WFC-Entsprechungen.
 

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.SShortArray
 api_type:
 - COM
 ms.assetid: 201ceb76-41bc-4d7b-835d-5196bf3dc234
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 8ea7d51b15a6e6acd44a3c0b6158378661f311bc
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 99d2cfb9b4d460ed6a86235a011f9bf244aac0a2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429614"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59566465"
 ---
 # <a name="sshortarray"></a>SShortArray
 
@@ -25,7 +25,7 @@ ms.locfileid: "33429614"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array nicht signierter ganzzahliger Werte, die zum Beschreiben einer Eigenschaft vom Typ PT_MV_SHORT.
+Enthält ein Array von ganzzahligen Werten ohne Vorzeichen, die verwendet werden, um eine Eigenschaft vom Typ PT_MV_SHORT zu beschreiben.
   
 |||
 |:-----|:-----|
@@ -40,19 +40,19 @@ typedef struct _SShortArray
 
 ```
 
-## <a name="members"></a>Elemente
+## <a name="members"></a>Members
 
  **cValues**
   
-> Anzahl der Werte im Array, auf die das **lpi-Element verweist.** 
+> Anzahl der Werte im Array, auf das der **lpi-Member** verweist. 
     
- **lpi**
+ **Lpi**
   
-> Zeiger auf ein Array nicht signierter ganzzahliger Werte.
+> Zeiger auf ein Array von ganzzahligen Werten ohne Vorzeichen.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Weitere Informationen zu PT_MV_SHORT und anderen Eigenschaftentypen finden Sie unter [Property Types](property-types.md). 
+Weitere Informationen zu PT_MV_SHORT und anderen Eigenschaftstypen finden Sie unter [Property Types](property-types.md). 
   
 ## <a name="see-also"></a>Siehe auch
 

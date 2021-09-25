@@ -4,26 +4,26 @@ manager: soliver
 ms.date: 01/20/2015
 ms.audience: Developer
 keywords:
-- onafterimport-Ereignis [infopath 2007],OnAfterChange-Ereignis [InfoPath 2007],OnBeforeChange-Ereignis [InfoPath 2007],OnSubmitRequest-Ereignis [InfoPath 2007],OnVersionUpgrade-Ereignis [InfoPath 2007],InfoPath 2003-kompatible Formularvorlagen, event handlers,OnLoad event [InfoPath 2007],event handlers [InfoPath 2007], Hinzufügen mithilfe des InfoPath 2003-Objektmodells,OnValidate-Ereignis [InfoPath 2007],OnContextChange-Ereignis [InfoPath 2007],OnSaveRequest-Ereignis [InfoPath 2007],OnClick-Ereignis [InfoPath 2007],OnSwitchView-Ereignis [InfoPath 2007] ,OnSign-Ereignis [InfoPath 2007],OnMergeRequest-Ereignis [InfoPath 2007]
-localization_priority: Normal
+- onafterimport event [infopath 2007],OnAfterChange event [InfoPath 2007],OnBeforeChange event [InfoPath 2007],OnSubmitRequest event [InfoPath 2007],OnVersionUpgrade event [InfoPath 2007],InfoPath 2003-compatible form templates, event handlers,OnLoad event [InfoPath 2007],event handlers [InfoPath 2007], adding using InfoPath 2003 object model,OnValidate event [InfoPath 2007],OnContextChange event [InfoPath 2007],OnSaveRequest event [InfoPath 2007],OnClick event [InfoPath 2007], OnSwitchView-Ereignis [InfoPath 2007],OnSign-Ereignis [InfoPath 2007],OnMergeRequest-Ereignis [InfoPath 2007]
+ms.localizationpriority: medium
 ms.assetid: 0520df55-2d91-4cc5-be31-82144a2db4f6
 description: Die Menübefehle zum Hinzufügen von Ereignishandlerfunktionen in einem Formularvorlagenprojekt, das mit dem InfoPath 2003-Objektmodell kompatibel ist, sind im Prinzip mit den Befehlen für andere Typen von Formularvorlagen identisch.
-ms.openlocfilehash: 8533b6bc11dccdad9d0f05de35406ad3cf68eacd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 742af7d5b4a1b1b1c3b90dea2da80f4d85d7fac9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303668"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59592900"
 ---
 # <a name="add-an-event-handler-using-the-infopath-object-model"></a>Hinzufügen eines Ereignishandlers mithilfe des InfoPath-Objektmodells
 
-Die Menübefehle zum Hinzufügen von Ereignishandlerfunktionen in einem Formularvorlagenprojekt, das mit dem InfoPath 2003-Objektmodell kompatibel ist, sind im Prinzip mit den Befehlen für andere Typen von Formularvorlagen identisch. Wenn Sie beispielsweise einen **OnLoad-Ereignishandler** hinzufügen möchten und die Formularvorlage im InfoPath-Designer  geöffnet ist, klicken Sie auf der Registerkarte Entwickler auf den Befehl On **Load Event.** Der Fokus wechselt automatisch zum Formularcode für den **OnLoad-Ereignishandler** im Visual Studio 2012-Code-Editor. 
+Die Menübefehle zum Hinzufügen von Ereignishandlerfunktionen in einem Formularvorlagenprojekt, das mit dem InfoPath 2003-Objektmodell kompatibel ist, sind im Prinzip mit den Befehlen für andere Typen von Formularvorlagen identisch. Um z. B. einen **OnLoad-Ereignishandler** hinzuzufügen, wenn die Formularvorlage im InfoPath-Designer geöffnet ist, klicken Sie auf der Registerkarte **"Entwickler"** auf den Befehl **"On Load Event".** Der Fokus wechselt automatisch zum Formularcode für den **OnLoad-Ereignishandler** im Code-Editor Visual Studio 2012. 
   
 In mit InfoPath 2003 kompatiblen Projekten, die auf Formularvorlagen mit verwaltetem Code basieren, werden die Klasse mit den Ereignishandlerfunktionen sowie die Ereignishandler selbst durch InfoPath-spezifische Attribute im Codemodul identifiziert.
 
 ## <a name="adding-event-handlers"></a>Hinzufügen von Ereignishandlern
 
-Bei allen folgenden Verfahren wird davon ausgegangen, dass Sie ein Formularvorlagenprojekt in Microsoft InfoPath mit Visual Studio 2012 geöffnet haben.
+Bei allen folgenden Verfahren wird davon ausgegangen, dass in Microsoft InfoPath mit Visual Studio 2012 ein Formularvorlagenprojekt geöffnet ist.
   
 ### <a name="add-an-event-handler-for-the-onclick-event-of-a-command-button"></a>Hinzufügen eines Ereignishandlers für das OnClick-Ereignis einer Befehlsschaltfläche
 
@@ -39,13 +39,13 @@ Bei allen folgenden Verfahren wird davon ausgegangen, dass Sie ein Formularvorla
     
 2. Zeigen Sie auf **Programmierung**, und klicken Sie dann auf einen der Befehle, z. B. **On Validate-Ereignis**.
     
-   Der Fokus wechselt für eines der folgenden Ereignisse im Code-Editor zum Stub für den Ereignishandler: [OnBeforeChange](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._DataDOMEventSink_Event.OnBeforeChange.aspx), [OnValidate](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._DataDOMEventSink_Event.OnValidate.aspx)oder [OnAfterChange](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._DataDOMEventSink_Event.OnAfterChange.aspx). 
+   Der Fokus wechselt zum Stub für den Ereignishandler für eines der folgenden Ereignisse im Code-Editor: [OnBeforeChange](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._DataDOMEventSink_Event.OnBeforeChange.aspx), [OnValidate](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._DataDOMEventSink_Event.OnValidate.aspx)oder [OnAfterChange](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._DataDOMEventSink_Event.OnAfterChange.aspx). 
     
 ### <a name="add-an-event-handler-for-the-onload-onswitchview-oncontextchange-or-onsign-event-of-a-form"></a>Hinzufügen eines Ereignishandlers für die Ereignisse "OnLoad", "OnSwitchView", "OnContextChange" oder "OnSign" eines Formulars
 
 - Zeigen Sie im Menü **Extras** auf **Programmierung**, und klicken Sie dann auf das Formularereignis, für das ein Ereignishandler hinzugefügt werden soll.
     
-    Der Fokus wechselt für einen der folgenden Optionen im Code-Editor zum Stub für den Ereignishandler: [OnLoad](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnLoad.aspx), [OnSwitchView](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnSwitchView.aspx), [OnContextChange](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnContextChange.aspx)oder [OnSign](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnSign.aspx). 
+    Der Fokus wechselt zum Stub für den Ereignishandler für einen der folgenden Elemente im Code-Editor: [OnLoad](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnLoad.aspx), [OnSwitchView](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnSwitchView.aspx), [OnContextChange](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnContextChange.aspx)oder [OnSign](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnSign.aspx). 
     
 ### <a name="add-an-event-handler-for-the-onsubmitrequest-event-of-a-form"></a>Hinzufügen eines Ereignishandlers für das OnSubmitRequest-Ereignis eines Formulars
 
@@ -220,7 +220,7 @@ namespace AuxDom
 
 ```
 
-## <a name="how-the-class-that-contains-event-handlers-is-identified"></a>Identifizieren der Klasse, die Ereignishandler enthält
+## <a name="how-the-class-that-contains-event-handlers-is-identified"></a>Wie die Klasse identifiziert wird, die Ereignishandler enthält
 
 Wenn Sie ein neues InfoPath-Formularvorlagenprojekt erstellen, das mit dem InfoPath 2003-Objektmodell mit verwaltetem Code kompatibel ist, wird ein **System.ComponentModel.Description**-Attribut auf Assemblyebene am Anfang des Formularcodemoduls auf die Klasse angewendet, um die Klasse zu identifizieren, die alle Ereignishandler für die Formularvorlage enthält. 
   
@@ -243,7 +243,7 @@ Imports Microsoft.Office.Interop.InfoPath.SemiTrust
 
 ## <a name="how-event-handlers-are-identified"></a>Identifizieren von Ereignishandlern
 
-Wenn Sie einen neuen Ereignishandler über Menübefehle oder Schaltflächen auf der InfoPath-Benutzeroberfläche im Entwurfsmodus hinzufügen, wird der Stub für die Ereignishandlerfunktion in das Formular geschrieben. Das folgende Beispiel zeigt den Stubereignishandler, der für ein [OnValidate-Ereignis](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._DataDOMEventSink_Event.OnValidate.aspx) erstellt wurde, das für ein Feld mit dem Namen "total" hinzugefügt wurde. 
+Wenn Sie einen neuen Ereignishandler über Menübefehle oder Schaltflächen auf der InfoPath-Benutzeroberfläche im Entwurfsmodus hinzufügen, wird der Stub für die Ereignishandlerfunktion in das Formular geschrieben. Das folgende Beispiel zeigt den Stub-Ereignishandler, der für ein [OnValidate](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._DataDOMEventSink_Event.OnValidate.aspx) erstellt wurde, das für ein Feld namens "total" hinzugefügt wurde. 
   
 ```cs
 [InfoPathEventHandler(MatchPath="/invoice/total", EventType=InfoPathEventType.OnValidate)]
@@ -261,7 +261,7 @@ End Sub
 
 ```
 
-Anschließend können Sie Code hinzufügen, der Elemente des InfoPath-Objektmodells mithilfe der privaten zwischengespeicherten Member der oder-Variablen aufruft, oder indem Sie die Member verwenden, auf die über das  `thisXDocument`  `thisApplication`  `e` **EventArgs-Objekt** zugegriffen wird, das vom Ereignishandler empfangen wird: 
+Sie können dann Code hinzufügen, der Elemente des InfoPath-Objektmodells mithilfe der privaten zwischengespeicherten Elemente der  `thisXDocument` oder  `thisApplication` Variablen aufruft, oder indem Sie die Member verwenden, auf die über das  `e` **EventArgs-Objekt** zugegriffen wird, das vom Ereignishandler empfangen wurde: 
   
 ```cs
 thisXDocument.UI.Alert.(e.Site.text);
@@ -273,15 +273,15 @@ thisXDocument.UI.Alert.(e.Site.text)
 
 ```
 
-Das **InfoPathEventHandler-Attribut** (wie durch die [InfoPathEventHandlerAttribute-Klasse](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.InfoPathEventHandlerAttribute.aspx) definiert) ist das benutzerdefinierte Attribut für Funktionen, die als Ereignishandler verwendet werden. 
+Das **InfoPathEventHandler-Attribut** (gemäß Definition durch die [InfoPathEventHandlerAttribute-Klasse)](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.InfoPathEventHandlerAttribute.aspx) ist das benutzerdefinierte Attribut für Funktionen, die als Ereignishandler verwendet werden. 
   
-Wenn das Ereignis dies erfordert, gibt der **MatchPath-Parameter** (wie durch die [MatchPath-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.InfoPathEventHandlerAttribute.MatchPath.aspx) der **InfoPathEventHandlerAttribute-Klasse** definiert) einen XPath-Ausdruck an, der die Ereignisquelle identifiziert. Der **EventType-Parameter** (wie durch die [EventType-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.InfoPathEventHandlerAttribute.EventType.aspx) der **InfoPathEventHandlerAttribute-Klasse** definiert) gibt den Ereignistyp an. Die Werte dieser Parameter sollten nicht geändert werden. Wenn die Werte geändert werden, wird die Kompilierung des Ereignishandlers möglicherweise nicht richtig abgeschlossen, oder eine Ereignisbenachrichtigung wird nicht wie erwartet ausgeführt. 
+Wenn dies für das Ereignis erforderlich ist, gibt der **MatchPath-Parameter** (wie durch die [MatchPath-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.InfoPathEventHandlerAttribute.MatchPath.aspx) der **InfoPathEventHandlerAttribute-Klasse** definiert) einen XPath-Ausdruck an, der die Ereignisquelle identifiziert. Der **Parameter EventType** (gemäß Definition durch die [EventType-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.InfoPathEventHandlerAttribute.EventType.aspx) der **InfoPathEventHandlerAttribute-Klasse)** gibt den Ereignistyp an. Die Werte dieser Parameter sollten nicht geändert werden. Wenn die Werte geändert werden, wird die Kompilierung des Ereignishandlers möglicherweise nicht richtig abgeschlossen, oder eine Ereignisbenachrichtigung wird nicht wie erwartet ausgeführt. 
   
-## <a name="obfuscating-code-in-event-handlers"></a>Verschleierung von Code in Ereignishandlern
+## <a name="obfuscating-code-in-event-handlers"></a>Verschleieren von Code in Ereignishandlern
 
-Wenn Sie ein Obfuscator-Hilfsprogramm für die Assembly ausführen, das generiert wird, wenn eine Formularvorlage mit verwalteten Code kompiliert wird ( *projectname*  .dll), kann InfoPath die Assembly nicht laden, wenn ein Benutzer das Formular öffnet. Falls Sie den Code für Ereignishandler oder anderen Formularcode verbergen möchten, müssen Sie den zu verbergenden Code in eine separate Assembly stellen, im Projekt auf diese Assembly verweisen und dann Member der referenzierten Assembly aus "FormCode.cs" oder "FormCode.vb" aufrufen. Es ist wichtig, dass Sie das Hilfsprogramm zum Verbergen nur für die referenzierte Assembly ausführen. 
+Wenn Sie ein Verschleierungsprogramm für die Assembly ausführen, die generiert wird, wenn eine Formularvorlage mit verwaltetem Code kompiliert wird *(Projektname*  .dll), kann InfoPath die Assembly nicht laden, wenn ein Benutzer das Formular öffnet. Falls Sie den Code für Ereignishandler oder anderen Formularcode verbergen möchten, müssen Sie den zu verbergenden Code in eine separate Assembly stellen, im Projekt auf diese Assembly verweisen und dann Member der referenzierten Assembly aus "FormCode.cs" oder "FormCode.vb" aufrufen. Es ist wichtig, dass Sie das Hilfsprogramm zum Verbergen nur für die referenzierte Assembly ausführen. 
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Antworten auf Formularereignisse mithilfe des InfoPath 2003-Objektmodells](how-to-respond-to-form-events-using-the-infopath-2003-object-model.md)
+- [Reagieren auf Formularereignisse mithilfe des InfoPath 2003-Objektmodells](how-to-respond-to-form-events-using-the-infopath-2003-object-model.md)
 

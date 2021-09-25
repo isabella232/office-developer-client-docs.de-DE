@@ -10,25 +10,25 @@ f1_keywords:
 - vbaac10.chm78430
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: b55fc51f70bcc2c9d2f7e93cf9c79228cd2fe440
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: a1f5882119a52c0c3f73d4d4da96e4e8ec8f8377
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296633"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558597"
 ---
 # <a name="cancelevent-macro-action"></a>CancelEvent-Makroaktion
 
 **Gilt für**: Access 2013, Office 2013
 
-Sie können die **AbbrechenEreignis** -Aktion verwenden, um das Ereignis abzubrechen, das den Zugriff auf die Ausführung des Makros verursacht hat, das diese Aktion enthält. Der Makroname entspricht der Einstellung einer Ereigniseigenschaft, z. B. **VorAktualisierung**, **BeimÖffnen**, **BeiEntladen** oder **BeimDrucken**.
+Sie können die **CancelEvent-Aktion** verwenden, um das Ereignis abzubrechen, durch das Access das Makro ausgeführt hat, das diese Aktion enthält. Der Makroname entspricht der Einstellung einer Ereigniseigenschaft, z. B. **VorAktualisierung**, **BeimÖffnen**, **BeiEntladen** oder **BeimDrucken**.
 
 ## <a name="setting"></a>Einstellung
 
 Die **AbbrechenEreignis**-Aktion hat keine Argumente.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 In einem Formular verwenden Sie die **AbbrechenEreignis**-Aktion üblicherweise in einem Gültigkeitsprüfungsmakro mit der **VorAktualisierung**-Ereigniseigenschaft. Wenn ein Benutzer Daten in ein Steuerelement oder in einen Datensatz eingibt, führt Access zunächst das Makro aus und fügt dann der Datenbank die Daten hinzu. Wenn die Daten die Bedingungen der Gültigkeitsprüfung im Makro nicht erfüllen, bricht die **AbbrechenEreignis**-Aktion den Aktualisierungsvorgang vor dem Starten ab.
 
@@ -56,7 +56,7 @@ Die folgenden Ereignisse können von der **AbbrechenEreignis**-Aktion abgebroche
 <tr class="odd">
 <td><p><strong>BeforeInsert</strong></p></td>
 <td><p><strong>Filter</strong></p></td>
-<td><p><strong>Open</strong></p></td>
+<td><p><strong>Öffnen</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>BeforeUpdate</strong></p></td>
@@ -69,7 +69,7 @@ Die folgenden Ereignisse können von der **AbbrechenEreignis**-Aktion abgebroche
 <td><p><strong>Unload</strong></p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Delete</strong></p></td>
+<td><p><strong>Löschen</strong></p></td>
 <td><p></p></td>
 <td><p></p></td>
 </tr>
@@ -111,15 +111,15 @@ The following validation macro checks the postal codes entered in a Suppliers fo
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>IsNull ([CountryRegion])</p></td>
+<td><p>IsNull([CountryRegion])</p></td>
 <td><p>StopMacro</p></td>
 <td><p></p></td>
-<td><p>Wenn CountryRegion ist <strong></strong>, kann die Postleitzahl nicht validiert werden.</p></td>
+<td><p>Wenn CountryRegion <strong>null</strong>ist, kann die Postleitzahl nicht überprüft werden.</p></td>
 </tr>
 <tr class="even">
-<td><p>CountryRegion In (&quot;Frankreich&quot;,&quot;Italien&quot;,&quot;Spanien&quot;) und Len ([Postleitzahl] &lt; &gt; ) 5</p></td>
+<td><p>[CountryRegion] In ( &quot; Frankreich , Italien , Spanien ) und &quot; &quot; &quot; &quot; &quot; Len([Postleitzahl]) &lt; &gt; 5</p></td>
 <td><p>MessageBox</p></td>
-<td><p>Meldung: Die Postleitzahl muss 5 Zeichen lang sein. Beep: <strong>Yes</strong> Type: <strong>Info</strong> Title: PLZ-Fehler</p></td>
+<td><p>Meldung: Die Postleitzahl muss 5 Zeichen lang sein. Signalton: <strong>Ja</strong> Typ: <strong>Informationstitel:</strong> Postleitzahl-Fehler</p></td>
 <td><p>Zeigt eine Meldung an, wenn die Postleitzahl nicht 5 Zeichen lang ist.</p></td>
 </tr>
 <tr class="odd">
@@ -135,9 +135,9 @@ The following validation macro checks the postal codes entered in a Suppliers fo
 <td><p></p></td>
 </tr>
 <tr class="odd">
-<td><p>CountryRegion In (&quot;Australien&quot;,&quot;Singapur&quot;) und Len ([Postleitzahl] &lt; &gt; ) 4</p></td>
+<td><p>[CountryRegion] In ( &quot; Australien , Singapur ) und &quot; &quot; &quot; Len([Postleitzahl]) &lt; &gt; 4</p></td>
 <td><p>MessageBox</p></td>
-<td><p>Meldung: Die Postleitzahl muss 4 Zeichen lang sein. Beep: <strong>Yes</strong> Type: <strong>Info</strong> Title: PLZ-Fehler</p></td>
+<td><p>Meldung: Die Postleitzahl muss 4 Zeichen lang sein. Signalton: <strong>Ja</strong> Typ: <strong>Informationstitel:</strong> Postleitzahl-Fehler</p></td>
 <td><p>Zeigt eine Meldung an, wenn die Postleitzahl nicht 4 Zeichen lang ist.</p></td>
 </tr>
 <tr class="even">
@@ -153,7 +153,7 @@ The following validation macro checks the postal codes entered in a Suppliers fo
 <td><p></p></td>
 </tr>
 <tr class="even">
-<td><p>([CountryRegion] = &quot;Kanada&quot;) Und ([Postleitzahl] nicht&quot;wie [A-z] [0-9] [A-z] [0-9] [A-z] [0-9&quot;])</p></td>
+<td><p>([CountryRegion] = &quot; Kanada &quot; ) und ([Postleitzahl] nicht wie &quot; [A-Z][0-9][A-Z] [0-9][A-Z][0-9] &quot; )</p></td>
 <td><p>MessageBox</p></td>
 <td><p>Meldung: Die Postleitzahl ist ungültig. Beispiel für kanadischen Code: H1J 1C3 Beep: <strong>Yes</strong> Type: <strong>Information</strong> Title: Postal Code Error</p></td>
 <td><p>Zeigt eine Meldung an, wenn eine für Kanada ungültige Postleitzahl angegeben wird. (Beispiel für eine kanadische Postleitzahl: H1J 1C3).</p></td>

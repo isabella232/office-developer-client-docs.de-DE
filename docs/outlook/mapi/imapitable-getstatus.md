@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPITable.GetStatus
 api_type:
 - COM
 ms.assetid: f114f1fa-bc05-4587-875b-71548c5912ea
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ec305fc872d1bf1718592dabdd230617d50d3f54
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8127a09582c98fc82fb5be92dbf24a4e84911ada
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33434333"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59575785"
 ---
 # <a name="imapitablegetstatus"></a>IMAPITable::GetStatus
 
@@ -46,11 +46,11 @@ TBLSTAT_COMPLETE
     
 TBLSTAT_QCHANGED 
   
-> Der Inhalt der Tabelle hat sich erwartungslich geändert. Dieser Statuswert wird nicht für Änderungen zurückgegeben, die aus Sortier- oder Einschränkungsvorgängen resulten.
+> Der Inhalt der Tabelle hat sich erwartungsmäßig geändert. Dieser Statuswert wird für Änderungen, die sich aus Sortier- oder Einschränkungsvorgängen ergeben, nicht zurückgegeben.
     
 TBLSTAT_RESTRICT_ERROR 
   
-> Bei einem [IMAPITable::Restrict-Vorgang](imapitable-restrict.md) ist ein Fehler aufgetreten. 
+> Während eines [IMAPITable::Restrict-Vorgangs](imapitable-restrict.md) ist ein Fehler aufgetreten. 
     
 TBLSTAT_RESTRICTING 
   
@@ -58,7 +58,7 @@ TBLSTAT_RESTRICTING
     
 TBLSTAT_SETCOL_ERROR 
   
-> Bei einem [IMAPITable::SetColumns-Vorgang](imapitable-setcolumns.md) ist ein Fehler aufgetreten. 
+> Während eines [IMAPITable::SetColumns-Vorgangs](imapitable-setcolumns.md) ist ein Fehler aufgetreten. 
     
 TBLSTAT_SETTING_COLS 
   
@@ -66,7 +66,7 @@ TBLSTAT_SETTING_COLS
     
 TBLSTAT_SORT_ERROR 
   
-> Bei einem [IMAPITable::SortTable-Vorgang](imapitable-sorttable.md) ist ein Fehler aufgetreten. 
+> Während eines [IMAPITable::SortTable-Vorgangs](imapitable-sorttable.md) ist ein Fehler aufgetreten. 
     
 TBLSTAT_SORTING 
   
@@ -82,7 +82,7 @@ TBLTYPE_DYNAMIC
     
 TBLTYPE_KEYSET 
   
-> Die Zeilen in der Tabelle sind fest, aber die Werte der Spalten in diesen Zeilen sind dynamisch und können sich ändern, wenn sich die zugrunde liegenden Daten ändern.
+> Die Zeilen in der Tabelle sind fixiert, aber die Werte der Spalten innerhalb dieser Zeilen sind dynamisch und können sich ändern, wenn sich die zugrunde liegenden Daten ändern.
     
 TBLTYPE_SNAPSHOT 
   
@@ -94,19 +94,19 @@ S_OK
   
 > Der Status der Tabelle wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die **IMAPTable::GetStatus-Methode** ruft Informationen zum Typ und aktuellen Status einer Tabelle ab. 
+Die **IMAPTable::GetStatus-Methode** ruft Informationen zum Typ einer Tabelle und zum aktuellen Status ab. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Sie können **GetStatus** zusammen mit drei anderen **IMAPITable-Methoden** verwenden, um den Status dieser Vorgänge zu überwachen und die Auswirkungen auf die Tabelle zu bestimmen. Rufen **Sie GetStatus** nach einem der folgenden **IMAPITable-Aufrufe** auf: 
+Sie können **GetStatus** in Verbindung mit drei anderen **IMAPITable-Methoden** verwenden, um den Status dieser Vorgänge zu überwachen und die Auswirkungen auf die Tabelle zu bestimmen. Rufen **Sie GetStatus** nach einem der folgenden **IMAPITable-Aufrufe** auf: 
   
-- [IMAPITable::Restrict,](imapitable-restrict.md) um eine Einschränkung festlegen. 
+- [IMAPITable::Restrict](imapitable-restrict.md) to set a restriction. 
     
 - [IMAPITable::SortTable](imapitable-sorttable.md) zum Einrichten einer Sortierreihenfolge. 
     
-- [IMAPITable::SetColumns,](imapitable-setcolumns.md) um einen Spaltensatz zu definieren. 
+- [IMAPITable::SetColumns](imapitable-setcolumns.md) zum Definieren eines Spaltensatzes. 
     
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 

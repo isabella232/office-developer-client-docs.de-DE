@@ -5,17 +5,17 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: f84c6e70-e74e-4ca2-961c-0260ea277b00
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 5290cc871f47d9410651492fd520520d7f2e5e77
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ebae38d8806009c991fc2158824f9f0c492306cf
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33421648"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59575498"
 ---
 # <a name="mapi-structures"></a>MAPI-Strukturen
 
@@ -23,7 +23,7 @@ ms.locfileid: "33421648"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die folgenden alphabetischen Einträge beschreiben MAPI-Strukturen. Ausführlichere Informationen finden Sie auch bei Querverweisen auf andere Veröffentlichungen oder andere Themen in dieser Dokumentation.
+Die folgenden alphabetisierten Einträge beschreiben MAPI-Strukturen. Ausführlichere Informationen finden Sie auch in Querverweisen auf andere Publikationen oder andere Themen in dieser Dokumentation.
   
 |||
 |:-----|:-----|

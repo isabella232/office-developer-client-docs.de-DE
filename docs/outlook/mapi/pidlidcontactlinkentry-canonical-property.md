@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidContactLinkEntry
 api_type:
 - COM
 ms.assetid: 2de48f49-53a4-4117-b5bd-c1db9b5a4d7d
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 94abe9784dff33a650c2a2f121ea9e8d3590075c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: d1a8cf37685dd0439d414c59a3f87de6e33e3016
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32319474"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59575197"
 ---
 # <a name="pidlidcontactlinkentry-canonical-property"></a>PidLidContactLinkEntry (kanonische Eigenschaft)
 
@@ -25,13 +25,13 @@ ms.locfileid: "32319474"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält die Liste der **Adressbucheintrags-IDs,** mit der dieses Nachrichtenobjekt verknüpft ist. 
+Enthält die Liste der **Adressbucheintrags-ID,** mit denen dieses Nachrichtenobjekt verknüpft ist. 
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidContactLinkEntry  <br/> |
 |Eigenschaftensatz:  <br/> |PSETID_Common  <br/> |
-|Lange ID (LID):  <br/> |0x00008585  <br/> |
+|Long ID (LID):  <br/> |0x00008585  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
@@ -41,7 +41,7 @@ Enthält die Liste der **Adressbucheintrags-IDs,** mit der dieses Nachrichtenobj
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Stellt Eigenschaftensatzdefinitionen und Verweise auf verwandte Exchange Server zur Verfügung.
+> Stellt Eigenschaftssatzdefinitionen und Verweise auf verwandte Exchange Server Protokollspezifikationen bereit.
     
 [[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
@@ -51,7 +51,7 @@ Enthält die Liste der **Adressbucheintrags-IDs,** mit der dieses Nachrichtenobj
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -59,9 +59,9 @@ Mapidefs.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

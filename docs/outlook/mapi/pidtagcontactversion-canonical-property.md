@@ -1,25 +1,25 @@
 ---
-title: PidTagContactVersion (kanonische Eigenschaft)
+title: Kanonische PidTagContactVersion-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagContactVersion
 api_type:
 - HeaderDef
 ms.assetid: 849d33e0-922f-49fe-bf2a-460329f0570d
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: c6a2206cf75308ad7fb955283f22eca3be9e0b3a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 3c4992331ae3d742d9f2a0b4b3280a2a1f38aa0b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407767"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59566836"
 ---
-# <a name="pidtagcontactversion-canonical-property"></a>PidTagContactVersion (kanonische Eigenschaft)
+# <a name="pidtagcontactversion-canonical-property"></a>Kanonische PidTagContactVersion-Eigenschaft
 
   
   
@@ -34,9 +34,9 @@ Enthält die Version der Kontaktinformationen eines Empfängers.
 |Datentyp:  <br/> |PT_CLSID  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft ist eine der Eigenschaften, die Identifikations- und Zugriffsinformationen zu einem Empfänger zur Verfügung stellt. Diese Eigenschaften werden vom Empfänger und der Organisation des Empfängers definiert.
+Diese Eigenschaft ist eine der Eigenschaften, die Identifikations- und Zugriffsinformationen zu einem Empfänger bereitstellt. Diese Eigenschaften werden vom Empfänger und der Organisation des Empfängers definiert.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,11 +44,11 @@ Diese Eigenschaft ist eine der Eigenschaften, die Identifikations- und Zugriffsi
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

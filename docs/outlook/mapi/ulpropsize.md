@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.UlPropSize
 api_type:
 - COM
 ms.assetid: 240f1144-0805-4cd1-9e7d-f2a550a2f160
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: cc1547ad7d881b707825630f96987d4c40ad4863
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: faf7ce0488584168ca0a73c13c835b18c5f89472
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33416902"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59566255"
 ---
 # <a name="ulpropsize"></a>UlPropSize
 
@@ -53,10 +53,10 @@ S_OK
     
 MAPI_E_CALL_FAILED 
   
-> Ein Fehler mit unerwartetem oder unbekanntem Ursprung verhinderte den Abschluss des Vorgangs.
+> Ein Fehler mit unerwartetem oder unbekanntem Ursprung verhinderte, dass der Vorgang abgeschlossen wurde.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die **UlPropSize-Funktion** gibt die Größe des Eigenschaftswerts für die angegebene Eigenschaft in Bytes zurück. Dabei wird die Größe des rests der **SPropValue-Struktur** ignoriert. 
+Die **UlPropSize-Funktion** gibt die Größe des Eigenschaftswerts für die angegebene Eigenschaft in Bytes zurück. Die Größe des Rests der **SPropValue-Struktur** wird ignoriert. 
   
 
