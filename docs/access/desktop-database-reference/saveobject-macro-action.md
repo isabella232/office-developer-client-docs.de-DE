@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm116962
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: cf6fe02616134f864a0e07092951ab9cf49aadbc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: eb5ec32eadaf99732758860976aa59c4a29ef6c2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308932"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593642"
 ---
 # <a name="saveobject-macro-action"></a>SaveObject-Makroaktion
 
@@ -45,7 +45,7 @@ Die **SpeichernObjekt**-Aktion hat die folgenden Argumente.
 <tbody>
 <tr class="odd">
 <td><p><strong>Objekttyp</strong></p></td>
-<td><p>Der Objekttyp, der gespeichert werden soll. Klicken Sie im Feld <strong>Objekttyp</strong> im Abschnitt <strong>Aktionsargumente</strong> des Bereichs <strong>Makro-Generator</strong> auf <strong>Tabelle</strong>, <strong>Abfrage</strong>, <strong>Formular</strong>, <strong>Bericht</strong>, <strong>Makro</strong>, <strong>Datenzugriffsseite</strong>, <strong>Serversicht</strong>, <strong>Diagramm</strong>, <strong>Gespeicherte Prozedur</strong> oder <strong>Funktion</strong>. Lassen Sie dieses Argument leer, um das aktive Objekt auszuwählen. Wenn Sie einen Objekttyp in diesem Argument auswählen, müssen Sie den Namen eines vorhandenen Objekts im Argument <strong>Objektname</strong> auswählen.</p></td>
+<td><p>Der Objekttyp, den Sie speichern möchten. Klicken Sie im Feld <strong>Objekttyp</strong> im Abschnitt <strong>Aktionsargumente</strong> des Bereichs <strong>Makro-Generator</strong> auf <strong>Tabelle</strong>, <strong>Abfrage</strong>, <strong>Formular</strong>, <strong>Bericht</strong>, <strong>Makro</strong>, <strong>Datenzugriffsseite</strong>, <strong>Serversicht</strong>, <strong>Diagramm</strong>, <strong>Gespeicherte Prozedur</strong> oder <strong>Funktion</strong>. Um das aktive Objekt auszuwählen, lassen Sie dieses Argument leer. Wenn Sie in diesem Argument einen Objekttyp auswählen, müssen Sie im Argument <strong>"Objektname"</strong> den Namen eines vorhandenen Objekts auswählen.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Objektname</strong></p></td>
@@ -55,7 +55,7 @@ Die **SpeichernObjekt**-Aktion hat die folgenden Argumente.
 </table>
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 The **SaveObject** action works on all database objects that the user can explicitly open and save. The specified object must be open for the **SaveObject** action to have any effect on the object. This action has the same effect as selecting an object and then saving it by clicking **Save** on the **Quick Access Toolbar**. 
 
@@ -66,11 +66,11 @@ Leaving the **Object Type** argument blank and entering a new name in the **Obje
 > - Ein Formular in der Formularansicht oder Datenblattansicht
 > - Ein Bericht in der Seitenansicht
 > - Ein Modul
-> - Eine Serveransicht in der Datenblattansicht oder-Vorschau
+> - Eine Serveransicht in der Datenblattansicht oder in der Seitenansicht
 > - Eine Datenzugriffsseite in der Seitenansicht
-> - Eine Tabelle in der Datenblattansicht oder der Seitenansicht
+> - Eine Tabelle in der Datenblattansicht oder in der Seitenansicht
 > - Eine Abfrage in der Datenblattansicht oder der Seitenansicht
-> - Eine gespeicherte Prozedur in der Datenblattansicht oder der Seitenansicht
+> - Eine gespeicherte Prozedur in der Datenblattansicht oder in der Seitenansicht
 
 Die **SpeichernObjekt** -Aktion, unabhängig davon, ob in einem in der aktuellen Datenbank ausgeführten Makro oder in einer Bibliotheksdatenbank ausgeführt, speichert immer das angegebene Objekt oder das aktive Objekt in der Datenbank, in der das Objekt erstellt wurde.
 

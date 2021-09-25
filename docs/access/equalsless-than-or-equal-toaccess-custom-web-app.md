@@ -4,19 +4,19 @@ manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: dc0dc67a-aadf-4a5c-9264-e8df1dcd183f
-description: Vergleicht zwei Ausdrücke. Wenn Sie Nicht-Null-Ausdrücke vergleichen, ist das Ergebnis TRUE, wenn der linke Operand einen Wert kleiner oder gleich dem rechten Operanden hat. Andernfalls ist das Ergebnis FALSE.
-ms.openlocfilehash: 4a43c83024a7f5318faef25b4505c10246a5eabf
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Vergleicht zwei Ausdrücke. Wenn Sie Ausdrücke ungleich NULL vergleichen, ist das Ergebnis TRUE, wenn der linke Operand einen Wert aufweist, der niedriger als oder gleich dem rechten Operanden ist. andernfalls ist das Ergebnis FALSE.
+ms.openlocfilehash: 2d095b1849d9e4ee9d7618172596a6ab47beb19a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33405653"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617307"
 ---
 # <a name="less-than-or-equal-to-access-custom-web-app"></a>Kleiner als oder gleich (benutzerdefinierte Access-Web-App)
 
-Vergleicht zwei Ausdrücke. Wenn Sie Nicht-Null-Ausdrücke vergleichen, ist das Ergebnis TRUE, wenn der linke Operand einen Wert kleiner oder gleich dem rechten Operanden hat. Andernfalls ist das Ergebnis FALSE.
+Vergleicht zwei Ausdrücke. Wenn Sie Ausdrücke ungleich NULL vergleichen, ist das Ergebnis TRUE, wenn der linke Operand einen Wert aufweist, der niedriger als oder gleich dem rechten Operanden ist. andernfalls ist das Ergebnis FALSE.
   
 > [!IMPORTANT]
 > Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 

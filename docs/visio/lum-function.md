@@ -6,23 +6,23 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251460
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 38e6bba7-1bf2-3d31-0912-707002454f5d
-description: Gibt den Wert der Leuchtkraftkomponente einer Farbe zurück.
-ms.openlocfilehash: 17fa43f8e2cd7422428f92724e351436233c2d62
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Gibt den Wert der Leuchtdichtekomponente einer Farbe zurück.
+ms.openlocfilehash: 752af49222ed7919e6c7b9cce4a51821bbe9f4b7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33419338"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59582525"
 ---
 # <a name="lum-function"></a>LUM Function
 
-Gibt den Wert der Leuchtkraftkomponente einer Farbe zurück.
+Gibt den Wert der Leuchtdichtekomponente einer Farbe zurück.
   
 ## <a name="syntax"></a>Syntax
 
-LUM(** *Expression* ** ) 
+LUM(** *Ausdruck* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -32,9 +32,9 @@ LUM(** *Expression* ** )
    
 ### <a name="return-value"></a>Rückgabewert
 
-Nummer
+Zahl
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Rückgabewert ist eine Zahl im Bereich von 0 bis einschließlich 240. Bei einer ungültigen Eingabe wird 0 zurückgegeben. 
   

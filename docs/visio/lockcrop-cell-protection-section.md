@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm610
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ae05de63-b527-66e6-2c79-056c9c92ec95
 description: Sperrt ein Objekt aus einem anderen Programm, damit es nicht mithilfe des Zuschneidetools zugeschnitten werden kann.
-ms.openlocfilehash: bfb8bebd50908387fa3f94a8ca228935ef709133
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 0a3224adf6884312c5a722c5b5542a51582a32e3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411855"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603641"
 ---
 # <a name="lockcrop-cell-protection-section"></a>Zelle "LockCrop" (Abschnitt "Protection")
 
@@ -25,15 +25,15 @@ Sperrt ein Objekt aus einem anderen Programm, damit es nicht mithilfe des Zuschn
 | TRUE  <br/> | Shape kann nicht zugeschnitten werden.  <br/> |
 | FALSE  <br/> | Shape kann zugeschnitten werden.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Um einen Verweis auf die Zelle LockCrop anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Verwenden Sie Folgendes, um einen Verweis auf die Zelle "LockCrop" anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | LockCrop  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die LockCrop-Zelle nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle LockCrop anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

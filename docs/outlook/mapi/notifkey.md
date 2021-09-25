@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.NOTIFKEY
 api_type:
 - COM
 ms.assetid: 031b7e18-59b2-445c-a747-348fda92f458
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ab1586696a4b72aa9e88545c2069c3f8b5d22d72
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 6665569b157a874aec248312b30e0528f48c0bcb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429628"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59625189"
 ---
 # <a name="notifkey"></a>NOTIFKEY
 
@@ -25,7 +25,7 @@ ms.locfileid: "33429628"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Identifiziert eindeutig eine Verbindung zwischen einer Ratensenke, einer Ratenquelle und MAPI.
+Identifiziert eindeutig eine Verbindung zwischen einer Empfehlungssenke, einer Empfehlungsquelle und mapi.
   
 |||
 |:-----|:-----|
@@ -40,27 +40,27 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Elemente
+## <a name="members"></a>Members
 
  **cb**
   
-> Anzahl der Bytes im **ab-Element.** 
+> Anzahl der Bytes  im Ab-Element. 
     
  **ab**
   
-> Array von Bytes, die den Benachrichtigungsschlüssel beschreiben.
+> Bytearray, das den Benachrichtigungsschlüssel beschreibt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die [Subscribe-](imapisupport-subscribe.md) und [Notify-Methoden](imapisupport-notify.md) von [IMAPISupport](imapisupportiunknown.md) verwenden die **NOTIFKEY-Struktur,** um Benachrichtigungen an die entsprechende Ratensenke über die entsprechende Informationsquelle zu generieren. 
+The [Subscribe](imapisupport-subscribe.md) and [Notify](imapisupport-notify.md) methods of [IMAPISupport](imapisupportiunknown.md) use the **NOTIFKEY** structure to generate notifications to the appropriate advise sink about the appropriate advise source. 
   
-Dienstanbieter generieren Benachrichtigungsschlüssel, wenn ihre **Advise-Methode** aufgerufen wird, und sie möchten **Subscribe** aufrufen, um die Benachrichtigungsregistrierung und das nachfolgende Senden von Benachrichtigungen zu verarbeiten. Ein Benachrichtigungsschlüssel kann der Eintragsbezeichner der Beratenden Quelle oder ein anderes identifizierendes Element wie eine Konstante sein. Beispielsweise kann ein Nachrichtenspeicheranbieter den Pfad eines Ordners als Benachrichtigungsschlüssel verwenden. 
+Dienstanbieter generieren Benachrichtigungsschlüssel, wenn ihre **Advise-Methode** aufgerufen wird, und sie möchten **Subscribe** aufrufen, um die Benachrichtigungsregistrierung und das anschließende Senden von Benachrichtigungen zu verarbeiten. Ein Benachrichtigungsschlüssel kann der Eintragsbezeichner der Empfehlungsquelle oder ein anderes identifizierende Element wie eine Konstante sein. Beispielsweise kann ein Nachrichtenspeicheranbieter den Pfad eines Ordners als Benachrichtigungsschlüssel verwenden. 
   
 Der Benachrichtigungsschlüssel sollte über mehrere Prozesse hinweg funktionieren. 
   
-Die Bereichsanforderungen für einen Benachrichtigungsschlüssel ähneln denen für eine langfristige Eintrags-ID. Im Gegensatz zu einem Eintragsbezeichner muss ein Benachrichtigungsschlüssel jedoch binär vergleichbar sein. In der Regel enthält ein Benachrichtigungsschlüssel einen vom Dienstanbieter definierten **GUID-Wert,** gefolgt von anderen anbieterspezifischen Informationen, die für das Objekt eindeutig sind. 
+Die Bereichsanforderungen für einen Benachrichtigungsschlüssel ähneln denen für einen langfristigen Eintragsbezeichner. Im Gegensatz zu einem Eintragsbezeichner muss ein Benachrichtigungsschlüssel jedoch binär vergleichbar sein. In der Regel enthält ein Benachrichtigungsschlüssel einen **GUID-Wert,** der vom Dienstanbieter definiert wird, gefolgt von anderen anbieterspezifischen Informationen, die für das Objekt eindeutig sind. 
   
-Eine Diskussion über die Verwendung der **NOTIFKEY-Struktur** zum Verwalten der Verbindungen zwischen den Ratensenken und den Objekten, die die Benachrichtigungen generieren, finden Sie unter [Supporting Event Notification](supporting-event-notification.md). 
+Eine Erläuterung der Verwendung der **NOTIFKEY-Struktur** zum Verwalten der Verbindungen zwischen den Empfehlungssenken und den Objekten, die die Benachrichtigungen generieren, finden Sie unter ["Unterstützende Ereignisbenachrichtigung".](supporting-event-notification.md) 
   
 ## <a name="see-also"></a>Siehe auch
 

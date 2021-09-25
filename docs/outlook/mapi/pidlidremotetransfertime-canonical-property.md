@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidRemoteTransferTime
 api_type:
 - COM
 ms.assetid: 58f0bae4-0c05-421e-9890-7ac929fe1435
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1866260a17958d85578fe9670f95ada815429394
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 819f29e71279d9fcdfbf012e882354fc8ec1c8dd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33409797"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59624818"
 ---
 # <a name="pidlidremotetransfertime-canonical-property"></a>PidLidRemoteTransferTime (kanonische Eigenschaft)
 
@@ -25,13 +25,13 @@ ms.locfileid: "33409797"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt die Übertragungszeit für ein Remoteelement in Sekunden an.
+Gibt die Übertragungszeit in Sekunden für ein Remoteelement an.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidRemoteXferTime  <br/> |
 |Eigenschaftensatz:  <br/> |PSETID_Remote  <br/> |
-|Lange ID (LID):  <br/> |0x00008F04  <br/> |
+|Long ID (LID):  <br/> |0x00008F04  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Remotenachricht  <br/> |
    
@@ -41,13 +41,13 @@ Gibt die Übertragungszeit für ein Remoteelement in Sekunden an.
 
 [[MS-OXPROPS]] 
   
-> Stellt Eigenschaftensatzdefinitionen und Verweise auf verwandte Exchange Server zur Verfügung.
+> Stellt Eigenschaftssatzdefinitionen und Verweise auf verwandte Exchange Server Protokollspezifikationen bereit.
     
 ### <a name="header-files"></a>Headerdateien
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -55,9 +55,9 @@ Mapidefs.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

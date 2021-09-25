@@ -1,20 +1,20 @@
 ---
-title: QueryDef. LastUpdated-Eigenschaft (DAO)
+title: QueryDef.LastUpdated-Eigenschaft (DAO)
 TOCTitle: LastUpdated Property
 ms:assetid: 3b7818d4-054e-54e2-bf63-58b340bb4a90
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192665(v=office.15)
 ms:contentKeyID: 48544287
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 1876e92381828075edca3bbfcbae63e706a21365
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 9938f8ff4aa6625508bdc55115f35fcff5a3e66b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303311"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617769"
 ---
-# <a name="querydeflastupdated-property-dao"></a>QueryDef. LastUpdated-Eigenschaft (DAO)
+# <a name="querydeflastupdated-property-dao"></a>QueryDef.LastUpdated-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -25,7 +25,7 @@ Gibt das Datum und die Uhrzeit der letzten Änderung eines Objekts zurück. Schr
 
 *Ausdruck* . LastUpdated
 
-*Ausdruck* Eine Variable, die ein **QueryDef** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **QueryDef**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 

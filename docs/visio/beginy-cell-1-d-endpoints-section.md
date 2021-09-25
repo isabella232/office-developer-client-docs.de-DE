@@ -6,29 +6,29 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm95
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b2518a70-5755-a15a-a238-bac2ae64a75a
-description: Stellt die y-Koordinate des Anfangspunkts der 1D-Form im Verhältnis zum Ursprung des übergeordneten Shapes dar.
-ms.openlocfilehash: dbe1cca3a3b969b14b62cb613359d014c7933bd9
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Stellt die y-Koordinate des Anfangspunkts des 1D-Shapes im Verhältnis zum Ursprung des übergeordneten Shapes dar.
+ms.openlocfilehash: 54b5e9593e24d73890254f35a1df5ada598c4cbb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33419212"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603809"
 ---
 # <a name="beginy-cell-1-d-endpoints-section"></a>Zelle "BeginY" (Abschnitt "1-D Endpoints")
 
-Stellt  die y-Koordinate des Anfangspunkts der 1D-Form im Verhältnis zum Ursprung des übergeordneten Shapes dar. 
+Stellt  die y-Koordinate des Anfangspunkts des 1D-Shapes im Verhältnis zum Ursprung des übergeordneten Shapes dar. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Verwenden Sie zum Erhalten eines Verweises auf die Zelle BeginY anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft:** 
+Verwenden Sie Folgendes, um einen Verweis auf die Zelle BeginY anhand des Namens einer anderen Formel oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | BeginY  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle BeginY nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle BeginY anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

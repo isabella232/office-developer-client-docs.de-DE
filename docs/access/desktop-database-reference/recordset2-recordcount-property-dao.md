@@ -1,5 +1,5 @@
 ---
-title: Recordset2. RecordCount-Eigenschaft (DAO)
+title: Recordset2.RecordCount-Eigenschaft (DAO)
 TOCTitle: RecordCount Property
 ms:assetid: 77852966-11e9-1773-6e58-53927b84c03b
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196071(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1052890
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: c23de433f26b5a54b3fee5cc69f67a07b53f8a3b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f8181738ddf39ba00dca921cc192e2e68deaaf82
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309156"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617531"
 ---
-# <a name="recordset2recordcount-property-dao"></a>Recordset2. RecordCount-Eigenschaft (DAO)
+# <a name="recordset2recordcount-property-dao"></a>Recordset2.RecordCount-Eigenschaft (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -26,16 +26,16 @@ Returns the number of records accessed in a **[Recordset](recordset-object-dao.m
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . RecordCount
+*expression* .RecordCount
 
-*Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset2-Objekt** darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 
 Verwenden Sie die **RecordCount**-Eigenschaft, um herauszufinden, auf wie viele Datensätze in einem **Recordset**- oder **TableDef**-Objekt zugegriffen wurde. Die **RecordCount**-Eigenschaft gibt erst an, wie viele Datensätze in einem **Recordset**-Objekt vom "dynaset"-, "snapshot"- oder "forward-only"-Typ enthalten sind, wenn auf alle Datensätze zugegriffen wurde. Sobald auf den letzten Datensatz zugegriffen wurde, gibt die **RecordCount**-Eigenschaft die Gesamtzahl ungelöschter Datensätze im **Recordset**- oder **TableDef**-Objekt an. To force the last record to be accessed, use the **[MoveLast](recordset2-movelast-method-dao.md)** method on the **Recordset** object. You can also use an SQL **Count** function to determine the approximate number of records your query will return.
 
 > [!NOTE]
-> [!HINWEIS] Die Verwendung der **MoveLast**-Methode zum Auffüllen eines neu geöffneten **Recordset**-Objekts hat negative Auswirkungen auf die Leistung. Sofern beim Öffnen eines **Recordset**-Objekts nicht sofort ein genauer **RecordCount**-Wert erforderlich ist, sollte das **Recordset**-Objekt mit anderen Codeteilen aufgefüllt werden, bevor die **RecordCount**-Eigenschaft geprüft wird.
+> Die Verwendung der **MoveLast**-Methode zum Auffüllen eines neu geöffneten **Recordset**-Objekts hat negative Auswirkungen auf die Leistung. Sofern beim Öffnen eines **Recordset**-Objekts nicht sofort ein genauer **RecordCount**-Wert erforderlich ist, sollte das **Recordset**-Objekt mit anderen Codeteilen aufgefüllt werden, bevor die **RecordCount**-Eigenschaft geprüft wird.
 
 As your application deletes records in a dynaset-type **Recordset** object, the value of the **RecordCount** property decreases. However, records deleted by other users aren't reflected by the **RecordCount** property until the current record is positioned to a deleted record. If you execute a transaction that affects the **RecordCount** property setting and you subsequently roll back the transaction, the **RecordCount** property won't reflect the actual number of remaining records.
 

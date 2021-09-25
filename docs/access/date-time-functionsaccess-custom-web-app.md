@@ -1,19 +1,19 @@
 ---
-title: Datums-/Uhrzeitfunktionen (benutzerdefinierte Access-Web-App)
+title: Datum/Uhrzeit-Funktionen (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 08/18/2017
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: acd4e050-c3a4-4bcf-bd35-a06e7a93bbb1
 description: ''
-ms.openlocfilehash: 1b22d76687772de212d8abd42022405f51b980b3
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: a9927e4c12b31e939f6f208d227aac378c1b87e4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411484"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59569755"
 ---
-# <a name="datetime-functions-access-custom-web-app"></a>Datums-/Uhrzeitfunktionen (benutzerdefinierte Access-Web-App)
+# <a name="datetime-functions-access-custom-web-app"></a>Datum/Uhrzeit-Funktionen (benutzerdefinierte Access-Web-App)
 
 > [!IMPORTANT]
 > Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
@@ -35,7 +35,7 @@ ms.locfileid: "33411484"
     
 - [Now-Funktion (benutzerdefinierte Access-Web-App)](now-function-access-custom-web-app.md)
     
-- [Heute-Funktion (benutzerdefinierte Access-Web-App)](today-function-access-custom-web-app.md)
+- [Funktion "Heute" (benutzerdefinierte Access-Web-App)](today-function-access-custom-web-app.md)
     
 - [Year-Funktion (benutzerdefinierte Access-Web-App)](year-function-access-custom-web-app.md)
     

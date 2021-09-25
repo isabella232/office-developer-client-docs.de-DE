@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagRegisteredMailType
 api_type:
 - COM
 ms.assetid: f75f2a21-a17c-4d8b-9055-c51d4c1888d0
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1d3eceae1e358f5716f46f33edcd0b2aae4e4a93
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: e1077b4e074cb337d456e2ef689a9229345a0ded
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429523"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59624643"
 ---
 # <a name="pidtagregisteredmailtype-canonical-property"></a>PidTagRegisteredMailType (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "33429523"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Diese Eigenschaft enthält den Typ der Registrierung, der für die physische Zustellung einer Nachricht verwendet wird.
+Diese Eigenschaft enthält den Typ der Registrierung, die für die physische Zustellung einer Nachricht verwendet wird.
   
 |||
 |:-----|:-----|
@@ -40,11 +40,11 @@ Diese Eigenschaft enthält den Typ der Registrierung, der für die physische Zus
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -52,9 +52,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

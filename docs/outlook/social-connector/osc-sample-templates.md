@@ -5,25 +5,25 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 896932d7-bd71-4a55-aa58-394a9ccf0d5e
-description: 'Neben der Outlook Social Connector 2013-Anbieterreferenz sind mehrere Anbietervorlagen in C++, C# und Visual Basic. Sie können die Vorlagen unter Outlook Social Connector 2013: Anbietervorlagen herunterladen.'
-ms.openlocfilehash: e99808247fdf9bb2f06018e5ef54e6b9dc23ff3b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: 'Die Outlook Connector für soziale Netzwerke 2013-Anbieterreferenz enthält mehrere Anbietervorlagen in C++, C# und Visual Basic. Sie können die Vorlagen unter Outlook Connector für soziale Netzwerke 2013 herunterladen: Anbietervorlagen.'
+ms.openlocfilehash: 9bfb0e3af09765688e309727f13d46128543ddf6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355118"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59604082"
 ---
 # <a name="osc-sample-templates"></a>OSC-Beispielvorlagen
 
-Neben der Outlook Social Connector 2013-Anbieterreferenz sind mehrere Anbietervorlagen in C++, C# und Visual Basic. Sie können die Vorlagen unter [Outlook Social Connector 2013: Provider templates herunterladen.](https://code.msdn.microsoft.com/Outlook-Social-Connector-73fd8d2c)
+Die Outlook Connector für soziale Netzwerke 2013-Anbieterreferenz enthält mehrere Anbietervorlagen in C++, C# und Visual Basic. Sie können die Vorlagen unter [Outlook Connector für soziale Netzwerke 2013 herunterladen: Anbietervorlagen.](https://code.msdn.microsoft.com/Outlook-Social-Connector-73fd8d2c)
   
-Die Anbietervorlagen stehen zur Verwendung zur Verfügung, wenn Sie einen Anbieter in der Sprache Ihrer Wahl erstellen. Um die Downloadgröße des Anbieters zu minimieren und die Ladezeit des Anbieters zu minimieren, sollten Sie einen Produktionsanbieter mithilfe von C++ erstellen. Wenn Sie einen Anbieter für Benutzer entwickeln, die .NET Framework 3.5 SP1 oder eine spätere Version von .NET Framework auf ihren Computern installiert haben, können Sie auch das Schreiben eines verwalteten Anbieters mithilfe von C# oder Visual Basic.
+Die Anbietervorlagen können verwendet werden, wenn Sie einen Anbieter in der gewünschten Sprache erstellen. Um die Downloadgröße des Anbieters zu minimieren und die Ladezeit des Anbieters zu minimieren, sollten Sie einen Produktionsanbieter mithilfe von C++ erstellen. Wenn Sie einen Anbieter für Benutzer entwickeln, die .NET Framework 3.5 SP1 oder eine höhere Version von .NET Framework auf ihren Computern installiert haben, können Sie auch erwägen, einen verwalteten Anbieter mit C# oder Visual Basic zu schreiben.
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
-- [Herunterladen der Beispiele](downloading-the-samples.md): Beschreibt, wie Sie den Beispielanbieter und die Vorlagen herunterladen und installieren.
+- [Herunterladen der Beispiele:](downloading-the-samples.md)Beschreibt das Herunterladen und Installieren des Beispielanbieters und der Vorlagen.
     
 - [Anwenden einer Beispielanbietervorlage:](applying-a-sample-provider-template.md)Beschreibt die Verwendung der Beispielanbietervorlagen.
     

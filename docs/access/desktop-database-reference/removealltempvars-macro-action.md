@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm117413
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: eade809a6e3982dc0dc4cf94ae382af72e8f454e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f2c98a02702409962f20289128b18e53835e071d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306797"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617496"
 ---
 # <a name="removealltempvars-macro-action"></a>RemoveAllTempVars-Makroaktion
 
@@ -60,17 +60,17 @@ Im folgenden Makro wird die Vorgehensweise zum Erstellen einer temporären Varia
 <tbody>
 <tr class="odd">
 <td><p></p></td>
-<td><p><strong>FestlegenTempVar</strong></p></td>
-<td><p><strong>Name</strong>: MeineVar<strong>Ausdruck</strong>: InputBox (&quot;geben Sie eine Zahl ungleich NULL&quot;ein.)</p></td>
+<td><p><strong>Festlegentempvar</strong></p></td>
+<td><p><strong>Name</strong>: MyVar<strong>Expression</strong>: InputBox( &quot; Enter a non-zero number. &quot; )</p></td>
 </tr>
 <tr class="even">
-<td><p>[TempVars]! MeineVar &lt; &gt;0</p></td>
+<td><p>[TempVars]! [MyVar] &lt; &gt; 0</p></td>
 <td><p><strong>MessageBox</strong></p></td>
-<td><p><strong>Meldung</strong>: =&quot;Sie haben &quot; &amp; [TempVars] eingegeben! MeineVar &amp; &quot;. &quot; <strong>Beep</strong>: <strong>jatyp</strong>: <strong>Informationen</strong></p></td>
+<td><p><strong>Meldung</strong>: = &quot; Sie haben &quot; &amp; [TempVars]![ MyVar] &amp; &quot; . &quot; <strong>Signalton</strong>: <strong>YesType</strong>: <strong>Informationen</strong></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
-<td><p><strong>EntfernenAlleTempVar</strong></p></td>
+<td><p><strong>Entfernenalletempvar</strong></p></td>
 <td><p></p></td>
 </tr>
 </tbody>

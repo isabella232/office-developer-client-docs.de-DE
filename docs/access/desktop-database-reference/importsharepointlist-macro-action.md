@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm152234
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: df77d2375b66df907832b6ff2717427ae54a35a4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 650429c53855f12cc90c51fb4307d84a5520fa3c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291859"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594181"
 ---
 # <a name="importsharepointlist-macro-action"></a>ImportSharePointList-Makroaktion
 
@@ -25,7 +25,7 @@ ms.locfileid: "32291859"
 Mit der **ImportierenSharePointListe** -Aktion können Sie Daten von einer Microsoft SharePoint Foundation-Website importieren oder verknüpfen.
 
 > [!NOTE]
-> [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. 
+> Diese Aktion ist nicht zulässig, wenn die Datenbank nicht vertrauenswürdig ist. 
 
 ## <a name="setting"></a>Einstellung
 
@@ -47,8 +47,8 @@ Die **ImportierenSharePointListe**-Aktion hat die folgenden Argumente.
 <td><p><strong>Transfertyp</strong></p></td>
 <td><p>Wählen Sie den Übertragungstyp aus.</p>
 <ul>
-<li><p>Wählen Sie <strong>importieren</strong> aus, um die SharePoint Foundation-Daten in eine Tabelle in Microsoft Access zu kopieren. Aktualisierungen der Daten in Access wirken sich nicht auf die Daten in SharePoint Foundation aus. Entsprechend wirken sich Aktualisierungen an den Daten in SharePoint Foundation nicht auf die Daten in Access aus.</p></li>
-<li><p>Wählen Sie <strong>Link</strong> aus, um eine verknüpfte Tabelle in Access zu erstellen, die mit den Daten in SharePoint Foundation verknüpft ist. Aktualisierungen der Daten in Access werden in SharePoint Foundation widergespiegelt. Entsprechend werden Aktualisierungen der Daten in SharePoint Foundation in Access wiedergegeben.</p></li>
+<li><p>Wählen Sie <strong>"Importieren"</strong> aus, um die SharePoint Foundation-Daten in eine Tabelle in Microsoft Access zu kopieren. Aktualisierungen der Daten in Access wirken sich nicht auf die Daten in SharePoint Foundation aus. Ebenso wirken sich Aktualisierungen der Daten in SharePoint Foundation nicht auf die Daten in Access aus.</p></li>
+<li><p>Wählen Sie <strong>"Link"</strong> aus, um eine verknüpfte Tabelle in Access zu erstellen, die mit den Daten in SharePoint Foundation verknüpft ist. Aktualisierungen der Daten in Access werden in SharePoint Foundation wiedergegeben. Ebenso werden Aktualisierungen der Daten in SharePoint Foundation in Access wiedergegeben.</p></li>
 </ul>
 <p></p></td>
 </tr>
@@ -76,7 +76,7 @@ Die **ImportierenSharePointListe**-Aktion hat die folgenden Argumente.
 </table>
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 - Diese Aktion hat den gleichen Effekt wie das Klicken auf **SharePoint-Liste** in der Gruppe **Importieren** auf der Registerkarte **Externe Daten**. Die Argumente für die Aktion entsprechen den Optionen, die Sie im Assistenten für externe Daten auswählen.
 
@@ -94,9 +94,9 @@ Die **ImportierenSharePointListe**-Aktion hat die folgenden Argumente.
     
   2. Wenn die gewünschte Ansicht nicht angezeigt wird, klicken Sie auf den Dropdownpfeil **Ansicht**, und markieren Sie dann die gewünschte Ansicht.
     
-  3. Klicken Sie auf den Dropdownpfeil **Ansicht**, und markieren Sie dann **Diese Ansicht ändern**.Die Adresse in der Adressleiste des Browsers enthält die GUIDs sowohl für die Liste als auch für die Ansicht. Die GUID für die Liste befolgt **Liste=**, und die GUID für die Ansicht befolgt **Ansicht=**. In der Adresse wird jedoch jedes **{** -Zeichen (linke Klammer) durch die Zeichenfolge **%7B** dargestellt, jeder **-** (Bindestrich) durch die Zeichenfolge **%2D**, und jedes **}** -Zeichen (rechte Klammer) wird durch die Zeichenfolge **%7D** dargestellt. Beispiel:
+  3. Klicken Sie auf den Dropdownpfeil **Ansicht**, und markieren Sie dann **Diese Ansicht ändern**.Die Adresse in der Adressleiste des Browsers enthält die GUIDs sowohl für die Liste als auch für die Ansicht. Die GUID für die Liste befolgt **Liste=**, und die GUID für die Ansicht befolgt **Ansicht=**. In der Adresse wird jedoch jedes **{** -Zeichen (linke Klammer) durch die Zeichenfolge **%7B** dargestellt, jeder **-** (Bindestrich) durch die Zeichenfolge **%2D**, und jedes **}** -Zeichen (rechte Klammer) wird durch die Zeichenfolge **%7D** dargestellt. Zum Beispiel:
         
      `https://MySite12/_layouts/ViewEdit.aspx?List=%7B2A82A404%2D5529%2D47DC%2DAE13%2DAC1D9BC0A84F%7D&View=%7B357B4FE6%2D44CF%2D4275%2DB91F%2D46558301579B%7D`
         
-  Bevor Sie die GUIDs aus der Adresse als Argumente in dieser Makroaktion verwenden können, müssen Sie jede **% 7B** -Zeichenfolge durch das Zeichen **{** ersetzen, jede **%-2D** - **-** Zeichenfolge durch das Zeichen ersetzen und jede **% 7D** -Zeichenfolge durch die **}** -Zeichen. Fügen Sie nicht das **&** -Zeichen (kaufmännisches Und-Zeichen) ein, das auf die **%7D** -Zeichenfolge in der Listen-GUID folgt.
+  Bevor Sie die GUIDs aus der Adresse als Argumente in dieser Makroaktion verwenden können, müssen Sie jede **%7B-Zeichenfolge** durch das **{-Zeichen** ersetzen, jede **%2D-Zeichenfolge** durch das **-** Zeichen und jede **%7D-Zeichenfolge** durch das **}-Zeichen** ersetzen. Fügen Sie nicht das **&** -Zeichen (kaufmännisches Und-Zeichen) ein, das auf die **%7D** -Zeichenfolge in der Listen-GUID folgt.
 

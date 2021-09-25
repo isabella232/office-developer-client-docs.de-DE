@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidFShouldTNEF
 api_type:
 - COM
 ms.assetid: 3cab23b6-f0e3-4703-a83b-12a617537651
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a8f88e4b41ab455c55bfd1cb36b73ce7ef0383b3
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: b65c0c14ba99670d1cd13a053ebe06a514ffe83c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33438967"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59624951"
 ---
 # <a name="pidlidfshouldtnef-canonical-property"></a>PidLidFShouldTNEF (kanonische Eigenschaft)
 
@@ -25,19 +25,19 @@ ms.locfileid: "33438967"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt an, ob ein Element mit dem Transport Neutral Encapsulation Format (TNEF) codiert werden soll. 
+Gibt an, ob ein Element mit transportneutralem Kapselungsformat (Transport Neutral Encapsulation Format, TNEF) codiert werden soll. 
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidFShouldTNEF  <br/> |
 |Eigenschaftensatz:  <br/> |PSETID_Common  <br/> |
-|Lange ID (LID):  <br/> |0x000085A5  <br/> |
+|Long ID (LID):  <br/> |0x000085A5  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Laufzeitkonfiguration  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft wird festgelegt, Microsoft Word als E-Mail-Editor festgelegt ist und ein OLE-Objekt sendet, das in einen Rich Text Format (RTF)-Stream eingebettet ist.
+Diese Eigenschaft wird festgelegt, wenn Microsoft Word als E-Mail-Editor festgelegt ist, und sendet ein OLE-Objekt, das in einen RTF-Datenstrom (Rich Text Format) eingebettet ist.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -45,13 +45,13 @@ Diese Eigenschaft wird festgelegt, Microsoft Word als E-Mail-Editor festgelegt i
 
 [[MS-OXPROPS]] 
   
-> Stellt Eigenschaftensatzdefinitionen und Verweise auf verwandte Exchange Server zur Verfügung.
+> Stellt Eigenschaftssatzdefinitionen und Verweise auf verwandte Exchange Server Protokollspezifikationen bereit.
     
 ### <a name="header-files"></a>Headerdateien
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -59,9 +59,9 @@ Mapidefs.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

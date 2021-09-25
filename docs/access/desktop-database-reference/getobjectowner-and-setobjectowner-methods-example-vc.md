@@ -6,20 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249835(v=office.15)
 ms:contentKeyID: 48547096
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: b1227d60555dcb8da919e75bfa773fd64103a956
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 62fe5f302381e5e1b1457766b449a220fc72d9f4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292279"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594251"
 ---
 # <a name="getobjectowner-and-setobjectowner-methods-example-vc"></a>GetObjectOwner- und SetObjectOwner-Methode (VC++-Beispiel)
 
 
 **Gilt für**: Access 2013, Office 2013
 
-This example demonstrates the [GetObjectOwner](getobjectowner-method-adox.md) and [SetObjectOwner](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/setobjectowner-method-adox) methods. In diesem Code wird davon ausgegangen, dass die Gruppen Abrechnung vorhanden ist (siehe [Append-, ChangePassword-Methoden (Groups und users) (VC + +)](groups-and-users-append-changepassword-methods-example-vc.md) , um zu sehen, wie diese Gruppe dem System hinzugefügt wird). The owner of the Categories table is set to Accounting.
+This example demonstrates the [GetObjectOwner](getobjectowner-method-adox.md) and [SetObjectOwner](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/setobjectowner-method-adox) methods. Dieser Code geht davon aus, dass die Gruppe Buchhaltung vorhanden ist (siehe das [Beispiel "Groups and Users Append", "ChangePassword" (VC++),](groups-and-users-append-changepassword-methods-example-vc.md) um zu sehen, wie diese Gruppe dem System hinzugefügt wird. The owner of the Categories table is set to Accounting.
 
 ```cpp 
  

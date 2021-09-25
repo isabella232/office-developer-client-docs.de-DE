@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagResourceMethods
 api_type:
 - COM
 ms.assetid: 60ebbcd5-b758-4c96-b8ec-089e0aae1a5f
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e9aee3280edbed60e97ef6e00e61f3086f6f07ce
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: df8b1b855206a88044114c0d86bda3dd9b609aa1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33436335"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59604257"
 ---
 # <a name="pidtagresourcemethods-canonical-property"></a>PidTagResourceMethods (kanonische Eigenschaft)
 
@@ -34,13 +34,13 @@ Enthält eine Bitmaske mit Flags, die die Methoden in der **IMAPIStatus-Schnitts
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Status  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft gibt an, welche methoden in der Implementierung von **IMAPIStatus** eines Statusobjekts unterstützt werden. Statusobjekte können MAPI_E_NO_SUPPORT nicht unterstützten Methoden zurückgeben. 
+Diese Eigenschaft gibt an, welche der Methoden in der Implementierung von **IMAPIStatus** eines Statusobjekts unterstützt werden. Statusobjekte dürfen MAPI_E_NO_SUPPORT von nicht unterstützten Methoden zurückgeben. 
   
-Clients verwenden die eigenschaft PR_RESOURCE_METHODS **eines** Statusobjekts, um Aufrufe nicht unterstützter Methoden zu vermeiden. Wenn das Flag festgelegt ist, das einer bestimmten Methode entspricht, ist die Methode vorhanden und kann aufgerufen werden. Wenn dieses Flag eindeutig ist, sollte die Methode nicht aufgerufen werden. 
+Clients verwenden **die PR_RESOURCE_METHODS-Eigenschaft** eines Statusobjekts, um Aufrufe nicht unterstützter Methoden zu vermeiden. Wenn das Flag, das einer bestimmten Methode entspricht, festgelegt ist, ist die Methode vorhanden und kann aufgerufen werden. Wenn dieses Kennzeichen eindeutig ist, sollte die Methode nicht aufgerufen werden. 
   
-Die von MAPI implementierten Statusobjekte unterstützen die folgenden Methoden:
+Die von der MAPI implementierten Statusobjekte unterstützen die folgenden Methoden:
   
 |**Status-Objekt**|**Unterstützte Methoden**|
 |:-----|:-----|
@@ -48,7 +48,7 @@ Die von MAPI implementierten Statusobjekte unterstützen die folgenden Methoden:
 |MAPI-Adressbuch  <br/> |**Nur ValidateState**  <br/> |
 |MAPI-Spooler  <br/> |**ValidateState** und **FlushQueues** <br/> |
    
-Mindestens eines der folgenden Flags kann in der folgenden **PR_RESOURCE_METHODS:**
+Mindestens eines der folgenden Flags kann in **PR_RESOURCE_METHODS** festgelegt werden:
   
 STATUS_CHANGE_PASSWORD 
   
@@ -72,11 +72,11 @@ STATUS_VALIDATE_STATE
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -84,9 +84,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPIViewContext.ActivateNext
 api_type:
 - COM
 ms.assetid: 25ce90ac-526e-48a0-9edb-bd266375d4f4
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 5b10f744e3033aab63820e4cd5e414f4c01c27cf
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 2d4d8f2b8ea54c4eaa7fd6dff7b8051e20780504
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33410616"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59625266"
 ---
 # <a name="imapiviewcontextactivatenext"></a>IMAPIViewContext::ActivateNext
 
@@ -36,25 +36,25 @@ LPCRECT prcPosRect
 
 _ulDir_
   
-> [in] Statuskennzeichen, die Informationen zur zu aktivierende Nachricht enthalten. Gültige Kennzeicheneinstellungen sind:
+> [in] Statuskennzeichnungen, die Informationen über die zu aktivierende Nachricht enthalten. Gültige Flageinstellungen sind:
     
-  - VCDIR_CATEGORY: Der Viewer sollte eine Nachricht in einer anderen Kategorie der Ansicht aktivieren. Die zu aktivierende Nachricht lautet: 
+  - VCDIR_CATEGORY: Der Betrachter sollte eine Nachricht in einer anderen Kategorie der Ansicht aktivieren. Die zu aktivierende Nachricht lautet: 
         
-    - Die erste Nachricht in der nächsten Ansichtskategorie, wenn dieses Flag **or** ed with VCDIR_NEXT. 
+    - Die erste Meldung in der nächsten Ansichtskategorie, wenn dieses Flag OR-ed mit VCDIR_NEXT ist. 
         
-    - Die letzte Nachricht in der vorherigen Ansichtskategorie, wenn dieses Flag **or** ed mit VCDIR_PREV und die vorherige Kategorie erweitert wird. 
+    - Die letzte Meldung in der vorherigen Ansichtskategorie, wenn dieses Flag OR-ed mit VCDIR_PREV ist und die vorherige Kategorie erweitert wird. 
         
-    - Die erste Nachricht in der vorherigen Ansichtskategorie, wenn dieses Flag **or** ed mit VCDIR_PREV und die vorherige Kategorie nicht erweitert wird. In diesem Fall wird die vorherige Kategorie automatisch enpaniert. 
+    - Die erste Meldung in der vorherigen Ansichtskategorie, wenn dieses Flag OR-ed mit VCDIR_PREV ist und die vorherige Kategorie nicht erweitert wird. In diesem Fall wird die vorherige Kategorie automatisch erweitert. 
         
-  - VCDIR_DELETE: Der Viewer sollte die nächste oder vorherige Nachricht aktivieren, da die aktuelle Nachricht gelöscht wurde. 
+  - VCDIR_DELETE: Der Betrachter sollte die nächste oder vorherige Nachricht aktivieren, da die aktuelle Nachricht gelöscht wurde. 
         
-  - VCDIR_MOVE: Der Viewer sollte die nächste oder vorherige Nachricht aktivieren, da die aktuelle Nachricht verschoben wurde. 
+  - VCDIR_MOVE: Der Betrachter sollte die nächste oder vorherige Nachricht aktivieren, da die aktuelle Nachricht verschoben wurde. 
         
-  - VCDIR_NEXT: Der Viewer sollte die nächste Nachricht in der Ansichtsreihenfolge aktivieren. 
+  - VCDIR_NEXT: Der Betrachter sollte die nächste Nachricht in der Ansichtsreihenfolge aktivieren. 
         
-  - VCDIR_PREV: Der Viewer sollte die vorherige Nachricht in der Ansichtsreihenfolge aktivieren. 
+  - VCDIR_PREV: Der Betrachter sollte die vorherige Nachricht in der Ansichtsreihenfolge aktivieren. 
         
-  - VCDIR_UNREAD: Der Viewer sollte die nächste oder vorherige ungelesene Nachricht in der Ansichtsreihenfolge aktivieren. 
+  - VCDIR_UNREAD: Der Betrachter sollte die nächste oder vorherige ungelesene Nachricht in der Ansichtsreihenfolge aktivieren. 
     
 _prcPosRect_
   
@@ -68,21 +68,21 @@ S_OK
     
 S_FALSE 
   
-> Die Nachricht wurde erfolgreich aktiviert, es wurde jedoch ein anderer Formulartyp geöffnet.
+> Die Nachricht wurde erfolgreich aktiviert, aber ein anderer Formulartyp wurde im Prozess geöffnet.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Form-Objekte rufen die **IMAPIViewContext::ActivateNext-Methode** auf, um zu ändern, welche Nachricht für den Benutzer angezeigt wird. Der im  _ulDir-Parameter_ übergebene Wert gibt an, welche Nachricht aktiviert werden soll und in einigen Fällen warum. Die VCDIR_NEXT und VCDIR_PREVIOUS entsprechen benutzern, die den **Befehl**  Weiter bzw. Zurück in einer Ansicht auswählen. Diese Vorgänge entsprechen in der Regel dem Verschieben einer Nachricht nach oben oder unten in der Liste der Nachrichten der Formularanzeige. 
+Formularobjekte rufen die **IMAPIViewContext::ActivateNext-Methode** auf, um zu ändern, welche Nachricht dem Benutzer angezeigt wird. Der im  _ulDir-Parameter_ übergebene Wert gibt an, welche Nachricht aktiviert werden soll und in einigen Fällen warum. Die Flags VCDIR_NEXT und VCDIR_PREVIOUS entsprechen den Benutzern, die den Befehl **"Weiter"** bzw. **"Zurück"** in einer Ansicht auswählen. Diese Vorgänge entsprechen in der Regel dem Auf- oder Abschalten einer Nachricht in der Nachrichtenliste der Formularanzeige. 
   
-Die VCDIR_DELETE und VCDIR_MOVE werden von den [Methoden IMAPIMessageSite::D eleteMessage](imapimessagesite-deletemessage.md) und [IMAPIMessageSite::MoveMessage](imapimessagesite-movemessage.md) festgelegt. Implementierungen dieser Methoden rufen **ActivateNext** mit der entsprechenden Richtung auf und führen dann den angeforderten Vorgang für die Nachricht aus, wenn beim **ActivateNext-Aufruf** kein Fehler auftritt. Mit Formularanzeigen können Benutzer in der Regel die Richtung angeben, die in der Nachrichtenliste bewegt werden soll. 
+Die Flags VCDIR_DELETE und VCDIR_MOVE werden durch die Methoden [IMAPIMessageSite::D eleteMessage](imapimessagesite-deletemessage.md) und [IMAPIMessageSite::MoveMessage](imapimessagesite-movemessage.md) festgelegt. Implementierungen dieser Methoden rufen **ActivateNext** mit der entsprechenden Richtung auf und führen dann den angeforderten Vorgang für die Nachricht aus, wenn der **ActivateNext-Aufruf** nicht fehlschlägt. Formularanzeigen ermöglichen es Benutzern in der Regel, die Richtung anzugeben, in der die Nachrichtenliste verschoben werden soll. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Ihre Implementierung von [IMAPIViewContext::ActivateNext](imapiviewcontext-activatenext.md) erstellt die nächste oder vorherige Nachricht im Ordner, abhängig vom Wert von  _ulDir_, der aktuellen Nachricht. Rufen Sie nach der Rückgabe von **ActivateNext** [IMAPIMessageSite::GetMessage](imapimessagesite-getmessage.md) auf, um einen Zeiger auf die neu aktivierte Nachricht zu erhalten. 
+Ihre Implementierung von [IMAPIViewContext::ActivateNext](imapiviewcontext-activatenext.md) macht die nächste oder vorherige Nachricht im Ordner, abhängig vom Wert von  _ulDir,_ der aktuellen Nachricht. Nachdem **ActivateNext** zurückgegeben wurde, rufen [Sie IMAPIMessageSite::GetMessage](imapimessagesite-getmessage.md) auf, um einen Zeiger auf die neu aktivierte Nachricht abzurufen. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Wenn **ActivateNext** S_FALSE oder eine aktuelle Nachricht nicht vorhanden ist, führen Sie die normale Herunterfahrensprozedur aus, die das Aufrufen der [IMAPIForm::ShutdownForm-Methode](imapiform-shutdownform.md) Ihres Formulars umfassen sollte. Wenn eine nächste oder vorherige Nachricht angezeigt wird, verwenden Sie das Fensterrechteck, das im  _prcPosRect-Parameter_ übergeben wird, um sie anzuzeigen. 
+Wenn **ActivateNext** S_FALSE zurückgibt oder wenn keine aktuelle Nachricht vorhanden ist, führen Sie die normale Prozedur zum Herunterfahren aus, die das Aufrufen der [IMAPIForm::ShutdownForm-Methode](imapiform-shutdownform.md) ihres Formulars umfassen sollte. Wenn eine nächste oder vorherige Meldung angezeigt wird, verwenden Sie das Fensterrechteck, das im  _PrcPosRect-Parameter_ übergeben wurde, um sie anzuzeigen. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 

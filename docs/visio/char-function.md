@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251406
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0803d5d3-d804-5ffe-604d-661b35d1fc01
 description: Gibt das ANSI-Zeichen für eine Zahl zurück.
-ms.openlocfilehash: 6f1c459892331ec30ad93bbc860fcd038e8f4732
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 9e29a518f81a59fcf63313ef06391a4984944d81
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33418190"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603753"
 ---
 # <a name="char-function"></a>CHAR Function
 
@@ -28,11 +28,11 @@ CHAR(** *number* ** )
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Anzahl_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die Zahl, deren ANSI-Zeichen Sie erhalten möchten.  <br/> |
+| _Anzahl_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die Zahl, deren ANSI-Zeichen Sie abrufen möchten.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die resultierende Zeichenfolge ist ein Zeichen lang. Der  _Parameter number_ muss eine ganze Zahl zwischen 1 und 255 (einschließlich) sein, oder die Funktion gibt einen Fehler zurück. 
+Die resultierende Zeichenfolge ist ein Zeichen lang. Der  _Zahlenparameter_ muss eine ganze Zahl zwischen 1 und 255 (einschließlich) sein, andernfalls gibt die Funktion einen Fehler zurück. 
   
 ## <a name="example"></a>Beispiel
 

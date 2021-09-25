@@ -1,25 +1,25 @@
 ---
-title: PidLidLogType (kanonische Eigenschaft)
+title: Kanonische PidLidLogType-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidLogType
 api_type:
 - COM
 ms.assetid: 6cfcc048-03b9-4e34-bb92-480fe808e910
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: b4e8ef3f38a373cd3bab7af6f01d42113fe5fdc3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 04cbcf1c2f3b6552c4d824120070367d81faab52
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326670"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59624867"
 ---
-# <a name="pidlidlogtype-canonical-property"></a>PidLidLogType (kanonische Eigenschaft)
+# <a name="pidlidlogtype-canonical-property"></a>Kanonische PidLidLogType-Eigenschaft
 
   
   
@@ -31,7 +31,7 @@ Enthält den Anzeigenamen der Journalanwendung (z. B. "MSWord") und ist in der R
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidLogType  <br/> |
 |Eigenschaftensatz:  <br/> |PSETID_Log  <br/> |
-|Lange ID (LID):  <br/> |0x00008700  <br/> |
+|Long ID (LID):  <br/> |0x00008700  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Journal  <br/> |
    
@@ -41,17 +41,17 @@ Enthält den Anzeigenamen der Journalanwendung (z. B. "MSWord") und ist in der R
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Stellt Eigenschaftensatzdefinitionen und Verweise auf verwandte Exchange Server zur Verfügung.
+> Stellt Eigenschaftssatzdefinitionen und Verweise auf verwandte Exchange Server Protokollspezifikationen bereit.
     
 [[MS-OXOJRNL]](https://msdn.microsoft.com/library/2aa04fd2-0f36-4ce4-9178-c0fc70aa8d43%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften und Vorgänge an, die für Journale zulässig sind.
+> Gibt die Eigenschaften und Vorgänge an, die für Diebe zulässig sind.
     
 ### <a name="header-files"></a>Headerdateien
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -59,9 +59,9 @@ Mapidefs.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

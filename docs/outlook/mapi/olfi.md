@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 44bfaadf-36f9-bd8e-6158-646533f6849e
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 027905721b5730b4c3d78f496022b88a8e6b84d6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: ba40df92e19de903388b930e6264535f521d2a2d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32279753"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59625182"
 ---
 # <a name="olfi"></a>OLFI
 
@@ -21,7 +21,7 @@ ms.locfileid: "32279753"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Warteschlange mit langfristigen ID-Strukturen, die vom Anbieter des Informationsspeichers für persönliche Ordner (Personal Folders File, PST) zum Zuweisen einer Eintrags-ID für eine neue Nachricht oder einen neuen Ordner im Offlinemodus verwendet werden.
+Warteschlange mit langfristigen ID-Strukturen, die vom PST-Speicheranbieter (Personal Folders File) verwendet werden, um eine Eintrags-ID für eine neue Nachricht oder einen neuen Ordner im Offlinemodus zuzuweisen.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -51,35 +51,35 @@ typedef struct {
   
 - Dieses Mitglied ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.
     
- _dwAlloc_
+ _ressourcenAlloc_
   
-- Die Anzahl der Einträge, die für die Zuweisung verfügbar sind. Diese Einträge haben dieselbe guiD (Globally Unique Identifier).
+- Die Anzahl der Einträge, die für die Zuordnung verfügbar sind. Diese Einträge haben dieselbe GUID (Globally Unique Identifier).
     
- _dwNextAlloc_
+ _ressourcenNextAlloc_
   
-- Die Anzahl der Einträge, die als Nächstes für die Zuweisung verfügbar sind. Diese Einträge haben dieselbe GUID.
+- Die Anzahl der Einträge, die als Nächstes für die Zuordnung verfügbar sind. Diese Einträge verwenden dieselbe GUID.
     
  _ltidAlloc_
   
-- Die langfristige ID-Struktur **[LTID,](ltid.md)** die den eintrag identifiziert, der derzeit für die Zuweisung verfügbar ist. Die langfristige ID-Struktur enthält eine GUID und einen Index, der ein Objekt im Speicher identifiziert. Zusammen können die GUID und der Index eine eindeutige Eintrags-ID für ein Objekt bilden. 
+- Die langfristige ID-Struktur **[LTID,](ltid.md)** die den eintrag identifiziert, der derzeit für die Zuordnung verfügbar ist. Die langfristige ID-Struktur enthält eine GUID und einen Index, der ein Objekt im Speicher identifiziert. Zusammen können die GUID und der Index eine eindeutige Eintrags-ID für ein Objekt bilden. 
     
  _ltidNextAlloc_
   
 - Langfristige ID-Struktur, die den nächsten verfügbaren Eintrag identifiziert.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Eine Eintrags-ID ist eine 4-Byte-MAPI-Eintrags-ID für einen Ordner oder eine Nachricht. Weitere Informationen finden Sie unter [ENTRYID](https://msdn.microsoft.com/library/ms836424).
+Eine Eintrags-ID ist ein 4-Byte-MAPI-Eintragsbezeichner für einen Ordner oder eine Nachricht. Weitere Informationen finden Sie unter [ENTRYID](https://msdn.microsoft.com/library/ms836424).
   
-Wenn ein Pst Store-Anbieter einem neuen Objekt eine Eintrags-ID zu weist, benötigt er zunächst eine GUID, die den Server identifiziert, und einen Index, der das Objekt im Speicher identifiziert. Auch wenn die GUID nicht für alle Eintrags-IDs eindeutig ist, bieten die GUID und der Index zusammen einen eindeutigen Eintrag. Dieses GUID- und Indexpaar wird von einer langfristigen ID-Struktur, **LTID**, nachverfolgt, die Teil der **OLFI-Struktur** ist. 
+Wenn ein PST-Speicheranbieter einem neuen Objekt eine Eintrags-ID zuweist, benötigt er zuerst eine GUID, die den Server identifiziert, und einen Index, der das Objekt im Speicher identifiziert. Obwohl die GUID nicht für alle Eintrags-IDs eindeutig ist, stellen die GUID und der Index zusammen einen eindeutigen Eintrag bereit. Dieses GUID- und Indexpaar wird durch die langfristige ID-Struktur **LTID** nachverfolgt, die Teil der **OLFI-Struktur** ist. 
   
-Der Anbieter des PST-Speichers hält in **OLFI** keine **LTID-Struktur** für jedes GUID-Indexpaar. Es behält eine **LTID-Struktur,**  *ltidAlloc*  , für das derzeit erste verfügbare GUID-Index-Paar bei. eine Anzahl,  *dwAlloc*  , der Anzahl der verfügbaren Einträge, die dieselbe GUID gemeinsam verwenden; und eine zweite **LTID-Struktur,**  *ltidNextAlloc*  , für das nächste verfügbare GUID-Indexpaar mit einer anderen GUID. Der Anbieter des PST-Speichers verwendet die **OLFI-Struktur,** um die von ihm bereitgestellten GUIDs und Indizes nachzuverfolgen. Auf virtueller Ebene verwaltet der Anbieter eine Reserve einer Reihe von **LTID-Strukturen,** die zugeordnet werden können.  *dwAlloc* verwaltet eine Anzahl der verfügbaren **LTID-Strukturen.** 
+Der ANBIETER des PST-Speichers speichert nicht physisch in **OLFI** eine **LTID-Struktur** für jedes GUID-Indexpaar. Es behält eine **LTID-Struktur,**  *ltidAlloc,*  für das derzeit erste verfügbare GUID-Indexpaar bei. Anzahl,  *wetterAlloc*  der Anzahl der verfügbaren Einträge, die dieselbe GUID verwenden; und eine zweite **LTID-Struktur,**  *ltidNextAlloc,*  für das nächste verfügbare GUID-Indexpaar mit einer anderen GUID. Der ANBIETER des PST-Speichers verwendet die **OLFI-Struktur,** um die von ihm übergebenen GUIDs und Indizes nachzuverfolgen. Auf virtueller Ebene verwaltet der Anbieter eine Reserve einer Reihe von **LTID-Strukturen,** die für die Zuweisung bereit sind.  *für die Anzahl* der verfügbaren **LTID-Strukturen.** 
   
-Anforderungen für Eintrags-IDs werden in Blöcken verwendet. Wenn eine Anforderung für einen Block vorhanden ist, überprüft der Anbieter des PST-Speichers, ob genügend Reserve verfügbar ist, indem er die angeforderte Größe mit *dwAlloc vergleicht.* Wenn genügend Reserve vorhanden ist, werden die GUID und der Index in  *ltidAlloc für die Zuordnung*  zurückgegeben. Anschließend wird  *dwAlloc*  um die angeforderte Größe verringert und der Index in  *ltidAlloc*  um die angeforderte Größe erhöht. Dadurch wird der Anbieter des PST-Speichers darauf vorbereitet,  *ltidAlloc bei*  der nächsten Anforderung für einen weiteren Block von Eintrags-IDs zuzuordnen. Beachten Sie, dass die GUID für die nächste Anforderung unverändert bleibt. 
+Anforderungen für Eintrags-IDs werden in Blöcken gesendet. Wenn eine Anforderung für einen Block vorliegt, überprüft der ANBIETER des PST-Speichers, ob genügend Reserve vorhanden ist, indem er die angeforderte Größe mit  *"wetterAlloc"*  vergleicht. Wenn genügend Reserve vorhanden ist, werden die GUID und der Index in  *ltidAlloc*  für die Zuordnung zurückgegeben. Anschließend wird die Größe von  *"ntAlloc"*  um die angeforderte Größe verringert und der Index in  *ltidAlloc*  um die angeforderte Größe erhöht. Dadurch wird der ANBIETER des PST-Speichers darauf vorbereitet,  *ltidAlloc*  bei der nächsten Anforderung für einen anderen Block von Eintrags-IDs zuzuweisen. Beachten Sie, dass die GUID für die nächste Anforderung gleich bleibt. 
   
-Wenn die Größe einer Anforderung größer als  *"dwAlloc"*  ist, versucht der Anbieter des PST-Speichers, das als Nächstes in der Reserve zu verwenden, wie von  *dwNextAlloc*  und  *ltidNextAlloc*  angegeben. Sie kopiert  *dwNextAlloc*  und  *ltidNextAlloc*  in  *dwAlloc*  bzw.  *ltidAlloc*  und legt  *dwNextAlloc*  und  *ltidNextAlloc*  auf NULL fest. 
+Wenn die Größe einer Anforderung größer als  *"ntAlloc"*  ist, versucht der ANBIETER des PST-Speichers zu verwenden, was er als Nächstes in der Reserve hat, wie durch  *"wetterNextAlloc"*  und  *"ltidNextAlloc"*  angegeben. Sie kopiert *wetterNextAlloc* und *ltidNextAlloc* bzw. ltidNextAlloc in ntAlloc bzw. *ltidNextAlloc* und legt *ltidNextAlloc* auf NULL fest.   
   
-Ein Anbieter, der den Anbieter für den PST-Speicher umschließt, sollte in regelmäßigen Abständen  *ltidNextAlloc*  überprüfen, um zu prüfen, ob er NULL ist. Falls ja, sollte der Anbieter eine neue GUID auffüllen und  *dwNextAlloc*  zurücksetzen, damit weitere Eintrags-IDs zugewiesen werden können. 
+Ein Anbieter, der den PST-Speicheranbieter umschließt, sollte in regelmäßigen  *Abständen überprüfen,*  ob er NULL ist. Falls ja, sollte der Anbieter ihn mit einer neuen GUID auffüllen und  *"wetterNextAlloc"*  zurücksetzen, damit weitere Eintrags-IDs zugewiesen werden können. 
   
 ## <a name="see-also"></a>Siehe auch
 

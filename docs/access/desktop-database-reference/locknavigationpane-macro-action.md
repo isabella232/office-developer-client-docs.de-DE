@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm172454
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 7f6ee19edaf2efdc03301e98e709db6dd69f101a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 6682d42754fac7780241a069e5f043728ad883da
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289871"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594006"
 ---
 # <a name="locknavigationpane-macro-action"></a>LockNavigationPane-Makroaktion
 
@@ -49,7 +49,7 @@ Die **SperrenNavigationsbereich**-Aktion verfügt über folgendes Argument.
 </table>
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Durch Sperren des Navigationsbereichs werden Sie daran gehindert, Datenbankobjekte zu löschen oder in die Zwischenablage auszuschneiden. Sie werden *nicht* daran gehindert, die folgenden Vorgänge auszuführen:
 

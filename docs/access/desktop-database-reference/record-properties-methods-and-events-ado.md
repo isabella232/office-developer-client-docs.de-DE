@@ -1,20 +1,20 @@
 ---
-title: Record-Eigenschaften,-Methoden und-Ereignisse (ADO)
+title: Aufzeichnen von Eigenschaften, Methoden und Ereignissen (ADO)
 TOCTitle: Properties, Methods, and Events
 ms:assetid: c38c915c-da8f-ce52-cf36-7463829d2278
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249956(v=office.15)
 ms:contentKeyID: 48547573
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: e8d7cbf0620d896044edd41f783180148bceae66
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f070f78053d8fedf37ac44fe0b8c302b83c38be1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300714"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617667"
 ---
-# <a name="record-properties-methods-and-events-ado"></a>Record-Eigenschaften,-Methoden und-Ereignisse (ADO)
+# <a name="record-properties-methods-and-events-ado"></a>Aufzeichnen von Eigenschaften, Methoden und Ereignissen (ADO)
 
 **Gilt für**: Access 2013, Office 2013
 

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagContactAddressBookMultipleAddressFlag
 api_type:
 - HeaderDef
 ms.assetid: aefc34c5-1beb-44cf-a455-90f466e157ce
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 6fabb03d552f195c200b0ecbd8fd69f470c0e1fd
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 7ade77c6c519e2c58b45ff60c1748b623e723fbd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33431568"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59571066"
 ---
 # <a name="pidtagcontactaddressbookmultipleaddressflag-canonical-property"></a>PidTagContactAddressBookMultipleAddressFlag (kanonische Eigenschaft)
 
@@ -32,11 +32,11 @@ Enthält ein Flag, das TRUE ist, wenn der Anbieter mehrere E-Mail-Adressen pro K
 |Zugeordnete Eigenschaften:  <br/> |PR_CONTAB_MULTI_ADDR_FLAG  <br/> |
 |Kennung:  <br/> |0x6614  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
-|Bereich:  <br/> |Kontaktadressenbuch  <br/> |
+|Bereich:  <br/> |Kontaktadressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Wenn diese Eigenschaft TRUE ist, lässt der Anbieter keine Kontakte ohne E-Mail-Adressen zu. Bei FALSE zeigt der Anbieter alle Kontakte an, unabhängig davon, ob sie über eine primäre E-Mail-Adresse verfügen. Nur die primäre E-Mail-Adresse wird berücksichtigt. Dies ist eine Eigenschaft für einen Contact Address Book-Container und eine Spalte in der Tabelle der Kontaktadressenbuchcontainer.
+Wenn diese Eigenschaft TRUE ist, lässt der Anbieter keine Kontakte ohne E-Mail-Adressen zu. Bei FALSE zeigt der Anbieter alle Kontakte unabhängig davon an, ob sie über eine primäre E-Mail-Adresse verfügen. Nur die primäre E-Mail-Adresse wird berücksichtigt. Dies ist eine Eigenschaft für einen Kontaktadressbuchcontainer und eine Spalte in der Tabelle der Kontaktadressbuchcontainer.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,11 +44,11 @@ Wenn diese Eigenschaft TRUE ist, lässt der Anbieter keine Kontakte ohne E-Mail-
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

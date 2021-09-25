@@ -1,23 +1,23 @@
 ---
-title: PidTagRulesTable (kanonische Eigenschaft)
+title: Kanonische PidTagRulesTable-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: fc520720-8190-4dff-8f6c-1bebf7080b57
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e1c670cd566e838104ae3d5480c2297f8632d899
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: b7309a6c8a7b936f3526df9fad6be5615727df23
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33428501"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59604201"
 ---
-# <a name="pidtagrulestable-canonical-property"></a>PidTagRulesTable (kanonische Eigenschaft)
+# <a name="pidtagrulestable-canonical-property"></a>Kanonische PidTagRulesTable-Eigenschaft
 
   
   
@@ -32,9 +32,9 @@ Enthält eine Tabelle mit allen Regeln, die auf einen Ordner angewendet werden.
 |Datentyp:  <br/> |PT_OBJECT  <br/> |
 |Bereich:  <br/> |Serverseitige Regeln  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft ist für alle Ordnerobjekte auf einer Exchange Server vorhanden, die Regeln haben. In dieser Eigenschaft enthaltene Werte werden zum Lesen und Ändern von Regeln verwendet. Sie können die [IMAPIProp::OpenProperty-Methode](imapiprop-openproperty.md) mit der IID_IExchangeModifyTable-Schnittstellen-ID verwenden, um eine [IExchangeModifyTable : IUnknown-Schnittstelle](iexchangemodifytableiunknown.md) zur Regeltabelle eines Ordners zu erhalten.  Sie können diese Schnittstelle verwenden, um diese Regeln zu lesen und zu ändern. 
+Diese Eigenschaft ist für alle Ordnerobjekte in einem Exchange Server vorhanden, die Regeln haben. Die in dieser Eigenschaft enthaltenen Werte werden zum Lesen und Ändern von Regeln verwendet. You can use the [IMAPIProp::OpenProperty](imapiprop-openproperty.md) method with the **IID_IExchangeModifyTable** interface identifier to obtain an [IExchangeModifyTable : IUnknown](iexchangemodifytableiunknown.md) interface to the rules table on a folder. Sie können diese Schnittstelle verwenden, um diese Regeln zu lesen und zu ändern. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -42,11 +42,11 @@ Diese Eigenschaft ist für alle Ordnerobjekte auf einer Exchange Server vorhande
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind. 
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind. 
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -59,9 +59,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

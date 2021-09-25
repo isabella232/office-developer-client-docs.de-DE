@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm11103
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 35637781035b7a449ba574cf5f6c84f2cb5223db
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: b70dd9941f5a14dbbb23b5c1bb3939e54e49f2d4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306587"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593663"
 ---
 # <a name="restorewindow-macro-action"></a>RestoreWindow-Makroaktion
 
@@ -31,7 +31,7 @@ Um die vorherige Größe eines maximierten oder minimierten Fensters wiederherzu
 
 Die **WiederherstellenFenster**-Aktion hat keine Argumente.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Aktion funktioniert für das ausgewählte Objekt. Wenn ein Objekt minimiert worden ist, können Sie es auswählen, indem Sie die **AuswählenObjekt**-Aktion verwenden, und dann seine vorherige Größe wiederherstellen, indem Sie die **WiederherstellenFenster**-Aktion verwenden.
 

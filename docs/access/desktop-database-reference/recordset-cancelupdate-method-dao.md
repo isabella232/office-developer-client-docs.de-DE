@@ -1,5 +1,5 @@
 ---
-title: Recordset. CancelUpdate-Methode (DAO)
+title: Recordset.CancelUpdate-Methode (DAO)
 TOCTitle: CancelUpdate method
 ms:assetid: efc4f60b-876f-5e11-37fd-0fbbf225b15b
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff836421(v=office.15)
@@ -10,25 +10,25 @@ f1_keywords:
 - dao360.chm1053072
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 5950154d8896678889af01254104a2ac0dfef4cc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: fa3b54650967dd2fef435374b8b6eace327df3dd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300679"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593740"
 ---
-# <a name="recordsetcancelupdate-method-dao"></a>Recordset. CancelUpdate-Methode (DAO)
+# <a name="recordsetcancelupdate-method-dao"></a>Recordset.CancelUpdate-Methode (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
-Bricht alle ausstehenden Aktualisierungen für ein **[Recordset](recordset-object-dao.md)** -Objekt ab.
+Bricht alle ausstehenden Updates für ein **[Recordset](recordset-object-dao.md)**-Objekt ab.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . CancelUpdate (***UpdateType***)
+*Ausdruck* . CancelUpdate(***UpdateType***)
 
-*Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset**-Objekt darstellt.
 
 ## <a name="parameters"></a>Parameter
 
@@ -49,17 +49,17 @@ Bricht alle ausstehenden Aktualisierungen für ein **[Recordset](recordset-objec
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>Aktualisierungstyp</em></p></td>
+<td><p><em>UpdateType</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Long</strong></p></td>
-<td><p>Auf einen der <strong><a href="updatetypeenum-enumeration-dao.md">UpdateTypeEnum</a></strong> -Werte festgelegt.</p><p><strong>Hinweis</strong>: die <EM>DbUpdateRegular</EM> -und <EM>dbUpdateBatch</EM> -Werte sind nur gültig, wenn die Batchaktualisierung aktiviert ist.</p>
+<td><p>Auf einen der <strong><a href="updatetypeenum-enumeration-dao.md">UpdateTypeEnum-Werte</a></strong> festgelegt.</p><p><strong>HINWEIS:</strong>Die Werte <EM>"dbUpdateRegular"</EM> und <EM>"dbUpdateBatch"</EM> sind nur gültig, wenn die Batchaktualisierung aktiviert ist.</p>
 </td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Mit der **CancelUpdate**-Methode können Sie alle ausstehenden Aktualisierungen abbrechen, die aus einer **[Edit](recordset-edit-method-dao.md)** - oder **[AddNew](recordset-addnew-method-dao.md)** -Operation stammen. Wenn ein Benutzer z. B. die **Edit**- oder **AddNew**-Methode aufruft, ohne vorher die **Update**-Methode aufgerufen zu haben, werden durch die **CancelUpdate**-Methode alle Änderungen abgebrochen, die nach dem Aufrufen von **Edit** oder **AddNew** vorgenommen wurden.
 

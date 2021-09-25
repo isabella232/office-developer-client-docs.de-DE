@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249024(v=office.15)
 ms:contentKeyID: 48543790
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 0f28b14f3eaf6792a74ef0967d698d5a3914955a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 9a2216d41bd9d55e8b56816301350906fc2654a4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291272"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594111"
 ---
 # <a name="internet-publishing-scenario"></a>Szenario für Veröffentlichungen im Internet
 
@@ -22,12 +22,12 @@ Mit diesem Code wird die Verwendung von ADO (ActiveX Data Objects) mit dem Micro
 
 Für die Erstellung dieses Szenarios sind die folgenden Schritte erforderlich: 
 
-1. Richten Sie das Visual Basic-Projekt ein.
-2. Initialisieren Sie das Haupt Listenfeld.
-3. Füllen Sie das Listenfeld Felder aus.
-4. Füllen Sie das Textfeld Details aus.
+1. Richten Sie das Visual Basic Projekt ein.
+2. Initialisieren Sie das Hauptlistenfeld.
+3. Füllen Sie das Listenfeld Felder auf.
+4. Füllen Sie das Textfeld Details auf.
 
-## <a name="step-1-set-up-the-visual-basic-project"></a>Schritt 1: Einrichten des Visual Basic-Projekts
+## <a name="step-1-set-up-the-visual-basic-project"></a>Schritt 1: Einrichten des Visual Basic Projekts
 
 Dieses Szenario geht davon aus, dass Sie Microsoft Visual Basic 6.0 oder höher, ADO 2.5 oder höher und den Microsoft OLE DB-Anbieter für Internet Publishing auf dem System installiert haben.
 
@@ -37,19 +37,19 @@ Dieses Szenario geht davon aus, dass Sie Microsoft Visual Basic 6.0 oder höher,
 
 2.  Klicken Sie im Menü **Project** auf **References**.
 
-3.  Wählen Sie **Microsoft ActiveX Data Objects 2,5 Library**aus, und klicken Sie dann auf **OK**.
+3.  Wählen Sie **Microsoft ActiveX Data Objects 2.5 Library** aus, und klicken Sie dann auf **OK.**
 
-### <a name="insert-controls-on-the-main-form"></a>Einfügen von Steuerelementen auf dem Hauptformular
+### <a name="insert-controls-on-the-main-form"></a>Einfügen von Steuerelementen im Hauptformular
 
-1.  Add a ListBox control to Form1. Legen Sie die **Name** -Eigenschaft auf **von IstMain**.
+1.  Add a ListBox control to Form1. Legen Sie die **Name-Eigenschaft** auf **"lstMain"** fest.
 
-2.  Add another ListBox control to Form1. Legen Sie die **Name** -Eigenschaft auf **lstDetails**.
+2.  Add another ListBox control to Form1. Legen Sie die **Name-Eigenschaft** auf **"lstDetails"** fest.
 
-3.  Add a TextBox control to Form1. Legen Sie die **Name** -Eigenschaft auf **txtDetails**.
+3.  Add a TextBox control to Form1. Legen Sie die **Name-Eigenschaft** auf **txtDetails** fest.
 
-## <a name="step-2-initialize-the-main-list-box"></a>Schritt 2: Initialisieren des Haupt Listenfelds
+## <a name="step-2-initialize-the-main-list-box"></a>Schritt 2: Initialisieren des Hauptlistenfelds
 
-### <a name="declare-global-record-and-recordset-objects"></a>Deklarieren globaler Daten Satz-und Recordset-Objekte
+### <a name="declare-global-record-and-recordset-objects"></a>Deklarieren von globalen Record- und Recordset-Objekten
 
 - Insert the following code into the (General) (Declarations) for Form1:
     
@@ -62,7 +62,7 @@ Dieses Szenario geht davon aus, dass Sie Microsoft Visual Basic 6.0 oder höher,
     
    Dieser Code deklariert globale Objektverweise für die Objekte **Record** und **Recordset**, die später in diesem Szenario verwendet werden.
 
-### <a name="connect-to-a-url-and-populate-lstmain"></a>Herstellen einer Verbindung mit einer URL und Auffüllen von von IstMain
+### <a name="connect-to-a-url-and-populate-lstmain"></a>Verbinden zu einer URL und Auffüllen von lstMain
 
 - Fügen Sie im Form Load-Ereignishandler für Form1 den folgenden Code ein:
     
@@ -81,13 +81,13 @@ Dieses Szenario geht davon aus, dass Sie Microsoft Visual Basic 6.0 oder höher,
     End Sub 
    ```
     
-   Dieser Code instanziiert die globalen Objekte **Record** und **Recordset**. Der **Datensatz** `grec` wird mit einer als **ActiveConnection**angegebenen URL geöffnet. Wenn die URL vorhanden ist, wird Sie geöffnet; Wenn es noch nicht vorhanden ist, wird es erstellt. 
+   Dieser Code instanziiert die globalen Objekte **Record** und **Recordset**. The **Record** `grec` is opened with a URL specified as the **ActiveConnection**. Wenn die URL vorhanden ist, wird sie geöffnet. wenn es noch nicht vorhanden ist, wird es erstellt. 
    
-   Beachten Sie, dass Sie `https://servername/foldername/` eine gültige URL aus Ihrer Umgebung ersetzen sollten. 
+   Beachten Sie, dass Sie eine gültige URL aus Ihrer Umgebung ersetzen `https://servername/foldername/` sollten. 
    
-   Das **Recordset** `grs` -Objekt wird für die untergeordneten Elemente des **Record** `grec`-Objekts geöffnet. Die von IstMain wird dann mit den Dateinamen der in der URL veröffentlichten Ressourcen aufgefüllt.
+   Das **Recordset** `grs` wird für die untergeordneten Elemente des **Datensatzes** `grec` geöffnet. Das lstMain wird dann mit den Dateinamen der Ressourcen aufgefüllt, die unter der URL veröffentlicht wurden.
 
-## <a name="step-3-populate-the-fields-list-box"></a>Schritt 3: aufFüllen des Listenfelds "Felder"
+## <a name="step-3-populate-the-fields-list-box"></a>Schritt 3: Auffüllen des Listenfelds "Felder"
 
 - Insert the following code into the Click event handler of lstMain:
 
@@ -118,19 +118,19 @@ Dieses Szenario geht davon aus, dass Sie Microsoft Visual Basic 6.0 oder höher,
     End Sub 
    ```
 
-   Dieser Code deklariert und instanziiert lokale **Record** -und **Recordset** -Objekte `rec` und `rs`/oder.
+   Dieser Code deklariert bzw. instanziiert lokale **Record-** und **Recordset-Objekte.** `rec` `rs`
 
-   Die Zeile, die der in von IstMain ausgewählten Ressource entspricht, ist die aktuelle Zeile `grs`von. Das Listenfeld **Details** wird dann gelöscht und `rec` mit der aktuellen Zeile `grs` als Quelle geöffnet.
+   Die Zeile, die der in lstMain ausgewählten Ressource entspricht, wird zur aktuellen Zeile von `grs` . Das **Listenfeld Details** wird gelöscht und `rec` mit der aktuellen Zeile als Quelle `grs` geöffnet.
 
-   Wenn es sich bei der Ressource um einen Auflistungs Daten **** Satz handelt (wie von RecordType angegeben), wird das lokale `rec` **Recordset** `rs` -Objekt für die untergeordneten Elemente von geöffnet. lstDetails wird dann mit den Werten aus den Zeilen von `rs`gefüllt.
+   Wenn es sich bei der Ressource um einen Auflistungsdatensatz handelt (wie durch **RecordType** angegeben), wird das lokale **Recordset** `rs` für die untergeordneten Elemente von `rec` geöffnet. lstDetails wird dann mit den Werten aus den Zeilen von `rs` gefüllt.
 
-   Wenn die Ressource ein einfacher Datensatz ist, `recFields` wird aufgerufen. Weitere Informationen `recFields`finden Sie im nächsten Schritt.
+   Wenn die Ressource ein einfacher Datensatz `recFields` ist, wird aufgerufen. Weitere Informationen `recFields` finden Sie im nächsten Schritt.
 
    Ist die Ressource ein strukturiertes Dokument, wird kein Code implementiert.
 
-## <a name="step-4-populate-the-details-text-box"></a>Schritt 4: aufFüllen des Textfelds "Details"
+## <a name="step-4-populate-the-details-text-box"></a>Schritt 4: Auffüllen des Textfelds "Details"
 
-- Erstellen Sie eine neue Subroutine mit `recFields` dem Namen, und fügen Sie den folgenden Code ein:
+- Erstellen Sie eine neue Unterroutine mit dem `recFields` Namen, und fügen Sie den folgenden Code ein:
 
    ```vb 
     
@@ -157,5 +157,5 @@ Dieses Szenario geht davon aus, dass Sie Microsoft Visual Basic 6.0 oder höher,
     End Sub 
    ```
 
-   Dieser Code füllt lstDetails mit den Feldern und Werten des einfachen Datensatzes, der übergeben `recFields`wird. If the resource is a text file, a text **Stream** is opened from the resource record. Der Code bestimmt, ob der Zeichensatz ASCII ist, und kopiert **** den Inhalt des `txtDetails`Streams in.
+   Dieser Code füllt lstDetails mit den Feldern und Werten des einfachen Datensatzes auf, der an übergeben `recFields` wird. If the resource is a text file, a text **Stream** is opened from the resource record. Der Code bestimmt, ob der Zeichensatz ASCII ist, und kopiert den **Stream-Inhalt** in `txtDetails` .
 

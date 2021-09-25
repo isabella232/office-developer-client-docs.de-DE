@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82253217
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ee5e3898-bb49-57c6-0ebe-12e1fe388e55
 description: Gibt einen transformierten Winkel im lokalen Koordinatensystem des Ziel-Shapes zurück. Konvertiert einen Winkel aus lokalen Koordinaten in einem Quell-Shape in die lokalen Koordinaten eines Ziel-Shapes.
-ms.openlocfilehash: e971613d4fc33cd991e7e9aeba49ac47871ebe8f
-ms.sourcegitcommit: 41f2ee16badd6009bab642d68a61eaaccb91c3ec
+ms.openlocfilehash: e223c5517b01c881367da19a8cb3c5e3f1c0780b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45160265"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603928"
 ---
 # <a name="angletoloc-function"></a>ANGLETOLOC Function
 
@@ -24,7 +24,7 @@ Gibt einen transformierten Winkel im lokalen Koordinatensystem des Ziel-Shapes z
   
 ## <a name="syntax"></a>Syntax
 
-ANGLETOLOC(***srcAngle***, ***srcRef***, ***dstRef*** ) 
+ANGLETOLOC(***srcAngle** _, _*_srcRef_*_, _ *_dstRef_** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -34,7 +34,7 @@ ANGLETOLOC(***srcAngle***, ***srcRef***, ***dstRef*** )
 | _srcRef_ <br/> |Erforderlich  <br/> |**String** <br/> | Ein Bezug auf eine Zelle im Quellobjekt, beispielsweise ein Shape, eine Gruppe, ein Zeichenblatt usw.  <br/> |
 | _dstRef_ <br/> |Erforderlich  <br/> |**String** <br/> |Ein Bezug auf eine Zelle im Zielobjekt, beispielsweise ein Shape, eine Gruppe, ein Zeichenblatt usw.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Mithilfe der ANGLETOLOC-Funktion können Sie lokale Winkelzellen in einem Shape in Form eines Winkels aus einer anderen Koordinatenstelle festlegen.
   

@@ -1,41 +1,41 @@
 ---
-title: Recordset. Bookmarkable-Eigenschaft (DAO)
+title: Recordset.Bookmarkable-Eigenschaft (DAO)
 TOCTitle: Bookmarkable Property
 ms:assetid: 6323f162-75c4-7cfe-c918-0b9454560f97
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194950(v=office.15)
 ms:contentKeyID: 48545257
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 2bd9b91f80c9411bb7cdf4e0be9e71ab055dc72f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7b0bd98926a3301e973a91fdfbd3c27c3f5fd013
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300623"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617678"
 ---
-# <a name="recordsetbookmarkable-property-dao"></a>Recordset. Bookmarkable-Eigenschaft (DAO)
+# <a name="recordsetbookmarkable-property-dao"></a>Recordset.Bookmarkable-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
 
-Gibt einen Wert zurück, der angibt, ob ein **Recordset**-Objekt Leszeichen unterstützt, die Sie mithilfe der **[Bookmark](recordset-bookmark-property-dao.md)** -Eigenschaft festlegen können.
+Gibt einen Wert zurück, der angibt, ob ein **Recordset**-Objekt Textmarken unterstützt, die Sie unter Verwendung der **[Bookmark](recordset-bookmark-property-dao.md)**-Eigenschaft festlegen können.
 
 ## <a name="syntax"></a>Syntax
 
 *Ausdruck* . Bookmarkable
 
-*Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 
 Überprüfen Sie den Wert der **Bookmarkable**-Eigenschaft eines **Recordset**-Objekts, bevor Sie versuchen, die **Bookmark**-Eigenschaft festzulegen oder zu überprüfen.
 
-Für **Recordset** -Objekte, die vollständig auf Tabellen des Microsoft Access-Daten Bank **** Moduls basieren, ist der Wert der Bookmarkable-Eigenschaft true, und Sie können Lesezeichen verwenden. Andere Datenbank-Produkte unterstützen Textmarken möglicherweise nicht. Sie können Textmarken nicht in beliebigen **Recordset** -Objekten verwenden, die auf einer verknüpften Paradox-Tabelle basieren, die keinen primären Schlüssel besitzt.
+Für **Recordset-Objekte,** die vollständig auf Tabellen des Microsoft Access-Datenbankmoduls basieren, lautet der Wert der **Bookmarkable-Eigenschaft** "True", und Sie können Lesezeichen verwenden. Andere Datenbank-Produkte unterstützen Textmarken möglicherweise nicht. Sie können Textmarken nicht in beliebigen **Recordset** -Objekten verwenden, die auf einer verknüpften Paradox-Tabelle basieren, die keinen primären Schlüssel besitzt.
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel werden die Eigenschaften **Bookmark** und **Bookmarkable** verwendet, damit der Benutzer einen Datensatz in einem **Recordset**-Objekt kennzeichnen und später zu diesem zurückkehren kann.
+In diesem Beispiel werden die **Bookmark**- und **Bookmarkable**-Eigenschaften verwendet, damit Benutzer einen Eintrag in einem **Recordset** kennzeichnen und später zu ihm zurückkehren können.
 
 ```vb
     Sub BookmarkX() 

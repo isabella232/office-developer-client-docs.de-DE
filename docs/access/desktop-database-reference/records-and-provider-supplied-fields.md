@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250022(v=office.15)
 ms:contentKeyID: 48547776
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: ebbfeb303bb575928f09858db5d3a34cf2171ce0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 77e913f87923cb4dc7f4d4ddde5bf63b944c6252
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300756"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593775"
 ---
 # <a name="records-and-provider-supplied-fields"></a>Datensätze und vom Anbieter bereitgestellte Felder
 
@@ -24,7 +24,7 @@ Wenn das **Record** -Objekt aus einem **Recordset** -Objekt geöffnet wird, enth
 
 Durch den Anbieter können zusätzliche Felder eingefügt werden, die als ergänzende Merkmale des **Record** -Objekts dienen. Daher verfügt ein **Record** -Objekt möglicherweise über eindeutige Felder, die im gesamten **Recordset** -Objekt oder in einem aus einer anderen Zeile des **Recordset** -Objekts abgeleiteten **Record** -Objekt nicht enthalten sind.
 
-Beispielsweise können alle Zeilen eines **Recordset-Objekts** , das von einer e-Mail-Datenquelle abgeleitet wurde, Spalten wie from, to und Subject aufweisen. A **Record** derived from that **Recordset** will have the same fields. However, the **Record** may also have other fields unique to the particular message represented by that **Record**, such as Attachment and Cc (carbon copy).
+Beispielsweise können alle Zeilen eines **Recordset-Objekts, das** von einer E-Mail-Datenquelle abgeleitet wurde, Spalten wie "Von", "An" und "Betreff" aufweisen. A **Record** derived from that **Recordset** will have the same fields. However, the **Record** may also have other fields unique to the particular message represented by that **Record**, such as Attachment and Cc (carbon copy).
 
 Obwohl das **Record** -Objekt und die aktuelle Zeile des **Recordset** -Objekts die gleichen Felder enthalten, unterscheiden sie sich, da die Objekte **Record** und **Recordset** über verschiedene Methoden und Eigenschaften verfügen.
 
@@ -85,23 +85,23 @@ Ein *Ressourcenrecordset* besteht aus den folgenden Spalten.
 </tr>
 <tr class="even">
 <td><p>RESOURCE_ISHIDDEN</p></td>
-<td><p>Boolean</p></td>
+<td><p>AdBoolean</p></td>
 <td><p>True, wenn die Ressource ausgeblendet ist. Es werden nur Zeilen zurückgegeben, wenn durch den Befehl, durch den das Rowset erstellt wird, explizit Zeilen ausgewählt werden, bei denen RESOURCE_ISHIDDEN True entspricht.</p></td>
 </tr>
 <tr class="odd">
 <td><p>RESOURCE_ISREADONLY</p></td>
-<td><p>Boolean</p></td>
+<td><p>AdBoolean</p></td>
 <td><p>True, wenn die Ressource schreibgeschützt ist. Es wird versucht, diese Ressource mit DBBINDFLAG_WRITE zu öffnen, bei DB_E_READONLY schlägt der Vorgang fehl. Diese Eigenschaft kann auch dann bearbeitet werden, wenn die Ressource nur zum Lesen geöffnet wurde.</p></td>
 </tr>
 <tr class="even">
 <td><p>RESOURCE_CONTENTTYPE</p></td>
 <td><p>AdVarWChar</p></td>
-<td><p>Die wahrscheinliche Verwendung des Dokuments wird angegeben - z. B. ein juristischer Schriftsatz. Dies entspricht möglicherweise der Office-Vorlage, die zum Erstellen des Dokuments verwendet wird.&quot;&quot;</p></td>
+<td><p>Die wahrscheinliche Verwendung des Dokuments wird angegeben - z. B. ein juristischer Schriftsatz. Dies kann der Office Vorlage entsprechen, die zum Erstellen des Dokuments verwendet wird.&quot;&quot;</p></td>
 </tr>
 <tr class="odd">
 <td><p>RESOURCE_CONTENTCLASS</p></td>
 <td><p>AdVarWChar</p></td>
-<td><p>Gibt den MIME-Typ des Dokuments an, der das Format wie " &quot;Text/HTML&quot;" angibt.</p></td>
+<td><p>Gibt den MIME-Typ des Dokuments an und gibt das Format an, &quot; &quot; z. B. text/html.</p></td>
 </tr>
 <tr class="even">
 <td><p>RESOURCE_CONTENTLANGUAGE</p></td>
@@ -110,17 +110,17 @@ Ein *Ressourcenrecordset* besteht aus den folgenden Spalten.
 </tr>
 <tr class="odd">
 <td><p>RESOURCE_CREATIONTIME</p></td>
-<td><p>Dateien</p></td>
+<td><p>adFileTime</p></td>
 <td><p>Schreibgeschützt. Es wird eine FILETIME-Struktur angegeben, die die Uhrzeit der Erstellung der Ressource enthält. Die Uhrzeit wird im UTC-Format (Coordinated Universal Time, koordinierte Weltzeit) angegeben.</p></td>
 </tr>
 <tr class="even">
 <td><p>RESOURCE_LASTACCESSTIME</p></td>
-<td><p>Dateien</p></td>
+<td><p>AdFileTime</p></td>
 <td><p>Schreibgeschützt. Es wird eine FILETIME-Struktur angegeben, die die Uhrzeit des letzten Zugriffs auf die Ressource enthält. Die Uhrzeit wird im UTC-Format angegeben. Die FILETIME-Elemente sind Null, wenn dieses Zeitelement vom Anbieter nicht unterstützt wird.</p></td>
 </tr>
 <tr class="odd">
 <td><p>RESOURCE_LASTWRITETIME</p></td>
-<td><p>Dateien</p></td>
+<td><p>AdFileTime</p></td>
 <td><p>Schreibgeschützt. Es wird eine FILETIME-Struktur angegeben, die die Uhrzeit des letzten Schreibvorgangs für die Ressource enthält. Die Uhrzeit wird im UTC-Format angegeben. Die FILETIME-Elemente sind Null, wenn dieses Zeitelement vom Anbieter nicht unterstützt wird.</p></td>
 </tr>
 <tr class="even">
@@ -130,12 +130,12 @@ Ein *Ressourcenrecordset* besteht aus den folgenden Spalten.
 </tr>
 <tr class="odd">
 <td><p>RESOURCE_ISCOLLECTION</p></td>
-<td><p>Boolean</p></td>
+<td><p>AdBoolean</p></td>
 <td><p>Schreibgeschützt. True, wenn die Ressource eine Auflistung, z. B. ein Verzeichnis, ist. False, wenn die Ressource eine einfache Datei ist.</p></td>
 </tr>
 <tr class="even">
 <td><p>RESOURCE_ISSTRUCTUREDDOCUMENT</p></td>
-<td><p>Boolean</p></td>
+<td><p>AdBoolean</p></td>
 <td><p>True, wenn die Ressource ein strukturiertes Dokument ist. False, wenn die Ressource kein strukturiertes Dokument ist. Sie kann eine Auflistung oder eine einfache Datei sein.</p></td>
 </tr>
 <tr class="odd">
@@ -155,7 +155,7 @@ Ein *Ressourcenrecordset* besteht aus den folgenden Spalten.
 </tr>
 <tr class="even">
 <td><p>RESOURCE_ISROOT</p></td>
-<td><p>Boolean</p></td>
+<td><p>AdBoolean</p></td>
 <td><p>Schreibgeschützt. True, wenn die Ressource der Stamm einer Auflistung oder eines strukturierten Dokuments ist.</p></td>
 </tr>
 </tbody>

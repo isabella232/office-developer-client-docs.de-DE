@@ -1,5 +1,5 @@
 ---
-title: Recordset. LockEdits-Eigenschaft (DAO)
+title: Recordset.LockEdits-Eigenschaft (DAO)
 TOCTitle: LockEdits Property
 ms:assetid: baa11b24-a330-eaa4-bd03-b8b9739d209e
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff822514(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1052877
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 54f91dea98f4f47057eb673a0fae08c8ac2b6f1c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c59eb4abbf7dbba3bc5da14737a43c67581cc96f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300462"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617629"
 ---
-# <a name="recordsetlockedits-property-dao"></a>Recordset. LockEdits-Eigenschaft (DAO)
+# <a name="recordsetlockedits-property-dao"></a>Recordset.LockEdits-Eigenschaft (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -28,7 +28,7 @@ Legt einen Wert fest, der den Typ der Sperreangibt, die während der Bearbeitung
 
 *Ausdruck* . LockEdits
 
-*Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 
@@ -47,12 +47,12 @@ Die Einstellung oder der Rückgabewert gibt den Sperrentyp an, wie in der folgen
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>True</p></td>
+<td><p>Richtig</p></td>
 <td><p>Standardwert. Eine pessimistische Sperre wird verwendet. Die Seite mit dem aktuell bearbeiteten Datensatz wird gesperrt, sobald Sie die Edit-Methode aufrufen.</p></td>
 </tr>
 <tr class="even">
 <td><p>False</p></td>
-<td><p>Für die Bearbeitung wird die optimistische Sperre verwendet. Die Seite mit dem Datensatz wird erst gesperrt, wenn die Update-Methode ausgeführt wird.</p></td>
+<td><p>Für die Bearbeitung wird die optimistische Sperre verwendet. Die Seite, die den Datensatz enthält, wird erst gesperrt, wenn die Update-Methode ausgeführt wird.</p></td>
 </tr>
 </tbody>
 </table>
@@ -67,7 +67,7 @@ Wenn Sie für die **LockEdits**-Eigenschaft den Wert **False** festlegen und zu 
 Wenn Sie ODBC-Datenquellen verwenden, die mit der Microsoft Access-Datenbank-Engine verbunden sind, ist für die **LockEdits**-Eigenschaft immer **False** bzw. die optimistische Sperre festgelegt. Die Microsoft Access-Datenbank-Engine hat keine Kontrolle über die von externen Datenbankservern verwendeten Sperrmechanismen.
 
 > [!NOTE]
-> Sie können den Wert von **LockEdits** beim ersten Öffnen des Recordset- **Objekts** durch Festlegen des LockEdits-Arguments **[](connection-openrecordset-method-dao.md)** der OpenRecordset-Methode voreinstellen. Wenn Sie das Argument LockEdits **** auf dbpessimistisch festlegen, wird die **LockEdits** -Eigenschaft auf **true**festgelegt, und durch Festlegen von LockEdits auf einen anderen Wert wird die **LockEdits** -Eigenschaft auf **false**festgelegt.
+> Sie können den Wert von **LockEdits** voreinstellen, wenn Sie das **Recordset** zum ersten Mal öffnen, indem Sie das lockedits-Argument der **[OpenRecordset-Methode](connection-openrecordset-method-dao.md)** festlegen. Durch Festlegen des Lockedits-Arguments auf **"dbPessimistic"** wird die **LockEdits-Eigenschaft** auf **"True"** festgelegt, und durch Festlegen von Lockedits auf einen anderen Wert wird die **LockEdits-Eigenschaft** auf **"False"** festgelegt.
 
 ## <a name="example"></a>Beispiel
 

@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff192855(v=office.15)
 ms:contentKeyID: 48544403
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 5b3afc134636d5621f38ece4530be5312e42bc74
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 5e3577692f757483c141abf64cc934dfcf5bcec9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32302982"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617762"
 ---
 # <a name="querydef-members-dao"></a>QueryDef-Elemente (DAO)
 
@@ -36,16 +36,16 @@ Ein QueryDef -Objekt ist eine gespeicherte Definition einer Abfrage in einer Dat
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong><a href="querydef-cancel-method-dao.md">Abbrechen</a></strong></p></td>
-<td><p><strong>Hinweis</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
+<td><p><strong><a href="querydef-cancel-method-dao.md">Cancel</a></strong></p></td>
+<td><p><strong>HINWEIS</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
 <p>Die Ausführung eines ausstehenden asynchronen Methodenaufrufs wird abgebrochen (gilt nur für ODBCDirect-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="querydef-close-method-dao.md">Schließen Sie</a></strong></p></td>
+<td><p><strong><a href="querydef-close-method-dao.md">Close</a></strong></p></td>
 <td><p>Schließt ein geöffnetes <strong>QueryDef</strong>-Objekt.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong><a href="querydef-createproperty-method-dao.md">CreateProperty</a></strong></p></td>
+<td><p><strong><a href="querydef-createproperty-method-dao.md">Createproperty</a></strong></p></td>
 <td><p>Erstellt ein neues, benutzerdefiniertes <strong><a href="property-object-dao.md">Property</a></strong> -Objekt (gilt nur für Microsoft Access-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="even">
@@ -54,7 +54,7 @@ Ein QueryDef -Objekt ist eine gespeicherte Definition einer Abfrage in einer Dat
 </tr>
 <tr class="odd">
 <td><p><strong><a href="querydef-openrecordset-method-dao.md">OpenRecordset</a></strong></p></td>
-<td><p>Erstellt ein neues <strong><a href="recordset-object-dao.md">Recordset</a></strong> -Objekt und fügt es an die <strong>Recordsets</strong>-Auflistung an.</p></td>
+<td><p>Erstellt ein neues <strong><a href="recordset-object-dao.md">Recordset</a></strong>-Objekt und fügt es an die <strong>Recordsets</strong>-Auflistung an.</p></td>
 </tr>
 </tbody>
 </table>
@@ -76,10 +76,10 @@ Ein QueryDef -Objekt ist eine gespeicherte Definition einer Abfrage in einer Dat
 <tbody>
 <tr class="odd">
 <td><p><strong><a href="querydef-cachesize-property-dao.md">CacheSize</a></strong></p></td>
-<td><p>Mit dieser Eigenschaft wird die Anzahl von Datensätzen, die aus einer ODBC-Datenquelle abgerufen und lokal gespeichert werden, festgelegt oder zurückgegeben. <strong>Long</strong>-Wert mit Lese-/Schreibzugriff.</p></td>
+<td><p>Legt die Anzahl der von einer ODBC-Datenquelle abgefragten Datensätze fest, die lokal zwischengespeichert werden, oder gibt den betreffenden Wert zurück. <strong>Long</strong>-Wert mit Lese-/Schreibzugriff.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="querydef-connect-property-dao.md">Connect</a></strong></p></td>
+<td><p><strong><a href="querydef-connect-property-dao.md">Verbinden</a></strong></p></td>
 <td><p>Legt einen Wert fest, der Informationen über die Quelle der in einer Pass-Through-Abfrage verwendeten Datenbank bereitstellt, oder gibt den betreffenden Wert zurück. Schreibgeschützter <strong>String</strong>-Wert.</p></td>
 </tr>
 <tr class="odd">
@@ -92,7 +92,7 @@ Ein QueryDef -Objekt ist eine gespeicherte Definition einer Abfrage in einer Dat
 </tr>
 <tr class="odd">
 <td><p><strong><a href="querydef-lastupdated-property-dao.md">LastUpdated</a></strong></p></td>
-<td><p>Gibt das Datum und die Uhrzeit der letzten Änderung eines Objekts zurück. Read-only <strong>Variant</strong>.</p></td>
+<td><p>Gibt das Datum und die Uhrzeit der letzten Änderung eines Objekts zurück. Schreibgeschützter <strong>Variant</strong>-Wert.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="querydef-maxrecords-property-dao.md">MaxRecords</a></strong></p></td>
@@ -111,12 +111,12 @@ Ein QueryDef -Objekt ist eine gespeicherte Definition einer Abfrage in einer Dat
 <td><p>Gibt eine <strong><a href="parameters-collection-dao.md">Parameters</a></strong> -Auflistung zurück, die alle <strong><a href="parameter-object-dao.md">Parameter</a></strong> -Objekte des angegebenen <strong>QueryDef</strong>-Objekts enthält. Schreibgeschützt.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="querydef-prepare-property-dao.md">Vorbereitung</a></strong></p></td>
-<td><p><strong>Hinweis</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
+<td><p><strong><a href="querydef-prepare-property-dao.md">Vorbereiten</a></strong></p></td>
+<td><p><strong>HINWEIS</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
 <p>Legt einen Wert fest, der angibt, ob die Abfrage auf dem Server als temporäre gespeicherte Prozedur mithilfe der ODBC-API-Funktion <strong>SQLPrepare</strong> vor der Ausführung vorbereitet werden soll oder nur mithilfe der ODBC-API-Funktion <strong>SQLExecDirect</strong> ausgeführt werden soll, oder gibt den betreffenden Wert zurück (nur ODBCDirect-Arbeitsbereiche). <strong><a href="querydefstateenum-enumeration-dao.md">QueryDefStateEnum</a></strong> -Wert mit Lese-/Schreibzugriff.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong><a href="querydef-properties-property-dao.md">Eigenschaften</a></strong></p></td>
+<td><p><strong><a href="querydef-properties-property-dao.md">Properties</a></strong></p></td>
 <td><p>Gibt die <strong><a href="properties-collection-dao.md">Properties</a></strong> -Auflistung des angegebenen Objekts zurück. Schreibgeschützt.</p></td>
 </tr>
 <tr class="even">
@@ -124,21 +124,21 @@ Ein QueryDef -Objekt ist eine gespeicherte Definition einer Abfrage in einer Dat
 <td><p>Gibt die Anzahl der Datensätze zurück, die von der zuletzt aufgerufenen <strong><a href="querydef-execute-method-dao.md">Execute</a></strong> -Methode betroffen waren.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong><a href="querydef-returnsrecords-property-dao.md">ReturnsRecords</a></strong></p></td>
+<td><p><strong><a href="querydef-returnsrecords-property-dao.md">GibtRecords zurück</a></strong></p></td>
 <td><p>Gibt einen Wert zurück, der angibt, ob eine SQL Pass-Through-Abfrage an eine externe Datenbank Datensätze zurückgibt (nur Microsoft Access-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="querydef-sql-property-dao.md">SQL</a></strong></p></td>
-<td><p>Legt die SQL-Anweisung fest, die die Abfrage definiert, die von einem <strong><a href="querydef-object-dao.md">QueryDef</a></strong> -Objekt ausgeführt wird, oder gibt sie zurück.</p></td>
+<td><p>Legt die SQL-Anweisung fest, die die Abfrage definiert, die von einem <strong><a href="querydef-object-dao.md">QueryDef</a></strong>-Objekt ausgeführt wird, oder gibt sie zurück.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="querydef-stillexecuting-property-dao.md">StillExecuting</a></strong></p></td>
-<td><p><strong>Hinweis</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
+<td><p><strong>HINWEIS</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
 <p>Gibt an, ob ein asynchroner Vorgang (d. h. eine Methode, die mit der <a href="recordsetoptionenum-enumeration-dao.md">dbRunAsync</a>-Option aufgerufen wurde) abgeschlossen wurde (nur ODBCDirect-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="querydef-type-property-dao.md">Typ</a></strong></p></td>
-<td><p>Legt einen Wert fest, der den Funktions- oder Datentyp eines Objekts angibt, oder gibt diesen Wert zurück. Read-Only<strong>Integer</strong>.</p></td>
+<td><p>Legt einen Wert fest, der den Funktions- oder Datentyp eines Objekts angibt, oder gibt diesen Wert zurück. Read-only<strong>ganze Zahl</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="querydef-updatable-property-dao.md">Updatable</a></strong></p></td>

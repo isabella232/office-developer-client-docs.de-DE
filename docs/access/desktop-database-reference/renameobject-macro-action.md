@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm165893
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: ce16b86ea06e041d490d0c68917daf18bd80dbb6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: bafbde738154993f3fea0c4f2537a9807009b966
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306720"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617454"
 ---
 # <a name="renameobject-macro-action"></a>RenameObject-Makroaktion
 
@@ -25,7 +25,7 @@ ms.locfileid: "32306720"
 Zum Umbenennen eines angegebenen Datenbankobjekts können Sie die **UmbenennenObjekt** -Aktion verwenden.
 
 > [!NOTE]
-> [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist.
+> Diese Aktion ist nicht zulässig, wenn die Datenbank nicht vertrauenswürdig ist.
 
 ## <a name="setting"></a>Einstellung
 
@@ -45,7 +45,7 @@ Die **UmbenennenObjekt**-Aktion hat die folgenden Argumente.
 <tbody>
 <tr class="odd">
 <td><p><strong>Neuer Name</strong></p></td>
-<td><p>Ein neuer Name für das Database-Objekt. Geben Sie den Objektnamen im Feld <strong>neuer Name</strong> im Abschnitt <strong>Aktionsargumente</strong> des Bereichs Makro-Generator ein. Dies ist ein erforderliches Argument.</p></td>
+<td><p>Ein neuer Name für das Datenbankobjekt. Geben Sie den Objektnamen in das Feld <strong>"Neuer Name"</strong> im Abschnitt <strong>"Aktionsargumente"</strong> im Bereich "Makro-Generator" ein. Dies ist ein erforderliches Argument.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Objekttyp</strong></p></td>
@@ -53,7 +53,9 @@ Die **UmbenennenObjekt**-Aktion hat die folgenden Argumente.
 </tr>
 <tr class="odd">
 <td><p><strong>Alter Name</strong></p></td>
-<td><p>Der Name des Objekts, das Sie umbenennen möchten. Im Feld <strong>Alter Name</strong> werden alle Objekte in der Datenbank mit dem Typ angezeigt, der vom Argument <strong>Objekttyp</strong> ausgewählt wurde. Wenn Sie das Argument <strong>Objekttyp</strong> leer lassen, müssen Sie auch dieses Argument leer lassen.</p><p><strong>Hinweis</strong>: Wenn Sie ein Makro ausführen, das die <STRONG>Rename</STRONG> -Aktion in einer Bibliotheksdatenbank enthält, sucht Microsoft Access zunächst in der Bibliotheksdatenbank und dann in der aktuellen Datenbank nach dem Objekt mit diesem Namen.</p></td>
+<td><p>Der Name des Objekts, das Sie umbenennen möchten. Im Feld <strong>Alter Name</strong> werden alle Objekte in der Datenbank mit dem Typ angezeigt, der vom Argument <strong>Objekttyp</strong> ausgewählt wurde. Wenn Sie das Argument <strong>Objekttyp</strong> leer lassen, müssen Sie auch dieses Argument leer lassen. 
+
+</p><p><strong>HINWEIS:</strong>Wenn Sie ein Makro ausführen, das die <STRONG>Umbenennungsaktion</STRONG> in einer Bibliotheksdatenbank enthält, sucht Microsoft Access zuerst in der Bibliotheksdatenbank und dann in der aktuellen Datenbank nach dem Objekt mit diesem Namen.</p></td>
 </tr>
 </tbody>
 </table>

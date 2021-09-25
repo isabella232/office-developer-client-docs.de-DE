@@ -1,5 +1,5 @@
 ---
-title: Relation. Foreignable-Eigenschaft (DAO)
+title: Relation.ForeignTable-Eigenschaft (DAO)
 TOCTitle: ForeignTable Property
 ms:assetid: 3f896433-2962-1c7c-f5a2-4e030ba8d4a0
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192853(v=office.15)
@@ -10,26 +10,26 @@ f1_keywords:
 - dao360.chm1052989
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: fc7ee9b5bc832cc2a125024c592db2c7b13e72f7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 1b07593eb696a15cb37383ff81f03fbc1a35509a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307047"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617517"
 ---
-# <a name="relationforeigntable-property-dao"></a>Relation. Foreignable-Eigenschaft (DAO)
+# <a name="relationforeigntable-property-dao"></a>Relation.ForeignTable-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
 
-Gibt den Namen der Fremdtabelle in einer Beziehung zurück (nur Microsoft Access-Arbeitsbereiche). .
+Legt den Namen der Fremdtabelle in einer Beziehung fest oder gibt den Namen zurück (gilt nur für Microsoft Access-Arbeitsbereiche).
 
 ## <a name="syntax"></a>Syntax
 
 *Ausdruck* . ForeignTable
 
-*Ausdruck* Eine Variable, die ein **Relation** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Relation -Objekt** darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 

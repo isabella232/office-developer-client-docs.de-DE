@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPISession.OpenProfileSection
 api_type:
 - COM
 ms.assetid: e2757028-27e7-4fc0-9674-e8e30737ef1d
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 9d7c1693dfb22ae89afed8cbe1426c1e186f8b2d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 0ffa10ee6939ca46a5c6cab2c2d41e1facca5375
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439919"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59625518"
 ---
 # <a name="imapisessionopenprofilesection"></a>IMAPISession::OpenProfileSection
 
@@ -44,15 +44,15 @@ HRESULT OpenProfileSection(
     
  _lpInterface_
   
-> [in] Ein Zeiger auf die Schnittstellen-ID (Interface Identifier, IID), die die Schnittstelle darstellt, die für den Zugriff auf den Profilabschnitt verwendet werden soll. Durch Übergeben von NULL gibt  _der lppProfSect-Parameter_ einen Zeiger auf die Standardschnittstelle des Profilabschnitts zurück, **IProfSect**.
+> [in] Ein Zeiger auf den Schnittstellenbezeichner (IID), der die Schnittstelle darstellt, die für den Zugriff auf den Profilabschnitt verwendet werden soll. Wenn NULL übergeben wird, gibt der  _Parameter "lppProfSect"_ einen Zeiger auf die Standardschnittstelle des Profilabschnitts, **IProfSect,** zurück.
     
  _ulFlags_
   
-> [in] Eine Bitmaske mit Flags, die den Zugriff auf den Profilabschnitt steuert. Die folgenden Kennzeichen können festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die den Zugriff auf den Profilabschnitt steuert. Die folgenden Flags können festgelegt werden:
     
 MAPI_DEFERRED_ERRORS 
   
-> Ermöglicht **openProfileSection** die erfolgreiche Rückgabe, möglicherweise bevor der Profilabschnitt vollständig für den aufrufenden Client verfügbar ist. Wenn der Profilabschnitt nicht verfügbar ist, kann ein nachfolgender Aufruf einen Fehler verursachen. 
+> Ermöglicht **OpenProfileSection** die erfolgreiche Rückgabe, möglicherweise bevor der Profilabschnitt für den aufrufenden Client vollständig verfügbar ist. Wenn der Profilabschnitt nicht verfügbar ist, kann ein nachfolgender Aufruf einen Fehler verursachen. 
     
 MAPI_FORCE_ACCESS
   
@@ -60,7 +60,7 @@ MAPI_FORCE_ACCESS
     
 MAPI_MODIFY 
   
-> Fordert Lese-/Schreibberechtigungen an. Standardmäßig werden Profilabschnitte mit schreibgeschützter Berechtigung geöffnet, und Clients sollten nicht unter der Annahme funktionieren, dass Lese-/Schreibberechtigungen erteilt wurden. 
+> Fordert Lese-/Schreibberechtigung an. Standardmäßig werden Profilabschnitte mit schreibgeschützter Berechtigung geöffnet, und Clients sollten nicht unter der Annahme funktionieren, dass Lese-/Schreibberechtigung erteilt wurde. 
     
  _lppProfSect_
   
@@ -74,25 +74,25 @@ S_OK
     
 MAPI_E_NO_ACCESS 
   
-> Es wurde versucht, auf einen Profilabschnitt zu zugreifen, für den der Anrufer nicht über ausreichende Berechtigungen verfügt.
+> Es wurde versucht, auf einen Profilabschnitt zuzugreifen, für den der Aufrufer nicht über ausreichende Berechtigungen verfügt.
     
 MAPI_E_NOT_FOUND 
   
 > Der angeforderte Profilabschnitt ist nicht vorhanden.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISession::OpenProfileSection-Methode** öffnet einen Profilabschnitt oder ein Objekt, das die **IProfSect-Schnittstelle** unterstützt. Profilabschnitte werden zum Lesen von Informationen aus dem Sitzungsprofil und zum Schreiben von Informationen in das Sitzungsprofil verwendet. 
   
-Sie können **OpenProfileSection** nicht zum Öffnen von Profilabschnitten verwenden, die einzelne Dienstanbieter besitzen, es sei denn, Sie geben MAPI_FORCE_ACCESS  _ulFlags-Parameter_ an. 
+Sie können **OpenProfileSection** nicht verwenden, um Profilabschnitte zu öffnen, die einzelne Dienstanbieter besitzen, es sei denn, Sie geben MAPI_FORCE_ACCESS im  _ulFlags-Parameter_ an. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Mehrere Clients können einen Profilabschnitt mit schreibgeschützter Berechtigung öffnen, aber nur ein Client kann einen Profilabschnitt mit Lese-/Schreibberechtigung öffnen. Wenn ein anderer Client einen Profilabschnitt geöffnet hat, den Sie öffnen möchten, indem Sie **OpenProfileSection** mit dem MAPI_MODIFY-Flagsatz aufrufen, wird beim Aufruf ein Fehler ausgeführt, und MAPI_E_NO_ACCESS. 
+Mehrere Clients können einen Profilabschnitt mit schreibgeschützter Berechtigung öffnen, aber nur ein Client kann einen Profilabschnitt mit Lese-/Schreibberechtigung öffnen. Wenn ein anderer Client einen Profilabschnitt geöffnet hat, den Sie öffnen möchten, indem Sie **OpenProfileSection** mit dem MAPI_MODIFY Flag aufrufen, schlägt der Aufruf fehl und gibt MAPI_E_NO_ACCESS zurück. 
   
-Ein schreibgeschützter offener Vorgang schlägt fehl, wenn der Abschnitt zum Schreiben geöffnet ist. 
+Ein schreibgeschützter Öffnungsvorgang schlägt fehl, wenn der Abschnitt zum Schreiben geöffnet ist. 
   
-Sie können einen Profilabschnitt erstellen, indem **Sie OpenProfileSection** mit dem flag MAPI_MODIFY und einer nicht vorhandenen **MAPIUID-Struktur** im  _lpUID-Parameter_ aufrufen. Stellen Sie sicher, dass Sie MAPI_MODIFY. Wenn Sie  _lpUID_ so festlegen, dass sie auf eine nicht vorhandene **MAPIUID** zeigt und **OpenProfileSection** auf den Standardzugriffsmodus schreibgeschützt festgelegt ist, wird beim Aufruf ein Fehler MAPI_E_NOT_FOUND. 
+Sie können einen Profilabschnitt erstellen, indem Sie **OpenProfileSection** mit dem MAPI_MODIFY Flag und einer nicht vorhandenen **MAPIUID-Struktur** im  _lpUID-Parameter_ aufrufen. Achten Sie darauf, dass Sie MAPI_MODIFY angeben. Wenn Sie  _lpUID_ so festlegen, dass es auf eine nicht vorhandene **MAPIUID** verweist und **OpenProfileSection** so festgelegt ist, dass der Standardzugriffsmodus schreibgeschützt verwendet wird, schlägt der Aufruf mit MAPI_E_NOT_FOUND fehl. 
   
 ## <a name="see-also"></a>Siehe auch
 

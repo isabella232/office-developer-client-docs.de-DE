@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249647(v=office.15)
 ms:contentKeyID: 48546385
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 23e1cab32fee6103a046219a7cda8c90f02d9f79
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7ea95d40d10823de22b7496615a4fddb3e2860c5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288939"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593964"
 ---
 # <a name="microsoft-ole-db-provider-for-microsoft-active-directory-service"></a>Microsoft OLE DB Provider for Microsoft Active Directory Service
 
@@ -102,9 +102,9 @@ Eine vierteilige Befehlstextzeichenfolge wird durch den Anbieter in der folgende
 </tr>
 <tr class="even">
 <td><p><em>Scope</em></p></td>
-<td><p>Optional. Eine <strong>Zeichenfolge</strong>, dien den Bereich der Suche angibt. Kann eine der folgenden sein: Base – sucht nur nach dem Basisobjekt (Stamm der Suche).<br />
-OneLevel-sucht nur eine Ebene.<br />
-SubTree – Durchsuchen Sie die gesamte Unterstruktur.</p></td>
+<td><p>Optional. Eine <strong>Zeichenfolge</strong>, dien den Bereich der Suche angibt. Dies kann eine der folgenden Sein: Base - Nur das Basisobjekt (Stamm der Suche) durchsuchen.<br />
+OneLevel – Nur eine Ebene durchsuchen.<br />
+Unterstruktur – Durchsuchen Sie die gesamte Unterstruktur.</p></td>
 </tr>
 </tbody>
 </table>
@@ -156,12 +156,12 @@ Verfügbarkeit von ADO-Standardeigenschaften des **Recordset**-Objekts:
 <td><p>Lese-/Schreibzugriff</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="activeconnection-property-ado.md">ActiveConnection</a></p></td>
-<td><p>schreibgeschützt</p></td>
+<td><p><a href="activeconnection-property-ado.md">Activeconnection</a></p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="bof-eof-properties-ado.md">BOF</a></p></td>
-<td><p>schreibgeschützt</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="bookmark-property-ado.md">Bookmark</a></p></td>
@@ -176,7 +176,7 @@ Verfügbarkeit von ADO-Standardeigenschaften des **Recordset**-Objekts:
 <td><p>immer <strong>adUseServer</strong></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="cursortype-property-ado.md">CursorType</a></p></td>
+<td><p><a href="cursortype-property-ado.md">Cursortype</a></p></td>
 <td><p>immer <strong>adOpenStatic</strong></p></td>
 </tr>
 <tr class="odd">
@@ -185,7 +185,7 @@ Verfügbarkeit von ADO-Standardeigenschaften des **Recordset**-Objekts:
 </tr>
 <tr class="even">
 <td><p><a href="bof-eof-properties-ado.md">EOF</a></p></td>
-<td><p>schreibgeschützt</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="filter-property-ado.md">Filter</a></p></td>
@@ -205,7 +205,7 @@ Verfügbarkeit von ADO-Standardeigenschaften des **Recordset**-Objekts:
 </tr>
 <tr class="odd">
 <td><p><a href="pagecount-property-ado.md">PageCount</a></p></td>
-<td><p>schreibgeschützt</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="pagesize-property-ado.md">PageSize</a></p></td>
@@ -213,7 +213,7 @@ Verfügbarkeit von ADO-Standardeigenschaften des **Recordset**-Objekts:
 </tr>
 <tr class="odd">
 <td><p><a href="recordcount-property-ado.md">RecordCount</a></p></td>
-<td><p>schreibgeschützt</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="source-property-ado-recordset.md">Source</a></p></td>
@@ -221,11 +221,11 @@ Verfügbarkeit von ADO-Standardeigenschaften des **Recordset**-Objekts:
 </tr>
 <tr class="odd">
 <td><p><a href="state-property-ado.md">State</a></p></td>
-<td><p>schreibgeschützt</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="status-property-ado-recordset.md">Status</a></p></td>
-<td><p>schreibgeschützt</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 </tbody>
 </table>
@@ -266,11 +266,11 @@ Verfügbarkeit von ADO-Standardmethoden des **Recordset**-Objekts:
 <td><p>Ja</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="close-method-ado.md">Close</a></p></td>
+<td><p><a href="close-method-ado.md">Schließen</a></p></td>
 <td><p>Ja</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="delete-method-ado-recordset.md">Delete</a></p></td>
+<td><p><a href="delete-method-ado-recordset.md">Löschen</a></p></td>
 <td><p>Nein</p></td>
 </tr>
 <tr class="even">
@@ -302,7 +302,7 @@ Verfügbarkeit von ADO-Standardmethoden des **Recordset**-Objekts:
 <td><p>Ja</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="open-method-ado-recordset.md">Open</a></p></td>
+<td><p><a href="open-method-ado-recordset.md">Öffnen</a></p></td>
 <td><p>Ja</p></td>
 </tr>
 <tr class="even">

@@ -1,18 +1,18 @@
 ---
-title: Schreibgeschützten MemberTypeEnum (Access Desktop Database Reference)
+title: MemberTypeEnum (Access-Desktopdatenbankreferenz)
 TOCTitle: MemberTypeEnum
 ms:assetid: 3b6f9fff-fe54-b917-9404-927e3a627e0b
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249150(v=office.15)
 ms:contentKeyID: 48544286
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 82d507457d9242daa92cc0218c87bae4d82759a3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c1c6809ddc44c1de61afa064dba7603379bd95a6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289203"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593971"
 ---
 # <a name="membertypeenum"></a>MemberTypeEnum
 
@@ -38,7 +38,7 @@ Gibt die Einstellung für die [Type](type-property-ado-md.md)-Eigenschaft eines 
 <tbody>
 <tr class="odd">
 <td><p><strong>adMemberAll</strong></p></td>
-<td><p>4</p></td>
+<td><p>4 </p></td>
 <td><p>Gibt an, dass das <strong>Member</strong>-Objekt alle Elemente der Ebene darstellt.</p></td>
 </tr>
 <tr class="even">

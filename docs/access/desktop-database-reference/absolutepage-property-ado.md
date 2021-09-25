@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249881(v=office.15)
 ms:contentKeyID: 48547288
 ms.date: 10/17/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 6a0ad4caa6e31b6de39904016cd848e12690f72e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 15c4fe003acc3fbc76723c8d0dc271a75b5318d3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280684"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59569664"
 ---
 # <a name="absolutepage-property-ado"></a>AbsolutePage-Eigenschaft (ADO)
 
@@ -22,9 +22,9 @@ Gibt an, auf welcher Seite sich der aktuelle Datensatz befindet.
 
 ## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
 
-Legt einen **Long** -Wert zwischen 1 und der Anzahl von Seiten im [Recordset](recordset-object-ado.md) -Objekt ([PageCount](pagecount-property-ado.md)) fest oder gibt einen der [PositionEnum](positionenum.md) -Werte zurück.
+Legt fest oder gibt einen **Long -Wert** von 1 auf die Anzahl der Seiten im [Recordset](recordset-object-ado.md) -Objekt ([PageCount](pagecount-property-ado.md)), oder gibt einen der [PositionEnum](positionenum.md) -Werte zurück.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Mit dieser Eigenschaft kann die Nummer der Seite identifiziert werden, auf der sich der aktuelle Datensatz befindet. Sie verwendet die [PageSize](pagesize-property-ado.md)-Eigenschaft, um die Gesamtzahl von Rowsets des **Recordset** -Objekts logisch in Seitenblöcke aufzuteilen, die jeweils die Anzahl von Datensätzen gemäß **PageSize** enthalten (außer der letzten Seite, die weniger Datensätze haben kann). Die entsprechende Funktionalität muss vom Anbieter unterstützt werden, damit diese Eigenschaft verfügbar ist.
 

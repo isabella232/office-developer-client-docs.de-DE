@@ -1,20 +1,20 @@
 ---
-title: Relation. Attributes-Eigenschaft (DAO)
+title: Relation.Attributes-Eigenschaft (DAO)
 TOCTitle: Attributes Property
 ms:assetid: db19d2ad-5965-214c-211d-9a8eb9c3c522
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835337(v=office.15)
 ms:contentKeyID: 48548098
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 2dc6bd5ccc607854ab59de51bdb96d9ceebe1acf
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: ee475f4ca9833b26d296d104122e3971022a680b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309114"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593670"
 ---
-# <a name="relationattributes-property-dao"></a>Relation. Attributes-Eigenschaft (DAO)
+# <a name="relationattributes-property-dao"></a>Relation.Attributes-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -23,11 +23,11 @@ Legt einen Wert fest, der mindestens ein Merkmal eines **Relation**-Objekts angi
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Attribute
+*expression* .Attributes
 
-*Ausdruck* Eine Variable, die ein **Relation** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Relation -Objekt** darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Für ein Objekt, das noch nicht an eine Auflistung angehängt wurde, besteht Lese-/Schreibzugriff für diese Eigenschaft.
 

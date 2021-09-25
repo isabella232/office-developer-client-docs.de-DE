@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249683(v=office.15)
 ms:contentKeyID: 48546496
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: aa5dda3c8e2ee8251fc54f4ff3bc12be0aca5002
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 9cf664e1244df6eea74f447aded7b8a8fcf0350e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292244"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594244"
 ---
 # <a name="getpermissions-method-adox"></a>GetPermissions-Methode (ADOX)
 
@@ -22,7 +22,7 @@ Gibt die Berechtigungen einer Gruppe oder eines Benutzers für ein Objekt oder e
 
 ## <a name="syntax"></a>Syntax
 
-*ReturnValue* = *GroupOrUser*. GetPermissions (*Name*, *Objekttyp* \[, objecttypecode)**\]
+*ReturnValue*  =  *GroupOrUser*. GetPermissions(*Name*, *ObjectType* \[ ,*ObjectTypeId* \] )
 
 ## <a name="return-value"></a>Rückgabewert
 
@@ -34,5 +34,5 @@ Gibt einen **Long**-Wert zurück, der eine Bitmaske angibt, die die Berechtigung
 |:--------|:----------|
 |*Name* |Ein **Variant**-Wert, der den Namen des Objekts angibt, für das Berechtigungen festgelegt werden sollen. Legen Sie *Name* auf einen Nullwert fest, wenn Sie die Berechtigungen für den Objektcontainer abrufen möchten.|
 |*ObjectType* |Ein **Long** -Wert, der eine der [ObjectTypeEnum](objecttypeenum.md)-Konstanten sein kann, die den Typ des Objekts angibt, für das die Berechtigungen zurückgegeben werden sollen.|
-|*ObjectType* |Optional. Ein **Variant**-Wert, der die GUID für einen Anbieterobjekttyp angibt, der nicht durch die OLE DB-Spezifikation definiert ist. Dieser Parameter ist erforderlich, wenn *ObjectType* auf **adPermObjProviderSpecific** festgelegt ist.Andernfalls wird dieser Parameter nicht verwendet.|
+|*ObjectTypeId* |Optional. Ein **Variant**-Wert, der die GUID für einen Anbieterobjekttyp angibt, der nicht durch die OLE DB-Spezifikation definiert ist. Dieser Parameter ist erforderlich, wenn *ObjectType* auf **adPermObjProviderSpecific** festgelegt ist.Andernfalls wird dieser Parameter nicht verwendet.|
 

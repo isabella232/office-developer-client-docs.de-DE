@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249434(v=office.15)
 ms:contentKeyID: 48545506
 ms.date: 10/17/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: ab6600c6fd1794e860f432f41e4733690cc516af
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 63d0ccb88a946f5659abc138ef5ed7ea30f3db73
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280705"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59569678"
 ---
 # <a name="absolutepage-pagecount-and-pagesize-properties-example-jscript"></a>AbsolutePage-, PageCount- und PageSize-Eigenschaft (Beispiel) (JScript)
 
 **Gilt für**: Access 2013, Office 2013
 
-In diesem Beispiel werden mithilfe der Eigenschaften [AbsolutePage](absolutepage-property-ado.md), [PageCount](pagecount-property-ado.md) und [PageSize](pagesize-property-ado.md) Namen und Einstellungsdaten aus der ***Employees***-Tabelle angezeigt. Es werden jeweils fünf Datensätze dargestellt. Cut and paste the following code to Notepad or another text editor, and save it as **AbsolutePageJS.asp**.
+In diesem Beispiel werden die Eigenschaften [AbsolutePage](absolutepage-property-ado.md), [PageCount](pagecount-property-ado.md)und [PageSize](pagesize-property-ado.md) verwendet, um Namen und Einstellungsdaten aus der Tabelle ***Employees** _ anzuzeigen, wobei jeweils fünf Datensätze vorhanden sind. Schneiden Sie den folgenden Code aus, fügen Sie ihn in Editor oder einen anderen Text-Editor ein, und speichern Sie ihn unter _*AbsolutePageJS.asp**.
 
 ```javascript
 <!-- BeginAbsolutePageJS --> 

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidValidFlagStringProof
 api_type:
 - COM
 ms.assetid: e5a94968-7e84-4faf-8104-9ea36d35fa1a
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: dfe3b57c246e247eda365bed46af2e0f35f0e54b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 28f405493b919fb1e8a49a39575e0a75767a98be
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315386"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59604397"
 ---
 # <a name="pidlidvalidflagstringproof-canonical-property"></a>PidLidValidFlagStringProof (kanonische Eigenschaft)
 
@@ -25,21 +25,21 @@ ms.locfileid: "32315386"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Überprüft, ob der Wert der **eigenschaft dispidRequest** ([PidLidFlagRequest](pidlidflagrequest-canonical-property.md)) von einem Agent festgelegt wurde, der den Wert der **eigenschaft PR_MESSAGE_DELIVERY_TIME** ([PidTagMessageDeliveryTime](pidtagmessagedeliverytime-canonical-property.md)) kannte.
+Überprüft, ob der Wert der **dispidRequest** ([PidLidFlagRequest](pidlidflagrequest-canonical-property.md)) -Eigenschaft von einem Agent festgelegt wurde, der den Wert der **PR_MESSAGE_DELIVERY_TIME** ([PidTagMessageDeliveryTime](pidtagmessagedeliverytime-canonical-property.md)) -Eigenschaft erkannt hat.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidValidFlagStringProof  <br/> |
 |Eigenschaftensatz:  <br/> |PSETID_Common  <br/> |
-|Lange ID (LID):  <br/> |0x000085BF  <br/> |
+|Long ID (LID):  <br/> |0x000085BF  <br/> |
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
-|Bereich:  <br/> |Aufgabe  <br/> |
+|Bereich:  <br/> |Vorgang  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Bei objekten, die nicht gesendet werden können (empfangene E-Mails und  Nicht-E-Mail-Objekte), sollten Clients diesen Wert auf den Wert PR_MESSAGE_DELIVERY_TIME, wenn **dispidRequest geändert wird.**
+Bei nicht sendenden Objekten (empfangene E-Mails und Nicht-E-Mail-Objekte) sollten Clients diesen Wert auf den Wert **von PR_MESSAGE_DELIVERY_TIME** festlegen, wenn **sie dispidRequest** ändern.
   
-Da der Wert von **PR_MESSAGE_DELIVERY_TIME** vom Absender nicht vorhergesagt werden kann, wenn der Wert dieser Eigenschaft dem Wert von **PR_MESSAGE_DELIVERY_TIME** entspricht, ist es vernünftigerweise sicher, dass der Wert von **dispidRequest** nicht vom Absender der Nachricht stammt. Ein Client kann entscheiden, wie der Wert von **dispidRequest** dem Endbenutzer basierend auf dem Ergebnis dieses Vergleichs in Übereinstimmung mit der spezifischen Sicherheitsrichtlinie des Clients angezeigt wird. Wenn der Wert **von dispidRequest** aufgrund des Vorhandenseins eines Werts für **dispidFlagStringEnum** ([PidLidFlagString)](pidlidflagstring-canonical-property.md)ignoriert wird, muss diese Eigenschaft ignoriert werden.
+Da der Wert von **PR_MESSAGE_DELIVERY_TIME** vom Absender nicht prognostiziert werden kann und der Wert dieser Eigenschaft dem Wert von **PR_MESSAGE_DELIVERY_TIME** entspricht, ist es einigermaßen sicher, dass der Wert von **dispidRequest** nicht vom Absender der Nachricht stammt. Ein Client kann entscheiden, wie der Wert von **dispidRequest** für den Endbenutzer basierend auf dem Ergebnis dieses Vergleichs in Übereinstimmung mit der spezifischen Sicherheitsrichtlinie des Clients dargestellt werden soll. Wenn der Wert von **dispidRequest** aufgrund des Vorhandenseins eines Werts für **dispidFlagStringEnum** ([PidLidFlagString](pidlidflagstring-canonical-property.md)) ignoriert wird, muss diese Eigenschaft ignoriert werden.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -47,7 +47,7 @@ Da der Wert von **PR_MESSAGE_DELIVERY_TIME** vom Absender nicht vorhergesagt wer
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Stellt Eigenschaftensatzdefinitionen und Verweise auf verwandte Exchange Server zur Verfügung.
+> Stellt Eigenschaftssatzdefinitionen und Verweise auf verwandte Exchange Server Protokollspezifikationen bereit.
     
 [[MS-OXOFLAG]](https://msdn.microsoft.com/library/f1e50be4-ed30-4c2a-b5cb-8ff3aaaf9b91%28Office.15%29.aspx)
   
@@ -57,7 +57,7 @@ Da der Wert von **PR_MESSAGE_DELIVERY_TIME** vom Absender nicht vorhergesagt wer
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -68,9 +68,9 @@ Mapidefs.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff194787(v=office.15)
 ms:contentKeyID: 48545170
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: b2e334dcad84d2a9c3441e76e6552c1cb04f8552
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: dd6930940cf33a361285ca6a727c7d1d3919e5a2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300532"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593733"
 ---
 # <a name="recordsetfindfirst-method-dao"></a>Recordset.FindFirst-Methode (DAO)
 
@@ -115,11 +115,11 @@ Auch wenn Sie nicht mit der US-Version des Microsoft Access-Datenbankmoduls arbe
         & Format(mydate, 'm-d-yy' ) & "#" 
 ```
 
-Wenn criteria aus einer Zeichenfolge besteht, die mit einem nicht ganzzahligen Wert verkettet ist, und die Systemparameter ein nicht für die USA gültiges Dezimalzeichen, z. B. ein Komma, angeben (Beispiel: strSQL = "PRICE \> " & lngPrice und lngPrice = 125,50), tritt beim Versuch, die Methode aufzurufen, ein Fehler auf. Der Grund ist, dass die Zahl bei der Verkettung mithilfe des Standarddezimalzeichens des Systems in eine Zeichenfolge umgewandelt wird und Microsoft Access SQL nur für die USA gültige Dezimalzeichen akzeptiert.
+Wenn die Kriterien aus einer Zeichenfolge bestehen, die mit einem nicht ganzzahligen Wert verkettet ist, und die Systemparameter ein nicht für die USA gültiges Dezimalzeichen, z. B. ein Komma, angeben (Beispiel: strSQL = "PRICE \> " & lngPrice und lngPrice = 125,50), tritt beim Versuch, die Methode aufzurufen, ein Fehler auf. Der Grund ist, dass die Zahl bei der Verkettung mithilfe des Standarddezimalzeichens des Systems in eine Zeichenfolge umgewandelt wird und Microsoft Access SQL nur für die USA gültige Dezimalzeichen akzeptiert.
 
 
 > [!NOTE]
-> - Um die bestmögliche Leistung zu erzielen, sollten die *Kriterien* in der Form "*Feld * = * Wert*" vorliegen, wobei *Feld* ein indiziertes Feld in der zugrunde liegenden Basistabelle ist, oder in der Form "*Feld* LIKE *Präfix*", wobei *Feld* ein indiziertes Feld in der zugrunde liegenden Basistabelle und *Präfix* eine Präfixsuchzeichenfolge ist (z. B. "ART*").
+> - Um die bestmögliche Leistung zu erzielen, sollten die *Kriterien* in der Form "*Feld* = *Wert*" vorliegen, wobei *Feld* ein indiziertes Feld in der zugrunde liegenden Basistabelle ist, oder in der Form "*Feld* LIKE *Präfix*", wobei *Feld* ein indiziertes Feld in der zugrunde liegenden Basistabelle und *Präfix* eine Präfixsuchzeichenfolge ist (z. B. "ART*").
 > 
 > - Allgemein stellt die **Seek**-Methode für ähnliche Suchtypen eine bessere Leistung als die **Find**-Methoden bereit. Dabei wird angenommen, dass nur Tabellentyp-**Recordset**-Objekte Ihre Anforderungen erfüllen können.
 

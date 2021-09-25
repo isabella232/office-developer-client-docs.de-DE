@@ -6,31 +6,31 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm680
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b82feade-5793-8a6e-3ff4-69a4cbdd2cf9
-description: 'Stellt die x-Koordinate des Drehpunkts der Form (Drehungsmitte) im Verhältnis zum Ursprung der Form dar. Die Standardformel zum Bestimmen von LocPinX ist:'
-ms.openlocfilehash: 2eb5c328eed3c97652173670c426b83b8c358833
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: 'Stellt die X-Koordinate des Drehbezugs (Drehmittelpunkt) des Shapes im Verhältnis zum Ursprung des Shapes dar. Die Standardformel für die Ermittlung von LocPinX lautet:'
+ms.openlocfilehash: 0ff3815f474ce9ffaec543855092c197aa51a6a9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439240"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59582512"
 ---
 # <a name="locpinx-cell-shape-transform-section"></a>Zelle "LocPinX" (Abschnitt "Shape Transform")
 
-Stellt  die x-Koordinate des Drehpunkts der Form (Drehungsmitte) im Verhältnis zum Ursprung der Form dar. Die Standardformel zum Bestimmen von LocPinX ist: 
+Stellt  die X-Koordinate des Drehbezugs (Drehmittelpunkt) des Shapes im Verhältnis zum Ursprung des Shapes dar. Die Standardformel für die Ermittlung von LocPinX lautet: 
   
 = Breite \* 0,5
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Um einen Verweis auf die LocPinX-Zelle anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Verwenden Sie Folgendes, um einen Verweis auf die Zelle "LocPinX" anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | LocPinX  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die LocPinX-Zelle nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle "LocPinX" anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

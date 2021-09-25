@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249792(v=office.15)
 ms:contentKeyID: 48546962
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: c3ad91f0a288b9908a5af5f92d7bfca3b23cdfe9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 1ea6d8a4ba0bb4a2b9a5a61e8241e853408b6263
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292069"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594209"
 ---
 # <a name="handler-property-rds"></a>Handler-Eigenschaft (RDS)
 
@@ -29,9 +29,9 @@ Gibt den Name eines serverbasierten Anpassungsprogramms (Handlers) an, das die F
 |Parameter|Beschreibung|
 |:--------|:----------|
 |*DataControl* |Eine Objektvariable, die ein [RDS.DataControl](datacontrol-object-rds.md)-Objekt darstellt.|
-|*String* |Ein **String** -Wert, der den Namen des Handlers und alle Parameter enthält, die alle durch Kommata getrennt sind (beispielsweise "Handlername, Parm1, Parameter2,..., parm *N*").|
+|*String* |Ein **String -Wert,** der den Namen des Handlers und alle Parameter enthält, die alle durch Kommas getrennt sind (z. B. "handlerName,parm1,parm2,...,parm *N*" ).|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft unterstützt die Anpassung. Bei dieser Funktionalität muss die [CursorLocation](cursorlocation-property-ado.md)-Eigenschaft auf **adUseClient** festgelegt werden.
 
@@ -39,5 +39,5 @@ Der Name des Handlers und ggf. seiner Parameter werden durch Kommas (",") vonein
 
 Der Name des Standardhandlers lautet **MSDFMAP.Handler**, und sein Standardparameter ist eine Anpassungsdatei mit dem Namen **MSDFMAP.INI**. Rufen Sie mit dieser Eigenschaft alternative Anpassungsdateien auf, die vom Serveradministrator erstellt wurden.
 
-Die Alternative zum Festlegen der **Handler** -Eigenschaft besteht darin, einen Handler und Parameter in der [ConnectionString](connectionstring-property-ado.md) -Eigenschaft anzugeben. Das heißt, "**Handler = * * * Handlername, Parm1, parameter2,...;*".
+Statt die **Handler**-Eigenschaft festzulegen, können Sie einen Handler und Parameter in der [ConnectionString](connectionstring-property-ado.md)-Eigenschaft angeben. Beispiel: "**Handler=**_handlerName,parm1,parm2,...;_".
 

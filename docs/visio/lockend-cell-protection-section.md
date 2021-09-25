@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm620
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e9742142-4d34-1ba9-480e-d1ecff4fc7cd
 description: Sperrt den Endpunkt (EndeX, EndeY) eines 1D-Shapes an einer bestimmten Position.
-ms.openlocfilehash: d9fe0372c44fe3b029a4d06056c8d3871c3f91e8
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 35831023adb58b75be973bd6e54c5985eae01c0c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33425582"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603613"
 ---
 # <a name="lockend-cell-protection-section"></a>Zelle "LockEnd" (Abschnitt "Protection")
 
@@ -25,15 +25,15 @@ Sperrt den Endpunkt (EndeX, EndeY) eines 1D-Shapes an einer bestimmten Position.
 | TRUE  <br/> | Endpunkt ist gesperrt.  <br/> |
 | FALSE  <br/> | Endpunkt ist nicht gesperrt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Verwenden Sie zum Erhalten eines Verweises auf die Zelle LockEnd anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft:** 
+Um einen Verweis auf die Zelle LockEnd anhand des Namens einer anderen Formel oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | LockEnd  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die LockEnd-Zelle nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle LockEnd anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

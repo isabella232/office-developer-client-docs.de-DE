@@ -1,25 +1,25 @@
 ---
-title: PidLidBusinessCardCardPicture (kanonische Eigenschaft)
+title: Kanonische PidLidBusinessCardCardPicture-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidBusinessCardCardPicture
 api_type:
 - COM
 ms.assetid: 2c7af147-f7eb-41ef-8403-93584a2041ba
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: fd1ad923acca5a75d06e6b15ae7ae7411edefb92
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 8f9728986ef5b083091367d33a93013374e1b8a9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32342007"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59591864"
 ---
-# <a name="pidlidbusinesscardcardpicture-canonical-property"></a>PidLidBusinessCardCardPicture (kanonische Eigenschaft)
+# <a name="pidlidbusinesscardcardpicture-canonical-property"></a>Kanonische PidLidBusinessCardCardPicture-Eigenschaft
 
   
   
@@ -31,13 +31,13 @@ Enthält das Bild, das auf einer Visitenkarte verwendet werden soll.
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidBCCardPicture  <br/> |
 |Eigenschaftensatz:  <br/> |PSETID_Address  <br/> |
-|Lange ID (LID):  <br/> |0x00008041  <br/> |
+|Long ID (LID):  <br/> |0x00008041  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Der Wert dieser Eigenschaft muss entweder eine portable Netzwerkgrafik (PNG) oder ein JPEG-Stream sein. Diese Eigenschaft sollte in Verbindung mit der **dispidBCDisplayDefinition** ([PidLidBusinessCardDisplayDefinition](pidlidbusinesscarddisplaydefinition-canonical-property.md)) -Eigenschaft wie folgt verwendet werden: **dispidBCCardPicture** sollte nicht in einem Kontakt vorhanden sein, wenn **dispidBCDisplayDefinition** nicht vorhanden ist. Diese Eigenschaft sollte auch nicht vorhanden sein, wenn die Daten in **dispidBCCardPicture** kein Kartenbild erfordern. 
+Der Wert dieser Eigenschaft muss entweder ein PNG-Stream (Portable Network Graphics) oder ein JPEG-Stream sein. Diese Eigenschaft sollte in Verbindung mit der **dispidBCDisplayDefinition** ([PidLidBusinessCardDisplayDefinition](pidlidbusinesscarddisplaydefinition-canonical-property.md)) -Eigenschaft wie folgt verwendet werden: **dispidBCCardPicture** sollte für einen Kontakt nicht vorhanden sein, wenn **dispidBCDisplayDefinition** nicht vorhanden ist. Diese Eigenschaft sollte auch nicht vorhanden sein, wenn für die Daten in **dispidBCCardPicture** kein Kartenbild erforderlich ist. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -45,7 +45,7 @@ Der Wert dieser Eigenschaft muss entweder eine portable Netzwerkgrafik (PNG) ode
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Stellt Eigenschaftensatzdefinitionen und Verweise auf verwandte Exchange Server zur Verfügung.
+> Stellt Eigenschaftssatzdefinitionen und Verweise auf verwandte Exchange Server Protokollspezifikationen bereit.
     
 [[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
@@ -55,7 +55,7 @@ Der Wert dieser Eigenschaft muss entweder eine portable Netzwerkgrafik (PNG) ode
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -63,9 +63,9 @@ Mapidefs.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

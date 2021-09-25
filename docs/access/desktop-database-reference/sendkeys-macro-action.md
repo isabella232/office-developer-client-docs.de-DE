@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm183441
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: f8c45cdf0d9cf588f61d1b51b728a8a15f6d7e12
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: dda5d6fa69e60c84a76a62a091d429ca27ebfb1c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308750"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593600"
 ---
 # <a name="sendkeys-macro-action"></a>SendKeys-Makroaktion
 
@@ -38,7 +38,7 @@ ms.locfileid: "32308750"
 Sie können die **Tastaturbefehle** -Aktion zum direkten Senden von Tastaturbefehlen an Microsoft Access oder an eine aktive Windows-basierte Anwendung verwenden.
 
 > [!NOTE]
-> [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. 
+> Diese Aktion ist nicht zulässig, wenn die Datenbank nicht vertrauenswürdig ist. 
 
 ## <a name="setting"></a>Einstellung
 
@@ -57,8 +57,8 @@ Die **Tastaturbefehle**-Aktion verwendet die folgenden Argumente.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Anschläge</strong></p></td>
-<td><p>Die Tastenkombinationen, die der Zugriff oder die Anwendung verarbeiten soll. Geben Sie die Tastenkombinationen im Feld <strong>Tastenkombinationen</strong> im Abschnitt <strong>Aktionsargumente</strong> des Bereichs Makro-Generator ein. Sie können bis zu 255 Zeichen eingeben. Dies ist ein erforderliches Argument.</p></td>
+<td><p><strong>Tastenanschläge</strong></p></td>
+<td><p>Die Tastenanschläge, die Access oder die Anwendung verarbeiten soll. Geben Sie die Tastenanschläge im Feld <strong>"Tastaturbefehle"</strong> im Abschnitt <strong>"Aktionsargumente"</strong> des Makro-Generator-Bereichs ein. Sie können bis zu 255 Zeichen eingeben. Dies ist ein erforderliches Argument.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Wait</strong></p></td>
@@ -68,7 +68,7 @@ Die **Tastaturbefehle**-Aktion verwendet die folgenden Argumente.
 </table>
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Access verarbeitet die Tastaturbefehle, die von der **Tastaturbefehle**-Aktion empfangen werden, als ob Sie diese direkt in einem Access-Fenster eingegeben hätten.
 

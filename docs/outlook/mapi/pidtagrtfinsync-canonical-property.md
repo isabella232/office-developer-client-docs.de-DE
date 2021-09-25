@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagRtfInSync
 api_type:
 - COM
 ms.assetid: 443cc68e-7898-4285-a606-f916fcd18554
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ed038faf44f350b041191373cf573e7e185337c7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 72a94f6063dcc1abd1ca5c17d8bc048baad7953e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357876"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59604215"
 ---
 # <a name="pidtagrtfinsync-canonical-property"></a>PidTagRtfInSync (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32357876"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält **TRUE, wenn die PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) denselben Textinhalt wie die **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) -Eigenschaft für diese Nachricht hat.
+Contains TRUE if the **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) property has the same text content as the **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) property for this message.
   
 |||
 |:-----|:-----|
@@ -34,17 +34,17 @@ Enthält **TRUE, wenn die PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfco
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |E-Mails  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Der Wert TRUE bedeutet, dass die **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) -Eigenschaft, die Nur-Text-Version dieser Nachricht und die **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) -Eigenschaft, die Rich Text Format (RTF)-Version, mit Ausnahme von Leerzeichen in **PR_BODY** und Formatierung in **PR_RTF_COMPRESSED identisch sind.** Der Text in den beiden Versionen besteht aus denselben Zeichen in derselben Sequenz.
+Der Wert TRUE bedeutet, dass die **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) -Eigenschaft, die Nur-Text-Version dieser Nachricht und die **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) -Eigenschaft, die RTF-Version (Rich Text Format) identisch sind, mit Ausnahme von Leerzeichen in **PR_BODY** und Formatierung in **PR_RTF_COMPRESSED**. Der Text in den beiden Versionen besteht aus denselben Zeichen in derselben Sequenz.
   
-Der Wert FALSE bedeutet, dass die beiden Versionen nicht für Textinhalte synchronisiert werden, sondern von der [RTFSync-Funktion synchronisiert werden](rtfsync.md) können. Eine Version wurde geändert, die andere version nicht. 
+Der Wert FALSE bedeutet, dass die beiden Versionen nicht für Textinhalte synchronisiert werden, sondern von der [RTFSync-Funktion](rtfsync.md) synchronisiert werden können. Eine Version wurde geändert, die andere nicht. 
   
-Kein Wert bedeutet, dass die beiden Versionen, sofern vorhanden oder jemals vorhanden, nicht synchronisiert werden können. Eine Version wurde so radikal gelöscht oder geändert, dass eine Synchronisierung nicht mehr möglich ist.
+Kein Wert bedeutet, dass die beiden Versionen nicht synchronisiert werden können, wenn beide versionen vorhanden sind oder jemals vorhanden sind. Eine Version wurde gelöscht oder so stark geändert, dass eine Synchronisierung nicht mehr möglich ist.
   
-Eine Clientanwendung, die **PR_RTF_COMPRESSED** geändert hat, sollte in dieser Eigenschaft den Wert FALSE festlegen, um die Synchronisierung zu erzwingen. RTF-benachrichtigungsspeicher sollten die Synchronisierung mithilfe von **RTFSync** während eines [IMAPIProp::SaveChanges-Aufrufs](imapiprop-savechanges.md) ausführen. RTF- aware clients should check the setting of **PR_RTF_IN_SYNC** before reading **PR_RTF_COMPRESSED**, and call **RTFSync** first if necessary. 
+Eine Clientanwendung, die **PR_RTF_COMPRESSED** geändert hat, sollte in dieser Eigenschaft den Wert FALSE festlegen, um die Synchronisierung zu erzwingen. RTF-fähige Nachrichtenspeicher sollten die Synchronisierung mit **RTFSync** während eines [IMAPIProp::SaveChanges-Aufrufs](imapiprop-savechanges.md) durchführen. RTF-fähige Clients sollten die Einstellung von **PR_RTF_IN_SYNC** überprüfen, bevor **sie PR_RTF_COMPRESSED** lesen, und **RTFSync** bei Bedarf zuerst aufrufen. 
   
-Wenn **PR_BODY** änderungen an einem anderen Leerzeichen als dem Leerzeichen vorgenommen haben, muss der Nachrichtenspeicher PR_RTF_IN_SYNC **löschen,** um die Synchronisierung zu beenden. 
+Wenn **PR_BODY** Änderungen an anderen Elementen als dem Leerzeichen vorgenommen hat, muss der Nachrichtenspeicher **PR_RTF_IN_SYNC** löschen, um die Synchronisierung zu beenden. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -52,7 +52,7 @@ Wenn **PR_BODY** änderungen an einem anderen Leerzeichen als dem Leerzeichen vo
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
@@ -62,11 +62,11 @@ Wenn **PR_BODY** änderungen an einem anderen Leerzeichen als dem Leerzeichen vo
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -74,9 +74,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

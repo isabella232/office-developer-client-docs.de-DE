@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm675
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fef022ea-38ab-2b66-60c8-b94a6b0bdfbf
 description: Sperrt die Breite des Shapes, sodass sich diese nicht ändert, wenn die Größe des Shapes geändert wird.
-ms.openlocfilehash: 84c89b5f264c00d6fe5f95cb27eae74b91b88dc3
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 5e3b05fb7cda925c5d1c4e2942c665d55190cc7d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439807"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59582561"
 ---
 # <a name="lockwidth-cell-protection-section"></a>Zelle "LockWidth" (Abschnitt "Protection")
 
@@ -25,15 +25,15 @@ Sperrt die Breite des Shapes, sodass sich diese nicht ändert, wenn die Größe 
 | TRUE  <br/> | Breite ist gesperrt.  <br/> |
 | FALSE  <br/> | Breite ist nicht gesperrt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Um einen Verweis auf die Zelle LockWidth anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Verwenden Sie Folgendes, um einen Verweis auf die Zelle LockWidth anhand des Namens einer anderen Formel oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | LockWidth  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle LockWidth nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle LockWidth anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

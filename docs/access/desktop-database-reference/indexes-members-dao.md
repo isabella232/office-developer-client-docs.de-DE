@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff196191(v=office.15)
 ms:contentKeyID: 48545807
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: ae3358c499e4f730758f9c3aaf420725cc6efd96
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 5fe1ac30ecb128dc490cf2e659a648694145a7e8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291538"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594097"
 ---
 # <a name="indexes-members-dao"></a>Indexes-Elemente (DAO)
 
@@ -36,11 +36,11 @@ Eine Indexes-Auflistung enthält alle gespeicherten Index-Objekte eines TableDef
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong><a href="indexes-append-method-dao.md">Append</a></strong></p></td>
+<td><p><strong><a href="indexes-append-method-dao.md">Anfügen</a></strong></p></td>
 <td><p>Fügt der <strong>Indexes</strong>-Auflistung ein neues <strong>Index</strong>-Objekt hinzu.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="indexes-delete-method-dao.md">Löschen</a></strong></p></td>
+<td><p><strong><a href="indexes-delete-method-dao.md">Delete</a></strong></p></td>
 <td><p>Löscht das angegebene <strong>Index</strong>-Objekt aus der <strong>Indexes</strong>-Auflistung.</p></td>
 </tr>
 <tr class="odd">

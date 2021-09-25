@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm96777
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 424b2b2cab9bc4272052a201350a0cc2ab297b8c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 143ece00d7adb9b4011bd2fe92db069d8beec0e5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32302814"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617706"
 ---
 # <a name="quitaccess-macro-action"></a>QuitAccess-Makroaktion
 
@@ -45,7 +45,7 @@ Die **BeendenAccess**-Aktion hat das folgende Argument.
 <tbody>
 <tr class="odd">
 <td><p><strong>Optionen</strong></p></td>
-<td><p>Gibt an, was mit nicht gespeicherten Objekten geschieht, wenn Sie den Zugriff beenden. Klicken Sie auf <strong>Aufforderung</strong> (um Dialogfelder anzuzeigen, die Fragen, ob jedes Objekt gespeichert werden soll), <strong>Speichern Sie alle</strong> (zum Speichern aller Objekte ohne Aufforderung durch Dialogfelder), oder <strong>Beenden</strong> Sie (ohne Speichern von Objekten) im Feld <strong>Optionen</strong> in der <strong>Aktion </strong>Abschnitt "Argumente" des Bereichs "Makro-Generator". Der Standardwert ist <strong>Save all</strong>.</p></td>
+<td><p>Gibt an, was mit nicht gespeicherten Objekten geschieht, wenn Sie Access beenden. Klicken Sie auf <strong>"Eingabeaufforderung"</strong> (um Dialogfelder anzuzeigen, in denen gefragt wird, ob die einzelnen Objekte gespeichert werden <strong></strong> sollen), <strong>"Alle speichern"</strong> (um alle Objekte ohne Eingabeaufforderung durch Dialogfelder zu speichern) oder <strong>"Beenden"</strong> (beenden, ohne Objekte zu speichern) im Abschnitt <strong>"Aktionsargumente"</strong> im Bereich "Makro-Generator". Der Standardwert ist <strong>"Alle speichern".</strong></p></td>
 </tr>
 </tbody>
 </table>
