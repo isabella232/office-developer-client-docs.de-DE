@@ -3,17 +3,17 @@ title: MAPI-Anwendungsentwicklung
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: efc84e9c-7b1a-438a-9308-9a7e454c59b0
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 3f22aa5169e885aa17293a0ba7e49a7d5fc34d62
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 322d94d22b0081808701267c6c0ee110e6c36806
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33417609"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59571493"
 ---
 # <a name="mapi-application-development"></a>MAPI-Anwendungsentwicklung
 
@@ -21,6 +21,6 @@ ms.locfileid: "33417609"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Die Themen in diesem Abschnitt gelten für Entwickler von Clientanwendungen und Dienstanbietern. Diese Themen sind in der Reihenfolge ihrer Wichtigkeit angeordnet. Das heißt, Themen, die für alle Programmierer wichtig sind, werden zuerst angezeigt, und Themen, die entweder von minimaler Bedeutung sind oder nicht für alle Programmierer gelten, werden zuletzt angezeigt.
+Die Themen in diesem Abschnitt gelten für Entwickler von Clientanwendungen und Dienstanbietern. Diese Themen sind nach Wichtigkeit sortiert. Das heißt, themen, die für alle Programmierer wichtig sind, werden zuerst angezeigt, und Themen, die entweder von minimaler Wichtigkeit sind oder nicht für alle Programmierer gelten, werden zuletzt angezeigt.
   
 

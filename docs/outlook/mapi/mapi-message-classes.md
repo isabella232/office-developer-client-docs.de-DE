@@ -3,17 +3,17 @@ title: MAPI-Nachrichtenklassen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 64ef2bbb-585c-4908-8ad4-a1c954057e9b
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: b2ab5d56c53216152a83ca207ff5ba1d53c9049d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: a6e78051b095643b49bc8386364904618105467a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33412086"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59579600"
 ---
 # <a name="mapi-message-classes"></a>MAPI-Nachrichtenklassen
 
@@ -23,21 +23,21 @@ ms.locfileid: "33412086"
   
 Jede Nachricht verfügt über eine Nachrichtenklasseneigenschaft, **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)), die den Typ, den Zweck oder den Inhalt der Nachricht identifiziert. **PR_MESSAGE_CLASS** ist eine erforderliche Eigenschaft für alle neuen Nachrichten. Die Klasse einer Nachricht bestimmt das Formular, mit dem die Nachricht dem Benutzer angezeigt wird, und den Ordner zum Platzieren eingehender Nachrichten. 
   
-Nachrichtenklassen sind zeichensensitive Zeichenfolgen, die ASCII-Zeichen 32 bis 127 enthalten und durch Punkte getrennt sind, aber sie können nicht mit einem Punkt enden. Jede Zeichenfolge stellt eine Ebene der Unterklasse dar, und es gibt keine Beschränkung für die Anzahl der zulässigen Ebenen. 
+Bei Nachrichtenklassen handelt es sich um Zeichenzeichenfolgen mit Groß-/Kleinschreibung, die ASCII-Zeichen 32 bis 127 enthalten und durch Punkte getrennt sind, jedoch nicht mit einem Punkt enden können. Jede Zeichenfolge stellt eine Unterklassenebene dar, und es gibt keine Beschränkung für die Anzahl der zulässigen Ebenen. 
   
-Die meisten Nachrichten, die Clientanwendungen senden  und empfangen, fallen beispielsweise in die IPM-Nachrichtenklasse, eine breite Kategorie, die alle zwischenmenschlichen Nachrichten beschreibt (d. h. Nachrichten, die von einem menschlichen Benutzer gelesen werden sollen, anstatt programmgesteuert von einem Computer). Nachrichtenspeicheranbieter beschreiben eine IPM-Nachricht genauer, indem sie eine **IPM-Unterklasse** erstellen. Die **IPM-Unterklasse** erbt die Eigenschaften der **IPM-Nachrichtenklasse.** Unterklassen der **IPM-Klasse** werden durch Verketten anderer Zeichenzeichenfolgen mit dem IPM-Bezeichner benannt, z. B. **IPM. Beachten** Sie, dass Sie eine Notiznachricht und **IPM beschreiben. Kontakt,** um eine Kontaktnachricht zu beschreiben. 
+Die meisten Nachrichten, die Clientanwendungen senden und empfangen, fallen beispielsweise in die **IPM-Nachrichtenklasse,** eine allgemeine Kategorie, die alle zwischenmenschlichen Nachrichten beschreibt (d. a. Nachrichten, die von einem menschlichen Benutzer gelesen werden sollen, anstatt programmgesteuert von einem Computer). Nachrichtenspeicheranbieter beschreiben eine IPM-Nachricht genauer, indem sie eine **IPM-Unterklasse** erstellen. Die **IPM-Unterklasse** erbt die Eigenschaften der **IPM-Nachrichtenklasse.** Unterklassen der **IPM-Klasse** werden benannt, indem andere Zeichenfolgen mit dem IPM-Bezeichner wie **IPM verkettet werden. Notieren Sie** sich eine Notiznachricht und **IPM. Kontakt,** um eine Kontaktnachricht zu beschreiben. 
   
-Um die Anzeige und Verwaltung von IPM-Nachrichten zu verarbeiten, können Clients ein Standardformular verwenden, das MAPI zur Verfügung stellt. Um die Anzeige und Verwaltung neuer Nachrichtenklassen zu verarbeiten, haben Sie als Clientanwendungsentwickler zwei Optionen:
+Zum Behandeln der Anzeige und Verwaltung von IPM-Nachrichten können Clients ein Standardformular verwenden, das mapi bereitstellt. Um die Anzeige und Verwaltung neuer Nachrichtenklassen zu verwalten, stehen Ihnen als Clientanwendungsentwickler zwei Optionen zur Verfügung:
   
-1. Sie können ein neues Formular mithilfe der von MAPI definierten Formularschnittstellen erstellen, die von einem Standardclient verwendet werden können.
+1. Sie können ein neues Formular mithilfe der MAPI-definierten Formularschnittstellen erstellen, die ein Standardclient verwenden kann.
     
-2. Sie können Einen eigenen Client schreiben, indem Sie eine vollständige, eigenständige Anwendung implementieren. 
+2. Sie können Ihren eigenen Client schreiben, indem Sie eine vollständige eigenständige Anwendung implementieren. 
     
-Clients sollten zwar die **PR_MESSAGE_CLASS** für jede ausgehende Nachricht auf eine Unterklasse von **IPM** oder **IPC** festlegen, aber der Anbieter des Nachrichtenspeichers ist letztendlich für das Festlegen verantwortlich. Wenn also ein Client eine Nachricht sendet, ohne seine Nachrichtenklasse festlegen zu müssen, legt der Nachrichtenspeicheranbieter sie auf den entsprechenden Standardwert für den entsprechenden Clienttyp fest. Die Standardnachrichtenklasse für zwischenpersönliche Messagingclients ist **IPM**; Die Standardnachrichtenklasse für Zwischenverarbeitungskommunikationsclients ist **IPC**. 
+Obwohl Clients die **eigenschaft PR_MESSAGE_CLASS** für jede ausgehende Nachricht auf eine Unterklasse von **IPM** oder **IPC** festlegen sollten, hat der Nachrichtenspeicheranbieter letztendlich die Verantwortung für die Festlegung. Wenn ein Client eine Nachricht sendet, ohne seine Nachrichtenklasse festzulegen, legt der Nachrichtenspeicheranbieter sie daher auf den entsprechenden Standardwert für den entsprechenden Clienttyp fest. Die Standardnachrichtenklasse für zwischenmenschliche Messaging-Clients ist **IPM;** Die Standardnachrichtenklasse für Interprocess-Kommunikationsclients ist **IPC.** 
   
-Nachrichtenklassen haben eine Längeneinschränkung von 255 Zeichen. Nachrichtenklassen sollten jedoch nicht länger als 127 Zeichen sein, um die nachrichtenklassen zu unterstützen, die in Berichten verwendet werden. Berichtsnachrichtenklassen basieren auf der Klasse der ursprünglichen Nachricht mit zwei Ergänzungen: einem Präfix und einem Suffix. Das Präfix REPORT gibt an, dass es sich bei der Nachricht um einen Bericht handelt, und das Suffix gibt den Typ des Berichts an: DR (Zustellungsbericht), NDR (Unzustellbarkeitsbericht), IPNRN (Lesebericht) oder IPNNRN (ungelesener Bericht). Beachten Sie, dass diese Längeneinschränkungen in Zeichen angegeben sind. Auf Plattformen, die einen Doppel-Byte-Zeichensatz verwenden, kann die tatsächliche Byteanzahl höher sein. 
+Nachrichtenklassen haben eine Längeneinschränkung von 255 Zeichen. Nachrichtenklassen dürfen jedoch 127 Zeichen nicht überschreiten, um die in Berichten verwendeten Nachrichtenklassen zu unterstützen. Berichtsnachrichtenklassen basieren auf der Klasse der ursprünglichen Nachricht mit zwei Ergänzungen: einem Präfix und einem Suffix. Das Präfix REPORT gibt an, dass die Nachricht ein Bericht ist, und das Suffix gibt den Typ des Berichts an: DR (Übermittlungsbericht), NDR (Nicht-Bericht), IPNRN (Lesebericht) oder IPNNRN (nicht gelesener Bericht). Beachten Sie, dass diese Längeneinschränkungen in Zeichen angegeben sind. Auf Plattformen, die einen Doppelbyte-Zeichensatz verwenden, ist die tatsächliche Byteanzahl möglicherweise höher. 
   
-Nachrichtenspeicheranbieter sollten MAPI_E_INVALID_PARAMETER von ihren [IMAPIProp::SetProps-Methodenimplementierung](imapiprop-setprops.md) zurückgeben, wenn ein Client versucht, eine Zeichenfolge zuzuordnen, die den zulässigen Grenzwert für ihre Nachrichtenklasse überschreitet. 
+Nachrichtenspeicheranbieter sollten MAPI_E_INVALID_PARAMETER aus ihren [IMAPIProp::SetProps-Methodenimplementierungen](imapiprop-setprops.md) zurückgeben, wenn ein Client versucht, eine Zeichenfolge zuzuweisen, die den zulässigen Grenzwert für ihre Nachrichtenklasse überschreitet. 
   
 ## <a name="see-also"></a>Siehe auch
 

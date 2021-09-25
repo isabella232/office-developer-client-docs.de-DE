@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMsgStore.FinishedMsg
 api_type:
 - COM
 ms.assetid: c32493fa-aa42-485b-9ea4-f93b835906df
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 9e7d7ba91791258eca93a2b8bedf95cf121062c5
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 45047ea14fe364f8c4d33275ba771d01f77e5110
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33427087"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59571675"
 ---
 # <a name="imsgstorefinishedmsg"></a>IMsgStore::FinishedMsg
 
@@ -47,7 +47,7 @@ HRESULT FinishedMsg(
     
  _lpEntryID_
   
-> [in] Ein Zeiger auf die Eintrags-ID der zu verarbeitende Nachricht.
+> [in] Ein Zeiger auf den Eintragsbezeichner der zu verarbeitenden Nachricht.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -57,22 +57,22 @@ S_OK
     
 MAPI_E_NO_SUPPORT 
   
-> Der Nachrichtenspeicheranbieter unterstützt keine gesendete Nachrichtenverarbeitung. Dieser Fehlerwert wird zurückgegeben, wenn der Aufrufer nicht der MAPI-Spooler ist.
+> Der Nachrichtenspeicheranbieter unterstützt die Verarbeitung gesendeter Nachrichten nicht. Dieser Fehlerwert wird zurückgegeben, wenn der Aufrufer nicht der MAPI-Spooler ist.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die **IMsgStore::FinishedMsg-Methode** führt die Verarbeitung einer gesendeten Nachricht durch. Diese Verarbeitung kann das Löschen der Nachricht, das Verschieben in einen anderen Ordner oder beide Aktionen umfassen. Der Verarbeitungstyp hängt davon ab, ob **die Eigenschaften PR_DELETE_AFTER_SUBMIT** ([PidTagDeleteAfterSubmit](pidtagdeleteaftersubmit-canonical-property.md)) und **PR_SENTMAIL_ENTRYID** ([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md)) festgelegt sind. 
+Die **IMsgStore::FinishedMsg-Methode** führt die Verarbeitung einer gesendeten Nachricht aus. Diese Verarbeitung kann das Löschen der Nachricht, das Verschieben in einen anderen Ordner oder beide Aktionen umfassen. Der Verarbeitungstyp hängt davon ab, ob die **Eigenschaften PR_DELETE_AFTER_SUBMIT** ([PidTagDeleteAfterSubmit](pidtagdeleteaftersubmit-canonical-property.md)) und **PR_SENTMAIL_ENTRYID** ([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md)) festgelegt sind. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Entsperren Sie in Ihrer Implementierung von **FinishedMsg** die durch  _lpEntryID_ identifizierte Nachricht, und führen Sie die entsprechende Verarbeitung aus. Die Zielnachricht wird immer gesperrt. Der MAPI-Spooler übergibt niemals den Eintragsbezeichner für eine entsperrte Nachricht an **FinishedMsg**.
+Entsperren Sie in Ihrer Implementierung von **FinishedMsg** die von  _lpEntryID identifizierte_ Nachricht, und führen Sie die entsprechende Verarbeitung durch. Die Zielnachricht wird immer gesperrt. Der MAPI-Spooler übergibt nie den Eintragsbezeichner für eine entsperrte Nachricht an **FinishedMsg**.
   
-Es ist möglich, dass **PR_DELETE_AFTER_SUBMIT** oder **PR_SENTMAIL_ENTRYID** festgelegt ist, beide festgelegt oder die eine oder die andere festgelegt ist. In der folgenden Tabelle wird die Aktion beschrieben, die Sie basierend auf den Einstellungen ergreifen sollten: 
+Es ist möglich, dass weder **PR_DELETE_AFTER_SUBMIT** noch **PR_SENTMAIL_ENTRYID** festgelegt sind, beide festgelegt sind oder eine oder die andere festgelegt ist. In der folgenden Tabelle wird die Aktion beschrieben, die Sie basierend auf den Einstellungen ausführen sollten: 
   
 |||
 |:-----|:-----|
-|Wenn keine eigenschaft festgelegt ist:  <br/> |Lassen Sie die Nachricht im Ordner, aus dem sie gesendet wurde (in der Regel der Posteingang).  <br/> |
-|Wenn beide Eigenschaften festgelegt sind:  <br/> |Verschieben Sie die Nachricht bei Bedarf in den angegebenen Ordner, und löschen Sie sie dann.  <br/> |
+|Wenn keine der beiden Eigenschaften festgelegt ist:  <br/> |Belassen Sie die Nachricht in dem Ordner, aus dem sie gesendet wurde (in der Regel der Postausgang).  <br/> |
+|Wenn beide Eigenschaften festgelegt sind:  <br/> |Verschieben Sie die Nachricht in den angegebenen Ordner, falls gewünscht, und löschen Sie sie.  <br/> |
 |Wenn PR_SENTMAIL_ENTRYID festgelegt ist:  <br/> |Verschieben Sie die Nachricht in den angegebenen Ordner.  <br/> |
 |Wenn PR_DELETE_AFTER_SUBMIT festgelegt ist:  <br/> |Löschen Sie die Nachricht.  <br/> |
    

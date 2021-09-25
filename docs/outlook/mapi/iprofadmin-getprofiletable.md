@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IProfAdmin.GetProfileTable
 api_type:
 - COM
 ms.assetid: cebccd2d-8215-486e-9964-7fc42412cec6
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 2db7dba67e7b71df6921ecd97189255a0ef7823a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 9fa8107a551ed46d5b1790eb1965bf242cc79b2f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33414645"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556322"
 ---
 # <a name="iprofadmingetprofiletable"></a>IProfAdmin::GetProfileTable
 
@@ -50,15 +50,15 @@ S_OK
   
 > Die Profiltabelle wurde erfolgreich abgerufen.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die **IProfAdmin::GetProfileTable-Methode** bietet Zugriff auf die Profiltabelle, die für jedes verfügbare Profil eine Zeile enthält. Jede Zeile enthält nur zwei Spalten: den Anzeigenamen des Profils und ein Flag, das angibt, ob das Profil der Standard ist. 
+Die **IProfAdmin::GetProfileTable-Methode** ermöglicht den Zugriff auf die Profiltabelle, die eine Zeile für jedes verfügbare Profil enthält. Jede Zeile enthält nur zwei Spalten: den Anzeigenamen des Profils und ein Flag, das angibt, ob das Profil der Standardwert ist. 
   
-Profile, die gelöscht wurden oder verwendet werden, aber zum Löschen markiert wurden, sind nicht in der Profiltabelle enthalten. Die Profiltabelle ist statisch. Nachfolgende Ergänzungen und Löschungen von Profilen werden nicht in der Tabelle widerspiegelt. 
+Profile, die gelöscht wurden oder verwendet werden, aber für den Löschvorgang markiert wurden, sind nicht in der Profiltabelle enthalten. Die Profiltabelle ist statisch. Nachfolgende Hinzufügungen und Löschungen von Profilen werden in der Tabelle nicht widergespiegelt. 
   
-Wenn keine Profile vorhanden sind, **gibt GetProfileTable** eine Tabelle mit null Zeilen zurück. 
+Wenn keine Profile vorhanden sind, gibt **GetProfileTable** eine Tabelle mit null Zeilen zurück. 
   
-Weitere Informationen zur Profiltabelle finden Sie unter [Profile Tables](profile-tables.md). 
+Weitere Informationen zur Profiltabelle finden Sie unter [Profiltabellen.](profile-tables.md) 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -66,7 +66,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MainDlg.cpp  <br/> |CMainDlg::OnShowProfiles  <br/> |MFCMAPI verwendet die **IProfAdmin::GetProfileTable-Methode,** um die Profiltabelle in einem neuen Dialogfeld anzuzeigen.  <br/> |
+|MainDlg.cpp  <br/> |CMainDlg::OnShowProfiles  <br/> |MFCMAPI verwendet die **IProfAdmin::GetProfileTable-Methode,** um die Profiltabelle abzurufen, die in einem neuen Dialogfeld angezeigt werden soll.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

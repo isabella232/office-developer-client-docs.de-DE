@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagMailPermission
 api_type:
 - HeaderDef
 ms.assetid: f8270ef2-56d4-4b47-bdda-a39c966bbcba
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: b396cd326dd25fd72346f9f8037e8a712b84a196
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: b53a39736df63d77d7582f88b12cb41ef104ff06
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33430175"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59587566"
 ---
 # <a name="pidtagmailpermission-canonical-property"></a>PidTagMailPermission (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "33430175"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält TRUE, wenn der Messagingbenutzer Nachrichten senden und empfangen darf. 
+Enthält TRUE, wenn der Messaging-Benutzer Nachrichten senden und empfangen darf. 
   
 |||
 |:-----|:-----|
@@ -34,11 +34,11 @@ Enthält TRUE, wenn der Messagingbenutzer Nachrichten senden und empfangen darf.
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Wenn diese Eigenschaft nicht festgelegt ist, wird sie von MAPI als TRUE-Wert behandelt. 
+Wenn diese Eigenschaft nicht festgelegt ist, behandelt MAPI sie mit einem TRUE-Wert. 
   
-Legen Sie diese Eigenschaft auf FALSE in einem Unternehmensverzeichnis, in dem einige Einträge nicht E-Mail-aktiviert sind. 
+Legen Sie diese Eigenschaft in einem Unternehmensverzeichnis auf FALSE fest, in dem einige der Einträge nicht E-Mail-aktiviert sind. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -46,11 +46,11 @@ Legen Sie diese Eigenschaft auf FALSE in einem Unternehmensverzeichnis, in dem e
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -58,9 +58,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

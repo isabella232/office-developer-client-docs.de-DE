@@ -4,19 +4,19 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1cf5b314-39fa-996f-fd88-00380ffbc4de
 description: Gibt den sekundären Accountsendstamp für die Nachricht an.
-ms.openlocfilehash: 3aa88a1fd5a73cc4ae2e990e6dad0697083bb694
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 4acc8639be3b09a2a12fc402c7fc5bc2463af4db
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327713"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59557113"
 ---
 # <a name="pidtagnextsendacct"></a>PidTagNextSendAcct
 
-Gibt den sekundären Kontostempel "Senden" für die Nachricht an.
+Gibt den Stempel "senden" des sekundären Kontos für die Nachricht an.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -27,9 +27,9 @@ Gibt den sekundären Kontostempel "Senden" für die Nachricht an.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Outlook-Anwendung  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft gilt für ein MAPI-Nachrichtenobjekt. Für eine empfangene Nachricht gibt der sekundäre Kontostempel "Senden" an, mit welchem Konto ein Forward oder eine Antwort gesendet werden soll, wenn die Weiterleitung oder Antwort nicht mit dem primären Konto gesendet werden kann. Für eine ausgehende Nachricht bestimmt der sekundäre Kontostempel "Senden", mit welchem Konto die Nachricht gesendet werden soll, wenn die Nachricht nicht mit dem primären Konto gesendet werden kann. Der Wert ist der [PROP_ACCT_SEND_STAMP](prop_acct_send_stamp.md) von der [IOlkAccount-Schnittstelle](iolkaccount.md) des Kontos, mit dem die Nachricht gesendet wird. 
+Diese Eigenschaft gilt für ein MAPI-Nachrichtenobjekt. Bei einer empfangenen Nachricht gibt der sekundäre "Senden"-Stempel des Kontos an, mit welchem Konto eine Weiterleitung oder Antwort gesendet werden soll, wenn die Weiterleitung oder Antwort nicht mit dem primären Konto gesendet werden kann. Bei ausgehenden Nachrichten bestimmt der Stempel "Senden" des sekundären Kontos, mit welchem Konto die Nachricht gesendet werden soll, ob die Nachricht nicht mit dem primären Konto gesendet werden kann. Der Wert ist der [PROP_ACCT_SEND_STAMP](prop_acct_send_stamp.md) Wert aus der [IOlkAccount-Schnittstelle](iolkaccount.md) des Kontos, mit dem die Nachricht gesendet wird. 
   
 ## <a name="see-also"></a>Siehe auch
 

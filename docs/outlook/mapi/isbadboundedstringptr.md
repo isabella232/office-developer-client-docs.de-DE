@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 888c60e3-7376-4d66-8ee2-ce81abafb185
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 9d5ebb0e16138c3cc65ff6fd7c635e5498c9c1ba
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 00675aada9e2f7a9524552d1e3e0c71ea8d59683
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278834"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556273"
 ---
 # <a name="isbadboundedstringptr"></a>IsBadBoundedStringPtr
 
@@ -40,21 +40,21 @@ BOOL IsBadBoundedStringPtr(
 
  _lpsz_
   
-> [in] Zeiger auf eine mit Null beendete ASCII-Zeichenfolge.
+> [in] Zeiger auf eine MIT NULL beendete ASCII-Zeichenfolge.
     
  _cchMax_
   
-> [in] Die maximale Größe der Zeichenfolge in CHARs. Die Funktion überprüft den Lesezugriff in allen Zeichen bis zum beendenden Nullzeichen der Zeichenfolge oder bis zur durch diesen Parameter angegebenen Anzahl von Zeichen, je nach kleinerer Zahl. Wenn dieser Parameter null ist, ist der Rückgabewert null.
+> [in] Die maximale Größe der Zeichenfolge in CHARs. Die Funktion überprüft auf Lesezugriff in allen Zeichen bis zum endenden NULL-Zeichen der Zeichenfolge oder bis zur Anzahl der durch diesen Parameter angegebenen Zeichen, je nachdem, welche Zahl kleiner ist. Wenn dieser Parameter Null ist, ist der Rückgabewert Null.
     
 ## <a name="return-value"></a>Rückgabewert
 
-Der Rückgabewert ist Null, wenn der aufrufende Prozess Lesezugriff auf alle Zeichen bis zum beendenden Nullzeichen der Zeichenfolge hat, oder lesezugriff bis zur anzahl der von  _cchMax_ angegebenen Zeichen.
+Der Rückgabewert ist Null, wenn der aufrufende Prozess Lesezugriff auf alle Zeichen bis zum endenden NULL-Zeichen der Zeichenfolge hat, oder Lesezugriff bis zur Anzahl der durch  _cchMax_ angegebenen Zeichen hat.
   
-Der Rückgabewert ist nicht null, wenn der aufrufende Prozess nicht über Lesezugriff auf alle Zeichen bis zum beendenden Nullzeichen der Zeichenfolge verfügt, oder lesezugriff bis zur anzahl der von  _cchMax_ angegebenen Zeichen.
+Der Rückgabewert ist ungleich Null, wenn der aufrufende Prozess nicht über Lesezugriff auf alle Zeichen bis zum endenden NULL-Zeichen der Zeichenfolge oder Lesezugriff bis zur Anzahl der zeichen verfügt, die durch  _cchMax_ angegeben werden.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die **IsBadBoundedStringPtr-Funktion** entspricht der Verwendung von **IsBadStringPtr**.
+Die **IsBadBoundedStringPtr** -Funktion entspricht der Verwendung von **IsBadStringPtr**.
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagPrimarySendAccount
 api_type:
 - COM
 ms.assetid: 2f268b3b-2e4c-4aea-8879-bdd0ac1df35c
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 2c32cc61fea63cd38215c30e04e8a467d4901cc9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 13515f4ae2511b3c5d3751835335cd991d850715
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339375"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59587286"
 ---
 # <a name="pidtagprimarysendaccount-canonical-property"></a>PidTagPrimarySendAccount (kanonische Eigenschaft)
 
@@ -34,9 +34,9 @@ Enthält eine Zeichenfolge, die den ersten Server benennt, der zum Senden der Na
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Konto  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Gibt den ersten Server an, den ein Client zum Senden der E-Mails verwenden soll. Das Format dieser Eigenschaften ist implementierungsabhängig. Diese Eigenschaften können vom Client verwendet werden, um zu bestimmen, durch welchen Server die E-Mails gesendet werden sollen, ist jedoch optional, und der Wert hat keine Bedeutung für den Server.
+Gibt den ersten Server an, den ein Client zum Senden der E-Mail verwenden soll. Das Format dieser Eigenschaften ist von der Implementierung abhängig. Diese Eigenschaften können vom Client verwendet werden, um zu bestimmen, über welchen Server die E-Mail durchgestellt werden soll, ist jedoch optional, und der Wert hat für den Server keine Bedeutung.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,7 +44,7 @@ Gibt den ersten Server an, den ein Client zum Senden der E-Mails verwenden soll.
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
@@ -54,11 +54,11 @@ Gibt den ersten Server an, den ein Client zum Senden der E-Mails verwenden soll.
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -66,9 +66,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

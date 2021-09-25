@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.MAPIOpenLocalFormContainer
 api_type:
 - COM
 ms.assetid: 1c53170f-03a6-4a05-913e-de8eeadea692
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ace31079c51aac169f6091af0cb363e7f05f0d14
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 4be35e9e337a4013023c1ab48138f104ea1b2842
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33427738"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59579461"
 ---
 # <a name="mapiopenlocalformcontainer"></a>MAPIOpenLocalFormContainer
 
@@ -25,7 +25,7 @@ ms.locfileid: "33427738"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt einen Schnittstellenzeiger zur lokalen Formularbibliothek zurück. 
+Gibt einen Schnittstellenzeiger auf die lokale Formularbibliothek zurück. 
   
 |||
 |:-----|:-----|
@@ -43,15 +43,15 @@ MAPIOpenLocalFormContainer(
 
  _ppfcnt_
   
-> [out] Zeiger auf einen Zeiger auf die lokale Formularbibliotheksschnittstelle.
+> [out] Zeiger auf einen Zeiger auf die schnittstelle der lokalen Formularbibliothek.
     
 ## <a name="return-value"></a>Return value
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die Schnittstelle, an die ein Zeiger zurückgegeben wird, kann von Installationsprogrammen von Drittanbietern verwendet werden, um anwendungsspezifische Formulare in der Bibliothek zu installieren, ohne dass sich das Programm zuerst bei MAPI anmelden muss. 
+Die Schnittstelle, an die ein Zeiger zurückgegeben wird, kann von Installationsprogrammen von Drittanbietern verwendet werden, um anwendungsspezifische Formulare in der Bibliothek zu installieren, ohne dass sich das Programm zuerst bei der MAPI anmelden muss. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -59,7 +59,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MainDlg.cpp  <br/> |CMainDlg::OnMAPIOpenLocalFormContainer  <br/> |MFCMAPI verwendet die **MAPIOpenLocalFormContainer-Methode,** um den lokalen Formularcontainer zum Rendern in einem neuen Fenster zu öffnen.  <br/> |
+|MainDlg.cpp  <br/> |CMaindlg::OnMAPIOpenLocalFormContainer  <br/> |MFCMAPI verwendet die **MAPIOpenLocalFormContainer-Methode,** um den lokalen Formularcontainer zum Rendern in einem neuen Fenster zu öffnen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

@@ -10,22 +10,22 @@ f1_keywords:
 - vbaac10.chm12983
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: f3ef598ad50747d99ca884043e03ebfabfef8f63
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: b2b745f9e58e716d4b4300034a86d87c8c7f02a2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308995"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562230"
 ---
 # <a name="runsql-macro-action"></a>RunSQL-Makroaktion
 
 **Gilt für**: Access 2013, Office 2013
 
-Mit der **AusführenSQL** -Aktion können Sie eine Access-Aktionsabfrage mithilfe der entsprechenden SQL-Anweisung ausführen. Sie können auch eine Datendefinitionsabfrage ausführen.
+Mit der **RunSQL-Aktion** können Sie eine Access-Aktionsabfrage mithilfe der entsprechenden SQL-Anweisung ausführen. Sie können auch eine Datendefinitionsabfrage ausführen.
 
 > [!NOTE]
-> [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. 
+> Diese Aktion ist nicht zulässig, wenn die Datenbank nicht vertrauenswürdig ist. 
 
 ## <a name="setting"></a>Einstellung
 
@@ -55,7 +55,7 @@ Die **AusführenSQL**-Aktion hat die folgenden Argumente.
 </table>
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Sie können Aktionsabfragen verwenden, um Datensätze anzufügen, zu löschen und zu aktualisieren und um das Resultset einer Abfrage als neue Tabelle zu speichern. Sie können Datendefinitionsabfragen verwenden, um Tabellen oder Indizes zu erstellen, zu ändern und zu löschen. Sie können die **AusführenSQL** -Aktion verwenden, um diese Vorgänge direkt aus einem Makro heraus auszuführen, ohne gespeicherte Abfragen verwenden zu müssen.
 
@@ -80,7 +80,7 @@ Access-Abfragen sind normalerweise SQL-Anweisungen, die beim Entwerfen einer Abf
 <td><p></p></td>
 </tr>
 <tr class="even">
-<td><p>Append</p></td>
+<td><p>Anfügen</p></td>
 <td><p>INSERT INTO</p></td>
 </tr>
 <tr class="odd">
@@ -89,10 +89,10 @@ Access-Abfragen sind normalerweise SQL-Anweisungen, die beim Entwerfen einer Abf
 </tr>
 <tr class="even">
 <td><p>Make-Table</p></td>
-<td><p>Wählen Sie... IN</p></td>
+<td><p>AUSWÄHLEN... IN</p></td>
 </tr>
 <tr class="odd">
-<td><p>Aktualisieren</p></td>
+<td><p>Update</p></td>
 <td><p>UPDATE</p></td>
 </tr>
 <tr class="even">

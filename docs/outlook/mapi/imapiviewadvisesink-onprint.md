@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPIViewAdviseSink.OnPrint
 api_type:
 - COM
 ms.assetid: d16219a0-268c-428d-9f02-4f06eb5b6d7d
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: e66315042f8b5cd5aff0e4aa076588c9f312376a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 69f560903ef0fa1430007818cc364752fd9eaeae
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33406171"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556482"
 ---
 # <a name="imapiviewadvisesinkonprint"></a>IMAPIViewAdviseSink::OnPrint
 
@@ -36,7 +36,7 @@ HRESULT hrStatus
 
 ## <a name="parameters"></a>Parameter
 
- _dwPageNumber_
+ _wetterPageNumber_
   
 > [in] Die Nummer der letzten gedruckten Seite.
     
@@ -50,9 +50,9 @@ S_FALSE
     
 S_OK 
   
-> Der Druckauftrag wird ausgeführt.
+> Der Druckauftrag wird gerade ausgeführt.
     
-FAILED 
+FEHLGESCHLAGEN 
   
 > Der Druckauftrag wurde aufgrund eines Fehlers beendet.
     
@@ -60,21 +60,21 @@ FAILED
 
 S_OK 
   
-> Die Benachrichtigung ist erfolgreich.
+> Die Benachrichtigung war erfolgreich.
     
 MAPI_E_USER_CANCEL 
   
 > Der Benutzer hat den Vorgang abgebrochen, in der Regel durch Klicken auf die Schaltfläche Abbrechen in einem Dialogfeld. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Formularobjekte rufen die **IMAPIViewAdviseSink::OnPrint-Methode** beim Drucken auf, um den Betrachter über den Druckfortschritt zu informieren. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Wenn der Druckauftrag mehrere Seiten umfasst, können Sie **OnPrint** aufrufen, nachdem jede Seite gedruckt wurde. Legen  _Sie dwPageNumber_ auf die Seite, die gerade gedruckt wird, und  _hrStatus_ auf S_OK. Wenn der Druckauftrag abgeschlossen ist, rufen Sie **OnPrint** auf,  _während dwPageNumber_ auf die letzte gedruckte Seite festgelegt ist, und  _hrStatus_ auf S_FALSE. 
+Wenn der Druckauftrag mehrere Seiten umfasst, können Sie **OnPrint** aufrufen, nachdem jede Seite gedruckt wurde. Legen Sie  _"wetterPageNumber"_ auf die seite fest, die gerade gedruckt wird, und  _"hrStatus"_ auf S_OK. Wenn der Druckauftrag abgeschlossen ist, rufen **Sie "OnPrint"** auf, wobei  _"wetterPageNumber"_ auf die letzte gedruckte Seite und  _"hrStatus"_ auf S_FALSE festgelegt ist. 
   
-Weitere Informationen zu Formularbenachrichtigungen finden Sie unter Senden und Empfangen [von Formularbenachrichtigungen](sending-and-receiving-form-notifications.md).
+Weitere Informationen zu Formularbenachrichtigungen finden Sie unter [Senden und Empfangen von Formularbenachrichtigungen.](sending-and-receiving-form-notifications.md)
   
 ## <a name="see-also"></a>Siehe auch
 

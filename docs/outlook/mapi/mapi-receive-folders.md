@@ -3,17 +3,17 @@ title: MAPI empfangen Ordner
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 2e1287a3-0f15-4d9a-b7ee-738fce9cd51f
 description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b22b8641d55037d3755fc9ae32b97455223bbd12
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 738d1f28e72e477fcedab46191b600db187877cc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33431939"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556154"
 ---
 # <a name="mapi-receive-folders"></a>MAPI empfangen Ordner
 
@@ -57,7 +57,7 @@ Die folgende Tabelle zeigt, wie Nachrichten mit verschiedenen Klassen an die ent
 |:-----|:-----|
 |**IPM. Note.Sample.Simple** <br/> |F�r Beispielordner  <br/> |
 |**IPM.Note** <br/> |Ordner Posteingang  <br/> |
-|**IPM. Timecard** <br/> |Ordner Posteingang  <br/> |
+|**IPM. Zeiterfassungskarte** <br/> |Ordner Posteingang  <br/> |
 |**IPM. Note.Sample.Simple.Totally** <br/> |F�r Beispielordner  <br/> |
    
 Clients rufen Sie die **SetReceiveFolder** -Methode, um eine explizite Zuordnung zwischen einem bestimmten Nachrichtenklasse t�tigen und annehmen von Ordner. Wenn eine Nachricht an eine leere Nachrichtenklasse �bermittelt werden, platziert MAPI die Nachricht im Ordner "empfangen", die f�r ein Pr�fix der leere-Klasse definiert ist. Wenn der Client eine Empfangsordner f�r Nachrichten mit Klasse **IPM** hergestellt hat und eine Nachricht mit der Klasse **IPM.Note.Test** �bermittelt wird, wird diese Nachricht im Ordner "empfangen" f�r die Nachrichtenklasse **IPM** platziert. 

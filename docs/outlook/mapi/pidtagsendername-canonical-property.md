@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagSenderName
 api_type:
 - COM
 ms.assetid: 33fb53a8-4c7b-4418-8849-b6f9a1580172
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 953e792b6d18f7da9ee7eb17e07e6e05557e98ae
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: aacb2e71481c2a885dc3b1388dd26e874abcdc1c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355069"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59586999"
 ---
 # <a name="pidtagsendername-canonical-property"></a>PidTagSenderName (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32355069"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält den Anzeigenamen des Nachrichtensenders.
+Enthält den Anzeigenamen des Absenders der Nachricht.
   
 |||
 |:-----|:-----|
@@ -34,11 +34,11 @@ Enthält den Anzeigenamen des Nachrichtensenders.
 |Datentyp:  <br/> |PT_UNICODE, PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaften sind Beispiele für die Adresseigenschaften für den Nachrichtensender. Sie muss vom ausgehenden Transportanbieter festgelegt werden, der keine zuvor vorhandenen Werte weitervermittelt.
+Diese Eigenschaften sind Beispiele für die Adresseigenschaften für den Nachrichtensender. Sie muss vom ausgehenden Transportanbieter festgelegt werden, der zuvor vorhandene Werte niemals übertragen sollte.
   
-Wenn kein Transportanbieter Absenderadresseneigenschaften angegeben hat, versucht der MAPI-Spooler, sie durch Aufrufen der [IMAPISession::QueryIdentity-Methode](imapisession-queryidentity.md) für einen Eintragsbezeichner zu füllen. Wenn keine Eintragsbezeichner angegeben wurden, speichert der MAPI-Spooler "Unknown" in allen Absenderadresseneigenschaften vom Typ PT_TSTRING. 
+Wenn kein Transportanbieter Absenderadresseigenschaften angegeben hat, versucht der MAPI-Spooler, diese auszufüllen, indem er die [IMAPISession::QueryIdentity-Methode](imapisession-queryidentity.md) für einen Eintragsbezeichner aufruft. Wenn keine Eintragsbezeichner angegeben wurden, speichert der MAPI-Spooler "Unknown" in allen Absenderadresseigenschaften des Typs PT_TSTRING. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -46,11 +46,11 @@ Wenn kein Transportanbieter Absenderadresseneigenschaften angegeben hat, versuch
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
-> Beschreibt das Format von Nachrichten, die zum Senden von Informationen im Zusammenhang mit Freigabeordnern auf dem Client verwendet werden.
+> Beschreibt das Format von Nachrichten, die zum Senden von Informationen im Zusammenhang mit der Freigabe von Ordnern auf dem Client verwendet werden.
     
 [[MS-OXORSS]](https://msdn.microsoft.com/library/53bc9634-0040-4b5a-aecd-29781d826009%28Office.15%29.aspx)
   
@@ -66,7 +66,7 @@ Wenn kein Transportanbieter Absenderadresseneigenschaften angegeben hat, versuch
     
 [[MS-OXOPOST]](https://msdn.microsoft.com/library/9b18fdab-aacd-4d73-9534-be9b6ba2f115%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften und Vorgänge an, die für Postobjekte zulässig sind.
+> Gibt die Eigenschaften und Vorgänge an, die für Post-Objekte zulässig sind.
     
 [[MS-OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
   
@@ -74,17 +74,17 @@ Wenn kein Transportanbieter Absenderadresseneigenschaften angegeben hat, versuch
     
 [[MS-OXTNEF]](https://msdn.microsoft.com/library/1f0544d7-30b7-4194-b58f-adc82f3763bb%28Office.15%29.aspx)
   
-> Codiert und decodiert Nachrichten- und Anlagenobjekte in eine effiziente Streamdarstellung.
+> Codiert und decodiert Nachrichten- und Anlagenobjekte in einer effizienten Datenstromdarstellung.
     
 ### <a name="header-files"></a>Headerdateien
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -92,9 +92,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

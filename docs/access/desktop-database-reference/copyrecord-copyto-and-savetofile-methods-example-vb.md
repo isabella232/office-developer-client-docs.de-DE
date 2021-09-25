@@ -6,20 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249679(v=office.15)
 ms:contentKeyID: 48546479
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 4326b3edcbdfa9e3dabc4e3d0692290c343c3bd6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 36d0169b3bfd37bc8a412e4159948c1dd4cdc63b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295535"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562797"
 ---
 # <a name="copyrecord-copyto-and-savetofile-methods-example-vb"></a>CopyRecord-, CopyTo- und SaveToFile-Methoden (Beispiel) (VB)
 
 
 **Gilt für**: Access 2013, Office 2013
 
-In diesem Beispiel wird das Erstellen von Kopien einer Datei mithilfe der Objekte [Stream](stream-object-ado.md) oder [Record](record-object-ado.md) dargestellt. Eine Kopie wird in einem Webordner für Internet Publishing erstellt. Andere dargestellte Eigenschaften und Methoden beinhalten die Objekte [Stream Type](type-property-ado-stream.md), **Open**, [LoadFromFile](loadfromfile-method-ado.md) und [Record Open](open-method-ado-record.md).
+In diesem Beispiel wird das Erstellen von Kopien einer Datei mithilfe der Objekte [Stream](stream-object-ado.md) oder [Record](record-object-ado.md) dargestellt. Eine Kopie wird in einen Webordner für die Internetveröffentlichung erstellt. Andere dargestellte Eigenschaften und Methoden beinhalten die Objekte [Stream Type](type-property-ado-stream.md), **Open**, [LoadFromFile](loadfromfile-method-ado.md) und [Record Open](open-method-ado-record.md).
 
 ```vb 
  

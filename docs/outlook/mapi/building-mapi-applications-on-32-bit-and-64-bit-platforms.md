@@ -7,13 +7,13 @@ api_type:
 - COM
 ms.assetid: d218ba2d-7a2e-4c33-a09b-a8c7e27f9726
 description: 'Letzte Änderung: Montag, 9. März 2015'
-localization_priority: Priority
-ms.openlocfilehash: 74f321d2c6c8b5159191d4dcdb62e0db21132435
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 6c6ba946c0428b13394f304a21683d9a7f56dc24
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32326468"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556910"
 ---
 # <a name="building-mapi-applications-on-32-bit-and-64-bit-platforms"></a>Erstellen von MAPI-Anwendungen für 32- und 64-Bit-Plattformen
 
@@ -45,7 +45,7 @@ Zu den MAPI-Anwendungen geh�ren eigenst�ndige Anwendungen wie beispielsweise
 |64-Bit  <br/> |64-Bit  <br/> |64-Bit  <br/> |Es sind keine weiteren Aktionen erforderlich.  <br/> |
 |64-Bit  <br/> |32-Bit  <br/> |32-Bit- oder 64-bit  <br/> |Erstellen Sie die Anwendung als 32-Bit-Anwendung neu. Andernfalls tritt beim Ausführen aller MAPI-Methoden- und -Funktionsaufrufe (mit Ausnahme von **MAPISendMail**) ein Fehler auf.<br/> |
    
-In den folgenden Abschnitten werden die einzelnen Szenarien genauer erläutert. Weitere Informationen zu Verweisen auf und Aufrufen von MAPI-Funktionen in Szenarien, für die eine Neuerstellung der MAPI-Anwendung erforderlich ist, finden Sie unter [Verweisen auf MAPI-Funktionen](how-to-link-to-mapi-functions.md). 
+In den folgenden Abschnitten wird jedes Szenario weiter erläutert. Für Szenarien, in denen die MAPI-Anwendung neu erstellt werden muss, finden Sie weitere Informationen zum Verknüpfen mit und Aufrufen von MAPI-Funktionen unter [Link zu MAPI-Funktionen](how-to-link-to-mapi-functions.md). 
   
 ### <a name="32-bit-mapi-application-and-32-bit-outlook"></a>32-Bit-MAPI-Anwendung und 32-Bit-Version von Outlook
 
@@ -71,13 +71,13 @@ Eine 32-Bit-MAPI-Anwendung darf in der Regel nicht auf einer 64-Bit-Plattform (6
 
 ![Fehlermeldung für die meisten bitanzahlübergreifenden MAPI-Aufrufe](media/738905fb-57ae-4af7-b54b-a1676c80d3c3.JPG "Fehlermeldung für die meisten bitanzahlübergreifenden MAPI-Aufrufe")
   
-Ein Funktionsaufruf zwischen allen Simple MAPI- und MAPI-Elementen, **MAPISendMail**, wird jedoch erfolgreich in einem WOW64-Szenario (Windows-32-bit-on-Windows-64-bit) oder WOW32-Szenario (Windows-64-bit-on-Windows-32-bit) erfolgreich ausgef�hrt und gibt nicht die oben dargestellte Warnmeldung zur�ck. Dieses WOW64-Szenario gilt nur für Windows 7. 
+Ein Funktionsaufruf unter allen Simple MAPI- und MAPI-Elementen, **MAPISendMail**, würde jedoch in einem Windows-32-Bit-auf-Windows-64-Bit (WOW64) oder Windows-64-Bit-auf-Windows-32-Bit ( WOW32) Szenario und würde nicht zu der obigen Warnung führen. Dieses WOW64-Szenario gilt nur für Windows 7. 
 
-In Abbildung�2 wird ein WOW64-Szenario dargestellt, in dem eine 32-Bit-MAPI-Anwendung **MAPISendMail** auf einem Computer mit der 64-Bit-Version von Windows 7 aufruft. In diesem Szenario führt die MAPI-Bibliothek einen COM-Aufruf durch, um eine 64-Bit-Fixmapi-Anwendung zu starten. Die Fixmapi-Anwendung verweist implizit auf die MAPI-Bibliothek, die den Funktionsaufruf an den Windows-MAPI-Stub weiterleitet, wodurch wiederum der Aufruf an den Outlook-MAPI-Stub weitergeleitet wird und so der **MAPISendMail**Funktionsaufruf erfolgreich ausgeführt werden kann. 
+In Abbildung�2 wird ein WOW64-Szenario dargestellt, in dem eine 32-Bit-MAPI-Anwendung **MAPISendMail** auf einem Computer mit der 64-Bit-Version von Windows 7 aufruft. In diesem Szenario führt die MAPI-Bibliothek einen COM-Aufruf durch, um eine 64-Bit-Fixmapi-Anwendung zu starten. Die Fixmapi-Anwendung verweist implizit auf die MAPI-Bibliothek, die den Funktionsaufruf an den Windows-MAPI-Stub weiterleitet, wodurch wiederum der Aufruf an den Outlook-MAPI-Stub weitergeleitet wird und so der **MAPISendMail** Funktionsaufruf erfolgreich ausgeführt werden kann. 
   
 **Abbildung 2. Verarbeiten von MAPISendMail in einem WOW64-Szenario.**
 
-![Verarbeiten von MAPISendMail in einem WOW64-Szenario](media/346ba974-4844-4b64-9dd1-d0f829ab99b3.gif "Verarbeiten von MAPISendMail in einem WOW64-Szenario")
+![Verarbeitung von MAPISendMail in einem WOW64-Szenario](media/346ba974-4844-4b64-9dd1-d0f829ab99b3.gif "Verarbeiten von MAPISendMail in einem WOW64-Szenario")
   
 ## <a name="see-also"></a>Siehe auch
 

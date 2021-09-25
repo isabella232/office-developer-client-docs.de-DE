@@ -1,20 +1,20 @@
 ---
-title: Recordset2. ValidationRule-Eigenschaft (DAO)
+title: Recordset2.ValidationRule-Eigenschaft (DAO)
 TOCTitle: ValidationRule Property
 ms:assetid: d46cc255-e588-e9e6-66d7-31fc26ae45b8
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835002(v=office.15)
 ms:contentKeyID: 48547940
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 7b146aa0278db278f3831bc0e00987d21e14b70a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 03decdb37e04d760f2807ce51de7fa003114c486
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307154"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552598"
 ---
-# <a name="recordset2validationrule-property-dao"></a>Recordset2. ValidationRule-Eigenschaft (DAO)
+# <a name="recordset2validationrule-property-dao"></a>Recordset2.ValidationRule-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -23,11 +23,11 @@ Legt einen Wert fest, der die Daten in einem Feld überprüft, wenn es geändert
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . ValidationRule
+*Ausdruck* . Validationrule
 
-*Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset2-Objekt** darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Einstellung bzw. der Rückgabewert ist ein **String**-Wert, der einen Vergleich in der Form einer SQL WHERE-Klausel ohne das reservierte Wort WHERE beschreibt. Für ein Objekt, das noch nicht an die **Fields**-Auflistung angehängt wurde, besteht Lese-/Schreibzugriff für diese Eigenschaft.
 
@@ -43,7 +43,7 @@ Für ein **Recordset**-Objekt ist die **ValidationRule**-Eigenschaft schreibgesc
 <thead>
 <tr class="header">
 <th><p>TableDef</p></th>
-<th><p>Verwendung</p></th>
+<th><p>Nutzung</p></th>
 </tr>
 </thead>
 <tbody>
@@ -68,5 +68,5 @@ Die **ValidationRule**-Eigenschaft eines **Recordset**- oder **TableDef**-Objekt
 For a table-type **Recordset** object, the **ValidationRule** property inherits the **ValidationRule** property setting of the **TableDef** object that you use to create the table-type **Recordset** object.
 
 > [!NOTE]
-> Wenn Sie die-Eigenschaft auf eine Zeichenfolge festlegen, die mit einem nicht-ganzzahligen Wert verkettet ist, und die Systemparameter ein nicht-U. S. Decimal-Zeichen wie ein Komma (beispielsweise strRule &gt; = &amp; "Price" lngPrice und lngPrice = 125, 50) angeben, tritt ein Fehler auf, wenn Ihr Code versucht, alle Daten zu überprüfen. Dies liegt daran, dass der Wert während der Verkettung mithilfe des Standard-Dezimaltrennzeichens in eine Zeichenfolge konvertiert wird und Microsoft Access SQL nur US-Dezimaltrennzeichen akzeptiert.</P>
+> Wenn Sie die Eigenschaft auf eine Zeichenfolge festlegen, die mit einem Nicht-Ganzzahlwert verkettet ist, und die Systemparameter eine Nicht-USA angeben. Dezimalzeichen wie z. B. ein Komma (z. B. strRule = "PRICE &gt; " &amp; lngPrice und gifPrice = 125,50) führt zu einem Fehler, wenn Ihr Code versucht, Daten zu überprüfen. Dies liegt daran, dass der Wert während der Verkettung mithilfe des Standard-Dezimaltrennzeichens in eine Zeichenfolge konvertiert wird und Microsoft Access SQL nur US-Dezimaltrennzeichen akzeptiert.</P>
 

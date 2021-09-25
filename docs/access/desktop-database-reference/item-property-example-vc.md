@@ -6,20 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248928(v=office.15)
 ms:contentKeyID: 48543452
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: bb72b0a3d0e0b497b61925b05a2ee6b0c4b98960
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f49c2970c2121393a32933ff24fb0e2ef5fa47a3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290874"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562608"
 ---
 # <a name="item-property-example-vc"></a>Item-Eigenschaft (Beispiel) (VC++)
 
 
 **Gilt für**: Access 2013, Office 2013
 
-In diesem Beispiel wird dargestellt, wie die [Item](item-property-ado.md)-Eigenschaft auf Member einer Auflistung zugreift. In dem Beispiel wird die ***Authors***-Tabelle der ***Pubs***-Datenbank mit einem parametrisierten Befehl geöffnet.
+In diesem Beispiel wird dargestellt, wie die [Item](item-property-ado.md)-Eigenschaft auf Member einer Auflistung zugreift. Im Beispiel wird die Tabelle ***Authors** _ der Datenbank _ Pubs * mit einem *_parametrisierten_* Befehl geöffnet.
 
 Auf den Parameter, der sich in dem an die Datenbank ausgegebenen Befehl befindet, wird von der [Parameters](command-object-ado.md)-Auflistung des [Command](parameters-collection-ado.md)-Objekts aus anhand von Index und Name zugegriffen. Auf die Felder des zurückgegebenen [Recordset](recordset-object-ado.md)-Objekts wird anschließend von der [Fields](fields-collection-ado.md)-Auflistung dieses Objekts aus anhand von Index und Name zugegriffen.
 

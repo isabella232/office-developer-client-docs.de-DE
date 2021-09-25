@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMsgServiceAdmin.CopyMsgService
 api_type:
 - COM
 ms.assetid: a13c6757-358f-421a-9a76-de7483501613
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 72b4ab1fec10b2e91c7609af6644a54d29ed5e02
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 95a361a44d4714365b9d8b379a0d7f1cb3f85f27
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33432121"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59571689"
 ---
 # <a name="imsgserviceadmincopymsgservice"></a>IMsgServiceAdmin::CopyMsgService
 
@@ -51,27 +51,27 @@ HRESULT CopyMsgService(
     
  _lpInterfaceToCopy_
   
-> [in] Ein Zeiger auf den Schnittstellenbezeichner (Interface Identifier, IID), der die Schnittstelle darstellt, die für den Zugriff auf den Profilabschnitt des zu kopierende Nachrichtendiensts verwendet werden soll. Das Übergeben von NULL führt zur Verwendung der Standardprofilabschnittsschnittstelle [IProfSect.](iprofsectimapiprop.md)
+> [in] Ein Zeiger auf den Schnittstellenbezeichner (IID), der die Schnittstelle darstellt, die für den Zugriff auf den Profilabschnitt des zu kopierenden Nachrichtendiensts verwendet werden soll. Das Übergeben von NULL führt dazu, dass die standardmäßige Profilabschnittsschnittstelle [IProfSect](iprofsectimapiprop.md)verwendet wird.
     
  _lpInterfaceDst_
   
-> [in] Ein Zeiger auf die IID, die die Schnittstelle darstellt, die für den Zugriff auf das Objekt verwendet werden soll, auf das der  _lpObjectDst-Parameter_ verweist. Übergeben von NULL-Ergebnissen in der Sitzungsschnittstelle [IMAPISession](imapisessioniunknown.md), die verwendet wird. Der  _lpInterfaceDst-Parameter_ kann auch auf IID_IMsgServiceAdmin. 
+> [in] Ein Zeiger auf die IID, die die Schnittstelle darstellt, die für den Zugriff auf das Objekt verwendet werden soll, auf das durch den  _lpObjectDst-Parameter_ verwiesen wird. Übergeben von NULL-Ergebnissen in der Sitzungsschnittstelle, [IMAPISession,](imapisessioniunknown.md)wird verwendet. Der  _Parameter lpInterfaceDst_ kann auch auf IID_IMsgServiceAdmin festgelegt werden. 
     
  _lpObjectDst_
   
-> [in] Ein Zeiger auf einen Zeiger auf ein Sitzungs- oder Nachrichtendienstverwaltungsobjekt. Der Objekttyp sollte dem in _lpInterfaceDst übergebenen Schnittstellenbezeichner entsprechen._ Gültige Objektzeiger sind LPMAPISESSION und LPSERVICEADMIN.
+> [in] Ein Zeiger auf einen Zeiger auf ein Sitzungs- oder Nachrichtendienst-Verwaltungsobjekt. Der Objekttyp sollte dem Schnittstellenbezeichner entsprechen, der in  _lpInterfaceDst_ übergeben wird. Gültige Objektzeiger sind LPMAPISESSION und LPSERVICEADMIN.
     
  _ulUIParam_
   
-> [in] Ein Handle zum übergeordneten Fenster aller Dialogfelder oder Fenster, die diese Methode anzeigt.
+> [in] Ein Handle für das übergeordnete Fenster aller Dialogfelder oder Fenster, die von dieser Methode angezeigt werden.
     
  _ulFlags_
   
-> [in] Eine Bitmaske mit Flags, die steuert, wie der Nachrichtendienst kopiert wird. Die folgenden Kennzeichen können festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie der Nachrichtendienst kopiert wird. Die folgenden Flags können festgelegt werden:
     
 SERVICE_UI_ALWAYS 
   
-> Fordert an, dass der Nachrichtendienst immer ein Konfigurationseigenschaftsblatt zeigt.
+> Fordert an, dass der Nachrichtendienst immer ein Konfigurationseigenschaftenblatt anzeigt.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -85,13 +85,13 @@ MAPI_E_NO_ACCESS
     
 MAPI_E_NOT_FOUND 
   
-> Die **MAPIUID,** auf die  _lpUID_ verweist, bezieht sich nicht auf einen vorhandenen Nachrichtendienst. 
+> Die **MAPIUID,** auf die von  _lpUID_ verwiesen wird, bezieht sich nicht auf einen vorhandenen Nachrichtendienst. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die **IMsgServiceAdmin::CopyMsgService-Methode** kopiert einen Nachrichtendienst in ein Profil, entweder das aktive Profil oder ein anderes Profil. Das Profil, das den zu kopierende Nachrichtendienst und das Ziel enthält, muss nicht dasselbe Profil sein, aber es kann sein. 
+Die **IMsgServiceAdmin::CopyMsgService-Methode** kopiert einen Nachrichtendienst in ein Profil, entweder das aktive Profil oder ein anderes Profil. Das Profil, das den zu kopierenden Nachrichtendienst enthält, und das Ziel muss nicht dasselbe Profil sein, kann aber sein. 
   
-Die Einstiegspunktfunktion des Nachrichtendiensts wird nicht für einen Kopiervorgang aufgerufen. Der kopierte Nachrichtendienst verfügt über die gleichen Konfigurationseinstellungen wie der ursprüngliche. Um diese Einstellungen zu ändern, sollte ein Client die [IMsgServiceAdmin::ConfigureMsgService-Methode](imsgserviceadmin-configuremsgservice.md) aufrufen. 
+Die Einstiegspunktfunktion des Nachrichtendiensts wird nicht für einen Kopiervorgang aufgerufen. Der kopierte Nachrichtendienst verfügt über die gleichen Konfigurationseinstellungen wie der ursprüngliche Nachrichtendienst. Um diese Einstellungen zu ändern, sollte ein Client die [IMsgServiceAdmin::ConfigureMsgService-Methode](imsgserviceadmin-configuremsgservice.md) aufrufen. 
   
 ## <a name="see-also"></a>Siehe auch
 

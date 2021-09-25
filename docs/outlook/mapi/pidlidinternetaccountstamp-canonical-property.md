@@ -1,25 +1,25 @@
 ---
-title: PidLidInternetAccountStamp (kanonische Eigenschaft)
+title: Kanonische PidLidInternetAccountStamp-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidInternetAccountStamp
 api_type:
 - COM
 ms.assetid: 819179fe-e58e-415c-abc7-1949036745ee
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ebd64392d24cd170a7babf77865aa00c7be24802
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 3576ccf750fa1124f24527dd1f09ea0094c2dda6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315456"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59555741"
 ---
-# <a name="pidlidinternetaccountstamp-canonical-property"></a>PidLidInternetAccountStamp (kanonische Eigenschaft)
+# <a name="pidlidinternetaccountstamp-canonical-property"></a>Kanonische PidLidInternetAccountStamp-Eigenschaft
 
   
   
@@ -31,13 +31,13 @@ Gibt die E-Mail-Konto-ID an, über die die E-Mail-Nachricht gesendet wird.
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidInetAcctStamp  <br/> |
 |Eigenschaftensatz:  <br/> |PSETID_Common  <br/> |
-|Lange ID (LID):  <br/> |0x00008581  <br/> |
+|Long ID (LID):  <br/> |0x00008581  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeines Messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Format dieser Zeichenfolge ist implementierungsabhängig. Diese Eigenschaft kann vom Client verwendet werden, um zu bestimmen, an welchen Server die E-Mails gesendet werden sollen, ist jedoch optional, und der Wert hat keine Bedeutung für den Server.
+Das Format dieser Zeichenfolge ist von der Implementierung abhängig. Diese Eigenschaft kann vom Client verwendet werden, um zu bestimmen, an welchen Server die E-Mail umgestellt werden soll, ist jedoch optional, und der Wert hat für den Server keine Bedeutung.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -45,7 +45,7 @@ Das Format dieser Zeichenfolge ist implementierungsabhängig. Diese Eigenschaft 
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Stellt Eigenschaftensatzdefinitionen und Verweise auf verwandte Exchange Server zur Verfügung.
+> Stellt Die Definition von Eigenschaftengruppen und Verweise auf verwandte Exchange Server Protokollspezifikationen bereit.
     
 [[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
@@ -55,7 +55,7 @@ Das Format dieser Zeichenfolge ist implementierungsabhängig. Diese Eigenschaft 
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -63,9 +63,9 @@ Mapidefs.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

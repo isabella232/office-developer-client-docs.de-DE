@@ -1,20 +1,20 @@
 ---
-title: Field2. ValidationText-Eigenschaft (DAO)
+title: Field2.ValidationText-Eigenschaft (DAO)
 TOCTitle: ValidationText Property
 ms:assetid: 6128f66c-3891-ae4d-d12d-354a79a9c05e
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194867(v=office.15)
 ms:contentKeyID: 48545202
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 4d58cb6bd32bd46b0a6bcec40ff68cdc52eebc31
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: a2c4d3ae0d681cbb6863ae44ed098f2cc0404d06
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292622"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552934"
 ---
-# <a name="field2validationtext-property-dao"></a>Field2. ValidationText-Eigenschaft (DAO)
+# <a name="field2validationtext-property-dao"></a>Field2.ValidationText-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -25,9 +25,9 @@ Mit dieser Eigenschaft wird ein Wert festgelegt oder zurückgegeben, der den Tex
 
 *Ausdruck* . ValidationText
 
-*Ausdruck* Eine Variable, die ein **Field2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Field2**-Objekt darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Einstellung oder der Rückgabewert ist vom Datentyp **String** und gibt den Text an, der angezeigt wird, wenn ein Benutzer einen ungültigen Wert für ein Feld einzugeben versucht. Bei Objekten, die noch keiner Auflistung angefügt sind, besteht für diese Eigenschaft Lese-/Schreibzugriff.
 
@@ -41,7 +41,7 @@ Bei einem **Field2**-Objekt hängt die Verwendung der **ValidationText**-Eigensc
 <thead>
 <tr class="header">
 <th><p>Zugehörigkeit zu Objekt</p></th>
-<th><p>Verwendung</p></th>
+<th><p>Nutzung</p></th>
 </tr>
 </thead>
 <tbody>
@@ -58,7 +58,7 @@ Bei einem **Field2**-Objekt hängt die Verwendung der **ValidationText**-Eigensc
 <td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Beziehung</strong></p></td>
+<td><p><strong>Relation</strong></p></td>
 <td><p>Nicht unterstützt</p></td>
 </tr>
 <tr class="odd">

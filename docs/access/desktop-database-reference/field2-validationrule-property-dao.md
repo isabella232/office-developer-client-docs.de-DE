@@ -1,20 +1,20 @@
 ---
-title: Field2. ValidationRule-Eigenschaft (DAO)
+title: Field2.ValidationRule-Eigenschaft (DAO)
 TOCTitle: ValidationRule Property
 ms:assetid: 5464d2de-f3d7-5d6b-4fc5-66df6a5540cb
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194105(v=office.15)
 ms:contentKeyID: 48544896
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: b6e9e50148f4b87a957ff2317b1b39522d7d4e1c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 3e2c8ba72f55f5c362e01726d0a528b12d9a9960
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292650"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552941"
 ---
-# <a name="field2validationrule-property-dao"></a>Field2. ValidationRule-Eigenschaft (DAO)
+# <a name="field2validationrule-property-dao"></a>Field2.ValidationRule-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -23,11 +23,11 @@ Mit dieser Eigenschaft wird ein Wert festgelegt oder zurückgegeben, der die Dat
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . ValidationRule
+*Ausdruck* . Validationrule
 
-*Ausdruck* Ein Ausdruck, der ein **Field2** -Objekt zurückgibt.
+*Ausdruck* Ein Ausdruck, der ein **Field2-Objekt** zurückgibt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 The settings or return values is a String that describes a comparison in the form of an SQL WHERE clause without the WHERE reserved word. For an object not yet appended to the **[Fields](fields-collection-dao.md)** collection, this property is read/write.
 
@@ -43,7 +43,7 @@ Bei einem **Field2**-Objekt hängt die Verwendung der **ValidationRule**-Eigensc
 <thead>
 <tr class="header">
 <th><p>Zugehörigkeit zu Objekt</p></th>
-<th><p>Verwendung</p></th>
+<th><p>Nutzung</p></th>
 </tr>
 </thead>
 <tbody>
@@ -60,7 +60,7 @@ Bei einem **Field2**-Objekt hängt die Verwendung der **ValidationRule**-Eigensc
 <td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Beziehung</strong></p></td>
+<td><p><strong>Relation</strong></p></td>
 <td><p>Nicht unterstützt</p></td>
 </tr>
 <tr class="odd">
@@ -77,6 +77,6 @@ Der von der **ValidationRule**-Eigenschaft eines **Field2**-Objekts angegebene Z
 
 
 > [!NOTE]
-> Wenn Sie die-Eigenschaft auf eine Zeichenfolge festlegen, die mit einem nicht-ganzzahligen Wert verkettet ist, und die Systemparameter ein nicht-U. S. Decimal-Zeichen wie ein Komma (beispielsweise strRule &gt; = &amp; "Price" lngPrice und lngPrice = 125, 50) angeben, tritt ein Fehler auf, wenn Ihr Code versucht, alle Daten zu überprüfen. Dies liegt daran, dass der Wert während der Verkettung mithilfe des Standard-Dezimaltrennzeichens in eine Zeichenfolge konvertiert wird und SQL der Microsoft Access-Datenbank-Engine nur US-Dezimaltrennzeichen akzeptiert.
+> Wenn Sie die Eigenschaft auf eine Zeichenfolge festlegen, die mit einem Nicht-Ganzzahlwert verkettet ist, und die Systemparameter eine Nicht-USA angeben. Dezimalzeichen wie z. B. ein Komma (z. B. strRule = "PRICE &gt; " &amp; lngPrice und gifPrice = 125,50) führt zu einem Fehler, wenn Ihr Code versucht, Daten zu überprüfen. Dies liegt daran, dass der Wert während der Verkettung mithilfe des Standard-Dezimaltrennzeichens in eine Zeichenfolge konvertiert wird und SQL der Microsoft Access-Datenbank-Engine nur US-Dezimaltrennzeichen akzeptiert.
 
 

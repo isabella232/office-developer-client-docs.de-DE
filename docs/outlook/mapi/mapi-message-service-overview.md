@@ -3,17 +3,17 @@ title: Übersicht über den MAPI-Nachrichtendienst
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 58f36a6b-bcc5-4ebb-9761-6f420a718d97
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 8973cdcee2b10346d0ba07033357b50f7e9a6a27
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: b4463dcadb73eb44aadd16cb75eb9750968a57bb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33406255"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59579607"
 ---
 # <a name="mapi-message-service-overview"></a>Übersicht über den MAPI-Nachrichtendienst
   
@@ -27,7 +27,7 @@ Die folgende Abbildung zeigt die Beziehung zwischen einer messagingbasierten Cli
   
 **Installation und Konfiguration eines Nachrichtendiensts**
   
-![Installation und Konfiguration eines Nachrichtendiensts](media/amapi_44.gif "Installation und Konfiguration eines Nachrichtendiensts")
+![Installation und Konfiguration eines Nachrichtendiensts](media/amapi_44.gif "Installation und Konfiguration des Nachrichtendiensts")
   
 Der Benutzer ruft den Installationscode der einzelnen Nachrichtendienste auf, um den Dienst und die zugehörigen Dienstanbieter zu einem Profil hinzuzufügen. In einem der in der Abbildung dargestellten Nachrichtendienste gibt es drei Dienstanbieter, im anderen Nachrichtendienst zwei Dienstanbieter. Zu einem späteren Zeitpunkt nach der Installation, in der Regel bei der Anmeldung, werden die Dienstanbieter in den jeweiligen Nachrichtendiensten konfiguriert. Der Konfigurationscode in jedem Nachrichtendienst behandelt die Konfiguration der Anbieter in dem Dienst.
   

@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250102(v=office.15)
 ms:contentKeyID: 48548088
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 9b89d292d86035e565ad18413062274dfbfc74db
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 63c7b2a572281353e1d498960f9f9ea59b2e6c08
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32312026"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562062"
 ---
 # <a name="using-the-command-object-access"></a>Verwenden des Command-Objekts (Access)
 
@@ -21,7 +21,7 @@ ms.locfileid: "32312026"
 
 Nachdem Sie eine Verbindung mit einer Datenquelle hergestellt haben, müssen Sie Anforderungen dafür ausführen, um Resultsets zu erhalten. ADO kapselt diese Befehlsfunktionalität im **Command** -Objekt.
 
-You can use the **Command** object to request any type of operation from the provider, assuming that the provider can interpret the command string properly. A common operation for data providers is to query a database and return records in a **Recordset** object. **Recordset**s wird später in diesem und anderen Kapiteln besprochen; Betrachten Sie Sie im Moment als Tools zum Speichern und Anzeigen von Resultsets. As with many ADO objects, depending on the functionality of the provider, some **Command** object collections, methods, or properties might generate errors when referenced.
+You can use the **Command** object to request any type of operation from the provider, assuming that the provider can interpret the command string properly. A common operation for data providers is to query a database and return records in a **Recordset** object. **Recordset-Gruppen** werden später in diesem und in anderen Kapiteln behandelt. Stellen Sie sich diese derzeit als Tools zum Speichern und Anzeigen von Resultsets vor. As with many ADO objects, depending on the functionality of the provider, some **Command** object collections, methods, or properties might generate errors when referenced.
 
 Es ist nicht immer erforderlich ein **Command**-Objekt zu erstellen, um einen Befehl für eine Datenquelle auszuführen. Sie können die **Execute**-Methode im **Connection**-Objekt oder die **Open**-Methode im **Recordset**-Objekt verwenden. Allerdings sollten Sie ein **Command**-Objekt verwenden, wenn Sie einen Befehl im Code wiederverwenden oder wenn Sie detaillierte Parameterinformationen mit dem Befehl übergeben müssen. Diese Szenarien werden weiter unten in diesem Kapitel ausführlicher behandelt.
 

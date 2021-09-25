@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249202(v=office.15)
 ms:contentKeyID: 48544502
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 2bfe788923d623300edac28f0f27534b3ffd8b32
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 039cb85a1867c84b74627e83621a43fca5f11fc4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283401"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59553438"
 ---
 # <a name="ado-dynamic-property-index"></a>Index zu dynamischen ADO-Eigenschaften
 
@@ -32,13 +32,13 @@ The OLE DB Programmer's Reference refers to an ADO property name by the term, "D
 
 - Supported OLE DB Properties of the Remoting Provider (in Englisch)
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Im Cross-Index verwendete Nummern:
 
 (1) Bei dieser Eigenschaft handelt es sich um ein boolesches Flag, das angibt, ob die benannte Schnittstelle verwendet werden soll. Sofern vorhanden, ist der entsprechende OLE DB-Eigenschaftenname aufgeführt.
 
-(2) die "Bookmarkable"-ADO-Eigenschaft wird intern für Abwärtskompatibilität generiert und der OLE DB-Eigenschaft dbPROP\_IROWSETLOCATE zugeordnet. Diese Eigenschaft ist dieselbe wie die, die der ADO-Eigenschaft IRowsetLocate entspricht.
+(2) Die ADO-Eigenschaft "Bookmarkable" wird aus Gründen der Abwärtskompatibilität intern generiert und der OLE DB-Eigenschaft DBPROP \_ IROWSETLOCATE zugeordnet. Diese Eigenschaft ist dieselbe wie die, die der ADO-Eigenschaft IRowsetLocate entspricht.
 
 (3) Der ADO-Eigenschaftenname Hidden Columns ist anders benannt als die Beschreibung des OLE DB-Eigenschaftennamens Hidden Columns Count.
 
@@ -149,7 +149,7 @@ Im Cross-Index verwendete Nummern:
 <td><p>DBPROP_INIT_LCID</p></td>
 </tr>
 <tr class="odd">
-<td><p>Standort</p></td>
+<td><p>Ort</p></td>
 <td><p>DBPROP_INIT_LOCATION</p></td>
 </tr>
 <tr class="even">
@@ -337,27 +337,27 @@ Die **dynamischen Eigenschaften** des **Recordset**-Objekts sind nicht mehr verf
 <td><p>DBPROP_IACCESSOR (1)</p></td>
 </tr>
 <tr class="even">
-<td><p>IChapteredRowset</p></td>
-<td><p>1</p></td>
+<td><p>Ichapteredrowset</p></td>
+<td><p>(1)</p></td>
 </tr>
 <tr class="odd">
-<td><p>IColumnsInfo</p></td>
+<td><p>Icolumnsinfo</p></td>
 <td><p>DBPROP_ICOLUMNSINFO (1)</p></td>
 </tr>
 <tr class="even">
-<td><p>IColumnsRowset</p></td>
+<td><p>Icolumnsrowset</p></td>
 <td><p>DBPROP_ICOLUMNSROWSET (1)</p></td>
 </tr>
 <tr class="odd">
-<td><p>IConnectionPointContainer</p></td>
+<td><p>Iconnectionpointcontainer</p></td>
 <td><p>DBPROP_ICONNECTIONPOINTCONTAINER (1)</p></td>
 </tr>
 <tr class="even">
 <td><p>IConvertType</p></td>
-<td><p>1</p></td>
+<td><p>(1)</p></td>
 </tr>
 <tr class="odd">
-<td><p>ILockBytes</p></td>
+<td><p>Ilockbytes</p></td>
 <td><p>DBPROP_ILOCKBYTES (1)</p></td>
 </tr>
 <tr class="even">
@@ -370,15 +370,15 @@ Die **dynamischen Eigenschaften** des **Recordset**-Objekts sind nicht mehr verf
 </tr>
 <tr class="even">
 <td><p>IParentRowset</p></td>
-<td><p>1</p></td>
+<td><p>(1)</p></td>
 </tr>
 <tr class="odd">
-<td><p>IRowsetChange</p></td>
+<td><p>Irowsetchange</p></td>
 <td><p>DBPROP_IROWSETCHANGE (1)</p></td>
 </tr>
 <tr class="even">
 <td><p>IRowsetExactScroll</p></td>
-<td><p>1</p></td>
+<td><p>(1)</p></td>
 </tr>
 <tr class="odd">
 <td><p>IRowsetFind</p></td>
@@ -389,11 +389,11 @@ Die **dynamischen Eigenschaften** des **Recordset**-Objekts sind nicht mehr verf
 <td><p>DBPROP_IROWSETIDENTITY (1)</p></td>
 </tr>
 <tr class="odd">
-<td><p>IRowsetInfo</p></td>
+<td><p>Irowsetinfo</p></td>
 <td><p>DBPROP_IROWSETINFO (1)</p></td>
 </tr>
 <tr class="even">
-<td><p>IRowsetLocate</p></td>
+<td><p>Irowsetlocate</p></td>
 <td><p>DBPROP_IROWSETLOCATE (1)</p></td>
 </tr>
 <tr class="odd">
@@ -402,7 +402,7 @@ Die **dynamischen Eigenschaften** des **Recordset**-Objekts sind nicht mehr verf
 </tr>
 <tr class="even">
 <td><p>IRowsetResynch</p></td>
-<td><p>1</p></td>
+<td><p>(1)</p></td>
 </tr>
 <tr class="odd">
 <td><p>IRowsetScroll</p></td>
@@ -417,11 +417,11 @@ Die **dynamischen Eigenschaften** des **Recordset**-Objekts sind nicht mehr verf
 <td><p>DBPROP_IROWSETVIEW (1)</p></td>
 </tr>
 <tr class="even">
-<td><p>IRowsetIndex</p></td>
+<td><p>Irowsetindex</p></td>
 <td><p>DBPROP_IROWSETINDEX (1)</p></td>
 </tr>
 <tr class="odd">
-<td><p>ISequentialStream</p></td>
+<td><p>Isequentialstream</p></td>
 <td><p>DBPROP_ISEQUENTIALSTREAM (1)</p></td>
 </tr>
 <tr class="even">
@@ -433,7 +433,7 @@ Die **dynamischen Eigenschaften** des **Recordset**-Objekts sind nicht mehr verf
 <td><p>DBPROP_ISTREAM (1)</p></td>
 </tr>
 <tr class="even">
-<td><p>ISupportErrorInfo</p></td>
+<td><p>Isupporterrorinfo</p></td>
 <td><p>DBPROP_ISUPPORTERRORINFO (1)</p></td>
 </tr>
 <tr class="odd">
@@ -613,8 +613,8 @@ Die **dynamischen Eigenschaften** des **Recordset**-Objekts sind nicht mehr verf
 <td><p>DBPROP_COMMITPRESERVE</p></td>
 </tr>
 <tr class="odd">
-<td><p>Private1</p></td>
-<td><p>5</p></td>
+<td><p>Privat1</p></td>
+<td><p>(5)</p></td>
 </tr>
 <tr class="even">
 <td><p>Quick Restart</p></td>

@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249822(v=office.15)
 ms:contentKeyID: 48547067
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 2d10a493aac39934a047c6fa311233fd6c9fac4e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d671ba680992f17cf8eab8d36559cb4b88d3b43c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288862"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552808"
 ---
 # <a name="more-ways-to-move-in-a-recordset"></a>Weitere Möglichkeiten zum Verschieben in ein Recordset
 
@@ -40,7 +40,7 @@ If oRs.BOF Then oRs.MoveFirst
 . . . 
 ```
 
-Wenn **Recordset** -Objekt gefiltert oder sortiert wird und die Daten des aktuellen Datensatzes geändert wurden, ändert sich die Position möglicherweise ebenso. In solchen Fällen funktioniert die **MoveNext** -Methode normal, aber beachten Sie, dass die Position einen Datensatz von der neuen Position nach vorn verschoben wird, nicht die alte Position. Wenn beispielsweise die Daten im aktuellen Datensatz geändert werden, sodass der Datensatz an das Ende des sortierten **Recordset-Objekts**verschoben wird, bedeutet dies, dass durch Aufrufen von **MoveNext** in ADO das Festlegen des aktuellen Datensatzes auf die Position nach dem letzten Datensatz in der ** Recordset** (**EOF** = **true**).
+Wenn **Recordset** -Objekt gefiltert oder sortiert wird und die Daten des aktuellen Datensatzes geändert wurden, ändert sich die Position möglicherweise ebenso. In solchen Fällen funktioniert die **MoveNext-Methode** normal, beachten Sie jedoch, dass die Position um einen Datensatz von der neuen Position nach vorne verschoben wird, nicht von der alten Position. Wenn Sie beispielsweise die Daten im aktuellen Datensatz so ändern, dass der Datensatz an das Ende des sortierten **Recordsets** verschoben wird, bedeutet dies, dass das Aufrufen von **MoveNext** dazu führt, dass ADO den aktuellen Datensatz auf die Position nach dem letzten Datensatz im **Recordset** **(EOF**  =  **True)** festlegt.
 
 The behavior of the various Move methods of the **Recordset** object depends, to some extent, on the data within the **Recordset**. New records added to the **Recordset** are initially added in a particular order, which is defined by the data source and may be dependent implicitly or explicitly on the data in the new record. For example, if a sort or a join is done within the query that populates the **Recordset**, the new record will be inserted in the appropriate place within the **Recordset**. If ordering is not explicitly specified when creating the **Recordset**, changes in the data source implementation may cause the ordering of the returned rows to change inadvertently. In addition, the sorting, filtering, and editing functions of the **Recordset** can affect the order and possibly which rows in the recordset will be visible.
 

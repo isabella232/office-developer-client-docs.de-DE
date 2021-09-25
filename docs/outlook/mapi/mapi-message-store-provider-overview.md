@@ -3,39 +3,39 @@ title: Übersicht über den MAPI-Nachrichtenspeicheranbieter
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: eae44469-b217-4d05-b47f-5a0b1fab7056
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 5d4ef074523cd654c3db2d686494d9a4f864e7cb
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: dce839bdeb067abb3702919faad9782a53ebde18
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429313"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556168"
 ---
 # <a name="mapi-message-store-provider-overview"></a>Übersicht über den MAPI-Nachrichtenspeicheranbieter
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Nachrichtenspeicheranbieter verarbeiten das Speichern und Abrufen von Nachrichten und anderen Informationen für die Benutzer von Clientanwendungen. Die Nachrichteninformationen werden mithilfe eines hierarchischen Systems organisiert, das als Nachrichtenspeicher bezeichnet wird. Der Nachrichtenspeicher ist auf mehreren Ebenen implementiert, mit Containern, die als Ordner bezeichnet werden und Nachrichten unterschiedlicher Typen enthalten. Die Anzahl der Ebenen in einem Nachrichtenspeicher ist nicht begrenzt. Ordner können viele Unterordner enthalten. 
+Nachrichtenspeicheranbieter verarbeiten das Speichern und Abrufen von Nachrichten und anderen Informationen für die Benutzer von Clientanwendungen. Die Nachrichteninformationen werden mithilfe eines hierarchischen Systems organisiert, das als Nachrichtenspeicher bezeichnet wird. Der Nachrichtenspeicher wird auf mehreren Ebenen implementiert, wobei Container als Ordner bezeichnet werden, die Nachrichten unterschiedlicher Typen enthalten. Es gibt keine Beschränkung für die Anzahl der Ebenen in einem Nachrichtenspeicher. Ordner können viele Unterordner enthalten. 
   
-Die folgende Abbildung zeigt die hierarchische Nachrichtenspeicherarchitektur.
+Die folgende Abbildung zeigt die hierarchische Architektur des Nachrichtenspeichers.
   
 **Architektur des Nachrichtenspeichers**
   
-![Architektur des Nachrichtenspeichers](media/amapi_03.gif "Nachrichtenspeicherarchitektur")
+![Architektur des Nachrichtenspeichers](media/amapi_03.gif "Architektur des Nachrichtenspeichers")
   
-Die Abbildung zeigt zwei Ordner, einen mit einem Unterordner. Clientanwendungsbenutzer können auf eine Zusammenfassungsansicht der nachrichten zugreifen, die in den einzelnen Ordnern enthalten sind, oder sie einzeln mit einem Formular anzeigen. Ob der Client ein von MAPI zur Verfügung stelltes Standardformular oder ein benutzerdefiniertes Formular anzeigt, das von einem Formularentwickler zur Verfügung stellt, hängt vom Typ oder der Klasse der Nachricht ab. Der erste Ordner enthält Notiznachrichten und verwendet das MAPI-Standardnotizformular. Der zweite Ordner enthält Bestandsanforderungsnachrichten und verwendet ein benutzerdefiniertes Bestandsformular. Die Informationen in beiden Formularen stellen die Eigenschaften der Nachricht dar.
+Die Abbildung zeigt zwei Ordner, einen mit einem Unterordner. Clientanwendungsbenutzer können auf eine Zusammenfassungsansicht der in den einzelnen Ordnern enthaltenen Nachrichten zugreifen oder sie einzeln mit einem Formular anzeigen. Ob der Client ein standardformular anzeigt, das MAPI bereitstellt, oder ein benutzerdefiniertes Formular, das ein Formularentwickler bereitstellt, hängt vom Typ oder der Klasse der Nachricht ab. Der erste Ordner enthält Notizmeldungen und verwendet das MAPI-Standardnotizformular. Der zweite Ordner enthält Bestandsanforderungsnachrichten und verwendet ein benutzerdefiniertes Bestandsformular. Die Informationen in beiden Formularen stellen die Eigenschaften der Nachricht dar.
   
-Sie können Nachrichtenspeicherdaten auf unterschiedliche Weise verwenden. Zusätzlich zur Verwendung von Daten für herkömmliche elektronische E-Mails können Sie Ordner als Forum für öffentliche Diskussionen, als Repository für Referenzdokumente oder als Container für Voicemail, Kalender, Kontakte oder Aufgaben verwenden. Ein einzelner Nachrichtenspeicher kann viele Arten von Informationen enthalten. Mehrere Clients können denselben Nachrichtenspeicher installieren. Dies macht die Freigabe von Daten einfach und schnell. 
+Sie können Nachrichtenspeicherdaten auf verschiedene Arten verwenden. Zusätzlich zur Verwendung von Daten für herkömmliche E-Mails können Sie Ordner als Forum für öffentliche Diskussionen, als Repository für Referenzdokumente oder als Container für Voicemail, Kalender, Kontakte oder Aufgaben verwenden, z. B. Ein einzelner Nachrichtenspeicher kann viele Arten von Informationen enthalten. Mehrere Clients können denselben Nachrichtenspeicher installieren. Dadurch wird die Freigabe von Daten einfach und schnell. 
   
-Mit Nachrichtenspeicherordnern können Sie Nachrichten sortieren und filtern und die Nachrichtenanzeige auf einer Benutzeroberfläche anpassen. Links zu gefilterten Nachrichten werden in speziellen Ordnern gespeichert, die als Suchergebnisordner bezeichnet werden. Der Benutzer einer Clientanwendung gibt Filterkriterien ein, die MAPI als Einschränkung bezeichnet, und die Kriterien werden auf die Nachrichten angewendet, die in einem oder mehreren Ordnern gespeichert sind. Beispielsweise kann ein Benutzer nur nachrichten anzeigen möchten, die sich mit einem bestimmten Betreff befassen und über aktuellere Ankunftsdaten als letzte Woche verfügen. Verweise auf nachrichten, die den Kriterien entsprechen, werden im Suchordner aufgeführt, und die tatsächlichen Nachrichten verbleiben in ihren regulären Ordnern.
+Mit Nachrichtenspeicherordnern können Sie Nachrichten sortieren und filtern und die Meldungsanzeige auf einer Benutzeroberfläche anpassen. Links zu gefilterten Nachrichten werden in speziellen Ordnern gespeichert, die als Suchergebnisordner bezeichnet werden. Der Benutzer einer Clientanwendung gibt Filterkriterien ein, die mapi als Einschränkung bezeichnet, und die Kriterien werden auf die in einem oder mehreren Ordnern gespeicherten Nachrichten angewendet. Ein Benutzer möchte z. B. nur die Nachrichten anzeigen, die sich auf einen bestimmten Betreff beziehen und über Eintreffen von Datumsangaben verfügen, die aktueller als letzte Woche sind. Verweise auf die Nachrichten, die den Kriterien entsprechen, werden im Suchordner aufgelistet, und die tatsächlichen Nachrichten verbleiben in ihren regulären Ordnern.
   
-Nachrichten sind die Dateneinheiten, die von einem Benutzer oder einer Anwendung an einen anderen Benutzer oder eine andere Anwendung übertragen werden. Jede Nachricht enthält einige Nachrichtentexte mit einfacher oder komplexer Formatierung sowie Nachrichtenumschlaginformationen, die für die Übertragung verwendet werden. Einige Nachrichten enthalten eine oder mehrere Anlagen oder zusätzliche Daten im Zusammenhang mit einer Nachricht in Form einer Datei, einer anderen Nachricht oder eines OLE-Objekts. 
+Nachrichten sind die Dateneinheiten, die von einem Benutzer oder einer Anwendung an einen anderen Benutzer oder eine andere Anwendung übertragen werden. Jede Nachricht enthält Nachrichtentext mit einfacher oder komplexer Formatierung und Nachrichtenumschlaginformationen, die für die Übertragung verwendet werden. Einige Nachrichten enthalten eine oder mehrere Anlagen oder zusätzliche Daten, die sich auf eine Nachricht in Form einer Datei, einer anderen Nachricht oder eines OLE-Objekts beziehen und mit dieser übertragen werden. 
   
-Je nach Anbieter des Nachrichtenspeichers kann ein Benutzer zusätzlich zu den gesendeten oder empfangenen Nachrichten eine neue Nachricht speichern, die gerade geschrieben wird. Nachrichten können von einem Ordner in einen anderen kopiert oder verschoben werden, und jede Kopie wird zu einer separaten Nachricht, die einzeln kopiert, gelöscht oder geändert werden kann. Ein weiteres Feature, das einige Nachrichtenspeicheranbieter aktivieren, ist die Möglichkeit, eine Nachricht nach dem Empfangen zu ändern und sie wieder in ihrem Ordner zu speichern. Ein Benutzer nutzt dieses Feature möglicherweise zum Drehen einer Faxnachricht, die auf den Kopf gestellt wurde. Der Benutzer kann die richtige Ansicht für die spätere Anzeige im Ordner speichern. 
+Abhängig vom Nachrichtenspeicheranbieter kann ein Benutzer zusätzlich zu den nachrichten, die gesendet oder empfangen wurden, eine neue Nachricht speichern, die gerade geschrieben wird. Nachrichten können von einem Ordner in einen anderen kopiert oder verschoben werden, wobei jede Kopie zu einer separaten Nachricht wird, die einzeln kopiert, gelöscht oder geändert werden kann. Ein weiteres Feature, das einige Nachrichtenspeicheranbieter aktivieren, ist die Möglichkeit, eine Nachricht zu ändern, nachdem sie empfangen wurde, und sie wieder in ihrem Ordner zu speichern. Ein Benutzer kann diese Funktion nutzen, um eine Faxnachricht zu drehen, die auf den Kopf gelangt ist. Der Benutzer kann die richtige Ansicht im Ordner für die spätere Anzeige speichern. 
   
 ## <a name="see-also"></a>Siehe auch
 

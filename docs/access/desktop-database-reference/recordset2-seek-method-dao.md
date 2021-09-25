@@ -1,20 +1,20 @@
 ---
-title: Recordset2. Seek-Methode (DAO)
+title: Recordset2.Seek-Methode (DAO)
 TOCTitle: Seek Method
 ms:assetid: 9871619b-a303-c97d-54c0-defc8d9b87f5
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197940(v=office.15)
 ms:contentKeyID: 48546489
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 9510faab9035f2b2cbcccae0a8ddefa484a95cb1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f9789699e39bcb7b7532beb69aaf52c8f0d6e889
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307189"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552654"
 ---
-# <a name="recordset2seek-method-dao"></a>Recordset2. Seek-Methode (DAO)
+# <a name="recordset2seek-method-dao"></a>Recordset2.Seek-Methode (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -22,9 +22,9 @@ Sucht den Datensatz in einem indizierten **Recordset**-Objekt vom Typ Tabelle, d
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Seek (***Comparison***, ***key1***, ***key2***, ***key3***, ***Key4***, ***Key5***, ***Key6***, ***Key7***, ***Key8***, ***Key9***, ***Key10***, ***Key11***, ****** Key12, ***Key13***)
+*Ausdruck* . Seek(***Comparison** _, _*_Key1_*_, _*_Key2_*_, _*_Key3_*_, _*_Key4_*_, _*_Key5_*_, _*_Key6_*_, _*_Key7_*_, _*_Key8_*_, _*_Key9_*_, _*_Key10_*_, _*_Key11_*_, _*_Key12_*_, _*_Key13_**)
 
-*Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset2-Objekt** darstellt.
 
 ## <a name="parameters"></a>Parameter
 
@@ -45,7 +45,7 @@ Sucht den Datensatz in einem indizierten **Recordset**-Objekt vom Typ Tabelle, d
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>Comparison</em></p></td>
+<td><p><em>Vergleich</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>String</strong></p></td>
 <td><p>Einer der folgenden Zeichenfolgenausdrücke: &lt;, &lt;=, =, &gt;= oder &gt;.</p></td>
@@ -54,7 +54,7 @@ Sucht den Datensatz in einem indizierten **Recordset**-Objekt vom Typ Tabelle, d
 <td><p><em>Key1, Key2...Key13</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Mindestens ein Wert, der den Feldern im aktuellen Index des <strong>Recordset</strong> -Objekts gemäß der Angabe seiner Einstellungen für die Eigenschaft <strong>Index</strong> entspricht. Sie können bis zu 13 key-Argumente verwenden.</p></td>
+<td><p>Mindestens ein Wert, der den Feldern im aktuellen Index des <strong>Recordset</strong> -Objekts gemäß der Angabe seiner Einstellungen für die Eigenschaft <strong>Index</strong> entspricht. Sie können bis zu 13 key-Argumente verwenden.</p></td>
 </tr>
 </tbody>
 </table>
@@ -64,23 +64,23 @@ Sucht den Datensatz in einem indizierten **Recordset**-Objekt vom Typ Tabelle, d
 
 Bevor Sie **Seek** verwenden können, müssen Sie den aktuellen Index mit der **Index**-Eigenschaft festlegen. Wenn der Index ein nicht eindeutiges Schlüsselfeld identifiziert, sucht **Seek** nach dem ersten Datensatz, der die Kriterien erfüllt.
 
-Mit der **Seek** -Methode werden die angegebenen Schlüsselfelder durchsucht, und es wird der erste Datensatz gesucht, der den durch Comparison und key1 angegebenen Kriterien entspricht. Wenn er gefunden wurde, wird er zum aktuellen Datensatz gemacht, und die **NoMatch**-Eigenschaft wird auf **False** festgelegt. Falls mit der **Seek**-Methode kein Suchergebnis erzielt wird, wird die **NoMatch**-Eigenschaft auf **True** festgelegt, und der aktuelle Datensatz ist nicht definiert.
+Mit der **Seek**-Methode werden die angegebenen Schlüsselfelder nach dem ersten Datensatz durchsucht, der den durch die Argumente comparison und key1 angegebenen Kriterien entspricht. Wenn er gefunden wurde, wird er zum aktuellen Datensatz gemacht, und die **NoMatch**-Eigenschaft wird auf **False** festgelegt. Falls mit der **Seek**-Methode kein Suchergebnis erzielt wird, wird die **NoMatch**-Eigenschaft auf **True** festgelegt, und der aktuelle Datensatz ist nicht definiert.
 
-Wenn comparison gleich (=), größer als oder gleich (\>=) oder größer als (\>) ist, beginnt **Seek** am Anfang des Indexes und sucht nach vorn.
+Wenn für comparison gleich (=), größer gleich (\>=) oder größer als (\>) angegeben wird, beginnt **Seek** am Anfang des Indexes mit der Vorwärtssuche.
 
-Wenn der Vergleich kleiner als (\<) oder kleiner als oder gleich (\<=) ist, beginnt **Seek** am Ende des Indexes und sucht rückwärts. However, if there are duplicate index entries at the end of the index, **Seek** starts at an arbitrary entry among the duplicates and then searches backward.
+Wenn für comparison kleiner als (\<), kleiner als oder gleich (\<=) angegeben wird, beginnt **Seek** am Ende des Indexes mit der Rückwärtssuche. However, if there are duplicate index entries at the end of the index, **Seek** starts at an arbitrary entry among the duplicates and then searches backward.
 
-You must specify values for all fields defined in the index. If you use **Seek** with a multiple-column index, and you don't specify a comparison value for every field in the index, then you cannot use the equal (=) operator in the comparison. Das liegt daran, dass einige der Criteria-Felder (key2, key3 usw.) standardmäßig auf NULL festgelegt werden, was wahrscheinlich nicht übereinstimmt. Therefore, the equal operator will work correctly only if you have a record which is all **null** except the key you're looking for. Es wird empfohlen, stattdessen den Operator größer oder gleich (\>=) zu verwenden.
+You must specify values for all fields defined in the index. If you use **Seek** with a multiple-column index, and you don't specify a comparison value for every field in the index, then you cannot use the equal (=) operator in the comparison. Dies liegt daran, dass einige der Kriterienfelder (key2, key3 usw.) standardmäßig auf Null festgelegt werden, was möglicherweise nicht zutrifft. Daher funktioniert der Operator Gleich nur dann ordnungsgemäß, wenn Sie einen Datensatz besitzen, der ausgenommen von dem key, den Sie suchen, **null** aufweist. Wir empfehlen, stattdessen den Operator Größer als oder Gleich (\>=) zu verwenden.
 
-Das Argument key1 muss denselben Felddatentyp wie das entsprechende Feld im aktuellen Index haben. Verweist der aktuelle Index beispielsweise auf ein Zahlenfeld (z. B. Employee ID), muss key1 numerisch sein. Verweist er hingegen auf ein Textfeld (z. B. Last Name), muss key1 eine Zeichenfolge sein.
+Das key1-Argument muss den gleichen Felddatentyp besitzen wie das entsprechende Feld im aktuellen Index. Wenn der aktuelle Index beispielsweise auf ein Zahlenfeld (z. B. Mitarbeiter-ID) verweist, muss key1 numerisch sein. Wenn der aktuelle Index auf ein Textfeld (z. B. den Nachnamen) verweist, muss key1 eine Zeichenfolge sein.
 
 Zum Verwenden von **Seek** muss kein aktueller Datensatz vorhanden sein.
 
-Zum Auflisten der vorhandenen Indizes können Sie die **[Indexes](indexes-collection-dao.md)** -Auflistung verwenden.
+Zum Auflisten der vorhandenen Indizes können Sie die **[Indexes](indexes-collection-dao.md)**-Auflistung verwenden.
 
-To locate a record in a dynaset- or snapshot-type **Recordset** that satisfies a specific condition that is not covered by existing indexes, use the **[Find](recordset2-findfirst-method-dao.md)** methods. To include all records, not just those that satisfy a specific condition, use the **[Move](recordset-movefirst-method-dao.md)** methods to move from record to record.
+Mithilfe der **[Find](recordset2-findfirst-method-dao.md)**-Methoden können Sie in einem **Recordset**-Objekt vom Typ "Dynaset" oder "Snapshot" nach einem Datensatz suchen, der einer bestimmten Bedingung entspricht, die nicht in vorhandenen Indizes vorhanden ist. Sollen alle Datensätze gefunden werden, nicht nur diejenigen, die eine bestimmte Bedingung erfüllen, bewegen Sie sich mithilfe der **[Move](recordset-movefirst-method-dao.md)**-Methoden von Datensatz zu Datensatz.
 
-You can't use the **Seek** method on a linked table because you can't open linked tables as table-type **Recordset** objects. However, if you use the **[OpenDatabase](dbengine-opendatabase-method-dao.md)** method to directly open an installable ISAM (non-ODBC) database, you can use **Seek** on tables in that database.
+Sie können die **Seek**-Methode nicht auf eine verknüpfte Tabelle anwenden, da verknüpfte Tabellen als **Recordset**-Objekte vom Typ Tabelle nicht geöffnet werden können. Wenn Sie jedoch die **[OpenDatabase](dbengine-opendatabase-method-dao.md)**-Methode verwenden, um eine installierbare ISAM (nicht ODBC)-Datenbank direkt zu öffnen, können Sie **Seek** auf Tabellen in dieser Datenbank anwenden.
 
 ## <a name="example"></a>Beispiel
 

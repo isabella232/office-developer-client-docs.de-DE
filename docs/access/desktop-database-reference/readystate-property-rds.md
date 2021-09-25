@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250175(v=office.15)
 ms:contentKeyID: 48548412
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 71dd674e90e2438c616f0973c4f9948f1b20b1f1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: e1dab8baeeef547c93e8e3ced89ed3fc24ab97f0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300819"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562405"
 ---
 # <a name="readystate-property-rds"></a>ReadyState-Eigenschaft (RDS)
 
@@ -20,7 +20,7 @@ ms.locfileid: "32300819"
 
 Gibt den Status eines [DataControl](datacontrol-object-rds.md)-Objekts beim Abrufen von Daten in dessen [Recordset](recordset-object-ado.md)-Objekt an.
 
-## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
+## <a name="settings-and-return-values"></a>Einstellungen- und Rückgabewerte
 
 Legt einen der folgenden Werte fest oder gibt ihn zurück.
 
@@ -54,9 +54,9 @@ Legt einen der folgenden Werte fest oder gibt ihn zurück.
 > [!NOTE]
 > Each client-side executable file that uses these constants must provide declarations for them. You can cut and paste the constant declarations you want from the file Adcvbs.inc, located in the C:\Program Files\Common Files\System\MSADC folder.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Verwenden Sie das [onReadyStateChange](onreadystatechange-event-rds.md)-Ereignis, um Änderungen in der **ReadyState**-Eigenschaft während einer asynchronen Abfrageoperation zu überwachen. Das ist effizienter, als den Wert der Eigenschaft regelmäßig zu überprüfen.
 
-Wenn während eines asynchronen Vorgangs ein Fehler auftritt, ändert sich die **ReadyState** -Eigenschaft in **AdcReadyStateComplete**, die [State](state-property-ado.md) -Eigenschaft ändert sich von **adStateExecuting** in **adStateClosed**, und das **Recordset** Object [value](value-property-ado.md) -Eigenschaft ** bleibt unverändert.
+Wenn während eines asynchronen Vorgangs ein Fehler auftritt, ändert sich die **ReadyState-Eigenschaft** in **adcReadyStateComplete,** die [State-Eigenschaft](state-property-ado.md) ändert sich von **adStateExecuting** in **adStateClosed,** und die Value-Eigenschaft [](value-property-ado.md) des **Recordset-Objekts** bleibt *Nothing*.
 

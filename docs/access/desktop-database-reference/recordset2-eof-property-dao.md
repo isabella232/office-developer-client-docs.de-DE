@@ -1,5 +1,5 @@
 ---
-title: Recordset2. EOF-Eigenschaft (DAO)
+title: Recordset2.EOF-Eigenschaft (DAO)
 TOCTitle: EOF Property
 ms:assetid: 9d4e1ee2-e866-3ebf-e08b-b31b0cb47ed9
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff198245(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1052886
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 2d328160b6c88de61a041c54bcd6f305b73c26da
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: fa77494e65148c23e4c65bf2acc81f14359b7c7a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309443"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572830"
 ---
-# <a name="recordset2eof-property-dao"></a>Recordset2. EOF-Eigenschaft (DAO)
+# <a name="recordset2eof-property-dao"></a>Recordset2.EOF-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -27,9 +27,9 @@ Gibt einen Wert zurück, der angibt, ob die aktuelle Datensatzposition hinter de
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . EOF
+*Ausdruck* .EOF
 
-*Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset2-Objekt** darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 
@@ -43,13 +43,13 @@ Wenn Sie ein **Recordset**-Objekt öffnen, das keine Datensätze enthält, erhal
 
 Wenn Sie den letzten verbleibenden Datensatz im **Recordset**-Objekt löschen, bleiben die Eigenschaften **BOF** und **EOF** so lange **False**, bis Sie versuchen, den aktuellen Datensatz neu zu positionieren.
 
-Wenn Sie die **MoveLast**-Methode auf ein **Recordset**-Objekt anwenden, das Datensätze enthält, wird der letzte Datensatz zum aktuellen Datensatz. Wenn Sie dann die **MoveNext**-Methode verwenden, wird der aktuelle Datensatz ungültig, und die **EOF**-Eigenschaft wird auf **True** festgelegt. Wenn Sie dagegen die **MoveFirst**-Methode auf ein **Recordset**-Objekt anwenden, das Datensätze enthält, wird der erste Datensatz zum aktuellen Datensatz. Wenn Sie dann die **MovePrevious**-Methode verwenden, gibt es keinen aktuellen Datensatz, und die **BOF**-Eigenschaft erhält den Wert **True**.
+Wenn Sie die **MoveLast**-Methode auf ein **Recordset**-Objekt anwenden, das Datensätze enthält, wird der letzte Datensatz zum aktuellen Datensatz. Wenn Sie dann die **MoveNext**-Methode verwenden, wird der aktuelle Datensatz ungültig und die **EOF**-Eigenschaft wird auf **True** festgelegt. Wenn Sie dagegen die **MoveFirst**-Methode auf ein **Recordset**-Objekt anwenden, das Datensätze enthält, wird der erste Datensatz zum aktuellen Datensatz. Wenn Sie dann die **MovePrevious**-Methode verwenden, gibt es keinen aktuellen Datensatz und die **BOF**-Eigenschaft erhält den Wert **True**.
 
 Wenn Sie alle Datensätze in einem **Recordset**-Objekt verwenden, durchsucht Ihr Code gewöhnlich unter Verwendung der **MoveNext**-Methode die Datensätze, bis die **EOF**-Eigenschaft den Wert **True** hat.
 
 Wenn Sie die **MoveNext**-Methode verwenden, während die **EOF**-Eigenschaft den Wert **True** hat, oder wenn Sie die **MovePrevious**-Methode verwenden, während die **BOF**-Eigenschaft den Wert **True** hat, tritt ein Fehler auf.
 
-This table shows which Move methods are allowed with different combinations of the **BOF** and **EOF** properties.
+In dieser Tabelle ist dargestellt, welche Move-Methoden für verschiedene Kombinationen der Eigenschaften **BOF** und **EOF** zulässig sind.
 
 <table>
 <colgroup>
@@ -62,30 +62,30 @@ This table shows which Move methods are allowed with different combinations of t
 <thead>
 <tr class="header">
 <th><p></p></th>
-<th><p>MoveFirst<br />
+<th><p>MoveFirst,<br />
 MoveLast</p></th>
-<th><p>MovePrevious<br />
-Verschieben &lt; 0</p></th>
+<th><p>MovePrevious,<br />
+Move &lt; 0</p></th>
 <th><p><br />
 Move 0</p></th>
-<th><p>MoveNext<br />
-Verschieben &gt; 0</p></th>
+<th><p>MoveNext,<br />
+Move &gt; 0</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>BOF = true,</strong><br />
-<strong>EOF = false</strong></p></td>
-<td><p>Allowed</p></td>
+<td><p><strong>BOF=True,</strong><br />
+<strong>EOF=False</strong></p></td>
+<td><p>Zugelassen</p></td>
 <td><p>Fehler</p></td>
 <td><p>Fehler</p></td>
-<td><p>Allowed</p></td>
+<td><p>Zugelassen</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>BOF = false,</strong><br />
-<strong>EOF = true</strong></p></td>
-<td><p>Allowed</p></td>
-<td><p>Allowed</p></td>
+<td><p><strong>BOF=False,</strong><br />
+<strong>EOF=True</strong></p></td>
+<td><p>Zugelassen</p></td>
+<td><p>Zulässig</p></td>
 <td><p>Fehler</p></td>
 <td><p>Fehler</p></td>
 </tr>
@@ -99,8 +99,8 @@ Verschieben &gt; 0</p></th>
 <tr class="even">
 <td><p>Beide <strong>False</strong></p></td>
 <td><p>Zulässig</p></td>
-<td><p>Allowed</p></td>
-<td><p>Allowed</p></td>
+<td><p>Zulässig</p></td>
+<td><p>Zulässig</p></td>
 <td><p>Zulässig</p></td>
 </tr>
 </tbody>
@@ -111,9 +111,9 @@ Wenn eine Move-Methode zulässig ist, heißt das nicht, dass die Methode einen D
 
 Eine **OpenRecordset**-Methode ruft intern eine **MoveFirst**-Methode auf. Wenn Sie daher eine **OpenRecordset**-Methode auf eine leere Gruppe von Datensätzen anwenden, werden die Eigenschaften **BOF** und **EOF** auf **True** gesetzt. (In der folgenden Tabelle ist das Verhalten einer fehlgeschlagenen **MoveFirst**-Methode aufgeführt.)
 
-All Move methods that successfully locate a record will set both **BOF** and **EOF** to **False**.
+Alle Move-Methoden, die einen Datensatz erfolgreich finden, legen für die Eigenschaften **BOF** und **EOF** den Wert **False** fest.
 
-Wenn Sie in einem Microsoft Access-Arbeitsbereich einem leeren **Recordset**-Objekt einen Datensatz hinzufügen, wird die **BOF**-Eigenschaft auf **False** festgelegt, **EOF** bleibt jedoch **True** und gibt dadurch an, dass sich die aktuelle Position am Ende des **Recordset**-Objekts befindet.
+Wenn Sie in einem Microsoft Access-Arbeitsbereich einem leeren **Recordset** einen Datensatz hinzufügen, wird die **BOF**-Eigenschaft auf **False** festgelegt, **EOF** bleibt jedoch **True** und gibt dadurch an, dass sich die aktuelle Position am Ende des **Recordsets** befindet.
 
 **Delete**-Methoden ändern in keinem Fall die Einstellung der Eigenschaften **BOF** und **EOF**, selbst wenn durch die Methode der letzte Datensatz aus einem **Recordset**-Objekt entfernt wird.
 

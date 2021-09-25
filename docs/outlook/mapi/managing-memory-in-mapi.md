@@ -1,27 +1,27 @@
 ---
-title: Verwalten von Arbeitsspeicher in MAPI
+title: Verwalten des Arbeitsspeichers in MAPI
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 9eee6925-ab91-413e-8907-c747ab4a4bb5
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 66489c09be641d8fe9ae5f3ffff46a6d5004f473
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 19a91c02bfb5ba3cd446643ac7039841f17d1a05
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32298096"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59571514"
 ---
-# <a name="managing-memory-in-mapi"></a>Verwalten von Arbeitsspeicher in MAPI
+# <a name="managing-memory-in-mapi"></a>Verwalten des Arbeitsspeichers in MAPI
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Das Wissen, wie und wann Arbeitsspeicher zugewiesen und frei werden soll, ist ein wichtiger Bestandteil der Programmierung mit MAPI. MAPI stellt Funktionen und Makros zur Verfügung, die Ihr Client oder Dienstanbieter verwenden kann, um den Arbeitsspeicher konsistent zu verwalten. Die drei Funktionen sind wie folgt:
+Zu wissen, wie und wann Speicher zugeordnet und freigegeben werden soll, ist ein wichtiger Bestandteil der Programmierung mit MAPI. MAPI stellt Funktionen und Makros bereit, die Ihr Client oder Dienstanbieter verwenden kann, um den Speicher konsistent zu verwalten. Die drei Funktionen sind wie folgt:
   
 [MAPIAllocateBuffer](mapiallocatebuffer.md)
   
@@ -29,9 +29,9 @@ Das Wissen, wie und wann Arbeitsspeicher zugewiesen und frei werden soll, ist ei
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-Wenn Clients und Dienstanbieter diese Funktionen verwenden, wird das Problem, wer "besitzt", d. h. weiß, wie sie freigegeben werden, beseitigt. Ein Client, der eine Dienstanbietermethode aufruft, muss keinen Puffer übergeben, der groß genug ist, um einen Rückgabewert beliebiger Größe zu halten. Der Dienstanbieter kann einfach mithilfe von **MAPIAllocateBuffer** und, falls erforderlich, **MAPIAllocateMore**, die entsprechende Menge an Arbeitsspeicher zuordnen, und der Client kann ihn später mithilfe von **MAPIFreeBuffer**, unabhängig vom Dienstanbieter, nach Besorgung veröffentlichen. 
+Wenn Clients und Dienstanbieter diese Funktionen verwenden, wird das Problem, wem "gehört" – d. h. wie sie freigegeben werden sollen – ein bestimmter Speicherblock eliminiert. Ein Client, der eine Dienstanbietermethode aufruft, muss keinen Puffer übergeben, der groß genug ist, um einen Rückgabewert beliebiger Größe zu speichern. Der Dienstanbieter kann einfach die entsprechende Menge an Arbeitsspeicher mit **MAPIAllocateBuffer** und, falls erforderlich, **MAPIAllocateMore** zuordnen, und der Client kann ihn später mit **MAPIFreeBuffer** unabhängig vom Dienstanbieter freigeben. 
   
-Die Speichermakros werden verwendet, um Strukturen oder Arrays von Strukturen einer bestimmten Größe zuzuordnen. Clients und Dienstanbieter sollten diese Makros verwenden, anstatt den Arbeitsspeicher manuell zuzuordnen. Wenn ein Client beispielsweise eine Namensauflösungsverarbeitung für eine Empfängerliste mit drei Einträgen durchführen muss, kann das **Makro SizedADRLIST** verwendet werden, um eine **ADRLIST-Struktur** zu erstellen, die an **IAddrBook::ResolveName** mit der richtigen Anzahl von **ADRENTRY-Mitgliedern** übergeben wird. Alle Speichermakros sind in MAPIDEFS definiert. H-Headerdatei. Diese Makros sind: 
+Die Speichermakros werden verwendet, um Strukturen oder Arrays von Strukturen einer bestimmten Größe zuzuweisen. Clients und Dienstanbieter sollten diese Makros verwenden, anstatt den Speicher manuell zuzuweisen. Wenn ein Client beispielsweise eine Namensauflösungsverarbeitung für eine Empfängerliste mit drei Einträgen durchführen muss, kann das **Makro SizeADRLIST** verwendet werden, um eine **ADRLIST-Struktur** zu erstellen, die an **IAddrBook::ResolveName** mit der richtigen Anzahl von **ADRENTRY-Membern** übergeben wird. Alle Speichermakros werden in MAPIDEFS definiert. H-Headerdatei. Diese Makros sind: 
   
 |||
 |:-----|:-----|
@@ -43,6 +43,6 @@ Die Speichermakros werden verwendet, um Strukturen oder Arrays von Strukturen ei
 |[SizedDtblGroupBox](sizeddtblgroupbox.md) <br/> |[SizedSSortOrderSet](sizedssortorderset.md) <br/> |
 |[SizedDtblLabel](sizeddtbllabel.md) <br/> | <br/> |
    
-MAPI unterstützt auch die Verwendung der COM-Schnittstelle [IMalloc für die](https://msdn.microsoft.com/library/ms678425%28VS.85%29.aspx) Speicherverwaltung. Dienstanbieter erhalten zum Zeitpunkt der Initialisierung einen **IMalloc-Schnittstellenzeiger** von MAPI und können auch einen über die [MAPIGetDefaultMalloc-Funktion](mapigetdefaultmalloc.md) abrufen. Der Hauptvorteil bei der Verwendung der **IMalloc-Methoden** zum Verwalten von Arbeitsspeicher über die MAPI-Funktionen besteht in der Möglichkeit, mit den COM-Methoden einen vorhandenen Puffer neu zu ordnen. Die MAPI-Speicherfunktionen unterstützen keine Neuzuordnung. 
+MAPI unterstützt auch die Verwendung der COM-Schnittstelle [IMalloc](https://msdn.microsoft.com/library/ms678425%28VS.85%29.aspx) für die Speicherverwaltung. Dienstanbieter erhalten einen **IMalloc-Schnittstellenzeiger** von MAPI zur Initialisierungszeit und können einen auch über die [MAPIGetDefaultMalloc-Funktion](mapigetdefaultmalloc.md) abrufen. Der Hauptvorteil der Verwendung der **IMalloc-Methoden** für die Verwaltung des Arbeitsspeichers über die MAPI-Funktionen besteht darin, dass es mit den COM-Methoden möglich ist, einen vorhandenen Puffer neu zuzuordnen. Die MAPI-Speicherfunktionen unterstützen keine Neuzuordnung. 
   
 

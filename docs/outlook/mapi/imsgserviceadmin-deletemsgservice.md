@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMsgServiceAdmin.DeleteMsgService
 api_type:
 - COM
 ms.assetid: 3a6b34eb-9d46-488f-8d02-91b27c35de67
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 6cef03e33abab81a407698b73a007f247ef88194
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 053ead29442c847a0b5a786263845a1dc8a6c6ef
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407382"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556427"
 ---
 # <a name="imsgserviceadmindeletemsgservice"></a>IMsgServiceAdmin::DeleteMsgService
 
@@ -47,15 +47,15 @@ S_OK
     
 MAPI_E_NOT_FOUND 
   
-> Die **mapIUID,** auf die  _von lpuid verwiesen wird,_ ist nicht mit einem vorhandenen Nachrichtendienst übereinstimmend. 
+> Die **MAPIUID,** auf die von  _lpuid_ verwiesen wird, stimmt nicht mit einem vorhandenen Nachrichtendienst überein. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMsgServiceAdmin::D eleteMsgService-Methode** löscht einen Nachrichtendienst aus einem Profil. **DeleteMsgService** entfernt alle Profilabschnitte im Zusammenhang mit dem Nachrichtendienst. 
   
  **DeleteMsgService** führt die folgenden Schritte aus, um den Nachrichtendienst zu löschen: 
   
-1. Ruft die Einstiegspunktfunktion des Nachrichtendiensts auf, und der  _ulContext-Parameter_ ist auf MSG_SERVICE_DELETE, bevor die Profilabschnitte entfernt werden. Dadurch kann der Dienst dienstspezifische Aufgaben ausführen. 
+1. Ruft die Einstiegspunktfunktion des Nachrichtendiensts auf, wobei der  _ulContext-Parameter_ auf MSG_SERVICE_DELETE festgelegt ist, bevor die Profilabschnitte entfernt werden. Dadurch kann der Dienst alle dienstspezifischen Aufgaben ausführen. 
     
 2. Löscht den Nachrichtendienst.
     
@@ -65,7 +65,7 @@ Die Einstiegspunktfunktion des Nachrichtendiensts wird nicht erneut aufgerufen, 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Um die **MAPIUID-Struktur** für den zu löschenden Nachrichtendienst abzurufen, rufen Sie die **PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md))-Eigenschaftsspalte aus der Zeile des Nachrichtendiensts in der Nachrichtendiensttabelle ab. Weitere Informationen finden Sie in der in der [IMsgServiceAdmin::CreateMsgService-Methode beschriebenen](imsgserviceadmin-createmsgservice.md) Prozedur. 
+Um die **MAPIUID-Struktur** für den zu löschenden Nachrichtendienst abzurufen, rufen Sie die Eigenschaftsspalte **PR_SERVICE_UID** ([PidTagServiceUid](pidtagserviceuid-canonical-property.md)) aus der Zeile des Nachrichtendiensts in der Nachrichtendiensttabelle ab. Weitere Informationen finden Sie in der in der [IMsgServiceAdmin::CreateMsgService-Methode](imsgserviceadmin-createmsgservice.md) beschriebenen Prozedur. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 

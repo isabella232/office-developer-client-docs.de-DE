@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: aa8f18d9-691d-d0cc-a660-f15ea6cff6ce
-description: 'Letzte Änderung: 03. Juli 2012'
-ms.openlocfilehash: a9aea0db700de9c82aa2a41a443ebf03da8ce9b3
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: 'Last modified: July 03, 2012'
+ms.openlocfilehash: 81bc97456d0b8ed3cce7071afdd445583a6f0a1d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33430308"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59571423"
 ---
 # <a name="meid"></a>MEID
 
@@ -21,7 +21,7 @@ ms.locfileid: "33430308"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bezeichner für ein Outlook Element. Sie enthält eine Eintrags-ID und andere relevante Informationen.
+Bezeichner für ein Outlook Element. Es enthält einen Eintragsbezeichner und andere relevante Informationen.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -40,11 +40,11 @@ struct MEID
 
  _abFlags_
   
-> 4-Byte-Eintrags-ID für das Outlook Element. Weitere Informationen zu MAPI-Eintragsbezeichnern finden Sie unter **[ENTRYID](entryid.md)**. 
+> 4-Byte-Eintragsbezeichner für das Outlook Element. Weitere Informationen zu MAPI-Eintragsbezeichnern finden Sie unter **[ENTRYID.](entryid.md)** 
     
  _muid_
   
-> GUID, die den Speicheranbieter identifiziert. Die Typdefinition von **MAPIUID** finden Sie unter mapidefs.h. 
+> GUID, die den Store-Anbieter identifiziert. Die Typdefinition von **MAPIUID** finden Sie unter mapidefs.h. 
     
  _Platzhalter_
   
@@ -56,7 +56,7 @@ struct MEID
     
  _ltidMsg_
   
-> Langfristige ID des Outlook Element.
+> Langfristige ID des Outlook Elements.
     
 ## <a name="see-also"></a>Siehe auch
 

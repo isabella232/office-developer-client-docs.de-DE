@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ITableData.HrQueryRow
 api_type:
 - COM
 ms.assetid: 66ce8f36-2b2b-4a8e-b9b2-43782d8357a1
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: da41fadc9a71a410dd115e28ce2cf9c81442b104
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: a513fbe235a61b331f05c7c99d11f9adc3c987ac
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33434767"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556224"
 ---
 # <a name="itabledatahrqueryrow"></a>ITableData::HrQueryRow
 
@@ -39,7 +39,7 @@ HRESULT HrQueryRow(
 
  _lpSPropValue_
   
-> [in] Ein Zeiger auf eine Eigenschaftswertstruktur, die die Indexspalte für die abzurufende Zeile beschreibt. Das **ulPropTag-Element** der Eigenschaftswertstruktur sollte das gleiche Eigenschaftstag wie der  _ulPropTagIndexColumn-Parameter_ aus dem Aufruf der [CreateTable-Funktion](createtable.md) enthalten, die auf die [ITableData-Implementierung](itabledataiunknown.md) zutritt. 
+> [in] Ein Zeiger auf eine Eigenschaftswertstruktur, die die Indexspalte für die abzurufende Zeile beschreibt. Der **ulPropTag-Member** der Eigenschaftswertstruktur sollte dasselbe Eigenschaftstag wie der  _ulPropTagIndexColumn-Parameter_ aus dem Aufruf der [CreateTable-Funktion](createtable.md) enthalten, die auf die [ITableData-Implementierung](itabledataiunknown.md) zugreift. 
     
  _lppSRow_
   
@@ -57,13 +57,13 @@ S_OK
     
 MAPI_E_INVALID_PARAMETER 
   
-> Die [SPropValue-Struktur,](spropvalue.md) auf die  _lpSPropValue_ verweist, enthält nicht die Indexspalteneigenschaft. 
+> Die [SPropValue-Struktur,](spropvalue.md) auf die  _lpSPropValue_ zeigt, enthält nicht die Indexspalteneigenschaft. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die **ITableData::HrQueryRow-Methode** ruft alle Eigenschaften für die Zeile ab, die über eine Indexspalte verfügt, die dem Wert der Indexspalte entspricht, die in der Eigenschaftenstruktur enthalten ist, auf die  _von lpSPropValue_ verwiesen wird. **HrQueryRow** gibt auch die Zeilennummer zurück, wenn der Aufrufer sie anfordert, die die Position der Zeile in der Tabelle identifiziert. 
+Die **ITableData::HrQueryRow-Methode** ruft alle Eigenschaften für die Zeile mit einer Indexspalte ab, die dem Wert der Indexspalte entspricht, die in der Eigenschaftsstruktur enthalten ist, auf die  _lpSPropValue_ verweist. **HrQueryRow** gibt auch die Zeilennummer zurück, wenn der Aufrufer sie anfordert, die die Position der Zeile in der Tabelle identifiziert. 
   
-Da **HrQueryRow** die **SPropValue-Struktur,** auf die  _von lpSPropValue_ verwiesen wird, nicht ändert, müssen Aufrufer die Struktur frei geben, wenn **HrQueryRow** zurückgibt. Anrufer müssen auch die **SRow-Struktur,** die die abgerufene Zeile enthält, frei geben. 
+Da **HrQueryRow** die **SPropValue-Struktur,** auf die von  _lpSPropValue_ verwiesen wird, nicht ändert, müssen Aufrufer die Struktur freigeben, wenn **HrQueryRow** zurückgegeben wird. Aufrufer müssen auch die **SRow-Struktur** freigeben, die die abgerufene Zeile enthält. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249598(v=office.15)
 ms:contentKeyID: 48546139
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 3075c0c9bd8267f6b30773a846523172eb2ef603
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f2ddfab5272436b4e6ab070de30329f9c21ea4ff
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296416"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59553214"
 ---
 # <a name="chapter-8-understanding-cursors-and-locks"></a>Kapitel 8: Grundlegendes zu Cursorn und Sperren
 
@@ -25,10 +25,10 @@ Viele Funktionen des **Recordset** -ADO-Objekts werden durch den Cursortyp und d
 In diesem Kapitel werden die folgenden Themen behandelt:
 
 - [Was ist ein Cursor?](what-is-a-cursor.md)
-- [Bedeutung der Cursorposition](the-significance-of-cursor-location.md)
+- [Die Bedeutung der Cursorposition](the-significance-of-cursor-location.md)
 - [Microsoft Cursor Service für OLE DB](the-microsoft-cursor-service-for-ole-db.md)
 - [Verwenden der CacheSize-Eigenschaft](using-cachesize.md)
 - [Cursor- und Sperrenmerkmale](cursor-and-lock-characteristics.md)
 - [Cursortypen (ADO)](types-of-cursors.md)
-- [Was ist eine Sperre? ADO](what-is-a-lock.md)
+- [Was ist eine Sperre? (ADO)](what-is-a-lock.md)
 

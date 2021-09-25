@@ -6,24 +6,24 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249893(v=office.15)
 ms:contentKeyID: 48547357
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 1fc3341f4ec662c17e2a7c274b1cc3af215c877c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 98725eac42e0dcefe96158fb467a3569f3d3820e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296332"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562804"
 ---
 # <a name="clone-method-example-vbscript"></a>Clone-Methode (Beispiel) (VBScript)
 
 
 **Gilt für**: Access 2013, Office 2013
 
-In diesem Beispiel wird die [Clone](clone-method-ado.md)-Methode zum Erstellen von Kopien eines [Recordsets](recordset-object-ado.md) verwendet. Dann kann der Benutzer den Datensatzzeiger für jede Kopie unabhängig positionieren.
+In diesem Beispiel werden mit der [Clone](clone-method-ado.md)-Methode Kopien eines [Recordset](recordset-object-ado.md) erstellt. Anschließend kann der Benutzer den Datensatzzeiger jeder Kopie unabhängig positionieren.
 
 Use the following example in an Active Server Page (ASP). This example uses the Northwind database distributed with Microsoft Access. Cut and paste the following code to Notepad or another text editor and save it as **CloneVBS.asp**. You can view the result in any client browser.
 
-Zum Ausführen des Beispiels ändern Sie die RsCustomerList. Source = "Customers" in RsCustomerList. Source = "Products", um eine größere Tabelle zu zählen.
+Ändern Sie zum Ausführen des Beispiels die Zeile RsCustomerList.Source = "Customers" in RsCustomerList.Source = "Products", um eine größere Tabelle zu zählen.
 
 ```vb 
  

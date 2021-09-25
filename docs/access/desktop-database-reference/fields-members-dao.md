@@ -6,20 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff822428(v=office.15)
 ms:contentKeyID: 48547307
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: a6bfefea569d5298b5fa5c69b1cf610592c9f952
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d69025011962a861258e48ed73d381a2069563d7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292538"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552927"
 ---
 # <a name="fields-members-dao"></a>Fields-Elemente (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
 
-Eine Fields-Auflistung enthält alle Field-Objekte eines Index-, QueryDef-, Recordset-, Relation- oder TableDef-Objekts.
+Eine Fields-Auflistung enthält alle gespeicherten Field-Objekte eines Index-, QueryDef-, Recordset-, Relation- oder TableDef-Objekts.
 
 ## <a name="methods"></a>Methoden
 
@@ -36,11 +36,11 @@ Eine Fields-Auflistung enthält alle Field-Objekte eines Index-, QueryDef-, Reco
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong><a href="fields-append-method-dao.md">Append</a></strong></p></td>
-<td><p>Fügt der <strong><a href="field-object-dao.md">Fields</a></strong> -Auflistung ein neues <strong><a href="fields-collection-dao.md">Field</a></strong> -Objekt hinzu.</p></td>
+<td><p><strong><a href="fields-append-method-dao.md">Anfügen</a></strong></p></td>
+<td><p>Fügt der <strong><a href="fields-collection-dao.md">Fields</a></strong>-Auflistung ein neues <strong><a href="field-object-dao.md">Field</a></strong> hinzu.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="fields-delete-method-dao.md">Löschen</a></strong></p></td>
+<td><p><strong><a href="fields-delete-method-dao.md">Delete</a></strong></p></td>
 <td><p>Löscht ein <strong><a href="field-object-dao.md">Field</a></strong> -Objekt aus der <strong><a href="fields-collection-dao.md">Fields</a></strong> -Auflistung.</p></td>
 </tr>
 <tr class="odd">

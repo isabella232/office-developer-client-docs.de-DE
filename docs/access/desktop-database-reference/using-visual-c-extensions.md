@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248866(v=office.15)
 ms:contentKeyID: 48543270
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 8bf2234e5935c2a1a13871e7e45c980fb9f33109
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4b39946c0288de29714eb8416242670c761557dc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32312061"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562027"
 ---
 # <a name="using-visual-c-extensions"></a>Verwenden von Visual C++-Erweiterungen
 
@@ -48,7 +48,7 @@ Schließen Sie die folgende Datei in die Anwendung ein, um die Visual C++-Erweit
 
 1.  Erstellen Sie eine Klasse, die von der **CADORecordBinding** -Klasse abgeleitet wird.
 
-2.  Geben Sie Bindungseinträge und entsprechende C/C++-Variablen in der abgeleiteten Klasse an. Klammern Sie die Bindungs **Einträge\_zwischen\_BEGIN ADO-Bindung** und **\_End ADO\_-Bindungs** Makros. Beenden Sie die Makros nicht mit Kommas oder Semikolons. Die entsprechenden Trennzeichen werden automatisch durch die einzelnen Makros angegeben. Geben Sie einen Bindungseintrag für jedes Feld an, das einer C/C++-Variablen zugeordnet werden soll. Verwenden Sie ein entsprechendes Mitglied **aus\_dem\_ADO\_**-Eintrag mit fester Länge, dem **numerischen\_\_ADO-Eintrag**oder der ADO **\_-Eingabe Familie mit Variablen\_Längen\_** von Makros.
+2.  Geben Sie Bindungseinträge und entsprechende C/C++-Variablen in der abgeleiteten Klasse an. Klammern Sie die Bindungseinträge zwischen **BEGIN \_ ADO \_ BINDING-** und **END \_ ADO BINDING-Makros. \_** Beenden Sie die Makros nicht mit Kommas oder Semikolons. Die entsprechenden Trennzeichen werden automatisch durch die einzelnen Makros angegeben. Geben Sie einen Bindungseintrag für jedes Feld an, das einer C/C++-Variablen zugeordnet werden soll. Verwenden Sie ein entsprechendes Element aus der Makrofamilie **ADO \_ FIXED \_ LENGTH ENTRY, \_** ADO **NUMERIC \_ ENTRY \_** oder ADO **\_ VARIABLE LENGTH \_ ENTRY. \_**
 
 3.  Erstellen Sie in der Anwendung eine Instanz der von **CADORecordBinding** abgeleiteten Klasse. Rufen Sie die **IADORecordBinding** -Schnittstelle aus dem **Recordset** -Objekt ab. Rufen Sie dann die **BindToRecordset** -Methode auf, um die **Recordset** -Felder an die C/C++-Variablen zu binden.
 
@@ -82,28 +82,28 @@ Weitere Informationen finden Sie unter *OLE DB-Programmierreferenz*, "Anhang A: 
 
 _**Bindungsanfangseinträge**_
 
-**\_ADO\_-Bindung beginnen**(*Klasse*)
+**BEGIN \_ ADO \_ BINDING**(*Class*)
 
 _**Daten mit fester Länge**_
 
-**ADO\_-\_Eintrag\_mit fester Länge**(*Ordnungszahl, Datentyp, Puffer, Status, Änderung*)  
-**ADO\_-\_ENTRY2\_mit fester Länge**(*Ordnungszahl, Datentyp, Puffer, Änderung*)
+**ADO \_ FIXED \_ LENGTH \_ ENTRY**(*Ordinal, DataType, Buffer, Status, Modify*)  
+**ADO \_ FIXED \_ LENGTH \_ ENTRY2**(*Ordinal, DataType, Buffer, Modify*)
 
 _**Numerische Daten**_
 
-**\_NUMERISCHEr\_ADO-Eintrag**(Ordnungs*Zahl, Datentyp, Puffer, Genauigkeit, Skalierung, Status, Änderung*)  
-**ADO\_-\_numerische ENTRY2**(*Ordnungszahl, Datentyp, Puffer, Genauigkeit, Skalierung, Änderung*)
+**ADO \_ NUMERIC \_ ENTRY**(*Ordinal, DataType, Buffer, Precision, Scale, Status, Modify*)  
+**ADO \_ NUMERIC \_ ENTRY2**(*Ordinal, DataType, Buffer, Precision, Scale, Modify*)
 
-_**Daten mit variabler Länge**_
+_**Daten variabler Länge**_
 
-**\_VARIABLEr\_ADO\_-Eintrag**(*Ordnungszahl, Datentyp, Puffer, Größe, Status, Länge, Änderung*)  
-**ADO\_-\_Variable\_Länge ENTRY2**(*Ordinal, DataType, Buffer, Size, Status, Modify*)  
-**ADO\_-\_Variable\_Länge ENTRY3**(*Ordnungszahl, Datentyp, Puffer, Größe, Länge, ändern*)  
-**ADO\_-\_Variable\_Länge ENTRY4**(*Ordinal, DataType, Buffer, Size, Modify*)
+**ADO \_ VARIABLE \_ LENGTH \_ ENTRY**(*Ordinal, DataType, Buffer, Size, Status, Length, Modify*)  
+**ADO \_ VARIABLE \_ LENGTH \_ ENTRY2**(*Ordinal, DataType, Buffer, Size, Status, Modify*)  
+**ADO \_ VARIABLE \_ LENGTH \_ ENTRY3**(*Ordinal, DataType, Buffer, Size, Length, Modify*)  
+**ADO \_ VARIABLE \_ LENGTH \_ ENTRY4**(*Ordinal, DataType, Buffer, Size, Modify*)
 
-_**End-Bindungseinträge**_
+_**End Binding Entries**_
 
-**Beenden\_der\_ADO-Bindung** ()
+**ENDE \_ \_ADO-BINDUNG**()
 
 <table>
 <colgroup>
@@ -134,19 +134,19 @@ _**End-Bindungseinträge**_
 <td><p>Name der C/C++-Variablen, in der das <strong>Recordset</strong>-Feld gespeichert wird.</p></td>
 </tr>
 <tr class="odd">
-<td><p><em>Size</em></p></td>
+<td><p><em>Größe</em></p></td>
 <td><p>Maximale Größe von <em>Buffer</em> in Byte. Wenn <em>Buffer</em> eine Zeichenfolge mit variabler Länge enthält, lassen Sie Platz für eine Null am Ende.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>Status</em></p></td>
-<td><p>Name einer Variablen, durch die angegeben wird, ob der Inhalt von <em>Buffer</em> gültig ist und ob die Konvertierung des Felds in <em>DataType</em> erfolgreich war. Die beiden wichtigsten Werte für diese Variable sind <strong>adFldOK</strong> (die Konvertierung war erfolgreich) und <strong>adFldNull</strong> (der Wert des Felds wäre ein VARIANT vom Typ VT_NULL und nicht lediglich leer). Mögliche Werte für <em>Status</em> werden in der nächsten Tabelle, Status &quot;Werte, aufgeführt.&quot;</p></td>
+<td><p>Name einer Variablen, durch die angegeben wird, ob der Inhalt von <em>Buffer</em> gültig ist und ob die Konvertierung des Felds in <em>DataType</em> erfolgreich war. Die beiden wichtigsten Werte für diese Variable sind <strong>adFldOK</strong> (die Konvertierung war erfolgreich) und <strong>adFldNull</strong> (der Wert des Felds wäre ein VARIANT vom Typ VT_NULL und nicht lediglich leer). Mögliche Werte für <em>Status</em> sind in der nächsten Tabelle, &quot; Statuswerte, aufgeführt.&quot;</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>Modify</em></p></td>
 <td><p>Boolesches Flag; durch TRUE wird angegeben, dass ADO das entsprechende <strong>Recordset</strong>-Feld mit dem in <em>Buffer</em> enthaltenen Wert aktualisieren darf. Legen Sie den booleschen <em>modify</em>-Parameter auf TRUE fest, um zu ermöglichen, dass das gebundene Feld durch ADO aktualisiert wird. Legen Sie ihn auf FALSE fest, wenn Sie das Feld untersuchen möchten, ohne es zu ändern.</p></td>
 </tr>
 <tr class="even">
-<td><p><em>Genauigkeit</em></p></td>
+<td><p><em>Präzision</em></p></td>
 <td><p>Anzahl der Ziffern, die in einer numerischen Variablen dargestellt werden können.</p></td>
 </tr>
 <tr class="odd">
@@ -203,7 +203,7 @@ Beim Festlegen von Daten kann *Status* auf **adFldNull** festgelegt werden, um a
 </tr>
 <tr class="odd">
 <td><p><strong>adFldTruncated</strong></p></td>
-<td><p>4</p></td>
+<td><p>4 </p></td>
 <td><p>Daten mit variabler Länge oder numerische Ziffern wurden abgeschnitten.</p></td>
 </tr>
 <tr class="even">
@@ -213,22 +213,22 @@ Beim Festlegen von Daten kann *Status* auf **adFldNull** festgelegt werden, um a
 </tr>
 <tr class="odd">
 <td><p><strong>adFldDataOverFlow</strong></p></td>
-<td><p>6</p></td>
+<td><p>6 </p></td>
 <td><p>Wert ist zu groß zum Speichern im variablen Datentyp.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adFldCantCreate</strong></p></td>
-<td><p>7</p></td>
+<td><p>7 </p></td>
 <td><p>Unbekannter Spaltentyp und Feld bereits geöffnet.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adFldUnavailable</strong></p></td>
-<td><p>8</p></td>
+<td><p>8 </p></td>
 <td><p>Feldwert konnte nicht ermittelt werden - z. B. in einem neuen nicht zugewiesenen Feld ohne Standardwert.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adFldPermissionDenied</strong></p></td>
-<td><p>9</p></td>
+<td><p>9 </p></td>
 <td><p>Beim Aktualisieren keine Berechtigung zum Schreiben von Daten.</p></td>
 </tr>
 <tr class="odd">
@@ -243,7 +243,7 @@ Beim Festlegen von Daten kann *Status* auf **adFldNull** festgelegt werden, um a
 </tr>
 <tr class="odd">
 <td><p><strong>adFldBadStatus</strong></p></td>
-<td><p>12</p></td>
+<td><p>12 </p></td>
 <td><p>Beim Aktualisieren ungültiger Statusparameter.</p></td>
 </tr>
 <tr class="even">

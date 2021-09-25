@@ -1,5 +1,5 @@
 ---
-title: Recordset2. Type-Eigenschaft (DAO)
+title: Recordset2.Type-Eigenschaft (DAO)
 TOCTitle: Type Property
 ms:assetid: 9bec543e-7f59-ea59-dc79-41d0e08b5ab6
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff198080(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1052880
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 6646658daf482373ef8b62f6d3420b1d11152cac
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 33b4b67da528360640030a2278979327553263a0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307175"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572781"
 ---
-# <a name="recordset2type-property-dao"></a>Recordset2. Type-Eigenschaft (DAO)
+# <a name="recordset2type-property-dao"></a>Recordset2.Type-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -27,11 +27,11 @@ Legt einen Wert fest, der den Funktions- oder Datentyp eines Objekts angibt, ode
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Typ
+*expression* .Type
 
-*Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset2-Objekt** darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Ein **Recordset**-Objekt kann folgende Einstellungen und Rückgabewerte haben.
 
@@ -48,13 +48,13 @@ Ein **Recordset**-Objekt kann folgende Einstellungen und Rückgabewerte haben.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>dbOpenable</strong></p></td>
+<td><p><strong>dbOpenTable</strong></p></td>
 <td><p>Tabelle (nur Microsoft Access-Arbeitsbereiche)</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbOpenDynamic</strong></p></td>
 <td><p>Dynamisch (nur ODBCDirect-Arbeitsbereiche)</p>
-<p><strong>Hinweis</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p></td>
+<p><strong>HINWEIS</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbOpenDynaset</strong></p></td>
@@ -66,7 +66,7 @@ Ein **Recordset**-Objekt kann folgende Einstellungen und Rückgabewerte haben.
 </tr>
 <tr class="odd">
 <td><p><strong>dbOpenForwardOnly</strong></p></td>
-<td><p>Vorwärts</p></td>
+<td><p>Nur vorwärts</p></td>
 </tr>
 </tbody>
 </table>

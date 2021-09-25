@@ -1,20 +1,20 @@
 ---
-title: Database. CollatingOrder-Eigenschaft (DAO)
+title: Database.CollatingOrder-Eigenschaft (DAO)
 TOCTitle: CollatingOrder Property
 ms:assetid: 7f6c35bf-e5f9-8423-608e-bc072ca09141
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196459(v=office.15)
 ms:contentKeyID: 48545901
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 21d775c0abac5d2afddd6b0930816c8d6d381ff0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7c4657714ae28df9edeaf9d597b18981a222dcbe
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295016"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562755"
 ---
-# <a name="databasecollatingorder-property-dao"></a>Database. CollatingOrder-Eigenschaft (DAO)
+# <a name="databasecollatingorder-property-dao"></a>Database.CollatingOrder-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -27,7 +27,7 @@ Gibt einen Wert zurück, der die Sequenz der Sortierreihenfolge im Text für den
 
 *Ausdruck* Eine Variable, die ein **Database** -Objekt darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Rückgabewert ist ein **Long**-Wert oder eine Konstante, die einem der folgenden Werte entsprechen kann.
 
@@ -56,7 +56,7 @@ Der Rückgabewert ist ein **Long**-Wert oder eine Konstante, die einem der folge
 <td><p>Chinesisch (Vereinfacht)</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>dbSortChineseTraditional</strong></p></td>
+<td><p><strong>dbSortChinese Auszüge</strong></p></td>
 <td><p>Traditionelles Chinesisch</p></td>
 </tr>
 <tr class="odd">
@@ -80,7 +80,7 @@ Der Rückgabewert ist ein **Long**-Wert oder eine Konstante, die einem der folge
 <td><p>Hebräisch</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>dbSortHungarian</strong></p></td>
+<td><p><strong>dbSortHung über</strong></p></td>
 <td><p>Ungarisch</p></td>
 </tr>
 <tr class="odd">
@@ -116,12 +116,12 @@ Der Rückgabewert ist ein **Long**-Wert oder eine Konstante, die einem der folge
 <td><p>Paradox Schwedisch oder Finnisch</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>dbSortPolish</strong></p></td>
+<td><p><strong>dbSortDrossel</strong></p></td>
 <td><p>Polnisch</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbSortSlovenian</strong></p></td>
-<td><p>Slowenisch</p></td>
+<td><p>Slovenian</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbSortSpanish</strong></p></td>
@@ -147,7 +147,7 @@ Der Rückgabewert ist ein **Long**-Wert oder eine Konstante, die einem der folge
 </table>
 
 
-Die Einstellung der **CollatingOrder** -Eigenschaft entspricht dem Argument locale **** der CreateDatabase-Methode, wenn die Datenbank erstellt wurde, oder die **CompactDatabase** -Methode, wenn die Datenbank zuletzt komprimiert wurde.
+Die Einstellung der **CollatingOrder-Eigenschaft** entspricht dem Gebietsschemaargument der **CreateDatabase-Methode,** als die Datenbank erstellt wurde, oder der **CompactDatabase-Methode,** als die Datenbank zuletzt komprimiert wurde.
 
 Überprüfen Sie die Einstellung der **CollatingOrder**-Eigenschaft eines **Database**- oder **Field**-Objekts, um die Methode des Zeichenfolgenvergleichs für die Datenbank oder das Feld zu ermitteln. Sie können die **CollatingOrder**-Eigenschaft eines neuen, noch nicht angefügten **Field**-Objekts festlegen, wenn sich die Einstellung des **Field**-Objekts und des **Database**-Objekts, in dem es enthalten ist, unterscheiden soll.
 

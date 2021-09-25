@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagClientSubmitTime
 api_type:
 - HeaderDef
 ms.assetid: d46e1063-6421-410d-a445-7477fea42089
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 851441e419c17d8f5fef27c785ea4b829a4ae443
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 0bbfe2f62ede0dff340871a9e4e555146a04f58d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345717"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59563798"
 ---
 # <a name="pidtagclientsubmittime-canonical-property"></a>PidTagClientSubmitTime (kanonische Eigenschaft)
 
@@ -25,18 +25,18 @@ ms.locfileid: "32345717"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält das Datum und die Uhrzeit, zu der der Absender der Nachricht eine Nachricht übermittelt hat. 
+Enthält das Datum und die Uhrzeit, zu der der Absender der Nachricht eine Nachricht gesendet hat. 
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_CLIENT_SUBMIT_TIME  <br/> |
 |Kennung:  <br/> |0x0039  <br/> |
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
-|Bereich:  <br/> |Nachrichtenzeit  <br/> |
+|Bereich:  <br/> |Nachrichtenzeitpunkt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Der Speicheranbieter legt **PR_CLIENT_SUBMIT_TIME** auf den Zeitpunkt fest, zu dem die Clientanwendung [IMessage::SubmitMessage aufgerufen hat.](imessage-submitmessage.md) 
+Der Speicheranbieter legt **PR_CLIENT_SUBMIT_TIME** auf den Zeitpunkt fest, zu dem die Clientanwendung [IMessage::SubmitMessage](imessage-submitmessage.md)aufgerufen hat. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -50,11 +50,11 @@ Der Speicheranbieter legt **PR_CLIENT_SUBMIT_TIME** auf den Zeitpunkt fest, zu d
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -62,9 +62,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -1,21 +1,21 @@
 ---
-title: Auflisten von Einträgen in MapiSvc.inf-Nachrichtendienstabschnitten
+title: Listeneinträge in MapiSvc.inf-Nachrichtendienstabschnitten
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: f4f052d6-ef63-421a-9d8c-4f3c6df83863
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: b6b641a288cea8bac5a1990e85520f3583c02f22
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8c2fe2dfbe3783f60f48a0d36fd5bef139f7347b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33435929"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59571528"
 ---
-# <a name="list-entries-in-mapisvcinf-message-service-sections"></a>Auflisten von Einträgen in MapiSvc.inf-Nachrichtendienstabschnitten
+# <a name="list-entries-in-mapisvcinf-message-service-sections"></a>Listeneinträge in MapiSvc.inf-Nachrichtendienstabschnitten
 
   
   
@@ -29,9 +29,9 @@ Sectionssection name1, section name2, ......section nameX
 
 ```
 
-Jeder Abschnitt im **Eintrag Anbieter** ordnet einem einzelnen Abschnitt mit Konfigurationsinformationen für einen Dienstanbieter zu, der zum Nachrichtendienst gehört. Jeder Abschnitt im **Eintrag Abschnitte** ordnet einen Abschnitt zu, der zusätzliche Konfigurationsinformationen enthält, die vom Nachrichtendienst benötigt werden. Nachrichtendienst-Implementierer definieren zusätzliche Abschnitte, wenn sie spezielle Informationen enthalten möchten, die nicht in die Standardabschnitte passen. Nachrichtendienste mit komplizierten Konfigurationen verwenden in der Regel den **Eintrag Abschnitte,** um zusätzliche Informationen hinzuzufügen. Jeder Abschnitt "Nachrichtendienste" verfügt **über einen Anbietereintrag** mit mindestens einem Abschnitt in der Liste. Nicht alle Nachrichtendienstabschnitte verfügen über einen **Abschnittseintrag.** 
+Jeder Abschnitt im **Anbietereintrag** ist einem einzelnen Abschnitt zugeordnet, der Konfigurationsinformationen für einen Dienstanbieter bereitstellt, der zum Nachrichtendienst gehört. Jeder Abschnitt im **Abschnittseintrag** wird einem Abschnitt zugeordnet, der zusätzliche Konfigurationsinformationen enthält, die vom Nachrichtendienst benötigt werden. Nachrichtendienst-Implementierer definieren zusätzliche Abschnitte, wenn sie spezielle Informationen enthalten möchten, die nicht in die Standardabschnitte passen. Nachrichtendienste mit komplizierten Konfigurationen verwenden in der Regel den **Abschnittseintrag,** um zusätzliche Informationen hinzuzufügen. Jeder Nachrichtendienstabschnitt verfügt über einen **Anbietereintrag** mit mindestens einem Abschnitt in der Liste. Nicht alle Nachrichtendienstabschnitte verfügen über einen **Abschnittseintrag.** 
   
-Es folgen zwei Beispiele für Nachrichtendienstabschnitte. Der erste Abschnitt ist für den Standard-Adressbuchdienst aus der früheren Abbildung, ein einfacher Nachrichtendienst mit einem einzelnen Dienstanbieter. Der zweite Abschnitt ist für den MsgService-Dienst, einen komplexeren Beispielnachrichtendienst mit drei Dienstanbietern. 
+Es folgen zwei Beispiele für Nachrichtendienstabschnitte. Der erste Abschnitt behebt den Standardadressbuchdienst aus der vorherigen Abbildung, einen einfachen Nachrichtendienst mit einem einzigen Dienstanbieter. Der zweite Abschnitt ist für den MsgService-Dienst, einen komplexeren Beispielnachrichtendienst mit drei Dienstanbietern. 
   
 ```cpp
 [AB]
@@ -53,7 +53,7 @@ PR_RESOURCE_FLAGS=SERVICE_SINGLE_COPY
 
 ```
 
-Der **Eintrag Sections** im Abschnitt **[MsgService]** listet zwei zusätzliche Abschnitte auf, einen mit dem Namen **[First_Special_Section]** und den anderen mit dem Namen **[Second_Special_Section]**. Die Daten, die möglicherweise in zusätzlichen Abschnitten angezeigt werden, sind für den jeweiligen Nachrichtendienst von Bedeutung. Diese Abschnitte werden wie folgt angezeigt, um zusätzliche Abschnitte zu veranschaulichen. 
+Der **Abschnittseintrag** im **Abschnitt [MsgService]** listet zwei zusätzliche Abschnitte auf, einen mit dem Namen **[First_Special_Section]** und den anderen mit dem Namen **[Second_Special_Section]**. Die Daten, die in zusätzlichen Abschnitten angezeigt werden können, sind für den jeweiligen Nachrichtendienst von Bedeutung. Diese Abschnitte werden im Folgenden angezeigt, um zusätzliche Abschnitte zu veranschaulichen. 
   
 ```cpp
 [First_Special_Section]

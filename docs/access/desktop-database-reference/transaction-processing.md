@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249523(v=office.15)
 ms:contentKeyID: 48545842
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: c13f25df31bea1eb742b4a7e7c958ccdbfb7274a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 1b8c41443a5fc17101edd262b7bac04cb076666b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314007"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562160"
 ---
 # <a name="transaction-processing"></a>Verarbeitung von Transaktionen
 
@@ -31,7 +31,7 @@ In Abhängigkeit von der **Attributes**-Eigenschaft des [Connection](attributes-
 
 ## <a name="transaction-isolation-level"></a>Transaktionsisolationsstufe
 
-Mithilfe der **IsolationLevel** -Eigenschaft legen Sie die Isolationsstufe einer Transaktion in einem **Connection** -Objekt fest. Diese Einstellung wird erst nach dem nächsten Aufruf der [BeginTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md)-Methode wirksam. Falls die angeforderte Isolationsstufe nicht verfügbar ist, gibt der Anbieter möglicherweise die nächsthöhere Isolationsstufe zurück. Weitere Informationen zu gültigen Werten finden Sie in der **IsolationLevel** -Eigenschaft im ADO-Programmierhandbuch.
+Mithilfe der **IsolationLevel** -Eigenschaft legen Sie die Isolationsstufe einer Transaktion in einem **Connection** -Objekt fest. Diese Einstellung wird erst nach dem nächsten Aufruf der [BeginTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md)-Methode wirksam. Falls die angeforderte Isolationsstufe nicht verfügbar ist, gibt der Anbieter möglicherweise die nächsthöhere Isolationsstufe zurück. Weitere Informationen zu gültigen Werten finden Sie in der **IsolationLevel-Eigenschaft** in der ADO-Programmierreferenz.
 
 ## <a name="nested-transactions"></a>Geschachtelte Transaktionen
 

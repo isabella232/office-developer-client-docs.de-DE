@@ -1,33 +1,33 @@
 ---
-title: Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen
+title: Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 43c7225b-8f9f-47a2-aadf-36a249b2d78e
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ed73c0947e51150dd15617a95a99cd709101eb9e
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: b496caae9afd38019a19dfdeac021f2e4bb46dd4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34541918"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556042"
 ---
-# <a name="mapping-canonical-property-names-to-mapi-names"></a>Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen
+# <a name="mapping-canonical-property-names-to-mapi-names"></a>Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-In diesem Thema wird jeder kanonische Eigenschaftsname der MAPI-Eigenschaft oder den dargestellten Eigenschaften zu ordnet. Das Thema enthält drei Tabellen: eine Tabelle für benannte Eigenschaften mit numerischen Bezeichnern, eine zweite Tabelle für benannte Eigenschaften mit Zeichenfolgenbezeichnern und eine dritte Tabelle für markierte Eigenschaften.
+In diesem Thema wird jeder name der kanonischen Eigenschaft der MAPI-Eigenschaft oder den darin dargestellten Eigenschaften zugeordnet. Das Thema enthält drei Tabellen: eine Tabelle für benannte Eigenschaften mit numerischen Bezeichnern, eine zweite Tabelle für benannte Eigenschaften mit Zeichenfolgenbezeichnern und eine dritte Tabelle für markierte Eigenschaften.
   
-Weitere Informationen zur Beziehung kanonischer Eigenschaften zu MAPI-Eigenschaften finden Sie unter [MAPI Canonical Properties](mapi-canonical-properties.md).
+Weitere Informationen dazu, wie kanonische Eigenschaften zu MAPI-Eigenschaften in Beziehung stehen, finden Sie unter ["Kanonische MAPI-Eigenschaften".](mapi-canonical-properties.md)
   
 ## <a name="named-properties-with-numerical-identifiers"></a>Benannte Eigenschaften mit numerischen Bezeichnern
 
-|**Name der kanonischen Eigenschaft**|**Actual Named Property**|
+|**Name der kanonischen Eigenschaft**|**Actual Named-Eigenschaft**|
 |:-----|:-----|
 |[PidLidAddressBookProviderArrayType](pidlidaddressbookproviderarraytype-canonical-property.md) <br/> |dispidABPArrayType  <br/> |
 |[PidLidAddressBookProviderEmailList](pidlidaddressbookprovideremaillist-canonical-property.md) <br/> |dispidABPEmailList  <br/> |
@@ -306,7 +306,7 @@ Weitere Informationen zur Beziehung kanonischer Eigenschaften zu MAPI-Eigenschaf
    
 ## <a name="named-properties-with-string-identifiers"></a>Benannte Eigenschaften mit Zeichenfolgenbezeichnern
 
-|**Name der kanonischen Eigenschaft**|**Actual Named Property**|
+|**Name der kanonischen Eigenschaft**|**Actual Named-Eigenschaft**|
 |:-----|:-----|
 |[PidNameAcceptLanguage](pidnameacceptlanguage-canonical-property.md) <br/> |Accept-Language  <br/> |
 |[PidNameApplicationName](pidnameapplicationname-canonical-property.md) <br/> |AppName  <br/> |
@@ -314,12 +314,12 @@ Weitere Informationen zur Beziehung kanonischer Eigenschaften zu MAPI-Eigenschaf
 |[PidNameAttachmentMacInfo](pidnameattachmentmacinfo-canonical-property.md) <br/> |AttachmentMacInfo  <br/> |
 |[PidNameAudioNotes](pidnameaudionotes-canonical-property.md) <br/> |UMAudioNotes  <br/> |
 |[PidNameAuthor](pidnameauthor-canonical-property.md) <br/> |Ursprung  <br/> |
-|[PidNameByteCount](pidnamebytecount-canonical-property.md) <br/> |ByteCount  <br/> |
+|[PidNameByteCount](pidnamebytecount-canonical-property.md) <br/> |Bytecount  <br/> |
 |[PidNameCategory](pidnamecategory-canonical-property.md) <br/> |Kategorie  <br/> |
 |[PidNameCharacterCount](pidnamecharactercount-canonical-property.md) <br/> |CharCount  <br/> |
 |[PidNameComments](pidnamecomments-canonical-property.md) <br/> |Kommentare  <br/> |
-|[PidNameCompany](pidnamecompany-canonical-property.md) <br/> |Unternehmen  <br/> |
-|[PidNameContentBase](pidnamecontentbase-canonical-property.md) <br/> |Content-Base  <br/> |
+|[PidNameCompany](pidnamecompany-canonical-property.md) <br/> |Company  <br/> |
+|[PidNameContentBase](pidnamecontentbase-canonical-property.md) <br/> |Inhaltsbasis  <br/> |
 |[PidNameContentClass](pidnamecontentclass-canonical-property.md) <br/> |Content-Class  <br/> |
 |[PidNameContentTransferEncoding](pidnamecontenttransferencoding-canonical-property.md) <br/> |Content-Transfer-Encoding  <br/> |
 |[PidNameContentType](pidnamecontenttype-canonical-property.md) <br/> |Content-Type  <br/> |
@@ -347,22 +347,22 @@ Weitere Informationen zur Beziehung kanonischer Eigenschaften zu MAPI-Eigenschaf
 |[PidNameSubject](pidnamesubject-canonical-property.md) <br/> |Betreff  <br/> |
 |[PidNameTemplate](pidnametemplate-canonical-property.md) <br/> |Vorlage  <br/> |
 |[PidNameTitle](pidnametitle-canonical-property.md) <br/> |Titel  <br/> |
-|[PidNameWordCount](pidnamewordcount-canonical-property.md) <br/> |WordCount  <br/> |
-|[PidNameXSharingCapabilities](pidnamexsharingcapabilities-canonical-property.md) <br/> |X-Sharing-Capabilities  <br/> |
+|[PidNameWordCount](pidnamewordcount-canonical-property.md) <br/> |Wordcount  <br/> |
+|[PidNameXSharingCapabilities](pidnamexsharingcapabilities-canonical-property.md) <br/> |X-Sharing-Funktionen  <br/> |
 |[PidNameXSharingConfigUrl](pidnamexsharingconfigurl-canonical-property.md) <br/> |X-Sharing-Config-Url  <br/> |
 |[PidNameXSharingFlavor](pidnamexsharingflavor-canonical-property.md) <br/> |X-Sharing-Flavor  <br/> |
 |[PidNameXSharingLocalType](pidnamexsharinglocaltype-canonical-property.md) <br/> |X-Sharing-Local-Type  <br/> |
 |[PidNameXSharingProviderGuid](pidnamexsharingproviderguid-canonical-property.md) <br/> |X-Sharing-Provider-Guid  <br/> |
 |[PidNameXSharingProviderName](pidnamexsharingprovidername-canonical-property.md) <br/> |X-Sharing-Provider-Name  <br/> |
-|[PidNameXSharingProviderUrl](pidnamexsharingproviderurl-canonical-property.md) <br/> |X-Sharing-Provider-Url  <br/> |
+|[PidNameXSharingProviderUrl](pidnamexsharingproviderurl-canonical-property.md) <br/> |X-Sharing-Provider-URL  <br/> |
 |[PidNameXSharingRemoteName](pidnamexsharingremotename-canonical-property.md) <br/> |X-Sharing-Remote-Name  <br/> |
 |[PidNameXSharingRemoteStoreUid](pidnamexsharingremotestoreuid-canonical-property.md) <br/> |X-Sharing-Remote-Store-Uid  <br/> |
 |[PidNameXSharingRemoteType](pidnamexsharingremotetype-canonical-property.md) <br/> |X-Sharing-Remote-Type  <br/> |
 |[PidNameXSharingRemoteUid](pidnamexsharingremoteuid-canonical-property.md) <br/> |X-Sharing-Remote-Uid  <br/> |
    
-## <a name="tagged-properties"></a>Markierte Eigenschaften
+## <a name="tagged-properties"></a>Tagged-Eigenschaften
 
-|**Name der kanonischen Eigenschaft**|**Actual Tagged Properties**|
+|**Name der kanonischen Eigenschaft**|**Actual Tagged-Eigenschaften**|
 |:-----|:-----|
 |[PidTag7BitDisplayName](pidtag7bitdisplayname-canonical-property.md) <br/> |PR_7BIT_DISPLAY_NAME, PR_7BIT_DISPLAY_NAME_A, PR_7BIT_DISPLAY_NAME_W  <br/> |
 |[PidTagAbDefaultDir](pidtagabdefaultdir-canonical-property.md) <br/> |PR_AB_DEFAULT_DIR  <br/> |
@@ -557,7 +557,7 @@ Weitere Informationen zur Beziehung kanonischer Eigenschaften zu MAPI-Eigenschaf
 |[PidTagGender](pidtaggender-canonical-property.md) <br/> |PR_GENDER  <br/> |
 |[PidTagGeneration](pidtaggeneration-canonical-property.md) <br/> |PR_GENERATION, PR_GENERATION_A, PR_GENERATION_W  <br/> |
 |[PidTagGivenName](pidtaggivenname-canonical-property.md) <br/> |PR_GIVEN_NAME, PR_GIVEN_NAME_A, PR_GIVEN_NAME_W  <br/> |
-|[PidTagGovernmentIdNumber](pidtaggovernmentidnumber-canonical-property.md) <br/> |PR_GOVERNMENT_ID_NUMBER, PR_GOVERNMENT_ID_NUMBER_A, PR_GOVERNMENT_ID_NUMBER_W  <br/> |
+|[PidTagNumber](pidtaggovernmentidnumber-canonical-property.md) <br/> |PR_GOVERNMENT_ID_NUMBER, PR_GOVERNMENT_ID_NUMBER_A, PR_GOVERNMENT_ID_NUMBER_W  <br/> |
 |[PidTagHasAttachments](pidtaghasattachments-canonical-property.md) <br/> |PR_HASATTACH  <br/> |
 |[PidTagHasDeferredActionMessages](pidtaghasdeferredactionmessages-canonical-property.md) <br/> |PR_HAS_DAMS  <br/> |
 |[PidTagHobbies](pidtaghobbies-canonical-property.md) <br/> |PR_HOBBIES, PR_HOBBIES_A, PR_HOBBIES_W  <br/> |
@@ -577,7 +577,7 @@ Weitere Informationen zur Beziehung kanonischer Eigenschaften zu MAPI-Eigenschaf
 |[PidTagIdentityDisplay](pidtagidentitydisplay-canonical-property.md) <br/> |PR_IDENTITY_DISPLAY, PR_IDENTITY_DISPLAY_A, PR_IDENTITY_DISPLAY_W  <br/> |
 |[PidTagIdentityEntryId](pidtagidentityentryid-canonical-property.md) <br/> |PR_IDENTITY_ENTRYID  <br/> |
 |[PidTagIdentitySearchKey](pidtagidentitysearchkey-canonical-property.md) <br/> |PR_IDENTITY_SEARCH_KEY  <br/> |
-|[PidTagImapCachedMsgsize](pidtagimapcachedmsgsize-canonical-property.md) <br/> |Keine  <br/> |
+|[PidTagImapCachedMsgsize](pidtagimapcachedmsgsize-canonical-property.md) <br/> |Keines  <br/> |
 |[PidTagImplicitConversionProhibited](pidtagimplicitconversionprohibited-canonical-property.md) <br/> |PR_IMPLICIT_CONVERSION_PROHIBITED  <br/> |
 |[PidTagImportance](pidtagimportance-canonical-property.md) <br/> |PR_IMPORTANCE  <br/> |
 |[PidTagIncompleteCopy](pidtagincompletecopy-canonical-property.md) <br/> |PR_INCOMPLETE_COPY  <br/> |
@@ -959,7 +959,7 @@ Weitere Informationen zur Beziehung kanonischer Eigenschaften zu MAPI-Eigenschaf
 |[PidTagTelecommunicationsDeviceForDeafTelephoneNumber](pidtagtelecommunicationsdevicefordeaftelephonenumber-canonical-property.md) <br/> |PR_TTYTDD_PHONE_NUMBER, PR_TTYTDD_PHONE_NUMBER_A, PR_TTYTDD_PHONE_NUMBER_W  <br/> |
 |[PidTagTelexNumber](pidtagtelexnumber-canonical-property.md) <br/> |PR_TELEX_NUMBER, PR_TELEX_NUMBER_A, PR_TELEX_NUMBER_W  <br/> |
 |[PidTagTemplateid](pidtagtemplateid-canonical-property.md) <br/> |PR_TEMPLATEID  <br/> |
-|[PidTagTextAttachmentCharset](pidtagtextattachmentcharset-canonical-property.md) <br/> |Keine  <br/> |
+|[PidTagTextAttachmentCharset](pidtagtextattachmentcharset-canonical-property.md) <br/> |Keines  <br/> |
 |[PidTagTitle](pidtagtitle-canonical-property.md) <br/> |PR_TITLE, PR_TITLE_A, PR_TITLE_W  <br/> |
 |[PidTagTnefCorrelationKey](pidtagtnefcorrelationkey-canonical-property.md) <br/> |PR_TNEF_CORRELATION_KEY  <br/> |
 |[PidTagTnefUnprocessedProps](pidtagtnefunprocessedprops-canonical-property.md) <br/> |PR_TNEF_UNPROCESSED_PROPS  <br/> |

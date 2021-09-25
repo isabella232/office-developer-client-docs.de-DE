@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 293a0700-b950-4fc2-a2e5-148d6c846384
-description: 'Letzte Änderung: 20. Februar 2012'
-ms.openlocfilehash: 0e64df38afdb8ecce35eb0151d36dde3da35f0a4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: 'Last modified: February 20, 2012'
+ms.openlocfilehash: 56c2d84cf883f2452e6aa9a2904478eb8e3ec190
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32356854"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59571402"
 ---
 # <a name="mnls_isbadstringptrw"></a>MNLS_IsBadStringPtrW
 
@@ -33,7 +33,7 @@ BOOL MNLS_IsBadStringPtrW(
 
  _lpsz_
   
-> [in] Ein Zeiger auf die breite Zeichenzeichenfolge.
+> [in] Ein Zeiger auf die breite Zeichenfolge.
     
  _ucchMax_
   
@@ -41,9 +41,9 @@ BOOL MNLS_IsBadStringPtrW(
     
 ## <a name="return-value"></a>Rückgabewert
 
-Gibt einen Wert vom Typ Boolean zurück, der true ist, wenn die Zeichenfolge ungültig ist.
+Gibt einen Wert vom Typ Boolean , der true ist, wenn die Zeichenfolge ungültig ist.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Funktion umschließt [IsBadStringPtr](https://msdn.microsoft.com/library/aa366714%28VS.85%29.aspx). Weitere Informationen finden Sie unter [IsBadStringPtr](https://msdn.microsoft.com/library/aa366714%28VS.85%29.aspx).
   

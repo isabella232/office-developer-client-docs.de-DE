@@ -1,20 +1,20 @@
 ---
-title: Recordset2. RecordStatus-Eigenschaft (DAO)
+title: Recordset2.RecordStatus-Eigenschaft (DAO)
 TOCTitle: RecordStatus Property
 ms:assetid: 178872a9-e361-f277-627d-f91b01ceb6d1
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845575(v=office.15)
 ms:contentKeyID: 48543451
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: ae3dc5ba640b4b24a7400fc9e467978777ef6fcc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7d512f7cdbb77ab2221f257dfe0e3dfeb9a32b74
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309366"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572788"
 ---
-# <a name="recordset2recordstatus-property-dao"></a>Recordset2. RecordStatus-Eigenschaft (DAO)
+# <a name="recordset2recordstatus-property-dao"></a>Recordset2.RecordStatus-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -23,9 +23,9 @@ ms.locfileid: "32309366"
 
 *Ausdruck* . RecordStatus
 
-*Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset2-Objekt** darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Wert der **RecordStatus**-Eigenschaft gibt an, ob und wie der aktuelle Datensatz an der nächsten optimistischen Batchaktualisierung beteiligt ist.
 

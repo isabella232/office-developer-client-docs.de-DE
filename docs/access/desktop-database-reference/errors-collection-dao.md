@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff834805(v=office.15)
 ms:contentKeyID: 48547929
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: cf8e891936d4f8bd03535fa199026bc4ad8ff9ba
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 9967bd299b4de28a35077c2676f88a8156d1add1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293413"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552969"
 ---
 # <a name="errors-collection-dao"></a>Errors-Auflistung (DAO)
 
@@ -21,7 +21,7 @@ ms.locfileid: "32293413"
 
 Eine **Errors**-Auflistung enthält alle gespeicherten **Error**-Objekte, die sich jeweils auf eine einzelne DAO-Operation beziehen.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Jede Operation, die DAO-Objekte betrifft, kann Fehler generieren. Wenn ein Fehler auftritt, werden eines oder mehrere der **Error**-Objekte in der **Errors**-Auflistung des **DBEngine**-Objekts abgelegt. Wenn eine andere DAO-Operation einen Fehler generiert, wird die **Errors**-Auflistung gelöscht, und der neue Satz von **Error**-Objekten wird in der **Errors**-Auflistung abgelegt. Das Objekt mit der höchsten Zahl in der **Errors**-Auflistung (DBEngine.Errors.Count - 1) entspricht dem Fehler, der vom VBA-Objekt (Microsoft Visual Basic für Applikationen) **Err** gemeldet wird.
 

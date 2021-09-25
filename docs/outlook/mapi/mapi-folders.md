@@ -3,17 +3,17 @@ title: MAPI-Ordner
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 8fac3c92-d2f5-479e-a368-ca82bddd8e30
 description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 6c00dce9ec489ca2b886f3e51551ba57e9eeea33
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 527e72cdd1aa59542bec4fe49ab39c7e7ce0eff8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33421844"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59571437"
 ---
 # <a name="mapi-folders"></a>MAPI-Ordner
 
@@ -39,9 +39,9 @@ Die meisten anderen Ordner sind generische Ordner. Generische Ordner enthalten w
   
 Ein Suchordner enth�lt Links zu Nachrichten, die eine Reihe von vordefinierten Kriterien entsprechen. Da Suchordner Links anstelle von tats�chlichen Nachrichten enthalten, werden sie in Kraft schreibgesch�tzt. Nicht enthalten andere Ordner oder Nachrichten oder Ordner verschoben oder in diese kopiert. Sie d�rfen keine neue Nachrichten erstellt, in denen besitzen. und sie selbst verschoben, kopiert oder umbenannt werden nicht m�glich. Wenn eine Nachricht aus einem Suchordner gel�scht wird, wird sie tats�chlich aus dem Ordner gel�scht, die die Nachricht enth�lt.
   
-Der Ordnertyp wird in der **PR_FOLDER_TYPE** ([PidTagFolderType](pidtagfoldertype-canonical-property.md)) -Eigenschaft gespeichert. Jeder Ordner hat diese Eigenschaft auf FOLDER_GENERIC, FOLDER_ROOT oder FOLDER_SEARCH, je nachdem dieses Typs festgelegt.
+Der Ordnertyp wird in der **eigenschaft PR_FOLDER_TYPE** ([PidTagFolderType](pidtagfoldertype-canonical-property.md)) gespeichert. Jeder Ordner hat diese Eigenschaft auf FOLDER_GENERIC, FOLDER_ROOT oder FOLDER_SEARCH, je nachdem dieses Typs festgelegt.
   
-Jeder Ordner verf�gt �ber eine Eintrags-ID und einen Datensatzschl�ssel. Der **Eintragsbezeichner** PR_ENTRYID ([PidTagEntryId](pidtagentryid-canonical-property.md)) wird von Clients und Dienstanbietern zum Öffnen des Ordners verwendet. Der Datensatzschlüssel, **PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md)), ist ein binärer Wert, der zum Vergleichen des Ordners mit anderen Ordnern verwendet wird. 
+Jeder Ordner verf�gt �ber eine Eintrags-ID und einen Datensatzschl�ssel. Der Eintragsbezeichner, **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)), wird von Clients und Dienstanbietern verwendet, um den Ordner zu öffnen. Der **Datensatzschlüssel, PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md)), ist ein binärer Wert, der verwendet wird, um den Ordner mit anderen Ordnern zu vergleichen. 
   
 Ein Ordner hat andere Eigenschaften zugeh�rigen Ordner und den Nachrichtenspeicher zu identifizieren. Die folgenden Eigenschaften sind erforderlich:
   
@@ -51,7 +51,7 @@ Ein Ordner hat andere Eigenschaften zugeh�rigen Ordner und den Nachrichtenspei
     
 - **PR_STORE_RECORD_KEY** ([PidTagStoreRecordKey](pidtagstorerecordkey-canonical-property.md))
     
-Einige Ordner unterstützen die **PR_ACCESS** ([PidTagAccess](pidtagaccess-canonical-property.md)) -Eigenschaft, die den Typ der Vorgänge beschreibt, die ein Benutzer ausführen kann. Beispielsweise ist eine der g�ltigen Einstellungen f�r **PR_ACCESS** MAPI_ACCESS_DELETE, die angibt, dass der Ordner entfernt werden kann. Eine weitere Einstellung, MAPI_ACCESS_MODIFY, gibt an, dass der Ordner ge�ndert werden. 
+Einige Ordner unterstützen die **eigenschaft PR_ACCESS** ([PidTagAccess](pidtagaccess-canonical-property.md)), die den Typ der Vorgänge beschreibt, die ein Benutzer ausführen kann. Beispielsweise ist eine der g�ltigen Einstellungen f�r **PR_ACCESS** MAPI_ACCESS_DELETE, die angibt, dass der Ordner entfernt werden kann. Eine weitere Einstellung, MAPI_ACCESS_MODIFY, gibt an, dass der Ordner ge�ndert werden. 
   
 Eine vollst�ndige Liste der erforderlichen Ordnereigenschaften finden Sie unter der [IMAPIFolder](imapifolderimapicontainer.md) -Schnittstelle. 
   

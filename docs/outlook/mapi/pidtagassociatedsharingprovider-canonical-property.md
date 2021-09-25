@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 88a3356c-0b53-4401-8fcc-64071723c226
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 39d98972c22bd49549bf370ce1699b15cf1e27d2
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 4e15e7d79bd1103fa2238dffb7105c15db6df425
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33408922"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59563910"
 ---
 # <a name="pidtagassociatedsharingprovider-canonical-property"></a>PidTagAssociatedSharingProvider (kanonische Eigenschaft)
 
@@ -21,16 +21,16 @@ ms.locfileid: "33408922"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bestimmt, ob ein Anbieter für persönliche Ordnerdatei (PST) als Microsoft SharePoint 2010 PST konfiguriert ist.
+Bestimmt, ob ein PST-Speicheranbieter (Personal Folders File) als Microsoft SharePoint 2010 PST konfiguriert ist.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_ASSOCIATED_SHARING_PROVIDER  <br/> |
 |Kennung:  <br/> |0x0EA00048  <br/> |
 |Datentyp:  <br/> |PT_CLSID  <br/> |
-|Bereich:  <br/> |Interne Persönliche Speichertabelle (PST)  <br/> |
+|Bereich:  <br/> |Persönliche Speichertabelle (PST) intern  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft gibt an, ob ein PST für Microsoft SharePoint 2010 konfiguriert ist. Wenn die Eigenschaft nicht vorhanden ist, wurde das PST nicht als Microsoft SharePoint 2010 PST konfiguriert.
   
@@ -40,9 +40,9 @@ Diese Eigenschaft gibt an, ob ein PST für Microsoft SharePoint 2010 konfigurier
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

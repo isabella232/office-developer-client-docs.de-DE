@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagSendInternetEncoding
 api_type:
 - COM
 ms.assetid: ae408b4f-dee3-484b-a19c-f472cfa95996
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e157fa640026d13362084b30ad73cdb66a0b35b5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 92bfef3b339649b18b755cfa231954ebec84d4fe
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32342672"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59586971"
 ---
 # <a name="pidtagsendinternetencoding-canonical-property"></a>PidTagSendInternetEncoding (kanonische Eigenschaft)
 
@@ -34,39 +34,39 @@ Enthält eine Bitmaske mit Codierungseinstellungen.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Legen Sie diese Eigenschaft so ein, dass die verwendeten Codierungsoptionen angegeben werden. 
+Legen Sie diese Eigenschaft fest, um die verwendeten Codierungsoptionen anzugeben. 
   
 Diese Eigenschaft enthält die folgenden Flags:
   
 BODY_ENCODING_HTML 
   
-> Codieren Sie den Nachrichtentext in HTML. Dieses Flag wird ignoriert, es sei denn, ENCODING_MIME festgelegt ist. 
+> Codieren Sie den Nachrichtentext in HTML. Dieses Flag wird ignoriert, es sei denn, das ENCODING_MIME Flag ist festgelegt. 
     
 BODY_ENCODING_TEXT_AND_HTML 
   
-> Codieren Sie den Nachrichtentext mithilfe von Text und HTML als mehrteilige Multipartalternativen (Multipurpose Internet Mail Extensions, MIME). Dieses Flag wird ignoriert, es sei denn, ENCODING_MIME festgelegt ist. 
+> Codieren Sie den Nachrichtentext mit Text und HTML als mehrteilige Mime-Alternativen (Multipurpose Internet Mail Extensions). Dieses Flag wird ignoriert, es sei denn, das ENCODING_MIME Flag ist festgelegt. 
     
 ENCODING_MIME 
   
-> Codieren Sie die Nachricht mithilfe von MIME. Wenn dieses Flag nicht festgelegt ist, codiert MAPI den Nachrichtentext in Nur-Text und die Anlagen in UUENCODE. 
+> Codieren Sie die Nachricht mithilfe von MIME. Wenn dieses Kennzeichen nicht festgelegt ist, codiert MAPI den Nachrichtentext in Nur-Text und die Anlagen in UUENCODE. 
     
 ENCODING_PREFERENCE 
   
-> Verwenden Sie die anderen Flags in dieser Bitmaske, um die Codierung zu bestimmen. Wenn dieses Flag nicht festgelegt ist, überlässt MAPI es dem Messagingsystem, Codierungsentscheidungen zu treffen. 
+> Verwenden Sie die anderen Flags in dieser Bitmaske, um die Codierung zu bestimmen. Wenn dieses Kennzeichen nicht festgelegt ist, überlässt MAPI es dem Messagingsystem, um Codierungsentscheidungen zu treffen. 
     
 MAC_ATTACH_ENCODING_APPLEDOUBLE 
   
-> Codieren Sie Macintosh-Anlagen im Apple-Doppelmodus. Dieses Flag wird ignoriert, es sei denn, ENCODING_MIME festgelegt ist. 
+> Codieren Sie Macintosh-Anlagen im Apple-Doppelmodus. Dieses Flag wird ignoriert, es sei denn, das ENCODING_MIME Flag ist festgelegt. 
     
 MAC_ATTACH_ENCODING_APPLESINGLE 
   
-> Codieren Sie Macintosh-Anlagen im Apple-Einzelmodus. Dieses Flag wird ignoriert, es sei denn, ENCODING_MIME festgelegt ist. 
+> Codieren Sie Macintosh-Anlagen im Apple-Einzelmodus. Dieses Flag wird ignoriert, es sei denn, das ENCODING_MIME Flag ist festgelegt. 
     
 MAC_ATTACH_ENCODING_UUENCODE 
   
-> Codieren Sie Macintosh-Anlagen in UUENCODE. Wenn das ENCODING_MIME festgelegt ist, wird dieses Flag ignoriert, und stattdessen wird die BinHex-Codierung verwendet. 
+> Codieren Sie Macintosh-Anlagen in UUENCODE. Wenn das ENCODING_MIME-Flag festgelegt ist, wird dieses Flag ignoriert, und stattdessen wird die BinHex-Codierung verwendet. 
     
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -74,7 +74,7 @@ MAC_ATTACH_ENCODING_UUENCODE
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
@@ -96,11 +96,11 @@ MAC_ATTACH_ENCODING_UUENCODE
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -108,9 +108,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

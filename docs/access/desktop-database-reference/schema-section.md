@@ -1,18 +1,18 @@
 ---
-title: Abschnitt "Schema" (Access Desktop Database Reference)
+title: Schemaabschnitt (Access-Desktopdatenbankreferenz)
 TOCTitle: Schema Section
 ms:assetid: 59b42ffb-0524-adc3-8bcd-6e4cd2c505ce
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249304(v=office.15)
 ms:contentKeyID: 48545023
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: f8c479c430dd6d0ca742fefb4948544d31ba2e61
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: a92d778bcad1f2c58bfc2997f6ac112cc9f6049d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308939"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572746"
 ---
 # <a name="schema-section"></a>Schema-Abschnitt
 
@@ -148,7 +148,7 @@ Die folgenden Beispiele zeigen, wie Sie Typinformationen in das Schema einschlie
 <s:AttributeType name="title_id" dt:type="int"/> 
 ```
 
-Im zweiten Beispiel wird das **RS: FixedLength** -Attribut subtil verwendet. Eine Spalte mit dem **RS: FixedLength** -Attribut, das auf true festgelegt ist, bedeutet, dass die Daten die im Schema definierte Länge aufweisen müssen. In diesem Fall lautet ein gültiger Wert für die\_Titel-id "123456", wie auch "123". "123" wäre jedoch nicht gültig, da die Länge 3 und nicht 6 ist. Eine ausführlichere Beschreibung der **FixedLength** -Eigenschaft finden Sie im OLE DB Programmer es Guide.
+Im zweiten Beispiel wird das attribut **rs:fixedlength** dezent verwendet. Eine Spalte mit dem Attribut **"rs:fixedlength"** auf "true" bedeutet, dass für die Daten die Länge im Schema definiert sein muss. In diesem Fall lautet ein rechtlicher Wert für die \_ Titel-ID "123456", ebenso wie "123". "123" wäre jedoch ungültig, da die Länge 3 und nicht 6 ist. Eine ausführlichere Beschreibung der **FixedLength-Eigenschaft** finden Sie im OLE DB-Programmierhandbuch.
 
 ## <a name="handling-nulls"></a>Behandeln von NULL-Werten
 
@@ -164,14 +164,14 @@ Null values are handled by the **rs:maybenull** attribute. If this attribute is 
 </s:AttributeType> 
 ```
 
-The definition allows CompanyName to be null, but ShipperID cannot contain a null value. Wenn der Datenabschnitt die folgende Zeile enthält, würde der Persistenz-Anbieter den Status der Daten für die Spalte CompanyName auf die OLE DB-Statuskonstante dbSTATUS\_S\_IsNull festlegen:
+The definition allows CompanyName to be null, but ShipperID cannot contain a null value. Wenn der Datenabschnitt die folgende Zeile enthält, würde der Persistenzanbieter den Status der Daten für die Spalte "CompanyName" auf die OLE DB-Statuskonstante DBSTATUS \_ S \_ ISNULL festlegen:
 
 ```xml 
  
 <z:row ShipperID="1"/> 
 ```
 
-Wenn die Zeile vollständig leer war, würde der Persistenz-Anbieter den OLE DB-Status von\_DBStatus e\_nicht für ShipperID und DBStatus\_S\_IsNull für CompanyName zurückgeben.
+Wenn die Zeile wie folgt vollständig leer wäre, würde der Persistenzanbieter den OLE DB-Status DBSTATUS \_ E \_ UNAVAILABLE für ShipperID und DBSTATUS \_ S \_ ISNULL für CompanyName zurückgeben.
 
 ```xml 
  
@@ -185,7 +185,7 @@ Beachten Sie, dass eine leere Zeichenfolge nicht mit NULL identisch ist.
 <z:row ShipperID="1" CompanyName=""/> 
 ```
 
-Für die vorhergehende Zeile gibt der Persistenzdienst für beide Spalten einen OLE DB-Status\_von\_"DBStatus S OK" zurück. The CompanyName in this case is simply "" (a zero-length string).
+Für die vorherige Zeile gibt der Persistenzanbieter den OLE DB-Status DBSTATUS \_ S OK für beide Spalten \_ zurück. The CompanyName in this case is simply "" (a zero-length string).
 
 For further information about the OLE DB constructs available for use within the schema of an XML document for OLE DB, see the definition of "urn:schemas-microsoft-com:rowset" and the OLE DB Programmer's Guide.
 

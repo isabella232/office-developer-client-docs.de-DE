@@ -1,52 +1,52 @@
 ---
-title: PidLidMeetingType (kanonische Eigenschaft)
+title: Kanonische PidLidMeetingType-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidMeetingType
 api_type:
 - COM
 ms.assetid: 290b290c-7836-4a7e-bf1a-8d0225a07e56
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: d2b00c67984d090274a17028ee74e46bee482e2b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 24b6d94dbd068698914d8bbd96a7b23f7cb2ae65
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32331577"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59555734"
 ---
-# <a name="pidlidmeetingtype-canonical-property"></a>PidLidMeetingType (kanonische Eigenschaft)
+# <a name="pidlidmeetingtype-canonical-property"></a>Kanonische PidLidMeetingType-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt den Typ der Besprechungsanfrage oder Besprechungsaktualisierung an.
+Gibt den Typ der Besprechungsanfrage oder besprechungsaktualisierung an.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidMeetingType  <br/> |
 |Eigenschaftensatz:  <br/> |PSETID_Meeting  <br/> |
-|Lange ID (LID):  <br/> |0x00000026  <br/> |
+|Long ID (LID):  <br/> |0x00000026  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Wert dieser Eigenschaft muss auf eine der folgenden Werte festgelegt werden:
   
 |**Eigenschaft**|**Wert**|**Beschreibung**|
 |:-----|:-----|:-----|
-|mtgEmpty  <br/> |0x00000000  <br/> |Nicht angegeben.  <br/> |
-|mtgRequest  <br/> |0x00000001  <br/> |Erste Besprechungsanfrage.  <br/> |
+|mtgEmpty  <br/> |0x00000000  <br/> |Unspecified.  <br/> |
+|mtgRequest  <br/> |0x00000001  <br/> |Ursprüngliche Besprechungsanfrage.  <br/> |
 |mtgFull  <br/> |0x00010000  <br/> |Vollständige Aktualisierung.  <br/> |
-|mtgInfo  <br/> |0x00020000  <br/> |Informationsupdate.  <br/> |
-|mtgOutOfDate  <br/> |0x00080000  <br/> |Eine neuere Besprechungsanfrage oder Besprechungsaktualisierung wurde nach dieser empfangen.  <br/> |
-|mtgDelegatorCopy  <br/> |0x00100000  <br/> |Dies wird für die Kopie des Delegators festgelegt, wenn eine Stellvertretung besprechungsbezogene Objekte behandelt.  <br/> |
+|mtgInfo  <br/> |0x00020000  <br/> |Informationsaktualisierung.  <br/> |
+|mtgOutOfDate  <br/> |0x00080000  <br/> |Eine neuere Besprechungsanfrage oder besprechungsaktualisierung wurde nach dieser empfangen.  <br/> |
+|mtgDelegatorCopy  <br/> |0x00100000  <br/> |Dies wird für die Kopie des Stellvertreters festgelegt, wenn ein Stellvertreter Besprechungsobjekte verarbeitet.  <br/> |
    
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -54,17 +54,17 @@ Der Wert dieser Eigenschaft muss auf eine der folgenden Werte festgelegt werden:
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Stellt Eigenschaftensatzdefinitionen und Verweise auf verwandte Exchange Server zur Verfügung.
+> Stellt Eigenschaftssatzdefinitionen und Verweise auf verwandte Exchange Server Protokollspezifikationen bereit.
     
 [[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften und Vorgänge für Termin-, Besprechungs- und Antwortnachrichten an.
+> Gibt die Eigenschaften und Vorgänge für Termin-, Besprechungsanfrage- und Antwortnachrichten an.
     
 ### <a name="header-files"></a>Headerdateien
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -72,9 +72,9 @@ Mapidefs.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPIMessageSite.GetMessage
 api_type:
 - COM
 ms.assetid: 49d12c49-84f8-44ac-bc4a-2ee44a46f8c1
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 03dd0553d0203585850ac5c4f8c91c86ef60236a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 1d334a273f0f454c59ea2c28b98e4e5bac6b809d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33409027"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556623"
 ---
 # <a name="imapimessagesitegetmessage"></a>IMAPIMessageSite::GetMessage
 
@@ -49,13 +49,13 @@ S_FALSE
   
 > Für das aufrufende Formular ist derzeit keine Nachricht vorhanden.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Formulare rufen die **IMAPIMessageSite::GetMessage-Methode** auf, um eine Nachrichtenschnittstelle für die aktuelle Nachricht zu erhalten. Die aktuelle Nachricht ist die gleiche Nachricht wie zuvor in der [IPersistMessage::InitNew](ipersistmessage-initnew.md)-, [IPersistMessage::Load](ipersistmessage-load.md)- oder [IPersistMessage::SaveCompleted-Methode.](ipersistmessage-savecompleted.md) 
+Formulare rufen die **IMAPIMessageSite::GetMessage-Methode** auf, um eine Nachrichtenschnittstelle für die aktuelle Nachricht abzurufen. Die aktuelle Nachricht ist die gleiche Nachricht wie zuvor in der [IPersistMessage::InitNew](ipersistmessage-initnew.md)-, [IPersistMessage::Load](ipersistmessage-load.md)- oder [IPersistMessage::SaveCompleted](ipersistmessage-savecompleted.md) -Methode übergeben wurde. 
   
  **GetMessage** gibt S_FALSE zurück, wenn derzeit keine Nachricht vorhanden ist. Dieser Zustand kann nach Aufrufen der [IPersistMessage::HandsOffMessage-Methode](ipersistmessage-handsoffmessage.md) oder vor dem nächsten Aufruf von **IPersistMessage::Load** oder **IPersistMessage::SaveCompleted** auftreten. 
   
-Eine Liste der Schnittstellen im Zusammenhang mit Formularservern finden Sie unter [MAPI Form Interfaces](mapi-form-interfaces.md).
+Eine Liste der Schnittstellen im Zusammenhang mit Formularservern finden Sie unter [MAPI-Formularschnittstellen.](mapi-form-interfaces.md)
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -63,7 +63,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::GetSession  <br/> |MFCMAPI verwendet die **IMAPIMessageSite::GetMessage-Methode,** um den aktuell zwischengespeicherten Nachrichtenzeiger zurückzukehren, sofern er verfügbar ist.  <br/> |
+|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::GetSession  <br/> |MFCMAPI verwendet die **IMAPIMessageSite::GetMessage-Methode,** um den aktuell zwischengespeicherten Nachrichtenzeiger zurückzugeben, sofern verfügbar.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,20 +1,20 @@
 ---
-title: Recordset. BatchCollisions-Eigenschaft (DAO)
+title: Recordset.BatchCollisions-Eigenschaft (DAO)
 TOCTitle: BatchCollisions Property
 ms:assetid: 53e5572b-770c-9ea5-31a5-984abdf66faa
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194079(v=office.15)
 ms:contentKeyID: 48544881
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 61f60567ac170a0ecde2d4bd46589d2308b7788f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: adcecada39d5e30c148a0531fd56d86a8e3c20de
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300861"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562384"
 ---
-# <a name="recordsetbatchcollisions-property-dao"></a>Recordset. BatchCollisions-Eigenschaft (DAO)
+# <a name="recordsetbatchcollisions-property-dao"></a>Recordset.BatchCollisions-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -23,7 +23,7 @@ ms.locfileid: "32300861"
 
 *Ausdruck* . BatchCollisions
 
-*Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 

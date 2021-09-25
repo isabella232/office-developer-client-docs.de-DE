@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248796(v=office.15)
 ms:contentKeyID: 48542972
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 5a25dc0d1d5e621a610b34ca1875c3fd76ba56eb
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 358967a4938276c36536c92f91912d23bd5bd55a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283380"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59553396"
 ---
 # <a name="ado-errors"></a>ADO-Fehler
 
 **Gilt für**: Access 2013, Office 2013
 
-ADO Errors are reported to your program as run-time errors. You can use the error-trapping mechanism of your programming language to trap and handle them. For example, in Visual Basic, use the **On Error** statement. In Visual J++, use a **try-catch** block. In Visual C++, it depends on the method you are using to access the ADO libraries. Verwenden \#Sie mit Import einen **try-catch-** Block. Otherwise, C++ programmers need to explicitly retrieve the error object by calling **GetErrorInfo**. The following Visual Basic sub procedure demonstrates trapping an ADO error:
+ADO Errors are reported to your program as run-time errors. You can use the error-trapping mechanism of your programming language to trap and handle them. For example, in Visual Basic, use the **On Error** statement. In Visual J++, use a **try-catch** block. In Visual C++, it depends on the method you are using to access the ADO libraries. \#Verwenden Sie beim Import einen **try-catch-Block.** Otherwise, C++ programmers need to explicitly retrieve the error object by calling **GetErrorInfo**. The following Visual Basic sub procedure demonstrates trapping an ADO error:
 
 ```vb 
  
@@ -77,7 +77,7 @@ End Sub
 ' EndErrorHandlingVB01 
 ```
 
-Diese Methode zum **\_laden** von Ereignissen erstellt absichtlich einen Fehler, indem Sie versuchen, das gleiche **Connection** -Objekt zweimal zu öffnen. Beim zweiten Aufruf der **Open** -Methode wird der Fehlerhandler aktiviert. In diesem Fall ist der Fehler vom Typ **adErrObjectOpen**, weshalb der Fehlerhandler die folgende Fehlermeldung anzeigt, bevor die Ausführung des Programms fortgesetzt wird:
+Diese **Form Load-Ereignisprozedur \_** erstellt absichtlich einen Fehler, indem versucht wird, dasselbe **Connection-Objekt** zweimal zu öffnen. Beim zweiten Aufruf der **Open** -Methode wird der Fehlerhandler aktiviert. In diesem Fall ist der Fehler vom Typ **adErrObjectOpen**, weshalb der Fehlerhandler die folgende Fehlermeldung anzeigt, bevor die Ausführung des Programms fortgesetzt wird:
 
 ```vb 
 Error #3705: Operation is not allowed when the object is open. 

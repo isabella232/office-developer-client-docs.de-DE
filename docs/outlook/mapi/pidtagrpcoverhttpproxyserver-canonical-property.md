@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 25787ee0-0cd3-e448-a54e-a6aa03b8b718
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 0219346fffb135963903252325764507b9906794
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: efc9dc9b9bb9b8f80cfc5c4fafeda35df14a37c2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357883"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59587132"
 ---
 # <a name="pidtagrpcoverhttpproxyserver-canonical-property"></a>PidTagRpcOverHttpProxyServer (kanonische Eigenschaft)
 
@@ -21,7 +21,7 @@ ms.locfileid: "32357883"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält die URL des Proxyservers, der zum Verbinden von Microsoft Outlook mit Microsoft Exchange Server ohne das HTTP-Protokoll oder das Vor der URL enthaltene Hypertext Transfer Protocol Secure (HTTPS)-Protokoll verwendet wird.
+Enthält die URL des Proxyservers, der zum Verbinden von Microsoft Outlook mit Microsoft Exchange Server ohne das HTTP-Protokoll oder das HTTPS-Protokoll (Hypertext Transfer Protocol Secure) verwendet wird, das vor der URL steht.
   
 ## 
 
@@ -29,7 +29,7 @@ Enthält die URL des Proxyservers, der zum Verbinden von Microsoft Outlook mit M
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_ROH_PROXY_SERVER  <br/> |
 |Kennung:  <br/> |0x6622  <br/> |
-|Eigenschaftstyp:  <br/> |PT_UNICODE  <br/> |
+|Eigenschaftentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Sonstiges  <br/> |
    
 ## <a name="related-resources"></a>Verwandte Ressourcen
@@ -38,7 +38,7 @@ Enthält die URL des Proxyservers, der zum Verbinden von Microsoft Outlook mit M
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
   
@@ -52,11 +52,11 @@ Enthält die URL des Proxyservers, der zum Verbinden von Microsoft Outlook mit M
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -64,9 +64,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm118713
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: efa763a77250e1d5c617358f31421804c772468b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d30b60680065fd3d949e64b11789e6fe6bc3b80c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314644"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572718"
 ---
 # <a name="searchforrecord-macro-action"></a>SearchForRecord-Makroaktion
 
@@ -88,22 +88,22 @@ Die **SuchenNachDatensatz**-Aktion verwendet die folgenden Argumente.
 </tr>
 <tr class="even">
 <td><p><strong>Bedingung</strong></p></td>
-<td><p>Geben Sie die Suchkriterien unter Verwendung derselben Syntax wie eine SQL-WHERE-Klausel nur ohne das Wort &quot;Where&quot;ein. For example,</p>
+<td><p>Geben Sie die Kriterien für die Suche mit derselben Syntax wie eine SQL WHERE-Klausel nur ohne das Wort &quot; WHERE &quot; ein. Beispiel:</p>
 <p>`Description = "Beverages"`</p>
-<p>Zum Erstellen eines Kriteriums, das einen Wert aus einem Textfeld in einem Formular enthält, müssen Sie einen Ausdruck erstellen, der den ersten Teil des Kriteriums mit dem Namen des Textfelds verkettet, das den zu durchsuchenden Wert enthält. Mit dem folgenden Kriterium wird beispielsweise das Feld Beschreibung nach dem Wert im Textfeld mit dem Namen txtDescription im Formular mit dem Namen frmCategories durchsucht. NoTieren Sie sich<strong>=</strong>das Gleichheitszeichen () am Anfang des Ausdrucks und die Verwendung von einfachen Anführungszeichen (<strong>'</strong>) auf beiden Seiten des Text Feldverweises:</p>
+<p>Zum Erstellen eines Kriteriums, das einen Wert aus einem Textfeld in einem Formular enthält, müssen Sie einen Ausdruck erstellen, der den ersten Teil des Kriteriums mit dem Namen des Textfelds verkettet, das den zu durchsuchenden Wert enthält. Das folgende Kriterium durchsucht beispielsweise das Feld Description nach dem Wert im Textfeld txtDescription des Formulars frmCategories. Beachten Sie das Gleichheitszeichen ( <strong>=</strong> ) am Anfang des Ausdrucks und die Verwendung von einfachen Anführungszeichen (<strong>'</strong>) auf beiden Seiten des Textfeldverweises:</p>
 <p>`="Description = ' " & Forms![frmCategories]![txtDescription] & "'"`</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 - Falls mehrere Datensätze mit den Kriterien im Argument **Bedingung** übereinstimmen, legen die folgenden Einstellungen fest, welcher Datensatz gefunden wird:
     
-  - **Die Einstellung des Arguments Record** Weitere Informationen zum Argument **Record** finden Sie in der Tabelle im Abschnitt "Einstellungen".
+  - **Einstellung des Record-Arguments** Weitere Informationen zum **Record-Argument** finden Sie in der Tabelle im Abschnitt Einstellungen.
     
-  - **Die Sortierreihenfolge der Datensätze** Wenn beispielsweise das Argument **Record** auf **First**festgelegt ist, kann sich durch Ändern der Sortierreihenfolge der Datensätze der gefundene Datensatz ändern.
+  - **Die Sortierreihenfolge der Datensätze** Wenn **das** Record-Argument beispielsweise auf **"First"** festgelegt ist, kann sich durch Ändern der Sortierreihenfolge der Datensätze ändern, welcher Datensatz gefunden wird.
 
 - Das im Argument **Objektname** angegebene Argument muss vor dem Ausführen dieser Aktion geöffnet werden. Sonst treten Fehler auf.
 
@@ -119,9 +119,9 @@ Die **SuchenNachDatensatz**-Aktion verwendet die folgenden Argumente.
         
     `Description = "Beverages" and CategoryID = 11`
     
-  - Sie können auf Felder verweisen, die zwar in der Datensatzquelle eines Formulars oder Berichts angezeigt werden, nicht aber im Formular oder Bericht. Im vorherigen Beispiel müssen weder Description noch Kategoriename im Formular oder Bericht angezeigt werden, damit die Kriterien funktionieren.
+  - Sie können auf Felder verweisen, die zwar in der Datensatzquelle eines Formulars oder Berichts angezeigt werden, nicht aber im Formular oder Bericht. Im vorherigen Beispiel dürfen weder Description noch CategoryID auf dem Formular oder Bericht angezeigt werden, damit die Kriterien funktionieren.
     
-  - Sie können logische Operatoren verwenden, z. B. **\<**, **\>**, **AND**, **OR** und **BETWEEN**. Mit der **SuchenDatensatz** -Aktion werden nur Zeichenfolgen gefunden, die der gesuchten Zeichenfolge entsprechen, mit dieser beginnen oder sie enthalten.
+  - Sie können logische Operatoren verwenden, z. B. **\<**, **\>** **AND**, **OR** und **BETWEEN**. Mit der **SuchenDatensatz**-Aktion werden nur Zeichenfolgen gefunden, die der gesuchten Zeichenfolge entsprechen, mit dieser beginnen oder sie enthalten.
 
 ## <a name="example"></a>Beispiel
 
@@ -141,11 +141,11 @@ The following macro first opens the Categories table by using the **OpenTable** 
 <tbody>
 <tr class="odd">
 <td><p><strong>OpenTable</strong></p></td>
-<td><p><strong>Tabellen Name</strong>: Kategorien<strong>Ansicht</strong>: <strong>DatasheetData-Modus</strong>: <strong>Bearbeiten</strong></p></td>
+<td><p><strong>Tabellenname</strong>:<strong>Kategorienansicht</strong>: <strong>Datenblattdatenmodus</strong>: <strong>Bearbeiten</strong></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SearchForRecord</strong></p></td>
-<td><p><strong>Objekttyp</strong>: <strong>Table Object Name</strong>: categories<strong>Record</strong>: <strong>FirstWhere Condition</strong>: Description = &quot;beverages&quot;</p></td>
+<td><p><strong>Objekttyp</strong>: <strong>TableObject-Name</strong>: Categories<strong>Record</strong>: <strong>FirstWhere Condition</strong>: Description = &quot; Zugabe&quot;</p></td>
 </tr>
 </tbody>
 </table>

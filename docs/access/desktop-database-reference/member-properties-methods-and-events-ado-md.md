@@ -1,20 +1,20 @@
 ---
-title: Elementeigenschaften, Methoden und Ereignisse (ADO MD)
+title: Membereigenschaften, Methoden und Ereignisse (ADO MD)
 TOCTitle: Properties, Methods, and Events
 ms:assetid: 67d28214-2805-010b-eb10-4995fb69506c
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249404(v=office.15)
 ms:contentKeyID: 48545371
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 48e26fd8a7aafbb39f9ff658bca36812e02c9169
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: b9fa9413bccac09a43cdf600fc31fdb258eed764
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289449"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552822"
 ---
-# <a name="member-properties-methods-and-events-ado-md"></a>Elementeigenschaften, Methoden und Ereignisse (ADO MD)
+# <a name="member-properties-methods-and-events-ado-md"></a>Membereigenschaften, Methoden und Ereignisse (ADO MD)
 
 **Gilt für**: Access 2013, Office 2013
 

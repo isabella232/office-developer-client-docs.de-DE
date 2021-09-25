@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249002(v=office.15)
 ms:contentKeyID: 48543706
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 88a84f6fa3604286ca27651cefc999c96ff41d0e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 0587f2d07342d97695524859ebca10248e70d931
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290891"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562601"
 ---
 # <a name="jscript-ado-programming"></a>JScript ADO-Programmierung
 
@@ -26,11 +26,11 @@ Da von Microsoft JScript keine Typbibliotheken unterstützt werden, müssen Sie 
 
 In ADO werden jedoch zwei Includedateien bereitgestellt, die die folgenden Definitionen enthalten, die mit JScript verwendet werden können:
 
-- Für die serverseitige Skripterstellung verwenden Sie Datei adojavas. Inc, die standardmäßig im Ordner\\c:\\Program Files\\Common\\Files\\ System ADO installiert ist.
+- Verwenden Sie für serverseitiges Skripting standardmäßig "Adojavas.inc", das im Ordner "c: \\ Program Files Common Files System \\ \\ \\ ado" installiert \\ ist.
 
-- Für die clientseitige Skripterstellung verwenden Sie Adcjavas. Inc, die standardmäßig im Ordner\\c:\\Program Files\\Common\\Files\\ System msdac installiert ist.
+- Verwenden Sie für clientseitige Skripts Adcjavas.inc, das standardmäßig im Ordner "c: \\ Program Files Common Files System \\ \\ \\ msdac" installiert \\ ist.
 
-Sie können entweder kopieren und Einfügen von Konstanten Definitionen aus diesen Dateien in Ihre ASP-Seiten oder, wenn Sie serverseitige Skripterstellung durchführen, kopieren Sie die Datei Datei adojavas. Inc in einen Ordner auf Ihrer Website, und verweisen Sie auf Ihre ASP-Seite wie folgt:
+Sie können konstanten Definitionen aus diesen Dateien kopieren und in Ihre ASP-Seiten einfügen oder, wenn Sie serverseitige Skripts ausführen, die Datei "Adojavas.inc" in einen Ordner auf Ihrer Website kopieren und wie folgt von Ihrer ASP-Seite darauf verweisen:
 
 ```javascript  
  

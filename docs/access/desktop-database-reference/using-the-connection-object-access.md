@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250177(v=office.15)
 ms:contentKeyID: 48548423
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: d16b802140e2dcbbd85988bee316ae27236c3235
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: a8c7a77903ef318b6ac802c4d1488cc053d4db9a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32305922"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562055"
 ---
 # <a name="using-the-connection-object-access"></a>Verwenden des Connection-Objekts (Access)
 

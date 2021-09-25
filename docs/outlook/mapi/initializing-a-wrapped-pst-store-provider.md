@@ -3,31 +3,31 @@ title: Initialisieren eines Anbieters von umschlossenem PST-Speicher
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 07633717-ba4c-b146-ad65-60b37ab98ab6
-description: 'Letzte Änderung: 05. Oktober 2012'
-ms.openlocfilehash: 31114e4082fbc5e4c57da95eb6b32339822b1645
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: 'Last modified: October 05, 2012'
+ms.openlocfilehash: 3601e359eef6d798170d10e2debcb3613245f30c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33427822"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59571654"
 ---
 # <a name="initializing-a-wrapped-pst-store-provider"></a>Initialisieren eines Anbieters von umschlossenem PST-Speicher
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Zum Implementieren eines umschlossenen Anbieters für persönliche Ordner (PST)-Speicher müssen Sie den umschlossenen ANBIETER für den PST-Speicher mithilfe der **[MSProviderInit-Funktion](msproviderinit.md)** als Einstiegspunkt initialisieren. Nachdem die DLL des Anbieters initialisiert wurde, konfiguriert die **[MSGSERVICEENTRY-Funktion](msgserviceentry.md)** den umschlossenen ANBIETER für den PST-Speicher. 
+Zum Implementieren eines Anbieters von PST-Speicher (Wrapped Personal Folders File) müssen Sie den Anbieter des umschlossenen PST-Speichers initialisieren, indem Sie die **[MSProviderInit-Funktion](msproviderinit.md)** als Einstiegspunkt verwenden. Nachdem die DLL des Anbieters initialisiert wurde, konfiguriert die **[MSGSERVICEENTRY-Funktion](msgserviceentry.md)** den umschlossenen PST-Speicheranbieter. 
   
-In diesem Thema werden die **MSProviderInit-Funktion** und die **MSGSERVICEENTRY-Funktion** anhand von Codebeispielen aus dem Beispiel umschlossenen PST-Store demonstriert. Das Beispiel implementiert einen umschlossenen PST-Anbieter, der in Verbindung mit der Replikations-API verwendet werden soll. Weitere Informationen zum Herunterladen und Installieren des Beispielanbieters für umbrochene PST Store finden Sie unter [Installing the Sample Wrapped PST Store Provider](installing-the-sample-wrapped-pst-store-provider.md). Weitere Informationen zur Replikations-API finden Sie unter [Informationen zur Replikations-API](about-the-replication-api.md).
+In diesem Thema werden die **MSProviderInit-Funktion** und die **MSGSERVICEENTRY-Funktion** anhand von Codebeispielen aus dem Sample Wrapped PST Store Provider veranschaulicht. Das Beispiel implementiert einen umschlossenen PST-Anbieter, der in Verbindung mit der Replikations-API verwendet werden soll. Weitere Informationen zum Herunterladen und Installieren des Beispiel-Anbieters für umbrochene PST-Store finden Sie unter [Installieren des Beispiel-Anbieters für umschlossene PST-Store.](installing-the-sample-wrapped-pst-store-provider.md) Weitere Informationen zur Replikations-API finden Sie unter ["Informationen zur Replikations-API".](about-the-replication-api.md)
   
-Nachdem Sie einen umschlossenen ANBIETER für den PST-Speicher initialisiert haben, müssen Sie Funktionen implementieren, damit sich MAPI und der MAPI-Spooler beim Nachrichtenspeicheranbieter anmelden können. Weitere Informationen finden Sie unter [Logging On to a Wrapped PST Store Provider](logging-on-to-a-wrapped-pst-store-provider.md).
+Nachdem Sie einen anbieterumschlossenen PST-Speicher initialisiert haben, müssen Sie Funktionen implementieren, damit sich MAPI und der MAPI-Spooler beim Nachrichtenspeicheranbieter anmelden können. Weitere Informationen finden Sie unter ["Anmelden bei einem umschlossenen PST-Store Anbieter".](logging-on-to-a-wrapped-pst-store-provider.md)
   
 ## <a name="initialization-routine"></a>Initialisierungsroutine
 
-Alle umschlossenen PST-Speicheranbieter müssen die **[MSProviderInit-Funktion](msproviderinit.md)** als Einstiegspunkt implementieren, um die DLL des Anbieters zu initialisieren. **MSProviderInit** überprüft, ob die Versionsnummer der Dienstanbieterschnittstelle , mit der aktuellen Versionsnummer  `ulMAPIVer` kompatibel ist,  `CURRENT_SPI_VERSION` . Die Funktion speichert die MAPI-Speicherverwaltungsroutinen in den  `g_lpAllocateBuffer`  `g_lpAllocateMore` Parametern ,  `g_lpFreeBuffer` und. Diese Speicherverwaltungsroutinen sollten in der gesamten implementierung des umschlossenen PST-Speichers für die Speicherzuweisung und -verteilung verwendet werden. 
+Alle anbieterumschlossenen PST-Speicher müssen die **[MSProviderInit-Funktion](msproviderinit.md)** als Einstiegspunkt implementieren, um die DLL des Anbieters zu initialisieren. **MSProviderInit** überprüft, ob die Versionsnummer der `ulMAPIVer` Dienstanbieterschnittstelle, mit der aktuellen Versionsnummer kompatibel ist. `CURRENT_SPI_VERSION` Die Funktion speichert die MAPI-Speicherverwaltungsroutinen in den  `g_lpAllocateBuffer`  `g_lpAllocateMore` , und  `g_lpFreeBuffer` Parametern. Diese Speicherverwaltungsroutinen sollten in der gesamten Implementierung des umschlossenen PST-Speichers für die Speicherzuweisung und -zuordnung verwendet werden. 
   
-### <a name="msproviderinit-example"></a>MSProviderInit()-Beispiel
+### <a name="msproviderinit-example"></a>MSProviderInit() (Beispiel)
 
 ```cpp
 STDINITMETHODIMP MSProviderInit ( 
@@ -108,7 +108,7 @@ STDINITMETHODIMP MSProviderInit (
 
 ### <a name="wrapped-pst-and-unicode-paths"></a>Umschlossene PST- und Unicode-Pfade
 
-Um das in Microsoft Visual Studio 2008 vorbereitete ursprüngliche Beispiel für die Verwendung von Unicodepfaden zur NST für die Verwendung in Unicode-aktivierten Microsoft Outlook 2010 und Outlook 2013 nachrüsten zu können, sollte die **CreateStoreEntryID-Routine,** die die Eintrags-ID erstellt, ein Format für ASCII-Pfade und ein anderes für Unicode-Pfade verwenden. Diese werden im folgenden Beispiel als Strukturen dargestellt. 
+Um das ursprüngliche in Microsoft Visual Studio 2008 vorbereitete Beispiel so umzurüsten, dass Unicode-Pfade für die Verwendung in Unicode-fähigen Microsoft Outlook 2010 und Outlook 2013 verwendet werden, sollte die **CreateStoreEntryID-Routine,** die den Eintragsbezeichner erzeugt, ein Format für ASCII-Pfade und ein weiteres für Unicode-Pfade verwenden. Diese werden im folgenden Beispiel als Strukturen dargestellt. 
   
 ```cpp
 typedef struct                              // short format
@@ -131,13 +131,13 @@ typedef struct                              // Long format to support Unicode pa
 ```
 
 > [!IMPORTANT]
-> Die Unterschiede in diesen Strukturen sind zwei NULL-Bytes vor einem Unicode-Pfad. Wenn Sie den Eintragsbezeichner in der folgenden "Diensteintragsroutine" interpretieren müssen, können Sie eine Möglichkeit zum Bestimmen, ob dies der Fall ist oder nicht, zuerst als EIDMS casten, und überprüfen Sie dann, ob szPath[0] NULL ist. Wenn dies der Angezeigte ist, wird es stattdessen in EIDMSW 2013 umgwenn. 
+> Die Unterschiede in diesen Strukturen sind zwei NULL-Bytes vor einem Unicode-Pfad. Wenn Sie den Eintragsbezeichner in der folgenden "Diensteintragsroutine" interpretieren müssen, können Sie anhand einer Möglichkeit ermitteln, ob dies der Fall ist oder nicht, zuerst als EIDMS umwandeln und dann überprüfen, ob szPath[0] NULL ist. Wenn ja, wandeln Sie es stattdessen in EIDMSW um. 
   
-## <a name="service-entry-routine"></a>Diensteingaberoutine
+## <a name="service-entry-routine"></a>Diensteintragsroutine
 
-Die **[MSGSERVICEENTRY-Funktion](msgserviceentry.md)** ist der Einstiegspunkt des Nachrichtendiensts, an dem der umschlossene ANBIETER für den PST-Speicher konfiguriert ist. Die Funktion ruft  `GetMemAllocRoutines()` die MAPI-Speicherverwaltungsroutinen ab. Die Funktion verwendet den Parameter, um den Profilabschnitt für den Anbieter zu finden, und  `lpProviderAdmin` legt die Eigenschaften im Profil fest. 
+Die **[MSGSERVICEENTRY-Funktion](msgserviceentry.md)** ist der Einstiegspunkt für den Nachrichtendienst, an dem der anbieterumschlossene PST-Speicher konfiguriert ist. Die Funktion ruft  `GetMemAllocRoutines()` auf, um die MAPI-Speicherverwaltungsroutinen abzurufen. Die Funktion verwendet den  `lpProviderAdmin` Parameter, um den Profilabschnitt für den Anbieter zu suchen, und legt die Eigenschaften im Profil fest. 
   
-### <a name="serviceentry-example"></a>Beispiel für ServiceEntry()
+### <a name="serviceentry-example"></a>ServiceEntry() (Beispiel)
 
 ```cpp
 HRESULT STDAPICALLTYPE ServiceEntry ( 
@@ -243,9 +243,9 @@ HRESULT STDAPICALLTYPE ServiceEntry (
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Informationen zum Beispiel umschlossenen STORE Anbieter](about-the-sample-wrapped-pst-store-provider.md)
-- [Installieren des Umschlossenen Store -Beispielanbieters](installing-the-sample-wrapped-pst-store-provider.md)
-- [Anmelden bei einem umschlossenen STORE Anbieter](logging-on-to-a-wrapped-pst-store-provider.md)
-- [Verwenden eines umschlossenen STORE Anbieters](using-a-wrapped-pst-store-provider.md)
-- [Herunterfahren eines umschlossenen STORE Anbieters](shutting-down-a-wrapped-pst-store-provider.md)
+- [Informationen zum Beispiel für pst-Store-Anbieter mit Umschlossenen](about-the-sample-wrapped-pst-store-provider.md)
+- [Installieren des Beispielanbieters für pst-Store](installing-the-sample-wrapped-pst-store-provider.md)
+- [Anmelden bei einem Anbieter von umschlossenen PST-Store](logging-on-to-a-wrapped-pst-store-provider.md)
+- [Verwenden eines Anbieters von umschlossenen PST-Store](using-a-wrapped-pst-store-provider.md)
+- [Herunterfahren eines Anbieters von umschlossenen PST-Store](shutting-down-a-wrapped-pst-store-provider.md)
 

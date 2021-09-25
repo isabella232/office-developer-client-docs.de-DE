@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250294(v=office.15)
 ms:contentKeyID: 48548893
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: f077634abea6fadfe5c4305fc25b28e6d57bf13e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c0ad6ce433a6c4a087f0892264549f123ab81b2b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306237"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562111"
 ---
 # <a name="update-method-ado"></a>Update-Methode (ADO)
 
@@ -22,9 +22,9 @@ Speichert alle Änderungen, die Sie an der aktuellen Zeile eines [Recordset](rec
 
 ## <a name="syntax"></a>Syntax
 
-*Recordset*. Aktualisieren von*Feldern*, *Werten*
+*Recordset*. Aktualisieren *von Feldern*, *Werten*
 
-*Record*. *Felder*. Update
+*record*. *Felder*. Aktualisieren
 
 ## <a name="parameters"></a>Parameter
 
@@ -33,7 +33,7 @@ Speichert alle Änderungen, die Sie an der aktuellen Zeile eines [Recordset](rec
 |*Fields* |Optional. Ein Wert vom Datentyp **Variant**, der einen einzelnen Namen darstellt, oder ein Array vom Datentyp **Variant**, das Namen oder Positionen des Felds oder der Felder darstellt, das bzw. die Sie ändern möchten.|
 |*Values* |Optional. Ein Wert vom Datentyp **Variant**, der einen einzelnen Wert darstellt, oder ein Array vom Datentyp **Variant**, das Werte für das Feld oder die Felder im neuen Datensatz darstellt.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 ### <a name="recordset"></a>Recordset
 

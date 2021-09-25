@@ -5,13 +5,13 @@ ms.date: 09/17/2015
 ms.audience: Developer
 ms.assetid: 6828485c-040b-4278-923f-4cc7c8fe0fb1
 description: Bei dem clientseitigen Objektmodell (CSOM) handelt es sich um eine Gruppe von APIs für Project Server 2013, die zur Verwendung in Online-Apps und in lokalen Apps konzipiert wurden, die für PCs, mobile Geräte und Tablets entwickelt werden können. Dieser Artikel enthält einige typische Szenarien für die Verwendung des CSOM und auch die Einschränkungen des CSOM.
-localization_priority: Priority
-ms.openlocfilehash: 6cdcb72c24e352365b6dcc9268ddf0bd249369af
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: b145e392eb66a38bd79a9a0aaa659ad8b2017835
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315225"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59586712"
 ---
 # <a name="what-the-csom-does-and-does-not-do"></a>Was das CSOM durchführen kann und was nicht
 
@@ -69,7 +69,7 @@ Das CSOM enthält keine Funktionalität der folgenden PSI-Dienste:
     
 - **Archivdienst** Zum Speichern und Verwalten von Entitäten, z. B. Projekte, Ressourcen und benutzerdefinierte Felder in den Archivtabellen, verwenden Sie PSI-Methoden in der [Archive](https://msdn.microsoft.com/library/WebSvcArchive.Archive.aspx)-Klasse. 
     
-- **CubeAdmin-Dienst** Zum Erstellen und Verwalten von OLAP-Cubes für lokale Installationen verwenden Sie PSI-Methoden in der [WebSvcCubeAdmin.CubeAdmin](https://msdn.microsoft.com/library/WebSvcCubeAdmin.CubeAdmin.aspx)-Klasse, oder verwenden Sie die Seite der OLAP-Datenbankverwaltung (https:// * ServerName*  /  *ProjectServerName* /_layouts/15/pwa/CubeAdmin/CubeAnalysisAdmin.aspx) in Project Web App. 
+- **CubeAdmin-Dienst** Zum Erstellen und Verwalten von OLAP-Cubes für lokale Installationen verwenden Sie PSI-Methoden in der [WebSvcCubeAdmin.CubeAdmin](https://msdn.microsoft.com/library/WebSvcCubeAdmin.CubeAdmin.aspx)-Klasse, oder verwenden Sie die Seite der OLAP-Datenbankverwaltung (https:// *ServerName*  /  *ProjectServerName* /_layouts/15/pwa/CubeAdmin/CubeAnalysisAdmin.aspx) in Project Web App. 
     
     > [!NOTE]
     > Project Online unterstützt keine OLAP-Cubes. 

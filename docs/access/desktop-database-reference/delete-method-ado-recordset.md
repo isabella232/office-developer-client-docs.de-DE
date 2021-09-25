@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249374(v=office.15)
 ms:contentKeyID: 48545246
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: e8142d4fc4fc0036f80693f0bff779d9f3f2a62e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 73dc83a240cb5e46b1b46e5d8bafbcd6ba1b8d56
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294099"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59553137"
 ---
 # <a name="delete-method-ado-recordset"></a>Delete-Methode (ADO-Recordset)
 
@@ -22,7 +22,7 @@ Löscht den aktuellen Datensatz oder eine Gruppe von Datensätzen.
 
 ## <a name="syntax"></a>Syntax
 
-*Recordset*. *AffectRecords* löschen
+*Recordset*. Delete *AffectRecords*
 
 ## <a name="parameters"></a>Parameter
 
@@ -33,7 +33,7 @@ Löscht den aktuellen Datensatz oder eine Gruppe von Datensätzen.
 > [!NOTE]
 > [!HINWEIS] **adAffectAll** und **adAffectAllChapters** sind keine gültigen Argumente für **Delete**.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Mithilfe der **Delete** -Methode kann der aktuelle Datensatz oder eine Gruppe von Datensätzen in einem [Recordset](recordset-object-ado.md)-Objekt zum Löschen markiert werden. Lässt das **Recordset** -Objekt das Löschen von Datensätzen nicht zu, tritt ein Fehler auf. Wenn Sie sich im Modus der unmittelbaren Aktualisierung befinden, werden die Löschvorgänge unmittelbar in der Datenbank angezeigt. Kann ein Datensatz nicht gelöscht werden (z. B. aufgrund von Verletzungen der Datenbankintegrität), verbleibt der Datensatz nach dem Aufrufen von **Update** im Bearbeitungsmodus. Folglich müssen Sie die Aktualisierung mithilfe von [CancelUpdate](cancelupdate-method-ado.md) abbrechen, bevor Sie den aktuellen Datensatz verlassen können (z. B. mithilfe von [Close](close-method-ado.md), [Move](move-method-ado.md) oder [NextRecordset](nextrecordset-method-ado.md)).
 

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagInternetReturnPath
 api_type:
 - HeaderDef
 ms.assetid: 4530dbcf-9436-4f29-b79e-1bb0f791f60b
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: c2d8eaf627f789c3e862a83d71e4ca2e3e55e1e0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: a249ea20688712b31ec068668a1be0dadaa4b884
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327958"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59587558"
 ---
 # <a name="pidtaginternetreturnpath-canonical-property"></a>PidTagInternetReturnPath (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32327958"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält den Wert einer MIME-Nachricht (Multipurpose Internet Mail Extensions) Return-Path Kopfzeilenfeld. Die E-Mail-Adresse des Absenders der Nachricht.
+Enthält den Wert des Return-Path Kopfzeilenfelds einer MIME-Nachricht (Multipurpose Internet Mail Extensions). Die E-Mail-Adresse des Absenders der Nachricht.
   
 |||
 |:-----|:-----|
@@ -34,9 +34,9 @@ Enthält den Wert einer MIME-Nachricht (Multipurpose Internet Mail Extensions) R
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MIME  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Um den Wert dieser Eigenschaft abzurufen, verwenden Sie zunächst [IMAPIProp::GetIDsFromNames,](imapiprop-getidsfromnames.md) um das Eigenschaftstag abzurufen, und geben Sie dann dieses Eigenschaftstag in [IMAPIProp::GetProps](imapiprop-getprops.md) an, um den Wert abzurufen. Geben Sie beim Aufrufen von [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)die folgenden Werte für die [MAPINAMEID-Struktur](mapinameid.md) an, auf die der Eingabeparameter _lppPropNames verweist:_
+Um den Wert dieser Eigenschaft abzurufen, verwenden Sie zuerst [IMAPIProp::GetIDsFromNames,](imapiprop-getidsfromnames.md) um das Eigenschaftstag abzurufen, und geben Sie dann dieses Eigenschaftstag in [IMAPIProp::GetProps](imapiprop-getprops.md) an, um den Wert abzurufen. Geben Sie beim Aufrufen von [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)die folgenden Werte für die [MAPINAMEID-Struktur](mapinameid.md) an, auf die der Eingabeparameter  _"lppPropNames"_ zeigt:
   
 |||
 |:-----|:-----|
@@ -50,7 +50,7 @@ Um den Wert dieser Eigenschaft abzurufen, verwenden Sie zunächst [IMAPIProp::Ge
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXCICAL]](https://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
   
@@ -60,11 +60,11 @@ Um den Wert dieser Eigenschaft abzurufen, verwenden Sie zunächst [IMAPIProp::Ge
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -74,9 +74,9 @@ Mapitags.h
   
 [MAPI-Konstanten](mapi-constants.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

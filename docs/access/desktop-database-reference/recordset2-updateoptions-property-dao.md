@@ -1,20 +1,20 @@
 ---
-title: Recordset2. UpdateOptions-Eigenschaft (DAO)
+title: Recordset2.UpdateOptions-Eigenschaft (DAO)
 TOCTitle: UpdateOptions Property
 ms:assetid: 2692480e-c472-dd8e-f91a-939776822ece
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff191899(v=office.15)
 ms:contentKeyID: 48543816
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 0d655ba231466ac41902dba3a1422ca02893938f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 69e867eae41c0189302d18ff833db2e137596d2c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309100"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572774"
 ---
-# <a name="recordset2updateoptions-property-dao"></a>Recordset2. UpdateOptions-Eigenschaft (DAO)
+# <a name="recordset2updateoptions-property-dao"></a>Recordset2.UpdateOptions-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -23,9 +23,9 @@ ms.locfileid: "32309100"
 
 *Ausdruck* . UpdateOptions
 
-*Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset2-Objekt** darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn eine **[Update](recordset2-update-method-dao.md)** -Anweisung im Batchmodus ausgeführt wird, erstellen DAO und die Client-Batchcursorbibliothek eine Reihe von SQL UPDATE-Anweisungen, um die erforderlichen Änderungen auszuführen. Für jede Aktualisierung wird eine SQL WHERE-Klausel erstellt, um die Datensätze zu isolieren, die von der **[RecordStatus](recordset2-recordstatus-property-dao.md)** -Eigenschaft als geändert markiert wurden. Da einige Remoteserver Trigger oder andere Wege verwenden, um die referenzielle Integrität zu erzwingen, müssen häufig die zu aktualisierenden Felder auf die Felder beschränkt werden, die von der Änderung betroffen sind. 
 

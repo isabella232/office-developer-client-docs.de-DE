@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPISupport.ExpandRecips
 api_type:
 - COM
 ms.assetid: 78edd549-d557-489a-85f5-adfb5c44a7d4
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 105219fe430cd8746c3aa6cf5cd90629d5f72080
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: de652bef3325ca926e7827c15705dc2411b92fc7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411246"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556525"
 ---
 # <a name="imapisupportexpandrecips"></a>IMAPISupport::ExpandRecips
 
@@ -42,15 +42,15 @@ HRESULT ExpandRecips(
     
  _lpulFlags_
   
-> [out] Ein Zeiger auf eine Bitmaske von Flags, die den Typ der Verarbeitung steuert, die auftritt. Die folgenden Kennzeichen können festgelegt werden:
+> [out] Ein Zeiger auf eine Bitmaske mit Flags, die den Typ der ausgeführten Verarbeitung steuert. Die folgenden Flags können festgelegt werden:
     
 NEEDS_PREPROCESSING 
   
-> Die Nachricht muss vor dem Senden vorverarbeitet werden.
+> Die Nachricht muss vorverarbeitet werden, bevor sie gesendet wird.
     
 NEEDS_SPOOLER 
   
-> Der MAPI-Spooler (und nicht der Transportanbieter, an den der Anrufer eng gekoppelt ist) muss die Nachricht senden.
+> Der MAPI-Spooler (anstelle des Transportanbieters, mit dem der Aufrufer eng verbunden ist) muss die Nachricht senden.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -58,9 +58,9 @@ S_OK
   
 > Die Empfängerliste der Nachricht wurde erfolgreich verarbeitet.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die **IMAPISupport::ExpandRecips-Methode** wird für Unterstützungsobjekte des Nachrichtenspeicheranbieters implementiert. Nachrichtenspeicheranbieter rufen **ExpandRecips auf,** um MAPI zum Ausführen der folgenden Aufgaben auffordern: 
+Die **IMAPISupport::ExpandRecips-Methode** ist für Supportobjekte des Nachrichtenspeicheranbieters implementiert. Nachrichtenspeicheranbieter rufen **ExpandRecips** auf, um die MAPI aufzufordern, die folgenden Aufgaben auszuführen: 
   
 - Erweitern Sie bestimmte persönliche Verteilerlisten auf ihre Komponentenempfänger.
     
@@ -68,15 +68,15 @@ Die **IMAPISupport::ExpandRecips-Methode** wird für Unterstützungsobjekte des 
     
 - Markieren Sie alle doppelten Einträge.
     
-- Lösen Sie alle einmal verwendeten Adressen auf. 
+- Auflösen aller einmaligen Adressen. 
     
-- Überprüfen Sie, ob die Nachricht vorverarbeitet werden muss, und legen Sie gegebenenfalls das Flag fest, auf das  _lpulFlags_ verweist, auf NEEDS_PREPROCESSING. 
+- Überprüfen Sie, ob die Nachricht vorverarbeitet werden muss, und legen Sie, falls ja, das Flag, auf das von  _lpulFlags_ verwiesen wird, auf NEEDS_PREPROCESSING fest. 
     
- **ExpandRecips** erweitert alle Verteilerlisten mit dem Messagingadressentyp MAPIPDL. 
+ **ExpandRecips** erweitert alle Verteilerlisten mit dem Messaging-Adresstyp MAPIPDL. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Rufen Sie **ExpandRecips immer** als Teil der Nachrichtenverarbeitung auf. Rufen Sie **ExpandRecips** einen der ersten Aufrufe in Ihrer [IMessage::SubmitMessage-Methodenimplementierung](imessage-submitmessage.md) auf. 
+Rufen Sie **expandRecips** immer als Teil der Nachrichtenverarbeitung auf. Rufen Sie **expandRecips** einen der ersten Aufrufe in Ihrer [IMessage::SubmitMessage-Methodenimplementierungen](imessage-submitmessage.md) auf. 
   
 ## <a name="see-also"></a>Siehe auch
 

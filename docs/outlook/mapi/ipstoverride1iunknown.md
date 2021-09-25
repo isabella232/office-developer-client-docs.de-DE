@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IPSTOVERRIDE1
 api_type:
 - COM
 ms.assetid: d26cee81-45ea-4fd3-8a54-5f35264b5d6a
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 5208e77f3605b5ba861f68786d8fe5e91b990d32
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 0e518fc9ea0e7f4b4b4576b45a06ec7c0fe2e303
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315498"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556308"
 ---
 # <a name="ipstoverride1--iunknown"></a>IPSTOVERRIDE1 : IUnknown
 
@@ -25,28 +25,28 @@ ms.locfileid: "32315498"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ermöglicht einem Anbieter für den Informationsspeicher für persönliche Ordner (PST) das Außerkraft setzen der PSTDisableGrow-Richtlinie.
+Ermöglicht einem PST-Speicheranbieter (Personal Folders File), die PSTDisableGrow-Richtlinie außer Kraft zu setzen.
   
 |||
 |:-----|:-----|
 |Erbt von:  <br/> |IUnknown  <br/> |
-|Implementiert von:  <br/> |Anbieter für den PST-Speicher  <br/> |
+|Implementiert von:  <br/> |ANBIETER DES PST-Speichers  <br/> |
 |Aufgerufen von:  <br/> |Client  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IPSTOVERRIDE1  <br/> |
    
-## <a name="vtable-order"></a>Vtable-Reihenfolge
+## <a name="vtable-order"></a>VTable-Reihenfolge
 
 |||
 |:-----|:-----|
-|[IPSTOVERRIDE1::GetPersistedRegistrations](ipstoverride1-getpersistedregistrations.md) <br/> |Ruft die Liste der Registrierungen für die Datei Persönliche Ordner (PST) ab.  <br/> |
-|[IPSTOVERRIDE1::SetPersistedRegistrations](ipstoverride1-setpersistedregistrations.md) <br/> |Registriert Persönliche Ordnerdateien für die automatische Entsperrung, um weitere Aufrufe von HrTrustedPSTOverrideHandlerCallback zu vermeiden.  <br/> |
-|[IPSTOVERRIDE1::OverridePSTDisableGrow](ipstoverride1-overridepstdisablegrow.md) <br/> |Entsperrt eine Datei mit persönlichen Ordnern für das Wachstum.  <br/> |
+|[IPSTOVERRIDE1::GetPersistedRegistrations](ipstoverride1-getpersistedregistrations.md) <br/> |Ruft die Liste der Registrierungen für die Datei "Persönliche Ordner" (PST) ab.  <br/> |
+|[IPSTOVERRIDE1::SetPersistedRegistrations](ipstoverride1-setpersistedregistrations.md) <br/> |Registriert persönliche Ordnerdateien für die automatische Entsperrung, um weitere Aufrufe von HrTrustedPSTOverrideHandlerCallback zu vermeiden.  <br/> |
+|[IPSTOVERRIDE1::OverridePSTDisableGrow](ipstoverride1-overridepstdisablegrow.md) <br/> |Entsperrt eine persönliche Ordnerdatei für das Wachstum.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die Pst Override Handler Interface Identifiers sind möglicherweise nicht in der herunterladbaren Headerdatei definiert, die Sie derzeit haben. In diesem Fall finden Sie sie im Thema [MAPI-Konstanten](mapi-constants.md) und können sie kopieren und ihrem Code hinzufügen. Verwenden Sie das DEFINE_GUID, das in der Microsoft Windows Software Development Kit (SDK)-Headerdatei guiddef.h definiert ist, um ihren Werten symbolische Namen (Globally Unique Identifier, GUID) zuzuordnen. 
+Die PST Override Handler Interface Identifiers sind möglicherweise nicht in der herunterladbaren Headerdatei definiert, die Sie derzeit haben. In diesem Fall finden Sie sie im Thema [zu MAPI-Konstanten](mapi-constants.md) und können sie kopieren und ihrem Code hinzufügen. Verwenden Sie das DEFINE_GUID Makro, das in der Guiddef.h-Headerdatei des Microsoft Windows Software Development Kit (SDK) definiert ist, um ihren Werten symbolische GUID-Namen (Globally Unique Identifier) zuzuordnen. 
   
-Weitere Informationen finden Sie unter Implementieren eines PST-Außerkraftsetzungshandlers zum Umgehen der [PSTDisableGrow-Richtlinie in Outlook 2007](https://support.microsoft.com/kb/956070).
+Weitere Informationen finden Sie unter [Implementieren eines PST-Überschreibungshandlers zum Umgehen der PSTDisableGrow-Richtlinie in Outlook 2007.](https://support.microsoft.com/kb/956070)
   
 ## <a name="see-also"></a>Siehe auch
 

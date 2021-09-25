@@ -1,31 +1,31 @@
 ---
-title: PidTagStartDate (kanonische Eigenschaft)
+title: Kanonische PidTagStartDate-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagStartDate
 api_type:
 - COM
 ms.assetid: 908c2d9f-53f4-4aa8-b309-2f3ac2dca5b5
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: fd799a3dc5ba91d388285f649cccfeec188b6143
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 0d58eafae88f8f384b83defc4630963359567273
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32278820"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59586887"
 ---
-# <a name="pidtagstartdate-canonical-property"></a>PidTagStartDate (kanonische Eigenschaft)
+# <a name="pidtagstartdate-canonical-property"></a>Kanonische PidTagStartDate-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält das Startdatum und die Uhrzeit eines Termins, wie von einer Planungsanwendung verwaltet.
+Enthält das Startdatum und die Startzeit eines Termins, wie von einer Planungsanwendung verwaltet.
   
 |||
 |:-----|:-----|
@@ -34,9 +34,9 @@ Enthält das Startdatum und die Uhrzeit eines Termins, wie von einer Planungsanw
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Planungsanwendungen sollten beim Senden von Besprechungsanfragen sowohl diese Eigenschaft als **auch PR_END_DATE** ([PidTagEndDate](pidtagenddate-canonical-property.md)) festlegen.
+Planungsanwendungen sollten diese Eigenschaft und **PR_END_DATE** ([PidTagEndDate](pidtagenddate-canonical-property.md)) -Eigenschaften beim Senden von Besprechungsanfragen festlegen.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,21 +44,21 @@ Planungsanwendungen sollten beim Senden von Besprechungsanfragen sowohl diese Ei
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften und Vorgänge für Termin-, Besprechungs- und Antwortnachrichten an.
+> Gibt die Eigenschaften und Vorgänge für Termin-, Besprechungsanfrage- und Antwortnachrichten an.
     
 ### <a name="header-files"></a>Headerdateien
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -66,9 +66,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

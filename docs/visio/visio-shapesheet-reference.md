@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: reference
 ms.assetid: ca06502c-884c-c1ad-d2c9-31f2b2b30ae5
 description: Diese Referenz enthält konzeptionelle Übersichten, Programmieraufgaben, Beispiele und Referenzen, die Sie beim Entwickeln von Visio 2013-basierten Lösungen unterstützen sollen.
-localization_priority: Priority
-ms.openlocfilehash: 56fa9ee3fa8b86eea08039b0064efed978735e3d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 8c222faa49d5a2a5c6b3e423b20c544a08e1399a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345451"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59553634"
 ---
 # <a name="visio-shapesheet-reference"></a>Visio-ShapeSheet-Referenz
 
 Diese Referenz enthält konzeptionelle Übersichten, Programmieraufgaben, Beispiele und Referenzen, die Sie beim Entwickeln von Visio 2013-basierten Lösungen unterstützen sollen.
   
-Wir freuen uns über Ihre Kommentare oder Fragen zu diesem Inhalt. Sie können Ihr Feedback an **[docthis@microsoft.com](mailto:docthis@microsoft.com)** senden. 
+Wir freuen uns über Ihre Kommentare oder Fragen zu diesem Inhalt. Sie können Feedback an **[docthis@microsoft.com](mailto:docthis@microsoft.com)** senden. 
   
  **Erstveröffentlichung**: Juli 2012 | **Aktualisiert**: Oktober 2012
   

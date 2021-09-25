@@ -1,25 +1,25 @@
 ---
-title: ADO-NumericScale-und Precision-Eigenschaft (Beispiel) (VB)
+title: ADO NumericScale- und Precision-Eigenschaft (Beispiel) (VB)
 TOCTitle: NumericScale and Precision properties example (VB)
 ms:assetid: 060394b1-0c2c-3726-92a0-0f350bbaa3d5
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248814(v=office.15)
 ms:contentKeyID: 48543044
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 2c234de05db031790f7241ed686fe4d86d83dc7d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: fc9ba423576b2761d1ea4c865203211bbed08394
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283275"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59553256"
 ---
-# <a name="ado-numericscale-and-precision-properties-example-vb"></a>ADO-NumericScale-und Precision-Eigenschaft (Beispiel) (VB)
+# <a name="ado-numericscale-and-precision-properties-example-vb"></a>ADO NumericScale- und Precision-Eigenschaft (Beispiel) (VB)
 
 
 **Gilt für**: Access 2013, Office 2013
 
-In diesem Beispiel werden die Eigenschaften [NumericScale](numericscale-property-ado.md) und [Precision](precision-property-ado.md) verwendet, um die Anzahl von Dezimalstellen und die Genauigkeit der Felder in der ***Discounts***-Tabelle der ***Pubs***-Datenbank anzuzeigen.
+In diesem Beispiel werden die Eigenschaften [NumericScale](numericscale-property-ado.md) und [Precision](precision-property-ado.md) verwendet, um die numerische Skalierung und Genauigkeit von Feldern in der Tabelle ***Discounts** _ der Datenbank _ *_Pubs_** anzuzeigen.
 
 ```vb 
  

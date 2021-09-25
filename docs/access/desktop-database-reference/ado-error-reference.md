@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248997(v=office.15)
 ms:contentKeyID: 48543690
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 6a7f756af1422588d99fcffe1ae1413422131b70
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: ba9481d364f9595cd5991fee1cd39b1ea251b75f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283394"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59553382"
 ---
 # <a name="ado-error-reference"></a>ADO-Fehlerreferenz
 
@@ -222,7 +222,7 @@ Die **ErrorValueEnum**-Konstante beschreibt die ADO-Fehlerwerte. Eine vollständ
 <tr class="even">
 <td><p><strong>3727</strong></p></td>
 <td><p><strong>adErrURLDoesNotExist</strong></p></td>
-<td><p>Entweder die Quell-URL oder das übergeordnete Element der Ziel-URL ist nicht vorhanden. In der Quell- oder Ziel-URL ist ein Tippfehler vorhanden. Sie haben https://mysite/photo/myphoto.jpg möglicherweise, wenn Sie https://mysite/photos/myphoto.jpg stattdessen tatsächlich haben sollten. Der Tippfehler in der übergeordneten URL (in diesem Fall <em>Foto</em> anstelle von <em>Fotos</em>) hat den Fehler verursacht.</p></td>
+<td><p>Entweder die Quell-URL oder das übergeordnete Element der Ziel-URL ist nicht vorhanden. In der Quell- oder Ziel-URL ist ein Tippfehler vorhanden. Möglicherweise haben https://mysite/photo/myphoto.jpg Sie, wann Sie es tatsächlich haben https://mysite/photos/myphoto.jpg sollten. Der Tippfehler in der übergeordneten URL (in diesem Fall <em>Foto</em> anstelle von <em>Fotos</em>) hat den Fehler verursacht.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>3728</strong></p></td>

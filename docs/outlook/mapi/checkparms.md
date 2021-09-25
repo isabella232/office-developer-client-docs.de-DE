@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.CheckParms
 api_type:
 - COM
 ms.assetid: 328f12f0-e4e7-407f-8eb8-0d4bf543962d
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ffa1b596b2f60bce35f24df8a20326502be8165a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 2c7fc3875abc26e642b6ae1e5bf4c96c3c017aad
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33422278"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556861"
 ---
 # <a name="checkparms"></a>CheckParms
 
@@ -25,7 +25,7 @@ ms.locfileid: "33422278"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft eine interne Funktion auf, um Debugparameter für von MAPI aufgerufene Dienstanbietermethoden zu überprüfen. 
+Ruft eine interne Funktion auf, um Debugparameter für Dienstanbietermethoden zu überprüfen, die von MAPI aufgerufen werden. 
   
 |||
 |:-----|:-----|
@@ -44,11 +44,11 @@ HRESULT CheckParms(
 
  _eMethod_
   
-> [in] Gibt die zu überprüfende Methode per Enumeration an. 
+> [in] Gibt die zu überprüfende Methode anhand der Aufzählung an. 
     
  _First_
   
-> [in] Zeiger auf das erste Argument auf dem Stapel.
+> [in] Zeiger auf das erste Argument im Stapel.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -56,8 +56,8 @@ S_OK
   
 > Der Aufruf war erfolgreich.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Im Gegensatz zu den [Makros ValidateParms](validateparms.md) und [UlValidateParms](ulvalidateparms.md) führt das **Makro CheckParms** keine vollständige Parameterüberprüfung durch. Parameter, die zwischen MAPI und Dienstanbietern übergeben werden, werden als richtig angenommen, daher führt **CheckParms** nur eine Debugüberprüfung durch. 
+Im Gegensatz zu den [Makros ValidateParms](validateparms.md) und [UlValidateParms](ulvalidateparms.md) führt das **CheckParms-Makro** keine vollständige Parameterüberprüfung durch. Zwischen MAPI und Dienstanbietern übergebene Parameter werden als korrekt angenommen, sodass **CheckParms** nur eine Debugüberprüfung durchführt. 
   
 

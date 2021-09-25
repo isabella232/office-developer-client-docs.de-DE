@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm147125
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 5051cfd74f2a745ee430f2ed8a20445d2f9965f3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: b9f746bc0024b4882454bca686ab6170c3c0b446
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306755"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552535"
 ---
 # <a name="removetempvar-macro-action"></a>RemoveTempVar-Makroaktion
 
@@ -51,7 +51,7 @@ Die **EntfernenTempVar**-Aktion hat das folgende Argument.
 </table>
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
   - Es können bis zu 255 temporäre Variablen gleichzeitig definiert sein. Wenn eine temporäre Variable nicht entfernt wird, verbleibt diese bis zum Schließen der Datenbank im Arbeitsspeicher. Es empfiehlt sich, temporäre Variablen zu entfernen, sobald Sie deren Verwendung beendet haben.
 
@@ -83,17 +83,17 @@ Im folgenden Makro wird die Vorgehensweise zum Erstellen einer temporären Varia
 <tbody>
 <tr class="odd">
 <td><p></p></td>
-<td><p><strong>FestlegenTempVar</strong></p></td>
-<td><p><strong>Name</strong>: MeineVar<strong>Ausdruck</strong>: InputBox (&quot;geben Sie eine Zahl ungleich NULL&quot;ein.)</p></td>
+<td><p><strong>Festlegentempvar</strong></p></td>
+<td><p><strong>Name</strong>: MyVar<strong>Expression</strong>: InputBox( &quot; Enter a non-zero number. &quot; )</p></td>
 </tr>
 <tr class="even">
-<td><p>[TempVars]! MeineVar &lt; &gt;0</p></td>
+<td><p>[TempVars]! [MyVar] &lt; &gt; 0</p></td>
 <td><p><strong>MessageBox</strong></p></td>
-<td><p><strong>Meldung</strong>: =&quot;Sie haben &quot; &amp; [TempVars] eingegeben! MeineVar &amp; &quot;. &quot; <strong>Beep</strong>: <strong>jatyp</strong>: <strong>Informationen</strong></p></td>
+<td><p><strong>Meldung</strong>: = &quot; Sie haben &quot; &amp; [TempVars]![ MyVar] &amp; &quot; . &quot; <strong>Signalton</strong>: <strong>YesType</strong>: <strong>Informationen</strong></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
-<td><p><strong>EntfernenTempVar</strong></p></td>
+<td><p><strong>RemoveTempVar</strong></p></td>
 <td><p><strong>Name</strong>: MeineVar</p></td>
 </tr>
 </tbody>

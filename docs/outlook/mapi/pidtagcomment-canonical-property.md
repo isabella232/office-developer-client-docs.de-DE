@@ -1,25 +1,25 @@
 ---
-title: PidTagComment (kanonische Eigenschaft)
+title: Kanonische PidTagComment-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagComment
 api_type:
 - HeaderDef
 ms.assetid: 5750cf95-8581-43a7-a465-f4114b2939f2
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 7226996d85a1f919cfa54d588c04116dd2d24375
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: bfb5b873f75cc138a946c57523167fca1ac3d5d9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32336806"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59571185"
 ---
-# <a name="pidtagcomment-canonical-property"></a>PidTagComment (kanonische Eigenschaft)
+# <a name="pidtagcomment-canonical-property"></a>Kanonische PidTagComment-Eigenschaft
 
   
   
@@ -34,7 +34,7 @@ Enthält einen Kommentar zum Zweck oder Inhalt eines Objekts.
 |Datentyp:  <br/> |PT_UNICODE, PT_STRING8  <br/> |
 |Bereich:  <br/> |Standard  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Inhalt der Zeichenfolge wird vom Messagingbenutzer definiert. 
   
@@ -44,15 +44,15 @@ Der Inhalt der Zeichenfolge wird vom Messagingbenutzer definiert.
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXCFOLD]](https://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)
   
-> Verarbeitet Ordnervorgänge.
+> Behandelt Ordnervorgänge.
     
 [[MS-OXCSTOR]](https://msdn.microsoft.com/library/d42ed1e0-3e77-4264-bd59-7afc583510e2%28Office.15%29.aspx)
   
-> Gibt zulässige Vorgänge für die Zentralen Nachrichtenspeicherobjekte an.
+> Gibt zulässige Vorgänge für die zentralen Nachrichtenspeicherobjekte an.
     
 [[MS-OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
@@ -62,11 +62,11 @@ Der Inhalt der Zeichenfolge wird vom Messagingbenutzer definiert.
 
 Mapidef.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -74,9 +74,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

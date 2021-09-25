@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249927(v=office.15)
 ms:contentKeyID: 48547471
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 539feb1918877189548d0e7cff6ceb28e50abddc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 92599e81fcaf1303bd1c77c1d6f09acfe5dd63a2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283261"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59553235"
 ---
 # <a name="ado-objects-and-interfaces"></a>ADO-Objekte und -Schnittstellen
 
@@ -20,7 +20,7 @@ ms.locfileid: "32283261"
 
 Die Beziehungen zwischen diesen Objekten werden im ADO-Objektmodell (ActiveX Data Objects) dargestellt.
 
-Jedes Objekt kann in der entsprechenden Auflistung enthalten sein. Beispielsweise kann ein [Error](error-object-ado.md)-Objekt in einer [Errors](errors-collection-ado.md)-Auflistung enthalten sein. Weitere Informationen finden Sie unter [ADO-Auflistungen](ado-collections.md) oder einem bestimmten Sammlungs Thema.
+Jedes Objekt kann in der entsprechenden Auflistung enthalten sein. Beispielsweise kann ein [Error](error-object-ado.md)-Objekt in einer [Errors](errors-collection-ado.md)-Auflistung enthalten sein. Weitere Informationen finden Sie unter [ADO-Auflistungen](ado-collections.md) oder einem bestimmten Sammlungsthema.
 
 <br/>
 
@@ -55,7 +55,7 @@ Jedes Objekt kann in der entsprechenden Auflistung enthalten sein. Beispielsweis
 <td><p>Enthält Details zu Datenzugriffsfehlern, die sich auf eine einzelne Operation beziehen, die den Anbieter betrifft.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="field-object-ado.md">Feld</a></p></td>
+<td><p><a href="field-object-ado.md">Field</a></p></td>
 <td><p>Stellt Daten mit einem gemeinsamen Datentyp in einer Spalte dar.</p></td>
 </tr>
 <tr class="odd">

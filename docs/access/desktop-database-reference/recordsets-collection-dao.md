@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff191819(v=office.15)
 ms:contentKeyID: 48543756
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 3b935e05264497c7ad09ada4a8c50c775845857b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f11c3f5711d7f566dacad8071574ebe230d91b16
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309303"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562307"
 ---
 # <a name="recordsets-collection-dao"></a>Recordsets-Auflistung (DAO)
 
@@ -20,7 +20,7 @@ ms.locfileid: "32309303"
 
 Eine **Recordsets**-Auflistung enthält alle geöffneten **Recordset**-Objekte in einem **Connection**- oder **Database**-Objekt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn Sie DAO-Objekte verwenden, bearbeiten Sie Daten nahezu vollständig unter Verwendung von **Recordset**-Objekten.
 
@@ -28,16 +28,16 @@ Der **Recordsets**-Auflistung wird automatisch ein neues **Recordset**-Objekt hi
 
 Sie können so viele **Recordset**-Objektvariablen erstellen wie nötig. Unterschiedliche **Recordset**-Objekte können ohne Konflikte auf dieselben Tabellen, Abfragen oder Felder zugreifen.
 
-Wenn Sie auf ein **Recordset**-Objekt in einer Auflistung mit seiner Ordnungszahl oder mit der Einstellung seiner **Name**-Eigenschaft verweisen möchten, verwenden Sie eine der folgenden Syntaxformen:
+Um auf ein **Recordset**-Objekt in einer Auflistung durch die Ordnungszahl oder die Einstellung der **Name**-Eigenschaft zu verweisen, verwenden Sie eine der folgenden Syntaxformen:
 
 - **Recordsets**(0)
 
-- **Recordsets** ("Name")
+- **Recordsets**("Name")
 
-- **Recordsets**-\[\!\]
+- **Recordsets**\!\[name\]
 
 > [!NOTE]
-> [!HINWEIS] Sie können ein **Recordset**-Objekt derselben Datenquelle oder Datenbank mehrmals öffnen und dabei doppelte Namen in der **Recordsets**-Auflistung erstellen. Sie sollten Objektvariablen **Recordset**-Objekte zuweisen und mit Variablennamen auf sie verweisen.
+> Sie können ein **Recordset**-Objekt aus der gleichen Datenquelle oder Datenbank mehrmals öffnen und doppelte Namen in der **Recordsets**-Auflistung erstellen. Sie sollten **Recordset**-Objekten Objektvariablen zuweisen und mit dem Variablennamen auf sie verweisen.
 
 ## <a name="example"></a>Beispiel
 

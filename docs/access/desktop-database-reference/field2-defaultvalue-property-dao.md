@@ -1,5 +1,5 @@
 ---
-title: Field2. DefaultValue-Eigenschaft (DAO)
+title: Field2.DefaultValue-Eigenschaft (DAO)
 TOCTitle: DefaultValue Property
 ms:assetid: 709c9580-520e-46ce-7d70-e409872184bb
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff195744(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1053121
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 845a2e0c7ffa5d54d73c4fcec1a6c785468d734e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 169af56d16db0c7ffd805cdbc56cad9fb2244064
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292832"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552955"
 ---
-# <a name="field2defaultvalue-property-dao"></a>Field2. DefaultValue-Eigenschaft (DAO)
+# <a name="field2defaultvalue-property-dao"></a>Field2.DefaultValue-Eigenschaft (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -26,11 +26,11 @@ Legt den Standardwert eines **Field2**-Objekts fest oder gibt den Wert zurück. 
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . DefaultValue
+*Ausdruck* . Defaultvalue
 
-*Ausdruck* Eine Variable, die ein **Field2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Field2**-Objekt darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Einstellung oder der Rückgabewert ist vom Datentyp **String** und kann maximal 255 Zeichen enthalten. Es kann sich um einen Text oder einen Ausdruck handeln. Ist die Eigenschafteneinstellung ein Ausdruck, kann er benutzerdefinierte Funktionen, SQL-Aggregatfunktionen des Microsoft Access-Datenbankmoduls oder Verweise auf Abfragen, Formulare oder andere **Field2**-Objekte enthalten.
 

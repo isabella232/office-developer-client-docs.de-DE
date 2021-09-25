@@ -3,15 +3,15 @@ title: Informationen zum Festlegen der L�sung Reihenfolge f�r Adresslisten i
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e1589568-cb49-86dd-5d16-b08c8117bd17
 description: 'Letzte Änderung: 05. Juli 2012'
-ms.openlocfilehash: 07a4c3e90f686f291f95ff87f337b54d8bf35edc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: d5c4a771417e8556e499e50f3476b08d50157e79
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32321833"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59556994"
 ---
 # <a name="about-setting-the-resolution-order-for-address-lists-in-outlook"></a>Informationen zum Festlegen der Auflösungsreihenfolge für Adresslisten in Outlook
 

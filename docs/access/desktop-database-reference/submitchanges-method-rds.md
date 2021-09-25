@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250201(v=office.15)
 ms:contentKeyID: 48548521
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: ea7f3e27a75b4483cb8cf46e27d4492f831cff33
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f1464bce8cbaed5e33c40d90a246c6302e5d85e2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314399"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562188"
 ---
 # <a name="submitchanges-method-rds"></a>SubmitChanges-Methode (RDS)
 
@@ -22,9 +22,9 @@ Sendet ausstehende Änderungen des lokal zwischengespeicherten und aktualisierba
 
 ## <a name="syntax"></a>Syntax
 
-*DataControl*. SubmitChanges
+*DataControl*. Submitchanges
 
-*DataFactory*. SubmitChanges-*Verbindung*, *Recordset*
+*DataFactory*. *SubmitChanges-Verbindung*, *Recordset*
 
 ## <a name="parameters"></a>Parameter
 
@@ -35,7 +35,7 @@ Sendet ausstehende Änderungen des lokal zwischengespeicherten und aktualisierba
 |*Connection* |Ein **String** -Wert, der die mit der **Connect** -Eigenschaft des **RDS.DataControl** -Objekts erstellte Verbindung darstellt.|
 |*Recordset* |Eine Objektvariable, die ein **Recordset**-Objekt darstellt.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Eigenschaften [Connect](connect-property-rds.md), [Server](server-property-rds.md) und [SQL](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/sql-property-ado) müssen festgelegt sein, bevor Sie die **SubmitChanges**-Methode für das **RDS.DataControl**-Objekt verwenden können.
 
@@ -43,7 +43,7 @@ Wenn Sie die [CancelUpdate](cancelupdate-method-rds.md)-Methode aufrufen, nachde
 
 Es werden nur die geänderten Objekte zur Änderung gesendet. Die Änderungen werden entweder alle erfolgreich vorgenommen oder sie schlagen alle fehl.
 
-Sie können **SubmitChanges** nur mit dem **RDSServer. DataFactory-** *Standard* Objekt verwenden. Diese Methode kann nicht für benutzerdefinierte Geschäftsobjekte verwendet werden.
+Sie können **SubmitChanges** nur mit dem *standardmäßigen* **RDSServer.DataFactory-Objekt** verwenden. Diese Methode kann nicht für benutzerdefinierte Geschäftsobjekte verwendet werden.
 
 Wenn die **URL** -Eigenschaft festgelegt wurde, sendet **SubmitChanges** Änderungen an den durch die URL angegebenen Speicherort.
 

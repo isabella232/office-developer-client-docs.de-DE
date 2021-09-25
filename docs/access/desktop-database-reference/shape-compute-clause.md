@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250245(v=office.15)
 ms:contentKeyID: 48548699
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: eadc448d59814f0573a959c6c1038f9c4afdbac9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: e8edb920e5a4786a8e5bfb7908dd942b8172eb9a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306454"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552521"
 ---
 # <a name="shape-compute-clause"></a>Shape Compute-Klausel
 
@@ -88,32 +88,32 @@ Nehmen wir z. B. an, Sie haben eine Tabelle namens Demografische Daten, die aus 
 <tr class="header">
 <th><p>Status</p></th>
 <th><p>Stadt</p></th>
-<th><p>Grundgesamtheit</p></th>
+<th><p>Bevölkerung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>WA</p></td>
 <td><p>Seattle</p></td>
-<td><p>700.000</p></td>
+<td><p>700,000</p></td>
 </tr>
 <tr class="even">
-<td><p>ODER</p></td>
+<td><p>OR</p></td>
 <td><p>Medford</p></td>
 <td><p>200.000</p></td>
 </tr>
 <tr class="odd">
-<td><p>ODER</p></td>
+<td><p>OR</p></td>
 <td><p>Portland</p></td>
 <td><p>400,000</p></td>
 </tr>
 <tr class="even">
-<td><p>Zertifizierungsstelle</p></td>
+<td><p>CA</p></td>
 <td><p>München</p></td>
-<td><p>800.000</p></td>
+<td><p>800,000</p></td>
 </tr>
 <tr class="odd">
-<td><p>Zertifizierungsstelle</p></td>
+<td><p>CA</p></td>
 <td><p>Nürnberg</p></td>
 <td><p>600.000</p></td>
 </tr>
@@ -123,7 +123,7 @@ Nehmen wir z. B. an, Sie haben eine Tabelle namens Demografische Daten, die aus 
 <td><p>500.000</p></td>
 </tr>
 <tr class="odd">
-<td><p>ODER</p></td>
+<td><p>OR</p></td>
 <td><p>Corvallis</p></td>
 <td><p>300,000</p></td>
 </tr>
@@ -140,7 +140,7 @@ rst.Open  "SHAPE {select * from demographics} AS rs "  & _
            objConnection 
 ```
 
-Durch diesen Befehl wird ein geformtes **Recordset** -Objekt mit zwei Ebenen geöffnet. Die übergeordnete Ebene ist ein generiertes **Recordset** mit einer Aggregat Spalte (Sum (Rs. Population)), eine Spalte, die auf das untergeordnete **Recordset** (RS) verweist, und eine Spalte zum Gruppieren des untergeordneten **Recordsets** (Status). Die untergeordnete Ebene ist das vom Abfragebefehl () zurückgegebene **Recordset** (), eine Spalte, die auf das untergeordnete **Recordset** (RS) verweist, und eine Spalte zum Gruppieren des untergeordneten **Recordsets** (Status). Die untergeordnete Ebene ist das vom Abfragebefehl zurückgegebene **Recordset** (Wählen Sie \* aus Demographie aus).
+Durch diesen Befehl wird ein geformtes **Recordset** -Objekt mit zwei Ebenen geöffnet. Die übergeordnete Ebene ist ein generiertes **Recordset** mit einer Aggregatspalte (SUM(rs.population) ), einer Spalte, die auf das untergeordnete **Recordset** (rs) verweist, und einer Spalte zum Gruppieren des untergeordneten **Recordset** (Status). Die untergeordnete Ebene ist das **Recordset,** das vom Abfragebefehl (), einer Spalte, die auf das untergeordnete **Recordset** (rs) verweist, und einer Spalte zum Gruppieren des untergeordneten **Recordset** -Objekts (Status) zurückgegeben wird. Die untergeordnete Ebene ist das **Recordset,** das vom Abfragebefehl zurückgegeben wird (auswahl \* aus dem demografischen Bereich).
 
 Die Detailzeilen des untergeordneten **Recordset** -Objekts werden nach Bundesland, aber ansonsten ohne besondere Reihenfolge gruppiert. Das heißt, die Gruppen befinden sich nicht in einer alphabetischen oder numerischen Reihenfolge. Wenn das übergeordnete **Recordset** -Objekt sortiert werden soll, können Sie die **Sort** -Methode für das **Recordset** -Objekt zum Sortieren des übergeordneten **Recordset** -Objekts verwenden.
 
@@ -158,26 +158,26 @@ Sie können jetzt im geöffneten übergeordneten **Recordset** -Objekt navigiere
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>SUM (Rs. Grundgesamtheit</p></th>
-<th><p>RS</p></th>
+<th><p>SUM (rs. Population)</p></th>
+<th><p>rs</p></th>
 <th><p>Status</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>1,3 Millionen</p></td>
-<td><p>Verweis auf child1</p></td>
-<td><p>Zertifizierungsstelle</p></td>
+<td><p>1,300,000</p></td>
+<td><p>Verweis auf "child1"</p></td>
+<td><p>CA</p></td>
 </tr>
 <tr class="even">
-<td><p>1,2 Millionen</p></td>
-<td><p>Verweis auf child2</p></td>
+<td><p>1,200,000</p></td>
+<td><p>Verweis auf untergeordnetes Element2</p></td>
 <td><p>WA</p></td>
 </tr>
 <tr class="odd">
-<td><p>1,1 Millionen</p></td>
-<td><p>Verweis auf Child3</p></td>
-<td><p>ODER</p></td>
+<td><p>1,100,000</p></td>
+<td><p>Verweis auf untergeordnetes Element3</p></td>
+<td><p>OR</p></td>
 </tr>
 </tbody>
 </table>
@@ -195,17 +195,17 @@ Sie können jetzt im geöffneten übergeordneten **Recordset** -Objekt navigiere
 <tr class="header">
 <th><p>Status</p></th>
 <th><p>Stadt</p></th>
-<th><p>Grundgesamtheit</p></th>
+<th><p>Bevölkerung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Zertifizierungsstelle</p></td>
+<td><p>CA</p></td>
 <td><p>München</p></td>
-<td><p>800.000</p></td>
+<td><p>800,000</p></td>
 </tr>
 <tr class="even">
-<td><p>Zertifizierungsstelle</p></td>
+<td><p>CA</p></td>
 <td><p>Nürnberg</p></td>
 <td><p>600.000</p></td>
 </tr>
@@ -213,7 +213,7 @@ Sie können jetzt im geöffneten übergeordneten **Recordset** -Objekt navigiere
 </table>
 
 
-**Child2**
+**Untergeordnetes Element2**
 
 <table>
 <colgroup>
@@ -225,14 +225,14 @@ Sie können jetzt im geöffneten übergeordneten **Recordset** -Objekt navigiere
 <tr class="header">
 <th><p>Status</p></th>
 <th><p>Stadt</p></th>
-<th><p>Grundgesamtheit</p></th>
+<th><p>Bevölkerung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>WA</p></td>
 <td><p>Seattle</p></td>
-<td><p>700.000</p></td>
+<td><p>700,000</p></td>
 </tr>
 <tr class="even">
 <td><p>WA</p></td>
@@ -243,7 +243,7 @@ Sie können jetzt im geöffneten übergeordneten **Recordset** -Objekt navigiere
 </table>
 
 
-**Child3**
+**Untergeordnetes Element3**
 
 <table>
 <colgroup>
@@ -255,22 +255,22 @@ Sie können jetzt im geöffneten übergeordneten **Recordset** -Objekt navigiere
 <tr class="header">
 <th><p>Status</p></th>
 <th><p>Stadt</p></th>
-<th><p>Grundgesamtheit</p></th>
+<th><p>Bevölkerung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>ODER</p></td>
+<td><p>OR</p></td>
 <td><p>Medford</p></td>
 <td><p>200.000</p></td>
 </tr>
 <tr class="even">
-<td><p>ODER</p></td>
+<td><p>OR</p></td>
 <td><p>Portland</p></td>
 <td><p>400,000</p></td>
 </tr>
 <tr class="odd">
-<td><p>ODER</p></td>
+<td><p>OR</p></td>
 <td><p>Corvallis</p></td>
 <td><p>300,000</p></td>
 </tr>

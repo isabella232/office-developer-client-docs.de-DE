@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagAttachFlags
 api_type:
 - HeaderDef
 ms.assetid: 47e01131-f399-43cb-9815-aba69638c3fb
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: efccd75cce04e4e392a7fbd9feecc7c8b49ab57e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 5e5a8820161cb675f07b792e0ddafeabdfb07fb1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339333"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59563861"
 ---
 # <a name="pidtagattachflags-canonical-property"></a>PidTagAttachFlags (kanonische Eigenschaft)
 
@@ -34,21 +34,21 @@ Enthält eine Bitmaske mit Flags für eine Anlage.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird für die MHTML-Unterstützung verwendet. 
   
-Mindestens eines der folgenden Flags kann für die PR_ATTACH_FLAGS **festgelegt** werden: 
+Mindestens eines der folgenden Flags kann für die **PR_ATTACH_FLAGS** Bitmaske festgelegt werden: 
   
 ATT_INVISIBLE_IN_HTML 
   
-> Gibt an, dass diese Anlage für HTML-Renderinganwendungen nicht verfügbar ist und in der Verarbeitung von Mehrzweck-Internet-Mail-Erweiterungen (MIME) ignoriert werden sollte. 
+> Gibt an, dass diese Anlage für HTML-Renderinganwendungen nicht verfügbar ist und bei der MIME-Verarbeitung (Multipurpose Internet Mail Extensions) ignoriert werden sollte. 
     
 ATT_INVISIBLE_IN_RTF 
   
-> Gibt an, dass diese Anlage nicht für Anwendungen verfügbar ist, die im Rich Text Format (RTF) gerendert werden und von MAPI ignoriert werden sollten.
+> Gibt an, dass diese Anlage für Anwendungen, die im RTF-Format (Rich Text Format) gerendert werden, nicht verfügbar ist und von MAPI ignoriert werden sollte.
     
-Wenn die **PR_ATTACH_FLAGS** null oder nicht vorhanden ist, muss die Anlage von allen Anwendungen verarbeitet werden. 
+Wenn die **PR_ATTACH_FLAGS-Eigenschaft** null oder nicht vorhanden ist, wird die Anlage von allen Anwendungen verarbeitet. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -62,11 +62,11 @@ Wenn die **PR_ATTACH_FLAGS** null oder nicht vorhanden ist, muss die Anlage von 
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -74,9 +74,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 
