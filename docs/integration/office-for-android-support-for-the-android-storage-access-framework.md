@@ -3,15 +3,15 @@ title: Office für Android-Unterstützung für Android Storage Access Framework
 manager: soliver
 ms.date: 06/18/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9cfed295-f499-44dc-bac5-9e266df1b5b3
 description: Office für Android lässt sich in Android Storage Access Framework integrieren, mit dem Office Dateien öffnen kann, die von einem anderen Dokumentanbieter gespeichert werden.
-ms.openlocfilehash: 24d7e48106aeb5e58a668b94cbde00eaa9175230
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: dc6478344b19e81fe766412122abec8312ac88e4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300350"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605498"
 ---
 # <a name="office-for-android-support-for-the-android-storage-access-framework"></a>Office für Android-Unterstützung für Android Storage Access Framework
 
@@ -29,9 +29,9 @@ Benutzer können sich mit einem kostenlosen Microsoft-Konto bei Office-Apps anme
   
 |**Eigenschaft**|**Index**|**Wert**|
 |:-----|:-----|:-----|
-|Dokumenttyp  <br/> |com_microsoft_office_doctype  <br/> |\<Benutzer\>  <br/> |
+|Dokumenttyp  <br/> |com_microsoft_office_doctype  <br/> |\<consumer\>  <br/> |
 |Anzeigename des Dienstes  <br/> |com_microsoft_office_servicename  <br/> |Ein beliebiger benutzerfreundlicher Name für den Dienst, der zum Identifizieren eines Dokuments in der Liste der zuletzt geöffneten Dokumente in Office-Apps verwendet wird. Beachten Sie, dass die Eigenschaft für Lizenzbedingungen angegeben werden muss, bevor der Anzeigename für den Dienst angezeigt werden kann.  <br/> |
-|Nutzungsbedingungen  <br/> |com_microsoft_office_termsofuse  <br/> |\<Ich stimme den Nutzungsbedingungen unter https://go.microsoft.com/fwlink/p/?LinkId=528381\> zu.  <br/> |
+|Nutzungsbedingungen  <br/> |com_microsoft_office_termsofuse  <br/> |\<I agree to the terms located at https://go.microsoft.com/fwlink/p/?LinkId=528381\>  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 <a name="bk_addresources"> </a>

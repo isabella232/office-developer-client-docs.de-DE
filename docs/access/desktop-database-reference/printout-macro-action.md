@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm1697
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 04212a8bf63d5039c6548463612f006f0d116229
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 2cfb01c542134570b2ccc0ac2a0e31fd3599cc5c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301407"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585482"
 ---
 # <a name="printout-macro-action"></a>PrintOut-Makroaktion
 
@@ -45,7 +45,7 @@ Die **Drucken**-Aktion hat die folgenden Argumente.
 <tbody>
 <tr class="odd">
 <td><p><strong>Druckbereich</strong></p></td>
-<td><p>Der zu druckende Range. Klicken Sie auf <strong>alle</strong> (der Benutzer kann das gesamte Objekt drucken), <strong>Auswahl</strong> (der Benutzer kann den Teil des ausgewählten Objekts drucken) oder <strong>Seiten</strong> (der Benutzer kann einen Bereich von Seiten in der <strong>Seite von</strong> und <strong>auf Seiten zu</strong> Argumenten angeben) in der <strong> Feld Druckbereich</strong> im Abschnitt <strong>Aktionsargumente</strong> des Bereichs Makro-Generator. Die Standardeinstellung ist <strong>Alle</strong>.</p></td>
+<td><p>Der zu druckde Bereich. Klicken Sie auf <strong>"Alle"</strong> (der Benutzer kann das gesamte Objekt drucken), <strong>"Selection"</strong> (der Benutzer kann den Teil des ausgewählten Objekts drucken) oder <strong>"Pages"</strong> (der Benutzer kann einen Seitenbereich in den Argumenten <strong>"Page From"</strong> und <strong>"Page To"</strong> angeben) im Feld <strong>"Bereich drucken"</strong> im Abschnitt <strong>"Aktionsargumente"</strong> im Bereich "Makro-Generator". Die Standardeinstellung ist <strong>Alle</strong>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Von</strong></p></td>
@@ -71,7 +71,7 @@ Die **Drucken**-Aktion hat die folgenden Argumente.
 </table>
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Aktion ist mit dem Auswählen eines Objekts, dem Klicken auf die Registerkarte **Datei** und dann dem Klicken auf **Drucken** vergleichbar. Mit dieser Aktion wird jedoch kein Dialogfeld **Drucken** angezeigt.
 

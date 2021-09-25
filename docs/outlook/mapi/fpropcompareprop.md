@@ -5,25 +5,25 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.FPropCompareProp
 api_type:
 - COM
 ms.assetid: 17cb53c4-7154-4a4e-b4ec-de720fa055cb
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 7726811467324242037ec11a69ae0b1b123d7f21
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 5357bd8a2adc470322b772ceabbeaef8596290f5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33427157"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621045"
 ---
 # <a name="fpropcompareprop"></a>FPropCompareProp
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Vergleicht zwei Eigenschaftswerte mit einem angegebenen relationalen Operator. 
+Vergleicht zwei Eigenschaftswerte mithilfe eines angegebenen relationalen Operators. 
   
 |||
 |:-----|:-----|
@@ -47,7 +47,7 @@ _lpSPropValue1_
     
 _ulRelOp_
   
-> [in] Der relationale Operator, der im Vergleich verwendet werden soll. Zulässige Werte finden Sie in der [SComparePropsRestriction-Struktur.](scomparepropsrestriction.md) 
+> [in] Der relationale Operator, der im Vergleich verwendet werden soll. Zulässige Werte finden Sie in der [Struktur "SComparePropsRestriction".](scomparepropsrestriction.md) 
     
 _lpSPropValue2_
   
@@ -63,10 +63,10 @@ FALSE
   
 > Die Eigenschaftswerte erfüllen nicht die angegebene Beziehung.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die Vergleichsmethode hängt von den in den [SPropValue-Eigenschaftsdefinitionen angegebenen Eigenschaftstypen](spropvalue.md) ab. Die **Funktionen FPropCompareProp** und [FPropContainsProp](fpropcontainsprop.md) können verwendet werden, um Einschränkungen für das Generieren einer Tabelle vorzubereiten. 
+Die Vergleichsmethode hängt von den in den [SPropValue-Eigenschaftsdefinitionen](spropvalue.md) angegebenen Eigenschaftstypen ab. Die Funktionen **FPropCompareProp** und [FPropContainsProp](fpropcontainsprop.md) können verwendet werden, um Einschränkungen für das Generieren einer Tabelle vorzubereiten. 
   
-Die Reihenfolge des Vergleichs ist  _lpSPropValue1_, _ ulRelOp _, _ lpSPropValue2 _. Wenn die Eigenschaftstypen der zu vergleichende Eigenschaftswerte nicht übereinstimmen, gibt **die FPropCompareProp-Funktion** FALSE zurück. 
+Die Reihenfolge des Vergleichs ist  _lpSPropValue1_, _ ulRelOp _, _ lpSPropValue2 _. Wenn die Eigenschaftstypen der zu vergleichenden Eigenschaftswerte nicht übereinstimmen, gibt die **FPropCompareProp-Funktion** FALSE zurück. 
   
 

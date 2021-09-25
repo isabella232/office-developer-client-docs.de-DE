@@ -8,13 +8,13 @@ keywords:
 - excel 2007 xll software development kit,add-ins [Excel 2007]
 ms.assetid: abfc9d76-6f22-49b9-ba45-eb7a54b082e0
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-localization_priority: Priority
-ms.openlocfilehash: 365aea48cd520cd368c2a118c832aa705280a308
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 15b6ca74a2b0fe5901d4f7cf204d2a2265657ddc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32310297"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621381"
 ---
 # <a name="welcome-to-the-excel-software-development-kit"></a>Willkommen beim Excel Software Development Kit
 

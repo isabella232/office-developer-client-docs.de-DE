@@ -4,34 +4,34 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 74eae5e5-80ab-4e10-b292-e58a6d7607d2
-description: Bestimmt, ob die Benutzeroberfläche des Ersetzen-Shapes für dieses Dokument deaktiviert werden soll.
-ms.openlocfilehash: cfec9b3c51a170c549fdd0d1b0b3597c030c410c
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Bestimmt, ob die Benutzeroberfläche des Ersetzungs-Shapes für dieses Dokument deaktiviert werden soll.
+ms.openlocfilehash: 24e2600eeef405ca45922fc276649aedfab5b656
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33413423"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59628444"
 ---
 # <a name="doclockreplace-cell-document-properties-section"></a>Zelle "DocLockReplace" (Abschnitt "Document Properties")
 
-Bestimmt, ob die Benutzeroberfläche des Ersetzen-Shapes für dieses Dokument deaktiviert werden soll. 
+Bestimmt, ob die Benutzeroberfläche des Ersetzungs-Shapes für dieses Dokument deaktiviert werden soll. 
   
 |||
 |:-----|:-----|
-|TRUE  <br/> |Die **Schaltfläche Shape ersetzen** ist in der Benutzeroberfläche ausgegraut.  <br/> |
-|FALSE  <br/> |Die **Schaltfläche Shape ersetzen** ist auf der Benutzeroberfläche aktiv. Benutzer können das Feature Shape ersetzen in diesem Dokument verwenden.  <br/> |
+|TRUE  <br/> |Die Schaltfläche **"Shape ersetzen"** ist auf der Benutzeroberfläche ausgegraut.  <br/> |
+|FALSE  <br/> |Die Schaltfläche **"Shape ersetzen"** ist auf der Benutzeroberfläche aktiv. Benutzer können das Feature "Shape ersetzen" in diesem Dokument verwenden.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Um einen Verweis auf die **Zelle DocLockReplace** anhand des Namens aus einer anderen Formel, nach dem Wert des **N-Attributs** eines **Cell-Elements** oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Um einen Verweis auf die **Zelle DocLockReplace** anhand des Namens aus einer anderen Formel, anhand des Werts des **N-Attributs** eines **Cell-Elements** oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | DocLocReplace  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die **DocLocReplace-Zelle** nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle **DocLocReplace** anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

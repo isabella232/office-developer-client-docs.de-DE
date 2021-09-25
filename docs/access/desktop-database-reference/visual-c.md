@@ -1,25 +1,25 @@
 ---
-title: Visual C++ (Access Desktop Database Reference)
+title: Visual C++ (Access-Desktopdatenbankreferenz)
 TOCTitle: Visual C++
 ms:assetid: 31d27968-e7bd-02fa-efad-26039bea30b8
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249091(v=office.15)
 ms:contentKeyID: 48544062
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 082790c33840bfeacf0c1a6bd38af34c0617f4fe
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 77506e8378d768f1f9b417ff3202803ca54c6d16
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303402"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572543"
 ---
 # <a name="visual-c"></a>Visual C++
 
 
 **Gilt für**: Access 2013, Office 2013
 
-Dies ist eine schematische Beschreibung, wie ADO-Ereignisse in Microsoft Visual C++ instanziiert werden. Eine vollständige Beschreibung finden Sie unter [ADO-Ereignismodell Beispiel (VC + +)](ado-events-model-example-vc.md) .
+Dies ist eine schematische Beschreibung, wie ADO-Ereignisse in Microsoft Visual C++ instanziiert werden. Eine vollständige Beschreibung finden Sie im [Beispiel zum ADO-Ereignismodell (VC++).](ado-events-model-example-vc.md)
 
 Create classes derived from the **ConnectionEventsVt** and **RecordsetEventsVt** interfaces found in the file adoint.h.
 
@@ -49,7 +49,7 @@ class CRstEvent : public RecordsetEventsVt
 // EndEventExampleVC01 
 ```
 
-Implementieren Sie alle Ereignishandlermethoden in beiden Klassen. Es genügt, dass jede Methode nur ein HRESULT von S\_OK zurückgibt. Wenn Sie allerdings bekannt geben, dass Ihre Ereignishandler verfügbar sind, werden sie standardmäßig kontinuierlich aufgerufen. Stattdessen sollten möglicherweise nach dem ersten Mal keine weitere Benachrichtigung mehr angefordert werden, indem Sie **adStatus** auf **adStatusUnwantedEvent** festlegen.
+Implementieren Sie alle Ereignishandlermethoden in beiden Klassen. Es reicht aus, dass jede Methode lediglich ein HRESULT von S \_ OK zurückgibt. Wenn Sie allerdings bekannt geben, dass Ihre Ereignishandler verfügbar sind, werden sie standardmäßig kontinuierlich aufgerufen. Stattdessen sollten möglicherweise nach dem ersten Mal keine weitere Benachrichtigung mehr angefordert werden, indem Sie **adStatus** auf **adStatusUnwantedEvent** festlegen.
 
 ```cpp 
  

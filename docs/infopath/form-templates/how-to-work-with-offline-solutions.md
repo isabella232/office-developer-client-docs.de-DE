@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
 - offline solutions [infopath 2007],solutions [InfoPath 2007], offline,InfoPath 2007, offline solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 108f9bd0-c80f-4790-a572-da2f571a7d85
-description: Das InfoPath-Objektmodell stellt die MachineOnlineState-Eigenschaft der Application-Klasse zur Verfügung, mit der Der Formularcode überprüfen kann, ob der Computer des Benutzers mit dem Netzwerk verbunden ist. Durch das Überprüfen des Werts der MachineOnlineState-Eigenschaft kann der Formularcode verschiedene Aktionen ausführen, je nach Status der Verbindung.
-ms.openlocfilehash: eb2903c2445a61be803c0d7a2f5ddd7ac7a912ad
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Das InfoPath-Objektmodell stellt die MachineOnlineState-Eigenschaft der Application-Klasse bereit, mit der ihr Formularcode überprüfen kann, ob der Computer des Benutzers mit dem Netzwerk verbunden ist. Durch das Überprüfen des Werts der MachineOnlineState-Eigenschaft kann der Formularcode verschiedene Aktionen ausführen, je nach Status der Verbindung.
+ms.openlocfilehash: 3bba72619e5f09a69e2b9b2666dfba77c0ed1dab
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33436139"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605540"
 ---
 # <a name="work-with-offline-solutions"></a>Arbeiten mit Offlinelösungen
 
-Das InfoPath-Objektmodell stellt die [MachineOnlineState-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Application.MachineOnlineState.aspx) der [Application-Klasse](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Application.aspx) zur Verfügung, mit der Der Formularcode überprüfen kann, ob der Computer des Benutzers mit dem Netzwerk verbunden ist. Durch das Überprüfen des Werts der **MachineOnlineState**-Eigenschaft kann der Formularcode verschiedene Aktionen ausführen, je nach Status der Verbindung. 
+Das InfoPath-Objektmodell stellt die [MachineOnlineState-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Application.MachineOnlineState.aspx) der [Application-Klasse](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Application.aspx) bereit, mit der ihr Formularcode überprüfen kann, ob der Computer des Benutzers mit dem Netzwerk verbunden ist. Durch das Überprüfen des Werts der **MachineOnlineState**-Eigenschaft kann der Formularcode verschiedene Aktionen ausführen, je nach Status der Verbindung. 
   
 ## <a name="using-the-machineonlinestate-property"></a>Verwenden der MachineOnlineState-Eigenschaft
 
@@ -33,15 +33,15 @@ Bei dem Beispiel wird davon ausgegangen, dass Sie ein Formular zum Senden eines 
     
 3. Klicken Sie im Dialogfeld **Datenverbindungen** auf **Hinzufügen**.
     
-4. Klicken Sie **im Assistenten für Datenverbindung** auf **Daten übermitteln,** und klicken Sie dann auf **Weiter**.
+4. Klicken Sie im **Datenverbindungs-Assistenten** auf **"Daten übermitteln"** und dann auf **"Weiter".**
     
-5. Klicken Sie auf der nächsten Seite des Assistenten auf Als E-Mail-Nachricht, und klicken Sie dann auf **Weiter**. 
+5. Klicken Sie auf der nächsten Seite des Assistenten auf **"Als E-Mail-Nachricht"** und dann auf **"Weiter".**
     
-6. Geben Sie auf der nächsten Seite des Assistenten Ihre E-Mail-Adresse in das Feld **An** ein. 
+6. Geben Sie auf der nächsten Seite des Assistenten Ihre E-Mail-Adresse in das Feld **"An"** ein. 
     
 7. Führen Sie im Feld **Betreff** die folgenden Schritte aus, um den Umsatzzeitraum mit dem Text "Sales Report" (Umsatzbericht) zu kombinieren: 
     
-   1. Klicken Sie **neben** dem Feld Betreff auf die Schaltfläche **Formel.** 
+   1. Klicken Sie auf die Schaltfläche **Formel** neben dem **Feld Betreff.** 
       
    2. Klicken Sie im Dialogfeld **Formel einfügen** auf **Funktion einfügen**.
       
@@ -57,9 +57,9 @@ Bei dem Beispiel wird davon ausgegangen, dass Sie ein Formular zum Senden eines 
     
 8. Klicken Sie im Assistenten auf **Weiter**.
     
-9. Klicken Sie auf der nächsten  Seite des Assistenten  neben dem Feld Anlagenname auf die Schaltfläche Formel, und wiederholen Sie dann die oben aufgeführten Schritte, um die Formelverkettung ("Vertriebsbericht - ", Zeitraum") zu erstellen, und klicken Sie dann auf **Weiter**.
+9. Klicken Sie auf der nächsten Seite des Assistenten auf die Schaltfläche **Formel** neben dem Feld **Anlagenname,** und wiederholen Sie dann die obigen Schritte, um die Formel zu erstellen("Sales Report - ", period"), und klicken Sie dann auf **"Weiter".**
     
-10. Geben Sie auf der letzten Seite des  Assistenten im Feld Geben Sie einen Namen für diese Datenverbindung ein, und klicken Sie dann auf **Fertig stellen.**
+10. Geben Sie auf der letzten Seite des Assistenten "E-Mail senden" in das **Feld "Namen für diese Datenverbindung eingeben" ein,** und klicken Sie dann auf **"Fertig stellen".**
     
 ### <a name="add-logic-for-submitting-the-form-depending-on-the-connected-state-of-a-users-computer"></a>Hinzufügen von Logik zum Senden des Formulars je nach dem Verbindungsstatus eines Benutzercomputers
 
@@ -67,7 +67,7 @@ Bei dem Beispiel wird davon ausgegangen, dass Sie ein Formular zum Senden eines 
     
 2. Klicken Sie im Dialogfeld **Absendeoptionen** auf **Übermitteln dieses Formulars durch Benutzer zulassen**, wählen Sie **Benutzerdefinierte Aktion mithilfe von Code ausführen** aus, und klicken Sie auf **Code bearbeiten**.
     
-3. Fügen Sie die folgenden beiden Funktionen unterhalb des [Submit-Ereignishandlers](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Submit.aspx) hinzu: 
+3. Fügen Sie die folgenden [](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Submit.aspx) beiden Funktionen unterhalb des Submit-Ereignishandlers hinzu: 
     
    ```cs
     public void OnlineSubmit(SubmitEventArgs e)
@@ -120,7 +120,7 @@ Bei dem Beispiel wird davon ausgegangen, dass Sie ein Formular zum Senden eines 
     End Sub
    ```
 
-4. Fügen Sie der Submit-Ereignishandlerfunktion die folgende **if-Anweisung** hinzu. [](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Submit.aspx) 
+4. Fügen Sie der [Ereignishandlerfunktion "Submit"](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Submit.aspx) die folgende **if-Anweisung** hinzu. 
     
    ```cs
     // Check the computer's connection state.
@@ -154,7 +154,7 @@ Bei dem Beispiel wird davon ausgegangen, dass Sie ein Formular zum Senden eines 
     
 4. Klicken Sie in Internet Explorer im Menü **Datei** auf **Offline arbeiten**. 
     
-5. Klicken Sie in InfoPath auf **Absenden**. Es sollte eine Meldung angezeigt werden, dass das Formular als E-Mail-Nachricht übermittelt wird.
+5. Klicken Sie in InfoPath auf **Absenden**. Es sollte eine Meldung angezeigt werden, dass das Formular als E-Mail-Nachricht gesendet wird.
     
 6. Klicken Sie auf **Senden**. Eine Meldung sollte mitteilen, dass das Formular offline gesendet wurde und gesendet wird, wenn Sie eine Verbindung mit dem Netzwerk herstellen.
     

@@ -3,29 +3,29 @@ title: Informationen zur InfoPath-Unterstützung für XML-Technologien
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 074181a2-3a75-824c-049d-549aabff0f9f
-description: Microsoft InfoPath ist ein Hybridtool, das das Beste einer herkömmlichen Dokumentbearbeitungserfahrung, z. B. einer Textverarbeitungs- oder E-Mail-Anwendung, mit den strengen Datenerfassungsfunktionen eines Formularpakets kombiniert. In diesem Artikel werden die Probleme beschrieben, die InfoPath beheben soll, und erläutert die Entwurfsprinzipien und XML-Industriestandards, die zur Lösung dieser Probleme verwendet werden.
-ms.openlocfilehash: 20831635fba8d76b9d6b45f42a5308ab7236db20
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Microsoft InfoPath ist ein Hybridtool, das das Beste aus einer herkömmlichen Dokumentbearbeitungsoberfläche, z. B. einem Textverarbeitungsprogramm oder einer E-Mail-Anwendung, mit den strengen Datenerfassungsfunktionen eines Formularpakets kombiniert. In diesem Artikel werden die Probleme beschrieben, mit denen InfoPath sich mit den Entwurfsprinzipien und XML-Branchenstandards befasst, die zur Lösung dieser Probleme verwendet werden.
+ms.openlocfilehash: 6417b480308e8444d8e8c3603b0ac7ac39c7b343
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407228"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621290"
 ---
 # <a name="about-infopath-support-for-xml-technologies"></a>Informationen zur InfoPath-Unterstützung für XML-Technologien
 
-Microsoft InfoPath ist ein Hybridtool, das das Beste einer herkömmlichen Dokumentbearbeitungserfahrung, z. B. einer Textverarbeitungs- oder E-Mail-Anwendung, mit den strengen Datenerfassungsfunktionen eines Formularpakets kombiniert. In diesem Artikel werden die Probleme beschrieben, die InfoPath beheben soll, und erläutert die Entwurfsprinzipien und XML-Industriestandards, die zur Lösung dieser Probleme verwendet werden.
+Microsoft InfoPath ist ein Hybridtool, das das Beste aus einer herkömmlichen Dokumentbearbeitungsoberfläche, z. B. einem Textverarbeitungsprogramm oder einer E-Mail-Anwendung, mit den strengen Datenerfassungsfunktionen eines Formularpakets kombiniert. In diesem Artikel werden die Probleme beschrieben, mit denen InfoPath sich mit den Entwurfsprinzipien und XML-Branchenstandards befasst, die zur Lösung dieser Probleme verwendet werden.
   
 ## <a name="introduction"></a>Einführung
 
-InfoPath ist ein high-level-XML-Erstellungstool, mit dem normale Endbenutzer XML-Dokumente erstellen können, die zu einem benutzerdefinierten XML-Schema gehören. Wenn Benutzer ein XML-Dokument bearbeiten, werden die Änderungen am Dokument durch das XML-Schema gesteuert.
+InfoPath ist ein allgemeines XML-Erstellungstool, mit dem normale Endbenutzer XML-Dokumente erstellen können, die zu einem benutzerdefinierten XML-Schema gehören. Wenn Benutzer ein XML-Dokument bearbeiten, werden die Änderungen am Dokument durch das XML-Schema gesteuert.
   
 Die Benutzer interagieren mit dem XML-Dokument über eine umfangreiche formatierte Ansicht, die angezeigt wird, indem ein XSLT-Stylesheet auf das Dokument angewendet wird. Ein Blattknoten oder Attributwert aus dem XML-Dokument wird als Feld (beispielsweise als Textfeld oder Kontrollkästchen) angezeigt, während eine Knotenhierarchie als Gruppe von Feldern angezeigt wird.
   
-InfoPath ermöglicht die überprüfte strukturierte Bearbeitung von XML-Daten, indem die Bearbeitungsaktionen angezeigt werden, die für das aktuell ausgewählte Feld oder die Feldgruppe gültig sind. Diese strukturierte Bearbeitung ermöglicht es dem Benutzer, gültige XML-Elemente und -Attribute hinzuzufügen und zu entfernen, indem er mit Gruppen von Feldern arbeitet, die in reichhaltigen dynamischen Ansichten angezeigt werden, ohne dass die Elemente und Attribute angezeigt werden.
+InfoPath ermöglicht die überprüfte, strukturierte Bearbeitung von XML-Daten, indem die Bearbeitungsaktionen angezeigt werden, die für das aktuell ausgewählte Feld oder die Feldgruppe gültig sind. Diese strukturierte Bearbeitung ermöglicht es dem Benutzer, gültige XML-Elemente und -Attribute hinzuzufügen und zu entfernen, indem er mit Gruppen von Feldern arbeitet, die in umfangreichen dynamischen Ansichten angezeigt werden, ohne die Elemente und Attribute zu sehen.
   
-InfoPath löst ein Problem im Bereich der Datensammlung, das vor dem Aufkommen von XML nicht gelöst werden konnte: Durch die Bereitstellung von Formularen, die wachsen können, indem Gruppen von Feldern hinzugefügt werden, die das hierarchische Datenmodell von XML verwenden, erhöht InfoPath die Flexibilität von Textverarbeitungsdokumenten zu den strengen Validierungsfeatures einer Formularanwendung. Komplexe XSLT-Transformationen sind ein integraler Bestandteil dieser Lösung, die dynamische, einfach zu verwendende Ansichten der XML-Daten bietet.
+InfoPath löst ein Problem im Bereich der Datensammlung, das vor der Einführung von XML nicht gelöst werden konnte: Durch die Bereitstellung von Formularen, die vergrößert werden können, indem Gruppen von Feldern hinzugefügt werden, die das hierarchische Datenmodell von XML verwenden, fügt InfoPath den strengen Überprüfungsfunktionen einer Formularanwendung die Flexibilität von Textverarbeitungsdokumenten hinzu. Komplexe XSLT-Transformationen sind ein integraler Bestandteil dieser Lösung, die dynamische, benutzerfreundliche Ansichten der XML-Daten bereitstellt.
   
 ## <a name="limitations-of-traditional-forms-and-documents-for-gathering-data"></a>Einschränkungen herkömmlicher Formulare und Dokumente beim Sammeln von Daten
 
@@ -41,9 +41,9 @@ Daher wird eine flexible und doch strukturierte Bearbeitungsmöglichkeit benöti
 
 Ein wichtiges technisches Entwurfsproblem, das gelöst werden musste, war die Bereitstellung einer einfachen Benutzeroberfläche zum Hinzufügen oder Entfernen von XML-Elementen und -Attributen ohne Anzeigen der Elemente und Attribute. Gleichzeitig sollte die Gültigkeit der DOM-Struktur gemäß dem benutzerdefinierten XML-Schema aufrechterhalten werden. Die Benutzeroberfläche sollte eine natürliche Möglichkeit zum Bearbeiten der DOM-Struktur bieten (beispielsweise Einfügen optionaler Unterstrukturen, Ersetzen ausgewählter Unterstrukturen und Erweitern vorhandener Unterstrukturen).
   
-Diese einfache Benutzeroberfläche wird bereitgestellt, indem eine DOM-Unterstruktur als Feldgruppe oder Bereich angezeigt wird. Eine Feldgruppe ist eine Gruppe von UI-Steuerelementen, beispielsweise Textfelder und Dropdownlisten, und dient als einfache Benutzeroberfläche, über die Benutzer hierarchische XML-Daten visualisieren und bearbeiten können. Eine Feldgruppe kann weitere Feldgruppen enthalten und optional oder wiederholt sein, genau wie eine DOM-Unterstruktur weitere Unterstrukturen enthalten und optional oder wiederholt sein kann. Der DOM-Struktur wird eine Unterstruktur hinzugefügt, wenn der Benutzer den Mauszeiger über einer Feldgruppe ruhet, auf das **\< \>** Dropdownmenü klickt, das in der Feldgruppe angezeigt wird, und dann Feldgruppenname einfügen auswählt.
+Diese einfache Benutzeroberfläche wird bereitgestellt, indem eine DOM-Unterstruktur als Feldgruppe oder Bereich angezeigt wird. Eine Feldgruppe ist eine Gruppe von UI-Steuerelementen, beispielsweise Textfelder und Dropdownlisten, und dient als einfache Benutzeroberfläche, über die Benutzer hierarchische XML-Daten visualisieren und bearbeiten können. Eine Feldgruppe kann weitere Feldgruppen enthalten und optional oder wiederholt sein, genau wie eine DOM-Unterstruktur weitere Unterstrukturen enthalten und optional oder wiederholt sein kann. Der DOM-Struktur wird eine Unterstruktur hinzugefügt, wenn der Benutzer den Mauszeiger über einer Feldgruppe platziert, auf das Dropdownmenü klickt, das in der Feldgruppe angezeigt wird, und dann **"Einfügen" \<field group name\>** auswählt.
   
-InfoPath bietet diese strukturierte Bearbeitung von XML-Daten mithilfe des angegebenen XML-Schemas, um die Bearbeitung zu beschränken und zu leiten. Durch das Schema wird gesteuert, ob die Befehle **Einfügen** und **Entfernen** im Dropdownmenü für eine Feldgruppe angezeigt werden. Das Schema wird außerdem für die Überprüfung verwendet. Um die Bearbeitung eines XML-Dokuments zu aktivieren, für das kein XML-Schema vorhanden ist, kann InfoPath ein Schema aus dem XML-Dokument generieren. 
+InfoPath stellt diese strukturierte Bearbeitung von XML-Daten mithilfe des angegebenen XML-Schemas bereit, um die Bearbeitung einzuschränken und zu leiten. Durch das Schema wird gesteuert, ob die Befehle **Einfügen** und **Entfernen** im Dropdownmenü für eine Feldgruppe angezeigt werden. Das Schema wird außerdem für die Überprüfung verwendet. Um die Bearbeitung eines XML-Dokuments zu aktivieren, für das kein XML-Schema vorhanden ist, kann InfoPath ein Schema aus dem XML-Dokument generieren. 
   
 ## <a name="providing-easy-to-use-views-of-xml-data-by-using-xslt-transformations"></a>Ermöglichen benutzerfreundlicher Ansichten von XML-Daten mithilfe von XSLT-Transformationen
 
@@ -51,13 +51,13 @@ Eine weitere zu bewältigende technische Entwurfsherausforderung bestand darin, 
   
 Die Reihenfolge und Struktur des Inhalts der Ansichten muss daher unabhängig von der Reihenfolge und Struktur der DOM-Strukturknoten sein. Diese strukturelle Abhängigkeit von Darstellung und Daten erfordert eine komplexe, dynamische Bindung oder Zuordnung zwischen den gruppierten Feldern in den Ansichten und den Knoten in der DOM-Struktur.
   
-Um diese komplexe Zuordnung zwischen Ansichten und Daten zu ermöglichen, verwendet InfoPath XSL Transformations (XSLT) umfassend. XSLT ist eine leistungsstarke Stylesheetsprache, die komplexe XSLT-Transformationen und umfassende Ansichten mit dynamischer, flexibler Darstellung der Inhalte unterstützt. Für jede Ansicht wird eine XSLT-Datei verwendet. Die Verwendung eines Stylesheets ist eine gebräuchliche und bewährte Entwurfsmethode in SGML- und XML-Erstellungstools, und XSLT ist der W3C-Standard für Stylesheets, die für derartige komplexe Transformationen verwendet werden.
+Um diese komplexe Zuordnung zwischen Ansichten und Daten bereitzustellen, verwendet InfoPath XSL-Transformationen (XSLT) umfassend. XSLT ist eine leistungsstarke Stylesheetsprache, die komplexe XSLT-Transformationen und umfassende Ansichten mit dynamischer, flexibler Darstellung der Inhalte unterstützt. Für jede Ansicht wird eine XSLT-Datei verwendet. Die Verwendung eines Stylesheets ist eine gebräuchliche und bewährte Entwurfsmethode in SGML- und XML-Erstellungstools, und XSLT ist der W3C-Standard für Stylesheets, die für derartige komplexe Transformationen verwendet werden.
   
 Damit nicht jedes Mal, wenn ein Benutzer die Struktur einer Unterstruktur in DOM ändert, die gesamte XSLT-Transformation ausgeführt werden muss, wird mithilfe von Algorithmen ermittelt, welcher Teil der Ansicht aktualisiert werden muss. Dann wird nur der relevante Teil des XSLT-Stylesheets angewendet, und der betroffene Teil der Ansicht wird aktualisiert.
   
 ## <a name="how-xml-standards-are-used-when-editing-a-form"></a>Verwendung von XML-Standards beim Bearbeiten eines Formulars
 
-InfoPath basiert von Grund auf auf XML-Standards, die Folgendes umfassen:
+InfoPath basiert auf XML-Standards, die Folgendes umfassen:
   
 - Extensible Markup Language (XML) 1.0 Second Edition
     
@@ -83,7 +83,7 @@ InfoPath basiert von Grund auf auf XML-Standards, die Folgendes umfassen:
     
 - Universal Description, Discovery, and Integration (UDDI) 1.0
     
-Beispielsweise verwendet und generiert InfoPath Standardmäßige XML-, XSLT- und XSD-Dateien, die in verschiedenen Geschäftsprozessen wiederverwendet werden können. InfoPath verwendet MSXML, das SOAP Toolkit und den .NET System.XML-Namespace, um diese Standards zu unterstützen, und bietet vollständige integrierte Unterstützung für XML-Webdienste.
+InfoPath verwendet und generiert beispielsweise Standard-XML-, XSLT- und XSD-Dateien, die in verschiedenen Geschäftsprozessen wiederverwendet werden können. InfoPath verwendet MSXML, das SOAP-Toolkit und den .NET System.XML-Namespace, um diese Standards zu unterstützen, und bietet vollständige integrierte Unterstützung für XML-Webdienste.
   
 In Abbildung 1 wird das kontextbezogene Dropdownmenü für eine **customer**-Feldgruppe gezeigt, mit dessen Hilfe Benutzer eine weitere **customer**-Feldgruppe hinzufügen, diese **customer**-Feldgruppe entfernen, eine **item**-Zeile in die Tabelle der Einkaufsartikel in dieser Feldgruppe einfügen oder eine optionale **actions**-Feldgruppe innerhalb dieser Feldgruppe einfügen können. Der Link **Klicken Sie hier** stellt eine weitere Möglichkeit zum Einfügen der **actions**-Feldgruppe dar. In den einzelnen Einkaufsartikelzeilen wird ein kürzeres Dropdownmenü angezeigt. 
   
@@ -99,7 +99,7 @@ In Abbildung 1 wird das kontextbezogene Dropdownmenü für eine **customer**-Fel
     
 5. Bei der XSLT-Transformation wird XHTML als Ausgabe erzeugt, und dann wird ein CSS verwendet, um die Darstellung der XHTML-Ausgabe zu steuern.
     
-6. Wenn das XML-Schema das Hinzufügen von Knoten zu einem Knoten der Datenstruktur zulässt, verfügt das Feld oder die Feldgruppe, die dem Knoten zugeordnet ist, über ein Dropdownmenü, mit dem der Benutzer Feldgruppen hinzufügen oder entfernen kann. Der Benutzer bearbeitet das Dokument durch Hinzufügen einer wiederholten oder optionalen Feldgruppe, Eingeben eines Werts, Auswählen einer Option oder Eingeben von Rich Text. Wenn dem Schema für XHTML ein XML-Schemaknoten zugeordnet ist, stellt InfoPath eine Benutzeroberfläche zum Erstellen von Rich Text vor. Wenn der Benutzer Rich-Text einbetritt, wird der XHTML-Inhalt als Unterstruktur im DOM erstellt.
+6. Wenn das XML-Schema das Hinzufügen von Knoten zu einem Knoten der Datenstruktur zulässt, verfügt das Feld oder die Feldgruppe, das dem Knoten zugeordnet ist, über ein Dropdownmenü, mit dem der Benutzer Feldgruppen hinzufügen oder entfernen kann. Der Benutzer bearbeitet das Dokument, indem er eine wiederholte oder optionale Feldgruppe hinzufügt, einen Wert eingibt, eine Option auswählt oder Rich-Text eingibt. Wenn dem Schema für XHTML ein XML-Schemaknoten zugeordnet ist, stellt InfoPath eine Benutzeroberfläche zum Erstellen von Rich-Text bereit. Wenn der Benutzer Rich-Text eingibt, wird XHTML-Inhalt als Unterstruktur im DOM erstellt.
     
 7. Die Gültigkeit der DOM-Struktur wird immer aufrechterhalten. Wenn Benutzer das XML-Dokument bearbeiten, werden die Bearbeitungen anhand des zugeordneten XML-Schemas überprüft. Die versuchten Änderungen an der DOM-Struktur und den Blattknotenwerten werden anhand des XML-Schemas überprüft, um sicherzustellen, dass die Datentypen und Werte gültig sind. Wenn die versuchten Änderungen nicht gültig sind, wird ein Überprüfungsdialogfeld geöffnet, und die Änderungen werden nicht auf die DOM-Struktur angewendet. Wenn die Änderungen gültig sind, wird die DOM-Struktur aktualisiert.
     
@@ -115,11 +115,11 @@ Sie können ein Formular entwerfen, indem Sie mit einem vorhandenen XML-Schema b
     
 2. Verwenden Sie die Entwurfslayouttools, um die UI-Steuerelemente wie beispielsweise Zeilen und das Hintergrunddesign in einer oder mehreren Ansichten anzuordnen. Daraufhin werden einige der XSLT-Elemente generiert. Die XSLT-Ansichten und das XML-Schema werden automatisch der Formularvorlage zugeordnet.
     
-3. Ordnen Sie die XML-Schemaelemente mithilfe von Drag -and-Drop den Benutzeroberflächensteuerelementen in den Ansichten zu. InfoPath hilft Ihnen bei der Auswahl geeigneter Steuerelemente für die XML-Schemaelemente, basierend auf der Art der Schemaelemente. Wenn der XML-Datentyp beispielsweise Datum ist, schlägt InfoPath ein Datumsauswahlsteuerelement vor. Basierend auf den Optionen im XML-Schema kann InfoPath Gruppen optionaler oder wiederholter Felder einfügen. Durch das Zuordnen der XML-Schemaelemente zu den Benutzeroberflächensteuerelementen wird die XSLT-Struktur generiert.
+3. Ordnen Sie die XML-Schemaelemente mithilfe von Drag & Drop den Ui-Steuerelementen in den Ansichten zu. InfoPath hilft Ihnen, geeignete Steuerelemente für die XML-Schemaelemente basierend auf der Art der Schemaelemente auszuwählen. Wenn der XML-Datentyp beispielsweise Datum ist, schlägt InfoPath ein Datumsauswahl-Steuerelement vor. Basierend auf den Auswahlmöglichkeiten im XML-Schema kann InfoPath Gruppen von optionalen oder wiederholten Feldern einfügen. Wenn Sie die XML-Schemaelemente den UI-Steuerelementen zuordnen, wird die XSLT-Struktur generiert.
     
 4. Speichern Sie die Formularvorlage. Sie können die Dateien, aus denen die Formularvorlage besteht, als einzelne Dateien in einem normalen Ordner oder als Dateien in einem CAB-Dateiordner speichern. In beiden Fällen handelt es sich um standardmäßige XML-Dateien. Die Formularvorlage kann jetzt von Benutzern verwendet werden.
     
-Eine Formularvorlage enthält alle semantischen Informationen, die zum Bereitstellen einer strukturierten Bearbeitung erforderlich sind, wenn ein Formular in InfoPath geöffnet wird. Eine Formularvorlage enthält eine Manifestdatei, die XSLT-Dateien, durch die die Ansichten definiert werden, die Informationen, die zum Überprüfen der Daten benötigt werden, und einen optionalen Ressourcenbezeichner für einen XML-Webdienst.
+Eine Formularvorlage enthält alle semantischen Informationen, die benötigt werden, um eine strukturierte Bearbeitung bereitzustellen, wenn ein Formular in InfoPath geöffnet wird. Eine Formularvorlage enthält eine Manifestdatei, die XSLT-Dateien, durch die die Ansichten definiert werden, die Informationen, die zum Überprüfen der Daten benötigt werden, und einen optionalen Ressourcenbezeichner für einen XML-Webdienst.
   
 Die Manifest- oder Formulardefinitionsdatei ist der allgemeine Knoten- und Einstiegspunkt für alle Dateien, die von der Formularvorlage benötigt werden. Das Manifest enthält Verweise auf andere Dateien in der Formularvorlage sowie die Informationen, die zum Überprüfen der Daten und zum Ermöglichen der strukturierten Bearbeitung benötigt werden. Die XML-Schemaüberprüfungsinformationen werden für die sich ergebende Benutzeroberfläche angepasst und der Manifestdatei hinzugefügt. Wenn das Schema beispielsweise das Einfügen mehrerer optionaler Elemente in einer bestimmten Unterstruktur zulässt, können Sie die Benutzeroberfläche so entwerfen, dass mehrere optionale Elemente hinzugefügt werden, wenn Benutzer einen einzigen Vorgang auf der Benutzeroberfläche ausführen. Diese Anpassung ist wichtig, um gewöhnlichen Benutzern größtmöglichen Komfort zu bieten. 
   
@@ -141,7 +141,7 @@ Wenn Sie ein Formular von Grund auf entwerfen und das XML-Schema automatisch gen
     
 2. Klicken Sie auf der Registerkarte **Start** rechts unten in der Gruppe **Steuerelemente** auf den Pfeil, um den Aufgabenbereich **Steuerelemente** anzuzeigen. Vergewissern Sie sich anschließend, dass das Kontrollkästchen **Datenquelle automatisch erstellen** aktiviert ist. (Standardmäßig ist dieses Kontrollkästchen aktiviert.) 
     
-3. Ordnen Sie die UI-Steuerelemente an. Beim Festlegen erstellt InfoPath automatisch das XML-Schema und ordnet seine Elemente und Attribute den Benutzeroberflächensteuerelementen zu.
+3. Ordnen Sie die UI-Steuerelemente an. Während der Anordnung erstellt InfoPath automatisch das XML-Schema und ordnet dessen Elemente und Attribute den UI-Steuerelementen zu.
     
 So entwerfen Sie ein Formular, indem Sie mit einer wohlgeformten XML-Datendatei beginnen
   
@@ -153,9 +153,9 @@ So entwerfen Sie ein Formular, indem Sie mit einer wohlgeformten XML-Datendatei 
     
 ## <a name="designed-as-an-ideal-client-for-web-services"></a>Entworfen als idealer Client für Webdienste
 
-Webdienste werden inzwischen branchenweit unterstützt. Viele Back-End- und Middle-Tier-Systeme können für die Kommunikation über Webdienststandards wie beispielsweise SOAP, UDDI und WSDL konfiguriert werden. Zu diesen webdienstfähigen Systemen gehören Datenbanken, Workflowsysteme, ERP-Systeme (Enterprise Resource Planning), CRM-Systeme (Customer Relationship Management) und andere Systeme. Jetzt bietet InfoPath eine ideale Benutzeroberfläche zum Anzeigen und Bearbeiten der XML-Daten, die über Webdienste gesendet werden. In Abbildung 4 wird die integrierte Unterstützung für XML-Webdienste gezeigt.
+Webdienste werden inzwischen branchenweit unterstützt. Viele Back-End- und Middle-Tier-Systeme können für die Kommunikation über Webdienststandards wie beispielsweise SOAP, UDDI und WSDL konfiguriert werden. Zu diesen webdienstfähigen Systemen gehören Datenbanken, Workflowsysteme, ERP-Systeme (Enterprise Resource Planning), CRM-Systeme (Customer Relationship Management) und andere Systeme. InfoPath bietet jetzt eine ideale Benutzeroberfläche zum Anzeigen und Bearbeiten der XML-Daten, die über Webdienste gesendet werden. In Abbildung 4 wird die integrierte Unterstützung für XML-Webdienste gezeigt.
   
-InfoPath passt gut zum lose gekoppelten Modell von Webdiensten, bei dem Daten als vollständige XML-Dokumente zwischen Computern gesendet werden. Dieses grobkörnige Kommunikationsmodell passt gut zum asynchronen Charakter des Webs. Als tool für die Erstellung auf hoher Ebene für XML-Dokumente unterstützt InfoPath die Dokument-/Literal-SOAP-Codierung anstelle der RPC(Remote Procedure Call)-SOAP-Codierung. InfoPath ist ein optimaler Client für Webdienste, da es das in einer SOAP-Nachricht angegebene XML-Schema nativ lesen und dann eine benutzeroberfläche basierend auf dem Schema erstellen kann, mit der Benutzer xml-Dokumente, die vom entsprechenden Webdienst generiert oder empfangen werden, einfach anzeigen und bearbeiten können. InfoPath bietet auch Unterstützung für ADO.NET DataSets, die die Änderungsnachverfolgung umfassen.
+InfoPath passt gut zum locker gekoppelten Modell von Webdiensten, bei dem Daten als vollständige XML-Dokumente zwischen Computern gesendet werden. Dieses grobe Kommunikationsmodell passt gut zum asynchronen Charakter des Webs. Als allgemeines Erstellungstool für XML-Dokumente unterstützt InfoPath die SOAP-Codierung des Dokuments/Literals anstelle der RPC-SOAP-Codierung (Remote Procedure Call). InfoPath ist ein idealer Client für Webdienste, da es das in einer SOAP-Nachricht angegebene XML-Schema nativ lesen und dann basierend auf dem Schema eine Benutzeroberfläche erstellen kann, die es Benutzern ermöglicht, XML-Dokumente, die vom entsprechenden Webdienst generiert oder empfangen werden, einfach anzuzeigen und zu bearbeiten. InfoPath bietet auch Unterstützung für ADO.NET DataSets, die die Änderungsnachverfolgung umfassen.
   
 ## <a name="terminology"></a>Begrifflichkeiten
 
@@ -164,10 +164,10 @@ InfoPath passt gut zum lose gekoppelten Modell von Webdiensten, bei dem Daten al
 |**Feldgruppe:** <br/> |Ein Bereich, ein wiederholter Bereich, ein optionaler Bereich oder eine wiederholte Tabelle. Bereiche und wiederholte Tabellen sind Steuerelemente in einem Formular, die weitere Steuerelemente enthalten und nach Bedarf wiederholt werden. Benutzer können beim Ausfüllen des Formulars mehrere Bereiche oder Zeilen einfügen.  <br/> |
 |**DOM-Struktur:** <br/> |Die Struktur der Datenquelle des Formulars. Insbesondere die Auflistung von Feldern und Gruppen, die die Daten für ein InfoPath-Formular definieren und speichern.  <br/> |
    
-## <a name="conclusion"></a>Zusammenfassung
+## <a name="conclusion"></a>Schlussbemerkung
 
-InfoPath verwendet offene XML-Standards, um Benutzern eine flexible und dennoch strukturierte XML-Bearbeitung für die Datensammlung zu ermöglichen. Um eine einfache Benutzeroberfläche zum Visualisieren und Bearbeiten hierarchischer XML-Daten bereitzustellen, werden der DOM-Struktur geschachtelte Feldgruppen mit UI-Steuerelementen zugeordnet. Mithilfe von XSLT-Transformationen kann der Inhalt der Ansichten der Benutzeroberfläche abweichend von der Struktur der XML-Daten organisiert werden.
+InfoPath verwendet Open XML-Standards, um Benutzern eine flexible, aber strukturierte XML-Bearbeitung für die Datenerfassung bereitzustellen. Um eine einfache Benutzeroberfläche zum Visualisieren und Bearbeiten hierarchischer XML-Daten bereitzustellen, werden der DOM-Struktur geschachtelte Feldgruppen mit UI-Steuerelementen zugeordnet. Mithilfe von XSLT-Transformationen kann der Inhalt der Ansichten der Benutzeroberfläche abweichend von der Struktur der XML-Daten organisiert werden.
   
-InfoPath bietet mehr Flexibilität als statische Formulare mit einer strukturierten Bearbeitung und Überprüfung als Textverarbeitungsdokumente. Dadurch ergibt sich ein hybrides Tool, das die Vorteile der herkömmlichen Dokumentbearbeitung mit den umfassenden Datenerfassungsfunktionen eines Formularpakets vereint und mit dem gewöhnliche Benutzer gültige XML-Dokumente erstellen können, die zu einem benutzerdefinierten XML-Schema gehören. Dank der integrierten Unterstützung für Webdienste können einfach Ansichten zum Bearbeiten von XML-Dokumenten erstellt werden, die einem Webdienstschema entsprechen.
+InfoPath bietet mehr Flexibilität als statische Formulare mit einer strukturierteren Bearbeitung und Überprüfung als Textverarbeitungsdokumente. Dadurch ergibt sich ein hybrides Tool, das die Vorteile der herkömmlichen Dokumentbearbeitung mit den umfassenden Datenerfassungsfunktionen eines Formularpakets vereint und mit dem gewöhnliche Benutzer gültige XML-Dokumente erstellen können, die zu einem benutzerdefinierten XML-Schema gehören. Dank der integrierten Unterstützung für Webdienste können einfach Ansichten zum Bearbeiten von XML-Dokumenten erstellt werden, die einem Webdienstschema entsprechen.
   
 

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagMessageEditorFormat
 api_type:
 - HeaderDef
 ms.assetid: 197b21ed-9f2f-425f-a6ed-cae1208fa2ca
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 029df4397f4d24c7c111d2017d34e6403df367d6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: dd107de00ebc7ab55b6d255c4bc993d9c3210086
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32325634"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59560886"
 ---
 # <a name="pidtagmessageeditorformat-canonical-property"></a>PidTagMessageEditorFormat (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32325634"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt das Format für einen Editor an, der zum Anzeigen einer Nachricht verwendet werden soll.
+Gibt das Format an, das ein Editor zum Anzeigen einer Nachricht verwenden soll.
   
 |||
 |:-----|:-----|
@@ -34,24 +34,24 @@ Gibt das Format für einen Editor an, der zum Anzeigen einer Nachricht verwendet
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Sonstiges  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die möglichen Werte **für PR_MSG_EDITOR_FORMAT** können einer der folgenden Sein: 
+Die möglichen Werte für **PR_MSG_EDITOR_FORMAT** können eine der folgenden Sein: 
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|**EDITOR_FORMAT_DONTKNOW** <br/> |Das Zu verwendende Format des Editors ist unbekannt.  <br/> |
+|**EDITOR_FORMAT_DONTKNOW** <br/> |Das für den Editor zu verwendende Format ist unbekannt.  <br/> |
 |**EDITOR_FORMAT_PLAINTEXT** <br/> |Der Editor sollte die Nachricht im Nur-Text-Format anzeigen.  <br/> |
 |**EDITOR_FORMAT_HTML** <br/> |Der Editor sollte die Nachricht im HTML-Format anzeigen.  <br/> |
 |**EDITOR_FORMAT_RTF** <br/> |Der Editor sollte die Nachricht im Rich-Text-Format anzeigen.  <br/> |
    
-Standardmäßig E-Mail-Nachrichten (mit der Nachrichtenklasse **IPM. Hinweis** oder mit einer benutzerdefinierten Nachrichtenklasse, die von **IPM abgeleitet ist. Hinweis**) von einem POP3/SMTP-E-Mail-Konto gesendet werden im Transport Neutral Encapsulation Format (TNEF). Die **PR_MSG_EDITOR_FORMAT-Eigenschaft** kann verwendet werden, um beim Senden einer Nachricht nur Nur-Text und nicht TNEF zu erzwingen. Wenn **PR_MSG_EDITOR_FORMAT** auf EDITOR_FORMAT_PLAINTEXT **festgelegt** ist, wird die Nachricht als Nur-Text-Nachricht ohne TNEF gesendet. Wenn **PR_MSG_EDITOR_FORMAT** auf **EDITOR_FORMAT_RTF** festgelegt ist, ist die TNEF-Codierung implizit aktiviert, und die Nachricht wird mithilfe des standardmäßigen Internetformats gesendet, das im Outlook ist.
+Standardmäßig E-Mail-Nachrichten (mit der Nachrichtenklasse **IPM. Hinweis** oder mit einer von IPM abgeleiteten benutzerdefinierten **Nachrichtenklasse. Hinweis**) gesendet von einem POP3/SMTP-E-Mail-Konto werden im transportneutralen Kapselungsformat (Transport Neutral Encapsulation Format, TNEF) gesendet. Die **PR_MSG_EDITOR_FORMAT-Eigenschaft** kann verwendet werden, um beim Senden einer Nachricht nur Nur-Text und nicht TNEF zu erzwingen. Wenn **PR_MSG_EDITOR_FORMAT** auf **EDITOR_FORMAT_PLAINTEXT** festgelegt ist, wird die Nachricht als Nur-Text ohne TNEF gesendet. Wenn **PR_MSG_EDITOR_FORMAT** auf **EDITOR_FORMAT_RTF** festgelegt ist, wird die TNEF-Codierung implizit aktiviert, und die Nachricht wird mithilfe des Standard-Internetformats gesendet, das im Outlook-Client angegeben ist.
   
 Es gibt zwei weitere Möglichkeiten, die Verwendung von TNEF beim Senden einer Nachricht zu erzwingen.
   
-- Das Festlegen der **dispidUseTNEF** ([PidLidUseTnef](pidlidusetnef-canonical-property.md)) benannten Eigenschaft auf True in einer Nachricht gibt an, dass TNEF beim Konvertieren der Nachricht von MAPI in MIME/SMTP enthalten sein sollte. Beachten Sie, dass **dispidUseTNEF** nur gilt, wenn die Nachricht von einem POP3/SMTP-E-Mail-Konto gesendet wird, und gilt nicht, wenn die Nachricht von anderen Anbietern gesendet wird, z. B. Microsoft Exchange Server. **dispidUseTNEF** überschreibt die Einstellung in **PR_MSG_EDITOR_FORMAT**.
+- Wenn Sie die benannte Eigenschaft **dispidUseTNEF** ([PidLidUseTnef](pidlidusetnef-canonical-property.md)) in einer Nachricht auf "True" festlegen, bedeutet dies, dass TNEF beim Konvertieren der Nachricht von MAPI in MIME/SMTP eingeschlossen werden sollte. Beachten Sie, dass **dispidUseTNEF** nur gilt, wenn die Nachricht von einem POP3/SMTP-E-Mail-Konto gesendet wird, und nicht, wenn die Nachricht von anderen Anbietern wie Microsoft Exchange Server gesendet wird. **dispidUseTNEF** setzt die Einstellung in **PR_MSG_EDITOR_FORMAT** außer Kraft.
     
-- Das **CCSF_USE_TNEF** beim Aufrufen von [IConverterSession::MAPIToMIMEStm](iconvertersession-mapitomimestm.md) zum Konvertieren einer ausgehenden MAPI-Nachricht in einen MIME-Stream kann auch TNEF erzwingen. Dies gilt auch **dann, wenn dispidUseTNEF** nicht festgelegt ist. 
+- Die  Verwendung des CCSF_USE_TNEF-Flags beim Aufrufen von [IConverterSession::MAPIToMIMEStm](iconvertersession-mapitomimestm.md) zum Konvertieren einer ausgehenden MAPI-Nachricht in einen MIME-Stream kann auch TNEF erzwingen. Dies gilt auch, wenn **dispidUseTNEF** nicht festgelegt ist. 
     
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -59,7 +59,7 @@ Es gibt zwei weitere Möglichkeiten, die Verwendung von TNEF beim Senden einer N
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
   
@@ -73,11 +73,11 @@ Es gibt zwei weitere Möglichkeiten, die Verwendung von TNEF beim Senden einer N
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -85,9 +85,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

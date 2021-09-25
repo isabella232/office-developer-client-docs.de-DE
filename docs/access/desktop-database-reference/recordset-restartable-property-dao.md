@@ -1,5 +1,5 @@
 ---
-title: Recordset. Restartable-Eigenschaft (DAO)
+title: Recordset.Restartable-Eigenschaft (DAO)
 TOCTitle: Restartable Property
 ms:assetid: 00def49d-ea7e-6cd5-2f4a-914a1ddcdd51
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff844737(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1052926
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 5142d0d47be37ca8c2e1c6b89462c05b7d41d302
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: e0af1932a625703c08f7b0c873c177e21bd14ed0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307574"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572879"
 ---
-# <a name="recordsetrestartable-property-dao"></a>Recordset. Restartable-Eigenschaft (DAO)
+# <a name="recordsetrestartable-property-dao"></a>Recordset.Restartable-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -27,9 +27,9 @@ Gibt einen Wert zurück, der angibt, ob ein **[Recordset](recordset-object-dao.m
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Restartable
+*Ausdruck* . Neustartbar
 
-*Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 

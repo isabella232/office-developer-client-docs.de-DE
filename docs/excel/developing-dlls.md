@@ -8,13 +8,13 @@ keywords:
 - DLLs [Excel 2007], Erstellen,Erstellen von DLLs [Excel 2007]
 ms.assetid: 5d69d06d-a126-4c47-82ad-17112674c8a3
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-localization_priority: Priority
-ms.openlocfilehash: 89dd7b65ad94ba2fc7e1cf3f99ee163d3003d0fe
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 365095dfaf1528663a358f69ad632b990f9ea1ce
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32310920"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605610"
 ---
 # <a name="developing-dlls"></a>Entwickeln von DLLs
 
@@ -132,7 +132,7 @@ double WINAPI my_Cdecorated_Cpp_export(double x);
 #endif
 ```
 
-### <a name="using-the-declspecdllexport-declarator"></a>Verwenden des __declspec(dllexport)-Deklarators
+### <a name="using-the-__declspecdllexport-declarator"></a>Verwenden des __declspec(dllexport)-Deklarators
 
 Das Schlüsselwort **__declspec(dllexport)** kann in der Deklaration der Funktion wie folgt verwendet werden. 
   

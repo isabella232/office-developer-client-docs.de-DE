@@ -4,22 +4,22 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 20b587ee-87bf-4648-99ec-ddedd703d9fd
 description: Gibt den ganzzahligen Wert des eindeutigen Bezeichners für eine Schriftart zurück, der durch den Namen angegeben wird.
-ms.openlocfilehash: 7ae6fe6dc8bb9c718a358d11d4a6a0227eaf18df
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 9211d56299cbf3085de4060921b19b6a0ed414e6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33422173"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59574230"
 ---
 # <a name="font-function"></a>FONT Function
 
 Gibt den ganzzahligen Wert des eindeutigen Bezeichners für eine Schriftart zurück, der durch den Namen angegeben wird.
   
 > [!NOTE]
-> In den meisten Fällen ist der Schriftartenbezeichner systemspezifisch. Obwohl die Schriftart nach der Verwendung in einer Datei eingerichtet bleibt, bietet die **FONT-Funktion** einen konsistenten Zugriff auf eine bestimmte Schriftart über Systeme und Versionen von Visio. Es wird empfohlen, die **FONT-Funktion** zu verwenden, um Schriftarten zuzuordnen, anstatt direkt auf Schriftartbezeichner zu verweisen. 
+> In den meisten Fällen ist der Schriftbezeichner systemspezifisch. Obwohl die Schriftart nach der Verwendung in einer Datei weiterhin hergestellt wird, bietet die **FONT-Funktion** einen konsistenten Zugriff auf eine bestimmte Schriftart über Systeme und Versionen von Visio hinweg. Es wird empfohlen, schriftarten mithilfe der **FONT-Funktion** zuzuweisen, anstatt direkt auf Schriftartbezeichner zu verweisen. 
   
 ## <a name="version-information"></a>Informationen zur Version
 
@@ -42,7 +42,7 @@ Ganze Zahl
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn die für die  *Font_name_string*  bereitgestellte Zeichenfolge nicht mit einer bekannten Schriftart übereinstimmen, gibt diese Funktion eine #VALUE! zurück. 
+Wenn die für  *font_name_string*  angegebene Zeichenfolge nicht mit einer bekannten Schriftart übereinstimmt, gibt diese Funktion eine #VALUE! zurück. 
   
 ## <a name="example"></a>Beispiel
 

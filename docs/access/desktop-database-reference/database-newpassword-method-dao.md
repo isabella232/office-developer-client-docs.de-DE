@@ -1,5 +1,5 @@
 ---
-title: Database. neuPassword-Methode (DAO)
+title: Database.NewPassword-Methode (DAO)
 TOCTitle: NewPassword Method
 ms:assetid: 01c1c454-d651-222c-225a-2b02734a1b7a
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff844754(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1052943
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 20f09dbfba50526409472f7eb804ba2c47e4d1d5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 06658f6c47eb17cb78829c65ce528e565ff69eb6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294855"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585942"
 ---
-# <a name="databasenewpassword-method-dao"></a>Database. neuPassword-Methode (DAO)
+# <a name="databasenewpassword-method-dao"></a>Database.NewPassword-Methode (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -26,9 +26,9 @@ ms.locfileid: "32294855"
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Neues Kennwort (***bstrOld***, ***bstrNew***)
+*Ausdruck* . NewPassword(***bstrOld** _, _*_bstrNew_**)
 
-*Ausdruck* Ein Ausdruck, der ein **Database** -Objekt zurückgibt.
+*Ausdruck* Ein Ausdruck, der ein **Database-Objekt** zurückgibt.
 
 ## <a name="parameters"></a>Parameter
 
@@ -58,8 +58,8 @@ ms.locfileid: "32294855"
 <td><p><em>bstrNew</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>String</strong></p></td>
-<td><p>Die neue Einstellung der <strong>Password</strong> -Eigenschaft des <strong>Database</strong> -Objekts.</p>
-<p><strong>Hinweis</strong>: Verwenden Sie sichere Kennwörter, die Groß-und Kleinbuchstaben, Zahlen und Symbole kombinieren. Unsichere Kennwörter kombinieren diese Elemente nicht. Sicheres Kennwort: Y6dh!et5. Schwaches Kennwort: House27. Verwenden Sie ein sicheres Kennwort, das Sie sich merken können, damit Sie es nicht aufschreiben müssen.</p>
+<td><p>Die neue Einstellung der <strong>Password-Eigenschaft</strong> des <strong>Database-Objekts.</strong></p>
+<p><strong>HINWEIS:</strong>Verwenden Sie sichere Kennwörter, die Groß- und Kleinbuchstaben, Zahlen und Symbole kombinieren. Unsichere Kennwörter enthalten keine Kombination dieser Elemente. Sicheres Kennwort: Y6dh!et5. Unsicheres Kennwort: Haus27. Verwenden Sie ein sicheres Kennwort, das Sie sich merken können, damit Sie es nicht aufschreiben müssen.</p>
 </td>
 </tr>
 </tbody>
@@ -68,7 +68,7 @@ ms.locfileid: "32294855"
 
 ## <a name="remarks"></a>Bemerkungen
 
-Die Zeichenfolgen bstrOld und bstrNew können bis zu 20 Zeichen lang sein und alle Zeichen mit Ausnahme des ASCII-Zeichens 0 (null) enthalten. Verwenden Sie zum Löschen des Kennworts eine leere Zeichenfolge ("") für bstrNew.
+Die Zeichenfolgen bstrOld und bstrNew können bis zu 20 Zeichen lang sein und alle Zeichen außer dem ASCII-Zeichen 0 (Null) enthalten. Verwenden Sie zum Löschen des Kennworts eine leere Zeichenfolge ("") für bstrNew.
 
 Bei Kennwörtern wird Groß-/Kleinschreibung beachtet.
 

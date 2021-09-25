@@ -8,13 +8,13 @@ keywords:
 - DLLs [Excel 2007], Aufrufen in Excel,xlAutoFree-Funktion [Excel 2007],xlAutoFree12-Funktion [Excel 2007],xlcall32.lib [Excel 2007],xlAutoRegister-Funktion [Excel 2007],xlcall.cpp [Excel 2007],xlAutoRemove-Funktion [Excel 2007],xlAddInManagerInfo-Funktion [Excel 2007],xlAutoAdd-Funktion [Excel 2007],xlAutoOpen-Funktion [Excel 2007],xlAutoClose-Funktion [Excel 2007],DLLs [Excel 2007], Umwandeln in XLLs,XLLs [Excel 2007], Aufrufen in Excel,xlAutoRegister12-Funktion [Excel 2007],xlcall.h [Excel 2007],xlAddInManagerInfo12-Funktion [Excel 2007]
 ms.assetid: 7754998f-4e13-4a37-9724-43b6ee6c919b
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-localization_priority: Priority
-ms.openlocfilehash: 886b8e74f00f2e724785d43475ee0ffa3c922710
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: dd1f4d591d6131d9f683bbd4630cbb0ceadb03e1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32304144"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605617"
 ---
 # <a name="creating-xlls"></a>Erstellen von XLLs
 
@@ -96,7 +96,7 @@ Sie können diese Funktion verwenden, um ein benutzerdefiniertes Dialogfeld anzu
 
 Excel ruft die [xlAddInManagerInfo](xladdinmanagerinfo-xladdinmanagerinfo12.md)-Funktion auf, wenn der Add-In-Manager zum ersten Mal in einer Excel-Sitzung aufgerufen wird. Wenn Excel ein Argument gleich 1 übergibt, sollte diese Funktion eine Zeichenfolge (in der Regel der Name des Add-Ins) zurückgeben. Andernfalls sollte **#VALUE!** zurückgegeben werden.
   
-Ab Excel 2007 ruft Excel bevorzugt die **xlAddInManagerInfo12**-Funktion statt der **xlAddInManagerInfo**-Funktion auf, wenn sie von der XLL exportiert wird. Die **xlAddInManagerInfo12**-Funktion sollte auf die gleiche Weise funktionieren wie die **xlAddInManagerInfo**-Funktion, um versionsspezifische Unterschiede im Verhalten der XLL zu vermeiden. Die **xlAddInManagerInfo12**-Funktion sollte den Datentyp **XLOPER12** zurückgeben, während die **xlAddInManagerInfo**-Funktion den Datentyp **XLOPER ** zurückgeben sollte. 
+Ab Excel 2007 ruft Excel bevorzugt die **xlAddInManagerInfo12**-Funktion statt der **xlAddInManagerInfo**-Funktion auf, wenn sie von der XLL exportiert wird. Die **xlAddInManagerInfo12**-Funktion sollte auf die gleiche Weise funktionieren wie die **xlAddInManagerInfo**-Funktion, um versionsspezifische Unterschiede im Verhalten der XLL zu vermeiden. Die **xlAddInManagerInfo12**-Funktion sollte den Datentyp **XLOPER12** zurückgeben, während die **xlAddInManagerInfo**-Funktion den Datentyp **XLOPER** zurückgeben sollte. 
   
 ### <a name="xlautoregisterxlautoregister12"></a>xlAutoRegister/xlAutoRegister12
 

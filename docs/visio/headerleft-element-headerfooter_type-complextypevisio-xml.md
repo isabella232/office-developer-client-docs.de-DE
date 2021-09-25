@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1702e2fb-ed52-1ff6-e539-fcd656199797
 description: Enthält die Textzeichenfolge, die im linken Teil der Kopfzeile eines Dokuments angezeigt wird.
-ms.openlocfilehash: aff1895f92e9bedb9fd9f4134cf5d8ec38092643
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 3cedfcbe431d5d0a4bd5b361d017e16218d85952
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34541043"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59628234"
 ---
 # <a name="headerleft-element-headerfooter_type-complextype-visio-xml"></a>HeaderLeft-Element (HeaderFooter_Type complexType) (Visio XML)
 
@@ -36,7 +36,7 @@ Enthält die Textzeichenfolge, die im linken Teil der Kopfzeile eines Dokuments 
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

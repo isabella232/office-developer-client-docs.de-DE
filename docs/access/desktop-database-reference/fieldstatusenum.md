@@ -1,18 +1,18 @@
 ---
-title: FieldStatusEnum (Access Desktop Database Reference)
+title: FieldStatusEnum (Access-Desktopdatenbankreferenz)
 TOCTitle: FieldStatusEnum
 ms:assetid: 49570042-8435-8618-3ba1-7006c47735e0
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249225(v=office.15)
 ms:contentKeyID: 48544635
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 0ccf98f2a740e2a077d6e2451102bfc72bcd1b40
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 5fd8afb1d1c8210b81629a004a9b58791d08fab6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292517"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573040"
 ---
 # <a name="fieldstatusenum"></a>FieldStatusEnum
 
@@ -45,7 +45,7 @@ Die **AdFieldPending\*** -Werte geben den Vorgang an, der zum Festlegen des Stat
 </tr>
 <tr class="even">
 <td><p><strong>adFieldBadStatus</strong></p></td>
-<td><p>12</p></td>
+<td><p>12 </p></td>
 <td><p>Gibt an, dass aus ADO ein ungültiger Statuswert an den OLE DB-Anbieter gesendet wurde. Mögliche Ursachen sind u. a. ein OLE DB 1.0- oder 1.1-Anbieter oder eine fehlerhafte Kombination aus <a href="value-property-ado.md">Wert</a> und <a href="status-property-ado-field.md">Status</a>.</p></td>
 </tr>
 <tr class="odd">
@@ -65,12 +65,12 @@ Die **AdFieldPending\*** -Werte geben den Vorgang an, der zum Festlegen des Stat
 </tr>
 <tr class="even">
 <td><p><strong>adFieldCantCreate</strong></p></td>
-<td><p>7</p></td>
+<td><p>7 </p></td>
 <td><p>Gibt an, dass das Feld nicht hinzugefügt werden konnte, da der Anbieter eine Einschränkung (wie die Anzahl zulässiger Felder) überschritten hat.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adFieldDataOverflow</strong></p></td>
-<td><p>6</p></td>
+<td><p>6 </p></td>
 <td><p>Gibt an, dass die vom Anbieter zurückgegebenen Daten einen Datentypüberlauf des Felds verursacht haben.</p></td>
 </tr>
 <tr class="even">
@@ -80,12 +80,12 @@ Die **AdFieldPending\*** -Werte geben den Vorgang an, der zum Festlegen des Stat
 </tr>
 <tr class="odd">
 <td><p><strong>adFieldDoesNotExist</strong></p></td>
-<td><p>16</p></td>
+<td><p>16 </p></td>
 <td><p>Gibt an, dass das angegebene Feld nicht vorhanden ist.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adFieldIgnore</strong></p></td>
-<td><p>15</p></td>
+<td><p>15 </p></td>
 <td><p>Gibt an, dass dieses Feld übersprungen wurde, als in der Quelle Datenwerte festgelegt wurden. Der Anbieter legte keinen Wert fest.</p></td>
 </tr>
 <tr class="odd">
@@ -95,7 +95,7 @@ Die **AdFieldPending\*** -Werte geben den Vorgang an, der zum Festlegen des Stat
 </tr>
 <tr class="even">
 <td><p><strong>adFieldInvalidURL</strong></p></td>
-<td><p>17</p></td>
+<td><p>17 </p></td>
 <td><p>Gibt an, dass die URL der Datenquelle ungültige Zeichen enthält.</p></td>
 </tr>
 <tr class="odd">
@@ -116,7 +116,7 @@ Die **AdFieldPending\*** -Werte geben den Vorgang an, der zum Festlegen des Stat
 <tr class="even">
 <td><p><strong>adFieldPendingChange</strong></p></td>
 <td><p>0x40000</p></td>
-<td><p>Gibt an, dass das Feld gelöscht und dann erneut hinzugefügt wurde, möglicherweise mit einem anderen Datentyp, oder dass der Wert des Felds, das zuvor den Status adFieldOK hatte, geändert wurde. Das endgültige Formular des Felds ändert die Fields <a href="fields-collection-ado.md"></a> -Auflistung, nachdem die <a href="update-method-ado.md">Update</a> -Methode aufgerufen wurde.</p></td>
+<td><p>Gibt an, dass das Feld gelöscht und dann erneut hinzugefügt wurde, möglicherweise mit einem anderen Datentyp, oder dass sich der Wert des Felds, das zuvor den Status "adFieldOK" aufwies, geändert hat. Die endgültige Form des Felds ändert die <a href="fields-collection-ado.md">Fields-Auflistung,</a> nachdem die <a href="update-method-ado.md">Update-Methode</a> aufgerufen wurde.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adFieldPendingDelete</strong></p></td>
@@ -126,7 +126,7 @@ Die **AdFieldPending\*** -Werte geben den Vorgang an, der zum Festlegen des Stat
 <tr class="even">
 <td><p><strong>adFieldPendingInsert</strong></p></td>
 <td><p>0x10000</p></td>
-<td><p>Gibt an, dass durch den <strong>Append</strong> -Vorgang der Status festgelegt wurde. Das <strong>Feld</strong> wurde zur <strong>Fields</strong> -Auflistung hinzugefügt, nachdem die <strong>Update</strong> -Methode aufgerufen wurde.</p></td>
+<td><p>Gibt an, dass der Status durch den <strong>Append-Vorgang</strong> festgelegt wurde. The <strong>Field</strong> has been marked to be added to the <strong>Fields</strong> collection after the <strong>Update</strong> method is called.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adFieldPendingUnknown</strong></p></td>
@@ -140,7 +140,7 @@ Die **AdFieldPending\*** -Werte geben den Vorgang an, der zum Festlegen des Stat
 </tr>
 <tr class="odd">
 <td><p><strong>adFieldPermissionDenied</strong></p></td>
-<td><p>9</p></td>
+<td><p>9 </p></td>
 <td><p>Gibt an, dass das Feld nicht geändert werden kann, da es als schreibgeschützt definiert ist.</p></td>
 </tr>
 <tr class="even">
@@ -155,7 +155,7 @@ Die **AdFieldPending\*** -Werte geben den Vorgang an, der zum Festlegen des Stat
 </tr>
 <tr class="even">
 <td><p><strong>adFieldResourceLocked</strong></p></td>
-<td><p>18</p></td>
+<td><p>18 </p></td>
 <td><p>Gibt an, dass der Anbieter den Vorgang nicht ausführen konnte, da die Datenquelle von mindestens einer Anwendung oder mindestens einem Prozess gesperrt ist.</p></td>
 </tr>
 <tr class="odd">
@@ -175,24 +175,24 @@ Die **AdFieldPending\*** -Werte geben den Vorgang an, der zum Festlegen des Stat
 </tr>
 <tr class="even">
 <td><p><strong>adFieldTruncated</strong></p></td>
-<td><p>4</p></td>
+<td><p>4 </p></td>
 <td><p>Gibt an, dass Daten variabler Länge beim Lesen aus der Datenquelle abgeschnitten wurden.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adFieldUnavailable</strong></p></td>
-<td><p>8</p></td>
+<td><p>8 </p></td>
 <td><p>Gibt an, dass der Anbieter den Wert beim Lesen aus der Datenquelle nicht ermitteln konnte. Beispielsweise wurde die Zeile gerade erstellt, der Standardwert für die Spalte war nicht verfügbar und ein neuer Wert wurde noch nicht angegeben.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adFieldVolumeNotFound</strong></p></td>
-<td><p>21</p></td>
+<td><p> 21</p></td>
 <td><p>Gibt an, dass der Anbieter das von der URL angegebene Speichervolume nicht finden kann.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
 Diese Konstanten haben keine ADO/WFC-Entsprechungen.
 

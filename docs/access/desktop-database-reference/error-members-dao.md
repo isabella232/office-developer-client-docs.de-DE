@@ -1,20 +1,20 @@
 ---
-title: Error-Member (DAO)
+title: Error members (DAO)
 TOCTitle: Error Members
 ms:assetid: 0f4a7fb7-3070-39c9-d71b-facd254a2ccd
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845280(v=office.15)
 ms:contentKeyID: 48543262
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 05229e5402df87e9bfba6f64ffa3e9112c339735
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 335602cb96a2eb7933ffa9dcdf75eb2f590e1c14
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293518"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585669"
 ---
-# <a name="error-members-dao"></a>Error-Member (DAO)
+# <a name="error-members-dao"></a>Error members (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -40,7 +40,7 @@ Das Error-Objekt enthält Details zu Datenzugriffsfehlern. Dabei bezieht sich je
 <td><p>Returns a descriptive string associated with an error. This is the default property for the <strong>Error</strong> object.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="error-number-property-dao.md">Number</a></strong></p></td>
+<td><p><strong><a href="error-number-property-dao.md">Zahl</a></strong></p></td>
 <td><p>Gibt einen nummerischen Wert zurück, der einen Fehler beschreibt.</p></td>
 </tr>
 <tr class="odd">

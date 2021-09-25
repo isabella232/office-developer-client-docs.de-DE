@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff823192(v=office.15)
 ms:contentKeyID: 48547661
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: b706ffed14fdb440f3c3192c7c36015343f2e134
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7bfeae06c337dd8770e0d724e1b53f3be6ccf0cf
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300924"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615200"
 ---
 # <a name="raiseerror-macro-action"></a>RaiseError-Makroaktion
 
@@ -63,7 +63,7 @@ Wenn keine aktive **BeiFehler** -Anweisung zur Fehlerbehandlung vorhanden ist, w
 
 Zum Anzeigen der **USysApplicationLog** -Tabelle gehen Sie wie folgt vor:
 
-1.  Klicken Sie im Menü **Datei** auf **Optionen**.
+1.  Klicken Sie auf das Menü **"Datei",** und klicken Sie dann auf **"Optionen".**
 
 2.  Klicken Sie im Dialogfeld **Access-Optionen** auf die Registerkarte **Aktuelle Datenbank**.
 
@@ -75,7 +75,7 @@ Zum Anzeigen der **USysApplicationLog** -Tabelle gehen Sie wie folgt vor:
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt, wie Sie die Auslösenfehler-Aktion verwenden, um das makroereignis Before Change Data abzubrechen. Wenn das Feld ZugewiesenAn aktualisiert wird, wird ein LookupRecord-Datenblock verwendet, um zu bestimmen, ob der zugewiesene Techniker derzeit einer offenen Serviceanforderung zugeordnet ist. Wenn dies auf true festgelegt ist, wird das Before Change-Ereignis abgebrochen, und der Datensatz wird nicht aktualisiert.
+Das folgende Beispiel zeigt, wie die RaiseError-Aktion verwendet wird, um das Makroereignis "Vor Änderung" abzubrechen. Wenn das Feld AssignedTo aktualisiert wird, wird ein Nachschlagedatenblock verwendet, um zu bestimmen, ob der zugewiesene Techniker derzeit einer geöffneten Serviceanfrage zugewiesen ist. Wenn dies der Fall ist, wird das Before Change-Ereignis abgebrochen, und der Datensatz wird nicht aktualisiert.
 
 **Der Beispielcode stammt von:**[Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
 

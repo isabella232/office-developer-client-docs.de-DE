@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm93359
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: e7bf54934c6be215b2be5f32160d74fc2b4ab346
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: b03b3541e259cb399ebd3d6a7998948a197ac285
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306839"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615018"
 ---
 # <a name="runapplication-macro-action"></a>RunApplication-Makroaktion
 
@@ -58,7 +58,7 @@ Die **AusführenAnwendung**-Aktion hat das folgende Argument.
 <tbody>
 <tr class="odd">
 <td><p><strong>Befehlszeile</strong></p></td>
-<td><p>Die Befehlszeile, die zum Starten der Anwendung verwendet wird (einschließlich des Pfads und aller anderen erforderlichen Parameter, wie Switches, die die Anwendung in einem bestimmten Modus ausführen). Geben Sie die Befehlszeile in das Feld <strong>Befehlszeile</strong> im Abschnitt <strong>Aktionsargumente</strong> des Bereichs Makro-Generator ein. Dies ist ein erforderliches Argument.</p></td>
+<td><p>Die Zum Starten der Anwendung verwendete Befehlszeile (einschließlich des Pfads und anderer erforderlicher Parameter, z. B. Switches, die die Anwendung in einem bestimmten Modus ausführen). Geben Sie die Befehlszeile in das <strong>Befehlszeilenfeld</strong> im Abschnitt <strong>"Aktionsargumente"</strong> im Bereich "Makro-Generator" ein. Dies ist ein erforderliches Argument.</p></td>
 </tr>
 </tbody>
 </table>

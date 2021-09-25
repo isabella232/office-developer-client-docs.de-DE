@@ -7,22 +7,22 @@ ms.topic: reference
 f1_keywords:
 - xlStack
 keywords:
-- xlstack-Funktion [excel 2007]
-localization_priority: Normal
+- Xlstack-Funktion [excel 2007]
+ms.localizationpriority: medium
 ms.assetid: f9f030e8-1ec9-4cbf-92e1-360526260916
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 55ceed93407b1d99e05bc20fb6ce0b22459de7df
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 455de097446af6e96e2655cef66fcc84adbbd203
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429979"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621297"
 ---
 # <a name="xlstack"></a>xlStack
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Überprüft den Speicherplatz, der auf dem Stapel bleibt.
+Überprüft, wie viel Platz auf dem Stapel bleibt.
   
 ```cs
 Excel12(xlStack, LPXLOPER12 pxRes, 0);
@@ -34,21 +34,21 @@ Diese Funktion verwendet keine Parameter.
   
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-Gibt die Anzahl der Bytes (**xltypeInt**) zurück, die auf dem Stapel bleiben.
+Gibt die Anzahl der Bytes (**xltypeInt**) zurück, die im Stapel verbleiben.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die Menge des verfügbaren Stapelspeichers der letzten Versionen überläuft die 16-Bit-signierte ganze Zahl der **XLOPER**. Dies bedeutet, **dass xlStack** einen Wert zwischen -32767 und 32768 zurückgeben kann, wenn er mithilfe von **XLOPER** s und **Excel4** oder **Excel4v** aufgerufen wird. Um in diesem Fall den richtigen Wert zu erhalten, müssen Sie den zurückgegebenen Wert in eine nicht signierte Short umgedumst haben.
+Der verfügbare Stapelspeicher der letzten Versionen überläuft die 16-Bit-Ganzzahl mit Vorzeichen des **XLOPER.** Dies bedeutet, dass **xlStack** einen Wert zwischen -32767 und 32768 zurückgeben kann, wenn er mit **XLOPER** s und **Excel4** oder **Excel4v** aufgerufen wird. Um den richtigen Wert in diesem Fall zu erhalten, müssen Sie den zurückgegebenen Wert in eine unsignierte Abkürzung umwandeln.
   
-Ab Excel 2007 sollten Sie diese Funktion mithilfe von **XLOPER12** s und **Excel12** oder **Excel12v** aufrufen, in diesem Fall ist der zurückgegebene Wert der verfügbare Stapelspeicher oder 64 KB, unabhängig davon, welcher Wert kleiner ist.
+Ab Excel 2007 sollten Sie diese Funktion mit **XLOPER12** s und **Excel12** oder **Excel12v** aufrufen. In diesem Fall ist der zurückgegebene Wert der verfügbare Stapelspeicher oder 64 KB, je nachdem, welcher der kleinere ist.
   
-Excel verfügt über einen begrenzten Speicherplatz auf dem Stapel, und Sie sollten darauf achten, diesen Speicherplatz nicht zu überziehen. Legen Sie niemals sehr große Datenstrukturen auf den Stapel, und legen Sie so viele lokale Variablen wie möglich statisch fest. Vermeiden Sie rekursives Aufrufen von Funktionen, da dadurch der Stapel schnell auffüllt wird.
+Excel verfügt über einen begrenzten Speicherplatz auf dem Stapel, und Sie sollten darauf achten, diesen Speicherplatz nicht zu überlaufen. Legen Sie niemals sehr große Datenstrukturen in den Stapel, und erstellen Sie so viele lokale Variablen wie möglich statisch. Vermeiden Sie rekursives Aufrufen von Funktionen, da dadurch der Stapel schnell gefüllt wird.
   
-Wenn Sie vermuten, dass Sie den Stapel überlaufen, rufen Sie diese Funktion häufig auf, um zu sehen, wie viel Stapelspeicherplatz übrig bleibt.
+Wenn Sie vermuten, dass Sie den Stapel überlaufen, rufen Sie diese Funktion häufig auf, um zu sehen, wie viel Stapelspeicher übrig bleibt.
   
 ## <a name="example"></a>Beispiel
 
-Im ersten Beispiel wird eine Benachrichtigung angezeigt, die die Menge an Stapelspeicherplatz enthält, die in enthalten  `\SAMPLES\EXAMPLE\EXAMPLE.C` ist. Im zweiten Beispiel wird dasselbe Beispiel verwendet, das **mit XLOPER** s arbeitet und nicht im SDK-Beispielcode enthalten ist.
+Im ersten Beispiel wird eine Warnmeldung angezeigt, die den linken Stapelplatz enthält und in enthalten  `\SAMPLES\EXAMPLE\EXAMPLE.C` ist. Im zweiten Beispiel wird dieselbe Aktion ausgeführt, wobei **XLOPER-Elemente** verwendet werden und nicht im SDK-Beispielcode enthalten sind.
   
 ```cs
 short WINAPI xlStackExample(void)

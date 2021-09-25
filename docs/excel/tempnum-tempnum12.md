@@ -9,21 +9,21 @@ f1_keywords:
 - TempNum12
 keywords:
 - tempnum12-Funktion [excel 2007],TempNum-Funktion [Excel 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5b74d618-db3a-4d84-bd17-4fee7ae3b51e
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: cabd44ab828a2cfe22253e9aaf12abf7b7709d69
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 2aad64b2058456eb3e0908387091dcfbc11d284e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33426632"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605603"
 ---
 # <a name="tempnumtempnum12"></a>TempNum/TempNum12
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Framework library function that creates a temporary **XLOPER** /  **XLOPER12** containing a Microsoft Excel worksheet number (an IEEE 8-byte double). 
+Framework-Bibliotheksfunktion, die einen temporären **XLOPER** /  **XLOPER12** erstellt, der eine Microsoft Excel Arbeitsblattnummer (ein IEEE 8-Byte-Double) enthält. 
   
 ```cs
 LPXLOPER TempNum(double d);
@@ -34,15 +34,15 @@ LPXLOPER12 TempNum12(double d);
 
  _d_ (**double**)
   
-Der beabsichtigte Wert. Beachten Sie, dass IEEE-Unternormalnummern derzeit nicht unterstützt werden und auf Null gerundet werden. Negative Unendlichkeit wird unterstützt.
+Der beabsichtigte Wert. Beachten Sie, dass IEEE-Subnormale Zahlen derzeit nicht unterstützt werden und auf Null gerundet werden. Negative Unendlichkeit wird unterstützt.
   
 ## <a name="return-value"></a>Rückgabewert
 
-Gibt einen numerischen **xltypeNum-Wert zurück,** der den übergebenen Wert oder Null enthält, wenn der übergebene Wert subnormal war. 
+Gibt einen numerischen **XltypeNum-Wert** zurück, der den übergebenen Wert enthält, oder null, wenn der übergebene Wert unternormal war. 
   
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird die **TempNum12-Funktion** verwendet, um ein Argument an **xlfGetWorkspace zu übergeben.**
+In diesem Beispiel wird die **TempNum12** -Funktion verwendet, um ein Argument an **xlfGetWorkspace** zu übergeben.
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   

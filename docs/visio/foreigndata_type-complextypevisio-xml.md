@@ -4,14 +4,14 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 21b394a6-6f95-fc17-482c-4cb648a0d9bb
-ms.openlocfilehash: 39396ef0db5b78d6f32d8828103eecd105f8b91d
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 95fbb82360d70fcc442965f34d39bd5347fc10c8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539863"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59628304"
 ---
 # <a name="foreigndata_type-complextype-visio-xml"></a>ForeignData_Type complexType (Visio XML)
 
@@ -21,7 +21,7 @@ ms.locfileid: "34539863"
 |:-----|:-----|
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
 |**Schemadatei** <br/> |VisioSchema15-2012-06-05.xsd  <br/> |
-|**Erweiterungsbasis** <br/> |Keine  <br/> |
+|**Erweiterungsbasis** <br/> |Keines  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -73,7 +73,7 @@ ms.locfileid: "34539863"
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -85,15 +85,15 @@ Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccur
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|CompressionLevel  <br/> |xsd:double  <br/> |Optional  <br/> ||Werte des xsd:double-Typs.  <br/> |
-|CompressionType  <br/> |xsd:token  <br/> |Optional  <br/> ||Werte des xsd:token-Typs.  <br/> |
-|ExtentX  <br/> |xsd:double  <br/> |Optional  <br/> ||Werte des xsd:double-Typs.  <br/> |
-|ExtentY  <br/> |xsd:double  <br/> |Optional  <br/> ||Werte des xsd:double-Typs.  <br/> |
-|ForeignType  <br/> |xsd:token  <br/> |erforderlich  <br/> ||Werte des xsd:token-Typs.  <br/> |
-|MappingMode  <br/> |xsd:unsignedShort  <br/> |Optional  <br/> ||Werte des Typs xsd:unsignedShort.  <br/> |
-|ObjectHeight  <br/> |xsd:double  <br/> |Optional  <br/> ||Werte des xsd:double-Typs.  <br/> |
-|ObjectType  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> ||Werte des xsd:unsignedInt-Typs.  <br/> |
-|ObjectWidth  <br/> |xsd:double  <br/> |Optional  <br/> ||Werte des xsd:double-Typs.  <br/> |
-|ShowAsIcon  <br/> |xsd:boolean  <br/> |Optional  <br/> ||Werte des typs xsd:boolean.  <br/> |
+|CompressionLevel  <br/> |xsd:double  <br/> |Optional  <br/> ||Werte des Typs "xsd:double".  <br/> |
+|CompressionType  <br/> |xsd:token  <br/> |Optional  <br/> ||Werte des Typs "xsd:token".  <br/> |
+|ExtentX  <br/> |xsd:double  <br/> |Optional  <br/> ||Werte des Typs "xsd:double".  <br/> |
+|ExtentY  <br/> |xsd:double  <br/> |Optional  <br/> ||Werte des Typs "xsd:double".  <br/> |
+|ForeignType  <br/> |xsd:token  <br/> |Erforderlich  <br/> ||Werte des Typs "xsd:token".  <br/> |
+|Mappingmode  <br/> |xsd:unsignedShort  <br/> |Optional  <br/> ||Werte des Typs "xsd:unsignedShort".  <br/> |
+|ObjectHeight  <br/> |xsd:double  <br/> |Optional  <br/> ||Werte des Typs "xsd:double".  <br/> |
+|ObjectType  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> ||Werte des Typs "xsd:unsignedInt".  <br/> |
+|ObjectWidth  <br/> |xsd:double  <br/> |Optional  <br/> ||Werte des Typs "xsd:double".  <br/> |
+|ShowAsIcon  <br/> |xsd:boolean  <br/> |Optional  <br/> ||Werte des Typs "xsd:boolean".  <br/> |
    
 

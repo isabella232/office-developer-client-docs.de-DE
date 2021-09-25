@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IPropData.HrSetPropAccess
 api_type:
 - COM
 ms.assetid: 02365050-5e8b-437c-925f-4eb0df646356
 description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 9e443302e49bad4a586b657a6de298dafbeefab4
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 13e90fdd80c6a41963dd0f3081739038b190abe5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33437854"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596022"
 ---
 # <a name="ipropdatahrsetpropaccess"></a>IPropData::HrSetPropAccess
 
@@ -63,7 +63,7 @@ MAPI_E_INVALID_PARAMETER
   
 > Der Parameter  _rgulAccess_ enth�lt eine ung�ltige Kombination von Flags, die wie IPROP_READONLY und IPROP_READWRITE. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IPropData::HrSetPropAccess** -Methode �ndert die Zugriffsebene und den Status f�r die Eigenschaften, die durch die Eigenschaftstags in der [SPropTagArray](sproptagarray.md) -Struktur, die auf die durch den Parameter  _lpPropTagArray_ identifiziert werden. F�r jede Eigenschaft ist vorhanden ein entsprechender Eintrag im  _rgulAccess_ -Array. Der Eintrag kann festgelegt werden, um ein Flag, das die Eigenschaft Zugriffsebene und ein weiteres angibt Flag, das den Status angibt. 
   

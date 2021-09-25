@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250258(v=office.15)
 ms:contentKeyID: 48548752
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 9a44548fd8747428b12c03c24207f36d3871e349
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 9e7d34ad96a44ba654f06f6b94d67a6dd3cf4cef
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294162"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585767"
 ---
 # <a name="dealing-with-failed-updates"></a>Umgang mit fehlgeschlagenen Updates
 
@@ -22,7 +22,7 @@ ms.locfileid: "32294162"
 
 Wenn eine Aktualisierung mit Fehlern endet, hängt es von der Art und dem Schweregrad der Fehler sowie der Logik Ihrer Anwendung ab, wie Sie die Fehler lösen. Wenn jedoch die Datenbank gemeinsam mit anderen Benutzern verwendet wird, gibt es den typischen Fehler, dass ein anderer Benutzer ein Feld vor Ihnen ändert. Diese Art von Fehler wird als *Konflikt* bezeichnet. ADO erkennt diese Situation und meldet einen Fehler.
 
-Wenn Aktualisierungsfehler auftreten, werden sie in einer Fehlerbehandlungsroutine abgefangen. Filtern Sie das **Recordset**-Objekt mit der **adFilterConflictingRecords**-Konstante, damit nur die miteinander in Konflikt stehenden Zeilen angezeigt werden. In diesem Beispiel dient die Fehlerbehebungsstrategie lediglich dazu, die vor-und Nachnamen des Autors zu drucken (**au\_fname** und **au\_lname**).
+Wenn Aktualisierungsfehler auftreten, werden sie in einer Fehlerbehandlungsroutine abgefangen. Filtern Sie das **Recordset**-Objekt mit der **adFilterConflictingRecords**-Konstante, damit nur die miteinander in Konflikt stehenden Zeilen angezeigt werden. In diesem Beispiel besteht die Fehlerauflösungsstrategie lediglich darin, den Vor- und Nachnamen des Autors (**au \_ fname** und **au \_ lname**) zu drucken.
 
 Der Code, um den Benutzer auf den Aktualisierungskonflikt aufmerksam zu machen, sieht wie folgt aus:
 

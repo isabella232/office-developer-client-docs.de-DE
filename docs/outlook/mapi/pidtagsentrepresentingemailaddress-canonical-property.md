@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagSentRepresentingEmailAddress
 api_type:
 - COM
 ms.assetid: 5fa4edde-475c-4568-946b-73eb08f97a61
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1b82e1e96a5ffbb5c17dd919e78a9f07342194c5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 740cf8acfedadd101c4221f9a69ac21b5f446f25
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341090"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613317"
 ---
 # <a name="pidtagsentrepresentingemailaddress-canonical-property"></a>PidTagSentRepresentingEmailAddress (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32341090"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält die E-Mail-Adresse für den Messagingbenutzer, der durch den Absender dargestellt wird.
+Enthält die E-Mail-Adresse des Messagingbenutzers, der vom Absender dargestellt wird.
   
 |||
 |:-----|:-----|
@@ -34,11 +34,11 @@ Enthält die E-Mail-Adresse für den Messagingbenutzer, der durch den Absender d
 |Datentyp:  <br/> |PT_UNICODE, PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaften sind Beispiele für die Adresseigenschaften für den Messagingbenutzer, der vom Absender dargestellt wird. Wenn eine Clientanwendung eine Nachricht im Namen eines anderen Clients sendet, sollte sie alle dargestellten Absendereigenschaften auf die Werte für den Client festlegen. Ein Messagingbenutzer, der in seinem eigenen Namen sendet, überlässt in der Regel die dargestellten Absendereigenschaften nicht.
+Diese Eigenschaften sind Beispiele für die Adresseigenschaften für den Messagingbenutzer, der vom Absender dargestellt wird. Wenn eine Clientanwendung eine Nachricht im Auftrag eines anderen Clients sendet, sollte sie alle dargestellten Absendereigenschaften auf die Werte für diesen Client festlegen. Ein Messaging-Benutzer, der in seinem eigenen Auftrag sendet, lässt in der Regel die dargestellten Absendereigenschaften unet.
   
-Der ausgehende Transportanbieter muss diese Eigenschaften immer unverändert lassen, wenn er vom sendenden Client festgelegt wurde. Wenn dies nicht festgelegt ist, sollte der Transportanbieter die Eigenschaft **PR_SENDER_EMAIL_ADDRESS** ([PidTagSenderEmailAddress](pidtagsenderemailaddress-canonical-property.md)) für die ausgehende Kopie der Nachricht festlegen und sie in der lokalen Kopie nicht festlegen.
+Der ausgehende Transportanbieter muss diese Eigenschaften immer unverändert lassen, wenn er vom sendenden Client festgelegt wurde. Wenn es nicht festgelegt ist, sollte der Transportanbieter die **Eigenschaft PR_SENDER_EMAIL_ADDRESS** ([PidTagSenderEmailAddress](pidtagsenderemailaddress-canonical-property.md)) für die ausgehende Kopie der Nachricht festlegen und die lokale Kopie nicht festlegen.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -46,7 +46,7 @@ Der ausgehende Transportanbieter muss diese Eigenschaften immer unverändert las
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
@@ -74,17 +74,17 @@ Der ausgehende Transportanbieter muss diese Eigenschaften immer unverändert las
     
 [[MS-OXTNEF]](https://msdn.microsoft.com/library/1f0544d7-30b7-4194-b58f-adc82f3763bb%28Office.15%29.aspx)
   
-> Codiert und decodiert Nachrichten- und Anlagenobjekte in eine effiziente Streamdarstellung.
+> Codiert und decodiert Nachrichten- und Anlagenobjekte in einer effizienten Datenstromdarstellung.
     
 ### <a name="header-files"></a>Headerdateien
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -92,9 +92,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

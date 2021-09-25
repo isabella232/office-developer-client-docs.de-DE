@@ -6,29 +6,29 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm455
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3b2991aa-4722-fe3b-39c5-02d38c4c7efc
 description: Bestimmt den Abstand, den das Objekt vertikal vom Ursprung des Rahmens des Objekts entfernt ist. Der Standardwert ist 0. Durch Bearbeitung des Objekts mit dem Zuschneidetool wird dieser Wert geändert.
-ms.openlocfilehash: 908972216a24370bc48990ddc99a36da9274d648
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 013e8e12550ad7ef65675a62eadc5951dc634d29
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33406738"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59628143"
 ---
 # <a name="imgoffsety-cell-foreign-image-info-section"></a>Zelle "ImgOffsetY" (Abschnitt "Foreign Image Info")
 
 Bestimmt den Abstand, den das Objekt vertikal vom Ursprung des Rahmens des Objekts entfernt ist. Der Standardwert ist 0. Durch Bearbeitung des Objekts mit dem Zuschneidetool wird dieser Wert geändert. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Um einen Verweis auf die Zelle ImgOffsetY anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Verwenden Sie zum Abrufen eines Verweises auf die Zelle "ImgOffsetY" anhand des Namens einer anderen Formel oder eines Programms mithilfe der **CellsU-Eigenschaft** Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | ImgOffsetY  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die ImgOffsetY-Zelle nach Index aus einem Programm zu erhalten: 
+Um einen Verweis auf die Zelle "ImgOffsetY" anhand des Indexes eines Programms abzurufen, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|

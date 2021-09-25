@@ -4,34 +4,34 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b3880511-dd27-4dc2-9e50-a49084ef8195
-description: Gibt an, ob ein Shape an einem Ersetzungsvorgang teilnehmen kann (entweder als Ziel- oder als Ersatzform).
-ms.openlocfilehash: 8b0e3175cacd9b906d91a4185dcd98fad604d8bf
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Gibt an, ob ein Shape an einem Ersetzungsvorgang teilnehmen kann (als Ziel oder als Ersatz-Shape).
+ms.openlocfilehash: e5220d0d9031aaa383a5dadd4c0c4049ec427eb0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404141"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573964"
 ---
 # <a name="lockreplace-cell-protection-section"></a>Zelle "LockReplace" (Abschnitt "Protection")
 
-Gibt an, ob ein Shape an einem Ersetzungsvorgang teilnehmen kann (entweder als Ziel- oder als Ersatzform). 
+Gibt an, ob ein Shape an einem Ersetzungsvorgang teilnehmen kann (als Ziel oder als Ersatz-Shape). 
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|TRUE  <br/> |Das Shape kann nicht ersetzt oder als Ersatzform verwendet werden.  <br/> Für eine Form auf dem Zeichenbereich wird die Schaltfläche **Shape** ändern deaktiviert, wenn die Form ausgewählt ist.  <br/> Bei einer Form auf einer Schablone wird das Shape nicht  als Ersatzform angezeigt, wenn auf die Schaltfläche Shape ändern geklickt wird.  <br/> |
-|FALSE  <br/> |Das Shape kann ersetzt oder als Ersatzform verwendet werden.  <br/> |
+|TRUE  <br/> |Die Form kann nicht ersetzt oder als Ersatzform verwendet werden.  <br/> Bei einem Shape auf dem Zeichenbereich ist die Schaltfläche **"Shape ändern"** deaktiviert, wenn das Shape ausgewählt ist.  <br/> Bei einem Shape in einer Schablone wird das Shape nicht als Ersatzform angezeigt, wenn auf die Schaltfläche **"Shape ändern"** geklickt wird.  <br/> |
+|FALSE  <br/> |Die Form kann ersetzt oder als Ersatzform verwendet werden.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Verwenden Sie zum Erhalten eines Verweises auf die **Zelle LockReplace** anhand des Namens aus einer anderen Formel, nach dem Wert des **N-Attributs** eines **Cell-Elements** oder aus einem Programm mit der **CellsU-Eigenschaft:** 
+Verwenden Sie Folgendes, um einen Verweis auf die **Zelle LockReplace** anhand des Namens aus einer anderen Formel, anhand des Werts des **N-Attributs** eines **Cell-Elements** oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | LockReplace  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die **Zelle LockReplace** nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle **LockReplace** anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

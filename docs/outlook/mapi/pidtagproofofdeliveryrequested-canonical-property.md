@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagProofOfDeliveryRequested
 api_type:
 - COM
 ms.assetid: 4d752d3f-bf36-4711-b1d4-68cd575a062f
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a85d1ad0526c5bac91600df32ba941ddbf28a188
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c5c07fa039cc15bff95a470d96886c6a516b4065
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33434837"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59560739"
 ---
 # <a name="pidtagproofofdeliveryrequested-canonical-property"></a>PidTagProofOfDeliveryRequested (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "33434837"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Diese Eigenschaft enthält TRUE, wenn ein Nachrichtensender einen Zustellungsnachweis für einen bestimmten Empfänger anfordert.
+Diese Eigenschaft enthält TRUE, wenn ein Absender einer Nachricht einen Übermittlungsnachweis für einen bestimmten Empfänger anfordert.
   
 |||
 |:-----|:-----|
@@ -40,11 +40,11 @@ Diese Eigenschaft enthält TRUE, wenn ein Nachrichtensender einen Zustellungsnac
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -52,9 +52,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

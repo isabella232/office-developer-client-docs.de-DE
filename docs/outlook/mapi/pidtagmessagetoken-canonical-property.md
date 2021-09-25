@@ -1,25 +1,25 @@
 ---
-title: PidTagMessageToken (kanonische Eigenschaft)
+title: Kanonische PidTagMessageToken-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagMessageToken
 api_type:
 - HeaderDef
 ms.assetid: fcb93346-db92-44b5-a447-59fd95f98f45
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 2d832b3a53f8056c034b5e87f1f309fa3058173d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: bfad9bbaea5f268bc85bb8fe58ff98ad24202470
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33408187"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59560844"
 ---
-# <a name="pidtagmessagetoken-canonical-property"></a>PidTagMessageToken (kanonische Eigenschaft)
+# <a name="pidtagmessagetoken-canonical-property"></a>Kanonische PidTagMessageToken-Eigenschaft
 
   
   
@@ -34,9 +34,9 @@ Enthält ein ASN.1-Sicherheitstoken für eine Nachricht.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Secure Messaging-Eigenschaften  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft übermittelt geschützte sicherheitsrelevante Informationen vom Urheber an den Empfänger. In Verbindung mit der **PR_MESSAGE_SECURITY_LABEL** ([PidTagMessageSecurityLabel](pidtagmessagesecuritylabel-canonical-property.md)) -Eigenschaft garantiert sie die Zuordnung der Bezeichnung mit dem Nachrichteninhalt. In Verbindung mit der **PR_CONTENT_INTEGRITY_CHECK** ([PidTagContentIntegrityCheck](pidtagcontentintegritycheck-canonical-property.md))-Eigenschaft wird überprüft, ob der Nachrichteninhalt unverändert ist.
+Diese Eigenschaft übermittelt geschützte sicherheitsrelevante Informationen vom Absender an den Empfänger. In Verbindung mit der **Eigenschaft PR_MESSAGE_SECURITY_LABEL** ([PidTagMessageSecurityLabel](pidtagmessagesecuritylabel-canonical-property.md)) wird die Zuordnung der Bezeichnung zum Nachrichteninhalt sichergestellt. In Verbindung mit der **Eigenschaft PR_CONTENT_INTEGRITY_CHECK** ([PidTagContentIntegrityCheck](pidtagcontentintegritycheck-canonical-property.md)) wird überprüft, ob der Nachrichteninhalt unverändert ist.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,11 +44,11 @@ Diese Eigenschaft übermittelt geschützte sicherheitsrelevante Informationen vo
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

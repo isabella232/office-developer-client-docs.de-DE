@@ -1,5 +1,5 @@
 ---
-title: DbEngine. DefaultUser-Eigenschaft (DAO)
+title: DBEngine.DefaultUser-Eigenschaft (DAO)
 TOCTitle: DefaultUser Property
 ms:assetid: 41ee0211-0794-6026-7341-3698a0b2c588
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192905(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1053071
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: c29f9663ce3591fe5b1633239e8ec0d8866ee16a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4b6a8a8f65b450d38a820bd00468cbde38facbd6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294346"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585816"
 ---
-# <a name="dbenginedefaultuser-property-dao"></a>DbEngine. DefaultUser-Eigenschaft (DAO)
+# <a name="dbenginedefaultuser-property-dao"></a>DBEngine.DefaultUser-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -29,11 +29,11 @@ Legt den Benutzernamen fest, mit dem das Standardobjekt **Workspace** bei seiner
 
 *Ausdruck* . DefaultUser
 
-*Ausdruck* Ein Ausdruck, der ein **DBEngine** -Objekt zurückgibt.
+*expression* Ein Ausdruck, der ein **DBEngine**-Objekt zurückgibt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-The setting for **DefaultUser** is a String data type. Es kann 1 bis 20 Zeichen lang in Microsoft Access-Arbeitsbereichen, und es kann alphabetische Zeichen, Akzentzeichen, Zahlen, Leerzeichen und Symbole enthalten, mit Ausnahme von: "(Anführungszeichen),/( \\ Schrägstrich), \[ \] (Backslash), (Klammern) ,: (Doppelpunkt), | (Pipe), \< (kleiner-als-Zeichen) \> , (größer-als-Zeichen), + (Pluszeichen), = (Gleichheitszeichen),; (Semikolon),, (Komma),? (Fragezeichen), \* (Asterisk), führende Leerzeichen und Steuerelemente (ASCII 00 bis ASCII 31).
+The setting for **DefaultUser** is a String data type. Sie kann in Microsoft Access-Arbeitsbereichen 1 bis 20 Zeichen lang sein und alphabetische Zeichen, Akzentzeichen, Zahlen, Leerzeichen und Symbole enthalten, außer für: " (Anführungszeichen), / (Schrägstrich), \\ (umgekehrter Schrägstrich), \[ \] (Klammern), : (Doppelpunkt), | (Pipe), \< (less-than sign), \> (Größer-als-Zeichen), + (Pluszeichen), = (Gleichheitszeichen), ; (Semikolon), , ( Komma), ? (Fragezeichen), \* (Sternchen), führende Leerzeichen und Steuerzeichen (ASCII 00 bis ASCII 31).
 
 
 > [!NOTE]

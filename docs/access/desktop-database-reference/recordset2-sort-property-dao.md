@@ -1,47 +1,47 @@
 ---
-title: Recordset2. Sort-Eigenschaft (DAO)
+title: Recordset2.Sort-Eigenschaft (DAO)
 TOCTitle: Sort Property
 ms:assetid: 523a8c29-46e2-564f-205d-03c214f277fe
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff193917(v=office.15)
 ms:contentKeyID: 48544842
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: a5784054ce195a1a2ea516d4f6a3417c5a8db71c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 2ec38f55bf28b93ae35348800aee85bdbc0de512
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309269"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615060"
 ---
-# <a name="recordset2sort-property-dao"></a>Recordset2. Sort-Eigenschaft (DAO)
+# <a name="recordset2sort-property-dao"></a>Recordset2.Sort-Eigenschaft (DAO)
 
 **Gilt für**: Access 2013, Office 2013 
 
-Legt die Sortierreihenfolge für Datensätze in einem **[Recordset](recordset-object-dao.md)** -Objekt fest oder gibt sie zurück (nur Microsoft Access-Arbeitsbereiche).
+Legt die Sortierreihenfolge von Datensätzen in einem **[Recordset](recordset-object-dao.md)**-Objekt fest oder gibt sie zurück (nur Microsoft Access-Arbeitsbereiche).
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Sortieren
+*expression* .Sort
 
-*Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset2-Objekt** darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 
 Sie können die **Sort**-Eigenschaft mit **Recordset**-Objekten vom Typ „Dynaset“ und „Snapshot“ verwenden.
 
-Wenn Sie diese Eigenschaft für ein Objekt festlegen, wird die Sortierung vorgenommen, wenn anhand dieses Objekts ein nachfolgendes **Recordset**-Objekt erstellt wird. Die Einstellung der **Sort**-Eigenschaft hat Vorrang vor allen für ein **[QueryDef](querydef-object-dao.md)** -Objekt festgelegten Sortierreihenfolgen.
+Wenn Sie diese Eigenschaft für ein Objekt festlegen, findet die Sortierung bei der nächsten Erstellung eines **Recordset**-Objekts aus diesem Objekt statt. Die **Sort**-Eigenschafteneinstellung überschreibt alle Sortierreihenfolgen, die für ein **[QueryDef](querydef-object-dao.md)**-Objekt angegeben wurden.
 
-Die Standardsortierreihenfolge ist aufsteigend (A bis Z bzw. 0 bis 100).
+Standardmäßig ist die aufsteigende Sortierreihenfolge (A bis Z oder 0 bis 100) festgelegt.
 
-Die **Sort**-Eigenschaft gilt nicht für **Recordset**-Objekte vom Typ „Tabelle“ oder „Vorwärts“. Verwenden Sie die **[Index](recordset2-index-property-dao.md)** -Eigenschaft, um ein **Recordset** -Objekt vom Typ Tabelle zu sortieren.
+Die **Sort**-Eigenschaft gilt nicht für **Recordset**-Objekte vom Typ „Tabelle“ oder „Vorwärts“. Verwenden Sie zum Sortieren eines **Recordset**-Objekts vom Typ „Tabelle“ die **[Index](recordset2-index-property-dao.md)**-Eigenschaft.
 
 > [!NOTE]
 > In vielen Fällen ist geht schneller, ein neues **Recordset**-Objekt mithilfe einer SQL-Anweisung zu öffnen, die die Sortierkriterien enthält.
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird die **Sort** -Eigenschaft veranschaulicht, indem ihr Wert geändert und ein neues **Recordset** erstellt wird. Die SortOutput-Funktion ist zum Ausführen dieser Prozedur erforderlich.
+In diesem Beispiel wird die **Sort**-Eigenschaft veranschaulicht, indem ihr Wert geändert und ein neues **Recordset** erstellt wird. Die SortOutput-Funktion ist zum Ausführen dieser Prozedur erforderlich.
 
 ```vb
     Sub SortX() 

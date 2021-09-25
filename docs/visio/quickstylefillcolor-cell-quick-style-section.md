@@ -1,44 +1,44 @@
 ---
-title: Zelle QuickStyleFillColor (Abschnitt "Quick Style")
+title: Zelle "QuickStyleFillColor" (Abschnitt "Quick Style")
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 41250e47-404c-40e7-99be-9bb8c1ed5ba2
-description: Bestimmt, welche Designfarbe von der Füllung eines Shapes als ganze Zahl von 0 bis 7 verwendet wird.
-ms.openlocfilehash: 3ace0de7e3bfc878a2101eaca3847ef079b8f919
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Bestimmt, welche Designfarbe die Füllung eines Shapes verwendet, als ganze Zahl zwischen 0 und 7.
+ms.openlocfilehash: 3e3ca1f38f968dea2e62fd50945e4e46d1de2964
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407963"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573628"
 ---
-# <a name="quickstylefillcolor-cell-quick-style-section"></a>Zelle QuickStyleFillColor (Abschnitt "Quick Style")
+# <a name="quickstylefillcolor-cell-quick-style-section"></a>Zelle "QuickStyleFillColor" (Abschnitt "Quick Style")
 
-Bestimmt, welche Designfarbe von der Füllung eines Shapes als ganze Zahl von 0 bis 7 verwendet wird.
+Bestimmt, welche Designfarbe die Füllung eines Shapes verwendet, als ganze Zahl zwischen 0 und 7.
   
 |||
 |:-----|:-----|
 |Wert  <br/> |Beschreibung  <br/> |
-|0  <br/> |Die Füllfarbe der Form erbt von der Dunklen Designfarbe.  <br/> |
-|1  <br/> |Die Füllfarbe der Form erbt von der Farbe des Light-Designs.  <br/> |
-|2  <br/> |Die Farbe der Formfüllung erbt von der Akzent 1-Designfarbe  <br/> |
-|3  <br/> |Die Farbe der Formfüllung erbt von der Akzent 2-Designfarbe  <br/> |
-|4   <br/> |Die Farbe der Formfüllung erbt von der Akzent 3-Designfarbe  <br/> |
-|5   <br/> |Die Farbe der Formfüllung erbt von der Akzent 4-Designfarbe  <br/> |
-|6   <br/> |Die Farbe der Formfüllung erbt von der Akzent 5-Designfarbe  <br/> |
-|7   <br/> |Die Farbe der Formfüllung erbt von der Akzent 6-Designfarbe  <br/> |
+|0  <br/> |Die Füllfarbe der Form erbt von der dunklen Designfarbe.  <br/> |
+|1  <br/> |Die Füllfarbe der Form erbt von der Hellen Designfarbe.  <br/> |
+|2  <br/> |Die Füllfarbe der Form erbt von der Akzent 1-Designfarbe  <br/> |
+|3  <br/> |Die Füllfarbe der Form erbt von der Akzent 2-Designfarbe  <br/> |
+|4   <br/> |Die Füllfarbe der Form erbt von der Akzent-3-Designfarbe.  <br/> |
+|5  <br/> |Die Füllfarbe der Form erbt von der Akzent 4-Designfarbe.  <br/> |
+|6   <br/> |Die Füllfarbe der Form erbt von der Akzent-5-Designfarbe.  <br/> |
+|7   <br/> |Die Füllfarbe der Form erbt von der Akzent-6-Designfarbe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Verwenden Sie zum Erhalten eines Verweises auf die **QuickStyleFillColor-Zelle** anhand des Namens aus einer anderen Formel, nach dem Wert des **N-Attributs** eines **Cell-Elements** oder aus einem Programm mit der **CellsU-Eigenschaft:** 
+Verwenden Sie Folgendes, um einen Verweis auf die **Zelle "QuickStyleFillColor"** anhand des Namens aus einer anderen Formel, anhand des Werts des **N-Attributs** eines **Cell-Elements** oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | QuickStyleFillColor  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die **QuickStyleFillColor-Zelle** nach Index aus einem Programm zu erhalten: 
+Um einen Verweis auf die **Zelle "QuickStyleFillColor"** anhand des Indexes eines Programms abzurufen, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|

@@ -8,31 +8,31 @@ f1_keywords:
 - xlfUnregister
 keywords:
 - xlfunregister-Funktion [excel 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 850bf65f-a151-44d6-b49f-d53ae2c83760
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 3f5ebc08f89651331186990d8574e3150d4f484a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: d966b51c9f83d80ba74f8aca4cb870278705d711
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33410084"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621304"
 ---
 # <a name="xlfunregister-form-1"></a>xlfUnregister (Formular 1)
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Kann über einen DLL- oder XLL-Befehl aufgerufen werden, der selbst von einem Microsoft Excel. Dies entspricht dem Aufrufen von **UNREGISTER** aus Excel XLM-Makroblatts. 
+Kann über einen DLL- oder XLL-Befehl aufgerufen werden, der selbst von Microsoft Excel aufgerufen wurde. Dies entspricht dem Aufrufen von **UNREGISTER** aus einer Excel XLM-Makrovorlage. 
   
 **xlfUnregister** kann in zwei Formen aufgerufen werden: 
   
-- Formular 1: Aufheben der Registrierung eines einzelnen Befehls oder einer Einzelnen Funktion.
+- Formular 1: Hebt die Registrierung eines einzelnen Befehls oder einer einzelnen Funktion auf.
     
-- Formular 2: Entladen und Deaktivieren einer XLL.
+- Formular 2: Entlädt und deaktiviert eine XLL.
     
-In Form 1 aufgerufen, reduziert diese Funktion die Verwendungsanzahl einer DLL-Funktion oder eines Befehls, die zuvor mithilfe von **xlfRegister** oder **REGISTER registriert wurde.** Wenn die Verwendungsanzahl bereits null ist, hat diese Funktion keine Auswirkung. Wenn die Verwendungsanzahl aller Funktionen in einer DLL null erreicht, wird die DLL aus dem Arbeitsspeicher entladen.
+In Form 1 aufgerufen, reduziert diese Funktion die Verwendungsanzahl einer DLL-Funktion oder eines Befehls, die zuvor mit **xlfRegister** oder **REGISTER** registriert wurde. Wenn die Nutzungsanzahl bereits Null ist, hat diese Funktion keine Auswirkung. Wenn die Verwendungsanzahl aller Funktionen in einer DLL Null erreicht, wird die DLL aus dem Arbeitsspeicher entladen.
   
-**xlfRegister** (Form 1) definiert auch einen ausgeblendeten Namen, bei dem es sich um das Funktionstextargument  _pxFunctionText_ handelt und der zur Registrierungs-ID der Funktion oder des Befehls ausgewertet wird. Wenn Sie die Registrierung der Funktion aufheben, sollte dieser Name mithilfe von **xlfSetName** gelöscht werden, damit der Funktionsname nicht mehr vom Funktionsassistenten aufgeführt wird. Weitere Informationen finden Sie unter [Bekannte Probleme bei der Excel-XLL-Entwicklung](known-issues-in-excel-xll-development.md).
+**xlfRegister** (Formular 1) definiert auch einen ausgeblendeten Namen, bei dem es sich um das Argument des Funktionstexts  _pxFunctionText_ handelt und der zur Registrierungs-ID der Funktion oder des Befehls ausgewertet wird. Wenn Sie die Registrierung der Funktion aufheben, sollte dieser Name mit **xlfSetName** gelöscht werden, damit der Funktionsname nicht mehr vom Funktions-Assistenten aufgeführt wird. Weitere Informationen finden Sie unter [Bekannte Probleme bei der Excel-XLL-Entwicklung](known-issues-in-excel-xll-development.md).
   
 ```cs
 Excel4(xlfUnregister, LPXLOPER pxRes, 1, LPXLOPER pxRegisterId);
@@ -46,15 +46,15 @@ Die Registrierungs-ID der Funktion, die nicht registriert werden soll.
   
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-Wenn dies erfolgreich ist, wird **TRUE** (**xltypeBool**) zurückgegeben, andernfalls FALSE.
+Wenn erfolgreich, **gibt TRUE** (**xltypeBool**), andernfalls false zurück.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die Registrierungs-ID der Funktion wird von **xlfRegister** zurückgegeben, wenn die Funktion zum ersten Mal registriert wird. Sie kann auch durch Aufrufen der [xlfRegisterId-Funktion oder](xlfregisterid.md) der [xlfEvaluate-Funktion erhalten werden.](xlfevaluate.md) Beachten Sie, dass xlfRegisterId versucht, die Funktion zu registrieren, wenn sie noch nicht registriert wurde. Wenn Sie daher nur versuchen, die ID zu erhalten, damit Sie die Registrierung der Funktion aufheben können, ist es besser, sie zu erhalten, indem Sie den registrierten Namen an **xlfEvaluate übergeben.** Wenn die Funktion nicht registriert wurde, **schlägt xlfEvaluate** mit einem #NAME? error. 
+Die Registrierungs-ID der Funktion wird von **xlfRegister** zurückgegeben, wenn die Funktion zum ersten Mal registriert wird. Sie kann auch durch Aufrufen der [xlfRegisterId-Funktion](xlfregisterid.md) oder der [xlfEvaluate-Funktion](xlfevaluate.md)abgerufen werden. Beachten Sie, dass xlfRegisterId versucht, die Funktion zu registrieren, wenn sie noch nicht registriert wurde. Wenn Sie daher nur versuchen, die ID abzurufen, damit Sie die Registrierung der Funktion aufheben können, ist es besser, sie abzurufen, indem Sie den registrierten Namen an **xlfEvaluate** übergeben. Wenn die Funktion nicht registriert wurde, schlägt **xlfEvaluate** mit einem #NAME fehl? Fehler. 
   
 ## <a name="example"></a>Beispiel
 
-Weitere Informationen finden Sie im Code für die **fExit-Funktion** in  `\SAMPLES\GENERIC\GENERIC.C` .
+Siehe den Code für die **fExit-Funktion** in  `\SAMPLES\GENERIC\GENERIC.C` .
   
 ```cs
 int WINAPI fExit(void)

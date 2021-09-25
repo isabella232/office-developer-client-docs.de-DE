@@ -1,5 +1,5 @@
 ---
-title: Index. IgnoreNulls-Eigenschaft (DAO)
+title: Index.IgnoreNulls-Eigenschaft (DAO)
 TOCTitle: IgnoreNulls Property
 ms:assetid: f49f17b8-d7c1-18ab-07a8-e1be61488519
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff836698(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1052931
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 6c306f76e34e24abb5065c627d9325b48c3acead
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 51d6ffd9c07ec9d03f9dfce54f98b8edaabf7145
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291803"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585634"
 ---
-# <a name="indexignorenulls-property-dao"></a>Index. IgnoreNulls-Eigenschaft (DAO)
+# <a name="indexignorenulls-property-dao"></a>Index.IgnoreNulls-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -29,11 +29,11 @@ Legt einen Wert fest, der angibt, ob Datensätze, deren Indexfelder Nullwerte en
 
 *Ausdruck* . IgnoreNulls
 
-*Ausdruck* Eine Variable, die ein **Index** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Index-Objekt** darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Ein neues **[Index](index-object-dao.md)** objekt, das noch nicht an eine Auflistung angehängt wurde, hat Lese-/Schreibzugriff auf diese Eigenschaft. Ein vorhandenes **Index**objekt in einer **[Indexes](indexes-collection-dao.md)** -Auflistung hat nur Lesezugriff auf die Eigenschaft.
+Ein neues **[Index](index-object-dao.md)** objekt, das noch nicht an eine Auflistung angehängt wurde, hat Lese-/Schreibzugriff auf diese Eigenschaft. Ein vorhandenes **Index** objekt in einer **[Indexes](indexes-collection-dao.md)** -Auflistung hat nur Lesezugriff auf die Eigenschaft.
 
 Sie können einen Index für ein Feld definieren, um die Suche nach Datensätzen zu beschleunigen. Wenn Sie in einem indizierten Feld **null**-Einträge zulassen und erwarten, dass viele Einträge den Wert **null** haben, können Sie die **IgnoreNulls**-Eigenschaft für das **Index**-Objekt auf den Wert **True** festlegen, um den vom Index verwendeten Speicherplatz zu reduzieren.
 
@@ -54,7 +54,7 @@ Die Einstellungen der **IgnoreNulls**-Eigenschaft und der **[Required](field-req
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>True</p></td>
+<td><p>Richtig</p></td>
 <td><p>False</p></td>
 <td><p>Im Indexfeld ist ein Nullwert erlaubt. Es wird kein Indexeintrag hinzugefügt.</p></td>
 </tr>
@@ -65,7 +65,7 @@ Die Einstellungen der **IgnoreNulls**-Eigenschaft und der **[Required](field-req
 </tr>
 <tr class="odd">
 <td><p>True oder False</p></td>
-<td><p>True</p></td>
+<td><p>Richtig</p></td>
 <td><p>Im Indexfeld ist kein Nullwert erlaubt. Es wird kein Indexeintrag hinzugefügt.</p></td>
 </tr>
 </tbody>

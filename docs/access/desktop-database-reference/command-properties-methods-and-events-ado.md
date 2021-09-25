@@ -1,20 +1,20 @@
 ---
-title: Command-Eigenschaften,-Methoden und-Ereignisse (ADO)
+title: Befehlseigenschaften, Methoden und Ereignisse (ADO)
 TOCTitle: Properties, Methods, and Events
 ms:assetid: 62b2db82-c518-016f-8e9a-e181528782c8
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249373(v=office.15)
 ms:contentKeyID: 48545244
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: f9b67e44e8374a88f83ee4523d031a055d75bbc3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: e026b473cfeffd8a3806ee545fb6fce0797a28a4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296150"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573103"
 ---
-# <a name="command-properties-methods-and-events-ado"></a>Command-Eigenschaften,-Methoden und-Ereignisse (ADO)
+# <a name="command-properties-methods-and-events-ado"></a>Befehlseigenschaften, Methoden und Ereignisse (ADO)
 
 
 **Gilt für**: Access 2013, Office 2013

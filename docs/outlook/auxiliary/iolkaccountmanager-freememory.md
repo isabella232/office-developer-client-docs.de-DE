@@ -4,19 +4,19 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: acb67186-ab38-e918-5402-2526307a5bd0
-description: Gibt den von der IOlkAccountManager-Schnittstelle zugewiesenen Arbeitsspeicher frei.
-ms.openlocfilehash: 3e680e1e26d6c9b12c2dd4a7d48df4dbeae14154
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Gibt von der IOlkAccountManager-Schnittstelle zugewiesenen Speicher frei.
+ms.openlocfilehash: e51aa8dd165e9cf1d1498386387b422404c7a5d1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33408488"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59561929"
 ---
 # <a name="iolkaccountmanagerfreememory"></a>IOlkAccountManager::FreeMemory
 
-Gibt den von der [IOlkAccountManager-Schnittstelle zugewiesenen Arbeitsspeicher](iolkaccountmanager.md) frei. 
+Gibt von der [IOlkAccountManager-Schnittstelle](iolkaccountmanager.md) zugewiesenen Speicher frei. 
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -32,15 +32,15 @@ HRESULT IOlkAccountManager::FreeMemory (
 
 _pv_
   
-> [in] Ein Zeiger auf den frei zu verwendende Arbeitsspeicher.
+> [in] Ein Zeiger auf den freizugebenden Speicher.
     
 ## <a name="return-values"></a>Rückgabewerte
 
 S_OK zurück, wenn der Aufruf erfolgreich war; andernfalls einen Fehlercode.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Verwenden Sie diese Methode, um von [IOlkAccountManager zugewiesenen Arbeitsspeicher frei zu geben::GetOrder](iolkaccountmanager-getorder.md).
+Verwenden Sie diese Methode, um von [IOlkAccountManager](iolkaccountmanager-getorder.md)zugewiesenen Arbeitsspeicher freizugeben::GetOrder .
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,5 +1,5 @@
 ---
-title: Recordset2. Filter-Eigenschaft (DAO)
+title: Recordset2.Filter-Eigenschaft (DAO)
 TOCTitle: Filter Property
 ms:assetid: 5b3b4e18-8af4-5acd-a129-513ba2d913d1
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194529(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1053062
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 19f3c017aa5d4a353f3e832a3678d921565ea822
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 757aec47564e6462bf543e408825367ef26b775c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307329"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605981"
 ---
-# <a name="recordset2filter-property-dao"></a>Recordset2. Filter-Eigenschaft (DAO)
+# <a name="recordset2filter-property-dao"></a>Recordset2.Filter-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -27,9 +27,9 @@ Legt einen Wert fest, der feststellt, welche Datensätze in einem nachfolgend ge
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Filter
+*expression* .Filter
 
-*Ausdruck* Ein Ausdruck, der ein **Recordset2** -Objekt zurückgibt.
+*Ausdruck* Ein Ausdruck, der ein **Recordset2-Objekt** zurückgibt.
 
 ## <a name="remarks"></a>Bemerkungen
 
@@ -39,9 +39,9 @@ Verwenden Sie die **Filter**-Eigenschaft zum Anwenden eines Filters auf ein **Re
 
 Mit der **Filter**-Eigenschaft können Sie die Datensätze beschränken, die von einem vorhandenen Objekt zurückgegeben werden, wenn ein neues **Recordset**-Objekt basierend auf einem vorhandenen **Recordset**-Objekt geöffnet wird.
 
-Verwenden Sie das US-Datumsformat (Monat-Tag-Jahr) beim Filtern von Feldern, die Datumsangaben enthalten, auch wenn Sie nicht die US-Version des Microsoft Access-Datenbankmoduls verwenden (in diesem Fall müssen Sie Datumsangaben durch Verketten von Zeichenfolgen zusammensetzen, beispielsweise strMonth & "-" _ aMP_ strDay & "-" & strYear). Andernfalls werden die Daten möglicherweise nicht wie erwartet gefiltert.
+Verwenden Sie beim Filtern von Feldern mit Datumsangaben das US-amerikanische Datumsformat (Monat-Tag-Jahr), selbst wenn Sie nicht mit der US-Version des Microsoft Access-Datenbankmoduls arbeiten (in diesem Fall müssen Sie alle Datumsangaben durch Verketten von Zeichenfolgen bilden, z. B. strMonth & "-" & strDay & "-" & strYear). Andernfalls werden die Daten möglicherweise nicht wie erwartet gefiltert.
 
-In vielen Fällen ist es schneller, ein neues **Recordset**-Objekt zu öffnen, indem Sie eine SQL-Anweisung mit einer WHERE-Klausel verwenden.
+In vielen Fällen geht es schneller, ein neues **Recordset**-Objekt mithilfe einer SQL-Anweisung zu öffnen, die eine WHERE-Klausel enthält.
 
-Wenn Sie die-Eigenschaft auf eine Zeichenfolge festlegen, die mit einem nicht-ganzzahligen Wert verkettet ist, und die Systemparameter ein nicht-U. S. Decimal-Zeichen wie ein Komma (beispielsweise strFilter \> = "Price" & lngPrice und lngPrice = 125, 50) angeben, tritt ein Fehler auf, wenn Sie versuchen, Öffnen Sie das nächste **Recordset**-Objekt. Dies liegt daran, dass der Wert während der Verkettung mithilfe des Standard-Dezimaltrennzeichens in eine Zeichenfolge konvertiert wird und Microsoft Access SQL nur US-Dezimaltrennzeichen akzeptiert.
+Wenn Sie die Eigenschaft auf eine Zeichenfolge festlegen, die mit einem Wert verkettet ist, bei dem es sich nicht um eine Ganzzahl handelt, und die Systemparameter ein anderes als das US-amerikanische Dezimaltrennzeichen festlegen, wie etwa ein Komma (Beispiel: strFilter = "PRICE \> " & lngPrice und lngPrice = 125,50), tritt ein Fehler auf, wenn Sie versuchen, das nächste **Recordset**-Objekt zu öffnen. Dies liegt daran, dass der Wert während der Verkettung mithilfe des Standard-Dezimaltrennzeichens in eine Zeichenfolge konvertiert wird und Microsoft Access SQL nur US-Dezimaltrennzeichen akzeptiert.
 

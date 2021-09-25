@@ -1,20 +1,20 @@
 ---
-title: DbEngine. CommitTrans-Methode (DAO)
+title: DBEngine.CommitTrans-Methode (DAO)
 TOCTitle: CommitTrans Method
 ms:assetid: 0c9d345f-13ff-7fe6-789d-fbdb43fa54b8
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845171(v=office.15)
 ms:contentKeyID: 48543197
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 75918ac4da32020214d9e58d866c5def169eede3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 35b540ab8f6b91a8866974646ba1f8245844f801
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294387"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573068"
 ---
-# <a name="dbenginecommittrans-method-dao"></a>DbEngine. CommitTrans-Methode (DAO)
+# <a name="dbenginecommittrans-method-dao"></a>DBEngine.CommitTrans-Methode (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -23,9 +23,9 @@ Beendet die aktuelle Transaktion und speichert die Änderungen.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . CommitTrans (***Option***)
+*Ausdruck* . CommitTrans(***Option***)
 
-*Ausdruck* Eine Variable, die ein **DBEngine** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **DBEngine**-Objekt darstellt.
 
 ## <a name="parameters"></a>Parameter
 
@@ -55,7 +55,7 @@ Beendet die aktuelle Transaktion und speichert die Änderungen.
 </table>
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Mithilfe der Transaktionsmethoden **BeginTrans**, **CommitTrans** und **Rollback** wird die Transaktionsverarbeitung während einer Sitzung verwaltet, die durch ein **Workspace**-Objekt definiert wurde. Sie verwenden diese Methoden mit einem **Workspace**-Objekt, wenn Sie eine Reihe von an den Datenbanken vorgenommenen Änderungen in einer Sitzung als eine Einheit verarbeiten möchten.
 

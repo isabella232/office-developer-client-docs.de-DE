@@ -1,26 +1,26 @@
 ---
-title: Add-In-Manager- und XLL-Schnittstellenfunktionen
+title: Add-In-Manager und XLL-Schnittstellenfunktionen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 keywords:
-- Funktionen [excel 2007], Add-In-Manager,Funktionen [Excel 2007], XLL-Schnittstelle
-localization_priority: Normal
+- functions [excel 2007], add-in manager,functions [Excel 2007], XLL interface
+ms.localizationpriority: medium
 ms.assetid: e22d425a-75b2-412c-a07f-fb1915d08615
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: ab8cf5b58bc8a482b0dda103e0ec0ef37fc5f01f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 7329e30c272fa0abde4676935ba8915d67954f14
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404211"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605680"
 ---
-# <a name="add-in-manager-and-xll-interface-functions"></a>Add-In-Manager- und XLL-Schnittstellenfunktionen
+# <a name="add-in-manager-and-xll-interface-functions"></a>Add-In-Manager und XLL-Schnittstellenfunktionen
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Dieser Abschnitt enthält die Referenzdokumentation für die Funktionen, Microsoft Excel und der Add-In-Manager in einer XLL suchen.
+Dieser Abschnitt enthält die Referenzdokumentation für die Funktionen, nach denen Microsoft Excel und der Add-In-Manager in einer XLL suchen.
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 

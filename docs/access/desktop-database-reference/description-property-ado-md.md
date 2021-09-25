@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248816(v=office.15)
 ms:contentKeyID: 48543055
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 0f74532693f1054dd9d187757af840a3a00b451f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 45154880ced5d9ae90e43f8c3c6a58bc49846db9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293938"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573061"
 ---
 # <a name="description-property-ado-md"></a>Description-Eigenschaft (ADO MD)
 
@@ -25,7 +25,7 @@ Gibt eine Texterläuterung des aktuellen Objekts zurück.
 
 Gibt einen schreibgeschützten **String**-Wert zurück.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 For [Member](member-object-ado-md.md) objects, **Description** applies only to measure and formula members. **Description** returns an empty string ("") for all other types of members. For more information about the various types of members, see the [Type](type-property-ado-md.md) property.
 

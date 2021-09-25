@@ -4,19 +4,19 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5725eb52-3a78-897d-f9e3-c5a494fb78c0
-description: Ruft den Wert der angegebenen Account-Eigenschaft ab.
-ms.openlocfilehash: d24df8cfa9d54bee4614c1f31e12268748b8c986
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Ruft den Wert der angegebenen Kontoeigenschaft ab.
+ms.openlocfilehash: 2ab86eeaf18374a28159c6f0743e55d1664a1b31
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33433738"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59561950"
 ---
 # <a name="iolkaccountgetprop"></a>IOlkAccount::GetProp
 
-Ruft den Wert der angegebenen Account-Eigenschaft ab.
+Ruft den Wert der angegebenen Kontoeigenschaft ab.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -31,9 +31,9 @@ ACCT_VARIANT *pVar
 
 ## <a name="parameters"></a>Parameter
 
-_dwProp_
+_für "wetterprop"_
   
-> [in] Das Eigenschaftstag der zu erhaltende Account-Eigenschaft.
+> [in] Das Eigenschaftstag der abzurufenden Kontoeigenschaft.
     
 _pVar_
   
@@ -44,12 +44,12 @@ _pVar_
 |**[HRESULT]**|**Description**|
 |:-----|:-----|
 |S_OK  <br/> |Der Aufruf war erfolgreich.  <br/> |
-|E_ACCT_NOT_FOUND  <br/> |Die Eigenschaft wird für das angegebene Konto nicht gefunden.  <br/> |
+|E_ACCT_NOT_FOUND  <br/> |Die Eigenschaft für das angegebene Konto wurde nicht gefunden.  <br/> |
 |E_INVALIDARG  <br/> |Ein ungültiges Eigenschaftstag wurde angegeben.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Nachdem diese Methode zurückgegeben wurde, müssen Sie  *pVar*  mithilfe von [IOlkAccount::FreeMemory](iolkaccount-freememory.md)frei geben, wenn der Wert der Account-Eigenschaft ein Binär- oder Zeichenfolgentyp ist.
+Wenn der Wert der Kontoeigenschaft ein Binär- oder Zeichenfolgentyp ist, müssen Sie nach der Rückgabe dieser Methode  *pVar*  mithilfe von [IOlkAccount::FreeMemory](iolkaccount-freememory.md)freigeben.
   
 ## <a name="see-also"></a>Siehe auch
 

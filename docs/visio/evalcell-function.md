@@ -4,19 +4,19 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4aa3a1c9-dec9-5eb0-5743-0534c0b3bb5f
-description: Verwendet einen Verweis auf eine Zelle, die eine benutzerdefinierte Funktion enthält, sowie ein oder mehrere Name-Wert-Paare, die als Argumente an die benutzerdefinierte Funktion übergeben werden (optional). Gibt das berechnete Ergebnis der benutzerdefinierten Funktion mit den angegebenen Argumenten und Werten zurück.
-ms.openlocfilehash: 4ad6645862d620a36b90e4f46d09588d7e83fcc1
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Verwendet einen Verweis auf eine Zelle, die eine benutzerdefinierte Funktion enthält, sowie ein oder mehrere Name-Wert-Paare, die als Argumente an die benutzerdefinierte Funktion übergeben werden (optional). Gibt das berechnete Ergebnis der benutzerdefinierten Funktion zurück, wenn die angegebenen Argumente und Werte angegeben werden.
+ms.openlocfilehash: 17378fee5d2e0abdaece930d3f454871989a997f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33418904"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59574293"
 ---
 # <a name="evalcell-function"></a>EVALCELL Function
 
-Verwendet einen Verweis auf eine Zelle, die eine benutzerdefinierte Funktion enthält, sowie ein oder mehrere Name-Wert-Paare, die als Argumente an die benutzerdefinierte Funktion übergeben werden (optional). Gibt das berechnete Ergebnis der benutzerdefinierten Funktion mit den angegebenen Argumenten und Werten zurück.
+Verwendet einen Verweis auf eine Zelle, die eine benutzerdefinierte Funktion enthält, sowie ein oder mehrere Name-Wert-Paare, die als Argumente an die benutzerdefinierte Funktion übergeben werden (optional). Gibt das berechnete Ergebnis der benutzerdefinierten Funktion zurück, wenn die angegebenen Argumente und Werte angegeben werden.
   
 ## <a name="syntax"></a>Syntax
 
@@ -28,15 +28,15 @@ EVALCELL(** *cellRef* **,[ ** *arg1Name,arg1* ** ],[ ** *arg2Name,arg2* ** ],...
 |:-----|:-----|:-----|:-----|
 | _cellRef_ <br/> |Erforderlich  <br/> |**String** <br/> |Ein Bezug auf die Zelle, die die benutzerdefinierte Funktion enthält. Tabellenübergreifende Bezüge sind zulässig.  <br/> |
 | _arg1Name_ <br/> |Optional  <br/> |**String** <br/> |Der Name des ersten Arguments, das an die benutzerdefinierte Funktion übergeben wird. Leerzeichen sind zulässig.  <br/> |
-| _arg1_ <br/> |Optional.  <br/> |**Variiert** <br/> |Wert des _arg1-Parameters._  <br/> |
+| _arg1_ <br/> |Optional  <br/> |**Variiert** <br/> |Wert des _arg1-Parameters._  <br/> |
 | _arg2Name_ <br/> |Optional  <br/> |**String** <br/> |Der Name des zweiten Arguments, das an die benutzerdefinierte Funktion übergeben werden soll. Leerzeichen sind zulässig.  <br/> |
-| _arg2_ <br/> |Optional.  <br/> |**Variiert** <br/> |Wert des _arg2-Parameters._  <br/> |
+| _arg2_ <br/> |Optional  <br/> |**Variiert** <br/> |Wert des _arg2-Parameters._  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
-Nummer
+Zahl
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 In der aufrufenden Zelle muss nicht jedes von der benutzerdefinierten Funktion verwendete Argument angegeben werden. 
   

@@ -4,34 +4,34 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 36acb95d-5d3b-4d8b-9b6c-effbc78c84c2
-description: Bestimmt, ob die auf die Seite oder Form angewendete Designvariation als boolescher Wert geändert werden kann.
-ms.openlocfilehash: 69c991e3da7a96d6c59dc825dfb78fdad3d432e7
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Bestimmt, ob die auf die Seite oder form angewendete Designvariante als boolescher Wert geändert werden kann.
+ms.openlocfilehash: eac661fd88e53fa42999ba5e1e23af8bc113e4bf
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33427927"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573922"
 ---
 # <a name="lockvariation-cell-protection-section"></a>Zelle "LockVariation" (Abschnitt "Protection")
 
-Bestimmt, ob die auf die Seite oder Form angewendete Designvariation als boolescher Wert geändert werden kann.
+Bestimmt, ob die auf die Seite oder form angewendete Designvariante als boolescher Wert geändert werden kann.
   
 |||
 |:-----|:-----|
-|TRUE  <br/> |Die aktuelle Variation, die auf die Seite oder Form angewendet wird, kann nicht geändert werden.  <br/> |
-|FALSE  <br/> |Die Variation der Seite oder Form kann geändert werden.  <br/> |
+|TRUE  <br/> |Die aktuelle Abweichung, die auf das Zeichenblatt oder die Form angewendet wird, kann nicht geändert werden.  <br/> |
+|FALSE  <br/> |Die Variation des Zeichenblatts oder der Form kann geändert werden.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Verwenden Sie zum Erhalten eines Verweises auf die **Zelle LockVariation** anhand des Namens aus einer anderen Formel, nach dem Wert des **N-Attributs** eines **Cell-Elements** oder aus einem Programm mit der **CellsU-Eigenschaft:** 
+Um einen Verweis auf die **Zelle "LockVariation"** anhand des Namens aus einer anderen Formel, anhand des Werts des **N-Attributs** eines **Cell-Elements** oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | LockVariation  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die **LockVariation-Zelle** nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle **LockVariation** anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

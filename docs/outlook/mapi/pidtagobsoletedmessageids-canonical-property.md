@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagObsoletedMessageIds
 api_type:
 - HeaderDef
 ms.assetid: bc979398-f1ad-4496-b982-428b95719369
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1f00a57798b03edb368fb0dc59fead7a2e9f5c8f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c750c01dcbb5453a126c1d19f80e03275e4ad617
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33416111"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59560795"
 ---
 # <a name="pidtagobsoletedmessageids-canonical-property"></a>PidTagObsoletedMessageIds (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "33416111"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält die Bezeichner von Nachrichten, die durch diese Nachricht ersetzt werden.
+Enthält die Bezeichner von Nachrichten, die diese Nachricht ersetzt.
   
 |||
 |:-----|:-----|
@@ -34,9 +34,9 @@ Enthält die Bezeichner von Nachrichten, die durch diese Nachricht ersetzt werde
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Server  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die in dieser Eigenschaft enthaltenen Bezeichner sind Standardsuchschlüssel, die das Format der **PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md)) -Eigenschaft verwenden.
+Bei den bezeichnern, die in dieser Eigenschaft enthalten sind, handelt es sich um Standardsuchschlüssel, die das Format der **Eigenschaft PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md)) verwenden.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,11 +44,11 @@ Die in dieser Eigenschaft enthaltenen Bezeichner sind Standardsuchschlüssel, di
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

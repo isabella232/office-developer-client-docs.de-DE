@@ -4,15 +4,15 @@ manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 57965c84-7a52-4d7c-9c7f-be3d4570576d
 description: Die SetReturnVar-Aktion erstellt eine Rückgabevariable und legt sie auf einen bestimmten Wert fest.
-ms.openlocfilehash: 29445f5021bed99fe45cee1d34457f1f91ca417d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 0560ec9b1d4adbe215e5c187bcc1135c605b3ee9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33409594"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614745"
 ---
 # <a name="setreturnvar-macro-action-access-custom-web-app"></a>SetReturnVar-Makroaktion (benutzerdefinierte Access-Web-App)
 
@@ -24,7 +24,7 @@ Die **SetReturnVar-Aktion** erstellt eine Rückgabevariable und legt sie auf ein
 > [!NOTE]
 > Die **SetReturnVar-Aktion** ist nur in Datenmakros verfügbar. 
   
-## <a name="setting"></a>Setting
+## <a name="setting"></a>Einstellung
 
 Die **SetReturnVar-Aktion** hat die folgenden Argumente. 
   
@@ -37,7 +37,7 @@ Die **SetReturnVar-Aktion** hat die folgenden Argumente.
 
 Die **SetReturnVar-Aktion** wird verwendet, um eine **ReturnVar**-Variable zu erstellen, die von Makros verwendet werden kann, die ein Datenmakro mithilfe der **RunDataMacro-Aktion** aufrufen. 
   
-Nachdem ein **ReturnVar durch** die **SetReturnVar-Aktion** erstellt wurde, kann das aufrufende Makro es in einem Ausdruck verwenden. Wenn Sie beispielsweise ein **ReturnVar** namens **UpdateSuccess** erstellt haben, können Sie die Variable mithilfe der folgenden Syntax verwenden:
+Nachdem ein **ReturnVar** durch die **SetReturnVar-Aktion** erstellt wurde, kann es vom aufrufenden Makro in einem Ausdruck verwendet werden. Wenn Sie beispielsweise einen **ReturnVar** mit dem Namen **UpdateSuccess** erstellt haben, können Sie die Variable mit der folgenden Syntax verwenden:
   
 `=[ReturnVars]![UpdateSuccess]`
 

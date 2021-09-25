@@ -4,19 +4,19 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a637dcab-81e0-4195-a1d5-61d9957fcf10
-description: Zeigt entweder das Dialogfeld Konto Einstellungen oder Das Dialogfeld Neues Konto hinzufügen an.
-ms.openlocfilehash: ecf5242fa4f224516e12e667ab66fd0adfe4a25d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Zeigt das Dialogfeld Konto Einstellungen oder Neues Konto hinzufügen an.
+ms.openlocfilehash: 22a9165fa5cd29e0f9da9de64c243806e6fb1712
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33415033"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59561922"
 ---
 # <a name="iolkaccountmanagerdisplayaccountlist"></a>IOlkAccountManager::DisplayAccountList
 
-Zeigt entweder **das** Einstellungen **oder das Dialogfeld Neues Konto** hinzufügen an. 
+Zeigt das Dialogfeld **Konto Einstellungen** oder **Neues Konto hinzufügen** an. 
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -38,17 +38,17 @@ HRESULT IOlkAccountManager::DisplayAccountList (
 
 _hwnd_
   
-> [in] Das Handle zu dem Fenster, zu dem das angezeigte Dialogfeld modal ist. Kann null sein.
+> [in] Das Handle für das Fenster, an das das angezeigte Dialogfeld gebunden ist. Kann Null sein.
     
-_dwFlags_
+_Dwflags_
   
-> [in] Flags zum Ändern des Anzeigeverhaltens. 
+> [in] Kennzeichen zum Ändern des Verhaltens der Anzeige. 
     
-   - **ACCTUI_NO_WARNING**– Zeigen Sie die Warnung nicht an, dass Änderungen erst wirksam werden, wenn Outlook neu gestartet wird. Gilt nur, wenn die Anwendung mit einem Outlook.exe.
+   - **ACCTUI_NO_WARNING**: Zeigen Sie nicht die Warnung an, dass Änderungen erst wirksam werden, wenn Outlook neu gestartet wird. Gilt nur, wenn die Anwendung innerhalb des Prozesses mit Outlook.exe ausgeführt wird.
     
-   - **ACCTUI_SHOW_DATA_TAB**– Zeigt das Dialogfeld **Konto Einstellungen,** wenn die Registerkarte **Daten** ausgewählt ist. Nur gültig, **ACCTUI_SHOW_ACCTWIZARD** nicht festgelegt ist. 
+   - **ACCTUI_SHOW_DATA_TAB**- Zeigt das Dialogfeld **"Konto Einstellungen"** an, in dem die Registerkarte **"Daten"** ausgewählt ist. Nur gültig, wenn **ACCTUI_SHOW_ACCTWIZARD** nicht festgelegt ist. 
     
-   - **ACCTUI_SHOW_ACCTWIZARD**– Zeigt das **Dialogfeld Neues Konto** hinzufügen an. 
+   - **ACCTUI_SHOW_ACCTWIZARD**: Zeigt das Dialogfeld **"Neues Konto hinzufügen"** an. 
     
 _wszTitle_
   
@@ -70,15 +70,15 @@ _pclsidType_
 
 |**[HRESULT]**|**Description**|
 |:-----|:-----|
-|S_OK  <br/> |Der Aufruf war erfolgreich.  <br/> |
+|S_OK  <br/> |Der Anruf war erfolgreich.  <br/> |
 |E_ACCT_UI_BUSY  <br/> |Das Dialogfeld konnte nicht erstellt werden.  <br/> |
 |E_OLK_NOT_INITIALIZED  <br/> |Konto-Manager wurde nicht für die Verwendung initialisiert.  <br/> |
-|MAPI_E_CALL_FAILED  <br/> |Im **Dialogfeld Neues Konto** hinzufügen wurde ein Fehler zurückgegeben.  <br/> |
-|MAPI_E_INVALID_PARAMETER  <br/> |Der  _Parameter cCategories_,  _rgclsidCategories_ oder  _pclsidType_ ist nicht NULL.  <br/> |
-|MAPI_E_USER_CANCEL  <br/> |Im **Einstellungen** Dialogfeld Konto wurde ein Fehler zurückgegeben.  <br/> |
+|MAPI_E_CALL_FAILED  <br/> |Im Dialogfeld **"Neues Konto hinzufügen" wurde** ein Fehler zurückgegeben.  <br/> |
+|MAPI_E_INVALID_PARAMETER  <br/> |Der  _Parameter "cCategories",_  _"rgclsidCategories"_ oder  _"pclsidType"_ ist ungleich NULL.  <br/> |
+|MAPI_E_USER_CANCEL  <br/> |Im Dialogfeld **Konto Einstellungen** wurde ein Fehler zurückgegeben.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die  _Parameter cCategories,_  _rgclsidCategories_ und  _pclsidType_ werden derzeit nicht verwendet und müssen NULL sein.  _wszTitle_ wird nicht verwendet und sollte auch NULL sein. 
+Die Parameter  _"cCategories",_  _"rgclsidCategories"_ und  _"pclsidType"_ werden derzeit nicht verwendet und müssen NULL sein.  _wszTitle_ wird nicht verwendet und sollte auch NULL sein. 
   
 

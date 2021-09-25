@@ -6,31 +6,31 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm60051
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 815e0df8-5ebf-ef1b-d620-bce8abb69f1a
 description: Gibt die Sprache an, in der Zellformeln erstellt wurden.
-ms.openlocfilehash: e1e5b92f01e97bc63003a4b195c159a50f61e77b
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: df8a612bf68917fca5cb960e9beb089531a7ae8f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33406675"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59628038"
 ---
 # <a name="langid-cell-miscellaneous-section"></a>Zelle "LangID" (Abschnitt "Miscellaneous")
 
 Gibt die Sprache an, in der Zellformeln erstellt wurden. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Liste der von Microsoft Office-Anwendungen unterstützten Sprachen finden Sie im Thema [Zelle "DocLangID"](doclangid-cell-document-properties-section.md) (Abschnitt "Document Properties"). 
   
-Um einen Verweis auf die LangID-Zelle anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Verwenden Sie Folgendes, um einen Verweis auf die Zelle "LangID" anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | LangID  <br/> |
+| Zellenname:  <br/> | Langid  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die LangID-Zelle nach Index aus einem Programm zu erhalten: 
+Um einen Verweis auf die Zelle "LangID" anhand des Indexes eines Programms abzurufen, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|

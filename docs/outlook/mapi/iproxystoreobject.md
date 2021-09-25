@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IProxyStoreObject
 api_type:
 - COM
 ms.assetid: 567bede4-39a3-bfb4-af85-ba678e2cf4a5
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 485d3f3cd4b6be4748a2ebf2ba0d0b71f691478f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 3dad9c850c4564fd1af206df23dc3cd621ea60ac
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32315519"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596029"
 ---
 # <a name="iproxystoreobject"></a>IProxyStoreObject
 
@@ -25,28 +25,28 @@ ms.locfileid: "32315519"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Stellt ein ImAP-Speicherobjekt (Internet Message Access Protocol) bereit, das entpackt wurde und den Zugriff auf Elemente in der Pst -Datei (Personal Folders) ermöglicht, ohne die Synchronisierung aufrufen und die Elemente herunterladen zu müssen.
+Stellt ein IMAP-Speicherobjekt (Internet Message Access Protocol) bereit, das entpackt wurde und den Zugriff auf Elemente in der Persönliche Ordner-Datei (PST) ermöglicht, ohne die Synchronisierung aufzugreifen und die Elemente herunterzuladen.
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
 |Geerbt von:  <br/> |[IUnknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx) <br/> |
-|Bereitgestellt von:  <br/> |Anbieter des Nachrichtenspeichers  <br/> |
+|Bereitgestellt von:  <br/> |Nachrichtenspeicheranbieter  <br/> |
 |Schnittstellenbezeichner:  <br/> |**IID_IProxyStoreObject** <br/> |
    
-## <a name="vtable-order"></a>Vtable-Reihenfolge
+## <a name="vtable-order"></a>VTable-Reihenfolge
 
 |||
 |:-----|:-----|
-| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
-|[IProxyStoreObject::UnwrapNoRef](iproxystoreobject-unwrapnoref.md) <br/> |Ruft einen Zeiger auf einen nicht ausgepackten IMAP-Speicher ab.  <br/> |
-| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+|[IProxyStoreObject::UnwrapNoRef](iproxystoreobject-unwrapnoref.md) <br/> |Ruft einen Zeiger auf einen nicht gepackten IMAP-Speicher ab.  <br/> |
+| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Rufen [Sie IUnknown::QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx) im Quellnachrichtenspeicher auf, um die **IProxyStoreObject-Schnittstelle abzurufen.** Rufen Sie **dann IProxyStoreObject::UnwrapNoRef auf,** um das entpackte Speicherobjekt abzurufen. Wenn **QueryInterface** den Fehler **MAPI_E_INTERFACE_NOT_SUPPORTED** zurückgibt, wurde der Speicher nicht umschlossen. 
+Rufen Sie [IUnknown::QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx) im Quellnachrichtenspeicher auf, um die **IProxyStoreObject-Schnittstelle** abzurufen. Rufen Sie dann **IProxyStoreObject::UnwrapNoRef** auf, um das nicht gepackte Store-Objekt abzurufen. Wenn **QueryInterface** den Fehler **MAPI_E_INTERFACE_NOT_SUPPORTED** zurückgibt, wurde der Speicher nicht umbrochen. 
   
-Da **UnwrapNoRef** die Referenzanzahl für diesen neuen Zeiger nicht auf das nicht mehr ausgepackte Speicherobjekt erhöht, sollten Sie nach dem erfolgreichen Aufruf von **UnwrapNoRef** [IUnknown::AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) aufrufen, um die Referenzanzahl zu verwalten. 
+Da **UnwrapNoRef** die Referenzanzahl für diesen neuen Zeiger nicht auf das unwrappede Speicherobjekt erhöht, sollten Sie nach dem erfolgreichen Aufrufen von **"UnwrapNoRef"** [IUnknown::AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) aufrufen, um die Referenzanzahl beizubehalten. 
   
 

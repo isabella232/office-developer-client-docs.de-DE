@@ -1,20 +1,20 @@
 ---
-title: Recordset-, SourceRecordset-Eigenschaften (RDS)
+title: Recordset-, SourceRecordset-Eigenschaft (RDS)
 TOCTitle: Recordset, SourceRecordset properties (RDS)
 ms:assetid: 5f4bb72d-ddfa-41c0-c353-b3a6632b4a91
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249345(v=office.15)
 ms:contentKeyID: 48545160
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: f83ab385b1fab511ab71ea9ff3456fe466efa17c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7bd0518334f17b29a835412f95e8911887dd4e73
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307588"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585382"
 ---
-# <a name="recordset-sourcerecordset-properties-rds"></a>Recordset-, SourceRecordset-Eigenschaften (RDS)
+# <a name="recordset-sourcerecordset-properties-rds"></a>Recordset-, SourceRecordset-Eigenschaft (RDS)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -24,7 +24,7 @@ Gibt das **Recordset**-Objekt an, das von einem benutzerdefinierten Geschäftsob
 
 *DataControl*. SourceRecordset = *Recordset*
 
-*Recordset* = *DataControl*. Recordset
+*Recordset*  =  *DataControl*. Recordset
 
 ## <a name="parameters"></a>Parameter
 
@@ -33,7 +33,7 @@ Gibt das **Recordset**-Objekt an, das von einem benutzerdefinierten Geschäftsob
 |*DataControl* |Eine Objektvariable, die ein [RDS.DataControl](datacontrol-object-rds.md)-Objekt darstellt.|
 |*Recordset* |Eine Objektvariable, die ein **Recordset**-Objekt darstellt.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Sie können die **SourceRecordset** -Eigenschaft auf ein [Recordset](recordset-object-ado.md) festlegen, das von einem benutzerdefinierten Geschäftsobjekt zurückgegeben wird.
 

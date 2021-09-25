@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251758
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7e47acfe-5ec0-3689-eb89-0168f596a739
-description: Enthält die x- und y-Koordinaten, die Position des vorletzten Knotens, die Position der letzten Gewichtung, die Position des ersten Knotens, die Position der ersten Gewichtung und die Formel für einen nichtuniformierten rationalen B-Spline (NURBS).
-ms.openlocfilehash: a5fc83f9581277580d076c2a850bfe937602aef0
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Enthält die x- und y-Koordinaten, die Position des zweiten bis letzten Knotens, die Position der letzten Gewichtung, die Position des ersten Knotens, die Position der ersten Gewichtung und die Formel für einen nicht fähigen rationalen B-Spline (NURBS).
+ms.openlocfilehash: 82de180eb691b86dae678c4de71a5eaaf4b36d2f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404715"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573824"
 ---
 # <a name="nurbsto-row-geometry-section"></a>Zeile "NURBSTo" (Abschnitt "Geometry")
 
-Enthält die  *x-*  und  *y-Koordinaten,*  die Position des vorletzten Knotens, die Position der letzten Gewichtung, die Position des ersten Knotens, die Position der ersten Gewichtung und die Formel für einen nichtuniformierten rationalen B-Spline (NURBS). 
+Enthält die  *x-*  und  *y-Koordinaten,*  die Position des zweiten bis letzten Knotens, die Position der letzten Gewichtung, die Position des ersten Knotens, die Position der ersten Gewichtung und die Formel für einen nicht fähigen rationalen B-Spline (NURBS). 
   
 Eine Zeile NURBSTo enthält folgende Zellen.
   
@@ -32,7 +32,7 @@ Eine Zeile NURBSTo enthält folgende Zellen.
 |[D](d-cell-geometry-section.md) <br/> |Die erste Stärke des NURBS.  <br/> |
 |[E](e-cell-geometry-section.md) <br/> |Die Formel für einen NURBS.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Ein NURBS ist eine gängige Methode, mit der Sie eine Kurve mathematisch darstellen können. Sie können einen NURBS mit dem Tool **Freihand** erstellen. 
   

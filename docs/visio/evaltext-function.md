@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251422
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c9b5b96c-d8c8-6119-e3f1-a2ce9d7c043e
-description: Wertet den Text in shapename so aus, als wäre es eine Formel und gibt das Ergebnis zurück.
-ms.openlocfilehash: 6600d9d6ddaf630a93fdb5c37639ce50a21a4307
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Wertet den Text in Formname so aus, als wäre er eine Formel und gibt das Ergebnis zurück.
+ms.openlocfilehash: 2ba21cc55ea24144396fe4ef029b9a3e1014484a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33438358"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59574300"
 ---
 # <a name="evaltext-function"></a>EVALTEXT Function
 
-Wertet den Text in  _shapename_ so aus, als wäre es eine Formel und gibt das Ergebnis zurück. 
+Wertet den Text in  _Formname_ so aus, als wäre er eine Formel und gibt das Ergebnis zurück. 
   
 ## <a name="syntax"></a>Syntax
 
@@ -34,7 +34,7 @@ EVALTEXT(** *shapename!theText* ** )
 
 Zeichenfolge
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
  Mit _shapename_ kann auf den Text eines anderen Shapes (statt auf den Text des aktuellen Shapes) verwiesen werden. 
   

@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249557(v=office.15)
 ms:contentKeyID: 48545952
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 96ddc7fc1a93543f0eea2b42a3d423ec25a00636
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 6008fd30e9ea43cc820322018eba36b33e55d463
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300903"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615172"
 ---
 # <a name="record-object-ado"></a>Record-Objekt (ADO)
 
@@ -38,7 +38,7 @@ Eine Ressource (z. B. eine Datei oder ein Verzeichnis) kann durch eine absolute 
 Die Methoden der Datenänderung und Navigation des **Record** -Objekts akzeptieren auch eine relative URL, die eine Ressource mithilfe einer absoluten URL oder des **Connection** -Objektkontexts als Startpunkt suchen.
 
 > [!NOTE]
-> [!HINWEIS] Bei URLs, die das HTTP-Schema verwenden, wird automatisch der [Microsoft OLE DB-Anbieter für Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) aufgerufen. Weitere Informationen finden Sie unter [absolute und relative URLs](absolute-and-relative-urls.md).
+> [!HINWEIS] Bei URLs, die das HTTP-Schema verwenden, wird automatisch der [Microsoft OLE DB-Anbieter für Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) aufgerufen. Weitere Informationen finden Sie unter [Absolute und relative URLs.](absolute-and-relative-urls.md)
 
 
 

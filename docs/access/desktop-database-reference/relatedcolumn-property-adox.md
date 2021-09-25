@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249791(v=office.15)
 ms:contentKeyID: 48546955
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 0d3f86136d8dd376b444083430557729c11ec473
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4431a05b3b3e7e8b0300419c1d0b33832ced3aba
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309139"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585347"
 ---
 # <a name="relatedcolumn-property-adox"></a>RelatedColumn-Eigenschaft (ADOX)
 
@@ -25,7 +25,7 @@ Gibt den Namen der verknüpften Spalte in der verknüpften Tabelle (nur Schlüss
 
 Legt einen **String**-Wert fest bzw. gibt diesen zurück. Der Wert ist der Name der verknüpften Spalte in der verknüpften Tabelle.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Standardwert ist eine leere Zeichenfolge ("").
 

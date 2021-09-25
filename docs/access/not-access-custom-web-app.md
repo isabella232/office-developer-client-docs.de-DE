@@ -1,20 +1,20 @@
 ---
-title: NOT (Benutzerdefinierte Web-App zugreifen)
+title: NOT (Benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f0f0a65f-5248-4d7c-a4a4-a0cc863b15ec
 description: Negiert eine boolesche Eingabe.
-ms.openlocfilehash: b910613a7bf08c79c2f66a417b5faec4886cb8d7
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 66706d870961910e7d2544c7eaa2a942528d4d07
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33430721"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614766"
 ---
-# <a name="not-access-custom-web-app"></a>NOT (Benutzerdefinierte Web-App zugreifen)
+# <a name="not-access-custom-web-app"></a>NOT (Benutzerdefinierte Access-Web-App)
 
 Negiert eine boolesche Eingabe.
   
@@ -25,19 +25,19 @@ Negiert eine boolesche Eingabe.
 
 [ **Nicht** ]  *BooleanExpression* 
   
-Der **Not-Operator** enthält die folgenden Argumente. 
+Der **Operator "Not"** enthält die folgenden Argumente. 
   
 |**Argumentname**|**Beschreibung**|
 |:-----|:-----|
 | *BooleanExpression*  <br/> |Ein gültiger boolescher Ausdruck.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-In der folgenden Tabelle sind die Ergebnisse des Vergleichs von TRUE- und FALSE-Werten mit dem **Not-Operator** aufgeführt. 
+Die folgende Tabelle zeigt die Ergebnisse des Vergleichens von TRUE- und FALSE-Werten mithilfe des **Operators "Not".** 
   
 ||**not**|
 |:-----|:-----|
-|**TRUE** <br/> |Falsch  <br/> |
-|**FALSE** <br/> |Wahr  <br/> |
+|**STIMMT** <br/> |False  <br/> |
+|**FALSE** <br/> |Richtig  <br/> |
    
 

@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251666
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 90701ecf-3d34-2eac-9ee9-7965e16c0f7c
 description: Legt fest, ob ein Verbinder vertikal durch ein Shape geleitet werden kann.
-ms.openlocfilehash: 62f8bfa0fdfb5c483836f344e8b784dc9092fded
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c4625eadf2d9729c08204eac6d6d12b9b7f69408
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33417518"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573355"
 ---
 # <a name="shapepermeabley-cell-shape-layout-section"></a>Zelle "ShapePermeableY" (Abschnitt "Shape Layout")
 
@@ -25,19 +25,19 @@ Legt fest, ob ein Verbinder vertikal durch ein Shape geleitet werden kann.
 |TRUE  <br/> |Verbinder können vertikal durch ein Shape geleitet werden.  <br/> |
 |FALSE  <br/> |Verbinder können nicht vertikal durch ein Shape geleitet werden.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Sie können den Wert dieser Zelle auch auf der Registerkarte Platzierung im Dialogfeld [](run-in-developer-mode-display-the-developer-tab.md) Verhalten festlegen (wenn eine Form ausgewählt ist, klicken  Sie auf der Registerkarte Entwickler in der Gruppe **Shape-Entwurf** auf **Verhalten,** und klicken Sie dann auf die Registerkarte Platzierung).   
+Sie können den Wert dieser Zelle auch auf der Registerkarte **Platzierung** im Dialogfeld **Verhalten** festlegen (bei ausgewähltem Shape auf der Registerkarte Entwicklertools in der Gruppe Shape-Design klicken Sie auf Verhalten und anschließend auf die Registerkarte **Platzierung).** [](run-in-developer-mode-display-the-developer-tab.md)   
   
 In Versionen vor Visio 2000 wird dieses Verhalten in der Zelle ObjInterakt im Abschnitt Miscellaneous festgelegt.
   
-Um einen Verweis auf die Zelle ShapePermeableY anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Verwenden Sie Folgendes, um einen Verweis auf die Zelle ShapePermeableY anhand des Namens einer anderen Formel oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |ShapePermeableY  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle ShapePermeableY nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle ShapePermeableY anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

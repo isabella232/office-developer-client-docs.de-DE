@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251489
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f6b9f65c-6752-16cb-7eb1-44e1ce56e80b
-description: Gibt einen Wert zurück, der einen Index in der Farbpalette des Dokuments darstellt. Es gibt eine Farbe durch seine roten, grünen und blauen Komponenten an, wobei jede eine Zahl im Bereich von 0 bis einschließlich 255 oder ein Ausdruck ist, der zu einer solchen Zahl ausgewertet wird.
-ms.openlocfilehash: 34f9c2f2043afe6144feba561e545dc7be35a5a2
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Gibt einen Wert zurück, der einen Index in der Farbpalette des Dokuments darstellt. Es gibt eine Farbe anhand ihrer roten, grünen und blauen Komponenten an, wobei jede eine Zahl im Bereich von 0 bis einschließlich 255 oder ein Ausdruck ist, der zu einer solchen Zahl ausgewertet wird.
+ms.openlocfilehash: 9705d0e4c881a2d98e176a9982bbc7a95140755c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33426303"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573523"
 ---
 # <a name="rgb-function-visioshapesheet"></a>RGB-Funktion (VisioShapeSheet)
 
-Gibt einen Wert zurück, der einen Index in der Farbpalette des Dokuments darstellt. Es gibt eine Farbe durch seine roten, grünen und blauen Komponenten an, wobei jede eine Zahl im Bereich von 0 bis einschließlich 255 oder ein Ausdruck ist, der zu einer solchen Zahl ausgewertet wird. 
+Gibt einen Wert zurück, der einen Index in der Farbpalette des Dokuments darstellt. Es gibt eine Farbe anhand ihrer roten, grünen und blauen Komponenten an, wobei jede eine Zahl im Bereich von 0 bis einschließlich 255 oder ein Ausdruck ist, der zu einer solchen Zahl ausgewertet wird. 
   
 ## <a name="syntax"></a>Syntax
 
@@ -28,15 +28,15 @@ RGB(** *red* **, ** *green* **, ** *blue* ** )
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _red_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die Rotkomponente.  <br/> |
-| _grün_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die Grünkomponente.  <br/> |
-| _blue_ <br/> |Erforderlich  <br/> |**Nmber** <br/> |Die Blaukomponente.  <br/> |
+| _Rot_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die Rotkomponente.  <br/> |
+| _Grün_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die Grünkomponente.  <br/> |
+| _Blau_ <br/> |Erforderlich  <br/> |**Nmber** <br/> |Die Blaukomponente.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
-Nummer
+Zahl
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn die durch die Funktion zurückgegebene Farbe nicht bereits in der Farbpalette des aktuellen Dokuments vorhanden ist, wird sie in diese eingefügt.
   
@@ -44,7 +44,7 @@ Die folgende Tabelle listet einige Standardfarben mit ihren Rot-, Grün- und Bla
   
 |**Color**|**Rotwert**|**Grünwert**|**Blauwert**|
 |:-----|:-----|:-----|:-----|
-|Schwarz  <br/> |0  <br/> |0  <br/> |0  <br/> |
+|Black  <br/> |0  <br/> |0  <br/> |0  <br/> |
 |Blau  <br/> |0  <br/> |0  <br/> |255  <br/> |
 |Grün  <br/> |0  <br/> |255  <br/> |0  <br/> |
 |Cyan  <br/> |0  <br/> |255  <br/> |255  <br/> |

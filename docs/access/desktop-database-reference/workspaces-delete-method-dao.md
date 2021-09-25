@@ -1,20 +1,20 @@
 ---
-title: Workspaces. Delete-Methode (DAO)
+title: Workspaces.Delete-Methode (DAO)
 TOCTitle: Delete Method
 ms:assetid: 0774a791-63da-a31a-552a-c5aa4d1f1b50
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff844977(v=office.15)
 ms:contentKeyID: 48543078
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 68a4583fd96682622476f523e6e5d6129b3be575
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 24410b0c39c422c72887c5435b20ff29818c4fcc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308309"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572501"
 ---
-# <a name="workspacesdelete-method-dao"></a>Workspaces. Delete-Methode (DAO)
+# <a name="workspacesdelete-method-dao"></a>Workspaces.Delete-Methode (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -22,9 +22,9 @@ Löscht das angegebene **Workspace**-Objekt aus der **Workspaces**-Auflistung.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Delete (***Name***)
+*Ausdruck* . Delete(***Name***)
 
-*Ausdruck* Eine Variable, die ein **Workspaces** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Workspaces-Objekt** darstellt.
 
 ## <a name="parameters"></a>Parameter
 

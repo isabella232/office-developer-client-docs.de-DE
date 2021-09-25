@@ -10,13 +10,13 @@ f1_keywords:
 - dao360.chm1053063
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 630efdc4da5a9064f9dd9055e3ceabc0283d6d5f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 14c5247d458bb2fb1c18f529bac38cc132e31765
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307581"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585389"
 ---
 # <a name="recordsetsort-property-dao"></a>Recordset.Sort-Eigenschaft (DAO)
 
@@ -38,7 +38,7 @@ Wenn Sie diese Eigenschaft für ein Objekt festlegen, findet die Sortierung bei 
 
 Standardmäßig ist die aufsteigende Sortierreihenfolge (A bis Z oder 0 bis 100) festgelegt.
 
-Die **Sort** gilt nicht für **Recordset**-Objekte vom Typ „Tabelle“ oder „Nur weiterleiten“. Verwenden Sie zum Sortieren eines **Recordset**-Objekts vom Typ „Tabelle“ die **[Index](recordset-index-property-dao.md)**-Eigenschaft.
+Die **Sort**-Eigenschaft gilt nicht für **Recordset**-Objekte vom Typ „Tabelle“ oder „Vorwärts“. Verwenden Sie zum Sortieren eines **Recordset**-Objekts vom Typ „Tabelle“ die **[Index](recordset-index-property-dao.md)**-Eigenschaft.
 
 > [!NOTE]
 > In vielen Fällen ist geht schneller, ein neues **Recordset**-Objekt mithilfe einer SQL-Anweisung zu öffnen, die die Sortierkriterien enthält.

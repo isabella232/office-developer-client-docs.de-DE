@@ -6,31 +6,31 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm1033788
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 02835aff-455b-ffeb-d53b-28387b6ce361
-description: Gibt den Prozentsatz der Vergrößerung des Zeichenblatts auf der Druckerseite an.
-ms.openlocfilehash: 0f8e86675a039002b60438eac7df92f4a2b13b98
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Gibt den Prozentsatz der Vergrößerung des Zeichenblatts auf dem Druckerblatt an.
+ms.openlocfilehash: d4a84ef5a7d9d158ec64bab61cc18ffa6c794b97
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33406990"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573425"
 ---
 # <a name="scaley-cell-print-properties-section"></a>Zelle "ScaleY" (Abschnitt "Print Properties")
 
-Gibt den Prozentsatz der Vergrößerung des Zeichenblatts auf der Druckerseite an.
+Gibt den Prozentsatz der Vergrößerung des Zeichenblatts auf dem Druckerblatt an.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Dieser Wert wird nur verwendet, wenn der OnPage-Zellwert FALSE ist. Die Zellen ScaleX und ScaleY haben immer denselben Wert, der dem  Wert in  der Einstellung Anpassen an  auf der Registerkarte Setup drucken im Dialogfeld Seiteneinrichtung entspricht (klicken Sie auf der Registerkarte Entwurf auf den Pfeil Seite **einrichten).**  
+Dieser Wert wird nur verwendet, wenn der OnPage-Zellwert FALSE ist. Die Zellen "ScaleX" und "ScaleY" haben immer denselben Wert, der dem Wert in der Einstellung **"Anpassen an"** auf der Registerkarte **"Druckeinrichtung"** im Dialogfeld **"Seite einrichten"** entspricht (klicken Sie auf der Registerkarte **"Entwurf"** auf den Pfeil neben **"Seite einrichten").** 
   
-Um einen Verweis auf die Zelle ScaleY anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Um einen Verweis auf die Zelle ScaleY anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |ScaleY  <br/> |
+|Zellenname:  <br/> |Scaley  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle ScaleY nach Index aus einem Programm zu erhalten: 
+Um einen Verweis auf die Zelle ScaleY anhand des Indexes aus einem Programm abzurufen, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|

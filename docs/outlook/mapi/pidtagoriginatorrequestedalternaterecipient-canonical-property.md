@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagOriginatorRequestedAlternateRecipient
 api_type:
 - COM
 ms.assetid: c85b7862-18bc-4e17-94db-9097e0ac4a02
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 45cd0e8a95f908d7ef56d03b3ecab5d5df5bcae1
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 6f98a7cc97cae1fe548d079af0cad92b5f8e7a78
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33437861"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59560774"
 ---
 # <a name="pidtagoriginatorrequestedalternaterecipient-canonical-property"></a>PidTagOriginatorRequestedAlternateRecipient (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "33437861"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine Eintrags-ID für einen alternativen Empfänger, der vom Absender angegeben wird.
+Enthält einen Eintragsbezeichner für einen alternativen Empfänger, der vom Absender festgelegt wurde.
   
 |||
 |:-----|:-----|
@@ -34,9 +34,9 @@ Enthält eine Eintrags-ID für einen alternativen Empfänger, der vom Absender a
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MIME  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft wird in automatischenForwarded-Nachrichten verwendet. Wenn die automatischeForwarding nicht zulässig ist oder kein alternativer Empfänger festgelegt wurde, sollte ein Nichtabnehmerbericht generiert werden.
+Diese Eigenschaft wird in automatisch verforsteten Nachrichten verwendet. Wenn die automatische Verforstung nicht zulässig ist oder kein alternativer Empfänger festgelegt wurde, sollte ein Nichtzustellbarkeitsbericht generiert werden.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,11 +44,11 @@ Diese Eigenschaft wird in automatischenForwarded-Nachrichten verwendet. Wenn die
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

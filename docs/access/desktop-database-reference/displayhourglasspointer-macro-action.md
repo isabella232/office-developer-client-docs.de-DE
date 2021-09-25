@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm117200
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: a5635b2b97066394b8596dbcdb50c84abf429719
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c0c6708acde1c9a50ae9a30ff8b1fce57e392605
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293833"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585732"
 ---
 # <a name="displayhourglasspointer-macro-action"></a>DisplayHourglassPointer-Makroaktion
 
@@ -43,15 +43,15 @@ Die **AnzeigenSanduhrzeiger**-Aktion hat das folgende Argument.
 <tbody>
 <tr class="odd">
 <td><p><strong>Sanduhr</strong></p></td>
-<td><p>Klicken Sie im Abschnitt <strong>Aktionsargumente</strong> des Bereichs Makro-Generator auf <strong>Ja</strong> (Symbol) oder <strong>Nein</strong> (zeigen Sie den normalen Mauszeiger) im Feld <strong>Sanduhr on</strong> im Bereich Action Arguments. Die Standardeinstellung ist <strong>Ja</strong>.</p></td>
+<td><p>Klicken Sie im Feld "Sanduhr ein" im Abschnitt <strong>"Aktionsargumente"</strong> im Bereich "Makro-Generator" <strong>auf</strong> <strong>"Ja"</strong> (Symbol anzeigen) oder <strong>"Nein"</strong> (normalen Mauszeiger anzeigen). Die Standardeinstellung ist <strong>Ja</strong>.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Sie verwenden diese Aktion häufig, wenn Sie das Echo mithilfe der **Echo** -Aktion deaktiviert haben. Wenn Echo deaktiviert ist, werden die Bildschirmaktualisierungen von Access angehalten, bis das Makro abgeschlossen ist.
+Sie verwenden diese Aktion häufig, wenn Sie das Echo mithilfe der **Echo** -Aktion deaktiviert haben. Wenn das Echo deaktiviert ist, hält Access Bildschirmaktualisierungen an, bis das Makro abgeschlossen ist.
 
 Access setzt das Argument **Sanduhr** automatisch auf **Nein** zurück, wenn die Makroausführung beendet ist.
 

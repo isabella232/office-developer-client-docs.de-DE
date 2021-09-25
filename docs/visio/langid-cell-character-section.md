@@ -6,36 +6,36 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm1033769
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c68289b8-ef45-9e1e-12ae-6613587e4990
 description: Gibt die Sprache an, in der der Text eingegeben wurde.
-ms.openlocfilehash: e1f244d6d8e31201576a9a88ace9701814b0e0a1
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 1cecd893d8c9b4d61e3fa5018ce9f3791fdd4913
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33419282"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59628045"
 ---
 # <a name="langid-cell-character-section"></a>Zelle "LangID" (Abschnitt "Character")
 
 Gibt die Sprache an, in der der Text eingegeben wurde. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Liste der von Microsoft Office-Anwendungen unterstützten Sprachen finden Sie im Thema [Zelle "DocLangID"](doclangid-cell-document-properties-section.md) (Abschnitt "Document Properties"). 
   
-Um einen Verweis auf die LangID-Zelle anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Verwenden Sie Folgendes, um einen Verweis auf die Zelle "LangID" anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Char.LangID[  *i*  ] wobei  *i*  = <1>, 2, 3...  <br/> |
+| Zellenname:  <br/> | Char.LangID[  *i*  ] where  *i*  = <1>, 2, 3...  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die LangID-Zelle nach Index aus einem Programm zu erhalten: 
+Um einen Verweis auf die Zelle "LangID" anhand des Indexes eines Programms abzurufen, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionCharacter** <br/> |
-| Zeilenindex:  <br/> |**visRowCharacter**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowCharacter**  +   *i* where *i* = 0, 1, 2...  <br/> |
 | Zeilenindex:  <br/> |**visCharacterLangID** <br/> |
    
 

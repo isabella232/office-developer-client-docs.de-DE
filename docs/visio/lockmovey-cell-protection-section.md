@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm645
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4ed8cab4-112a-e96a-f4e3-02490a6f87fa
 description: Sperrt die vertikale Position des Shapes, damit es nicht vertikal verschoben werden kann.
-ms.openlocfilehash: 6666d47555f8175b4950f95e1fb15abb8b11bfd5
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: e3e8b2e95d966e94f9a211dc082ace722674f2d6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33434046"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627975"
 ---
 # <a name="lockmovey-cell-protection-section"></a>Zelle "LockMoveY" (Abschnitt "Protection")
 
@@ -25,15 +25,15 @@ Sperrt die vertikale Position des Shapes, damit es nicht vertikal verschoben wer
 | TRUE  <br/> | Vertikale Position ist gesperrt.  <br/> |
 | FALSE  <br/> | Vertikale Position ist nicht gesperrt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Um einen Verweis auf die Zelle LockMoveY anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Verwenden Sie Folgendes, um einen Verweis auf die Zelle LockMoveY anhand des Namens einer anderen Formel oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | LockMoveY  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle LockMoveY nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle LockMoveY anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

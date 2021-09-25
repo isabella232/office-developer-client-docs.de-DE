@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6e4ac41f-3855-05d8-e659-02c265b8750c
 description: Enthält Elemente, die eine Seite im Dokument definieren.
-ms.openlocfilehash: f32cf3ed7bbf1e68ddca3fc8f5a1c50ce45fe73e
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: acdc74fa35480dccdd240030e59eafd57114b080
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538025"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573796"
 ---
 # <a name="page-element-pages_type-complextype-visio-xml"></a>Page-Element (Pages_Type complexType) (Visio XML)
 
@@ -36,7 +36,7 @@ Enthält Elemente, die eine Seite im Dokument definieren.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -54,16 +54,16 @@ Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccur
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|Hintergrund  <br/> |xsd:boolean  <br/> |Optional  <br/> |Ein Flag, das angibt, ob es sich bei der Seite um eine Hintergrundseite handelt.  <br/> |Werte des typs xsd:boolean.  <br/> |
-|BackPage  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> |Die ID der Hintergrundseite dieser Seite.  <br/> |Werte des xsd:unsignedInt-Typs.  <br/> |
-|ID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> |Die eindeutige ID des Elements innerhalb des übergeordneten Elements.  <br/> |Werte des xsd:unsignedInt-Typs.  <br/> |
-|IsCustomName  <br/> |xsd:boolean  <br/> |Optional  <br/> |Gibt an, ob der Name vom Benutzer angepasst wurde.  <br/> |Werte des xsd:Boolean-Typs.  <br/> |
-|IsCustomNameU  <br/> |xsd:boolean  <br/> |Optional  <br/> |Gibt an, ob der universelle Name vom Benutzer angepasst wurde.  <br/> |Werte des xsd:Boolean-Typs.  <br/> |
-|Name  <br/> |xsd:string  <br/> |Optional  <br/> |Der Name des Elements.  <br/> |Werte des xsd:string-Typs.  <br/> |
-|NameU  <br/> |xsd:string  <br/> |Optional  <br/> |Der universelle Name des Elements.  <br/> |Werte des xsd:string-Typs.  <br/> |
-|ReviewerID  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> |Die ID des Prüfers, der der Markupüberlagerung zugeordnet ist.  <br/> |Werte des xsd:unsignedInt-Typs.  <br/> |
-|ViewCenterX  <br/> |xsd:double  <br/> |Optional  <br/> |**ViewCenterX** und **ViewCenterY** geben einen Mittelpunkt auf einer Seite an, den eine neue Ansicht (Fenster) beim ersten Öffnen annimmt.  <br/> |Werte des xsd:double-Typs.  <br/> |
-|ViewCenterY  <br/> |xsd:double  <br/> |Optional  <br/> |**ViewCenterX** und **ViewCenterY** geben einen Mittelpunkt auf einer Seite an, den eine neue Ansicht (Fenster) beim ersten Öffnen annimmt.  <br/> |Werte des xsd:double-Typs.  <br/> |
-|ViewScale  <br/> |xsd:double  <br/> |Optional  <br/> |Der Standardmäßige Vergrößerungsfaktor, der verwendet werden soll, wenn eine neue Ansicht (Fenster) der Seite geöffnet wird. Beispiel: 1 = 100 %; 1,5 = 150 %, und so weiter.  <br/> |Werte des xsd:double-Typs.  <br/> |
+|Hintergrund  <br/> |xsd:boolean  <br/> |Optional  <br/> |Ein Kennzeichen, das angibt, ob es sich bei der Seite um eine Hintergrundseite handelt.  <br/> |Werte des Typs "xsd:boolean".  <br/> |
+|BackPage  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> |Die ID der Hintergrundseite dieser Seite.  <br/> |Werte des Typs "xsd:unsignedInt".  <br/> |
+|ID  <br/> |xsd:unsignedInt  <br/> |Erforderlich  <br/> |Die eindeutige ID des Elements innerhalb des übergeordneten Elements.  <br/> |Werte des Typs "xsd:unsignedInt".  <br/> |
+|IsCustomName  <br/> |xsd:boolean  <br/> |Optional  <br/> |Gibt an, ob der Name vom Benutzer angepasst wurde.  <br/> |Werte des Typs "xsd:Boolean".  <br/> |
+|IsCustomNameU  <br/> |xsd:boolean  <br/> |Optional  <br/> |Gibt an, ob der universelle Name vom Benutzer angepasst wurde.  <br/> |Werte des Typs "xsd:Boolean".  <br/> |
+|Name  <br/> |xsd:string  <br/> |Optional  <br/> |Der Name des Elements.  <br/> |Werte des Typs "xsd:string".  <br/> |
+|NameU  <br/> |xsd:string  <br/> |Optional  <br/> |Der universelle Name des Elements.  <br/> |Werte des Typs "xsd:string".  <br/> |
+|ReviewerID  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> |Die ID des Prüfers, der der Markupüberlagerung zugeordnet ist.  <br/> |Werte des Typs "xsd:unsignedInt".  <br/> |
+|ViewCenterX  <br/> |xsd:double  <br/> |Optional  <br/> |**ViewCenterX** und **ViewCenterY** geben einen Mittelpunkt auf einer Seite an, von der eine neue Ansicht (fenster) beim ersten Öffnen ausgeht.  <br/> |Werte des Typs "xsd:double".  <br/> |
+|ViewCenterY  <br/> |xsd:double  <br/> |Optional  <br/> |**ViewCenterX** und **ViewCenterY** geben einen Mittelpunkt auf einer Seite an, von der eine neue Ansicht (fenster) beim ersten Öffnen ausgeht.  <br/> |Werte des Typs "xsd:double".  <br/> |
+|ViewScale  <br/> |xsd:double  <br/> |Optional  <br/> |Der standardmäßige Vergrößerungsfaktor, der beim Öffnen einer neuen Ansicht (eines Fensters) der Seite verwendet werden soll. Beispiel: 1 = 100 %; 1,5 = 150 % usw.  <br/> |Werte des Typs "xsd:double".  <br/> |
    
 

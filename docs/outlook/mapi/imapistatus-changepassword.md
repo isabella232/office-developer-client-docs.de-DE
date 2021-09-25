@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPIStatus.ChangePassword
 api_type:
 - COM
 ms.assetid: 0cd1026a-342d-4d05-91ed-d3decced5bf3
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 2c824b6b994bfb31b5e6ac7fed0eeae88c47cdba
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c98f3c2d3f14893fc37ab9c876d41ed65de409fc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33410357"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596169"
 ---
 # <a name="imapistatuschangepassword"></a>IMAPIStatus::ChangePassword
 
@@ -25,7 +25,7 @@ ms.locfileid: "33410357"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ändert das Kennwort eines Dienstanbieters, ohne dass eine Benutzeroberfläche angezeigt wird. Diese Methode wird optional in Statusobjekten unterstützt, die von Dienstanbietern implementiert werden.
+Ändert das Kennwort eines Dienstanbieters, ohne eine Benutzeroberfläche anzuzeigen. Diese Methode wird optional in Statusobjekten unterstützt, die von Dienstanbietern implementiert werden.
   
 ```cpp
 HRESULT ChangePassword(
@@ -47,11 +47,11 @@ HRESULT ChangePassword(
     
  _ulFlags_
   
-> [in] Eine Bitmaske mit Flags, die das Format der Kennwörter steuert. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die das Format der Kennwörter steuert. Das folgende Kennzeichen kann festgelegt werden:
     
 MAPI_UNICODE 
   
-> Die Kennwörter sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Kennwörter im ANSI-Format.
+> Die Kennwörter haben das Unicode-Format. Wenn das MAPI_UNICODE-Kennzeichen nicht festgelegt ist, haben die Kennwörter das ANSI-Format.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -61,21 +61,21 @@ S_OK
     
 MAPI_E_NO_ACCESS 
   
-> Das alte Kennwort, auf das  _von lpOldPass verwiesen wird,_ ist ungültig. 
+> Das alte Kennwort, auf das von  _lpOldPass_ verwiesen wird, ist ungültig. 
     
 MAPI_E_NO_SUPPORT 
   
-> Das status-Objekt unterstützt diesen Vorgang nicht, wie durch das Fehlen des STATUS_CHANGE_PASSWORD-Flag in der **eigenschaft PR_RESOURCE_METHODS** ([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md)) des Statusobjekts angegeben wird.
+> Das Statusobjekt unterstützt diesen Vorgang nicht, wie durch das Fehlen des STATUS_CHANGE_PASSWORD Flags in der **Eigenschaft PR_RESOURCE_METHODS** ([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md)) des Statusobjekts angegeben.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Nicht alle Statusobjekte unterstützen die **IMAPIStatus::ChangePassword-Methode.** Es wird nur von Dienstanbietern unterstützt, für die Clients ein Kennwort eingeben müssen. Keines der von MAPI implementierten Statusobjekte unterstützt den Kennwortänderungsvorgang. 
+Nicht alle Statusobjekte unterstützen die **IMAPIStatus::ChangePassword-Methode.** Es wird nur von Dienstanbietern unterstützt, die die Eingabe eines Kennworts durch Clients erfordern. Keines der Statusobjekte, die MAPI implementiert, unterstützen den Kennwortänderungsvorgang. 
   
  **ChangePassword** ändert ein Kennwort programmgesteuert ohne Benutzerinteraktion. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Remote-Transport-Anbieter implementieren **ChangePassword wie** hier angegeben. Es gibt keine besonderen Überlegungen. 
+Remote-Transportanbieter implementieren **ChangePassword** wie hier angegeben. Es gibt keine besonderen Überlegungen. 
   
 ## <a name="see-also"></a>Siehe auch
 

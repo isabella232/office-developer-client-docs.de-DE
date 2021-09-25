@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm815
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b7d90666-a1bb-f0de-32da-b2855977f648
 description: Bestimmt, ob die Zeichnungsvorschau Entwurfsqualität hat oder detailgetreu sein soll.
-ms.openlocfilehash: 9db2d3e1eb829bfd2ad787fcfc94cd9ba5abaf9e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 39aed22a6a489116aab46f9f6ec558775b420961
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33416818"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573726"
 ---
 # <a name="previewquality-cell-document-properties-section"></a>Zelle "PreviewQuality" (Abschnitt "Document Properties")
 
@@ -23,19 +23,19 @@ Bestimmt, ob die Zeichnungsvorschau Entwurfsqualität hat oder detailgetreu sein
 |**Wert**|**PreviewQuality**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
 | 0  <br/> | Entwurf  <br/> |**visDocPreviewQualityDraft** <br/> |
-| 1  <br/> | Detailliert  <br/> |**visDocPreviewQualityDetailed** <br/> |
+| 1  <br/> | Detaillierte  <br/> |**visDocPreviewQualityDetailed** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Sie können diesen Wert  auch auf  der Registerkarte Zusammenfassung im Dialogfeld Eigenschaften festlegen (klicken Sie auf die Schaltfläche **Office,** klicken Sie auf die Registerkarte **Info,** klicken Sie auf Dokumenteigenschaften **und** dann auf **Erweiterte Eigenschaften**).
+Sie können diesen Wert auch auf der Registerkarte **"Zusammenfassung"** im Dialogfeld **"Eigenschaften"** festlegen (klicken Sie auf die Schaltfläche **Office,** klicken Sie auf die Registerkarte **"Info",** klicken Sie auf **"Dokumenteigenschaften"** und dann auf **"Erweiterte Eigenschaften").**
   
-Um einen Verweis auf die Zelle PreviewQuality anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Um einen Verweis auf die Zelle "PreviewQuality" anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | PreviewQuality  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle PreviewQuality nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle "PreviewQuality" anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

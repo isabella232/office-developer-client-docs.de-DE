@@ -1,23 +1,23 @@
 ---
-title: Vorschau und Debuggen von Formularvorlagen, die eine vollständige Vertrauenswürdigkeit erfordern
+title: Anzeigen der Vorschau und Debuggen von Formularvorlagen, die volle Vertrauenswürdigkeit erfordern
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
-- Debugging [infopath 2007], infopath 2003-kompatible Formularvorlagen,Vorschau von InfoPath 2003-kompatiblen Formularvorlagen,Formularvorlagen [InfoPath 2007], Vorschau von 2003-kompatiblen Formularvorlagen [InfoPath 2007], Debuggen von 2003-kompatiblen,Debuggen von InfoPath 2003-kompatiblen Formularvorlagen
-localization_priority: Normal
+- debugging [infopath 2007], infopath 2003-kompatible Formularvorlagen, Vorschau von InfoPath 2003-kompatiblen Formularvorlagen,Formularvorlagen [InfoPath 2007], Vorschau auf 2003-kompatible,Formularvorlagen [InfoPath 2007], Debuggen 2003-kompatibel,Debuggen von InfoPath 2003-kompatiblen Formularvorlagen
+ms.localizationpriority: medium
 ms.assetid: 5c491666-06f0-42ec-967e-1c70cd5e03a0
-description: Wenn Sie versuchen, ein Projekt mit verwalteten Code zu debuggen oder in der Vorschau anzuzeigen, das Code enthält, der ein Objektmodellmmitglied aufruft, das volle Vertrauenswürdigkeit erfordert, z. B. die LoginName-Eigenschaft, die Zugriff auf Informationen zur Anmeldedomäne des Benutzers erfordert, zeigt Microsoft InfoPath die folgenden Fehlermeldungen an.
-ms.openlocfilehash: 0780db286e2ca9cef381c2d24cb621c7c243dcb7
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Wenn Sie versuchen, ein Projekt mit verwaltetem Code zu debuggen oder eine Vorschau anzuzeigen, das Code enthält, der ein Objektmodellmitglied aufruft, das volle Vertrauenswürdigkeit erfordert, z. B. die LoginName-Eigenschaft, die Zugriff auf Informationen über die Anmeldedomäne des Benutzers erfordert, zeigt Microsoft InfoPath standardmäßig die folgenden Fehlermeldungen an.
+ms.openlocfilehash: 8fef3f0fceb1c9637cc4fbeb59bc8d716db442d2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411260"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605568"
 ---
-# <a name="preview-and-debug-form-templates-that-require-full-trust"></a>Vorschau und Debuggen von Formularvorlagen, die eine vollständige Vertrauenswürdigkeit erfordern
+# <a name="preview-and-debug-form-templates-that-require-full-trust"></a>Anzeigen der Vorschau und Debuggen von Formularvorlagen, die volle Vertrauenswürdigkeit erfordern
 
-Wenn Sie versuchen, ein Projekt mit verwalteten Code zu debuggen oder in der Vorschau anzuzeigen, das Code enthält, der ein Objektmodellmmitglied aufruft, das volle Vertrauenswürdigkeit erfordert, z. B. die **LoginName-Eigenschaft,** die Zugriff auf Informationen zur Anmeldedomäne des Benutzers erfordert, zeigt Microsoft InfoPath die folgenden Fehlermeldungen an. 
+Wenn Sie versuchen, ein Projekt mit verwaltetem Code zu debuggen oder eine Vorschau anzuzeigen, das Code enthält, der ein Objektmodellmitglied aufruft, das volle Vertrauenswürdigkeit erfordert, z. B. die **LoginName-Eigenschaft,** die Zugriff auf Informationen über die Anmeldedomäne des Benutzers erfordert, zeigt Microsoft InfoPath standardmäßig die folgenden Fehlermeldungen an. 
   
 Beim Anzeigen der Vorschau:
   
@@ -25,7 +25,7 @@ Beim Anzeigen der Vorschau:
   
 Beim Debuggen:
   
-Der Fokus wird zur Codezeile im Code-Editor wechseln, der das Mitglied aufruft, das volle Vertrauenswürdigkeit erfordert, und die folgende Meldung wird angezeigt: **"SecurityException** was unhandled by user code - Request failed". 
+Der Fokus wird auf die Codezeile im Code-Editor verschoben, die das Element aufruft, das volle Vertrauenswürdigkeit erfordert, und die folgende Meldung wird angezeigt: **"SecurityException** wurde vom Benutzercode nicht behandelt – Anforderung fehlgeschlagen". 
   
 Sie müssen für die Sicherheitsebene der Formularvorlage **Voll vertrauenswürdig** festlegen, wie im folgenden Verfahren beschrieben, um das Aufrufen dieses Members beim Debuggen oder Anzeigen einer Vorschau durch die Geschäftslogik der Formularvorlage zuzulassen. 
   
@@ -43,10 +43,10 @@ Sie müssen für die Sicherheitsebene der Formularvorlage **Voll vertrauenswürd
     
 5. Wählen Sie **Voll vertrauenswürdig** aus, und klicken Sie dann auf **OK**.
     
-Nachdem dieses Verfahren ausgeführt wurde, können Sie Das Projekt wie unter Vorschau und Debuggen von [InfoPath-Formularvorlagen mit Code beschrieben debuggen.](how-to-preview-and-debug-infopath-form-templates-with-code.md)
+Nachdem dieses Verfahren ausgeführt wurde, können Sie das Projekt wie unter Vorschau und Debuggen von [InfoPath-Formularvorlagen mit Code](how-to-preview-and-debug-infopath-form-templates-with-code.md)beschrieben debuggen.
   
 > [!NOTE]
-> Für die erfolgreiche Bereitstellung von Formularvorlagen mit verwaltetem Code, die vollständig vertrauenswürdig sein müssen, sind zusätzliche Schritte erforderlich, z. B. das digitale Signieren oder Installieren und Registrieren der Formularvorlage. Informationen zum Bereitstellen einer Formularvorlage für verwalteten Code nach dem Debuggen finden Sie unter [Deploy InfoPath Form Templates with Code](how-to-deploy-infopath-form-templates-with-code.md). 
+> Für die erfolgreiche Bereitstellung von Formularvorlagen mit verwaltetem Code, die vollständig vertrauenswürdig sein müssen, sind zusätzliche Schritte erforderlich, z. B. das digitale Signieren oder Installieren und Registrieren der Formularvorlage. Informationen zum Bereitstellen einer Formularvorlage mit verwaltetem Code nach dem Debuggen finden Sie unter [Bereitstellen von InfoPath-Formularvorlagen mit Code.](how-to-deploy-infopath-form-templates-with-code.md) 
   
 ## <a name="see-also"></a>Siehe auch
 

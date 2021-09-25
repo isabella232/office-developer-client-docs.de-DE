@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250121(v=office.15)
 ms:contentKeyID: 48548160
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 70fb359aa4faa0bcfc99f0b1700b0eb51f665bc0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: fb0041e128e6910b160fd468d89c33540eaa99e4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290114"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572921"
 ---
 # <a name="level-object-ado-md"></a>Level-Objekt (ADO MD)
 
@@ -21,19 +21,19 @@ ms.locfileid: "32290114"
 
 Enthält eine Gruppe von Elementen, von denen jedes denselben Rang innerhalb einer Hierarchie hat.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Auflistungen und Eigenschaften eines **Level**-Objekts ermöglichen Folgendes:
 
-  - Identifizieren der**** Ebene, indem Sie die Eigenschaften [Name](name-property-ado-md.md) und [UniqueName](uniquename-property-ado-md.md) verwenden.
+  - Identifizieren derEbene, indem Sie die Eigenschaften [Name](name-property-ado-md.md) und [UniqueName](uniquename-property-ado-md.md) verwenden.
 
-  - Zurückgeben einer Zeichenfolge, die zum Anzeigen der**** Ebene verwendet wird, indem Sie die [Caption](caption-property-ado-md.md)-Eigenschaft verwenden.
+  - Zurückgeben einer Zeichenfolge, die zum Anzeigen derEbene verwendet wird, indem Sie die [Caption](caption-property-ado-md.md)-Eigenschaft verwenden.
 
-  - Zurückgeben einer sinnvollen Zeichenfolge, die die**** Ebene beschreibt, indem Sie die [Description](description-property-ado-md.md)-Eigenschaft verwenden.
+  - Zurückgeben einer sinnvollen Zeichenfolge, die dieEbene beschreibt, indem Sie die [Description](description-property-ado-md.md)-Eigenschaft verwenden.
 
-  - Zurückgeben der [Member](member-object-ado-md.md)-Objekte, die die**** Ebene bilden, indem Sie die [Members](members-collection-ado-md.md)-Auflistung verwenden.
+  - Zurückgeben der [Member](member-object-ado-md.md)-Objekte, die dieEbene bilden, indem Sie die [Members](members-collection-ado-md.md)-Auflistung verwenden.
 
-  - Zurückgeben der Anzahl von Ebenen ab dem**** Ebenenstamm, indem Sie die [Depth](depth-property-ado-md.md)-Eigenschaft verwenden.
+  - Zurückgeben der Anzahl von Ebenen ab demEbenenstamm, indem Sie die [Depth](depth-property-ado-md.md)-Eigenschaft verwenden.
 
   - Verwenden der [Properties](properties-collection-ado.md)-ADO-Standardauflistung, um zusätzliche Informationen zum **Level**-Objekt abzurufen.
 
@@ -52,7 +52,7 @@ Die **Properties**-Auflistung enthält Eigenschaften, die vom Anbieter bereitges
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>CatalogName</p></td>
+<td><p>Catalogname</p></td>
 <td><p>Der Name des Katalogs, zu dem dieser Cube gehört.</p></td>
 </tr>
 <tr class="even">
@@ -92,7 +92,7 @@ Die **Properties**-Auflistung enthält Eigenschaften, die vom Anbieter bereitges
 <td><p>Der Abstand zwischen der Ebene und dem Stamm der Hierarchie.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Leveltype</p></td>
+<td><p>LevelType</p></td>
 <td><p>Der Ebenentyp.</p></td>
 </tr>
 <tr class="even">
@@ -100,7 +100,7 @@ Die **Properties**-Auflistung enthält Eigenschaften, die vom Anbieter bereitges
 <td><p>Der eindeutige Name der Ebene.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Instanzschema</p></td>
+<td><p>Schemaname</p></td>
 <td><p>Der Name des Schemas, zu dem dieser Cube gehört.</p></td>
 </tr>
 </tbody>

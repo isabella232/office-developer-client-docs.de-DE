@@ -4,23 +4,23 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9b46358c-bcab-f097-8746-fabfd4722b3c
-description: Ruft die nächste angegebene Anzahl von Blöcken von Frei/Gebucht-Daten in einer Enumeration ab.
-ms.openlocfilehash: f6ec49a9bac6bcf4fff67991d55c7656f6c8cce2
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Ruft die nächste angegebene Anzahl von Frei/Gebucht-Datenblöcken in einer Enumeration ab.
+ms.openlocfilehash: b1ebf09aaca466fdd6ee9fc3017d6b395d4326ea
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33422138"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605428"
 ---
 # <a name="ienumfbblocknext"></a>IEnumFBBlock::Next
 
-Ruft die nächste angegebene Anzahl von Blöcken von Frei/Gebucht-Daten in einer Enumeration ab.
+Ruft die nächste angegebene Anzahl von Frei/Gebucht-Datenblöcken in einer Enumeration ab.
   
 ## <a name="quick-info"></a>QuickInfo
 
-Weitere [Informationen finden Sie unter IEnumFBBlock](ienumfbblock.md).
+Siehe [IEnumFBBlock](ienumfbblock.md).
   
 ```cpp
 HRESULT Next(  
@@ -32,17 +32,17 @@ HRESULT Next(
 
 ## <a name="parameters"></a>Parameter
 
-_sellert_
+_Celt_
   
-> [in] Die Anzahl der abzurufende Frei/Gebucht-Datenblöcke in *pblk.* 
+> [in] Die Anzahl der Frei/Gebucht-Datenblöcke in  *Pblk,*  die abgerufen werden sollen. 
     
-_pblk_
+_Pblk_
   
-> [in] Ein Zeiger auf ein Array von Frei/Gebucht-Blöcken. Dem Array wird eine Größe von *Kelten zugewiesen.* Die angeforderten Frei/Gebucht-Blöcke werden in diesem Array zurückgegeben. 
+> [in] Ein Zeiger auf ein Array von Frei/Gebucht-Blöcken. Dem Array wird eine Größe von  *Celt*  zugewiesen. Die angeforderten Frei/Gebucht-Blöcke werden in diesem Array zurückgegeben. 
     
 _pcfetch_
   
-> [out] Die Anzahl der frei/gebucht-Blöcke, die tatsächlich in *pblk zurückgegeben werden.* 
+> [out] Die Anzahl der Frei/Gebucht-Blöcke, die tatsächlich in Pblk zurückgegeben *werden.* 
     
 ## <a name="return-values"></a>Rückgabewerte
 

@@ -1,20 +1,20 @@
 ---
-title: Properties. Delete-Methode (DAO)
+title: Properties.Delete-Methode (DAO)
 TOCTitle: Delete Method
 ms:assetid: dc2493c6-337c-cb56-7c0d-36762528fa43
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835356(v=office.15)
 ms:contentKeyID: 48548123
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 8bc822abe52b8bc9e71a275f0fd9e5006099317a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 9d14683a3b81c1d0ebb8811a09687a86b3700e96
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301252"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585494"
 ---
-# <a name="propertiesdelete-method-dao"></a>Properties. Delete-Methode (DAO)
+# <a name="propertiesdelete-method-dao"></a>Properties.Delete-Methode (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -22,9 +22,9 @@ Löscht das angegebene **Property**-Objekt aus der **Properties**-Auflistung.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Delete (***Name***)
+*Ausdruck* . Delete(***Name***)
 
-*Ausdruck* Eine Variable, die ein **Properties** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Properties-Objekt** darstellt.
 
 ## <a name="parameters"></a>Parameter
 

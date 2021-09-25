@@ -6,27 +6,27 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248946(v=office.15)
 ms:contentKeyID: 48543515
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: be2a4855b3411a11ddd5a76225acaa52344877a4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: ad31c4b34f4e94329907264e8ed29eddc08dbecb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306741"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615011"
 ---
 # <a name="rowset-property-ado"></a>Rowset-Eigenschaft (ADO)
 
 **Gilt für**: Access 2013, Office 2013
 
-Gets or sets an OLE DB **Rowset** object from/on an **ADORecordsetConstruction** object. Wenn Sie put\_-Rowset verwenden, wird das Rowset in ein ADO- **Recordset** -Objekt umgewandelt.
+Gets or sets an OLE DB **Rowset** object from/on an **ADORecordsetConstruction** object. Wenn Sie \_ "put"-Rowset verwenden, wird das Rowset in ein **ADO-Recordset-Objekt** umgewandelt.
 
 Lese-/Schreibzugriff.
 
 ## <a name="syntax"></a>Syntax
 
-HRESULT get\_-Rowset\[(Out,\] retval\* \* IUnknown ppRowset);
+HRESULT get \_ Rowset( \[ out, retval \] IUnknown \* \* ppRowset);
 
-HRESULT put\_-Rowset\[(\] in\* IUnknown pRowset);
+HRESULT put \_ Rowset( \[ in \] IUnknown \* pRowset);
 
 ## <a name="parameters"></a>Parameter
 
@@ -37,7 +37,7 @@ HRESULT put\_-Rowset\[(\] in\* IUnknown pRowset);
 
 ## <a name="return-values"></a>Rückgabewerte
 
-Diese Property-Methode gibt die standardmäßigen HRESULT-\_Werte zurück,\_einschließlich S OK und e Fail.
+Diese Eigenschaftsmethode gibt die HRESULT-Standardwerte zurück, einschließlich S \_ OK und E \_ FAIL.
 
 ## <a name="applies-to"></a>Gilt für
 

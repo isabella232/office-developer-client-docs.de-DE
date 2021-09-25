@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagProofOfSubmissionRequested
 api_type:
 - COM
 ms.assetid: c7b21c90-7fdc-48e4-8197-7675978c5d3b
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a0617029fd13cf6968936c97faacedeb333ede9e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 3af68c92a99cdbe13fff060672ec547a81a05ab5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33420290"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59560704"
 ---
 # <a name="pidtagproofofsubmissionrequested-canonical-property"></a>PidTagProofOfSubmissionRequested (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "33420290"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält einen ASN.1-Nachweis des Übermittlungswerts.
+Enthält einen ASN.1-Übermittlungsnachweiswert.
   
 |||
 |:-----|:-----|
@@ -34,9 +34,9 @@ Enthält einen ASN.1-Nachweis des Übermittlungswerts.
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft entspricht einem X.400-Übermittlungsumschlag pro Nachricht-Attribut.
+Diese Eigenschaft entspricht einem X.400-Übermittlungsumschlag pro Nachrichtenattribut.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,11 +44,11 @@ Diese Eigenschaft entspricht einem X.400-Übermittlungsumschlag pro Nachricht-At
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

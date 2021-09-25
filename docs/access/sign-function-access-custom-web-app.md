@@ -4,26 +4,26 @@ manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5e818c7b-b816-43ca-a051-d5846d4694db
-description: Gibt das positive (+1), null (0) oder negative (-1) Zeichen des angegebenen Ausdrucks zurück.
-ms.openlocfilehash: d02c3301728a16d533094244d0811aed70a1e9c3
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Gibt das positive (+1), null (0) oder negative (-1) Vorzeichen des angegebenen Ausdrucks zurück.
+ms.openlocfilehash: fda8f76f9001711ba41060b5688dee6f6883f22c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404379"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614738"
 ---
 # <a name="sign-function-access-custom-web-app"></a>Sign-Funktion (benutzerdefinierte Access-Web-App)
 
-Gibt das positive (+1), null (0) oder negative (-1) Zeichen des angegebenen Ausdrucks zurück.
+Gibt das positive (+1), null (0) oder negative (-1) Vorzeichen des angegebenen Ausdrucks zurück.
   
 > [!IMPORTANT]
 > Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 ## <a name="syntax"></a>Syntax
 
- **Sign** (*NumericExpression*) 
+ **Zeichen** (*NumericExpression*) 
   
 Die **Sign-Funktion** enthält das folgende Argument. 
   

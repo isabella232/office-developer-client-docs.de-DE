@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f5de77c3-5912-f7bc-8e8c-3a053545c359
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: d254df132db5542ce5235c1c3ab42ea768399f0a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 3b35993c8d715e762b43b473ba7ee16edc38a624
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32358919"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613348"
 ---
 # <a name="pidtagsearchrecipientemailto-canonical-property"></a>PidTagSearchRecipientEmailTo (kanonische Eigenschaft)
 
@@ -21,7 +21,7 @@ ms.locfileid: "32358919"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine Unicode-Zeichenfolge, die in der Liste der E-Mail-Adressen oder Anzeigenamen von Empfängern abgefragt wird, die in der **Zeile An** von Nachrichten im Speicher adressiert sind. 
+Enthält eine Unicode-Zeichenfolge, die in der Liste der E-Mail-Adressen oder Anzeigenamen von Empfängern abgefragt wird, die in der **Zeile "An"** des Informationsspeichers adressiert sind. 
   
 ## 
 
@@ -29,19 +29,19 @@ Enthält eine Unicode-Zeichenfolge, die in der Liste der E-Mail-Adressen oder An
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_SEARCH_RECIP_EMAIL_TO_W  <br/> |
 |Kennung:  <br/> |0x0EA6  <br/> |
-|Eigenschaftstyp:  <br/> |PT_UNICODE  <br/> |
+|Eigenschaftentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Suche  <br/> |
    
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
 > [!NOTE]
-> Dieses MAPI-Einschränkungstag, das bei der Suche nach E-Mail-Adressen oder Anzeigenamen verwendet wird, an die die Nachricht gesendet wird, wird möglicherweise nicht in der herunterladbaren Headerdatei definiert, die Sie derzeit haben. Sie können sie ihrem Code mithilfe des folgenden Werts hinzufügen: >  `#define PR_SEARCH_RECIP_EMAIL_TO_W PROP_TAG(PT_UNICODE, 0x0EA6)`
+> Dieses MAPI-Einschränkungstag, das verwendet wird, wenn Sie nach E-Mail-Adressen oder Anzeigenamen suchen, an die die Nachricht gesendet wird, ist möglicherweise nicht in der herunterladbaren Headerdatei definiert, die Sie derzeit haben. Sie können es ihrem Code hinzufügen, indem Sie den folgenden Wert verwenden: >  `#define PR_SEARCH_RECIP_EMAIL_TO_W PROP_TAG(PT_UNICODE, 0x0EA6)`
   
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Microsoft Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Microsoft Exchange Server Protokollspezifikationen.
     
 [[MS-OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)
   
@@ -51,7 +51,7 @@ Enthält eine Unicode-Zeichenfolge, die in der Liste der E-Mail-Adressen oder An
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
@@ -63,9 +63,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

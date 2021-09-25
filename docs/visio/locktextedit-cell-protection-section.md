@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm665
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d8de5fa4-826b-e869-4d9f-997361d05fd8
 description: Sperrt den Text eines Shapes, damit dieser nicht bearbeitet werden kann.
-ms.openlocfilehash: f6e5176e3ab654b76c0641b8f642abcf6b1050dd
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c7bac80327894c17f05d0895849a0a19e2028fde
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404498"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573943"
 ---
 # <a name="locktextedit-cell-protection-section"></a>Zelle "LockTextEdit" (Abschnitt "Protection")
 
@@ -25,17 +25,17 @@ Sperrt den Text eines Shapes, damit dieser nicht bearbeitet werden kann.
 |TRUE  <br/> |Text kann nicht bearbeitet werden.  <br/> |
 | FALSE  <br/> | Text kann bearbeitet werden.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Sie können weiterhin Text formatieren, indem Sie eine Formatvorlage aus dem Dialogfeld **Text** anwenden (klicken Sie dazu auf der Registerkarte **Start** auf den Pfeil neben **Schriftart**). 
   
-Um einen Verweis auf die Zelle LockTextEdit anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Um einen Verweis auf die Zelle LockTextEdit anhand des Namens einer anderen Formel oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | LockTextEdit  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die LockTextEdit-Zelle nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle LockTextEdit anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

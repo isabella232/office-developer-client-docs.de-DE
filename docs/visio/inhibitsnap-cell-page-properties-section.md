@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251620
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ab9fcebc-1550-3b9e-e3b4-e8b92424390b
 description: Legt fest, ob die Shapes auf einem Vordergrundblatt an anderen Objekten auf dem Zeichenblatt und an Shapes auf dem Hintergrundblatt einrasten.
-ms.openlocfilehash: 665130e9f9f938349028ffa1d1c06224e746de5d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c559bb97357e75508b8c1da742d970262f0ef6f9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33426751"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59628080"
 ---
 # <a name="inhibitsnap-cell-page-properties-section"></a>Zelle "InhibitSnap" (Abschnitt "Page Properties")
 
@@ -25,15 +25,15 @@ Legt fest, ob die Shapes auf einem Vordergrundblatt an anderen Objekten auf dem 
 | TRUE  <br/> | Einrasten auf dem Zeichenblatt mit Ausnahme des Einrastens am Lineal und Gitter verhindern.  <br/> |
 | FALSE  <br/> | Einrasten aktivieren.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Um einen Verweis auf die Zelle InhibitSnap anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Um einen Verweis auf die Zelle "InhibitSnap" anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | InhibitSnap  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle InhibitSnap nach Index aus einem Programm zu erhalten: 
+Um einen Verweis auf die Zelle "InhibitSnap" anhand des Indexes eines Programms abzurufen, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|

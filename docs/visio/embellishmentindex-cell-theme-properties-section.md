@@ -4,34 +4,34 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 98f7ebdc-fdd5-4534-97dc-9d4c00490d62
-description: Ändert das Aussehen und Aussehen (Verschönerung) von Callouts, Containern, Zeitachsen und Organisationsdiagrammformen.
-ms.openlocfilehash: 089623bbb310f78488a5c8c7261eed1c16a5c6e6
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Ändert das Erscheinungsbild (Verzierung) von Legenden, Containern, Zeitachsen und Organigramm-Shapes.
+ms.openlocfilehash: 5a303736300c70f73b509cb65fc824f9253d0fe0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33427696"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59628353"
 ---
 # <a name="embellishmentindex-cell-theme-properties-section"></a>Zelle "EmbellishmentIndex" (Abschnitt "Theme Properties")
 
-Ändert das Aussehen und Aussehen (Verschönerung) von Callouts, Containern, Zeitachsen und Organisationsdiagrammformen.
+Ändert das Erscheinungsbild (Verzierung) von Legenden, Containern, Zeitachsen und Organigramm-Shapes.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie zum Erhalten eines Verweises auf die **Zelle "EmbellishmentIndex"** anhand des Namens aus einer anderen Formel, nach dem Wert des **N-Attributs** eines **Cell-Elements** oder aus einem Programm mit der **CellsU-Eigenschaft:** 
+Um einen Verweis auf die Zelle **EmbellishmentIndex** anhand des Namens aus einer anderen Formel, anhand des Werts des **N-Attributs** eines **Cell-Elements** oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | EmbellishmentIndex  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die **Zelle "EmbellishmentIndex"** nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle **EmbellishmentIndex** anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionObject** <br/> |
 | Zeilenindex:  <br/> |**visRowThemeProperties** <br/> |
-| Zellenindex:  <br/> |**visEmbellishmentIndex** <br/> |
+| Zellenindex:  <br/> |**visEmishmentIndex** <br/> |
    
 

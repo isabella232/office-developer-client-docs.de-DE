@@ -7,22 +7,22 @@ ms.topic: reference
 f1_keywords:
 - xlCoerce
 keywords:
-- xlcoerce-Funktion [excel 2007]
-localization_priority: Normal
+- Xlcoerce-Funktion [excel 2007]
+ms.localizationpriority: medium
 ms.assetid: 9d47c16c-a7e7-4998-b594-9cf001827b7b
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: d84839535d5eb913ca8a62d631238e3330683d0e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: e02020b6afe67e9c1035e63866c2dd9bff0b24c6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424833"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621346"
 ---
 # <a name="xlcoerce"></a>xlCoerce
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Wandelt einen **XlOPER** /  **XLOPER12-Typ** in einen anderen um, oder es werden Zellwerte auf einem Blatt nach oben angezeigt. 
+Konvertiert einen **XLOPER** /  **XLOPER12-Typ** in einen anderen oder sucht zellwerte auf einem Blatt nach. 
   
 ```cs
 Excel12(xlCoerce, LPXLOPER12 pxRes, 2, LPXLOPER12 pxSource, LPXLOPER12 pxDestType);
@@ -32,28 +32,28 @@ Excel12(xlCoerce, LPXLOPER12 pxRes, 2, LPXLOPER12 pxSource, LPXLOPER12 pxDestTyp
 
  _pxSource_
   
-Die **XlOPER** /  **XLOPER12-Quelle,** die konvertiert werden muss. 
+Die **XLOPER** /  **XLOPER12-Quelldatei,** die konvertiert werden muss. 
   
  _pxDestType_ (**xltypeInt**)
   
-(Optional). Eine Bitmaske der resultierenden Typen, die Sie akzeptieren möchten. Sie sollten den bitweisen **OR-Operator** ( | ) verwenden, um mehrere mögliche Typen anzugeben. Wenn dieses Argument nicht angegeben wird, werden Verweise auf einzelne Zellen in einen der Werttypen **xltypeStr**, **xltypeNum**, **xltypeBool**, **xltypeErr**, **xltypeNil** (wenn die Zelle mit Bezug leer ist) konvertiert, und Verweise auf Zellblöcke werden in **xltypeMulti konvertiert.** Dadurch ist **xlCoerce** die bequemste Methode zum Suchen nach Zellenwerten. 
+(Optional). Eine Bitmaske der resultierenden Typen, die Sie akzeptieren möchten. Sie sollten den bitweisen **OR-Operator** ( | ) verwenden, um mehrere mögliche Typen anzugeben. Wenn dieses Argument nicht angegeben wird, werden Verweise auf einzelne Zellen in einen der Werttypen **xltypeStr**, **xltypeNum**, **xltypeBool**, **xltypeErr**, **xltypeNil** (wenn die referenzierte Zelle leer ist) konvertiert, und Verweise auf Zellenblöcke werden in **xltypeMulti** konvertiert. Dadurch ist **xlCoerce** die bequemste Methode zum Nachschlagen von Zellwerten. 
   
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-Gibt den koercierten Wert zurück (**xltypeStr**, **xltypeNum**, **xltypeBool**, **xltypeErr**, **xltypeNil** oder **xltypeMulti**).
+Gibt den koersierten Wert (**xltypeStr**, **xltypeNum**, **xltypeBool**, **xltypeErr**, **xltypeNil** oder **xltypeMulti**) zurück.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
- **xlCoerce kann** nicht in oder von **xltypeBigData oder** **xltypeFlow konvertiert werden.** Das Übergeben **eines xltypeMissing-** oder **xltypeNil-Typs** als  _pxDestType_ entspricht dem Weglassen des Arguments. Die Konvertierung kann in einigen Fällen fehlschlagen. Beispielsweise können einige Zeichenfolgen nicht in Zahlen konvertiert werden, andere dagegen. 
+ **xlCoerce** kann nicht in **xltypeBigData** oder **xltypeFlow** konvertiert werden. Das Übergeben eines **XltypeMissing-** oder **xltypeNil-Typs** als  _pxDestType_ entspricht dem Weglassen des Arguments. Die Konvertierung kann in einigen Fällen fehlschlagen. Beispielsweise können einige Zeichenfolgen nicht in Zahlen konvertiert werden, andere dagegen. 
   
-Wenn ein Array oder ein Verweis mit mehreren Zellen in einen einzelnen Werttyp konvertiert wird, ist das Ergebnis der Wert der linken oberen Zelle oder des Arrayelements.
+Wenn ein Array oder ein Bezug mit mehreren Zellen in einen einzelnen Werttyp konvertiert wird, ist das Ergebnis der Wert der oberen linken Zelle oder des Arrayelements.
   
 ## <a name="example"></a>Beispiel
 
-Der folgende Code finden Sie unter  `\SAMPLES\EXAMPLE\EXAMPLE.C` . 
+Der folgende Code befindet sich in  `\SAMPLES\EXAMPLE\EXAMPLE.C` . 
   
 > [!NOTE]
-> Die **xlcAlert-Funktion** versucht implizit, ihr Argument in eine Zeichenfolge zu konvertieren, sodass der hier gezeigte Coercion-Schritt entfernt werden konnte und **xInt** direkt an **xlcAlert** übergeben werden konnte. Da **xlcAlert** ein Befehlsmakro ist, funktioniert dieser Code nur ordnungsgemäß, wenn er von einem Makroblatt aufgerufen wird. 
+> Die **xlcAlert-Funktion** versucht implizit, ihr Argument in eine Zeichenfolge zu konvertieren, sodass der hier gezeigte Koersionsschritt tatsächlich entfernt und **xInt** direkt an **xlcAlert** übergeben werden kann. Da **xlcAlert** ein Befehlsmakro ist, funktioniert dieser Code nur ordnungsgemäß, wenn er von einem Makroblatt aufgerufen wird. 
   
 ```cs
 short WINAPI xlCoerceExample(short iVal)

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPIFormContainer.InstallForm
 api_type:
 - COM
 ms.assetid: b39ca52c-4dbe-41c0-9e1b-3998a9dc9742
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a0650033e4fea79046eac5757e3d0deb963c38e6
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f8f5db6ebb264788de6a9c8a570056c3d8ace8e8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33405086"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621003"
 ---
 # <a name="imapiformcontainerinstallform"></a>IMAPIFormContainer::InstallForm
 
@@ -39,23 +39,23 @@ HRESULT InstallForm(
 
  _ulUIParam_
   
-> [in] Ein Handle zum übergeordneten Fenster aller Dialogfelder oder Fenster, die von dieser Methode angezeigt werden. Der  _ulUIParam-Parameter_ wird ignoriert, es sei denn, die Clientanwendung legt das MAPI_DIALOG im  _ulFlags-Parameter_ fest. Der  _ulUIParam-Parameter_ kann NULL sein, MAPI_DIALOG nicht auch übergeben wird. 
+> [in] Ein Handle für das übergeordnete Fenster aller Dialogfelder oder Fenster, die von dieser Methode angezeigt werden. Der  _ulUIParam-Parameter_ wird ignoriert, es sei denn, die Clientanwendung legt das flag MAPI_DIALOG im  _ulFlags-Parameter_ fest. Der  _ulUIParam-Parameter_ kann NULL sein, wenn MAPI_DIALOG nicht auch übergeben wird. 
     
  _ulFlags_
   
-> [in] Eine Bitmaske mit Flags, die die Installation des Formulars steuert. Die folgenden Kennzeichen können festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die die Installation des Formulars steuert. Die folgenden Flags können festgelegt werden:
     
 MAPI_DIALOG 
   
-> Zeigt ein Dialogfeld an, um Statusinformationen zur Verfügung zu stellen oder den Benutzer zu weiteren Informationen aufforderen. Wenn dieses Kennzeichen nicht festgelegt ist, wird kein Dialogfeld angezeigt.
+> Zeigt ein Dialogfeld zum Bereitstellen von Statusinformationen an oder fordert den Benutzer auf, weitere Informationen einzufordern. Wenn dieses Kennzeichen nicht festgelegt ist, wird kein Dialogfeld angezeigt.
     
 MAPI_UNICODE 
   
-> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Zeichenfolgen im ANSI-Format.
+> Die übergebenen Zeichenfolgen haben das Unicode-Format. Wenn das flag MAPI_UNICODE nicht festgelegt ist, haben die Zeichenfolgen das ANSI-Format.
     
 MAPIFORM_INSTALL_OVERWRITEONCONFLICT 
   
-> Wenn bereits ein anderes Formular vorhanden ist, das die von diesem Formular behandelte Nachrichtenklasse behandelt, ersetzen Sie das vorhandene Formular durch dieses Formular. Dieses Flag wird ignoriert, wenn MAPI_DIALOG auch vorhanden ist. 
+> Wenn bereits ein anderes Formular vorhanden ist, das die von diesem Formular verarbeitete Nachrichtenklasse verarbeitet, ersetzen Sie das vorhandene Formular durch dieses Formular. Dieses Flag wird ignoriert, wenn das MAPI_DIALOG Flag ebenfalls vorhanden ist. 
     
  _szCfgPathName_
   
@@ -69,15 +69,15 @@ S_OK
     
 MAPI_E_EXTENDED_ERROR 
   
-> Ein Implementierungsfehler ist aufgetreten. Rufen Sie die [IMAPIFormContainer::GetLastError-Methode](imapiformcontainer-getlasterror.md) auf, um die [MAPIERROR-Struktur](mapierror.md) zu erhalten, die dem Fehler zugeordnet ist. 
+> Es ist ein Implementierungsfehler aufgetreten. Rufen Sie zum Abrufen der [MAPIERROR-Struktur,](mapierror.md) die dem Fehler zugeordnet ist, die [IMAPIFormContainer::GetLastError-Methode](imapiformcontainer-getlasterror.md) auf. 
     
 MAPI_E_USER_CANCEL 
   
-> Der Benutzer hat die Installation des Formulars abgebrochen, in der Regel durch Klicken auf die **Schaltfläche** Abbrechen in einem Dialogfeld. 
+> Der Benutzer hat die Installation des Formulars abgebrochen, in der Regel durch Klicken auf die Schaltfläche **"Abbrechen"** in einem Dialogfeld. 
     
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Formularbibliotheksanbieter sollten eine **MAPIERROR-Struktur** ausfüllen und MAPI_E_EXTENDED_ERROR, wenn eine der folgenden Bedingungen auftritt: 
+Formularbibliotheksanbieter sollten eine **MAPIERROR-Struktur** ausfüllen und MAPI_E_EXTENDED_ERROR zurückgeben, wenn eine der folgenden Bedingungen auftritt: 
   
 - Die Konfigurationsdatei wurde nicht gefunden.
     
@@ -87,17 +87,17 @@ Formularbibliotheksanbieter sollten eine **MAPIERROR-Struktur** ausfüllen und M
     
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Clientanwendungen rufen die **IMAPIFormContainer::InstallForm-Methode** auf, um ein Formular in einem bestimmten Formularcontainer zu installieren. Der  _Parameter szCfgPathName_ muss den Pfad einer Formularkonfigurationsdatei enthalten (d. h. eine Datei mit der Erweiterung .cfg, die das Formular und dessen Implementierung beschreibt). Die Flags im  _ulFlags-Parameter_ geben Folgendes an: 
+Clientanwendungen rufen die **IMAPIFormContainer::InstallForm-Methode** auf, um ein Formular in einem bestimmten Formularcontainer zu installieren. Der  _parameter szCfgPathName_ muss den Pfad einer Formularkonfigurationsdatei enthalten (d. h. eine Datei mit der Erweiterung CFG, die das Formular und dessen Implementierung beschreibt). Die Flags im  _ulFlags-Parameter_ geben Folgendes an: 
   
-- Wenn das MAPI_DIALOG festgelegt ist, wird eine Benutzeroberfläche angezeigt, mit der der Benutzer, der das Formular installiert, Installationsdetails angeben kann.
+- Wenn das flag MAPI_DIALOG festgelegt ist, wird eine Benutzeroberfläche angezeigt, über die der Benutzer, der das Formular installiert, Installationsdetails angeben kann.
     
-- Wenn das MAPIFORM_INSTALL_OVERWRITEONCONFLICT festgelegt ist, wird jedes vorherige Formular für dieselbe Nachrichtenklasse durch das zu installierende Formular ersetzt. Andernfalls wird die Formularinstallation mit der aktuellen Formularbeschreibung zusammengeführt, sofern vorhanden.
+- Wenn das flag MAPIFORM_INSTALL_OVERWRITEONCONFLICT festgelegt ist, wird jedes vorherige Formular für dieselbe Nachrichtenklasse durch das zu installierende Formular ersetzt. Andernfalls wird die Formularinstallation mit der aktuellen Formularbeschreibung zusammengeführt, sofern vorhanden.
     
 - Wenn MAPI_DIALOG festgelegt ist, wird MAPIFORM_INSTALL_OVERWRITEONCONFLICT ignoriert.
     
-- Das Fehlen MAPIFORM_INSTALL_OVERWRITEONCONFLICT im Flagsatz bedeutet, dass eine Zusammenführung durchgeführt wird. Alle neuen Plattformen in der CFG-Datei, die derzeit nicht in der Formularbeschreibung vorhanden sind, werden installiert, und es werden keine weiteren Änderungen vorgenommen.
+- Das Fehlen von MAPIFORM_INSTALL_OVERWRITEONCONFLICT im Flagsatz bedeutet, dass eine Zusammenführung durchgeführt wird. Alle neuen Plattformen in der CFG-Datei, die derzeit nicht in der Formularbeschreibung vorhanden sind, werden installiert, und es werden keine weiteren Änderungen vorgenommen.
     
-- Wenn das MAPI_UNICODE festgelegt ist, ist der Pfad der Formularkonfigurationsdatei eine Unicode-Zeichenfolge. 
+- Wenn das flag MAPI_UNICODE festgelegt ist, ist der Pfad der Formularkonfigurationsdatei eine Unicode-Zeichenfolge. 
     
 Clients sollten [IMAPIFormContainer::GetLastError](imapiformcontainer-getlasterror.md) aufrufen, wenn **InstallForm** MAPI_E_EXTENDED_ERROR zurückgibt, und sie sollten die zurückgegebene [MAPIERROR-Struktur](mapierror.md) überprüfen, um die Bedingung zu ermitteln, die den Fehler ausgelöst hat. 
   

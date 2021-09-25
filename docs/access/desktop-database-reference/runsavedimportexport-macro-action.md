@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm3022
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: adcc8a2a9462509f4b37d2dbdaf824387ae52a26
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 697fd5e7c422be61f05cdb2ceaaa7f0f5e6ec4d9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309173"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614934"
 ---
 # <a name="runsavedimportexport-macro-action"></a>RunSavedImportExport-Makroaktion
 
@@ -25,7 +25,7 @@ ms.locfileid: "32309173"
 Mit der **RunSavedImportExport** -Aktion können Sie eine gespeicherte Import- oder Exportspezifikation ausführen, die Sie mit dem Import- bzw. Export-Assistenten erstellt haben.
 
 > [!NOTE]
-> [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist.
+> Diese Aktion ist nicht zulässig, wenn die Datenbank nicht vertrauenswürdig ist.
 
 ## <a name="setting"></a>Einstellung
 
@@ -65,5 +65,5 @@ Die **RunSavedImportExport**-Aktion hat das folgende Argument.
 
 - Links zu weiteren Informationen über das Speichern und Ausführen von Import- und Exportspezifikationen finden Sie im Abschnitt **Siehe auch**.
 
-- Wenn die gespeicherte Import-oder Exportspezifikation, die Sie für das Argument **saved Import Export Name** ausgewählt haben, nach dem Erstellen des Makros gelöscht wird, zeigt Access beim Ausführen des Makros die folgende Fehlermeldung **an: die Spezifikation mit dem angegebenen Index nicht vorhanden. Geben Sie einen anderen Index an. ' * * * * * Spezifikationsname *** * * * * '.
+- Wenn die gespeicherte Import- oder Exportspezifikation, die Sie für das Argument **Gespeicherter Importexportname** auswählen, nach dem Erstellen des Makros gelöscht wird, zeigt Access die folgende Fehlermeldung an, wenn das Makro ausgeführt wird: **Die Spezifikation mit dem angegebenen Index ist nicht vorhanden. Geben Sie einen anderen Index an. '**\Spezifikationsname**'.**
 

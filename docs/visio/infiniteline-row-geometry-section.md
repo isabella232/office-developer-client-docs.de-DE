@@ -6,30 +6,30 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm3020
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 55942a42-5e88-2f6b-69f8-405ce406fcaf
-description: Enthält die x- und y-Koordinaten von zwei Punkten in einer unendlichen Linie.
-ms.openlocfilehash: b6338b6b50535379759649c791b9678de640df70
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Enthält die X- und Y-Koordinaten von zwei Punkten auf einer unendlichen Linie.
+ms.openlocfilehash: 53d99efd06ec466625be5dd0565234a2c6f09607
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33413619"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59628115"
 ---
 # <a name="infiniteline-row-geometry-section"></a>Zeile "InfiniteLine" (Abschnitt "Geometry")
 
-Enthält die  *x-*  und  *y-Koordinaten*  von zwei Punkten in einer unendlichen Linie. 
+Enthält die  *X-*  und  *Y-Koordinaten*  von zwei Punkten auf einer unendlichen Linie. 
   
 Eine Zeile InfiniteLine enthält folgende Zellen.
   
 |**Cell**|**Beschreibung**|
 |:-----|:-----|
-|[X](x-cell-geometry-section.md) <br/> |Eine  x-Koordinate eines Punkts auf der unendlichen Linie; gepaart mit der y-Koordinate, die durch die Zelle Y dargestellt wird.   <br/> |
-|[Y](y-cell-geometry-section.md) <br/> |Eine  y-Koordinate eines Punkts auf der unendlichen Linie; gekoppelt mit *x* -koordinate, die durch die Zelle X dargestellt wird.  <br/> |
-|[A](a-cell-geometry-section.md) <br/> |Eine  x-Koordinate eines Punkts auf der unendlichen Linie; gekoppelt mit *y* -koordinate, die durch die Zelle B dargestellt wird.  <br/> |
-|[B](b-cell-geometry-section.md) <br/> |Eine  y-Koordinate eines Punkts in einer unendlichen Linie; gekoppelt mit *x* -koordinate, die durch die Zelle A dargestellt wird.  <br/> |
+|[X](x-cell-geometry-section.md) <br/> |Eine  X-Koordinate eines Punkts auf der unendlichen Linie; gepaart mit einer y-Koordinate, dargestellt durch die Zelle Y.   <br/> |
+|[Y](y-cell-geometry-section.md) <br/> |Eine  y-Koordinate eines Punkts auf der unendlichen Linie; gepaart mit einer X-Koordinate, dargestellt durch die Zelle X.   <br/> |
+|[A](a-cell-geometry-section.md) <br/> |Eine  X-Koordinate eines Punkts auf der unendlichen Linie; gepaart mit einer y-Koordinate, dargestellt durch die Zelle B.   <br/> |
+|[B](b-cell-geometry-section.md) <br/> |Eine  y-Koordinate eines Punkts auf einer unendlichen Linie; gepaart mit einer X-Koordinate, dargestellt durch die Zelle A.   <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ein Abschnitt Geometry, der eine Zeile Ellipse oder InfiniteLine enthält, sollte keine anderen Zeilen enthalten.
   

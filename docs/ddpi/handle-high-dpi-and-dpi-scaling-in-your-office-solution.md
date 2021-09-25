@@ -2,13 +2,13 @@
 title: Verarbeiten hoher DPI-Werte und der DPI-Skalierung in Ihrer Office-Lösung
 description: Aktualisieren Sie Ihre Office-Lösung, z. B. benutzerdefinierte Aufgabenbereiche oder ActiveX-Steuerelemente, so, dass Monitore mit hohen DPI-Werten unterstützt werden.
 ms.date: 03/09/2019
-localization_priority: Normal
-ms.openlocfilehash: 78179b958bc57137c0565b8b1ca5feb40f61fe0e
-ms.sourcegitcommit: 939bd9686ba41a8f94b82e004ed84b9054d9c7cf
+ms.localizationpriority: medium
+ms.openlocfilehash: 8ffc0727f434319cef74be15c9aa229efef3c44e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48293478"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605708"
 ---
 # <a name="handle-high-dpi-and-dpi-scaling-in-your-office-solution"></a>Verarbeiten hoher DPI-Werte und der DPI-Skalierung in Ihrer Office-Lösung
 
@@ -41,7 +41,7 @@ In diesem Artikel werden wir uns mit den verschiedenen Modi für den DPI-Grad be
 |Modus  |Beschreibung  |Wenn der DPI-Wert geändert wird  |
 |---------|---------|---------|
 |Nicht DPI-fähig |  Die Anwendung wird immer so gerendert, als befände sie sich auf einem Bildschirm mit einem DPI-Wert von 96. |  Die Anwendung wird auf primären und sekundären Monitoren Bitmap-gestreckt.    |
-|Kompatibel mit systemspezifischen DPI-Werten |  Die Anwendung ermittelt den DPI-Wert des primären angeschlossenen Monitors bei der Windows-Anmeldung, kann aber nicht auf DPI-Änderungen reagieren. Weitere Informationen finden Sie im Abschnitt [Configure Windows to fix blurry apps](#configure-windows-to-fix-blurry-apps) in diesem Artikel.  | Die Anwendung wird Bitmap-gestreckt, wenn sie auf eine neue Anzeige mit einem anderen DPI-Wert verschoben wird.    |
+|Kompatibel mit systemspezifischen DPI-Werten |  Die Anwendung ermittelt den DPI-Wert des primären angeschlossenen Monitors bei der Windows-Anmeldung, kann aber nicht auf DPI-Änderungen reagieren. Weitere Informationen finden Sie im Abschnitt ["Konfigurieren Windows zum Beheben unscharfer Apps"](#configure-windows-to-fix-blurry-apps) in diesem Artikel.  | Die Anwendung wird Bitmap-gestreckt, wenn sie auf eine neue Anzeige mit einem anderen DPI-Wert verschoben wird.    |
 |Mit monitorspezifischen DPI-Werten kompatibel |  Die Anwendung kann sich selbst ordnungsgemäß erneut darstellen, wenn sich der DPI-Wert ändert.  |   Windows sendet DPI-Benachrichtigungen an die Fenster auf der obersten Ebene in der Anwendung, damit diese erneut dargestellt werden kann, wenn sich der DPI-Wert ändert.     |
 |Pro Monitor v2 |  Die Anwendung kann sich selbst ordnungsgemäß erneut darstellen, wenn sich der DPI-Wert ändert.  |   Windows sendet DPI-Benachrichtigungen an die Fenster auf der obersten Ebene und auch an die untergeordneten Fenster, damit die Anwendung erneut dargestellt werden kann, wenn sich der DPI-Wert ändert. |
 
@@ -237,7 +237,7 @@ Beim Windows April 2018 (1803) Update und höher verwendet das Office-DPI-Hostin
 
 ![Diagramm, in dem untergeordnete Fenster, die im Kontext „Kompatibel mit systemspezifischen DPI-Werten“ ausgeführt werden, im Windows April 2018 Update (1803) gezeigt werden.](./media/office-dpi-behavior-on-windows-april-2018-update.png)
 
-Wenn Sie neue untergeordnete Fenster erstellen, stellen Sie sicher, dass diese dem DPI-Grad ihres übergeordneten Fensters entsprechen. Sie können die [GetWindowDpiAwarenessContext-Funktion](https://docs.microsoft.com/windows/desktop/api/winuser/nf-winuser-getwindowdpiawarenesscontext) verwenden, um das DPI-Bewusstsein des übergeordneten Fensters zu erhalten. Weitere Informationen zur Konsistenz des DPI-Grads finden Sie im Abschnitt „Erzwungenes Zurücksetzen des prozessweiten DPI-Grads unter [Entwicklung von Desktopanwendungen mit hohen DPI-Werten unter Windows](https://docs.microsoft.com/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows#related-topics).
+Wenn Sie neue untergeordnete Fenster erstellen, stellen Sie sicher, dass diese dem DPI-Grad ihres übergeordneten Fensters entsprechen. Mit der [GetWindowDpiAwarenessContext-Funktion](https://docs.microsoft.com/windows/desktop/api/winuser/nf-winuser-getwindowdpiawarenesscontext) können Sie den DPI-Grad des übergeordneten Fensters abrufen. Weitere Informationen zur Konsistenz des DPI-Grads finden Sie im Abschnitt „Erzwungenes Zurücksetzen des prozessweiten DPI-Grads unter [Entwicklung von Desktopanwendungen mit hohen DPI-Werten unter Windows](https://docs.microsoft.com/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows#related-topics).
 
 > [!NOTE]
 > Sie können sich nicht auf den Prozess-DPI-Grad verlassen, da dieser möglicherweise [PROCESS_SYSTEM_DPI_AWARE](https://docs.microsoft.com/windows/desktop/api/shellscalingapi/ne-shellscalingapi-process_dpi_awareness) zurückgibt, auch dann, wenn der Kontext des DPI-Grads des Anwendungshauptthreads [DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE](https://docs.microsoft.com/windows/desktop/hidpi/dpi-awareness-context) lautet. Verwenden Sie die [GetThreadDpiAwarenessContext](https://docs.microsoft.com/windows/desktop/api/winuser/nf-winuser-getthreaddpiawarenesscontext)-Funktion, um den Kontext des Thread-DPI-Grads zu erhalten.
@@ -564,7 +564,7 @@ Vielleicht finden Sie auch diese zusätzlichen Methoden hilfreich:
 
 ### <a name="articles"></a>Artikel
 
-- [Die Entwicklung Per-Monitor DPI-Aware WPF-Anwendung](https://docs.microsoft.com/windows/desktop/hidpi/declaring-managed-apps-dpi-aware) bietet eine allgemeine Übersicht und Anleitung zum Schreiben von Win32-Desktopanwendungen. Viele der in diesem Artikel beschriebenen Techniken gelten auch für Office-Erweiterbarkeitslösungen.
+- [Das Entwickeln einer Per-Monitor DPI-Aware WPF-Anwendung](https://docs.microsoft.com/windows/desktop/hidpi/declaring-managed-apps-dpi-aware) bietet eine allgemeine Übersicht und Anleitung zum Schreiben von Win32-Desktopanwendungen. Viele der in diesem Artikel beschriebenen Techniken gelten auch für Office-Erweiterbarkeitslösungen.
 - 
   [DPI-Skalierung im gemischten Modus und mit DPI-Werten kompatible APIs](https://docs.microsoft.com/windows/desktop/hidpi/high-dpi-improvements-for-desktop-applications) enthält eine Liste von APIs im Zusammenhang mit DPI.
 - [Entwicklerleitfaden – DPI pro Monitor – WPF-Vorschau](https://github.com/Microsoft/WPF-Samples/blob/master/PerMonitorDPI/Developer%20Guide%20-%20Per%20Monitor%20DPI%20-%20WPF%20Preview.docx) behandelt den WPF-App-Entwicklungsleitfaden zum Erstellen von WPF-Apps, die mit DPI-Werten kompatibel sind.

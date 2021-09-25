@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249687(v=office.15)
 ms:contentKeyID: 48546515
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 4ca8c113a377543ea8624972adb5958612a3fc72
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 6c2c23ed24ecde11e182e623834f986a37b9e73f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292307"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573005"
 ---
 # <a name="getchildren-method-ado"></a>GetChildren-Methode (ADO)
 
@@ -24,13 +24,13 @@ Gibt ein [Recordset](recordset-object-ado.md)-Objekt zurück, dessen Zeilen die 
 
 ## <a name="syntax"></a>Syntax
 
-**Festgelegt** *Recordset*  =  *Record*. GetChildren
+**Set** *recordset*  =  *record*. Getchildren
 
 ## <a name="return-value"></a>Rückgabewert
 
 Ein **Recordset** -Objekt, bei dem jede Zeile ein untergeordnetes Element des aktuellen **Record** -Objekts darstellt. Das untergeordnete Element eines **Record**, der ein Verzeichnis darstellt, sind beispielsweise die Dateien und Unterverzeichnisse innerhalb des übergeordneten Verzeichnisses.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Anbieter bestimmt, welche Spalten im zurückgegebenen **Recordset**-Objekt vorhanden sind. Ein Anbieter für Dokumentquellen gibt beispielsweise immer ein **Recordset**-Ressourcenobjekt zurück.
 

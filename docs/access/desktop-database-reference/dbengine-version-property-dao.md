@@ -1,5 +1,5 @@
 ---
-title: DbEngine. Version-Eigenschaft (DAO)
+title: DBEngine.Version-Eigenschaft (DAO)
 TOCTitle: Version Property
 ms:assetid: b2807dc1-604f-4423-289a-ff38a3d9f31b
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff822024(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1052986
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 7e22645127f18ad815c398fd38f9ac4615dfadc9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c55d0770001c4232327d55cd81d1bd40a435b73d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294190"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585774"
 ---
-# <a name="dbengineversion-property-dao"></a>DbEngine. Version-Eigenschaft (DAO)
+# <a name="dbengineversion-property-dao"></a>DBEngine.Version-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -29,9 +29,9 @@ Gibt die aktuell verwendete DAO-Version zurück. Schreibgeschützter **String**-
 
 *Ausdruck* . Version
 
-*Ausdruck* Eine Variable, die ein **DBEngine** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **DBEngine**-Objekt darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Der Rückgabewert ist eine Zeichenfolge, die zu einer Versionsnummer im Format "Major. Minor" ausgewertet wird. For example, "3.0". The product version number consists of the version number (3), a period, and the release number (0).
+Der Rückgabewert ist eine Zeichenfolge, die als Versionsnummer im Format "major.minor" ausgewertet wird. For example, "3.0". The product version number consists of the version number (3), a period, and the release number (0).
 

@@ -1,20 +1,20 @@
 ---
-title: If... Dann... Else-Makroblock (benutzerdefinierte Access-Web-App)
+title: Wenn... Dann... Else-Makroblock (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 18d28dc1-c41f-47c6-b5c7-258d5f877d01
 description: Mit dem If-Makroblock können Sie eine Gruppe von Aktionen je nach Wert eines als Bedingung verwendeten Ausdrucks ausführen.
-ms.openlocfilehash: 6fe82e2c42f8e5d93cdc26798e7572e32d6cdc7e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: b7e86cd3db73d77cafcb128aee0f8c2a1a0fa991
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33434494"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614815"
 ---
-# <a name="ifthenelse-macro-block-access-custom-web-app"></a>If... Dann... Else-Makroblock (benutzerdefinierte Access-Web-App)
+# <a name="ifthenelse-macro-block-access-custom-web-app"></a>Wenn... Dann... Else-Makroblock (benutzerdefinierte Access-Web-App)
 
 Mit dem **If**-Makroblock können Sie eine Gruppe von Aktionen je nach Wert eines als Bedingung verwendeten Ausdrucks ausführen. 
   
@@ -33,7 +33,7 @@ Else
 End If
 ```
 
-## <a name="setting"></a>Setting
+## <a name="setting"></a>Einstellung
 
 For both **If** and ** Else If **, the following arguments are required. 
   

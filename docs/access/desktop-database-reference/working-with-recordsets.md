@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249711(v=office.15)
 ms:contentKeyID: 48546608
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 0d4b877b680c80a10067e19065facd4ce9e4819d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 51296cf120666a855f5a7db94b922670a27c5a69
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32305972"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572487"
 ---
 # <a name="working-with-recordsets"></a>Arbeiten mit Recordsets
 
@@ -20,7 +20,7 @@ ms.locfileid: "32305972"
 
 Das **Recordset** -Objekt weist integrierte Features auf, mit denen Sie die Reihenfolge der Daten im Resultset ändern, nach einem bestimmten Datensatz basierend auf eingegebenen Kriterien suchen und sogar diese Suchvorgänge mithilfe von Indizes optimieren können. Die Verfügbarkeit dieser Features hängt vom Anbieter und in manchen Fällen - wie z. B. bei der [Index](index-property-ado.md)-Eigenschaft - von der Struktur der Datenquelle selbst ab.
 
-## <a name="arranging-data"></a>AnOrdnen von Daten
+## <a name="arranging-data"></a>Anordnen von Daten
 
 Das Angeben einer ORDER BY-Klausel im SQL-Befehl, mit dem Ergebnisse zurückgegeben werden, ist häufig die effizienteste Methode, um die Daten im **Recordset** -Objekt anzuordnen. Möglicherweise müssen Sie jedoch die Reihenfolge der Daten in einem bereits erstellten **Recordset** -Objekt ändern. Mit der **Sort** -Eigenschaft können Sie die Reihenfolge festlegen, in der Zeilen eines **Recordset** -Objekts traversiert werden. Darüber hinaus bestimmt die **Filter** -Eigenschaft, welche Zeilen beim Traversieren der Zeilen verfügbar sind.
 
@@ -32,7 +32,7 @@ Für die **Sort** -Eigenschaft muss die [CursorLocation](cursorlocation-property
 
 Durch Festlegen der **Sort** -Eigenschaft auf eine leere Zeichenfolge werden die Zeilen auf die ursprüngliche Reihenfolge zurückgesetzt, und temporäre Indizes werden gelöscht. Vorhandene Indizes werden nicht gelöscht.
 
-Angenommen, ein **Recordset**-Objekt enthält drei Felder mit den Namen *firstName*, *middleInitial* und *lastName*. Legen Sie die **Sort** -Eigenschaft auf die Zeichenfolge "" fest, die das **Recordset** nach dem Nachnamen in absteigender Reihenfolge und dann nach Vornamen in aufsteigender Reihenfolge sortiert. Der Mittelname wird ignoriert.
+Angenommen, ein **Recordset**-Objekt enthält drei Felder mit den Namen *firstName*, *middleInitial* und *lastName*. Legen Sie die **Sort-Eigenschaft** auf die Zeichenfolge "" fest, die das **Recordset** nach dem Nachnamen in absteigender Reihenfolge und dann nach dem Vornamen in aufsteigender Reihenfolge sortiert. Der Mittelname wird ignoriert.
 
 "ASC" oder "DESC" kann nicht für Felder in Sortierkriterien verwendet werden, weil diese Namen einen Konflikt mit den Schlüsselwörtern **ASC** und **DESC** verursachen. Erstellen Sie für ein Feld mit einem Namen, der einen Konflikt verursachen würde, einen Alias. Verwenden Sie dazu das **AS** -Schlüsselwort in der Abfrage, die das **Recordset** -Objekt zurückgibt.
 
@@ -54,9 +54,9 @@ Mit der **Find**-Methode wird in einem **Recordset**-Objekt nach der Zeile gesuc
 
 Für das Kriterium kann nur ein einspaltiger Name angegeben werden. Mehrspaltige Suchvorgänge werden demnach von dieser Methode nicht unterstützt.
 
-Der Vergleichsoperator**\>** für das Kriterium kann "" (größer als), "**\<**" (kleiner als), "=" (gleich), "\>=" (größer als oder gleich), "\<=" (kleiner als oder gleich)\<\>, "" (ungleich) oder "like" (Mustervergleich) sein.
+Der Vergleichsoperator für das Kriterium kann **\>** "" (größer als), "** \<**" (less than), "=" (equal), "\> =" (größer als oder gleich), \<=" (less than or equal), "\<\> " " (ungleich) oder "LIKE" (Mustervergleich) sein.
 
-Der Wert des Kriteriums kann eine Zeichenfolge, eine Gleitkommazahl oder ein Datum sein. Zeichenfolgenwerte werden durch einfache Anführungszeichen\#oder "" (Nummernschilder) gekennzeichnet (beispielsweise "State = ' WA '" oder "State \#=\#WA"). datumswerte sind mit\#"" (nummernzeichen) zeichen (beispielsweise "start\_datum \> \#7/22/97\#") getrennt.
+Der Wert des Kriteriums kann eine Zeichenfolge, eine Gleitkommazahl oder ein Datum sein. Zeichenfolgenwerte werden durch einfache Anführungszeichen oder \# " (Nummernzeichen)-Markierungen getrennt (z. B. "state = 'WA'" oder "state = \# WA \# "). Datumswerte werden mit \# " " (Nummernzeichen)-Markierungen getrennt (z. B. \_ "Startdatum \> \# 22.7.97"). \#
 
 Wenn "like" als Vergleichsoperator verwendet wird, kann der Zeichenfolgenwert ein Sternchen (\*) enthalten, um nach mindestens einem Vorkommnis eines beliebigen Zeichens oder einer beliebigen Teilzeichenfolge zu suchen. Beispielsweise entspricht "state like 'M\*'" Maine sowie Massachusetts. Sie können auch führende und nachstehende Sternchen verwenden, um nach einer Teilzeichenfolge zu suchen, die innerhalb der Werte enthalten ist. Beispielsweise entspricht "state like '\*as\*'" Alaska, Arkansas sowie Massachusetts.
 
@@ -85,20 +85,20 @@ The **Filter** property takes a variant argument. This value represents one of t
 
 Verwenden Sie die **adFilterNone** -Konstante, um einen Filter aus einem **Recordset** -Objekt zu entfernen. Das Festlegen der **Filter** -Eigenschaft auf eine leere Zeichenfolge ("") hat dieselbe Wirkung wie das Verwenden der **adFilterNone** -Konstante.
 
-### <a name="filtering-with-a-criteria-string"></a>Filtern mit einer Kriterien-Zeichenfolge
+### <a name="filtering-with-a-criteria-string"></a>Filtern mit einer Kriterienzeichenfolge
 
-Die Zeichenfolge der Kriterien besteht aus Klauseln im *Wert* des Form FieldName-Operators (beispielsweise "LastName = ' Smith '"). Sie können zusammengesetzte Klauseln erstellen, indem Sie einzelne Klauseln mit AND (beispielsweise "LastName = ' Smith ' und FirstName = ' John '") und oder (beispielsweise) verketten. Sie können zusammengesetzte Klauseln erstellen, indem Sie einzelne Klauseln mit AND (beispielsweise "LastName = ' Smith ' und FirstName = ' John '") und oder (beispielsweise "LastName = ' Smith ' oder LastName = ' Jones '") verknüpfen. Halten Sie sich für Kriterienzeichenfolgen an die folgenden Richtlinien:
+Die Kriterienzeichenfolge besteht aus Klauseln im Format *FieldName Operator Value* (z. B. "LastName = 'Smith'"). Sie können Verbundklauseln erstellen, indem Sie einzelne Klauseln mit AND (z. B. "LastName = 'Smith' AND FirstName = 'John'") und OR (z. B. ) verketten. Sie können Verbundklauseln erstellen, indem Sie einzelne Klauseln mit AND verketten (z. B. "LastName = 'Smith' AND FirstName = 'John'") und OR (z. B. "LastName = 'Smith' OR LastName = 'Jones'"). Halten Sie sich für Kriterienzeichenfolgen an die folgenden Richtlinien:
 
 - *Feldname* muss ein gültiger Feldname aus dem **Recordset**-Objekt sein. Wenn der Feldname Leerzeichen enthält, müssen Sie ihn in eckige Klammern einschließen.
 
-- Der *Operator* muss einer der folgenden sein: \<, \>, \<=, \>=, \< \>, = oder like.
+- *Der Operator* muss einer der folgenden Werte sein: \<, \> , \<=, \> =, , = oder \<\> LIKE.
 
-- *Value* ist der Wert, mit dem Sie die Feldwerte vergleichen (beispielsweise ' Smith ', \#8/24/95\#, 12,345 oder $50,00). Verwenden Sie einfache Anführungszeichen (') mit Zeichenfolgen\#und Zeichen () mit Datumsangaben. Für Zahlen können Sie Dezimalzeichen, Dollarzeichen und die wissenschaftliche Schreibweise verwenden. Wenn *Operator* gleich LIKE ist, können für *Wert* Platzhalterzeichen verwendet werden. Nur das Sternchen (\*) und das Prozentzeichen (%) Platzhalter sind zulässig, und Sie müssen das letzte Zeichen in der Zeichenfolge sein. *Wert* darf nicht NULL sein.
+- *Wert* ist der Wert, mit dem Sie die Feldwerte vergleichen (z. B. 'Smith', \# 8/24/95, \# 12,345 oder $50,00). Verwenden Sie einfache Anführungszeichen (') mit Zeichenfolgen und Nummernzeichen ( \# ) mit Datumsangaben. Für Zahlen können Sie Dezimalzeichen, Dollarzeichen und die wissenschaftliche Schreibweise verwenden. Wenn *Operator* gleich LIKE ist, können für *Wert* Platzhalterzeichen verwendet werden. Nur das Sternchen ( \* ) und das Prozentzeichen (%) sind zulässig, und sie müssen das letzte Zeichen in der Zeichenfolge sein. *Wert* darf nicht NULL sein.
     
   > [!NOTE]
-  > Um im Filter einfache Anführungszeichen (') für *Wert* einzuschließen, verwenden Sie zwei einfache Anführungszeichen zur Darstellung eines Anführungszeichens. Um beispielsweise nach *O'Malley*zu filtern, sollte die Kriterien-Zeichenfolge "col1 = ' O ' ' Tempera '" lauten. 
+  > Um im Filter einfache Anführungszeichen (') für *Wert* einzuschließen, verwenden Sie zwei einfache Anführungszeichen zur Darstellung eines Anführungszeichens. Um z. B. nach *O'Malley* zu filtern, sollte die Kriterienzeichenfolge "col1 = 'O''Malley'" sein. 
   > 
-  > Um einfache Anführungszeichen am Anfang und am Ende des Filterwerts einzuschließen, schließen Sie die Zeichenfolge in Nummernzeichen (#) ein. Um beispielsweise nach *' 1 '* zu filtern, muss die Zeichenfolge "col1 = # ' 1 ' #" sein.
+  > Um einfache Anführungszeichen am Anfang und am Ende des Filterwerts einzuschließen, schließen Sie die Zeichenfolge in Nummernzeichen (#) ein. Um z. B. nach *'1'* zu filtern, sollte die Kriterienzeichenfolge "col1 = #'1'#" sein.
 
 Hinsichtlich AND und OR gibt es keine Rangfolge. Die Klauseln können in Klammern zusammengefasst werden. Sie können jedoch, wie im Folgenden dargestellt, Klauseln nicht gruppieren, die mit OR verknüpft sind, und dann die Gruppe mit einer anderen Klausel mit AND verknüpfen:
 
@@ -114,9 +114,9 @@ Sie würden diesen Filter stattdessen wie folgt erstellen:
 (LastName = 'Smith' AND FirstName = 'John') OR (LastName = 'Jones' AND FirstName = 'John') 
 ```
 
-In einer LIKE-Klausel können Sie einen Platzhalter am Anfang und am Ende des Musters verwenden (beispielsweise LastName like '\*mit\*') oder nur am Ende des Musters (beispielsweise) oder nur am Ende des Musters (beispielsweise LastName like "Smit\*").
+In einer LIKE-Klausel können Sie einen Platzhalter am Anfang und Am Ende des Musters verwenden (z. B. LastName Like ' \* mit \* ') oder nur am Ende des Musters (z. B. ) oder nur am Ende des Musters (z. B. LastName Like 'Smit \* ').
 
-### <a name="filtering-with-a-constant"></a>Filtern mit einer Konstanten
+### <a name="filtering-with-a-constant"></a>Filtern mit einer Konstante
 
 Die folgenden Konstanten sind für das Filtern von **Recordset**-Objekten verfügbar.
 
@@ -157,7 +157,7 @@ Die folgenden Konstanten sind für das Filtern von **Recordset**-Objekten verfü
 
 <br/>
 
-Die Filterkonstanten erleichtern das Lösen einzelner Datensatzkonflikte im Batchaktualisierungsmodus, indem Sie z. B. nur die Datensätze anzeigen können, die vom letzten Aufruf der **UpdateBatch**-Methode betroffen waren. Dies ist im folgenden Beispiel veranschaulicht:
+Die Filterkonstanten erleichtern das Lösen einzelner Datensatzkonflikte im Batchaktualisierungsmodus, indem Sie z. B. nur die Datensätze anzeigen können, die vom letzten Aufruf der **UpdateBatch** -Methode betroffen waren. Dies ist im folgenden Beispiel veranschaulicht:
 
 ```vb 
  
@@ -192,7 +192,7 @@ Die Filterkonstanten erleichtern das Lösen einzelner Datensatzkonflikte im Batc
 
 ### <a name="filtering-with-bookmarks"></a>Filtern mit Lesezeichen
 
-Finally, you can pass a variant array of bookmarks to the **Filter** property. The resulting cursor will contain only those records whose bookmark was passed in to the property. Im folgenden Codebeispiel wird ein Array von Lesezeichen aus den Datensätzen in einem **Recordset** -Objekt erstellt, das über ein "B" im Feld *ProductName* verfügt. It then passes the array to the **Filter** property and displays information about the resulting filtered **Recordset**.
+Finally, you can pass a variant array of bookmarks to the **Filter** property. The resulting cursor will contain only those records whose bookmark was passed in to the property. Im folgenden Codebeispiel wird ein Array von Textmarken aus den Datensätzen in einem **Recordset** erstellt, die im Feld *"ProductName"* den Wert "B" aufweisen. It then passes the array to the **Filter** property and displays information about the resulting filtered **Recordset**.
 
 ```vb 
  
@@ -225,7 +225,7 @@ Finally, you can pass a variant array of bookmarks to the **Filter** property. T
     'EndFilterBkmk 
 ```
 
-## <a name="creating-a-clone-of-a-recordset"></a>Erstellen eines Klons eines Recordset-Objekts
+## <a name="creating-a-clone-of-a-recordset"></a>Erstellen eines Klons eines Recordsets
 
 Mithilfe der **Clone** -Methode erstellen Sie mehrere doppelte **Recordset** -Objekte, insbesondere wenn Sie mehr als einen aktuellen Datensatz in einem bestimmten Recordset verwalten möchten. Das Verwenden der **Clone** -Methode ist effizienter als das Erstellen und Öffnen eines neuen **Recordset** -Objekts mit der gleichen Definition wie das Original.
 

@@ -6,28 +6,28 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm70002
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 84179718-d7a6-d503-08f2-213571bf108f
-ms.openlocfilehash: 8d707d4a87371dc457deae168a84d968f165f4fc
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f6e0328d40ccf38a03828c7e28f5530e43f7ef83
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33426331"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627954"
 ---
 # <a name="lockthemeeffects-cell-protection-section"></a>Zelle "LockThemeEffects" (Abschnitt "Protection")
 
-Verhindert die Anwendung von Designeffekten auf die Form. 
+Verhindert die Anwendung von Designeffekten auf das Shape. 
   
-Entspricht der **Kontrollkästchen Von Designeffekten** im Dialogfeld **Schutz.** 
+Entspricht der Einstellung des Kontrollkästchens **"Von Designeffekten"** im Dialogfeld **"Schutz".** 
   
-Verwenden Sie zum Verweisen auf die Zelle LockThemeColors anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft:** 
+Verwenden Sie zum Verweisen auf die Zelle "LockThemeColors" anhand des Namens einer anderen Formel oder eines Programms mithilfe der **CellsU-Eigenschaft** Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |LockThemeEffects  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um von einem Programm aus auf die Zelle LockThemeEffects nach Index zu verweisen: 
+To refer to the LockThemeEffects cell by index from a program, use the **CellsSRC** property with the following arguments: 
   
 |||
 |:-----|:-----|

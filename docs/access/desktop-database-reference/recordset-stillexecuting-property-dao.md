@@ -1,20 +1,20 @@
 ---
-title: Recordset. StillExecuting-Eigenschaft (DAO)
+title: Recordset.StillExecuting-Eigenschaft (DAO)
 TOCTitle: StillExecuting Property
 ms:assetid: 0e53c98f-17ac-3569-d780-540a6932013e
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845245(v=office.15)
 ms:contentKeyID: 48543245
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 1195a45c3846cf79a45c16cda8e23bc95ef8156d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: bc5f1c8b708e442aa1b547844cd30c31df9fb6e7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307567"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585361"
 ---
-# <a name="recordsetstillexecuting-property-dao"></a>Recordset. StillExecuting-Eigenschaft (DAO)
+# <a name="recordsetstillexecuting-property-dao"></a>Recordset.StillExecuting-Eigenschaft (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -22,7 +22,7 @@ ms.locfileid: "32307567"
 
 *Ausdruck* . StillExecuting
 
-*Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 

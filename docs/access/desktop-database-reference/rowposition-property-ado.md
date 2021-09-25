@@ -6,27 +6,27 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249887(v=office.15)
 ms:contentKeyID: 48547325
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 84d3ad7cc5b3d43b15ac1113f6fa00932678ebc3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 26ef8dc573e548dbdb2d35d53bd470df63ce17f9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306860"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615039"
 ---
 # <a name="rowposition-property-ado"></a>RowPosition-Eigenschaft (ADO)
 
 **Gilt für**: Access 2013, Office 2013
 
-Ruft ein OLE DB- **RowPosition** -Objekt aus einem **ADORecordsetConstruction** -Objekt ab oder legt es dafür fest. Wenn Sie **\_RowPosition** verwenden, um das **RowPosition** -Objekt festZulegen, verwendet das resultierende **Recordset** -Objekt das **RowPosition** -Objekt, um die aktuelle Zeile zu bestimmen.
+Ruft ein OLE DB- **RowPosition** -Objekt aus einem **ADORecordsetConstruction** -Objekt ab oder legt es dafür fest. Wenn Sie **\_ Put RowPosition** zum Festlegen des **RowPosition-Objekts** verwenden, verwendet das resultierende **Recordset-Objekt** das **RowPosition-Objekt,** um die aktuelle Zeile zu bestimmen.
 
 Lese-/Schreibzugriff.
 
 ## <a name="syntax"></a>Syntax
 
-HRESULT get\_RowPosition (\[Out, retval\] IUnknown\* \* ppRowPos);
+HRESULT get \_ RowPosition( \[ out, retval \] IUnknown \* \* ppRowPos);
 
-HRESULT put\_RowPosition (\[in\] IUnknown\* pRowPos);
+HRESULT put \_ RowPosition( \[ in \] IUnknown \* pRowPos);
 
 ## <a name="parameters"></a>Parameter
 
@@ -37,7 +37,7 @@ HRESULT put\_RowPosition (\[in\] IUnknown\* pRowPos);
 
 ## <a name="return-values"></a>Rückgabewerte
 
-Diese Property-Methode gibt die standardmäßigen HRESULT-\_Werte zurück,\_einschließlich S OK und e Fail.
+Diese Eigenschaftsmethode gibt die HRESULT-Standardwerte zurück, einschließlich S \_ OK und E \_ FAIL.
 
 ## <a name="remarks"></a>Bemerkungen
 

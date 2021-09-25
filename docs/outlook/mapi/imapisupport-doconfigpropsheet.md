@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPISupport.DoConfigPropsheet
 api_type:
 - COM
 ms.assetid: 3899c49c-a0ec-4dca-92e8-e801cd4908cf
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: cd8727104af694d456074614b5ea7c222c9b91b9
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 3d16b6fad12091b6e5abe3f467dff18959459fd8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429015"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596078"
 ---
 # <a name="imapisupportdoconfigpropsheet"></a>IMAPISupport::DoConfigPropsheet
 
@@ -25,7 +25,7 @@ ms.locfileid: "33429015"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Zeigt ein Konfigurationseigenschaftsblatt an.
+Zeigt ein Konfigurationseigenschaftenblatt an.
   
 ```cpp
 HRESULT DoConfigPropsheet(
@@ -42,7 +42,7 @@ HRESULT DoConfigPropsheet(
 
  _ulUIParam_
   
-> [in] Ein Handle zum übergeordneten Fenster des Eigenschaftenblatts.
+> [in] Ein Handle für das übergeordnete Fenster des Eigenschaftenblatts.
     
  _ulFlags_
   
@@ -62,23 +62,23 @@ HRESULT DoConfigPropsheet(
     
  _ulTopPage_
   
-> [in] Ein nullbasierter Index zur Standardmäßigen oberen Seite des Eigenschaftenblatts.
+> [in] Ein nullbasierter Index auf der standardmäßigen oberen Seite des Eigenschaftenblatts.
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Das Konfigurationseigenschaftsblatt wurde angezeigt.
+> Das Konfigurationseigenschaftenblatt wurde angezeigt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die **IMAPISupport::D oConfigPropsheet-Methode** wird für alle Supportobjekte implementiert. **DoConfigPropSheet** bietet eine Standardbenutzerschnittstelle zum Anzeigen der Eigenschaften von Dienstanbietern und Nachrichtendiensten. Verwenden Sie dieses Standarddialogfeld für alle Konfigurationseigenschaftsanzeigen, damit Benutzer von einer konsistenten Windows profitieren. 
+Die **IMAPISupport::D oConfigPropsheet-Methode** wird für alle Unterstützungsobjekte implementiert. **DoConfigPropSheet** bietet eine Standardbenutzeroberfläche zum Anzeigen der Eigenschaften von Dienstanbietern und Nachrichtendiensten. Sie sollten dieses Standarddialogfeld für alle Konfigurationseigenschaftenanzeigen verwenden, damit Benutzer von einer konsistenten Windows Schnittstelle profitieren. 
   
-Dienstanbieter rufen **DoConfigPropSheet** im Rahmen der Implementierung der [IMAPIStatus::SettingsDialog-Methode](imapistatus-settingsdialog.md) oder über eine Schaltfläche auf, die zum Anzeigen von Details zu Eigenschaften verwendet wird. Nachrichtendienste rufen **DoConfigPropSheet über** die Einstiegspunktfunktion des Nachrichtendiensts auf. 
+Dienstanbieter rufen **DoConfigPropSheet** im Rahmen der Implementierung der [IMAPIStatus::SettingsDialog-Methode](imapistatus-settingsdialog.md) oder über eine Schaltfläche auf, die zum Anzeigen von Details zu Eigenschaften verwendet wird. Nachrichtendienste rufen **DoConfigPropSheet** aus ihrer Nachrichtendienst-Einstiegspunktfunktion auf. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Sie können die Anzeigetabelle erstellen, auf die der  _lpDisplayTable-Parameter_ verweist, indem Sie die [BuildDisplayTable-Funktion](builddisplaytable.md) oder benutzerdefinierten Code aufrufen. 
+Sie können die Anzeigetabelle erstellen, auf die der  _parameter lpDisplayTable_ verweist, indem Sie die [BuildDisplayTable-Funktion](builddisplaytable.md) oder benutzerdefinierten Code aufrufen. 
   
 ## <a name="see-also"></a>Siehe auch
 

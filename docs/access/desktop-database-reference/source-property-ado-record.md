@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250235(v=office.15)
 ms:contentKeyID: 48548670
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 9bd1e1259eb7b089d0387dd385ee5157eeac2f34
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: e9c15b0c67aa19b6f629fb3f966be1cb0458fe26
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314553"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605883"
 ---
 # <a name="source-property-ado-record"></a>Source-Eigenschaft (ADO Record)
 
@@ -21,11 +21,11 @@ ms.locfileid: "32314553"
 
 Gibt die vom [Record](record-object-ado.md)-Objekt dargestellte Datenquelle oder das Objekt an.
 
-## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
+## <a name="settings-and-return-values"></a>Einstellungen- und Rückgabewerte
 
 Legt einen **Variant**-Wert fest, der die vom **Record**-Objekt dargestellte Entität angibt, oder gibt den Wert zurück.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **Source**-Eigenschaft gibt das *Source*-Argument der [Open](open-method-ado-record.md)-Methode des **Record**-Objekts zurück. Sie kann die Zeichenfolge einer absoluten oder relativen URL enthalten. Eine absolute URL kann verwendet werden, ohne dass die [ActiveConnection](activeconnection-property-ado.md)-Eigenschaft festgelegt werden muss, um das **Record** -Objekt direkt zu öffnen. In diesem Fall wird ein implizites **Connection**-Objekt erstellt.
 
@@ -38,6 +38,6 @@ Wenn die **ActiveConnection** -Eigenschaft ebenfalls festgelegt ist, muss die **
 Die **Source** -Eigenschaft ist nicht schreibgeschützt, wenn das **Record** -Objekt geschlossen ist, und schreibgeschützt, wenn das **Record** -Objekt geöffnet ist.
 
 > [!NOTE]
-> [!HINWEIS] Bei URLs, die das HTTP-Schema verwenden, wird automatisch der [Microsoft OLE DB-Anbieter für Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) aufgerufen. Weitere Informationen finden Sie unter [absolute und relative URLs](absolute-and-relative-urls.md).
+> [!HINWEIS] Bei URLs, die das HTTP-Schema verwenden, wird automatisch der [Microsoft OLE DB-Anbieter für Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) aufgerufen. Weitere Informationen finden Sie unter [Absolute und relative URLs.](absolute-and-relative-urls.md)
 
 

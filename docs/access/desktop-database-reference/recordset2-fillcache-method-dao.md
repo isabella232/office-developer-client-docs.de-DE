@@ -1,5 +1,5 @@
 ---
-title: Recordset2. FillCache-Methode (DAO)
+title: Recordset2.FillCache-Methode (DAO)
 TOCTitle: FillCache Method
 ms:assetid: 28a70997-a8d4-73e6-171a-61286e3d3485
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192007(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1052942
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 2098df82375ac47b7d5abe0bd63b0af2bb29ba40
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: ff230c461290751c436bda5ed6c5e32db01eeee4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309702"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606002"
 ---
-# <a name="recordset2fillcache-method-dao"></a>Recordset2. FillCache-Methode (DAO)
+# <a name="recordset2fillcache-method-dao"></a>Recordset2.FillCache-Methode (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -26,9 +26,9 @@ Füllt den lokalen Cache für ein **Recordset**-Objekt, das Daten aus einer mit 
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . FillCache (***Rows***, ***Start Bookmark***)
+*Ausdruck* . FillCache(***Rows** _, _*_StartBookmark_**)
 
-*Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset2-Objekt** darstellt.
 
 ## <a name="parameters"></a>Parameter
 
@@ -52,19 +52,19 @@ Füllt den lokalen Cache für ein **Recordset**-Objekt, das Daten aus einer mit 
 <td><p><em>Rows</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Ein <strong>Variant</strong>-Wert (Untertyp <strong>Integer</strong>), der angibt, wie viele Zeilen im Cache gespeichert werden sollen. Wenn Sie dieses Argument weglassen, wird der Wert durch die Einstellung der <strong><a href="recordset2-cachesize-property-dao.md">CacheSize</a></strong> -Eigenschaft bestimmt.</p></td>
+<td><p>Ein <strong>Variant</strong>-Wert (Untertyp <strong>Integer</strong>), der angibt, wie viele Zeilen im Cache gespeichert werden sollen. Wenn Sie dieses Argument auslassen, wird der Wert durch die <strong><a href="recordset2-cachesize-property-dao.md">CacheSize</a></strong>-Eigenschafteneinstellung festgelegt.</p></td>
 </tr>
 <tr class="even">
-<td><p><em>Start Bookmark</em></p></td>
+<td><p><em>StartBookmark</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Ein <strong>Variant</strong>-Wert (Untertyp <strong>String</strong>), der ein Lesezeichen angibt. Der Cache wird ab dem Datensatz gefüllt, der durch dieses Lesezeichen angegeben wurde. Wenn Sie dieses Argument weglassen, wird der Cache beginnend mit dem von der <strong><a href="recordset2-cachestart-property-dao.md">CacheStart</a></strong> -Eigenschaft angegebenen Datensatz gefüllt.</p></td>
+<td><p>Ein <strong>Variant</strong>-Wert (Untertyp <strong>String</strong>), der ein Lesezeichen angibt. Der Cache wird ab dem Datensatz gefüllt, der durch dieses Lesezeichen angegeben wurde. Wenn Sie dieses Argument auslassen, wird der Cache ab dem Datensatz gefüllt, der durch die <strong><a href="recordset2-cachestart-property-dao.md">CacheStart</a></strong>-Eigenschaft angegeben wurde.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Durch Zwischenspeichern wird die Leistung einer Anwendung verbessert, die Daten von einem Remoteserver abruft. Ein Cache ist Platz im lokalen Speicher, der für kürzlich vom Server abgerufene Daten reserviert ist, die voraussichtlich erneut angefordert werden, während die Anwendung ausgeführt wird. Fragt ein Benutzer Daten ab, überprüft das Microsoft Access-Datenbankmodul zuerst, ob die Daten noch im Cache vorhanden sind, bevor es sie vom Server abruft, was länger dauert. Im Cache werden nur die Daten gespeichert, die von einer ODBC-Datenquelle stammen.
 
@@ -72,7 +72,7 @@ Wenn Sie nicht warten möchten, bis der Cache mit Datensätzen gefüllt ist, die
 
 Jede mit einem Microsoft Access-Datenbankmodul verbundene ODBC-Datenquelle, auf die Sie mit **Recordset**-Objekten zugreifen, kann einen lokalen Cache haben. Sie können einen Cache erstellen, indem Sie ein **Recordset**-Objekt aus einer Remotedatenquelle öffnen und dann die **CacheSize**- und **CacheStart**-Eigenschaften des **Recordset**-Objekts festlegen.
 
-Wenn Zeilen und Start Bookmark einen Bereich von Datensätzen erstellen, die teilweise oder vollständig außerhalb des von den Eigenschaften **CacheSize** und **CacheStart** angegebenen Datensatzes liegen, wird der Teil des Recordset-Objekts außerhalb dieses Bereichs ignoriert und nicht geladen. in den Cache.
+Wenn Zeilen und Startbuchmark einen Datensatzbereich erstellen, der sich teilweise oder vollständig außerhalb des bereichs von Datensätzen befindet, der durch die **Eigenschaften CacheSize** und **CacheStart** angegeben wird, wird der Teil des Recordsets außerhalb dieses Bereichs ignoriert und nicht in den Cache geladen.
 
 Übersteigen die durch **FillCache** angeforderten Datensätze die in der Remotedatenquelle verbliebene Anzahl, ruft das Microsoft Access-Datenbankmodul nur die verbliebenen Datensätze ab, und es tritt kein Fehler auf.
 
@@ -82,7 +82,7 @@ Wenn Zeilen und Start Bookmark einen Bereich von Datensätzen erstellen, die tei
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel werden die **CreateTableDef**- und **FillCache**-Methoden und die **CacheSize**-, **CacheStart**- und **SourceTableName**-Eigenschaften verwendet, um die Datensätze in einer verknüpften Tabelle zweimal aufzuzählen. Daraufhin werden die Datensätze in einem Cache mit 50 Datensätzen zweimal aufgezählt. Anschließend enthält das Beispiel durch die verknüpfte Tabelle die Leistungsstatistik für die zwischengespeicherten und die nicht zwischengespeicherten Datensätze.
+In diesem Beispiel werden die **CreateTableDef**- und die **FillCache**-Methode sowie die **CacheSize**-, die **CacheStart**- und die **SourceTableName**-Eigenschaft verwendet, um die Datensätze in einer verknüpften Tabelle zwei Mal aufzuzählen. Anschließend werden die Einträge zweimal mit einem Cache für 50 Datensätze aufgezählt. Anschließend werden die Leistungsstatistiken für die Ausführung mit und ohne Zwischenspeicherung über die verknüpfte Tabelle angezeigt.
 
 ```vb
     Sub ClientServerX3() 

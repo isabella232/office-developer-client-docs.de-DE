@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 87ddbc35-8577-0a96-20b8-aa7734764c5b
 description: Gibt eine Blattreferenz auf das Listencontainer-Shape zurück, das das Shape enthält.
-ms.openlocfilehash: 748a248f68345e97e97ca90a4603b6e164a551c4
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ef5a5870077910eb28525e4073fdcf0ea874c58e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429551"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59574013"
 ---
 # <a name="listsheetref-function"></a>LISTSHEETREF Function
 
@@ -31,13 +31,13 @@ LISTMEMBERCOUNT()
 
 ShapeSheet-Referenz
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn es sich bei dem Shape nicht um ein Listenelement handelt, gibt die LISTSHEETREF-Funktion #REF! zurück.
   
 ## <a name="example"></a>Beispiel
 
-LISTSHEETREF(1)! Height 
+LISTSHEETREF(1)! Höhe 
   
 Gibt den Werte in der Zelle "Height" des Listencontainer-Shapes zurück, das das Shape enthält. 
   

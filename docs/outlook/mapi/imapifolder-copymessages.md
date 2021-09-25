@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPIFolder.CopyMessages
 api_type:
 - COM
 ms.assetid: 4c7d2110-3fcb-4b9f-bf20-1dc1a611161d
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 21aa28e1a2c11ee7361fb4921f8d527b3e3ceb44
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 5cb92a74e20cddc9a7e86555980d6babdea7b32d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424455"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59576051"
 ---
 # <a name="imapifoldercopymessages"></a>IMAPIFolder::CopyMessages
 
@@ -42,11 +42,11 @@ HRESULT CopyMessages(
 
  _lpMsgList_
   
-> [in] Ein Zeiger auf ein Array von [ENTRYLIST-Strukturen,](entrylist.md) die die zu kopierende oder verschiebende Nachricht oder Nachrichten identifizieren. 
+> [in] Ein Zeiger auf ein Array von [ENTRYLIST-Strukturen,](entrylist.md) die die zu kopierenden oder zu verschiebenden Nachrichten identifizieren. 
     
  _lpInterface_
   
-> [in] Ein Zeiger auf die Schnittstellen-ID (Interface Identifier, IID), die die Schnittstelle darstellt, die für den Zugriff auf den Zielordner verwendet werden soll, auf den der  _lpDestFolder-Parameter_ verweist. Das Übergeben von NULL führt dazu, dass der Dienstanbieter die Standardordnerschnittstelle [IMAPIFolder : IMAPIContainer zurück gibt.](imapifolderimapicontainer.md) Clients müssen NULL übergeben. Andere Aufrufer können den  _lpInterface-Parameter_ auf IID_IUnknown, IID_IMAPIProp, IID_IMAPIContainer oder IID_IMAPIFolder. 
+> [in] Ein Zeiger auf den Schnittstellenbezeichner (IID), der die Schnittstelle darstellt, die für den Zugriff auf den Zielordner verwendet werden soll, auf den der  _lpDestFolder-Parameter_ verweist. Wenn NULL übergeben wird, gibt der Dienstanbieter die Standardordnerschnittstelle [IMAPIFolder zurück: IMAPIContainer](imapifolderimapicontainer.md). Clients müssen NULL übergeben. Andere Aufrufer können den  _parameter lpInterface_ auf IID_IUnknown, IID_IMAPIProp, IID_IMAPIContainer oder IID_IMAPIFolder festlegen. 
     
  _lpDestFolder_
   
@@ -54,19 +54,19 @@ HRESULT CopyMessages(
     
  _ulUIParam_
   
-> [in] Ein Handle zum übergeordneten Fenster aller Dialogfelder oder Fenster, die diese Methode anzeigt. Der _ulUIParam-Parameter_ wird ignoriert, es sei denn, der Client legt das MESSAGE_DIALOG im _ulFlags-Parameter_ fest und übergibt NULL im _lpProgress-Parameter._ 
+> [in] Ein Handle für das übergeordnete Fenster aller Dialogfelder oder Fenster, die von dieser Methode angezeigt werden. Der _ulUIParam-Parameter_ wird ignoriert, es sei denn, der Client legt das MESSAGE_DIALOG Flag im _ulFlags-Parameter_ fest und übergibt NULL im _lpProgress-Parameter._ 
     
  _lpProgress_
   
-> [in] Ein Zeiger auf ein Statusobjekt, das eine Statusanzeige anzeigt. Wenn NULL in  _lpProgress übergeben_ wird, zeigt der Nachrichtenspeicheranbieter mithilfe der MAPI-Fortschrittsobjektimplementierung eine Statusanzeige an. Der _lpProgress-Parameter_ wird ignoriert, es sei denn, MESSAGE_DIALOG in _ulFlags festgelegt ist._
+> [in] Ein Zeiger auf ein Statusobjekt, das eine Statusanzeige anzeigt. Wenn NULL in  _lpProgress_ übergeben wird, zeigt der Nachrichtenspeicheranbieter mithilfe der MAPI-Fortschrittsobjektimplementierungen eine Statusanzeige an. Der  _parameter lpProgress_ wird ignoriert, es sei denn, das flag MESSAGE_DIALOG in  _ulFlags_ festgelegt ist.
     
  _ulFlags_
   
-> [in] Eine Bitmaske mit Flags, die steuert, wie der Kopier- oder Verschiebevorgang durchgeführt wird. Die folgenden Kennzeichen können festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie der Kopier- oder Verschiebungsvorgang ausgeführt wird. Die folgenden Flags können festgelegt werden:
     
 MAPI_DECLINE_OK 
   
-> Informiert den Nachrichtenspeicheranbieter, MAPI_E_DECLINE_COPY sofort zurückzukehren, wenn **er IMAPIFolder::CopyMessages** implementiert, indem die [IMAPISupport::D oCopyTo-](imapisupport-docopyto.md) oder [IMAPISupport::D oCopyProps-Methode](imapisupport-docopyprops.md) des Supportobjekts aufruft. 
+> Informiert den Nachrichtenspeicheranbieter, sofort MAPI_E_DECLINE_COPY zurückzugeben, wenn **IMAPIFolder::CopyMessages** implementiert wird, indem die [IMAPISupport::D oCopyTo-](imapisupport-docopyto.md) oder [IMAPISupport::D oCopyProps-Methode](imapisupport-docopyprops.md) des Supportobjekts aufgerufen wird. 
     
 MESSAGE_DIALOG 
   
@@ -74,7 +74,7 @@ MESSAGE_DIALOG
     
 MESSAGE_MOVE 
   
-> Die Nachricht oder Nachrichten sollen verschoben werden, anstatt sie zu kopieren. Wenn MESSAGE_MOVE nicht festgelegt ist, werden die Nachrichten kopiert.
+> Die Nachricht oder Die Nachrichten werden verschoben, anstatt kopiert zu werden. Wenn MESSAGE_MOVE nicht festgelegt ist, werden die Nachrichten kopiert.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -84,13 +84,13 @@ S_OK
     
 MAPI_E_DECLINE_COPY 
   
-> Der Anbieter implementiert diese Methode durch Aufrufen einer Supportobjektmethode, und der Aufrufer hat das MAPI_DECLINE_OK übergeben.
+> Der Anbieter implementiert diese Methode durch Aufrufen einer Supportobjektmethode, und der Aufrufer hat das flag MAPI_DECLINE_OK übergeben.
     
 MAPI_W_PARTIAL_COMPLETION 
   
-> Der Aufruf ist erfolgreich, aber nicht alle Einträge wurden erfolgreich kopiert oder verschoben. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich behandelt werden. Verwenden Sie zum Testen dieser Warnung das **HR_FAILED** Makro. Weitere Informationen finden Sie unter [Using Macros for Error Handling](using-macros-for-error-handling.md).
+> Der Aufruf war erfolgreich, aber nicht alle Einträge wurden erfolgreich kopiert oder verschoben. Wenn diese Warnung zurückgegeben wird, sollte der Aufruf als erfolgreich behandelt werden. Verwenden Sie das Makro **HR_FAILED, um** diese Warnung zu testen. Weitere Informationen finden Sie unter [Verwenden von Makros für die Fehlerbehandlung.](using-macros-for-error-handling.md)
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPIFolder::CopyMessages-Methode** kopiert oder verschiebt Nachrichten in einen anderen Ordner. 
   
@@ -98,21 +98,21 @@ Nachrichten, die mit Lese-/Schreibberechtigung geöffnet werden, können verscho
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Wenn Sie Nachrichten in einen anderen Nachrichtenspeicher kopieren, ohne die [IMAPISupport::CopyMessages-Methode](imapisupport-copymessages.md) zu verwenden, müssen Sie zunächst [IMAPIFolder::SetReadFlags](imapifolder-setreadflags.md) mit dem GENERATE_RECEIPT_ONLY aufrufen. Der empfangende Nachrichtenspeicher ist nicht für das Generieren von Leseberichten für die kopierten oder verschobenen Nachrichten verantwortlich. Wenn Sie **IMAPISupport::CopyMessages** aufrufen, um **IMAPIFolder::CopyMessages** zu implementieren, rufen Sie **SetReadFlags** nicht auf. MAPI wird es aufrufen. 
+Wenn Sie Nachrichten in einen anderen Nachrichtenspeicher kopieren, ohne die [IMAPISupport::CopyMessages-Methode](imapisupport-copymessages.md) zu verwenden, müssen Sie zuerst [IMAPIFolder::SetReadFlags](imapifolder-setreadflags.md) aufrufen, wobei das GENERATE_RECEIPT_ONLY-Flag festgelegt ist. Der empfangende Nachrichtenspeicher ist nicht für das Generieren von Leseberichten für die kopierten oder verschobenen Nachrichten verantwortlich. Wenn Sie **IMAPISupport::CopyMessages** aufrufen, um **IMAPIFolder::CopyMessages** zu implementieren, rufen Sie **setReadFlags** nicht auf; MAPI ruft sie auf. 
   
-Ihre Implementierung kann die Nachrichten in beliebiger Reihenfolge verschieben oder kopieren und Lesestatusberichte in beliebiger Reihenfolge generieren. Das heißt, Sie können das Kopieren von Nachrichten beenden, bevor Sie einen der Lesestatusberichte generieren oder die Berichte senden, bevor Die Implementierung den Kopiervorgang startet. Leseberichte sollten jedoch gesendet werden, damit alle Nachrichten kopiert werden, unabhängig davon, ob die Kopie erfolgreich ist.
+Ihre Implementierung kann die Nachrichten in beliebiger Reihenfolge verschieben oder kopieren und Lesestatusberichte in beliebiger Reihenfolge generieren. Das heißt, Sie können das Kopieren von Nachrichten beenden, bevor Sie einen der Lesestatusberichte generieren, oder die Berichte senden, bevor die Implementierung den Kopiervorgang startet. Leseberichte sollten jedoch für alle zu kopierenden Nachrichten gesendet werden, unabhängig davon, ob die Kopie erfolgreich ist.
   
-Wenn der Kopier- oder Verschiebevorgang mehrere Nachrichten umfasst, führen Sie den Vorgang so vollständig wie möglich aus. Beenden Sie den Vorgang nicht vorzeitig, es sei denn, es tritt ein Fehler auf, der sich außerhalb Ihres Steuerelements befindet, z. B. nicht genügend Arbeitsspeicher, nicht genügend Speicherplatz oder Beschädigungen im Nachrichtenspeicher.
+Wenn der Kopier- oder Verschiebungsvorgang mehrere Nachrichten umfasst, führen Sie den Vorgang so vollständig wie möglich aus. Beenden Sie den Vorgang nicht vorzeitig, es sei denn, es tritt ein Fehler auf, der außerhalb Ihrer Kontrolle liegt, z. B. zu wenig Arbeitsspeicher, nicht genügend Speicherplatz oder Beschädigungen im Nachrichtenspeicher.
   
-Versuchen Sie, Eintragsbezeichner für alle Verschieben- oder Kopiervorgänge zu verwalten. Sie sollten auch Eintragsbezeichner beibehalten, obwohl sie nicht erforderlich sind.
+Versuchen Sie, Eintragsbezeichner über Verschiebungs- oder Kopiervorgänge hinweg zu verwalten. Sie sollten auch Eintragsbezeichner beibehalten, obwohl dies nicht erforderlich ist.
   
-Senden Sie Benachrichtigungen, wenn Sie Nachrichten verschieben oder kopieren, damit Clients darauf warnt werden, dass ihre Aufrufe der [IMAPIProp::SaveChanges-Methoden](imapiprop-savechanges.md) der Nachrichten fehlschlagen können. 
+Senden Sie Benachrichtigungen, wenn Sie Nachrichten verschieben oder kopieren, damit Clients gewarnt werden, dass ihre Aufrufe an die [IMAPIProp::SaveChanges-Methoden](imapiprop-savechanges.md) der Nachrichten fehlschlagen können. 
   
-Schließen Sie den Status einer Nachricht nicht in den Kopier- oder Verschiebevorgang ein. Das Verschieben oder Kopieren eines Nachrichtenstatus wirkt sich stark auf die Leistung aus.
+Schließen Sie den Status einer Nachricht nicht in den Kopier- oder Verschiebungsvorgang ein. Das Verschieben oder Kopieren eines Nachrichtenstatus wirkt sich erheblich auf die Leistung aus.
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Verwenden **Sie IMAPIFolder::CopyMessages** zum Auffüllen von Suchergebnissenordnern, in denen Nachrichten häufig nach übergeordneten Ordnern gruppieren. 
+Verwenden Sie **IMAPIFolder::CopyMessages,** um Suchergebnisordner aufzufüllen, in denen Nachrichten häufig nach übergeordnetem Ordner gruppiert werden. 
   
 Erwarten Sie diese Rückgabewerte unter den folgenden Bedingungen.
   
@@ -122,7 +122,7 @@ Erwarten Sie diese Rückgabewerte unter den folgenden Bedingungen.
 |**IMAPIFolder::CopyMessages** konnte nicht jede Nachricht erfolgreich kopieren oder verschieben.  <br/> |MAPI_W_PARTIAL_COMPLETION  <br/> |
 |**IMAPIFolder::CopyMessages** konnte nicht abgeschlossen werden.  <br/> |Beliebiger Fehlerwert  <br/> |
    
-Wenn **IMAPIFolder::CopyMessages** nicht abgeschlossen werden kann, gehen Sie nicht davon aus, dass keine Arbeit ausgeführt wurde. **IMAPIFolder::CopyMessages** konnte möglicherweise eine oder mehrere Nachrichten kopieren oder verschieben, bevor der Fehler aufgetreten ist. 
+Wenn **IMAPIFolder::CopyMessages** nicht abgeschlossen werden kann, gehen Sie nicht davon aus, dass keine Arbeit ausgeführt wurde. **IMAPIFolder::CopyMessages** konnte möglicherweise eine oder mehrere Nachrichten kopieren oder verschieben, bevor der Fehler auftritt. 
   
 ## <a name="see-also"></a>Siehe auch
 

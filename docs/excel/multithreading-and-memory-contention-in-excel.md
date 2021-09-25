@@ -1,81 +1,81 @@
 ---
-title: Multithreading und Memory Contention in Excel
+title: Multithreading und Speicherkonflikte in Excel
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 keywords:
-- Multithreading in Excel, Arbeitsspeicher-Streit in Excel,Funktionen [Excel 2007], threadsichere, threadsichere Funktionen [Excel 2007],thread-lokaler Speicher [Excel 2007]
-localization_priority: Normal
+- multithreading in excel,memory contention in Excel,functions [Excel 2007], threadsichere, threadsichere Funktionen [Excel 2007],threadlokaler Speicher [Excel 2007]
+ms.localizationpriority: medium
 ms.assetid: 86e1e842-f433-4ea9-8b13-ad2515fc50d8
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: a385728450fc6519d7f5211c186a9d74e623bf7b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 74f431357b74a117888eca847151a6145b2473e3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301638"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621423"
 ---
-# <a name="multithreading-and-memory-contention-in-excel"></a>Multithreading und Memory Contention in Excel
+# <a name="multithreading-and-memory-contention-in-excel"></a>Multithreading und Speicherkonflikte in Excel
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Versionen von Microsoft Excel vor Excel 2007 verwenden einen einzelnen Thread für alle Arbeitsblattberechnungen. Ab Excel 2007 kann Excel für die Verwendung von 1 bis 1024 gleichzeitigen Threads für die Arbeitsblattberechnung konfiguriert werden. Auf einem Computer mit mehreren Prozessoren oder mehreren Kernen entspricht die Standardanzahl von Threads der Anzahl der Prozessoren oder Kerne. Daher können threadsichere Zellen oder Zellen, die nur threadsichere Funktionen enthalten, gleichzeitigen Threads zugewiesen werden, vorbehaltlich der üblichen Neuberechnungslogik, die nach ihren Vorgängern berechnet werden muss.
+Versionen von Microsoft Excel vor Excel 2007 verwenden einen einzelnen Thread für alle Arbeitsblattberechnungen. Ab Excel 2007 können Excel jedoch für die Verwendung von gleichzeitigen Threads von 1 bis 1024 für die Arbeitsblattberechnung konfiguriert werden. Auf einem Computer mit mehreren Prozessoren oder Mitkernen entspricht die Standardanzahl von Threads der Anzahl der Prozessoren oder Kerne. Daher können threadsichere Zellen oder Zellen, die nur threadsichere Funktionen enthalten, gleichzeitigen Threads zugewiesen werden, die der üblichen Neuberechnungslogik unterliegen, die nach ihren Vorgängern berechnet werden muss.
   
-## <a name="thread-safe-functions"></a>Thread-Safe-Funktionen
+## <a name="thread-safe-functions"></a>Thread-Safe Funktionen
 
-Die meisten integrierten Arbeitsblattfunktionen ab Excel 2007 sind threadsicher. Sie können auch XLL-Funktionen als threadsicher schreiben und registrieren. Excel verwendet einen Thread (seinen Hauptthread), um alle Befehle, threadunsicheren Funktionen, **xlAuto-Funktionen** (außer [xlAutoFree](xlautofree-xlautofree12.md) und **xlAutoFree12)** und COM- und Visual Basic for Applications (VBA)-Funktionen auf aufruft.
+Die meisten der integrierten Arbeitsblattfunktionen ab Excel 2007 sind threadsicher. Sie können XLL-Funktionen auch als threadsicher schreiben und registrieren. Excel verwendet einen Thread (den Hauptthread), um alle Befehle, threadunsicheren Funktionen, **xlAuto-Funktionen** (außer [xlAutoFree](xlautofree-xlautofree12.md) und **xlAutoFree12)** sowie COM- und Visual Basic for Applications -Funktionen (VBA) aufzurufen.
   
-Wenn eine XLL-Funktion einen **XLOPER-** oder **XLOPER12-Wert** mit **xlbitDLLFree-Satz** zurückgibt, verwendet Excel denselben Thread, für den der Funktionsaufruf zum Aufrufen von **xlAutoFree** oder **xlAutoFree12** ausgeführt wurde. Der Aufruf von **xlAutoFree** oder **xlAutoFree12** erfolgt vor dem nächsten Funktionsaufruf in diesem Thread. 
+Wenn eine XLL-Funktion **XLOPER** oder **XLOPER12** mit **xlbitDLLFree-Satz** zurückgibt, verwendet Excel denselben Thread, in dem der Funktionsaufruf ausgeführt wurde, um **xlAutoFree** oder **xlAutoFree12** aufzurufen. Der Aufruf von **xlAutoFree** oder **xlAutoFree12** erfolgt vor dem nächsten Funktionsaufruf für diesen Thread. 
   
-Für XLL-Entwickler gibt es Vorteile für das Erstellen threadsicherer Funktionen:
+Für XLL-Entwickler gibt es Vorteile beim Erstellen threadsicherer Funktionen:
   
-- Sie ermöglichen Excel, das Beste aus einem Multiprozessor- oder Multi-Core-Computer zu machen.
+- Sie ermöglichen Excel, einen Computer mit mehreren Prozessoren oder Mitkernen optimal zu nutzen.
     
-- Sie eröffnen die Möglichkeit, Remoteserver viel effizienter zu verwenden, als dies mit einem einzigen Thread möglich ist.
+- Sie bieten die Möglichkeit, Remoteserver viel effizienter zu verwenden, als dies mit einem einzigen Thread möglich ist.
     
-Angenommen, Sie verfügen über einen Computer mit einem Prozessor, der für die Verwendung, z. B.  *N-Threads, konfiguriert*  wurde. Angenommen, es wird eine Kalkulationstabelle ausgeführt, die eine große Anzahl von Aufrufen an eine XLL-Funktion sendet, die wiederum eine Anforderung für Daten oder eine Berechnung an einen Remoteserver oder Cluster von Servern sendet. Abhängig von der Topologie der Abhängigkeitsstruktur Excel die Funktion fast zeitgleich aufrufen. Vorausgesetzt, der Server oder die Server sind ausreichend schnell oder parallel, kann die Neuberechnungszeit der Tabelle um den Faktor 1/N reduziert werden. 
+Angenommen, Sie verfügen über einen Computer mit einem Einzelnen Prozessor, der für die Verwendung von z. B.  *N-Threads*  konfiguriert wurde. Angenommen, eine Kalkulationstabelle wird ausgeführt, die eine große Anzahl von Aufrufen an eine XLL-Funktion ausführt, die wiederum eine Anforderung für Daten oder für eine Berechnung an einen Remoteserver oder einen Servercluster sendet. Abhängig von der Topologie der Abhängigkeitsstruktur können Excel die Funktion fast gleichzeitig N-mal aufrufen. Vorausgesetzt, dass der Server oder die Server ausreichend schnell oder parallel sind, kann die Neuberechnungszeit der Kalkulationstabelle um den Faktor 1/N reduziert werden. 
   
-Das wichtigste Problem beim Schreiben von threadsicheren Funktionen ist die korrekte Behandlung von Ressourceninhalten. Dies bedeutet in der Regel Speicher-Streit, und er kann in zwei Probleme aufgeschlüsselt werden:
+Das hauptproblem beim Schreiben threadsicherer Funktionen ist die ordnungsgemäße Behandlung von Ressourcenkonflikten. Dies bedeutet in der Regel Speicherkonflikte und kann in zwei Probleme unterteilt werden:
   
-- So erstellen Sie Speicher, von dem Sie wissen, dass er nur von diesem Thread verwendet wird.
+- Wie Sie Arbeitsspeicher erstellen, von dem Sie wissen, dass er nur von diesem Thread verwendet wird.
     
-- So stellen Sie sicher, dass auf freigegebenen Arbeitsspeicher von mehreren Threads sicher zugegriffen wird.
+- So stellen Sie sicher, dass mehrere Threads sicher auf gemeinsam genutzten Speicher zugreifen.
     
-Zunächst ist zu beachten, auf welchen Speicher in einer XLL alle Threads und nur der aktuell ausgeführte Thread zugriffen kann.
+Beachten Sie zunächst, auf welchen Speicher in einer XLL von allen Threads zugegriffen werden kann und was nur vom derzeit ausgeführten Thread zugänglich ist.
   
  **Zugriff durch alle Threads**
   
-- Variablen, Strukturen und Klasseninstanzen, die außerhalb des Textkörpers einer Funktion deklariert werden.
+- Variablen, Strukturen und Klasseninstanzen, die außerhalb des Textkörpers einer Funktion deklariert sind.
     
-- Statische Variablen, die innerhalb des Textkörpers einer Funktion deklariert werden.
+- Statische Variablen, die im Textkörper einer Funktion deklariert sind.
     
-In diesen beiden Fällen wird der Arbeitsspeicher im Speicherblock der DLL, der für diese Instanz der DLL erstellt wurde, beiseite gelegt. Wenn eine andere Anwendungsinstanz die DLL lädt, ruft sie eine eigene Kopie dieses Speichers ab, sodass es keinen Streit über diese Ressourcen außerhalb dieser Instanz der DLL gibt.
+In diesen beiden Fällen wird Speicher im Speicherblock der DLL reserviert, der für diese Instanz der DLL erstellt wurde. Wenn eine andere Anwendungsinstanz die DLL lädt, erhält sie eine eigene Kopie dieses Speichers, sodass keine Konflikte für diese Ressourcen von außerhalb dieser Instanz der DLL vorhanden sind.
   
- **Zugriff nur durch den aktuellen Thread**
+ **Nur über den aktuellen Thread zugänglich**
   
-- Automatische Variablen im Funktionscode (einschließlich Funktionsargumenten).
+- Automatische Variablen innerhalb des Funktionscodes (einschließlich Funktionsargumenten).
     
-In diesem Fall wird der Arbeitsspeicher auf dem Stapel für jede Instanz des Funktionsaufrufs beiseite gelegt.
+In diesem Fall wird Speicher für jede Instanz des Funktionsaufrufs auf dem Stapel reserviert.
   
 > [!NOTE]
-> Der Bereich des dynamisch zugewiesenen Arbeitsspeichers hängt vom Bereich des Zeigers ab, der darauf zeigt: Wenn auf den Zeiger von allen Threads zugegriffen werden kann, ist auch der Arbeitsspeicher vorhanden. Wenn es sich bei dem Zeiger um eine automatische Variable in einer Funktion handelt, ist der zugewiesene Arbeitsspeicher für diesen Thread praktisch privat. 
+> Der Bereich des dynamisch zugewiesenen Speichers hängt vom Bereich des Zeigers ab, der darauf zeigt: Wenn der Zeiger von allen Threads zugänglich ist, ist auch der Speicher verfügbar. Wenn es sich bei dem Zeiger um eine automatische Variable in einer Funktion handelt, ist der zugewiesene Speicher für diesen Thread effektiv privat. 
   
-## <a name="memory-accessible-by-only-one-thread-thread-local-memory"></a>Arbeitsspeicher, auf den nur ein Thread zugegriffen werden kann: Thread-Local Speicher
+## <a name="memory-accessible-by-only-one-thread-thread-local-memory"></a>Speicher, auf den nur ein Thread zugriffen kann: Thread-Local Arbeitsspeicher
 
-Da auf statische Variablen im Textkörper einer Funktion von allen Threads zugegriffen werden kann, sind Funktionen, die sie verwenden, eindeutig nicht threadsicher. Eine Instanz der Funktion in einem Thread kann den Wert ändern, während eine andere Instanz in einem anderen Thread davon aus geht, dass es sich um etwas völlig anderes handelt. 
+Angesichts der Tatsache, dass statische Variablen im Textkörper einer Funktion für alle Threads zugänglich sind, sind funktionen, die sie verwenden, eindeutig nicht threadsicher. Eine Instanz der Funktion in einem Thread könnte den Wert ändern, während eine andere Instanz in einem anderen Thread davon ausgeht, dass es sich um eine völlig andere handelt. 
   
 Es gibt zwei Gründe für das Deklarieren statischer Variablen innerhalb einer Funktion:
   
-1. Statische Daten werden von einem Aufruf zum nächsten beibehalten.
+1. Statische Daten bleiben von einem Aufruf zum nächsten erhalten.
     
 2. Ein Zeiger auf statische Daten kann von der Funktion sicher zurückgegeben werden.
     
-Im ersten Fall möchten Sie möglicherweise Daten haben, die beibehalten werden und für alle Aufrufe der Funktion bedeutungslos sind: vielleicht ein einfacher Indikator, der jedes Mal erhöht wird, wenn die Funktion für einen Thread aufgerufen wird, oder eine Struktur, die Nutzungs- und Leistungsdaten für jeden Aufruf sammelt. Die Frage ist, wie die freigegebenen Daten oder die Datenstruktur geschützt werden. Dies wird am besten mithilfe des kritischen Abschnitts durchgeführt, wie im nächsten Abschnitt erläutert wird.
+Im ersten Fall möchten Sie möglicherweise Daten haben, die beibehalten werden und bedeutungsgemäß für alle Aufrufe der Funktion haben: vielleicht ein einfacher Zähler, der bei jedem Aufruf der Funktion in einem beliebigen Thread erhöht wird, oder eine Struktur, die Bei jedem Aufruf Nutzungs- und Leistungsdaten sammelt. Die Frage ist, wie die freigegebenen Daten oder die Datenstruktur geschützt werden. Dies geschieht am besten mithilfe eines kritischen Abschnitts, wie im nächsten Abschnitt erläutert.
   
-Wenn die Daten nur für die Verwendung durch diesen Thread vorgesehen sind, was aus Grund 1 der Fall sein kann und immer aus Grund 2 der Fall ist, stellt sich die Frage, wie Speicher erstellt wird, der beibehalten wird, aber nur über diesen Thread zugänglich ist. Eine Lösung besteht in der Verwendung der Thread-Local Storage (TLS)-API.
+Wenn die Daten nur für die Verwendung durch diesen Thread vorgesehen sind, was für Grund 1 der Fall sein kann und für Grund 2 immer der Fall ist, ist die Frage, wie Speicher erstellt wird, der beibehalten wird, aber nur über diesen Thread zugänglich ist. Eine Lösung besteht darin, die Thread-Local Storage (TLS)-API zu verwenden.
   
-Betrachten Sie beispielsweise eine Funktion, die einen Zeiger auf einen **XLOPER -Wert zurückgibt.**
+Betrachten Sie beispielsweise eine Funktion, die einen Zeiger auf einen **XLOPER** zurückgibt.
   
 ```cs
 LPXLOPER12 WINAPI mtr_unsafe_example(LPXLOPER12 pxArg)
@@ -86,7 +86,7 @@ LPXLOPER12 WINAPI mtr_unsafe_example(LPXLOPER12 pxArg)
 }
 ```
 
-Diese Funktion ist nicht threadsicher, da ein Thread die statische **XLOPER12** zurückgeben kann, während ein anderer sie überschreiben kann. Die Wahrscheinlichkeit, dass dies geschieht, ist noch größer, wenn **xlOPER12** an **xlAutoFree12 übergeben werden muss.** Eine Lösung besteht in der Zuweisung einer **XLOPER12,** der Rückgabe eines Zeigers und der Implementierung von **xlAutoFree12,** sodass der **XLOPER12-Speicher** selbst frei wird. Dieser Ansatz wird in vielen beispielfunktionen in [Memory Management in Excel verwendet.](memory-management-in-excel.md)
+Diese Funktion ist nicht threadsicher, da ein Thread den statischen **XLOPER12** zurückgeben kann, während ein anderer ihn überschreibt. Die Wahrscheinlichkeit, dass dies geschieht, ist immer noch größer, wenn **xlOPER12** an **xlAutoFree12** übergeben werden muss. Eine Lösung besteht darin, **xlOPER12** zuzuweisen, einen Zeiger darauf zurückzugeben und **xlAutoFree12** zu implementieren, sodass der **XLOPER12-Speicher** selbst freigegeben wird. Dieser Ansatz wird in vielen der Beispielfunktionen verwendet, die in der [Speicherverwaltung in Excel](memory-management-in-excel.md)gezeigt werden.
   
 ```cs
 LPXLOPER12 WINAPI mtr_safe_example_1(LPXLOPER12 pxArg)
@@ -99,9 +99,9 @@ LPXLOPER12 WINAPI mtr_safe_example_1(LPXLOPER12 pxArg)
 }
 ```
 
-Dieser Ansatz ist einfacher zu implementieren als der im nächsten Abschnitt beschriebene Ansatz, der auf der TLS-API basiert, hat jedoch einige Nachteile. Zunächst muss Excel **xlAutoFree** xlAutoFree12 aufrufen, unabhängig vom Typ der /   zurückgegebenen **XLOPER** /  **XLOPER12**. Zweitens gibt es beim Zurückgeben von **XLOPER** XLOPER12 s ein Problem, das den Rückgabewert eines Aufrufs einer /  C-API-Rückruffunktion darstellt. **XlOPER** XLOPER12 kann auf Arbeitsspeicher verweisen, der von Excel frei werden muss, der /   **XLOPER** /  **XLOPER12** selbst muss jedoch auf die gleiche Weise frei werden, wie er zugewiesen wurde. Wenn ein solcher **XLOPER** XLOPER12 als Rückgabewert einer XLL-Arbeitsblattfunktion verwendet werden soll, gibt es keine einfache Möglichkeit, /   **xlAutoFree** /  **xlAutoFree12** darüber zu informieren, dass beide Zeiger auf die entsprechende Weise frei gemacht werden müssen. (Das Festlegen von **xlbitXLFree** und **xlbitDLLFree** löst das Problem nicht, da die Behandlung von **XLOPER/XLOPER12s** in Excel mit beiden Satz nicht definiert ist und möglicherweise von Version zu Version geändert wird.) Um dieses Problem zu beheben, kann die XLL tiefe Kopien aller Excel **zugewiesenen XLOPER/XLOPER12s** erstellen, die an das Arbeitsblatt zurückgegeben werden. 
+Dieser Ansatz ist einfacher zu implementieren als der im nächsten Abschnitt beschriebene Ansatz, der von der TLS-API abhängt, aber einige Nachteile hat. Zuerst müssen Excel **xlAutoFree** /  **xlAutoFree12** unabhängig vom Typ der zurückgegebenen **XLOPER** /  **XLOPER12** aufrufen. Zweitens gibt es ein Problem beim Zurückgeben von **XLOPER** /  **XLOPER12-Werten,** die den Rückgabewert eines Aufrufs einer C-API-Rückruffunktion darstellen. XlOPER  /  **XLOPER12** verweist möglicherweise auf Speicher, der von Excel freigegeben werden muss, aber der **XLOPER** /  **XLOPER12** selbst muss auf die gleiche Weise freigegeben werden, wie er zugewiesen wurde. Wenn eine solche **XLOPER** /  **XLOPER12** als Rückgabewert einer XLL-Arbeitsblattfunktion verwendet werden soll, gibt es keine einfache Möglichkeit, **xlAutoFree** /  **xlAutoFree12** darüber zu informieren, dass beide Zeiger auf die richtige Weise freigegeben werden müssen. (Das Festlegen von **xlbitXLFree** und **xlbitDLLFree** löst das Problem nicht, da die Behandlung von **XLOPER/XLOPER12s** in Excel mit beiden Einstellungen nicht definiert ist und von Version zu Version geändert werden kann.) Um dieses Problem zu umgehen, kann die XLL tiefe Kopien aller Excel **zugewiesenen XLOPER/XLOPER12s** erstellen, die sie an das Arbeitsblatt zurückgibt. 
   
-Eine Lösung, die diese Einschränkungen vermeidet, besteht im Auffüllen und Zurückgeben eines thread lokalen **XLOPER/XLOPER12-Ansatzes,** der erfordert, dass **xlAutoFree/xlAutoFree12** den **XLOPER/XLOPER12-Zeiger** selbst nicht frei gibt. 
+Eine Lösung, die diese Einschränkungen vermeidet, ist das Auffüllen und Zurückgeben eines threadlokalen **XLOPER/XLOPER12**- ein Ansatz, der erfordert, dass **xlAutoFree/xlAutoFree12** den **XLOPER/XLOPER12-Zeiger** selbst nicht freigibt. 
   
 ```cs
 LPXLOPER12 get_thread_local_xloper12(void);
@@ -115,7 +115,7 @@ LPXLOPER12 WINAPI mtr_safe_example_2(LPXLOPER12 pxArg)
 
 ```
 
-Die nächste Frage ist, wie Sie den thread-lokalen Speicher einrichten und  abrufen, d. h. wie sie die Funktion get_thread_local_xloper12 im vorherigen Beispiel implementieren. Dies erfolgt mithilfe der Thread Local Storage (TLS)-API. Der erste Schritt besteht im Abrufen eines TLS-Index mithilfe von **TlsAlloc**, der letztendlich mit **TlsFree freigegeben werden muss.** Beides wird am besten über **DllMain erreicht.**
+Die nächste Frage ist, wie der threadlokale Speicher eingerichtet und abgerufen wird, mit anderen Worten, wie die Funktion **get_thread_local_xloper12** im vorherigen Beispiel implementiert wird. Dies erfolgt mithilfe der THREAD LOCAL Storage (TLS)-API. Der erste Schritt besteht darin, einen TLS-Index mithilfe von **TlsAlloc** abzurufen, der letztendlich mit **TlsFree** freigegeben werden muss. Beides ist am besten mit **dllMain** erreicht.
   
 ```cs
 // This implementation just calls a function to set up
@@ -142,9 +142,9 @@ BOOL TLS_Action(DWORD DllMainCallReason)
 }
 ```
 
-Nachdem Sie den Index erhalten haben, besteht der nächste Schritt in der Zuweisung eines Speicherblocks für jeden Thread. In [Windows Entwicklungsdokumentation](https://msdn.microsoft.com/library/ms682583%28VS.85%29.aspx) wird empfohlen, dies jedes Mal zu tun, wenn die **DllMain-Rückruffunktion** mit einem **DLL_THREAD_ATTACH-Ereignis** aufgerufen wird, und den Arbeitsspeicher für alle **DLL_THREAD_DETACH.** Wenn Sie jedoch diesen Ratschlag erhalten, würde ihre DLL unnötige Arbeit für Threads tun, die nicht für die Neuberechnung verwendet werden. 
+Nachdem Sie den Index erhalten haben, besteht der nächste Schritt darin, für jeden Thread einen Speicherblock zuzuweisen. In [der Windows-Entwicklungsdokumentation](https://msdn.microsoft.com/library/ms682583%28VS.85%29.aspx) wird empfohlen, dies jedes Mal zu tun, wenn die **DllMain-Rückruffunktion** mit einem **DLL_THREAD_ATTACH-Ereignis** aufgerufen wird, und den Speicher auf jedem **DLL_THREAD_DETACH** freizugeben. Wenn Sie diese Empfehlung befolgen, führt die DLL jedoch dazu, dass sie unnötige Arbeit für Threads ausführt, die nicht für die Neuberechnung verwendet werden. 
   
-Stattdessen ist es besser, eine Strategie zum Zuordnen bei erster Verwendung zu verwenden. Zunächst müssen Sie eine Struktur definieren, die Sie für jeden Thread zuordnen möchten. Für die vorherigen Beispiele, die **XLOPERs** oder **XLOPER12s** zurückgeben, reicht das Folgende aus, Aber Sie können eine beliebige Struktur erstellen, die Ihren Anforderungen entspricht.
+Stattdessen ist es besser, eine Strategie für die Zuweisung bei der ersten Verwendung zu verwenden. Zunächst müssen Sie eine Struktur definieren, die Sie für jeden Thread zuordnen möchten. Für die vorherigen Beispiele, die **XLOPERs** oder **XLOPER12s** zurückgeben, reicht Folgendes aus, Sie können jedoch eine beliebige Struktur erstellen, die Ihren Anforderungen entspricht.
   
 ```cs
 struct TLS_data
@@ -155,7 +155,7 @@ struct TLS_data
 };
 ```
 
-Die folgende Funktion ruft einen Zeiger auf die thread-lokale Instanz ab oder weist einen zu, wenn dies der erste Aufruf ist.
+Die folgende Funktion ruft einen Zeiger auf die threadlokale Instanz ab oder weist eine zu, wenn dies der erste Aufruf ist.
   
 ```cs
 TLS_data *get_TLS_data(void)
@@ -173,7 +173,7 @@ TLS_data *get_TLS_data(void)
 }
 ```
 
-Jetzt können Sie sehen, wie der thread-lokale **XLOPER/XLOPER12-Speicher** erhalten wird: Zuerst erhalten Sie einen Zeiger auf die Threadinstanz von **TLS_data**, und dann geben Sie einen Zeiger auf den darin enthaltenen **XLOPER/XLOPER12** zurück, wie folgt. 
+Nun können Sie sehen, wie der **threadlokale XLOPER/XLOPER12-Speicher** abgerufen wird: Zuerst erhalten Sie einen Zeiger auf die Instanz des Threads **von TLS_data,** und dann geben Sie wie folgt einen Zeiger auf den darin enthaltenen **XLOPER/XLOPER12** zurück. 
   
 ```cs
 LPXLOPER get_thread_local_xloper(void)
@@ -193,13 +193,13 @@ LPXLOPER12 get_thread_local_xloper12(void)
 
 ```
 
-Die **mtr_safe_example_1** und **mtr_safe_example_2** können als threadsichere Arbeitsblattfunktionen registriert werden, wenn Sie Excel. Sie können die beiden Ansätze jedoch nicht in einer XLL kombinieren. Ihre XLL kann nur eine Implementierung von **xlAutoFree** und **xlAutoFree12** exportieren, und jede Speicherstrategie erfordert einen anderen Ansatz. Bei **mtr_safe_example_1** der an **xlAutoFree/xlAutoFree12** übergebene Zeiger zusammen mit allen Daten, auf die er verweist, frei. Bei **mtr_safe_example_2** nur die Daten mit Spitzstrichen frei.
+Die **Funktionen mtr_safe_example_1** und **mtr_safe_example_2** können als threadsichere Arbeitsblattfunktionen registriert werden, wenn Sie Excel ausführen. Sie können die beiden Ansätze jedoch nicht in einer XLL kombinieren. Ihre XLL kann nur eine Implementierung von **xlAutoFree** und **xlAutoFree12** exportieren, und jede Speicherstrategie erfordert einen anderen Ansatz. Bei **mtr_safe_example_1** muss der an **xlAutoFree/xlAutoFree12** übergebene Zeiger zusammen mit allen Daten, auf die er verweist, freigegeben werden. Bei **mtr_safe_example_2** sollten nur die Daten freigegeben werden, auf die verwiesen wird.
   
-Windows bietet auch eine Funktion **GetCurrentThreadId**, die die eindeutige systemweite ID des aktuellen Threads zurückgibt. Dies bietet dem Entwickler eine andere Möglichkeit, code thread sicher zu machen oder seinen Verhaltensthread spezifisch zu machen.
+Windows stellt auch eine Funktion **"GetCurrentThreadId"** bereit, die die eindeutige systemweite ID des aktuellen Threads zurückgibt. Dadurch erhält der Entwickler eine andere Möglichkeit, codethreadsicher zu machen oder seinen Verhaltensthread spezifisch zu gestalten.
   
-## <a name="memory-accessible-only-by-more-than-one-thread-critical-sections"></a>Nur von mehreren Threads auf Arbeitsspeicher barrierefrei: Kritische Abschnitte
+## <a name="memory-accessible-only-by-more-than-one-thread-critical-sections"></a>Nur von mehr als einem Thread zugänglicher Speicher: Wichtige Abschnitte
 
-Sie sollten den Lese-/Schreibspeicher schützen, auf den mehrere Threads in kritischen Abschnitten zugreifen können. Sie benötigen einen benannten kritischen Abschnitt für jeden Speicherblock, den Sie schützen möchten. Sie können diese während des Aufrufs der **xlAutoOpen-Funktion** initialisieren und lossenken und während des Aufrufs der **xlAutoClose-Funktion** auf NULL festlegen. Anschließend müssen Sie jeden Zugriff auf den geschützten Block innerhalb eines Aufrufpaars von **EnterCriticalSection** und **LeaveCriticalSection enthalten.** Es ist immer nur ein Thread in den kritischen Abschnitt zulässig. Im Folgenden finden Sie ein Beispiel für die Initialisierung, Uninitialisierung und Verwendung eines Abschnitts namens **g_csSharedTable**.
+Sie sollten Lese-/Schreibzugriff auf Speicher schützen, auf den über kritische Abschnitte von mehreren Threads zugegriffen werden kann. Sie benötigen einen benannten kritischen Abschnitt für jeden Speicherblock, den Sie schützen möchten. Sie können diese während des Aufrufs der **xlAutoOpen-Funktion** initialisieren, freigeben und während des Aufrufs der **xlAutoClose-Funktion** auf NULL festlegen. Sie müssen dann jeden Zugriff auf den geschützten Block innerhalb eines Aufrufpaars von **EnterCriticalSection** und **LeaveCriticalSection** enthalten. Es ist immer nur ein Thread im kritischen Abschnitt zulässig. Hier sehen Sie ein Beispiel für die Initialisierung, Die Initialisierung und Die Verwendung eines Abschnitts mit dem Namen **g_csSharedTable**.
   
 ```cs
 CRITICAL_SECTION g_csSharedTable; // global scope (if required)
@@ -241,9 +241,9 @@ bool set_shared_table_element(unsigned int index, double d)
 }
 ```
 
-Eine andere, vielleicht sicherere Möglichkeit zum Schutz eines Speicherblocks besteht in der Erstellung einer Klasse, die eigene **CRITICAL_SECTION** enthält und deren Konstruktor-, Destruktor- und Accessormethoden sich um ihre Verwendung kümmern. Dieser Ansatz hat den zusätzlichen Vorteil, dass Objekte geschützt werden, die vor der Ausführung von **xlAutoOpen** initialisiert werden oder nach dem Aufgerufen von **xlAutoClose** erhalten bleiben. Sie sollten jedoch vorsichtig sein, wenn Sie zu viele kritische Abschnitte und den dadurch zu erstellenden Betriebssystemaufwand erstellen. 
+Eine weitere, vielleicht sicherere Möglichkeit zum Schutz eines Speicherblocks besteht darin, eine Klasse zu erstellen, die eine eigene **CRITICAL_SECTION** enthält und deren Konstruktor-, Destruktor- und Accessormethoden die Verwendung übernehmen. Dieser Ansatz bietet den zusätzlichen Vorteil, Objekte zu schützen, die vor der Ausführung von **xlAutoOpen** initialisiert werden können, oder nach dem Aufruf von **xlAutoClose** erhalten bleiben. Sie sollten jedoch vorsichtig sein, wenn Sie zu viele kritische Abschnitte und den damit verbundenen Betriebssystemmehraufwand erstellen. 
   
-Wenn Sie über Code verfügen, der gleichzeitig Zugriff auf mehr als einen Geschützten Speicherblock benötigt, müssen Sie die Reihenfolge, in der die kritischen Abschnitte eingegeben und beendet werden, sehr sorgfältig berücksichtigen. Die folgenden beiden Funktionen könnten beispielsweise einen Deadlock erzeugen.
+Wenn Sie über Code verfügen, der gleichzeitig Zugriff auf mehrere Geschützte Speicherblocks benötigt, müssen Sie die Reihenfolge, in der die kritischen Abschnitte eingegeben und beendet werden, sehr sorgfältig abwägen. Die folgenden beiden Funktionen könnten z. B. einen Deadlock erzeugen.
   
 ```cs
 // WARNING: Do not copy this code. These two functions
@@ -274,7 +274,7 @@ bool copy_shared_table_element_B_to_A(unsigned int index)
 }
 ```
 
-Wenn die erste Funktion in  einem Thread g_csSharedTableA, während die zweite in einem anderen Thread **g_csSharedTableB,** hängen beide Threads. Der richtige Ansatz besteht in einer konsistenten Reihenfolge und beenden Sie wie folgt in umgekehrter Reihenfolge.
+Wenn die erste Funktion in einem Thread **g_csSharedTableA** eingibt, während der zweite in einem anderen Thread **g_csSharedTableB** wechselt, hängen beide Threads hängen. Der richtige Ansatz besteht darin, wie folgt in einer konsistenten Reihenfolge einzugeben und in umgekehrter Reihenfolge zu beenden.
   
 ```cs
     EnterCriticalSection(&g_csSharedTableA);
@@ -284,7 +284,7 @@ Wenn die erste Funktion in  einem Thread g_csSharedTableA, während die zweite i
     LeaveCriticalSection(&g_csSharedTableA);
 ```
 
-Nach Möglichkeit ist es aus Der Sicht der Threadkooperation besser, den Zugriff auf unterschiedliche Blöcke zu isolieren, wie hier gezeigt.
+Wenn möglich, ist es aus Sicht der Thread-Zusammenarbeit besser, den Zugriff auf unterschiedliche Blöcke zu isolieren, wie hier gezeigt.
   
 ```cs
 bool copy_shared_table_element_A_to_B(unsigned int index)
@@ -300,7 +300,7 @@ bool copy_shared_table_element_A_to_B(unsigned int index)
 }
 ```
 
-Wenn es für eine freigegebene Ressource viele Streit gibt, z. B. häufige Zugriffsanforderungen für kurze Zeit, sollten Sie die Möglichkeit des kritischen Abschnitts zum Drehen in Betracht ziehen. Dies ist eine Technik, die das Warten auf die Ressource weniger prozessorintensiv macht. Dazu können Sie entweder **InitializeCriticalSectionAndSpinCount** beim Initialisieren des Abschnitts oder **SetCriticalSectionSpinCount** nach der Initialisierung verwenden, um die Anzahl der Threadschleifen vor dem Warten auf die Verfügbarheit von Ressourcen zu festlegen. Der Wartevorgang ist aufwändig, daher wird dies durch Das Drehen vermieden, wenn die Ressource in der Zwischenzeit frei wird. Bei einem Einzelnen Prozessorsystem wird die Anzahl der Drehungen effektiv ignoriert, Sie können sie jedoch trotzdem angeben, ohne schaden zu müssen. Der Speicherheap-Manager verwendet eine Drehanzahl von 4000. Weitere Informationen zur Verwendung kritischer Abschnitte finden Sie in der Dokumentation Windows SDK. 
+Wenn es viele Konflikte für eine freigegebene Ressource gibt, z. B. häufige Zugriffsanfragen mit kurzer Dauer, sollten Sie erwägen, die Drehungsfähigkeit des kritischen Abschnitts zu verwenden. Dies ist eine Technik, die das Warten auf die Ressource weniger prozessorintensiv macht. Zu diesem Zweck können Sie entweder **InitializeCriticalSectionAndSpinCount** beim Initialisieren des Abschnitts oder **SetCriticalSectionSpinCount** nach der Initialisierung verwenden, um festzulegen, wie oft der Thread durchlaufen wird, bevor darauf gewartet wird, dass Ressourcen verfügbar werden. Der Wartevorgang ist teuer, daher wird dies beim Drehen vermieden, wenn die Ressource in der Zwischenzeit freigegeben wird. Bei einem einzelnen Prozessorsystem wird die Drehungsanzahl effektiv ignoriert, Sie können sie aber trotzdem angeben, ohne schaden zu müssen. Der Speicher-Heap-Manager verwendet eine Drehungsanzahl von 4000. Weitere Informationen zur Verwendung wichtiger Abschnitte finden Sie in der Windows SDK-Dokumentation. 
   
 ## <a name="see-also"></a>Siehe auch
 

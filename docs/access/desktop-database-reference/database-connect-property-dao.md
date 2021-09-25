@@ -1,20 +1,20 @@
 ---
-title: Database. Connect-Eigenschaft (DAO)
+title: Datenbank. Verbinden-Eigenschaft (DAO)
 TOCTitle: Connect Property
 ms:assetid: c3e511a6-baef-3758-cfb1-3459b0b19cf3
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff823048(v=office.15)
 ms:contentKeyID: 48547578
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: cb3566a4f402c1b8ae75a47880f2101bf35d77db
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 95d5814d41651287c23e7913103c30387691a50d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294988"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585984"
 ---
-# <a name="databaseconnect-property-dao"></a>Database. Connect-Eigenschaft (DAO)
+# <a name="databaseconnect-property-dao"></a>Datenbank. Verbinden-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -23,7 +23,7 @@ Legt einen Wert fest, der Informationen zur Quelle einer geöffneten Datenbank b
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Verbinden
+*expression* .Connect
 
 *Ausdruck* Eine Variable, die ein **Database** -Objekt darstellt.
 
@@ -33,7 +33,7 @@ Die Einstellung der **Connect**-Eigenschaft ist ein **String**-Wert, der aus ein
 
 Sie können eine SQL-Pass-Through-Abfrage für eine Tabelle ausführen, die mit Ihrer Microsoft Access-Datenbankdatei verknüpft ist, indem Sie zunächst die **Connect**-Eigenschaft der Datenbank der verknüpften Tabelle auf eine gültige ODBC-Verbindungszeichenfolge festlegen.
 
-Der Pfad, wie in der folgenden Tabelle dargestellt, ist der vollständige Pfad für das Verzeichnis, das die Datenbankdateien enthält, und es muss der Bezeichner DATABASE = vorangestellt werden. In einigen Fällen (wie in den Datenbanken von Microsoft Excel und Microsoft Access-Datenbankmodul) sollten Sie einen bestimmten Dateinamen in das Argument Datenbankpfad aufnehmen.
+Der Pfad ist der vollständige Pfadname für das Verzeichnis, das die Datenbankdateien enthält, wie in der folgenden Tabelle dargestellt. Der Pfadname muss mit dem Bezeichner DATABASE= beginnen. In einigen Fällen (wie bei Microsoft Excel- und Microsoft Access-Datenbanken) muss ein spezifischer Dateiname in das Argument des Datenbankpfads einbezogen werden.
 
 In der folgenden Tabelle sind die möglichen Datenbanktypen und ihre entsprechenden Datenbankbezeichner und Pfadnamen für die Einstellungen der **Connect**-Eigenschaft aufgelistet.
 
@@ -89,37 +89,37 @@ In der folgenden Tabelle sind die möglichen Datenbanktypen und ihre entsprechen
 <tr class="even">
 <td><p>Microsoft Excel 3.0</p></td>
 <td><p>Excel 3.0;</p></td>
-<td><p>Laufwerk: \ path\filename.xls</p></td>
+<td><p>Laufwerk:\Pfad\Dateiname.xls</p></td>
 </tr>
 <tr class="odd">
 <td><p>Microsoft Excel 4.0</p></td>
 <td><p>Excel 4.0;</p></td>
-<td><p>Laufwerk: \ path\filename.xls</p></td>
+<td><p>Laufwerk:\Pfad\Dateiname.xls</p></td>
 </tr>
 <tr class="even">
 <td><p>Microsoft Excel 5.0 oder Microsoft Excel 95</p></td>
 <td><p>Excel 5.0;</p></td>
-<td><p>Laufwerk: \ path\filename.xls</p></td>
+<td><p>Laufwerk:\Pfad\Dateiname.xls</p></td>
 </tr>
 <tr class="odd">
 <td><p>Microsoft Excel 97</p></td>
 <td><p>Excel 8.0;</p></td>
-<td><p>Laufwerk: \ path\filename.xls</p></td>
+<td><p>Laufwerk:\Pfad\Dateiname.xls</p></td>
 </tr>
 <tr class="even">
 <td><p>Lotus 1-2-3 WKS und WK1</p></td>
 <td><p>Lotus WK1;</p></td>
-<td><p>Laufwerk: \ path\filename.WK1</p></td>
+<td><p>Laufwerk:\Pfad\Dateiname.wk1</p></td>
 </tr>
 <tr class="odd">
 <td><p>Lotus 1-2-3 WK3</p></td>
 <td><p>Lotus WK3;</p></td>
-<td><p>Laufwerk: \ path\filename.WK3</p></td>
+<td><p>Laufwerk:\Pfad\Dateiname.wk3</p></td>
 </tr>
 <tr class="even">
 <td><p>Lotus 1-2-3 WK4</p></td>
 <td><p>Lotus WK4;</p></td>
-<td><p>Laufwerk: \ path\filename.WK4</p></td>
+<td><p>Laufwerk:\Pfad\Dateiname.wk4</p></td>
 </tr>
 <tr class="odd">
 <td><p>HTML-Import</p></td>
@@ -143,7 +143,7 @@ In der folgenden Tabelle sind die möglichen Datenbanktypen und ihre entsprechen
 </tr>
 <tr class="odd">
 <td><p>Microsoft Exchange</p></td>
-<td><p>Exchange 4,0; MAPILEVEL = folderPath; [BASISTYP = {0 | 1}]; [PROFILE = Profil;] [PWD = Kennwort;] [DATABASE = Datenbank;]</p></td>
+<td><p>Exchange 4.0; MAPILEVEL=Ordnerpfad; [TABLETYPE={ 0 | 1 }];[PROFILE=Profil;] [PWD=Kennwort;] [DATABASE=Datenbank;]</p></td>
 <td><p>Laufwerk:\Pfad\Dateiname</p></td>
 </tr>
 </tbody>
@@ -156,11 +156,11 @@ Wenn ein Kennwort erforderlich ist, aber in der **Connect**-Eigenschaft nicht an
 
 Für Daten in Microsoft Exchange muss für den erforderlichen MAPILEVEL-Schlüssel ein vollständig aufgelöster Ordnerpfad angegeben werden (z. B. "Mailbox - Pat SmithIAlpha/Today"). Der Pfad umfasst nicht den Namen des Ordners, der als Tabelle geöffnet wird. Der Name dieses Ordners muss stattdessen als name-Argument der **CreateTable**-Methode angegeben werden. Zum Öffnen eines Ordners muss der TABLETYPE-Schlüssel auf "0" gesetzt werden (Standard), zum Öffnen eines Adressbuchs muss er den Wert "1" erhalten. Der PROFILE-Schlüssel erhält standardmäßig den Wert des aktuell verwendeten Profils.
 
-Sie können die **Connect** -Eigenschaft für ein **Database** -Objekt festlegen, indem Sie der OpenDatabase-Methode ein Source-Argument bereitstellen. **** Überprüfen Sie die Einstellung, um den Typ, den Pfad, die Benutzer-ID, das Kennwort oder die ODBC-Datenquelle der Datenbank zu ermitteln.
+Sie können die **Verbinden-Eigenschaft** für ein **Database-Objekt** festlegen, indem Sie ein Quellargument für die **OpenDatabase-Methode** angeben. Überprüfen Sie die Einstellung, um den Typ, den Pfad, die Benutzer-ID, das Kennwort oder die ODBC-Datenquelle der Datenbank zu ermitteln.
 
 
 > [!NOTE]
-> - Sie müssen die **Connect**-Eigenschaft vor der **ReturnsRecords**-Eigenschaft festlegen.
+> - Vor dem Festlegen der **ReturnsRecords**-Eigenschaft müssen Sie die **Connect**-Eigenschaft festlegen.
 > - Sie müssen die Zugriffsberechtigungen für den Computer besitzen, der den Datenbankserver enthält, auf den Sie zugreifen wollen.
 
 

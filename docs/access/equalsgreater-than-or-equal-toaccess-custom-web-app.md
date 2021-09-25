@@ -6,13 +6,13 @@ ms.audience: Developer
 ms.topic: reference
 ms.assetid: cceb8dcb-5ce1-4c32-b057-6201b62a646f
 description: Vergleicht zwei Ausdrücke im Hinblick auf größer als oder gleich.
-localization_priority: Priority
-ms.openlocfilehash: 76472544be950c68f3b5d42fe13b3040e9268f48
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: e72991960d1b4ff5d6ac9dcecb17f50bf98871b1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32302499"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59614864"
 ---
 # <a name="greater-than-or-equal-to-access-custom-web-app"></a>Größer oder gleich (benutzerdefinierte Access-Web-App)
 
@@ -33,7 +33,7 @@ Vergleicht zwei Ausdrücke im Hinblick auf größer als oder gleich.
 
 **Boolescher Wert**
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie Ausdrücke vergleichen, die nicht null sind, so lautet das Ergebnis „TRUE“, wenn der linke Operand einen Wert aufweist, der größer oder gleich dem rechten Operanden ist, andernfalls ist das Ergebnis „FALSE“.
   

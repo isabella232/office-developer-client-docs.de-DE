@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249633(v=office.15)
 ms:contentKeyID: 48546301
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 40c35e8b2c3fb3f0b92bf261b62c252a61a367b4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c0304e104953a5c95f25ca22ba719756dccc6ecc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306447"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605918"
 ---
 # <a name="shape-append-clause"></a>Shape Append-Klausel
 
@@ -100,12 +100,12 @@ Die Teile dieser Klausel lauten wie folgt:
 
 
 > [!NOTE]
-> - Die _"Parent-column to child-column"_ -Klausel ist tatsächlich eine Liste, in der jede definierte Beziehung durch ein Komma getrennt ist.
+> - Die _Klausel "parent-column TO child-column"_ ist tatsächlich eine Liste, in der jede definierte Beziehung durch ein Komma getrennt ist.
 > - Die Klausel hinter dem APPEND-Schlüsselwort ist tatsächlich eine Liste, in der die einzelnen Klauseln durch ein Komma getrennt werden und eine weitere Spalte definiert wird, die der übergeordneten Spalte angefügt werden soll.
 
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn Sie Anbieterbefehle aus Benutzereingaben als Teil eines SHAPE-Befehls erstellen, wird der vom Benutzer bereitgestellte Anbieterbefehl von SHAPE als undurchsichtige Zeichenfolge behandelt und originalgetreu dem Anbieter übergeben. Beispielsweise werden im folgenden SHAPE-Befehl
 
@@ -114,21 +114,21 @@ Wenn Sie Anbieterbefehle aus Benutzereingaben als Teil eines SHAPE-Befehls erste
 SHAPE {select * from t1} APPEND ({select * from t2} RELATE k1 TO k2) 
 ```
 
-SHAPE führt zwei Befehle aus: wählen \* Sie von T1 aus, \* und wählen Sie aus T2 Beziehung K1 zu K2 aus. Wenn der Benutzer einen Verbundbefehl bereitstellt, der aus mehreren durch Semikolons getrennten Anbieterbefehlen besteht, wird der Unterschied von SHAPE nicht erkannt. Im folgenden SHAPE-Befehl
+SHAPE führt zwei Befehle \* aus: auswählen aus t1 und (auswählen \* aus t2 RELATE k1 ZU k2). Wenn der Benutzer einen Verbundbefehl bereitstellt, der aus mehreren durch Semikolons getrennten Anbieterbefehlen besteht, wird der Unterschied von SHAPE nicht erkannt. Im folgenden SHAPE-Befehl
 
 ```vb 
  
 SHAPE {select * from t1; drop table t1} APPEND ({select * from t2} RELATE k1 TO k2) 
 ```
 
-Form führt Auswahl \* aus T1 aus; DROP TABLE T1 and (Select \* from T2 Relate K1 to K2), nicht erkennen, dass DROP TABLE T1 ein separates und in diesem Fall ein gefährlicher, Anbieterbefehl ist. Die Benutzereingabe muss von Anwendungen immer überprüft werden, um derartige potenzielle Hackerangriffe zu verhindern.
+SHAPE führt eine Auswahl \* aus t1; drop table t1 und (select \* from t2 RELATE k1 TO k2) aus, ohne zu erkennen, dass drop table t1 ein separater und in diesem Fall gefährlicher Anbieterbefehl ist. Die Benutzereingabe muss von Anwendungen immer überprüft werden, um derartige potenzielle Hackerangriffe zu verhindern.
 
 Dieser Abschnitt enthält die folgenden Themen:
 
-- [Betrieb von nicht parametrisierten Befehlen](operation-of-non-parameterized-commands.md)
+- [Ausführen von nicht parametrisierten Befehlen](operation-of-non-parameterized-commands.md)
 
-- [Betrieb von parametrisierten Befehlen](operation-of-parameterized-commands.md)
+- [Operation von parametrisierten Befehlen](operation-of-parameterized-commands.md)
 
-- [Hybrid Befehle](hybrid-commands.md)
+- [Hybridbefehle](hybrid-commands.md)
 
-- [Dazwischenliegende Shape COMPUTE-Klauseln](intervening-shape-compute-clauses.md)
+- [Dazwischenliegende COMPUTE-Klauseln](intervening-shape-compute-clauses.md)
