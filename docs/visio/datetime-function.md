@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251413
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0bf7f757-0b7f-dec1-9709-6612c9ad0d53
-description: Gibt den Datums- und Uhrzeitwert zurück, der durch datetime oder expression dargestellt wird.
-ms.openlocfilehash: 2da084f685c044d48495b04f727a877140b51004
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: Gibt den Datums- und Uhrzeitwert zurück, der durch DateTime oder Ausdruck dargestellt wird.
+ms.openlocfilehash: 2d8d3bd17bf2c89b09b59a203bbe21a33bc6d8f0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360319"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594636"
 ---
 # <a name="datetime-function"></a>DATETIME-Funktion
 
-Gibt den Datums- und Uhrzeitwert zurück, der durch _datetime oder_ expression dargestellt _wird._
+Gibt den Datums- und Uhrzeitwert zurück, der durch  _DateTime_ oder  _Ausdruck_ dargestellt wird.
   
 ## <a name="syntax"></a>Syntax
 
@@ -28,21 +28,21 @@ DATETIME(" ** *datetime* ** "| ** *Ausdruck* ** [, ** *lcid* ** ])
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _datetime_ <br/> |Erforderlich  <br/> |**String** <br/> |Beliebige Zeichenfolge, die allgemein als Datums- und Zeitangabe erkannt wird, oder ein Bezug auf eine Zelle mit einer Datums- und Zeitangabe.  <br/> |
+| _Datetime_ <br/> |Erforderlich  <br/> |**String** <br/> |Beliebige Zeichenfolge, die allgemein als Datums- und Zeitangabe erkannt wird, oder ein Bezug auf eine Zelle mit einer Datums- und Zeitangabe.  <br/> |
 | _expression_ <br/> |Erforderlich  <br/> |**String** <br/> |Beliebiger Ausdruck, der eine Datums- und Zeitangabe liefert.  <br/> |
-| _lcid_ <br/> |Optional.  <br/> |**Number** <br/> |Gibt den lokalen Bezeichner an, der bei der Auswertung eines nicht lokalen Werts für datetime verwendet werden soll. Der lokale Bezeichner ist eine Zahl, die in den Systemkopfdateien beschrieben wird.  <br/> |
+| _lcid_ <br/> |Optional  <br/> |**Number** <br/> |Gibt den lokalen Bezeichner an, der bei der Auswertung eines nicht lokalen Werts für datetime verwendet werden soll. Der lokale Bezeichner ist eine Zahl, die in den Systemkopfdateien beschrieben wird.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
 Datetime
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn  *datetime*  fehlt oder nicht als gültiges Datum oder eine gültige Uhrzeit interpretiert werden kann, gibt DATETIME eine #VALUE! zurück. 
   
 Der Wert wird in dem kurzen Zeit- und Datumsformat geliefert, das aktuell in den länderspezifischen Systemeinstellungen festgelegt ist. 
   
-Die DATETIME-Funktion akzeptiert auch  einen einzelnen Zahlenwert für den Ausdruck, wobei der ganzzahlige Teil des Ergebnisses die Anzahl der Tage seit dem 30. Dezember 1899 darstellt, und der Dezimalteil den Bruchteil eines Tages seit Mitternacht darstellt. 
+Die DATETIME-Funktion akzeptiert auch einen einzelnen Zahlenwert für  *einen Ausdruck,*  wobei der ganzzahlige Teil des Ergebnisses die Anzahl der Tage seit dem 30. Dezember 1899 darstellt und der Dezimalteil den Bruchteil eines Tags seit Mitternacht darstellt. 
   
 ## <a name="example-1"></a>Beispiel 1
 

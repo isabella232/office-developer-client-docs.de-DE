@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b1783f05-ced1-917f-8298-eca4ecfa3912
 description: Enthält Informationen zu einer Schriftart.
-ms.openlocfilehash: 773b5f10607cc6d515671d93d7d4abd9e39e72ff
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 1d67c8c246236dd39cfc2a1fde39b0e9a0d24014
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34541015"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59582722"
 ---
 # <a name="facename-element-facenames_type-complextype-visio-xml"></a>FaceName-Element (FaceNames_Type complexType) (Visio XML)
 
@@ -36,7 +36,7 @@ Enthält Informationen zu einer Schriftart.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -52,10 +52,10 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|CharSets  <br/> |xsd:string  <br/> |Optional  <br/> |Die unterstützten Zeichensätze der Schriftart.  <br/> |Werte des xsd:string-Typs.  <br/> |
-|Flags  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> |Kennzeichen, die Folgendes angeben: fehlende Schriftart, Standardschriftart, asiatische Schriftart, komplexe Schriftart, vertikale Schriftart und Schriftarttyp.  <br/> |Werte des xsd:unsignedInt-Typs.  <br/> |
-|NameU  <br/> |xsd:string  <br/> |erforderlich  <br/> |Der Name der Schriftart als UTF-16-Unicode-Zeichenfolge.  <br/> ||
-|Panos  <br/> |xsd:string  <br/> |Optional  <br/> |Die Panosesignatur für die Schriftart. Panose ist ein Klassifizierungssystem für Schriftarten, das sie basierend auf ihren visuellen Merkmalen kategorisiert.  <br/> |Werte des xsd:string-Typs.  <br/> |
-|UnicodeRanges  <br/> |xsd:string  <br/> |Optional  <br/> |Die unterstützten Unicode-Bereiche der Schriftart.  <br/> |Werte des xsd:string-Typs.  <br/> |
+|Zeichensätze  <br/> |xsd:string  <br/> |Optional  <br/> |Die unterstützten Zeichensätze der Schriftart.  <br/> |Werte des Typs "xsd:string".  <br/> |
+|Flags  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> |Kennzeichen, die Folgendes angeben: fehlende Schriftart, Standardschriftart, asiatische Schriftart, komplexe Schriftart, vertikale Schriftart und Schriftarttyp.  <br/> |Werte des Typs "xsd:unsignedInt".  <br/> |
+|NameU  <br/> |xsd:string  <br/> |Erforderlich  <br/> |Der Name der Schriftart als UTF-16 Unicode-Zeichenfolge.  <br/> ||
+|Panos  <br/> |xsd:string  <br/> |Optional  <br/> |Die Panosesignatur für die Schriftart. Panose ist ein Klassifizierungssystem für Schriftarten, das sie basierend auf ihren visuellen Merkmalen kategorisiert.  <br/> |Werte des Typs "xsd:string".  <br/> |
+|UnicodeRanges  <br/> |xsd:string  <br/> |Optional  <br/> |Die unterstützten Unicode-Bereiche der Schriftart.  <br/> |Werte des Typs "xsd:string".  <br/> |
    
 

@@ -4,19 +4,19 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: aaea2c76-b373-419c-9782-240e32c5e1e0
-description: Dieser Abschnitt enthält Referenzinhalte für die folgenden APIs in der Outlook 2013-Hilfsreferenz.
-ms.openlocfilehash: 2c5e2c1991b127fa2619cb32d5d488455cba9025
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Dieser Abschnitt enthält Referenzinhalte für die folgenden APIs in der hilfsreferenz Outlook 2013.
+ms.openlocfilehash: 6a50f405507d0e990f55fa8da14da748c0f963bd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33437693"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605272"
 ---
 # <a name="reference-outlook-auxiliary-reference"></a>Referenz (Outlook Hilfsreferenz)
 
-Dieser Abschnitt enthält Referenzinhalte für die folgenden APIs in der Outlook 2013-Hilfsreferenz.
+Dieser Abschnitt enthält Referenzinhalte für die folgenden APIs in der hilfsreferenz Outlook 2013.
 
 - [Account-Management-API-Referenz](account-management-api-reference.md)
     

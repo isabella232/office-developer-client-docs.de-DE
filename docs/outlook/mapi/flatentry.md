@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.FLATENTRY
 api_type:
 - COM
 ms.assetid: 03e53e08-9113-4101-84c9-ccf6d43127f6
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e47f4e0d1ab9ab3ecfd53932b8ef26440134c603
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 38b8d06b39ddab2e7c287ee913b24cda26811e26
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407242"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59604971"
 ---
 # <a name="flatentry"></a>FLATENTRY
 
@@ -25,7 +25,7 @@ ms.locfileid: "33407242"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Eine [ENTRYID-Struktur](entryid.md) und eine Byteanzahl, die die Größe der **ENTRYID-Struktur** angibt. 
+Eine [ENTRYID-Struktur](entryid.md) plus eine Byteanzahl, die die Größe der **ENTRYID-Struktur** angibt. 
   
 |||
 |:-----|:-----|
@@ -41,7 +41,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Elemente
+## <a name="members"></a>Members
 
  **cb**
   
@@ -51,17 +51,17 @@ typedef struct
   
 > Der vollständige Eintragsbezeichner, der das Array von Flags und Binärdaten enthält.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Eine **FLATENTRY-Struktur** ähnelt einer [ENTRYID-Struktur.](entryid.md) Es gibt jedoch einige Unterschiede: 
   
 - Eine **FLATENTRY-Struktur** speichert die Größe des Eintragsbezeichners. **ENTRYID** nicht. 
     
-- Eine **FLATENTRY-Struktur** speichert die Kennzeichendaten zusammen mit dem rest der Eintrags-ID. **ENTRYID** speichert sie separat. 
+- Eine **FLATENTRY-Struktur** speichert die Kennzeichendaten zusammen mit dem restlichen Eintragsbezeichner. **ENTRYID** speichert sie separat. 
     
-- Eine **FLATENTRY-Struktur** wird verwendet, um einen Eintragsbezeichner in einer Datei zu speichern oder in einem Bytestrom zu übergeben, während eine **ENTRYID-Struktur** von den [IMAPIProp-Schnittstellenmethoden](imapipropiunknown.md) und den folgenden **OpenEntry-Methoden** verwendet wird: [IABLogon::OpenEntry](iablogon-openentry.md), [IAddrBook::OpenEntry](iaddrbook-openentry.md), [IMAPIContainer::OpenEntry](imapicontainer-openentry.md), [IMAPISession::OpenEntry](imapisession-openentry.md), [IMAPISupport::OpenEntry](imapisupport-openentry.md), [IMsgStore::OpenEntry](imsgstore-openentry.md), [IMSLogon::OpenEntry](imslogon-openentry.md)
+- Eine **FLATENTRY-Struktur** wird verwendet, um einen Eintragsbezeichner in einer Datei zu speichern oder in einem Bytestream zu übergeben, während eine **ENTRYID-Struktur** von den [IMAPIProp-Schnittstellenmethoden](imapipropiunknown.md) und den folgenden **OpenEntry-Methoden** verwendet wird: [IABLogon::OpenEntry](iablogon-openentry.md), [IAddrBook::OpenEntry](iaddrbook-openentry.md), [IMAPIContainer::OpenEntry](imapicontainer-openentry.md), [IMAPISession::OpenEntry](imapisession-openentry.md), [IMAPISupport::OpenEntry](imapisupport-openentry.md), [IMsgStore::OpenEntry](imsgstore-openentry.md), [IMSLogon::OpenEntry](imslogon-openentry.md)
     
-- Eine **FLATENTRY-Struktur** wird verwendet, um eine Eintrags-ID in einer Datei zu speichern oder sie in einem Bytestrom zu übergeben. Eine **ENTRYID-Struktur** wird verwendet, um eine Eintrags-ID auf dem Datenträger zu speichern. 
+- Eine **FLATENTRY-Struktur** wird verwendet, um einen Eintragsbezeichner in einer Datei zu speichern oder in einem Bytestream zu übergeben. Eine **ENTRYID-Struktur** wird verwendet, um einen Eintragsbezeichner auf dem Datenträger zu speichern. 
     
 ## <a name="see-also"></a>Siehe auch
 

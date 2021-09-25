@@ -5,17 +5,17 @@ ms.date: 05/16/2016
 ms.audience: Developer
 ms.assetid: 4c4ef9e8-6b30-481b-8023-2e1280bcbcc9
 description: Diese Referenz enthält konzeptionelle Übersichten und programmatische Referenzen, die Sie beim Entwickeln von Lösungen für OneNote 2013-Desktopclientanwendungen unterstützen sollen.
-localization_priority: Priority
-ms.openlocfilehash: d2b401a768e62c4b9712b1590bfaf499c2b022ab
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: a47eab584c5a7f530b6a9b7d51305c2fda7cd3b8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317052"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580461"
 ---
 # <a name="onenote-developer-reference"></a>OneNote-Entwicklerreferenz
 
-Diese Referenz enthält konzeptionelle Übersichten und programmatische Referenzen, die Sie beim Entwickeln von Lösungen für OneNote 2013-Desktopclientanwendungen unterstützen sollen. Sie enthält alle Ergänzungen und Änderungen der OneNote 2013-Anwendungsprogrammierschnittstelle (API) und bietet Codebeispiele in C#, um zu zeigen, wie Sie einige Aufgaben in OneNote ausführen können. Über die OneNote 2013-API können Benutzer programmgesteuert auf OneNote-Inhalte zugreifen und diese bearbeiten. Benutzer können auch Änderungen an der Ansicht von OneNote-Fenstern vornehmen.
+Diese Referenz enthält konzeptionelle Übersichten und programmgesteuerte Referenzen, um Sie durch die Entwicklung von Lösungen für OneNote 2013-Desktopclientanwendungen zu führen. Sie enthält auch alle Ergänzungen und Änderungen an der OneNote 2013-Anwendungsprogrammierschnittstelle (API) und liefert Codebeispiele in C#, um zu zeigen, wie manche Aufgaben in OneNote ausgeführt werden. Über die OneNote 2013-API können Benutzer programmgesteuert auf OneNote-Inhalte zugreifen und diese bearbeiten. Benutzer können auch Änderungen an der Ansicht von OneNote-Fenstern vornehmen.
   
 Diese Dokumentation enthält die folgenden Informationen:
   

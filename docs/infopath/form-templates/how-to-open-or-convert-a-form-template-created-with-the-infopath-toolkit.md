@@ -1,37 +1,37 @@
 ---
-title: Öffnen oder Konvertieren einer Formularvorlage, die mit dem InfoPath Toolkit erstellt wurde
+title: Öffnen oder Konvertieren einer mit dem InfoPath-Toolkit erstellten Formularvorlage
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
-- Konvertieren von Formularvorlagen [infopath 2007],InfoPath Toolkit, Öffnen von Formularvorlagen aus,Formularvorlagen [InfoPath 2007], opening,InfoPath 2007, Konvertieren von InfoPath Toolkit-Formularvorlagen,Öffnen von Formularvorlagen [InfoPath 2007],Formularvorlagen [InfoPath 2007], Konvertieren,Skript [InfoPath 2007], Konvertieren in verwalteten Code
-localization_priority: Normal
+- converting form templates [infopath 2007],InfoPath Toolkit, opening form templates from,form templates [InfoPath 2007], opening,InfoPath 2007, converting InfoPath Toolkit form templates,opening form templates [InfoPath 2007],form templates [InfoPath 2007], converting,script [InfoPath 2007], converting to managed code
+ms.localizationpriority: medium
 ms.assetid: af8eca2e-ba9a-4c37-94af-662815fff518
-description: Wenn Sie eine Formularvorlage für verwalteten Code in InfoPath 2003 mithilfe eines der InfoPath 2003 Toolkits für Visual Studio erstellt haben und die Kompatibilität mit InfoPath 2003 beibehalten möchten, können Sie ihr Formularvorlagenprojekt weiter bearbeiten und weiterentwickeln, indem Sie es in Microsoft InfoPath und Visual Studio 2012 öffnen.
-ms.openlocfilehash: 0acbfab4a83a71d94a1c70a667a963056f5b9a38
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Wenn Sie eine InfoPath 2003-Formularvorlage mit verwaltetem Code mit einem der InfoPath 2003-Toolkits für Visual Studio erstellt haben und die Kompatibilität mit InfoPath 2003 aufrechterhalten möchten, können Sie ihr Formularvorlagenprojekt weiter entwickeln, indem Sie es in Microsoft InfoPath und Visual Studio 2012 öffnen.
+ms.openlocfilehash: 8a8b4f35857d2ae55c60429c00803eadfdada091
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33428585"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59625847"
 ---
-# <a name="open-or-convert-a-form-template-created-with-the-infopath-toolkit"></a>Öffnen oder Konvertieren einer Formularvorlage, die mit dem InfoPath Toolkit erstellt wurde
+# <a name="open-or-convert-a-form-template-created-with-the-infopath-toolkit"></a>Öffnen oder Konvertieren einer mit dem InfoPath-Toolkit erstellten Formularvorlage
 
-Wenn Sie eine Formularvorlage für verwalteten Code in InfoPath 2003 mithilfe eines der InfoPath 2003 Toolkits für Visual Studio erstellt haben und die Kompatibilität mit InfoPath 2003 beibehalten möchten, können Sie ihr Formularvorlagenprojekt weiter bearbeiten und weiterentwickeln, indem Sie es in Microsoft InfoPath und Visual Studio 2012 öffnen.
+Wenn Sie eine InfoPath 2003-Formularvorlage mit verwaltetem Code mit einem der InfoPath 2003-Toolkits für Visual Studio erstellt haben und die Kompatibilität mit InfoPath 2003 aufrechterhalten möchten, können Sie ihr Formularvorlagenprojekt weiter entwickeln, indem Sie es in Microsoft InfoPath und Visual Studio 2012 öffnen.
   
-Alternativ können Sie den Code in Ihrem InfoPath 2003-Projekt migrieren und aktualisieren, um das neue .NET-Objektmodell zu verwenden, das von [Microsoft.Office. InfoPath-Namespace.](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.aspx) Dabei muss der ganze Code neu geschrieben werden, um Mitglieder der **Microsoft.Office. InfoPath-Namespace,** aber der ganze Code aus Dem vorherigen Projekt wird beibehalten und von **#if InfoPathManagedObjectModel** und **#endif** (C#) oder **#If InfoPathManagedObject Model** und #End **If** (Visual Basic)-Anweisungen für Ihren Verweis umgeben. 
+Alternativ können Sie den Code in Ihrem InfoPath 2003-Projekt migrieren und aktualisieren, um das neue .NET-Objektmodell zu verwenden, das von [Microsoft.Office bereitgestellt wird. InfoPath-Namespace.](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.aspx) Dabei muss der gesamte Code neu geschrieben werden, um Mitglieder der **Microsoft.Office zu verwenden. InfoPath-Namespace,** aber der gesamte Code aus Dem vorherigen Projekt wird beibehalten und von **#if InfoPathManagedObjectModel-** und **#endif** -Anweisungen (C#) oder **#If InfoPathManagedObject Model** und #End **If-Anweisungen** (Visual Basic) für Den Verweis umgeben. 
   
-In den folgenden Verfahren wird beschrieben, wie Sie eine formularvorlage für verwalteten Code öffnen, die mithilfe des InfoPath Toolkits erstellt wurde, und die Kompatibilität mit InfoPath 2003 bzw. das Migrieren und Upgrade auf das neue InfoPath-Objektmodell beibehalten. 
+In den folgenden Verfahren wird beschrieben, wie Sie eine Mithilfe des InfoPath-Toolkits erstellte Formularvorlage mit verwaltetem Code öffnen und die Kompatibilität mit InfoPath 2003 aufrechterhalten oder zum neuen InfoPath-Objektmodell migrieren und auf dieses aktualisieren. 
   
 ### <a name="open-a-managed-code-form-template-created-with-the-infopath-toolkit-and-maintain-compatibility-with-infopath-2003-using-visual-studio-tools-for-applications"></a>Öffnen einer mit dem InfoPath Toolkit erstellten Formularvorlage mit verwaltetem Code unter Beibehaltung der Kompatibilität mit InfoPath 2003 mithilfe von Visual Studio Tools for Applications
 
-1. Öffnen Sie den InfoPath Designer, und klicken Sie **dann** auf der Registerkarte **Datei** auf Öffnen. 
+1. Öffnen Sie den InfoPath-Designer, und klicken Sie dann auf der Registerkarte **"Datei"** auf **"Öffnen".** 
     
-2. Navigieren Sie im Dialogfeld **Im Entwurfsmodus** öffnen zu dem Projektordner, in dem das Formularvorlagenprojekt des InfoPath Toolkits gespeichert wird. 
+2. Navigieren Sie im Dialogfeld **"Im Entwurfsmodus öffnen"** zum Projektordner, in dem das InfoPath Toolkit-Formularvorlagenprojekt gespeichert ist. 
     
-    Standardmäßig ist dies ein Ordner mit Benutzername `C:\Users\`  `\Documents\Visual Studio Projects` auf dem Computer, auf dem das Projekt erstellt wurde.   Sie können den Ordner auch an den Speicherort verschieben, an dem InfoPath Visual Studio 2012-Projekte speichert, der standardmäßig Benutzername `C:\Users\` *ist.*  `\Documents\InfoPath Projects`
+    Standardmäßig ist dies ein Ordner mit `C:\Users\` *Benutzername* `\Documents\Visual Studio Projects` auf dem Computer, auf dem das Projekt erstellt wurde.   Sie können den Ordner auch an den Speicherort verschieben, an dem InfoPath Visual Studio 2012-Projekte speichert, was standardmäßig benutzername ist. `C:\Users\`   `\Documents\InfoPath Projects`
     
-3. Klicken Sie auf die Datei mit dem Namen manifest.xsf, und klicken Sie dann auf **Öffnen**.
+3. Klicken Sie auf die Datei mit dem Namen "manifest.xsf", und klicken Sie dann auf **"Öffnen".**
     
 4. Klicken Sie auf der Registerkarte **Entwickler** auf **Code-Editor**.
     
@@ -41,25 +41,25 @@ In den folgenden Verfahren wird beschrieben, wie Sie eine formularvorlage für v
     
 7. Die Meldung "Dieser Code wurde mit einem der InfoPath 2003 Toolkits für Microsoft Visual Studio erstellt. InfoPath muss das Toolkitprojekt in ein neues Format migrieren." wird angezeigt. Klicken Sie auf **OK**, um den Vorgang fortzusetzen. 
     
-8. Wählen Sie Visual Studio Projektmappendatei (SLN) für das Projekt aus, und klicken Sie dann auf **Öffnen**.
+8. Wählen Sie die Visual Studio Projektmappendatei (SLN) für das Projekt aus, und klicken Sie dann auf **"Öffnen".**
     
 9. Die Meldung "Das Projekt wurde migriert." wird angezeigt, wenn der Migrationsvorgang abgeschlossen ist. Klicken Sie auf **OK**, um den Vorgang fortzusetzen. 
     
-10. Die Meldung "Im Code dieses Formulars wird das Objektmodell von InfoPath 2003 verwendet." wird mit der Frage "Möchten Sie den Code aktualisieren, damit das Microsoft Office InfoPath-Objektmodell verwendet wird?" angezeigt. Klicken **Sie auf Nein,** um die Kompatibilität mit InfoPath 2003 zu erhalten und die Arbeit mit dem objektmodell fortzufahren, das vom [Microsoft.Office.Interop.InfoPath.SemiTrust-Namespace](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.aspx) bereitgestellt wird. 
+10. Die Meldung "Im Code dieses Formulars wird das Objektmodell von InfoPath 2003 verwendet." wird mit der Frage "Möchten Sie den Code aktualisieren, damit das Microsoft Office InfoPath-Objektmodell verwendet wird?" angezeigt. Klicken Sie auf **"Nein",** um die Kompatibilität mit InfoPath 2003 beizubehalten und die Arbeit mit dem vom [Microsoft.Office.Interop.InfoPath.SemiTrust-Namespace bereitgestellten](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.aspx) Objektmodell fortzusetzen. 
     
-    Informationen zum Arbeiten mit Formularvorlagen mit verwalteten Code, die mit InfoPath 2003 kompatibel sind, finden Sie unter [Developing Form Templates Using the InfoPath 2003 Object Model](developing-form-templates-using-the-infopath-2003-object-model.md).
+    Informationen zum Arbeiten mit Formularvorlagen mit verwaltetem Code, die mit InfoPath 2003 kompatibel sind, finden Sie unter [Entwickeln von Formularvorlagen mithilfe des InfoPath 2003-Objektmodells.](developing-form-templates-using-the-infopath-2003-object-model.md)
     
 ### <a name="open-a-managed-code-form-template-created-with-the-infopath-toolkit-and-upgrade-it-to-use-the-new-infopath-object-model-using-visual-studio-tools-for-applications"></a>Öffnen einer mit dem InfoPath Toolkit erstellten Formularvorlage mit verwaltetem Code und Aktualisieren dieser Formularvorlage für die Verwendung des neuen InfoPath-Objektmodells mithilfe von Visual Studio Tools for Applications
 
-1. Öffnen Sie den InfoPath Designer, und klicken Sie **dann** auf der Registerkarte **Datei** auf Öffnen. 
+1. Öffnen Sie den InfoPath-Designer, und klicken Sie dann auf der Registerkarte **"Datei"** auf **"Öffnen".** 
     
 2. Klicken Sie unter **Formularvorlage öffnen** auf **Auf meinem Computer**.
     
-3. Navigieren Sie im Dialogfeld **Im Entwurfsmodus** öffnen zu dem Projektordner, in dem das Formularvorlagenprojekt des InfoPath Toolkits gespeichert wird. 
+3. Navigieren Sie im Dialogfeld **"Im Entwurfsmodus öffnen"** zum Projektordner, in dem das InfoPath Toolkit-Formularvorlagenprojekt gespeichert ist. 
     
-    Standardmäßig ist dies ein Ordner mit Benutzername `C:\Users\`  `\Documents\Visual Studio Projects` auf dem Computer, auf dem das Projekt erstellt wurde.   Sie können den Ordner auch an den Speicherort verschieben, an dem InfoPath Visual Studio 2012-Projekte speichert, der standardmäßig Benutzername `C:\Users\` *ist.*  `\Documents\InfoPath Projects`
+    Standardmäßig ist dies ein Ordner mit `C:\Users\` *Benutzername* `\Documents\Visual Studio Projects` auf dem Computer, auf dem das Projekt erstellt wurde.   Sie können den Ordner auch an den Speicherort verschieben, an dem InfoPath Visual Studio 2012-Projekte speichert, was standardmäßig benutzername ist. `C:\Users\`   `\Documents\InfoPath Projects`
     
-4. Klicken Sie auf die Datei mit dem Namen manifest.xsf, und klicken Sie dann auf **Öffnen**.
+4. Klicken Sie auf die Datei mit dem Namen "manifest.xsf", und klicken Sie dann auf **"Öffnen".**
     
 5. Klicken Sie auf der Registerkarte **Entwickler** auf **Code-Editor**.
     
@@ -69,14 +69,14 @@ In den folgenden Verfahren wird beschrieben, wie Sie eine formularvorlage für v
     
 8. Die Meldung "Dieser Code wurde mit einem der InfoPath 2003 Toolkits für Microsoft Visual Studio erstellt. InfoPath muss das Toolkitprojekt in ein neues Format migrieren." wird angezeigt. Klicken Sie auf **OK**, um den Vorgang fortzusetzen. 
     
-9. Wählen Sie Visual Studio Projektmappendatei (SLN) für das Projekt aus, und klicken Sie dann auf **Öffnen**.
+9. Wählen Sie die Visual Studio Projektmappendatei (SLN) für das Projekt aus, und klicken Sie dann auf **"Öffnen".**
     
 10. Die Meldung "Das Projekt wurde migriert." wird angezeigt, wenn der Migrationsvorgang abgeschlossen ist. Klicken Sie auf **OK**, um den Vorgang fortzusetzen. 
     
-11. Die Meldung "Im Code dieses Formulars wird das Objektmodell von InfoPath 2003 verwendet." wird mit der Frage "Möchten Sie den Code aktualisieren, damit das Microsoft Office InfoPath-Objektmodell verwendet wird?" angezeigt. Klicken **Sie auf Ja,** um die Formularvorlage so zu aktualisieren, dass das neue objektmodell für verwalteten Code verwendet wird, das von [Microsoft.Office. InfoPath-Namespace.](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.aspx) 
+11. Die Meldung "Im Code dieses Formulars wird das Objektmodell von InfoPath 2003 verwendet." wird mit der Frage "Möchten Sie den Code aktualisieren, damit das Microsoft Office InfoPath-Objektmodell verwendet wird?" angezeigt. Klicken Sie auf **"Ja",** um die Formularvorlage so zu aktualisieren, dass das neue objektmodell mit verwaltetem Code verwendet wird, das von [Microsoft.Office bereitgestellt wird. InfoPath-Namespace.](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.aspx) 
     
-    Der Formularcode wird im Visual Studio 2012-Code-Editor geöffnet, und der code aus Dem vorherigen Projekt wird von **den Anweisungen #if** **InfoPathManagedObjectModel** und **#endif** (C#) oder **#If InfoPathManagedObjectModel** und **#End If** (Visual Basic) für Ihren Verweis umgeben. Dieser Code muss neu geschrieben werden, um Elemente des objektmodells zu verwenden, das von **Microsoft.Office. InfoPath-Namespace.** 
+    Der Formularcode wird im Visual Studio 2012-Code-Editor mit dem gesamten Code aus dem vorherigen Projekt geöffnet, der von **#if** **InfoPathManagedObjectModel-** und **#endif** -Anweisungen (C#) oder **#If InfoPathManagedObjectModel-** und **#End If-Anweisungen** (Visual Basic) umgeben ist. Dieser gesamte Code muss neu geschrieben werden, um Elemente des vom Microsoft.Office bereitgestellten Objektmodells zu **verwenden. InfoPath-Namespace.** 
     
-    Informationen zum Arbeiten mit Formularvorlagen mit verwalteten Code, die das neue Objektmodell für verwalteten Code von InfoPath verwenden, finden Sie unter [Developing InfoPath Form Templates with Code](developing-infopath-form-templates-with-code.md).
+    Informationen zum Arbeiten mit Formularvorlagen mit verwaltetem Code, die das neue InfoPath-Objektmodell mit verwaltetem Code verwenden, finden Sie unter [Entwickeln von InfoPath-Formularvorlagen mit Code.](developing-infopath-form-templates-with-code.md)
     
 

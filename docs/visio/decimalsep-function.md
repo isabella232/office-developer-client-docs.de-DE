@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251883
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 091fe401-05b2-464f-9333-7bb7118cd7cd
-description: Gibt die Dezimaltrennzeichenfolge für das aktuelle Benutzer-Locale zurück.
-ms.openlocfilehash: 8a59e7331fd51cf5426b5e2cdd64e3c5a22334b3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: Gibt die Dezimaltrennzeichenfolge für das aktuelle Benutzergebietsschema zurück.
+ms.openlocfilehash: 6f4262aa649d96514d5a0939f464d99404cce9d3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360305"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594629"
 ---
 # <a name="decimalsep-function"></a>DECIMALSEP-Funktion
 
-Gibt die Dezimaltrennzeichenfolge für das aktuelle Benutzer-Locale zurück.
+Gibt die Dezimaltrennzeichenfolge für das aktuelle Benutzergebietsschema zurück.
   
 ## <a name="syntax"></a>Syntax
 

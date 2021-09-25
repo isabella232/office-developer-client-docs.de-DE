@@ -1,5 +1,5 @@
 ---
-title: Recordset2. EditMode-Eigenschaft (DAO)
+title: Recordset2.EditMode-Eigenschaft (DAO)
 TOCTitle: EditMode Property
 ms:assetid: fd61ea2b-e7d7-195f-4114-87e54eba2451
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff837240(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1053080
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: d4043a442bec8c5ce421d85de6256eb9c5cb353f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: aadb8c331e34b1552f584fd8d63f0958f341dcfc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307350"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626127"
 ---
-# <a name="recordset2editmode-property-dao"></a>Recordset2. EditMode-Eigenschaft (DAO)
+# <a name="recordset2editmode-property-dao"></a>Recordset2.EditMode-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -27,9 +27,9 @@ Gibt einen Wert zurück, der den Bearbeitungsstatus für den aktuellen Datensatz
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . EditMode
+*Ausdruck* . Editmode
 
-*Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset2-Objekt** darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 

@@ -6,20 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250192(v=office.15)
 ms:contentKeyID: 48548474
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 59ca2013f9cc3551d73ea21d8a6af610e0d159d1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: af62fc8fce6626656f0bbd9088a7157370a488af
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294113"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594349"
 ---
 # <a name="definedsize-property-example-vc"></a>DefinedSize-Eigenschaft (VC++-Beispiel)
 
 
 **Gilt für**: Access 2013, Office 2013
 
-This example demonstrates the [DefinedSize](definedsize-property-adox.md) property of a [Column](column-object-adox.md). Mit dem Code wird die Größe der Spalte FirstName der Tabelle Employees **** der *Northwind* -Datenbank neu definiert. Then, the change in the values of the FirstName [Field](field-object-ado.md) of a [Recordset](recordset-object-ado.md) based on the **Employees** table is displayed. Note that by default, the FirstName field becomes padded with spaces after you redefine the **DefinedSize** property.
+This example demonstrates the [DefinedSize](definedsize-property-adox.md) property of a [Column](column-object-adox.md). Der Code definiert die Größe der Spalte  FirstName der Employees-Tabelle der *Northwind-Datenbank* neu. Then, the change in the values of the FirstName [Field](field-object-ado.md) of a [Recordset](recordset-object-ado.md) based on the **Employees** table is displayed. Note that by default, the FirstName field becomes padded with spaces after you redefine the **DefinedSize** property.
 
 ```cpp 
  

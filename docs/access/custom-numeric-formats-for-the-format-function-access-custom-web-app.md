@@ -5,13 +5,13 @@ ms.date: 08/18/2017
 ms.audience: Developer
 ms.assetid: 97efe972-d873-47d7-be81-8ae3461870c4
 description: Hier erfahren Sie, wie Sie die Darstellung einer Zahl durch das Erstellen eines benutzerdefinierten Zahlenformats steuern.
-localization_priority: Priority
-ms.openlocfilehash: b23b1f7ee806a03df8f1c0d6ec1de0f3282b427b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: c9b7c1b828be0efecb9194657a7e8b321b024e5a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282201"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573320"
 ---
 # <a name="custom-numeric-formats-for-the-format-function-access-custom-web-app"></a>Benutzerdefinierte numerische Formate für die Formatfunktion (benutzerdefinierte Access-Web-App)
 
@@ -39,17 +39,17 @@ In der folgenden Tabelle sind die Zeichen aufgeführt, die Sie zum Erstellen ben
 |/ (Schrägstrich)  <br/> |Datumstrennzeichen. In manchen Gebietsschemas werden andere Zeichen als Datumstrennzeichen verwendet. Das Datumstrennzeichen trennt Tag, Monat und Jahr bei der Formatierung von Datumswerten. Das tatsächliche in der formatierten Ausgabe als Datumstrennzeichen verwendete Zeichen wird durch die Systemeinstellungen bestimmt.  <br/> |
 |**E- , E+ , e- , e+** <br/> |Wissenschaftliches Format. Wenn der Formatausdruck mindestens einen Ziffernplatzhalter (0 oder #) rechts neben „E-“, „E+“, „e-“ oder „e+“ aufweist, wird die Zahl im wissenschaftlichen Format angezeigt und zwischen der Zahl und dem Exponenten „E“ oder „e“ eingefügt. Die Anzahl an Ziffernplatzhaltern auf der linken Seite bestimmt die Anzahl an Ziffern im Exponenten. „E-“ oder „e-“ fügt ein Minus-Zeichen neben negativen Exponenten ein. „E+“ oder „e+“ fügt ein Minus-Zeichen neben negativen und ein Plus-Zeichen neben positiven Exponenten ein. Zur richtigen Formatierung müssen Sie außerdem Ziffernplatzhalter rechts neben diesem Symbol einfügen.  <br/> |
 |**- + $ ( )** <br/> |Literalzeichen. Diese Zeichen werden genau so angezeigt, wie sie in der Formatierungszeichenfolge eingegeben wurden. Um ein anderes Zeichen als die aufgeführten anzuzeigen, stellen Sie ihm einen umgekehrten Schrägstrich voran (\), oder schließen Sie das Zeichen in doppelte Anführungszeichen ein (" ").  <br/> |
-|\ (umgekehrter Schrägstrich)  <br/> |Zeigt das nächste Zeichen in der Formatzeichenfolge an. Um ein Zeichen anzuzeigen, das als Literalzeichen eine besondere Bedeutung hat, wird diesem ein umgekehrter Schrägstrich vorangestellt (\). Der umgekehrte Schrägstrich wird nicht angezeigt. Die Verwendung eines umgekehrten Schrägstrichs entspricht dem Setzen eines Zeichens in doppelte Anführungszeichen. Wenn ein umgekehrter Schrägstrich angezeigt werden soll, muss diesem ein zweiter vorangestellt werden (\\).  <br/> Zeichen, die nicht als Literalzeichen angezeigt werden können, sind die datum- und uhrzeitformatierenden Zeichen (a, c, d, h, m, n, p, q, s, t, w, y, / und :), die zahlenformatierenden Zeichen (#, 0, %, E, e, Komma und Punkt) sowie die zeichenfolgenformatierenden Zeichen (@, &amp;, \<, \> und !).  <br/> |
+|\ (umgekehrter Schrägstrich)  <br/> |Zeigt das nächste Zeichen in der Formatzeichenfolge an. Um ein Zeichen anzuzeigen, das als Literalzeichen eine besondere Bedeutung hat, wird diesem ein umgekehrter Schrägstrich vorangestellt (\). Der umgekehrte Schrägstrich wird nicht angezeigt. Die Verwendung eines umgekehrten Schrägstrichs entspricht dem Setzen eines Zeichens in doppelte Anführungszeichen. Wenn ein umgekehrter Schrägstrich angezeigt werden soll, muss diesem ein zweiter vorangestellt werden (\\).<br/> Beispiele für Zeichen, die nicht als Literalzeichen angezeigt werden können, sind die Zeichen für die Datums- und Zeitformatierung (a, c, d, h, m, n, p, q, s, t, w, y, / und :), die Zeichen der Zahlenformatierung (#, 0, %, E, e, Komma und Punkt) sowie die Zeichen der Zeichenfolgenformatierung (@, &amp;, \<, \> und !).  <br/> |
 |"ABC"  <br/> |Zeigt die Zeichenfolge zwischen den doppelten Anführungszeichen an (" "). Um eine Zeichenfolge im Formatargument innerhalb des Codes anzugeben, muss der Text mit Chr(34) umschlossen werden (34 ist der Zeichencode für ein Anführungszeichen (")).  <br/> |
    
 Die folgende Tabelle enthält einige Beispiele für Zahlenformatausdrücke. (Bei diesen Beispielen wird davon ausgegangen, dass die Gebietsschemaeinstellung des Systems English-U.S. ist.) Die erste Spalte enthält die Formatierungszeichenfolgen für die Formatfunktion. Die anderen Spalten enthalten die resultierende Ausgabe, wenn die formatierten Daten den in der Spaltenüberschrift angegebenen Wert enthalten.
   
 |**Format (Stil)**|**„5" formatiert als**|**„-5" formatiert als**|**„0.5" formatiert als**|**„0" formatiert als**|
 |:-----|:-----|:-----|:-----|:-----|
-|Zeichnfolge der Länge Null ("")  <br/> |5   <br/> |-5  <br/> |0.5  <br/> |0  <br/> |
-|0  <br/> |5   <br/> |-5  <br/> |1  <br/> |0  <br/> |
+|Zeichnfolge der Länge Null ("")  <br/> |5  <br/> |-5  <br/> |0.5  <br/> |0  <br/> |
+|0  <br/> |5  <br/> |-5  <br/> |1  <br/> |0  <br/> |
 |0.00  <br/> |5.00  <br/> |-5.00  <br/> |0.50  <br/> |0.00  <br/> |
-|#,##0  <br/> |5   <br/> |-5  <br/> |1  <br/> |0  <br/> |
+|#,##0  <br/> |5  <br/> |-5  <br/> |1  <br/> |0  <br/> |
 |$#,##0;($#,##0)  <br/> |$5  <br/> |($5)  <br/> |$1  <br/> |$0  <br/> |
 |$#,##0.00;($#,##0.00)  <br/> |$5.00  <br/> |($5.00)  <br/> |$0.50  <br/> |$0.00  <br/> |
 |0%  <br/> |500%  <br/> |-500%  <br/> |50%  <br/> |0%  <br/> |

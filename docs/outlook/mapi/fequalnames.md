@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.FEqualNames
 api_type:
 - COM
 ms.assetid: 4dd58b0b-dc39-4782-a9ec-05e353c90927
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 8f71b30bd02af8f768da86218456feadda8ea1b6
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 51052bd3ee46e880f84cbc0fd5ace69f2ae68f21
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33414802"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59604992"
 ---
 # <a name="fequalnames"></a>FEqualNames
 
@@ -54,16 +54,16 @@ BOOL FEqualNames(
 
 TRUE 
   
-> Die beiden Eigenschaftsnamen sind gleich. 
+> Die beiden Eigenschaftennamen sind gleich. 
     
 FALSE 
   
-> Die beiden Eigenschaftennamen sind nicht gleich.
+> Die beiden Eigenschaftennamen sind ungleich.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die **FEqualNames-Funktion** ist nützlich, da die **MAPINAMEID-Struktur** eine [GUID enthält](guid.md) und den Eigenschaftennamen selbst auf mehrere Weise darstellen kann. Dies bedeutet, dass die beiden Strukturen nicht mit einfachen binären Methoden verglichen werden können. 
+Die **FEqualNames-Funktion** ist nützlich, da die **MAPINAMEID-Struktur** eine [GUID](guid.md) enthält und den Eigenschaftsnamen selbst auf mehrere Weise darstellen kann. Dies bedeutet, dass die beiden Strukturen nicht mit einfachen binären Methoden verglichen werden können. 
   
-Bei den Zeichenfolgen für den Eigenschaftennamen wird bei der Testphase die Zwischenschreibung beachtet. 
+Beim Testvorgang wird die Groß-/Kleinschreibung für die Eigenschaftennamenzeichenfolgen beachtet. 
   
 

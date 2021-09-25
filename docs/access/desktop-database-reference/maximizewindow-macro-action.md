@@ -10,19 +10,19 @@ f1_keywords:
 - vbaac10.chm196948
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 262e6781b61018cec3d52dbb930f380d3ff5bd85
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 171701465e6b349ab63c6e133b97c639140f9ba0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289749"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617951"
 ---
 # <a name="maximizewindow-macro-action"></a>MaximizeWindow-Makroaktion
 
 **Gilt für**: Access 2013, Office 2013
 
-Wenn der Zugriff auf überlappende Fenster anstelle von Dokumenten im Registerkartenformat konfiguriert ist, können Sie die **maximierenfenster** -Aktion verwenden, um das aktive Fenster so zu vergrößern, dass es das Access-Fenster ausfüllt. Diese Aktion ermöglicht es Ihnen, so viel wie möglich vom Objekt im aktiven Fenster anzuzeigen.
+Wenn Access so konfiguriert ist, dass überlappende Fenster anstelle von Dokumenten mit Registerkarten verwendet werden, können Sie die Aktion **"MaximierenFenster"** verwenden, um das aktive Fenster so zu vergrößern, dass es das Access-Fenster ausfüllt. Diese Aktion ermöglicht es Ihnen, so viel wie möglich vom Objekt im aktiven Fenster anzuzeigen.
 
 > [!NOTE]
 > Diese Aktion kann auf Codefenster des Visual Basic-Editors nicht angewendet werden. Informationen zu den Auswirkungen auf Codefenster finden Sie im Thema zur **WindowState**-Eigenschaft.

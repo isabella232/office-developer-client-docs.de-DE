@@ -7,22 +7,22 @@ ms.topic: reference
 f1_keywords:
 - DIALOGMsgProc
 keywords:
-- dialogmsgproc-Funktion [excel 2007]
-localization_priority: Normal
+- dialogmsgpaw-Funktion [excel 2007]
+ms.localizationpriority: medium
 ms.assetid: 9a538e83-ba34-4806-bb8c-7cda3beb6b66
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 1de1b73f5672067f07518ef3367d77349395a1c3
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f93be01679460833d9555cc747ff72d9b1d5b6fa
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33406514"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59625966"
 ---
 # <a name="dialogmsgproc"></a>DIALOGMsgProc
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Dieses Verfahren ist dem systemeigenen Windows, das [von fShowDialog angezeigt wird,](fshowdialog.md) zugeordnet. Es stellt die von Windows aufgerufenen Dienstroutinen für die Ereignisse (Nachrichten) zur Verfügung, die auftreten, wenn der Benutzer eine der Schaltflächen, Eingabefelder oder Steuerelemente des Dialogfelds betreibt. 
+Diese Prozedur ist dem systemeigenen Windows Dialogfeld zugeordnet, das [von fShowDialog](fshowdialog.md) angezeigt wird. Es stellt die Dienstroutinen bereit, die von Windows für die Ereignisse (Nachrichten) aufgerufen werden, die auftreten, wenn der Benutzer eine der Schaltflächen, Eingabefelder oder Steuerelemente des Dialogfelds ausführt. 
   
 ```cs
 BOOL CALLBACK DIALOGMsgProc(HWND hWndDlg, UINT message, WPARAM wParam, LPARAM lParam);
@@ -32,7 +32,7 @@ BOOL CALLBACK DIALOGMsgProc(HWND hWndDlg, UINT message, WPARAM wParam, LPARAM lP
 
  _hWndDlg_ (**HWND**)
   
-Enthält das HWND-Windows-Handle des Dialogfelds.
+Enthält das HWND-Windows Handle des Dialogfelds.
   
  _message_ (**UINT**)
   
@@ -42,15 +42,15 @@ Die Nachricht, auf die reagiert werden soll.
   
  _lParam_ (**LPARAM**)
   
-Argumente, die von Windows.
+Von Windows übergebene Argumente.
   
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
- **TRUE,** wenn die Nachricht verarbeitet wird, **FALSE,** wenn nicht. 
+ **TRUE,** wenn nachricht verarbeitet, **FALSE,** wenn nicht. 
   
 ### <a name="example"></a>Beispiel
 
-Den  `\SAMPLES\GENERIC\GENERIC.C` Quellcode für diese Funktion finden Sie unter. 
+Informationen zum Quellcode für diese Funktion finden Sie  `\SAMPLES\GENERIC\GENERIC.C` unter. 
   
 ## <a name="see-also"></a>Siehe auch
 

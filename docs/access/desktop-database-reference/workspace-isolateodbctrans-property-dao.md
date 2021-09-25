@@ -1,5 +1,5 @@
 ---
-title: Workspace. IsolateODBCTrans-Eigenschaft (DAO)
+title: Workspace.IsolateODBCTrans-Eigenschaft (DAO)
 TOCTitle: IsolateODBCTrans Property
 ms:assetid: f7a48358-870b-cad3-d4ef-e46b50428e12
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff836924(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1053083
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 781679dfbd4050cfde219802db4cd9e1544d83ae
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: ab01639b3bd60a1e0ec94f04a61e4006a3678b48
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32302513"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59625994"
 ---
-# <a name="workspaceisolateodbctrans-property-dao"></a>Workspace. IsolateODBCTrans-Eigenschaft (DAO)
+# <a name="workspaceisolateodbctrans-property-dao"></a>Workspace.IsolateODBCTrans-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -29,7 +29,7 @@ Legt einen Wert fest, der angibt, ob mehrere Transaktionen, die dieselbe mit der
 
 *Ausdruck* . IsolateODBCTrans
 
-*Ausdruck* Eine Variable, die ein **Workspace** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Workspace**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 

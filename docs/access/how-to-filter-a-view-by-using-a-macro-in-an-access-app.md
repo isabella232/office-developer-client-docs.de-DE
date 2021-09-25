@@ -1,25 +1,25 @@
 ---
 title: Filtern einer Ansicht mithilfe eines Makros in einer Access-App
-manager: kelbow
-ms.date: 08/18/2017
+manager: lindalu
+ms.date: 08/18/2021
 ms.audience: Developer
 ms.topic: overview
 ms.assetid: db4dbb71-1b22-4dfd-bc07-5f7d694fc038
 description: Informationen zum Filtern einer Ansicht in einer Access-App mithilfe der Makroaktion „ErneutAbfragenDatensätze“ und eines Datenmakros.
-localization_priority: Priority
-ms.openlocfilehash: 861851a3497f290fe0bcda38e51794194fbe7bbe
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 9ff0e63731c60d48e6bc98619b131c38b2122974
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32302682"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572438"
 ---
 # <a name="filter-a-view-by-using-a-macro-in-an-access-app"></a>Filtern einer Ansicht mithilfe eines Makros in einer Access-App
 
 Informationen zum Filtern einer Ansicht in einer Access-App mithilfe der Makroaktion „ErneutAbfragenDatensätze“ und eines Datenmakros.
   
 > [!IMPORTANT]
-> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/de-DE/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
 
 Mit der Standardlistenansicht in einer Access-App können Sie Probleme mit den in den Feldern enthaltenen Werten filtern. Möglicherweise gibt es Situationen, in denen Sie eine Ansicht basierend auf einer Reihe von Bedingungen anstelle anhand der Zuordnung eines Werts filtern möchten. Hierfür müssen Sie ein Makro erstellen. In diesem Artikel wird gezeigt, wie Sie ein Makro zum Filtern einer Ansicht erstellen, um Aufgaben anzueigen, die überfällig oder in den nächsten 7 Tagen fällig sind.
   
@@ -51,7 +51,7 @@ Angenommen, Sie möchten eine Access-App erstellen, die Aufgaben für Ihr Untern
     
    **Abbildung 1: Vorlagen für die Aufgabenverfolgung**
 
-   ![Vorlagen für die Problemverfolgung](media/odc_Access15_CreateAndCustomizeWebApp_Figure01.JPG "Vorlagen für die Problemverfolgung")
+   ![Vorlagen, die mit der Suche nach Problemen übereinstimmen](media/odc_Access15_CreateAndCustomizeWebApp_Figure01.JPG "Vorlagen, die mit der Suche nach Problemen übereinstimmen")
   
 4. Wählen Sie **Aufgaben** aus.
     
@@ -113,7 +113,7 @@ Nachdem Sie die Anpassungen jetzt ermittelt haben, implementieren Sie sie. Das M
     
 4. Wählen Sie im **Datensatz nachschlagen in** die Option **Aufgaben** aus.
     
-5. Geben Sie in das Feld **Bedingung** **[Aufgaben].[Fälligkeitsdatum]\<DatAdd(Tag,7,Heute()) UND [Aufgaben].[Status]\<\>"Abgeschlossen"** ein. 
+5. Geben Sie im Feld **Wenn-Bedingung** **[Aufgaben].[Fälligkeitsdatum]\<DateAdd(Day,7,Today()) AND [Tasks].[Status]\<\>„Abgeschlossen“** ein. 
     
 6. Wählen Sie im Listenfeld **Neue Aktion hinzufügen** die Option **FestlegenRückgabevariable** aus. 
     
@@ -122,7 +122,7 @@ Nachdem Sie die Anpassungen jetzt ermittelt haben, implementieren Sie sie. Das M
   
    **Abbildung 1: Listenfeld „Neue Aktion hinzufügen“**
 
-   ![Dropdown „Neue Aktion hinzufügen“](media/odc_Access2013_FilterFormByUsingMacro_Figure01.jpg "Dropdown „Neue Aktion hinzufügen“")
+   ![Screenshot der Dropdownliste „Neue Aktion hinzufügen“](media/odc_Access2013_FilterFormByUsingMacro_Figure01.jpg "Dropdown &quot;Neue Aktion hinzufügen&quot;")
   
 7. Geben Sie in das Feld **Name** den Wert **GefundeneAufgabe** ein. 
     
@@ -134,7 +134,7 @@ Nachdem Sie die Anpassungen jetzt ermittelt haben, implementieren Sie sie. Das M
     
    **Abbildung 2. BaldFälligeAufgaben-Datenmakro**
 
-   ![BaldFälligeAufgaben-Datenmakro](media/odc_Access2013_FilterFormByUsingMacro_Figure02.jpg "BaldFälligeAufgaben-Datenmakro")
+   ![TasksDueSoon-Datenmakro](media/odc_Access2013_FilterFormByUsingMacro_Figure02.jpg "TasksDueSoon-Datenmakro")
   
 10. Schließen Sie die Entwurfsansicht für das Makro.
     
@@ -152,13 +152,13 @@ Jetzt können wir der Aktionsleiste eine benutzerdefinierte Schaltfläche hinzuf
     
    **Abbildung 3: Schaltfläche „Benutzerdefinierte Aktion hinzufügen“**
 
-   ![Schaltfläche „Benutzerdefinierte Aktion hinzufügen“](media/odc_Access2013_FilterFormByUsingMacro_Figure03.jpg "Schaltfläche „Benutzerdefinierte Aktion hinzufügen“")
+   ![Schaltfläche „Benutzerdefinierte Aktion hinzufügen“](media/odc_Access2013_FilterFormByUsingMacro_Figure03.jpg "Schaltfläche &quot;Benutzerdefinierte Aktion hinzufügen&quot;")
   
     Die neue Aktion wird als Schaltfläche mit einem Sternsymbol angezeigt, wie in Abbildung 4 dargestellt.
     
    **Abbildung 4. Neue Aktionsleistenschaltfläche**
 
-   ![Neue Aktionsleistenschaltfläche](media/odc_Access2013_FilterFormByUsingMacro_Figure04.jpg "Neue Aktionsleistenschaltfläche")
+   ![Schaltfläche „Neue Aktionsleiste“](media/odc_Access2013_FilterFormByUsingMacro_Figure04.jpg "Schaltfläche &quot;Neue Aktionsleiste&quot;")
   
 4. Wählen Sie die benutzerdefinierte Aktionsleistenschaltfläche aus, und wählen Sie dann das Symbol **Daten** aus. 
     
@@ -176,7 +176,7 @@ Jetzt können wir das Benutzeroberflächenmakro erstellen, das die Ansicht filte
     
    **Abbildung 5: Dialogfeld „Daten“**
 
-   ![Dialogfeld „Daten“](media/odc_Access2013_FilterFormByUsingMacro_Figure05.jpg "Dialogfeld „Daten“")
+   ![Dialogfeld „Daten“](media/odc_Access2013_FilterFormByUsingMacro_Figure05.jpg "Datendialogfeld")
   
     In der Entwurfsansicht für das Makro wird ein leeres Benutzeroberflächenmakro geöffnet.
     
@@ -199,9 +199,9 @@ Jetzt können wir das Benutzeroberflächenmakro erstellen, das die Ansicht filte
   
    **Abbildung 6: Listenfeld „Neue Aktion hinzufügen“**
 
-   ![Dropdown „Neue Aktion hinzufügen“](media/odc_Access2013_FilterFormByUsingMacro_Figure06.jpg "Dropdown „Neue Aktion hinzufügen“")
+   ![Dropdown „Neue Aktion hinzufügen“](media/odc_Access2013_FilterFormByUsingMacro_Figure06.jpg "Dropdown &quot;Neue Aktion hinzufügen&quot;")
   
-7. Geben Sie in das Feld **Wo** den Wert **[Aufgaben].[Fälligkeitsdatum]\<DatAdd(Tag,7,Heute()) UND [Aufgaben].[Status]\<\>”Abgeschlossen”** ein. 
+7. Geben Sie im Feld **Wenn** **[Aufgaben].[Fälligkeitsdatum]\<DateAdd(Day,7,Today()) AND [Tasks].[Status]\<\> „Abgeschlossen“** ein. 
     
 8. Geben Sie in das Feld **Sortiert nach** **[Fälligkeitsdatum]** ein. 
     
@@ -209,7 +209,7 @@ Jetzt können wir das Benutzeroberflächenmakro erstellen, das die Ansicht filte
     
    **Abbildung 7. Link „Sonst hinzufügen“**
 
-   ![Link „Sonst hinzufügen“](media/odc_Access2013_FilterFormByUsingMacro_Figure07.jpg "Link „Sonst hinzufügen“")
+   ![Link „Sonst hinzufügen“](media/odc_Access2013_FilterFormByUsingMacro_Figure07.jpg "Verknüpfung &quot;Else hinzufügen&quot;")
   
     Eine Sonst-Klausel wird dem Wenn-Block hinzugefügt.
     
@@ -223,7 +223,7 @@ Jetzt können wir das Benutzeroberflächenmakro erstellen, das die Ansicht filte
     
     **Abbildung 8: Benutzeroberflächenmakro zum Filtern der Ansicht**
 
-    ![Benutzeroberflächenmakro zum Filtern der Ansicht](media/odc_Access2013_FilterFormByUsingMacro_Figure08.jpg "Benutzeroberflächenmakro zum Filtern der Ansicht")
+    ![Benutzeroberflächenmakro zum Filtern der Ansicht](media/odc_Access2013_FilterFormByUsingMacro_Figure08.jpg "UI-Makro zum Filtern der Ansicht")
   
 13. Schließen Sie die Entwurfsansicht für das Makro.
     

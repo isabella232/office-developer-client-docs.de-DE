@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249495(v=office.15)
 ms:contentKeyID: 48545756
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 4c0753a53a2001a6c5c96ae2ceb801ee6eb75a5e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: ac892137852742f53411b7d24add16473501b7b2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296472"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594468"
 ---
 # <a name="chapter-13-rds-usage-and-security"></a>Kapitel 13: RDS-Auslastung und -Sicherheit
 
@@ -27,13 +27,13 @@ Dieser Abschnitt enthält Informationen zu folgenden Themen:
 - [Konfigurieren von virtuellen Servern auf IIS](configuring-virtual-servers-on-iis.md)
 - [DataFactory-Anpassung (ADO)](datafactory-customization.md)
 - [Aktivieren einer DLL zur Ausführung auf DCOM](enabling-a-dll-to-run-on-dcom.md)
-- [Gewähren von Gastberechtigungen für einen Webservercomputer; RDS-Gast \[Berechtigungen ADO\]](granting-guest-privileges-to-a-web-server-computer;-rds-guest-privileges.md)
+- [Gewähren von Gastberechtigungen für einen Webservercomputer; RDS-Gastberechtigungen \[ ADO\]](granting-guest-privileges-to-a-web-server-computer;-rds-guest-privileges.md)
 - [Kennzeichnen von Geschäftsobjekten als sicher für Skripting](marking-business-objects-as-safe-for-scripting.md)
 - [Registrieren von Geschäftsobjekten auf dem Client für die Verwendung mit DCOM](registering-business-objects-on-the-client-for-use-with-dcom.md)
 - [Sichern von RDS-Anwendungen](securing-rds-applications.md)
 - [Festlegen des Formats für DCOM-Datenstrommarshalling](setting-dcom-stream-marshaling-format.md)
 - [Angeben von Threads pro Prozessor auf IIS](specifying-threads-per-processor-on-iis.md)
-- [Problembehandlung bei RDS (ADO)](troubleshooting-rds.md)
+- [Problembehandlung für RDS (ADO)](troubleshooting-rds.md)
 - [Verwenden verwandter Technologien mit RDS (ADO)](using-related-technologies-with-rds.md)
 
 

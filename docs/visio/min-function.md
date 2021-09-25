@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251463
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b945b7c2-153f-2fc3-b768-1e975254ddf5
-description: Gibt die kleinste Zahl aus einer Liste zurück. Kleinste bedeutet, dass negative Unendlichkeit am nächsten ist.
-ms.openlocfilehash: 7c9eb1a8d4ce30e7ab9253c2864ecd38474e8ff6
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Gibt die kleinste Zahl aus einer Liste zurück. Kleinster Wert entspricht der negativen Unendlichkeit am nächsten.
+ms.openlocfilehash: 10a23910c52cd01e2d886ae762a743eef3e6e860
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33420836"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594531"
 ---
 # <a name="min-function"></a>MIN Function
 
-Gibt die kleinste Zahl aus einer Liste zurück. Kleinste bedeutet, dass negative Unendlichkeit am nächsten ist.
+Gibt die kleinste Zahl aus einer Liste zurück. Kleinster Wert entspricht der negativen Unendlichkeit am nächsten.
   
 ## <a name="syntax"></a>Syntax
 
@@ -29,8 +29,8 @@ MIN(** *number1* **, ** *number2* **,..., ** *numberN* ** )
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _Zahl1_ <br/> |Erforderlich  <br/> |**Variiert** <br/> |Die erste Zahl in der Liste.  <br/> |
-| _Zahl2_ <br/> |Optional.  <br/> |**Variiert** <br/> | Die zweite Zahl in der Liste.  <br/> |
-| _numberN_ <br/> |Optional.  <br/> |**Variiert** <br/> |Die n-te Zahl in der Liste.  <br/> |
+| _Zahl2_ <br/> |Optional  <br/> |**Variiert** <br/> | Die zweite Zahl in der Liste.  <br/> |
+| _numberN_ <br/> |Optional  <br/> |**Variiert** <br/> |Die n-te Zahl in der Liste.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 

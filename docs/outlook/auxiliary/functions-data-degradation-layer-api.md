@@ -1,22 +1,22 @@
 ---
-title: Funktionen (Data Degradation Layer API)
+title: Funktionen (Datendegradierungsschicht-API)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5d89797a-d636-411a-8e8b-28dbcac5af50
-description: In diesem Abschnitt werden die Funktionen in der Data Degradation Layer-API beschrieben.
-ms.openlocfilehash: 3d0cea77369b3786fae324f57c83686891450f3a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: In diesem Abschnitt werden die Funktionen in der Datendegradierungsschicht-API beschrieben.
+ms.openlocfilehash: 3acd8165444a77e72280ebbe6078f3518e042054
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33420486"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59625777"
 ---
-# <a name="functions-data-degradation-layer-api"></a>Funktionen (Data Degradation Layer API)
+# <a name="functions-data-degradation-layer-api"></a>Funktionen (Datendegradierungsschicht-API)
 
-In diesem Abschnitt werden die Funktionen in der Data Degradation Layer-API beschrieben.
+In diesem Abschnitt werden die Funktionen in der Datendegradierungsschicht-API beschrieben.
   
 |**Funktion**|**Beschreibung**|
 |:-----|:-----|

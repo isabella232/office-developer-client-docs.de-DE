@@ -1,20 +1,20 @@
 ---
-title: Recordset2. LastModified-Eigenschaft (DAO)
+title: Recordset2.LastModified-Eigenschaft (DAO)
 TOCTitle: LastModified Property
 ms:assetid: 1c13cb43-23b5-73b6-af00-a3676cc37cc7
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845726(v=office.15)
 ms:contentKeyID: 48543557
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: c3d9337c36a2b126f4ce6d9a27ae6d26712a7b6a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 55e4a4586d718747eb5b332074c83331e6e75591
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309427"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626113"
 ---
-# <a name="recordset2lastmodified-property-dao"></a>Recordset2. LastModified-Eigenschaft (DAO)
+# <a name="recordset2lastmodified-property-dao"></a>Recordset2.LastModified-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -23,9 +23,9 @@ Gibt ein Lesezeichen zurück, das den zuletzt hinzugefügten oder geänderten Da
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . LastModified
+*Ausdruck* . Lastmodified
 
-*Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset2-Objekt** darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 
@@ -33,7 +33,7 @@ You can use the **LastModified** property to move to the most recently added or 
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird die **LastModified**-Eigenschaft verwendet, um den aktuellen Datensatzzeiger auf einen geänderten Datensatz sowie auf einen neu erstellten Datensatz zu verschieben.
+In diesem Beispiel wird die **LastModified**-Eigenschaft verwenden, um den aktuellen Datensatzzeiger zu einem geänderten und neu erstellten Datensatz zu verschieben.
 
 ```vb
     Sub LastModifiedX() 
@@ -94,7 +94,7 @@ In diesem Beispiel wird die **LastModified**-Eigenschaft verwendet, um den aktue
 
 <br/>
 
-This example uses the **AddNew** method to create a new record with the specified name. The AddName function is required for this procedure to run.
+Dieses Beispiel verwendet die **AddNew** -Methode, um einen neuen Datensatz mit dem angegebenen Namen zu erstellen. Die "AddName"-Funktion ist zum Ausführen dieser Prozedur erforderlich.
 
 ```vb
     Sub AddNewX() 

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FBadRestriction
 api_type:
 - HeaderDef
 ms.assetid: 6ad3638c-d088-4a89-9b0d-f5b672162203
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: eb3e0d5a96121f63166da2025743b7ef89f4ecf6
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: b91c33e237af2dc5da3d24961192fff88e64223f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33432240"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59604999"
 ---
 # <a name="fbadrestriction"></a>FBadRestriction
 
@@ -41,7 +41,7 @@ ULONG FBadRestriction(
 
 ## <a name="parameters"></a>Parameter
 
- _lpres_
+ _Lpres_
   
 > [in] Eine [SRestriction-Struktur,](srestriction.md) die die zu überprüfende Einschränkung definiert. 
     
@@ -49,14 +49,14 @@ ULONG FBadRestriction(
 
 TRUE 
   
-> Die angegebene Einschränkung oder mindestens eine ihrer Untereinschränkungen ist ungültig. 
+> Die angegebene Einschränkung oder eine oder mehrere ihrer Untereinschränkungen ist ungültig. 
     
 FALSE 
   
-> Die angegebene Einschränkung und alle ihre Untereinschränkungen sind gültig.
+> Die angegebene Einschränkung und alle zugehörigen Untereinschränkungen sind gültig.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Nachdem eine Einschränkung überprüft wurde, kann sie in Aufrufen der [IMAPITable::Restrict-Methode](imapitable-restrict.md) übergeben werden, um die Tabelle auf bestimmte Zeilen, die [IMAPITable::FindRow-Methode](imapitable-findrow.md) zum Suchen einer Tabellenzeile und methoden der [IMAPIContainer-Schnittstelle](imapicontainerimapiprop.md) zum Ausführen einer Einschränkung für ein Containerobjekt zu beschränken. 
+Nachdem eine Einschränkung überprüft wurde, kann sie in Aufrufen der [IMAPITable::Restrict-Methode](imapitable-restrict.md) übergeben werden, um die Tabelle auf bestimmte Zeilen zu beschränken, an die [IMAPITable::FindRow-Methode](imapitable-findrow.md) zum Suchen einer Tabellenzeile und an Methoden der [IMAPIContainer-Schnittstelle,](imapicontainerimapiprop.md) um eine Einschränkung für ein Containerobjekt auszuführen. 
   
 

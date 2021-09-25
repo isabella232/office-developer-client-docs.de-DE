@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249909(v=office.15)
 ms:contentKeyID: 48547423
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 54c67848d321125af44d9f5bf50f3aa582b043bb
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 0e1790f8ec28343f04b86c5e4b0f0f5bfd903a18
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294078"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594335"
 ---
 # <a name="delete-method-adox-collections"></a>Delete-Methode (ADOX-Auflistungen)
 
@@ -22,7 +22,7 @@ Entfernt ein Objekt aus einer Auflistung.
 
 ## <a name="syntax"></a>Syntax
 
-*Sammlung*. *Name* löschen
+*Auflistung*. *Name löschen*
 
 ## <a name="parameters"></a>Parameter
 
@@ -30,7 +30,7 @@ Entfernt ein Objekt aus einer Auflistung.
 |:--------|:----------|
 |*Name* |Ein **Variant** -Wert, der den Namen oder die Position (Index) des zu löschenden Objekts angibt.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn der Name nicht in der Auflistung vorhanden ist, tritt ein Fehler auf.
 

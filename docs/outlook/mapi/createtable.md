@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - CreateTable
 api_type:
 - HeaderDef
 ms.assetid: 106ce3d8-d0bf-4a0e-9a15-dc8988d0eb58
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e8c399569e68b8cb55d803733ed93105ea0be799
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: da2cce7a36c37ee226aa3fc1d49cea84b19d741c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33435012"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605083"
 ---
 # <a name="createtable"></a>CreateTable
 
@@ -51,7 +51,7 @@ SCODE CreateTable(
 
  _lpInterface_
   
-> [in] Zeiger auf eine Schnittstellen-ID (Interface Identifier, IID) für das Tabellendatenobjekt. Der gültige Schnittstellenbezeichner wird IID_IMAPITableData. Das Übergeben von NULL im  _lpInterface-Parameter_ bewirkt auch, dass das im  _lppTableData-Parameter_ zurückgegebene Tabellendatenobjekt in die Standardschnittstelle für ein Tabellendatenobjekt übertragen wird. 
+> [in] Zeiger auf einen Schnittstellenbezeichner (Interface Identifier, IID) für das Tabellendatenobjekt. Der gültige Schnittstellenbezeichner ist IID_IMAPITableData. Wird NULL im  _LpInterface-Parameter_ übergeben, wird auch das im  _Parameter lppTableData_ zurückgegebene Tabellendatenobjekt in die Standardschnittstelle für ein Tabellendatenobjekt umgewandelt. 
     
  _lpAllocateBuffer_
   
@@ -59,11 +59,11 @@ SCODE CreateTable(
     
  _lpAllocateMore_
   
-> [in] Zeiger auf die [MAPIAllocateMore-Funktion,](mapiallocatemore.md) die zum Zuordnen von zusätzlichem Arbeitsspeicher verwendet werden soll. 
+> [in] Zeiger auf die [MAPIAllocateMore-Funktion,](mapiallocatemore.md) die verwendet werden soll, um zusätzlichen Speicher zuzuweisen. 
     
  _lpFreeBuffer_
   
-> [in] Zeiger auf die [MAPIFreeBuffer-Funktion,](mapifreebuffer.md) die zum Freispeichern verwendet werden soll. 
+> [in] Zeiger auf die [MAPIFreeBuffer-Funktion,](mapifreebuffer.md) die zum Freigeben von Arbeitsspeicher verwendet werden soll. 
     
  _lpvReserved_
   
@@ -71,7 +71,7 @@ SCODE CreateTable(
     
  _ulTableType_
   
-> [in] Ein Tabellentyp, der einer Clientanwendung oder einem Dienstanbieter als Teil der [IMAPITable::GetStatus-Rückgabedaten](imapitable-getstatus.md) in den Tabellenansichten zur Verfügung steht. Die folgenden Werte sind möglich: 
+> [in] Ein Tabellentyp, der einer Clientanwendung oder einem Dienstanbieter als Teil der [IMAPITable::GetStatus](imapitable-getstatus.md) zur Verfügung steht, gibt Daten in den Tabellenansichten zurück. Die folgenden Werte sind möglich: 
     
 TBLTYPE_DYNAMIC 
   
@@ -79,7 +79,7 @@ TBLTYPE_DYNAMIC
     
 TBLTYPE_KEYSET 
   
-> Die Zeilen in der Tabelle sind fest, aber die Werte in diesen Zeilen sind dynamisch und können sich ändern, wenn sich die zugrunde liegenden Daten ändern. 
+> Die Zeilen in der Tabelle sind behoben, aber die Werte in diesen Zeilen sind dynamisch und können sich ändern, wenn sich die zugrunde liegenden Daten ändern. 
     
 TBLTYPE_SNAPSHOT 
   
@@ -91,7 +91,7 @@ TBLTYPE_SNAPSHOT
     
  _lpSPropTagArrayColumns_
   
-> [in] Zeiger auf eine [SPropTagArray-Struktur,](sproptagarray.md) die ein Array von Eigenschaftstags enthält, die die eigenschaften angeben, die in der Tabelle erforderlich sind, für die das Objekt Daten enthält. 
+> [in] Zeiger auf eine [SPropTagArray-Struktur,](sproptagarray.md) die ein Array von Eigenschaftstags enthält, die die in der Tabelle erforderlichen Eigenschaften angeben, für die das Objekt Daten enthält. 
     
  _lppTableData_
   
@@ -103,9 +103,9 @@ S_OK
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die _Eingabeparameter lpAllocateBuffer,_ _lpAllocateMore_ und _lpFreeBuffer_ verweisen auf die [Funktionen MAPIAllocateBuffer,](mapiallocatebuffer.md) [MAPIAllocateMore](mapiallocatemore.md)und [MAPIFreeBuffer.](mapifreebuffer.md) Eine Clientanwendung, die **CreateTable** aufruft, übergibt Zeiger auf die gerade benannten #A0 . Ein Dienstanbieter übergibt die Zeiger an diese Funktionen, die er beim Initialisierungsaufruf empfangen oder mit einem Aufruf der [IMAPISupport::GetMemAllocRoutines-Methode abgerufen](imapisupport-getmemallocroutines.md) hat. 
+Die Eingabeparameter _lpAllocateBuffer,_ _lpAllocateMore_ und _lpFreeBuffer_ verweisen jeweils auf die Funktionen [MAPIAllocateBuffer,](mapiallocatebuffer.md) [MAPIAllocateMore](mapiallocatemore.md)und [MAPIFreeBuffer.](mapifreebuffer.md) Eine Clientanwendung, die **CreateTable aufruft,** übergibt Zeiger an die mapi-Funktionen, die gerade benannt wurden. Ein Dienstanbieter übergibt die Zeiger an diese Funktionen, die er in seinem Initialisierungsaufruf empfangen oder mit einem Aufruf der [IMAPISupport::GetMemAllocRoutines-Methode](imapisupport-getmemallocroutines.md) abgerufen hat. 
   
 ## <a name="see-also"></a>Siehe auch
 

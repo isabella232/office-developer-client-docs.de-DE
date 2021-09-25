@@ -6,22 +6,22 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251280
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d34c296d-e874-b5f3-9232-e1cfe01c7eab
 description: Enthält eine Zeile und Zellen für jeden für das Shape definierten Steuerpunkt.
-ms.openlocfilehash: b0ca91803d866a3d11f255273c2e338d7e7dc74a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: d37a4477ea3dc543968639b296dfbe49afaa59d3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33427171"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594678"
 ---
 # <a name="controls-section"></a>Abschnitt "Controls"
 
 Enthält eine Zeile und Zellen für jeden für das Shape definierten Steuerpunkt.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Sie können Steuerelementziehpunkte im Abschnitt **Steuerelemente** im ShapeSheet-Fenster definieren. Wenn Ihr Shape keinen **Abschnitt Steuerelemente** enthält, können Sie einen in das ShapeSheet-Fenster einfügen. Klicken Sie mit der rechten Maustaste im ShapeSheet-Fenster auf Abschnitt **einfügen,** und aktivieren Sie dann das Kontrollkästchen **Steuerelemente.** Klicken Sie zum Hinzufügen von Steuerelementhandles zu einem vorhandenen **Abschnitt Steuerelemente** mit der rechten Maustaste auf eine Zeile, und klicken Sie im Kontextmenü **auf** Zeile einfügen. 
+Sie können Steuerpunkte im Abschnitt **"Steuerelemente"** im ShapeSheet-Fenster definieren. Wenn ihr Shape keinen Abschnitt **"Steuerelemente"** aufweist, können Sie einen in das ShapeSheet-Fenster einfügen. Klicken Sie mit der rechten Maustaste in das ShapeSheet-Fenster, klicken Sie auf **Abschnitt einfügen,** und aktivieren Sie dann das Kontrollkästchen **Steuerelemente.** Klicken Sie mit der rechten Maustaste auf eine Zeile, und klicken Sie im Kontextmenü auf **"Zeile einfügen",** um einem **vorhandenen** Steuerelementabschnitt Steuerpunkte hinzuzufügen. 
   
 

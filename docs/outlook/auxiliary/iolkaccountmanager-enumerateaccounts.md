@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: dbb8342b-e4e0-f89d-3e14-b4c7049095ef
 description: Ruft einen Enumerator für die Konten, die bestimmte Kategorie oder Typ ab.
-ms.openlocfilehash: d0d383dee0e76dd6310d01bd1482e307c2374856
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: eb7f0c35ba3360c21d4b75cc911d12a2e91f5baf
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423048"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59625658"
 ---
 # <a name="iolkaccountmanagerenumerateaccounts"></a>IOlkAccountManager::EnumerateAccounts
 
@@ -58,7 +58,7 @@ _pclsidType_
     
    - CLSID_OlkLDAPAccount
     
-_dwFlags_
+_Dwflags_
   
 > [in] Flags, die Verhalten ändern. Der einzige unterstützte Wert ist OLK_ACCOUNT_NO_FLAGS.
     
@@ -73,11 +73,11 @@ _ppEnum_
 |S_OK  <br/> |Der Aufruf war erfolgreich.  <br/> |
 |E_OLK_NOT_INITIALIZED  <br/> |Konto-Manager wurde nicht für die Verwendung initialisiert.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Angeben von NULL für die Kategorie gibt einen Enumerator aller Konten des angegebenen Typs zurück. Entsprechend gibt die Angabe von NULL für Typ einen Enumerator aller Konten der angegebenen Kategorie.
   
- **IOlkAccountManager::EnumerateAccounts** unterstützt nicht die Address Book Kategorie für ein Exchange-Konto. Wenn es sich bei dem Konto um ein Exchange-Konto handelt (*pclsidType* ist **CLSID_OlkMAPIAccount** ), und Sie versuchen, Konten aufzählen, die das Adressbuch implementieren (*prgclsidCategory* ist **CLSID_OlkAddressBook** ), gibt der Aufruf von **IOlkAccountManager::EnumerateAccounts** das Exchange-Konto nicht im Kontenenumerator *ppEnum* zurück. 
+ **IOlkAccountManager::EnumerateAccounts** unterstützt nicht die Address Book Kategorie für ein Exchange-Konto. Wenn das Konto ein Exchange Konto ist (*pclsidType* ist **CLSID_OlkMAPIAccount** ), und Sie versuchen, Konten auflisten, die das Adressbuch implementieren (*prgclsidCategory* ist **CLSID_OlkAddressBook** ), wird beim Aufrufen von **IOlkAccountManager::EnumerateAccounts** das Exchange Konto in der Kontenenumerator-PpEnum nicht zurückgegeben.  
   
 ## <a name="see-also"></a>Siehe auch
 

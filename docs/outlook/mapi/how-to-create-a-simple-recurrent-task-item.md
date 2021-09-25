@@ -3,17 +3,17 @@ title: Erstellen eines einfachen wiederkehrenden Aufgabenelements
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: e9ee8865-0983-439e-8405-7946c5ec8762
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: be765915b729824b8c8b4209f125f354b02bad2b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 09db0785b8a5d7a895d4d284603a318c623bfcae
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32345472"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59604922"
 ---
 # <a name="create-a-simple-recurrent-task-item"></a>Erstellen eines einfachen wiederkehrenden Aufgabenelements
 
@@ -21,34 +21,34 @@ ms.locfileid: "32345472"
   
 MAPI kann zum Erstellen von Aufgabenelementen verwendet werden. In diesem Thema wird beschrieben, wie Sie ein einfaches wiederkehrendes Aufgabenelement erstellen.
   
-Informationen zum Herunterladen, Anzeigen und Ausführen des Codes aus der MFCMAPI-Anwendung und dem CreateOutlookItemsAddin-Projekt, auf das in diesem Thema verwiesen wird, finden Sie unter [Install the Samples Used in This Section](how-to-install-the-samples-used-in-this-section.md).
+Informationen zum Herunterladen, Anzeigen und Ausführen des Codes aus der MFCMAPI-Anwendung und dem CreateOutlookItemsAddin-Projekt, auf das in diesem Thema verwiesen wird, finden Sie unter [Installieren der in diesem Abschnitt verwendeten Beispiele.](how-to-install-the-samples-used-in-this-section.md)
 
 ### <a name="to-create-a-task-item"></a>So erstellen Sie ein Aufgabenelement
 
-1. Öffnen Sie einen Nachrichtenspeicher. Informationen zum Öffnen eines Nachrichtenspeichers finden Sie unter [Opening a Message Store](opening-a-message-store.md).
+1. Öffnen Sie einen Nachrichtenspeicher. Informationen zum Öffnen eines Nachrichtenspeichers finden Sie unter [Öffnen einer Nachricht Store](opening-a-message-store.md).
     
-2. Öffnen Sie den Ordner Tasks im Nachrichtenspeicher. Weitere Informationen finden Sie **unter PR_IPM_TASK_ENTRYID** ([PidTagIpmTaskEntryId](pidtagipmtaskentryid-canonical-property.md)).
+2. Öffnen Sie den Ordner "Aufgaben" im Nachrichtenspeicher. Weitere Informationen finden Sie unter **PR_IPM_TASK_ENTRYID** ([PidTagIpmTaskEntryId](pidtagipmtaskentryid-canonical-property.md)).
     
-3. Rufen Sie [die IMAPIFolder::CreateMessage-Methode](imapifolder-createmessage.md) im Ordner Tasks auf, um das neue Aufgabenelement zu erstellen. 
+3. Rufen Sie die [IMAPIFolder::CreateMessage-Methode](imapifolder-createmessage.md) im Ordner "Tasks" auf, um das neue Aufgabenelement zu erstellen. 
     
-4. Legen Sie **die dispidTaskRecur** ([PidLidTaskRecurrence](pidlidtaskrecurrence-canonical-property.md)) -Eigenschaft und andere aufgabenbezogene Eigenschaften, die zum Erstellen einer wiederkehrenden Aufgabe erforderlich sind.
+4. Legen Sie die **Eigenschaft dispidTaskRecur** ([PidLidTaskRecurrence](pidlidtaskrecurrence-canonical-property.md)) und andere aufgabenbezogene Eigenschaften fest, die zum Erstellen eines wiederkehrenden Vorgangs erforderlich sind.
     
 5. Speichern Sie das neue Aufgabenelement.
     
-Die  `AddTask` Funktion in der Tasks.cpp-Quelldatei des CreateOutlookItemsAddin-Projekts veranschaulicht diese Schritte. Die Funktion übernimmt Parameter aus dem Dialogfeld Aufgabe hinzufügen, das angezeigt wird, wenn Sie im Menü `AddTask` **Addins** in der  MFCMAPI-Beispielanwendung auf Aufgabe hinzufügen klicken.  Die Funktion in Tasks.cpp zeigt das Dialogfeld an und übergibt Werte aus dem Dialogfeld  `DisplayAddTaskDialog` an die  `AddTask` Funktion. Die Funktion bezieht sich nicht direkt auf das Erstellen eines Aufgabenelements mithilfe von  `DisplayAddTaskDialog` MAPI, daher ist sie hier nicht aufgeführt. 
+Die  `AddTask` Funktion in der Quelldatei Tasks.cpp des Projekts CreateOutlookItemsAddin veranschaulicht diese Schritte. Die `AddTask` Funktion verwendet Parameter aus dem Dialogfeld **"Aufgabe hinzufügen",** das angezeigt wird, wenn Sie im Menü **"Add-Ins"** in der MFCMAPI-Beispielanwendung auf **"Aufgabe hinzufügen"** klicken. Die  `DisplayAddTaskDialog` Funktion in Tasks.cpp zeigt das Dialogfeld an und übergibt Werte aus dem Dialogfeld an die  `AddTask` Funktion. Die  `DisplayAddTaskDialog` Funktion bezieht sich nicht direkt auf das Erstellen eines Aufgabenelements mithilfe der MAPI, daher wird sie hier nicht aufgeführt. 
   
 > [!IMPORTANT]
-> Der Code in der MFCMAPI-Anwendung  stellt nicht sicher, dass  der Ordner Tasks ausgewählt wurde, wenn Sie im Menü **Addins** auf den Befehl Aufgaben hinzufügen klicken. Das Erstellen von Aufgabenelementen in einem anderen Ordner als dem Ordner **Tasks** kann zu einem nicht definierten Verhalten führen. Stellen Sie sicher, dass Sie den Ordner **Aufgaben** ausgewählt haben, bevor Sie den **Befehl Aufgabe** hinzufügen in der MFCMAPI-Anwendung verwenden. 
+> Der Code in der MFCMAPI-Anwendung stellt nicht sicher, dass der Ordner **"Aufgaben"** ausgewählt wurde, wenn Sie im Menü **"Addins"** auf den Befehl **"Aufgabe hinzufügen"** klicken. Das Erstellen von Aufgabenelementen in einem anderen Ordner als **dem** Aufgabenordner kann zu nicht definiertem Verhalten führen. Stellen Sie sicher, dass Sie den Ordner **"Aufgaben"** ausgewählt haben, bevor Sie den Befehl **"Aufgabe hinzufügen"** in der MFCMAPI-Anwendung verwenden. 
   
-Die  `AddTask` Funktion ist unten aufgeführt. Beachten Sie, dass der an die Funktion übergebene  _lpFolder-Parameter_ ein Zeiger auf eine  `AddTask` [IMAPIFolder-Schnittstelle](imapifolderimapicontainer.md) ist, die den Ordner darstellt, in dem die neue Aufgabe erstellt wird. Da  _lpFolder_ eine **IMAPIFolder-Schnittstelle** darstellt, ruft der Code die [IMAPIFolder::CreateMessage-Methode](imapifolder-createmessage.md) auf. Die **CreateMessage-Methode** gibt einen Erfolgscode und einen Zeiger auf einen Zeiger auf eine **IMessage-Schnittstelle** zurück. Der Großteil des Funktionscodes übernimmt das Angeben von Eigenschaften in Vorbereitung auf den Aufruf der `AddTask` [IMAPIProp::SetProps-Methode.](imapiprop-setprops.md) Wenn der Aufruf der **SetProps-Methode** erfolgreich ist, wird die [IMAPIProp::SaveChanges-Methode](imapiprop-savechanges.md) aufgerufen, um die Änderungen an den Speicher zu übernehmen und ein neues Aufgabenelement zu erstellen. 
+Die  `AddTask` Funktion ist unten aufgeführt. Beachten Sie, dass der an die Funktion übergebene  _lpFolder-Parameter_  `AddTask` ein Zeiger auf eine [IMAPIFolder-Schnittstelle](imapifolderimapicontainer.md) ist, die den Ordner darstellt, in dem die neue Aufgabe erstellt wird. Angesichts des  _lpFolder-Elements,_ das eine **IMAPIFolder-Schnittstelle** darstellt, ruft der Code die [IMAPIFolder::CreateMessage-Methode](imapifolder-createmessage.md) auf. Die **CreateMessage-Methode** gibt einen Erfolgscode und einen Zeiger auf einen Zeiger auf eine **IMessage-Schnittstelle** zurück. Der Großteil des `AddTask` Funktionscodes übernimmt die Arbeit beim Angeben von Eigenschaften in Vorbereitung auf den Aufruf der [IMAPIProp::SetProps-Methode.](imapiprop-setprops.md) Wenn der Aufruf der **SetProps-Methode** erfolgreich ist, wird die [IMAPIProp::SaveChanges-Methode](imapiprop-savechanges.md) aufgerufen, um die Änderungen in den Speicher zu übernehmen und ein neues Aufgabenelement zu erstellen. 
   
-Die  `AddTask` Funktion legt eine Reihe benannter Eigenschaften fest. Informationen zu benannten Eigenschaften und deren Erstellung finden Sie unter [Using MAPI to Create Outlook 2007 Items](https://msdn.microsoft.com/library/cc678348%28office.12%29.aspx). Da die benannten Eigenschaften, die für Aufgabenelemente verwendet werden, mehrere Eigenschaftssätze belegen, muss beim Erstellen von Parametern darauf achten, dass sie an die [IMAPIProp::GetIDsFromNames-Methode übergeben](imapiprop-getidsfromnames.md) werden. 
+Die  `AddTask` Funktion legt eine Reihe benannter Eigenschaften fest. Informationen zu benannten Eigenschaften und deren Erstellung finden Sie unter [Verwenden von MAPI zum Erstellen von Outlook 2007-Elementen.](https://msdn.microsoft.com/library/cc678348%28office.12%29.aspx) Da die benannten Eigenschaften, die für Aufgabenelemente verwendet werden, mehrere Eigenschaftensätze belegen, müssen Sie beim Erstellen von Parametern vorsichtig sein, die an die [IMAPIProp::GetIDsFromNames-Methode](imapiprop-getidsfromnames.md) übergeben werden. 
   
-Die Funktion verwendet die Hilfsfunktion, um eine Struktur zu erstellen, die eine Aufgabenserie zum Festlegen der  `AddTask`  `BuildWeeklyTaskRecurrencePattern` **dispidTaskRecur-Eigenschaft** darstellt. Informationen zur Aufgabenserienstruktur, die die Funktion erstellt, finden Sie unter  `BuildWeeklyTaskRecurrencePattern` [PidLidTaskRecurrence Canonical Property](pidlidtaskrecurrence-canonical-property.md) und [PidLidRecurrencePattern Canonical Property](pidlidrecurrencepattern-canonical-property.md). 
+Die  `AddTask` Funktion verwendet die  `BuildWeeklyTaskRecurrencePattern` Hilfsfunktion, um eine Struktur zu erstellen, die eine Aufgabenserie zum Festlegen der **dispidTaskRecur-Eigenschaft** darstellt. Informationen zur Aufgabenserienstruktur der `BuildWeeklyTaskRecurrencePattern` Funktionsbuilds finden Sie unter [PidLidTaskRecurrence (kanonische Eigenschaft)](pidlidtaskrecurrence-canonical-property.md) und [PidLidRecurrencePattern (kanonische Eigenschaft).](pidlidrecurrencepattern-canonical-property.md) 
 
-Beachten Sie, dass zwar eine vielzahl von Serienmustern möglich ist, die Funktion jedoch nur ein wöchentliches  `BuildWeeklyTaskRecurrencePattern` Serienmuster erstellt. Er ist auch für eine Reihe von Annahmen hart codiert, z. B. für den Kalendertyp (Gregorianisch), den ersten Wochentag (Sonntag) und die Anzahl der geänderten oder gelöschten Instanzen (keine). Eine allgemeinere Funktion zum Erstellen von Serienmustern müsste diese Arten von Variablen als Parameter akzeptieren. 
+Beachten Sie, dass zwar eine vielzahl von Serienmustern möglich ist, die  `BuildWeeklyTaskRecurrencePattern` Funktion aber nur ein wöchentliches Serienmuster erstellt. Es ist auch für eine Reihe von Annahmen hartcodiert, z. B. den Kalendertyp (Gregorianisch), den ersten Tag der Woche (Sonntag) und die Anzahl der geänderten oder gelöschten Instanzen (keine). Eine allgemeinere Funktion zum Erstellen von Serienmustern müsste diese Variablen als Parameter akzeptieren. 
   
-Im Folgenden finden Sie die vollständige Auflistung der  `AddTask` Funktion. 
+Es folgt die vollständige Auflistung der  `AddTask` Funktion. 
   
 ```cpp
 HRESULT AddTask(LPMAPIFOLDER lpFolder,

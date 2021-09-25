@@ -5,20 +5,20 @@ ms.audience: Developer
 ms.topic: overview
 ms.assetid: 597f7b81-3baf-4bf2-9ef0-f7fedad8c36e
 description: Hier finden Sie Vorgehensweisen, Beispielcode, SDK- und API-Dokumentationen, VBA-Referenzen, Schulungen und technische Artikel zum Entwickeln von Lösungen und zum Anpassen von Excel.
-localization_priority: Priority
-ms.openlocfilehash: af840c94620f445689a5b7dcdd20341485a4a6d7
-ms.sourcegitcommit: e2cff03cb13d6c500942897b234db00476a72f18
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: 0d4355be208d28726567eb09f498147c4129d4a7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34100872"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572403"
 ---
 # <a name="develop-solutions-and-customize-excel"></a>Entwickeln von Lösungen und Anpassen von Excel
 
 Hier finden Sie Vorgehensweisen, Beispielcode, SDK- und API-Dokumentationen, VBA-Referenzen, Schulungen und technische Artikel zum Entwickeln von Lösungen und zum Anpassen von Excel.
   
 > [!NOTE]
-> Haben Sie Interesse an der Entwicklung von Lösungen, mit denen die Funktionen von Office über [mehrere Plattformen](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-in-availability) erweitert werden können? Schauen Sie sich das neue [Excel-Add-Ins-Modell](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-overview) an. 
+> Haben Sie Interesse an der Entwicklung von Lösungen, mit denen die Office-Erfahrung über [mehrere Plattformen](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-in-availability) erweitert werden kann? Schauen Sie sich das neue [Excel-Add-Ins-Modell](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-overview) an. 
   
 ### <a name="viewed-most"></a>Am häufigsten angezeigt
   

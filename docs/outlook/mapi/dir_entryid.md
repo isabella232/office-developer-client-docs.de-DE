@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9e055269-f3bf-4b64-8384-3cbc372c0b34
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e7abcb2c86ff5cabe0b8f5664ec316244617ac09
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 44c96d321578cd1dba4ea7ee51eb45ff1e5e817e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33421235"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605013"
 ---
 # <a name="dir_entryid"></a>DIR_ENTRYID
 
@@ -40,23 +40,23 @@ typedef struct _dir_entryid
 #pragma pack()
 ```
 
-## <a name="members"></a>Elemente
+## <a name="members"></a>Members
 
  **abFlags**
   
-> Eine Bitmaske mit Flags, die Informationen zur Beschreibung des Objekts enthält. Weitere Informationen finden Sie in der Beschreibung des **AbFlags-Felds** einer [ENTRYID-Struktur.](entryid.md) 
+> Eine Bitmaske mit Flags, die Informationen zur Beschreibung des Objekts bereitstellt. Weitere Informationen finden Sie in der Beschreibung des **abFlags-Felds** einer [ENTRYID-Struktur.](entryid.md) 
     
  **muid**
   
-> GUID, die den Speicheranbieter identifiziert.
+> GUID, die den Store-Anbieter identifiziert.
     
  **ulVersion**
   
-> Die Versionsnummer der **DIR_ENTRYID** Struktur. Muss auf CONTAB_VERSION. 
+> Die Versionsnummer der **DIR_ENTRYID** Struktur. Muss auf CONTAB_VERSION festgelegt werden. 
     
  **ulType**
   
-> Eine ganze Zahl, die den Verzeichniseintrags-ID-Typ darstellt. Dies muss einer der folgenden Werte sein:
+> Eine ganze Zahl, die den Verzeichniseintrags-ID-Typ darstellt. Es muss einer der folgenden Werte sein:
     
 |**Name**|**Beschreibung**|
 |:-----|:-----|
@@ -68,9 +68,9 @@ typedef struct _dir_entryid
   
 > Eine GUID, die das Anmeldeobjekt identifiziert.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die Strukturen **DIR_ENTRYID** [und CONTAB_ENTRYID](contab_entryid.md) sind identisch, mit Ausnahme des **ulType-Mitglieds.** Der Inhalt des **ulType-Mitglieds** bestimmt, welche Struktur für die verbleibenden Felder geeignet ist. 
+Die Strukturen **DIR_ENTRYID** und [CONTAB_ENTRYID](contab_entryid.md) sind identisch, mit Ausnahme des **ulType-Elements.** Der Inhalt des **ulType-Elements** bestimmt, welche Struktur für die verbleibenden Felder geeignet ist. 
   
 ## <a name="see-also"></a>Siehe auch
 

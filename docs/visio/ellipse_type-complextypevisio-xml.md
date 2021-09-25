@@ -4,14 +4,14 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c67dc78e-6639-e32f-4909-945001659d30
-ms.openlocfilehash: d5e73eeb0dd4b4ead485b1bcd99585a2cd766c51
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 4d2ff19e4f0c04e64da47c38c96905682073d00f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539912"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59582771"
 ---
 # <a name="ellipse_type-complextype-visio-xml"></a>Ellipse_Type complexType (Visio XML)
 
@@ -46,13 +46,13 @@ ms.locfileid: "34539912"
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Cell](cell-element-ellipse-rowvisio-xml.md) <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> ||
+|[Cell](cell-element-ellipse-rowvisio-xml.md) <br/> |[Cell_type](cell_type-complextypevisio-xml.md) <br/> ||
    
 ### <a name="attributes"></a>Attribute
 

@@ -1,25 +1,25 @@
 ---
-title: PidLidFax3AddressType (kanonische Eigenschaft)
+title: Kanonische PidLidFax3AddressType-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidFax3AddressType
 api_type:
 - COM
 ms.assetid: 77e22ecc-a4fa-4bd2-b0dd-bd58183b7485
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: bbe2d6c5fc6683de06602c61aa8ef7b8ca8ada55
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 94132a714e65cbfbdd078ca11425911a4c49c7a7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32331990"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59604684"
 ---
-# <a name="pidlidfax3addresstype-canonical-property"></a>PidLidFax3AddressType (kanonische Eigenschaft)
+# <a name="pidlidfax3addresstype-canonical-property"></a>Kanonische PidLidFax3AddressType-Eigenschaft
 
   
   
@@ -31,11 +31,11 @@ Gibt den Adresstyp für die Faxadresse des anderen Kontakts an.
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidFax3AddrType  <br/> |
 |Eigenschaftensatz:  <br/> |PSETID_Address  <br/> |
-|Lange ID (LID):  <br/> |0x000080D2  <br/> |
+|Long ID (LID):  <br/> |0x000080D2  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft muss, falls vorhanden, auf "FAX" festgelegt werden.
   
@@ -45,7 +45,7 @@ Diese Eigenschaft muss, falls vorhanden, auf "FAX" festgelegt werden.
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Stellt Definitionen von Eigenschaftensatzdefinitionen und Verweise auf Exchange Server Protokollspezifikationen zur Verfügung.
+> Stellt Definitionen von Eigenschaftengruppen und Verweise auf verwandte Exchange Server Protokollspezifikationen bereit.
     
 [[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
@@ -55,7 +55,7 @@ Diese Eigenschaft muss, falls vorhanden, auf "FAX" festgelegt werden.
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -63,9 +63,9 @@ Mapidefs.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 
