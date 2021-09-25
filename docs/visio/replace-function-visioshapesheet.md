@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm60108
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 70c9fc1d-6e7b-479f-effd-0d4bc8ae0f72
 description: Ersetzt auf der Grundlage der angegebenen Anzahl von Zeichen einen Teil einer Zeichenfolge durch eine andere Zeichenfolge.
-ms.openlocfilehash: 75a156d720ca276e75fccf932124ae905e4350b0
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 1288d18d148abc0e5bafe7fe855d140cc4e62d91
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33414354"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59554103"
 ---
 # <a name="replace-function-visioshapesheet"></a>REPLACE-Funktion (VisioShapeSheet)
 
@@ -29,15 +29,15 @@ REPLACE (** *old_text* **, ** *start_num* **, ** *num_chars* **, ** *new_text* *
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _old_text_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Text, in dem einige Zeichen ersetzt werden sollen.  <br/> |
-| _start_num_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die Position des Zeichens in _old_text,_ die Sie durch _new_text._ Das erste Zeichen in der Zeichenfolge ist Position 1.  <br/> |
-| _num_chars_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die Anzahl der Zeichen in  _old_text,_ die Sie ersetzen möchten  <br/> |
-| _new_text_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Text, der Zeichen  _in_ old_text.  <br/> |
+| _start_num_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die Position des Zeichens in  _old_text,_ die Sie durch  _new_text_ ersetzen möchten. Das erste Zeichen in der Zeichenfolge ist Position 1.  <br/> |
+| _Anzahl_zeichen_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die Anzahl der Zeichen in  _old_text,_ die Sie ersetzen möchten  <br/> |
+| _new_text_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Text, der Zeichen in  _old_text_ ersetzt.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
 Zeichenfolge
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Verwenden Sie die Funktion REPLACE, wenn Sie Text ersetzen möchten, der an einer bestimmten Stelle in der Zeichenfolge auftritt. Wenn Sie bestimmten Text in einer Zeichenkette ersetzen möchten, verwenden Sie die Funktion SUBSTITUTE.
   

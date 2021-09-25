@@ -5,13 +5,13 @@ ms.date: 04/20/2016
 ms.audience: Developer
 ms.assetid: 1c4937c4-0998-4f81-a994-50d3dd54727c
 description: Hier finden Sie Vorgehensweisen, Beispielcode, SDK- und API-Dokumentationen, VBA-Referenzen, Schulungen und technische Artikel zum Entwickeln von Lösungen und zum Anpassen von Office.
-localization_priority: Priority
-ms.openlocfilehash: 758d0b25457089de0d611d41fa962e7323985abe
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 613984ec8d1175f8c47dcc2dec68768144c517af
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32351695"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59554950"
 ---
 # <a name="office-shared"></a>Office gemeinsam genutzt
 
@@ -32,7 +32,7 @@ Hier finden Sie Vorgehensweisen, Beispielcode, SDK- und API-Dokumentationen, VBA
   
 ### <a name="office-365-apis"></a>Office 365-APIs
   
-- [Erste Schritte](https://developer.microsoft.com/de-DE/office/docs)
+- [Erste Schritte](https://developer.microsoft.com/en-us/office/docs)
   
 - [Plattformübersicht](https://docs.microsoft.com/previous-versions/office/office-365-api/)
   

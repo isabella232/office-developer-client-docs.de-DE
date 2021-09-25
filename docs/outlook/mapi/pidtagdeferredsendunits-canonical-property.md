@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagDeferredSendUnits
 api_type:
 - HeaderDef
 ms.assetid: 2386be9f-18c9-4949-a2aa-efc8e212801c
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: becc076efe0f4f805eb2a8db071b70ad731ee256
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 5e7cbc5729d2545b0d342913dcd16921b9d8bd94
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359906"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59600204"
 ---
 # <a name="pidtagdeferredsendunits-canonical-property"></a>PidTagDeferredSendUnits (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32359906"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt die Zeiteinheit an, mit der **der Wert der PR_DEFERRED_SEND_NUMBER** ([PidTagDeferredSendNumber](pidtagdeferredsendnumber-canonical-property.md)) multipliziert werden soll.
+Gibt die Zeiteinheit an, mit der der Wert der **PR_DEFERRED_SEND_NUMBER** ([PidTagDeferredSendNumber](pidtagdeferredsendnumber-canonical-property.md)) multipliziert werden soll.
   
 |||
 |:-----|:-----|
@@ -34,9 +34,9 @@ Gibt die Zeiteinheit an, mit der **der Wert der PR_DEFERRED_SEND_NUMBER** ([PidT
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Status  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Wenn festgelegt, muss diese Eigenschaft über einen der folgenden Werte verfügen:
+Wenn diese Eigenschaft festgelegt ist, muss sie einen der folgenden Werte aufweisen:
   
 |||
 |:-----|:-----|
@@ -58,11 +58,11 @@ Wenn festgelegt, muss diese Eigenschaft über einen der folgenden Werte verfüge
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -70,9 +70,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

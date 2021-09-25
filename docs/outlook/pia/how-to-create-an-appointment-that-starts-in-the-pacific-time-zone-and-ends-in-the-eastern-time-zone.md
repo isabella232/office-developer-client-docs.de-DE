@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Bb623388(v=office.15)
 ms:contentKeyID: 55119808
 ms.date: 07/24/2014
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: e9a1b9d5f65d8683c08821d4cf0851f599f32030
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: aafc61375f6f752cd5a4e088438138e54c61c44b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349455"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59590765"
 ---
 # <a name="create-an-appointment-that-starts-in-the-pacific-time-zone-and-ends-in-the-eastern-time-zone"></a>Erstellen eines Termins mit Startzeit in der Pacific Time-Zone und Endzeit in der Eastern Time-Zone
 
@@ -20,13 +20,13 @@ Gelegentlich kann ein Termin einen Zeitraum überspannen, in dem der Benutzer m�
 
 ## <a name="example"></a>Beispiel
 
-In diesem Codebeispiel wird das [TimeZones-Objekt](https://msdn.microsoft.com/library/bb611081\(v=office.15\)) verwendet, das alle in Microsoft Windows erkannten Zeitzonen darstellt. Außerdem wird das [TimeZone-Objekt](https://msdn.microsoft.com/library/bb646259\(v=office.15\)) verwendet, um die [StartTimeZone-Eigenschaft](https://msdn.microsoft.com/library/bb623657\(v=office.15\)) und die [EndTimeZone-Eigenschaft](https://msdn.microsoft.com/library/bb612198\(v=office.15\)) für das [AppointmentItem-Objekt zu](https://msdn.microsoft.com/library/bb645611\(v=office.15\)) festlegen oder zu erhalten.
+In diesem Codebeispiel wird das [TimeZones-Objekt](https://msdn.microsoft.com/library/bb611081\(v=office.15\)) verwendet, das alle in Microsoft Windows erkannten Zeitzonen darstellt. Es verwendet auch das [TimeZone](https://msdn.microsoft.com/library/bb646259\(v=office.15\)) -Objekt, um die [StartTimeZone](https://msdn.microsoft.com/library/bb623657\(v=office.15\)) -Eigenschaft und die [EndTimeZone](https://msdn.microsoft.com/library/bb612198\(v=office.15\)) -Eigenschaft für das [AppointmentItem -Objekt](https://msdn.microsoft.com/library/bb645611\(v=office.15\)) festzulegen oder abzurufen.
 
-Outlook zeigt alle Datumsangaben in Ortszeit an, die in der aktuellen Zeitzone des Benutzers ausgedrückt werden, gesteuert durch die Einstellungen des Benutzers in der Windows-Systemsteuerung. Outlook legt auch Eigenschaften wie [Start](https://msdn.microsoft.com/library/bb647263\(v=office.15\)) und [End](https://msdn.microsoft.com/library/bb623715\(v=office.15\))in Ortszeit fest oder ruft diese ab. In Outlook werden Datums- und Uhrzeitwerte jedoch als koordinierte Weltzeit (Coordinated Universal Time, UTC) und nicht als Ortszeit gespeichert. Wenn Sie den internen Wert von Appointment.Start mithilfe des [PropertyAccessor-Objekts](https://msdn.microsoft.com/library/bb646034\(v=office.15\)) untersuchen, würden Sie feststellen, dass der interne Datums- und Uhrzeitwert gleich dem lokalen Datums- und Uhrzeitwert ist, der in den entsprechenden UTC-Datums- und Uhrzeitwert konvertiert wurde.
+Outlook zeigt alle Datumsangaben in der Ortszeit an, die in der aktuellen Zeitzone des Benutzers ausgedrückt werden, gesteuert durch die Einstellungen des Benutzers in der Windows Systemsteuerung. Outlook auch Eigenschaften wie [Start](https://msdn.microsoft.com/library/bb647263\(v=office.15\)) und [Ende](https://msdn.microsoft.com/library/bb623715\(v=office.15\))in Ortszeit festlegen oder abrufen. Outlook speichert jedoch Datums- und Uhrzeitwerte als koordinierte Weltzeit (COORDINATED Universal Time, UTC) und nicht als Ortszeit. If you examine the internal value of Appointment.Start by using the [PropertyAccessor](https://msdn.microsoft.com/library/bb646034\(v=office.15\)) object, you would find the internal date and time value is equal to the local date and time value converted to the equivalent UTC date and time value.
 
-In Outlook werden Zeitzoneninformationen verwendet, um einen Termin beim Speichern zur richtigen UTC-Zeit und beim Anzeigen des Elements im Kalender zur richtigen lokalen Zeit zuzuordnen. Das Ändern von StartTimeZone wirkt sich auf den Wert von Appointment.Start aus, der immer in der lokalen Zeitzone ausgedrückt wird, dargestellt durch die [CurrentTimeZone-Eigenschaft](https://msdn.microsoft.com/library/bb612024\(v=office.15\)) des Objekts, das von [TimeZones](https://msdn.microsoft.com/library/bb645170\(v=office.15\))zurückgegeben wird. Ebenso wirkt sich eine Änderung von EndTimeZoneauf den Wert von Appointment.End aus, der immer in der lokalen Zeit ausgedrückt wird, dargestellt durch die CurrentTimeZone-Eigenschaft des von Application.TimeZones zurückgegebenen Objekts.
+In Outlook werden Zeitzoneninformationen verwendet, um einen Termin beim Speichern zur richtigen UTC-Zeit und beim Anzeigen des Elements im Kalender zur richtigen lokalen Zeit zuzuordnen. Das Ändern von StartTimeZone wirkt sich auf den Wert von Appointment.Start aus, der immer in der lokalen Zeitzone ausgedrückt wird, dargestellt durch die [CurrentTimeZone](https://msdn.microsoft.com/library/bb612024\(v=office.15\)) -Eigenschaft des Objekts, das von [TimeZones](https://msdn.microsoft.com/library/bb645170\(v=office.15\))zurückgegeben wird. Ebenso wirkt sich eine Änderung von EndTimeZoneauf den Wert von Appointment.End aus, der immer in der lokalen Zeit ausgedrückt wird, dargestellt durch die CurrentTimeZone-Eigenschaft des von Application.TimeZones zurückgegebenen Objekts.
 
-Sie können eine bestimmte Zeitzone aus dem TimeZones-Objekt abrufen, indem Sie den ortsunabhängigen Schlüssel für die Zeitzone in der Windows-Registrierung verwenden. Locale-independent TimeZone keys are listed under the following key: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\TimeZones` .
+Sie können eine bestimmte TimeZone aus dem TimeZones -Objekt abrufen, indem Sie den gebietsschemaunabhängigen Schlüssel für den TimeZone in der Windows Registrierung verwenden. Gebietsschemaunabhängige TimeZone-Schlüssel sind unter dem folgenden Schlüssel aufgeführt: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\TimeZones` .
 
 Wenn Sie Visual Studio verwenden, um dieses Codebeispiel zu testen, müssen Sie der Microsoft Outlook 15.0-Objektbibliothekkomponente zuerst einen Verweis hinzufügen und die Outlook-Variable angeben, wenn Sie den **Microsoft.Office.Interop.Outlook**-Namespace importieren. Die Anweisung **Imports** oder **using** darf im Codebeispiel nicht direkt vor den Funktionen stehen, sondern muss vor der öffentlichen Class-Deklaration hinzugefügt werden. Die folgenden Codezeilen zeigen, wie Sie den Import und die Zuweisung in Visual Basic und C\# vornehmen.
 

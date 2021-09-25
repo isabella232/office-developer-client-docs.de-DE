@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagDepth
 api_type:
 - HeaderDef
 ms.assetid: 04d444a5-e97f-48e6-89a5-8a6cb2136408
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 75d390edd06aaf826f6b8c2d996e4e08bf6a7334
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: af1d9746677308834f3758d9f5ab8da7e50cb769
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360851"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59563672"
 ---
 # <a name="pidtagdepth-canonical-property"></a>PidTagDepth (kanonische Eigenschaft)
 
@@ -32,11 +32,11 @@ Enthält eine ganze Zahl, die die relative Einzugsebene oder Tiefe eines Objekts
 |Zugeordnete Eigenschaften:  <br/> |PR_DEPTH  <br/> |
 |Kennung:  <br/> |0x3005  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |MAPI allgemein  <br/> |
+|Bereich:  <br/> |ALLGEMEINE MAPI  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft kann auch die Kategorisierungsebene einer Zeile in einer Inhaltstabelle oder die Hierarchietiefe in einer Hierarchietabelle angeben. Die Tiefe ist nullbasierte, wobei Null die ganz linksste Kategorie darstellt. In allen Fällen stellt der Eigenschaftswert einen relativen Wert statt einen absoluten Wert dar. In der Hierarchietabelle ist der Tiefenwert beispielsweise relativ zum Container, aus dem die Hierarchietabelle abgerufen wurde. Die Tiefe stellt keine absolute Tiefe aus dem Stammcontainer dar. 
+Diese Eigenschaft kann auch die Kategorisierungsebene einer Zeile in einem Inhaltsverzeichnis oder die Hierarchietiefe in einer Hierarchietabelle angeben. Die Tiefe basiert auf Null, wobei Null die am weitesten links gelegene Kategorie darstellt. In allen Fällen stellt der Eigenschaftswert einen relativen Wert anstelle eines absoluten Werts dar. In der Hierarchietabelle ist der Tiefenwert beispielsweise relativ zu dem Container, aus dem die Hierarchietabelle abgerufen wurde. Die Tiefe stellt keine absolute Tiefe aus dem Stammcontainer dar. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,11 +44,11 @@ Diese Eigenschaft kann auch die Kategorisierungsebene einer Zeile in einer Inhal
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXCTABL]](https://msdn.microsoft.com/library/d33612dc-36a8-4623-8a26-c156cf8aae4b%28Office.15%29.aspx)
   
-> Enthält zulässige Vorgänge für die Zentralen Tabellenobjekte.
+> Enthält zulässige Vorgänge für die zentralen Tabellenobjekte.
     
 [[MS-OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
@@ -58,26 +58,26 @@ Diese Eigenschaft kann auch die Kategorisierungsebene einer Zeile in einer Inhal
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[PidTagObjectType (kanonische Eigenschaft)](pidtagobjecttype-canonical-property.md)
+[Kanonische PidTagObjectType-Eigenschaft](pidtagobjecttype-canonical-property.md)
   
 [PidTagSelectable (kanonische Eigenschaft)](pidtagselectable-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

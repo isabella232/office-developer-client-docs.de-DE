@@ -4,21 +4,21 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 51acac58-ec39-488f-979c-1887dc2ab94b
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 5b58b71dc4f2441448eb3e0dac2c3c5763675927
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 2fb8616fafd778a6dbd8bf990b2e7b13ffcc7175
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407697"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572375"
 ---
 # <a name="showoptions"></a>ShowOptions
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Zeigt ein modales Dialogfeld zum Sammeln von Informationen vom Benutzer an. Dieser Einstiegspunkt wird aufgerufen, wenn  ein Benutzer  im Dialogfeld **Excel-Optionen** (in der Kategorie Erweitert unter dem  Abschnitt **Formeln)** neben dem Feld Clustertyp auf die Schaltfläche Optionen für den ausgewählten Clusterconnector klickt. Clusterconnectors sind für die Implementierung ihrer eigenen Dialogschnittstelle für Optionen und das Speichern der zugehörigen Daten in der Registrierung oder an anderer Stelle verantwortlich. Die Optionen sind intern für den Clusterconnector. Excel sie nicht kennen. 
+Zeigt ein modales Dialogfeld zum Sammeln von Informationen vom Benutzer an. Dieser Einstiegspunkt wird aufgerufen, wenn ein Benutzer im Dialogfeld **Excel Optionen** (in der Kategorie **"Erweitert"** im Abschnitt "Formeln") auf die Schaltfläche **"Optionen"** neben dem **Feld "Clustertyp"** für den ausgewählten Clusterkonnektor **klickt.** Clusterconnectors sind für die Implementierung ihrer eigenen Optionsdialogschnittstelle und das Speichern der zugehörigen Daten in der Registrierung oder an anderer Stelle verantwortlich. Die Optionen sind für den Clusterconnector intern. Excel diese nicht kennen. 
   
 ```cpp
 int ShowOptions(HWND hWndParent)
@@ -28,15 +28,15 @@ int ShowOptions(HWND hWndParent)
 
 _hWndParent_
   
-> Ein Handle zum Excel Fenster.
+> Ein Handle für das Excel Fenster.
     
 ## <a name="return-value"></a>Rückgabewert
 
 **xlHpcRetSuccess,** wenn das Dialogfeld angezeigt wurde; **xlHpcRetCallFailed,** wenn es nicht angezeigt wurde. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Clusterconnectors können dieses Dialogfeld verwenden, um Informationen, z. B. den zu verwendende Clusterserver, vom Benutzer zu erhalten.
+Clusterconnectors können dieses Dialogfeld verwenden, um Informationen vom Benutzer abzurufen, z. B. welchen Clusterserver er verwenden soll.
   
 ## <a name="see-also"></a>Siehe auch
 

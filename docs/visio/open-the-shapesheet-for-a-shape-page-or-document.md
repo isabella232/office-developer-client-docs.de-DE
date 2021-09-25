@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: overview
 f1_keywords:
 - Vis_DSS.chm82253243
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9b456a87-d990-7ab2-d8a1-e91dca78650f
-description: Das ShapeSheet-Fenster wird standardmäßig in Microsoft Visio. Um auf das ShapeSheet zu zugreifen, müssen Sie Visio im Entwicklermodus ausführen (die Registerkarte Entwickler anzeigen).
-ms.openlocfilehash: b18bca69f7acea29d3c43ff57b22b132baa9c6fe
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Das ShapeSheet-Fenster ist in Microsoft Visio standardmäßig ausgeblendet. Um auf das ShapeSheet zuzugreifen, müssen Sie Visio im Entwicklermodus ausführen (die Entwicklerregisterkarte anzeigen).
+ms.openlocfilehash: 48e16f8808cfc6b21f4372bb3f842e007a4de521
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33419422"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562951"
 ---
 # <a name="open-the-shapesheet-for-a-shape-page-or-document"></a>Öffnen des ShapeSheet für ein Shape, eine Seite oder ein Dokument
 
-Das ShapeSheet-Fenster wird standardmäßig in Microsoft Visio. Um auf das ShapeSheet zu zugreifen, müssen Sie Visio im Entwicklermodus ausführen (die Registerkarte Entwickler anzeigen).
+Das ShapeSheet-Fenster ist in Microsoft Visio standardmäßig ausgeblendet. Um auf das ShapeSheet zuzugreifen, müssen Sie Visio im Entwicklermodus ausführen (die Entwicklerregisterkarte anzeigen).
   
 ### <a name="to-run-visio-in-developer-mode"></a>Ausführen von Visio im Entwicklermodus
 

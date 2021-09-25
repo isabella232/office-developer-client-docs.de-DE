@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagIpmSentMailEntryId
 api_type:
 - HeaderDef
 ms.assetid: f6877435-6b26-4060-924f-a65591ad9538
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: fd29afc93bc952bb619dfac752fae232bf7991cf
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 0efc6ede87caad5f6ac3b3374d23da9219967f90
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33437322"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59599945"
 ---
 # <a name="pidtagipmsentmailentryid-canonical-property"></a>PidTagIpmSentMailEntryId (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "33437322"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält die Eintrags-ID des Ordners "Gesendete Elemente" (IPM) für zwischenpersonale Nachrichten. 
+Enthält den Eintragsbezeichner des standardmäßigen Ordners "Gesendete Elemente" für zwischenmenschliche Nachrichten (Interpersonal Message, IPM). 
   
 |||
 |:-----|:-----|
@@ -34,9 +34,9 @@ Enthält die Eintrags-ID des Ordners "Gesendete Elemente" (IPM) für zwischenper
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Ordner  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Nach dem Senden werden zwischenpersönliche Nachrichten in der Regel im Ordner "Gesendete Elemente" platziert. Ein Client kann diese Eigenschaft verwenden, **um die PR_SENTMAIL_ENTRYID** ([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md)) -Eigenschaft für eine übermittelte Nachricht festlegen. 
+Nach dem Senden werden zwischenmenschliche Nachrichten in der Regel im Ordner "Gesendete Elemente" abgelegt. Ein Client kann diese Eigenschaft verwenden, um die **eigenschaft PR_SENTMAIL_ENTRYID** ([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md)) für eine gesendete Nachricht festzulegen. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,11 +44,11 @@ Nach dem Senden werden zwischenpersönliche Nachrichten in der Regel im Ordner "
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

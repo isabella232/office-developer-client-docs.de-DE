@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPIFolder.GetMessageStatus
 api_type:
 - COM
 ms.assetid: 3ddbb129-5d6b-4eca-aba0-3620609ed0c1
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 621c20376cc671a2ff9d1406bfb6248846e1bc81
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 762935b5e569dd63399862f32945599c0dc5df09
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33418638"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59571807"
 ---
 # <a name="imapifoldergetmessagestatus"></a>IMAPIFolder::GetMessageStatus
 
@@ -44,7 +44,7 @@ HRESULT GetMessageStatus(
     
  _lpEntryID_
   
-> [in] Ein Zeiger auf die Eintrags-ID für die Nachricht, deren Status erhalten wird.
+> [in] Ein Zeiger auf den Eintragsbezeichner für die Nachricht, deren Status abgerufen wird.
     
  _ulFlags_
   
@@ -52,7 +52,7 @@ HRESULT GetMessageStatus(
     
  _lpulMessageStatus_
   
-> [out] Ein Zeiger auf einen Zeiger auf eine Bitmaske mit Flags, die den Status der Nachricht angeben. Bits 0 bis 15 sind reserviert und müssen null sein. Bits 16 bis 31 sind für implementierungsspezifische Verwendung verfügbar. Die folgenden Kennzeichen können festgelegt werden:
+> [out] Ein Zeiger auf einen Zeiger auf eine Bitmaske mit Flags, die den Status der Nachricht angeben. Bits 0 bis 15 sind reserviert und müssen null sein; Die Bits 16 bis 31 stehen für die implementierungsspezifische Verwendung zur Verfügung. Die folgenden Flags können festgelegt werden:
     
 MSGSTATUS_DELMARKED 
   
@@ -60,15 +60,15 @@ MSGSTATUS_DELMARKED
     
 MSGSTATUS_HIDDEN 
   
-> Die Nachricht soll nicht angezeigt werden. 
+> Die Meldung soll nicht angezeigt werden. 
     
 MSGSTATUS_HIGHLIGHTED 
   
-> Die Nachricht soll hervorgehoben angezeigt werden.
+> Die Meldung wird hervorgehoben angezeigt.
     
 MSGSTATUS_REMOTE_DELETE 
   
-> Die Nachricht wurde zum Löschen im Remotenachrichtenspeicher ohne Download auf den lokalen Client markiert.
+> Die Nachricht wurde für den Löschvorgang im Remotenachrichtenspeicher markiert, ohne sie auf den lokalen Client herunterzuladen.
     
 MSGSTATUS_REMOTE_DOWNLOAD 
   
@@ -84,13 +84,13 @@ S_OK
   
 > Der Nachrichtenstatus wurde erfolgreich abgerufen.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die **IMAPIFolder::GetMessageStatus-Methode** gibt den Status einer Nachricht zurück. Der Nachrichtenstatus wird in der PR_MSG_STATUS **(** [PidTagMessageStatus](pidtagmessagestatus-canonical-property.md)) der Nachricht gespeichert. 
+Die **IMAPIFolder::GetMessageStatus-Methode** gibt den Status einer Nachricht zurück. Der Nachrichtenstatus wird in der **eigenschaft PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md)) der Nachricht gespeichert. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Wie die Nachrichtenstatusbits festgelegt, geräumt und verwendet werden, hängt vollständig von Ihrer Implementierung ab, mit der Ausnahme, dass bits 0 bis 15 reserviert sind und null sein müssen. Wenn Sie Nachrichten in der IPM-Unterstruktur speichern, reserviert MAPI die Bits 16 bis 31 für die Verwendung durch IPM-Clients. Wenn Sie Nachrichten in anderen Unterstrukturen speichern, können Sie bits 16 bis 31 für Ihre eigenen Zwecke verwenden.
+Wie die Nachrichtenstatusbits festgelegt, gelöscht und verwendet werden, hängt vollständig von Ihrer Implementierung ab, mit der Ausnahme, dass die Bits 0 bis 15 reserviert sind und null sein müssen. Wenn Sie Nachrichten in der IPM-Unterstruktur speichern, reserviert MAPI bits 16 bis 31 für die Verwendung durch IPM-Clients. Wenn Sie Nachrichten in anderen Unterstrukturen speichern, können Sie die Bits 16 bis 31 für Eigene Zwecke verwenden.
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -98,8 +98,8 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::GetNextMessage  <br/> |MFCMAPI verwendet die **IMAPIFolder::GetMessageStatus-Methode,** um den Status der nächsten angezeigten Nachricht zu erhalten.  <br/> |
-|MAPIFormFunctions.cpp  <br/> |OpenMessageNonModal und OpenMessageModal  <br/> |MFCMAPI verwendet die **IMAPIFolder::GetMessageStatus-Methode,** um den Status der Nachricht zu erhalten, die angezeigt wird, um sie an die Formularanzeige zu übergeben, d. h. CMyMAPIFormViewer oder [IMAPISession::ShowForm](imapisession-showform.md).  <br/> |
+|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::GetNextMessage  <br/> |MFCMAPI verwendet die **IMAPIFolder::GetMessageStatus-Methode,** um den Status der nächsten anzuzeigenden Nachricht abzurufen.  <br/> |
+|MAPIFormFunctions.cpp  <br/> |OpenMessageNonModal und OpenMessageModal  <br/> |MFCMAPI verwendet die **IMAPIFolder::GetMessageStatus-Methode,** um den Status der anzuzeigenden Nachricht abzurufen, die an die Formularanzeige übergeben werden soll, bei der es sich entweder um CMyMAPIFormViewer oder [IMAPISession::ShowForm handelt.](imapisession-showform.md)  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

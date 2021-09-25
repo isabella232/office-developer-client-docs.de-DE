@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm695
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 44995137-d241-937a-c097-0f9d79203cdf
 description: Gibt an, ob der Hyperlink in einem neuen Fenster geöffnet werden soll.
-ms.openlocfilehash: 0f9d1e4b1294dea3f211c8d0d69ffc49b6180066
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: b77da67f595ff25e235c2b2b01f292fe5b31013e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32342231"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59563000"
 ---
 # <a name="newwindow-cell-hyperlinks-section"></a>Zelle "NewWindow" (Abschnitt "Hyperlinks")
 
@@ -22,18 +22,18 @@ Gibt an, ob der Hyperlink in einem neuen Fenster geöffnet werden soll.
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-| TRUE  <br/> | Öffnen Sie die verknüpfte Seite, das Dokument oder die Website in einem neuen Fenster.  <br/> |
+| TRUE  <br/> | Öffnen Sie die verknüpfte Seite, das Dokument oder die verknüpfte Website in einem neuen Fenster.  <br/> |
 | FALSE  <br/> | Standard. Hyperlink nicht in einem neuen Fenster öffnen.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Um einen Verweis auf die Zelle NewWindow anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Um einen Verweis auf die Zelle "NewWindow" anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Hyperlink.  *Name*  . NewWindow, wobei Hyperlink.  *Name*  ist der Zeilenname  <br/> |
+| Zellenname:  <br/> | Hyperlink.  *Name*  . NewWindow where Hyperlink.  *Name*  ist der Zeilenname  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die NewWindow-Zelle nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle NewWindow anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

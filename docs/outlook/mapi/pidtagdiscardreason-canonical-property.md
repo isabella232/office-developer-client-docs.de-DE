@@ -1,25 +1,25 @@
 ---
-title: PidTagDiscardReason (kanonische Eigenschaft)
+title: Kanonische PidTagDiscardReason-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagDiscardReason
 api_type:
 - HeaderDef
 ms.assetid: 5004dc1f-6bd3-4764-b83c-d04d83161dba
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 32c81474580dbe4948c40390dadd0445776ab825
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 3b84d43c4653c10f8120e77aa98cc68eed3bf545
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33434802"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59600190"
 ---
-# <a name="pidtagdiscardreason-canonical-property"></a>PidTagDiscardReason (kanonische Eigenschaft)
+# <a name="pidtagdiscardreason-canonical-property"></a>Kanonische PidTagDiscardReason-Eigenschaft
 
   
   
@@ -34,9 +34,9 @@ Enthält einen Grund, warum ein Nachrichtenübertragungs-Agent (Message Transfer
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Der in dieser Eigenschaft enthaltene Grund wird in einem Nicht-Löschbericht für die Nachricht verwendet.
+Der Grund, der in dieser Eigenschaft enthalten ist, wird in einem Nicht-Absenderbericht für die Nachricht verwendet.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,11 +44,11 @@ Der in dieser Eigenschaft enthaltene Grund wird in einem Nicht-Löschbericht fü
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -59,9 +59,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

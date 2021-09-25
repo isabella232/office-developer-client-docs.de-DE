@@ -4,14 +4,14 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4bc5c0c4-3ee3-7f63-541a-1f1854d4201c
-ms.openlocfilehash: 3a0153b724539136fe142c2489badcf9895af765
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 1b662a28050e3b563952004b5d0fc584d4071ac7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34537983"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59554327"
 ---
 # <a name="page_type-complextype-visio-xml"></a>Page_Type complexType (Visio XML)
 
@@ -21,7 +21,7 @@ ms.locfileid: "34537983"
 |:-----|:-----|
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
 |**Schemadatei** <br/> |VisioSchema15-2012-06-05.xsd  <br/> |
-|**Erweiterungsbasis** <br/> |Keine  <br/> |
+|**Erweiterungsbasis** <br/> |Keines  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -85,7 +85,7 @@ ms.locfileid: "34537983"
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -98,17 +98,17 @@ Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccur
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|AssociatedPage  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> ||Werte des xsd:unsignedInt-Typs.  <br/> |
-|Hintergrund  <br/> |xsd:boolean  <br/> |Optional  <br/> ||Werte des typs xsd:boolean.  <br/> |
-|BackPage  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> ||Werte des xsd:unsignedInt-Typs.  <br/> |
-|ID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> ||Werte des xsd:unsignedInt-Typs.  <br/> |
-|IsCustomName  <br/> |xsd:boolean  <br/> |Optional  <br/> ||Werte des typs xsd:boolean.  <br/> |
-|IsCustomNameU  <br/> |xsd:boolean  <br/> |Optional  <br/> ||Werte des typs xsd:boolean.  <br/> |
-|Name  <br/> |xsd:string  <br/> |Optional  <br/> ||Werte des xsd:string-Typs.  <br/> |
-|NameU  <br/> |xsd:string  <br/> |Optional  <br/> ||Werte des xsd:string-Typs.  <br/> |
-|ReviewerID  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> ||Werte des xsd:unsignedInt-Typs.  <br/> |
-|ViewCenterX  <br/> |xsd:double  <br/> |Optional  <br/> ||Werte des xsd:double-Typs.  <br/> |
-|ViewCenterY  <br/> |xsd:double  <br/> |Optional  <br/> ||Werte des xsd:double-Typs.  <br/> |
-|ViewScale  <br/> |xsd:double  <br/> |Optional  <br/> ||Werte des xsd:double-Typs.  <br/> |
+|AssociatedPage  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> ||Werte des Typs "xsd:unsignedInt".  <br/> |
+|Hintergrund  <br/> |xsd:boolean  <br/> |Optional  <br/> ||Werte des Typs "xsd:boolean".  <br/> |
+|BackPage  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> ||Werte des Typs "xsd:unsignedInt".  <br/> |
+|ID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> ||Werte des Typs "xsd:unsignedInt".  <br/> |
+|IsCustomName  <br/> |xsd:boolean  <br/> |Optional  <br/> ||Werte des Typs "xsd:boolean".  <br/> |
+|IsCustomNameU  <br/> |xsd:boolean  <br/> |Optional  <br/> ||Werte des Typs "xsd:boolean".  <br/> |
+|Name  <br/> |xsd:string  <br/> |Optional  <br/> ||Werte des Typs "xsd:string".  <br/> |
+|NameU  <br/> |xsd:string  <br/> |Optional  <br/> ||Werte des Typs "xsd:string".  <br/> |
+|ReviewerID  <br/> |xsd:unsignedInt  <br/> |Optional  <br/> ||Werte des Typs "xsd:unsignedInt".  <br/> |
+|ViewCenterX  <br/> |xsd:double  <br/> |Optional  <br/> ||Werte des Typs "xsd:double".  <br/> |
+|ViewCenterY  <br/> |xsd:double  <br/> |Optional  <br/> ||Werte des Typs "xsd:double".  <br/> |
+|ViewScale  <br/> |xsd:double  <br/> |Optional  <br/> ||Werte des Typs "xsd:double".  <br/> |
    
 

@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fbaa7d64-06ef-46d6-81d5-9d7af1c14b65
 description: Bestimmt, ob die Seite als boolescher Wert dupliziert werden kann.
-ms.openlocfilehash: 8ce730fcdc2dff5deac44d8c053b84e82a82d4cb
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 41ac55f68993f164ae7e31aad0aab4720d58643e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33425981"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562937"
 ---
 # <a name="pagelockduplicate-cell-page-properties-section"></a>Zelle "PageLockDuplicate" (Abschnitt "Page Properties")
 
@@ -20,18 +20,18 @@ Bestimmt, ob die Seite als boolescher Wert dupliziert werden kann.
   
 |||
 |:-----|:-----|
-|TRUE  <br/> |**Duplikate** im Kontextmenü der Seite und die **Page.Duplicate-Automatisierungsmethode** sind beide für die Seite deaktiviert.  <br/> |
+|TRUE  <br/> |**Duplizieren** im Kontextmenü der Seite und die **Page.Duplicate-Automatisierungsmethode** sind beide für die Seite deaktiviert.  <br/> |
 |FALSE  <br/> |Die Seite kann dupliziert werden.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Um einen Verweis auf die **Zelle PageLockDuplicate** anhand des Namens aus einer anderen Formel, nach dem Wert des **N-Attributs** eines **Cell-Elements** oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Verwenden Sie Folgendes, um einen Verweis auf die Zelle **"PageLockDuplicate"** anhand des Namens aus einer anderen Formel, anhand des Werts des **N-Attributs** eines **Cell-Elements** oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | PageLockDuplicate  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die **PageLockDuplicate-Zelle** nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle **PageLockDuplicate** anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

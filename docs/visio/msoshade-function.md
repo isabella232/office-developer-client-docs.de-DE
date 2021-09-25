@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 905cd1cc-14d3-5d37-89c4-f8461a03dda2
 description: Ändert die Farbe, indem deren Helligkeit um den angegebenen Prozentsatz verringert wird.
-ms.openlocfilehash: 207893552c7378589d4a648bf29ed88fcfd15224
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 76ba30f977b9a08916ba158f474f57dbf2d9a7a1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33414494"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59563042"
 ---
 # <a name="msoshade-function"></a>MSOSHADE Function
 
@@ -32,10 +32,10 @@ MSOSHADE(** *color* **, ** *-deltaLum* ** )
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _color_ <br/> |Erforderlich  <br/> |**RGB** <br/> |Der standardmäßige RGB-Farbwert (Rot, Grün, Blau) oder eine Referenz auf eine Farbe.  <br/> |
-| _-deltaLum_ <br/> |Erforderlich  <br/> |**Integer** <br/> |Die prozentuale Änderung in Richtung Weiß (-100 %) oder schwarz (100 %) aus dem _Farbwert._  <br/> |
+| _-deltaLum_ <br/> |Erforderlich  <br/> |**Integer** <br/> |Die prozentuale Änderung in Richtung Weiß (-100 %) oder Schwarz (100 %) vom _Farbwert._  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Je näher der  _Farbwert_ weiß oder schwarz ist, desto kleiner ist die Änderung an der Schattierung, die durch einen bestimmten  _-deltaLum-Wert erzeugt_ wird. 
+Je näher der  _Farbwert_ an Weiß oder Schwarz liegt, desto kleiner ist die Änderung des Schattens, der durch einen  _bestimmten DeltaLum-Wert_ erzeugt wird. 
   
 

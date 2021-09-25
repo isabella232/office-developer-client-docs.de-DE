@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - FBadColumnSet
 api_type:
 - HeaderDef
 ms.assetid: 15be5a8c-4299-4434-b521-c901215b9dda
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: b0260ffe5dc4806cb627fd71c78866bf96796455
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 1498705c0459798f1ae8c49586423603500c6e8b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33434718"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601002"
 ---
 # <a name="fbadcolumnset"></a>FBadColumnSet
 
@@ -25,7 +25,7 @@ ms.locfileid: "33434718"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Testet die Gültigkeit einer Tabellenspalte, die von einem Dienstanbieter in einem nachfolgenden Aufruf der [IMAPITable::SetColumns-Methode verwendet](imapitable-setcolumns.md) wird. 
+Überprüft die Gültigkeit eines Tabellenspaltensatzes für die Verwendung durch einen Dienstanbieter in einem nachfolgenden Aufruf der [IMAPITable::SetColumns-Methode.](imapitable-setcolumns.md) 
   
 |||
 |:-----|:-----|
@@ -55,7 +55,7 @@ FALSE
   
 > Der angegebene Spaltensatz ist gültig.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **FBadColumnSet-Funktion** behandelt Spalten vom Typ PT_ERROR als ungültig und Spalten vom Typ PT_NULL als gültig. 
   

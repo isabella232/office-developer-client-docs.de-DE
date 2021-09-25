@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidLogDocumentSaved
 api_type:
 - COM
 ms.assetid: 3809fa35-76d8-44a5-8ad9-a1ed30f91dc0
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 6b88d2adfd60fe346156f983994d8a74bc22749b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 6d84b013b3aac04609c764132c006204c1a1cad0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32342847"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59600589"
 ---
 # <a name="pidlidlogdocumentsaved-canonical-property"></a>PidLidLogDocumentSaved (kanonische Eigenschaft)
 
@@ -31,7 +31,7 @@ Gibt an, ob das Dokument während des Journalings gespeichert wurde.
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidLogDocSaved  <br/> |
 |Eigenschaftensatz:  <br/> |PSETID_Log  <br/> |
-|Lange ID (LID):  <br/> |0x0000870F  <br/> |
+|Long ID (LID):  <br/> |0x0000870F  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Journal  <br/> |
    
@@ -41,17 +41,17 @@ Gibt an, ob das Dokument während des Journalings gespeichert wurde.
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Stellt Eigenschaftensatzdefinitionen und Verweise auf verwandte Exchange Server zur Verfügung.
+> Stellt Die Definition von Eigenschaftengruppen und Verweise auf verwandte Exchange Server Protokollspezifikationen bereit.
     
 [[MS-OXOJRNL]](https://msdn.microsoft.com/library/2aa04fd2-0f36-4ce4-9178-c0fc70aa8d43%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften und Vorgänge an, die für Journale zulässig sind.
+> Gibt die Eigenschaften und Vorgänge an, die für Diebe zulässig sind.
     
 ### <a name="header-files"></a>Headerdateien
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -59,9 +59,9 @@ Mapidefs.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

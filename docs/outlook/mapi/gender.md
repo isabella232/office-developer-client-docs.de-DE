@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f60c65e3-b55f-cb68-746e-d0a8cd862d4d
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 042216df309e98f35ed0ad71742e46300ebb06da
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 68c4fbf9e18906ed993dde30060c49e06a79fc7c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33428648"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580195"
 ---
 # <a name="gender"></a>Geschlecht
 
@@ -41,7 +41,7 @@ enum Gender {
 
  _genderMin_
   
-> Die Mindestanzahl unterschiedlicher Werte, die für das Geschlecht unterstützt werden.
+> Die Mindestanzahl der verschiedenen Werte, die für das Geschlecht unterstützt werden.
     
  _genderUnspecified_
   
@@ -49,15 +49,15 @@ enum Gender {
     
  _genderFemale_
   
-> Der Messagingbenutzer ist weiblich.
+> Der Messaging-Benutzer ist student.
     
  _genderMale_
   
-> Der Messagingbenutzer ist männlich.
+> Der Messaging-Benutzer ist ein Männchen.
     
  _genderCount_
   
-> Die Anzahl der verschiedenen Werte, die für das Geschlecht unterstützt werden.
+> Die Anzahl der unterschiedlichen Werte, die für das Geschlecht unterstützt werden.
     
  _genderMax_
   

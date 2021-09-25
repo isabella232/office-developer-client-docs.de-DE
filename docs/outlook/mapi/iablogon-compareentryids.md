@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IABLogon.CompareEntryIDs
 api_type:
 - COM
 ms.assetid: cb4a38ff-2fdd-40ac-a613-12c3f11a1df9
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 48ddb5a7c4e013c03138b08d9dadcdc0991faeec
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ca5474e56a1a72124e6d49bc67329994e6eec04f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33438372"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59571920"
 ---
 # <a name="iablogoncompareentryids"></a>IABLogon::CompareEntryIDs
 
@@ -46,11 +46,11 @@ HRESULT CompareEntryIDs(
     
  _lpEntryID1_
   
-> [in] Ein Zeiger auf die erste Zutritts-ID, die verglichen werden soll.
+> [in] Ein Zeiger auf den ersten Eintragsbezeichner, der verglichen werden soll.
     
  _cbEntryID2_
   
-> [in] Die Byteanzahl in der Eintrags-ID, auf die der  _lpEntryID2-Parameter_ verweist. 
+> [in] Die Byteanzahl im Eintragsbezeichner, auf den der  _lpEntryID2-Parameter_ verweist. 
     
  _lpEntryID2_
   
@@ -62,7 +62,7 @@ HRESULT CompareEntryIDs(
     
  _lpulRet_
   
-> [out] Ein Zeiger auf das Ergebnis des Vergleichs. TRUE, um anzugeben, dass sich die beiden Eintragsbezeichner auf dasselbe Objekt beziehen. Andernfalls FALSE.
+> [out] Ein Zeiger auf das Ergebnis des Vergleichs. TRUE, um anzugeben, dass die beiden Eintragsbezeichner auf dasselbe Objekt verweisen; andernfalls FALSE.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -72,15 +72,15 @@ S_OK
     
 MAPI_E_INVALID_ENTRYID 
   
-> Eine oder beide eintragsbezeichner gehören nicht zum Adressbuchanbieter.
+> Einer oder beide Eintragsbezeichner gehören nicht zum Adressbuchanbieter.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Adressbuchanbieter implementieren die **CompareEntryIDs-Methode,** um zwei Eintragsbezeichner zu vergleichen, um festzustellen, ob sie auf dasselbe Objekt verweisen. 
+Adressbuchanbieter implementieren die **CompareEntryIDs-Methode,** um zwei Eintragsbezeichner zu vergleichen, um zu bestimmen, ob sie auf dasselbe Objekt verweisen. 
   
- **CompareEntryIDs** ist nützlich, da ein Objekt mehrere gültige Eintragsbezeichner enthalten kann. Eine solche Situation kann beispielsweise auftreten, wenn Sie eine kurzfristige Eintrags-ID mit einer langfristigen Eintrags-ID vergleichen. 
+ **CompareEntryIDs** ist nützlich, da ein Objekt mehrere gültige Eintragsbezeichner haben kann. eine solche Situation kann beispielsweise auftreten, wenn Sie einen kurzfristigen Eintragsbezeichner mit einem langfristigen Eintragsbezeichner vergleichen. 
   
-Weitere Informationen zum Erstellen von Eintragsbezeichnern finden Sie unter [MAPI Entry Identifiers](mapi-entry-identifiers.md).
+Weitere Informationen zum Erstellen von Eintragsbezeichnern finden Sie unter [MAPI-Eintragsbezeichner.](mapi-entry-identifiers.md)
   
 ## <a name="see-also"></a>Siehe auch
 

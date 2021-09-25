@@ -1,31 +1,31 @@
 ---
-title: PidTagGovernmentIdNumber (kanonische Eigenschaft)
+title: PidTagStringIdNumber (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagGovernmentIdNumber
 api_type:
 - HeaderDef
 ms.assetid: fa265d37-a1ea-4812-8fe9-21dac374cd7c
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 4b7ce4620f224597e753fb05ec377461b4c19c9a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: a3d15de7165a0faaecc178dfe1ca0d27d9a19f85
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316149"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59563532"
 ---
-# <a name="pidtaggovernmentidnumber-canonical-property"></a>PidTagGovernmentIdNumber (kanonische Eigenschaft)
+# <a name="pidtaggovernmentidnumber-canonical-property"></a>PidTagStringIdNumber (kanonische Eigenschaft)
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine Government-ID für den Empfänger. 
+Enthält einen Government-Bezeichner für den Empfänger. 
   
 |||
 |:-----|:-----|
@@ -34,11 +34,11 @@ Enthält eine Government-ID für den Empfänger.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-E-Mail-Benutzer  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften bieten Identifikations- und Zugriffsinformationen zu einem Empfänger. Sie werden vom Empfänger und der Organisation des Empfängers definiert. 
   
-Diese Eigenschaften werden häufig auf eine Reisepass-, Bürger- oder Steuernummer wie eine Sozialversicherungsnummer festgelegt. 
+Diese Eigenschaften werden in der Regel auf eine Reisepassnummer, eine Bürgernummer oder eine Steuernummer wie z. B. eine Sozialversicherungsnummer festgelegt. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -46,7 +46,7 @@ Diese Eigenschaften werden häufig auf eine Reisepass-, Bürger- oder Steuernumm
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
@@ -60,11 +60,11 @@ Diese Eigenschaften werden häufig auf eine Reisepass-, Bürger- oder Steuernumm
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -72,9 +72,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

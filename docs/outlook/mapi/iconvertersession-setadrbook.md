@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IConverterSession.SetAdrBook
 api_type:
 - COM
 ms.assetid: d276ab19-17f4-01c7-4b44-b578e631b5fe
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 7645208e6a0256957deb3a71ba3e04ad125a6b61
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: d05b08cd18b075119017163c7142e88afba82121
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429194"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59600985"
 ---
 # <a name="iconvertersessionsetadrbook"></a>IConverterSession::SetAdrBook
 
@@ -25,7 +25,7 @@ ms.locfileid: "33429194"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt ein optionales MAPI-Adressbuch an, das der MAPI-zu-MIME-Konverter zum Auflösen mehrdeutiger Adressen beim Konvertieren einer MAPI-Nachricht in einen MIME-Stream verwendet.
+Gibt ein optionales MAPI-Adressbuch an, das vom MAPI-zu-MIME-Konverter verwendet wird, um mehrdeutige Adressen beim Konvertieren einer MAPI-Nachricht in einen MIME-Stream aufzulösen.
   
 ```cpp
 HRESULT IConverterSession::SetAdrBook( 
@@ -34,9 +34,9 @@ LPADRBOOK pab);
 
 ## <a name="parameters"></a>Parameter
 
- _pab_
+ _Pab_
   
-> [in] Zeiger auf ein [IAddrBook : IMAPIProp-Schnittstelle,](iaddrbookimapiprop.md) die in der MAPI-zu-MIME-Konvertierung verwendet werden soll. Legen Sie diesen Parameter **auf null,** wenn Sie das Adressbuch nicht mehr benötigen. Dadurch wird die Schnittstelle veröffentlicht, und der Konverter wird auf kein Adressbuch zurückgesetzt. 
+> [in] Zeiger auf ein [IAddrBook: IMAPIProp-Schnittstelle,](iaddrbookimapiprop.md) die in der MAPI-zu-MIME-Konvertierung verwendet werden soll. Legen Sie diesen Parameter auf **NULL** fest, wenn Sie das Adressbuch nicht mehr benötigen. Dadurch wird die Schnittstelle los, und der Konverter wird auf kein Adressbuch zurückgesetzt. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -44,9 +44,9 @@ S_OK
   
 > Der Funktionsaufruf ist erfolgreich.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Für das Konvertieren einer MAPI-Nachricht in einen MIME-Stream ist in der Regel keine Anmeldung bei einem MAPI-Profil erforderlich. Wenn Sie jedoch ein MAPI-Adressbuch für die Konvertierung angeben, müssen Sie sich bei einem Profil anmelden, um das Adressbuch zu erhalten.
+Für das Konvertieren einer MAPI-Nachricht in einen MIME-Stream ist in der Regel keine Anmeldung bei einem MAPI-Profil erforderlich. Wenn Sie jedoch ein MAPI-Adressbuch für die Konvertierung angeben, müssen Sie sich bei einem Profil anmelden, um das Adressbuch abzurufen.
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 

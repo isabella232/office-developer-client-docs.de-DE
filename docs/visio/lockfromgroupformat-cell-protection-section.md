@@ -4,28 +4,28 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: abd175af-ad4e-b84a-2687-2c9358653499
-ms.openlocfilehash: 3daeb4704a33ba836cf82c9ab3517c6ca6be8db7
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ef4cd97298108f64f4fdc7fcd5d690bfeeb16bbc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33426058"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59554446"
 ---
 # <a name="lockfromgroupformat-cell-protection-section"></a>Zelle "LockFromGroupFormat" (Abschnitt "Protection")
 
-Verhindert, dass Formatänderungen an einem Gruppen-Shape an seine Unterformen verbreitet werden, während benutzer dennoch ausgewählte Unterformen direkt formatieren können. 
+Verhindert, dass Formatänderungen an einem Gruppen-Shape an seine Untergeordneten Shapes weitergegeben werden, während Benutzer weiterhin ausgewählte Unterformen direkt formatieren können. 
   
-Der Wert der Zelle LockFromGroupFormat  entspricht der Kontrollkästchen Von-Gruppenformatierung im Dialogfeld **Schutz.** 
+Der Wert der Zelle LockFromGroupFormat entspricht der Einstellung des Kontrollkästchens für die Formatierung von **Gruppen** im Dialogfeld Schutz.  
   
-Verwenden Sie zum Verweisen auf die Zelle LockFromGroupFormat anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft:** 
+To refer to the LockFromGroupFormat cell by name from another formula, or from a program, using the **CellsU** property, use: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |LockFromGroupFormat  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um von einem Programm aus auf die Zelle LockFromGroupFormat nach Index zu verweisen: 
+To refer to the LockFromGroupFormat cell by index from a program, use the **CellsSRC** property with the following arguments: 
   
 |||
 |:-----|:-----|

@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e6900ad7-c147-4816-93a9-5773170b115a
 description: Die Schnittstellen Window und Windows sind OneNote 2013-API-Objekte, die Benutzern die Arbeit mit OneNote-Fenster ermöglicht. Diese Objekte ermöglichen Benutzern bestimmte Fenstereigenschaften zu durchlaufen, den Satz von OneNote-Fenster.
-ms.openlocfilehash: efc34312def588ecff54c63b3db84f8bf909352b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: a8dd260c1e56da98f2902922cf25dd5735358100
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317035"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572256"
 ---
 # <a name="window-interfaces-onenote"></a>Fenster-Schnittstellen (OneNote 2013)
 
@@ -30,17 +30,17 @@ Die folgende Liste enthält die vier Ansichtsmodi, die Sie für OneNote-Fenster 
     
 - Andocken auf Desktop - ein OneNote-Fenster, das Sie andocken können auf jeder Seite des Desktops (vergleichbar mit der Taskleiste) angezeigt. Diese Ansicht reduziert die Größe des Desktops, um das Fenster passt. Sie können nur ein Fenster andocken, können Sie jederzeit und das Fenster ist immer sichtbar, ohne den Desktop blockieren. 
     
-Die folgende Abbildung zeigt, wie die Vollseitenansicht, die Dock-to-Desktop-Ansicht und schnelle Notizen auf Ihrem Desktop aussehen.
+Die folgende Abbildung zeigt, wie die Vollseitenansicht, die Dock-to-Desktop-Ansicht und Kurznotizen auf Ihrem Desktop aussehen.
   
 **OneNote-Ansichten**
 
-![OneNote Fensteransichten OneNote](media/ON15Con_views.jpg "Fensteransichten")
+![OneNote-Fensteransichten](media/ON15Con_views.jpg "OneNote-Fensteransichten")
   
 ## <a name="interfaces"></a>Schnittstellen
 
 In diesem Abschnitt werden die Schnittstellen und Member, die Sie zum programmgesteuerten Ändern der OneNote-Fenster verwenden können.
   
-### <a name="windows-interface"></a>Windows-Schnittstelle
+### <a name="windows-interface"></a>Windows Schnittstelle
 
 Die **Windows** -Schnittstelle ermöglicht es dem Benutzer, die den Satz von geöffnete OneNote-Fenster zuzugreifen. Es ist eine Eigenschaft der OneNote- **Application** -Klasse über **Application.Windows** zugegriffen. Dies gibt den aufgelisteten Satz von OneNote-Fenster zurück. 
   
@@ -68,7 +68,7 @@ Die **Window** -Schnittstelle ermöglicht es dem Benutzer Zugriff auf bestimmte 
 |**CurrentNotebookId** <br/> |string  <br/> |Ruft die Objekt-ID der aktiven OneNote-Notizbuch des Fensters ab.  <br/> |
 |**DockedLocation** <br/> |**DockedLocation** <br/> |Dient zum Abrufen oder Festlegen des angedockten Speicherorts des OneNote-Fensters.  <br/> |
 |**FullPageView** <br/> |bool  <br/> |Dient zum Abrufen oder Festlegen eines Werts, das angibt, ob das Fenster Ganzseitenansicht (minimaler Benutzeroberfläche anzeigen).  <br/> |
-|**SideNote** <br/> |bool  <br/> |Dient zum Abrufen oder Festlegen eines Werts, das angibt, ob das Fenster ein Kurznotiz Fenster ist.  <br/> |
+|**Nebenbei bemerkt** <br/> |bool  <br/> |Dient zum Abrufen oder Festlegen eines Werts, das angibt, ob das Fenster ein Kurznotiz Fenster ist.  <br/> |
 |**WindowHandle** <br/> |ulong  <br/> |Ruft die ID Handle des OneNote-Fensters.  <br/> |
    
 **Methoden**

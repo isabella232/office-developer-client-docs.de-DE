@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagAttachSize
 api_type:
 - HeaderDef
 ms.assetid: 768b3215-dd9f-4aa0-b52c-178ca81a7b07
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f3e4f19ab43a3da7c4840d762d5131813c83d996
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 4954ab76923e1d6fd9cabb055b74e305b1dec6d9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32361089"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59600435"
 ---
 # <a name="pidtagattachsize-canonical-property"></a>PidTagAttachSize (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32361089"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält die Summe aller Eigenschaften einer Anlage in Bytes. 
+Enthält die Summe (in Byte) der Größen aller Eigenschaften einer Anlage. 
   
 |||
 |:-----|:-----|
@@ -34,11 +34,11 @@ Enthält die Summe aller Eigenschaften einer Anlage in Bytes.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Es wird empfohlen, dass Anlagenunterobjekte die PR_ATTACH_SIZE **verfügbar** machen. Die summe in **PR_ATTACH_SIZE** enthält die Größe der **PR_ATTACH_DATA_BIN** ([PidTagAttachDataBinary](pidtagattachdatabinary-canonical-property.md)) oder **PR_ATTACH_DATA_OBJ** ([PidTagAttachDataObject](pidtagattachdataobject-canonical-property.md)) -Eigenschaft. Dementsprechend ist **PR_ATTACH_SIZE** in der Regel größer als der Inhalt der Anlage allein. 
+Es wird empfohlen, dass Anlagenunterobjekte die **PR_ATTACH_SIZE-Eigenschaft** verfügbar machen. Die summe in **PR_ATTACH_SIZE** enthält die Größe der **PR_ATTACH_DATA_BIN** ([PidTagAttachDataBinary](pidtagattachdatabinary-canonical-property.md)) oder **PR_ATTACH_DATA_OBJ** ([PidTagAttachDataObject](pidtagattachdataobject-canonical-property.md)) -Eigenschaft. Entsprechend ist **PR_ATTACH_SIZE** in der Regel größer als der Inhalt der Anlage allein. 
   
-Diese Eigenschaft kann verwendet werden, um die ungefähre Größe der Anlage vor der Remoteübertragung per Modem zu überprüfen und Statusanzeigen beim Speichern der Anlage auf dem Datenträger zu zeigen. Dies ist besonders bei angefügten OLE-Objekten hilfreich. 
+Diese Eigenschaft kann verwendet werden, um die ungefähre Größe der Anlage zu überprüfen, bevor eine Remoteübertragung per Modem ausgeführt wird, und um Statusanzeigen anzuzeigen, wenn die Anlage auf dem Datenträger gespeichert wird. Dies ist besonders nützlich bei angefügten OLE-Objekten. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -52,11 +52,11 @@ Diese Eigenschaft kann verwendet werden, um die ungefähre Größe der Anlage vo
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -67,9 +67,9 @@ mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

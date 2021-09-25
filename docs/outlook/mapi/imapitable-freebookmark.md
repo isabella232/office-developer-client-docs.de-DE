@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPITable.FreeBookmark
 api_type:
 - COM
 ms.assetid: 797833f7-8295-41bc-8980-977e5f5e05e8
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: a1ad209ff127a34d7da5ca8dbe1f4a6656d32876
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: fb8c31f399c32b3e5ddeb16aa67efb94e2bcadce
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33409454"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59600918"
 ---
 # <a name="imapitablefreebookmark"></a>IMAPITable::FreeBookmark
 
@@ -37,25 +37,25 @@ BOOKMARK bkPosition
 
  _bkPosition_
   
-> [in] Das zu entfernende Lesezeichen, das durch Aufrufen der [IMAPITable::CreateBookmark-Methode erstellt](imapitable-createbookmark.md) wird. 
+> [in] Die freizugebende Textmarke, die durch Aufrufen der [IMAPITable::CreateBookmark-Methode](imapitable-createbookmark.md) erstellt wird. 
     
 ## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
-> Die Textmarke wurde erfolgreich frei.
+> Das Lesezeichen wurde erfolgreich freigegeben.
     
 MAPI_E_INVALID_BOOKMARK 
   
 > Die angegebene Textmarke ist nicht vorhanden.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPITable::FreeBookmark-Methode** gibt ein Lesezeichen frei, das nicht mehr benötigt wird. Das Lesezeichen ist nach diesem Aufruf nicht mehr gültig. Wenn eine Tabelle aus dem Arbeitsspeicher freigegeben wird, werden auch alle zugehörigen Lesezeichen freigegeben. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Wenn der Aufrufer eine der drei vordefinierten Lesezeichen im  _bkPosition-Parameter_ übergibt, ignorieren Sie die Anforderung, und geben Sie S_OK. 
+Wenn der Aufrufer eine der drei vordefinierten Textmarken im  _bkPosition-Parameter_ übergibt, ignorieren Sie die Anforderung, und geben Sie S_OK zurück. 
   
 ## <a name="see-also"></a>Siehe auch
 

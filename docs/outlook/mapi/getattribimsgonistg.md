@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.GetAttribIMsgOnIStg
 api_type:
 - COM
 ms.assetid: bb27b28a-b2bd-4d4a-b0bb-0692f3de8e16
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 16e85eabc067bd82f5fb89c917afaf2831c75673
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 32988bc25e32ec3350a6e58e6418130a31f2095b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439996"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580188"
 ---
 # <a name="getattribimsgonistg"></a>GetAttribIMsgOnIStg
 
@@ -25,7 +25,7 @@ ms.locfileid: "33439996"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft Attribute von Eigenschaften für ein [IMessage-Objekt](imessageimapiprop.md) ab, das von der [OpenIMsgOnIStg-Funktion bereitgestellt](openimsgonistg.md) wird. 
+Ruft attribute of properties on an [IMessage](imessageimapiprop.md) object supplied by the [OpenIMsgOnIStg](openimsgonistg.md) function. 
   
 |||
 |:-----|:-----|
@@ -45,7 +45,7 @@ HRESULT GetAttribIMsgOnIStg(
 
  _lpObject_
   
-> [in] Zeiger auf ein **IMessage-Objekt,** das von der [OpenIMsgOnIStg-Funktion erhalten](openimsgonistg.md) wurde. 
+> [in] Zeiger auf ein **IMessage-Objekt,** das aus der [OpenIMsgOnIStg-Funktion](openimsgonistg.md) abgerufen wurde. 
     
  _lpPropTagArray_
   
@@ -63,15 +63,15 @@ S_OK
     
 MAPI_W_ERRORS_RETURNED 
   
-> Der Aufruf war insgesamt erfolgreich, aber auf eine oder mehrere Eigenschaften konnte nicht zugegriffen werden und wurde mit dem Eigenschaftstyp PT_ERROR.
+> Der Aufruf war insgesamt erfolgreich, aber auf eine oder mehrere Eigenschaften konnte nicht zugegriffen werden und wurde mit einem Eigenschaftentyp von PT_ERROR zurückgegeben.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Auf Eigenschaftsattribute kann nur auf Eigenschaftsobjekte zugegriffen werden, d. h. auf Objekte, die die [IMAPIProp : IUnknown-Schnittstelle](imapipropiunknown.md) implementieren. Um MAPI-Eigenschaften für ein strukturiertes OLE-Speicherobjekt verfügbar zu machen, erstellt [OpenIMsgOnIStg](openimsgonistg.md) ein [IMessage : IMAPIProp-Objekt](imessageimapiprop.md) über dem OLE **IStorage-Objekt.** Die Eigenschaftenattribute für solche Objekte können mit [SetAttribIMsgOnIStg](setattribimsgonistg.md) festgelegt oder geändert und mit **GetAttribIMsgOnIStg abgerufen werden.** 
+Auf Eigenschaftsattribute kann nur auf Eigenschaftsobjekte zugegriffen werden, d. h. auf Objekte, die die [IMAPIProp : IUnknown-Schnittstelle](imapipropiunknown.md) implementieren. Um MAPI-Eigenschaften für ein strukturiertes OLE-Speicherobjekt verfügbar zu machen, erstellt [OpenIMsgOnIStg](openimsgonistg.md) ein [IMessage : IMAPIProp-Objekt](imessageimapiprop.md) über dem OLE **IStorage-Objekt.** Die Eigenschaftsattribute für solche Objekte können mit [SetAttribIMsgOnIStg](setattribimsgonistg.md) festgelegt oder geändert und mit **GetAttribIMsgOnIStg** abgerufen werden. 
   
 > [!NOTE]
-> **GetAttribIMsgOnIStg** und **SetAttribIMsgOnIStg** funktionieren nicht für alle **IMessage-Objekte.** Sie sind nur gültig für **IMessage** **-on-IStorage-Objekte,** die von **OpenIMsgOnIStg zurückgegeben werden.** 
+> **GetAttribIMsgOnIStg** und **SetAttribIMsgOnIStg** funktionieren nicht für alle **IMessage-Objekte.** Sie sind nur gültig für **IMessage**-on- **IStorage-Objekte,** die von **OpenIMsgOnIStg** zurückgegeben werden. 
   
-Die Anzahl und die Positionen der Attribute im _lppPropAttrArray-Parameter_ entsprechen der Anzahl und position der Eigenschaftstags im _lpPropTagArray-Parameter._ 
+Die Anzahl und Positionen der Attribute im _Parameter "lppPropAttrArray"_ entsprechen der Anzahl und position der Eigenschaftstags im _LpPropTagArray-Parameter._ 
   
 

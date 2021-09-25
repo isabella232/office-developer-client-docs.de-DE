@@ -4,14 +4,14 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f8ded1a6-3bbd-0d59-c9f0-ab84341888cd
-ms.openlocfilehash: 64705604ce12f032f49827b28fa3e61e879f2162
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: fe0c8c1613976235dd3d5bf0ffde902ad141177e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34541505"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59554649"
 ---
 # <a name="hyperlinkrow_type-complextype-visio-xml"></a>HyperlinkRow_Type complexType (Visio XML)
 
@@ -46,13 +46,13 @@ ms.locfileid: "34541505"
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Cell](cell-element-hyperlink-rowvisio-xml.md) <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> ||
+|[Cell](cell-element-hyperlink-rowvisio-xml.md) <br/> |[Cell_type](cell_type-complextypevisio-xml.md) <br/> ||
    
 ### <a name="attributes"></a>Attribute
 

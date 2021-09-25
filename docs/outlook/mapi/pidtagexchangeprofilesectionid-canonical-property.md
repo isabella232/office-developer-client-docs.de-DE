@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagExchangeProfileSectionId
 api_type:
 - HeaderDef
 ms.assetid: 4ad2f417-be8f-4fc8-9321-82097289074b
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ce823159047410a8cea13b7eff5566cd8abaa5b9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 56c74754850451a6d0a4d437ec852a75d2c0aef6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316429"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59600099"
 ---
 # <a name="pidtagexchangeprofilesectionid-canonical-property"></a>PidTagExchangeProfileSectionId (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32316429"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine dynamisch generierte GUID, die zum Bestimmen eines Kontos verwendet wird, wenn Sie mehrere Microsoft Exchange Server verwenden.
+Enthält eine dynamisch generierte GUID, die verwendet wird, um ein Konto zu bestimmen, wenn Sie mehrere Microsoft Exchange Server Konten verwenden.
   
 |||
 |:-----|:-----|
@@ -34,15 +34,15 @@ Enthält eine dynamisch generierte GUID, die zum Bestimmen eines Kontos verwende
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Mehrere Exchange-Konten  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Microsoft Outlook 2010 und Microsoft Outlook 2013 unterstützen mehrere Exchange konten anstelle eines Exchange Kontos. Um mehrere Exchange zu verwenden, wurde das MAPI-Profillayout geändert. In Microsoft Office Outlook 2007 und früheren Versionen enthielten Profile einen festen Profilabschnitt für Exchange-Einstellungen wie Servername, Benutzername und Offlineordnerdatei (OST). speicherort. Diese Einstellungen wurden mithilfe eines eindeutigen Bezeichners identifiziert, der **pbGlobalProfileSectionGuid-Eigenschaft.** Der abschnitt, der für Exchange einstellungen verwendet wird, wird als Exchange Global Profile Section bezeichnet. 
+Microsoft Outlook 2010 und Microsoft Outlook 2013 unterstützen mehrere Exchange-Konten anstelle eines einzelnen Exchange Kontos. Um mehrere Exchange Konten aufzunehmen, wurde das MAPI-Profillayout geändert. In Microsoft Office Outlook 2007 und früher enthielten Profile einen festen Profilabschnitt, der Exchange Einstellungen wie Servername, Benutzername und Offlineordnerdatei (OST) zugeordnet war. Lage. Diese Einstellungen wurden mithilfe eines eindeutigen Bezeichners identifiziert, der **PbGlobalProfileSectionGuid-Eigenschaft.** Der für Exchange Einstellungen verwendete Abschnitt wird als Exchange Abschnitt "Globales Profil" bezeichnet. 
   
-Ein fester Profilabschnittsspeicherort ist nicht mehr ausreichend, um mehrere Exchange aufnehmen. Stattdessen ist für jedes Exchange in Ihrem Profil ein Abschnitt vorhanden, der den Einstellungen für dieses Konto gewidmet ist. Der neue Abschnitt, der für Exchange verwendet wird, wird durch den eindeutigen Bezeichner **emsmdbUID identifiziert.**
+Ein fester Profilbereichsspeicherort reicht nicht mehr aus, um mehrere Exchange Konten aufzunehmen. Stattdessen ist für jedes Exchange Konto in Ihrem Profil ein Abschnitt vorhanden, der den Einstellungen für dieses Konto zugeordnet ist. Der neue Abschnitt, der für Exchange Einstellungen verwendet wird, wird durch den eindeutigen Bezeichner **emsmdbUID** identifiziert.
   
-Im Abschnitt Nachrichtendienstprofil für das Exchange finden Sie eine Eigenschaft, die eine GUID enthält, die dynamisch generiert wird, wenn das Konto erstellt wird. Diese GUID wird in der **PidTagExchangeProfileSectionId-Eigenschaft** gespeichert. Nachrichtenspeicher und Adressbuchcontainer machen eine Eigenschaft verfügbar, um zu bestimmen, Exchange sie gehören. Auf den Zugriff in der Tabelle "Nachrichtendienste" kann Exchange diese Eigenschaft verfügbar gemacht werden. 
+Im Abschnitt "Nachrichtendienstprofil" für das Exchange-Konto finden Sie eine Eigenschaft, die eine GUID enthält, die beim Erstellen des Kontos dynamisch generiert wird. Diese GUID wird in der **PidTagExchangeProfileSectionId-Eigenschaft** gespeichert. Nachrichtenspeicher und Adressbuchcontainer machen eine Eigenschaft verfügbar, um zu bestimmen, zu welchem Exchange Konto sie gehören. Auf die in der Nachrichtendiensttabelle zugegriffen werden kann, macht jeder Exchange Dienst diese Eigenschaft verfügbar. 
   
-Sie können diese Eigenschaft über einen Aufruf von [IMAPIProp::GetProps](imapiprop-getprops.md) auf **PidTagExchangeProfileSectionId** abrufen, nachdem Sie eine der folgenden Schnittstellen abgefragt haben: 
+Sie können diese Eigenschaft über einen Aufruf von [IMAPIProp::GetProps](imapiprop-getprops.md) on **PidTagExchangeProfileSectionId** abrufen, nachdem Sie eine der folgenden Schnittstellen abgefragt haben: 
   
 - [IMsgStore: IMAPIProp](imsgstoreimapiprop.md)
     
@@ -50,18 +50,18 @@ Sie können diese Eigenschaft über einen Aufruf von [IMAPIProp::GetProps](imapi
     
 - [IABContainer : IMAPIContainer](iabcontainerimapicontainer.md)
     
-Wenn das Objekt nicht mit einer Exchange verbunden ist, gibt der Aufruf **MAPI_E_NOT_FOUND**.
+Wenn das Objekt nicht mit Exchange verbunden ist, gibt der Aufruf **MAPI_E_NOT_FOUND** zurück.
   
-Sie können Container für eine **PidTagExchangeProfileSectionId** einschränken, wenn Sie das Adressbuch anzeigen. Sobald Sie über einen geöffneten Container verfügen, können Sie **die emsmdbUID von** diesem abfragen. Es ist auch erwähnenswert, dass der Empfänger auch die **PidTagExchangeProfileSectionId** in der Liste der Eigenschaften enthält, wenn ein Empfänger aus einem Exchange-Adressbuch ausgewählt wurde. 
+Sie können Container für eine **PidTagExchangeProfileSectionId** beim Anzeigen des Adressbuchs einschränken. Sobald Sie einen geöffneten Container geöffnet haben, können Sie die **emsmdbUID** daraus abfragen. Beachten Sie außerdem Folgendes: Wenn ein Empfänger aus einem Exchange Adressbuch ausgewählt wurde, enthält der Empfänger auch die **PidTagExchangeProfileSectionId** in der Liste der Eigenschaften. 
   
 > [!NOTE]
-> In den Codebeispielen und Funktionskopfzeilen wird diese GUID als **emsmdbUID bezeichnet.** 
+> In den Codebeispielen und Funktionsheadern wird diese GUID als **emsmdbUID** bezeichnet. 
   
-Eines der Exchange wird als Legacykonto Exchange gekennzeichnet. In der Regel ist es das erste Konto, das dem Profil hinzugefügt wurde. Jeder Aufruf zum Öffnen **von pbGlobalProfileSectionGuid** wird an den globalen Exchange des Legacykontos umgeleitet. Das Objektmodell ruft Aufrufe auf, die mit dem Nicht-Legacy-Exchange interagieren, auch mit dem Legacykonto Exchange interagieren. 
+Eines der Exchange-Konten wird als Legacykonto Exchange gekennzeichnet. In der Regel ist es das erste Konto, das dem Profil hinzugefügt wurde. Jeder Aufruf zum Öffnen von **pbGlobalProfileSectionGuid** wird an den Exchange globalen Abschnitt des Legacykontos umgeleitet. Die Objektmodellaufrufe, die mit dem Nicht-Legacy-Exchange-Konto interagieren, interagieren auch mit dem Legacy-Exchange Konto. 
   
-Der legacy Exchange-Dienst verfügt über **die Eigenschaft PR_EMSMDB_LEGACY** (0x3D18000B), die in der Nachrichtendiensttabelle auf **true** festgelegt ist. 
+Der Ältere Exchange Dienst verfügt **über** die Eigenschaft PR_EMSMDB_LEGACY (0x3D18000B), die in der Nachrichtendiensttabelle auf **"true"** festgelegt ist. 
   
-Die ältere **emsmdbUID** wird auch im Abschnitt Outlook Global Profile des Profils als **PidTagExchangeProfileSectionId gestempelt.** Code, der zur Unterstützung mehrerer Exchange-Konten geschrieben wurde, sollte nicht die ältere **emsmdbUID** abrufen, da er die richtige **emsmdbUID** abrufen sollte, abhängig vom Konto, mit dem Ihr Code interagiert.
+Die ältere **EmsmdbUID** ist auch im Abschnitt Outlook globales Profil des Profils als **PidTagExchangeProfileSectionId** gestempelt. Code, der zur Unterstützung mehrerer Exchange Konten geschrieben wurde, muss nicht die ältere **EmsmdbUID** abrufen, da sie je nach Konto, mit dem Ihr Code interagiert, die richtige **emsmdbUID** abrufen sollte.
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -9,21 +9,21 @@ f1_keywords:
 - TempActiveRow12
 keywords:
 - tempactiverow-Funktion [excel 2007],TempActiveRow12-Funktion [Excel 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cbb9181c-59b0-4133-a085-94a94ac3f229
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 1f89c458a521b41e4f172f8a6c53526440bb472b
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 0c3a629dc8c036508f81b65e8ec7d4b6a8525c39
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33413108"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562013"
 ---
 # <a name="tempactiverowtempactiverow12"></a>TempActiveRow/TempActiveRow12
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Frameworkbibliotheksfunktionen, die eine temporäre **XLOPER** /  **XLOPER12** erstellen, die einen externen Verweis auf eine gesamte Zeile im aktiven Blatt enthält. 
+Frameworkbibliotheksfunktionen, die einen temporären **XLOPER** /  **XLOPER12** erstellen, der einen externen Verweis auf eine gesamte Zeile im aktiven Blatt enthält. 
   
 ```cs
 LPXLOPER TempActiveRow(WORD row);
@@ -32,13 +32,13 @@ LPXLOPER12 TempActiveRow12(ROW row);
 
 ## <a name="parameters"></a>Parameter
 
- _row_
+ _Zeile_
   
-Die Zeile, auf die verwiesen werden soll. Zeilenargumente sind nullbasierte, sodass Zeile 1 als 0 übergeben wird. In Microsoft Office Excel 2003 und früheren Versionen und ab Excel 2007, in dem eine Arbeitsmappe im Kompatibilitätsmodus ausgeführt wird, ist der höchstwert 65.535 = 2^16 - 1 und der Höchstwert, der von einer ganzzahligen WORD-Zahl verwendet werden kann. Ab Excel 2007, in dem eine Arbeitsmappe ausgeführt wird, ist der maximale Wert 1.048.575 = 2^20 - 1. RW ist in XLCALL.H als 32-Bit-ganze Zahl mit Vorzeichen definiert.
+Die Zeile, auf die verwiesen werden soll. Zeilenargumente sind nullbasiert, sodass Zeile 1 als 0 übergeben wird. In Microsoft Office Excel 2003 und früheren Versionen und ab Excel 2007, in dem eine Arbeitsmappe im Kompatibilitätsmodus ausgeführt wird, beträgt der Maximalwert 65.535 = 2^16 - 1 und ist der Maximalwert, der von einer ganzzahligen WORD-Zahl verwendet werden kann. Ab Excel 2007, in dem eine Arbeitsmappe ausgeführt wird, beträgt der Maximalwert 1.048.575 = 2^20 - 1. RW ist in XLCALL.H als 32-Bit-Ganzzahl mit Vorzeichen definiert.
   
 ## <a name="return-value"></a>Rückgabewert
 
-Gibt einen **externen xltypeRef-Verweis** auf die übergebenen Zeilenzellen zurück. 
+Gibt einen externen **XltypeRef-Verweis** auf übergebene Zeilenzellen zurück. 
   
 ## <a name="example"></a>Beispiel
 

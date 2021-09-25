@@ -6,23 +6,23 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251435
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6c85414c-9fb6-cdc5-f5b6-8eb13c9608af
-description: Schützt Ausdruck vor Löschung und Änderung durch Aktionen im Zeichnungsfenster, z. B. Verschieben, Größenanpassung, Gruppieren oder Aufheben der Gruppierung von Shapes.
-ms.openlocfilehash: 0bdfa023d53e739a970cab65b1dbd67bc1a44461
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Schützt den Ausdruck vor dem Löschen und Ändern durch Aktionen, die im Zeichnungsfenster ausgeführt werden, z. B. Verschieben, Anpassen, Gruppieren oder Aufheben der Gruppierung von Shapes.
+ms.openlocfilehash: 07398bc6360b231ce7a9b8bd6f64635db03d57ed
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33408152"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59554684"
 ---
 # <a name="guard-function"></a>GUARD Function
 
-Schützt  *Ausdruck*  vor Löschung und Änderung durch Aktionen im Zeichnungsfenster, z. B. Verschieben, Größenanpassung, Gruppieren oder Aufheben der Gruppierung von Shapes. 
+Schützt  *den Ausdruck*  vor dem Löschen und Ändern durch Aktionen, die im Zeichnungsfenster ausgeführt werden, z. B. Verschieben, Anpassen, Gruppieren oder Aufheben der Gruppierung von Shapes. 
   
 ## <a name="syntax"></a>Syntax
 
-GUARD(** *Expression* ** ) 
+GUARD(** *Ausdruck* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -30,7 +30,7 @@ GUARD(** *Expression* ** )
 |:-----|:-----|:-----|:-----|
 | _expression_ <br/> |Erforderlich  <br/> |**String** <br/> |Eine Kombination aus Konstanten, Operatoren, Funktionen und Bezügen auf ShapeSheet-Zellen, die einen Wert ergeben.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Zu den Zellen, auf die sich die GUARD-Funktion am häufigsten auswirkt, zählen Breite, Höhe, DrehbezX und DrehbezY. 
   

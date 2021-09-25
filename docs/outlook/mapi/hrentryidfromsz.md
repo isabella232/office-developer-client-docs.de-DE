@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.HrEntryIDFromSz
 api_type:
 - COM
 ms.assetid: 14c171ec-0aec-43ab-8be8-e6bc0ce28a58
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ac59aeb3d650c0fbeb5bcdb580e0401cbab58ee6
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 1422a8f6568c210c2d4416a58f625cc701ca3616
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33437728"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59571948"
 ---
 # <a name="hrentryidfromsz"></a>HrEntryIDFromSz
 
@@ -25,7 +25,7 @@ ms.locfileid: "33437728"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erstellt einen Eintragsbezeichner aus seiner ASCII-Codierung neu. 
+Erstellt einen Eintragsbezeichner aus der ASCII-Codierung neu. 
   
 |||
 |:-----|:-----|
@@ -43,15 +43,15 @@ HRESULT HrEntryIDFromSz(
 
 ## <a name="parameters"></a>Parameter
 
- _sz_
+ _Sz_
   
 > [in] Zeiger auf die ASCII-Zeichenfolge, aus der ein Eintragsbezeichner erstellt werden soll. 
     
- _leiterplatte_
+ _Pcb_
   
-> [out] Zeiger auf die Größe des Eintragsbezeichners in Bytes, auf den der  _ppentry-Parameter_ verweist. 
+> [out] Zeiger auf die Größe des Eintragsbezeichners in Byte, auf die der  _Ppentry-Parameter_ verweist. 
     
- _ppentry_
+ _Ppentry_
   
 > [out] Zeiger auf einen Zeiger auf die zurückgegebene [ENTRYID-Struktur,](entryid.md) die den neuen Eintragsbezeichner enthält. 
     
@@ -65,12 +65,12 @@ MAPI_E_INVALID_ENTRYID
   
 > Die Eintrags-ID war ungültig.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die **Funktionen HrEntryIDFromSz** und [HrSzFromEntryID](hrszfromentryid.md) stellen eine Konvertierung zwischen den Zeichenfolgen- und Binärformaten von Eintragsbezeichnern zur Verfügung. 
+Die **Funktionen HrEntryIDFromSz** und [HrSzFromEntryID](hrszfromentryid.md) ermöglichen die Konvertierung zwischen dem Zeichenfolgen- und binären Format von Eintragsbezeichnern. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Die **HrEntryIDFromSz-Funktion** weist der ASCII-Zeichenfolge mithilfe der [MAPIAllocateBuffer-Funktion Arbeitsspeicher](mapiallocatebuffer.md) zu. 
+Die **HrEntryIDFromSz-Funktion** weist Speicher für die ASCII-Zeichenfolge mithilfe der [MAPIAllocateBuffer-Funktion](mapiallocatebuffer.md) zu. 
   
 

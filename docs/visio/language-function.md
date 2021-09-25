@@ -4,19 +4,19 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e372c670-e9a0-4352-b70a-3a054b036124
-description: Ermöglicht Vergleichsvorgänge zwischen verschiedenen Sprachdarstellungen. Es wird am besten zum Konvertieren von Sprachtags (BCP 47) von Internet Engineering Task Force in Locale ID (LCID)-Werte verwendet.
-ms.openlocfilehash: 9c2dc96cefe7a1cfcd06947dcc54453dcef276fc
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Ermöglicht Vergleichsvorgänge zwischen verschiedenen Sprachdarstellungen. Es wird am besten zum Konvertieren von BCP 47-Werten (Internet Engineering Task Force Language Tags) in Gebietsschema-ID-Werte (LCID) verwendet.
+ms.openlocfilehash: 319d1a043b43f80accfe5b195a640acaea5a1c52
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424752"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59554516"
 ---
 # <a name="language-function"></a>LANGUAGE-Funktion
 
-Ermöglicht Vergleichsvorgänge zwischen verschiedenen Sprachdarstellungen. Es wird am besten zum Konvertieren von Sprachtags (BCP 47) von Internet Engineering Task Force in Locale ID (LCID)-Werte verwendet.
+Ermöglicht Vergleichsvorgänge zwischen verschiedenen Sprachdarstellungen. Es wird am besten zum Konvertieren von BCP 47-Werten (Internet Engineering Task Force Language Tags) in Gebietsschema-ID-Werte (LCID) verwendet.
   
 ## <a name="version-information"></a>Informationen zur Version
 

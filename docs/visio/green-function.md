@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251434
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: eccec432-32d3-15c2-06b3-dd02b6313d4c
 description: Gibt die grüne Komponente einer Farbe zurück.
-ms.openlocfilehash: 0412e4519c2964b05d7663805d7773e8dc5deaab
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: fa80526aebc21fc227f54f6c6bb25d397a46b5a1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33438106"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59554712"
 ---
 # <a name="green-function"></a>GREEN Function
 
@@ -22,13 +22,13 @@ Gibt die grüne Komponente einer Farbe zurück.
   
 ## <a name="syntax"></a>Syntax
 
-GREEN(** *Expression* ** ) 
+GREEN(** *Ausdruck* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _expression_ <br/> |Erforderlich  <br/> |**Variiert** <br/> |Ein Index einer Farbe in der Farbtabelle des Dokuments, ein Ausdruck, der in eine benutzerdefinierte Farbe aufgelöst wird (z. B. RGB oder HSL), oder ein Verweis auf eine Zelle, die einen Farbindex oder ein Farbergebnis enthält.  <br/> |
+| _expression_ <br/> |Erforderlich  <br/> |**Variiert** <br/> |Ein Index einer Farbe in der Farbtabelle des Dokuments, ein Ausdruck, der in eine benutzerdefinierte Farbe aufgelöst wird (z. B. RGB oder HSL) oder ein Verweis auf eine Zelle, die einen Farbindex oder ein Farbergebnis enthält.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
@@ -36,7 +36,7 @@ Ganze Zahl
   
 ## <a name="remarks"></a>Bemerkungen
 
-Der Rückgabewert ist eine Zahl im Bereich von 0 bis einschließlich 255, oder ein Zellbezug, der als Index aufgelöst wird. Wenn  *Ausdruck*  ungültig ist, gibt er 0 (Schwarz) zurück. 
+Der Rückgabewert ist eine Zahl im Bereich von 0 bis einschließlich 255, oder ein Zellbezug, der als Index aufgelöst wird. Wenn  *der Ausdruck*  ungültig ist, wird 0 (schwarz) zurückgegeben. 
   
 ## <a name="example-1"></a>Beispiel 1
 

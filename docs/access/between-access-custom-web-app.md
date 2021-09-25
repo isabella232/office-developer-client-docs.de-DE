@@ -3,15 +3,15 @@ title: BETWEEN (Benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9dcb32c6-ed9b-4a09-9e6a-48cc50063a6f
 description: Gibt einen zu testden Bereich an.
-ms.openlocfilehash: fd67d1163f6a39779e0202b5ca1ba998ba8650a7
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 85fea11c3cf658ef6b5f821cd54304c64aa06743
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429299"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562881"
 ---
 # <a name="between-access-custom-web-app"></a>BETWEEN (Benutzerdefinierte Access-Web-App)
 
@@ -22,17 +22,17 @@ Gibt einen zu testden Bereich an.
   
 ## <a name="syntax"></a>Syntax
 
- *test_expression*  [ NOT ] **BETWEEN** *begin_expression* **AND** *end_expression* 
+ *test_expression*  [ NICHT ] **ZWISCHEN** *begin_expression* **UND** *end_expression* 
   
 Der **Between-Operator** enthält die folgenden Argumente. 
   
 |**Argument**|**Erforderlich**|**Beschreibung**|
 |:-----|:-----|:-----|
-| *test_expression*  <br/> |Ja  <br/> |Der Ausdruck, nach dem in  dem von begin_expression und end_expression *definierten Bereich end_expression.* Muss der gleiche Datentyp sein wie begin_expression  *und*  *end_expression*  .  <br/> |
+| *test_expression*  <br/> |Ja  <br/> |Der Ausdruck, auf den in dem durch begin_expression und  *end_expression*  definierten Bereich  *getestet werden*  soll. Muss der gleiche Datentyp wie  *begin_expression*  und  *end_expression*  sein.  <br/> |
 | *NOT*  <br/> |Nein  <br/> |Gibt an, dass das Ergebnis des Prädikats negiert wird.  <br/> |
-| *begin_expression*  <br/> |Ja  <br/> |Ein gültiger Ausdruck. Muss der gleiche Datentyp sein wie test_expression  *und*  *end_expression*  .  <br/> |
-| *end_expression*  <br/> |Ja  <br/> |Ein gültiger Ausdruck. Muss der gleiche Datentyp sein wie test_expression  *und*  *begin_expression*  .  <br/> |
-| *UND*  <br/> |Ja  <br/> |Gibt *an test_expression* innerhalb des bereichs liegen soll, der durch begin_expression *und* *end_expression.*  <br/> |
+| *Begin_expression*  <br/> |Ja  <br/> |Ein gültiger Ausdruck. Muss der gleiche Datentyp wie  *test_expression*  und  *end_expression*  sein.  <br/> |
+| *End_expression*  <br/> |Ja  <br/> |Ein gültiger Ausdruck. Muss der gleiche Datentyp wie  *test_expression*  und  *begin_expression*  sein.  <br/> |
+| *AND*  <br/> |Ja  <br/> |Gibt  *an, test_expression*  innerhalb des bereichs liegen soll, der durch  *begin_expression*  und  *end_expression*  angegeben wird.  <br/> |
    
 ## <a name="result-type"></a>Ergebnistyp
 
@@ -40,10 +40,10 @@ Der **Between-Operator** enthält die folgenden Argumente.
   
 ## <a name="remarks"></a>Bemerkungen
 
- **BETWEEN** gibt **TRUE** zurück, wenn der Wert von  *test_expression*  größer oder gleich dem Wert von  *begin_expression*  und kleiner als oder gleich dem Wert von  *end_expression*  ist. 
+ **BETWEEN** gibt **TRUE** zurück, wenn der Wert von  *test_expression*  größer oder gleich dem Wert von  *begin_expression*  und kleiner oder gleich dem Wert von  *end_expression*  ist. 
   
- **NOT BETWEEN** gibt **TRUE zurück,** wenn der Wert von  *test_expression*  kleiner als der Wert von  *begin_expression*  oder größer als der Wert von  *end_expression*  . 
+ **NOT BETWEEN** gibt **TRUE** zurück, wenn der Wert von  *test_expression*  kleiner als der Wert von  *begin_expression*  oder größer als der Wert von  *end_expression*  ist. 
   
-Verwenden Sie zum Angeben eines exklusiven Bereichs den Wert größer als ( \> ) und kleiner als Operatoren ( \< ).
+Um einen exklusiven Bereich anzugeben, verwenden Sie die Operatoren größer als ( \> ) und kleiner als Operatoren ( \< ).
   
 

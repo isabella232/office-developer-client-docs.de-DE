@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagResourceType
 api_type:
 - COM
 ms.assetid: 48b634d7-deea-422b-8944-a8d929d83838
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1c7a35ded4861d724520b02ec5d61246774ca5cf
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 86e6d78387a2b8c16ce4ce3ac54e4ae0e77840e0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33434956"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59563350"
 ---
 # <a name="pidtagresourcetype-canonical-property"></a>PidTagResourceType (kanonische Eigenschaft)
 
@@ -34,7 +34,7 @@ Enthält einen Wert, der den Dienstanbietertyp angibt.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Status  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft kann genau einen der folgenden Werte haben:
   
@@ -48,7 +48,7 @@ MAPI_AB_PROVIDER
     
 MAPI_HOOK_PROVIDER 
   
-> Anbieter von Spooler-Hooks
+> Spooler-Hookanbieter
     
 MAPI_PROFILE_PROVIDER 
   
@@ -60,7 +60,7 @@ MAPI_SPOOLER
     
 MAPI_STORE_PROVIDER 
   
-> Anbieter des Nachrichtenspeichers
+> Nachrichtenspeicheranbieter
     
 MAPI_SUBSYSTEM 
   
@@ -76,11 +76,11 @@ MAPI_TRANSPORT_PROVIDER
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -88,9 +88,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

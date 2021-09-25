@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251441
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 943636a6-e135-a626-7924-11e238156548
-description: Navigiert zur angegebenen Adresse, bei der es sich um einen Datei-, UNC- oder URL-Pfad gehen kann.
-ms.openlocfilehash: 5e4952c3d56eff0cb1e6518928a7b8259f645046
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: Navigiert zu der angegebenen Adresse, bei der es sich um einen Datei-, UNC- oder URL-Pfad handeln kann.
+ms.openlocfilehash: 9443f30143a3beb19e31519d0dbe0845ddfd5451
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329946"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59554705"
 ---
 # <a name="hyperlink-function"></a>HYPERLINK Function
 
-Navigiert zur angegebenen Adresse, bei der es sich um einen Datei-, UNC- oder URL-Pfad gehen kann.
+Navigiert zu der angegebenen Adresse, bei der es sich um einen Datei-, UNC- oder URL-Pfad handeln kann.
   
 ## <a name="syntax"></a>Syntax
 
@@ -29,12 +29,12 @@ HYPERLINK(" ** *address* ** "[," ** *subaddress* ** "," ** *extrainfo* ** ", ** 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _address_ <br/> |Erforderlich  <br/> |**String** <br/> |Ein vollständiger Pfad oder ein relativer Pfad.  <br/> |
-| _subaddress_ <br/> |Optional  <br/> |**String** <br/> |Gibt eine Position innerhalb von address an, mit der eine Verknüpfung hergestellt werden soll. Wenn es sich bei address beispielsweise um eine Microsoft Visio-Datei handelt, kann subaddress ein Zeichenblattname sein. Wenn es sich um eine Microsoft Excel-Datei handelt, kann subaddress ein Arbeitsblatt oder ein Arbeitsblattbereich sein. Wenn es sich um eine URL für eine HTML-Seite handelt, kann sich subaddress auf einen Anker beziehen.  <br/> |
-| _extrainfo_ <br/> |Optional  <br/> |**String** <br/> |Übergibt Informationen, die bei der Auflösung der URL verwendet werden, z. B. die Koordinaten für eine Imagemap.  <br/> |
-| _window_ <br/> |Optional  <br/> |**Boolescher Wert** <br/> |Legt fest, ob der Hyperlink in einem neuen Fenster geöffnet wird. Die Standardeinstellung lautet FALSE.  <br/> |
-| _frame_ <br/> |Optional  <br/> |**String** <br/> | Legt den Namen eines Frames zu einem Ziel fest, wenn Visio als aktives Dokument in einem ActiveX-Browser, z. B. Microsoft Internet Explorer 3.0 oder höher, geöffnet ist. Die Standardeinstellung ist eine leere Zeichenfolge.  <br/> |
+| _Unteradresse_ <br/> |Optional  <br/> |**String** <br/> |Gibt eine Position innerhalb von address an, mit der eine Verknüpfung hergestellt werden soll. Wenn es sich bei address beispielsweise um eine Microsoft Visio-Datei handelt, kann subaddress ein Zeichenblattname sein. Wenn es sich um eine Microsoft Excel-Datei handelt, kann subaddress ein Arbeitsblatt oder ein Arbeitsblattbereich sein. Wenn es sich um eine URL für eine HTML-Seite handelt, kann sich subaddress auf einen Anker beziehen.  <br/> |
+| _Extrainfo_ <br/> |Optional  <br/> |**String** <br/> |Übergibt Informationen, die bei der Auflösung der URL verwendet werden, z. B. die Koordinaten für eine Imagemap.  <br/> |
+| _Fenster_ <br/> |Optional  <br/> |**Boolescher Wert** <br/> |Legt fest, ob der Hyperlink in einem neuen Fenster geöffnet wird. Die Standardeinstellung lautet FALSE.  <br/> |
+| _Rahmen_ <br/> |Optional  <br/> |**String** <br/> | Legt den Namen eines Frames zu einem Ziel fest, wenn Visio als aktives Dokument in einem ActiveX-Browser, z. B. Microsoft Internet Explorer 3.0 oder höher, geöffnet ist. Die Standardeinstellung ist eine leere Zeichenfolge.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn das Dokument keinen Basispfad besitzt, navigiert Visio relativ zum Dokumentpfad. Wenn das Dokument noch nicht gespeichert wurde, bleibt der Hyperlink undefiniert. 
   

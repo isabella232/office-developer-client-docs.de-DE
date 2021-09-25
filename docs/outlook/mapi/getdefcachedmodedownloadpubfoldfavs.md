@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2dd95561-ed8f-8a3b-6532-b53556f16666
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 5e623c9d40ffd2dd276bd9601676244644bb3402
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 602d9ce178c0d88192d3eaba899b15f6c2445c8d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33417707"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580174"
 ---
 # <a name="getdefcachedmodedownloadpubfoldfavs"></a>GetDefCachedModeDownloadPubFoldFavs
 
@@ -21,7 +21,7 @@ ms.locfileid: "33417707"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt an, ob der Exchange-Cachemodus für den Ordner "Favoriten für öffentliche Ordner" aktiviert ist und ob **dies** durch die Richtlinie erzwungen wird. 
+Gibt an, ob zwischengespeicherter Exchange Modus für den Ordner **"Favoriten** für öffentliche Ordner" aktiviert ist und ob dies durch eine Richtlinie erzwungen wird. 
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -40,15 +40,15 @@ BOOL GetDefCachedModeDownloadPubFoldFavs(BOOL *pfPolicy);
 
  _pfPolicy_
   
-> [out] **true,** wenn der Rückgabewert von der Richtlinie erzwungen wird, **false,** wenn dies nicht der Fall ist. 
+> [out]  true, wenn der Rückgabewert durch die Richtlinie erzwungen wird, false, wenn dies nicht der Fall ist.  
     
 ## <a name="return-values"></a>Rückgabewerte
 
- **true**
+ **STIMMT**
   
 - Die Zwischenspeicherung ist aktiviert.
     
- **false**
+ **FALSE**
   
 - Die Zwischenspeicherung ist deaktiviert.
     

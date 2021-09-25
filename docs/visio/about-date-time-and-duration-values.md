@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: overview
 f1_keywords:
 - Vis_DSS.chm82251852
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b6951a92-f32a-5829-5e07-b277b7934df3
 description: Sie können in Formeln Operationen mit Werten für Datum, Uhrzeit und Dauer ausführen. In Microsoft Visio können Ausdrücke für Datum und Uhrzeit als einzelne Werte ausgewertet werden. Bei einem Ausdruck für Daume und Uhrzeit handelt es sich um einen beliebigen Ausdruck, der üblicherweise als Datum und/oder Uhrzeit erkannt wird, oder um einen Bezug auf eine Zelle mit Informationen zu Datum und/oder Uhrzeit. Dazu gehören Zeichenfolgen und Zahlen, die wie Datums- und Uhrzeitangaben aussehen sowie Werte für Datum und Uhrzeit, die von Funktionen zurückgegeben werden.
-ms.openlocfilehash: 56de919fa713c0948bb87f794d1c6e0a5d727aef
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c991a10c1403009b2abb5719d37946469e591c82
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33416727"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59554943"
 ---
 # <a name="about-date-time-and-duration-values"></a>Informationen zu Werten für Datum, Uhrzeit und Dauer
 
@@ -45,20 +45,20 @@ Um Datums- und Zeitangaben in einem Ausdruck (anstelle einer einzelnen Konstante
 
 |**Funktion**|**Beschreibung**|
 |:-----|:-----|
-|[DATE](date-function-visioshapesheet.md) <br/> | Konvertiert Zahlen in einen Datumswert.  <br/> |
+|[DATUM](date-function-visioshapesheet.md) <br/> | Konvertiert Zahlen in einen Datumswert.  <br/> |
 |[DATETIME](datetime-function.md) <br/> | Konvertiert eine Zeichenfolge in einen Datums- oder Uhrzeitwert.  <br/> |
 |[DATEVALUE](datevalue-function-visioshapesheet.md) <br/> | Konvertiert eine Zeichenfolge in einen Datumswert.  <br/> |
 |[NOW](now-function-visioshapesheet.md) <br/> | Gibt das aktuelle Systemdatum als Datums- und Uhrzeitwert zurück.  <br/> |
-|[TIME](time-function-visioshapesheet.md) <br/> | Konvertiert Zahlen in einen Uhrzeitwert.  <br/> |
+|[ZEIT](time-function-visioshapesheet.md) <br/> | Konvertiert Zahlen in einen Uhrzeitwert.  <br/> |
 |[TIMEVALUE](timevalue-function-visioshapesheet.md) <br/> | Konvertiert eine Zeichenfolge in einen Uhrzeitwert.  <br/> |
-|[DAY](day-function-visioshapesheet.md) <br/> | Gibt die Tageskomponente in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
+|[TAG](day-function-visioshapesheet.md) <br/> | Gibt die Tageskomponente in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
 |[DAYOFYEAR](dayofyear-function.md) <br/> | Gibt den Tag des Jahres in sequenzieller Zählung in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
-|[HOUR](hour-function-visioshapesheet.md) <br/> | Gibt die Stundenkomponente in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
+|[STUNDE](hour-function-visioshapesheet.md) <br/> | Gibt die Stundenkomponente in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
 |[MINUTE](minute-function-visioshapesheet.md) <br/> | Gibt die Minutenkomponente in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
-|[MONTH](month-function-visioshapesheet.md) <br/> | Gibt die Monatskomponente in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
-|[SECOND](second-function-visioshapesheet.md) <br/> | Gibt die Sekundenkomponente in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
-|[WEEKDAY](weekday-function-visioshapesheet.md) <br/> | Gibt die Zahl für den Wochentag in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
-|[YEAR](year-function-visioshapesheet.md) <br/> | Gibt die Jahreskomponente in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
+|[MONAT](month-function-visioshapesheet.md) <br/> | Gibt die Monatskomponente in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
+|[ZWEITE](second-function-visioshapesheet.md) <br/> | Gibt die Sekundenkomponente in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
+|[WOCHENTAG](weekday-function-visioshapesheet.md) <br/> | Gibt die Zahl für den Wochentag in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
+|[JAHR](year-function-visioshapesheet.md) <br/> | Gibt die Jahreskomponente in einem Ausdruck für Datum und Uhrzeit zurück.  <br/> |
    
 ## <a name="duration"></a>Dauer
 

@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82253219
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f6e410ef-54d5-9c08-926b-97a2a9786622
-description: Gibt einen Hintergrundseitennamen als Zeichenfolge zurück.
-ms.openlocfilehash: 3b628315052117fe853c8f9c0fc36572de25d871
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Gibt einen Namen der Hintergrundseite als Zeichenfolge zurück.
+ms.openlocfilehash: 96e475690fafee2aba534419578428ad96320e3f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33410315"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59554845"
 ---
 # <a name="bkgpagename-function"></a>BKGPAGENAME Function
 
-Gibt einen Hintergrundseitennamen als Zeichenfolge zurück.
+Gibt einen Namen der Hintergrundseite als Zeichenfolge zurück.
   
 ## <a name="syntax"></a>Syntax
 
@@ -28,15 +28,15 @@ BKGPAGENAME (** *langID_opt* ** )
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _langID_opt_ <br/> |Optional.  <br/> |**Numeric** <br/> |Optionales Argument. Wird verwendet, um eine Sprache für die von der Funktion zurückgegebene Zeichenfolge anzugeben. Verwenden Sie 0 (Standardwert), um die lokale Sprache anzugeben. Verwenden Sie 750, um die universelle Sprache anzugeben.  <br/> |
+| _langID_opt_ <br/> |Optional  <br/> |**Numeric** <br/> |Optionales Argument. Wird verwendet, um eine Sprache für die von der Funktion zurückgegebene Zeichenfolge anzugeben. Verwenden Sie 0 (Standardwert), um die lokale Sprache anzugeben. Verwenden Sie 750, um die universelle Sprache anzugeben.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
 Zeichenfolge
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Wenn die Seite, für die Sie die Funktion verwenden, keine Hintergrundseite hat, wird die Zeichenfolge \< "kein \> Hintergrund" zurückgegeben. 
+Wenn die Seite, für die Sie die Funktion verwenden, keine Hintergrundseite hat, wird die Zeichenfolge " \<no background\> " zurückgegeben. 
   
 Wenn Sie einen ungültigen Sprachencode eingeben, wird die lokale Sprache verwendet. 
   

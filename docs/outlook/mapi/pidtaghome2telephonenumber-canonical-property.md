@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagHome2TelephoneNumber
 api_type:
 - HeaderDef
 ms.assetid: 9755c342-87ba-47bb-9970-91f7eb796b4d
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 84fb0acd2d7dd0cdd5be7074d3a71eb2d4dbd807
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: e8038f43f9e322da2446d5fdf2a733969535b6d7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316100"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59563469"
 ---
 # <a name="pidtaghome2telephonenumber-canonical-property"></a>PidTagHome2TelephoneNumber (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32316100"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine sekundäre Telefonnummer am Empfänger zu Hause. 
+Enthält eine sekundäre Telefonnummer an der Startseite des Empfängers. 
   
 |||
 |:-----|:-----|
@@ -34,9 +34,9 @@ Enthält eine sekundäre Telefonnummer am Empfänger zu Hause.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-E-Mail-Benutzer  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaften stellen Identifikations- und Zugriffsinformationen für einen Empfänger zur Verfügung. Sie werden vom Empfänger und seiner Organisation definiert. 
+Diese Eigenschaften bieten Identifikations- und Zugriffsinformationen für einen Empfänger. Sie werden vom Empfänger und seiner Organisation definiert. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,7 +44,7 @@ Diese Eigenschaften stellen Identifikations- und Zugriffsinformationen für eine
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
@@ -58,11 +58,11 @@ Diese Eigenschaften stellen Identifikations- und Zugriffsinformationen für eine
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -70,9 +70,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

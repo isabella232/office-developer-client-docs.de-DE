@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251491
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a374fe7d-7302-5365-81ab-64f5474d9d5c
 description: Rundet eine Zahl auf die Genauigkeit, die durch numberofdigits dargestellt wird.
-ms.openlocfilehash: 6795cbc4d99e293da06c0ec369d2cefb84f9f5b5
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: e004542ba0cd8b804893698045d3f9d67737b520
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439968"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59554075"
 ---
 # <a name="round-function-visioshapesheet"></a>ROUND-Funktion (VisioShapeSheet)
 
-Rundet eine Zahl auf die Genauigkeit, die durch *numberofdigits dargestellt wird.* 
+Rundet eine Zahl auf die Genauigkeit, die durch  *numberofdigits*  dargestellt wird. 
   
 ## <a name="syntax"></a>Syntax
 
@@ -31,9 +31,9 @@ ROUND(** *number* **, ** *numberofdigits* ** )
 | _Anzahl_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die zu rundende Zahl.  <br/> |
 | _numberofdigits_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die Anzahl der Dezimalstellen für den Grad der Genauigkeit.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Wenn  _numberofdigits_ größer als 0 ist, wird  _zahl_  _durch numberofdigits_ rechts neben dem Dezimalkomma gerundet. Wenn  _numberofdigits_ 0 ist,  _wird zahl_ auf eine ganze Zahl gerundet. Wenn  _numberofdigits_ kleiner als 0 ist, wird  _zahl_ links vom Dezimalkomma  _durch numberofdigits_ gerundet. 
+Wenn  _Numberofdigits_ größer als 0 ist, wird die  _Zahl_ um  _numberofdigits_ rechts neben dem Dezimaltrennzeichen gerundet. Wenn  _Numberofdigits_ 0 ist, wird  _Zahl_ auf eine ganze Zahl gerundet. Wenn  _Numberofdigits_ kleiner als 0 ist, wird die  _Zahl_ um  _numberofdigits_ links neben dem Dezimaltrennzeichen gerundet. 
   
 ## <a name="example-1"></a>Beispiel 1
 

@@ -7,22 +7,22 @@ ms.topic: reference
 f1_keywords:
 - xlGetInst
 keywords:
-- xlgetinst-Funktion [excel 2007]
-localization_priority: Normal
+- Xlgetinst-Funktion [excel 2007]
+ms.localizationpriority: medium
 ms.assetid: 631a8f4e-ea7c-4743-9ee1-b2233fd7d98d
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: e113ddbf55e2b4651d578549802c44e2c6413a18
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 1346eb97fb70912c5acfb49bebffa016e05a17ab
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33428130"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572340"
 ---
 # <a name="xlgetinst"></a>xlGetInst
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Gibt das Instanzhandle der Instanz des Microsoft Excel, die derzeit eine DLL aufruft.
+Gibt das Instanzenhandle der Instanz von Microsoft Excel zurück, die derzeit eine DLL aufruft.
   
 ```cs
 Excel4(xlGetInst, LPXLOPER pxRes, 0); /* returns low part only */
@@ -35,20 +35,20 @@ Diese Funktion hat keine Argumente.
   
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-Das Instanzhandle (**xltypeInt**) wird im **Val.w-Feld** angezeigt. 
+Das Instanzhandle (**xltypeInt**) wird im **Feld val.w** angezeigt. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Funktion kann verwendet werden, um zwischen mehreren ausgeführten Instanzen von Excel, die die DLL aufrufen, zu unterscheiden.
+Diese Funktion kann verwendet werden, um zwischen mehreren ausgeführten Instanzen von Excel zu unterscheiden, die die DLL aufrufen.
   
-Wenn Sie diese Funktion mithilfe von [Excel4](excel4-excel12.md) oder [Excel4v](excel4v-excel12v.md)aufrufen, ist die zurückgegebene XLOPER-Ganzzahlvariable eine signierte 16-Bit-Short-Int. Dies kann nur die niedrigen 16 Bit des 32-Bit-Windows enthalten. Ab Excel 2007 ist die ganzzahlige Variable des **XLOPER12** ein signiertes 32-Bit-Int und enthält daher das gesamte Handle, ohne dass alle geöffneten Fenster durch iteriert werden müssen. 
+Wenn Sie diese Funktion mit [Excel4](excel4-excel12.md) oder [Excel4v](excel4v-excel12v.md)aufrufen, ist die zurückgegebene XLOPER-Ganzzahlvariable eine signierte 16-Bit-Kurzformatierung. Dies kann nur die niedrigen 16 Bits des 32-Bit-Windows-Handles enthalten. Ab Excel 2007 ist die Ganzzahlvariable von **XLOPER12** ein signiertes 32-Bit-Int und enthält daher das gesamte Handle, sodass alle geöffneten Fenster nicht durchlaufen werden müssen. 
   
 > [!IMPORTANT]
-> Wenn die **xlGetInst-Funktion** mit der 64-Bit-Version von Microsoft Excel verwendet wird, kann die Funktion fehlschlagen. Dies liegt daran, dass der **xltypeInt-Werttyp** nicht breit genug ist, um den 64-Bit-Long-Handle zu halten, der von Excel in diesem Fall zurückgegeben wird. Zu diesem Zweck wurde Excel 2010 eine neue Funktion namens [xlGetInstPtr](xlgetinstptr.md)eingeführt, die sowohl mit der 32-Bit- als auch der 64-Bit-Version von Excel. 
+> Wenn die **xlGetInst-Funktion** mit der 64-Bit-Version von Microsoft Excel verwendet wird, schlägt die Funktion fehl. Dies liegt daran, dass der **XltypeInt-Werttyp** nicht breit genug ist, um den 64-Bit-Long-Handle zu speichern, der von Excel in diesem Fall zurückgegeben wird. Zu diesem Zweck wurde Excel 2010 eine neue Funktion namens [xlGetInstPtr](xlgetinstptr.md)eingeführt, die sowohl mit der 32-Bit- als auch der 64-Bit-Version von Excel ordnungsgemäß ausgeführt wird. 
   
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel wird die Instanz der letzten Kopie von Excel, die sie aufgerufen hat, mit der aktuellen Kopie von Excel, die sie aufgerufen hat, verglichen. Wenn sie identisch sind, wird 1 zurückgegeben. Andern falls nicht, wird 0 zurückgegeben. Wenn die Funktion fehlschlägt, gibt sie -1 zurück.
+Im folgenden Beispiel wird die Instanz der letzten Kopie von Excel, die sie aufgerufen hat, mit der aktuellen Kopie von Excel verglichen, die sie aufgerufen hat. Wenn sie identisch sind, wird 1 zurückgegeben. ist dies nicht der Fehler, wird 0 zurückgegeben. wenn die Funktion fehlschlägt, wird -1 zurückgegeben.
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   

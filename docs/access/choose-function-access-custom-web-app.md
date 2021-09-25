@@ -3,15 +3,15 @@ title: Choose-Funktion (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 70c1ac24-a28f-4401-91d3-61129578bebd
 description: Gibt das Element am angegebenen Index aus einer Liste von Werten zurück.
-ms.openlocfilehash: e44655b9c2f4055f1f3dc57befa8adc6884c43b6
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 3b2ce27b0bd43c2db1d28f90a0ffbd5c2c206496
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33414116"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59573334"
 ---
 # <a name="choose-function-access-custom-web-app"></a>Choose-Funktion (benutzerdefinierte Access-Web-App)
 
@@ -28,13 +28,13 @@ Die **Choose-Funktion** enthält die folgenden Argumente.
   
 |**Argumentname**|**Beschreibung**|
 |:-----|:-----|
-| *IndexNumber*  <br/> |Ein ganzzahliger Ausdruck, der einen 1-basierten Index in der Liste der folgenden Elemente darstellt.  <br/> |
+| *IndexNumber*  <br/> |Ein ganzzahliger Ausdruck, der einen 1-basierten Index in der Liste der darauf folgenden Elemente darstellt.  <br/> |
 | *Wert*  <br/> |Liste der Werte eines beliebigen Datentyps.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Wenn die  *bereitgestellte IndexNumber*  keine ganze Zahl ist, wird der Wert implizit in eine ganze Zahl konvertiert. 
+Wenn es sich bei der angegebenen  *IndexNumber*  nicht um eine ganze Zahl handelt, wird der Wert implizit in eine ganze Zahl konvertiert. 
   
-Wenn der Indexwert die Grenzen des Wertearrays überschreitet, gibt **Choose NULL** zurück. 
+Wenn der Indexwert die Grenzen des Arrays von Werten überschreitet, **gibt Choose** NULL zurück. 
   
 

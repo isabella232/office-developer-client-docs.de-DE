@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251471
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ff59ab04-a589-cf9e-db3b-20658a7dffdc
-description: Öffnet ein Microsoft Visio Dokument, wenn es noch nicht geöffnet ist, und aktiviert das Dokumentfenster.
-ms.openlocfilehash: 5a89a658e560d144007ec19796de82b9949bea82
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Öffnet ein Microsoft Visio-Dokument, falls es noch nicht geöffnet ist, und aktiviert das Dokumentfenster.
+ms.openlocfilehash: f65309e28c102c8c222f16d164569d7e1b0f3924
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33419576"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59554334"
 ---
 # <a name="openfile-function"></a>OPENFILE Function
 
-Öffnet ein Microsoft Visio Dokument, wenn es noch nicht geöffnet ist, und aktiviert das Dokumentfenster.
+Öffnet ein Microsoft Visio-Dokument, falls es noch nicht geöffnet ist, und aktiviert das Dokumentfenster.
   
 ## <a name="syntax"></a>Syntax
 
@@ -28,9 +28,9 @@ ms.locfileid: "33419576"
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _filename_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Name der Datei, einschließlich des Dateipfads, den Sie öffnen möchten.  <br/> |
+| _Dateiname_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Name der Datei, einschließlich des Dateipfads, den Sie öffnen möchten.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Es können mehrere OPENFILE-Funktionsaufrufe in eine Warteschlange gestellt und in einer ausgewerteten Reihenfolge ausgeführt werden. Falls das aktuelle Visio-Dokument für die visuelle Bearbeitung innerhalb einer anderen Anwendung geöffnet ist, wird eine neue Visio-Instanz mit dem angeforderten Dateinamen gestartet. 
   

@@ -4,29 +4,29 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3c39b7f7-1cd7-4e0d-946c-356705194583
-description: Bestimmt den Drehwinkel entlang der Z-Achse in Grad (0,0 bis 359,9).
-ms.openlocfilehash: 8cabf6995b523cdbd91e7ac54085ad02a2521191
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Bestimmt den Drehwinkel entlang der Z-Achse in Grad (0,0 - 359,9).
+ms.openlocfilehash: e698304c360e7357d8c1bde3c5aebd4da99d0c11
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439695"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59554082"
 ---
 # <a name="rotationzangle-cell-3-d-rotation-properties-section"></a>Zelle "RotationZAngle" (Abschnitt "3D Rotation Properties")
 
-Bestimmt den Drehwinkel entlang der Z-Achse in Grad (0,0 bis 359,9).
+Bestimmt den Drehwinkel entlang der Z-Achse in Grad (0,0 - 359,9).
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Verwenden Sie zum Erhalten eines Verweises auf die **RotationZAngle-Zelle** anhand des Namens aus einer anderen Formel, nach dem Wert des **N-Attributs** eines **Cell-Elements** oder aus einem Programm mit der **CellsU-Eigenschaft:** 
+Um einen Verweis auf die **Zelle RotationZAngle** anhand des Namens aus einer anderen Formel, anhand des Werts des **N-Attributs** eines **Cell-Elements** oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |RotationZAngle  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die **RotationZAngle-Zelle** nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die **Zelle "RotationZAngle"** anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

@@ -4,18 +4,18 @@ manager: soliver
 ms.date: 12/08/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c9a80ad3-6311-fe07-b6f7-9fd63424753b
-ms.openlocfilehash: cd9d4dffd83e1995319b0f0d661435fedb78f28c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 78419e6d4e6e8d4fd44cd76cf5ae542e7231007b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32317499"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572235"
 ---
 # <a name="ifreebusydata"></a>IFreeBusyData
 
-Ruft für einen bestimmten Benutzer einen Zeitraum ab und legt diesen fest und gibt eine Schnittstelle zum Aufzählen von Frei/Gebucht-Datenblöcken innerhalb dieses Zeitbereichs zurück.
+Ruft für einen bestimmten Benutzer einen Zeitraum ab und legt diesen fest und gibt eine Schnittstelle zum Aufzählen von Frei/Gebucht-Datenblöcken innerhalb dieses Zeitraums zurück.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -25,23 +25,23 @@ Ruft für einen bestimmten Benutzer einen Zeitraum ab und legt diesen fest und g
 |Bereitgestellt von:  <br/> |Frei/Gebucht-Anbieter  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IFreeBusyData  <br/> |
    
-## <a name="vtable-order"></a>Vtable-Reihenfolge
+## <a name="vtable-order"></a>VTable-Reihenfolge
 
 |||
 |:-----|:-----|
-|[Platzhalter1](ifreebusydata-placeholder1.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-|[EnumBlocks](ifreebusydata-enumblocks.md) <br/> |Ruft eine Schnittstelle ab, die Frei/Gebucht-Datenblöcke für einen Benutzer innerhalb eines angegebenen Zeitbereichs aufzählt.  <br/> |
-|[Platzhalter2](ifreebusydata-placeholder2.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-|[Platzhalter3](ifreebusydata-placeholder3.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-|[Platzhalter4](ifreebusydata-placeholder4.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-|[Platzhalter5](ifreebusydata-placeholder5.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[Platzhalter1](ifreebusydata-placeholder1.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[EnumBlocks](ifreebusydata-enumblocks.md) <br/> |Ruft eine Schnittstelle ab, die Frei/Gebucht-Datenblöcke für einen Benutzer innerhalb eines angegebenen Zeitraums aufzählt.  <br/> |
+|[Platzhalter2](ifreebusydata-placeholder2.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[Platzhalter3](ifreebusydata-placeholder3.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[Placeholder4](ifreebusydata-placeholder4.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[Platzhalter5](ifreebusydata-placeholder5.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
 |[SetFBRange](ifreebusydata-setfbrange.md) <br/> |Legt den Zeitraum für eine Aufzählung von Frei/Gebucht-Datenblöcken für einen Benutzer fest.  <br/> |
-|[Platzhalter6](ifreebusydata-placeholder6.md) <br/> | *Dieses Element ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
-|[GetFBPublishRange](ifreebusydata-getfbpublishrange.md) <br/> |Ruft einen vordefinierten Zeitbereich für eine Aufzählung von Frei/Gebucht-Datenblöcken für einen Benutzer ab.  <br/> |
+|[Platzhalter6](ifreebusydata-placeholder6.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
+|[GetFBPublishRange](ifreebusydata-getfbpublishrange.md) <br/> |Ruft einen vordefinierten Zeitraum für eine Aufzählung von Frei/Gebucht-Datenblöcken für einen Benutzer ab.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die meisten Mitglieder in dieser Schnittstelle sind Platzhalter, die für die interne Verwendung von Outlook reserviert sind und änderungen unterliegen. Frei/Gebucht-Anbieter dürfen sie nur wie angegeben implementieren und geben nur die angegebenen Rückgabewerte zurück.
+Die meisten Elemente in dieser Schnittstelle sind Platzhalter, die für die interne Verwendung von Outlook reserviert sind, und können geändert werden. Frei/Gebucht-Anbieter müssen sie nur wie angegeben implementieren und nur die angegebenen Rückgabewerte zurückgeben.
   
 ## <a name="see-also"></a>Siehe auch
 

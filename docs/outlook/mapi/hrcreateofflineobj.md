@@ -5,21 +5,21 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 04d57c1d-ce91-42ce-9f0f-00563092f6f4
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 0a34c441a473154a43a107b4236ccc259d327dba
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 6a4f547ad55270eb3a2f4ec0ddb398c2d96fd257
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33414389"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59571941"
 ---
 # <a name="hrcreateofflineobj"></a>HrCreateOfflineObj
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
- Erstellt ein MAPI-Offlineobjekt, das vom Anbieter und Speicher verwendet wird, um MAPI zu benachrichtigen, wenn das Objekt online und offline geht. 
+ Erstellt ein MAPI-Offlineobjekt, das vom Anbieter und Vom Store verwendet wird, um die MAPI zu benachrichtigen, wenn das Objekt online und offline geht. 
   
 |||
 |:-----|:-----|
@@ -43,7 +43,7 @@ _ulFlags_
     
 _pCreateInfo_
   
-> [in] Ein Zeiger auf eine **MAPIOFFLINE_CREATEINFO,** die die informationen enthält, die zum Erstellen des Offlineobjekts erforderlich sind. 
+> [in] Ein Zeiger auf eine **MAPIOFFLINE_CREATEINFO** Struktur, die die zum Erstellen des Offlineobjekts erforderlichen Informationen enthält. 
     
 _ppOffline_
   

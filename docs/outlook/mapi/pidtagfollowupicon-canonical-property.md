@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagFollowupIcon
 api_type:
 - HeaderDef
 ms.assetid: 374cef41-141a-491b-8dd1-eaf1a2044204
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 205b6ddc2b65297d69a2223aab7b745b223ee553
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 8fb1a570f2bad075c69a9328427de53e86fab938
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316282"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59563553"
 ---
 # <a name="pidtagfollowupicon-canonical-property"></a>PidTagFollowupIcon (kanonische Eigenschaft)
 
@@ -25,28 +25,28 @@ ms.locfileid: "32316282"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt die Kennzeichenfarbe des Message-Objekts an.
+Gibt die Flagfarbe des Nachrichtenobjekts an.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_FOLLOWUP_ICON  <br/> |
 |Kennung:  <br/> |0x1095  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |Umbenennen des Nachrichtenordners  <br/> |
+|Bereich:  <br/> |Nachrichtenordner umbenennen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft darf nur vorhanden sein, wenn der Wert der **PR_FLAG_STATUS** ([PidTagFlagStatus](pidtagflagstatus-canonical-property.md))-Eigenschaft auf "followupFlagged" festgelegt ist oder das Message-Objekt ein besprechungsbezogenes Objekt ist. Diese Eigenschaft sollte für ein Aufgabenobjekt nicht vorhanden sein. Wenn sie für andere Nachrichtenobjekte festgelegt ist, muss diese Eigenschaft auf einen der folgenden Werte festgelegt werden.
+Diese Eigenschaft darf nur vorhanden sein, wenn der Wert der **PR_FLAG_STATUS** ([PidTagFlagStatus](pidtagflagstatus-canonical-property.md)) -Eigenschaft auf "followupFlagged" festgelegt ist oder das Nachrichtenobjekt ein Besprechungsobjekt ist. Diese Eigenschaft sollte für ein Aufgabenobjekt nicht vorhanden sein. Wenn sie für andere Nachrichtenobjekte festgelegt wird, muss diese Eigenschaft auf einen der folgenden Werte festgelegt werden.
   
 |**Numerischer Wert**|**Name**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Nicht vorhanden  <br/> |Nicht zutreffend  <br/> |Keine Farbe  <br/> |
-|1  <br/> |followupIcon1  <br/> |Lila-Flag  <br/> |
-|2  <br/> |followupIcon2  <br/> |Orangefarbenes Flag  <br/> |
-|3  <br/> |followupIcon3  <br/> |Grünes Flag  <br/> |
-|4   <br/> |followupIcon4  <br/> |Gelbes Flag  <br/> |
-|5   <br/> |followupIcon5  <br/> |Blaues Flag  <br/> |
-|6   <br/> |followupIcon6  <br/> |Rotes Flag  <br/> |
+|Nicht vorhanden  <br/> |-  <br/> |Keine Farbe  <br/> |
+|1  <br/> |followupIcon1  <br/> |Lila  <br/> |
+|2  <br/> |followupIcon2  <br/> |Orangefarbene Kennzeichnung  <br/> |
+|3  <br/> |followupIcon3  <br/> |Grüne Kennzeichnung  <br/> |
+|4   <br/> |followupIcon4  <br/> |Gelbe Kennzeichnung  <br/> |
+|5  <br/> |followupIcon5  <br/> |Blaue Kennzeichnung  <br/> |
+|6   <br/> |followupIcon6  <br/> |Rote Kennzeichnung  <br/> |
    
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -54,7 +54,7 @@ Diese Eigenschaft darf nur vorhanden sein, wenn der Wert der **PR_FLAG_STATUS** 
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXOFLAG]](https://msdn.microsoft.com/library/f1e50be4-ed30-4c2a-b5cb-8ff3aaaf9b91%28Office.15%29.aspx)
   
@@ -64,11 +64,11 @@ Diese Eigenschaft darf nur vorhanden sein, wenn der Wert der **PR_FLAG_STATUS** 
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -76,9 +76,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

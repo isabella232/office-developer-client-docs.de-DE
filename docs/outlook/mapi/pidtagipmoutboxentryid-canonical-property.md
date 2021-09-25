@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagIpmOutboxEntryId
 api_type:
 - HeaderDef
 ms.assetid: fa03d819-2621-4990-80ae-4140b83a8a85
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ec73a456f87b18905c180803d26720ef09254c7e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: b6d5aa773dbcabddf01547495c5df6e7826abbc7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33405058"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59599959"
 ---
 # <a name="pidtagipmoutboxentryid-canonical-property"></a>PidTagIpmOutboxEntryId (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "33405058"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält die Eintrags-ID des Standardmäßigen IpM-Postfachordners (Interpersonal Message). 
+Enthält den Eintragsbezeichner des standardmäßigen Posteingangsordners für zwischenmenschliche Nachrichten (Interpersonal Message, IPM). 
   
 |||
 |:-----|:-----|
@@ -34,9 +34,9 @@ Enthält die Eintrags-ID des Standardmäßigen IpM-Postfachordners (Interpersona
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Ordner  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Ausgehende Nachrichten werden in der Regel im Ordner "Outbox" erstellt. Interpersonale Nachrichten sollten in diesem Ordner zur Übermittlung platziert werden. 
+Ausgehende Nachrichten werden in der Regel im Ordner "Postausgang" erstellt. Zwischenmenschliche Nachrichten sollten in diesem Ordner zur Übermittlung abgelegt werden. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,11 +44,11 @@ Ausgehende Nachrichten werden in der Regel im Ordner "Outbox" erstellt. Interper
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

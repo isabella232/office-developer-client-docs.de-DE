@@ -5,38 +5,38 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 17a2fa12-a7ef-4a95-9875-72ec6f8ceac9
 description: Stellt eine Person im sozialen Netzwerk dar.
-ms.openlocfilehash: 0ad129b0fc15fc9f3ccdf1cff7d8519bb07b024e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ab2182a78f87cb32706a11d13f970f18e635cf6a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407011"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59590443"
 ---
 # <a name="isocialperson--iunknown"></a>ISocialPerson : IUnknown
 
 Stellt eine Person im sozialen Netzwerk dar.
   
-## <a name="members"></a>Elemente
+## <a name="members"></a>Members
 
-In der folgenden Tabelle sind die Elemente aufgeführt, die auf der **ISocialPerson-Schnittstelle verfügbar** sind. 
+In der folgenden Tabelle sind die Elemente aufgeführt, die auf der **ISocialPerson-Schnittstelle** verfügbar sind. 
   
 |**Name**|**Membertyp**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[GetActivities](isocialperson-getactivities.md) <br/> |Methode  <br/> |Diese Methode ist seit dem Social Connector 2013 Outlook veraltet.  <br/> |
+|[GetActivities](isocialperson-getactivities.md) <br/> |Methode  <br/> |Diese Methode ist seit Outlook Connector für soziale Netzwerke 2013 veraltet.  <br/> |
 |[GetDetails](isocialperson-getdetails.md) <br/> |Methode  <br/> |Ruft eine Zeichenfolge ab, die Details für die Person darstellt, z. B. den Vornamen, den Nachnamen und eine URL zu einem Profilbild.  <br/> |
 |[GetFriendsAndColleagues](isocialperson-getfriendsandcolleagues.md) <br/> |Methode  <br/> |Ruft eine Zeichenfolge ab, die eine Auflistung von Personen darstellt.  <br/> |
 |[GetFriendsAndColleaguesIDs](isocialperson-getfriendsandcolleaguesids.md) <br/> |Methode  <br/> |Diese Methode wird derzeit nicht unterstützt.  <br/> |
-|[GetPicture](isocialperson-getpicture.md) <br/> |Methode  <br/> |Ruft ein Array von Bytes ab, das die Bildressource für die Person enthält.  <br/> |
-|[GetStatus](isocialperson-getstatus.md) <br/> |Methode  <br/> |Diese Methode wird derzeit nicht unterstützt.  <br/> |
+|[GetPicture](isocialperson-getpicture.md) <br/> |Methode  <br/> |Ruft ein Bytearray ab, das die Bildressource für die Person enthält.  <br/> |
+|[Getstatus](isocialperson-getstatus.md) <br/> |Methode  <br/> |Diese Methode wird derzeit nicht unterstützt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Ein Outlook (Social Connector, OSC) muss diese Schnittstelle implementieren, um mit dem OSC zu kommunizieren.
+Ein anbieter für Outlook Connector für soziale Netzwerke (SOCIAL Connector, OSC) muss diese Schnittstelle für die Kommunikation mit dem OSC implementieren.
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Outlook Schnittstellen für Anbieter für soziale Verbindungen](outlook-social-connector-provider-interfaces.md)
+- [Outlook Anbieterschnittstellen für Connector für soziale Netzwerke](outlook-social-connector-provider-interfaces.md)
 

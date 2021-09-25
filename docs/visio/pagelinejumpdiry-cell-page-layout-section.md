@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm770
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f73cc157-b332-279b-f7cf-d5a090bc09a4
 description: Bestimmt die Richtung von Liniensprüngen auf vertikalen dynamischen Verbindern auf dem Zeichenblatt, für die Sie keine lokale Liniensprungrichtung festgelegt haben.
-ms.openlocfilehash: 21ad1d95fd83780f31778dbc8bb70f9bdb4b922d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 5265acb3b8378bf5081d440aaba4608c85cf798b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33414676"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59554250"
 ---
 # <a name="pagelinejumpdiry-cell-page-layout-section"></a>Zelle "PageLineJumpDirY" (Abschnitt "Page Layout")
 
@@ -26,15 +26,15 @@ Bestimmt die Richtung von Liniensprüngen auf vertikalen dynamischen Verbindern 
 | 1  <br/> | Nach links  <br/> |**visLOJumpDirYLeft** <br/> |
 | 2  <br/> | Nach rechts  <br/> |**visLOJumpDirYRight** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Um einen Verweis auf die Zelle PageLineJumpDirY anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Um einen Verweis auf die Zelle "PageLineJumpDirY" anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | PageLineJumpDirY  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle PageLineJumpDirY nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle PageLineJumpDirY anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

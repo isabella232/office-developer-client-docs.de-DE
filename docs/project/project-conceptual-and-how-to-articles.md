@@ -3,35 +3,35 @@ title: Project-Artikel zu Konzepten und Gewusst-wie-Artikel
 manager: soliver
 ms.date: 09/15/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: da7f2b16-cbd6-4a98-b577-31841e60a656
-description: Links zu Informationen in diesem Abschnitt zu den wichtigsten Teilen der Project 2013-Plattform, erste Schritte mit der CSOM-Entwicklung mithilfe von JavaScript und den .NET Framework, Aufgabenbereich-Add-Ins in Project Professional 2013, der Project Server-Schnittstelle und dem OData-Berichterstellungsdienst.
-ms.openlocfilehash: e09df20f435816444b656927d4f6f0ebf6c38731
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: Hier finden Sie Links zu Informationen in diesem Abschnitt über die wichtigsten Teile der Project 2013-Plattform, die ersten Schritte mit der CSOM-Entwicklung mithilfe von JavaScript und der .NET Framework, Aufgabenbereich-Add-Ins in Project Professional 2013, die Project Serverschnittstelle und den OData-Berichtsdienst.
+ms.openlocfilehash: d6287d185187f10d0fa371c2a1f446bc62c371d0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301519"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59563112"
 ---
 # <a name="project-conceptual-and-how-to-articles"></a>Project-Artikel zu Konzepten und Gewusst-wie-Artikel
 
-Links zu Informationen in diesem Abschnitt zu den wichtigsten Teilen der Project 2013-Plattform, erste Schritte mit der CSOM-Entwicklung mithilfe von JavaScript und den .NET Framework, Aufgabenbereich-Add-Ins in Project Professional 2013, der Project Server-Schnittstelle und dem OData-Berichterstellungsdienst.
+Hier finden Sie Links zu Informationen in diesem Abschnitt über die wichtigsten Teile der Project 2013-Plattform, die ersten Schritte mit der CSOM-Entwicklung mithilfe von JavaScript und der .NET Framework, Aufgabenbereich-Add-Ins in Project Professional 2013, die Project Serverschnittstelle und den OData-Berichtsdienst.
   
-Project Server 2013 basiert auf dem Project Server Interface (PSI)-Webdienstframework, das in Office Project Server 2007 eingeführt wurde. Die Project Server 2013-Plattform wird mit der .NET Framework 4 erstellt. Project Web App erfordert SharePoint Server 2013 als Basis für die Funktionalität neuer Features, z. B. das clientseitige Objektmodell (CSOM) für den Zugriff auf Project Server in der Cloud, Version 4 von Windows Workflow Foundation (WF4) und den OData-Dienst für die Berichtsdatenbanktabellen. Project Professional 2013 kann den neuen Aufgabenbereich Office Add-Ins verwenden.
+Project Server 2013 basiert auf dem in Office Project Server 2007 eingeführten PSI-Webdienstframework (Project Server Interface). Die Project Server 2013-Plattform wird mit dem .NET Framework 4 erstellt. Project Web App erfordert SharePoint Server 2013 als Basis für die Funktionalität neuer Features, z. B. das clientseitige Objektmodell (CSOM) für den Zugriff auf Project Server in der Cloud, Version 4 der Windows Workflow Foundation (WF4) und den OData-Dienst für die Berichtsdatenbanktabellen. Project Professional 2013 kann der neue Aufgabenbereich Office-Add-Ins verwendet werden.
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
-- [Updates für Entwickler in Project 2013](updates-for-developers-in-project-2013.md) beschreiben Erweiterbarkeitsfeatures für Project-Entwicklung und listet veraltete Features auf, die nicht für die Neuentwicklung verwendet werden sollten. 
+- [Updates für Entwickler in Project 2013](updates-for-developers-in-project-2013.md) beschreiben Erweiterungsfeatures für Project Entwicklung und listet veraltete Features auf, die nicht für die Neuentwicklung verwendet werden sollten. 
   
-- [Project Server 2013-Architektur](project-server-2013-architecture-and-programmability.md) und -Programmierbarkeit beschreibt die wichtigsten Teile der Project 2013-Plattform, einschließlich der Project-Clients und Project Server. 
+- [Project Server 2013-Architektur und -Programmierbarkeit](project-server-2013-architecture-and-programmability.md) beschreibt die wichtigsten Teile der Project 2013-Plattform, einschließlich der Project Clients und Project Servers. 
   
-- [Das clientseitige Objektmodell (CSOM) für Project 2013](client-side-object-model-csom-for-project-2013.md) enthält Themen für erste Schritte mit der CSOM-Entwicklung mithilfe von JavaScript und .NET Framework. 
+- [Das clientseitige Objektmodell (CSOM) für Project 2013](client-side-object-model-csom-for-project-2013.md) enthält Themen für die ersten Schritte mit der CSOM-Entwicklung mithilfe von JavaScript und der .NET Framework. 
   
-- [Project Clientprogrammierung](project-client-programming.md) enthält eine Einführung in Aufgabenbereich-Add-Ins in Project Professional 2013. Ein separates SDK enthält Artikel und Verweise für Add-Ins in Project und den anderen Office 2013-Clients. Weitere Informationen finden Sie in [der Office-Add-Ins-Entwicklerdokumentation.](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins) 
+- [Project Clientprogrammierung](project-client-programming.md) enthält eine Einführung in Aufgabenbereich-Add-Ins in Project Professional 2013. Ein separates SDK enthält Artikel und Referenzen für Add-Ins in Project und den anderen Office 2013-Clients. Weitere Informationen finden Sie in der [Entwicklerdokumentation Office Add-Ins.](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins) 
   
-- [Project](project-programming-tasks.md) Programmieraufgaben zeigt, wie Sie Add-Ins für Project 2013 entwickeln, Workflows für die Bedarfsverwaltung erstellen, das Menüband Project Web App anpassen, Webparts erstellen und vieles mehr. 
+- [Project Programmieraufgaben](project-programming-tasks.md) zeigt, wie Sie Add-Ins für Project 2013 entwickeln, Workflows für die Bedarfsverwaltung erstellen, das Project Web App-Menüband anpassen, Webparts erstellen und vieles mehr. 
   
-- [Project 2013-Programmierreferenzen](project-2013-programming-references.md) enthält Informationen zur Entwicklung mit der Project Server Interface (PSI), Fehlercodes und dem ProjectData-OData-Dienst. 
+- [Project 2013-Programmierreferenzen](project-2013-programming-references.md) enthalten Informationen zur Entwicklung mit der Project Serverschnittstelle (PSI), Fehlercodes und dem ProjectData-OData-Dienst. 
   
 ## <a name="see-also"></a>Siehe auch
 

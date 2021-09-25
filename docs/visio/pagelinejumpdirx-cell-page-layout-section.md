@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251656
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 77892ec7-4c6a-78a5-5af4-5b6be7709e77
 description: Bestimmt die Richtung von Liniensprüngen auf horizontalen dynamischen Verbindern auf dem Zeichenblatt, für die Sie keine lokale Liniensprungrichtung festgelegt haben.
-ms.openlocfilehash: 4e1213990877e1260cc8cecd5a55beda4592a844
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ba5a76702a9aa6cb8e999c52edd3978259475061
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33431008"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59554299"
 ---
 # <a name="pagelinejumpdirx-cell-page-layout-section"></a>Zelle "PageLineJumpDirX" (Abschnitt "Page Layout")
 
@@ -26,15 +26,15 @@ Bestimmt die Richtung von Liniensprüngen auf horizontalen dynamischen Verbinder
 | 1  <br/> | Nach oben  <br/> |**visLOJumpDirXUp** <br/> |
 | 2  <br/> | Nach unten  <br/> |**visLOJumpDirXDown** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Um einen Verweis auf die Zelle PageLineJumpDirX anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Um einen Verweis auf die Zelle "PageLineJumpDirX" anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | PageLineJumpDirX  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die PageLineJumpDirX-Zelle nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle PageLineJumpDirX anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

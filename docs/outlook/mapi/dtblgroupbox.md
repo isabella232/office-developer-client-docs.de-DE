@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.DTBLGROUPBOX
 api_type:
 - COM
 ms.assetid: 5e444b62-d6b6-4cfc-8601-d34aa004c1e6
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 324cfe9d7c412b3bb0e3150b8eec51aaeb6a0e93
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 43aeba3be0181b4e5f5a203e7d1e4d0a64ec2bbd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33438393"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601121"
 ---
 # <a name="dtblgroupbox"></a>DTBLGROUPBOX
 
@@ -25,7 +25,7 @@ ms.locfileid: "33438393"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Beschreibt ein Gruppenfeldsteuerelement, das in einem Dialogfeld verwendet wird, das aus einer Anzeigetabelle erstellt wird.
+Beschreibt ein Gruppenfeld-Steuerelement, das in einem Dialogfeld verwendet wird, das aus einer Anzeigetabelle erstellt wurde.
   
 |||
 |:-----|:-----|
@@ -41,25 +41,25 @@ typedef struct _DTBLGROUPBOX
 
 ```
 
-## <a name="members"></a>Elemente
+## <a name="members"></a>Members
 
  **ulbLpszLabel**
   
-> Position im Arbeitsspeicher der Zeichenzeichenfolge, die das Gruppenfeld begleitet. Wenn sie angezeigt wird, wird die Beschriftung oben links im Feld angezeigt.
+> Position im Speicher der Zeichenzeichenfolge, die das Gruppenfeld begleitet. Wenn die Bezeichnung angezeigt wird, wird sie auf der linken oberen Seite des Felds angezeigt.
     
  **ulFlags**
   
-> Bitmaske von Flags, die verwendet werden, um das Format der Bezeichnung zu bestimmen, auf das das **ulbLpszLabel-Element** verweist. Das folgende Flag kann festgelegt werden: 
+> Bitmaske von Flags, die zum Festlegen des Formats der Bezeichnung verwendet werden, auf die vom **ulbLpszLabel-Element** verwiesen wird. Das folgende Kennzeichen kann festgelegt werden: 
     
 MAPI_UNICODE 
   
-> Die Bezeichnung ist im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befindet sich die Bezeichnung im ANSI-Format.
+> Die Beschriftung hat das Unicode-Format. Wenn das MAPI_UNICODE-Kennzeichen nicht festgelegt ist, hat die Bezeichnung das ANSI-Format.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Eine **DTBLGROUPBOX-Struktur** beschreibt ein Gruppenfeldsteuerelement, das zum visuellen Zuordnen anderer Steuerelemente im Dialogfeld verwendet wird. Die Hervorhebungstechnik umfasst das Um umgeben der anderen Steuerelemente durch ein Feld. 
+Eine **DTBLGROUPBOX-Struktur** beschreibt ein Gruppenfeld-Steuerelement, das verwendet wird, um andere Steuerelemente im Dialogfeld visuell zuzuordnen. Die Hervorhebungstechnik umfasst die Umrandung der anderen Steuerelemente durch ein Feld. 
   
-Eine Übersicht über Anzeigetabellen finden Sie unter [Display Tables](display-tables.md). Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
+Eine Übersicht über Anzeigetabellen finden Sie unter ["Anzeigetabellen".](display-tables.md) Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle.](display-table-implementation.md)
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagContactAddressBookSortFlag
 api_type:
 - HeaderDef
 ms.assetid: dcbd12b4-4b50-4be6-a201-45e5d4611ce0
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: bfdb98d5a5b768fad162d60a79cb1f541dc32866
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 0f1751fde87427d87d84b123282491dac53aa733
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33437231"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59600386"
 ---
 # <a name="pidtagcontactaddressbooksortflag-canonical-property"></a>PidTagContactAddressBookSortFlag (kanonische Eigenschaft)
 
@@ -32,11 +32,11 @@ Enthält ein Flag, das TRUE ist, wenn Kontakte nach Datei unter und FALSE sortie
 |Zugeordnete Eigenschaften:  <br/> |PR_CONTAB_SORT_FLAG  <br/> |
 |Kennung:  <br/> |0x6602  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
-|Bereich:  <br/> |Kontaktadressenbuch  <br/> |
+|Bereich:  <br/> |Kontaktadressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Dies ist eine Eigenschaft in einem Abschnitt "Kontakt-Adressbuch".
+Dies ist eine Eigenschaft in einem Kontaktadressbuch-Profilabschnitt.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,11 +44,11 @@ Dies ist eine Eigenschaft in einem Abschnitt "Kontakt-Adressbuch".
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

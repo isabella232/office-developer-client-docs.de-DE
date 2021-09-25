@@ -4,48 +4,48 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7fbb4b16-fe54-42d6-803a-c9980897166d
-description: Bestimmt den Vom Abschrägungseffekt verwendeten Beleuchtungstyp.
-ms.openlocfilehash: 6d92c56b01d192c1df04eecdaca4eb915baebcae
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Bestimmt die Art der Beleuchtung, die vom Abschrägungseffekt verwendet wird.
+ms.openlocfilehash: 6cfdf61a8584753417f57df4dcdc3eedfdb4ed33
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33433962"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59554887"
 ---
 # <a name="bevellightingtype-cell-bevel-properties-section"></a>Zelle "BevelLightingType" (Abschnitt "Bevel Properties")
 
-Bestimmt den Vom Abschrägungseffekt verwendeten Beleuchtungstyp.
+Bestimmt die Art der Beleuchtung, die vom Abschrägungseffekt verwendet wird.
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
 |0  <br/> |Keine Beleuchtung  <br/> |
-|1  <br/> |Three Point  <br/> |
-|2  <br/> |Balance  <br/> |
+|1  <br/> |Drei Punkt  <br/> |
+|2  <br/> |Gleichgewicht  <br/> |
 |3  <br/> |Weich  <br/> |
-|4   <br/> |Rau  <br/> |
-|5   <br/> |Flood  <br/> |
-|6   <br/> |Kontrastieren  <br/> |
-|7   <br/> |Morning  <br/> |
+|4   <br/> |Hart  <br/> |
+|5  <br/> |Flut  <br/> |
+|6   <br/> |Kontrastierenden  <br/> |
+|7   <br/> |Morgen  <br/> |
 |8   <br/> |Sonnenaufgang  <br/> |
 |9   <br/> |Beenden  <br/> |
-|10  <br/> |Kaltschn  <br/> |
+|10  <br/> |Kühl  <br/> |
 |11  <br/> |Einfrieren  <br/> |
 |12   <br/> |Flach  <br/> |
-|13  <br/> |Two Point  <br/> |
+|13  <br/> |Zwei Punkt  <br/> |
 |14   <br/> |Leuchteffekt  <br/> |
 |15   <br/> |Heller Raum  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Um einen Verweis auf die **Zelle BevelLightingType** anhand des Namens aus einer anderen Formel, nach dem Wert des **N-Attributs** eines **Cell-Elements** oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Verwenden Sie Folgendes, um einen Verweis auf die **Zelle "BevelLightingType"** anhand des Namens aus einer anderen Formel, anhand des Werts des **N-Attributs** eines **Cell-Elements** oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |BevelLightingType  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die **Zelle "BevelLightingType"** nach Index aus einem Programm zu erhalten: 
+Um einen Verweis auf die Zelle **"BevelLightingType"** anhand des Indexes eines Programms abzurufen, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|

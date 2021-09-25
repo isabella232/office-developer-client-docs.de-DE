@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPIViewContext.GetLastError
 api_type:
 - COM
 ms.assetid: 3306e37a-2500-4281-96c3-ca0d5c81909d
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: bcd8e977d924bae170dcad27c672b963189cfa94
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 5010036c704b75638233695003dba59de21d6a0a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424427"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59600855"
 ---
 # <a name="imapiviewcontextgetlasterror"></a>IMAPIViewContext::GetLastError
 
@@ -37,17 +37,17 @@ LPMAPIERROR FAR * lppMAPIError
 
 ## <a name="parameters"></a>Parameter
 
- _hResult_
+ _Hresult_
   
-> [in] HRESULT-Datentyp, der den im vorherigen Methodenaufruf generierten Fehlerwert enthält.
+> [in] HRESULT-Datentyp, der den Fehlerwert enthält, der im vorherigen Methodenaufruf generiert wurde.
     
  _ulFlags_
   
-> [in] Bitmaske von Flags, die den Typ der zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
+> [in] Bitmaske von Flags, die den Typ der zurückgegebenen Zeichenfolgen steuert. Das folgende Kennzeichen kann festgelegt werden:
     
 MAPI_UNICODE 
   
-> Die Zeichenfolgen in der **MAPIERROR-Struktur,** die im  _lppMAPIError-Parameter_ zurückgegeben wird, sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Zeichenfolgen im ANSI-Format. 
+> Die Zeichenfolgen in der **MAPIERROR-Struktur,** die im  _Parameter lppMAPIError_ zurückgegeben werden, weisen das Unicode-Format auf. Wenn das flag MAPI_UNICODE nicht festgelegt ist, haben die Zeichenfolgen das ANSI-Format. 
     
  _lppMAPIError_
   
@@ -61,17 +61,17 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> Entweder wurde MAPI_UNICODE-Flag festgelegt, und **GetLastError** unterstützt unicode nicht, oder MAPI_UNICODE nicht festgelegt, und **GetLastError** unterstützt nur Unicode. 
+> Entweder wurde das MAPI_UNICODE-Flag festgelegt, und **GetLastError** unterstützt unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und **GetLastError** unterstützt nur Unicode. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die **IMAPIViewContext::GetLastError-Methode** stellt Informationen zu einem vorherigen Methodenaufruf zur Verfügung, der fehlgeschlagen ist. Anrufer können ihren Benutzern detaillierte Informationen zu dem Fehler bereitstellen, indem sie die Daten aus der **MAPIERROR-Struktur** in ein Dialogfeld eingeben. 
+Die **IMAPIViewContext::GetLastError-Methode** liefert Informationen zu einem vorherigen Methodenaufruf, bei dem ein Fehler aufgetreten ist. Anrufer können ihren Benutzern detaillierte Informationen zu dem Fehler bereitstellen, indem sie die Daten aus der **MAPIERROR-Struktur** in ein Dialogfeld einschließen. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Sie können die **MAPIERROR-Struktur** verwenden, auf die der  _lppMAPIError-Parameter_ verweist, wenn MAPI nur dann einen angibt, wenn **GetLastError** S_OK. Manchmal kann MAPI nicht ermitteln, was der letzte Fehler war oder hat nichts mehr über den Fehler zu melden. In diesem Fall wird stattdessen ein Zeiger auf NULL in  _lppMAPIError_ zurückgegeben. 
+Sie können die **MAPIERROR-Struktur verwenden,** auf die durch den  _lppMAPIError-Parameter_ verwiesen wird, wenn MAPI nur dann eine bereitstellt, wenn **GetLastError** S_OK zurückgibt. Manchmal kann die MAPI nicht ermitteln, was der letzte Fehler war, oder sie kann nichts mehr über den Fehler melden. In diesem Fall wird stattdessen ein Zeiger auf NULL in  _lppMAPIError_ zurückgegeben. 
   
-Weitere Informationen zur **GetLastError-Methode** finden Sie unter [MAPI Extended Errors](mapi-extended-errors.md).
+Weitere Informationen zur **GetLastError** -Methode finden Sie unter [MAPI Extended Errors](mapi-extended-errors.md).
   
 ## <a name="see-also"></a>Siehe auch
 

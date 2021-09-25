@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagInternetMailOverrideFormat
 api_type:
 - HeaderDef
 ms.assetid: 4b57dbad-19b8-4357-b8b1-11f735eafcca
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 4845c413232938319d2c6013d334137ebd2a8716
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 394ffbfd173ca2953da39629fcf80f2fbf676bdc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32358604"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59563441"
 ---
 # <a name="pidtaginternetmailoverrideformat-canonical-property"></a>PidTagInternetMailOverrideFormat (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32358604"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt die Codierungsmethode und die HTML-Inklusion für Anlagen an, die für ausgehende E-Mails festgelegt werden sollen.
+Gibt die Codierungsmethode und den HTML-Einschluss für Anlagen an, die für ausgehende E-Mails festgelegt werden sollen.
   
 |||
 |:-----|:-----|
@@ -34,9 +34,9 @@ Gibt die Codierungsmethode und die HTML-Inklusion für Anlagen an, die für ausg
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MIME  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Informationen zu den Teilabschnitten, in die diese Eigenschaft aufgebrochen wird, finden Sie unter [[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx). 
+Informationen zu den Unterabschnitten, in die diese Eigenschaft unterteilt ist, finden Sie unter [[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx). 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,7 +44,7 @@ Informationen zu den Teilabschnitten, in die diese Eigenschaft aufgebrochen wird
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
@@ -58,11 +58,11 @@ Informationen zu den Teilabschnitten, in die diese Eigenschaft aufgebrochen wird
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -70,9 +70,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

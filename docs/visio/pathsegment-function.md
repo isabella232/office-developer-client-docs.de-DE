@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 08accf3b-93ac-9dd3-85ce-34ad42e79a4f
 description: Gibt die 1-basierte Segmentnummer an der angegebenen Prozentmarke entlang des angegebenen Pfads zurück.
-ms.openlocfilehash: c4dfc4d33de1a9c1a03ef14d76103b4de0f28bc7
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8ad574a112202c2f02fce3731a470960413d3042
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33432485"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59554215"
 ---
 # <a name="pathsegment-function"></a>PATHSEGMENT Function
 
@@ -20,7 +20,7 @@ Gibt die 1-basierte Segmentnummer an der angegebenen Prozentmarke entlang des an
   
 ## <a name="syntax"></a>Syntax
 
-PATHSEGMENT(** *Section* **, ** *travel* ** ) 
+PATHSEGMENT(** *section* **, ** *travel* ** ) 
   
 ### <a name="parameters"></a>Parameter
 

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagMessageSecurityLabel
 api_type:
 - HeaderDef
 ms.assetid: aae41f1b-19bb-40c7-8564-0c87a5a4e47c
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: b6900cbacc2bea6c5519efdc4281ca98629b23bf
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 6b83c36c18adf4bdf027bf9b4d1c677a30efee13
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33425673"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59599917"
 ---
 # <a name="pidtagmessagesecuritylabel-canonical-property"></a>PidTagMessageSecurityLabel (kanonische Eigenschaft)
 
@@ -34,9 +34,9 @@ Enthält eine Sicherheitsbezeichnung für eine Nachricht.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Server  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft bietet die Grundlage, auf der **die PR_MESSAGE_TOKEN** ([PidTagMessageToken](pidtagmessagetoken-canonical-property.md)) -Eigenschaft eine Nachricht schützt. Die Zuordnung mit dem Nachrichteninhalt wird durch das Token garantiert.
+Diese Eigenschaft stellt die Basis bereit, auf der die **eigenschaft PR_MESSAGE_TOKEN** ([PidTagMessageToken](pidtagmessagetoken-canonical-property.md)) eine Nachricht schützt. Die Zuordnung zum Nachrichteninhalt wird durch das Token garantiert.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,11 +44,11 @@ Diese Eigenschaft bietet die Grundlage, auf der **die PR_MESSAGE_TOKEN** ([PidTa
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 
