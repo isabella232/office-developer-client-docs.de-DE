@@ -5,25 +5,25 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagExtendedFolderFlags
 api_type:
 - HeaderDef
 ms.assetid: e0c04f98-3d66-4ab5-ba05-69f9df539fcf
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: fe14f6ca101e6a546f99989ecc87b0c516ee5df4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 1ef34f390a3b58d805ed023862a8621d8932de0c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316352"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616467"
 ---
 # <a name="pidtagextendedfolderflags-canonical-property"></a>PidTagExtendedFolderFlags (kanonische Eigenschaft)
  
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält erweiterte Flags für einen Ordner.
+Enthält erweiterte Flags zu einem Ordner.
   
 |||
 |:-----|:-----|
@@ -32,9 +32,9 @@ Enthält erweiterte Flags für einen Ordner.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Container  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft ist ein binärer Datenstrom, der codierte Untereigenschaften für den Ordner enthält. Es ist als eine Reihe von Unterelementen mit variabler Länge formatiert. Die ersten 8 Bits des Unterelements sind ein ID-Feld, das angibt, welche Art von Kennzeichen das Unterelement darstellt. Die zweiten 8 Bit sind die Anzahl der folgenden Bytes an Daten.
+Diese Eigenschaft ist ein binärer Datenstrom, der codierte Untereigenschaften für den Ordner enthält. Es ist als eine Reihe von Untergeordneten Elementen variabler Länge formatiert. Die ersten 8 Bits des Unterelements sind ein ID-Feld, das angibt, welche Art von Flag das Unterelement darstellt. Bei den zweiten 8 Bits handelt es sich um die Anzahl der folgenden Byte an Daten.
   
 Mögliche ID-Werte sind:
   
@@ -44,25 +44,25 @@ Mögliche ID-Werte sind:
     
 - ExtendedFlags
     
-   Die Daten sind ein Vier-Byte-Wert, der wie folgt formatiert ist:
+   Bei den Daten handelt es sich um einen vier-Byte-Wert, der wie folgt formatiert ist:
     
    |**Bit**|**Beschreibung**|
    |:-----|:-----|
    |0-1  <br/> |Reserviert.  <br/> |
    |2  <br/> |Auf 0 festgelegt, wenn die Anwendung eine Richtlinienbeschreibung anzeigen soll.  <br/> |
    |3-5  <br/> |Reserviert.  <br/> |
-   |6-7  <br/> |Steuert die Anzeige der Anzahl der Nachrichten im Ordner.  <br/> 0 – Verwenden der Standardeinstellung  <br/> 1 – Verwenden der Anzahl ungelesener Nachrichten  <br/> 3 – Verwenden der Gesamtanzahl von Nachrichten  <br/> |
+   |6-7  <br/> |Steuert die Anzeige der Anzahl der Nachrichten im Ordner.  <br/> 0 – Standardeinstellung verwenden  <br/> 1 – Verwenden der Anzahl ungelesener Nachrichten  <br/> 3 – Gesamtanzahl der Nachrichten verwenden  <br/> |
    |8-31  <br/> |Reserviert.  <br/> |
    
 Reservierte Elemente können ignoriert werden, vorhandene Werte müssen jedoch beibehalten werden.
     
 - SearchFolderID
     
-   Das Datenfeld ist ein 16-Byte-Feld. Wenn die Anwendung einen beständigen Suchordner erstellt, muss sie dieses Feld für den Ordner auf denselben Wert wie die **binäre eigenschaft PR_WB_SF_TAG** ([PidTagSearchFolderId)](pidtagsearchfolderid-canonical-property.md)für die Nachricht des Suchordners festlegen.
+   Das Datenfeld ist ein 16-Byte-Feld. Wenn die Anwendung einen permanenten Suchordner erstellt, muss sie dieses Feld für den Ordner auf denselben Wert wie die binäre Eigenschaft **PR_WB_SF_TAG** ([PidTagSearchFolderId)](pidtagsearchfolderid-canonical-property.md)in der Suchordnernachricht festlegen.
     
 - ToDoFolderVersion
     
-   Das Datenfeld ist ein 4-Byte-Feld. Wenn die Anwendung den To-Do-Suchordner erstellt, muss sie den Wert dieses Felds für den Ordner auf den ganzzahligen Kleinwert von " 0x000c0000":
+   Das Datenfeld ist ein 4-Byte-Feld. Wenn die Anwendung den Aufgabensucheordner erstellt, muss sie den Wert dieses Felds für den Ordner auf den wert für die kleine endische ganze Zahl von " 0x000c0000" festlegen:
     
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -70,7 +70,7 @@ Reservierte Elemente können ignoriert werden, vorhandene Werte müssen jedoch b
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXOCFG]](https://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx)
   
@@ -84,16 +84,16 @@ Reservierte Elemente können ignoriert werden, vorhandene Werte müssen jedoch b
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
 - [MAPI-Eigenschaften](mapi-properties.md)
-- [KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
-- [Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
-- [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+- [KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
+- [Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+- [Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm900
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: acf07fd7-6aa6-1a92-9b7a-bd6fea8a7cb2
 description: Legt fest, ob dieses platzierbare Shape verschoben wird, wenn Sie ein anderes platzierbares Shape in der Nähe dieses Shapes auf dem Zeichenblatt ablegen.
-ms.openlocfilehash: 6e155103f7bfc70a78826297f441fc9ce78942ad
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 53b13a7194bf723410e739b83378fd49e13022c6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423895"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59622914"
 ---
 # <a name="shapeplowcode-cell-shape-layout-section"></a>Zelle "ShapePlowCode" (Abschnitt "Shape Layout")
 
@@ -26,19 +26,19 @@ Legt fest, ob dieses platzierbare Shape verschoben wird, wenn Sie ein anderes pl
 |1  <br/> |Keine Shapes verschieben.  <br/> |**visSLOPlowNever** <br/> |
 |2  <br/> |Jedes Shape verschieben.  <br/> |**visSLOPlowAlways** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Sie können den Wert dieser Zelle für eine bestimmte Form auch auf der Registerkarte Platzierung [](run-in-developer-mode-display-the-developer-tab.md) im Dialogfeld Verhalten festlegen (wenn eine Form ausgewählt  ist, klicken Sie auf der Registerkarte Entwickler in der Gruppe **Shape-Entwurf** auf  **Verhalten,** und klicken Sie dann auf die Registerkarte Platzierung).  
+Sie können den Wert dieser Zelle auch für ein bestimmtes Shape auf der Registerkarte **"Platzierung"** im Dialogfeld **"Verhalten"** festlegen (wenn ein Shape auf der Registerkarte ["Entwickler"](run-in-developer-mode-display-the-developer-tab.md) in der Gruppe **"Shape-Entwurf"** ausgewählt ist, klicken Sie auf **"Verhalten",** und klicken Sie dann auf die Registerkarte **"Platzierung").** 
   
-Verwenden Sie zum Festlegen dieses Verhaltens für  *alle*  Formen auf dem Zeichenblatt die Zelle PlowCode im Abschnitt Seitenlayout. 
+Verwenden Sie die Zelle PlowCode im Abschnitt Seitenlayout, um dieses Verhalten für  *alle*  Formen auf dem Zeichenblatt festzulegen. 
   
-Um einen Verweis auf die Zelle ShapePlowCode anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Verwenden Sie Folgendes, um einen Verweis auf die Zelle "ShapePlowCode" anhand des Namens aus einer anderen Formel oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |ShapePlowCode  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle ShapePlowCode nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle ShapePlowCode anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

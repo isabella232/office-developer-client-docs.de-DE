@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7b1ebf5c-3355-4691-bf7b-164d0c411d0c
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1ddd8812962fa962f4f2958b5ef3d817f6d2142c
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 231d5571c2dbac8ee81e9922f065db4ad7cdb7b3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33425953"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59609733"
 ---
 # <a name="pidtagservertypedisplayname-canonical-property"></a>PidTagServerTypeDisplayName (kanonische Eigenschaft)
 
@@ -36,9 +36,9 @@ Gibt die Unicode-Zeichenfolge an, die in der Statusleiste mit dieser Eigenschaft
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

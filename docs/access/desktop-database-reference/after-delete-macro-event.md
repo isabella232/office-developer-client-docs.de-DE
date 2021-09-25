@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm15155
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 5b3b2da44d817885eb6190a8cbbfc73bf99e9e0a
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.localizationpriority: medium
+ms.openlocfilehash: c46bda55387fe0537aeed359091cde77f7976680
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538235"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559136"
 ---
 # <a name="after-delete-macro-event"></a>Makroereignis "Nach Löschvorgang"
 
@@ -27,13 +27,13 @@ Das Ereignis **Nach Löschvorgang** tritt auf, nachdem ein Datensatz gelöscht w
 > [!NOTE]
 > Das Ereignis **Nach Löschvorgang** ist nur in Datenmakros verfügbar.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Mit dem Ereignis **Nach Löschvorgang** führen Sie sämtliche Aktionen nach dem Löschen eines Datensatzes aus. Häufig wird **Nach Löschvorgang** verwendet, um Geschäftsregeln und Workflows zu erzwingen, einen Aggregatgesamtwert zu aktualisieren oder Benachrichtigungen zu senden.
 
-Wenn das Ereignis **Nach Löschvorgang** aufgetreten ist, bleiben die im gelöschten Datensatz enthaltenen Werte verfügbar. Möglicherweise möchten Sie einen gelöschten Wert verwenden, um eine Summe zu erhöhen oder zu verringern, einen Überwachungspfad zu erstellen oder mit einem vorhandenen Wert in einem *WhereCondition* -Argument zu vergleichen.
+Wenn das Ereignis **Nach Löschvorgang** aufgetreten ist, bleiben die im gelöschten Datensatz enthaltenen Werte verfügbar. Sie können einen gelöschten Wert verwenden, um einen Gesamtwert zu erhöhen oder zu dekrementieren, einen Überwachungspfad zu erstellen oder mit einem vorhandenen Wert in einem *WhereCondition-Argument* zu vergleichen.
 
-Mithilfe der Funktion **Aktualisiert(„*Feldname*“) ** können Sie feststellen, ob sich ein Feld verändert hat. The following code example shows how to use an If staement to determine determine whether the PaidInFull field has been changed.
+Mithilfe der Funktion **Aktualisiert(„*Feldname*“)** können Sie feststellen, ob sich ein Feld verändert hat. The following code example shows how to use an If staement to determine determine whether the PaidInFull field has been changed.
 
 ```vb 
  
@@ -55,7 +55,7 @@ For example, to access the value of the QuantityInStock field in the deleted rec
 
 Am Ende des Ereignisses **Nach Löschvorgang** werden die Werte im gelöschten Datensatz dauerhaft gelöscht.
 
-Die folgenden Makrobefehle können im **after DELETE** -Ereignis verwendet werden.
+Die folgenden Makrobefehle können im **After Delete-Ereignis** verwendet werden.
 
 <table>
 <colgroup>

@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249045(v=office.15)
 ms:contentKeyID: 48543867
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 7d7bba0af804df89bf4c8611e184928c9bf12d55
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 50fe7a1c034e1e60863ee04da523f41bb7eadb46
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293609"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59581406"
 ---
 # <a name="editmode-property-ado"></a>EditMode-Eigenschaft (ADO)
 
@@ -25,13 +25,13 @@ Gibt den Bearbeitungsstatus des aktuellen Datensatzes an.
 
 Gibt einen [EditModeEnum](editmodeenum.md)-Wert zurück.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 ADO verwaltet einen Bearbeitungspuffer, der dem aktuellen Datensatz zugeordnet ist. Diese Eigenschaft gibt an, ob Änderungen an diesem Puffer vorgenommen wurden oder ob ein neuer Datensatz erstellt wurde. Verwenden Sie die **EditMode** -Eigenschaft, um den Bearbeitungsstatus des aktuellen Datensatzes zu bestimmen. Sie können testen, ob ausstehende Änderungen vorhanden sind, falls ein Bearbeitungsprozess unterbrochen wurde, und bestimmen, ob die [Update](update-method-ado.md)- oder die [CancelUpdate](cancelupdate-method-ado.md)-Methode zu verwenden ist.
 
 Eine ausführlichere Beschreibung der [EditMode](addnew-method-ado.md) -Eigenschaft unter verschiedenen Bearbeitungsbedingungen finden Sie unter der **AddNew**-Methode.
 
-Wenn ein Aufruf von [Delete](delete-method-ado-recordset.md) den Datensatz oder die Datensätze in der Datenquelle nicht erfolgreich löscht (beispielsweise aufgrund von Verletzungen der referenziellen Integrität), verbleibt das [Recordset](recordset-object-ado.md) -Objekt im Bearbeitungsmodus (**EditMode** = **adEditInProgress **). Dies bedeutet, dass **CancelUpdate** aufgerufen werden muss, bevor Sie den aktuellen Datensatz verlassen (z. B. mit [Move](move-method-ado.md), [NextRecordset](nextrecordset-method-ado.md) oder [Close](close-method-ado.md)).
+Wenn ein Aufruf von [Delete](delete-method-ado-recordset.md) den Datensatz oder die Datensätze in der Datenquelle nicht erfolgreich löscht (z. B. aufgrund von Verletzungen der referenziellen Integrität), verbleibt das [Recordset](recordset-object-ado.md) im Bearbeitungsmodus (**EditMode**  =  **adEditInProgress**). Dies bedeutet, dass **CancelUpdate** aufgerufen werden muss, bevor Sie den aktuellen Datensatz verlassen (z. B. mit [Move](move-method-ado.md), [NextRecordset](nextrecordset-method-ado.md) oder [Close](close-method-ado.md)).
 
 
 > [!NOTE]

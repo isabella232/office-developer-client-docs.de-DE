@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250260(v=office.15)
 ms:contentKeyID: 48548768
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: d36a65ce8a6808f2128749bd7fbc6e468acbd279
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 43c1bbedeeee99e1d9c960cda3f8606bad9efd95
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296787"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558730"
 ---
 # <a name="bof-eof-properties-ado"></a>BOF-, EOF-Eigenschaft (ADO)
 
@@ -27,7 +27,7 @@ ms.locfileid: "32296787"
 
 Die **BOF**- und die **EOF**-Eigenschaft geben Werte vom Datentyp **Boolean** zurück.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Bestimmen Sie mithilfe der Eigenschaften **BOF** und **EOF**, ob ein **Recordset**-Objekt Datensätze enthält oder ob Sie beim Navigieren in den Datensätzen die Grenzen eines **Recordset**-Objekts überschritten haben.
 
@@ -54,30 +54,30 @@ In dieser Tabelle ist dargestellt, welche **Move**-Methoden für verschiedene Ko
 <thead>
 <tr class="header">
 <th><p></p></th>
-<th><p>MoveFirst<br />
+<th><p>MoveFirst,<br />
 MoveLast</p></th>
-<th><p>MovePrevious<br />
-Verschieben &lt; 0</p></th>
+<th><p>MovePrevious,<br />
+Move &lt; 0</p></th>
 <th><p><br />
 Move 0</p></th>
-<th><p>MoveNext<br />
-Verschieben &gt; 0</p></th>
+<th><p>MoveNext,<br />
+Move &gt; 0</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>BOF = true,</strong><br />
-<strong>EOF = false</strong></p></td>
-<td><p>Allowed</p></td>
+<td><p><strong>BOF=True,</strong><br />
+<strong>EOF=False</strong></p></td>
+<td><p>Zugelassen</p></td>
 <td><p>Fehler</p></td>
 <td><p>Fehler</p></td>
-<td><p>Allowed</p></td>
+<td><p>Zugelassen</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>BOF = false,</strong><br />
-<strong>EOF = true</strong></p></td>
+<td><p><strong>BOF=False,</strong><br />
+<strong>EOF=True</strong></p></td>
+<td><p>Zugelassen</p></td>
 <td><p>Zulässig</p></td>
-<td><p>Allowed</p></td>
 <td><p>Fehler</p></td>
 <td><p>Fehler</p></td>
 </tr>
@@ -93,7 +93,7 @@ Verschieben &gt; 0</p></th>
 <td><p>Zulässig</p></td>
 <td><p>Zulässig</p></td>
 <td><p>Zulässig</p></td>
-<td><p>Allowed</p></td>
+<td><p>Zulässig</p></td>
 </tr>
 </tbody>
 </table>

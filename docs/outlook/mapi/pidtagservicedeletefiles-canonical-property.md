@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagServiceDeleteFiles
 api_type:
 - COM
 ms.assetid: 9ec80a93-9e8f-46be-a1d4-7648aae47fec
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: da01385f83d9af9ad02eeb2fed08e3bc22d4df84
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: bd1806de1e4077a8057a0ae14b3a07bae87bc6b2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33436825"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59591437"
 ---
 # <a name="pidtagservicedeletefiles-canonical-property"></a>PidTagServiceDeleteFiles (kanonische Eigenschaft)
 
@@ -34,11 +34,11 @@ Enthält eine Liste der Dateinamen, die gelöscht werden sollen, wenn der Nachri
 |Datentyp:  <br/> |PT_MV_STRING8, PT_MV_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Profil  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die Dateinamen in der Liste, die in diesen Eigenschaften enthalten sind, werden vom Computer gelöscht, wenn der Nachrichtendienst mithilfe der Systemsteuerung deinstalliert wird. Fügen Sie keine DLL hinzu, die mehrere Nachrichtendienste unterstützt, oder zusätzliche Nachrichtendienste können versehentlich entfernt werden.
+Die Dateinamen in der Liste, die in diesen Eigenschaften enthalten sind, werden vom Computer gelöscht, wenn die Systemsteuerung zum Deinstallieren des Nachrichtendiensts verwendet wird. Fügen Sie keine DLL in die Liste ein, die mehrere Nachrichtendienste unterstützt, oder zusätzliche Nachrichtendienste könnten versehentlich entfernt werden.
   
-MAPI funktioniert nur mit Dateinamen und anderen Zeichenfolgen, die im ANSI-Zeichensatz an sie übergeben werden. Anwendungen, die Dateinamen in einem OEM-Zeichensatz verwenden, müssen sie vor dem Aufrufen von MAPI in ANSI konvertieren.
+MAPI funktioniert nur mit Dateinamen und anderen Zeichenfolgen, die an sie übergeben werden, im ANSI-Zeichensatz. Anwendungen, die Dateinamen in einem OEM-Zeichensatz verwenden, müssen sie vor dem Aufrufen der MAPI in ANSI konvertieren.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -46,11 +46,11 @@ MAPI funktioniert nur mit Dateinamen und anderen Zeichenfolgen, die im ANSI-Zeic
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -58,9 +58,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

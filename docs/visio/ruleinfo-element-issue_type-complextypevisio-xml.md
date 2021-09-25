@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: aec47b43-adbe-3344-fbac-29554f244c99
 description: Gibt Informationen zur Überprüfungsregel an, auf die sich das übergeordnete Überprüfungsproblem bezieht.
-ms.openlocfilehash: 29454fdb82d9e12d46fa9eedf73f8a31e8befd95
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 367c678d14531bd9e9d5dc86956aeb0ff42757fe
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34541687"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59623019"
 ---
 # <a name="ruleinfo-element-issue_type-complextype-visio-xml"></a>RuleInfo-Element (Issue_Type complexType) (Visio XML)
 
@@ -36,7 +36,7 @@ Gibt Informationen zur Überprüfungsregel an, auf die sich das übergeordnete �
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -52,7 +52,7 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|RuleID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> |Gibt den eindeutigen Bezeichner der Gültigkeitsprüfungsregel an, auf die sich das übergeordnete Problem bezieht.  <br/> |Werte des xsd:unsignedInt-Typs.  <br/> |
-|RuleSetID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> |Gibt den eindeutigen Bezeichner des Überprüfungsregelsatzs an, auf den sich das übergeordnete Problem bezieht.  <br/> |Werte des xsd:unsignedInt-Typs.  <br/> |
+|RuleID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> |Gibt den eindeutigen Bezeichner der Überprüfungsregel an, auf die sich das übergeordnete Problem bezieht.  <br/> |Werte des Typs "xsd:unsignedInt".  <br/> |
+|RuleSetID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> |Gibt den eindeutigen Bezeichner des Überprüfungsregelsatzes an, auf den sich das übergeordnete Problem bezieht.  <br/> |Werte des Typs "xsd:unsignedInt".  <br/> |
    
 

@@ -1,20 +1,20 @@
 ---
-title: Field2. Required-Eigenschaft (DAO)
+title: Field2.Required-Eigenschaft (DAO)
 TOCTitle: Required Property
 ms:assetid: 7d14dfd7-a50d-6044-469e-1511c74c148d
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196390(v=office.15)
 ms:contentKeyID: 48545848
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 6b1950c8a864fbf23bee26be89e07e49357840b7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 534dcec05ec3afdb4ff247313f70d9d2cd19a78b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292720"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59581266"
 ---
-# <a name="field2required-property-dao"></a>Field2. Required-Eigenschaft (DAO)
+# <a name="field2required-property-dao"></a>Field2.Required-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -26,9 +26,9 @@ Mit dieser Eigenschaft wird ein Wert festgelegt oder zurückgegeben, der angibt,
 
 *Ausdruck* . Erforderlich
 
-*Ausdruck* Eine Variable, die ein **Field2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Field2**-Objekt darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Bei einem **Field2**-Objekt, das der **Fields**-Auflistung noch nicht angefügt wurde, besteht für diese Eigenschaft Lese-/Schreibzugriff.
 

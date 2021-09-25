@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagTextAttachmentCharset
 api_type:
 - COM
 ms.assetid: d347c949-d0c3-4a36-8447-3fa01111cdc1
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1db41bc5c7ea71d65d892da520d4258354eb53cf
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 98552506558ced5012dbfd07d707bc567d9ce06b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32358814"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59591346"
 ---
 # <a name="pidtagtextattachmentcharset-canonical-property"></a>PidTagTextAttachmentCharset (kanonische Eigenschaft)
 
@@ -29,14 +29,14 @@ Enthält den Zeichensatzwert einer Nachrichtenanlage.
   
 |||
 |:-----|:-----|
-|Zugeordnete Eigenschaften:  <br/> |Keine  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |Keines  <br/> |
 |Kennung:  <br/> |0x371B  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die Daten dieser Eigenschaft werden von einem Content-Type-MIME-Headerfeld abgeleitet, das mit "text/" beginnt, wenn ein "charset"-Parameter vorhanden ist.
+Die Daten dieser Eigenschaft werden von einem MIME-Headerfeld vom Typ "Content-Type" abgeleitet, das mit "text/" beginnt, wenn ein "charset"-Parameter vorhanden ist.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -50,11 +50,11 @@ Die Daten dieser Eigenschaft werden von einem Content-Type-MIME-Headerfeld abgel
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -62,9 +62,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

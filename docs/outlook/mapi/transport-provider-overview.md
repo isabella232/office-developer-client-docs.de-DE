@@ -1,27 +1,27 @@
 ---
-title: Übersicht über den Transportanbieter
+title: Übersicht über Transportanbieter
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: a51547e6-8f0e-45f4-a341-3cfa735112c2
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 53bdba624ba759debba25bae78fb45b0f9d5247e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f189ed78d7feb1714fa2a04bf29403c6d33773af
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33433157"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59609320"
 ---
-# <a name="transport-provider-overview"></a>Übersicht über den Transportanbieter
+# <a name="transport-provider-overview"></a>Übersicht über Transportanbieter
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ein Transportanbieter ist eine DLL (Dynamic Link Library), die als Vermittler zwischen dem MAPI-Subsystem und einem oder mehreren zugrunde liegenden Messagingsystemen fungiert. Ein Messagingsystem ist ein bestimmter Mechanismus, mit dem Nachrichten gesendet und empfangen werden. Beispiele für Messagingsysteme sind:
+Ein Transportanbieter ist eine Dynamic Link Library (DLL), die als Vermittler zwischen dem MAPI-Subsystem und einem oder mehreren zugrunde liegenden Messagingsystemen fungiert. Ein Messagingsystem ist ein bestimmter Mechanismus, mit dem Nachrichten gesendet und empfangen werden. Einige Beispiele für Messagingsysteme sind:
   
 - Ein freigegebenes Netzwerkdateisystem, in das der Transportanbieter Nachrichten direkt schreibt.
     
@@ -33,8 +33,8 @@ Ein Transportanbieter ist eine DLL (Dynamic Link Library), die als Vermittler zw
     
 - Eine Reihe von Remoteprozeduraufrufen an einen Messagingserver.
     
-- Alles, was zum Übertragen von Daten von einem Computer auf einen anderen verwendet werden kann.
+- Alles, was verwendet werden kann, um Daten von einem Computer auf einen anderen zu übertragen.
     
-Eine Transportanbieter-DLL muss der von MAPI angegebenen Schnittstelle entsprechen. Als Entwickler eines Transportanbieters implementieren Sie diese Schnittstelle im Hinblick auf die Funktionalität, die im Messagingsystem vorhanden ist.
+Eine Transportanbieter-DLL muss der von MAPI angegebenen Schnittstelle entsprechen. Als Entwickler von Transportanbietern implementieren Sie diese Schnittstelle hinsichtlich der Funktionen, die im Messagingsystem vorhanden sind.
   
 

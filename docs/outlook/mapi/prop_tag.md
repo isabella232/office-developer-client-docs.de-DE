@@ -5,25 +5,25 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PROP_TAG
 api_type:
 - COM
 ms.assetid: d8c9d18c-4043-41f3-8501-8be8e3a2c9ac
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 7ab4e4e9e51849037a91a071f16294cfdf10870c
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: e1d1f759989ae7c241317b7488ce0d8f53180e9f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33425883"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59609635"
 ---
 # <a name="prop_tag"></a>PROP_TAG
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt ein Eigenschaftentag zurück, das durch Kombinieren eines angegebenen Eigenschaftentyps und bezeichners erstellt wurde. 
+Gibt ein Eigenschaftstag zurück, das durch Kombinieren eines angegebenen Eigenschaftstyps und bezeichners erstellt wurde. 
   
 |||
 |:-----|:-----|
@@ -42,18 +42,18 @@ _ulPropType_
     
 _ulPropID_
   
-> Eigenschafts-ID für das neue Eigenschaftstag.
+> Eigenschaftsbezeichner für das neue Eigenschaftstag.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das **PROP \_ TAG-Makro** erstellt ein Eigenschaftentag für eine Eigenschaft vom Typ _ulPropType_ und den bezeichner, der in _ulPropID angegeben ist._ Beispielsweise kann ein Eigenschaftentag für einen Eintragsbezeichner mithilfe des PROP_TAG wie folgt erstellt werden:  
+Das **PROP \_ TAG-Makro** erstellt ein Eigenschaftentag für eine Eigenschaft vom Typ  _ulPropType_ und den Bezeichner, der in  _ulPropID_ angegeben ist. Beispielsweise kann ein Eigenschaftstag für einen Eintragsbezeichner mithilfe des **Makros PROP_TAG** wie folgt erstellt werden: 
   
 ```cpp
 PROP_TAG( PT_BINARY, 0x0FFF)
 
 ```
 
-Die 16 Bit niedriger Reihenfolge des zurückgegebenen Eigenschaftstags enthalten den Eigenschaftentyp PT_BINARY, und die 16 Bit in hoher Reihenfolge enthalten den Eigenschaftenbezeichner 0xFFFF.
+Die 16 Bits in niedriger Reihenfolge des zurückgegebenen Eigenschaftstags enthalten den Eigenschaftentyp, PT_BINARY und die 16 Bit in hoher Reihenfolge enthalten den Eigenschaftsbezeichner 0xFFFF.
   
 Weitere Informationen zu Eigenschaftstags finden Sie unter [MAPI Property Tags](mapi-property-tags.md).
   

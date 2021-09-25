@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff424467(v=office.15)
 ms:contentKeyID: 55119829
 ms.date: 07/24/2014
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 488e00971adb1f2fa38555039478ac830d3c9f7a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 6a7dd47d288980e11a9571a799fdcb6b19b90621
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32320412"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59609068"
 ---
 # <a name="enumerate-and-add-categories"></a>Aufzählen und Hinzufügen von Kategorien
 
@@ -41,11 +41,11 @@ Um die Funktionalität von Kategorien zur Verfügung zu stellen, bietet das Outl
 
 Diese Eigenschaften geben einen **OLE\_COLOR**-Wert zurück, der von der **Color**-Eigenschaft des **Category**-Objekts abhängt.
 
-Outlook-Elemente werden basierend auf dem Kategorienamen angezeigt. Jedes Elementobjekt hat eine **Categories**-Eigenschaft, in der eine Zeichenfolge mit Kommas als Trennzeichen gespeichert wird, die Kategorienamen darstellt. (Für das [MailItem](https://msdn.microsoft.com/library/bb643865\(v=office.15\)) -Objekt verwenden Sie z. B. die **MailItem** [Categories](https://msdn.microsoft.com/library/bb646442\(v=office.15\)) -Eigenschaft). Dadurch können Sie dem Element eine Kategorie hinzufügen, auch wenn die Kategorie nicht in der Hauptkategorieliste vorhanden ist.
+Outlook-Elemente werden basierend auf dem Kategorienamen angezeigt. Jedes Elementobjekt verfügt über eine **Categories**-Eigenschaft, die eine durch Trennzeichen getrennte Zeichenfolge enthält, die Kategorienamen darstellt. (Für das [MailItem](https://msdn.microsoft.com/library/bb643865\(v=office.15\))-Objekt würden Sie beispielsweise die **MailItem** [Categories](https://msdn.microsoft.com/library/bb646442\(v=office.15\))-Eigenschaft verwenden). Auf diese Weise können Sie dem Element eine Kategorie hinzufügen, selbst wenn die Kategorie nicht in der Hauptkategorieliste enthalten ist.
 
 
 > [!NOTE]
-> [!HINWEIS] Wenn die **Categories**-Eigenschaft eines Elements einen Kategorienamen enthält, der nicht in der **Categories**-Auflistung des **NameSpace**-Objekts vorhanden ist, wird der Kategoriename, der diesem Outlook-Element zugeordnet ist, ohne zugeordnete Farbe angezeigt. Die **Categories**-Eigenschaft eines **Item**-Objekts gibt keine **Categories**-Auflistung zurück.
+> Wenn die **Categories**-Eigenschaft eines Elements einen Kategorienamen enthält, der nicht in der **Categories**-Auflistung des **NameSpace**-Objekts vorhanden ist, wird der Kategoriename, der diesem Outlook-Element zugeordnet ist, ohne zugeordnete Farbe angezeigt. Die **Categories**-Eigenschaft eines **Item**-Objekts gibt keine **Categories**-Auflistung zurück.
 
 Im folgenden Codebeispiel ruft die erste Prozedur EnumerateCategories die Hauptkategorieliste des aktuellen Benutzers ab, die von der **Categories**-Auflistung dargestellt wird. Sie zählt anschließend die **Category**-Objekte in diese Auflistung auf und schreibt die Eigenschaften **Name** und **CategoryID** in die Listeners für die Ablaufverfolgung der [Listeners](https://msdn.microsoft.com/library/system.diagnostics.debug.listeners.aspx)-Auflistung. Die zweite Prozedur AddACategory ruft die Hauptkategorieliste des aktuellen Benutzers ab und verwendet die CategoryExists-Methode zum Überprüfen, ob die Kategorie "ISV" in der Auflistung vorhanden ist. Wenn keine Kategorie mit dem Namen "ISV" vorhanden ist, fügt AddACategory der Hauptkategorieliste die Kategorie "ISV" hinzu und ordnet ihr die Farbe Dunkelblau mithilfe der **Add**-Methode der **Categories**-Auflistung zu. Sie weist auch STRG + F11 als die Tastenkombination für die Kategorie.
 

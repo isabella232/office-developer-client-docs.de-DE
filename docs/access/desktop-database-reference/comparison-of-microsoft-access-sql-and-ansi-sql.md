@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff844937(v=office.15)
 ms:contentKeyID: 48543052
 ms.date: 06/13/2019
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 4e9f30401891452970fdbe80123fc373e26f26c6
-ms.sourcegitcommit: d0e1ce095a478d90411abb8c147eb9efe19ffa5f
+ms.localizationpriority: medium
+ms.openlocfilehash: 798e424f1ae7138d15b2bc7db26b17dfebc86d03
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "34870857"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59569377"
 ---
 # <a name="comparison-of-microsoft-access-sql-and-ansi-sql"></a>Microsoft Access SQL und ANSI SQL im Vergleich
 
 **Gilt für**: Access 2013, Office 2013
 
-Das Microsoft Access-Datenbankmodul SQL ist im Allgemeinen mit ANSI-89 Level 1 kompatibel. Bestimmte ANSI SQL-Features werden jedoch nicht in Microsoft Access SQL implementiert. Umgekehrt umfasst Microsoft Access SQL reservierte Wörter und Features, die nicht in ANSI SQL unterstützt werden.
+Das Microsoft Access-Datenbankmodul SQL ist im Allgemeinen mit ANSI-89 Level 1 kompatibel. Bestimmte ANSI-SQL-Features sind jedoch nicht in Microsoft Access SQL implementiert. Umgekehrt umfasst Microsoft Access SQL reservierte Wörter und Features, die nicht in ANSI SQL unterstützt werden.
 
 ## <a name="major-differences"></a>Wesentliche Unterschiede
 
@@ -26,7 +26,7 @@ Das Microsoft Access-Datenbankmodul SQL ist im Allgemeinen mit ANSI-89 Level 1 k
 
 - **[Between…And](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/between-and-operator)**
     
-  *expr1* \[Nicht\] **zwischen** *value1* **und** *value2*
+  *Expr1* \[ NOT \] **Between** *value1* **And** *value2*
     
   In Microsoft Access SQL kann *Wert1* größer sein als *Wert2*. In ANSI SQL dagegen muss *Wert1* kleiner oder gleich *Wert2* sein.
 
@@ -74,7 +74,7 @@ Microsoft Access SQL stellt die folgenden erweiterten Features bereit:
 
 - Die [PARAMETERS](parameters-declaration-microsoft-access-sql.md)-Deklaration zum Definieren von Parameterabfragen.
 
-## <a name="ansi-sql-features-not-supported-in-microsoft-access-sql"></a>ANSI SQL-Features werden in Microsoft Access SQL nicht unterstützt
+## <a name="ansi-sql-features-not-supported-in-microsoft-access-sql"></a>In Microsoft Access SQL nicht unterstützte FEATURES für ANSI-SQL
 
 Microsoft Access SQL unterstützt folgende ANSI SQL-Features nicht:
 

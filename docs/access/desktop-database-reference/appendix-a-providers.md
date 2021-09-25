@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249857(v=office.15)
 ms:contentKeyID: 48547207
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: e4549c8817361cfb5b9fa730ee37ca6a07edc98b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 452c6f91ed2899dbc7a31b67d02d9ff100dbf359
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32297060"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558919"
 ---
 # <a name="appendix-a-providers"></a>Anhang A: Anbieter
 
@@ -102,7 +102,7 @@ Die Dienstkomponente [Microsoft Cursor Service für OLE DB](microsoft-cursor-ser
 
 For more information about providers, see the documentation for Microsoft OLE DB in the Microsoft Data Access Components SDK or visit the [Data Platform Developer Center](https://docs.microsoft.com/sql/connect/sql-data-developer?view=sql-server-2017).
 
-## <a name="provider-commands"></a>Anbieter Befehle
+## <a name="provider-commands"></a>Anbieterbefehle
 
-Wenn Ihre Anwendungen Benutzern die Eingabe von SQL-Anweisungen als Anbieter Befehle gestatten, müssen Sie für jeden hier aufgeführten Anbieter die Benutzereingabe immer überprüfen und auf mögliche Hackerangriffe mit potenziell gefährlichen SQL-Anweisungen wie, als Teil des Benutzereingabe.
+Wenn Ihre Anwendungen Benutzern erlauben, SQL Anweisungen als Anbieterbefehle einzugeben, müssen Sie für jeden hier aufgeführten Anbieter immer die Benutzereingabe überprüfen und mögliche Hackerangriffe mit potenziell gefährlichen SQL Anweisung, z. B. als Teil der Benutzereingabe, verhindern.
 

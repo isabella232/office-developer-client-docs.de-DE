@@ -10,13 +10,13 @@ f1_keywords:
 - jetsql40.chm5277478
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 4357099f8bcb9b2308b5cda3543949765b8c3420
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 977fe06ce2d42616f9212fc8095ba5807aecaf86
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292132"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568936"
 ---
 # <a name="grant-statement-microsoft-access-sql"></a>GRANT-Anweisung (Microsoft Access SQL)
 
@@ -26,9 +26,9 @@ Erteilt Rechte für einen vorhandenen Benutzer oder ein vorhandene Gruppe.
 
 ## <a name="syntax"></a>Syntax
 
-Grant {*Berechtigung*\[, *Privileg*,... \]} On {Table *Tabelle* | Objekt *Objekt*|
+GRANT {*Berechtigung* \[ , *Berechtigung*, ... \] } ON{TABLE-Tabelle |  *OBJECT-Objekt*|
 
-Container *Container* } an {*authorizationname*\[, *authorizationname*,... \]}
+*CONTAINER-Container* } TO {*Autorisierungsname* \[ , *Autorisierungsname*, ... \] }
 
 Die GRANT-Anweisung besteht aus folgenden Komponenten:
 
@@ -45,11 +45,11 @@ Die GRANT-Anweisung besteht aus folgenden Komponenten:
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>Berechtigungen</em></p></td>
-<td><p>Das oder die zu erteilenden Rechte. Berechtigungen werden mithilfe der folgenden Schlüsselwörter angegeben: SELECT, DELETE, INSERT, UPDATE, DROP, SELECTSECURITY, UPDATESECURITY, dbPASSWORD, UPDATEIDENTITY, CREATE, SELECTSCHEMA, SCHEMA und UPDATEOWNER.</p></td>
+<td><p><em>Privileg</em></p></td>
+<td><p>Das oder die zu erteilenden Rechte. Berechtigungen werden mit den folgenden Schlüsselwörtern angegeben: SELECT, DELETE, INSERT, UPDATE, DROP, SELECTSECURITY, UPDATESECURITY, DBPASSWORD, UPDATEIDENTITY, CREATE, SELECTSCHEMA, SCHEMA und UPDATEOWNER.</p></td>
 </tr>
 <tr class="even">
-<td><p><em>TableName</em></p></td>
+<td><p><em>Tablename</em></p></td>
 <td><p>Ein gültiger Tabellenname.</p></td>
 </tr>
 <tr class="odd">

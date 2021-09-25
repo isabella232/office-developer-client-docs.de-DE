@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249603(v=office.15)
 ms:contentKeyID: 48546167
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 48e0eb25b443175013a144fafaa433df12c2cc9c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 336dd8f5dce734e7b820f8bf78f113d122d90444
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293560"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59602752"
 ---
 # <a name="endofrecordset-event-ado"></a>EndOfRecordset-Ereignis (ADO)
 
@@ -22,19 +22,19 @@ Das **EndOfRecordset**-Ereignis wird aufgerufen, wenn in eine Zeile nach dem End
 
 ## <a name="syntax"></a>Syntax
 
-EndOfRecordset*fMoreData*, *Status*, precordset **
+EndOfRecordset *fMoreData*, *adStatus*, *pRecordset*
 
 ## <a name="parameters"></a>Parameter
 
 |Parameter|Beschreibung|
 |:--------|:----------|
-|*fMoreData* |Ein **Variant\_** -Wert vom Typ bool, der bei\_Festlegung auf Variant true angibt, dass dem **Recordset**-Objekt weitere Zeilen hinzugefügt wurden.|
+|*fMoreData* |Ein **VARIANT \_ BOOL-Wert,** der, wenn er auf VARIANT TRUE festgelegt \_ ist, angibt, dass dem **Recordset** weitere Zeilen hinzugefügt wurden.|
 |*adStatus* |[EventStatusEnum](eventstatusenum.md). Wenn **EndOfRecordset** aufgerufen wird, wird dieser Parameter auf **adStatusOK** festgelegt, falls die Operation, die zu diesem Ereignis führte, erfolgreich war. Er wird auf **adStatusCantDeny** festgelegt, wenn dieses Ereignis den Abbruch der Operation, die zu diesem Ereignis führte, nicht anfordern kann.<br/><br/>Bevor **EndOfRecordset** zurückgegeben wird, legen Sie diesen Parameter auf **adStatusUnwantedEvent** fest, um nachfolgende Benachrichtigungen zu verhindern.|
-|*precordset* | Ein **Recordset**-Objekt. Das **Recordset** -Objekt, für das dieses Ereignis eingetreten ist.|
+|*pRecordset* | Ein **Recordset**-Objekt. Das **Recordset** -Objekt, für das dieses Ereignis eingetreten ist.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Ein **EndOfRecordset** -Ereignis kann auftreten, wenn die [MoveNext](movefirst-movelast-movenext-and-moveprevious-methods-ado.md)-Operation fehlschlägt.
 
-This event handler is called when an attempt is made to move past the end of the **Recordset** object, perhaps as a result of calling **MoveNext**. However, while in this event, you could retrieve more records from a database and append them to the end of the **Recordset**. Legen Sie in diesem Fall *fMoreData* auf Variant\_true fest, und geben Sie von **EndOfRecordset**zurück. Then call **MoveNext** again to access the newly retrieved records.
+This event handler is called when an attempt is made to move past the end of the **Recordset** object, perhaps as a result of calling **MoveNext**. However, while in this event, you could retrieve more records from a database and append them to the end of the **Recordset**. Legen Sie in diesem Fall *fMoreData* auf VARIANT \_ TRUE fest, und kehren Sie von **EndOfRecordset** zurück. Then call **MoveNext** again to access the newly retrieved records.
 

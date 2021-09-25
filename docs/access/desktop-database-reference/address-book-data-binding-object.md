@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250030(v=office.15)
 ms:contentKeyID: 48547807
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 7fb5302d1c2b8e4eebb6dbe1a5906459834b8e41
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f4fe606c204727fe08ab3fae960733abacc44f9b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32281867"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603092"
 ---
 # <a name="address-book-data-binding-object"></a>Datenbindungsobjekt des Adressbuchs
 
@@ -89,7 +89,7 @@ In der folgenden Tabelle werden die Parameter beschrieben, die für das **RDS.Da
 <tbody>
 <tr class="odd">
 <td><p><a href="server-property-rds.md">SERVER</a></p></td>
-<td><p>Wenn Sie HTTP verwenden, ist der Wert der Name des Servercomputers, dem https://vorangestellt ist.</p></td>
+<td><p>Wenn Sie HTTP verwenden, ist der Wert der Name des Servercomputers, dem https:// vorausgeht.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="connect-property-rds.md">VERBINDEN</a></p></td>

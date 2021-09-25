@@ -12,13 +12,13 @@ dev_langs:
 - xml
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: a180068e805ae11883822ebf26f924e10d34bac5
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.localizationpriority: medium
+ms.openlocfilehash: ddfbf772f1c7bf562fa6db1abdda88ac730c3db7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538116"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558786"
 ---
 # <a name="before-change-macro-event"></a>Makroereignis "Vor Änderung"
 
@@ -29,11 +29,11 @@ Das Ereignis **Vor Änderung** tritt ein, wenn ein Datensatz geändert wird, jed
 > [!NOTE]
 > Das Ereignis **Vor Änderung** ist nur in Datenmakros verfügbar.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Mit dem Ereignis **Vor Änderung** führen Sie sämtliche Aktionen vor dem Ändern eines Datensatzes aus. Das Ereignis **Vor Änderung** wird häufig verwendet, um Überprüfungen auszuführen und benutzerdefinierte Fehlermeldungen auszugeben.
 
-Mithilfe der Funktion **Aktualisiert(„*Feldname*“) ** können Sie feststellen, ob sich ein Feld verändert hat. Im folgenden Codebeispiel wird die Verwendung einer **if** -Anweisung gezeigt, um zu bestimmen, ob das PaidInFull-Feld geändert wurde.
+Mithilfe der Funktion **Aktualisiert(„*Feldname*“)** können Sie feststellen, ob sich ein Feld verändert hat. Das folgende Codebeispiel zeigt, wie Sie mithilfe einer **If-Anweisung** bestimmen, ob das Feld PaidInFull geändert wurde.
 
 ```vb
     If  Updated("PaidInFull")   Then 
@@ -103,7 +103,7 @@ In der folgenden Tabelle sind Makros ausgeführt, die im Ereignis **Vor Änderun
 </tr>
 <tr class="even">
 <td><p>Datenblock</p></td>
-<td><p><a href="lookuprecord-data-block.md">Nachschlagendatensatz-Makroaktion</a></p></td>
+<td><p><a href="lookuprecord-data-block.md">NachschlagenDatensatz-Makroaktion</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Datenaktion</p></td>
@@ -143,7 +143,7 @@ Im Makro-Designer wird ein leeres Datenmakro angezeigt.
 
 ## <a name="example"></a>Beispiel
 
-Im folgenden Codebeispiel wird das **Before Change** -Ereignis verwendet, um die Status Felder zu überprüfen. An error is raised if an inappropriate value is contained in the Resolution field.
+Im folgenden Codebeispiel werden die Statusfelder mithilfe des **Before Change-Ereignisses** überprüft. An error is raised if an inappropriate value is contained in the Resolution field.
 
 ```vb 
  
@@ -178,9 +178,9 @@ Zum Anzeigen dieses Beispiels im Makro-Designer gehen Sie folgendermaßen vor:
 
 2.  Klicken Sie auf der Registerkarte **Tabelle** in der Gruppe **Vorabereignisse** auf **Vor Änderung**.
 
-3.  Wählen Sie den Code im folgenden Codebeispiel aus, und drücken Sie dann **STRG + C** , um ihn in die Zwischenablage zu kopieren.
+3.  Wählen Sie den Code im folgenden Codebeispiel aus, und drücken Sie dann **STRG+C,** um ihn in die Zwischenablage zu kopieren.
 
-4.  Aktivieren Sie das Fenster Makro-Designer, und drücken Sie dann **STRG + V**.
+4.  Aktivieren Sie das Makro-Designerfenster, und drücken Sie dann **STRG+V.**
 
 
 
@@ -228,7 +228,7 @@ Zum Anzeigen dieses Beispiels im Makro-Designer gehen Sie folgendermaßen vor:
 </DataMacros>
 ```
 
-Im folgenden Beispiel wird gezeigt, wie Sie mit der auslösenfehler-Aktion das makroereignis vor Änderungsdaten abbrechen. Wenn das Feld AssignedTo aktualisiert wird, wird ein nachschlagendatensatz-Datenblock verwendet, um zu bestimmen, ob der zugewiesene Techniker derzeit einer offenen Dienstanforderung zugewiesen ist. Wenn dies der Fall ist, wird das Before Change-Ereignis abgebrochen, und der Datensatz wird nicht aktualisiert.
+Das folgende Beispiel zeigt, wie die RaiseError-Aktion verwendet wird, um das Makroereignis "Vor Änderung" abzubrechen. Wenn das Feld AssignedTo aktualisiert wird, wird ein Nachschlagedatenblock verwendet, um zu bestimmen, ob der zugewiesene Techniker derzeit einer geöffneten Serviceanfrage zugewiesen ist. Wenn dies der Fall ist, wird das Before Change-Ereignis abgebrochen, und der Datensatz wird nicht aktualisiert.
 
 **Der Beispielcode stammt von:**[Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
 

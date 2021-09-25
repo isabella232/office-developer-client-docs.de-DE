@@ -6,20 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249734(v=office.15)
 ms:contentKeyID: 48546695
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 675dd1f671bd70d8272e303708bf951bbcee1a47
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 9d6b2839a89a9ca85b3a1d55019fe1a7b41abd06
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295464"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59569244"
 ---
 # <a name="count-property-example-vb"></a>Count-Eigenschaft (Beispiel) (VB)
 
 
 **Gilt für**: Access 2013, Office 2013
 
-In diesem Beispiel wird die [count](count-property-ado.md) -Eigenschaft mit zwei Auflistungen in der ***Employee*** -Datenbank veranschaulicht. Die-Eigenschaft ruft die Anzahl der Objekte in jeder Auflistung ab und legt die obere Grenze für Schleifen fest, die diese Auflistungen auflisten. Eine andere Möglichkeit zum Aufzählen dieser Auflistungen ohne Verwendung der **count** -Eigenschaft wäre das Verwenden von Anweisungen.
+In diesem Beispiel wird die [Count-Eigenschaft](count-property-ado.md) mit zwei Auflistungen in der Datenbank ***Employee** _ veranschaulicht. Die Eigenschaft ruft die Anzahl der Objekte in jeder Auflistung ab und legt die Obergrenze für Schleifen fest, die diese Auflistungen aufzählen. Eine weitere Möglichkeit zum Aufzählen dieser Auflistungen ohne Die _ *Count** -Eigenschaft wäre die Verwendung von Anweisungen.
 
 ```vb 
  

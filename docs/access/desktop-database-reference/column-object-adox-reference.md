@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250234(v=office.15)
 ms:contentKeyID: 48548669
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: d70e9a787e18b6350d71202997544c0b9af24450
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c12362388e551321cbc230fe6d3beb46fee8f35a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296255"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59602934"
 ---
 # <a name="column-object-adox-reference"></a>Column-Objekt (ADOX)-Referenz
 
 **Gilt für**: Access 2013, Office 2013
 
 - [Column-Objekt (ADOX)](column-object-adox.md)
-- [Spalteneigenschaften, Methoden und Ereignisse (ADOX)](column-properties-methods-and-events-adox.md)
+- [Spalteneigenschaften, -methoden und -ereignisse (ADOX)](column-properties-methods-and-events-adox.md)
 

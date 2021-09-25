@@ -1,18 +1,18 @@
 ---
-title: IsolationLevelEnum (Access Desktop Database Reference)
+title: IsolationLevelEnum (Access-Desktopdatenbankreferenz)
 TOCTitle: IsolationLevelEnum
 ms:assetid: 438af3f3-65ed-237d-94d8-f3aff6addd3b
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249204(v=office.15)
 ms:contentKeyID: 48544506
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 9f0176772b366b39d368f8bae1e402d420f0136c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: a54f82a61605700d6691f4adc321114994b9e4a8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291156"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568873"
 ---
 # <a name="isolationlevelenum"></a>IsolationLevelEnum
 
@@ -43,7 +43,7 @@ Gibt die Transaktionsisolation für ein [Connection](connection-object-ado.md)-O
 </tr>
 <tr class="even">
 <td><p><strong>adXactChaos</strong></p></td>
-<td><p>16</p></td>
+<td><p>16 </p></td>
 <td><p>Gibt an, dass die ausstehenden Änderungen aus isolierteren Transaktionen nicht überschrieben werden können.</p></td>
 </tr>
 <tr class="odd">
@@ -57,7 +57,7 @@ Gibt die Transaktionsisolation für ein [Connection](connection-object-ado.md)-O
 <td><p>Entspricht <strong>adXactBrowse</strong>.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adXactCursorStability</strong></p></td>
+<td><p><strong>adXactCursorStabilität</strong></p></td>
 <td><p>4096</p></td>
 <td><p>Gibt an, dass Sie Änderungen einer Transaktion in anderen Transaktionen anzeigen können, nachdem sie gespeichert wurden.</p></td>
 </tr>
@@ -85,7 +85,7 @@ Gibt die Transaktionsisolation für ein [Connection](connection-object-ado.md)-O
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
 Paket: **com.ms.wfc.data**
 
@@ -100,31 +100,31 @@ Paket: **com.ms.wfc.data**
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums. IsolationLevel. unSPECIFIED</p></td>
+<td><p>AdoEnums.IsolationLevel.UNSPECIFIED</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. IsolationLevel. CHAOS</p></td>
+<td><p>AdoEnums.IsolationLevel.CSV</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. IsolationLevel. BROWSE</p></td>
+<td><p>AdoEnums.IsolationLevel.BROWSE</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. IsolationLevel. READUNCOMMITTED</p></td>
+<td><p>AdoEnums.IsolationLevel.READUNCOMMITTED</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. IsolationLevel. CURSORSTABILITY</p></td>
+<td><p>AdoEnums.IsolationLevel.CURSORSTABIL</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. IsolationLevel. READCOMMITTED</p></td>
+<td><p>AdoEnums.IsolationLevel.READCOMMITTED</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. IsolationLevel. REPEATABLEREAD</p></td>
+<td><p>AdoEnums.IsolationLevel.REPEATABLEREAD</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. IsolationLevel. ISOLATED</p></td>
+<td><p>AdoEnums.IsolationLevel.ISOLATED</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. IsolationLevel. SERIALIZABLE</p></td>
+<td><p>AdoEnums.IsolationLevel.SERIALIZABLE</p></td>
 </tr>
 </tbody>
 </table>

@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249630(v=office.15)
 ms:contentKeyID: 48546295
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: fe5d331b7f3ab4685cb930323076d111a25ec68e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 942864f1461cc99bd087204cd8c27fc478cb7600
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289777"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59602241"
 ---
 # <a name="marking-business-objects-as-safe-for-scripting"></a>Kennzeichnen von Geschäftsobjekten als sicher für Skripting
 
@@ -30,13 +30,13 @@ Categories\{7DD95801-9882-11CF-9FA9-00AA006C42C4}]
 Categories\{7DD95802-9882-11CF-9FA9-00AA006C42C4}] 
 ```
 
-dabei \<ist *MyActiveXGUID* \> die hexadezimale GUID-Nummer Ihres Geschäftsobjekts. Speichern Sie es, und führen Sie es mithilfe des Registrierungs-Editors in Ihre Registrierung ein, oder Doppelklicken Sie in Windows Explorer auf die reg-Datei.
+\<*MyActiveXGUID*\>gibt die hexadezimale GUID-Nummer des Geschäftsobjekts an. Speichern Sie sie, und führen Sie sie mithilfe des Registrierungs-Editors in Ihrer Registrierung zusammen, oder doppelklicken Sie im Explorer Windows auf die REG-Datei.
 
-Geschäftsobjekte, die in Microsoft Visual Basic erstellt wurden, können mit dem Paket-und Bereitstellungs-Assistenten automatisch als "sicher für die Skripterstellung" gekennzeichnet werden. Wählen Sie **Safe for initialization** und **Safe for scripting** aus, wenn Sie vom Assistenten auffordert werden, Sicherheitseinstellungen anzugeben.
+In Microsoft Visual Basic erstellte Geschäftsobjekte können mit dem Paket- und Bereitstellungs-Assistenten automatisch als "sicher für Skripts" gekennzeichnet werden. Wählen Sie **Safe for initialization** und **Safe for scripting** aus, wenn Sie vom Assistenten auffordert werden, Sicherheitseinstellungen anzugeben.
 
 Im letzten Schritt erstellt der Anwendungseinrichtungs-Assistent eine HTM- und eine CAB-Datei. Sie können diese beiden Dateien anschließend auf den Zielcomputer kopieren. Doppelklicken Sie dann auf die HTM-Datei, um die Seite zu laden und den Server ordnungsgemäß zu registrieren.
 
-Da das\\Geschäftsobjekt standardmäßig im Windows System32\\Occache-Verzeichnis installiert wird, verschieben Sie es in das Windows\\System32-Verzeichnis, und ändern Sie die HKEY **\_-Klassen\_-Stamm\\-CLSID\\ ** . \< ** MyActiveXGUID\>InprocServer32-Registrierungsschlüssel zur Übereinstimmung mit dem richtigen Pfad.**** \\
+Da das Geschäftsobjekt standardmäßig im Windows \\ System32 Occache-Verzeichnis installiert wird, verschieben Sie es in \\ das Windows \\ System32-Verzeichnis, und ändern Sie den **Registrierungsschlüssel HKEY \_ CLASSES ROOT \_ \\ CLSID \\** \<*MyActiveXGUID*\> \\ **InprocServer32** so, dass er dem richtigen Pfad entspricht.
 
 
 > [!NOTE]

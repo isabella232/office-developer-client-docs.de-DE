@@ -1,24 +1,25 @@
 ---
-title: DbEngine. Idle-Methode (DAO)
+title: DBEngine.Idle-Methode (DAO)
 TOCTitle: Idle Method
+description: Idle-Methode
 ms:assetid: c90b565e-626e-139d-102a-0386601ce0c8
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff823202(v=office.15)
 ms:contentKeyID: 48547666
-ms.date: 09/18/2015
+ms.date: 09/14/2021
 mtps_version: v=office.15
 f1_keywords:
 - dao360.chm1052978
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 7a84e3cc4b35886a12b2e6b4cf92b7483fea293a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 0c476e335bc14392ccac304108b9df3056fd7548
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294330"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59581462"
 ---
-# <a name="dbengineidle-method-dao"></a>DbEngine. Idle-Methode (DAO)
+# <a name="dbengineidle-method-dao"></a>DBEngine.Idle-Methode (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -26,39 +27,17 @@ Unterbricht die Datenverarbeitung und ermöglicht es dem Microsoft Access-Datenb
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Leerlauf (***Aktion***)
+*Ausdruck* . Idle(***Action***)
 
-*Ausdruck* Eine Variable, die ein **DBEngine** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **DBEngine**-Objekt darstellt.
 
 ## <a name="parameters"></a>Parameter
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Name</p></th>
-<th><p>Erforderlich/optional</p></th>
-<th><p>Datentyp</p></th>
-<th><p>Beschreibung</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><em>Action</em></p></td>
-<td><p>Optional</p></td>
-<td><p><strong>Variant</strong></p></td>
-<td><p>Gibt die auszuführende Aktion an. Dies kann eine der <strong><a href="idleenum-enumeration-dao.md">IdleEnum</a></strong> -Konstanten sein.</p></td>
-</tr>
-</tbody>
-</table>
+|**Name**|**Erforderlich/optional**|**Datentyp**|**Beschreibung**|
+|:----------|:----------|:----------|:----------|
+|*Action*|Optional|**Variant**|Gibt die auszuführende Aktion an.|
 
-
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Mit der **Idle**-Methode kann das Microsoft Access-Datenbankmodul Hintergrundaufgaben ausführen, die wegen der umfangreichen Datenverarbeitung möglicherweise nicht mehr aktuell sind. Dies kommt oft in Multitaskingumgebungen mit mehreren Benutzern vor, in denen die Hintergrundverarbeitungszeit nicht ausreicht, um alls Datensätze in einem **[Recordset](recordset-object-dao.md)** auf dem aktuellen Stand zu halten.
 
@@ -123,4 +102,3 @@ Sub IdleOutput(rstTemp As Recordset, strTemp As String)
 End Sub 
  
 ```
-

@@ -1,27 +1,27 @@
 ---
-title: '#A0'
+title: TNEF-Streamsyntax
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 1353d494-c266-4715-afe7-14543a1bbe1b
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 12d2a92ff80897456707c7ab8af8f704605c85d0
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 841404f5f7cb13fadd964f13174dc25c493e0015
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423027"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59609327"
 ---
-# <a name="tnef-stream-syntax"></a>#A0
+# <a name="tnef-stream-syntax"></a>TNEF-Streamsyntax
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-In diesem Thema wird eine Bakus-Nauer beschreibung der TNEF-Streamsyntax beschrieben. In dieser Beschreibung sind nicht terminale Elemente, die eine weitere Definition haben, italisch. Konstanten und Literalelemente sind fett formatiert. Sequenzen von Elementen werden in der Reihenfolge einer einzelnen Zeile aufgelistet. Das _Stream-Element_ besteht z. B. aus der TNEF_SIGNATURE **,** gefolgt von einem _Key_-Element, gefolgt von einem _Object -Element._ Wenn ein Element über mehrere mögliche Implementierungen verfügt, werden die Alternativen in aufeinander folgenden Zeilen aufgelistet. Ein Objekt  kann z. B. aus einer  Message_Seq _,_ einer Message_Seq gefolgt von einer Attach_Seq _oder_ einfach einer Attach_Seq _._
+In diesem Thema wird eine Bakus-Nauer wie die Beschreibung der TNEF-Datenstromsyntax vorgestellt. In dieser Beschreibung sind nicht terminale Elemente, die eine weitere Definition haben, kursiv formatierend. Konstanten und Literalelemente sind fett formatiert. Sequenzen von Elementen werden in einer einzelnen Zeile in der angegebenen Reihenfolge aufgelistet. Beispielsweise besteht das  _Stream_ -Element aus der Konstante **TNEF_SIGNATURE**, gefolgt von einem  _Schlüssel_, gefolgt von einem  _Objekt_. Wenn ein Element mehrere mögliche Implementierungen aufweist, werden die Alternativen in aufeinander folgenden Zeilen aufgeführt. Ein  _Objekt_ kann z. B. aus einem  _Message_Seq,_ einem  _Message_Seq_ gefolgt von einem  _Attach_Seq_ oder nur aus einem  _Attach_Seq_ bestehen.
   
  _TNEF_Stream:_
   
@@ -29,9 +29,9 @@ In diesem Thema wird eine Bakus-Nauer beschreibung der TNEF-Streamsyntax beschri
     
  _Schlüssel:_
   
-> eine nicht signierte 16-Bit-Ganzzahl ungleich 16 Bit
+> Eine 16-Bit-Ganzzahl ohne Vorzeichen ungleich Null
     
-TNEF-aktivierte Transporte generieren diesen Wert, bevor die TNEF-Implementierung zum Generieren eines TNEF-Datenstroms verwendet wird.
+TNEF-aktivierte Transporte generieren diesen Wert, bevor die TNEF-Implementierung zum Generieren eines TNEF-Streams verwendet wird.
   
  _Objekt:_
   
@@ -55,9 +55,9 @@ TNEF-aktivierte Transporte generieren diesen Wert, bevor die TNEF-Implementierun
     
  _Msg_Attribute:_
   
-> **LVL_MESSAGE** attribut-ID attribut-length attribut-data checksum 
+> **LVL_MESSAGE** Attribut-ID-Attributlängenattribut-Datenprüfsumme 
     
-Attribut-ID ist eine der TNEF-Attributbezeichner, z. B. **attSubject**. Attributlänge ist die Länge in Bytes der Attributdaten. Attributdaten sind die Daten, die dem Attribut zugeordnet sind.
+Attribut-ID ist einer der TNEF-Attributbezeichner, z. B. **attSubject**. Die Attributlänge ist die Länge der Attributdaten in Byte. Attributdaten sind die dem Attribut zugeordneten Daten.
   
  _Attach_Seq:_
   
@@ -65,9 +65,9 @@ Attribut-ID ist eine der TNEF-Attributbezeichner, z. B. **attSubject**. Attribut
     
  _attRenddata:_
   
-> **LVL_ATTACHMENT attRenddata** **sizeof(RENDDATA)** renddata checksum 
+> **LVL_ATTACHMENT attRenddata** **sizeof(RENDDATA) renddata** checksum 
     
-Renddata sind die Der **RENDDATA-Struktur** zugeordneten Daten, die die Renderinginformationen für die entsprechende Anlage enthalten. Die **RENDDATA-Struktur** ist im TNEF definiert. H-Headerdatei. 
+"Renddata" sind die Daten, die der **RENDDATA-Struktur** zugeordnet sind und die Renderinginformationen für die entsprechende Anlage enthalten. Die **RENDDATA-Struktur** ist im TNEF definiert. H-Headerdatei. 
   
  _Att_Attribute_Seq:_
   
@@ -75,8 +75,8 @@ Renddata sind die Der **RENDDATA-Struktur** zugeordneten Daten, die die Renderin
     
  _Att_Attribute:_
   
-> **LVL_ATTACHMENT** attribut-ID attribut-length attribut-data checksum 
+> **LVL_ATTACHMENT** Attribut-ID-Attributlängenattribut-Datenprüfsumme 
     
-Attribut-ID, Attributlänge und Attributdaten haben die gleichen Bedeutungen wie für das Msg_Attribute Element.
+Attribut-ID, Attributlänge und Attributdaten haben die gleiche Bedeutung wie für das Msg_Attribute Element.
   
 

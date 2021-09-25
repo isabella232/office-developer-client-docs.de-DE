@@ -1,18 +1,18 @@
 ---
-title: AllowNullsEnum (Access Desktop Database Reference)
+title: AllowNullsEnum (Access-Desktopdatenbankreferenz)
 TOCTitle: AllowNullsEnum
 ms:assetid: 7bb42b38-6b3b-5930-b1d7-16323a3bdf37
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249515(v=office.15)
 ms:contentKeyID: 48545819
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: c184253551fa3f974de1840d47654af597881cb8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: ca33c16c4588127998527b7f4a9cdcedd50d35e0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32297165"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559108"
 ---
 # <a name="allownullsenum"></a>AllowNullsEnum
 
@@ -53,7 +53,7 @@ Gibt an, ob Datensätze mit Nullwerten indiziert werden.
 </tr>
 <tr class="even">
 <td><p><strong>adIndexNullsIgnoreAny</strong></p></td>
-<td><p>4</p></td>
+<td><p>4 </p></td>
 <td><p>Der Index fügt keine Einträge mit einer nullwertigen Schlüsselspalte ein. Bei einem Index mit einem mehrspaltigen Schlüssel wird der Eintrag ignoriert und kein Fehler ausgelöst, wenn ein Nullwert in eine Spalte eingegeben wird.</p></td>
 </tr>
 </tbody>

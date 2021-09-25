@@ -1,18 +1,18 @@
 ---
-title: EventStatusEnum (Access Desktop Database Reference)
+title: EventStatusEnum (Access-Desktopdatenbankreferenz)
 TOCTitle: EventStatusEnum
 ms:assetid: ae1711bc-2af5-04fd-7d8c-222d8afc9d3d
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249821(v=office.15)
 ms:contentKeyID: 48547059
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 654d2a485c9273072d1daa61321e73418a15e969
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 5a703dcafc981bd5663d01329330dd3cd2b0e23b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293273"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59602682"
 ---
 # <a name="eventstatusenum"></a>EventStatusEnum
 
@@ -37,17 +37,17 @@ Gibt den aktuellen Status der Ausführung eines Ereignisses an.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>adStatusCancel fest</strong></p></td>
-<td><p>4</p></td>
+<td><p><strong>adStatusCancel</strong></p></td>
+<td><p>4 </p></td>
 <td><p>Fordert den Abbruch des Vorgangs an, der zum Ereignis führte.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adStatusCantDeny festgelegt</strong></p></td>
+<td><p><strong>adStatusCantDeny</strong></p></td>
 <td><p>3</p></td>
 <td><p>Gibt an, dass der Vorgang keinen Abbruch der ausstehenden Operation anfordern kann.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adStatusErrorsOccurred festgelegt</strong></p></td>
+<td><p><strong>adStatusErrorsOccurred</strong></p></td>
 <td><p>2</p></td>
 <td><p>Gibt an, dass der Vorgang, der das Ereignis verursachte, aufgrund eines Fehlers oder mehrerer Fehler fehlschlug.</p></td>
 </tr>
@@ -65,7 +65,7 @@ Gibt den aktuellen Status der Ausführung eines Ereignisses an.
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
 Paket: **com.ms.wfc.data**
 
@@ -80,19 +80,19 @@ Paket: **com.ms.wfc.data**
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums. EventStatus. CANCEL</p></td>
+<td><p>AdoEnums.EventStatus.CANCEL</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. EventStatus. CANTDENY</p></td>
+<td><p>AdoEnums.EventStatus.CANTDENY</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. EventStatus. ERRORSOCCURRED</p></td>
+<td><p>AdoEnums.EventStatus.ERRORSOCCURRED</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. EventStatus. OK</p></td>
+<td><p>AdoEnums.EventStatus.OK</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. EventStatus. UNWANTEDEVENT</p></td>
+<td><p>AdoEnums.EventStatus.UNWANTEDEVENT</p></td>
 </tr>
 </tbody>
 </table>

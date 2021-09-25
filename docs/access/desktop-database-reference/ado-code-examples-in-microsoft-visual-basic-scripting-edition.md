@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249575(v=office.15)
 ms:contentKeyID: 48546024
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: b8be48c74dbf17062388866d3ab982b6a24643f8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: b4aa94127c77daf6fccde6c61b37321b3abe591e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32281839"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603032"
 ---
 # <a name="ado-code-examples-in-microsoft-visual-basic-scripting-edition"></a>ADO-Codebeispiele in Microsoft Visual Basic Scripting Edition
 
@@ -28,8 +28,8 @@ Verwenden Sie die folgenden Codebeispiele, um zu erfahren, wie Sie die ADO-Metho
 - [AddNew-Methode (Beispiel)](addnew-method-example-vbscript.md)
 - [Clone-Methode (Beispiel)](clone-method-example-vbscript.md)
 - [Delete-Methode (Beispiel)](delete-method-example-vbscript.md)
-- [Execute-, reQuery-und Clear-Methoden (Beispiel)](execute-requery-and-clear-methods-example-vbscript.md)
+- [Execute-, Requery- und Clear-Methoden (Beispiel)](execute-requery-and-clear-methods-example-vbscript.md)
 - [Move-Methode (Beispiel)](move-method-example-vbscript.md)
-- [MoveFirst-, MoveLast-, MoveNext-und MovePrevious-Methoden (Beispiel)](movefirst-movelast-movenext-and-moveprevious-methods-example-vbscript.md)
-- [Open-und schließen-Methoden (Beispiel)](open-and-close-methods-example-vbscript.md)
+- [MoveFirst-, MoveLast-, MoveNext- und MovePrevious-Methoden (Beispiel)](movefirst-movelast-movenext-and-moveprevious-methods-example-vbscript.md)
+- [Open- und Close-Methoden (Beispiel)](open-and-close-methods-example-vbscript.md)
 

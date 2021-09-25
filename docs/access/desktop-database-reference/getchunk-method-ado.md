@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248979(v=office.15)
 ms:contentKeyID: 48543629
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 44cd0cb5632e64811de14f9abd3c78aac9203705
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f3097d42ef8c49d02c0f119ba5933a40dc3c214d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292286"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59602514"
 ---
 # <a name="getchunk-method-ado"></a>GetChunk-Methode (ADO)
 
@@ -22,7 +22,7 @@ Gibt den gesamten Inhalt oder einen Teil des Inhalts eines [Field](field-object-
 
 ## <a name="syntax"></a>Syntax
 
-*Variablen* = *Feld*. GetChunk (*Größe* )
+*Variable*  =  *field*. GetChunk(*Size* )
 
 ## <a name="return-value"></a>Rückgabewert
 
@@ -34,7 +34,7 @@ Gibt einen **Variant**-Wert zurück.
 |:--------|:----------|
 |*Size* |Ein **Long** -Ausdruck, der der Anzahl von Bytes oder Zeichen entspricht, die Sie abrufen möchten.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Verwenden Sie die **GetChunk**-Methode für ein **Field**-Objekt, um einen Teil der bzw. die gesamten umfangreichen Binär- oder Zeichendaten abzurufen. In Situationen, bei denen der Systemspeicher beschränkt ist, können Sie die **GetChunk**-Methode verwenden, um umfangreiche Werte in kleinere Einheiten aufzuteilen, statt deren Gesamtheit beizubehalten.
 

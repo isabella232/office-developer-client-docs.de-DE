@@ -6,21 +6,21 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm2155
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f743e4ee-343d-0edd-4a6d-5f104781a524
 description: Zeigt Funktionen und Formeln an, die über das Dialogfeld Feld in den Text des Shapes eingefügt werden.
-ms.openlocfilehash: ce6a658a553182e360eaa978254fc59b5bd5b59b
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 62133f45f37e753c386924ca7a40b32f5106b341
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33434949"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559416"
 ---
 # <a name="text-fields-section"></a>Abschnitt "Text Fields"
 
 Zeigt Funktionen und Formeln an, die über das Dialogfeld **Feld** in den Text des Shapes eingefügt werden. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die einzige Möglichkeit zum Hinzufügen dieses Abschnitts ist das Einfügen eines Felds in ein Shape unter Verwendung des Dialogfelds **Feld** (Registerkarte **Einfügen**). 
   

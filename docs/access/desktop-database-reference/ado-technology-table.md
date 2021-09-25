@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249146(v=office.15)
 ms:contentKeyID: 48544268
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: aac4d6371b9b34142698c91812e8cdba37551fdd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 6de2017ff38d9c7e09eb5657786163d9d5100d91
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283219"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559248"
 ---
 # <a name="ado-technology-table"></a>ADO-Technologietabelle
 
 **Gilt für**: Access 2013, Office 2013
 
-In der folgenden Tabelle sind die Microsoft-Produkte,-Tools und-Technologien aufgeführt, die im *ADO-Programmierhandbuch*erläutert werden. Soweit vorhanden, werden Links zu entsprechenden Themen im Handbuch angeboten.
+In der folgenden Tabelle sind die Microsoft-Produkte, -Tools und -Technologien aufgeführt, die im *ADO-Programmierhandbuch* behandelt werden. Soweit vorhanden, werden Links zu entsprechenden Themen im Handbuch angeboten.
 
 <table>
 <colgroup>
@@ -28,12 +28,12 @@ In der folgenden Tabelle sind die Microsoft-Produkte,-Tools und-Technologien auf
 <thead>
 <tr class="header">
 <th><p>Microsoft-Produkt oder -Technologie</p></th>
-<th><p>Verweise</p></th>
+<th><p>Informationsquellen</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Zugriff/Jet</p></td>
+<td><p>Access/Jet</p></td>
 <td><p><a href="working-with-recordsets.md">Verwenden von Recordsets</a><br/><br/><a href="chapter-15-adox-fundamentals.md">Kapitel 15: Grundlegendes zu ADOX</a><br/><br/><a href="microsoft-ole-db-provider-for-microsoft-jet.md">OLE DB-Anbieter für Microsoft Jet</a><br/><br/></p></td>
 </tr>
 <tr class="even">
@@ -45,7 +45,7 @@ In der folgenden Tabelle sind die Microsoft-Produkte,-Tools und-Technologien auf
 <td><p><a href="prerequisites-ado-introduction.md">Voraussetzungen</a><br/><br/><a href="marking-business-objects-as-safe-for-scripting.md">Kennzeichnen von Geschäftsobjekten als sicher für die Verwendung von Skript</a><br/><br/><a href="registering-business-objects-on-the-client-for-use-with-dcom.md">Registrieren von Geschäftsobjekten auf dem Client für die Verwendung mit DCOM</a><br/><br/><a href="setting-dcom-stream-marshaling-format.md">Festlegen des DCOM-Formats für Datenstrommarshalling</a><br/><br/><a href="enabling-a-dll-to-run-on-dcom.md">Aktivieren einer DLL für die Ausführung mit DCOM</a><br/><br/><a href="running-business-objects-in-component-services.md">Ausführen von Geschäftsobjekten in Komponentendiensten</a><br/><br/></p></td>
 </tr>
 <tr class="even">
-<td><p>FrontPage</p></td>
+<td><p>Frontpage</p></td>
 <td><p><a href="microsoft-ole-db-provider-for-internet-publishing.md">Microsoft OLE DB-Anbieter für Internet Publishing</a><br/><br/></p></td>
 </tr>
 <tr class="odd">
@@ -58,7 +58,7 @@ In der folgenden Tabelle sind die Microsoft-Produkte,-Tools und-Technologien auf
 </tr>
 <tr class="odd">
 <td><p>Internetinformationsdienste</p></td>
-<td><p><a href="chapter-10-records-and-streams.md">Kapitel 10: Datensätze und Datenströme</a><br/><br/><a href="streams-and-persistence.md">Datenströme und Permanenz</a><br/><br/><a href="using-ado-for-internet-publishing.md">Verwenden von ADO für Internet Publishing</a><br/><br/><a href="solutions-for-remote-data-access.md">Lösungen für Remotedatenzugriff</a><br/><br/><a href="configuring-virtual-servers-on-iis.md">Konfigurieren virtueller Server in IIS</a><br/><br/><a href="specifying-threads-per-processor-on-iis.md">Angeben der Threads pro Prozessor in IIS</a><br/><br/><a href="securing-rds-applications.md">Sichern von RDS-Anwendungen</a><br/><br/><a href="internet-server-error-access-denied.md">&quot;Internet Server Fehler: Zugriff verweigert&quot;</a><br/><br/><a href="microsoft-ole-db-provider-for-internet-publishing.md">Microsoft OLE DB-Anbieter für Internet Publishing</a><br/><br/><a href="internet-information-services-error-codes.md">IIS-Fehlercodes (Internetinformationsdienste)</a><br/><br/></p></td>
+<td><p><a href="chapter-10-records-and-streams.md">Kapitel 10: Datensätze und Datenströme</a><br/><br/><a href="streams-and-persistence.md">Datenströme und Permanenz</a><br/><br/><a href="using-ado-for-internet-publishing.md">Verwenden von ADO für Internet Publishing</a><br/><br/><a href="solutions-for-remote-data-access.md">Lösungen für Remotedatenzugriff</a><br/><br/><a href="configuring-virtual-servers-on-iis.md">Konfigurieren virtueller Server in IIS</a><br/><br/><a href="specifying-threads-per-processor-on-iis.md">Angeben der Threads pro Prozessor in IIS</a><br/><br/><a href="securing-rds-applications.md">Sichern von RDS-Anwendungen</a><br/><br/><a href="internet-server-error-access-denied.md">&quot;Internetserverfehler: Zugriff verweigert&quot;</a><br/><br/><a href="microsoft-ole-db-provider-for-internet-publishing.md">Microsoft OLE DB-Anbieter für Internet Publishing</a><br/><br/><a href="internet-information-services-error-codes.md">IIS-Fehlercodes (Internetinformationsdienste)</a><br/><br/></p></td>
 </tr>
 <tr class="even">
 <td><p>JScript</p></td>

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.ScCountProps
 api_type:
 - COM
 ms.assetid: 76e4cc52-e1a0-4e0b-a2a6-a17644f6b2e7
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 49634bda487143ddd8d8806b94f6c451ccf57b75
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8933e0ea62caaaed2ece303fea380e812034724e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404974"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59609537"
 ---
 # <a name="sccountprops"></a>ScCountProps
 
@@ -25,7 +25,7 @@ ms.locfileid: "33404974"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bestimmt die Größe eines Eigenschaftswertarrays in Bytes und überprüft den dem Array zugeordneten Arbeitsspeicher. 
+Bestimmt die Größe eines Eigenschaftswertarrays in Byte und überprüft den dem Array zugeordneten Speicher. 
   
 |||
 |:-----|:-----|
@@ -45,13 +45,13 @@ SCODE ScCountProps(
 
  _cprop_
   
-> [in] Anzahl der Eigenschaften im Array, das durch den  _rgprop-Parameter angegeben_ wird. 
+> [in] Anzahl der Eigenschaften im Array, die durch den  _rgprop-Parameter_ angegeben werden. 
     
  _rgprop_
   
-> [in] Zeiger auf einen Bereich in einem Array von [SPropValue-Strukturen,](spropvalue.md) der die Eigenschaften definiert, deren Größe bestimmt werden soll. Dieser Bereich beginnt nicht unbedingt am Anfang des Arrays. 
+> [in] Zeiger auf einen Bereich in einem Array von [SPropValue-Strukturen,](spropvalue.md) die die Eigenschaften definieren, deren Größe bestimmt werden soll. Dieser Bereich beginnt nicht unbedingt am Anfang des Arrays. 
     
- _leiterplatte_
+ _Pcb_
   
 > [out] Optionaler Zeiger auf die Größe des Eigenschaftenarrays in Bytes.
     
@@ -63,13 +63,13 @@ S_OK
     
 MAPI_E_INVALID_PARAMETER 
   
-> Mindestens eine Eigenschaft im Eigenschaftswertarray hat den Bezeichner PROP_ID_NULL oder PROP_ID_INVALID, oder das Eigenschaftenarray enthält eine mehrwertige Eigenschaft ohne Eigenschaftswerte.
+> Mindestens eine Eigenschaft im Eigenschaftswertarray weist den Bezeichner PROP_ID_NULL oder PROP_ID_INVALID auf, oder das Eigenschaftenarray enthält eine mehrwertige Eigenschaft ohne Eigenschaftswerte.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Wenn NULL im  _Parameter "pcb"_ übergeben wird, überprüft die **ScCountProps-Funktion** das Array der Benachrichtigungen, es wird jedoch keine Zählung durchgeführt. Wenn ein Nicht-Null-Wert _in_ einer Leiterplatte übergeben wird, bestimmt die **ScCountNotifications-Funktion** die Größe des Arrays und speichert die Ursache _der Leiterplatte._ Der  _Parameter "pcb"_ muss groß genug sein, um das gesamte Array enthalten zu können. 
+Wenn NULL im  _Parameter "parameters"_ übergeben wird, überprüft die **ScCountProps-Funktion** das Array von Benachrichtigungen, aber es wird keine Zählung durchgeführt. Wenn ein Nicht-NULL-Wert in _einem Arbeitsblatt_ übergeben wird, bestimmt die **ScCountNotifications-Funktion** die Größe des Arrays und speichert die _Ursache._ Der  _Parameter "parameters"_ muss groß genug sein, um das gesamte Array enthalten zu können. 
   
-Während der Zählung **überprüft ScCountProps** den dem Array zugeordneten Arbeitsspeicher. **ScCountProps funktioniert** nur mit Eigenschaften, über die MAPI Über Informationen verfügt. 
+Bei der Zählung überprüft **ScCountProps** den dem Array zugeordneten Speicher. **ScCountProps** funktioniert nur mit Eigenschaften, zu denen MAPI Informationen enthält. 
   
 ## <a name="see-also"></a>Siehe auch
 

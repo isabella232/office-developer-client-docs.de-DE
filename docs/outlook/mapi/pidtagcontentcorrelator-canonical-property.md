@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagContentCorrelator
 api_type:
 - HeaderDef
 ms.assetid: 0bf78879-2f9f-4c29-b1f4-2f4882d8464d
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 96e0e3152a70eb2913c4559afd99e25adff48ca9
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: baad9a247687f9753a5c63d27c7e9cdc07b74e5e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33438526"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616544"
 ---
 # <a name="pidtagcontentcorrelator-canonical-property"></a>PidTagContentCorrelator (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "33438526"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält einen Wert, den der Absender der Nachricht verwenden kann, um einen Bericht mit der ursprünglichen Nachricht zu übereinstimmen.
+Enthält einen Wert, den der Absender der Nachricht verwenden kann, um einen Bericht mit der ursprünglichen Nachricht zuzuordnen.
   
 |||
 |:-----|:-----|
@@ -34,9 +34,9 @@ Enthält einen Wert, den der Absender der Nachricht verwenden kann, um einen Ber
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Exchange  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Der Inhalt der binären Zeichenfolge wird vom Nachrichtenursprung definiert. Wenn für eine ausgehende Nachricht festgelegt, sollte diese Eigenschaft in alle Berichte kopiert werden, die als Antwort auf die Nachricht generiert werden.
+Der Inhalt der binären Zeichenfolge wird vom Nachrichtenursprungsgeber definiert. Wenn diese Eigenschaft für eine ausgehende Nachricht festgelegt ist, sollte sie in alle Berichte kopiert werden, die als Reaktion auf die Nachricht generiert wurden.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,11 +44,11 @@ Der Inhalt der binären Zeichenfolge wird vom Nachrichtenursprung definiert. Wen
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

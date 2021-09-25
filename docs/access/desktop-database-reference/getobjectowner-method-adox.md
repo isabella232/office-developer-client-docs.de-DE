@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249451(v=office.15)
 ms:contentKeyID: 48545585
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 948464534f9bbfbea50c8eba2c926dea9cb9bcac
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 215546377e085dfb1385b2f00ed882b9d3e85179
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292258"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568964"
 ---
 # <a name="getobjectowner-method-adox"></a>GetObjectOwner-Methode (ADOX)
 
@@ -22,7 +22,7 @@ Gibt den Besitzer eines Objekts in einem [Catalog](catalog-object-adox.md)-Objek
 
 ## <a name="syntax"></a>Syntax
 
-*Besitzer* = *Katalog*. GetObjectOwner (*objectName*, *Objekttyp* \[, objecttypecode)**\]
+*Besitzer*  =  *Catalog*. GetObjectOwner(*ObjectName*, *ObjectType* \[ ,*ObjectTypeId* \] )
 
 ## <a name="return-value"></a>Rückgabewert
 
@@ -34,9 +34,9 @@ Gibt einen **String**-Wert zurück, der den [Namen](name-property-adox.md) des [
 |:--------|:----------|
 |*ObjectName* |Ein **String** -Wert, der den Namen des Objekts angibt, für das der Besitzer zurückgegeben werden soll.|
 |*ObjectType* |Ein **Long** -Wert, der eine der [ObjectTypeEnum](objecttypeenum.md)-Konstanten sein kann, die den Typ des Objekts angibt, für das der Besitzer zurückgegeben werden soll.|
-|*ObjectType* |Optional. Ein **Variant**-Wert, der die GUID für einen Anbieterobjekttyp angibt, der nicht durch die OLE DB-Spezifikation definiert ist. Dieser Parameter ist erforderlich, wenn *ObjectType* auf **adPermObjProviderSpecific** festgelegt ist. Andernfalls wird dieser Parameter nicht verwendet.|
+|*ObjectTypeId* |Optional. Ein **Variant**-Wert, der die GUID für einen Anbieterobjekttyp angibt, der nicht durch die OLE DB-Spezifikation definiert ist. Dieser Parameter ist erforderlich, wenn *ObjectType* auf **adPermObjProviderSpecific** festgelegt ist. Andernfalls wird dieser Parameter nicht verwendet.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn der Anbieter nicht die Rückgabe von Objektbesitzern unterstützt, tritt ein Fehler auf.
 

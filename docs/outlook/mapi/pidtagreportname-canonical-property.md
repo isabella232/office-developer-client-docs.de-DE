@@ -1,25 +1,25 @@
 ---
-title: PidTagReportName (kanonische Eigenschaft)
+title: Kanonische PidTagReportName-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagReportName
 api_type:
 - COM
 ms.assetid: 4ec3100f-7cf1-4702-b326-e6da586a7bb2
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 33a7545f9b2719615617d46e2d5ed1f6952b5522
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: d6f5608aaf6a48680f61156463892eb9831333b0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33422313"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59591556"
 ---
-# <a name="pidtagreportname-canonical-property"></a>PidTagReportName (kanonische Eigenschaft)
+# <a name="pidtagreportname-canonical-property"></a>Kanonische PidTagReportName-Eigenschaft
 
   
   
@@ -34,11 +34,11 @@ Enthält den Anzeigenamen für den Empfänger, der Berichte für diese Nachricht
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften sind Beispiele für die Adresseigenschaften für den Empfänger, den der Absender delegiert hat, um berichte zu empfangen, die für diese Nachricht generiert wurden.
   
-Eine Clientanwendung, die Berichte an einen anderen Benutzer weiter routen muss, sollte diese Eigenschaften zum Zeitpunkt der Nachrichtenübermittlung festlegen. Wenn sie nicht festgelegt sind, werden die Berichte an den Nachrichtensender gesendet.
+Eine Clientanwendung, die Berichte an einen anderen Benutzer weiterleiten muss, sollte diese Eigenschaften zum Zeitpunkt der Nachrichtenübermittlung festlegen. Wenn sie nicht festgelegt sind, werden die Berichte an den Absender der Nachricht gesendet.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -46,11 +46,11 @@ Eine Clientanwendung, die Berichte an einen anderen Benutzer weiter routen muss,
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -58,9 +58,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

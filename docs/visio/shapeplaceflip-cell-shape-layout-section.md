@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82253247
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 40008507-d9e4-9c0e-603f-d5e6da73a94b
 description: Legt fest, wie ein platzierbares Shape auf dem Zeichenblatt gekippt und/oder gedreht wird, wenn Sie Shapes unter Verwendung des Dialogfelds Layout konfigurieren ausrichten. (Klicken Sie dazu auf der Registerkarte Entwurf in der Gruppe Layout auf Seite neu anordnen, und klicken Sie dann auf Weitere Layoutoptionen.)
-ms.openlocfilehash: 72ef1b67dd87d842e6a4372d1eb08d614f0eb2d3
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 4068db4cc4c1eaa96e1b0cd3a1827cbf935dfe9e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429278"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59622921"
 ---
 # <a name="shapeplaceflip-cell-shape-layout-section"></a>Zelle "ShapePlaceFlip" (Abschnitt "Shape Layout")
 
@@ -28,19 +28,19 @@ Legt fest, wie ein platzierbares Shape auf dem Zeichenblatt gekippt und/oder ged
 |4   <br/> |In 90-Grad-Schritten zwischen 0 und 270 kippen.  <br/> |**visLOFlipRotate** <br/> |
 |8   <br/> |Nicht kippen.  <br/> |**visLOFlipNone** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert in der Zelle ShapePlaceFlip hilft bei der Ausrichtung eines platzierbaren Shapes in Richtung des nächsten platzierbaren Shapes, mit dem es verbunden ist.
   
-Verwenden Sie zum Festlegen dieses Verhaltens für  *alle*  Formen auf dem Zeichenblatt die Zelle PlaceFlip im Abschnitt Seitenlayout. 
+Verwenden Sie die Zelle PlaceFlip im Abschnitt Seitenlayout, um dieses Verhalten für  *alle*  Formen auf dem Zeichenblatt festzulegen. 
   
-Verwenden Sie zum Erhalten eines Verweises auf die Zelle ShapePlaceFlip anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft:** 
+Verwenden Sie Folgendes, um einen Verweis auf die Zelle ShapePlaceFlip anhand des Namens einer anderen Formel oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |ShapePlaceFlip  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die ShapePlaceFlip-Zelle nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle ShapePlaceFlip anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

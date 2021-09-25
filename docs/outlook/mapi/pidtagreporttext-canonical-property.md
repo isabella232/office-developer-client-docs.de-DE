@@ -1,31 +1,31 @@
 ---
-title: PidTagReportText (kanonische Eigenschaft)
+title: Kanonische PidTagReportText-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagReportTag
 api_type:
 - COM
 ms.assetid: 09bd3bdf-28d6-432c-9213-562a9a271adc
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 7173caa7a31bc3ad11a4785b6a1498aba139de7c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 94a951f06458cd24b50797e24d727b2f3bcaad8d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359192"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59591549"
 ---
-# <a name="pidtagreporttext-canonical-property"></a>PidTagReportText (kanonische Eigenschaft)
+# <a name="pidtagreporttext-canonical-property"></a>Kanonische PidTagReportText-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält optionalen Text für einen Bericht, der vom Messagingsystem generiert wird.
+Enthält optionalen Text für einen vom Messagingsystem generierten Bericht.
   
 |||
 |:-----|:-----|
@@ -34,9 +34,9 @@ Enthält optionalen Text für einen Bericht, der vom Messagingsystem generiert w
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Nachricht  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-In der Regel wird der in diesen Eigenschaften enthaltene Text als Antwort auf einen Zustellungs- oder Unzustellungsbericht oder einen lese- oder ungelesenen Bericht generiert, der vom zugrunde liegenden Messagingsystem empfangen wurde, ist jedoch nicht selbst Text, der über dieses System übertragen wurde. 
+In der Regel wird der in diesen Eigenschaften enthaltene Text als Reaktion auf einen Übermittlungs- oder Unzustellbarkeitsbericht oder einen gelesenen oder nicht gelesenen Bericht generiert, der vom zugrunde liegenden Messagingsystem empfangen wurde, aber nicht selbst Text ist, der über dieses System übertragen wurde. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,7 +44,7 @@ In der Regel wird der in diesen Eigenschaften enthaltene Text als Antwort auf ei
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
@@ -54,11 +54,11 @@ In der Regel wird der in diesen Eigenschaften enthaltene Text als Antwort auf ei
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -66,9 +66,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

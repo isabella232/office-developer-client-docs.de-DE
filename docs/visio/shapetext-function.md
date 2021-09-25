@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251788
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 87ea5e8f-c3e0-009f-4bf8-8c34fbdb83a6
 description: Ruft den Text aus einer Form ab.
-ms.openlocfilehash: bb9b1fbe5900cd051828ed6c7ff07546567c1b23
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: bfd33bb6fe0aca144372474e484e31f095715e0d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33419345"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59622893"
 ---
 # <a name="shapetext-function"></a>SHAPETEXT Function
 
@@ -22,20 +22,20 @@ Ruft den Text aus einer Form ab.
   
 ## <a name="syntax"></a>Syntax
 
-SHAPETEXT (** *shapename! TheText* ** ** *[,flag]* ** ) 
+SHAPETEXT (** *Shapename! TheText* ** ** *[,flag]* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _shapename! TheText_ <br/> |Erforderlich  <br/> ||Ein Verweis auf die Zelle mit dem Namen TheText in der Zielform.  _Shapename!_ ist der Name der Form, aus der Sie den Text abrufen möchten.  <br/> |
-| _Flag_ <br/> |Optional.  <br/> |**Numeric** <br/> |Ein Bit, das das Format des Texts bestimmt. Wenn das Standard-Flag (0) verwendet wird, wird der Text genauso wie im Shape dargestellt.  <br/> |
+| _Shapename! TheText_ <br/> |Erforderlich  <br/> ||Ein Verweis auf die Zelle mit dem Namen "TheText" im Ziel-Shape.  _Shapename!_ ist der Name des Shapes, aus dem der Text abgerufen werden soll.  <br/> |
+| _Flag_ <br/> |Optional  <br/> |**Numeric** <br/> |Ein Bit, das das Format des Texts bestimmt. Wenn das Standard-Flag (0) verwendet wird, wird der Text genauso wie im Shape dargestellt.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
 Zeichenfolge
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Sie können eine beliebige Kombination folgender Flags mit der Funktion SHAPETEXT verwenden.
   

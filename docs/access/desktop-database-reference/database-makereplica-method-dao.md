@@ -1,5 +1,5 @@
 ---
-title: Database. MakeReplica-Methode (DAO)
+title: Database.MakeReplica-Methode (DAO)
 TOCTitle: MakeReplica Method
 ms:assetid: b6bf4982-0804-12ce-849f-d2b4ac2e48a5
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff822413(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1053371
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 9b9e2eac360d157f28b986b6598ade58b8c34ec6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: afdb4fe18c3dc987795092859262aca3054b13cd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294918"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59569181"
 ---
-# <a name="databasemakereplica-method-dao"></a>Database. MakeReplica-Methode (DAO)
+# <a name="databasemakereplica-method-dao"></a>Database.MakeReplica-Methode (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -26,7 +26,7 @@ Macht aus einem Datenbankreplikat ein neues Replikat (gilt nur für Microsoft Ac
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . MakeReplica (***Pfadname***, ***Beschreibung***, ***Optionen***)
+*Ausdruck* . MakeReplica(***PathName** _, _*_Description_*_, _*_Options_**)
 
 *Ausdruck* Eine Variable, die ein **Database** -Objekt darstellt.
 
@@ -61,22 +61,22 @@ Macht aus einem Datenbankreplikat ein neues Replikat (gilt nur für Microsoft Ac
 <td><p>Ein <strong>String</strong>-Wert, der das Replikat beschreibt, das Sie erstellen.</p></td>
 </tr>
 <tr class="odd">
-<td><p><em>Options</em></p></td>
+<td><p><em>Optionen</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Eine <strong><a href="replicatypeenum-enumeration-dao.md">ReplicaTypeEnum</a></strong> -Konstante, die die Merkmale des Replikats angibt, das Sie erstellen.</p></td>
+<td><p>Eine <strong><a href="replicatypeenum-enumeration-dao.md">ReplicaTypeEnum</a></strong> -Konstante, die die Merkmale des replikats angibt, das Sie erstellen.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Für ein neu erstelltes Teilreplikat werden sämtliche **[ReplicaFilter](tabledef-replicafilter-property-dao.md)** -Eigenschaften auf **False** festgelegt, was bedeutet, dass die Tabelle keine Daten enthält.
 
 ## <a name="example"></a>Beispiel
 
-This function uses the **MakeReplica** method to create an additional replica of an existing Design Master. Das intOptions-Argument kann eine Kombination aus den Konstanten **dbRepMakeReadOnly** und **dbRepMakePartial**oder 0 sein. Wenn Sie beispielsweise ein nur-Lese-Teilreplikat erstellen möchten, sollten Sie den Wert **dbRepMakeReadOnly** + **dbRepMakePartial** als Wert von intOptions.
+This function uses the **MakeReplica** method to create an additional replica of an existing Design Master. Das intOptions-Argument kann eine Kombination der Konstanten **dbRepMakeReadOnly** und **dbRepMakePartial** oder 0 sein. Um beispielsweise ein schreibgeschütztes Teilreplikat zu erstellen, sollten Sie den Wert **dbRepMakeReadOnly**  +  **dbRepMakePartial** als Wert von intOptions übergeben.
 
 ```vb 
 Function MakeAdditionalReplica(strReplicableDB As _ 

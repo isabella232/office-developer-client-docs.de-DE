@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249060(v=office.15)
 ms:contentKeyID: 48543926
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 98342d5456c545e6da8539c11f616c08fd52a932
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: fb31007a8dc1a1471219a5849924e147aab41778
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32281633"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559213"
 ---
 # <a name="adorecordsetconstruction-interface-ado"></a>ADORecordsetConstruction-Schnittstelle (ADO)
 
@@ -34,17 +34,17 @@ Diese Schnittstelle unterstützt die folgenden Eigenschaften:
 <tr class="odd">
 <td><p><a href="chapter-property-ado.md">Kapitel</a></p></td>
 <td><p>Lese-/Schreibzugriff.<br />
-Ruft ein OLE DB- <strong>Chapter</strong> -Objekt aus/für dieses ADO- <strong>Recordset</strong> -Objekt ab.</p></td>
+Ruft ein OLE <strong>DB-Kapitelobjekt</strong> aus/für dieses <strong>ADO-Recordset-Objekt</strong> ab/legt es fest.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="rowposition-property-ado.md">RowPosition</a></p></td>
 <td><p>Lese-/Schreibzugriff.<br />
-Ruft ein OLE DB- <strong>RowPosition</strong> -Objekt aus/für dieses ADO- <strong>Recordset</strong> -Objekt ab.</p></td>
+Ruft ein OLE DB <strong>RowPosition</strong> -Objekt aus/für dieses <strong>ADO-Recordset-Objekt</strong> ab/legt dieses fest.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="rowset-property-ado.md">Rowset</a></p></td>
 <td><p>Lese-/Schreibzugriff.<br />
-Ruft ein OLE DB- <strong>Rowsetobjekt</strong> aus diesem ADO- <strong>Recordset</strong> -Objekt ab, oder legt dieses fest.</p></td>
+Ruft ein OLE <strong>DB-Rowset-Objekt</strong> aus/für dieses <strong>ADO-Recordset-Objekt</strong> ab/legt es fest.</p></td>
 </tr>
 </tbody>
 </table>
@@ -58,9 +58,9 @@ Keine.
 
 Keine.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Bei einem OLE DB **** -Rowsetobjekt (pRowset) wird die Erstellung eines ADO- **Recordset** -Objekts () durch die Erstellung eines ADO- **Recordset** -Objekts (adoRS) auf die folgenden drei grundlegenden Vorgänge festgestellt:
+Bei einem OLE **DB-Rowset-Objekt** (pRowset), der Erstellung eines **ADO-Recordset-Objekts** (), entspricht die Erstellung eines **ADO-Recordset-Objekts** (adoRs) den folgenden drei grundlegenden Vorgängen:
 
 1. Erstellen eines **Recordset** -Objekts von ADO:
     
@@ -76,14 +76,14 @@ Bei einem OLE DB **** -Rowsetobjekt (pRowset) wird die Erstellung eines ADO- **R
          (void**)&adoRsConstruct);
    ```
 
-3. Rufen Sie die IADORecordsetConstruction::p\_UT-Rowset-Eigenschaftsmethode auf, um das OLE DB-Rowsetobjekt für das ADO-Recordset-Objekt festzulegen:
+3. Rufen Sie die IADORecordsetConstruction::p ut \_ Rowset-Eigenschaftsmethode auf, um das OLE DB-Rowset-Objekt für das ADO-Recordset-Objekt festzulegen:
 
    ```vb     
     IUnknown *pUnk=NULL;
     pRowset->QueryInterface(IID_IUnknown, (void**)&pUnk);
     adoRsConstruct->put_Rowset(pUnk);
    ```
-Das resultierende Objekt stellt jetzt das ADO- **Recordset** -Objekt dar, das aus dem OLE DB- **Rowsetobjekt** erstellt wurde.
+Das resultierende Objekt stellt nun das aus dem OLE **DB-Rowset-Objekt** erstellte **ADO-Recordset-Objekt** dar.
 
 Sie können ein **Recordset**-Objekt von ADO auch von einem **Chapter**- oder **RowPosition**-Objekt von OLE DB erstellen.
 

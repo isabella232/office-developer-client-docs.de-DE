@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Bb612664(v=office.15)
 ms:contentKeyID: 55119884
 ms.date: 07/24/2014
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: e1d5b293f89c453886cafd9effc3fb5205f9696c
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.localizationpriority: medium
+ms.openlocfilehash: 2874f352dad4527fade65a714b231cdae85cf1ec
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34542597"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616313"
 ---
 # <a name="filter-and-efficiently-enumerate-items-in-a-folder"></a>Filtern und effizientes Aufzählen von Elementen in einem Ordner
 
@@ -24,7 +24,7 @@ Das Codebeispiel gibt die Eigenschaft **PR\_HASATTACH** mit dem MAPI-Namespace a
 
 Anschließend ruft das Beispiel **Columns.Add** ein weiteres Mal auf, um die **ReceiveTime**-Eigenschaft hinzuzufügen, wobei deren MAPI-Namespace angegeben wird, damit diese Spalte den Wert als Datums-/Uhrzeitwert in koordinierter Weltzeit (UTC) speichert. Im Beispiel wird schließlich jedes Element in der Tabelle aufgeführt, wobei der Wert der vier Eigenschaften als Tabellenspalten angegeben werden.
 
-Wenn Sie Visual Studio verwenden, um dieses Codebeispiel zu testen, müssen Sie der Microsoft Outlook 15.0-Objektbibliothekkomponente zuerst einen Verweis hinzufügen und die Outlook-Variable angeben, wenn Sie den **Microsoft.Office.Interop.Outlook**-Namespace importieren. Die Anweisung **Imports** oder **using** darf im Codebeispiel nicht direkt vor den Funktionen stehen, sondern muss vor der öffentlichen Class-Deklaration hinzugefügt werden. Die folgenden Codezeilen zeigen, wie Sie den Import und die Zuweisung in Visual Basic und C\# vornehmen.
+Wenn Sie dieses Codebeispiel mit Visual Studio testen, müssen Sie beim Importieren des **Microsoft.Office.Interop.Outlook**-Namespace zuerst einen Verweis auf die Microsoft Outlook 15.0-Objektbibliothekskomponente hinzufügen und die Outlook-Variable angeben. Die **Imports**- oder **using**-Anweisung darf nicht direkt vor den Funktionen im Codebeispiel stehen, sondern muss vor der öffentlichen Class-Deklaration hinzugefügt werden. Die folgenden Codezeilen zeigen, wie der Import und die Zuweisung in Visual Basic und C\# ausgeführt werden.
 
 ```vb
 Imports Outlook = Microsoft.Office.Interop.Outlook

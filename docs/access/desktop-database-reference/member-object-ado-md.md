@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250088(v=office.15)
 ms:contentKeyID: 48548025
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 380fdf6c15f6774e27221e8500100870d22350c4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 88884141e90faca4eb83168d4f2378df5a6e399a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289422"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59602227"
 ---
 # <a name="member-object-ado-md"></a>Member-Objekt (ADO MD)
 
@@ -21,7 +21,7 @@ ms.locfileid: "32289422"
 
 Stellt ein Element einer Ebene in einem Cube, die untergeordneten Elemente eines Elements einer Ebene oder ein Element einer Position auf der Achse einer Zellmenge dar.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 The properties of a **Member** differ depending on the context in which it is used. A **Member** of a [Level](level-object-ado-md.md) in a [CubeDef](cubedef-object-ado-md.md) has a [Children](children-property-ado-md.md) property that returns the **Members** on the next lower level in the hierarchy from the current **Member**. For a **Member** of a [Position](position-object-ado-md.md), the **Children** collection is always empty. Also, the [Type](type-property-ado-md.md) property applies only to **Members** of a **Level**.
 
@@ -43,7 +43,7 @@ With the collections and properties of a **Member** object of a **Level**, you c
 
   - Count the children of a **Member** with the [ChildCount](childcount-property-ado-md.md) property.
 
-  - Verwenden der [Properties](properties-collection-ado.md)-ADO-Standardauflistung, um zusätzliche Informationen zum **Level** -Objekt abzurufen.
+  - Verwenden der [Properties](properties-collection-ado.md)-ADO-Standardauflistung, um zusätzliche Informationen zum **Level**-Objekt abzurufen.
 
 With the collections and properties of a **Member** of a **Position** along an [Axis](axis-object-ado-md.md), you can do the following:
 
@@ -78,7 +78,7 @@ Die **Properties**-Auflistung enthält Eigenschaften, die vom Anbieter bereitges
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>CatalogName</p></td>
+<td><p>Catalogname</p></td>
 <td><p>Der Name des Katalogs, zu dem dieser Cube gehört.</p></td>
 </tr>
 <tr class="even">
@@ -118,7 +118,7 @@ Die **Properties**-Auflistung enthält Eigenschaften, die vom Anbieter bereitges
 <td><p>Die GUID des Elements.</p></td>
 </tr>
 <tr class="odd">
-<td><p>MemberName</p></td>
+<td><p>Membername</p></td>
 <td><p>Der Name des Elements.</p></td>
 </tr>
 <tr class="even">
@@ -146,7 +146,7 @@ Die **Properties**-Auflistung enthält Eigenschaften, die vom Anbieter bereitges
 <td><p>Der eindeutige Name des Elements, das dem Element übergeordnet ist.</p></td>
 </tr>
 <tr class="even">
-<td><p>Instanzschema</p></td>
+<td><p>Schemaname</p></td>
 <td><p>Der Name des Schemas, zu dem dieser Cube gehört.</p></td>
 </tr>
 </tbody>

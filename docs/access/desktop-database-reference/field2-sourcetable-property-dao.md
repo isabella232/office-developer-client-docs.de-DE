@@ -1,20 +1,20 @@
 ---
-title: Field2. sourceable-Eigenschaft (DAO)
+title: Field2.SourceTable-Eigenschaft (DAO)
 TOCTitle: SourceTable Property
 ms:assetid: 24d2fdda-d924-d95e-8458-063dd1d36d5d
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff191839(v=office.15)
 ms:contentKeyID: 48543768
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: a3ecf8b6655bb9f1dd2b25d264708112834e8a90
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 11e9c733bb509bfa56d3d53685cfbd30165829c1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292671"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59569047"
 ---
-# <a name="field2sourcetable-property-dao"></a>Field2. sourceable-Eigenschaft (DAO)
+# <a name="field2sourcetable-property-dao"></a>Field2.SourceTable-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -23,11 +23,11 @@ Gibt einen Wert zurück, der den Namen einer Tabelle enthält, bei der es sich u
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . SourceTable
+*Ausdruck* . Sourcetable
 
-*Ausdruck* Eine Variable, die ein **Field2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Field2**-Objekt darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Bei einem **Field2**-Objekt hängt die Verwendung der Eigenschaften **SourceField** und **SourceTable** vom Objekt ab, das die **Fields**-Auflistung enthält, der das **Field2**-Objekt angefügt wird (siehe folgende Tabelle).
 
@@ -39,7 +39,7 @@ Bei einem **Field2**-Objekt hängt die Verwendung der Eigenschaften **SourceFiel
 <thead>
 <tr class="header">
 <th><p>Zugehörigkeit zu Objekt</p></th>
-<th><p>Verwendung</p></th>
+<th><p>Nutzung</p></th>
 </tr>
 </thead>
 <tbody>
@@ -56,7 +56,7 @@ Bei einem **Field2**-Objekt hängt die Verwendung der Eigenschaften **SourceFiel
 <td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Beziehung</strong></p></td>
+<td><p><strong>Relation</strong></p></td>
 <td><p>Nicht unterstützt</p></td>
 </tr>
 <tr class="odd">

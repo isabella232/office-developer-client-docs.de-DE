@@ -1,5 +1,5 @@
 ---
-title: Field2. AppendChunk-Methode (DAO)
+title: Field2.AppendChunk-Methode (DAO)
 TOCTitle: AppendChunk Method
 ms:assetid: 540cd02d-1fc6-81d1-ac08-1e3df72a7208
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194088(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1052867
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: fda1ab5a3e339d951225f4f43ab4275cce2cdb80
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 26b11bad02c8943dba71f4d41486a78d3ec2eb30
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292881"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59581280"
 ---
-# <a name="field2appendchunk-method-dao"></a>Field2. AppendChunk-Methode (DAO)
+# <a name="field2appendchunk-method-dao"></a>Field2.AppendChunk-Methode (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -26,9 +26,9 @@ Appends data from a string expression to a Memo or Long Binary **Field2** object
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . AppendChunk (***Val***)
+*Ausdruck* . AppendChunk(***Val***)
 
-*Ausdruck* Eine Variable, die ein **Field2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Field2**-Objekt darstellt.
 
 ## <a name="parameters"></a>Parameter
 
@@ -58,7 +58,7 @@ Appends data from a string expression to a Memo or Long Binary **Field2** object
 </table>
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 You can use the **AppendChunk** and **GetChunk** methods to access subsets of data in a Memo or Long Binary field.
 

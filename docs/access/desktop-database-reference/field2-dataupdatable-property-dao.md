@@ -1,20 +1,20 @@
 ---
-title: Field2. dataAktualisierbar-Eigenschaft (DAO)
+title: Field2.DataUpdatable-Eigenschaft (DAO)
 TOCTitle: DataUpdatable Property
 ms:assetid: e6619c4e-26b1-777b-f0de-78fed3dbc890
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835966(v=office.15)
 ms:contentKeyID: 48548377
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 88a57ff2daeaaaab202daad55f01eebc6bdf86dd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4c8f47a18e8bc78c64ebee663b31b15a89ca1378
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292839"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59581273"
 ---
-# <a name="field2dataupdatable-property-dao"></a>Field2. dataAktualisierbar-Eigenschaft (DAO)
+# <a name="field2dataupdatable-property-dao"></a>Field2.DataUpdatable-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -26,9 +26,9 @@ Gibt einen Wert zurück, der angibt, ob die Daten eines durch ein **Field2**-Obj
 
 *Ausdruck* . DataUpdatable
 
-*Ausdruck* Eine Variable, die ein **Field2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Field2**-Objekt darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Ermitteln Sie mit dieser Eigenschaft, ob Sie die Einstellung einer **[Value](field-value-property-dao.md)** -Eigenschaft eines **Field2**-Objekts ändern können. Diese Eigenschaft ist bei einem **Field2**-Objekt immer **False**, dessen **[Attributes](field-attributes-property-dao.md)** -Eigenschaft auf **dbAutoIncrField** festgelegt ist.
 

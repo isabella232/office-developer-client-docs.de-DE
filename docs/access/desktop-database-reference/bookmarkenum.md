@@ -1,18 +1,18 @@
 ---
-title: BookmarkEnum (Access Desktop Database Reference)
+title: BookmarkEnum (Access-Desktopdatenbankreferenz)
 TOCTitle: BookmarkEnum
 ms:assetid: 75cf5edd-bcb6-ab61-8703-73775cce91de
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249482(v=office.15)
 ms:contentKeyID: 48545681
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: df80ff40a83c6aab1fc4657ac23d2e0ec1b28b01
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: e05ed858b0fb03417e54a3044e296d0da662c264
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296780"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558716"
 ---
 # <a name="bookmarkenum"></a>BookmarkEnum
 
@@ -55,7 +55,7 @@ Gibt eine Textmarke an, die darauf hinweist, wo die Operation beginnen soll.
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
 Paket: **com.ms.wfc.data**
 
@@ -70,13 +70,13 @@ Paket: **com.ms.wfc.data**
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums. Bookmark. CURRENT</p></td>
+<td><p>AdoEnums.Bookmark.CURRENT</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. Bookmark. FIRST</p></td>
+<td><p>AdoEnums.Bookmark.FIRST</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. Bookmark. LAST</p></td>
+<td><p>AdoEnums.Bookmark.LAST</p></td>
 </tr>
 </tbody>
 </table>

@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8c88a625-da57-3b1d-9887-0a898b722766
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 9456178e9426d7a5fe17382d876f507daa0251f4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 66c6b8d50947baafb726c41c28e3bb4d675eab4f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341601"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616418"
 ---
 # <a name="pidtagprofileserverfullversion-canonical-property"></a>PidTagProfileServerFullVersion (kanonische Eigenschaft)
 
@@ -21,7 +21,7 @@ ms.locfileid: "32341601"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt vollständige Versions- und Buildinformationen zu Microsoft Exchange Server, mit denen Konten in einem Profil verbunden sind.
+Gibt vollständige Versions- und Buildinformationen über die Microsoft Exchange Server an, mit der Konten in einem Profil verbunden sind.
   
 ## 
 
@@ -29,20 +29,20 @@ Gibt vollständige Versions- und Buildinformationen zu Microsoft Exchange Server
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_PROFILE_SERVER_FULL_VERSION  <br/> |
 |Kennung:  <br/> |0x663B  <br/> |
-|Eigenschaftstyp:  <br/> |PT_BINARY  <br/> |
+|Eigenschaftentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Profilkonfiguration  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Ein Profil kann ein oder mehrere Konten angeben, die eine Verbindung mit Exchange Server herstellen, sie müssen jedoch mit demselben Exchange Server.
+Ein Profil kann ein oder mehrere Konten angeben, die eine Verbindung mit einem Exchange Server herstellen, müssen jedoch mit demselben Exchange Server verbunden sein.
   
-Versionen von Outlook vor Microsoft Office Outlook 2007 unterstützen diese Eigenschaft nicht. Überprüfen Sie für diese Outlook, ob eine PR_PROFILE_SERVER_VERSION **[im](pidtagprofileserverversion-canonical-property.md)** Profil angezeigt wird. 
+Versionen von Outlook vor Microsoft Office Outlook 2007 unterstützen diese Eigenschaft nicht. Überprüfen Sie für diese Versionen von Outlook, **[ob PR_PROFILE_SERVER_VERSION](pidtagprofileserverversion-canonical-property.md)** im Profil vorhanden sind. 
   
-Wenn das aktive Postfach mit einer Exchange Server verbunden ist, speichert Outlook 2007 im allgemeinen vollständige Exchange Server Versionsinformationen in der **PR_PROFILE_SERVER_FULL_VERSION-Eigenschaft** im aktiven Profil. Outlook speichert die Informationen in einer **EXCHANGE_STORE_VERSION_NUM,** die die Haupt- und Nebenversionsnummern sowie die Haupt- und Nebenversionsnummern enthält. Wenn Sie z. B. die Exchange Server-Versions-ID **von 8.0.685.24** speichern möchten, ist die Hauptversionsnummer 8 und die Nebenversionsnummer 0, und die Hauptversionsnummer ist 685 und die Nebenversionsnummer 24.
+Wenn das aktive Postfach mit einem Exchange Server verbunden ist, speichert Outlook 2007 im allgemeinen vollständige Exchange Server Versionsinformationen in der **eigenschaft PR_PROFILE_SERVER_FULL_VERSION** im aktiven Profil. Outlook speichert die Informationen in einer **EXCHANGE_STORE_VERSION_NUM** Struktur, die die Haupt- und Nebenversionsnummern sowie die Haupt- und Nebenversionsnummern enthält. Um beispielsweise den Exchange Server Versionsbezeichner **8.0.685.24** zu speichern, ist die Hauptversionsnummer 8 und die Nebenversionsnummer 0 und die Hauptbuildnummer 685 und die Nebenbuildnummer 24.
   
-Es ist **wahrscheinlich PR_PROFILE_SERVER_VERSION** oder **PR_PROFILE_SERVER_FULL_VERSION** in einem Profil vorhanden ist, aber es gibt keine Garantie, dass in einem Profil immer vorhanden ist. Outlook schreibt erst in eine eigenschaft, wenn sie erfolgreich mit dem Objekt verbunden Exchange Server. 
+In einem Profil ist wahrscheinlich nur eine **PR_PROFILE_SERVER_VERSION** oder **PR_PROFILE_SERVER_FULL_VERSION** vorhanden, es gibt jedoch keine Garantie, dass beide immer in einem Profil vorhanden sind. Outlook schreibt erst dann in eine der Eigenschaften, wenn eine erfolgreiche Verbindung mit dem Exchange Server hergestellt wurde. 
   
-Im Outlook-Objektmodell können Sie die **ExchangeMailboxServerVersion-Eigenschaft** des **NameSpace-Objekts** verwenden, um die Version von Exchange Server zu finden, in der das aktive Postfach gehostet wird. 
+Im Outlook-Objektmodell können Sie die **ExchangeMailboxServerVersion-Eigenschaft** des **NameSpace-Objekts** verwenden, um die Version der Exchange Server zu suchen, auf der das aktive Postfach gehostet wird. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -50,17 +50,17 @@ Im Outlook-Objektmodell können Sie die **ExchangeMailboxServerVersion-Eigenscha
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Stellt Eigenschaftensatzdefinitionen zur Verfügung.
+> Stellt Eigenschaftensatzdefinitionen bereit.
     
 ### <a name="header-files"></a>Headerdateien
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -68,9 +68,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm60113
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1ecfdb05-2533-470a-006b-e554026944d8
-description: Leitet aktualisierte Werte, die sich aus Aktionen auf der Benutzeroberfläche oder Automatisierung ergeben, in eine andere Zelle um.
-ms.openlocfilehash: c4f5fe94aba90ce0a69983d6637a5399b6e42707
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Leitet aktualisierte Werte, die aus Aktionen in der Benutzeroberfläche oder Automatisierung resultieren, an eine andere Zelle um.
+ms.openlocfilehash: 2010cd324d87f9dbcfbfa2c71762ffc94a5484c9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33416804"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559589"
 ---
 # <a name="setatref-function"></a>SETATREF Function
 
-Leitet aktualisierte Werte, die sich aus Aktionen auf der Benutzeroberfläche oder Automatisierung ergeben, in eine andere Zelle um. 
+Leitet aktualisierte Werte, die aus Aktionen in der Benutzeroberfläche oder Automatisierung resultieren, an eine andere Zelle um. 
   
 ## <a name="syntax"></a>Syntax
 
@@ -29,22 +29,22 @@ SETATREF(** *reference* ** [, ** *set_expression* ** [, ** *ignore_eval* ** ]])
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _reference_ <br/> |Erforderlich  <br/> |**String** <br/> |Ein Bezug auf die Zelle, in die Aktualisierungen umgeleitet werden.  <br/> |
-| _set_expression_ <br/> |Optional  <br/> |**String** <br/> |Ein Ausdruck, der dem Verweis _zugewiesen ist._  <br/> |
-| _ignore_eval_ <br/> |Optional  <br/> |**Boolescher Wert** <br/> |Bei TRUE wird die SETATREF-Funktion als (0) Null ausgewertet. bei FALSE (Standardeinstellung) wird die SETATREF-Funktion zum Wert des Verweises _ausgewertet._  <br/> |
+| _set_expression_ <br/> |Optional  <br/> |**String** <br/> |Ein Ausdruck, der dem  _Verweis_ zugewiesen ist.  <br/> |
+| _ignore_eval_ <br/> |Optional  <br/> |**Boolescher Wert** <br/> |Wenn TRUE, wird die SETATREF-Funktion als (0) Null ausgewertet; Bei FALSE (Standardeinstellung) wird die SETATREF-Funktion als  _Verweiswert_ ausgewertet.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Wenn eine Benutzeraktion im Zeichnungsfenster oder eine Automatisierungsmethode bewirkt, dass Microsoft Visio eine Zelle mit einer SETATREF-Formel aktualisiert, wird der Wert stattdessen an die Zelle umgeleitet, auf die durch die SETATREF-Formel ( _Reference_) verwiesen wird. Die Formel in der Zelle mit der SETATREF-Funktion bleibt erhalten.
+Wenn eine Benutzeraktion im Zeichnungsfenster oder eine Automatisierungsmethode bewirkt, dass Microsoft Visio eine Zelle aktualisiert, die eine SETATREF-Formel enthält, wird der Wert stattdessen an die Zelle umgeleitet, auf die durch die SETATREF-Formel ( _Verweis_) verwiesen wird. Die Formel in der Zelle mit der SETATREF-Funktion bleibt erhalten.
   
-Wenn  _set_expression_ nicht angegeben wird, wird der in der Benutzeroberfläche oder mithilfe der Automatisierung festgelegte Wert der referenzierten Zelle zugewiesen. Andernfalls wird der Inhalt  _set_expression_ zelle zugewiesen. Dadurch kann der neue Wert geändert oder transformiert werden, bevor er der referenzierten Zelle zugewiesen wird. 
+Wenn  _set_expression_ weggelassen wird, wird der in der Benutzeroberfläche oder mithilfe der Automatisierung festgelegte Wert der zelle zugewiesen, auf die verwiesen wird. andernfalls wird der Inhalt von  _set_expression_ der zelle zugewiesen, auf die verwiesen wird. Dadurch kann der neue Wert geändert oder transformiert werden, bevor er der zelle zugewiesen wird, auf die verwiesen wird. 
   
 Die SETATREF-Funktion besitzt zwei verwandte Funktionen: 
   
-- Die SETATREFEXPR-Funktion, mit der Sie den neuen Wert innerhalb von _set_expression._ Beispiel: eine  _set_expression_ SETATREFEXPR()-2 in. kann verwendet werden, um 2 Zoll vom SETATREFEXPR-Ergebnis zu subtrahieren. 
+- Die SETATREFEXPR-Funktion, die Sie verwenden können, um den neuen Wert in  _set_expression_ darzustellen. Beispiel: eine  _set_expression_ von SETATREFEXPR()-2 zoll. kann verwendet werden, um das SETATREFEXPR-Ergebnis um 2 Zoll zu subtrahieren. 
     
-- Die SETATREFEVAL-Funktion, mit der Sie angeben  können, dass ein Teil der set_expression ausgewertet und durch das Ergebnis ersetzt werden soll. 
+- Die SETATREFEVAL-Funktion, mit der Sie angeben können, dass ein Teil der  _set_expression_ ausgewertet und durch das Ergebnis ersetzt werden soll. 
     
-Die SETATREF-Funktion ist für die Verwendung in Zellen konzipiert, die durch Benutzeraktionen im Zeichnungsfenster geändert werden können. Folgende Zellen werden unterstützt:
+Die SETATREF-Funktion wurde für die Verwendung in Zellen entwickelt, die durch Benutzeraktionen im Zeichnungsfenster geändert werden können. Folgende Zellen werden unterstützt:
   
 - Abschnitt ShapeTransform - Zelle Width, Height, Angle, PinX und PinY
     
@@ -76,7 +76,7 @@ Angenommen, ein Shape besitzt die benutzerdefinierte Eigenschaft Breite und die 
   
 =SETATREF(Prop.Width)
   
-Wenn ein Benutzer die Breite der Form in der Benutzeroberfläche ändern soll, wird der neue Wert der Zelle Prop.Width und nicht der Zelle Width im Abschnitt ShapeTransform zugewiesen. die Formel in der Zelle Width bleibt unverändert. Sie können die Breite des Shapes auch mithilfe von Formdaten festlegen.
+Wenn ein Benutzer die Breite des Shapes in der Benutzeroberfläche ändern sollte, wird der neue Wert der Zelle Prop.Width zugewiesen, nicht der Zelle Width im Abschnitt ShapeTransform. Die Formel in der Zelle Width bleibt unverändert. Sie können die Breite des Shapes auch mithilfe von Shape-Daten festlegen.
   
 ## <a name="example2"></a>Beispiel2
 
@@ -88,6 +88,6 @@ PinX =SETATREF(User.DeltaX, SETATREFEVAL(SETATREFEXPR() - ParentShape!PinX)) + P
   
 PinY =SETATREF(User.DeltaY, SETATREFEVAL(SETATREFEXPR() - ParentShape!PinY)) + ParentShape!PinY
   
-Wenn das untergeordnete Shape mithilfe der Benutzeroberfläche verschoben wird, werden die neuen PinX- und PinY-Werte als Parameter in der SETATREFEXPR-Funktion festgelegt. Die SETATREF-Funktion wertet die in SETATREFEVAL eingeschlossene Formel aus und ersetzt PinX und PinY durch ihre Ergebnisse, und dann wird die resultierende Formel den Benutzerzellen zugewiesen, auf die in der SETATREF-Funktion verwiesen wird: User.DeltaX und User.DeltaY. Schließlich werden die von SETATREF (User.DeltaX oder User.DeltaY) zurückgegebenen Werte der Pinposition von ParentShape hinzugefügt, um die Pinposition des untergeordneten Shapes zu berechnen.
+Wenn das untergeordnete Shape mithilfe der Benutzeroberfläche verschoben wird, werden die neuen PinX- und PinY-Werte als Parameter in der SETATREFEXPR-Funktion festgelegt. Die SETATREF-Funktion wertet die in SETATREFEVAL eingeschlossene Formel aus und ersetzt PinX und PinY durch ihre Ergebnisse. Anschließend wird die resultierende Formel den Benutzerzellen zugewiesen, auf die in der SETATREF-Funktion verwiesen wird: User.DeltaX und User.DeltaY. Schließlich werden die von SETATREF (User.DeltaX oder User.DeltaY) zurückgegebenen Werte der Pinposition von ParentShape hinzugefügt, um die Position des untergeordneten Shapes zu berechnen.
   
 

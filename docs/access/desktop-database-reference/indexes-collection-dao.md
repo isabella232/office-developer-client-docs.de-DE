@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff191889(v=office.15)
 ms:contentKeyID: 48543802
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: f731862e12a75f91d07ea7d012cc33dad5be0b55
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 73caeebae4a2a33d54d1dcc13cb0a7b79264302f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291566"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568929"
 ---
 # <a name="indexes-collection-dao"></a>Indexes-Auflistung (DAO)
 
@@ -20,7 +20,7 @@ ms.locfileid: "32291566"
 
 Eine **Indexes**-Auflistung enthält alle gespeicherten **Index**-Objekte eines **TableDef**-Objekte (gilt nur für Microsoft Access-Arbeitsbereiche).
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 When you access a table-type Recordset object, use the object's **Index** property to specify the order of records. Set this property to the **Name** property setting of an existing **Index** object in the **Indexes** collection of the **[TableDef](tabledef-object-dao.md)** object underlying the **[Recordset](recordset-object-dao.md)** object.
 

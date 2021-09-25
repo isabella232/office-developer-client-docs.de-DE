@@ -3,19 +3,19 @@ title: Senden von Nachrichten Transport Anbieter Aufgaben
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: bd722f48-b166-4670-8dba-897ac50caf37
 description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 431e3d2f66616db2c586b76387a8521832ed985f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: fa25f575e55eb3d0446148d75de314a8883a4170
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33426548"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59591178"
 ---
-# <a name="sending-messages-transport-provider-tasks"></a>Senden von Nachrichten: Aufgaben des Transportanbieters
+# <a name="sending-messages-transport-provider-tasks"></a>Senden von Nachrichten: Transportanbieteraufgaben
 
   
   
@@ -23,15 +23,15 @@ ms.locfileid: "33426548"
   
  **Eine Nachricht Anbietern f�r die Daten�bertragung �bermitteln**
   
-- Legen Sie die eigenschaft **PR_RESPONSIBILITY** ([PidTagResponsibility](pidtagresponsibility-canonical-property.md)) der Nachricht auf TRUE festgelegt, nachdem der Transportanbieter die Nachricht gesendet oder versucht hat, die Nachricht zu senden. If an attempt to send a message fails, transport providers should call [IMAPISupport::StatusRecips](imapisupport-statusrecips.md) to generate a nondelivery report. Wenn die Nachricht erfolgreich gesendet wird und die **PR_ORIGINATOR_DELIVERY_REPORT_REQUESTED** ([PidTagOriginatorDeliveryReportRequested](pidtagoriginatordeliveryreportrequested-canonical-property.md))-Eigenschaft auf TRUE festgelegt ist, erstellen Sie eine [ADRLIST-Struktur](adrlist.md) mit den erfolgreichen Empfängern, legen Sie die **PR_DELIVER_TIME** ([PidTagDeliverTime](pidtagdelivertime-canonical-property.md))-Eigenschaft für jeden Wert ein, und rufen Sie **StatusRecips** auf, um einen Zustellungsbericht zu generieren. For more information about creating delivery and non-delivery reports, see the following topics: [MAPI-Berichtnachrichten](mapi-report-messages.md), [Erforderliche Bericht Nachrichteneigenschaften](required-report-message-properties.md), [Optional Bericht Nachrichteneigenschaften](optional-report-message-properties.md), and [�bermittlungsberichte Nachricht senden](sending-message-delivery-reports.md).
+- Legen Sie die **eigenschaft PR_RESPONSIBILITY** ([PidTagResponsibility](pidtagresponsibility-canonical-property.md)) der Nachricht auf TRUE fest, nachdem der Transportanbieter die Nachricht gesendet oder versucht hat, die Nachricht zu senden. If an attempt to send a message fails, transport providers should call [IMAPISupport::StatusRecips](imapisupport-statusrecips.md) to generate a nondelivery report. Wenn die Nachricht erfolgreich gesendet wurde und die **PR_ORIGINATOR_DELIVERY_REPORT_REQUESTED** ([PidTagOriginatorDeliveryReportRequested](pidtagoriginatordeliveryreportrequested-canonical-property.md)) -Eigenschaft auf TRUE festgelegt ist, erstellen Sie eine [ADRLIST-Struktur](adrlist.md) mit den erfolgreichen Empfängern, legen Sie die **PR_DELIVER_TIME** ([PidTagDeliverTime](pidtagdelivertime-canonical-property.md)) -Eigenschaft für jeden fest, und rufen **Sie StatusRecips** auf, um einen Übermittlungsbericht zu generieren. For more information about creating delivery and non-delivery reports, see the following topics: [MAPI-Berichtnachrichten](mapi-report-messages.md), [Erforderliche Bericht Nachrichteneigenschaften](required-report-message-properties.md), [Optional Bericht Nachrichteneigenschaften](optional-report-message-properties.md), and [�bermittlungsberichte Nachricht senden](sending-message-delivery-reports.md).
     
 - Legen Sie die Nachricht **PR_SENDER** Gruppe von Eigenschaften auf die Identit�t des Benutzers, der angemeldet hat. Diese Gruppe umfasst: **PR_SENDER_ENTRYID** ([PidTagSenderEntryId](pidtagsenderentryid-canonical-property.md)), **PR_SENDER_NAME** ([PidTagSenderName](pidtagsendername-canonical-property.md)), **PR_SENDER_SEARCH_KEY** ([PidTagSenderSearchKey](pidtagsendersearchkey-canonical-property.md)), **PR_SENDER_ADDRTYPE** ([PidTagSenderAddressType](pidtagsenderaddresstype-canonical-property.md)) und **PR_SENDER_EMAIL_ADDRESS** ([PidTagSenderEmailAddress](pidtagsenderemailaddress-canonical-property.md)).
     
 - Legen Sie die Nachrichteneigenschaften **PR_SENT_REPRESENTING**, wenn m�glich, um entweder die Identit�t des Benutzers, der angemeldet hat oder auf eine g�ltige Delegaten Identit�t. Die Eigenschaften **PR_SENT_REPRESENTING** dienen zum Implementieren, das Senden von Nachrichten von einem Benutzer im Auftrag eines anderen Benutzers. Anbietern f�r die Daten�bertragung, die diese Eigenschaften nicht unterst�tzen, sollten sie f�r ausgehende Nachrichten ignorieren. 
     
-- Legen Sie die eigenschaft **PR_CLIENT_SUBMIT_TIME** ([PidTagClientSubmitTime](pidtagclientsubmittime-canonical-property.md)) der Nachricht so ein, dass angegeben wird, wann der Client [IMessage::SubmitMessage aufgerufen hat.](imessage-submitmessage.md)
+- Legen Sie die **eigenschaft PR_CLIENT_SUBMIT_TIME** ([PidTagClientSubmitTime](pidtagclientsubmittime-canonical-property.md)) der Nachricht fest, um anzugeben, wann der Client [IMessage::SubmitMessage](imessage-submitmessage.md)aufgerufen hat.
     
-- Legen Sie die PR_PROVIDER_SUBMIT_TIME **(** [PidTagProviderSubmitTime](pidtagprovidersubmittime-canonical-property.md)) -Eigenschaft der Nachricht fest, um das Datum und die Uhrzeit anzugeben, zu der der Nachrichtenspeicheranbieter die Nachricht als gesendet markiert hat. 
+- Legen Sie die **Eigenschaft PR_PROVIDER_SUBMIT_TIME** ([PidTagProviderSubmitTime](pidtagprovidersubmittime-canonical-property.md)) der Nachricht fest, um das Datum und die Uhrzeit anzugeben, zu der die Nachricht vom Nachrichtenspeicheranbieter als gesendet markiert wurde. 
     
 Wenn eine Nachricht an eine Vielzahl von Empf�ngern mit verschiedenen Messagingsystemen gesendet wird, wird jede �bertragene Kopie eine anderen Absenderidentit�t haben. 
   

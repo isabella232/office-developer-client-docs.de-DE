@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagFlagStatus
 api_type:
 - HeaderDef
 ms.assetid: b5117360-0939-4535-83fe-3b4a240b5217
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: bca8fccaa43bb3157b3d4e2af7d6aafa64972b41
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 9793115f67c5c889d8c674e0279516177aac837a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316296"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616439"
 ---
 # <a name="pidtagflagstatus-canonical-property"></a>PidTagFlagStatus (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32316296"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt den Flagstatus des Message-Objekts an.
+Gibt den Flagstatus des Nachrichtenobjekts an.
   
 |||
 |:-----|:-----|
@@ -34,13 +34,13 @@ Gibt den Flagstatus des Message-Objekts an.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Sonstiges  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft darf in einem besprechungsbezogenen Objekt nicht vorhanden sein und sollte nicht für ein Aufgabenobjekt vorhanden sein. Wenn diese Eigenschaft für andere Nachrichtenobjekte festgelegt ist, muss sie auf einen der folgenden Werte festgelegt werden:
+Diese Eigenschaft darf nicht in einem Besprechungsobjekt vorhanden sein, und sie sollte nicht für ein Aufgabenobjekt vorhanden sein. Wenn sie für andere Nachrichtenobjekte festgelegt wird, muss diese Eigenschaft auf einen der folgenden Werte festgelegt werden:
   
 |**Numerischer Wert**|**Name**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Nicht vorhanden  <br/> |Nicht zutreffend  <br/> |Unflagged  <br/> |
+|Nicht vorhanden  <br/> |Nicht zutreffend  <br/> |Nicht entflaggt  <br/> |
 |0x00000001  <br/> |followupComplete  <br/> |Gekennzeichnet abgeschlossen  <br/> |
 |0x00000002  <br/> |followupFlagged  <br/> |Gekennzeichnet  <br/> |
    
@@ -50,7 +50,7 @@ Diese Eigenschaft darf in einem besprechungsbezogenen Objekt nicht vorhanden sei
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXOFLAG]](https://msdn.microsoft.com/library/f1e50be4-ed30-4c2a-b5cb-8ff3aaaf9b91%28Office.15%29.aspx)
   
@@ -60,11 +60,11 @@ Diese Eigenschaft darf in einem besprechungsbezogenen Objekt nicht vorhanden sei
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -72,9 +72,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

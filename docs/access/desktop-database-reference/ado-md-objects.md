@@ -1,18 +1,18 @@
 ---
-title: ADO MD-Objekte (Access Desktop Database Reference)
+title: ADO MD-Objekte (Access-Desktopdatenbankreferenz)
 TOCTitle: ADO MD objects
 ms:assetid: 13501e44-70b6-1036-a8b7-c276f187e4f4
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248907(v=office.15)
 ms:contentKeyID: 48543366
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: a2d3acf1b236e23522da0143d577bbcbeacbb4b7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 034344d469037d33c3dee586ab8bc56f95df906f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283296"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559297"
 ---
 # <a name="ado-md-objects"></a>ADO MD-Objekte
 
@@ -56,14 +56,14 @@ ms.locfileid: "32283296"
 </tr>
 <tr class="odd">
 <td><p><a href="hierarchy-object-ado-md.md">Hierarchie</a></p></td>
-<td><p>Stellt eine Möglichkeit dar, in der die Elemente einer Dimension aggregiert oder &quot;rollupd werden können. &quot; Eine Dimension kann entlang einer oder mehrerer Hierarchien aggregiert werden.</p></td>
+<td><p>Stellt eine Möglichkeit dar, mit der die Elemente einer Dimension aggregiert oder ein Rollup ausgeführt werden &quot; können. &quot; Eine Dimension kann entlang einer oder mehrerer Hierarchien aggregiert werden.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="level-object-ado-md.md">Grad</a></p></td>
 <td><p>Umfasst eine Gruppe von Elementen, von denen jedes denselben Rang innerhalb einer Hierarchie besitzt.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="member-object-ado-md.md">Member</a></p></td>
+<td><p><a href="member-object-ado-md.md">Element</a></p></td>
 <td><p>Stellt ein Element einer Ebene in einem Cube, die untergeordneten Elemente eines Elements einer Ebene oder ein Element einer Position auf der Achse einer Zellmenge dar.</p></td>
 </tr>
 <tr class="even">

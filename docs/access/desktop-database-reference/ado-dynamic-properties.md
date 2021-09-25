@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249782(v=office.15)
 ms:contentKeyID: 48546915
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: fae0df2a4cc5c9de585d2b101e9fa31cb6a0a545
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 3f6c3692749e0915fc9e26faf55fc948ee1c96ff
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32281715"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59602962"
 ---
 # <a name="ado-dynamic-properties"></a>Dynamische ADO-Eigenschaften
 
@@ -54,7 +54,7 @@ Die folgenden dynamischen Eigenschaften sind von besonderem Interesse und werden
 </tr>
 <tr class="odd">
 <td><p><a href="unique-table-unique-schema-unique-catalog-properties-dynamic-ado.md">Unique Table, Unique Schema, Unique Catalog</a></p></td>
-<td><p><strong>Unique Table</strong> – gibt den Namen der Basistabelle an, für die Aktualisierungen, Einfügungen und Löschungen zulässig sind.<br/><br/><strong>Unique Schema</strong> – gibt das Schema oder den Namen des Besitzers der Tabelle an.<br/><br/><strong>EindeutigEr Katalog</strong> -gibt den Katalog oder den Namen der Datenbank an, die die Tabelle enthält.</p></td>
+<td><p><strong>Unique Table</strong> - gibt den Namen der Basistabelle an, für die Aktualisierungen, Einfügungen und Löschungen zulässig sind.<br/><br/><strong>Eindeutiges Schema</strong> – gibt das Schema oder den Namen des Besitzers der Tabelle an.<br/><br/><strong>Eindeutiger Katalog</strong> – gibt den Katalog oder den Namen der Datenbank an, die die Tabelle enthält.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="update-resync-property-dynamic-ado.md">Update Resync</a></p></td>

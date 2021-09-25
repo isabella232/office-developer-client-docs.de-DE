@@ -1,5 +1,5 @@
 ---
-title: DbEngine. Errors-Eigenschaft (DAO)
+title: DBEngine.Errors-Eigenschaft (DAO)
 TOCTitle: Errors Property
 ms:assetid: 594a8752-1f15-0690-b01c-9254951f16f6
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194384(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1053176
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: ba143109746b8457be679800dcca13d4efabf8c4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: a1e78ac96df889f30812f07415ceb2e54e4acda5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294316"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59581476"
 ---
-# <a name="dbengineerrors-property-dao"></a>DbEngine. Errors-Eigenschaft (DAO)
+# <a name="dbengineerrors-property-dao"></a>DBEngine.Errors-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -27,7 +27,7 @@ Gibt eine **Errors**-Auflistung zurück, die alle gespeicherten **Error**-Objekt
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Störungen
+*Ausdruck* . Fehler
 
-*Ausdruck* Eine Variable, die ein **DBEngine** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **DBEngine**-Objekt darstellt.
 

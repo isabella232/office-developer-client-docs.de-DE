@@ -1,20 +1,20 @@
 ---
-title: BeginTrans-, CommitTrans-und RollbackTrans-Methoden (ADO)
+title: Methoden BeginTrans, CommitTrans und RollbackTrans (ADO)
 TOCTitle: BeginTrans, CommitTrans, and RollbackTrans methods (ADO)
 ms:assetid: 9a0415f0-9424-8d1c-4779-92e932292d46
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249694(v=office.15)
 ms:contentKeyID: 48546529
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 8d9dc28bd64966e85d16ee2d8cb62fdebc3ba942
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d8c641c43df1a0f035d37f14727e42f89475d16a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296871"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558800"
 ---
-# <a name="begintrans-committrans-and-rollbacktrans-methods-ado"></a>BeginTrans-, CommitTrans-und RollbackTrans-Methoden (ADO)
+# <a name="begintrans-committrans-and-rollbacktrans-methods-ado"></a>Methoden BeginTrans, CommitTrans und RollbackTrans (ADO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -28,13 +28,13 @@ Durch diese Transaktionsmethoden wird die Transaktionsverarbeitung in einem [Con
 
 ## <a name="syntax"></a>Syntax
 
-*Level* = -*Objekt*. BeginTrans ()
+*Ebene*  =  *objekt*. BeginTrans()
 
-- *Objekt*. BeginTrans
+*objekt*. BeginTrans
 
-- *Objekt*. CommitTrans
+*objekt*. Committrans
 
-- *Objekt*. RollbackTrans
+*objekt*. RollbackTrans
 
 ## <a name="return-value"></a>Rückgabewert
 
@@ -51,7 +51,7 @@ Durch diese Transaktionsmethoden wird die Transaktionsverarbeitung in einem [Con
 Verwenden Sie diese Methoden mit einem **Connection**-Objekt, wenn Sie eine Reihe von an den Quelldaten vorgenommenen Änderungen als einzelne Einheit speichern oder abbrechen möchten. Beispielsweise subtrahieren Sie zum Übertragen von Geldbeträgen zwischen Konten einen Betrag von einem Konto und addieren den gleichen Betrag zu einem anderen Konto. Wenn eine der Aktualisierungen fehlschlägt, sind die Konten nicht mehr ausgeglichen. Durch das Vornehmen dieser Änderungen mit einer geöffneten Transaktion wird sichergestellt, dass alle oder keine der Änderungen durchlaufen.
 
 > [!NOTE]
-> Transaktionen werden nicht von allen Anbietern unterstützt. Stellen Sie sicher, dass die Anbieter definierte Eigenschaft **Transaction DDL** in der [Properties](properties-collection-ado.md) -Auflistung des **Connection** -Objekts angezeigt wird, was darauf hinweist, dass der Anbieter Transaktionen unterstützt. Wenn Transaktionen vom Anbieter nicht unterstützt werden, wird beim Aufrufen einer dieser Methoden ein Fehler zurückgegeben.
+> Transaktionen werden nicht von allen Anbietern unterstützt. Stellen Sie sicher, dass die vom Anbieter definierte Eigenschaft **Transaction DDL** in der [Properties](properties-collection-ado.md) -Auflistung des **Connection** -Objekts angezeigt wird, was angibt, dass der Anbieter Transaktionen unterstützt. Wenn Transaktionen vom Anbieter nicht unterstützt werden, wird beim Aufrufen einer dieser Methoden ein Fehler zurückgegeben.
 
 Nach dem Aufrufen der **BeginTrans**-Methode wird vom Anbieter erst wieder sofort ein Commit für vorgenommene Änderungen ausgeführt, wenn Sie **CommitTrans** oder **RollbackTrans** aufrufen, um die Transaktion zu beenden.
 

@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250043(v=office.15)
 ms:contentKeyID: 48547845
 ms.date: 10/17/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 372dac11500647af75881ae6b4aee22a391a32c9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 2d4892d330eda957b7064f46bf1d5114bbdbfbae
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280529"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59569531"
 ---
 # <a name="activeconnection-property-ado-md"></a>ActiveConnection-Eigenschaft (ADO MD)
 
@@ -20,11 +20,11 @@ ms.locfileid: "32280529"
 
 Gibt an, zu welchem ADO-[Connection](connection-object-ado.md)-Objekt die aktuelle Zellmenge oder der Katalog momentan gehört.
 
-## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
+## <a name="settings-and-return-values"></a>Einstellungen- und Rückgabewerte
 
 Legt einen **Variant**-Wert fest oder gibt diesen zurück. Der Wert enthält eine Zeichenfolge, die eine Verbindung oder ein **Connection**-Objekt definiert. Die Standardeinstellung ist eine leere Zeichenfolge.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Sie können diese Eigenschaft auf ein gültiges ADO- **Connection** -Objekt oder eine gültige Verbindungszeichenfolge festlegen. Wenn diese Eigenschaft auf eine Verbindungszeichenfolge festgelegt wird, erstellt der Anbieter mithilfe dieser Definition ein neues **Connection** -Objekt und öffnet die Verbindung.
 
@@ -43,7 +43,7 @@ When using the MSOLAP data provider, set the data source in a connection string 
 
 `"Data Source=Servername;Initial Catalog=Bobs Video Store;Provider=msolap"`
 
-Die folgende Zeichenfolge stellt eine Verbindung mit einer lokalen Cubedatei am Speicherort\\C\\:\\MSDASDK\\Samples OLEDB OLAP\\Data\\bobsvid. Cub her:
+Die folgende Zeichenfolge stellt eine Verbindung mit einer lokalen Cubedatei am Speicherort C her: \\ MSDASDK-Beispiele \\ \\ oledb \\ olap \\ data \\ bobsvid.cub:
 
 `"Location=C:\MSDASDK\samples\oledb\olap\data\bobsvid.cub;Provider=msolap"`
 

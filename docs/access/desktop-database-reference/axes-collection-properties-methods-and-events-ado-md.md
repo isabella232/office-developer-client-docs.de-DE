@@ -1,20 +1,20 @@
 ---
-title: Axes-Auflistung (Eigenschaften, Methoden und Ereignisse) (ADO MD)
+title: Eigenschaften, Methoden und Ereignisse der Axes-Auflistung (ADO MD)
 TOCTitle: Axes collection properties, methods, and events
 ms:assetid: 613f3e77-11fb-4bf6-0f26-5be2b5cd4594
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249357(v=office.15)
 ms:contentKeyID: 48545205
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: fbb5210a30d0841c0a279d314d9f07b530e9f683
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 6e626d97d9ba766a0d8ebcb02a58b6db4e718037
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296920"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558835"
 ---
-# <a name="axes-collection-properties-methods-and-events-ado-md"></a>Axes-Auflistung (Eigenschaften, Methoden und Ereignisse) (ADO MD)
+# <a name="axes-collection-properties-methods-and-events-ado-md"></a>Eigenschaften, Methoden und Ereignisse der Axes-Auflistung (ADO MD)
 
 **Gilt für**: Access 2013, Office 2013
 

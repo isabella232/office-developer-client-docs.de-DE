@@ -3,29 +3,29 @@ title: Einrichten eines Offlinestatus-Add-Ins
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2a326e93-fe8c-e3a5-1e92-30b75b6cb1d2
 description: 'Letzte �nderung: Donnerstag, 5. Juli 2012'
-ms.openlocfilehash: fa3cee9e6b25a9bcb951fbcbfa4435890341a872
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 6244cb2fe1709eb95fbdf52aecd2d85fb047e403
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339291"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59591143"
 ---
 # <a name="setting-up-an-offline-state-add-in"></a>Einrichten eines Offlinestatus-Add-Ins
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Zum Implementieren eines Offlinestatus-Add-Ins müssen Sie Verbindung, Initialisierung und andere Setupfunktionen implementieren. In diesem Thema werden diese Verbindungs-, Initialisierungs- und Setupfunktionen anhand von Codebeispielen aus dem Beispiel-Offlinestatus-Add-In demonstriert. Das Offlinestatus-Add-In-Beispiel ist ein COM-Add-In, das ein **Offlinestatus**-Menü zu Outlook hinzufügt und die Offlinestatus-API verwendet. Über das **Menü Offlinestatus** können Sie die Zustandsüberwachung aktivieren oder deaktivieren, den aktuellen Status überprüfen und den aktuellen Status ändern. Weitere Informationen zum Herunterladen und Installieren des Offlinestatus-Add-In-Beispiels finden Sie unter [Installieren des Offlinestatus-Add-In-Beispiels](installing-the-sample-offline-state-add-in.md). Weitere Informationen zur Offlinestatus-API finden Sie unter [Informationen zur Offlinestatus-API](about-the-offline-state-api.md).
+Um ein Offlinestatus-Add-In zu implementieren, müssen Sie Verbindungs-, Initialisierungs- und andere Setupfunktionen implementieren. In diesem Thema werden diese Verbindungs-, Initialisierungs- und Setupfunktionen anhand von Codebeispielen aus dem Beispiel-Offlinestatus-Add-In veranschaulicht. Das Offlinestatus-Add-In-Beispiel ist ein COM-Add-In, das ein **Offlinestatus**-Menü zu Outlook hinzufügt und die Offlinestatus-API verwendet. Über das Menü **"Offlinestatus"** können Sie die Zustandsüberwachung aktivieren oder deaktivieren, den aktuellen Status überprüfen und den aktuellen Status ändern. Weitere Informationen zum Herunterladen und Installieren des Offlinestatus-Add-In-Beispiels finden Sie unter [Installieren des Offlinestatus-Add-In-Beispiels](installing-the-sample-offline-state-add-in.md). Weitere Informationen zur Offlinestatus-API finden Sie unter [Informationen zur Offlinestatus-API](about-the-offline-state-api.md).
   
-Nachdem Sie ein Offlinestatus-Add-In eingerichtet haben, müssen Sie Funktionen implementieren, um Verbindungsstatusänderungen zu überwachen und zu ändern. Weitere Informationen finden Sie unter [Monitoring Connection State Changes Using an Offline State Add-In](monitoring-connection-state-changes-using-an-offline-state-add-in.md).
+Nachdem Sie ein Offlinestatus-Add-In eingerichtet haben, müssen Sie Funktionen zum Überwachen und Ändern von Verbindungsstatusänderungen implementieren. Weitere Informationen finden Sie unter Überwachen von [Verbindungsstatusänderungen mithilfe eines Offlinestatus-Add-Ins.](monitoring-connection-state-changes-using-an-offline-state-add-in.md)
   
-## <a name="on-connection-routine"></a>On Connection routine
+## <a name="on-connection-routine"></a>On Connection-Routine
 
-Die **[IDTExtensibility2.OnConnection-Methode](https://msdn.microsoft.com/library/extensibility.idtextensibility2.onconnection%28v=VS.80%29.aspx)** wird jedes Mal aufgerufen, wenn ein Add-In geladen wird. Es ist der Einstiegspunkt für das Add-In. Daher wird der in der Funktion enthaltene Code aufgerufen,  `OnConnection` wenn das Add-In gestartet wird. Im folgenden Beispiel ruft die  `OnConnection` Funktion die Funktion  `HrInitAddin` auf. 
+Die **[IDTExtensibility2.OnConnection-Methode](https://msdn.microsoft.com/library/extensibility.idtextensibility2.onconnection%28v=VS.80%29.aspx)** wird jedes Mal aufgerufen, wenn ein Add-In geladen wird. Es ist der Einstiegspunkt für das Add-In, daher wird der Code, den Sie in die  `OnConnection` Funktion einfügen, beim Starten des Add-Ins aufgerufen. Im folgenden Beispiel ruft die  `OnConnection` Funktion die  `HrInitAddin` Funktion auf. 
   
-### <a name="cmyaddinonconnection-example"></a>Beispiel für CMyAddin::OnConnection()
+### <a name="cmyaddinonconnection-example"></a>CMyAddin::OnConnection() () (Beispiel)
 
 ```cpp
 STDMETHODIMP CMyAddin::OnConnection( 
@@ -46,9 +46,9 @@ STDMETHODIMP CMyAddin::OnConnection(
 
 ## <a name="initialize-add-in-routine"></a>Initialisieren der Add-In-Routine
 
-Die Funktion ruft die Funktionen , und auf, um das Einrichten  `HrInitAddin` des  `LoadLibraries`  `HrCacheProfileName`  `HrAddMenuItems` Offlinestatus-Add-Ins zu beenden. 
+Die  `HrInitAddin` Funktion ruft die  `LoadLibraries`  `HrCacheProfileName`  `HrAddMenuItems` Und-Funktionen auf, um die Einrichtung des Offlinestatus-Add-Ins abzuschließen. 
   
-### <a name="cmyaddinhrinitaddin-example"></a>CMyAddin::HrInitAddin()-Beispiel
+### <a name="cmyaddinhrinitaddin-example"></a>CMyAddin::HrInitAddin() (Beispiel)
 
 ```cpp
 HRESULT CMyAddin::HrInitAddin() 
@@ -63,11 +63,11 @@ HRESULT CMyAddin::HrInitAddin()
 }
 ```
 
-## <a name="load-libraries-routine"></a>Routine zum Laden von Bibliotheken
+## <a name="load-libraries-routine"></a>Load Libraries-Routine
 
-Die  `LoadLibraries` Funktion lädt die dll-Dateien (Dynamic Link Library), die das Add-In benötigt. 
+Die  `LoadLibraries` Funktion lädt die DLL-Dateien (Dynamic Link Library), die das Add-In benötigt. 
   
-### <a name="loadlibraries-example"></a>LoadLibraries()-Beispiel
+### <a name="loadlibraries-example"></a>LoadLibraries() (Beispiel)
 
 ```cpp
 void LoadLibraries() 
@@ -166,11 +166,11 @@ void LoadLibraries()
 }
 ```
 
-## <a name="cache-profile-name-routine"></a>CacheProfilname-Routine
+## <a name="cache-profile-name-routine"></a>Cacheprofilnamen-Routine
 
 Die  `HrCacheProfileName` Funktion ruft die **[IMAPISupport::OpenProfileSection-Funktion](imapisupport-openprofilesection.md)** auf, um einen Profilabschnitt für die aktuelle Sitzung zu öffnen, und legt dann das Profil für die Schaltflächenhandler fest. 
   
-### <a name="cmyaddinhrcacheprofilename-example"></a>CMyAddin::HrCacheProfileName()-Beispiel
+### <a name="cmyaddinhrcacheprofilename-example"></a>CMyAddin::HrCacheProfileName() () (Beispiel)
 
 ```cpp
 HRESULT CMyAddin::HrCacheProfileName() 
@@ -212,11 +212,11 @@ HRESULT CMyAddin::HrCacheProfileName()
 }
 ```
 
-## <a name="add-menu-items-routine"></a>Routine "Menüelemente hinzufügen"
+## <a name="add-menu-items-routine"></a>Menüelement-Routine hinzufügen
 
-Die Funktion definiert die Menüoptionen, die unter dem Menü Offlinestatus angezeigt werden, das beim Laden des `HrAddMenuItems` Add-Ins in Outlook erstellt wird, und ruft dann jedes Menüelement  `DispEventAdvise` auf. 
+Die `HrAddMenuItems` Funktion definiert die Menüoptionen, die unter dem **Offlinestatusmenü** angezeigt werden, das erstellt wird, wenn das Add-In in Outlook geladen wird, und ruft dann `DispEventAdvise` die einzelnen Menüelemente auf. 
   
-### <a name="cmyaddinhraddmenuitems-example"></a>CMyAddin::HrAddMenuItems()-Beispiel
+### <a name="cmyaddinhraddmenuitems-example"></a>CMyAddin::HrAddMenuItems() () Beispiel
 
 ```cpp
 HRESULT CMyAddin::HrAddMenuItems() 
@@ -293,5 +293,5 @@ HRESULT CMyAddin::HrAddMenuItems()
 - [Installieren des Offlinestatus-Add-In-Beispiels](installing-the-sample-offline-state-add-in.md)
 - [Informationen zum Offlinestatus-Add-In-Beispiel](about-the-sample-offline-state-add-in.md)
 - [Überwachen von Verbindungsstatusänderungen mit einem Offlinestatus-Add-In](monitoring-connection-state-changes-using-an-offline-state-add-in.md)
-- [Trennen der Trennung eines Offlinestatus-Add-Ins](disconnecting-an-offline-state-add-in.md)
+- [Trennen eines Offlinestatus-Add-Ins](disconnecting-an-offline-state-add-in.md)
 

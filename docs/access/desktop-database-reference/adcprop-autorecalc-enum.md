@@ -6,21 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249502(v=office.15)
 ms:contentKeyID: 48545779
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: e385df5029238106b51aa62949d5e4e94f065657
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 159fc73c68e3da4082533009cf67b7381ea9850b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280522"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59569482"
 ---
-# <a name="adcpropautorecalcenum"></a>ADCPROP\_-\_AUTORECALC-Enumeration
+# <a name="adcprop_autorecalc_enum"></a>ADCPROP \_ \_ AUTORECALC-ENUMERATION
 
 **Gilt für**: Access 2013, Office 2013
 
 Gibt an, wann der [MSDataShape](microsoft-data-shaping-service-for-ole-db-ado-service-provider.md)-Anbieter aggregierte und berechnete Spalten eines hierarchischen Recordsets erneut berechnet.
 
-Diese Konstanten werden nur zusammen mit dem **MSDataShape** -Anbieter und der dynamischen Eigenschaft "**Auto Recalc**" des Recordsets verwendet, auf die im [Index der dynamischen ADO-Eigenschaft](ado-dynamic-property-index.md) verwiesen wird und die im **** [Microsoft Cursor-Dienst für OLE dokumentiert ist. DB](microsoft-cursor-service-for-ole-db-ado-service-component.md) -oder [Microsoft Data Shaping-Dienst für die OLE DB](microsoft-data-shaping-service-for-ole-db-ado-service-provider.md) -Dokumentation.
+Diese Konstanten werden nur mit dem **MSDataShape-Anbieter** und der dynamischen Eigenschaft **"Auto Recalc"** des **Recordset** verwendet, auf die im Index der [dynamischen ADO-Eigenschaft](ado-dynamic-property-index.md) verwiesen wird und in der Dokumentation des [Microsoft Cursor Service für OLE DB](microsoft-cursor-service-for-ole-db-ado-service-component.md) oder des Microsoft Data Shaping Service für OLE [DB](microsoft-data-shaping-service-for-ole-db-ado-service-provider.md) dokumentiert ist.
 
 <br/>
 
@@ -52,7 +52,7 @@ Diese Konstanten werden nur zusammen mit dem **MSDataShape** -Anbieter und der d
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
 Diese Konstanten haben keine ADO/WFC-Entsprechungen.
 

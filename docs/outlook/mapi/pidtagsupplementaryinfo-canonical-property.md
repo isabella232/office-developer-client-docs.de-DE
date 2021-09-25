@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPIi.PidTagSupplementaryInfo
 api_type:
 - COM
 ms.assetid: 2d4231b5-4096-4c0d-b694-65e2d04172b8
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: de9635fa77cd0c282723e0f76eabd6bc0d0dbab9
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 0806f6c51ef215b2b839cd136a20a9f8be28272f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429754"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59609747"
 ---
 # <a name="pidtagsupplementaryinfo-canonical-property"></a>PidTagSupplementaryInfo (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "33429754"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält zusätzliche Informationen zur Verwendung in einem Bericht.
+Enthält zusätzliche Informationen für die Verwendung in einem Bericht.
   
 |||
 |:-----|:-----|
@@ -34,9 +34,9 @@ Enthält zusätzliche Informationen zur Verwendung in einem Bericht.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaften enthalten Informationen, die vom Nachrichtenübertragungs-Agent oder -Transportanbieter im Zusammenhang mit dem Bericht generiert werden. Er wird in der Regel für übermittlungs- oder unauslöschlichen Berichtstext verwendet, der vom zugrunde liegenden Messagingsystem stammt.
+Diese Eigenschaften enthalten Informationen, die vom Nachrichtenübertragungs-Agent oder -Transportanbieter im Zusammenhang mit dem Bericht generiert werden. Es wird in der Regel für Übermittlungs- oder Nichtübermittlungsberichtstext verwendet, der vom zugrunde liegenden Messagingsystem stammt.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,11 +44,11 @@ Diese Eigenschaften enthalten Informationen, die vom Nachrichtenübertragungs-Ag
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

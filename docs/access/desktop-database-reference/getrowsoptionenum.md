@@ -1,18 +1,18 @@
 ---
-title: GetRowsOptionEnum (Access Desktop Database Reference)
+title: GetRowsOptionEnum (Access-Desktopdatenbankreferenz)
 TOCTitle: GetRowsOptionEnum
 ms:assetid: 5c1665bb-555c-f83f-066c-d6de2dd0343f
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249323(v=office.15)
 ms:contentKeyID: 48545082
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 16a878aaded9368d89f935df5a7ae9575c31f480
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4f1e615efcf86ea1ad9a5221fc062a666c149382
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292195"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59602493"
 ---
 # <a name="getrowsoptionenum"></a>GetRowsOptionEnum
 
@@ -39,13 +39,13 @@ Gibt an, wie viele Datensätze aus einem [Recordset](recordset-object-ado.md) ab
 <tr class="odd">
 <td><p><strong>adGetRowsRest</strong></p></td>
 <td><p>-1</p></td>
-<td><p>Ruft die restlichen Datensätze im <strong>Recordset</strong>-Objekt aus der aktuellen Position oder aus einer Textmarke ab, die durch den <em>Start</em> -Parameter der GetRows-Methode angegeben wird. <a href="getrows-method-ado.md"></a></p></td>
+<td><p>Ruft die restlichen Datensätze im <strong>Recordset</strong>von der aktuellen Position oder einer Textmarke ab, die durch den <em>Startparameter</em> der <a href="getrows-method-ado.md">GetRows-Methode</a> angegeben wird.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
 Paket: **com.ms.wfc.data**
 
@@ -60,7 +60,7 @@ Paket: **com.ms.wfc.data**
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums. GetRowsOption. REST</p></td>
+<td><p>AdoEnums.GetRowsOption.REST</p></td>
 </tr>
 </tbody>
 </table>

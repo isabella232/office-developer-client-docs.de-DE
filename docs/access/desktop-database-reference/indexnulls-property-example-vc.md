@@ -6,20 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248813(v=office.15)
 ms:contentKeyID: 48543039
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: c94ef7da07a9d68fe04dade18e1e54f8277ace6c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 22dba78c2a9ad1c7fb20a355801a13c100da0239
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291428"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59602367"
 ---
 # <a name="indexnulls-property-example-vc"></a>IndexNulls-Eigenschaft (VC++-Beispiel)
 
 
 **Gilt für**: Access 2013, Office 2013
 
-In diesem Beispiel wird die Verwendung der [IndexNulls](indexnulls-property-adox.md)-Eigenschaft eines [Index](index-object-adox.md)-Objekts veranschaulicht. Der Code erstellt einen neuen Index und legt den Wert von **IndexNulls** basierend auf der Benutzereingabe fest. Anschließend wird der **Index** der [Tabelle](table-object-adox.md) Employees im **** *Northwind* - [Katalog](catalog-object-adox.md)angefügt. Das neue **Index**-Objekt wird auf ein [Recordset](recordset-object-ado.md)-Objekt basierend auf der **Employees**-Tabelle angewendet, und das **Recordset**-Objekt wird geöffnet. Der **Employees**-Tabelle wird ein neuer Datensatz mit einem **Null**-Wert im indizierten Feld hinzugefügt. Ob dieser neue Datensatz angezeigt wird, hängt von der Einstellung der **IndexNulls**-Eigenschaft ab.
+In diesem Beispiel wird die Verwendung der [IndexNulls](indexnulls-property-adox.md)-Eigenschaft eines [Index](index-object-adox.md)-Objekts veranschaulicht. Der Code erstellt einen neuen Index und legt den Wert von **IndexNulls** basierend auf der Benutzereingabe fest. Anschließend wird der **Index** an die [Employees-Tabelle](table-object-adox.md) im  *Northwind-Katalog* [](catalog-object-adox.md)angefügt. Das neue **Index**-Objekt wird auf ein [Recordset](recordset-object-ado.md)-Objekt basierend auf der **Employees**-Tabelle angewendet, und das **Recordset**-Objekt wird geöffnet. Der **Employees**-Tabelle wird ein neuer Datensatz mit einem **Null**-Wert im indizierten Feld hinzugefügt. Ob dieser neue Datensatz angezeigt wird, hängt von der Einstellung der **IndexNulls**-Eigenschaft ab.
 
 ```cpp 
  
@@ -216,7 +216,7 @@ void IndexNullsX(_bstr_t strSel)
 
 <br/>
 
-**IndexNullX. h**
+**IndexNullX.h**
 
 ```cpp
     // BeginIndexNullsH 

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagReplyRecipientEntries
 api_type:
 - COM
 ms.assetid: a903fd22-a3f2-464f-99b0-c087e211b124
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 000132f052abb666ae844ec7d21b59c85ab43613
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: b38207262fa97a368c8b993877c5694ed4c9d9be
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355055"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59591612"
 ---
 # <a name="pidtagreplyrecipiententries-canonical-property"></a>PidTagReplyRecipientEntries (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32355055"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array mit Eingabebezeichnern in der Größe für Empfänger, die eine Antwort erhalten sollen.
+Enthält ein Array mit Eintragsbezeichnern der Größe für Empfänger, die eine Antwort erhalten sollen.
   
 |||
 |:-----|:-----|
@@ -34,13 +34,13 @@ Enthält ein Array mit Eingabebezeichnern in der Größe für Empfänger, die ei
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft enthält eine [FLATENTRYLIST-Struktur](flatentrylist.md) und ist keine mehrwertige Eigenschaft. 
   
-Wenn diese Eigenschaft nicht vorhanden ist, wird eine Antwort nur an den Benutzer gesendet, der durch die **PR_SENDER_ENTRYID** ([PidTagSenderEntryId](pidtagsenderentryid-canonical-property.md)) -Eigenschaft identifiziert wird. Wenn dies **und die PR_REPLY_RECIPIENT_NAMES** ([PidTagReplyRecipientNames](pidtagreplyrecipientnames-canonical-property.md)) definiert sind, wird die Antwort an alle Empfänger gesendet, die durch diese beiden Eigenschaften identifiziert werden. Ein Transportanbieter verwendet diese Eigenschaften, um die übliche Antwortlogik außer Kraft zu setzen.
+Wenn diese Eigenschaft nicht vorhanden ist, wird eine Antwort nur an den Benutzer gesendet, der von der **PR_SENDER_ENTRYID** ([PidTagSenderEntryId](pidtagsenderentryid-canonical-property.md)) -Eigenschaft identifiziert wird. Wenn diese und die **eigenschaften PR_REPLY_RECIPIENT_NAMES** ([PidTagReplyRecipientNames](pidtagreplyrecipientnames-canonical-property.md)) definiert sind, wird die Antwort an alle empfänger gesendet, die von diesen beiden Eigenschaften identifiziert werden. Ein Transportanbieter verwendet diese Eigenschaften, um die übliche Antwortlogik zu überschreiben.
   
-Wenn diese Eigenschaft oder die **PR_REPLY_RECIPIENT_NAMES** festgelegt ist, muss auch die andere Eigenschaft festgelegt werden. Diese Eigenschaften müssen die gleiche Anzahl von Empfängern enthalten, und sie müssen sie in derselben Reihenfolge enthalten. Wenn diese Anforderungen nicht erfüllt werden, kann dies zu unvorhersehbaren Ergebnissen führen. 
+Wenn diese Eigenschaft oder die **PR_REPLY_RECIPIENT_NAMES-Eigenschaft** festgelegt ist, muss auch die andere Eigenschaft festgelegt werden. Diese Eigenschaften müssen dieselbe Anzahl von Empfängern enthalten, und sie müssen in derselben Reihenfolge enthalten sein. Wenn diese Anforderungen nicht beachtet werden, kann dies zu unvorhersehbaren Ergebnissen führen. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -48,7 +48,7 @@ Wenn diese Eigenschaft oder die **PR_REPLY_RECIPIENT_NAMES** festgelegt ist, mus
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
@@ -62,11 +62,11 @@ Wenn diese Eigenschaft oder die **PR_REPLY_RECIPIENT_NAMES** festgelegt ist, mus
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -74,9 +74,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

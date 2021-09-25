@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.ScCreateConversationIndex
 api_type:
 - COM
 ms.assetid: 3ccfc15d-f3c6-4c7b-b1cc-855af66036de
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 385660889c40e5f59dfc015ad92ce6a1398ab0cd
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 9c37bd8613f8dc344fad841309b26fb763639935
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33415656"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59609544"
 ---
 # <a name="sccreateconversationindex"></a>ScCreateConversationIndex
 
@@ -25,7 +25,7 @@ ms.locfileid: "33415656"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt an, wohin in einem Nachrichtenthread eine Nachricht gehört. 
+Gibt an, wo in einem Nachrichtenthread eine Nachricht gehört. 
   
 |||
 |:-----|:-----|
@@ -46,11 +46,11 @@ SCODE ScCreateConversationIndex(
 
  _cbParent_
   
-> [in] Anzahl der Bytes im übergeordneten Unterhaltungsindex.
+> [in] Anzahl der Bytes im Index der übergeordneten Unterhaltung.
     
  _lpbParent_
   
-> [in] Zeiger auf Bytes im übergeordneten Unterhaltungsindex. Dies kann NULL sein,  _wenn cbParent_ null ist. 
+> [in] Zeiger auf Bytes im Index der übergeordneten Unterhaltung. Dies kann NULL sein, wenn  _cbParent_ null ist. 
     
  _lpcbIndex_
   
@@ -58,7 +58,7 @@ SCODE ScCreateConversationIndex(
     
  _lppbIndex_
   
-> [out] Zeiger auf einen Zeiger auf den neuen Unterhaltungsindex, der vom Anruf zurückgegeben wird.
+> [out] Zeiger auf einen Zeiger auf den neuen Unterhaltungsindex, der vom Aufruf zurückgegeben wird.
     
 ## <a name="return-value"></a>Rückgabewert
 

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.SBinaryArray
 api_type:
 - COM
 ms.assetid: 2d5b7302-cad2-4522-beb1-7c6c711f42e6
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 12fefbe15491837878608540006e5dd7dc3033ea
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 865cfe1df39c3c4070ac24ba2e2b9ff5aea75a66
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33438288"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59609530"
 ---
 # <a name="sbinaryarray"></a>SBinaryArray
 
@@ -25,7 +25,7 @@ ms.locfileid: "33438288"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array mit binären Werten. 
+Enthält ein Array von binären Werten. 
   
 |||
 |:-----|:-----|
@@ -40,19 +40,19 @@ typedef struct _SBinaryArray
 
 ```
 
-## <a name="members"></a>Elemente
+## <a name="members"></a>Members
 
  **cValues**
   
-> Anzahl der Werte im Array, auf die das **lpbin-Element** verweist. 
+> Anzahl der Werte im Array, auf das vom **Lpbin-Element** verwiesen wird. 
     
  **lpbin**
   
-> Zeiger auf ein Array von [SBinary-Strukturen,](sbinary.md) das die binären Werte enthält. 
+> Zeiger auf ein Array von [SBinary-Strukturen,](sbinary.md) die die binären Werte enthalten. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die **SBinaryArray-Struktur** wird verwendet, um Eigenschaften vom Typ PT_MV_BINARY. 
+Die **SBinaryArray-Struktur** wird verwendet, um Eigenschaften des Typs PT_MV_BINARY zu beschreiben. 
   
 Weitere Informationen zu PT_MV_BINARY finden Sie unter [List of Property Types](property-types.md).
   

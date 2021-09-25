@@ -1,20 +1,20 @@
 ---
-title: CreateRecord-Datenblock
+title: Datensatzerstellen-Datenblock erstellen
 TOCTitle: CreateRecord data block
 ms:assetid: e18f47f8-2aad-9a14-ad63-ab603a4d5b07
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835671(v=office.15)
 ms:contentKeyID: 48548263
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 63e189143e77f9fcc42fa8d48c3ebfb2feda6633
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 2430e3731f83c59eb039f504609772cdc69b9695
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295352"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59581595"
 ---
-# <a name="createrecord-data-block"></a>CreateRecord-Datenblock
+# <a name="createrecord-data-block"></a>Datensatzerstellen-Datenblock erstellen
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -56,11 +56,11 @@ Der **DatensatzErstellen**-Datenblock kann mit den folgenden Argumenten verwende
 </table>
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der mit **DatensatzErstellen** erstellte Datensatz wird automatisch als aktueller Datensatz festgelegt.
 
-Nach **** der CreateRecord-Anweisung können Sie einen Block von Befehlen Einfügen, die ausgeführt werden, bevor der neue Datensatz übergeben wird. In einem **DatensatzErstellen**-Datenblock sind die folgenden Aktionen verfügbar.
+Nach **der CreateRecord-Anweisung** können Sie einen Befehlsblock einfügen, der ausgeführt wird, bevor für den neuen Datensatz ein Commit ausgeführt wird. In einem **DatensatzErstellen**-Datenblock sind die folgenden Aktionen verfügbar.
 
 <table>
 <colgroup>
@@ -77,7 +77,7 @@ Nach **** der CreateRecord-Anweisung können Sie einen Block von Befehlen Einfü
 <td><p><a href="group-macro-statement.md">Gruppieren-Makroanweisung</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="if-then-else-macro-block.md">If... Dann... Else-Makroanweisung</a></p></td>
+<td><p><a href="if-then-else-macro-block.md">Wenn... Dann... Else-Makro-Anweisung</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="setfield-macro-action.md">SetField-Makroaktion</a></p></td>
@@ -95,7 +95,7 @@ Anschließend können Sie mit einer **Wenn...Dann...Sonst** -Anweisung Vorgänge
 
 Wenn Sie das Erstellen eines Datensatzes abbrechen möchten, verwenden Sie die **AbbrechenDatensatzänderung** -Aktion. Damit verhindern Sie, dass für die Änderungen ein Commit ausgeführt wird, und der **DatensatzErstellen** -Datenblock wird beendet.
 
-Once the new record is committed, you can use the **LastCreateRecordIdentity** local variable to work with the record. Verwenden Sie beispielsweise die folgende Syntax, um auf das Feld ZugewiesenAn des zuletzt erstellten Datensatzes zu verweisen.
+Once the new record is committed, you can use the **LastCreateRecordIdentity** local variable to work with the record. Verwenden Sie beispielsweise die folgende Syntax, um auf das Feld AssignedTo des zuletzt erstellten Datensatzes zu verweisen.
 
 `[LastCreateRecordIdentity].[AssignedTo]`
 

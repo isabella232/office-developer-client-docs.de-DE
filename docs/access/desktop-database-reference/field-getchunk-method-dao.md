@@ -1,5 +1,5 @@
 ---
-title: Field. getChunk-Methode (DAO)
+title: Field.GetChunk-Methode (DAO)
 TOCTitle: GetChunk Method
 ms:assetid: b8984e79-54f7-8052-85a3-d12033daf7a1
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff822448(v=office.15)
@@ -10,25 +10,25 @@ f1_keywords:
 - dao360.chm1052871
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: c7eabceb1f7c130e349428aeb6b2dc079fe4319d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4219445f4e0369479023cffad59899b0aba95232
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293098"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59602640"
 ---
-# <a name="fieldgetchunk-method-dao"></a>Field. getChunk-Methode (DAO)
+# <a name="fieldgetchunk-method-dao"></a>Field.GetChunk-Methode (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
-Gibt den Inhalt eines **Memo** -oder **Long Binary** **[Field](field-object-dao.md)** -Objekts in der Fields-Auflistung **[](fields-collection-dao.md)** eines **[Recordset](recordset-object-dao.md)** -Objekts ganz oder teilweise zurück.
+Gibt den gesamten Inhalt oder einen Teil des Inhalts eines **Memo-** oder **Long Binary** **[Field](field-object-dao.md)** -Objekts in der **[Fields -Auflistung](fields-collection-dao.md)** eines **[Recordset](recordset-object-dao.md)** -Objekts zurück.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . GetChunk (***Offset***, ***Bytes***)
+*Ausdruck* . GetChunk(***Offset** _, _*_Bytes_**)
 
-*Ausdruck* Eine Variable, die ein **Field** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Field**-Objekt darstellt.
 
 ## <a name="parameters"></a>Parameter
 
@@ -72,9 +72,9 @@ Variant
 
 The bytes returned by **GetChunk** are assigned to variable. Use **GetChunk** to return a portion of the total data value at a time. You can use the **[AppendChunk](field-appendchunk-method-dao.md)** method to reassemble the pieces.
 
-Wenn Offset gleich 0 ist **** , beginnt GetChunk mit dem Kopieren vom ersten Byte des Felds.
+Wenn der Offset 0 ist, beginnt **GetChunk** mit dem Kopieren aus dem ersten Byte des Felds.
 
-Wenn numBytes größer ist als die Anzahl der Bytes im Feld, gibt **GetChunk** die tatsächliche Anzahl der verbleibenden Bytes im Feld zurück.
+Wenn Numbyte größer als die Anzahl der Bytes im Feld ist, gibt **GetChunk** die tatsächliche Anzahl der verbleibenden Bytes im Feld zurück.
 
 > [!NOTE]
 > [!HINWEIS] Verwenden Sie ein **Memo**-Feld für Text, und schreiben Sie binäre Daten nur in Felder des Typs **Long Binary**. Andernfalls erzielen Sie unerwünschte Ergebnisse.

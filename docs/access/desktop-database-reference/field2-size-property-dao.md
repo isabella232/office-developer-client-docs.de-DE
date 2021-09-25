@@ -1,20 +1,20 @@
 ---
-title: Field2. Size-Eigenschaft (DAO)
+title: Field2.Size-Eigenschaft (DAO)
 TOCTitle: Size Property
 ms:assetid: e252759a-cea9-25cb-667d-80b422fbf97e
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835700(v=office.15)
 ms:contentKeyID: 48548282
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: f1467414729f4ea82bc2779eeb2bd162465b5ccd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 90278f60242b24e9cc46f86478c2c678e8005cb0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292685"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59602646"
 ---
-# <a name="field2size-property-dao"></a>Field2. Size-Eigenschaft (DAO)
+# <a name="field2size-property-dao"></a>Field2.Size-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -26,9 +26,9 @@ Mit dieser Eigenschaft wird ein Wert festgelegt oder zurückgegeben, der die max
 
 *Ausdruck* . Größe
 
-*Ausdruck* Eine Variable, die ein **Field2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Field2**-Objekt darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Bei einem Objekt, das noch nicht der **[Fields](fields-collection-dao.md)** -Auflistung angefügt wurde, besteht für diese Eigenschaft Lese-/Schreibzugriff.
 
@@ -44,7 +44,7 @@ Die Verwendung der **Size**-Eigenschaft hängt vom Objekt ab, das die **Fields**
 <thead>
 <tr class="header">
 <th><p>Zugehörigkeit zu Objekt</p></th>
-<th><p>Verwendung</p></th>
+<th><p>Nutzung</p></th>
 </tr>
 </thead>
 <tbody>
@@ -61,7 +61,7 @@ Die Verwendung der **Size**-Eigenschaft hängt vom Objekt ab, das die **Fields**
 <td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Beziehung</strong></p></td>
+<td><p><strong>Relation</strong></p></td>
 <td><p>Nicht unterstützt</p></td>
 </tr>
 <tr class="odd">

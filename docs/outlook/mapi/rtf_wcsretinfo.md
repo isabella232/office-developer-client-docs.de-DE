@@ -5,21 +5,21 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 62561d8d-33cb-e482-7fa0-132afe2b464a
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: cfa18c215fc98610b836db31e2a07581291910be
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 65d3758cc0abe8835c43887558cdd9f60aeaca85
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33426170"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59609607"
 ---
 # <a name="rtf_wcsretinfo"></a>RTF_WCSRETINFO
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Diese Struktur enthält Informationen zu einem Datenstrom im systemeigenen Format, der beim Dekomprimieren des Textkörpers einer Nachricht zurückgegeben wird, der im komprimierten Rich Text Format (RTF) gekapselt ist.
+Diese Struktur enthält Informationen zu einem Stream im systemeigenen Format, der durch dekomprimieren des Textkörpers einer Nachricht zurückgegeben wird, die im komprimierten RtF (Rich Text Format) gekapselt ist.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -34,17 +34,17 @@ typedef struct {
 
 _size_
   
-> Die Größe der **RTF_WCSRETINFO** in der Anzahl der Bytes. 
+> Die Größe der **RTF_WCSRETINFO** Struktur in der Anzahl der Bytes. 
     
 _ulStreamFlags_
   
-> Dies ist ein Wert, der das Format des systemeigenen Textkörpers angibt. Dieser Wert ist nur gültig, wenn **das MAPI_NATIVE_BODY**  _im ulFlags-Parameter_ der [RTF_WCSINFO-Struktur](rtf_wcsinfo.md) übergeben wird, die an die [WrapCompressedRTFStreamEx-Funktion](wrapcompressedrtfstreamex.md) übergeben wird. Dies kann einer der folgenden Werte sein: 
+> Dies ist ein Wert, der das Format des systemeigenen Textkörpers angibt. Dieser Wert ist nur gültig, wenn das **MAPI_NATIVE_BODY** Flag im  _ulFlags-Parameter_ der [RTF_WCSINFO](rtf_wcsinfo.md) Struktur übergeben wird, die an die [WrapCompressedRTFStreamEx-Funktion](wrapcompressedrtfstreamex.md) übergeben wird. Dies kann einer der folgenden Werte sein: 
     
 |||
 |:-----|:-----|
-|MAPI_NATIVE_BODY_TYPE_RTF  <br/> |Dieser Wert wird nur verwendet, wenn  _ulFlags_ das MAPI_NATIVE_BODY **und** der Textkörper RTF ist.  <br/> |
-|MAPI_NATIVE_BODY_TYPE_PLAIN_TEXT  <br/> |Dieser Wert wird nur verwendet, wenn  _ulFlags_ das MAPI_NATIVE_BODY **enthält** und der Textkörper nur im Nur-Text-Format ist.  <br/> |
-|MAPI_NATIVE_BODY_TYPE_HTML  <br/> |Dieser Wert wird nur verwendet,  wenn _ulFlags_ das MAPI_NATIVE_BODY und der Textkörper das HTML-Format (Hypertext Markup Language) hat.  <br/> |
+|MAPI_NATIVE_BODY_TYPE_RTF  <br/> |Dieser Wert wird nur verwendet, wenn  _ulFlags_ das **flag MAPI_NATIVE_BODY** enthält und der Textkörper RTF ist.  <br/> |
+|MAPI_NATIVE_BODY_TYPE_PLAIN_TEXT  <br/> |Dieser Wert wird nur verwendet, wenn  _ulFlags_ das **flag MAPI_NATIVE_BODY** enthält und der Textkörper nur ein Textformat aufweist.  <br/> |
+|MAPI_NATIVE_BODY_TYPE_HTML  <br/> |Dieser Wert wird nur verwendet, wenn  _ulFlags_ das **flag MAPI_NATIVE_BODY** enthält und der Textkörper das HTML-Format (Hypertext Markup Language) aufweist.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

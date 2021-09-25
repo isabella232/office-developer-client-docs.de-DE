@@ -1,5 +1,5 @@
 ---
-title: Connection. aktualisierbar-Eigenschaft (DAO)
+title: Connection.Updatable-Eigenschaft (DAO)
 TOCTitle: Updatable Property
 ms:assetid: dc3c021e-f6df-c256-b655-8d36317e0b68
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835360(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1052881
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 5bd4a312bc65bc69d7cc96e198fc39a1db6c1239
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: fad857988c06e4fe50cc45935ddc2c3ea1e28055
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295800"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59569335"
 ---
-# <a name="connectionupdatable-property-dao"></a>Connection. aktualisierbar-Eigenschaft (DAO)
+# <a name="connectionupdatable-property-dao"></a>Connection.Updatable-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -27,7 +27,7 @@ Gibt einen Wert zurück, der anzeigt, ob ein DAO-Objekt geändert werden kann. S
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Aktualisierbar
+*Ausdruck* . Aktualisierbare
 
-*Ausdruck* Ein Ausdruck, der ein **Connection** -Objekt zurückgibt.
+*Ausdruck* Ein Ausdruck, der ein **Connection-Objekt** zurückgibt.
 

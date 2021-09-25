@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249253(v=office.15)
 ms:contentKeyID: 48544765
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: e7c87acd433df4a303c1e6a15a60184cadf994c3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 11d79201416a0b02e7af8f4d25140d4d138bd7d2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282464"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603067"
 ---
 # <a name="address-book-navigation-buttons"></a>Navigationsschaltflächen des Adressbuchs
 
@@ -24,7 +24,7 @@ Die Adressbuchanwendung zeigt die Navigationsschaltflächen am unteren Rand der 
 
 Die Adressbuchanwendung enthält verschiedene Prozeduren, die es den Benutzern ermöglichen, auf die Schaltflächen **First**, **Next**, **Previous** und **Last** zu klicken, um durch die Daten zu navigieren.
 
-Wenn Sie beispielsweise auf die **erste** Schaltfläche klicken, wird\_die erste VBScript-Unterprozedur OnClick aktiviert. The procedure executes a [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-rds.md) method, which makes the first row of data the current selection. Wenn Sie auf die **Letzte** Schaltfläche klicken\_, wird die letzte OnClick-Sub-Prozedur aktiviert, die die [MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-rds.md) -Methode aufruft und die letzte Datenzeile zur aktuellen Auswahl macht. The remaining navigation buttons work in a similar fashion.
+Wenn Sie beispielsweise auf die Schaltfläche **"First"** klicken, wird die VBScript First \_ OnClick Sub-Prozedur aktiviert. The procedure executes a [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-rds.md) method, which makes the first row of data the current selection. Durch Klicken auf die Schaltfläche **"Last"** wird die Letzte \_ OnClick Sub-Prozedur aktiviert, die die [MoveLast-Methode](movefirst-movelast-movenext-and-moveprevious-methods-rds.md) aufruft und die letzte Datenzeile zur aktuellen Auswahl macht. The remaining navigation buttons work in a similar fashion.
 
 ```vb 
  

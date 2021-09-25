@@ -6,15 +6,15 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249600(v=office.15)
 ms:contentKeyID: 48546145
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 1952d473b51048a271a689498ae844cee761b001
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: dab216f84707ec3ff2a05d5d736c6918539586c2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280439"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59569447"
 ---
-# <a name="adcpropupdateresyncenum"></a>ADCPROP\_-\_UPDATERESYNC-Enumeration
+# <a name="adcprop_updateresync_enum"></a>ADCPROP \_ \_ UPDATERESYNC-ENUMERATION
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -38,7 +38,7 @@ Gibt an, ob die [UpdateBatch](updatebatch-method-ado.md)-Methode von einer impli
 <tbody>
 <tr class="odd">
 <td><p><strong>adResyncAll</strong></p></td>
-<td><p>15</p></td>
+<td><p>15 </p></td>
 <td><p>Ruft <strong>Resync</strong> mit dem kombinierten Wert aller anderen ADCPROP_UPDATERESYNC_ENUM-Elemente auf.</p></td>
 </tr>
 <tr class="even">
@@ -53,8 +53,8 @@ Gibt an, ob die [UpdateBatch](updatebatch-method-ado.md)-Methode von einer impli
 </tr>
 <tr class="even">
 <td><p><strong>adResyncInserts</strong></p></td>
-<td><p>8</p></td>
-<td><p>Ruft <strong>Resync</strong> für alle erfolgreich eingefügten Zeilen auf. AutoIncrement-Spaltenwerte werden jedoch nicht neu synchronisiert. Stattdessen werden die Inhalte neu eingefügter Zeilen basierend auf dem vorhandenen Primärschlüsselwert neu synchronisiert. Wenn der Primärschlüssel ein AutoIncrement-Wert ist, wird der Inhalt der beabsichtigten Zeile nicht mit <strong>Resync</strong> abgerufen. Rufen Sie für die automatische Inkrementierung von Primärschlüsselwerten <strong>UpdateBatch</strong> mit dem kombinierten Wert <strong>adResyncAutoIncrement</strong> + <strong>adResyncInserts</strong>auf.</p></td>
+<td><p>8 </p></td>
+<td><p>Ruft <strong>Resync</strong> für alle erfolgreich eingefügten Zeilen auf. AutoIncrement-Spaltenwerte werden jedoch nicht neu synchronisiert. Stattdessen werden die Inhalte neu eingefügter Zeilen basierend auf dem vorhandenen Primärschlüsselwert neu synchronisiert. Wenn der Primärschlüssel ein AutoIncrement-Wert ist, wird der Inhalt der beabsichtigten Zeile nicht mit <strong>Resync</strong> abgerufen. Rufen Sie zum automatischen Erhöhen von AutoIncrement-Primärschlüsselwerten <strong>UpdateBatch</strong> mit dem kombinierten Wert <strong>adResyncAutoIncrement</strong> + <strong>adResyncInserts auf.</strong></p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adResyncNone</strong></p></td>
@@ -63,7 +63,7 @@ Gibt an, ob die [UpdateBatch](updatebatch-method-ado.md)-Methode von einer impli
 </tr>
 <tr class="even">
 <td><p><strong>adResyncUpdates</strong></p></td>
-<td><p>4</p></td>
+<td><p>4 </p></td>
 <td><p>Ruft <strong>Resync</strong> für alle erfolgreich aktualisierten Zeilen auf.</p></td>
 </tr>
 </tbody>

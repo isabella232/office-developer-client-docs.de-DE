@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.SDoubleArray
 api_type:
 - COM
 ms.assetid: b63b26de-faf9-453c-ab8b-fb703ed09ae8
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 91440d619c8ad8a64b2bac7463a26d9c196a3c0f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 160fdc7ecc27a2a2a14882090f674441655540f5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439268"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59609495"
 ---
 # <a name="sdoublearray"></a>SDoubleArray
 
@@ -25,7 +25,7 @@ ms.locfileid: "33439268"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Array von Doubles, das zum Beschreiben einer Eigenschaft vom Typ PT_MV_DOUBLE.
+Enthält ein Array von Doubles, die verwendet werden, um eine Eigenschaft vom Typ PT_MV_DOUBLE zu beschreiben.
   
 |||
 |:-----|:-----|
@@ -40,17 +40,17 @@ typedef struct _SDoubleArray
 
 ```
 
-## <a name="members"></a>Elemente
+## <a name="members"></a>Members
 
  **cValues**
   
-> Anzahl der Werte im Array, auf das das **lpdbl-Element verweist.** 
+> Anzahl der Werte in dem Array, auf das vom **lpdbl-Element** verwiesen wird. 
     
  **lpdbl**
   
 > Zeiger auf ein Array mit doppelten Werten.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Weitere Informationen zu PT_MV_DOUBLE finden Sie unter [List of Property Types](property-types.md).
   

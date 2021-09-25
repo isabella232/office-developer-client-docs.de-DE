@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.ScRelocNotifications
 api_type:
 - COM
 ms.assetid: 22de5d38-7be6-48b3-90a7-bc553dcdb042
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 81da4b77f0d2162a1119b7945b1e0ceb87ba9fb8
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 03ea2aba27b9ea19daa3ea48f6ae0373f48d49ce
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33415201"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59591206"
 ---
 # <a name="screlocnotifications"></a>ScRelocNotifications
 
@@ -47,23 +47,23 @@ SCODE ScRelocNotifications(
 
  _cntf_
   
-> [in] Anzahl der [NOTIFICATION-Strukturen](notification.md) im Array, das durch den  _rgntf-Parameter angegeben_ wird. 
+> [in] Anzahl der [NOTIFICATION-Strukturen](notification.md) im Array, die durch den  _rgntf-Parameter_ angegeben werden. 
     
  _rgntf_
   
-> [in] Zeiger auf das Array von **NOTIFICATION-Strukturen,** in dem Ereignisbenachrichtigungen definiert werden, innerhalb derer ein Zeiger angepasst werden soll. 
+> [in] Zeiger auf das Array von **NOTIFICATION-Strukturen,** die Ereignisbenachrichtigungen definieren, innerhalb derer ein Zeiger angepasst werden soll. 
     
  _pvBaseOld_
   
-> [in] Zeiger auf die ursprüngliche Basisadresse des Arrays, die durch den  _rgntf-Parameter angegeben_ wird. 
+> [in] Zeiger auf die ursprüngliche Basisadresse des Arrays, das durch den  _rgntf-Parameter_ angegeben wird. 
     
- _pvBaseNeu_
+ _pvBaseNew_
   
-> [in] Der Speicherort, an den **ScRelocNotifications** die neue Basisadresse des arrays schreibt, das durch den  _rgntf-Parameter angegeben_ wird. 
+> [in] Der Speicherort, an den **ScRelocNotifications** die neue Basisadresse des Arrays schreibt, das durch den  _rgntf-Parameter_ angegeben wird. 
     
- _leiterplatte_
+ _Pcb_
   
-> [out] Zeiger auf die Größe des durch den  _parameter pvBaseNew_ angegebenen Arrays in Bytes. 
+> [out] Zeiger auf die Größe des Arrays in Byte, die durch den  _Parameter "pvBaseNew"_ angegeben wird. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -75,9 +75,9 @@ MAPI_E_INVALID_PARAMETER
   
 > Es wurde eine ungültige Benachrichtigung gefunden.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Der  _Parameter "pcb"_ für die **ScRelocNotifications-Funktion** ist optional. 
+Der  _parameter parameter_ to the **ScRelocNotifications** function is optional. 
   
 ## <a name="see-also"></a>Siehe auch
 

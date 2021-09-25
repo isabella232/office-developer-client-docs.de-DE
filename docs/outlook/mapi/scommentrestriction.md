@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.SCommentRestriction
 api_type:
 - COM
 ms.assetid: 07631ae1-981e-4c8e-a30b-1213904fe079
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 3f66f513cc16bc479dd24c53804d751a396141f4
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: dbc4de78db26d2e93d34feb5f5846c69a942ce5c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33430609"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59609432"
 ---
 # <a name="scommentrestriction"></a>SCommentRestriction
 
@@ -41,11 +41,11 @@ typedef struct _SCommentRestriction
 
 ```
 
-## <a name="members"></a>Elemente
+## <a name="members"></a>Members
 
  **cValues**
   
-> Anzahl der Eigenschaftswerte im Array, auf das das **lpProp-Element verweist.** 
+> Anzahl der Eigenschaftswerte im Array, auf das der **lpProp-Member** verweist. 
     
  **lpRes**
   
@@ -55,13 +55,13 @@ typedef struct _SCommentRestriction
   
 > Zeiger auf ein Array von [SPropValue-Strukturen,](spropvalue.md) die jeweils das Eigenschaftstag und den Wert für eine benannte Eigenschaft enthalten. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die **SCommentRestriction-Struktur** ordnet ein Objekt einem Satz benannter Eigenschaften zu. Kommentareinschränkungen sind im Gegensatz zu anderen Einschränkungen, da sie nicht ausgewertet werden. Das heißt, sie werden von der [IMAPITable::Restrict-Methode](imapitable-restrict.md) ignoriert. Es gibt keine Auswirkungen auf die Zeilen, die von der [IMAPITable::QueryRows-Methode](imapitable-queryrows.md) zurückgegeben werden, nachdem ein **IMAPITable::Restrict-Aufruf** ausgeführt wurde. 
+Die **SCommentRestriction-Struktur** ordnet ein Objekt einer Gruppe benannter Eigenschaften zu. Kommentareinschränkungen sind im Gegensatz zu anderen Einschränkungen, da sie nicht ausgewertet werden. Das heißt, sie werden von der [IMAPITable::Restrict-Methode](imapitable-restrict.md) ignoriert. Es gibt keine Auswirkung auf die Zeilen, die von der [IMAPITable::QueryRows-Methode](imapitable-queryrows.md) zurückgegeben werden, nachdem ein **IMAPITable::Restrict-Aufruf** ausgeführt wurde. 
   
-Die **SCommentRestriction-Struktur** kann verwendet werden, um anwendungsspezifische Informationen mit einer Einschränkung zu speichern, wenn sie auf dem Datenträger gespeichert werden. Beispielsweise kann ein Client, der den Namen einer benannten Eigenschaft, die in einer Eigenschaftseinschränkung verwendet wird, speichern, dies in einer **SCommentRestriction-Struktur** tun. Das Speichern eines Eigenschaftennamens ist in einer Eigenschaftseinschränkung nicht möglich, da die zugeordnete [SPropertyRestriction-Struktur](spropertyrestriction.md) nur das Eigenschaftstag enthält. 
+Die **SCommentRestriction-Struktur** kann verwendet werden, um anwendungsspezifische Informationen mit einer Einschränkung beizubehalten, wenn sie auf dem Datenträger gespeichert werden. Beispielsweise kann ein Client, der den Namen einer benannten Eigenschaft speichert, die in einer Eigenschaftseinschränkung verwendet wird, dies in einer **SCommentRestriction-Struktur** tun. Das Speichern eines Eigenschaftsnamens ist in einer Eigenschaftseinschränkung nicht möglich, da die [zugeordnete SPropertyRestriction-Struktur](spropertyrestriction.md) nur das Eigenschaftstag enthält. 
   
-Weitere Informationen zur Struktur und Einschränkungen **von SCommentRestriction** im Allgemeinen finden Sie unter [About Restrictions](about-restrictions.md). 
+Weitere Informationen zur Struktur und Einschränkungen von **SCommentRestriction** im Allgemeinen finden Sie unter ["Einschränkungen".](about-restrictions.md) 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,20 +1,20 @@
 ---
-title: Spalteneigenschaften, Methoden und Ereignisse (ADOX)
+title: Spalteneigenschaften, -methoden und -ereignisse (ADOX)
 TOCTitle: Properties, Methods, and Events
 ms:assetid: 3cfb6eaf-399a-1678-45bd-6fe692d8bd81
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249162(v=office.15)
 ms:contentKeyID: 48544330
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 13310d816208f1faf54873142a67471f12a12006
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: ef1b696b39e2b3fe1d9227aba3b0688f4855d0be
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296241"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59602913"
 ---
-# <a name="column-properties-methods-and-events-adox"></a>Spalteneigenschaften, Methoden und Ereignisse (ADOX)
+# <a name="column-properties-methods-and-events-adox"></a>Spalteneigenschaften, -methoden und -ereignisse (ADOX)
 
 **Gilt für**: Access 2013, Office 2013
 

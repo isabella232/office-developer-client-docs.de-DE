@@ -6,31 +6,31 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm60077
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ef200f41-7b69-1291-f9df-a7035239a033
 description: Legt den Abstand in Seiteneinheiten fest, den der Schatten eines Shapes auf vertikaler Ebene vom Shape entfernt ist.
-ms.openlocfilehash: 4ae4347ba9009e88bbd181d4dd6e242e1fad53be
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 45efbee0376bd680dea4dbbb8f5961c0e9275ecc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33426821"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59622886"
 ---
 # <a name="shapeshdwoffsety-cell-fill-format-section"></a>Zelle "ShapeShdwOffsetY" (Abschnitt "Fill Format")
 
 Legt den Abstand in Seiteneinheiten fest, den der Schatten eines Shapes auf vertikaler Ebene vom Shape entfernt ist.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieser Wert entspricht dem Wert der Einstellung **Y-Abstand** im Dialogfeld **Schatten** (klicken Sie auf der Registerkarte **Start** in der Gruppe **Shape** auf **Schatten**, und klicken Sie dann auf **Schattenoptionen**).
   
-Um einen Verweis auf die Zelle ShapeShdwOffsetY anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Verwenden Sie Folgendes, um einen Verweis auf die Zelle ShapeShdwOffsetY anhand des Namens einer anderen Formel oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen: 
   
 |||
 |:-----|:-----|
 | Zellenname  <br/> | ShapeShdwOffsetY  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle ShapeShdwOffsetY nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle ShapeShdwOffsetY anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249884(v=office.15)
 ms:contentKeyID: 48547302
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: d05cf352515d8fe4faa868088c9ba9cc8a024145
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4c09076444c6830b114db27fe4adfa0104718b80
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32297067"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559003"
 ---
 # <a name="append-method-adox-users"></a>Append-Methode (ADOX Users)
 
@@ -22,7 +22,7 @@ Fügt der [Users](user-object-adox.md)-Auflistung ein neues [User](users-collect
 
 ## <a name="syntax"></a>Syntax
 
-*Benutzer*. Anhängen von*Benutzer*\[,*Kennwort*\]
+*Benutzer*. Benutzer \[ anhängen ,*Kennwort*\]
 
 ## <a name="parameters"></a>Parameter
 
@@ -31,7 +31,7 @@ Fügt der [Users](user-object-adox.md)-Auflistung ein neues [User](users-collect
 |*User* |Ein **Variant** -Wert, der das anzufügende **User** -Objekt enthält oder den Namen des zu erstellenden und anzufügenden Benutzers.|
 |*Password* |Optional. Ein **String**-Wert, der das Kennwort für den Benutzer enthält. Der *Password*-Parameter entspricht dem Wert, der durch die [ChangePassword](changepassword-method-adox.md)-Methode eines **User**-Objekts angegeben wird.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **Users** Auflistung eines [Catalog](catalog-object-adox.md)-Objekts stellt alle Benutzer des Katalogs dar. Die **Users** -Auflistung für ein [Group](group-object-adox.md)-Objekt stellt nur die Benutzer dar, die Elemente dieser bestimmten Gruppe sind.
 

@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248809(v=office.15)
 ms:contentKeyID: 48543020
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: a0efb40d1b5e4c5d675d8add7cdb7a05760578a9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d79c1abb2ce664945c57a147e5e29909420caf5b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283233"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559269"
 ---
 # <a name="ado-properties"></a>ADO-Eigenschaften
 
@@ -43,7 +43,7 @@ ms.locfileid: "32283233"
 <td><p>Das <strong>Command</strong>-Objekt, von dem das zugeordnete <strong>Recordset</strong>-Objekt erstellt wurde, wird angegeben.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="activeconnection-property-ado.md">ActiveConnection</a></p></td>
+<td><p><a href="activeconnection-property-ado.md">Activeconnection</a></p></td>
 <td><p>Es wird angegeben, zu welchem <strong>Connection</strong>-Objekt das angegebene <strong>Command</strong>-, <strong>Recordset-</strong> oder <strong>Record</strong>-Objekt zurzeit gehört.</p></td>
 </tr>
 <tr class="odd">
@@ -56,7 +56,7 @@ ms.locfileid: "32283233"
 </tr>
 <tr class="odd">
 <td><p><a href="bof-eof-properties-ado.md">BOF und EOF</a></p></td>
-<td><p><strong>BOF</strong> – gibt an, dass sich die aktuelle Datensatzposition vor dem ersten Datensatz in einem <strong>Recordset</strong> -Objekt befindet. <strong>EOF</strong> – gibt an, dass sich die aktuelle Datensatzposition hinter dem letzten Datensatz in einem <strong>Recordset</strong> -Objekt befindet.</p></td>
+<td><p><strong>BOF</strong> - gibt an, dass sich die aktuelle Datensatzposition vor dem ersten Datensatz in einem <strong>Recordset-Objekt</strong> befindet. <strong>EOF</strong> - Gibt an, dass die aktuelle Datensatzposition hinter dem letzten Datensatz in einem <strong>Recordset-Objekt</strong> liegt.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="bookmark-property-ado.md">Bookmark</a></p></td>
@@ -72,14 +72,14 @@ ms.locfileid: "32283233"
 </tr>
 <tr class="odd">
 <td><p><a href="charset-property-ado.md">CharSet</a></p></td>
-<td><p>Gibt den Zeichensatz an, in den der Inhalt eines <strong></strong> Textstreams übersetzt werden soll.</p></td>
+<td><p>Gibt den Zeichensatz an, in den der Inhalt eines <strong>Textstreams</strong> übersetzt werden soll.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="commandtext-property-ado.md">CommandText</a></p></td>
 <td><p>Gibt den Text eines Befehls an, der an einen Anbieter ausgegeben werden soll.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="commandtimeout-property-ado.md">CommandTimeout</a></p></td>
+<td><p><a href="commandtimeout-property-ado.md">Commandtimeout</a></p></td>
 <td><p>Gibt an, wie lange beim Ausführen eines Befehls gewartet wird, bis der Versuch beendet und ein Fehler generiert wird.</p></td>
 </tr>
 <tr class="even">
@@ -103,11 +103,11 @@ ms.locfileid: "32283233"
 <td><p>Gibt die Position des Cursordiensts an.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="cursortype-property-ado.md">CursorType</a></p></td>
+<td><p><a href="cursortype-property-ado.md">Cursortype</a></p></td>
 <td><p>Gibt den Typ des Cursors an, der in einem <strong>Recordset</strong>-Objekt verwendet wird.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="datamember-property-ado.md">DataMember</a></p></td>
+<td><p><a href="datamember-property-ado.md">Datamember</a></p></td>
 <td><p>Gibt den Namen des Datenelements an, das von dem durch die <strong>DataSource</strong>-Eigenschaft angegebenen Objekt abgerufen wird.</p></td>
 </tr>
 <tr class="odd">
@@ -128,7 +128,7 @@ ms.locfileid: "32283233"
 </tr>
 <tr class="odd">
 <td><p><a href="direction-property-ado.md">Direction</a></p></td>
-<td><p>Gibt an, ob der <strong>Parameter</strong> einen Eingabeparameter, einen Ausgabeparameter oder beides darstellt oder ob der Parameter der Rückgabewert aus einer gespeicherten Prozedur ist.</p></td>
+<td><p>Gibt an, ob der <strong>Parameter</strong> einen Eingabeparameter, einen Ausgabeparameter oder beides darstellt oder ob der Parameter der Rückgabewert einer gespeicherten Prozedur ist.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="editmode-property-ado.md">EditMode</a></p></td>
@@ -143,7 +143,7 @@ ms.locfileid: "32283233"
 <td><p>Gibt einen Filter für Daten in einem <strong>Recordset</strong> an.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="helpcontext-helpfile-properties-ado.md">HelpContext und hilfsHilfe</a></p></td>
+<td><p><a href="helpcontext-helpfile-properties-ado.md">HelpContext und HelpFile</a></p></td>
 <td><p>Gibt die Hilfedatei und das Hilfethema an, das einem <strong>Error</strong>-Objekt zugeordnet ist. <strong>HelpContextID</strong> - gibt eine Kontext-ID als <strong>Long</strong> -Wert für ein Thema in einer Hilfedatei zurück. <strong>HelpFile</strong> - gibt einen <strong>String</strong> -Wert zurück, der als vollständig aufgelöster Pfad zu einer Hilfedatei ausgewertet wird.</p></td>
 </tr>
 <tr class="even">
@@ -151,11 +151,11 @@ ms.locfileid: "32283233"
 <td><p>Gibt den Namen des Indexes an, der aktuell für das <strong>Recordset</strong>-Objekt wirksam ist.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="isolationlevel-property-ado.md">IsolationLevel</a></p></td>
+<td><p><a href="isolationlevel-property-ado.md">Isolationlevel</a></p></td>
 <td><p>Gibt die Isolationsstufe für ein <strong>Connection</strong>-Objekt an.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="item-property-ado.md">Element</a></p></td>
+<td><p><a href="item-property-ado.md">Aspekt</a></p></td>
 <td><p>Gibt ein bestimmtes Element einer Auflistung nach Name oder Ordnungszahl an.</p></td>
 </tr>
 <tr class="odd">
@@ -219,7 +219,7 @@ ms.locfileid: "32283233"
 <td><p>Die aktuelle Position in einem <strong>Stream</strong>-Objekt wird angegeben.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="precision-property-ado.md">Genauigkeit</a></p></td>
+<td><p><a href="precision-property-ado.md">Präzision</a></p></td>
 <td><p>Gibt den Genauigkeitsgrad für numerische Werte in einem <strong>Parameter</strong>-Objekt oder für numerische <strong>Field</strong>-Objekte an.</p></td>
 </tr>
 <tr class="odd">
@@ -239,7 +239,7 @@ ms.locfileid: "32283233"
 <td><p>Der Typ eines <strong>Record</strong>-Objekts wird angegeben.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="row-property-ado.md">Zeile</a></p></td>
+<td><p><a href="row-property-ado.md">Row</a></p></td>
 <td><p>Ruft ein <strong>Row</strong> -Objekt von OLE DB aus einem <strong>ADORecordConstruction</strong> -Objekt ab oder legt es dafür fest.</p></td>
 </tr>
 <tr class="even">
@@ -251,36 +251,36 @@ ms.locfileid: "32283233"
 <td><p>Gets or sets an OLE DB <strong>Rowset</strong> object from/on an <strong>ADORecordsetConstruction</strong> object.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="size-property-ado.md">Size</a></p></td>
+<td><p><a href="size-property-ado.md">Größe</a></p></td>
 <td><p>Gibt die maximale Größe eines <strong>Parameter</strong>-Objekts in Bytes oder Zeichen an.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/size-property-ado-stream">Größe (ADO-Stream)</a></p></td>
-<td><p>Gibt die Gesamtgröße des Streams in Byte an.</p></td>
+<td><p><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/size-property-ado-stream">Größe (ADO Stream)</a></p></td>
+<td><p>Gibt die Gesamtgröße des Datenstroms in Byte an.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="sort-property-ado.md">Sort</a></p></td>
 <td><p>Gibt einen oder mehrere Feldnamen an, nach denen das <strong>Recordset</strong> sortiert wird, und gibt an, ob die einzelnen Felder aufsteigend oder absteigend sortiert werden.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="source-property-ado-error.md">Source (ADO-Fehler)</a></p></td>
+<td><p><a href="source-property-ado-error.md">Quelle (ADO-Fehler)</a></p></td>
 <td><p>Gibt den Namen des Objekts oder der Anwendung an, die einen Fehler ursprünglich generierte.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="source-property-ado-record.md">Quelle (ADO Record)</a></p></td>
+<td><p><a href="source-property-ado-record.md">Quelle (ADO-Eintrag)</a></p></td>
 <td><p>Die Entität wird angegeben, die durch das <strong>Record</strong>-Objekt dargestellt wird.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="source-property-ado-recordset.md">Quelle (ADO-Recordset)</a></p></td>
-<td><p>Gibt die Quelle für die Daten in einem <strong>Recordset</strong> -Objekt an.</p></td>
+<td><p>Gibt die Quelle für die Daten in einem <strong>Recordset-Objekt</strong> an.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="sqlstate-property-ado.md">SQLState</a></p></td>
+<td><p><a href="sqlstate-property-ado.md">Sqlstate</a></p></td>
 <td><p>Gibt den SQL-Status für ein bestimmtes <strong>Error</strong>-Objekt an.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="state-property-ado.md">State</a></p></td>
-<td><p>Für alle entsprechenden Objekte wird angegeben, ob der Status des Objekts open oder closed entspricht. Gibt für alle anwendbaren Objekte an, die eine asynchrone Methode ausführen, unabhängig davon, ob der aktuelle Zustand des Objekts eine Verbindung herstellt, ausgeführt oder abgerufen wird.</p></td>
+<td><p>Für alle entsprechenden Objekte wird angegeben, ob der Status des Objekts open oder closed entspricht. Gibt für alle anwendbaren Objekte, die eine asynchrone Methode ausführen, an, ob der aktuelle Status des Objekts eine Verbindung herstellt, ausgeführt oder abgerufen wird.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="status-property-ado-field.md">Status (ADO-Feld)</a></p></td>
@@ -292,14 +292,14 @@ ms.locfileid: "32283233"
 </tr>
 <tr class="even">
 <td><p><a href="stayinsync-property-ado.md">StayInSync</a></p></td>
-<td><p>Gibt in einem hierarchischen <strong>Recordset</strong> -Objekt an, ob sich der Verweis auf die zugrunde liegenden untergeordneten Datensätze (also das <em>Kapitel</em>) ändert, wenn die übergeordnete Zeilenposition geändert wird.</p></td>
+<td><p>Gibt in einem hierarchischen <strong>Recordset-Objekt</strong> an, ob sich der Verweis auf die zugrunde liegenden untergeordneten Datensätze (d. h. das <em>Kapitel)</em>ändert, wenn sich die Position der übergeordneten Zeile ändert.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="type-property-ado.md">Type</a></p></td>
+<td><p><a href="type-property-ado.md">Typ</a></p></td>
 <td><p>Gibt den Funktions- oder Datentyp eines <strong>Parameter</strong>-, <strong>Field</strong>- oder <strong>Property</strong>-Objekts an.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="type-property-ado-stream.md">Type (ADO-Stream)</a></p></td>
+<td><p><a href="type-property-ado-stream.md">Type (ADO Stream)</a></p></td>
 <td><p>Gibt die Art der Daten an, die im <strong>Stream</strong>-Objekt enthalten sind (binär oder Text).</p></td>
 </tr>
 <tr class="odd">

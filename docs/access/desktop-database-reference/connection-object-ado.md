@@ -10,13 +10,13 @@ f1_keywords:
 - ado210.chm1231105
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: ed736a0e52ff45cd0fed63f1ba5bd7060d7a2380
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 5e2f7c534ccd5d319af8be6000008ff8026221f7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295877"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59602822"
 ---
 # <a name="connection-object-ado"></a>Connection-Objekt (ADO)
 
@@ -24,7 +24,7 @@ ms.locfileid: "32295877"
 
 Stellt eine offene Verbindung zu einer Datenquelle dar.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Ein **Connection** -Objekt stellt eine eindeutige Sitzung mit einer Datenquelle dar. Bei einem Client-/Server-Datenbanksystem kann es einer tatsächlichen Netzwerkverbindung mit dem Server entsprechen. Abhängig von der vom Anbieter unterstützten Funktionalität sind bestimmte Auflistungen, Methoden oder Eigenschaften eines **Connection** -Objekts möglicherweise nicht verfügbar.
 

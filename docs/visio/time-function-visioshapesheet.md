@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251506
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2e662230-0760-5f43-52dc-927f499715f6
-description: Gibt die Durch Stunde, Minute und Sekunde dargestellte Zeit zurück.
-ms.openlocfilehash: f5be55d7e63a70d15da49c68b924cc5b03c5ca88
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Gibt die Uhrzeit zurück, die durch Stunde, Minute und Sekunde dargestellt wird.
+ms.openlocfilehash: 4df859721e4947ba625a473f391d9e81f5606b2e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33414473"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59622746"
 ---
 # <a name="time-function-visioshapesheet"></a>TIME-Funktion (VisioShapeSheet)
 
-Gibt die Durch _Stunde,_ Minute und Sekunde dargestellte Zeit _zurück._ 
+Gibt die Uhrzeit zurück, die durch  _Stunde,_  _Minute_ und  _Sekunde_ dargestellt wird.
   
 ## <a name="syntax"></a>Syntax
 

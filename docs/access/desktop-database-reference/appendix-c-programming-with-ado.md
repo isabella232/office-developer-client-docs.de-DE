@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249808(v=office.15)
 ms:contentKeyID: 48547024
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 77e1fb99d611d11829f87778ed1e9d6e03fec71c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 039e7bbfdc454dbcdbc905d7de812d9cc7a73a97
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32297011"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558926"
 ---
 # <a name="appendix-c-programming-with-ado"></a>Anhang C: Programmierung mit ADO
 
@@ -20,7 +20,7 @@ ms.locfileid: "32297011"
 
 ADO ist eine COM-Automatisierungs-Schnittstellenkomponente, die für viele Programmiersprachen, einschließlich Microsoft Visual Basic, VBScript, JScript, Visual C++ und Visual J++, verwendet wird. Eine Version von ADO wird mit jedem dieser Tools sowie mit anderen Anwendungen, wie z. B. Microsoft Office und Microsoft SQL Server, installiert. Die neueste Version von ADO ist separat mit Microsoft Data Access Components erhältlich. Weitere Informationen finden Sie auf der [Microsoft Data Access-Website](https://docs.microsoft.com/sql/connect/sql-data-developer?view=sql-server-2017).
 
-Die Bibliothek für ADO ist MSADO15. dll, und das Präfix Programm-ID (ProgID) ist "ADODB". Wenn Sie beispielsweise explizit auf ein ADO- [Recordset](recordset-object-ado.md)verweisen möchten, verwenden Sie.
+Die Bibliothek für ADO ist msado15.dll, und das ProgID-Präfix (Programm-ID) lautet "ADODB". Wenn Sie beispielsweise explizit auf ein [ADO-Recordset](recordset-object-ado.md)verweisen möchten, verwenden Sie .
 
 Weitere Informationen zum Programmieren mit ADO in verschiedenen Entwicklungsumgebungen finden Sie unter den folgenden Themen:
 

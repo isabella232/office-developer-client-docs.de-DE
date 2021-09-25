@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248984(v=office.15)
 ms:contentKeyID: 48543651
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 3169b7eaab6ad290bfc385881f5de69edc80111f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 94d7fcdbbbe442bfd7218d70e20b7d306f3f2e01
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32283282"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559290"
 ---
 # <a name="ado-methods"></a>ADO-Methoden
 
@@ -46,7 +46,7 @@ ms.locfileid: "32283282"
 <td><p><a href="begintrans-committrans-and-rollbacktrans-methods-ado.md">"BeginTrans", "CommitTrans" und "RollbackTrans"</a></p></td>
 <td><p>Die Transaktionsverarbeitung in einem <strong>Connection</strong>-Objekt wird wie folgt verwaltet:<br/><br/><strong>BeginTrans</strong> - Eine neue Transaktion wird begonnen.<br/><br/>
 <strong>CommitTrans</strong> - Alle Änderungen werden gespeichert, und die aktuelle Transaktion wird beendet. Möglicherweise wird auch eine neue Transaktion gestartet.<br/><br/>
-<strong>RollbackTrans</strong> -bricht alle Änderungen ab und beendet die aktuelle Transaktion. Möglicherweise wird auch eine neue Transaktion gestartet.</p></td>
+<strong>RollbackTrans</strong> - Bricht alle Änderungen ab und beendet die aktuelle Transaktion. Möglicherweise wird auch eine neue Transaktion gestartet.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="cancel-method-ado.md">Cancel</a></p></td>
@@ -69,7 +69,7 @@ ms.locfileid: "32283282"
 <td><p>Ein <strong>Recordset</strong>-Objektduplikat wird aus einem vorhandenen <strong>Recordset</strong> -Objekt erstellt. Optional wird angegeben, dass der Klon schreibgeschützt ist.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="close-method-ado.md">Close</a></p></td>
+<td><p><a href="close-method-ado.md">Schließen</a></p></td>
 <td><p>Ein geöffnetes Objekt und alle abhängigen Objekte werden geschlossen.</p></td>
 </tr>
 <tr class="odd">
@@ -85,7 +85,7 @@ ms.locfileid: "32283282"
 <td><p>Die angegebene Anzahl von Zeichen oder Bytes (abhängig vom <strong>Typ</strong>) im <strong>Datenstrom</strong> wird in ein anderes <strong>Stream</strong>-Objekt kopiert.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="createparameter-method-ado.md">CreateParameter</a></p></td>
+<td><p><a href="createparameter-method-ado.md">Createparameter</a></p></td>
 <td><p>Ein neues <strong>Parameter</strong>-Objekt mit den angegebenen Eigenschaften wird erstellt.</p></td>
 </tr>
 <tr class="odd">
@@ -117,7 +117,7 @@ ms.locfileid: "32283282"
 <td><p>Ein <strong>Recordset</strong>-Objekt wird nach der Zeile durchsucht, die den angegebenen Kriterien entspricht.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="flush-method-ado.md">Leeren</a></p></td>
+<td><p><a href="flush-method-ado.md">Flush</a></p></td>
 <td><p>Es wird erzwungen, dass der Inhalt des im ADO-Puffer verbleibenden <strong>Stream</strong>-Objekts in das zugrunde liegende Objekt übernommen wird, das dem <strong>Stream</strong>-Objekt zugeordnet ist.</p></td>
 </tr>
 <tr class="odd">
@@ -133,7 +133,7 @@ ms.locfileid: "32283282"
 <td><p>Mehrere Datensätze eines <strong>Recordset</strong>-Objekts werden in ein Array abgerufen.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="getstring-method-ado.md">GetString</a></p></td>
+<td><p><a href="getstring-method-ado.md">Getstring</a></p></td>
 <td><p>Das <strong>Recordset</strong>-Objekt wird als Zeichenfolge zurückgegeben.</p></td>
 </tr>
 <tr class="odd">
@@ -181,7 +181,7 @@ ms.locfileid: "32283282"
 <td><p>Eine angegebene Anzahl von Bytes aus einem <strong>Stream</strong>-Objekt wird abgerufen.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="readtext-method-ado.md">ReadText</a></p></td>
+<td><p><a href="readtext-method-ado.md">Readtext</a></p></td>
 <td><p>Eine angegebene Anzahl von Zeichen aus einem <strong>Stream</strong>-Textobjekt wird abgerufen.</p></td>
 </tr>
 <tr class="odd">
@@ -237,7 +237,7 @@ ms.locfileid: "32283282"
 <td><p>Binärdaten werden in ein <strong>Stream</strong>-Objekt geschrieben.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="writetext-method-ado.md">WriteText</a></p></td>
+<td><p><a href="writetext-method-ado.md">Writetext</a></p></td>
 <td><p>Eine angegebene Textzeichenfolge wird in ein <strong>Stream</strong>-Objekt geschrieben.</p></td>
 </tr>
 </tbody>

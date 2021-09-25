@@ -1,20 +1,20 @@
 ---
-title: CREATE USER or GROUP Statement (Microsoft Access SQL)
+title: CREATE USER- oder GROUP-Anweisung (Microsoft Access SQL)
 TOCTitle: CREATE USER or GROUP statement (Microsoft Access SQL)
 ms:assetid: 62148ce2-0f81-944e-a1ab-edef990fff9f
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194914(v=office.15)
 ms:contentKeyID: 48545229
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 5b294af16498778eae94b38a7a31b93fd029585e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 5da68a0574bb0e81a403f456e48f6dd1b965b9e6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295380"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59569209"
 ---
-# <a name="create-user-or-group-statement-microsoft-access-sql"></a>CREATE USER or GROUP Statement (Microsoft Access SQL)
+# <a name="create-user-or-group-statement-microsoft-access-sql"></a>CREATE USER- oder GROUP-Anweisung (Microsoft Access SQL)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -24,11 +24,11 @@ Erstellt einen oder mehrere neue Benutzer bzw. eine oder mehrere neue Gruppen.
 
 ### <a name="create-a-user"></a>Erstellen eines Benutzers
 
-Create User ** *Password PID* \[, *User* *Password PID*,...\]
+CREATE USER *user* *password pid* \[ , *user* *password pid*, ...\]
 
 ### <a name="create-a-group"></a>Erstellen einer Gruppe
 
-Gruppen *Gruppen* *-PID*\[, *Gruppen* - *PID*,...\]
+CREATE GROUP *group* *pid* \[ , *group* *pid*, ...\]
 
 Die CREATE USER- oder GROUP-Anweisung besteht aus folgenden Komponenten:
 
@@ -64,7 +64,7 @@ Die CREATE USER- oder GROUP-Anweisung besteht aus folgenden Komponenten:
 </table>
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Ein *Benutzer* und eine *Gruppe* können nicht über den gleichen Namen verfügen.
 
