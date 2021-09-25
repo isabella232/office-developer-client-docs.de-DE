@@ -1,31 +1,31 @@
 ---
-title: PidTagImportance (kanonische Eigenschaft)
+title: Kanonische PidTagImportance-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagImportance
 api_type:
 - HeaderDef
 ms.assetid: 274dd444-a863-4b53-bdbc-3763c375c43c
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 6bef8b05f2fbf94b74ee126b80dfc6ae0c5e9d11
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: d91720bc2e612345cff4221dbdd9c41a45b149e4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327923"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59587664"
 ---
-# <a name="pidtagimportance-canonical-property"></a>PidTagImportance (kanonische Eigenschaft)
+# <a name="pidtagimportance-canonical-property"></a>Kanonische PidTagImportance-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält einen Wert, der die Meinung des Nachrichtensenders zur Wichtigkeit einer Nachricht angibt. 
+Enthält einen Wert, der die Meinung des Absenders der Nachricht zur Wichtigkeit einer Nachricht angibt. 
   
 |||
 |:-----|:-----|
@@ -34,23 +34,23 @@ Enthält einen Wert, der die Meinung des Nachrichtensenders zur Wichtigkeit eine
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeines Messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft und die **PR_PRIORITY** ([PidTagPriority](pidtagpriority-canonical-property.md)) sollten nicht verwechselt werden. Importance gibt einen Wert für Benutzer an, während priorität die Reihenfolge oder Geschwindigkeit angibt, mit der die Nachricht von der Messagingsystemsoftware gesendet werden soll. Höhere Priorität bedeutet in der Regel höhere Kosten. Eine höhere Wichtigkeit wird in der Regel einer anderen Anzeige durch die Benutzeroberfläche zugeordnet. 
+Diese Eigenschaft und die **PR_PRIORITY** ([PidTagPriority](pidtagpriority-canonical-property.md)) -Eigenschaft sollten nicht verwechselt werden. Wichtigkeit gibt den Benutzern einen Wert an, während die Priorität die Reihenfolge oder Geschwindigkeit angibt, in der die Nachricht von der Messagingsystemsoftware gesendet werden soll. Eine höhere Priorität weist in der Regel auf höhere Kosten hin. Eine höhere Wichtigkeit wird in der Regel einer anderen Anzeige über die Benutzeroberfläche zugeordnet. 
   
 Diese Eigenschaft kann genau einen der folgenden Werte haben:
   
 IMPORTANCE_LOW 
   
-> Die Nachricht hat eine geringe Bedeutung.
+> Die Nachricht hat eine geringe Wichtigkeit.
     
 IMPORTANCE_HIGH 
   
-> Die Nachricht hat eine hohe Bedeutung.
+> Die Nachricht hat eine hohe Wichtigkeit.
     
 IMPORTANCE_NORMAL 
   
-> Die Nachricht hat normale Bedeutung.
+> Die Nachricht hat normale Wichtigkeit.
     
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -58,7 +58,7 @@ IMPORTANCE_NORMAL
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
@@ -68,11 +68,11 @@ IMPORTANCE_NORMAL
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -80,9 +80,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -4,19 +4,19 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e219adf6-e591-72e6-b9bd-2fc62eb5142d
-description: Ändert die Reihenfolge der angegebenen Kategorie von Konten.
-ms.openlocfilehash: 29dfe4fd1bda9e323481297167361650c3b3a173
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Ändert die Reihenfolge der angegebenen Kontenkategorie.
+ms.openlocfilehash: 5197cc484d0c410367c06d8c28dce9b62c73411d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33422859"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617097"
 ---
 # <a name="iolkaccountmanagersetorder"></a>IOlkAccountManager::SetOrder
 
-Ändert die Reihenfolge der angegebenen Kategorie von Konten.
+Ändert die Reihenfolge der angegebenen Kontenkategorie.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -47,7 +47,7 @@ _cAccts_
     
 _rgAccts_
   
-> [in] Ein Array von Konto-IDs. Die Größe des Arrays ist  _cAccts_.
+> [in] Ein Array von Konto-IDs. Die Größe des  _Arrays ist cAccts_.
     
 ## <a name="return-values"></a>Rückgabewerte
 
@@ -58,9 +58,9 @@ _rgAccts_
 |E_INVALIDARG  <br/> |Mindestens ein Argument ist ungültig.  <br/> |
 |E_OLK_NOT_INITIALIZED  <br/> |Konto-Manager wurde nicht für die Verwendung initialisiert.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Der Aufrufer weist Speicher für den Arrayzeiger _prgAccts_ sowie für das Array zu, auf das _prgAccts verweist._ 
+Der Aufrufer weist Speicher für die  _Arrayzeiger-PrgAccts_ sowie für das Array zu, auf das  _prgAccts_ zeigt. 
   
 ## <a name="see-also"></a>Siehe auch
 

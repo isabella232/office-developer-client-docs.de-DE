@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagBodyContentLocation
 api_type:
 - HeaderDef
 ms.assetid: a66d1c64-5c5a-4980-9acd-72448108fd2c
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 90a873174b5b990f165d0b2173efa38fc7df2d9d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 6e33aebdc567c8d9897c2ed532aed97ffa81e53b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32350939"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616572"
 ---
 # <a name="pidtagbodycontentlocation-canonical-property"></a>PidTagBodyContentLocation (kanonische Eigenschaft)
 
@@ -34,11 +34,11 @@ Enthält den Wert eines MIME Content-Location-Headerfelds.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MIME  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Zum Festlegen des Werts dieser Eigenschaften sollten MIME-Clients den gewünschten Wert in ein Content-Location-Kopfzeilenfeld für eine MIME-Entität schreiben, die einem Nachrichtentext zu ordnet.
+Um den Wert dieser Eigenschaften festzulegen, sollten MIME-Clients den gewünschten Wert in ein Inhaltsspeicherort-Headerfeld einer MIME-Entität schreiben, die einem Nachrichtentext zugeordnet ist.
   
-MIME-Reader sollten den Wert eines Content-Location-Headerfelds für eine solche MIME-Entität in den Wert dieser Eigenschaften kopieren.
+MIME-Leser sollten den Wert eines Inhaltsspeicherort-Headerfelds für eine solche MIME-Entität in den Wert dieser Eigenschaften kopieren.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -46,7 +46,7 @@ MIME-Reader sollten den Wert eines Content-Location-Headerfelds für eine solche
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
@@ -56,11 +56,11 @@ MIME-Reader sollten den Wert eines Content-Location-Headerfelds für eine solche
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -68,9 +68,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

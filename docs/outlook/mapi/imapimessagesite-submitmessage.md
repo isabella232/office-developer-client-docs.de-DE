@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPIMessageSite.SubmitMessage
 api_type:
 - COM
 ms.assetid: 6b14c383-8bc6-4e86-bd92-0500272af40d
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 496732e334d2d39672048dd1a02346aaee4b70e1
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: fce66a5c7a306df2d116f473458e7155739eb750
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33417028"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59630698"
 ---
 # <a name="imapimessagesitesubmitmessage"></a>IMAPIMessageSite::SubmitMessage
 
@@ -25,7 +25,7 @@ ms.locfileid: "33417028"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Fordert an, dass die aktuelle Nachricht zur Zustellung in die Warteschlange eingereiht wird.
+Fordert an, dass die aktuelle Nachricht zur Zustellung in die Warteschlange gestellt wird.
   
 ```cpp
 HRESULT SubmitMessage(
@@ -37,11 +37,11 @@ HRESULT SubmitMessage(
 
  _ulFlags_
   
-> [in] Eine Bitmaske mit Flags, die steuert, wie eine Nachricht übermittelt wird. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie eine Nachricht gesendet wird. Das folgende Kennzeichen kann festgelegt werden:
     
 FORCE_SUBMIT 
   
-> MAPI sollte die Nachricht übermitteln, auch wenn sie möglicherweise nicht sofort gesendet wird.
+> Die MAPI sollte die Nachricht auch dann übermitteln, wenn sie möglicherweise nicht sofort gesendet wird.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -49,11 +49,11 @@ S_OK
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Formularobjekte rufen die **IMAPIMessageSite::SubmitMessage-Methode** auf, um anzuerlangen, dass eine Nachricht zur Zustellung in die Warteschlange gestellt wird. Die Nachrichtenwebsite sollte die [IPersistMessage::HandsOffMessage-Methode](ipersistmessage-handsoffmessage.md) aufrufen, bevor die Nachricht übermittelt wird. Die Nachricht muss nicht zuvor gespeichert worden sein, da **SubmitMessage** dazu führen sollte, dass die Nachricht gespeichert wird, wenn die Nachricht geändert wurde. Nach der Rückgabe von **SubmitMessage** muss das Formular nach einer aktuellen Nachricht suchen und sich dann selbst schließen, wenn keine vorhanden ist. 
+Formularobjekte rufen die **IMAPIMessageSite::SubmitMessage-Methode** auf, um anzufordern, dass eine Nachricht zur Zustellung in die Warteschlange gestellt wird. Die Nachrichtenwebsite sollte die [IPersistMessage::HandsOffMessage-Methode](ipersistmessage-handsoffmessage.md) vor dem Senden der Nachricht aufrufen. Die Nachricht muss nicht zuvor gespeichert worden sein, da **SubmitMessage** dazu führen sollte, dass die Nachricht gespeichert wird, wenn die Nachricht geändert wurde. Nach der Rückgabe von **SubmitMessage** muss das Formular nach einer aktuellen Nachricht suchen und sich dann selbst schließen, wenn keine vorhanden ist. 
   
-Eine Liste der Schnittstellen im Zusammenhang mit Formularservern finden Sie unter [MAPI Form Interfaces](mapi-form-interfaces.md).
+Eine Liste der Schnittstellen im Zusammenhang mit Formularservern finden Sie unter [MAPI-Formularschnittstellen.](mapi-form-interfaces.md)
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
@@ -61,7 +61,7 @@ Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
 |**Datei**|**Funktion**|**Comment**|
 |:-----|:-----|:-----|
-|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::SubmitMessage  <br/> |MFCMAPI verwendet die **IMAPIMessageSite::SubmitMessage-Methode,** um die Nachricht zu speichern. Zunächst wird die **IPersistMessage::HandsOffMessage-Methode** und dann **SubmitMessage aufruft.**  <br/> |
+|MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::SubmitMessage  <br/> |MFCMAPI verwendet die **IMAPIMessageSite::SubmitMessage-Methode,** um die Nachricht zu speichern. Zuerst wird die **IPersistMessage::HandsOffMessage-Methode** und dann **SubmitMessage** aufgerufen.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

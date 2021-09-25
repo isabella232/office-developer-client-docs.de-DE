@@ -1,20 +1,20 @@
 ---
-title: Workspace. Type-Eigenschaft (DAO)
+title: Workspace.Type-Eigenschaft (DAO)
 TOCTitle: Type Property
 ms:assetid: 89e59280-d2cd-b6a2-16c5-9f14f42fdd99
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197086(v=office.15)
 ms:contentKeyID: 48546177
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: e698963d60809e8d88c4ff87532fb7b74cff275c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 1d96bfc50d6dd653d667660ca48da84150fdbca1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32311305"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59588563"
 ---
-# <a name="workspacetype-property-dao"></a>Workspace. Type-Eigenschaft (DAO)
+# <a name="workspacetype-property-dao"></a>Workspace.Type-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -23,11 +23,11 @@ Legt einen Wert fest, der den Funktions- oder Datentyp eines Objekts angibt, ode
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Typ
+*expression* .Type
 
-*Ausdruck* Eine Variable, die ein **Workspace** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Workspace**-Objekt darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Ein **Workspace**-Objekt kann folgende Einstellungen und Rückgabewerte haben.
 

@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249924(v=office.15)
 ms:contentKeyID: 48547462
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 91b8d66929e360f88385b6773a03fcaffb79161d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: ba897ff825725eb7ec43d695934bb4840dedee6b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288203"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597128"
 ---
 # <a name="ordinal-property-ado-md-cell"></a>Ordinal-Eigenschaft (ADO MD Cell)
 
@@ -25,7 +25,7 @@ Identifiziert eine Zelle eindeutig durch ihre Position innerhalb einer Zellmenge
 
 Gibt einen schreibgeschützten, ganzzahligen **Long**-Wert zurück.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Durch den Ordnungswert einer Zelle wird die Zelle innerhalb einer Zellmenge eindeutig identifiziert. Bei diesem Konzept sind die Zellen in einer Zellmenge nummeriert, als wäre die Zellmenge ein *p*-dimensionales Array, wobei *p* die Anzahl der [Achsen](axes-collection-ado-md.md) darstellt. Zellen sind zeilenweise nummeriert (beginnend bei 0).
 

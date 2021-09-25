@@ -4,19 +4,19 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 883b1c5d-47dd-a006-b5f1-130691bdd019
-description: Legt den Wert der angegebenen Account-Eigenschaft fest.
-ms.openlocfilehash: 94134cee7886177ab840a6caff7d70d65bf9d4cb
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Legt den Wert der angegebenen Kontoeigenschaft fest.
+ms.openlocfilehash: 8fd8eb0acc51d457911799e751451e7600202d5d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33431988"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617146"
 ---
 # <a name="iolkaccountsetprop"></a>IOlkAccount::SetProp
 
-Legt den Wert der angegebenen Account-Eigenschaft fest.
+Legt den Wert der angegebenen Kontoeigenschaft fest.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -31,9 +31,9 @@ HRESULT IOlkAccount::SetProp(
 
 ## <a name="parameters"></a>Parameter
 
-_dwProp_
+_für "wetterprop"_
   
-> [in] Das Eigenschaftstag der festgelegten Account-Eigenschaft.
+> [in] Das Eigenschaftstag der festzulegenden Kontoeigenschaft.
     
 _pVar_
   
@@ -44,11 +44,11 @@ _pVar_
 |**[HRESULT]**|**Description**|
 |:-----|:-----|
 |S_OK  <br/> |Der Methodenaufruf war erfolgreich.  <br/> |
-|E_INVALIDARG  <br/> |Ein ungültiges Eigenschaftstag wurde angegeben.  <br/> |
+|E_INVALIDARG  <br/> |Es wurde ein ungültiges Eigenschaftstag angegeben.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden [Sie IOlkAccount::SaveChanges,](iolkaccount-savechanges.md) um Änderungen am Wert der Kontoeigenschaften zu speichern. 
+Verwenden Sie [IOlkAccount::SaveChanges,](iolkaccount-savechanges.md) um Änderungen am Wert der Kontoeigenschaften zu speichern. 
   
 ## <a name="see-also"></a>Siehe auch
 

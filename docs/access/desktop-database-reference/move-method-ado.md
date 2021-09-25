@@ -1,18 +1,18 @@
 ---
-title: Move-Methode-ActiveX Data Objects (ADO)
+title: Move-Methode – ActiveX Data Objects (ADO)
 TOCTitle: Move method (ADO)
 ms:assetid: 1f858654-5fa3-273d-7cdc-574c5f09a420
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248982(v=office.15)
 ms:contentKeyID: 48543645
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 6c7db661e590bc21605d9c289b1de6d4ae9f46e2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 003c60e021ab773e4540af4739f5cf260048b63b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288834"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606562"
 ---
 # <a name="move-method-ado"></a>Move-Methode (ADO)
 
@@ -22,7 +22,7 @@ Verschiebt die Position des aktuellen Datensatzes in einem [Recordset](recordset
 
 ## <a name="syntax"></a>Syntax
 
-*Recordset*. *Numrecords*verschieben, *starten*
+*Recordset*. Move *NumRecords*, *Start*
 
 ## <a name="parameters"></a>Parameter
 
@@ -31,13 +31,13 @@ Verschiebt die Position des aktuellen Datensatzes in einem [Recordset](recordset
 |*NumRecords* |Ein signierter **Long** -Ausdruck, der die Anzahl von Datensätzen angibt, um die die aktuelle Position des Datensatzes verschoben wird.|
 |*Start* |Optional. Ein **String** -Wert oder ein **Variant** -Wert, der eine Textmarke ergibt. Sie können auch einen [BookmarkEnum](bookmarkenum.md)-Wert verwenden.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **Move**-Methode wird für alle **Recordset**-Objekte unterstützt.
 
 Wenn das Argument *NumRecords* größer als null ist, wird die aktuelle Datensatzposition vorwärts verschoben (zum Ende des **Recordset**-Objekts hin). Wenn *NumRecords* kleiner als null ist, wird die aktuelle Datensatzposition rückwärts verschoben (zum Anfang des **Recordset**-Objekts hin).
 
-Wenn der **Verschiebungs** Aufruf die aktuelle Datensatzposition vor dem ersten Datensatz verschiebt, wird der aktuelle Datensatz von ADO auf die Position vor dem ersten Datensatz im Recordset-Objekt festgelegt ([BOF](bof-eof-properties-ado.md) ist **true**). Beim Versuch, den Datensatz nach hinten zu verschieben, wenn die **BOF**-Eigenschaft bereits auf **True** festgelegt ist, wird ein Fehler generiert.
+Wenn der **Move-Aufruf** die aktuelle Datensatzposition an einen Punkt vor dem ersten Datensatz verschieben würde, legt ADO den aktuellen Datensatz auf die Position vor dem ersten Datensatz im Recordset fest ([BOF](bof-eof-properties-ado.md) ist **True**). Beim Versuch, den Datensatz nach hinten zu verschieben, wenn die **BOF**-Eigenschaft bereits auf **True** festgelegt ist, wird ein Fehler generiert.
 
 Wenn die aktuelle Position des Datensatzes beim Aufrufen von **Move** an eine Stelle hinter dem letzten Datensatz verschoben werden würde, legt ADO den aktuellen Datensatz auf die Position nach dem letzten Datensatz in der Datensatzgruppe fest ([EOF](bof-eof-properties-ado.md) ist **True**). Beim Versuch, den Datensatz nach vorn zu verschieben, wenn die **EOF**-Eigenschaft bereits auf **True** festgelegt ist, wird ein Fehler generiert.
 

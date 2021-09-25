@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.DeregisterIdleRoutine
 api_type:
 - COM
 ms.assetid: a8ada6fe-9963-4c25-b4b4-db77f9517368
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 62231a900dbe01ebe1e848355226c0589072cd42
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 1e77d9a58256b240c45eb106aac1b030b91ee808
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404561"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59567711"
 ---
 # <a name="deregisteridleroutine"></a>DeregisterIdleRoutine
 
@@ -41,7 +41,7 @@ VOID DeregisterIdleRoutine(
 
 ## <a name="parameters"></a>Parameter
 
- _ftg_
+ _Ftg_
   
 > [in] Funktionstag, das die zu entfernende Leerlaufroutine identifiziert.
     
@@ -49,25 +49,25 @@ VOID DeregisterIdleRoutine(
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Jede Aufgabe in einer Clientanwendung oder einem Dienstanbieter kann alle Leerlaufroutinen, für die sie über einen gültigen  _ftg-Parameter_ verfügt, abmelden. Insbesondere kann sich eine Leerlaufroutine selbst abmelden. 
+Jede Aufgabe in einer Clientanwendung oder einem Dienstanbieter kann jede Leerlaufroutine, für die sie über einen gültigen  _ftg-Parameter_ verfügt, aufheben. Insbesondere kann sich eine Leerlaufroutine selbst abmelden. 
   
-Die folgenden Funktionen befassen sich mit dem MAPI-Leerlaufmodul und mit Leerlaufroutinen, die auf dem Prototyp der [FNIDLE-Funktion](fnidle.md) basieren: 
+Die folgenden Funktionen befassen sich mit dem MAPI-Leerlaufmodul und mit Leerlaufroutinen, die auf dem [FNIDLE-Funktionsprototyp](fnidle.md) basieren: 
   
-|**Routinefunktion im Leerlauf**|**Nutzung**|
+|**Routinefunktion "Leerlauf"**|**Nutzung**|
 |:-----|:-----|
 |[ChangeIdleRoutine](changeidleroutine.md) <br/> |Ändert die Merkmale einer registrierten Leerlaufroutine.  <br/> |
 |**DeregisterIdleRoutine** <br/> |Entfernt eine registrierte Leerlaufroutine aus dem MAPI-System.  <br/> |
-|[EnableIdleRoutine](enableidleroutine.md) <br/> |Deaktiviert oder aktiviert eine registrierte Leerlaufroutine, ohne sie aus dem MAPI-System zu entfernen.  <br/> |
-|[FtgRegisterIdleRoutine](ftgregisteridleroutine.md) <br/> |Fügt dem MAPI-System eine Leerlaufroutine mit oder ohne Aktivierung hinzu.  <br/> |
+|[EnableIdleRoutine](enableidleroutine.md) <br/> |Deaktiviert oder aktiviert eine registrierte Leerlaufroutine erneut, ohne sie aus dem MAPI-System zu entfernen.  <br/> |
+|[FtgRegisterIdleRoutine](ftgregisteridleroutine.md) <br/> |Fügt eine Leerlaufroutine zum MAPI-System hinzu, mit oder ohne sie zu aktivieren.  <br/> |
 |[MAPIDeInitIdle](mapideinitidle.md) <br/> |Beendet das MAPI-Leerlaufmodul für die aufrufende Anwendung.  <br/> |
 |[MAPIInitIdle](mapiinitidle.md) <br/> |Initialisiert das MAPI-Leerlaufmodul für die aufrufende Anwendung.  <br/> |
    
- **ChangeIdleRoutine**, **DeregisterIdleRoutine** und **EnableIdleRoutine** nehmen als Eingabeparameter das von **FtgRegisterIdleRoutine** zurückgegebene Funktionstag an. 
+ **ChangeIdleRoutine**, **DeregisterIdleRoutine** und **EnableIdleRoutine** verwenden als Eingabeparameter das von **FtgRegisterIdleRoutine** zurückgegebene Funktionstag. 
   
-Wenn alle Vordergrundaufgaben für die Plattform inaktiv werden, ruft das MAPI-Leerlaufmodul die Leerlaufroutine mit der höchsten Priorität auf, die ausgeführt werden kann. Es gibt keine Garantie für das Aufrufen der Reihenfolge zwischen Leerlaufroutinen mit derselben Priorität. 
+Wenn alle Vordergrundaufgaben für die Plattform inaktiv werden, ruft das MAPI-Leerlaufmodul die Leerlaufroutine mit der höchsten Priorität auf, die zur Ausführung bereit ist. Es gibt keine Garantie für die Anrufreihenfolge zwischen Leerlaufroutinen mit derselben Priorität. 
   
-Nachdem die Leerlaufroutine abgemeldet wurde, wird sie vom Leerlaufmodul nicht erneut aufruft. Jede Implementierung, die **DeregisterIdleRoutine** aufruft, muss alle Speicherblöcke, an die Zeiger für das Leerlaufmodul übergeben werden, für den ursprünglichen Aufruf der **FtgRegisterIdleRoutine-Funktion** übergeben werden. 
+Nachdem die Leerlaufroutine aufgehoben wurde, ruft das Leerlaufmodul sie nicht mehr auf. Jede Implementierung, die **DeregisterIdleRoutine** aufruft, muss alle Speicherblöcke freigeben, an die Zeiger übergeben wurden, die das Leerlaufmodul im ursprünglichen Aufruf der **FtgRegisterIdleRoutine-Funktion** verwenden soll. 
   
 

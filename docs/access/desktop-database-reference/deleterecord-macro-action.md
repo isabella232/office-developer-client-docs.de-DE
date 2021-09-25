@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff823132(v=office.15)
 ms:contentKeyID: 48547624
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 8fb20068052972696b09ea0d2165b344e97ea922
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: b6190a4fe8395901304202019b2ac0891f36fada
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294015"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577430"
 ---
 # <a name="deleterecord-macro-action"></a>DeleteRecord-Makroaktion
 
@@ -43,7 +43,7 @@ Der **DatensatzErstellen**-Datenblock kann mit den folgenden Argumenten verwende
 </tbody>
 </table>
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Über die lokale Variable **LetztesErstellenDatensatzID** in einem **DatensatzErstellen** -Datenblock können Sie mit dem zuletzt erstellten Datensatz arbeiten. Verwenden Sie beispielsweise die folgende Syntax, um auf den zuletzt erstellten Datensatz zu verweisen:
 

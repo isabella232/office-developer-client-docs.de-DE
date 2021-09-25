@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm89069
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 3294efe5ea1ab0f82be19f5c64a51287cc4df9b7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: bfe06cf1f1f4ab10d2c35eacb9f9dc5ff858b7c6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288343"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597163"
 ---
 # <a name="openquery-macro-action"></a>OpenQuery-Makroaktion
 
@@ -59,7 +59,7 @@ Die **ÖffnenAbfrage**-Aktion hat die folgenden Argumente.
 </table>
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn Sie **Datenblatt** für das Argument **Ansicht** verwenden, zeigt Access das Resultset an, sofern die Abfrage eine Auswahl-, Kreuztabellen-, Union- oder Pass-Through-Abfrage ist, deren **ReturnsRecords**-Eigenschaft auf **Ja** festgelegt ist. Zudem führt Access die Abfrage aus, wenn es sich um eine Aktions-, Datendefinitions- oder Pass-Through-Abfrage handelt, deren **ReturnsRecords**-Eigenschaft auf **Nein** festgelegt ist.
 

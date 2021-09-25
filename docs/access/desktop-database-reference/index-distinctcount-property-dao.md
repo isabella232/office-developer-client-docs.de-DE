@@ -1,5 +1,5 @@
 ---
-title: Index. DistinctCount-Eigenschaft (DAO)
+title: Index.DistinctCount-Eigenschaft (DAO)
 TOCTitle: DistinctCount Property
 ms:assetid: 24cb7247-76b4-1fce-c3c4-892f16634eff
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff191836(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1053119
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 3264ea010db12f3fee6c16bd82fb19ed9bda1992
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 50a649478a117e79e3cf931976f2520a107ac38d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291845"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606625"
 ---
-# <a name="indexdistinctcount-property-dao"></a>Index. DistinctCount-Eigenschaft (DAO)
+# <a name="indexdistinctcount-property-dao"></a>Index.DistinctCount-Eigenschaft (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -28,9 +28,9 @@ Gibt einen Wert zurück, der die Anzahl von eindeutigen, in der verknüpften Tab
 
 *Ausdruck* . DistinctCount
 
-*Ausdruck* Eine Variable, die ein **Index** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Index-Objekt** darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Überprüfen Sie die **DistinctCount**-Eigenschaft, um die Anzahl von eindeutigen Werten oder Schlüsseln in einem Index zu ermitteln. Jeder Schlüssel wird nur einmal gezählt, obwohl der Wert mehrmals vorkommen kann, falls der Index doppelte Werte zulässt. Diese Informationen sind in Anwendungen nützlich, die den Zugriff auf Daten durch eine Auswertung von Indexinformationen zu optimieren versuchen. Die Anzahl von eindeutigen Werten wird auch als Kardinalität eines **Index**-Objekts bezeichnet.
 

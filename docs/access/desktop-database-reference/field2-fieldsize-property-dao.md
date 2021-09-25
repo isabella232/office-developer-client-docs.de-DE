@@ -1,5 +1,5 @@
 ---
-title: Field2. Fieldes-Eigenschaft (DAO)
+title: Field2.FieldSize-Eigenschaft (DAO)
 TOCTitle: FieldSize Property
 ms:assetid: d609801d-7761-663f-2840-de5923bb120c
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835039(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1052870
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: a7dfeb33568664a6a75f9f43de64e0c24abeb09a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c958967f2f8e6566a014e8ab380871705d4d7a2e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292804"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577388"
 ---
-# <a name="field2fieldsize-property-dao"></a>Field2. Fieldes-Eigenschaft (DAO)
+# <a name="field2fieldsize-property-dao"></a>Field2.FieldSize-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -30,9 +30,9 @@ Returns the number of bytes used in the database (rather than in memory) of a Me
 
 *Ausdruck* . Feldgröße
 
-*Ausdruck* Eine Variable, die ein **Field2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Field2**-Objekt darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Sie können die **FieldSize**-Eigenschaft mit den Methoden **[AppendChunk](field-appendchunk-method-dao.md)** und **[GetChunk](field-getchunk-method-dao.md)** zum Bearbeiten großer Felder verwenden.
 

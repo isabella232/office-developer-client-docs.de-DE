@@ -1,31 +1,31 @@
 ---
-title: PidTagHtml (kanonische Eigenschaft)
+title: Kanonische PidTagHtml-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagHtml
 api_type:
 - HeaderDef
 ms.assetid: bde195cd-ca24-4715-8db7-04ab83ba8a3c
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: d12a3b7a4cf8ebed610d9326fb878059595d4d1e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 3b0a9c6616ac97131814704627fad63968a4c4ee
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32356749"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59587699"
 ---
-# <a name="pidtaghtml-canonical-property"></a>PidTagHtml (kanonische Eigenschaft)
+# <a name="pidtaghtml-canonical-property"></a>Kanonische PidTagHtml-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält den Nachrichtentext im HTML-Format.
+Enthält den Text des Nachrichtentexts im HTML-Format.
   
 |||
 |:-----|:-----|
@@ -40,7 +40,7 @@ Enthält den Nachrichtentext im HTML-Format.
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Definiert jede Eigenschaft, die in den Objekten verwendet wird, die von DOKUMENTEN mit MS-OXO-Präfix beschrieben werden.
+> Definiert jede Eigenschaft, die in den Objekten verwendet wird, die von MS-OXO-Präfixdokumenten beschrieben werden.
     
 [[MS-OXBBODY]](https://msdn.microsoft.com/library/98296160-746e-4b25-8d45-676dabebb57d%28Office.15%29.aspx)
   
@@ -52,11 +52,11 @@ Enthält den Nachrichtentext im HTML-Format.
     
 [[MS-OXOPOST]](https://msdn.microsoft.com/library/9b18fdab-aacd-4d73-9534-be9b6ba2f115%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften und Vorgänge an, die für Postobjekte zulässig sind.
+> Gibt die Eigenschaften und Vorgänge an, die für Post-Objekte zulässig sind.
     
 [[MS-OXORMMS]](https://msdn.microsoft.com/library/a121dda4-48f3-41f8-b12f-170f533038bb%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften von mit Rechten verwalteten codierten Nachrichten an.
+> Gibt die Eigenschaften von nachrichten mit verwalteten Rechten an.
     
 [[MS-OXORSS]](https://msdn.microsoft.com/library/53bc9634-0040-4b5a-aecd-29781d826009%28Office.15%29.aspx)
   
@@ -66,11 +66,11 @@ Enthält den Nachrichtentext im HTML-Format.
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -78,9 +78,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -3,15 +3,15 @@ title: Hochladen Tabellenstatus
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fe167c90-c817-b627-0728-5c6393477c22
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a2a9b3f214c76b8ec965c84c4731e0dc57e83352
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: e6946b80d57c4bcf4dc14e68cc0023574d884c46
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33405821"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59623936"
 ---
 # <a name="upload-table-state"></a>Hochladen Tabellenstatus
 
@@ -19,7 +19,7 @@ ms.locfileid: "33405821"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
- In diesem Thema wird beschrieben, was während des Status der Uploadtabelle des Replikationsstatuscomputers geschieht. 
+ In diesem Thema wird beschrieben, was während des Uploadtabellenstatus des Replikationsstatuscomputers geschieht. 
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -27,17 +27,17 @@ ms.locfileid: "33405821"
 |:-----|:-----|
 |Statusbezeichner:  <br/> |**LR_SYNC_UPLOAD_TABLE** <br/> |
 |Verwandte Datenstruktur:  <br/> |**[UPTBL](uptbl.md)** <br/> |
-|In diesem Zustand:  <br/> |[Synchronisieren des Inhaltszustands](synchronize-contents-state.md) <br/> |
-|In diesem Zustand:  <br/> |[Hochladen Status der Nachricht,](upload-message-state.md) [Statusstatus zum](upload-delete-status-state.md)Hochladen des Löschstatus, [Statusstatus](upload-read-status-state.md)des Leseinhalts hochladen oder Inhaltsstatus synchronisieren  <br/> |
+|Aus diesem Zustand:  <br/> |[Synchronisieren des Inhaltsstatus](synchronize-contents-state.md) <br/> |
+|In diesem Zustand:  <br/> |[Hochladen Nachrichtenstatus,](upload-message-state.md)Status des [Löschstatus hochladen,](upload-delete-status-state.md)Status des [Lesestatus hochladen](upload-read-status-state.md)oder Inhaltsstatus synchronisieren  <br/> |
    
 > [!NOTE]
-> Der Replikationsstatuscomputer ist ein deterministischer Zustandsautomat. Ein Client, der von einem Zustand in einen anderen abt, muss schließlich zu dem ersten von letzterem zurückkehren. 
+> Der Replikationsstatuscomputer ist ein deterministischer Zustandsautomat. Ein Client, der von einem Bundesland in einen anderen wechselt, muss schließlich von letzterem zum ersten Zurückkehren zurückkehren. 
   
 ## <a name="description"></a>Beschreibung
 
-Dieser Zustand initiiert das Hochladen des Inhalts eines Ordners, der in einem vorherigen Synchronisierungsinhaltsstatus angegeben wurde. Der Ordner kann ein E-Mail-, Kalender-, Kontakt-, Aufgaben-, Notizen- oder Journalordner sein. Während dieses Status erstellt Outlook eine Liste der Elemente, die hinzugefügt, geändert, verschoben, gelöscht oder als gelesen markiert wurden, und bereitet die entsprechenden internen Informationen für den entsprechenden Status der Uploadnachricht, den Status "Löschstatus hochladen" oder "Lesestatus hochladen" vor.
+Dieser Zustand initiiert das Hochladen des Inhalts eines Ordners, der in einem vorherigen Status für die Synchronisierung von Inhalten angegeben wurde. Der Ordner kann ein E-Mail-, Kalender-, Kontakte-, Aufgaben-, Notizen- oder Journalordner sein. In diesem Zustand erstellt Outlook eine Liste der Elemente, die hinzugefügt, geändert, verschoben, gelöscht oder als gelesen markiert wurden, und bereitet die entsprechenden internen Informationen für den entsprechenden Status der Uploadnachricht, den Status des Upload-Löschstatus oder den Status "Lesestatus hochladen" vor.
   
-Wenn dieser Status endet, Outlook der Ordner als synchronisiert markiert, sodass der Inhalt erst wieder hochgeladen wird, wenn eine weitere Änderung vorgenommen wurde. Der lokale Speicher kehrt zum Status "Inhalt synchronisieren" zurück.
+Wenn dieser Zustand endet, kennzeichnet Outlook den Ordner als synchronisierten Inhalt, sodass der Inhalt erst dann erneut hochgeladen wird, wenn eine weitere Änderung vorgenommen wird. Der lokale Speicher kehrt in den Zustand "Inhalt synchronisieren" zurück.
   
 ## <a name="see-also"></a>Siehe auch
 

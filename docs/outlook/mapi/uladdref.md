@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.UlAddRef
 api_type:
 - COM
 ms.assetid: 9b897cbc-90b2-4c60-b5f1-dc78e7e7952d
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f9e55153830dbe41a2b4a48454157c900d96cf90
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 716be1cdd425b7c8f912d33cda875c20e427ea75
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33432835"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59578431"
 ---
 # <a name="uladdref"></a>UlAddRef
 
@@ -25,7 +25,7 @@ ms.locfileid: "33432835"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bietet eine alternative Möglichkeit zum Aufrufen der OLE-Methode **IUnknown::AddRef**. 
+Stellt eine alternative Möglichkeit zum Aufrufen der OLE-Methode **IUnknown::AddRef** bereit. 
   
 |||
 |:-----|:-----|
@@ -41,9 +41,9 @@ ULONG UlAddRef(
 
 ## <a name="parameters"></a>Parameter
 
- _punk_
+ _Punk_
   
-> [in] Zeiger auf eine Schnittstelle, die von der **IUnknown-Schnittstelle** abgeleitet ist, d. h. auf eine beliebige MAPI-Schnittstelle. 
+> [in] Zeiger auf eine von der **IUnknown-Schnittstelle** abgeleitete Schnittstelle, mit anderen Worten, jede MAPI-Schnittstelle. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -53,12 +53,12 @@ S_OK
     
 MAPI_E_CALL_FAILED 
   
-> Ein Fehler mit unerwartetem oder unbekanntem Ursprung verhinderte den Abschluss des Vorgangs.
+> Ein Fehler mit unerwartetem oder unbekanntem Ursprung verhinderte, dass der Vorgang abgeschlossen wurde.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
- **UlAddRef gibt** den von der **IUnknown::AddRef-Methode** zurückgegebenen Wert zurück, der der neue Wert der Referenzanzahl für die Schnittstelle ist. Der Wert ist ungleich Null. 
+ **UlAddRef** gibt den von der **IUnknown::AddRef-Methode** zurückgegebenen Wert zurück, bei dem es sich um den neuen Wert der Referenzanzahl für die Schnittstelle handelt. Der Wert ist ungleich Null. 
   
-Weitere Informationen zu **IUnknown::AddRef** finden Sie unter [Implementing the IUnknown Interface](implementing-the-iunknown-interface.md). 
+Weitere Informationen zu **IUnknown::AddRef** finden Sie unter [Implementieren der IUnknown-Schnittstelle.](implementing-the-iunknown-interface.md) 
   
 

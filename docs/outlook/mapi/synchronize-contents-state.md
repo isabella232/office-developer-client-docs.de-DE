@@ -1,25 +1,25 @@
 ---
-title: Status "Inhalt synchronisieren"
+title: Synchronisieren des Inhaltsstatus
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 52216bc3-8cbd-3856-ea46-78f7d0dd66ff
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 3ebe1f5f48f9becdf01ea184c2b76fa2c8fa21e8
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 94707184461794fd64af05a9f19b109c60e9af5f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33438470"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59624083"
 ---
-# <a name="synchronize-contents-state"></a>Status "Inhalt synchronisieren"
+# <a name="synchronize-contents-state"></a>Synchronisieren des Inhaltsstatus
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
- In diesem Thema wird beschrieben, was während des Synchronisierungsinhaltsstatus des Replikationsstatuscomputers geschieht. 
+ In diesem Thema wird beschrieben, was beim Synchronisieren des Inhaltsstatus des Replikationsstatuscomputers geschieht. 
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -27,21 +27,21 @@ ms.locfileid: "33438470"
 |:-----|:-----|
 |Statusbezeichner:  <br/> |**LR_SYNC_CONTENTS** <br/> |
 |Verwandte Datenstruktur:  <br/> |**[SYNCCONT](synccont.md)** <br/> |
-|In diesem Zustand:  <br/> |[Zustand „Synchronisieren“](synchronize-state.md) <br/> |
-|In diesem Zustand:  <br/> |[Tabellenstatus herunterladen,](download-table-state.md) [Tabellenstatus hochladen](upload-table-state.md)oder Synchronisieren  <br/> |
+|Aus diesem Zustand:  <br/> |[Zustand „Synchronisieren“](synchronize-state.md) <br/> |
+|In diesem Zustand:  <br/> |[Tabellenstatus herunterladen,](download-table-state.md) [Tabellenstatus hochladen](upload-table-state.md)oder Status synchronisieren  <br/> |
    
 > [!NOTE]
-> Der Replikationsstatuscomputer ist ein deterministischer Zustandsautomat. Ein Client, der von einem Zustand in einen anderen abt, muss schließlich zu dem ersten von letzterem zurückkehren. 
+> Der Replikationsstatuscomputer ist ein deterministischer Zustandsautomat. Ein Client, der von einem Bundesland in einen anderen wechselt, muss schließlich von letzterem zum ersten Zurückkehren zurückkehren. 
   
 ## <a name="description"></a>Beschreibung
 
-Dieser Zustand initiiert einen der beiden Replikationsprozesse: Das Hochladen des Inhalts der angegebenen Ordner in einem lokalen Speicher oder eine vollständige Synchronisierung. Bei einer vollständigen Synchronisierung werden die Inhalte für jeden der angegebenen Ordner zuerst hochgeladen und dann heruntergeladen. Abhängig von *den ulFlags,* die in der entsprechenden **[SYNC-Struktur](sync.md)** im vorherigen Synchronisierungsstatus festgelegt sind, initialisiert Outlook [out]-Elemente in der **SYNCCONT-Struktur,** um Informationen zu den Inhalten zur Verfügung zu stellen. 
+Dieser Status initiiert einen der beiden Replikationsprozesse: das Hochladen des Inhalts der angegebenen Ordner in einen lokalen Speicher oder eine vollständige Synchronisierung. Bei einer vollständigen Synchronisierung wird der Inhalt für jeden der angegebenen Ordner zuerst hochgeladen und dann heruntergeladen. Abhängig von den *ulFlags,* die in der entsprechenden **[SYNC-Struktur](sync.md)** im vorherigen Synchronisierungsstatus festgelegt sind, initialisiert Outlook [out]-Elemente in der **SYNCCONT-Struktur,** um Informationen über den Inhalt bereitzustellen. 
   
-Über die gleiche **SYNCCONT-Struktur** ruft der Client die Anzahl der Ordner ab, für die Inhalte hochgeladen oder heruntergeladen werden müssen. Der Client durchrundet jeden dieser Ordner, indem er den lokalen Speicher in den Status der Uploadtabelle zum Hochladen eines Ordners oder den lokalen Speicher in den Zustand der Downloadtabelle verschieben, um den Ordner herunterzuladen. 
+Über dieselbe **SYNCCONT-Struktur** ruft der Client die Anzahl der Ordner ab, deren Inhalt hochgeladen oder heruntergeladen werden soll. Der Client durchläuft jeden dieser Ordner, indem er den lokalen Speicher in den Uploadtabellenstatus verschiebt, um einen Ordner hochzuladen, oder den lokalen Speicher in den Downloadtabellenstatus verschieben, um den Ordner herunterzuladen. 
   
 Darüber hinaus ruft der Client Eintrags-IDs für die Ordner ab, die eine Replikation erfordern.
   
-Wenn dieser Zustand endet, Outlook interne Informationen bereinigt. Der lokale Speicher kehrt zum Synchronisierungsstatus zurück.
+Wenn dieser Zustand endet, bereinigt Outlook die internen Informationen. Der lokale Speicher kehrt in den Synchronisierungsstatus zurück.
   
 ## <a name="see-also"></a>Siehe auch
 

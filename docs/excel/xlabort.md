@@ -8,21 +8,21 @@ f1_keywords:
 - xlAbort
 keywords:
 - xlabort-Funktion [excel 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0fe71454-6b00-464b-8abf-afb209d57754
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 08ab69252520e76a5631c5e32a3970d2d95b1ff4
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: d19bbf949bc77a67fa84417e2eead2826c970eca
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33436657"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596848"
 ---
 # <a name="xlabort"></a>xlAbort
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Gibt den Prozessor anderen Aufgaben im System zu und überprüft, ob der Benutzer **esC** gedrückt hat, um ein Makro abgesagt zu haben. Wenn der Benutzer während einer Neuberechnung der Arbeitsmappe **esC** gedrückt hat, kann er auch innerhalb einer Arbeitsblattfunktion erkannt werden, indem diese Funktion aufruft. 
+Gibt den Prozessor an andere Aufgaben im System zurück und überprüft, ob der Benutzer **ESC** gedrückt hat, um ein Makro abzubrechen. Wenn der Benutzer während einer Arbeitsmappenneuberechnung **ESC** gedrückt hat, kann er auch innerhalb einer Arbeitsblattfunktion erkannt werden, indem diese Funktion aufgerufen wird. 
   
 ```cs
 Excel12(xlAbort, LPXLOPER12 pxRes, 1, LPXLOPER12 pxRetain);
@@ -32,27 +32,27 @@ Excel12(xlAbort, LPXLOPER12 pxRes, 1, LPXLOPER12 pxRetain);
 
  _pxRetain_ (**xltypeBool**)
   
-(Optional). Bei **FALSE** überprüft diese Funktion die Unterbrechungsbedingung und alle ausstehenden Unterbrechungen. Dadurch kann der Benutzer trotz der Unterbrechungsbedingung fortfahren. Wenn dieses Argument ausgelassen wird oder **TRUE** ist, sucht die Funktion nach einem Benutzerabbruch, ohne es zu löschen.
+(Optional). Bei **FALSE** überprüft diese Funktion die Unterbrechungsbedingung und löscht alle ausstehenden Unterbrechungen. Dadurch kann der Benutzer trotz der Unterbrechungsbedingung fortfahren. Wenn dieses Argument ausgelassen wird oder **TRUE** ist, sucht die Funktion nach einem Benutzerabbruch, ohne es zu löschen.
   
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-Gibt **TRUE** (**xltypeBool**) zurück, wenn der Benutzer **ESC gedrückt hat.**
+Gibt **TRUE** (**xltypeBool**) zurück, wenn der Benutzer **ESC** gedrückt hat.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 ### 
 
-#### <a name="frequent-calls-may-be-needed"></a>Häufige Anrufe sind möglicherweise erforderlich
+#### <a name="frequent-calls-may-be-needed"></a>Häufige Anrufe sind möglicherweise erforderlich.
 
-Funktionen und Befehle, die sehr lange dauern können, sollten diese Funktion häufig aufrufen, um dem Prozessor andere Aufgaben im System zu ermöglichen.
+Funktionen und Befehle, die lange dauern könnten, sollten diese Funktion häufig aufrufen, um den Prozessor anderen Aufgaben im System zu übergeben.
   
 #### <a name="avoid-sensitive-language"></a>Vermeiden vertraulicher Sprache
 
-Vermeiden Sie die Verwendung des Begriffs "Abort" in Der Benutzeroberfläche. Erwägen Sie stattdessen die Verwendung von "Cancel", "Halt", "Break" oder "Stop".
+Vermeiden Sie die Verwendung des Begriffs "Abort" auf der Benutzeroberfläche. Erwägen Sie stattdessen die Verwendung von "Abbrechen", "Anhalten", "Unterbrechen" oder "Beenden".
   
 ## <a name="example"></a>Beispiel
 
-Der folgende Code verschiebt die aktive Zelle auf einem Blatt wiederholt, bis eine Minute verstrichen ist oder bis der Benutzer **ESC drückt.** Die Funktion **xlAbort** wird gelegentlich aufruft. Dies führt zu einer Beschleunigung des kooperativen Multitaskings durch den Prozessor. 
+Der folgende Code verschiebt die aktive Zelle wiederholt auf ein Blatt, bis eine Minute verstrichen ist oder bis der Benutzer **ESC** drückt. Die Funktion **xlAbort** wird gelegentlich aufgerufen. Dies ergibt den Prozessor und erleichtert das kooperative Multitasking. 
   
  `\SAMPLES\GENERIC\GENERIC.C`
   

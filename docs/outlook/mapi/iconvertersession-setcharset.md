@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IConverterSession.SetCharSet
 api_type:
 - COM
 ms.assetid: 25af3683-3a65-2d39-6f6e-76c8d36f866d
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 14b2904e57852c564395f4b27c9d5270afd1454a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: b951eeb555f800d1e625e68806ba6b19352410b5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32336659"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616831"
 ---
 # <a name="iconvertersessionsetcharset"></a>IConverterSession::SetCharSet
 
@@ -25,7 +25,7 @@ ms.locfileid: "32336659"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt einen optionalen Zeichensatz an, den der MAPI-zu-MIME-Konverter beim Konvertieren einer MAPI-Nachricht in einen MIME-Stream verwendet.
+Gibt einen optionalen Zeichensatz an, den der MAPI-in-MIME-Konverter verwendet, wenn eine MAPI-Nachricht in einen MIME-Stream konvertiert wird.
   
 ```cpp
 HRESULT SetCharset( 
@@ -38,15 +38,15 @@ HRESULT SetCharset(
 
  _fApply_
   
-> [in] Gibt an, ob ein bestimmter Zeichensatz für die Konvertierung verwendet werden soll. Legen Sie diesen Parameter auf **true,** um den Zeichensatz in nachfolgenden Konvertierungen anzuwenden. Legen Sie diesen Parameter auf **false,** wenn Sie keinen bestimmten Zeichensatz mehr anwenden und zu den Standardwerten für nachfolgende Nachrichten zurückkehren möchten. 
+> [in] Gibt an, ob ein bestimmter Zeichensatz für die Konvertierung verwendet werden soll. Legen Sie diesen Parameter auf **"true"** fest, um den Zeichensatz in nachfolgenden Konvertierungen anzuwenden. Legen Sie diesen Parameter auf **"false"** fest, wenn Sie keinen bestimmten Zeichensatz mehr anwenden und zu den Standardwerten für nachfolgende Nachrichten zurückkehren möchten. 
     
  _hcharset_
   
-> [in] Ein Handle zu einem Zeichensatz, wie in mimeole.h von Windows® Mail. Geben **Sie null** an, um anzugeben, dass Sie keinen bestimmten Zeichensatz anwenden möchten. Verwenden Sie für **Nicht-Null-Werte** eine Funktion wie [MimeOleGetCodePageCharset,](https://msdn.microsoft.com/library/ms714746%28VS.85%29.aspx) um ein Handle für den Zeichensatz zu erhalten. 
+> [in] Ein Handle für einen Zeichensatz, wie in mimeole.h von Windows Mail definiert. Geben Sie **NULL** an, um anzugeben, dass Sie keinen bestimmten Zeichensatz anwenden möchten. Verwenden Sie für **Nicht-NULL-Werte** eine Funktion wie [MimeOleGetCodePageCharset,](https://msdn.microsoft.com/library/ms714746%28VS.85%29.aspx) um ein Handle für den Zeichensatz abzurufen. 
     
  _csetapplytype_
   
-> [in] Gibt an, wie ein Zeichensatz angewendet wird, um eine Nachricht zu konvertieren, wie in mimeole.h of Windows® Mail.
+> [in] Gibt an, wie ein Zeichensatz zum Konvertieren einer Nachricht angewendet wird, wie in mimeole.h von Windows Mail definiert.
     
 ## <a name="return-value"></a>Rückgabewert
 

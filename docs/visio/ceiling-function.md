@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251405
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1a8d6d48-7ae3-5483-28d2-5b1706088a53
-description: Rundet eine Zahl von 0 (Null) in die nächste Instanz des Vielfachen. Wenn multiple nicht angegeben ist, wird die Zahl von 0 zur nächsten ganzen Zahl abgerundet.
-ms.openlocfilehash: 449f17d1b68c116cccb2635723a3f6277d0ac2a9
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Rundet eine Zahl von 0 (null) auf die nächste Instanz von mehreren ab. Wenn Multiple nicht angegeben ist, wird die Zahl von 0 auf die nächste ganze Zahl gerundet.
+ms.openlocfilehash: e544be99fe035e1394d55acb0af5a8ee78e7a06f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404127"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59578116"
 ---
 # <a name="ceiling-function"></a>CEILING Function
 
-Rundet eine Zahl von 0 (Null) zur nächsten Instanz von _mehreren ab._ Wenn  _multiple_ nicht angegeben ist, wird die Zahl von 0 zur nächsten ganzen Zahl abgerundet. 
+Rundet eine Zahl von 0 (null) auf die nächste Instanz  _mehrerer_. Wenn  Multiple nicht angegeben ist, wird die Zahl von 0 auf die nächste ganze Zahl gerundet. 
   
 ## <a name="syntax"></a>Syntax
 
@@ -29,11 +29,11 @@ CEILING(** *number* **, ** *multiple* ** )
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _Anzahl_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die zu rundende Zahl.  <br/> |
-| _multiple_ <br/> |Erforderlich  <br/> |**Number** <br/> |Das Vielfache, mit dem gerundet werden soll.  <br/> |
+| _Mehrere_ <br/> |Erforderlich  <br/> |**Number** <br/> |Das Vielfache, auf das gerundet werden soll.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
- _Zahl_ und  _Vielfaches_ müssen die gleichen Zeichen haben, oder ein #NUM! zurückgegeben. Wenn eine  _Zahl oder_  _ein Vielfaches_ nicht in einen Wert konvertiert werden kann, wird #VALUE! zurückgegeben. Wenn zahl  _oder_  _mehrfach_ 0 ist, ist das Ergebnis 0. 
+ _Zahl_ und Mehrere müssen dieselben Vorzeichen oder ein #NUM aufweisen!  zurückgegeben. Wenn  _eine Zahl_ oder  _ein Vielfaches_ nicht in einen Wert konvertiert werden kann, #VALUE! zurückgegeben. Wenn  _Zahl_ oder  _Vielfache_ 0 ist, ist das Ergebnis 0. 
   
 ## <a name="example-1"></a>Beispiel 1
 

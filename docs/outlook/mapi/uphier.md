@@ -5,21 +5,21 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a75ca0dd-9c50-2a9f-6c59-1f8020833a01
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 45ef7ce9291376ac020035f0bde6172caf6cc01b
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: d75f072d07b987d2f243d64eda5829348a19c2aa
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33414921"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59623943"
 ---
 # <a name="uphier"></a>UPHIER
  
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Informationen zum Synchronisieren einer Ordnerhierarchie während des [Uploadhierarchiestatus](upload-hierarchy-state.md).
+Informationen zum Synchronisieren einer Ordnerhierarchie während des [Uploadhierarchiestatus.](upload-hierarchy-state.md)
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -37,21 +37,21 @@ struct UPHIER
 
 _ulFlags_
   
-> [in] Flags zum Ändern des Verhaltens beim Synchronisieren der Ordnerhierarchie.
+> [in] Kennzeichen zum Ändern des Verhaltens beim Synchronisieren der Ordnerhierarchie.
     
   - UPH_OK
     
-    - [in] Hochladen war erfolgreich. Der Client legt dies nach dem erfolgreichen Hochladen von Informationen auf den Server fest. Wenn dieses Flag angezeigt wird, Outlook alle internen Buchhaltungsinformationen, die angegeben haben, dass die Ordnerhierarchie aktualisiert werden muss. 
+    - [in] Hochladen erfolgreich war. Der Client legt dies nach dem erfolgreichen Hochladen von Informationen auf den Server fest. Wenn dieses Kennzeichen angezeigt wird, löscht Outlook alle internen Buchführungsinformationen, die darauf hindeuteten, dass die Ordnerhierarchie aktualisiert werden muss. 
     
-    - Der Client übergibt das HRESULT, wenn der Upload nicht erfolgreich war.
+    - Der Client übergibt HRESULT, wenn der Upload nicht erfolgreich war.
     
 _pstmReserved_
   
-> [out] Dieses Mitglied ist für die Outlook reserviert und wird nicht unterstützt.
+> [out] Dieses Mitglied ist für Outlook interne Verwendung reserviert und wird nicht unterstützt.
     
 _iEnt_
   
-> [out] Index zum Nachverfolgen der Synchronisierung der durch *cEnt angegebenen Ordneranzahl.* 
+> [out] Index to track synchronizing the number of folders specified by  *cEnt*  . 
     
 _cEnt_
   

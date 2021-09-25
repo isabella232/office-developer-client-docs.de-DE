@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249436(v=office.15)
 ms:contentKeyID: 48545511
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 5065b966608f8d6a3ef1cb05be890b9a1f147dc8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: ec94d323cd4bd967006e82ea9d08da65a1565299
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288960"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565268"
 ---
 # <a name="microsoft-data-shaping-service-for-ole-db-ado-service-provider"></a>Microsoft Data Shaping Service for OLE DB (ADO Service Provider)
 
@@ -48,7 +48,7 @@ Beim Aufrufen dieses Dienstanbieters werden der [Properties](connection-object-a
 <tbody>
 <tr class="odd">
 <td><p><strong>Unique Reshape Names</strong></p></td>
-<td><p>Gibt an, ob <strong>Recordset</strong> -Objekte mit doppelten Werten für Ihre reshape-Eigenschaften zulässig sind. <strong></strong> Wenn diese dynamische Eigenschaft auf <strong>true</strong> festgelegt ist und ein neues <strong>Recordset</strong> -Objekt mit demselben vom Benutzer angegebenen reshape-Namen als vorhandenes <strong>Recordset</strong>erstellt wird, wird der Reshape-Name des neuen <strong>Recordset</strong> -Objekts so geändert, dass er eindeutig ist. Wenn diese Eigenschaft auf <strong>false</strong> festgelegt ist und ein neues <strong>Recordset</strong> -Objekt mit demselben vom Benutzer angegebenen reshape-Namen als vorhandenes <strong>Recordset</strong>erstellt wird, weisen beide <strong>Recordset</strong> -Objekte denselben reshape-Namen auf. Daher kann kein <strong>Recordset</strong> -Objekt neu gestaltet werden, solange beide Recordsets vorhanden sind. Der Standardwert der Eigenschaft lautet <strong>False</strong>.</p></td>
+<td><p>Gibt an, ob <strong>Recordset-Objekte</strong> mit doppelten Werten für ihre <strong>Reshape Name-Eigenschaften</strong> zulässig sind. Wenn diese dynamische Eigenschaft <strong>True</strong> ist und ein neues <strong>Recordset-Objekt</strong> mit demselben benutzerdefinierten Namen einer Neuform wie ein vorhandenes <strong>Recordset-Objekt</strong>erstellt wird, wird der Name der neuen <strong>Recordset-Objektumform</strong> so geändert, dass er eindeutig ist. Wenn diese Eigenschaft <strong>False</strong> ist und ein neues <strong>Recordset-Objekt</strong> mit demselben benutzerdefinierten Namen für die Neuform wie das vorhandene <strong>Recordset</strong>erstellt wird, haben beide <strong>Recordset-Objekte</strong> denselben Namen für die Neuform. Daher kann kein <strong>Recordset</strong> neu gestaltet werden, solange beide Recordsets vorhanden sind. Der Standardwert der Eigenschaft lautet <strong>False</strong>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Data Provider</strong></p></td>

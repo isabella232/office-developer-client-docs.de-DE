@@ -4,29 +4,29 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4eae2c4e-ac49-47d5-8b55-71da06ccbf49
 description: Bestimmt die Breite der oberen Abschrägung in Punkt.
-ms.openlocfilehash: 6c59a23fcfd39ff7c3420e63607ecc98b46d40be
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: e48e2817a2fd67b2f26b5c439e29d976c305415e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33416874"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59578137"
 ---
 # <a name="beveltopwidth-cell-bevel-properties-section"></a>Zelle "BevelTopWidth" (Abschnitt "Bevel Properties")
 
 Bestimmt die Breite der oberen Abschrägung in Punkt. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Um einen Verweis auf die **Zelle "BevelTopWidth"** anhand des Namens aus einer anderen Formel, nach dem Wert des **N-Attributs** eines **Cell-Elements** oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Um einen Verweis auf die **Zelle "BevelTopWidth"** anhand des Namens aus einer anderen Formel, anhand des Werts des **N-Attributs** eines **Cell-Elements** oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | BevelTopWidth  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die **Zelle "BevelTopWidth"** nach Index aus einem Programm zu erhalten: 
+Um einen Verweis auf die **Zelle "BevelTopWidth"** anhand des Indexes eines Programms abzurufen, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|

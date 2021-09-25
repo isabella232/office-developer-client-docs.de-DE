@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248932(v=office.15)
 ms:contentKeyID: 48543472
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 487212acd8847928e1fab405593edb172d0172d0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 5c63ad8329dddecfb8a5900a1ade860325629322
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289784"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59581035"
 ---
 # <a name="making-a-connection"></a>Herstellen einer Verbindung
 
@@ -20,7 +20,7 @@ ms.locfileid: "32289784"
 
 Zum Herstellen einer Verbindung mit einer Datenquelle müssen Sie eine *Verbindungszeichenfolge* angeben, deren Parameter je nach Anbieter und Datenquelle variieren können. Weitere Informationen finden Sie unter [Erstellen der Verbindungszeichenfolge](creating-the-connection-string.md).
 
-ADO öffnet eine Verbindung in der Regel mithilfe der **Open** -Methode des **Connection** -Objekts. Die Syntax für die **Open**-Methode ist im Folgenden dargestellt:
+ADO öffnet eine Verbindung in der Regel mithilfe der **Open** -Methode des **Connection** -Objekts. Die Syntax für die **Open** -Methode ist im Folgenden dargestellt:
 
 ```vb
 Dim connection as New ADODB.Connection 

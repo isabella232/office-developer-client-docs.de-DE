@@ -1,20 +1,20 @@
 ---
-title: Field2. ValidateOnSet-Eigenschaft (DAO)
+title: Field2.ValidateOnSet-Eigenschaft (DAO)
 TOCTitle: ValidateOnSet Property
 ms:assetid: 07612730-8dad-4ef0-b19b-f76845973fc3
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff844969(v=office.15)
 ms:contentKeyID: 48543075
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 427903186cce0f2ce3adf7690682a793fb417873
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 85ccd74006cf11396bbf86aadf4225a6e0959368
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292643"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565352"
 ---
-# <a name="field2validateonset-property-dao"></a>Field2. ValidateOnSet-Eigenschaft (DAO)
+# <a name="field2validateonset-property-dao"></a>Field2.ValidateOnSet-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -26,9 +26,9 @@ Mit dieser Eigenschaft wird ein Wert festgelegt oder zurückgegeben, der angibt,
 
 *Ausdruck* . ValidateOnSet
 
-*Ausdruck* Eine Variable, die ein **Field2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Field2**-Objekt darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Nur **Field2**-Objekte in **Recordset**-Objekten unterstützen den Lese-/Schreibzugriff der **ValidateOnSet**-Eigenschaft.
 

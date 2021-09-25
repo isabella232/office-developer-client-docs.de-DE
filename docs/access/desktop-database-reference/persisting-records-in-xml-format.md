@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249545(v=office.15)
 ms:contentKeyID: 48545924
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 10a5651c74580950810211c4f71e19fc80a16a95
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: fce9b0c6657adcf627f600a39309ec23c1568ba2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32287566"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606548"
 ---
 # <a name="persisting-records-in-xml-format"></a>Speichern von Datensätzen im XML-Format
 
@@ -55,7 +55,7 @@ rs.Open "titles.sav",,,,adCmdFile
 rs2.open s 
 ```
 
-ADO speichert stets das gesamte **Recordset**-Objekt. Wenn Sie nur bestimmte Zeilen des **Recordset**-Objekts speichern möchten, grenzen Sie mithilfe der **Filter**-Methode die Zeilen ein, oder ändern Sie die Auswahlklausel. Sie müssen jedoch ein **Recordset** -Objekt mit einem clientseitigen Cursor (**CursorLocation** = **adUseClient**) öffnen, um die **Filter** -Methode zum Speichern einer Teilmenge von Zeilen zu verwenden. Um z. B. Titel abzurufen, die mit dem Buchstaben "b" beginnen, können Sie einen Filter auf ein geöffnetes **Recordset**-Objekt anwenden:
+ADO speichert stets das gesamte **Recordset**-Objekt. Wenn Sie nur bestimmte Zeilen des **Recordset**-Objekts speichern möchten, grenzen Sie mithilfe der **Filter**-Methode die Zeilen ein, oder ändern Sie die Auswahlklausel. Sie müssen jedoch ein **Recordset-Objekt** mit einem clientseitigen Cursor (**CursorLocation**  =  **adUseClient**) öffnen, um die **Filter** -Methode zum Speichern einer Teilmenge von Zeilen zu verwenden. Um z. B. Titel abzurufen, die mit dem Buchstaben "b" beginnen, können Sie einen Filter auf ein geöffnetes **Recordset**-Objekt anwenden:
 
 ```vb 
  
@@ -85,4 +85,4 @@ Dieser Abschnitt enthält die folgenden Themen:
 
 - [Überlegungen zur XML-Sicherheit](xml-security-considerations.md)
 
-- [Themen zur Persistenz von XML-Recordsets](xml-recordset-persistence-scenario.md)
+- [Themen zum Persistenzszenario für XML-Recordset](xml-recordset-persistence-scenario.md)

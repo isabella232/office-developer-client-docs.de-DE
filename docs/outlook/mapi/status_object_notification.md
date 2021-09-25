@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.STATUS_OBJECT_NOTIFICATION
 api_type:
 - COM
 ms.assetid: 2872130d-a36b-46ea-bfd1-4700fe3dd41b
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 84b44b4b054a2b2617502a6a463a6d4a89546804
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: cc0f0b2145b84db8e08dacb56279ef268645ef46
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33426268"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59624132"
 ---
 # <a name="status_object_notification"></a>STATUS_OBJECT_NOTIFICATION
 
@@ -42,35 +42,35 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Elemente
+## <a name="members"></a>Members
 
  **cbEntryID**
   
-> Anzahl der Bytes in der Eintrags-ID, auf die das **lpEntryID-Element** verweist. 
+> Anzahl der Bytes im Eintragsbezeichner, auf den der **lpEntryID-Member** verweist. 
     
  **lpEntryID**
   
-> Zeiger auf die Eintrags-ID des geänderten Statusobjekts.
+> Zeiger auf den Eintragsbezeichner des geänderten Statusobjekts.
     
  **cValues**
   
-> Anzahl der [SPropValue-Strukturen](spropvalue.md) im Array, auf das das **lpPropVals-Element verweist.** 
+> Anzahl der [SPropValue-Strukturen](spropvalue.md) im Array, auf das vom **lpPropVals-Element** verwiesen wird. 
     
  **lpPropVals**
   
 > Zeiger auf ein Array von **SPropValue-Strukturen,** die die Eigenschaften des geänderten Statusobjekts beschreiben. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die **STATUS_OBJECT_NOTIFICATION** ist eines der Mitglieder der Strukturgewerkschaft, die im **info-Element** der [NOTIFICATION-Struktur enthalten](notification.md) ist. Die **STATUS_OBJECT_NOTIFICATION** ist in einer Statusobjektbenachrichtigung für ein Ereignis vom Typ _fnevStatusObjectModified enthalten._ Status-Objektbenachrichtigung ist eine interne #A0 Clients und Dienstanbieter können sich nicht dafür registrieren, und Dienstanbieter können sie nicht generieren.
+Die **STATUS_OBJECT_NOTIFICATION** Struktur ist eines der Mitglieder der Vereinigung von Strukturen, die im **Infoelement** der [NOTIFICATION-Struktur](notification.md) enthalten sind. Die **STATUS_OBJECT_NOTIFICATION** Struktur ist in einer Statusobjektbenachrichtigung für ein Ereignis vom Typ  _fnevStatusObjectModified_ enthalten. Statusobjektbenachrichtigung ist eine interne MAPI-Benachrichtigung; Clients und Dienstanbieter können sich nicht dafür registrieren, und Dienstanbieter können sie nicht generieren.
   
-Weitere Informationen zur Benachrichtigung finden Sie in den In der folgenden Tabelle beschriebenen Themen.
+Weitere Informationen zur Benachrichtigung finden Sie in den in der folgenden Tabelle beschriebenen Themen.
   
 |**Thema**|**Beschreibung**|
 |:-----|:-----|
 |[Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md) <br/> |Allgemeine Übersicht über Benachrichtigungs- und Benachrichtigungsereignisse.  <br/> |
-|[Behandeln von Benachrichtigungen](handling-notifications.md) <br/> |Diskussion darüber, wie Clients mit Benachrichtigungen umgehen sollten.  <br/> |
-|[Unterstützende Ereignisbenachrichtigung](supporting-event-notification.md) <br/> |Hier erfahren Sie, wie Dienstanbieter die **IMAPISupport-Methode** zum Generieren von Benachrichtigungen verwenden können.  <br/> |
+|[Behandeln von Benachrichtigungen](handling-notifications.md) <br/> |Erläuterung, wie Clients Benachrichtigungen behandeln sollten.  <br/> |
+|[Unterstützende Ereignisbenachrichtigung](supporting-event-notification.md) <br/> |Erläuterung, wie Dienstanbieter die **IMAPISupport-Methode** zum Generieren von Benachrichtigungen verwenden können.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagFormHostMap
 api_type:
 - HeaderDef
 ms.assetid: 92742747-cce0-4c54-9ece-1fcf652ac498
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 346776635fc36ffd8efd10cb232846831add20f7
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: a8c7869e6bcfc926e071b386cc70f446b537ac28
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33433766"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59587678"
 ---
 # <a name="pidtagformhostmap-canonical-property"></a>PidTagFormHostMap (kanonische Eigenschaft)
 
@@ -25,18 +25,18 @@ ms.locfileid: "33433766"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine Hostzuordnung verfügbarer Formulare. 
+Enthält eine Hostzuordnung der verfügbaren Formulare. 
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_FORM_HOST_MAP  <br/> |
 |Kennung:  <br/> |0x3306  <br/> |
 |Datentyp:  <br/> |PT_MV_LONG  <br/> |
-|Bereich:  <br/> |MAPI allgemein  <br/> |
+|Bereich:  <br/> |ALLGEMEINE MAPI  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Eine Clientanwendung sollte diese Eigenschaft zusammen mit der **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) -Eigenschaft aktualisieren, wenn die zugrunde liegende Struktur in der **IMAPIFormProp-Schnittstelle geändert** wird. 
+Eine Clientanwendung sollte diese Eigenschaft zusammen mit der **eigenschaft PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) aktualisieren, wenn die zugrunde liegende Struktur in der **IMAPIFormProp-Schnittstelle** geändert wird. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,11 +44,11 @@ Eine Clientanwendung sollte diese Eigenschaft zusammen mit der **PR_DISPLAY_NAME
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

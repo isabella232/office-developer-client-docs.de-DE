@@ -1,25 +1,25 @@
 ---
-title: Container-Elemente (DAO)
+title: Containermember (DAO)
 TOCTitle: Containers Members
 ms:assetid: e4cc05d2-8c82-f6c5-aad1-56861d219167
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835944(v=office.15)
 ms:contentKeyID: 48548350
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 6f7685a7a76430daa80ea2c6bc54781855526b96
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c7b495745dfd6e41846f41fe88eeee719778360d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295569"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577493"
 ---
-# <a name="containers-members-dao"></a>Container-Elemente (DAO)
+# <a name="containers-members-dao"></a>Containermember (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
 > [!NOTE]
-> [!HINWEIS] ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden. Eine Connections-Auflistung enthält die aktuellen Connection-Objekte eines Workspace-Objekts (nur ODBCDirect-Arbeitsbereiche).
+> [!HINWEIS] ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden. Eine Connections -Auflistung enthält die aktuellen Connection -Objekte eines Workspace -Objekts (nur ODBCDirect-Arbeitsbereiche).
 
 ## <a name="methods"></a>Methoden
 

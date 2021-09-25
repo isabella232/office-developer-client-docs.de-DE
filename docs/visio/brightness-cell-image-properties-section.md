@@ -6,29 +6,29 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251608
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5bb1cc81-f3fd-a835-1449-233dbd1a62b6
 description: Passt die Helligkeit einer Bitmapgrafik an. Verringern Sie die Helligkeit einer Grafik durch Eingabe eines Werts zwischen 0 % und 49 %, oder steigern Sie die Helligkeit durch Eingabe eines Werts zwischen 51 % und 100 %. Der Standardwert lautet 50 %.
-ms.openlocfilehash: ae1390d2db3adad86a8afcbeaff88172a841d030
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 41615007b66a0b148c9166ee76126b935a5327c8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424791"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59578144"
 ---
 # <a name="brightness-cell-image-properties-section"></a>Zelle "Brightness" (Abschnitt "Image Properties")
 
 Passt die Helligkeit einer Bitmapgrafik an. Verringern Sie die Helligkeit einer Grafik durch Eingabe eines Werts zwischen 0 % und 49 %, oder steigern Sie die Helligkeit durch Eingabe eines Werts zwischen 51 % und 100 %. Der Standardwert lautet 50 %.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Um einen Verweis auf die Zelle Brightness anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Um einen Verweis auf die Zelle "Brightness" anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | Helligkeit  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle Brightness nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle "Brightness" anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

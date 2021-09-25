@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IABProvider
 api_type:
 - COM
 ms.assetid: 3f98d982-156d-43d7-8b0b-94d8c24debef
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 301be39b71c0f04799037fa069cfe18953e216de
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: eccc4c3f7081e069e6c6c09a5498ef35442c55ad
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33431470"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616873"
 ---
 # <a name="iabprovider--iunknown"></a>IABProvider : IUnknown
 
@@ -25,7 +25,7 @@ ms.locfileid: "33431470"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Stellt eine Methode zum Anmelden bei einem Adressbuchanbieterobjekt und eine Methode zum Ungültigen eines Adressbuchanbieterobjekts zur Wahl.
+Stellt eine Methode zum Anmelden bei einem Adressbuchanbieterobjekt und eine Methode zum Ungültig machen eines Adressbuchanbieterobjekts bereit.
   
 |||
 |:-----|:-----|
@@ -36,12 +36,12 @@ Stellt eine Methode zum Anmelden bei einem Adressbuchanbieterobjekt und eine Met
 |Schnittstellenbezeichner:  <br/> |IID_IABProvider  <br/> |
 |Zeigertyp:  <br/> |LPABPROVIDER  <br/> |
    
-## <a name="vtable-order"></a>Vtable-Reihenfolge
+## <a name="vtable-order"></a>VTable-Reihenfolge
 
 |||
 |:-----|:-----|
-|[Logon](iabprovider-logon.md) <br/> |Stellt eine Verbindung mit einer aktiven Sitzung fest.  <br/> |
-|[Shutdown](iabprovider-shutdown.md) <br/> |Bricht eine Verbindung zu einer aktiven Sitzung ab.  <br/> |
+|[Logon](iabprovider-logon.md) <br/> |Stellt eine Verbindung mit einer aktiven Sitzung her.  <br/> |
+|[Shutdown](iabprovider-shutdown.md) <br/> |Bricht eine Verbindung mit einer aktiven Sitzung ab.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

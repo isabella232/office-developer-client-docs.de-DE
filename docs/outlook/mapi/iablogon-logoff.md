@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IABLogon.Logoff
 api_type:
 - COM
 ms.assetid: a36465e2-7be9-4bd6-8091-685f0a045aa9
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: af3c1f5135e90274c0251c5a0addf339c14f36c0
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 2f51e657fb3ab2c05a28af24a91c38d990b5d132
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33416398"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616936"
 ---
 # <a name="iablogonlogoff"></a>IABLogon::Logoff
 
@@ -45,17 +45,17 @@ S_OK
   
 > Der Abmeldevorgang wurde erfolgreich initiiert.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Der Abmeldevorgang wird in der Regel gestartet, wenn ein Client die [IMAPISession::Logoff-Methode](imapisession-logoff.md) aufruft, um eine Sitzung zu beenden. MAPI ruft dann die **IABLogon::Logoff-Methode** jedes Adressbuchanbieters auf, um den Abmeldevorgang zu starten. 
+Der Abmeldevorgang wird in der Regel gestartet, wenn ein Client die [IMAPISession::Logoff-Methode](imapisession-logoff.md) aufruft, um eine Sitzung zu beenden. MapI ruft dann die **IABLogon::Logoff-Methode** jedes Adressbuchanbieters auf, um den Abmeldevorgang zu starten. 
   
-Die **IABLogon::Logoff-Methode** führt die folgenden Schritte aus: 
+Die **IABLogon::Logoff-Methode** führt Folgendes aus: 
   
 - Gibt alle geöffneten Objekte frei, z. B. alle Unterobjekte oder das Statusobjekt.
     
 - Gibt das Supportobjekt des Anbieters frei.
     
-Weitere Informationen zum Abmeldevorgang von Adressbuchanbietern finden Sie unter [Shutting Down a Service Provider](shutting-down-a-service-provider.md).
+Weitere Informationen zum Abmeldevorgang von Adressbuchanbietern finden Sie unter [Herunterfahren eines Dienstanbieters.](shutting-down-a-service-provider.md)
   
 ## <a name="see-also"></a>Siehe auch
 

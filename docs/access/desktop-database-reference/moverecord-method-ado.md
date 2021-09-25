@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250217(v=office.15)
 ms:contentKeyID: 48548588
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: c9937f0ab32c5dba0e4435fdc0ba7e111f5651dc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d5c3abebc80dea7d5871faa7926cf81bdd9a681f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288679"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606569"
 ---
 # <a name="moverecord-method-ado"></a>MoveRecord-Methode (ADO)
 
@@ -22,24 +22,24 @@ Verschiebt die durch einen [Record](record-object-ado.md) dargestellte Entität 
 
 ## <a name="syntax"></a>Syntax
 
-*Record*. MoveRecord (*Quelle*, *Ziel*, *Benutzername*, *Kennwort*, *Optionen*, *Async*)
+*Datensatz*. MoveRecord (*Source*, *Destination*, *UserName*, *Password*, *Options*, *Async*)
 
 ## <a name="parameters"></a>Parameter
 
 |Parameter|Beschreibung|
 |:--------|:----------|
 |*Source* |Optional. Ein **String**-Wert mit einer URL, die den zu verschiebenden **Record** identifiziert. Wenn *Source* nicht angegeben ist oder eine leere Zeichenfolge angibt, wird das durch diesen **Record** dargestellte Objekt verschoben. Stellt **Record** beispielsweise eine Datei dar, wird der Inhalt der Datei an den durch *Destination* angegebenen Speicherort verschoben.|
-|*Destination* |Optional. Ein **String**-Wert mit einer URL, die den Speicherort angibt, an den *Source* verschoben wird.|
+|*Ziel* |Optional. Ein **String**-Wert mit einer URL, die den Speicherort angibt, an den *Source* verschoben wird.|
 |*UserName* |Optional. Ein **String**-Wert mit der Benutzer-ID, die bei Bedarf Zugriff auf die *Destination* gewährt.|
 |*Password* |Optional. Ein **String**-Wert, der das Kennwort enthält, das bei Bedarf den *UserName* bestätigt.|
 |*Options* |Optional. Ein [MoveRecordOptionsEnum](moverecordoptionsenum.md)-Wert, dessen Standardwert **adMoveUnspecified** lautet. Gibt das Verhalten dieser Methode an.|
-|*Async* |Optional. Ein **boolescher** Wert, der bei **true**angibt, dass dieser Vorgang asynchron sein soll.|
+|*Async* |Optional. Ein **boolescher** Wert, der bei **True** angibt, dass dieser Vorgang asynchron sein soll.|
 
 ## <a name="return-value"></a>Rückgabewert
 
 Ein **String**-Wert. In der Regel wird der Wert für *Destination* zurückgegeben. Der genaue Wert, der zurückgegeben wird, ist jedoch vom Anbieter abhängig.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Werte für *Source* und *Destination* dürfen nicht identisch sein, andernfalls tritt ein Laufzeitfehler auf. Mindestens der Server-, Pfad- und Ressourcenname müssen unterschiedlich sein.
 
@@ -53,6 +53,6 @@ Bestimmte Attribute des **Record** -Objekts (z. B. die [ParentURL](parenturl-pro
 Wurde dieser **Record** aus einem [Recordset](recordset-object-ado.md)-Objekt abgerufen, wird der neue Speicherort der verschobenen Datei oder des verschobenen Verzeichnisses nicht unmittelbar im **Recordset** -Objekt wiedergegeben. Aktualisieren Sie das **Recordset** -Objekt, indem Sie es schließen und erneut öffnen.
 
 > [!NOTE]
-> Bei URLs, die das HTTP-Schema verwenden, wird automatisch der [Microsoft OLE DB-Anbieter für Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) aufgerufen. Weitere Informationen finden Sie unter [absolute und relative URLs](absolute-and-relative-urls.md).
+> Bei URLs, die das HTTP-Schema verwenden, wird automatisch der [Microsoft OLE DB-Anbieter für Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) aufgerufen. Weitere Informationen finden Sie unter [Absolute und relative URLs.](absolute-and-relative-urls.md)
 
 

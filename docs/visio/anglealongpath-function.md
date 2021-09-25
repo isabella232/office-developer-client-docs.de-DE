@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d7f8ca9a-3a89-abab-9805-bd1e24075c3f
 description: Gibt den Winkel der Tangenten zum Pfad an einem gegebenen Punkt zurück.
-ms.openlocfilehash: a15e45ff6135972cd1cd78382147a493f8fc8d69
-ms.sourcegitcommit: 41f2ee16badd6009bab642d68a61eaaccb91c3ec
+ms.openlocfilehash: c7b82a32820de6a0f1faacc8dcf990edb202ca84
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45160293"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59578249"
 ---
 # <a name="anglealongpath-function"></a>ANGLEALONGPATH Function
 
@@ -25,7 +25,7 @@ Hinzugefügte Version: Visio 2010
   
 ## <a name="syntax"></a>Syntax
 
-ANGLEALONGPATH(***section***, ***travel*** ***[,segment]*** ) 
+ANGLEALONGPATH(***Section**_, _*_travel_*_ _*_ [,segment]_** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -39,12 +39,12 @@ ANGLEALONGPATH(***section***, ***travel*** ***[,segment]*** )
 
  **Double**
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Wenn Sie einen  _Segmentwert_ enthalten, gibt ANGLEALONGPATH nur den Wert für dieses Segment zurück. 
+Wenn Sie einen  _Segmentwert_ einschließen, gibt ANGLEALONGPATH nur den Wert für dieses Segment zurück. 
   
-Wenn Sie einen _Segmentwert_ verwenden, bestimmt ANGLEALONGPATH den Punkt der Tangente mithilfe von _Travel,_ um die Percertage entlang des Abschnitts _zu berechnen._
+Wenn Sie einen  _Segmentwert_ einschließen, bestimmt ANGLEALONGPATH den Punkt des Tangens, indem die  _Reise_ verwendet wird, um das Zertifikat entlang des  _Abschnitts_ zu berechnen.
   
-Wenn weder _abschnitt noch_ _segment_ vorhanden ist, gibt Microsoft Visio #REF! zurück. 
+Wenn kein _Abschnitt_ oder _Segment_ vorhanden ist, gibt Microsoft Visio #REF! zurück. 
   
 

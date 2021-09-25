@@ -1,5 +1,5 @@
 ---
-title: Fields. Delete-Methode (DAO)
+title: Fields.Delete-Methode (DAO)
 TOCTitle: Delete Method
 ms:assetid: a8e249e7-7526-3eff-a5cf-70cab2081970
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff821417(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1052868
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 8200d8ec7b10f33fe8bc1ef9faea122d3ff65409
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 000ced7ef62e41e7a1fb38f287c2dd1e9758dfe8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292559"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59565331"
 ---
-# <a name="fieldsdelete-method-dao"></a>Fields. Delete-Methode (DAO)
+# <a name="fieldsdelete-method-dao"></a>Fields.Delete-Methode (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -26,9 +26,9 @@ Löscht ein **[Field](field-object-dao.md)** -Objekt aus der **[Fields](fields-c
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Delete (***Name***)
+*Ausdruck* . Delete(***Name***)
 
-*Ausdruck* Eine Variable, die ein **Fields** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Fields**-Objekt darstellt.
 
 ## <a name="parameters"></a>Parameter
 
@@ -58,7 +58,7 @@ Löscht ein **[Field](field-object-dao.md)** -Objekt aus der **[Fields](fields-c
 </table>
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Löschen eines gespeicherten Objekts geschieht ohne Verzögerung. Dennoch sollten Sie die **Refresh**-Methode auf alle weiteren Auflistungen anwenden, die von Änderungen an der Datenbankstruktur betroffen sein könnten.
 

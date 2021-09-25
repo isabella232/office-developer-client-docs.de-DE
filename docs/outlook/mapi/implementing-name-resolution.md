@@ -3,17 +3,17 @@ title: Implementieren der Namensauflösung
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: a4c71b08-c47a-4421-8603-d5356d32dca9
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 15c1d502947865c02973f4950b6b6fa8109b8e78
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 62370da7b5ae4eadffd1d55564d363de7ea6415d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33434704"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59567305"
 ---
 # <a name="implementing-name-resolution"></a>Implementieren der Namensauflösung
 
@@ -21,30 +21,30 @@ ms.locfileid: "33434704"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Adressbuchanbieter sind für die Unterstützung der Namensauflösung verantwortlich – das Zuordnen einer Eintrags-ID zu einem Anzeigenamen. Clients initiieren die Namensauflösung, wenn [sie IAddrBook::ResolveName aufrufen,](iaddrbook-resolvename.md) um sicherzustellen, dass jedes Mitglied der Empfängerliste einer ausgehenden Nachricht einer gültigen Adresse entspricht. 
+Adressbuchanbieter sind für die Unterstützung der Namensauflösung verantwortlich – das Zuordnen eines Eintragsbezeichners zu einem Anzeigenamen. Clients initiieren die Namensauflösung, wenn sie [IAddrBook::ResolveName](iaddrbook-resolvename.md) aufrufen, um sicherzustellen, dass jedes Mitglied der Empfängerliste einer ausgehenden Nachricht einer gültigen Adresse entspricht. 
   
-Ihr Anbieter kann die Namensauflösung unterstützen, indem er:
+Ihr Anbieter kann die Namensauflösung wie folgt unterstützen:
   
-- Unterstützung der **PR_ANR** ([PidTagAnr](pidtaganr-canonical-property.md)) -Eigenschaftseinschränkung, eine Anforderung für alle Adressbuchcontainer.
+- Unterstützung der **Eigenschaftseinschränkung PR_ANR** ([PidTagAnr](pidtaganr-canonical-property.md)), eine Anforderung für alle Adressbuchcontainer.
     
 - Implementieren der [IABContainer::ResolveNames-Methode,](iabcontainer-resolvenames.md) eine Option für alle Adressbuchcontainer. 
     
-Wenn Sie **IABContainer::ResolveNames** unterstützen möchten, versuchen Sie, eine genaue Übereinstimmung für jeden nicht aufgelösten Anzeigenamen in der [ADRLIST-Struktur](adrlist.md) zu finden, die mit dem  _lpAdrList-Parameter_ übergeben wurde. Sie können einen nicht aufgelösten Anzeigenamen identifizieren, da die **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) -Eigenschaft im Eigenschaftswertarray in seinem **aEntries-Element** der **ADRLIST-Struktur** fehlt. Ignorieren Sie alle Einträge, deren Eigenschaften null zugeordnet sind. 
+If you choose to support **IABContainer::ResolveNames**, attempt to locate an exact match for each unresolved display name in the [ADRLIST](adrlist.md) structure passed in with the  _lpAdrList_ parameter. Sie können einen nicht aufgelösten Anzeigenamen identifizieren, da die **eigenschaft PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) im Eigenschaftswertarray in seinem **aEntries-Element** der **ADRLIST-Struktur** fehlt. Ignorieren Sie alle Einträge, denen Nulleigenschaften zugeordnet sind. 
   
-Melden Sie das Ergebnis Ihres Lösungsversuchs im _lpFlagList-Parameter,_ einem Array von Flags, das dem Array der Anzeigenamen in _lpAdrList entspricht._ Die Flags sind so positionierend, dass das erste Flag dem ersten **aEntries-Element** in der **ADRLIST-Struktur** entspricht, das zweite Flag dem zweiten **aEntries-Element** und so weiter. 
+Melden Sie das Ergebnis des Auflösungsversuchs im Parameter  _lpFlagList,_ einem Array von Flags, das dem Array der Anzeigenamen in  _lpAdrList_ entspricht. Die Flags sind so positioniert, dass das erste Flag dem ersten **aEntries-Element** in der **ADRLIST-Struktur** entspricht, das zweite Flag dem zweiten **aEntries-Element** usw. 
   
 Es gibt drei mögliche Ergebnisse für jeden nicht aufgelösten Eintrag:
   
-- Es wurde keine Übereinstimmung gefunden, d. h. keiner der Einträge in Ihren Containereinträgen ist mit dem Eintrag in der **ADRLIST-Struktur** übereinstimmend. Legen Sie den entsprechenden Eintrag im  _lpFlagList-Parameter_ auf MAPI_UNRESOLVED. 
+- Es wurde keine Übereinstimmung gefunden, was bedeutet, dass keine der Einträge in Ihren Containereinträgen mit dem Eintrag in der **ADRLIST-Struktur** übereinstimmt. Legen Sie den entsprechenden Eintrag im  _lpFlagList-Parameter_ auf MAPI_UNRESOLVED fest. 
     
-- Es können mehrere Übereinstimmungen gefunden werden, d. h. es gibt mehrere Containereinträge, die mit dem Eintrag in der **ADRLIST-Struktur** übereinstimmen. Legen Sie den entsprechenden Eintrag im  _lpFlagList-Parameter_ auf MAPI_AMBIGUOUS. Ändern Sie die Anzahl der Einträge in der **ADRLIST-Struktur nicht.** 
+- Es können mehrere Übereinstimmungen gefunden werden, was bedeutet, dass mehrere Containereinträge vorhanden sind, die mit dem Eintrag in der **ADRLIST-Struktur** übereinstimmen. Legen Sie den entsprechenden Eintrag im  _parameter lpFlagList_ auf MAPI_AMBIGUOUS fest. Ändern Sie die Anzahl der Einträge in der **ADRLIST-Struktur** nicht. 
     
-- Eine genaue Übereinstimmung kann gefunden werden, d. h., es gibt nur einen Containereintrag, der dem Eintrag in der **ADRLIST-Struktur** entspricht. Legen Sie das entsprechende Element im  _lpFlagList-Parameter_ auf MAPI_RESOLVED und fügen Sie den Eintragsbezeichner dem Array von Eigenschaften hinzu, das dem **ADRLIST-Eintrag zugeordnet** ist. 
+- Eine genaue Übereinstimmung kann gefunden werden, d. h., es gibt nur einen Containereintrag, der mit dem Eintrag in der **ADRLIST-Struktur** übereinstimmt. Legen Sie das entsprechende Element im  _lpFlagList-Parameter_ auf MAPI_RESOLVED fest, und fügen Sie den Eintragsbezeichner dem Array der Eigenschaften hinzu, die dem **ADRLIST-Eintrag** zugeordnet sind. 
     
-Wenn Sie **IABContainer::ResolveNames** nicht unterstützen möchten, geben Sie MAPI_E_NO_SUPPORT Implementierung zurück.
+Wenn Sie **IABContainer::ResolveNames** nicht unterstützen möchten, geben Sie MAPI_E_NO_SUPPORT aus Ihrer Implementierung zurück.
   
-Alle Adressbuchanbieter müssen die mehrdeutige Namensauflösung  – die Einschränkung der PR_ANR - für die Inhaltstabellen ihrer Container unterstützen. Um diese Unterstützung zu bieten, behandeln Sie die PR_ANR-Einschränkung in Ihrer Implementierung von [IMAPITable::Restrict,](imapitable-restrict.md) indem Sie einen Suchtyp "best guess" ausführen, der mit einer oder mehreren bestimmten Eigenschaften abgleicht, die für Ihren Anbieter sinnvoll sind. Sie können die gleiche Eigenschaft oder Eigenschaften jedes Mal verwenden, z. B. **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) oder **PR_ACCOUNT** ([PidTagAccount](pidtagaccount-canonical-property.md)), oder einem Administrator die Auswahl aus einer Liste akzeptabler Eigenschaften erlauben. 
+Alle Adressbuchanbieter müssen mehrdeutige Namensauflösungen – die **PR_ANR** Eigenschaftseinschränkung – in den Inhaltsverzeichnissen ihrer Container unterstützen. Um diese Unterstützung bereitzustellen, behandeln Sie die PR_ANR Einschränkung in Ihrer Implementierung von [IMAPITable::Restrict,](imapitable-restrict.md) indem Sie einen Suchtyp vom Typ "beste Schätzung" ausführen, der mit einer oder mehreren bestimmten Eigenschaften übereinstimmt, die für Ihren Anbieter sinnvoll sind. Sie können die gleiche Eigenschaft oder Eigenschaften jedes Mal verwenden, z. **B. PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) oder **PR_ACCOUNT** ([PidTagAccount](pidtagaccount-canonical-property.md)), oder einem Administrator die Auswahl aus einer Liste zulässiger Eigenschaften gestatten. 
   
-Obwohl die meisten Anbieter eigene Inhaltstabellenimplementierung liefern, können Sie die von MAPI bereitgestellte Implementierung über die [CreateTable-Funktion](createtable.md) anpassen. Da die MAPI-Implementierung jedoch keine Einschränkungen jeglicher Art unterstützt, müssen Sie ein Wrapperobjekt erstellen, das eine angepasste Version von **Restrict** enthält, die den Aufruf abfängt. 
+Obwohl die meisten Anbieter ihre eigene Inhaltstabellenimplementierung bereitstellen, können Sie die von der MAPI bereitgestellte Implementierung über die [CreateTable-Funktion](createtable.md) anpassen. Da die MAPI-Implementierung jedoch keine Einschränkungen jeder Art unterstützt, müssen Sie ein Wrapperobjekt erstellen, um eine angepasste Version von **Restrict** einzuschließen, die den Aufruf abfängt. 
   
 

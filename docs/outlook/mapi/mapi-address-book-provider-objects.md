@@ -1,31 +1,31 @@
 ---
-title: OBJEKTE des MAPI-Adressbuchanbieters
+title: MAPI-Adressbuchanbieterobjekte
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 2fcff3b3-01e7-4758-9c49-0af41abf0d6b
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: e7e4ef528716f05d198862afa61947fd3993042d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 499800d96341c91ee622f4d6ec1aabcf70e42040
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404344"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59567291"
 ---
-# <a name="mapi-address-book-provider-objects"></a>OBJEKTE des MAPI-Adressbuchanbieters
+# <a name="mapi-address-book-provider-objects"></a>MAPI-Adressbuchanbieterobjekte
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Neben den Standardanbieter- und Anmeldeobjekten implementieren Adressbuchanbieter Adressbuchcontainer, Verteilerlisten, Messagingbenutzer, Tabellen, Statusobjekte und Steuerelemente.
+Zusätzlich zu den Standardanbieter- und Anmeldeobjekten implementieren Adressbuchanbieter Adressbuchcontainer, Verteilerlisten, Messagingbenutzer, Tabellen, Statusobjekte und Steuerelemente.
   
 Die folgende Abbildung zeigt diese Objekte, ihre entsprechenden Schnittstellen und die MAPI-Komponenten, die sie verwenden.
   
-![Objekte, die Adressbuchanbieter implementieren Objekte,](media/amapi_64.gif "die Adressbuchanbieter implementieren")
+![Von Adressbuchanbietern implementierte Objekte](media/amapi_64.gif "Von Adressbuchanbietern implementierte Objekte")
   
 ## <a name="see-also"></a>Siehe auch
 
-- [OBJEKTE des MAPI-Dienstanbieters](mapi-service-provider-objects.md)
+- [MAPI-Dienstanbieterobjekte](mapi-service-provider-objects.md)
 

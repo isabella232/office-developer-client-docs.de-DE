@@ -1,20 +1,20 @@
 ---
-title: Field2. CollatingOrder-Eigenschaft (DAO)
+title: Field2.CollatingOrder-Eigenschaft (DAO)
 TOCTitle: CollatingOrder Property
 ms:assetid: cb1d6fc9-a2a6-54c2-abf5-48b609e38738
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff834380(v=office.15)
 ms:contentKeyID: 48547709
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 02711fbbf39b058bb88e9568716169825ae4a923
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 5303fc3730772d6ccf17198610313b9559e76dfe
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292867"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597296"
 ---
-# <a name="field2collatingorder-property-dao"></a>Field2. CollatingOrder-Eigenschaft (DAO)
+# <a name="field2collatingorder-property-dao"></a>Field2.CollatingOrder-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -25,9 +25,9 @@ Gibt einen Wert zurück, der die Sequenz der Sortierreihenfolge im Text für den
 
 *Ausdruck* . CollatingOrder
 
-*Ausdruck* Eine Variable, die ein **Field2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Field2**-Objekt darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Rückgabewert ist ein **Long**-Wert oder eine Konstante, die einem der folgenden Werte entsprechen kann.
 
@@ -56,7 +56,7 @@ Der Rückgabewert ist ein **Long**-Wert oder eine Konstante, die einem der folge
 <td><p>Chinesisch (Vereinfacht)</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>dbSortChineseTraditional</strong></p></td>
+<td><p><strong>dbSortChinese Auszüge</strong></p></td>
 <td><p>Traditionelles Chinesisch</p></td>
 </tr>
 <tr class="odd">
@@ -80,7 +80,7 @@ Der Rückgabewert ist ein **Long**-Wert oder eine Konstante, die einem der folge
 <td><p>Hebräisch</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>dbSortHungarian</strong></p></td>
+<td><p><strong>dbSortHung über</strong></p></td>
 <td><p>Ungarisch</p></td>
 </tr>
 <tr class="odd">
@@ -116,12 +116,12 @@ Der Rückgabewert ist ein **Long**-Wert oder eine Konstante, die einem der folge
 <td><p>Paradox Schwedisch oder Finnisch</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>dbSortPolish</strong></p></td>
+<td><p><strong>dbSortDrossel</strong></p></td>
 <td><p>Polnisch</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbSortSlovenian</strong></p></td>
-<td><p>Slowenisch</p></td>
+<td><p>Slovenian</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbSortSpanish</strong></p></td>

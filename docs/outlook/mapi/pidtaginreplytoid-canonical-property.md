@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagInReplyToId
 api_type:
 - HeaderDef
 ms.assetid: d435a65a-de01-4fb0-bc54-a87a2c4462ac
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 036f38c1228e08cfc9a2093c027195a802904f19
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 5e2e9bcc735f777116ae7721efa3b537318fd020
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32358835"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59587636"
 ---
 # <a name="pidtaginreplytoid-canonical-property"></a>PidTagInReplyToId (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32358835"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält den Wert der PR_INTERNET_MESSAGE_ID **(** [PidTagInternetMessageId](pidtaginternetmessageid-canonical-property.md)) der ursprünglichen Nachricht.
+Enthält den wert der **PR_INTERNET_MESSAGE_ID** ([PidTagInternetMessageId](pidtaginternetmessageid-canonical-property.md)) der ursprünglichen Nachricht.
   
 |||
 |:-----|:-----|
@@ -34,7 +34,7 @@ Enthält den Wert der PR_INTERNET_MESSAGE_ID **(** [PidTagInternetMessageId](pid
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeines Messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften müssen für alle Nachrichtenantworten festgelegt werden.
   
@@ -44,7 +44,7 @@ Diese Eigenschaften müssen für alle Nachrichtenantworten festgelegt werden.
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
@@ -58,11 +58,11 @@ Diese Eigenschaften müssen für alle Nachrichtenantworten festgelegt werden.
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -73,9 +73,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

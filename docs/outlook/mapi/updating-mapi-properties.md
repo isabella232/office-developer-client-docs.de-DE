@@ -3,33 +3,33 @@ title: Aktualisieren von MAPI-Eigenschaften
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: faafde3d-3989-4182-91f1-a0cf0f1b5388
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 6c2c733b87b85971fad8060040e713b41b0f5616
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 90af0f7226acbdbab4fde6480763d3415236cfcc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407522"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59623971"
 ---
 # <a name="updating-mapi-properties"></a>Aktualisieren von MAPI-Eigenschaften
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Clients und Dienstanbieter können einen Eigenschaftswert aktualisieren, indem sie:
+Clients und Dienstanbieter können einen Eigenschaftswert aktualisieren, indem sie Folgendes aufrufen:
   
-- Die [IMAPIProp::SetProps-Methode](imapiprop-setprops.md) eines Objekts, um den Wert einer oder mehreren Eigenschaften eines Objekts zu aktualisieren. 
+- Die [IMAPIProp::SetProps-Methode](imapiprop-setprops.md) eines Objekts zum Aktualisieren des Werts einer oder mehrerer Eigenschaften eines Objekts. 
     
-- Die [HrSetOneProp-Funktion,](hrsetoneprop.md) um immer nur eine Eigenschaft zu aktualisieren. Verwenden **Sie HrSetOneProp nur,** wenn das Zielobjekt lokal ist. Diese Funktion kann bei Verwendung mit Remoteobjekten zu Leistungsbeeinträchtigungen führen. 
+- Die [HrSetOneProp-Funktion,](hrsetoneprop.md) um jeweils nur eine Eigenschaft zu aktualisieren. Verwenden Sie **HrSetOneProp** nur, wenn das Zielobjekt lokal ist. Diese Funktion kann bei Verwendung mit Remoteobjekten zu leistungsbeeinträchtigungen führen. 
     
-Das folgende Verfahren veranschaulicht, wie **Sie SetProps** verwenden, um die Nachrichtenklasse oder PR_MESSAGE_CLASS_A ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) -Eigenschaft einer Nachricht zu aktualisieren. 
+Das folgende Verfahren veranschaulicht die Verwendung von **SetProps** zum Aktualisieren der Nachrichtenklasse oder PR_MESSAGE_CLASS_A ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) -Eigenschaft einer Nachricht. 
   
 ### <a name="to-update-the-message-class-of-a-message"></a>So aktualisieren Sie die Nachrichtenklasse einer Nachricht 
   
-1. Ordnen Sie [eine SPropValue-Struktur](spropvalue.md) für die Nachrichtenklasse zu, und legen Sie ihre Member entsprechend. 
+1. Weisen Sie der Nachrichtenklasse eine [SPropValue-Struktur](spropvalue.md) zu, und legen Sie deren Member entsprechend fest. 
     
   ```cpp
     SPropValue spvMsgClass;
@@ -38,7 +38,7 @@ Das folgende Verfahren veranschaulicht, wie **Sie SetProps** verwenden, um die N
     
   ```
 
-2. Rufen Sie die **IMAPIProp::SetProps-Methode** der Nachricht auf, um die neue Nachrichtenklasse zu festlegen. 
+2. Rufen Sie die **IMAPIProp::SetProps-Methode** der Nachricht auf, um die neue Nachrichtenklasse festzulegen. 
     
   ```cpp
     hRes = lpMessage->SetProps(1, (LPSPropValue) &spvMsgClass, NULL);

@@ -1,31 +1,31 @@
 ---
-title: Optimize Dynamic-Eigenschaft (ADO)
+title: Optimieren der dynamischen Eigenschaft (ADO)
 TOCTitle: Optimize dynamic property (ADO)
 ms:assetid: 2253b052-2d8a-f6f0-f8b8-f56e79d243de
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249001(v=office.15)
 ms:contentKeyID: 48543705
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 11bb7872514a828fdd97fb404f5366c35ff9a883
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 9ae122b9716786d02365ed010bd25984b32cdff2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288252"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597156"
 ---
-# <a name="optimize-dynamic-property-ado"></a>Optimize Dynamic-Eigenschaft (ADO)
+# <a name="optimize-dynamic-property-ado"></a>Optimieren der dynamischen Eigenschaft (ADO)
 
 
 **Gilt für**: Access 2013, Office 2013
 
 Gibt an, ob für ein Feld ein Index erstellt werden soll.
 
-## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
+## <a name="settings-and-return-values"></a>Einstellungen- und Rückgabewerte
 
 Legt einen **Boolean**-Wert fest, der angibt, ob ein Index erstellt werden soll.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Ein Index kann die Leistung von Operationen verbessern, bei denen Werte in einem [Recordset](recordset-object-ado.md) gesucht oder sortiert werden. Der Index ist in ADO integriert, Sie können nicht explizit darauf zugreifen oder ihn in der Anwendung verwenden.
 

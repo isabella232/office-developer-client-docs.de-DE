@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.CheckParameters
 api_type:
 - COM
 ms.assetid: ba33866a-c9c4-454a-9549-72455c61ee97
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a922b8bb21bfd534935d4d1706a6ccfd15c2da5c
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 2161c68517e2f83e2f2388cf209d464116cac454
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33433395"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59567760"
 ---
 # <a name="checkparameters"></a>CheckParameters
 
@@ -25,7 +25,7 @@ ms.locfileid: "33433395"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ruft eine interne Funktion auf, um Debugparameter für von MAPI aufgerufene Dienstanbietermethoden zu überprüfen. 
+Ruft eine interne Funktion auf, um Debugparameter für Dienstanbietermethoden zu überprüfen, die von MAPI aufgerufen werden. 
   
 |||
 |:-----|:-----|
@@ -44,11 +44,11 @@ HRESULT CheckParameters(
 
  _eMethod_
   
-> [in] Gibt die zu überprüfende Methode per Enumeration an. 
+> [in] Gibt die zu überprüfende Methode anhand der Aufzählung an. 
     
  _First_
   
-> [in] Zeiger auf das erste Argument auf dem Stapel.
+> [in] Zeiger auf das erste Argument im Stapel.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -56,8 +56,8 @@ S_OK
   
 > Der Aufruf war erfolgreich.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das **Makro CheckParameters** wurde durch das [Makro CheckParms ersetzt.](checkparms.md) **CheckParms** wird auf allen Plattformen empfohlen. 
+Das **Makro "CheckParameters"** wurde durch das [Makro "CheckParms"](checkparms.md) abgelöst. **CheckParms** wird auf allen Plattformen empfohlen. 
   
 

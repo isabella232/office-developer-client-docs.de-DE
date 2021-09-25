@@ -1,20 +1,20 @@
 ---
-title: Field2. AllowZeroLength-Eigenschaft (DAO)
+title: Field2.AllowZeroLength-Eigenschaft (DAO)
 TOCTitle: AllowZeroLength Property
 ms:assetid: d3795634-527f-b4c5-b606-50f9945cac12
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff834791(v=office.15)
 ms:contentKeyID: 48547908
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 3125a5669ea8aa016d8554be0357572d56c08ecf
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 690a39bd65494e10f4e7d1cdeb047eeb881004b6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292909"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606737"
 ---
-# <a name="field2allowzerolength-property-dao"></a>Field2. AllowZeroLength-Eigenschaft (DAO)
+# <a name="field2allowzerolength-property-dao"></a>Field2.AllowZeroLength-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -26,9 +26,9 @@ Sets or returns a value that indicates whether a zero-length string ("") is a va
 
 *Ausdruck* . AllowZeroLength
 
-*Ausdruck* Eine Variable, die ein **Field2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Field2**-Objekt darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Bei einem Objekt, das noch nicht der **Fields**-Auflistung angefügt wurde, besteht für diese Eigenschaft Lese-/Schreibzugriff.
 

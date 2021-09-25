@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm35
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 84234177-a2df-6acc-2761-230bc5d12627
 description: Legt die Tabausrichtung fest.
-ms.openlocfilehash: 461357c9c838fb4c0e5b0159bf027dd6adce26f9
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 5ec858ecff9222feccebdc84c520b7f3f9ec819f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33425540"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59578277"
 ---
 # <a name="alignment-cell-tabs-section"></a>Zelle "Alignment" (Abschnitt "Tabs")
 
@@ -28,15 +28,15 @@ Legt die Tabausrichtung fest.
 | 3  <br/> | Dezimal  <br/> |**visTabStopDecimal** <br/> |
 | 4   <br/> | Komma  <br/> |**visTabStopComma** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Um einen Verweis auf die Zelle Alignment anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Um einen Verweis auf die Zelle "Alignment" anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Registerkarten.  *ij,*            *wobei i und j = <*  1>, 2, 3  <br/> |
+| Zellenname:  <br/> | Registerkarten.  *ij*            where  *i and j =*  <1>, 2, 3  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle Alignment nach Index aus einem Programm zu erhalten: 
+Um einen Verweis auf die Zelle "Alignment" anhand des Indexes aus einem Programm abzurufen, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|

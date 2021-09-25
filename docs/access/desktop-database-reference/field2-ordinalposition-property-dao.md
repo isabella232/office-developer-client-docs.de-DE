@@ -1,5 +1,5 @@
 ---
-title: Field2. OrdinalPosition-Eigenschaft (DAO)
+title: Field2.OrdinalPosition-Eigenschaft (DAO)
 TOCTitle: OrdinalPosition Property
 ms:assetid: 55d89611-ad07-990d-fc33-f81d59472430
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194179(v=office.15)
@@ -10,29 +10,29 @@ f1_keywords:
 - dao360.chm1052899
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 26d37bfda90f2ab4e2627b936d3cf37b5be811d5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 65f28bfafebf145c7b995c4aecc0aa3499f2b6c5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292727"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606709"
 ---
-# <a name="field2ordinalposition-property-dao"></a>Field2. OrdinalPosition-Eigenschaft (DAO)
+# <a name="field2ordinalposition-property-dao"></a>Field2.OrdinalPosition-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
 
 
-Legt die relative Position eines **Field2** -Objekts in einer Fields **[](fields-collection-dao.md)** -Auflistung fest oder gibt Sie zurück. .
+Mit dieser Eigenschaft wird die relative Position eines **Field2**-Objekts in einer **[Fields](fields-collection-dao.md)** -Auflistung festgelegt oder zurückgegeben.
 
 ## <a name="syntax"></a>Syntax
 
 *Ausdruck* . OrdinalPosition
 
-*Ausdruck* Eine Variable, die ein **Field2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Field2**-Objekt darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Bei einem Objekt, das noch nicht der **Fields**-Auflistung angefügt wurde, besteht für diese Eigenschaft Lese-/Schreibzugriff.
 
@@ -76,9 +76,9 @@ Die Verfügbarkeit der **OrdinalPosition**-Eigenschaft hängt vom Objekt ab, in 
 </table>
 
 
-In der Regel hängt die Position eines Objekts, das Sie einer Auflistung anfügen, von der Reihenfolge der Anfügung ab. Das erste angefügte Objekt befindet sich an der ersten Position (0), das zweite an der zweiten Position (1) usw. Das letzte angefügte Objekt befindet sich in der Ordnungsposition count-1, wobei count die Anzahl der Objekte in der Auflistung ist, wie durch die **[count](containers-count-property-dao.md)** -Eigenschaft festgelegt.
+In der Regel hängt die Position eines Objekts, das Sie einer Auflistung anfügen, von der Reihenfolge der Anfügung ab. Das erste angefügte Objekt befindet sich an der ersten Position (0), das zweite an der zweiten Position (1) usw. The last appended object is in ordinal position count – 1, where count is the number of objects in the collection as specified by the **[Count](containers-count-property-dao.md)** property setting.
 
-Sie können mithilfe der **OrdinalPosition**-Eigenschaft eine Position für neue **Field2**-Objekte angeben, die von der Reihenfolge abweicht, in der Sie diese Objekte der Auflistung anfügen. Dadurch können Sie eine Feldreihenfolge für Tabellen, Abfragen und Recordsets angeben, die Sie in einer Anwendung verwenden. Die Reihenfolge, in der Felder in einer SELECT \* -Abfrage zurückgegeben werden, wird beispielsweisedurch die aktuellen Werte der **Ordinalposition** -Eigenschaft bestimmt.
+Sie können mithilfe der **OrdinalPosition**-Eigenschaft eine Position für neue **Field2**-Objekte angeben, die von der Reihenfolge abweicht, in der Sie diese Objekte der Auflistung anfügen. Dadurch können Sie eine Feldreihenfolge für Tabellen, Abfragen und Recordsets angeben, die Sie in einer Anwendung verwenden. Beispielsweise wird die Reihenfolge, in der Felder in einer SELECT-Abfrage zurückgegeben werden, \* durch die aktuellen Werte der **OrdinalPosition-Eigenschaft** bestimmt.
 
 Sie können die Reihenfolge, in der Felder in Recordsets zurückgegeben werden, dauerhaft zurücksetzen, indem Sie die **OrdinalPosition**-Eigenschaft auf eine positive ganze Zahl festlegen.
 
@@ -88,7 +88,7 @@ You can specify a number that is greater than the number of fields minus 1. The 
 
 
 > [!NOTE]
-> Auch wenn die Fields-Auflistung eines **[TableDef](tabledef-object-dao.md)** -Objekts nicht aktualisiert wurde, gibt die Reihenfolge der **Felder** in einem **[Recordset](recordset-object-dao.md)** -Objekt, das von **TableDef** geöffnet wird, die **Ordinalposition** -Daten des **TableDef** -Objekts wieder. A table-type **Recordset** will have the same **OrdinalPosition** data as the underlying table, but any other type of **Recordset** will have new **OrdinalPosition** data (starting with 0) that follow the order determined by the **OrdinalPosition** data of the **TableDef**.
+> Auch wenn die **Fields-Auflistung** eines **[TableDef-Objekts](tabledef-object-dao.md)** nicht aktualisiert wurde, spiegelt die Feldreihenfolge in einem **[recordset](recordset-object-dao.md)** geöffneten **TableDef-Objekt** die **OrdinalPosition-Daten** des **TableDef-Objekts** wider. A table-type **Recordset** will have the same **OrdinalPosition** data as the underlying table, but any other type of **Recordset** will have new **OrdinalPosition** data (starting with 0) that follow the order determined by the **OrdinalPosition** data of the **TableDef**.
 
 
 

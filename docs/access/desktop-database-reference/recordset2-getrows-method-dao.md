@@ -1,30 +1,30 @@
 ---
-title: Recordset2. GetRows-Methode (DAO)
+title: Recordset2.GetRows-Methode (DAO)
 TOCTitle: GetRows Method
 ms:assetid: e5c0a082-e9d2-359f-fed5-835ab91d2311
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835959(v=office.15)
 ms:contentKeyID: 48548367
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: d7b20e2f41074e9f12198477a6abf2f1f1f9f719
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 42f5153ae2804b81fd98c32587bba787020e306d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309415"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596918"
 ---
-# <a name="recordset2getrows-method-dao"></a>Recordset2. GetRows-Methode (DAO)
+# <a name="recordset2getrows-method-dao"></a>Recordset2.GetRows-Methode (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
-Ruft mehrere Zeilen aus einem **[Recordset](recordset-object-dao.md)** -Objekt ab.
+Ruft mehrere Zeilen aus einem **[Recordset](recordset-object-dao.md)**-Objekt ab.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . GetRows (***numRows***)
+*expression* .GetRows(***NumRows***)
 
-*Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset2-Objekt** darstellt.
 
 ## <a name="parameters"></a>Parameter
 
@@ -60,7 +60,7 @@ Variant
 
 ## <a name="remarks"></a>Bemerkungen
 
-Mit der **GetRows**-Methode kopieren Sie Datensätze aus einem **Recordset**. **GetRows** gibt ein zweidimensionales Array zurück. Der erste Index identifiziert das Feld und der zweite die Nummer der Zeile. `intField` Stellt beispielsweise das Feld dar und `intRecord` identifiziert die Zeilennummer:
+Mit der **GetRows**-Methode kopieren Sie Datensätze aus einem **Recordset**. **GetRows** gibt ein zweidimensionales Array zurück. Der erste Index identifiziert das Feld und der zweite die Nummer der Zeile. Beispielsweise stellt `intField` das Feld dar, und `intRecord` identifiziert die Zeilennummer:
 
 `avarRecords(intField, intRecord)`
 
@@ -72,17 +72,17 @@ Verwenden Sie einen ähnlichen Code wie im folgenden Beispiel, um den zweiten Fe
 
 `field2 = avarRecords(1,0)`
 
-Die avarRecords-Variable wird automatisch zu einem zweidimensionalen Array, wenn **GetRows** Daten zurückgibt.
+Die Variable AvarRecords wird automatisch zu einem zweidimensionalen Array, wenn **GetRows** Daten zurückgibt.
 
-Wenn Sie mehr Zeilen anfordern, als verfügbar sind, gibt **GetRows** nur die verfügbaren Zeilen zurück. Sie können mithilfe der Visual Basic für Applikationen-Funktion **UBound** feststellen, wie viele Zeilen durch **GetRows** abgerufen wurden, denn die Größe des Arrays entspricht der Anzahl zurückgegebener Zeilen. Wenn Sie beispielsweise die Ergebnisse in eine **Variante** namens Vara zurückgegeben haben, können Sie den folgenden Code verwenden, um zu bestimmen, wie viele Zeilen tatsächlich zurückgegeben wurden:
+Wenn Sie mehr Zeilen anfordern, als verfügbar sind, gibt **GetRows** nur die verfügbaren Zeilen zurück. Sie können mithilfe der Visual Basic für Applikationen-Funktion **UBound** feststellen, wie viele Zeilen durch **GetRows** abgerufen wurden, denn die Größe des Arrays entspricht der Anzahl zurückgegebener Zeilen. Wurden die Ergebnisse beispielsweise in einen **Variant**-Wert namens varA zurückgegeben, können Sie mit dem folgenden Code ermitteln, wie viele Zeilen zurückgegeben wurden:
 
 `numReturned = UBound(varA,2) + 1`
 
-Sie müssen "+ 1" verwenden, das sich die erste zurückgegebene Zeile im 0-Element des Arrays befindet. The number of rows that you can retrieve is constrained by the amount of available memory. You shouldn't use **GetRows** to retrieve an entire table into an array if it is large.
+Sie müssen "+ 1" verwenden, das sich die erste zurückgegebene Zeile im 0-Element des Arrays befindet. Die Anzahl der Zeilen, die Sie abrufen können, ist durch den verfügbaren Arbeitsspeicher beschränkt. Sie sollten **GetRows** nicht verwenden, um eine ganze Tabelle in ein Array abzurufen, wenn sie groß ist.
 
 Because **GetRows** returns all fields of the **Recordset** into the array, including Memo and Long Binary fields, you might want to use a query that restricts the fields returned.
 
-Nach dem Aufrufen von **GetRows** wird der aktuelle Datensatz an der nächsten ungelesenen Zeile positioniert. Das heißt, **GetRows** hat dieselbe Auswirkung auf den aktuellen Datensatz wie **Move**numRows.
+Nach dem Aufrufen von **GetRows** wird der aktuelle Datensatz an der nächsten ungelesenen Zeile positioniert. Das heißt, **GetRows** hat die gleiche Auswirkung auf den aktuellen Datensatz wie **Move** numrows.
 
 If you are trying to retrieve all the rows by using multiple **GetRows** calls, use the **[EOF](recordset2-eof-property-dao.md)** property to be sure that you're at the end of the **Recordset**. **GetRows** returns less than the number requested if it's at the end of the **Recordset**, or if it can't retrieve a row in the range requested. For example, if you're trying to retrieve 10 records, but you can't retrieve the fifth record, **GetRows** returns four records and makes the fifth record the current record. This will not generate a run-time error. This might occur if another user deletes a record in a dynaset-type **Recordset**. See the example for a demonstration of how to handle this.
 

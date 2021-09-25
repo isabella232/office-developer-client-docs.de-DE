@@ -3,17 +3,17 @@ title: Unterst�tzung von mehreren den Clientzugriff auf Nachrichten in Nachric
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 31885c64-edb2-4a87-8730-09f163dedd40
 description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 40bed9ccbe8073c8e9ea5176c9d4be8fe642b52d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 907dd58dd06ed538a34c659bcd697bdacb16afbf
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439863"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59624104"
 ---
 # <a name="supporting-multiple-client-access-to-messages-in-message-stores"></a>Unterst�tzung von mehreren den Clientzugriff auf Nachrichten in Nachrichtenspeicher
 

@@ -1,18 +1,18 @@
 ---
-title: RDS-Methoden (Access Desktop Database Reference)
+title: RDS-Methoden (Access-Desktopdatenbankreferenz)
 TOCTitle: RDS methods
 ms:assetid: 7f4e2a28-cf6b-4621-5352-ed983a3c7450
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249538(v=office.15)
 ms:contentKeyID: 48545899
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 6797cb36821f99a2ec5aadf6e1c1c6fbedc5f3c3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 56d07d7edf8b201b3a31e19f8ba208639a27b840
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300889"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597044"
 ---
 # <a name="rds-methods"></a>RDS-Methoden
 
@@ -67,7 +67,7 @@ ms.locfileid: "32300889"
 <td><p>Die Sortierung oder Filterung eines clientseitigen <strong>Recordsets</strong> wird basierend auf den angegebenen Sortierungs- und Filterungseigenschaften ausgeführt.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="submitchanges-method-rds.md">SubmitChanges</a></p></td>
+<td><p><a href="submitchanges-method-rds.md">Submitchanges</a></p></td>
 <td><p>Ausstehende Änderungen des lokal zwischengespeicherten und aktualisierbaren <strong>Recordsets</strong> werden an die in der <strong>Connect</strong>-Eigenschaft angegebene Datenquelle gesendet.</p></td>
 </tr>
 </tbody>

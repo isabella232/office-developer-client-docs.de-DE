@@ -4,18 +4,18 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9cfbf12c-a71c-092b-d86a-c5585b0f1edb
-ms.openlocfilehash: dc2fe6bbaf4515d5c5f5be694b15040bf03ef374
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 60e5a6f7400a3bb7ab2df1fc25cc2c469af29418
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32321854"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617083"
 ---
 # <a name="iolkerrorunknown"></a>IOlkErrorUnknown
 
-Stellt zusätzliche Informationen zum letzten Fehler zur Verfügung.
+Stellt zusätzliche Informationen zum letzten Fehler bereit.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -25,13 +25,13 @@ Stellt zusätzliche Informationen zum letzten Fehler zur Verfügung.
 |Bereitgestellt von:  <br/> |Client  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IOlkErrorUnknown  <br/> |
    
-## <a name="vtable-order"></a>Vtable-Reihenfolge
+## <a name="vtable-order"></a>VTable-Reihenfolge
 
 |||
 |:-----|:-----|
-|[GetLastError](iolkerrorunknown-getlasterror.md) <br/> |Ruft eine Nachrichtenzeichenfolge für den angegebenen Fehler ab.  <br/> |
+|[Getlasterror](iolkerrorunknown-getlasterror.md) <br/> |Ruft eine Meldungszeichenfolge für den angegebenen Fehler ab.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Schnittstelle enthält zusätzliche Informationen zu einem Fehler in [IOlkAccountManager](iolkaccountmanager.md), [IOlkAccountNotify](iolkaccountnotify.md)und [IOlkAccount](iolkaccount.md). Es ist auch die Basisschnittstelle für **IOlkAccountManager**, **IOlkAccountNotify** und **IOlkAccount**. 
   

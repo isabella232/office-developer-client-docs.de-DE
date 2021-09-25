@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff191764(v=office.15)
 ms:contentKeyID: 48543720
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: c9ebbeae35387f4fd59c39d4c20df6033edb06b0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 39a3bb0f2b0b2c8113644f4d509a7867c7d5c8ad
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295632"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577521"
 ---
 # <a name="container-object-dao"></a>Container-Objekt (DAO)
 
@@ -20,7 +20,7 @@ ms.locfileid: "32295632"
 
 Ein **Container**-Objekt fasst ähnliche Typen von **Document**-Objekten in Gruppen zusammen.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Jedes **Database**-Objekt besitzt eine **Containers**-Auflistung, die aus integrierten **Container**-Objekten besteht. Anwendungen können eigene Dokumenttypen und entsprechende Container definieren (gilt nur für Microsoft Access-Datenbanken). Diese Objekte werden jedoch möglicherweise nicht immer von DAO unterstützt.
 
@@ -43,7 +43,7 @@ Einige dieser **Container**-Objekte werden durch das Microsoft Access-Datenbankm
 <td><p>Gespeicherten Datenbanken</p></td>
 </tr>
 <tr class="even">
-<td><p>Tables</p></td>
+<td><p>Tabellen</p></td>
 <td><p>Gespeicherten Tabellen und Abfragen</p></td>
 </tr>
 <tr class="odd">
@@ -70,11 +70,11 @@ Da **Container**-Objekte integriert sind, können Sie neue **Container**-Objekte
 
 Wenn Sie auf ein **Container**-Objekt in einer Auflistung mit seiner Ordnungszahl oder mit der Einstellung seiner **Name**-Eigenschaft verweisen möchten, verwenden Sie eine der folgenden Syntaxformen:
 
-- **Container** 0
+- **Container**(0)
 
-- **Container** ("*Name*")
+- **Container**("*Name*")
 
-- ****\!Container\[*Name*\]
+-  \! Container \[ *Name*\]
 
 ## <a name="example"></a>Beispiel
 

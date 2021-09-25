@@ -1,20 +1,20 @@
 ---
-title: Field2. Expression-Eigenschaft (DAO)
+title: Field2.Expression-Eigenschaft (DAO)
 TOCTitle: Expression Property
 ms:assetid: 8ae9db2c-7460-5bfc-0dc4-3f87e5ab30ff
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197109(v=office.15)
 ms:contentKeyID: 48546205
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 603dfaa9a54ddfe769b96a57b790b4657abbeb14
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 31a60ae12870b82cf6997b2afc03f149217c3de6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292818"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606702"
 ---
-# <a name="field2expression-property-dao"></a>Field2. Expression-Eigenschaft (DAO)
+# <a name="field2expression-property-dao"></a>Field2.Expression-Eigenschaft (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -28,13 +28,13 @@ Hinzugefügte Version: Access 2010
 
 *Ausdruck* . Ausdruck
 
-*Ausdruck* Eine Variable, die ein **Field2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Field2**-Objekt darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-In Access 2013 können Sie Tabellen Felder erstellen, die Werte berechnen. Die Berechnungen können Werte aus Feldern in derselben Tabelle sowie integrierte Access-Funktionen einbeziehen.
+In Access 2013 können Sie Tabellenfelder erstellen, die Werte berechnen. Die Berechnungen können Werte aus Feldern in derselben Tabelle sowie integrierte Access-Funktionen enthalten.
 
-Die Berechnung darf keine Felder aus anderen Tabellen oder Abfragen aufnehmen.
+Die Berechnung kann keine Felder aus anderen Tabellen oder Abfragen enthalten.
 
 Die Ergebnisse der Berechnung sind schreibgeschützt.
 

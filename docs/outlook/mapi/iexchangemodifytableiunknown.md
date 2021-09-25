@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IExchangeModifyTable
 api_type:
 - COM
 ms.assetid: 45a73c7b-5855-4b70-866b-facb41cb3c32
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 333e1d5cacc069ee1faef01426a1c0a60ef07f8e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 095345eb42a269d8bdf0f952ece20b2fc35b3df1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33418106"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59616824"
 ---
 # <a name="iexchangemodifytable--iunknown"></a>IExchangeModifyTable : IUnknown
 
@@ -25,22 +25,22 @@ ms.locfileid: "33418106"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Unterstützt den Zugriff auf Microsoft Exchange Server Tabellenobjekte, insbesondere SACL-Tabellenobjekte (System Access Control List) und Regeltabelle-Objekte in Microsoft Exchange Server Ordnern. Diese Schnittstelle ähnelt der [IMAPITable : IUnknown-Schnittstelle,](imapitableiunknown.md) bietet jedoch Unterstützung für Microsoft Exchange Server-spezifische Strukturen, die zum Steuern von SACLs und Regeln verwendet werden. 
+Unterstützt den Zugriff auf Microsoft Exchange Server Tabellenobjekte, insbesondere SACL-Tabellenobjekte (System Access Control List) und Regeltabellenobjekte in Microsoft Exchange Server Ordnern. Diese Schnittstelle ähnelt der [IMAPITable : IUnknown-Schnittstelle,](imapitableiunknown.md) fügt jedoch Unterstützung für Microsoft Exchange Server-spezifische Strukturen hinzu, die zum Steuern von SACLs und Regeln verwendet werden. 
   
 |||
 |:-----|:-----|
-|Verf�gbar gemacht von:  <br/> |Keine  <br/> |
-|Implementiert von:  <br/> |Server-Tabellenobjekte  <br/> |
-|Aufgerufen von:  <br/> |MAPI- und Clientanwendungen  <br/> |
+|Verf�gbar gemacht von:  <br/> |Keines  <br/> |
+|Implementiert von:  <br/> |Servertabellenobjekte  <br/> |
+|Aufgerufen von:  <br/> |MAPI und Clientanwendungen  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IExchangeModifyTable  <br/> |
 |Zeigertyp:  <br/> |LPEXCHANGEMODIFYTABLE  <br/> |
-|Transaktionsmodell:  <br/> |Transacted  <br/> |
+|Transaktionsmodell:  <br/> |Transaktiven  <br/> |
    
-## <a name="vtable-order"></a>Vtable-Reihenfolge
+## <a name="vtable-order"></a>VTable-Reihenfolge
 
 |||
 |:-----|:-----|
-|[GetLastError](iexchangemodifytable-getlasterror.md) <br/> |Gibt Informationen zum letzten Fehler zurück, der in einem Tabellenobjekt aufgetreten ist.  <br/> |
+|[Getlasterror](iexchangemodifytable-getlasterror.md) <br/> |Gibt Informationen zum letzten Fehler zurück, der in einem Tabellenobjekt aufgetreten ist.  <br/> |
 |[GetTable](iexchangemodifytable-gettable.md) <br/> |Gibt einen Zeiger auf eine Schnittstelle für ein MAPI-Tabellenobjekt zurück.  <br/> |
 |[ModifyTable](iexchangemodifytable-modifytable.md) <br/> |Aktualisiert ein MAPI-Tabellenobjekt.  <br/> |
    
@@ -64,9 +64,9 @@ Unterstützt den Zugriff auf Microsoft Exchange Server Tabellenobjekte, insbeson
 |**PR_MEMBER_NAME** ([PidTagMemberName](pidtagmembername-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
 |**PR_MEMBER_RIGHTS** ([PidTagMemberRights](pidtagmemberrights-canonical-property.md))  <br/> |Schreibgeschützt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Rufen Sie zum Abrufen der **IExchangeModifyTable-Schnittstelle** die MAPI-IMAPIProp::OpenProperty-Methode für eine Eigenschaft vom Typ PT_OBJECT ordnerobjekt auf. [](imapiprop-openproperty.md) Wenn Sie die **OpenProperty-Methode** aufrufen, übergeben Sie den Wert **IID_IExchangeModifyTable** im _lpiid-Parameter._ 
+Rufen Sie zum Abrufen der **IExchangeModifyTable-Schnittstelle** die MAPI [IMAPIProp::OpenProperty-Methode](imapiprop-openproperty.md) für eine Eigenschaft vom Typ PT_OBJECT für ein Ordnerobjekt auf. Wenn Sie die **OpenProperty-Methode** aufrufen, übergeben Sie den Wert **IID_IExchangeModifyTable** im _lpiid-Parameter._ 
   
 ## <a name="see-also"></a>Siehe auch
 

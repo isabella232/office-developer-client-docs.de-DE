@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.SMAPIFormPropArray
 api_type:
 - COM
 ms.assetid: bb243bc4-4974-4ad6-aa76-2426c1ebe84b
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 50b6581dec8211968a49b204c6d9b1ba1c65bb62
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 471e2accdd925e81c951e195349bf00691dea100
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33420066"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59624181"
 ---
 # <a name="smapiformproparray"></a>SMAPIFormPropArray
 
@@ -42,21 +42,21 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Elemente
+## <a name="members"></a>Members
 
  **cProps**
   
-> Anzahl benannter Eigenschaften im Array im **aFormProp-Element.** 
+> Anzahl der benannten Eigenschaften im Array im **aFormProp-Element.** 
     
  **ulPad**
   
->  Acht Bytes Abstand, der verwendet wird, um die richtige Ausrichtung zu gewährleisten. 
+>  Acht Bytes Abstand, die verwendet werden, um eine korrekte Ausrichtung zu gewährleisten. 
     
  **aFormProp**
   
 > Array von Formulareigenschaften.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **SMAPIFormPropArray-Struktur** wird als Parameter an die folgenden Methoden übergeben: 
   

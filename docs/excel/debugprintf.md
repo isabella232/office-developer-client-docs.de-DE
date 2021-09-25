@@ -7,22 +7,22 @@ ms.topic: reference
 f1_keywords:
 - debugPrintf
 keywords:
-- debugprintf-Funktion [excel 2007]
-localization_priority: Normal
+- Debugprintf-Funktion [Excel 2007]
+ms.localizationpriority: medium
 ms.assetid: 9ad541f6-0b35-4f50-926a-8940e3f8033a
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 08bde61573874c137b18856fd24d23b324a35328
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: d3c09aed1f818c426ed957e3a3273c3bf7f574b1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424798"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617244"
 ---
 # <a name="debugprintf"></a>debugPrintf
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Framework library function that writes a null-terminated byte-string to the active debugger via the Windows SDK function **OutputDebugStringA**. Wenn die Anwendung keinen Debugger besitzt, zeigt der Systemdebugger die Zeichenfolge an. Wenn die Anwendung keinen Debugger hat und der Systemdebugger nicht aktiv ist, **führt debugPrintf** nichts aus. 
+Framework-Bibliotheksfunktion, die eine Bytezeichenfolge mit Null-Terminierung über die Windows SDK-Funktion **OutputDebugStringA** in den aktiven Debugger schreibt. Wenn die Anwendung keinen Debugger hat, zeigt der Systemdebugger die Zeichenfolge an. Wenn die Anwendung über keinen Debugger verfügt und der Systemdebugger nicht aktiv ist, führt **debugPrintf** keine Aktion aus. 
   
 Diese Funktion gibt keinen Wert zurück.
   
@@ -34,15 +34,15 @@ void WINAPI debugPrintf(LPSTR lpFormat, arguments);
 
  _lpFormat (LPSTR)_
   
-Die Formatzeichenfolge, die der Syntax und Regeln für die mit der **sprintf-Funktion verwendete Folgt.** 
+Die Formatzeichenfolge, die der Syntax und den Regeln für die Mithilfe der **Sprintf-Funktion** folgt. 
   
  _Argumente_
   
-Null oder mehr Argumente, die der Formatzeichenfolge entsprechen.
+Null oder mehr Argumente, die mit der Formatzeichenfolge übereinstimmen.
   
 ## <a name="example"></a>Beispiel
 
-Diese Funktion druckt eine Zeichenfolge, um zu zeigen, dass das Steuerelement an sie übergeben wurde. Das _DEBUG muss vor der Kompilierung definiert werden, sonst führt diese Funktion nichts aus.
+Diese Funktion druckt eine Zeichenfolge, um anzuzeigen, dass das Steuerelement an sie übergeben wurde. Das _DEBUG-Flag muss vor der Kompilierung definiert werden, andernfalls führt diese Funktion keine Aktion aus.
   
  `\SAMPLES\EXAMPLE\EXAMPLE.C`
   

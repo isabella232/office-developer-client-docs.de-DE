@@ -1,26 +1,26 @@
 ---
-title: Funktionen in der Framework Library
+title: Funktionen in der Frameworkbibliothek
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
 keywords:
-- Framework library functions [excel 2007],functions [Excel 2007], Framework library
-localization_priority: Normal
+- framework library functions [excel 2007],functions [Excel 2007], Framework library
+ms.localizationpriority: medium
 ms.assetid: 7d9a13fd-9a4c-423e-bb08-4a5be57c7905
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 4eeb9e5db09592e98e9afb763efaa6be18eb2f7e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: e828a8a9f8724ac9012955f885238b2ca1b3dd3d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33417546"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617216"
 ---
-# <a name="functions-in-the-framework-library"></a>Funktionen in der Framework Library
+# <a name="functions-in-the-framework-library"></a>Funktionen in der Frameworkbibliothek
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Die Framework Library wurde erstellt, um das Schreiben von XLLs zu vereinfachen. Es umfasst einfache Funktionen zum Verwalten des **XLOPER** XLOPER12-Speichers, zum Erstellen temporärer /  **XLOPER** XLOPER12-Funktionen, zum robusten Aufrufen der /  Microsoft Excel-Rückruffunktionen (**Excel4**, **Excel4v**, ** Excel12 **, ** Excel12v **) und zum Drucken von Debugzeichenfolgen auf einem angefügten Terminal.
+Die Framework-Bibliothek wurde erstellt, um das Schreiben von XLLs zu vereinfachen. Sie enthält einfache Funktionen zum Verwalten des **XLOPER** /  **XLOPER12-Speichers,** zum Erstellen temporärer **XLOPER** /  **XLOPER12,** zum robusten Aufrufen der Microsoft Excel Rückruffunktionen (**Excel4**, **Excel4v**, ** Excel12 **, ** Excel12v **) und zum Drucken von Debugzeichenfolgen in einem angefügten Terminal.
   
 Die in dieser Bibliothek enthaltenen Funktionen vereinfachen einen Code, der wie folgt aussieht.
   
@@ -63,11 +63,11 @@ Die folgenden Funktionen sind in der Framework-Bibliothek enthalten:
 |[TempActiveColumn](tempactivecolumn-tempactivecolumn12.md) <br/> |[TempActiveColumn12](tempactivecolumn-tempactivecolumn12.md) <br/> |
 |[TempMissing](tempmissing-tempmissing12.md) <br/> |[TempMissing12](tempmissing-tempmissing12.md) <br/> |
    
-Die Verwendung dieser Funktionen verkürzt den Zeitbedarf für das Schreiben einer DLL oder XLL. Durch das Starten der Entwicklung aus der Beispielanwendung GENERIC wird auch die Entwicklungszeit verkürzt. Verwenden Sie GENERIC. C als Vorlage zum Einrichten des Frameworks einer XLL, und ersetzen Sie dann den vorhandenen Code durch Ihren eigenen.
+Die Verwendung dieser Funktionen verkürzt den Zeitaufwand für das Schreiben einer DLL oder XLL. Ab der Entwicklung ab der Beispielanwendung GENERIC verkürzt sich auch die Entwicklungszeit. Verwenden Sie GENERIC. C als Vorlage zum Einrichten des Frameworks einer XLL, und ersetzen Sie dann den vorhandenen Code durch Ihren eigenen Code.
   
-Die **temporären XLOPER** /  **XLOPER12-Funktionen** erstellen **XLOPER** /  **XLOPER12-Werte** mithilfe von Arbeitsspeicher aus einem lokalen Heap, der von der Framework-Bibliothek verwaltet wird. Die **XLOPER** XLOPER12-Werte bleiben gültig, bis Sie die /   **FreeAllTempMemory-Funktion** oder eine der funktionen **Excel** oder **Excel12f** aufrufen. (Die **funktionen Excel** **und Excel12f** lassen den temporären Arbeitsspeicher frei, bevor sie zurückkehren.) 
+Die **temporären XLOPER** /  **XLOPER12-Funktionen** erstellen **XLOPER** /  **XLOPER12-Werte** mithilfe von Arbeitsspeicher aus einem lokalen Heap, der von der Framework-Bibliothek verwaltet wird. Die **XLOPER** /  **XLOPER12-Werte** bleiben gültig, bis Sie die **FreeAllTempMemory-Funktion** oder eine der **Excel-** oder **Excel12f-Funktionen** aufrufen. (Die **Funktionen Excel** und **Excel12f** geben vor der Rückgabe den gesamten temporären Speicher frei.) 
   
-Um die Funktionen der Framework-Bibliothek verwenden zu können, müssen Sie frameWRK hinzufügen. H-Datei in Ihrem C-Code, und fügen Sie frameWRK hinzu. C oder FRMWRK32. LIB-Dateien für Ihr Codeprojekt.
+Um die Framework-Bibliotheksfunktionen zu verwenden, müssen Sie framewrk einschließen. H-Datei in Ihrem C-Code, und fügen Sie framewrk hinzu. C oder FRMWRK32. LIB-Dateien für Ihr Codeprojekt.
   
 ## <a name="see-also"></a>Siehe auch
 

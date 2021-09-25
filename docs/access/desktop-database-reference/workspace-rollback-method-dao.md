@@ -1,20 +1,20 @@
 ---
-title: Workspace. Rollback-Methode (DAO)
+title: Workspace.Rollback-Methode (DAO)
 TOCTitle: Rollback Method
 ms:assetid: 10775fcc-7db2-9e14-5625-048db5c50466
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845335(v=office.15)
 ms:contentKeyID: 48543294
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 377d122821dc95b275c28ecab420748c3d120e0f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 2f51bf0848e5fa75887317784f78721a4197da15
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32302443"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59596883"
 ---
-# <a name="workspacerollback-method-dao"></a>Workspace. Rollback-Methode (DAO)
+# <a name="workspacerollback-method-dao"></a>Workspace.Rollback-Methode (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -24,9 +24,9 @@ Beendet die aktuelle Transaktion und setzt die Datenbanken im **Workspace**-Obje
 
 *Ausdruck* . Rollback
 
-*Ausdruck* Eine Variable, die ein **Workspace** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Workspace**-Objekt darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Mithilfe der Transaktionsmethoden **BeginTrans**, **CommitTrans** und **Rollback** wird die Transaktionsverarbeitung während einer Sitzung verwaltet, die durch ein **Workspace**-Objekt definiert wurde. Sie verwenden diese Methoden mit einem **Workspace**-Objekt, wenn Sie eine Reihe von an den Datenbanken vorgenommenen Änderungen in einer Sitzung als eine Einheit verarbeiten möchten.
 

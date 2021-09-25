@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249073(v=office.15)
 ms:contentKeyID: 48543975
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: de9c239bf23c6cc1307447db4600afa720527a4d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 65db07a3ee42f819033b748ed8dc4c7c7965d212
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296563"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577591"
 ---
 # <a name="cell-object-ado-md-reference"></a>Cell-Objekt (ADO MD-Referenz)
 
 **Gilt für**: Access 2013, Office 2013
 
 - [Cell-Objekt (ADO MD)](cell-object-ado-md.md)
-- [Zelleneigenschaften, Methoden und Ereignisse (ADO MD)](cell-properties-methods-and-events-ado-md.md)
+- [Zelleneigenschaften, -methoden und -ereignisse (ADO MD)](cell-properties-methods-and-events-ado-md.md)
 

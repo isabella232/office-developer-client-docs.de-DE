@@ -1,5 +1,5 @@
 ---
-title: Field. Size-Eigenschaft (DAO)
+title: Field.Size-Eigenschaft (DAO)
 TOCTitle: Size Property
 ms:assetid: 15e25201-87b6-f62f-ff18-259414a47891
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845510(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1052878
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 16ce8a9e63c18ded2738035f23e9a1baeff4cc8c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d0651e41cb03e5b689093cea5e33ba95d9d8684a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293015"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597317"
 ---
-# <a name="fieldsize-property-dao"></a>Field. Size-Eigenschaft (DAO)
+# <a name="fieldsize-property-dao"></a>Field.Size-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -30,7 +30,7 @@ Legt einen Wert fest, der die maximale Größe eines **[Field](field-object-dao.
 
 *Ausdruck* . Größe
 
-*Ausdruck* Eine Variable, die ein **Field** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Field**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 
@@ -48,7 +48,7 @@ Die Verwendung der **Size**-Eigenschaft hängt von dem Objekt ab, das die **Fiel
 <thead>
 <tr class="header">
 <th><p>Zugehörigkeit zu Objekt</p></th>
-<th><p>Verwendung</p></th>
+<th><p>Nutzung</p></th>
 </tr>
 </thead>
 <tbody>
@@ -65,7 +65,7 @@ Die Verwendung der **Size**-Eigenschaft hängt von dem Objekt ab, das die **Fiel
 <td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Beziehung</strong></p></td>
+<td><p><strong>Relation</strong></p></td>
 <td><p>Nicht unterstützt</p></td>
 </tr>
 <tr class="odd">

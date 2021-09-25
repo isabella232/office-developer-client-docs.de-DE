@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195846(v=office.15)
 ms:contentKeyID: 48545626
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: d19e7adcdd3bb60f24d90e75942fcc0b4e16e2e2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: ebbde6cee79aa822d710089d06aff39767413ccc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296654"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606968"
 ---
 # <a name="cancelrecordchange-macro-action"></a>CancelRecordChange-Makroaktion
 
@@ -27,7 +27,7 @@ Mit der **CancelRecordChange** -Aktion können Sie die Änderungen an einem Date
 
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn Sie die **AbbrechenDatensatzänderung** -Aktion aufrufen, wird der **DatensatzErstellen** - oder **DatensatzBearbeiten** -Datenblock sofort beendet.
 
