@@ -3,17 +3,17 @@ title: Deklarieren von Formularschnittstellen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 79283301-e544-4a4d-96c2-3f81dc5b3731
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 0fa742b7ff6d98e3a0f475accbc440d22eac0919
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 19acb1a9c046878b818a61f014711576938a0cf1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33437511"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59584647"
 ---
 # <a name="declaring-form-interfaces"></a>Deklarieren von Formularschnittstellen
 
@@ -21,7 +21,7 @@ ms.locfileid: "33437511"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Sie können die Deklarationen Ihrer Implementierungen von MAPI-Formularschnittstellen vereinfachen, indem Sie die MAPI_ _interface__METHOD-Makros verwenden. Dabei handelt es sich bei der Schnittstelle um eine Formularschnittstelle, die in der Mapiform.h-Headerdatei definiert ist.  Sie müssen diese Makros nicht verwenden, aber andern falls nicht, sollten Sie besonders darauf achten, dass Ihre Deklarationen den Deklarationen in der Mapiform.h-Headerdatei entsprechen. Beispielsweise können Sie die Formularobjektklasse des Formularservers wie folgt deklarieren: 
+Sie können die Deklarationen Ihrer Implementierungen von MAPI-Formularschnittstellen vereinfachen, indem Sie die MAPI_ _interface__METHOD Makros verwenden, wobei  _die Schnittstelle_ eine in der Mapiform.h-Headerdatei definierte Formularschnittstelle ist. Sie müssen diese Makros nicht verwenden, aber wenn Sie dies nicht tun, sollten Sie besonders darauf achten, dass Ihre Deklarationen den Deklarationen in der Headerdatei Mapiform.h entsprechen. Sie können z. B. die Formularobjektklasse des Formularservers wie folgt deklarieren: 
   
 ```cpp
 class CMyForm : public IPersistMessage, public IMAPIForm,

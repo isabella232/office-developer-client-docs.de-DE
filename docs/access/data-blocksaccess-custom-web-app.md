@@ -3,15 +3,15 @@ title: Datenblöcke (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5d16f744-0ba2-4db8-9be8-55611c1b69d2
 description: ''
-ms.openlocfilehash: 4cee0b572a32552b6da69bd836889bfa5870298a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 43d3ef512d938783c4dc1565f4d6b6bec6afe382
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411330"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577633"
 ---
 # <a name="data-blocks-access-custom-web-app"></a>Datenblöcke (benutzerdefinierte Access-Web-App)
 
@@ -20,12 +20,12 @@ ms.locfileid: "33411330"
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
-- [CreateRecord Data Block (benutzerdefinierte Access-Web-App)](createrecord-data-block-access-custom-web-app.md)
+- [CreateRecord Data Block (Benutzerdefinierte Access-Web-App)](createrecord-data-block-access-custom-web-app.md)
     
-- [EditRecord Data Block (benutzerdefinierte Access-Web-App)](editrecord-data-block-access-custom-web-app.md)
+- [BearbeitenDatensatz-Datenblock (benutzerdefinierte Access-Web-App)](editrecord-data-block-access-custom-web-app.md)
     
-- [ForEachRecord Data Block (benutzerdefinierte Access-Web-App)](foreachrecord-data-block-access-custom-web-app.md)
+- [ForEachRecord-Datenblock (benutzerdefinierte Access-Web-App)](foreachrecord-data-block-access-custom-web-app.md)
     
-- [LookupRecord Data Block (benutzerdefinierte Access-Web-App)](lookuprecord-data-block-access-custom-web-app.md)
+- [NachschlagenDatensatz-Datenblock (benutzerdefinierte Access-Web-App)](lookuprecord-data-block-access-custom-web-app.md)
     
 

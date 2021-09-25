@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MSProviderInit
 api_type:
 - HeaderDef
 ms.assetid: 230c66c4-ab04-4fa6-946f-9f4b704f2842
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 9a5f8b44f9d795282ccfd61fd32a306c5478ed21
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 5d9a31a768ca588971fa0e22c1ab8c4d659753d1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33416237"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59595651"
 ---
 # <a name="msproviderinit"></a>MSProviderInit
 
@@ -30,7 +30,7 @@ Initialisiert einen Nachrichtenspeicheranbieter für den Vorgang.
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |Mapispi.h  <br/> |
-|Implementiert von:  <br/> |Anbieter von Nachrichtenspeichern  <br/> |
+|Implementiert von:  <br/> |Nachrichtenspeicheranbieter  <br/> |
 |Aufgerufen von:  <br/> |MAPI  <br/> |
    
 ```cpp
@@ -49,13 +49,13 @@ HRESULT MSProviderInit(
 
 ## <a name="parameters"></a>Parameter
 
- _hInstance_
+ _Hinstance_
   
-> [in] Die Instanz der DYNAMIC-Link Library (DLL) des Nachrichtenspeicheranbieters, die MAPI beim Verknüpfen verwendet hat. 
+> [in] Die Instanz der DLL (Dynamic Link Library) des Nachrichtenspeicheranbieters, die die MAPI beim Verknüpfen verwendet hat. 
     
  _lpMalloc_
   
-> [in] Zeiger auf ein Speicherzuweisungsobjekt, das die OLE **IMalloc-Schnittstelle verfügbar** machen soll. Der Nachrichtenspeicheranbieter muss diese Zuordnungsmethode möglicherweise verwenden, wenn er mit bestimmten Schnittstellen wie **IStream arbeitet.** 
+> [in] Zeiger auf ein Speicherzuweisungsobjekt, das die OLE **IMalloc-Schnittstelle** verfügbar machen kann. Der Nachrichtenspeicheranbieter muss diese Zuordnungsmethode möglicherweise verwenden, wenn er mit bestimmten Schnittstellen wie **IStream** arbeitet. 
     
  _lpAllocateBuffer_
   
@@ -63,31 +63,31 @@ HRESULT MSProviderInit(
     
  _lpAllocateMore_
   
-> [in] Zeiger auf die [MAPIAllocateMore-Funktion,](mapiallocatemore.md) die zum Zuordnen von zusätzlichem Arbeitsspeicher verwendet werden soll. 
+> [in] Zeiger auf die [MAPIAllocateMore-Funktion,](mapiallocatemore.md) die verwendet werden soll, um zusätzlichen Speicher zuzuweisen. 
     
  _lpFreeBuffer_
   
-> [in] Zeiger auf die [MAPIFreeBuffer-Funktion,](mapifreebuffer.md) die zum Freispeichern verwendet werden soll. 
+> [in] Zeiger auf die [MAPIFreeBuffer-Funktion,](mapifreebuffer.md) die zum Freigeben von Arbeitsspeicher verwendet werden soll. 
     
  _ulFlags_
   
-> [in] Bitmaske von Flags. Das folgende Flag kann festgelegt werden:
+> [in] Bitmaske von Flags. Das folgende Kennzeichen kann festgelegt werden:
     
 MAPI_NT_SERVICE 
   
-> Der Anbieter wird im Kontext eines Windows geladen, einem speziellen Prozesstyp ohne Zugriff auf eine Benutzeroberfläche. 
+> Der Anbieter wird im Kontext eines Windows Diensts geladen, einem speziellen Prozesstyp ohne Zugriff auf eine Benutzeroberfläche. 
     
  _ulMAPIVer_
   
-> [in] Versionsnummer der von MAPI verwendeten Dienstanbieterschnittstelle (Service Provider Interface, SPI). Die aktuelle Versionsnummer finden Sie in der Mapispi.h-Headerdatei. 
+> [in] Versionsnummer der VON MAPI verwendeten Dienstanbieterschnittstelle (Service Provider Interface, SPI). Die aktuelle Versionsnummer finden Sie in der Headerdatei Mapispi.h. 
     
  _lpulProviderVer_
   
-> [out] Zeiger auf die Versionsnummer des SPI, den dieser Nachrichtenspeicheranbieter verwendet. 
+> [out] Zeiger auf die Versionsnummer der SPI, die von diesem Nachrichtenspeicheranbieter verwendet wird. 
     
  _lppMSProvider_
   
-> [out] Zeiger auf einen Zeiger auf das initialisierte Objekt des Nachrichtenspeicheranbieters.
+> [out] Zeiger auf einen Zeiger auf das initialisierte Nachrichtenspeicheranbieterobjekt.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -97,23 +97,23 @@ S_OK
     
 MAPI_E_VERSION 
   
-> Die von MAPI verwendete SPI-Version ist nicht mit dem von diesem Anbieter verwendeten SPI kompatibel.
+> Die von der MAPI verwendete SPI-Version ist nicht mit dem von diesem Anbieter verwendeten SPI kompatibel.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 MAPI ruft die Einstiegspunktfunktion **MSProviderInit** auf, um einen Nachrichtenspeicheranbieter nach einer Clientanmeldung zu initialisieren. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Ein Nachrichtenspeicheranbieter muss **MSProviderInit** als Einstiegspunktfunktion in der DLL des Anbieters implementieren. Die Implementierung muss auf dem **MSPROVIDERINIT-Funktionsprototyp** basieren, der auch in MAPISPI.H angegeben ist. MAPI definiert **MSPROVIDERINIT** für die Verwendung des standardmäßigen MAPI-Initialisierungsaufruftyps STDMAPIINITCALLTYPE, wodurch **MSProviderInit** der CDECL-Aufrufkonvention folgt. Ein Vorteil von CDECL ist, dass Aufrufe auch dann versucht werden können, wenn die Anzahl der aufrufenden Parameter nicht mit der Anzahl der definierten Parameter übereinstimmen. 
+Ein Nachrichtenspeicheranbieter muss **MSProviderInit** als Einstiegspunktfunktion in der DLL des Anbieters implementieren. Die Implementierung muss auf dem **MSPROVIDERINIT-Funktionsprototyp** basieren, der auch in MAPISPI.H angegeben ist. MAPI definiert **MSPROVIDERINIT** für die Verwendung des standardmäßigen MAPI-Initialisierungsaufruftyps STDMAPIINITCALLTYPE, wodurch **MSProviderInit** der CDECL-Aufrufkonvention folgt. Ein Vorteil von CDECL besteht darin, dass Aufrufe auch dann versucht werden können, wenn die Anzahl der aufrufbaren Parameter nicht mit der Anzahl der definierten Parameter übereinstimmt. 
   
-Ein Anbieter kann mehrmals initialisiert werden, da er in mehreren Profilen gleichzeitig angezeigt wird oder mehr als einmal im gleichen Profil angezeigt wird. Da das provider-Objekt Kontext enthält, muss **MSProviderInit** ein anderes Anbieterobjekt in  _lppMSProvider_ für jede Initialisierung zurückgeben, auch für mehrere Initialisierungen im gleichen Prozess. 
+Ein Anbieter kann mehrmals initialisiert werden, wenn er in mehreren Profilen gleichzeitig oder mehrmals im selben Profil angezeigt wird. Da das Anbieterobjekt Kontext enthält, muss **MSProviderInit** ein anderes Anbieterobjekt in  _lppMSProvider_ für jede Initialisierung zurückgeben, auch für mehrere Initialisierungen im selben Prozess. 
   
-Die Anbieter-DLL sollte nicht mit dem Mapix.dll. Stattdessen sollten diese Zeiger für die Speicherzuweisung oder -verteilung verwendet werden. 
+Die Anbieter-DLL sollte nicht mit Mapix.dll verknüpft werden. Stattdessen sollten diese Zeiger für die Speicherzuweisung oder -zuordnung verwendet werden. 
   
-Der Nachrichtenspeicheranbieter sollte die Funktionen verwenden, auf die  _von lpAllocateBuffer,_  _lpAllocateMore_ und  _lpFreeBuffer_ für die meisten Speicherzuweisungen und Deallocation verwiesen wird. Insbesondere muss der Anbieter diese Funktionen verwenden, um Speicher für die Verwendung durch Clientanwendungen beim Aufrufen von Objektschnittstellen wie [IMAPIProp::GetProps](imapiprop-getprops.md) und [IMAPITable::QueryRows zu reservieren.](imapitable-queryrows.md) Wenn der Anbieter auch die Verwendung der OLE-Speicherzuweisung erwartet, sollte er die **IUnknown::AddRef-Methode** des Zuweisungsobjekts aufrufen, auf das der  _lpMalloc-Parameter_ verweist. 
+Der Nachrichtenspeicheranbieter sollte die Funktionen verwenden, auf die  _lpAllocateBuffer,_  _lpAllocateMore_ und  _lpFreeBuffer_ für die meisten Speicherzuweisungen und -zuordnungen verweisen. Insbesondere muss der Anbieter diese Funktionen verwenden, um Arbeitsspeicher für die Verwendung durch Clientanwendungen beim Aufrufen von Objektschnittstellen wie [IMAPIProp::GetProps](imapiprop-getprops.md) und [IMAPITable::QueryRows](imapitable-queryrows.md)zuzuweisen. Wenn der Anbieter auch erwartet, dass die OLE-Speicherzuweisung verwendet wird, sollte er die **IUnknown::AddRef-Methode** des Zuweisungsobjekts aufrufen, auf das durch den  _lpMalloc-Parameter_ verwiesen wird. 
   
-Weitere Informationen zum Schreiben von **MSProviderInit** finden Sie unter [Loading Message Store Providers](loading-message-store-providers.md). Weitere Informationen zu Einstiegspunktfunktionen finden Sie unter [Implementing a Service Provider Entry Point Function](implementing-a-service-provider-entry-point-function.md). 
+Weitere Informationen zum Schreiben von **MSProviderInit** finden Sie unter [Loading Message Store Providers](loading-message-store-providers.md). Weitere Informationen zu Einstiegspunktfunktionen finden Sie unter [Implementieren einer Dienstanbieter-Einstiegspunktfunktion.](implementing-a-service-provider-entry-point-function.md) 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ITableData.HrDeleteRows
 api_type:
 - COM
 ms.assetid: 7b351eec-9624-4b38-9978-5d0b67b64687
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: fdd6f40b4d7aa7f65bf1a46d3d9a4f18472b19f7
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 48810ea68394fa21ad666dfc8464bbf12b2c8359
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33416454"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59584227"
 ---
 # <a name="itabledatahrdeleterows"></a>ITableData::HrDeleteRows
 
@@ -39,15 +39,15 @@ HRESULT HrDeleteRows(
 
  _ulFlags_
   
-> [in] Eine Bitmaske mit Flags, die den Löschvorgang steuert. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die den Löschvorgang steuert. Das folgende Kennzeichen kann festgelegt werden:
     
 TAD_ALL_ROWS 
   
-> Löscht alle Zeilen aus der Tabelle und allen entsprechenden Ansichten und sendet eine TABLE_RELOAD Benachrichtigung.
+> Löscht alle Zeilen aus der Tabelle und alle entsprechenden Ansichten und sendet eine einzelne TABLE_RELOAD Benachrichtigung.
     
  _lprowsetToDelete_
   
-> [in] Ein Zeiger auf einen Zeilensatz, der die zu löschende Zeile beschreibt. Der  _lprowsetToDelete-Parameter_ kann NULL sein, wenn TAD_ALL_ROWS im  _ulFlags-Parameter festgelegt_ ist. 
+> [in] Ein Zeiger auf einen Zeilensatz, der die zu löschenden Zeilen beschreibt. Der  _LprowsetToDelete-Parameter_ kann NULL sein, wenn das flag TAD_ALL_ROWS im  _UlFlags-Parameter_ festgelegt ist. 
     
  _cRowsDeleted_
   
@@ -59,15 +59,15 @@ S_OK
   
 > Die Tabellenzeilen wurden erfolgreich gelöscht.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die **ITableData::HrDeleteRows-Methode** sucht und entfernt die Tabellenzeilen, die die Spalten enthalten, die mit der Eigenschaft übereinstimmen, auf die das **lpProps-Mitglied** jedes **aRow-Eintrags** im Zeilensatz verweist. Zum Identifizieren jeder Zeile wird eine Indexspalte verwendet. Diese Spalte muss das gleiche Eigenschaftstag wie das Eigenschaftstag haben, das im  _ulPropTagIndexColumn-Parameter_ im Aufruf der [CreateTable-Funktion übergeben](createtable.md) wird. 
+Die **ITableData::HrDeleteRows-Methode** sucht und entfernt die Tabellenzeilen, die die Spalten enthalten, die der Eigenschaft entsprechen, auf die der **lpProps-Member** jedes **aRow-Eintrags** im Zeilensatz verweist. Eine Indexspalte wird verwendet, um jede Zeile zu identifizieren. Diese Spalte muss das gleiche Eigenschaftstag wie das Eigenschaftstag aufweisen, das im  _ulPropTagIndexColumn-Parameter_ beim Aufruf der [CreateTable-Funktion](createtable.md) übergeben wird. 
   
-Die Anzahl der Zeilen, die tatsächlich gelöscht wurden, wird in _cRowsDeleted zurückgegeben._ Es wird kein Fehler zurückgegeben, wenn eine oder mehrere Zeilen nicht gefunden wurden. 
+Die Anzahl der Zeilen, die tatsächlich gelöscht wurden, wird in  _cRowsDeleted_ zurückgegeben. Wenn eine oder mehrere Zeilen nicht gefunden werden konnten, wird kein Fehler zurückgegeben. 
   
-Nachdem die Zeilen gelöscht wurden, werden Benachrichtigungen an alle Clients oder Dienstanbieter gesendet, die über eine Ansicht der Tabelle verfügen und die die [IMAPITable::Advise-Methode](imapitable-advise.md) der Tabelle aufgerufen haben, um sich für Benachrichtigungen zu registrieren. 
+Nachdem die Zeilen gelöscht wurden, werden Benachrichtigungen an alle Clients oder Dienstanbieter gesendet, die eine Ansicht der Tabelle haben und die [IMAPITable::Advise-Methode](imapitable-advise.md) der Tabelle aufgerufen haben, um sich für Benachrichtigungen zu registrieren. 
   
-Durch das Löschen von Zeilen werden die Spalten, die vorhandenen Tabellenansichten oder anschließend geöffneten Tabellenansichten zur Verfügung stehen, nicht reduziert, auch wenn die gelöschten Zeilen die letzten sind, die Werte für eine bestimmte Spalte enthalten.
+Das Löschen von Zeilen reduziert nicht die Spalten, die für vorhandene Tabellenansichten oder anschließend geöffnete Tabellenansichten verfügbar sind, selbst wenn die gelöschten Zeilen die letzten sind, die Werte für eine bestimmte Spalte haben.
   
 ## <a name="see-also"></a>Siehe auch
 

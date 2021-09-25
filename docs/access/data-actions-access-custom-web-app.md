@@ -3,15 +3,15 @@ title: Datenaktionen (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1eb9fafe-4916-4ec5-8ea5-861abd48e5e2
 description: ''
-ms.openlocfilehash: 4011c469456c26fd121c0ed34a1b5abc92593f92
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 50d14814c9ff6e1c0e1c6786bceea7aed4d985d4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423265"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577654"
 ---
 # <a name="data-actions-access-custom-web-app"></a>Datenaktionen (benutzerdefinierte Access-Web-App)
 
@@ -22,9 +22,9 @@ ms.locfileid: "33423265"
 
 - [StopMacro-Makroaktion (benutzerdefinierte Access-Web-App)](stopmacro-macro-action-access-custom-web-app.md)
     
-- [CancelRecordChange-Makroaktion (benutzerdefinierte Access-Web-App)](cancelrecordchange-macro-action-access-custom-web-app.md)
+- [AbbrechenDatensatzänderung-Makroaktion (benutzerdefinierte Access-Web-App)](cancelrecordchange-macro-action-access-custom-web-app.md)
     
-- [DeleteRecord Data Macro Action (benutzerdefinierte Access-Web-App)](deleterecord-data-macro-action-access-custom-web-app.md)
+- [LöschenDatensatz-Datenmakroaktion (benutzerdefinierte Access-Web-App)](deleterecord-data-macro-action-access-custom-web-app.md)
     
 - [RaiseError-Makroaktion (benutzerdefinierte Access-Web-App)](raiseerror-macro-action-access-custom-web-app.md)
     

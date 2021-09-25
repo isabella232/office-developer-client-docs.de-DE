@@ -3,25 +3,25 @@ title: Verwenden der API zur MAPI-Wiederherstellung nach einem Absturz
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1a9871c2-b9bb-332e-b67e-85c50f7f685c
 description: 'Letzte �nderung: Montag, 25. Juni 2012'
-ms.openlocfilehash: a73889982e4aa72fb664a8eafd6fc8704e581e98
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 5398e11320c110e48930f60efb6dc513349d575a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346424"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59561677"
 ---
 # <a name="use-the-mapi-crash-recovery-api"></a>Verwenden der API zur MAPI-Wiederherstellung nach einem Absturz
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Dieses Thema enthält ein Codebeispiel in C++, das zeigt, wie die [MAPICrashRecovery-Funktion](mapicrashrecovery.md) aus der [UnhandledExceptionFilter-Funktion aufruft.](https://msdn.microsoft.com/library/ms681401%28VS.85%29.aspx) Die [MAPICrashRecovery-Funktion](mapicrashrecovery.md) überprüft den Status des freigegebenen Speichers für persönliche Ordner (PST) oder Offlineordnerdatei (OST). 
+Dieses Thema enthält ein Codebeispiel in C++, das zeigt, wie die [MAPICrashRecovery-Funktion](mapicrashrecovery.md) aus der [UnhandledExceptionFilter-Funktion](https://msdn.microsoft.com/library/ms681401%28VS.85%29.aspx) aufgerufen wird. Die [MAPICrashRecovery-Funktion](mapicrashrecovery.md) überprüft den Status des freigegebenen Arbeitsspeichers für die Persönliche Ordner-Datei (PST) oder die Offlineordnerdatei (OST). 
 
-Wenn sich der Arbeitsspeicher in einem konsistenten Zustand befindet, verschiebt die [MAPICrashRecovery-Funktion](mapicrashrecovery.md) die Daten auf den Datenträger und verhindert weiteren Lese- oder Schreibzugriff, bis der Prozess beendet wird. Indem Sie sicherstellen, dass sich die PSTs oder BETRIEBSSYSTEME in einem konsistenten Zustand befinden, bevor der Prozess beendet wird, können Sie verhindern, dass Microsoft Outlook 2010 oder Microsoft Outlook 2013 die folgende Fehlermeldung anzeigen und Leistungsprobleme vermeiden: 
+Wenn sich der Speicher in einem konsistenten Zustand befindet, verschiebt die [MAPICrashRecovery-Funktion](mapicrashrecovery.md) die Daten auf den Datenträger und verhindert weiteren Lese- oder Schreibzugriff, bis der Prozess beendet wird. Indem Sie sicherstellen, dass sich die PSTs oder OSTs in einem konsistenten Zustand befinden, bevor der Prozess beendet wird, können Sie verhindern, dass Microsoft Outlook 2010 oder Microsoft Outlook 2013 die folgende Fehlermeldung anzeigen und Leistungsprobleme vermeiden: 
   
-**Eine Datendatei wurde bei der letzten Verwendung nicht ordnungsgemäß geschlossen und wird auf Probleme überprüft. Die Leistung kann während der Überprüfung beeinträchtigt werden.**
+**Eine Datendatei wurde bei der letzten Verwendung nicht ordnungsgemäß geschlossen und wird auf Probleme überprüft. Die Leistung kann beeinträchtigt werden, während die Überprüfung ausgeführt wird.**
   
 ```cpp
 LONG WINAPI UnhandledExceptionFilter(__in EXCEPTION_POINTERS* pep) 

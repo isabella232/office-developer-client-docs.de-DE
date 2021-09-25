@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.HrSetOneProp
 api_type:
 - COM
 ms.assetid: 14ae3242-fddf-4199-a9a7-4ab153b31064
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 9fae06b9e9d5ef4885d798825659fa3486ec9e72
-ms.sourcegitcommit: fb521c23df785c9c3aefa5062272b2630a32e587
+ms.openlocfilehash: 50335f864001cd5698e93b1f2df50b9a6e2512c6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52589180"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59561586"
 ---
 # <a name="hrsetoneprop"></a>HrSetOneProp
 
@@ -25,7 +25,7 @@ ms.locfileid: "52589180"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Legt fest oder ändert den Wert einer einzelnen Eigenschaft auf einer Eigenschaftenschnittstelle, d. h. einer Schnittstelle, die von [IMAPIProp abgeleitet ist.](imapipropiunknown.md) 
+Legt fest oder ändert den Wert einer einzelnen Eigenschaft auf einer Eigenschaftsschnittstelle, d. h. eine Schnittstelle, die von [IMAPIProp](imapipropiunknown.md)abgeleitet ist. 
   
 |||
 |:-----|:-----|
@@ -42,21 +42,21 @@ HRESULT HrSetOneProp(
 
 ## <a name="parameters"></a>Parameter
 
- _pmp_
+ _Pmp_
   
-> [in] Zeiger auf eine [IMAPIProp-Schnittstelle,](imapipropiunknown.md) auf der der Eigenschaftswert festgelegt oder geändert werden soll. 
+> [in] Zeiger auf eine [IMAPIProp-Schnittstelle,](imapipropiunknown.md) für die der Eigenschaftswert festgelegt oder geändert werden soll. 
     
  _pprop_
   
-> [in] Zeiger auf die [SPropValue-Struktur,](spropvalue.md) die den wert definiert, der für die  _pmp-Eigenschaft festgelegt werden_ soll. 
+> [in] Zeiger auf die [SPropValue-Struktur,](spropvalue.md) die den für die  _pmp-Eigenschaft_ festzulegenden Wert definiert. 
     
 ## <a name="return-value"></a>Return value
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Im Gegensatz zur [IMAPIProp::SetProps-Methode](imapiprop-setprops.md) gibt die **HrSetOneProp-Funktion** keine Warnungen zurück. Da nur eine Eigenschaft definiert wird, ist sie einfach erfolgreich oder schlägt fehl. Zum Festlegen oder Ändern mehrerer Eigenschaften ist **SetProps** schneller. 
+Im Gegensatz zur [IMAPIProp::SetProps-Methode](imapiprop-setprops.md) gibt die **HrSetOneProp-Funktion** niemals Warnungen zurück. Da nur eine Eigenschaft festgelegt wird, ist sie entweder erfolgreich oder schlägt fehl. Zum Festlegen oder Ändern mehrerer Eigenschaften ist **SetProps** schneller. 
   
 Sie können eine einzelne Eigenschaft mit der [HrGetOneProp-Funktion](hrgetoneprop.md) abrufen. 
   

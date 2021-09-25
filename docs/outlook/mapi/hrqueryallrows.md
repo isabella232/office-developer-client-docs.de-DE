@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - HrQueryAllRows
 api_type:
 - HeaderDef
 ms.assetid: b08fadcf-cdf3-48b7-9489-d7f745266482
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 0f09304f21180d9ebc2a1e1dcc54ebadd3622804
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ea4e22a379943429476368ca09e37db5caa8e593
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33422894"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59561600"
 ---
 # <a name="hrqueryallrows"></a>HrQueryAllRows
 
@@ -46,27 +46,27 @@ HRESULT HrQueryAllRows(
 
 ## <a name="parameters"></a>Parameter
 
- _ptable_
+ _Ptable_
   
 > [in] Zeiger auf die MAPI-Tabelle, aus der Zeilen abgerufen werden. 
     
  _ptaga_
   
-> [in] Zeiger auf eine [SPropTagArray-Struktur,](sproptagarray.md) die ein Array von Eigenschaftstags enthält, die Tabellenspalten angeben. Diese Tags werden verwendet, um die spezifischen Spalten auszuwählen, die abgerufen werden sollen. Wenn der  _ptaga-Parameter_ NULL ist, **ruft HrQueryAllRows** den gesamten Spaltensatz der aktuellen Tabellenansicht ab, die im  _ptable-Parameter übergeben_ wird. 
+> [in] Zeiger auf eine [SPropTagArray-Struktur,](sproptagarray.md) die ein Array von Eigenschaftstags enthält, die Tabellenspalten angeben. Diese Tags werden verwendet, um die spezifischen Spalten auszuwählen, die abgerufen werden sollen. Wenn der  _Ptaga-Parameter_ NULL ist, ruft **HrQueryAllRows** den gesamten Spaltensatz der aktuellen Tabellenansicht ab, der im  _ptable-Parameter_ übergeben wird. 
     
- _pres_
+ _Pres_
   
-> [in] Zeiger auf eine [SRestriction-Struktur,](srestriction.md) die Abrufeinschränkungen enthält. Wenn der  _parameter pres_ NULL ist, **macht HrQueryAllRows** keine Einschränkungen. 
+> [in] Zeiger auf eine [SRestriction-Struktur,](srestriction.md) die Abrufeinschränkungen enthält. Wenn der  _Pres-Parameter_ NULL ist, macht **HrQueryAllRows** keine Einschränkungen. 
     
- _psos_
+ _Psos_
   
-> [in] Zeiger auf eine [SSortOrderSet-Struktur,](ssortorderset.md) die die Sortierreihenfolge der abzurufenden Spalten identifiziert. Wenn der  _psos-Parameter_ NULL ist, wird die Standardsortierungsreihenfolge für die Tabelle verwendet. 
+> [in] Zeiger auf eine [SSortOrderSet-Struktur,](ssortorderset.md) die die Sortierreihenfolge der abzurufenden Spalten identifiziert. Wenn der  _Psos-Parameter_ NULL ist, wird die Standardsortierreihenfolge für die Tabelle verwendet. 
     
- _krähenMax_
+ _-Max_
   
-> [in] Maximale Anzahl der abzurufende Zeilen. Wenn der Wert des  _Parameters "krähenMax"_ null ist, wird kein Grenzwert für die Anzahl der abgerufenen Zeilen festgelegt. 
+> [in] Maximale Anzahl der abzurufenden Zeilen. Wenn der Wert des  _Parameters "rowssMax"_ null ist, wird kein Grenzwert für die Anzahl der abgerufenen Zeilen festgelegt. 
     
- _pprows_
+ _Pprows_
   
 > [out] Zeiger auf einen Zeiger auf die zurückgegebene [SRowSet-Struktur,](srowset.md) die ein Array von Zeigern auf die abgerufenen Tabellenzeilen enthält. 
     
@@ -78,14 +78,14 @@ S_OK
     
 MAPI_E_TABLE_TOO_BIG 
   
-> Die Anzahl der Zeilen in der Tabelle ist größer als die für den  _Parameter "krähenMax" übergebene_ Anzahl. 
+> Die Anzahl der Zeilen in der Tabelle ist größer als die Anzahl, die für den  _Parameter "widthsMax"_ übergeben wird. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Eine Clientanwendung oder ein Dienstanbieter hat keine Kontrolle über die Anzahl der Zeilen, die **HrQueryAllRows** abzurufen versucht, es sei denn, es wird eine Einschränkung festgelegt, auf die der  _parameter pres_ verweist. Der  _parameter "krähesMax"_ begrenzt den Abruf nicht auf eine bestimmte Anzahl von Tabellenzeilen, sondern definiert eine maximale Menge an Arbeitsspeicher, die für alle abgerufenen Zeilen verfügbar ist. Der einzige Schutz vor massivem Speicherüberlauf ist das Stopgap-Feature, das durch Festlegen von _"krähenMax" bereitgestellt wird._ Der Fehlerrücklauf MAPI_E_TABLE_TOO_BIG bedeutet, dass die Tabelle zu viele Zeilen enthält, um alle gleichzeitig im Arbeitsspeicher gespeichert zu werden. 
+Eine Clientanwendung oder ein Dienstanbieter hat keine Kontrolle über die Anzahl der Zeilen, die **HrQueryAllRows** abzurufen versucht, außer durch das Aufheben einer Einschränkung, auf die der  _Parameter "pres"_ verweist. Der  _Parameter "widthsMax"_ beschränkt den Abruf nicht auf eine bestimmte Anzahl von Tabellenzeilen, sondern definiert eine maximale Speichermenge, die für alle abgerufenen Zeilen verfügbar ist. Der einzige Schutz vor massivem Speicherüberlauf ist die Stopgap-Funktion, die durch Festlegen von  _"WarteschlangenMax"_ bereitgestellt wird. The error return MAPI_E_TABLE_TOO_BIG means the table contains too many rows to be all at once in memory. 
   
-Tabellen, die in der Regel klein sind, z. B. eine Nachrichtenspeichertabelle oder eine Anbietertabelle, können in der Regel mit **HrQueryAllRows** sicher abgerufen werden. Tabellen, bei der das Risiko besteht, dass sie sehr groß sind, z. B. eine Inhaltstabelle oder sogar eine Empfängertabelle, sollten mithilfe der [IMAPITable::QueryRows-Methode](imapitable-queryrows.md) in Unterabschnitten durchlaufen werden. 
+Tabellen, die in der Regel klein sind, z. B. eine Nachrichtenspeichertabelle oder eine Anbietertabelle, können in der Regel mit **HrQueryAllRows** sicher abgerufen werden. Tabellen mit dem Risiko, sehr groß zu sein, z. B. ein Inhaltsverzeichnis oder sogar eine Empfängertabelle, sollten in Unterabschnitten mithilfe der [IMAPITable::QueryRows-Methode](imapitable-queryrows.md) durchlaufen werden. 
   
-Wenn Tabelleneigenschaften nicht definiert sind, wenn **HrQueryAllRows** aufgerufen wird, werden sie mit dem Eigenschaftentyp PT_NULL und eigenschaftsbezeichner PROP_ID_NULL 
+Wenn Tabelleneigenschaften beim Aufrufen von **HrQueryAllRows** nicht definiert sind, werden sie mit eigenschaftstyp PT_NULL und Eigenschaftenbezeichner zurückgegeben PROP_ID_NULL 
   
 

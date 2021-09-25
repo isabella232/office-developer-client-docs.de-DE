@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagAttachLongFilename
 api_type:
 - HeaderDef
 ms.assetid: 83b69e8f-0b5a-4992-b5b8-160d3bdfa22a
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 45b6b3fb0c67d854fddf3773c06cef7b36f54992
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 00d1ce393958389e757d1729c0c8c4cdc96aff81
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339326"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59560935"
 ---
 # <a name="pidtagattachlongfilename-canonical-property"></a>PidTagAttachLongFilename (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32339326"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält den langen Dateinamen und die Erweiterung einer Anlage, mit Ausnahme des Pfads. 
+Enthält den langen Dateinamen und die Erweiterung einer Anlage mit Ausnahme des Pfads. 
   
 |||
 |:-----|:-----|
@@ -34,15 +34,15 @@ Enthält den langen Dateinamen und die Erweiterung einer Anlage, mit Ausnahme de
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaften betreffen die Werte ATTACH_BY_VALUE, ATTACH_BY_REFERENCE, ATTACH_BY_REF_RESOLVE und ATTACH_BY_REF_ONLY der PR_ATTACH_METHOD ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md)) **-Eigenschaft.** Plattformen, die lange Dateinamen unterstützen, sollten beim Senden sowohl die Eigenschaften **PR_ATTACH_LONG_FILENAME** als auch **PR_ATTACH_FILENAME** (  [PidTagAttachFilename](pidtagattachfilename-canonical-property.md)) festlegen und beim Empfang PR_ATTACH_LONG_FILENAME überprüfen. 
+Diese Eigenschaften beziehen sich auf die Werte ATTACH_BY_VALUE, ATTACH_BY_REFERENCE, ATTACH_BY_REF_RESOLVE und ATTACH_BY_REF_ONLY der **PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md)) -Eigenschaft. Plattformen, die lange Dateinamen unterstützen, sollten die Eigenschaften **PR_ATTACH_LONG_FILENAME** und **PR_ATTACH_FILENAME** ([PidTagAttachFilename](pidtagattachfilename-canonical-property.md)) beim Senden festlegen und beim Empfang **zuerst PR_ATTACH_LONG_FILENAME** überprüfen. 
   
-Die Clientanwendung sollte diese Eigenschaft auf einen vorgeschlagenen langen Dateinamen festlegen, der verwendet werden soll, wenn der Hostcomputer, der eine Nachricht empfängt, lange Dateinamen unterstützt. **PR_ATTACH_LONG_FILENAME** kann als Dateiname zum Speichern der Anlage und zur Bereitstellung der Dateinamenerweiterung verwendet werden, wenn die **PR_ATTACH_EXTENSION** ([PidTagAttachExtension](pidtagattachextension-canonical-property.md)) -Eigenschaft nicht bereitgestellt wird. 
+Die Clientanwendung sollte diese Eigenschaft auf einen vorgeschlagenen langen Dateinamen festlegen, der verwendet werden soll, wenn der Hostcomputer, der eine Nachricht empfängt, lange Dateinamen unterstützt. **PR_ATTACH_LONG_FILENAME** kann als Dateiname zum Speichern der Anlage und zum Angeben der Dateinamenerweiterung verwendet werden, wenn die **PR_ATTACH_EXTENSION** ([PidTagAttachExtension](pidtagattachextension-canonical-property.md)) -Eigenschaft nicht angegeben ist. 
   
-Im Gegensatz zum von PR_ATTACH_FILENAME angegebenen Dateinamen ist dieser Name nicht auf einen Dateinamen mit acht Zeichen und eine Erweiterung mit drei Zeichen beschränkt. Stattdessen kann er bis zu 256 Zeichen lang sein, einschließlich Dateiname, Erweiterung und Trennfrist. 
+Im Gegensatz zum von **PR_ATTACH_FILENAME** bereitgestellten Dateinamen ist dieser Name nicht auf einen achtstelligen Dateinamen und eine dreistellige Erweiterung beschränkt. Stattdessen können bis zu 256 Zeichen lang sein, einschließlich Dateiname, Erweiterung und Trennzeichen. 
   
-MAPI funktioniert nur mit Dateinamen im ANSI-Zeichensatz. Clientanwendungen, die Dateinamen in einem OEM-Zeichensatz verwenden, müssen sie vor dem Aufrufen von MAPI in ANSI konvertieren. 
+MAPI funktioniert nur mit Dateinamen im ANSI-Zeichensatz. Clientanwendungen, die Dateinamen in einem OEM-Zeichensatz verwenden, müssen sie vor dem Aufrufen der MAPI in ANSI konvertieren. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -58,7 +58,7 @@ MAPI funktioniert nur mit Dateinamen im ANSI-Zeichensatz. Clientanwendungen, die
     
 [[MS-OXORMMS]](https://msdn.microsoft.com/library/a121dda4-48f3-41f8-b12f-170f533038bb%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften von mit Rechten verwalteten codierten Nachrichten an.
+> Gibt die Eigenschaften von nachrichten mit verwalteten Rechten an.
     
 [[MS-OXOUM]](https://msdn.microsoft.com/library/2a0696c5-2caf-4f20-87fb-085db430afec%28Office.15%29.aspx)
   
@@ -68,11 +68,11 @@ MAPI funktioniert nur mit Dateinamen im ANSI-Zeichensatz. Clientanwendungen, die
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mmapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -80,9 +80,9 @@ Mmapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

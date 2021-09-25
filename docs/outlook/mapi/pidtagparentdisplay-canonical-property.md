@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagParentDisplay
 api_type:
 - COM
 ms.assetid: 6a36f4fb-17c0-4271-87d4-a92895f35f23
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 7aef4c1d83672033662502ad0950b7bac9f58c52
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: e9d71c3e62148ac47b51985510ab45fd605fbdb6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429502"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59555223"
 ---
 # <a name="pidtagparentdisplay-canonical-property"></a>PidTagParentDisplay (kanonische Eigenschaft)
 
@@ -32,13 +32,13 @@ Enthält den Anzeigenamen des Ordners, in dem während einer Suche eine Nachrich
 |Zugeordnete Eigenschaften:  <br/> |PR_PARENT_DISPLAY, PR_PARENT_DISPLAY_A, PR_PARENT_DISPLAY_W  <br/> |
 |Kennung:  <br/> |0x0E05  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
-|Bereich:  <br/> |MAPI nicht durchlässig  <br/> |
+|Bereich:  <br/> |MAPI nicht datenübertragungsfähig  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaften sind in keinem Objekt enthalten. Sie können nur im Inhaltsverzeichnis eines Suchergebnisordners angezeigt werden.
+Diese Eigenschaften sind für kein Objekt vorhanden. Sie können nur im Inhaltsverzeichnis eines Suchergebnisordners angezeigt werden.
   
-Diese Eigenschaften und **PR_PARENT_ENTRYID** ([PidTagParentEntryId](pidtagparententryid-canonical-property.md)) sind nicht miteinander verknüpft. Sie gehören zu völlig unterschiedlichen Kontexten.
+Diese Eigenschaften und **PR_PARENT_ENTRYID** ([PidTagParentEntryId](pidtagparententryid-canonical-property.md)) -Eigenschaften sind nicht miteinander verknüpft. Sie gehören zu völlig anderen Kontexten.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -46,11 +46,11 @@ Diese Eigenschaften und **PR_PARENT_ENTRYID** ([PidTagParentEntryId](pidtagparen
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -58,9 +58,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

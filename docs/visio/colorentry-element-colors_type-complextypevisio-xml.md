@@ -4,19 +4,19 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3f325ad8-bbc7-28bf-9e48-1fde4fbdbdc0
-description: Enthält einen Farbtabelle-Eintrag.
-ms.openlocfilehash: f2221d8d32823e5eec4a100eaf4e8f62b914df28
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+description: Enthält einen Farbtabelleneintrag.
+ms.openlocfilehash: 147b9a6ce1f3bcf6b4db2b4efffbe3a1156f8841
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34540182"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594783"
 ---
 # <a name="colorentry-element-colors_type-complextype-visio-xml"></a>ColorEntry-Element (Colors_Type complexType) (Visio XML)
 
-Enthält einen Farbtabelle-Eintrag.
+Enthält einen Farbtabelleneintrag.
   
 ## <a name="element-information"></a>Informationen zum Element
 
@@ -36,7 +36,7 @@ Enthält einen Farbtabelle-Eintrag.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -52,7 +52,7 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|IX  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> |Der nullbasierte Index des Elements innerhalb des übergeordneten Elements.  <br/> |Werte des xsd:unsignedInt-Typs.  <br/> |
-|RGB  <br/> |xsd:string  <br/> |erforderlich  <br/> |Der Hexadezimalwert des Farbtabelleeintrags.  <br/> |Werte des xsd:string-Typs.  <br/> |
+|IX  <br/> |xsd:unsignedInt  <br/> |Erforderlich  <br/> |Der nullbasierte Index des Elements innerhalb des übergeordneten Elements.  <br/> |Werte des Typs "xsd:unsignedInt".  <br/> |
+|RGB  <br/> |xsd:string  <br/> |Erforderlich  <br/> |Der Hexadezimalwert des Farbtabelleneintrags.  <br/> |Werte des Typs "xsd:string".  <br/> |
    
 

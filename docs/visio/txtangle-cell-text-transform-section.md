@@ -6,29 +6,29 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251272
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b8482cd8-5205-40ef-b4e1-4ceb197ac80f
-description: Bestimmt den aktuellen Drehwinkel des Textblocks im Verhältnis zur x-Achse der Form. Der Standardwert ist 0 Grad.
-ms.openlocfilehash: 701a2b0ce5fccb29cc61309de1d1768a96d92c99
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Bestimmt den aktuellen Drehwinkel des Textblocks im Verhältnis zur X-Achse der Form. Der Standardwert ist 0 Grad.
+ms.openlocfilehash: 253c8358e4c1a81d62687030e7ea117f94205402
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33432170"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59569845"
 ---
 # <a name="txtangle-cell-text-transform-section"></a>Zelle "TxtAngle" (Abschnitt "Text Transform")
 
-Bestimmt den aktuellen Drehwinkel des Textblocks im Verhältnis zur  *x-Achse*  der Form. Der Standardwert ist 0 Grad. 
+Bestimmt den aktuellen Drehwinkel des Textblocks im Verhältnis zur  *X-Achse*  der Form. Der Standardwert ist 0 Grad. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Um einen Verweis auf die Zelle TxtAngle anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Um einen Verweis auf die Zelle TxtAngle anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | TxtAngle  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle TxtAngle nach Index aus einem Programm zu erhalten: 
+Um einen Verweis auf die Zelle TxtAngle anhand des Indexes aus einem Programm abzurufen, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|

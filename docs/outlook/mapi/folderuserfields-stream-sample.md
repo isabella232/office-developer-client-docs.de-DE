@@ -3,27 +3,27 @@ title: FolderUserFields-Streambeispiel
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 30e5e887-a324-4ed2-ba2a-eb4c19ba38d2
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e5251a619c70221987847830897ba349d63fd9cb
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: eed1ad0e1f64af5bf07cc0ca3c842eed10c43c47
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33433976"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59561789"
 ---
 # <a name="folderuserfields-stream-sample"></a>FolderUserFields-Streambeispiel
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-In diesem Thema wird ein Beispiel für einen FolderUserFields-Stream beschrieben. Der Datenstrom enthält eine Definition eines benutzerdefinierten Felds,  `TextField1` . Der Typ ist **Text**, und der FolderUserFields-Stream enthält sowohl FolderUserFieldsAnsi- als auch FolderUserFieldsUnicode-Teile. Weitere Informationen finden Sie unter [Folder Fields Stream Structures](folder-fields-stream-structures.md).
+In diesem Thema wird ein Beispiel für einen FolderUserFields-Datenstrom beschrieben. Der Datenstrom enthält eine Definition eines benutzerdefinierten Felds,  `TextField1` . Der Typ ist **Text,** und der FolderUserFields-Stream enthält sowohl FolderUserFieldsAnsi- als auch FolderUserFieldsUnicode-Teile. Weitere Informationen finden Sie unter [Folder Fields Stream Structures](folder-fields-stream-structures.md).
   
 ## <a name="data-dump"></a>Datenabbild
 
-Es folgt ein Datenabbild des Datenstroms, wie er in einem binären Editor angezeigt würde.
+Es folgt ein Datenabbild des Datenstroms, wie es in einem binären Editor angezeigt wird.
   
-|Stream offset|Datenbytes|ASCII-Daten|
+|Datenstromversatz|Datenbytes|ASCII-Daten|
 |:-----|:-----|:-----|
 | `0000000000` <br/> | `02 00 00 00 01 00 00 00 0A 00 54 65 78 74 46 69` <br/> | `..........TextFi` <br/> |
 | `0000000010` <br/> | `65 6C 64 31 29 03 02 00 00 00 00 00 C0 00 00 00` <br/> | `eld1).......A...` <br/> |
@@ -41,7 +41,7 @@ Es folgt ein Datenabbild des Datenstroms, wie er in einem binären Editor angeze
 | `00000000D0` <br/> | `00 00 00 00 00 00` <br/> | `......` <br/> |
    
 
-Nachfolgend finden Sie eine Analyse der Beispieldaten für den **FolderUserFields-Stream:**
+Es folgt eine Analyse der Beispieldaten für den **FolderUserFields-Stream:**
   
 - FolderUserFieldsAnsi: Offset 0x0.
     
@@ -49,7 +49,7 @@ Nachfolgend finden Sie eine Analyse der Beispieldaten für den **FolderUserField
     
   - FieldDefinitions: Offset 0x4, Array von 2 FolderFieldDefinitionA-Datenströmen.
     
-    **Erstes Arrayelement**:
+    **Erstes Arrayelement:**
     
     - FieldType: Offset 0x4, 4 Bytes: 0x00000001 (ftString).
       
@@ -57,17 +57,17 @@ Nachfolgend finden Sie eine Analyse der Beispieldaten für den **FolderUserField
       
     - FieldName: Offset 0xA, Array von 10 CHARs. ANSI-Zeichenfolgenwert: "TextField1".
       
-    - Common: Offset 0x14.
+    - Häufig: Offset-0x14.
     
-      - PropSetGuid: Offset 0x14, 16 Bytes: {00020329-0000-0000-C000-0000000000046} (PS_PUBLIC_STRINGS).
+      - PropSetGuid: Offset 0x14, 16 Bytes: {00020329-0000-0000-C000-000000000046} (PS_PUBLIC_STRINGS).
         
       - fcapm: Offset 0x24, 4 Bytes: 0x80000007 (FCAPM_CAN_EDIT| FCAPM_CAN_SORT| FCAPM_CAN_GROUP| FCAPM_CAN_EDIT_IN_ITEM).
         
-      - dwString: Offset 0x28, 4 Bytes: 0x00000000.
+      - zeichenfolge: Offset 0x28, 4 Bytes: 0x00000000.
         
-      - dwBitmap: Offset 0x2C, 4 Bytes: 0x00000000.
+      - orbitBitmap: Offset 0x2C, 4 Bytes: 0x00000000.
         
-      - dwDisplay: Offset 0x30, 4 Bytes: 0x00000000.
+      - wetterDisplay: Offset 0x30, 4 Bytes: 0x00000000.
         
       - iFmt: Offset 0x34, 4 Bytes: 0x00000000.
         
@@ -75,7 +75,7 @@ Nachfolgend finden Sie eine Analyse der Beispieldaten für den **FolderUserField
         
       - wszFormula: Offset 0x3A, Array von 0 WCHARs. Leerer Zeichenfolgenwert.
     
-    **Zweites Arrayelement**:
+    **Zweites Arrayelement:**
     
     - FieldType: Offset 0x3A, 4 Bytes: 0x00000000 (ftNone).
       
@@ -83,17 +83,17 @@ Nachfolgend finden Sie eine Analyse der Beispieldaten für den **FolderUserField
       
     - FieldName: Offset 0x40, Array von 0 CHARs. Leerer Zeichenfolgenwert.
       
-    - Common: Offset 0x40.
+    - Häufig: Offset 0x40.
     
       - PropSetGuid: Offset 0x40, 16 Bytes: {00000000-0000-0000-0000-000000000000} (GUID_NULL).
         
       - fcapm: Offset 0x50, 4 Bytes: 0x00000000 (0).
         
-      - dwString: Offset 0x54, 4 Bytes: 0x00000000.
+      - zeichenfolge: Offset 0x54, 4 Bytes: 0x00000000.
         
-      - dwBitmap: Offset 0x58, 4 Bytes: 0x00000000.
+      - orbitBitmap: Offset 0x58, 4 Bytes: 0x00000000.
         
-      - dwDisplay: Offset 0x5C, 4 Bytes: 0x00000000.
+      - wetterDisplay: Offset 0x5C, 4 Bytes: 0x00000000.
         
       - iFmt: Offset 0x60, 4 Bytes: 0x00000000.
         
@@ -107,7 +107,7 @@ Nachfolgend finden Sie eine Analyse der Beispieldaten für den **FolderUserField
     
   - FieldDefinitions: Offset 0x6A, Array von 2 FolderFieldDefinitionW-Datenströmen.
     
-    **Erstes Arrayelement**:
+    **Erstes Arrayelement:**
     
     - FieldType: Offset 0x6A, 4 Bytes: 0x00000001 (ftString).
       
@@ -115,17 +115,17 @@ Nachfolgend finden Sie eine Analyse der Beispieldaten für den **FolderUserField
       
     - FieldName: Offset 0x70, Array von 10 WCHARs. Unicode-Zeichenfolgenwert: "TextField1".
       
-    - Common: Offset 0x84.
+    - Häufig: Offset 0x84.
     
       - PropSetGuid: Offset 0x84, 16 Bytes: {00020329-0000-0000-C000-000000000046} (PS_PUBLIC_STRINGS).
         
       - fcapm: Offset 0x94, 4 Bytes: 0x80000007 (FCAPM_CAN_EDIT| FCAPM_CAN_SORT| FCAPM_CAN_GROUP| FCAPM_CAN_EDIT_IN_ITEM).
         
-      - dwString: Offset 0x98, 4 Bytes: 0x00000000.
+      - zeichenfolge: Offset 0x98, 4 Bytes: 0x00000000.
         
-      - dwBitmap: Offset 0x9C, 4 Bytes: 0x00000000.
+      - orbitBitmap: Offset 0x9C, 4 Bytes: 0x00000000.
         
-      - dwDisplay: Offset 0xA0, 4 Bytes: 0x00000000.
+      - wetterDisplay: Offset 0xA0, 4 Bytes: 0x00000000.
         
       - iFmt: Offset 0xA4, 4 Bytes: 0x00000000.
         
@@ -133,7 +133,7 @@ Nachfolgend finden Sie eine Analyse der Beispieldaten für den **FolderUserField
         
       - wszFormula: Offset 0xAA, Array von 0 WCHARs. Leerer Zeichenfolgenwert.
     
-    **Zweites Arrayelement**:
+    **Zweites Arrayelement:**
     
     - FieldType: Offset 0xAA, 4 Bytes: 0x00000000 (ftNone).
       
@@ -141,17 +141,17 @@ Nachfolgend finden Sie eine Analyse der Beispieldaten für den **FolderUserField
       
     - FieldName: Offset 0xB0, Array von 0 WCHARs. Leerer Zeichenfolgenwert.
       
-    - Common: Offset 0xB0.
+    - Häufig: Offset 0xB0.
     
       - PropSetGuid: Offset 0xB0, 16 Bytes: {00000000-0000-0000-0000-000000000000} (GUID_NULL).
         
       - fcapm: Offset 0xC0, 4 Bytes: 0x00000000 (0).
         
-      - dwString: Offset 0xC4, 4 Bytes: 0x00000000.
+      - zeichenfolge: Offset 0xC4, 4 Bytes: 0x00000000.
         
-      - dwBitmap: Offset 0xC8, 4 Bytes: 0x00000000.
+      - orbitBitmap: Offset 0xC8, 4 Bytes: 0x00000000.
         
-      - dwDisplay: Offset 0xCC, 4 Bytes: 0x00000000.
+      - wetterDisplay: Offset 0xCC, 4 Bytes: 0x00000000.
         
       - iFmt: Offset 0xD0, 4 Bytes: 0x00000000.
         
@@ -162,10 +162,10 @@ Nachfolgend finden Sie eine Analyse der Beispieldaten für den **FolderUserField
 ## <a name="see-also"></a>Siehe auch
 
 - [Outlook Elemente und Felder](outlook-items-and-fields.md)
-- [PropertyDefinition Stream Structure](propertydefinition-stream-structure.md)
-- [FieldDefinition Stream Structure](fielddefinition-stream-structure.md)
-- [SkipBlock Stream Structure](skipblock-stream-structure.md)
-- [FirstSkipBlockContent Stream Structure](firstskipblockcontent-stream-structure.md)
-- [PackedAnsiString-Streamstruktur](packedansistring-stream-structure.md)
+- [PropertyDefinition-Datenstromstruktur](propertydefinition-stream-structure.md)
+- [FieldDefinition-Datenstromstruktur](fielddefinition-stream-structure.md)
+- [SkipBlock-Streamstruktur](skipblock-stream-structure.md)
+- [FirstSkipBlockContent-Streamstruktur](firstskipblockcontent-stream-structure.md)
+- [PackedAnsiString-Datenstromstruktur](packedansistring-stream-structure.md)
 - [PackedUnicodeString-Datenstromstruktur](packedunicodestring-stream-structure.md)
 

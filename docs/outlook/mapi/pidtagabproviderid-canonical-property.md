@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagAbProviderId
 api_type:
 - HeaderDef
 ms.assetid: 23cfd1d0-8e9d-4508-93dd-a88c0ef77c51
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 820df61ec23e2dd1459582e5a7bb35ad9525e0b4
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 30569efe44960486940e0b39b44ca43d911a8b76
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33422243"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59561040"
 ---
 # <a name="pidtagabproviderid-canonical-property"></a>PidTagAbProviderId (kanonische Eigenschaft)
 
@@ -34,13 +34,13 @@ Enthält die [MAPIUID-Struktur](mapiuid.md) eines Adressbuchanbieters.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Adressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die **MAPIUID-Struktur** gibt an, welcher Adressbuchanbieter diesen bestimmten Container in der Containerhierarchie liefert. Der Wert ist für jeden Anbieter eindeutig. 
+Die **MAPIUID-Struktur** identifiziert, welcher Adressbuchanbieter diesen bestimmten Container in der Containerhierarchie bereitstellt. Der Wert ist für jeden Anbieter eindeutig. 
   
-Ein Adressbuchanbieter kann mehrere Bezeichner bereitstellen. Beispielsweise kann ein Anbieter, der zwei verschiedene Container liefert, **PR_AB_PROVIDER_ID** eindeutige Bezeichner für jeden Container veröffentlichen. 
+Ein Adressbuchanbieter kann mehrere Bezeichner bereitstellen. Beispielsweise kann ein Anbieter, der zwei verschiedene Container bereitstellt, in **PR_AB_PROVIDER_ID** eindeutigen Bezeichnern für jeden Container veröffentlichen. 
   
- **PR_AB_PROVIDER_ID** entspricht der **PR_MDB_PROVIDER** ([PidTagStoreProvider](pidtagstoreprovider-canonical-property.md)) -Eigenschaft für Nachrichtenspeicher. Clientanwendungen können **PR_AB_PROVIDER_ID** zum Suchen verwandter Zeilen in einer Adressbuchhierarchietabelle verwenden. 
+ **PR_AB_PROVIDER_ID** entspricht der **Eigenschaft PR_MDB_PROVIDER** ([PidTagStoreProvider](pidtagstoreprovider-canonical-property.md)) für Nachrichtenspeicher. Clientanwendungen können **PR_AB_PROVIDER_ID** verwenden, um verwandte Zeilen in einer Adressbuchhierarchietabelle zu suchen. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -48,11 +48,11 @@ Ein Adressbuchanbieter kann mehrere Bezeichner bereitstellen. Beispielsweise kan
 
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -60,12 +60,12 @@ Mapidefs.h
 
 [MAPIUID](mapiuid.md)
   
-[PidTagStoreProvider (kanonische Eigenschaft)](pidtagstoreprovider-canonical-property.md)
+[Kanonische PidTagStoreProvider-Eigenschaft](pidtagstoreprovider-canonical-property.md)
 
 
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -4,25 +4,25 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e823797e-dde9-6ee7-b5e4-9e57cef90b08
-description: Enthält einen beliebigen Zeichenfolgenwert, der zum Angeben zusätzlicher Informationen zu einem Shape verwendet wird.
-ms.openlocfilehash: f76300d67cd973850abc529ed5790b581e8c0ef4
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+description: Enthält einen beliebigen Zeichenfolgenwert, der zum Bereitstellen zusätzlicher Informationen zu einem Shape verwendet wird.
+ms.openlocfilehash: 5f29fc6dbc571619c0c37ab701f9b4b300cb22f5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34542464"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577934"
 ---
 # <a name="data2-element-shapesheet_type-complextype-visio-xml"></a>Data2-Element (ShapeSheet_Type complexType) (Visio XML)
 
-Enthält einen beliebigen Zeichenfolgenwert, der zum Angeben zusätzlicher Informationen zu einem Shape verwendet wird.
+Enthält einen beliebigen Zeichenfolgenwert, der zum Bereitstellen zusätzlicher Informationen zu einem Shape verwendet wird.
   
 ## <a name="element-information"></a>Informationen zum Element
 
 |||
 |:-----|:-----|
-|**Elementtyp** <br/> |[Data_Type](data_type-complextypevisio-xml.md) <br/> |
+|**Elementtyp** <br/> |[Data_type](data_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentteile** <br/> |page#.xml, master#.xml  <br/> |
@@ -36,13 +36,13 @@ Enthält einen beliebigen Zeichenfolgenwert, der zum Angeben zusätzlicher Infor
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Shape](shape-element-shapes_type-complextypevisio-xml.md) <br/> |[ShapeSheet_Type](shapesheet_type-complextypevisio-xml.md) <br/> |Enthält Elemente, die ein Shape in einem **Master-,** **Page-** oder Gruppenformelement definieren.  <br/> |
+|[Shape](shape-element-shapes_type-complextypevisio-xml.md) <br/> |[ShapeSheet_Type](shapesheet_type-complextypevisio-xml.md) <br/> |Enthält Elemente, die ein Shape in einem **Master-,** **Page-** oder Gruppen-Shape-Element definieren.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 

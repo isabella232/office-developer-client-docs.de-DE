@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagMessageStatus
 api_type:
 - HeaderDef
 ms.assetid: e479e863-a8de-4f7e-9eae-3f721cd16e9a
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: dacd759d978394a5f4ed028915ed1c717bf6efe5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 11abc17f25324b230dafc2ba1a53be78c54153b2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355720"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59555321"
 ---
 # <a name="pidtagmessagestatus-canonical-property"></a>PidTagMessageStatus (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32355720"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine 32-Bit-Bitmaske mit Flags, die den Status einer Nachricht in einer Inhaltstabelle definiert. 
+Enthält eine 32-Bit-Bitmaske mit Flags, die den Status einer Nachricht in einem Inhaltsverzeichnis definiert. 
   
 |||
 |:-----|:-----|
@@ -34,35 +34,35 @@ Enthält eine 32-Bit-Bitmaske mit Flags, die den Status einer Nachricht in einer
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeines Messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Eine Nachricht kann in einer Inhaltstabelle und in einer oder mehreren Suchergebnissen vorhanden sein, und jede Instanz der Nachricht kann einen anderen Status haben. Diese Eigenschaft sollte nicht als Eigenschaft für eine Nachricht, sondern als Spalte in einer Inhaltstabelle betrachtet werden. 
+Eine Nachricht kann in einer Inhaltstabelle und in einer oder mehreren Suchergebnissen vorhanden sein, und jede Instanz der Nachricht kann einen anderen Status aufweisen. Diese Eigenschaft sollte nicht als Eigenschaft für eine Nachricht, sondern als Spalte in einem Inhaltsverzeichnis betrachtet werden. 
   
-Eine Clientanwendung kann mindestens eines der folgenden Kennzeichen in dieser Eigenschaft festlegen: 
+Eine Clientanwendung kann eines oder mehrere der folgenden Flags in dieser Eigenschaft festlegen: 
   
 MSGSTATUS_ANSWERED 
   
-> Die Nachricht wurde beantwortet. 
+> Auf die Nachricht wurde geantwortet. 
     
 MSGSTATUS_DELMARKED 
   
-> Die Nachricht wurde für das nachfolgende Löschen markiert. 
+> Die Nachricht wurde für den nachfolgenden Löschvorgang markiert. 
     
 MSGSTATUS_DRAFT 
   
-> Die Nachricht befindet sich im Entwurfsrevisionsstatus. 
+> Die Nachricht befindet sich im Überarbeitungsstatus des Entwurfs. 
     
 MSGSTATUS_HIDDEN 
   
-> Die Nachricht soll aus den Ordneranzeigen der Empfänger unterdrückt werden. 
+> Die Nachricht soll aus dem Ordner des Empfängers unterdrückt werden. 
     
 MSGSTATUS_HIGHLIGHTED 
   
-> Die Nachricht soll in den Anzeigeordnern der Empfänger hervorgehoben werden. 
+> Die Nachricht soll in den Ordnern der Empfänger hervorgehoben werden. 
     
 MSGSTATUS_REMOTE_DELETE 
   
-> Die Nachricht wurde zum Löschen im Remotenachrichtenspeicher ohne Download auf den lokalen Client markiert. 
+> Die Nachricht wurde für den Löschvorgang im Remotenachrichtenspeicher markiert, ohne sie auf den lokalen Client herunterzuladen. 
     
 MSGSTATUS_REMOTE_DOWNLOAD 
   
@@ -72,13 +72,13 @@ MSGSTATUS_TAGGED
   
 > Die Nachricht wurde für einen clientdefinierten Zweck markiert.
     
-Die **MSGSTATUS_DELMARKED**, **MSGSTATUS_HIDDEN**, **MSGSTATUS_HIGHLIGHTED** und **MSGSTATUS_TAGGED** werden vom Client definiert. Transport- und Speicheranbieter übergeben diese Bits ohne Aktion. 
+Die Flags **MSGSTATUS_DELMARKED,** **MSGSTATUS_HIDDEN,** **MSGSTATUS_HIGHLIGHTED** und **MSGSTATUS_TAGGED** werden vom Client definiert. Transport- und Speicheranbieter übergeben diese Bits ohne Aktion. 
   
-Clients können diese Werte auf eine für ihre Anwendungen geeignete Weise interpretieren. Eine Möglichkeit, mit der viele Clients diese Eigenschaft verwenden, besteht in der Anzeige von Nachrichten, die zum Löschen mit einem repräsentativen Symbol markiert sind. 
+Clients können diese Werte auf beliebige Weise interpretieren, die für ihre Anwendungen geeignet ist. Eine Möglichkeit, wie viele Clients diese Eigenschaft verwenden, ist das Anzeigen von Nachrichten, die zum Löschen mit einem repräsentativen Symbol gekennzeichnet sind. 
   
-Ein Remote-Viewer-Client kann **MSGSTATUS_REMOTE_DELETE** oder **MSGSTATUS_REMOTE_DOWNLOAD** Nachrichten im Headerordner festlegen, der vom Remotetransportanbieter angezeigt wird. Die Clientanwendung kann jeden Nachrichtenkopf in diesem Ordner untersuchen, um zu bestimmen, ob die Nachricht im Remotenachrichtenspeicher heruntergeladen oder gelöscht werden soll. Anschließend wird die [IMAPIFolder::SetMessageStatus-Methode](imapifolder-setmessagestatus.md) verwendet, um das entsprechende Flag zu setzen. **SetMessageStatus** ist die einzige Möglichkeit zum Festlegen von Flags in dieser Eigenschaft. die [IMAPIProp::SetProps-Methode](imapiprop-setprops.md) kann nicht verwendet werden. Zum Abrufen dieser Eigenschaft rufen Clients [IMAPIFolder::GetMessageStatus](imapifolder-getmessagestatus.md) statt [IMAPIProp::GetProps auf.](imapiprop-getprops.md)
+Ein Remoteanzeigeclient kann **MSGSTATUS_REMOTE_DELETE** oder **MSGSTATUS_REMOTE_DOWNLOAD** für Nachrichten im Headerordner festlegen, die ihm vom Remote-Transportanbieter angezeigt werden. Die Clientanwendung kann jeden Nachrichtenkopf in diesem Ordner überprüfen, um festzustellen, ob die Nachricht im Remotenachrichtenspeicher heruntergeladen oder gelöscht werden soll. Anschließend wird die [IMAPIFolder::SetMessageStatus-Methode](imapifolder-setmessagestatus.md) verwendet, um das entsprechende Flag festzulegen. **SetMessageStatus** ist die einzige Möglichkeit, eines der Flags in dieser Eigenschaft festzulegen. die [IMAPIProp::SetProps-Methode](imapiprop-setprops.md) kann nicht verwendet werden. Zum Abrufen dieser Eigenschaft rufen Clients [IMAPIFolder::GetMessageStatus](imapifolder-getmessagestatus.md) anstelle von [IMAPIProp::GetProps auf.](imapiprop-getprops.md)
   
-Die Bits 16 bis 31 (0x10000 bis 0x80000000) dieser Eigenschaft stehen für die Verwendung durch die Clientanwendung für zwischenpersonelle Nachrichten (IPM) zur Verfügung. Alle anderen Bits sind für die Verwendung durch MAPI reserviert. Diejenigen, die in der vorherigen Tabelle nicht definiert sind, sollten zunächst auf Null festgelegt und anschließend nicht geändert werden. 
+Die Bits 16 bis 31 (0x10000 bis 0x80000000) dieser Eigenschaft sind für die Verwendung durch die IPM-Clientanwendung (Interpersonal Message) verfügbar. Alle anderen Bits sind für die Verwendung durch MAPI reserviert. Diejenigen, die nicht in der vorherigen Tabelle definiert sind, sollten anfänglich auf Null festgelegt und anschließend nicht geändert werden. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -86,21 +86,21 @@ Die Bits 16 bis 31 (0x10000 bis 0x80000000) dieser Eigenschaft stehen für die V
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
   
-> Behandelt die Synchronisierung von Messagingobjektdaten zwischen einem Server und einem Client.
+> Behandelt die Synchronisierung von Nachrichtenobjektdaten zwischen einem Server und einem Client.
     
 ### <a name="header-files"></a>Headerdateien
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -111,9 +111,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

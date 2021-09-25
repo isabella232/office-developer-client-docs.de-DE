@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8946703a-aaa8-6b3f-aa68-931365db620d
 description: Beginnt eine Aufgabe für die Enumeration der Termin im Kalenderordner Termine zu finden, die neuen Basisadressen benötigen.
-ms.openlocfilehash: cc89b3510f09bb98fd6720cb6d5ab3edeb13eac8
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 7dd7c8f5bec21f2c7a51632b3dab11e6e8b30580
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407270"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59576560"
 ---
 # <a name="iolkapptrebaserbeginenumerateappointments"></a>IOlkApptRebaser::BeginEnumerateAppointments
 
@@ -42,7 +42,7 @@ _ppContext_
 
 S_OK zurück, wenn der Aufruf erfolgreich war; andernfalls einen Fehlercode.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Aufgabe wird in einem neuen Thread ausgeführt.
   

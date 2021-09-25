@@ -1,37 +1,37 @@
 ---
-title: Zelle RotateGradientWithShape (Abschnitt "Gradient Properties")
+title: Zelle "RotateGradientWithShape" (Abschnitt "Gradient Properties")
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6aada005-3403-4666-9779-7ccb5b83b74a
-description: Bestimmt, ob ein Füllgradient mit einer Form in 2D-Drehung gedreht wird, als boolescher Wert.
-ms.openlocfilehash: 76a76a4a97128c81710269f75e9e17db90827377
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Bestimmt, ob ein Füllverlauf mit einer Form in 2D-Drehung als boolescher Wert gedreht wird.
+ms.openlocfilehash: ac3f5bee458a20f94539f3c2077286c6bb4b3b56
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33412219"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59570162"
 ---
-# <a name="rotategradientwithshape-cell-gradient-properties-section"></a>Zelle RotateGradientWithShape (Abschnitt "Gradient Properties")
+# <a name="rotategradientwithshape-cell-gradient-properties-section"></a>Zelle "RotateGradientWithShape" (Abschnitt "Gradient Properties")
 
-Bestimmt, ob ein Füllgradient mit einer Form in 2D-Drehung gedreht wird, als boolescher Wert.
+Bestimmt, ob ein Füllverlauf mit einer Form in 2D-Drehung als boolescher Wert gedreht wird.
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|TRUE  <br/> |Der Farbverlauf dreht sich mit der Form, wenn die Form um den Drehstift gedreht wird. Der "obere Rand" des Farbverlaufs ist parallel zum Drehziehpunkt.  <br/> |
-|FALSE  <br/> |Der Farbverlauf dreht sich nicht mit der Form, wenn die Form um den Drehstift gedreht wird. Der "obere Rand" des Farbverlaufs ist parallel zum Zeichenbereich.  <br/> |
+|TRUE  <br/> |Der Farbverlauf wird mit der Form gedreht, wenn die Form um den Drehbezugsnadel gedreht wird. Der "obere" Teil des Farbverlaufs ist parallel zum Drehpunkt.  <br/> |
+|FALSE  <br/> |Der Farbverlauf wird nicht mit der Form gedreht, wenn die Form um den Drehbezugsnadel gedreht wird. Die Oberseite des Farbverlaufs ist parallel zum Zeichenbereich.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Verwenden Sie zum Erhalten eines Verweises auf die **Zelle RotateGradientWithShape** anhand des Namens aus einer anderen Formel, nach dem Wert des **N-Attributs** eines **Cell-Elements** oder aus einem Programm mit der **CellsU-Eigenschaft:** 
+Verwenden Sie Folgendes, um einen Verweis auf die Zelle **"RotateGradientWithShape"** anhand des Namens aus einer anderen Formel, anhand des Werts des **N-Attributs** eines **Cell-Elements** oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | RotateGradientWithShape  <br/> |
    
-Um einen Verweis auf die **RotateGradientWithShape-Zelle** nach Index aus einem Programm zu erhalten, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle **"RotateGradientWithShape"** anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

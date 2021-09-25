@@ -5,20 +5,20 @@ ms.date: 08/18/2017
 ms.audience: Developer
 ms.assetid: f7d15fe6-bdad-4f1f-aa18-12a21fc111c4
 description: Informationen zum Steuern der Anzeige eines Datums oder einer Uhrzeit durch eine benutzerdefinierte Formatierung.
-localization_priority: Priority
-ms.openlocfilehash: 76ba7361be4f7902a3ee4a1a8d6e51211ad114bd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 2428bfa165e7d83f1792ec5ce4a53a97dec1de13
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32282208"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577675"
 ---
 # <a name="custom-date-and-time-formats-for-the-format-function-access-custom-web-app"></a>Benutzerdefinierte Datums- und Uhrzeitformate für die Format-Funktion (benutzerdefinierte Access-Web-App)
 
 Informationen zum Steuern der Anzeige eines Datums oder einer Uhrzeit durch eine benutzerdefinierte Formatierung.
   
 > [!IMPORTANT]
-> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/de-DE/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 ## <a name="format-specifications"></a>Formatspezifikationen
 

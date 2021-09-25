@@ -3,15 +3,15 @@ title: Count-Funktion (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d931535b-428f-4300-93bf-cfe0ebcc2ac9
 description: Gibt die Anzahl der Datensätze in einer Abfrage oder Tabelle zurück.
-ms.openlocfilehash: 98dbed393bf2f6dc401119f6c5dc7ab6b5ff7864
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 5eb0bb9f97184a5250b19d5c291d97a029005ab1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33419142"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577682"
 ---
 # <a name="count-function-access-custom-web-app"></a>Count-Funktion (benutzerdefinierte Access-Web-App)
 
@@ -22,18 +22,18 @@ Gibt die Anzahl der Datensätze in einer Abfrage oder Tabelle zurück.
   
 ## <a name="syntax"></a>Syntax
 
-**Count** (*Expression*) 
+**Count** (*Ausdruck*) 
   
 Die **Count-Funktion** enthält das folgende Argument. 
   
 |**Argumentname**|**Beschreibung**|
 |:-----|:-----|
-| *Ausdruck*  <br/> |Ein Zeichenfolgenausdruck, der das Feld identifiziert, das die daten enthält, die Sie zählen möchten, oder ein Ausdruck, der eine Berechnung mit den Daten im Feld ausführt. Operanden in *Expression* können den Namen eines Tabellenfelds oder einer -funktion enthalten (die entweder systeminterne oder benutzerdefinierte, aber keine anderen SQL sein können). Sie können beliebige Daten, einschließlich Text, zählen.  <br/> |
+| *Ausdruck*  <br/> |Ein Zeichenfolgenausdruck, der das Feld identifiziert, das die zu zählenden Daten enthält, oder ein Ausdruck, der eine Berechnung mithilfe der Daten im Feld durchführt. Operanden in *Ausdruck* können den Namen eines Tabellenfelds oder einer Tabellenfunktion enthalten (die entweder systeminterne oder benutzerdefinierte, aber keine anderen SQL Aggregatfunktionen sein können). Sie können beliebige Daten, einschließlich Text, zählen.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Mithilfe der Count-Funktion kann die Anzahl von Datensätzen in einer zugrunde liegenden Abfrage gezählt werden. Sie können beispielsweise Count verwenden, um die Anzahl der Bestellungen zu zählen, die in ein bestimmtes Land oder eine bestimmte Region versandt wurden.
   
-**Count** ( \* ) gibt die Anzahl der Elemente in einer Gruppe zurück. Dies umfasst NULL-Werte und Duplikate. 
+**Count** ( \* ) gibt die Anzahl der Elemente in einer Gruppe zurück. Dies schließt NULL-Werte und Duplikate ein. 
   
 

@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IXPProvider.Shutdown
 api_type:
 - COM
 ms.assetid: e2d8a025-c2a3-4edb-b6e4-022e07e854dd
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: a57a72b413ba412154a27a08244e86b117cbea7d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 54e587ef23c9b121d4b9dc57bd68ebdad5ec38f3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33409692"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59584199"
 ---
 # <a name="ixpprovidershutdown"></a>IXPProvider::Shutdown
 
@@ -25,7 +25,7 @@ ms.locfileid: "33409692"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Schließt einen Transportanbieter in geordneter Weise.
+Schließt einen Transportanbieter in geordneter Reihenfolge.
   
 ```cpp
 HRESULT Shutdown (
@@ -43,11 +43,11 @@ HRESULT Shutdown (
 
 S_OK 
   
-> Durch den Aufruf konnte der Transportanbieter beendet werden.
+> Der Aufruf konnte den Transportanbieter herunterfahren.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Der MAPI-Spooler ruft die **IXPProvider::Shutdown-Methode** kurz vor der Veröffentlichung eines Transportanbieterobjekts auf. Vor dem **Aufrufen von Shutdown** gibt MAPI alle Anmeldeobjekte für einen Anbieter frei.
+Der MAPI-Spooler ruft die **IXPProvider::Shutdown-Methode** direkt vor der Freigabe eines Transportanbieterobjekts auf. Vor dem Aufrufen **des Herunterfahrens** gibt MAPI alle Anmeldeobjekte für einen Anbieter frei.
   
 ## <a name="see-also"></a>Siehe auch
 

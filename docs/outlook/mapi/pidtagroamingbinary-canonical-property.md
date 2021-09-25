@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f06bf063-fc95-46f9-b5fa-3f127a59ebda
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ead7c9c33c92240ba5e458b68635b766caaa9760
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 3e948b4085e002832df9657d61c87962af9b9fdb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359563"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59555153"
 ---
 # <a name="pidtagroamingbinary-canonical-property"></a>PidTagRoamingBinary (kanonische Eigenschaft)
 
@@ -21,7 +21,7 @@ ms.locfileid: "32359563"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält einen Nachrichtendatenstrom, der einer Unterklasse derIPM.Config **uration-Klasse zugeordnet** ist. 
+Enthält einen Nachrichtendatenstrom, der einer Unterklasse des IPM zugeordnet **ist. Konfigurationsklasse.** 
   
 |||
 |:-----|:-----|
@@ -30,9 +30,9 @@ Enthält einen Nachrichtendatenstrom, der einer Unterklasse derIPM.Config **urat
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Konfiguration  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft enthält den Datenstrom, der einer **IPM.Config-Nachricht zugeordnet** ist. Das Format des Datenstroms hängt von der Nachrichtenklasse ab. Beispielsweise wird eine Nachricht vom Klassentyp **IPM.Configuration. AutoComplete** würde als [AutoComplete Stream formatiert.](autocomplete-stream.md)
+Diese Eigenschaft enthält den Datenstrom, der einem IPM zugeordnet **ist. Nachricht** der Konfigurationsnachrichtenklasse. Das Format des Datenstroms hängt von der Nachrichtenklasse ab. Beispielsweise eine Nachricht vom Klassentyp **IPM. Configuration.AutoComplete** wäre als Stream für [automatisches Vervollständigen](autocomplete-stream.md)formatiert.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -40,7 +40,7 @@ Diese Eigenschaft enthält den Datenstrom, der einer **IPM.Config-Nachricht zuge
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Microsoft Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Microsoft Exchange Server Protokollspezifikationen.
     
 [[MS-OXOCFG]](https://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx)
   
@@ -50,11 +50,11 @@ Diese Eigenschaft enthält den Datenstrom, der einer **IPM.Config-Nachricht zuge
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -62,9 +62,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

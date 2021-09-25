@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8b51675f-77b7-4df0-8496-b1e8958c6544
-description: Gibt ein Array von Bytes zurück, das das Symbol für das soziale Netzwerk darstellt.
-ms.openlocfilehash: c63d9996d4478c8ce7e46210aae34791bcfe9222
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Gibt ein Bytearray zurück, das das Symbol für das soziale Netzwerk darstellt.
+ms.openlocfilehash: f5c2b2744364f159545d72e8a2525562acc90d06
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33438687"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594923"
 ---
 # <a name="isocialprovidersocialnetworkicon"></a>ISocialProvider::SocialNetworkIcon
 
-Gibt ein Array von Bytes zurück, das das Symbol für das soziale Netzwerk darstellt. 
+Gibt ein Bytearray zurück, das das Symbol für das soziale Netzwerk darstellt. 
   
 ```cpp
 [propget] HRESULT _stdcall SocialNetworkIcon([out, retval] SAFEARRAY(unsigned char)* networkIcon);
@@ -27,9 +27,9 @@ Gibt ein Array von Bytes zurück, das das Symbol für das soziale Netzwerk darst
 
 Ein Zeiger auf eine Struktur, die ein Bytearray angibt, das das Symbol für das soziale Netzwerk enthält.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die unterstützten Bildressourcen .bmp, JPEG und .png Formaten.
+Die unterstützten Bildressourcen sind .bmp-, JPEG- und .png formate.
   
 ## <a name="see-also"></a>Siehe auch
 

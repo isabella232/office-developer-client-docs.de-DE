@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagMiniIcon
 api_type:
 - HeaderDef
 ms.assetid: a436b590-63f3-413c-a9c2-7664567e0ff0
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ea7f9e0ed57c56b48399b9ffd1ea42db28daf249
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 96d477576f0d5fc8f94ec9e8d7e3f2fd3879aad1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33405415"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59595196"
 ---
 # <a name="pidtagminiicon-canonical-property"></a>PidTagMiniIcon (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "33405415"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine Bitmap eines Halbformatsymbols für ein Formular.
+Enthält eine Bitmap mit einem Symbol in halber Größe für ein Formular.
   
 |||
 |:-----|:-----|
@@ -34,11 +34,11 @@ Enthält eine Bitmap eines Halbformatsymbols für ein Formular.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Allgemeines Messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft enthält ein 32-× 32-Pixel-Bild eines Symbols, das mit dem Inhalt eines identisch ist. ICO-Datei, aber nur die obere linke 16 × 16 Pixel werden als signifikant betrachtet. Diese Eigenschaft wird normalerweise aus der kopiert. ICO-Datei, die in der SmallIcon-Zeile des entsprechenden Abschnitts [Beschreibung] der Formularkonfigurationsdatei angegeben ist.
+Diese Eigenschaft enthält ein Bild mit 32 × 32 Pixeln eines Symbols, das dem Inhalt eines Symbols entspricht. ICO-Datei, aber nur die obere linke 16 × 16 Pixel werden als signifikant betrachtet. Diese Eigenschaft wird normalerweise aus der kopiert. ICO-Datei, die in der SmallIcon-Zeile des entsprechenden [Description]-Abschnitts der Formularkonfigurationsdatei angegeben ist.
   
- **Hinweis** Einige Plattformen unterstützen keine Symbole mit 16 × 16 Pixeln. Das 32-× 32-Format dieser Eigenschaft ist in einem solchen Fall verwendbar, clientanwendungen sollten jedoch Anzeigeinkonsistenzen beachten. 
+ **Hinweis** Einige Plattformen unterstützen keine Symbole mit 16 × 16 Pixeln. Das Format 32 × 32 dieser Eigenschaft kann in einem solchen Fall verwendet werden, aber Clientanwendungen sollten Anzeigeinkonsistenzen beachten. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -46,24 +46,24 @@ Diese Eigenschaft enthält ein 32-× 32-Pixel-Bild eines Symbols, das mit dem In
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[PidTagIcon (kanonische Eigenschaft)](pidtagicon-canonical-property.md)
+[Kanonische PidTagIcon-Eigenschaft](pidtagicon-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

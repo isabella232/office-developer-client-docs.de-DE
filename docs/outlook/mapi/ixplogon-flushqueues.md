@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IXPLogon.FlushQueues
 api_type:
 - COM
 ms.assetid: c1f630c6-9e95-49c0-9757-4685c98184dc
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: fb26c7f366ce6a262362001773e825c60d0e4ec3
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 7fde61429307c2adf209b87b325deef69f098c35
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33421970"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59584213"
 ---
 # <a name="ixplogonflushqueues"></a>IXPLogon::FlushQueues
 
@@ -25,7 +25,7 @@ ms.locfileid: "33421970"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Fordert an, dass der Transportanbieter sofort alle ausstehenden eingehenden oder ausgehenden Nachrichten zuliefert.
+Fordert an, dass der Transportanbieter alle ausstehenden eingehenden oder ausgehenden Nachrichten sofort übermittelt.
   
 ```cpp
 HRESULT FlushQueues(
@@ -40,7 +40,7 @@ HRESULT FlushQueues(
 
  _ulUIParam_
   
-> [in] Ein Handle zum übergeordneten Fenster aller Dialogfelder oder Fenster, die von dieser Methode angezeigt werden.
+> [in] Ein Handle für das übergeordnete Fenster aller Dialogfelder oder Fenster, die von dieser Methode angezeigt werden.
     
  _cbTargetTransport_
   
@@ -52,15 +52,15 @@ HRESULT FlushQueues(
     
  _ulFlags_
   
-> [in] Eine Bitmaske mit Flags, die steuert, wie die Nachrichtenwarteschlange geleert wird. Die folgenden Kennzeichen können festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie das Leeren der Nachrichtenwarteschlange erfolgt. Die folgenden Flags können festgelegt werden:
     
 FLUSH_DOWNLOAD 
   
-> Die Eingehende Nachrichtenwarteschlange oder Warteschlangen sollten geleert werden.
+> Die Warteschlange für eingehende Nachrichten oder Warteschlangen sollte geleert werden.
     
 FLUSH_FORCE 
   
-> Der Transportanbieter sollte diese Anforderung nach Möglichkeit verarbeiten, auch wenn dies zeitaufwändig ist. 
+> Der Transportanbieter sollte diese Anforderung nach Möglichkeit auch dann verarbeiten, wenn dies zeitaufwändig ist. 
     
 FLUSH_NO_UI 
   
@@ -76,11 +76,11 @@ S_OK
   
 > Der Aufruf war erfolgreich und hat den erwarteten Wert oder die erwarteten Werte zurückgegeben.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Der MAPI-Spooler ruft die **IXPLogon::FlushQueues-Methode** auf, um den Transportanbieter zu informieren, dass der MAPI-Spooler mit der Verarbeitung von Nachrichten beginnt. Der Transportanbieter sollte die [IMAPISupport::ModifyStatusRow-Methode](imapisupport-modifystatusrow.md) aufrufen, um ein geeignetes Bit für den Status in der **PR_STATUS_CODE** ([PidTagStatusCode](pidtagstatuscode-canonical-property.md))-Eigenschaft der Statuszeile festlegen. Nach dem Aktualisieren der Statuszeile sollte der Transportanbieter S_OK **FlushQueues-Aufruf zurückgeben.** Der MAPI-Spooler beginnt dann mit dem Senden von Nachrichten, und der Vorgang ist synchron mit dem MAPI-Spooler. 
+Der MAPI-Spooler ruft die **IXPLogon::FlushQueues-Methode** auf, um dem Transportanbieter zu empfehlen, dass der MAPI-Spooler mit der Verarbeitung von Nachrichten beginnen soll. Der Transportanbieter sollte die [IMAPISupport::ModifyStatusRow-Methode aufrufen,](imapisupport-modifystatusrow.md) um ein geeignetes Bit für seinen Status in der **PR_STATUS_CODE** ([PidTagStatusCode](pidtagstatuscode-canonical-property.md)) -Eigenschaft der Statuszeile festzulegen. Nach dem Aktualisieren der Statuszeile sollte der Transportanbieter S_OK für den **FlushQueues-Aufruf** zurückgeben. Der MAPI-Spooler beginnt dann mit dem Senden von Nachrichten, wobei der Vorgang synchron mit dem MAPI-Spooler ist. 
   
-Zur Unterstützung der Implementierung der [IMAPIStatus::FlushQueues-Methode](imapistatus-flushqueues.md) ruft der MAPI-Spooler **IXPLogon::FlushQueues** für alle Anmeldeobjekte für aktive Transportanbieter auf, die in einer Profilsitzung ausgeführt werden. Wenn die **FlushQueues-Methode** eines Transportanbieters als Ergebnis eines Clientanwendungsaufrufs von **IMAPIStatus::FlushQueues** aufgerufen wird, erfolgt die Nachrichtenverarbeitung asynchron für den Client.
+Zur Unterstützung der Implementierung der [IMAPIStatus::FlushQueues-Methode](imapistatus-flushqueues.md) ruft der MAPI-Spooler **IXPLogon::FlushQueues** für alle Anmeldeobjekte für aktive Transportanbieter auf, die in einer Profilsitzung ausgeführt werden. Wenn die **FlushQueues-Methode** eines Transportanbieters als Ergebnis eines Clientanwendungsaufrufs an **IMAPIStatus::FlushQueues** aufgerufen wird, erfolgt die Nachrichtenverarbeitung asynchron für den Client.
   
 ## <a name="see-also"></a>Siehe auch
 

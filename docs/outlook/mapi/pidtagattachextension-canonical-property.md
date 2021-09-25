@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagAttachExtension
 api_type:
 - HeaderDef
 ms.assetid: 667da30b-e11c-4040-aecf-bb35eed23722
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 26efa868de29bc8a6a180b717230951b76da26a3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: a0a3138bb1c61a4b5aa932f5da862314b42ffb4e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32319761"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59560949"
 ---
 # <a name="pidtagattachextension-canonical-property"></a>PidTagAttachExtension (kanonische Eigenschaft)
 
@@ -34,11 +34,11 @@ Enthält eine Dateinamenerweiterung, die den Dokumenttyp einer Anlage angibt.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften werden von der Clientanwendung zur Übermittlungszeit festgelegt. 
   
-Das Messagingsystem **verwendet** PR_ATTACH_EXTENSION beim Konvertieren von Nachrichtenanlagen (In-Route-Konvertierung) oder beim Starten von Anwendungen basierend auf Anlagen in empfangenen Nachrichten. Wenn der sendende Client keinen Wert für diese Eigenschaften zur Verfügung stellt, ist der Nachrichtenspeicher, der die Anlage verwendet, nicht verpflichtet, ihn zu generieren. Der empfangende Client sollte zuerst nach **PR_ATTACH_EXTENSION** suchen, und wenn er nicht bereitgestellt wird, sollte die Dateinamenerweiterung aus der **PR_ATTACH_FILENAME** ([PidTagAttachFilename](pidtagattachfilename-canonical-property.md)) oder **PR_ATTACH_LONG_FILENAME** ([PidTagAttachLongFilename](pidtagattachlongfilename-canonical-property.md))-Eigenschaft der Anlage analysiert werden. 
+Das Messagingsystem verwendet **PR_ATTACH_EXTENSION** beim Konvertieren von Nachrichtenanlagen (In-Route-Konvertierung) oder beim Starten von Anwendungen basierend auf Anlagen in empfangenen Nachrichten. Wenn der sendende Client keinen Wert für diese Eigenschaften bereitstellt, ist der Nachrichtenspeicher, der die Anlage verarbeitet, nicht verpflichtet, sie zu generieren. Der empfangende Client sollte zuerst **nach PR_ATTACH_EXTENSION** suchen und, wenn er nicht angegeben wird, die Dateinamenerweiterung aus der **PR_ATTACH_FILENAME** ([PidTagAttachFilename](pidtagattachfilename-canonical-property.md)) oder **PR_ATTACH_LONG_FILENAME** ([PidTagAttachLongFilename](pidtagattachlongfilename-canonical-property.md)) -Eigenschaft analysieren. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -52,11 +52,11 @@ Das Messagingsystem **verwendet** PR_ATTACH_EXTENSION beim Konvertieren von Nach
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -64,9 +64,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

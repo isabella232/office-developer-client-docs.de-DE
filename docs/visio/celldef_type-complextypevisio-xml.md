@@ -4,14 +4,14 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 87ea346d-1786-dc87-073d-8e7459b7fef1
-ms.openlocfilehash: 7b437e35aadfef0390908cb1337cc738668382e5
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 2428ceeb09ccc137b4b7aa69f3d2e6a4b2d3caf8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34542296"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594804"
 ---
 # <a name="celldef_type-complextype-visio-xml"></a>CellDef_Type complexType (Visio XML)
 
@@ -21,7 +21,7 @@ ms.locfileid: "34542296"
 |:-----|:-----|
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
 |**Schemadatei** <br/> |VisioSchema15-2012-06-05.xsd  <br/> |
-|**Erweiterungsbasis** <br/> |Keine  <br/> |
+|**Erweiterungsbasis** <br/> |Keines  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -50,7 +50,7 @@ ms.locfileid: "34542296"
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -60,10 +60,10 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|F  <br/> |xsd:string  <br/> |Optional  <br/> ||Werte des xsd:string-Typs.  <br/> |
-|IX  <br/> |xsd:unsignedByte  <br/> |Optional  <br/> ||Werte des xsd:unsignedByte-Typs.  <br/> |
-|N  <br/> |xsd:string  <br/> |erforderlich  <br/> ||Werte des xsd:string-Typs.  <br/> |
-|S  <br/> |xsd:unsignedByte  <br/> |Optional  <br/> ||Werte des xsd:unsignedByte-Typs.  <br/> |
-|T  <br/> |xsd:token  <br/> |erforderlich  <br/> ||Werte des xsd:token-Typs.  <br/> |
+|F  <br/> |xsd:string  <br/> |Optional  <br/> ||Werte des Typs "xsd:string".  <br/> |
+|IX  <br/> |xsd:unsignedByte  <br/> |Optional  <br/> ||Werte des Typs "xsd:unsignedByte".  <br/> |
+|N  <br/> |xsd:string  <br/> |erforderlich  <br/> ||Werte des Typs "xsd:string".  <br/> |
+|S  <br/> |xsd:unsignedByte  <br/> |Optional  <br/> ||Werte des Typs "xsd:unsignedByte".  <br/> |
+|T  <br/> |xsd:token  <br/> |erforderlich  <br/> ||Werte des Typs "xsd:token".  <br/> |
    
 

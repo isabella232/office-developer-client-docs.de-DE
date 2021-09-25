@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.HrDispatchNotifications
 api_type:
 - COM
 ms.assetid: 42ec4266-67b9-416e-8b9b-163c95011626
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f4af3f2fd094942c48e02849c60f3e46acb1a5f7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: c528826d8a05b6a608c0a9e50d882baf8956e682
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348097"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59561656"
 ---
 # <a name="hrdispatchnotifications"></a>HrDispatchNotifications
 
@@ -25,7 +25,7 @@ ms.locfileid: "32348097"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erzwingt die Versendung aller Benachrichtigungen in der Warteschlange. 
+Erzwingt die Verteilung aller Benachrichtigungen in der Warteschlange. 
   
 |||
 |:-----|:-----|
@@ -59,12 +59,12 @@ MAPI_E_NOT_INITIALIZED
   
 > MAPI wurde nicht initialisiert.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die **HrDispatchNotifications-Funktion** bewirkt, dass MAPI alle Benachrichtigungen versendet, die derzeit im MAPI-Benachrichtigungsmodul in der Warteschlange stehen, ohne auf einen Nachrichtenversand zu warten. Dies kann sich positiv auf die Arbeitsspeicherauslastung aus wirken. Weitere Informationen finden Sie unter [Erzwingen einer Benachrichtigung](forcing-a-notification.md). 
+Die **HrDispatchNotifications-Funktion** bewirkt, dass die MAPI alle Benachrichtigungen verteilt, die derzeit im MAPI-Benachrichtigungsmodul in die Warteschlange eingereiht sind, ohne auf einen Nachrichtenversand zu warten. Dies kann sich positiv auf die Speicherauslastung auswirken. Weitere Informationen finden Sie unter [Erzwingen einer Benachrichtigung.](forcing-a-notification.md) 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
-Einige Anwendungen warten mit den Funktionen [PeekMessage](https://msdn.microsoft.com/library/ms644943.aspx) und [DispatchMessage](https://msdn.microsoft.com/library/ms644934.aspx) in einer Timeoutschleife auf eine Windows Benachrichtigung. Auf allen bis auf die schnellsten Plattformen kann es zu Leistungsausfällen oder sogar Zusperren von Benachrichtigungen für solche Anwendungen führen. Die **Verwendung von HrDispatchNotifications** reduziert nicht nur Code, sondern verbessert auch die Leistung. 
+Einige Anwendungen warten mithilfe der Funktionen Windows [PeekMessage](https://msdn.microsoft.com/library/ms644943.aspx) und [DispatchMessage](https://msdn.microsoft.com/library/ms644934.aspx) auf eine Benachrichtigung in einer Timeoutschleife. Auf allen Plattformen außer den schnellsten Plattformen können solche Anwendungen eine schlechte Leistung oder sogar Benachrichtigungen blockieren. Die Verwendung von **HrDispatchNotifications** reduziert nicht nur Code, sondern verbessert auch die Leistung. 
   
 

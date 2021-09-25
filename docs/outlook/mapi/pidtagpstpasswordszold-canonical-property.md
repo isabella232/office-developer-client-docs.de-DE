@@ -5,17 +5,17 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: eca2ba85-27bf-445b-8f87-b56ae879a72f
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 20f2c25a75f6d3e4db0bc1550b2d44cc6f914407
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 567d90975ba67e6d3b488d4934a4a478ca8698b2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439933"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59595056"
 ---
 # <a name="pidtagpstpasswordszold-canonical-property"></a>PidTagPstPasswordSzOld (kanonische Eigenschaft)
 
@@ -23,14 +23,14 @@ ms.locfileid: "33439933"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält das Kennwort der persönlichen Speichertabelle (PST-Datei), die konfiguriert wird.
+Enthält das Kennwort der zu konfigurierenden persönlichen Speichertabelle (PST-Datei).
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_PST_PW_SZ_OLD, PR_PST_PW_SZ_OLD_A, PR_PST_PW_SZ_OLD_W  <br/> |
 |Kennung:  <br/> |0x6703  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
-|Bereich:  <br/> |Interne Persönliche Speichertabelle (PST)  <br/> |
+|Bereich:  <br/> |Persönliche Speichertabelle (PST) intern  <br/> |
    
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -38,17 +38,17 @@ Enthält das Kennwort der persönlichen Speichertabelle (PST-Datei), die konfigu
 
 [[MS-OXPROPS]] 
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 ### <a name="header-files"></a>Headerdateien
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

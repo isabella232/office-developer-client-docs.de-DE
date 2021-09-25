@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 065d78bf-4c9c-48dd-b1f1-b4e59f3f1243
-description: 'Letzte Änderung: 21. Februar 2012'
-ms.openlocfilehash: 1f137aba40703fe84e5753ee6e370262f780f0a3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: 'Last modified: February 21, 2012'
+ms.openlocfilehash: a5f0d0d3e209ec1bb1b87b822badcb581a540a35
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32338241"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583968"
 ---
 # <a name="mnls_multibytetowidechar"></a>MNLS_MultiByteToWideChar
 
@@ -21,7 +21,7 @@ ms.locfileid: "32338241"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ähnlich wie **MultiByteToWideChar**, das eine Zeichenzeichenfolge einer UTF-16-Zeichenfolge (breite Zeichen) zu ordnet. Die Zeichenzeichenfolge ist nicht unbedingt aus einem Mehrbyte-Zeichensatz.
+Ähnlich wie **MultiByteToWideChar**, das eine Zeichenzeichenfolge einer UTF-16-Zeichenfolge (Breitzeichen) zuweist. Die Zeichenfolge stammt nicht unbedingt aus einem Mehrbyte-Zeichensatz.
   
 ```cpp
 int MNLS_MultiByteToWideChar(
@@ -37,19 +37,19 @@ int MNLS_MultiByteToWideChar(
 
  _uCodePage_
   
-> [in] Codeseite, die beim Ausführen der Konvertierung verwendet werden soll.
+> [in] Codepage, die beim Ausführen der Konvertierung verwendet werden soll.
     
- _dwFlags_
+ _Dwflags_
   
-> [in] Flags, die den Konvertierungstyp angeben.
+> [in] Kennzeichen, die den Konvertierungstyp angeben.
     
  _lpMultiByteStr_
   
-> [in] Zeiger auf die zu konvertierende Zeichenzeichenfolge.
+> [in] Zeiger auf die zu konvertierende Zeichenfolge.
     
  _cchMultiByte_
   
-> [in] Größe der vom  _lpMultiByteStr-Parameter_ angegebenen Zeichenfolge in Bytes. 
+> [in] Größe der durch den Parameter  _lpMultiByteStr_ angegebenen Zeichenfolge in Bytes. 
     
  _lpWideCharStr_
   
@@ -57,13 +57,13 @@ int MNLS_MultiByteToWideChar(
     
  _cchWideChar_
   
-> [in] Größe (in Zeichen) des Puffers, der durch _lpWideCharStr angegeben wird._
+> [in] Größe (in Zeichen) des Puffers, der durch  _lpWideCharStr_ angegeben wird.
     
 ## <a name="return-value"></a>Rückgabewert
 
-Gibt die Anzahl der Zeichen zurück, die in den puffer geschrieben werden, der von  _lpWideCharStr_ angegeben wird, wenn dies erfolgreich ist. 
+Gibt die Anzahl der Zeichen zurück, die in den Puffer geschrieben wurden, der bei erfolgreicher Ausführung durch  _lpWideCharStr_ angegeben wird. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Funktion umschließt die **MultiByteToWideChar-Funktion.** Weitere Informationen finden Sie unter [MultiByteToWideChar](https://msdn.microsoft.com/library/dd319072%28VS.85%29.aspx).
   

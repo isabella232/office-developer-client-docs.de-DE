@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251319
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4345b3e5-f522-e300-307c-4f8992a3ddce
 description: Aktiviert bzw. deaktiviert die Anzeige der Steuerpunkte für das ausgewählte Shape.
-ms.openlocfilehash: cbe4d6a8b6fdd4b66acf064884d20999ff7e3b4f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f4817fffd602bf55bbc9c1a8fc29cdeee7213340
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33416125"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59577836"
 ---
 # <a name="noctlhandles-cell-miscellaneous-section"></a>Zelle "NoCtlHandles" (Abschnitt "Miscellaneous")
 
@@ -25,15 +25,15 @@ Aktiviert bzw. deaktiviert die Anzeige der Steuerpunkte für das ausgewählte Sh
 | TRUE  <br/> | Steuerpunkte werden nicht angezeigt, wenn ein Shape ausgewählt wird.  <br/> |
 | FALSE  <br/> | Steuerpunkte werden angezeigt, wenn ein Shape ausgewählt wird.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Um einen Verweis auf die Zelle NoCtlHandles anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Um einen Verweis auf die Zelle "NoCtlHandles" anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | NoCtlHandles  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die NoCtlHandles-Zelle nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle NoCtlHandles anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

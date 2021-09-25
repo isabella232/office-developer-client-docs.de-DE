@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IABProvider.Shutdown
 api_type:
 - COM
 ms.assetid: 1fbe6dc1-254b-4557-92c8-9fa42a8efd64
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 8b2190f77c7575d3d4f5e25fa0863bec844158bc
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ba11186c21562b14ff61d7128d9cf70028bb2201
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33409783"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59584479"
 ---
 # <a name="iabprovidershutdown"></a>IABProvider::Shutdown
 
@@ -25,7 +25,7 @@ ms.locfileid: "33409783"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Bricht eine Verbindung zu einer aktiven Sitzung ab.
+Bricht eine Verbindung mit einer aktiven Sitzung ab.
   
 ```cpp
 HRESULT Shutdown(
@@ -47,7 +47,7 @@ S_OK
     
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Führen Sie bei der Implementierung der **Shutdown-Methode** alle aufgaben aus, die Sie für erforderlich halten. MAPI ruft Ihre **Shutdown-Methode** erst auf, nachdem Sie alle Anmeldeobjekte freigegeben haben. 
+Führen Sie bei der Implementierung der **Shutdown-Methode** die von Ihnen für erforderlich erachteten Aufgaben aus. MAPI ruft die **Shutdown-Methode** erst auf, nachdem Sie alle Anmeldeobjekte freigegeben haben. 
   
 ## <a name="see-also"></a>Siehe auch
 

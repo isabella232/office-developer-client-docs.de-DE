@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagAttachContentBase
 api_type:
 - HeaderDef
 ms.assetid: 35c10264-6998-4c46-8cef-82708c96d9c7
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ec1db68d9168e7260a32aaf7708897df6124725a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 0eb211f8269689b80b4e42ee1cb97001e4eedda4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360508"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59560963"
 ---
 # <a name="pidtagattachcontentbase-canonical-property"></a>PidTagAttachContentBase (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32360508"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält den Inhaltsbasisheader einer Mehrzweck-E-Mail-Nachrichtenanlage (Multipurpose Internet Mail Extensions, MIME).
+Enthält den Inhaltsbasisheader einer MIME-Nachrichtenanlage (Multipurpose Internet Mail Extensions).
   
 |||
 |:-----|:-----|
@@ -34,9 +34,9 @@ Enthält den Inhaltsbasisheader einer Mehrzweck-E-Mail-Nachrichtenanlage (Multip
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaften werden für die MHTML-Unterstützung verwendet. Sie stellen den Inhaltsbasisheader für den entsprechenden MIME-Textteil dar. 
+Diese Eigenschaften werden für die MHTML-Unterstützung verwendet. Sie stellen den Inhaltsbasisheader für den entsprechenden MIME-Textkörper dar. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -50,11 +50,11 @@ Diese Eigenschaften werden für die MHTML-Unterstützung verwendet. Sie stellen 
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -62,9 +62,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

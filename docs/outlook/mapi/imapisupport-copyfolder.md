@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPISupport.CopyFolder
 api_type:
 - COM
 ms.assetid: c2e0939f-0668-473f-856c-a27af094070b
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 11ee944a14f8c9bd881b9c79a4ce66817275e73a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ac2fb6c0ad29e16967b00425d9ca82cd3c52c8c5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33420885"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59584374"
 ---
 # <a name="imapisupportcopyfolder"></a>IMAPISupport::CopyFolder
 
@@ -25,7 +25,7 @@ ms.locfileid: "33420885"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Kopiert oder verschiebt einen Ordner aus dem aktuellen übergeordneten Ordner in einen anderen übergeordneten Ordner.
+Kopiert oder verschiebt einen Ordner aus seinem aktuellen übergeordneten Ordner in einen anderen übergeordneten Ordner.
   
 ```cpp
 HRESULT CopyFolder(
@@ -46,7 +46,7 @@ HRESULT CopyFolder(
 
  _lpSrcInterface_
   
-> [in] Ein Zeiger auf die Schnittstellen-ID (Interface Identifier, IID), die die Schnittstelle darstellt, die für den Zugriff auf den übergeordneten Ordner des Ordners verwendet werden soll, der kopiert oder verschoben werden soll.
+> [in] Ein Zeiger auf den Schnittstellenbezeichner (IID), der die Schnittstelle darstellt, die für den Zugriff auf den übergeordneten Ordner des zu kopierenden oder zu verschiebenden Ordners verwendet werden soll.
     
  _lpSrcFolder_
   
@@ -54,11 +54,11 @@ HRESULT CopyFolder(
     
  _cbEntryID_
   
-> [in] Die Byteanzahl in der Eintrags-ID, auf die _von lpEntryID verwiesen wird._
+> [in] Die Byteanzahl im Eintragsbezeichner, auf den  _lpEntryID_ verweist.
     
  _lpEntryID_
   
-> [in] Ein Zeiger auf die Eintrags-ID des Ordners, der kopiert oder verschoben werden soll. 
+> [in] Ein Zeiger auf den Eintragsbezeichner des Ordners, der kopiert oder verschoben werden soll. 
     
  _lpInterface_
   
@@ -66,39 +66,39 @@ HRESULT CopyFolder(
     
  _lpDestFolder_
   
-> [in] Ein Zeiger auf den Ordner, der den zu kopierende oder zu verschiebende Ordner empfangen soll.
+> [in] Ein Zeiger auf den Ordner, der den zu kopierenden oder zu verschiebenden Ordner empfangen soll.
     
  _lpszNewFolderName_
   
-> [in] Ein Zeiger auf den Namen des kopierten oder verschobenen Ordners; Andernfalls NULL, was angibt, dass der kopierte oder verschobene Ordner denselben Namen wie der Quellordner haben soll (der Ordner, auf den _lpEntryID verweist)._
+> [in] Ein Zeiger auf den Namen des kopierten oder verschobenen Ordners; andernfalls NULL, was angibt, dass der kopierte oder verschobene Ordner denselben Namen wie der Quellordner haben soll (der Ordner, auf den  _lpEntryID_ verweist).
     
  _ulUIParam_
   
-> [in] Ein Handle des Fensters für das Dialogfeld Statusanzeige und zugehörige Fenster. Der  _ulUIParam-Parameter_ wird ignoriert, es sei denn, das FOLDER_DIALOG wird im  _ulFlags-Parameter_ festgelegt. 
+> [in] Ein Handle des Fensters für das Dialogfeld "Statusanzeige" und die zugehörigen Fenster. Der  _ulUIParam-Parameter_ wird ignoriert, es sei denn, das FOLDER_DIALOG-Flag ist im  _ulFlags-Parameter_ festgelegt. 
     
  _lpProgress_
   
-> [in] Ein Zeiger auf ein Statusobjekt, das eine Statusanzeige anzeigt. Wenn NULL in  _lpProgress übergeben_ wird, zeigt der Nachrichtenspeicheranbieter mithilfe der MAPI-Fortschrittsobjektimplementierung eine Statusanzeige an. Der _lpProgress-Parameter_ wird ignoriert, es sei denn, das FOLDER_DIALOG ist in _ulFlags festgelegt._
+> [in] Ein Zeiger auf ein Statusobjekt, das eine Statusanzeige anzeigt. Wenn NULL in  _lpProgress_ übergeben wird, zeigt der Nachrichtenspeicheranbieter mithilfe der MAPI-Fortschrittsobjektimplementierungen eine Statusanzeige an. Der  _parameter lpProgress_ wird ignoriert, es sei denn, das flag FOLDER_DIALOG in  _ulFlags_ festgelegt ist.
     
  _ulFlags_
   
-> [in] Eine Bitmaske mit Flags, die steuert, wie der Kopier- oder Verschiebevorgang durchgeführt wird. Die folgenden Kennzeichen können festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie der Kopier- oder Verschiebungsvorgang ausgeführt wird. Die folgenden Flags können festgelegt werden:
     
 COPY_SUBFOLDERS 
   
-> Alle Unterordner des Ordners sollten kopiert oder verschoben werden. Wenn COPY_SUBFOLDERS für einen Kopiervorgang nicht festgelegt ist, wird nur der durch  _lpEntryID identifizierte_ Ordner kopiert. Bei einem Verschiebevorgang ist COPY_SUBFOLDERS das Standardverhalten, unabhängig davon, ob das Flag festgelegt ist. 
+> Alle Unterordner des Ordners sollten kopiert oder verschoben werden. Wenn COPY_SUBFOLDERS für einen Kopiervorgang nicht festgelegt ist, wird nur der durch  _lpEntryID_ identifizierte Ordner kopiert. Bei einem Verschiebungsvorgang ist das COPY_SUBFOLDERS-Verhalten die Standardeinstellung, unabhängig davon, ob das Kennzeichen festgelegt ist. 
     
 FOLDER_DIALOG 
   
-> Fordert die Anzeige eines Statusindikators an.
+> Fordert die Anzeige einer Statusanzeige an.
     
 FOLDER_MOVE 
   
-> Der Ordner sollte verschoben werden, anstatt zu kopieren. Wenn FOLDER_MOVE nicht festgelegt ist, wird der Ordner kopiert.
+> Der Ordner sollte verschoben werden, anstatt kopiert zu werden. Wenn FOLDER_MOVE nicht festgelegt ist, wird der Ordner kopiert.
     
 MAPI_UNICODE 
   
-> Der Name des Ordners ist im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, hat der Name des Ordners das ANSI-Format.
+> Der Name des Ordners hat das Unicode-Format. Wenn das flag MAPI_UNICODE nicht festgelegt ist, hat der Name des Ordners das ANSI-Format.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -108,31 +108,31 @@ S_OK
     
 MAPI_E_COLLISION 
   
-> Der Name des verschobenen oder kopierten Ordners ist identisch mit dem eines Unterordners im Zielordner. Der Nachrichtenspeicheranbieter erfordert, dass Ordnernamen eindeutig sind. Der Vorgang wird beendet, ohne abgeschlossen zu werden.
+> Der Name des Ordners, der verschoben oder kopiert wird, entspricht dem Namen eines Unterordners im Zielordner. Der Nachrichtenspeicheranbieter erfordert, dass Ordnernamen eindeutig sind. Der Vorgang wird ohne Abschluss beendet.
     
 MAPI_W_PARTIAL_COMPLETION 
   
-> Der Aufruf ist erfolgreich, aber nicht alle Einträge wurden erfolgreich kopiert. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich behandelt werden. Verwenden Sie zum Testen dieser Warnung das **HR_FAILED** Makro. Weitere Informationen finden Sie unter [Using Macros for Error Handling](using-macros-for-error-handling.md).
+> Der Aufruf war erfolgreich, aber nicht alle Einträge wurden erfolgreich kopiert. Wenn diese Warnung zurückgegeben wird, sollte der Aufruf als erfolgreich behandelt werden. Verwenden Sie das Makro **HR_FAILED, um** diese Warnung zu testen. Weitere Informationen finden Sie unter [Verwenden von Makros für die Fehlerbehandlung.](using-macros-for-error-handling.md)
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die **IMAPISupport::CopyFolder-Methode** wird für Unterstützungsobjekte des Nachrichtenspeicheranbieters implementiert. Nachrichtenspeicheranbieter können **IMAPISupport::CopyFolder** in ihrer Implementierung von [IMAPIFolder::CopyFolder](imapifolder-copyfolder.md) aufrufen, um einen einzelnen Ordner aus einem übergeordneten Ordner in einen anderen zu kopieren oder zu verschieben. 
+Die **IMAPISupport::CopyFolder-Methode** wird für Supportobjekte des Nachrichtenspeicheranbieters implementiert. Nachrichtenspeicheranbieter können **IMAPISupport::CopyFolder** in ihrer Implementierung von [IMAPIFolder::CopyFolder](imapifolder-copyfolder.md) aufrufen, um einen einzelnen Ordner von einem übergeordneten Ordner in einen anderen zu kopieren oder zu verschieben. 
   
  **IMAPISupport::CopyFolder** fügt den kopierten oder verschobenen Ordner als Unterordner des Zielordners hinzu. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
- **IMAPISupport::CopyFolder** ermöglicht das gleichzeitige Umbenennen und Verschieben von Ordnern sowie das Kopieren oder Verschieben von Unterordnern des betroffenen Ordners. Um alle im kopierten oder verschobenen Ordner geschachtelten Unterordner zu kopieren oder zu verschieben, übergeben Sie das COPY_SUBFOLDERS in  _ulFlags_. 
+ **IMAPISupport::CopyFolder** ermöglicht das gleichzeitige Umbenennen und Verschieben von Ordnern sowie das Kopieren oder Verschieben von Unterordnern des betroffenen Ordners. Um alle im kopierten oder verschobenen Ordner geschachtelten Unterordner zu kopieren oder zu verschieben, übergeben Sie das flag COPY_SUBFOLDERS in _ulFlags._ 
   
 Erwarten Sie die folgenden Rückgabewerte unter den folgenden Bedingungen:
   
 |**Bedingung**|**R�ckgabewert**|
 |:-----|:-----|
-|**CopyFolder** hat den Ordner und alle unterordner erfolgreich kopiert oder verschoben, sofern zutreffend.  <br/> |S_OK  <br/> |
-|**CopyFolder** konnte nicht alle Ordner erfolgreich kopieren oder verschieben.  <br/> |MAPI_W_PARTIAL_COMPLETION  <br/> |
+|**CopyFolder** hat den Ordner und ggf. alle zugehörigen Unterordner erfolgreich kopiert oder verschoben.  <br/> |S_OK  <br/> |
+|**CopyFolder** konnte nicht erfolgreich alle Ordner kopieren oder verschieben.  <br/> |MAPI_W_PARTIAL_COMPLETION  <br/> |
 |**CopyFolder** konnte nicht abgeschlossen werden.  <br/> |Beliebiger Fehlerwert  <br/> |
    
-Wenn **CopyFolder** einen Fehlerwert zurückgibt, gehen Sie nicht davon aus, dass keine Arbeit durchgeführt wurde. Ein oder mehrere Ordner hätten kopiert oder verschoben werden können, bevor **CopyFolder** den Fehler erlebte. 
+Wenn **CopyFolder** einen Fehlerwert zurückgibt, gehen Sie nicht davon aus, dass keine Arbeit ausgeführt wurde. Ein oder mehrere Ordner könnten kopiert oder verschoben worden sein, bevor **CopyFolder** den Fehler festgestellt hat. 
   
 ## <a name="see-also"></a>Siehe auch
 

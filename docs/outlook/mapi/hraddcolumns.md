@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8c980257-9372-4478-b635-bd91d0a66af9
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 465b685038bc3d906e468c7d7b06e9c20e1fd3c3
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 670c5000d3bebc6723b37a5bce9821fdb069f78a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33422474"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59561670"
 ---
 # <a name="hraddcolumns"></a>HrAddColumns
 
@@ -21,7 +21,7 @@ ms.locfileid: "33422474"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Fügt Spalten am Anfang einer vorhandenen Tabelle hinzu oder verschiebt sie.
+Fügt Spalten an den Anfang einer vorhandenen Tabelle hinzu oder verschiebt sie.
   
 |||
 |:-----|:-----|
@@ -44,9 +44,9 @@ HRESULT HrAddColumns(
   
 > [in] Zeiger auf die betroffene MAPI-Tabelle.
     
- _lpproptagColumnsNeu_
+ _lpproptagColumnsNew_
   
-> [in] Zeiger auf eine **SPropTagArray-Struktur,** die ein Array von Eigenschaftstags für die Eigenschaften enthält, die hinzugefügt oder an den Anfang der Tabelle verschoben werden sollen. 
+> [in] Zeiger auf eine **SPropTagArray-Struktur,** die ein Array von Eigenschaftentags für die Eigenschaften enthält, die hinzugefügt oder an den Anfang der Tabelle verschoben werden sollen. 
     
  _lpAllocateBuffer_
   
@@ -54,7 +54,7 @@ HRESULT HrAddColumns(
     
  _lpFreeBuffer_
   
-> [in] Zeiger auf die **MAPIFreeBuffer-Funktion.** Wird zum Freispeichern verwendet. 
+> [in] Zeiger auf die **MAPIFreeBuffer-Funktion.** Wird verwendet, um Arbeitsspeicher freizugeben. 
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -62,7 +62,7 @@ HRESULT HrAddColumns(
   
 > Der Aufruf war erfolgreich, und die angegebenen Spalten wurden verschoben oder hinzugefügt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **HrAddColumns-Funktion** entspricht der Verwendung von **HrAddColumnsEx** mit  _lpfnFilterColumns,_ die auf NULL festgelegt sind. 
   

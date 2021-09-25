@@ -6,31 +6,31 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm1040
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d0c0fe52-6a9e-e40e-394e-83a851db55a4
-description: 'Bestimmt die x-Koordinate der Drehmitte des Textblocks im Verhältnis zum Ursprung der Form. Die Standardformel lautet:'
-ms.openlocfilehash: 836f5c807d0c0e53efc825f62f60429274282165
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: 'Bestimmt die X-Koordinate des Drehmittelpunkts des Textblocks im Verhältnis zum Ursprung des Shapes. Die Standardformel lautet:'
+ms.openlocfilehash: 7cd62258558fc9657a62b1e3e39811acac973527
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423496"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59569853"
 ---
 # <a name="txtpinx-cell-text-transform-section"></a>Zelle "TxtPinX" (Abschnitt "Text Transform")
 
-Bestimmt  die x-Koordinate der Drehmitte des Textblocks im Verhältnis zum Ursprung der Form. Die Standardformel lautet: 
+Bestimmt die  X-Koordinate des Drehmittelpunkts des Textblocks im Verhältnis zum Ursprung des Shapes. Die Standardformel lautet: 
   
 = Breite \* 0,5
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Um einen Verweis auf die Zelle TxtPinX anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Um einen Verweis auf die Zelle TxtPinX anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | TxtPinX  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle TxtPinX nach Index aus einem Programm zu erhalten: 
+Um einen Verweis auf die Zelle TxtPinX anhand des Indexes eines Programms abzurufen, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|

@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 46bf34be-761e-9d44-ab06-83d4c8932cab
 description: Gibt eine Instanz von Lösungs-XML an, die in der Zeichnung gespeichert ist.
-ms.openlocfilehash: 028decf0ac9b33ac33dd1e44ed3992ef7eb38aed
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 9f5835cb083e98d825d5b486a27b66f238a61d49
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34540266"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59569937"
 ---
 # <a name="solution-element-solutions_type-complextype-visio-xml"></a>Solution-Element (Solutions_Type complexType) (Visio XML)
 
@@ -35,7 +35,7 @@ Gibt eine Instanz von Lösungs-XML an, die in der Zeichnung gespeichert ist.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -53,6 +53,6 @@ Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccur
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|Name  <br/> |xsd:string  <br/> |erforderlich  <br/> |Der Name der Lösung.  <br/> |Werte des xsd:string-Typs.  <br/> |
+|Name  <br/> |xsd:string  <br/> |erforderlich  <br/> |Der Name der Lösung.  <br/> |Werte des Typs "xsd:string".  <br/> |
    
 

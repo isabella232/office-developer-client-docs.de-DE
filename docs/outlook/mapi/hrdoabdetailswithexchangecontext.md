@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b4e7fed2-88e4-4e14-90b6-913a1b7e338a
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 353a663071a9f23f0d2330169d3ac7747e047c2b
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: e041597a01774fcdda3d99532bf5b062acdd46ba
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33421368"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59584535"
 ---
 # <a name="hrdoabdetailswithexchangecontext"></a>HrDoABDetailsWithExchangeContext
 
@@ -21,7 +21,7 @@ ms.locfileid: "33421368"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Stellt sicher, **dass die OpenEntry-Methode** vom erwarteten Adressbuchanbieter Exchange geöffnet wird. Diese Funktion funktioniert ähnlich wie [IAddrBook::D etails](iaddrbook-details.md), öffnet jedoch die **entryID** mit dem Exchange, das durch den _pEmsmdbUID-Parameter_ identifiziert wird. 
+Stellt sicher, dass die **OpenEntry-Methode** vom erwarteten Exchange Adressbuchanbieter geöffnet wird. Diese Funktion funktioniert ähnlich wie [IAddrBook::D etails,](iaddrbook-details.md)öffnet jedoch die **entryID** mithilfe des Exchange Adressbuchs, das durch den _Parameter "pEmsmdbUID"_ identifiziert wird. 
   
 |||
 |:-----|:-----|
@@ -51,66 +51,66 @@ HRESULT HrOpenABEntryWithExchangeContext(
 
  _pmsess_
   
-> Die angemeldete **IMAPISession**. Es kann nicht NULL sein.
+> Die angemeldete **IMAPISession**. Er darf nicht NULL sein.
     
  _pEmsmdbUID_
   
-> Ein Zeiger auf eine **emsmdbUID,** die den Exchange-Dienst identifiziert, der den Exchange-Adressbuchanbieter enthält, der von der Funktion zum Öffnen der Eintrags-ID verwendet wird. Wenn der Bezeichner für eingehende Exchange keine Adressbuchanbietereintrags-ID ist, wird dieser Parameter ignoriert, und die Funktion verhält sich wie [IAddrBook::OpenEntry](iaddrbook-openentry.md). Wenn dieser Parameter NULL oder null **MAPIUID** ist, funktioniert diese Funktion genauso wie [IAddrBook::OpenEntry](iaddrbook-openentry.md). 
+> Ein Zeiger auf eine **emsmdbUID,** die den Exchange Dienst identifiziert, der den Exchange Adressbuchanbieter enthält, der von der Funktion zum Öffnen des Eintragsbezeichners verwendet wird. Wenn der Bezeichner für den eingehenden Eintrag kein Exchange Adressbuchanbieter-Eintragsbezeichner ist, wird dieser Parameter ignoriert, und die Funktion verhält sich wie [IAddrBook::OpenEntry](iaddrbook-openentry.md). Wenn dieser Parameter NULL oder eine Null **MAPIUID** ist, verhält sich diese Funktion auch genau wie [IAddrBook::OpenEntry](iaddrbook-openentry.md). 
     
  _pAddrBook_
   
-> [in] Das Adressbuch, das zum Öffnen der Eintrags-ID verwendet wird. Es kann nicht NULL sein.
+> [in] Das Zum Öffnen des Eintragsbezeichners verwendete Adressbuch. Er darf nicht NULL sein.
     
  _lpulUIParam_
   
-> [out] Ein Handle zum übergeordneten Fenster für das Dialogfeld.
+> [out] Ein Handle für das übergeordnete Fenster für das Dialogfeld.
     
  _lpfnDismiss_
   
-> [in] Ein Zeiger auf eine Funktion basierend auf dem **DISMISSMODELESS-Prototyp** oder NULL. Dieses Element gilt nur für die moduslose Version des Dialogfelds, wie durch das festgelegte DIALOG_SDI angegeben wird. MAPI ruft die **FUNKTION DISMISSMODELESS** auf, wenn der Benutzer das Dialogfeld "Modeless Address" schließt und einen Client informiert, der Details aufruft, dass das Dialogfeld nicht mehr aktiv ist. 
+> [in] Ein Zeiger auf eine Funktion, die auf dem **DISMISSMODELESS-Prototyp** oder NULL basiert. Dieses Element gilt nur für die moduslose Version des Dialogfelds, wie durch das festzulegende DIALOG_SDI-Kennzeichen angegeben. MAPI ruft die **DISMISSMODELESS-Funktion** auf, wenn der Benutzer das Dialogfeld ohne Modusadresse schließt und einen Client, der Details aufruft, darüber informiert, dass das Dialogfeld nicht mehr aktiv ist. 
     
  _lpvDismissContext_
   
-> [in] Ein Zeiger auf Kontextinformationen, der an die **DISMISSMODELESS-Funktion übergeben** wird, auf die der  _lpfnDismiss-Parameter_ verweist. Dieser Parameter gilt nur für die moduslose Version  des Dialogfelds, indem das DIALOG_SDI im _ulFlags-Parameter verwendet_ wird. 
+> [in] Ein Zeiger auf Kontextinformationen, die an die **DISMISSMODELESS-Funktion** übergeben werden sollen, auf die der  _Parameter "lpfnDismiss"_ verweist. Dieser Parameter gilt nur für die moduslose Version des Dialogfelds, indem das **flag DIALOG_SDI** in den  _ulFlags-Parameter_ eingeschlossen wird. 
     
  _cbEntryID_
   
-> [in] Die Byteanzahl des Eintragsbezeichners, der durch den  _lpEntryID-Parameter angegeben_ wird. 
+> [in] Die Byteanzahl des Eintragsbezeichners, der durch den  _lpEntryID-Parameter_ angegeben wird. 
     
  _lpEntryID_
   
-> [in] Ein Zeiger auf den Eintragsbezeichner, der den zu öffnende Adressbucheintrag darstellt.
+> [in] Ein Zeiger auf den Eintragsbezeichner, der den zu öffnenden Adressbucheintrag darstellt.
     
  _lpfButtonCallback_
   
-> [in] Ein Zeiger auf eine Funktion basierend auf dem **LPFNBUTTON-Funktionsprototyp.** Eine **LPFNBUTTON-Funktion** fügt dem Dialogfeld Details eine Schaltfläche hinzu. 
+> [in] Ein Zeiger auf eine Funktion, die auf dem Prototyp der **LPFNBUTTON-Funktion** basiert. Eine **LPFNBUTTON-Funktion** fügt dem Detaildialogfeld eine Schaltfläche hinzu. 
     
  _lpvButtonContext_
   
-> [in] Ein Zeiger auf Daten, die als Parameter für die durch den  _lpfButtonCallback-Parameter_ angegebene Funktion verwendet wurden. 
+> [in] Ein Zeiger auf Daten, die als Parameter für die durch den  _Parameter lpfButtonCallback_ angegebene Funktion verwendet wurden. 
     
  _lpszButtonText_
   
-> [in] Ein Zeiger auf eine Zeichenfolge, die Text enthält, der auf die hinzugefügte Schaltfläche angewendet werden soll, wenn diese Schaltfläche erweiterbar ist. Der  _lpszButtonText-Parameter_ sollte NULL sein, wenn keine erweiterbare Schaltfläche erforderlich ist. 
+> [in] Ein Zeiger auf eine Zeichenfolge, die Text enthält, der auf die hinzugefügte Schaltfläche angewendet werden soll, wenn diese Schaltfläche erweiterbar ist. Der  _lpszButtonText-Parameter_ sollte NULL sein, wenn keine erweiterbare Schaltfläche benötigt wird. 
     
  _ulFlags_
   
-> [in] Eine Bitmaske mit Flags, die den Texttyp für den  _lpszButtonText-Parameter_ steuert. Die folgenden Kennzeichen können festgelegt werden: 
+> [in] Eine Bitmaske mit Flags, die den Texttyp für den  _lpszButtonText-Parameter_ steuert. Die folgenden Flags können festgelegt werden: 
     
 AB_TELL_DETAILS_CHANGE
   
-> Gibt an, dass Details TRUE zurückgibt, wenn tatsächlich Änderungen an der Adresse vorgenommen werden. Andernfalls gibt Details FALSE zurück.
+> Gibt an, dass Details TRUE zurückgibt, wenn Änderungen an der Adresse tatsächlich vorgenommen werden; andernfalls gibt Details FALSE zurück.
     
 DIALOG_MODAL
   
-> Zeigt die modale Version des Dialogfelds allgemeine Adresse an. Dieses Flag schließen sich gegenseitig mit DIALOG_SDI.
+> Zeigt die modale Version des allgemeinen Adressdialogfelds an. Dieses Kennzeichen schließen sich mit DIALOG_SDI gegenseitig aus.
     
 DIALOG_SDI
   
-> Zeigt die moduslose Version des Dialogfelds allgemeine Adresse an. Dieses Flag schließen sich gegenseitig mit DIALOG_MODAL.
+> Zeigt die moduslose Version des allgemeinen Adressdialogfelds an. Dieses Kennzeichen schließen sich mit DIALOG_MODAL gegenseitig aus.
     
 MAPI_UNICODE
   
-> Die übergebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Zeichenfolgen im ANSI-Format.
+> Die übergebenen Zeichenfolgen haben das Unicode-Format. Wenn das flag MAPI_UNICODE nicht festgelegt ist, haben die Zeichenfolgen das ANSI-Format.
     
 

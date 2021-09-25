@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagMessageDownloadTime
 api_type:
 - HeaderDef
 ms.assetid: f0d34dd6-7ddb-4843-b848-c89923ff80cc
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 8078d31af497a437c983da7447a0aebbdfb643fb
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: efd60e712176188a42894a3c43bc5313fa53e3c9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407928"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59555328"
 ---
 # <a name="pidtagmessagedownloadtime-canonical-property"></a>PidTagMessageDownloadTime (kanonische Eigenschaft)
 
@@ -34,9 +34,9 @@ Enthält die geschätzte Zeit zum Herunterladen einer Nachricht von einem Remote
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeines Messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft wird in Sekunden ausgedrückt und stellt die beste Schätzung der Zeit dar, die ein Remotetransportanbieter zum Herunterladen einer bestimmten Nachricht vom aktuellen Speicherort in einen lokalen Nachrichtenspeicher für den Client, der den Kopfzeilenordner anzeigen würde, in Kauf nehmen würde. Der Remotetransportanbieter berechnet in der Regel den Wert für diese Eigenschaft, indem er den Wert der **PR_MESSAGE_SIZE** ([PidTagMessageSize](pidtagmessagesize-canonical-property.md))-Eigenschaft durch die Geschwindigkeit der Kommunikationsverbindung in Bytes pro Sekunde dividiert. Wenn der Anbieter die Downloadzeit nicht berechnen kann, z. B. wenn er die Verbindungsgeschwindigkeit nicht kennt, sollte er einen **PT_ERROR-Wert** wie **MAPI_E_NO_SUPPORT** für diese Spalte in der Inhaltstabelle des Kopfzeilenordners zur Verfügung stellt. 
+Diese Eigenschaft wird in Sekunden ausgedrückt und stellt die beste Schätzung der Zeit dar, die ein Remote-Transportanbieter benötigen würde, um eine bestimmte Nachricht vom aktuellen Speicherort in einen Nachrichtenspeicher auf dem Client herunterzuladen, der den Headerordner anzeigt. Der Remotetransportanbieter berechnet in der Regel den Wert für diese Eigenschaft, indem der Wert der **PR_MESSAGE_SIZE** ([PidTagMessageSize](pidtagmessagesize-canonical-property.md)) -Eigenschaft durch die Geschwindigkeit der Kommunikationsverbindung in Bytes pro Sekunde geteilt wird. Wenn der Anbieter die Downloadzeit nicht berechnen kann, z. B. wenn er die Linkgeschwindigkeit nicht kennt, sollte er einen **PT_ERROR** Wert bereitstellen, z. **B. MAPI_E_NO_SUPPORT** für diese Spalte im Inhaltsverzeichnis des Kopfzeilenordners. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,11 +44,11 @@ Diese Eigenschaft wird in Sekunden ausgedrückt und stellt die beste Schätzung 
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

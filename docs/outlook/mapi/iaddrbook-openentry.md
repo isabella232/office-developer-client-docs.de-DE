@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IAddrBook.OpenEntry
 api_type:
 - COM
 ms.assetid: bd7746f4-8070-4cc5-8b8e-c527c5847545
 description: 'Letzte �nderung: Freitag, 1. Februar 2013'
-ms.openlocfilehash: 293fe5a65c760f61ab0073e0eafc1a606c69050f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: b1b6ebd5e7d1ad30e9cc0ef2ad4c706dac6788b5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33434165"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59561572"
 ---
 # <a name="iaddrbookopenentry"></a>IAddrBook::OpenEntry
 
@@ -44,11 +44,11 @@ _cbEntryID_
     
 _lpEntryID_
   
-> [in] Ein Zeiger auf den Eintragsbezeichner, der den zu öffnende Adressbucheintrag darstellt.
+> [in] Ein Zeiger auf den Eintragsbezeichner, der den zu öffnenden Adressbucheintrag darstellt.
     
 _lpInterface_
   
-> [in] Ein Zeiger auf die Schnittstellen-ID (Interface Identifier, IID) der Schnittstelle, die für den Zugriff auf den geöffneten Eintrag verwendet werden soll. Durch Übergeben von NULL wird die Standardschnittstelle des Objekts zurückgegeben. Für Messagingbenutzer ist die Standardschnittstelle [IMailUser : IMAPIProp](imailuserimapiprop.md). Für Verteilerlisten ist [IDistList : IMAPIContainer](idistlistimapicontainer.md) und für Container [IABContainer : IMAPIContainer](iabcontainerimapicontainer.md). Anrufer können  _lpInterface_ auf die entsprechende Standardschnittstelle oder eine Schnittstelle in der Vererbungshierarchie festlegen. 
+> [in] Ein Zeiger auf den Schnittstellenbezeichner (IID) der Schnittstelle, der für den Zugriff auf den geöffneten Eintrag verwendet werden soll. Wenn NULL übergeben wird, wird die Standardschnittstelle des Objekts zurückgegeben. Für Messaging-Benutzer ist die Standardschnittstelle [IMailUser : IMAPIProp](imailuserimapiprop.md). Für Verteilerlisten ist dies [IDistList : IMAPIContainer](idistlistimapicontainer.md) und für Container [IABContainer : IMAPIContainer](iabcontainerimapicontainer.md). Aufrufer können  _lpInterface_ auf die entsprechende Standardschnittstelle oder eine Schnittstelle in der Vererbungshierarchie festlegen. 
     
 _ulFlags_
   
@@ -56,30 +56,30 @@ _ulFlags_
     
 MAPI_BEST_ACCESS 
   
-> Fordert an, dass der Eintrag mit den maximal zulässigen Netzwerk- und Clientberechtigungen geöffnet wird. Wenn der Client beispielsweise über Lese-/Schreibberechtigungen verfügt, sollte der Adressbuchanbieter versuchen, den Eintrag mit Lese-/Schreibberechtigung zu öffnen. Der Client kann die Zugriffsebene abrufen, die gewährt wurde, indem die [IMAPIProp::GetProps-Methode](imapiprop-getprops.md) des geöffneten Eintrags aufgerufen und die **PR_ACCESS_LEVEL** ([PidTagAccessLevel](pidtagaccesslevel-canonical-property.md)) -Eigenschaft abgerufen wird.
+> Fordert an, dass der Eintrag mit den maximal zulässigen Netzwerk- und Clientberechtigungen geöffnet wird. Wenn der Client beispielsweise über Lese-/Schreibberechtigungen verfügt, sollte der Adressbuchanbieter versuchen, den Eintrag mit Lese-/Schreibberechtigung zu öffnen. Der Client kann die Zugriffsebene abrufen, die gewährt wurde, indem er die [IMAPIProp::GetProps-Methode](imapiprop-getprops.md) des geöffneten Eintrags aufruft und die **eigenschaft PR_ACCESS_LEVEL** ([PidTagAccessLevel](pidtagaccesslevel-canonical-property.md)) abruft.
     
 MAPI_CACHE_ONLY
   
-> Öffnet einen Adressbucheintrag und zugrifft ihn nur aus dem Cache. Sie können dieses Flag beispielsweise verwenden, um einer Clientanwendung zu ermöglichen, die globale Adressliste (GAL) im Exchange-Cache-Modus zu öffnen und aus dem Cache auf einen Eintrag in diesem Adressbuch zu zugreifen, ohne Datenverkehr zwischen dem Client und dem Server zu erstellen. Dieses Flag wird nur vom Adressbuchanbieter Exchange unterstützt.
+> Öffnet einen Adressbucheintrag und greift nur über den Cache darauf zu. Beispielsweise können Sie dieses Flag verwenden, um einer Clientanwendung das Öffnen der globalen Adressliste (GAL) im Cache-Exchange-Modus und den Zugriff auf einen Eintrag in diesem Adressbuch aus dem Cache zu ermöglichen, ohne Datenverkehr zwischen dem Client und dem Server zu erstellen. Dieses Flag wird nur vom Exchange Adressbuchanbieter unterstützt.
     
 MAPI_DEFERRED_ERRORS 
   
-> Ermöglicht den Erfolgreichen Aufruf, möglicherweise bevor der Eintrag vollständig geöffnet und verfügbar ist, was bedeutet, dass spätere Aufrufe des Eintrags möglicherweise einen Fehler zurückgeben.
+> Ermöglicht, dass der Aufruf erfolgreich ist, möglicherweise bevor der Eintrag vollständig geöffnet und verfügbar ist, was bedeutet, dass spätere Aufrufe des Eintrags einen Fehler zurückgeben können.
     
 MAPI_GAL_ONLY
   
-> Verwenden Sie nur die GAL, um die Namensauflösung durchzuführen. Dieses Flag wird nur vom adressbuchanbieter Exchange unterstützt.
+> Verwenden Sie nur die GAL, um die Namensauflösung auszuführen. Dieses Flag wird nur vom Exchange Adressbuchanbieter unterstützt.
     
   > [!NOTE]
-  > Die  _ulFlags MAPI_GAL_ONLY-Datei_ ist möglicherweise nicht in der herunterladbaren Headerdatei definiert, die Sie derzeit haben. In diesem Fall können Sie sie ihrem Code mit dem folgenden Wert hinzufügen: >  `#define MAPI_GAL_ONLY (0x00000080)`
+  > Die  _ulFlags-MAPI_GAL_ONLY_ ist möglicherweise nicht in der herunterladbaren Headerdatei definiert, die Sie derzeit haben. In diesem Fall können Sie sie Ihrem Code mit dem folgenden Wert hinzufügen: >  `#define MAPI_GAL_ONLY (0x00000080)`
   
 MAPI_MODIFY 
   
-> Fordert an, dass der Eintrag mit Lese-/Schreibberechtigung geöffnet wird. Da Einträge standardmäßig mit schreibgeschützten Zugriffen geöffnet werden, sollten Clients nicht davon ausgehen, dass Lese-/Schreibberechtigungen gewährt wurden, unabhängig davon, ob MAPI_MODIFY festgelegt ist.
+> Fordert an, dass der Eintrag mit Lese-/Schreibberechtigung geöffnet wird. Da Einträge standardmäßig mit schreibgeschütztem Zugriff geöffnet werden, sollten Clients nicht davon ausgehen, dass Lese-/Schreibberechtigungen erteilt wurden, unabhängig davon, ob MAPI_MODIFY festgelegt ist.
     
 MAPI_NO_CACHE
   
-> Verwenden Sie das Offlineadressbuch nicht, um die Namensauflösung durchzuführen. Dieses Flag wird nur vom adressbuchanbieter Exchange unterstützt.
+> Verwenden Sie das Offlineadressbuch nicht, um die Namensauflösung auszuführen. Dieses Flag wird nur vom Exchange Adressbuchanbieter unterstützt.
     
 _lpulObjType_
   
@@ -101,17 +101,17 @@ MAPI_E_NO_ACCESS
     
 MAPI_E_NOT_FOUND 
   
-> Der durch  _lpEntryID dargestellte_ Eintrag ist nicht vorhanden. 
+> Der durch  _lpEntryID_ dargestellte Eintrag ist nicht vorhanden. 
     
 MAPI_E_UNKNOWN_ENTRYID 
   
-> Der in  _lpEntryID angegebene_ Eintragsbezeichner wird nicht erkannt. Dieser Wert wird in der Regel zurückgegeben, wenn der adressbuchanbieter, der für den entsprechenden Eintrag verantwortlich ist, nicht geöffnet ist. 
+> Der in  _lpEntryID_ angegebene Eintragsbezeichner wird nicht erkannt. Dieser Wert wird in der Regel zurückgegeben, wenn der für den entsprechenden Eintrag zuständige Adressbuchanbieter nicht geöffnet ist. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Clients und Dienstanbieter rufen die **IAddrBook::OpenEntry-Methode** auf, um einen Adressbucheintrag zu öffnen. MAPI gibt den Aufruf an den entsprechenden Adressbuchanbieter weiter, basierend auf der [MAPIUID-Struktur,](mapiuid.md) die im Eintragsbezeichner enthalten ist, der im  _lpEntryID-Parameter übergeben_ wird. Der Adressbuchanbieter öffnet den Eintrag als schreibgeschützt, es sei denn, MAPI_MODIFY oder MAPI_BEST_ACCESS im  _ulFlags-Parameter_ festgelegt ist. Diese Kennzeichen sind jedoch Vorschläge. Wenn der Adressbuchanbieter keine Änderung für den angeforderten Eintrag zugibt, gibt er MAPI_E_NO_ACCESS. 
+Clients und Dienstanbieter rufen die **IAddrBook::OpenEntry-Methode** auf, um einen Adressbucheintrag zu öffnen. Die MAPI leitet den Aufruf an den entsprechenden Adressbuchanbieter weiter, basierend auf der [MAPIUID-Struktur,](mapiuid.md) die im Eintragsbezeichner enthalten ist, der im  _lpEntryID-Parameter_ übergeben wird. Der Adressbuchanbieter öffnet den Eintrag schreibgeschützt, es sei denn, das flag MAPI_MODIFY oder MAPI_BEST_ACCESS im  _ulFlags-Parameter_ ist festgelegt. Diese Flags sind jedoch Vorschläge. Wenn der Adressbuchanbieter keine Änderung für den angeforderten Eintrag zulässt, wird MAPI_E_NO_ACCESS zurückgegeben. 
   
-Der  _lpInterface-Parameter_ gibt an, welche Schnittstelle für den Zugriff auf den geöffneten Eintrag verwendet werden soll. Das Übergeben von NULL in  _lpInterface_ gibt an, dass die standardmäßige MAPI-Schnittstelle für diesen Eintragstyp verwendet werden soll. Da der Adressbuchanbieter möglicherweise eine andere Schnittstelle zurücksenkt als die vom  _lpInterface-Parameter_ vorgeschlagene, sollte der Aufrufer den im  _lpulObjType-Parameter_ zurückgegebenen Wert überprüfen, um festzustellen, ob der zurückgegebene Objekttyp den erwarteten Wert hat. Wenn der Objekttyp nicht den erwarteten Typ hat, kann der Aufrufer den  _lppUnk-Parameter_ in einen geeigneteren Typ umbetten. 
+Der  _LpInterface-Parameter_ gibt an, welche Schnittstelle für den Zugriff auf den geöffneten Eintrag verwendet werden soll. Das Übergeben von NULL in  _lpInterface_ gibt die standardmäßige MAPI-Schnittstelle für diesen Eintragstyp an. Da der Adressbuchanbieter möglicherweise eine andere Schnittstelle als die vom  _lpInterface-Parameter_ vorgeschlagene zurückgibt, sollte der Aufrufer den im  _lpulObjType-Parameter_ zurückgegebenen Wert überprüfen, um zu bestimmen, ob der zurückgegebene Objekttyp dem erwarteten Entspricht. Wenn der Objekttyp nicht dem erwarteten Typ entspricht, kann der Aufrufer den  _lppUnk-Parameter_ in einen besser geeigneten Typ umwandeln. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,25 +1,25 @@
 ---
-title: PidTagManagerName (kanonische Eigenschaft)
+title: Kanonische PidTagManagerName-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagManagerName
 api_type:
 - HeaderDef
 ms.assetid: 564c01fa-a0df-4095-8e87-e75a409c67eb
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: de94ef72e7415092bd336a6cd4721f327990564d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 8a7d6237424c5744338a798a657ea5f0c7050077
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32342826"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59595245"
 ---
-# <a name="pidtagmanagername-canonical-property"></a>PidTagManagerName (kanonische Eigenschaft)
+# <a name="pidtagmanagername-canonical-property"></a>Kanonische PidTagManagerName-Eigenschaft
 
   
   
@@ -34,9 +34,9 @@ Enthält den Namen des Vorgesetzten des Empfängers.
 |Datentyp:  <br/> |PT_UNICODE, PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaften stellen Identifikations- und Zugriffsinformationen für einen Empfänger zur Verfügung. Sie werden vom Empfänger und seiner Organisation definiert. 
+Diese Eigenschaften bieten Identifikations- und Zugriffsinformationen für einen Empfänger. Sie werden vom Empfänger und seiner Organisation definiert. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,7 +44,7 @@ Diese Eigenschaften stellen Identifikations- und Zugriffsinformationen für eine
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
@@ -58,11 +58,11 @@ Diese Eigenschaften stellen Identifikations- und Zugriffsinformationen für eine
 
 Mapidef.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -70,9 +70,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

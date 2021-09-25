@@ -8,21 +8,21 @@ f1_keywords:
 - ConvertXLRef12ToXLRef
 keywords:
 - convertxlref12toxlref-Funktion [excel 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b620ed21-73ef-489b-9c00-7be12bb41214
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 0a12052a93d030088feb548449955129ff5bdc0f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 15f4576bd988668b2f9e06ca7790afa27dd97aad
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33432653"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59576730"
 ---
 # <a name="convertxlref12toxlref"></a>ConvertXLRef12ToXLRef
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Versucht, eine **XLREF12 in** eine **XLREF zu konvertieren.**
+Versucht, ein **XLREF12** in ein **XLREF** zu konvertieren.
   
 ```cs
 BOOL ConvertXLRefToXLRef12(LPXLREF12 pxRef12, LPXLREF pxRef);
@@ -32,19 +32,19 @@ BOOL ConvertXLRefToXLRef12(LPXLREF12 pxRef12, LPXLREF pxRef);
 
  _pxRef12_ (**LPXLREF12**)
   
-Zeiger auf die Quellreferenzstruktur.
+Zeiger auf die Quellverweisstruktur.
   
  _pxRef_ (**LPXLREF**)
   
-Zeiger auf die Zielreferenzstruktur, in die der konvertierte Wert platziert werden soll.
+Zeiger auf die Zielverweisstruktur, in der der konvertierte Wert platziert werden soll.
   
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
  **TRUE,** wenn die Konvertierung erfolgreich war, **andernfalls FALSE.** 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die Konvertierung von **XLREF12** in **XLREF** schlägt fehl, wenn sich der angegebene Verweis auf einen Teil eines Arbeitsblatts von Excel 2007 bezieht, das in früheren Versionen nicht unterstützt wird. 
+Die Konvertierung von **XLREF12** in **XLREF** schlägt fehl, wenn sich der angegebene Verweis auf einen Teil eines Arbeitsblatts Excel 2007 bezieht, der in früheren Versionen nicht unterstützt wird. 
   
 ## <a name="example"></a>Beispiel
 

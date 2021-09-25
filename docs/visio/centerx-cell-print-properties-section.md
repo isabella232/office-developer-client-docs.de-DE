@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm60030
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 890e2537-66a5-2863-c78d-320b42565ea7
 description: Bestimmt, ob das Zeichenblatt horizontal zentriert auf der Druckseite ausgerichtet wird.
-ms.openlocfilehash: 13b05ed71248a3f8fada947fca6b203c6ab19c6d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 5ea835ecd56a00c2697ed77e0dc2ca1559d21ba7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33418078"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594796"
 ---
 # <a name="centerx-cell-print-properties-section"></a>Zelle "CenterX" (Abschnitt "Print Properties")
 
@@ -25,17 +25,17 @@ Bestimmt, ob das Zeichenblatt horizontal zentriert auf der Druckseite ausgericht
 | TRUE  <br/> | Zeichenblatt wird horizontal zentriert auf der Druckseite ausgerichtet.  <br/> |
 | FALSE  <br/> | Zeichenblatt wird nicht horizontal zentriert auf der Druckseite ausgerichtet (Standardeinstellung).  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 In der Standardeinstellung werden Zeichenblätter am oberen und linken Rand der Druckseite ausgerichtet. Durch das Festlegen der Zellen CenterX und CenterY auf WAHR wird das Zeichenblatt auf der Druckseite zentriert (bzw. auf den Druckseiten, wenn eine Unterteilung erforderlich ist). 
   
-Um einen Verweis auf die Zelle CenterX anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Um einen Verweis auf die Zelle CenterX anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | CenterX  <br/> |
+| Zellenname:  <br/> | Centerx  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die CenterX-Zelle nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle CenterX anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

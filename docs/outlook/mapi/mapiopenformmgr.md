@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.MAPIOpenFormMgr
 api_type:
 - COM
 ms.assetid: 5b624954-d975-4d5e-84d7-74e096ac30af
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: de0c1181450c536dffd5a84242c17bd1dd612566
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8df25eade1065adc198bc356ffa4c96434de0b18
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33418050"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59595763"
 ---
 # <a name="mapiopenformmgr"></a>MAPIOpenFormMgr
 
@@ -44,7 +44,7 @@ MAPIOpenFormMgr(
 
  _pSession_
   
-> [in] Zeiger auf die Sitzung, die von der Clientanwendung verwendet wird.
+> [in] Zeiger auf die von der Clientanwendung verwendete Sitzung.
     
  _ppmgr_
   
@@ -54,9 +54,9 @@ MAPIOpenFormMgr(
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Nachdem eine Clientanwendung einen Aufruf der **MAPIOpenFormMgr-Funktion** ausgeführt hat, finden die meisten nachfolgenden formularbezogenen Interaktionen über den Formularbibliotheksanbieter oder eine vom Formularbibliotheksanbieter zurückgegebene Schnittstelle statt. Die **IMAPIFormMgr-Schnittstelle** ermöglicht es dem Client, mit Nachrichtenhandlern zu arbeiten und Auflösungen zwischen Nachrichtenklassen und Formularbibliotheken durchzuführen. 
+Nachdem eine Clientanwendung die **MAPIOpenFormMgr-Funktion** aufgerufen hat, finden die meisten nachfolgenden formularbezogenen Interaktionen über den Formularbibliotheksanbieter oder eine vom Formularbibliotheksanbieter zurückgegebene Schnittstelle statt. Die **IMAPIFormMgr-Schnittstelle** ermöglicht es dem Client, mit Nachrichtenhandlern zu arbeiten und Auflösungen zwischen Nachrichtenklassen und Formularbibliotheken auszuführen. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 

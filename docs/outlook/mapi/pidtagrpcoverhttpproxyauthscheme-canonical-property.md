@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6da78f1a-6423-460c-b3a9-fd6441df9cef
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ea4b90bf1190fd71701f82d43aaee384c7987ed0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 91804402fd00b2671fa797113059074d4557075b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32331311"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59555139"
 ---
 # <a name="pidtagrpcoverhttpproxyauthscheme-canonical-property"></a>PidTagRpcOverHttpProxyAuthScheme (kanonische Eigenschaft)
 
@@ -30,9 +30,9 @@ Stellt das Authentifizierungsprotokoll dar, das für dieses Profil verwendet wer
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Sonstiges  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft kann für die Standardauthentifizierung oder die NTLM-Authentifizierung (NTLM) festgelegt werden. Die möglichen Werte für diese Eigenschaft sind wie folgt.
+Diese Eigenschaft kann entweder für die Standardauthentifizierung oder die NTLM-Authentifizierung (NT LAN Manager) festgelegt werden. Die möglichen Werte für diese Eigenschaft sind wie folgt.
   
 |**Name**|**Wert**|**Beschreibung**|
 |:-----|:-----|:-----|
@@ -45,7 +45,7 @@ Diese Eigenschaft kann für die Standardauthentifizierung oder die NTLM-Authenti
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
   
@@ -59,11 +59,11 @@ Diese Eigenschaft kann für die Standardauthentifizierung oder die NTLM-Authenti
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -71,9 +71,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

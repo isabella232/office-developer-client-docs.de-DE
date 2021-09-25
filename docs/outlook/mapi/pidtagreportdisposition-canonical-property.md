@@ -5,17 +5,17 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 56b9e7bd-eece-4264-8ee5-a1bcbec4f35c
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: dae31959cddad7ad61ea32f2372ea34bdbff658e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 574ffba36f96ae370fa70da268b3bfa63627619f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423706"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59555174"
 ---
 # <a name="pidtagreportdisposition-canonical-property"></a>PidTagReportDisposition (kanonische Eigenschaft)
 
@@ -23,7 +23,7 @@ ms.locfileid: "33423706"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt den Empfangsstatus für Nachrichten an, die Quittungen anfordern. 
+Gibt den Empfangsstatus für Nachrichten an, die Bestätigungen anfordern. 
   
 |||
 |:-----|:-----|
@@ -32,17 +32,17 @@ Gibt den Empfangsstatus für Nachrichten an, die Quittungen anfordern.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die folgenden Werte sind gültig:
   
-- "gelöscht"
+- "Gelöscht"
     
 - "verarbeitet"
     
 - "Dispatched"
     
-- "Verweigert"
+- "Abgelehnt"
     
 - "failed"
     
@@ -52,17 +52,17 @@ Die folgenden Werte sind gültig:
 
 [[MS-OXPROPS]] 
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 ### <a name="header-files"></a>Headerdateien
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -70,9 +70,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

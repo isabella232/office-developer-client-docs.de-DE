@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagContentIntegrityCheck
 api_type:
 - HeaderDef
 ms.assetid: c7f10b8a-6b20-44cf-bde6-8d2b711c1c14
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 30ed8053c9c3d77f4831da37ddd2456ad0564a5a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 3a627e39b3502fcba0d9657d6562b6745e06077f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33415726"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59555482"
 ---
 # <a name="pidtagcontentintegritycheck-canonical-property"></a>PidTagContentIntegrityCheck (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "33415726"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält einen ASN.1-Wert für die Inhaltsintegritätsprüfung, mit dem ein Nachrichtensender Nachrichteninhalte vor der Offenlegung an nicht autorisierte Empfänger schützen kann.
+Enthält einen ASN.1-Inhaltsintegritätsprüfwert, der es einem Nachrichtensender ermöglicht, Nachrichteninhalte vor der Offenlegung an nicht autorisierte Empfänger zu schützen.
   
 |||
 |:-----|:-----|
@@ -34,9 +34,9 @@ Enthält einen ASN.1-Wert für die Inhaltsintegritätsprüfung, mit dem ein Nach
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Exchange  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft ermöglicht die Nicht-Ablehnung von Nachrichteninhalten. In Verbindung mit **PR_MESSAGE_TOKEN** ([PidTagMessageToken](pidtagmessagetoken-canonical-property.md)) wird sichergestellt, dass der Inhalt einer Nachricht unverändert am Ziel eintrifft.
+Diese Eigenschaft bietet die Nichtabstreitbarkeit von Nachrichteninhalten. In Verbindung mit **PR_MESSAGE_TOKEN** ([PidTagMessageToken](pidtagmessagetoken-canonical-property.md)) wird sichergestellt, dass der Inhalt einer Nachricht unverändert am Ziel eingeht.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,11 +44,11 @@ Diese Eigenschaft ermöglicht die Nicht-Ablehnung von Nachrichteninhalten. In Ve
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

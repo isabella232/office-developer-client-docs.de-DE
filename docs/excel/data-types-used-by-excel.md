@@ -8,13 +8,13 @@ keywords:
 - Registrierung von Datentypen [Excel 2007]; Excel-Datentypen; Zeichenfolgen [Excel 2007]; Zahlen [Excel 2007]; Datenstrukturen [Excel 2007]; Datentypen [Excel 2007]
 ms.assetid: 8740a8fb-ad67-4232-a49b-d78967a786c2
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-localization_priority: Priority
-ms.openlocfilehash: c546fc80b212301689744d3279a59733d9cc5524
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 76cddf8c63c9cba46181e916194f983bcdd6c1f6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32310906"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59576737"
 ---
 # <a name="data-types-used-by-excel"></a>Von Excel verwendete Datentypen
 
@@ -98,7 +98,7 @@ Die nachstehende Tabelle wird im Thema [xlfRegister (Formular 1)](xlfregister-fo
 |XLOPER12  <br/> (ab Excel 2007)  <br/> ||Q  <br/> |Variablen-Arbeitsblattwerte und Arrays  <br/> |
 |||U  <br/> |Werte, Arrays und Bereichsbezüge  <br/> |
    
-Die Typen **C%**, **F%**, **D%**, **G%**, **K%**, **O%**, ** Q** und **U** waren in Microsoft Office Excel 2007 alle neu und werden in früheren Versionen nicht unterstützt. Die Zeichenfolgentypen **F**, **F%**, **G** und **G%** werden für Argumente verwendet, die direkt geändert werden. Wenn die Argumente **XLOPER** oder **XLOPER12** als die Typen **P** bzw. **Q** registriert werden, konvertiert Excel bei der Vorbereitung Bezüge auf eine Zelle in einfache Werte und Bezüge auf mehrere Zellen in Arrays. 
+Die Typen **C%**, **F%**, **D%**, **G%**, **K%**, **O%**, **Q** und **U** waren in Microsoft Office Excel 2007 alle neu und werden in früheren Versionen nicht unterstützt. Die Zeichenfolgentypen **F**, **F%**, **G** und **G%** werden für Argumente verwendet, die direkt geändert werden. Wenn die Argumente **XLOPER** oder **XLOPER12** als die Typen **P** bzw. **Q** registriert werden, konvertiert Excel bei der Vorbereitung Bezüge auf eine Zelle in einfache Werte und Bezüge auf mehrere Zellen in Arrays. 
   
 Die Typen **P** und **Q** gibt es in Ihrer Funktion immer als einen der folgenden Typen: **xltypeNum**, **xltypeStr**, **xltypeBool**, **xltypeErr**, **xltypeMulti**, **xltypeMissing** oder **xltypeNil**, aber nicht als **xltypeRef** oder **xltypeSRef** weil diese Typen immer dereferenziert werden. 
   
