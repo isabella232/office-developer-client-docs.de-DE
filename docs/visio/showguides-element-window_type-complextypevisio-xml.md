@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b81bc46b-6eff-c11f-f583-85959a47c313
 description: Gibt an, ob Führungslinien im Zeichnungsfenster angezeigt werden.
-ms.openlocfilehash: 9f747568c664f86dd88a68b9a6e6e2f6df723f67
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 2a32d3661b8fd365540a15668a1a3e3e057bcdb8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34542982"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59553823"
 ---
 # <a name="showguides-element-window_type-complextype-visio-xml"></a>ShowGuides-Element (Window_Type complexType) (Visio XML)
 
@@ -36,7 +36,7 @@ Gibt an, ob Führungslinien im Zeichnungsfenster angezeigt werden.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

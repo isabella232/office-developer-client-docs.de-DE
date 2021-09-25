@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251403
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 461abfc1-d2cc-2354-1c2f-395c9e351a78
-description: Ruft eine Prozedur in einem Microsoft Visual Basic for Applications (VBA)-Projekt auf.
-ms.openlocfilehash: 7e0f0bafa39d6c1eb1fd39535506981c937ce8a1
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Ruft eine Prozedur in einem VBA-Projekt (Microsoft Visual Basic for Applications) auf.
+ms.openlocfilehash: 7dff3b6b49eb828b5c73f4aa98da2d5c460a84d4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33413815"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59560081"
 ---
 # <a name="callthis-function"></a>CALLTHIS Function
 
-Ruft eine Prozedur in einem Microsoft Visual Basic for Applications (VBA)-Projekt auf.
+Ruft eine Prozedur in einem VBA-Projekt (Microsoft Visual Basic for Applications) auf.
   
 ## <a name="syntax"></a>Syntax
 
@@ -29,26 +29,26 @@ CALLTHIS(" ** *procedure* ** ",[" ** *project* ** "],[ ** *arg1* **, ** *arg2* *
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _Prozedur_ <br/> |Erforderlich  <br/> |**String** <br/> | Der Name der Prozedur, die aufgerufen werden soll.  <br/> |
-| _project_ <br/> |Optional  <br/> |**String** <br/> |Das Projekt, das die Prozedur enthält.  <br/> |
-| _arg_ <br/> |Optional.  <br/> |**Number, String, Date oder Currency** <br/> |Wird als Parameter an die Prozedur übergeben,  <br/> |
+| _Projekt_ <br/> |Optional  <br/> |**String** <br/> |Das Projekt, das die Prozedur enthält.  <br/> |
+| _arg_ <br/> |Optional  <br/> |**Number, String, Date oder Currency** <br/> |Wird als Parameter an die Prozedur übergeben,  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Im VBA-Projekt  *wird die Prozedur*  wie folgt definiert: 
+Im VBA-Projekt wird  *die Prozedur*  wie folgt definiert: 
   
 procedure(*vsoShape* As Visio. Shape [arg1 As type, arg2 As type...]) 
   
-dabei  *ist vsoShape*  ein Verweis auf das **Shape-Objekt,** das die ausgewertete CALLTHIS-Formel enthält, und  _arg1_,  *arg2*  ... sind die in dieser Formel angegebenen Argumente. 
+dabei ist  *vsoShape*  ein Verweis auf das **Shape-Objekt,** das die ausgewertete CALLTHIS-Formel enthält, und  _arg1_,  *arg2*  ... sind die in dieser Formel angegebenen Argumente. 
   
-Beachten  *Sie, dass vsoShape*  dem Argument "this" sehr ähnlich ist, das an eine C++-Memberprozedur übergeben wird. daher der Name "CALLTHIS". Tatsächlich kann eine Zelle, die eine Formel enthält, die CALLTHIS enthält, wie folgt gelesen werden: "Rufen Sie diese Prozedur auf, und übergeben Sie ihr einen Verweis auf mein Shape." 
+Beachten Sie, dass  *vsoShape*  dem Argument "this" ähnelt, das an eine C++-Memberprozedur übergeben wird. daher der Name "CALLTHIS". Tatsächlich kann eine Zelle, die eine Formel enthält, die CALLTHIS enthält, wie folgt gelesen werden: "Rufen Sie diese Prozedur auf, und übergeben Sie ihr einen Verweis auf mein Shape." 
   
-Wenn _Project_ angegeben ist, überprüft Microsoft Visio alle geöffneten Dokumente auf das Projekt, das das Projekt enthält, und ruft _die_ Prozedur in diesem Projekt auf.  Wenn _project_ ausgelassen oder null (""), wird  Visio prozedur im #A0 des Dokuments angenommen, das die #A1 enthält, die ausgewertet wird. 
+Wenn _das Projekt_ angegeben ist, überprüft Microsoft Visio alle geöffneten Dokumente nach dem _Projekt,_ das das Projekt enthält, und ruft _die Prozedur_ in diesem Projekt auf. Wenn _das Projekt_ ausgelassen wird oder null (""), nimmt Visio an, dass sich die _Prozedur_ im VBA-Projekt des Dokuments befindet, das die ausgewertete CALLTHIS-Formel enthält. 
   
-Zahlen in  _arg1_,  _arg2..._ werden in externen Einheiten übergeben. Wenn Sie beispielsweise den Wert der Zelle Height von einer 3 cm hohen Form übergeben, wird 3 übergeben. Um verschiedene Einheiten mit einer Zahl zu übergeben, verwenden Sie die FORMATEX-Funktion oder explizit Koerceeinheiten, indem Sie ein Nullzeichen-Einheitenpaar hinzufügen, z. B. 0 ft + Height. 
+Zahlen in  _arg1_,  _arg2..._ werden in externen Einheiten übergeben. Wenn Sie z. B. den Wert der Zelle Height aus einer 3 cm hohen Form übergeben, wird 3 übergeben. Um unterschiedliche Einheiten mit einer Zahl zu übergeben, verwenden Sie die FORMATEX-Funktion oder explizit Coerce-Einheiten, indem Sie ein Null-Zahleneinheitspaar hinzufügen, z. B. 0 ft + Height. 
   
-Das zweite Komma in der CALLTHIS-Funktion ist optional. Es entspricht der Anzahl zusätzlicher Parameter, die der Prozedur hinzugefügt werden. Wenn Sie keine zusätzlichen Parameter verwenden, außer , fügen Sie nicht das  `(vsoShape as Visio.Shape)` zweite Komma hinzu; verwenden Sie CALLTHIS("",). Wenn Sie beispielsweise zwei zusätzliche Parameter hinzufügen, verwenden Sie CALLTHIS("",,,). 
+Das zweite Komma in der CALLTHIS-Funktion ist optional. Es entspricht der Anzahl zusätzlicher Parameter, die der Prozedur hinzugefügt werden. Wenn Sie keine zusätzlichen Parameter verwenden, außer  `(vsoShape as Visio.Shape)` , fügen Sie nicht das zweite Komma hinzu; verwenden Sie CALLTHIS("",). Wenn Sie beispielsweise zwei zusätzliche Parameter hinzufügen, verwenden Sie CALLTHIS("",,,). 
   
-Die CALLTHIS-Funktion wird immer als 0  ausgewertet, und der Aufruf der Prozedur erfolgt während der Leerlaufzeit nach Abschluss des Neuberechnungsprozesses.  _procedure_ kann einen Wert zurückgeben, der jedoch von Visio ignoriert wird.  _Procedure_ gibt einen Wert zurück, den Visio erkennen kann, indem Sie die Formel oder das Ergebnis einer anderen Zelle im Dokument festlegen, aber nicht die Zelle, die prozedur aufgerufen _hat,_ es sei denn, Sie möchten die CALLTHIS-Formel überschreiben.
+Die CALLTHIS-Funktion wird immer als 0 ausgewertet, und der Aufruf der  _Prozedur_ findet während der Leerlaufzeit nach Abschluss des Neuberechnungsprozesses statt.  _procedure_ kann einen Wert zurückgeben, der jedoch von Visio ignoriert wird.  _Procedure_ returns a value that Visio can recognize by setting the formula or result of another cell in the document, but not the cell that called _procedure_,unless you want to overwrite the CALLTHIS formula.
   
 Der Unterschied zwischen der CALLTHIS-Funktion und der RUNADDON-Funktion besteht darin, dass das Projekt eines Dokuments auf kein anderes Projekt verweisen muss, um Prozeduren in diesem Projekt aufrufen zu können. 
   

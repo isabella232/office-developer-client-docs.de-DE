@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251696
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9f619416-36ff-1479-6232-225c11827e01
 description: Bestimmt, ob eine Formatvorlage Linieneigenschaften enthält.
-ms.openlocfilehash: 38964194626be052b2a168fa929b69ebe4b28e01
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f2e6c3c74329c196e2e527a2879c0604ef5c5c61
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33410000"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559906"
 ---
 # <a name="enablelineprops-cell-style-properties-section"></a>Zelle "EnableLineProps" (Abschnitt "Style Properties")
 
@@ -25,15 +25,15 @@ Bestimmt, ob eine Formatvorlage Linieneigenschaften enthält.
 |TRUE  <br/> |Linieneigenschaften einschließen.  <br/> |
 |FALSE  <br/> |Linieneigenschaften ausschließen.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Um einen Verweis auf die Zelle EnableLineProps anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Um einen Verweis auf die Zelle "EnableLineProps" anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |EnableLineProps  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die EnableLineProps-Zelle nach Index aus einem Programm zu erhalten: 
+Um einen Verweis auf die Zelle "EnableLineProps" anhand des Indexes eines Programms abzurufen, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|

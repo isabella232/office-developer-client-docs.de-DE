@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.GetInstance
 api_type:
 - COM
 ms.assetid: cb432d52-6c96-45d2-bbde-45b0de3f915c
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 936a20c4236ab76e5acdb178737c3044d3f53bfe
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f320ebf3311e2227a2969086606d3b3e592d6e63
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33418722"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59551569"
 ---
 # <a name="getinstance"></a>GetInstance
 
@@ -49,7 +49,7 @@ VOID GetInstance(
     
  _pvalSv_
   
-> [in] Zeiger auf eine einwertiger Eigenschaft zum Empfangen von Daten. 
+> [in] Zeiger auf eine einwertige Eigenschaft zum Empfangen von Daten. 
     
  _uliInst_
   
@@ -59,8 +59,8 @@ VOID GetInstance(
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Wenn der kopierte Wert für den zugewiesenen Arbeitsspeicher zu groß ist, kopiert die **GetInstance-Funktion** nur Zeiger, anstatt neuen Arbeitsspeicher zuzuordnen. 
+Wenn der kopierte Wert für den zugewiesenen Speicher zu groß ist, kopiert die **GetInstance-Funktion** nur Zeiger, anstatt neuen Speicher zuzuweisen. 
   
 

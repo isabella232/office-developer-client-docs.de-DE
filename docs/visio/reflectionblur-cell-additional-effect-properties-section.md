@@ -4,29 +4,29 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ece15159-6a33-4abd-8775-6fbe1cc43793
-description: Bestimmt die Unschärfe für eine Spiegelung einer Form in Punkten zwischen 0,0 und 100,0.
-ms.openlocfilehash: 67ed06d764b90afbc47895c4c714fefadbe6f062
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Bestimmt die Weichzeichnermenge für eine Spiegelung einer Form in Punkt zwischen 0,0 und 100,0.
+ms.openlocfilehash: e3c18cf2016f8b213d37061cfb216f8e76bf2e37
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33408012"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59570274"
 ---
 # <a name="reflectionblur-cell-additional-effect-properties-section"></a>Zelle "ReflectionBlur" (Abschnitt "Additional Effect Properties")
 
-Bestimmt die Unschärfe für eine Spiegelung einer Form in Punkten zwischen 0,0 und 100,0.
+Bestimmt die Weichzeichnermenge für eine Spiegelung einer Form in Punkt zwischen 0,0 und 100,0.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Um einen Verweis auf die **ReflectionBlur-Zelle** anhand des Namens aus einer anderen Formel, nach dem Wert des **N-Attributs** eines **Cell-Elements** oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Um einen Verweis auf die **Zelle ReflectionBlur** anhand des Namens aus einer anderen Formel, anhand des Werts des **N-Attributs** eines **Cell-Elements** oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | ReflectionBlur  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die **ReflectionBlur-Zelle** nach Index aus einem Programm zu erhalten: 
+Um einen Verweis auf die **Zelle ReflectionBlur** anhand des Indexes eines Programms abzurufen, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|

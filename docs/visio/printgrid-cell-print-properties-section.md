@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm1033794
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0504ff7f-2274-7ae3-1f4b-a3d890dbd79a
 description: Gibt an, ob beim Drucken einer Dokumentseite das Gitternetz gedruckt werden soll.
-ms.openlocfilehash: 9b98999cd02fa6a47ec8564bbd7337ecf8637306
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: e290e28920f3ece4f9493b52b223e85dc3888949
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33433206"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559759"
 ---
 # <a name="printgrid-cell-print-properties-section"></a>Zelle "PrintGrid" (Abschnitt "Print Properties")
 
@@ -25,19 +25,19 @@ Gibt an, ob beim Drucken einer Dokumentseite das Gitternetz gedruckt werden soll
 |TRUE  <br/> |Beim Drucken der Seite wird das Gitternetz gedruckt.  <br/> |
 |FALSE  <br/> |Das Gitternetz wird beim Drucken der Seite nicht gedruckt (Standard).  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieser Wert entspricht der Einstellung für das Kontrollkästchen **Gitterlinien** auf der Registerkarte **Druckeinrichtung** im Dialogfeld **Seite einrichten** (klicken Sie auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten**). Mit Ausnahme der Farbe (die Druckversion ist grau) ist das gedruckte Gitternetz identisch mit dem im Microsoft Visio-Zeichenfenster. 
   
-Sie können für einzelne Seiten festlegen, ob das Gitternetz gedruckt werden soll. Die Rasterart kann auch seiteweise im Dialogfeld Linealraster definiert werden  (klicken Sie  auf der Registerkarte Ansicht auf den Pfeil anzeigen), wenn eine Seite aktiv ist. **&amp;** 
+Sie können für einzelne Seiten festlegen, ob das Gitternetz gedruckt werden soll. Das Rasterformat kann auch seitenweise im Dialogfeld **&amp; Linealraster** definiert werden (klicken Sie auf **der** Registerkarte Ansicht auf den Pfeil **anzeigen),** wenn eine Seite aktiv ist. 
   
-Um einen Verweis auf die Zelle PrintGrid anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Um einen Verweis auf die Zelle "PrintGrid" anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |PrintGrid  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle PrintGrid nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle PrintGrid anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

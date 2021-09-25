@@ -1,31 +1,31 @@
 ---
-title: PidTagStoreState (kanonische Eigenschaft)
+title: Kanonische PidTagStoreState-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagStoreState
 api_type:
 - COM
 ms.assetid: 36e49cf5-1411-42c5-9112-09958243996d
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 8f00addf7abdd765d97c54350e46979f788f06ba
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: c1607fd14527f64f68673396a2e77639d21b770b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32341153"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59578942"
 ---
-# <a name="pidtagstorestate-canonical-property"></a>PidTagStoreState (kanonische Eigenschaft)
+# <a name="pidtagstorestate-canonical-property"></a>Kanonische PidTagStoreState-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein Flag, das den Status des Nachrichtenspeichers beschreibt. 
+Enthält ein Kennzeichen, das den Status des Nachrichtenspeichers beschreibt. 
   
 |||
 |:-----|:-----|
@@ -34,7 +34,7 @@ Enthält ein Flag, das den Status des Nachrichtenspeichers beschreibt.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Nachrichtenspeicher  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft ist dynamisch und kann sich basierend auf Benutzeraktionen ändern, im Gegensatz zur **PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md)) -Eigenschaft. 
   
@@ -42,7 +42,7 @@ Der folgende Wert kann festgelegt werden:
   
 STORE_HAS_SEARCHES 
   
-> Der Benutzer hat mindestens eine aktive Suche im Store erstellt.
+> Der Benutzer hat eine oder mehrere aktive Suchvorgänge im Speicher erstellt.
     
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -50,21 +50,21 @@ STORE_HAS_SEARCHES
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXCSTOR]](https://msdn.microsoft.com/library/d42ed1e0-3e77-4264-bd59-7afc583510e2%28Office.15%29.aspx)
   
-> Gibt zulässige Vorgänge für die Zentralen Nachrichtenspeicherobjekte an.
+> Gibt zulässige Vorgänge für die zentralen Nachrichtenspeicherobjekte an.
     
 ### <a name="header-files"></a>Headerdateien
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -72,9 +72,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

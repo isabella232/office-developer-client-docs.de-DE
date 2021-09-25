@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 32a5d4b7-ead7-24e7-58f2-750232263a0d
 description: Speichert Änderungen am angegebenen Konto.
-ms.openlocfilehash: dbb1dffa1725e96bd2ab635341718ce53738b864
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 48df3b07e9b98a277d0dfe7a210f88a8e3dbbc2f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429607"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59551996"
 ---
 # <a name="iolkaccountmanagersavechanges"></a>IOlkAccountManager::SaveChanges
 
@@ -31,11 +31,11 @@ HRESULT IOlkAccountManager::SaveChanges (
 
 ## <a name="parameters"></a>Parameter
 
-_dwAcctID_
+_invalidAcctID_
   
 > [in] Die zu speichernde Konto-ID. 
     
-_dwFlags_
+_Dwflags_
   
 > [in] Flags, die Verhalten ändern. OLK_ACCOUNT_NO_FLAGS ist der einzige unterstützte Wert.
     
@@ -43,11 +43,11 @@ _dwFlags_
 
 |**[HRESULT]**|**Description**|
 |:-----|:-----|
-|S_OK  <br/> |Der Aufruf ist erfolgreich  <br/> |
-|E_ACCT_NOT_FOUND  <br/> |Das angegebene Konto wurde nicht gefunden.  <br/> |
+|S_OK  <br/> |Der Aufruf war erfolgreich.  <br/> |
+|E_ACCT_NOT_FOUND  <br/> |Das angegebene Konto konnte nicht gefunden werden.  <br/> |
 |E_OLK_NOT_INITIALIZED  <br/> |Konto-Manager wurde nicht für die Verwendung initialisiert.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Nachdem Sie den Wert der Kontoeigenschaften mithilfe von [IOlkAccount::SetProp](iolkaccount-setprop.md)geändert haben, verwenden Sie **IOlkAccountManager::SaveChanges** oder [IOlkAccount::SaveChanges,](iolkaccount-savechanges.md) um solche Änderungen zu speichern. 
   

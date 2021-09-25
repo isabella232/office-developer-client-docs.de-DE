@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5c4d07bf-4edc-e241-7827-017f96c11957
 description: Stellt ein einzelnes Überprüfungsproblem im Dokument dar.
-ms.openlocfilehash: 73c83fe47ebf9921686ea7b35c5f94a06b803623
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 5c4dd15cc86f22fb465b4b2a1856ec46802d7fdc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34541127"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59570379"
 ---
 # <a name="issue-element-issues_type-complextype-visio-xml"></a>Issue-Element (Issues_Type complexType) (Visio XML)
 
@@ -36,7 +36,7 @@ Stellt ein einzelnes Überprüfungsproblem im Dokument dar.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -48,14 +48,14 @@ Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccur
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[IssueTarget](issuetarget-element-issue_type-complextypevisio-xml.md) <br/> |[IssueTarget_Type](issuetarget_type-complextypevisio-xml.md) <br/> |Gibt je nach Ziel des übergeordneten Überprüfungsproblems entweder die Seite oder sowohl die Seite als auch die Form an, die dem übergeordneten Überprüfungsproblem zugeordnet ist.  <br/> |
+|[IssueTarget](issuetarget-element-issue_type-complextypevisio-xml.md) <br/> |[IssueTarget_Type](issuetarget_type-complextypevisio-xml.md) <br/> |Gibt abhängig vom Ziel des übergeordneten Überprüfungsproblems entweder die Seite oder die Seite und das Shape an, die dem übergeordneten Überprüfungsproblem zugeordnet sind.  <br/> |
 |[RuleInfo](ruleinfo-element-issue_type-complextypevisio-xml.md) <br/> |[RuleInfo_Type](ruleinfo_type-complextypevisio-xml.md) <br/> |Gibt Informationen zur Überprüfungsregel an, auf die sich das übergeordnete Überprüfungsproblem bezieht.  <br/> |
    
 ### <a name="attributes"></a>Attribute
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|ID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> |Gibt den eindeutigen Bezeichner des Überprüfungsproblems an.  <br/> |Werte des xsd:unsignedInt-Typs.  <br/> |
-|Ignoriert  <br/> |xsd:boolean  <br/> |Optional  <br/> |Gibt Informationen zur Überprüfungsregel an, auf die sich das übergeordnete Überprüfungsproblem bezieht.  <br/> |Werte des typs xsd:boolean.  <br/> |
+|ID  <br/> |xsd:unsignedInt  <br/> |Erforderlich  <br/> |Gibt den eindeutigen Bezeichner des Überprüfungsproblems an.  <br/> |Werte des Typs "xsd:unsignedInt".  <br/> |
+|Ignoriert  <br/> |xsd:boolean  <br/> |Optional  <br/> |Gibt Informationen zur Überprüfungsregel an, auf die sich das übergeordnete Überprüfungsproblem bezieht.  <br/> |Werte des Typs "xsd:boolean".  <br/> |
    
 

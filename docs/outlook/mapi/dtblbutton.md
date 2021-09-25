@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.DTBLBUTTON
 api_type:
 - COM
 ms.assetid: 6058c78b-05d4-45a3-988c-1fbf8322125e
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a8fa683fecd59ec813fee0c15d5b4f08084c645d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: beb61d82ae0fe07355e3501d6b8f4cda3fc7f405
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33412786"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59588102"
 ---
 # <a name="dtblbutton"></a>DTBLBUTTON
 
@@ -42,33 +42,33 @@ typedef struct _DTBLBUTTON
 
 ```
 
-## <a name="members"></a>Elemente
+## <a name="members"></a>Members
 
  **ulbLpszLabel**
   
-> Position im Arbeitsspeicher der Zeichenzeichenfolge, die auf der Schaltfläche angezeigt wird.
+> Position im Speicher der Zeichenzeichenfolge, die auf der Schaltfläche angezeigt wird.
     
  **ulFlags**
   
-> Bitmaske von Flags, die verwendet werden, um das Format der Bezeichnung zu bestimmen, auf das das **ulbLpszLabel-Element** verweist. Das folgende Flag kann festgelegt werden: 
+> Bitmaske von Flags, die zum Festlegen des Formats der Bezeichnung verwendet werden, auf die vom **ulbLpszLabel-Element** verwiesen wird. Das folgende Kennzeichen kann festgelegt werden: 
     
 MAPI_UNICODE 
   
-> Die Bezeichnung ist im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befindet sich die Bezeichnung im ANSI-Format.
+> Die Beschriftung hat das Unicode-Format. Wenn das MAPI_UNICODE-Kennzeichen nicht festgelegt ist, hat die Bezeichnung das ANSI-Format.
     
  **ulPRControl**
   
-> Eigenschaftstag für eine Eigenschaft vom Typ PT_OBJECT, die die [IMAPIControl-Schnittstelle](imapicontroliunknown.md) implementiert. Wenn auf die Schaltfläche geklickt wird, ruft MAPI die [IMAPIProp::OpenProperty-Methode](imapiprop-openproperty.md) auf, damit die [IMAPIProp-Implementierung](imapipropiunknown.md) der Anzeigetabelle diese Eigenschaft abruft. 
+> Eigenschaftstag für eine Eigenschaft vom Typ PT_OBJECT, die die [IMAPIControl-Schnittstelle](imapicontroliunknown.md) implementiert. Wenn auf die Schaltfläche geklickt wird, ruft MAPI die [IMAPIProp::OpenProperty-Methode](imapiprop-openproperty.md) für die [IMAPIProp-Implementierung](imapipropiunknown.md) der Anzeigetabelle auf, um diese Eigenschaft abzurufen. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Eine **DTBLBUTTON-Struktur** beschreibt eine Schaltfläche, die einem Benutzer beim Klicken auf ein Steuerelement das Starten eines Vorgangs ermöglicht. In der Regel wird durch Klicken auf eine Schaltfläche ein modales Dialogfeld angezeigt oder eine programmgesteuerte Aufgabe aufgerufen. Dienstanbieter können alles über ein Schaltflächensteuerelement implementieren. Wenn die Schaltfläche eine Aufgabe basierend auf den Werten anderer Steuerelemente ausführen soll, müssen diese Steuerelemente das Flag DT_SET_IMMEDIATE haben. 
+Eine **DTBLBUTTON-Struktur** beschreibt eine Schaltfläche eines Steuerelements, mit dem ein Benutzer, wenn darauf geklickt wird, einen Vorgang starten kann. In der Regel wird durch Klicken auf eine Schaltfläche ein modales Dialogfeld angezeigt oder eine programmgesteuerte Aufgabe aufgerufen. Dienstanbieter können alles über ein Schaltflächensteuerelement implementieren. Wenn die Schaltfläche eine Aufgabe basierend auf den Werten anderer Steuerelemente ausführen soll, müssen diese Steuerelemente das flag DT_SET_IMMEDIATE festgelegt haben. 
   
-Das **ulbLpszLabel-Element** ist die Position im Speicher der Zeichenzeichenfolge, die auf der Schaltfläche angezeigt wird. Dienstanbieter können ein kaufmännisches Und -Zeichen ( ) hinzufügen, um eine Windows &amp; in der Schaltflächenbeschriftung anzugeben. Das Drücken einer Zugriffstaste hat dieselbe Auswirkung wie das Klicken auf die Schaltfläche. 
+Der **ulbLpszLabel-Member** ist die Position im Speicher der Zeichenzeichenfolge, die auf der Schaltfläche angezeigt wird. Dienstanbieter können ein kaufmännisches Und-Zeichen &amp; () hinzufügen, um eine Windows Zugriffstaste in der Schaltflächenbeschriftung anzugeben. Das Drücken einer Tastenkombination hat denselben Effekt wie das Klicken auf die Schaltfläche. 
   
-Das **ulPRControl-Element** beschreibt eine Objekteigenschaft, die beim Öffnen mit der **IMAPIProp::OpenProperty-Methode** einen Zeiger auf ein Steuerelementobjekt zurückgibt. Die Implementierung eines Steuerelementobjekts, das die **IMAPIControl-Schnittstelle** unterstützt, ist eine Möglichkeit, den MAPI-Featuresatz zu erweitern und den Vorgang oder die Aufgabe zu definieren, die beim Klicken auf die Schaltfläche ausgeführt wird. **IMAPIControl bietet** zwei Methoden zum Bearbeiten von Schaltflächen: [GetState](imapicontrol-getstate.md) zum Deaktivieren oder Aktivieren von Schaltflächen und [Aktivieren,](imapicontrol-activate.md) um Schaltflächenklicks zu verarbeiten. 
+Der **ulPRControl-Member** beschreibt eine Objekteigenschaft, die beim Öffnen mit der **IMAPIProp::OpenProperty-Methode** einen Zeiger auf ein Steuerelementobjekt zurückgibt. Das Implementieren eines Steuerelementobjekts, das die **IMAPIControl-Schnittstelle** unterstützt, ist eine Möglichkeit, den MAPI-Featuresatz zu erweitern und den Vorgang oder die Aufgabe zu definieren, die beim Klicken auf die Schaltfläche auftritt. **IMAPIControl** stellt zwei Methoden zum Bearbeiten von Schaltflächen bereit: [GetState](imapicontrol-getstate.md) zum Deaktivieren oder Aktivieren von Schaltflächen und [Aktivieren](imapicontrol-activate.md) zum Verarbeiten von Schaltflächenklicks. 
   
-Eine Übersicht über Anzeigetabellen finden Sie unter [Display Tables](display-tables.md). Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
+Eine Übersicht über Anzeigetabellen finden Sie unter ["Anzeigetabellen".](display-tables.md) Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle.](display-table-implementation.md)
   
 ## <a name="see-also"></a>Siehe auch
 

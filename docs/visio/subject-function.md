@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251575
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c19efa2e-8249-d589-3f93-26c22dc4f4e7
 description: Gibt den Text aus dem Feld Betreff der Eigenschaften eines Dokuments zurück.
-ms.openlocfilehash: 39413620e94a33726088e2a0e90989b1ccbbdabc
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 5829e4ed95cba436571d5c10b68c126f973a353f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33426849"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59553739"
 ---
 # <a name="subject-function"></a>SUBJECT Function
 
@@ -22,7 +22,7 @@ Gibt den Text aus dem **Feld Betreff** der Eigenschaften eines Dokuments zurück
   
 ## <a name="syntax"></a>Syntax
 
-SUBJECT ()
+BETREFF ()
   
 ### <a name="return-value"></a>Rückgabewert
 

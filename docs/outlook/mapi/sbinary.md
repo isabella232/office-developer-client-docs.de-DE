@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.SBinary
 api_type:
 - COM
 ms.assetid: f21b5e6c-7a63-46bf-acbf-0e042e3519f7
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 38263f46ccb50e1836f31d457f54f52abca7ce9f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: af523723a4a835ed4585cc9001522d087c5f2cab
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407844"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59578739"
 ---
 # <a name="sbinary"></a>SBinary
 
@@ -40,7 +40,7 @@ typedef struct _SBinary
 
 ```
 
-## <a name="members"></a>Elemente
+## <a name="members"></a>Members
 
  **cb**
   
@@ -48,9 +48,9 @@ typedef struct _SBinary
     
  **lpb**
   
-> Zeiger auf den wert PT_BINARY Eigenschaft.
+> Zeiger auf den wert der PT_BINARY-Eigenschaft.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Informationen zu Eigenschaftstypen finden Sie unter [MAPI Property Type Overview](mapi-property-type-overview.md).
   

@@ -3,17 +3,17 @@ title: Suchen nach gesendeten oder gespeicherten Nachrichten
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 6b6714a5-7f36-4a72-9a2a-0d7fdf0e21b7
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 86373fae2753df66d4456cc0fc00f8b289977650
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 77d7173a6a62a375108f0d8bcffa3b99237417b2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33437420"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59588000"
 ---
 # <a name="finding-sent-or-saved-messages"></a>Suchen nach gesendeten oder gespeicherten Nachrichten
 
@@ -23,11 +23,11 @@ ms.locfileid: "33437420"
   
  **So suchen Sie alle ausgehenden Nachrichten, die Sie gespeichert oder gesendet haben**
   
-1. Rufen [Sie IMsgStore::CompareEntryIDs](imsgstore-compareentryids.md) auf, um den Ordner mit den gesendeten Nachrichten mit dem Ordner zu vergleichen, der ihre eingehenden Nachrichten enthält. 
+1. Rufen [Sie IMsgStore::CompareEntryIDs](imsgstore-compareentryids.md) auf, um den Ordner, der Ihre gesendeten Nachrichten enthält, mit dem Ordner zu vergleichen, der Ihre eingehenden Nachrichten enthält. 
     
-2. Legen Sie den  _lpEntryID1-Parameter_ **auf PR_IPM_SENTMAIL_ENTRYID** ([PidTagIpmSentMailEntryId](pidtagipmsentmailentryid-canonical-property.md)) und  _den lpEntryID2-Parameter_ auf **PR_PARENT_ENTRYID** ([PidTagParentEntryId](pidtagparententryid-canonical-property.md))
+2. Legen Sie den  _Parameter lpEntryID1_ so fest, **dass er** auf PR_IPM_SENTMAIL_ENTRYID ([PidTagIpmSentMailEntryId](pidtagipmsentmailentryid-canonical-property.md)) und den  _Parameter lpEntryID2_ verweist, um auf **PR_PARENT_ENTRYID** ([PidTagParentEntryId](pidtagparententryid-canonical-property.md)) zu verweisen.
     
-Beachten Sie, dass diese Strategie nicht funktioniert, wenn Sie Nachrichten löschen, nachdem sie gesendet wurden oder eine der gesendeten Nachrichten in einen anderen Ordner verschoben haben. 
+Beachten Sie, dass diese Strategie nicht funktioniert, wenn Sie nachrichten löschen, nachdem sie gesendet wurden oder eine der gesendeten Nachrichten in einen anderen Ordner verschoben haben. 
   
 Wenn Sie bei der Untersuchung einer eingehenden Nachricht feststellen, dass die Eigenschaften fehlen, die normalerweise von einem Transportanbieter festgelegt werden, können Sie davon ausgehen, dass die Nachricht nie von einem Transportanbieter verarbeitet wurde. Zu diesen Eigenschaften zählen:
   

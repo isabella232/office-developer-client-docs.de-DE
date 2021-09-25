@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 88950eda-85ae-ad7a-46c6-0e1933d35e04
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: bf60b12a6e4575d3504a112aa2b54fb8c4ae23c7
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 59f3034fa4217f3ee43cda959e07fd0bc9f8f784
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33433724"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59551646"
 ---
 # <a name="exchange_store_version_num"></a>EXCHANGE_STORE_VERSION_NUM
 
@@ -21,7 +21,7 @@ ms.locfileid: "33433724"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Speichert Versionsinformationen für die Microsoft Exchange Server, mit der Konten in einem Microsoft Office Outlook verbunden sind.
+Speichert Versionsinformationen für die Microsoft Exchange Server, mit denen Konten in einem Microsoft Office Outlook-Profil verbunden sind.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -39,7 +39,7 @@ typedef struct {
 
  _wMajorVersion_
   
-- Hauptversionsnummer, die in der Regel erhöht wird, wenn eine Version wichtige neue Features und Änderungen in der Funktionalität enthält.
+- Hauptversionsnummer, die in der Regel erhöht wird, wenn eine Version erhebliche neue Features und Änderungen an der Funktionalität enthält.
     
  _wMinorVersion_
   
@@ -47,11 +47,11 @@ typedef struct {
     
  _wBuild_
   
-- Hauptbaunummer, die bestimmten Haupt- und Nebenversionsnummern entspricht und in einer internen Version, die neue Features oder Korrekturen enthält, in der Regel erhöht wird. Dieser Wert wird auch erhöht, wenn es sich bei der Veröffentlichung um einen wichtigen internen Codezweig oder Meilenstein handelt, z. B. einen Veröffentlichungskandidaten.
+- Hauptbuildnummer, die bestimmten Haupt- und Nebenversionsnummern entspricht und in der Regel in einer internen Version erhöht wird, die neue Features oder Fixes enthält. Dieser Wert wird auch erhöht, wenn die Version ein wichtiger interner Codezweig oder Meilenstein ist, z. B. ein Release-Kandidat.
     
  _wMinorBuild_
   
-- Kleinere Buildnummer, die in der Regel in einer internen Version erhöht wird, die neue Features oder Korrekturen enthält, die einem bestimmten Hauptbaustein entspricht, der eine Hauptcodeverzweigung oder einen Meilenstein kennzeichnet.
+- Kleinere Buildnummer, die in der Regel in einer internen Version erhöht wird, die neue Features oder Fixes enthält, die einem bestimmten Hauptbuild entsprechen, der eine Hauptcodeverzweigung oder einen Meilenstein angibt.
     
 ## <a name="see-also"></a>Siehe auch
 

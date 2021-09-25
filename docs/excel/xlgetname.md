@@ -7,16 +7,16 @@ ms.topic: reference
 f1_keywords:
 - xlGetName
 keywords:
-- xlgetname-Funktion [excel 2007]
-localization_priority: Normal
+- Xlgetname-Funktion [Excel 2007]
+ms.localizationpriority: medium
 ms.assetid: 72dbebc0-7436-4771-8fbf-2b445341da65
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 350ae99baf088a36fa3e1159caa1805cdd623276
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 9777cc687ddae573debf337daa5c230d6e091155
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33430588"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552164"
 ---
 # <a name="xlgetname"></a>xlGetName
 

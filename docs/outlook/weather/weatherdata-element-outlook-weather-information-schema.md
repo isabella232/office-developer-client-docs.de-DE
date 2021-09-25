@@ -1,21 +1,21 @@
 ---
-title: weatherdata-Element (Outlook Wetterinformationsschema)
+title: weatherdata-Element (Outlook Weather Information Schema)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 84b16927-964e-24be-feaa-e0c11cf062f3
 description: Definiert das Wetterelement.
-ms.openlocfilehash: bb8c76efd03661083a15aa315cf42c3a6c088b6f
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: cd2f761699b0b8ff18486b8705b3bece88a65b67
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538984"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59560256"
 ---
-# <a name="weatherdata-element-outlook-weather-information-schema"></a>weatherdata-Element (Outlook Wetterinformationsschema)
+# <a name="weatherdata-element-outlook-weather-information-schema"></a>weatherdata-Element (Outlook Weather Information Schema)
 
 Definiert das Wetterelement.
   
@@ -46,7 +46,7 @@ Definiert das Wetterelement.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

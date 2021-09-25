@@ -4,191 +4,191 @@ manager: kelbow
 ms.date: 08/18/2017
 ms.audience: Developer
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2b5beeb6-e52d-41be-94df-083d36141a9d
-description: Microsoft Access verwendet reservierte Schlüsselwörter zum Definieren, Bearbeiten und Zugreifen auf Datenbanken. Reservierte Schlüsselwörter sind Teil der Grammatik der Sprache, die von Access zum Analysieren und Verstehen von SQL wird.
-ms.openlocfilehash: 132f912d2b6b5a65980355b18c0a23eaa8c24cbc
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Microsoft Access verwendet reservierte Schlüsselwörter zum Definieren, Bearbeiten und Zugreifen auf Datenbanken. Reservierte Schlüsselwörter sind Teil der Grammatik der Sprache, die von Access verwendet wird, um SQL Anweisungen zu analysieren und zu verstehen.
+ms.openlocfilehash: 3404cc630f774f95d4364792fbfbb31c3f960a0e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424980"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59588420"
 ---
 # <a name="reserved-keywords-access-custom-web-app"></a>Reservierte Schlüsselwörter (benutzerdefinierte Access-Web-App)
 
-Microsoft Access verwendet reservierte Schlüsselwörter zum Definieren, Bearbeiten und Zugreifen auf Datenbanken. Reservierte Schlüsselwörter sind Teil der Grammatik der Sprache, die von Access zum Analysieren und Verstehen von SQL wird. 
+Microsoft Access verwendet reservierte Schlüsselwörter zum Definieren, Bearbeiten und Zugreifen auf Datenbanken. Reservierte Schlüsselwörter sind Teil der Grammatik der Sprache, die von Access verwendet wird, um SQL Anweisungen zu analysieren und zu verstehen. 
   
 > [!IMPORTANT]
 > Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 ## <a name="access-reserved-keywords"></a>Zugriff auf reservierte Schlüsselwörter
 
-In der folgenden Tabelle sind reservierte Access-Schlüsselwörter aufgeführt.
+In der folgenden Tabelle sind reservierte Schlüsselwörter für Access aufgeführt.
   
 ||||
 |:-----|:-----|:-----|
-|ADD  <br/> |FILLFACTOR  <br/> |Quartal  <br/> |
+|HINZUFÜGEN  <br/> |FILLFACTOR  <br/> |Quartal  <br/> |
 |ALLE  <br/> |Gleitkommazahl  <br/> |RAISERROR  <br/> |
-|ALTER  <br/> |FOR  <br/> |READ  <br/> |
-|UND  <br/> |FOREIGN  <br/> |READTEXT  <br/> |
-|ANY  <br/> |FREETEXT  <br/> |RECONFIGURE  <br/> |
+|ALTER  <br/> |FÜR  <br/> |LESEN  <br/> |
+|AND  <br/> |FOREIGN  <br/> |READTEXT  <br/> |
+|ANY  <br/> |FREETEXT  <br/> |KONFIGURIEREN  <br/> |
 |AS  <br/> |FREETEXTTABLE  <br/> |VERWEISE  <br/> |
 |ASC  <br/> |FROM  <br/> |REPLIKATION  <br/> |
-|AUTHORIZATION  <br/> |FULL  <br/> |RESTORE  <br/> |
-|SICHERUNG  <br/> |FUNCTION  <br/> |RESTRICT  <br/> |
-|BEGIN  <br/> |GOTO  <br/> |EINGABETASTE  <br/> |
-|ZWISCHEN  <br/> |GRANT  <br/> |REVERT  <br/> |
-|PAUSE  <br/> |GROUP  <br/> |REVOKE  <br/> |
-|DURCHSUCHEN  <br/> |HAVING  <br/> |Richting  <br/> |
+|AUTHORIZATION  <br/> |VOLL  <br/> |WIEDERHERSTELLEN  <br/> |
+|SICHERUNG  <br/> |FUNKTION  <br/> |RESTRICT  <br/> |
+|BEGINNEN  <br/> |GOTO  <br/> |EINGABETASTE  <br/> |
+|ZWISCHEN  <br/> |GRANT  <br/> |WIEDERHERSTELLEN  <br/> |
+|PAUSE  <br/> |GRUPPE  <br/> |REVOKE  <br/> |
+|DURCHSUCHEN  <br/> |HAVING  <br/> |RICHTING  <br/> |
 |BULK  <br/> |HOLDLOCK  <br/> |ROLLBACK  <br/> |
 |BY  <br/> |Stunde  <br/> |ROWCOUNT  <br/> |
-|CASCADE  <br/> |IDENTITY  <br/> |ROWGUIDCOL  <br/> |
-|CASE  <br/> |IDENTITY_INSERT  <br/> |RULE  <br/> |
+|CASCADE  <br/> |IDENTITÄT  <br/> |ROWGUIDCOL  <br/> |
+|FALL  <br/> |IDENTITY_INSERT  <br/> |REGEL  <br/> |
 |CHECK  <br/> |IDENTITYCOL  <br/> |SPEICHERN  <br/> |
-|PRÜFPUNKT  <br/> |IF  <br/> |SCHEMA  <br/> |
+|PRÜFPUNKT  <br/> |WENN  <br/> |SCHEMA  <br/> |
 |CLOSE  <br/> |IN  <br/> |Zweiter  <br/> |
 |CLUSTERED  <br/> |INDEX  <br/> |SECURITYAUDIT  <br/> |
 |COALESCE  <br/> |INNER  <br/> |SELECT  <br/> |
 |COLLATE  <br/> |EINFÜGEN  <br/> |SEMANTICKEYPHRASETABLE  <br/> |
-|COLUMN  <br/> |Ganze Zahl  <br/> |SEMANTICSIMILARITYDETAILSTABLE  <br/> |
-|COMMIT  <br/> |INTERSECT  <br/> |SEMANTICSIMILARITYTABLE  <br/> |
-|COMPUTE  <br/> |INTO  <br/> |SESSION_USER  <br/> |
-|CONSTRAINT  <br/> | IS  <br/> |SET  <br/> |
+|SPALTE  <br/> |Ganze Zahl  <br/> |SEMANTICSIMILARITYDETAILSTABLE  <br/> |
+|COMMIT  <br/> |SCHNEIDEN  <br/> |SEMANTICSIMILARITYTABLE  <br/> |
+|BERECHNEN  <br/> |INTO  <br/> |SESSION_USER  <br/> |
+|EINSCHRÄNKUNG  <br/> | IS  <br/> |FESTGELEGT  <br/> |
 |CONTAINS  <br/> |ISO_Week  <br/> |SETUSER  <br/> |
 |CONTAINSTABLE  <br/> |BEITRETEN  <br/> |ShortText  <br/> |
-|CONTINUE  <br/> |KEY  <br/> |HERUNTERFAHREN  <br/> |
-|CONVERT  <br/> |KILL  <br/> |SOME  <br/> |
-|CREATE  <br/> |LEFT  <br/> |STATISTIK  <br/> |
-|CROSS  <br/> |WIE  <br/> |SYSTEM_USER  <br/> |
+|WEITER  <br/> |SCHLÜSSEL  <br/> |HERUNTERFAHREN  <br/> |
+|CONVERT  <br/> |TÖTEN  <br/> |SOME  <br/> |
+|CREATE  <br/> |LINKS  <br/> |STATISTIKEN  <br/> |
+|KREUZ  <br/> |WIE  <br/> |SYSTEM_USER  <br/> |
 |Währung  <br/> |LINENO  <br/> |TABLE  <br/> |
-|CURRENT  <br/> |LOAD  <br/> |TABLESAMPLE  <br/> |
+|AKTUELLEN  <br/> |LADEN  <br/> |TABLESAMPLE  <br/> |
 |CURRENT_DATE  <br/> |LongText  <br/> |Text  <br/> |
 |CURRENT_TIME  <br/> |ZUSAMMENFÜHREN  <br/> |TEXTSIZE  <br/> |
-|CURRENT_TIMESTAMP  <br/> |Millisekunde  <br/> |THEN  <br/> |
+|CURRENT_TIMESTAMP  <br/> |Millisekunde  <br/> |DANN  <br/> |
 |CURRENT_USER  <br/> |Minute  <br/> |Zeit  <br/> |
 |CURSOR  <br/> |Monat  <br/> |TO  <br/> |
-|DATABASE  <br/> |NATIONAL  <br/> |Nach oben  <br/> |
+|DATENBANK  <br/> |NATIONAL  <br/> |NACH OBEN  <br/> |
 |Datum  <br/> |Nein  <br/> |TRAN  <br/> |
-|DateWithTime  <br/> |NOCHECK  <br/> |TRANSACTION  <br/> |
+|DateWithTime  <br/> |NOCHECK  <br/> |TRANSAKTION  <br/> |
 |Tag  <br/> |NONCLUSTERED  <br/> |TRIGGER  <br/> |
-|DayofYear  <br/> |NICHT  <br/> |TRUNCATE  <br/> |
+|Dayofyear  <br/> |NOT  <br/> |ABSCHNEIDEN  <br/> |
 |DBCC  <br/> |NULL  <br/> |TRY_CONVERT  <br/> |
-|DEALLOCATE  <br/> |NULLIF  <br/> |TSEQUAL  <br/> |
-|DECLARE  <br/> |OF  <br/> |UNION  <br/> |
-|DEFAULT  <br/> |OFF  <br/> |UNIQUE  <br/> |
+|FREIGEBEN  <br/> |NULLIF  <br/> |TSEQUAL  <br/> |
+|DECLARE  <br/> |VON  <br/> |UNION  <br/> |
+|STANDARD  <br/> |AUS  <br/> |UNIQUE  <br/> |
 |LÖSCHEN  <br/> |OFFSETS  <br/> |UNPIVOT  <br/> |
 |VERWEIGERN  <br/> |EIN  <br/> |UPDATE  <br/> |
 |DESC  <br/> |OPEN  <br/> |UPDATETEXT  <br/> |
-|DISK  <br/> |OPENDATASOURCE  <br/> |USE  <br/> |
+|DATENTRÄGER  <br/> |OPENDATASOURCE  <br/> |VERWENDEN  <br/> |
 |DISTINCT  <br/> |OPENQUERY  <br/> |USER  <br/> |
-|VERTEILT  <br/> |OPENROWSET  <br/> |VALUES  <br/> |
-|DOUBLE  <br/> |OPENXML  <br/> |VARYING  <br/> |
+|VERTEILT  <br/> |OPENROWSET  <br/> |WERTE  <br/> |
+|DOPPEL  <br/> |OPENXML  <br/> |VARYING  <br/> |
 |DROP  <br/> |OPTION  <br/> |VIEW  <br/> |
-|DUMP  <br/> |ODER  <br/> |WAITFOR  <br/> |
-|ELSE  <br/> |ORDER  <br/> |Woche  <br/> |
-|ENDE  <br/> |OUTER  <br/> |Wochentag  <br/> |
-|ERRLVL  <br/> |OVER  <br/> |WHEN  <br/> |
-|ESCAPE  <br/> |PERCENT  <br/> |WHERE  <br/> |
-|EXCEPT  <br/> |PIVOT  <br/> |WHILE  <br/> |
+|MÜLLKIPPE  <br/> |OR  <br/> |WAITFOR  <br/> |
+|ODER  <br/> |BESTELLUNG  <br/> |Woche  <br/> |
+|ENDE  <br/> |ÄUßEREN  <br/> |Wochentag  <br/> |
+|ERRLVL  <br/> |ÜBER  <br/> |WHEN  <br/> |
+|FLUCHT  <br/> |PROZENT  <br/> |WHERE  <br/> |
+|AUßER  <br/> |PIVOT  <br/> |WÄHREND  <br/> |
 |EXEC  <br/> |PLAN  <br/> |WITH  <br/> |
-|EXECUTE  <br/> |PRECISION  <br/> |INNERHALB DER GRUPPE  <br/> |
-|EXISTS  <br/> |PRIMARY  <br/> |WRITETEXT  <br/> |
-|EXIT  <br/> |PRINT  <br/> |Jahr  <br/> |
-|EXTERN  <br/> |PROC  <br/> |Ja  <br/> |
-|FETCH  <br/> |PROCEDURE  <br/> |YesNo  <br/> |
-|FILE  <br/> |PUBLIC  <br/> ||
+|AUSFÜHREN  <br/> |PRECISION  <br/> |INNERHALB DER GRUPPE  <br/> |
+|EXISTIERT  <br/> |PRIMARY  <br/> |WRITETEXT  <br/> |
+|AUSFAHRT  <br/> |DRUCKEN  <br/> |Jahr  <br/> |
+|EXTERNEN  <br/> |PROC  <br/> |Ja  <br/> |
+|FETCH  <br/> |VERFAHREN  <br/> |Yesno  <br/> |
+|DATEI  <br/> |PUBLIC  <br/> ||
    
 
   
-## <a name="odbc-reserved-keywords"></a>RESERVIERTe ODBC-Schlüsselwörter
+## <a name="odbc-reserved-keywords"></a>Reservierte ODBC-Schlüsselwörter
 
-Darüber hinaus definiert der ISO-Standard eine Liste der reservierten Schlüsselwörter. Vermeiden Sie die Verwendung von reservierten ISO-Schlüsselwörtern für Objektnamen und Bezeichner. Die in der folgenden Tabelle angezeigte reservierte OdBC-Schlüsselwortliste ist identisch mit der reservierten Schlüsselwortliste iso.
+Darüber hinaus definiert der ISO-Standard eine Liste reservierter Schlüsselwörter. Vermeiden Sie die Verwendung von iso-reservierten Schlüsselwörtern für Objektnamen und Bezeichner. Die in der folgenden Tabelle gezeigte reservierte ODBC-Schlüsselwortliste ist identisch mit der reservierten SCHLÜSSELWORTLISTE für ISO.
 
-Die folgenden Wörter sind für die Verwendung in ODBC-Funktionsaufrufen reserviert. Diese Wörter beschränken nicht die SQL Grammatik. Um jedoch die Kompatibilität mit Treibern sicherzustellen, die die Kerngrammatik SQL, sollten Anwendungen die Verwendung dieser Schlüsselwörter vermeiden.
+Die folgenden Wörter sind für die Verwendung in ODBC-Funktionsaufrufen reserviert. Diese Wörter schränken nicht die minimale SQL Grammatik ein. Um jedoch die Kompatibilität mit Treibern sicherzustellen, die die kern SQL Grammatik unterstützen, sollten Anwendungen diese Schlüsselwörter vermeiden.
   
 Dies ist die aktuelle Liste der reservierten ODBC-Schlüsselwörter.
   
 ||||
 |:-----|:-----|:-----|
-|ABSOLUTE  <br/> |EXEC  <br/> |ÜBERLAPPUNGEN  <br/> |
-|ACTION  <br/> |EXECUTE  <br/> |PAD  <br/> |
-|ADA  <br/> |EXISTS  <br/> |PARTIAL  <br/> |
-|ADD  <br/> |EXTERN  <br/> |PASCAL  <br/> |
+|ABSOLUTE  <br/> |EXEC  <br/> |ÜBERSCHNEIDUNGEN  <br/> |
+|AKTION  <br/> |AUSFÜHREN  <br/> |PAD  <br/> |
+|ADA  <br/> |EXISTIERT  <br/> |PARTIAL  <br/> |
+|HINZUFÜGEN  <br/> |EXTERNEN  <br/> |PASCAL  <br/> |
 |ALLE  <br/> |EXTRACT  <br/> |POSITION  <br/> |
-|ALLOCATE  <br/> |FALSE  <br/> |PRECISION  <br/> |
+|ZUORDNEN  <br/> |FALSE  <br/> |PRECISION  <br/> |
 |ALTER  <br/> |FETCH  <br/> |PREPARE  <br/> |
-|UND  <br/> |FIRST  <br/> |PRESERVE  <br/> |
+|AND  <br/> |FIRST  <br/> |ERHALTEN  <br/> |
 |ANY  <br/> |FLOAT  <br/> |PRIMARY  <br/> |
-|ARE  <br/> |FOR  <br/> |PRIOR  <br/> |
+|ARE  <br/> |FÜR  <br/> |VOR  <br/> |
 |AS  <br/> |FOREIGN  <br/> |PRIVILEGES  <br/> |
-|ASC  <br/> |FORTRAN  <br/> |PROCEDURE  <br/> |
+|ASC  <br/> |FORTRAN  <br/> |VERFAHREN  <br/> |
 |ASSERTION  <br/> |GEFUNDEN  <br/> |PUBLIC  <br/> |
-|AT  <br/> |FROM  <br/> |READ  <br/> |
-|AUTHORIZATION  <br/> |FULL  <br/> |REAL  <br/> |
+|AT  <br/> |FROM  <br/> |LESEN  <br/> |
+|AUTHORIZATION  <br/> |VOLL  <br/> |REAL  <br/> |
 |AVG  <br/> |GET  <br/> |VERWEISE  <br/> |
-|BEGIN  <br/> |GLOBAL  <br/> |RELATIVE  <br/> |
-|ZWISCHEN  <br/> |GO  <br/> |RESTRICT  <br/> |
+|BEGINNEN  <br/> |GLOBALEN  <br/> |RELATIVE  <br/> |
+|ZWISCHEN  <br/> |GEHEN  <br/> |RESTRICT  <br/> |
 |BIT  <br/> |GOTO  <br/> |REVOKE  <br/> |
-|BIT_LENGTH  <br/> |GRANT  <br/> |Richting  <br/> |
-|BOTH  <br/> |GROUP  <br/> |ROLLBACK  <br/> |
-|BY  <br/> |HAVING  <br/> |ROWS  <br/> |
+|BIT_LENGTH  <br/> |GRANT  <br/> |RICHTING  <br/> |
+|BOTH  <br/> |GRUPPE  <br/> |ROLLBACK  <br/> |
+|BY  <br/> |HAVING  <br/> |ZEILEN  <br/> |
 |CASCADE  <br/> |HOUR  <br/> |SCHEMA  <br/> |
-|CASCADED  <br/> |IDENTITY  <br/> |BILDLAUF  <br/> |
-|CASE  <br/> |IMMEDIATE  <br/> |SECOND  <br/> |
-|CAST  <br/> |IN  <br/> |SECTION  <br/> |
-|CATALOG  <br/> |INCLUDE  <br/> |SELECT  <br/> |
-|CHAR  <br/> |INDEX  <br/> |SESSION  <br/> |
+|KASKADIERTEN  <br/> |IDENTITÄT  <br/> |BLÄTTERN  <br/> |
+|FALL  <br/> |SOFORTIGE  <br/> |SECOND  <br/> |
+|CAST  <br/> |IN  <br/> |ABSCHNITT  <br/> |
+|CATALOG  <br/> |EINSCHLIEßEN  <br/> |SELECT  <br/> |
+|CHAR  <br/> |INDEX  <br/> |SITZUNG  <br/> |
 |CHAR_LENGTH  <br/> |INDIKATOR  <br/> |SESSION_USER  <br/> |
-|CHARACTER  <br/> |INITIALLY  <br/> |SET  <br/> |
+|CHARACTER  <br/> |ZUNÄCHST  <br/> |FESTGELEGT  <br/> |
 |CHARACTER_LENGTH  <br/> |INNER  <br/> |SIZE  <br/> |
 |CHECK  <br/> |INPUT  <br/> |SMALLINT  <br/> |
 |CLOSE  <br/> |INSENSITIVE  <br/> |SOME  <br/> |
 |COALESCE  <br/> |EINFÜGEN  <br/> |LEERTASTE  <br/> |
 |COLLATE  <br/> |INT  <br/> |SQL  <br/> |
 |COLLATION  <br/> |INTEGER  <br/> |SQLCA  <br/> |
-|COLUMN  <br/> |INTERSECT  <br/> |SQLCODE  <br/> |
+|SPALTE  <br/> |SCHNEIDEN  <br/> |SQLCODE  <br/> |
 |COMMIT  <br/> |INTERVAL  <br/> |SQLERROR  <br/> |
 |CONNECT  <br/> |INTO  <br/> |SQLSTATE  <br/> |
 |CONNECTION  <br/> | IS  <br/> |SQLWARNING  <br/> |
-|CONSTRAINT  <br/> |ISOLATION  <br/> |SUBSTRING  <br/> |
-|CONSTRAINTS  <br/> |BEITRETEN  <br/> |SUM  <br/> |
-|CONTINUE  <br/> |KEY  <br/> |SYSTEM_USER  <br/> |
+|EINSCHRÄNKUNG  <br/> |ISOLATION  <br/> |SUBSTRING  <br/> |
+|EINSCHRÄNKUNGEN  <br/> |BEITRETEN  <br/> |SUMME  <br/> |
+|WEITER  <br/> |SCHLÜSSEL  <br/> |SYSTEM_USER  <br/> |
 |CONVERT  <br/> |LANGUAGE  <br/> |TABLE  <br/> |
-|KORRESPONDIERENDE  <br/> |LAST  <br/> |TEMPOrär  <br/> |
-|COUNT  <br/> |LEADING  <br/> |THEN  <br/> |
-|CREATE  <br/> |LEFT  <br/> |TIME  <br/> |
-|CROSS  <br/> |LEVEL  <br/> |TIMESTAMP  <br/> |
-|CURRENT  <br/> |WIE  <br/> |TIMEZONE_HOUR  <br/> |
-|CURRENT_DATE  <br/> |LOCAL  <br/> |TIMEZONE_MINUTE  <br/> |
+|ENTSPRECHENDEN  <br/> |LAST  <br/> |TEMPORÄRE  <br/> |
+|COUNT  <br/> |FÜHRENDEN  <br/> |DANN  <br/> |
+|CREATE  <br/> |LINKS  <br/> |ZEIT  <br/> |
+|KREUZ  <br/> |EBENE  <br/> |TIMESTAMP  <br/> |
+|AKTUELLEN  <br/> |WIE  <br/> |TIMEZONE_HOUR  <br/> |
+|CURRENT_DATE  <br/> |LOKAL  <br/> |TIMEZONE_MINUTE  <br/> |
 |CURRENT_TIME  <br/> |LOWER  <br/> |TO  <br/> |
 |CURRENT_TIMESTAMP  <br/> |MATCH  <br/> |TRAILING  <br/> |
-|CURRENT_USER  <br/> |MAX  <br/> |TRANSACTION  <br/> |
+|CURRENT_USER  <br/> |MAX  <br/> |TRANSAKTION  <br/> |
 |CURSOR  <br/> |MIN  <br/> |TRANSLATE  <br/> |
 |DATE  <br/> |MINUTE  <br/> |TRANSLATION  <br/> |
-|DAY  <br/> |MODULE  <br/> |TRIM  <br/> |
-|DEALLOCATE  <br/> |MONTH  <br/> |TRUE  <br/> |
-|DEC  <br/> |NAMES  <br/> |UNION  <br/> |
+|DAY  <br/> |MODUL  <br/> |TRIM  <br/> |
+|FREIGEBEN  <br/> |MONTH  <br/> |TRUE  <br/> |
+|DEC  <br/> |NAMEN  <br/> |UNION  <br/> |
 |DECIMAL  <br/> |NATIONAL  <br/> |UNIQUE  <br/> |
-|DECLARE  <br/> |NATURAL  <br/> |UNKNOWN  <br/> |
-|DEFAULT  <br/> |NCHAR  <br/> |UPDATE  <br/> |
-|DEFERRABLE  <br/> |NEXT  <br/> |UPPER  <br/> |
-|VERZÖGERT  <br/> |NEIN  <br/> |USAGE  <br/> |
-|LÖSCHEN  <br/> |NONE  <br/> |USER  <br/> |
-|DESC  <br/> |NICHT  <br/> |USING  <br/> |
-|DESCRIBE  <br/> |NULL  <br/> |VALUE  <br/> |
-|DESCRIPTOR  <br/> |NULLIF  <br/> |VALUES  <br/> |
-|DIAGNOSE  <br/> |NUMERIC  <br/> |VARCHAR  <br/> |
+|DECLARE  <br/> |NATÜRLICHE  <br/> |UNKNOWN  <br/> |
+|STANDARD  <br/> |NCHAR  <br/> |UPDATE  <br/> |
+|DEFERRABLE  <br/> |NÄCHSTER  <br/> |UPPER  <br/> |
+|LATENT  <br/> |NEIN  <br/> |USAGE  <br/> |
+|LÖSCHEN  <br/> |NICHTS  <br/> |USER  <br/> |
+|DESC  <br/> |NOT  <br/> |USING  <br/> |
+|BESCHREIBEN  <br/> |NULL  <br/> |WERT  <br/> |
+|DESKRIPTOR  <br/> |NULLIF  <br/> |WERTE  <br/> |
+|DIAGNOSE  <br/> |NUMERISCHEN  <br/> |VARCHAR  <br/> |
 |DISCONNECT  <br/> |OCTET_LENGTH  <br/> |VARYING  <br/> |
-|DISTINCT  <br/> |OF  <br/> |VIEW  <br/> |
+|DISTINCT  <br/> |VON  <br/> |VIEW  <br/> |
 |DOMAIN  <br/> |EIN  <br/> |WHEN  <br/> |
-|DOUBLE  <br/> |ONLY  <br/> |WHENEVER  <br/> |
+|DOPPEL  <br/> |NUR  <br/> |WHENEVER  <br/> |
 |DROP  <br/> |OPEN  <br/> |WHERE  <br/> |
-|ELSE  <br/> |OPTION  <br/> |WITH  <br/> |
-|ENDE  <br/> |ODER  <br/> |WORK  <br/> |
-|END-EXEC  <br/> |ORDER  <br/> |WRITE  <br/> |
-|ESCAPE  <br/> |OUTER  <br/> |YEAR  <br/> |
-|EXCEPT  <br/> |OUTPUT  <br/> |ZONE  <br/> |
-|EXCEPTION  <br/> |||
+|ODER  <br/> |OPTION  <br/> |WITH  <br/> |
+|ENDE  <br/> |OR  <br/> |ARBEIT  <br/> |
+|END-EXEC  <br/> |BESTELLUNG  <br/> |SCHREIBEN  <br/> |
+|FLUCHT  <br/> |ÄUßEREN  <br/> |YEAR  <br/> |
+|AUßER  <br/> |OUTPUT  <br/> |ZONE  <br/> |
+|AUSNAHME  <br/> |||
    
 ## <a name="future-keywords"></a>Zukünftige Schlüsselwörter
 
@@ -197,95 +197,95 @@ Die folgenden Schlüsselwörter können in zukünftigen Versionen von SQL Server
 ||||
 |:-----|:-----|:-----|
 |ABSOLUTE  <br/> |HOST  <br/> |RELATIVE  <br/> |
-|ACTION  <br/> |HOUR  <br/> |RELEASE  <br/> |
-|ADMIN  <br/> |IGNORE  <br/> |RESULT  <br/> |
-|AFTER  <br/> |IMMEDIATE  <br/> |RETURNS  <br/> |
-|AGGREGATE  <br/> |INDIKATOR  <br/> |ROLE  <br/> |
-|ALIAS  <br/> |INITIALIZE  <br/> |ROLLUP  <br/> |
-|ALLOCATE  <br/> |INITIALLY  <br/> |ROUTINE  <br/> |
-|ARE  <br/> |INOUT  <br/> |ROW  <br/> |
-|ARRAY  <br/> |INPUT  <br/> |ROWS  <br/> |
-|ASENSITIVE  <br/> |INT  <br/> |SAVEPOINT  <br/> |
-|ASSERTION  <br/> |INTEGER  <br/> |BILDLAUF  <br/> |
-|ASYMMETRISCH  <br/> |SCHNITTMENGE  <br/> |SCOPE  <br/> |
-|AT  <br/> |INTERVAL  <br/> |SEARCH  <br/> |
+|AKTION  <br/> |HOUR  <br/> |RELEASE  <br/> |
+|ADMIN  <br/> |IGNORIEREN  <br/> |ERGEBNIS  <br/> |
+|NACH  <br/> |SOFORTIGE  <br/> |GIBT  <br/> |
+|AGGREGAT  <br/> |INDIKATOR  <br/> |ROLLE  <br/> |
+|ALIAS  <br/> |INITIALISIEREN  <br/> |ROLLUP  <br/> |
+|ZUORDNEN  <br/> |ZUNÄCHST  <br/> |ROUTINE  <br/> |
+|ARE  <br/> |INOUT  <br/> |ZEILE  <br/> |
+|ARRAY  <br/> |INPUT  <br/> |ZEILEN  <br/> |
+|ASENSITIVE  <br/> |INT  <br/> |SICHERUNGSPUNKT  <br/> |
+|ASSERTION  <br/> |INTEGER  <br/> |BLÄTTERN  <br/> |
+|ASYMMETRISCHEN  <br/> |SCHNITTPUNKT  <br/> |UMFANG  <br/> |
+|AT  <br/> |INTERVAL  <br/> |SUCHE  <br/> |
 |ATOMIC  <br/> |ISOLATION  <br/> |SECOND  <br/> |
-|BEFORE  <br/> |ITERATE  <br/> |SECTION  <br/> |
+|BEVOR  <br/> |DURCHLAUFEN  <br/> |ABSCHNITT  <br/> |
 |BINARY  <br/> |LANGUAGE  <br/> |VERTRAULICH  <br/> |
-|BIT  <br/> |LARGE  <br/> |SEQUENCE  <br/> |
-|BLOB  <br/> |LAST  <br/> |SESSION  <br/> |
-|BOOLEAN  <br/> |LATERAL  <br/> |SETS  <br/> |
-|BOTH  <br/> |LEADING  <br/> |ÄHNLICH  <br/> |
-|BREITE  <br/> |LESS  <br/> |SIZE  <br/> |
-|CALL  <br/> |LEVEL  <br/> |SMALLINT  <br/> |
-|CALLED  <br/> |LIKE_REGEX  <br/> |LEERTASTE  <br/> |
-|CARDINALITY  <br/> |LIMIT  <br/> |SPECIFIC  <br/> |
-|CASCADED  <br/> |LN  <br/> |SPECIFICTYPE  <br/> |
-|CAST  <br/> |LOCAL  <br/> |SQL  <br/> |
+|BIT  <br/> |GROßE  <br/> |SEQUENZ  <br/> |
+|BLOB  <br/> |LAST  <br/> |SITZUNG  <br/> |
+|BOOLEAN  <br/> |SEITLICHEN  <br/> |LEGT  <br/> |
+|BOTH  <br/> |FÜHRENDEN  <br/> |ÄHNLICHE  <br/> |
+|BREITE  <br/> |WENIGER  <br/> |SIZE  <br/> |
+|AUFRUFEN  <br/> |EBENE  <br/> |SMALLINT  <br/> |
+|AUFGERUFEN  <br/> |LIKE_REGEX  <br/> |LEERTASTE  <br/> |
+|KARDINALITÄT  <br/> |LIMIT  <br/> |BESTIMMTEN  <br/> |
+|KASKADIERTEN  <br/> |LN  <br/> |SPECIFICTYPE  <br/> |
+|CAST  <br/> |LOKAL  <br/> |SQL  <br/> |
 |CATALOG  <br/> |LOCALTIME  <br/> |SQLEXCEPTION  <br/> |
 |CHAR  <br/> |LOCALTIMESTAMP  <br/> |SQLSTATE  <br/> |
 |CHARACTER  <br/> |LOCATOR  <br/> |SQLWARNING  <br/> |
-|CLASS  <br/> |MAP  <br/> |START  <br/> |
-|CLOB  <br/> |MATCH  <br/> |STATE  <br/> |
-|COLLATION  <br/> |MEMBER  <br/> |STATEMENT  <br/> |
-|COLLECT  <br/> |METHODE  <br/> |STATIC  <br/> |
-|FERTIGSTELLUNG  <br/> |MINUTE  <br/> |STDDEV_POP  <br/> |
-|CONDITION  <br/> |MOD  <br/> |STDDEV_SAMP  <br/> |
-|CONNECT  <br/> |MODIFIZIEREN  <br/> |STRUCTURE  <br/> |
-|CONNECTION  <br/> |MODIFY  <br/> |SUBMULTISET  <br/> |
-|CONSTRAINTS  <br/> |MODULE  <br/> |SUBSTRING_REGEX  <br/> |
-|CONSTRUCTOR  <br/> |MONTH  <br/> |SYMMETRIC  <br/> |
+|KLASSE  <br/> |KARTE  <br/> |STARTEN  <br/> |
+|CLOB  <br/> |MATCH  <br/> |STAAT  <br/> |
+|COLLATION  <br/> |MITGLIED  <br/> |ANWEISUNG  <br/> |
+|SAMMELN  <br/> |METHODE  <br/> |STATISCHE  <br/> |
+|ABSCHLUSS  <br/> |MINUTE  <br/> |STDDEV_POP  <br/> |
+|ZUSTAND  <br/> |MOD  <br/> |STDDEV_SAMP  <br/> |
+|CONNECT  <br/> |ÄNDERT  <br/> |STRUKTUR  <br/> |
+|CONNECTION  <br/> |ÄNDERN  <br/> |SUBMULTISET  <br/> |
+|EINSCHRÄNKUNGEN  <br/> |MODUL  <br/> |SUBSTRING_REGEX  <br/> |
+|KONSTRUKTOR  <br/> |MONTH  <br/> |SYMMETRISCHEN  <br/> |
 |CORR  <br/> |MULTISET  <br/> |SYSTEM  <br/> |
-|KORRESPONDIERENDE  <br/> |NAMES  <br/> |TEMPOrär  <br/> |
-|COVAR_POP  <br/> |NATURAL  <br/> |TERMINATE  <br/> |
-|COVAR_SAMP  <br/> |NCHAR  <br/> |THAN  <br/> |
-|CUBE  <br/> |NCLOB  <br/> |TIME  <br/> |
-|CUME_DIST  <br/> |Neu  <br/> |TIMESTAMP  <br/> |
-|CURRENT_CATALOG  <br/> |NEXT  <br/> |TIMEZONE_HOUR  <br/> |
+|ENTSPRECHENDEN  <br/> |NAMEN  <br/> |TEMPORÄRE  <br/> |
+|COVAR_POP  <br/> |NATÜRLICHE  <br/> |BEENDEN  <br/> |
+|COVAR_SAMP  <br/> |NCHAR  <br/> |ALS  <br/> |
+|CUBE  <br/> |NCLOB  <br/> |ZEIT  <br/> |
+|CUME_DIST  <br/> |NEU  <br/> |TIMESTAMP  <br/> |
+|CURRENT_CATALOG  <br/> |NÄCHSTER  <br/> |TIMEZONE_HOUR  <br/> |
 |CURRENT_DEFAULT_TRANSFORM_GROUP  <br/> |NEIN  <br/> |TIMEZONE_MINUTE  <br/> |
-|CURRENT_PATH  <br/> |NONE  <br/> |TRAILING  <br/> |
-|CURRENT_ROLE  <br/> |NORMALIZE  <br/> |TRANSLATE_REGEX  <br/> |
-|CURRENT_SCHEMA  <br/> |NUMERIC  <br/> |TRANSLATION  <br/> |
-|CURRENT_TRANSFORM_GROUP_FOR_TYPE  <br/> |OBJECT  <br/> |TREAT  <br/> |
-|CYCLE  <br/> |OCCURRENCES_REGEX  <br/> |TRUE  <br/> |
-|DATA  <br/> |OLD  <br/> |UESCAPE  <br/> |
-|DATE  <br/> |ONLY  <br/> |UNDER  <br/> |
-|DAY  <br/> |OPERATION  <br/> |UNKNOWN  <br/> |
-|DEC  <br/> |ORDINALITY  <br/> |UNNEST  <br/> |
+|CURRENT_PATH  <br/> |NICHTS  <br/> |TRAILING  <br/> |
+|CURRENT_ROLE  <br/> |NORMALISIEREN  <br/> |TRANSLATE_REGEX  <br/> |
+|CURRENT_SCHEMA  <br/> |NUMERISCHEN  <br/> |TRANSLATION  <br/> |
+|CURRENT_TRANSFORM_GROUP_FOR_TYPE  <br/> |OBJEKT  <br/> |BEHANDELN  <br/> |
+|ZYKLUS  <br/> |OCCURRENCES_REGEX  <br/> |TRUE  <br/> |
+|DATEN  <br/> |ALT  <br/> |UESCAPE  <br/> |
+|DATE  <br/> |NUR  <br/> |UNTER  <br/> |
+|DAY  <br/> |VORGANG  <br/> |UNKNOWN  <br/> |
+|DEC  <br/> |ORDINALITÄT  <br/> |UNNEST  <br/> |
 |DECIMAL  <br/> |OUT  <br/> |USAGE  <br/> |
 |DEFERRABLE  <br/> |OVERLAY  <br/> |USING  <br/> |
-|VERZÖGERT  <br/> |OUTPUT  <br/> |VALUE  <br/> |
-|DEPTH  <br/> |PAD  <br/> |VAR_POP  <br/> |
+|LATENT  <br/> |OUTPUT  <br/> |WERT  <br/> |
+|TIEFE  <br/> |PAD  <br/> |VAR_POP  <br/> |
 |DEREF  <br/> |PARAMETER  <br/> |VAR_SAMP  <br/> |
-|DESCRIBE  <br/> |PARAMETER  <br/> |VARCHAR  <br/> |
-|DESCRIPTOR  <br/> |PARTIAL  <br/> |VARIABLE  <br/> |
-|DESTROY  <br/> |PARTITION  <br/> |WHENEVER  <br/> |
-|DESTRUCTOR  <br/> |PFAD  <br/> |WIDTH_BUCKET  <br/> |
-|DETERMINISTIC  <br/> |POSTFIX  <br/> |OHNE  <br/> |
-|WÖRTERBUCH  <br/> |PRÄFIX  <br/> |WINDOW  <br/> |
-|DIAGNOSE  <br/> |PREORDER  <br/> |WITHIN  <br/> |
-|DISCONNECT  <br/> |PREPARE  <br/> |WORK  <br/> |
-|DOMAIN  <br/> |PERCENT_RANK  <br/> |WRITE  <br/> |
-|DYNAMISCH  <br/> |PERCENTILE_CONT  <br/> |XMLAGG  <br/> |
-|EACH  <br/> |PERCENTILE_DISC  <br/> |XMLATTRIBUTES  <br/> |
+|BESCHREIBEN  <br/> |PARAMETER  <br/> |VARCHAR  <br/> |
+|DESKRIPTOR  <br/> |PARTIAL  <br/> |VARIABLE  <br/> |
+|ZERSTÖREN  <br/> |PARTITION  <br/> |WHENEVER  <br/> |
+|DESTRUKTOR  <br/> |PFAD  <br/> |WIDTH_BUCKET  <br/> |
+|DETERMINISTISCH  <br/> |POSTFIX  <br/> |OHNE  <br/> |
+|WÖRTERBUCH  <br/> |PRÄFIX  <br/> |FENSTER  <br/> |
+|DIAGNOSE  <br/> |PREORDER  <br/> |INNERHALB  <br/> |
+|DISCONNECT  <br/> |PREPARE  <br/> |ARBEIT  <br/> |
+|DOMAIN  <br/> |PERCENT_RANK  <br/> |SCHREIBEN  <br/> |
+|DYNAMISCHE  <br/> |PERCENTILE_CONT  <br/> |XMLAGG  <br/> |
+|JEDER  <br/> |PERCENTILE_DISC  <br/> |XMLATTRIBUTES  <br/> |
 |ELEMENT  <br/> |POSITION_REGEX  <br/> |XMLBINARY  <br/> |
-|END-EXEC  <br/> |PRESERVE  <br/> |XMLCAST  <br/> |
-|EQUALS  <br/> |PRIOR  <br/> |XMLCOMMENT  <br/> |
-|EVERY  <br/> |PRIVILEGES  <br/> |XMLCONCAT  <br/> |
-|EXCEPTION  <br/> |RANGE  <br/> |XMLDOCUMENT  <br/> |
-|FALSE  <br/> |READS  <br/> |XMLELEMENT  <br/> |
+|END-EXEC  <br/> |ERHALTEN  <br/> |XMLCAST  <br/> |
+|EQUALS  <br/> |VOR  <br/> |XMLCOMMENT  <br/> |
+|JEDEN  <br/> |PRIVILEGES  <br/> |XMLCONCAT  <br/> |
+|AUSNAHME  <br/> |RANGE  <br/> |XMLDOCUMENT  <br/> |
+|FALSE  <br/> |LIEST  <br/> |XMLELEMENT  <br/> |
 |FILTER  <br/> |REAL  <br/> |XMLEXISTS  <br/> |
-|FIRST  <br/> |REKURSIV  <br/> |XMLFOREST  <br/> |
+|FIRST  <br/> |REKURSIVE  <br/> |XMLFOREST  <br/> |
 |FLOAT  <br/> |REF  <br/> |XMLITERATE  <br/> |
 |GEFUNDEN  <br/> |VERWEISEN  <br/> |XMLNAMESPACES  <br/> |
 |KOSTENLOS  <br/> |REGR_AVGX  <br/> |XMLPARSE  <br/> |
 |FULLTEXTTABLE  <br/> |REGR_AVGY  <br/> |XMLPI  <br/> |
 |FUSION  <br/> |REGR_COUNT  <br/> |XMLQUERY  <br/> |
-|ALLGEMEIN  <br/> |REGR_INTERCEPT  <br/> |XMLSERIALIZE  <br/> |
+|ALLGEMEINE  <br/> |REGR_INTERCEPT  <br/> |XMLSERIALIZE  <br/> |
 |GET  <br/> |REGR_R2  <br/> |XMLTABLE  <br/> |
-|GLOBAL  <br/> |REGR_SLOPE  <br/> |XMLTEXT  <br/> |
-|GO  <br/> |REGR_SXX  <br/> |XMLVALIDATE  <br/> |
+|GLOBALEN  <br/> |REGR_SLOPE  <br/> |XMLTEXT  <br/> |
+|GEHEN  <br/> |REGR_SXX  <br/> |XMLVALIDATE  <br/> |
 |GRUPPIERUNG  <br/> |REGR_SXY  <br/> |YEAR  <br/> |
-|HOLD  <br/> |REGR_SYY  <br/> |ZONE  <br/> |
+|HALTEN  <br/> |REGR_SYY  <br/> |ZONE  <br/> |
    
 

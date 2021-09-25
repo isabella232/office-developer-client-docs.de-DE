@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: df210364-fe20-8e33-a455-9902f04ec739
 description: Löscht das angegebene Konto.
-ms.openlocfilehash: 3e39b7b9af57f64dd124e1bf836db68664709b8c
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: fd4c7570241db450e05ed8394d8360ead3c68451
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33431239"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552024"
 ---
 # <a name="iolkaccountmanagerdeleteaccount"></a>IOlkAccountManager::DeleteAccount
 
@@ -30,16 +30,16 @@ HRESULT IOlkAccountManager::DeleteAccount (
 
 ## <a name="parameters"></a>Parameter
 
-_dwAcctID_
+_invalidAcctID_
   
-> [in] Die Konto-ID des zu löschende Kontos.
+> [in] Die Konto-ID des zu löschenden Kontos.
     
 ## <a name="return-values"></a>Rückgabewerte
 
 |**[HRESULT]**|**Description**|
 |:-----|:-----|
-|S_OK  <br/> |Der Aufruf ist erfolgreich  <br/> |
-|E_ACCT_NOT_FOUND  <br/> |Das angegebene Konto wurde nicht gefunden.  <br/> |
+|S_OK  <br/> |Der Aufruf war erfolgreich.  <br/> |
+|E_ACCT_NOT_FOUND  <br/> |Das angegebene Konto konnte nicht gefunden werden.  <br/> |
 |E_OLK_NOT_INITIALIZED  <br/> |Konto-Manager wurde nicht für die Verwendung initialisiert.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IMAPIFormInfo.CalcVerbSet
 api_type:
 - COM
 ms.assetid: 0170dc9d-dc72-48e2-a522-374f199b18ea
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: babff746af16d51ca154d049943f6be7e9fab589
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 9c7ecf9ae44cb19c6040b713fe77cfb6cf44a066
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33428781"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59551289"
 ---
 # <a name="imapiforminfocalcverbset"></a>IMAPIFormInfo::CalcVerbSet
 
@@ -25,7 +25,7 @@ ms.locfileid: "33428781"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt einen Zeiger auf den vollständigen Satz von Verben zurück, den ein Formular verwendet.
+Gibt einen Zeiger auf den vollständigen Satz von Verben zurück, die ein Formular verwendet.
   
 ```cpp
 HRESULT CalcVerbSet(
@@ -38,11 +38,11 @@ HRESULT CalcVerbSet(
 
  _ulFlags_
   
-> [in] Eine Bitmaske mit Flags, die den Typ der zurückgegebenen Zeichenfolgen steuert. Das folgende Flag kann festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die den Typ der zurückgegebenen Zeichenfolgen steuert. Das folgende Kennzeichen kann festgelegt werden:
     
 MAPI_UNICODE 
   
-> Die zurückgegebenen Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Zeichenfolgen im ANSI-Format.
+> Die zurückgegebenen Zeichenfolgen haben das Unicode-Format. Wenn das flag MAPI_UNICODE nicht festgelegt ist, haben die Zeichenfolgen das ANSI-Format.
     
  _ppMAPIVerbArray_
   
@@ -56,11 +56,11 @@ S_OK
     
 MAPI_E_BAD_CHARWIDTH 
   
-> Entweder wurde MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
+> Entweder wurde das MAPI_UNICODE-Flag festgelegt, und die Implementierung unterstützt unicode nicht, oder MAPI_UNICODE wurde nicht festgelegt, und die Implementierung unterstützt nur Unicode.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Clientanwendungen rufen die **IMAPIFormInfo::CalcVerbSet-Methode** auf, um einen Zeiger auf die von einem Formular verwendeten Verben zu erhalten. In der **SMAPIVerbArray-Struktur,** die im _ppMAPIVerbArray-Parameter_ zurückgegeben wird, werden die Verben in der Reihenfolge der Indexnummer zurückgegeben. Der Index jedes Verbs befindet sich im **lVerb-Element.** Clientanwendungen können das Verbarray verwenden, um Menüs dynamisch zu erstellen, Schaltflächen auszublenden oder anzuzeigen und so weiter. 
+Clientanwendungen rufen die **IMAPIFormInfo::CalcVerbSet-Methode** auf, um einen Zeiger auf die von einem Formular verwendete Gruppe von Verben abzurufen. In der **SMAPIVerbArray-Struktur,** die im _PpMAPIVerbArray-Parameter_ zurückgegeben wird, werden die Verben in der Reihenfolge der Indexnummer zurückgegeben. Der Index jedes Verbs befindet sich in seinem **lVerb-Element.** Clientanwendungen können das Verbarray verwenden, um Menüs dynamisch zu erstellen, Schaltflächen auszublenden oder anzuzeigen usw. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 

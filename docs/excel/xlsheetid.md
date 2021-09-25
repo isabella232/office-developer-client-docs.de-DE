@@ -7,16 +7,16 @@ ms.topic: reference
 f1_keywords:
 - xlSheetId
 keywords:
-- xlsheetid-Funktion [excel 2007]
-localization_priority: Normal
+- xlsheetid-Funktion [Excel 2007]
+ms.localizationpriority: medium
 ms.assetid: cb32059c-b899-49cf-8028-ff828998ab75
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: a2ca1bb478c5c985ad7032e30ed0cfe3aef31406
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 34dc592d0f6dae54c73d37bd85d125168d0d9dc1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33428431"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552157"
 ---
 # <a name="xlsheetid"></a>xlSheetId
 
@@ -32,18 +32,18 @@ Excel12(xlSheetId, LPXLOPER12 pxRes, 1, LPXLOPER12 pxSheetName);
 
 _pxSheetName_ (**xltypeStr**)
   
-(Optional). Der Name des Buchs und blatts, über das Sie sich informieren möchten. Wenn dieser Wert nicht angegeben wird, gibt die **xlSheetId-Funktion** die Blatt-ID des aktiven Blatts (front) zurück. 
+(Optional). Der Name des Buchs und Blatts, über das Sie sich informieren möchten. Wenn dieser Wert weggelassen wird, gibt die **XlSheetId-Funktion** die Blatt-ID des aktiven (vorderen) Blatts zurück. 
   
 ## <a name="return-value"></a>Rückgabewert
 
 Gibt die Blatt-ID in _pxRes- \> val.mref.idSheet zurück._ 
   
 > [!NOTE]
-> Der  _pxRes- \> val.mref.lpmref-Arrayzeiger_ ist nach diesem Aufruf auf NULL festgelegt, sodass **xlFree** nicht mehr zum Lossen des speichers benötigt wird, der normalerweise in diesem Typ enthalten ist, obwohl dies absolut sicher ist. 
+> Der  _pxRes-val.mref.lpmref-Arrayzeiger \>_ wird nach diesem Aufruf auf NULL festgelegt, sodass **xlFree** nicht aufgerufen werden muss, um den Speicher freizugeben, der normalerweise in diesem Typ enthalten ist, obwohl dies völlig sicher ist. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die Arbeitsmappe, die das angegebene Blatt enthält, muss geöffnet sein, um diese Funktion verwenden zu können. Es gibt keine Möglichkeit, einen Verweis auf eine ungeöffnete Arbeitsmappe aus einer DLL zu erstellen. Weitere Informationen zur Verwendung von **xlSheetId** zum Erstellen von Verweisen finden Sie unter [Memory Management in Excel](memory-management-in-excel.md) beispiele of **xltypeRef** construction. 
+Die Arbeitsmappe, die das angegebene Blatt enthält, muss geöffnet sein, um diese Funktion verwenden zu können. Es gibt keine Möglichkeit, einen Verweis auf eine nicht geöffnete Arbeitsmappe aus einer DLL zu erstellen. Weitere Informationen zur Verwendung von **xlSheetId** zum Erstellen von Verweisen finden Sie unter [Speicherverwaltung in Excel,](memory-management-in-excel.md) um Beispiele für **die XltypeRef-Konstruktion** zu finden. 
   
 ## <a name="example"></a>Beispiel
 

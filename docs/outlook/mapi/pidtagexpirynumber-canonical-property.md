@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagExpiryNumber
 api_type:
 - HeaderDef
 ms.assetid: 644e8d3d-1792-4417-95a1-e978d0e6cd8e
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: da90347f5aacdb2fcac8547eddd5b89a0a44820d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 35b02523f8535bddc021af5445f4b8b1f748c464
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316366"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59579089"
 ---
 # <a name="pidtagexpirynumber-canonical-property"></a>PidTagExpiryNumber (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32316366"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Definiert die Ablauf sendezeit in Verbindung mit der **PR_EXPIRY_UNITS** ([PidTagExpiryUnits](pidtagexpiryunits-canonical-property.md)) -Eigenschaft.
+Definiert die Ablaufzeit in Verbindung mit der **PR_EXPIRY_UNITS** ([PidTagExpiryUnits](pidtagexpiryunits-canonical-property.md)) -Eigenschaft.
   
 |||
 |:-----|:-----|
@@ -34,7 +34,7 @@ Definiert die Ablauf sendezeit in Verbindung mit der **PR_EXPIRY_UNITS** ([PidTa
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Status  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Wert dieser Eigenschaft muss zwischen 0 und einschließlich 999 festgelegt werden, sofern vorhanden.
   
@@ -50,11 +50,11 @@ Der Wert dieser Eigenschaft muss zwischen 0 und einschließlich 999 festgelegt w
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -62,9 +62,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

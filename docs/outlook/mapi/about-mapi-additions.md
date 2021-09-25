@@ -3,21 +3,21 @@ title: Informationen zu MAPI-Ergänzungen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 78e2806d-bb6f-cd96-21f1-b7c667c73c33
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: fefa77a15cc2b8c72a41b29e6299f159a893cee8
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 033053c41988ad9b63f88def7652d1a37dae5f1e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33415292"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59588308"
 ---
 # <a name="about-mapi-additions"></a>Informationen zu MAPI-Ergänzungen
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPI-Ergänzungen sind APIs, die zur Messaging Application Programming Interface (MAPI) gehören, z. B. Datentypen, Funktionen und Eigenschaften, die zuvor nicht als Teil der Referenz des MAPI-Programmierers verfügbar gemacht und dokumentiert wurden. Sie enthalten die folgenden Definitionen und Eigenschaften.
+MAPI-Ergänzungen sind APIs, die zur MAPI (Messaging Application Programming Interface) gehören, z. B. Datentypen, Funktionen und Eigenschaften, die zuvor nicht als Teil der MAPI-Programmierreferenz verfügbar gemacht und dokumentiert wurden. Sie enthalten die folgenden Definitionen und Eigenschaften.
   
 ## <a name="constant-definitions"></a>Konstantendefinitionen
 
@@ -29,7 +29,7 @@ MAPI-Ergänzungen sind APIs, die zur Messaging Application Programming Interface
     
 - **[FollowUpStatus](followupstatus.md)**
     
-- **[Geschlecht](gender.md)**
+- **[Gender](gender.md)**
     
 - **[OlFlagIcon](olflagicon.md)**
     
@@ -39,7 +39,7 @@ MAPI-Ergänzungen sind APIs, die zur Messaging Application Programming Interface
     
 ## <a name="properties"></a>Eigenschaften
 
-Die folgenden Eigenschaften werden im Allgemeinen von Nachrichtenobjekten verfügbar gemacht.
+Die folgenden Eigenschaften werden in der Regel von Nachrichtenobjekten verfügbar gemacht.
   
 - **[PR_BODY_W](pidtagbody-canonical-property.md)**
     
@@ -79,7 +79,7 @@ Die folgenden Eigenschaften werden im Allgemeinen von Nachrichtenobjekten verfü
     
 - **[PR_SUBJECT_W](pidtagsubject-canonical-property.md)**
     
-Die folgenden Eigenschaften werden von Adressbuchinhaltsverzeichnisobjekten verfügbar gemacht.
+Die folgenden Eigenschaften werden von Adressbuchinhaltstabellenobjekten verfügbar gemacht.
   
 - **[PR_DISPLAY_TYPE_EX](pidtagdisplaytypeex-canonical-property.md)**
     
@@ -221,7 +221,7 @@ Die folgenden Eigenschaften werden von Speicherobjekten verfügbar gemacht.
     
 - **[PR_IPM_TASK_ENTRYID](pidtagipmtaskentryid-canonical-property.md)**
     
-Die folgenden Eigenschaften werden von Speicherobjekten verfügbar gemacht und bei der Suche nach bestimmten Elementen einer E-Mail im Store verwendet.
+Die folgenden Eigenschaften werden von Speicherobjekten verfügbar gemacht und werden zum Durchsuchen bestimmter Elemente einer E-Mail im Speicher verwendet.
   
 - **[PR_SEARCH_ATTACHMENTS_W](pidtagsearchattachments-canonical-property.md)**
     
@@ -234,7 +234,7 @@ Die folgenden Eigenschaften werden von Speicherobjekten verfügbar gemacht und b
 ## <a name="see-also"></a>Siehe auch
 
 - [Zugreifen auf einen Speicher auf dem Remoteserver, wenn Outlook sich im Exchange-Cache-Modus befindet](how-to-access-store-on-remote-server-in-cached-exchange-mode.md)  
-- [Erkennen der Version von Exchange Server in einem Outlook Profil](how-to-detect-the-version-of-exchange-server-in-an-outlook-profile.md)
+- [Ermitteln der Version von Exchange Server in einem Outlook Profil](how-to-detect-the-version-of-exchange-server-in-an-outlook-profile.md)
 - [Öffnen eines Speichers auf dem Remoteserver, wenn Outlook sich im Exchange-Cache-Modus befindet](how-to-open-store-on-remote-server-in-cached-exchange-mode.md)
 - [Verwalten einer Nachricht in einem OST ohne Aufrufen einer Synchronisierung im Exchange-Cache-Modus](how-to-manage-a-message-in-an-ost-without-invoking-a-synchronization.md)
 

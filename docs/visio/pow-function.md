@@ -6,23 +6,23 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251483
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c6519c55-5f98-ed0d-95b1-5443d0d23c0b
-description: Gibt eine Zahl zurück, die auf die Macht eines Exponenten angehoben wird.
-ms.openlocfilehash: 7a1102aa13f54d7e323247b83af3732ebb63acf4
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Gibt eine Zahl zurück, die mit der Potenz eines Exponenten ausgelöst wurde.
+ms.openlocfilehash: 5c829bb4ec236b251cc258fed6d2c862ede54980
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33406311"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59570330"
 ---
 # <a name="pow-function"></a>POW Function
 
-Gibt eine Zahl zurück, die auf die Macht eines Exponenten angehoben wird.
+Gibt eine Zahl zurück, die mit der Potenz eines Exponenten ausgelöst wurde.
   
 ## <a name="syntax"></a>Syntax
 
-POW(** *Number* **, ** *exponent* ** ) 
+POW(** *number* **, ** *exponent* ** ) 
   
 ### <a name="parameters"></a>Parameter
 
@@ -31,9 +31,9 @@ POW(** *Number* **, ** *exponent* ** )
 | _Anzahl_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die Zahl, die mit einem Exponenten potenziert werden soll.  <br/> |
 | _exponent_ <br/> |Erforderlich  <br/> |**Number** <br/> |Der Exponent.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Sowohl  _Zahl_ als  _auch Exponent_ können nicht ganzzahlig sein, und sie können negativ sein. Wenn  _Zahl_ nicht 0 und  _Exponent_ 0 ist, gibt diese Funktion 1 zurück. Wenn  _Zahl_ 0 und  _Exponent_ negativ ist, gibt diese Funktion 0,0 zurück. Wenn Zahl _und_ _Exponent_ 0  sind oder Zahl negativ ist und _exponent_ keine ganze Zahl ist, gibt diese Funktion 0,0 zurück. Wenn Zahl  _und_  _Exponent_ negativ sind, gibt diese Funktion -1,#IND. 
+_Zahl_ und _Exponent_ können nicht ganze Zahlen sein, und sie können negativ sein. Wenn _Zahl_ nicht 0 und Exponent 0 ist, gibt diese Funktion 1 zurück.  Wenn _Zahl_ 0 ist und Exponent negativ ist, gibt diese Funktion 0,0 zurück.  Wenn  _Zahl_ und  _Exponent_ 0 sind oder wenn  _Zahl_ negativ und  _exponent_ keine ganze Zahl ist, gibt diese Funktion 0,0 zurück. Wenn  _Zahl_ und  _Exponent_ negativ sind, gibt diese Funktion -1,#IND zurück. 
   
 ## <a name="example"></a>Beispiel
 

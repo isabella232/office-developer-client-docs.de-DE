@@ -4,14 +4,14 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 85a4c93c-13ad-4a66-9e2c-627661f24082
-ms.openlocfilehash: 252d7d59cedfa463280b97864276315be9954c86
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 1ada3d9f76a1838473fd1c9a3b172be72482d872
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33420227"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59560032"
 ---
 # <a name="cells-visio-shapesheet-reference"></a>Zellen (Visio ShapeSheet-Referenz)
 
@@ -299,11 +299,11 @@ ms.locfileid: "33420227"
     
 - [Zelle "Gamma" (Abschnitt "Image Properties")](gamma-cell-image-properties-section.md)
     
-- [Zelle GlowColor (Abschnitt "Additional Effect Properties")](glowcolor-cell-additional-effect-properties-section.md)
+- [Zelle "GlowColor" (Abschnitt "Additional Effect Properties")](glowcolor-cell-additional-effect-properties-section.md)
     
-- [Zelle GlowColorTrans (Abschnitt "Additional Effect Properties")](glowcolortrans-cell-additional-effect-properties-section.md)
+- [Zelle "GlowColorTrans" (Abschnitt "Additional Effect Properties")](glowcolortrans-cell-additional-effect-properties-section.md)
     
-- [Zelle GlowSize (Abschnitt "Additional Effect Properties")](glowsize-cell-additional-effect-properties-section.md)
+- [Zelle "GlowSize" (Abschnitt "Additional Effect Properties")](glowsize-cell-additional-effect-properties-section.md)
     
 - [Zelle "Glue" (Abschnitt "Layers")](glue-cell-layers-section.md)
     
@@ -567,21 +567,21 @@ ms.locfileid: "33420227"
     
 - [Zelle "Prompt" (Abschnitt "User-Defined Cells")](prompt-cell-user-defined-cells-section.md)
     
-- [Zelle QuickStyleEffectsMatrix (Abschnitt "Quick Style")](quickstyleeffectsmatrix-cell-quick-style-section.md)
+- [Zelle "QuickStyleEffectsMatrix" (Abschnitt "Quick Style")](quickstyleeffectsmatrix-cell-quick-style-section.md)
     
-- [Zelle QuickStyleFillColor (Abschnitt "Quick Style")](quickstylefillcolor-cell-quick-style-section.md)
+- [Zelle "QuickStyleFillColor" (Abschnitt "Quick Style")](quickstylefillcolor-cell-quick-style-section.md)
     
-- [Zelle QuickStyleFillMatrix (Abschnitt "Quick Style")](quickstylefillmatrix-cell-quick-style-section.md)
+- [Zelle "QuickStyleFillMatrix" (Abschnitt "Quick Style")](quickstylefillmatrix-cell-quick-style-section.md)
     
 - [Zelle "QuickStyleFontColor" (Abschnitt "Quick Style")](quickstylefontcolor-cell-quick-style-section.md)
     
-- [Zelle QuickStyleFontMatrix (Abschnitt "Quick Style")](quickstylefontmatrix-cell-quick-style-section.md)
+- [Zelle "QuickStyleFontMatrix" (Abschnitt "Quick Style")](quickstylefontmatrix-cell-quick-style-section.md)
     
-- [Zelle QuickStyleLineColor (Abschnitt "Quick Style")](quickstylelinecolor-cell-quick-style-section.md)
+- [Zelle "QuickStyleLineColor" (Abschnitt "Quick Style")](quickstylelinecolor-cell-quick-style-section.md)
     
-- [Zelle QuickStyleLineMatrix (Abschnitt "Quick Style")](quickstylelinematrix-cell-quick-style-section.md)
+- [Zelle "QuickStyleLineMatrix" (Abschnitt "Quick Style")](quickstylelinematrix-cell-quick-style-section.md)
     
-- [Zelle QuickStyleShadowColor (Abschnitt "Quick Style")](quickstyleshadowcolor-cell-quick-style-section.md)
+- [Zelle "QuickStyleShadowColor" (Abschnitt "Quick Style")](quickstyleshadowcolor-cell-quick-style-section.md)
     
 - [Zelle "QuickStyleType" (Abschnitt "Quick Style")](quickstyletype-cell-quick-style-section.md)
     
@@ -601,11 +601,11 @@ ms.locfileid: "33420227"
     
 - [Zelle "ReplaceCopyCells" (Abschnitt "Change Shape Behavior")](replacecopycells-cell-change-shape-behavior-section.md)
     
-- [Zelle ReplaceLockFormat (Abschnitt "Change Shape Behavior")](replacelockformat-cell-change-shape-behavior-section.md)
+- [Zelle "ReplaceLockFormat" (Abschnitt "Change Shape Behavior")](replacelockformat-cell-change-shape-behavior-section.md)
     
-- [Zelle ReplaceLockShapeData (Abschnitt "Change Shape Behavior")](replacelockshapedata-cell-change-shape-behavior-section.md)
+- [Zelle "ReplaceLockShapeData" (Abschnitt "Change Shape Behavior")](replacelockshapedata-cell-change-shape-behavior-section.md)
     
-- [Zelle ReplaceLockText (Abschnitt "Change Shape Behavior")](replacelocktext-cell-change-shape-behavior-section.md)
+- [Zelle "ReplaceLockText" (Abschnitt "Change Shape Behavior")](replacelocktext-cell-change-shape-behavior-section.md)
     
 - [Zelle "ResizeMode" (Abschnitt "Shape Transform")](resizemode-cell-shape-transform-section.md)
     
@@ -613,7 +613,7 @@ ms.locfileid: "33420227"
     
 - [Zelle "RightMargin" (Abschnitt "Text Block Format")](rightmargin-cell-text-block-format-section.md)
     
-- [Zelle RotateGradientWithShape (Abschnitt "Gradient Properties")](rotategradientwithshape-cell-gradient-properties-section.md)
+- [Zelle "RotateGradientWithShape" (Abschnitt "Gradient Properties")](rotategradientwithshape-cell-gradient-properties-section.md)
     
 - [Zelle "RotationType" (Abschnitt "3D Rotation Properties")](rotationtype-cell-3-d-rotation-properties-section.md)
     
@@ -825,7 +825,7 @@ ms.locfileid: "33420227"
     
 - [Zelle "XGridOrigin" (Abschnitt "Ruler &amp; Grid")](xgridorigin-cell-rulergrid-section.md)
     
-- [Zelle "XGridSpacing" (Abschnitt &amp; "Ruler Grid")](xgridspacing-cell-rulergrid-section.md)
+- [Zelle "XGridSpacing" (Abschnitt "Ruler &amp; Grid")](xgridspacing-cell-rulergrid-section.md)
     
 - [Zelle "XRulerDensity" (Abschnitt "Ruler &amp; Grid")](xrulerdensity-cell-rulergrid-section.md)
     

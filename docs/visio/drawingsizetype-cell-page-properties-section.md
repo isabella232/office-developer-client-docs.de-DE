@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm275
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7fe270e8-0dff-bf1f-dfc0-c0608af79f59
 description: Legt die Zeichnungsgröße fest.
-ms.openlocfilehash: 33c85b6c2f0587654038eaec1a9490ca8bd8301b
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: eab36fc223c21cc8b943cabb5005649f4b090f05
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33425449"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59570736"
 ---
 # <a name="drawingsizetype-cell-page-properties-section"></a>Zelle "DrawingSizeType" (Abschnitt "Zeichenblatteigenschaften")
 
@@ -27,21 +27,21 @@ Legt die Zeichnungsgröße fest.
 |2  <br/> |Standard  <br/> |**visStandard** <br/> |
 |3  <br/> |Benutzerdefiniert  <br/> |**visCustom** <br/> |
 |4   <br/> |Benutzerdefinierte Skalierung  <br/> |**visLogical** <br/> |
-|5   <br/> |Metrisch (ISO)  <br/> |**visDSMetric** <br/> |
+|5  <br/> |Metrisch (ISO)  <br/> |**visDSMetric** <br/> |
 |6   <br/> |ANSI-Konstruktion  <br/> |**visDSEngr** <br/> |
 |7   <br/> |ANSI-Architektur  <br/> |**visDSArch** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Verwenden Sie das Dialogfeld **Seite einrichten**, um die Zeichnungsgröße festzulegen (klicken Sie dazu auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten**), oder passen Sie die Größe der Seite manuell mit der Maus an. 
   
-Um einen Verweis auf die Zelle DrawingSizeType anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Verwenden Sie Folgendes, um einen Verweis auf die Zelle DrawingSizeType anhand des Namens einer anderen Formel oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |DrawingSizeType  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die DrawingSizeType-Zelle nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle DrawingSizeType anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

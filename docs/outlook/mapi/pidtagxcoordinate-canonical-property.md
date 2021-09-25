@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagXCoordinate
 api_type:
 - COM
 ms.assetid: 030d5c21-ab02-4047-bf2d-9a402a1e9102
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 87df676dccdb067302d62da2bd1fda6b634ed4f8
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 6b3b55b6cb66069121ca2989e51c2c46f6077f80
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33436195"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59578900"
 ---
 # <a name="pidtagxcoordinate-canonical-property"></a>PidTagXCoordinate (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "33436195"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält die x-Koordinate der Startposition (die linke obere Ecke) eines Dialogfeldsteuerelements in Windows Dialogeinheiten.
+Enthält die X-Koordinate der Startposition (die obere linke Ecke) eines Dialogfeldsteuerelements in standard Windows Dialogfeldeinheiten.
   
 |||
 |:-----|:-----|
@@ -34,9 +34,9 @@ Enthält die x-Koordinate der Startposition (die linke obere Ecke) eines Dialogf
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Anzeigetabelle  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft, **PR_YPOS** ([PidTagYCoordinate](pidtagycoordinate-canonical-property.md)), **PR_DELTAX** ([PidTagDeltaX](pidtagdeltax-canonical-property.md)) und **PR_DELTAY** ([PidTagDeltaY](pidtagdeltay-canonical-property.md)) eigenschaften position and size the dialog box control.
+Diese Eigenschaft, **PR_YPOS** ([PidTagYCoordinate](pidtagycoordinate-canonical-property.md)), **PR_DELTAX** ([PidTagDeltaX](pidtagdeltax-canonical-property.md)), and **PR_DELTAY** ([PidTagDeltaY](pidtagdeltay-canonical-property.md)) properties position and size the dialog box control.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,11 +44,11 @@ Diese Eigenschaft, **PR_YPOS** ([PidTagYCoordinate](pidtagycoordinate-canonical-
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

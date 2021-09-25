@@ -6,34 +6,34 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_SDR.chm1175
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3af6c949-d6a0-9560-54d7-b01a2ad99960
 description: Stellt die y-Koordinate für einen Verbindungspunkt in lokalen Koordinaten dar.
-ms.openlocfilehash: b408dc3c07e7bd28c0530b09f649453b4f08c770
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: cceced17d52a847a5b1d2fb96e7995a1e543aaad
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33410847"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59553550"
 ---
 # <a name="y-cell-connection-points-section"></a>Zelle "Y" (Abschnitt "Connection Points")
 
 Stellt  die y-Koordinate für einen Verbindungspunkt in lokalen Koordinaten dar. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Um einen Verweis auf die Zelle Y anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Um einen Verweis auf die Zelle Y anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | Connections.Y  *i*            where  *i*  = <1>, 2, 3...  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle Y nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle Y anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionConnectionPts** <br/> |
-| Zeilenindex:  <br/> |**visRowConnectionPts**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
-| Zellenindex:  <br/> |**visY** <br/> |
+| Zeilenindex:  <br/> |**visRowConnectionPts**  +   *i* where *i* = 0, 1, 2...  <br/> |
+| Zellenindex:  <br/> |**Visy** <br/> |
    
 

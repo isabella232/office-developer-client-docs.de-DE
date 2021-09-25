@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 182ab0c6-c9d3-4cc8-892f-f6b09312ceb9
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 59d0ce192605257dc0aebed46d8093a352fce05f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 9d5200a901cc692d4929edfba5a547a45ffe23c8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33435285"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59551149"
 ---
 # <a name="mapireallocatebuffer"></a>MAPIReallocateBuffer
 
@@ -21,7 +21,7 @@ ms.locfileid: "33435285"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt einen Speicherpuffer neu zu. Es wird mit der [MAPIAllocateBuffer-Funktion](mapiallocatebuffer.md) verwendet. 
+Ordnet einen Speicherpuffer neu an. Sie wird mit der [MAPIAllocateBuffer-Funktion](mapiallocatebuffer.md) verwendet. 
   
 |||
 |:-----|:-----|
@@ -41,19 +41,19 @@ LPVOID * lppv
 
  _lpv_
   
-> Ein Zeiger auf den speicher, der neu zugewiesen werden soll.
+> Ein Zeiger auf den Speicher, der neu zugewiesen werden soll.
     
  _ulSize_
   
-> Die Größe des zu zugeordneten Puffers in Bytes.
+> Die Größe des zuzuweisenden Puffers in Bytes.
     
  _lppv_
   
 > Ein Zeiger auf den zurückgegebenen zugewiesenen Puffer.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
- **MAPIReallocateBuffer** weist einen neuen Speicherblock der angeforderten Größe zu und kopiert den Inhalt des Puffers, der an diesen neuen Speicherblock übergeben wird. Wenn der übergebene Speicherblock interne Zeiger enthält, ändern sich die Zeiger nicht an den neuen Speicherort. 
+ **MAPIReallocateBuffer** weist einen neuen Speicherblock der angeforderten Größe zu und kopiert den Inhalt des Puffers, der an diesen neuen Speicherblock übergeben wird. Wenn der übergebene Speicherblock interne Zeiger enthält, ändern sich die Zeiger nicht so, dass sie mit der neuen Position übereinstimmen. 
   
 ## <a name="see-also"></a>Siehe auch
 

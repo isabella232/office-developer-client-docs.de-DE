@@ -4,14 +4,14 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 004dc563-d089-230f-0055-038b72eebbed
-ms.openlocfilehash: 7d18a6e4317736b802a761ccbe62e9f01aa1e15d
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 19bb5a2d3bd8ab16dd86562bfaadb72db249725f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34542718"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559689"
 ---
 # <a name="relcubbezto_type-complextype-visio-xml"></a>RelCubBezTo_Type complexType (Visio XML)
 
@@ -46,13 +46,13 @@ ms.locfileid: "34542718"
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Cell](cell-element-relcubbezto-rowvisio-xml.md) <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> ||
+|[Cell](cell-element-relcubbezto-rowvisio-xml.md) <br/> |[Cell_type](cell_type-complextypevisio-xml.md) <br/> ||
    
 ### <a name="attributes"></a>Attribute
 

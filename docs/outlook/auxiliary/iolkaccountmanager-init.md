@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0e5ffb61-1469-bc91-f237-27d1156179cd
 description: Initialisiert den Konto-Manager für die Verwendung.
-ms.openlocfilehash: 5a643a4636251afc98750be8acf47cd3bdab3847
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 44742fadb2c0c450611370d700ced33173387a02
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32322036"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59552003"
 ---
 # <a name="iolkaccountmanagerinit"></a>IOlkAccountManager::Init
 
@@ -34,19 +34,19 @@ HRESULT IOlkAccountManager::Init (
 
 _pAcctHelper_
   
-> [in] Eine [IOlkAccountHelper-Schnittstelle,](iolkaccounthelper.md) die Kontohilfsfunktionen bietet. 
+> [in] Eine [IOlkAccountHelper-Schnittstelle,](iolkaccounthelper.md) die Kontohilfsfunktionen bereitstellt. 
     
-_dwFlags_
+_Dwflags_
   
 > [in] Flags, die Verhalten ändern.
     
-   - **ACCT_INIT_NO_STORES_CHECK** – Verhindert die Synchronisierung eines Kontos (z. B. eines IMAP-Kontos) mit einem zugeordneten Speicher. 
+   - **ACCT_INIT_NO_STORES_CHECK** : Verhindert, dass ein Konto (z. B. ein IMAP-Konto) mit einem zugeordneten Speicher synchronisiert wird. 
     
-   - **ACCT_INIT_NOSYNCH_MAPI_ACCTS** – Verhindert die Synchronisierung von MAPI-Diensten mit Konten. 
+   - **ACCT_INIT_NOSYNCH_MAPI_ACCTS** : Verhindert, dass MAPI-Dienste mit Konten synchronisiert werden. 
    
-   - **ACCT_INIT_NO_NOTIFICATIONS** – Verhindert, dass der Account Manager Übertragungsnachrichten abfängt, die für andere Anwendungen vorgesehen sind. 
+   - **ACCT_INIT_NO_NOTIFICATIONS** : Verhindert, dass der Account Manager Übertragungsnachrichten abfangen kann, die für andere Anwendungen vorgesehen sind. 
    
-   - **OLK_ACCOUNT_NO_FLAGS** – Synchronisiert MAPI-Dienste mit Konten. 
+   - **OLK_ACCOUNT_NO_FLAGS** : Synchronisiert MAPI-Dienste mit Konten. 
     
 ## <a name="return-values"></a>Rückgabewerte
 
@@ -56,9 +56,9 @@ _dwFlags_
 |E_OLK_ALREADY_INITIALIZED  <br/> |**Init** wurde bereits aufgerufen.  <br/> |
 |E_OLK_REGISTRY  <br/> |Der Konto-Manager konnte nicht auf die erforderlichen Registrierungseinstellungen zugreifen.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Der Client muss **IOlkAccountManager::Init** aufrufen, um den Konto-Manager zu initialisieren, bevor der Konto-Manager auf Konten zugreifen oder Benachrichtigungen einrichten kann. Da Outlook automatisch die MAPI-Dienste mit Konten  beim Start synchronisiert, verwenden Sie ACCT_INIT_NOSYNCH_MAPI_ACCTS es sei denn, es gibt eine bestimmte Ursache für die Synchronisierung. 
+Der Client muss **IOlkAccountManager::Init** aufrufen, um den Konto-Manager zu initialisieren, bevor der Konto-Manager für den Zugriff auf Konten oder das Einrichten von Benachrichtigungen verwendet wird. Da Outlook MAPI-Dienste beim Start automatisch mit Konten synchronisiert, verwenden **Sie ACCT_INIT_NOSYNCH_MAPI_ACCTS,** es sei denn, es gibt eine bestimmte Ursache für die Synchronisierung. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251482
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8436cbe6-e0f6-ddbb-9489-21027e31bd51
-description: Gibt die y-Koordinate eines Punkts zurück.
-ms.openlocfilehash: 39f71dccd95602fe9578d09e941f360c82c48a3e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Gibt die Y-Koordinate eines Punkts zurück.
+ms.openlocfilehash: 6f31a718d529a2065301993bad54f5d5d12f13e5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423314"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59570351"
 ---
 # <a name="pnty-function"></a>PNTY Function
 
@@ -28,11 +28,11 @@ PNTX(** *point* ** )
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _point_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die y-Koordinate des Punkts.  <br/> |
+| _Punkt_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die y-Koordinate des Punkts.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
-Nummer
+Zahl
   
 ## <a name="example"></a>Beispiel
 

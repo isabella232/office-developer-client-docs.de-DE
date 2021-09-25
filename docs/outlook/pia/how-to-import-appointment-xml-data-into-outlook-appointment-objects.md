@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff462092(v=office.15)
 ms:contentKeyID: 55119821
 ms.date: 07/24/2014
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 0af86772fced3e69d1d28cf8d98a544e3b4d90d2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: fef3e924ed5f81d5d64e5ca77bc417c000866ad2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32320062"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59560508"
 ---
 # <a name="import-appointment-xml-data-into-outlook-appointment-objects"></a>Importieren von Termin-XML-Daten in Outlook-Terminobjekte
 
@@ -109,7 +109,7 @@ Die CreateAppointmentsFromXml-Methode arbeitet mit der Microsoft COM-Implementie
 
 Für jeden untergeordneten Terminknoten, der vom appointment-Tag in den XML-Daten begrenzt wird, sucht CreateAppointmentsFromXml nach spezifischen Tags, verwendet das DOM zum Extrahieren der Daten und weist die Daten den entsprechenden Eigenschaften eines **AppointmentItem**-Objekts zu: [Start](https://msdn.microsoft.com/library/bb647263\(v=office.15\)), [End](https://msdn.microsoft.com/library/bb623715\(v=office.15\)), [Subject](https://msdn.microsoft.com/library/bb611653\(v=office.15\)), [Location](https://msdn.microsoft.com/library/bb608946\(v=office.15\)) und [Body](https://msdn.microsoft.com/library/bb644880\(v=office.15\)). CreateAppointmentsFromXml speichert anschließend den Termin im Standardkalender.
 
-CreateAppointmentsFromXml verwendet die [Add](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.add?view=netframework-4.7.2)-Methode der [List\<T\>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1?view=netframework-4.7.2)-Klasse im [System.Collections.Generic](https://docs.microsoft.com/dotnet/api/system.collections.generic?view=netframework-4.7.2)-Namespace zum Aggregieren dieser AppointmentItem-Objekte. Wenn die Methode alle Termine in den XML-Daten verarbeitet hat, gibt sie die AppointmentItem-Objekte in einem Array zurück.
+CreateAppointmentsFromXml verwendet die [Add-Methode](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.add?view=netframework-4.7.2) der [ \<T\> List-Klasse](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1?view=netframework-4.7.2) im [System.Collections.Generic-Namespace,](https://docs.microsoft.com/dotnet/api/system.collections.generic?view=netframework-4.7.2) um diese AppointmentItem-Objekte zu aggregieren. Wenn die Methode alle Termine in den XML-Daten verarbeitet hat, gibt sie die AppointmentItem-Objekte in einem Array zurück.
 
 Wenn Sie Visual Studio verwenden, um dieses Codebeispiel zu testen, müssen Sie der Microsoft Outlook 15.0-Objektbibliothekkomponente zuerst einen Verweis hinzufügen und die Outlook-Variable angeben, wenn Sie den **Microsoft.Office.Interop.Outlook**-Namespace importieren. Die Anweisung **Imports** oder **using** darf im Codebeispiel nicht direkt vor den Funktionen stehen, sondern muss vor der öffentlichen Class-Deklaration hinzugefügt werden. Die folgenden Codezeilen zeigen, wie Sie den Import und die Zuweisung in Visual Basic und C\# vornehmen.
 

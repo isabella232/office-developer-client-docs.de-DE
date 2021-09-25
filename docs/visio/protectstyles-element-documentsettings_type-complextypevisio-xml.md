@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 041c1b07-7ad4-f786-c6dc-32a41d4d5e04
 description: Gibt an, ob der Benutzer am Erstellen oder Bearbeiten von Formatvorlagen gehindert wird.
-ms.openlocfilehash: b2b725d0d735212f79606fed094adf5fe81a43d5
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 088d010ed3bca0585b5e5cd4fcbbfdbeae84f4f0
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538935"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59570309"
 ---
 # <a name="protectstyles-element-documentsettings_type-complextype-visio-xml"></a>ProtectStyles-Element (DocumentSettings_Type complexType) (Visio XML)
 
@@ -36,7 +36,7 @@ Gibt an, ob der Benutzer am Erstellen oder Bearbeiten von Formatvorlagen gehinde
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

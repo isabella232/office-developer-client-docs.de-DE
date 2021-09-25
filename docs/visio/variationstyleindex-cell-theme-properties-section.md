@@ -4,29 +4,29 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 932195d5-2cb7-49f7-bc64-4ce00bf780b2
-description: Bestimmt den Formatvorlageindex der aktiven Designvariation auf der Seite als ganze Zahl.
-ms.openlocfilehash: 57d4b2493b7278064daf7b0cb986e58ebacf4be2
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Bestimmt den Formatvorlagenindex der aktiven Designvariation auf der Seite als ganze Zahl.
+ms.openlocfilehash: b324b9e75cf8e7e0f763cf230625936788f229e6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33436601"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59553655"
 ---
 # <a name="variationstyleindex-cell-theme-properties-section"></a>Zelle "VariationStyleIndex" (Abschnitt "Theme Properties")
 
-Bestimmt den Formatvorlageindex der aktiven Designvariation auf der Seite als ganze Zahl.
+Bestimmt den Formatvorlagenindex der aktiven Designvariation auf der Seite als ganze Zahl.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Verwenden Sie zum Erhalten eines Verweises auf die **Zelle VariationStyleIndex** anhand des Namens aus einer anderen Formel, nach dem Wert des **N-Attributs** eines **Cell-Elements** oder aus einem Programm mit der **CellsU-Eigenschaft:** 
+Verwenden Sie Folgendes, um einen Verweis auf die **Zelle "VariationStyleIndex"** anhand des Namens aus einer anderen Formel, anhand des Werts des **N-Attributs** eines **Cell-Elements** oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | VariationStyleIndex  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die **Zelle VariationStyleIndex** nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle **VariationStyleIndex** anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

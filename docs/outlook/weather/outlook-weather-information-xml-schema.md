@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 91a8ec9b-fb42-8081-cc23-172aa55531e1
-description: Dieser Abschnitt enthält die Outlook 2013-Schemareferenz für das Outlook Wetterinformationen-XML-Schema. Dieses Schema ermöglicht Wetterdienstanbietern das Senden von Wettervorhersageinformationen für einen angegebenen Standort als Webdienstantwort auf Outlook, sodass Outlook die Informationen in der Wetterleiste anzeigen kann.
-ms.openlocfilehash: 8d10a996107dca6123300249306cbd3f0e208a2c
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Dieser Abschnitt enthält die Outlook 2013-Schemareferenz für das Outlook Weather Information XML Schema. Mit diesem Schema können Wetterdienstanbieter Wettervorhersageinformationen für einen bestimmten Ort als Webdienstantwort an Outlook senden, damit Outlook die Informationen in der Wetterleiste anzeigen können.
+ms.openlocfilehash: 9d5c24158e78c18e1b4e07539538c1b560759385
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33427941"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59560263"
 ---
 # <a name="outlook-weather-information-xml-schema"></a>Outlook Wetterinformations-XML-Schema
 
-Dieser Abschnitt enthält die Outlook 2013-Schemareferenz für das Outlook Wetterinformationen-XML-Schema. Dieses Schema ermöglicht Wetterdienstanbietern das Senden von Wettervorhersageinformationen für einen angegebenen Standort als Webdienstantwort auf Outlook, sodass Outlook die Informationen in der Wetterleiste anzeigen kann.
+Dieser Abschnitt enthält die Outlook 2013-Schemareferenz für das Outlook Weather Information XML Schema. Mit diesem Schema können Wetterdienstanbieter Wettervorhersageinformationen für einen bestimmten Ort als Webdienstantwort an Outlook senden, damit Outlook die Informationen in der Wetterleiste anzeigen können.
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 

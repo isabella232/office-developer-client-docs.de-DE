@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagRoamingXmlStream
 api_type:
 - COM
 ms.assetid: ce55b50e-3dbf-4690-9102-c08f35ada82e
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 3e7ce1f810a1dd37cd4370ceb423b664d75878a2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 6aa761d1357e5ae3141ca5589176cc2827a0579c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32359542"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59570940"
 ---
 # <a name="pidtagroamingxmlstream-canonical-property"></a>PidTagRoamingXmlStream (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32359542"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält einen beliebigen XML-Stream.
+Enthält einen beliebigen XML-Datenstrom.
   
 |||
 |:-----|:-----|
@@ -34,9 +34,9 @@ Enthält einen beliebigen XML-Stream.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Konfiguration  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft enthält einen beliebigen Stream von XML-Daten. Andere Eigenschaften in der Nachricht können bestimmte Schemas enthalten, die in dieser Eigenschaft verwendet werden müssen.
+Diese Eigenschaft enthält einen beliebigen XML-Datenstrom. Andere Eigenschaften in der Nachricht können bestimmte Schemas implizieren, die in dieser Eigenschaft verwendet werden sollen.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,7 +44,7 @@ Diese Eigenschaft enthält einen beliebigen Stream von XML-Daten. Andere Eigensc
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXOCFG]](https://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx)
   
@@ -54,11 +54,11 @@ Diese Eigenschaft enthält einen beliebigen Stream von XML-Daten. Andere Eigensc
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -66,9 +66,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

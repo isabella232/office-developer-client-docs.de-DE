@@ -3,17 +3,17 @@ title: Empfängereigenschaften für alle Nachrichten
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 18c96796-f38d-4058-9c51-9c5a14990846
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 3c5764d74039249ccac47d449f0ebd4042893434
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: b0f8c90754959630b6bf11dca74ab6d44014a477
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439716"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59578823"
 ---
 # <a name="recipient-properties-for-all-messages"></a>Empfängereigenschaften für alle Nachrichten
 
@@ -33,6 +33,6 @@ Die folgenden Eigenschaften sind in der Regel für alle Nachrichtenempfänger vo
 |**PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))  <br/> |Enthält die E-Mail-Adresse des Messagingbenutzers.  <br/> |
 |**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |Enthält einen MAPI-Eintragsbezeichner, der zum Öffnen und Bearbeiten von Eigenschaften eines bestimmten MAPI-Objekts verwendet wird.  <br/> |
 |**PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |Enthält den Typ eines Objekts.  <br/> |
-|**PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md))  <br/> |Enthält einen binär-vergleichbaren Schlüssel, der korrelierte Objekte für eine Suche identifiziert.  <br/> |
+|**PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md))  <br/> |Enthält einen mit Binärdaten vergleichbaren Schlüssel, der korrelierte Objekte für eine Suche identifiziert.  <br/> |
    
 

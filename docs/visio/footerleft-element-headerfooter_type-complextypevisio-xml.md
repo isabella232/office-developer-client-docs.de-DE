@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 994d29c1-deca-6036-fdb1-12da945b29f2
 description: Enthält die Textzeichenfolge, die im linken Teil der Fußzeile eines Dokuments angezeigt wird.
-ms.openlocfilehash: 831e8da3d9396f4c1fcffaca62744cea62cd4213
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: b759e9565d563925ab5ceeeb301f488505dac13e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539558"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59570659"
 ---
 # <a name="footerleft-element-headerfooter_type-complextype-visio-xml"></a>FooterLeft-Element (HeaderFooter_Type complexType) (Visio XML)
 
@@ -36,7 +36,7 @@ Enthält die Textzeichenfolge, die im linken Teil der Fußzeile eines Dokuments 
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

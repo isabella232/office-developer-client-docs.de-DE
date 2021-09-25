@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.DTBLMVDDLBOX
 api_type:
 - COM
 ms.assetid: 0e6283dc-9a08-460f-9400-03f0ceb4081c
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 33b4fd87f33c26db15e1a6a28f077c393168db91
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 384282445e6f50fac3d440e4df3a4c8e61e0c8a8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33420745"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59551667"
 ---
 # <a name="dtblmvddlbox"></a>DTBLMVDDLBOX
 
@@ -44,21 +44,21 @@ typedef struct _DTBLMVDDLBX
 
  **ulFlags**
   
-> Reserviert; muss null sein.
+> Reserviert; muss Null sein.
     
  **ulMVPropTag**
   
 > Eigenschaftstag für eine mehrwertige Eigenschaft vom Typ PT_MV_TSTRING. Die verschiedenen Werte dieser Eigenschaft werden als unterschiedliche Einträge in der Dropdownliste angezeigt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Eine **DTBLMVDDLBOX-Struktur** beschreibt eine mehrwertige Dropdownliste eine schreibgeschützte Liste von Elementen. Mithilfe einer mehrwertigen Dropdownliste werden Werte angezeigt, wenn ein Benutzer auf eine Bildlaufleiste klickt. 
+Eine **DTBLMVDDLBOX-Struktur** beschreibt eine mehrwertige Dropdownliste, eine schreibgeschützte Liste von Elementen. Mithilfe einer mehrwertigen Dropdownliste werden Werte angezeigt, wenn ein Benutzer auf eine Bildlaufleiste klickt. 
   
-Die angezeigten Daten stammen aus der Im **ulMVPropTag-Element identifizierten** Eigenschaft. Es ist nicht erforderlich, von der Eigenschaftenschnittstelle zu lesen, die der Anzeigetabelle zugeordnet ist. Da Benutzer keine Auswahl aus diesen Listenfeldern treffen können, werden daten nicht in die Eigenschaftsschnittstelle geschrieben. 
+Die angezeigten Daten stammen aus der Im **ulMVPropTag-Element** identifizierten Eigenschaft. Es ist nicht erforderlich, von der Eigenschaftenschnittstelle zu lesen, die der Anzeigetabelle zugeordnet ist. Da Benutzer keine Auswahl aus diesen Arten von Listenfeldern treffen können, werden die Daten nicht in die Eigenschaftenschnittstelle geschrieben. 
   
 Für die mehrwertige Dropdownliste werden nur mehrwertige Zeichenfolgeneigenschaften unterstützt. Andere mehrwertige Eigenschaftstypen werden nicht unterstützt. 
   
-Eine Übersicht über Anzeigetabellen finden Sie unter [Display Tables](display-tables.md). Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
+Eine Übersicht über Anzeigetabellen finden Sie unter ["Anzeigetabellen".](display-tables.md) Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle.](display-table-implementation.md)
   
 ## <a name="see-also"></a>Siehe auch
 

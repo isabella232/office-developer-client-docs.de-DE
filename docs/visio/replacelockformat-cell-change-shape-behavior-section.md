@@ -1,57 +1,57 @@
 ---
-title: Zelle ReplaceLockFormat (Abschnitt "Change Shape Behavior")
+title: Zelle "ReplaceLockFormat" (Abschnitt "Change Shape Behavior")
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6973e2e6-7e7f-48ba-95b3-37c959f6ffb1
-description: Gibt an, ob die Werte der angegebenen Zellen in einer Masterform die Werte (einschließlich lokaler Werte) eines Shapes überschreiben, das während eines Shapeersetzungsvorgangs ersetzt wird. Wenn die Zelle ReplaceLockFormat eines Master-Shapes auf TRUE (1) festgelegt ist, überschreiben die Formatierungswerte des Masters alle entsprechenden Werte eines Shapes, das durch den Master ersetzt wird.
-ms.openlocfilehash: 88af22accb7a80640e7553338dae1af48934f246
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Gibt an, ob die Werte der angegebenen Zellen in einem Master-Shape die Werte (einschließlich lokaler Werte) eines Shapes überschreiben, das während eines Shape-Ersetzungsvorgangs ersetzt wird. Wenn die Zelle ReplaceLockFormat eines Master-Shapes auf TRUE (1) festgelegt ist, überschreiben die Formatierungswerte des Master-Shapes alle entsprechenden Werte eines Shapes, das durch das Master-Shape ersetzt wird.
+ms.openlocfilehash: 2e5f7bb373416ed99f7d4f14cba3aba015243940
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33427234"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559682"
 ---
-# <a name="replacelockformat-cell-change-shape-behavior-section"></a>Zelle ReplaceLockFormat (Abschnitt "Change Shape Behavior")
+# <a name="replacelockformat-cell-change-shape-behavior-section"></a>Zelle "ReplaceLockFormat" (Abschnitt "Change Shape Behavior")
 
-Gibt an, ob die Werte der angegebenen Zellen in einer Masterform die Werte (einschließlich lokaler Werte) eines Shapes überschreiben, das während eines Shapeersetzungsvorgangs ersetzt wird. Wenn die **Zelle ReplaceLockFormat** eines Master-Shapes auf TRUE (1) festgelegt ist, überschreiben die Formatierungswerte des Masters alle entsprechenden Werte eines Shapes, das durch den Master ersetzt wird. 
+Gibt an, ob die Werte der angegebenen Zellen in einem Master-Shape die Werte (einschließlich lokaler Werte) eines Shapes überschreiben, das während eines Shape-Ersetzungsvorgangs ersetzt wird. Wenn die Zelle **ReplaceLockFormat** eines Master-Shapes auf TRUE (1) festgelegt ist, überschreiben die Formatierungswerte des Master-Shapes alle entsprechenden Werte eines Shapes, das durch das Master-Shape ersetzt wird. 
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|TRUE  <br/> |Wenn die **Zelle ReplaceLockFormat** eines Master-Shapes auf TRUE festgelegt ist, überschreiben die Formatierungswerte des Masters alle entsprechenden Werte eines Shapes, das durch den Master ersetzt wird.  <br/> |
-|FALSE  <br/> |Wenn die **Zelle ReplaceLockFormat** eines Master-Shapes auf FALSE festgelegt ist, enthält die Ersatzform die lokalen Formatierungswerte aus der alten Form nach dem Ersetzungsvorgang.  <br/> |
+|TRUE  <br/> |Wenn die Zelle **"ReplaceLockFormat"** eines Master-Shapes auf TRUE festgelegt ist, überschreiben die Formatierungswerte des Master-Shapes alle entsprechenden Werte eines Shapes, das durch das Master-Shape ersetzt wird.  <br/> |
+|FALSE  <br/> |Wenn die Zelle **ReplaceLockFormat** eines Master-Shapes auf FALSE festgelegt ist, enthält das Ersetzungs-Shape die lokalen Formatierungswerte der alten Form nach dem Ersetzungsvorgang.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die **Zelle ReplaceLockFormat** bestimmt, ob die Masterform die lokalen Formatierungswerte der Zellen in den folgenden Abschnitten während eines Shapeersetzungsvorgangs überschreibt: 
+Die Zelle **"ReplaceLockFormat"** bestimmt, ob das Master-Shape während eines Shape-Ersetzungsvorgangs die lokalen Formatierungswerte der Zellen in den folgenden Abschnitten überschreibt: 
   
-- **Abschnitt "Fill Format"** 
+- Abschnitt **"Fill Format"** 
     
-- **Abschnitt "Linienformat"** 
+- **Abschnitt "Line Format"** 
     
-- **Abschnitt "Quick Style"** 
+- **Abschnitt "Schnellformatvorlage"** 
     
-- **Abschnitt "Designeigenschaften"** 
+- Abschnitt **"Theme Properties"** 
     
 - **Abschnitt "Gradient Properties"** 
     
-- **Abschnitt "Abschrägungseigenschaften"** 
+- Abschnitt **"Bevel Properties"** 
     
 - **Abschnitt "Zusätzliche Effekteigenschaften"** 
     
 - **Abschnitt "Line Gradient Stops"** 
     
-- **Abschnitt "Füllgradientenstopps"** 
+- Abschnitt **"Fill Gradient Stops"** 
     
-Um einen Verweis auf die **Zelle ReplaceLockFormat** anhand des Namens aus einer anderen Formel, nach dem Wert des **N-Attributs** eines **Cell-Elements** oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Verwenden Sie Folgendes, um einen Verweis auf die **Zelle "ReplaceLockFormat"** anhand des Namens aus einer anderen Formel, anhand des Werts des **N-Attributs** eines **Cell-Elements** oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | ReplaceLockFormat  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die **Zelle ReplaceLockFormat** nach Index aus einem Programm zu erhalten: 
+Um einen Verweis auf die Zelle **"ReplaceLockFormat"** anhand des Indexes eines Programms abzurufen, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|

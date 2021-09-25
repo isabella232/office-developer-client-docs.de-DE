@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.CbMAPIFormInfoArray
 api_type:
 - COM
 ms.assetid: 449a94d3-6610-4434-a705-4a739339053d
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f0f820de17e6acc445489a3116164d2521564c12
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: adc02410424bfe332e793224dbe716d89fa388f6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33430504"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59551849"
 ---
 # <a name="cbmapiforminfoarray"></a>CbMAPIFormInfoArray
 
@@ -40,7 +40,7 @@ CbMAPIFormInfoArray (_c)
 
  _ _c_
   
-> Anzahl von Formularinformationsobjekten in der vorhandenen **SMAPIFormInfoArray-Struktur.** 
+> Anzahl der Formularinformationsobjekte in der vorhandenen **SMAPIFormInfoArray-Struktur.** 
     
 ## <a name="see-also"></a>Siehe auch
 

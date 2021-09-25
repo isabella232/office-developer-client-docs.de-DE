@@ -5,31 +5,31 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: aa50ca36-8d01-4770-9d9c-30a5baa146ff
-description: Das XML-Beispiel in diesem Thema ist eine XML-Zeichenfolge des Aktivitätsfeeds, die an den Outlook Social Connector (OSC) zurückgegeben wird, nachdem die ISocialSession2::GetActivitiesEx-Methode für ein soziales Netzwerk aufruft.
-ms.openlocfilehash: bb8af45f25d8ee2897a3a01e2863466aeacec4e8
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+description: Das XML-Beispiel in diesem Thema ist eine AKTIVITÄTsfeed-XML-Zeichenfolge, die an den Outlook Connector für soziale Netzwerke (OSC) zurückgegeben wird, nachdem die ISocialSession2::GetActivitiesEx-Methode für ein soziales Netzwerk aufgerufen wurde.
+ms.openlocfilehash: 62e38f1da6e0488d750e8daa51d7fb8a1f6ff1be
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538326"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59560430"
 ---
 # <a name="activity-feed-xml-example"></a>Beispiel für Aktivitätsfeed-XML
 
-Das XML-Beispiel in diesem Thema ist eine XML-Zeichenfolge des Aktivitätsfeeds, die an den Outlook Social Connector (OSC) zurückgegeben wird, nachdem die [ISocialSession2::GetActivitiesEx-Methode](isocialsession2-getactivitiesex.md) für ein soziales Netzwerk aufruft. 
+Das XML-Beispiel in diesem Thema ist eine AKTIVITÄTsfeed-XML-Zeichenfolge, die an den Outlook Connector für soziale Netzwerke (OSC) zurückgegeben wird, nachdem die [ISocialSession2::GetActivitiesEx-Methode](isocialsession2-getactivitiesex.md) für ein soziales Netzwerk aufgerufen wurde. 
   
-Das Beispiel zeigt die **activityFeed-XML,** die die folgenden vier Aktivitäten enthält, die jeweils durch das **activityDetails-Element** getrennt sind und eine Vorlage für Anzeigezwecke abgleichen: 
+Das Beispiel zeigt den **ACTIVITYFeed-XML-Code,** der die folgenden vier Aktivitäten enthält, die jeweils durch das **ActivityDetails-Element** getrennt sind und mit einer Vorlage zu Anzeigezwecken übereinstimmen: 
   
-- Ein Profilbildupdate von Melissa Macbeth, deren **Besitzer-ID** im sozialen Netzwerk 4667647 ist. Diese Aktivität gibt drei Vorlagenvariablen vom Typ **publisherVariable**, **listVariable** und **pictureVariable** an (die in **listVariable eingeschlossen ist).** Diese Variablen geben die Person an, die das Aktivitätsfeedelement veröffentlicht hat, und Informationen für das zu aktualisierende Bild (unter Verwendung des Namens **,** **Werts,** **altText** und **href** untergeordneten Elemente von **pictureVariable**).
+- Ein Profilbildupdate von Melissa Macbeth, deren **Besitzer-ID** im sozialen Netzwerk 4667647 ist. Diese Aktivität gibt drei Vorlagenvariablen vom Typ **"publisherVariable",** **"listVariable"** und **"pictureVariable"** an (die in **"listVariable"** eingeschlossen sind). Diese Variablen geben die Person an, die das Aktivitätsfeedelement veröffentlicht hat, sowie Informationen für das zu aktualisierende Bild (mithilfe des **Namens,** **Werts,** **altText** und **der untergeordneten href-Elemente** von **pictureVariable**).
     
-- Ein Profilbildupdate von Michael Affronti, dessen **BesitzerID** im sozialen Netzwerk 5015012 ist. Ähnlich wie bei der letzten Aktivität gibt diese Aktivität drei Vorlagenvariablen vom Typ **publisherVariable,** **listVariable** und **pictureVariable an.** Diese Variablen geben die Person an, die das Aktivitätsfeedelement veröffentlicht hat, und Informationen für das zu aktualisierende Bild.
+- Ein Profilbildupdate von Michael Affronti, dessen **Besitzer-ID** im sozialen Netzwerk 5015012 ist. Ähnlich wie bei der letzten Aktivität gibt diese Aktivität drei Vorlagenvariablen vom Typ **publisherVariable**, **listVariable** und **pictureVariable** an. Diese Variablen geben die Person an, die das Aktivitätsfeedelement veröffentlicht hat, sowie Informationen für das zu aktualisierende Bild.
     
-- Ein Statusupdate von Michael Affronti, das die gleiche **Besitzer-ID** von 5015012 wie die letzte Aktivität zeigt. Diese Aktivität gibt zwei Vorlagenvariablen vom Typ **publisherVariable** und **textVariable an.** **publisherVariable** gibt die Person an, die das Aktivitätsfeedelement veröffentlicht hat, und **textVariable** enthält einen **Wert** der Statuszeile.  `is hiking on Mount Rainier this weekend!`
+- Ein Statusupdate von Michael Affronti, das die gleiche **Besitzer-ID** von 5015012 wie die letzte Aktivität anzeigt. Diese Aktivität gibt zwei Vorlagenvariablen vom Typ **publisherVariable** und **textVariable** an. **publisherVariable** gibt die Person an, die das Aktivitätsfeedelement veröffentlicht hat, und **textVariable** enthält einen **Wert** der Statuszeile.  `is hiking on Mount Rainier this weekend!`
     
-- Ein Blogbeitrag von Michael Affronti mit der gleichen **Besitzer-ID** von 5015012 wie die letzten beiden Aktivitäten. Diese Aktivität gibt zwei Vorlagenvariablen vom Typ **publisherVariable** und **linkVariable an.** **publisherVariable** gibt die Person an, die das Aktivitätsfeedelement veröffentlicht hat, und  **linkVariable** enthält weitere Informationen (angegeben durch die untergeordneten Elemente **Name,** Text und Wert von **linkVariable**) zum Blogbeitrag.
+- Ein Blogbeitrag von Michael Affronti, in dem die gleiche **Besitzer-ID** von 5015012 wie die letzten beiden Aktivitäten angezeigt wird. Diese Aktivität gibt zwei Vorlagenvariablen vom Typ **publisherVariable** und **linkVariable** an. **publisherVariable** gibt die Person an, die das Aktivitätsfeedelement veröffentlicht hat, und **linkVariable** enthält weitere Informationen (angegeben durch **den Namen,** **Text** und **wert** untergeordnete Elemente von **linkVariable**) über den Blogbeitrag.
     
-Jede der vier Aktivitäten gibt einen **templateID-Wert** an, der einer der drei vorlagen entspricht, die durch das **Templates-Element angegeben** werden. Jede Vorlage befindet sich im eigenen **activityTemplateContainer-Element,** das durch einen **templateID-Wert** identifiziert wird, der auch zum Anzeigen einer Aktivität verwendet wird, die denselben **templateID-Wert** besitzt. 
+Jede der vier Aktivitäten gibt einen **templateID-Wert** an, der einer der drei vom **Vorlagenelement** angegebenen Vorlagen entspricht. Jede Vorlage befindet sich in ihrem eigenen **activityTemplateContainer-Element,** das durch einen **templateID-Wert** identifiziert wird, der auch zum Anzeigen einer Aktivität mit demselben **templateID-Wert** verwendet wird. 
   
 Eine ausführliche Beschreibung der im Beispiel verwendeten XML-Elemente finden Sie in den folgenden Themen: 
   
@@ -43,7 +43,7 @@ Eine ausführliche Beschreibung der im Beispiel verwendeten XML-Elemente finden 
     
 ## <a name="xml-example"></a>XML-Beispiel
 
-Das folgende Beispiel zeigt die **activityFeed-XML** von vier Aktivitäten: zwei Profilbildaktualisierungen, eine Statusaktualisierung und einen Blogbeitrag. Die XML gibt außerdem drei Aktivitätsanzeigevorlagen zum Anzeigen der entsprechenden Aktivitäten an. 
+Das folgende Beispiel zeigt den **activityFeed-XML-Code** von vier Aktivitäten: zwei Aktualisierungen von Profilbildern, eine Statusaktualisierung und einen Blogbeitrag. Der XML-Code gibt außerdem drei Aktivitätsanzeigevorlagen zum Anzeigen der entsprechenden Aktivitäten an. 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -182,7 +182,7 @@ Das folgende Beispiel zeigt die **activityFeed-XML** von vier Aktivitäten: zwei
 
 - [OSC-Anbieter-XML-Beispiele](osc-provider-xml-examples.md)  
 - [XML für Aktivitäten](xml-for-activities.md) 
-- [Capabilities XML(Beispiel)](capabilities-xml-example.md)  
-- [Friends-XML-Beispiel](friends-xml-example.md)
-- [Outlook XML-Schema des Anbieters für sozialen Connector](outlook-social-connector-provider-xml-schema.md)
+- [Xml-Beispiel für Funktionen](capabilities-xml-example.md)  
+- [Xml-Beispiel für Freunde](friends-xml-example.md)
+- [Outlook XML-Schema des Connectoranbieters für soziale Netzwerke](outlook-social-connector-provider-xml-schema.md)
 

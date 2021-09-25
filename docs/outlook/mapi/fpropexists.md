@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.FPropExists
 api_type:
 - COM
 ms.assetid: 33c00752-cdc1-4cbe-8fca-6b06c78bd362
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 7190065c687524302bae362a2e25d3848e17d1bc
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: dada6f5c1e9ddce388901d359766fe9a80c08f45
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429488"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59551576"
 ---
 # <a name="fpropexists"></a>FPropExists
 
@@ -25,7 +25,7 @@ ms.locfileid: "33429488"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Sucht nach einem bestimmten Eigenschaftstag in einer [IMAPIProp-Schnittstelle](imapipropiunknown.md) oder einer Schnittstelle, die von **IMAPIProp** abgeleitet ist, z. B. [IMessage](imessageimapiprop.md) oder [IMAPIFolder](imapifolderimapicontainer.md). 
+Sucht nach einem bestimmten Eigenschaftentag in einer [IMAPIProp-Schnittstelle](imapipropiunknown.md) oder einer von **IMAPIProp** abgeleiteten Schnittstelle, z. B. [IMessage](imessageimapiprop.md) oder [IMAPIFolder.](imapifolderimapicontainer.md) 
   
 |||
 |:-----|:-----|
@@ -44,11 +44,11 @@ BOOL FPropExists(
 
  _pobj_
   
-> [in] Zeiger auf die VON IMAPIProp abgeleitete **IMAPIProp-Schnittstelle,** in der nach dem Eigenschaftstag gesucht werden soll.  
+> [in] Zeiger auf die VON IMAPIProp abgeleitete **IMAPIProp-Schnittstelle** oder -Schnittstelle, innerhalb derer nach dem Eigenschaftentag gesucht werden soll.  
     
  _ulPropTag_
   
-> [in] Eigenschaftstag, nach dem gesucht werden soll.
+> [in] Eigenschaftentag, nach dem gesucht werden soll.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -60,8 +60,8 @@ FALSE
   
 > Eine Übereinstimmung für das angegebene Eigenschaftstag wurde nicht gefunden.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Wenn das Eigenschaftstag im  _ulPropTag-Parameter_ den Typ PT_UNSPECIFIED hat, sucht die **FPropExists-Funktion** nach einer Übereinstimmung, die nur auf dem Eigenschaftenbezeichner basiert. Andernfalls gilt die Übereinstimmung für das gesamte Eigenschaftstag, einschließlich des Typs. 
+Wenn das Eigenschaftstag im  _ulPropTag-Parameter_ den Typ PT_UNSPECIFIED aufweist, sucht die **FPropExists-Funktion** nur basierend auf dem Eigenschaftsbezeichner nach einer Übereinstimmung. Andernfalls gilt die Übereinstimmung für das gesamte Eigenschaftstag, einschließlich des Typs. 
   
 

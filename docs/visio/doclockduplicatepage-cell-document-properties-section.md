@@ -4,34 +4,34 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b08a6558-519f-44e0-aeff-9919544d515e
-description: Bestimmt, ob Seiten im Dokument als Boolean dupliziert werden können.
-ms.openlocfilehash: 3f3274c6cfadb81ef514a179279bdaed3543b654
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Bestimmt, ob Seiten im Dokument als boolescher Wert dupliziert werden können.
+ms.openlocfilehash: 264b55909a5eb48636601566d6392e62393f00d9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439660"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559920"
 ---
 # <a name="doclockduplicatepage-cell-document-properties-section"></a>Zelle "DocLockDuplicatePage" (Abschnitt "Document Properties")
 
-Bestimmt, ob Seiten im Dokument als Boolean dupliziert werden können.
+Bestimmt, ob Seiten im Dokument als boolescher Wert dupliziert werden können.
   
 |||
 |:-----|:-----|
-|TRUE  <br/> |**Duplikate** im Kontextmenü der Seite und die **Page.Duplicate-Automatisierungsmethode** sind beide deaktiviert.  <br/> |
+|TRUE  <br/> |**Duplizieren** im Kontextmenü der Seite und die **Page.Duplicate-Automatisierungsmethode** sind beide deaktiviert.  <br/> |
 |FALSE  <br/> |Die Seite kann dupliziert werden.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Verwenden Sie zum Erhalten eines Verweises auf die **Zelle DocLockDuplicatePage** anhand des Namens aus einer anderen Formel, nach dem Wert des **N-Attributs** eines **Cell-Elements** oder aus einem Programm mit der **CellsU-Eigenschaft:** 
+Um einen Verweis auf die **Zelle DocLockDuplicatePage** anhand des Namens aus einer anderen Formel, anhand des Werts des **N-Attributs** eines **Cell-Elements** oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | DocLockDuplicatePage  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die **DocLockDuplicatePage-Zelle** nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle **DocLockDuplicatePage** anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

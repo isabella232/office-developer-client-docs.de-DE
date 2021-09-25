@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidNameContentTransferEncoding
 api_type:
 - COM
 ms.assetid: 008cadb1-4c8e-4ef7-a072-aa1d75a448cf
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 62b58a271f8c1b230131cebdc9166e149245dc60
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: b5362036f56e46adb878b6679dd581f7a2b1afd1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32356322"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59579278"
 ---
 # <a name="pidnamecontenttransferencoding-canonical-property"></a>PidNameContentTransferEncoding (kanonische Eigenschaft)
 
@@ -25,13 +25,13 @@ ms.locfileid: "32356322"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält einen [RFC3282] Content-Transfer-Encoding-Headerfeldwert.
+Enthält einen [RFC3282] Content-Transfer-Encoding-Header-Feldwert.
   
 |||
 |:-----|:-----|
-|Anzeigenamen:  <br/> |Keine  <br/> |
+|Anzeigenamen:  <br/> |Keines  <br/> |
 |Eigenschaftensatz:  <br/> |PS_INTERNET_HEADERS  <br/> |
-|Eigenschaftsname:  <br/> |Content-Transfer-Encoding  <br/> |
+|Eigenschaftenname:  <br/> |Content-Transfer-Encoding  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |E-Mails  <br/> |
    
@@ -41,7 +41,7 @@ Enthält einen [RFC3282] Content-Transfer-Encoding-Headerfeldwert.
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Stellt Eigenschaftensatzdefinitionen und Verweise auf verwandte Exchange Server zur Verfügung.
+> Stellt Eigenschaftssatzdefinitionen und Verweise auf verwandte Exchange Server Protokollspezifikationen bereit.
     
 [[MS-OXCICAL]](https://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
   
@@ -51,7 +51,7 @@ Enthält einen [RFC3282] Content-Transfer-Encoding-Headerfeldwert.
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -59,9 +59,9 @@ Mapidefs.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 
