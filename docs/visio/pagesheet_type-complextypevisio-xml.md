@@ -4,14 +4,14 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f7bce473-9a3d-65f2-8323-1e00db110c71
-ms.openlocfilehash: 01112db1465eece9ecf5faf200a1d866ce6e332d
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 9a15ebb353c9d809429cb72a472ea01ab8f7b429
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34540588"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598458"
 ---
 # <a name="pagesheet_type-complextype-visio-xml"></a>PageSheet_Type complexType (Visio XML)
 
@@ -41,7 +41,7 @@ ms.locfileid: "34540588"
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -51,6 +51,6 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|UniqueID  <br/> |xsd:string  <br/> |Optional  <br/> ||Werte des xsd:string-Typs.  <br/> |
+|UniqueID  <br/> |xsd:string  <br/> |Optional  <br/> ||Werte des Typs "xsd:string".  <br/> |
    
 

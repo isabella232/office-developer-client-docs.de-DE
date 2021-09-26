@@ -3,15 +3,15 @@ title: Office-Telemetrieprotokoll
 manager: soliver
 ms.date: 09/18/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 179ba0c4-da24-430e-a212-0af40a604198
 description: Hier finden Sie Informationen zum Telemetrieprotokoll, das in Office 2013 enthalten ist.
-ms.openlocfilehash: bc408d0c42369b2132906d1df43ab64772a49489
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 6e0ae8e9f38fc54773e8d8509bb7477eacc337aa
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33417455"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608788"
 ---
 # <a name="office-telemetry-log"></a>Office-Telemetrieprotokoll
 

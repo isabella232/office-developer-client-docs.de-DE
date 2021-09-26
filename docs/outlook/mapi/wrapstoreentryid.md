@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - WrapStoreEntryID
 api_type:
 - HeaderDef
 ms.assetid: b20107e3-5e23-4cde-9cd6-670c914ea70a
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e797a80cf8659baa7ca935f94b3ab65c200530a3
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ef6286738be70ee3e2d91d32df9635f25df0a6c7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33409209"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583233"
 ---
 # <a name="wrapstoreentryid"></a>WrapStoreEntryID
 
@@ -48,15 +48,15 @@ WrapStoreEntryID(
 
  _ulFlags_
   
-> [in] Bitmaske von Flags. Das folgende Flag kann festgelegt werden:
+> [in] Bitmaske von Flags. Das folgende Kennzeichen kann festgelegt werden:
     
 MAPI_UNICODE 
   
-> Die Zeichenfolgen sind im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befinden sich die Zeichenfolgen im ANSI-Format. 
+> Die Zeichenfolgen haben das Unicode-Format. Wenn das flag MAPI_UNICODE nicht festgelegt ist, haben die Zeichenfolgen das ANSI-Format. 
     
  _szDLLName_
   
-> [in] Der Name der Nachrichtenspeicheranbieter-DLL. 
+> [in] Der Name der DLL des Nachrichtenspeicheranbieters. 
     
  _cbOrigEntry_
   
@@ -78,12 +78,12 @@ MAPI_UNICODE
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Ein Nachrichtenspeicherobjekt behält einen internen Eintragsbezeichner bei, der nur für Dienstanbieter sinnvoll ist, die mit diesem Nachrichtenspeicher zusammenarbeiten. Für andere Messagingkomponenten stellt MAPI eine umschlossene Version des internen Eintragsbezeichners zur Verfügung, die ihn als zum Nachrichtenspeicher gehörig erkennbar macht. Coresident-Dienstanbieter sollten immer den ursprünglichen eintragsbezeichner des nachrichtenspeichers erhalten. Clientanwendungen sollten immer die umschlossene Version erhalten, die dann überall in der Messagingdomäne und in anderen Domänen verwendet werden kann. 
+Ein Nachrichtenspeicherobjekt behält einen internen Eintragsbezeichner bei, der nur für den Kern des Dienstanbieters mit diesem Nachrichtenspeicher von Bedeutung ist. Für andere Messagingkomponenten stellt MAPI eine umschlossene Version des internen Eintragsbezeichners bereit, die erkennbar macht, dass sie zum Nachrichtenspeicher gehört. Kernsident-Dienstanbieter sollten immer den ursprünglichen ungepackten Eintragsbezeichner für den Nachrichtenspeicher erhalten. Clientanwendungen sollte immer die umschlossene Version zur Verfügung gestellt werden, die dann überall in der Messagingdomäne und in anderen Domänen verwendet werden kann. 
   
-Ein Dienstanbieter kann einen Nachrichtenspeichereintragsbezeichner mithilfe der **WrapStoreEntryID-Funktion** oder der [IMAPISupport::WrapStoreEntryID-Methode](imapisupport-wrapstoreentryid.md) umschließen, die die **WrapStoreEntryID-Funktion** aufruft. Der Anbieter muss die Eintrags-ID umschließen, wenn die **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))-Eigenschaft des Nachrichtenspeichers verfügbar ist oder in einen Profilabschnitt geschrieben wird, und wenn die **PR_STORE_ENTRYID** ([PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md)) -Eigenschaft verfügbar ist. MAPI umschließt einen Nachrichtenspeichereintragsbezeichner, wenn auf einen [IMAPISession::OpenMsgStore-Aufruf reagiert](imapisession-openmsgstore.md) wird. 
+Ein Dienstanbieter kann einen Eintragsbezeichner für den Nachrichtenspeicher mithilfe der **WrapStoreEntryID-Funktion** oder der [IMAPISupport::WrapStoreEntryID-Methode umschließen,](imapisupport-wrapstoreentryid.md) die die **WrapStoreEntryID-Funktion aufruft.** Der Anbieter muss den Eintragsbezeichner umschließen, wenn er die **Eigenschaft PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) des Nachrichtenspeichers verfügbar macht oder in einen Profilabschnitt schreibt und wenn die **eigenschaft PR_STORE_ENTRYID** ([PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md)) verfügbar wird. MAPI umschließt einen Eintragsbezeichner für den Nachrichtenspeicher, wenn auf einen [IMAPISession::OpenMsgStore-Aufruf](imapisession-openmsgstore.md) reagiert wird. 
   
-Wenn eine Clientanwendung einen umschlossenen Nachrichtenspeichereintragsbezeichner an MAPI übergibt, z. B. in einem [IMAPISession::OpenEntry-Aufruf,](imapisession-openentry.md) entpackt MAPI den Eintragsbezeichner, bevor er zum Aufrufen einer Anbietermethode wie [IMSProvider::Logon](imsprovider-logon.md) oder [IMSProvider::CompareStoreIDs](imsprovider-comparestoreids.md)verwendet wird. 
+Wenn eine Clientanwendung einen umschlossenen Eintragsbezeichner für den Nachrichtenspeicher an die MAPI übergibt, z. B. in einem [IMAPISession::OpenEntry-Aufruf,](imapisession-openentry.md) hebt MAPI den Eintragsbezeichner auf, bevor sie zum Aufrufen einer Anbietermethode wie [IMSProvider::Logon](imsprovider-logon.md) oder [IMSProvider::CompareStoreIDs](imsprovider-comparestoreids.md)verwendet wird. 
   
 

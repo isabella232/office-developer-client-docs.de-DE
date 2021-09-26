@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197799(v=office.15)
 ms:contentKeyID: 48546469
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: 19999159f7987be87031f88d1eec87980585f369
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 0eeb52f8885a508de1f9497cdc44df0406e13871
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32284518"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562349"
 ---
 # <a name="recordset-object-dao"></a>Recordset-Objekt (DAO)
 
@@ -39,9 +39,9 @@ Sie verwenden **Recordset**-Objekte, um Daten in einer Datenbank auf Datensatzeb
 
 Sie können den Typ des **Recordset** -Objekts, das Sie erstellen möchten, mithilfe des type-Arguments der **OpenRecordset** -Methode auswählen.
 
-Wenn Sie in einem Microsoft Access-Arbeitsbereich keinen type angeben, versucht DAO, den **Recordset**-Typ mit den meisten verfügbaren Funktionen beginnend mit "table" zu erstellen. Falls dieser Typ nicht verfügbar ist, probiert DAO ein "dynaset"-, dann ein "snapshot"- und schließlich ein "forward-only"- **Recordset**-Objekt aus.
+Wenn Sie in einem Microsoft Access-Arbeitsbereich keinen Typ angeben, versucht DAO, den **Recordset**-Typ mit den meisten verfügbaren Funktionen zu erstellen, beginnend mit „table“. Falls dieser Typ nicht verfügbar ist, versucht DAO ein **Recordset**-Objekt vom Typ „dynaset“, dann „snapshot“ und schließlich „forward-only“.
 
-Wenn Sie in einem ODBCDirect-Arbeitsbereich keinen type angeben, versucht DAO, den **Recordset**-Typ mit der schnellsten Abfrageantwort beginnend mit "forward-only" zu erstellen. Falls dieser Typ nicht verfügbar ist, probiert DAO ein "snapshot"-, dann ein "dynaset"- und schließlich ein "dynamic"- **Recordset** -Objekt aus.
+Wenn Sie in einem ODBCDirect-Arbeitsbereich keinen Typ angeben, versucht DAO, den **Recordset**-Typ mit der schnellsten Abfrageantwort zu erstellen, beginnend mit „forward-only“. Falls dieser Typ nicht verfügbar ist, versucht DAO ein **Recordset**-Objekt vom Typ „snapshot“, dann „dynaset“ und schließlich „dynamic“.
 
 Wenn Sie ein **Recordset**-Objekt mit einem nicht verknüpften **[TableDef](tabledef-object-dao.md)**-Objekt in einem Microsoft Access-Arbeitsbereich erstellen, werden **Recordset**-Objekte vom "table"-Typ erstellt. Nur **Recordset**-Objekte vom "dynaset"- oder "snapshot"-Typ können mit verknüpften Tabellen oder Tabellen in ODBC-Datenbanken mit verbundenem Microsoft Access-Datenbankmodul erstellt werden.
 
@@ -144,7 +144,7 @@ This example demonstrates **Recordset** objects and the **Recordsets** collectio
 
 <br/>
 
-Dieses Beispiel verwendet die **OpenRecordset**-Methode, um fünf verschiedene **Recordset**-Objekte zu öffnen und ihre Inhalte anzuzeigen. Die OpenRecordsetOutput-Prozedur ist für die Ausführung dieser Prozedur erforderlich.
+Dieses Beispiel verwendet die **OpenRecordset** -Methode, um fünf verschiedene **Recordset** -Objekte zu öffnen und ihre Inhalte anzuzeigen. Die OpenRecordsetOutput-Prozedur ist für die Ausführung dieser Prozedur erforderlich.
 
 ```vb
     Sub OpenRecordsetX() 

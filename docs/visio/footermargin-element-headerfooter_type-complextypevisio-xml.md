@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 047f42cf-4202-50bd-40b4-a71052e2dfb3
 description: Gibt den Rand der Fußzeile eines Dokuments an.
-ms.openlocfilehash: 5a147dbb8b94d9077836cb2269dd2ff72dae3b3a
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: a0a6e1b8d94d29d901e260325e00d295a4f9ad3f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538662"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598668"
 ---
 # <a name="footermargin-element-headerfooter_type-complextype-visio-xml"></a>FooterMargin-Element (HeaderFooter_Type complexType) (Visio XML)
 
@@ -36,7 +36,7 @@ Gibt den Rand der Fußzeile eines Dokuments an.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -52,6 +52,6 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|Unit  <br/> |xsd:string  <br/> |Optional  <br/> |Stellt eine Maßeinheit dar. Der Standardwert ist IN.  <br/> |Werte des xsd:string-Typs.  <br/> |
+|Unit  <br/> |xsd:string  <br/> |Optional  <br/> |Stellt eine Maßeinheit dar. Der Standardwert ist IN.  <br/> |Werte des Typs "xsd:string".  <br/> |
    
 

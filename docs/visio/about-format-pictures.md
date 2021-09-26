@@ -6,24 +6,24 @@ ms.audience: Developer
 ms.topic: overview
 f1_keywords:
 - Vis_DSS.chm82251831
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: df4c1c70-8b41-c046-7415-643188af0e06
 description: Eine Formatierungsangabe ist ein Formatcode, der bestimmt, wie ein Wert angezeigt wird. Sie können beispielsweise die Anzahl von Stellen bestimmen, die rechts oder links von einem Dezimaltrennzeichen angezeigt werden, oder Sie legen fest, ob eine Zeichenfolge in Klein- oder Großschreibung angezeigt wird.
-ms.openlocfilehash: 7043c9819f41ec2c08345c84010328be75677918
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 3e9510f4e2056477f5c0a1298d9fd76894a07ec2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33436818"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598948"
 ---
 # <a name="about-format-pictures"></a>Informationen zu Formatierungsangaben
 
 Eine Formatierungsangabe ist ein Formatcode, der bestimmt, wie ein Wert angezeigt wird. Sie können beispielsweise die Anzahl von Stellen bestimmen, die rechts oder links von einem Dezimaltrennzeichen angezeigt werden, oder Sie legen fest, ob eine Zeichenfolge in Klein- oder Großschreibung angezeigt wird.
   
 > [!NOTE]
-> Um Formatierungsangaben für Datum und Uhrzeit mit den Funktionen von Microsoft Office System zu definieren, schließen Sie die Formatierungsangaben in doppelte geschweifte Klammern ein, z. B. "{{m/t/jj}}". Wenn Sie ein vordefiniertes Format verwenden, z. B. 201, schließen Sie es in geschweifte Geschweifte und eckige Klammern ein, wie z. B. "{ \< 201 \> }" 
+> Um Formatierungsangaben für Datum und Uhrzeit mit den Funktionen von Microsoft Office System zu definieren, schließen Sie die Formatierungsangaben in doppelte geschweifte Klammern ein, z. B. "{{m/t/jj}}". Wenn Sie ein vordefiniertes Format verwenden, z. B. 201, schließen Sie es wie folgt in geschweifte Klammern und spitzen Klammern ein: "{ \<201\> }" 
   
-Die folgenden Abschnitte zeigen Symbole, die Sie zum Formatieren unterschiedlicher Wertetypen für die Anzeige verwenden können.
+Die folgenden Abschnitte zeigen Symbole, mit denen Sie verschiedene Typen von Werten für die Anzeige formatieren können.
   
 ## <a name="string-and-numeric-values"></a>Zeichenfolgen und numerische Werte
 
@@ -34,9 +34,9 @@ Die folgenden Abschnitte zeigen Symbole, die Sie zum Formatieren unterschiedlich
 |.  <br/> |Platzhalter für Dezimalstellen. Legt die Anzahl von Ziffern fest, die links und rechts vom Dezimaltrennzeichen angezeigt werden. Bei einer mehrteiligen Einheit wird das Dezimaltrennzeichen in der kleinsten (äußersten rechten) Untereinheit verwendet. Zeigt das Dezimaltrennzeichen an, das in den Einstellungen unter **Region und Sprache** (Systemsteuerung) für das betreffende System definiert ist.<br/> Beispielsweise wird FORMAT(250 cm,"0.000 u") als 250,000 cm angezeigt.  <br/> |
 |,  <br/> |Tausendertrennzeichen. Wenn das Trennzeichen von Platzhaltern für Ziffern umgeben (# oder 0) wird, trennt dieses Tausender von Hunderten innerhalb eines numerischen Werts, der aus vier oder mehr Ziffern links vom Dezimaltrennzeichen besteht. Zeigt das Tausendertrennzeichen an, das in den Einstellungen unter **Region und Sprache** (Systemsteuerung) für das betreffende System definiert ist.<br/> |
 |E- E+ e- e+  <br/> |Wissenschaftliches Format. Wenn das Format wenigstens einen Platzhalter für Ziffern rechts von diesem Symbol enthält, wird die Zahl im wissenschaftlichen Format angezeigt. Fügen Sie das E oder e zwischen der Zahl und ihrem Exponenten ein. Bei E+ oder e+ wird das Zeichen + vor einem positiven Exponenten und das Zeichen - vor einem negativen Exponenten angezeigt. Bei E- oder e- wird das Minuszeichen (-) nur bei einem negativen Exponenten angezeigt.  <br/> Beispielsweise wird FORMAT(12345.67,"###.#e+#") als 123,5e+2 angezeigt.  <br/> |
-|u oder U  <br/> |Platzhalter für Kurzbezeichnung. Fügt eine abgekürzte Einheitenbezeichnung nach jeder Untereinheit ein. Beispiel: Zoll, Fuß, Grad. Der Platzhalter U fügt Beschriftungen mit gemischten Groß-/Kleinschreibungen ein, während der Platzhalter u Kleinbuchstaben einfüge. Fügt die gleiche Anzahl von Leerzeichen vor der Bezeichnung wie vor dem Platzhalter ein.  <br/> Beispielsweise wird FORMAT(12 c 13 d,"#u") als 13c1 angezeigt.  <br/> |
-|uu oder UU  <br/> |Platzhalter für Langbezeichnungen. Fügt nach jeder Untereinheit Einheitenbezeichnungen ein. Beispiel: Zoll, Fuß, Grad Der Platzhalter U fügt Groß-/Kleinschreibungsbezeichnungen ein, während der Platzhalter u Kleinbuchstaben einfüge. Fügt die gleiche Anzahl von Leerzeichen vor der Bezeichnung wie vor dem Platzhalter ein.  <br/> Beispielsweise wird FORMAT(12.43Zoll,"# #/4 UU") als 12 2/4 ZOLL angezeigt.  <br/> |
-|uuu oder UUU  <br/> |Universeller Platzhalter für Bezeichnungen. Fügt nach jeder Untereinheit die universelle Form (die interne Form von Visio) der Einheitenbezeichnung ein. Der Platzhalter U fügt Beschriftungen mit gemischten Groß-/Kleinschreibungen ein, während der Platzhalter u Kleinbuchstaben einfüge. Fügt die gleiche Anzahl von Leerzeichen vor der Bezeichnung wie vor dem Platzhalter ein.  <br/> |
+|u oder U  <br/> |Platzhalter für Kurzbezeichnung. Fügt eine abgekürzte Einheitenbezeichnung nach jeder Untereinheit ein. Beispiel: Zoll, Fuß, Grad. Der U-Platzhalter fügt Beschriftungen mit gemischter Groß-/Kleinschreibung ein, während der Platzhalter U Beschriftungen in Kleinbuchstaben einfügt. Fügt die gleiche Anzahl von Leerzeichen vor der Bezeichnung wie vor dem Platzhalter ein.  <br/> Beispielsweise wird FORMAT(12 c 13 d,"#u") als 13c1 angezeigt.  <br/> |
+|uu oder UU  <br/> |Platzhalter für Langbezeichnungen. Fügt nach jeder Untereinheit Einheitenbezeichnungen ein. Beispiel: Zoll, Fuß, Grad Der U-Platzhalter fügt Beschriftungen mit gemischter Groß-/Kleinschreibung ein, während der Platzhalter u Beschriftungen in Kleinbuchstaben einfügt. Fügt die gleiche Anzahl von Leerzeichen vor der Bezeichnung wie vor dem Platzhalter ein.  <br/> Beispielsweise wird FORMAT(12.43Zoll,"# #/4 UU") als 12 2/4 ZOLL angezeigt.  <br/> |
+|uuu oder UUU  <br/> |Universeller Platzhalter für Bezeichnungen. Fügt nach jeder Untereinheit die universelle Form (die interne Form von Visio) der Einheitenbezeichnung ein. Der U-Platzhalter fügt Beschriftungen mit gemischter Groß-/Kleinschreibung ein, während der Platzhalter U Beschriftungen in Kleinbuchstaben einfügt. Fügt die gleiche Anzahl von Leerzeichen vor der Bezeichnung wie vor dem Platzhalter ein.  <br/> |
 |/  <br/> |Platzhalter für einen Bruch. Zeigt den Ausdruck als ganze Zahl mit einem Bruchteil an, wenn ein vorangestellter Platzhalter für Ziffern vorhanden ist. Sonst wird nur die ganze Zahl im Dividend angezeigt. Wenn im Divisor dem Ziffernplatzhalter eine Zahl folgt, wird der Bruchteil auf den nächsten Bruchteil abgerundet, dessen Dividend 1 ist, und vereinfacht. Wird im Divisor eine Zahl ohne den Ziffernplatzhalter angegeben, wird auf den nächsten Bruchteil gerundet, aber nicht vereinfacht.  <br/> Beispielsweise wird FORMAT(12,43,"# #/4") als 12 2/4 angezeigt.  <br/> |
 |Leerzeichen  <br/> |Zeigt ein Leerzeichen in der formatierten Ausgabe an. Verwenden Sie zum Anzeigen eines anderen Zeichens den umgekehrten Schrägstrich ( \) Zeichen.  <br/> |
    
@@ -45,15 +45,15 @@ Die folgenden Abschnitte zeigen Symbole, die Sie zum Formatieren unterschiedlich
 |**Zeichen**|**Beschreibung**|
 |:-----|:-----|
 |$  <br/> |Währungssymbol. Zeigt das Währungssymbol an, das für die Einstellungen unter **Region und Sprache** (Systemsteuerung) für das betreffende System definiert wurde.<br/> |
-|u oder U  <br/> |Platzhalter für Kurzbezeichnung. Fügt das Standardsymbol für die lokale Währung oder eine drei Zeichen lange Währungsabkürzung für nicht lokale Währungen ein. Beispiele: €99,00, 42,70 FRF. Der Platzhalter u fügt Kleinbuchstaben ein, und U fügt Groß-/Kleinschreibungsbezeichnungen ein.  <br/> |
-|uu oder UU  <br/> |Platzhalter für Langbezeichnungen. Fügt lange Währungsbezeichnungen nach jeder Untereinheit ein. Beispiele: US-Dollar, Französischer Franc. Der Platzhalter u fügt Kleinbuchstaben ein, und U fügt Groß-/Kleinschreibungsbezeichnungen ein.  <br/> |
-|uuu oder UUU  <br/> |Universeller Platzhalter für Bezeichnungen. Fügt die universelle, 3 Zeichen lange Währungsabkürzung für alle Währungen nach jeder Untereinheit ein. Beispiele: 99,00 USD, 42,70 FRF. Der Platzhalter u fügt Kleinbuchstaben ein, und U fügt Groß-/Kleinschreibungsbezeichnungen ein. Fügt die gleiche Anzahl von Leerzeichen vor der Bezeichnung wie vor dem Platzhalter ein.  <br/> |
+|u oder U  <br/> |Platzhalter für Kurzbezeichnung. Fügt das Standardsymbol für die lokale Währung oder eine drei Zeichen lange Währungsabkürzung für nicht lokale Währungen ein. Beispiele: €99,00, 42,70 FRF. Der Platzhalter "u" fügt Kleinbuchstaben und U Beschriftungen mit gemischter Groß-/Kleinschreibung ein.  <br/> |
+|uu oder UU  <br/> |Platzhalter für Langbezeichnungen. Fügt lange Währungsbezeichnungen nach jeder Untereinheit ein. Beispiele: US-Dollar, Französischer Franc. Der Platzhalter "u" fügt Kleinbuchstaben und U Beschriftungen mit gemischter Groß-/Kleinschreibung ein.  <br/> |
+|uuu oder UUU  <br/> |Universeller Platzhalter für Bezeichnungen. Fügt die universelle, 3 Zeichen lange Währungsabkürzung für alle Währungen nach jeder Untereinheit ein. Beispiele: 99,00 USD, 42,70 FRF. Der Platzhalter "u" fügt Kleinbuchstaben und U Beschriftungen mit gemischter Groß-/Kleinschreibung ein. Fügt die gleiche Anzahl von Leerzeichen vor der Bezeichnung wie vor dem Platzhalter ein.  <br/> |
    
 ## <a name="text-values"></a>Textwerte
 
 |**Zeichen**|**Beschreibung**|
 |:-----|:-----|
-|\  <br/> |Zeigt das nächste Zeichen wie eingegeben an. Geben Sie zum Anzeigen des umgekehrten Schrägstrichs \\ ein. Siehe auch "text".  <br/> |
+|\  <br/> |Zeigt das nächste Zeichen wie eingegeben an. Geben Sie zum Anzeigen des umgekehrten Schrägstrichs \\ . Siehe auch "text".  <br/> |
 |"text" bzw. 'text'  <br/> |Zeigt den Text in Anführungszeichen unverändert an. Siehe auch \ (Umgekehrter Schrägstrich).  <br/> |
 |@  <br/> |Textplatzhalter. Ersetzt eine Zeichenfolge, wenn der Wert eines Ausdrucks eine Zeichenfolge ist.  <br/> Beispielsweise ergibt FORMAT("Hallo", "'Sie haben Folgendes eingegeben ('@')'") die Ausgabe "Sie haben Folgendes eingegeben (Hallo)".  <br/> |
 |@+  <br/> |Platzhalter für Text in Großbuchstaben. Bei Zeichenfolgen wird die Eingabe durch Großbuchstaben ersetzt.  <br/> Beispielsweise ergibt FORMAT("Hallo", "@ @+ @-") die Ausgabe "Hallo HALLO hallo".  <br/> |
@@ -99,13 +99,13 @@ Die folgenden Abschnitte zeigen Symbole, die Sie zum Formatieren unterschiedlich
 |ggg oder GG  <br/> |Jahresplatzhalter. Gebietsschemaspezifisch. Zeigt für traditionelles Chinesisch die vollständige Version der formalen Jahreskennzeichnung an. Zeigt für Japanisch die vollständige Version der Gengo-Zeitrechnung in Kanji-Zeichen an. Zeigt für Koreanisch die koreanische Jahreskennzeichnung mit nachfolgendem Leerzeichen an.  <br/> |
 |ggg_c  <br/> |Jahresplatzhalter. Zeigt für traditionelles Chinesisch die vollständige Version der formalen Jahreskennzeichnung an. Unabhängig vom Gebietsschema des Benutzers.  <br/> |
 |ggg_j  <br/> |Jahresplatzhalter. Zeigt für Japanisch die vollständige Version der Gengo-Zeitrechnung in Kanji-Zeichen an. Unabhängig vom Gebietsschema des Benutzers.  <br/> |
-|e  <br/> |Jahresplatzhalter. Gebietsschemaspezifisch. Zeigt für traditionelles Chinesisch eine Zeichenfolge an, die das julianische Jahr darstellt. Zeigt für Japanisch das Gengo-Jahr als ein- oder zweistellige Zahl ohne vorangestellte Null an. Zeigt für Koreanisch das koreanische Jahr als vierstellige arabische Zahl an.  <br/> |
+|E  <br/> |Jahresplatzhalter. Gebietsschemaspezifisch. Zeigt für traditionelles Chinesisch eine Zeichenfolge an, die das julianische Jahr darstellt. Zeigt für Japanisch das Gengo-Jahr als ein- oder zweistellige Zahl ohne vorangestellte Null an. Zeigt für Koreanisch das koreanische Jahr als vierstellige arabische Zahl an.  <br/> |
 |e_c  <br/> |Jahresplatzhalter. Zeigt für traditionelles Chinesisch eine Zeichenfolge an, die das julianische Jahr darstellt. Unabhängig vom Gebietsschema des Benutzers.  <br/> |
 |e_j  <br/> |Jahresplatzhalter. Zeigt für Japanisch das Gengo-Jahr als ein- oder zweistellige arabische Zahl an. Unabhängig vom Gebietsschema des Benutzers.  <br/> |
 |e_k  <br/> |Jahresplatzhalter. Zeigt für Koreanisch das koreanische Jahr als vierstellige arabische Zahl an. Unabhängig vom Gebietsschema des Benutzers.  <br/> |
 |E  <br/> |Jahresplatzhalter. Gebietsschemaspezifisch. Zeigt für traditionelles Chinesisch eine Zeichenfolge an, die das republikanische Jahr darstellt. Zeigt für Japanisch das Gengo-Jahr als ein- oder zweistellige Zahl ohne vorangestellte Null an. Zeigt für Koreanisch das koreanische Jahr als vierstellige arabische Zahl an.  <br/> |
 |E_c  <br/> |Jahresplatzhalter. Zeigt für traditionelles Chinesisch eine Zeichenfolge an, die das republikanische Jahr darstellt. Unabhängig vom Gebietsschema des Benutzers.  <br/> |
-|ee  <br/> |Jahresplatzhalter. Gebietsschemaspezifisch. Zeigt für traditionelles Chinesisch eine Zeichenfolge an, die das julianische Jahr darstellt. Zeigt für Japanisch das Gengo-Jahr als zweistellige arabische Zahl an, die erforderlichenfalls eine vorangestellte Null enthält. Zeigt für Koreanisch das koreanische Jahr als vierstellige arabische Zahl an.  <br/> |
+|Ee  <br/> |Jahresplatzhalter. Gebietsschemaspezifisch. Zeigt für traditionelles Chinesisch eine Zeichenfolge an, die das julianische Jahr darstellt. Zeigt für Japanisch das Gengo-Jahr als zweistellige arabische Zahl an, die erforderlichenfalls eine vorangestellte Null enthält. Zeigt für Koreanisch das koreanische Jahr als vierstellige arabische Zahl an.  <br/> |
 |ee_j  <br/> |Jahresplatzhalter. Zeigt für Japanisch das Gengo-Jahr als zweistellige arabische Zahl an. Unabhängig vom Gebietsschema des Benutzers.  <br/> |
 |EE  <br/> |Jahresplatzhalter. Gebietsschemaspezifisch. Zeigt für traditionelles Chinesisch eine Zeichenfolge an, die das republikanische Jahr darstellt. Zeigt für Japanisch das Gengo-Jahr als zweistellige arabische Zahl an, die erforderlichenfalls eine vorangestellte Null enthält. Zeigt für Koreanisch das koreanische Jahr als vierstellige arabische Zahl an.  <br/> |
 |n oder N  <br/> |Jahresplatzhalter. Gebietsschemaspezifisch. Zeigt für traditionelles Chinesisch das republikanische Jahr als arabische Zahl an. Zeigt für Japanisch das Gengo-Jahr als ein- oder zweistellige Zahl ohne vorangestellte Null an. Zeigt für Koreanisch das koreanische Jahr als vierstellige arabische Zahl an.  <br/> |

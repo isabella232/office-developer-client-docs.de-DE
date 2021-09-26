@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.FtMulDwDw
 api_type:
 - COM
 ms.assetid: 8c1a342c-d7ae-4e26-b327-a63cdd3c3ee6
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 54561450e7d91d8a30695dacf508758623547e39
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ed3ad2249ccc9246febfed74217ae75b8f2daa47
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33412912"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59610923"
 ---
 # <a name="ftmuldwdw"></a>FtMulDwDw
 
@@ -42,13 +42,13 @@ FILETIME FtMulDwDw(
 
 ## <a name="parameters"></a>Parameter
 
- _Multiplikation_
+ _Multiplicand_
   
-> [in] Ein Doppeltes Wort, das die nicht signierte ganzzahlige 32-Bit-Zahl enthält, die mit dem Wert im  _Multiplikatorparameter multipliziert werden_ soll. 
+> [in] Ein Doppelwort, das die nicht signierte 32-Bit-Ganzzahl enthält, die mit dem Wert im  _Parameter "Multiplier"_ multipliziert werden soll. 
     
  _Multiplikator_
   
-> [in] Ein Doppelwort, das den nicht signierten 32-Bit-Ganzzahlmultiplikator enthält.
+> [in] Ein Doppelwort, das den 32-Bit-Ganzzahl-Multiplizierer ohne Vorzeichen enthält.
     
 ## <a name="return-value"></a>Rückgabewert
 

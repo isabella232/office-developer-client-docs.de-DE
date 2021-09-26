@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff196402(v=office.15)
 ms:contentKeyID: 48545853
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: 11d525abdb7c5cbd4ef72e81d856d2abfc6a3045
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: d14df8e336bac0e2f3adb2a1f2d55264d0db5def
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32284490"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562328"
 ---
 # <a name="recordsetopenrecordset-method-dao"></a>Recordset.OpenRecordset-Methode (DAO)
 
@@ -22,7 +22,7 @@ Erstellt ein neues **[Recordset](recordset-object-dao.md)**-Objekt und fügt es 
 
 ## <a name="syntax"></a>Syntax
 
-*expression* .OpenRecordset(***Type***, ***Options***)
+*Ausdruck* .OpenRecordset(***Typ** _, _*_Optionen_**)
 
 *Ausdruck* Eine Variable, die ein **Recordset**-Objekt darstellt.
 

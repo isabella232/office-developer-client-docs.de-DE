@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249559(v=office.15)
 ms:contentKeyID: 48545958
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 3a0d0362b8f0ff9570a92a3c1c364061d1f9a584
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d0849868becbe21b502c46fa2445dac42b2a1ad4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292972"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589532"
 ---
 # <a name="field-related-error-information"></a>Feldbezogene Fehlerinformationen
 
@@ -42,7 +42,7 @@ Wenn sich ein Fehler direkt auf ein Feld bezieht – z. B., wenn die Daten fehle
 </tr>
 <tr class="even">
 <td><p><strong>adFieldDataOverflow</strong></p></td>
-<td><p>6</p></td>
+<td><p>6 </p></td>
 <td><p>Gibt an, dass die vom Anbieter zurückgegebenen Daten einen Datentypüberlauf des Felds verursacht haben.</p></td>
 </tr>
 <tr class="odd">
@@ -52,7 +52,7 @@ Wenn sich ein Fehler direkt auf ein Feld bezieht – z. B., wenn die Daten fehle
 </tr>
 <tr class="even">
 <td><p><strong>adFieldIgnore</strong></p></td>
-<td><p>15</p></td>
+<td><p>15 </p></td>
 <td><p>Gibt an, dass beim Festlegen von Datenwerten in der Quelle dieses Feld ausgelassen wurde. Vom Anbieter wurde kein Wert festgelegt.</p></td>
 </tr>
 <tr class="odd">

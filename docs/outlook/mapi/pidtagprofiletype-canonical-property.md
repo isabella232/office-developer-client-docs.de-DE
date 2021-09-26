@@ -1,25 +1,25 @@
 ---
-title: PidTagProfileType (kanonische Eigenschaft)
+title: Kanonische PidTagProfileType-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagProfileType
 api_type:
 - COM
 ms.assetid: 9cc1a1fa-62a7-411b-9b2b-c49d24a38a61
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e2d69a7d67d0a09f2155bcfc255c3e0bf8cb0ebe
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 32595b423368af0f5808ae78c775780995fbd1a1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33433892"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583254"
 ---
-# <a name="pidtagprofiletype-canonical-property"></a>PidTagProfileType (kanonische Eigenschaft)
+# <a name="pidtagprofiletype-canonical-property"></a>Kanonische PidTagProfileType-Eigenschaft
 
   
   
@@ -34,15 +34,15 @@ Enthält den Typ des Informationsspeichers.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Profilkonfiguration  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Gültige Werte für diese Eigenschaft sind:
   
 - 1 – Primärer Benutzer
     
-- 2 – Delegate
+- 2 – Delegieren
     
-- 3 – Öffentlicher Speicher
+- 3 – Öffentlicher Store
     
 - 4 – Abonnement
     
@@ -52,11 +52,11 @@ Gültige Werte für diese Eigenschaft sind:
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -64,9 +64,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -6,23 +6,23 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff822782(v=office.15)
 ms:contentKeyID: 48547481
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: 2c734d5e0f022faec4ebb9efe2dfc2f7dd7b7979
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: d6f676033c5619915f15605eababaaf7aaeb01c2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308358"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59588564"
 ---
 # <a name="workspace-object-dao"></a>Arbeitsbereichsobjekt (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
-Ein **Arbeitsbereichs**objekt definiert eine benannte Sitzung für einen Benutzer. Es enthält geöffnete Datenbanken und stellt Mechanismen für gleichzeitige Transaktionen und in Microsoft Access Arbeitsbereiche für den sicheren Arbeitsgruppen-Support bereit.
+Ein **Arbeitsbereichs** objekt definiert eine benannte Sitzung für einen Benutzer. Es enthält geöffnete Datenbanken und stellt Mechanismen für gleichzeitige Transaktionen und in Microsoft Access Arbeitsbereiche für den sicheren Arbeitsgruppen-Support bereit.
 
 ## <a name="remarks"></a>Bemerkungen
 
-Ein **Arbeitsbereich** ist ein nicht persistentes Objekt, das definiert, wie die Anwendung mit Daten interagiert, indem es das Microsoft Access-Datenbank verwendet. Verwenden Sie ein **Arbeitsbereichs**objekt, um die aktuelle Sitzung zu verwalten oder eine zusätzliche Sitzung zu starten. In einer SItzung können Sie mehrere Datenbanken oder Verbindungen öffnen und Transaktionen verwalten. Sie können beispielsweise folgende Aktionen durchführen:
+Ein **Arbeitsbereich** ist ein nicht persistentes Objekt, das definiert, wie die Anwendung mit Daten interagiert, indem es das Microsoft Access-Datenbank verwendet. Verwenden Sie ein **Arbeitsbereichs** objekt, um die aktuelle Sitzung zu verwalten oder eine zusätzliche Sitzung zu starten. In einer SItzung können Sie mehrere Datenbanken oder Verbindungen öffnen und Transaktionen verwalten. Sie können beispielsweise folgende Aktionen durchführen:
 
 - Verwenden Sie die **Name**-, **UserName**- und **Type**-Eigenschaften, um eine benannte Sitzung einzurichten. Die Sitzung erstellt einen Bereich, in dem Sie mehrere Datenbanken öffnen und eine Instanz verschachtelter Transaktionen durchführen.
 
@@ -30,17 +30,17 @@ Ein **Arbeitsbereich** ist ein nicht persistentes Objekt, das definiert, wie die
 
 - Verwenden Sie die **OpenDatabase**-Methode, um eine oder mehrere vorhandene Datenbanken eines **Arbeitsbereichs** zu öffnen.
 
-- Verwenden Sie die **BeginTrans**-, **CommitTrans**- und **Rollback**-methoden, um das Verarbeiten von verschachtelten Transaktionen innerhalb eines **Arbeitsbereichs** und mehrere **Arbeitsbereichs**objekte zum Durchführen mehrerer gleichzeitiger sich überschneidender Transaktionen zu verwenden.
+- Verwenden Sie die **BeginTrans**-, **CommitTrans**- und **Rollback**-methoden, um das Verarbeiten von verschachtelten Transaktionen innerhalb eines **Arbeitsbereichs** und mehrere **Arbeitsbereichs** objekte zum Durchführen mehrerer gleichzeitiger sich überschneidender Transaktionen zu verwenden.
 
-Wenn Sie zunächst auf ein **Arbeitsbereichsobjekt** verweisen oder es verwenden, erstellen Sie automatisch den Standardarbeitsbereich, DBEngine.Workspaces(0). Die Einstellungen für die Eigenschaften **Name** und **UserName** des standardmäßigen Arbeitsbereichs sind „\#Standardarbeitsbereich\#" bzw. „Admin“. Wenn die Sicherheit aktiviert ist, lautet ist die **UserName** -Eigenschaftseinstellung der Name des angemeldeten Benutzers.
+Wenn Sie zum ersten Mal auf ein **Arbeitsbereich**-Objekt verweisen oder es verwenden, erstellen Sie automatisch den Standardarbeitsbereich, DBEngine.Workspaces(0). Die Einstellungen der Eigenschaften **Name** und **UserName** des Standardarbeitsbereichs lauten „\#Default Workspace\#“ respektive „Admin“. Wenn die Sicherheit aktiviert ist, ist die **UserName**-Eigenschaftseinstellung der Name des angemeldeten Benutzers.
 
 Bei der Verwendung von Transaktionen sind alle im **Arbeitsbereich** angegebenen Datenbanken betroffen - sogar wenn mehrere **Datenbank** objekte im **Arbeitsbereich** geöffnet sind. Wenn Sie beispielsweise eine **BeginTrans** -Methode verwenden, aktualisieren Sie mehrere Datensätze in einer Datenbank und löschen Sie anschließend die Datensätze in einer anderen Datenbank. Wenn Sie anschließend die **Rollback** -Methode verwenden, werden die Aktualisierungs- und Löschvorgänge abgebrochen und zurückgesetzt. Sie können zusätzliche **Arbeitsbereichs** objekte erstellen, um Transaktionen unabhängig zwischen **Datenbank** objekten zu verwalten.
 
-Sie können **Arbeitsbereichs**objekte mit der **CreateWorkspace**-Methode erstellen. Nachdem Sie ein neues **Arbeitsbereichs**objekt erstellt haben, müssen Sie es an die **Arbeitsbereichs**auflistung anhängen, wenn Sie aus der **Arbeitsbereichs**auflistung darauf verweisen müssen.
+Sie können **Arbeitsbereichs** objekte mit der **CreateWorkspace**-Methode erstellen. Nachdem Sie ein neues **Arbeitsbereichs** objekt erstellt haben, müssen Sie es an die **Arbeitsbereichs** auflistung anhängen, wenn Sie aus der **Arbeitsbereichs** auflistung darauf verweisen müssen.
 
-Sie können ein neu erstelltes **Arbeitsbereichs**objekt verwenden, ohne es an die **Arbeitsbereichs**auflistung anhängen zu müssen. Sie müssen jedoch durch die Objektvariable darauf verweisen, der sie es zugewiesen haben.
+Sie können ein neu erstelltes **Arbeitsbereichs** objekt verwenden, ohne es an die **Arbeitsbereichs** auflistung anhängen zu müssen. Sie müssen jedoch durch die Objektvariable darauf verweisen, der sie es zugewiesen haben.
 
-Um auf ein **Arbeitsbereichs**objekt in einer Auflistung durch die Ordinalzahl oder die **Name**-Eigenschaftseinstellung zu verweisen, verwenden Sie eine der folgenden Syntaxformen:
+Um auf ein **Arbeitsbereichs** objekt in einer Auflistung durch die Ordinalzahl oder die **Name**-Eigenschaftseinstellung zu verweisen, verwenden Sie eine der folgenden Syntaxformen:
 
 **DBEngine**.**Arbeitsbereiche**(0)
 
@@ -54,7 +54,7 @@ Um auf ein **Arbeitsbereichs**objekt in einer Auflistung durch die Ordinalzahl o
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird ein neues Microsoft Access-Arbeitsbereichsobjekt erstellt und an die **Arbeitsbereichs**auflistung angehängt. Anschließend werden die **Arbeitsbereichs**auflistungen und die **Eigenschafts**auflistung des **Arbeitsbereichs**objekts aufgezählt.
+In diesem Beispiel wird ein neues Microsoft Access-Arbeitsbereichsobjekt erstellt und an die **Arbeitsbereichs** auflistung angehängt. Anschließend werden die **Arbeitsbereichs** auflistungen und die **Eigenschafts** auflistung des **Arbeitsbereichs** objekts aufgezählt.
 
 ```vb 
 Sub WorkspaceX() 

@@ -6,24 +6,24 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195178(v=office.15)
 ms:contentKeyID: 48545330
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 66f122b7bdaa9069b839cd5884b5da5da48a15f9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 357af9df22c0857febf6721759d755910a6d5306
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295786"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589953"
 ---
 # <a name="connections-collection-dao"></a>Connections-Auflistung (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
 > [!NOTE]
-> [!HINWEIS] ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.
+> ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.
 
 Eine **Connections**-Auflistung enthält die aktuellen **Connection**-Objekte eines **Workspace**-Objekts. (Gilt nur für ODBCDirect-Arbeitsbereiche.)
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn Sie ein **Connection**-Objekt öffnen, wird es automatisch an die **Connections**-Auflistung des **Workspace**-Objekts angefügt. Wenn Sie ein **Connection**-Objekt über die **[Close](connection-close-method-dao.md)** -Methode schließen, wird es aus der **Connections**-Auflistung entfernt. Bevor Sie das Objekt schließen, sollten Sie alle geöffneten **[Recordset](recordset-object-dao.md)** -Objekte im **Connection**-Objekt schließen.
 
@@ -31,11 +31,11 @@ Wenn Sie ein **Connection**-Objekt öffnen, wird gleichzeitig ein entsprechendes
 
 Die Einstellung der **Name**-Eigenschaft eines **Connection**-Objekts ist eine Zeichenfolge, die den Pfad zur Datenbankdatei angibt. Der Verweis auf ein **Connection**-Objekt in einer Auflistung erfolgt über dessen Ordnungszahl oder den Wert der **Name**-Eigenschaft, wobei Sie die folgenden Syntaxformen verwenden können:
 
-- **Verbindungen** 0
+- **Verbindungen**(0)
 
-- **Verbindungen** ("*Name*")
+- **Verbindungen**("*Name*")
 
-- ****\!Verbindungs\[*Name*\]
+-  \! Verbindungen \[ *Name*\]
 
 
 > [!NOTE]

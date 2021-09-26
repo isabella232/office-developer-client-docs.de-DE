@@ -5,25 +5,25 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IConverterSession.SetCharSet
 api_type:
 - COM
 ms.assetid: e5308a94-5191-2109-a881-b4f4a7ff1c61
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: b528d6ef45c02b27f8e07d151793fc338f9af7b1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 37850604467384906fec972fd497ae4d9049edcd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32336638"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59610706"
 ---
 # <a name="iconvertersessionsetsaveformat"></a>IConverterSession::SetSaveFormat
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Legt das Format fest, in dem der Konverter einen MIME-Stream in [IConverterSession::MAPIToMIMEStm zurück gibt.](iconvertersession-mapitomimestm.md)
+Legt das Format fest, in dem der Konverter einen MIME-Stream in [IConverterSession::MAPIToMIMEStm](iconvertersession-mapitomimestm.md)zurückgibt.
   
 ```cpp
 HRESULT IConverterSession::SetSaveFormat ( 
@@ -35,16 +35,16 @@ HRESULT IConverterSession::SetSaveFormat (
 
 _mstSaveFormat_
   
-> [in] Das Speicherformat, das für einen MIME-Stream verwendet werden soll. Weitere Informationen finden Sie im Enumerationstyp [MIMESAVETYPE](https://msdn.microsoft.com/library/ms715128%28VS.85%29.aspx).
+> [in] Das für einen MIME-Stream zu verwendende Speicherformat. Weitere Informationen finden Sie unter dem [Enumerationstyp MIMESAVETYPE](https://msdn.microsoft.com/library/ms715128%28VS.85%29.aspx).
     
-  - **SAVE_RFC1521**: Verwenden Sie MIME, was die Standardeinstellung ist.      
-  - **SAVE_RFC822**: Verwenden Sie uuencode.
+  - **SAVE_RFC1521:** Verwenden Sie MIME, die Standardeinstellung ist.      
+  - **SAVE_RFC822:** Verwenden Sie uuencode.
     
 ## <a name="return-values"></a>Rückgabewerte
 
 S_OK
   
-> Der Aufruf war erfolgreich.
+> Der Anruf war erfolgreich.
     
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 

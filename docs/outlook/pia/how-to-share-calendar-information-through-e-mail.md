@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Bb609881(v=office.15)
 ms:contentKeyID: 55119817
 ms.date: 07/24/2014
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 48b299ad4d3afe5c0c9aaa05f5d8af3b92bf655d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d6e1031e5d4b387aee7297dd91584f0916b4f00b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32332080"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608942"
 ---
 # <a name="share-calendar-information-through-email"></a>Freigeben von Kalenderinformationen per E-Mail
 
@@ -26,7 +26,7 @@ Zuerst wird [GetCalendarExporter](https://msdn.microsoft.com/library/bb610021\(v
 
 Damit die Kalenderinformation dann per E-Mail gesendet wird, wird durch das Codebeispiel die [ForwardAsICal](https://msdn.microsoft.com/library/bb652866\(v=office.15\))-Methode des **CalendarSharing**-Objekts aufgerufen.
 
-Wenn Sie Visual Studio verwenden, um dieses Codebeispiel zu testen, müssen Sie der Microsoft Outlook 15.0-Objektbibliothekkomponente zuerst einen Verweis hinzufügen und die Outlook-Variable angeben, wenn Sie den **Microsoft.Office.Interop.Outlook**-Namespace importieren. Die Anweisung **Imports** oder **using** darf im Codebeispiel nicht direkt vor den Funktionen stehen, sondern muss vor der öffentlichen Class-Deklaration hinzugefügt werden. Die folgenden Codezeilen zeigen, wie Sie den Import und die Zuweisung in Visual Basic und C\# vornehmen.
+Wenn Sie dieses Codebeispiel mit Visual Studio testen, müssen Sie beim Importieren des **Microsoft.Office.Interop.Outlook**-Namespace zuerst einen Verweis auf die Microsoft Outlook 15.0-Objektbibliothekskomponente hinzufügen und die Outlook-Variable angeben. Die **Imports**- oder **using**-Anweisung darf nicht direkt vor den Funktionen im Codebeispiel stehen, sondern muss vor der öffentlichen Class-Deklaration hinzugefügt werden. Die folgenden Codezeilen zeigen, wie der Import und die Zuweisung in Visual Basic und C\# ausgeführt werden.
 
 ```vb
 Imports Outlook = Microsoft.Office.Interop.Outlook

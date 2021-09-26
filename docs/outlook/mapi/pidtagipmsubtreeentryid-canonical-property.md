@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagIpmSubtreeEntryId
 api_type:
 - HeaderDef
 ms.assetid: 5763fc78-5192-4162-be27-4aadc7ed65bc
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 815685696dfc93bb6241f608ca0157e87e758e7b
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 9a68227c61abe65f785739e42a2d09a01ba6ef3c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33412730"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583401"
 ---
 # <a name="pidtagipmsubtreeentryid-canonical-property"></a>PidTagIpmSubtreeEntryId (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "33412730"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält die Eintrags-ID des Stammverzeichnisses der Ordnerunterstruktur für zwischenpersonale Nachrichten (IPM) in der Ordnerstruktur des Nachrichtenspeichers. 
+Enthält den Eintragsbezeichner des Stamms der Unterstruktur des Zwischenpersonellen Nachrichtenordners (Interpersonal Message, IPM) in der Ordnerstruktur des Nachrichtenspeichers. 
   
 |||
 |:-----|:-----|
@@ -34,9 +34,9 @@ Enthält die Eintrags-ID des Stammverzeichnisses der Ordnerunterstruktur für zw
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Ordner  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft stellt den Stamm der IPM-Hierarchie dar. IPM-Clients sollten keine Ordner anzeigen, die keine Unterordner des Ordners sind, der durch diese Eigenschaft dargestellt wird.
+Diese Eigenschaft stellt den Stamm der IPM-Hierarchie dar. IPM-Clients sollten keine Ordner anzeigen, die keine Unterordner des durch diese Eigenschaft dargestellten Ordners sind.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,11 +44,11 @@ Diese Eigenschaft stellt den Stamm der IPM-Hierarchie dar. IPM-Clients sollten k
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

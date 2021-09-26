@@ -6,13 +6,13 @@ ms:mtpsurl: https://docs.microsoft.com/office/client-developer/outlook/pia/how-t
 ms:contentKeyID: 55119800
 ms.date: 12/03/2019
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 7f0f7ba9b8854603646dc41e1017c2465c4af2d8
-ms.sourcegitcommit: 37080eb0087261320e24e6f067e5f434a812b2d2
+ms.localizationpriority: medium
+ms.openlocfilehash: 12940b7e5a364f237f62d19516f31c1f041d958c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39819329"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608998"
 ---
 # <a name="get-the-global-address-list-or-a-set-of-address-lists-for-a-store"></a>Abrufen der globalen Adressliste oder eines Satzes von Adresslisten für einen Speicher
 
@@ -24,7 +24,7 @@ In einer Microsoft Outlook-Sitzung, bei der mehrere Microsoft Exchange-Konten im
 
 Im ersten Codebeispiel ist die DisplayGlobalAddressListForStore-Methode und die GetGlobalAddressList-Funktion enthalten. Die DisplayGlobalAddressListForStore-Methode zeigt im Dialogfeld **Namen auswählen** die globale Adressliste an, die dem aktuellen Speicher zugeordnet ist. DisplayGlobalAddressListForStore ruft zunächst den aktuellen Speicher ab. Handelt es sich dabei um einen Exchange-Speicher, wird GetGlobalAddressList aufgerufen, um die dem aktuellen Speicher zugeordnete globale Adressliste abzurufen. 
 
-GetGlobalAddressList verwendet das [PropertyAccessor](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook.propertyaccessor?redirectedfrom=MSDN&view=outlook-pia)-Objekt und die MAPI-Eigenschaft https://schemas.microsoft.com/mapi/proptag/0x3D150102, um die PR\_EMSMDB\_SECTION\_UID-Eigenschaft einer Adressliste und den aktuellen Speicher abzurufen. GetGlobalAddressList identifiziert eine Adressliste als einem Speicher zugeordnet, wenn ihre PR\_EMSMDB\_SECTION\_UID-Eigenschaften übereinstimmen, und die Adressliste ist die globale Adressliste, wenn ihre [AddressListType](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook.addresslist.addresslisttype?redirectedfrom=MSDN&view=outlook-pia#Microsoft_Office_Interop_Outlook_AddressList_AddressListType)-Eigenschaft [olExchangeGlobalAddressList](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook.oladdresslisttype?redirectedfrom=MSDN&view=outlook-pia) lautet. Wenn der Aufruf von GetGlobalAddressList erfolgreich ist, verwendet DisplayGlobalAddressListForStore das [SelectNamesDialog]( -Objekt, um die zurückgegebene globale Adressliste im Dialogfeld Namen auswählen https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook.selectnamesdialog?redirectedfrom=MSDN&view=outlook-pia\) anzuzeigen. 
+GetGlobalAddressList verwendet das [PropertyAccessor](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook.propertyaccessor?redirectedfrom=MSDN&view=outlook-pia)-Objekt und die MAPI-Eigenschaft https://schemas.microsoft.com/mapi/proptag/0x3D150102, um die PR\_EMSMDB\_SECTION\_UID-Eigenschaft einer Adressliste und den aktuellen Speicher abzurufen. GetGlobalAddressList identifiziert eine Adressliste als einem Speicher zugeordnet, wenn ihre PR\_EMSMDB\_SECTION\_UID-Eigenschaften übereinstimmen, und die Adressliste ist die globale Adressliste, wenn ihre [AddressListType](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook.addresslist.addresslisttype?redirectedfrom=MSDN&view=outlook-pia#Microsoft_Office_Interop_Outlook_AddressList_AddressListType)-Eigenschaft [olExchangeGlobalAddressList](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook.oladdresslisttype?redirectedfrom=MSDN&view=outlook-pia) lautet. Wenn der Aufruf von GetGlobalAddressList erfolgreich ist, verwendet DisplayGlobalAddressListForStore das [SelectNamesDialog]( https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook.selectnamesdialog?redirectedfrom=MSDN&view=outlook-pia\) -Objekt, um die zurückgegebene globale Adressliste im Dialogfeld **Namen auswählen** anzuzeigen.
 
 Wenn Sie Visual Studio verwenden, um dieses Codebeispiel zu testen, müssen Sie der Microsoft Outlook 15.0-Objektbibliothekkomponente zuerst einen Verweis hinzufügen und die Outlook-Variable angeben, wenn Sie den **Microsoft.Office.Interop.Outlook**-Namespace importieren. Die **using**-Anweisung darf im Codebeispiel nicht direkt vor den Funktionen stehen, sondern muss vor der öffentlichen Class-Deklaration hinzugefügt werden. Die folgende Codezeile zeigt, wie Sie den Import und die Zuweisung in C\# vornehmen.
 
@@ -84,7 +84,7 @@ public Outlook.AddressList GetGlobalAddressList(Outlook.Store store)
 }
 ```
 
-Das zweite Codebeispiel enthält die EnumerateAddressListsForStore-Methode und die GetAddressLists-Funktion. Die EnumerateAddressListsForStore-Methode zeigt den Typ und die Auflösungsreihenfolge jeder für den aktuellen Speicher definierten Adressliste an. EnumerateAddressListsForStore ruft zuerst den aktuellen Speicher ab und ruft dann GetAddressLists auf, um ein generisches [List\<T\>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1?redirectedfrom=MSDN&view=netframework-4.8)-Objekt von .NET Framework abzurufen, das AddressList-Objekte für den aktuellen Speicher enthält. 
+Das zweite Codebeispiel enthält die EnumerateAddressListsForStore-Methode und die GetAddressLists-Funktion. Die EnumerateAddressListsForStore-Methode zeigt den Typ und die Auflösungsreihenfolge jeder für den aktuellen Speicher definierten Adressliste an. EnumerateAddressListsForStore ruft zuerst den aktuellen Speicher ab und ruft dann GetAddressLists auf, um ein .NET Framework generische [ \<T\> List-Objekt](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1?redirectedfrom=MSDN&view=netframework-4.8) abzurufen, das AddressList-Objekte für den aktuellen Speicher enthält. 
 
 GetAddressLists zählt jede für die Sitzung definierte Adressliste auf und verwendet das PropertyAccessor-Objekt und die benannte MAPI-Eigenschaft https://schemas.microsoft.com/mapi/proptag/0x3D150102, um die PR\_EMSMDB\_SECTION\_UID-Eigenschaft einer Adressliste und die PR\_EMSMDB\_SECTION\_UID-Eigenschaft eines aktuellen Speichers abzurufen. GetGlobalAddressList identifiziert eine Adressliste als einem Speicher zugeordnet, wenn ihre PR\_EMSMDB\_SECTION\_UID-Eigenschaften übereinstimmen, und gibt eine Menge von Adresslisten für den aktuellen Speicher zurück. Anschließend verwendet EnumerateAddressListsForStore die Eigenschaften [AddressListType](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook.addresslist.addresslisttype?redirectedfrom=MSDN&view=outlook-pia#Microsoft_Office_Interop_Outlook_AddressList_AddressListType) und [ResolutionOrder](https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook.addresslist.resolutionorder?redirectedfrom=MSDN&view=outlook-pia#Microsoft_Office_Interop_Outlook_AddressList_ResolutionOrder) des **AddressList**-Objekts, um den Typ und die Auflösungsreihenfolge für jede zurückgegebene Adressliste anzuzeigen.
 

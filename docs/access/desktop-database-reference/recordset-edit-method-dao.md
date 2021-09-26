@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff821175(v=office.15)
 ms:contentKeyID: 48546850
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: 82dc6e175c7168d5c1b042e85dce7b77aa96b575
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: d6b39af36089784f86f5dd7c286da7329c9e6aeb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300539"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606296"
 ---
 # <a name="recordsetedit-method-dao"></a>Recordset.Edit-Methode (DAO)
 
@@ -33,7 +33,7 @@ Wenn Sie die **Edit**-Methode verwenden, werden Änderungen, die an den Feldern 
 Der aktuelle Datensatz bleibt nach der Verwendung von **Edit** aktuell.
 
 > [!NOTE]
-> Wenn Sie einen Datensatz bearbeiten und dann durch einen beliebigen Vorgang zu einem anderen Datensatz wechseln, ohne zuerst **Update** zu verwenden, gehen Ihre Änderungen ohne Warnung verloren. Der bearbeitete Datensatz wird außerdem ohne Warnung verworfen, wenn Sie den Recordset schließen oder die Prozedur beenden, die das ****Recordset****- oder das übergeordnete [**Database**](database-object-dao.md)- oder [Connection](connection-object-dao.md)-Objekt deklariert.
+> Wenn Sie einen Datensatz bearbeiten und dann durch einen beliebigen Vorgang zu einem anderen Datensatz wechseln, aber ohne zuerst **Update** zu verwenden, gehen Ihre Änderungen ohne Warnung verloren. Wenn Sie zusätzlich Recordset schließen oder die Prozedur beenden, die das **Recordset**-Objekt oder das übergeordnete Objekt **[Database](database-object-dao.md)** oder **[Connection](connection-object-dao.md)** deklariert, wird Ihr bearbeiteter Datensatz ohne Warnung verworfen.
 
 Die Verwendung von **Edit** erzeugt in folgenden Fällen einen Fehler:
 

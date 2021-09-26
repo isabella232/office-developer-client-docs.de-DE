@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm186077
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 2b2a4f978a4af2ba79cab7807f0142d35d7d30c7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d8f4f44ae2acdfe5f20b5ee8a95314f518be07f8
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296913"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607122"
 ---
 # <a name="before-delete-macro-event"></a>Makroereignis "Vor Löschung"
 
@@ -27,21 +27,21 @@ Das Ereignis **Vor Löschung** tritt ein, wenn ein Datensatz gelöscht wird, jed
 > [!NOTE]
 > Das Ereignis **Vor Löschung** ist nur in Datenmakros verfügbar.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Mit dem Ereignis **Vor Löschung** führen Sie sämtliche Aktionen vor dem Löschen eines Datensatzes aus. Das Ereignis **Vor Änderung** wird häufig verwendet, um Überprüfungen auszuführen und benutzerdefinierte Fehlermeldungen auszugeben.
 
-Mithilfe der folgenden Syntax können Sie auf einen Wert im zu löschenden Datensatz zugreifen:
+Mit der folgenden Syntax können Sie auf einen Wert im zu löschenden Datensatz zugreifen:
 
 `[Old].[Field Name]`
 
-Verwenden Sie die folgende Syntax, um beispielsweise auf den Wert des QuantityInStock-Felds im zu löschenden Datensatz zuzugreifen:
+Verwenden Sie beispielsweise die folgende Syntax, um auf den Wert des QuantityInStock-Felds im zu löschenden Datensatz zuzugreifen:
 
 `[Old].[QuantityInStock]`
 
 Am Ende des Ereignisses **Vor Löschung** werden die Werte im zu löschenden Datensatz dauerhaft gelöscht.
 
-You can cancel the **Before Delete** event by using the **RaiseError** action. Wenn ein Fehler ausgelöst wird, werden die Änderungen im **BEFORE DELETE** -Ereignis verworfen.
+You can cancel the **Before Delete** event by using the **RaiseError** action. Wenn ein Fehler ausgelöst wird, werden die Änderungen im **Before Delete-Ereignis** verworfen.
 
 In der folgenden Tabelle sind Makros ausgeführt, die im Ereignis **Vor Löschung** verwendet werden können.
 
@@ -71,7 +71,7 @@ In der folgenden Tabelle sind Makros ausgeführt, die im Ereignis **Vor Löschun
 </tr>
 <tr class="even">
 <td><p>Datenblock</p></td>
-<td><p><a href="lookuprecord-data-block.md">LookupRecord-Makroaktion</a></p></td>
+<td><p><a href="lookuprecord-data-block.md">NachschlagenDatensatz-Makroaktion</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Datenaktion</p></td>
@@ -101,5 +101,5 @@ Zum Erstellen eines Datenmakros, mit dem das Ereignis **Vor Löschung** erfasst 
 
 1.  Öffnen Sie die Tabelle, für die Sie das Ereignis **Vor Löschung** erfassen möchten.
 
-2.  Wählen Sie auf der Registerkarte **Tabelle** in der Gruppe **before-Ereignisse** **vor löschen**aus.
+2.  Wählen Sie auf der Registerkarte **"Tabelle"** in der Gruppe **"Before Events"** die Option **"Before Delete"** aus.
 

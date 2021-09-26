@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm1150
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: db7b353f-4379-8865-1c35-36b89cf93257
 description: Gibt den Typ des zu verwendenden horizontalen Gitters an.
-ms.openlocfilehash: 5ebd172e56a66bfb39bd9bfa20967bb6b52c5aa2
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ef2e65acde1121c1c4e822697867bf5a17d9102f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33436041"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597716"
 ---
 # <a name="xgriddensity-cell-ruler-amp-grid-section"></a>Zelle "XGridDensity" (Abschnitt "Ruler &amp; Grid")
 
@@ -23,21 +23,21 @@ Gibt den Typ des zu verwendenden horizontalen Gitters an.
 |**Wert**|**Beschreibung**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
 |0  <br/> |Fest  <br/> |**visGridFixed** <br/> |
-|2  <br/> |Vorschrr  <br/> |**visGridCoarse** <br/> |
+|2  <br/> |Grob  <br/> |**visGridCoarse** <br/> |
 |4   <br/> |Normal (Standard)  <br/> |**visGridNormal** <br/> |
-|8   <br/> |Fine  <br/> |**visGridFine** <br/> |
+|8   <br/> |Fein  <br/> |**visGridFine** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Zelle entspricht der **Horizontalrasterabstandsoption** im Dialogfeld  **&amp; Linealraster** (klicken Sie auf der Registerkarte Ansicht auf den **Pfeil anzeigen).** 
+Diese Zelle entspricht der horizontalen Option für den **Rasterabstand** im Dialogfeld **&amp; Linealraster** (klicken Sie auf **der** Registerkarte Ansicht auf den Pfeil **anzeigen).** 
   
-Um einen Verweis auf die Zelle XGridDensity anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Um einen Verweis auf die Zelle "XGridDensity" anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |XGridDensity  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die XGridDensity-Zelle nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle XGridDensity anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

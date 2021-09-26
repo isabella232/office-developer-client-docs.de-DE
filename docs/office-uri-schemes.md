@@ -3,14 +3,14 @@ title: Office-URI-Schemas
 manager: luken
 ms.date: 01/14/2016
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1ea99a8f-b005-4b92-b313-923294d20fbf
-ms.openlocfilehash: 246c1da3647b61c6281c1a52a24826b3f22e5d7e
-ms.sourcegitcommit: 939bd9686ba41a8f94b82e004ed84b9054d9c7cf
+ms.openlocfilehash: cd6f55f5727782bae5880f89bb983c08db413a4f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48293499"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611049"
 ---
 # <a name="office-uri-schemes"></a>Office-URI-Schemas
 
@@ -343,7 +343,7 @@ Das URI-Schema „ms-access" wird von Microsoft Office 2013 zum Aufrufen von Mic
   
 ### <a name="e-6-interoperability-considerations"></a>E-6. Überlegungen zur Interoperabilität
 
-Beachten Sie, dass der senkrechte Strich, der in dieser Spezifikation als Trennzeichen verwendet wird, nicht unter den im Abschnitt 2.2 von RFC 3986 zur potenziellen Verwendung als Trennzeichen reservierten Zeichen genannt ist. Dies geschieht absichtlich, um die Menge der Zeichen zu maximieren, die ohne Codierung mit Prozentzeichen im URI-Befehlsargument verwendet werden können. Innerhalb von Segmenten sind die reservierten RFC 3986-Zeichen ":" und "/" Teil der Argumentdaten, keine Trennzeichen, und werden daher nicht in die \<command-argument\> Landschaft einbezogen.
+Beachten Sie, dass der senkrechte Strich, der in dieser Spezifikation als Trennzeichen verwendet wird, nicht unter den im Abschnitt 2.2 von RFC 3986 zur potenziellen Verwendung als Trennzeichen reservierten Zeichen genannt ist. Dies geschieht absichtlich, um die Menge der Zeichen zu maximieren, die ohne Codierung mit Prozentzeichen im URI-Befehlsargument verwendet werden können. Innerhalb \<command-argument\> von Segmenten sind die reservierten RFC 3986-Zeichen ":" und "/" Teil der Argumentdaten, keine Trennzeichen, und werden daher nicht in der Übersicht enthalten.
   
 ### <a name="e-7-security-considerations"></a>E-7. Überlegungen zur Sicherheit
 
@@ -427,7 +427,7 @@ Das URI-Schema „ms-publisher" wird von Microsoft Office 2013 zum Aufrufen von 
   
 ### <a name="g-6-interoperability-considerations"></a>G-6. Überlegungen zur Interoperabilität
 
-Beachten Sie, dass der senkrechte Strich, der in dieser Spezifikation als Trennzeichen verwendet wird, nicht unter den im Abschnitt 2.2 von RFC 3986 zur potenziellen Verwendung als Trennzeichen reservierten Zeichen genannt ist. Dies geschieht absichtlich, um die Menge der Zeichen zu maximieren, die ohne Codierung mit Prozentzeichen im URI-Befehlsargument verwendet werden können. Innerhalb von Segmenten sind die reservierten RFC 3986-Zeichen ":" und "/" Teil der Argumentdaten, keine Trennzeichen, und werden daher nicht in die \<command-argument\> Landschaft einbezogen.
+Beachten Sie, dass der senkrechte Strich, der in dieser Spezifikation als Trennzeichen verwendet wird, nicht unter den im Abschnitt 2.2 von RFC 3986 zur potenziellen Verwendung als Trennzeichen reservierten Zeichen genannt ist. Dies geschieht absichtlich, um die Menge der Zeichen zu maximieren, die ohne Codierung mit Prozentzeichen im URI-Befehlsargument verwendet werden können. Innerhalb \<command-argument\> von Segmenten sind die reservierten RFC 3986-Zeichen ":" und "/" Teil der Argumentdaten, keine Trennzeichen, und werden daher nicht in der Übersicht enthalten.
   
 ### <a name="g-7-security-considerations"></a>G-7. Überlegungen zur Sicherheit
 
@@ -485,7 +485,7 @@ RFC 3987 - International Resource Identifiers (IRIs)  
     
 ### <a name="i-4-uri-scheme-semantics"></a>I-4. URI-Schemasemantik
 
-Das Schema „ms-infopath" definiert eine URI-Syntax zum Öffnen oder Erstellen eines Microsoft Infopath-Dokuments. Das Schema definiert zwei Befehle, die als Anweisungen dafür dienen, was mit dem referenzierten Dokument geschehen soll. Die Befehle sind 1) open-for-edit-cmd (ofe), die InfoPath anweisen, das Dokument am angegebenen URI zur Bearbeitung zu öffnen. und 2) open-for-view-cmd (ofv), die InfoPath anweisen, das Dokument im angegebenen URI im schreibgeschützten Modus zu öffnen.
+Das Schema „ms-infopath" definiert eine URI-Syntax zum Öffnen oder Erstellen eines Microsoft Infopath-Dokuments. Das Schema definiert zwei Befehle, die als Anweisungen dafür dienen, was mit dem referenzierten Dokument geschehen soll. Die Befehle sind 1) open-for-edit-cmd (ofe), wodurch InfoPath angewiesen wird, das Dokument zum Bearbeiten am angegebenen URI zu öffnen. und 2) open-for-view-cmd (ofv), wodurch InfoPath angewiesen wird, das Dokument am angegebenen URI in einem schreibgeschützten Modus zu öffnen.
   
 ### <a name="i-5-applicationsprotocols-that-use-the-ms-infopath-uri-scheme"></a>I-5. Anwendungen/Protokolle, die das URI-Schema „ms-infopath" verwenden
 

@@ -8,15 +8,15 @@ f1_keywords:
 - xlEnableXLMsgs
 keywords:
 - xlenablexlmsgs-Funktion [excel 2007]
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1a7eeaf9-8603-446e-9393-5560e88b3a32
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 62c666c081ef06d40d54af9cec9850600066b3f6
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: adca4eadda9d7cca0217374d0732f02d5e719f3b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407018"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611203"
 ---
 # <a name="xlenablexlmsgs"></a>xlEnableXLMsgs
 

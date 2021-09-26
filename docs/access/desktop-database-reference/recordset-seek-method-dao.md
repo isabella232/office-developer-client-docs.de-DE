@@ -10,13 +10,13 @@ f1_keywords:
 - dao360.chm1053061
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: db2c90d42feacee58af9eea30a2d99439cb4ddaf
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 5942da3b0ea4ab2b2df7a4bbf55555378f8b4bb3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307602"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585431"
 ---
 # <a name="recordsetseek-method-dao"></a>Recordset.Seek-Methode (DAO)
 
@@ -26,7 +26,7 @@ Sucht den Datensatz in einem indizierten **Recordset**-Objekt vom Typ Tabelle, d
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* .Seek(***Comparison***, ***Key1***, ***Key2***, ***Key3***, ***Key4***, ***Key5***, ***Key6***, ***Key7***, ***Key8***, ***Key9***, ***Key10***, ***Key11***, ***Key12***, ***Key13***)
+*Ausdruck* .Seek(***Vergleich** _, _*_Key1_*_, _*_Key2_*_, _*_Key3_*_, _*_Key4_*_, _*_Key5_*_, _*_Key6_*_, _*_Key7_*_, _*_Key8_*_, _*_Key9_*_, _*_Key10_*_, _*_Key11_*_, _*_Key12_*_, _*_Key13_**)
 
 *Ausdruck* Eine Variable, die ein **Recordset**-Objekt darstellt.
 
@@ -58,7 +58,7 @@ Sucht den Datensatz in einem indizierten **Recordset**-Objekt vom Typ Tabelle, d
 <td><p><em>Key1, Key2...Key13</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Mindestens ein Wert, der den Feldern im aktuellen Index des <strong>Recordset</strong> -Objekts gemäß der Angabe seiner Einstellungen für die Eigenschaft <strong>Index</strong> entspricht. Sie können bis zu 13 key-Argumente verwenden.</p></td>
+<td><p>Ein oder mehrere Werte, die den Feldern im aktuellen Index des <strong>Recordset</strong>-Objekts entsprechen, wie durch die Einstellungen für die Eigenschaft <strong>Index</strong> angegeben. Sie können bis zu 13 „Key“-Argumente verwenden.</p></td>
 </tr>
 </tbody>
 </table>
@@ -68,15 +68,15 @@ Sucht den Datensatz in einem indizierten **Recordset**-Objekt vom Typ Tabelle, d
 
 Bevor Sie **Seek** verwenden können, müssen Sie den aktuellen Index mit der **Index**-Eigenschaft festlegen. Wenn der Index ein nicht eindeutiges Schlüsselfeld identifiziert, sucht **Seek** nach dem ersten Datensatz, der die Kriterien erfüllt.
 
-Mit der **Seek**-Methode werden die angegebenen Schlüsselfelder nach dem ersten Datensatz durchsucht, der den durch die Argumente comparison und key1 angegebenen Kriterien entspricht. Wenn er gefunden wurde, wird er zum aktuellen Datensatz gemacht, und die **NoMatch**-Eigenschaft wird auf **False** festgelegt. Falls mit der **Seek**-Methode kein Suchergebnis erzielt wird, wird die **NoMatch**-Eigenschaft auf **True** festgelegt, und der aktuelle Datensatz ist nicht definiert.
+Mit der **Seek**-Methode werden die angegebenen „Key“-Felder nach dem ersten Datensatz durchsucht, der die von „Vergleich“ und „key1“ angegebenen Kriterien erfüllt. Wenn er gefunden wurde, wird er zum aktuellen Datensatz gemacht, und die **NoMatch**-Eigenschaft wird auf **False** festgelegt. Falls mit der **Seek**-Methode keine Übereinstimmung gefunden wird, wird die **NoMatch**-Eigenschaft auf **True** festgelegt, und der aktuelle Datensatz ist nicht definiert.
 
 Wenn für comparison gleich (=), größer gleich (\>=) oder größer als (\>) angegeben wird, beginnt **Seek** am Anfang des Indexes mit der Vorwärtssuche.
 
-Wenn für comparison kleiner als (\<), kleiner als oder gleich (\<=) angegeben wird, beginnt **Seek** am Ende des Indexes mit der Rückwärtssuche. However, if there are duplicate index entries at the end of the index, **Seek** starts at an arbitrary entry among the duplicates and then searches backward.
+Wenn „Vergleich“ kleiner als (\<) oder kleiner oder gleich (\<=) ist, beginnt **Seek** am Ende des Indexes und sucht rückwärts. Gibt es jedoch doppelte Indexeinträge am Ende des Indexes, beginnt **Seek** bei einem beliebigen Eintrag unter den Duplikaten und sucht dann rückwärts.
 
-You must specify values for all fields defined in the index. If you use **Seek** with a multiple-column index, and you don't specify a comparison value for every field in the index, then you cannot use the equal (=) operator in the comparison. Dies liegt daran, dass einige der Kriterienfelder (key2, key3 usw.) standardmäßig auf Null festgelegt werden, was möglicherweise nicht zutrifft. Daher funktioniert der Operator Gleich nur dann ordnungsgemäß, wenn Sie einen Datensatz besitzen, der ausgenommen von dem key, den Sie suchen, **null** aufweist. Wir empfehlen, stattdessen den Operator Größer als oder Gleich (\>=) zu verwenden.
+Sie müssen für alle im Index definierten Felder Werte angeben. Wenn Sie **Seek** mit einem mehrspaltigen Index verwenden und Sie keinen Vergleichswert für jedes Feld im Index angeben, können Sie im Vergleich nicht den Operator „gleich“ (=) verwenden. Dies liegt daran, dass einige Kriterienfelder (key2, key3 usw.) standardmäßig auf NULL festgelegt werden, was wahrscheinlich keine Übereinstimmung ergeben wird. Aus diesem Grund funktioniert der Operator „gleich“ nur dann ordnungsgemäß, wenn Sie einen Datensatz verwenden, der außer bei dem Schlüssel, den Sie suchen, durchgängig **NULL** ist. Es wird empfohlen, stattdessen den Operator „größer gleich“ (\>=) zu verwenden.
 
-Das key1-Argument muss den gleichen Felddatentyp besitzen wie das entsprechende Feld im aktuellen Index. Wenn der aktuelle Index beispielsweise auf ein Zahlenfeld (z. B. Mitarbeiter-ID) verweist, muss key1 numerisch sein. Wenn der aktuelle Index auf ein Textfeld (z. B. den Nachnamen) verweist, muss key1 eine Zeichenfolge sein.
+Das Argument „key1“ muss denselben Felddatentyp haben wie das entsprechende Feld im aktuellen Index. Wenn sich der aktuelle Index beispielsweise auf ein Zahlenfeld bezieht (z. B. Mitarbeiter-ID), muss „key1“ numerisch sein. Bezieht sich der aktuelle Index auf ein Textfeld (z. B. Nachname), muss „key1“ eine Zeichenfolge sein.
 
 Zum Verwenden von **Seek** muss kein aktueller Datensatz vorhanden sein.
 

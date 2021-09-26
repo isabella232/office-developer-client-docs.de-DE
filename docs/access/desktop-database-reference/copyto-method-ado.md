@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248958(v=office.15)
 ms:contentKeyID: 48543558
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 2e8de2caf2abc53b0dbd014f21a85a6d54749033
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4be9e70d32dbb76f1d4a344923bca0402282f293
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295478"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589834"
 ---
 # <a name="copyto-method-ado"></a>CopyTo-Methode (ADO)
 
@@ -28,12 +28,14 @@ Kopiert die angegebene Anzahl von Zeichen oder Bytes (in Abhängigkeit vom [Type
 
 |Parameter|Beschreibung|
 |:--------|:----------|
-|*DestStream* |Der Wert einer Objektvariable, der einen Verweis auf ein geöffnetes **Stream** -Objekt enthält. Das aktuelle **Stream**-Objekt wird in das durch *DestStream* angegebene **Stream**-Zielobjekt kopiert. Das **Stream**-Zielobjekt muss bereits geöffnet sein. Ist dies nicht der Fall, tritt ein Laufzeitfehler auf.<br/><br/>**Hinweis**: der *DestStream* -Parameter ist möglicherweise kein Proxy des **Stream** -Objekts, da dies den Zugriff auf eine private Schnittstelle für das **Stream** -Objekt erfordert, das nicht auf den Client übertragen werden kann.|
-|*NumChars* |Optional. Ein **ganzzahliger** Wert, der die Anzahl von Bytes oder Zeichen angibt, die von der aktuellen Position im Quell **Daten** Strom in den **Zielstream**kopiert werden sollen. Der Standardwert ist – 1, der angibt, dass alle Zeichen oder Bytes von der aktuellen Position zu [EOS](eos-property-ado.md)kopiert werden.|
+|*DestStream* |Der Wert einer Objektvariable, der einen Verweis auf ein geöffnetes **Stream**-Objekt enthält. Das aktuelle **Stream**-Objekt wird in das durch *DestStream* angegebene **Stream**-Zielobjekt kopiert. Das **Stream**-Zielobjekt muss bereits geöffnet sein. Ist dies nicht der Fall, tritt ein Laufzeitfehler auf.
 
-## <a name="remarks"></a>Bemerkungen
+<br/><br/>**HINWEIS:** Der *DestStream-Parameter* ist möglicherweise kein Proxy des **Stream-Objekts,** da dies Zugriff auf eine private Schnittstelle des **Stream-Objekts** erfordert, die nicht auf den Client remote übertragen werden kann.|
+|*NumChars* |Optional. Ein **Integer -Wert,** der die Anzahl der Bytes oder Zeichen angibt, die von der aktuellen Position im **Quelldatenstrom** in das **Zielstream** kopiert werden sollen. Der Standardwert ist –1, der angibt, dass alle Zeichen oder Bytes von der aktuellen Position in [EOS](eos-property-ado.md)kopiert werden.|
 
-This method copies the specified number of characters or bytes, starting from the current position specified by the [Position](position-property-ado.md) property. If the specified number is more than the available number of bytes until **EOS**, then only characters or bytes from the current position to **EOS** are copied. Wenn der Wert von *NumChars* ist – 1 oder nicht angegeben, werden alle Zeichen oder bytes, die von der aktuellen Position beginnen, kopiert.
+## <a name="remarks"></a>HinwBemerkungeneise
+
+This method copies the specified number of characters or bytes, starting from the current position specified by the [Position](position-property-ado.md) property. If the specified number is more than the available number of bytes until **EOS**, then only characters or bytes from the current position to **EOS** are copied. Wenn der Wert von *NumChars* -1 ist oder weggelassen wird, werden alle Zeichen oder Bytes ab der aktuellen Position kopiert.
 
 Wenn der Zieldatenstrom bereits Zeichen oder Bytes enthält, bleibt der gesamte Inhalt nach dem Punkt, an dem die Kopie endet, erhalten und wird nicht abgeschnitten. **Position** beginnt bei dem Byte, dass unmittelbar auf das letzte kopierte Byte folgt. Wenn Sie diese Bytes abschneiden möchten, rufen Sie [SetEOS](seteos-method-ado.md) auf.
 

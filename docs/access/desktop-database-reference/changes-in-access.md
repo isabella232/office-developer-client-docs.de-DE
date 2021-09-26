@@ -7,13 +7,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ618413(v=office.15)
 ms:contentKeyID: 49106417
 ms.date: 10/16/2018
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: de2ff21598639b445f5ff84240b115704b484209
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 142dc9e933ff11c8ee942ccd2a66145c52eced5b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296500"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562888"
 ---
 # <a name="changes-in-access"></a>Änderungen in Access
 
@@ -21,7 +21,7 @@ ms.locfileid: "32296500"
 
 Access umfasst keine Unterstützung für Access-Datenprojekte (ADPs). In Access wird erstmals ein neuer Anwendungstyp verwendet, der es Ihnen ermöglicht, eine webbasierte Access-App zu erstellen. Mithilfe dieses Anwendungstyps können Sie webbasierte Anwendungen erstellen, die die Leistungsfähigkeit von SQL Server lokal oder in der Cloud nutzen.
 
-In einer Access-App auf SharePoint Server beim Erstellen einer Tabelle, einer Abfrage oder eines Datenmakros im Access-Client, in dem Sie Tabellen, Ansichten oder Trigger in einer SQL Server-Datenbank erstellen. Mit dem Access-Client können Sie Ihre Datenbank in anderen Anwendungen öffnen, die eine Verbindung mit SQL Server herstellen. So können Sie Ihre Daten freigeben oder Daten aus anderen Systemen in Ihre Access-App laden.
+Wenn Sie in einer Access-App auf SharePoint Server eine Tabelle, eine Abfrage oder ein Datenmakro im Access-Client erstellen, in dem Sie Tabellen, Ansichten oder Trigger in einer SQL Server-Datenbank erstellen, können Sie mit dem Access-Client Ihre Datenbank in anderen Anwendungen öffnen, die eine Verbindung mit SQL Server herstellen. So können Sie Ihre Daten freigeben oder Daten aus anderen Systemen in Ihre Access-App laden.
 
 Mit Office 365 und Access können Sie Anwendungen erstellen, die Ihre Benutzer erreichen, ohne dass Sie sich Gedanken um Probleme bei Bereitstellung und Installation oder um die Kompatibilität von Betriebssystemen machen müssen. Erstellen Sie Ihre App an einem Ort, und geben Sie sie mit den leistungsstarken Funktionen von SQL Azure und SQL Server im Web frei.
 
@@ -39,7 +39,7 @@ Für die Zukunft haben ADP-Entwickler verschiedene Möglichkeiten:
 
 - **Konvertieren in eine verknüpfte Desktopdatenbank** – Access unterstützt weiterhin die Erstellung von Desktopdatenbanken im ACCDB-Dateiformat. Sie können Ihre Anwendung einschließlich aller vorhandenen Formulare und Berichte in das ACCDB-Format konvertieren und die Daten in SQL Server belassen. Mithilfe verknüpfter Tabellen können Sie eine Verknüpfung mit der SQL Server-Datenbank herstellen, und Ihre Anwendung arbeitet weiterhin mit denselben Daten.
 
-- **Erstellen einer Hybridanwendung** – Wenn Sie über eine große Anwendung verfügen und nicht alles gleichzeitig konvertieren möchten, können Sie Ihre Daten in eine Access-App importieren und von einer ACCDB-Datei eine Verknüpfung mit der SQL Server-Datenbank herstellen. Dies ermöglicht Ihnen eine schrittweise Migration, bei der Sie Formulare und Funktionen nach und nach zur Ihrer Access-App hinzufügen und dabei Ihre Clientanwendung als eine ACCDB-Datei verwalten, deren Tabellen mit der SQL Server-Datenbank hinter der Access-App verknüpft sind.
+- **Erstellen einer Hybridanwendung** – Wenn Sie über eine große Anwendung verfügen und nicht alles gleichzeitig konvertieren möchten, können Sie Ihre Daten in eine Access-App importieren und aus einer ACCDB-Datei eine Verknüpfung mit der SQL Server-Datenbank herstellen. Dies ermöglicht Ihnen eine schrittweise Migration, bei der Sie Formulare und Funktionen nach und nach zur Ihrer Access-App hinzufügen und dabei Ihre Clientanwendung als eine ACCDB-Datei verwalten, deren Tabellen mit der SQL Server-Datenbank hinter der Access-App verknüpft sind.
 
 - **Upgrade auf .NET Framework** – Ihre Anwendung ist möglicherweise so komplex, dass sich der Umstieg auf eine professionelle Entwicklungsplattform wie z. B. .NET Framework empfiehlt. SQL Server vereinfacht die Nutzung Ihrer bereits vorhandenen Datenbankinfrastruktur und die Erweiterung des Funktionsumfangs Ihrer Anwendung, ohne dass ein umfangreiches Umschreiben des Codes erforderlich ist.
 

@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm176660
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 091b9717b9a2e35cfc8d0c8555e28570628065ef
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: d552874568fe0e081ab4fe86e4f8a73c36281bc7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314588"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580846"
 ---
 # <a name="setlocalvar-macro-action"></a>SetLocalVar-Makroaktion
 
@@ -50,7 +50,7 @@ Die **FestlegenLokaleVar**-Aktion kann mit den folgenden Argumenten verwendet we
 <tr class="even">
 <td><p><strong>Ausdruck</strong></p></td>
 <td><p>Ja</p></td>
-<td><p>Ein Ausdruck, mit dem der Wert für diese temporäre Variable festgelegt wird. Stellen Sie dem Ausdruck kein Gleichheitszeichen (=) voran. Sie können auf die Schaltfläche <strong>Erstellen</strong> klicken, um das Argument mithilfe des <strong>Ausdrucks-Generators</strong> festzulegen.</p></td>
+<td><p>Ein Ausdruck, der verwendet wird, um den Wert für diese temporäre Variable festzulegen. Stellen Sie dem Ausdruck kein Gleichheitszeichen (=) voran. Sie können auf die Schaltfläche <strong>Erstellen</strong> klicken, um dieses Argument mithilfe des <strong>Ausdrucks-Generators</strong> festzulegen.</p></td>
 </tr>
 </tbody>
 </table>

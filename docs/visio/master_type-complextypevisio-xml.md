@@ -4,14 +4,14 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2d799074-13d9-3c98-3bee-b57af9966c81
-ms.openlocfilehash: 22b619149fc5393f085ca6e245c65ed6058538ae
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 4a3dc7d6df4d0f39a40fa3fc1f02f3cfe8c9e72b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538067"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603515"
 ---
 # <a name="master_type-complextype-visio-xml"></a>Master_Type complexType (Visio XML)
 
@@ -21,7 +21,7 @@ ms.locfileid: "34538067"
 |:-----|:-----|
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
 |**Schemadatei** <br/> |VisioSchema15-2012-06-05.xsd  <br/> |
-|**Erweiterungsbasis** <br/> |Keine  <br/> |
+|**Erweiterungsbasis** <br/> |Keines  <br/> |
    
 ## <a name="definition"></a>Definition
 
@@ -100,7 +100,7 @@ ms.locfileid: "34538067"
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -114,20 +114,20 @@ Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccur
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|AlignName  <br/> |xsd:unsignedShort  <br/> |Optional  <br/> ||Werte des Typs xsd:unsignedShort.  <br/> |
-|BaseID  <br/> |xsd:string  <br/> |Optional  <br/> ||Werte des xsd:string-Typs.  <br/> |
-|Hidden  <br/> |xsd:boolean  <br/> |Optional  <br/> ||Werte des typs xsd:boolean.  <br/> |
-|IconSize  <br/> |xsd:unsignedShort  <br/> |Optional  <br/> ||Werte des Typs xsd:unsignedShort.  <br/> |
-|IconUpdate  <br/> |xsd:boolean  <br/> |Optional  <br/> ||Werte des typs xsd:boolean.  <br/> |
-|ID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> ||Werte des xsd:unsignedInt-Typs.  <br/> |
-|IsCustomName  <br/> |xsd:boolean  <br/> |Optional  <br/> ||Werte des typs xsd:boolean.  <br/> |
-|IsCustomNameU  <br/> |xsd:boolean  <br/> |Optional  <br/> ||Werte des typs xsd:boolean.  <br/> |
-|MasterType  <br/> |xsd:unsignedShort  <br/> |Optional  <br/> ||Werte des Typs xsd:unsignedShort.  <br/> |
-|MatchByName  <br/> |xsd:boolean  <br/> |Optional  <br/> ||Werte des typs xsd:boolean.  <br/> |
-|Name  <br/> |xsd:string  <br/> |Optional  <br/> ||Werte des xsd:string-Typs.  <br/> |
-|NameU  <br/> |xsd:string  <br/> |Optional  <br/> ||Werte des xsd:string-Typs.  <br/> |
-|PatternFlags  <br/> |xsd:unsignedShort  <br/> |Optional  <br/> ||Werte des Typs xsd:unsignedShort.  <br/> |
-|Eingabeaufforderung  <br/> |xsd:string  <br/> |Optional  <br/> ||Werte des xsd:string-Typs.  <br/> |
-|UniqueID  <br/> |xsd:string  <br/> |Optional  <br/> ||Werte des xsd:string-Typs.  <br/> |
+|AlignName  <br/> |xsd:unsignedShort  <br/> |Optional  <br/> ||Werte des Typs "xsd:unsignedShort".  <br/> |
+|BaseID  <br/> |xsd:string  <br/> |Optional  <br/> ||Werte des Typs "xsd:string".  <br/> |
+|Hidden  <br/> |xsd:boolean  <br/> |Optional  <br/> ||Werte des Typs "xsd:boolean".  <br/> |
+|IconSize  <br/> |xsd:unsignedShort  <br/> |Optional  <br/> ||Werte des Typs "xsd:unsignedShort".  <br/> |
+|IconUpdate  <br/> |xsd:boolean  <br/> |Optional  <br/> ||Werte des Typs "xsd:boolean".  <br/> |
+|ID  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> ||Werte des Typs "xsd:unsignedInt".  <br/> |
+|IsCustomName  <br/> |xsd:boolean  <br/> |Optional  <br/> ||Werte des Typs "xsd:boolean".  <br/> |
+|IsCustomNameU  <br/> |xsd:boolean  <br/> |Optional  <br/> ||Werte des Typs "xsd:boolean".  <br/> |
+|Mastertype  <br/> |xsd:unsignedShort  <br/> |Optional  <br/> ||Werte des Typs "xsd:unsignedShort".  <br/> |
+|MatchByName  <br/> |xsd:boolean  <br/> |Optional  <br/> ||Werte des Typs "xsd:boolean".  <br/> |
+|Name  <br/> |xsd:string  <br/> |Optional  <br/> ||Werte des Typs "xsd:string".  <br/> |
+|NameU  <br/> |xsd:string  <br/> |Optional  <br/> ||Werte des Typs "xsd:string".  <br/> |
+|PatternFlags  <br/> |xsd:unsignedShort  <br/> |Optional  <br/> ||Werte des Typs "xsd:unsignedShort".  <br/> |
+|Eingabeaufforderung  <br/> |xsd:string  <br/> |Optional  <br/> ||Werte des Typs "xsd:string".  <br/> |
+|UniqueID  <br/> |xsd:string  <br/> |Optional  <br/> ||Werte des Typs "xsd:string".  <br/> |
    
 

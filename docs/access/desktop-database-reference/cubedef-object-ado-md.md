@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248941(v=office.15)
 ms:contentKeyID: 48543502
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: c82c95a430da76694fe26300e877e86f86a2eb4b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f01aa6bbc694cfc798351c9711a38e567c9d3f66
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295310"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597548"
 ---
 # <a name="cubedef-object-ado-md"></a>CubeDef-Objekt (ADO MD)
 
@@ -21,7 +21,7 @@ ms.locfileid: "32295310"
 
 Stellt einen Cube aus einem multidimensionalen Schema dar, das eine Reihe verknüpfter Dimensionen enthält.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Auflistungen und Eigenschaften eines **CubeDef**-Objekts ermöglichen Folgendes:
 
@@ -48,7 +48,7 @@ Die **Properties**-Auflistung enthält Eigenschaften, die vom Anbieter bereitges
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>CatalogName</p></td>
+<td><p>Catalogname</p></td>
 <td><p>Der Name des Katalogs, zu dem dieser Cube gehört.</p></td>
 </tr>
 <tr class="even">
@@ -80,7 +80,7 @@ Die **Properties**-Auflistung enthält Eigenschaften, die vom Anbieter bereitges
 <td><p>Datum und Uhrzeit der letzten Schemaaktualisierung.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Instanzschema</p></td>
+<td><p>Schemaname</p></td>
 <td><p>Der Name des Schemas, zu dem dieser Cube gehört.</p></td>
 </tr>
 <tr class="even">

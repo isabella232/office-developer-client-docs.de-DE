@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm3180
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: c84a737d08b791bfe560bfe6af6bcc59a14d2678
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 290708e19c7e24259678153df978a1cd089e95c5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32297221"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607465"
 ---
 # <a name="after-insert-macro-event"></a>Makroereignis „Nach Eingabe“
 
@@ -87,7 +87,7 @@ In der folgenden Tabelle sind Makros ausgeführt, die im Ereignis **Nach Eingabe
 </tr>
 <tr class="even">
 <td><p>Datenaktion</p></td>
-<td><p><a href="cancelrecordchange-macro-action.md">AbbrechenDatensatzÄnderung-Makroaktion</a></p></td>
+<td><p><a href="cancelrecordchange-macro-action.md">CancelRecordChange-Makroaktion</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Datenaktion</p></td>
@@ -95,7 +95,7 @@ In der folgenden Tabelle sind Makros ausgeführt, die im Ereignis **Nach Eingabe
 </tr>
 <tr class="even">
 <td><p>Datenaktion</p></td>
-<td><p><a href="deleterecord-macro-action.md">DatensatzLöschen-Makroaktion</a></p></td>
+<td><p><a href="deleterecord-macro-action.md">DeleteRecord-Makroaktion</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Datenaktion</p></td>

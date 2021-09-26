@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.SizedSPropTagArray
 api_type:
 - COM
 ms.assetid: 1d2dc6e9-735d-4b5b-af6f-adf6a32a666d
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f873ad5234460f9f1781c7427b60d285f7486196
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8ea830c9a198c7483459b6c96087f7c8529f9bf5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429348"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59591108"
 ---
 # <a name="sizedsproptagarray"></a>SizedSPropTagArray
 
@@ -38,17 +38,17 @@ SizedSPropTagArray (_ctag, _name)
 
 _ _ctag_
   
-> Anzahl der Eigenschaftstags, die in der neuen Struktur enthalten sein sollen.
+> Anzahl der Eigenschaftstags, die in die neue Struktur eingeschlossen werden sollen.
     
-_ _name_
+_ _Name_
   
 > Name für die neue Struktur.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Verwenden Sie **das #A0 SizedSPropTagArray,** um ein Eigenschaftentagarray mit expliziten Grenzen zu erstellen. 
+Verwenden Sie das Makro **"SizedSPropTagArray",** um ein Eigenschaftentagarray mit expliziten Begrenzungen zu erstellen. 
   
-Führen Sie die folgende Gliederung aus, um die neue Struktur zu verwenden, die aus dem **#A0 als** Zeiger auf eine **SPropTagArray-Struktur** resultiert: 
+Führen Sie die folgende Umwandlung aus, um die neue Struktur zu verwenden, die aus dem Makro **SizeSPropTagArray** als Zeiger auf eine **SPropTagArray-Struktur** resultiert: 
   
 ```cpp
 lpPropTagArray = (LPPropTagArray) &SizedSPropTagArray;

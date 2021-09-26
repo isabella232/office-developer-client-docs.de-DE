@@ -1,5 +1,5 @@
 ---
-title: Festlegen von Formular-, Berichts- und Steuerelementeigenschaften
+title: Einstellen von Formular-, Berichts- und Steuerelementeigenschaften
 TOCTitle: Set form, report, and control properties
 description: Jedes Formular, jeder Bericht, jeder Bereich und jedes Steuerelement verfügt über Eigenschafteneinstellungen, mit denen Sie das Aussehen und die Funktionsweise eines Elements in Access 2013 ändern können.
 ms:assetid: 03349d86-f107-9e49-89df-62f55f3a0735
@@ -11,29 +11,29 @@ f1_keywords:
 - vbaac10.chm12286
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: bacbdc100d147be8bf4327a5a775b199c79347bb
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: d3196db2851804fc09b1479e65122358a7fd1489
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308736"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580860"
 ---
-# <a name="set-form-report-and-control-properties"></a>Festlegen von Formular-, Berichts- und Steuerelementeigenschaften
+# <a name="set-form-report-and-control-properties"></a>Einstellen von Formular-, Berichts- und Steuerelementeigenschaften
 
 **Gilt für**: Access 2013, Office 2013
 
 Jedes Formular, jeder Bericht, jeder Bereich und jedes Steuerelement verfügt über Eigenschafteneinstellungen, mit denen Sie das Aussehen und die Funktionsweise eines Elements ändern können. Sie können die Eigenschaften im Eigenschaftenfenster, in einem Makro oder in Visual Basic anzeigen und ändern.
 
-## <a name="set-properties"></a>Festlegen von Eigenschaften
+## <a name="set-properties"></a>Eigenschaften festlegen
 
 1. Wählen Sie in der Formularentwurfsansicht oder Berichtsentwurfsansicht das Steuerelement, den Bereich, das Formular oder den Bericht aus, für das bzw. den Sie die Eigenschaft einstellen möchten. Sie haben folgende Auswahlmöglichkeiten:
     
    - Ein oder mehrere Steuerelemente. Wenn Sie mehrere Steuerelemente auswählen möchten, klicken Sie bei gedrückter UMSCHALTTASTE auf die gewünschten Steuerelemente, oder ziehen Sie den Mauszeiger über die gewünschten Steuerelemente. Wenn Sie mehrere Steuerelemente auswählen, zeigt das Eigenschaftenfenster nur die Eigenschaften an, die alle markierten Steuerelemente gemeinsam besitzen.
     
-   - Einen Bereich. Klicken Sie auf den Bereichsmarkierer des gewünschten Bereichs.
+   - Einen Bereich. Wählen Sie den Bereichsmarkierer des gewünschten Bereichs.
     
-   - Das gesamte Formular oder den gesamten Bericht. Klicken Sie auf den Formularmarkierer oder Berichtsmarkierer in der oberen linken Ecke des Formulars bzw. Berichts.
+   - Das gesamte Formular oder den gesamten Bericht. Wählen Sie den Formularmarkierer oder den Berichtsmarkierer in der oberen linken Ecke des Formulars oder des Berichts.
 
 2. Zeigen Sie das Eigenschaftenfenster an, indem Sie zuerst mit der rechten Maustaste auf das Objekt oder den Bereich und dann im Kontextmenü auf **Eigenschaften** klicken, oder indem Sie auf der Symbolleiste auf **Eigenschaften** klicken.
 

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagContainerHierarchy
 api_type:
 - HeaderDef
 ms.assetid: 6917510d-ca1e-4049-9eab-09313753ecf0
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f009d7ce5cd1856ccff1e00953188c8edde7a6bc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 65460c148c812793b72220e3d2b2bba6ccd227ba
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32332858"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583534"
 ---
 # <a name="pidtagcontainerhierarchy-canonical-property"></a>PidTagContainerHierarchy (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32332858"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält ein eingebettetes Hierarchietabelle-Objekt, das Informationen zu den untergeordneten Containern enthält. 
+Enthält ein eingebettetes Hierarchietabellenobjekt, das Informationen zu den untergeordneten Containern bereitstellt. 
   
 |||
 |:-----|:-----|
@@ -34,20 +34,20 @@ Enthält ein eingebettetes Hierarchietabelle-Objekt, das Informationen zu den un
 |Datentyp:  <br/> |PT_OBJECT  <br/> |
 |Bereich:  <br/> |Container  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft kann in [IMAPIProp::CopyTo-Vorgängen](imapiprop-copyto.md) ausgeschlossen oder in [IMAPIProp::CopyProps-Vorgängen enthalten](imapiprop-copyprops.md) sein. Als Eigenschaft vom Typ **PT_OBJECT** kann sie nicht erfolgreich von der [IMAPIProp::GetProps-Methode abgerufen](imapiprop-getprops.md) werden. Der Zugriff auf den Inhalt sollte über die [IMAPIProp::OpenProperty-Methode](imapiprop-openproperty.md) erfolgen, die den IID_IMAPITable anfordert. Dienstanbieter müssen sie der [IMAPIProp::GetPropList-Methode](imapiprop-getproplist.md) melden, wenn sie festgelegt ist, können sie jedoch optional melden oder nicht, wenn sie nicht festgelegt ist. 
+Diese Eigenschaft kann in [IMAPIProp::CopyTo-Operationen](imapiprop-copyto.md) oder in [IMAPIProp::CopyProps-Operationen](imapiprop-copyprops.md) ausgeschlossen werden. Als Eigenschaft vom Typ **PT_OBJECT** kann sie nicht erfolgreich von der [IMAPIProp::GetProps-Methode](imapiprop-getprops.md) abgerufen werden. Auf den Inhalt sollte über die [IMAPIProp::OpenProperty-Methode](imapiprop-openproperty.md) zugegriffen werden, die den IID_IMAPITable Schnittstellenbezeichner anfordert. Dienstanbieter müssen sie an die [IMAPIProp::GetPropList-Methode](imapiprop-getproplist.md) melden, wenn sie festgelegt ist, können sie aber optional melden oder nicht, wenn sie nicht festgelegt ist. 
   
-Zum Abrufen von Tabelleninhalten sollte eine Clientanwendung die [IMAPIContainer::GetHierarchyTable-Methode](imapicontainer-gethierarchytable.md) aufrufen. Weitere Informationen finden Sie unter [Hierarchietabellen](hierarchy-tables.md). 
+Zum Abrufen von Tabelleninhalten sollte eine Clientanwendung die [IMAPIContainer::GetHierarchyTable-Methode](imapicontainer-gethierarchytable.md) aufrufen. Weitere Informationen finden Sie unter [Hierarchietabellen.](hierarchy-tables.md) 
   
- **PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md)), **PR_FOLDER_ASSOCIATED_CONTENTS** ([PidTagFolderAssociatedContents](pidtagfolderassociatedcontents-canonical-property.md)), und diese Eigenschaft ist in der Verwendung ähnlich. Mehrere MAPI-Eigenschaften bieten Zugriff auf Tabellen: 
+ **PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md)), **PR_FOLDER_ASSOCIATED_CONTENTS** ([PidTagFolderAssociatedContents](pidtagfolderassociatedcontents-canonical-property.md)), und diese Eigenschaft sind in der Verwendung ähnlich. Mehrere MAPI-Eigenschaften bieten Zugriff auf Tabellen: 
   
 |**Eigenschaft**|**Table**|
 |:-----|:-----|
-|**PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md))  <br/> |Inhaltstabelle  <br/> |
+|**PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md))  <br/> |Inhaltsverzeichnis  <br/> |
 |**PR_CONTAINER_HIERARCHY** <br/> |Hierarchietabelle  <br/> |
-|**PR_FOLDER_ASSOCIATED_CONTENTS** ([PidTagFolderAssociatedContents](pidtagfolderassociatedcontents-canonical-property.md))  <br/> |Tabelle "Zugeordnete Inhalte"  <br/> |
-|**PR_MESSAGE_ATTACHMENTS** ([PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md))  <br/> |Anlagentabelle  <br/> |
+|**PR_FOLDER_ASSOCIATED_CONTENTS** ([PidTagFolderAssociatedContents](pidtagfolderassociatedcontents-canonical-property.md))  <br/> |Zugeordnetes Inhaltsverzeichnis  <br/> |
+|**PR_MESSAGE_ATTACHMENTS** ([PidTagMessageAttachments](pidtagmessageattachments-canonical-property.md))  <br/> |Attachment-Tabelle  <br/> |
 |**PR_MESSAGE_RECIPIENTS** ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md))  <br/> |Empfängertabelle  <br/> |
    
 ## <a name="related-resources"></a>Verwandte Ressourcen
@@ -56,7 +56,7 @@ Zum Abrufen von Tabelleninhalten sollte eine Clientanwendung die [IMAPIContainer
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
   
@@ -70,11 +70,11 @@ Zum Abrufen von Tabelleninhalten sollte eine Clientanwendung die [IMAPIContainer
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -82,9 +82,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

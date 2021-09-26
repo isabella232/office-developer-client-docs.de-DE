@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1f66d2b2-ec9e-cd58-7642-96850fe4589e
 description: Gibt die Koordinate des angegebenen Rands des das Shape umgebenden Felds zurück.
-ms.openlocfilehash: 0018118eb0991fe9dc1da0eb000566b69d8a4b4d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: da94210970e1c3331380e1ee319b0ba59230ea68
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33418071"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598717"
 ---
 # <a name="boundingboxrect-function"></a>BOUNDINGBOXRECT Function
 
@@ -37,9 +37,9 @@ BOUNDINGBOXRECT(** *Index* ** )
 
  **Number**
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
- *Index*  kann einer der folgenden Werte sein. 
+ *Index*  kann einer der folgenden Werte sein: 
   
 |**Aspekt**|**Wert**|
 |:-----|:-----|
@@ -48,6 +48,6 @@ BOUNDINGBOXRECT(** *Index* ** )
 |Oberer Rand  <br/> |2  <br/> |
 |Unterer Rand  <br/> |3  <br/> |
    
-Wenn das Shape über ein übergeordnetes Shape verfügt, befindet sich der Rückgabewert im Koordinatensystem dieses übergeordneten Shapes.
+Wenn das Shape über ein übergeordnetes Shape verfügt, befindet sich der Rückgabewert im Koordinatensystem dieses übergeordneten Elements.
   
 

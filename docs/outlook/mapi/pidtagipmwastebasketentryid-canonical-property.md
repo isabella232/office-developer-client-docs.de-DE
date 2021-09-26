@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagIpmWastebasketEntryId
 api_type:
 - HeaderDef
 ms.assetid: 0f8dd043-66f0-4193-9b95-853bc3827f73
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 3794386c4461c90f973e4028132cb8220dfaa19b
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8b5054fb12202d1db8dab575031c711bbb8fff5a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33426352"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583408"
 ---
 # <a name="pidtagipmwastebasketentryid-canonical-property"></a>PidTagIpmWastebasketEntryId (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "33426352"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält die Eintrags-ID des Ordners "Gelöschte Elemente" (IPM). 
+Enthält den Eintragsbezeichner des standardmäßigen Ordners für gelöschte Elemente (Interpersonal Message, IPM). 
   
 |||
 |:-----|:-----|
@@ -34,9 +34,9 @@ Enthält die Eintrags-ID des Ordners "Gelöschte Elemente" (IPM).
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Ordner  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Eine Clientanwendung sollte gelöschte zwischenpersönliche Nachrichten in den Ordner "Gelöschte Elemente" verschieben. Wenn sich die Nachricht bereits in diesem Ordner befindet oder diese Eigenschaft nicht unterstützt wird, sollte der Client die Nachricht löschen. 
+Eine Clientanwendung sollte gelöschte zwischenmenschliche Nachrichten in den Ordner "Gelöschte Elemente" verschieben. Wenn sich die Nachricht bereits in diesem Ordner befindet oder diese Eigenschaft nicht unterstützt wird, sollte der Client die Nachricht löschen. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -44,11 +44,11 @@ Eine Clientanwendung sollte gelöschte zwischenpersönliche Nachrichten in den O
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -56,9 +56,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

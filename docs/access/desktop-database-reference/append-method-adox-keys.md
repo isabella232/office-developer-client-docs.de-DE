@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248913(v=office.15)
 ms:contentKeyID: 48543396
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: c301f6809ab7f785497637b12e0b5d7a0bb7772d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d296aed4b0ae64c5d165eeac89eed50859ee0c01
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32297088"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607346"
 ---
 # <a name="append-method-adox-keys"></a>Append-Methode (ADOX Keys)
 
@@ -22,19 +22,19 @@ Fügt der [Keys](key-object-adox.md)-Auflistung ein neues [Key](keys-collection-
 
 ## <a name="syntax"></a>Syntax
 
-*Schlüssel*. Append *-Taste* \[, KeyType** \] \[,*Column* \] \[,*relatedable* \] \[,*RelatedColumn*\]
+*Keys*. Append *Key* \[ ,*KeyType* \] \[ ,*Column* \] \[ ,*RelatedTable* \] \[ ,*RelatedColumn*\]
 
 ## <a name="parameters"></a>Parameter
 
 |Parameter|Beschreibung|
 |:--------|:----------|
 |*Key* |Das anzufügende **Key** -Objekt oder der Name des zu erstellenden und anzufügenden Schlüssels.|
-|*KeyType* |Optional. Ein **Long**-Wert, der den Schlüsseltyp angibt. Der *Key*-Parameter entspricht der [Type](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/type-property-keyadox)-Eigenschaft eines **Key**-Objekts.|
+|*Keytype* |Optional. Ein **Long**-Wert, der den Schlüsseltyp angibt. Der *Key*-Parameter entspricht der [Type](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/type-property-keyadox)-Eigenschaft eines **Key**-Objekts.|
 |*Spalte* |Optional. Ein **String**-Wert, der den Namen der zu indizierenden Spalte angibt. Der *Columns*-Parameter entspricht dem Wert der [Name](name-property-adox.md)-Eigenschaft eines [Column](column-object-adox.md)-Objekts.|
-|*RelatedTable* |Optional. Ein **String**-Wert, der den Namen der verknüpften Tabelle angibt. Der *RelatedTable*-Parameter entspricht dem Wert der **Name**-Eigenschaft eines [Table](table-object-adox.md)-Objekts.|
+|*Relatedtable* |Optional. Ein **String**-Wert, der den Namen der verknüpften Tabelle angibt. Der *RelatedTable*-Parameter entspricht dem Wert der **Name**-Eigenschaft eines [Table](table-object-adox.md)-Objekts.|
 |*RelatedColumn* |Optional. A **String** value that specifies the name of the related column for a foreign key. The RelatedColumn parameter corresponds to the value of the **Name** property of a **Column** object.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der *Columns*-Parameter kann entweder den Namen einer Spalte oder einen Array von Spaltennamen festlegen.
 

@@ -1,32 +1,32 @@
 ---
-title: Zelle GlowSize (Abschnitt "Additional Effect Properties")
+title: Zelle "GlowSize" (Abschnitt "Additional Effect Properties")
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2ddc7a08-25b8-4903-b0dd-be72d1fa8075
-description: Bestimmt die Größe des externen Leuchteffekts einer Form in Punkt.
-ms.openlocfilehash: 6d338ebe23b5c5422c7cdc5a72fccb18eefef87e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Bestimmt die Größe des externen Leuchtens einer Form in Punkt.
+ms.openlocfilehash: 4b9c7a6e5b0b510957b2f9fd6eed95b3def7fc7e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33409531"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598563"
 ---
-# <a name="glowsize-cell-additional-effect-properties-section"></a>Zelle GlowSize (Abschnitt "Additional Effect Properties")
+# <a name="glowsize-cell-additional-effect-properties-section"></a>Zelle "GlowSize" (Abschnitt "Additional Effect Properties")
 
-Bestimmt die Größe des externen Leuchteffekts einer Form in Punkt. 
+Bestimmt die Größe des externen Leuchtens einer Form in Punkt. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Verwenden Sie zum Erhalten eines Verweises auf die **GlowSize-Zelle** anhand des Namens aus einer anderen Formel, nach dem Wert des **N-Attributs** eines **Cell-Elements** oder aus einem Programm mit der **CellsU-Eigenschaft:** 
+Verwenden Sie Folgendes, um einen Verweis auf die **GlowSize-Zelle** anhand des Namens aus einer anderen Formel, anhand des Werts des **N-Attributs** eines **Cell-Elements** oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | GlowSize  <br/> |
+| Zellenname:  <br/> | Glowsize  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die **GlowSize-Zelle** nach Index aus einem Programm zu erhalten: 
+Um einen Verweis auf die **Zelle GlowSize** anhand des Indexes aus einem Programm abzurufen, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|

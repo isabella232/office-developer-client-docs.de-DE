@@ -10,20 +10,20 @@ f1_keywords:
 - jetsql40.chm5277587
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 3ea0641c7325bfcb4339572bc8b50724115af8d6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: b6a4a9cb420911bc5220e43abd1753eceb14d2e2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293511"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589624"
 ---
 # <a name="equivalent-ansi-sql-data-types"></a>Äquivalente ANSI SQL-Datentypen
 
 
 **Gilt für**: Access 2013, Office 2013
 
-In der folgenden Tabelle sind die ANSI-SQL-Datentypen, ihre entsprechenden SQL-Datentypen im Microsoft Access-Datenbankmodul und deren gültige Synonyme aufgeführt. Zusätzlich werden die gleichwertigen Microsoft SQL Server™-Datentypen aufgelistet.
+In der folgenden Tabelle werden ANSI SQL-Datentypen aufgelistet, deren gleichwertige SQL-Datentypen des Microsoft Access-Datenbankmoduls sowie deren gültige Synonyme. Zusätzlich werden die gleichwertigen Microsoft SQL Server™-Datentypen aufgelistet.
 
 <table>
 <colgroup>

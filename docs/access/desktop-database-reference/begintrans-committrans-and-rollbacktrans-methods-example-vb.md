@@ -1,25 +1,25 @@
 ---
-title: BeginTrans-, CommitTrans-, RollbackTrans-Methoden (Beispiel) (VB)
+title: BeginTrans-, CommitTrans-, RollbackTrans-Methode (Beispiel) (VB)
 TOCTitle: BeginTrans, CommitTrans, and RollbackTrans methods example (VB)
 ms:assetid: 12fce322-dba7-9159-8a09-7f6daf1a80ed
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248904(v=office.15)
 ms:contentKeyID: 48543357
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 57efd2b4361a48eff122ce2ee2ed2d0f68d438b1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: a904c56275a66c4ba53b1b9c21e39a0f8ea6a1e5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296850"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607115"
 ---
 # <a name="begintrans-committrans-and-rollbacktrans-methods-example-vb"></a>BeginTrans-, CommitTrans- und RollbackTrans-Methode (Beispiel) (VB)
 
 
 **Gilt für**: Access 2013, Office 2013
 
-In diesem Beispiel wird der Buchtyp aller Psychologiebücher in der Tabelle ***Titles*** der Datenbank geändert. Nachdem durch die [BeginTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md)-Methode eine Transaktion gestartet wurde, durch die alle an der Tabelle ***Titles*** vorgenommenen Änderungen isoliert werden, werden die Änderungen mit der [CommitTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md)-Methode gespeichert. Sie können die [RollbackTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md)-Methode verwenden, um mit der [Update](update-method-ado.md)-Methode gespeicherte Änderungen rückgängig zu machen.
+In diesem Beispiel wird der Buchtyp aller Bücher in der Tabelle ***Titel** _ der Datenbank geändert. Nachdem die [BeginTrans-Methode](begintrans-committrans-and-rollbacktrans-methods-ado.md) eine Transaktion gestartet hat, die alle an der Tabelle *__Titles_** vorgenommenen Änderungen isoliert, speichert die [CommitTrans-Methode](begintrans-committrans-and-rollbacktrans-methods-ado.md) die Änderungen. Sie können die [RollbackTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md)-Methode verwenden, um mit der [Update](update-method-ado.md)-Methode gespeicherte Änderungen rückgängig zu machen.
 
 ```vb 
  

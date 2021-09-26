@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff834683(v=office.15)
 ms:contentKeyID: 48547815
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: c36187eef0b55681b2ba426d979f42ee8a6efea8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 5c27ef89d9df1a0a8caa761e758a2ecc83108536
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32284806"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606254"
 ---
 # <a name="recordset-members-dao"></a>Recordset-Elemente (DAO)
 
@@ -58,7 +58,7 @@ Ein Recordset-Objekt stellt die Datensätze in einer Basistabelle oder die Daten
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset-copyquerydef-method-dao.md">CopyQueryDef</a></strong></p></td>
-<td><p>Gibt ein <strong><a href="querydef-object-dao.md">QueryDef</a></strong>-Objekt zurück, das eine Kopie des <strong>QueryDef</strong>-Objekts ist, welches zum Erstellen des <strong><a href="recordset-object-dao.md">Recordset</a></strong>-Objekts verwendet wurde, das durch den recordset-Platzhalter dargestellt wird (gilt nur für Microsoft Access-Arbeitsbereiche). .</p></td>
+<td><p>Gibt ein <strong><a href="querydef-object-dao.md">QueryDef</a></strong>-Objekt zurück, das eine Kopie des <strong>QueryDef</strong> ist, das zum Erstellen des <strong><a href="recordset-object-dao.md">Recordset</a></strong>-Objekts verwendet wurde, das durch den Recordset-Platzhalter dargestellt wird (nur Microsoft Access-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset-delete-method-dao.md">Delete</a></strong></p></td>
@@ -173,7 +173,7 @@ Ein Recordset-Objekt stellt die Datensätze in einer Basistabelle oder die Daten
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset-bof-property-dao.md">BOF</a></strong></p></td>
-<td><p>Gibt einen Wert zurück, der angibt, ob die aktuelle Datensatzposition in einem <strong>Recordset</strong>-Objekt vor dem ersten Datensatz liegt. Schreibgeschützter <strong>boolescher</strong> Wert.</p></td>
+<td><p>Gibt einen Wert zurück, der angibt, ob die aktuelle Datensatzposition in einem <strong>Recordset</strong>-Objekt vor dem ersten Datensatz liegt. Schreibgeschützt <strong>Boolesch</strong>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset-bookmark-property-dao.md">Bookmark</a></strong></p></td>
@@ -185,7 +185,7 @@ Ein Recordset-Objekt stellt die Datensätze in einer Basistabelle oder die Daten
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset-cachesize-property-dao.md">CacheSize</a></strong></p></td>
-<td><p>Mit dieser Eigenschaft wird die Anzahl von Datensätzen, die aus einer ODBC-Datenquelle abgerufen und lokal gespeichert werden, festgelegt oder zurückgegeben. <strong>Long</strong> mit Lese-/Schreibzugriff.</p></td>
+<td><p>Legt die Anzahl der aus einer ODBC-Datenquelle abgerufenen Datensätze fest, die lokal zwischengespeichert werden, oder gibt diese zurück. Lese/Schreiben <strong>Lang</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset-cachestart-property-dao.md">CacheStart</a></strong></p></td>
@@ -197,7 +197,7 @@ Ein Recordset-Objekt stellt die Datensätze in einer Basistabelle oder die Daten
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset-datecreated-property-dao.md">DateCreated</a></strong></p></td>
-<td><p>Gibt das Datum und die Uhrzeit der Erstellung einer Basistabelle zurück (nur Microsoft Access-Arbeitsbereiche). Schreibgeschützter <strong>Variant</strong>-Wert.</p></td>
+<td><p>Gibt das Datum und die Uhrzeit der Erstellung einer Basistabelle zurück (nur Microsoft Access-Arbeitsbereiche). Schreibgeschützt <strong>Variant</strong>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset-editmode-property-dao.md">EditMode</a></strong></p></td>
@@ -205,15 +205,15 @@ Ein Recordset-Objekt stellt die Datensätze in einer Basistabelle oder die Daten
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset-eof-property-dao.md">EOF</a></strong></p></td>
-<td><p>Gibt einen Wert zurück, der angibt, ob die aktuelle Datensatzposition hinter dem letzten Datensatz in einem <strong>Recordset</strong>-Objekt liegt. Schreibgeschützter <strong>boolescher</strong> Wert.</p></td>
+<td><p>Gibt einen Wert zurück, der angibt, ob die aktuelle Datensatzposition hinter dem letzten Datensatz in einem <strong>Recordset</strong>-Objekt liegt. Schreibgeschützt <strong>Boolesch</strong>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset-fields-property-dao.md">Fields</a></strong></p></td>
-<td><p>Gibt eine <strong>Fields</strong> -Auflistung zurück, die alle gespeicherten <strong>Field</strong> -Objekte für das angegebene Objekt enthält. Schreibgeschützt.</p></td>
+<td><p>Gibt eine <strong>Fields</strong>-Sammlung zurück, die alle gespeicherten <strong>Field</strong> -Objekte für das angegebene Objekt enthält. Schreibgeschützt.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset-filter-property-dao.md">Filter</a></strong></p></td>
-<td><p>Legt einen Wert fest, der feststellt, welche Datensätze in einem nachfolgend geöffneten <strong>Recordset</strong>-Objekt einbezogen werden, oder gibt den betreffenden Wert zurück (nur Microsoft Access-Arbeitsbereiche). <strong>Zeichenfolge</strong> mit Lese-/Schreibzugriff.</p></td>
+<td><p>Legt einen Wert fest, der die in einem nachfolgend geöffneten <strong>Recordset</strong>-Objekt enthaltenen Datensätze bestimmt, oder gibt diesen Wert zurück (nur Microsoft Access-Arbeitsbereich). Lesen/Schreiben <strong>Zeichenfolge</strong>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset-index-property-dao.md">Index</a></strong></p></td>
@@ -225,7 +225,7 @@ Ein Recordset-Objekt stellt die Datensätze in einer Basistabelle oder die Daten
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset-lastupdated-property-dao.md">LastUpdated</a></strong></p></td>
-<td><p>Gibt das Datum und die Uhrzeit der letzten Änderung einer Basistabelle zurück. Schreibgeschützter <strong>Variant</strong>-Wert.</p></td>
+<td><p>Gibt das Datum und die Uhrzeit der letzten Änderung einer Basistabelle zurück. Schreibgeschützt <strong>Variant</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset-lockedits-property-dao.md">LockEdits</a></strong></p></td>
@@ -233,7 +233,7 @@ Ein Recordset-Objekt stellt die Datensätze in einer Basistabelle oder die Daten
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset-name-property-dao.md">Name</a></strong></p></td>
-<td><p>Gibt den Namen des angegebenen Objekts zurück. Schreibgeschützte <strong>Zeichenfolge</strong>.</p></td>
+<td><p>Gibt den Namen des angegebenen Objekts zurück. Schreibgeschützt <strong>Zeichenfolge</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset-nomatch-property-dao.md">NoMatch</a></strong></p></td>
@@ -245,7 +245,7 @@ Ein Recordset-Objekt stellt die Datensätze in einer Basistabelle oder die Daten
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset-properties-property-dao.md">Properties</a></strong></p></td>
-<td><p>Gibt die <strong><a href="properties-collection-dao.md">Properties</a></strong> -Auflistung des angegebenen Objekts zurück. Schreibgeschützt.</p></td>
+<td><p>Gibt die <strong><a href="properties-collection-dao.md">Properties</a></strong>Sammlung des angegebenen Objekts zurück. Schreibgeschützt.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset-recordcount-property-dao.md">RecordCount</a></strong></p></td>
@@ -271,7 +271,7 @@ Ein Recordset-Objekt stellt die Datensätze in einer Basistabelle oder die Daten
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset-transactions-property-dao.md">Transactions</a></strong></p></td>
-<td><p>Gibt einen Wert zurück, der angibt, ob ein Objekt Transaktionen unterstützt. Schreibgeschützter <strong>boolescher</strong> Wert.</p></td>
+<td><p>Gibt einen Wert zurück, der angibt, ob ein Objekt Transaktionen unterstützt. Schreibgeschützt <strong>Boolesch</strong>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Type</strong></p></td>
@@ -279,7 +279,7 @@ Ein Recordset-Objekt stellt die Datensätze in einer Basistabelle oder die Daten
 </tr>
 <tr class="odd">
 <td><p><strong><a href="recordset-updatable-property-dao.md">Updatable</a></strong></p></td>
-<td><p>Gibt einen Wert zurück, der anzeigt, ob ein DAO-Objekt geändert werden kann. Schreibgeschützter <strong>boolescher</strong> Wert.</p></td>
+<td><p>Gibt einen Wert zurück, der anzeigt, ob Sie ein DAO-Objekt ändern können. Schreibgeschützt <strong>Boolesch</strong>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="recordset-updateoptions-property-dao.md">UpdateOptions</a></strong></p></td>

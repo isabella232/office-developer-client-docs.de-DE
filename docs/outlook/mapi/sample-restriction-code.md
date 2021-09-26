@@ -3,25 +3,25 @@ title: Beispiel für Einschränkungscode
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 9b82097c-dbd6-4ba0-a6cb-292301f9402b
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: cafcb20cbce3019d7623d330721005a674eca36e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: e4d88037bd5473bd6faeaf8832730ff31a1df088
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411015"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59599095"
 ---
 # <a name="sample-restriction-code"></a>Beispiel für Einschränkungscode
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Der folgende Beispielcode zeigt, wie Sie eine Einschränkung erstellen, die alle Nachrichten herausfiltert, die nicht das Wort "Volleyball" in der Betreffzeile enthalten und nicht von Sam an Sue gesendet wurden. Eine Struktur mit [SRestriction-Strukturen](srestriction.md) ist erforderlich, bei dem der oberste Knoten eine **AND-Einschränkung** ist, die mit einer [SAndRestriction-Struktur implementiert](sandrestriction.md) wird. Die drei Einschränkungen, die dem **AND-Vorgang** beigetreten sind, sind eine Unterobjekteinschränkung, die nach Nachrichten sucht, die an Sue gesendet werden, eine Inhaltseinschränkung, die nach Nachrichten von Sam sucht, und eine weitere **AND-Einschränkung,** die nach Nachrichten sucht, deren Betreff "volleyball" enthält. Da **PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) keine erforderliche Eigenschaft ist, muss eine **Exist-Einschränkung** eingeschlossen werden. 
+Der folgende Beispielcode zeigt, wie Sie eine Einschränkung erstellen, die alle Nachrichten herausfiltert, die in der Betreffzeile nicht das Wort "doppelklicken" enthalten und nicht von Sam an Sue gesendet wurden. Eine Struktur von [SRestriction-Strukturen](srestriction.md) ist erforderlich, wobei der oberste Knoten eine **AND-Einschränkung** ist, die mit einer [SAndRestriction-Struktur](sandrestriction.md) implementiert ist. Die drei Einschränkungen, die mit dem **AND-Vorgang** verknüpft sind, sind eine Unterobjekteinschränkung, die nach an Sue gesendeten Nachrichten sucht, eine Inhaltseinschränkung, die nach Nachrichten von Sam sucht, und eine weitere **AND-Einschränkung,** die nach Nachrichten sucht, die einen Betreff mit "cerz" enthalten. Da **PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) keine erforderliche Eigenschaft ist, muss eine **Exist-Einschränkung** eingeschlossen werden. 
   
-Dieser Code verwendet dynamische Zuweisung und Initialisierung. es ist auch möglich, statisch zuzuordnen und zu initialisieren. Im Interesse der Kürze ist die Fehlerüberprüfung, die nach den Zuweisungsaufrufen erfolgen muss, nicht im Beispiel enthalten. 
+Dieser Code verwendet dynamische Zuordnung und Initialisierung. Es ist auch möglich, statisch zuzuordnen und zu initialisieren. Aus Platzgründen ist die Fehlerüberprüfung, die nach den Zuordnungsaufrufen erfolgen muss, nicht im Beispiel enthalten. 
   
 ```cpp
 HRESULT BuildRestriction (LPSTR pszSent, LPSTR pszFrom,

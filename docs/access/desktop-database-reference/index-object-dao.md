@@ -1,18 +1,18 @@
 ---
-title: Index-Objekt-Datenzugriffsobjekte (DAO)
+title: Index-Objekt – Data Access Objects (DAO)
 TOCTitle: Index object
 ms:assetid: 92c32cad-ec8a-1243-1d18-83f50b269ecb
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197655(v=office.15)
 ms:contentKeyID: 48546380
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: ca0a975017b5c5396d23817716689b37433d8f97
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 319cc60b882d631b1c187fa707e80b3eca391920
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291768"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589456"
 ---
 # <a name="index-object-dao"></a>Index-Objekt (DAO)
 
@@ -20,7 +20,7 @@ ms.locfileid: "32291768"
 
 **Index**-Objekte geben die Reihenfolge an, in der auf Datensätze aus Datenbanktabellen zugegriffen wird, und sie geben an, ob doppelte Datensätze akzeptiert werden. Dadurch stellen sie einen effizienten Zugriff auf Daten sicher. Bei externen Datenbanken beschreiben **Index**-Objekte die für externe Tabellen eingerichteten Indizes (gilt nur für Microsoft Access-Arbeitsbereiche).
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 The Microsoft Access database engine uses indexes when it joins tables and creates **[Recordset](recordset-object-dao.md)** objects. Indexes determine the order in which table-type **Recordset** objects return records, but they don't determine the order in which the Microsoft Access database engine stores records in the base table or the order in which any other type of **Recordset** object returns records.
 

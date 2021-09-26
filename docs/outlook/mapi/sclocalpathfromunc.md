@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.ScLocalPathFromUNC
 api_type:
 - COM
 ms.assetid: ef5eb5c6-251e-4a3a-8855-7c28804a29ab
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e7607a57da5b618a20d6c8e360c7e3cb4f933856
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 7a2638408cad376e2ed9c8f25263a3bf9fa8634b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33432233"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59599018"
 ---
 # <a name="sclocalpathfromunc"></a>ScLocalPathFromUNC
 
@@ -25,7 +25,7 @@ ms.locfileid: "33432233"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Sucht ein lokales Pfad-Gegenstück zum angegebenen Unc-Pfad (Universal Naming Convention). 
+Sucht ein lokales Pfad-Gegenstück zum angegebenen UNC-Pfad (Universal Naming Convention). 
   
 |||
 |:-----|:-----|
@@ -45,11 +45,11 @@ SCODE ScLocalPathFromUNC(
 
  _szUNC_
   
-> [in] Ein Pfad im Format \\ [ _server_] \[ _share_] \[ _path_] einer Datei oder eines Verzeichnisses.
+> [in] Ein Pfad im Format \\ [ _Server_] \[ _Freigabe_] \[ _Pfad_] einer Datei oder eines Verzeichnisses.
     
  _szLocal_
   
-> [out] Ein Pfad im Format [ _drive:_] path ] derselben Datei oder desselben Verzeichnisses \[ wie für den _szUNC-Parameter._ 
+> [out] Ein Pfad im Format [ _Laufwerk:_] \[ _Pfad_] derselben Datei oder desselben Verzeichnisses wie für den _szUNC-Parameter._ 
     
  _cchLocal_
   
@@ -59,11 +59,11 @@ SCODE ScLocalPathFromUNC(
 
 S_OK
   
-> Ein lokaler Pfad wurde erfolgreich lokalisiert.
+> Ein lokaler Pfad wurde erfolgreich gefunden.
     
 MAPI_E_TOO_BIG
   
->  _szLocal war_ nicht groß genug, um das Ergebnis zu halten. 
+>  _szLocal_ war nicht groß genug, um das Ergebnis zu speichern. 
     
 S_FALSE
   

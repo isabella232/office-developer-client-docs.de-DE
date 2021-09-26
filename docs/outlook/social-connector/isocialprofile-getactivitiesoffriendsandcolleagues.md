@@ -5,29 +5,29 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4aaf7417-0a03-42a4-a282-599327ec5381
-description: Diese Methode ist in Outlook Social Connector 2013 veraltet.
-ms.openlocfilehash: c02cf0e8a6d2da3f9fb7704c92e10e0409042393
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Diese Methode ist in Outlook Connector für soziale Netzwerke 2013 veraltet.
+ms.openlocfilehash: e3cd51e920baa0abb834f9100676e5234752adcc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33406892"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583037"
 ---
 # <a name="isocialprofilegetactivitiesoffriendsandcolleagues"></a>ISocialProfile::GetActivitiesOfFriendsAndColleagues
 
-Diese Methode ist in Outlook Social Connector 2013 veraltet.
+Diese Methode ist in Outlook Connector für soziale Netzwerke 2013 veraltet.
   
 ```cpp
 HRESULT _stdcall GetActivitiesOfFriendsAndColleagues([in] DATE startTime, [out, retval] BSTR* activitiesCollection);
 ```
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Ab Outlook Social Connector 2013 unterstützt das OSC nur die on-demand-Synchronisierung von Aktivitäten und keine zwischengespeicherte oder hybride Synchronisierung von Aktivitäten. Die OSC ignoriert die **Einstellung cacheActivities** im Capabilities XML und ruft diese Methode nicht mehr auf. Implementieren Sie die [ISocialSession2::GetActivitiesEx-Methode,](isocialsession2-getactivitiesex.md) um die Suche nach dynamischen Aktivitäten zu unterstützen. Legen **Sie getActivities** und **dynamicActivitiesLookupEx** als **true** fest, wodurch das OSC **stattdessen ISocialSession2::GetActivitiesEx aufruft.** 
+Ab Outlook Connector für soziale Netzwerke 2013 unterstützt OSC nur die Synchronisierung von Aktivitäten bei Bedarf und keine zwischengespeicherte oder hybride Synchronisierung von Aktivitäten. Der OSC ignoriert die Einstellung **"cacheActivities"** in der Funktions-XML und ruft diese Methode nicht mehr auf. Implementieren Sie die [ISocialSession2::GetActivitiesEx-Methode,](isocialsession2-getactivitiesex.md) um die Suche dynamischer Aktivitäten zu unterstützen. Legen Sie **"getActivities"** und **"dynamicActivitiesLookupEx"** auf **"true"** fest, wodurch der OSC aufgefordert wird, stattdessen **ISocialSession2::GetActivitiesEx** aufzurufen. 
   
-Weitere Informationen dazu, wie das OSC die Aktivitäten von Freunden erhält, finden Sie [unter Synchronisieren von Freunden und Aktivitäten](synchronizing-friends-and-activities.md). 
+Weitere Informationen dazu, wie der OSC die Aktivitäten von Freunden abruft, finden Sie unter ["Synchronisieren von Freunden und Aktivitäten".](synchronizing-friends-and-activities.md) 
   
 ## <a name="see-also"></a>Siehe auch
 

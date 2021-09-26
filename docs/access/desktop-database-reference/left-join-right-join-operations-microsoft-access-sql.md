@@ -8,13 +8,13 @@ ms.date: 09/18/2015
 mtps_version: v=office.15
 dev_langs:
 - sql
-localization_priority: Priority
-ms.openlocfilehash: c6e37cd68d586e39a06fd650ccb453f35477253f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: 01c1c1b095d37d7505524af5360b0079e6dd1c0e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290145"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59602360"
 ---
 # <a name="left-join-right-join-operations-microsoft-access-sql"></a>LEFT JOIN- und RIGHT JOIN-Operation (Microsoft Access SQL)
 
@@ -73,7 +73,7 @@ FROM Categories LEFT JOIN Products
 ON Categories.CategoryID = Products.CategoryID;
 ```
 
-In diesem Beispiel ist "CategoryID" das verknüpfte Feld, ist aber nicht im Abfrageergebnis enthalten, da es nicht in der [SELECT](select-statement-microsoft-access-sql.md)-Anweisung enthalten ist. Um das verknüpfte Feld einzuschließen, geben Sie den Feldnamen in die SELECT-Anweisung ein, in diesem Fall Categories.CategoryID.
+In diesem Beispiel ist CategoryID das verknüpfte Feld, ist aber nicht im Abfrageergebnis enthalten, da es nicht in der [SELECT](select-statement-microsoft-access-sql.md)-Anweisung enthalten ist. Um das verknüpfte Feld einzuschließen, geben Sie den Feldnamen in die SELECT-Anweisung ein, in diesem Fall Categories.CategoryID.
 
 > [!NOTE]
 > - Wenn Sie eine Abfrage erstellen möchten, die nur Datensätze mit jeweils identischen Daten in den verknüpften Feldern enthält, verwenden Sie eine [INNER JOIN](inner-join-operation-microsoft-access-sql.md)-Operation.

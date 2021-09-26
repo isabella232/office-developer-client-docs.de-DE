@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - HrOpenOfflineObj
 api_type:
 - HeaderDef
 ms.assetid: cee1a940-fe01-d364-5d7c-c9e9dfeb8979
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 3ef929bf778fabc4350f553d185838dd5cb2cf0b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 89b9f53c6677b61c9e61ae6cb77fe6451e786e85
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32347747"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59610783"
 ---
 # <a name="hropenofflineobj"></a>HrOpenOfflineObj
 
@@ -57,15 +57,15 @@ typedef HRESULT (STDMETHODCALLTYPE HROPENOFFLINEOBJ)(
     
  _pGUID_
   
-> [in] Zeiger auf eine GUID, mit der dieses Objekt von anderen Offlineobjekten eindeutig identifiziert werden kann. Es muss **GUID_GlobalState** werden.
+> [in] Zeiger auf eine GUID, die verwendet werden kann, um dieses Objekt aus anderen Offlineobjekten eindeutig zu identifizieren. Es muss **GUID_GlobalState** sein.
     
- _pReserved_
+ _Erhalten_
   
-> [in] Dieser Parameter wird nicht verwendet. Er muss **null sein.**
+> [in] Dieser Parameter wird nicht verwendet. Es muss **NULL** sein.
     
  _ppOfflineObj_
   
-> [out] Ein Zeiger auf das angeforderte Offlineobjekt. Der Aufrufer kann diesen Zeiger verwenden, um auf die [IMAPIOfflineMgr : IMAPIOffline-Schnittstelle](imapiofflinemgrimapioffline.md) zu zugreifen, um die von diesem Objekt unterstützten Rückrufe zu finden und Rückrufe für dieses Objekt einrichten. 
+> [out] Ein Zeiger auf das angeforderte Offlineobjekt. Der Aufrufer kann diesen Zeiger verwenden, um auf die [IMAPIOfflineMgr : IMAPIOffline-Schnittstelle](imapiofflinemgrimapioffline.md) zuzugreifen, um die von diesem Objekt unterstützten Rückrufe zu finden und Rückrufe dafür einzurichten. 
     
 ## <a name="return-values"></a>Rückgabewerte
 
@@ -75,15 +75,15 @@ S_OK
     
 MAPI_E_NOT_FOUND
   
-- Fehler beim Funktionsaufruf.
+- Der Funktionsaufruf ist fehlgeschlagen.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Dies ist der erste Aufruf eines Clients, wenn der Client über Änderungen des Verbindungsstatus für ein bestimmtes Profil benachrichtigt werden möchte. Beim Aufrufen **von HrOpenOfflineObj** ruft der Client ein Offlineobjekt ab, das **IMAPIOfflineMgr unterstützt.** Der Client kann nach den Arten von Rückrufen suchen, die vom Objekt unterstützt werden (mithilfe von [IMAPIOffline::GetCapabilities](imapioffline-getcapabilities.md)), und anschließend Rückrufe für das Objekt einrichten (mithilfe von [IMAPIOfflineMgr::Advise](imapiofflinemgr-advise.md)).
+Dies ist der erste Aufruf, den ein Client vornimmt, wenn der Client über Verbindungsstatusänderungen für ein bestimmtes Profil benachrichtigt werden möchte. Beim Aufrufen **von HrOpenOfflineObj** ruft der Client ein Offlineobjekt ab, das **IMAPIOfflineMgr** unterstützt. Der Client kann überprüfen, welche Arten von Rückrufen vom Objekt unterstützt werden (mithilfe von [IMAPIOffline::GetCapabilities),](imapioffline-getcapabilities.md)und dann Rückrufe dafür einrichten (mithilfe von [IMAPIOfflineMgr::Advise).](imapiofflinemgr-advise.md)
   
-Wenn Sie [GetProcAddress](https://msdn.microsoft.com/library/ms683212.aspx) zum Suchen nach der Adresse dieser Funktion in msmapi32.dll verwenden, geben Sie HrOpenOfflineObj@20 **Prozedurnamen** an. 
+Wenn [Sie GetProcAddress](https://msdn.microsoft.com/library/ms683212.aspx) zum Suchen nach der Adresse dieser Funktion in msmapi32.dll verwenden, geben Sie **HrOpenOfflineObj@20** als Prozedurnamen an. 
   
- **HrOpenOfflineObj** funktioniert nur für Clients, bei den es sich um MAPI-Anbieter, COM-Add-Ins und Exchange-Clienterweiterungen handelt, die innerhalb des Outlook werden. Andernfalls **gibt HrOpenOfflineObj** **MAPI_E_NOT_FOUND** zurück. 
+ **HrOpenOfflineObj** funktioniert nur für Clients, die MAPI-Anbieter, COM-Add-Ins und Exchange Clienterweiterungen sind, die innerhalb des Outlook-Prozesses ausgeführt werden. Andernfalls gibt **HrOpenOfflineObj** **MAPI_E_NOT_FOUND** zurück. 
   
 ## <a name="see-also"></a>Siehe auch
 

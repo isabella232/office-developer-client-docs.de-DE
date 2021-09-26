@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2d0a2945-54d7-417f-b5c6-2647c70263cf
 description: Ruft eine ISocialPerson-Schnittstelle basierend auf dem userID-Parameter ab.
-ms.openlocfilehash: b54e39b3712fb57d89d03787f1e5fa0ff50ff84a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 7546232b4ea758331dfd2ff5f794a0d14cafd590
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439821"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608822"
 ---
 # <a name="isocialsessiongetperson"></a>ISocialSession::GetPerson
 
@@ -33,9 +33,9 @@ _result_
   
 > [out] Eine **ISocialPerson-Schnittstelle.** 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Der  _parameter userID_ muss eine Benutzer-ID oder EINE SMTP-Adresse sein. 
+Der  _parameter userID_ muss eine Benutzer-ID oder SMTP-Adresse sein. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251786
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d9fc2007-cc21-b20c-adee-be87cc356753
 description: Bestimmt, ob Zeichenfolgen identisch sind. Es gibt TRUE zurück, wenn sie identisch sind, und FALSE, wenn dies nicht der Fall ist.
-ms.openlocfilehash: 0f298c966ec7a3f1e23c89473fecc555ed950f79
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 502d1b782c900d872b95a790cad38416b8d851dc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33428683"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603438"
 ---
 # <a name="strsame-function"></a>STRSAME Function
 
@@ -30,7 +30,7 @@ STRSAME (" ** *string1* ** ", " ** *string2* ** ", ** *ignoreCase* ** )
 |:-----|:-----|:-----|:-----|
 | _string1_ <br/> |Erforderlich  <br/> |**String** <br/> |Die erste zu vergleichende Zeichenfolge.  <br/> |
 | _string2_ <br/> |Erforderlich  <br/> |**String** <br/> |Die zweite zu vergleichende Zeichenfolge.  <br/> |
-| _ignoreCase_ <br/> |Optional  <br/> |**Boolescher Wert** <br/> |TRUE steht für "Groß- und Kleinschreibung ignorieren" und FALSE für "Groß- und Kleinschreibung berücksichtigen". Die Standardeinstellung ist FALSE.  <br/> |
+| _Ignorecase_ <br/> |Optional  <br/> |**Boolescher Wert** <br/> |TRUE steht für "Groß- und Kleinschreibung ignorieren" und FALSE für "Groß- und Kleinschreibung berücksichtigen". Die Standardeinstellung ist FALSE.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
@@ -42,7 +42,7 @@ Wenn Sie Multibyte-Zeichenfolgen vergleichen oder Vergleiche mit Groß- und Klei
   
 ## <a name="example-1"></a>Beispiel 1
 
-STRSAME("Katze","Hund")
+STRSAME("cat","dog")
   
 Gibt FALSE zurück.
   

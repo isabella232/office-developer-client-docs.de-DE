@@ -10,19 +10,19 @@ f1_keywords:
 - dao360.chm1053064
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 2d8aef3c8bdaac93bd84231b3098d98ee896a81f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: e267a739b3bf4187d8a00ce027d3c31262e4b16b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314385"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59564834"
 ---
 # <a name="tabledefconnect-property-dao"></a>TableDef.Connect-Eigenschaft (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
-Legt einen Wert fest, der Informationen über eine verknüpfte Tabelle bereitstellt, oder gibt den betreffenden Wert zurück. **Zeichenfolge** mit Lese-/Schreibzugriff.
+Legt einen Wert fest, der Informationen über eine verknüpfte Tabelle bereitstellt, oder gibt den betreffenden Wert zurück. Lesen/Schreiben **Zeichenfolge**.
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,7 +36,7 @@ Die Einstellung der **Connect**-Eigenschaft ist ein **String**-Wert, der aus ein
 
 Bei einem **TableDef** -Objekt, das eine verknüpfte Tabelle darstellt, besteht die **Connect** -Eigenschaft aus einem oder zwei Teilen (ein Datenbanktypbezeichner und ein Pfad für die Datenbank). Beide Teile enden mit einem Semikolon.
 
-Der Pfad, wie in der folgenden Tabelle dargestellt, ist der vollständige Pfad für das Verzeichnis, das die Datenbankdateien enthält, und muss den Bezeichner DATABASE= vorangestellt haben. In einigen Fällen (z. B. bei Datenbanken in Microsoft Excel und Microsoft Access-Datenbankmodulen) sollten Sie einen bestimmten Dateinamen in das Argument mit dem Datenbankpfad einschließen.
+Der Pfad ist der vollständige Pfadname für das Verzeichnis, das die Datenbankdateien enthält, wie in der folgenden Tabelle dargestellt. Der Pfadname muss mit dem Bezeichner DATABASE= beginnen. In einigen Fällen (wie bei Microsoft Excel- und Microsoft Access-Datenbanken) muss ein spezifischer Dateiname in das Argument des Datenbankpfads einbezogen werden.
 
 In der folgenden Tabelle sind die möglichen Datenbanktypen und ihre entsprechenden Datenbankbezeichner und Pfadnamen für die Einstellungen der **Connect**-Eigenschaft aufgelistet.
 

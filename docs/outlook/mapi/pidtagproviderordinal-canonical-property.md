@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagProviderOrdinal
 api_type:
 - COM
 ms.assetid: d062b54d-7c32-4369-ab69-f7193773a1c0
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: fbeb63bbae23f8f7f78c92d3abed6bea1c3ac85d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f7bb9fd61e7df9aa8398bfd7c43890762c5fd954
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33438351"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59599691"
 ---
 # <a name="pidtagproviderordinal-canonical-property"></a>PidTagProviderOrdinal (kanonische Eigenschaft)
 
@@ -32,13 +32,13 @@ Enthält den nullbasierten Index der Position eines Dienstanbieters in der Anbie
 |Zugeordnete Eigenschaften:  <br/> |PR_PROVIDER_ORDINAL  <br/> |
 |Kennung:  <br/> |0x300D  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |MAPI allgemein  <br/> |
+|Bereich:  <br/> |ALLGEMEINE MAPI  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird von MAPI berechnet.
   
-Rufen Sie die Anbietertabelle ab, indem Sie die [IMsgServiceAdmin::GetProviderTable-Methode](imsgserviceadmin-getprovidertable.md) aufrufen. Sortieren Sie die Anbietertabelle für diese Eigenschaft so, dass die Transportreihenfolge angezeigt wird. 
+Rufen Sie die Anbietertabelle ab, indem Sie die [IMsgServiceAdmin::GetProviderTable-Methode](imsgserviceadmin-getprovidertable.md) aufrufen. Sortieren Sie die Anbietertabelle nach dieser Eigenschaft, um die Transportreihenfolge anzuzeigen. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -46,11 +46,11 @@ Rufen Sie die Anbietertabelle ab, indem Sie die [IMsgServiceAdmin::GetProviderTa
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -58,9 +58,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

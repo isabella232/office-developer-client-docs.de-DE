@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff845129(v=office.15)
 ms:contentKeyID: 48543169
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: a94d34a2dbe8043e6db637b649f59047cf3f1dda
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: c66c9f6dc891b7be513746206c40d249a5a198f4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301057"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589268"
 ---
 # <a name="querydef-object-dao"></a>QueryDef-Objekt (DAO)
 
@@ -44,7 +44,7 @@ Sie können sich ein dauerhaftes **QueryDef** -Objekt in einem Microsoft Access-
 
 Die bevorzugte Methode zum Verwenden des systemeigenen SQL-Dialekts eines externen Datenbankmoduls, auf das über das Microsoft Access-Datenbankmodul zugegriffen wird, ist über **QueryDef** -Objekte. Sie können z. B. eine Microsoft SQL Server-Abfrage erstellen und in einem **QueryDef** -Objekt speichern. Wenn Sie eine SQL-Abfrage aus einem anderen als dem Microsoft Access-Datenbankmodul verwenden möchten, müssen Sie eine **Connect** -Eigenschaftenzeichenfolge angeben, die auf die externe Datenquelle verweist. Abfragen mit gültigen **Connect** -Eigenschaften umgehen das Microsoft Access-Datenbankmodul und übergeben die Abfrage direkt zur Verarbeitung an den externen Datenbankserver.
 
-Um ein neues **QueryDef**-Objekt zu erstellen, verwenden Sie die **CreateQueryDef**-Methode. Wenn Sie in einem Microsoft Access-Arbeitsbereich eine Zeichenfolge für das name-Argument eingeben oder die **Name**-Eigenschaft des neuen **QueryDef**-Objekts explizit auf eine Zeichenfolge festlegen, deren Länge nicht null ist, erstellen Sie ein permanentes **QueryDef**-Objekt, das automatisch an die **QueryDefs**-Auflistung angehängt und auf dem Datenträger gespeichert wird. Wenn Sie eine Zeichenfolge der Länge null als name-Argument eingeben oder die **Name**-Eigenschaft explizit auf eine Zeichenfolge der Länge null festlegen, führt dies zu einem temporären **QueryDef**-Objekt.
+Verwenden Sie zum Erstellen eines neuen **QueryDef**-Objekts die Methode **CreateQueryDef**. Wenn Sie in einem Microsoft Access-Arbeitsbereich eine Zeichenfolge für das „name“-Argument angeben, oder wenn Sie die **Name**-Eigenschaft des neuen **QueryDef**-Objekts explizit auf eine Zeichenfolge festlegen, deren Länge nicht Null (0) ist, erstellen Sie ein dauerhaftes **QueryDef**-Objekt, das automatisch an die **QueryDefs**-Sammlung angefügt und auf dem Datenträger gespeichert wird. Wenn Sie eine Zeichenfolge der Länge Null (0) als „name“-Argument eingeben, oder die **Name**-Eigenschaft explizit auf eine Zeichenfolge der Länge Null (0) festlegen, ist das Ergebnis ein temporäres **QueryDef**-Objekt.
 
 Verwenden Sie eine der folgenden Syntaxformen, um auf ein **QueryDef**-Objekt in einer Auflistung anhand seiner Ordnungszahl oder seiner Einstellung der **Name**-Eigenschaft zu verweisen:
 
@@ -56,7 +56,7 @@ QueryDefs\!\[ name\]
 
 Auf temporäre **QueryDef**-Objekte können Sie nur anhand der Objektvariablen verweisen, die Sie diesen zugewiesen haben.
 
-**Link zur Verfügung gestellt von: ** [UtterAccess](https://www.utteraccess.com)-Community. UtterAccess ist das führende Microsoft Access-Wiki und -Hilfeforum.
+**Link zur Verfügung gestellt von:** [UtterAccess](https://www.utteraccess.com)-Community. UtterAccess ist das führende Microsoft Access-Wiki und -Hilfeforum.
 
 - [Abfragen: Dokument-SQL für Word](https://www.utteraccess.com/wiki/index.php/queries:_document_sql_to_word)
 
@@ -113,7 +113,7 @@ Mit diesem Beispiel wird ein neues **QueryDef**-Objekt erstellt, das an die **Qu
 
 <br/>
 
-In diesem Beispiel wird die **CreateQueryDef**-Methode verwendet, um ein temporäres und ein dauerhaftes **QueryDef**-Objekt zu erstellen und auszuführen. Die GetrstTemp-Funktion wird zur Ausführung dieses Verfahrens benötigt.
+In diesem Beispiel wird die **CreateQueryDef** -Methode verwendet, um ein temporäres und ein dauerhaftes **QueryDef** -Objekt zu erstellen und auszuführen. Die GetrstTemp-Funktion wird zur Ausführung dieses Verfahrens benötigt.
 
 ```vb
     Sub CreateQueryDefX() 

@@ -1,31 +1,31 @@
 ---
-title: PidTagStatusCode (kanonische Eigenschaft)
+title: Kanonische PidTagStatusCode-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagStatusCode
 api_type:
 - COM
 ms.assetid: e29190c5-52c3-4ef7-98db-699487c54325
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 751be8abe02dfb1d5bab2bcbbbc0cbd2a8243f85
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: fcd890f9fa7055abfd4eb6765434992e758ecb32
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33418514"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59599396"
 ---
-# <a name="pidtagstatuscode-canonical-property"></a>PidTagStatusCode (kanonische Eigenschaft)
+# <a name="pidtagstatuscode-canonical-property"></a>Kanonische PidTagStatusCode-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine Bitmaske mit Flags, die den aktuellen Status einer Sitzungsressource angeben. Alle Dienstanbieter legen Statuscodes wie MAPI zum Melden des Status des Subsystems, des MAPI-Spoolers und des integrierten Adressbuchs ein.
+Enthält eine Bitmaske mit Flags, die den aktuellen Status einer Sitzungsressource angeben. Alle Dienstanbieter legen Statuscodes wie die MAPI fest, um den Status des Subsystems, des MAPI-Spoolers und des integrierten Adressbuchs zu melden.
   
 |||
 |:-----|:-----|
@@ -34,11 +34,11 @@ Enthält eine Bitmaske mit Flags, die den aktuellen Status einer Sitzungsressour
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Status  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Der Statuscode muss für alle Anbieter in der Datei Mapisvc.inf angezeigt werden. 
+Der Statuscode muss in der Datei Mapisvc.inf für alle Anbieter angezeigt werden. 
   
-Statusobjekte werden von MAPI und von allen Dienstanbietern implementiert. Es gibt zwei Sätze gültiger Werte für Statuscodes, eine für alle Statusobjekte und eine andere nur für Transportanbieter. Alle Statusobjekte können diese Eigenschaft auf die folgenden Werte festlegen:
+Statusobjekte werden von der MAPI und von allen Dienstanbietern implementiert. Es gibt zwei Sätze gültiger Werte für Statuscodes, einen Satz für alle Statusobjekte und einen weiteren nur für Transportanbieter. Alle Statusobjekte können diese Eigenschaft auf die folgenden Werte festlegen:
   
 STATUS_AVAILABLE 
   
@@ -46,13 +46,13 @@ STATUS_AVAILABLE
     
 STATUS_FAILURE 
   
-> Gibt an, dass bei der Ressource ein Problem auftritt. Bei Dienstanbietern STATUS_FAILURE, dass der Anbieter möglicherweise bald heruntergefahren wird, um die aktuelle Sitzung zu beenden.
+> Gibt an, dass für die Ressource ein Problem auftritt. Bei Dienstanbietern gibt STATUS_FAILURE an, dass der Anbieter möglicherweise bald heruntergefahren wird, um die aktuelle Sitzung zu beenden.
     
 STATUS_OFFLINE 
   
 > Gibt an, dass nur lokale Daten oder Dienste verfügbar sind.
     
-Transportanbieter können die Eigenschaften ihrer Statusobjekte **PR_STATUS_CODE** folgenden Werten festlegen: 
+Transportanbieter können auch die **PR_STATUS_CODE** Eigenschaften ihrer Statusobjekte auf die folgenden Werte festlegen: 
   
 STATUS_INBOUND_ACTIVE 
   
@@ -64,7 +64,7 @@ STATUS_INBOUND_ENABLED
     
 STATUS_INBOUND_FLUSH 
   
-> Gibt an, dass der Transportanbieter Nachrichten aus der eingehenden Warteschlange herunterloaden wird.
+> Gibt an, dass der Transportanbieter Nachrichten aus der eingehenden Warteschlange herunterlädt.
     
 STATUS_OUTBOUND_ACTIVE 
   
@@ -76,7 +76,7 @@ STATUS_OUTBOUND_ENABLED
     
 STATUS_OUTBOUND_FLUSH 
   
-> Gibt an, dass der Transportanbieter Nachrichten aus seiner ausgehenden Warteschlange hochladet.
+> Gibt an, dass der Transportanbieter Nachrichten aus seiner ausgehenden Warteschlange hochlädt.
     
 STATUS_REMOTE_ACCESS 
   
@@ -88,24 +88,24 @@ STATUS_REMOTE_ACCESS
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[PidTagStatusString (kanonische Eigenschaft)](pidtagstatusstring-canonical-property.md)
+[Kanonische PidTagStatusString-Eigenschaft](pidtagstatusstring-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

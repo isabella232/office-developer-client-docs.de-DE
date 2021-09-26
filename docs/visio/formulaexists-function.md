@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm1033806
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3d4f82d3-fcd0-536a-c4e1-94c362cde7c4
 description: Gibt an, ob die zelle, auf die verwiesen wird, eine Formel enthält.
-ms.openlocfilehash: 1f28d429516d4f8b2357f1c2ab589700e38ff40a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8d1bbb892efbba3d1dc11b1af5851dbcb73f53e3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33420276"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598598"
 ---
 # <a name="formulaexists-function"></a>FORMULAEXISTS Function
 
@@ -30,8 +30,8 @@ FORMULAEXISTS (** *cellref* ** )
 |:-----|:-----|:-----|:-----|
 | _cellref_ <br/> |Erforderlich  <br/> |**String** <br/> |Die Zelle, die auf das Vorhandensein einer Formel überprüft werden soll.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die FORMULAEXISTS-Funktion gibt 1 zurück, wenn die Zelle eine Formel enthält. Wenn sie keine Formel enthält, gibt sie Null (0) zurück. 
+Die FORMULAEXISTS-Funktion gibt 1 zurück, wenn die Zelle eine Formel enthält. Wenn sie keine Formel enthält, wird Null (0) zurückgegeben. 
   
 

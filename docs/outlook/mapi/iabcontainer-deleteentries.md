@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IABContainer.DeleteEntries
 api_type:
 - COM
 ms.assetid: 70a24811-0c41-4b44-8c63-7ef807bc9051
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e3b238129e55e03da33ef3af75ecce7e73fbad03
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 55938b7c002c974f5e06cd75205bbfbed986364e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33425596"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59610755"
 ---
 # <a name="iabcontainerdeleteentries"></a>IABContainer::DeleteEntries
 
@@ -52,7 +52,7 @@ S_OK
     
 MAPI_W_PARTIAL_COMPLETION 
   
-> Der Aufruf ist erfolgreich, aber mindestens einer der Einträge konnte nicht gelöscht werden. Wenn dieser Wert zurückgegeben wird, sollte der Anruf als erfolgreich behandelt werden. Verwenden Sie zum Testen dieses Werts **das HR_FAILED** Makro. Weitere Informationen finden Sie unter [Using Macros for Error Handling](using-macros-for-error-handling.md).
+> Der Aufruf war erfolgreich, aber mindestens einer der Einträge konnte nicht gelöscht werden. Wenn dieser Wert zurückgegeben wird, sollte der Aufruf als erfolgreich behandelt werden. Um diesen Wert zu testen, verwenden Sie das **makro HR_FAILED.** Weitere Informationen finden Sie unter [Verwenden von Makros für die Fehlerbehandlung.](using-macros-for-error-handling.md)
     
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 

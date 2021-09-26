@@ -1,25 +1,26 @@
 ---
 title: Field.Type-Eigenschaft (DAO)
 TOCTitle: Type Property
+description: Typ-Eigenschaft
 ms:assetid: 1295ca40-78c1-bdd0-d407-e1b5be8adfd4
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845405(v=office.15)
 ms:contentKeyID: 48543345
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: c8f212c5e1f10f4270987c9453802575d88cebfa
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 082f6b34965ae90c99efd8d8cf3ac34d2cfc5dfc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292951"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59581294"
 ---
 # <a name="fieldtype-property-dao"></a>Field.Type-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
 
-Legt einen Wert fest, der den Funktions- oder Datentyp eines Objekts angibt, oder gibt diesen Wert zurück. **Ganze Zahl** mit Lese-/Schreibzugriff.
+Legt einen Wert fest, der den Funktions- oder Datentyp eines Objekts angibt, oder gibt diesen Wert zurück. Lesen/Schreiben **Ganzzahl**.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,105 +34,28 @@ Der Einstellungs- oder Rückgabewert ist eine Konstante, die einen Funktions- od
 
 Die möglichen Einstellungs- und Rückgabewerte für ein **Field** -Objekt werden in der folgenden Tabelle beschrieben.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Konstante</p></th>
-<th><p>Beschreibung</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>dbBigInt</strong></p></td>
-<td><p>Große Ganzzahl</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>dbBinary</strong></p></td>
-<td><p>Binär</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>dbBoolean</strong></p></td>
-<td><p>Boolesch</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>dbByte</strong></p></td>
-<td><p>Byte</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>dbChar</strong></p></td>
-<td><p>Char</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>dbCurrency</strong></p></td>
-<td><p>Währung</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>dbDate</strong></p></td>
-<td><p>Datum/Uhrzeit</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>dbDecimal</strong></p></td>
-<td><p>Decimal</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>dbDouble</strong></p></td>
-<td><p>Gleitkommawert mit doppelter Genauigkeit</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>dbFloat</strong></p></td>
-<td><p>Gleitkommazahl</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>dbGUID</strong></p></td>
-<td><p>GUID</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>dbInteger</strong></p></td>
-<td><p>Ganze Zahl</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>dbLong</strong></p></td>
-<td><p>Long</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>dbLongBinary</strong></p></td>
-<td><p>Langer Binärwert (OLE-Objekt)</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>dbMemo</strong></p></td>
-<td><p>Memo</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>dbNumeric</strong></p></td>
-<td><p>Numeric</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>dbSingle</strong></p></td>
-<td><p>Single</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>dbText</strong></p></td>
-<td><p>Text</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>dbTime</strong></p></td>
-<td><p>Time</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>dbTimeStamp</strong></p></td>
-<td><p>Zeitstempel</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>dbVarBinary</strong></p></td>
-<td><p>VarBinary</p></td>
-</tr>
-</tbody>
-</table>
-
+|**Konstante**|**Wert**|**Beschreibung**|
+|:----------|:----------|:----------|
+|**dbBigInt**|16|Große Ganzzahl|
+|**dbBinary**|9|Binär|
+|**dbBoolean**|1|Boolesch|
+|**dbByte**|2|Byte|
+|**dbChar**|18|Char|
+|**dbCurrency**|5|Währung|
+|**dbDate**|8|Datum/Uhrzeit|
+|**dbDecimal**|20|Decimal|
+|**dbDouble**|7|Gleitkommawert mit doppelter Genauigkeit|
+|**dbFloat**|21|Gleitkommazahl|
+|**dbGUID**|15|GUID|
+|**dbInteger**|3|Ganze Zahl|
+|**dbLong**|4|Long|
+|**dbLongBinary**|11|Langer Binärwert (OLE-Objekt)|
+|**dbMemo**|12|Memo|
+|**dbNumeric**|19|Numeric|
+|**dbSingle**|6|Single|
+|**dbText**|10|Text|
+|**dbTime**|22|Time|
+|**dbTimeStamp**|23|Zeitstempel|
+|**dbVarBinary**|17|VarBinary|
 
 Wenn Sie ein neues **Field** -, **Parameter** - oder **Property** -Objekt an die Auflistung eines **[Index](index-object-dao.md)** -, **QueryDef** -, **Recordset** - oder **TableDef** -Objekts anfügen, tritt ein Fehler auf, falls die zugrunde liegende Datenbank den für das neue Objekt angegebenen Datentyp nicht unterstützt.
-

@@ -12,13 +12,13 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 07a83c16368caa6e5c05c7554300c5589a437067
-ms.sourcegitcommit: 0419850d5c1b3439d9da59070201fb4952ca5d07
+ms.localizationpriority: high
+ms.openlocfilehash: 2c9247063173c4e7ad2006c008469b2b79881b17
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/28/2020
-ms.locfileid: "49734182"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607402"
 ---
 # <a name="alter-table-statement-microsoft-access-sql"></a>ALTER TABLE-Anweisung (Microsoft Access SQL)
 
@@ -27,7 +27,7 @@ ms.locfileid: "49734182"
 Ändert den Entwurf einer Tabelle, nachdem diese mit der [CREATE TABLE](create-table-statement-microsoft-access-sql.md)-Anweisung erstellt wurde.
 
 > [!NOTE]
-> Vom Microsoft Access-Datenbankmodul wird die Verwendung von ALTER TABLE- oder anderen DDL-Anweisungen (Data Definition Language, Datendefinitionssprache) in Nicht-Microsoft Access-Datenbanken nicht unterstützt. Verwenden Sie stattdessen die **Create**-Methoden von DAO.
+> Das Microsoft Access-Datenbankmodul unterstützt die Verwendung von ALTER TABLE oder anderen DDL-Anweisungen (Data Definition Language) in Nicht-Microsoft Access-Datenbanken nicht. Verwenden Sie stattdessen die **Create**-Methoden von DAO.
 
 ## <a name="syntax"></a>Syntax
 
@@ -81,7 +81,7 @@ Die ALTER TABLE-Anweisung verfügt über drei Komponenten:
 
 ## <a name="remarks"></a>Bemerkungen
 
-Mithilfe der ALTER TABLE-Anweisung können Sie eine bestehende Tabelle auf verschiedene Arten ändern. Sie können:
+Mithilfe der ALTER TABLE-Anweisung können Sie eine bestehende Tabelle auf verschiedene Arten ändern. Sie haben folgende Möglichkeiten:
 
 - Verwenden Sie ADD COLUMN, um der Tabelle ein neues Feld hinzuzufügen. Sie geben den Feldnamen, den Datentyp und (für Text- und binäre Felder) optional eine Größe an. In der Anweisung im folgenden Beispiel wird der Employees-Tabelle (Personal) ein 25 Zeichen langes Textfeld namens Notes (Bemerkungen) hinzugefügt:
     
@@ -109,7 +109,8 @@ Mithilfe der ALTER TABLE-Anweisung können Sie eine bestehende Tabelle auf versc
 > [!NOTE] 
 > - Sie können immer nur ein Feld bzw. einen Index gleichzeitig hinzufügen oder löschen.
 > - Mithilfe der [CREATE INDEX](create-index-statement-microsoft-access-sql.md)-Anweisung können Sie einer Tabelle einen Index mit einem oder mehreren Feldern hinzufügen, und Sie können ALTER TABLE oder die [DROP](drop-statement-microsoft-access-sql.md)-Anweisung zum Löschen eines mit ALTER TABLE oder CREATE INDEX erstellten Indexes verwenden.
-> - Sie können NOT NULL für ein einzelnes Feld oder in einer benannten CONSTRAINT-Klausel verwenden, die entweder für ein einzelnes Feld oder für mehrere Felder mit dem Namen CONSTRAINT gilt. Sie können die NOT NULL-Einschränkung jedoch nur einmal auf ein Feld anwenden. Der Versuch, diese Einschränkung mehrmals zu verwenden, führt zu einem Laufzeitfehler.
+> - Sie können NOT NULL für ein einzelnes Feld oder innerhalb einer benannten CONSTRAINT-Klausel verwenden, die entweder für ein einzelnes oder mehrere Felder mit dem Namen CONSTRAINT gilt. Sie können die NOT NULL-Beschränkung nur einmal auf ein Feld anwenden. Andernfalls tritt ein Laufzeitfehler auf. 
+
 
 ## <a name="example"></a>Beispiel
 

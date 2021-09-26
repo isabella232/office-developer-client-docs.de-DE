@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagMessageDeliveryTime
 api_type:
 - HeaderDef
 ms.assetid: 4f9d44f2-4faa-4f16-9e33-22f80c17db85
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 8ebaea7fb6888e51ee1ef658db53dcf3050644da
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 19a777423d97976212f487c2e2624b158d0be352
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32325613"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583366"
 ---
 # <a name="pidtagmessagedeliverytime-canonical-property"></a>PidTagMessageDeliveryTime (kanonische Eigenschaft)
 
@@ -32,11 +32,11 @@ Enthält das Datum und die Uhrzeit, zu der eine Nachricht zugestellt wurde.
 |Zugeordnete Eigenschaften:  <br/> |PR_MESSAGE_DELIVERY_TIME  <br/> |
 |Kennung:  <br/> |0x0E06  <br/> |
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
-|Bereich:  <br/> |Nachrichtenzeit  <br/> |
+|Bereich:  <br/> |Nachrichtenzeitpunkt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft beschreibt den Zeitpunkt, zu dem die Nachricht auf dem Server gespeichert wurde, und nicht den Downloadzeitpunkt, zu dem der Transportanbieter die Nachricht vom Server in den lokalen Speicher kopiert hat.
+Diese Eigenschaft beschreibt den Zeitpunkt, zu dem die Nachricht auf dem Server gespeichert wurde, und nicht die Downloadzeit, als der Transportanbieter die Nachricht vom Server in den lokalen Speicher kopiert hat.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -50,11 +50,11 @@ Diese Eigenschaft beschreibt den Zeitpunkt, zu dem die Nachricht auf dem Server 
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -62,9 +62,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

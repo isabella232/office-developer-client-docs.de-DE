@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagFreeBusyEntryIds
 api_type:
 - HeaderDef
 ms.assetid: 8bc40ebf-76f2-49dd-af4b-4095bc07c639
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 57b65f8423cbbc48e3eac066c45cab0fcc90fe18
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 132b4979a7be99ee4a1635383a8ae1700e92fe89
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32316198"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583478"
 ---
 # <a name="pidtagfreebusyentryids-canonical-property"></a>PidTagFreeBusyEntryIds (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32316198"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält die **EntryIDs** für die Stellvertretungsinformationsnachricht, die Frei/Gebucht-Nachricht des angemeldeten Benutzers und den Ordner, dessen **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) gleich "FreeBusy Data" ist.
+Enthält die **EntryIDs** für die Stellvertretungs-Informationsnachricht, die Frei/Gebucht-Nachricht des angemeldeten Benutzers und den Ordner, dessen **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) gleich "FreeBusy Data" ist.
   
 |||
 |:-----|:-----|
@@ -40,7 +40,7 @@ Enthält die **EntryIDs** für die Stellvertretungsinformationsnachricht, die Fr
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXOPFFB]](https://msdn.microsoft.com/library/1a527299-7211-4d27-a74c-b69bd0746320%28Office.15%29.aspx)
   
@@ -48,7 +48,7 @@ Enthält die **EntryIDs** für die Stellvertretungsinformationsnachricht, die Fr
     
 [[MS-OXODLGT]](https://msdn.microsoft.com/library/01a89b11-9c43-4c40-b147-8f6a1ef5a44f%28Office.15%29.aspx)
   
-> Gibt Methoden zum Herstellen und Konfigurieren von Postfächern als Stellvertreter sowie Interaktionen mit Nachrichten- und Kalenderelementen an, wenn sie im Auftrag eines anderen Benutzers agieren.
+> Gibt Methoden zum Verbinden mit und Konfigurieren von Postfächern als Stellvertretungen und Interaktionen mit Nachrichten- und Kalenderelementen an, wenn sie im Auftrag eines anderen Benutzers handeln.
     
 [[MS-OXOSFLD]](https://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb%28Office.15%29.aspx)
   
@@ -58,11 +58,11 @@ Enthält die **EntryIDs** für die Stellvertretungsinformationsnachricht, die Fr
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -70,9 +70,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -1,18 +1,18 @@
 ---
-title: Ereignisparameter (Access-Desktop-Daten Bankreferenz)
+title: Ereignisparameter (Access-Desktopdatenbankreferenz)
 TOCTitle: Event parameters
 ms:assetid: 626de9b1-4d45-d77e-ccf2-23f2ea31c043
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249371(v=office.15)
 ms:contentKeyID: 48545239
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: dd4a99ec24a05084a2ae137ded3219c2997f8cf3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 55b5a3cf20e13bc46568c20a375caf442b8c836b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293315"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597415"
 ---
 # <a name="event-parameters"></a>Ereignisparameter
 
@@ -55,18 +55,18 @@ Wenn die Ereignishandlerroutine aufgerufen wird, wird der *Status*-Parameter auf
 <td><p>Wird den Ereignissen Will und Complete übergeben. Dieser Wert bedeutet, dass die Operation, durch die das Ereignis verursacht wurde, erfolgreich abgeschlossen wurde.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adStatusErrorsOccurred festgelegt</strong></p></td>
-<td><p>Nur an vollständige Ereignisse übergeben. Dieser Wert gibt an, dass der Vorgang, der das Ereignis verursacht hat, fehlgeschlagen ist oder dass der Vorgang durch ein Ereignis abgebrochen wurde. Weitere Informationen finden Sie im Parameter <em>Error</em> .</p></td>
+<td><p><strong>adStatusErrorsOccurred</strong></p></td>
+<td><p>Wird nur an Complete-Ereignisse übergeben. Dieser Wert bedeutet, dass der Vorgang, der das Ereignis verursacht hat, nicht erfolgreich war, oder dass der Vorgang durch ein Will-Ereignis abgebrochen wurde. Überprüfen Sie den <em>Parameter "Error",</em> um weitere Details zu erhalten.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>adStatusCantDeny festgelegt</strong></p></td>
+<td><p><strong>adStatusCantDeny</strong></p></td>
 <td><p>Wird nur Will-Ereignissen übergeben. Dieser Wert bedeutet, dass die Operation vom Will-Ereignis nicht abgebrochen werden kann. Sie muss ausgeführt werden.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-Wenn Sie in Ihrem Fall Ereignis festlegen, dass der Vorgang fortgesetzt werden soll, lassen Sie den Parameter *Status* unverändert. Solange der Parameter "eingehender Status" nicht auf **adStatusCantDeny festgelegt**festgelegt ist, können Sie den ausstehenden Vorgang abbrechen, indem Sie *Status* in **adStatusCancel fest**ändern. Wenn Sie dies tun, hat das Complete-Ereignis, das dem Vorgang zugeordnet ist, den *Status* -Parameter auf **adStatusErrorsOccurred festgelegt**festgelegt. Das **Error** -Objekt, das an das Complete-Ereignis übergeben wird, enthält den Wert **adErrOperationCancelled**.
+Wenn Sie im Will-Ereignis festlegen, dass der Vorgang fortgesetzt werden soll, lassen Sie den *Status-Parameter* unverändert. Solange der Parameter für den eingehenden Status nicht auf **"adStatusCantDeny"** festgelegt wurde, können Sie den ausstehenden Vorgang jedoch abbrechen, indem Sie *"Status"* in **"adStatusCancel"** ändern. Wenn Sie dies tun, wird für das dem Vorgang zugeordnete Complete-Ereignis der *Status-Parameter* auf **"adStatusErrorsOccurred"** festgelegt. The **Error** object passed to the Complete event will contain the value **adErrOperationCancelled**.
 
 Wenn ein Ereignis nicht mehr verarbeitet werden soll, können Sie *Status* auf **adStatusUnwantedEvent** festlegen, und die Anwendung empfängt keine Benachrichtigungen mehr für dieses Ereignis. Manche Ereignisse können jedoch aus mehreren Gründen ausgelöst werden. In diesem Fall müssen Sie **adStatusUnwantedEvent** für jeden möglichen Grund angeben. Zum Beenden des Empfangs von Benachrichtigungen zu ausstehenden **RecordChange**-Ereignissen z. B. müssen Sie den *Status*-Parameter für die auftretenden Ereignisse **adRsnAddNew**, **adRsnDelete**, **adRsnUpdate**, **adRsnUndoUpdate**, **adRsnUndoAddNew**, **adRsnUndoDelete** und **adRsnFirstChange** auf **adStatusUnwantedEvent** festlegen.
 
@@ -87,7 +87,7 @@ Wenn ein Ereignis nicht mehr verarbeitet werden soll, können Sie *Status* auf *
 <td><p>Es wird angefordert, dass dieser Ereignishandler keine weiteren Benachrichtigungen empfängt.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>adStatusCancel fest</strong></p></td>
+<td><p><strong>adStatusCancel</strong></p></td>
 <td><p>Es wird angefordert, dass die Operation, die gerade auftreten soll, abgebrochen wird.</p></td>
 </tr>
 </tbody>
@@ -96,7 +96,7 @@ Wenn ein Ereignis nicht mehr verarbeitet werden soll, können Sie *Status* auf *
 
 ## <a name="error-parameter"></a>Error-Parameter
 
-Der *Error* -Parameter ist ein Verweis auf ein ADO- [Error](error-object-ado.md) -Objekt. Wenn der Parameter *Status* auf **adStatusErrorsOccurred festgelegt**festgelegt ist, enthält das **Error** -Objektdetails dazu, warum der Vorgang fehlgeschlagen ist. Wenn das mit einem Complete-Ereignis verknüpfte will-Ereignis den Vorgang abgebrochen hat, indem Sie den *Status* -Parameter auf **adStatusCancel fest**, wird das Error-Objekt immer auf **adErrOperationCancelled**festgelegt.
+Der *Error-Parameter* ist ein Verweis auf ein ADO [Error-Objekt.](error-object-ado.md) Wenn der *Status-Parameter* auf **"adStatusErrorsOccurred"** festgelegt ist, enthält das **Error -Objekt** Details dazu, warum der Vorgang fehlgeschlagen ist. Wenn das einem Complete-Ereignis zugeordnete Will-Ereignis den Vorgang abgebrochen hat, indem der *Status-Parameter* auf **"adStatusCancel"** festgelegt wurde, wird das Fehlerobjekt immer auf **"adErrOperationCancelled"** festgelegt.
 
 ## <a name="object-parameter"></a>Object-Parameter
 
@@ -104,7 +104,7 @@ Jedes Ereignis empfängt eines oder mehrere Objekte, die die Objekte darstellen,
 
 ## <a name="reason-parameter"></a>Reason-Parameter
 
-Der *reason* -Parameter **, bereason, enthält zusätzliche Informationen darüber, warum das Ereignis aufgetreten ist. Ereignisse mit einem ** Parameter "bereason" können mehrmals aufgerufen werden, selbst für denselben Vorgang, und zwar aus einem anderen Grund. Der **WillChangeRecord** -Ereignishandler wird beispielsweise für Vorgänge aufgerufen, die das Einfügen, löschen oder Ändern eines Datensatzes übernehmen oder rückgängig machen. Wenn Sie ein Ereignis nur dann verarbeiten möchten, wenn es aus einem bestimmten Grund auftritt, können Sie den ** Parameter "bereason" verwenden, um die Vorkommen zu filtern, die Sie nicht interessieren. Wenn Sie beispielsweise Daten Satz Änderungsereignisse nur dann verarbeiten möchten, wenn Sie auftreten, weil ein Datensatz hinzugefügt wurde, können Sie Folgendes tun:
+Der *Parameter Reason,* *adReason,* enthält zusätzliche Informationen dazu, warum das Ereignis aufgetreten ist. Ereignisse mit einem *adReason-Parameter* können mehrmals aufgerufen werden, auch für denselben Vorgang, jedes Mal aus einem anderen Grund. Beispielsweise wird der **WillChangeRecord-Ereignishandler** für Vorgänge aufgerufen, die das Einfügen, Löschen oder Ändern eines Datensatzes ausführen oder rückgängig machen möchten. Wenn Sie ein Ereignis nur verarbeiten möchten, wenn es aus einem bestimmten Grund auftritt, können Sie den *adReason-Parameter* verwenden, um die Vorkommen herauszufiltern, an denen Sie nicht interessiert sind. Wenn Sie beispielsweise Datensatzänderungsereignisse nur verarbeiten möchten, wenn sie auftreten, weil ein Datensatz hinzugefügt wurde, können Sie folgendermaßen vorgehen:
 
 ```vb 
  

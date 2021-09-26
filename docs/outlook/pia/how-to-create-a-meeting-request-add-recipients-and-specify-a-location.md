@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Bb644964(v=office.15)
 ms:contentKeyID: 55119873
 ms.date: 07/24/2014
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: 0f637d3d21f79ec538d10cf509fb09f5abf0b0ac
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 410a90388ec9b3237eb150f74c08818b8b08739e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32351429"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59590793"
 ---
 # <a name="create-a-meeting-request-add-recipients-and-specify-a-location"></a>Erstellen einer Besprechungsanfrage, Hinzufügen von Empfängern und Angeben eines Orts
 
@@ -22,7 +22,7 @@ In diesem Beispiel wird ein Terminelement als Besprechungsanfrage erstellt und d
 
 Eine Besprechungsanfrage in Outlook ist ein [AppointmentItem](https://msdn.microsoft.com/library/bb645611\(v=office.15\)). Um ein Terminelement als eine Besprechungsanfrage festzulegen, müssen Sie die [MeetingStatus](https://msdn.microsoft.com/library/bb611417\(v=office.15\))-Eigenschaft auf **olMeeting** festlegen. Verwenden Sie die [Type](https://msdn.microsoft.com/library/bb611841\(v=office.15\)) -Eigenschaft des [Recipient](https://msdn.microsoft.com/library/bb624370\(v=office.15\)) -Objekts, um anzugeben, ob ein Besprechungsteilnehmer als optional gilt oder ein Empfänger anstatt als Teilnehmer als Besprechungsressource gewertet werden soll.
 
-Wenn Sie Visual Studio verwenden, um dieses Codebeispiel zu testen, müssen Sie der Microsoft Outlook 15.0-Objektbibliothekkomponente zuerst einen Verweis hinzufügen und die Outlook-Variable angeben, wenn Sie den **Microsoft.Office.Interop.Outlook**-Namespace importieren. Die Anweisung **Imports** oder **using** darf im Codebeispiel nicht direkt vor den Funktionen stehen, sondern muss vor der öffentlichen Class-Deklaration hinzugefügt werden. Die folgenden Codezeilen zeigen, wie Sie den Import und die Zuweisung in Visual Basic und C\# vornehmen.
+Wenn Sie dieses Codebeispiel mit Visual Studio testen, müssen Sie beim Importieren des **Microsoft.Office.Interop.Outlook**-Namespace zuerst einen Verweis auf die Microsoft Outlook 15.0-Objektbibliothekskomponente hinzufügen und die Outlook-Variable angeben. Die Anweisungen **Imports** oder **using** dürfen nicht direkt vor den Funktionen im Codebeispiel stehen, sondern müssen vor der öffentlichen Klassendeklaration hinzugefügt werden. Die folgenden Codezeilen zeigen, wie der Import und die Zuweisung in Visual Basic und C\# ausgeführt werden.
 
 ```vb
 Imports Outlook = Microsoft.Office.Interop.Outlook

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.FtSubFt
 api_type:
 - COM
 ms.assetid: 6619fc41-5518-44ce-85c1-6b0077ed5cb9
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: edd789a586adc71289ff821aa7cf7a33f79fb738
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c50b658a956b1ccbaccafb707c9b60ffa13747f1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33408418"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59610916"
 ---
 # <a name="ftsubft"></a>FtSubFt
 
@@ -25,7 +25,7 @@ ms.locfileid: "33408418"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Subtrahiert eine nicht signierte ganzzahlige 64-Bit-Zahl von einer anderen. 
+Subtrahiert eine nicht signierte 64-Bit-Ganzzahl von einer anderen. 
   
 |||
 |:-----|:-----|
@@ -44,11 +44,11 @@ FILETIME FtSubFt(
 
  _Minuend_
   
-> [in] Eine [FILETIME-Struktur,](filetime.md) die die nicht signierte ganzzahlige 64-Bit-Zahl enthält, von der der Wert im  _Subtrahend-Parameter subtrahend subtrahiert_ werden soll. 
+> [in] Eine [FILETIME-Struktur,](filetime.md) die die 64-Bit-Ganzzahl ohne Vorzeichen enthält, von der der Wert im  _Subtrahend-Parameter subtrahend subtrahent_ werden soll. 
     
  _Subtrahend_
   
-> [in] Eine **FILETIME-Struktur,** die die nicht signierte ganzzahlige 64-Bit-Zahl enthält, die vom durch den  _Parameter Minuend angegebenen Wert subtrahiert_ wird. 
+> [in] Eine **FILETIME-Struktur,** die die nicht signierte 64-Bit-Ganzzahl enthält, die von dem durch den  _Minuend-Parameter angegebenen_ Wert subtrahiert wird. 
     
 ## <a name="return-value"></a>Rückgabewert
 

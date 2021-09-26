@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff845158(v=office.15)
 ms:contentKeyID: 48543188
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: fb6cbd6cc925a3e4841d9e7d6d77332cc36c7a03
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: fe8336d95a0982379621a7dd798113fbf882499c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291894"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562636"
 ---
 # <a name="ifthenelse-macro-block"></a>Wenn...Dann...Sonst-Makroblock
 
@@ -49,7 +49,7 @@ Für **If** und für **Else If** sind jeweils die folgenden Argumente erforderli
 <tbody>
 <tr class="odd">
 <td><p><strong>Ausdruck</strong></p></td>
-<td><p>Die Bedingung, die Sie testen möchten. Dies muss ein Ausdruck sein, der als "Wahr" oder "Falsch" ausgewertet wird.</p></td>
+<td><p>Die Bedingung, auf die Sie testen möchten. Es muss sich um einen Ausdruck handeln, der mit „True“ oder „False“ ausgewertet wird.</p></td>
 </tr>
 </tbody>
 </table>
@@ -65,7 +65,7 @@ Sie können einem "If"-Block beliebig viele **Else If**-Blöcke hinzufügen.
 
 Sie können auf **Add Else** klicken, um einen optionalen **Else** -Block hinzuzufügen. In diesem Fall bilden die unter **Else** eingegebenen Aktionen den **Else** -Block, der nur ausgeführt wird, wenn die darüber angegebenen Aktionen nicht ausgeführt werden. Einem **If** -Block können Sie nur einen **Else** -Block hinzufügen.
 
-Im folgenden Codebeispiel werden die Makroaktionen im ersten Block ausgeführt, wenn der Wert von \[Status\] größer als 0 ist. Wenn der Wert von \[Status\] nicht größer als 0 ist, wird der Ausdruck nach **Else If** ausgewertet. Die Makroaktionen im **Else If**-Block werden ausgeführt, wenn der Wert von \[Status\] gleich 0 ist. Und schließlich: Wenn weder der erste noch der zweite Block ausgeführt werden, werden die Aktionen im **Else**-Block ausgeführt.
+Im folgenden Codebeispiel werden die Makroaktionen im ersten Block ausgeführt, wenn der Wert von \[Status\] größer als 0 ist. Wenn der Wert von \[Status\] nicht größer als 0 ist, wird der Ausdruck nach **Else If** ausgewertet. Die Makroaktionen im **Else If**-Block werden ausgeführt, wenn der Wert von \[Status\] gleich 0 ist. Wenn weder der erste noch der zweite Block ausgeführt wird, werden die Aktionen im **Else**-Block ausgeführt.
 
 ```vb
     If [Status] > 0 Then 
@@ -77,7 +77,7 @@ Im folgenden Codebeispiel werden die Makroaktionen im ersten Block ausgeführt, 
     End If
 ```
 
-Sie können **If**-Blöcke schachteln. Das Schachteln eines **If**-Blocks in einem **If**-Block sollten Sie erwägen, um einen zweiten Ausdruck auszuwerten, wenn der erste Ausdruck "Wahr" ist. Im nachstehenden Codebeispiel wird der innere **If**-Block nur dann ausgewertet, wenn der Wert von \[Status\] größer als "0" *and* größer als "100" ist.
+Sie können **If**-Blöcke verschachteln. Sie sollten die Verschachtelung eines **If**-Blocks innerhalb eines **If**-Blocks in Betracht ziehen, wenn Sie einen zweiten Ausdruck auswerten möchten, wenn der erste Ausdruck „True“ ist. Im folgenden Codebeispiel wird der innere **If**-Block nur ausgeführt, wenn der Wert von \[Status\] sowohl größer als 0 *als auch* größer als 100 ist.
 
 ```vb
     If [Status] > 0 Then 

@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251508
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 62f074ef-5bf8-df1e-d826-fc1027a36501
-description: Gibt eine Zahl zurück, die auf die angegebene Anzahl von Ziffern gekürzt wurde.
-ms.openlocfilehash: 5b2138ff3091f70313344d5b38d8225d572d8e70
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Gibt eine Zahl zurück, die auf die angegebene Anzahl von Ziffern abgeschnitten ist.
+ms.openlocfilehash: d7a682fe413248af6da0eac6895f4e0a0a6de800
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33426499"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603249"
 ---
 # <a name="trunc-function"></a>TRUNC Function
 
-Gibt eine Zahl zurück, die auf die angegebene Anzahl von Ziffern gekürzt wurde.
+Gibt eine Zahl zurück, die auf die angegebene Anzahl von Ziffern abgeschnitten ist.
   
 ## <a name="syntax"></a>Syntax
 
@@ -29,15 +29,15 @@ TRUNC(** *number* **, ** *numberofdigits* ** )
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _Anzahl_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die zu kürzende Zahl.  <br/> |
-| _numberofdigits_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die Anzahl der Ziffern, auf die die Nummer abgeschnitten werden _soll._  <br/> |
+| _numberofdigits_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die Anzahl der Stellen, auf die die  _Zahl_ abgeschnitten werden soll.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
-Numerisch.
+Numerischen.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Wenn  _numberofdigits_ größer als 0 ist, wird  _number_  _auf numberofdigits_ rechts neben dem Dezimalkomma abgeschnitten. Wenn  _numberofdigits_ 0 ist,  _wird zahl_ auf eine ganze Zahl abgeschnitten. Wenn  _numberofdigits_ kleiner als 0 ist, wird  _number_  _auf numberofdigits links_ vom Dezimaltrennzeichen abgeschnitten. 
+Wenn  _Numberofdigits_ größer als 0 ist, wird die  _Zahl_ auf  _numberofdigits_ rechts neben dem Dezimaltrennzeichen abgeschnitten. Wenn  _Numberofdigits_ 0 ist, wird  _Zahl_ auf eine ganze Zahl gekürzt. Wenn  _Numberofdigits_ kleiner als 0 ist, wird die  _Zahl_ auf  _numberofdigits_ links neben dem Dezimaltrennzeichen abgeschnitten. 
   
 ## <a name="example-1"></a>Beispiel 1
 

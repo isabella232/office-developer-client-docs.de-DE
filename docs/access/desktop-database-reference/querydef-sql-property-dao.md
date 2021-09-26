@@ -10,13 +10,13 @@ f1_keywords:
 - dao360.chm1053054
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: c51f0da8541cf0ba2790827c58a0b017bd6ed875
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 3213cf90bc1f2b07f93f19561d24dbd2ee31dd8e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300980"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59576996"
 ---
 # <a name="querydefsql-property-dao"></a>QueryDef.SQL-Eigenschaft (DAO)
 
@@ -38,14 +38,14 @@ Die in einer Abfrage verwendete SQL-Syntax muss dem SQL-Dialekt des Abfragemodul
 
 Wenn die SQL-Anweisung Parameter für die Abfrage enthält, müssen Sie sie vor der Ausführung festlegen. Wenn Sie die Parameter nicht neu festlegen, werden bei jeder Ausführung der Abfrage jeweils dieselben Parameterwerte verwendet.
 
-In einem Microsoft Access-Arbeitsbereich wird vorzugsweise ein **QueryDef**-Objekt verwendet, um SQL Pass-Through-Vorgänge auf ODBC-Datenquellen auszuführen, die mit einer Microsoft Access-Datenbank-Engine verbunden sind. Wenn Sie für die **[Connect](querydef-connect-property-dao.md)**-Eigenschaft des **QueryDef**-Objekts eine ODBC-Datenquelle festlegen, können Sie einen anderen SQL-Dialekt als Microsoft Access-Datenbank-SQL in der Abfrage verwenden und an den externen Server übergeben. Sie können z. B. TRANSACT SQL-Anweisungen verwenden (mit Microsoft SQL Server- oder Sybase SQL Server-Datenbanken), die die Microsoft Access-Datenbank-Engine andernfalls nicht verarbeiten würde.
+In einem Microsoft Access-Arbeitsbereich wird vorzugsweise ein **QueryDef**-Objekt verwendet, um SQL Pass-Through-Vorgänge auf ODBC-Datenquellen auszuführen, die mit einem Microsoft Access-Datenbankmodul verbunden sind. Wenn Sie für das Objekt **QueryDef** die Eigenschaft **[Connect](querydef-connect-property-dao.md)** zu einer ODBC-Datenquelle festlegen, können Sie einen anderen SQL-Dialekt als Microsoft Access-Datenbank-SQL in der Abfrage verwenden und an den externen Server übergeben. Sie können z. B. TRANSACT SQL-Anweisungen verwenden (mit Microsoft SQL Server- oder Sybase SQL Server-Datenbanken), welche das Microsoft Access-Datenbankmodul andernfalls nicht verarbeiten würde.
 
 > [!NOTE]
 > Wenn Sie die Eigenschaft auf eine Zeichenfolge festlegen, die mit einem Wert verkettet ist, bei dem es sich nicht um eine Ganzzahl handelt, und die Systemparameter ein anderes als das US-amerikanische Dezimaltrennzeichen festlegen, wie etwa ein Komma (z. B. `strSQL = "PRICE > " & lngPrice, and lngPrice = 125,50`), tritt ein Fehler auf, wenn Sie versuchen, das **QueryDef**-Objekt in einer Microsoft Access-Datenbank auszuführen. Dies liegt daran, dass der Wert während der Verkettung mithilfe des Standard-Dezimaltrennzeichens in eine Zeichenfolge konvertiert wird und Microsoft Access SQL nur US-Dezimaltrennzeichen akzeptiert.
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird die **SQL**-Eigenschaft veranschaulicht, indem die **SQL**-Eigenschaft eines temporären **QueryDef**-Objekts festgelegt und geändert wird. Zum Ausführen dieser Prozedur ist die SQLOutput-Funktion erforderlich.
+In diesem Beispiel wird die **SQL** -Eigenschaft veranschaulicht, indem die **SQL** -Eigenschaft eines temporären **QueryDef** -Objekts festgelegt und geändert wird. Zum Ausführen dieser Prozedur ist die SQLOutput-Funktion erforderlich.
 
 ```vb
     Sub SQLX() 
@@ -254,7 +254,7 @@ In diesem Beispiel werden die **CreateQueryDef**- und die **OpenRecordset**-Meth
 
 <br/>
 
-Im folgenden Beispiel wird gezeigt, wie eine Parameterabfrage erstellt wird. Eine Abfrage mit dem Namen **myQuery** wird mit zwei Parametern, Param1 und Param2, erstellt. Zu diesem Zweck wird die SQL-Eigenschaft der Abfrage auf eine SQL-Anweisung (Structured Query Language) festgelegt, die die Parameter definiert.
+Das folgende Beispiel zeigt, wie Sie eine Parameterabfrage erstellen. Eine Abfrage mit dem Namen **myQuery** wird mit zwei Parametern mit Namen Param1 und Param2 erstellt. Hierzu wird die SQL-Eigenschaft der Abfrage auf eine SQL-Anweisung (Structured Query Language) festgelegt, welche die Parameter definiert.
 
 **Der Beispielcode stammt von:**[Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
 

@@ -12,13 +12,13 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: f842e662f2576d8aab5f3857877f45e380d3d3b0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: fe90799406b66be08b1088113665ce12ab55faa1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314700"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580706"
 ---
 # <a name="union-operation-microsoft-access-sql"></a>UNION-Operation (Microsoft Access SQL)
 
@@ -28,7 +28,7 @@ Erstellt eine Union-Abfrage, in der die Ergebnisse von mindestens zwei unabhäng
 
 ## <a name="syntax"></a>Syntax
 
-\[TABLE\] *query1* UNION \[ALL\] \[TABLE\] *query2* \[UNION \[ALL\] \[TABLE\] *queryn* \[ … \]\]
+\[TABLE\] *Abfrage1* UNION \[ALL\] \[TABLE\] *Abfrage2* \[UNION \[ALL\] \[TABLE\] *Abfrage-n* \[ … \]\]
 
 Der UNION-Vorgang besteht aus den folgenden Teilen:
 
@@ -70,8 +70,8 @@ Alle Abfragen in einer UNION-Operation müssen dieselbe Anzahl von Feldern anfor
 Verwenden Sie Aliase nur in der ersten SELECT-Anweisung, weil sie in anderen Anweisungen ignoriert werden. Verweisen Sie in der ORDER BY-Klausel so auf die Felder, wie sie in der ersten SELECT-Anweisung bezeichnet werden.
 
 > [!NOTE]
-> - Sie können in jedem *Abfrage*argument eine [GROUP BY](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/group-by-clause-microsoft-access-sql)- oder eine [HAVING](https://docs.microsoft.com/office/vba/access/concepts/structured-query-language/having-clause-microsoft-access-sql)-Klausel verwenden, um die zurückgegebenen Daten zu gruppieren.
-> - Sie können am Ende des letzten *Abfrage*arguments eine [ORDER BY](https://docs.microsoft.com/office/vba/access/concepts/structured-query-language/order-by-clause-microsoft-access-sql)-Klausel verwenden, um die zurückgegebenen Daten in einer bestimmten Reihenfolge anzuzeigen.
+> - Sie können in jedem *Abfrage* argument eine [GROUP BY](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/group-by-clause-microsoft-access-sql)- oder eine [HAVING](https://docs.microsoft.com/office/vba/access/concepts/structured-query-language/having-clause-microsoft-access-sql)-Klausel verwenden, um die zurückgegebenen Daten zu gruppieren.
+> - Sie können am Ende des letzten *Abfrage* arguments eine [ORDER BY](https://docs.microsoft.com/office/vba/access/concepts/structured-query-language/order-by-clause-microsoft-access-sql)-Klausel verwenden, um die zurückgegebenen Daten in einer bestimmten Reihenfolge anzuzeigen.
 
 ## <a name="example"></a>Beispiel
 

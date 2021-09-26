@@ -10,13 +10,13 @@ f1_keywords:
 - ado210.chm1231042
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: fa060811f60379e720e06be9f94e9403477c7869
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: ee1103492c6a637463002070239fbdafbe98578e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295394"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589813"
 ---
 # <a name="createparameter-method-ado"></a>CreateParameter-Methode (ADO)
 
@@ -26,7 +26,7 @@ Erstellt ein neues [Parameter](parameter-object-ado.md)-Objekt mit den angegeben
 
 ## <a name="syntax"></a>Syntax
 
-**Festgelegt** *Parameter*  =  *Befehl*aus. CreateParameter (*Name*, *Typ*, *Richtung*, *Größe*, *Wert*)
+**Set** *parameter*  =  *command*. CreateParameter (*Name*, *Type*, *Direction*, *Size*, *Value*)
 
 ## <a name="return-value"></a>Rückgabewert
 
@@ -42,7 +42,7 @@ Gibt ein **Parameter**-Objekt zurück.
 |*Size* |Optional. Ein **Long** -Wert, der die maximale Länge des Parameterwerts in Zeichen oder Bytes angibt.|
 |*Wert* |Optional. Ein **Variant** -Wert, der den Wert für das **Parameter** -Objekt angibt.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Verwenden Sie die **CreateParameter** -Methode, um ein neues **Parameter** -Objekt mit einem angegebenen Namen, Typ, einer angegebenen Lesefolge und Größe sowie einem angegeben Wert zu erstellen. In Argumenten übergebene Werte werden in die entsprechenden **Parameter** -Eigenschaften geschrieben.
 

@@ -1,20 +1,20 @@
 ---
-title: Connection. Cancel-Methode (DAO)
+title: Connection.Cancel-Methode (DAO)
 TOCTitle: Cancel Method
 ms:assetid: 43ad7b64-823d-3fac-e4d4-5e9514f60011
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192953(v=office.15)
 ms:contentKeyID: 48544509
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: a0826a30f22cc46eb6ff9a114dbf02cab1d9f76a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 489f1d1b85fdd9a3ba207f733123cf18af6c91d5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295968"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597611"
 ---
-# <a name="connectioncancel-method-dao"></a>Connection. Cancel-Methode (DAO)
+# <a name="connectioncancel-method-dao"></a>Connection.Cancel-Methode (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -26,7 +26,7 @@ ms.locfileid: "32295968"
 
 ## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie die **Cancel** -Methode, um die Ausführung eines asynchronen **Execute** -oder OpenConnection-Methodenaufrufs zu beenden (das heißt, die Methode wurde mit der dbRunAsync-Option aufgerufen). **** **Cancel** gibt einen Laufzeitfehler zurück, wenn dbRunAsync nicht in der Methode verwendet wurde, die Sie beenden möchten.
+Verwenden Sie die **Cancel** -Methode, um die Ausführung eines asynchronen **Execute-** oder **OpenConnection-Methodenaufrufs** zu beenden (das heißt, die Methode wurde mit der Option dbRunAsync aufgerufen). **Cancel** gibt einen Laufzeitfehler zurück, wenn dbRunAsync nicht in der Methode verwendet wurde, die Sie beenden möchten.
 
 Wenn Sie nach einem **Cancel**-Methodenaufruf versuchen, auf das Objekt zu verweisen, das durch einen asynchronen **OpenConnection**-Aufruf erstellt worden wäre (also das **Connection**-Objekt, über das Sie die **Cancel**-Methode aufgerufen haben), tritt ein Fehler auf.
 

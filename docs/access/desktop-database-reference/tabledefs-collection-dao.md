@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff820997(v=office.15)
 ms:contentKeyID: 48546766
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: f16f44b57a690aa58efdff9b00341df5023c293f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 7b6eb74e03b4fe892ae479ed99119e2df952f750
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314175"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59580741"
 ---
 # <a name="tabledefs-collection-dao"></a>TableDefs-Sammlung (DAO)
 
@@ -24,7 +24,7 @@ Eine **TableDefs**-Sammlung enthält alle gespeicherten **TableDef**-Objekte in 
 
 Sie bearbeiten eine Tabellendefinition anhand eines **TableDef**-Objekts und seiner Methoden und Eigenschaften.
 
-Die Standardsammlung eines **Datenbank**objekts ist die **TableDefs**-Sammlung.
+Die Standardsammlung eines **Datenbank** objekts ist die **TableDefs**-Sammlung.
 
 Um auf ein **TableDef**-Objekt in einer Auflistung durch die Ordnungszahl oder die Einstellung der **Name**-Eigenschaft zu verweisen, verwenden Sie eine der folgenden Syntaxformen:
 
@@ -34,7 +34,7 @@ Um auf ein **TableDef**-Objekt in einer Auflistung durch die Ordnungszahl oder d
 
 **TableDefs**\!\[name\]
 
-**Links zur Verfügung gestellt von: ** [UtterAccess](https://www.utteraccess.com)-Community. UtterAccess ist das führende Microsoft Access-Wiki und -Hilfeforum.
+**Links zur Verfügung gestellt von:** [UtterAccess](https://www.utteraccess.com)-Community. UtterAccess ist das führende Microsoft Access-Wiki und -Hilfeforum.
 
   - [Re-Linker Multi-Backends](https://www.utteraccess.com/wiki/index.php/re-linker_multi-backends)
 

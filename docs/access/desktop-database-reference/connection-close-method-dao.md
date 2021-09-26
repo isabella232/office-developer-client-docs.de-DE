@@ -1,20 +1,20 @@
 ---
-title: Connection. Connect-Methode (DAO)
+title: Connection.Close-Methode (DAO)
 TOCTitle: Close Method
 ms:assetid: 9b1a77cb-da12-24d6-892f-a56be103d51d
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff198015(v=office.15)
 ms:contentKeyID: 48546559
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: bf99abf97a2eb1b88e7056a36c160eb774959719
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 120ad21231187aa2cba21e1ef55c6f9d135b6934
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295961"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59590081"
 ---
-# <a name="connectionclose-method-dao"></a>Connection. Connect-Methode (DAO)
+# <a name="connectionclose-method-dao"></a>Connection.Close-Methode (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -23,7 +23,7 @@ Schließt ein geöffnetes **Connection**-Objekt.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Schließen
+*Ausdruck* .Close
 
 *Ausdruck* Eine Variable, die ein **Connection** -Objekt darstellt.
 
@@ -33,5 +33,5 @@ Ist das **Recordset**-Objekt beim Verwenden von **Close** bereits geschlossen, t
 
 Wenn Sie versuchen, ein **Connection**-Objekt zu schließen, für das noch **Recordset**-Objekte geöffnet sind, werden die **Recordset**-Objekte geschlossen, und alle ausstehenden Aktualisierungen oder Bearbeitungen werden abgebrochen. Auch wenn Sie versuchen, ein **Workspace**-Objekt zu schließen, für das noch **Connection**-Objekte geöffnet sind, werden diese **Connection**-Objekte geschlossen. Daraufhin werden deren **Recordset**-Objekte ebenfalls geschlossen.
 
-Eine Alternative zur **Schließ** -Methode besteht darin, den Wert einer Objektvariable auf **Nothing** festzulegen (Set dbsTemp = Nothing).
+Eine Alternative zur **Close**-Methode besteht darin, den Wert einer Objektvariable auf **Nothing** festzulegen (Set dbsTemp = Nothing).
 

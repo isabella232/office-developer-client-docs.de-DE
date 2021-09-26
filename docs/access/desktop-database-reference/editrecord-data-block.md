@@ -1,20 +1,20 @@
 ---
-title: Bearbeitendatensatz-Datenblock
+title: BearbeitenDatensatz-Datenblock
 TOCTitle: EditRecord data block
 ms:assetid: fe9f55eb-d7ed-1914-65a9-fa2fcb332b98
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff837277(v=office.15)
 ms:contentKeyID: 48548940
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 32ddfbbf21e62d5967fa1f2f31bab0222664eb39
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 02debed4adf3c9579b65660fcfcd27c73ed77588
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293595"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589645"
 ---
-# <a name="editrecord-data-block"></a>Bearbeitendatensatz-Datenblock
+# <a name="editrecord-data-block"></a>BearbeitenDatensatz-Datenblock
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -47,7 +47,7 @@ Der **BearbeitenDatensatz**-Datenblock kann mit den folgenden Argumenten verwend
 </tbody>
 </table>
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Nach der **BearbeitenDatensatz** -Anweisung können Sie einen Block von Befehlen einfügen, die ausgeführt werden, bevor für die Änderungen am Datensatz ein Commit erfolgt. In einem **BearbeitenDatensatz** -Datenblock sind die folgenden Aktionen verfügbar.
 
@@ -66,7 +66,7 @@ Nach der **BearbeitenDatensatz** -Anweisung können Sie einen Block von Befehlen
 <td><p><a href="group-macro-statement.md">Gruppieren-Makroanweisung</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="if-then-else-macro-block.md">If... Dann... Else-Makroanweisung</a></p></td>
+<td><p><a href="if-then-else-macro-block.md">Wenn... Dann... Else-Makro-Anweisung</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="setfield-macro-action.md">SetField-Makroaktion</a></p></td>
@@ -83,7 +83,7 @@ Anschließend können Sie mit einer **Wenn...Dann...Sonst** -Anweisung Vorgänge
 
 Wenn Sie das Bearbeiten eines Datensatzes abbrechen möchten, verwenden Sie die **AbbrechenDatensatzänderung** -Aktion. Damit verhindern Sie, dass für die Änderungen ein Commit ausgeführt wird, und der **BearbeitenDatensatz** -Datenblock wird beendet.
 
-Über die lokale Variable **LetztesErstellenDatensatzID** in einem **DatensatzErstellen** -Datenblock können Sie mit dem zuletzt erstellten Datensatz arbeiten. Verwenden Sie beispielsweise die folgende Syntax, um auf das Feld ZugewiesenAn des zuletzt erstellten Datensatzes zu verweisen:
+Über die lokale Variable **LetztesErstellenDatensatzID** in einem **DatensatzErstellen** -Datenblock können Sie mit dem zuletzt erstellten Datensatz arbeiten. Verwenden Sie beispielsweise die folgende Syntax, um auf das AssignedTo-Feld des zuletzt erstellten Datensatzes zu verweisen:
 
 `[LastCreateRecordIdentity].[AssignedTo]`
 

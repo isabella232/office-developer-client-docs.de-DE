@@ -8,13 +8,13 @@ keywords:
 - dialog boxes [excel 2007], invoking excel commands,DLLs [Excel 2007], calling into Excel,passing arguments to C API functions [Excel 2007],commands [Excel 2007], invoking with dialog boxes,commands [Excel 2007], accessible from DLL/XLL,Excel4 function [Excel 2007],Excel12 function [Excel 2007],XLCallVer function [Excel 2007],operRes argument [Excel 2007],functions [Excel 2007], accessible from DLL/XLL,Excel12v function [Excel 2007],DLL-only functions [Excel 2007],C API [Excel 2007], passing arguments,count argument [Excel 2007],commands [Excel 2007], calling in international versions,DLL-only commands [Excel 2007],international versions [Excel 2007], calling functions and commands,XLLs [Excel 2007], calling into Excel,Excel 4v function [Excel 2007],xlfn argument [Excel 2007],functions [Excel 2007], calling in international versions
 ms.assetid: 616e3def-e4ec-4f3c-bc65-3b92710da1e6
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-localization_priority: Priority
-ms.openlocfilehash: 8f2b63ba84b0a78bbf317c284913a8ec0986436f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: b3d572159c766d603680096596c63f4bde74b977
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32304158"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59605659"
 ---
 # <a name="calling-into-excel-from-the-dll-or-xll"></a>Aufrufen von Excel von der DLL oder XLL aus
 
@@ -113,7 +113,7 @@ Alle Befehlsfunktionen stellen Hexadezimalwerte zwischen 0x8000 (**xlcBeep**) un
   
 ### <a name="invoking-excel-commands-that-use-dialog-boxes"></a>Aufrufen von Excel-Befehlen, die Dialogfelder verwenden
 
-Einige der Befehlcodes entsprechen Aktionen in Excel, die Dialogfelder verwenden. **xlcFileDelete** verwendet z. B. ein einzelnes Argument: einen Dateinamen oder eine Dateimaske. Dieser Befehl kann mit dem Dialogfeld aufgerufen werden, sodass der Benutzer den Löschvorgang abbrechen oder ändern kann. Er kann auch ohne das Dialogfeld aufgerufen werden. In diesem Fall werden die Dateien ohne jegliche weitere Interaktion gelöscht, wobei vorausgesetzt wird, dass sie vorhanden sind und der Aufrufer über die entsprechende Berechtigung verfügt. Um solche Befehle im Dialogfeldformat aufrufen zu können, muss die Befehlsenumeration durch den bitweisen OR-Operator mit 0x1000 (**xlPrompt**) verknüpft sein.
+Einige der Befehlscodes entsprechen Aktionen in Excel, die Dialogfelder verwenden. Beispielsweise akzeptiert **xlcFileDelete** ein einziges Argument: einen Dateiname oder eine Maske. Dies kann mit dem Dialogfeld aufgerufen werden, damit der Benutzer die Möglichkeit hat, den Löschvorgang zu ändern oder abzubrechen. Der Aufruf kann auch ohne das Dialogfeld erfolgen, dann werde die Dateien ohne weitere Interaktion gelöscht, sofern sie vorhanden sind und der Aufrufer über die Berechtigung verfügt. Um solche Befehle in ihrer Dialogfeldform aufzurufen, muss die Befehlsenumeration mithilfe der bitweisen OR-Operation mit 0x1000 kombiniert werden (**xlPrompt**).
   
 Im folgenden Codebeispiel werden die Dateien im aktuellen Verzeichnis gel�scht, die der Maske �my_data\*.bak" entsprechen, wobei ein Dialogfeld nur angezeigt wird, wenn das Argument wahr ist.
   
@@ -138,7 +138,7 @@ bool delete_my_backup_files(bool show_dialog)
 
 ### <a name="calling-functions-and-commands-in-international-versions"></a>Aufrufen von Funktionen und Befehlen in internationalen Versionen
 
-Sie können Excel zum Anzeigen von Funktionen und der XLM-Befehlsnamen in einer Vielzahl von Sprachen konfigurieren. Einige C-API-Befehle und -Funktionen verwenden Zeichenfolgen, die als Funktions- oder Befehlsnamen interpretiert werden. **xlcFormula** verwendet z. B. ein Zeichenfolgenargument, das in einer angegebenen Zelle eingefügt werden soll. Damit Ihr Add-In mit allen Spracheinstellungen funktioniert, können Sie die Zeichenfolgennamen in Englisch angeben und das Bit 0x2000 (**xlIntl**) in der Funktions- oder Befehlsenumeration festlegen.
+Sie können Excel so konfigurieren, dass Funktionen und XLM-Befehlsnamen in einer Vielzahl von Sprachen angezeigt werden. Einige C-API-Befehle und Funktionen verarbeiten Zeichenfolgen, die als Funktion oder Befehlsnamen interpretiert werden. **xlcFormula** akzeptiert beispielsweise ein Argument, das in einer angegebenen Zelle eingefügt werden soll. Damit Ihr Add-In mit allen Spracheinstellungen arbeiten kann, können Sie die englischen Zeichenfolgennamen angeben und das Bit 0x2000 (**xlIntl**) in der Funktion oder Befehlsenumeration festlegen.
   
 Im folgenden Code wird das �quivalent von  `=SUM(X1:X100)` in Zelle A2 des aktiven Arbeitsblatts platziert. Beachten Sie, dass die Framework-Funktion **TempActiveRef** zum Erstellen des tempor�ren Verweises **XLOPER** verwendet wird. Die Formel wird in Zelle A2 in der vom Gebietsschema vorgegebenen Sprache angezeigt (z.�B.  `=SOMME(X1:X100)`, wenn Franz�sisch festgelegt ist). 
   
@@ -181,7 +181,7 @@ Excel unterst�tzt eine kleine Anzahl von Funktionen, auf die nur von einer DLL
    
 ## <a name="return-value-xloperxloper12-operres"></a>Rückgabewert XLOPER/XLOPER12: operRes
 
-Das _operRes_-Argument ist das zweite Argument für die Rückrufe und ist ein Zeiger auf ein **XLOPER**- (**Excel4** und **Excel4v**) oder **XLOPER12**-Objekt (**Excel12** und **Excel12v**). Nach einem erfolgreichen Aufruf enthält es den Rückgabewert der Funktion oder des Befehls. **operRes** kann auf 0 (null) (NULL-Zeiger) festgelegt werden, wenn kein R�ckgabewert erforderlich ist. Die vorherigen Inhalte von **operRes** werden �berschrieben, sodass der vollst�ndige Arbeitsspeicher, auf den gezeigt wurde, vor dem Aufruf freigegeben werden muss, um Arbeitsspeicherverluste zu vermeiden. 
+Das Argument _operRes_ ist das zweite Argument für die Rückrufe und ein Zeiger auf **XLOPER** (**Excel4** und **Excel4v**) oder **XLOPER12** (**Excel12** und **Excel12v**). Nach einem erfolgreichen Aufruf enthält es den Rückgabewert der Funktion oder des Befehls. **operRes** kann auf 0 (NULL-Zeiger) festgelegt werden, wenn kein Wert erforderlich ist. Die vorherigen Inhalte von **operRes** werden überschrieben, damit jeder zuvor verwiesene Speicher vor dem Aufruf freigegeben werden muss, um Speicherverluste zu vermeiden. 
   
 Wenn die Funktion oder der Befehl nicht aufgerufen werden kann (z.�B. wenn die Argumente falsch sind), wird für **operRes** der Fehler **#VALUE!** festgelegt. Ein Befehl gibt immer **Boolean** **TRUE** zur�ck, wenn dieser erfolgreich war, oder **FALSE**, wenn dabei ein Fehler aufgetreten ist oder dieser vom Benutzer abgebrochen wurde. 
   
@@ -311,7 +311,7 @@ Der Funktionsprototyp lautet wie folgt:
   
 Sie können diese threadsichere Funktion von einem beliebigen XLL-Befehl oder einer -Funktion aus aufrufen.
   
-In Excel 97 bis Excel 2003 gibt **XLCallVer**den Wert 1280 = 0x0500 hex = 5 x 256 zur�ck, was auf Excel Version�5 hinweist. Ab Excel 2007 wird 3072 = 0x0c00 hex = 12 x 256 zur�ckgegeben, was auf Version 12 hinweist.
+In Excel 97 bis Excel 2003 gibt **XLCallVer** den Wert 1280 = 0x0500 hex = 5 x 256 zur�ck, was auf Excel Version�5 hinweist. Ab Excel 2007 wird 3072 = 0x0c00 hex = 12 x 256 zur�ckgegeben, was auf Version 12 hinweist.
   
 Obwohl Sie auf diese Weise feststellen können, ob die neue C-API zur Laufzeit verf�gbar ist, m�chten Sie m�glicherweise unter Verwendung von `Excel4(xlfGetWorkspace, &version, 1, &arg)` die ausgef�hrte Excel-Version ermitteln, wobei  `arg` ist ein numerischer Wert **XLOPER**, der auf 2 festgelegt ist. Die Funktion gibt eine Zeichenfolge **XLOPER** zur�ck, d.�h. die Version, die dann in eine ganze Zahl umgewandelt werden kann. Der Grund für die Verwendung der Excel-Version statt der C-API-Version stellen Unterschiede zwischen Excel 2000, Excel 2002 und Excel 2003 dar, die das Add-In ggf. auch erkennen muss. Es wurden beispielsweise �nderungen an der Genauigkeit einiger Statistikfunktionen vorgenommen.
   

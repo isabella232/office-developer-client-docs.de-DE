@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249795(v=office.15)
 ms:contentKeyID: 48546975
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: eb1637d1757a8507c6b6abb2a0c71867e3d1177b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 2417cde334d540866718407f6b2cfaedfc79e9a9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295485"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589841"
 ---
 # <a name="copyrecordoptionsenum"></a>CopyRecordOptionsEnum
 
@@ -37,7 +37,7 @@ Gibt das Verhalten der [CopyRecord](copyrecord-method-ado.md)-Methode an.
 <tbody>
 <tr class="odd">
 <td><p><strong>adCopyAllowEmulation</strong></p></td>
-<td><p>4</p></td>
+<td><p>4 </p></td>
 <td><p>Gibt an, dass der Anbieter <em>Quelle</em> versucht, die Kopie mithilfe von Download- und Uploadvorgängen zu simulieren, wenn diese Methode aufgrund des <em>Ziels</em> fehlschlägt, das sich auf einem anderen Server befindet, oder wenn sie von einem anderen Anbieter als <em>Quelle</em> bedient wird. Beachten Sie, dass abweichende Anbieterfunktionen die Leistung einschränken oder zu Datenverlusten führen können.</p></td>
 </tr>
 <tr class="even">
@@ -59,7 +59,7 @@ Gibt das Verhalten der [CopyRecord](copyrecord-method-ado.md)-Methode an.
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
 Diese Konstanten haben keine ADO/WFC-Entsprechungen.
 

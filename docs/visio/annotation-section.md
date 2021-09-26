@@ -6,29 +6,29 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm1024505
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 616c822e-1bb2-4980-7e45-0c2be77dd801
 description: Enthält Informationen zu Kommentaren, die in eine Dokumentseite eingefügt wurden.
-ms.openlocfilehash: f874a574940a5f56b1d1680b9b4b32730e1e79f7
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 1d0b32af29aa1ea0f06654a43b6ab659db89ecae
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33427423"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608669"
 ---
 # <a name="annotation-section"></a>Abschnitt "Annotation"
 
 Enthält Informationen zu Kommentaren, die in eine Dokumentseite eingefügt wurden. 
   
 > [!NOTE]
-> Dieser Abschnitt wird nur zum Nachverfolgen von Kommentaren verwendet, wenn Sie eine VSD-Datei in Microsoft Visio 2013 öffnen oder eine VSDX-Datei im VSD-Dateiformat speichern. Es wird nicht zum Nachverfolgen von Kommentaren in neuen VSDX-Dokumenten in Visio 2013 verwendet. 
+> Dieser Abschnitt wird nur zum Nachverfolgen von Kommentaren beim Öffnen einer VSD-Datei in Microsoft Visio 2013 oder beim Speichern einer VSDX-Datei im VSD-Dateiformat verwendet. Es wird nicht zum Nachverfolgen von Kommentaren in neuen VSDX-Dokumenten in Visio 2013 verwendet. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Der **Abschnitt Annotation** eines ShapeSheet einer Seite enthält eine Zeile für jeden Kommentar, der einer Seite in der Zeichnung hinzugefügt wird, unabhängig davon, ob es sich um ein ursprüngliches Zeichenblatt oder ein Markupüberlagerungsblatt handelt (eine Seite mit Markup, das der Zeichnung von einem Prüfer hinzugefügt wurde). Informationen zu Markup, das mithilfe von Freihandeingaben oder anderen Formen anstelle von Kommentaren hinzugefügt wurde, sind nicht im Abschnitt **Anmerkung** enthalten. 
+Der **Anmerkungsbereich** des ShapeSheets einer Seite enthält eine Zeile für jeden Kommentar, der einem Zeichenblatt in der Zeichnung hinzugefügt wurde, unabhängig davon, ob es sich um ein ursprüngliches Zeichenblatt oder eine Markupüberlagerungsseite handelt (eine Seite mit Markup, die der Zeichnung von einem Bearbeiter hinzugefügt wurde). Informationen zu Markup, das mit freihandeingaben oder anderen Formen anstelle von Kommentaren hinzugefügt wurde, sind nicht im **Abschnitt "Anmerkung"** enthalten. 
   
 Wenn ein ShapeSheet für eine Seite angezeigt werden soll, dürfen keine Elemente der Seite ausgewählt sein. Klicken Sie mit der rechten Maustaste auf die Seite, und klicken Sie dann auf die Option **ShapeSheet anzeigen**.
   
-Informationen zu bestimmten Prüfern finden Sie im Abschnitt **Reviewer** im ShapeSheet des Dokuments. 
+Informationen zu bestimmten Bearbeitern finden Sie im Abschnitt **"Bearbeiter"** im ShapeSheet des Dokuments. 
   
 

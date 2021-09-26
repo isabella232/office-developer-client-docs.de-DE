@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagNull
 api_type:
 - HeaderDef
 ms.assetid: 192cdab8-c615-47b9-9f04-a1414eaf0c77
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 7e9c3340dfad47a811b56c86e8e6104fb6aac7c2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: c823a9a9ffe17bd466e166ede13d7f7ede25e1e5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32329267"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583324"
 ---
 # <a name="pidtagnull-canonical-property"></a>PidTagNull (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32329267"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Stellt einen Nullwert oder eine Einstellung einer Eigenschaft dar oder reserviert Arraybereich.
+Stellt einen NULL-Wert oder eine Einstellung einer Eigenschaft dar oder reserviert Array-Speicherplatz.
   
 |||
 |:-----|:-----|
@@ -34,9 +34,9 @@ Stellt einen Nullwert oder eine Einstellung einer Eigenschaft dar oder reservier
 |Datentyp:  <br/> |PT_NULL  <br/> |
 |Bereich:  <br/> |Standard  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft wird verwendet, um Speicherplatz in Arrays von [SPropValue-Strukturen zu](spropvalue.md) reservieren. Es wird in einem Array von [SPropTagArray-Strukturen](sproptagarray.md) verwendet, um der Methode zu sagen, dass platz im zurückgegebenen Array von **SPropValue-Strukturen reserviert werden** soll. Dadurch können berechnete Eigenschaften kostengünstig ausgefüllt werden. 
+Diese Eigenschaft wird verwendet, um Platz in Arrays von [SPropValue-Strukturen](spropvalue.md) zu reservieren. Es wird in einem Array von [SPropTagArray-Strukturen](sproptagarray.md) verwendet, um die Methode anweisen, Speicherplatz im zurückgegebenen Array von **SPropValue-Strukturen** zu reservieren. Auf diese Weise können berechnete Eigenschaften auf kostengünstige Weise ausgefüllt werden. 
   
 Weitere Informationen finden Sie unter [MAPI Property Type Overview](mapi-property-type-overview.md).
   
@@ -52,11 +52,11 @@ Weitere Informationen finden Sie unter [MAPI Property Type Overview](mapi-proper
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -64,9 +64,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

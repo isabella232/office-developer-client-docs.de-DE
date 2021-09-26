@@ -6,13 +6,13 @@ ms.audience: Developer
 ms.topic: reference
 ms.assetid: b941a0c7-9753-4920-bb6d-cbba94ba9422
 description: Bestimmt, ob ein angegebener Ausdruck NULL ist.
-localization_priority: Priority
-ms.openlocfilehash: fe6a0fe4f182a1385304b783e7cfaaf515f732d4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 47505421c947c7eb76d006bb663866cbbdafbd5f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32311137"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601548"
 ---
 # <a name="is-not-null-access-custom-web-app"></a>IS [NOT] NULL (benutzerdefinierte Access-Web-App)
 
@@ -30,7 +30,7 @@ Das Prädikat **IS [NOT] NULL** enthält die folgenden Argumente.
 |||
 |:-----|:-----|
 | *expression*  <br/> |Jeder gültige Ausdruck.  <br/> |
-| *NOT*  <br/> |Gibt an, dass das boolesche Ergebnis negiert werden soll. Das Prädikat kehrt die Rückgabewerte um, sodass TRUE zurückgegeben wird, wenn der Wert nicht NULL ist, und FALSE, wenn der Wert NULL ist.  <br/> |
+| *NOT*  <br/> |Gibt an, dass das boolesche Ergebnis negiert werden soll. Das Prädikat kehrt seine Rückgabewerte um und gibt TRUE zurück, wenn der Wert nicht NULL ist, und FALSE, wenn der Wert NULL ist.  <br/> |
    
 ## <a name="remarks"></a>Hinweise
 

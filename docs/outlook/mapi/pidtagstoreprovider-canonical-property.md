@@ -1,25 +1,25 @@
 ---
-title: PidTagStoreProvider (kanonische Eigenschaft)
+title: Kanonische PidTagStoreProvider-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagStoreProvider
 api_type:
 - COM
 ms.assetid: 6f6cc66f-a08e-4f8e-b33a-d3674319248e
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 6266c9293f54ce764c5b5b0e41d43767490abcf7
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c16f2477d107220408771328f4ad339774a696cf
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33412051"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59599375"
 ---
-# <a name="pidtagstoreprovider-canonical-property"></a>PidTagStoreProvider (kanonische Eigenschaft)
+# <a name="pidtagstoreprovider-canonical-property"></a>Kanonische PidTagStoreProvider-Eigenschaft
 
   
   
@@ -34,11 +34,11 @@ Enthält eine vom Anbieter definierte [MAPIUID-Struktur,](mapiuid.md) die den Ty
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |ID-Eigenschaften  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die [MAPIUID-Struktur](mapiuid.md) identifiziert den Typ des Nachrichtenspeichers. Der Wert wird von Nachrichtenspeicheranbietern für Nachrichtenspeicherobjekte berechnet und ist für jeden Anbieter eindeutig. Es wird in der Regel zum Durchsuchen der Tabelle des Nachrichtenspeichers verwendet, um einen Speicher des gewünschten Typs zu finden, z. B. öffentliche Ordner. 
+Die [MAPIUID-Struktur](mapiuid.md) identifiziert den Typ des Nachrichtenspeichers. Der Wert wird von Nachrichtenspeicheranbietern für Nachrichtenspeicherobjekte berechnet und ist für jeden Anbieter eindeutig. Es wird in der Regel zum Durchsuchen der Nachrichtenspeichertabelle verwendet, um einen Speicher des gewünschten Typs zu finden, z. B. öffentliche Ordner. 
   
-Diese Eigenschaft entspricht der PR_AB_PROVIDER_ID **(** [PidTagAbProviderId](pidtagabproviderid-canonical-property.md)) -Eigenschaft für Adressbücher. 
+Diese Eigenschaft entspricht der **eigenschaft PR_AB_PROVIDER_ID** ([PidTagAbProviderId](pidtagabproviderid-canonical-property.md)) für Adressbücher. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -46,11 +46,11 @@ Diese Eigenschaft entspricht der PR_AB_PROVIDER_ID **(** [PidTagAbProviderId](pi
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -58,9 +58,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

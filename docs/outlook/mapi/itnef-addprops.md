@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ITnef.AddProps
 api_type:
 - COM
 ms.assetid: e85641fb-6d3c-494a-981c-01781c7bf5bb
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 6a7bb7265d29d2acfce17a1a09c95f7f7b539064
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: fb9591794ae6606ef06b0fc756380fcd0ffab3fe
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348622"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59610405"
 ---
 # <a name="itnefaddprops"></a>ITnef::AddProps
 
@@ -40,7 +40,7 @@ HRESULT AddProps(
 
  _ulFlags_
   
-> [in] Eine Bitmaske von Flags, die steuert, wie Eigenschaften in die Kapselung eingeschlossen oder von der Kapselung ausgeschlossen werden. Die folgenden Kennzeichen können festgelegt werden:
+> [in] Eine Bitmaske mit Flags, die steuert, wie Eigenschaften in die Kapselung eingeschlossen oder von dieser ausgeschlossen werden. Die folgenden Flags können festgelegt werden:
     
 TNEF_PROP_ATTACHMENTS_ONLY 
   
@@ -48,15 +48,15 @@ TNEF_PROP_ATTACHMENTS_ONLY
     
 TNEF_PROP_CONTAINED 
   
-> Codiert nur Eigenschaften aus der anlage, die durch den  _ulElemID-Parameter angegeben_ wird. Wenn der  _lpvData-Parameter_ nicht NULL ist, werden die daten, auf die verwiesen wird, in die Kapselung der Anlage in der Datei geschrieben, die durch die **PR_ATTACH_TRANSPORT_NAME** ([PidTagAttachTransportName](pidtagattachtransportname-canonical-property.md)) -Eigenschaft angegeben wird.
+> Codiert nur Eigenschaften aus der durch den  _ulElemID-Parameter_ angegebenen Anlage. Wenn der  _lpvData-Parameter_ nicht NULL ist, werden die Daten, auf die verwiesen wird, in die Kapselung der Anlage in der Datei geschrieben, die durch die **eigenschaft PR_ATTACH_TRANSPORT_NAME** ([PidTagAttachTransportName](pidtagattachtransportname-canonical-property.md)) angegeben wird.
     
 TNEF_PROP_CONTAINED_TNEF 
   
-> Codiert nur Eigenschaften aus der Nachricht oder Anlage, die durch den  _ulElemID-Parameter angegeben_ wird. Wenn dieses Flag festgelegt ist, muss der Wert in  _lpvData_ ein [IStream-Zeiger](https://docs.microsoft.com/windows/desktop/api/objidl/nn-objidl-istream) sein. 
+> Codiert nur Eigenschaften aus der Nachricht oder Anlage, die durch den  _ulElemID-Parameter_ angegeben wird. Wenn dieses Flag festgelegt ist, muss der Wert in  _lpvData_ ein [IStream-Zeiger](https://docs.microsoft.com/windows/desktop/api/objidl/nn-objidl-istream) sein. 
     
 TNEF_PROP_EXCLUDE 
   
-> Codiert alle Eigenschaften, die nicht im  _lpPropList-Parameter angegeben_ sind. 
+> Codiert alle Eigenschaften, die nicht im  _lpPropList-Parameter_ angegeben sind. 
     
 TNEF_PROP_INCLUDE 
   
@@ -68,15 +68,15 @@ TNEF_PROP_MESSAGE_ONLY
     
  _ulElemID_
   
-> [in] Die eigenschaft PR_ATTACH_NUM **(** [PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) einer Anlage, die eine Zahl enthält, die die Anlage in ihrer übergeordneten Nachricht eindeutig identifiziert. Der  _ulElemID-Parameter_ wird verwendet, wenn eine spezielle Behandlung für eine Anlage angefordert wird. Der  _ulElemID-Parameter_ sollte 0 sein, es sei denn, TNEF_PROP_CONTAINED oder TNEF_PROP_CONTAINED_TNEF im  _ulFlags-Parameter festgelegt_ ist. 
+> [in] Die eigenschaft **PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) einer Anlage, die eine Zahl enthält, die die Anlage in der übergeordneten Nachricht eindeutig identifiziert. Der  _ulElemID-Parameter_ wird verwendet, wenn eine spezielle Behandlung für eine Anlage angefordert wird. Der  _ulElemID-Parameter_ sollte 0 sein, es sei denn, das TNEF_PROP_CONTAINED- oder TNEF_PROP_CONTAINED_TNEF-Flag ist im  _ulFlags-Parameter_ festgelegt. 
     
  _lpvData_
   
-> [in] Ein Zeiger auf Anlagendaten, die zum Ersetzen der In _ulElemID angegebenen Anlagendaten verwendet werden._ Der _lpvData-Parameter_ sollte NULL sein, es sei denn, TNEF_PROP_CONTAINED oder TNEF_PROP_CONTAINED_TNEF in _ulFlags festgelegt ist._
+> [in] Ein Zeiger auf Anlagendaten, die verwendet werden, um die Daten der in  _ulElemID_ angegebenen Anlage zu ersetzen. Der  _lpvData-Parameter_ sollte NULL sein, es sei denn, TNEF_PROP_CONTAINED oder TNEF_PROP_CONTAINED_TNEF in  _ulFlags_ festgelegt ist.
     
  _lpPropList_
   
-> [in] Ein Zeiger auf die Liste der Eigenschaften, die in die Kapselung aufgenommen oder von der Kapselung ausgeschlossen werden.
+> [in] Ein Zeiger auf die Liste der Eigenschaften, die in die Kapselung eingeschlossen oder von dieser ausgeschlossen werden sollen.
     
 ## <a name="return-value"></a>Rückgabewert
 
@@ -84,13 +84,13 @@ S_OK
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Transportanbieter, Nachrichtenspeicheranbieter und Gateways rufen die **ITnef::AddProps-Methode** auf, um Eigenschaften auflisten, die in die Transport-Neutral Encapsulation Format (TNEF)-Verarbeitung einer Nachricht oder Anlage eingeschlossen oder von dieser ausgeschlossen werden sollen. Durch die Verwendung aufeinander folgenden Aufrufs kann der Anbieter oder das Gateway eine Liste der Eigenschaften angeben, die hinzugefügt und codiert oder von der Codierung ausgeschlossen werden. Anbieter und Gateways können auch **AddProps** verwenden, um Informationen zu speziellen Behandlungsanlagen zur Verfügung zu stellen. 
+Transportanbieter, Nachrichtenspeicheranbieter und Gateways rufen die **ITnef::AddProps-Methode** auf, um Eigenschaften aufzuführen, die in die Transport-Neutral Kapselungsformatverarbeitung (Encapsulation Format, TNEF) einer Nachricht oder Anlage einbezogen oder ausgeschlossen werden sollen. Durch die Verwendung aufeinander folgender Aufrufe kann der Anbieter oder das Gateway eine Liste der Eigenschaften angeben, die hinzugefügt und codiert oder von der Codierung ausgeschlossen werden sollen. Anbieter und Gateways können **AddProps** auch verwenden, um Informationen zu speziellen Anlagen bereitzustellen, die behandelt werden sollten. 
   
- **AddProps wird** nur für TNEF-Objekte unterstützt, die mit dem TNEF_ENCODE für die [OpenTnefStream-](opentnefstream.md) oder [OpenTnefStreamEx-Funktion geöffnet](opentnefstreamex.md) werden. 
+ **AddProps** wird nur für TNEF-Objekte unterstützt, die mit dem TNEF_ENCODE Flag für die [OpenTnefStream-](opentnefstream.md) oder [OpenTnefStreamEx-Funktion](opentnefstreamex.md) geöffnet werden. 
   
-Beachten Sie, dass keine tatsächliche TNEF-Codierung für **AddProps** erfolgt, bis die [ITnef::Finish-Methode](itnef-finish.md) aufgerufen wird. Diese Funktionalität bedeutet, dass Zeiger, die an **AddProps übergeben** werden, gültig bleiben müssen, bis der Aufruf von **Finish** erfolgt ist. An diesem Punkt können alle Objekte und Daten, die mit **AddProps-Aufrufen** übergeben werden, freigegeben oder freigegeben werden. 
+Beachten Sie, dass für **AddProps** keine tatsächliche TNEF-Codierung erfolgt, bis die [ITnef::Finish-Methode](itnef-finish.md) aufgerufen wird. Diese Funktionalität bedeutet, dass an **AddProps** übergebene Zeiger bis nach dem Aufruf von **"Fertig stellen"** gültig bleiben müssen. An diesem Punkt können alle Objekte und Daten, die mit **AddProps-Aufrufen** übergeben werden, freigegeben oder freigegeben werden. 
   
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 

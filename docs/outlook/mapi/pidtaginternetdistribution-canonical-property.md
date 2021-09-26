@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagInternetDistribution
 api_type:
 - HeaderDef
 ms.assetid: a1b4d27d-d1ef-4462-bbe8-5ec965883a6e
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: aa74bb2c4ca40757cd62a7add6dd567b4b77a977
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 7bcfe70e08bc1488543e205cadf055ad11871f42
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411057"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583429"
 ---
 # <a name="pidtaginternetdistribution-canonical-property"></a>PidTagInternetDistribution (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "33411057"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ordnet dem MIME-Verteilungsheader zu.
+Karten zum MIME-Verteilungsheader.
   
 |||
 |:-----|:-----|
@@ -40,17 +40,17 @@ Ordnet dem MIME-Verteilungsheader zu.
 
 [[MS-OXPROPS]] 
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 ### <a name="header-files"></a>Headerdateien
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -58,9 +58,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

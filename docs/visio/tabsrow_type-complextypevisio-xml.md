@@ -4,14 +4,14 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8b9258a0-05fa-b0b0-90ed-dc1c4faa288a
-ms.openlocfilehash: d7119cc1fef637992213ce49b250291d15b66c9f
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 653766baece49ffbfd2642c1648934ab6550d3ec
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34541932"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603330"
 ---
 # <a name="tabsrow_type-complextype-visio-xml"></a>TabsRow_Type complexType (Visio XML)
 
@@ -46,13 +46,13 @@ ms.locfileid: "34541932"
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Cell](cell-element-tabs-sectionvisio-xml.md) <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> ||
+|[Cell](cell-element-tabs-sectionvisio-xml.md) <br/> |[Cell_type](cell_type-complextypevisio-xml.md) <br/> ||
    
 ### <a name="attributes"></a>Attribute
 

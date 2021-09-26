@@ -1,42 +1,42 @@
 ---
-title: PidTagProviderUid (kanonische Eigenschaft)
+title: Kanonische PidTagProviderUid-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagProviderUid
 api_type:
 - COM
 ms.assetid: 993f5bca-58a6-455d-8a25-6e08b441ad31
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 0d79075ea1db451e0c3d327df9a662e5032ebb22
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 95d42bd6889ca2c8630e2240767a241142aa92d6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33422775"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583247"
 ---
-# <a name="pidtagprovideruid-canonical-property"></a>PidTagProviderUid (kanonische Eigenschaft)
+# <a name="pidtagprovideruid-canonical-property"></a>Kanonische PidTagProviderUid-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält eine **MAPIUID-Struktur** des Dienstanbieters, der eine Nachricht behandeln soll. 
+Enthält eine **MAPIUID-Struktur** des Dienstanbieters, der eine Nachricht verarbeitet. 
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_PROVIDER_UID  <br/> |
 |Kennung:  <br/> |0x300C  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
-|Bereich:  <br/> |MAPI allgemein  <br/> |
+|Bereich:  <br/> |ALLGEMEINE MAPI  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Diese Eigenschaft wird von allen Dienstanbietern berechnet. Sie enthält eine [MAPIUID-Struktur,](mapiuid.md) die dem Anbieter zugeordnet ist und in der Regel hart codiert wird. Sie wird in der Regel von einer Clientanwendung verwendet, die nur an den Adressbuchcontainern interessiert ist, die von einem bestimmten Anbieter bereitgestellt werden. 
+Diese Eigenschaft wird von allen Dienstanbietern berechnet. Es enthält eine [MAPIUID-Struktur,](mapiuid.md) die dem Anbieter zugeordnet und in der Regel hartcodiert ist. Es wird in der Regel von einer Clientanwendung verwendet, die nur an den von einem bestimmten Anbieter bereitgestellten Adressbuchcontainern interessiert ist. 
   
 Diese Eigenschaft wird nur als Spalteneintrag in der Anbietertabelle angezeigt.
   
@@ -46,11 +46,11 @@ Diese Eigenschaft wird nur als Spalteneintrag in der Anbietertabelle angezeigt.
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -58,9 +58,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

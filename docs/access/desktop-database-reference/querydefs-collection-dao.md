@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff194892(v=office.15)
 ms:contentKeyID: 48545215
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: 3543d882e0584c35c88a5475032d9fe5505f516c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 740b128ce246c108f283489f8e2e172c12eb868c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303234"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568607"
 ---
 # <a name="querydefs-collection-dao"></a>QueryDefs-Auflistung (DAO)
 
@@ -22,7 +22,7 @@ Eine **QueryDefs**-Auflistung enthält alle **QueryDef**-Objekte eines **Databas
 
 ## <a name="remarks"></a>Bemerkungen
 
-Um ein neues **QueryDef**-Objekt zu erstellen, verwenden Sie die **CreateQueryDef**-Methode. Wenn Sie in einem Microsoft Access-Arbeitsbereich eine Zeichenfolge für das name-Argument eingeben oder die **Name**-Eigenschaft des neuen **QueryDef**-Objekts explizit auf eine Zeichenfolge festlegen, deren Länge nicht null ist, erstellen Sie ein permanentes **QueryDef**-Objekt, das automatisch an die **QueryDefs**-Auflistung angehängt und auf dem Datenträger gespeichert wird. Wenn Sie eine Zeichenfolge der Länge null als name-Argument eingeben oder die **Name**-Eigenschaft explizit auf eine Zeichenfolge der Länge null festlegen, führt dies zu einem temporären **QueryDef**-Objekt.
+Verwenden Sie zum Erstellen eines neuen **QueryDef**-Objekts die Methode **CreateQueryDef**. Wenn Sie in einem Microsoft Access-Arbeitsbereich eine Zeichenfolge für das „name“-Argument angeben, oder wenn Sie die **Name**-Eigenschaft des neuen **QueryDef**-Objekts explizit auf eine Zeichenfolge festlegen, deren Länge nicht Null (0) ist, erstellen Sie ein dauerhaftes **QueryDef**-Objekt, das automatisch an die **QueryDefs**-Sammlung angefügt und auf dem Datenträger gespeichert wird. Wenn Sie eine Zeichenfolge der Länge Null (0) als „name“-Argument eingeben, oder die **Name**-Eigenschaft explizit auf eine Zeichenfolge der Länge Null (0) festlegen, ist das Ergebnis ein temporäres **QueryDef**-Objekt.
 
 Verwenden Sie eine der folgenden Syntaxformen, um auf ein **QueryDef**-Objekt in einer Auflistung anhand seiner Ordnungszahl oder seiner Einstellung der **Name**-Eigenschaft zu verweisen:
 
@@ -87,7 +87,7 @@ Mit diesem Beispiel wird ein neues **QueryDef**-Objekt erstellt, das an die **Qu
 
 <br/>
 
-In diesem Beispiel wird die **CreateQueryDef**-Methode verwendet, um ein temporäres und ein dauerhaftes **QueryDef**-Objekt zu erstellen und auszuführen. Die GetrstTemp-Funktion wird zur Ausführung dieses Verfahrens benötigt.
+This example uses the **CreateQueryDef** method to create and execute both a temporary and a permanent **QueryDef**. The GetrstTemp function is required for this procedure to run.
 
 ```vb
     Sub CreateQueryDefX() 
@@ -142,7 +142,7 @@ In diesem Beispiel wird die **CreateQueryDef**-Methode verwendet, um ein tempor�
 
 <br/>
 
-Im folgenden Beispiel wird gezeigt, wie eine Parameterabfrage ausgeführt wird. Die Parameters-Auflistung wird verwendet, um den Organization-Parameter der myActionQuery-Abfrage festzulegen, bevor die Abfrage ausgeführt wird.
+The following example shows how to execute a parameter query. The Parameters collection is used to set the Organization parameter of the myActionQuery query before the query is executed.
 
 **Der Beispielcode stammt von:**[Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
 

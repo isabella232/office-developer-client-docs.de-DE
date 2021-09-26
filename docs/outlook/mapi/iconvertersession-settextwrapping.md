@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IConverterSession.SetTextWrapping
 api_type:
 - COM
 ms.assetid: 8674b288-43a3-6376-35ca-9dbaa3a1851e
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a8a6546c38c629c193c1978998c95918943fe5c7
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: a9653953c0ac9973e734f33d95965ffa73a4850d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423587"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59610685"
 ---
 # <a name="iconvertersessionsettextwrapping"></a>IConverterSession::SetTextWrapping
 
@@ -25,7 +25,7 @@ ms.locfileid: "33423587"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Legt die Textumbruchbreite für einen MIME-Stream fest, den der Konverter in [IConverterSession::MAPIToMIMEStm zurückgeben wird.](iconvertersession-mapitomimestm.md)
+Legt die Textumbruchbreite für einen MIME-Stream fest, den der Konverter in [IConverterSession::MAPIToMIMEStm](iconvertersession-mapitomimestm.md)zurückgibt.
   
 ```cpp
 HRESULT IConverterSession::SetTextWrapping ( 
@@ -38,7 +38,7 @@ HRESULT IConverterSession::SetTextWrapping (
 
  *fWrapText* 
   
-> [in] Gibt an, ob Text umbrucht werden soll oder nicht.
+> [in] Ob Text umgebrochen werden soll oder nicht.
     
  *ulWrapWidth* 
   
@@ -48,7 +48,7 @@ HRESULT IConverterSession::SetTextWrapping (
 
 S_OK
   
-> Der Aufruf war erfolgreich.
+> Der Anruf war erfolgreich.
     
 ## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 

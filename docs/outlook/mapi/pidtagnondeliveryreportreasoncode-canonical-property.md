@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidTagNonDeliveryReportReasonCode
 api_type:
 - HeaderDef
 ms.assetid: 4b3ce80c-4245-47b0-ab10-a2e03ccb0b83
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 639409f33f080aa3369b94060ce249017006f121
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 24f8e91e5f5d51a964c7f9b23b7d41673730bb14
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33422650"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583331"
 ---
 # <a name="pidtagnondeliveryreportreasoncode-canonical-property"></a>PidTagNonDeliveryReportReasonCode (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "33422650"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält einen Diagnosecode, der Teil eines Nichtverteilerberichts ist.
+Enthält einen Diagnosecode, der Teil eines Nicht-Inhaltsberichts ist.
   
 |||
 |:-----|:-----|
@@ -40,11 +40,11 @@ Enthält einen Diagnosecode, der Teil eines Nichtverteilerberichts ist.
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -52,9 +52,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm37891
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 119e824cae71d54bb398aa68f476a667f14a6888
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: b788fa30f143d5810cc9a64fa041b401518e87e5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280273"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597702"
 ---
 # <a name="addmenu-macro-action"></a>AddMenu-Makroaktion
 
@@ -51,12 +51,14 @@ Die **HinzufügenMenü**-Aktion hat die folgenden Argumente.
 <tbody>
 <tr class="odd">
 <td><p><strong>Menüname</strong></p></td>
-<td><p>Der Name &quot;des Menüs, beispielsweise Berichts Befehle&quot; oder &quot;-Tools.&quot; Um eine Zugriffstaste zu erstellen, damit Sie das Menü mithilfe der Tastatur auswählen können, geben Sie ein kaufmännisches und-Zeichen (<strong>&amp;</strong>) vor dem Buchstaben ein, der als Zugriffstaste verwendet werden soll. Dieser Buchstabe wird im Menünamen auf der Registerkarte <strong>Add-Ins</strong> unterstrichen dargestellt.</p></td>
+<td><p>Der Name des Menüs, z. B. &quot; Berichtsbefehle &quot; oder &quot; &quot; Tools. Um eine Zugriffstaste zu erstellen, damit Sie das Menü über die Tastatur auswählen können, geben Sie ein kaufmännisches Und-Zeichen () vor dem Buchstaben ein, <strong>&amp;</strong> der die Zugriffstaste sein soll. Dieser Buchstabe wird im Menünamen auf der Registerkarte <strong>Add-Ins</strong> unterstrichen dargestellt.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Menümakroname</strong></p></td>
-<td><p>Der Name der Makrogruppe, die die Makros für die Menübefehle enthält. Dies ist ein erforderliches Argument.</p>
-<p><strong>Hinweis</strong>: Wenn Sie ein Makro ausführen, das <strong></strong> die AddMenu-Aktion in einer Bibliotheksdatenbank enthält, sucht Microsoft Office Access 2007 nur in der aktuellen Datenbank nach der Makrogruppe mit diesem Namen.</p></td>
+<td><p>Der Name der Makrogruppe, die die Makros für die Menübefehle enthält. Dies ist ein erforderliches Argument. 
+
+</p>
+<p><strong>HINWEIS:</strong>Wenn Sie ein Makro ausführen, das die <strong>AddMenu-Aktion</strong> in einer Bibliotheksdatenbank enthält, sucht Microsoft Office Access 2007 nur in der aktuellen Datenbank nach der Makrogruppe mit diesem Namen.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Statusleistentext</strong></p></td>
@@ -66,7 +68,7 @@ Die **HinzufügenMenü**-Aktion hat die folgenden Argumente.
 </table>
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Verwenden Sie die **AddMenu** -Methode des **DoCmd** -Objekts, um die **HinzufügenMenü** -Aktion in einem VBA-Modul (Visual Basic für Applikationen) auszuführen. Sie können auch die **MenuBar** - bzw. **ShortcutMenuBar** -Eigenschaft in VBA festlegen, um ein benutzerdefiniertes Menü auf der Registerkarte **Add-Ins** zu erstellen oder um ein benutzerdefiniertes Kontextmenü mit einem Formular, Bericht oder Formularsteuerelement zu verbinden. Sie können die **ShortcutMenuBar** -Eigenschaft des **Application** -Objekts festlegen, um ein globales Kontextmenü zu erstellen.
 

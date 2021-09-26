@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff821155(v=office.15)
 ms:contentKeyID: 48546840
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: bd6f2fdf7d1f8ba9fc47c6223a8f872a655a1e3f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: ebcfcdb81899254b5e24496dff93f82fa626f7c6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307623"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59572900"
 ---
 # <a name="recordsetrequery-method-dao"></a>Recordset.Requery-Methode (DAO)
 
@@ -56,17 +56,17 @@ Aktualisiert die Daten in einem **[Recordset](recordset-object-dao.md)**-Objekt,
 
 ## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie diese Methode, um sicherzustellen, dass ein **Recordset** die aktuellen Daten enthält. Diese Methode füllt das aktuelle  **Recordset** neu aus, indem sie entweder die aktuellen Abfrageparameter oder (in einem Microsoft Access-Arbeitsbereich) die vom newquerydef-Argument neu bereitgestgellten verwendet.
+Verwenden Sie diese Methode, um sicherzustellen, dass ein **Recordset** die neuesten Daten enthält. Diese Methode füllt das aktuelle  **Recordset** neu aus, indem sie entweder die aktuellen Abfrageparameter oder (in einem Microsoft Access-Arbeitsbereich) die vom newquerydef-Argument neu bereitgestgellten verwendet.
 
 Wenn Sie kein newquerydef-Argument angeben haben, wird das **Recordset** basierend auf der gleichen Abfragedefinition und den gleichen Parametern neu ausgefüllt, die ursprünglich zum Ausfüllen des **Recordset** verwendet wurden. Änderungen der zugrunde liegenden Daten werden während des erneuten Ausfüllens berücksichtigt. Wenn Sie keine **QueryDef** zum Erstellen des **Recordset** verwendet haben, wird das **Recordset** komplett neu erstellt.
 
-Wenn Sie das ursprüngliche **QueryDef** im Argument „newquerydef“ angeben, wird das **Recordset** mithilfe der durch **QueryDef** angegebenen Parameter erneut abgefragt. Änderungen an den zugrunde liegenden Daten werden während dieser erneuten Auffüllung angezeigt. Um Änderungen an den Abfrageparameterwerten im **Recordset** widerzuspiegeln, müssen Sie das newquerydef-Argument angeben.
+Wenn Sie das ursprüngliche **QueryDef** im Argument „newquerydef“ angeben, dann wird das **Recordset** mithilfe der durch **QueryDef** angegebenen Parameter erneut abgefragt. Alle Änderungen an zugrunde liegenden Daten werden während dieses erneuten Auffüllvorgangs angezeigt. Um Änderungen an den Werten der Abfrageparameter im **Recordset** zu berücksichtigen, müssen Sie das Argument „newquerydef“ angeben.
 
 Wenn Sie eine andere **QueryDef** als die angeben, die ursprünglich zum Erstellen des **Recordset** verwendet wurde, wird das **Recordset** komplett neu erstellt.
 
 Wenn Sie **Requery** verwenden, wird der erste Datensatz im **Recordset** der aktuelle Datensatz.
 
-You can't use the **Requery** method on dynaset- or snapshot-type **Recordset** objects whose **[Restartable](recordset-restartable-property-dao.md)** property is set to **False**. Wenn Sie aber das optionale newquerydef-Argument angeben, wird die **Restartable**-Eigenschaft ignoriert.
+Sie können die **Requery**-Methode nicht auf **Recordset**-Objekte vom Typ „dynaset“ oder „snapshot“ anwenden, deren Eigenschaft **[Restartable](recordset-restartable-property-dao.md)** auf **False** gesetzt ist. Wenn Sie jedoch das optionale Argument „newquerydef“ angeben, wird die Eigenschaft **Restartable** ignoriert.
 
 Wenn sowohl die **[BOF](recordset-bof-property-dao.md)**- als auch die **[EOF](recordset-eof-property-dao.md)**-Eigenschafteneinstellung des **Recordset**-Objekts **True** lautet, nachdem Sie die **Requery**-Methode angewendet haben, hat die Abfrage keine Datensätze zurückgegeben, und das **Recordset** enthält keine Daten.
 

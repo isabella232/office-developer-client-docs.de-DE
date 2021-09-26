@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm5
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 435e49ee-0b51-8ce3-0589-3f0717026f4a
 description: Enthält die Formel, die ausgeführt werden soll, wenn ein Benutzer einen Befehl in einem Kontext- oder Aktionstagmenü auswählt.
-ms.openlocfilehash: e6bc576982cad871804cbcbc5f3d9c6bceb558c5
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8e1aec829904719f71dde6e87905784e78bd0a1d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33407613"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59608697"
 ---
 # <a name="action-cell-actions-section"></a>Zelle "Action" (Abschnitt "Actions")
 
@@ -23,22 +23,22 @@ Enthält die Formel, die ausgeführt werden soll, wenn ein Benutzer einen Befehl
 > [!NOTE]
 > In früheren Versionen von Microsoft Visio werden Aktionstags als Smarttags bezeichnet. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Zelle Action wird nur ausgewertet, wenn die Aktion stattfindet und nicht bei Eingabe der Formel.
   
-Verwenden Sie zum Erhalten eines Verweises auf die Zelle Action anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft:** 
+Verwenden Sie zum Abrufen eines Verweises auf die Zelle Action anhand des Namens einer anderen Formel oder eines Programms mithilfe der **CellsU-Eigenschaft** Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Aktionen.  *Name*  . Aktion, bei der Aktionen. *Name*  ist der Name der Aktionszeile  <br/> |
+| Zellenname:  <br/> | Aktionen.  *Name*  . Aktion, wobei Aktionen. *Name*  ist der Name der Aktionszeile  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Action-Zelle nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle Action anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionAction** <br/> |
-| Zeilenindex:  <br/> |**visRowAction**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowAction**  +   *i* where *i* = 0, 1, 2...  <br/> |
 | Zeilenindex:  <br/> |**visActionAction** <br/> |
    
 

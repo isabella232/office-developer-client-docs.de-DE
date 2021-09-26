@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm85126
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 27b4269e9718e425bc5a1307ae311ccaad89e514
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.localizationpriority: high
+ms.openlocfilehash: 60726e4c514f9fc8e6a432bac171d6bc35c4c05e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538228"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59559122"
 ---
 # <a name="after-update-macro-event"></a>Makroereignis "Nach Aktualisierung"
 
@@ -31,7 +31,7 @@ Das Ereignis **Nach Aktualisierung** tritt auf, wenn ein Datensatz geändert wur
 
 Mit dem Ereignis **Nach Aktualisierung** führen Sie sämtliche Aktionen nach dem Ändern eines Datensatzes aus. Häufig wird **Nach Aktualisierung** verwendet, um Geschäftsregeln zu erzwingen, einen Aggregatgesamtwert zu aktualisieren oder Benachrichtigungen zu senden.
 
-Mithilfe der Funktion **Aktualisiert(„*Feldname*“) ** können Sie feststellen, ob sich ein Feld verändert hat. The following code example shows how to use an **If** statement to determine determine whether the PaidInFull field has been changed.
+Sie können die Funktion **Updated("*Feldname*")** verwenden, um festzustellen, ob ein Feld geändert wurde. Das folgende Codebeispiel zeigt, wie eine **If**-Anweisung verwendet werden kann, um festzustellen, ob das Feld PaidInFull geändert wurde.
 
 ```vb 
  

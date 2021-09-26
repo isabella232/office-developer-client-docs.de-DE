@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251423
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6788bc96-cc86-5f21-781f-67274e7f605a
-description: Rundet eine Zahl in Richtung 0 (Null), zur nächsten ganzen Zahl oder zur nächsten Instanz von mehreren.
-ms.openlocfilehash: 7a16a77a990180f34dd7a5706c24ec3232438467
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Rundet eine Zahl in Richtung 0 (Null), auf die nächste ganze Zahl oder auf die nächste Instanz von mehreren.
+ms.openlocfilehash: 280697a8c8f38d122cd4cd1a1e7802e55b100107
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33439898"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598689"
 ---
 # <a name="floor-function"></a>FLOOR Function
 
-Rundet eine Zahl in Richtung 0 (Null), zur nächsten ganzen Zahl oder zur nächsten Instanz von _mehreren ._
+Rundet eine Zahl in Richtung 0 (Null), auf die nächste ganze Zahl oder auf die nächste Instanz  _mehrerer_.
   
 ## <a name="syntax"></a>Syntax
 
@@ -29,17 +29,17 @@ FLOOR(** *number* **, ** *multiple* ** )
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _Anzahl_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die zu rundende Zahl.  <br/> |
-| _multiple_ <br/> |Erforderlich  <br/> |**Number** <br/> |Das Vielfache, auf das gerundet werden soll.  <br/> |
+| _Mehrere_ <br/> |Erforderlich  <br/> |**Number** <br/> |Das Vielfache, auf das gerundet werden soll.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
-Nummer
+Zahl
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Wenn  _nicht multiple_ angegeben ist, wird die Zahl in Richtung 0 zur nächsten ganzen Zahl gerundet. 
+Wenn  Multiple nicht angegeben ist, wird die Zahl in Richtung 0 auf die nächste ganze Zahl gerundet. 
   
- _Zahl_ und  _Vielfaches_ müssen die gleichen Zeichen haben, oder ein #NUM! zurückgegeben. Wenn eine  _Zahl oder_  _ein Vielfaches_ nicht in einen Wert konvertiert werden kann, wird #VALUE! zurückgegeben. Wenn zahl  _oder_  _mehrfach_ 0 ist, ist das Ergebnis 0. 
+ _Zahl_ und Mehrere müssen dieselben Vorzeichen oder ein #NUM aufweisen!  zurückgegeben. Wenn  _eine Zahl_ oder  _ein Vielfaches_ nicht in einen Wert konvertiert werden kann, #VALUE! zurückgegeben. Wenn  _Zahl_ oder  _Vielfache_ 0 ist, ist das Ergebnis 0. 
   
 ## <a name="example-1"></a>Beispiel 1
 

@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251396
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 19b77fbb-32c9-4fc9-4c07-a0a713f7fdca
-description: Gibt den Arctangent einer Zahl zurück, z. B. den Winkel, dessen Tangente Zahl ist. Der resultierende Winkel liegt im Bereich -PI/2 <= Winkel <= PI/2 Bogenmaß (-90 <= Winkel <= 90 Grad).
-ms.openlocfilehash: b690d1267503e704549bd74eacf06b414db98137
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Gibt den Arkustangens einer Zahl zurück, z. B. den Winkel, dessen Tangens Zahl ist. Der resultierende Winkel befindet sich im Bereich -PI/2 <= Winkel <= PI/2 Bogenmaß (-90 <= Winkel <= 90 Grad).
+ms.openlocfilehash: 075dac885582464bd000622d04e1a833efb8e472
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33434543"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59598836"
 ---
 # <a name="atan-function"></a>ATAN Function
 
-Gibt das arctangent einer Zahl zurück, z. B. den Winkel, dessen Tangente Zahl _ist._ Der resultierende Winkel liegt im Bereich -PI/2 <= Winkel <= PI/2 Bogenmaß (-90 <= Winkel <= 90 Grad). 
+Gibt den Arkustangens einer Zahl zurück, z. B. den Winkel, dessen Tangens Zahl ist. Der resultierende Winkel befindet sich im Bereich -PI/2 <= Winkel <= PI/2 Bogenmaß (-90 <= Winkel <= 90 Grad). 
   
 ## <a name="syntax"></a>Syntax
 

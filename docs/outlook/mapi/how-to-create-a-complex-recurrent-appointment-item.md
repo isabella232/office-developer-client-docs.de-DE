@@ -3,54 +3,54 @@ title: Erstellen eines komplexen Terminserienelements
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: da9626da-5ba5-4f18-954c-4e23971d23e8
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: d44bf5cccd7e846530eae0c03b8d3ff525f3c012
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 4087c02bcb827bf5e321706950af012386c9421f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32344534"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59610888"
 ---
 # <a name="create-a-complex-recurrent-appointment-item"></a>Erstellen eines komplexen Terminserienelements
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPI kann verwendet werden, um Terminserienelemente zu erstellen.
+MAPI kann zum Erstellen von Terminserienelementen verwendet werden.
   
-Informationen zum Herunterladen, Anzeigen und Ausführen des Codes aus der MFCMAPI-Anwendung und dem CreateOutlookItemsAddin-Projekt, auf das in diesem Thema verwiesen wird, finden Sie unter [Install the Samples Used in This Section](how-to-install-the-samples-used-in-this-section.md).
+Informationen zum Herunterladen, Anzeigen und Ausführen des Codes aus der MFCMAPI-Anwendung und dem CreateOutlookItemsAddin-Projekt, auf das in diesem Thema verwiesen wird, finden Sie unter [Installieren der in diesem Abschnitt verwendeten Beispiele.](how-to-install-the-samples-used-in-this-section.md)
 
 ### <a name="to-create-an-appointment-item"></a>So erstellen Sie ein Terminelement
 
-1. Öffnen Sie einen Nachrichtenspeicher. Informationen zum Öffnen eines Nachrichtenspeichers finden Sie unter [Opening a Message Store](opening-a-message-store.md).
+1. Öffnen Sie einen Nachrichtenspeicher. Informationen zum Öffnen eines Nachrichtenspeichers finden Sie unter [Öffnen einer Nachricht Store](opening-a-message-store.md).
     
 2. Öffnen Sie einen Kalenderordner im Nachrichtenspeicher. Siehe **PR_IPM_APPOINTMENT_ENTRYID** ([PidTagIpmAppointmentEntryId](pidtagipmappointmententryid-canonical-property.md)).
     
-3. Rufen Sie [die IMAPIFolder::CreateMessage-Methode](imapifolder-createmessage.md) im Ordner Kalender auf, um das neue Terminelement zu erstellen. 
+3. Rufen Sie die [IMAPIFolder::CreateMessage-Methode](imapifolder-createmessage.md) im Kalenderordner auf, um das neue Terminelement zu erstellen. 
     
-4. Legen Sie **die dispidApptRecur** ([PidLidAppointmentRecur](pidlidappointmentrecur-canonical-property.md))-Eigenschaft und andere Eigenschaften, die zum Erstellen eines Terminserientermins erforderlich sind.
+4. Legen Sie die **Eigenschaft dispidApptRecur** ([PidLidAppointmentRecur](pidlidappointmentrecur-canonical-property.md)) und andere Eigenschaften fest, die zum Erstellen eines Wiederkehrenden Termins erforderlich sind.
     
 5. Speichern Sie das neue Terminelement.
     
-Die  `AddAppointment` Funktion in der Appointments.cpp-Quelldatei des CreateOutlookItemsAddin-Projekts veranschaulicht diese Schritte. Die Funktion übernimmt Parameter aus dem Dialogfeld Termin hinzufügen, das angezeigt wird, wenn Sie im Menü `AddAppointment` **Addins** in der  MFCMAPI-Beispielanwendung auf Termin hinzufügen klicken.  Die Funktion in Appointments.cpp zeigt das Dialogfeld an und übergibt Werte aus dem Dialogfeld  `DisplayAddAppointmentDialog` an die  `AddAppointment` Funktion. Die Funktion bezieht sich nicht direkt auf das Erstellen eines  `DisplayAddAppointmentDialog` Terminelements mithilfe von MAPI, daher ist sie hier nicht aufgeführt. 
+Die  `AddAppointment` Funktion in der Quelldatei Appointments.cpp des Projekts CreateOutlookItemsAddin veranschaulicht diese Schritte. Die `AddAppointment` Funktion verwendet Parameter aus dem Dialogfeld **"Termin hinzufügen",** das angezeigt wird, wenn Sie im Menü **"Add-Ins"** in der MFCMAPI-Beispielanwendung auf **"Termin hinzufügen"** klicken. Die  `DisplayAddAppointmentDialog` Funktion in Appointments.cpp zeigt das Dialogfeld an und übergibt Werte aus dem Dialogfeld an die  `AddAppointment` Funktion. Die  `DisplayAddAppointmentDialog` Funktion bezieht sich nicht direkt auf das Erstellen eines Terminelements mithilfe der MAPI, daher wird sie hier nicht aufgeführt. 
   
 > [!IMPORTANT]
-> Der Code in der MFCMAPI-Anwendung  stellt nicht sicher, dass  der Ordner Kalender ausgewählt wurde, wenn Sie im Menü **Addins** auf den Befehl Termin hinzufügen klicken. Das Erstellen eines Terminelements in einem anderen Ordner als dem **Kalenderordner** kann zu einem nicht definierten Verhalten führen. Stellen Sie sicher, dass Sie den Ordner **Kalender ausgewählt** haben, bevor Sie den Befehl **Termin** hinzufügen in der MFCMAPI-Anwendung verwenden. 
+> Der Code in der MFCMAPI-Anwendung stellt nicht sicher, dass der **Kalenderordner** ausgewählt wurde, wenn Sie im **Menü "Addins"** auf den Befehl **"Termin hinzufügen"** klicken. Das Erstellen eines Terminelements in einem anderen Ordner als dem **Kalenderordner** kann zu nicht definiertem Verhalten führen. Stellen Sie sicher, dass Sie den **Ordner "Kalender"** ausgewählt haben, bevor Sie den Befehl **"Termin hinzufügen"** in der MFCMAPI-Anwendung verwenden. 
   
-Die  `AddAppointment` Methode ist unten aufgeführt. Beachten Sie, dass der an die Methode übergebene  _lpFolder-Parameter_ ein Zeiger auf eine  `AddAppointment` [IMAPIFolder-Schnittstelle](imapifolderimapicontainer.md) ist, die den Ordner darstellt, in dem der Terminserientermin erstellt wird. Angesichts des  _lpFolder-Parameters,_ der eine **IMAPIFolder-Schnittstelle** darstellt, ruft der Code die [IMAPIFolder::CreateMessage-Methode](imapifolder-createmessage.md) auf. Die **CreateMessage-Methode** gibt einen Erfolgscode und einen Zeiger auf einen Zeiger auf eine **IMessage-Schnittstelle** zurück. Der Großteil des Funktionscodes übernimmt das Angeben von Eigenschaften in Vorbereitung auf den Aufruf der `AddAppointment` [IMAPIProp::SetProps-Methode.](imapiprop-setprops.md) Wenn der Aufruf der **SetProps-Methode** erfolgreich ist, wird die [IMAPIProp::SaveChanges-Methode](imapiprop-savechanges.md) aufgerufen, um die Änderungen an den Speicher zu commiten und ein neues Kalenderelement zu erstellen. 
+Die  `AddAppointment` Methode ist unten aufgeführt. Beachten Sie, dass der an die Methode übergebene  _lpFolder-Parameter_  `AddAppointment` ein Zeiger auf eine [IMAPIFolder-Schnittstelle](imapifolderimapicontainer.md) ist, die den Ordner darstellt, in dem der wiederkehrende Termin erstellt wird. Angesichts des  _lpFolder-Parameters,_ der eine **IMAPIFolder-Schnittstelle** darstellt, ruft der Code die [IMAPIFolder::CreateMessage-Methode](imapifolder-createmessage.md) auf. Die **CreateMessage-Methode** gibt einen Erfolgscode und einen Zeiger auf einen Zeiger auf eine **IMessage-Schnittstelle** zurück. Der Großteil des `AddAppointment` Funktionscodes übernimmt die Arbeit beim Angeben von Eigenschaften in Vorbereitung auf den Aufruf der [IMAPIProp::SetProps-Methode.](imapiprop-setprops.md) Wenn der Aufruf der **SetProps-Methode** erfolgreich ist, wird die [IMAPIProp::SaveChanges-Methode](imapiprop-savechanges.md) aufgerufen, um die Änderungen in den Speicher zu übernehmen und ein neues Kalenderelement zu erstellen. 
   
-Die  `AddAppointment` Funktion legt eine Reihe benannter Eigenschaften fest. Informationen zu benannten Eigenschaften und deren Erstellung finden Sie unter [Using MAPI to Create Outlook 2007 Items](https://msdn.microsoft.com/library/cc678348%28office.12%29.aspx). Da die benannten Eigenschaften, die für Terminelemente verwendet werden, mehrere Eigenschaftssätze belegen, müssen Sie beim Erstellen von Parametern darauf achten, dass sie an die [IMAPIProp::GetIDsFromNames-Methode übergeben](imapiprop-getidsfromnames.md) werden. 
+Die  `AddAppointment` Funktion legt eine Reihe benannter Eigenschaften fest. Informationen zu benannten Eigenschaften und deren Erstellung finden Sie unter [Verwenden von MAPI zum Erstellen von Outlook 2007-Elementen.](https://msdn.microsoft.com/library/cc678348%28office.12%29.aspx) Da die benannten Eigenschaften, die für Terminelemente verwendet werden, mehrere Eigenschaftensätze belegen, muss beim Erstellen von Parametern, die an die [IMAPIProp::GetIDsFromNames-Methode](imapiprop-getidsfromnames.md) übergeben werden, mit Vorsicht vorgegangen werden. 
   
-Die  `AddAppointment` Funktion verwendet mehrere Hilfsfunktionen, um eine Struktur für verschiedene terminbezogene Eigenschaften zu erstellen. Die  `BuildTimeZoneStruct` Funktionen  `BuildTimeZoneDefinition` und Hilfsfunktionen werden verwendet, um eine Struktur zu erstellen, die die zeitzonenbezogenen Eigenschaften angibt. Die zeitzonenbezogenen Eigenschaften sind **dispidTimeZoneStruct** ([PidLidTimeZoneStruct](pidlidtimezonestruct-canonical-property.md)), **dispidTimeZoneDesc** ([PidLidTimeZoneDescription](pidlidtimezonedescription-canonical-property.md)), **dispidApptTZDefRecur** ([PidLidAppointmentTimeZoneDefinitionRecur](pidlidappointmenttimezonedefinitionrecur-canonical-property.md)), **dispidApptTZDefStartDisplay** ([PidLidAppointmentTimeZoneDefinitionStartDisplay](pidlidappointmenttimezonedefinitionstartdisplay-canonical-property.md)) und **dispidApptTZDefEndDisplay** ([PidLidAppointmentTimeZoneDefinitionEndDisplay](pidlidappointmenttimezonedefinitionenddisplay-canonical-property.md)), und sie werden in den entsprechenden Abschnitten von [[MS-OXOCAL]](https://msdn.microsoft.com/library/cc425490%28v=EXCHG.80%29.aspx)erläutert. 
+Die  `AddAppointment` Funktion verwendet mehrere Hilfsfunktionen, um eine Struktur für verschiedene terminbezogene Eigenschaften zu erstellen. Die  `BuildTimeZoneStruct` Funktionen und  `BuildTimeZoneDefinition` Hilfsfunktionen werden verwendet, um eine Struktur zu erstellen, die die zeitzonenbezogenen Eigenschaften angibt. Die zeitzonenbezogenen Eigenschaften sind **dispidTimeZoneStruct** ([PidLidTimeZoneStruct](pidlidtimezonestruct-canonical-property.md)), **dispidTimeZoneDesc** ([PidLidTimeZoneDescription](pidlidtimezonedescription-canonical-property.md)), **dispidApptTZDefRecur** ([PidLidAppointmentTimeZoneDefinitionRecur](pidlidappointmenttimezonedefinitionrecur-canonical-property.md)), **dispidApptTZDefStartDisplay** ([PidLidAppointmentTimeZoneDefinitionStartDisplay](pidlidappointmenttimezonedefinitionstartdisplay-canonical-property.md)), and **dispidApptTZDefEndDisplay** ([PidLidAppointmentTimeZoneDefinitionEndDisplay](pidlidappointmenttimezonedefinitionenddisplay-canonical-property.md)), and they are discussed in die entsprechenden Abschnitte von [[MS-OXOCAL]](https://msdn.microsoft.com/library/cc425490%28v=EXCHG.80%29.aspx). 
 
-Die Funktion wird verwendet, um eine Struktur zu erstellen, die die  `BuildGlobalObjectID` **Eigenschaften LID_GLOBAL_OBJID** ([PidLidGlobalObjectId](pidlidglobalobjectid-canonical-property.md)) und **dispidCleanGlobalObjId** ([PidLidCleanGlobalObjectId](pidlidcleanglobalobjectid-canonical-property.md)) angibt, die in den entsprechenden Abschnitten von [[MS-OXOCAL]](https://msdn.microsoft.com/library/cc425490%28v=EXCHG.80%29.aspx)behandelt werden. Die Struktur, die die **dispidApptRecur-Eigenschaft angibt,** wird mithilfe der Funktion  `BuildWeeklyAppointmentRecurrencePattern` erstellt. 
+Die  `BuildGlobalObjectID` Funktion wird verwendet, um eine Struktur zu erstellen, die die **Eigenschaften LID_GLOBAL_OBJID** ([PidLidGlobalObjectId](pidlidglobalobjectid-canonical-property.md)) und **dispidCleanGlobalObjId** ([PidLidCleanGlobalObjectId](pidlidcleanglobalobjectid-canonical-property.md)) angibt, die in den entsprechenden Abschnitten von [[MS-OXOCAL]](https://msdn.microsoft.com/library/cc425490%28v=EXCHG.80%29.aspx)erläutert werden. Die Struktur, die die **dispidApptRecur-Eigenschaft** angibt, wird mithilfe der  `BuildWeeklyAppointmentRecurrencePattern` Funktion erstellt. 
 
-Informationen zur struktur, die von der Funktion erstellt wird, finden Sie  `BuildWeeklyAppointmentRecurrencePattern` unter [PidLidAppointmentRecur Canonical Property](pidlidappointmentrecur-canonical-property.md). Beachten Sie, dass zwar eine vielzahl von Terminserienmustern möglich ist, die Funktion jedoch nur ein wöchentliches  `BuildWeeklyAppointmentRecurrencePattern` Terminserienmuster erstellt. Außerdem werden mehrere hart codierte Werte verwendet, z. B. der Kalendertyp (Gregorianisch), der erste Wochentag (Sonntag) und die Anzahl der geänderten oder gelöschten Instanzen (keine). Eine allgemeinere Funktion zum Erstellen von Terminserienmustern müsste diese Arten von Variablen als Parameter akzeptieren. 
+Informationen zu der von der Funktion erstellten Struktur `BuildWeeklyAppointmentRecurrencePattern` finden Sie unter [PidLidAppointmentRecur (kanonische Eigenschaft).](pidlidappointmentrecur-canonical-property.md) Beachten Sie, dass zwar eine vielzahl von Terminserienmustern möglich ist, die  `BuildWeeklyAppointmentRecurrencePattern` Funktion aber nur ein wöchentliches Terminserienmuster erstellt. Außerdem werden mehrere hartcodierte Werte verwendet, z. B. der Kalendertyp (Gregorianisch), der erste Wochentag (Sonntag) und die Anzahl der geänderten oder gelöschten Instanzen (keine). Eine allgemeinere Funktion zum Erstellen von Terminserienmustern müsste diese Variablen als Parameter akzeptieren. 
   
-Im Folgenden finden Sie die vollständige Auflistung der  `AddAppointment` Funktion. 
+Es folgt die vollständige Auflistung der  `AddAppointment` Funktion. 
   
 ```cpp
 HRESULT AddAppointment(LPMAPIFOLDER lpFolder,
@@ -292,5 +292,5 @@ HRESULT AddAppointment(LPMAPIFOLDER lpFolder,
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Verwenden von MAPI zum Erstellen Outlook 2007-Elementen](https://msdn.microsoft.com/library/cc678348%28office.12%29.aspx)
+- [Verwenden von MAPI zum Erstellen von Outlook 2007-Elementen](https://msdn.microsoft.com/library/cc678348%28office.12%29.aspx)
 

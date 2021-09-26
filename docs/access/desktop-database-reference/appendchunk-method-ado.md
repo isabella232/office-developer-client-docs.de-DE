@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249179(v=office.15)
 ms:contentKeyID: 48544405
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 89a75ebe8a3fe704c4f755a0f744eac4d068ec0a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7582a33ea1add92f2c9d678a671cc6129e0f68ed
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32297025"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607262"
 ---
 # <a name="appendchunk-method-ado"></a>AppendChunk-Methode (ADO)
 
@@ -22,7 +22,7 @@ Daten werden einem großen [Field](field-object-ado.md)-Text- oder -Binärdateno
 
 ## <a name="syntax"></a>Syntax
 
-*-Objekt.* AppendChunk- *Daten*
+*object.* *AppendChunk-Daten*
 
 ## <a name="parameters"></a>Parameter
 
@@ -31,7 +31,7 @@ Daten werden einem großen [Field](field-object-ado.md)-Text- oder -Binärdateno
 |*Objekt* |Ein **Field** - oder **Parameter** -Objekt.|
 |*Daten* |Ein **Variant** -Objekt, das die dem Objekt anzufügenden Daten enthält.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Verwenden Sie die **AppendChunk**-Methode für ein **Field**- oder **Parameter**-Objekt, um es mit Long binarydaten oder Zeichendaten zu füllen. In Situationen mit beschränktem Systemspeicher können Sie mithilfe der **AppendChunk**-Methode lange Werte in Teilen anstatt als Ganzes bearbeiten.
 

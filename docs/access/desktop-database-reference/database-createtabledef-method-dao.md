@@ -10,23 +10,23 @@ f1_keywords:
 - dao360.chm1052968
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: c986f0a96c14dac8a9ee4f3c7fded5a049fa451e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 64cb20daaf235ebdd736771d571881cec17950f7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294946"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59562748"
 ---
 # <a name="databasecreatetabledef-method-dao"></a>Database.CreateTableDef-Methode (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
-Erstellt ein neues **[TableDef](tabledef-object-dao.md)**-Objekt (gilt nur für Microsoft Access-Arbeitsbereiche). .
+Erstellt ein neues **[TableDef](tabledef-object-dao.md)**-Objekt (nur für Microsoft Access-Arbeitsbereiche). .
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck*.CreateTableDef(***Name***, ***Attributes***, ***SourceTableName***, ***Connect***)
+*Ausdruck* .CreateTableDef(***Name** _, _*_Attribute_*_, _*_SourceTableName_*_, _*_Connect_**)
 
 *Ausdruck* Eine Variable, die ein **Database** -Objekt darstellt.
 
@@ -52,7 +52,7 @@ Erstellt ein neues **[TableDef](tabledef-object-dao.md)**-Objekt (gilt nur für 
 <td><p><em>Name</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Ein <strong>Variant</strong>-Parameter (Untertyp <strong>String</strong>), der neue <strong>TableDef</strong> eindeutig benennt. Unter der <strong><a href="tabledef-name-property-dao.md">Name</a></strong> -Eigenschaft finden Sie Einzelheiten zu gültigen <strong>TableDef</strong> -Namen.</p></td>
+<td><p>Ein <strong>Variant</strong>-Parameter (Untertyp <strong>String</strong>), der das neue <strong>TableDef</strong>-Objekt eindeutig benennt. Unter der <strong><a href="tabledef-name-property-dao.md">Name</a></strong>-Eigenschaft finden Sie Einzelheiten zu gültigen <strong>TableDef</strong>-Namen.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>Attributes</em></p></td>
@@ -64,13 +64,13 @@ Erstellt ein neues **[TableDef](tabledef-object-dao.md)**-Objekt (gilt nur für 
 <td><p><em>SourceTableName</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Ein <strong>Variant</strong>-Parameter (Untertyp<strong>String</strong>) mit dem Namen einer Tabelle in einer externen Datenbank, die die ursprüngliche Quelle der Daten ist. Die source-Zeichenfolge wird zur <strong><a href="tabledef-sourcetablename-property-dao.md">SourceTableName</a></strong>-Eigenschafteneinstellung des neuen <strong>TableDef</strong>-Objekts.</p></td>
+<td><p>Ein <strong>Variant</strong>-Parameter (Untertyp <strong>String</strong>), der den Namen einer Tabelle in einer externen Datenbank enthält, bei der es sich um die ursprüngliche Quelle der Daten handelt. Die Quellenzeichenfolge wird zur Eigenschafteneinstellung <strong><a href="tabledef-sourcetablename-property-dao.md">SourceTableName</a></strong> des neuen <strong>TableDef</strong>-Objekts.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>Connect</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Ein <strong>Variant</strong>-Parameter (Untertyp <strong>String</strong>) mit Informationen über die Quelle einer geöffneten oder verknüpften Datenbank oder einer Datenbank, die in einer Pass-Throug-Abfrage verwendet wird. Weitere Informationen zu gültige Verbindungszeichenfolgen finden Sie in<strong> <a href="tabledef-connect-property-dao.md">Connect</a> </strong>-Eigenschaften.</p></td>
+<td><p>Ein <strong>Variant</strong>-Parameter (Untertyp <strong>String</strong>) mit Informationen über die Quelle einer geöffneten Datenbank, einer Datenbank, die in einer Pass-Through-Abfrage verwendet wird, oder einer verknüpften Tabelle. Weitere Informationen zu gültigen Verbindungszeichenfolgen finden Sie unter der Eigenschaft <strong><a href="tabledef-connect-property-dao.md">Connect</a></strong>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -84,7 +84,7 @@ TableDef
 
 Wenn Sie einen oder mehrere der optionalen Teile für die **CreateTableDef**-Methode weglassen, können Sie die entsprechende Eigenschaft mithilfe einer entsprechenden Zuweisungsanweisung festlegen oder zurücksetzen, bevor Sie das neue Objekt an eine Auflistung anfügen. Nachdem Sie das Objekt angefügt haben, können Sie einige, aber nicht alle Eigenschaften ändern. Weitere Informationen finden Sie in den Themen zu den einzelnen Eigenschaften.
 
-Wenn name sich auf ein Objekt bezieht, das bereits ein Mitglied einer Auflistung ist, oder wenn Sie im angefügten **TableDef**- oder **[Field](field-object-dao.md)**-Objekt eine ungültige Eigenschaft angeben, tritt bei Verwendung der **[Append](tabledefs-append-method-dao.md)**-Methode ein Laufzeitfehler auf. Sie können ein **TableDef** -Objekt außerdem erst dann an die **TableDefs** -Auflistung anfügen, nachdem Sie mindestens ein **Field** -Objekt für das **TableDef** -Objekt definiert haben.
+Wenn „name“ sich auf ein Objekt bezieht, das bereits ein Mitglied einer Auflistung ist, oder wenn Sie im angefügten Objekt **TableDef** oder **[Field](field-object-dao.md)** eine ungültige Eigenschaft angeben, tritt bei Verwendung der Methode **[Append](tabledefs-append-method-dao.md)** ein Laufzeitfehler auf. Sie können ein **TableDef**-Objekt außerdem erst dann an die **TableDefs**-Sammlung anfügen, nachdem Sie mindestens ein **Field**-Objekt für das **TableDef**-Objekt definiert haben.
 
 Um ein **TableDef**-Objekt aus der **[TableDefs](tabledefs-collection-dao.md)**-Auflistung zu entfernen, verwenden Sie die **[Delete](tabledefs-delete-method-dao.md)**-Methode für die Auflistung.
 

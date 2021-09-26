@@ -12,13 +12,13 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 6a0404c21b308f6e389ee5577cc212763e660774
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 97b41c7c4b296f931c04108568735f2bd38877e9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306244"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601632"
 ---
 # <a name="update-statement-microsoft-access-sql"></a>UPDATE-Anweisung (Microsoft Access SQL)
 
@@ -76,7 +76,7 @@ WHERE ShipCountry = 'UK';
 
 > [!IMPORTANT]
 - UPDATE generiert kein Resultset. Nach dem Aktualisieren von Datensätzen mit einer Aktualisierungsabfrage können Sie den Vorgang außerdem nicht rückgängig machen. Wenn Sie wissen möchten, welche Datensätze aktualisiert wurden, untersuchen Sie zunächst die Ergebnisse einer Auswahlabfrage, die die gleichen Kriterien verwendet, und führen Sie dann die Aktualisierungsabfrage aus.
-- Bewahren Sie jederzeit Sicherungskopien Ihrer Daten auf. Wenn Sie die falschen Datensätze aktualisieren, können Sie sie aus Ihren Sicherungskopien abrufen.
+- Bewahren Sie jederzeit Sicherungskopien Ihrer Daten auf. Wenn Sie die falschen Datensätze aktualisieren, können Sie diese aus Ihren Sicherungskopien abrufen.
 
 
 

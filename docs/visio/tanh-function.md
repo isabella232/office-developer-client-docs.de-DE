@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251503
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0ffdfc22-cbae-b397-226a-2cfcc6ca56c7
 description: Gibt den hyperbolischen Tangens eines Winkels zurück.
-ms.openlocfilehash: e88d24b93d06cc606d96d5a4e4a3f834b706245a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 63c0fe0b1f31bc5d90ebf4b78db63c7c1873aea7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33412772"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603338"
 ---
 # <a name="tanh-function"></a>TANHYP-Funktion
 
@@ -28,15 +28,15 @@ TANH(** *angle* ** )
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _angle_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Winkel, an dem die hypbolische Tangente erhalten werden soll.  <br/> |
+| _Winkel_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Winkel, von dem der hypbolische Tangens abgerufen werden soll.  <br/> |
    
 ### <a name="return-value"></a>Rückgabewert
 
 Numeric
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Die TANH-Funktion verwendet Bogenmaß, es sei denn, Sie geben eine andere Maßeinheit im Winkel *an.* 
+Die TANH-Funktion verwendet Bogenmaße, es sei denn, Sie geben eine andere Maßeinheit im  *Winkel*  an. 
   
 ## <a name="example"></a>Beispiel
 

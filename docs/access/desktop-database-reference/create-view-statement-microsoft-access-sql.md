@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff836312(v=office.15)
 ms:contentKeyID: 48548519
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: 73fac5ff9dd1f5cf277b8cb241044af23609b764
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 2f46b897ba4e37f454c656f39333f5c4e0389e94
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295366"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59581588"
 ---
 # <a name="create-view-statement-microsoft-access-sql"></a>CREATE VIEW-Anweisung (Microsoft Access SQL)
 
@@ -65,7 +65,7 @@ Die SELECT-Anweisung, die die Sicht definiert, darf keine Parameter enthalten.
 
 Der Name der Sicht darf nicht mit dem Namen einer vorhandenen Tabelle übereinstimmen.
 
-Handelt es sich bei der über die SELECT-Anweisung definierten Abfrage um eine Abfrage, die aktualisiert werden kann, ist die Aktualisierung der Sicht ebenfalls möglich. Andernfalls ist die Sicht schreibgeschützt.
+Wenn die durch die SELECT-Anweisung definierte Abfrage aktualisierbar ist, ist auch die Ansicht aktualisierbar. Andernfalls ist die Ansicht schreibgeschützt.
 
 Wenn zwei beliebige Felder in der durch die SELECT-Anweisung definierten Abfrage denselben Namen haben, muss die Sichtdefinition eine Feldliste mit eindeutigen Namen für jedes Feld in der Abfrage enthalten.
 

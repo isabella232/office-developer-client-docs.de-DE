@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff845862(v=office.15)
 ms:contentKeyID: 48543652
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 8ba60a646fd234748bcc39b9a5604a33675caee5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 9eed2a6f66a2e23294aa3354178a051fe4a699b7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32280425"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59590170"
 ---
 # <a name="add-user-statement-microsoft-access-sql"></a>ADD USER-Anweisung (Microsoft Access SQL)
 
@@ -22,7 +22,7 @@ Fügt einer bestehenden *Gruppe* einen oder mehrere *Benutzer* hinzu.
 
 ## <a name="syntax"></a>Syntax
 
-Hinzufügen **\[von Benutzer ** Benutzer, Benutzer,... \] Zur *Gruppe*
+ADD USER *user* \[ , *user*, ... \] *AN-Gruppe*
 
 Die ADD USER-Anweisung besteht aus den folgenden Komponenten:
 
@@ -43,14 +43,14 @@ Die ADD USER-Anweisung besteht aus den folgenden Komponenten:
 <td><p>Der Name eines Benutzers, der zur Informationsdatei der Arbeitsgruppe hinzugefügt werden soll.</p></td>
 </tr>
 <tr class="even">
-<td><p><em>group</em></p></td>
+<td><p><em>Gruppe</em></p></td>
 <td><p>Der Name einer Gruppe, der zur Informationsdatei der Arbeitsgruppe hinzugefügt werden soll.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Nachdem ein *Benutzer* einer *Gruppe*hinzugefügt wurde, verfügt der *Benutzer* über alle Berechtigungen, die der *Gruppe*erteilt wurden.
+Nachdem ein *Benutzer* einer *Gruppe* hinzugefügt wurde, verfügt der *Benutzer* über alle Berechtigungen, die der *Gruppe* erteilt wurden.
 

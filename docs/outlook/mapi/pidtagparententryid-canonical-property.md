@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagParentEntryId
 api_type:
 - COM
 ms.assetid: 55e08ace-493c-4246-8ebf-c304f4abc56a
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 65f5e6c5da88267ec2e63d0acf3ef6f8e10c893b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: e772be857f86e6e28a7c790d1f47002223bbd5ae
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32348230"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59583310"
 ---
 # <a name="pidtagparententryid-canonical-property"></a>PidTagParentEntryId (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32348230"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält die Eintrags-ID des Ordners, der einen Ordner oder eine Nachricht enthält.
+Enthält den Eintragsbezeichner des Ordners, der einen Ordner oder eine Nachricht enthält.
   
 |||
 |:-----|:-----|
@@ -34,13 +34,13 @@ Enthält die Eintrags-ID des Ordners, der einen Ordner oder eine Nachricht enth�
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |ID-Eigenschaften  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird von Nachrichtenspeichern für alle Ordner und Nachrichten berechnet.
   
 Für einen Stammordner des Nachrichtenspeichers enthält diese Eigenschaft den eigenen Eintragsbezeichner des Ordners.
   
- **PR_PARENT_DISPLAY** ([PidTagParentDisplay](pidtagparentdisplay-canonical-property.md)) und diese Eigenschaft stehen nicht miteinander in Zusammenhang. Sie gehören zu völlig unterschiedlichen Kontexten.
+ **PR_PARENT_DISPLAY** ([PidTagParentDisplay](pidtagparentdisplay-canonical-property.md)) und diese Eigenschaft sind nicht miteinander verknüpft. Sie gehören zu völlig anderen Kontexten.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -48,7 +48,7 @@ Für einen Stammordner des Nachrichtenspeichers enthält diese Eigenschaft den e
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXCDATA]](https://msdn.microsoft.com/library/ 1afa0cd9-b1a0-4520-b623-bf15030af5d8%28Office.15%29.aspx)
   
@@ -56,7 +56,7 @@ Für einen Stammordner des Nachrichtenspeichers enthält diese Eigenschaft den e
     
 [[MS-OXCFOLD]](https://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)
   
-> Verarbeitet Ordnervorgänge.
+> Behandelt Ordnervorgänge.
     
 [[MS-OXCICAL]](https://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
   
@@ -64,7 +64,7 @@ Für einen Stammordner des Nachrichtenspeichers enthält diese Eigenschaft den e
     
 [[MS-OXCSPAM]](https://msdn.microsoft.com/library/522f8587-4aed-4cd6-831b-40bd87862189%28Office.15%29.aspx)
   
-> Ermöglicht die Behandlung von Zulässig-/Sperrlisten und die Ermittlung von Junk-E-Mail-Nachrichten.
+> Ermöglicht die Behandlung von Zulassungs-/Sperrlisten und die Ermittlung von Junk-E-Mail-Nachrichten.
     
 [[MS-OXOSFLD]](https://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb%28Office.15%29.aspx)
   
@@ -72,30 +72,30 @@ Für einen Stammordner des Nachrichtenspeichers enthält diese Eigenschaft den e
     
 [[MS-OXPFOAB]](https://msdn.microsoft.com/library/258a07a7-34a7-4373-87c1-cddf51447d00%28Office.15%29.aspx)
   
-> Gibt die Methode zum Bereitstellen von Offlineadressbuchdaten vom Server an den Client an.
+> Gibt die Methode zum Bereitstellen von Offlineadressbuchdaten (OAB) von Server zu Client an.
     
 ### <a name="header-files"></a>Headerdateien
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[PidTagFolderType (kanonische Eigenschaft)](pidtagfoldertype-canonical-property.md)
+[Kanonische PidTagFolderType-Eigenschaft](pidtagfoldertype-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

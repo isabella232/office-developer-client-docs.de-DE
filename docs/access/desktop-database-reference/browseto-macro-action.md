@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm35083
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 0bcf0a37f8c1596856f5d7b921430371d620f7a3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 53cc7fd0b085efee9b52d53371b08e338ccd4665
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296773"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607080"
 ---
 # <a name="browseto-macro-action"></a>BrowseTo-Makroaktion
 
@@ -46,11 +46,11 @@ Die **WechselnZu**-Aktion wird mit den folgenden Argumenten verwendet.
 </tr>
 <tr class="even">
 <td><p>Objektname</p></td>
-<td><p>Das Objekt, das in dem Unterformular-Steuerelement geladen wird, auf das durch das Argument path to Subform Control verwiesen wird.</p></td>
+<td><p>Das Objekt, das innerhalb des Unterformular-Steuerelements geladen wird, auf das durch das Argument Path to Subform Control verwiesen wird.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Path to Subform Control</p></td>
-<td><p>Wenn angegeben, der Pfad vom Hauptformular der Anwendung zum Ziel Unterformular-Steuerelement, das das durch das Argument Object Name angegebene Objekt lädt.</p></td>
+<td><p>Wenn angegeben, der Pfad vom Hauptformular der Anwendung zum Zielunterformular-Steuerelement, das das durch das Argument Objektname angegebene Objekt lädt.</p></td>
 </tr>
 <tr class="even">
 <td><p>Bedingung</p></td>
@@ -58,7 +58,7 @@ Die **WechselnZu**-Aktion wird mit den folgenden Argumenten verwendet.
 </tr>
 <tr class="odd">
 <td><p>Seite</p></td>
-<td><p>Legt die Seite des Endlosformulars fest, die als aktuelle Seite bestimmt wird. Dieses Argument ist nur Web.</p></td>
+<td><p>Legt die Seite des Endlosformulars fest, die als aktuelle Seite bestimmt wird. Dieses Argument ist nur web.</p></td>
 </tr>
 <tr class="even">
 <td><p>Datenmodus</p></td>
@@ -68,15 +68,15 @@ Die **WechselnZu**-Aktion wird mit den folgenden Argumenten verwendet.
 </table>
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-Das Argument PathToSubFormControl muss mit der Syntax im folgenden Codebeispiel angegeben werden:
+Das PathToSubFormControl-Argument muss mithilfe der Syntax im folgenden Codebeispiel angegeben werden:
 
 ```vb
     Main Form.SubForm Ctrl 1>Form 2.SubForm Ctrl 2>Form 3.SubFormCtrl3
 ```
 
-In this example, the Main Form is the top level form in the Access client application. Das Argument path to Sub Form Control muss die Namen von Formular-und subformular-Steuerelementen, die vom Hauptformular zum Unterformular-Steuerelement führen, als Container des durch das Argument Object Name angegebenen Objekts angeben. Each subform control specified must be a control on the form that precedes it. Der Pfad muss mit einem Unterformular-Steuerelement enden.
+In this example, the Main Form is the top level form in the Access client application. Das Argument Path to Sub Form Control muss alternativ Formular- und Unterformular-Steuerelementnamen angeben, die vom Hauptformular zum Unterformular-Steuerelement führen, bei dem es sich um den Container des objekts handelt, das durch das Argument Objektname angegeben wird. Each subform control specified must be a control on the form that precedes it. Der Pfad muss mit einem Unterformular-Steuerelement enden.
 
 ## <a name="example"></a>Beispiel
 

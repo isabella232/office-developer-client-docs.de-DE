@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250014(v=office.15)
 ms:contentKeyID: 48547742
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: a85faf900860dabb809a10a92985559b7a7cf2ef
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 119ef95c34f58d0bee8c5c76beb63377bd7ac23c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32297130"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607367"
 ---
 # <a name="append-method-ado"></a>Append-Methode (ADO)
 
@@ -22,9 +22,9 @@ Ein Objekt wird einer Auflistung angefügt. Bei einer [Fields](fields-collection
 
 ## <a name="syntax"></a>Syntax
 
-*Sammlung*. Append- *Objekt*
+*Auflistung*. *Append-Objekt*
 
-*Felder*. Append *Name*, *Type*, *DefinedSize*, *Attribute*, *FieldValue*
+*fields*. Append *Name*, *Type*, *DefinedSize*, *Attrib*, *FieldValue*
 
 ## <a name="parameters"></a>Parameter
 
@@ -35,11 +35,11 @@ Ein Objekt wird einer Auflistung angefügt. Bei einer [Fields](fields-collection
 |*Objekt* |Eine Objektvariable, durch die das anzufügende Objekt dargestellt wird.|
 |*Name* |Ein **String**-Wert, der den Namen des neuen **Field**-Objekts enthält und nicht mit dem Namen eines anderen Objekts in *fields* übereinstimmen darf.|
 |*Type* |Ein [DataTypeEnum](datatypeenum.md)-Wert, dessen Standardwert **adEmpty** ist und durch den der Datentyp des neuen Felds angegeben wird. Die folgenden Datentypen werden von ADO nicht unterstützt und sollten beim Anfügen neuer Felder an ein **Recordset** nicht verwendet werden: **adIDispatch**, **adIUnknown**, **adVariant**.|
-|*DefinedSize* |Optional. A **Long** value that represents the defined size, in characters or bytes, of the new field. Der Standardwert für diesen Parameter ist vom *Typ*abgeleitet. Fields with a DefinedSize greater than 255 bytes, and treated as variable length columns. (Der Standardwert für *DefinedSize* ist nicht angegeben.)|
+|*DefinedSize* |Optional. A **Long** value that represents the defined size, in characters or bytes, of the new field. Der Standardwert für diesen Parameter wird vom *Typ* abgeleitet. Fields with a DefinedSize greater than 255 bytes, and treated as variable length columns. (Die *Standardeinstellung "DefinedSize"* ist nicht angegeben.)|
 |*Attrib* |Optional. Ein [FieldAttributeEnum](fieldattributeenum.md)-Wert, dessen Standardwert **adFldDefault** ist und durch den Attribute für das neue Feld angegeben werden. Wenn dieser Wert nicht angegeben ist, enthält das Feld von *Type* abgeleitete Werte.|
 |*FieldValue* |Optional. Ein **Variant** -Objekt, durch das der Wert für das neue Feld dargestellt wird. Wenn nichts angegeben ist, wird dem Feld ein Nullwert angefügt.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 ### <a name="parameters-collection"></a>Parameters-Auflistung
 

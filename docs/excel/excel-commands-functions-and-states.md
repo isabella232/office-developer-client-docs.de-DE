@@ -8,13 +8,13 @@ keywords:
 - Zustände [Excel 2007],Befehle [Excel 2007],Arbeitsblattfunktionen[Excel 2007],Makrovorlagenfunktionen [Excel 2007],Excel-Zustände
 ms.assetid: 20f19aa4-f184-47be-bcdd-7ded78778974
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-localization_priority: Priority
-ms.openlocfilehash: c941ba7445f1f0598bf044b5f177ad576df0137c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: a26a1bd43c67f0fcb2b7f916db8ba3f7cb9b389f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32310969"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59601394"
 ---
 # <a name="excel-commands-functions-and-states"></a>Excel-Befehle, -Funktionen und -Zustände
 
@@ -78,7 +78,7 @@ Folgendes gilt für Excel-Makrovorlagenfunktionen:
     
 - Sie werden ab Excel 2007 nicht als threadsicher eingestuft.
     
-Wie Excel eine benutzerdefinierte Funktion behandelt, was die Funktion zulässt und wie die Funktion neu berechnet wird, wird festgelegt, wenn Sie die Funktion registrieren. Wenn eine Funktion als eine Tabellenfunktion registriert ist, jedoch versucht, etwas zu tun, das nur eine Makrovorlagenfunktion durchführen kann, tritt bei dem Vorgang ein Fehler auf. Ab Excel 2007 wird ein Vorgang ebenfalls nicht ausgeführt, wenn eine als threadsicher registrierte Arbeitsblattfunktion versucht, eine Makrovorlagenfunktion aufzurufen.
+Wie Excel eine benutzerdefinierte Funktion (User-Defined Function, UDF) behandelt, was für die Funktion zugelassen wird und wie die Funktion neu berechnet wird, wird alles festgelegt, wenn Sie die Funktion registrieren. Wenn eine Funktion als eine Tabellenfunktion registriert ist, jedoch versucht, etwas zu tun, das nur eine Makrotabellenfunktion durchführen kann, tritt bei dem Vorgang ein Fehler auf. Ab Excel 2007 tritt beim Vorgang auch ein Fehler auf, wenn eine als threadsicher registrierte Tabellenfunktion versucht, eine Makrotabellenfunktion aufzurufen.
   
 Excel behandelt Microsoft Visual Basic for Applications (VBA) UDFs insofern als makrovorlagenäquivalente Funktionen, als sie auf Arbeitsbereichinformationen und den Wert nicht berechneter Zellen zugreifen können. Zudem gelten sie ab Excel 2007 nicht als threadsicher.
   
@@ -106,9 +106,9 @@ Der Benutzer kann die Bearbeitungs-, Punkt- und Ausschneiden/Kopieren-Modi lösc
     
 - Excel führt einen **AutoSpeichern**-Vorgang aus. 
     
-- Ein Zeitgeberereignis wird eingeschlossen.
+- Es wird ein Timer-Ereignis abgefangen.
     
-Das letzte Beispiel ist für Add-In-Entwickler von Bedeutung. Sie sollten die Auswirkungen der normalen Verwendbarkeit von Excel berücksichtigen, bei der häufige Zeitgeberereignistraps festgelegt und ausgeführt werden. Wenn dies ein wichtiger Bestandteil der Funktionalität Ihres Add-Ins ist, sollten Sie Benutzern eine leicht zugängliche Möglichkeit bieten, sie anzuhalten, damit sie bei Bedarf normale Ausschneiden/Kopieren-und-Einfügen-Vorgänge ausführen können.
+Das letzte Beispiel ist für Add-In-Entwickler von Bedeutung. Sie sollten die Auswirkungen der normalen Verwendbarkeit von Excel berücksichtigen, bei der häufige Zeitgeberereignistraps festgelegt und ausgeführt werden. Wenn dies ein wichtiger Bestandteil Ihrer Add-In-Funktionalität ist, sollten Sie Benutzern eine leicht zugängliche Möglichkeit bereitstellen, dies anzuhalten, damit sie auf normale Weise ausschneiden/kopieren und einfügen können.
   
 ## <a name="see-also"></a>Siehe auch
 

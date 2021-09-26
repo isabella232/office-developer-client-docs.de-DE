@@ -6,45 +6,45 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251249
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4372f1e1-f0a9-2f63-ff79-58f2afdceed5
 description: Zeigt die Zeichenformatierung für einen Textbereich im Textblock des Shapes an.
-ms.openlocfilehash: 349bdc42485aa511011aeb85a43f1ab3e4ea853d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 4171ceac4ea092b3ed70bb06c11b1113d61ef1b5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411428"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59603389"
 ---
 # <a name="style-cell-character-section"></a>Zelle "Style" (Abschnitt "Character")
 
 Zeigt die Zeichenformatierung für einen Textbereich im Textblock des Shapes an.
   
-|**Format**|**Wert**|**Automatisierungskonstante**|
+|**Style**|**Wert**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
 | Fett  <br/> | &amp;H1  <br/> |**visBold** <br/> |
 | Kursiv  <br/> | &amp;H2  <br/> |**visItalic** <br/> |
 | Unterstrichen  <br/> | &amp;H4  <br/> |**visUnderLine** <br/> |
 | Kapitälchen  <br/> | &amp;H8  <br/> |**visSmallCaps** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Zelle Style enthält Formatierungsinformationen für einen Unterbereich des Texts eines Shapes, wenn der Abschnitt Character mehrere Zeilen enthält. Andernfalls enthält diese Zelle Formatierungsinformationen für den gesamten Text des Shapes.
   
-Der Wert stellt eine Binärzahl dar, in der jedes einzelne Bit eine Zeichenformatvorlage ist. Der Wert 3 stellt beispielsweise fett und kursiv formatierten Text dar. Wenn der Wert von Style 0 ist, ist der Text überhaupt nicht formatiert. Sie können mit booleschen BIT-Funktionen auf ein bestimmtes Format \* testen. Ausführliche Informationen zu diesen Funktionen finden Sie in Ihrer Programmierungsdokumentation.
+Der Wert stellt eine Binärzahl dar, in der jedes einzelne Bit eine Zeichenformatvorlage ist. Der Wert 3 stellt beispielsweise fett und kursiv formatierten Text dar. Wenn der Wert von Style 0 ist, ist der Text überhaupt nicht formatiert. Sie können ein bestimmtes Format mit booleschen \* BIT-Funktionen testen. Ausführliche Informationen zu diesen Funktionen finden Sie in Ihrer Programmierungsdokumentation.
   
-Verwenden Sie zum Erhalten eines Verweises auf die Zelle Style anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft:** 
+Um einen Verweis auf die Zelle Style anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-| Zellenname:  <br/> | Char.Style[  *i*  ] wobei  *i*  = <1>, 2, 3...  <br/> |
+| Zellenname:  <br/> | Char.Style[  *i*  ] where  *i*  = <1>, 2, 3...  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle Style nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle Style anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionCharacter** <br/> |
-| Zeilenindex:  <br/> |**visRowCharacter**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowCharacter**  +   *i* where *i* = 0, 1, 2...  <br/> |
 | Zellenindex:  <br/> |**visCharacterStyle** <br/> |
    
  *Beispiel* 

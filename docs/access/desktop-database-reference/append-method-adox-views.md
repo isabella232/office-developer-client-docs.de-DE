@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248985(v=office.15)
 ms:contentKeyID: 48543655
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 9e1a6e14542f267af6a9f5bc58bb2d75a11aac77
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: b6dd5ffc50e487cb00022fdd96708bea713ed006
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32297046"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59607325"
 ---
 # <a name="append-method-adox-views"></a>Append-Methode (ADOX Views)
 
@@ -22,7 +22,7 @@ Erstellt ein neues [View](view-object-adox.md)-Objekt und fügt es an die [Views
 
 ## <a name="syntax"></a>Syntax
 
-*Ansichten*. Append*Name*, *Command*
+*Views*. Append *Name*, *Command*
 
 ## <a name="parameters"></a>Parameter
 
@@ -31,7 +31,7 @@ Erstellt ein neues [View](view-object-adox.md)-Objekt und fügt es an die [Views
 |*Name* |Ein **String** -Wert, der den Namen der zu erstellenden Sicht angibt.|
 |*Command* |Ein ADO-[Command](command-object-ado.md)-Objekt, das die zu erstellende Sicht darstellt.|
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Erstellt eine neue Sicht in der Datenquelle mit dem Namen und Attributen, die im **Command**-Objekt angegeben sind.
 

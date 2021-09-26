@@ -1,5 +1,5 @@
 ---
-title: Index. Primary-Eigenschaft (DAO)
+title: Index.Primary-Eigenschaft (DAO)
 TOCTitle: Primary property
 ms:assetid: 90eda1cb-cf7f-9682-9b74-81c27a37af16
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197416(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1052908
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: da0d28a5599dadc9432b38ab6155e53e884e4838
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: b80ad9b2af5dcd76bf0e830d4114564bc134e3cb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291754"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589449"
 ---
-# <a name="indexprimary-property-dao"></a>Index. Primary-Eigenschaft (DAO)
+# <a name="indexprimary-property-dao"></a>Index.Primary-Eigenschaft (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -28,9 +28,9 @@ Legt einen Wert fest, der angibt, ob ein **[Index](index-object-dao.md)** -Objek
 
 *Ausdruck* . Primäre
 
-*Ausdruck* Eine Variable, die ein **Index** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Index-Objekt** darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Ein neues **Index**-Objekt, das noch nicht an eine Auflistung angehängt wurde, hat den Lese-/Schreibzugriff für die **Primary**-Eigenschaft. Für ein vorhandenes **Index**-Objekt in einer **[Indexes](indexes-collection-dao.md)** -Auflistung ist die Eigenschaft schreibgeschützt. Wenn das **Index**-Objekt an das **[TableDef](tabledef-object-dao.md)** -Objekt angehängt wurde, aber das **TableDef**-Objekt nicht an die **[TableDefs](tabledefs-collection-dao.md)** -Auflistung angehängt wurde, besteht Lese-/Schreibzugriff für die **Index**-Eigenschaft.
 

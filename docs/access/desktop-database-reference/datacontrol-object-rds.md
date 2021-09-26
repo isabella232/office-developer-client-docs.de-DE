@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249801(v=office.15)
 ms:contentKeyID: 48547001
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 2ffe674f3aa02e5cc8b1f89375ca66b4efa623f2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: ee1f446d1665682ebe7a15c7ea46d05fcc8394ac
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294519"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589743"
 ---
 # <a name="datacontrol-object-rds"></a>DataControl-Objekt (RDS)
 
 **Gilt für**: Access 2013, Office 2013
 
-Bindet ein Datenabfrage- [Recordset](recordset-object-ado.md) -Objekt an ein oder mehrere Steuerelemente (beispielsweise ein Textfeld, ein Rastersteuerelement oder ein Kombinationsfeld), um die **Recordset** -Daten auf einer Webseite anzuzeigen.
+Bindet ein [Datenabfragerecordset](recordset-object-ado.md) an ein oder mehrere Steuerelemente (z. B. ein Textfeld, ein Rastersteuerelement oder ein Kombinationsfeld), um die **Recordset-Daten** auf einer Webseite anzuzeigen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -30,7 +30,7 @@ Bindet ein Datenabfrage- [Recordset](recordset-object-ado.md) -Objekt an ein ode
     </OBJECT>
 ```
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Klassen-ID für das **RDS.DataControl** -Objekt lautet BD96C556-65A3-11D0-983A-00C04FC29E33.
 
@@ -44,7 +44,7 @@ Alle Eigenschaften im **RDS.DataControl** -Objekt sind optional, da benutzerdefi
 > [!NOTE]
 > [!HINWEIS] Wenn Sie mehrere Ergebnisse abfragen, wird nur das erste [Recordset](recordset-object-ado.md)-Objekt zurückgegeben. Wenn mehrere Ergebnismengen erforderlich sind, weisen Sie jeder ein eigenes **DataControl** -Objekt zu. 
 > 
-> Ein Beispiel für eine Abfrage für mehrere Ergebnisse kann Folgendes sein: `"Select * from Authors, Select * from Topics"`.
+> Ein Beispiel für eine Abfrage für mehrere Ergebnisse könnte folgende sein: `"Select * from Authors, Select * from Topics"` .
 
 Wenn Sie das **RDS-DataControl** -Objekt verwenden und der Verbindungsreihenfolge "DFMode=20;" hinzufügen, kann sich die Leistung des Servers beim Aktualisieren von Daten verbessern. Bei dieser Einstellung verwendet das **RDSServer.DataFactory** -Objekt auf dem Server einen weniger ressourcenintensiven Modus. In dieser Konfiguration sind die folgenden Features jedoch nicht verfügbar:
 
@@ -81,19 +81,19 @@ Verwenden Sie ein **RDS.DataControl** -Objekt, um die Ergebnisse einer einzelnen
 
 Verwenden Sie unterschiedliche **RDS.DataControl**-Objekte, um die Ergebnisse von Mehrfachabfragen mit verschiedenen visuellen Steuerelementen zu verknüpfen. Sie verwenden z. B. eine Abfrage, um Informationen über einen Kunden zu erhalten, und eine zweite Abfrage, um Informationen über Waren zu erhalten, die der Kunde gekauft hat. Sie möchten die Ergebnisse der ersten Abfrage in drei Textfeldern und einem Kontrollkästchen anzeigen und die Ergebnisse der zweiten Abfrage in einem Rastersteuerelement. Wenn Sie das Standardgeschäftsobjekt verwenden (**RDSServer.DataFactory**), müssen Sie folgendermaßen vorgehen:
 
-  - Fügen Sie zwei **RDS hinzu. DataControl** -Objekte für Ihre Webseite.
+  - Fügen Sie zwei **RDS hinzu. DataControl-Objekte** für Ihre Webseite.
 
   - Write two queries, one for each **SQL** property of the two **RDS.DataControl** objects. One **RDS.DataControl** object will contain an SQL query requesting customer information; the second will contain a query requesting a list of merchandise the customer has purchased.
 
   - Geben Sie im OBJECT-Tag der beiden gebundenen Steuerelemente den DATAFLD-Wert an, um die Werte für die Daten festzulegen, die in den einzelnen visuellen Steuerelementen angezeigt werden sollen.
 
-Es gibt keine Anzahl von Einschränkungen für die Anzahl der **RDS. DataControl** -Objekte, die Sie über Objekttags auf einer einzelnen Webseite einbetten können.
+Es gibt keine Zählungseinschränkung für die Anzahl von **RDS. DataControl-Objekte,** die Sie über OBJECT-Tags auf einer einzelnen Webseite einbetten können.
 
-Beim Definieren des **RDS. DataControl** -Objekt auf einer Webseite verwenden Sie die Werte für **Höhe** und **Breite** ungleich NULL, wie etwa 1 (um die Aufnahme von zusätzlichem Leerraum zu vermeiden).
+Beim Definieren des **RDS. Verwenden** Sie für das DataControl-Objekt auf einer Webseite Werte ungleich Null **für Höhe** und **Breite** wie 1 (um zusätzlichen Speicherplatz zu vermeiden).
 
 Clientkomponenten von Remote Data Service sind bereits in Internet Explorer 4.0 enthalten. Aus diesem Grund ist es nicht erforderlich, einen CODEBASE-Parameter in das **RDS.DataControl** -Objekttag einzubeziehen.
 
-Mit Internet Explorer 4,0 oder höher können Sie Daten nur mithilfe von HTML-Steuerelementen und ActiveX-Steuerelementen binden, wenn Sie als Apartmentmodell-Steuerelemente markiert sind.
+Mit Internet Explorer 4.0 oder höher können Sie eine Bindung an Daten nur mithilfe von HTML-Steuerelementen und ActiveX-Steuerelementen einrichten, wenn sie als Apartmentmodellsteuerelemente gekennzeichnet sind.
 
-**Microsoft Visual Basic-Benutzer** **RDS. DataControl** wird nur in webbasierten Anwendungen verwendet. Eine Visual Basic-Clientanwendung benötigt das Objekt nicht.
+**Microsoft Visual Basic-Benutzer** The **RDS. DataControl** wird nur in webbasierten Anwendungen verwendet. Eine Visual Basic-Clientanwendung benötigt das Objekt nicht.
 

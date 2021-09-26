@@ -10,19 +10,19 @@ f1_keywords:
 - jetsql40.chm5277575
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 4fee5e9e8878274f2c20dd83a3dbedaf2903ca62
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 0a4c94e90e2c9efd29d0d07eae852ab2a2c009f2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291333"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568901"
 ---
 # <a name="insert-into-statement-microsoft-access-sql"></a>INSERT INTO-Anweisung (Microsoft Access SQL)
 
 **Gilt für**: Access 2013, Office 2013
 
-Fügt einer Tabelle einen oder mehrere Datensätze hinzu. Dies wird als Anfügeabfrage bezeichnet.
+Fügt einen Datensatz oder mehrere Datensätze einer Tabelle hinzu. Dies wird als Anfügeabfrage bezeichnet.
 
 ## <a name="syntax"></a>Syntax
 
@@ -100,7 +100,7 @@ Eine Anfügeabfrage kopiert Datensätze aus einer oder mehreren Tabellen in eine
 
 Anstatt vorhandene Datensätze aus einer anderen Tabelle anzufügen, können Sie den Wert für die einzelnen Felder in einem einzigen neuen Datensatz mit der VALUES-Klausel angeben. Wenn Sie die Feldliste auslassen, muss die VALUES-Klausel einen Wert für jedes Feld in der Tabelle enthalten. Andernfalls schlägt der INSERT-Vorgang fehl. Verwenden Sie eine zusätzliche INSERT INTO-Anweisung mit einer VALUES-Klausel für jeden zusätzlichen Datensatz, den Sie erstellen möchten.
 
-**Links zur Verfügung gestellt von: ** [UtterAccess](https://www.utteraccess.com)-Community. UtterAccess ist das führende Microsoft Access-Wiki und -Hilfeforum.
+**Links zur Verfügung gestellt von:** [UtterAccess](https://www.utteraccess.com)-Community. UtterAccess ist das führende Microsoft Access-Wiki und -Hilfeforum.
 
 - [Generieren fortlaufender Nummern für INSERT/UPDATE-Anweisungen](https://www.utteraccess.com/forum/generating-sequential-num-t446039.html)
 
