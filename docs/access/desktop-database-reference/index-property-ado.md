@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249241(v=office.15)
 ms:contentKeyID: 48544715
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 7d436ec9102c4c75688b6c6ac973ca85e8c280d0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 28769059f6a7ab2ab6edd0723ad81d1fc156e43c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291706"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626386"
 ---
 # <a name="index-property-ado"></a>Index-Eigenschaft (ADO)
 
@@ -21,7 +21,7 @@ ms.locfileid: "32291706"
 
 Gibt den Namen des Indexes an, der aktuell für das [Recordset](recordset-object-ado.md)-Objekt wirksam ist.
 
-## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
+## <a name="settings-and-return-values"></a>Einstellungen- und Rückgabewerte
 
 Legt den Indexnamen als **String**-Wert fest oder gibt den Wert zurück.
 
@@ -43,7 +43,7 @@ Wenn der Index festgelegt werden kann, ändert sich möglicherweise die aktuelle
 
 Wenn der Index festgelegt werden kann und die [LockType](locktype-property-ado.md)-Eigenschaft auf **AdLockPessimistic** oder **AdLockOptimistic** festgelegt ist, wird eine implizite [UpdateBatch](updatebatch-method-ado.md)-Operation ausgeführt. Dadurch werden die aktuellen und betroffenen Gruppen freigegeben. Alle vorhanden Filter werden freigegeben, und die aktuelle Zeilenposition wird zur ersten Zeile des neu angeordneten **Recordset** -Objekts.
 
-Die **Index** -Eigenschaft wird zusammen mit der [Seek](seek-method-ado.md)-Methode verwendet. Wenn der zugrunde liegende Anbieter die **Index** -Eigenschaft und somit die **Seek** -Methode nicht unterstützt, können Sie stattdessen die [Find](find-method-ado.md)-Methode verwenden. Bestimmen Sie, ob das **Recordset** -Objekt Indizes mit der [unterStützt](supports-method-ado.md)**(AddIndex)** -Methode unterstützt.
+Die **Index** -Eigenschaft wird zusammen mit der [Seek](seek-method-ado.md)-Methode verwendet. Wenn der zugrunde liegende Anbieter die **Index** -Eigenschaft und somit die **Seek** -Methode nicht unterstützt, können Sie stattdessen die [Find](find-method-ado.md)-Methode verwenden. Bestimmen Sie mit der [Supports](supports-method-ado.md)**(adIndex)-Methode,** ob das **Recordset-Objekt** Indizes unterstützt.
 
 Die integrierte **Index**-Eigenschaft hängt nicht mit der dynamischen [Optimize](optimize-property-dynamic-ado.md)-Eigenschaft zusammen, obwohl sich beide auf Indizes beziehen.
 

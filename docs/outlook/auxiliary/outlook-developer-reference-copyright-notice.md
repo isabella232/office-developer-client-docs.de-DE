@@ -1,21 +1,19 @@
 ---
-title: Urheberrechtshinweise für Outlook-Entwicklerreferenzen
+title: Copyright-Hinweis für Outlook Entwicklerreferenz
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
-ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3d692894-a0c1-b9dc-1196-07ecaa72afee
-description: Dieses Dokument wird in der vorliegenden Version zur Verfügung gestellt. Informationen und Ansichten in diesem Dokument, einschließlich URL und andere Internetwebsiteverweise, können sich ohne vorherige Ankündigung ändern. Das Risiko der Produktnutzung liegt allein beim Nutzer.
-ms.openlocfilehash: 6f0adc48f95fe9a5d008dc3d0c6c4298f3ceed20
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: a79db30973259d4dd935dc60151d0181a7c28034
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327776"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631217"
 ---
-# <a name="outlook-developer-reference-copyright-notice"></a>Urheberrechtshinweise für Outlook-Entwicklerreferenzen
+# <a name="outlook-2013-developer-reference-copyright-notice"></a>Copyright-Anmerkung zur Outlook 2013-Entwicklerreferenz
 
 Dieses Dokument wird in der vorliegenden Version zur Verfügung gestellt. Die Informationen und Ansichten in diesem Dokument, einschließlich URLs und anderer Verweise auf Internet-Websites, können sich ohne Ankündigung ändern. Die Verwendung erfolgt auf eigenes Risiko. 
   
@@ -29,4 +27,3 @@ Microsoft, Access, ActiveX, ClearType, Excel, FrontPage, InfoPath, IntelliSense,
   
 Alle anderen Marken sind Eigentum der jeweiligen Inhaber.
   
-

@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250253(v=office.15)
 ms:contentKeyID: 48548739
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 43ad9d5e989bc1c6f4a54fb4882cfe3c3e357fd1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 31016a76c68e6cddd58dd1e876f52ca298374890
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296423"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59622515"
 ---
 # <a name="chapter-9-data-shaping"></a>Kapitel 9: Daten modellieren
 
@@ -32,7 +32,7 @@ Weitere Informationen zur Datenstrukturierung finden Sie unter den folgenden The
 - [Zugreifen auf Zeilen in einem hierarchischen Recordset](accessing-rows-in-a-hierarchical-recordset.md)
 - [Formal Shape Grammar](formal-shape-grammar.md)
 - [Funktionen (Visual Basic for Applications)](visual-basic-for-applications-functions.md)
-- [Shape APPEND-Klausel (ADO)](shape-append-clause.md)
+- [Shape Append-Klausel (ADO)](shape-append-clause.md)
 - [Datenstrukturierung (ADO)](data-shaping.md)
-- [Shape-Befehle im allgemeinen (ADO)](shape-commands-in-general.md)
+- [Shape-Befehle im Allgemeinen (ADO)](shape-commands-in-general.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Index. Clustered-Eigenschaft (DAO)
+title: Index.Clustered-Eigenschaft (DAO)
 TOCTitle: Clustered Property
 ms:assetid: dd0876a9-b7fe-c8c8-e675-5ed758ce5bd3
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835375(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1052930
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 060963dc47c933fee903cd9b220adb45c7f63df6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 5ef312233b77170f0f6b42c9aa8e133ff4851ab3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291852"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626407"
 ---
-# <a name="indexclustered-property-dao"></a>Index. Clustered-Eigenschaft (DAO)
+# <a name="indexclustered-property-dao"></a>Index.Clustered-Eigenschaft (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -28,7 +28,7 @@ Mit dieser Eigenschaft wird ein Wert festgelegt oder zurückgegeben, der angibt,
 
 *Ausdruck* . Gruppierten
 
-*Ausdruck* Ein Ausdruck, der ein **Index** -Objekt zurückgibt.
+*Ausdruck* Ein Ausdruck, der ein **Index-Objekt** zurückgibt.
 
 ## <a name="remarks"></a>Bemerkungen
 
@@ -40,6 +40,6 @@ Bei einem neuen, noch keiner Auflistung angefügten **Index**-Objekt ist die **C
 
 > [!NOTE]
 > - Microsoft Access-Datenbanken ignorieren die **Clustered**-Eigenschaft, da das Microsoft Access-Datenbankmodul keine gruppierten Indizes unterstützt.
-> - Bei ODBC-Datenquellen gibt die **Clustered** -Eigenschaft immer **false**zurück; Es wird nicht ermittelt, ob die ODBC-Datenquelle einen gruppierten Index hat.
+> - Für ODBC-Datenquellen gibt die **Clustered-Eigenschaft** immer **False zurück;** Es wird nicht erkannt, ob die ODBC-Datenquelle über einen gruppierten Index verfügt.
 
 

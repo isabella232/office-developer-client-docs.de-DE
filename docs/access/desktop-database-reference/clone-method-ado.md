@@ -1,18 +1,18 @@
 ---
-title: Clone-Methode-ActiveX Data Objects (ADO)
+title: Clone-Methode – ActiveX Data Objects (ADO)
 TOCTitle: Clone method (ADO)
 ms:assetid: ca9b2b76-90bf-9a60-2611-3cb4977d5591
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249984(v=office.15)
 ms:contentKeyID: 48547693
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 095191bbfe55f2c38529cb1c260979c48dd2d5f1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: ec081c42a219e7073041998826b533a1b0fa6c81
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296346"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627079"
 ---
 # <a name="clone-method-ado"></a>Clone-Methode (ADO)
 
@@ -22,7 +22,7 @@ Ein [Recordset](recordset-object-ado.md)-Objektduplikat wird aus einem vorhanden
 
 ## <a name="syntax"></a>Syntax
 
-**Festgelegt** *rstDuplicate*  =  *rstOriginal*. Clone (*LockType*)
+**Set** *rstDuplicate*  =  *rstOriginal*. Clone (*LockType*)
 
 ## <a name="return-value"></a>Rückgabewert
 
@@ -52,7 +52,7 @@ Sie können nur **Recordset** -Objekte klonen, von denen Textmarken unterstützt
 
 Einige ausgelöste **Recordset** -Ereignisse werden auch in allen **Recordset** klonen ausgeführt. Die Ereignisse sind für den Klon jedoch möglicherweise nicht gültig, da sich der aktuelle Datensatz zwischen geklonten **Recordsets** unterscheiden kann.
 
-Wenn Sie z. B. einen Wert eines Felds ändern, tritt im geänderten **Recordset** und in allen Klonen ein [WillChangeField](willchangefield-and-fieldchangecomplete-events-ado.md)-Ereignis auf. Durch den *Fields*-Parameter des **WillChangeField**-Ereignisses eines geklonten **Recordsets** (in dem die Änderung nicht vorgenommen wurde) wird einfach auf die Felder des aktuellen Datensatzes des Klons verwiesen, der ein anderer Datensatz sein kann als der aktuelle Datensatz des Original**recordsets**, in dem die Änderung auftrat.
+Wenn Sie z. B. einen Wert eines Felds ändern, tritt im geänderten **Recordset** und in allen Klonen ein [WillChangeField](willchangefield-and-fieldchangecomplete-events-ado.md)-Ereignis auf. Durch den *Fields*-Parameter des **WillChangeField**-Ereignisses eines geklonten **Recordsets** (in dem die Änderung nicht vorgenommen wurde) wird einfach auf die Felder des aktuellen Datensatzes des Klons verwiesen, der ein anderer Datensatz sein kann als der aktuelle Datensatz des Original **recordsets**, in dem die Änderung auftrat.
 
 In der folgenden Tabelle wird eine vollständige Liste aller **Recordset**-Ereignisse bereitgestellt, und es wird angegeben, ob sie gültig sind und für mit der **Clone**-Methode generierte Recordsetklone ausgelöst werden.
 

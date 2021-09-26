@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249354(v=office.15)
 ms:contentKeyID: 48545192
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: f305cd5a9af2c4baae16c783996257fe59067032
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 92e6a8a50b3f65dcea1fa3621e881ef8e5abd731
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296283"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627051"
 ---
 # <a name="clustered-property-adox"></a>Clustered-Eigenschaft (ADOX)
 
@@ -21,7 +21,7 @@ ms.locfileid: "32296283"
 
 Gibt an, ob der Index gruppiert ist.
 
-## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
+## <a name="settings-and-return-values"></a>Einstellungen- und Rückgabewerte
 
 Legt einen booleschen Wert fest und gibt diesen zurück.
 

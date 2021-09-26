@@ -1,5 +1,5 @@
 ---
-title: Field. CollatingOrder-Eigenschaft (DAO)
+title: Field.CollatingOrder-Eigenschaft (DAO)
 TOCTitle: CollatingOrder Property
 ms:assetid: a2607ace-a660-899b-eae8-4612ce2f87f8
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff820980(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1052897
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 3d016d779472ec9809d3ac5c77158c2c1d994f3c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c53fcd08555f80eb54a47c146c7183def57e100c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293126"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626722"
 ---
-# <a name="fieldcollatingorder-property-dao"></a>Field. CollatingOrder-Eigenschaft (DAO)
+# <a name="fieldcollatingorder-property-dao"></a>Field.CollatingOrder-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -29,7 +29,7 @@ Gibt einen Wert zurück, der die Sequenz der Sortierreihenfolge im Text für den
 
 *Ausdruck* . CollatingOrder
 
-*Ausdruck* Eine Variable, die ein **Field** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Field**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 
@@ -60,7 +60,7 @@ Der Rückgabewert ist ein **Long**-Wert oder eine Konstante, die einem der folge
 <td><p>Chinesisch (Vereinfacht)</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>dbSortChineseTraditional</strong></p></td>
+<td><p><strong>dbSortChinese Auszüge</strong></p></td>
 <td><p>Traditionelles Chinesisch</p></td>
 </tr>
 <tr class="odd">
@@ -84,7 +84,7 @@ Der Rückgabewert ist ein **Long**-Wert oder eine Konstante, die einem der folge
 <td><p>Hebräisch</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>dbSortHungarian</strong></p></td>
+<td><p><strong>dbSortHung über</strong></p></td>
 <td><p>Ungarisch</p></td>
 </tr>
 <tr class="odd">
@@ -120,12 +120,12 @@ Der Rückgabewert ist ein **Long**-Wert oder eine Konstante, die einem der folge
 <td><p>Paradox Schwedisch oder Finnisch</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>dbSortPolish</strong></p></td>
+<td><p><strong>dbSortDrossel</strong></p></td>
 <td><p>Polnisch</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbSortSlovenian</strong></p></td>
-<td><p>Slowenisch</p></td>
+<td><p>Slovenian</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbSortSpanish</strong></p></td>

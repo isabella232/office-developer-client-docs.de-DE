@@ -4,19 +4,19 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3ff1f2e1-bdfe-2766-3c0f-0f299cc256e9
-description: In diesem Thema wird die XML-Schemadefinition für das Visio 2013-Dateiformat veranschaulicht.
-ms.openlocfilehash: 1822134546b730ceecb2f30183b4a8c325f37906
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+description: In diesem Thema wird die XML-Schemadefinition für das Dateiformat Visio 2013 gezeigt.
+ms.openlocfilehash: 88e6ed519ef87cf4289cf8faef7ee354428864c3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539082"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627534"
 ---
 # <a name="schema-map-visio-xml"></a>Schemazuordnung (Visio XML)
 
-In diesem Thema wird die XML-Schemadefinition für das Visio 2013-Dateiformat veranschaulicht.
+In diesem Thema wird die XML-Schemadefinition für das Dateiformat Visio 2013 gezeigt.
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>

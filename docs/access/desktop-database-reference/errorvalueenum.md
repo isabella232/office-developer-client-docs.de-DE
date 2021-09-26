@@ -1,18 +1,18 @@
 ---
-title: ErrorValueEnum (Access Desktop Database Reference)
+title: ErrorValueEnum (Access-Desktopdatenbankreferenz)
 TOCTitle: ErrorValueEnum
 ms:assetid: 2af99f32-6004-1225-367c-45d693f447b8
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249058(v=office.15)
 ms:contentKeyID: 48543921
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: c2d4207f157d361f3b8aba2ff80f46d06b2f328e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 958cb01ebe84a7295df23dcdede346ce767cd0f9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293322"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626764"
 ---
 # <a name="errorvalueenum"></a>ErrorValueEnum
 
@@ -26,10 +26,10 @@ Es werden drei Fehlernummerntypen aufgeführt:
 
 - Negative Dezimalzahl - die Dezimalübersetzung der vollständigen Fehlernummer.
 
-- Hexadezimal - die hexadezimale Darstellung der vollständigen Fehlernummer. Der Windows-Einrichtungscode befindet sich in der vierten Ziffer. Der Ortscode für ADO-Fehlernummern ist *A*. Beispiel: 0x800***ein***0E7B.
+- Hexadezimal – die hexadezimale Darstellung der vollständigen Fehlernummer. Der Windows-Einrichtungscode befindet sich in der vierten Ziffer. *A* ist der Einrichtungscode für ADO-Fehlernummern. Beispielsweise: 0x800 ***A*** 0E7B.
 
 > [!NOTE]
-> OLE DB-Fehler können an Ihre ADO-Anwendung übergeben werden. Diese können in der Regel von einem Windows-Einrichtungscode von *4* identifiziert werden. Beispiel: 0x800_**4**_.... Weitere Informationen zu diesen Nummern finden Sie in Kapitel 16 der *OLE DB Programmer es Reference.*
+> OLE DB-Fehler können an Ihre ADO-Anwendung übergeben werden. Diese können in der Regel von einem Windows-Einrichtungscode von *4* identifiziert werden. Beispiel: 0x800_ **4** _.... Weitere Informationen zu diesen Nummern finden Sie in Kapitel 16 der *OLE DB-Programmierreferenz.*
 
 <br/>
 
@@ -80,7 +80,7 @@ Es werden drei Fehlernummerntypen aufgeführt:
 <td><p>3724<br />
 -2146824564<br />
 0x800A0E8C</p></td>
-<td><p>Der Datenwert kann aus anderen Gründen als einem Vorzeichenkonflikt oder einem Datenüberlauf nicht konvertiert werden. Beispielsweise hätte die Konvertierung Daten abgeschnitten.</p></td>
+<td><p>Der Datenwert kann aus anderen Gründen als einem Vorzeichenkonflikt oder einem Datenüberlauf nicht konvertiert werden. Beispielsweise könnten bei der Konvertierung Daten abgeschnitten werden.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adErrCantCreate</strong></p></td>
@@ -150,7 +150,7 @@ Es werden drei Fehlernummerntypen aufgeführt:
 <td><p>3749<br />
 -2146824539<br />
 0x800A0EA5</p></td>
-<td><p>Fehler beim Aktualisieren von Feldern. Überprüfen Sie die <strong>Status</strong>-Eigenschaft der einzelnen Feldobjekte, um weitere Informationen zu erhalten.</p></td>
+<td><p>Feldaktualisierung schlug fehl. Überprüfen Sie die <strong>Status</strong>-Eigenschaft der einzelnen Feldobjekte, um weitere Informationen zu erhalten.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adErrIllegalOperation</strong></p></td>
@@ -185,14 +185,14 @@ Es werden drei Fehlernummerntypen aufgeführt:
 <td><p>3709<br />
 -2146824579<br />
 0x800A0E7D</p></td>
-<td><p>Die Verbindung kann nicht für diesen Vorgang verwendet werden. Sie ist geschlossen oder in diesem Zusammenhang ungültig.</p></td>
+<td><p>Die Verbindung kann nicht für diesen Vorgang verwendet werden. Die Verbindung ist entweder geschlossen oder in diesem Kontext ungültig.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adErrInvalidParamInfo</strong></p></td>
 <td><p>3708<br />
 -2146824580<br />
 0x800A0E7C</p></td>
-<td><p>Das <strong>Parameter</strong> -Objekt ist nicht ordnungsgemäß definiert. Es wurden inkonsistente oder unvollständige Informationen bereitgestellt.</p></td>
+<td><p>Das <strong>Parameter</strong> -Objekt ist nicht ordnungsgemäß definiert. Inkonsistente oder unvollständige Informationen wurden eingegeben.  </p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adErrInvalidTransaction</strong></p></td>
@@ -248,7 +248,7 @@ Es werden drei Fehlernummerntypen aufgeführt:
 <td><p>3367<br />
 -2146824921<br />
 0x800A0D27</p></td>
-<td><p>Das Objekt ist bereits in der Auflistung vorhanden. Anfügen nicht möglich.</p></td>
+<td><p>Objekt befindet sich bereits in der Auflistung. Anfügen nicht möglich.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adErrObjectNotSet</strong></p></td>
@@ -283,7 +283,7 @@ Es werden drei Fehlernummerntypen aufgeführt:
 <td><p>3734<br />
 -2146824554<br />
 0x800A0E96</p></td>
-<td><p>Der Vorgang kann nicht ausgeführt werden. Anbieter kann nicht genügend Speicherplatz abrufen.</p></td>
+<td><p>Vorgang kann nicht ausgeführt werden. Anbieter kann nicht genügend Speicherplatz abrufen.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adErrPermissionDenied</strong></p></td>
@@ -304,7 +304,7 @@ Es werden drei Fehlernummerntypen aufgeführt:
 <td><p>3706<br />
 -2146824582<br />
 0x800A0E7A</p></td>
-<td><p>Der Anbieter wurde nicht gefunden. Er ist möglicherweise nicht ordnungsgemäß installiert.</p></td>
+<td><p>Anbieter kann nicht gefunden werden. Er ist möglicherweise nicht ordnungsgemäß installiert.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adErrReadFile</strong></p></td>
@@ -318,7 +318,7 @@ Es werden drei Fehlernummerntypen aufgeführt:
 <td><p>3731<br />
 -2146824557<br />
 0x800A0E93</p></td>
-<td><p>Der Kopiervorgang kann nicht ausgeführt werden. Das durch die Ziel-URL genannte Objekt ist bereits vorhanden. Geben Sie <strong>AdCopyOverwrite</strong> an, um das Objekt zu ersetzen.</p></td>
+<td><p>Kopiervorgang kann nicht ausgeführt werden. Von Ziel-URL benanntes Objekt ist bereits vorhanden. Geben Sie <strong>AdCopyOverwrite</strong> an, um das Objekt zu ersetzen.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adErrResourceLocked</strong></p></td>
@@ -374,7 +374,7 @@ Es werden drei Fehlernummerntypen aufgeführt:
 <td><p>3736<br />
 -2146824552<br />
 0x800A0E98</p></td>
-<td><p>Der Vorgang konnte nicht abgeschlossen werden, und der Status ist nicht verfügbar. Das Feld ist möglicherweise nicht verfügbar oder der Vorgang wurde nicht ausgeführt.</p></td>
+<td><p>Vorgang konnte nicht abgeschlossen werden und der Status ist nicht verfügbar. Das Feld ist möglicherweise nicht verfügbar oder der Vorgang wurde nicht ausgeführt.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adErrUnsafeOperation</strong></p></td>
@@ -402,7 +402,7 @@ Es werden drei Fehlernummerntypen aufgeführt:
 <td><p>3733<br />
 -2146824555<br />
 0x800A0E95</p></td>
-<td><p>Der Anbieter konnte das von der URL angegebene Speichergerät nicht finden. Stellen Sie sicher, dass die URL in der richtigen Schreibweise eingegeben wird.</p></td>
+<td><p>Anbieter findet das von der URL angegebene Speichergerät nicht. Stellen Sie sicher, dass die URL in der richtigen Schreibweise eingegeben wird.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adErrWriteFile</strong></p></td>
@@ -429,7 +429,7 @@ Es werden drei Fehlernummerntypen aufgeführt:
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
 Paket: **com.ms.wfc.data**
 
@@ -446,67 +446,67 @@ Nur die folgenden Teilmengen von ADO/WFC-Entsprechungen sind definiert.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums. ERRORVALUE. BOUNDTOCOMMAND</p></td>
+<td><p>AdoEnums.ErrorValue.BOUNDTOCOMMAND</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. ERRORVALUE. dataKONVERTIERUNG</p></td>
+<td><p>AdoEnums.ErrorValue.DATACONVERSION</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. ERRORVALUE. FEATURENOTAVAILABLE</p></td>
+<td><p>AdoEnums.ErrorValue.FEATURENOTAVAILABLE</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. ERRORVALUE. ILLEGALOPERATION</p></td>
+<td><p>AdoEnums.ErrorValue.ILLEGALOPERATION</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. ERRORVALUE. inTRANSACTion</p></td>
+<td><p>AdoEnums.ErrorValue.INTRANSACTION</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. ERRORVALUE. INVALIDARGUMENT</p></td>
+<td><p>AdoEnums.ErrorValue.INVALIDARGUMENT</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. ERRORVALUE. INVALIDCONNECTION</p></td>
+<td><p>AdoEnums.ErrorValue.INVALIDCONNECTION</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. ERRORVALUE. INVALIDPARAMINFO</p></td>
+<td><p>AdoEnums.ErrorValue.INVALIDPARAMINFO</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. ERRORVALUE. ITEMNOTFOUND</p></td>
+<td><p>AdoEnums.ErrorValue.ITEMNOTFOUND</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. ERRORVALUE. NOCURRENTRECORD</p></td>
+<td><p>AdoEnums.ErrorValue.NOCURRENTRECORD</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. ERRORVALUE. NOTEXECUTING</p></td>
+<td><p>AdoEnums.ErrorValue.NOTEXECUTING</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. ERRORVALUE. NOTREENTRANT</p></td>
+<td><p>AdoEnums.ErrorValue.NOTREENTRANT</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. ERRORVALUE. objectGESCHLOSSEN</p></td>
+<td><p>AdoEnums.ErrorValue.OBJECTCLOSED</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. ERRORVALUE. OBJECTINCOLLECTION</p></td>
+<td><p>AdoEnums.ErrorValue.OBJECTINCOLLECTION</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. ERRORVALUE. OBJECTNOTSET</p></td>
+<td><p>AdoEnums.ErrorValue.OBJECTNOTSET</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. ERRORVALUE. objectOPEN</p></td>
+<td><p>AdoEnums.ErrorValue.OBJECTOPEN</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. ERRORVALUE. OPERATIONCANCELLED</p></td>
+<td><p>AdoEnums.ErrorValue.OPERATIONCANCELLED</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. ERRORVALUE. PROVIDERNOTFOUND</p></td>
+<td><p>AdoEnums.ErrorValue.PROVIDERNOTFOUND</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. ERRORVALUE. STILLCONNECTING</p></td>
+<td><p>AdoEnums.ErrorValue.STILLCONNECTING</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. ERRORVALUE. STILLEXECUTING</p></td>
+<td><p>AdoEnums.ErrorValue.STILLEXECUTING</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. ERRORVALUE. UNSAFEOPERATION</p></td>
+<td><p>AdoEnums.ErrorValue.UNSAFEOPERATION</p></td>
 </tr>
 </tbody>
 </table>

@@ -1,31 +1,31 @@
 ---
-title: Bereitstellen von Benachrichtigungen für Store Anbieter
+title: Bereitstellen von Benachrichtigungen für Nachrichtenanbieter Store
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: c0e1cdba-ceb6-4a3f-8449-79d1a0ad1adf
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: a28e6e6f008517a6b1c2c82dfa391b478963880f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: aaa51d12ee6959d4ec8f75c84ce0cf4124922300
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33419933"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59624376"
 ---
-# <a name="providing-notifications-for-message-store-providers"></a>Bereitstellen von Benachrichtigungen für Store Anbieter
+# <a name="providing-notifications-for-message-store-providers"></a>Bereitstellen von Benachrichtigungen für Nachrichtenanbieter Store
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Obwohl Benachrichtigungen optional sind, sind sie ein sehr wichtiger Bestandteil eines guten Nachrichtenspeicheranbieters. Clientanwendungen und der MAPI-Spooler sind auf Benachrichtigungen des Nachrichtenspeicheranbieters angewiesen, um eine gute Leistung beim Senden ausgehender Nachrichten oder beim Empfangen eingehender Nachrichten zu erzielen. Clients und der MAPI-Spooler können ohne Benachrichtigungen vom Nachrichtenspeicheranbieter funktionieren, aber sie können Benutzer nicht über Änderungen im Nachrichtenspeicher informieren, ohne sie. In der Regel bedeutet dies, dass Benutzer erst dann sehen können, wenn eine neue Nachricht eingetroffen ist, bis ihr Client als Nächstes den Empfangsordner des Nachrichtenspeichers öffnet.
+Obwohl Benachrichtigungen optional sind, sind sie ein sehr wichtiger Bestandteil eines guten Nachrichtenspeicheranbieters. Clientanwendungen und der MAPI-Spooler verwenden Benachrichtigungen vom Nachrichtenspeicheranbieter, um eine gute Leistung beim Senden ausgehender Nachrichten oder beim Empfangen eingehender Nachrichten zu erzielen. Clients und der MAPI-Spooler können funktionieren, ohne Benachrichtigungen vom Nachrichtenspeicheranbieter zu erhalten, aber sie können die Benutzer nicht über Änderungen im Nachrichtenspeicher informieren. In der Regel bedeutet dies, dass Benutzer nicht sehen können, dass eine neue Nachricht angekommen ist, bis ihr Client den Empfangsordner des Nachrichtenspeichers das nächste Mal öffnet.
   
-Clients registrieren sich für Benachrichtigungen, indem sie die [IMsgStore::Advise-Methode](imsgstore-advise.md) aufrufen. Der Client übergibt eine [IMAPIAdviseSink : IUnknown-Schnittstelle,](imapiadvisesinkiunknown.md) eine Bitmaske, die angibt, welche Art von Benachrichtigungen der Client empfangen möchte, und eine **EntryID,** die angibt, für welches Objekt im Nachrichtenspeicher die **Advise-Anforderung** gilt. Wenn relevante Ereignisse im Objekt auftreten (z. B. wenn eine neue Nachricht im Empfangsordner im Nachrichtenspeicher eintrifft), sollte der Nachrichtenspeicheranbieter oder das Objekt selbst die [IMAPIAdviseSink::OnNotify-Methode](imapiadvisesink-onnotify.md) für alle **IMAPIAdviseSink-Objekte** aufrufen, die für diesen Ereignistyp registriert wurden. 
+Clients registrieren sich für Benachrichtigungen, indem sie die [IMsgStore::Advise-Methode](imsgstore-advise.md) aufrufen. Der Client übergibt eine [IMAPIAdviseSink : IUnknown-Schnittstelle,](imapiadvisesinkiunknown.md) eine Bitmaske, die angibt, welche Art von Benachrichtigungen der Client empfangen möchte, und eine **EntryID,** die angibt, für welches Objekt im Nachrichtenspeicher die **Empfehlungsanforderung** gilt. Wenn relevante Ereignisse im Objekt auftreten (z. B. wenn eine neue Nachricht im Empfangsordner im Nachrichtenspeicher eintrifft), sollte der Nachrichtenspeicheranbieter oder das Objekt selbst die [IMAPIAdviseSink::OnNotify-Methode](imapiadvisesink-onnotify.md) für alle **IMAPIAdviseSink-Objekte** aufrufen, die für diesen Ereignistyp registriert wurden. 
   
-Auch wenn ihr Nachrichtenspeicheranbieter andere MAPI-Komponenten niemals über Änderungen im Nachrichtenspeicher benachrichtigt, sollte er dennoch **IMsgStore::Advise** implementieren, um MAPI_E_NO_SUPPORT. Dadurch werden andere Komponenten informiert, dass sie keine Benachrichtigungen vom Nachrichtenspeicheranbieter erwarten. 
+Auch wenn Ihr Nachrichtenspeicheranbieter andere MAPI-Komponenten nie über Änderungen im Nachrichtenspeicher benachrichtigt, sollte er **dennoch IMsgStore::Advise** implementieren, um MAPI_E_NO_SUPPORT zurückzugeben. Dadurch werden andere Komponenten informiert, die keine Benachrichtigungen vom Nachrichtenspeicheranbieter erwarten. 
   
 ## <a name="see-also"></a>Siehe auch
 

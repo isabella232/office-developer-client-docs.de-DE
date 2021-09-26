@@ -1,5 +1,5 @@
 ---
-title: TableDef. RefreshLink-Methode (DAO)
+title: TableDef.RefreshLink-Methode (DAO)
 TOCTitle: RefreshLink Method
 ms:assetid: 9f0059c6-3b7b-57e3-7527-ef674ad9417d
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff198349(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1052980
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: ba9375da16cebd7db7a29fe20fca6f8b395a73a2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 3092a623dc84726c4f2d217c0eaea40546b48627
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314280"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631694"
 ---
-# <a name="tabledefrefreshlink-method-dao"></a>TableDef. RefreshLink-Methode (DAO)
+# <a name="tabledefrefreshlink-method-dao"></a>TableDef.RefreshLink-Methode (DAO)
 
 **Gilt für**: Access 2013, Office 2013
  
@@ -28,7 +28,7 @@ Aktualisiert die Verbindungsinformation für eine verknüpfte Tabelle (gilt nur 
 
 *Ausdruck* . RefreshLink
 
-*Ausdruck* Eine Variable, die ein **TableDef** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **TableDef**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 

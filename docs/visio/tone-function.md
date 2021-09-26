@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c2d6a7dd-9f15-27bd-9623-2a047683ff98
 description: Ändert die Farbe, indem die Sättigung um den im int-Parameter angegebenen Wert verringert wird.
-ms.openlocfilehash: c3352d4c15671244d0fc4701f2c26b4e0c2ea54d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 2ea8e6af43fe199e9c7bff18d1120b1e24d08eca
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33434375"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627275"
 ---
 # <a name="tone-function"></a>TONE Function
 
@@ -33,8 +33,8 @@ TONE(** *color* **, ** *int* ** )
 
  **RGB**
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die unteren und oberen Grenzwerte der Sättigung liegen jeweils bei 0 und 240. Es gibt keine Beschränkung für die Größe der ganzen Zahl, die Sie für den  _int-Parameter_ übergeben können, aber die Sättigung überschreitet diese Grenzwerte nie. 
+Die unteren und oberen Grenzwerte der Sättigung liegen jeweils bei 0 und 240. Es gibt keine Beschränkung für die Größe der ganzen Zahl, die Sie für den  _int-Parameter_ übergeben können, aber die Sättigung überschreitet diese Grenzwerte niemals. 
   
 

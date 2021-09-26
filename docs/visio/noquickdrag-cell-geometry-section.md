@@ -6,29 +6,29 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm80004
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8491f459-9de2-8e75-5532-7d3bd0986734
-description: Bestimmt, ob ein Shape ausgewählt oder gezogen werden kann, wenn der Benutzer auf den gefüllten Bereich klickt, der durch den Abschnitt Geometry definiert ist.
-ms.openlocfilehash: d60268685d93ae88abb2840f62b093db1e688c2f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Bestimmt, ob ein Shape ausgewählt oder gezogen werden kann, wenn der Benutzer auf den im Abschnitt Geometrie definierten ausgefüllten Bereich klickt.
+ms.openlocfilehash: 052080f2334eb776e8a50d608724a6faa445d2ab
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33417721"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627870"
 ---
 # <a name="noquickdrag-cell-geometry-section"></a>Zelle "NoQuickDrag" (Abschnitt "Geometrie")
 
-Bestimmt, ob ein Shape ausgewählt oder gezogen werden kann, wenn der Benutzer auf den gefüllten Bereich klickt, der durch den Abschnitt Geometry definiert ist.
+Bestimmt, ob ein Shape ausgewählt oder gezogen werden kann, wenn der Benutzer auf den im Abschnitt Geometrie definierten ausgefüllten Bereich klickt.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie zum Erhalten eines Verweises auf die Zelle NoQuickDrag anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft:** 
+Um einen Verweis auf die Zelle "NoQuickDrag" anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Geometry  *i*  . NoQuickDrag, wobei * i * - <1>, 2, 3...  <br/> |
+|Zellenname:  <br/> |Geometry  *i*  . NoQuickDrag, where * i * - <1>, 2, 3...  <br/> |
    
-Um einen Verweis auf die Zelle NoQuickDrag nach Index aus einem Programm zu erhalten, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
+Verwenden Sie zum Abrufen eines Verweises auf die Zelle "NoQuickDrag" anhand des Indexes eines Programms die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|

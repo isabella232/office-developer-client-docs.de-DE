@@ -1,20 +1,20 @@
 ---
-title: Field. DefaultValue-Eigenschaft (DAO)
+title: Field.DefaultValue-Eigenschaft (DAO)
 TOCTitle: DefaultValue Property
 ms:assetid: 8a1c558b-c8f6-757d-c595-4e50b9b6ae3f
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197092(v=office.15)
 ms:contentKeyID: 48546185
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 18fb4d3a4427db2b407b6a20507339fe83665c97
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: ec9469e2e3d10e9f24def7dbc15e3cecf545328d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293119"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626673"
 ---
-# <a name="fielddefaultvalue-property-dao"></a>Field. DefaultValue-Eigenschaft (DAO)
+# <a name="fielddefaultvalue-property-dao"></a>Field.DefaultValue-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -24,9 +24,9 @@ Legt den Standardwert eines **[Field](field-object-dao.md)** -Objekts fest oder 
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . DefaultValue
+*Ausdruck* . Defaultvalue
 
-*Ausdruck* Eine Variable, die ein **Field** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Field**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 
@@ -34,7 +34,7 @@ Die Einstellung oder der Rückgabewert ist vom Datentyp **String** und kann maxi
 
 
 > [!NOTE]
-> [!HINWEIS] Sie können die **DefaultValue**-Eigenschaft eines **Field**-Objekts für ein [TableDef](tabledef-object-dao.md) -Objekt auch auf einen speziellen Wert, "GenUniqueID( )" genannt, festlegen. Dabei wird diesem Feld eine Zufallszahl zugewiesen, sobald ein neuer Datensatz hinzugefügt oder erstellt wird, wodurch jeder Datensatz einen eindeutigen Bezeichner erhält. Die [Type](field-type-property-dao.md)-Eigenschaft des Felds muss ein **Long**-Wert sein.
+> [!HINWEIS] Sie können die **DefaultValue**-Eigenschaft eines **Field**-Objekts für ein [TableDef](tabledef-object-dao.md) -Objekt auch auf einen speziellen Wert, "GenUniqueID( )" genannt, festlegen. Dabei wird diesem Feld eine Zufallszahl zugewiesen, sobald ein neuer Datensatz hinzugefügt oder erstellt wird, wodurch jeder Datensatz einen eindeutigen Bezeichner erhält. Die [Type](field-type-property-dao.md) -Eigenschaft des Felds muss ein **Long**-Wert sein.
 
 
 Die Verfügbarkeit der **DefaultValue**-Eigenschaft hängt vom Objekt ab, in dem die **Fields**-Auflistung enthalten ist (siehe folgende Tabelle).

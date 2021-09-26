@@ -1,18 +1,18 @@
 ---
-title: Save-Methode-ActiveX Data Objects (ADO)
+title: Save-Methode – ActiveX Data Objects (ADO)
 TOCTitle: Save method (ADO)
 ms:assetid: 02dab13b-f947-b96d-46ea-0def3ed8f28f
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248793(v=office.15)
 ms:contentKeyID: 48542968
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 0a3762c3d4fdb8cc833259b0435b225690d677ce
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: de794cac384b31fd2f81f8f2232c6119b862c927
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308918"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631720"
 ---
 # <a name="save-method-ado"></a>Save-Methode (ADO)
 
@@ -22,7 +22,7 @@ Speichert das [Recordset](recordset-object-ado.md)-Objekt in einer Datei oder in
 
 ## <a name="syntax"></a>Syntax
 
-*Recordset*. *Ziel*speichern, *PersistFormat*
+*Recordset*. *Save Destination*, *PersistFormat*
 
 ## <a name="parameters"></a>Parameter
 
@@ -56,7 +56,7 @@ Wenn ein **Recordset** -Objekt mit der auf **adUseServer** festgelegten **Cursor
 > [!NOTE]
 > [!HINWEIS] Das Speichern eines **Recordset** -Objekt mit **Fields** vom Typ **adVariant**, **adIDispatch** oder **adIUnknown** wird von ADO nicht unterstützt und kann zu unvorhersehbaren Ergebnissen führen.
 
-Nur **Filter** in Form von Kriterien-Zeichenfolgen (z. \> b. OrderDate "12/31/1999") wirken sich auf den Inhalt eines beibehaltenen **Recordsets**aus. Filter, die mit einem Array mit **Bookmarks** oder mithilfe eines Werts aus **FilterGroupEnum** erstellt wurden, wirken sich nicht auf den Inhalt des gespeicherten **Recordset**-Objekts aus. Diese Regeln werden auf **Recordset**-Objekte angewendet, die mit einem clientseitigen oder einem serverseitigen Cursor erstellt wurden.
+Nur **Filter** in Form von Kriterienzeichenfolgen (z. B. OrderDate \> '31.12.1999') wirken sich auf den Inhalt eines permanenten **Recordsets** aus. Filter, die mit einem Array mit **Bookmarks** oder mithilfe eines Werts aus **FilterGroupEnum** erstellt wurden, wirken sich nicht auf den Inhalt des gespeicherten **Recordset**-Objekts aus. Diese Regeln werden auf **Recordset**-Objekte angewendet, die mit einem clientseitigen oder einem serverseitigen Cursor erstellt wurden.
 
 Da der *Destination*-Parameter alle Objekte akzeptiert, die die OLE DB IStream-Schnittstelle unterstützen, können Sie ein **Recordset**-Objekt direkt im ASP Response-Objekt speichern. Weitere Einzelheiten finden Sie unter [Speicherszenario für XML-Recordset](xml-recordset-persistence-scenario.md).
 

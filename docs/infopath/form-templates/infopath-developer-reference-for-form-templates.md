@@ -7,17 +7,17 @@ ms.date: 11/16/2019
 ms.audience: Developer
 ms.topic: overview
 keywords:
-- Formularvorlagen [infopath 2007],Formularvorlagen für verwalteten Code [InfoPath 2007],Verweis [InfoPath 2007],verwalteter Code [InfoPath 2007],InfoPath 2007, Referenz
+- formular templates [infopath 2007],managed code form templates [InfoPath 2007],reference [InfoPath 2007],managed code [InfoPath 2007],InfoPath 2007, reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7610acc3-f705-4a38-968c-5b3a358efc90
 description: Willkommen bei der InfoPath 2013-Entwicklerreferenz für Formularvorlagen. Diese Dokumentation bietet Übersichten, Programmieraufgaben und Referenzinformationen zu Klassenbibliotheken, die Ihnen helfen sollen, InfoPath-Formularvorlagen zu erstellen, die in Visual Basic oder Visual C# geschriebene Geschäftslogik enthalten.
-ms.openlocfilehash: 62ec8c9a8b56fe53933dec8235173a451a706f36
-ms.sourcegitcommit: 007aa2ceb4f569201c3f4372de5c83b6c61f8875
+ms.openlocfilehash: ffd9fe60eab96774b2abe5fe4e357809b7699d86
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43102940"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631272"
 ---
 # <a name="infopath-developer-reference-for-form-templates"></a>InfoPath-Entwicklerreferenz für Formularvorlagen
 

@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm7496
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 086993095daef3ff4ad87aed9f572a09124a9d31
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 47d63dd88226d74b1138b59ce441efc0ef4ce588
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292374"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59622256"
 ---
 # <a name="findrecord-macro-action"></a>FindRecord-Makroaktion
 
@@ -42,7 +42,7 @@ Die **SuchenDatensatz**-Aktion hat die folgenden Argumente.
 <tbody>
 <tr class="odd">
 <td><p><strong>Suchen nach</strong></p></td>
-<td><p>Gibt die Daten an, die im Datensatz gesucht werden sollen. Geben Sie den Text, die Zahl oder das Datum ein, die Sie suchen möchten, oder geben Sie einen Ausdruck ein, dem ein<strong>=</strong>Gleichheitszeichen () vorangestellt ist, im Feld <strong>Suchen</strong> nach im Abschnitt <strong>aktionsArgumente</strong> des Bereichs Makro-Generator. Sie können Platzhalterzeichen verwenden. Dies ist ein erforderliches Argument.</p></td>
+<td><p>Gibt die Daten an, die Sie im Datensatz suchen möchten. Geben Sie den Text, die Nummer oder das Datum, den Sie suchen möchten, oder geben Sie einen Ausdruck ein, dem ein Gleichheitszeichen ( ) vorangestellt ist, <strong>=</strong> im Abschnitt <strong>"Aktionsargumente"</strong> im Bereich "Makro-Generator" im Feld <strong>"Suchen nach".</strong> Sie können Platzhalterzeichen verwenden. Dies ist ein erforderliches Argument.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Match</strong></p></td>
@@ -58,8 +58,8 @@ Die **SuchenDatensatz**-Aktion hat die folgenden Argumente.
 </tr>
 <tr class="odd">
 <td><p><strong>Wie formatiert</strong></p></td>
-<td><p>Gibt an, ob die Suche formatierte Daten einschließt. Klicken Sie auf <strong>Ja</strong> (Microsoft Office Access 2007 sucht nach den Daten, wie sie im Feld formatiert sind und angezeigt werden) oder auf <strong>Nein</strong> (Access sucht nach den Daten, wie sie in der Datenbank gespeichert sind, was nicht immer mit der Anzeige der Daten übereinstimmt). Die Standardeinstellung ist <strong>Nein</strong>. Verwenden Sie dieses Feature, um die Suche auf Daten in einem bestimmten Format zu beschränken. Klicken Sie beispielsweise auf <strong>Ja</strong>, und geben Sie <strong>1,234</strong> für das Argument <strong>Suchen nach</strong> ein, um den Wert 1,234 in einem Feld zu suchen, das so formatiert ist, dass es Kommas enthalten kann. Klicken Sie auf <strong>Nein</strong>, wenn Sie <strong>1234</strong> eingeben möchten, um in diesem Feld nach den Daten zu suchen. Wenn Sie nach Datumsangaben suchen möchten, klicken Sie auf <strong>Ja</strong> , um ein Datum genau nach der Formatierung zu suchen, beispielsweise 08-July-2003. Wenn Sie auf <strong>Nein</strong>klicken, geben Sie das Datum für das Argument <strong>Suchen</strong> nach in dem Format ein, das in den regionalen Einstellungen in der Windows-Systemsteuerung festgelegt ist. Dieses Format wird im Feld <strong>Kurzes Datumsformat</strong> auf der Registerkarte <strong>Datum</strong> in den Ländereinstellungen angezeigt. Wenn beispielsweise das Feld <strong>Kurzes Datumsformat</strong> auf <strong>M/d/yy</strong>festgelegt ist, können Sie 7/8/03 eingeben, und Access findet alle Einträge in einem Date-Feld, die dem 8. Juli 2003 entsprechen, unabhängig davon, wie dieses Feld formatiert ist.</p>
-<p><strong>Hinweis</strong>: das Argument <strong>Search as formatiert</strong> wird nur dann wirksam, wenn das aktuelle Feld ein gebundenes Steuerelement ist, das <strong>Match</strong> -Argument auf <strong>vollständiges Feld</strong>festgelegt ist, das <strong>einzige aktuelle Field</strong> -Argument auf <strong>Ja</strong>und die <strong>Übereinstimmung festgelegt ist. Case</strong> -Argument ist auf <strong>Nein</strong>festgelegt.</p>
+<td><p>Gibt an, ob die Suche formatierte Daten einschließt. Klicken Sie auf <strong>Ja</strong> (Microsoft Office Access 2007 sucht nach den Daten, wie sie im Feld formatiert sind und angezeigt werden) oder auf <strong>Nein</strong> (Access sucht nach den Daten, wie sie in der Datenbank gespeichert sind, was nicht immer mit der Anzeige der Daten übereinstimmt). Die Standardeinstellung ist <strong>Nein</strong>. Verwenden Sie dieses Feature, um die Suche auf Daten in einem bestimmten Format zu beschränken. Klicken Sie beispielsweise auf <strong>Ja</strong>, und geben Sie <strong>1,234</strong> für das Argument <strong>Suchen nach</strong> ein, um den Wert 1,234 in einem Feld zu suchen, das so formatiert ist, dass es Kommas enthalten kann. Klicken Sie auf <strong>Nein</strong>, wenn Sie <strong>1234</strong> eingeben möchten, um in diesem Feld nach den Daten zu suchen. Klicken Sie zum Suchen nach Datumsangaben auf <strong>"Ja",</strong> um ein Datum genau so zu finden, wie es formatiert ist, z. B. 08-July-2003. Wenn Sie auf <strong>"Nein"</strong>klicken, geben Sie das Datum für das Argument <strong>"Suchen nach",</strong> in dem Format ein, das in den regionalen Einstellungen in Windows Systemsteuerung festgelegt ist. Dieses Format wird im Feld <strong>"Kurzes Datumsformat"</strong> auf der Registerkarte <strong>"Datum"</strong> in den Landes- und Regionaleinstellungen angezeigt. Wenn z. B. das Feld für das <strong>kurze Datumsformat</strong> auf <strong>M/d/yy</strong>festgelegt ist, können Sie 7/8/03 eingeben, und Access sucht alle Einträge in einem Datumsfeld, das dem 8. Juli 2003 entspricht, unabhängig davon, wie dieses Feld formatiert ist.</p>
+<p><strong>HINWEIS:</strong>Das Argument <strong>"Search As Formatted"</strong> wird nur wirksam, wenn das aktuelle Feld ein gebundenes Steuerelement ist, das Argument <strong>"Match"</strong> auf <strong>"Whole Field"</strong>festgelegt ist, das Argument <strong>"Only Current Field"</strong> auf <strong>"Yes"</strong>und das Argument <strong>"Match Case"</strong> auf <strong>"No"</strong>festgelegt ist.</p>
 <p>Wenn Sie <strong>Groß-/Kleinschreibung beachten</strong> auf <strong>Ja</strong> oder <strong>Nur aktuelles Feld</strong> auf <strong>Nein</strong> festlegen, müssen Sie außerdem <strong>Wie formatiert</strong> auf <strong>Ja</strong> festlegen.</p></td>
 </tr>
 <tr class="even">

@@ -4,19 +4,19 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a51a60c9-479b-7d7b-860f-bb46fc8b4d63
-description: Kapselt die Eigenschaften, die im Zusammenhang mit der Überprüfung des Dokuments stehen.
-ms.openlocfilehash: 35e6f3f13eecef826fdef0d664bba35fceb0e069
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+description: Kapselt die Eigenschaften, die sich auf die Überprüfung des Dokuments beziehen.
+ms.openlocfilehash: c6608a723a689e958e4a4858753055480fb6d2f1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538522"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627191"
 ---
 # <a name="validationproperties-element-validation_type-complextype-visio-xml"></a>ValidationProperties-Element (Validation_Type complexType) (Visio XML)
 
-Kapselt die Eigenschaften, die im Zusammenhang mit der Überprüfung des Dokuments stehen.
+Kapselt die Eigenschaften, die sich auf die Überprüfung des Dokuments beziehen.
   
 ## <a name="element-information"></a>Informationen zum Element
 
@@ -36,7 +36,7 @@ Kapselt die Eigenschaften, die im Zusammenhang mit der Überprüfung des Dokumen
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -52,7 +52,7 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|LastValidated  <br/> |xsd:dateTime  <br/> |erforderlich  <br/> |Datum und Uhrzeit der letzten Überprüfung des Dokuments.  <br/> |Werte des xsd:dateTime-Typs.  <br/> |
-|ShowIgnored  <br/> |xsd:boolean  <br/> |erforderlich  <br/> |Gibt an, ob ignorierte Überprüfungsprobleme im Fenster Probleme angezeigt werden.  <br/> |Werte des typs xsd:boolean.  <br/> |
+|LastValidated  <br/> |xsd:dateTime  <br/> |Erforderlich  <br/> |Datum und Uhrzeit der letzten Überprüfung des Dokuments.  <br/> |Werte des Typs "xsd:dateTime".  <br/> |
+|ShowIgnored  <br/> |xsd:boolean  <br/> |erforderlich  <br/> |Gibt an, ob ignorierte Überprüfungsprobleme im Fenster "Probleme" angezeigt werden sollen.  <br/> |Werte des Typs "xsd:boolean".  <br/> |
    
 

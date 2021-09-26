@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Bb610437(v=office.15)
 ms:contentKeyID: 55119799
 ms.date: 07/24/2014
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 3be678b13738fead1509f3854c7b23bd0cfc8528
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c0df396b58a088b7a96e3e389bc4c36443b22685
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32356399"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59629396"
 ---
 # <a name="display-in-the-select-names-dialog-box-the-address-book-corresponding-to-a-contacts-folder"></a>Anzeigen Sie des Adressbuchs, das einem Ordner „Kontakte“ entspricht, im Dialogfeld „Namen auswählen“
 
@@ -24,7 +24,7 @@ Jedes Adressbuch in Outlook wird von der [AddressLists](https://msdn.microsoft.c
 
 Bevor die dem standardmäßigen Kontaktordner entsprechende Adressliste im Dialogfeld **Namen auswählen** angezeigt wird, legt das Codebeispiel den Wert auf den der [InitialAddressList](https://msdn.microsoft.com/library/bb646633\(v=office.15\)) -Eigenschaft des [SelectNamesDialog](https://msdn.microsoft.com/library/bb609866\(v=office.15\)) -Objekts fest.
 
-Wenn Sie Visual Studio verwenden, um dieses Codebeispiel zu testen, müssen Sie der Microsoft Outlook 15.0-Objektbibliothekkomponente zuerst einen Verweis hinzufügen und die Outlook-Variable angeben, wenn Sie den **Microsoft.Office.Interop.Outlook**-Namespace importieren. Die Anweisung **Imports** oder **using** darf im Codebeispiel nicht direkt vor den Funktionen stehen, sondern muss vor der öffentlichen Class-Deklaration hinzugefügt werden. Die folgenden Codezeilen zeigen, wie Sie den Import und die Zuweisung in Visual Basic und C\# vornehmen.
+Wenn Sie dieses Codebeispiel mit Visual Studio testen, müssen Sie beim Importieren des **Microsoft.Office.Interop.Outlook**-Namespace zuerst einen Verweis auf die Microsoft Outlook 15.0-Objektbibliothekskomponente hinzufügen und die Outlook-Variable angeben. Die **Imports**- oder **using**-Anweisung darf nicht direkt vor den Funktionen im Codebeispiel stehen, sondern muss vor der öffentlichen Class-Deklaration hinzugefügt werden. Die folgenden Codezeilen zeigen, wie der Import und die Zuweisung in Visual Basic und C\# ausgeführt werden.
 
 ```vb
 Imports Outlook = Microsoft.Office.Interop.Outlook

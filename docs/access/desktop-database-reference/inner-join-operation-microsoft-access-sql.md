@@ -12,13 +12,13 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: d865d005604ed7422c8e33ff8508551b720c30ba
-ms.sourcegitcommit: 0419850d5c1b3439d9da59070201fb4952ca5d07
+ms.localizationpriority: high
+ms.openlocfilehash: 098e7e1616407c1927f32db6cbedbb07b6df1283
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/28/2020
-ms.locfileid: "49734217"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59568908"
 ---
 # <a name="inner-join-operation-microsoft-access-sql"></a>INNER JOIN-Operation (Microsoft Access SQL)
 
@@ -80,7 +80,7 @@ FROM Categories INNER JOIN Products
 ON Categories.CategoryID = Products.CategoryID;
 ```
 
-Im vorigen Beispiel ist "CategoryID" das verknüpfte Feld, wird aber nicht in die Abfrageausgabe einbezogen, da es nicht in der [SELECT](select-statement-microsoft-access-sql.md)-Anweisung enthalten ist. Um das verknüpfte Feld einzuschließen, geben Sie den Feldnamen in die SELECT-Anweisung ein, in diesem Fall Categories.CategoryID.
+Im vorangegangenen Beispiel ist das CategoryID-Feld das verknüpfte Feld, aber es wird nicht in der Abfrageausgabe aufgenommen, da es nicht in der [SELECT](select-statement-microsoft-access-sql.md)-Anweisung enthalten ist. Um das verknüpfte Feld einzubeziehen, fügen Sie den Feldnamen in die SELECT-Anweisung ein – in diesem Fall Categories.CategoryID.
 
 Sie können auch mehrere ON-Klauseln in einer JOIN-Anweisung mit der folgenden Syntax verknüpfen:
 

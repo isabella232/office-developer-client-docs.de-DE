@@ -1,18 +1,18 @@
 ---
-title: Abschnitt "Data" (Access Desktop Database Reference)
+title: Datenabschnitt (Access-Desktopdatenbankreferenz)
 TOCTitle: Data section
 ms:assetid: fd8d31aa-af13-a52f-5e91-20225b8df175
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250303(v=office.15)
 ms:contentKeyID: 48548920
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 1b8e3baf4d147edcc739e59933da4697c08cdef0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 236b6faf0913bdce857674581e8a7d066968a5b6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295044"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626890"
 ---
 # <a name="data-section"></a>Datenabschnitt
 
@@ -20,7 +20,7 @@ ms.locfileid: "32295044"
 
 Der Datenabschnitt definiert die Daten des Rowsets zusammen mit ausstehenden Aktualisierungen, Einfügungen oder Löschvorgängen. Der Datenabschnitt kann null oder mehr Zeilen enthalten. Er kann nur Daten von einem einzigen Rowset enthalten, in dem die Zeile vom Schema definiert wird. Außerdem können wie vorher beschrieben Spalten ohne Daten ausgelassen werden. Falls ein Attribut oder Unterelement im Datenabschnitt verwendet wird und dieses nicht im Schemaabschnitt definiert wurde, wird es ignoriert.
 
-## <a name="string"></a>Zeichenfolge
+## <a name="string"></a>String
 
 Reservierte XML-Zeichen in Textdaten müssen durch entsprechende Zeichenentitäten ersetzt werden. Beispielsweise muss im Firmenname "Joe's Garage" das einfache Anführungszeichen durch eine Entität ersetzt werden. Die tatsächliche Zeile würde wie folgt aussehen:
 
@@ -28,7 +28,7 @@ Reservierte XML-Zeichen in Textdaten müssen durch entsprechende Zeichenentität
 <z:row CompanyName="Joe&apos;s Garage"/> 
 ```
 
-Die folgenden Zeichen sind in XML reserviert und müssen durch Zeichenentitäten ersetzt werden: {', ", &,\<,\>}.
+Die folgenden Zeichen sind in XML reserviert und müssen durch Zeichenentitäten ersetzt werden: {',",&, \<,\> }.
 
 ## <a name="binary"></a>Binär
 
@@ -36,9 +36,9 @@ Binäre Daten sind bin.hex-codiert (das heißt, einem Byte sind zwei Zeichen zug
 
 ## <a name="datetime"></a>DateTime
 
-Das Datumsformat\_der Version VT wird nicht direkt von XML-Datentypen unterstützt. Das richtige Format für Daten mit einer Datums- und einer Zeitkomponente lautet yyyy-mm-dd**T**hh:mm:ss.
+Das VT DATE-Format der Variante \_ wird von XML-Data Datentypen nicht direkt unterstützt. Das richtige Format für Daten mit einer Datums- und einer Zeitkomponente lautet yyyy-mm-dd **T** hh:mm:ss.
 
-Weitere Informationen zu den von XML angegebenen Datumsformaten finden Sie unter [W3C XMLDATA-Hinweis](https://www.w3.org/TR/1998/NOTE-XML-data-0105/).
+Weitere Informationen zu durch XML angegebenen Datumsformaten finden Sie unter [W3C XMLData Note](https://www.w3.org/TR/1998/NOTE-XML-data-0105/).
 
 Wenn die XML-Data-Spezifikation zwei äquivalente Datentypen definiert (z. B. i4 == int), schreibt ADO den Anzeigenamen vollständig, kann aber beide Formate lesen.
 

@@ -1,20 +1,20 @@
 ---
-title: Field. Required-Eigenschaft (DAO)
+title: Field.Required-Eigenschaft (DAO)
 TOCTitle: Required Property
 ms:assetid: 2f1dbdeb-a37a-59b2-fdc2-f16c7ae1a575
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192247(v=office.15)
 ms:contentKeyID: 48543999
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 52900d4a60002695866b9960fb6b80cefeb2b2ea
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 8f62d684d3c33024b4e15d5e8f90e432bfa98b47
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292979"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59622340"
 ---
-# <a name="fieldrequired-property-dao"></a>Field. Required-Eigenschaft (DAO)
+# <a name="fieldrequired-property-dao"></a>Field.Required-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -25,7 +25,7 @@ Gibt einen Wert zurück, der angibt, ob für ein **[Field](field-object-dao.md)*
 
 *Ausdruck* . Erforderlich
 
-*Ausdruck* Eine Variable, die ein **Field** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Field**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 
@@ -69,7 +69,7 @@ Die Verfügbarkeit der **Required**-Eigenschaft hängt von dem Objekt ab, das di
 </table>
 
 
-Mit der **Required**-Eigenschaft können Sie in Kombination mit der **[AllowZeroLength](field-allowzerolength-property-dao.md)** -, **[ValidateOnSet](field-validateonset-property-dao.md)** - oder **[ValidationRule](field-validationrule-property-dao.md)** -Eigenschaft die Gültigkeit des Werts der **[Value](field-value-property-dao.md)** -Eigenschaft für dieses **Field**-Objekt überprüfen. Wenn die **Required**-Eigenschaft den Wert **False**hat, kann das Feld **null**-Werte enthalten und ebenso Werte, die die von den Eigenschaften **AllowZeroLength** und **ValidationRule** festgelegten Bedingungen erfüllen.
+Mit der **Required**-Eigenschaft können Sie in Kombination mit der **[AllowZeroLength](field-allowzerolength-property-dao.md)** -, **[ValidateOnSet](field-validateonset-property-dao.md)** - oder **[ValidationRule](field-validationrule-property-dao.md)** -Eigenschaft die Gültigkeit des Werts der **[Value](field-value-property-dao.md)** -Eigenschaft für dieses **Field**-Objekt überprüfen. Wenn die **Required**-Eigenschaft den Wert **False** hat, kann das Feld **null**-Werte enthalten und ebenso Werte, die die von den Eigenschaften **AllowZeroLength** und **ValidationRule** festgelegten Bedingungen erfüllen.
 
 
 > [!NOTE]

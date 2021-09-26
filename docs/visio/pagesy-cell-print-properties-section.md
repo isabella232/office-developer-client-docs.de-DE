@@ -6,31 +6,31 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm1033790
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 396a0f3e-dbbb-3f5b-3c5d-f7dd454a765f
 description: Bestimmt die Anzahl der Druckseiten, auf denen das Zeichenblatt vertikal dargestellt werden soll.
-ms.openlocfilehash: 43d4081439525c516d3da28b6c0e46e9273d85c4
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 190cd49ff521a11c3daa70981bb17794a9a7b10b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33429782"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627772"
 ---
 # <a name="pagesy-cell-print-properties-section"></a>Zelle "PagesY" (Abschnitt "Print Properties")
 
 Bestimmt die Anzahl der Druckseiten, auf denen das Zeichenblatt vertikal dargestellt werden soll. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieser Wert wird nur dann verwendet, wenn die Zelle OnPage auf WAHR festgelegt ist. 
   
-Um einen Verweis auf die Zelle PagesY anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Um einen Verweis auf die Zelle PagesY anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | PagesY  <br/> |
    
-Um einen Verweis auf die Zelle PagesY nach Index aus einem Programm zu erhalten, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle PagesY anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

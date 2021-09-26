@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Bb644320(v=office.15)
 ms:contentKeyID: 55119866
 ms.date: 07/24/2014
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: 32c40e1fbda3f0f851b52d29c073d95a5d636620
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 87fc89d1d15f5fed0de7cd798c08ba2fda350016
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349560"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59629417"
 ---
 # <a name="create-a-mail-item-attach-a-report-and-send-the-mail-item-to-the-users-manager"></a>Erstellen eines E-Mail-Elements, Anfügen eines Berichts und Senden des E-Mail-Elements an den Vorgesetzten des Benutzers
 
@@ -22,7 +22,7 @@ In diesem Beispiel wird ein E-Mail-Element mit einer Anlage erstellt und dann an
 
 Dieses Beispiel kann nur mit einem Microsoft Exchange Server-Konto ordnungsgemäß ausgeführt werden. Im Active Directory-Verzeichnisdienst muss eine Vorgesetztenbeziehung für Benutzer eingerichtet werden. Im Beispiel wird anhand des [ExchangeUser](https://msdn.microsoft.com/library/bb609574\(v=office.15\)) -Objekts durch Aufrufen der [GetExchangeUserManager](https://msdn.microsoft.com/library/bb646656\(v=office.15\)) -Methode der Vorgesetzte des aktuellen Benutzers ermittelt.
 
-Wenn Sie Visual Studio verwenden, um dieses Codebeispiel zu testen, müssen Sie der Microsoft Outlook 15.0-Objektbibliothekkomponente zuerst einen Verweis hinzufügen und die Outlook-Variable angeben, wenn Sie den **Microsoft.Office.Interop.Outlook**-Namespace importieren. Die Anweisung **Imports** oder **using** darf im Codebeispiel nicht direkt vor den Funktionen stehen, sondern muss vor der öffentlichen Class-Deklaration hinzugefügt werden. Die folgenden Codezeilen zeigen, wie Sie den Import und die Zuweisung in Visual Basic und C\# vornehmen.
+Wenn Sie dieses Codebeispiel mit Visual Studio testen, müssen Sie beim Importieren des **Microsoft.Office.Interop.Outlook**-Namespace zuerst einen Verweis auf die Microsoft Outlook 15.0-Objektbibliothekskomponente hinzufügen und die Outlook-Variable angeben. Die **Imports**- oder **using**-Anweisung darf nicht direkt vor den Funktionen im Codebeispiel stehen, sondern muss vor der öffentlichen Class-Deklaration hinzugefügt werden. Die folgenden Codezeilen zeigen, wie der Import und die Zuweisung in Visual Basic und C\# ausgeführt werden.
 
 ```vb
 Imports Outlook = Microsoft.Office.Interop.Outlook

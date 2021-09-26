@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fb478151-4afc-9a06-42a2-1defa54a3c4a
-description: Dieses Dokument wird in der vorliegenden Version zur Verfügung gestellt. Informationen und Ansichten in diesem Dokument, einschließlich URL und andere Internetwebsiteverweise, können sich ohne vorherige Ankündigung ändern. Das Risiko der Produktnutzung liegt allein beim Nutzer.
-ms.openlocfilehash: 2faffee253779cbc2c6fde0716db1ff46b1583bc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: Dieses Dokument wird in der vorliegenden Version zur Verfügung gestellt. Die in diesem Dokument enthaltenen Informationen und Ansichten, einschließlich URL- und anderer Verweise auf Internetwebsites, können sich ohne vorherige Ankündigung ändern. Das Risiko der Produktnutzung liegt allein beim Nutzer.
+ms.openlocfilehash: 32e1b0020106c96a0bfd0e6444b20d089aef6266
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32322323"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627135"
 ---
 # <a name="visio-sdk-copyright-notice"></a>Visio SDK-Copyright-Hinweis
 

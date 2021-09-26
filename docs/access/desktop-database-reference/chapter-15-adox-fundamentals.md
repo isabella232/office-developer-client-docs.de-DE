@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249673(v=office.15)
 ms:contentKeyID: 48546464
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 0e46920ba47dba018944768ff61c970781e37a02
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 952599694588c5535d8d6d9e205e45d67b8b3020
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296451"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627093"
 ---
 # <a name="chapter-15-adox-fundamentals"></a>Kapitel 15: Grundlegendes zu ADOX
 
@@ -26,9 +26,9 @@ To use ADOX with your development tool, you should establish a reference to the 
 
 Der Microsoft OLE DB-Anbieter für das Microsoft Jet-Datenbankmodul unterstützt ADOX vollständig. Abhängig vom jeweiligen Datenprovider werden bestimmte Features von ADOX möglicherweise nicht unterstützt. Weitere Informationen zu unterstützten Features mit dem Microsoft OLE DB-Anbieter für ODBC, dem Microsoft OLE DB-Anbieter für Oracle oder dem Microsoft SQL Server OLE DB-Anbieter finden Sie in der MDAC-Infodatei.
 
-In diesem Dokument werden Kenntnisse der Microsoft Visual Basic-Programmiersprache und allgemeine ADO-Kenntnisse vorausgesetzt. Weitere Informationen zu ADO finden Sie im [ADO-Programmierhandbuch](ado-programmer-s-guide.md).
+Dieses Dokument setzt Arbeitskenntnisse in der Programmiersprache Microsoft Visual Basic und allgemeine Kenntnisse von ADO voraus. Weitere Informationen zu ADO finden Sie im [ADO-Programmierhandbuch.](ado-programmer-s-guide.md)
 
-In diesem Kapitel wird Folgendes Thema behandelt:
+In diesem Kapitel wird das folgende Thema behandelt:
 
 - [Anbieterunterstützung für ADOX](provider-support-for-adox.md)
 

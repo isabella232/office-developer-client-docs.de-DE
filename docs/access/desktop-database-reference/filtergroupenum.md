@@ -1,18 +1,18 @@
 ---
-title: FilterGroupEnum (Access Desktop Database Reference)
+title: FilterGroupEnum (Access-Desktopdatenbankreferenz)
 TOCTitle: FilterGroupEnum
 ms:assetid: 141f8f9a-c188-5937-91cc-3155eaebebd2
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248912(v=office.15)
 ms:contentKeyID: 48543381
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: be2ce54fe743c46468850abc5dc16520e208ec9e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d4527f0fdcd0a6b3840559009c7828d9a6c39f02
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292419"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626554"
 ---
 # <a name="filtergroupenum"></a>FilterGroupEnum
 
@@ -65,7 +65,7 @@ Gibt die Gruppe der Datensätze an, die aus einem [Recordset](recordset-object-a
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
 Paket: **com.ms.wfc.data**
 
@@ -80,19 +80,19 @@ Paket: **com.ms.wfc.data**
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums. Filtergroup. AFFECTEDRECORDS</p></td>
+<td><p>AdoEnums.FilterGroup.AFFECTEDRECORDS</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. Filtergroup. CONFLICTINGRECORDS</p></td>
+<td><p>AdoEnums.FilterGroup.CONFLICTINGRECORDS</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. Filtergroup. FETCHEDRECORDS</p></td>
+<td><p>AdoEnums.FilterGroup.FETCHEDRECORDS</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. Filtergroup. NONE</p></td>
+<td><p>AdoEnums.FilterGroup.NONE</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. Filtergroup. PENDINGRECORDS</p></td>
+<td><p>AdoEnums.FilterGroup.PENDINGRECORDS</p></td>
 </tr>
 </tbody>
 </table>

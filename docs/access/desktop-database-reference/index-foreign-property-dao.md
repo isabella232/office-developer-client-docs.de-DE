@@ -1,5 +1,5 @@
 ---
-title: Index. Foreign-Eigenschaft (DAO)
+title: Index.Foreign-Eigenschaft (DAO)
 TOCTitle: Foreign Property
 ms:assetid: 81272436-a506-4b72-fd28-2d68e76d6d9b
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196489(v=office.15)
@@ -10,25 +10,25 @@ f1_keywords:
 - dao360.chm1052974
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: a3c6adfaf9648147a763f997ce2a91aadc4f7637
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d90cb03c9632d048ea38a0aa618639604f96e40c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291817"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626393"
 ---
-# <a name="indexforeign-property-dao"></a>Index. Foreign-Eigenschaft (DAO)
+# <a name="indexforeign-property-dao"></a>Index.Foreign-Eigenschaft (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
-Gibt einen Wert zurück, der angibt, ob ein **[Index](index-object-dao.md)** -Objekt einen Fremdschlüssel in einer Tabelle darstellt (nur Microsoft Access-Arbeitsbereiche). .
+Gibt einen Wert zurück, der angibt, ob ein **[Index](index-object-dao.md)** -Objekt einen Fremdschlüssel in einer Tabelle angibt (gilt nur für Microsoft Access-Arbeitsbereiche).
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Außen
+*Ausdruck* . Ausländisch
 
-*Ausdruck* Eine Variable, die ein **Index** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Index-Objekt** darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 

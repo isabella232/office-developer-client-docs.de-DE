@@ -3,15 +3,15 @@ title: Integration in Office von Android-Anwendungen aus
 manager: soliver
 ms.date: 06/18/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a765fa49-a272-4047-9147-59cc68e5dd27
 description: Office für Android bietet eine erweiterbare Lösung, die die Integration in Drittanbieteranwendungen ermöglicht. Von Ihrer Android-Anwendung aus ist eine Integration in Office möglich, indem Sie Ihre Anwendungsbenutzer an Office übergeben.
-ms.openlocfilehash: 4e674b3d66f3acba7e9c9c19e716ff0d73d803b2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: c5a2be61b767a27d4ebe0ee1fa2eb22a2b2801da
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303150"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631251"
 ---
 # <a name="integrate-with-office-from-android-applications"></a>Integration in Office von Android-Anwendungen aus
 

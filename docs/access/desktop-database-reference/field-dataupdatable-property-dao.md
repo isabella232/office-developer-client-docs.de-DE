@@ -1,5 +1,5 @@
 ---
-title: Field. dataAktualisierbar-Eigenschaft (DAO)
+title: Field.DataUpdatable-Eigenschaft (DAO)
 TOCTitle: DataUpdatable Property
 ms:assetid: 08ca57b6-2d7c-36b4-7d51-b76ac5467163
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845029(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1052988
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 8678b825f509f483bf70d3aa2f3d767dbf7b0e32
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: af9f67a418109415af0a212828da3db4288d8e69
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293133"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626708"
 ---
-# <a name="fielddataupdatable-property-dao"></a>Field. dataAktualisierbar-Eigenschaft (DAO)
+# <a name="fielddataupdatable-property-dao"></a>Field.DataUpdatable-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -30,7 +30,7 @@ Gibt einen Wert zurück, der angibt, ob die Daten eines durch ein **[Field](fiel
 
 *Ausdruck* . DataUpdatable
 
-*Ausdruck* Eine Variable, die ein **Field** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Field**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 

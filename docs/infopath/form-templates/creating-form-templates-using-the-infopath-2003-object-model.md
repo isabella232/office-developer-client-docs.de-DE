@@ -4,16 +4,16 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 keywords:
-- infopath 2003-kompatible Formularvorlagen, Erstellen,Objektmodelle [InfoPath 2003], Erstellen von Formularvorlagen für verwalteten Code für InfoPath 2007,Formularvorlagen [InfoPath 2007], Erstellen von InfoPath 2003-kompatiblen Formularvorlagen
-localization_priority: Normal
+- infopath 2003-kompatible Formularvorlagen, creating,object models [InfoPath 2003], creating managed code form templates for InfoPath 2007,form templates [InfoPath 2007], creating InfoPath 2003-compatible
+ms.localizationpriority: medium
 ms.assetid: e0513178-ddcb-4086-ab19-1bc80cf114cc
 description: In diesem Abschnitt wird Initialisierungs- und Bereinigungscode sowie das Hinzufügen von Ereignishandlern, Debuggen und das Bereitstellen von InfoPath-Formularvorlagen erläutert, die das InfoPath 2003-kompatible Objektmodell verwenden, die Unterstützung von Threads und das Arbeiten mit Microsoft XML Core Services (MSXML) aus InfoPath-Lösungen mit verwaltetem Code.
-ms.openlocfilehash: 5069636dde87eb473a2b8bef4b58a6006d557085
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: b2998ed8a74f6e2e8dbcd997687edf3dac8ff76c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33410532"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631377"
 ---
 # <a name="creating-form-templates-using-the-infopath-2003-object-model"></a>Erstellen von Formularvorlagen mithilfe des InfoPath 2003-Objektmodells
 

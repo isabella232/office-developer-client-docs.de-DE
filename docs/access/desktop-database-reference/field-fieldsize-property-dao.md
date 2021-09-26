@@ -1,20 +1,20 @@
 ---
-title: Field. Fieldes-Eigenschaft (DAO)
+title: Field.FieldSize-Eigenschaft (DAO)
 TOCTitle: FieldSize Property
 ms:assetid: c81bd5cb-6b7c-5390-2d6b-049143f2f3b6
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff823165(v=office.15)
 ms:contentKeyID: 48547645
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 68a1b354b27515dd855703b9bf6344e4a9e90d7b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: eaa25eaf1ac7070eddb87e9be53077a094c9556b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293112"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626680"
 ---
-# <a name="fieldfieldsize-property-dao"></a>Field. Fieldes-Eigenschaft (DAO)
+# <a name="fieldfieldsize-property-dao"></a>Field.FieldSize-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -26,7 +26,7 @@ Returns the number of bytes used in the database (rather than in memory) of a Me
 
 *Ausdruck* . Feldgröße
 
-*Ausdruck* Eine Variable, die ein **Field** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Field**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 

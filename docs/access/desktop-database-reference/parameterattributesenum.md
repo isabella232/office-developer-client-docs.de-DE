@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250021(v=office.15)
 ms:contentKeyID: 48547773
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 2ded9721eb2af2f409a4b4a6ea261898a4d1b3fa
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 2fc5d2ba4fe60b86bc9c067cbe4a65223d8fd2d9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288007"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626232"
 ---
 # <a name="parameterattributesenum"></a>ParameterAttributesEnum
 
@@ -37,7 +37,7 @@ Gibt die Attribute eines [Parameter](parameter-object-ado.md)-Objekts an.
 <tbody>
 <tr class="odd">
 <td><p><strong>adParamSigned</strong></p></td>
-<td><p>16</p></td>
+<td><p>16 </p></td>
 <td><p>Gibt an, dass der Parameter Werte mit Vorzeichen annimmt.</p></td>
 </tr>
 <tr class="even">
@@ -54,7 +54,7 @@ Gibt die Attribute eines [Parameter](parameter-object-ado.md)-Objekts an.
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
 Paket: **com.ms.wfc.data**
 
@@ -69,13 +69,13 @@ Paket: **com.ms.wfc.data**
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums. ParameterAttributes. SIGNED</p></td>
+<td><p>AdoEnums.ParameterAttributes.SIGNED</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. ParameterAttributes. NULLABLE</p></td>
+<td><p>AdoEnums.ParameterAttributes.NULLABLE</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. ParameterAttributes. LONG</p></td>
+<td><p>AdoEnums.ParameterAttributes.LONG</p></td>
 </tr>
 </tbody>
 </table>

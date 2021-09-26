@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Bb623026(v=office.15)
 ms:contentKeyID: 55119862
 ms.date: 07/24/2014
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: cdd9654187685ceab1062fb4ae1882b2d48c68d4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4e69d1a4bda4d4bab1b84a9c29214ca31549b82f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32349539"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59629410"
 ---
 # <a name="create-a-mail-item-by-using-a-message-template"></a>Erstellen eines E-Mail-Elements mithilfe einer Nachrichtenvorlage
 
@@ -24,7 +24,7 @@ In diesem Codebeispiel wird die Vorlagendatei „Ivy.oft“ geöffnet, ein Betre
 
 Die **CreateItemFromTemplate**-Methode ist nützlich, wenn Sie eine auf einem Datenträger gespeicherte Outlook-Vorlagendatei (OFT-Datei) als Nachrichtenvorlage verwenden möchten. Die Vorlagendatei kann vorformatierten Text, Briefpapier oder Bilder enthalten, die Sie in die Nachricht aufnehmen möchten. Enthält die Vorlagendatei jedoch Code hinter dem Formular, wird der Formularcode nicht ausgeführt.
 
-Wenn Sie Visual Studio verwenden, um dieses Codebeispiel zu testen, müssen Sie der Microsoft Outlook 15.0-Objektbibliothekkomponente zuerst einen Verweis hinzufügen und die Outlook-Variable angeben, wenn Sie den **Microsoft.Office.Interop.Outlook**-Namespace importieren. Die Anweisung **Imports** oder **using** darf im Codebeispiel nicht direkt vor den Funktionen stehen, sondern muss vor der öffentlichen Class-Deklaration hinzugefügt werden. Die folgenden Codezeilen zeigen, wie Sie den Import und die Zuweisung in Visual Basic und C\# vornehmen.
+Wenn Sie dieses Codebeispiel mit Visual Studio testen, müssen Sie beim Importieren des **Microsoft.Office.Interop.Outlook**-Namespace zuerst einen Verweis auf die Microsoft Outlook 15.0-Objektbibliothekskomponente hinzufügen und die Outlook-Variable angeben. Die **Imports**- oder **using**-Anweisung darf nicht direkt vor den Funktionen im Codebeispiel stehen, sondern muss vor der öffentlichen Class-Deklaration hinzugefügt werden. Die folgenden Codezeilen zeigen, wie der Import und die Zuweisung in Visual Basic und C\# ausgeführt werden.
 
 ```vb
 Imports Outlook = Microsoft.Office.Interop.Outlook

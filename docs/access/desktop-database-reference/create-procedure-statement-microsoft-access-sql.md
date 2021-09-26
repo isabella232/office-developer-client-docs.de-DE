@@ -8,13 +8,13 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 dev_langs:
 - sql
-localization_priority: Priority
-ms.openlocfilehash: f223e164bd36a6a1a76140a28dd57cd2005e4a20
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: b54d85a655bcb6ef60560583e8cbe1e2852c603e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295402"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59569216"
 ---
 # <a name="create-procedure-statement-microsoft-access-sql"></a>CREATE PROCEDURE-Anweisung (Microsoft Access SQL)
 
@@ -33,7 +33,7 @@ Die CREATE PROCEDURE-Anweisung setzt sich wie folgt zusammen:
 
 |Part|Beschreibung|
 |:---|:----------|
-|*Prozedur*|Der Name der Prozedur. Bei der Namensgebung müssen die Standardbenennungsregeln beachtet werden.|
+|*Prozedur*|Ein Name für die Prozedur. Sie muss den Standardnamenskonventionen entsprechen.|
 |*Parameter1*, *Parameter2*|1 bis 255 Feldnamen oder Parameter. Beispiel:<br/><br/>`CREATE PROCEDURE Sales_By_Country [Beginning Date] DateTime, [Ending Date] DateTime;`<br/><br/>Weitere Informationen zu Parametern finden Sie unter [PARAMETER](parameters-declaration-microsoft-access-sql.md).|
 |*Datentyp*|Einer der wichtigsten [Microsoft Access SQL-Datentypen](sql-data-types.md) oder eines der Synonyme.|
 |*SQL-Anweisung*|Eine SQL-Anweisung wie SELECT, UPDATE, DELETE, INSERT, CREATE TABLE, DROP TABLE usw.|

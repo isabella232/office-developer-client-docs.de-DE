@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagSubjectPrefix
 api_type:
 - COM
 ms.assetid: 07fcb881-d873-45bf-b048-30f41d0d8d85
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 8257c3c3583072d16e96e6ea9bba4632fc78f9ef
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 2c2bece089bc985111695f5bb54098d3fc6c4f0f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32339228"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59624454"
 ---
 # <a name="pidtagsubjectprefix-canonical-property"></a>PidTagSubjectPrefix (kanonische Eigenschaft)
 
@@ -34,17 +34,17 @@ Enthält ein Betreffpräfix, das in der Regel eine Aktion für eine Nachricht an
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeines Messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften werden für alle Nachrichtenobjekte empfohlen. 
   
-Das Betreffpräfix besteht aus einem oder mehreren alphanumerischen Zeichen, gefolgt von einem Doppelpunkt und einem Leerzeichen (die Teil des Präfixes sind). Er darf keine nichtalphanumerischen Zeichen vor dem Doppelpunkt enthalten. Das Fehlen eines Präfixes kann durch eine leere Zeichenfolge dargestellt werden oder durch diese Eigenschaft, die nicht festgelegt wird. 
+Das Betreffpräfix besteht aus einem oder mehreren alphanumerischen Zeichen, gefolgt von einem Doppelpunkt und einem Leerzeichen (die Teil des Präfixes sind). Es darf keine nicht alphanumerischen Zeichen vor dem Doppelpunkt enthalten. Das Fehlen eines Präfixes kann durch eine leere Zeichenfolge oder durch diese Eigenschaft dargestellt werden, die nicht festgelegt wird. 
   
-Wenn diese Eigenschaften explizit festgelegt werden, kann die Zeichenfolge eine beliebige Länge haben und alphanumerische Zeichen verwenden, sie muss jedoch mit einer Teilzeichenfolge am Anfang der **PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md))-Eigenschaft übereinstimmen. Wenn diese Eigenschaften nicht vom Absender festgelegt werden und berechnet werden müssen, sind ihre Inhalte eingeschränkter. Die Regel zum Berechnen des Präfixes **ist, dass PR_SUBJECT** mit einem, zwei oder drei Buchstaben (nur alphabetisch) gefolgt von einem Doppelpunkt und einem Leerzeichen beginnen muss. Wenn eine solche Teilzeichenfolge am Anfang von **PR_SUBJECT** gefunden wird, wird sie dann zur Zeichenfolge für diese Eigenschaften (und bleibt auch am Anfang PR_SUBJECT **).** Andernfalls bleiben diese Eigenschaften nicht festgelegt. 
+Wenn diese Eigenschaften explizit festgelegt werden, kann die Zeichenfolge eine beliebige Länge haben und alphanumerische Zeichen verwenden, muss jedoch mit einer Teilzeichenfolge am Anfang der **PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) -Eigenschaft übereinstimmen. Wenn diese Eigenschaften nicht vom Absender festgelegt werden und berechnet werden müssen, sind deren Inhalte eingeschränkter. Die Regel zum Berechnen des Präfixes ist, dass **PR_SUBJECT** mit einem, zwei oder drei Buchstaben (nur alphabetisch) gefolgt von einem Doppelpunkt und einem Leerzeichen beginnen muss. Wenn eine solche Teilzeichenfolge am Anfang von **PR_SUBJECT** gefunden wird, wird sie zur Zeichenfolge für diese Eigenschaften (und bleibt auch am Anfang von **PR_SUBJECT**). Andernfalls bleiben diese Eigenschaften nicht festgelegt. 
   
-Diese Eigenschaften und **PR_NORMALIZED_SUBJECT** ([PidTagNormalizedSubject](pidtagnormalizedsubject-canonical-property.md)) sollten als Teil der [IMAPIProp::SaveChanges-Implementierung berechnet](imapiprop-savechanges.md) werden. Ein Client sollte [IMAPIProp::GetProps](imapiprop-getprops.md) erst dann zur Eingabe seiner Werte aufrufen, wenn er von einem **IMAPIProp::SaveChanges-Aufruf ausgeführt** wurde. 
+Diese Eigenschaften und **PR_NORMALIZED_SUBJECT** ([PidTagNormalizedSubject](pidtagnormalizedsubject-canonical-property.md)) sollten als Teil der [IMAPIProp::SaveChanges-Implementierung](imapiprop-savechanges.md) berechnet werden. Ein Client sollte [IMAPIProp::GetProps](imapiprop-getprops.md) erst dann zur Eingabe seiner Werte auffordern, wenn ein Commit durch einen **IMAPIProp::SaveChanges-Aufruf** ausgeführt wurde. 
   
-Die Betreffeigenschaften sind in der Regel kleine Zeichenfolgen mit weniger als 256 Zeichen, und ein Nachrichtenspeicheranbieter ist nicht verpflichtet, die OLE **IStream-Schnittstelle** für sie zu unterstützen. Ein Client sollte immer zuerst den Zugriff über die **IMAPIProp-Schnittstelle** versuchen und nur dann auf **IStream** zugreifen, **MAPI_E_NOT_ENOUGH_MEMORY** zurückgegeben wird. 
+Die Betreffeigenschaften sind in der Regel kleine Zeichenfolgen mit weniger als 256 Zeichen, und ein Nachrichtenspeicheranbieter ist nicht verpflichtet, die OLE **IStream-Schnittstelle** für sie zu unterstützen. Ein Client sollte immer zuerst versuchen, über die **IMAPIProp-Schnittstelle** auf **IStream** zuzugreifen, wenn **MAPI_E_NOT_ENOUGH_MEMORY** zurückgegeben wird. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -52,7 +52,7 @@ Die Betreffeigenschaften sind in der Regel kleine Zeichenfolgen mit weniger als 
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
@@ -66,11 +66,11 @@ Die Betreffeigenschaften sind in der Regel kleine Zeichenfolgen mit weniger als 
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als alternative Namen aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -78,9 +78,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -1,20 +1,20 @@
 ---
-title: Field. ForeignName-Eigenschaft (DAO)
+title: Field.ForeignName-Eigenschaft (DAO)
 TOCTitle: ForeignName Property
 ms:assetid: 5f412ab4-173b-9530-eb4f-71ee30bed9e3
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194762(v=office.15)
 ms:contentKeyID: 48545157
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 7c340eee9972e8247654ec863ba0ef4588ef65f8
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: cbf586d3c07ccfd01a170efd4efaaacc45385c36
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293105"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626686"
 ---
-# <a name="fieldforeignname-property-dao"></a>Field. ForeignName-Eigenschaft (DAO)
+# <a name="fieldforeignname-property-dao"></a>Field.ForeignName-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -25,7 +25,7 @@ Mit dieser Eigenschaft wird ein Wert festgelegt oder zurückgegeben, der den Nam
 
 *Ausdruck* . ForeignName
 
-*Ausdruck* Eine Variable, die ein **Field** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Field**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 

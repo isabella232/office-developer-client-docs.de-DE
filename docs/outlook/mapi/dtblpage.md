@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.DTBLPAGE
 api_type:
 - COM
 ms.assetid: f899f434-a5d7-4b4f-98f9-c14c9f21b24b
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 6f3d98a3133d79f78f4eb676d49ec85ef5a359f1
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 60c84f90c483261fa1feb888f065cbf1b9409a88
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424000"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59630957"
 ---
 # <a name="dtblpage"></a>DTBLPAGE
 
@@ -43,35 +43,35 @@ typedef struct _DTBLPAGE
 
 ```
 
-## <a name="members"></a>Elemente
+## <a name="members"></a>Members
 
  **ulbLpszLabel**
   
-> Position im Arbeitsspeicher der Zeichenzeichenfolgenbeschriftung für die Seitenregisterkarte.
+> Position im Speicher der Zeichenfolgenbeschriftung für die Registerkarte "Seite".
     
  **ulFlags**
   
-> Bitmaske von Flags, die zum Festlegen des Formats der Bezeichnung verwendet werden, auf das das **ulbLpszLabelName-Element** verweist. Das folgende Flag kann festgelegt werden: 
+> Bitmaske mit Kennzeichen, die zum Festlegen des Formats der Bezeichnung verwendet werden, auf die der **UlbLpszLabelName-Member** verweist. Das folgende Kennzeichen kann festgelegt werden: 
     
 MAPI_UNICODE 
   
-> Die Bezeichnung ist im Unicode-Format. Wenn das MAPI_UNICODE nicht festgelegt ist, befindet sich die Bezeichnung im ANSI-Format.
+> Die Beschriftung hat das Unicode-Format. Wenn das MAPI_UNICODE-Kennzeichen nicht festgelegt ist, hat die Bezeichnung das ANSI-Format.
     
  **ulbLpszComponent**
   
-> Position im Arbeitsspeicher einer Zeichenzeichenfolge, die **den Abschnitt [Hilfedateizuordnungen]** im MAPISVC identifiziert. INF-Konfigurationsdatei oder 0. Der Dateiname, der im MAPISVC angezeigt wird. Der ABSCHNITT "INF" kann von einem Benutzer verwendet werden,  um auf die erweiterte Hilfe für die Registerkartenseite zu zugreifen, indem er im Dialogfeld auf die Schaltfläche Hilfe klickt. Weitere Informationen zu den Einträgen in MAPISVC. INF, siehe [Dateiformat von MAPISVC. INF](file-format-of-mapisvc-inf.md).
+> Position im Speicher einer Zeichenfolge, die den Abschnitt **[Hilfedateizuordnungen]** in MAPISVC identifiziert. INF-Konfigurationsdatei oder 0. Der Dateiname, der in MAPISVC angezeigt wird. Der INF-Abschnitt kann von einem Benutzer verwendet werden, um auf die erweiterte Hilfe für die Registerkartenseite zuzugreifen, indem er im Dialogfeld auf die **Schaltfläche "Hilfe"** klickt. Weitere Informationen zu den Einträgen in MAPISVC. INF, see [File Format of MAPISVC. INF](file-format-of-mapisvc-inf.md).
     
  **ulContext**
   
-> Ein eindeutiger Bezeichner für die Registerkartenseite in der vom **ulbLpszComponent-Element definierten Zeichenfolge.** Das **ulbLpszComponent-Element** und das **ulContext-Element** müssen beide ungleich Null sein, damit die Schaltfläche **Hilfe** funktioniert. Wenn dieser Bezeichner null ist und die Komponentenzeichenfolge NULL ist, ist der Seite keine Hilfe zugeordnet. 
+> Ein eindeutiger Bezeichner für die Registerkartenseite in der Zeichenfolge, die vom **ulbLpszComponent-Element** definiert wird. Der **ulbLpszComponent-Member** und das **ulContext-Element** müssen beide ungleich Null sein, damit die **Hilfeschaltfläche** funktioniert. Wenn dieser Bezeichner Null und die Komponentenzeichenfolge NULL ist, ist der Seite keine Hilfe zugeordnet. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Eine **DTBLPAGE-Struktur** beschreibt eine Registerkartenseite ein Steuerelement, das zum Trennen mehrerer zugehöriger Dialogfelder verwendet wird. In der Regel handelt es sich bei diesen Dialogfelder um Eigenschaftenblätter zum Anzeigen von Konfigurations-, Nachrichten- oder Empfängeroptionen. Durch Klicken auf die Registerkarte kann der Benutzer von einem Blatt zu einem anderen wechseln. 
+Eine **DTBLPAGE-Struktur** beschreibt eine Registerkartenseite eines Steuerelements, das zum Trennen mehrerer verwandter Dialogfelder verwendet wird. In der Regel sind diese Dialogfelder Eigenschaftenblätter zum Anzeigen von Konfigurations-, Nachrichten- oder Empfängeroptionen. Durch Klicken auf die Registerkarte kann der Benutzer von einem Blatt zu einem anderen wechseln. 
   
-Die Komponentenzeichenfolge und der Kontextbezeichner enthalten Informationen dazu, ob die erweiterte Hilfe für die Registerkartenseite verfügbar ist. Wenn erweiterte Hilfe verfügbar ist, enthalten die Komponentenzeichenfolge und der Kontextbezeichner Informationen zum Zugriff darauf. Die Komponentenzeichenfolge ordnet der Hilfedatei zu. der Kontextbezeichner dem ersten Hilfethema zu ordnet. Wenn der Kontextbezeichner null und die Komponentenzeichenfolge NULL ist, ist erweiterte Hilfe nicht verfügbar.
+Die Komponentenzeichenfolge und der Kontextbezeichner enthalten Informationen darüber, ob die erweiterte Hilfe für die Registerkartenseite verfügbar ist. Wenn die erweiterte Hilfe verfügbar ist, enthält die Komponentenzeichenfolge und der Kontextbezeichner Informationen zum Zugriff darauf. Die Komponentenzeichenfolge ist der Hilfedatei zugeordnet. Der Kontextbezeichner ist dem anfänglichen Hilfethema zugeordnet. Wenn der Kontextbezeichner Null und die Komponentenzeichenfolge NULL ist, ist die erweiterte Hilfe nicht verfügbar.
   
-Eine Übersicht über Anzeigetabellen finden Sie unter [Display Tables](display-tables.md). Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle](display-table-implementation.md).
+Eine Übersicht über Anzeigetabellen finden Sie unter ["Anzeigetabellen".](display-tables.md) Informationen zum Implementieren einer Anzeigetabelle finden Sie unter [Implementieren einer Anzeigetabelle.](display-table-implementation.md)
   
 ## <a name="see-also"></a>Siehe auch
 

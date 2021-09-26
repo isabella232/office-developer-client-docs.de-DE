@@ -1,5 +1,5 @@
 ---
-title: Documents. Count-Eigenschaft (DAO)
+title: Documents.Count-Eigenschaft (DAO)
 TOCTitle: Count Property
 ms:assetid: 3fc0b1e6-f7be-cd43-711f-5cf5763fe7f6
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192858(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1053325
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: dd9cc563ecc885fca4fa0ef5829d82aa2f8bfef6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 2b8f9c69c4416dbcdb2d2f0bf65143656d7894c1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293742"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631993"
 ---
-# <a name="documentscount-property-dao"></a>Documents. Count-Eigenschaft (DAO)
+# <a name="documentscount-property-dao"></a>Documents.Count-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -29,7 +29,7 @@ Gibt die Anzahl von Objekten in der angegebenen Auflistung zurück. Schreibgesch
 
 *Ausdruck* . Count
 
-*Ausdruck* Eine Variable, die ein **Documents** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Documents-Objekt** darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 

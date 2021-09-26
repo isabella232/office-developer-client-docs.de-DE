@@ -7,22 +7,22 @@ ms.topic: reference
 f1_keywords:
 - xlUDF
 keywords:
-- xludf-Funktion [excel 2007]
-localization_priority: Normal
+- xludf-Funktion [Excel 2007]
+ms.localizationpriority: medium
 ms.assetid: b608b356-ca5c-47bb-9de8-9b7e2b3924dd
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 569334847c7612b86f6ddc967f159e2ef425cbbb
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: a68794f61b791e911a6899922311973c5d747ab3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33430644"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631391"
 ---
 # <a name="xludf"></a>xlUDF
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Ruft eine benutzerdefinierte Funktion (USERF) auf. Mit dieser Funktion kann eine DLL Visual Basic for Applications (VBA) benutzerdefinierte Funktionen, XLM-Makrosprachenfunktionen und registrierte Funktionen aufrufen, die in anderen Add-Ins enthalten sind.
+Ruft eine benutzerdefinierte Funktion (UDF) auf. Diese Funktion ermöglicht einer DLL das Aufrufen Visual Basic for Applications (VBA) benutzerdefinierter Funktionen, XLM-Makrosprachenfunktionen und registrierter Funktionen, die in anderen Add-Ins enthalten sind.
   
 ```cs
 Excel12(xlUDF, LPXLOPER12 pxRes, int iCount, LPXLOPER12 pxFnRef,
@@ -33,19 +33,19 @@ LPXLOPER12 pxArg1, ...);
 
 _pxFnRef_ (**xltypeRef**, **xltypeSRef**, **xltypeStr** oder **xltypeNum**)
   
-Der Verweis auf die Funktion, die Sie aufrufen möchten. Dies kann ein Makroblattzellenverweis, der registrierte Name der Funktion als Zeichenfolge oder die Register-ID der Funktion sein. Für XLL-Add-In-Funktionen, die mithilfe von **xlfRegister** oder **REGISTER** mit dem angegebenen Argument  _pxFunctionText_ registriert wurden, kann die ID mithilfe von **xlfEvaluate** zum Suchen nach dem Namen erhalten werden. 
+Der Verweis auf die Funktion, die Sie aufrufen möchten. Dabei kann es sich um einen Makroblatt-Zellbezug, den registrierten Namen der Funktion als Zeichenfolge oder die Register-ID der Funktion handeln. Für XLL-Add-In-Funktionen, die mit **xlfRegister** oder **REGISTER** mit dem angegebenen Argument  _pxFunctionText_ registriert wurden, kann die ID mithilfe von **xlfEvaluate** abgerufen werden, um den Namen nachzuschlagen. 
   
 _pxArg1, ..._
   
-Null oder mehr Argumente für die benutzerdefinierte Funktion. Wenn Sie diese Funktion in Versionen vor Excel 2007 aufrufen, ist die maximale Anzahl zusätzlicher Argumente, die übergeben werden können, 29, d. h. 30 einschließlich _pxFnRef_. Ab Excel 2007 wird dieser Grenzwert auf 254 angehoben, d. h. 255 einschließlich _pxFnRef_.
+Null oder mehr Argumente für die benutzerdefinierte Funktion. Wenn Sie diese Funktion in Versionen vor Excel 2007 aufrufen, beträgt die maximale Anzahl von zusätzlichen Argumenten, die übergeben werden können, 29, was 30 einschließlich _pxFnRef_ ist. Ab Excel 2007 wird dieser Grenzwert auf 254 erhöht, was 255 einschließlich _pxFnRef_ ist.
   
 ## <a name="return-value"></a>Rückgabewert
 
-Gibt den von der benutzerdefinierten Funktion zurückgegebenen Wert zurück.
+Gibt den Wert zurück, den die benutzerdefinierte Funktion zurückgegeben hat.
   
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel wird **TestMacro auf** Blatt Macro1 in BOOK1.XLS. Stellen Sie sicher, dass sich das Makro auf einem Blatt mit dem Namen "Macro1" befindet. 
+Im folgenden Beispiel wird **TestMacro** auf dem Blatt Macro1 in BOOK1.XLS ausgeführt. Stellen Sie sicher, dass sich das Makro auf einem Blatt mit dem Namen Macro1 befindet. 
   
 `\SAMPLES\EXAMPLE\EXAMPLE.C`
   

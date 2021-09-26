@@ -1,20 +1,20 @@
 ---
-title: Field2. Type-Eigenschaft (DAO)
+title: Field2.Type-Eigenschaft (DAO)
 TOCTitle: Type Property
 ms:assetid: 057d6ec9-b72c-cee6-005a-6d916e3dda29
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff844921(v=office.15)
 ms:contentKeyID: 48543032
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 4da32f18a2b3e9dddbb0ae04e3257de34ba09761
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 744deba962bec5067a3de3a296bb4e611a573887
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292664"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626701"
 ---
-# <a name="field2type-property-dao"></a>Field2. Type-Eigenschaft (DAO)
+# <a name="field2type-property-dao"></a>Field2.Type-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -23,9 +23,9 @@ Legt einen Wert fest, der den Funktions- oder Datentyp eines Objekts angibt, ode
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Typ
+*expression* .Type
 
-*Ausdruck* Eine Variable, die ein **Field2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Field2**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 
@@ -46,7 +46,7 @@ Die möglichen Einstellungen und Rückgabewerte bei einem **Field2**-Objekt werd
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>dbBigint</strong></p></td>
+<td><p><strong>dbBigInt</strong></p></td>
 <td><p>Große Ganzzahl</p></td>
 </tr>
 <tr class="even">
@@ -55,7 +55,7 @@ Die möglichen Einstellungen und Rückgabewerte bei einem **Field2**-Objekt werd
 </tr>
 <tr class="odd">
 <td><p><strong>dbBoolean</strong></p></td>
-<td><p>Boolescher Wert</p></td>
+<td><p>Boolesch</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbByte</strong></p></td>
@@ -63,7 +63,7 @@ Die möglichen Einstellungen und Rückgabewerte bei einem **Field2**-Objekt werd
 </tr>
 <tr class="odd">
 <td><p><strong>dbChar</strong></p></td>
-<td><p>Zeichen</p></td>
+<td><p>Char</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbCurrency</strong></p></td>
@@ -75,15 +75,15 @@ Die möglichen Einstellungen und Rückgabewerte bei einem **Field2**-Objekt werd
 </tr>
 <tr class="even">
 <td><p><strong>dbDecimal</strong></p></td>
-<td><p>Dezimal</p></td>
+<td><p>Decimal</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbDouble</strong></p></td>
-<td><p>Double</p></td>
+<td><p>Gleitkommawert mit doppelter Genauigkeit</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbFloat</strong></p></td>
-<td><p>Gleitkomma</p></td>
+<td><p>Gleitkommazahl</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbGUID</strong></p></td>
@@ -91,7 +91,7 @@ Die möglichen Einstellungen und Rückgabewerte bei einem **Field2**-Objekt werd
 </tr>
 <tr class="even">
 <td><p><strong>dbInteger</strong></p></td>
-<td><p>Integer</p></td>
+<td><p>Ganze Zahl</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbLong</strong></p></td>
@@ -107,7 +107,7 @@ Die möglichen Einstellungen und Rückgabewerte bei einem **Field2**-Objekt werd
 </tr>
 <tr class="even">
 <td><p><strong>dbNumeric</strong></p></td>
-<td><p>Numerisch</p></td>
+<td><p>Numeric</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbSingle</strong></p></td>
@@ -118,8 +118,8 @@ Die möglichen Einstellungen und Rückgabewerte bei einem **Field2**-Objekt werd
 <td><p>Text</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>DBZeit</strong></p></td>
-<td><p>Zeit</p></td>
+<td><p><strong>dbTime</strong></p></td>
+<td><p>Time</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbTimeStamp</strong></p></td>

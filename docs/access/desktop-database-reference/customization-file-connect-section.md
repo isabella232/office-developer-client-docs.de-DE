@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248802(v=office.15)
 ms:contentKeyID: 48542985
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 8652aa2c028350aab79cdf101cba189026b9a5ae
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 9455867ec47354a38084a67360d5ee7f3f66e874
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295142"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59622501"
 ---
 # <a name="customization-file-connect-section"></a>Anpassungsdatei – Verbindungsabschnitt
 
@@ -53,7 +53,7 @@ Ein Eintrag für eine Ersetzungsverbindungszeichenfolge hat folgendes Format:
 <td><p>Eine literale Zeichenfolge, durch die angegeben wird, dass es sich um einen Verbindungszeichenfolgeneintrag handelt.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><em>connectionString</em></strong></p></td>
+<td><p><strong><em>Connectionstring</em></strong></p></td>
 <td><p>Eine Zeichenfolge, durch die die gesamte Clientverbindungszeichenfolge ersetzt wird.</p></td>
 </tr>
 <tr class="odd">
@@ -75,5 +75,5 @@ Ein Eintrag für eine Ersetzungsverbindungszeichenfolge hat folgendes Format:
 </table>
 
 
-Wenn Sie eine Verbindung zulassen möchten (in der Tat das standardmäßige Handler-Verhalten deaktivieren), legen Sie den Zugriffseintrag im **Standardabschnitt Connect** auf fest, und löschen oder kommentieren Sie einen anderen Abschnitt **Connect** *Identifier* aus.
+Wenn Sie eine Verbindung zulassen möchten (d. h. das Standardhandlerverhalten deaktivieren), legen Sie den Zugriffseintrag im **Verbindungsstandardabschnitt** auf fest, und löschen oder kommentieren Sie alle anderen *Verbindungsbezeichnerabschnitte* aus. 
 

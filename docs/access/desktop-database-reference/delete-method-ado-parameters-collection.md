@@ -1,20 +1,20 @@
 ---
-title: Delete-Methode (ADO Parameters-Auflistung)
+title: Delete-Methode (Parameters-Auflistung in ADO)
 TOCTitle: Delete method (ADO Parameters Collection)
 ms:assetid: 03ffc24d-fea2-30fa-c8e9-43eb524fd51f
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248804(v=office.15)
 ms:contentKeyID: 48542998
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: e075e176f1c007a258f6277147442223ae108b47
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 30545ef12b5f794985b4925fe242e360ed1576f5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294092"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59622382"
 ---
-# <a name="delete-method-ado-parameters-collection"></a>Delete-Methode (ADO Parameters-Auflistung)
+# <a name="delete-method-ado-parameters-collection"></a>Delete-Methode (Parameters-Auflistung in ADO)
 
 **Gilt für**: Access 2013, Office 2013
 

@@ -4,19 +4,19 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ea5cbf9f-25cc-9cca-9be0-d2deed576153
-description: Entfernt die Registrierung eines Clients beim Konto-Manager für Benachrichtigungen für alle Konten.
-ms.openlocfilehash: 0b954413b06cb1aa1b6fc4e0e9666f108bf81fbe
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Hebt die Registrierung eines Clients beim Konto-Manager für Benachrichtigungen für alle Konten auf.
+ms.openlocfilehash: cc82aa8bc3ba7f550f1f328c12a68802ef34c29c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33430987"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631237"
 ---
 # <a name="iolkaccountmanagerunadvise"></a>IOlkAccountManager::Unadvise
 
-Entfernt die Registrierung eines Clients beim Konto-Manager für Benachrichtigungen für alle Konten. 
+Hebt die Registrierung eines Clients beim Konto-Manager für Benachrichtigungen für alle Konten auf. 
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -33,7 +33,7 @@ HRESULT Unadvise(
 
 _dwCookie_
   
-> [in] Das von [IOlkAccountManager zurückgegebene Cookie::Advise](iolkaccountmanager-advise.md).
+> [in] Das von [IOlkAccountManager::Advise](iolkaccountmanager-advise.md)zurückgegebene Cookie.
     
 ## <a name="return-values"></a>Rückgabewerte
 

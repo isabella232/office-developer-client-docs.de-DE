@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm50135
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 88bebab46cd6b76fb101c86c4fe33c5ab86a3e70
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: acb2420d4936350ed6816498cb54cc1a47cc8c5d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288301"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626253"
 ---
 # <a name="openview-macro-action"></a>OpenView-Makroaktion
 
@@ -45,7 +45,7 @@ Die **ÖffnenSicht**-Aktion verwendet die folgenden Argumente.
 <tbody>
 <tr class="odd">
 <td><p><strong>Sichtname</strong></p></td>
-<td><p>Der Name der zu öffnenden Ansicht. Im Feld <strong>Ansichts Name</strong> im Abschnitt <strong>Aktionsargumente</strong> des Bereichs Makro-Generator werden alle Ansichten in der aktuellen Datenbank angezeigt. Dies ist ein erforderliches Argument. Wenn Sie ein Makro, das die <strong>ÖffnenSicht</strong>-Aktion enthält, in einer Bibliotheksdatenbank ausführen, sucht Microsoft Access zuerst in der Bibliotheksdatenbank und dann in der aktuellen Datenbank nach dem Diagramm mit diesem Namen.</p></td>
+<td><p>Der Name der zu öffnenden Ansicht. Im Feld <strong>Ansichtsname</strong> im Abschnitt <strong>Aktionsargumente</strong> im Bereich Makro-Generator werden alle Ansichten in der aktuellen Datenbank angezeigt. Dies ist ein erforderliches Argument. Wenn Sie ein Makro, das die <strong>ÖffnenSicht</strong>-Aktion enthält, in einer Bibliotheksdatenbank ausführen, sucht Microsoft Access zuerst in der Bibliotheksdatenbank und dann in der aktuellen Datenbank nach dem Diagramm mit diesem Namen.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>View</strong></p></td>

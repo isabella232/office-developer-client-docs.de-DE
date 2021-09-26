@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249473(v=office.15)
 ms:contentKeyID: 48545643
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: fac07165416841691ee7bc3ca5dfcdc366861023
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: e031e3145883b1b622af5bca6811cb9a346f0d44
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32287972"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626225"
 ---
 # <a name="parameterdirectionenum"></a>ParameterDirectionEnum
 
@@ -52,7 +52,7 @@ Gibt an, ob der [Parameter](parameter-object-ado.md) einen Eingabeparameter, ein
 </tr>
 <tr class="even">
 <td><p><strong>adParamReturnValue</strong></p></td>
-<td><p>4</p></td>
+<td><p>4 </p></td>
 <td><p>Gibt an, dass der Parameter einen Rückgabewert darstellt.</p></td>
 </tr>
 <tr class="odd">
@@ -64,7 +64,7 @@ Gibt an, ob der [Parameter](parameter-object-ado.md) einen Eingabeparameter, ein
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
 Paket: **com.ms.wfc.data**
 
@@ -79,19 +79,19 @@ Paket: **com.ms.wfc.data**
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums. ParameterDirection. INPUT</p></td>
+<td><p>AdoEnums.ParameterDirection.INPUT</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. ParameterDirection. Input Output</p></td>
+<td><p>AdoEnums.ParameterDirection.INPUTOUTPUT</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. ParameterDirection. OUTPUT</p></td>
+<td><p>AdoEnums.ParameterDirection.OUTPUT</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. ParameterDirection. RETURNVALUE</p></td>
+<td><p>AdoEnums.ParameterDirection.RETURNVALUE</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. ParameterDirection. UNKNOWN</p></td>
+<td><p>AdoEnums.ParameterDirection.UNKNOWN</p></td>
 </tr>
 </tbody>
 </table>

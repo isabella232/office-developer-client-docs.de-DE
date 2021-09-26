@@ -1,18 +1,18 @@
 ---
-title: Verwenden von CacheSize (Access-Desktop-Daten Bankreferenz)
+title: Verwenden von CacheSize (Access-Desktopdatenbankreferenz)
 TOCTitle: Using CacheSize
 ms:assetid: b1677a9f-f22f-9456-0d2a-1ef7cf81bbdf
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249846(v=office.15)
 ms:contentKeyID: 48547148
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 94e84ad8c8a87a6537c1abefe12427ecad0c0187
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 562ccc380c69ba1974405e5d7e4f64a1583f1a4e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32312124"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631643"
 ---
 # <a name="using-cachesize"></a>Verwenden der CacheSize
 
@@ -31,5 +31,5 @@ Die Einstellung 0 für **CacheSize** ist nicht zulässig. In diesem Fall würde 
 
 Aus dem Cache abgerufene Datensätze enthalten keine Änderungen, die andere Benutzer gleichzeitig an den Quelldaten vorgenommen haben. Verwenden Sie die [Resync](resync-method-ado.md)-Methode, um eine Aktualisierung aller zwischengespeicherter Daten zu erzwingen.
 
-Wenn **CacheSize** auf einen Wert größer als 1 festgelegt ist, können die Navigationsmethoden ([Move](move-method-ado.md), [MoveFirst, MoveLast, MoveNext und MovePrevious](movefirst-movelast-movenext-and-moveprevious-methods-ado.md)) zu einer Navigation zu einem gelöschten Datensatz führen, wenn nach dem Abrufen der Datensätze ein Löschvorgang erfolgt. After the initial fetch, subsequent deletions will not be reflected in your data cache until you attempt to access a data value from a deleted row. However, setting **CacheSize** to 1 eliminates this issue because deleted rows cannot be fetched.
+Wenn **CacheSize** auf einen Wert größer als 1 festgelegt ist, können die Navigationsmethoden ([Move](move-method-ado.md), [MoveFirst, MoveLast, MoveNext und MovePrevious](movefirst-movelast-movenext-and-moveprevious-methods-ado.md)) zu einer Navigation zu einem gelöschten Datensatz führen, wenn der Löschvorgang erfolgt, nachdem die Datensätze abgerufen wurden. After the initial fetch, subsequent deletions will not be reflected in your data cache until you attempt to access a data value from a deleted row. However, setting **CacheSize** to 1 eliminates this issue because deleted rows cannot be fetched.
 

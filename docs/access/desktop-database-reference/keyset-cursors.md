@@ -1,18 +1,18 @@
 ---
-title: Keyset-Cursor (Access-Desktop-Daten Bankreferenz)
+title: Keysetcursor (Access-Desktopdatenbankreferenz)
 TOCTitle: Keyset cursors
 ms:assetid: 4b6e5f90-4413-4fb3-0a08-2cb89d3c61f7
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249236(v=office.15)
 ms:contentKeyID: 48544690
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 200b10599683a5b5877952664c04e94b2523cfee
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: aba252a92887f5232d4c1af35aaf8345f6ab4d7f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32290715"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59622214"
 ---
 # <a name="keyset-cursors"></a>Keysetcursor
 

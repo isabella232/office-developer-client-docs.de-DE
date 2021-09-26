@@ -1,20 +1,20 @@
 ---
-title: ReQuery-Methode (ADO)
+title: Requery-Methode (ADO)
 TOCTitle: Requery method (ADO)
 ms:assetid: 1062d907-979f-020a-b2ed-94e11c0e7d08
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248871(v=office.15)
 ms:contentKeyID: 48543292
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 249dc236d730cf773ec38fe5dd903cb64ca9b594
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 65b1b69bc8b8bbeb46cace80a810849a5e5b3401
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306713"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631769"
 ---
-# <a name="requery-method-ado"></a>ReQuery-Methode (ADO)
+# <a name="requery-method-ado"></a>Requery-Methode (ADO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -22,16 +22,16 @@ Die Daten in einem [Recordset](recordset-object-ado.md)-Objekt werden aktualisie
 
 ## <a name="syntax"></a>Syntax
 
-*Recordset*. ReQuery- *Optionen*
+*Recordset*. *Requery-Optionen*
 
 ## <a name="parameters"></a>Parameter
 
 |Name |Beschreibung|
 |:----|:----------|
-|*Options* |Optional. Eine Bitmaske, die die Werte [ExecuteOptionEnum](executeoptionenum.md) und [CommandTypeEnum](commandtypeenum.md) enthält, die sich auf diese Operation auswirken.|
+|*Optionen* |Optional. Eine Bitmaske, die die Werte [ExecuteOptionEnum](executeoptionenum.md) und [CommandTypeEnum](commandtypeenum.md) enthält, die sich auf diese Operation auswirken.|
 
 > [!NOTE]
-> Wenn *options* auf **adAsyncExecute**festgelegt ist, wird dieser Vorgang asynchron ausgeführt, und es wird ein [RecordsetChangeComplete](willchangerecordset-and-recordsetchangecomplete-events-ado.md) -Ereignis ausgegeben, wenn es beendet wird.
+> Wenn *Options* auf **adAsyncExecute** festgelegt ist, wird dieser Vorgang asynchron ausgeführt, und ein [RecordsetChangeComplete-Ereignis](willchangerecordset-and-recordsetchangecomplete-events-ado.md) wird ausgegeben, wenn er beendet wird.
 
 Die **ExecuteOpenEnum**-Werte von **adExecuteNoRecords** oder **adExecuteStream** sollten nicht mit **Requery** verwendet werden.
 

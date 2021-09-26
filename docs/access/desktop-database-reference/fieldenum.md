@@ -1,18 +1,18 @@
 ---
-title: FieldEnum (Access Desktop Database Reference)
+title: FieldEnum (Access-Desktopdatenbankreferenz)
 TOCTitle: FieldEnum
 ms:assetid: fbd415c0-d6b4-278f-318b-98432c013634
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250289(v=office.15)
 ms:contentKeyID: 48548876
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: e42dcfe63194364986e5b235c59b011231307a7c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d684c6f50a07efd07b28b64fd36b5106a940e55f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292594"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626638"
 ---
 # <a name="fieldenum"></a>FieldEnum
 
@@ -43,7 +43,7 @@ These constants provide a "shortcut" to accessing special fields associated with
 <tr class="odd">
 <td><p><strong>adDefaultStream</strong></p></td>
 <td><p>-1</p></td>
-<td><p>Verweist auf das Feld mit dem <a href="stream-object-ado.md">Stream</a> -Standardobjekt, das einem <strong>Datensatz</strong>zugeordnet ist.</p></td>
+<td><p>Verweist auf das Feld, das das einem <strong>Datensatz</strong>zugeordnete <a href="stream-object-ado.md">Stream-Standardobjekt</a> enthält.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adRecordURL</strong></p></td>

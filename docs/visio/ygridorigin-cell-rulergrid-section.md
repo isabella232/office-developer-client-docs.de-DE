@@ -6,31 +6,31 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm1205
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: eeec59f8-f301-5639-ffd6-8a36b2bf9c8f
 description: Gibt den vertikalen Ursprung des Gitters an.
-ms.openlocfilehash: fa8ee15d5ef2b5d581a9532336d3983bed17b1dd
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 0a8bf07802c69319a79235a556ef46334cad2d37
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404491"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59622585"
 ---
 # <a name="ygridorigin-cell-ruler-amp-grid-section"></a>Zelle "YGridOrigin" (Abschnitt "Ruler &amp; Grid")
 
 Gibt den vertikalen Ursprung des Gitters an.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Zelle entspricht der vertikalen Startoption **Grid im**  Dialogfeld **&amp; Linealraster** (klicken Sie auf der Registerkarte Ansicht auf den **Pfeil** anzeigen). 
+Diese Zelle entspricht der vertikalen **Rasterursprungsoption** im Dialogfeld **&amp; Linealraster** (klicken Sie auf **der** Registerkarte Ansicht auf den Pfeil **anzeigen).** 
   
-Um einen Verweis auf die Zelle YGridOrigin anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Verwenden Sie zum Abrufen eines Verweises auf die Zelle "YGridOrigin" anhand des Namens einer anderen Formel oder eines Programms mithilfe der **CellsU-Eigenschaft** Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |YGridOrigin  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle YGridOrigin nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle YGridOrigin anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

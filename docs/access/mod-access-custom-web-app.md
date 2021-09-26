@@ -1,32 +1,32 @@
 ---
-title: Mod (Benutzerdefinierte Access-Web-App)
+title: Mod (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 561dd741-ebbb-4661-95ea-39d342c32891
-description: Gibt den Rest einer durch eine andere geteilten Zahl zurück.
-ms.openlocfilehash: 6756dd50f7e062b73d6ec9e1d9753f5b7f188058
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Gibt den Rest einer Zahl dividiert durch eine andere zahl zurück.
+ms.openlocfilehash: 23543cd192410a58f99d7cccca3f8f27a5946fd3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33412506"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631559"
 ---
-# <a name="mod-access-custom-web-app"></a>Mod (Benutzerdefinierte Access-Web-App)
+# <a name="mod-access-custom-web-app"></a>Mod (benutzerdefinierte Access-Web-App)
 
-Gibt den Rest einer durch eine andere geteilten Zahl zurück.
+Gibt den Rest einer Zahl dividiert durch eine andere zahl zurück.
   
 > [!IMPORTANT]
 > Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 ## <a name="syntax"></a>Syntax
 
- *dividend* **Mod** *divisor* 
+ *Divisor für den Divisor "dividend* **Mod"**  
   
- *dividend*  Ist der numerische Ausdruck, der unterteilt werden soll. 
+ *Zahlungen*  Ist der numerische Ausdruck, der geteilt werden soll. 
   
- *Divisor*  Ist der numerische Ausdruck, durch den die Dividende dividieren wird. 
+ *Divisor*  Ist der numerische Ausdruck, durch den der Gewinn dividiert werden soll. 
   
 

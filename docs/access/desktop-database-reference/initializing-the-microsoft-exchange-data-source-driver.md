@@ -10,33 +10,33 @@ f1_keywords:
 - acmain11.chm1032667
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: b3460786785ae7b21184b6d96384ecc59e89d287
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 1365e21a7b316d6513d1aad2e62a08c60f24289b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291407"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631958"
 ---
 # <a name="initializing-the-microsoft-exchange-data-source-driver"></a>Initialisieren des Microsoft Exchange-Datenquellentreibers
 
 **Gilt für**: Access 2013, Office 2013
 
-Bei der Installation des Microsoft Exchange-Datenquellentreibers schreibt das Setup Programm in der Unterschlüssel Module und ISAM Formate eine Reihe von Standardwerten in die Microsoft Windows-Registrierung. You should not modify these settings directly; use the setup program for your application to add, remove, or change these settings. The following sections describe initialization and ISAM Format settings for the Microsoft Exchange Data Source driver.
+Wenn Sie den Microsoft Exchange Datenquellentreiber installieren, schreibt das Setupprogramm einen Satz von Standardwerten in die Unterschlüssel Engines und ISAM Formats der Microsoft Windows-Registrierung. You should not modify these settings directly; use the setup program for your application to add, remove, or change these settings. The following sections describe initialization and ISAM Format settings for the Microsoft Exchange Data Source driver.
 
-## <a name="microsoft-exchange-data-source-initialization-settings"></a>Microsoft Exchange-Datenquellen-Initialisierungseinstellungen
+## <a name="microsoft-exchange-data-source-initialization-settings"></a>Initialisierungseinstellungen für Microsoft Exchange Datenquellen
 
-Der Exchange-Ordner **Access Connectivity Engine\\Engines enthält Initialisierungseinstellungen für den Aceexch. dll-Treiber, der für den externen Zugriff auf Microsoft Outlook-und Microsoft Exchange-Ordner verwendet wird.\\** The only entry in this folder is the following:
+Der Ordner **Access Connectivity Engine \\ Engines \\ Exchange** enthält Initialisierungseinstellungen für den Aceexch.dll-Treiber, der für den externen Zugriff auf Microsoft Outlook- und Microsoft Exchange-Ordner verwendet wird. The only entry in this folder is the following:
 
 `win32=<path>\ACEEXCH.DLL`
 
-The Microsoft Access database engine uses this setting to indicate the location of Aceexch.dll. Der vollständige Pfad wird bei der Installation festgelegt. Werte sind vom Typ REG\_SZ.
+The Microsoft Access database engine uses this setting to indicate the location of Aceexch.dll. Der vollständige Pfad wird bei der Installation festgelegt. Werte sind vom Typ REG \_ SZ.
 
 Die Verwendung des Outlook-ISAM-Formats und des Exchange-Client-ISAM-Formats liefert ähnliche Ergebnisse. Der einzige Unterschied besteht darin, dass die beiden unterschiedlichen Clients für dieselben Spalten unterschiedliche Namen verwenden. Die beiden ISAM-Formate wurden erstellt, damit das Microsoft Access-Datenbankmodul die Spaltennamen in dem vom Benutzer gewünschten Format zurückgeben kann.
 
-## <a name="microsoft-outlook-client-isam-formats"></a>Microsoft Outlook-Client-ISAM-Formate
+## <a name="microsoft-outlook-client-isam-formats"></a>ISAM-Formate des Microsoft Outlook-Clients
 
-Der Ordner " **Access\\Connectivity Engine\\ISAM Formats Outlook 9,0** " enthält die folgenden Einträge.
+The **Access Connectivity Engine \\ ISAM Formats Outlook \\ 9.0** folder contains the following entries.
 
 <table>
 <colgroup>
@@ -53,14 +53,14 @@ Der Ordner " **Access\\Connectivity Engine\\ISAM Formats Outlook 9,0** " enthäl
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Modul</p></td>
+<td><p>Motor</p></td>
 <td><p>REG_SZ</p></td>
 <td><p>Exchange</p></td>
 </tr>
 <tr class="even">
 <td><p>ImportFilter</p></td>
 <td><p>REG_SZ</p></td>
-<td><p>Outlook ()</p></td>
+<td><p>Outlook()</p></td>
 </tr>
 <tr class="odd">
 <td><p>CanLink</p></td>
@@ -73,7 +73,7 @@ Der Ordner " **Access\\Connectivity Engine\\ISAM Formats Outlook 9,0** " enthäl
 <td><p>00</p></td>
 </tr>
 <tr class="odd">
-<td><p>Isamtype</p></td>
+<td><p>IsamType</p></td>
 <td><p>REG_DWORD</p></td>
 <td><p>3</p></td>
 </tr>
@@ -102,9 +102,9 @@ Der Ordner " **Access\\Connectivity Engine\\ISAM Formats Outlook 9,0** " enthäl
 
 
 
-## <a name="microsoft-exchange-client-isam-formats"></a>Microsoft Exchange-Client-ISAM-Formate
+## <a name="microsoft-exchange-client-isam-formats"></a>MICROSOFT Exchange-Client-ISAM-Formate
 
-Der Ordner **Access Connectivity\\Engine ISAM\\Exchange 4,0** enthält die folgenden Einträge.
+The **Access Connectivity Engine \\ ISAM Formats Exchange \\ 4.0** folder contains the following entries.
 
 <table>
 <colgroup>
@@ -121,14 +121,14 @@ Der Ordner **Access Connectivity\\Engine ISAM\\Exchange 4,0** enthält die folge
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Modul</p></td>
+<td><p>Motor</p></td>
 <td><p>REG_SZ</p></td>
 <td><p>Exchange</p></td>
 </tr>
 <tr class="even">
 <td><p>ImportFilter</p></td>
 <td><p>REG_SZ</p></td>
-<td><p>Exchange ()</p></td>
+<td><p>Exchange()</p></td>
 </tr>
 <tr class="odd">
 <td><p>CanLink</p></td>
@@ -141,7 +141,7 @@ Der Ordner **Access Connectivity\\Engine ISAM\\Exchange 4,0** enthält die folge
 <td><p>00</p></td>
 </tr>
 <tr class="odd">
-<td><p>Isamtype</p></td>
+<td><p>IsamType</p></td>
 <td><p>REG_DWORD</p></td>
 <td><p>3</p></td>
 </tr>
@@ -170,7 +170,7 @@ Der Ordner **Access Connectivity\\Engine ISAM\\Exchange 4,0** enthält die folge
 
 
 
-## <a name="customizing-the-schemaini-file-for-outlook-and-exchange-data"></a>Anpassen der Datei "Schema. ini" für Outlook und Exchange-Daten
+## <a name="customizing-the-schemaini-file-for-outlook-and-exchange-data"></a>Anpassen der Schema.ini datei für Outlook und Exchange Daten
 
 The Schema.ini file is used by the Outlook and Exchange ISAM in much the same way that it is used by the Text ISAM. Schema.ini contains the specifics of a data source: how the data is formatted, and the names of columns that should be accessed.
 

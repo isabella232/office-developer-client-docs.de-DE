@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248940(v=office.15)
 ms:contentKeyID: 48543497
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 3dda0840617c32e9dceea3bd1baa362c5652a373
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 0665a57f3157fabceb954067d50d1583cb5bdfcb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295338"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626932"
 ---
 # <a name="createrecordset-method-rds"></a>CreateRecordset-Methode (RDS)
 
@@ -22,22 +22,22 @@ Erstellt ein leeres, getrenntes [Recordset](recordset-object-ado.md)-Objekt.
 
 ## <a name="syntax"></a>Syntax
 
-- *Objekt*. CreateRecordset (*ColumnInfos*)
+*objekt*. CreateRecordset(*ColumnInfos*)
 
 ## <a name="parameters"></a>Parameter
 
 |Parameter|Beschreibung|
 |:--------|:----------|
-|*Object* |Eine Objektvariable, die ein [RDSServer.DataFactory](datafactory-object-rdsserver.md)- oder [RDS.DataControl](datacontrol-object-rds.md)-Objekt darstellt.|
+|*Objekt* |Eine Objektvariable, die ein [RDSServer.DataFactory](datafactory-object-rdsserver.md)- oder [RDS.DataControl](datacontrol-object-rds.md)-Objekt darstellt.|
 |*ColumnsInfos* |Ein **Variant** -Array mit Attributen, das alle Spalten im erstellten **Recordset** -Objekt definiert. Jede Spaltendefinition enthält ein Array mit vier erforderlichen Attributen und einem optionalen Attribut. Der Satz der Spaltenarrays wird anschließend in einem Array gruppiert, das das **Recordset** -Objekt angibt. Eine Liste der Attribute finden Sie in der folgenden Tabelle.|
 
-### <a name="variant-array-attributes"></a>Variant-Array Attribute
+### <a name="variant-array-attributes"></a>Variant-Arrayattribute
 
 |Attribut|Beschreibung|
 |:--------|:----------|
 |Name |Bezeichnung des Spaltenkopfs|
 |Typ |Ganzzahl des Datentyps.|
-|Größe |Ganzzahl der Breite in Zeichen, unabhängig vom Datentyp.|
+|Size |Ganzzahl der Breite in Zeichen, unabhängig vom Datentyp.|
 |Zulässigkeit |Boolescher Wert.|
 |Skalierung (optional) |Dieses optionale Attribut definiert die Dezimalstellen von numerischen Feldern. Ist dieser Wert nicht angegeben, werden numerische Werte auf drei Dezimalstellen beschränkt. Dies wirkt sich nicht auf die Genauigkeit aus, die Anzahl der Ziffern nach dem Dezimaltrennzeichen ist jedoch auf drei Stellen beschränkt.|
 
@@ -63,44 +63,44 @@ For some of the variable data types, the type may be coerced to the type noted i
 <th><p>Länge</p></th>
 <th><p>Konstante</p></th>
 <th><p>Zahl</p></th>
-<th><p>Ersetzung</p></th>
+<th><p>Substitution</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>Fest</p></td>
-<td><p><strong>addTinyInt</strong></p></td>
-<td><p>16</p></td>
+<td><p><strong>adTinyInt</strong></p></td>
+<td><p>16 </p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Fest</p></td>
-<td><p><strong>SmallInt</strong></p></td>
+<td><p><strong>adSmallInt</strong></p></td>
 <td><p>2</p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Fest</p></td>
-<td><p><strong>Ganzzahl</strong></p></td>
+<td><p><strong>adInteger</strong></p></td>
 <td><p>3</p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Fest</p></td>
-<td><p><strong>Bigint</strong></p></td>
+<td><p><strong>adBigInt</strong></p></td>
 <td><p>20</p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Fest</p></td>
 <td><p><strong>adUnsignedTinyInt</strong></p></td>
-<td><p>17</p></td>
+<td><p>17 </p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Fest</p></td>
 <td><p><strong>adUnsignedSmallInt</strong></p></td>
-<td><p>18</p></td>
+<td><p>18 </p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
@@ -112,13 +112,13 @@ For some of the variable data types, the type may be coerced to the type noted i
 <tr class="even">
 <td><p>Fest</p></td>
 <td><p><strong>adUnsignedBigInt</strong></p></td>
-<td><p>21</p></td>
+<td><p> 21</p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Fest</p></td>
-<td><p><strong>Einzel</strong></p></td>
-<td><p>4</p></td>
+<td><p><strong>adSingle</strong></p></td>
+<td><p>4 </p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
@@ -129,14 +129,14 @@ For some of the variable data types, the type may be coerced to the type noted i
 </tr>
 <tr class="odd">
 <td><p>Fest</p></td>
-<td><p><strong>Währung</strong></p></td>
-<td><p>6</p></td>
+<td><p><strong>adCurrency</strong></p></td>
+<td><p>6 </p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Fest</p></td>
 <td><p><strong>adDecimal</strong></p></td>
-<td><p>14</p></td>
+<td><p>14 </p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
@@ -147,26 +147,26 @@ For some of the variable data types, the type may be coerced to the type noted i
 </tr>
 <tr class="even">
 <td><p>Fest</p></td>
-<td><p><strong>Boolean</strong></p></td>
+<td><p><strong>adBoolean</strong></p></td>
 <td><p>11</p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Fest</p></td>
-<td><p><strong>Fehler</strong></p></td>
+<td><p><strong>adError</strong></p></td>
 <td><p>10</p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
 <td><p>Fest</p></td>
-<td><p><strong>GUID</strong></p></td>
+<td><p><strong>adGuid</strong></p></td>
 <td><p>72</p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Fest</p></td>
-<td><p><strong>Datum</strong></p></td>
-<td><p>7</p></td>
+<td><p><strong>adDate</strong></p></td>
+<td><p>7 </p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
@@ -185,23 +185,23 @@ For some of the variable data types, the type may be coerced to the type noted i
 <td><p>Fest</p></td>
 <td><p><strong>adDBTimestamp</strong></p></td>
 <td><p>135</p></td>
-<td><p>7</p></td>
+<td><p>7 </p></td>
 </tr>
 <tr class="odd">
 <td><p>Variable</p></td>
-<td><p><strong>-BSTR</strong></p></td>
-<td><p>8</p></td>
+<td><p><strong>adBSTR</strong></p></td>
+<td><p>8 </p></td>
 <td><p>130</p></td>
 </tr>
 <tr class="even">
 <td><p>Variable</p></td>
-<td><p><strong>Char</strong></p></td>
+<td><p><strong>adChar</strong></p></td>
 <td><p>129</p></td>
 <td><p>200</p></td>
 </tr>
 <tr class="odd">
 <td><p>Variable</p></td>
-<td><p><strong>-VarChar</strong></p></td>
+<td><p><strong>adVarChar</strong></p></td>
 <td><p>200</p></td>
 <td><p></p></td>
 </tr>
@@ -231,13 +231,13 @@ For some of the variable data types, the type may be coerced to the type noted i
 </tr>
 <tr class="even">
 <td><p>Variable</p></td>
-<td><p><strong>die Binärdatei</strong></p></td>
+<td><p><strong>adBinary</strong></p></td>
 <td><p>128</p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
 <td><p>Variable</p></td>
-<td><p><strong>VarBinary</strong></p></td>
+<td><p><strong>adVarBinary</strong></p></td>
 <td><p>204</p></td>
 <td><p></p></td>
 </tr>

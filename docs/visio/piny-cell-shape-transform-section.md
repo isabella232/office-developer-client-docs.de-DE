@@ -6,29 +6,29 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm795
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 98b86b9d-9cc0-1169-1c44-ef1505bf92fa
-description: Stellt die y-Koordinate des Stifts der Form (Drehungsmitte) im Verhältnis zum Ursprung des übergeordneten Shapes dar.
-ms.openlocfilehash: 17daf691e4802a93775bfd5272d2142ef33bd189
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Stellt die y-Koordinate des Drehbezugs (Drehmittelpunkt) des Shapes im Verhältnis zum Ursprung des übergeordneten Elements dar.
+ms.openlocfilehash: bad72921060f943e43ce7b34a1f6bd3be13f7d5a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411862"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627730"
 ---
 # <a name="piny-cell-shape-transform-section"></a>Zelle "PinY" (Abschnitt "Shape Transform")
 
-Stellt  die y-Koordinate des Stifts der Form (Drehungsmitte) im Verhältnis zum Ursprung des übergeordneten Shapes dar. 
+Stellt  die y-Koordinate des Drehbezugs (Drehmittelpunkt) des Shapes im Verhältnis zum Ursprung des übergeordneten Elements dar. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Um einen Verweis auf die PinY-Zelle anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Verwenden Sie Folgendes, um einen Verweis auf die Zelle PinY anhand des Namens einer anderen Formel oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | PinY  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die PinY-Zelle nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle PinY anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

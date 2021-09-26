@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248853(v=office.15)
 ms:contentKeyID: 48543214
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: f43207edec0c0acb58c66318e5dc7668a28ea595
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 8b8196d46b60600b54b3dc619279da7a995fa7d3
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295327"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626904"
 ---
 # <a name="creating-the-connection-string"></a>Erstellen der Verbindungszeichenfolge
 
@@ -50,7 +50,7 @@ ADO unterstützt direkt fünf Argumente in einer Verbindungszeichenfolge. Andere
 </tr>
 <tr class="odd">
 <td><p><em>Remote Server</em></p></td>
-<td><p>Gibt den Pfadnamen des Servers an, der beim Öffnen einer clientseitigen Verbindung verwendet werden soll. (Nur Remote Datendienst.)</p></td>
+<td><p>Gibt den Pfadnamen des Servers an, der beim Öffnen einer clientseitigen Verbindung verwendet werden soll (nur Remote Data Service).</p></td>
 </tr>
 </tbody>
 </table>
@@ -58,7 +58,7 @@ ADO unterstützt direkt fünf Argumente in einer Verbindungszeichenfolge. Andere
 
 
 > [!NOTE]
-> In den folgenden Beispielen und im ADO-Programmierhandbuch wird die Benutzer-ID "MyId" mit dem Kennwort "123aBc" zur Authentifizierung beim Server verwendet. Sie sollten diese Werte durch gültige Anmeldeinformationen für Ihren Server ersetzen. Ersetzen Sie außerdem "MySqlServer" durch den Namen Ihres Servers.
+> In den folgenden Beispielen und im gesamten ADO-Programmierhandbuch wird die Benutzer-ID "MyId" mit dem Kennwort "123aBc" für die Authentifizierung beim Server verwendet. Sie sollten diese Werte durch gültige Anmeldeinformationen für Ihren Server ersetzen. Ersetzen Sie außerdem "MySqlServer" durch den Namen Ihres Servers.
 
 Für die HelloData-Anwendung in Kapitel 1 wurde die folgende Verbindungszeichenfolge verwendet:
 

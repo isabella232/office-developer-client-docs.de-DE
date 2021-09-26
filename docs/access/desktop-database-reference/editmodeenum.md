@@ -1,18 +1,18 @@
 ---
-title: EditModeEnum (Access Desktop Database Reference)
+title: EditModeEnum (Access-Desktopdatenbankreferenz)
 TOCTitle: EditModeEnum
 ms:assetid: 4da0e504-aca2-b769-04a2-0df687fa4422
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249248(v=office.15)
 ms:contentKeyID: 48544737
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 246d9e29f084efb975783fd15c15993eba5a6e74
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 86006f3a15b105a58fb04695e9c7977e189f2171
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293581"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626792"
 ---
 # <a name="editmodeenum"></a>EditModeEnum
 
@@ -53,14 +53,14 @@ Gibt den Bearbeitungsstatus eines Datensatzes an.
 </tr>
 <tr class="even">
 <td><p><strong>adEditDelete</strong></p></td>
-<td><p>4</p></td>
+<td><p>4 </p></td>
 <td><p>Gibt an, dass der aktuelle Datensatz gelöscht wurde.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
 Paket: **com.ms.wfc.data**
 
@@ -75,16 +75,16 @@ Paket: **com.ms.wfc.data**
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums. EditMode. NONE</p></td>
+<td><p>AdoEnums.EditMode.NONE</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. EditMode. inPROGRESS</p></td>
+<td><p>AdoEnums.EditMode.INPROGRESS</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. EditMode. ADD</p></td>
+<td><p>AdoEnums.EditMode.ADD</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. EditMode. DELETE</p></td>
+<td><p>AdoEnums.EditMode.DELETE</p></td>
 </tr>
 </tbody>
 </table>

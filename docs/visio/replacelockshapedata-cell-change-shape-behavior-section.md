@@ -1,37 +1,37 @@
 ---
-title: Zelle ReplaceLockShapeData (Abschnitt "Change Shape Behavior")
+title: Zelle "ReplaceLockShapeData" (Abschnitt "Change Shape Behavior")
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6a089266-7b19-4310-8cb5-4373ea3b2d64
-description: Gibt an, ob die Werte der angegebenen Zellen in einer Masterform die Werte (einschließlich lokaler Werte) eines Shapes überschreiben, das während eines Shapeersetzungsvorgangs ersetzt wird. ReplaceLockShapeData bestimmt, ob die Formdaten der Masterform alle Formdaten der ersetzten Form überschreiben.
-ms.openlocfilehash: d2349da96bde7d141aada9066d56a4379f425fee
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Gibt an, ob die Werte der angegebenen Zellen in einem Master-Shape die Werte (einschließlich lokaler Werte) eines Shapes überschreiben, das während eines Shape-Ersetzungsvorgangs ersetzt wird. ReplaceLockShapeData bestimmt, ob die Shape-Daten des Master-Shapes alle Shape-Daten des zu ersetzenden Shapes überschreiben.
+ms.openlocfilehash: 98e6c5be4519a55f0207df53dc169604c0718cb4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33408873"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627646"
 ---
-# <a name="replacelockshapedata-cell-change-shape-behavior-section"></a>Zelle ReplaceLockShapeData (Abschnitt "Change Shape Behavior")
+# <a name="replacelockshapedata-cell-change-shape-behavior-section"></a>Zelle "ReplaceLockShapeData" (Abschnitt "Change Shape Behavior")
 
-Gibt an, ob die Werte der angegebenen Zellen in einer Masterform die Werte (einschließlich lokaler Werte) eines Shapes überschreiben, das während eines Shapeersetzungsvorgangs ersetzt wird. **ReplaceLockShapeData** bestimmt, ob die Formdaten der Masterform alle Formdaten der ersetzten Form überschreiben. 
+Gibt an, ob die Werte der angegebenen Zellen in einem Master-Shape die Werte (einschließlich lokaler Werte) eines Shapes überschreiben, das während eines Shape-Ersetzungsvorgangs ersetzt wird. **ReplaceLockShapeData** bestimmt, ob die Shape-Daten des Master-Shapes alle Shape-Daten des zu ersetzenden Shapes überschreiben. 
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|1 (TRUE)  <br/> |Alle Zeilen und Werte des Abschnitts **"Shape Data"** der Masterform werden in die Ersatzform kopiert, und alle lokalen Werte aus dem alten Shape, das ersetzt wird, werden verworfen.  <br/> |
-|0 (FALSE)  <br/> |Die Zeilen und Werte des **Abschnitts Shape Data** des Master-Shapes werden in die Ersetzungsform kopiert. Alle Zeilen im **Abschnitt Shape Data** der alten Form mit lokalen Werten werden auf die Ersatzform übertragen.  <br/> |
+|1 (TRUE)  <br/> |Alle Zeilen und Werte des **Shape-Datenabschnitts** des Master-Shapes werden in das Ersatz-Shape kopiert, und alle lokalen Werte aus dem alten Shape, das ersetzt wird, werden verworfen.  <br/> |
+|0 (FALSE)  <br/> |Die Zeilen und Werte des **Shape-Datenabschnitts** des Master-Shapes werden in das Ersatz-Shape kopiert. Alle Zeilen im **Abschnitt Shape-Daten** des alten Shapes mit lokalen Werten werden an das Ersatz-Shape übertragen.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie zum Erhalten eines Verweises auf die **Zelle ReplaceLockShapeData** anhand des Namens aus einer anderen Formel, nach dem Wert des **N-Attributs** eines **Cell-Elements** oder aus einem Programm mit der **CellsU-Eigenschaft:** 
+Verwenden Sie Folgendes, um einen Verweis auf die **Zelle "ReplaceLockShapeData"** anhand des Namens aus einer anderen Formel, anhand des Werts des **N-Attributs** eines **Cell-Elements** oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | ReplaceLockShapeData  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die **Zelle ReplaceLockShapeData** nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle **"ReplaceLockShapeData"** anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

@@ -5,21 +5,21 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d146ee74-0c3a-5fdd-b1aa-af6498550801
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 1df2c665f8e9d7a0bd6d47ec59b2adf706bead75
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: d096c9f50efa4590dc6a6f4fb0fd2f79329e6189
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33434144"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59629459"
 ---
 # <a name="upreade"></a>UPREADE
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Erweiterte Informationen zum Hochladen des Lesestatus eines Elements während des [Status des Upload-Lesestatus](upload-read-status-state.md).
+Erweiterte Informationen zum Hochladen des Lesestatus eines Elements während des Status des [Uploadlesestatus.](upload-read-status-state.md)
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -47,11 +47,11 @@ _ulFlags_
     
   - UPR_OK
     
-    - [in] Hochladen war erfolgreich. Der Client legt dies nach dem Hochladen von Informationen auf den Server fest.
+    - [in] Hochladen erfolgreich war. Der Client legt dies nach dem Hochladen von Informationen auf den Server fest.
     
   - UPR_COMMIT
     
-    - [in] Hochladen den Lesestatus des Elements jetzt anstatt bis zum [](upload-table-state.md) Ende des Status der Uploadtabelle zu warten, um mehrere Elemente zu verarbeiten. 
+    - [in] Hochladen den Lesestatus des Elements ab, anstatt bis zum Ende des [Uploadtabellenstatus](upload-table-state.md) zu warten, um mehrere Elemente im Batchprozess zu verarbeiten. 
     
 _skey_
   

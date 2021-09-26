@@ -1,20 +1,20 @@
 ---
-title: Recordset2. AddNew-Methode (DAO)
+title: Recordset2.AddNew-Methode (DAO)
 TOCTitle: AddNew Method
 ms:assetid: 25c7d207-185c-943b-405e-b138ffb8b3e2
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff191874(v=office.15)
 ms:contentKeyID: 48543792
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 49a69b5e8603e72faaba480ea9069d3668bd6de1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 9a8368247e1a0dbaa524f3adab4d534c1c0cc7e7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307497"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631790"
 ---
-# <a name="recordset2addnew-method-dao"></a>Recordset2. AddNew-Methode (DAO)
+# <a name="recordset2addnew-method-dao"></a>Recordset2.AddNew-Methode (DAO)
 
 **Gilt für**: Access 2013, Office 2013
  
@@ -22,9 +22,9 @@ Erstellt einen neuen Datensatz für ein aktualisierbares **Recordset2**-Objekt.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . AddNew
+*expression* .AddNew
 
-*Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset2-Objekt** darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 
@@ -36,7 +36,7 @@ Mit der **[Update](recordset2-update-method-dao.md)** -Methode können Sie nach 
 > [!HINWEIS] Wenn Sie eine **AddNew**-Methode aufrufen und dann durch einen beliebigen Vorgang zu einem anderen Datensatz wechseln, ohne **Update** zu verwenden, gehen Ihre Änderungen ohne Warnung verloren. Wenn Sie außerdem das **Recordset2** schließen oder die Prozedur beenden, die das **Recordset2** oder dessen **[Database](database-object-dao.md)** -Objekt deklariert, wird der neue Datensatz ohne Warnung verworfen.
 
 > [!NOTE]
-> [!HINWEIS] Wenn Sie **AddNew** in einem Microsoft Access-Arbeitsbereich verwenden und das Datenbankmodul eine neue Seite für den aktuellen Datensatz erstellen muss, ist die Seitensperre pessimistisch. Passt der neue Datensatz hingegen auf eine vorhandene Seite, ist die Seitensperre optimistisch.
+> Wenn Sie **AddNew** in einem Microsoft Access-Arbeitsbereich verwenden und das Datenbankmodul eine neue Seite für den aktuellen Datensatz erstellen muss, ist Seitensperrung pessimistisch. Wenn der neue Datensatz auf eine vorhandene Seite passt, ist Seitensperrung optimistisch.
 
 Wenn Sie noch nicht zum letzten Datensatz des **Recordset2**-Objekts gewechselt sind, werden Datensätze, die durch andere Prozesse zu Basistabellen hinzugefügt wurden, möglicherweise einbezogen, wenn sie hinter dem aktuellen Datensatz liegen. Wenn Sie einen Datensatz zu Ihrem eigenen **Recordset2** hinzufügen, ist er im **Recordset2** sichtbar und wird in die zugrunde liegende Tabelle einbezogen, in der er für neue **Recordset2**-Objekte sichtbar wird.
 
@@ -46,10 +46,10 @@ Die Position des neuen Datensatzes hängt vom Typ des **Recordset2**-Objekts ab:
 
 - In a table-type **Recordset2** object whose **[Index](recordset2-index-property-dao.md)** property has been set, records are returned in their proper place in the sort order. If you haven't set the **Index** property, new records are returned at the end of the **Recordset**.
 
-Der Datensatz, der vor dem Verwenden von **AddNew** aktuell war, bleibt der aktuelle Datensatz. Wenn Sie den neuen Datensatz zum aktuellen Datensatz machen möchten, können Sie die **[Bookmark](recordset2-bookmark-property-dao.md)** -Eigenschaft auf das durch die **[LastModified](recordset2-lastmodified-property-dao.md)** -Eigenschaft identifizierte Lesezeichen festlegen.
+Der Datensatz, der aktuell war, bevor Sie **AddNew** verwendet haben, bleibt aktuell. Wenn Sie den neuen Datensatz aktuell machen möchten, können Sie die **[Bookmark](recordset2-bookmark-property-dao.md)** -Eigenschaft auf das Bookmark festlegen, das von der **[LastModified](recordset2-lastmodified-property-dao.md)** -Eigenschaftseinstellung identifiziert wird.
 
 > [!NOTE]
-> [!HINWEIS] Es muss ein eindeutiger Index für den Datensatz in der zugrunde liegenden Datenquelle vorhanden sein, damit der Datensatz hinzugefügt, bearbeitet oder gelöscht werden kann. Andernfalls tritt im Aufruf der Methoden **AddNew**, **Delete** oder **Edit** in einem Microsoft Access-Arbeitsbereich ein Fehler vom Typ "Berechtigung verweigert" auf.
+> Es muss ein eindeutiger Index für den Datensatz in der zugrunde liegenden Datenquelle vorhanden sein, damit der Datensatz hinzugefügt, bearbeitet oder gelöscht werden kann. Andernfalls tritt im Aufruf der Methoden **AddNew**, **Delete** oder **Edit** in einem Microsoft Access-Arbeitsbereich ein Fehler vom Typ "Berechtigung verweigert" auf.
 
 ## <a name="example"></a>Beispiel
 

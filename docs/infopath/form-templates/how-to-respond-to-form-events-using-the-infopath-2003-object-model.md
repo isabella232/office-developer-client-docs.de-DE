@@ -1,27 +1,27 @@
 ---
-title: Antworten auf Formularereignisse mithilfe des InfoPath 2003-Objektmodells
+title: Reagieren auf Formularereignisse mithilfe des InfoPath 2003-Objektmodells
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 keywords:
-- Formularvorlagen [infopath 2007], Reagieren auf Ereignisse,InfoPath 2003-kompatible Formularvorlagen, Reagieren auf Formularereignisse
-localization_priority: Normal
+- Formularvorlagen [infopath 2007], reagieren auf Ereignisse, InfoPath 2003-kompatible Formularvorlagen, Reagieren auf Formularereignisse
+ms.localizationpriority: medium
 ms.assetid: 59e9c1ed-32a8-4bcd-bdfc-9aa568a34d2a
 description: Sie können Code schreiben, um auf unterschiedliche Ereignisse zu reagieren, die auftreten können, wenn ein Benutzer ein Formular ausfüllt. Für die Bearbeitung von Ereignissen in InfoPath erstellen Sie im InfoPath-Designer Ereignishandler.
-ms.openlocfilehash: b7347f882df991e64bdf4e76c471b1220a84dc58
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: bf3ad11e63cf975d40d0335d98767fa53876c61e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33433493"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631307"
 ---
-# <a name="respond-to-form-events-using-the-infopath-2003-object-model"></a>Antworten auf Formularereignisse mithilfe des InfoPath 2003-Objektmodells
+# <a name="respond-to-form-events-using-the-infopath-2003-object-model"></a>Reagieren auf Formularereignisse mithilfe des InfoPath 2003-Objektmodells
 
 Sie können Code schreiben, um auf unterschiedliche Ereignisse zu reagieren, die auftreten können, wenn ein Benutzer ein Formular ausfüllt. Für die Bearbeitung von Ereignissen in InfoPath erstellen Sie im InfoPath-Designer Ereignishandler.
   
-InfoPath-Ereignishandler sollten im InfoPath-Designer erstellt werden, da InfoPath bei Verwendung des InfoPath 2003-kompatiblen Objektmodells automatisch die richtige Deklaration hinzufügt und ein Attribut ([InfoPathEventHandlerAttribute](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.InfoPathEventHandlerAttribute.aspx) ) in der Codedatei eines Formulars (FormCode.cs oder FormCode.vb) verwendet, um den Ereignishandler zu identifizieren und zu senken. Nachdem Sie einen Ereignishandler erstellt haben, sollten Sie die zugehörige Deklaration und das Attribut in der Codedatei des Formulars nicht mehr ändern. 
+InfoPath-Ereignishandler sollten im InfoPath-Designer erstellt werden, da InfoPath bei Verwendung des InfoPath 2003-kompatiblen Objektmodells automatisch die richtige Deklaration hinzufügt und ein Attribut ([InfoPathEventHandlerAttribute](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.InfoPathEventHandlerAttribute.aspx) ) in der Codedatei eines Formulars (FormCode.cs oder FormCode.vb) anwendet, um den Ereignishandler zu identifizieren und zu senken. Nachdem Sie einen Ereignishandler erstellt haben, sollten Sie die zugehörige Deklaration und das Attribut in der Codedatei des Formulars nicht mehr ändern. 
   
-Informationen zum Erstellen der InfoPath-Ereignishandler finden Sie unter [Add an Event Handler Using the InfoPath 2003 Object Model](how-to-add-an-event-handler-using-the-infopath-2003-object-model.md).
+Informationen zum Erstellen der InfoPath-Ereignishandler finden Sie unter [Hinzufügen eines Ereignishandlers mithilfe des InfoPath 2003-Objektmodells.](how-to-add-an-event-handler-using-the-infopath-2003-object-model.md)
   
 ## <a name="overview-of-the-event-objects"></a>Übersicht über die Ereignisobjekte
 
@@ -34,10 +34,10 @@ Das InfoPath 2003-kompatible Objektmodell implementiert neun Ereignisobjekte, di
 |[DocContextChangeEvent](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.DocContextChangeEvent.aspx) <br/> |[OnContextChange](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnContextChange.aspx) <br/> |Gibt Informationen zum XML-DOM-Knoten (Document Object Model) zurück, bei dem es sich um den aktuellen Kontext des dem Formular zugrunde liegenden XML-Dokuments handelt.  <br/> |
 |[DocEvent](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.DocEvent.aspx) <br/> |[OnSwitchView](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnSwitchView.aspx) , [OnAfterImport](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnAfterImport.aspx) <br/> |Gibt einen Verweis auf das einem Formular zugrunde liegende XML-Dokument zurück, während die Ansicht gewechselt oder Formulare zusammengeführt werden.  <br/> |
 |[DocReturnEvent](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.DocReturnEvent.aspx) <br/> |[OnLoad](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnLoad.aspx) , [OnSubmitRequest](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnSubmitRequest.aspx) <br/> |Gibt einen Verweis auf das einem Formular zugrunde liegende XML-Dokument und den Rückgabestatus zurück, während ein Formular geladen oder gesendet wird.  <br/> |
-|[MergeEvent](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.MergeEvent.aspx) <br/> |[OnMergeRequest](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnMergeRequest.aspx) <br/> |Gibt Eigenschaften und Methoden zurück, die während eines **OnMergeRequest**-Ereignisses für die programmseitige Interaktion mit dem zugrunde liegenden XML-Dokument eines Formulars sowie für die Ermittlung von Zusammenführungseigenschaften, wie z. B. die Anzahl der zusammenzuführenden Dateien, verwendet werden können.  <br/> |
+|[MergeEvent](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.MergeEvent.aspx) <br/> |[Onmergerequest](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnMergeRequest.aspx) <br/> |Gibt Eigenschaften und Methoden zurück, die während eines **OnMergeRequest**-Ereignisses für die programmseitige Interaktion mit dem zugrunde liegenden XML-Dokument eines Formulars sowie für die Ermittlung von Zusammenführungseigenschaften, wie z. B. die Anzahl der zusammenzuführenden Dateien, verwendet werden können.  <br/> |
 |[SaveEvent](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SaveEvent.aspx) <br/> |[OnSaveRequest](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnSaveRequest.aspx) <br/> |Gibt eine Reihe von Eigenschaften und Methoden zurück, die während eines Speichervorgangs vom **OnSaveRequest**-Ereignishandler für die programmseitige Interaktion mit dem zugrunde liegenden XML-Dokument eines Formulars, die Festlegung der Speichereigenschaften und die Ausführung des Speichervorgangs verwendet werden können.  <br/> |
-|[SignEvent](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SignEvent.aspx) <br/> |[OnSign](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnSign.aspx) <br/> |Wird verwendet, um zusätzliche Daten zur digitalen Signatur hinzuzufügen.  <br/> |
-|[VersionUpgradeEvent](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.VersionUpgradeEvent.aspx) <br/> |[OnVersionUpgrade](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnVersionUpgrade.aspx) <br/> |Gibt einen Verweis auf das einem Formular zugrunde liegende XML-Dokument, den Rückgabestatus sowie die Dokument- und Lösungsversionsnummern zurück, während ein Versionsupgrade durchgeführt wird.  <br/> |
+|[SignEvent](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.SignEvent.aspx) <br/> |[Onsign](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnSign.aspx) <br/> |Wird verwendet, um zusätzliche Daten zur digitalen Signatur hinzuzufügen.  <br/> |
+|[VersionUpgradeEvent](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.VersionUpgradeEvent.aspx) <br/> |[Onversionupgrade](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnVersionUpgrade.aspx) <br/> |Gibt einen Verweis auf das einem Formular zugrunde liegende XML-Dokument, den Rückgabestatus sowie die Dokument- und Lösungsversionsnummern zurück, während ein Versionsupgrade durchgeführt wird.  <br/> |
    
 ## <a name="using-the-event-objects"></a>Verwenden der Ereignisobjekte
 
@@ -64,7 +64,7 @@ Public Sub FormEvents_OnLoad(ByVal e As DocReturnEvent)
 End Sub
 ```
 
-Beim Schreiben von Code für einen Ereignishandler können Sie die Eigenschaften und Methoden verwenden, die vom Ereignisobjekt implementiert werden, das über den **e-Parameter übergeben** wird. Im folgenden **OnBeforeChange-Ereignishandler** wird beispielsweise die [NewValue-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.DataDOMEvent.NewValue.aspx) des **DataDOMEvent-Ereignisobjekts** verwendet, um den Wert des Felds zu überprüfen, das gerade geändert wurde. Wenn er leer ist, wird die [ReturnMessage-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.DataDOMEvent.ReturnMessage.aspx) des **DataDOMEvent-Ereignisobjekts** verwendet, um dem Benutzer in einem Dialogfeld einen Fehler anzuzeigen, und die [ReturnStatus-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.DataDOMEvent.ReturnStatus.aspx) ist auf **false** festgelegt, was angibt, dass die vom Benutzer vorgenommenen Änderungen nicht akzeptiert werden sollten.
+Beim Schreiben von Code für einen Ereignishandler können Sie die Eigenschaften und Methoden verwenden, die vom Ereignisobjekt implementiert werden, das über den **e-Parameter** übergeben wird. Im folgenden **OnBeforeChange-Ereignishandler** wird beispielsweise die [NewValue-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.DataDOMEvent.NewValue.aspx) des **DataDOMEvent-Ereignisobjekts** verwendet, um den Wert des soeben geänderten Felds zu überprüfen. Wenn sie leer ist, wird die [ReturnMessage-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.DataDOMEvent.ReturnMessage.aspx) des **DataDOMEvent-Ereignisobjekts** verwendet, um dem Benutzer in einem Dialogfeld einen Fehler anzuzeigen, und die [ReturnStatus-Eigenschaft](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.DataDOMEvent.ReturnStatus.aspx) ist auf **"false"** festgelegt, was bedeutet, dass die vom Benutzer vorgenommenen Änderungen nicht akzeptiert werden sollen.
   
 ```cs
 [InfoPathEventHandler(MatchPath="/my:myFields/my:field1", 

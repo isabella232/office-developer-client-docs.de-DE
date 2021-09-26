@@ -1,20 +1,20 @@
 ---
-title: CellSet-Objekt (ADO MD)
+title: Cellset-Objekt (ADO MD)
 TOCTitle: Cellset object (ADO MD)
 ms:assetid: 28d4b3b9-f907-9ec0-00e1-9666c887cdf0
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249047(v=office.15)
 ms:contentKeyID: 48543869
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: c8cb75ad7277386cfe81b2edcffa234498318444
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 147ca9fb41c0c8d9209da4737c9e0cd680845559
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296514"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59622529"
 ---
-# <a name="cellset-object-ado-md"></a>CellSet-Objekt (ADO MD)
+# <a name="cellset-object-ado-md"></a>Cellset-Objekt (ADO MD)
 
 **Gilt für**: Access 2013, Office 2013
 

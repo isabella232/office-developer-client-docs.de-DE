@@ -7,13 +7,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249314(v=office.15)
 ms:contentKeyID: 48545053
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 9d3234f1d5f41fd9f07b8d98bf3df395067780ae
-ms.sourcegitcommit: 0419850d5c1b3439d9da59070201fb4952ca5d07
+ms.localizationpriority: medium
+ms.openlocfilehash: b15abbd02ee91013f6ec2d52c88554d1a4f80d96
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/28/2020
-ms.locfileid: "49734196"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59626547"
 ---
 # <a name="filter-property-ado"></a>Filter-Eigenschaft (ADO)
 
@@ -22,7 +22,7 @@ ms.locfileid: "49734196"
 
 Gibt einen Filter für Daten in einem [Recordset](recordset-object-ado.md) an.
 
-## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
+## <a name="settings-and-return-values"></a>Einstellungen- und Rückgabewerte
 
 Legt einen **Variant** -Wert fest oder gibt ihn zurück, der Folgendes enthalten kann:
 
@@ -36,24 +36,24 @@ Legt einen **Variant** -Wert fest oder gibt ihn zurück, der Folgendes enthalten
 
 Verwenden Sie die **Filter**-Eigenschaft, um Datensätze in einem **Recordset**-Objekt gezielt herauszufiltern. Das gefilterte **Recordset**-Objekt wird zum aktuellen Cursor. Andere Eigenschaften, deren Rückgabewerte auf dem aktuellen Cursor basieren, werden dadurch beeinflusst, wie z. B. [AbsolutePosition](absoluteposition-property-ado.md), [AbsolutePage](absolutepage-property-ado.md), [RecordCount](recordcount-property-ado.md) und [PageCount](pagecount-property-ado.md). Das liegt daran, dass der aktuelle Datensatz durch das Festlegen der **Filter**-Eigenschaft auf einen bestimmten Wert zum ersten Datensatz wechselt, der dem neuen Wert entspricht.
 
-Die Kriterien-Zeichenfolge setzt sich aus Klauseln im Format *FieldName-Operator-Value* zusammen (beispielsweise "LastName = ' Smith '"). Sie können zusammengesetzte Klauseln erstellen, indem Sie einzelne Klauseln mit **und** verketten (beispielsweise "LastName = ' Smith ' und FirstName = ' John '" **) oder (** beispielsweise "). Sie können zusammengesetzte Klauseln erstellen, indem Sie einzelne Klauseln mit **und** verketten (beispielsweise "LastName = ' Smith ' und FirstName = ' John '") oder **oder** (beispielsweise "LastName = ' Smith ' oder LastName = ' Jones '"). Halten Sie sich für Kriterienzeichenfolgen an die folgenden Richtlinien:
+Die Kriterienzeichenfolge besteht aus Klauseln im Format *FieldName-Operator-Value* (z. B. "LastName = 'Smith'"). Sie können Verbundklauseln erstellen, indem Sie einzelne Klauseln mit **AND** (z. B. "LastName = 'Smith' AND FirstName = 'John'") oder **OR** (z. B. ") verketten. Sie können Verbundklauseln erstellen, indem Sie einzelne Klauseln mit **AND** verketten (z. B. "LastName = 'Smith' AND FirstName = 'John'") oder **OR** (z. B. "LastName = 'Smith' OR LastName = 'Jones'"). Halten Sie sich für Kriterienzeichenfolgen an die folgenden Richtlinien:
 
   - *Feldname* muss ein gültiger Feldname aus dem **Recordset**-Objekt sein. Wenn der Feldname Leerzeichen enthält, müssen Sie ihn in eckige Klammern einschließen.
 
-  - Der *Operator* muss einer der folgenden sein: \<, \> , \<=, \> =, \<\> , = oder **like**.
+  - *Der Operator* muss einer der folgenden Werte sein: \<, \> , \<=, \> =, , = oder \<\> **LIKE**.
 
-  - *Value* ist der Wert, mit dem die Feldwerte verglichen werden (beispielsweise "Smith", \# 8/24/95 \# , 12,345 oder $50,00). Verwenden Sie einfache Anführungszeichen mit Zeichenfolgen und Pfundzeichen ( \# ) mit Datumsangaben. Bei Zahlen können Sie Dezimalzeichen, Dollarzeichen und die wissenschaftliche Schreibweise verwenden. Wenn **LIKE** als *Operator* fungiert, kann *Wert* Platzhalterzeichen enthalten. Nur das Sternchen ( \* ) und das Prozentzeichen (%) Wild Cards sind zulässig, und Sie müssen das letzte Zeichen in der Zeichenfolge sein. *Wert* darf nicht Null sein.
+  - *Wert* ist der Wert, mit dem Sie die Feldwerte vergleichen (z. B. 'Smith', \# 8/24/95, \# 12,345 oder $50,00). Verwenden Sie einfache Anführungszeichen mit Zeichenfolgen und Nummernzeichen ( \# ) mit Datumsangaben. Bei Zahlen können Sie Dezimalzeichen, Dollarzeichen und die wissenschaftliche Schreibweise verwenden. Wenn **LIKE** als *Operator* fungiert, kann *Wert* Platzhalterzeichen enthalten. Nur das Sternchen ( \* ) und das Prozentzeichen (%) sind zulässig, und sie müssen das letzte Zeichen in der Zeichenfolge sein. *Wert* darf nicht Null sein.
 
     > [!NOTE]
     > [!HINWEIS] Wenn einzelne Anführungszeichen in den Filterwert eingeschlossen werden sollen, verwenden Sie zwei einzelne Anführungszeichen zur Darstellung. Soll beispielsweise nach "O'Malley" gefiltert werden, lautet die Kriterienzeichenfolge "col1 = 'O''Malley'". Setzen Sie die Zeichenfolge zwischen Nummernzeichen (#), um einzelne Anführungszeichen am Anfang und am Ende des Filterwerts einzuschließen. Wenn Sie z. B. nach '1' filtern möchten, muss die Kriterienzeichenfolge "col1 = #'1'#" lauten.
 
--   Zwischen **and** und **or** gibt es keine Priorität. Die Klauseln können in Klammern zusammengefasst werden. Sie können jedoch keine Klauseln gruppieren, die von einem **oder** und dann die Gruppe einer anderen Klausel mit einem **und** beitreten, wie im folgenden Codeausschnitt hinzugefügt:  
+-   Es gibt keine Rangfolge zwischen **AND und** **OR.** Die Klauseln können in Klammern zusammengefasst werden. Sie können jedoch keine Klauseln gruppieren, die mit einem **OR** verknüpft sind, und dann die Gruppe mit **einer** anderen Klausel mit and verknüpfen, wie im folgenden Codeausschnitt gezeigt:  
  `(LastName = 'Smith' OR LastName = 'Jones') AND FirstName = 'John'`  
   
 -   Diesen Filter müssten Sie stattdessen folgendermaßen erstellen:  
  `(LastName = 'Smith' AND FirstName = 'John') OR (LastName = 'Jones' AND FirstName = 'John')`  
 
-  - In einer **like** -Klausel können Sie am Anfang und am Ende des Musters einen Platzhalter verwenden (beispielsweise "Nachname" wie " \* mit \* ") oder nur am Ende des Musters (beispielsweise "LastName" wie "Smit \* ").
+  - In einer **LIKE-Klausel** können Sie einen Platzhalter am Anfang und Am Ende des Musters verwenden (z. B. LastName Like ' \* mit \* ') oder nur am Ende des Musters (z. B. LastName Like 'Smit \* ').
 
 Die Filterkonstanten vereinfachen das Lösen einzelner Datensatzkonflikte bei der Batchaktualisierung, indem Sie beispielsweise nur die Datensätze anzeigen, die durch den letzten Aufruf der [UpdateBatch](updatebatch-method-ado.md)-Methode beeinflusst wurden.
 
@@ -65,7 +65,7 @@ Sobald die **Filter** -Eigenschaft festgelegt wird, wechselt die aktuelle Datens
 
 Unter der [Bookmark](bookmark-property-ado.md)-Eigenschaft finden Sie eine Erklärung der Textmarkenwerte, aus denen Sie ein Array zur Verwendung mit der **Filter** -Eigenschaft erstellen können.
 
-Nur **Filter** in Form von kriterienzeichen (z. b. OrderDate \> "12/31/1999") wirken sich auf den Inhalt eines persistenten **Recordset-Objekts** aus. **Filter**, die mit einem Array aus **Textmarken** oder mithilfe eines Werts aus **FilterGroupEnum** erstellt wurden, haben keinen Einfluss auf den Inhalt des permanenten Recordsets. Diese Regeln gelten für **Recordset**-Objekte, die mit clientbasierten oder serverbasierten Cursorn erstellt wurden.
+Nur **Filter** in Form von Kriterienzeichenfolgen (z. B. OrderDate \> '31.12.1999') wirken sich auf den Inhalt eines permanenten **Recordsets** aus. **Filter**, die mit einem Array aus **Textmarken** oder mithilfe eines Werts aus **FilterGroupEnum** erstellt wurden, haben keinen Einfluss auf den Inhalt des permanenten Recordsets. Diese Regeln gelten für **Recordset**-Objekte, die mit clientbasierten oder serverbasierten Cursorn erstellt wurden.
 
 > [!NOTE]
 > [!HINWEIS] Angenommen, Sie wenden das Kennzeichen **adFilterPendingRecords** auf ein gefiltertes und geändertes **Recordset** -Objekt im Batchaktualisierungsmodus an. In diesem Fall ist das resultierende **Recordset** -Objekt leer, wenn der Filter auf dem Schlüsselfeld einer Tabelle mit einem Schlüssel basierte und die Änderung zu den Schlüsselfeldwerten vorgenommen wurden. Das resultierende **Recordset** -Objekt ist nicht leer, wenn eine der folgenden Aussagen zutrifft:

@@ -3,17 +3,17 @@ title: Erstellen eines Profils mithilfe des Profil-Assistenten
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 4b611818-f99f-43a2-9f6b-1aa5b9564d1d
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: a93cfb05d8abfffc9f55a7ea48efc3c3451dddbb
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: eed28b64effa080a604e1ea97ddf5911796e07ce
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33411736"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631034"
 ---
 # <a name="creating-a-profile-by-using-the-profile-wizard"></a>Erstellen eines Profils mithilfe des Profil-Assistenten
 
@@ -21,8 +21,8 @@ ms.locfileid: "33411736"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Der Profil-Assistent ist ein MAPI-Feature, mit dem ein Benutzer ein Profil auf einfachste Weise erstellen kann. Der Profil-Assistent zeigt eine Reihe von Dialogfelder an, in denen der Benutzer aufgefordert wird, Nachrichtendienste auszuwählen und Werte für einige der wichtigsten Konfigurationseigenschaften ein eingeben. Für die meisten anderen erforderlichen Eigenschaften verwendet der Profil-Assistent die bereitgestellten Standardwerte. Rufen Sie zum Aufrufen des Profil-Assistenten **LaunchWizard** auf, eine Funktion, die auf dem [LAUNCHWIZARDENTRY-Prototyp](launchwizardentry.md) basiert. 
+Der Profil-Assistent ist ein MAPI-Feature, mit dem ein Benutzer ein Profil auf die einfachste Weise erstellen kann. Der Profil-Assistent zeigt eine Reihe von Dialogfeldern an, in denen der Benutzer Nachrichtendienste auswählen und Werte für einige der wichtigsten Konfigurationseigenschaften eingeben kann. Für die meisten anderen erforderlichen Eigenschaften verwendet der Profil-Assistent die angegebenen Standardwerte. Um den Profil-Assistenten aufzurufen, rufen Sie **LaunchWizard** auf, eine Funktion, die auf dem [LAUNCHWIZARDENTRY-Prototyp](launchwizardentry.md) basiert. 
   
-Der Benutzer kann dem neuen Profil, das den Profil-Assistenten unterstützt, nur diese Nachrichtendienste und Dienstanbieter hinzufügen. Da für jeden Nachrichtendienst möglicherweise mehr Eigenschaften festgelegt werden müssen, als der Profil-Assistent verarbeiten kann, sollten Sie beachten, dass bei verwendung dieses Ansatzes eine oder mehrere der ausgewählten Dienste oder Anbieter unvollständig konfiguriert werden können.
+Der Benutzer kann dem neuen Profil, das den Profil-Assistenten unterstützt, nur diese Nachrichtendienste und Dienstanbieter hinzufügen. Da für jeden Nachrichtendienst möglicherweise mehr Eigenschaften festgelegt werden müssen, als der Profil-Assistent behandeln kann, beachten Sie, dass bei Verwendung dieses Ansatzes eine oder mehrere der ausgewählten Dienste oder Anbieter unvollständig konfiguriert werden können.
   
 

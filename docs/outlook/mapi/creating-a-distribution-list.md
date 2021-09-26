@@ -3,27 +3,27 @@ title: Erstellen einer Verteilerliste
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: b63a6024-910d-4569-a3b4-c3ebf0b32c3d
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 7108ae215562169244100a56cc9b9208d78b1893
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 5fe588b31de1c84f1eba3633252cd265760fe378
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33424175"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631073"
 ---
 # <a name="creating-a-distribution-list"></a>Erstellen einer Verteilerliste
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Clients können eine Verteilerliste direkt in einem veränderbaren Container wie dem persönlichen Adressbuch (PAB) erstellen.
+Clients können eine Verteilerliste direkt in einem modifizierbaren Container wie dem persönlichen Adressbuch (PAB) erstellen.
   
 **So erstellen Sie eine Verteilerliste im PAB**
   
-1. Erstellen Sie ein #A0 mit einem Eigenschaftstag, **PR_DEF_CREATE_DL** ([PidTagDefCreateDl](pidtagdefcreatedl-canonical-property.md)), wie folgt:
+1. Erstellen Sie ein Eigenschaftentagarray der Größe mit einem Eigenschaftentag, **PR_DEF_CREATE_DL** ([PidTagDefCreateDl](pidtagdefcreatedl-canonical-property.md)), wie folgt:
     
    ```cpp
     SizedPropTagArray(1, tagaDefaultDL) =
@@ -35,7 +35,7 @@ Clients können eine Verteilerliste direkt in einem veränderbaren Container wie
     };
    ```
 
-2. Rufen [Sie IAddrBook::GetPAB auf,](iaddrbook-getpab.md) um die Eintrags-ID des PAB abzurufen. Wenn ein Fehler auftritt oder **GetPAB** Null oder NULL zurückgibt, fahren Sie nicht fort. 
+2. Rufen Sie [IAddrBook::GetPAB](iaddrbook-getpab.md) auf, um den Eintragsbezeichner des PAB abzurufen. Wenn ein Fehler auftritt oder **GetPAB** Null oder NULL zurückgibt, fahren Sie nicht fort. 
     
    ```cpp
     LPENTRYID peidPAB = NULL;
@@ -43,7 +43,7 @@ Clients können eine Verteilerliste direkt in einem veränderbaren Container wie
     lpIAddrBook->GetPAB(&cbeidPAB, &peidPAB);
    ```
 
-3. Rufen [Sie IAddrBook::OpenEntry auf,](iaddrbook-openentry.md) um das PAB zu öffnen. Der  _ulObjType-Ausgabeparameter_ sollte auf MAPI_ABCONT. 
+3. Rufen Sie [IAddrBook::OpenEntry](iaddrbook-openentry.md) auf, um das PAB zu öffnen. Der  _ulObjType-Ausgabeparameter_ sollte auf MAPI_ABCONT festgelegt werden. 
     
    ```cpp
     ULONG ulObjType = 0;
@@ -64,15 +64,15 @@ Clients können eine Verteilerliste direkt in einem veränderbaren Container wie
     
    ```
 
-5. Wenn **GetProps fehlschlägt:** 
+5. Wenn **GetProps** fehlschlägt: 
     
-   1. Rufen Sie die [IMAPIProp::OpenProperty-Methode](imapiprop-openproperty.md) des PAB auf, um die **PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) -Eigenschaft mit der **IMAPITable-Schnittstelle zu** öffnen. 
+   1. Rufen Sie die [IMAPIProp::OpenProperty-Methode](imapiprop-openproperty.md) des PAB auf, um die **eigenschaft PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) mit der **IMAPITable-Schnittstelle** zu öffnen. 
       
-   2. Erstellen Sie eine Eigenschaftseinschränkung, um nach der Zeile mit der Spalte **PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) zu suchen, die "MAPIPDL" entspricht. 
+   2. Erstellen Sie eine Eigenschaftseinschränkung, um nach der Zeile zu suchen, deren **spalte PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md)) gleich "MAPIPDL" ist. 
       
-   3. Rufen [Sie IMAPITable::FindRow auf,](imapitable-findrow.md) um diese Zeile zu finden. 
+   3. Rufen Sie [IMAPITable::FindRow](imapitable-findrow.md) auf, um diese Zeile zu suchen. 
     
-6. Speichern Sie die von **GetProps** oder FindRow zurückgegebene **Eintrags-ID.**
+6. Speichern Sie den Von GetProps oder **FindRow** **zurückgegebenen Eintragsbezeichner.**
     
    ```cpp
     peidDefDLTpl = lpspvDefDLTpl->Value.bin.pb;
@@ -80,7 +80,7 @@ Clients können eine Verteilerliste direkt in einem veränderbaren Container wie
     
    ```
 
-7. Rufen Sie die [IABContainer::CreateEntry-Methode](iabcontainer-createentry.md) des PAB auf, um einen neuen Eintrag mithilfe der Vorlage zu erstellen, die durch die gespeicherte Eintrags-ID dargestellt wird. Gehen Sie nicht davon aus, dass es sich bei dem zurückgegebenen Objekt um eine Verteilerliste und nicht um einen Messagingbenutzer handelt, wenn dieser Aufruf remote ist. Beachten Sie, dass CREATE_CHECK_DUP im  _ulFlags-Parameter_ übergeben wird, um zu verhindern, dass der Eintrag zweimal hinzugefügt wird. 
+7. Rufen Sie die [IABContainer::CreateEntry-Methode](iabcontainer-createentry.md) des PAB auf, um einen neuen Eintrag mithilfe der Vorlage zu erstellen, die durch den gespeicherten Eintragsbezeichner dargestellt wird. Gehen Sie nicht davon aus, dass es sich bei dem zurückgegebenen Objekt um eine Verteilerliste und nicht um einen Messagingbenutzer handelt, wenn dieser Anruf remote ist. Beachten Sie, dass das flag CREATE_CHECK_DUP im  _ulFlags-Parameter_ übergeben wird, um zu verhindern, dass der Eintrag zweimal hinzugefügt wird. 
     
    ```cpp
     lpPABCont->CreateEntry(cbeidDefDLTpl,
@@ -89,16 +89,16 @@ Clients können eine Verteilerliste direkt in einem veränderbaren Container wie
                     &lpNewPABEntry);
    ```
 
-8. Rufen Sie die **IUnknown::QueryInterface-Methode** des neuen Eintrags auf, übergeben Sie IID_IDistList als Schnittstellenbezeichner, um zu ermitteln, ob es sich bei dem Eintrag um eine Verteilerliste handelt und unterstützt die [IDistList : IMAPIContainer-Schnittstelle.](idistlistimapicontainer.md) Da **CreateEntry** einen **IMAPIProp-Zeiger** anstelle des spezifischeren **IMailUser-** oder **IDistList-Zeigers** zurückgibt, überprüfen Sie, ob ein Verteilerlistenobjekt erstellt wurde. Wenn **QueryInterface** erfolgreich ist, können Sie sicher sein, dass Sie eine Verteilerliste anstelle eines Messagingbenutzers erstellt haben. 
+8. Rufen Sie die **IUnknown::QueryInterface-Methode** des neuen Eintrags auf, und übergeben Sie IID_IDistList als Schnittstellenbezeichner, um zu ermitteln, ob der Eintrag eine Verteilerliste ist und die [IDistList : IMAPIContainer-Schnittstelle](idistlistimapicontainer.md) unterstützt. Da **CreateEntry** einen **IMAPIProp-Zeiger** anstelle des spezifischeren **IMailUser-** oder **IDistList-Zeigers** zurückgibt, überprüfen Sie, ob ein Verteilerlistenobjekt erstellt wurde. Wenn **QueryInterface** erfolgreich ist, können Sie sicher sein, dass Sie eine Verteilerliste anstelle eines Messagingbenutzers erstellt haben. 
     
-9. Rufen Sie die [IMAPIProp::SetProps-Methode](imapiprop-setprops.md) der Verteilerliste auf, um den Anzeigenamen und andere Eigenschaften festlegen. 
+9. Rufen Sie die [IMAPIProp::SetProps-Methode](imapiprop-setprops.md) der Verteilerliste auf, um den Anzeigenamen und andere Eigenschaften festzulegen. 
     
 10. Rufen Sie die [IABContainer::CreateEntry-Methode](iabcontainer-createentry.md) der Verteilerliste auf, um einen oder mehrere Messagingbenutzer hinzuzufügen. 
     
-11. Rufen Sie die [IMAPIProp::SaveChanges-Methode](imapiprop-savechanges.md) der Verteilerliste auf, wenn Sie zum Speichern bereit sind. Legen Sie zum Abrufen der Eintrags-ID der gespeicherten Verteilerliste das Flag KEEP_OPEN_READWRITE und rufen Sie [dann IMAPIProp::GetProps](imapiprop-getprops.md) auf, der die **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) -Eigenschaft anfordert.
+11. Rufen Sie die [IMAPIProp::SaveChanges-Methode](imapiprop-savechanges.md) der Verteilerliste auf, wenn Sie bereit sind, sie zu speichern. Um den Eintragsbezeichner der gespeicherten Verteilerliste abzurufen, legen Sie das KEEP_OPEN_READWRITE Flag fest, und rufen Sie dann [IMAPIProp::GetProps auf,](imapiprop-getprops.md) das die **eigenschaft PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) anfordert.
     
-12. Geben Sie die neue Verteilerliste und das PAB frei, indem Sie ihre **IUnknown::Release-Methoden** aufrufen. 
+12. Release the new distribution list and the PAB by calling their **IUnknown::Release** methods. 
     
-13. Rufen [Sie MAPIFreeBuffer auf,](mapifreebuffer.md) um den Arbeitsspeicher für die Eintrags-ID des PAB und das Array des Eigenschaftstags der Größe frei zu geben. 
+13. Rufen Sie [MAPIFreeBuffer](mapifreebuffer.md) auf, um den Speicher für den Eintragsbezeichner des PAB und das Array der Eigenschaftentags der Größe freizugeben. 
     
 

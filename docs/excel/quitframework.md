@@ -7,22 +7,22 @@ ms.topic: reference
 f1_keywords:
 - QuitFramework
 keywords:
-- quitframework-Funktion
-localization_priority: Normal
+- Quitframework-Funktion
+ms.localizationpriority: medium
 ms.assetid: d17a3efe-c278-4ef1-b8f9-b958ae012361
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 9408a7938927214802935e54ec8e53b1469e5016
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8349a3511c4ac3bfaf091ff7e29467e8ef228779
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33408572"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631510"
 ---
 # <a name="quitframework"></a>QuitFramework
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Framework library function that uninitializes the Framework library, which simply re-initializes the temporary **XLOPER** /  **XLOPER12** memory data structures, freeing any memory that has already been allocated. 
+Framework-Bibliotheksfunktion, die die Framework-Bibliothek entinitialisiert, wodurch die **temporären XLOPER** /  **XLOPER12-Speicherdatenstrukturen** einfach neu initialisiert werden, sodass bereits zugewiesener Speicher freigegeben wird. 
   
 ```cs
 short WINAPI QuitFramework(void);

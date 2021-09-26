@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.WIZARDENTRY
 api_type:
 - COM
 ms.assetid: e807c6b5-06cd-4ade-9d9e-69ba6abd1614
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 907984a80dbb6c5464f95def1481d002f9d6638a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 1a61d77c98766acf57bdb24865624023e0145557
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33430679"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59629445"
 ---
 # <a name="wizardentry"></a>WIZARDENTRY
 
@@ -25,13 +25,13 @@ ms.locfileid: "33430679"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Definiert eine Einstiegspunktfunktion des Dienstanbieters, die vom Profil-Assistenten aufgerufen wird, um genügend Informationen zum Anzeigen der Konfigurationseigenschaftsblätter des Anbieters abzurufen. 
+Definiert eine Dienstanbieter-Einstiegspunktfunktion, die der Profil-Assistent aufruft, um genügend Informationen zum Anzeigen der Konfigurationseigenschaftenblätter des Anbieters abzurufen. 
   
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |Mapiwz.h  <br/> |
 |Definierte Funktion implementiert von:  <br/> |Dienstanbieter  <br/> |
-|Definierte Funktion, die von:  <br/> |MAPI-Profil-Assistent  <br/> |
+|Definierte Funktion aufgerufen von:  <br/> |MAPI-Profil-Assistent  <br/> |
    
 ```cpp
 ULONG WIZARDENTRY(
@@ -55,11 +55,11 @@ ULONG WIZARDENTRY(
     
  _lppDlgProc_
   
-> [out] Zeiger auf eine standardmäßige Windows, die vom Profil-Assistenten aufgerufen wird, um den Anbieter über verschiedene Ereignisse zu benachrichtigen. 
+> [out] Zeiger auf eine standardmäßige Windows Dialogfeldprozedur, die vom Profil-Assistenten aufgerufen wird, um den Anbieter über verschiedene Ereignisse zu benachrichtigen. 
     
  _lpMAPIProp_
   
-> [in] Zeiger auf eine Eigenschaftsschnittstellenimplementierung, die Zugriff auf die Konfigurationseigenschaften bietet. 
+> [in] Zeiger auf eine Implementierung der Eigenschaftenschnittstelle, die Zugriff auf die Konfigurationseigenschaften bietet. 
     
  _lpMapiSupportObject_
   
@@ -73,20 +73,20 @@ S_OK
     
 MAPI_E_CALL_FAILED 
   
-> Ein Fehler mit unerwartetem oder unbekanntem Ursprung verhinderte den Abschluss des Vorgangs.
+> Ein Fehler mit unerwartetem oder unbekanntem Ursprung verhinderte, dass der Vorgang abgeschlossen wurde.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Der Profil-Assistent ruft die **WIZARDENTRY-basierte** Funktion auf, wenn die Konfigurationsbenutzerschnittstelle des Dienstanbieters angezeigt werden kann. Wenn der Profil-Assistent alle Anbieter konfiguriert hat, schreibt er die Konfigurationseigenschaften in das Profil, indem er [IMsgServiceAdmin::ConfigureMsgService aufruft.](imsgserviceadmin-configuremsgservice.md) 
+Der Profil-Assistent ruft die **WIZARDENTRY-basierte** Funktion auf, wenn sie bereit ist, die Konfigurations-Benutzeroberfläche des Dienstanbieters anzuzeigen. Wenn der Profil-Assistent alle Anbieter konfiguriert hat, werden die Konfigurationseigenschaften in das Profil geschrieben, indem [IMsgServiceAdmin::ConfigureMsgService](imsgserviceadmin-configuremsgservice.md)aufgerufen wird. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Der Name der **WIZARDENTRY-basierten** Funktion muss im WIZARD_ENTRY_NAME MAPISVC.INF platziert werden. 
+Der Name der **WIZARDENTRY-basierten** Funktion muss im WIZARD_ENTRY_NAME Eintrag in MAPISVC.INF platziert werden. 
   
-Der Ressourcenname ist der der Dialogfeldressource, die im Bereich des Profil-Assistenten gerendert wird. Die übergebene Ressource muss alle Seiten in einer einzelnen Dialogressource enthalten. Wenn der Profil-Assistent diese Ressource empfängt, ignoriert er die Dialogformatvorlage, aber nicht die Steuerelementformatvorlagen und erstellt alle Steuerelemente als untere Steuerelemente der Seite Profil-Assistent. Alle Steuerelemente werden zunächst ausgeblendet. Anbieter sollten sicherstellen, dass die Koordinaten für ihre Steuerelemente null- oder nullbasierte Sind und eine maximale Breite von 200 Dialogeinheiten und eine maximale Höhe von 150 Dialogeinheiten nicht überschreiten. Steuerelementbezeichner unter 400 sind für den Profil-Assistenten reserviert. Der Profil-Assistent zeigt den Titel des Anbieters in fett formatierten Text über der Benutzeroberfläche des Anbieters an. 
+Der Ressourcenname ist der Name der Dialogressource, die im Bereich des Profil-Assistenten gerendert wird. Die ressource, die übergeben wird, muss alle Seiten in einer einzelnen Dialogressource enthalten. Wenn der Profil-Assistent diese Ressource empfängt, ignoriert er die Dialogformatvorlage, aber nicht die Steuerelementstile und erstellt alle Steuerelemente als untergeordnete Elemente der Seite des Profil-Assistenten. Alle Steuerelemente werden anfänglich ausgeblendet. Anbieter sollten sicherstellen, dass die Koordinaten für ihre Steuerelemente null- oder nullbasiert sind und eine maximale Breite von 200 Dialogfeldeinheiten und eine maximale Höhe von 150 Dialogfeldeinheiten nicht überschreiten. Steuerelement-IDs unter 400 sind für den Profil-Assistenten reserviert. Der Profil-Assistent zeigt den Titel des Anbieters in fettem Text über der Benutzeroberfläche des Anbieters an. 
   
-Der im  _lpMAPIProp-Parameter_ bereitgestellte Eigenschaftsschnittstellenzeiger sollte vom Anbieter für zukünftige Verweise beibehalten werden. Der Profil-Assistent behandelt nur die grundlegendsten Eigenschaften, und der Anbieter kann die Implementierung der Eigenschaftenschnittstelle verwenden, um zusätzliche Eigenschaften zu enthalten. Während der Konfiguration sollten Anbieter dem Objekt, das die Eigenschaftsschnittstelle implementiert, ihre Konfigurationseigenschaften hinzufügen. Nachdem alle Anbieter konfiguriert wurden, fügt der Profil-Assistent diese Eigenschaften dem Profil hinzu. 
+Der im  _lpMAPIProp-Parameter_ angegebene Eigenschaftenschnittstellenzeiger sollte vom Anbieter für zukünftige Verweise beibehalten werden. Der Profil-Assistent behandelt nur den grundlegendsten Satz von Eigenschaften, und der Anbieter kann die Implementierung der Eigenschaftenschnittstelle verwenden, um zusätzliche Eigenschaften einzuschließen. Während der Konfiguration sollten Anbieter ihre Konfigurationseigenschaften dem Objekt hinzufügen, das die Eigenschaftenschnittstelle implementiert. Nachdem alle Anbieter konfiguriert wurden, fügt der Profil-Assistent diese Eigenschaften zum Profil hinzu. 
   
-Weitere Informationen zur Verwendung dieser Funktion finden Sie unter [Supporting Message Service Configuration](supporting-message-service-configuration.md). 
+Weitere Informationen zur Verwendung dieser Funktion finden Sie unter Unterstützen der [Nachrichtendienstkonfiguration.](supporting-message-service-configuration.md) 
   
 

@@ -1,39 +1,39 @@
 ---
-title: Sections (Visio ShapeSheet Reference)
+title: Abschnitte (Visio ShapeSheet-Referenz)
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 982ed30a-bdf3-4c1a-9788-43b5933ff631
-ms.openlocfilehash: dbfb770b86f768bf4860c7298f27b7b79413fd5a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 6b5bb94e1a9b4d327401ea6795555a6ba14e9829
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33419226"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627513"
 ---
-# <a name="sections-visio-shapesheet-reference"></a>Sections (Visio ShapeSheet Reference)
+# <a name="sections-visio-shapesheet-reference"></a>Abschnitte (Visio ShapeSheet-Referenz)
 
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
 - [Abschnitt "1-D Endpoints"](1-d-endpoints-section.md)
     
-- [Abschnitt "3D-Rotationseigenschaften"](3-d-rotation-properties-section.md)
+- [Abschnitt "3D Rotation Properties"](3-d-rotation-properties-section.md)
     
 - [Im Abschnitt Aktion-Tag](action-tag-section.md)
     
 - [Abschnitt "Actions"](actions-section.md)
     
-- [Abschnitt "Zusätzliche Effekteigenschaften"](additional-effect-properties-section.md)
+- [Abschnitt "Additional Effect Properties"](additional-effect-properties-section.md)
     
 - [Abschnitt "Alignment"](alignment-section.md)
     
 - [Abschnitt "Annotation"](annotation-section.md)
     
-- [Abschnitt "Abschrägungseigenschaften"](bevel-properties-section.md)
+- [Abschnitt "Bevel Properties"](bevel-properties-section.md)
     
-- [Abschnitt "Shape-Verhalten ändern"](change-shape-behavior-section.md)
+- [Abschnitt "Change Shape Behavior"](change-shape-behavior-section.md)
     
 - [Abschnitt "Character"](character-section.md)
     
@@ -47,7 +47,7 @@ ms.locfileid: "33419226"
     
 - [Abschnitt "Fill Format"](fill-format-section.md)
     
-- [Abschnitt "Füllgradient"](fill-gradient-section.md)
+- [Abschnitt "Fill Gradient"](fill-gradient-section.md)
     
 - [Abschnitt "Foreign Image Info"](foreign-image-info-section.md)
     
@@ -69,7 +69,7 @@ ms.locfileid: "33419226"
     
 - [Abschnitt "Line Format"](line-format-section.md)
     
-- [Abschnitt "Linienverlauf"](line-gradient-section.md)
+- [Abschnitt "Line Gradient"](line-gradient-section.md)
     
 - [Abschnitt "Miscellaneous"](miscellaneous-section.md)
     
@@ -107,7 +107,7 @@ ms.locfileid: "33419226"
     
 - [Abschnitt "Text Transform"](text-transform-section.md)
     
-- [Abschnitt "Designeigenschaften"](theme-properties-section.md)
+- [Abschnitt "Theme Properties"](theme-properties-section.md)
     
 - [Abschnitt "User-defined Cells"](user-defined-cells-section.md)
     

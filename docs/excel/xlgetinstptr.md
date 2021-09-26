@@ -4,21 +4,21 @@ manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a166f39c-f10b-4e56-8b5d-e6a54ee08c8f
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: fd4b4ad5bf52f29384ef7e0ba738c350189f471e
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 6ac86bce80520c924fcc3d50ffd04f186a3d29e2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33405282"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59631412"
 ---
 # <a name="xlgetinstptr"></a>xlGetInstPtr
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Gibt das Instanzhandle der Instanz des Microsoft Excel, die derzeit eine DLL aufruft.
+Gibt das Instanzhandle der Instanz von Microsoft Excel zurück, die derzeit eine DLL aufruft.
   
 ```cs
 Excel4(xlGetInstPtr, LPXLOPER pxRes, 0);Excel12(xlGetInstPtr, LPXLOPER12 pxRes, 0);
@@ -30,19 +30,19 @@ Diese Funktion hat keine Argumente.
   
 ## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-Das Instanzhandle (**xltypeBigData**) wird im **Feld val.bigdata.h.hdata** angezeigt. 
+Das Instanzhandle (**xltypeDigData**) befindet sich im **Feld "val.bigdata.h.hdata".** 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Funktion kann verwendet werden, um zwischen mehreren ausgeführten Instanzen von Excel, die die DLL aufrufen, zu unterscheiden.
+Diese Funktion kann verwendet werden, um zwischen mehreren ausgeführten Instanzen von Excel zu unterscheiden, die die DLL aufrufen.
   
-Diese Funktion gibt einen korrekten Wert mit 32-Bit- und 64-Bit-Versionen von Excel. Sie wurde in Excel 2010 als Erweiterung der [xlGetInst-Funktion](xlgetinst.md) eingeführt, die nur mit 32-Bit-Versionen von Excel. 
+Diese Funktion gibt einen korrekten Wert mit 32-Bit- und 64-Bit-Versionen von Excel zurück. Sie wurde in Excel 2010 als Erweiterung der [xlGetInst-Funktion](xlgetinst.md) eingeführt, die nur mit 32-Bit-Versionen von Excel ordnungsgemäß funktioniert. 
   
-Diese Funktion funktioniert ordnungsgemäß, wenn sie mit den [Excel4- und Excel12-Varianten](excel4-excel12.md) der API-Rückruffunktionen aufgerufen wird, da **sowohl XLOPER** als auch **XLOPER12** dieselbe Struktur haben, die den **xltypeBigData-Werttyp** unterstützt. 
+Diese Funktion funktioniert ordnungsgemäß, wenn sie mithilfe der [Excel4- und Excel12-Varianten](excel4-excel12.md) der API-Rückruffunktionen aufgerufen wird, da **XLOPER** und **XLOPER12** dieselbe Struktur aufweisen, die den **XltypeBigData-Werttyp** unterstützt. 
   
 ## <a name="example"></a>Beispiel
 
-Im folgenden Beispiel wird die Instanz der letzten Kopie von Excel, die sie aufgerufen hat, mit der aktuellen Kopie von Excel, die sie aufgerufen hat, verglichen. Wenn sie identisch sind, wird 1 zurückgegeben. Andern falls nicht, wird 0 zurückgegeben. Wenn die Funktion fehlschlägt, gibt sie -1 zurück. Dieses Beispiel funktioniert sowohl mit 32-Bit- als auch mit 64-Bit-Excel.
+Im folgenden Beispiel wird die Instanz der letzten Kopie von Excel, die sie aufgerufen hat, mit der aktuellen Kopie von Excel verglichen, die sie aufgerufen hat. Wenn sie identisch sind, wird 1 zurückgegeben. ist dies nicht der Fehler, wird 0 zurückgegeben. wenn die Funktion fehlschlägt, wird -1 zurückgegeben. Dieses Beispiel funktioniert sowohl mit 32-Bit- als auch mit 64-Bit-Versionen von Excel.
   
 `\SAMPLES\EXAMPLE\EXAMPLE.C`
   

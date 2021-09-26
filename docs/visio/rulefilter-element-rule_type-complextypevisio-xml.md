@@ -4,19 +4,19 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b05497e6-722f-9203-e03c-0f14a712cddb
-description: Gibt den logischen Ausdruck an, der bestimmt, ob die Gültigkeitsprüfungsregel auf ein Zielobjekt angewendet werden soll.
-ms.openlocfilehash: 3abcd7e2dd093fa8e2321052e73835db22c150db
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+description: Gibt den logischen Ausdruck an, der bestimmt, ob die Überprüfungsregel auf ein Zielobjekt angewendet werden soll.
+ms.openlocfilehash: 261cd934d0350a9e045f4795c5b5ce58464eb742
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34541680"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59627576"
 ---
 # <a name="rulefilter-element-rule_type-complextype-visio-xml"></a>RuleFilter-Element (Rule_Type complexType) (Visio XML)
 
-Gibt den logischen Ausdruck an, der bestimmt, ob die Gültigkeitsprüfungsregel auf ein Zielobjekt angewendet werden soll.
+Gibt den logischen Ausdruck an, der bestimmt, ob die Überprüfungsregel auf ein Zielobjekt angewendet werden soll.
   
 ## <a name="element-information"></a>Informationen zum Element
 
@@ -36,7 +36,7 @@ Gibt den logischen Ausdruck an, der bestimmt, ob die Gültigkeitsprüfungsregel 
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -52,6 +52,6 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|Formel  <br/> |xsd:string  <br/> |Optional  <br/> |Stellt die Formel des Elements dar.  <br/> |Werte der xsd:string.  <br/> |
+|Formel  <br/> |xsd:string  <br/> |Optional  <br/> |Stellt die Formel des Elements dar.  <br/> |Werte des xsd:string-Werts.  <br/> |
    
 
