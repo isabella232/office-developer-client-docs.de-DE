@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff193195(v=office.15)
 ms:contentKeyID: 48544578
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 3eeaf8bf46d8673731243a1161ac578062a01f89
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: e7621bb40aa7515ab24c914fc5b3460cae91ef04
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307042"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611658"
 ---
 # <a name="relation-object-dao"></a>Relation-Objekt (DAO)
 
@@ -21,7 +21,7 @@ ms.locfileid: "32307042"
 
 Ein **Relation**-Objekt stellt eine Beziehung zwischen Feldern in Tabellen oder Abfragen dar (gilt nur für Microsoft Access-Datenbanken).
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Sie können mit dem **Relation**-Objekt neue Beziehungen erstellen und vorhandene Beziehungen in der Datenbank überprüfen.
 
@@ -51,9 +51,9 @@ Verwenden Sie die **CreateRelation**-Methode, um ein neues **Relation**-Objekt z
 
 **Relations**(0)
 
-**Beziehungen** ("Name")
+**Beziehungen**("Name")
 
-**Beziehungs**\!\[Name\]
+ \! Beziehungen \[ Namen\]
 
 ## <a name="example"></a>Beispiel
 
@@ -118,7 +118,7 @@ This example shows how an existing **Relation** object can control data entry. T
 
 <br/>
 
-This example uses the **CreateRelation** method to create a **Relation** between the Employees **TableDef** and a new **TableDef** called Departments. Außerdem wird gezeigt, wie die Erstellung einer neuen **Beziehung** alle erforderlichen **Indizes** in der Fremdtabelle (der DepartmentsEmployees-Index in der Employees-Tabelle) erstellt.
+This example uses the **CreateRelation** method to create a **Relation** between the Employees **TableDef** and a new **TableDef** called Departments. Außerdem wird veranschaulicht, wie durch das Erstellen einer neuen **Beziehung** auch alle erforderlichen **Indizes** in der Fremdtabelle erstellt werden (die Tabelle "DepartmentsEmployees Index" in der Tabelle "Employees").
 
 ```vb
     Sub CreateRelationX() 

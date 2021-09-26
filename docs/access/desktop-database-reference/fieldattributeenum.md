@@ -1,18 +1,18 @@
 ---
-title: FieldAttributeEnum (Access Desktop Database Reference)
+title: FieldAttributeEnum (Access-Desktopdatenbankreferenz)
 TOCTitle: FieldAttributeEnum
 ms:assetid: 2d3a541e-a437-6108-ab0e-90c7884b3df7
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249071(v=office.15)
 ms:contentKeyID: 48543967
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 079c79af3d15a6a5864a7db7f8334393258cfd42
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f7e4b9db2fee904e2beb640e8a8ffe460e54ff15
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292601"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612155"
 ---
 # <a name="fieldattributeenum"></a>FieldAttributeEnum
 
@@ -59,7 +59,7 @@ Gibt mindestens ein Attribut eines [Field](field-object-ado.md)-Objekts an.
 <tr class="odd">
 <td><p><strong>adFldIsDefaultStream</strong></p></td>
 <td><p>0x20000</p></td>
-<td><p>Gibt an, dass das Feld den Standarddatenstrom für die Ressource enthält, die vom Datensatz dargestellt wird. Der Standarddatenstrom kann beispielsweise der HTML-Inhalt eines Stammordners auf einer Website sein, der automatisch bei Angabe der Stamm-URL bereitgestellt wird.</p></td>
+<td><p>Gibt an, dass das Feld den Standarddatenstrom für die Ressource enthält, die vom Datensatz dargestellt wird. Der Standarddatenstrom kann beispielsweise der HTML-Inhalt eines Stammordners auf einer Website sein, der automatisch bereitgestellt wird, wenn die Stamm-URL angegeben wird.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adFldIsNullable</strong></p></td>
@@ -121,7 +121,7 @@ Gibt mindestens ein Attribut eines [Field](field-object-ado.md)-Objekts an.
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
 Paket: **com.ms.wfc.data**
 
@@ -136,40 +136,40 @@ Paket: **com.ms.wfc.data**
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums. Fieldattribute. CACHEDEFERRED</p></td>
+<td><p>AdoEnums.FieldAttribute.CACHEDEFERRED</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. Fieldattribute. FIXED</p></td>
+<td><p>AdoEnums.FieldAttribute.FIXED</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. Fieldattribute. isNULLable</p></td>
+<td><p>AdoEnums.FieldAttribute.ISNULLABLE</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. Fieldattribute. LONG</p></td>
+<td><p>AdoEnums.FieldAttribute.LONG</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. Fieldattribute. MAYBENULL</p></td>
+<td><p>AdoEnums.FieldAttribute.MAYBENULL</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. Fieldattribute. MAYDEFER</p></td>
+<td><p>AdoEnums.FieldAttribute.MAYDEFER</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. Fieldattribute. NEGATIVESCALE</p></td>
+<td><p>AdoEnums.FieldAttribute.NEGATIVESCALE</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. Fieldattribute. ROWID</p></td>
+<td><p>AdoEnums.FieldAttribute.ROWID</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. Fieldattribute. ROWVERSION</p></td>
+<td><p>AdoEnums.FieldAttribute.ROWVERSION</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. Fieldattribute. UNKNOWNUPDATABLE</p></td>
+<td><p>AdoEnums.FieldAttribute.UNKNOWNUPDATABLE</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. Fieldattribute. unSPECIFIED</p></td>
+<td><p>AdoEnums.FieldAttribute.UNSPECIFIED</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. Fieldattribute. AKTUALISIERBAR</p></td>
+<td><p>AdoEnums.FieldAttribute.UPDATABLE</p></td>
 </tr>
 </tbody>
 </table>

@@ -10,23 +10,23 @@ f1_keywords:
 - acmain11.chm1032159
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: c3424fd4b85108120ea4accc2dfa65d55394f0d2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: b267e671974d63cd844d04fe93673a8123a95873
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291435"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618049"
 ---
 # <a name="initializing-the-microsoft-excel-driver"></a>Initialisieren des Microsoft Excel-Treibers
 
-**Gilt für**: Excel 2016 | Zugriff 2016 | Zugriff 2013 | Office 2013 | Excel 2013 | Office for Business-Zugriff 2013 | Excel 2010 | Access 2010
+**Gilt für:** Excel 2016 | Access 2016 | Access 2013 | Office 2013 | Excel 2013 | Office for Business Access 2013 | Excel 2010 | Access 2010
 
-Wenn Sie den Excel-Treiber installieren, schreibt das Setup Programm in der Unterschlüssel Engines-und ISAM-Formate in der Windows-Registrierung eine Reihe von Standardwerten. You should not modify these settings directly; use the setup program for your application to add, remove, or change these settings. The following sections describe initialization and ISAM Format settings for the Microsoft Excel database driver.
+Wenn Sie den treiber Excel installieren, schreibt das Setupprogramm eine Reihe von Standardwerten in die Unterschlüssel Engines und ISAM Formats Windows Registry. You should not modify these settings directly; use the setup program for your application to add, remove, or change these settings. The following sections describe initialization and ISAM Format settings for the Microsoft Excel database driver.
 
-## <a name="excel-initialization-settings"></a>Excel-Initialisierungseinstellungen
+## <a name="excel-initialization-settings"></a>initialisierungseinstellungen Excel
 
-Der **Excel-Ordner\\Access\\Connectivity Engine Engines** enthält Initialisierungseinstellungen für den Aceexcl. dll-Treiber, der für den externen Zugriff auf Microsoft Excel-Arbeitsblätter verwendet wird. Typical settings for the entries in this folder are shown in the following example.
+Der Ordner **Access Connectivity Engine \\ Engines \\ Excel** enthält Initialisierungseinstellungen für den Aceexcl.dll-Treiber, der für den externen Zugriff auf Microsoft Excel Arbeitsblätter verwendet wird. Typical settings for the entries in this folder are shown in the following example.
 
 ```vb
     win32=<path>\ Aceexcl.dll  
@@ -55,12 +55,12 @@ The Microsoft Access database engine uses the Excel folder entries as follows.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Win32</p></td>
+<td><p>win32</p></td>
 <td><p>Der Speicherort von msexcl40.dll. Der vollständige Pfad wird bei der Installation festgelegt. Die Werte sind vom Typ REG_SZ.</p></td>
 </tr>
 <tr class="even">
 <td><p>TypeGuessRows</p></td>
-<td><p>Die Anzahl der Zeilen, die für den Datentyp überprüft werden sollen. Der Datentyp wird anhand der maximalen Anzahl von Datentypen ermittelt. Wenn ein Tie-Wert vorhanden ist, wird der Datentyp in der folgenden Reihenfolge bestimmt: Number, Currency, Date, Text, Boolean. Wenn Daten gefunden werden, die nicht mit dem für die Spalte erkannten Datentyp übereinstimmen, wird er als <strong>null</strong> -Wert zurückgegeben. Wenn eine Spalte beim Importieren gemischte Datentypen enthält, wird die gesamte Spalte gemäß der ImportMixedTypes-Einstellung umgewandelt. Standardmäßig werden 8 Zeilen geprüft. Die Werte sind vom Typ REG_DWORD.</p></td>
+<td><p>Die Anzahl der Zeilen, die für den Datentyp überprüft werden sollen. Der Datentyp wird anhand der maximalen Anzahl gefundener Daten bestimmt. Wenn ein Gleichstand vorhanden ist, wird der Datentyp in der folgenden Reihenfolge bestimmt: Number, Currency, Date, Text, Boolean. Wenn Daten gefunden werden, die nicht mit dem für die Spalte erratenen Datentyp übereinstimmen, werden sie als <strong>Nullwert</strong> zurückgegeben. Wenn eine Spalte beim Import gemischte Datentypen aufweist, wird die gesamte Spalte gemäß der ImportMixedTypes-Einstellung umgewandelt. Standardmäßig werden 8 Zeilen geprüft. Die Werte sind vom Typ REG_DWORD.</p></td>
 </tr>
 <tr class="odd">
 <td><p>ImportMixedTypes</p></td>
@@ -79,7 +79,7 @@ The Microsoft Access database engine uses the Excel folder entries as follows.
 
 <br/>
 
-Der Ordner **Access Connectivity\\Engine\\Engines Excel 8,0** enthält die folgenden einträge, die für Microsoft Excel 97 gelten.
+Der Ordner **Access Connectivity Engine \\ Engines \\ Excel 8.0** enthält die folgenden Einträge, die für Microsoft Excel 97 gelten.
 
 <table>
 <colgroup>
@@ -96,7 +96,7 @@ Der Ordner **Access Connectivity\\Engine\\Engines Excel 8,0** enthält die folge
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Modul</p></td>
+<td><p>Motor</p></td>
 <td><p>REG_SZ</p></td>
 <td><p>Excel</p></td>
 </tr>
@@ -116,7 +116,7 @@ Der Ordner **Access Connectivity\\Engine\\Engines Excel 8,0** enthält die folge
 <td><p>00</p></td>
 </tr>
 <tr class="odd">
-<td><p>Isamtype</p></td>
+<td><p>IsamType</p></td>
 <td><p>REG_DWORD</p></td>
 <td><p>1</p></td>
 </tr>
@@ -144,86 +144,86 @@ Der Ordner **Access Connectivity\\Engine\\Engines Excel 8,0** enthält die folge
 </table>
 
 
-## <a name="using-the-typeguessrows-setting-for-excel-driver"></a>Verwenden der TypeGuessRows-Einstellung für den Excel-Treiber
-Bei Verwendung des Microsoft Excel-Treibers können Sie mit dem **TypeGuessRows** -Registrierungswert konfigurieren, wie viele Zeilen für den Datentyp überprüft werden sollen. Der **TypeGuessRows** -Wert befindet sich unter dem folgenden Registrierungsschlüssel:
+## <a name="using-the-typeguessrows-setting-for-excel-driver"></a>Verwenden der TypeGuessRows-Einstellung für Excel-Treiber
+Wenn Sie Microsoft Excel Treiber verwenden, können Sie den **TypeGuessRows-Registrierungswert** verwenden, um zu konfigurieren, wie viele Zeilen auf den Datentyp überprüft werden sollen. Der **TypeGuessRows-Wert** befindet sich unter dem folgenden Registrierungsunterschlüssel:
 
-# <a name="office-2016taboffice-2016"></a>[Office 2016](#tab/office-2016)
+# <a name="office-2016"></a>[Office 2016](#tab/office-2016)
 
 Für eine MSI-Installation von Office
 
-- Für 32-Bit-Office auf 32-Bit-Windows oder 64-Bit-Office unter 64-Bit-Windows:
+- Für 32-Bit-Office auf 32-Bit-Windows oder 64-Bit-Office auf 64-Bit-Windows:
     
-  **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\16.0\Access-Engine\Engines\Excel**
+  **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\16.0\Access Connectivity Engine\Engines\Excel**
 
-- Für 32-Bit-Office unter 64-Bit-Windows:
+- Für 32-Bit-Office auf 64-Bit-Windows:
 
-  **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Office\16.0\Access-Engine\Engines\Excel**
+  **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Office\16.0\Access Connectivity Engine\Engines\Excel**
     
 Für eine Klick-und-Los-Installation von Office
 
-- Für 32-Bit-Office auf 32-Bit-Windows oder 64-Bit-Office unter 64-Bit-Windows:
+- Für 32-Bit-Office auf 32-Bit-Windows oder 64-Bit-Office auf 64-Bit-Windows:
     
-  **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\REGISTRY\MACHINE\Software\Microsoft\Office\16.0\Access-Engine\Engines\Excel**
+  **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\REGISTRY\MACHINE\Software\Microsoft\Office\16.0\Access Connectivity Engine\Engines\Excel**
 
-- Für 32-Bit-Office unter 64-Bit-Windows:
+- Für 32-Bit-Office auf 64-Bit-Windows:
     
-  **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\REGISTRY\MACHINE\Software\Wow6432Node\Microsoft\Office\16.0\Access-Engine\Engines\Excel**
+  **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\REGISTRY\MACHINE\Software\Wow6432Node\Microsoft\Office\16.0\Access Connectivity Engine\Engines\Excel**
 
-Die standardmäßige Anzahl der zu überprüfenden Zeilen ist **8** (acht). Wenn Sie den **TypeGuessRows** -Wert auf **0** (null) festlegen, überprüft der Excel-Treiber die ersten 16.384-Zeilen nach dem Datentyp. Wenn Sie mehr als 16.384 Zeilen überprüfen möchten, legen Sie **TypeGuessRows** auf einen Wert fest, der auf Ihrem gewünschten Range basiert. Legen Sie **TypeGuessRows** auf 1.048.576 (die maximale Anzahl von Zeilen, die in Excel zulässig sind) fest, um alle Zeilen zu überprüfen.
+Die Standardanzahl der zu überprüfenden Zeilen ist **8** (acht). Wenn Sie den **TypeGuessRows-Wert** auf **0** (null) festlegen, überprüft Excel Driver die ersten 16.384 Zeilen auf den Datentyp. Wenn Sie mehr als 16.384 Zeilen überprüfen möchten, legen Sie **TypeGuessRows** auf einen Wert fest, der auf dem gewünschten Bereich basiert. Um alle Zeilen zu überprüfen, legen Sie **TypeGuessRows** auf 1.048.576 fest (die maximale Anzahl von Zeilen, die in Excel zulässig sind).
  
-Der Datentyp wird durch die maximale Anzahl von Datentypen bestimmt, die gefunden werden. Wenn ein Tie-Wert vorhanden ist, wird der Datentyp in der folgenden Reihenfolge bestimmt:
+Der Datentyp wird durch die maximale Anzahl gefundener Datentypen bestimmt. Wenn ein Gleichstand vorhanden ist, wird der Datentyp in der folgenden Reihenfolge bestimmt:
 
 - Zahl
 - Währung
 - Datum
 - Text
-- Boolescher Wert
+- Boolean
 
-Wenn Daten gefunden werden, die nicht mit dem geschätzten Datentyp für die Spalte übereinstimmen, werden diese Daten als **null** -Wert zurückgegeben. Wenn während eines Imports eine Spalte gemischte Datentypen enthält, wird die gesamte Spalte in den Datentyp umgewandelt, der von der **ImportMixedTypes** -Einstellung festgelegt wird.
+Wenn Daten gefunden werden, die nicht mit dem erratenen Datentyp für die Spalte übereinstimmen, werden diese Daten als **Nullwert** zurückgegeben. Wenn eine Spalte während eines Imports gemischte Datentypen aufweist, wird die gesamte Spalte in den Datentyp umgewandelt, der durch die **ImportMixedTypes-Einstellung** festgelegt wird.
 
-# <a name="office-2013taboffice-2013"></a>[Office 2013](#tab/office-2013)
+# <a name="office-2013"></a>[Office 2013](#tab/office-2013)
 
-Für 32-Bit-Office auf 32-Bit-Windows oder 64-Bit-Office unter 64-Bit-Windows:
+Für 32-Bit-Office auf 32-Bit-Windows oder 64-Bit-Office auf 64-Bit-Windows:
 
-**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\15.0\Access-Engine\Engines\Excel**
+**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\15.0\Access Connectivity Engine\Engines\Excel**
 
-Für 32-Bit-Office unter 64-Bit-Windows:
+Für 32-Bit-Office auf 64-Bit-Windows:
 
-**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Office\15.0\Access-Engine\Engines\Excel**
+**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Office\15.0\Access Connectivity Engine\Engines\Excel**
 
-Die standardmäßige Anzahl der zu überprüfenden Zeilen ist **8** (acht). Wenn Sie den **TypeGuessRows** -Wert auf **0** (null) festlegen, überprüft der Excel-Treiber die ersten 16.384-Zeilen nach dem Datentyp. Wenn Sie mehr als 16.384 Zeilen überprüfen möchten, legen Sie **TypeGuessRows** auf einen Wert fest, der auf Ihrem gewünschten Range basiert. Legen Sie **TypeGuessRows** auf 1.048.576 (die maximale Anzahl von Zeilen, die in Excel zulässig sind) fest, um alle Zeilen zu überprüfen.
+Die Standardanzahl der zu überprüfenden Zeilen ist **8** (acht). Wenn Sie den **TypeGuessRows-Wert** auf **0** (null) festlegen, überprüft Excel Driver die ersten 16.384 Zeilen auf den Datentyp. Wenn Sie mehr als 16.384 Zeilen überprüfen möchten, legen Sie **TypeGuessRows** auf einen Wert fest, der auf dem gewünschten Bereich basiert. Um alle Zeilen zu überprüfen, legen Sie **TypeGuessRows** auf 1.048.576 fest (die maximale Anzahl von Zeilen, die in Excel zulässig sind).
  
-Der Datentyp wird durch die maximale Anzahl von Datentypen bestimmt, die gefunden werden. Wenn ein Tie-Wert vorhanden ist, wird der Datentyp in der folgenden Reihenfolge bestimmt:
+Der Datentyp wird durch die maximale Anzahl gefundener Datentypen bestimmt. Wenn ein Gleichstand vorhanden ist, wird der Datentyp in der folgenden Reihenfolge bestimmt:
 
 - Zahl
 - Währung
 - Datum
 - Text
-- Boolescher Wert
+- Boolean
 
-Wenn Daten gefunden werden, die nicht mit dem geschätzten Datentyp für die Spalte übereinstimmen, werden diese Daten als **null** -Wert zurückgegeben. Wenn während eines Imports eine Spalte gemischte Datentypen enthält, wird die gesamte Spalte in den Datentyp umgewandelt, der von der **ImportMixedTypes** -Einstellung festgelegt wird.
+Wenn Daten gefunden werden, die nicht mit dem erratenen Datentyp für die Spalte übereinstimmen, werden diese Daten als **Nullwert** zurückgegeben. Wenn eine Spalte während eines Imports gemischte Datentypen aufweist, wird die gesamte Spalte in den Datentyp umgewandelt, der durch die **ImportMixedTypes-Einstellung** festgelegt wird.
 
-# <a name="office-2010taboffice-2010"></a>[Office 2010](#tab/office-2010)
+# <a name="office-2010"></a>[Office 2010](#tab/office-2010)
 
-Für 32-Bit-Office auf 32-Bit-Windows oder 64-Bit-Office unter 64-Bit-Windows:
+Für 32-Bit-Office auf 32-Bit-Windows oder 64-Bit-Office auf 64-Bit-Windows:
 
-**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\15.0\Access-Engine\Engines\Excel**
+**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\15.0\Access Connectivity Engine\Engines\Excel**
 
-Für 32-Bit-Office unter 64-Bit-Windows:
+Für 32-Bit-Office auf 64-Bit-Windows:
 
-**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Office\15.0\Access-Engine\Engines\Excel**
+**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Office\15.0\Access Connectivity Engine\Engines\Excel**
 
-Die standardmäßige Anzahl der zu überprüfenden Zeilen ist **8** (acht). Wenn Sie den **TypeGuessRows** -Wert auf **0** (null) festlegen, überprüft der Excel-Treiber die ersten 16.384-Zeilen nach dem Datentyp. Wenn Sie mehr als 16.384 Zeilen überprüfen möchten, legen Sie **TypeGuessRows** auf einen Wert fest, der auf Ihrem gewünschten Range basiert. Legen Sie **TypeGuessRows** auf 1.048.576 (die maximale Anzahl von Zeilen, die in Excel zulässig sind) fest, um alle Zeilen zu überprüfen.
+Die Standardanzahl der zu überprüfenden Zeilen ist **8** (acht). Wenn Sie den **TypeGuessRows-Wert** auf **0** (null) festlegen, überprüft Excel Driver die ersten 16.384 Zeilen auf den Datentyp. Wenn Sie mehr als 16.384 Zeilen überprüfen möchten, legen Sie **TypeGuessRows** auf einen Wert fest, der auf dem gewünschten Bereich basiert. Um alle Zeilen zu überprüfen, legen Sie **TypeGuessRows** auf 1.048.576 fest (die maximale Anzahl von Zeilen, die in Excel zulässig sind).
  
-Der Datentyp wird durch die maximale Anzahl von Datentypen bestimmt, die gefunden werden. Wenn ein Tie-Wert vorhanden ist, wird der Datentyp in der folgenden Reihenfolge bestimmt:
+Der Datentyp wird durch die maximale Anzahl gefundener Datentypen bestimmt. Wenn ein Gleichstand vorhanden ist, wird der Datentyp in der folgenden Reihenfolge bestimmt:
 
 - Zahl
 - Währung
 - Datum
 - Text
-- Boolescher Wert
+- Boolesch
 
-Wenn Daten gefunden werden, die nicht mit dem geschätzten Datentyp für die Spalte übereinstimmen, werden diese Daten als **null** -Wert zurückgegeben. Wenn während eines Imports eine Spalte gemischte Datentypen enthält, wird die gesamte Spalte in den Datentyp umgewandelt, der von der **ImportMixedTypes** -Einstellung festgelegt wird.
+Wenn Daten gefunden werden, die nicht mit dem erratenen Datentyp für die Spalte übereinstimmen, werden diese Daten als **Nullwert** zurückgegeben. Wenn eine Spalte während eines Imports gemischte Datentypen aufweist, wird die gesamte Spalte in den Datentyp umgewandelt, der durch die **ImportMixedTypes-Einstellung** festgelegt wird.
 
 ---
 > [!NOTE]
@@ -231,5 +231,5 @@ Wenn Daten gefunden werden, die nicht mit dem geschätzten Datentyp für die Spa
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Verwenden der TypeGuessRows-Einstellung für den Excel-Treiber](https://support.office.com/en-us/article/using-the-typeguessrows-setting-for-excel-driver-6aa3e101-2a90-47ac-bf0f-7d4109a5708b?ui=en-US&rs=en-US&ad=US)
+- [Verwenden der TypeGuessRows-Einstellung für Excel-Treiber](https://support.office.com/en-us/article/using-the-typeguessrows-setting-for-excel-driver-6aa3e101-2a90-47ac-bf0f-7d4109a5708b?ui=en-US&rs=en-US&ad=US)
 

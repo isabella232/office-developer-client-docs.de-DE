@@ -6,19 +6,19 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251436
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5b358c38-6ed1-3fbe-c1d1-1a56ebbaa870
-description: Öffnet eine HTML-Hilfedatei mit dem angegebenen Schlüsselwort im Feld Suchen.
-ms.openlocfilehash: 639d10bf489d1ad09aef1522d3cbc743bbe66f6f
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Öffnet eine HTML-Hilfedatei mit dem angegebenen Schlüsselwort im Suchfeld.
+ms.openlocfilehash: a4243a9ddbcfda7ef327efd108e1f9954c0fb7b1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33431337"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618882"
 ---
 # <a name="help-function"></a>HELP-Funktion
 
-Öffnet eine HTML-Hilfedatei mit dem angegebenen *Schlüsselwort* im Feld **Suchen.** 
+Öffnet eine HTML-Hilfedatei mit dem angegebenen *Schlüsselwort* im **Suchfeld.** 
   
 ## <a name="syntax"></a>Syntax
 
@@ -28,9 +28,9 @@ HELP(" ** *filename.chm!keyword* ** ")
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _filename.chm!keyword_ <br/> |Erforderlich  <br/> |**String** <br/> | Der Name der Hilfedatei und das Stichwort, nach dem gesucht werden soll.  <br/> |
+| _filename.chm!schlüsselwort_ <br/> |Erforderlich  <br/> |**String** <br/> | Der Name der Hilfedatei und das Stichwort, nach dem gesucht werden soll.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn kein  *Schlüsselwort*  angegeben ist, öffnet die HELP-Funktion die Inhaltsseite der Hilfedatei. 
   

@@ -1,20 +1,20 @@
 ---
-title: Fields. Refresh-Methode (DAO)
+title: Fields.Refresh-Methode (DAO)
 TOCTitle: Refresh Method
 ms:assetid: d08597d8-bad6-523b-a083-d824f85b64bc
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff834723(v=office.15)
 ms:contentKeyID: 48547844
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 09218fae470646ab04ecfb5427004e56183e46ca
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: cdc12e1be540415cbad942dd2cef64020ad1086c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292510"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612134"
 ---
-# <a name="fieldsrefresh-method-dao"></a>Fields. Refresh-Methode (DAO)
+# <a name="fieldsrefresh-method-dao"></a>Fields.Refresh-Methode (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -26,9 +26,9 @@ Aktualisiert die Objekte in der angegebenen Auflistung, um das aktuelle Schema d
 
 *Ausdruck* . Aktualisieren
 
-*Ausdruck* Eine Variable, die ein **Fields** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Fields**-Objekt darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Verwenden Sie die **OrdinalPosition**-Eigenschaft der einzelnen **Field**-Objekte, um die Position zu bestimmen, die das Microsoft Access-Datenbankmodul für **Field**-Objekte in der **Fields**-Auflistung eines **QueryDef**-, **Recordset**- oder **TableDef**-Objekts verwendet. Eine Änderung der **OrdinalPosition**-Eigenschaft eines **Field**-Objekts führt möglicherweise erst beim Anwenden der **Refresh**-Methode zu einer geänderten Reihenfolge der **Field**-Objekte.
 

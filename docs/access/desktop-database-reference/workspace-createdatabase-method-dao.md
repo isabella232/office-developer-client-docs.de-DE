@@ -1,20 +1,20 @@
 ---
-title: Workspace. CreateDatabase-Methode (DAO)
+title: Workspace.CreateDatabase-Methode (DAO)
 TOCTitle: CreateDatabase Method
 ms:assetid: c0ad986e-3b4d-f781-f782-5aa3cdccea7d
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff822832(v=office.15)
 ms:contentKeyID: 48547514
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: e6d271676ef91d29dca78ba9ee4b6142e055b36d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: baa83184eff9c52a7401f8e17db3feadf061489a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32305866"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621521"
 ---
-# <a name="workspacecreatedatabase-method-dao"></a>Workspace. CreateDatabase-Methode (DAO)
+# <a name="workspacecreatedatabase-method-dao"></a>Workspace.CreateDatabase-Methode (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -22,9 +22,9 @@ Erstellt ein neues **[Database](database-object-dao.md)** -Objekt, speichert die
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . CreateDatabase (***Name***, ***Connect***, ***Option***)
+*Ausdruck* . CreateDatabase(***Name** _, _*_Verbinden_*_, _*_Option_**)
 
-*Ausdruck* Eine Variable, die ein **Workspace** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Workspace**-Objekt darstellt.
 
 ## <a name="parameters"></a>Parameter
 
@@ -48,7 +48,7 @@ Erstellt ein neues **[Database](database-object-dao.md)** -Objekt, speichert die
 <td><p><em>Name</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>String</strong></p></td>
-<td><p>Eine aus bis zu 255 Zeichen bestehende Zeichenfolge, die den Namen der Datenbankdatei darstellt, die Sie erstellen. Dies kann der vollständige Pfad- und Dateiname sein. Wenn Ihr Netzwerk diese unterstützt, können Sie auch einen Netzwerkpfad angeben, Beispiels &quot; \\Weise&quot;server1\share1\dir1\db1. Mit dieser Methode können Sie nur Microsoft Access-Datenbankdateien erstellen.</p></td>
+<td><p>Eine aus bis zu 255 Zeichen bestehende Zeichenfolge, die den Namen der Datenbankdatei darstellt, die Sie erstellen. Dies kann der vollständige Pfad- und Dateiname sein. Wenn Ihr Netzwerk dies unterstützt, können Sie auch einen Netzwerkpfad angeben, z. B. &quot; \\ server1\share1\dir1\db1. &quot; Mit dieser Methode können Sie nur Microsoft Access-Datenbankdateien erstellen.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>Connect</em></p></td>
@@ -56,10 +56,10 @@ Erstellt ein neues **[Database](database-object-dao.md)** -Objekt, speichert die
 <td><p><strong>String</strong></p></td>
 <td><ul>
 <li><p>Ein Zeichenfolgenausdruck, der eine Sortierreihenfolge zum Erstellen der Datenbank angibt, wie unter Einstellungen festgelegt. Wenn Sie dieses Argument nicht angeben, tritt ein Fehler auf.</p></li>
-<li><p>Sie können auch ein Kennwort für das neue <strong>Database</strong> -Objekt erstellen, indem Sie die Kennwortzeichenfolge ( &quot;beginnend mit;p&quot;WD =) mit einer Konstanten <em></em> im Argument locale wie folgt verketten:</p></li>
-<li><p>dbLangSpanish &amp; &quot;;p wd = neues kennwort&quot;</p></li>
+<li><p>Sie können auch ein Kennwort für das neue <strong>Database-Objekt</strong> erstellen, indem Sie die Kennwortzeichenfolge (beginnend mit &quot; ;p wd= &quot; ) wie folgt mit einer Konstante im <em>Gebietsschemaargument</em> verketten:</p></li>
+<li><p>dbLangSpanish &amp; &quot; ;p wd=NewPassword&quot;</p></li>
 <li><p>Wenn Sie das standardmäßige <em>locale</em> verwenden möchten, aber ein Kennwort angeben, geben Sie für das Argument <em>locale</em> einfach eine Kennwortzeichenfolge an:</p></li>
-<li><p>&quot;;p WD = neues Kennwort&quot;</p></li>
+<li><p>&quot;;p wd=NewPassword&quot;</p></li>
 <li><p>Verwenden Sie sichere Kennwörter, die Groß- und Kleinbuchstaben, Ziffern und Symbole kombinieren. Schwache Kennwörter enthalten keine Kombination dieser Elemente. Sicheres Kennwort: Y6dh!et5. Schwaches Kennwort: House27. Verwenden Sie ein sicheres Kennwort, das Sie sich merken können, damit Sie es nicht aufschreiben müssen.</p></li>
 </ul></td>
 </tr>
@@ -95,15 +95,15 @@ Sie können eine der folgenden Konstanten für das Argument locale verwenden, um
 </tr>
 <tr class="even">
 <td><p><strong>dbLangArabic</strong></p></td>
-<td><p>Arabisch</p></td>
+<td><p>Arabic</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbLangChineseSimplified</strong></p></td>
-<td><p>Chinesisch (Vereinfacht)</p></td>
+<td><p>Chinesisch (vereinfacht)</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbLangChineseTraditional</strong></p></td>
-<td><p>Chinesisch (Traditionell)</p></td>
+<td><p>Chinesisch (traditionell)</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbLangCyrillic</strong></p></td>
@@ -193,7 +193,7 @@ Sie können eine oder mehrere der folgenden Konstanten im Argument options verwe
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Dbencrypt einschließen</strong></p></td>
+<td><p><strong>dbEncrypt</strong></p></td>
 <td><p>Erstellt eine verschlüsselte Datenbank.</p></td>
 </tr>
 <tr class="even">
@@ -231,7 +231,7 @@ Verwenden Sie die **CreateDatabase**-Methode zum Erstellen und Öffnen einer neu
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird mithilfe von **CreateDatabase** ein neues, verschlüsseltes **Database**-Objekt erstellt.
+In diesem Beispiel wird **CreateDatabase** zum Erstellen eines neuen verschlüsselten **Database**-Objekts verwendet.
 
 ```vb
     Sub CreateDatabaseX() 

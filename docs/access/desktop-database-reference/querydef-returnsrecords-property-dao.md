@@ -1,5 +1,5 @@
 ---
-title: QueryDef. ReturnsRecords-Eigenschaft (DAO)
+title: QueryDef.ReturnsRecords-Eigenschaft (DAO)
 TOCTitle: ReturnsRecords Property
 ms:assetid: 3d1e538b-4d60-588f-4a20-89f1e2b434e6
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192701(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1053005
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 7d2202aa506750cd0a0d2a84eea5c507c3bb1147
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: bf0655deb2f145dd46483bfd8dc8d55fbec12584
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32303339"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621997"
 ---
-# <a name="querydefreturnsrecords-property-dao"></a>QueryDef. ReturnsRecords-Eigenschaft (DAO)
+# <a name="querydefreturnsrecords-property-dao"></a>QueryDef.ReturnsRecords-Eigenschaft (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -26,16 +26,16 @@ Gibt einen Wert zurück, der angibt, ob eine SQL Pass-Through-Abfrage an eine ex
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . ReturnsRecords
+*Ausdruck* . GibtRecords zurück
 
-*Ausdruck* Eine Variable, die ein **QueryDef** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **QueryDef**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 
 Nicht alle SQL Pass-Through-Abfragen an externe Datenbanken geben Datensätze zurück. Eine SQL UPDATE-Anweisung aktualisiert z. B. Datensätze, ohne Datensätze zurückzugeben, während eine SQL SELECT-Anweisung Datensätze zurückgibt. Wenn die Abfrage Datensätze zurückgibt, legen Sie für die **ReturnsRecords**-Eigenschaft **True** fest. Wenn die Abfrage keine Datensätze zurückgibt, legen Sie für die **ReturnsRecords**-Eigenschaft **False** fest.
 
 > [!NOTE]
-> Sie müssen die **[Connect](querydef-connect-property-dao.md)** -Eigenschaft festlegen, bevor Sie die **ReturnsRecords** -Eigenschaft festlegen.
+> Sie müssen die **[Verbinden-Eigenschaft](querydef-connect-property-dao.md)** festlegen, bevor Sie die **ReturnsRecords-Eigenschaft** festlegen.
 
 ## <a name="example"></a>Beispiel
 

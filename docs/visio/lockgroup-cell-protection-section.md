@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251227
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 04b0fa5b-1680-cfe2-6aaf-0502ad196027
 description: Sperrt eine Gruppe, damit die Gruppierung nicht aufgehoben werden kann.
-ms.openlocfilehash: 0cb2c0653780dcb653e5903faaaa0ebf30ea9d69
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: cdb251fb66e522d2b2200f324b63410d9e83be1c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404309"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612498"
 ---
 # <a name="lockgroup-cell-protection-section"></a>Zelle "LockGroup" (Abschnitt "Protection")
 
@@ -25,17 +25,17 @@ Sperrt eine Gruppe, damit die Gruppierung nicht aufgehoben werden kann.
 |TRUE  <br/> |Gruppierung der Gruppe kann nicht aufgehoben werden.  <br/> |
 |FALSE  <br/> |Gruppierung der Gruppe kann aufgehoben werden.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie den Wert für LockGroupCell auf TRUE festlegen, wird auch das Löschen von Shapes verhindert, die Mitglieder der Gruppe sind.
   
-Um einen Verweis auf die Zelle LockGroup anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Um einen Verweis auf die Zelle "LockGroup" anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |LockGroup  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle LockGroup nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle LockGroup anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

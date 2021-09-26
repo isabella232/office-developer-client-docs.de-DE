@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - ITableData.HrEnumRow
 api_type:
 - COM
 ms.assetid: b25d9f2b-9454-4983-98f7-6a051a3b8a04
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 50fd96acd0989459c9887770ec5a3a236f182da5
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: ea3c421c19174d49e2d46f7799631ccab31eb7e5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33418372"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59620436"
 ---
 # <a name="itabledatahrenumrow"></a>ITableData::HrEnumRow
 
@@ -38,7 +38,7 @@ HRESULT HrEnumRow(
 
  _ulRowNumber_
   
-> [in] Die Nummer der Zeile, für die Eigenschaften zurückgeben werden. Der Wert im  _ulRowNumber-Parameter_ kann ein beliebiger Wert von 0 sein, der die erste Zeile in der Tabelle bis n - 1 angibt, was die letzte Zeile in der Tabelle angibt. 
+> [in] Die Nummer der Zeile, für die Eigenschaften zurückgegeben werden sollen. Der Wert im  _ulRowNumber-Parameter_ kann ein beliebiger Wert von 0 sein, der die erste Zeile in der Tabelle bis n - 1 angibt, was die letzte Zeile in der Tabelle angibt. 
     
  _lppSRow_
   
@@ -48,17 +48,17 @@ HRESULT HrEnumRow(
 
 S_OK 
   
-> Die Zeile wurde erfolgreich abgerufen, oder eine Zeile für die durch den  _ulRowNumber-Parameter_ angegebene Zeilennummer ist nicht vorhanden. 
+> Die Zeile wurde erfolgreich abgerufen, oder es ist keine Zeile für die durch den  _ulRowNumber-Parameter_ angegebene Zeilennummer vorhanden. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **ITableData::HrEnumRow-Methode** ruft eine Zeile basierend auf einer sequenziellen Zahl ab. Diese Zahl stellt die Einfügereihenfolge dar (0 gibt die erste Zeile an, und die Anzahl der Zeilen minus 1 gibt die letzte Zeile an). MAPI behält diese chronologische Reihenfolge der Zeileneinfügung für die Lebensdauer des Tabellendatenobjekts bei. 
   
-Wenn die in  _ulRowNumber_ angegebene Zahl nicht einer Zeile in der Tabelle entspricht, gibt **HrEnumRow** S_OK zurück und legt den  _lppSRow-Parameter_ auf NULL fest. 
+Wenn die in  _ulRowNumber_ angegebene Zahl keiner Zeile in der Tabelle entspricht, gibt **HrEnumRow** S_OK zurück und legt den  _lppSRow-Parameter_ auf NULL fest. 
   
-MAPI weist speicher für die zurückgegebene **SRow-Struktur** mithilfe der [MAPIAllocateBuffer-Funktion](mapiallocatebuffer.md) zu, wenn das Tabellendatenobjekt erstellt wird. Der Aufrufer muss diesen Speicher durch Aufrufen der [MAPIFreeBuffer-Funktion](mapifreebuffer.md) los. 
+MAPI weist Speicher für die zurückgegebene **SRow-Struktur** zu, indem die [MAPIAllocateBuffer-Funktion](mapiallocatebuffer.md) verwendet wird, wenn das Tabellendatenobjekt erstellt wird. Der Aufrufer muss diesen Speicher freigeben, indem er die [MAPIFreeBuffer-Funktion](mapifreebuffer.md) aufruft. 
   
-Zum Abrufen von Zeilen aus einer Tabelle in der Reihenfolge, in der sie eingefügt wurden, rufen Benutzer des Tabellendatenobjekts die **HrEnumRow-Methode** auf. 
+Um Zeilen aus einer Tabelle in der Reihenfolge abzurufen, in der sie eingefügt wurden, rufen Benutzer des Tabellendatenobjekts die **HrEnumRow-Methode** auf. 
   
 ## <a name="see-also"></a>Siehe auch
 

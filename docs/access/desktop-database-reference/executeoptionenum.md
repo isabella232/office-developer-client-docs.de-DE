@@ -1,18 +1,18 @@
 ---
-title: ExecuteOptionEnum (Access Desktop Database Reference)
+title: ExecuteOptionEnum (Access-Desktopdatenbankreferenz)
 TOCTitle: ExecuteOptionEnum
 ms:assetid: bd6d44a3-e471-7aa0-3e65-6775334de2ff
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249915(v=office.15)
 ms:contentKeyID: 48547438
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: febeb3b52eb579647c995b01d6723a5c1f1b0c1f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c2cdd7628e2c5116f92d63c5aae008a19577fec1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293245"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612176"
 ---
 # <a name="executeoptionenum"></a>ExecuteOptionEnum
 
@@ -49,17 +49,18 @@ Gibt an, wie ein Anbieter einen Befehl ausführen sollte.
 <tr class="odd">
 <td><p><strong>adAsyncFetchNonBlocking</strong></p></td>
 <td><p>0x40</p></td>
-<td><p>Gibt an, dass der Hauptthread beim Abrufen nie blockiert. Wenn die angeforderte Zeile nicht abgerufen worden ist, wird die aktuelle Zeile automatisch an das Ende der Datei verschoben.</p><p>Wenn Sie ein <a href="recordset-object-ado.md">Recordset</a> -Objekt aus einem <a href="stream-object-ado.md">Stream</a> -Objekt mit einem persistent gespeicherten <strong>Recordset</strong>-Objekt öffnen, hat <strong>adAsyncFetchNonBlocking</strong> keine Auswirkung; der Vorgang wird synchron und blockiert. <strong>adAsynchFetchNonBlocking</strong> hat keine Auswirkungen, wenn die <a href="commandtypeenum.md">adCmdTableDirect</a> -Option zum Öffnen des <strong>Recordset-Objekts</strong>verwendet wird.</p></td>
+<td><p>Gibt an, dass der Hauptthread beim Abrufen nie blockiert. Wenn die angeforderte Zeile nicht abgerufen worden ist, wird die aktuelle Zeile automatisch an das Ende der Datei verschoben.
+</p><p>Wenn Sie ein <a href="recordset-object-ado.md">Recordset</a> aus einem <a href="stream-object-ado.md">Stream</a> öffnen, das ein dauerhaft gespeichertes <strong>Recordset</strong>enthält, hat <strong>adAsyncFetchNonBlocking</strong> keine Auswirkung. Der Vorgang ist synchron und blockiert. <strong>adAsynchFetchNonBlocking</strong> hat keine Auswirkung, wenn die <a href="commandtypeenum.md">Option adCmdTableDirect</a> zum Öffnen des <strong>Recordset</strong>-Objekts verwendet wird.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adExecuteNoRecords</strong></p></td>
 <td><p>0x80</p></td>
-<td><p>Zeigt an, dass der Befehlstext ein Befehl oder eine gespeicherte Prozedur ist, der keine Zeilen zurückgibt (beispielsweise ein Befehl, der nur Daten einfügt). Wenn alle Zeilen abgerufen werden, werden sie verworfen und nicht zurückgegeben. <strong>adExecuteNoRecords</strong> kann nur als optionaler Parameter an die <strong>Command</strong> -oder <strong>Connection</strong> <strong>Execute</strong> -Methode übergeben werden.</p></td>
+<td><p>Zeigt an, dass der Befehlstext ein Befehl oder eine gespeicherte Prozedur ist, der keine Zeilen zurückgibt (beispielsweise ein Befehl, der nur Daten einfügt). Wenn alle Zeilen abgerufen werden, werden sie verworfen und nicht zurückgegeben. <strong>adExecuteNoRecords</strong> kann nur als optionaler Parameter an die <strong>Command-</strong> oder <strong>Connection</strong> <strong>Execute-Methode</strong> übergeben werden.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adExecuteStream</strong></p></td>
 <td><p>0x400</p></td>
-<td><p>Gibt an, dass die Ergebnisse einer Befehlsausführung als Datenstrom zurückgegeben werden sollten. <strong>adExecuteStream</strong> kann nur als optionaler Parameter an die <strong>Command</strong> <strong>Execute</strong> -Methode übergeben werden.</p></td>
+<td><p>Gibt an, dass die Ergebnisse einer Befehlsausführung als Datenstrom zurückgegeben werden sollten. <strong>adExecuteStream</strong> kann nur als optionaler Parameter an die <strong>Command</strong> <strong>Execute-Methode</strong> übergeben werden.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adExecuteRecord</strong></p></td>
@@ -76,7 +77,7 @@ Gibt an, wie ein Anbieter einen Befehl ausführen sollte.
 </table>
 
 
-### <a name="adowfc-equivalent"></a>ADO/WFC-Äquivalent
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
 Paket: **com.ms.wfc.data**
 
@@ -91,19 +92,19 @@ Paket: **com.ms.wfc.data**
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>AdoEnums. ExecuteOption. ASYNCEXECUTE</p></td>
+<td><p>AdoEnums.ExecuteOption.ASYNCEXECUTE</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. ExecuteOption. ASYNCFETCH</p></td>
+<td><p>AdoEnums.ExecuteOption.ASYNCFETCH</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. ExecuteOption. ASYNCFETCHNONBLOCKING</p></td>
+<td><p>AdoEnums.ExecuteOption.ASYNCFETCHNONBLOCKING</p></td>
 </tr>
 <tr class="even">
-<td><p>AdoEnums. ExecuteOption. noRECORDs</p></td>
+<td><p>AdoEnums.ExecuteOption.NORECORDS</p></td>
 </tr>
 <tr class="odd">
-<td><p>AdoEnums. ExecuteOption. unSPECIFIED</p></td>
+<td><p>AdoEnums.ExecuteOption.UNSPECIFIED</p></td>
 </tr>
 </tbody>
 </table>

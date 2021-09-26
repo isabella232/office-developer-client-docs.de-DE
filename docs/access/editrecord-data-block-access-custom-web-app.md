@@ -1,19 +1,19 @@
 ---
-title: EditRecord Data Block (benutzerdefinierte Access-Web-App)
+title: BearbeitenDatensatz-Datenblock (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 54975434-78b2-4010-b2f9-f277831fa92e
 description: Mit dem BearbeitenDatensatz -Datenblock können Sie die Werte in einem vorhandenen Datensatz ändern.
-ms.openlocfilehash: 0d9ef6c7689b44a0304309a7537e744eff97c809
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8e179eb08d5624adb58a72576ac816126e0a8edc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33418344"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621493"
 ---
-# <a name="editrecord-data-block-access-custom-web-app"></a>EditRecord Data Block (benutzerdefinierte Access-Web-App)
+# <a name="editrecord-data-block-access-custom-web-app"></a>BearbeitenDatensatz-Datenblock (benutzerdefinierte Access-Web-App)
 
 Mit dem **BearbeitenDatensatz** -Datenblock können Sie die Werte in einem vorhandenen Datensatz ändern. 
   
@@ -23,17 +23,17 @@ Mit dem **BearbeitenDatensatz** -Datenblock können Sie die Werte in einem vorha
 > [!NOTE]
 > Der **BearbeitenDatensatz**-Datenblock ist nur in Datenmakros verfügbar. 
   
-## <a name="setting"></a>Setting
+## <a name="setting"></a>Einstellung
 
 Der **BearbeitenDatensatz**-Datenblock kann mit den folgenden Argumenten verwendet werden. 
   
 |**Argument**|**Beschreibung**|
 |:-----|:-----|
-|**Alias** <br/> |Eine Zeichenfolge, mit der der zu bearbeitende Datensatz gekennzeichnet wird. Wenn das  *Argument Alias*  nicht angegeben ist, wird der aktuelle Datensatz bearbeitet.  <br/> |
+|**Alias** <br/> |Eine Zeichenfolge, mit der der zu bearbeitende Datensatz gekennzeichnet wird. Wenn das  *Alias-Argument*  nicht angegeben ist, wird der aktuelle Datensatz bearbeitet.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Nach der **EditRecord -Anweisung** können Sie einen Befehlsblock einfügen, der ausgeführt wird, bevor die Änderungen am Datensatz ausgeführt werden. Die folgenden Aktionen sind in einem **EditRecord-Datenblock** verfügbar. 
+Nach der **EditRecord-Anweisung** können Sie einen Block von Befehlen einfügen, die ausgeführt werden, bevor für die Änderungen am Datensatz ein Commit ausgeführt wird. Die folgenden Aktionen sind in einem **EditRecord-Datenblock** verfügbar. 
   
 ||
 |:-----|
@@ -46,7 +46,7 @@ Nach der **EditRecord -Anweisung** können Sie einen Befehlsblock einfügen, der
    
 Mit der **FestlegenFeld** -Aktion geben Sie die neuen Werte eines Felds im bearbeiteten Datensatz an. 
   
-Sie können eine **If... Dann... Else-Anweisung** zum Ausführen von Vorgängen basierend auf einer Bedingung. 
+Sie können ein **If... Dann... Else-Anweisung** zum Ausführen von Vorgängen basierend auf einer Bedingung. 
   
 Wenn Sie das Bearbeiten eines Datensatzes abbrechen möchten, verwenden Sie die **AbbrechenDatensatzänderung** -Aktion. Damit verhindern Sie, dass für die Änderungen ein Commit ausgeführt wird, und der **BearbeitenDatensatz** -Datenblock wird beendet. 
   

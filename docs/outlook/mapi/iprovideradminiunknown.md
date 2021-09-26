@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IProviderAdmin
 api_type:
 - COM
 ms.assetid: bdb4cdca-8dfd-4f90-9467-ec31cea3f518
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: bedec72e8371d0e8aa69415d2f0dc77b4c62ff76
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 96f1c66980adebfb85b1e513df3a6ff236cf5776
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33437532"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59620555"
 ---
 # <a name="iprovideradmin--iunknown"></a>IProviderAdmin : IUnknown
 
@@ -25,7 +25,7 @@ ms.locfileid: "33437532"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Funktioniert mit Dienstanbietern in einem Nachrichtendienst. 
+Arbeitet mit Dienstanbietern in einem Nachrichtendienst zusammen. 
   
 |||
 |:-----|:-----|
@@ -36,19 +36,19 @@ Funktioniert mit Dienstanbietern in einem Nachrichtendienst.
 |Schnittstellenbezeichner:  <br/> |IID_IProviderAdmin  <br/> |
 |Zeigertyp:  <br/> |LPPROVIDERADMIN  <br/> |
    
-## <a name="vtable-order"></a>Vtable-Reihenfolge
+## <a name="vtable-order"></a>VTable-Reihenfolge
 
 |||
 |:-----|:-----|
-|[GetLastError](iprovideradmin-getlasterror.md) <br/> |Gibt eine [MAPIERROR-Struktur](mapierror.md) zurück, die Informationen zum vorherigen Fehler enthält, der für das Anbieterverwaltungsobjekt aufgetreten ist.  <br/> |
+|[Getlasterror](iprovideradmin-getlasterror.md) <br/> |Gibt eine [MAPIERROR-Struktur](mapierror.md) zurück, die Informationen zum vorherigen Fehler enthält, der für das Anbieterverwaltungsobjekt aufgetreten ist.  <br/> |
 |[GetProviderTable](iprovideradmin-getprovidertable.md) <br/> |Bietet Zugriff auf die Anbietertabelle des Nachrichtendiensts, eine Liste der Dienstanbieter im Nachrichtendienst.  <br/> |
-|[CreateProvider](iprovideradmin-createprovider.md) <br/> |Fügt dem Nachrichtendienst einen Dienstanbieter hinzu.  <br/> |
+|[Createprovider](iprovideradmin-createprovider.md) <br/> |Fügt dem Nachrichtendienst einen Dienstanbieter hinzu.  <br/> |
 |[DeleteProvider](iprovideradmin-deleteprovider.md) <br/> |Löscht einen Dienstanbieter aus dem Nachrichtendienst.  <br/> |
 |[OpenProfileSection](iprovideradmin-openprofilesection.md) <br/> |Öffnet einen Profilabschnitt aus dem aktuellen Profil und gibt einen [IProfSect-Zeiger](iprofsectimapiprop.md) für weiteren Zugriff zurück.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Clients können einen Zeiger auf eine **IProviderAdmin-Schnittstelle** durch Aufrufen der [IMsgServiceAdmin::AdminProviders-Methode](imsgserviceadmin-adminproviders.md) erhalten. Dienstanbietern wird ein **IProviderAdmin-Zeiger** übergeben, wenn die Einstiegspunktfunktion des Nachrichtendiensts aufgerufen wird. 
+Clients können einen Zeiger auf eine **IProviderAdmin-Schnittstelle** abrufen, indem sie die [IMsgServiceAdmin::AdminProviders-Methode](imsgserviceadmin-adminproviders.md) aufrufen. Dienstanbietern wird ein **IProviderAdmin-Zeiger** übergeben, wenn die Einstiegspunktfunktion des Nachrichtendiensts aufgerufen wird. 
   
 ## <a name="see-also"></a>Siehe auch
 

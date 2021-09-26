@@ -1,18 +1,18 @@
 ---
-title: RightsEnum (Access Desktop Database Reference)
+title: RightsEnum (Access-Desktopdatenbankreferenz)
 TOCTitle: RightsEnum
 ms:assetid: 7647b9d5-5271-fdcf-489d-5a8beb931ca5
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249485(v=office.15)
 ms:contentKeyID: 48545693
 ms.date: 10/18/2018
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 3c7bf2f88632265cda7537215f2ea3c68507f16f
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 90a86d25825662c7b29fee5fef091c094631e236
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306489"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621899"
 ---
 # <a name="rightsenum"></a>RightsEnum
 
@@ -39,48 +39,48 @@ Gibt die Rechte oder Berechtigungen einer Gruppe oder eines Benutzers für ein O
 <tr class="odd">
 <td><p><strong>adRightCreate</strong></p></td>
 <td><p>16384<br />
-(&amp;H4000)</p></td>
+( &amp; H4000)</p></td>
 <td><p>Der Benutzer oder die Gruppe verfügt über die Berechtigung, neue Objekte dieses 'Typs zu erstellen.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adRightDelete</strong></p></td>
 <td><p>65536<br />
-(&amp;H10000)</p></td>
+( &amp; H10000)</p></td>
 <td><p>Der Benutzer oder die Gruppe verfügt über die Berechtigung, Daten aus einem Objekt zu löschen. Für Objekte wie <strong>Tables</strong> verfügt der Benutzer über die Berechtigung, Datenwerte aus Datensätzen zu löschen.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adRightDrop</strong></p></td>
 <td><p>256<br />
-(&amp;H100)</p></td>
+( &amp; H100)</p></td>
 <td><p>Der Benutzer oder die Gruppe verfügt über die Berechtigung, Objekte aus dem Katalog zu entfernen. Beispielsweise kann <strong>Tables</strong> durch einen DROP TABLE SQL-Befehl gelöscht werden.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adRightExclusive</strong></p></td>
 <td><p>512<br />
-(&amp;H200)</p></td>
+( &amp; H200)</p></td>
 <td><p>Der Benutzer oder die Gruppe verfügen über die Berechtigung, exklusiv auf das Objekt zuzugreifen.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adRightExecute</strong></p></td>
 <td><p>536870912<br />
-(&amp;H20000000)</p></td>
+( &amp; H20000000)</p></td>
 <td><p>Der Benutzer oder die Gruppe verfügt über die Berechtigung, das Objekt auszuführen.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>zuRecht</strong></p></td>
+<td><p><strong>adRightFull</strong></p></td>
 <td><p>268435456<br />
-(&amp;H10000000)</p></td>
+( &amp; H10000000)</p></td>
 <td><p>Der Benutzer oder die Gruppe verfügt über alle Berechtigungen für das Objekt.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adRightInsert</strong></p></td>
 <td><p>32768<br />
-(&amp;H8000)</p></td>
+( &amp; H8000)</p></td>
 <td><p>Der Benutzer oder die Gruppe verfügt über die Berechtigung, das Objekt einzufügen. Für Objekte wie <strong>Tables</strong> verfügt der Benutzer über die Berechtigung, Daten in die Tabelle einzufügen.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adRightMaximumAllowed</strong></p></td>
-<td><p>33554432 (&amp;H2000000)</p></td>
+<td><p>33554432 ( &amp; H2000000)</p></td>
 <td><p>Der Benutzer oder die Gruppe verfügt über die durch den Anbieter maximal zulässige Anzahl von Berechtigungen. Spezifische Berechtigungen sind anbieterabhängig.</p></td>
 </tr>
 <tr class="odd">
@@ -91,55 +91,55 @@ Gibt die Rechte oder Berechtigungen einer Gruppe oder eines Benutzers für ein O
 <tr class="even">
 <td><p><strong>adRightRead</strong></p></td>
 <td><p>-2147483648<br />
-(&amp;H80000000)</p></td>
+( &amp; H80000000)</p></td>
 <td><p>Der Benutzer oder die Gruppe verfügt über eine Leseberechtigung für das Objekt. Für Objekte wie <a href="table-object-adox.md">Tables</a> verfügt der Benutzer über die Berechtigung, Daten in der Tabelle zu lesen.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adRightReadDesign</strong></p></td>
 <td><p>1024<br />
-(&amp;H400)</p></td>
+( &amp; H400)</p></td>
 <td><p>Der Benutzer oder die Gruppe verfügt über die Berechtigung, den Entwurf für das Objekt zu lesen.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adRightReadPermissions</strong></p></td>
 <td><p>131072<br />
-(&amp;H20000)</p></td>
+( &amp; H20000)</p></td>
 <td><p>Der Benutzer oder die Gruppe kann die spezifischen Berechtigungen für ein Objekt im Katalog anzeigen, aber nicht ändern.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adRightReference</strong></p></td>
 <td><p>8192<br />
-(&amp;H2000)</p></td>
+( &amp; H2000)</p></td>
 <td><p>Der Benutzer oder die Gruppe verfügt über die Berechtigung, auf das Objekt zu verweisen.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adRightUpdate</strong></p></td>
 <td><p>1073741824<br />
-(&amp;H40000000)</p></td>
+( &amp; H40000000)</p></td>
 <td><p>Der Benutzer oder die Gruppe verfügt über die Berechtigung, das Objekt zu aktualisieren. Für Objekte wie <strong>Tables</strong> verfügt der Benutzer über die Berechtigung, die Daten in der Tabelle zu aktualisieren.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adRightWithGrant</strong></p></td>
 <td><p>4096<br />
-(&amp;H1000)</p></td>
+( &amp; H1000)</p></td>
 <td><p>Der Benutzer oder die Gruppe verfügt über die Berechtigung, Berechtigungen für das Objekt zu erteilen.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adRightWriteDesign</strong></p></td>
 <td><p>2048<br />
-(&amp;H800)</p></td>
+( &amp; H800)</p></td>
 <td><p>Der Benutzer oder die Gruppe verfügt über die Berechtigung, den Entwurf des Objekts zu bearbeiten.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>adRightWriteOwner</strong></p></td>
 <td><p>524288<br />
-(&amp;H80000)</p></td>
+( &amp; H80000)</p></td>
 <td><p>Der Benutzer oder die Gruppe verfügt über die Berechtigung, den Besitzer des Objekts zu ändern.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adRightWritePermissions</strong></p></td>
 <td><p>262144<br />
-(&amp;H40000)</p></td>
+( &amp; H40000)</p></td>
 <td><p>Der Benutzer oder die Gruppe kann die spezifischen Berechtigungen für ein Objekt im Katalog bearbeiten.</p></td>
 </tr>
 </tbody>

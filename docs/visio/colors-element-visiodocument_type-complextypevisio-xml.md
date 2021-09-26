@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3f439c2d-78be-5f2e-fa5a-f3feb83a0234
 description: Enthält die Farbtabelle des Dokuments.
-ms.openlocfilehash: 6f18926961583e09f83dd7921ca140c07a60ecc3
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 1459c0f70fb4705992e0c63655520ea95d49ff16
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34540175"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613022"
 ---
 # <a name="colors-element-visiodocument_type-complextype-visio-xml"></a>Colors-Element (VisioDocument_Type complexType) (Visio XML)
 
@@ -36,19 +36,19 @@ Enthält die Farbtabelle des Dokuments.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[VisioDocument](visiodocument-elementvisio-xml.md) <br/> |[VisioDocument_Type](visiodocument_type-complextypevisio-xml.md) <br/> |Das Stammelement eines Microsoft-Visio Dokument.  <br/> |
+|[VisioDocument](visiodocument-elementvisio-xml.md) <br/> |[VisioDocument_Type](visiodocument_type-complextypevisio-xml.md) <br/> |Das Stammelement eines Microsoft Visio Dokuments.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[ColorEntry](colorentry-element-colors_type-complextypevisio-xml.md) <br/> |[ColorEntry_Type](colorentry_type-complextypevisio-xml.md) <br/> |Enthält einen Farbtabelle-Eintrag.  <br/> |
+|[ColorEntry](colorentry-element-colors_type-complextypevisio-xml.md) <br/> |[ColorEntry_Type](colorentry_type-complextypevisio-xml.md) <br/> |Enthält einen Farbtabelleneintrag.  <br/> |
    
 ### <a name="attributes"></a>Attribute
 

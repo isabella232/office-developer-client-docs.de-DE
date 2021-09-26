@@ -6,31 +6,31 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm570
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: db9a8232-25c5-7087-2ae9-50470d0cf16e
 description: Legt den vertikalen Abstand zwischen sämtlichen Verbindern auf dem Zeichenblatt fest.
-ms.openlocfilehash: e98c3e05ffb1739f9b2739ce4e0ee8012afe2266
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 43161369775a46e2083454e581ba443f255f1dcd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33428473"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612512"
 ---
 # <a name="linetoliney-cell-page-layout-section"></a>Zelle "LineToLineY" (Abschnitt "Page Layout")
 
 Legt den vertikalen Abstand zwischen sämtlichen Verbindern auf dem Zeichenblatt fest.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Sie können den Wert dieser Zelle auch im Dialogfeld **Abstände für Layout und Routing** festlegen. (Klicken Sie dazu auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten**, wählen Sie **Layout und Routing** aus, und klicken Sie dann auf **Abstand**.)
   
-Um einen Verweis auf die Zelle LineToLineY anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Verwenden Sie Folgendes, um einen Verweis auf die Zelle LineToLineY anhand des Namens einer anderen Formel oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |LineToLineY  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die LineToLineY-Zelle nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle LineToLineY anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

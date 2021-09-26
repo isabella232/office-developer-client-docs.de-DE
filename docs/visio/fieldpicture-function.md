@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251592
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: df88c55f-c098-dd4c-bf53-c7d7b60cf719
 description: Gibt eine Zeichenfolge zum Formatieren von Bildern zurück, die dem internen Textfeld-Formatcode von Microsoft Visio entspricht.
-ms.openlocfilehash: 1ab24c602c7975cf6be22a564a8b9ee9aa0d6f46
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 1240386f38945dd7ede35f083ed4be87f75f5d81
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33431456"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59619015"
 ---
 # <a name="fieldpicture-function"></a>FIELDPICTURE Function
 
@@ -34,7 +34,7 @@ FIELDPICTURE(** *code* ** )
 
 Zeichenfolge
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Zeichenfolgen für Formatierungsangaben werden in der FORMAT-Funktion verwendet, um die Expandierung von Werten zu Datumsangaben, Zeitangaben, Zahlen und Einheitenbeschriftungen zu definieren.
   

@@ -6,33 +6,33 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm585
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 16b0e293-eeef-34b4-aeb0-4472815dd543
 description: Legt die Linienbreite eines Shapes fest. Definieren Sie die Linienbreite, indem Sie eine Zahl mit einer gültigen Maßeinheit eingeben.
-ms.openlocfilehash: 654a93f939226bedab2e40ab591dad0e3f872267
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: c38e1b2736c409e3362586bc651a4815394511ce
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33412247"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618637"
 ---
 # <a name="lineweight-cell-line-format-section"></a>Zelle "LineWeight" (Abschnitt "Line Format")
 
 Legt die Linienbreite eines Shapes fest. Definieren Sie die Linienbreite, indem Sie eine Zahl mit einer gültigen Maßeinheit eingeben.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Sie können den Wert von LineWeight auch im  Dialogfeld Linie festlegen (klicken Sie auf der Registerkarte Start in der **Gruppe Shape** auf **Linie,** zeigen Sie auf **Gewichtung,** und klicken Sie dann auf **Weitere Linien**). 
+Sie können den Wert von LineWeight auch im Dialogfeld **Linie** festlegen (klicken Sie auf der Registerkarte **"Start"** in der Gruppe **"Shape"** auf **"Linie",** zeigen Sie auf **"Gewichtung",** und klicken Sie dann auf **"Weitere Linien").**
   
-Wenn die Maßeinheit nicht eingegeben wird, wird die Maßeinheit für text verwendet, die  im Dialogfeld **Visio Optionen** angegeben ist (klicken Sie auf die Registerkarte Datei, und klicken Sie dann auf **Optionen**). Die Linienbreite ist unabhängig vom Zeichnungsmaßstab. Wenn die Zeichnung maßstäblich ist, bleibt die Linienbreite unverändert. 
+Wenn die Maßeinheit nicht eingegeben wird, wird die Maßeinheit für Text verwendet, der im Dialogfeld **Visio Optionen** angegeben ist (klicken Sie auf die Registerkarte **"Datei"** und dann auf **"Optionen").** Die Linienbreite ist unabhängig vom Zeichnungsmaßstab. Wenn die Zeichnung maßstäblich ist, bleibt die Linienbreite unverändert. 
   
-Verwenden Sie zum Erhalten eines Verweises auf die Zelle LineWeight anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft:** 
+Um einen Verweis auf die Zelle "LineWeight" anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | LineWeight  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die LineWeight-Zelle nach Index aus einem Programm zu erhalten: 
+Um einen Verweis auf die Zelle "LineWeight" anhand des Indexes eines Programms abzurufen, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|

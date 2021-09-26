@@ -6,39 +6,39 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm60036
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f1f11803-614b-a40d-0a2d-131093e7609e
 description: Enthält Datum und Uhrzeit der letzten Bearbeitung des Kommentars.
-ms.openlocfilehash: 60fd726db1056075f96519050cffa67c76977126
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: e899fe5b74f45a41a38f48710d5da297a50d5915
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33423881"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612883"
 ---
 # <a name="date-cell-annotation-section"></a>Zelle "Date" (Abschnitt "Annotation")
 
 Enthält Datum und Uhrzeit der letzten Bearbeitung des Kommentars. 
   
 > [!NOTE]
-> Diese Zelle wird nur zum Nachverfolgen von Kommentaren verwendet, wenn Sie eine VSD-Datei in Microsoft Visio 2013 öffnen oder eine VSDX-Datei im VSD-Dateiformat speichern. Es wird nicht zum Nachverfolgen von Kommentaren in VSDX-Dokumenten in Visio 2013 verwendet. 
+> Diese Zelle wird nur zum Nachverfolgen von Kommentaren beim Öffnen einer VSD-Datei in Microsoft Visio 2013 oder beim Speichern einer VSDX-Datei im VSD-Dateiformat verwendet. Es wird nicht zum Nachverfolgen von Kommentaren in VSDX-Dokumenten in Visio 2013 verwendet. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Auf der Benutzeroberfläche wird im Kommentarfeld nur das Datum angezeigt.
   
-Um einen Verweis auf die Zelle Date anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Um einen Verweis auf die Zelle Date anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | Annotation.Date[  *i*  ] where  *i*  = <1>, 2, 3...  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle Date nach Index aus einem Programm zu erhalten: 
+Um einen Verweis auf die Zelle Date anhand des Indexes eines Programms abzurufen, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionAnnotation** <br/> |
-| Zeilenindex:  <br/> |**visRowAnnotation**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowAnnotation**  +   *i* where *i* = 0, 1, 2...  <br/> |
 | Zeilenindex:  <br/> |**visAnnotationDate** <br/> |
    
 

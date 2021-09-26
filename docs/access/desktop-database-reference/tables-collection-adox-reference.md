@@ -1,23 +1,23 @@
 ---
-title: Tables-Auflistung (ADOX)-Verweis
+title: Tables-Auflistung (ADOX)-Referenz
 TOCTitle: Tables collection (ADOX)
 ms:assetid: 906a61b5-3eb2-4de9-b547-9981d2de8fa3
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249637(v=office.15)
 ms:contentKeyID: 48546324
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: bd00d2c8e27310d570d628797d74f671e9d2da94
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f7065fbfc4402c7dcdd3dc770edd24509925cd4b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306384"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611350"
 ---
-# <a name="tables-collection-adox-reference"></a>Tables-Auflistung (ADOX)-Verweis
+# <a name="tables-collection-adox-reference"></a>Tables-Auflistung (ADOX)-Referenz
 
 **Gilt für**: Access 2013, Office 2013
 
 - [Tables-Auflistung (ADOX)](tables-collection-adox.md)
-- [Tables-Auflistung (Eigenschaften, Methoden und Ereignisse) (ADOX)](tables-collection-properties-methods-and-events-adox.md)
+- [Eigenschaften, Methoden und Ereignisse der Tables-Auflistung (ADOX)](tables-collection-properties-methods-and-events-adox.md)
 

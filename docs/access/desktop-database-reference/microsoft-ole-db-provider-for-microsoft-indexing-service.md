@@ -6,20 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248786(v=office.15)
 ms:contentKeyID: 48542942
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: ba27bfdf6cc1317b441e626c61784e2c50b589f1
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7070fc6a7eeb9b2a41a15e2deaa24adb3bb7ba05
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288918"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611959"
 ---
 # <a name="microsoft-ole-db-provider-for-microsoft-indexing-service"></a>Microsoft OLE DB Provider for Microsoft Indexing Service
 
 
 **Gilt für**: Access 2013, Office 2013
 
-Der Microsoft OLE DB-Anbieter für Microsoft Indexdienst ermöglicht den programmgesteuerten Lesezugriff auf Dateisystem-und Webdaten, die vom Microsoft-Indexdienst indiziert werden. ADO-Anwendungen können SQL-Abfragen ausgeben, um Informationen zu Inhalts- und Dateieigenschaften abzurufen.
+Der Microsoft OLE DB-Anbieter für Microsoft Indexing Service bietet programmgesteuerten schreibgeschützten Zugriff auf Dateisystem- und Webdaten, die vom Microsoft-Indizierungsdienst indiziert werden. ADO-Anwendungen können SQL-Abfragen ausgeben, um Informationen zu Inhalts- und Dateieigenschaften abzurufen.
 
 Der Anbieter ist ein Freethreadanbieter, der Unicode verwendet.
 
@@ -62,7 +62,7 @@ Die Zeichenfolge besteht aus den folgenden Schlüsselwörtern:
 <td><p>Gibt den OLE DB-Anbieter für Microsoft Indexdienst an. In der Regel ist dies das einzige Schlüsselwort, das in der Verbindungszeichenfolge angegeben wird.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Data Source</strong></p></td>
+<td><p><strong>Datenquelle</strong></p></td>
 <td><p>Gibt den Katalognamen des Indexdiensts an. Wenn dieses Schlüsselwort nicht angegeben ist, wird der Standardkatalog des Systems verwendet.</p></td>
 </tr>
 <tr class="odd">
@@ -110,12 +110,12 @@ Verfügbarkeit von ADO-Standardeigenschaften des **Recordset**-Objekts:
 <td><p>Lese-/Schreibzugriff</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="activeconnection-property-ado.md">ActiveConnection</a></p></td>
-<td><p>schreibgeschützt</p></td>
+<td><p><a href="activeconnection-property-ado.md">Activeconnection</a></p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="bof-eof-properties-ado.md">BOF</a></p></td>
-<td><p>schreibgeschützt</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="bookmark-property-ado.md">Lesezeichen</a>*</p></td>
@@ -130,7 +130,7 @@ Verfügbarkeit von ADO-Standardeigenschaften des **Recordset**-Objekts:
 <td><p>immer <strong>adUseServer</strong></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="cursortype-property-ado.md">CursorType</a></p></td>
+<td><p><a href="cursortype-property-ado.md">Cursortype</a></p></td>
 <td><p>immer <strong>adOpenStatic</strong></p></td>
 </tr>
 <tr class="odd">
@@ -139,7 +139,7 @@ Verfügbarkeit von ADO-Standardeigenschaften des **Recordset**-Objekts:
 </tr>
 <tr class="even">
 <td><p><a href="bof-eof-properties-ado.md">EOF</a></p></td>
-<td><p>schreibgeschützt</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="filter-property-ado.md">Filter</a></p></td>
@@ -159,7 +159,7 @@ Verfügbarkeit von ADO-Standardeigenschaften des **Recordset**-Objekts:
 </tr>
 <tr class="odd">
 <td><p><a href="pagecount-property-ado.md">PageCount</a></p></td>
-<td><p>schreibgeschützt</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="pagesize-property-ado.md">PageSize</a></p></td>
@@ -167,7 +167,7 @@ Verfügbarkeit von ADO-Standardeigenschaften des **Recordset**-Objekts:
 </tr>
 <tr class="odd">
 <td><p><a href="recordcount-property-ado.md">RecordCount</a></p></td>
-<td><p>schreibgeschützt</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="source-property-ado-recordset.md">Source</a></p></td>
@@ -175,17 +175,17 @@ Verfügbarkeit von ADO-Standardeigenschaften des **Recordset**-Objekts:
 </tr>
 <tr class="odd">
 <td><p><a href="state-property-ado.md">State</a></p></td>
-<td><p>schreibgeschützt</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="status-property-ado-recordset.md">Status</a></p></td>
-<td><p>schreibgeschützt</p></td>
+<td><p>Schreibgeschützt</p></td>
 </tr>
 </tbody>
 </table>
 
 
-\*Lesezeichen müssen für den Anbieter aktiviert werden, damit dieses Feature im **Recordset**-Objekt vorhanden ist.
+\*Lesezeichen müssen für den Anbieter aktiviert sein, damit dieses Feature im **Recordset** vorhanden ist.
 
 Verfügbarkeit von ADO-Standardmethoden des **Recordset**-Objekts:
 
@@ -222,11 +222,11 @@ Verfügbarkeit von ADO-Standardmethoden des **Recordset**-Objekts:
 <td><p>Ja</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="close-method-ado.md">Close</a></p></td>
+<td><p><a href="close-method-ado.md">Schließen</a></p></td>
 <td><p>Ja</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="delete-method-ado-recordset.md">Delete</a></p></td>
+<td><p><a href="delete-method-ado-recordset.md">Löschen</a></p></td>
 <td><p>Nein</p></td>
 </tr>
 <tr class="even">
@@ -246,7 +246,7 @@ Verfügbarkeit von ADO-Standardmethoden des **Recordset**-Objekts:
 <td><p>Ja</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="open-method-ado-recordset.md">Open</a></p></td>
+<td><p><a href="open-method-ado-recordset.md">Öffnen</a></p></td>
 <td><p>Ja</p></td>
 </tr>
 <tr class="odd">
@@ -275,5 +275,5 @@ Verfügbarkeit von ADO-Standardmethoden des **Recordset**-Objekts:
 
 ## <a name="see-also"></a>Siehe auch
 
-Genaue Implementierungsdetails und funktionale Informationen zum Microsoft OLE DB-Anbieter für Microsoft Indexdienst finden Sie in der Microsoft OLE DB Programmer es Reference.
+Spezifische Implementierungsdetails und funktionale Informationen zum Microsoft OLE DB-Anbieter für Microsoft-Indizierungsdienst finden Sie in der Microsoft OLE DB-Programmierreferenz.
 

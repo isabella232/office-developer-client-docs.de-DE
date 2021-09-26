@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm187628
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: b972174e4fe7f3c0384b7483e17eb5ceb9e8bc15
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 5da86224211362c4819f7f5a49e3509c900f319a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288308"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611881"
 ---
 # <a name="openstoredprocedure-macro-action"></a>OpenStoredProcedure-Makroaktion
 
@@ -45,7 +45,7 @@ Die **ÖffnenGespeicherteProzedur**-Aktion verwendet die folgenden Argumente.
 <tbody>
 <tr class="odd">
 <td><p><strong>Prozedurname</strong></p></td>
-<td><p>Der Name der zu öffnenden gespeicherten Prozedur. Im <strong>Feld Prozedur Name</strong> im Abschnitt <strong>Aktionsargumente</strong> des Bereichs Makro-Generator werden alle gespeicherten Prozeduren in der aktuellen Datenbank angezeigt. Dies ist ein erforderliches Argument. Wenn Sie ein Makro ausführen, das die <strong>ÖffnenGespeicherteProzedur</strong>-Aktion in einer Bibliotheksdatenbank verwendet, sucht Microsoft Access zuerst in der Bibliotheksdatenbank und dann in der aktuellen Datenbank nach der gespeicherten Prozedur mit diesem Namen.</p></td>
+<td><p>Der Name der zu öffnenden gespeicherten Prozedur. Im <strong>Feld Prozedurname</strong> im Abschnitt <strong>Aktionsargumente</strong> im Bereich Makro-Generator werden alle gespeicherten Prozeduren in der aktuellen Datenbank angezeigt. Dies ist ein erforderliches Argument. Wenn Sie ein Makro ausführen, das die <strong>ÖffnenGespeicherteProzedur</strong>-Aktion in einer Bibliotheksdatenbank verwendet, sucht Microsoft Access zuerst in der Bibliotheksdatenbank und dann in der aktuellen Datenbank nach der gespeicherten Prozedur mit diesem Namen.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>View</strong></p></td>
@@ -58,7 +58,7 @@ Die **ÖffnenGespeicherteProzedur**-Aktion verwendet die folgenden Argumente.
 </tbody>
 </table>
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Aktion ist mit dem Doppelklicken auf die gespeicherte Prozedur im Navigationsbereich, dem Klicken auf die gespeicherte Prozedur im Navigationsbereich mit der rechten Maustaste und dem Auswählen des gewünschten Befehls vergleichbar.
 

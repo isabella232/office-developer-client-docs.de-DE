@@ -4,19 +4,19 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 16c5933f-1fa1-a180-d821-099fd6bf6e13
-description: Enthält die Textzeichenfolge, die im rechten Teil der Kopfzeile eines Dokuments angezeigt wird.
-ms.openlocfilehash: aeccf31b4fd3cc2d9e3c4bf5dad006cbf08f525e
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+description: Enthält die Textzeichenfolge, die im rechten Bereich der Kopfzeile eines Dokuments angezeigt wird.
+ms.openlocfilehash: 6f3843a54bf50c358a63c8fc9c3de73b5922c292
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539068"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618875"
 ---
 # <a name="headerright-element-headerfooter_type-complextype-visio-xml"></a>HeaderRight-Element (HeaderFooter_Type complexType) (Visio XML)
 
-Enthält die Textzeichenfolge, die im rechten Teil der Kopfzeile eines Dokuments angezeigt wird.
+Enthält die Textzeichenfolge, die im rechten Bereich der Kopfzeile eines Dokuments angezeigt wird.
   
 ## <a name="element-information"></a>Informationen zum Element
 
@@ -36,7 +36,7 @@ Enthält die Textzeichenfolge, die im rechten Teil der Kopfzeile eines Dokuments
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

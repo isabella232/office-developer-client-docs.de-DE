@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249027(v=office.15)
 ms:contentKeyID: 48543808
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 5e291650b99146a8fee22de4651cdfd174e2e48a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7e2d6eebe7aa54e48e42bbd193c5e3c17e943adc
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314126"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621675"
 ---
 # <a name="understanding-recordset-structure"></a>Grundlegendes zur Struktur von Recordsets
 
@@ -20,7 +20,7 @@ ms.locfileid: "32314126"
 
 Jedes **Recordset** -Objekt weist eine **Fields** -Auflistung auf, die aus mindestens einem **Field** -Objekt besteht. Ein **Field** -Objekt stellt in der Regel eine Tabellenspalte dar. 
 
-In den folgenden Themen wird erläutert, wie Sie **** durch die Fields-Auflistung navigieren und Informationen zu den einzelnen Feldern abrufen. Anschließend wird erläutert, welche Art von Informationen Ihnen über das **Field** -Objekt zur Verfügung stehen und wie Sie es verwenden.
+In den folgenden Themen wird erläutert, wie Sie durch die **Fields-Auflistung** navigieren und Informationen zu den einzelnen Feldern abrufen. Anschließend wird erläutert, welche Art von Informationen Ihnen über das **Field-Objekt** zur Verfügung stehen und wie es verwendet werden kann.
 
 - [Fields-Auflistung](the-fields-collection.md)
 - [Field-Objekt](the-field-object.md)

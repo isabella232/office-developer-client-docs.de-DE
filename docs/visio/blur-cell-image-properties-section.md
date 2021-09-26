@@ -6,29 +6,29 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm115
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8b077cdb-6036-4f77-dc20-a476bb75b0f7
 description: Eine Bitmapgrafik wird verwischt oder weichgezeichnet. Der Standardwert ist 0 %.
-ms.openlocfilehash: 599810d126c853e37552045d0ef83cb580606ae2
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 417a381a43de1e757dccebb1071f1b928ed02592
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33427906"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613121"
 ---
 # <a name="blur-cell-image-properties-section"></a>Zelle "Blur" (Abschnitt "Image Properties")
 
 Eine Bitmapgrafik wird verwischt oder weichgezeichnet. Der Standardwert ist 0 %.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie zum Erhalten eines Verweises auf die Blur-Zelle anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft:** 
+Verwenden Sie Folgendes, um einen Verweis auf die Zelle "Blur" anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | Weichzeichnen  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Blur-Zelle nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Blur-Zelle anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

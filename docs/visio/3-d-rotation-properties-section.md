@@ -1,28 +1,28 @@
 ---
-title: Abschnitt "3D-Rotationseigenschaften"
+title: Abschnitt "3D Rotation Properties"
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6f2520c0-d2e2-470a-90b5-c4bca789bb73
-description: Zeigt die aktuellen Werte des Drehwinkels eines Shapes entlang der X-, Y- und Z-Achsen an.
-ms.openlocfilehash: 03ecf92de66324157dc6a9003e943dbb33cb8aa5
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Zeigt die aktuellen Werte des Drehwinkels einer Form entlang der X-, Y- und Z-Achse an.
+ms.openlocfilehash: 47a7cbe008108eb7702914dba5e55ad01de96047
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33421102"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59619183"
 ---
-# <a name="3-d-rotation-properties-section"></a>Abschnitt "3D-Rotationseigenschaften"
+# <a name="3-d-rotation-properties-section"></a>Abschnitt "3D Rotation Properties"
 
-Zeigt die aktuellen Werte des Drehwinkels eines Shapes entlang der X-, Y- und Z-Achsen an.
+Zeigt die aktuellen Werte des Drehwinkels einer Form entlang der X-, Y- und Z-Achse an.
   
 > [!NOTE]
-> Der Abschnitt 3D-Rotationseigenschaften enthält keine Zellen, die Die-Form-Abschrägungseffekte steuern. Zum Festlegen eines Abschrägungseffekts ändern Sie die Werte der Zellen im [Abschnitt Abschrägungseigenschaften.](bevel-properties-section.md) 
+> Der Abschnitt "3D Rotation Properties" enthält keine Zellen, die die Abschrägungseffekte steuern. Um einen Abschrägungseffekt festzulegen, ändern Sie die Werte der Zellen im Abschnitt ["Abschrägungseigenschaften".](bevel-properties-section.md) 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Sie können die 3D-Drehungswerte im Dialogfeld **Form** formatieren **ändern**( Home Shape Styles Effects 3D Rotation oder durch Ändern einer der Zellen im Abschnitt  >    >    >   **3D-Rotationseigenschaften.** 
+Sie können die 3D-Drehungswerte im Dialogfeld Shape formatieren (**Home** Shape   >  **Styles**  >  **Effects**  >  **3-D Rotation)** ändern oder eine Änderung an einer der Zellen im Abschnitt "Eigenschaften der **3D-Drehung"** vornehmen. 
   
 

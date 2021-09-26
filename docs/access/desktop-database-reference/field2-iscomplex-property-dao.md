@@ -1,20 +1,20 @@
 ---
-title: Field2. isComplex-Eigenschaft (DAO)
+title: Field2.IsComplex-Eigenschaft (DAO)
 TOCTitle: IsComplex Property
 ms:assetid: ffc90e6e-e3ee-4f9b-ca6b-615199300d45
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff837318(v=office.15)
 ms:contentKeyID: 48548970
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: d24229a0fc3122cc8a9fb20b041fc9fadc5ccb0a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 2bfec22e23aef53abe3a175a7647c2a0acaf58bb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292783"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618168"
 ---
-# <a name="field2iscomplex-property-dao"></a>Field2. isComplex-Eigenschaft (DAO)
+# <a name="field2iscomplex-property-dao"></a>Field2.IsComplex-Eigenschaft (DAO)
 
 **Gilt für**: Access 2013, Office 2013 
 
@@ -28,11 +28,11 @@ Hinzugefügte Version: Access 2007
 
 *Ausdruck* . IsComplex
 
-*Ausdruck* Eine Variable, die ein **Field2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Field2**-Objekt darstellt.
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt, wie Sie durch ein Recordset-Objekt navigieren, das ein Mehrfachwertfeld enthält.
+Das folgende Beispiel zeigt, wie Sie durch ein Recordset navigieren, das ein Mehrfachwertfeld enthält.
 
 **Der Beispielcode stammt von:**[Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
 

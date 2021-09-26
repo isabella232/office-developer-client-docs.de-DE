@@ -6,20 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248933(v=office.15)
 ms:contentKeyID: 48543473
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 55dc01afc874403bcdf52008e17daab7e6d98ae9
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: f6b363fc330eb197403e1e3d837715b1c3491693
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296304"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612323"
 ---
 # <a name="clone-method-example-vc"></a>Clone-Methode (Beispiel) (VC++)
 
 
 **Gilt für**: Access 2013, Office 2013
 
-In diesem Beispiel wird die [Clone](clone-method-ado.md)-Methode zum Erstellen von Kopien eines [Recordsets](recordset-object-ado.md) verwendet. Dann kann der Benutzer den Datensatzzeiger für jede Kopie unabhängig positionieren.
+In diesem Beispiel werden mit der [Clone](clone-method-ado.md)-Methode Kopien eines [Recordset](recordset-object-ado.md) erstellt. Anschließend kann der Benutzer den Datensatzzeiger jeder Kopie unabhängig positionieren.
 
 ```cpp 
  
@@ -252,7 +252,7 @@ void PrintComError(_com_error &e)
 // EndCloneCpp 
 ```
 
-**CloneX. h**
+**CloneX.h**
 
 ```cpp 
  

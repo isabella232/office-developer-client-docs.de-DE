@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff822082(v=office.15)
 ms:contentKeyID: 48547247
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 0f82ace31a991a6700417d4c0d66bf775fcb7b26
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: e7e4592d589c5039ff834106614d9ea45a26f3c2
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293777"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618189"
 ---
 # <a name="document-object-dao"></a>Document-Objekt (DAO)
 
@@ -45,7 +45,7 @@ Jedes **Container**-Objekt besitzt eine **Documents**-Auflistung mit **Document*
 </tr>
 <tr class="even">
 <td><p>Tabelle oder Abfrage</p></td>
-<td><p>Tables</p></td>
+<td><p>Tabellen</p></td>
 <td><p>Gespeicherten Tabellen oder Abfragen</p></td>
 </tr>
 <tr class="odd">
@@ -75,9 +75,9 @@ Da ein **Document**-Objekt einem vorhandenen Objekt entspricht, können keine ne
 
 - **Documents**(0)
 
-- **Dokumente** ("*Name*")
+- **Dokumente**("*Name*")
 
-- ****\!Dokument\[*Name*\]
+-  \! Dokumente \[ *Name*\]
 
 ## <a name="example"></a>Beispiel
 

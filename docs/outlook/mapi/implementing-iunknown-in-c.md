@@ -3,31 +3,31 @@ title: Implementieren von IUnknown in C
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 807b6dc4-cdb7-40a4-87d7-ebc1ad5fab76
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 3c634defcad76755fc6604a23d2091bb21e15111
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 11c52770251528f58edd09b66fdf855c6669fdf4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32346774"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59620744"
 ---
 # <a name="implementing-iunknown-in-c"></a>Implementieren von IUnknown in C
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Implementierungen der [IUnknown::QueryInterface-Methode](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx) in C ähneln C++-Implementierungen sehr. Es gibt zwei grundlegende Schritte für die Implementierung: 
+Implementierungen der [IUnknown::QueryInterface-Methode](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx) in C sind C++-Implementierungen sehr ähnlich. Es gibt zwei grundlegende Schritte für die Implementierung: 
   
 1. Überprüfen von Parametern.
     
-2. Überprüfen des Bezeichners der angeforderten Schnittstelle mit der Liste der vom Objekt unterstützten Schnittstellen und Zurückgeben des werts E_NO_INTERFACE oder eines gültigen Schnittstellenzeigers. Wenn ein Schnittstellenzeiger zurückgegeben wird, sollte die Implementierung auch die [IUnknown::AddRef-Methode](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) aufrufen, um die Referenzanzahl zu erhöhen. 
+2. Überprüfen des Bezeichners der angeforderten Schnittstelle anhand der Liste der Schnittstellen, die vom Objekt unterstützt werden, und Zurückgeben des werts E_NO_INTERFACE oder eines gültigen Schnittstellenzeigers. Wenn ein Schnittstellenzeiger zurückgegeben wird, sollte die Implementierung auch die [IUnknown::AddRef-Methode](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) aufrufen, um die Referenzanzahl zu erhöhen. 
     
-Der Hauptunterschied zwischen einer Implementierung von **QueryInterface** in C und C++ ist der zusätzliche erste Parameter in der C-Version. Da der Objektzeiger der Parameterliste hinzugefügt wird, muss eine C-Implementierung von **QueryInterface** mehr Parameterüberprüfung als eine C++-Implementierung haben. Die Logik zum Überprüfen der Schnittstellen-ID, zum Erhöhen der Referenzanzahl und zum Zurückgeben eines Objektzeigers sollte in beiden Sprachen identisch sein. 
+Der Hauptunterschied zwischen einer Implementierung von **QueryInterface** in C und C++ ist der zusätzliche erste Parameter in der C-Version. Da der Objektzeiger der Parameterliste hinzugefügt wird, muss eine **C-Implementierung von QueryInterface** mehr Parameterüberprüfungen aufweisen als eine C++-Implementierung. Die Logik zum Überprüfen des Schnittstellenbezeichners, zum Erhöhen der Referenzanzahl und zum Zurückgeben eines Objektzeigers sollte in beiden Sprachen identisch sein. 
   
-Das folgende Codebeispiel zeigt, wie **Sie QueryInterface** in C für ein Statusobjekt implementieren. 
+Das folgende Codebeispiel zeigt, wie **QueryInterface** in C für ein Statusobjekt implementiert wird. 
   
 ```cpp
 STDMETHODIMP STATUS_QueryInterface(LPMYSTATUSOBJ lpMyObj, REFIID riid,
@@ -64,9 +64,9 @@ STDMETHODIMP STATUS_QueryInterface(LPMYSTATUSOBJ lpMyObj, REFIID riid,
 
 ```
 
-Während die Implementierung der **AddRef-Methode** in C einer C++-Implementierung ähnelt, kann eine C-Implementierung der [IUnknown::Release-Methode](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) aufwändiger sein als eine C++-Version. Dies liegt daran, dass ein Teil der Funktionalität, die mit der Freimachen eines Objekts in den C++-Konstruktor und -Destruktor integriert werden kann, und C über keinen solchen Mechanismus verfügt. Alle diese Funktionen müssen in der **Release-Methode enthalten** sein. Außerdem ist aufgrund des zusätzlichen Parameters und der expliziten vtable eine weitere Überprüfung erforderlich. 
+Während die Implementierung der **AddRef-Methode** in C einer C++-Implementierung ähnelt, kann eine C-Implementierung der [IUnknown::Release-Methode](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) ausführlicher sein als eine C++-Version. Dies liegt daran, dass ein Großteil der Funktionalität, die mit der Freigabe eines Objekts verbunden ist, in den C++-Konstruktor und Destruktor integriert werden kann und C über keinen solchen Mechanismus verfügt. Alle diese Funktionen müssen in der **Release-Methode** enthalten sein. Außerdem ist aufgrund des zusätzlichen Parameters und der expliziten vtable eine weitere Überprüfung erforderlich. 
   
-Der folgende **AddRef-Methodenaufruf** veranschaulicht eine typische C-Implementierung für ein Statusobjekt. 
+Der folgende **Aufruf der AddRef-Methode** veranschaulicht eine typische C-Implementierung für ein Statusobjekt. 
   
 ```cpp
 STDMETHODIMP_(ULONG) STATUS_AddRef(LPMYSTATUSOBJ lpMyObj)
@@ -90,13 +90,13 @@ STDMETHODIMP_(ULONG) STATUS_AddRef(LPMYSTATUSOBJ lpMyObj)
 
 ```
 
-Das folgende Codebeispiel zeigt eine typische Implementierung von **Release** für ein C-Status-Objekt. Wenn die Referenzanzahl nach der Dekrementierung 0 ist, sollte eine C-Statusobjektimplementierung die folgenden Aufgaben ausführen: 
+Das folgende Codebeispiel zeigt eine typische Implementierung von **Release** für ein C-Statusobjekt. Wenn die Referenzanzahl 0 ist, nachdem sie verringert wurde, sollte eine C-Statusobjektimplementierung die folgenden Aufgaben ausführen: 
   
-- Lassen Sie alle gehaltenen Zeiger auf Objekte los. 
+- Geben Sie alle gehaltenen Zeiger auf Objekte frei. 
     
-- Legen Sie die vtable auf NULL fest, was das Debuggen in dem Fall erleichtert, in dem der Benutzer eines Objekts mit dem Namen **"Release"** das Objekt weiterhin zu verwenden versucht. 
+- Legen Sie die vtable auf NULL fest, wodurch das Debuggen für den Fall erleichtert wird, dass der Benutzer des Objekts **"Release"** aufgerufen hat, aber weiterhin versucht hat, das Objekt zu verwenden. 
     
-- Rufen **Sie MAPIFreeBuffer auf,** um das Objekt frei zu machen. 
+- Rufen Sie **MAPIFreeBuffer** auf, um das Objekt frei zu geben. 
     
 ```cpp
 STDMETHODIMP_(ULONG) STATUS_Release(LPMYSTATUSOBJ lpMyObj)

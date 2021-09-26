@@ -6,28 +6,28 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff821731(v=office.15)
 ms:contentKeyID: 48547048
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 89ac6756ced96cf360c9d5920c48088e750383b4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 4bbf52a577c0f55bbe68b7350ab29238b92c3036
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32309387"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611742"
 ---
 # <a name="recordset2name-property-dao"></a>Recordset2.Name-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
 
-Gibt den Namen des angegebenen Objekts zurück. Schreibgeschützter **String**-Wert.
+Gibt den Namen des angegebenen Objekts zurück. Read-only **Zeichenfolge**.
 
 ## <a name="syntax"></a>Syntax
 
 *Ausdruck* . Namen
 
-*Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset2-Objekt** darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Wert der **Name**-Eigenschaft eines durch eine SQL-Anweisung geöffneten **Recordset**-Objekts sind die ersten 256 Zeichen der SQL-Anweisung.
 

@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff845853(v=office.15)
 ms:contentKeyID: 48543644
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: e27eb1bdfb9b393df76af8bdf54bc7f05fd82c2e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: ca550cf77b70d27cd1fbc8b7b21af98fe10d7e54
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306370"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621626"
 ---
 # <a name="updatecriteriaenum-enumeration-dao"></a>UpdateCriteriaEnum-Aufzählung (DAO)
 
@@ -37,12 +37,12 @@ Hiermit geben Sie zusammen mit der **UpdateOptions**-Methode an, wie eine Batcha
 <tbody>
 <tr class="odd">
 <td><p>dbCriteriaAllCols</p></td>
-<td><p>4</p></td>
+<td><p>4 </p></td>
 <td><p>Verwendet die Schlüsselspalte(n) und alle Spalten in der WHERE-Klausel.</p></td>
 </tr>
 <tr class="even">
 <td><p>dbCriteriaDeleteInsert</p></td>
-<td><p>16</p></td>
+<td><p>16 </p></td>
 <td><p>Verwendet für jede geänderte Zeile ein DELETE/INSERT-Anweisungspaar.</p></td>
 </tr>
 <tr class="odd">
@@ -57,11 +57,11 @@ Hiermit geben Sie zusammen mit der **UpdateOptions**-Methode an, wie eine Batcha
 </tr>
 <tr class="odd">
 <td><p>dbCriteriaTimestamp</p></td>
-<td><p>8</p></td>
+<td><p>8 </p></td>
 <td><p>Verwendet nur die Zeitstempelspalte, soweit vorhanden (ein Laufzeitfehler wird generiert, falls im Resultset keine Zeitstempelspalte vorhanden ist).</p></td>
 </tr>
 <tr class="even">
-<td><p>Werden dbCriteriaUpdate</p></td>
+<td><p>dbCriteriaUpdate</p></td>
 <td><p>32</p></td>
 <td><p>Verwendet für jede geänderte Zeile eine UPDATE-Anweisung.</p></td>
 </tr>

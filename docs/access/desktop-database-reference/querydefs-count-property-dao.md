@@ -1,20 +1,20 @@
 ---
-title: QueryDefs. Count-Eigenschaft (DAO)
+title: QueryDefs.Count-Eigenschaft (DAO)
 TOCTitle: Count Property
 ms:assetid: 8caa01c5-692f-95e4-4b11-6e6c591f5872
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197340(v=office.15)
 ms:contentKeyID: 48546240
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 95624c82ee9ab322eec5455759cf4ec2e9708dba
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c492f3511245ceff4b96a86ee2a12404492f25ab
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300959"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621976"
 ---
-# <a name="querydefscount-property-dao"></a>QueryDefs. Count-Eigenschaft (DAO)
+# <a name="querydefscount-property-dao"></a>QueryDefs.Count-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -25,7 +25,7 @@ Gibt die Anzahl von Objekten in der angegebenen Auflistung zurück. Schreibgesch
 
 *Ausdruck* . Count
 
-*Ausdruck* Eine Variable, die ein **Querydefs** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **QueryDefs-Objekt** darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 

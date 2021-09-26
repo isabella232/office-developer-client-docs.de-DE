@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 398c141c-8a40-7605-254a-2ee7cc0a7af5
 description: Enthält ein Verbinden-Element für jede Verbindung zwischen zwei Formen in einer Zeichnung.
-ms.openlocfilehash: d421068926a40a8f7c24a783388d06091700211f
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 9d9e009d1deeec997b20cf4084f1f8d1b15fa1fd
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34538711"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613009"
 ---
 # <a name="connects-element-pagecontents_type-complextype-visio-xml"></a>Connects-Element (PageContents_Type complexType) (Visio XML)
 
@@ -36,7 +36,7 @@ Enthält ein **Verbinden-Element** für jede Verbindung zwischen zwei Formen in 
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

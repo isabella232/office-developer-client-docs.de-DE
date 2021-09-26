@@ -1,20 +1,20 @@
 ---
-title: Field2. CreateProperty-Methode (DAO)
+title: Field2.CreateProperty-Methode (DAO)
 TOCTitle: CreateProperty Method
 ms:assetid: bdbd6bec-216f-138e-78df-9c3221692aa4
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff822737(v=office.15)
 ms:contentKeyID: 48547446
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: cf35138a4782e1f16d230ba120bf5482a9a8ce40
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 785ba0608a2a62c7a95c14e134424f47e2013eb5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292846"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612162"
 ---
-# <a name="field2createproperty-method-dao"></a>Field2. CreateProperty-Methode (DAO)
+# <a name="field2createproperty-method-dao"></a>Field2.CreateProperty-Methode (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -22,9 +22,9 @@ Erstellt ein neues, benutzerdefiniertes **[Property](property-object-dao.md)** -
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . CreateProperty (***Name***, ***Type***, ***value***, ***DDL***)
+*Ausdruck* . CreateProperty(***Name** _, _*_Type_*_, _*_Value_*_, _*_DDL_**)
 
-*Ausdruck* Eine Variable, die ein **Field2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Field2**-Objekt darstellt.
 
 ## <a name="parameters"></a>Parameter
 
@@ -51,22 +51,22 @@ Erstellt ein neues, benutzerdefiniertes **[Property](property-object-dao.md)** -
 <td><p>Ein <strong>String</strong>-Wert, der das neue <strong>Property</strong>-Objekt eindeutig benennt. Weitere Informationen zu gültigen <strong>Property</strong>-Namen finden Sie in dem Thema zur <strong>Name</strong>-Eigenschaft.</p></td>
 </tr>
 <tr class="even">
-<td><p><em>Type</em></p></td>
+<td><p><em>Typ</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Eine Konstante, die den Datentyp des neuen <strong>Property</strong>-Objekts definiert. Unter der <strong><a href="field-type-property-dao.md">Type</a></strong> -Eigenschaft finden Sie gültige Datentypen.</p></td>
+<td><p>Eine Konstante, die den Datentyp des neuen <strong>Property</strong>-Objekts definiert. Informationen zu gültigen Datentypen finden Sie in dem Thema zur <strong><a href="field-type-property-dao.md">Type</a></strong>-Eigenschaft.</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>Wert</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Ein <strong>Variant</strong>-Wert, der den ursprünglichen Eigenschaftswert enthält. Details finden Sie unter der <strong><a href="field-value-property-dao.md">value</a></strong> -Eigenschaft.</p></td>
+<td><p>Ein <strong>Variant</strong>-Wert, der den ursprünglichen Eigenschaftswert enthält. Weitere Informationen finden Sie in dem Thema zur <strong><a href="field-value-property-dao.md">Value</a></strong>-Eigenschaft.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>DDL</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Ein <strong>Variant</strong>-Wert (Untertyp <strong>Boolean</strong>), der angibt, ob <strong>Property</strong> ein DDL-Objekt ist. Der Standardwert ist <strong>False</strong>. Wenn DDL auf <strong>true</strong>festgelegt ist, können Benutzer dieses <strong>Property-</strong> Objekt nur ändern oder löschen, wenn Sie über die <strong>dbSecWriteDef</strong> -Berechtigung verfügen.</p></td>
+<td><p>Ein <strong>Variant</strong>-Wert (Untertyp <strong>Boolean</strong>), der angibt, ob <strong>Property</strong> ein DDL-Objekt ist. Der Standardwert ist <strong>False</strong>. Wenn DDL <strong>"True"</strong>ist, können Benutzer dieses <strong>Property-Objekt</strong> nur dann ändern oder löschen, wenn sie über <strong>die Berechtigung "dbSecWriteDef"</strong> verfügen.</p></td>
 </tr>
 </tbody>
 </table>
@@ -76,18 +76,18 @@ Erstellt ein neues, benutzerdefiniertes **[Property](property-object-dao.md)** -
 
 Eigenschaft
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Ein benutzerdefiniertes **Property**-Objekt können Sie nur in der **[Properties](properties-collection-dao.md)** -Auflistung eines beständigen Objekts erstellen.
 
 Wenn Sie **CreateProperty** verwenden und einen oder mehrere optionale Teile weglassen, können Sie die entsprechende Eigenschaft mithilfe einer geeigneten Zuweisungsanweisung festlegen oder zurücksetzen, bevor Sie das neue Objekt an eine Auflistung anfügen. Nachdem Sie das Objekt angefügt haben, können Sie dessen Eigenschafteneinstellungen zum Teil ändern. Weitere Informationen hierzu finden Sie in den Themen zur **Name**-, **Type**- und **Value**-Eigenschaft.
 
-Wenn Name auf ein Objekt verweist, das bereits ein Element der Auflistung ist, tritt ein Laufzeitfehler auf, wenn Sie die **[Append](fields-append-method-dao.md)** -Methode verwenden.
+Wenn sich der Name auf ein Objekt bezieht, das bereits ein Element der Auflistung ist, tritt ein Laufzeitfehler auf, wenn Sie die **[Append-Methode](fields-append-method-dao.md)** verwenden.
 
 Verwenden Sie die [**Delete**](fields-delete-method-dao.md) -Methode für die [**Properties**](properties-collection-dao.md) -Auflistung, um ein benutzerdefiniertes **Property**-Objekt aus der Auflistung zu entfernen. Sie können keine integrierten Eigenschaften löschen.
 
 
 > [!NOTE]
-> Wenn Sie das Argument DDL weglassen, wird standardmäßig false (nicht-DDL) verwendet. Da keine entsprechende DDL-Eigenschaft verfügbar gemacht wurde, müssen Sie ein **Property**-Objekt, das von DLL in Nicht-DLL geändert werden soll, löschen und erneut erstellen.
+> Wenn Sie das Argument DDL weglassen, wird standardmäßig False (nicht DDL) verwendet. Da keine entsprechende DDL-Eigenschaft verfügbar gemacht wurde, müssen Sie ein **Property**-Objekt, das von DLL in Nicht-DLL geändert werden soll, löschen und erneut erstellen.
 
 

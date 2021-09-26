@@ -6,25 +6,25 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250085(v=office.15)
 ms:contentKeyID: 48548014
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: b4f4efc2ffab9f7996b2d805658b985badbaf87e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 1732e32e784f84ab6b21855f94c5b326420cfe41
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296395"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618511"
 ---
 # <a name="chapter-property-ado"></a>Chapter-Eigenschaft (ADO)
 
 **Gilt für**: Access 2013, Office 2013
  
-Gets or sets an OLE DB **Chapter** object from/on an **ADORecordsetConstruction** object. Wenn Sie das **Chapter** -Objekt mithilfe von " **\_Chapter** " festlegen, wird eine Teilmenge von Zeilen in ein ADO- **Recordset** -Objekt umgewandelt. This sets the current chapter of the **Rowset** object. Lese-/Schreibzugriff.
+Gets or sets an OLE DB **Chapter** object from/on an **ADORecordsetConstruction** object. Wenn Sie **\_ "Put Chapter"** zum Festlegen des **Chapter-Objekts** verwenden, wird eine Teilmenge von Zeilen in ein **ADO-Recordset-Objekt** umgewandelt. This sets the current chapter of the **Rowset** object. Lese-/Schreibzugriff.
 
 ## <a name="syntax"></a>Syntax
 
-HRESULT get\_Chapter (\[Out, retval\] Long\* plChapter);
+HRESULT get \_ Chapter( \[ out, retval \] long \* plChapter);
 
-HRESULT put\_Chapter (\[in\] Long lChapter);
+HRESULT put \_ Chapter( \[ in long \] lChapter);
 
 ## <a name="parameters"></a>Parameter
 
@@ -35,7 +35,7 @@ HRESULT put\_Chapter (\[in\] Long lChapter);
 
 ## <a name="return-values"></a>Rückgabewerte
 
-Diese Property-Methode gibt die standardmäßigen HRESULT-\_Werte zurück,\_einschließlich S OK und e Fail.
+Diese Eigenschaftsmethode gibt die HRESULT-Standardwerte zurück, einschließlich S \_ OK und E \_ FAIL.
 
 ## <a name="applies-to"></a>Betrifft
 

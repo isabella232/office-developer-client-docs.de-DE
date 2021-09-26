@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff834455(v=office.15)
 ms:contentKeyID: 48547753
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 515d28f0d7d99359c36df79cf3b8769d8f71e06d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c7dd26ac4a150ca5daa2b0011ac9373e662f2dbb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301281"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59622074"
 ---
 # <a name="properties-collection-dao"></a>Properties-Auflistung (DAO)
 
@@ -33,18 +33,18 @@ Mit der **Delete**-Methode können Sie benutzerdefinierte Eigenschaften aus der 
 
 Der Verweis auf ein integriertes **Property**-Objekt in einer Auflistung erfolgt über dessen Ordnungszahl oder den Wert der **Name**-Eigenschaft, wobei Sie die folgenden Syntaxformen verwenden können:
 
-- Objekt. **Eigenschaften** 0
+- Objekt. **Eigenschaften**(0)
 
-- Objekt. **Eigenschaften** ("Name")
+- Objekt. **Eigenschaften**("Name")
 
-- Objekt. **Eigenschaften** \! \[Name\]
+- Objekt.  \! Eigenschaften \[ Namen\]
 
 Bei einer integrierten Eigenschaft können Sie auch diese Syntax verwenden:
 
-- Object.Name
+- object.name
 
 > [!NOTE]
-> Für eine benutzerdefinierte Eigenschaft müssen Sie das vollständige Objekt verwenden. **Eigenschaften** ("Name").
+> Für eine benutzerdefinierte Eigenschaft müssen Sie das vollständige Objekt verwenden. Eigenschaftensyntax ("Name").
 
 Sie können mit denselben Syntaxformen auf die **Value**-Eigenschaft eines **Property**-Objekts verweisen. Der Kontext des Verweises entscheidet, ob Sie sich auf das **Property**-Objekt selbst oder auf die **Value**-Eigenschaft des **Property**-Objekts beziehen.
 

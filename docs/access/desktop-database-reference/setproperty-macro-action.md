@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm139044
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: c5972ad630efe3afe27565924c7c6a8a2230a9f2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 15ad7954c7c6af3f500fad7075deb175905ae667
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314574"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621822"
 ---
 # <a name="setproperty-macro-action"></a>SetProperty-Makroaktion
 
@@ -50,7 +50,7 @@ Die **FestlegenEigenschaft**-Aktion verwendet die folgenden Argumente.
 </tr>
 <tr class="odd">
 <td><p>Wert</p></td>
-<td><p>Geben Sie den Wert ein, auf den die Eigenschaft festgelegt werden soll. Für Eigenschaften, deren Werte entweder "Ja" oder "Nein" sind, verwenden Sie <strong>-1</strong> für Yes und <strong>0</strong> für Nein.</p></td>
+<td><p>Geben Sie den Wert ein, auf den die Eigenschaft festgelegt werden soll. Verwenden Sie für Eigenschaften, deren Werte entweder "Ja" oder "Nein" lauten, <strong>"-1"</strong> für "Ja" und <strong>"0"</strong> für "Nein".</p></td>
 </tr>
 </tbody>
 </table>
@@ -68,7 +68,7 @@ Die **FestlegenEigenschaft**-Aktion verwendet die folgenden Argumente.
 
 ## <a name="example"></a>Beispiel
 
-Das folgende Beispiel zeigt, wie Sie mit der SetProperty-Aktion die Sichtbarkeit des **** Textfelds myTextBox umschalten.
+Das folgende Beispiel zeigt, wie Sie mit der SetProperty-Aktion die Sichtbarkeit des **Textfelds MyTextBox** umschalten.
 
 **Der Beispielcode stammt von:**[Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
 

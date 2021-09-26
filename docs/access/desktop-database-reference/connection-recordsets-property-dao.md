@@ -1,5 +1,5 @@
 ---
-title: Connection. Recordsets-Eigenschaft (DAO)
+title: Connection.Recordsets-Eigenschaft (DAO)
 TOCTitle: Recordsets Property
 ms:assetid: 3f8c8932-d404-ef54-a869-f77dc1325794
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192854(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1053364
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 8bec9bb377b85977fee92f9b101149db012cef51
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: a167b5b0d639b890d5587a3c75c79587fc636aaa
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295807"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618406"
 ---
-# <a name="connectionrecordsets-property-dao"></a>Connection. Recordsets-Eigenschaft (DAO)
+# <a name="connectionrecordsets-property-dao"></a>Connection.Recordsets-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013

@@ -1,5 +1,5 @@
 ---
-title: Relation. Table-Eigenschaft (DAO)
+title: Relation.Table-Eigenschaft (DAO)
 TOCTitle: Table Property
 ms:assetid: cc4f64ef-c4e9-1a14-9263-5f8220d89840
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff834423(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1053068
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 91a3262d92350618c2385013983020669b28ea5c
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 90faf649c625cee7c3ea104119218a469a6be6ec
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306993"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611637"
 ---
-# <a name="relationtable-property-dao"></a>Relation. Table-Eigenschaft (DAO)
+# <a name="relationtable-property-dao"></a>Relation.Table-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -29,9 +29,9 @@ Gibt den Namen der Primärtabelle eines **[Relation](relation-object-dao.md)** -
 
 *Ausdruck* . Tabelle
 
-*Ausdruck* Eine Variable, die ein **Relation** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Relation -Objekt** darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Ein neues **Relation**-Objekt, das noch an keine Auflistung angefügt wurde, hat Lese-/Schreibzugriff auf den Wert der **Table**-Eigenschaft. Für ein vorhandenes **Relation**-Objekt in einer **[Relations](relations-collection-dao.md)** -Auflistung ist die Eigenschaft schreibgeschützt.
 

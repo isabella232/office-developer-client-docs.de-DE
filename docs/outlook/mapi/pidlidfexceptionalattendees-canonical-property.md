@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidFExceptionalAttendees
 api_type:
 - COM
 ms.assetid: f1f489a3-e83a-4e96-bf9a-d98bc17d29f5
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 544b5b5ac945eeedf787af0e311491da1f9d0217
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 2922b4864d07e53f2a51ae6ac298f1509bc66e01
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32327475"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59620415"
 ---
 # <a name="pidlidfexceptionalattendees-canonical-property"></a>PidLidFExceptionalAttendees (kanonische Eigenschaft)
 
@@ -25,19 +25,19 @@ ms.locfileid: "32327475"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt an, ob es sich bei dieser Eigenschaft um ein wiederkehrendes Kalenderobjekt mit einer oder mehreren Ausnahmen handelt, und mindestens eine der eingebetteten Ausnahmenachrichten verfügt über mindestens ein RecipientRow-Objekt.
+Gibt an, ob es sich bei dieser Eigenschaft um ein wiederkehrendes Kalenderobjekt mit einer oder mehreren Ausnahmen handelt und mindestens eine der eingebetteten Ausnahmenachrichten mindestens ein RecipientRow-Objekt aufweist.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidFExceptionalAttendees  <br/> |
 |Eigenschaftensatz:  <br/> |PSETID_Appointment  <br/> |
-|Lange ID (LID):  <br/> |0x0000822B  <br/> |
+|Long ID (LID):  <br/> |0x0000822B  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Der Wert FALSE oder das Fehlen dieser Eigenschaft gibt an, dass das Kalenderobjekt entweder keine Ausnahmen hat oder keine der eingebetteten Ausnahmenachrichten RecipientRows besitzt.
+Der Wert FALSE oder das Fehlen dieser Eigenschaft gibt an, dass das Kalenderobjekt keine Ausnahmen hat oder keine der eingebetteten Ausnahmenachrichten RecipientRows hat.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -45,17 +45,17 @@ Der Wert FALSE oder das Fehlen dieser Eigenschaft gibt an, dass das Kalenderobje
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Stellt Eigenschaftensatzdefinitionen und Verweise auf verwandte Exchange Server zur Verfügung.
+> Stellt Eigenschaftssatzdefinitionen und Verweise auf verwandte Exchange Server Protokollspezifikationen bereit.
     
 [[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften und Vorgänge für Termin-, Besprechungs- und Antwortnachrichten an.
+> Gibt die Eigenschaften und Vorgänge für Termin-, Besprechungsanfrage- und Antwortnachrichten an.
     
 ### <a name="header-files"></a>Headerdateien
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -63,9 +63,9 @@ Mapidefs.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

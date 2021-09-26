@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249474(v=office.15)
 ms:contentKeyID: 48545648
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 9fcf837a02c40d11fecfa56b8aa34ac80a848411
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 29e882685fe06d98984d15a4d5bd7e517f794a6c
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296458"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618518"
 ---
 # <a name="chapter-3-examining-data"></a>Kapitel 3: Untersuchen von Daten
 
@@ -72,40 +72,40 @@ Name = ProductID</p></th>
 <th><p>FELD 1<br />
 Name = ProductName</p></th>
 <th><p>FELD 2<br />
-Name = Einzelpreis</p></th>
+Name = UnitPrice</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>7</p></td>
+<td><p>7 </p></td>
 <td><p>Uncle Bob's Organic Dried Pears</p></td>
-<td><p>30,0000</p></td>
+<td><p>30.0000</p></td>
 </tr>
 <tr class="even">
-<td><p>14</p></td>
+<td><p>14 </p></td>
 <td><p>Tofu</p></td>
-<td><p>23,2500</p></td>
+<td><p>23.2500</p></td>
 </tr>
 <tr class="odd">
 <td><p>28</p></td>
 <td><p>Rssle Sauerkraut</p></td>
-<td><p>45,6000</p></td>
+<td><p>45.6000</p></td>
 </tr>
 <tr class="even">
 <td><p>51</p></td>
 <td><p>Manjimup Dried Apples</p></td>
-<td><p>53,0000</p></td>
+<td><p>53.0000</p></td>
 </tr>
 <tr class="odd">
 <td><p>74</p></td>
 <td><p>Longlife Tofu</p></td>
-<td><p>10,0000</p></td>
+<td><p>10.0000</p></td>
 </tr>
 </tbody>
 </table>
 
 
-Im nächsten Abschnitt wird erläutert, wie Sie die aktuelle Position des Cursors in diesem **Recordset**-Beispiel finden.
+Im nächsten Abschnitt wird erläutert, wie Sie die aktuelle Position des Cursors in diesem **Beispielrecordset** suchen.
 
 In diesem Kapitel werden die folgenden Themen behandelt:
 

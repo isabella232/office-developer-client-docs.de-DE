@@ -1,46 +1,46 @@
 ---
-title: Implementieren eines Advise Sink-Objekts
+title: Implementieren eines Advise-Senkenobjekts
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
-localization_priority: Normal
+ms.localizationpriority: medium
 api_type:
 - COM
 ms.assetid: 7461c4f6-7030-4ba2-ada4-26ebfbbfa001
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ecaad65d28f74b843b86ca82dab9a833ade77363
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 5b0873575cd06ca044364009785c9d87533cbad1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33412107"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59620750"
 ---
-# <a name="implementing-an-advise-sink-object"></a>Implementieren eines Advise Sink-Objekts
+# <a name="implementing-an-advise-sink-object"></a>Implementieren eines Advise-Senkenobjekts
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Ein Client kann entweder eigene Advise Sink-Objekte implementieren oder eine Hilfsfunktion verwenden, [HrAllocAdviseSink](hrallocadvisesink.md). **HrAllocAdviseSink** erstellt ein advise sink-Objekt mit einer Implementierung von **OnNotify,** das eine Rückruffunktion aufruft. 
+Ein Client kann entweder eigene Empfehlungssenkenobjekte implementieren oder eine Hilfsprogrammfunktion, [HrAllocAdviseSink](hrallocadvisesink.md)verwenden. **HrAllocAdviseSink** erstellt ein "advise"-Senkenobjekt mit einer Implementierung von **"OnNotify",** die eine Rückruffunktion aufruft. 
   
-Die Verwendung von **HrAllocAdviseSink** hat Vor- und Nachteile. Es kann Arbeit speichern, aber es bietet keine Kontrolle über die Referenzzählung des von ihm erstellten Ratensenkenobjekts. Daher sollten Clients, die die Veröffentlichung ihrer Ratensenke sorgfältig steuern müssen oder die über Interabhängigkeiten zwischen derEntsprechungssenke und einem anderen Clientobjekt verfügen, eine eigene **IMAPIAdviseSink-Implementierung** erstellen und die Verwendung von **HrAllocAdviseSink** ganz vermeiden. 
+Die Verwendung von **HrAllocAdviseSink** hat Vor- und Nachteile. Es kann Arbeit sparen, bietet jedoch keine Kontrolle über die Referenzzählung des von ihm erstellten Referenzsenkenobjekts. Daher sollten Clients, die die Freigabe ihrer Empfehlungssenke sorgfältig kontrollieren müssen oder gegenseitige Abhängigkeiten zwischen ihrem Empfehlungssenken und einem anderen Clientobjekt haben, eine eigene **IMAPIAdviseSink-Implementierung** erstellen und die Verwendung von **HrAllocAdviseSink** vermeiden. 
   
-Ein Client, der eine eigene Ratensenke implementieren soll, sollte ihn zu einem unabhängigen Objekt machen, das nicht mit anderen Objekten verwandt ist oder von diesen abhängig ist, um mögliche Komplikationen bei der Verweiszählung und Objektfreigabe zu vermeiden. Wenn Sie die Empfehlungssenke jedoch als Teil eines anderen Objekts implementieren oder einen Zurückzeiger auf ein anderes Objekt als Datenm member verwenden müssen, wird empfohlen, zwei separate Referenzanzahlen beizubehalten: eine für das Objekt, auf das von der Empfehlungssenke verwiesen wird, und eine für die Empfehlungssenke. 
+Ein Client, der eine eigene Empfehlungssenke implementiert, sollte es zu einem unabhängigen Objekt machen, das nicht mit anderen Objekten in Zusammenhang steht oder von diesen abhängig ist, um potenzielle Komplikationen bei der Referenzzählung und Objektfreigabe zu vermeiden. Wenn Sie jedoch die Empfehlungssenke als Teil eines anderen Objekts implementieren oder einen Rückwärtszeiger auf ein anderes Objekt als Datenelement einschließen müssen, wird empfohlen, dass zwei separate Verweisanzahlen beibehalten werden: eine für das Objekt, auf das von der Empfehlungssenke verwiesen wird, und eine für die Empfehlungssenke. 
   
-Wenn die Referenzanzahl des referenzierten Objekts auf Null fällt, können alle methoden fehlschlagen und die vtable zerstört werden. Der Speicher für die Hinweissenke muss jedoch intakt bleiben, bis die Referenzanzahl ebenfalls auf Null fällt. Dies bedeutet, dass die **Release-Methode** der Hinweissenke ihre Referenzanzahl reduzieren und das Objekt zerstören muss, wenn diese Anzahl null erreicht. Wenn zwei separate Verweisanzahlen nicht beibehalten werden, ist es einfach, die Ratensenke im Rahmen des Release-Prozesses des umfassenden Objekts versehentlich **zu** zerstören. 
+Wenn die Referenzanzahl des referenzierten Objekts auf Null fällt, können alle zugehörigen Methoden fehlschlagen, und die vtable kann zerstört werden, aber der Speicher für die Empfehlungssenke muss intakt bleiben, bis die Referenzanzahl ebenfalls auf Null fällt. Dies bedeutet, dass die **Release-Methode** der Empfehlungssenke die Referenzanzahl verringert und die Zerstörung des Objekts beenden muss, wenn diese Anzahl Null erreicht. Wenn zwei separate Verweisanzahlen nicht beibehalten werden, wäre es einfach, versehentlich die Empfehlungssenke im Rahmen des **Release-Prozesses** des umfassenden Objekts zu zerstören. 
   
-Clients, die **HrAllocAdviseSink** verwenden, um eine Ratensenke zu implementieren, müssen gleichermaßen darauf achten, ihre Rückruffunktion nicht als Methode in ein anderes Advise Sink-Objekt zu verwenden. Für C++-Clients ist es verlockend, dies zu tun und diesen Zeiger als Parameter zu übergeben.  Dies ist eine gefährliche Strategie, da Clients in der Regel ein Objekt frei machen, wenn die Referenzanzahl null erreicht. Wenn Sie den Arbeitsspeicher für das Objekt "Advise Sink" frei geben, würde dieser _Zeiger ungültig._ 
+Clients, **die HrAllocAdviseSink** zum Implementieren einer Empfehlungssenke verwenden, müssen ebenso vorsichtig sein, ihre Rückruffunktion nicht als Methode in ein anderes Empfehlungssenkenobjekt einzuschließen. Für C++-Clients ist es verlockend, dies zu tun und  _diesen_ Zeiger als Parameter zu übergeben. Dies ist eine gefährliche Strategie, da Clients in der Regel ein Objekt freigeben, wenn dessen Referenzanzahl Null erreicht. Das Freigeben des Speichers für das Empfehlungssenkenobjekt würde  _diesen_ Zeiger ungültig machen. 
   
-Je nach Ereignistyp und Ratenquelle kann Ihre **OnNotify-Methode** Ereignisse auf unterschiedliche Weise behandeln. In der folgenden Tabelle finden Sie Vorschläge zur Handhabung einiger Standardereignisse. 
+Abhängig vom Ereignistyp und der Empfehlungsquelle kann Ihre **OnNotify-Methode** Ereignisse auf verschiedene Arten behandeln. Die folgende Tabelle enthält Vorschläge zum Behandeln einiger Standardereignisse. 
   
 |**Ereignistyp**|**Behandeln in OnNotify**|
 |:-----|:-----|
-|Objekt verschoben  <br/> |Wenn das ursprüngliche übergeordnete Objekt des verschobenen Objekts mit dem neuen übergeordneten Objekt verknüpft ist, aktualisieren Sie die Ansicht beginnend mit dem Ordner oder Adressbuchcontainer, der am höchsten in der Hierarchie ist. Wenn die beiden übergeordneten Container nichts miteinander zu tun haben, aktualisieren Sie beide Ansichten.  <br/> |
-|Neue Nachricht  <br/> |Ändern Sie die Benutzeroberfläche, um den Benutzer über das Eintreffen einer oder mehreren neuen Nachrichten zu informieren. Platzieren Sie den Empfangsordner in der aktuellen Ansicht.  <br/> |
-|Error  <br/> |Protokollieren Sie bei allen Objekten mit Ausnahme der Sitzung den Fehler, falls erforderlich, und geben Sie zurück. Melden Sie sich für das Sitzungsobjekt nach Möglichkeit ab.  <br/> |
+|Objekt verschoben  <br/> |Wenn das ursprüngliche übergeordnete Objekt des verschobenen Objekts mit dem neuen übergeordneten Objekt verknüpft ist, aktualisieren Sie die Ansicht beginnend mit dem Ordner oder Adressbuchcontainer, der in der Hierarchie am höchsten ist. Wenn die beiden übergeordneten Container nicht verbunden sind, aktualisieren Sie beide Ansichten.  <br/> |
+|Neue Nachricht  <br/> |Ändern Sie die Benutzeroberfläche, um den Benutzer über das Eintreffen einer oder mehrerer neuer Nachrichten zu informieren. Platzieren Sie den Empfangsordner in der aktuellen Ansicht.  <br/> |
+|Fehler  <br/> |Protokollieren Sie den Fehler bei Bedarf für alle Objekte mit Ausnahme der Sitzung, und geben Sie den Fehler zurück. Melden Sie sich für das Sitzungsobjekt nach Möglichkeit ab.  <br/> |
 |Suche abgeschlossen  <br/> |Keine Verarbeitung erforderlich.  <br/> |
    
 > [!NOTE]
-> Benachrichtigungshandler sollten erneut gesendet werden. 
+> Benachrichtigungshandler sollten erneut reaktiviert werden. 
   
 

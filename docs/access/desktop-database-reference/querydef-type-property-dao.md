@@ -1,31 +1,31 @@
 ---
-title: QueryDef. Type-Eigenschaft (DAO)
+title: QueryDef.Type-Eigenschaft (DAO)
 TOCTitle: Type Property
 ms:assetid: 03db891d-b958-7cf9-56c1-524d9ff2b9b5
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff844814(v=office.15)
 ms:contentKeyID: 48542993
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: cb8856194d0b2ed14577bdc275adeb50ebdde212
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 63bade63bf6ca064b99b1d4ac9c365cbdcbf6ecb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300945"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611889"
 ---
-# <a name="querydeftype-property-dao"></a>QueryDef. Type-Eigenschaft (DAO)
+# <a name="querydeftype-property-dao"></a>QueryDef.Type-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
 
-Legt einen Wert fest, der den Funktions- oder Datentyp eines Objekts angibt, oder gibt diesen Wert zurück. Read-Only**Integer**.
+Legt einen Wert fest, der den Funktions- oder Datentyp eines Objekts angibt, oder gibt diesen Wert zurück. Read-only **ganze Zahl**.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . Typ
+*expression* .Type
 
-*Ausdruck* Eine Variable, die ein **QueryDef** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **QueryDef**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 
@@ -49,15 +49,15 @@ Die möglichen Einstellungen und Rückgabewerte für ein **QueryDef**-Objekt sin
 </tr>
 <tr class="even">
 <td><p><strong>dbQAppend</strong></p></td>
-<td><p>Append</p></td>
+<td><p>Anfügen</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbQCompound</strong></p></td>
-<td><p>Zusammengesetzter</p></td>
+<td><p>Verbindung</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>dbQCrosstab</strong></p></td>
-<td><p>Kreuztabellen</p></td>
+<td><p>Kreuztabelle</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbQDDL</strong></p></td>
@@ -73,7 +73,7 @@ Die möglichen Einstellungen und Rückgabewerte für ein **QueryDef**-Objekt sin
 </tr>
 <tr class="even">
 <td><p><strong>dbQProcedure</strong></p></td>
-<td><p>Prozedur (nur ODBCDirect-Arbeitsbereiche)</p><p><strong>Hinweis</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p></td>
+<td><p>Prozedur (nur ODBCDirect-Arbeitsbereiche)</p><p><strong>HINWEIS</strong>: ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbQSelect</strong></p></td>
@@ -93,7 +93,7 @@ Die möglichen Einstellungen und Rückgabewerte für ein **QueryDef**-Objekt sin
 </tr>
 <tr class="odd">
 <td><p><strong>dbQUpdate</strong></p></td>
-<td><p>Aktualisieren</p></td>
+<td><p>Update</p></td>
 </tr>
 </tbody>
 </table>

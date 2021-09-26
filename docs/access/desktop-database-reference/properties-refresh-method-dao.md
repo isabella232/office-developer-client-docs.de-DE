@@ -1,20 +1,20 @@
 ---
-title: Properties. Refresh-Methode (DAO)
+title: Properties.Refresh-Methode (DAO)
 TOCTitle: Refresh Method
 ms:assetid: 71ba18fb-55a5-6a5f-3631-1c81c20f3369
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff195805(v=office.15)
 ms:contentKeyID: 48545593
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: a9d6b248bc4b8d9c1a9e01db0231bf58b16c36dd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: b8c3c21bbbf7b8af95cd2261b3a0df795b0be4ac
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301197"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59622067"
 ---
-# <a name="propertiesrefresh-method-dao"></a>Properties. Refresh-Methode (DAO)
+# <a name="propertiesrefresh-method-dao"></a>Properties.Refresh-Methode (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -25,7 +25,7 @@ Aktualisiert die Objekte in der angegebenen Auflistung, um das aktuelle Schema d
 
 *Ausdruck* . Aktualisieren
 
-*Ausdruck* Eine Variable, die ein **Properties** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Properties-Objekt** darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 

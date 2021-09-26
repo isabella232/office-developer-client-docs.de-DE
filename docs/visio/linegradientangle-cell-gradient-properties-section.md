@@ -4,29 +4,29 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4b533ea0-5d2e-44fc-a691-8fa2f310ff9f
 description: Bestimmt den Winkel des Linienverlaufs für einen linearen Farbverlauf von 0 bis 359,9 Grad.
-ms.openlocfilehash: fd806bc7c953dbd86abd95c8e6103ab9e6ee1a10
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 1b6b30b1dfdb810e22166f4ecb8bbf231dd54520
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33437133"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618644"
 ---
 # <a name="linegradientangle-cell-gradient-properties-section"></a>Zelle "LineGradientAngle" (Abschnitt "Gradient Properties")
 
 Bestimmt den Winkel des Linienverlaufs für einen linearen Farbverlauf von 0 bis 359,9 Grad.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie zum Erhalten eines Verweises auf die **Zelle LineGradientAngle** anhand des Namens aus einer anderen Formel, nach dem Wert des **N-Attributs** eines **Cell-Elements** oder aus einem Programm mit der **CellsU-Eigenschaft:** 
+Verwenden Sie Folgendes, um einen Verweis auf die **Zelle "LineGradientAngle"** anhand des Namens aus einer anderen Formel, anhand des Werts des **N-Attributs** eines **Cell-Elements** oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | LineGradientAngle  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die **LineGradientAngle-Zelle** nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle **"LineGradientAngle"** anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

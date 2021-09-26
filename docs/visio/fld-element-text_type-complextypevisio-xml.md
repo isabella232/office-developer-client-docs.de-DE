@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 92d90240-012b-9598-c893-6e7085813aa5
 description: Gibt eine Textfeldeinfügemarke für das entsprechende Field-Element an.
-ms.openlocfilehash: efacb7ed11968dec5d5c2f62b0ca3e3bcd8580c0
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 56a0927b36c996ce163194163381494452eb6776
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539614"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612792"
 ---
 # <a name="fld-element-text_type-complextype-visio-xml"></a>fld-Element (Text_Type complexType) (Visio XML)
 
@@ -36,7 +36,7 @@ Gibt eine Textfeldeinfügemarke für das entsprechende **Field-Element** an.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -52,6 +52,6 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|IX  <br/> |xsd:unsignedInt  <br/> |erforderlich  <br/> |Der nullbasierte Index des Elements innerhalb des übergeordneten Elements.  <br/> |Werte des xsd:unsignedInt-Typs.  <br/> |
+|IX  <br/> |xsd:unsignedInt  <br/> |Erforderlich  <br/> |Der nullbasierte Index des Elements innerhalb des übergeordneten Elements.  <br/> |Werte des Typs "xsd:unsignedInt".  <br/> |
    
 

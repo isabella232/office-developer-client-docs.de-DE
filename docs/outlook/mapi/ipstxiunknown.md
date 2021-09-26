@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IPSTX
 api_type:
 - COM
 ms.assetid: 73752f57-6fbc-0201-bf95-0e75c56c04e6
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 4c758ecd0134ca11ced6f771303896bd885a22c4
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: a2394b684751d2ff57d55e7c1fb2ac327545cb95
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33436223"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59620464"
 ---
 # <a name="ipstx--iunknown"></a>IPSTX : IUnknown
 
@@ -29,25 +29,25 @@ Diese Schnittstelle bietet Hilfsfunktionen bei der Replikation über die **[IOST
   
 |||
 |:-----|:-----|
-|Bereitgestellt von  <br/> |Abfrage in [IMsgStore](imsgstoreimapiprop.md) <br/> |
+|Bereitgestellt von  <br/> |Abfrage [für IMsgStore](imsgstoreimapiprop.md) <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IPSTX  <br/> |
    
-## <a name="vtable-order"></a>Vtable-Reihenfolge
+## <a name="vtable-order"></a>VTable-Reihenfolge
 
 |||
 |:-----|:-----|
-|**[GetLastError](ipstx-getlasterror.md)** <br/> |Ruft erweiterte Informationen zum letzten Fehler ab.  <br/> |
+|**[Getlasterror](ipstx-getlasterror.md)** <br/> |Ruft erweiterte Informationen zum letzten Fehler ab.  <br/> |
 |**[GetSyncObject](ipstx-getsyncobject.md)** <br/> |Ruft die zugeordnete **[IOSTX-Schnittstelle](iostxiunknown.md)** ab.  <br/> |
-| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
-| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
-| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
-| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
-|**[EmulateSpooler](ipstx-emulatespooler.md)** <br/> |Legt einen lokalen Speicher fest, um den Outlook Protokoll-Manager zu emulieren, um ausgehende Nachrichten mit einem Server zu spoolen.  <br/> |
-| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
-| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
-| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
-| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
-| *Platzhaltermitglied*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+|**[EmulateSpooler](ipstx-emulatespooler.md)** <br/> |Legt einen lokalen Speicher fest, um den Outlook-Protokoll-Manager zum Spoolen ausgehender Nachrichten an einen Server zu emulieren.  <br/> |
+| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
+| *Platzhalterelement*  <br/> | *Nicht unterstützt oder dokumentiert.*  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

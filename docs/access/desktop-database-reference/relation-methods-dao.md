@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn125502(v=office.15)
 ms:contentKeyID: 52073624
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: d4f3db5b2de83ab99753d639b6d2dce9f28a7416
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: ab74ff35c053a784fbcd96ccd2f289977822cb72
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307028"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611679"
 ---
 # <a name="relation-methods-dao"></a>Relation-Methoden (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
-- [Relation. CreateField-Methode (DAO)](relation-createfield-method-dao.md)
+- [Relation.CreateField-Methode (DAO)](relation-createfield-method-dao.md)
 

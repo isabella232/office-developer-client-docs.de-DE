@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249405(v=office.15)
 ms:contentKeyID: 48545376
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: d79d060922c6e7f28209242ebe82821c2ba97bfd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 5d68acfb2ef210ed4d7da6b36bf0940a43ee43d5
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288988"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59622193"
 ---
 # <a name="microsoft-cursor-service-for-ole-db-ado-service-component"></a>Microsoft Cursor Service für OLE DB (ADO-Dienstkomponente)
 
@@ -35,7 +35,7 @@ Um diese Dienstkomponente aufzurufen, legen Sie die [CursorLocation](cursorlocat
 
 Wenn der Microsoft Cursor Service für OLE DB aufgerufen wird, werden der [Properties](properties-collection-ado.md)-Auflistung des **Recordset**-Objekts die folgenden dynamischen Eigenschaften hinzugefügt. Eine vollständige Liste mit den dynamischen Eigenschaften der Objekte **Connection** und **Recordset** finden Sie im [Index zu dynamischen ADO-Eigenschaften](ado-dynamic-property-index.md). Die zugehörigen OLE DB-Eigenschaftennamen sind ggf. nach den ADO-Eigenschaftennamen in Klammern angegeben.
 
-Nach dem Aufrufen des Cursordiensts sind Änderungen an einigen dynamischen Eigenschaften für die zugrunde liegende Datenquelle nicht erkennbar. Beispielsweise ist das Festlegen der Eigenschaft *Timeout* für ein **Recordset** -Objekt für den zugrunde liegenden Datenanbieter nicht sichtbar.
+Nach dem Aufrufen des Cursordiensts sind Änderungen an einigen dynamischen Eigenschaften für die zugrunde liegende Datenquelle nicht erkennbar. Das Festlegen der *Eigenschaft "Command Time out"* für ein **Recordset-Objekt** ist beispielsweise für den zugrunde liegenden Datenanbieter nicht sichtbar.
 
 ```vb 
 ... 
@@ -155,7 +155,7 @@ Der Microsoft Cursor Service für OLE DB hat auch Auswirkungen auf das Verhalten
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="cursortype-property-ado.md">CursorType</a></p></td>
+<td><p><a href="cursortype-property-ado.md">Cursortype</a></p></td>
 <td><p>Ergänzt die für ein <strong>Recordset</strong>-Objekt verfügbaren Cursortypen.</p></td>
 </tr>
 <tr class="even">

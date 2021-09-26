@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4b2bf607-7c56-61a0-e40d-54af2b90aa6d
-description: In diesem Thema wird die Schemadefinition für das Outlook Wetterinformations-XML-Schemas gezeigt.
-ms.openlocfilehash: b08d40040bc725bd02d48758697fe4657fe1dc8f
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+description: In diesem Thema wird die Schemadefinition für das Outlook Wetterinformations-XML-Schema erläutert.
+ms.openlocfilehash: c6c626a1437fe823341c123442208c5969ae5b4d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34541316"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613219"
 ---
 # <a name="schema-map-outlook-weather-information-schema"></a>Schemazuordnung (Outlook Wetterinformationsschema)
 
-In diesem Thema wird die Schemadefinition für das Outlook Wetterinformations-XML-Schemas gezeigt.
+In diesem Thema wird die Schemadefinition für das Outlook Wetterinformations-XML-Schema erläutert.
   
 ```XML
 <?xml version="1.0" ?>

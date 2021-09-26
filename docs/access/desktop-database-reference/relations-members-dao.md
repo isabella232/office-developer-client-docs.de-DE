@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff822446(v=office.15)
 ms:contentKeyID: 48547326
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: a53b7170568c535ed2321a902796af2f942f6808
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 92b16e68cd5c8dec40303ac941a7036720010dd7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306951"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611630"
 ---
 # <a name="relations-members-dao"></a>Relations-Elemente (DAO)
 
@@ -36,11 +36,11 @@ Eine Relations-Auflistung enthält gespeicherte Relation-Objekte für ein Databa
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong><a href="relations-append-method-dao.md">Append</a></strong></p></td>
+<td><p><strong><a href="relations-append-method-dao.md">Anfügen</a></strong></p></td>
 <td><p>Fügt der <strong>Relations</strong>-Auflistung ein neues <strong>Relation</strong>-Objekt hinzu.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="relations-delete-method-dao.md">Löschen</a></strong></p></td>
+<td><p><strong><a href="relations-delete-method-dao.md">Delete</a></strong></p></td>
 <td><p>Löscht das angegebene <strong>Relation</strong>-Objekt aus der <strong>Relations</strong>-Auflistung.</p></td>
 </tr>
 <tr class="odd">

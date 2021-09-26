@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm89832
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: c92a43ce2f4417fde83a544022a90cfca572bf60
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: c83badfcf611de549b3ffe5b1ef9f8f85ba34a13
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292349"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612091"
 ---
 # <a name="findnextrecord-macro-action"></a>FindNextRecord-Makroaktion
 
@@ -31,7 +31,7 @@ Die **SuchenNächstenDatensatz** -Aktion hat keine Argumente. Die **SuchenNächs
 
 Verwenden Sie die **SuchenDatensatz** -Aktion, um die Suchkriterien festzulegen. Normalerweise geben Sie eine **SuchenDatensatz** -Aktion in ein Makro ein und suchen dann mithilfe der **SuchenNächstenDatensatz** -Aktion nacheinander die Datensätze, die dieselben Kriterien erfüllen. Sie können für die **SuchenNächstenDatensatz** -Aktion einen bedingten Ausdruck in die Spalte **Bedingung** der Aktionszeile eingeben, um nur nach Datensätzen zu suchen, wenn eine bestimmte Bedingung erfüllt ist.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Aktion hat dieselbe Wirkung wie die Schaltfläche **Weitersuchen** im Dialogfeld **Suchen und Ersetzen**.
 

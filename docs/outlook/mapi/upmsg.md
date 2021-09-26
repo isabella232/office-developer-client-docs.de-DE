@@ -5,21 +5,21 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5fe3956b-819a-3edf-0e49-7a44bcfbabcd
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 1e0e2f9b794c4cee25488a754290922e58b7658d
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: d615084e2fc379925f53d08a2dd8ddbe538111ea
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33427269"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59619512"
 ---
 # <a name="upmsg"></a>UPMSG
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Informationen zum Hochladen eines Outlook element während des [Status der Uploadnachricht](upload-message-state.md).
+Informationen zum Hochladen eines Outlook Elements während des Status der [Uploadnachricht.](upload-message-state.md)
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -54,7 +54,7 @@ struct UPMSG
     
   - UPM_MOV
     
-    - [out] Element wurde hier verschoben.
+    - [out] Das Element wurde hier verschoben.
     
   - UPM_MOD_PROPS
     
@@ -66,7 +66,7 @@ struct UPMSG
     
   - UPM_OK
     
-    - [in] Hochladen war erfolgreich. Der Client legt dies nach dem Hochladen von Informationen auf den Server fest.
+    - [in] Hochladen erfolgreich war. Der Client legt dies nach dem Hochladen von Informationen auf den Server fest.
     
   - UPM_MOVED
     
@@ -74,7 +74,7 @@ struct UPMSG
     
   - UPM_COMMIT
     
-    - [in] Commit-Uploadstatus jetzt.
+    - [in] Führen Sie jetzt einen Commit für den Uploadstatus aus.
     
   - UPM_DELETE
     
@@ -86,9 +86,9 @@ struct UPMSG
     
 _pmsg_
   
-> [out] Öffnen Sie das Elementobjekt. Die Typdefinition von **LPMESSAGE** finden Sie unter mapidefs.h. 
+> [out] Open item-Objekt. Die Typdefinition von **LPMESSAGE** finden Sie unter mapidefs.h. 
     
-_meid_
+_Meid_
   
 > [out] Eintrags-ID des Elements.
     
@@ -110,7 +110,7 @@ _binChg_
     
 _binPcl_
   
-> [out] Ändern der Liste des Zielelements, wenn das Element verschoben wurde. Die Typdefinition von **SBinary** finden Sie unter mapidefs.h. 
+> [out] Ändern Sie die Liste des Zielelements, wenn das Element verschoben wurde. Die Typdefinition von **SBinary** finden Sie unter mapidefs.h. 
     
 _skeySrc_
   

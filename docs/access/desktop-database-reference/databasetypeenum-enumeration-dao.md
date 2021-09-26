@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff821447(v=office.15)
 ms:contentKeyID: 48546934
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: b58a36ca581b7c932aeff0e36391827a27d865b7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 11d2a442647c00f73f0f5debfa2bfb914b092276
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294561"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618231"
 ---
 # <a name="databasetypeenum-enumeration-dao"></a>DatabaseTypeEnum-Aufzählung (DAO)
 
@@ -37,11 +37,11 @@ Gibt die Version des Datenformats für eine komprimierte Datenbank an.
 <tbody>
 <tr class="odd">
 <td><p>dbDecrypt</p></td>
-<td><p>4</p></td>
+<td><p>4 </p></td>
 <td><p>Entschlüsselt die Datenbank beim Komprimieren</p></td>
 </tr>
 <tr class="even">
-<td><p>Dbencrypt einschließen</p></td>
+<td><p>dbEncrypt</p></td>
 <td><p>2</p></td>
 <td><p>Verschlüsselt die Datenbank</p></td>
 </tr>
@@ -52,7 +52,7 @@ Gibt die Version des Datenformats für eine komprimierte Datenbank an.
 </tr>
 <tr class="even">
 <td><p>dbVersion11</p></td>
-<td><p>8</p></td>
+<td><p>8 </p></td>
 <td><p>Microsoft Jet-Datenbankmodul, Version 1.1</p></td>
 </tr>
 <tr class="odd">
@@ -62,7 +62,7 @@ Gibt die Version des Datenformats für eine komprimierte Datenbank an.
 </tr>
 <tr class="even">
 <td><p>dbVersion20</p></td>
-<td><p>16</p></td>
+<td><p>16 </p></td>
 <td><p>Microsoft Jet-Datenbankmodul, Version 2.0</p></td>
 </tr>
 <tr class="odd">

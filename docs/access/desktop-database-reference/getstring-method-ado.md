@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250242(v=office.15)
 ms:contentKeyID: 48548693
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 4ea28efb8fdeaa0643d1d940419b7650527ddf6e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: efb5997e7b194d06d9facd5eeb1874d1d3286764
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32292188"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618098"
 ---
 # <a name="getstring-method-ado"></a>GetString-Methode (ADO)
 
@@ -22,7 +22,7 @@ Gibt das [Recordset](recordset-object-ado.md)-Objekt als eine Zeichenfolge zurü
 
 ## <a name="syntax"></a>Syntax
 
-** = *Recordset*-Datentyp. GetString (*StringFormat*, *numRows*, *ColumnDelimiter*, *RowDelimiter*, *NullExpr*)
+*Variant*  =  *Recordset*. GetString(*StringFormat*, *NumRows*, *ColumnDelimiter*, *RowDelimiter*, *NullExpr*)
 
 ## <a name="return-value"></a>Rückgabewert
 
@@ -32,7 +32,7 @@ Gibt das **Recordset**-Objekt als eine **Variant**-Variable (BSTR) mit Zeichenfo
 
 |Parameter|Beschreibung|
 |:--------|:----------|
-|*StringFormat* |Ein [StringFormatEnum](stringformatenum.md)-Wert, der angibt, wie das **Recordset**-Objekt in eine Zeichenfolge konvertiert werden soll. Die Parameter *RowDelimiter*, *ColumnDelimiter* und *NullExpr* werden nur mit einem *StringFormat* mit dem Wert **adClipString** verwendet.|
+|*Stringformat* |Ein [StringFormatEnum](stringformatenum.md)-Wert, der angibt, wie das **Recordset**-Objekt in eine Zeichenfolge konvertiert werden soll. Die Parameter *RowDelimiter*, *ColumnDelimiter* und *NullExpr* werden nur mit einem *StringFormat* mit dem Wert **adClipString** verwendet.|
 |*NumRows* |Optional. Die Anzahl von im **Recordset**-Objekt zu konvertierenden Zeilen. Ist *NumRows* nicht angegeben oder größer als die Gesamtanzahl der Zeilen im **Recordset**-Objekt, werden alle Zeilen im **Recordset**-Objekt konvertiert.|
 |*ColumnDelimiter* |Optional. Wenn angegeben, ein zwischen den Spalten verwendetes Trennzeichen, andernfalls das Tabulatorzeichen.|
 |*RowDelimiter* |Optional. Wenn angegeben, ein zwischen den Spalten verwendetes Trennzeichen, andernfalls das Wagenrücklaufzeichen.|

@@ -6,20 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff835954(v=office.15)
 ms:contentKeyID: 48548361
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 7506e59104997cebb6fe55d3b892b8176da83ec6
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 5b05e01e6e80f51922deab11cada24fc7419fdb7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295765"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618385"
 ---
 # <a name="connections-members-dao"></a>Connections-Member (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
 > [!NOTE]
-> [!HINWEIS] ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden. Eine Connections-Auflistung enthält die aktuellen Connection-Objekte eines Workspace-Objekts (nur ODBCDirect-Arbeitsbereiche).
+> [!HINWEIS] ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden. Eine Connections -Auflistung enthält die aktuellen Connection -Objekte eines Workspace -Objekts (nur ODBCDirect-Arbeitsbereiche).
 
 ## <a name="methods"></a>Methoden
 

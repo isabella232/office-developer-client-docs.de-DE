@@ -4,29 +4,29 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b09b48d0-9008-4e43-9506-93a830ad9452
 description: Bestimmt die Höhe der oberen Abschrägung eines Shapes in Punkt.
-ms.openlocfilehash: 4da2fd1d61b530450f9020b12d5016015fd59dba
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: bf24850c4e9707d98301b7ae10fead1d48a47e09
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33421865"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613134"
 ---
 # <a name="beveltopheight-cell-bevel-properties-section"></a>Zelle "BevelTopHeight" (Abschnitt "Bevel Properties")
 
 Bestimmt die Höhe der oberen Abschrägung eines Shapes in Punkt. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Um einen Verweis auf die **Zelle BevelTopHeight** anhand des Namens aus einer anderen Formel, nach dem Wert des **N-Attributs** eines **Cell-Elements** oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Verwenden Sie Folgendes, um einen Verweis auf die **Zelle "BevelTopHeight"** anhand des Namens aus einer anderen Formel, anhand des Werts des **N-Attributs** eines **Cell-Elements** oder eines Programms mithilfe der **CellsU-Eigenschaft** abzurufen: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | BevelTopHeight  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die **Zelle "BevelTopHeight"** nach Index aus einem Programm zu erhalten: 
+Um einen Verweis auf die **Zelle "BevelTopHeight"** anhand des Indexes eines Programms abzurufen, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|

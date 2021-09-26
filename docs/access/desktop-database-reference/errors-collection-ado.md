@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249486(v=office.15)
 ms:contentKeyID: 48545706
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: db9fa4fccc4f3d13849f34c157f2ea07cc3f171d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: de32ce3ad9c24b27817d89d4456151ae5f64fd4a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32293427"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612225"
 ---
 # <a name="errors-collection-ado"></a>Errors-Auflistung (ADO)
 
@@ -21,7 +21,7 @@ ms.locfileid: "32293427"
 
 Enthält alle [Error](error-object-ado.md)-Objekte, die als Reaktion auf einen einzelnen anbieterbezogenen Fehler erstellt wurden.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Jeder Vorgang, an dem ADO-Objekte beteiligt sind, kann mindestens einen Anbieterfehler generieren. Sobald ein Fehler auftritt, kann mindestens ein **Error** -Objekt in der **Errors** -Auflistung des [Connection](connection-object-ado.md)-Objekts eingefügt werden. Wenn ein anderer ADO-Vorgang einen Fehler erzeugt, wird die **Errors** -Auflistung gelöscht, und die neue Gruppe der **Error** -Objekte kann in die **Errors** -Auflistung übernommen werden.
 

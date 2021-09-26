@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ac14d132-bc91-194b-4a0b-8a4b72acdbfd
 description: Gibt an, ob das dynamische Rasterfeature für ein Fenster aktiviert ist.
-ms.openlocfilehash: d239b5604d384e14711d26b12cc8bd381a3778a8
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 21eda99c234634c279921aa82f8979de9ffd3645
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539963"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612869"
 ---
 # <a name="dynamicgridenabled-element-window_type-complextype-visio-xml"></a>DynamicGridEnabled-Element (Window_Type complexType) (Visio XML)
 
@@ -36,7 +36,7 @@ Gibt an, ob das dynamische Rasterfeature für ein Fenster aktiviert ist.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

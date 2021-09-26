@@ -1,20 +1,20 @@
 ---
-title: Cell-Element (Ellipse Row) (Visio XML)
+title: Zellenelement (Ellipse Row) (Visio XML)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 210e6731-7c94-90b1-c7c4-635df974fdb6
 description: Enthält die X- oder Y-Koordinaten des Mittelpunkts der Ellipse und zwei Punkte auf der Ellipse.
-ms.openlocfilehash: a2dde9cdc731595bfc8df646ab984cfbfb9db379
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 51e5d3a83411780b2144919378fe823436f1f4e4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34541869"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613107"
 ---
-# <a name="cell-element-ellipse-row-visio-xml"></a>Cell-Element (Ellipse Row) (Visio XML)
+# <a name="cell-element-ellipse-row-visio-xml"></a>Zellenelement (Ellipse Row) (Visio XML)
 
 Enthält die X- oder Y-Koordinaten des Mittelpunkts der Ellipse und zwei Punkte auf der Ellipse.
   
@@ -22,7 +22,7 @@ Enthält die X- oder Y-Koordinaten des Mittelpunkts der Ellipse und zwei Punkte 
 
 |||
 |:-----|:-----|
-|**Elementtyp** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
+|**Elementtyp** <br/> |[Cell_type](cell_type-complextypevisio-xml.md) <br/> |
 |**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentteile** <br/> |master#.xml, page#.xml  <br/> |
@@ -36,13 +36,13 @@ Enthält die X- oder Y-Koordinaten des Mittelpunkts der Ellipse und zwei Punkte 
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Row-Element (Geometry)](row-element-geometry-sectionvisio-xml.md) <br/> |[Ellipse_Type](ellipse_type-complextypevisio-xml.md) <br/> |Enthält die X- oder Y-Koordinaten des Mittelpunkts der Ellipse und zwei Punkte auf der Ellipse.  <br/> |
+|[Zeilenelement (Geometry)](row-element-geometry-sectionvisio-xml.md) <br/> |[Ellipse_Type](ellipse_type-complextypevisio-xml.md) <br/> |Enthält die X- oder Y-Koordinaten des Mittelpunkts der Ellipse und zwei Punkte auf der Ellipse.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -54,23 +54,23 @@ Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccur
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|E  <br/> |xsd:string  <br/> |Optional  <br/> |Gibt an, dass die Formel zu einem Fehler ausgewertet wird. Der Wert von **E** ist der aktuelle Wert (eine Fehlermeldungszeichenfolge); Der Wert  des V-Attributs ist der letzte gültige Wert.  <br/> |Eine Fehlermeldungszeichenfolge.  <br/> |
-|F  <br/> |xsd:string  <br/> |Optional  <br/> | Stellt die Formel des Elements dar. Dieses Attribut kann eine der folgenden Zeichenfolgen enthalten:  <br/>  '(einige Formel)' wenn die Formel lokal vorhanden ist  <br/>  `No Formula` wenn die Formel lokal gelöscht oder blockiert wird  <br/>  `Inh` wenn die Formel geerbt wird.  <br/> |Eine Formel.  <br/> |
-|N  <br/> |xsd:string  <br/> |erforderlich  <br/> |Stellt den Namen der Zelle ShapeSheet dar.  <br/> |Der Name der Zelle ShapeSheet.  <br/> Weitere Informationen finden Sie im Abschnitt "Hinweise".  <br/> |
-|U  <br/> |xsd:string  <br/> |Optional  <br/> |Stellt eine Maßeinheit dar Die Standardeinstellung ist DL.  <br/> |Die Einheiten der Zelle.  <br/> |
-|V  <br/> |xsd:string  <br/> |Optional  <br/> |Stellt den Wert der Zelle dar.  <br/> |Der Wert der Zelle ShapeSheet.  <br/> |
+|E  <br/> |xsd:string  <br/> |Optional  <br/> |Gibt an, dass die Formel zu einem Fehler ausgewertet wird. Der Wert von **E** ist der aktuelle Wert (eine Fehlermeldungszeichenfolge); Der Wert des **V-Attributs** ist der letzte gültige Wert.  <br/> |Eine Fehlermeldungszeichenfolge.  <br/> |
+|F  <br/> |xsd:string  <br/> |Optional  <br/> | Stellt die Formel des Elements dar. Dieses Attribut kann eine der folgenden Zeichenfolgen enthalten:  <br/>  '(some formula)', wenn die Formel lokal vorhanden ist  <br/>  `No Formula` wenn die Formel lokal gelöscht oder blockiert wird  <br/>  `Inh` wenn die Formel geerbt wird.  <br/> |Eine Formel.  <br/> |
+|N  <br/> |xsd:string  <br/> |Erforderlich  <br/> |Stellt den Namen der Zelle ShapeSheet dar.  <br/> |Der Name der ShapeSheet-Zelle.  <br/> Weitere Informationen finden Sie unten im Abschnitt "Hinweise".  <br/> |
+|U  <br/> |xsd:string  <br/> |Optional  <br/> |Stellt eine Maßeinheit dar. Der Standardwert ist DL.  <br/> |Die Einheiten der Zelle.  <br/> |
+|V  <br/> |xsd:string  <br/> |Optional  <br/> |Stellt den Wert der Zelle dar.  <br/> |Der Wert der ShapeSheet-Zelle.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Das **N-Attribut** dieses **Cell-Elements** muss einer der begrenzten Werte sein, die ShapeSheet-Zellen entsprechen. In der folgenden Tabelle finden Sie  Informationen zu den Werten des N-Attributs, die für dieses **Cell-Element zulässig** sind. 
+Das **N-Attribut** dieses **Cell-Elements** muss einer der begrenzten Werte sein, die ShapeSheet-Zellen entsprechen. In der folgenden Tabelle finden Sie Informationen zu den Werten des **N-Attributs,** die für dieses **Cell-Element** zulässig sind. 
   
 |**Wert**|**Beschreibung**|**Weitere Informationen**|
 |:-----|:-----|:-----|
 |X  <br/> |Die x-Koordinate des Mittelpunkts.  <br/> |[Zeile "Ellipse" (Abschnitt "Geometry")](ellipse-row-geometry-section.md) <br/> |
-|v  <br/> |Die y-Koordinate des Mittelpunkts.  <br/> |[Zeile "Ellipse" (Abschnitt "Geometry")](ellipse-row-geometry-section.md) <br/> |
-|A  <br/> |Die X-Koordinate des ersten Punkts auf der Ellipse; gekoppelt mit y-Koordinate, die durch die Zelle B dargestellt wird.  <br/> |[Zeile "Ellipse" (Abschnitt "Geometry")](ellipse-row-geometry-section.md) <br/> |
-|B  <br/> |Die y-Koordinate des ersten Punkts auf der Ellipse; gekoppelt mit x-Koordinate, die durch die Zelle A dargestellt wird.  <br/> |[Zeile "Ellipse" (Abschnitt "Geometry")](ellipse-row-geometry-section.md) <br/> |
-|C  <br/> |Die x-Koordinate des zweiten Punkts auf der Ellipse; y-Koordinate, die durch die Zelle D dargestellt wird.  <br/> |[Zeile "Ellipse" (Abschnitt "Geometry")](ellipse-row-geometry-section.md) <br/> |
-|D  <br/> |Die y-Koordinate des zweiten Punkts auf der Ellipse; y-Koordinate, die durch die Zelle C dargestellt wird.  <br/> |[Zeile "Ellipse" (Abschnitt "Geometry")](ellipse-row-geometry-section.md) <br/> |
+|J  <br/> |Die y-Koordinate des Mittelpunkts.  <br/> |[Zeile "Ellipse" (Abschnitt "Geometry")](ellipse-row-geometry-section.md) <br/> |
+|A  <br/> |Die X-Koordinate des ersten Punkts auf der Ellipse; gepaart mit einer Y-Koordinate, dargestellt durch die Zelle B.  <br/> |[Zeile "Ellipse" (Abschnitt "Geometry")](ellipse-row-geometry-section.md) <br/> |
+|B  <br/> |Die Y-Koordinate des ersten Punkts auf der Ellipse; gepaart mit einer X-Koordinate, dargestellt durch die Zelle A.  <br/> |[Zeile "Ellipse" (Abschnitt "Geometry")](ellipse-row-geometry-section.md) <br/> |
+|C  <br/> |Die X-Koordinate des zweiten Punkts auf der Ellipse; gepaart mit einer Y-Koordinate, dargestellt durch die Zelle "D".  <br/> |[Zeile "Ellipse" (Abschnitt "Geometry")](ellipse-row-geometry-section.md) <br/> |
+|D  <br/> |Die Y-Koordinate des zweiten Punkts auf der Ellipse; gepaart mit einer Y-Koordinate, dargestellt durch die Zelle "C".  <br/> |[Zeile "Ellipse" (Abschnitt "Geometry")](ellipse-row-geometry-section.md) <br/> |
    
 

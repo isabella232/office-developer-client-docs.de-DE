@@ -5,15 +5,15 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f8d0b7b9-2798-4d29-99e4-17da99039361
-description: 'Letzte Änderung: 20. Februar 2012'
-ms.openlocfilehash: dbb18ce712d7900106f2c8dd18404e47d8bdbdb7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: 'Last modified: February 20, 2012'
+ms.openlocfilehash: 5f77c8457563212335255ec5bd9b76e689ffe757
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32356847"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59620429"
 ---
 # <a name="mnls_comparestringw"></a>MNLS_CompareStringW
 
@@ -37,19 +37,19 @@ int MNLS_CompareStringW (
 
  _lcid_
   
-> [in] Locale-ID. Ausführliche Definitionen finden Sie im  _Parameter Locale_ von [CompareString](https://msdn.microsoft.com/library/dd317759%28VS.85%29.aspx).
+> [in] Gebietsschemabezeichner. Ausführliche Definitionen finden Sie im _Parameter "Locale"_ von [CompareString.](https://msdn.microsoft.com/library/dd317759%28VS.85%29.aspx)
     
- _dwFlags_
+ _Dwflags_
   
-> [in] Kennzeichen zum Ignorieren von Fall- und Diakritischen Zeichen. Ausführliche Definitionen finden Sie im  _parameter dwCmpFlags_ von [CompareStringEx](https://msdn.microsoft.com/library/dd317761%28VS.85%29.aspx).
+> [in] Kennzeichen, um Groß- und Kleinschreibung und diakritische Zeichen zu ignorieren. Ausführliche Definitionen finden Sie im _Parameter "wetterCmpFlags"_ von [CompareStringEx.](https://msdn.microsoft.com/library/dd317761%28VS.85%29.aspx)
     
  _pstr1_
   
-> [in] Zeiger auf die erste zu vergleichende Unicode-Zeichenfolge.
+> [in] Zeiger auf die erste Unicode-Zeichenfolge, die verglichen werden soll.
     
  _cch1_
   
-> [in] Länge in Zeichen der ersten Unicode-Zeichenfolge, mit Ausnahme des endenden Nullzeichens. Die Anwendung kann einen negativen Wert angeben, wenn die Zeichenfolge null-terminated ist. In diesem Fall bestimmt **die MNLS_CompareStringW** die Länge automatisch. 
+> [in] Länge in Zeichen der ersten Unicode-Zeichenfolge, mit Ausnahme des endenden NULL-Zeichens. Die Anwendung kann einen negativen Wert angeben, wenn die Zeichenfolge mit NULL beendet wird. In diesem Fall bestimmt die **funktion MNLS_CompareStringW** automatisch die Länge. 
     
  _pstr2_
   
@@ -57,15 +57,15 @@ int MNLS_CompareStringW (
     
  _cch2_
   
-> [in] Länge in Zeichen der zweiten Unicode-Zeichenfolge, mit Ausnahme des endenden Nullzeichens. Die Anwendung kann einen negativen Wert angeben, wenn die Zeichenfolge null-terminated ist. In diesem Fall bestimmt die Funktion die Länge automatisch.
+> [in] Länge in Zeichen der zweiten Unicode-Zeichenfolge, mit Ausnahme des endenden NULL-Zeichens. Die Anwendung kann einen negativen Wert angeben, wenn die Zeichenfolge mit NULL beendet wird. In diesem Fall bestimmt die Funktion automatisch die Länge.
     
 ## <a name="return-value"></a>Rückgabewert
 
 Gibt die für [CompareStringEx](https://msdn.microsoft.com/library/dd317761%28VS.85%29.aspx)beschriebenen Werte zurück.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Funktion umschließt [CompareStringW](https://msdn.microsoft.com/library/dd317759%28VS.85%29.aspx). **MNLS_CompareStringW** verwendet dieselben Parameter und hat dasselbe Verhalten wie [CompareStringW](https://msdn.microsoft.com/library/dd317759%28VS.85%29.aspx).
+Diese Funktion umschließt [CompareStringW](https://msdn.microsoft.com/library/dd317759%28VS.85%29.aspx). **MNLS_CompareStringW** verwendet dieselben Parameter und hat das gleiche Verhalten wie [CompareStringW](https://msdn.microsoft.com/library/dd317759%28VS.85%29.aspx).
   
 ## <a name="see-also"></a>Siehe auch
 

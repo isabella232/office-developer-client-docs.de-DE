@@ -6,36 +6,36 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm205
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 28b18e8d-fecf-a798-813e-c1a310002244
 description: Eine Zelle für den Entwurf, die zum Eingeben oder Testen von Formeln verwendet werden kann.
-ms.openlocfilehash: e7bd61b8bc7a1a3b765af738681d958e2c83ba05
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 3db35be72fb80c7f08a751e961535403b5ceff8f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33408173"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613016"
 ---
 # <a name="d-cell-connection-points-section"></a>Zelle "D" (Abschnitt "Connection Points")
 
 Eine Zelle für den Entwurf, die zum Eingeben oder Testen von Formeln verwendet werden kann.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Klicken Sie zum Zugreifen auf die Zelle D mit der rechten Maustaste auf eine Zeile, und klicken Sie dann im Kontextmenü auf **Zeilentyp** ändern. 
+Um auf die Zelle D zuzugreifen, klicken Sie mit der rechten Maustaste auf eine Zeile, und klicken Sie dann im Kontextmenü auf **Zeilentyp ändern.** 
   
-Um einen Verweis auf die Zelle D anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Um einen Verweis auf die Zelle D anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | Connections.D[  *i*  ] where  *i*  = <1>, 2, 3...  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle D nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle D anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**visSectionConnectionPts** <br/> |
-| Zeilenindex:  <br/> |**visRowConnectionPts**  +   *i,* *wobei i* = 0, 1, 2...  <br/> |
+| Zeilenindex:  <br/> |**visRowConnectionPts**  +   *i* where *i* = 0, 1, 2...  <br/> |
 | Zeilenindex:  <br/> |**visCnnctD** <br/> |
    
 

@@ -1,18 +1,18 @@
 ---
-title: Clear-Methode-ActiveX Data Objects (ADO)
+title: Clear-Methode – ActiveX Data Objects (ADO)
 TOCTitle: Clear method (ADO)
 ms:assetid: 5d51f42c-147b-1fcf-d05b-123e5714ecb7
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249329(v=office.15)
 ms:contentKeyID: 48545110
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: b0d76480bdb5d5a3ab258e103a00707af303a4d3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 893b896df4b3655bb401f1e0446d371017ed0819
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32296360"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612351"
 ---
 # <a name="clear-method-ado"></a>Clear-Methode (ADO)
 
@@ -23,9 +23,9 @@ Alle **Error**-Objekte werden aus der **Errors**-Auflistung entfernt.
 
 ## <a name="syntax"></a>Syntax
 
-*Fehler*. Deaktivieren
+*Fehler*. Klar
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Verwenden Sie die **Clear** -Methode für die [Errors](errors-collection-ado.md)-Auflistung, um alle vorhandenen [Error](error-object-ado.md)-Objekte aus der Auflistung zu entfernen. Wenn ein Fehler auftritt, wird die **Errors** -Auflistung automatisch von ADO gelöscht und mit auf dem neuen Fehler basierenden **Error** -Objekten gefüllt.
 

@@ -1,5 +1,5 @@
 ---
-title: QueryDef. MaxRecords-Eigenschaft (DAO)
+title: QueryDef.MaxRecords-Eigenschaft (DAO)
 TOCTitle: MaxRecords Property
 ms:assetid: 7492cde9-be30-3473-dabc-9602465910d1
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff195877(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1053583
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 6738762ba18289293c67392d47e278066ead071d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: bc89dd8460117b117699957e09c7b9aa4cce0223
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301078"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59622011"
 ---
-# <a name="querydefmaxrecords-property-dao"></a>QueryDef. MaxRecords-Eigenschaft (DAO)
+# <a name="querydefmaxrecords-property-dao"></a>QueryDef.MaxRecords-Eigenschaft (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -26,9 +26,9 @@ Legt die maximale Anzahl von Datensätzen fest, die von einer Abfrage an eine OD
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . MaxRecords
+*Ausdruck* . Maxrecords
 
-*Ausdruck* Eine Variable, die ein **QueryDef** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **QueryDef**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 

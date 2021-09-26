@@ -1,5 +1,5 @@
 ---
-title: Recordset. RecordStatus-Eigenschaft (DAO)
+title: Recordset.RecordsetStatus-Eigenschaft (DAO)
 TOCTitle: RecordStatus Property
 ms:assetid: 6fbd6909-6191-d7be-9a3a-1e9908dacc2b
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff195591(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1102617
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 85790f92258b0851762337c2f74f281546e3526a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7bc9851da7fa0b754cd387de95e9de813e622529
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307609"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611798"
 ---
-# <a name="recordsetrecordstatus-property-dao"></a>Recordset. RecordStatus-Eigenschaft (DAO)
+# <a name="recordsetrecordstatus-property-dao"></a>Recordset.RecordsetStatus-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
@@ -27,7 +27,7 @@ ms.locfileid: "32307609"
 
 *Ausdruck* . RecordStatus
 
-*Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 

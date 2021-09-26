@@ -1,5 +1,5 @@
 ---
-title: Database. createRelation-Methode (DAO)
+title: Database.CreateRelation-Methode (DAO)
 TOCTitle: CreateRelation Method
 ms:assetid: e240c7e3-c293-5e19-afcc-34d9a5549c64
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835692(v=office.15)
@@ -10,23 +10,23 @@ f1_keywords:
 - dao360.chm1052969
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 365835bc579a431d34b65cd27ed4de4e12bca309
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 61c666aaddbdb3da94be04048cc522605cab1a24
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294953"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612274"
 ---
-# <a name="databasecreaterelation-method-dao"></a>Database. createRelation-Methode (DAO)
+# <a name="databasecreaterelation-method-dao"></a>Database.CreateRelation-Methode (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
-Erstellt ein neues **[Relation](relation-object-dao.md)** -Objekt (nur Microsoft Access-Arbeitsbereiche). .
+Erstellt ein neues **[Relation](relation-object-dao.md)** -Objekt (gilt nur für Microsoft Access-Arbeitsbereiche).
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . CreateRelation (***Name***, ***Table***, ***foreignable***, ***Attribute***)
+*Ausdruck* . CreateRelation(***Name** _, _*_Table_*_, _*_ForeignTable_*_, _*_Attributes_**)
 
 *Ausdruck* Eine Variable, die ein **Database** -Objekt darstellt.
 
@@ -52,7 +52,7 @@ Erstellt ein neues **[Relation](relation-object-dao.md)** -Objekt (nur Microsoft
 <td><p><em>Name</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Ein <strong>Variant</strong>-Wert (Untertyp <strong>String</strong>), der das neue <strong>Relation</strong>-Objekt eindeutig benennt. Weitere Informationen zu gültigen Beziehungsnamen finden <strong></strong> Sie unter der <strong><a href="connection-name-property-dao.md">Name</a></strong> -Eigenschaft.</p></td>
+<td><p>Ein <strong>Variant</strong>-Wert (Untertyp <strong>String</strong>), der das neue <strong>Relation</strong>-Objekt eindeutig benennt. Weitere Informationen zu gültigen <strong>Relation</strong>-Namen finden Sie in dem Thema zur <strong><a href="connection-name-property-dao.md">Name</a></strong>-Eigenschaft.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>Table</em></p></td>
@@ -70,7 +70,7 @@ Erstellt ein neues **[Relation](relation-object-dao.md)** -Objekt (nur Microsoft
 <td><p><em>Attributes</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Eine Konstante oder eine Kombination aus Konstanten, die Informationen zum Beziehungstyp enthalten. Details finden <strong><a href="field-attributes-property-dao.md"></a></strong> Sie unter der Attributes-Eigenschaft.</p></td>
+<td><p>Eine Konstante oder Eine Kombination aus Konstanten, die Informationen zum Beziehungstyp enthält. Weitere <strong><a href="field-attributes-property-dao.md"></a></strong> Informationen finden Sie in der Attributes-Eigenschaft.</p></td>
 </tr>
 </tbody>
 </table>
@@ -80,7 +80,7 @@ Erstellt ein neues **[Relation](relation-object-dao.md)** -Objekt (nur Microsoft
 
 Beziehung
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das **Relation**-Objekt liefert dem Microsoft Access-Datenbankmodul Informationen über die Beziehung zwischen Feldern in zwei **[TableDef](tabledef-object-dao.md)** - oder **[QueryDef](querydef-object-dao.md)** -Objekten. Mithilfe der **Attributes**-Eigenschaft können Sie referentielle Integrität implementieren.
 
@@ -88,7 +88,7 @@ Wenn Sie die **CreateRelation**-Methode verwenden und einen oder mehrere optiona
 
 Bevor Sie die **[Append](fields-append-method-dao.md)** -Methode für ein **Relation**-Objekt verwenden können, müssen Sie die entsprechenden **[Field](field-object-dao.md)** -Objekte anfügen, um die Tabellen für Primär- und Fremdschlüsselbeziehungen zu definieren.
 
-Wenn Name auf ein Objekt verweist, das bereits ein Element der Auflistung ist, oder wenn die **Field** -Objektnamen in der unterGeordneten **Fields** -Auflistung ungültig sind, tritt ein Laufzeitfehler auf, wenn Sie die **Append** -Methode verwenden.
+Wenn sich name auf ein Objekt bezieht, das bereits ein Element der Auflistung ist, oder wenn die in der untergeordneten **Fields-Auflistung** angegebenen **Field-Objektnamen** ungültig sind, tritt bei Verwendung der **Append-Methode** ein Laufzeitfehler auf.
 
 Zwischen einer replizierten und einer lokalen Tabelle können Sie keine Beziehung herstellen oder beibehalten.
 

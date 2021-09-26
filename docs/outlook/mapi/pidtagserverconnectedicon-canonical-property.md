@@ -5,15 +5,15 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8adbc29b-8fb1-474f-b128-b8fc58283b92
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 07ffd527d94dce4f040b577eedc6822020f95184
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 699977f32d63ace1693b526b7e4f9e01f828f812
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33410462"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613233"
 ---
 # <a name="pidtagserverconnectedicon-canonical-property"></a>PidTagServerConnectedIcon (kanonische Eigenschaft)
 
@@ -36,9 +36,9 @@ Gibt das Symbol an, das in der Statusleiste angezeigt wird.
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

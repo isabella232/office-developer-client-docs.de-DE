@@ -6,35 +6,35 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm535
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d857b48b-9a3d-a1e1-5ad2-6816a492c8ab
 description: Definiert die Linienfarbe eines Shapes.
-ms.openlocfilehash: d0b4ebee6d96bc67c9ca45e8a6194cb91ed6c7f5
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 8b3381ead5299420b429cc200daa0450f3f0c0a6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33416937"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618672"
 ---
 # <a name="linecolor-cell-line-format-section"></a>Zelle "LineColor" (Abschnitt "Line Format")
 
 Definiert die Linienfarbe eines Shapes.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Geben Sie zum Festlegen der Linienfarbe eine Zahl zwischen 0 und 23 ein, bei der es sich um einen Index in einer Auflistung von Linienfarben handelt. Sie können die Linienfarbsammlung im Dialogfeld Linie anzeigen (klicken Sie auf der Registerkarte **Start** in der **Gruppe Shape** auf **Linie,** zeigen Sie auf **Gewichtung,** und klicken Sie dann auf **Weitere Linien**).  Sie können den Wert von LineColor auch im Dialogfeld **Zeile** festlegen. 
+Um die Linienfarbe festzulegen, geben Sie eine Zahl zwischen 0 und 23 ein, bei der es sich um einen Index in eine Auflistung von Linienfarben handelt. You can view the line color collection in the **Line** dialog box (on the **Home** tab, in the **Shape** group, click **Line**, point to **Weight**, and then click **More Lines**). Sie können den Wert von LineColor auch im Dialogfeld **Linie** festlegen. 
   
-Verwenden Sie zum Eingeben einer benutzerdefinierten Farbe die RGB- oder HSL-Funktion. Der Wert einer benutzerdefinierten Farbe ist die RGB-Farbe, und RGB( *r, g, b*), anstatt eine Zahl, wird im ShapeSheet-Fenster angezeigt. Bei Verwendung in numerischen Vorgängen haben benutzerdefinierte Farben Werte von 24 und höher. 
+Verwenden Sie die RGB- oder HSL-Funktion, um eine benutzerdefinierte Farbe einzugeben. Der Wert einer benutzerdefinierten Farbe ist die RGB-Farbe, und RGB( *r, g, b*) anstelle einer Zahl wird im ShapeSheet-Fenster angezeigt. Bei verwendung in numerischen Vorgängen weisen benutzerdefinierte Farben Werte von 24 und höher auf. 
   
 Die Transparenz der Linienfarbe können Sie in der Zelle LineColorTrans festlegen.
   
-Verwenden Sie zum Erhalten eines Verweises auf die Zelle LineColor anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft:** 
+Um einen Verweis auf die Zelle "LineColor" anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |LineColor  <br/> |
+|Zellenname:  <br/> |Linecolor  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die LineColor-Zelle nach Index aus einem Programm zu erhalten: 
+Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die Zelle "LineColor" anhand des Indexes eines Programms abzurufen: 
   
 |||
 |:-----|:-----|

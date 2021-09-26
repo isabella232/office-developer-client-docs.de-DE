@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2bb0f4c5-eacf-e09b-2fce-dcff2d927557
 description: Gibt den Rand der Kopfzeile eines Dokuments an.
-ms.openlocfilehash: b7c055e818c490399df66e3e7ba626afc9645851
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: f7ea78ce1887375ed0af5b238ae33583301b8572
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34539127"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59612694"
 ---
 # <a name="headermargin-element-headerfooter_type-complextype-visio-xml"></a>HeaderMargin-Element (HeaderFooter_Type complexType) (Visio XML)
 
@@ -36,7 +36,7 @@ Gibt den Rand der Kopfzeile eines Dokuments an.
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 
@@ -52,6 +52,6 @@ Keine.
 
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
-|Unit  <br/> |xsd:string  <br/> |Optional  <br/> |Stellt eine Maßeinheit dar. Der Standardwert ist DP.  <br/> |Werte des xsd:string-Typs.  <br/> |
+|Unit  <br/> |xsd:string  <br/> |Optional  <br/> |Stellt eine Maßeinheit dar. Der Standardwert ist DP.  <br/> |Werte des Typs "xsd:string".  <br/> |
    
 

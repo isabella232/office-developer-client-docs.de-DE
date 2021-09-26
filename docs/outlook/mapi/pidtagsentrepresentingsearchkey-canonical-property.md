@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - MAPI.PidTagSentRepresentingSearchKey
 api_type:
 - COM
 ms.assetid: 7a49b944-cef1-4642-9208-b137fd61171a
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a9361f3027453742acbe50c3de01d860289cd0ed
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.openlocfilehash: 3e7c2397e44127f49d3fc707362c6d6ab12f8e68
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32356686"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613254"
 ---
 # <a name="pidtagsentrepresentingsearchkey-canonical-property"></a>PidTagSentRepresentingSearchKey (kanonische Eigenschaft)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32356686"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält den Suchschlüssel für den Messagingbenutzer, der durch den Absender dargestellt wird.
+Enthält den Suchschlüssel für den vom Absender dargestellten Messagingbenutzer.
   
 |||
 |:-----|:-----|
@@ -34,11 +34,11 @@ Enthält den Suchschlüssel für den Messagingbenutzer, der durch den Absender d
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Diese Eigenschaft ist eine der Adresseigenschaften für den Messagingbenutzer, der vom Absender dargestellt wird. Wenn eine Clientanwendung eine Nachricht im Namen eines anderen Clients sendet, sollte sie alle dargestellten Absendereigenschaften auf die Werte für den Client festlegen. Ein Messagingbenutzer, der in seinem eigenen Namen sendet, überlässt in der Regel die dargestellten Absendereigenschaften nicht.
+Diese Eigenschaft ist eine der Adresseigenschaften für den Messagingbenutzer, der vom Absender dargestellt wird. Wenn eine Clientanwendung eine Nachricht im Auftrag eines anderen Clients sendet, sollte sie alle dargestellten Absendereigenschaften auf die Werte für diesen Client festlegen. Ein Messaging-Benutzer, der in seinem eigenen Auftrag sendet, lässt in der Regel die dargestellten Absendereigenschaften unet.
   
-Der ausgehende Transportanbieter muss diese Eigenschaft immer unverändert lassen, wenn sie vom sendenden Client festgelegt wurde. Wenn sie nicht festgelegt ist, sollte der Transportanbieter sie auf **PR_SENDER_SEARCH_KEY** ([PidTagSenderSearchKey](pidtagsendersearchkey-canonical-property.md)) für die ausgehende Kopie der Nachricht festlegen und sie in der lokalen Kopie nicht festlegen.
+Der ausgehende Transportanbieter muss diese Eigenschaft immer unverändert lassen, wenn sie vom sendenden Client festgelegt wurde. Wenn es nicht festgelegt ist, sollte der Transportanbieter ihn auf **PR_SENDER_SEARCH_KEY** ([PidTagSenderSearchKey](pidtagsendersearchkey-canonical-property.md)) für die ausgehende Kopie der Nachricht festlegen und für die lokale Kopie nicht festlegen.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -46,7 +46,7 @@ Der ausgehende Transportanbieter muss diese Eigenschaft immer unverändert lasse
 
 [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Verweise auf Exchange Server Protokollspezifikationen.
+> Enthält Verweise auf verwandte Exchange Server Protokollspezifikationen.
     
 [[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
@@ -62,11 +62,11 @@ Der ausgehende Transportanbieter muss diese Eigenschaft immer unverändert lasse
     
 [[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften und Vorgänge für Termin-, Besprechungs- und Antwortnachrichten an.
+> Gibt die Eigenschaften und Vorgänge für Termin-, Besprechungsanfrage- und Antwortnachrichten an.
     
 [[MS-OXOPOST]](https://msdn.microsoft.com/library/9b18fdab-aacd-4d73-9534-be9b6ba2f115%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften und Vorgänge an, die für Postobjekte zulässig sind.
+> Gibt die Eigenschaften und Vorgänge an, die für Post-Objekte zulässig sind.
     
 [[MS-OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
   
@@ -76,11 +76,11 @@ Der ausgehende Transportanbieter muss diese Eigenschaft immer unverändert lasse
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 Mapitags.h
   
-> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgeführt sind.
+> Enthält Definitionen von Eigenschaften, die als zugeordnete Eigenschaften aufgelistet sind.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -88,9 +88,9 @@ Mapitags.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

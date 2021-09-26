@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - vis_sdr.chm525
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 81cd9670-8a6f-824b-528c-e9b88c86f525
 description: Legt fest, welche dynamischen Verbinder übereinander liegen.
-ms.openlocfilehash: e4fb32c0fcb488173324ea597edc2c9d13f6bfca
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: 5f0d12107f760d9e442ab733fa8a03bb4bda6f55
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33414025"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618658"
 ---
 # <a name="lineadjustto-cell-page-layout-section"></a>Zelle "LineAdjustTo" (Abschnitt "Page Layout")
 
@@ -27,17 +27,17 @@ Legt fest, welche dynamischen Verbinder übereinander liegen.
 |2  <br/> |Keine Linien  <br/> |**visPLOLineAdjustToNone** <br/> |
 |3  <br/> |Verwandte Linien  <br/> |**visPLOLineAdjustToRelated** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Sie können den Wert dieser Zelle auch im Dialogfeld **Seite einrichten** auf der Registerkarte **Layout und Routing** festlegen (klicken Sie dazu auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten**, und klicken Sie dann auf **Layout und Routing**).
   
-Um einen Verweis auf die Zelle LineAdjustTo anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft** zu erhalten, verwenden Sie: 
+Um einen Verweis auf die Zelle "LineAdjustTo" anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |LineAdjustTo  <br/> |
    
-Um einen Verweis auf die LineAdjustTo-Zelle nach Index aus einem Programm zu erhalten, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
+Um einen Verweis auf die Zelle "LineAdjustTo" anhand des Indexes eines Programms abzurufen, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|

@@ -1,5 +1,5 @@
 ---
-title: Recordset2. CacheSize-Eigenschaft (DAO)
+title: Recordset2.CacheSize-Eigenschaft (DAO)
 TOCTitle: CacheSize Property
 ms:assetid: d8d195cc-6696-0583-31eb-b9988f8b7c6f
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835090(v=office.15)
@@ -10,28 +10,28 @@ f1_keywords:
 - dao360.chm1052927
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 94453b5bd8f5a405c5ad5b7c8a175468df2adfa2
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: a200c9ecab66b40ff6d9ac8fc474734702d5bdf9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307427"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611763"
 ---
-# <a name="recordset2cachesize-property-dao"></a>Recordset2. CacheSize-Eigenschaft (DAO)
+# <a name="recordset2cachesize-property-dao"></a>Recordset2.CacheSize-Eigenschaft (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
 
-Mit dieser Eigenschaft wird die Anzahl von Datensätzen, die aus einer ODBC-Datenquelle abgerufen und lokal gespeichert werden, festgelegt oder zurückgegeben. **Long**-Wert mit Lese-/Schreibzugriff.
+Legt die Anzahl der von einer ODBC-Datenquelle abgefragten Datensätze fest, die lokal zwischengespeichert werden, oder gibt den betreffenden Wert zurück. **Long**-Wert mit Lese-/Schreibzugriff.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck* . CacheSize
+*Ausdruck* . Cachesize
 
-*Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Recordset2-Objekt** darstellt.
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Wert der **CacheSize**-Eigenschaft muss zwischen 5 und 1200 liegen, darf aber nicht größer als der verfügbare Speicherplatz sein. Ein typischer Wert ist 100. Bei der Einstellung 0 wird die Zwischenspeicherung deaktiviert.
 
@@ -49,7 +49,7 @@ Sie können die Aktualisierung aller Daten im Zwischenspeicher erzwingen, indem 
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel werden die **CreateTableDef**- und **FillCache**-Methoden und die **CacheSize**-, **CacheStart**- und **SourceTableName**-Eigenschaften verwendet, um die Datensätze in einer verknüpften Tabelle zweimal aufzuzählen. Daraufhin werden die Datensätze in einem Cache mit 50 Datensätzen zweimal aufgezählt. Anschließend enthält das Beispiel durch die verknüpfte Tabelle die Leistungsstatistik für die zwischengespeicherten und die nicht zwischengespeicherten Datensätze.
+In diesem Beispiel werden die **CreateTableDef**- und die **FillCache**-Methode sowie die **CacheSize**-, die **CacheStart**- und die **SourceTableName**-Eigenschaft verwendet, um die Datensätze in einer verknüpften Tabelle zwei Mal aufzuzählen. Anschließend werden die Einträge zweimal mit einem Cache für 50 Datensätze aufgezählt. Anschließend werden die Leistungsstatistiken für die Ausführung mit und ohne Zwischenspeicherung über die verknüpfte Tabelle angezeigt.
 
 ```vb
     Sub ClientServerX3() 

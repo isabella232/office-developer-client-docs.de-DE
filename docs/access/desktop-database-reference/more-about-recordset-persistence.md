@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250232(v=office.15)
 ms:contentKeyID: 48548666
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 194dcf3826409c91f8d046b39b9009b43aee5477
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 97683167d90104d98076f642c5407b6b86a01863
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288848"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617958"
 ---
 # <a name="more-about-recordset-persistence"></a>Weitere Informationen zur Recordset-Speicherung
 
 **Gilt für**: Access 2013, Office 2013
 
-The ADO Recordset object supports storing a **Recordset** object's contents in a file using its [Save](save-method-ado.md) method. Die persistent gespeicherte Datei kann auf einem lokalen Laufwerk, Netzwerkserver oder als URL auf einer Website vorhanden sein. Later, the file can be restored with either the **Recordset** object's [Open](open-method-ado-recordset.md) method or the [Connection](connection-object-ado.md) object's [Execute](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-connection) method.
+The ADO Recordset object supports storing a **Recordset** object's contents in a file using its [Save](save-method-ado.md) method. Die dauerhaft gespeicherte Datei kann auf einem lokalen Laufwerk, Netzwerkserver oder als URL auf einer Website vorhanden sein. Later, the file can be restored with either the **Recordset** object's [Open](open-method-ado-recordset.md) method or the [Connection](connection-object-ado.md) object's [Execute](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-connection) method.
 
 Außerdem wird durch die [GetString](getstring-method-ado.md)-Methode ein **Recordset** -Objekt in ein Formular konvertiert, dessen Spalten und Zeilen durch die von Ihnen angegebenen Zeichen getrennt sind.
 

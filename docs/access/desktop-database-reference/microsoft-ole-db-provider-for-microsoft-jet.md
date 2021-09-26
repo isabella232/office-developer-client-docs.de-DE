@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249228(v=office.15)
 ms:contentKeyID: 48544660
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 9b4f1c46b390e1f059e57f3b7a70fc667da4b09b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 91852f8d08ae8ea7f71d079c625b9d17b7ddf427
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288925"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611931"
 ---
 # <a name="microsoft-ole-db-provider-for-microsoft-jet"></a>Microsoft OLE DB-Anbieter für Microsoft Jet
 
@@ -64,11 +64,11 @@ Die Zeichenfolge besteht aus den folgenden Schlüsselwörtern:
 </tr>
 <tr class="odd">
 <td><p><strong>User ID</strong></p></td>
-<td><p>Gibt den Benutzernamen an. Wenn dieses Schlüsselwort nicht angegeben ist, wird die &quot;Zeichen&quot;Folge "admin" standardmäßig verwendet.</p></td>
+<td><p>Gibt den Benutzernamen an. Wenn dieses Schlüsselwort nicht angegeben ist, wird standardmäßig die Zeichenfolge &quot; &quot; "Admin" verwendet.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Password</strong></p></td>
-<td><p>Gibt das Benutzerkennwort an. Wenn dieses Schlüsselwort nicht angegeben ist, wird die leere&quot;&quot;Zeichenfolge () standardmäßig verwendet.</p></td>
+<td><p>Gibt das Benutzerkennwort an. Wenn dieses Schlüsselwort nicht angegeben ist, wird standardmäßig die leere Zeichenfolge ( &quot; &quot; ) verwendet.</p></td>
 </tr>
 </tbody>
 </table>
@@ -93,22 +93,22 @@ In der folgenden Liste sind diese Eigenschaften mit dem entsprechenden OLE DB-Ei
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Jet OLEDB: Compact reclaimed Space Amount<br />
+<td><p>Jet OLEDB:Compact Reclaimed Space Amount<br />
 (DBPROP_JETOLEDB_COMPACTFREESPACESIZE)</p></td>
 <td><p>Gibt einen Schätzwert für den Speicherplatz in Bytes an, der durch Komprimieren der Datenbank verfügbar gemacht werden kann. Dieser Wert ist erst dann gültig, wenn eine Datenbankverbindung hergestellt wurde.</p></td>
 </tr>
 <tr class="even">
-<td><p>Jet OLEDB: Connection Control<br />
+<td><p>Jet OLEDB:Connection Control<br />
 (DBPROP_JETOLEDB_CONNECTIONCONTROL)</p></td>
 <td><p>Gibt an, ob Benutzer eine Verbindung mit der Datenbank herstellen können.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Jet OLEDB: Create System Database<br />
+<td><p>Jet OLEDB:Create System Database<br />
 (DBPROP_JETOLEDB_CREATESYSTEMDATABASE)</p></td>
 <td><p>Gibt an, ob beim Erstellen einer neuen Datenquelle eine Systemdatenbank erstellt werden muss.</p></td>
 </tr>
 <tr class="even">
-<td><p>Jet OLEDB: Daten Bank Sperrmodus<br />
+<td><p>Jet OLEDB:Database Locking Mode<br />
 (DBPROP_JETOLEDB_DATABASELOCKMODE)</p></td>
 <td><p>Gibt den Sperrmodus für diese Datenbank an. Der erste Benutzer, der die Datenbank öffnet, legt den Modus fest, der verwendet wird, solange die Datenbank geöffnet ist.</p></td>
 </tr>
@@ -143,12 +143,12 @@ In der folgenden Liste sind diese Eigenschaften mit dem entsprechenden OLE DB-Ei
 <td><p>Gibt die Zeitdauer an, die gewartet wird, bevor Daten in einem Cache für asynchrones Schreiben tatsächlich auf den Datenträger geschrieben wird. Mit dieser Einstellung werden die Werte für <strong>Jet OLEDB:Shared Async Delay</strong> und <strong>Jet OLEDB:Exclusive Async Delay</strong> außer Kraft gesetzt.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Jet OLEDB: globale Massentransaktionen<br />
+<td><p>Jet OLEDB:Global Bulk Transactions<br />
 (DBPROP_JETOLEDB_GLOBALBULKNOTRANSACTIONS)</p></td>
 <td><p>Gibt an, ob SQL-Massentransaktionen durchgeführt werden.</p></td>
 </tr>
 <tr class="even">
-<td><p>Jet OLEDB: Global Partial Bulk OPS<br />
+<td><p>Jet OLEDB:Global Partial Bulk Ops<br />
 (DBPROP_JETOLEDB_GLOBALBULKPARTIAL)</p></td>
 <td><p>Gibt das Kennwort an, das zum Öffnen der Datenbank verwendet wird.</p></td>
 </tr>
@@ -178,17 +178,17 @@ In der folgenden Liste sind diese Eigenschaften mit dem entsprechenden OLE DB-Ei
 <td><p>Gibt die maximale Anzahl von Sperren an, die Jet in einer Datenbank setzen kann. Der Standardwert beträgt 9500.</p></td>
 </tr>
 <tr class="even">
-<td><p>Jet OLEDB: New Database Password<br />
+<td><p>Jet OLEDB:New Database Password<br />
 (DBPROP_JETOLEDB_NEWDATABASEPASSWORD)</p></td>
 <td><p>Gibt das neue Kennwort an, das für diese Datenbank festgelegt werden muss. Das alte Kennwort wird in <strong>Jet OLEDB:Database Password</strong> gespeichert.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Jet OLEDB: ODBC Command Timeout<br />
+<td><p>Jet OLEDB:ODBC Command Timeout<br />
 (DBPROP_JETOLEDB_ODBCCOMMANDTIMEOUT)</p></td>
 <td><p>Gibt die Zeitdauer in Millisekunden an, die verstreicht, bevor eine ODBC-Remoteabfrage von Jet das Zeitlimit überschreitet.</p></td>
 </tr>
 <tr class="even">
-<td><p>Jet OLEDB: Seitensperren für die Tabellensperre<br />
+<td><p>Jet OLEDB:Page Locks to Table Lock<br />
 (DBPROP_JETOLEDB_PAGELOCKSTOTABLELOCK)</p></td>
 <td><p>Gibt an, wie viele Seiten in einer Transaktion gesperrt werden müssen, bevor Jet versucht, die Sperre auf eine Tabellensperre höherzustufen. Wenn dieser Wert 0 ist, wird die Sperre nie höhergestuft.</p></td>
 </tr>
@@ -208,7 +208,7 @@ In der folgenden Liste sind diese Eigenschaften mit dem entsprechenden OLE DB-Ei
 <td><p>Gibt den Windows-Registrierungsschlüssel an, der die Werte für das Jet-Datenbankmodul enthält.</p></td>
 </tr>
 <tr class="even">
-<td><p>Jet OLEDB: Reset ISAM stats<br />
+<td><p>Jet OLEDB:Reset ISAM Stats<br />
 (DBPROP_JETOLEDB_RESETISAMSTATS)</p></td>
 <td><p>Gibt an, ob das Schema <strong>Recordset</strong> DBSCHEMA_JETOLEDB_ISAMSTATS die Leistungsindikatoren nach dem Zurückgeben von Leistungsinformationen zurücksetzen soll.</p></td>
 </tr>
@@ -223,7 +223,7 @@ In der folgenden Liste sind diese Eigenschaften mit dem entsprechenden OLE DB-Ei
 <td><p>Gibt den Pfad und den Dateinamen für die Arbeitsgruppen-Informationsdatei (Systemdatenbank) an.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Jet OLEDB: Transaction Commit Mode<br />
+<td><p>Jet OLEDB:Transaction Commit Mode<br />
 (DBPROP_JETOLEDB_TXNCOMMITMODE)</p></td>
 <td><p>Gibt an, ob Jet Daten beim Ausführen einer Transaktion synchron oder asynchron auf Datenträger schreibt.</p></td>
 </tr>
@@ -253,57 +253,57 @@ Der Jet-Anbieter unterstützt zudem auch mehrere anwenderspezifische **Recordset
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Jet OLEDB: Massentransaktionen<br />
+<td><p>Jet OLEDB:Bulk Transactions<br />
 (DBPROP_JETOLEDB_BULKNOTRANSACTIONS)</p></td>
 <td><p>Gibt an, ob SQL-Massenvorgänge durchgeführt werden. Umfangreiche Massenvorgänge können aufgrund von Ressourcenverzögerungen möglicherweise nicht durchgeführt werden.</p></td>
 </tr>
 <tr class="even">
-<td><p>Jet OLEDB: enable FAT Cursors<br />
+<td><p>Jet OLEDB:Enable Fat Cursors<br />
 (DBPROP_JETOLEDB_ENABLEFATCURSOR)</p></td>
 <td><p>Gibt an, ob Jet beim Auffüllen einer Datensatzgruppe für eine Remote-Datensatzherkunft mehrere Zeilen zwischenspeichern soll.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Jet OLEDB: FAT Cursor Cache Größe<br />
+<td><p>Jet OLEDB:Fat Cursor Cache Size<br />
 (DBPROP_JETOLEDB_FATCURSORMAXROWS)</p></td>
 <td><p>Gibt die Anzahl von Zeilen an, die beim Zwischenspeichern von Zeilen von Remotedatenspeichern zwischengespeichert werden sollen. Dieser Wert wird nur beachtet, wenn <strong>Jet OLEDB:Enable Fat Cursors</strong> auf True gesetzt ist.</p></td>
 </tr>
 <tr class="even">
-<td><p>Jet OLEDB: inkonsistent<br />
+<td><p>Jet OLEDB: Inkonsistent<br />
 (DBPROP_JETOLEDB_INCONSISTENT)</p></td>
 <td><p>Gibt an, ob in Abfrageergebnissen inkonsistente Aktualisierungen zulässig sind.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Jet OLEDB: Sperrgranularität<br />
+<td><p>Jet OLEDB:Locking Granularity<br />
 (DBPROP_JETOLEDB_LOCKGRANULARITY)</p></td>
 <td><p>Gibt an, ob eine Tabelle mithilfe von Sperren auf Zeilenebene geöffnet wird.</p></td>
 </tr>
 <tr class="even">
-<td><p>Jet OLEDB: ODBC-Passthrough-Anweisung<br />
+<td><p>Jet OLEDB:ODBC Pass-Through-Anweisung<br />
 (DBPROP_JETOLEDB_ODBCPASSTHROUGH)</p></td>
 <td><p>Gibt an, dass Jet den SQL-Text in einem <strong>Command</strong>-Objekt unverändert an das Back-End übergeben muss.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Jet OLEDB: Partial Bulk OPS<br />
+<td><p>Jet OLEDB:Partial Bulk Ops<br />
 (DBPROP_JETOLEDB_BULKPARTIAL)</p></td>
 <td><p>Gibt das Verhalten von Jet für den Fall an, dass SQL DML-Vorgänge nicht ausgeführt werden können.</p></td>
 </tr>
 <tr class="even">
-<td><p>Jet OLEDB: Durchlauf-Abfrage-BULK-OP<br />
+<td><p>Jet OLEDB:Pass Through Query Bulk-Op<br />
 (DBPROP_JETOLEDB_PASSTHROUGHBULKOP)</p></td>
 <td><p>Gibt an, ob Abfragen, die kein <strong>Recordset</strong>-Objekt zurückgeben, unverändert an die Datenquelle übergeben werden.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Jet OLEDB: Durchlauf-Abfrage-Verbindungszeichenfolge<br />
+<td><p>Jet OLEDB:Pass Through Query Verbinden String<br />
 (DBPROP_JETOLEDB_ODBCPASSTHROUGHCONNECTSTRING)</p></td>
 <td><p>Gibt die Jet-Verbindungszeichenfolge an, die für die Verbindung mit einem Remotedatenspeicher verwendet wird. Dieser Wert wird nur beachtet, wenn <strong>Jet OLEDB:ODBC Pass-Through Statement</strong> auf True gesetzt ist.</p></td>
 </tr>
 <tr class="even">
-<td><p>Jet OLEDB: gespeicherte Abfrage<br />
+<td><p>Jet OLEDB:Stored Query<br />
 (DBPROP_JETOLEDB_STOREDQUERY)</p></td>
 <td><p>Gibt an, ob der Befehlstext nicht als SQL-Befehl, sondern als gespeicherte Abfrage interpretiert werden soll.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Jet OLEDB: Validate Rules on Set<br />
+<td><p>Jet OLEDB:Validate Rules On Set<br />
 (DBPROP_JETOLEDB_VALIDATEONSET)</p></td>
 <td><p>Gibt an, ob die Jet-Gültigkeitsregeln beim Festlegen der Spaltendaten oder bei der Übergabe der Änderungen an die Datenbank ausgewertet werden.</p></td>
 </tr>
@@ -656,15 +656,15 @@ Die folgenden Eigenschaften werden der **Properties**-Auflistung des **Recordset
 <td><p>DBPROP_IAccessor</p></td>
 </tr>
 <tr class="odd">
-<td><p>IColumnsInfo</p></td>
+<td><p>Icolumnsinfo</p></td>
 <td><p>DBPROP_IColumnsInfo</p></td>
 </tr>
 <tr class="even">
-<td><p>IColumnsRowset</p></td>
+<td><p>Icolumnsrowset</p></td>
 <td><p>DBPROP_IColumnsRowset</p></td>
 </tr>
 <tr class="odd">
-<td><p>IConnectionPointContainer</p></td>
+<td><p>Iconnectionpointcontainer</p></td>
 <td><p>DBPROP_IConnectionPointContainer</p></td>
 </tr>
 <tr class="even">
@@ -672,7 +672,7 @@ Die folgenden Eigenschaften werden der **Properties**-Auflistung des **Recordset
 <td><p>DBPROP_IConvertType</p></td>
 </tr>
 <tr class="odd">
-<td><p>ILockBytes</p></td>
+<td><p>Ilockbytes</p></td>
 <td><p>DBPROP_ILockBytes</p></td>
 </tr>
 <tr class="even">
@@ -684,23 +684,23 @@ Die folgenden Eigenschaften werden der **Properties**-Auflistung des **Recordset
 <td><p>DBPROP_IRowset</p></td>
 </tr>
 <tr class="even">
-<td><p>IRowsetChange</p></td>
-<td><p>DBPROP_IRowsetChange</p></td>
+<td><p>Irowsetchange</p></td>
+<td><p>Dbprop_irowsetchange</p></td>
 </tr>
 <tr class="odd">
 <td><p>IRowsetIdentity</p></td>
 <td><p>DBPROP_IRowsetIdentity</p></td>
 </tr>
 <tr class="even">
-<td><p>IRowsetIndex</p></td>
+<td><p>Irowsetindex</p></td>
 <td><p>DBPROP_IRowsetIndex</p></td>
 </tr>
 <tr class="odd">
-<td><p>IRowsetInfo</p></td>
+<td><p>Irowsetinfo</p></td>
 <td><p>DBPROP_IRowsetInfo</p></td>
 </tr>
 <tr class="even">
-<td><p>IRowsetLocate</p></td>
+<td><p>Irowsetlocate</p></td>
 <td><p>DBPROP_IRowsestLocate</p></td>
 </tr>
 <tr class="odd">
@@ -716,7 +716,7 @@ Die folgenden Eigenschaften werden der **Properties**-Auflistung des **Recordset
 <td><p>DBPROP_IRowsetUpdate</p></td>
 </tr>
 <tr class="even">
-<td><p>ISequentialStream</p></td>
+<td><p>Isequentialstream</p></td>
 <td><p>DBPROP_ISequentialStream</p></td>
 </tr>
 <tr class="odd">
@@ -728,7 +728,7 @@ Die folgenden Eigenschaften werden der **Properties**-Auflistung des **Recordset
 <td><p>DBPROP_IStream</p></td>
 </tr>
 <tr class="odd">
-<td><p>ISupportErrorInfo</p></td>
+<td><p>Isupporterrorinfo</p></td>
 <td><p>DBPROP_ISupportErrorInfo</p></td>
 </tr>
 <tr class="even">
@@ -952,15 +952,15 @@ Die folgenden Eigenschaften werden der **Properties**-Auflistung des **Command**
 <td><p>DBPROP_IAccessor</p></td>
 </tr>
 <tr class="even">
-<td><p>IColumnsInfo</p></td>
+<td><p>Icolumnsinfo</p></td>
 <td><p>DBPROP_IColumnsInfo</p></td>
 </tr>
 <tr class="odd">
-<td><p>IColumnsRowset</p></td>
+<td><p>Icolumnsrowset</p></td>
 <td><p>DBPROP_IColumnsRowset</p></td>
 </tr>
 <tr class="even">
-<td><p>IConnectionPointContainer</p></td>
+<td><p>Iconnectionpointcontainer</p></td>
 <td><p>DBPROP_IConnectionPointContainer</p></td>
 </tr>
 <tr class="odd">
@@ -968,7 +968,7 @@ Die folgenden Eigenschaften werden der **Properties**-Auflistung des **Command**
 <td><p>DBPROP_IConvertType</p></td>
 </tr>
 <tr class="even">
-<td><p>ILockBytes</p></td>
+<td><p>Ilockbytes</p></td>
 <td><p>DBPROP_ILockBytes</p></td>
 </tr>
 <tr class="odd">
@@ -980,23 +980,23 @@ Die folgenden Eigenschaften werden der **Properties**-Auflistung des **Command**
 <td><p>DBPROP_IRowset</p></td>
 </tr>
 <tr class="odd">
-<td><p>IRowsetChange</p></td>
-<td><p>DBPROP_IRowsetChange</p></td>
+<td><p>Irowsetchange</p></td>
+<td><p>Dbprop_irowsetchange</p></td>
 </tr>
 <tr class="even">
 <td><p>IRowsetIdentity</p></td>
 <td><p>DBPROP_IRowsetIdentity</p></td>
 </tr>
 <tr class="odd">
-<td><p>IRowsetIndex</p></td>
+<td><p>Irowsetindex</p></td>
 <td><p>DBPROP_IRowsetIndex</p></td>
 </tr>
 <tr class="even">
-<td><p>IRowsetInfo</p></td>
+<td><p>Irowsetinfo</p></td>
 <td><p>DBPROP_IRowsetInfo</p></td>
 </tr>
 <tr class="odd">
-<td><p>IRowsetLocate</p></td>
+<td><p>Irowsetlocate</p></td>
 <td><p>DBPROP_IRowsetLocate</p></td>
 </tr>
 <tr class="even">
@@ -1012,7 +1012,7 @@ Die folgenden Eigenschaften werden der **Properties**-Auflistung des **Command**
 <td><p>DBPROP_IRowsetUpdate</p></td>
 </tr>
 <tr class="odd">
-<td><p>ISequentialStream</p></td>
+<td><p>Isequentialstream</p></td>
 <td><p>DBPROP_ISequentialStream</p></td>
 </tr>
 <tr class="even">
@@ -1024,7 +1024,7 @@ Die folgenden Eigenschaften werden der **Properties**-Auflistung des **Command**
 <td><p>DBPROP_IStream</p></td>
 </tr>
 <tr class="even">
-<td><p>ISupportErrorInfo</p></td>
+<td><p>Isupporterrorinfo</p></td>
 <td><p>DBPROP_ISupportErrorInfo</p></td>
 </tr>
 <tr class="odd">

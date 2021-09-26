@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm195788
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: a2ef6c5f38064ae3253cd7e0e58732f63294ceb3
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 08fd34680942d47bc6a45abcb54587d7fb29c65e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306685"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611609"
 ---
 # <a name="repaintobject-macro-action"></a>RepaintObject-Makroaktion
 
@@ -52,7 +52,7 @@ Die **AktualisierenObjekt**-Aktion verwendet die folgenden Argumente.
 </table>
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Microsoft Access wartet mit dem Beenden ausstehender Bildschirmaktualisierungen, bis andere ausstehende Aufgaben beendet sind. Mit dieser Aktion können Sie die sofortige Aktualisierung der Steuerelemente im angegebenen Objekt erzwingen. In den folgenden Fällen können Sie diese Aktion verwenden:
 
@@ -62,7 +62,7 @@ Microsoft Access wartet mit dem Beenden ausstehender Bildschirmaktualisierungen,
 
 > [!NOTE]
 > - Diese Aktion verursacht keine erneute Abfrage der Datenbank, sodass keine neuen und geänderten Datensätze angezeigt oder Datensätze aus der zugrunde liegenden Tabelle oder der zugrunde liegenden Abfrage des Objekts entfernt werden. Verwenden Sie zur erneuten Abfrage der Objektquelle oder eines ihrer Steuerelemente die **AktualisierenDaten** -Aktion. Verwenden Sie die **AnzeigenAlleDatensätze** -Aktion, um die neuesten Datensätze anzuzeigen, und entfernen Sie eventuell angewendete Filter.
-> - Die **AktualisierenObjekt** -Aktion hat dieselbe Wirkung wie das Klicken auf **Aktualisieren** in der Gruppe **Datensätze**auf der Registerkarte **Start**, durch das alle Änderungen angezeigt werden, die Sie oder andere Benutzer an den aktuell angezeigten Datensätzen in Formularen und Datenblättern vorgenommen haben.
+> - Die **AktualisierenObjekt** -Aktion hat dieselbe Wirkung wie das Klicken auf **Aktualisieren** in der Gruppe **Datensätze** auf der Registerkarte **Start**, durch das alle Änderungen angezeigt werden, die Sie oder andere Benutzer an den aktuell angezeigten Datensätzen in Formularen und Datenblättern vorgenommen haben.
 
 Verwenden Sie die **RepaintObject**-Methode des **DoCmd**-Objekts, um die **AktualisierenObjekt**-Aktion in einem Modul für Visual Basic für Applikationen (VBA) auszuführen.
 

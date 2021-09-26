@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm122943
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: ac1a2c8a603fb74b56d71f73605455ecdbc87035
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: d21690a0444fcae2d45596935969d63ed69fff43
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308694"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611539"
 ---
 # <a name="setfilter-macro-action"></a>SetFilter-Makroaktion
 
@@ -56,7 +56,7 @@ Die **FestlegenFilter**-Aktion kann mit den folgenden Argumenten verwendet werde
 </table>
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 In einer Webdatenbank darf das Argument Where Condition nicht mit einem Gleichheitszeichen (=) beginnen.
 
@@ -64,7 +64,7 @@ Beim Ausführen dieser Aktion wird der Filter auf die Tabelle, das Formular, den
 
 Mit der  **Filter** -Eigenschaft des aktiven Objekts können Sie das WhereCondition-Argument speichern und zu einem späteren Zeitpunkt anwenden. Filter werden zusammen mit den Objekten gespeichert, in denen sie erstellt wurden. Sie werden zwar automatisch geladen, wenn das Objekt geöffnet wird, aber werden nicht automatisch angewendet.
 
-Legen Sie in einer Clientdatenbank die **FilterOnLoad** -Eigenschaft auf true fest, um beim Öffnen des Objekts automatisch einen Filter anzuwenden.
+Um in einer Clientdatenbank automatisch einen Filter anzuwenden, wenn das Objekt geöffnet wird, legen Sie die **FilterOnLoad-Eigenschaft** auf "True" fest.
 
 Wenn Sie in einer Webdatenbank beim Öffnen eines Objekts automatisch einen Filter anwenden möchten, fügen Sie einem Makro die **FestlegenFilter**-Aktion hinzu, und fügen Sie das Makro dem **BeiLaden**-Ereignis des Objekts hinzu.
 

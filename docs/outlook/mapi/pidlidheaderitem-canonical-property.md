@@ -1,37 +1,37 @@
 ---
-title: PidLidHeaderItem (kanonische Eigenschaft)
+title: Kanonische PidLidHeaderItem-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - PidLidHeaderItem
 api_type:
 - COM
 ms.assetid: 69b308dd-d3f5-44fe-8976-e4ed9a433ad8
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 7d883faa6266086127a7722990e84bca00090f0a
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: f5e685090d7f945988715fa91b281d843781f44a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33415278"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59620408"
 ---
-# <a name="pidlidheaderitem-canonical-property"></a>PidLidHeaderItem (kanonische Eigenschaft)
+# <a name="pidlidheaderitem-canonical-property"></a>Kanonische PidLidHeaderItem-Eigenschaft
 
   
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Gibt an, ob Microsoft Outlook nur die Kopfzeile einer Nachricht oder sowohl den Header als auch den Text der Nachricht auf den Clientcomputer heruntergeladen hat, wenn Outlook im Cached Exchange Mode konfiguriert ist.
+Gibt an, ob Microsoft Outlook auf den Clientcomputer nur die Kopfzeile einer Nachricht oder sowohl den Header als auch den Textkörper der Nachricht heruntergeladen hat, wenn Outlook im Modus "Cached Exchange" konfiguriert ist.
   
 |||
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |dispidHeaderItem  <br/> |
 |Eigenschaftensatz:  <br/> |PSETID_Common  <br/> |
-|Lange ID (LID):  <br/> |0x00008578  <br/> |
+|Long ID (LID):  <br/> |0x00008578  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeines Messaging  <br/> |
    
@@ -41,13 +41,13 @@ Gibt an, ob Microsoft Outlook nur die Kopfzeile einer Nachricht oder sowohl den 
 
 [[MS-OXPROPS]] 
   
-> Stellt Eigenschaftensatzdefinitionen und Verweise auf verwandte Exchange Server zur Verfügung.
+> Stellt Eigenschaftssatzdefinitionen und Verweise auf verwandte Exchange Server Protokollspezifikationen bereit.
     
 ### <a name="header-files"></a>Headerdateien
 
 Mapidefs.h
   
-> Bietet Datentypdefinitionen.
+> Stellt Datentypdefinitionen bereit.
     
 ## <a name="see-also"></a>Siehe auch
 
@@ -55,9 +55,9 @@ Mapidefs.h
 
 [MAPI-Eigenschaften](mapi-properties.md)
   
-[KANONISCHE EIGENSCHAFTEN VON MAPI](mapi-canonical-properties.md)
+[KANonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   
-[Zuordnen kanonischer Eigenschaftsnamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
+[Zuordnen kanonischer Eigenschaftennamen zu MAPI-Namen](mapping-canonical-property-names-to-mapi-names.md)
   
-[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
+[Zuordnen von MAPI-Namen zu kanonischen Eigenschaftsnamen](mapping-mapi-names-to-canonical-property-names.md)
 

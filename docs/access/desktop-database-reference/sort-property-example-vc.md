@@ -6,20 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248862(v=office.15)
 ms:contentKeyID: 48543259
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: e23cf573d51e52c74f4bbf24801f4bd6f47ea22a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 3fd868467adac008577e5547ddd6232e0c89ba45
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306923"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611490"
 ---
 # <a name="sort-property-example-vc"></a>Sort-Eigenschaft (Beispiel) (VC++)
 
 
 **Gilt für**: Access 2013, Office 2013
 
-In diesem Beispiel wird die [Sort](sort-property-ado.md)-Eigenschaft des [Recordset](recordset-object-ado.md)-Objekts verwendet, um die Zeilen in einem **Recordset**-Objekt neu anzuordnen, das aus der ***Authors***-Tabelle der **Pubs**-Datenbank stammt. Eine sekundäre Hilfsprogrammroutine druckt jede Zeile.
+In diesem Beispiel wird die [Sort-Eigenschaft](sort-property-ado.md) des [Recordset-Objekts](recordset-object-ado.md) verwendet, um die Zeilen eines **Recordset-Objekts** neu anzuordnen, das von der **_Authors_*_-Tabelle der _* Pubs-Datenbank** abgeleitet ist. Eine sekundäre Hilfsprogrammroutine druckt jede Zeile.
 
 ```cpp 
  

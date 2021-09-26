@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm98700
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 646c1393cc798c1f827e6ceaebf46bfe7c87bcbd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: e028531d91e0c96f167b28dd6e69314a54d8bcab
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306832"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621885"
 ---
 # <a name="runcode-macro-action"></a>RunCode-Makroaktion
 
@@ -42,7 +42,7 @@ Die **AusführenCode**-Aktion hat das folgende Argument.
 <tbody>
 <tr class="odd">
 <td><p><strong>Funktionsname</strong></p></td>
-<td><p>Der Name der VBA-Funktionsprozedur, die aufgerufen werden soll. Geben Sie die gewünschten Funktionsargumente in Klammern an. Geben Sie den Funktionsnamenn im Feld <strong>Funktionsname</strong> im Abschnitt <strong>Aktionsargumente</strong> des Bereichs "Makro-Generator" ein. Dabei handelt es sich um ein Pflichtargument.  </p><p><strong>Hinweis</strong>: in einer Access-Datenbank (MDB oder ACCDB) klicken Sie auf die <strong></strong> Generator-Schaltfläche, um mithilfe des Ausdrucks-Generators eine Funktion für dieses Argument auszuwählen. Klicken Sie dazu im Ausdrucks-Generator auf die gewünschte Funktion in der Liste.</p></td>
+<td><p>Der Name der VBA-Funktionsprozedur, die aufgerufen werden soll. Geben Sie die gewünschten Funktionsargumente in Klammern an. Geben Sie den Funktionsnamenn im Feld <strong>Funktionsname</strong> im Abschnitt <strong>Aktionsargumente</strong> des Bereichs "Makro-Generator" ein. Dabei handelt es sich um ein Pflichtargument.  </p><p><strong>HINWEIS:</strong>Klicken Sie in einer Access-Datenbank (MDB oder ACCDB) auf die Schaltfläche <strong>"Erstellen",</strong> um mit dem Ausdrucks-Generator eine Funktion für dieses Argument auszuwählen. Klicken Sie dazu im Ausdrucks-Generator auf die gewünschte Funktion in der Liste.</p></td>
 </tr>
 </tbody>
 </table>
@@ -56,7 +56,7 @@ Sie müssen Klammern angeben, auch wenn die Funktion, wie im folgenden Beispiel,
 
 `TestFunction()`
 
-Im Gegensatz zu benutzerdefinierten Funktionsnamen, die für Einstellungen der Ereigniseigenschaft verwendet werden, beginnt der Funktionsname im Argument **Funktionsname** nicht mit**=** einem Gleichheitszeichen ().
+Im Gegensatz zu benutzerdefinierten Funktionsnamen, die für Ereigniseigenschafteneinstellungen verwendet werden, beginnt der Funktionsname im Argument **Funktionsname** nicht mit einem Gleichheitszeichen ( **=** ).
 
 Access ignoriert den Rückgabewert der Funktion.
 

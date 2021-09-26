@@ -4,15 +4,15 @@ manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: reference
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: bd026cb1-6d35-f9dc-e9dc-f95c0a6f2ff0
 description: Enthält die Textzeichenfolge, die im mittleren Bereich der Kopfzeile eines Dokuments angezeigt wird.
-ms.openlocfilehash: 264ca5e3019bd15acc4e9b0c67477c0fab33d017
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.openlocfilehash: 0e204591d710312c121757a2c7ae200686196710
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34542163"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618952"
 ---
 # <a name="headercenter-element-headerfooter_type-complextype-visio-xml"></a>HeaderCenter-Element (HeaderFooter_Type complexType) (Visio XML)
 
@@ -36,7 +36,7 @@ Enthält die Textzeichenfolge, die im mittleren Bereich der Kopfzeile eines Doku
 
 ## <a name="elements-and-attributes"></a>Elemente und Attribute
 
-Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz**, **minOccurs,** **maxOccurs** und **Auswahl,** finden Sie im Abschnitt Definition. 
+Wenn das Schema bestimmte Anforderungen definiert, z. B. **Sequenz,** **minOccurs,** **maxOccurs** und **Auswahl,** lesen Sie den Definitionsabschnitt. 
   
 ### <a name="parent-elements"></a>Übergeordnete Elemente
 

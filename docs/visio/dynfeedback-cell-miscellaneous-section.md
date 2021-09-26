@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251317
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 44017319-7146-3431-e476-fbb1a40341ca
 description: Ändert die Art des visuellen Feedbacks, das Benutzern angezeigt wird, wenn sie einen Verbinder mit der Maus verschieben. Wenn die Maustaste losgelassen wird, ist das daraus resultierende Verbinder-Shape von dieser Einstellung nicht betroffen. Diese Einstellung gilt nicht für umleitbare Verbinder.
-ms.openlocfilehash: 823b8db4dc6afe94a5fdac1f62aaa48d7e1b0d80
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+ms.openlocfilehash: cc4f9d66cf06150f749cef28a83d212f232d866d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404799"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59619120"
 ---
 # <a name="dynfeedback-cell-miscellaneous-section"></a>Zelle "DynFeedback" (Abschnitt "Miscellaneous")
 
@@ -26,15 +26,15 @@ ms.locfileid: "33404799"
 | 1  <br/> | Zeigt beim Ziehen drei Abschnitte an.  <br/> |**visDynFBUCon3Leg** <br/> |
 | 2  <br/> | Zeigt beim Ziehen fünf Abschnitte an.  <br/> |**visDynFBUCon5Leg** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie zum Erhalten eines Verweises auf die DynFeedback-Zelle anhand des Namens aus einer anderen Formel oder aus einem Programm mit der **CellsU-Eigenschaft:** 
+Um einen Verweis auf die Zelle DynFeedback anhand des Namens aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU-Eigenschaft** abzurufen, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | DynFeedback  <br/> |
    
-Verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten, um einen Verweis auf die DynFeedback-Zelle nach Index aus einem Programm zu erhalten: 
+Um einen Verweis auf die Zelle DynFeedback anhand des Indexes eines Programms abzurufen, verwenden Sie die **CellsSRC-Eigenschaft** mit den folgenden Argumenten: 
   
 |||
 |:-----|:-----|

@@ -1,18 +1,18 @@
 ---
-title: Aktualisieren von Daten (Access-Desktop-Daten Bankreferenz)
+title: Aktualisieren von Daten (Access-Desktopdatenbankreferenz)
 TOCTitle: Updating Data
 ms:assetid: 02e82066-77c8-cbb2-db28-98e2fc94404c
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248794(v=office.15)
 ms:contentKeyID: 48542970
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 8e6989468e23fc1c9c611eb091172822a6ffe938
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 7dca0407e500868eb21607eda996e474b0231438
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32313566"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611340"
 ---
 # <a name="updating-data"></a>Aktualisieren von Daten
 
@@ -31,5 +31,5 @@ Dieser Abschnitt enthält die folgenden Themen:
 
 - [Unmittelbarer Modus](immediate-mode.md)
 - [Verarbeitung von Transaktionen](transaction-processing.md)
-- [Batch Modus (ADO)](batch-mode.md)
+- [Batchmodus (ADO)](batch-mode.md)
 

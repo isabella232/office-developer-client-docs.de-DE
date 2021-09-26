@@ -1,20 +1,20 @@
 ---
-title: Stream-Eigenschaften,-Methoden und-Ereignisse (ADO)
+title: Stream-Eigenschaften, -Methoden und -Ereignisse (ADO)
 TOCTitle: Properties, Methods, and Events
 ms:assetid: 12542605-9520-f0a9-09e4-9eac6b37c35e
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248897(v=office.15)
 ms:contentKeyID: 48543339
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: b995fab9247347c434a0ffc01aeecc7389802e24
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 6843102e55b924aece5b748ede9c8272b2bfcf1b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314427"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611441"
 ---
-# <a name="stream-properties-methods-and-events-ado"></a>Stream-Eigenschaften,-Methoden und-Ereignisse (ADO)
+# <a name="stream-properties-methods-and-events-ado"></a>Stream-Eigenschaften, -Methoden und -Ereignisse (ADO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -25,7 +25,7 @@ ms.locfileid: "32314427"
 - [LineSeparator-Eigenschaft](lineseparator-property-ado.md)
 - [Mode-Eigenschaft](mode-property-ado.md)
 - [Position-Eigenschaft](position-property-ado.md)
-- [Size-Eigenschaft (ADO-Stream)](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/size-property-ado-stream)
+- [Size-Eigenschaft (ADO Stream)](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/size-property-ado-stream)
 - [State-Eigenschaft](state-property-ado.md)
 - [Type-Eigenschaft (ADO Stream)](type-property-ado-stream.md)
 

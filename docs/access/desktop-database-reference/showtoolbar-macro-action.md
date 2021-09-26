@@ -10,13 +10,13 @@ f1_keywords:
 - vbaac10.chm27417
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: 01ba59ce0898068788adb9269b3203794d1f31d4
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: 17a88c2b05c6bb66ab0d5e10c38bf17f302f2da4
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32306475"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611504"
 ---
 # <a name="showtoolbar-macro-action"></a>ShowToolbar-Makroaktion
 
@@ -26,7 +26,7 @@ Sie können die **EinblendenSymbolleiste** -Aktion zum Anzeigen oder Ausblenden 
 
 > [!NOTE]
 > - [!HINWEIS] Die **EinblendenSymbolleiste** -Aktion wirkt sich nicht auf Kontextmenüs aus.
-> - [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. 
+> - Diese Aktion ist nicht zulässig, wenn die Datenbank nicht vertrauenswürdig ist. 
 
 ## <a name="setting"></a>Einstellung
 
@@ -46,17 +46,17 @@ Die **EinblendenSymbolleiste**-Aktion verwendet folgende Argumente.
 <tbody>
 <tr class="odd">
 <td><p><strong>Symbolleistenname</strong></p></td>
-<td><p>Der Name der Befehlsgruppe auf der Registerkarte <strong>Add-ins</strong> , die Sie anzeigen oder ausblenden möchten. Im Feld <strong>Symbolleisten Name</strong> im Abschnitt <strong>Aktionsargumente</strong> des Bereichs Makro-Generator werden alle verfügbaren Gruppen angezeigt, die von dieser Aktion betroffen sein können. Dies ist ein erforderliches Argument. Wenn Sie ein Makro ausführen, in dem die <strong>EinblendenSymbolleiste</strong>-Aktion in einer Bibliotheksdatenbank enthalten ist, sucht Access zuerst in der Bibliotheksdatenbank und dann in der aktuellen Datenbank nach der Gruppe mit diesem Namen.</p></td>
+<td><p>Der Name der Befehlsgruppe auf der Registerkarte <strong>"Add-Ins",</strong> die Sie anzeigen oder ausblenden möchten. Im Feld <strong>"Symbolleistenname"</strong> im Abschnitt <strong>"Aktionsargumente"</strong> des Makro-Generator-Bereichs werden alle verfügbaren Gruppen angezeigt, die von dieser Aktion betroffen sein können. Dies ist ein erforderliches Argument. Wenn Sie ein Makro ausführen, in dem die <strong>EinblendenSymbolleiste</strong>-Aktion in einer Bibliotheksdatenbank enthalten ist, sucht Access zuerst in der Bibliotheksdatenbank und dann in der aktuellen Datenbank nach der Gruppe mit diesem Namen.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Show</strong></p></td>
-<td><p>Gibt an, ob eine Gruppe angezeigt oder ausgeblendet wird und welche Ansichten zum Anzeigen oder Ausblenden verwendet werden. Der Standardwert ist <strong>Ja</strong> (zeigen Sie die Gruppe jederzeit an). Sie können <strong>Ja</strong> auswählen, um die Gruppe jederzeit anzuzeigen, gegebenenfalls <strong></strong> um die Gruppe nur anzuzeigen, wenn das entsprechende Formular oder der Bericht aktiv ist, oder <strong>Nein</strong> , um die Gruppe immer auszublenden.</p></td>
+<td><p>Gibt an, ob eine Gruppe angezeigt oder ausgeblendet wird und welche Ansichten zum Anzeigen oder Ausblenden verwendet werden. Der Standardwert ist <strong>Ja</strong> (die Gruppe jederzeit anzeigen). Sie können <strong>"Ja"</strong> auswählen, um die Gruppe jederzeit anzuzeigen. <strong>Gegebenenfalls</strong> wird die Gruppe nur angezeigt, wenn das entsprechende Formular oder der entsprechende Bericht aktiv ist, oder <strong>"Nein",</strong> um die Gruppe jederzeit auszublenden.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Sie können diese Aktion in Makros verwenden, die bedingte Ausdrücke enthalten, um eine Gruppe in Abhängigkeit bestimmter Bedingungen anzuzeigen oder auszublenden.
 

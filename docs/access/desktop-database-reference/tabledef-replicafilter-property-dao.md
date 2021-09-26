@@ -1,5 +1,5 @@
 ---
-title: TableDef. ReplicaFilter-Eigenschaft (DAO)
+title: TableDef.ReplicaFilter-Eigenschaft (DAO)
 TOCTitle: ReplicaFilter Property
 ms:assetid: f44273de-2b6a-750f-cb7c-12c3ac2da503
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff836681(v=office.15)
@@ -10,15 +10,15 @@ f1_keywords:
 - dao360.chm1055548
 f1_categories:
 - Office.Version=v15
-localization_priority: Normal
-ms.openlocfilehash: ba296701faebb32696741a742b7fe01660b74c46
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: dbe9a5076c6e645be57dd396d24a9748e6604837
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32302786"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611364"
 ---
-# <a name="tabledefreplicafilter-property-dao"></a>TableDef. ReplicaFilter-Eigenschaft (DAO)
+# <a name="tabledefreplicafilter-property-dao"></a>TableDef.ReplicaFilter-Eigenschaft (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
@@ -28,7 +28,7 @@ Legt einen Wert für ein **[TableDef](tabledef-object-dao.md)** -Objekt in einem
 
 *Ausdruck* . ReplicaFilter
 
-*Ausdruck* Eine Variable, die ein **TableDef** -Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **TableDef**-Objekt darstellt.
 
 ## <a name="remarks"></a>Bemerkungen
 

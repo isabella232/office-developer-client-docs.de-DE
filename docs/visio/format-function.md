@@ -6,23 +6,23 @@ ms.audience: Developer
 ms.topic: reference
 f1_keywords:
 - Vis_DSS.chm82251424
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 52f5ef4d-07c6-ab36-bf74-b30b50eea221
-description: Gibt das Ergebnis des Ausdrucks als Zeichenfolge zurück, die gemäß formatpicture formatiert ist.
-ms.openlocfilehash: 5eb2195c2bc52e9cc8e7aa8bc4068826a5cd14c5
-ms.sourcegitcommit: 8657170d071f9bcf680aba50b9c07f2a4fb82283
+description: Gibt das Ergebnis des Ausdrucks als Zeichenfolge zurück, die entsprechend formatpicture formatiert ist.
+ms.openlocfilehash: bc5af650fdb4f5012963206f24a56d4bdd1c2592
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33404652"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618945"
 ---
 # <a name="format-function"></a>FORMAT Function
 
-Gibt das Ergebnis des _Ausdrucks_ als Zeichenfolge zurück, die gemäß _formatpicture formatiert ist._
+Gibt das Ergebnis des  _Ausdrucks_ als Zeichenfolge zurück, die entsprechend  _formatpicture_ formatiert ist.
   
 ## <a name="syntax"></a>Syntax
 
-FORMAT(** *Expression* **," ** *formatpicture* ** ") 
+FORMAT(** *Ausdruck* **," ** *formatpicture* ** ") 
   
 ### <a name="parameters"></a>Parameter
 
@@ -35,11 +35,11 @@ FORMAT(** *Expression* **," ** *formatpicture* ** ")
 
 Zeichenfolge
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Der Typ des Ausdrucks und der in der Formatierungsangabe angegebene Typ bestimmen das Verhalten der zurückgegebenen Zeichenfolge. Das  _Formatpicture_ muss für den Ausdruckstyp geeignet sein. Weitere Informationen zum Angeben von Formatbildern finden Sie unter [Informationen zum Formatieren von Bildern](about-format-pictures.md).
+Der Typ des Ausdrucks und der in der Formatierungsangabe angegebene Typ bestimmen das Verhalten der zurückgegebenen Zeichenfolge. Die  _Formatierung_ muss für den Ausdruckstyp geeignet sein. Weitere Informationen zum Angeben von Formatbildern finden Sie unter [Informationen zum Formatieren](about-format-pictures.md)von Bildern.
   
-Gibt einen Fehler zurück, wenn das Ergebnis des Ausdrucks und der in _formatpicture_ erwartete Typ eine andere Art sind oder wenn Syntaxfehler in  _formatpicture vorliegen._
+Gibt einen Fehler zurück, wenn das Ergebnis des  _Ausdrucks_ und der erwartete Typ in  _"formatpicture"_ einen anderen Typ haben oder wenn Syntaxfehler in  _"formatpicture"_ vorhanden sind.
   
 ## <a name="example-1"></a>Beispiel 1
 

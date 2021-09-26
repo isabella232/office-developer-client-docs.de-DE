@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249327(v=office.15)
 ms:contentKeyID: 48545100
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Normal
-ms.openlocfilehash: 38183cd8306f2425a362bd2650639120a2d16845
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: medium
+ms.openlocfilehash: bec6427627697750d3c8e0ee82c32c3818e06e53
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32288967"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611973"
 ---
 # <a name="microsoft-ole-db-provider-for-internet-publishing"></a>Microsoft OLE DB Provider for Internet Publishing
 
@@ -20,7 +20,7 @@ ms.locfileid: "32288967"
 
 Der Microsoft OLE DB-Anbieter für Internet Publishing ermöglicht ADO den Zugriff auf Ressourcen, die von Microsoft FrontPage oder Microsoft Internet Information Server bedient werden. Zu den Ressourcen zählen Webquelldateien wie HTML-Dateien oder Windows 2000-Webordner.
 
-## <a name="connection-string-parameters"></a>Verbindungszeichenfolgen-Parameter
+## <a name="connection-string-parameters"></a>Parameter für Verbindungszeichenfolgen
 
 Um eine Verbindung mit diesem Anbieter herzustellen, legen Sie das *Provider*-Argument der [ConnectionString](connectionstring-property-ado.md)-Eigenschaft fest auf:
 
@@ -40,7 +40,7 @@ Eine typische Verbindungszeichenfolge für diesen Anbieter lautet:
 "Provider=MSDAIPP.DSO;Data Source=ResourceURL;User ID=userName;Password=userPassword;" 
 ```
 
-\-oder
+\-oder-
 
 ```vb 
  

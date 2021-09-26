@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: reference
 ms.prod: office-online-server
-localization_priority: Normal
+ms.localizationpriority: medium
 api_name:
 - IPSTOVERRIDEREQ.RegisterTrustedPSTOverrideHandler
 api_type:
 - COM
 ms.assetid: 4a73c77c-7e32-4302-bffe-a1ea13574731
-description: 'Letzte Änderung: 24. Februar 2013'
-ms.openlocfilehash: acc0986dd80b549b0cb2b941a6937d47a4a959fe
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+description: 'Last modified: February 24, 2013'
+ms.openlocfilehash: c7c074bbfb365d8a975bee12c5611c4d0809dc1e
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32279535"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59620534"
 ---
 # <a name="ipstoverridereqregistertrustedpstoverridehandler"></a>IPSTOVERRIDEREQ::RegisterTrustedPSTOverrideHandler
 
@@ -25,7 +25,7 @@ ms.locfileid: "32279535"
   
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Initiiert die Entsperrprozedur für eine Datei mit persönlichen Ordnern (PST).
+Initiiert die Entsperrungsprozedur für eine persönliche Ordnerdatei (PST).
   
 ```cpp
 HRESULT RegisterTrustedPSTOverrideHandler (
@@ -51,9 +51,9 @@ S_OK
   
 > Der Funktionsaufruf war erfolgreich.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Die vom wzDllPath-Parameter angegebene DLL muss mit einem digitalen Zertifikat signiert werden. Die DLL muss auch eine Funktion mit der folgenden Signatur exportieren.
+Die durch den wzDllPath-Parameter angegebene DLL muss mit einem digitalen Zertifikat signiert werden. Die DLL muss auch eine Funktion mit der folgenden Signatur exportieren.
   
 ```
 extern "C" HRESULT __cdecl HrTrustedPSTOverrideHandlerCallback(IMsgStore *pmstore, IUnknown *pOverride, LPVOID pvClientData)
@@ -61,7 +61,7 @@ extern "C" HRESULT __cdecl HrTrustedPSTOverrideHandlerCallback(IMsgStore *pmstor
 
 Diese Funktion wird mit einem Zeiger auf das IMsgStore-Objekt für das PST, einem Zeiger auf ein IUnknown-Objekt, das die IPSTOVERRIDE1-Schnittstelle implementiert, und einem Zeiger auf die ursprünglich über pvClientData bereitgestellten Daten aufgerufen.
   
-Weitere Informationen finden Sie unter Implementieren eines PST-Außerkraftsetzungshandlers zum Umgehen der [PSTDisableGrow-Richtlinie in Outlook 2007](https://support.microsoft.com/kb/956070).
+Weitere Informationen finden Sie unter [Implementieren eines PST-Überschreibungshandlers zum Umgehen der PSTDisableGrow-Richtlinie in Outlook 2007.](https://support.microsoft.com/kb/956070)
   
 ## <a name="see-also"></a>Siehe auch
 
