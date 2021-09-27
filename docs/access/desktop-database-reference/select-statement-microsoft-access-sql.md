@@ -8,13 +8,13 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 dev_langs:
 - sql
-localization_priority: Priority
-ms.openlocfilehash: 962e425c2c69511b6d7770fb03e954588249cf2a
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: 0a407c6b164f2558be46ab2804693121ba07a5c1
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32314637"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593635"
 ---
 # <a name="select-statement-microsoft-access-sql"></a>SELECT-Anweisung (Microsoft Access SQL)
 
@@ -24,7 +24,7 @@ Weist das Microsoft Access-Datenbankmodul an, Informationen aus der Datenbank al
 
 ## <a name="syntax"></a>Syntax
 
-SELECT \[*predicate*\] { \* | *table*.\* | \[*table*.\]*field1* \[AS *alias1*\] \[, \[*table*.\]*field2* \[AS *alias2*\] \[, …\]\]} FROM *tableexpression* \[, …\] \[IN *externaldatabase*\] \[WHERE… \] \[GROUP BY… \] \[HAVING… \] \[ORDER BY… \] \[WITH OWNERACCESS OPTION\]
+AUSWÄHLEN \[*Prädikat*\] { \* | *Tabelle*.\* | \[*Tabelle*.\]*Feld 1* \[WIE *Alias1*\] \[, \[*Tabelle*.\]*Feld2* \[WIE *Alias2*\] \[, …\]\]} AUS *Tabellenausdruck* \[, …\] \[IN *Externe Datenbank*\] \[WO… \] \[GRUPPIEREN NACH… \] \[HABEN… \] \[ORDNEN NACH… \] \[MIT BESITZERZUGRIFFSOPTION\]
 
 Die SELECT-Anweisung besteht aus folgenden Teilen:
 

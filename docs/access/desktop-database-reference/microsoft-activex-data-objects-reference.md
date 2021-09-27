@@ -4,15 +4,15 @@ TOCTitle: Microsoft ActiveX Data Objects Reference
 ms:assetid: 235fc575-8a2e-913c-fa3d-bb86256733f9
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249010(v=office.15)
 ms:contentKeyID: 48543728
-ms.date: 09/18/2015
+ms.date: 09/18/2021
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: c1fee657c0d6ecd319157f704df2b1c5a900be3b
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 0a6e7090b1be0e5c31d670e7ff5c524f8c68e8cb
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32289119"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606611"
 ---
 # <a name="microsoft-activex-data-objects-reference"></a>Referenz zu Microsoft ActiveX Data Objects
 
@@ -43,8 +43,3 @@ ADOX ist eine Begleitbibliothek zu ADO-Kernobjekten. Hiermit werden zusätzliche
 - [Leitfaden für Programmierer](ado-programmer-s-guide.md): Eine Einführung in die Verwendung von ADO, RDS, ADO MD und ADOX.
 
 - [Referenz für Programmierer](ado-programmer-s-reference-topics.md)Dieser Abschnitt der ADO-Dokumentation behandelt Themen zu den verschiedenen Objekten, Auflistungen, Eigenschaften, dynamischen Eigenschaften, Methoden, Ereignissen und Aufzählungen von ADO, RDS, ADO MD und ADOX.
-
-## <a name="feedback"></a>Feedback
-
-Feedback zu ADO-Dokumentation oder Beispielen können Sie direkt an das ADO-Dokumentationsteam senden.
-

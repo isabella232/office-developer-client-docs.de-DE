@@ -41,13 +41,13 @@ keywords:
 - Webdienst, Kalender,Authentifizierung, Web-Dienst,Ressourcenplan, Web-Dienst,Statusberichte, Web-Dienst,PSI, Namespaces,Ereignishandler, Project Server,Web-Dienst, Benachrichtigungen,Warteschlangensystem, Web-Dienst,Project 2013, Plattform,AnmeldungWindows, Web-Dienst,Web-Dienst, Statuserfassung,Web-Dienst, Ressource,WinProj, Web-Dienst,WssInterop, Web-Dienst,Web-Dienst, Winproj,Ereignishandler,Suchtabelle, Web-Dienst,PWA, Web-Dienst, Sicherheit,Benachrichtigungen, Web-Dienst,Web-Dienst, Arbeitszeittabelle,Web-Dienst, Warteschlangensystem,PSI, Web-Dienste,Web-Dienst, Ereignisse,PSI, Programmierung,Web-Dienst, Suchtabelle,Version, Web-Dienst,Benutzerdefinierte Felder, Web-Dienst,Web-Dienst, PWA,PSI,Ressource, Web-Dienst,Web-Dienst, Ressourcenplan,Arbeitszeittabelle, Web-Dienst,Web-Dienst, Regeln,PSI, verwaltete Codereferenz,Sicherheit, Web-Dienst,Web-Dienst, Benutzerdefinierte Felder,URL, für PSI,Web-Dienst, WssInterop,Web service, Admin,Web reference, PSI,Web-Dienst, Cube-Administrator,Ansicht, Web-Dienst,Kalender, Web-Dienst,Web-Dienst, Ansicht,Admin, Web-Dienst,Anmeldeformulare, Web-Dienst,Web-Dienst, Anmeldeformulare,PSI, URLs,Objektlinkprovider, Web-Dienst,Archiv, Web,Cube-Administrator, Web-Dienst,Regeln, Web-Dienst,Web-Dienst, Authentifizierung,Web-Dienst, PSI,Project Server, Ereignisse,ereignisse, Web-Dienst,Web-Dienst, Projekt,Statuserfassung, Web-Dienst,Web-Dienst, Objektlinkprovider,Project Server Interface,Webmethoden, PSI,Web-Dienst, Statusberichte,Web-Dienst, Archiv,Projekt, Web-Dienst,Web-Dienst, AnmeldungWindows
 ms.assetid: d3c33089-0cbe-48c3-bfc0-0be819ca4d73
 description: Die Project Server Interface (PSI) ist die API, die zum Entwickeln von Anwendungen verwendet wird, die in der lokalen Version von Project Server 2013 integriert sind.
-localization_priority: Priority
-ms.openlocfilehash: 178f050022916ac1d26bd3d71f0ac5210c92295d
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 06753b6172b478302ac611a22031c8b0deb75d5f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32301558"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59629011"
 ---
 # <a name="project-psi-reference-overview"></a>Übersicht über die Project PSI-Referenz
 
@@ -126,7 +126,7 @@ Die [Project Server 2013-Klassenbibliotheks- und -Webdienstreferenz](https://msd
     
   - **Microsoft.Office.Project.Server.Base** Die Klassen und Mitglieder dieses Namespaces werden intern als Basisklassen verwendet und sind nicht dokumentiert. 
     
-  - **Microsoft.Office.Project.Server.Library.FilterSchema **Dieser Namespace wird intern zum Generieren vom Filterschemas verwendet und ist nicht dokumentiert. 
+  - **Microsoft.Office.Project.Server.Library.FilterSchema** Dieser Namespace wird intern zum Generieren vom Filterschemas verwendet und ist nicht dokumentiert. 
     
 - **Microsoft.Office.Project.Server.Workflow.dll** Diese Assembly wird für ältere Project Server 2010-Workflows verwendet, die weiterhin in Project Server 2013 funktionieren können. Zum Erstellen von neuen Workflows sollten Sie SharePoint Designer 2013 verwenden, oder Sie können Sie auch Visual Studio 2012 mit der [Microsoft.ProjectServer.Client.WorkflowActivities](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.WorkflowActivities.aspx)-Klasse verwenden. Die Assembly Microsoft.Office.Project.Server.Workflow.dll-Assembly enthält die folgenden drei Namespaces: 
     
@@ -136,11 +136,11 @@ Die [Project Server 2013-Klassenbibliotheks- und -Webdienstreferenz](https://msd
     
     Eine benutzerdefinierte Workflowaktivität erfordert einen Verweis auf **Microsoft.Office.Project.PWA** für den Zugriff auf alle Klassen in den PSI-Diensten. Beispielsweise enthält die Klasse **Microsoft.Office.Project.PWA.PSI** die Eigenschaft **ProjectWebService**, die einen Proxy für den [WebSvcProject](https://msdn.microsoft.com/library/WebSvcProject.aspx)-Namespace abruft. 
     
-  - **Microsoft.Office.Project.Server.WebServiceProxy** Dieser Namespace umfasst interne Proxyklassen für die primäre Klasse in jedem PSI-Dienst. Durch Verwendung der erhöhten Berechtigungen des Workflowbenutzers kann der Workflow PSI-Methoden über Proxyklassen aufrufen. Die Proxyklassen sind nicht dokumentiert. 
+  - **Microsoft.Office.Project.Server.WebServiceProxy** Dieser Namespace umfasst interne Proxyklassen für die primäre Klasse in jedem PSI-Dienst. Durch Verwendung der erhöhten Berechtigungen des Workflowbenutzers, kann der Workflow PSI Methoden über Proxyklassen aufrufen. Die Proxyklassen sind nicht dokumentiert. 
     
 - **Microsoft.Office.Project.Server.Events.Receivers.dll**[Microsoft.Office.Project.Server.Events](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Events.aspx) ist der einzige Namespace in dieser Assembly. Er enthält Ereignisempfänger und Ereignisargumentklassen für die PSI-Dienste und andere interne Klassen. 
     
-  Entwickler schreiben Ereignishandler, die sich aus den Ereignisempfängerklassen ableiten. Die meisten der primären Klassen in den PSI-Diensten verfügen über eine entsprechende Ereignisempfängerklasse. Die **ProjectEventReceiver**-Klasse enthält zum Beispiel Empfängermethoden vor dem Ereignis und nach dem Ereignis, die mit den Methoden in der **Project**-Klasse in der PSI übereinstimmen. Die **OnCreating**-Methode und die **OnCreated**-Methode sind die Empfängermethoden vor dem Ereignis und nach dem Ereignis für die **QueueCreateProject**-Methode. 
+  Entwickler schreiben Ereignishandler, die sich aus den Ereignisempfängerklassen ableiten. Die meisten der primären Klassen in den PSI-Diensten verfügen über eine entsprechende Ereignisempfängerklasse. Beispielsweise enthält die Klasse **ProjectEventReceiver** Pre-Event- und Post-Event-Empfängermethoden, die den Methoden in der **Project**-Klasse in der PSI entsprechen. Die Methode **OnCreating** und die Methode **OnCreated** sind Pre-Event- und Post-Event-Empfängermethoden für die **QueueCreateProject**-Methode. 
     
   Entwickler verwenden in der Regel die folgenden Ereignisempfängerklassen:
   <br/>  
@@ -229,7 +229,7 @@ Im Folgenden werden alle Klassen aufgeführt, die Webmethoden in den PSI-Dienste
     
 9. **ExchangeSync** Hierbei handelt es sich um einen internen Project Server-Dienst, der Exchange Server-Ereignisse verarbeitet. Project Web App verwendet **ExchangeSync** zum Synchronisieren von Aufgaben zwischen Project Server und Exchange Server, statt eine direkte Synchronisierung mit dem Outlook-Client durchzuführen wie in Office Project Server 2007. 
     
-    Der Zugriff auf den **ExchangeSync**-Dienst steht nur über die **ProjectServiceApplication**-URL zur Verfügung. Die **ExchangeSync**-Klassen und -Mitglieder werden nicht für die Entwicklung durch Drittanbieter unterstützt. 
+    Der Zugriff auf den **ExchangeSync**-Dienst steht nur über die **ProjectServiceApplication**-URL zur Verfügung. Die **ExchangeSync**-Klassen und -Member werden für die Drittanbieterentwicklung nicht unterstützt. 
     
 10. [LoginForms](https://msdn.microsoft.com/library/WebSvcLoginForms.LoginForms.aspx) Stellt die **Login**- und **Logoff**-Methoden mit formularbasierter Authentifizierung bereit. Der Zugriff auf den **LoginForms**-Dienst steht nur auf einer Project Web App-Front-End-Website zur Verfügung. 
     
@@ -245,9 +245,9 @@ Im Folgenden werden alle Klassen aufgeführt, die Webmethoden in den PSI-Dienste
 14. [ObjectLinkProvider](https://msdn.microsoft.com/library/WebSvcObjectLinkProvider.ObjectLinkProvider.aspx) Verwaltet Webobjekte und Links für Dokumente und Listenelemente auf SharePoint-Websites. Erstellt, löscht oder liest Projekt-, projektverknüpfte, Aufgaben- oder aufgabenverknüpfte Webobjekte. 
     
     > [!NOTE]
-    > Der **ObjectLinkProvider**-Dienst ist in Project Server 2013 veraltet. Weitere Informationen finden Sie im Abschnitt *Veraltete Features[ unter ](updates-for-developers-in-project-2013.md)Updates für Entwickler in Project 2013*. 
+    > Der **ObjectLinkProvider**-Dienst ist in Project Server 2013 veraltet. Weitere Informationen finden Sie im Abschnitt *Veraltete Features [ unter](updates-for-developers-in-project-2013.md)Updates für Entwickler in Project 2013*. 
   
-15. **OData** Stellt die interne **OData**-Schnittstelle für Berichtstabellen und Ansichten bereit. Der Zugriff auf den **OData**-Dienst steht nur über die Back-End-**ProjectServiceApplication**-URL zur Verfügung. Der private **OData**-Dienst in der PSI enthält eine Methode, **ODataClient.ProcessOdataMessage**, die Project Server intern zur Verarbeitung von Anforderungen für die Berichtsdaten verwendet. Die HTTP-Anforderungen laufen durch den Front-End-**ProjectData**-Dienst. 
+15. **OData** Stellt die interne **OData**-Schnittstelle für Berichtstabellen und Ansichten bereit. Der Zugriff auf den **OData**-Dienst steht nur über die **ProjectServiceApplication**-Back-End-URL zur Verfügung. Der private **OData**-Dienst in der PSI bietet die Methode **ODataClient.ProcessOdataMessage**, die Project Server intern zum Verarbeiten von Anforderungen für Berichtsdaten verwendet. Die HTTP-Anforderungen durchlaufen den **ProjectData**-Front-End-Dienst. 
     
     Weitere Informationen über den **ProjectData**-Dienst und das OData-Protokoll zum Lesen von Berichtsdaten finden Sie unter [ProjectData – OData-Dienstreferenz für Project](https://msdn.microsoft.com/library/office/jj163015.aspx).
     
@@ -265,7 +265,7 @@ Im Folgenden werden alle Klassen aufgeführt, die Webmethoden in den PSI-Dienste
     
 20. **PWA** Enthält viele für Project Web App optimierte Methoden, einschließlich der Methoden für die Aufgabenaktualisierungs-Genehmigungsregeln und für die Verwaltung von Statusberichten. Die **PWA**-Methoden sind häufig spezialisiert und redundant im Vergleich zu entsprechenden Methoden in anderen PSI-Diensten. **PWA**-Methoden verwenden viele der gleichen Datasets wie andere PSI-Methoden oder geben diese zurück. 
     
-    Der Zugriff auf den **PWA**-Dienst steht nur über die **ProjectServiceApplication**-URL zur Verfügung. Die **PWA**-Klassen und -Mitglieder werden nicht für die Entwicklung durch Drittanbieter unterstützt. 
+    Der Zugriff auf den **PWA**-Dienst steht nur über die **ProjectServiceApplication**-URL zur Verfügung. Die **PWA**-Klassen und -Member werden für die Drittanbieterentwicklung nicht unterstützt. 
     
 21. [QueueSystem](https://msdn.microsoft.com/library/WebSvcQueueSystem.QueueSystem.aspx) Verwaltet die Project Server-Warteschlange. Nimmt den Abruf der Auftragsanzahl, der Auftrags- und Auftragsgruppen-Wartezeit, des Status sämtlicher Aufträge, von angegebenen Aufträgen, von Aufträgen, die dem Aufrufer gehören, oder von Aufträgen für angegebene Projekte vor. Verwaltet die Auftragskorrelation und konfiguriert die Warteschlange. 
     
@@ -283,21 +283,21 @@ Im Folgenden werden alle Klassen aufgeführt, die Webmethoden in den PSI-Dienste
     
 27. **View** Der **View**-Dienst wurde für die ausschließliche Verwendung in Project Web App entwickelt. Methoden in der **View**-Klasse verwalten Ansichten, zeigen Berichte an und lesen Felder in Ansichten. 
     
-    Der Zugriff auf den **View**-Dienst steht nur über die **ProjectServiceApplication**-URL zur Verfügung. Die **View**-Methoden werden nicht für die Drittanbieterentwicklung unterstützt. 
+    Der Zugriff auf den **View**-Dienst steht nur über die **ProjectServiceApplication**-URL zur Verfügung. Die **View**-Methoden werden für die Drittanbieterentwicklung nicht unterstützt. 
     
-28. **WinProj** Der **WinProj**-Dienst wurde für die ausschließliche Verwendung durch Project Professional entworfen. Drittanbieterentwickler sollten keine **WinProj**-Methoden für die Programmierung mit Project Server verwenden. 
+28. **WinProj** Der **WinProj**-Dienst wurde für die ausschließliche Verwendung durch Project Professional entworfen. Drittanbieterentwickler sollten **WinProj**-Methoden nicht für das Programmieren mit Project Server verwenden. 
     
     Einige **WinProj**-Methoden verwenden Datasets wie **ProjectRelationsDataSet** und **ResourceDataSet**, die der **Project**- und **Resource**-Dienst ebenfalls verwendet, für sie sind in Project Professional jedoch bestimmte Eigenschaften und Funktionen erforderlich. 
     
-    Der Zugriff auf den **WinProj**-Dienst steht nur über die **ProjectServiceApplication**-URL zur Verfügung. Die **WinProj**-Methoden werden nicht für die Drittanbieterentwicklung unterstützt. 
+    Der Zugriff auf den **WinProj**-Dienst steht nur über die **ProjectServiceApplication**-URL zur Verfügung. Die **WinProj**-Methoden werden für die Drittanbieterentwicklung nicht unterstützt. 
     
 29. [Workflow](https://msdn.microsoft.com/library/WebSvcWorkflow.Workflow.aspx) Umfasst die CRUD-Methoden für Enterprise-Projekttypen und für das Verwalten von Workflowphasen und -stufen. Führt Workflows aus, legt Statusinformationen fest und verwaltet PDP-Phasen in Bedarfsmanagementworkflows. Entwickler können zum Entwickeln von Workflows für Project Server SharePoint Designer 2013 für deklarative Workflows verwenden oder die Office Developer Tools für Visual Studio 2012 für die Entwicklung mit .NET Framework 4 und der [ Microsoft.ProjectServer.Client.WorkflowActivities](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.WorkflowActivities.aspx)-Klasse im CSOM. 
     
 30. [WssInterop](https://msdn.microsoft.com/library/WebSvcWssInterop.WssInterop.aspx) Verwaltet Projektwebsites. Erstellt und löscht Projektwebsites. Ruft Informationen ab und aktualisiert SharePoint-Einstellungen und -Verwaltungswebsites. Synchronisiert und aktualisiert die Mitgliedschaften und Gruppen von Projektwebsites. 
     
-Jeder Dienstnamespace umfasst alle **DataSet**-Schema- und Ereignishandlerklassen, die der Dienst verwendet. Bespielsweise beschreibt `Calendar.svc` (oder `Calendar.asmx?wsdl` für den ASMX-Webdienst) den **Calendar**-Dienst. Wenn Sie die Referenz **WebSvcCalendar** nennen, enthält der Proxy-Namespace die primäre **Calender**-Klasse mit den Methoden **CheckInCalendars**, ** CheckOutCalendars** und so weiter. Der **WebSvcCalendar**-Proxy-Namespace enthält auch die **CalendarDataSet**-Klasse und alle Unterklassen. 
+Jeder Dienstnamespace umfasst alle **DataSet**-Schema- und Ereignishandlerklassen, die der Dienst verwendet. Bespielsweise beschreibt `Calendar.svc` (oder `Calendar.asmx?wsdl` für den ASMX-Webdienst) den **Calendar**-Dienst. Wenn Sie die Referenz **WebSvcCalendar** nennen, enthält der Proxy-Namespace die primäre **Calender**-Klasse mit den Methoden **CheckInCalendars**, **CheckOutCalendars** und so weiter. Der **WebSvcCalendar**-Proxy-Namespace enthält auch die **CalendarDataSet**-Klasse und alle Unterklassen. 
   
-Einige dieser PSI-Dienste enthalten doppelte **DataSet**-Klassen. Der **Project**-Dienst und der **Statusing**-Dienst enthalten beispielsweise beide die **ProjectDataSet**-Klasse. Dies liegt daran, dass die Methoden in den Diensten **Project** und **Statusing** Verweise auf **ProjectDataSet** enthalten und die Proxyassemblys, die Sie beim Festlegen von Verweisen und Kompilieren einer Anwendung erstellen, die zugehörigen Datasets enthalten. Der **Project**-Dienst und **Statusing**-Dienst erfordern eventuell Werte für verschiedene Felder in der **ProjectDataSet.ProjectRow**-Klasse. 
+Einige PSI-Dienste enthalten doppelte **DataSet**-Klassen. Beispielsweise enthalten die Dienste **Project** und **Statusing** beide die Klasse **ProjectDataSet**. Dies liegt daran, dass die Methoden in den Diensten **Project** und **Statusing** Verweise auf **ProjectDataSet** enthalten und die Proxyassemblys, die Sie beim Festlegen von Verweisen und Kompilieren einer Anwendung erstellen, die zugehörigen Datasets enthalten. Für die Dienste **Project** und **Statusing** können Werte für unterschiedliche Felder in der Klasse **ProjectDataSet.ProjectRow** erforderlich sein. 
   
 Wenn Sie nach den Namespaces und Klassen des PSI-Verweises suchen, um beispielsweise die Webmethoden für den **Project**-Dienst anzuzeigen, erweitern Sie den Namespace **[Project web service]** in der Liste **Contents**, und erweitern Sie dann die **Project**-Klasse. 
   

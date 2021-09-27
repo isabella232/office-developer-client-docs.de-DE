@@ -6,13 +6,13 @@ ms.audience: Developer
 ms.topic: overview
 ms.assetid: 87926f7d-e1dc-41d5-8805-6ba91fc7b154
 description: 'Die Anwendungsschnittstelle umfasst Methoden, mit denen OneNote-Informationen und -Inhalte abgerufen, bearbeitet und aktualisiert werden können. Die Methoden sind in vier allgemeine Kategorien unterteilt:'
-localization_priority: Priority
-ms.openlocfilehash: 295db4fcb64541ccf461fbd8d48dc19b89e6b1f8
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.localizationpriority: high
+ms.openlocfilehash: ce17adddd93c0b57f57dbccaed4bb2149c855959
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34537822"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59625805"
 ---
 # <a name="application-interface-onenote"></a>Anwendungsschnittstelle (OneNote)
 
@@ -66,7 +66,7 @@ static void GetEntireHierarchy()
 
 |||
 |:-----|:-----|
-|**Beschreibung**|Ändert oder aktualisiert die Hierarchie der Notizbücher. Sie können z. B. Abschnitte oder Abschnittsgruppen in ein Notizbuch einfügen, ein neues Notizbuch hinzufügen, Abschnitte in einem Notizbuch verschieben, den Namen eines Abschnitts ändern, Seiten zu einem Abschnitt hinzufügen oder die Reihenfolge von Seiten in einem Abschnitt ändern.|
+|**Beschreibung**|Ändert oder aktualisiert die Hierarchie von Notebooks. Beispielsweise können Sie einem Notizbuch Abschnitte oder Abschnittsgruppen hinzufügen, ein neues Notizbuch hinzufügen, Abschnitte innerhalb eines Notizbuchs verschieben, den Namen eines Abschnitts ändern, einem Abschnitt Seiten hinzufügen oder die Reihenfolge von Seiten innerhalb von Abschnitten ändern.|
 |**Syntax**| `HRESULT UpdateHierarchy(`<br/>`[in]BSTR bstrChangesXmlIn,`<br/>`[in,defaultvalue(xsCurrent)] XMLSchema xsSchema);`|
 |**Parameter**| _bstrChangesXmlIn_ &ndash; Eine Zeichenfolge, die OneNote XML-Code enthält, der die vorzunehmenden Hierarchie-Änderungen angibt. Wenn Sie beispielsweise einen neuen Abschnitt einfügen möchten, können Sie ein **Section**-Element in die XML-Zeichenfolge einfügen, um anzugeben, wo der neue Abschnitt eingefügt werden soll. Wenn Sie den Namen eines vorhandenen Abschnitts ändern möchten, können Sie auch die gleiche Abschnitt-ID beibehalten und das **name**-Attribut im XML-Code ändern.<br/><br/>_xsSchema_ &ndash; (Optional) Die OneNote-Schemaversion der Zeichenfolge _bstrChangesXmln_. Dieser optionale Wert wird verwendet, um die Version des OneNote-XML-Schemas anzugeben, im dem sich die _bstrChangesXmlIn_-Zeichenfolge befindet. Wenn dieser Wert nicht angegeben ist, setzt OneNote voraus, dass sich die XML in der Schemaversion _xsCurrent_ befindet. <br/><br/>**HINWEIS**: Wir empfehlen Ihnen, eine Version von OneNote anzugeben (z. B. **xs2013**), statt **xsCurrent** zu verwenden oder es leer zu lassen, da das Add-In so mit zukünftigen Versionen von OneNote arbeiten kann.           |
    

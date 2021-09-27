@@ -6,24 +6,24 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff821459(v=office.15)
 ms:contentKeyID: 48546950
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: 931de7dfc2cfb80726aafe7077c6107ec65d2f40
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 35f1c5fe649b7ecb5509dd27f3a884d0f3879306
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300609"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606275"
 ---
 # <a name="recordseteof-property-dao"></a>Recordset.EOF Property (DAO)
 
 
 **Gilt für**: Access 2013, Office 2013
 
-Gibt einen Wert zurück, der angibt, ob die aktuelle Datensatzposition hinter dem letzten Datensatz in einem **Recordset**-Objekt liegt. Schreibgeschützter **boolescher** Wert.
+Gibt einen Wert zurück, der angibt, ob die aktuelle Datensatzposition hinter dem letzten Datensatz in einem **Recordset**-Objekt liegt. Schreibgeschützt **Boolesch**.
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck * .EOF
+*Ausdruck* .EOF
 
 *Ausdruck* Eine Variable, die ein **Recordset**-Objekt darstellt.
 

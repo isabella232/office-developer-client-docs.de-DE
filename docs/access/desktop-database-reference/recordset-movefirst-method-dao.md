@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff192329(v=office.15)
 ms:contentKeyID: 48544109
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: 31d003d7ae98bf509aca8f24da9c37f0276af6fd
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: b09723b816525ac538de54c3a85df53260496959
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300238"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59585452"
 ---
 # <a name="recordsetmovefirst-method-dao"></a>Recordset.MoveFirst-Methode (DAO)
 
@@ -37,7 +37,7 @@ Beim Öffnen eines **Recordset**-Objekts ist der erste Datensatz aktuell, und di
 
 Wenn der erste oder letzte Datensatz bei Verwendung von **MoveFirst** oder **MoveLast** bereits aktuell ist, ändert sich der aktuelle Datensatz nicht.
 
-Wenn Recordset sich auf ein **Recordset** vom Typ "Tabelle" bezieht (nur Microsoft Access-Arbeitsbereiche), folgt die Bewegung dem aktuellen Index. You can set the current index by using the **Index** property. Wenn Sie den aktuellen Index nicht festlegen, ist die Reihenfolge der zurückgegebenen Datensätze nicht definiert.
+Wenn sich Recordset auf ein **Recordset** vom Typ Tabelle bezieht (nur Microsoft Access-Arbeitsbereiche), folgt die Bewegung dem aktuellen Index. Sie können den aktuellen Index mit der Eigenschaft **Index** festlegen. Wenn Sie den aktuellen Index nicht festlegen, ist die Reihenfolge der zurückgegebenen Datensätze undefiniert.
 
 Die Methoden **MoveFirst**, **MoveLast** und **MovePrevious** können für ein **Recordset**-Objekt vom Typ "Forward-only" nicht verwendet werden.
 

@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff184624(v=office.15)
 ms:contentKeyID: 55119869
 ms.date: 07/24/2014
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: 05d52f24262f08a6326d464a2dc0d57d6d0510d7
-ms.sourcegitcommit: e7b38e37a9d79becfd679e10420a19890165606d
+ms.localizationpriority: high
+ms.openlocfilehash: a39387994e84b1317b9abff26ba92b4df63ba4f9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34542548"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59629270"
 ---
 # <a name="get-the-smtp-address-of-the-sender-of-a-mail-item"></a>Abrufen der SMTP-Adresse des Absenders eines E-Mail-Elements
 
@@ -20,11 +20,12 @@ In diesem Beispiel wird die SMTP-Adresse (Simple Mail Transfer Protocol) des Abs
 
 ## <a name="example"></a>Beispiel
 
-Zum Ermitteln der SMTP-Adresse für ein empfangenes E-Mail-Element verwenden Sie die [SenderEmailAddress](https://msdn.microsoft.com/library/bb622746\(v=office.15\))-Eigenschaft des [MailItem](https://msdn.microsoft.com/library/bb643865\(v=office.15\))-Objekts. Befindet sich der Absender jedoch innerhalb Ihrer Organisation, gibt **SenderEmailAddress** keine SMTP-Adresse zurück, d. h. Sie müssen das [PropertyAccessor](https://msdn.microsoft.com/library/bb646034\(v=office.15\))-Objekt verwenden, damit die SMTP-Adresse des Absenders zurückgegeben wird.
+Zum Ermitteln der SMTP-Adresse für ein empfangenes E-Mail-Element verwenden Sie die [SenderEmailAddress](https://msdn.microsoft.com/library/bb622746\(v=office.15\)) -Eigenschaft des [MailItem](https://msdn.microsoft.com/library/bb643865\(v=office.15\)) -Objekts. Befindet sich der Absender jedoch innerhalb Ihrer Organisation, gibt **SenderEmailAddress** keine SMTP-Adresse zurück, d. h. Sie müssen das [PropertyAccessor](https://msdn.microsoft.com/library/bb646034\(v=office.15\)) -Objekt verwenden, damit die SMTP-Adresse des Absenders zurückgegeben wird.
 
 Im folgenden Codebeispiel ruft GetSenderSMTPAddress mithilfe des **PropertyAccessor**-Objekts Werte ab, die im Outlook-Objektmodell nicht direkt verfügbar gemacht werden. GetSenderSMTPAddress verwendet ein **MailItem**. Ist der Wert der [SenderEmailType](https://msdn.microsoft.com/library/bb624136\(v=office.15\)) -Eigenschaft des empfangenen **MailItem**-Elements "EX", befindet sich der Absender der Nachricht auf einem Exchange-Server innerhalb Ihrer Organisation. GetSenderSMTPAddress ruft mithilfe der [Sender](https://msdn.microsoft.com/library/ff184720\(v=office.15\))-Eigenschaft des **MailItem**-Objekts den Absender ab, der durch das [AddressEntry](https://msdn.microsoft.com/library/bb609728\(v=office.15\))-Objekt dargestellt wird. Stellt das **AddressEntry**-Objekt einen Exchange-Benutzer dar, wird im Beispielcode die [GetExchangeUser()](https://msdn.microsoft.com/library/bb611808\(v=office.15\)) -Methode aufgerufen, damit das [ExchangeUser](https://msdn.microsoft.com/library/bb609574\(v=office.15\)) -Objekt des **AddressEntry**-Objekts zurückgegeben wird. Anschließend verwendet GetSenderSMTPAddress die [PrimarySmtpAddress](https://msdn.microsoft.com/library/bb645506\(v=office.15\))-Eigenschaft des **ExchangeUser**-Objekts, um die SMTP-Adresse des Absenders zurückzugeben. Stellt das **AddressEntry**-Objekt für den Absender kein **ExchangeUser**-Objekt dar, wird die [GetProperty(String)](https://msdn.microsoft.com/library/bb645726\(v=office.15\))-Methode des **PropertyAccessor**-Objekts mit **PR\_SMTP\_ADDRESS** ([PidTagSmtpAddress](https://msdn.microsoft.com/library/cc842421\(v=office.15\))) als Argument verwendet, um die SMTP-Adresse des Absenders zurückzugeben.
 
-Wenn Sie Visual Studio verwenden, um dieses Codebeispiel zu testen, müssen Sie der Microsoft Outlook 15.0-Objektbibliothekkomponente zuerst einen Verweis hinzufügen und die Outlook-Variable angeben, wenn Sie den **Microsoft.Office.Interop.Outlook**-Namespace importieren. Die **using**-Anweisung darf im Codebeispiel nicht direkt vor den Funktionen stehen, sondern muss vor der öffentlichen Class-Deklaration hinzugefügt werden. Die folgende Codezeile zeigt, wie Sie den Import und die Zuweisung in C\# vornehmen.
+Wenn Sie Visual Studio verwenden, um dieses Codebeispiel zu testen, müssen Sie der Microsoft Outlook 15.0-Objektbibliothekkomponente zuerst eine Referenz hinzufügen und die Outlook-Variable angeben, wenn Sie den **Microsoft.Office.Interop.Outlook** -Namespace importieren. Die Anweisung **in Verwendung mit** darf im Codebeispiel nicht direkt vor den Funktionen stehen, sondern muss vor der öffentlichen Class-Deklaration hinzugefügt werden. Die folgende Codezeile zeigt, wie Sie den Import und die Zuweisung in C\# vornehmen.
+
 
 ```csharp
 using Outlook = Microsoft.Office.Interop.Outlook;

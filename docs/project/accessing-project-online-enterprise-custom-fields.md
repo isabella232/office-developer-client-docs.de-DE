@@ -5,13 +5,13 @@ ms.date: 11/08/2016
 ms.audience: Developer
 ms.assetid: 25509631-fa14-49d8-b594-cfacf5355c38
 description: 'Project Online ist ein Office 365-Dienst, den Unternehmen erweitern können, um Geschäftsanforderungen zu erfüllen. Ein Erweiterungsbereich sind benutzerdefinierte Enterprise-Felder (Enterprise Custom Fields, ECFs). ECFs sind typbehaftete Wertfelder, die Projekten, Ressourcen und Aufgaben hinzugefügt werden können. In der folgenden Tabelle sind ECFs, die mit Projekten, Ressourcen und Aufgaben verknüpft sind, und jeweils ein Beispiel eines Werts für eine Instanz des jeweiligen ECF aufgelistet:'
-localization_priority: Priority
-ms.openlocfilehash: 9f754f1446890ae021bf6f7000ffba11e2a2df33
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: a445d15adb82c5cb770bf81403ef53a6eb33e012
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32355083"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613205"
 ---
 # <a name="accessing-project-online-enterprise-custom-fields"></a>Zugreifen auf benutzerdefinierte Project Online-Enterprise-Felder
 
@@ -70,7 +70,7 @@ Das pwaECF-Wörterbuch speichert die Projekt-ECFs, die auf der PWA-Ebene definie
 
 ## <a name="main-method"></a>"Main"-Methode
 
-Die "Main"-Methode verwaltet den Datenfluss der Anwendung. Wie bei anderen Anwendungen, in denen das Project Online-CSOM verwendet wird, initialisiert "Main" den Projektkontext. 
+Die Main-Methode verwaltet den Anwendungsfluss. Wie bei anderen Anwendungen, die das Project Online CSOM verwenden, initialisiert Main den Projektkontext. 
   
 1. Rufen und Sie die ECFs in der Project Online-PWA-Instanz ab, und listen Sie sie auf.
     
@@ -117,7 +117,7 @@ Die "Main"-Methode verwaltet den Datenfluss der Anwendung. Wie bei anderen Anwen
     
    Die ECF-Eigenschaften werden, anders als die Feldwerte, in "CustomField"-Objekten gespeichert, ein Objekt pro Projekt. Verwenden Sie eine "CustomFields"-Sammlung, um auf die ECFs zuzugreifen, die mit einem einzelnen Projekt verknüpft sind. 
     
-5. In jedem Projekt werden die zugehörigen ECFs in einer Sammlung gespeichert, in der jeder Eintrag aus einem Schlüssel – der interne Name des ECF – und einem Objekt besteht, das den Wert des ECF enthält. Überführen Sie die Sammlung in ein Wörterbuch, um auf einzelne Einträge zuzugreifen. Die Deklaration folgt.
+5. In jedem Projekt werden die zugehörigen ECFs in einer Sammlung gespeichert, in der jeder Eintrag aus einem Schlüssel – dem internen Namen des ECF – und einem Objekt besteht, das den Wert des ECF enthält. Übertragen Sie die Sammlung in ein Wörterbuch, um auf einzelne Einträge zuzugreifen. Die Deklaration folgt.
     
    ```cs
     Dictionary<string, object> projDict = pubProj.IncludeCustomFields.FieldValues;
@@ -205,7 +205,7 @@ Die Methode überprüft nicht, ob für ein Projekt ein bestimmtes ECF verwendet 
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Project-Entwicklungsportal](https://developer.microsoft.com/de-DE/project)
+- [Project-Entwicklungsportal](https://developer.microsoft.com/en-us/project)
 - [Übersicht: Benutzerdefinierte Enterprise-Felder und Nachschlagetabellen](https://support.office.com/en-us/article/overview-enterprise-custom-fields-and-lookup-tables-f99db553-0b33-4648-93c0-f6a74637d790?ui=en-us&rs=en-us&ad=us)
 - [Local and Enterprise Custom Fields](https://msdn.microsoft.com/library/office/ms447495(v=office.14).aspx)
 - [Hinzufügen oder Bearbeiten benutzerdefinierter Enterprise-Felder in Project Server 2013](https://docs.microsoft.com/project/add-or-edit-enterprise-custom-fields-in-project-server)

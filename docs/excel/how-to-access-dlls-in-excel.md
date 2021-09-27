@@ -8,13 +8,13 @@ keywords:
 - Zugreifen auf DLLs [excel 2007],DLLs [Excel 2007], Zugreifen in Excel
 ms.assetid: e2bfd6ea-efa3-45c1-a5b8-2ccb8650c6ab
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-localization_priority: Priority
-ms.openlocfilehash: fac4ad30048aa1bf3879009bc97ea46a112a9ce5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: c91fe1720e3990d2d496f8b130d8b7464585f470
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32304011"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59625931"
 ---
 # <a name="access-dlls-in-excel"></a>Zugreifen auf DLLs in Excel
 
@@ -77,7 +77,7 @@ Beachten Sie beim Vergleichen der Deklarationen von Argumenttypen in C/C++ und V
     
 - Der VBA-Datentyp **Currency** wird bei einer **ByVal**-Übergabe als Struktur des Typs **CY** übergeben (definiert in der Windows-Headerdatei "wtypes.h") und bei einer **ByRef**-Übergabe als Zeiger darauf.
     
-In VBA werden Datenelemente in benutzerdefinierten Datentypen für 4-Byte-Grenzen gepackt, in Visual Studio werden sie hingegen standardmäßig für 8-Byte-Grenzen gepackt. Daher müssen Sie die C/C++-Strukturdefinition in einen `#pragma pack(4) … #pragma pack()`-Block einschließen, um eine Fehlausrichtung der Elemente zu vermeiden. 
+In VBA werden Datenelemente in benutzerdefinierten Datentypen in 4-Byte-Grenzen gepackt, während in Visual Studio standardmäßig 8-Byte-Grenzen gepackt werden. Daher müssen Sie die C/C++-Strukturdefinition in einen `#pragma pack(4) … #pragma pack()` Block einschließen, um zu vermeiden, dass Elemente falsch ausgerichtet werden. 
   
 Nachfolgend finden Sie ein Beispiel für entsprechende Benutzertypdefinitionen.
   

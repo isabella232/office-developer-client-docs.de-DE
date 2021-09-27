@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff196428(v=office.15)
 ms:contentKeyID: 48545865
 ms.date: 10/16/2018
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: 329f184a1bcd3c856ccfd0b15c3fa92bc6230c98
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: 5bc5b4d9bc231cc7fcbb513170e802c307ffa76d
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291915"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59594195"
 ---
 # <a name="apply-a-custom-ribbon-to-a-form-or-report"></a>Anwenden eines benutzerdefinierten Menübands auf ein Formular oder einen Bericht
 
 **Gilt für**: Access 2013, Office 2013
 
-Das Menüband verwendet textbasiertes, deklaratives XML-Markup, das die Erstellung und Anpassung des Menübands vereinfacht. Mit ein paar XML-Zeilen können Sie genau die passende Benutzeroberfläche für den Benutzer erstellen. Access bietet Flexibilität beim Anpassen der Menüband-Benutzeroberfläche. 
+Das Menüband verwendet textbasiertes, deklaratives XML-Markup, das die Erstellung und Anpassung des Menübands vereinfacht. Mit ein paar XML-Zeilen können Sie genau die passende Benutzeroberfläche für den Benutzer erstellen. Der Zugriff bietet Flexibilität beim Anpassen der Menüband-Benutzeroberfläche.  
 
 So können Sie das Anpassungsmarkup zum Beispiel in einer Tabelle speichern, in eine VBA-Prozedur einbetten, in einer anderen Access-Datenbank speichern oder mit einem Excel-Arbeitsblatt verknüpfen. Dieses Thema beschreibt, wie angepasste Menübänder beim Laden eines Formulars oder eines Berichts angewendet werden.
 

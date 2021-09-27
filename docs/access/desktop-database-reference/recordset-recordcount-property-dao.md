@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff821452(v=office.15)
 ms:contentKeyID: 48546941
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: b9bdc243aae48bd928468362cb86ca077f4abe52
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 6c857c0723b4efdc14189192c7bdb9dc2b860fe6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307637"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59611819"
 ---
 # <a name="recordsetrecordcount-property-dao"></a>Recordset.RecordCount-Eigenschaft (DAO)
 
@@ -28,7 +28,7 @@ Returns the number of records accessed in a **[Recordset](recordset-object-dao.m
 
 ## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie die **RecordCount**-Eigenschaft, um herauszufinden, auf wie viele Datensätze in einem **Recordset**- oder **TableDef**-Objekt zugegriffen wurde. Die **RecordCount**-Eigenschaft gibt erst an, wie viele Datensätze in einem **Recordset**-Objekt vom "dynaset"-, "snapshot"- oder "forward-only"-Typ enthalten sind, wenn auf alle Datensätze zugegriffen wurde. Sobald auf den letzten Datensatz zugegriffen wurde, gibt die **RecordCount**-Eigenschaft die Gesamtzahl ungelöschter Datensätze im **Recordset**- oder **TableDef**-Objekt an. To force the last record to be accessed, use the **[MoveLast](recordset-movelast-method-dao.md)** method on the **Recordset** object. You can also use an SQL **Count** function to determine the approximate number of records your query will return.
+Verwenden Sie die **RecordCount**-Eigenschaft, um herauszufinden, auf wie viele Datensätze in einem **Recordset**- oder **TableDef**-Objekt zugegriffen wurde. Die **RecordCount**-Eigenschaft gibt erst an, wie viele Datensätze in einem **Recordset**-Objekt vom "dynaset"-, "snapshot"- oder "forward-only"-Typ enthalten sind, wenn auf alle Datensätze zugegriffen wurde. Sobald auf den letzten Datensatz zugegriffen wurde, gibt die **RecordCount**-Eigenschaft die Gesamtzahl ungelöschter Datensätze im **Recordset**- oder **TableDef**-Objekt an. Um den Zugriff auf den letzten Datensatz zu erzwingen, verwenden Sie die **[MoveLast](recordset-movelast-method-dao.md)**-Methode für das **Recordset**-Objekt. Sie können auch eine SQL-**Count**-Funktion verwenden, um die ungefähre Anzahl von Datensätzen zu bestimmen, die die Abfrage zurückgibt.
 
 > [!NOTE]
 > Die Verwendung der **MoveLast**-Methode zum Auffüllen eines neu geöffneten **Recordset**-Objekts hat negative Auswirkungen auf die Leistung. Sofern beim Öffnen eines **Recordset**-Objekts nicht sofort ein genauer **RecordCount**-Wert erforderlich ist, sollte das **Recordset**-Objekt mit anderen Codeteilen aufgefüllt werden, bevor die **RecordCount**-Eigenschaft geprüft wird.

@@ -10,13 +10,13 @@ f1_keywords:
 - dao360.chm1052887
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 1ebf963695b2d754a4501077e2236c52280a9a2e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 08c68c7ff58fb0dc0397ea7895f5efc58b99ccc9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32300651"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617668"
 ---
 # <a name="recordsetbookmark-property-dao"></a>Recordset.Bookmark-Eigenschaft (DAO)
 
@@ -33,13 +33,13 @@ Legt eine Textmarke fest oder gibt sie zurück. Sie identifiziert den aktuellen 
 
 ## <a name="remarks"></a>Bemerkungen
 
-Bei einem vollständig auf Microsoft Access-Datenbankmodultabellen basierenden **Recordset**-Objekt lautet der Wert der **Bookmarkable**-Eigenschaft True und Sie können die **Bookmark**-Eigenschaft mit diesem **Recordset** verwenden. Andere Datenbank-Produkte unterstützen Textmarken möglicherweise nicht. Sie können Textmarken nicht in beliebigen **Recordset** -Objekten verwenden, die auf einer verknüpften Paradox-Tabelle basieren, die keinen primären Schlüssel besitzt.
+Bei einem **Recordset** -Objekt, das vollständig auf Tabellen der Microsoft Access-Datenbank-Engine basiert, lautet der Wert der **Bookmarkable** -Eigenschaft „True“, und Sie können die **Bookmark** -Eigenschaft mit diesem **Recordset-** verwenden. Andere Datenbankprodukte unterstützen jedoch möglicherweise keine Lesezeichen. Beispielsweise können Sie Lesezeichen in keinem **Recordset-** -Objekt verwenden, das auf einer verknüpften Paradox-Tabelle basiert, die keinen Primärschlüssel aufweist.
 
 Beim Erstellen oder Öffnen eines **Recordset**-Objekts besitzt jeder Datensatz bereits eine eindeutige Textmarke. Sie können die Textmarke für den aktuellen Datensatz speichern, indem Sie der Variable den Wert der **Bookmark**-Eigenschaft zuweisen. Um jederzeit schnell zu dem Datensatz zurückkehren zu können, nachdem Sie einen anderen Datensatz verschoben haben, setzen Sie die **Bookmark**-Eigenschaft des **Recordset**-Objekts auf den Wert der Variable.
 
 Bei der Anzahl der Textmarken gibt es keine Begrenzung. Um eine Textmarke für einen anderen als den aktuellen Datensatz zu erstellen, verschieben Sie den gewünschten Datensatz und weisen Sie einer **String**-Variable den Wert der **Bookmark**-Eigenschaft zu, der den Datensatz identifiziert.
 
-Um sicherzustellen, dass das **Recordset**-Objekt Bookmarks unterstützt, überprüfen Sie den Wert der ** [Bookmarkable](recordset-bookmarkable-property-dao.md)**-Eigenschaft vor der Verwendung der **Bookmark**-Eigenschaft. Wenn die **Bookmarkable**-Eigenschaft den Wert False hat, unterstützt das **Recordset**-Objekt keine Lesezeichen, und die Verwendung der **Bookmark**-Eigenschaft führt zu einem auffangbaren Fehler.
+Um sicherzustellen, dass das **Recordset**-Objekt Lesezeichen unterstützt, überprüfen Sie den Wert seiner **[Bookmarkable](recordset-bookmarkable-property-dao.md)**-Eigenschaft, bevor Sie die **Bookmark**-Eigenschaft verwenden. Wenn die **Bookmarkable**-Eigenschaft „false“ ist, unterstützt das **Recordset-**-Objekt keine Lesezeichen, und die Verwendung der **Bookmark**-Eigenschaft führt zu einem abfangbaren Fehler.
 
 Wenn Sie die **[Clone](recordset-clone-method-dao.md)**-Methode verwenden, um eine Kopie eines **Recordset**-Objekts zu erstellen, sind die **Bookmark**-Eigenschaftseinstellungen für die ursorünglichen und die duplizierten **Recordset**-Objekte identisch und austauschbar. Textmarken aus unterschiedlichen **Recordset**-Objekten sind jedoch nicht austauschbar, selbst wenn sie mit dem gleichen Objekt oder der gleichen SQL-Anweisung erstellt wurden.
 

@@ -10,13 +10,13 @@ f1_keywords:
 - jetsql40.chm5277590
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: fb72a0090550692e7cf5028a6a58a078fc5d9d32
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 0c3e12a1ff9f02f3b2ad85ed47ee496b998b73c9
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308582"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59617412"
 ---
 # <a name="sql-data-types"></a>SQL-Datentypen
 
@@ -24,7 +24,7 @@ ms.locfileid: "32308582"
 
 Die SQL-Datentypen für das Microsoft Access-Datenbankmodul bestehen aus 13 primären Datentypen. Diese Datentypen werden von dem Microsoft Jet-Datenbankmodul und verschiedenen gültigen Synonymen für diese Datentypen definiert.
 
-In der folgenden Tabelle werden die primären Datentypen aufgeführt. Die Synonyme werden unter [Reservierte Wörter für das Microsoft Access-Datenbankmodul SQL](sql-reserved-words.md) angegeben.
+In der folgenden Tabelle werden die primären Datentypen aufgelistet. Die Synonyme werden unter [Reservierte Wörter für das Microsoft Access-Datenbankmodul SQL](sql-reserved-words.md) angegeben.
 
 <table>
 <colgroup>

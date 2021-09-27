@@ -5,13 +5,13 @@ ms.date: 08/10/2016
 ms.audience: Developer
 ms.assetid: 5ce73baa-dfb6-41d0-918d-b0c3a498815f
 description: Sie können das clientseitige Objektmodell (CSOM) von Project Server 2013 verwenden, um Project Online und lokale Lösungen mit .NET Framework 4 zu entwickeln. Dieser Artikel beschreibt, wie Sie eine Konsolenanwendung erstellen, die das CSOM zum Erstellen und Veröffentlichen von Projekten verwendet. Nach dem Veröffentlichen eines Projekts wartet die Anwendung, bis der Project Server-Warteschlangendienst die Veröffentlichung abgeschlossen hat und listet dann die veröffentlichten Projekte auf.
-localization_priority: Priority
-ms.openlocfilehash: b53587ca1959faefdc1b40f08c4adfda4ee11d70
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 19714f004ae39d830be5be9aa319e4692b860f3a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32360574"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59613184"
 ---
 # <a name="getting-started-with-the-project-server-csom-and-net"></a>Erste Schritte mit dem Project Server-CSOM und .NET
 
@@ -390,7 +390,7 @@ Aktualisieren Sie die Projektcenter-Seite in Project Web App (`https://ServerNam
 
 **Überprüfen der veröffentlichten Projekte in Project Web App**
 
-![Überprüfen die veröffentlichte Projekte in Project Web App](media/pj15_GetStartedCSOMNET_pwa.gif "Überprüfen die veröffentlichte Projekte in Project Web App")
+![Überprüfen der veröffentlichten Projekte in Project Web App](media/pj15_GetStartedCSOMNET_pwa.gif "Überprüfen der veröffentlichten Projekte in Project Web App")
   
 Die **QueueCreateProject**-Beispielanwendung zeigt ein typisches Beispiel für die Erstellung einer Projektentität mit dem CSOM anhand der **ProjectCreationInformation**-Klasse, wie Sie das Projekt zur veröffentlichten Auflistung hinzufügen, wie auf einen Auftrag in der Warteschlange mit der **WaitForQueue**-Methode auf einen Warteschlangenauftrag gewartet wird, und wie die Auflistung der veröffentlichten Projekte aufgelistet wird. 
   

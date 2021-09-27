@@ -10,13 +10,13 @@ f1_keywords:
 - jetsql40.chm5277563
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: dfcbbd55f2d20589849f63f260d40b507c8639f1
-ms.sourcegitcommit: b27eedbc4538f78ee15134bf19abbc319605c3bc
+ms.localizationpriority: high
+ms.openlocfilehash: 5aea8694c450764f686c226554041da13179aead
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/02/2019
-ms.locfileid: "36706173"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615725"
 ---
 # <a name="create-table-statement-microsoft-access-sql"></a>CREATE TABLE statement (Microsoft Access SQL)
 
@@ -25,7 +25,7 @@ ms.locfileid: "36706173"
 Erstellt eine neue Tabelle.
 
 > [!NOTE]
-> Das Microsoft Access-Datenbankmodul unterstützt nicht die Verwendung von CREATE TABLE oder einer der DDL-Anweisungen für Datenbanken, die nicht mit dem Microsoft Access-Datenbankmodul erstellt wurden. Verwenden Sie stattdessen die **Create**-Methoden von DAO.
+> Die Microsoft Konnektivitätsmodul für Access unterstützt nicht die Verwendung von CREATE TABLE oder einer der DDL-Anweisungen mit Datenbanken, die nicht zum Microsoft Konnektivitäsmodul für Access gehören. Verwenden Sie stattdessen die DAO **Create** -Methoden.
 
 ## <a name="syntax"></a>Syntax
 
@@ -75,7 +75,7 @@ Die CREATE TABLE-Anweisung setzt sich wie folgt zusammen:
 
 ## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie die CREATE TABLE-Anweisung, um eine neue Tabelle und deren Felder sowie Feldeinschränkungen zu definieren. Wenn für ein Feld NOT NULL angegeben ist, müssen neue Datensätze gültige Daten in diesem Feld aufweisen.
+Verwenden Sie die CREATE TABLE-Anweisung, um eine neue Tabelle und deren Felder und Feldeinschränkungen zu definieren. Wenn für ein Feld NOT NULL angegeben ist, müssen neue Datensätze gültige Daten in diesem Feld aufweisen.
 
 Eine CONSTRAINT-Klausel erstellt verschiedene Einschränkungen für ein Feld und kann zum Erstellen des Primärschlüssels verwendet werden. Sie können auch die [CREATE INDEX](create-index-statement-microsoft-access-sql.md)-Anweisung zum Erstellen eines Primärschlüssels oder zusätzlicher Indizes für vorhandene Tabellen verwenden.
 
@@ -85,7 +85,7 @@ Beim Erstellen der Tabelle vom Typ TEMPORARY ist diese nur in der Sitzung sichtb
 
 Das Attribut WITH COMPRESSION kann nur mit den Datentypen CHARACTER und MEMO (auch als TEXT bezeichnet) und deren Synonymen verwendet werden.
 
-Das Attribut WITH COMPRESSION wurde aufgrund der Änderung des Darstellungsformats von Unicode-Zeichen für Zeichenspalten hinzugefügt. Unicode-Zeichen benötigen jeweils zwei Byte, um jedes Zeichen zu speichern. Für vorhandene Microsoft Jet-Datenbanken, die überwiegend Zeichendaten enthalten, kann dies bedeuten, dass die Datenbankdatei bei Konvertierung in das Microsoft Access-Datenbankformat ihre Größe nahezu verdoppelt. Jedoch kann die Unicode-Darstellung vieler Zeichensätze, die früher als Single-Byte Character Sets (SBCS) bezeichnet wurden, auf einfache Weise zu einem einzelnen Byte komprimiert werden. Wenn Sie eine Zeichenspalte (CHARACTER) mit diesem Attribut definieren, werden die Daten beim Speichern automatisch komprimiert und beim Abrufen aus der Spalte dekomprimiert.
+Das WITH COMPRESSION-Attribut wurde für Zeichenspalten vom Typ CHARACTER aufgrund der Änderung am Unicode-Zeichendarstellungsformat hinzugefügt. Unicode-Zeichen benötigen jeweils zwei Bytes für jedes Zeichen. Für vorhandene Microsoft Jet-Datenbanken, die überwiegend Zeichendaten enthalten, kann dies bedeuten, dass die Datenbankdatei bei Konvertierung in das Microsoft Access-Datenbankformat ihre Größe nahezu verdoppelt. Jedoch kann die Unicode-Darstellung vieler Zeichensätze, die früher als Single-Byte Character Sets (SBCS) bezeichnet wurden, auf einfache Weise zu einem einzelnen Byte komprimiert werden. Wenn Sie eine CHARACTER-Spalte mit diesem Attribut definieren, werden die Daten automatisch komprimiert gespeichert und dekomprimiert, wenn der Abruf aus der Spalte erfolgt.
 
 MEMO-Spalten können auch definiert werden, um Daten in einem komprimierten Format zu speichern. Es gibt jedoch eine Einschränkung. Nur Instanzen von MEMO-Spalten, die in komprimierter Form in 4096 Byte oder weniger passen, werden komprimiert. Alle anderen Instanzen von MEMO-Spalten bleiben dekomprimiert. Dies bedeutet, dass innerhalb einer bestimmten Tabelle für eine bestimmte MEMO-Spalte einige Daten möglicherweise komprimiert werden und einige Daten möglicherweise nicht komprimiert werden.
 

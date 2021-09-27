@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff821467(v=office.15)
 ms:contentKeyID: 48546961
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: 9f73dfc49a6ec99b726a052c588c032783010081
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 33e613a1760281326873df264673101e8146e80f
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32307525"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597016"
 ---
 # <a name="recordsetupdate-method-dao"></a>Recordset.Update-Methode (DAO)
 
@@ -20,7 +20,7 @@ ms.locfileid: "32307525"
 
 ## <a name="syntax"></a>Syntax
 
-*expression* .Update(***UpdateType***, ***Force***)
+*expression* .Update(***UpdateType** _, _*_Force_**)
 
 *Ausdruck* Eine Variable, die ein **Recordset**-Objekt darstellt.
 
@@ -74,7 +74,7 @@ Wenn Sie einen Datensatz bearbeiten möchten, verwenden Sie die **Edit**-Methode
 
 In einem ODBCDirect-Arbeitsbereich können Sie Batchaktualisierungen vornehmen, wenn die Cursor-Bibliothek dies unterstützt und das **Recordset** mit der Option der optimistischen Batchsperre geöffnet wurde.
 
-Ist in einem Microsoft Access-Arbeitsbereich die **LockEdits**-Eigenschafteneinstellung eines **Recordset**-Objekts in einer Mehrbenutzerumgebung auf **True** festgelegt (pessimistisch gesperrt), bleibt der Datensatz ab dem Moment gesperrt, in dem **Edit** verwendet wird, bis zu dem Zeitpunkt, zu dem die **Update**-Methode ausgeführt oder die Bearbeitung abgebrochen wird. Wenn die **LockEdits**-Eigenschafteneinstellung auf **False** festgelegt ist (optimistisch gesperrt), wird der Datensatz gesperrt und mit dem vorab bearbeiteten Datensatz verglichen, bevor er in der Datenbank aktualisiert wird. 
+Wenn in einem Microsoft Access-Arbeitsbereich die Eigenschaftseinstellung **LockEdits** des **Recordset**-Objekts in einer Umgebung mit mehreren Benutzern **True** (pessimistisch gesperrt) ist, bleibt der Datensatz ab dem Zeitpunkt gesperrt, an dem **Bearbeiten** verwendet wird, bis die **Update**-Methode ausgeführt wird, oder die Bearbeitung abgebrochen wird. Wenn die Eigenschaftseinstellung **LockEdits****False** (optimistisch gesperrt) lautet, wird der Datensatz gesperrt und mit dem zuvor bearbeiteten Datensatz verglichen, kurz bevor er in der Datenbank aktualisiert wird. 
 
 Wurde der Datensatz nach dem Verwenden der **Edit**-Methode geändert, schlägt der **Update**-Vorgang fehl. Die mit einem Microsoft Access-Datenbankmodul verbundenen ODBC- und installierbaren ISAM-Datenbanken verwenden immer optimistische Sperren. Verwenden Sie erneut die **Update**-Methode, um den **Update**-Vorgang mit Ihren Änderungen fortzusetzen. Um den Datensatz wiederherzustellen, wie ihn der andere Benutzer geändert hat, aktualisieren Sie den aktuellen Datensatz mithilfe von Move 0.
 

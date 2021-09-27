@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195966(v=office.15)
 ms:contentKeyID: 48545686
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: c19ef8ab8ef2e937ba7467b3695f9aa5780c21c0
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 6ae1b84a3f1d99483c3ea1d7f54458ed53e8c4fe
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294981"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59558520"
 ---
 # <a name="databasecreatequerydef-method-dao"></a>Database.CreateQueryDef-Methode (DAO)
 
@@ -22,9 +22,9 @@ Erstellt ein neues **[QueryDef](querydef-object-dao.md)**-Objekt.
 
 ## <a name="syntax"></a>Syntax
 
-*expression* .CreateQueryDef(***Name***, ***SQLText***)
+*expression* .CreateQueryDef(***Name** _, _*_SQLText_**)
 
-*Ausdruck* Eine Variable, die ein **Database**-Objekt darstellt.
+*Ausdruck* Eine Variable, die ein **Database** -Objekt darstellt.
 
 ## <a name="parameters"></a>Parameter
 
@@ -54,7 +54,7 @@ Erstellt ein neues **[QueryDef](querydef-object-dao.md)**-Objekt.
 <td><p><em>SQLText</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Eine <strong>Variant</strong> (Untertyp <strong>String</strong>), bei der es sich um eine SQL-Anweisung handelt, die die <strong>QueryDef</strong> definiert. Wenn dieses Argument ausgelassen wird, können Sie die <strong>QueryDef</strong> durch Festlegen ihrer <strong><a href="querydef-sql-property-dao.md">SQL</a></strong> -Eigenschaft definieren, bevor oder nachdem Sie sie an eine Auflistung anfügen.</p></td>
+<td><p>Ein <strong>Variant</strong>-Wert (Untertyp <strong>String</strong>), bei dem es sich um eine SQL-Anweisung handelt, die das <strong>QueryDef</strong>-Objekt definiert. Wenn Sie dieses Argument nicht angeben, können Sie das <strong>QueryDef</strong>-Objekt definieren, indem Sie seine <strong><a href="querydef-sql-property-dao.md">SQL</a></strong>-Eigenschaft festlegen, bevor oder nachdem Sie es an eine Auflistung anfügen.</p></td>
 </tr>
 </tbody>
 </table>
@@ -68,9 +68,9 @@ QueryDef
 
 Wenn Sie in einem Microsoft Access-Arbeitsbereich bei der Erstellung einer **QueryDef** einen anderen Wert als eine Zeichenfolge der Länge 0 (null) für den Namen angeben, wird das resultierende **QueryDef**-Objekt automatisch an die **[QueryDefs](querydefs-collection-dao.md)**-Auflistung angefügt.
 
-Wenn das von name angegebene Objekt bereits ein Mitglied der **QueryDefs**-Auflistung ist, tritt ein Laufzeitfehler auf. Sie können eine temporäre **QueryDef** erstellen, indem Sie beim Ausführen der CreateQueryDef-Methode eine Zeichenfolge der Länge 0 (null) für das **name**-Argument verwenden. Ein andere Methode besteht darin, die **[Name](querydef-name-property-dao.md)** -Eigenschaft einer neu erstellten **QueryDef** auf eine Zeichenfolge der Länge 0 ("") festzulegen. 
+Wenn das durch Namen angegebene Objekt schon ein Mitglied der **QueryDefs** -Auflistung ist, tritt ein Laufzeitfehler auf. Sie können eine temporäre **QueryDef** erstellen, indem Sie beim Ausführen der **CreateQueryDef** -Methode eine Zeichenfolge der Länge 0 (null) für das Namenargument verwenden. Ein andere Methode besteht darin, die **[Name](querydef-name-property-dao.md)** -Eigenschaft einer neu erstellten **QueryDef** auf eine Zeichenfolge der Länge 0 ("") festzulegen.  
 
-Temporäre **QueryDef** -Objekte sind nützlich, wenn Sie dynamische SQL-Anweisungen wiederholt verwenden möchten, ohne neue dauerhafte Objekte in der **QueryDefs** -Auflistung zu erstellen. Sie können eine temporäre **QueryDef** nicht an eine Auflistung anfügen, da eine Zeichenfolge der Länge 0 (null) kein gültiger Name für ein dauerhaftes **QueryDef** -Objekt ist. Sie können immer die Eigenschaften **Name** und **SQL** des neu erstellten **QueryDef** -Objekts festlegen und die **QueryDef** anschließend an die **QueryDefs** -Auflistung anfügen.
+Temporäre **QueryDef** -Objekte sind nützlich, wenn Sie dynamische SQL-Anweisungen wiederholt verwenden möchten, ohne neue dauerhafte Objekte in der **QueryDefs** -Auflistung erstellen zu müssen. Sie können eine temporäre **QueryDef** nicht an jede Auflistung anhängen, da eine Zeichenfolge der Länge NULL kein gültiger Name für ein permanentes **QueryDef** -Objekt ist. Sie können jederzeit  den **Namen** und die **SQL** -Eigenschaften des zuletzt erstellten **QueryDef** -Objektes festlegen und so das **QueryDef** der **QueryDefs** -Auflistung anhängen.
 
 Zum Ausführen der SQL-Anweisung in einem **QueryDef**-Objekt verwenden Sie die **[Execute](querydef-execute-method-dao.md)**- oder die **[OpenRecordset](database-openrecordset-method-dao.md)**-Methode.
 
@@ -80,7 +80,7 @@ Um ein **QueryDef**-Objekt aus einer **QueryDefs**-Auflistung in einer Datenbank
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel wird die **CreateQueryDef**-Methode verwendet, um ein temporäres und ein dauerhaftes **QueryDef**-Objekt zu erstellen und auszuführen. Die GetrstTemp-Funktion wird zur Ausführung dieses Verfahrens benötigt.
+In diesem Beispiel wird die **CreateQueryDef** -Methode verwendet, um ein temporäres und ein dauerhaftes **QueryDef** -Objekt zu erstellen und auszuführen. Die GetrstTemp-Funktion wird zur Ausführung dieses Verfahrens benötigt.
 
 ```vb
     Sub CreateQueryDefX() 
@@ -203,7 +203,7 @@ End Sub
 
 <br/>
 
-Im folgenden Beispiel wird gezeigt, wie eine Parameterabfrage erstellt wird. Eine Abfrage mit dem Namen **myQuery** wird mit zwei Parametern, Param1 und Param2, erstellt. Zu diesem Zweck wird die SQL-Eigenschaft der Abfrage auf eine SQL-Anweisung (Structured Query Language) festgelegt, die die Parameter definiert.
+Das folgende Beispiel zeigt, wie Sie eine Parameterabfrage erstellen. Eine Abfrage mit dem Namen **myQuery** wird mit zwei Parametern mit Namen Param1 und Param2 erstellt. Hierzu wird die SQL-Eigenschaft der Abfrage auf eine SQL-Anweisung (Structured Query Language) festgelegt, welche die Parameter definiert.
 
 **Der Beispielcode stammt von:**[Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
 

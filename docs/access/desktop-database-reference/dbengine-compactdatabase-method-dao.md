@@ -10,26 +10,26 @@ f1_keywords:
 - dao360.chm1052936
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: b50cb0453df1fa357fbd0b089af2e74fdd4b4c1e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: d42cc4c2c136adbc9c3e07544752e16e93c94083
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294337"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589708"
 ---
 # <a name="dbenginecompactdatabase-method-dao"></a>DBEngine.CompactDatabase-Methode (DAO)
 
-**Gilt für:** Access 2013 | Access 2016
+**Gilt für**: Access 2013 | Access 2016
 
-Kopiert und komprimiert eine geschlossene Datenbank und bietet die Möglichkeit, ihre Version, Sortierreihenfolge und Verschlüsselung festzulegen. (Nur Microsoft Access-Arbeitsbereiche).
+Kopiert und komprimiert eine geschlossene Datenbank und bietet Ihnen die Möglichkeit, die Version, die Sortierreihenfolge und die Verschlüsselung der Datenbank zu ändern (nur Microsoft Access-Arbeitsbereiche).
 
 > [!NOTE]
-> Wenn Sie verschlüsselte verknüpfte Tabellen für action-, update- und SQL-Abfragen verwenden, z. B. eine SQL UPDATE-Anweisung (CurrentDb.Execute „UPDATE..."), müssen Sie den Verschlüsselungsschlüssel angeben. Verknüpfte Tabellen weisen außerdem eine Beschränkung von 19 Zeichen für den Verschlüsselungsschlüssel auf. Weitere Informationen finden Sie im Abschnitt **Verschlüsselte verknüpfte Tabellen** am Ende dieses Themas.
+> Wenn Sie verschlüsselte verknüpfte Tabellen für Action-, Update- und SQL-Abfragen verwenden, wie z. B. eine SQL UPDATE-Anweisung (CurrentDb.Execute „UPDATE..."), müssen Sie den Verschlüsselungsschlüssel angeben. Verknüpfte Tabellen weisen außerdem eine Beschränkung von 19 Zeichen für den Verschlüsselungsschlüssel auf. Weitere Informationen finden Sie im Abschnitt **Verschlüsselte verknüpfte Tabellen** am Ende dieses Themas.
 
 ## <a name="syntax"></a>Syntax
 
-*expression* .CompactDatabase(***SrcName***, ***DstName***, ***DstLocale***, ***Options***, ***password***)
+*expression* .CompactDatabase(***SrcName** _, _*_DstName_*_, _*_DstLocale_*_, _*_Options_*_, _*_password_**)
 
 *expression* Ein Ausdruck, der ein **DBEngine**-Objekt zurückgibt.
 
@@ -55,7 +55,7 @@ Kopiert und komprimiert eine geschlossene Datenbank und bietet die Möglichkeit,
 <td><p><em>SrcName</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>String</strong></p></td>
-<td><p>Gibt eine vorhandene geschlossene Datenbank an. Dies kann ein vollständiger Pfad- und Dateiname sein, z. B. &quot;C:\db1.mdb&quot;. Wenn der Dateiname eine Erweiterung aufweist, müssen Sie diese angeben. Wenn Ihr Netzwerk dies unterstützt, können Sie auch einen Netzwerkpfad wie &quot;\\server1\share1\dir1\db1.mdb&quot; angeben.</p></td>
+<td><p>Identifiziert eine vorhandene geschlossene Datenbank. Kann ein vollständiger Pfad und Dateiname sein, wie z. B. &quot;C:\db1.mdb&quot;. Wenn der Dateiname eine Erweiterung hat, müssen Sie diese angeben. Wenn Ihr Netzwerk dies unterstützt, können Sie auch einen Netzwerkpfad wie z. B. &quot;\\server1\share1\dir1\db1.mdb&quot; angeben.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>DstName</em></p></td>
@@ -318,7 +318,7 @@ Sie können den folgenden VBA-Beispielcode für eine Befehlsschaltfläche verwen
 
 <br/>
 
-Im folgenden Codebeispiel wird gezeigt, wie Sie CompactDatabase mit einem Kennwort (Verschlüsselungsschlüssel) verwenden und dann eine Verknüpfung zu einer Tabelle in dieser komprimierten Datenbank herstellen. Beachten Sie, dass ein Kennwort eingegeben werden muss.
+Im folgenden Codebeispiel wird gezeigt, wie Sie CompactDatabase mit einem Kennwort (Verschlüsselungsschlüssel) verwenden und dann eine Verknüpfung zu einer Tabelle in dieser komprimierten Datenbank herstellen. Beachten Se, dass ein Kennwort angegeben werden muss.
 
 ```vb
     Private Sub CompactAndLink_Click() 

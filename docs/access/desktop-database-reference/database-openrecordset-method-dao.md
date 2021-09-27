@@ -10,13 +10,13 @@ f1_keywords:
 - dao360.chm1052939
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: b8a6e9a2204a60ecff33555d31f39591308f9b67
-ms.sourcegitcommit: 27a9f3568318470e7ee09ad93a90c3f80d3ef0cd
+ms.localizationpriority: high
+ms.openlocfilehash: 543aa19f98e112aff01b6fadb85e34e4340296bf
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36790764"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59606905"
 ---
 # <a name="databaseopenrecordset-method-dao"></a>Database.OpenRecordset-Methode (DAO)
 
@@ -26,7 +26,7 @@ Erstellt ein neues **[Recordset](recordset-object-dao.md)**-Objekt und fügt es 
 
 ## <a name="syntax"></a>Syntax
 
-*Ausdruck*.**OpenRecordset** (_Name_, _ Typ_, _Optionen_, _LockEdit_)
+*Ausdruck*.**OpenRecordset** (_Name_, _Typ_, _Optionen_, _LockEdit_)
 
 *Ausdruck* Eine Variable, die ein **Database** -Objekt darstellt.
 
@@ -58,21 +58,21 @@ Erstellt ein neues **[Recordset](recordset-object-dao.md)**-Objekt und fügt es 
 <td><p><em>Typ</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Eine <strong><a href="recordsettypeenum-enumeration-dao.md">RecordsetTypeEnum</a></strong>-Konstante gibt den Typ des zu öffnenden <strong>Recordset</strong> an.</p><p><strong>Hinweis</strong>: Wenn Sie ein <strong>Recordset</strong> in einem Microsoft Access-Arbeitsbereich öffnen und keinen Typ angeben, erstellt <strong>OpenRecordset</strong>, wenn möglich, ein tabellenartiges <strong>Recordset</strong>. If you specify a linked table or query, <strong>OpenRecordset</strong> creates a dynaset-type <strong>Recordset</strong>.</p>
+<td><p>Eine <strong><a href="recordsettypeenum-enumeration-dao.md">RecordsetTypeEnum</a></strong>-Konstante gibt den Typ des zu öffnenden <strong>Recordset</strong> an.</p><p><strong>HINWEIS</strong>: Wenn Sie ein <strong>Recordset-</strong> in einem Microsoft Access-Arbeitsbereich öffnen und keinen Typ angeben, erstellt <strong>OpenRecordset</strong> nach Möglichkeit einen Tabellen-typisches <strong>Recordset</strong>. Wenn Sie eine verknüpfte Tabelle oder Abfrage angeben, erstellt <strong>OpenRecordset</strong> einen Dynaset-typisches <strong>Recordset</strong>.</p>
 </td>
 </tr>
 <tr class="odd">
 <td><p><em>Optionen</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Eine Kombination aus <strong><a href="recordsetoptionenum-enumeration-dao.md">RecordsetOptionEnum</a></strong>-Konstanten, die Merkmale des neuen <strong>Recordset</strong> angeben.</p><p><strong>Hinweis</strong>: Die Konstanten <strong>dbConsistent</strong> und <strong>dbInconsistent</strong>schließen sich gegenseitig aus, und die Verwendung beider verursacht einen Fehler. Das Bereitstellen eines LockEdit-Arguments, wenn Optionen die Konstante <strong>dbReadOnly</strong> verwendet, führt ebenfalls zu einem Fehler. </p>
+<td><p>Eine Kombination aus <strong><a href="recordsetoptionenum-enumeration-dao.md">RecordsetOptionEnum</a></strong>-Konstanten, die Merkmale des neuen <strong>Recordset</strong> angeben.</p><p><strong>HINWEIS</strong>: Die Konstanten <strong>dbConsistent</strong> und <strong>dbInconsistent</strong> schließen sich gegenseitig aus, und die Verwendung von beiden verursacht einen Fehler. Die Angabe eines LockEdit-Arguments, wenn Options die <strong>dbReadOnly-</strong> konstante verwendet, verursacht ebenfalls einen Fehler.</p>
 </td>
 </tr>
 <tr class="even">
 <td><p><em>LockEdit</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Eine <strong><a href="locktypeenum-enumeration-dao.md">LockTypeEnum</a></strong>-Konstante, die die Sperre für das <strong>Recordset</strong> bestimmt.</p><p><strong>Hinweis</strong>: Sie können <strong>dbReadOnly</strong> im Options-Argument oder im LockedEdit-Argument verwenden, aber nicht in beiden. Wenn Sie es für beide Argumente verwenden, tritt ein Laufzeitfehler auf.</p>
+<td><p>Eine <strong><a href="locktypeenum-enumeration-dao.md">LockTypeEnum</a></strong>-Konstante, die die Sperre für das <strong>Recordset</strong> bestimmt.</p><p><strong>HINWEIS</strong>: Sie können <strong>dbReadOnly-</strong> entweder im Options-Argument oder im LockedEdit-Argument verwenden, aber nicht in beiden. Wenn Sie sie für beide Argumente verwenden, tritt ein Laufzeitfehler auf.</p>
 </td>
 </tr>
 </tbody>
@@ -95,9 +95,9 @@ Durch das Schließen eines **Recordset** mit der **[Close](connection-close-meth
 
 
 > [!NOTE]
-> Wenn sich *source* auf eine SQL-Anweisung bezieht, die aus einer Zeichenfolge besteht, die mit einem nicht ganzzahligen Wert verkettet ist, und die Systemparameter ein nicht für die USA gültiges Dezimalzeichen, z. B. ein Komma, angeben (Beispiel: strSQL = "PRICE &gt; " &amp; lngPrice, und lngPrice = 125,50), tritt beim Versuch, das **Recordset** zu öffnen, ein Fehler auf. Der Grund ist, dass die Zahl bei der Verkettung mithilfe des Standarddezimalzeichens des Systems in eine Zeichenfolge umgewandelt wird und SQL nur für die USA gültige Dezimalzeichen akzeptiert.
+> Wenn *Quell-* auf eine SQL-Anweisung verweist, die aus einer Zeichenfolge besteht, die mit einem Nicht-Ganzzahlwert verkettet ist und die Systemparameter eine Nicht-US-Anweisung angeben. Dezimalzeichen, z. B. ein Komma (z. B. strSQL = "PRICE &gt; " &amp; IngPrice, und IngPrice = 125,50), tritt ein Fehler auf, wenn Sie versuchen, das **Recordset** zu öffnen. Dies liegt daran, dass während der Verkettung die Zahl mit dem Standarddezimalzeichen Ihres Systems in eine Zeichenfolge konvertiert wird und SQL nur US-Dezimalzeichen akzeptiert.
 
-**Link zur Verfügung gestellt von: ** [UtterAccess](https://www.utteraccess.com)-Community. UtterAccess ist das führende Microsoft Access-Wiki und -Hilfeforum.
+**Link zur Verfügung gestellt von:** [UtterAccess](https://www.utteraccess.com)-Community. UtterAccess ist das führende Microsoft Access-Wiki und -Hilfeforum.
 
 - [Übertragen von Daten aus Access in Excel](https://www.utteraccess.com/forum/transfer-data-access-ex-t1672619.html)
 

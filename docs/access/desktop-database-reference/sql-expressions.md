@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197629(v=office.15)
 ms:contentKeyID: 48546349
 ms.date: 06/13/2019
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: f38932ed4744e5479c523446f9ab77065f4eb203
-ms.sourcegitcommit: d0e1ce095a478d90411abb8c147eb9efe19ffa5f
+ms.localizationpriority: high
+ms.openlocfilehash: 003462c4a16ca9a9de809f9dd87f661a0242992a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "34870864"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589099"
 ---
 # <a name="sql-expressions"></a>SQL-Ausdrücke
 
@@ -22,7 +22,7 @@ Ein SQL-Ausdruck ist eine Zeichenfolge, aus der eine SQL-Anweisung ganz oder tei
 
 Das Microsoft Access-Datenbankmodul verwendet den VBA-Ausdrucksdienst (Microsoft Visual Basic for Applications) für einfache Arithmetik und Funktionsauswertungen. Alle in SQL-Ausdrücken des Microsoft Access-Datenbankmoduls verwendeten Operatoren (außer **[Between](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/between-and-operator)**, **[In](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/in-operator-microsoft-access-sql)** und **[Like](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/like-operator-microsoft-access-sql)**) werden vom VBA-Ausdrucksdienst definiert. 
 
-Darüber hinaus bietet der VBA-Ausdrucksdienst über 100 VBA-Funktionen, die Sie in SQL-Ausdrücken verwenden können. Beispielsweise können Sie diese VBA-Funktionen verwenden, um eine SQL-Abfrage in der Abfrageentwurfsansicht von Microsoft Access zu erstellen. Sie können diese Funktionen auch in einer SQL-Abfrage in der DAO-Methode **OpenRecordset** in Microsoft Visual C++-, Microsoft Visual Basic- und Microsoft Excel-Code verwenden.
+Darüber hinaus bietet der VBA-Ausdrucksdienst über 100 VBA-Funktionen, die Sie in SQL-Ausdrücken verwenden können. Beispielsweise können Sie diese VBA-Funktionen verwenden, um eine SQL-Abfrage im Microsoft Access-Abfrage-Designansicht zu erstellen, und Sie können diese Funktionen auch in einer SQL-Abfrage in der DAO- **OpenRecordset-** -Methode in Microsoft Visual C++, Microsoft Visual Basic und Microsoft Excel-Code verwenden.
 
 ## <a name="see-also"></a>Siehe auch
 

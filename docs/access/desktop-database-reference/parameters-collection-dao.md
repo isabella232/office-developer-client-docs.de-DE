@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff193967(v=office.15)
 ms:contentKeyID: 48544862
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: 09f60cb8dde407aacbb19e6b2124151dbbf9b3c5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 564502f04e88d6ac6eba7f7a77c3ddae8dafe8c6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32287895"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59593862"
 ---
 # <a name="parameters-collection-dao"></a>Parameters-Auflistung (DAO)
 
@@ -22,7 +22,7 @@ Eine **Parameters**-Auflistung enthält alle **Parameter**-Objekte eines **Query
 
 ## <a name="remarks"></a>Bemerkungen
 
-Die **Parameters**-Auflistung stellt nur Informationen zu vorhandenen Parametern bereit. Es ist nicht möglich, Objekte an die **Parameters**-Auflistung anzuhängen oder sie aus dieser Auflistung zu entfernen.
+Die **Parameter**-Auflistung stellt nur Informationen zu vorhandenen Parametern bereit. Es ist nicht möglich, Objekte an die **Parameter**-Auflistung anzuhängen oder sie aus dieser Auflistung zu entfernen.
 
 ## <a name="example"></a>Beispiel
 
@@ -94,9 +94,9 @@ This example demonstrates **Parameter** objects and the **Parameters** collectio
 
 <br/>
 
-Im folgenden Beispiel wird gezeigt, wie eine Parameterabfrage erstellt wird. Eine Abfrage mit dem Namen **myQuery** wird mit zwei Parametern, Param1 und Param2, erstellt. Zu diesem Zweck wird die SQL-Eigenschaft der Abfrage auf eine SQL-Anweisung (Structured Query Language) festgelegt, die die Parameter definiert.
+Das folgende Beispiel zeigt, wie Sie eine Parameterabfrage erstellen. Eine Abfrage mit dem Namen **myQuery** wird mit zwei Parametern mit Namen Param1 und Param2 erstellt. Hierzu wird die SQL-Eigenschaft der Abfrage auf eine SQL-Anweisung (Structured Query Language) festgelegt, welche die Parameter definiert.
 
-**Der Beispielcode stammt von:**[Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
+**Der Beispielcode angeboten von** dem [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).
 
 ```vb
     Sub CreateQueryWithParameters()
@@ -123,7 +123,7 @@ Im folgenden Beispiel wird gezeigt, wie eine Parameterabfrage erstellt wird. Ein
 
 <br/>
 
-Im folgenden Beispiel wird gezeigt, wie eine Parameterabfrage ausgeführt wird. Die Parameters-Auflistung wird verwendet, um den Organization-Parameter der myActionQuery-Abfrage festzulegen, bevor die Abfrage ausgeführt wird.
+The following example shows how to execute a parameter query. The Parameters collection is used to set the Organization parameter of the myActionQuery query before the query is executed.
 
 ```vb
     Public Sub ExecParameterQuery()

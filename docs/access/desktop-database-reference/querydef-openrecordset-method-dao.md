@@ -6,13 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff822070(v=office.15)
 ms:contentKeyID: 48547232
 ms.date: 09/18/2015
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: a046359f39611e38b9e517495f54041f876addfc
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 54350b61c59c53f173b491b8f4724c8c1c14f004
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32302849"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59589246"
 ---
 # <a name="querydefopenrecordset-method-dao"></a>QueryDef.OpenRecordset-Methode (DAO)
 
@@ -22,7 +22,7 @@ Erstellt ein neues **[Recordset](recordset-object-dao.md)**-Objekt und fügt es 
 
 ## <a name="syntax"></a>Syntax
 
-*expression* .OpenRecordset(***Type***, ***Options***, ***LockEdit***)
+*expression* .OpenRecordset(***Type** _, _*_Options_*_, _*_LockEdit_**)
 
 *Ausdruck* Eine Variable, die ein **QueryDef**-Objekt darstellt.
 
@@ -45,7 +45,7 @@ Erstellt ein neues **[Recordset](recordset-object-dao.md)**-Objekt und fügt es 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><em>Type</em></p></td>
+<td><p><em>Typ</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Eine <strong><a href="recordsettypeenum-enumeration-dao.md">RecordsetTypeEnum</a></strong>-Konstante gibt den Typ des zu öffnenden <strong>Recordset</strong> an.</p><p><strong>Hinweis</strong>: Wenn Sie ein <STRONG>Recordset</STRONG> in einem Microsoft Access-Arbeitsbereich öffnen und keinen Typ angeben, erstellt <STRONG>OpenRecordset</STRONG>, wenn möglich, ein tabellenartiges <STRONG>Recordset</STRONG>. If you specify a linked table or query, <STRONG>OpenRecordset</STRONG> creates a dynaset-type <STRONG>Recordset</STRONG>.</p>

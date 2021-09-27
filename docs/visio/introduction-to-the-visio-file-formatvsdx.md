@@ -6,13 +6,13 @@ ms.audience: Developer
 ms.topic: overview
 ms.assetid: 69736f40-8f67-46c2-abf6-82dffecb2274
 description: Erfahren Sie mehr über das neue Dateiformat in Visio 2013, ermitteln Sie einige hochrangige Konzepte für die programmatische Arbeit mit dem Visio 2013-Dateiformat, und erstellen Sie eine einfache Konsolenanwendung, die eine Visio 2013-Datei überprüft.
-localization_priority: Priority
-ms.openlocfilehash: 74c0f05a1db280386f3dc9dfd23da73a9b2daaf5
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: f4109d831840466d560d3464b809995c8cf31b24
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32357274"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59628059"
 ---
 # <a name="introduction-to-the-visio-file-format-vsdx"></a>Einführung in das Visio-Dateiformat (.vsdx)
 
@@ -97,7 +97,7 @@ Im Visio 2013-Dateiformat werden alle Zellen im ShapeSheet, d. h. **PinX**, **Li
 </Shape>
 ```
 
-Das **Cell**-Element für **PinX** (sowie andere einzelne, benannte Zellen, die auch "Singleton-Zellen" genannt werden, wie z.B. **LinePattern** oder **LockSelect**) ist ein direkt untergeordnetes Element des **Shape**-Elements. Es wird kein eindeutiges Element benötigt, um die Zeile darzustellen, die die **PinX**-Zelle enthält, da jede Form nur eine **PinX** aufweisen kann.
+Das **Zell**-Element für **PinX** (sowie andere einzelne, benannte Zellen namens „Singleton-Zellen“ wie **LinePattern** oder **LockSelect**) ist ein direktes untergeordnetes Element des **Shape**-Elements. Es ist kein eindeutiges Element erforderlich, um die Zeile darzustellen, die die **PinX**-Zelle enthält, da jede Form nur eine **PinX** aufweisen kann.
   
 Wie sieht es mit Abschnitten aus, die tabellarische Daten enthalten, wie z. B. **Geometry**-Abschnitte? Das Visio 2013-Dateiformat-Schema verwendet zum Aufbewahren der Daten der Zellen in diesen Abschnitten **Section- und Row-Elemente, die wie unten dargestellt durch ihre N-Attribute oder T-Attribute unterschieden werden. Beispielsweise kann die gleiche Form aus dem vorherigen Beispiel Daten im **Geometry 1**-Abschnitt enthalten, die aussehen wie der folgende Code im XML-Zeichnungsschema. 
   
@@ -163,11 +163,11 @@ Im folgenden Codebeispiel können Sie sehen, wie eine VSDX-Datei geöffnet wird,
     
 4. Wählen Sie im Menü **Datei** **Neu** aus, und wählen Sie dann ** Projekt **.
     
-5. Erweitern Sie unter **visuelle C# ** oder **Visual Basic** **Windows**, und wählen Sie dann **Console Application**.
+5. Erweitern Sie unter **visuelle C#** oder **Visual Basic** **Windows**, und wählen Sie dann **Console Application**.
     
-6. Geben Sie in das Feld **Name** den Eintrag "VisioFileExplorer" ein. Das Konsolenanwendungsprojekt wird geöffnet. 
+6. Geben Sie „VisioFileExplorer“ in das Feld **Name** ein. Das Konsolenanwendungsprojekt wird geöffnet. 
     
-7. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **VisioFileExplorer**, und klicken Sie dann auf **Verweis hinzufügen**. 
+7. Klicken Sie im **Solution Explorer** mit der rechten Maustaste auf **VisioFileExplorer**, und klicken Sie dann auf **Add Reference**. 
     
 8. Erweitern Sie im Dialogfeld **Verweis hinzufügen** unter **Assemblies** den Knoten **Framework**, und wählen Sie dann **WindowsBase** aus.
     

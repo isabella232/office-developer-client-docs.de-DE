@@ -10,13 +10,13 @@ f1_keywords:
 - jetsql40.chm5277562
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 46bc0a50e31555189c069e0ee09c4c84349c04c7
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: a831ae35f91bae1cd81c3db5dfd723ed31389295
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295429"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618357"
 ---
 # <a name="create-index-statement-microsoft-access-sql"></a>CREATE INDEX-Anweisung (Microsoft Access SQL)
 
@@ -25,7 +25,7 @@ ms.locfileid: "32295429"
 Erstellt einen neuen Index für eine vorhandene Tabelle.
 
 > [!NOTE]
-> Bei Nicht-Microsoft Access-Datenbankmodulen wird die Verwendung von CREATE INDEX (außer zum Erstellen eines Pseudoindexes für eine verknüpfte ODBC-Tabelle) oder von DDL-Anweisungen (Data Definition Language) vom Microsoft Access-Datenbankmodul nicht unterstützt. Verwenden Sie stattdessen die **Create**-Methoden von DAO. Weitere Informationen finden Sie unter "Anmerkungen".
+> Für Datenbanken, die nicht vom Microsoft Konnektivitätsmodul für Access stammen, unterstützt Microsoft Konnektivitätsmodul für Access nicht die Verwendung von CREATE INDEX (mit Ausnahme der Erstellung eines Pseudoindexes für eine verknüpfte ODBC-Tabelle) oder einer der DDL-Anweisungen (Data Definition Language). Verwenden Sie stattdessen die DAO **Erstellungs** -Methoden. Weitere Informationen finden Sie im Abschnitt "Hinweise".
 
 ## <a name="syntax"></a>Syntax
 
@@ -65,7 +65,7 @@ Die CREATE INDEX-Anweisung setzt sich wie folgt zusammen:
 
 Verwenden Sie das reservierte Wort UNIQUE, um doppelte Werte im indizierten Feld oder in Feldern verschiedener Datensätze zu verhindern.
 
-In der optionalen WITH-Klausel können Sie Gültigkeitsprüfungsregeln für Daten erzwingen. Sie können:
+In der optionalen WITH-Klausel können Sie Datenüberprüfungsregeln in Kraft setzen. Sie können:
 
 - Sie können NULL-Einträge im indizierten Feld oder in Feldern neuer Datensätze untersagen, indem Sie die Option DISALLOW NULL verwenden.
 
@@ -73,7 +73,7 @@ In der optionalen WITH-Klausel können Sie Gültigkeitsprüfungsregeln für Date
 
 - Das oder die indizierten Felder unter Verwendung des reservierten Worts PRIMARY als Primärschlüssel bestimmen. Dies setzt voraus, dass der Schlüssel eindeutig ist, sodass das reservierte Wort UNIQUE ausgelassen werden kann.
 
-Sie können CREATE INDEX verwenden, um einen Pseudoindex für eine verknüpfte Tabelle in einer ODBC-Datenquelle (wie z. B. Microsoft SQL Server) zu erstellen, die nicht bereits über einen Index verfügt. Sie benötigen keine Berechtigung für oder Zugriff auf den Remoteserver, um einen Pseudoindex erstellen zu können, und die Remotedatenbank erkennt den Pseudoindex nicht und ist auch nicht davon betroffen. Für verknüpfte und systemeigene Tabellen wird dieselbe Syntax verwendet. Es kann besonders nützlich sein, einen Pseudoindex für eine Tabelle zu erstellen, die normalerweise schreibgeschützt ist.
+Sie können CREATE INDEX verwenden, um einen Pseudoindex für eine verknüpfte Tabelle in einer ODBC-Datenquelle zu erstellen, z. B. Microsoft SQL Server, die nicht bereits über einen Index verfügt. Sie benötigen keine Berechtigung oder keinen Zugriff auf den Remoteserver, um einen Pseudoindex zu erstellen und die Remotedatenbank ist vom Pseudoindex nicht betroffen. Sie verwenden die gleiche Syntax für verknüpfte und native Tabellen. Das Erstellen eines Pseudoindexes für eine Tabelle, die normalerweise schreibgeschützt wäre, kann besonders nützlich sein.
 
 Sie können auch die [ALTER TABLE](alter-table-statement-microsoft-access-sql.md)-Anweisung verwenden, um einen Index mit einem oder mehreren Feldern zu einer Tabelle hinzuzufügen, und Sie können die ALTER TABLE-Anweisung oder die [DROP](drop-statement-microsoft-access-sql.md)-Anweisung verwenden, um einen Index zu entfernen, der über die ALTER TABLE- oder CREATE INDEX-Anweisung erstellt wurde.
 

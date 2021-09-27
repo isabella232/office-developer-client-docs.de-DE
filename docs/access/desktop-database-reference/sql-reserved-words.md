@@ -10,13 +10,13 @@ f1_keywords:
 - jetsql40.chm5277591
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 43fa81fa2f175c7b67c5de4cfda5158cc067bbac
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 1ea19e7032dd1e67d8911bf7a66d51b2dc44077a
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32308561"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621766"
 ---
 # <a name="sql-reserved-words"></a>Reservierte Wörter für SQL
 
@@ -24,7 +24,7 @@ ms.locfileid: "32308561"
 
 Die folgende Liste enthält alle Worte, die vom Microsoft Access-Datenbankmodul in SQL-Anweisungen reserviert sind. 
 
-- Die Worte in der Liste, die nicht großgeschrieben sind, werden auch von anderen Anwendungen reserviert. Die einzelnen Hilfethemen zu diesen Worten enthalten daher allgemeine Beschreibungen, die sich nicht auf die SQL-Nutzung konzentrieren.
+- Die Wörter in der Liste, die nicht in Großbuchstaben enthalten sind, sind auch für andere Anwendungen reserviert. Daher enthalten die einzelnen Hilfethemen für diese Wörter allgemeine Beschreibungen, die sich nicht auf die SQL-Verwendung konzentrieren.
 
 - Worte mit einem Sternchen (*) sind reserviert, haben aber im Kontext einer Microsoft Access SQL-Anweisung keine Bedeutung (z.B. **Level** und **TableID**). 
 

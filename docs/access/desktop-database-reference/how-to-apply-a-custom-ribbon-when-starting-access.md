@@ -7,13 +7,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff198313(v=office.15)
 ms:contentKeyID: 48546659
 ms.date: 10/16/2018
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: 0acd99a498a74f098b08814e9f11d49b28bae097
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: b52d3b261a3655eedd6a6f911d0d1eade31712aa
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32291957"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59602388"
 ---
 # <a name="apply-a-custom-ribbon-when-starting-access"></a>Anwenden eines benutzerdefinierten Menübands beim Starten von Access
 
@@ -65,7 +65,7 @@ Mit der **[LoadCustomUI](https://docs.microsoft.com/office/vba/api/Access.Applic
 
 Das XML-Markup kann von einem **Recordset**-Objekt stammen, das aus einer Tabelle, einer datenbankexternen Quelle wie einer XML-Datei, die in eine Zeichenfolge analysiert wird, oder aus einer direkt in die Prozedur eingebetteten XML-Datei stammen kann. Sie können verschiedene Menübänder anhand mehrerer Aufrufe der **LoadCustomUI**-Methode erstellen, wobei verschiedenes XML übergeben wird, solange der Name jedes Menübands und das **id**-Attribut der Registerkarten des Menübands eindeutig sind.
 
-Nachdem der Vorgang abgeschlossen ist, erstellen Sie ein AutoExec-Makro, das die Prozedur mithilfe der RunCode-Aktion aufruft. Auf diese Weise wird beim Starten der Anwendung die **LoadCustomUI**-Methode automatisch ausgeführt, und alle benutzerdefinierten Menübänder werden für die Anwendung verfügbar gemacht.
+Nach Abschluss der Prozedur, erstellen Sie ein AutoExec-Makro, das die Prozedur über die RunCode-Aktion aufruft. Auf diese Weise wird beim Starten der Anwendung die **LoadCustomUI**-Methode automatisch ausgeführt, und alle benutzerdefinierten Menübänder werden für die Anwendung verfügbar gemacht.
 
 ## <a name="apply-customized-ribbons-when-access-starts"></a>Anwenden von angepassten Menübändern beim Starten von Access
 
@@ -75,7 +75,7 @@ Gehen Sie wie folgt vor, um eine benutzerdefiniert Oberfläche anzuwenden, die b
 
 2.  Schließen Sie die Anwendung, und starten Sie sie neu.
 
-3.  Klicken Sie auf die **Microsoft Office-Schaltfläche**![O12FileMenuButton\_ZA10077102](media/access-file-menu-button.gif "O12FileMenuButton_ZA10077102"), und wählen Sie dann **Access-Optionen** aus.
+3.  Wählen Sie die **Microsoft Office-Schaltfläche**![O12FileMenuButton\_ZA10077102](media/access-file-menu-button.gif "O12FileMenuButton_ZA10077102") und dann **Access-Optionen** aus.
 
 4.  Klicken Sie auf die Option **Aktuelle Datenbank**, und klicken Sie dann im Abschnitt **Menüband- und Symbolleistenoptionen** auf die Liste **Menübandname**. Wählen Sie dann ein Menüband aus.
 

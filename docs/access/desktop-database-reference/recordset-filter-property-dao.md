@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff837300(v=office.15)
 ms:contentKeyID: 48548953
 ms.date: 06/04/2019
 mtps_version: v=office.15
-localization_priority: Priority
-ms.openlocfilehash: 43afbfda8c560eafb90e6a53d85207e19e5b1170
-ms.sourcegitcommit: 4a570873914c58dd4cdbe97b5d9ec41866dc797c
+ms.localizationpriority: high
+ms.openlocfilehash: 12cff0909bba1821857ea07b0558c36f8e14c18b
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "34675750"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59597009"
 ---
 # <a name="recordsetfilter-property-dao"></a>Recordset.Filter-Eigenschaft (DAO)
 
 **Gilt für**: Access 2013, Office 2013
 
-Legt einen Wert fest, der feststellt, welche Datensätze in einem nachfolgend geöffneten **Recordset**-Objekt einbezogen werden, oder gibt den betreffenden Wert zurück (nur Microsoft Access-Arbeitsbereiche). **Zeichenfolge** mit Lese-/Schreibzugriff.
+Legt einen Wert fest, der die in einem nachfolgend geöffneten **Recordset**-Objekt enthaltenen Datensätze bestimmt, oder gibt diesen Wert zurück (nur für Microsoft Access-Arbeitsbereiche). Lesen/Schreiben **Zeichenfolge**.
 
 ## <a name="syntax"></a>Syntax
 
