@@ -68,7 +68,7 @@ TNEF_PROP_MESSAGE_ONLY
     
  _ulElemID_
   
-> [in] Die eigenschaft **PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) einer Anlage, die eine Zahl enthält, die die Anlage in der übergeordneten Nachricht eindeutig identifiziert. Der  _ulElemID-Parameter_ wird verwendet, wenn eine spezielle Behandlung für eine Anlage angefordert wird. Der  _ulElemID-Parameter_ sollte 0 sein, es sei denn, das TNEF_PROP_CONTAINED- oder TNEF_PROP_CONTAINED_TNEF-Flag ist im  _ulFlags-Parameter_ festgelegt. 
+> [in] Die eigenschaft **PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)) einer Anlage, die eine Zahl enthält, die die Anlage in der übergeordneten Nachricht eindeutig identifiziert. Der  _ulElemID-Parameter_ wird verwendet, wenn eine spezielle Behandlung für eine Anlage angefordert wird. Der  _ulElemID-Parameter_ sollte 0 sein, es sei denn, das flag TNEF_PROP_CONTAINED oder TNEF_PROP_CONTAINED_TNEF im  _ulFlags-Parameter_ festgelegt ist. 
     
  _lpvData_
   
@@ -84,9 +84,9 @@ S_OK
   
 > Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
-Transportanbieter, Nachrichtenspeicheranbieter und Gateways rufen die **ITnef::AddProps-Methode** auf, um Eigenschaften aufzuführen, die in die Transport-Neutral Kapselungsformatverarbeitung (Encapsulation Format, TNEF) einer Nachricht oder Anlage einbezogen oder ausgeschlossen werden sollen. Durch die Verwendung aufeinander folgender Aufrufe kann der Anbieter oder das Gateway eine Liste der Eigenschaften angeben, die hinzugefügt und codiert oder von der Codierung ausgeschlossen werden sollen. Anbieter und Gateways können **AddProps** auch verwenden, um Informationen zu speziellen Anlagen bereitzustellen, die behandelt werden sollten. 
+Transportanbieter, Nachrichtenspeicheranbieter und Gateways rufen die **ITnef::AddProps-Methode** auf, um Eigenschaften aufzuführen, die in die Transport-Neutral TNEF-Verarbeitung (Encapsulation Format) einer Nachricht oder Anlage einbezogen oder aus ihr ausgeschlossen werden sollen. Durch die Verwendung aufeinander folgender Aufrufe kann der Anbieter oder das Gateway eine Liste der Eigenschaften angeben, die hinzugefügt und codiert oder von der Codierung ausgeschlossen werden sollen. Anbieter und Gateways können **AddProps** auch verwenden, um Informationen zu speziellen Anlagen bereitzustellen, die behandelt werden sollten. 
   
  **AddProps** wird nur für TNEF-Objekte unterstützt, die mit dem TNEF_ENCODE Flag für die [OpenTnefStream-](opentnefstream.md) oder [OpenTnefStreamEx-Funktion](opentnefstreamex.md) geöffnet werden. 
   
