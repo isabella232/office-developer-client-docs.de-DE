@@ -10,13 +10,13 @@ api_type:
 - COM
 ms.assetid: 2f6df879-7546-4ac0-a4e3-6b009aee9463
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-localization_priority: Priority
-ms.openlocfilehash: e116021a3dc24de7decbe0dad76cc762cd66d032
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 998d279258294657624d2ee9673947bd96bf8569
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32304123"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59621451"
 ---
 # <a name="excel-xll-sdk-api-function-reference"></a>Excel XLL SDK – API-Funktionsreferenz
 
@@ -36,11 +36,11 @@ Dieser Abschnitt stellt eine Funktionsreferenz für Folgendes bereit:
 
 Das Excel 2013 XLL SDK enthält Quelldateien und Microsoft Visual Studio Project-Dateien für die folgenden Beispielprojekte:
   
-- Das Projekt **Framework** (`SAMPLES\FRAMEWRK\`) enthält ein Projekt, aus dem die Bibliothek FRAMEWRK.lib erstellt werden kann, die dann mit anderen XLL-Projekten verknüpft werden kann. Die Bibliothek enthält viele Funktionen und Tools, die das Schreiben von XLLs einfacher machen. Diese Bibliothek wird in den beiden anderen Projekten zusammen mit der Headerdatei FRAMEWRK.h verwendet.
+- Das **Framework**-Projekt (`SAMPLES\FRAMEWRK\`) enthält ein Projekt, aus dem die Bibliothek FRAMEWRK.lib erstellt werden kann, die anschließlich mit anderen XLL-Projekten verknüpft werden kann. Die Bibliothek enthält viele Funktionen und Tools, die das Schreiben von XLLs vereinfachen. Diese Bibliothek wird in den beiden anderen Projekten in Verbindung mit der Headerdatei FRAMEWRK.h verwendet.
     
-- Das Projekt **Example** (`SAMPLES\EXAMPLE\`) enthält ein Projekt, aus dem die XLL-Datei EXAMPLE.xll erstellt werden kann. Die XLL enthält viele Beispiele für die Verwendung der Bibliothek „Framework“ sowie Beispielimplementierungen der XLL-Add-In-Schnittstellenfunktionen wie z. B. **xlAutoOpen**.
+- Das Projekt **Example** enthält ein Projekt (`SAMPLES\EXAMPLE\`), aus dem die XLL-Datei EXAMPLE.xll, erstellt werden kann. Die XLL enthält viele Beispiele für die Verwendung der Bibliothek "Framework" sowie Beispielimplementierungen der XLL-Add-in-Schnittstellenfunktionen wie z. B. **xlAutoOpen**.
     
-- Das Projekt **Generic** (`SAMPLES\GENERIC\`) enthält ein Projekt, aus dem die XLL-Datei GENERIC.xll erstellt werden kann. Die XLL veranschaulicht verschiedene Beispiele für Funktionen und Befehle und ist ein guter Ausgangspunkt zum Schreiben Ihrer eigenen XLLs.
+- Das Projekt **Generic** (`SAMPLES\GENERIC\`) enthält ein Projekt, aus dem die XLL-Datei GENERIC.xll erstellt werden kann. Die XLL veranschaulicht verschiedene Beispielfunktionen und -befehle und ist ein guter Ausgangspunkt für das Schreiben eigener XLLs.
     
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 

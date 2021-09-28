@@ -12,13 +12,13 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: 356620376658bb927c690056f4de9a01554aa47e
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
+ms.localizationpriority: high
+ms.openlocfilehash: 590a83fef68680325cb9d0b039c996375751edc7
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32295646"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59615739"
 ---
 # <a name="constraint-clause-microsoft-access-sql"></a>CONSTRAINT-Klausel (Microsoft Access SQL)
 
@@ -29,7 +29,7 @@ Eine Einschränkung ähnelt einem Index, obwohl sie auch zur Verknüpfung mit ei
 Verwenden Sie die CONSTRAINT-Klausel in den [ALTER TABLE](alter-table-statement-microsoft-access-sql.md)- und [CREATE TABLE](create-table-statement-microsoft-access-sql.md)-Anweisungen, um Einschränkungen zu erstellen oder zu löschen. Es gibt zwei Arten von CONSTRAINT-Klauseln: eine zum Erstellen einer Einschränkung für ein einzelnes Feld oder zum Erstellen einer Einschränkung für mehrere Felder.
 
 > [!NOTE]
-> Die Datenbank-Engine von Microsoft Access unterstützt CONSTRAINT-Klauseln nicht, genauso wie DDL-Anweisungen mit Datenbank-Engine-Datenbanken, die nicht auf Microsoft Access basieren. Verwenden Sie stattdessen die **Create**-Methoden von DAO.
+> [!HINWEIS] Die Datenbank-Engine von Microsoft Access unterstützt CONSTRAINT-Klauseln nicht, genauso wie DDL-Anweisungen mit Konnektivitätsmodul für Access, die nicht auf Microsoft Access basieren. Verwenden Sie stattdessen die DAO **Create**-Methode.
 
 ## <a name="syntax"></a>Syntax
 

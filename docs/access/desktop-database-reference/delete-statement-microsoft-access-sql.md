@@ -10,13 +10,13 @@ f1_keywords:
 - jetsql40.chm5277573
 f1_categories:
 - Office.Version=v15
-localization_priority: Priority
-ms.openlocfilehash: a4ef478e74f9851012d6f749e64b4ddb34f3a959
-ms.sourcegitcommit: 8fe462c32b91c87911942c188f3445e85a54137c
-ms.translationtype: MT
+ms.localizationpriority: high
+ms.openlocfilehash: 5eba43d04f1d0eccf1b7e0ce63c6c6aedd3946d6
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32294043"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59618245"
 ---
 # <a name="delete-statement-microsoft-access-sql"></a>DELETE-Anweisung (Microsoft Access SQL)
 
@@ -70,7 +70,7 @@ Sie können die DELETE-Anweisung verwenden, um Datensätze aus Tabellen zu entfe
 
 > [!IMPORTANT]
 > - Nachdem Sie Datensätze über eine Löschabfrage entfernt haben, können Sie diesen Vorgang nicht rückgängig machen. Wenn Sie zunächst wissen möchten, welche Datensätze gelöscht werden, überprüfen Sie im Vorfeld die Ergebnisse einer Auswahlabfrage, die die gleichen Kriterien wie die Löschabfrage verwendet, und führen Sie dann erst die Löschabfrage aus.
-> - Bewahren Sie immer eine Sicherungskopie Ihrer Daten auf. Auf diese Weise können Sie irrtümlich gelöschte Datensätze aus den Sicherungskopien abrufen.
+> - Bewahren Sie jederzeit Sicherungskopien Ihrer Daten auf. Wenn Sie die falschen Datensätze gelöscht haben, können Sie sie aus Ihren Sicherungskopien wieder abrufen.
 
 ## <a name="example"></a>Beispiel
 
