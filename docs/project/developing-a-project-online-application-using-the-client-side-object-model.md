@@ -5,18 +5,18 @@ ms.date: 12/18/2019
 ms.audience: Developer
 ms.assetid: 5740d0b2-5d36-40e4-9e83-577cb186359f
 description: 'Dieser Artikel beschreibt die Entwicklung von Microsoft Project Online-Anwendungen mit dem .NET Framework 4.0 und CSOM. '
-localization_priority: Priority
-ms.openlocfilehash: d48cf50b95ecea664cd9eae1b0e642fc2551d5be
-ms.sourcegitcommit: 007aa2ceb4f569201c3f4372de5c83b6c61f8875
+ms.localizationpriority: high
+ms.openlocfilehash: 87cac0b4cdc18c0496ade60ad2a90ded8f28f6ae
+ms.sourcegitcommit: a1d9041c20256616c9c183f7d1049142a7ac6991
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43102968"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "59619267"
 ---
 # <a name="developing-a-project-online-application-using-the-client-side-object-model-csom"></a>Entwickeln einer Project Online-Anwendung mit dem clientseitigen Objektmodell (CSOM)
 
 >[!NOTE] 
->Dieser Artikel beschreibt die Entwicklung von Microsoft Project Online-Anwendungen zur Verwendung von CSOM. Wir empfehlen Ihnen, die Entwicklung von Anwendungen mit dem [neuen Project für das Web](https://developer.microsoft.com/de-DE/office/blogs/developing-applications-and-reports-using-the-new-project/) zu erforschen.
+>Dieser Artikel beschreibt die Entwicklung von Microsoft Project Online-Anwendungen zur Verwendung von CSOM. Wir empfehlen Ihnen, die Entwicklung von Anwendungen mit dem [neuen Project für das Web](https://developer.microsoft.com/en-us/office/blogs/developing-applications-and-reports-using-the-new-project/) zu erforschen.
   
 ## <a name="background"></a>Hintergrund
 
@@ -69,7 +69,7 @@ Das Abrufen von Informationen vom Host ist ein Zwei-Aktionen-Vorgang aus Client-
   
 ### <a name="set-up-the-visual-studio-project"></a>Einrichten des Visual Studio-Projekts
 
-Das Einrichten der Anwendung besteht aus dem Erstellen eines neuen Projekts, dem Verknüpfen der entsprechenden Assemblys und dem Deklarieren der benötigten Namespaces. Visual Studio bietet verschiedene Typen von Entwicklungsprojekten. 
+Das Anwendungssetup besteht darin, ein neues Projekt zu erstellen, die entsprechenden Assemblys zu verknüpfen und die benötigten Namespaces zu deklarieren. Visual Studio bietet verschiedene Arten von Entwicklungsprojekten. 
   
 #### <a name="select-a-visual-studio-project"></a>Auswählen eines Visual Studio-Projekts
 
@@ -79,7 +79,7 @@ Das Einrichten der Anwendung besteht aus dem Erstellen eines neuen Projekts, dem
     
 2. Geben Sie für diese Anwendung die folgenden Elemente an. Schlüsselwörter, die auf dem Bildschirm zu finden sind, sind fett ausgezeichnet:
     
-   1. Wählen Sie aus den installierten Vorlagen im linken Bereich die Vorlage ** C# **  =>  **Windows** => **Klassischer Desktop** aus. 
+   1. Wählen Sie aus den installierten Vorlagen im linken Bereich die Vorlage **C#**  =>  **Windows** => **Klassischer Desktop** aus. 
     
    2. Wählen Sie oben im zentralen Bereich die Option **.NET Framework 4** aus. 
     
@@ -113,7 +113,7 @@ Fügen Sie die SharePoint 2013 SDK-Assemblys über die NuGet-Paket-Manager-Konso
   
 1. Klicken Sie über das VS-Menü "Extras" auf die folgenden Menüs: **Extras =\> NuGet-Paket-Manager =\> Paket-Manager-Konsole**. 
     
-2. Geben Sie in der Paket-Manager-Konsole den folgenden Befehl ein, und drücken Sie die \<EINGABETASTE\>:
+2. Geben Sie in der Paket-Manager Konsole den folgenden Befehl ein, und drücken Sie \<ENTER\>:
     
    ```cs
     Install-Package Microsoft.SharePointOnline.CSOM
@@ -368,7 +368,7 @@ Project counts:31
 
 ### <a name="retrieve-all-tasks-in-a-project"></a>Abrufen aller Aufgaben in einem Projekt
 
-Jedes Projekt hat viele Aufgaben. Somit besteht das Abrufen der Aufgaben für ein einzelnes Projekt aus folgenden Schritten:
+Jedes Projekt besteht aus viele Aufgaben. Das Abrufen der Aufgaben für ein einzelnes Projekt umfasst also Folgendes:
   
 1. Richten Sie den Kontext der Projektesammlung ein.
     
@@ -411,7 +411,7 @@ Jedes Projekt hat viele Aufgaben. Somit besteht das Abrufen der Aufgaben für ei
     projContext.ExecuteQuery();
    ```
 
-Die Informationen liegen nun lokal vor. Im folgenden Codefragment wird die veröffentlichte Aufgabensammlung verarbeitet, indem die Informationen in die Konsole geschrieben werden.
+Die Informationen sind jetzt lokal. Im folgenden Codefragment wird die veröffentlichte Aufgabensammlung verarbeitet, indem die Informationen in die Konsole geschrieben werden.
   
 ```cs
     Console.WriteLine("Task collection count: {0}", collTask.Count.ToString());
