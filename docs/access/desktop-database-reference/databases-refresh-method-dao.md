@@ -27,7 +27,7 @@ Wird für dieses Objekt nicht unterstützt.
 
 *Ausdruck* Eine Variable, die ein **Databases-Objekt** darstellt.
 
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Bemerkungen
 
 Sie können die **Refresh**-Methode nicht mit Auflistungen verwenden, die nicht beständig sind, z. B. **Connections**, **Databases**, **Recordsets**, **Workspaces** oder die **QueryDefs**-Auflistung eines **Connection**-Objekts.
 
